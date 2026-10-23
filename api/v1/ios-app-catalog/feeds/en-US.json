@@ -12,11 +12,11 @@
   ],
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
-    "dateModified": "2026-10-21",
-    "contentDigest": "3640bd2fe814e90c319c41f805a18191267cf24b494e07e899e4e5a3298653b5",
+    "dateModified": "2026-10-23",
+    "contentDigest": "a6ff8651a4ca213956f9cecec8d2d98f3a72456927ef966d484ab7e59fa02516",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
-    "recordCount": 54
+    "recordCount": 55
   },
   "items": [
     {
@@ -298,10 +298,11 @@
         "schedule",
         "wake",
         "theme",
-        "digital"
+        "digital",
+        "holiday alarm clock"
       ],
       "language": "en-US",
-      "date_modified": "2026-10-21T00:41:00Z"
+      "date_modified": "2026-10-23T12:43:15Z"
     },
     {
       "id": "https://apps.apple.com/app/id6755782939",
@@ -348,6 +349,30 @@
       ],
       "language": "en-US",
       "date_modified": "2026-10-17T16:15:13Z"
+    },
+    {
+      "id": "https://apps.apple.com/app/id6804564400",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/gbago.html",
+      "external_url": "https://apps.apple.com/us/app/id6804564400?pt=118326163&ct=geo_pick&mt=8",
+      "title": "GBAGo: Visual Saves",
+      "content_text": "GBAGo is designed around one promise: never lose your progress again. Every game gets a Recovery Map, one screen that gathers all of its save points: the automatic resume point, your save state slots, automatic snapshots and the battery save, each with a clear status such as Ready to load or Not safe to load. Safe Continue resumes from your newest checkpoint only when it checks out. If that checkpoint is damaged, GBAGo asks before using the most recent verified one instead.",
+      "tags": [
+        "emulator",
+        "retro",
+        "handheld",
+        "rewind",
+        "backup",
+        "checksum",
+        "sha256",
+        "homebrew",
+        "controller",
+        "turbo",
+        "gbc",
+        "cheats",
+        "offline"
+      ],
+      "language": "en-US",
+      "date_modified": "2026-10-23T11:32:52Z"
     },
     {
       "id": "https://apps.apple.com/app/id6794039979",
@@ -699,10 +724,13 @@
         "notes",
         "errands",
         "watch",
-        "themes"
+        "themes",
+        "checklist",
+        "todo list",
+        "to do list"
       ],
       "language": "en-US",
-      "date_modified": "2026-10-21T00:41:00Z"
+      "date_modified": "2026-10-23T12:43:15Z"
     },
     {
       "id": "https://apps.apple.com/app/id6790800323",
@@ -722,10 +750,11 @@
         "recurring",
         "household",
         "days",
-        "since"
+        "since",
+        "when did i last do"
       ],
       "language": "en-US",
-      "date_modified": "2026-10-21T00:41:00Z"
+      "date_modified": "2026-10-23T12:43:15Z"
     },
     {
       "id": "https://apps.apple.com/app/id6801956402",
@@ -773,10 +802,11 @@
         "pdf",
         "notes",
         "pptx",
-        "csv"
+        "csv",
+        "one page summary"
       ],
       "language": "en-US",
-      "date_modified": "2026-10-17T16:15:13Z"
+      "date_modified": "2026-10-23T12:43:15Z"
     },
     {
       "id": "https://apps.apple.com/app/id6781808054",

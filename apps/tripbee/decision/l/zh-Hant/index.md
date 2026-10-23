@@ -2,7 +2,7 @@
 title: "行程規劃推薦 App(iPhone)"
 lang: "zh-Hant"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbee/decision/l/zh-Hant/index.html"
-modified: "2026-10-21"
+modified: "2026-10-23"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - 無追蹤
 - 隱私優先／裝置端
 - App Store · $190.00
-- ★ 5.0/5 · 2
+- ★ 4.7/5 · 3
 
 [在 App Store 取得 TripBee Pro：旅遊規劃師 →](https://apps.apple.com/tw/app/id6787754435?pt=118326163&ct=geo_pick&mt=8)
 

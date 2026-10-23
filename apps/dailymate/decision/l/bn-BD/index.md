@@ -2,7 +2,7 @@
 title: "DailyMate: জীবনের বাক্য — ইংরেজি শিখুন বাস্তব বাক্যে | iOS App"
 lang: "bn-BD"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymate/decision/l/bn-BD/index.html"
-modified: "2026-10-21"
+modified: "2026-10-23"
 app_store_id: "6790418321"
 verified_live: true
 purchase_model: "paid_upfront"

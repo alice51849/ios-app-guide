@@ -1,12 +1,12 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-10-21",
-  "content_digest": "3640bd2fe814e90c319c41f805a18191267cf24b494e07e899e4e5a3298653b5",
+  "date_modified": "2026-10-23",
+  "content_digest": "a6ff8651a4ca213956f9cecec8d2d98f3a72456927ef966d484ab7e59fa02516",
   "locale": "en-US",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 54,
+  "record_count": 55,
   "apps": [
     {
       "key": "notesstudio100",
@@ -489,7 +489,8 @@
         "schedule",
         "wake",
         "theme",
-        "digital"
+        "digital",
+        "holiday alarm clock"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -592,6 +593,48 @@
         "currency": "USD",
         "formatted_price": "Free",
         "storefront_url": "https://apps.apple.com/us/app/id6793436548"
+      }
+    },
+    {
+      "key": "gbago",
+      "app_store_id": "6804564400",
+      "name": "GBAGo: Visual Saves",
+      "summary": "GBAGo is designed around one promise: never lose your progress again. Every game gets a Recovery Map, one screen that gathers all of its save points: the automatic resume point, your save state slots, automatic snapshots and the battery save, each with a clear status such as Ready to load or Not safe to load. Safe Continue resumes from your newest checkpoint only when it checks out. If that checkpoint is damaged, GBAGo asks before using the most recent verified one instead.",
+      "category": "utility",
+      "search_terms": [
+        "emulator",
+        "retro",
+        "handheld",
+        "rewind",
+        "backup",
+        "checksum",
+        "sha256",
+        "homebrew",
+        "controller",
+        "turbo",
+        "gbc",
+        "cheats",
+        "offline"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/us/app/id6804564400?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/gbago.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "8.99",
+        "currency": "USD",
+        "formatted_price": "$8.99",
+        "storefront_url": "https://apps.apple.com/us/app/id6804564400"
       }
     },
     {
@@ -1196,7 +1239,10 @@
         "notes",
         "errands",
         "watch",
-        "themes"
+        "themes",
+        "checklist",
+        "todo list",
+        "to do list"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1216,8 +1262,8 @@
         "price": "0",
         "currency": "USD",
         "formatted_price": "Free",
-        "rating_value": 4.2,
-        "rating_count": 33,
+        "rating_value": 4.3,
+        "rating_count": 35,
         "storefront_url": "https://apps.apple.com/us/app/id6785004775"
       }
     },
@@ -1239,7 +1285,8 @@
         "recurring",
         "household",
         "days",
-        "since"
+        "since",
+        "when did i last do"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1328,7 +1375,8 @@
         "pdf",
         "notes",
         "pptx",
-        "csv"
+        "csv",
+        "one page summary"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

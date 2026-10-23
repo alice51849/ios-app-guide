@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "no",
-  "dateModified": "2026-10-21",
-  "content_digest": "1b6a17c21d9f179a9860477b1687bb944f8ee30ca4132c0ce0987288f3041fba",
-  "generation_digest": "64515fcc1834987bd856e82e47fed33fd87a687dccd27bd7788abac5b978109e",
+  "dateModified": "2026-10-23",
+  "content_digest": "308f694ea91b0d0550dd56b4438581faa7e67d0c53aa111aa9b2ad5946a84c79",
+  "generation_digest": "70323413d770366211c2dfb06e8438e221ccc077f05ef690449e948ce2ec708d",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 54,
+  "record_count": 55,
   "syndication": {
     "atom": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/no.atom.xml",
     "rss": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/no.rss.xml",
@@ -1008,6 +1008,56 @@
       "guide_cta_label": "Les hele veiledningen",
       "publisher_disclosure": "Dette er førsteparts materiale publisert av Lumi Studio, utvikleren av hver oppført app.",
       "source_persona_query": "best free travel expense tracker with currency conversion for iphone",
+      "source_surface": "app_guide_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "no:gbago",
+      "locale": "no",
+      "app_key": "gbago",
+      "app_name": "GBAGo: Visuelle lagringer",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "GBAGo: Visuelle lagringer — Redningskart · Øyeblikksbilder | iOS App",
+      "decision_context": "Bortsett fra tre originale demokassetter fra Lumi Studio inneholder GBAGo ingen spill eller innholdskatalog. Importer bare filer fra Filer som du har laget selv eller har tillatelse til å bruke etter gjeldende lov. KRAFTIG DER DET TELLER - 4 hurtiglagringsplasser fra start, utvidbare til 12, hver med sitt miniatyrbilde, så hardt opptjent fremgang aldri går tapt igjen - Automatiske øyeblikksbilder: et stille øyeblikksbilde annethvert minutt, den siste halvtimen venter som en rad miniatyrer - Autolagring: lukk appen når som helst og fortsett nøyaktig der du stoppet - Nøyaktig og batterivennlig mGBA-kjerne som ligger bunnsolid på 60 bilder i sekundet - Spol fremover i 2x, 4x, 8x og helt opp til 32x for å hoppe over trege introer og lange grind-økter LAGET FOR EKTE SPILLERE - Turboknapper for enkel hurtigskyting - Bildefiltre: autentisk CRT-glød, myk skalering eller pikselperfekt skarphet - Justerbart bildeformat, akkurat slik du vil ha det - Berøringskontroller med justerbar gjennomsiktighet, bygget for lange økter SAMLINGEN DIN, VAKKERT ORGANISERT - Spill én gang, så hentes omslaget automatisk fra din egen skjerm og biblioteket blir en hylle du vil vise frem - GB- og GBC-kopier kjører like fint som GBA-titler - Grensesnitt på 50 språk GBAGo kjører helt og holdent på enheten din. Ingen kontoer, ingen reklame, ingen sporing, ingen datainnsamling. Når iCloud er aktivert, synkroniserer GBAGo lagringstilstander, miniatyrbilder og .sav-batterilagringer via den private iCloud-kontoen din. Utvikleren mottar ikke disse dataene. Lokale data beholdes til du sletter dem i GBAGo eller fjerner appen. Når GBAGo slås av under Apple-konto > iCloud, stopper fremtidig synkronisering; eksisterende iCloud-kopier må slettes separat i GBAGo eller i innstillingene for iCloud-lagring. Eksporter og Del sender bare filer du uttrykkelig velger, til målet du velger. Support: hourstag.app@gmail.com · https://alice51849.github.io/gbago-support/ VAREMERKER OG TILKNYTNING GBAGo er en uavhengig app. Den er ikke tilknyttet, godkjent eller sponset av Nintendo Co., Ltd. Game Boy, Game Boy Color og Game Boy Advance er varemerker som tilhører Nintendo, og brukes her bare for å beskrive filkompatibilitet. Bortsett fra tre originale demokassetter fra Lumi Studio inneholder GBAGo ingen spill og verken leverer eller lenker til spillfiler.",
+      "category": "utility",
+      "category_label": "Mer",
+      "purchase_model": "paid_upfront",
+      "purchase_label": "Betalt nedlasting",
+      "one_time_option": true,
+      "privacy_facts": [
+        "offline"
+      ],
+      "privacy_labels": [
+        "Frakoblet"
+      ],
+      "device_surfaces": [],
+      "device_labels": [],
+      "badge_labels": [
+        "Mer",
+        "Betalt nedlasting",
+        "Frakoblet",
+        "App Store · 99,00 kr"
+      ],
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/no/gbago.html",
+      "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/gbago/decision/l/no/index.html",
+      "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/no/gbago.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Fgbago%2Fdecision%2Fl%2Fno%2Findex.html&format=json",
+      "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/no.json",
+      "app_store_id": "6804564400",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6804564400",
+      "app_store_url": "https://apps.apple.com/no/app/id6804564400?pt=118326163&ct=geo_pick&mt=8",
+      "app_store_cta_label": "Last ned GBAGo: Visuelle lagringer fra App Store",
+      "storefront_facts": {
+        "price": "99",
+        "currency": "NOK",
+        "formatted_price": "99,00 kr"
+      },
+      "guide_cta_label": "Les hele veiledningen",
+      "publisher_disclosure": "Dette er førsteparts materiale publisert av Lumi Studio, utvikleren av hver oppført app.",
+      "source_persona_query": "paid gba emulator for iphone with save states and controller support",
       "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,

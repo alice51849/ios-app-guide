@@ -1,12 +1,12 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-10-21",
-  "content_digest": "3640bd2fe814e90c319c41f805a18191267cf24b494e07e899e4e5a3298653b5",
+  "date_modified": "2026-10-23",
+  "content_digest": "a6ff8651a4ca213956f9cecec8d2d98f3a72456927ef966d484ab7e59fa02516",
   "locale": "zh-Hans",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 54,
+  "record_count": 55,
   "apps": [
     {
       "key": "notesstudio100",
@@ -98,7 +98,9 @@
         "复制粘贴",
         "工作效率",
         "报告",
-        "阅读"
+        "阅读",
+        "提示词管理",
+        "ai 提示词"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -691,7 +693,8 @@
         "换汇",
         "旅费",
         "外汇",
-        "境外消费"
+        "境外消费",
+        "出国预算"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -763,6 +766,60 @@
         "currency": "CNY",
         "formatted_price": "免费",
         "storefront_url": "https://apps.apple.com/cn/app/id6793436548"
+      }
+    },
+    {
+      "key": "gbago",
+      "app_store_id": "6804564400",
+      "name": "GBAGo: 可视化存档",
+      "summary": "除 Lumi Studio 自制的三款原创 demo 卡带外，GBAGo 不包含游戏或内容目录。请仅从“文件”导入由你自行创作，或依适用法律获授权使用的文件。",
+      "category": "utility",
+      "search_terms": [
+        "模拟器",
+        "金手指",
+        "即时存档",
+        "卡带",
+        "快进",
+        "手柄",
+        "怀旧",
+        "复古",
+        "街机",
+        "离线畅玩",
+        "掌机",
+        "经典游戏",
+        "存档",
+        "老游戏",
+        "童年",
+        "单机游戏",
+        "游戏机",
+        "离线",
+        "即时读档",
+        "连发",
+        "模拟",
+        "经典掌机",
+        "怀旧游戏",
+        "游戏模拟",
+        "横向全屏"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/cn/app/id6804564400?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/gbago.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "58",
+        "currency": "CNY",
+        "formatted_price": "¥58.00",
+        "storefront_url": "https://apps.apple.com/cn/app/id6804564400"
       }
     },
     {
@@ -1388,7 +1445,8 @@
         "四岁",
         "五岁",
         "打卡",
-        "游戏"
+        "游戏",
+        "家务 表"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1735,7 +1793,8 @@
         "团购",
         "活动",
         "家庭",
-        "流水"
+        "流水",
+        "项目支出"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1956,7 +2015,8 @@
         "快递",
         "电话",
         "短信",
-        "邮件"
+        "邮件",
+        "二维码 安全检测"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

@@ -4,7 +4,7 @@
 
 Un catalogue publié directement par le développeur qui indique à qui chaque app est destinée, la tâche à accomplir et l’accès direct à l’App Store.
 
-Intentions de recherche rédigées par l’éditeur pour 54 apps iOS vérifiées et disponibles dans 50 langues et régions Apple.
+Intentions de recherche rédigées par l’éditeur pour 55 apps iOS vérifiées et disponibles dans 50 langues et régions Apple.
 
 **Région:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · **fr-CA** · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -103,6 +103,7 @@ Ordre alphabétique par nom d’app — jamais un classement.
 | **EasyAM: Réveil jours fériés** | EasyAM: Réveil jours fériés — Congé demain? Il ne sonne pas \| iOS App | Votre réveil va-t-il sonner demain matin, et faut-il vraiment qu’il sonne? EasyAM tranche pour vous : il sonne les jours de travail et reste muet les jours | Gratuit au départ · déverrouillage en un achat unique | [Guide](https://open.cait518.cc/ios-app-guide/fr-CA/easyam.html) | [Obtenir EasyAM: Réveil jours fériés sur l'App Store](https://apps.apple.com/ca/app/id6821790092?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money** | meilleure application de suivi de budget de voyage sans abonnement iPhone | En voyage, vous avez besoin d’un suivi de budget qui fonctionne hors ligne dans un pays sans données, gère plusieurs devises, et ne demande pas de compte — organisé par voyage pour que chaque séjour soit séparé. C'est exactement ce manque que G+Money cherche à combler. | Téléchargement payant | [Guide](https://open.cait518.cc/ios-app-guide/fr-CA/answers/best-travel-budget-tracker-app-no-subscription-iphone.html) | [Obtenez G+Money sur l’App Store →](https://apps.apple.com/ca/app/id6755782939?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money Lite: Frais de voyage** | G+Money Lite: Frais de voyage — Budget à l'étranger & devises \| iOS App | G+Money Lite — Convertisseur de devises & suivi de dépenses de voyage | Gratuit au départ · déverrouillage en un achat unique | [Guide](https://open.cait518.cc/ios-app-guide/fr-CA/gmoneylite.html) | [Obtenir G+Money Lite: Frais de voyage sur l'App Store](https://apps.apple.com/ca/app/id6793436548?pt=118326163&ct=geo_pick&mt=8) |
+| **GBAGo: Sauvegardes visuelles** | GBAGo: Sauvegardes visuelles — Récupération · Instantanés \| iOS App | À l'exception de trois cartouches de démonstration originales créées par Lumi Studio, GBAGo ne contient aucun jeu ni catalogue de contenu. Depuis Fichiers | Téléchargement payant | [Guide](https://open.cait518.cc/ios-app-guide/fr-CA/gbago.html) | [Obtenir GBAGo: Sauvegardes visuelles sur l'App Store](https://apps.apple.com/ca/app/id6804564400?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag : Heures d’achat** | HoursTag : Heures d’achat — Salaire horaire & dépenses \| iOS App | Ça coûte vraiment combien? Pas seulement en dollars, mais en heures de votre vie. | Téléchargement payant | [Guide](https://open.cait518.cc/ios-app-guide/fr-CA/hourstag.html) | [Obtenir HoursTag : Heures d’achat sur l'App Store](https://apps.apple.com/ca/app/id6754218117?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag Lite: Prix en heures** | HoursTag Lite: Prix en heures — Achat conscient: vraie valeur \| iOS App | HoursTag Lite - Le vrai prix des choses | Gratuit au départ · déverrouillage en un achat unique | [Guide](https://open.cait518.cc/ios-app-guide/fr-CA/hourstaglite.html) | [Obtenir HoursTag Lite: Prix en heures sur l'App Store](https://apps.apple.com/ca/app/id6794039979?pt=118326163&ct=geo_pick&mt=8) |
 | **LED Moving Text** | LED Moving Text — Bandeau lumineux défilant \| iOS App | Tapez une phrase et levez votre iPhone. Depuis le fond de l'aréna, à travers le hall d'arrivée ou par-dessus un comptoir, elle se lit d'un seul coup d'œil. | Gratuit au départ · déverrouillage en un achat unique | [Guide](https://open.cait518.cc/ios-app-guide/fr-CA/ledmovingtext.html) | [Obtenir LED Moving Text sur l'App Store](https://apps.apple.com/ca/app/id6806639602?pt=118326163&ct=geo_pick&mt=8) |
@@ -146,7 +147,7 @@ Ordre alphabétique par nom d’app — jamais un classement.
 
 ## Télécharger l’ensemble complet des données
 
-JSON, JSONL et CSV contiennent les mêmes 2 700 enregistrements.
+JSON, JSONL et CSV contiennent les mêmes 2 750 enregistrements.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -154,6 +155,6 @@ JSON, JSONL et CSV contiennent les mêmes 2 700 enregistrements.
 
 [Accueil](https://open.cait518.cc/ios-app-guide/fr-CA/index.html) · [Données ouvertes](https://open.cait518.cc/ios-app-guide/fr-CA/data/lumi-studio-publisher-search-intent-catalog.html) · [Licence](https://creativecommons.org/licenses/by/4.0/)
 
-Mis à jour: 2026-10-21
+Mis à jour: 2026-10-23
 
 La licence CC BY 4.0 s’applique à la compilation originale du catalogue ; les noms d’app et marques App Store appartiennent à leurs propriétaires.

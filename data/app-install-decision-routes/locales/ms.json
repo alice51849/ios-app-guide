@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "ms",
-  "dateModified": "2026-10-21",
-  "content_digest": "1b6a17c21d9f179a9860477b1687bb944f8ee30ca4132c0ce0987288f3041fba",
-  "generation_digest": "64515fcc1834987bd856e82e47fed33fd87a687dccd27bd7788abac5b978109e",
+  "dateModified": "2026-10-23",
+  "content_digest": "308f694ea91b0d0550dd56b4438581faa7e67d0c53aa111aa9b2ad5946a84c79",
+  "generation_digest": "70323413d770366211c2dfb06e8438e221ccc077f05ef690449e948ce2ec708d",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 54,
+  "record_count": 55,
   "syndication": {
     "atom": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/ms.atom.xml",
     "rss": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/ms.rss.xml",
@@ -1009,6 +1009,56 @@
       "publisher_disclosure": "Panduan ini diterbitkan oleh Lumi Studio, pembangun app ini. Nama app ialah tanda dagangan pemilik masing-masing dan digunakan untuk tujuan pengenalan sahaja. Untuk keputusan berkaitan dokumen, kesihatan, sekolah dan produktiviti, sila sahkan keperluan rasmi yang berkenaan.",
       "source_persona_query": "best free travel expense tracker with currency conversion for iphone",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "ms:gbago",
+      "locale": "ms",
+      "app_key": "gbago",
+      "app_name": "GBAGo: Simpanan visual",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "GBAGo: Simpanan visual — Peta Pemulihan · Syot Kilat | iOS App",
+      "decision_context": "Selain tiga kartrij demo asli buatan Lumi Studio, GBAGo tidak menyertakan permainan atau katalog kandungan. Daripada Fail, import hanya fail yang anda cipta sendiri atau dibenarkan untuk digunakan menurut undang-undang yang terpakai. KUAT DI BAHAGIAN YANG PENTING - 4 slot simpanan pantas dari mula, boleh ditambah sehingga 12, setiap satu dengan imej kecil, kemajuan yang susah payah dicapai tidak akan hilang lagi - Syot kilat automatik: cuplikan automatik setiap dua minit, setengah jam terakhir tersimpan sebagai barisan imej kecil untuk anda kembali bila-bila masa - Simpan automatik: tutup aplikasi bila-bila masa dan sambung tepat di tempat anda berhenti - Teras mGBA yang tepat dan menjimatkan bateri, kekal stabil pada 60 bingkai sesaat - Percepat 2x, 4x, 8x sehingga 32x untuk melangkau intro perlahan dan sesi mengumpul mata yang panjang DIBINA UNTUK PEMAIN SEJATI - Butang turbo untuk tembakan pantas tanpa penat jari - Penapis paparan: kesan skrin CRT klasik, pelicinan lembut atau ketajaman piksel sempurna - Nisbah paparan boleh dilaraskan mengikut citarasa anda - Kawalan sentuh dengan ketelusan boleh laras, selesa untuk sesi yang panjang KOLEKSI ANDA, TERSUSUN INDAH - Main sekali sahaja, kulit mukanya diambil sendiri dari skrin anda dan pustaka menjadi rak pameran yang membanggakan - Salinan GB dan GBC berjalan sama lancar dengan judul GBA - Antara muka tersedia dalam 50 bahasa GBAGo berjalan sepenuhnya pada peranti anda. Tiada akaun, tiada iklan, tiada penjejakan, tiada pengumpulan data. Apabila iCloud didayakan, GBAGo menyegerakkan keadaan simpan, imej kecil dan simpanan bateri .sav melalui akaun iCloud peribadi anda. Pembangun tidak menerima data ini. Data setempat kekal sehingga anda memadamkannya dalam GBAGo atau membuang app. Mematikan GBAGo di Akaun Apple > iCloud menghentikan penyegerakan seterusnya; salinan sedia ada dalam iCloud perlu dipadam secara berasingan melalui GBAGo atau tetapan storan iCloud. Eksport dan Kongsi hanya menghantar fail yang anda pilih dengan jelas ke destinasi pilihan anda. Support: hourstag.app@gmail.com · https://alice51849.github.io/gbago-support/ TANDA DAGANGAN DAN GABUNGAN GBAGo ialah aplikasi bebas yang tidak bergabung dengan Nintendo Co., Ltd. serta tidak disokong atau ditaja olehnya. Game Boy, Game Boy Color dan Game Boy Advance ialah tanda dagangan Nintendo yang digunakan di sini semata-mata untuk menerangkan keserasian fail. Selain tiga kartrij demo asli buatan Lumi Studio, GBAGo tidak mengandungi sebarang permainan dan tidak menyediakan atau memaut fail permainan.",
+      "category": "utility",
+      "category_label": "Lagi",
+      "purchase_model": "paid_upfront",
+      "purchase_label": "Muat turun berbayar",
+      "one_time_option": true,
+      "privacy_facts": [
+        "offline"
+      ],
+      "privacy_labels": [
+        "Luar talian"
+      ],
+      "device_surfaces": [],
+      "device_labels": [],
+      "badge_labels": [
+        "Lagi",
+        "Muat turun berbayar",
+        "Luar talian",
+        "App Store · RM39.90"
+      ],
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ms/gbago.html",
+      "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/gbago/decision/l/ms/index.html",
+      "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/ms/gbago.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Fgbago%2Fdecision%2Fl%2Fms%2Findex.html&format=json",
+      "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/ms.json",
+      "app_store_id": "6804564400",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6804564400",
+      "app_store_url": "https://apps.apple.com/my/app/id6804564400?pt=118326163&ct=geo_pick&mt=8",
+      "app_store_cta_label": "Dapatkan GBAGo: Simpanan visual di App Store",
+      "storefront_facts": {
+        "price": "39.9",
+        "currency": "MYR",
+        "formatted_price": "RM39.90"
+      },
+      "guide_cta_label": "Baca panduan penuh",
+      "publisher_disclosure": "Bahan ini diterbitkan terus oleh Lumi Studio, pembangun semua aplikasi yang disenaraikan.",
+      "source_persona_query": "paid gba emulator for iphone with save states and controller support",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

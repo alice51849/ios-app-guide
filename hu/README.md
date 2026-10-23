@@ -4,7 +4,7 @@
 
 Egy első kézből származó katalógus arról, hogy az egyes alkalmazások kinek készültek, milyen feladatot próbálnak megoldani, és a közvetlen App Store útvonal.
 
-Kiadók által megadott keresési szándékok 54 ellenőrzött, élő iOS alkalmazás és 50 Apple-lokáció között.
+Kiadók által megadott keresési szándékok 55 ellenőrzött, élő iOS alkalmazás és 50 Apple-lokáció között.
 
 **Lokáció:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · **hu** · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -103,6 +103,7 @@ Alkalmazásnév szerinti ábécé sorrend — soha nem rangsor.
 | **EasyAM: Okos ébresztő óra** | EasyAM: Okos ébresztő óra — Munkanap igen, ünnepnap nem \| iOS App | Szóljon holnap reggel az ébresztő, vagy ne? Az EasyAM minden napra eldönti helyetted: munkanapon szól, ünnepnapon és szabadnapon csendben marad, és hét | Ingyenes kezdés · feloldás egyszeri vásárlással | [Útmutató](https://open.cait518.cc/ios-app-guide/hu/easyam.html) | [Töltse le a(z) EasyAM: Okos ébresztő óra appot az App Store-ból](https://apps.apple.com/hu/app/id6821790092?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money** | legjobb utazási költségvetés követő alkalmazás előfizetés nélkül iPhone-ra | Egy utazáson olyan költségvetés követőre van szükséged, ami offline működik adat nélküli országban, kezeli a több valutát, és nem kér fiókot — utazásonként szervezve, hogy minden nyaralás külön legyen. Pontosan ezt a hiányt szeretné betölteni a G+Money. | Fizetős letöltés | [Útmutató](https://open.cait518.cc/ios-app-guide/hu/answers/best-travel-budget-tracker-app-no-subscription-iphone.html) | [Szerezd be a G+Money-t az App Store-ból →](https://apps.apple.com/hu/app/id6755782939?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money Lite: Utazási kiadások** | G+Money Lite: Utazási kiadások — Napi keret órán és widgeten \| iOS App | G+Money Lite — Okos utazási pénznem- és költségkövető | Ingyenes kezdés · feloldás egyszeri vásárlással | [Útmutató](https://open.cait518.cc/ios-app-guide/hu/gmoneylite.html) | [Töltse le a(z) G+Money Lite: Utazási kiadások appot az App Store-ból](https://apps.apple.com/hu/app/id6793436548?pt=118326163&ct=geo_pick&mt=8) |
+| **GBAGo: Vizuális mentések** | GBAGo: Vizuális mentések — Helyreállítás · Pillanatképek \| iOS App | A Lumi Studio három saját fejlesztésű demókazettáján kívül a GBAGo nem tartalmaz játékot vagy tartalomkatalógust. A Fájlokból csak saját készítésű, illetve | Fizetős letöltés | [Útmutató](https://open.cait518.cc/ios-app-guide/hu/gbago.html) | [Töltse le a(z) GBAGo: Vizuális mentések appot az App Store-ból](https://apps.apple.com/hu/app/id6804564400?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag Lite: Ár munkaórában** | HoursTag Lite: Ár munkaórában — Tudatos vásárlás: valós ár \| iOS App | HoursTag Lite - Lásd a dolgok valódi árát | Ingyenes kezdés · feloldás egyszeri vásárlással | [Útmutató](https://open.cait518.cc/ios-app-guide/hu/hourstaglite.html) | [Töltse le a(z) HoursTag Lite: Ár munkaórában appot az App Store-ból](https://apps.apple.com/hu/app/id6794039979?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag: Órák a vásárláshoz** | HoursTag: Órák a vásárláshoz — Órabér és kiadások \| iOS App | Mennyibe kerül valójában? Nem forintban, hanem az életed óráiban. | Fizetős letöltés | [Útmutató](https://open.cait518.cc/ios-app-guide/hu/hourstag.html) | [Töltse le a(z) HoursTag: Órák a vásárláshoz appot az App Store-ból](https://apps.apple.com/hu/app/id6754218117?pt=118326163&ct=geo_pick&mt=8) |
 | **LED Moving Text** | LED Moving Text — Fényújság a kijelződön \| iOS App | Írj be egy mondatot, és emeld fel az iPhone-t. A hátsó sorból, az érkezési csarnok túloldaláról vagy a pult fölött is egy pillantásra elolvasható. | Ingyenes kezdés · feloldás egyszeri vásárlással | [Útmutató](https://open.cait518.cc/ios-app-guide/hu/ledmovingtext.html) | [Töltse le a(z) LED Moving Text appot az App Store-ból](https://apps.apple.com/hu/app/id6806639602?pt=118326163&ct=geo_pick&mt=8) |
@@ -146,7 +147,7 @@ Alkalmazásnév szerinti ábécé sorrend — soha nem rangsor.
 
 ## A teljes adatállomány letöltése
 
-A JSON, JSONL és CSV ugyanazt az 2 700 rekordot tartalmazza.
+A JSON, JSONL és CSV ugyanazt az 2 750 rekordot tartalmazza.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -154,6 +155,6 @@ A JSON, JSONL és CSV ugyanazt az 2 700 rekordot tartalmazza.
 
 [Kezdőlap](https://open.cait518.cc/ios-app-guide/hu/index.html) · [Nyílt adatok](https://open.cait518.cc/ios-app-guide/hu/data/lumi-studio-publisher-search-intent-catalog.html) · [Licenc](https://creativecommons.org/licenses/by/4.0/)
 
-Frissítve: 2026-10-21
+Frissítve: 2026-10-23
 
 A CC BY 4.0 az eredeti katalógus összeállítására vonatkozik; az alkalmazásnevek és az App Store védjegyek a tulajdonosaiké.

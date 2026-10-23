@@ -2,7 +2,7 @@
 title: "把會議紀錄變成一頁簡報投影片的 App"
 lang: "zh-Hant"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/onepageppt/decision/l/zh-Hant/index.html"
-modified: "2026-10-21"
+modified: "2026-10-23"
 app_store_id: "6798814385"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

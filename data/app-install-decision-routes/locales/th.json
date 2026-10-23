@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "th",
-  "dateModified": "2026-10-21",
-  "content_digest": "1b6a17c21d9f179a9860477b1687bb944f8ee30ca4132c0ce0987288f3041fba",
-  "generation_digest": "64515fcc1834987bd856e82e47fed33fd87a687dccd27bd7788abac5b978109e",
+  "dateModified": "2026-10-23",
+  "content_digest": "308f694ea91b0d0550dd56b4438581faa7e67d0c53aa111aa9b2ad5946a84c79",
+  "generation_digest": "70323413d770366211c2dfb06e8438e221ccc077f05ef690449e948ce2ec708d",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 54,
+  "record_count": 55,
   "syndication": {
     "atom": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/th.atom.xml",
     "rss": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/th.rss.xml",
@@ -382,7 +382,8 @@
         "เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว",
         "ไม่มีโฆษณา",
         "Apple Watch",
-        "App Store · ฟรี"
+        "App Store · ฟรี",
+        "★ 2.0/5 · 1"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/th/battai.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/battai/decision/l/th/index.html",
@@ -395,7 +396,9 @@
       "storefront_facts": {
         "price": "0",
         "currency": "THB",
-        "formatted_price": "ฟรี"
+        "formatted_price": "ฟรี",
+        "rating_value": 2.0,
+        "rating_count": 1
       },
       "guide_cta_label": "อ่านคู่มือฉบับเต็ม",
       "publisher_disclosure": "เนื้อหานี้เผยแพร่โดยตรงจาก Lumi Studio ซึ่งเป็นผู้พัฒนาแอปทั้งหมดที่ระบุไว้",
@@ -1009,6 +1012,56 @@
       "publisher_disclosure": "คู่มือนี้จัดทำโดย Lumi Studio ซึ่งเป็นผู้พัฒนาแอป ชื่อแอปทั้งหมดเป็นเครื่องหมายการค้าของเจ้าของแต่ละราย และใช้เพื่อการอ้างอิงเท่านั้น สำหรับการตัดสินใจที่เกี่ยวกับเอกสาร สุขภาพ การเรียน และการทำงาน โปรดตรวจสอบข้อกำหนดอย่างเป็นทางการที่เกี่ยวข้องด้วย",
       "source_persona_query": "best free travel expense tracker with currency conversion for iphone",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "th:gbago",
+      "locale": "th",
+      "app_key": "gbago",
+      "app_name": "GBAGo: เซฟแบบเห็นภาพ",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "GBAGo: เซฟแบบเห็นภาพ — แผนผังกู้คืน · สแนปช็อตออโต้ | iOS App",
+      "decision_context": "นอกจากตลับเดโมต้นฉบับ 3 ตลับที่ Lumi Studio สร้างขึ้นเองแล้ว GBAGo ไม่มีเกมหรือแค็ตตาล็อกเนื้อหา ให้นำเข้าจากแอปไฟล์เฉพาะไฟล์ที่คุณสร้างเองหรือได้รับอนุญาตให้ใช้ตามกฎหมายที่บังคับใช้เท่านั้น แรงในจุดที่สำคัญจริง - ช่องเซฟด่วนเริ่มต้น 4 ช่อง ขยายเพิ่มได้ถึง 12 ช่อง แต่ละช่องมีภาพตัวอย่างกำกับ ความคืบหน้าที่เล่นมาอย่างยากลำบากจะไม่หายไปอีกแล้ว - สแนปช็อตอัตโนมัติ: บันทึกสถานะอัตโนมัติทุกสองนาที เก็บย้อนหลังครึ่งชั่วโมงเป็นแถบภาพย่อ เลือกกลับไปจุดไหนก็ได้ - บันทึกอัตโนมัติ: ปิดแอปเมื่อไรก็ได้ แล้วกลับมาเล่นต่อจากฉากเดิมเป๊ะ ๆ - คอร์ mGBA ที่แม่นยำและประหยัดแบตเตอรี่ รักษา 60 เฟรมต่อวินาทีได้อย่างมั่นคง - เร่งความเร็ว 2 เท่า 4 เท่า 8 เท่า ไปจนถึง 32 เท่า ข้ามฉากเปิดที่เชื่องช้าและการเก็บเลเวลอันยาวนาน สร้างมาเพื่อคนที่เล่นจริง - ปุ่มยิงรัวอัตโนมัติ ให้นิ้วคุณไม่ต้องเมื่อยอีกต่อไป - ฟิลเตอร์ภาพ: จอแก้วสุดคลาสสิก ภาพเนียนนุ่ม หรือคมชัดทุกพิกเซล - ปรับอัตราส่วนภาพได้ตามใจชอบ - ปุ่มควบคุมบนหน้าจอปรับความโปร่งใสได้ ออกแบบมาเพื่อการเล่นยาว ๆ คลังเกมของคุณ เป็นระเบียบสวยงามเสมอ - เล่นสักครั้งแล้วภาพปกจะถูกจับจากหน้าจอของคุณเอง เปลี่ยนคลังเกมให้เป็นชั้นโชว์ที่อยากอวดใคร ๆ - ไฟล์สำรองของ GB และ GBC เล่นได้ลื่นไหลเท่ากับของ GBA - อินเทอร์เฟซรองรับ 50 ภาษา GBAGo ทำงานบนอุปกรณ์ของคุณทั้งหมด ไม่มีบัญชี ไม่มีโฆษณา ไม่มีการติดตาม ไม่มีการเก็บข้อมูล เมื่อเปิด iCloud GBAGo จะซิงค์สถานะเซฟ ภาพขนาดย่อ และไฟล์เซฟแบตเตอรี่ .sav ผ่านบัญชี iCloud ส่วนตัวของคุณ นักพัฒนาไม่ได้รับข้อมูลนี้ ข้อมูลในเครื่องจะอยู่จนกว่าคุณจะลบใน GBAGo หรือลบแอป การปิด GBAGo ในบัญชี Apple > iCloud จะหยุดการซิงค์ในอนาคต ส่วนสำเนาที่มีอยู่ใน iCloud ต้องลบแยกใน GBAGo หรือการตั้งค่าพื้นที่จัดเก็บข้อมูล iCloud การส่งออกและแชร์จะส่งเฉพาะไฟล์ที่คุณเลือกอย่างชัดเจนไปยังปลายทางที่คุณเลือก Support: hourstag.app@gmail.com · https://alice51849.github.io/gbago-support/ เครื่องหมายการค้าและความเกี่ยวข้อง GBAGo เป็นแอปอิสระ ไม่มีความเกี่ยวข้องกับ Nintendo Co., Ltd. และไม่ได้รับการรับรองหรือสนับสนุนจากบริษัทดังกล่าว Game Boy, Game Boy Color และ Game Boy Advance เป็นเครื่องหมายการค้าของ Nintendo ซึ่งใช้ที่นี่เพียงเพื่ออธิบายความเข้ากันได้ของไฟล์เท่านั้น นอกจากตลับเดโมต้นฉบับ 3 ตลับของ Lumi Studio แล้ว GBAGo ไม่มีเกมใด ๆ ติดมาด้วย และไม่ได้จัดหาหรือเชื่อมโยงไปยังไฟล์เกม",
+      "category": "utility",
+      "category_label": "เพิ่มเติม",
+      "purchase_model": "paid_upfront",
+      "purchase_label": "ดาวน์โหลดแบบชำระเงิน",
+      "one_time_option": true,
+      "privacy_facts": [
+        "offline"
+      ],
+      "privacy_labels": [
+        "ออฟไลน์"
+      ],
+      "device_surfaces": [],
+      "device_labels": [],
+      "badge_labels": [
+        "เพิ่มเติม",
+        "ดาวน์โหลดแบบชำระเงิน",
+        "ออฟไลน์",
+        "App Store · ฿299.00"
+      ],
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/th/gbago.html",
+      "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/gbago/decision/l/th/index.html",
+      "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/th/gbago.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Fgbago%2Fdecision%2Fl%2Fth%2Findex.html&format=json",
+      "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/th.json",
+      "app_store_id": "6804564400",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6804564400",
+      "app_store_url": "https://apps.apple.com/th/app/id6804564400?pt=118326163&ct=geo_pick&mt=8",
+      "app_store_cta_label": "ดาวน์โหลด GBAGo: เซฟแบบเห็นภาพ บน App Store",
+      "storefront_facts": {
+        "price": "299",
+        "currency": "THB",
+        "formatted_price": "฿299.00"
+      },
+      "guide_cta_label": "อ่านคู่มือฉบับเต็ม",
+      "publisher_disclosure": "เนื้อหานี้เผยแพร่โดยตรงจาก Lumi Studio ซึ่งเป็นผู้พัฒนาแอปทั้งหมดที่ระบุไว้",
+      "source_persona_query": "paid gba emulator for iphone with save states and controller support",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,
@@ -1801,7 +1854,8 @@
         "ไม่มีบัญชี",
         "ไม่มีโฆษณา",
         "Apple Watch",
-        "App Store · ฟรี"
+        "App Store · ฟรี",
+        "★ 5.0/5 · 1"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/th/answers/best-simple-to-do-list-app-iphone-no-subscription.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/mochi/decision/l/th/index.html",
@@ -1814,7 +1868,9 @@
       "storefront_facts": {
         "price": "0",
         "currency": "THB",
-        "formatted_price": "ฟรี"
+        "formatted_price": "ฟรี",
+        "rating_value": 5.0,
+        "rating_count": 1
       },
       "guide_cta_label": "อ่านคู่มือฉบับเต็ม",
       "publisher_disclosure": "คู่มือนี้จัดทำโดย Lumi Studio ซึ่งเป็นผู้พัฒนาแอป ชื่อแอปทั้งหมดเป็นเครื่องหมายการค้าของเจ้าของแต่ละราย และใช้เพื่อการอ้างอิงเท่านั้น สำหรับการตัดสินใจที่เกี่ยวกับเอกสาร สุขภาพ การเรียน และการทำงาน โปรดตรวจสอบข้อกำหนดอย่างเป็นทางการที่เกี่ยวข้องด้วย",

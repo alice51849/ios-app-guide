@@ -2,7 +2,7 @@
 title: "WiFi Aid: నెట్వర్క్ సమస్య — రౌటర్, మెష్, DNS పరీక్ష | iOS App"
 lang: "te-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/te-IN/index.html"
-modified: "2026-10-21"
+modified: "2026-10-23"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"

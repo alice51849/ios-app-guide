@@ -2,7 +2,7 @@
 title: "HoursTag Lite: ମୂଲ୍ୟ ଘଣ୍ଟାରେ — ସଚେତନ କିଣା: ପ୍ରକୃତ ମୂଲ୍ୟ | iOS App"
 lang: "or-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstaglite/decision/l/or-IN/index.html"
-modified: "2026-10-21"
+modified: "2026-10-23"
 app_store_id: "6794039979"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

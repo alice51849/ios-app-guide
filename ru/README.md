@@ -4,7 +4,7 @@
 
 Каталог, созданный издателем, с информацией о целевой аудитории каждого приложения, задачах, которые оно помогает решать, и прямой ссылкой в App Store.
 
-Намерения поиска, составленные издателем, для 54 проверенных приложений для iOS и 50 локалей Apple.
+Намерения поиска, составленные издателем, для 55 проверенных приложений для iOS и 50 локалей Apple.
 
 **Локаль:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · **ru** · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -103,6 +103,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **EasyAM: Умный будильник и часы** | EasyAM: Умный будильник и часы — Звонит в будни, не в праздники \| iOS App | Зазвонит ли завтра будильник? С EasyAM об этом больше не нужно думать: он сам решает, день за днём. В рабочие дни будит, в праздники и в отпуске молчит | Бесплатно начать · разблокировка за одну покупку | [Руководство](https://open.cait518.cc/ios-app-guide/ru/easyam.html) | [Установить EasyAM: Умный будильник и часы в App Store](https://apps.apple.com/ru/app/id6821790092?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money** | лучшее приложение для учёта бюджета путешествий без подписки для iPhone | В поездке нужен бюджетный трекер, который работает офлайн в стране без данных, поддерживает несколько валют и не требует учётной записи — организованный по поездкам, чтобы каждый отпуск был отдельным. Именно этот пробел и закрывает G+Money. | Платное скачивание | [Руководство](https://open.cait518.cc/ios-app-guide/ru/answers/best-travel-budget-tracker-app-no-subscription-iphone.html) | [Скачать G+Money в App Store →](https://apps.apple.com/ru/app/id6755782939?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money Lite: Траты в поездке** | G+Money Lite: Траты в поездке — Бюджет на день: часы и виджет \| iOS App | G+Money Lite — Умный трекер валюты и расходов для путешествий | Бесплатно начать · разблокировка за одну покупку | [Руководство](https://open.cait518.cc/ios-app-guide/ru/gmoneylite.html) | [Установить G+Money Lite: Траты в поездке в App Store](https://apps.apple.com/ru/app/id6793436548?pt=118326163&ct=geo_pick&mt=8) |
+| **GBAGo: Визуальные сейвы** | GBAGo: Визуальные сейвы — Карта восстановления · Снимки \| iOS App | Кроме трёх оригинальных демо-картриджей от Lumi Studio, GBAGo не содержит игр или каталога контента. Импортируйте из приложения «Файлы» только созданные | Платное скачивание | [Руководство](https://open.cait518.cc/ios-app-guide/ru/gbago.html) | [Установить GBAGo: Визуальные сейвы в App Store](https://apps.apple.com/ru/app/id6804564400?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag Lite: Цена в часах** | HoursTag Lite: Цена в часах — Осознанные покупки: цена \| iOS App | HoursTag Lite - Увидьте настоящую цену вещей | Бесплатно начать · разблокировка за одну покупку | [Руководство](https://open.cait518.cc/ios-app-guide/ru/hourstaglite.html) | [Установить HoursTag Lite: Цена в часах в App Store](https://apps.apple.com/ru/app/id6794039979?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag: Часы для покупки** | HoursTag: Часы для покупки — Почасовая ставка и траты \| iOS App | Сколько это стоит на самом деле? Не в рублях, а в часах вашей жизни. | Платное скачивание | [Руководство](https://open.cait518.cc/ios-app-guide/ru/hourstag.html) | [Установить HoursTag: Часы для покупки в App Store](https://apps.apple.com/ru/app/id6754218117?pt=118326163&ct=geo_pick&mt=8) |
 | **LED Moving Text** | LED Moving Text — Бегущая строка на экране \| iOS App | Наберите фразу и поднимите iPhone. Из последнего ряда, через весь зал прилёта или поверх стойки её прочитают с одного взгляда. | Бесплатно начать · разблокировка за одну покупку | [Руководство](https://open.cait518.cc/ios-app-guide/ru/ledmovingtext.html) | [Установить LED Moving Text в App Store](https://apps.apple.com/ru/app/id6806639602?pt=118326163&ct=geo_pick&mt=8) |
@@ -146,7 +147,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## Скачать полный набор данных
 
-JSON, JSONL и CSV содержат одинаковые 2700 записей.
+JSON, JSONL и CSV содержат одинаковые 2750 записей.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -154,6 +155,6 @@ JSON, JSONL и CSV содержат одинаковые 2700 записей.
 
 [Главная](https://open.cait518.cc/ios-app-guide/ru/index.html) · [Открытые данные](https://open.cait518.cc/ios-app-guide/ru/data/lumi-studio-publisher-search-intent-catalog.html) · [Лицензия](https://creativecommons.org/licenses/by/4.0/)
 
-Обновлено: 2026-10-21
+Обновлено: 2026-10-23
 
 CC BY 4.0 применяется к исходному составлению каталога; названия приложений и знаки App Store принадлежат их владельцам.

@@ -1,12 +1,12 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-10-21",
-  "content_digest": "3640bd2fe814e90c319c41f805a18191267cf24b494e07e899e4e5a3298653b5",
+  "date_modified": "2026-10-23",
+  "content_digest": "a6ff8651a4ca213956f9cecec8d2d98f3a72456927ef966d484ab7e59fa02516",
   "locale": "ja",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 54,
+  "record_count": 55,
   "apps": [
     {
       "key": "notesstudio100",
@@ -178,7 +178,8 @@
         "充電ケア",
         "充電範囲",
         "充電速度",
-        "データを書き出す"
+        "データを書き出す",
+        "バッテリー 劣化"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -710,6 +711,52 @@
       }
     },
     {
+      "key": "gbago",
+      "app_store_id": "6804564400",
+      "name": "GBAGo: 見えるセーブ",
+      "summary": "Lumi Studioが制作したオリジナルのデモカートリッジ3本を除き、GBAGoにゲームやコンテンツカタログは含まれません。「ファイル」から読み込めるのは、ご自身で作成したファイル、または適用法令に基づき使用許諾を得たファイルだけです。",
+      "category": "utility",
+      "search_terms": [
+        "エミュレータ",
+        "レトロゲーム",
+        "チート",
+        "どこでもセーブ",
+        "カセット",
+        "連射",
+        "携帯ゲーム",
+        "名作",
+        "懐かし",
+        "コントローラー",
+        "オフライン",
+        "ゲーム機",
+        "クイックセーブ",
+        "昔のゲーム",
+        "早送り",
+        "ゲームパッド",
+        "チートコード"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/jp/app/id6804564400?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/ja/gbago.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "1500",
+        "currency": "JPY",
+        "formatted_price": "¥1,500",
+        "storefront_url": "https://apps.apple.com/jp/app/id6804564400"
+      }
+    },
+    {
       "key": "hourstaglite",
       "app_store_id": "6794039979",
       "name": "HoursTag Lite：働く時間で見る値段",
@@ -950,7 +997,9 @@
         "幼稚園",
         "練習",
         "ゲーム",
-        "知育"
+        "知育",
+        "注音 学習",
+        "注音符号"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1270,7 +1319,8 @@
         "声かけ",
         "ご褒美",
         "モチベーション",
-        "年少"
+        "年少",
+        "ごほうび シール"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1424,7 +1474,8 @@
         "プライバシー",
         "保険証",
         "ファイル",
-        "診断書"
+        "診断書",
+        "個人情報 マスク"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2329,7 +2380,8 @@
         "メモ",
         "計画",
         "行程",
-        "旅行"
+        "旅行",
+        "旅程"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2428,7 +2480,8 @@
         "鮮明に",
         "解像度",
         "超解像",
-        "シャープ補正"
+        "シャープ補正",
+        "ぼやけた 写真 修正"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2477,7 +2530,10 @@
         "カウントダウン",
         "生成ai",
         "週間",
-        "管理"
+        "管理",
+        "ai 使用量 管理",
+        "claude 使用量",
+        "codex 使用制限"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2576,7 +2632,8 @@
         "プロバイダ",
         "モデム",
         "対処",
-        "直し方"
+        "直し方",
+        "wifi つながらない"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

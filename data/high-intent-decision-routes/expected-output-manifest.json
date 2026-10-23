@@ -1,14 +1,14 @@
 {
-  "abstained_pairs": 2631,
-  "app_count": 54,
-  "candidate_app_locale_pairs": 2700,
-  "creative_count": 54,
+  "abstained_pairs": 2679,
+  "app_count": 55,
+  "candidate_app_locale_pairs": 2750,
+  "creative_count": 55,
   "current_inventory": {
-    "app_keys_sha256": "e113b81193a6a6edfbbc5aac051d54b81a8df04f147ba3598d487f7a40036706",
-    "copy_sha256": "f3363269f6338b33f9959e78f8aba04a21fa63df191e6fe7b476bccf657a2759",
+    "app_keys_sha256": "bb2a1279adc005a6c0ba0b987ffebef95e3efc4df1e914bd049ef763d4a81ca6",
+    "copy_sha256": "e6eab4ab2ca795a3185fa97e8f83bf7565eee691b2577b4c63f23eb456618a31",
     "missing_route_app_keys": [],
     "missing_route_app_keys_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-    "public_apps": 54
+    "public_apps": 55
   },
   "dataset": "Lumi Studio High-Intent Decision Routes",
   "deployment_state": "generated_not_deployed",
@@ -24,12 +24,12 @@
       "relative_path": "data/high-intent-decision-routes/conversion-contracts.schema.json"
     },
     {
-      "generated_sha256": "cebacc3e498fdff0ad9516a181d20759533a6c6b76eb45ec4cbdb43401f24643",
+      "generated_sha256": "4595f77ee2593f1c9a215667b974503fa1ee33fa5b8086fc8bd22d05f5c38f1e",
       "kind": "coverage_report",
       "relative_path": "data/high-intent-decision-routes/coverage.json"
     },
     {
-      "generated_sha256": "776b84c34b72825379da3e9271d4dd2aa59fd435ca28034f718ba3dcd71804af",
+      "generated_sha256": "f7e36f23b544a68b6ceede0fa10b78db55d1650cd62d845063116307e6f0c539",
       "kind": "json_feed",
       "relative_path": "data/high-intent-decision-routes/feed.json"
     },
@@ -97,6 +97,11 @@
       "generated_sha256": "18bb1b323b2d554729643252e5b9ce681e14bcf9a25ca6984876c2963037072c",
       "kind": "route_html",
       "relative_path": "en-US/decide/easyam/stop-your-alarm-ringing-on-public-holidays-and-days-off.html"
+    },
+    {
+      "generated_sha256": "2075b236900ccf0f0edf66fe7944a0790bb685bd480c670f4496c833dc9a90f9",
+      "kind": "route_html",
+      "relative_path": "en-US/decide/gbago/keep-emulator-save-progress-safe-and-recoverable-on-iphone.html"
     },
     {
       "generated_sha256": "6b0ca2d1ea7481d1d059c25a42f07a27515538376c14aa02157ba232dccb4913",
@@ -329,7 +334,7 @@
       "relative_path": "ja/decide/unblurry/improve-soft-family-photo-realistically.html"
     },
     {
-      "generated_sha256": "1156f5bb96d2894c2d93baaf852a2ac3ceca8fc447d978f50b5a1b5943ef904d",
+      "generated_sha256": "4cb061de5318e7e8d13c537a65d242f296838f7b8f3269dedcb29d224c84089b",
       "kind": "sitemap",
       "relative_path": "sitemap-high-intent-decision-routes.xml"
     },
@@ -352,6 +357,11 @@
       "generated_sha256": "1b4d1a083a02ac06b311513f658d9bdabaa54a007538aa7ea8814f38920ab1e8",
       "kind": "route_html",
       "relative_path": "zh-Hant/decide/easyam/stop-your-alarm-ringing-on-public-holidays-and-days-off.html"
+    },
+    {
+      "generated_sha256": "c6cbb09ab9309d369b869ef29f44bc17bdb727b0b088ae3431df0f6d4f9fa9ed",
+      "kind": "route_html",
+      "relative_path": "zh-Hant/decide/gbago/keep-emulator-save-progress-safe-and-recoverable-on-iphone.html"
     },
     {
       "generated_sha256": "7f4a5f4fa9388eef082901a2d57c23f727f49e0da3a321154de55a65a7f6deae",
@@ -386,17 +396,17 @@
   ],
   "fallback_records": 0,
   "inventory": {
-    "app_keys_sha256": "e113b81193a6a6edfbbc5aac051d54b81a8df04f147ba3598d487f7a40036706",
-    "copy_sha256": "f3363269f6338b33f9959e78f8aba04a21fa63df191e6fe7b476bccf657a2759",
+    "app_keys_sha256": "bb2a1279adc005a6c0ba0b987ffebef95e3efc4df1e914bd049ef763d4a81ca6",
+    "copy_sha256": "e6eab4ab2ca795a3185fa97e8f83bf7565eee691b2577b4c63f23eb456618a31",
     "official_locales_sha256": "e26dabf9370286ad8fd12034270cfcade92b2db4f4a0eecc19324203ce84d5bd",
-    "public_apps": 54,
+    "public_apps": 55,
     "relative_path": "data/verified-ios-app-finder-catalog.json"
   },
-  "manifest_digest": "a6ada170c513c01d6540a3edd6cc004e8a9801d0e72ab9f4d12eed8802e52071",
+  "manifest_digest": "f6c0f5e52764c1ba64d4c6ca1563105f0e434e06d8f7acbf638ec5e49a6be0bd",
   "owner": "high_intent_decision_routes",
-  "release_contract_digest": "7d0a88d622fdf41547a5a42950bcfd0110e73085aeb74b079744b2d778dd46a3",
+  "release_contract_digest": "f824f980dd224b942d5187a4c4b578970e16df1dc840ca21789c79474661a403",
   "release_state": "exact",
-  "route_count": 69,
+  "route_count": 71,
   "routes": [
     {
       "app_key": "mochidonestamp",
@@ -618,6 +628,23 @@
       "route_id": "en-US:easyam:stop-your-alarm-ringing-on-public-holidays-and-days-off",
       "route_slug": "stop-your-alarm-ringing-on-public-holidays-and-days-off",
       "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/easyam/stop-your-alarm-ringing-on-public-holidays-and-days-off.html"
+    },
+    {
+      "app_key": "gbago",
+      "app_store_id": "6804564400",
+      "app_store_url": "https://apps.apple.com/us/app/id6804564400?pt=118326163&ct=geo_ask&mt=8",
+      "campaign_token": "geo_ask",
+      "content_type": "problem_aware",
+      "creative_digest": "566b0f3a2ccdb6d6a243df5995fb7eef146a1068545765025fe809cac73075b0",
+      "creative_id": "gbago:keep-emulator-save-progress-safe-and-recoverable-on-iphone:problem_aware",
+      "intent_type": "problem_aware",
+      "locale": "en-US",
+      "output_sha256": "2075b236900ccf0f0edf66fe7944a0790bb685bd480c670f4496c833dc9a90f9",
+      "record_digest": "a7192ad54caca37818265ce4c2093d1690b1c35a1de314f50c15665572583cf7",
+      "relative_path": "en-US/decide/gbago/keep-emulator-save-progress-safe-and-recoverable-on-iphone.html",
+      "route_id": "en-US:gbago:keep-emulator-save-progress-safe-and-recoverable-on-iphone",
+      "route_slug": "keep-emulator-save-progress-safe-and-recoverable-on-iphone",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/gbago/keep-emulator-save-progress-safe-and-recoverable-on-iphone.html"
     },
     {
       "app_key": "gmoney",
@@ -1470,6 +1497,23 @@
       "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/decide/easyam/stop-your-alarm-ringing-on-public-holidays-and-days-off.html"
     },
     {
+      "app_key": "gbago",
+      "app_store_id": "6804564400",
+      "app_store_url": "https://apps.apple.com/tw/app/id6804564400?pt=118326163&ct=geo_ask&mt=8",
+      "campaign_token": "geo_ask",
+      "content_type": "problem_aware",
+      "creative_digest": "566b0f3a2ccdb6d6a243df5995fb7eef146a1068545765025fe809cac73075b0",
+      "creative_id": "gbago:keep-emulator-save-progress-safe-and-recoverable-on-iphone:problem_aware",
+      "intent_type": "problem_aware",
+      "locale": "zh-Hant",
+      "output_sha256": "c6cbb09ab9309d369b869ef29f44bc17bdb727b0b088ae3431df0f6d4f9fa9ed",
+      "record_digest": "92946d610ed8aeaf2f3657024a7ca5d2626a07264ca44f9a7a8c68fc389e3604",
+      "relative_path": "zh-Hant/decide/gbago/keep-emulator-save-progress-safe-and-recoverable-on-iphone.html",
+      "route_id": "zh-Hant:gbago:keep-emulator-save-progress-safe-and-recoverable-on-iphone",
+      "route_slug": "keep-emulator-save-progress-safe-and-recoverable-on-iphone",
+      "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/decide/gbago/keep-emulator-save-progress-safe-and-recoverable-on-iphone.html"
+    },
+    {
       "app_key": "lumibopomofo",
       "app_store_id": "6773017109",
       "app_store_url": "https://apps.apple.com/tw/app/id6773017109?pt=118326163&ct=geo_pick&mt=8",
@@ -1574,5 +1618,5 @@
   ],
   "schema_version": 2,
   "site": "https://open.cait518.cc/ios-app-guide",
-  "source_contract_digest": "1d6962991d876f4b7bb837579f77fe73f9fc4c4408f4a48a4ed749fa43ef69c2"
+  "source_contract_digest": "eb40121547323618d73daa6c58a5b3cf9eb47995eb0c89a89124273f035dfdb4"
 }

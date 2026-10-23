@@ -2,7 +2,7 @@
 title: "Snapport Lite: Fai fototessere — Ritratti nel formato esatto | iOS App"
 lang: "it"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapportlite/decision/l/it/index.html"
-modified: "2026-10-21"
+modified: "2026-10-23"
 app_store_id: "6792856304"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

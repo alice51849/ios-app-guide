@@ -2,7 +2,7 @@
 title: "适合成年人每天一分钟、不用整理词卡的最佳免费背单词应用"
 lang: "zh-Hans"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wordmatelite/decision/l/zh-Hans/index.html"
-modified: "2026-10-21"
+modified: "2026-10-23"
 app_store_id: "6797601720"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

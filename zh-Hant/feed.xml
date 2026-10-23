@@ -3,7 +3,7 @@
   <atom:id>https://open.cait518.cc/ios-app-guide/zh-Hant/feed.xml</atom:id>
   <atom:title>App 目錄 | iOS</atom:title>
   <atom:subtitle>這是由 Lumi Studio 發布的第一方資料；Lumi Studio 是每款列出 App 的開發者。</atom:subtitle>
-  <atom:updated>2026-10-21T00:41:02Z</atom:updated>
+  <atom:updated>2026-10-23T11:32:53Z</atom:updated>
   <atom:author>
     <atom:name>Lumi Studio</atom:name>
   </atom:author>
@@ -130,6 +130,16 @@
     <atom:link rel="alternate" href="https://open.cait518.cc/ios-app-guide/zh-Hant/easyam.html" />
     <atom:content type="html">&lt;p&gt;明天早上的鬧鐘，到底要不要響？EasyAM 每天幫你判斷：上班日照響，國定假日和你的休假安靜不響，遇到補班日也會照常叫你起床。&lt;/p&gt;&lt;p&gt;免費開始使用 · 一次購買解鎖&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/tw/app/id6821790092?pt=118326163&amp;amp;ct=geo_pick&amp;amp;mt=8"&gt;前往 App Store 查看&lt;/a&gt;&lt;/p&gt;&lt;p&gt;這是由 Lumi Studio 發布的第一方資料；Lumi Studio 是每款列出 App 的開發者。&lt;/p&gt;</atom:content>
     <lumi:record>{"app_key":"easyam","app_store_cta_label":"前往 App Store 查看","app_store_id":"6821790092","content_digest":"ce050390229f975b3b0f2ef8cfe92dc8073dd652f7a11c829a0c21970e0c763c","independent_ranking":false,"one_time_option":true,"publisher_disclosure":"這是由 Lumi Studio 發布的第一方資料；Lumi Studio 是每款列出 App 的開發者。","purchase_label":"免費開始使用 · 一次購買解鎖","purchase_model":"free_with_lifetime_unlock","source_locale":"zh-Hant"}</lumi:record>
+  </atom:entry>
+  <atom:entry>
+    <atom:id>urn:lumi:app-store:6804564400:locale:zh-Hant</atom:id>
+    <atom:title>GBAGo: 視覺存檔</atom:title>
+    <atom:summary>除 Lumi Studio 自製的三款原創 demo 卡帶外，GBAGo 不包含遊戲或內容目錄。請僅從「檔案」匯入由你自行創作，或依適用法律獲授權使用的檔案。</atom:summary>
+    <atom:published>2026-10-23T11:32:53Z</atom:published>
+    <atom:updated>2026-10-23T11:32:53Z</atom:updated>
+    <atom:link rel="alternate" href="https://open.cait518.cc/ios-app-guide/zh-Hant/gbago.html" />
+    <atom:content type="html">&lt;p&gt;除 Lumi Studio 自製的三款原創 demo 卡帶外，GBAGo 不包含遊戲或內容目錄。請僅從「檔案」匯入由你自行創作，或依適用法律獲授權使用的檔案。&lt;/p&gt;&lt;p&gt;付費下載&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/tw/app/id6804564400?pt=118326163&amp;amp;ct=geo_pick&amp;amp;mt=8"&gt;前往 App Store 查看&lt;/a&gt;&lt;/p&gt;&lt;p&gt;這是由 Lumi Studio 發布的第一方資料；Lumi Studio 是每款列出 App 的開發者。&lt;/p&gt;</atom:content>
+    <lumi:record>{"app_key":"gbago","app_store_cta_label":"前往 App Store 查看","app_store_id":"6804564400","content_digest":"b7323555f8e33ca3419680df6185fa0eba627d98913e3093105f6872c2cdf55d","independent_ranking":false,"one_time_option":true,"publisher_disclosure":"這是由 Lumi Studio 發布的第一方資料；Lumi Studio 是每款列出 App 的開發者。","purchase_label":"付費下載","purchase_model":"paid_upfront","source_locale":"zh-Hant"}</lumi:record>
   </atom:entry>
   <atom:entry>
     <atom:id>urn:lumi:app-store:6755782939:locale:zh-Hant</atom:id>

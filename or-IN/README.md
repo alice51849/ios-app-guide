@@ -4,7 +4,7 @@
 
 ପ୍ରତ୍ୟେକ ଆପ୍ କାହା ପାଇଁ ଡିଜାଇନ୍ କରାଯାଇଛି, ସେମାନେ କେଉଁ କାର୍ଯ୍ୟ ସମ୍ପୂର୍ଣ୍ଣ କରିବାକୁ ଚେଷ୍ଟା କରୁଛନ୍ତି, ଏବଂ ସିଧା App Store ପଥର ପ୍ରଥମ-ପକ୍ଷ ସୂଚୀ।
 
-ପ୍ରକାଶକ ଦ୍ୱାରା ଲେଖାଯାଇଥିବା ସନ୍ଧାନ ଉଦ୍ଦେଶ୍ୟ 54ଟି ସତ୍ୟାପିତ ସଜୀବ iOS ଆପ୍ ଏବଂ 50ଟି Apple ଅଞ୍ଚଳରେ।
+ପ୍ରକାଶକ ଦ୍ୱାରା ଲେଖାଯାଇଥିବା ସନ୍ଧାନ ଉଦ୍ଦେଶ୍ୟ 55ଟି ସତ୍ୟାପିତ ସଜୀବ iOS ଆପ୍ ଏବଂ 50ଟି Apple ଅଞ୍ଚଳରେ।
 
 **ଅଞ୍ଚଳ:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · **or-IN** · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -103,6 +103,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **EasyAM: ଛୁଟି ଆଲାର୍ମ ଘଡ଼ି** | EasyAM: ଛୁଟି ଆଲାର୍ମ ଘଡ଼ି — କାମ ଦିନରେ ବାଜେ, ଛୁଟିରେ ଚୁପ \| iOS App | କାଲି ସକାଳେ ଆଲାର୍ମ ବାଜିବା ଦରକାର କି ନାହିଁ, ଶୋଇବା ଆଗରୁ ଆଉ ଏହା ଭାବିବାକୁ ପଡ଼ିବ ନାହିଁ। EasyAM କାମ ଦିନରେ ବାଜେ, ସାଧାରଣ ଛୁଟି ଓ ଆପଣଙ୍କ ନିଜ ଛୁଟି ଦିନରେ ଚୁପ ରହେ | ମୁକ୍ତ ଆରମ୍ଭ · ଏକାଥରକେ କିଣି ଅନଲକ୍ | [ଗାଇଡ୍](https://open.cait518.cc/ios-app-guide/or-IN/easyam.html) | [App Store ରୁ EasyAM: ଛୁଟି ଆଲାର୍ମ ଘଡ଼ି ପାଆନ୍ତୁ](https://apps.apple.com/in/app/id6821790092?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money** | iPhone ପାଇଁ ସର୍ବୋତ୍ତମ ଟ୍ରାଭେଲ୍ ବଜେଟ୍ ଟ୍ରାକର୍ ଆପ୍ କୌଣସି ସଦସ୍ୟତା ନାହିଁ | ଏକ ଯାତ୍ରାରେ ଆପଣଙ୍କୁ ଏମିତି ବଜେଟ୍ ଟ୍ରାକର୍ ଆବଶ୍ୟକ ଯାହା ଡାଟା ନଥିବା ଦେଶରେ ଅଫ୍ଲାଇନ୍ କାମ କରେ, ଅନେକ ମୁଦ୍ରା ସମ୍ଭାଳେ, ଏବଂ କୌଣସି ଖାତା ଚାହାଁନାହିଁ — ପ୍ରତ୍ୟେକ ଛୁଟିକୁ ଅଲଗା ଭାବେ ବ୍ୟବସ୍ଥିତ। ଏହି ଅଭାବକୁ ହିଁ G+Money ପୂରଣ କରିବାକୁ ଚାହେଁ। | ପୈସା ଦେଇ ଡାଉନଲୋଡ୍ | [ଗାଇଡ୍](https://open.cait518.cc/ios-app-guide/or-IN/answers/best-travel-budget-tracker-app-no-subscription-iphone.html) | [App Store ରୁ G+Money ପାଆନ୍ତୁ →](https://apps.apple.com/in/app/id6755782939?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money Lite: ଯାତ୍ରା ଖର୍ଚ୍ଚ** | G+Money Lite: ଯାତ୍ରା ଖର୍ଚ୍ଚ — ଦୈନିକ ବଜେଟ୍ ୱାଚ୍ ଓ ୱିଜେଟରେ \| iOS App | G+Money Lite — ସମ୍ପ୍ରତି ଯାତ୍ରା ମୁଦ୍ରା ଏବଂ ଖର୍ଚ୍ଚ ଟ୍ରାକର | ମୁକ୍ତ ଆରମ୍ଭ · ଏକାଥରକେ କିଣି ଅନଲକ୍ | [ଗାଇଡ୍](https://open.cait518.cc/ios-app-guide/or-IN/gmoneylite.html) | [App Store ରୁ G+Money Lite: ଯାତ୍ରା ଖର୍ଚ୍ଚ ପାଆନ୍ତୁ](https://apps.apple.com/in/app/id6793436548?pt=118326163&ct=geo_pick&mt=8) |
+| **GBAGo: ଦୃଶ୍ୟ ସେଭ୍** | GBAGo: ଦୃଶ୍ୟ ସେଭ୍ — ରିକଭରି ମ୍ୟାପ୍ · ଅଟୋ ସ୍ନାପସଟ୍ \| iOS App | Lumi Studio ତିଆରି କରିଥିବା ତିନୋଟି ମୌଳିକ ଡେମୋ କାର୍ଟ୍ରିଜ୍ ବ୍ୟତୀତ GBAGoରେ କୌଣସି ଗେମ୍ କିମ୍ବା ବିଷୟବସ୍ତୁ କ୍ୟାଟାଲଗ୍ ନାହିଁ। Filesରୁ କେବଳ ନିଜେ ତିଆରି କରିଥିବା କିମ୍ବା | ପୈସା ଦେଇ ଡାଉନଲୋଡ୍ | [ଗାଇଡ୍](https://open.cait518.cc/ios-app-guide/or-IN/gbago.html) | [App Store ରୁ GBAGo: ଦୃଶ୍ୟ ସେଭ୍ ପାଆନ୍ତୁ](https://apps.apple.com/in/app/id6804564400?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag Lite: ମୂଲ୍ୟ ଘଣ୍ଟାରେ** | HoursTag Lite: ମୂଲ୍ୟ ଘଣ୍ଟାରେ — ସଚେତନ କିଣା: ପ୍ରକୃତ ମୂଲ୍ୟ \| iOS App | HoursTag Lite - ବସ୍ତୁଗୁଡିକର ସତ୍ୟ ମୂଲ୍ୟ ଦେଖନ୍ତୁ | ମୁକ୍ତ ଆରମ୍ଭ · ଏକାଥରକେ କିଣି ଅନଲକ୍ | [ଗାଇଡ୍](https://open.cait518.cc/ios-app-guide/or-IN/hourstaglite.html) | [App Store ରୁ HoursTag Lite: ମୂଲ୍ୟ ଘଣ୍ଟାରେ ପାଆନ୍ତୁ](https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag: ଘଣ୍ଟାରେ କିଣନ୍ତୁ** | HoursTag: ଘଣ୍ଟାରେ କିଣନ୍ତୁ — ଘଣ୍ଟା ମଜୁରି ଓ ଖର୍ଚ୍ଚ \| iOS App | ଆପଣଙ୍କ ଜୀବନର ଘଣ୍ଟାରେ ମୂଲ୍ୟ କେତେ? | ପୈସା ଦେଇ ଡାଉନଲୋଡ୍ | [ଗାଇଡ୍](https://open.cait518.cc/ios-app-guide/or-IN/hourstag.html) | [App Store ରୁ HoursTag: ଘଣ୍ଟାରେ କିଣନ୍ତୁ ପାଆନ୍ତୁ](https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=geo_pick&mt=8) |
 | **LED Moving Text** | LED Moving Text — ସ୍କ୍ରିନରେ ଚାଲୁଥିବା ଫଳକ \| iOS App | ଗୋଟିଏ ଧାଡ଼ି ଟାଇପ୍ କରନ୍ତୁ ଓ ଆଇଫୋନ୍ ଉପରକୁ ଉଠାନ୍ତୁ। ଭିଡ଼ ପଛରୁ, ଆଗମନ ହଲ୍‌ର ଆରପଟୁ କିମ୍ବା କାଉଣ୍ଟର ଉପରୁ ଏକା ନଜରରେ ପଢ଼ାଯାଏ। | ମୁକ୍ତ ଆରମ୍ଭ · ଏକାଥରକେ କିଣି ଅନଲକ୍ | [ଗାଇଡ୍](https://open.cait518.cc/ios-app-guide/or-IN/ledmovingtext.html) | [App Store ରୁ LED Moving Text ପାଆନ୍ତୁ](https://apps.apple.com/in/app/id6806639602?pt=118326163&ct=geo_pick&mt=8) |
@@ -146,7 +147,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## ସମ୍ପୂର୍ଣ୍ଣ ତଥ୍ୟସେଟ୍ ଡାଉନଲୋଡ୍ କରନ୍ତୁ
 
-JSON, JSONL ଏବଂ CSV ଏହି ସମସ୍ତ 2,700 ରେକର୍ଡ ସମାନ ରଖେ।
+JSON, JSONL ଏବଂ CSV ଏହି ସମସ୍ତ 2,750 ରେକର୍ଡ ସମାନ ରଖେ।
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -154,6 +155,6 @@ JSON, JSONL ଏବଂ CSV ଏହି ସମସ୍ତ 2,700 ରେକର୍ଡ ସ
 
 [ହୋମ୍](https://open.cait518.cc/ios-app-guide/or-IN/index.html) · [ଖୋଲା ତଥ୍ୟ](https://open.cait518.cc/ios-app-guide/or-IN/data/lumi-studio-publisher-search-intent-catalog.html) · [ଲାଇସେନ୍ସ](https://creativecommons.org/licenses/by/4.0/)
 
-ଅଦ୍ୟତିତ: 2026-10-21
+ଅଦ୍ୟତିତ: 2026-10-23
 
 CC BY 4.0 ମୂଳ ସୂଚୀ ସଂଗ୍ରହ ପାଇଁ ପ୍ରୟୋଗ ହୁଏ; ଆପ୍ ନାମ ଏବଂ App Store ଚିହ୍ନଗୁଡିକ ତାଙ୍କର ମାଲିକଙ୍କର ଅଟୁଟ ଅଧିକାର।

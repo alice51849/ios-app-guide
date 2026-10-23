@@ -4,7 +4,7 @@
 
 Katalóg prvej strany, ktorý uvádza, pre koho je každá aplikácia určená, aký úkon sa snaží používateľ dokončiť a priamu cestu do App Store.
 
-Zámery vyhľadávania vytvorené vydavateľom pre 54 overených aktívnych iOS aplikácií a 50 lokalít Apple.
+Zámery vyhľadávania vytvorené vydavateľom pre 55 overených aktívnych iOS aplikácií a 50 lokalít Apple.
 
 **Lokalita:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · **sk** · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -103,6 +103,7 @@ Abecedne podľa názvu aplikácie — nikdy nie podľa poradia.
 | **EasyAM: Budík na pracovné dni** | EasyAM: Budík na pracovné dni — Sám preskočí sviatky aj voľno \| iOS App | Už nemusíte večer riešiť, či budík zajtra zazvoní: EasyAM zvoní v pracovné dni a cez sviatky aj vo vašom voľne mlčí. Pred predĺženým víkendom ho nevypínate | Zadarmo na začiatok · odomknutie jednorazovým nákupom | [Sprievodca](https://open.cait518.cc/ios-app-guide/sk/easyam.html) | [Stiahnuť EasyAM: Budík na pracovné dni v App Store](https://apps.apple.com/sk/app/id6821790092?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money** | najlepšia aplikácia na sledovanie cestovného rozpočtu bez predplatného pre iPhone | Na ceste potrebujete aplikáciu na rozpočet, ktorá funguje offline v krajine bez dát, zvláda viac mien a nevyžaduje účet — usporiadanú podľa ciest, aby bol každý výlet samostatný. Presne túto medzeru má G+Money zaplniť. | Platené stiahnutie | [Sprievodca](https://open.cait518.cc/ios-app-guide/sk/answers/best-travel-budget-tracker-app-no-subscription-iphone.html) | [Získajte G+Money v App Store →](https://apps.apple.com/sk/app/id6755782939?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money Lite: Výdavky na cesty** | G+Money Lite: Výdavky na cesty — Denný rozpočet na hodinkách \| iOS App | G+Money Lite — Inteligentný prevodník cestovnej meny a sledovač výdavkov | Zadarmo na začiatok · odomknutie jednorazovým nákupom | [Sprievodca](https://open.cait518.cc/ios-app-guide/sk/gmoneylite.html) | [Stiahnuť G+Money Lite: Výdavky na cesty v App Store](https://apps.apple.com/sk/app/id6793436548?pt=118326163&ct=geo_pick&mt=8) |
+| **GBAGo: Vizuálne uložené** | GBAGo: Vizuálne uložené — Mapa obnovenia · Autosnímky \| iOS App | Okrem troch pôvodných demo kaziet od Lumi Studio GBAGo neobsahuje hry ani katalóg obsahu. Z aplikácie Súbory importujte iba súbory, ktoré ste sami | Platené stiahnutie | [Sprievodca](https://open.cait518.cc/ios-app-guide/sk/gbago.html) | [Stiahnuť GBAGo: Vizuálne uložené v App Store](https://apps.apple.com/sk/app/id6804564400?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag Lite: Cena v hodinách** | HoursTag Lite: Cena v hodinách — Vedomý nákup: skutočná cena \| iOS App | HoursTag Lite - Pozrite sa na skutočnú cenu vecí | Zadarmo na začiatok · odomknutie jednorazovým nákupom | [Sprievodca](https://open.cait518.cc/ios-app-guide/sk/hourstaglite.html) | [Stiahnuť HoursTag Lite: Cena v hodinách v App Store](https://apps.apple.com/sk/app/id6794039979?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag: Hodiny na nákup** | HoursTag: Hodiny na nákup — Hodinová mzda a výdavky \| iOS App | Koľko to naozaj stojí? Nie v eurách, ale v hodinách vášho života. | Platené stiahnutie | [Sprievodca](https://open.cait518.cc/ios-app-guide/sk/hourstag.html) | [Stiahnuť HoursTag: Hodiny na nákup v App Store](https://apps.apple.com/sk/app/id6754218117?pt=118326163&ct=geo_pick&mt=8) |
 | **LED Moving Text** | LED Moving Text — Bežiaci text na displeji \| iOS App | Napíšte vetu a zdvihnite iPhone. Zo zadného radu, cez celú príletovú halu alebo ponad pult ju každý prečíta jediným pohľadom. | Zadarmo na začiatok · odomknutie jednorazovým nákupom | [Sprievodca](https://open.cait518.cc/ios-app-guide/sk/ledmovingtext.html) | [Stiahnuť LED Moving Text v App Store](https://apps.apple.com/sk/app/id6806639602?pt=118326163&ct=geo_pick&mt=8) |
@@ -146,7 +147,7 @@ Abecedne podľa názvu aplikácie — nikdy nie podľa poradia.
 
 ## Stiahnite si kompletný súbor údajov
 
-Formáty JSON, JSONL a CSV obsahujú rovnakých 2 700 záznamov.
+Formáty JSON, JSONL a CSV obsahujú rovnakých 2 750 záznamov.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -154,6 +155,6 @@ Formáty JSON, JSONL a CSV obsahujú rovnakých 2 700 záznamov.
 
 [Domov](https://open.cait518.cc/ios-app-guide/sk/index.html) · [Otvárame dáta](https://open.cait518.cc/ios-app-guide/sk/data/lumi-studio-publisher-search-intent-catalog.html) · [Licencia](https://creativecommons.org/licenses/by/4.0/)
 
-Aktualizované: 2026-10-21
+Aktualizované: 2026-10-23
 
 Na pôvodné zostavenie katalógu sa vzťahuje licencia CC BY 4.0; názvy aplikácií a značky App Store patria ich vlastníkom.

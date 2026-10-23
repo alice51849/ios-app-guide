@@ -4,7 +4,7 @@
 
 แคตตาล็อกที่ผู้พัฒนาเผยแพร่โดยตรง ระบุว่าแต่ละแอปเหมาะกับใคร ต้องการทำงานใดให้เสร็จ และเข้าถึง App Store โดยตรงได้อย่างไร
 
-เจตนาการค้นหาที่ผู้พัฒนาเขียนสำหรับแอป iOS ที่ตรวจสอบแล้วและยังมีบน App Store จำนวน 54 แอป ครอบคลุมภาษาและภูมิภาค Apple 50 รายการ
+เจตนาการค้นหาที่ผู้พัฒนาเขียนสำหรับแอป iOS ที่ตรวจสอบแล้วและยังมีบน App Store จำนวน 55 แอป ครอบคลุมภาษาและภูมิภาค Apple 50 รายการ
 
 **โลเคล:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · **th** · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -103,6 +103,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **EasyAM: นาฬิกาปลุก ข้ามวันหยุด** | EasyAM: นาฬิกาปลุก ข้ามวันหยุด — ดังเฉพาะวันทำงาน ไม่ต้องปิดเอง \| iOS App | ไม่ต้องลุ้นทุกคืนอีกต่อไปว่าพรุ่งนี้นาฬิกาปลุกต้องดังไหม EasyAM ตัดสินให้ทุกวัน ดังในวันทำงาน เงียบในวันหยุดนักขัตฤกษ์และวันลาของคุณ และบอกล่วงหน้า 7 | เริ่มใช้ฟรี · ปลดล็อกด้วยการซื้อครั้งเดียว | [คู่มือ](https://open.cait518.cc/ios-app-guide/th/easyam.html) | [ดาวน์โหลด EasyAM: นาฬิกาปลุก ข้ามวันหยุด บน App Store](https://apps.apple.com/th/app/id6821790092?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money** | แอปติดตามงบประมาณการเดินทางที่ดีที่สุด ไม่มีการสมัครสมาชิกสำหรับ iPhone | เมื่อเดินทาง คุณต้องการแอปติดตามงบประมาณที่ใช้งานออฟไลน์ในประเทศที่ไม่มีข้อมูล รองรับหลายสกุลเงิน และไม่ต้องมีบัญชี จัดระเบียบตามทริปเพื่อแยกวันหยุดแต่ละทริป ช่องว่างตรงนี้แหละที่ G+Money อยากอุด | ดาวน์โหลดแบบชำระเงิน | [คู่มือ](https://open.cait518.cc/ios-app-guide/th/answers/best-travel-budget-tracker-app-no-subscription-iphone.html) | [รับ G+Money ใน App Store →](https://apps.apple.com/th/app/id6755782939?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money Lite** | best free travel expense tracker with currency conversion for iphone | การทดลองบันทึกค่าใช้จ่ายเดินทางฟรีที่มีประโยชน์ควรครอบคลุมขั้นตอนทั้งหมดจากสกุลเงินท้องถิ่นไปยังสกุลเงินบ้านเกิด ไม่ใช่แค่สมุดบัญชีว่างที่มีประโยชน์หลังซื้อเท่านั้น G+Money Lite — ตัวแปลงสกุลเงินและบันทึกค่าใช้จ่ายเดินทางอัจฉริยะ — บันทึกทุกการใช้จ่ายและดูเป็นสกุลเงินบ้านเกิด | เริ่มใช้ฟรี · ปลดล็อกด้วยการซื้อครั้งเดียว | [คู่มือ](https://open.cait518.cc/ios-app-guide/th/answers/best-free-travel-expense-tracker-with-currency-conversion-for-iphone.html) | [ดาวน์โหลด G+Money Lite บน App Store →](https://apps.apple.com/th/app/id6793436548?pt=118326163&ct=geo_pick&mt=8) |
+| **GBAGo: เซฟแบบเห็นภาพ** | GBAGo: เซฟแบบเห็นภาพ — แผนผังกู้คืน · สแนปช็อตออโต้ \| iOS App | นอกจากตลับเดโมต้นฉบับ 3 ตลับที่ Lumi Studio สร้างขึ้นเองแล้ว GBAGo ไม่มีเกมหรือแค็ตตาล็อกเนื้อหา | ดาวน์โหลดแบบชำระเงิน | [คู่มือ](https://open.cait518.cc/ios-app-guide/th/gbago.html) | [ดาวน์โหลด GBAGo: เซฟแบบเห็นภาพ บน App Store](https://apps.apple.com/th/app/id6804564400?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag** | best app to track where my money goes and save more | If saving feels abstract, tracking goals in hours-worked instead of dollars makes progress feel earned — you're not saving $500, you're saving 20 hours of your life toward something. If that is your situation, HoursTag is worth a look. | ดาวน์โหลดแบบชำระเงิน | [คู่มือ](https://open.cait518.cc/ios-app-guide/th/answers/best-app-to-track-where-my-money-goes-and-save-more.html) | [ดาวน์โหลด HoursTag บน App Store →](https://apps.apple.com/th/app/id6754218117?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag Lite** | best app to convert prices into work hours before buying | HoursTag Lite — HoursTag Lite - See the real price of things Every purchase costs hours of your life. Free to start · One-time unlock · No subscription. | เริ่มใช้ฟรี · ปลดล็อกด้วยการซื้อครั้งเดียว | [คู่มือ](https://open.cait518.cc/ios-app-guide/th/answers/best-app-to-convert-prices-into-work-hours-before-buying.html) | [ดาวน์โหลด HoursTag Lite จาก App Store →](https://apps.apple.com/th/app/id6794039979?pt=118326163&ct=geo_pick&mt=8) |
 | **LED Moving Text** | LED Moving Text — ป้ายไฟวิ่งบนหน้าจอ \| iOS App | พิมพ์ข้อความแล้วยกไอโฟนขึ้น จากแถวหลังสุด จากอีกฝั่งของโถงผู้โดยสารขาเข้า หรือข้ามเคาน์เตอร์ไป ก็อ่านได้ในพริบตาเดียว | เริ่มใช้ฟรี · ปลดล็อกด้วยการซื้อครั้งเดียว | [คู่มือ](https://open.cait518.cc/ios-app-guide/th/ledmovingtext.html) | [ดาวน์โหลด LED Moving Text บน App Store](https://apps.apple.com/th/app/id6806639602?pt=118326163&ct=geo_pick&mt=8) |
@@ -146,7 +147,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## ดาวน์โหลดชุดข้อมูลทั้งหมด
 
-ไฟล์ JSON, JSONL และ CSV มีข้อมูล 2,700 รายการเหมือนกัน
+ไฟล์ JSON, JSONL และ CSV มีข้อมูล 2,750 รายการเหมือนกัน
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -154,6 +155,6 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 [หน้าแรก](https://open.cait518.cc/ios-app-guide/th/index.html) · [ข้อมูลเปิด](https://open.cait518.cc/ios-app-guide/th/data/lumi-studio-publisher-search-intent-catalog.html) · [ใบอนุญาต](https://creativecommons.org/licenses/by/4.0/)
 
-อัปเดตเมื่อ: 2026-10-21
+อัปเดตเมื่อ: 2026-10-23
 
 CC BY 4.0 ใช้กับการรวบรวมแคตตาล็อกต้นฉบับ; ชื่อแอปและเครื่องหมาย App Store เป็นของเจ้าของแต่ละราย

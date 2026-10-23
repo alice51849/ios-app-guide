@@ -4,7 +4,7 @@
 
 كتالوج ينشره المطور مباشرةً ويوضح الفئة التي صُمم لها كل تطبيق، والمهمة التي تريد إنجازها، والمسار المباشر إلى App Store.
 
-نوايا بحث كتبها الناشر لـ 54 تطبيق iOS تم التحقق من توفرها و50 إعدادًا لغويًا وإقليميًا من Apple.
+نوايا بحث كتبها الناشر لـ 55 تطبيق iOS تم التحقق من توفرها و50 إعدادًا لغويًا وإقليميًا من Apple.
 
 **الإعداد اللغوي والإقليمي:** **ar-SA** · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -103,6 +103,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **EasyAM: منبه ذكي لأيام الدوام** | EasyAM: منبه ذكي لأيام الدوام — يتخطى الاجازات الرسمية تلقائيا \| iOS App | هل سيرن المنبه غدا أم لا؟ مع EasyAM لن تحتاج إلى التفكير في ذلك بعد اليوم، فهو يقرر بنفسه يوما بيوم: يرن في أيام الدوام ويصمت في العطلات الرسمية وأيام | بدء مجاني · فتح بعملية شراء واحدة | [الدليل](https://open.cait518.cc/ios-app-guide/ar-SA/easyam.html) | [احصل على EasyAM: منبه ذكي لأيام الدوام من App Store](https://apps.apple.com/sa/app/id6821790092?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money** | أفضل تطبيق تتبع ميزانية السفر بدون اشتراك للآيفون | في رحلة تحتاج إلى متتبع ميزانية يعمل بدون اتصال في بلد بدون بيانات، يتعامل مع عملات متعددة، ولا يطلب حساب — منظم حسب الرحلة بحيث كل عطلة منفصلة. هذه الفجوة بالذات هي ما يسعى G+Money لسدّها. | تحميل مدفوع | [الدليل](https://open.cait518.cc/ios-app-guide/ar-SA/answers/best-travel-budget-tracker-app-no-subscription-iphone.html) | [احصل على G+Money من App Store →](https://apps.apple.com/sa/app/id6755782939?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money Lite** | best free travel expense tracker with currency conversion for iphone | ينبغي أن تشمل التجربة المجانية المفيدة لمصروفات السفر سير العمل الكامل من العملة المحلية إلى عملة بلدك، لا مجرد دفتر فارغ لا يفيد إلا بعد الشراء. G+Money Lite — متتبّع ذكي لعملات السفر والمصروفات — سجّل كل إنفاق واعرضه بعملة بلدك. | بدء مجاني · فتح بعملية شراء واحدة | [الدليل](https://open.cait518.cc/ios-app-guide/ar-SA/answers/best-free-travel-expense-tracker-with-currency-conversion-for-iphone.html) | [احصل على G+Money Lite من App Store ←](https://apps.apple.com/sa/app/id6793436548?pt=118326163&ct=geo_pick&mt=8) |
+| **GBAGo: حفظ مرئي** | GBAGo: حفظ مرئي — خريطة الاستعادة · لقطات آلية \| iOS App | باستثناء ثلاث خراطيش تجريبية أصلية من إنتاج Lumi Studio، لا يتضمن GBAGo ألعابًا أو فهرس محتوى. استورد من «الملفات» فقط الملفات التي أنشأتها بنفسك أو المصرح | تحميل مدفوع | [الدليل](https://open.cait518.cc/ios-app-guide/ar-SA/gbago.html) | [احصل على GBAGo: حفظ مرئي من App Store](https://apps.apple.com/sa/app/id6804564400?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag** | best app to track where my money goes and save more | If saving feels abstract, tracking goals in hours-worked instead of dollars makes progress feel earned — you're not saving $500, you're saving 20 hours of your life toward something. If that is your situation, HoursTag is worth a look. | تحميل مدفوع | [الدليل](https://open.cait518.cc/ios-app-guide/ar-SA/answers/best-app-to-track-where-my-money-goes-and-save-more.html) | [Get HoursTag on the App Store ←](https://apps.apple.com/sa/app/id6754218117?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag Lite** | best app to convert prices into work hours before buying | HoursTag Lite — HoursTag Lite - See the real price of things Every purchase costs hours of your life. Free to start · One-time unlock · No subscription. | بدء مجاني · فتح بعملية شراء واحدة | [الدليل](https://open.cait518.cc/ios-app-guide/ar-SA/answers/best-app-to-convert-prices-into-work-hours-before-buying.html) | [احصل على HoursTag Lite من App Store ←](https://apps.apple.com/sa/app/id6794039979?pt=118326163&ct=geo_pick&mt=8) |
 | **LED Moving Text** | LED Moving Text — شاشتك تتحول إلى لافتة مضيئة \| iOS App | اكتب عبارة وارفع الآيفون. من الصف الأخير، ومن الطرف الآخر لصالة الوصول، ومن فوق طاولة الاستقبال، تُقرأ بنظرة واحدة. | بدء مجاني · فتح بعملية شراء واحدة | [الدليل](https://open.cait518.cc/ios-app-guide/ar-SA/ledmovingtext.html) | [احصل على LED Moving Text من App Store](https://apps.apple.com/sa/app/id6806639602?pt=118326163&ct=geo_pick&mt=8) |
@@ -146,7 +147,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## تحميل مجموعة البيانات الكاملة
 
-تحتوي ملفات JSON وJSONL وCSV على نفس ٢٬٧٠٠ سجل.
+تحتوي ملفات JSON وJSONL وCSV على نفس ٢٬٧٥٠ سجل.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -154,6 +155,6 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 [الرئيسية](https://open.cait518.cc/ios-app-guide/ar-SA/index.html) · [بيانات مفتوحة](https://open.cait518.cc/ios-app-guide/ar-SA/data/lumi-studio-publisher-search-intent-catalog.html) · [الرخصة](https://creativecommons.org/licenses/by/4.0/)
 
-آخر تحديث: 2026-10-21
+آخر تحديث: 2026-10-23
 
 تطبق CC BY 4.0 على تجميع الكتالوج الأصلي؛ أسماء التطبيقات وعلامات App Store ملك لأصحابها.

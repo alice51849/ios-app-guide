@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "es-ES",
-  "dateModified": "2026-10-21",
-  "content_digest": "1b6a17c21d9f179a9860477b1687bb944f8ee30ca4132c0ce0987288f3041fba",
-  "generation_digest": "64515fcc1834987bd856e82e47fed33fd87a687dccd27bd7788abac5b978109e",
+  "dateModified": "2026-10-23",
+  "content_digest": "308f694ea91b0d0550dd56b4438581faa7e67d0c53aa111aa9b2ad5946a84c79",
+  "generation_digest": "70323413d770366211c2dfb06e8438e221ccc077f05ef690449e948ce2ec708d",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 54,
+  "record_count": 55,
   "syndication": {
     "atom": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/es-ES.atom.xml",
     "rss": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/es-ES.rss.xml",
@@ -1009,6 +1009,56 @@
       "publisher_disclosure": "Guía publicada por Lumi Studio, el desarrollador de la app. Los nombres de las apps son marcas comerciales de sus respectivos propietarios y se utilizan únicamente con fines de identificación. Para decisiones relacionadas con documentos, salud, escuela y productividad, verifica los requisitos oficiales correspondientes cuando sea necesario.",
       "source_persona_query": "best free travel expense tracker with currency conversion for iphone",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "es-ES:gbago",
+      "locale": "es-ES",
+      "app_key": "gbago",
+      "app_name": "GBAGo: Partidas visuales",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "GBAGo: Partidas visuales — Recuperación · Instantáneas | iOS App",
+      "decision_context": "Salvo tres cartuchos de demostración originales creados por Lumi Studio, GBAGo no incluye juegos ni un catálogo de contenido. Desde Archivos, importa únicamente archivos creados por ti o cuyo uso tengas autorizado conforme a la legislación aplicable. POTENTE DONDE IMPORTA - 4 ranuras de guardado rápido de inicio, ampliables hasta 12, cada una con su miniatura, para no volver a perder tu progreso - Instantáneas automáticas: una instantánea automática cada dos minutos; la última media hora te espera en una fila de miniaturas - Guardado automático: cierra la app cuando quieras y continúa exactamente donde estabas - Núcleo mGBA preciso y eficiente con la batería, estable a 60 imágenes por segundo - Avance rápido en 2x, 4x, 8x y hasta 32x para saltarte intros lentas y sesiones de farmeo HECHO PARA JUGADORES DE VERDAD - Botones turbo para disparo rápido sin esfuerzo - Filtros de imagen: brillo CRT auténtico, suavizado o nitidez píxel a píxel - Relación de aspecto ajustable a tu gusto - Controles táctiles con opacidad ajustable, pensados para sesiones largas TU COLECCIÓN, PERFECTAMENTE ORDENADA - Juega una partida y la carátula se captura sola de tu pantalla, y convierte tu biblioteca en una estantería de la que presumir - Las copias de GB y GBC funcionan igual de bien que los títulos de GBA - Interfaz disponible en 50 idiomas GBAGo funciona íntegramente en tu dispositivo. Sin cuentas, sin anuncios, sin rastreo y sin recopilación de datos. Al activar iCloud, GBAGo sincroniza estados guardados, miniaturas y archivos de guardado de batería .sav mediante tu cuenta privada de iCloud. El desarrollador no recibe estos datos. Los datos locales se conservan hasta que los elimines en GBAGo o desinstales la app. Desactivar GBAGo en Cuenta de Apple > iCloud detiene futuras sincronizaciones; borrar las copias que ya están en iCloud es una acción aparte en GBAGo o en los ajustes de almacenamiento de iCloud. Exportar y Compartir solo envían los archivos que eliges expresamente al destino que seleccionas. Support: hourstag.app@gmail.com · https://alice51849.github.io/gbago-support/ MARCAS Y AFILIACIÓN GBAGo es una aplicación independiente. No está afiliada a Nintendo Co., Ltd. ni cuenta con su respaldo o patrocinio. Game Boy, Game Boy Color y Game Boy Advance son marcas de Nintendo y aquí se usan únicamente para describir la compatibilidad de archivos. Salvo tres cartuchos de demostración originales de Lumi Studio, GBAGo no incluye ningún juego ni proporciona o enlaza archivos de juego.",
+      "category": "utility",
+      "category_label": "Más",
+      "purchase_model": "paid_upfront",
+      "purchase_label": "Descarga de pago",
+      "one_time_option": true,
+      "privacy_facts": [
+        "offline"
+      ],
+      "privacy_labels": [
+        "Sin conexión"
+      ],
+      "device_surfaces": [],
+      "device_labels": [],
+      "badge_labels": [
+        "Más",
+        "Descarga de pago",
+        "Sin conexión",
+        "App Store · 9,99 €"
+      ],
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/es-ES/gbago.html",
+      "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/gbago/decision/l/es-ES/index.html",
+      "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/es-ES/gbago.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Fgbago%2Fdecision%2Fl%2Fes-ES%2Findex.html&format=json",
+      "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/es-ES.json",
+      "app_store_id": "6804564400",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6804564400",
+      "app_store_url": "https://apps.apple.com/es/app/id6804564400?pt=118326163&ct=geo_pick&mt=8",
+      "app_store_cta_label": "Consigue GBAGo: Partidas visuales en el App Store",
+      "storefront_facts": {
+        "price": "9.99",
+        "currency": "EUR",
+        "formatted_price": "9,99 €"
+      },
+      "guide_cta_label": "Lee la guía completa",
+      "publisher_disclosure": "Este contenido lo publica directamente Lumi Studio, desarrollador de todas las apps incluidas.",
+      "source_persona_query": "paid gba emulator for iphone with save states and controller support",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

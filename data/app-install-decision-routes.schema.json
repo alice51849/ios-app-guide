@@ -74,13 +74,13 @@
       "uniqueItems": true
     },
     "app_count": {
-      "const": 54
+      "const": 55
     },
     "locale_count": {
       "const": 50
     },
     "record_count": {
-      "const": 2700
+      "const": 2750
     },
     "locales": {
       "type": "array",
@@ -223,8 +223,8 @@
     },
     "records": {
       "type": "array",
-      "minItems": 2700,
-      "maxItems": 2700,
+      "minItems": 2750,
+      "maxItems": 2750,
       "items": {
         "$ref": "#/$defs/record"
       }
@@ -366,6 +366,7 @@
             "dailymatelite",
             "dbhalo",
             "easyam",
+            "gbago",
             "gmoney",
             "gmoneylite",
             "hourstag",

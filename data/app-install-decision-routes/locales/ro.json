@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "ro",
-  "dateModified": "2026-10-21",
-  "content_digest": "1b6a17c21d9f179a9860477b1687bb944f8ee30ca4132c0ce0987288f3041fba",
-  "generation_digest": "64515fcc1834987bd856e82e47fed33fd87a687dccd27bd7788abac5b978109e",
+  "dateModified": "2026-10-23",
+  "content_digest": "308f694ea91b0d0550dd56b4438581faa7e67d0c53aa111aa9b2ad5946a84c79",
+  "generation_digest": "70323413d770366211c2dfb06e8438e221ccc077f05ef690449e948ce2ec708d",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 54,
+  "record_count": 55,
   "syndication": {
     "atom": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/ro.atom.xml",
     "rss": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/ro.rss.xml",
@@ -1008,6 +1008,56 @@
       "guide_cta_label": "Citește ghidul complet",
       "publisher_disclosure": "Acesta este material de primă parte publicat de Lumi Studio, dezvoltatorul fiecărei aplicații listate.",
       "source_persona_query": "best free travel expense tracker with currency conversion for iphone",
+      "source_surface": "app_guide_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "ro:gbago",
+      "locale": "ro",
+      "app_key": "gbago",
+      "app_name": "GBAGo: Salvări vizuale",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "GBAGo: Salvări vizuale — Recuperare · Instantanee | iOS App",
+      "decision_context": "Cu excepția a trei cartușe demo originale create de Lumi Studio, GBAGo nu include jocuri și niciun catalog de conținut. Din Fișiere, importă doar fișiere create de tine sau pe care ai dreptul să le folosești conform legislației aplicabile. PUTERNIC ACOLO UNDE CONTEAZĂ - 4 sloturi de salvare rapidă la început, extensibile până la 12, fiecare cu miniatura lui, ca progresul muncit să nu se mai piardă - Instantanee automate: un instantaneu automat la fiecare două minute, cu ultima jumătate de oră de joc gata într-un șir de miniaturi - Salvare automată: închide aplicația oricând și continuă exact de unde ai rămas - Nucleu mGBA precis și eficient cu bateria, stabil la 60 de cadre pe secundă - Derulare rapidă la 2x, 4x, 8x și până la 32x pentru introduceri lente și sesiuni repetitive FĂCUT PENTRU JUCĂTORI ADEVĂRAȚI - Butoane turbo pentru foc rapid fără efort - Filtre de imagine: strălucire CRT autentică, netezire fină sau claritate pixel cu pixel - Raport de aspect reglabil după preferințe - Comenzi tactile cu opacitate reglabilă, gândite pentru sesiuni lungi COLECȚIA TA, PERFECT ORGANIZATĂ - Joacă o dată și coperta se capturează singură de pe ecranul tău, transformând biblioteca într-un raft de care să fii mândru - Copiile GB și GBC rulează la fel de bine ca titlurile GBA - Interfață disponibilă în 50 de limbi GBAGo rulează integral pe dispozitivul tău. Fără conturi, fără reclame, fără urmărire, fără colectare de date. Când iCloud este activat, GBAGo sincronizează stări salvate, miniaturi și salvări de baterie .sav prin contul tău iCloud privat. Dezvoltatorul nu primește aceste date. Datele locale rămân până când le ștergi în GBAGo sau elimini aplicația. Dezactivarea GBAGo în Cont Apple > iCloud oprește sincronizările viitoare; copiile deja existente în iCloud trebuie șterse separat din GBAGo sau din configurările de stocare iCloud. Exportă și Partajează trimit numai fișierele pe care le alegi explicit către destinația selectată. Support: hourstag.app@gmail.com · https://alice51849.github.io/gbago-support/ MĂRCI ȘI AFILIERE GBAGo este o aplicație independentă. Nu este afiliată cu Nintendo Co., Ltd. și nu este aprobată sau sponsorizată de aceasta. Game Boy, Game Boy Color și Game Boy Advance sunt mărci ale Nintendo, folosite aici doar pentru a descrie compatibilitatea fișierelor. Cu excepția a trei cartușe demo originale de la Lumi Studio, GBAGo nu conține niciun joc și nici nu oferă sau trimite către fișiere de joc.",
+      "category": "utility",
+      "category_label": "Mai mult",
+      "purchase_model": "paid_upfront",
+      "purchase_label": "Descărcare plătită",
+      "one_time_option": true,
+      "privacy_facts": [
+        "offline"
+      ],
+      "privacy_labels": [
+        "Offline"
+      ],
+      "device_surfaces": [],
+      "device_labels": [],
+      "badge_labels": [
+        "Mai mult",
+        "Descărcare plătită",
+        "Offline",
+        "App Store · 49,99 lei"
+      ],
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ro/gbago.html",
+      "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/gbago/decision/l/ro/index.html",
+      "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/ro/gbago.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Fgbago%2Fdecision%2Fl%2Fro%2Findex.html&format=json",
+      "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/ro.json",
+      "app_store_id": "6804564400",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6804564400",
+      "app_store_url": "https://apps.apple.com/ro/app/id6804564400?pt=118326163&ct=geo_pick&mt=8",
+      "app_store_cta_label": "Descarcă GBAGo: Salvări vizuale din App Store",
+      "storefront_facts": {
+        "price": "49.99",
+        "currency": "RON",
+        "formatted_price": "49,99 lei"
+      },
+      "guide_cta_label": "Citește ghidul complet",
+      "publisher_disclosure": "Acesta este material de primă parte publicat de Lumi Studio, dezvoltatorul fiecărei aplicații listate.",
+      "source_persona_query": "paid gba emulator for iphone with save states and controller support",
       "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,

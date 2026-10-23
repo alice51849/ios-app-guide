@@ -2,7 +2,7 @@
 title: "WiFi Aid Lite — لا يوجد إنترنت؟ اعرف السبب | iOS App"
 lang: "ar-SA"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaidlite/decision/l/ar-SA/index.html"
-modified: "2026-10-21"
+modified: "2026-10-23"
 app_store_id: "6793414462"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

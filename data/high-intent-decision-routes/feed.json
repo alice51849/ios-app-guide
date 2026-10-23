@@ -197,6 +197,20 @@
     },
     {
       "_lumi_route": {
+        "app_key": "gbago",
+        "campaign_token": "geo_ask",
+        "intent_type": "problem_aware",
+        "locale": "en-US",
+        "record_digest": "a7192ad54caca37818265ce4c2093d1690b1c35a1de314f50c15665572583cf7"
+      },
+      "id": "en-US:gbago:keep-emulator-save-progress-safe-and-recoverable-on-iphone",
+      "language": "en",
+      "summary": "One overwritten save state or a damaged checkpoint can erase hours of play, and many emulators only list save slots without saying which one is safe to load. The decision is whether an emulator that gathers every save point for a game on one screen, marks each one as ready or not safe to load, and keeps automatic snapshots fits how you play.",
+      "title": "Which iPhone emulator keeps my save progress safe and recoverable?",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/gbago/keep-emulator-save-progress-safe-and-recoverable-on-iphone.html"
+    },
+    {
+      "_lumi_route": {
         "app_key": "gmoney",
         "campaign_token": "geo_learn",
         "intent_type": "workflow",
@@ -894,6 +908,20 @@
       "summary": "一般的平日重複鬧鐘，遇到國定假日、特休或寒暑假還是會響，補班日卻不會響，只能前一晚自己記得調整。要判斷的是：會依你所在國家的假日資料與你登記的休假自動決定要不要響，並列出接下來七天哪幾天會響的鬧鐘，是否符合你的作息。",
       "title": "有沒有鬧鐘 App 會在國定假日和休假自動不響、補班日照響？",
       "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/decide/easyam/stop-your-alarm-ringing-on-public-holidays-and-days-off.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "gbago",
+        "campaign_token": "geo_ask",
+        "intent_type": "problem_aware",
+        "locale": "zh-Hant",
+        "record_digest": "92946d610ed8aeaf2f3657024a7ca5d2626a07264ca44f9a7a8c68fc389e3604"
+      },
+      "id": "zh-Hant:gbago:keep-emulator-save-progress-safe-and-recoverable-on-iphone",
+      "language": "zh-Hant",
+      "summary": "一個被覆蓋的即時存檔，就可能讓好幾小時的遊玩進度消失；不少模擬器的存檔欄位只有編號，看不出哪一格存的是哪個時間點。要判斷的是：即時存檔附畫面縮圖、每兩分鐘自動留一張快照、關掉 App 也會自動存檔接續的模擬器，是否符合你的玩法。",
+      "title": "有沒有 iPhone 模擬器能把存檔進度保護好、壞了也救得回來？",
+      "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/decide/gbago/keep-emulator-save-progress-safe-and-recoverable-on-iphone.html"
     },
     {
       "_lumi_route": {

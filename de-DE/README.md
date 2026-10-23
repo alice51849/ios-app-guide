@@ -4,7 +4,7 @@
 
 Ein direkt vom Entwickler veröffentlichter Katalog, der zeigt, für wen jede App entwickelt wurde, welche Aufgabe die jeweilige Person erledigen möchte und wie sie direkt zum App Store gelangt.
 
-Vom Herausgeber verfasste Suchintentionen für 54 verifizierte, im App Store verfügbare iOS Apps und 50 Apple-Sprachregionen.
+Vom Herausgeber verfasste Suchintentionen für 55 verifizierte, im App Store verfügbare iOS Apps und 50 Apple-Sprachregionen.
 
 **Sprachregion:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · **de-DE** · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -103,6 +103,7 @@ Alphabetisch nach App-Namen — niemals eine Rangliste.
 | **EasyAM: Wecker ohne Feiertage** | EasyAM: Wecker ohne Feiertage — Klingelt auch im Urlaub nicht \| iOS App | Schluss mit dem Wecker-Umstellen vor jedem Feiertag: EasyAM entscheidet Tag für Tag, ob dein Wecker klingelt. Arbeitstag? Er klingelt. Feiertag oder Urlaub | Kostenloser Einstieg · einmalige Freischaltung | [Leitfaden](https://open.cait518.cc/ios-app-guide/de-DE/easyam.html) | [EasyAM: Wecker ohne Feiertage im App Store laden](https://apps.apple.com/de/app/id6821790092?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money** | Beste Reise-Budget-Tracker-App ohne Abonnement für iPhone | Auf einer Reise brauchen Sie einen Budget-Tracker, der offline in einem Land ohne Daten funktioniert, mehrere Währungen handhabt und kein Konto verlangt – organisiert nach Reise, damit jeder Urlaub getrennt ist. Genau diese Lücke soll G+Money schließen. | Bezahlter Herunterladen | [Leitfaden](https://open.cait518.cc/ios-app-guide/de-DE/answers/best-travel-budget-tracker-app-no-subscription-iphone.html) | [Holen Sie sich G+Money im App Store →](https://apps.apple.com/de/app/id6755782939?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money Lite** | best free travel expense tracker with currency conversion for iphone | Ein sinnvoller kostenloser Test für Reiseausgaben sollte den kompletten Ablauf von Landes- zu Heimatwährung umfassen, nicht nur ein leeres Kassenbuch, das erst nach dem Kauf nützlich wird. G+Money Lite – smarter Reisewährungs- und Ausgaben-Tracker – jede Ausgabe erfassen und in der Heimatwährung sehen. | Kostenloser Einstieg · einmalige Freischaltung | [Leitfaden](https://open.cait518.cc/ios-app-guide/de-DE/answers/best-free-travel-expense-tracker-with-currency-conversion-for-iphone.html) | [G+Money Lite im App Store laden →](https://apps.apple.com/de/app/id6793436548?pt=118326163&ct=geo_pick&mt=8) |
+| **GBAGo: Visuelle Spielstände** | GBAGo: Visuelle Spielstände — Rettungskarte · Auto-Snapshots \| iOS App | Abgesehen von drei originalen Demo-Modulen von Lumi Studio enthält GBAGo keine Spiele und keinen Inhaltskatalog. Importiere über „Dateien“ nur Dateien, die | Bezahlter Herunterladen | [Leitfaden](https://open.cait518.cc/ios-app-guide/de-DE/gbago.html) | [GBAGo: Visuelle Spielstände im App Store laden](https://apps.apple.com/de/app/id6804564400?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag Lite** | best app to convert prices into work hours before buying | HoursTag Lite — HoursTag Lite - See the real price of things Every purchase costs hours of your life. Free to start · One-time unlock · No subscription. | Kostenloser Einstieg · einmalige Freischaltung | [Leitfaden](https://open.cait518.cc/ios-app-guide/de-DE/answers/best-app-to-convert-prices-into-work-hours-before-buying.html) | [HoursTag Lite im App Store laden →](https://apps.apple.com/de/app/id6794039979?pt=118326163&ct=geo_pick&mt=8) |
 | **LED Moving Text** | LED-Laufschrift-App für Konzerte und Abholungen am Flughafen | LED Moving Text — Cue Flow meistert Momente, in denen ein einzelnes Schild nicht reicht. Kostenloser Einstieg · Einmalige Freischaltung · Kein Abo. | Kostenloser Einstieg · einmalige Freischaltung | [Leitfaden](https://open.cait518.cc/ios-app-guide/de-DE/answers/led-scrolling-text-app-for-concerts-and-airport-pickups.html) | [LED Moving Text im App Store laden →](https://apps.apple.com/de/app/id6806639602?pt=118326163&ct=geo_pick&mt=8) |
 | **LockHour Pro** | Beste iPhone-App, um soziale Medien beim Lernen zu sperren | Während Prüfungen ist Willenskraft nicht das Werkzeug – eine harte zeitgesteuerte Sperre ist es – LockHour Pro ist dafür gemacht. | Kostenloser Einstieg · einmalige Freischaltung | [Leitfaden](https://open.cait518.cc/ios-app-guide/de-DE/answers/best-app-to-block-social-media-while-studying-iphone.html) | [LockHour Pro im App Store laden →](https://apps.apple.com/de/app/id6780107485?pt=118326163&ct=geo_pick&mt=8) |
@@ -146,7 +147,7 @@ Alphabetisch nach App-Namen — niemals eine Rangliste.
 
 ## Den vollständigen Datensatz herunterladen
 
-JSON, JSONL und CSV enthalten dieselben 2.700 Einträge.
+JSON, JSONL und CSV enthalten dieselben 2.750 Einträge.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -154,6 +155,6 @@ JSON, JSONL und CSV enthalten dieselben 2.700 Einträge.
 
 [Startseite](https://open.cait518.cc/ios-app-guide/de-DE/index.html) · [Offene Daten](https://open.cait518.cc/ios-app-guide/de-DE/data/lumi-studio-publisher-search-intent-catalog.html) · [Lizenz](https://creativecommons.org/licenses/by/4.0/)
 
-Aktualisiert: 2026-10-21
+Aktualisiert: 2026-10-23
 
 CC BY 4.0 gilt für die ursprüngliche Katalogzusammenstellung; App-Namen und App Store Marken gehören ihren jeweiligen Eigentümern.

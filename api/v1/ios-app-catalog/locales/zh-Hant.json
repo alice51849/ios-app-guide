@@ -1,12 +1,12 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-10-21",
-  "content_digest": "3640bd2fe814e90c319c41f805a18191267cf24b494e07e899e4e5a3298653b5",
+  "date_modified": "2026-10-23",
+  "content_digest": "a6ff8651a4ca213956f9cecec8d2d98f3a72456927ef966d484ab7e59fa02516",
   "locale": "zh-Hant",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 54,
+  "record_count": 55,
   "apps": [
     {
       "key": "notesstudio100",
@@ -153,7 +153,9 @@
         "讀書",
         "求職",
         "畢業門檻",
-        "上班族"
+        "上班族",
+        "多益",
+        "英文檢定"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -358,7 +360,9 @@
         "工作經歷",
         "畢業生",
         "打工",
-        "實習"
+        "實習",
+        "履歷範本",
+        "履歷製作"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -411,7 +415,8 @@
         "生理痛",
         "日記",
         "症狀",
-        "心情"
+        "心情",
+        "經期 追蹤"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -769,6 +774,60 @@
       }
     },
     {
+      "key": "gbago",
+      "app_store_id": "6804564400",
+      "name": "GBAGo: 視覺存檔",
+      "summary": "除 Lumi Studio 自製的三款原創 demo 卡帶外，GBAGo 不包含遊戲或內容目錄。請僅從「檔案」匯入由你自行創作，或依適用法律獲授權使用的檔案。",
+      "category": "utility",
+      "search_terms": [
+        "模擬器",
+        "金手指",
+        "即時存檔",
+        "卡帶",
+        "快轉",
+        "手把",
+        "懷舊",
+        "復古",
+        "街機",
+        "離線遊玩",
+        "掌機",
+        "經典遊戲",
+        "存檔",
+        "老遊戲",
+        "童年",
+        "單機遊戲",
+        "遊戲機",
+        "離線",
+        "即時讀檔",
+        "連發",
+        "模擬",
+        "經典掌機",
+        "懷舊遊戲",
+        "遊戲模擬",
+        "橫向全螢幕"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/tw/app/id6804564400?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/gbago.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "290",
+        "currency": "TWD",
+        "formatted_price": "$290.00",
+        "storefront_url": "https://apps.apple.com/tw/app/id6804564400"
+      }
+    },
+    {
       "key": "hourstaglite",
       "app_store_id": "6794039979",
       "name": "HoursTag Lite：買前先算工時",
@@ -800,7 +859,8 @@
         "儲蓄",
         "花費",
         "小資族",
-        "節流"
+        "節流",
+        "衝動購物"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1026,7 +1086,8 @@
         "注音發音",
         "寶寶",
         "注音符號遊戲",
-        "學注音符號"
+        "學注音符號",
+        "注音"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1139,7 +1200,8 @@
         "學英文",
         "幼稚園",
         "親子",
-        "幼兒學習"
+        "幼兒學習",
+        "兒童 字母"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1381,7 +1443,10 @@
         "蓋章",
         "教養",
         "幼兒園",
-        "早睡早起"
+        "早睡早起",
+        "睡前 習慣",
+        "兒童 習慣",
+        "獎勵 貼紙"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1497,7 +1562,9 @@
         "手錶",
         "即時",
         "逐時",
-        "一週"
+        "一週",
+        "天氣 穿搭",
+        "穿搭 天氣"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1611,7 +1678,8 @@
         "行事曆",
         "任務",
         "鎖定畫面",
-        "重複提醒"
+        "重複提醒",
+        "代辦事項"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1631,8 +1699,8 @@
         "price": "0",
         "currency": "TWD",
         "formatted_price": "免費",
-        "rating_value": 5.0,
-        "rating_count": 4,
+        "rating_value": 4.4,
+        "rating_count": 5,
         "storefront_url": "https://apps.apple.com/tw/app/id6785004775"
       }
     },
@@ -1731,7 +1799,8 @@
         "團購",
         "活動",
         "家庭",
-        "流水帳"
+        "流水帳",
+        "副業 記帳"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1788,7 +1857,8 @@
         "ppt製作",
         "專案",
         "提報",
-        "pdf"
+        "pdf",
+        "一頁 摘要"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1954,7 +2024,8 @@
         "郵件",
         "行事曆",
         "定位",
-        "聯絡人"
+        "聯絡人",
+        "qr code 連結 檢查"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2501,7 +2572,8 @@
         "搭車",
         "週末",
         "海島",
-        "動物園"
+        "動物園",
+        "小孩 旅行"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2619,7 +2691,8 @@
         "備份",
         "手錶",
         "行程安排",
-        "共同編輯"
+        "共同編輯",
+        "旅遊 行程"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -2639,8 +2712,8 @@
         "price": "190",
         "currency": "TWD",
         "formatted_price": "$190.00",
-        "rating_value": 5.0,
-        "rating_count": 2,
+        "rating_value": 4.7,
+        "rating_count": 3,
         "storefront_url": "https://apps.apple.com/tw/app/id6787754435"
       }
     },
@@ -2776,7 +2849,8 @@
         "無線網路",
         "延遲測試",
         "連線測試",
-        "TCP"
+        "TCP",
+        "wifi 診斷"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -2992,7 +3066,9 @@
         "批次解壓",
         "離線",
         "壓縮軟體",
-        "壓縮工具"
+        "壓縮工具",
+        "密碼保護 zip",
+        "開啟 rar 檔案"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,

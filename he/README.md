@@ -4,7 +4,7 @@
 
 קטלוג רשמי המציג עבור מי מיועדת כל אפליקציה, המשימה שהיא נועדה לבצע, והמסלול הישיר ל-App Store.
 
-כוונות חיפוש שנכתבו על ידי המפרסם עבור 54 אפליקציות iOS מאומתות ו-50 לוקאלים של Apple.
+כוונות חיפוש שנכתבו על ידי המפרסם עבור 55 אפליקציות iOS מאומתות ו-50 לוקאלים של Apple.
 
 **לוקאל:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · **he** · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -103,6 +103,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **EasyAM: שעון מעורר לימי עבודה** | EasyAM: שעון מעורר לימי עבודה — מדלג על חגים ועל ימי חופש \| iOS App | האם השעון המעורר יצלצל מחר, והאם הוא בכלל צריך? EasyAM מחליט בשבילכם, יום אחרי יום: מצלצל בימי עבודה, שותק בחגים ובימי החופש שלכם, ומראה את שבעת הימים | התחלה ללא תשלום · פתיחה ברכישה חד-פעמית | [מדריך](https://open.cait518.cc/ios-app-guide/he/easyam.html) | [הורידו את EasyAM: שעון מעורר לימי עבודה מה-App Store](https://apps.apple.com/il/app/id6821790092?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money** | האפליקציה הטובה ביותר למעקב תקציב נסיעות ללא מנוי לאייפון | בטיול אתה צריך מעקב תקציב שעובד לא מקוון במדינה ללא נתונים, מטפל במטבעות מרובים, ואינו דורש חשבון — מאורגן לפי טיול כך שכל חופשה בנפרד. בדיוק את הפער הזה G+Money מנסה לסגור. | הורדה בתשלום | [מדריך](https://open.cait518.cc/ios-app-guide/he/answers/best-travel-budget-tracker-app-no-subscription-iphone.html) | [קבל את G+Money ב-App Store →](https://apps.apple.com/il/app/id6755782939?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money Lite: הוצאות טיול** | G+Money Lite: הוצאות טיול — תקציב יומי בשעון ובווידג'ט \| iOS App | G+Money Lite — מעקב חכם אחרי מטבעות והוצאות בזמן נסיעות | התחלה ללא תשלום · פתיחה ברכישה חד-פעמית | [מדריך](https://open.cait518.cc/ios-app-guide/he/gmoneylite.html) | [הורידו את G+Money Lite: הוצאות טיול מה-App Store](https://apps.apple.com/il/app/id6793436548?pt=118326163&ct=geo_pick&mt=8) |
+| **GBAGo: שמירות חזותיות** | GBAGo: שמירות חזותיות — מפת שחזור · תצלומים אוטומטיים \| iOS App | מלבד שלוש מחסניות הדגמה מקוריות של Lumi Studio, GBAGo אינו כולל משחקים או קטלוג תוכן. יש לייבא מ״קבצים״ רק קבצים שיצרת בעצמך או שהשימוש בהם הותר לך לפי | הורדה בתשלום | [מדריך](https://open.cait518.cc/ios-app-guide/he/gbago.html) | [הורידו את GBAGo: שמירות חזותיות מה-App Store](https://apps.apple.com/il/app/id6804564400?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag Lite: מחיר בשעות** | HoursTag Lite: מחיר בשעות — קנייה מודעת: המחיר האמיתי \| iOS App | HoursTag Lite - ראה את המחיר האמיתי של דברים | התחלה ללא תשלום · פתיחה ברכישה חד-פעמית | [מדריך](https://open.cait518.cc/ios-app-guide/he/hourstaglite.html) | [הורידו את HoursTag Lite: מחיר בשעות מה-App Store](https://apps.apple.com/il/app/id6794039979?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag: שעות לקנייה** | HoursTag: שעות לקנייה — שכר שעתי והוצאות \| iOS App | כמה זה באמת עולה? לא רק בשקלים — אלא בשעות מהחיים שלך. | הורדה בתשלום | [מדריך](https://open.cait518.cc/ios-app-guide/he/hourstag.html) | [הורידו את HoursTag: שעות לקנייה מה-App Store](https://apps.apple.com/il/app/id6754218117?pt=118326163&ct=geo_pick&mt=8) |
 | **LED Moving Text** | LED Moving Text — שלט אור נע על המסך \| iOS App | כתבו משפט והרימו את האייפון. מהשורה האחורית, מהצד השני של אולם הנוסעים הנכנסים או מעל דלפק, קוראים אותו במבט אחד. | התחלה ללא תשלום · פתיחה ברכישה חד-פעמית | [מדריך](https://open.cait518.cc/ios-app-guide/he/ledmovingtext.html) | [הורידו את LED Moving Text מה-App Store](https://apps.apple.com/il/app/id6806639602?pt=118326163&ct=geo_pick&mt=8) |
@@ -146,7 +147,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## הורד את מערך הנתונים המלא
 
-קבצי JSON, JSONL ו-CSV כוללים את אותן 2,700 רשומות.
+קבצי JSON, JSONL ו-CSV כוללים את אותן 2,750 רשומות.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -154,6 +155,6 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 [בית](https://open.cait518.cc/ios-app-guide/he/index.html) · [נתונים פתוחים](https://open.cait518.cc/ios-app-guide/he/data/lumi-studio-publisher-search-intent-catalog.html) · [רישיון](https://creativecommons.org/licenses/by/4.0/)
 
-עודכן: 2026-10-21
+עודכן: 2026-10-23
 
 רישיון CC BY 4.0 חל על הרכב הקטלוג המקורי; שמות האפליקציות וסימני App Store שייכים לבעליהם.

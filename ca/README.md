@@ -4,7 +4,7 @@
 
 Catàleg de primera mà que mostra per a qui està dissenyada cada app, la tasca que volen completar i el camí directe a l'App Store.
 
-Intencions de cerca escrites pel publicador per a 54 apps iOS verificades i actives en 50 locals d'Apple.
+Intencions de cerca escrites pel publicador per a 55 apps iOS verificades i actives en 50 locals d'Apple.
 
 **Local:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · **ca** · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -103,6 +103,7 @@ Alfabètic per nom d'app — mai és un rànquing.
 | **EasyAM: Despertador i festius** | EasyAM: Despertador i festius — Alarma només els dies de feina \| iOS App | Demà sona o no? Amb EasyAM ja no t'hi has de capficar abans d'anar a dormir: l'alarma sona els dies de feina i calla els festius i durant les teves | Inici gratuït · desbloqueig amb una compra única | [Guia](https://open.cait518.cc/ios-app-guide/ca/easyam.html) | [Descarrega EasyAM: Despertador i festius a l’App Store](https://apps.apple.com/es/app/id6821790092?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money** | millor aplicació per controlar pressupost de viatge sense subscripció per a iPhone | En un viatge necessites un control de pressupost que funcioni offline en un país sense dades, gestioni diverses monedes i no demani compte — organitzat per viatge perquè cada vacances siguin separades. Aquest és el buit que G+Money vol cobrir. | Descarrega de pagament | [Guia](https://open.cait518.cc/ios-app-guide/ca/answers/best-travel-budget-tracker-app-no-subscription-iphone.html) | [Descarrega G+Money a l'App Store →](https://apps.apple.com/es/app/id6755782939?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money Lite: Diners de viatge** | G+Money Lite: Diners de viatge — Límit diari, rellotge i widget \| iOS App | G+Money Lite — Conversor de moneda de viatge intel·ligent i rastrejador de despeses | Inici gratuït · desbloqueig amb una compra única | [Guia](https://open.cait518.cc/ios-app-guide/ca/gmoneylite.html) | [Descarrega G+Money Lite: Diners de viatge a l’App Store](https://apps.apple.com/es/app/id6793436548?pt=118326163&ct=geo_pick&mt=8) |
+| **GBAGo: Partides visuals** | GBAGo: Partides visuals — Mapa de rescat · Instantànies \| iOS App | Llevat de tres cartutxos de demostració originals creats per Lumi Studio, GBAGo no inclou jocs ni cap catàleg de contingut. Des de Fitxers, importa només | Descarrega de pagament | [Guia](https://open.cait518.cc/ios-app-guide/ca/gbago.html) | [Descarrega GBAGo: Partides visuals a l’App Store](https://apps.apple.com/es/app/id6804564400?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag Lite: Preu en hores** | HoursTag Lite: Preu en hores — Compra conscient: preu real \| iOS App | HoursTag Lite - Veure el preu real de les coses | Inici gratuït · desbloqueig amb una compra única | [Guia](https://open.cait518.cc/ios-app-guide/ca/hourstaglite.html) | [Descarrega HoursTag Lite: Preu en hores a l’App Store](https://apps.apple.com/es/app/id6794039979?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag: Hores per comprar** | HoursTag: Hores per comprar — Salari per hora i despeses \| iOS App | Quant costa de debò? No en euros, sinó en hores de la teva vida. | Descarrega de pagament | [Guia](https://open.cait518.cc/ios-app-guide/ca/hourstag.html) | [Descarrega HoursTag: Hores per comprar a l’App Store](https://apps.apple.com/es/app/id6754218117?pt=118326163&ct=geo_pick&mt=8) |
 | **LED Moving Text** | LED Moving Text — Rètol lluminós en moviment \| iOS App | Escriu una frase i aixeca l'iPhone. Des del fons de la pista, a l'altra punta de la sala d'arribades o per damunt d'un taulell, es llegeix d'una sola | Inici gratuït · desbloqueig amb una compra única | [Guia](https://open.cait518.cc/ios-app-guide/ca/ledmovingtext.html) | [Descarrega LED Moving Text a l’App Store](https://apps.apple.com/es/app/id6806639602?pt=118326163&ct=geo_pick&mt=8) |
@@ -146,7 +147,7 @@ Alfabètic per nom d'app — mai és un rànquing.
 
 ## Descarrega el conjunt de dades complet
 
-JSON, JSONL i CSV contenen els mateixos 2.700 registres.
+JSON, JSONL i CSV contenen els mateixos 2.750 registres.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -154,6 +155,6 @@ JSON, JSONL i CSV contenen els mateixos 2.700 registres.
 
 [Inici](https://open.cait518.cc/ios-app-guide/ca/index.html) · [Dades obertes](https://open.cait518.cc/ios-app-guide/ca/data/lumi-studio-publisher-search-intent-catalog.html) · [Llicència](https://creativecommons.org/licenses/by/4.0/)
 
-Actualitzat: 2026-10-21
+Actualitzat: 2026-10-23
 
 CC BY 4.0 s'aplica a la compilació original del catàleg; els noms d'app i les marques de l'App Store pertanyen als seus propietaris.

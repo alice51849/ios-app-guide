@@ -2,7 +2,7 @@
 title: "BattAI: คะแนนสุขภาพแบตเตอรี่ — กฎ แหล่งข้อมูล และข้อจำกัดที่ชัดเจน | iOS App"
 lang: "th"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/battai/decision/l/th/index.html"
-modified: "2026-10-21"
+modified: "2026-10-23"
 app_store_id: "6802423998"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,6 +18,7 @@ BattAI BattAI ใช้ข้อมูล 5 อย่างจาก API สา�
 - ไม่มีโฆษณา
 - Apple Watch
 - App Store · ฟรี
+- ★ 2.0/5 · 1
 
 [ดาวน์โหลด BattAI: คะแนนสุขภาพแบตเตอรี่ บน App Store](https://apps.apple.com/th/app/id6802423998?pt=118326163&ct=geo_pick&mt=8)
 

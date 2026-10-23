@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "sl-SI",
-  "dateModified": "2026-10-21",
-  "content_digest": "1b6a17c21d9f179a9860477b1687bb944f8ee30ca4132c0ce0987288f3041fba",
-  "generation_digest": "64515fcc1834987bd856e82e47fed33fd87a687dccd27bd7788abac5b978109e",
+  "dateModified": "2026-10-23",
+  "content_digest": "308f694ea91b0d0550dd56b4438581faa7e67d0c53aa111aa9b2ad5946a84c79",
+  "generation_digest": "70323413d770366211c2dfb06e8438e221ccc077f05ef690449e948ce2ec708d",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 54,
+  "record_count": 55,
   "syndication": {
     "atom": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/sl-SI.atom.xml",
     "rss": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/sl-SI.rss.xml",
@@ -1008,6 +1008,56 @@
       "guide_cta_label": "Preberite celoten vodnik",
       "publisher_disclosure": "To je gradivo prve roke, ki ga je objavil Lumi Studio, razvijalec vseh navedenih aplikacij.",
       "source_persona_query": "best free travel expense tracker with currency conversion for iphone",
+      "source_surface": "app_guide_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "sl-SI:gbago",
+      "locale": "sl-SI",
+      "app_key": "gbago",
+      "app_name": "GBAGo: Vizualne shranitve",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "GBAGo: Vizualne shranitve — Zemljevid obnovitve · Posnetki | iOS App",
+      "decision_context": "Razen treh izvirnih predstavitvenih kartuš podjetja Lumi Studio GBAGo ne vključuje iger ali kataloga vsebine. Iz Datotek uvozite samo datoteke, ki ste jih ustvarili sami ali jih smete uporabljati po veljavni zakonodaji. ZMOGLJIV TAM, KJER ŠTEJE - 4 mesta za hitro shranjevanje za začetek, razširljiva do 12, vsako s sličico predogleda, da se trdo prigaran napredek nikoli več ne izgubi - Samodejni posnetki: tih posnetek vsaki dve minuti, tako da te zadnje pol ure čaka v vrsti sličic - Samodejno shranjevanje: zapri aplikacijo kadar koli in nadaljuj natanko tam, kjer si ostal - Natančno jedro mGBA, varčno z baterijo, ki trdno drži 60 sličic na sekundo - Pospešitev 2x, 4x, 8x in vse do 32x za preskok počasnih uvodov in dolgih grind seans NAREJEN ZA PRAVE IGRALCE - Turbo gumbi za hitro streljanje brez napora - Slikovni filtri: pristen CRT sij, mehko glajenje ali pikselsko natančna ostrina - Nastavljivo razmerje slike, natanko tako, kot ti je všeč - Upravljanje na dotik z nastavljivo prosojnostjo, zasnovano za dolge seanse TVOJA ZBIRKA, ČUDOVITO UREJENA - Zaigraj enkrat in naslovnica se sama zajame z tvojega zaslona, knjižnica pa postane polica, ki jo boš rad pokazal - Kopije GB in GBC tečejo enako dobro kot naslovi GBA - Vmesnik na voljo v 50 jezikih GBAGo deluje v celoti na vaši napravi. Brez računov, brez oglasov, brez sledenja, brez zbiranja podatkov. Ko je iCloud omogočen, GBAGo prek vašega zasebnega računa iCloud sinhronizira shranjena stanja, sličice in baterijske shranitve .sav. Razvijalec teh podatkov ne prejme. Lokalni podatki ostanejo, dokler jih ne izbrišete v GBAGo ali odstranite aplikacije. Če GBAGo izklopite v Račun Apple > iCloud, se prihodnja sinhronizacija ustavi; obstoječe kopije iCloud je treba ločeno izbrisati v GBAGo ali nastavitvah shrambe iCloud. Izvozi in Deli pošljeta samo datoteke, ki jih izrecno izberete, na izbrani cilj. Support: hourstag.app@gmail.com · https://alice51849.github.io/gbago-support/ BLAGOVNE ZNAMKE IN POVEZANOST GBAGo je neodvisna aplikacija. Ni povezana z družbo Nintendo Co., Ltd., ki je tudi ne podpira ali sponzorira. Game Boy, Game Boy Color in Game Boy Advance so blagovne znamke družbe Nintendo in so tu uporabljene le za opis združljivosti datotek. Razen treh izvirnih predstavitvenih kartuš podjetja Lumi Studio GBAGo ne vsebuje iger ter datotek iger ne ponuja in nanje ne povezuje.",
+      "category": "utility",
+      "category_label": "Več",
+      "purchase_model": "paid_upfront",
+      "purchase_label": "Plačljiv prenos",
+      "one_time_option": true,
+      "privacy_facts": [
+        "offline"
+      ],
+      "privacy_labels": [
+        "Brez povezave"
+      ],
+      "device_surfaces": [],
+      "device_labels": [],
+      "badge_labels": [
+        "Več",
+        "Plačljiv prenos",
+        "Brez povezave",
+        "App Store · 9,99 €"
+      ],
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/sl-SI/gbago.html",
+      "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/gbago/decision/l/sl-SI/index.html",
+      "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/sl-SI/gbago.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Fgbago%2Fdecision%2Fl%2Fsl-SI%2Findex.html&format=json",
+      "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/sl-SI.json",
+      "app_store_id": "6804564400",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6804564400",
+      "app_store_url": "https://apps.apple.com/si/app/id6804564400?pt=118326163&ct=geo_pick&mt=8",
+      "app_store_cta_label": "Prenesite GBAGo: Vizualne shranitve iz trgovine App Store",
+      "storefront_facts": {
+        "price": "9.99",
+        "currency": "EUR",
+        "formatted_price": "9,99 €"
+      },
+      "guide_cta_label": "Preberite celoten vodnik",
+      "publisher_disclosure": "To je gradivo prve roke, ki ga je objavil Lumi Studio, razvijalec vseh navedenih aplikacij.",
+      "source_persona_query": "paid gba emulator for iphone with save states and controller support",
       "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,

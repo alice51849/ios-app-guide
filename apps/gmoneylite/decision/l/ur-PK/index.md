@@ -2,7 +2,7 @@
 title: "G+Money Lite: سفری اخراجات — روزانہ بجٹ واچ اور ویجٹ پر | iOS App"
 lang: "ur-PK"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gmoneylite/decision/l/ur-PK/index.html"
-modified: "2026-10-21"
+modified: "2026-10-23"
 app_store_id: "6793436548"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

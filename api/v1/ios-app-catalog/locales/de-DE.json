@@ -1,12 +1,12 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-10-21",
-  "content_digest": "3640bd2fe814e90c319c41f805a18191267cf24b494e07e899e4e5a3298653b5",
+  "date_modified": "2026-10-23",
+  "content_digest": "a6ff8651a4ca213956f9cecec8d2d98f3a72456927ef966d484ab7e59fa02516",
   "locale": "de-DE",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 54,
+  "record_count": 55,
   "apps": [
     {
       "key": "notesstudio100",
@@ -140,7 +140,8 @@
         "Ladeschonung",
         "Ladebereich",
         "Laderate",
-        "Daten exportieren"
+        "Daten exportieren",
+        "akku kapazität"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -532,7 +533,8 @@
         "urlaub",
         "reise",
         "tagesbudget",
-        "smartwatch"
+        "smartwatch",
+        "urlaubsbudget"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -556,6 +558,46 @@
       }
     },
     {
+      "key": "gbago",
+      "app_store_id": "6804564400",
+      "name": "GBAGo: Visuelle Spielstände",
+      "summary": "Abgesehen von drei originalen Demo-Modulen von Lumi Studio enthält GBAGo keine Spiele und keinen Inhaltskatalog. Importiere über „Dateien“ nur Dateien, die du selbst erstellt hast oder nach geltendem Recht verwenden darfst.",
+      "category": "utility",
+      "search_terms": [
+        "spiele",
+        "konsole",
+        "spielstand",
+        "cheats",
+        "emulation",
+        "controller",
+        "handheld",
+        "kult",
+        "pixelgrafik",
+        "offline",
+        "gamepad"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/de/app/id6804564400?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/de-DE/gbago.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "9.99",
+        "currency": "EUR",
+        "formatted_price": "9,99 €",
+        "storefront_url": "https://apps.apple.com/de/app/id6804564400"
+      }
+    },
+    {
       "key": "hourstaglite",
       "app_store_id": "6794039979",
       "name": "HoursTag Lite: Preis in Zeit",
@@ -571,7 +613,8 @@
         "stunden",
         "arbeitszeit",
         "sparziel",
-        "ausgaben"
+        "ausgaben",
+        "impulskäufe"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -649,7 +692,9 @@
         "Flughafen",
         "Neon",
         "Banner",
-        "Fan"
+        "Fan",
+        "abholschild flughafen",
+        "konzert schild"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -768,7 +813,10 @@
         "vorschule",
         "grundschule",
         "zweisprachig",
-        "quiz"
+        "quiz",
+        "zhuyin lernen",
+        "bopomofo",
+        "mandarin kinder"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1004,7 +1052,8 @@
         "kita",
         "vorschule",
         "selbstständigkeit",
-        "gewohnheiten"
+        "gewohnheiten",
+        "abendroutine kinder"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1761,7 +1810,8 @@
         "reisepass",
         "stempel",
         "erinnerungen",
-        "kleinkind"
+        "kleinkind",
+        "reisen mit kindern"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1881,7 +1931,8 @@
         "ki",
         "foto",
         "scharf",
-        "restaurieren"
+        "restaurieren",
+        "unscharf schärfen"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2007,7 +2058,8 @@
         "hotspot",
         "anbieter",
         "modem",
-        "hilfe"
+        "hilfe",
+        "wlan kein internet"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

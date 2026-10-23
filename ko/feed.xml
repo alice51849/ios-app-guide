@@ -3,7 +3,7 @@
   <atom:id>https://open.cait518.cc/ios-app-guide/ko/feed.xml</atom:id>
   <atom:title>앱 목록 | iOS</atom:title>
   <atom:subtitle>이 자료는 목록에 있는 모든 앱의 개발사 Lumi Studio가 직접 발행한 1차 자료입니다.</atom:subtitle>
-  <atom:updated>2026-10-21T00:41:02Z</atom:updated>
+  <atom:updated>2026-10-23T11:32:53Z</atom:updated>
   <atom:author>
     <atom:name>Lumi Studio</atom:name>
   </atom:author>
@@ -130,6 +130,16 @@
     <atom:link rel="alternate" href="https://open.cait518.cc/ios-app-guide/ko/easyam.html" />
     <atom:content type="html">&lt;p&gt;내일 아침 알람, 울려야 할까요? EasyAM이 날마다 알아서 정해요. 출근하는 날엔 울리고, 공휴일과 내가 등록한 휴가엔 조용히 쉬어요.&lt;/p&gt;&lt;p&gt;무료로 시작 · 한 번 구매로 잠금 해제&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/kr/app/id6821790092?pt=118326163&amp;amp;ct=geo_pick&amp;amp;mt=8"&gt;App Store에서 보기&lt;/a&gt;&lt;/p&gt;&lt;p&gt;이 자료는 목록에 있는 모든 앱의 개발사 Lumi Studio가 직접 발행한 1차 자료입니다.&lt;/p&gt;</atom:content>
     <lumi:record>{"app_key":"easyam","app_store_cta_label":"App Store에서 보기","app_store_id":"6821790092","content_digest":"943bae2c2cac57aac44701728513983384850f3e343b31c5786c91bd9b2ee34d","independent_ranking":false,"one_time_option":true,"publisher_disclosure":"이 자료는 목록에 있는 모든 앱의 개발사 Lumi Studio가 직접 발행한 1차 자료입니다.","purchase_label":"무료로 시작 · 한 번 구매로 잠금 해제","purchase_model":"free_with_lifetime_unlock","source_locale":"ko"}</lumi:record>
+  </atom:entry>
+  <atom:entry>
+    <atom:id>urn:lumi:app-store:6804564400:locale:ko</atom:id>
+    <atom:title>GBAGo: 비주얼 세이브</atom:title>
+    <atom:summary>Lumi Studio가 직접 만든 오리지널 데모 카트리지 3종을 제외하면 GBAGo에는 게임이나 콘텐츠 카탈로그가 포함되지 않습니다. 파일 앱에서는 직접 만들었거나 관련 법률에 따라 사용 권한을 받은 파일만 가져오세요.</atom:summary>
+    <atom:published>2026-10-23T11:32:53Z</atom:published>
+    <atom:updated>2026-10-23T11:32:53Z</atom:updated>
+    <atom:link rel="alternate" href="https://open.cait518.cc/ios-app-guide/ko/gbago.html" />
+    <atom:content type="html">&lt;p&gt;Lumi Studio가 직접 만든 오리지널 데모 카트리지 3종을 제외하면 GBAGo에는 게임이나 콘텐츠 카탈로그가 포함되지 않습니다. 파일 앱에서는 직접 만들었거나 관련 법률에 따라 사용 권한을 받은 파일만 가져오세요.&lt;/p&gt;&lt;p&gt;유료 다운로드&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/kr/app/id6804564400?pt=118326163&amp;amp;ct=geo_pick&amp;amp;mt=8"&gt;App Store에서 보기&lt;/a&gt;&lt;/p&gt;&lt;p&gt;이 자료는 목록에 있는 모든 앱의 개발사 Lumi Studio가 직접 발행한 1차 자료입니다.&lt;/p&gt;</atom:content>
+    <lumi:record>{"app_key":"gbago","app_store_cta_label":"App Store에서 보기","app_store_id":"6804564400","content_digest":"e834befa04e7ea5beaced5e7681c757bb83d364962c080de7226f47b491b30d9","independent_ranking":false,"one_time_option":true,"publisher_disclosure":"이 자료는 목록에 있는 모든 앱의 개발사 Lumi Studio가 직접 발행한 1차 자료입니다.","purchase_label":"유료 다운로드","purchase_model":"paid_upfront","source_locale":"ko"}</lumi:record>
   </atom:entry>
   <atom:entry>
     <atom:id>urn:lumi:app-store:6755782939:locale:ko</atom:id>

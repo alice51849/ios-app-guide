@@ -1,12 +1,12 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-10-21",
-  "content_digest": "3640bd2fe814e90c319c41f805a18191267cf24b494e07e899e4e5a3298653b5",
+  "date_modified": "2026-10-23",
+  "content_digest": "a6ff8651a4ca213956f9cecec8d2d98f3a72456927ef966d484ab7e59fa02516",
   "locale": "ca",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 54,
+  "record_count": 55,
   "apps": [
     {
       "key": "notesstudio100",
@@ -578,6 +578,47 @@
         "currency": "EUR",
         "formatted_price": "Gratis",
         "storefront_url": "https://apps.apple.com/es/app/id6793436548"
+      }
+    },
+    {
+      "key": "gbago",
+      "app_store_id": "6804564400",
+      "name": "GBAGo: Partides visuals",
+      "summary": "Llevat de tres cartutxos de demostració originals creats per Lumi Studio, GBAGo no inclou jocs ni cap catàleg de contingut. Des de Fitxers, importa només fitxers creats per tu o que tinguis autorització per utilitzar segons la legislació aplicable.",
+      "category": "utility",
+      "search_terms": [
+        "emulador",
+        "jocs",
+        "consola",
+        "desar",
+        "trucs",
+        "cartutx",
+        "comandament",
+        "arcade",
+        "retrojoc",
+        "fora de línia",
+        "gamepad",
+        "mòbil"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/es/app/id6804564400?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/ca/gbago.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "9.99",
+        "currency": "EUR",
+        "formatted_price": "9,99 €",
+        "storefront_url": "https://apps.apple.com/es/app/id6804564400"
       }
     },
     {

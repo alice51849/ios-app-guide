@@ -2,7 +2,7 @@
 title: "EasyAM: 祝日は鳴らない目覚まし時計・シフトアラーム — 明日鳴るかは自動で判断。平日だけ鳴り、有給・連休はスキップ | iOS App"
 lang: "ja"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/easyam/decision/l/ja/index.html"
-modified: "2026-10-21"
+modified: "2026-10-23"
 app_store_id: "6821790092"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

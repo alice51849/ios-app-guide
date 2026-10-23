@@ -1,12 +1,12 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-10-21",
-  "content_digest": "3640bd2fe814e90c319c41f805a18191267cf24b494e07e899e4e5a3298653b5",
+  "date_modified": "2026-10-23",
+  "content_digest": "a6ff8651a4ca213956f9cecec8d2d98f3a72456927ef966d484ab7e59fa02516",
   "locale": "th",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 54,
+  "record_count": 55,
   "apps": [
     {
       "key": "notesstudio100",
@@ -27,7 +27,8 @@
         "เลคเชอร์",
         "วาดรูป",
         "ออฟไลน์",
-        "มหาลัย"
+        "มหาลัย",
+        "จดโน้ตด้วยลายมือ"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -67,7 +68,9 @@
         "บริบท",
         "โน้ต",
         "แชท",
-        "สรุปให้"
+        "สรุปให้",
+        "พรอมต์ ai",
+        "จัดการพรอมต์"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -165,6 +168,8 @@
         "price": "0",
         "currency": "THB",
         "formatted_price": "ฟรี",
+        "rating_value": 2.0,
+        "rating_count": 1,
         "storefront_url": "https://apps.apple.com/th/app/id6802423998"
       }
     },
@@ -186,7 +191,8 @@
         "วันทำการ",
         "ค่าน้ำมัน",
         "ส่วนลด",
-        "วิศวะ"
+        "วิศวะ",
+        "เครื่องคิดเลข วิดเจ็ต"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -305,7 +311,9 @@
         "ไดอารี่",
         "มีลูก",
         "ปวดประจำเดือน",
-        "คำนวณ"
+        "คำนวณ",
+        "ติดตามประจำเดือน",
+        "รอบเดือน"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -511,7 +519,8 @@
         "การเงิน",
         "จัดการเงิน",
         "กระเป๋าเงิน",
-        "คำนวณเงิน"
+        "คำนวณเงิน",
+        "บันทึกค่าใช้จ่ายเที่ยว"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -569,6 +578,47 @@
         "currency": "THB",
         "formatted_price": "ฟรี",
         "storefront_url": "https://apps.apple.com/th/app/id6793436548"
+      }
+    },
+    {
+      "key": "gbago",
+      "app_store_id": "6804564400",
+      "name": "GBAGo: เซฟแบบเห็นภาพ",
+      "summary": "นอกจากตลับเดโมต้นฉบับ 3 ตลับที่ Lumi Studio สร้างขึ้นเองแล้ว GBAGo ไม่มีเกมหรือแค็ตตาล็อกเนื้อหา ให้นำเข้าจากแอปไฟล์เฉพาะไฟล์ที่คุณสร้างเองหรือได้รับอนุญาตให้ใช้ตามกฎหมายที่บังคับใช้เท่านั้น",
+      "category": "utility",
+      "search_terms": [
+        "อีมูเลเตอร์",
+        "เกมเก่า",
+        "สูตรโกง",
+        "เซฟเกม",
+        "เกมย้อนยุค",
+        "จอยเกม",
+        "ตลับเกม",
+        "ออฟไลน์",
+        "วัยเด็ก",
+        "จอยแพด",
+        "เกมพกพา",
+        "เซฟด่วน"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/th/app/id6804564400?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/th/gbago.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "299",
+        "currency": "THB",
+        "formatted_price": "฿299.00",
+        "storefront_url": "https://apps.apple.com/th/app/id6804564400"
       }
     },
     {
@@ -873,7 +923,8 @@
         "ปฐมวัย",
         "เกมเด็ก",
         "เด็กเล็ก",
-        "ออกเสียง"
+        "ออกเสียง",
+        "โฟนิกส์เด็ก"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1039,7 +1090,8 @@
         "อนุบาล",
         "ไปโรงเรียน",
         "เข้านอน",
-        "ตื่นนอน"
+        "ตื่นนอน",
+        "กิจวัตรก่อนนอน"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1188,6 +1240,8 @@
         "price": "0",
         "currency": "THB",
         "formatted_price": "ฟรี",
+        "rating_value": 5.0,
+        "rating_count": 1,
         "storefront_url": "https://apps.apple.com/th/app/id6785004775"
       }
     },
@@ -1207,7 +1261,9 @@
         "ช่วงเวลา",
         "ประวัติ",
         "วิดเจ็ต",
-        "ล้างแอร์"
+        "ล้างแอร์",
+        "บันทึกงานบ้าน",
+        "เตือนงานบ้าน"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1332,7 +1388,8 @@
         "เกรน",
         "แสงรั่ว",
         "ผิวเนียน",
-        "35mm"
+        "35mm",
+        "ฟิลเตอร์ฟิล์ม"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1452,7 +1509,9 @@
         "ช้อปปิ้ง",
         "ของที่อยากได้",
         "โน้ต",
-        "ค้นหา"
+        "ค้นหา",
+        "บุ๊กมาร์ก",
+        "อ่านทีหลัง"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1728,7 +1787,8 @@
         "oled",
         "นาฬิกาปลุก",
         "ธีมนาฬิกา",
-        "จอเบิร์น"
+        "จอเบิร์น",
+        "นาฬิกาพลิก"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1850,7 +1910,8 @@
         "ที่พัก",
         "แจ้งเตือน",
         "พยากรณ์อากาศ",
-        "นับถอยหลัง"
+        "นับถอยหลัง",
+        "แผนเที่ยว"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2185,7 +2246,8 @@
         "tar",
         "gz",
         "iso",
-        "aes"
+        "aes",
+        "แตกไฟล์ 7z"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,

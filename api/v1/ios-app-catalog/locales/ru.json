@@ -1,12 +1,12 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-10-21",
-  "content_digest": "3640bd2fe814e90c319c41f805a18191267cf24b494e07e899e4e5a3298653b5",
+  "date_modified": "2026-10-23",
+  "content_digest": "a6ff8651a4ca213956f9cecec8d2d98f3a72456927ef966d484ab7e59fa02516",
   "locale": "ru",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 54,
+  "record_count": 55,
   "apps": [
     {
       "key": "notesstudio100",
@@ -65,7 +65,9 @@
         "OCR",
         "контекст",
         "чат",
-        "документы"
+        "документы",
+        "краткое содержание pdf",
+        "промпт ии"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -106,7 +108,8 @@
         "баллы",
         "тест",
         "слова",
-        "подготовка"
+        "подготовка",
+        "toeic аудирование"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -266,7 +269,8 @@
         "собеседование",
         "студент",
         "docx",
-        "пример"
+        "пример",
+        "ats резюме"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -511,7 +515,9 @@
         "поездки",
         "траты",
         "за",
-        "день"
+        "день",
+        "расходы в путешествии",
+        "деньги в путешествии"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -550,7 +556,8 @@
         "валюта",
         "путешествия",
         "кошелек",
-        "смартчасы"
+        "смартчасы",
+        "расходы в путешествии"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -571,6 +578,47 @@
         "currency": "RUB",
         "formatted_price": "Бесплатно",
         "storefront_url": "https://apps.apple.com/ru/app/id6793436548"
+      }
+    },
+    {
+      "key": "gbago",
+      "app_store_id": "6804564400",
+      "name": "GBAGo: Визуальные сейвы",
+      "summary": "Кроме трёх оригинальных демо-картриджей от Lumi Studio, GBAGo не содержит игр или каталога контента. Импортируйте из приложения «Файлы» только созданные вами файлы либо файлы, которые вы вправе использовать по применимому законодательству.",
+      "category": "utility",
+      "search_terms": [
+        "эмулятор",
+        "игры",
+        "приставка",
+        "читы",
+        "эмуляция",
+        "геймпад",
+        "сохранения",
+        "ретро",
+        "картридж",
+        "оффлайн",
+        "детство",
+        "пиксель"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/ru/app/id6804564400?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/ru/gbago.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "799",
+        "currency": "RUB",
+        "formatted_price": "799,00 ₽",
+        "storefront_url": "https://apps.apple.com/ru/app/id6804564400"
       }
     },
     {
@@ -875,7 +923,8 @@
         "прописи",
         "чтение",
         "задания",
-        "слова"
+        "слова",
+        "фонетика для детей"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1079,7 +1128,8 @@
         "что",
         "одеть",
         "погоде",
-        "воздуха"
+        "воздуха",
+        "что надеть погода"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1441,7 +1491,9 @@
         "подборка",
         "теги",
         "рецепты",
-        "желаний"
+        "желаний",
+        "сохранить статьи",
+        "читать позже"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1762,7 +1814,8 @@
         "егэ",
         "часы",
         "секундомер",
-        "прогресс"
+        "прогресс",
+        "учет времени учебы"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

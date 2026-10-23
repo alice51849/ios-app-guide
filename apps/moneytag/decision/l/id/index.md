@@ -2,7 +2,7 @@
 title: "MoneyTag — Proyek · Tag · Laporan | iOS App"
 lang: "id"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/moneytag/decision/l/id/index.html"
-modified: "2026-10-21"
+modified: "2026-10-23"
 app_store_id: "6801956402"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -22,6 +22,7 @@ Pemasukan & Pengeluaran Setiap proyek punya pembukuannya sendiri: pemasukan diku
 - Widget
 - Apple Watch
 - App Store · Gratis
+- ★ 5.0/5 · 1
 
 [Dapatkan MoneyTag di App Store](https://apps.apple.com/id/app/id6801956402?pt=118326163&ct=geo_pick&mt=8)
 

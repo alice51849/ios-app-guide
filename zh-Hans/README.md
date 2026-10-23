@@ -4,7 +4,7 @@
 
 第一方目录，说明每款 App 的适用人群、想完成的任务以及直达 App Store 的下载入口。
 
-由开发者撰写的搜索意图，涵盖 54 款已验证上架的 iOS App 和 Apple 官方 50 个地区语言。
+由开发者撰写的搜索意图，涵盖 55 款已验证上架的 iOS App 和 Apple 官方 50 个地区语言。
 
 **地区语言:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · **zh-Hans** · [zh-Hant](../zh-Hant/)
 
@@ -103,6 +103,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **EasyAM: 法定节假日闹钟·工作日智能闹钟** | EasyAM: 法定节假日闹钟·工作日智能闹钟 — 明早响不响不用再想：放假、请假都不响，调休补班照常叫醒 \| iOS App | 明早到底响不响？放假前关闹钟、节后再打开的麻烦，交给 EasyAM：法定节假日和你的休假不响，调休补班日照常叫醒，接下来七天哪天响、几点响，首页一眼看清。 | 免费开始使用 · 一次购买解锁 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hans/easyam.html) | [在 App Store 获取 EasyAM: 法定节假日闹钟·工作日智能闹钟](https://apps.apple.com/cn/app/id6821790092?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money** | 无需订阅的最佳旅行预算追踪应用 iPhone | 旅行时你需要一个在无移动数据的国家也能离线可用、支持多币种且不要求账户的预算追踪器——按旅行分类，确保每次假期独立。这个缺口，正是 G+Money 想补上的。 | 付费下载 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-travel-budget-tracker-app-no-subscription-iphone.html) | [在 App Store 获取 G+Money →](https://apps.apple.com/cn/app/id6755782939?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money Lite：旅行记账·汇率换算** | G+Money Lite：旅行记账·汇率换算 — 出国预算・自由行花费・每日预算 \| iOS App | G+Money Lite — 聪明的旅行汇率记账 | 免费开始使用 · 一次购买解锁 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hans/gmoneylite.html) | [在 App Store 获取 G+Money Lite：旅行记账·汇率换算](https://apps.apple.com/cn/app/id6793436548?pt=118326163&ct=geo_pick&mt=8) |
+| **GBAGo: 可视化存档** | GBAGo: 可视化存档 — 恢复地图 · 自动快照 \| iOS App | 除 Lumi Studio 自制的三款原创 demo 卡带外，GBAGo 不包含游戏或内容目录。请仅从“文件”导入由你自行创作，或依适用法律获授权使用的文件。 | 付费下载 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hans/gbago.html) | [在 App Store 获取 GBAGo: 可视化存档](https://apps.apple.com/cn/app/id6804564400?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag Lite：买前先算工时** | HoursTag Lite：买前先算工时 — 冲动消费前，先换算成工时 \| iOS App | HoursTag Lite - 看见每样东西的真实代价 | 免费开始使用 · 一次购买解锁 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hans/hourstaglite.html) | [在 App Store 获取 HoursTag Lite：买前先算工时](https://apps.apple.com/cn/app/id6794039979?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag：价格换工时** | HoursTag：价格换工时 — 月薪时薪计算・花费记账本 \| iOS App | 这真正要花你多少？不是多少钱——是你生命中的几个小时。 | 付费下载 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hans/hourstag.html) | [在 App Store 获取 HoursTag：价格换工时](https://apps.apple.com/cn/app/id6754218117?pt=118326163&ct=geo_pick&mt=8) |
 | **LED Moving Text** | LED Moving Text — 手机立刻变成应援灯牌 \| iOS App | 打上一句话，手机就变成一块会发光、会滚动的大字牌，隔着整个场馆、站台或人群都看得清楚。 | 免费开始使用 · 一次购买解锁 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hans/ledmovingtext.html) | [在 App Store 获取 LED Moving Text](https://apps.apple.com/cn/app/id6806639602?pt=118326163&ct=geo_pick&mt=8) |
@@ -146,7 +147,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## 下载完整数据集
 
-JSON、JSONL 和 CSV 格式包含相同的 2,700 条记录。
+JSON、JSONL 和 CSV 格式包含相同的 2,750 条记录。
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -154,6 +155,6 @@ JSON、JSONL 和 CSV 格式包含相同的 2,700 条记录。
 
 [首页](https://open.cait518.cc/ios-app-guide/zh-Hans/index.html) · [开放数据](https://open.cait518.cc/ios-app-guide/zh-Hans/data/lumi-studio-publisher-search-intent-catalog.html) · [许可协议](https://creativecommons.org/licenses/by/4.0/)
 
-更新日期: 2026-10-21
+更新日期: 2026-10-23
 
 CC BY 4.0 适用于原始目录编纂；应用名称和 App Store 标识归其所有者所有。

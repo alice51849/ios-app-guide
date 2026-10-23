@@ -12,11 +12,11 @@
   ],
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
-    "dateModified": "2026-10-21",
-    "contentDigest": "3640bd2fe814e90c319c41f805a18191267cf24b494e07e899e4e5a3298653b5",
+    "dateModified": "2026-10-23",
+    "contentDigest": "a6ff8651a4ca213956f9cecec8d2d98f3a72456927ef966d484ab7e59fa02516",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
-    "recordCount": 54
+    "recordCount": 55
   },
   "items": [
     {
@@ -128,10 +128,12 @@
         "讀書",
         "求職",
         "畢業門檻",
-        "上班族"
+        "上班族",
+        "多益",
+        "英文檢定"
       ],
       "language": "zh-Hant",
-      "date_modified": "2026-10-21T00:41:00Z"
+      "date_modified": "2026-10-23T12:43:15Z"
     },
     {
       "id": "https://apps.apple.com/app/id6802423998",
@@ -257,10 +259,12 @@
         "工作經歷",
         "畢業生",
         "打工",
-        "實習"
+        "實習",
+        "履歷範本",
+        "履歷製作"
       ],
       "language": "zh-Hant",
-      "date_modified": "2026-10-21T00:41:00Z"
+      "date_modified": "2026-10-23T12:43:15Z"
     },
     {
       "id": "https://apps.apple.com/app/id6782251621",
@@ -290,10 +294,11 @@
         "生理痛",
         "日記",
         "症狀",
-        "心情"
+        "心情",
+        "經期 追蹤"
       ],
       "language": "zh-Hant",
-      "date_modified": "2026-10-21T00:41:00Z"
+      "date_modified": "2026-10-23T12:43:15Z"
     },
     {
       "id": "https://apps.apple.com/app/id6790418321",
@@ -518,6 +523,42 @@
       "date_modified": "2026-10-17T16:15:13Z"
     },
     {
+      "id": "https://apps.apple.com/app/id6804564400",
+      "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/gbago.html",
+      "external_url": "https://apps.apple.com/tw/app/id6804564400?pt=118326163&ct=geo_pick&mt=8",
+      "title": "GBAGo: 視覺存檔",
+      "content_text": "除 Lumi Studio 自製的三款原創 demo 卡帶外，GBAGo 不包含遊戲或內容目錄。請僅從「檔案」匯入由你自行創作，或依適用法律獲授權使用的檔案。",
+      "tags": [
+        "模擬器",
+        "金手指",
+        "即時存檔",
+        "卡帶",
+        "快轉",
+        "手把",
+        "懷舊",
+        "復古",
+        "街機",
+        "離線遊玩",
+        "掌機",
+        "經典遊戲",
+        "存檔",
+        "老遊戲",
+        "童年",
+        "單機遊戲",
+        "遊戲機",
+        "離線",
+        "即時讀檔",
+        "連發",
+        "模擬",
+        "經典掌機",
+        "懷舊遊戲",
+        "遊戲模擬",
+        "橫向全螢幕"
+      ],
+      "language": "zh-Hant",
+      "date_modified": "2026-10-23T11:32:52Z"
+    },
+    {
       "id": "https://apps.apple.com/app/id6794039979",
       "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/hourstaglite.html",
       "external_url": "https://apps.apple.com/tw/app/id6794039979?pt=118326163&ct=geo_pick&mt=8",
@@ -549,10 +590,11 @@
         "儲蓄",
         "花費",
         "小資族",
-        "節流"
+        "節流",
+        "衝動購物"
       ],
       "language": "zh-Hant",
-      "date_modified": "2026-10-21T00:41:00Z"
+      "date_modified": "2026-10-23T12:43:15Z"
     },
     {
       "id": "https://apps.apple.com/app/id6754218117",
@@ -697,10 +739,11 @@
         "注音發音",
         "寶寶",
         "注音符號遊戲",
-        "學注音符號"
+        "學注音符號",
+        "注音"
       ],
       "language": "zh-Hant",
-      "date_modified": "2026-10-21T00:41:00Z"
+      "date_modified": "2026-10-23T12:43:15Z"
     },
     {
       "id": "https://apps.apple.com/app/id6775773117",
@@ -770,10 +813,11 @@
         "學英文",
         "幼稚園",
         "親子",
-        "幼兒學習"
+        "幼兒學習",
+        "兒童 字母"
       ],
       "language": "zh-Hant",
-      "date_modified": "2026-10-21T00:41:00Z"
+      "date_modified": "2026-10-23T12:43:15Z"
     },
     {
       "id": "https://apps.apple.com/app/id6778491147",
@@ -934,10 +978,13 @@
         "蓋章",
         "教養",
         "幼兒園",
-        "早睡早起"
+        "早睡早起",
+        "睡前 習慣",
+        "兒童 習慣",
+        "獎勵 貼紙"
       ],
       "language": "zh-Hant",
-      "date_modified": "2026-10-21T00:41:00Z"
+      "date_modified": "2026-10-23T12:43:15Z"
     },
     {
       "id": "https://apps.apple.com/app/id6779745474",
@@ -1012,10 +1059,12 @@
         "手錶",
         "即時",
         "逐時",
-        "一週"
+        "一週",
+        "天氣 穿搭",
+        "穿搭 天氣"
       ],
       "language": "zh-Hant",
-      "date_modified": "2026-10-21T00:41:00Z"
+      "date_modified": "2026-10-23T12:43:15Z"
     },
     {
       "id": "https://apps.apple.com/app/id6792850916",
@@ -1088,10 +1137,11 @@
         "行事曆",
         "任務",
         "鎖定畫面",
-        "重複提醒"
+        "重複提醒",
+        "代辦事項"
       ],
       "language": "zh-Hant",
-      "date_modified": "2026-10-21T00:41:00Z"
+      "date_modified": "2026-10-23T12:43:15Z"
     },
     {
       "id": "https://apps.apple.com/app/id6790800323",
@@ -1168,10 +1218,11 @@
         "團購",
         "活動",
         "家庭",
-        "流水帳"
+        "流水帳",
+        "副業 記帳"
       ],
       "language": "zh-Hant",
-      "date_modified": "2026-10-21T00:41:00Z"
+      "date_modified": "2026-10-23T12:43:15Z"
     },
     {
       "id": "https://apps.apple.com/app/id6798814385",
@@ -1205,10 +1256,11 @@
         "ppt製作",
         "專案",
         "提報",
-        "pdf"
+        "pdf",
+        "一頁 摘要"
       ],
       "language": "zh-Hant",
-      "date_modified": "2026-10-17T16:15:13Z"
+      "date_modified": "2026-10-23T12:43:15Z"
     },
     {
       "id": "https://apps.apple.com/app/id6781808054",
@@ -1315,10 +1367,11 @@
         "郵件",
         "行事曆",
         "定位",
-        "聯絡人"
+        "聯絡人",
+        "qr code 連結 檢查"
       ],
       "language": "zh-Hant",
-      "date_modified": "2026-10-21T00:41:00Z"
+      "date_modified": "2026-10-23T12:43:15Z"
     },
     {
       "id": "https://apps.apple.com/app/id6802505528",
@@ -1674,10 +1727,11 @@
         "搭車",
         "週末",
         "海島",
-        "動物園"
+        "動物園",
+        "小孩 旅行"
       ],
       "language": "zh-Hant",
-      "date_modified": "2026-10-21T00:41:00Z"
+      "date_modified": "2026-10-23T12:43:15Z"
     },
     {
       "id": "https://apps.apple.com/app/id6791299610",
@@ -1752,10 +1806,11 @@
         "備份",
         "手錶",
         "行程安排",
-        "共同編輯"
+        "共同編輯",
+        "旅遊 行程"
       ],
       "language": "zh-Hant",
-      "date_modified": "2026-10-17T16:15:13Z"
+      "date_modified": "2026-10-23T12:43:15Z"
     },
     {
       "id": "https://apps.apple.com/app/id6782275018",
@@ -1849,10 +1904,11 @@
         "無線網路",
         "延遲測試",
         "連線測試",
-        "TCP"
+        "TCP",
+        "wifi 診斷"
       ],
       "language": "zh-Hant",
-      "date_modified": "2026-10-21T00:41:00Z"
+      "date_modified": "2026-10-23T12:43:15Z"
     },
     {
       "id": "https://apps.apple.com/app/id6793414462",
@@ -1989,10 +2045,12 @@
         "批次解壓",
         "離線",
         "壓縮軟體",
-        "壓縮工具"
+        "壓縮工具",
+        "密碼保護 zip",
+        "開啟 rar 檔案"
       ],
       "language": "zh-Hant",
-      "date_modified": "2026-10-21T00:41:00Z"
+      "date_modified": "2026-10-23T12:43:15Z"
     }
   ]
 }

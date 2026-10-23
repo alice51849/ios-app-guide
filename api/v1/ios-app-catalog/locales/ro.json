@@ -1,12 +1,12 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-10-21",
-  "content_digest": "3640bd2fe814e90c319c41f805a18191267cf24b494e07e899e4e5a3298653b5",
+  "date_modified": "2026-10-23",
+  "content_digest": "a6ff8651a4ca213956f9cecec8d2d98f3a72456927ef966d484ab7e59fa02516",
   "locale": "ro",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 54,
+  "record_count": 55,
   "apps": [
     {
       "key": "notesstudio100",
@@ -574,6 +574,47 @@
         "currency": "RON",
         "formatted_price": "Gratuit",
         "storefront_url": "https://apps.apple.com/ro/app/id6793436548"
+      }
+    },
+    {
+      "key": "gbago",
+      "app_store_id": "6804564400",
+      "name": "GBAGo: Salvări vizuale",
+      "summary": "Cu excepția a trei cartușe demo originale create de Lumi Studio, GBAGo nu include jocuri și niciun catalog de conținut. Din Fișiere, importă doar fișiere create de tine sau pe care ai dreptul să le folosești conform legislației aplicabile.",
+      "category": "utility",
+      "search_terms": [
+        "jocuri",
+        "consolă",
+        "salvare",
+        "coduri",
+        "cartuș",
+        "controler",
+        "arcade",
+        "portabil",
+        "nostalgie",
+        "pixeli",
+        "offline",
+        "gamepad"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/ro/app/id6804564400?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/ro/gbago.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "49.99",
+        "currency": "RON",
+        "formatted_price": "49,99 lei",
+        "storefront_url": "https://apps.apple.com/ro/app/id6804564400"
       }
     },
     {

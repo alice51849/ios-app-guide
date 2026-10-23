@@ -2,7 +2,7 @@
 title: "SaveTag: marcadores con IA — Guardar enlaces y leer después | iOS App"
 lang: "es-ES"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/savetag/decision/l/es-ES/index.html"
-modified: "2026-10-21"
+modified: "2026-10-23"
 app_store_id: "6802505528"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

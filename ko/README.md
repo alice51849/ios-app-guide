@@ -4,7 +4,7 @@
 
 각 앱의 대상 사용자, 완료하려는 작업, App Store로 바로 이동하는 경로를 개발사가 직접 공개한 카탈로그입니다.
 
-App Store 제공 여부를 확인한 54개 iOS 앱과 Apple의 50개 언어·지역에 맞춰 개발사가 작성한 검색 의도입니다.
+App Store 제공 여부를 확인한 55개 iOS 앱과 Apple의 50개 언어·지역에 맞춰 개발사가 작성한 검색 의도입니다.
 
 **언어·지역:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · **ko** · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -103,6 +103,7 @@ App Store에서 제공 중임을 확인한 각 앱마다 대표 구매자 페르
 | **EasyAM: 스마트 공휴일 알람 시계** | EasyAM: 스마트 공휴일 알람 시계 — 내일 울릴지 고민 끝! 출근·연차·휴가 알아서 척척 \| iOS App | 내일 아침 알람, 울려야 할까요? EasyAM이 날마다 알아서 정해요. 출근하는 날엔 울리고, 공휴일과 내가 등록한 휴가엔 조용히 쉬어요. | 무료로 시작 · 한 번 구매로 잠금 해제 | [가이드](https://open.cait518.cc/ios-app-guide/ko/easyam.html) | [App Store에서 EasyAM: 스마트 공휴일 알람 시계 받기](https://apps.apple.com/kr/app/id6821790092?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money** | 구독 없이 사용할 수 있는 최고의 여행 예산 추적 앱 아이폰용 | 여행 중 데이터가 없는 나라에서도 작동하고, 여러 통화를 처리하며, 계정을 요구하지 않는 예산 추적기가 필요합니다 — 여행별로 정리되어 각 휴가가 분리됩니다. 그 간극을 메우려고 만든 앱이 G+Money입니다. | 유료 다운로드 | [가이드](https://open.cait518.cc/ios-app-guide/ko/answers/best-travel-budget-tracker-app-no-subscription-iphone.html) | [앱 스토어에서 G+Money 받기 →](https://apps.apple.com/kr/app/id6755782939?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money Lite** | best free travel expense tracker with currency conversion for iphone | 무료 여행 경비 테스트라면 구매 후에야 쓸모 있어지는 빈 장부가 아니라 현지 통화에서 자국 통화까지의 전체 흐름을 시험할 수 있어야 합니다. G+Money Lite — 스마트 여행 환율·지출 기록 — 지출마다 기록하고 자국 통화로 확인. | 무료로 시작 · 한 번 구매로 잠금 해제 | [가이드](https://open.cait518.cc/ios-app-guide/ko/answers/best-free-travel-expense-tracker-with-currency-conversion-for-iphone.html) | [App Store에서 G+Money Lite 받기 →](https://apps.apple.com/kr/app/id6793436548?pt=118326163&ct=geo_pick&mt=8) |
+| **GBAGo: 비주얼 세이브** | GBAGo: 비주얼 세이브 — 복구 지도 · 자동 스냅샷 \| iOS App | Lumi Studio가 직접 만든 오리지널 데모 카트리지 3종을 제외하면 GBAGo에는 게임이나 콘텐츠 카탈로그가 포함되지 않습니다. 파일 앱에서는 직접 만들었거나 관련 법률에 따라 사용 권한을 받은 파일만 가져오세요. | 유료 다운로드 | [가이드](https://open.cait518.cc/ios-app-guide/ko/gbago.html) | [App Store에서 GBAGo: 비주얼 세이브 받기](https://apps.apple.com/kr/app/id6804564400?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag** | HoursTag: 지출을 근무 시간으로 바꾸고 월별 기록을 돌아보기 | HoursTag는 처음에 한 번 결제하는 유료 앱입니다. 시급이나 월급을 설정하고 지출을 근무 시간으로 환산한 뒤, 기록을 저장하고 필요·원함·충동 태그와 분류별 분석, 목표 진행 상황을 확인할 수 있습니다. 일회성 계산만 하는 앱이 아닙니다. | 유료 다운로드 | [가이드](https://open.cait518.cc/ios-app-guide/ko/answers/best-app-to-track-where-my-money-goes-and-save-more.html) | [App Store에서 HoursTag 받기 →](https://apps.apple.com/kr/app/id6754218117?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag Lite** | best app to convert prices into work hours before buying | HoursTag Lite — HoursTag Lite - See the real price of things Every purchase costs hours of your life. Free to start · One-time unlock · No subscription. | 무료로 시작 · 한 번 구매로 잠금 해제 | [가이드](https://open.cait518.cc/ios-app-guide/ko/answers/best-app-to-convert-prices-into-work-hours-before-buying.html) | [App Store에서 HoursTag Lite 받기 →](https://apps.apple.com/kr/app/id6794039979?pt=118326163&ct=geo_pick&mt=8) |
 | **LED Moving Text** | LED Moving Text — 화면이 그대로 전광판으로 \| iOS App | 문구를 입력하고 화면을 들어 올리면, 공연장 뒤쪽에서도 입국장 건너편에서도 한눈에 읽히는 커다란 글자판이 됩니다. | 무료로 시작 · 한 번 구매로 잠금 해제 | [가이드](https://open.cait518.cc/ios-app-guide/ko/ledmovingtext.html) | [App Store에서 LED Moving Text 받기](https://apps.apple.com/kr/app/id6806639602?pt=118326163&ct=geo_pick&mt=8) |
@@ -146,7 +147,7 @@ App Store에서 제공 중임을 확인한 각 앱마다 대표 구매자 페르
 
 ## 전체 데이터셋 다운로드
 
-JSON, JSONL, CSV 모두 동일한 2,700개 기록을 포함합니다.
+JSON, JSONL, CSV 모두 동일한 2,750개 기록을 포함합니다.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -154,6 +155,6 @@ JSON, JSONL, CSV 모두 동일한 2,700개 기록을 포함합니다.
 
 [홈](https://open.cait518.cc/ios-app-guide/ko/index.html) · [오픈 데이터](https://open.cait518.cc/ios-app-guide/ko/data/lumi-studio-publisher-search-intent-catalog.html) · [라이선스](https://creativecommons.org/licenses/by/4.0/)
 
-업데이트 날짜: 2026-10-21
+업데이트 날짜: 2026-10-23
 
 CC BY 4.0은 원본 카탈로그 편집에 적용되며, 앱 이름과 App Store 마크는 각 소유자의 권리입니다.

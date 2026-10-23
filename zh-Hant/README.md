@@ -4,7 +4,7 @@
 
 第一方目錄，說明每款 App 的適合對象、想完成的任務，以及 App Store 下載入口。
 
-由開發者撰寫的搜尋意圖，涵蓋 54 款已驗證上架的 iOS App 與 Apple 官方 50 個地區語系。
+由開發者撰寫的搜尋意圖，涵蓋 55 款已驗證上架的 iOS App 與 Apple 官方 50 個地區語系。
 
 **地區語系:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · **zh-Hant**
 
@@ -103,6 +103,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **EasyAM: 國定假日、連假不響的智慧鬧鐘** | EasyAM: 國定假日、連假不響的智慧鬧鐘 — 明早要不要響？上班日、補班日照響，請假、特休自動跳過 \| iOS App | 明天早上的鬧鐘，到底要不要響？EasyAM 每天幫你判斷：上班日照響，國定假日和你的休假安靜不響，遇到補班日也會照常叫你起床。 | 免費開始使用 · 一次購買解鎖 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hant/easyam.html) | [在 App Store 取得 EasyAM: 國定假日、連假不響的智慧鬧鐘](https://apps.apple.com/tw/app/id6821790092?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money** | 最佳無訂閱旅遊預算追蹤應用程式 iPhone | 旅途中你需要一款能在無資料國家離線使用、支援多貨幣且不需帳號的預算追蹤器 — 按旅程分類讓每次假期獨立。這個缺口，就是 G+Money 想補上的。 | 付費下載 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hant/answers/best-travel-budget-tracker-app-no-subscription-iphone.html) | [在 App Store 取得 G+Money →](https://apps.apple.com/tw/app/id6755782939?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money Lite** | iPhone 最好用的免費旅遊記帳與匯率換算工具 | 有用的免費旅費試用，應該讓你走完從當地貨幣到本國貨幣的完整流程，而不只是一本付費後才有用的空白帳簿。G+Money Lite——聰明的旅行匯率與記帳工具——每筆花費都記下，並以本國貨幣顯示。 | 免費開始使用 · 一次購買解鎖 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hant/answers/best-free-travel-expense-tracker-with-currency-conversion-for-iphone.html) | [前往 App Store 取得 G+Money Lite →](https://apps.apple.com/tw/app/id6793436548?pt=118326163&ct=geo_pick&mt=8) |
+| **GBAGo: 視覺存檔** | GBAGo: 視覺存檔 — 復原地圖 · 自動快照 \| iOS App | 除 Lumi Studio 自製的三款原創 demo 卡帶外，GBAGo 不包含遊戲或內容目錄。請僅從「檔案」匯入由你自行創作，或依適用法律獲授權使用的檔案。 | 付費下載 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hant/gbago.html) | [在 App Store 取得 GBAGo: 視覺存檔](https://apps.apple.com/tw/app/id6804564400?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag** | HoursTag：把花費換成工時，月底看懂自己的支出紀錄 | HoursTag 是付費下載的原版 App：設定時薪或月薪，把花費換成工作時間，再保存紀錄、標記必要／想要／衝動、查看分類洞察與目標進度。買到的不只是一次除法，而是之後還能回頭看的花費歷史。 | 付費下載 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hant/answers/best-app-to-track-where-my-money-goes-and-save-more.html) | [前往 App Store 取得 HoursTag →](https://apps.apple.com/tw/app/id6754218117?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag Lite** | best app to convert prices into work hours before buying | HoursTag Lite — HoursTag Lite - See the real price of things Every purchase costs hours of your life. Free to start · One-time unlock · No subscription. | 免費開始使用 · 一次購買解鎖 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hant/answers/best-app-to-convert-prices-into-work-hours-before-buying.html) | [在 App Store 獲取 HoursTag Lite →](https://apps.apple.com/tw/app/id6794039979?pt=118326163&ct=geo_pick&mt=8) |
 | **LED Moving Text** | 演唱會與接機用的 LED 跑馬燈 App | LED Moving Text — Cue Flow 專門應付一張牌子不夠用的時刻。免費起步 · 一次買斷 · 不用訂閱。 | 免費開始使用 · 一次購買解鎖 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hant/answers/led-scrolling-text-app-for-concerts-and-airport-pickups.html) | [到 App Store 下載 LED Moving Text →](https://apps.apple.com/tw/app/id6806639602?pt=118326163&ct=geo_pick&mt=8) |
@@ -146,7 +147,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## 下載完整資料集
 
-JSON、JSONL 與 CSV 格式皆包含相同的 2,700 筆紀錄。
+JSON、JSONL 與 CSV 格式皆包含相同的 2,750 筆紀錄。
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -154,6 +155,6 @@ JSON、JSONL 與 CSV 格式皆包含相同的 2,700 筆紀錄。
 
 [首頁](https://open.cait518.cc/ios-app-guide/zh-Hant/index.html) · [開放資料](https://open.cait518.cc/ios-app-guide/zh-Hant/data/lumi-studio-publisher-search-intent-catalog.html) · [授權條款](https://creativecommons.org/licenses/by/4.0/)
 
-更新日期: 2026-10-21
+更新日期: 2026-10-23
 
 CC BY 4.0 適用於原始目錄彙編；App 名稱與 App Store 商標分屬其權利人。

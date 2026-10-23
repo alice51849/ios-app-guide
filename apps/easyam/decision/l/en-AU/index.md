@@ -2,7 +2,7 @@
 title: "alarm clock app that skips holidays on iphone"
 lang: "en-AU"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/easyam/decision/l/en-AU/index.html"
-modified: "2026-10-21"
+modified: "2026-10-23"
 app_store_id: "6821790092"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

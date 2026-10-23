@@ -1,12 +1,12 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-10-21",
-  "content_digest": "3640bd2fe814e90c319c41f805a18191267cf24b494e07e899e4e5a3298653b5",
+  "date_modified": "2026-10-23",
+  "content_digest": "a6ff8651a4ca213956f9cecec8d2d98f3a72456927ef966d484ab7e59fa02516",
   "locale": "gu-IN",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 54,
+  "record_count": 55,
   "apps": [
     {
       "key": "notesstudio100",
@@ -591,6 +591,47 @@
         "currency": "INR",
         "formatted_price": "મફત",
         "storefront_url": "https://apps.apple.com/in/app/id6793436548"
+      }
+    },
+    {
+      "key": "gbago",
+      "app_store_id": "6804564400",
+      "name": "GBAGo: વિઝ્યુઅલ સેવ",
+      "summary": "Lumi Studio દ્વારા બનાવેલી ત્રણ મૂળ ડેમો કાર્ટ્રિજ સિવાય GBAGoમાં કોઈ ગેમ અથવા કન્ટેન્ટ કેટલોગ નથી. Filesમાંથી ફક્ત તમે જાતે બનાવેલી અથવા લાગુ કાયદા મુજબ વાપરવાની મંજૂરી ધરાવતી ફાઇલો જ આયાત કરો.",
+      "category": "utility",
+      "search_terms": [
+        "એમ્યુલેટર",
+        "જૂની રમતો",
+        "ચીટ કોડ",
+        "પુનઃસ્થાપન",
+        "કન્સોલ",
+        "રેટ્રો",
+        "કાર્ટ્રિજ",
+        "ગેમપેડ",
+        "ઓફલાઇન",
+        "બાળપણ",
+        "ઝડપી ગતિ",
+        "પિક્સેલ"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/in/app/id6804564400?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/gu-IN/gbago.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "999",
+        "currency": "INR",
+        "formatted_price": "₹ 999",
+        "storefront_url": "https://apps.apple.com/in/app/id6804564400"
       }
     },
     {

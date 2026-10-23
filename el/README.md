@@ -4,7 +4,7 @@
 
 Ένας πρωτογενής κατάλογος που δείχνει για ποιον προορίζεται κάθε εφαρμογή, το έργο που προσπαθεί να ολοκληρώσει και την άμεση διαδρομή στο App Store.
 
-Προθέσεις αναζήτησης που έχουν συνταχθεί από τον εκδότη για 54 επαληθευμένες ενεργές εφαρμογές iOS και 50 Apple τοπικές γλώσσες.
+Προθέσεις αναζήτησης που έχουν συνταχθεί από τον εκδότη για 55 επαληθευμένες ενεργές εφαρμογές iOS και 50 Apple τοπικές γλώσσες.
 
 **Τοπική γλώσσα:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · **el** · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -103,6 +103,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **EasyAM: Ξυπνητήρι & Αργίες** | EasyAM: Ξυπνητήρι & Αργίες — Χτυπά μόνο όταν έχετε δουλειά \| iOS App | Θα χτυπήσει αύριο το ξυπνητήρι; Και πρέπει; Το EasyAM το αποφασίζει για εσάς, μέρα με τη μέρα: χτυπά τις εργάσιμες, σωπαίνει στις αργίες και στα ρεπό σας | Δωρεάν για αρχή · ξεκλείδωμα με μία αγορά | [Οδηγός](https://open.cait518.cc/ios-app-guide/el/easyam.html) | [Αποκτήστε το EasyAM: Ξυπνητήρι & Αργίες από το App Store](https://apps.apple.com/gr/app/id6821790092?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money** | καλύτερη εφαρμογή παρακολούθησης προϋπολογισμού ταξιδιού χωρίς συνδρομή για iPhone | Σε ένα ταξίδι χρειάζεστε έναν προϋπολογισμό που λειτουργεί εκτός σύνδεσης σε χώρα χωρίς δεδομένα, διαχειρίζεται πολλαπλά νομίσματα και δεν απαιτεί λογαριασμό — οργανωμένο ανά ταξίδι ώστε κάθε διακοπές να είναι ξεχωριστές. Αυτό ακριβώς το κενό θέλει να καλύψει το G+Money. | Λήψη με χρέωση | [Οδηγός](https://open.cait518.cc/ios-app-guide/el/answers/best-travel-budget-tracker-app-no-subscription-iphone.html) | [Κατεβάστε το G+Money από το App Store →](https://apps.apple.com/gr/app/id6755782939?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money Lite: Έξοδα ταξιδιού** | G+Money Lite: Έξοδα ταξιδιού — Όριο ημέρας σε ρολόι & widget \| iOS App | G+Money Lite — Έξυπνος μετατροπέας νομισμάτων & παρακολούθησης εξόδων | Δωρεάν για αρχή · ξεκλείδωμα με μία αγορά | [Οδηγός](https://open.cait518.cc/ios-app-guide/el/gmoneylite.html) | [Αποκτήστε το G+Money Lite: Έξοδα ταξιδιού από το App Store](https://apps.apple.com/gr/app/id6793436548?pt=118326163&ct=geo_pick&mt=8) |
+| **GBAGo: Οπτικές αποθηκεύσεις** | GBAGo: Οπτικές αποθηκεύσεις — Χάρτης ανάκτησης · Στιγμιότυπα \| iOS App | Εκτός από τρεις πρωτότυπες demo κασέτες της Lumi Studio, το GBAGo δεν περιλαμβάνει παιχνίδια ή κατάλογο περιεχομένου. Από τα Αρχεία εισήγαγε μόνο αρχεία | Λήψη με χρέωση | [Οδηγός](https://open.cait518.cc/ios-app-guide/el/gbago.html) | [Αποκτήστε το GBAGo: Οπτικές αποθηκεύσεις από το App Store](https://apps.apple.com/gr/app/id6804564400?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag Lite: Τιμή σε ώρες** | HoursTag Lite: Τιμή σε ώρες — Συνειδητή αγορά: αληθινή τιμή \| iOS App | HoursTag Lite - Δείτε την πραγματική τιμή των πραγμάτων | Δωρεάν για αρχή · ξεκλείδωμα με μία αγορά | [Οδηγός](https://open.cait518.cc/ios-app-guide/el/hourstaglite.html) | [Αποκτήστε το HoursTag Lite: Τιμή σε ώρες από το App Store](https://apps.apple.com/gr/app/id6794039979?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag: Ώρες αγοράς** | HoursTag: Ώρες αγοράς — Ωριαία αμοιβή και έξοδα \| iOS App | Πόσο κοστίζει πραγματικά; Όχι σε ευρώ, αλλά σε ώρες από τη ζωή σου. | Λήψη με χρέωση | [Οδηγός](https://open.cait518.cc/ios-app-guide/el/hourstag.html) | [Αποκτήστε το HoursTag: Ώρες αγοράς από το App Store](https://apps.apple.com/gr/app/id6754218117?pt=118326163&ct=geo_pick&mt=8) |
 | **LED Moving Text** | LED Moving Text — Φωτεινή κυλιόμενη πινακίδα \| iOS App | Γράψε μια φράση και σήκωσε το iPhone. Από την τελευταία σειρά, από την άλλη άκρη της αίθουσας αφίξεων ή πάνω από έναν πάγκο διαβάζεται με μία ματιά. | Δωρεάν για αρχή · ξεκλείδωμα με μία αγορά | [Οδηγός](https://open.cait518.cc/ios-app-guide/el/ledmovingtext.html) | [Αποκτήστε το LED Moving Text από το App Store](https://apps.apple.com/gr/app/id6806639602?pt=118326163&ct=geo_pick&mt=8) |
@@ -146,7 +147,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## Κατεβάστε το πλήρες σύνολο δεδομένων
 
-Τα αρχεία JSON, JSONL και CSV περιέχουν τις ίδιες 2.700 εγγραφές.
+Τα αρχεία JSON, JSONL και CSV περιέχουν τις ίδιες 2.750 εγγραφές.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -154,6 +155,6 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 [Αρχική](https://open.cait518.cc/ios-app-guide/el/index.html) · [Ανοιχτά δεδομένα](https://open.cait518.cc/ios-app-guide/el/data/lumi-studio-publisher-search-intent-catalog.html) · [Άδεια](https://creativecommons.org/licenses/by/4.0/)
 
-Ενημερώθηκε: 2026-10-21
+Ενημερώθηκε: 2026-10-23
 
 Η άδεια CC BY 4.0 ισχύει για τη σύνθεση του αρχικού καταλόγου· τα ονόματα εφαρμογών και τα σήματα του App Store ανήκουν στους ιδιοκτήτες τους.

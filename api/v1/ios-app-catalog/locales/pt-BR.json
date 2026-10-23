@@ -1,12 +1,12 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-10-21",
-  "content_digest": "3640bd2fe814e90c319c41f805a18191267cf24b494e07e899e4e5a3298653b5",
+  "date_modified": "2026-10-23",
+  "content_digest": "a6ff8651a4ca213956f9cecec8d2d98f3a72456927ef966d484ab7e59fa02516",
   "locale": "pt-BR",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 54,
+  "record_count": 55,
   "apps": [
     {
       "key": "notesstudio100",
@@ -26,7 +26,8 @@
         "gravação",
         "aula",
         "desenho",
-        "offline"
+        "offline",
+        "notas à mão"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -265,7 +266,8 @@
         "aprendiz",
         "profissional",
         "trabalho",
-        "simples"
+        "simples",
+        "currículo ats"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -385,7 +387,8 @@
         "aeroporto",
         "restaurante",
         "hotel",
-        "offline"
+        "offline",
+        "guia de conversação"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -572,6 +575,47 @@
       }
     },
     {
+      "key": "gbago",
+      "app_store_id": "6804564400",
+      "name": "GBAGo: Saves visuais",
+      "summary": "Exceto por três cartuchos de demonstração originais criados pela Lumi Studio, o GBAGo não inclui jogos nem catálogo de conteúdo. Pelo app Arquivos, importe apenas arquivos criados por você ou cujo uso seja autorizado pela legislação aplicável.",
+      "category": "utility",
+      "search_terms": [
+        "emulador",
+        "jogos",
+        "console",
+        "salvar",
+        "truques",
+        "cartucho",
+        "controle",
+        "fliperama",
+        "portátil",
+        "anos 90",
+        "infância",
+        "gamepad"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/br/app/id6804564400?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/pt-BR/gbago.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "59.9",
+        "currency": "BRL",
+        "formatted_price": "R$ 59,90",
+        "storefront_url": "https://apps.apple.com/br/app/id6804564400"
+      }
+    },
+    {
       "key": "hourstaglite",
       "app_store_id": "6794039979",
       "name": "HoursTag Lite: Preço em horas",
@@ -669,7 +713,8 @@
         "letras",
         "fila",
         "palco",
-        "aviso"
+        "aviso",
+        "placa aeroporto"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1118,7 +1163,8 @@
         "anonimizar",
         "lgpd",
         "exif",
-        "senha"
+        "senha",
+        "tarjar pdf"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1159,7 +1205,10 @@
         "calendário",
         "widget",
         "organização",
-        "diária"
+        "diária",
+        "lista de tarefas",
+        "checklist",
+        "to do list"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1180,7 +1229,7 @@
         "currency": "BRL",
         "formatted_price": "Grátis",
         "rating_value": 3.5,
-        "rating_count": 4,
+        "rating_count": 6,
         "storefront_url": "https://apps.apple.com/br/app/id6785004775"
       }
     },
@@ -1769,7 +1818,8 @@
         "leitura",
         "prova",
         "vestibular",
-        "concurso"
+        "concurso",
+        "timer de foco"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1810,7 +1860,8 @@
         "fotos",
         "hotel",
         "museu",
-        "aeroporto"
+        "aeroporto",
+        "jogos para viagem de carro"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1977,7 +2028,9 @@
         "reset",
         "llm",
         "meter",
-        "sessão"
+        "sessão",
+        "monitor de uso ia",
+        "uso de tokens"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

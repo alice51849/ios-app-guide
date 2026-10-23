@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "en-US",
-  "dateModified": "2026-10-21",
-  "content_digest": "1b6a17c21d9f179a9860477b1687bb944f8ee30ca4132c0ce0987288f3041fba",
-  "generation_digest": "64515fcc1834987bd856e82e47fed33fd87a687dccd27bd7788abac5b978109e",
+  "dateModified": "2026-10-23",
+  "content_digest": "308f694ea91b0d0550dd56b4438581faa7e67d0c53aa111aa9b2ad5946a84c79",
+  "generation_digest": "70323413d770366211c2dfb06e8438e221ccc077f05ef690449e948ce2ec708d",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 54,
+  "record_count": 55,
   "syndication": {
     "atom": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/en-US.atom.xml",
     "rss": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/en-US.rss.xml",
@@ -1024,6 +1024,56 @@
       "verified_live": true
     },
     {
+      "record_id": "en-US:gbago",
+      "locale": "en-US",
+      "app_key": "gbago",
+      "app_name": "GBAGo: Visual Saves",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "GBAGo: Visual Saves — Recovery Map · Auto Snapshots | iOS App",
+      "decision_context": "GBAGo is designed around one promise: never lose your progress again. Every game gets a Recovery Map, one screen that gathers all of its save points: the automatic resume point, your save state slots, automatic snapshots and the battery save, each with a clear status such as Ready to load or Not safe to load. Safe Continue resumes from your newest checkpoint only when it checks out. If that checkpoint is damaged, GBAGo asks before using the most recent verified one instead. Try it the moment you open the app. A brand-new library starts with three original demo cartridges made by Lumi Studio: Lumi Orbit, Pearl Garden and Cloud Atelier. They contain no third-party content, so you can explore save slots, automatic snapshots, Recovery Map and Game Info right away, and delete them whenever you like. WHAT MAKES GBAGO DIFFERENT - Recovery Map: every checkpoint for a game in one place, with a Verify Progress check - Safe Continue: a damaged checkpoint is never loaded silently - Visual save slots: 4 slots to start, expandable to 12, each with its own screenshot thumbnail - Auto Snapshots: during normal play, a quiet snapshot about every two minutes; the latest 15 stay available as thumbnails you can jump back to - Auto save when leaving: close GBAGo and continue exactly where you stopped (on by default) - Game Info: long-press a game to check its identity and integrity on device, including internal title, game and maker codes, revision, file size, SHA-256, header checksum, save hardware and real-time clock, then export a JSON report - Music at normal speed while fast-forwarding: skip ahead at up to 32x while the soundtrack keeps its usual pace - Pinch to zoom: resize the game screen from 100% to 150% with two fingers; GBAGo remembers your choice EVERYDAY PLAY - Touch controls with adjustable button size and opacity, plus Turbo A and Turbo B - Game controller support - Screen filters (Pixel Perfect, Smooth, CRT) and aspect ratio options - Cheat codes - Backup export and import, with game files optional - Play Stats: total play time, the last 30 days, most active time of day, streaks and top games - Library covers captured from your own play - Interface in 50 languages In Low Power Mode or when your device runs hot, GBAGo automatically lowers the fast-forward limit and takes automatic snapshots less often or pauses them. COMPATIBILITY Opens .gba, .gbc and .gb files, including files inside .zip archives, that you import from Files. Importing a BIOS file is optional. PRIVACY GBAGo runs fully on your device. No accounts, no ads, no tracking, no data collection. When iCloud is enabled, GBAGo syncs save states, thumbnails and .sav battery saves through your private iCloud account. The developer does not receive this data. Local data remains until you delete it in GBAGo or remove the app. Turning off GBAGo under Apple Account > iCloud stops future sync; deleting existing iCloud copies is a separate action in GBAGo or iCloud storage settings. Export and Share send only files you explicitly select to destinations you choose. Support: hourstag.app@gmail.com · https://alice51849.github.io/gbago-support/ LEGAL Apart from the three original Lumi Studio demo cartridges, GBAGo contains no games and does not supply or link to game files. Import only files you created yourself or are authorized to use under applicable law. GBAGo is an independent app. It is not affiliated with, endorsed by, or sponsored by Nintendo Co., Ltd. Game Boy, Game Boy Color and Game Boy Advance are trademarks of Nintendo, used here only to describe file compatibility. Emulation is powered by the open-source mGBA core, licensed under MPL-2.0.",
+      "category": "utility",
+      "category_label": "More",
+      "purchase_model": "paid_upfront",
+      "purchase_label": "Paid download",
+      "one_time_option": true,
+      "privacy_facts": [
+        "offline"
+      ],
+      "privacy_labels": [
+        "Offline"
+      ],
+      "device_surfaces": [],
+      "device_labels": [],
+      "badge_labels": [
+        "More",
+        "Paid download",
+        "Offline",
+        "App Store · $8.99"
+      ],
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-US/gbago.html",
+      "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/gbago/decision/l/en-US/index.html",
+      "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/en-US/gbago.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Fgbago%2Fdecision%2Fl%2Fen-US%2Findex.html&format=json",
+      "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/en-US.json",
+      "app_store_id": "6804564400",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6804564400",
+      "app_store_url": "https://apps.apple.com/us/app/id6804564400?pt=118326163&ct=geo_pick&mt=8",
+      "app_store_cta_label": "Get GBAGo: Visual Saves on the App Store",
+      "storefront_facts": {
+        "price": "8.99",
+        "currency": "USD",
+        "formatted_price": "$8.99"
+      },
+      "guide_cta_label": "Read the full guide",
+      "publisher_disclosure": "This is first-party material published by Lumi Studio, the developer of every listed app.",
+      "source_persona_query": "paid gba emulator for iphone with save states and controller support",
+      "source_surface": "app_guide_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
       "record_id": "en-US:hourstag",
       "locale": "en-US",
       "app_key": "hourstag",
@@ -1808,7 +1858,7 @@
         "No ads",
         "Apple Watch",
         "App Store · Free",
-        "★ 4.2/5 · 33"
+        "★ 4.3/5 · 35"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-simple-to-do-list-app-iphone-no-subscription.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/mochi/decision/l/en-US/index.html",
@@ -1822,8 +1872,8 @@
         "price": "0",
         "currency": "USD",
         "formatted_price": "Free",
-        "rating_value": 4.2,
-        "rating_count": 33
+        "rating_value": 4.3,
+        "rating_count": 35
       },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.",

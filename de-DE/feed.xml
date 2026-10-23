@@ -3,7 +3,7 @@
   <atom:id>https://open.cait518.cc/ios-app-guide/de-DE/feed.xml</atom:id>
   <atom:title>App-Verzeichnis | iOS</atom:title>
   <atom:subtitle>Dieses Material wird direkt von Lumi Studio veröffentlicht, dem Entwickler aller aufgeführten Apps.</atom:subtitle>
-  <atom:updated>2026-10-21T00:41:02Z</atom:updated>
+  <atom:updated>2026-10-23T11:32:53Z</atom:updated>
   <atom:author>
     <atom:name>Lumi Studio</atom:name>
   </atom:author>
@@ -130,6 +130,16 @@
     <atom:link rel="alternate" href="https://open.cait518.cc/ios-app-guide/de-DE/easyam.html" />
     <atom:content type="html">&lt;p&gt;Schluss mit dem Wecker-Umstellen vor jedem Feiertag: EasyAM entscheidet Tag für Tag, ob dein Wecker klingelt. Arbeitstag? Er klingelt. Feiertag oder Urlaub? Er bleibt still.&lt;/p&gt;&lt;p&gt;Kostenloser Einstieg · einmalige Freischaltung&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/de/app/id6821790092?pt=118326163&amp;amp;ct=geo_pick&amp;amp;mt=8"&gt;Im App Store ansehen&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Dieses Material wird direkt von Lumi Studio veröffentlicht, dem Entwickler aller aufgeführten Apps.&lt;/p&gt;</atom:content>
     <lumi:record>{"app_key":"easyam","app_store_cta_label":"Im App Store ansehen","app_store_id":"6821790092","content_digest":"db5d1cc224028e22675abf945c3f5416d3710583d1f892b2b71b2ca5c131a5a6","independent_ranking":false,"one_time_option":true,"publisher_disclosure":"Dieses Material wird direkt von Lumi Studio veröffentlicht, dem Entwickler aller aufgeführten Apps.","purchase_label":"Kostenloser Einstieg · einmalige Freischaltung","purchase_model":"free_with_lifetime_unlock","source_locale":"de-DE"}</lumi:record>
+  </atom:entry>
+  <atom:entry>
+    <atom:id>urn:lumi:app-store:6804564400:locale:de-DE</atom:id>
+    <atom:title>GBAGo: Visuelle Spielstände</atom:title>
+    <atom:summary>Abgesehen von drei originalen Demo-Modulen von Lumi Studio enthält GBAGo keine Spiele und keinen Inhaltskatalog. Importiere über „Dateien“ nur Dateien, die du selbst erstellt hast oder nach geltendem Recht verwenden darfst.</atom:summary>
+    <atom:published>2026-10-23T11:32:53Z</atom:published>
+    <atom:updated>2026-10-23T11:32:53Z</atom:updated>
+    <atom:link rel="alternate" href="https://open.cait518.cc/ios-app-guide/de-DE/gbago.html" />
+    <atom:content type="html">&lt;p&gt;Abgesehen von drei originalen Demo-Modulen von Lumi Studio enthält GBAGo keine Spiele und keinen Inhaltskatalog. Importiere über „Dateien“ nur Dateien, die du selbst erstellt hast oder nach geltendem Recht verwenden darfst.&lt;/p&gt;&lt;p&gt;Bezahlter Herunterladen&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/de/app/id6804564400?pt=118326163&amp;amp;ct=geo_pick&amp;amp;mt=8"&gt;Im App Store ansehen&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Dieses Material wird direkt von Lumi Studio veröffentlicht, dem Entwickler aller aufgeführten Apps.&lt;/p&gt;</atom:content>
+    <lumi:record>{"app_key":"gbago","app_store_cta_label":"Im App Store ansehen","app_store_id":"6804564400","content_digest":"a727a58f0ef73e6d4a33ac940a7d02755261d9cc66d30e651a4460331119fbb6","independent_ranking":false,"one_time_option":true,"publisher_disclosure":"Dieses Material wird direkt von Lumi Studio veröffentlicht, dem Entwickler aller aufgeführten Apps.","purchase_label":"Bezahlter Herunterladen","purchase_model":"paid_upfront","source_locale":"de-DE"}</lumi:record>
   </atom:entry>
   <atom:entry>
     <atom:id>urn:lumi:app-store:6755782939:locale:de-DE</atom:id>

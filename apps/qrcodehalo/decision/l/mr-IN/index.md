@@ -2,7 +2,7 @@
 title: "QR Code Halo: स्कॅन, तयार करा — लगेच उघडा, नंतर तपासा | iOS App"
 lang: "mr-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/qrcodehalo/decision/l/mr-IN/index.html"
-modified: "2026-10-21"
+modified: "2026-10-23"
 app_store_id: "6806779853"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

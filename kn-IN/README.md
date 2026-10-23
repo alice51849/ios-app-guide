@@ -4,7 +4,7 @@
 
 ಪ್ರತಿ ಆ್ಯಪ್ ಯಾರಿಗಾಗಿ ವಿನ್ಯಾಸಗೊಳಿಸಲಾಗಿದೆ, ಅವರು ಪೂರ್ಣಗೊಳಿಸಲು ಯತ್ನಿಸುತ್ತಿರುವ ಕಾರ್ಯ ಮತ್ತು ನೇರ App Store ಮಾರ್ಗದ ಮೊದಲ-ಪಕ್ಷ ಕ್ಯಾಟಲಾಗ್.
 
-54 ಪರಿಶೀಲಿತ ಸಜೀವ iOS ಆ್ಯಪ್ಗಳು ಮತ್ತು 50 Apple ಸ್ಥಳೀಯತೆಗಳಾದ್ಯಂತ ಪ್ರಕಾಶಕರಿಂದ ರಚಿಸಲಾದ ಹುಡುಕಾಟ ಉದ್ದೇಶಗಳು.
+55 ಪರಿಶೀಲಿತ ಸಜೀವ iOS ಆ್ಯಪ್ಗಳು ಮತ್ತು 50 Apple ಸ್ಥಳೀಯತೆಗಳಾದ್ಯಂತ ಪ್ರಕಾಶಕರಿಂದ ರಚಿಸಲಾದ ಹುಡುಕಾಟ ಉದ್ದೇಶಗಳು.
 
 **ಸ್ಥಳೀಯತೆ:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · **kn-IN** · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -103,6 +103,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **EasyAM: ಅಲಾರಂ ಗಡಿಯಾರ & ರಜಾದಿನ** | EasyAM: ಅಲಾರಂ ಗಡಿಯಾರ & ರಜಾದಿನ — ನಾಳೆ ರಿಂಗ್? ಕೆಲಸದ ದಿನ ಮಾತ್ರ \| iOS App | ಪ್ರತಿ ರಜೆಗೂ ಮುನ್ನ ಅಲಾರಂ ಆಫ್ ಮಾಡಿ, ನಂತರ ಮತ್ತೆ ಆನ್ ಮಾಡುವುದನ್ನು ನೆನಪಿಡುವ ಅಗತ್ಯ ಇನ್ನಿಲ್ಲ: EasyAM ಪ್ರತಿ ದಿನಕ್ಕೂ ನಾಳೆ ರಿಂಗ್ ಆಗಬೇಕೇ ಬೇಡವೇ ಎಂದು ತಾನೇ ನಿರ್ಧರಿಸುತ್ತದೆ | ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ · ಒಂದೇ ಖರೀದಿಯಲ್ಲಿ ಅನ್‌ಲಾಕ್ | [ಮಾರ್ಗದರ್ಶಕ](https://open.cait518.cc/ios-app-guide/kn-IN/easyam.html) | [App Store ನಲ್ಲಿ EasyAM: ಅಲಾರಂ ಗಡಿಯಾರ & ರಜಾದಿನ ಪಡೆಯಿರಿ](https://apps.apple.com/in/app/id6821790092?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money** | ಅಕೌಂಟ್ ಇಲ್ಲದ ಅತ್ಯುತ್ತಮ ಪ್ರಯಾಣ ಬಜೆಟ್ ಟ್ರ್ಯಾಕರ್ ಅಪ್ಲಿಕೇಶನ್ iPhone | ಪ್ರತಿ ಹಾಲಿಡೇ ಪ್ರತ್ಯೇಕವಾಗಿರುವಂತೆ ಪ್ರಯಾಣದ ಪ್ರಕಾರ ಸಂಘಟಿತವಾಗಿರುವ, ಡೇಟಾ ಇಲ್ಲದ ದೇಶದಲ್ಲಿ ಆಫ್‌ಲೈನ್ ಕೆಲಸ ಮಾಡುವ, ಬಹು ಕರೆನ್ಸಿಗಳನ್ನು ನಿರ್ವಹಿಸುವ ಮತ್ತು ಅಕೌಂಟ್ ಬೇಡದ ಬಜೆಟ್ ಟ್ರ್ಯಾಕರ್. ಈ ಕೊರತೆಯನ್ನೇ G+Money ತುಂಬಲು ಬಯಸುತ್ತದೆ. | ಪಾವತಿಸಿದ ಡೌನ್‌ಲೋಡ್ | [ಮಾರ್ಗದರ್ಶಕ](https://open.cait518.cc/ios-app-guide/kn-IN/answers/best-travel-budget-tracker-app-no-subscription-iphone.html) | [App Store ನಲ್ಲಿ G+Money ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6755782939?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money Lite: ಪ್ರಯಾಣ ವೆಚ್ಚ** | G+Money Lite: ಪ್ರಯಾಣ ವೆಚ್ಚ — ವಾಚ್, ವಿಜೆಟ್‌ನಲ್ಲಿ ದಿನದ ಬಜೆಟ್ \| iOS App | G+Money Lite — ಚಾತುರ್ಯಯುತ ಪ್ರವಾಸ ನಾಣ್ಯ ಮತ್ತು ಖರ್ಚು ಟ್ರ್ಯಾಕರ್ | ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ · ಒಂದೇ ಖರೀದಿಯಲ್ಲಿ ಅನ್‌ಲಾಕ್ | [ಮಾರ್ಗದರ್ಶಕ](https://open.cait518.cc/ios-app-guide/kn-IN/gmoneylite.html) | [App Store ನಲ್ಲಿ G+Money Lite: ಪ್ರಯಾಣ ವೆಚ್ಚ ಪಡೆಯಿರಿ](https://apps.apple.com/in/app/id6793436548?pt=118326163&ct=geo_pick&mt=8) |
+| **GBAGo: ದೃಶ್ಯ ಸೇವ್‌ಗಳು** | GBAGo: ದೃಶ್ಯ ಸೇವ್‌ಗಳು — ರಿಕವರಿ ಮ್ಯಾಪ್ · ಸ್ನ್ಯಾಪ್‌ಶಾಟ್ \| iOS App | Lumi Studio ರಚಿಸಿದ ಮೂರು ಮೂಲ ಡೆಮೊ ಕಾರ್ಟ್ರಿಡ್ಜ್‌ಗಳನ್ನು ಹೊರತುಪಡಿಸಿ, GBAGo ಯಾವುದೇ ಆಟ ಅಥವಾ ವಿಷಯ ಕ್ಯಾಟಲಾಗ್ ಒಳಗೊಂಡಿಲ್ಲ. Files ಮೂಲಕ ನೀವು ಸ್ವತಃ ರಚಿಸಿದ ಅಥವಾ | ಪಾವತಿಸಿದ ಡೌನ್‌ಲೋಡ್ | [ಮಾರ್ಗದರ್ಶಕ](https://open.cait518.cc/ios-app-guide/kn-IN/gbago.html) | [App Store ನಲ್ಲಿ GBAGo: ದೃಶ್ಯ ಸೇವ್‌ಗಳು ಪಡೆಯಿರಿ](https://apps.apple.com/in/app/id6804564400?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag Lite: ಬೆಲೆ ಗಂಟೆಗಳಲ್ಲಿ** | HoursTag Lite: ಬೆಲೆ ಗಂಟೆಗಳಲ್ಲಿ — ಜಾಗೃತ ಖರೀದಿ: ನಿಜವಾದ ಬೆಲೆ \| iOS App | HoursTag Lite - ವಸ್ತುಗಳ ನಿಜವಾದ ಬೆಲೆಯನ್ನು ನೋಡಿ | ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ · ಒಂದೇ ಖರೀದಿಯಲ್ಲಿ ಅನ್‌ಲಾಕ್ | [ಮಾರ್ಗದರ್ಶಕ](https://open.cait518.cc/ios-app-guide/kn-IN/hourstaglite.html) | [App Store ನಲ್ಲಿ HoursTag Lite: ಬೆಲೆ ಗಂಟೆಗಳಲ್ಲಿ ಪಡೆಯಿರಿ](https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag: ಖರೀದಿ ಸಮಯ** | HoursTag: ಖರೀದಿ ಸಮಯ — ಗಂಟೆ ಸಂಬಳ ಮತ್ತು ಖರ್ಚು \| iOS App | ನಿಜವಾದ ಬೆಲೆ ಏನು? ಡಾಲರ್‌ನಲ್ಲಿ ಅಲ್ಲ — ನಿಮ್ಮ ಜೀವನದ ಗಂಟೆಗಳಲ್ಲಿ. | ಪಾವತಿಸಿದ ಡೌನ್‌ಲೋಡ್ | [ಮಾರ್ಗದರ್ಶಕ](https://open.cait518.cc/ios-app-guide/kn-IN/hourstag.html) | [App Store ನಲ್ಲಿ HoursTag: ಖರೀದಿ ಸಮಯ ಪಡೆಯಿರಿ](https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=geo_pick&mt=8) |
 | **LED Moving Text** | LED Moving Text — ಪರದೆಯಲ್ಲಿ ಚಲಿಸುವ ಬೆಳಕಿನ ಫಲಕ \| iOS App | ಒಂದು ಸಾಲು ಟೈಪ್ ಮಾಡಿ ಐಫೋನ್ ಎತ್ತಿ ಹಿಡಿಯಿರಿ. ಗುಂಪಿನ ಹಿಂದಿನಿಂದ, ಆಗಮನ ಸಭಾಂಗಣದ ಆಚೆ ತುದಿಯಿಂದ ಅಥವಾ ಕೌಂಟರ್ ಮೇಲಿಂದ ಒಂದೇ ನೋಟದಲ್ಲಿ ಓದಬಹುದು. | ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ · ಒಂದೇ ಖರೀದಿಯಲ್ಲಿ ಅನ್‌ಲಾಕ್ | [ಮಾರ್ಗದರ್ಶಕ](https://open.cait518.cc/ios-app-guide/kn-IN/ledmovingtext.html) | [App Store ನಲ್ಲಿ LED Moving Text ಪಡೆಯಿರಿ](https://apps.apple.com/in/app/id6806639602?pt=118326163&ct=geo_pick&mt=8) |
@@ -146,7 +147,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## ಪೂರ್ಣ ಡೇಟಾಸೆಟ್ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ
 
-JSON, JSONL ಮತ್ತು CSV ಒಂದೇ 2,700 ದಾಖಲೆಗಳನ್ನು ಹೊಂದಿವೆ.
+JSON, JSONL ಮತ್ತು CSV ಒಂದೇ 2,750 ದಾಖಲೆಗಳನ್ನು ಹೊಂದಿವೆ.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -154,6 +155,6 @@ JSON, JSONL ಮತ್ತು CSV ಒಂದೇ 2,700 ದಾಖಲೆಗಳನ್�
 
 [ಮುಖಪುಟ](https://open.cait518.cc/ios-app-guide/kn-IN/index.html) · [ತೆರೆದ ಡೇಟಾ](https://open.cait518.cc/ios-app-guide/kn-IN/data/lumi-studio-publisher-search-intent-catalog.html) · [ಲೈಸೆನ್ಸ್](https://creativecommons.org/licenses/by/4.0/)
 
-ನವೀಕರಿಸಲಾಗಿದೆ: 2026-10-21
+ನವೀಕರಿಸಲಾಗಿದೆ: 2026-10-23
 
 CC BY 4.0 ಮೂಲ ಕ್ಯಾಟಲೋಗ್ ಸಂಗ್ರಹಣೆಗೆ ಅನ್ವಯಿಸುತ್ತದೆ; ಆ್ಯಪ್ ಹೆಸರುಗಳು ಮತ್ತು App Store ಗುರುತುಗಳು ಅವರ ಮಾಲೀಕರಿಗೆ ಸೇರಿವೆ.

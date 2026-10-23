@@ -2,7 +2,7 @@
 title: "広告もサブスクもないiPhoneカウントダウンウィジェットアプリ"
 lang: "ja"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/countdaysnow/decision/l/ja/index.html"
-modified: "2026-10-21"
+modified: "2026-10-23"
 app_store_id: "6807079789"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

@@ -4,7 +4,7 @@
 
 O listă de primă parte a destinatarilor fiecărei aplicații, a sarcinii pe care încearcă să o îndeplinească și a traseului direct către App Store.
 
-Intenții de căutare redactate de editori pentru 54 de aplicații iOS verificate și active și 50 de regiuni Apple.
+Intenții de căutare redactate de editori pentru 55 de aplicații iOS verificate și active și 50 de regiuni Apple.
 
 **Localizare:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · **ro** · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -103,6 +103,7 @@ Alfabetic după numele aplicației — niciodată un clasament.
 | **EasyAM: Ceas deșteptător** | EasyAM: Ceas deșteptător — Alarma care tace de sărbători \| iOS App | Mâine dimineață trebuie să sune alarma sau nu? EasyAM decide în locul tău, zi de zi: sună în zilele lucrătoare, tace de sărbători și în zilele tale libere | Început gratuit · deblocare cu o singură achiziție | [Ghid](https://open.cait518.cc/ios-app-guide/ro/easyam.html) | [Descarcă EasyAM: Ceas deșteptător din App Store](https://apps.apple.com/ro/app/id6821790092?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money** | cea mai bună aplicație de urmărire buget de călătorie fără abonament pentru iPhone | Într-o călătorie ai nevoie de un tracker de buget care să funcționeze offline într-o țară fără date, să gestioneze mai multe valute și să nu ceară cont — organizat pe călătorii ca fiecare vacanță să fie separată. Exact acest gol vrea să îl acopere G+Money. | Descărcare plătită | [Ghid](https://open.cait518.cc/ios-app-guide/ro/answers/best-travel-budget-tracker-app-no-subscription-iphone.html) | [Obține G+Money din App Store →](https://apps.apple.com/ro/app/id6755782939?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money Lite: Bani de vacanță** | G+Money Lite: Bani de vacanță — Buget zilnic pe ceas și widget \| iOS App | G+Money Lite — Converter de valută și tracker de cheltuieli inteligent pentru călătorii | Început gratuit · deblocare cu o singură achiziție | [Ghid](https://open.cait518.cc/ios-app-guide/ro/gmoneylite.html) | [Descarcă G+Money Lite: Bani de vacanță din App Store](https://apps.apple.com/ro/app/id6793436548?pt=118326163&ct=geo_pick&mt=8) |
+| **GBAGo: Salvări vizuale** | GBAGo: Salvări vizuale — Recuperare · Instantanee \| iOS App | Cu excepția a trei cartușe demo originale create de Lumi Studio, GBAGo nu include jocuri și niciun catalog de conținut. Din Fișiere, importă doar fișiere | Descărcare plătită | [Ghid](https://open.cait518.cc/ios-app-guide/ro/gbago.html) | [Descarcă GBAGo: Salvări vizuale din App Store](https://apps.apple.com/ro/app/id6804564400?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag Lite: Preț în ore** | HoursTag Lite: Preț în ore — Cumpărare conștientă: preț \| iOS App | HoursTag Lite - Vezi adevărata valoare a lucrurilor | Început gratuit · deblocare cu o singură achiziție | [Ghid](https://open.cait518.cc/ios-app-guide/ro/hourstaglite.html) | [Descarcă HoursTag Lite: Preț în ore din App Store](https://apps.apple.com/ro/app/id6794039979?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag: Ore pentru cumpărat** | HoursTag: Ore pentru cumpărat — Salariu orar și cheltuieli \| iOS App | Cât costă cu adevărat? Nu în lei, ci în ore din viața ta. | Descărcare plătită | [Ghid](https://open.cait518.cc/ios-app-guide/ro/hourstag.html) | [Descarcă HoursTag: Ore pentru cumpărat din App Store](https://apps.apple.com/ro/app/id6754218117?pt=118326163&ct=geo_pick&mt=8) |
 | **LED Moving Text** | LED Moving Text — Text luminos care se mișcă \| iOS App | Scrie o frază și ridică iPhone-ul. De pe ultimul rând, din capătul celălalt al sălii de sosiri sau peste tejghea, se citește dintr-o singură privire. | Început gratuit · deblocare cu o singură achiziție | [Ghid](https://open.cait518.cc/ios-app-guide/ro/ledmovingtext.html) | [Descarcă LED Moving Text din App Store](https://apps.apple.com/ro/app/id6806639602?pt=118326163&ct=geo_pick&mt=8) |
@@ -146,7 +147,7 @@ Alfabetic după numele aplicației — niciodată un clasament.
 
 ## Descarcă setul complet de date
 
-JSON, JSONL și CSV conțin aceleași 2.700 de înregistrări.
+JSON, JSONL și CSV conțin aceleași 2.750 de înregistrări.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -154,6 +155,6 @@ JSON, JSONL și CSV conțin aceleași 2.700 de înregistrări.
 
 [Acasă](https://open.cait518.cc/ios-app-guide/ro/index.html) · [Date deschise](https://open.cait518.cc/ios-app-guide/ro/data/lumi-studio-publisher-search-intent-catalog.html) · [Licență](https://creativecommons.org/licenses/by/4.0/)
 
-Actualizat: 2026-10-21
+Actualizat: 2026-10-23
 
 CC BY 4.0 se aplică compilației originale a catalogului; numele aplicațiilor și mărcile App Store aparțin proprietarilor lor.

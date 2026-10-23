@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:rs="http://www.openarchives.org/rs/terms/">
   <rs:ln rel="describedby" href="https://open.cait518.cc/ios-app-guide/resourcesync/bopomofo-collection.jsonld" type="application/ld+json"/>
   <rs:ln rel="up" href="https://open.cait518.cc/ios-app-guide/resourcesync/capabilitylist.xml" type="application/xml"/>
-  <rs:md capability="resourcelist" at="2026-10-23T21:26:20Z"/>
+  <rs:md capability="resourcelist" at="2026-10-23T23:19:15Z"/>
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/</loc>
     <lastmod>2026-10-23</lastmod>
-    <rs:md hash="sha-256:476e08a3cb3951e087e36493f8b68d8e680ae7e5e63dae40bf0d801205763163" length="15168" type="text/html"/>
+    <rs:md hash="sha-256:b043a4adef9640610d896e376ed87808d15422eef20bdf4db5263f6387d08c87" length="15265" type="text/html"/>
   </url>
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/index.json</loc>
@@ -179,7 +179,7 @@
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo/</loc>
     <lastmod>2026-10-23</lastmod>
-    <rs:md hash="sha-256:ebbf674b59738474501241dc37bd810815ac8c962ece0f6d93500d9faf8d7cd1" length="15647" type="text/html"/>
+    <rs:md hash="sha-256:ae72e1159f361ea43006673841674f5779951afe6a49377c357a576d3fb6f276" length="15747" type="text/html"/>
   </url>
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo/symbols.csv</loc>
@@ -200,7 +200,7 @@
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-bagit/</loc>
     <lastmod>2026-10-23</lastmod>
-    <rs:md hash="sha-256:48a11c03b74254a1b1193fa76eabce6fee690ca9ece24ea456fd6992ade64fe4" length="12406" type="text/html"/>
+    <rs:md hash="sha-256:d83fa812e515ca456a408f2db633911b6be94023a0cddbaccbcd01fd61bbaef3" length="12524" type="text/html"/>
   </url>
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-bagit/metadata.jsonld</loc>
@@ -217,7 +217,7 @@
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-csvw/</loc>
     <lastmod>2026-10-23</lastmod>
-    <rs:md hash="sha-256:c2380dbfdfe2a3aa1fbdaec0a56e9e442db70ebd954f268959788bdfb2125230" length="18874" type="text/html"/>
+    <rs:md hash="sha-256:ea03357e76101f0353445e927dbda3f20e15a8c9d282a2a2723a558e73a9178c" length="18995" type="text/html"/>
   </url>
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-csvw/metadata.jsonld</loc>
@@ -282,7 +282,7 @@
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/</loc>
     <lastmod>2026-10-23</lastmod>
-    <rs:md hash="sha-256:12d568f7ec989c27345c938155701b5834fa41cb86176554d75fdafe9c5f2297" length="13403" type="text/html"/>
+    <rs:md hash="sha-256:bfc1fa7b1dee43d44e0a84139390f1a6fae3faa7bd369ae3fa725d5993899332" length="13337" type="text/html"/>
   </url>
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/metadata.jsonld</loc>
@@ -387,7 +387,7 @@
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/</loc>
     <lastmod>2026-10-23</lastmod>
-    <rs:md hash="sha-256:0a34a86ed3b8dd20def9d45198cce204a673250fc494df02d217921753fe8839" length="15482" type="text/html"/>
+    <rs:md hash="sha-256:d7112ca2f1357223d2f003695ce5b05e5bc452910139e0b0c999d8611366e797" length="15380" type="text/html"/>
   </url>
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/metadata.jsonld</loc>
@@ -432,7 +432,7 @@
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/</loc>
     <lastmod>2026-10-23</lastmod>
-    <rs:md hash="sha-256:d52a389f71ee473e97c214e70cb271aeb33b7a2658f38b18e79d25c94f992c08" length="21874" type="text/html"/>
+    <rs:md hash="sha-256:2767c6d338f900127af1e65af927227c8332208e91d52f90f3ab8d61942b782e" length="21651" type="text/html"/>
   </url>
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/metadata.jsonld</loc>
@@ -449,7 +449,7 @@
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ocfl/</loc>
     <lastmod>2026-10-23</lastmod>
-    <rs:md hash="sha-256:4904dd4027744d356daddfeb4c9827966e9984c38b6ae72631421f14e496e878" length="12864" type="text/html"/>
+    <rs:md hash="sha-256:89f86f5f1ccc9bd8215eb56a0f092ab4ea43fd4bf33edddaaabab86f65b23a99" length="12985" type="text/html"/>
   </url>
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ocfl/metadata.jsonld</loc>
@@ -518,7 +518,7 @@
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ro-crate/</loc>
     <lastmod>2026-09-05</lastmod>
-    <rs:md hash="sha-256:0def6fe1853ed3396517f819a2c1e20162aed7f4b62fd3787d174157b3165989" length="10694" type="text/html"/>
+    <rs:md hash="sha-256:06206da1f81b01780a35bb1e105df9797bdbecdc9724eb6570b49ef617294102" length="10754" type="text/html"/>
   </url>
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ro-crate/ro-crate-metadata.json</loc>
@@ -531,27 +531,27 @@
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html</loc>
     <lastmod>2026-10-23</lastmod>
-    <rs:md hash="sha-256:2df29959b1dda2d0a0fdd1f81d8d60a0df49105ae4fcd9652d99a7c386c78719" length="12573" type="text/html"/>
+    <rs:md hash="sha-256:69d8ce34537b31be10b0761bc9a3c79344a443d477e2d40d0e36cc2b54d95b8f" length="13139" type="text/html"/>
   </url>
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-epub-reference.html</loc>
     <lastmod>2026-10-23</lastmod>
-    <rs:md hash="sha-256:02c883efb350650a31683d06dbde65c8fbcb026aa70f2e69c7452a44980efad7" length="14502" type="text/html"/>
+    <rs:md hash="sha-256:b3631d9a03bbf6cbec2807b66a49c90bcf0fc5d9d91b5d9882d4dd7bda54543b" length="15200" type="text/html"/>
   </url>
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-iiif-presentation-3.html</loc>
     <lastmod>2026-10-23</lastmod>
-    <rs:md hash="sha-256:88b0f6409b388ea7fbe611a8aa73b476e85bd9c93f01a46556c95aa8527f4aa7" length="22876" type="text/html"/>
+    <rs:md hash="sha-256:2e0a34e35850211cf0a1ecf88d2a0c27c3c9e60ab77e6da0e71f88dffb3ed7b9" length="23601" type="text/html"/>
   </url>
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html</loc>
     <lastmod>2026-10-23</lastmod>
-    <rs:md hash="sha-256:4ff570709852d821b74941c999f5e3cda5cdf390f5766bc45a2354ea822ede51" length="13544" type="text/html"/>
+    <rs:md hash="sha-256:8029d5ebea18664dd211b1b7d54ffd5d60613b987dc8ffc7b71331ec734d882c" length="14212" type="text/html"/>
   </url>
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-lms-question-bank.html</loc>
     <lastmod>2026-10-23</lastmod>
-    <rs:md hash="sha-256:905ed69da944fc325184ea5fe0b4836f4824b0984185e9a9537f603acd59a720" length="15620" type="text/html"/>
+    <rs:md hash="sha-256:5b19acfb36a6a221d073a8739cd1a0f93a4df4237f51182a94c4862d7db9c878" length="16321" type="text/html"/>
   </url>
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld</loc>
@@ -568,7 +568,7 @@
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.html</loc>
     <lastmod>2026-10-23</lastmod>
-    <rs:md hash="sha-256:c57fd5b2847969acfba207ad3ab9070c02d4af9e53144304a4e0f026e3a50a69" length="28938" type="text/html"/>
+    <rs:md hash="sha-256:c044b3eea5a788778ee8d8585e3e9963f323f8f489db17ded93affa91dcd21df" length="29648" type="text/html"/>
   </url>
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.jsonl</loc>
@@ -577,7 +577,7 @@
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html</loc>
     <lastmod>2026-10-23</lastmod>
-    <rs:md hash="sha-256:08e1dd12bc4ed9d281e90f5c19e27034297d1bed4a626459e667fcd75307b094" length="15636" type="text/html"/>
+    <rs:md hash="sha-256:8792726b97fe5c3b6654dbaca1bd4f68109e124e3efa6fcccbda6fa040e8fd86" length="16147" type="text/html"/>
   </url>
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-resourcesync.html</loc>
@@ -587,7 +587,7 @@
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html</loc>
     <lastmod>2026-10-23</lastmod>
-    <rs:md hash="sha-256:8300c6846a32e7780aaf6639a8cb2b9109e59b11551255c341a514d8072cf469" length="24058" type="text/html"/>
+    <rs:md hash="sha-256:fc486f910a38768c836e9514d03333abd587566dd47b13b01b99db05c49953e1" length="24783" type="text/html"/>
   </url>
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld</loc>
@@ -611,7 +611,7 @@
   </url>
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo.html</loc>
-    <rs:md hash="sha-256:55198c01a318a4ea1c0d1e844efc526b2f9b9008456267b40d20a2d2475bf1fa" length="21939" type="text/html"/>
+    <rs:md hash="sha-256:bb8eab5ae00b45f19b03b5a1d4980a7060ee2bc0951b0e1e03d8ed1e27a705d0" length="22700" type="text/html"/>
   </url>
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo.json</loc>
@@ -875,11 +875,11 @@
   </url>
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/tools/zhuyin-bingo.html</loc>
-    <rs:md hash="sha-256:8f00cdf1f65cb93724010f421dc8f32d8649e9c9fd798227e0d4866fd897a2d4" length="27120" type="text/html"/>
+    <rs:md hash="sha-256:f5219ac2297a6bea4c57aed1cf1fa857126d5d923b3140186d3a206b041f6617" length="28648" type="text/html"/>
   </url>
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/tools/zhuyin-blending-card-generator.html</loc>
-    <rs:md hash="sha-256:f2b129a4582b78651c6cf900f5a848f040a6f63b0ae627fa7b6455b72a75156c" length="34007" type="text/html"/>
+    <rs:md hash="sha-256:75d026057d6b206cb88c1fcff9d70b258339ebf559a585a1188ab568923e7617" length="35046" type="text/html"/>
   </url>
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/tools/zhuyin-bopomofo-anki-deck-en.tsv</loc>
@@ -892,7 +892,7 @@
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/tools/zhuyin-bopomofo-anki-deck.html</loc>
     <lastmod>2026-10-23</lastmod>
-    <rs:md hash="sha-256:e13bb9325fe977df3965cb52c17384647117259a2cc043ce6e6cb60d04acb76d" length="18936" type="text/html"/>
+    <rs:md hash="sha-256:07dc401456e839a4dae9b212c1e6b30b6176bca11ab3914287741514b10067e4" length="20494" type="text/html"/>
   </url>
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/tools/zhuyin-bopomofo-anki-deck.metadata.json</loc>
@@ -900,131 +900,131 @@
   </url>
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/tools/zhuyin-bopomofo-chart.html</loc>
-    <rs:md hash="sha-256:924004590b0e82d197d9503daab0c3b079fc6e98e078465b9d10e3548d0cc10f" length="13278" type="text/html"/>
+    <rs:md hash="sha-256:c3b6a333df50205eac67bf8a23b163cc81bb88f1bd3bddccadae3a45f57b0d9e" length="13278" type="text/html"/>
   </url>
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/tools/zhuyin-decodable-mini-reader.html</loc>
-    <rs:md hash="sha-256:1cc05be22a8a3cf6de519bfd5b30e1ce8e6fd5d23c0fa2b782fbd837613ec79d" length="31935" type="text/html"/>
+    <rs:md hash="sha-256:53fdef04901562366ee00f455b9a55856edf43f6a04344fa32a666035896fdfe" length="32978" type="text/html"/>
   </url>
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/tools/zhuyin-family-picture-book-club-kit.html</loc>
-    <rs:md hash="sha-256:66a913843f4b68495bc39774d5c104ef6392f7d44dab695a525b33871c946d4e" length="24253" type="text/html"/>
+    <rs:md hash="sha-256:31a844a2ca91ca2696580532dbfaeea9024f0626ed8939db0c706873db7cd679" length="25316" type="text/html"/>
   </url>
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/tools/zhuyin-flashcards.html</loc>
-    <rs:md hash="sha-256:d0214338de5cb9900a71b22605a09f36851a103feb28a3ccc12ec8ee5a9d315e" length="31811" type="text/html"/>
+    <rs:md hash="sha-256:c080e52b6700189b3a16855f89786198bba099c3d85250a2adddf83eae29356f" length="33324" type="text/html"/>
   </url>
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/tools/zhuyin-grade1-14-day-summer-calendar.html</loc>
-    <rs:md hash="sha-256:70d214ffb785e5b169077ebca63970967abcc38483491f3dc65910ae8246b49d" length="39700" type="text/html"/>
+    <rs:md hash="sha-256:caf55b9261cf6a83e4e37ead29ea2719cd0f6ec8ec3ced89019492db20fab37b" length="40748" type="text/html"/>
   </url>
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/tools/zhuyin-grandparent-video-call-kit.html</loc>
-    <rs:md hash="sha-256:fcbf04a26022cf2551bcb03c8c3fe30b83534f7d2b05ad9766464672c3a85a7d" length="25019" type="text/html"/>
+    <rs:md hash="sha-256:206ca3c716256c44254e146db3ddcf0f6357872c8df40f052ef7c079fa46b97d" length="26076" type="text/html"/>
   </url>
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/tools/zhuyin-library-storytime-kit.html</loc>
-    <rs:md hash="sha-256:50ae869e049336de09ef2d6d01bd5b26a8d54813115be6a2d3dedd46e1aab613" length="22951" type="text/html"/>
+    <rs:md hash="sha-256:fb0b3c48f98269e88cb19f9190bbb9707b303a40851bc71988aabb5feab52d8c" length="24012" type="text/html"/>
   </url>
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/tools/zhuyin-parent-teacher-handoff-kit.html</loc>
-    <rs:md hash="sha-256:91c1f6c098367d990e651c7fd3ce227e3803fae62e66bc061ac9313fd210565b" length="23617" type="text/html"/>
+    <rs:md hash="sha-256:c94adcbe6c70040429a76bd78e33dec77acf5a3951696cb93a2571adff03771d" length="24682" type="text/html"/>
   </url>
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/tools/zhuyin-practice-sheet.html</loc>
-    <rs:md hash="sha-256:778ebbbb18f2f35e0a3532a3af3a112be581d8cac90e36a877758b6776cbf0b6" length="34874" type="text/html"/>
+    <rs:md hash="sha-256:59c797b64e6572dd2ad2e661d5ddb3bfe30f8b9797ed36a6717e96d03c76b5ef" length="36375" type="text/html"/>
   </url>
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/tools/zhuyin-readiness-check.html</loc>
-    <rs:md hash="sha-256:415bba412e08cb8673db58e8f0162e1a8a145faba071b1b8e3e3efe507cb013e" length="43400" type="text/html"/>
+    <rs:md hash="sha-256:d280edc4872cc0b716146895e75a00d88e8f69f9de124a37cff936c460f7b7ea" length="43907" type="text/html"/>
   </url>
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/tools/zhuyin-short-sentence-reading-cards.html</loc>
-    <rs:md hash="sha-256:b152c7fe287c94738f8cea305460808ce765fd6b1ac212ae922fb94133d6e03e" length="33238" type="text/html"/>
+    <rs:md hash="sha-256:e7df4438d9bf4ec5aaed4b5ed9772589e6163991cc7b0d0ef7e6c3f6d6dd9770" length="34271" type="text/html"/>
   </url>
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/tools/zhuyin-story-sequencing-cards.html</loc>
-    <rs:md hash="sha-256:8c2dd0ea2a560f8eaf3743917e57f3442945b449c11247f57105e3f1e56c98e4" length="34645" type="text/html"/>
+    <rs:md hash="sha-256:aa7fcfcab41854c3c1cbe78abe549332d141d877ea18d35b0de44e24bf4cdf78" length="35682" type="text/html"/>
   </url>
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/zh-Hant/api/v1/bopomofo-symbols/</loc>
     <lastmod>2026-10-23</lastmod>
-    <rs:md hash="sha-256:9b67b1f41a3a670675ba9c9c78715138a8fcd44f7675ec710e45e2b6b024d3bd" length="15109" type="text/html"/>
+    <rs:md hash="sha-256:68aaa6ecaedaac072177e0f12f9b77ec0d4067e48d0dd8d1b81b5584f13bf754" length="15191" type="text/html"/>
   </url>
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/zh-Hant/data/packages/zhuyin-bopomofo/</loc>
     <lastmod>2026-10-23</lastmod>
-    <rs:md hash="sha-256:3878fa949688c2bb6d51be50570aa230fc7654101de56f3bfcae8e4c871a1abf" length="15434" type="text/html"/>
+    <rs:md hash="sha-256:245d5c554b793f43339b0001e80da0a801ddab25ad040546f62e56113d5e6366" length="15519" type="text/html"/>
   </url>
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/zh-Hant/data/packages/zhuyin-bopomofo-bagit/</loc>
     <lastmod>2026-10-23</lastmod>
-    <rs:md hash="sha-256:cb09fc30f529b22e9202e3ea3647dd9caf05c4eeb036e175d77df4c092986b55" length="12264" type="text/html"/>
+    <rs:md hash="sha-256:6dc3c51703828110a087782c1d7febfa2b71eee17f655fe314f54320f143ebb6" length="12367" type="text/html"/>
   </url>
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/zh-Hant/data/packages/zhuyin-bopomofo-csvw/</loc>
     <lastmod>2026-10-23</lastmod>
-    <rs:md hash="sha-256:2dec917f2cc36313aa4ab56b752e6d029b85fd59e3c2f0211db5cf448eaac498" length="18593" type="text/html"/>
+    <rs:md hash="sha-256:49c3d89eddb7b4e1102745bfd2441ebbda3f372c3eb09bce25971a1d11651299" length="18699" type="text/html"/>
   </url>
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/zh-Hant/data/packages/zhuyin-bopomofo-ldes/</loc>
     <lastmod>2026-10-23</lastmod>
-    <rs:md hash="sha-256:9f08f50e595c7d63c3da2ddfc6441bd0ebbbcd06cada210a8d7894df7b48906c" length="13341" type="text/html"/>
+    <rs:md hash="sha-256:2a41de39cf66b389985d560b1468f3cdb114635b70671538f3f80df8f539ea31" length="13270" type="text/html"/>
   </url>
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/zh-Hant/data/packages/zhuyin-bopomofo-mets2-premis3/</loc>
     <lastmod>2026-10-23</lastmod>
-    <rs:md hash="sha-256:3c5bd7f48a50223fe3c8281bead6357c0d3b2ebf602518ebab1b948a12536ced" length="15400" type="text/html"/>
+    <rs:md hash="sha-256:3cfe42363258cb52f784a05afc6d0dbfd38a5bf7630e1c3932810c28c97e6c7a" length="15293" type="text/html"/>
   </url>
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/zh-Hant/data/packages/zhuyin-bopomofo-oai-ore/</loc>
     <lastmod>2026-10-23</lastmod>
-    <rs:md hash="sha-256:ef3febdd548c9a478b7df47168959a6f42b50703fe97d13579dce68178877352" length="21798" type="text/html"/>
+    <rs:md hash="sha-256:4141d31cbb056eec17dfee130376b4ccbd72db9b3fc4d101b6d60a9babd315c2" length="21570" type="text/html"/>
   </url>
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/zh-Hant/data/packages/zhuyin-bopomofo-ocfl/</loc>
     <lastmod>2026-10-23</lastmod>
-    <rs:md hash="sha-256:618df3def620800e5f74bb4902caaf6a7259f13ea802d8f6365b315e04bf9abd" length="12711" type="text/html"/>
+    <rs:md hash="sha-256:a54cf7fa8f56c1a678e49e11d3ff748d3308082cac8db7c05c635bfeed57ffd8" length="12817" type="text/html"/>
   </url>
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/zh-Hant/data/packages/zhuyin-bopomofo-ro-crate/</loc>
     <lastmod>2026-09-05</lastmod>
-    <rs:md hash="sha-256:194ac34ba0b4a54ac428aa9c944a8ac78393eb42edca194fd1dde0821a413855" length="10538" type="text/html"/>
+    <rs:md hash="sha-256:75b5d1fa90346843cf85ac55727f955c4bb326e65043594e0a94f0fc59a719c9" length="10593" type="text/html"/>
   </url>
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/zh-Hant/data/zhuyin-bopomofo-dcat3-open-data-catalog.html</loc>
     <lastmod>2026-10-23</lastmod>
-    <rs:md hash="sha-256:feb10bc597d42f3414b4e03adee5d2a3900a96eca8e116b913aa444a7c604fce" length="11864" type="text/html"/>
+    <rs:md hash="sha-256:76a20e0170be60d1fbd957024c742a9ddc0977ae7179b416b3315be268753680" length="12423" type="text/html"/>
   </url>
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/zh-Hant/data/zhuyin-bopomofo-epub-reference.html</loc>
     <lastmod>2026-10-23</lastmod>
-    <rs:md hash="sha-256:7b1890c91fae8fa7ee8d1b6e7fdeca0b8081a133579adbfcb932afcf82005be1" length="13911" type="text/html"/>
+    <rs:md hash="sha-256:2543f771e0f03b3d0ac54d6a941591cbca44bec4bcd1bbe6f995ee088cb07852" length="14602" type="text/html"/>
   </url>
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/zh-Hant/data/zhuyin-bopomofo-iiif-presentation-3.html</loc>
     <lastmod>2026-10-23</lastmod>
-    <rs:md hash="sha-256:2fdb18d90fb4e314f7ee39aa28cb2caa6ffd1c614d2fdb93a50d8a027c6f39f5" length="22561" type="text/html"/>
+    <rs:md hash="sha-256:74b0f0b7adea2ced7159fceccc3bf52128714fc453b43d82943e269e936fefab" length="23279" type="text/html"/>
   </url>
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/zh-Hant/data/zhuyin-bopomofo-library-catalog-records.html</loc>
     <lastmod>2026-10-23</lastmod>
-    <rs:md hash="sha-256:147d9ec3c82d2b1f1516f06b00b6c904138f968854d1db2d8cb4376b80e266f0" length="13000" type="text/html"/>
+    <rs:md hash="sha-256:017d134f65980b9768744eede2305059f5eeea392d249c42cb2db338d9f52af5" length="13676" type="text/html"/>
   </url>
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/zh-Hant/data/zhuyin-bopomofo-lms-question-bank.html</loc>
     <lastmod>2026-10-23</lastmod>
-    <rs:md hash="sha-256:f41f3ff8f6ca49bab2c4ffd16db5e350036a5def88694efe1484a8fa19a152a1" length="14690" type="text/html"/>
+    <rs:md hash="sha-256:05fc4364fa85c03aefc1b4bde42f202deb38b43dbcb3a3a035dd92a8070a367a" length="15384" type="text/html"/>
   </url>
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/zh-Hant/data/zhuyin-bopomofo-ml-dataset.html</loc>
     <lastmod>2026-10-23</lastmod>
-    <rs:md hash="sha-256:c635a816d6f8560a86ecdf3dcada9595820bec912511fe877306c0b366f7b1e1" length="28095" type="text/html"/>
+    <rs:md hash="sha-256:ede849163a7e75921a545c40572496299f7852eba9250da72bd291aada1abbf4" length="28798" type="text/html"/>
   </url>
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/zh-Hant/data/zhuyin-bopomofo-oer-repository-metadata.html</loc>
     <lastmod>2026-10-23</lastmod>
-    <rs:md hash="sha-256:207f5fd803f48ef65c169c024c51dc53df302485bc2e339e413e834e4cb2533a" length="14957" type="text/html"/>
+    <rs:md hash="sha-256:a359b3650d18e1f10871ae1abbaee73385b5ac34829307d349979bb3920967e4" length="15470" type="text/html"/>
   </url>
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/zh-Hant/data/zhuyin-bopomofo-resourcesync.html</loc>
@@ -1034,63 +1034,63 @@
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/zh-Hant/data/zhuyin-bopomofo-vocabulary.html</loc>
     <lastmod>2026-10-23</lastmod>
-    <rs:md hash="sha-256:08649bda571057a12a520bec75622512c816c904e13648b2d08e906956327e11" length="23135" type="text/html"/>
+    <rs:md hash="sha-256:a6cea7abf33b55bc98234796ee6400f79d93953d30d852de37d6f518d664e279" length="23853" type="text/html"/>
   </url>
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/zh-Hant/tools/zhuyin-bingo.html</loc>
-    <rs:md hash="sha-256:8ae2896c9d359de047710cb72be3ea66eb95af9abec937837723fae9e1c6fab1" length="26819" type="text/html"/>
+    <rs:md hash="sha-256:2bb255a6dd09ca01d5270d97e4e9a12d883766ccdf041020025a15204c6793c4" length="28321" type="text/html"/>
   </url>
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/zh-Hant/tools/zhuyin-blending-card-generator.html</loc>
-    <rs:md hash="sha-256:be46dc11f224d9a5e751096188a3f093104f104f382796ace2828921463a7f80" length="33768" type="text/html"/>
+    <rs:md hash="sha-256:2d02145d59b53bb3fb0b29763bf4a3569aa994122c0681902c5c4cefed468eb8" length="34781" type="text/html"/>
   </url>
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/zh-Hant/tools/zhuyin-bopomofo-anki-deck.html</loc>
     <lastmod>2026-10-23</lastmod>
-    <rs:md hash="sha-256:257cd88122e7105584d2b262beb9cbe5139277fca281b6c6920150d98114e935" length="18935" type="text/html"/>
+    <rs:md hash="sha-256:056d9e8954af460dd345e98de981c936ab198743b6fbadc090dafd2374148d74" length="20467" type="text/html"/>
   </url>
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/zh-Hant/tools/zhuyin-decodable-mini-reader.html</loc>
-    <rs:md hash="sha-256:01189a324bb66cf7ad0627427d790ad568ef23346d0b564fbdbfeb2cf0922826" length="31231" type="text/html"/>
+    <rs:md hash="sha-256:11185d7a1b1f93b1bac24473df5d8e5eab7ee62f610845666ee66d3d5dc40ef1" length="32253" type="text/html"/>
   </url>
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/zh-Hant/tools/zhuyin-family-picture-book-club-kit.html</loc>
-    <rs:md hash="sha-256:b02b46f487e2a3685aceafd1f29302782069d6af5b53690322eb605953a46741" length="23172" type="text/html"/>
+    <rs:md hash="sha-256:22406bb71fccebc06964a14f1ebe744afc039c6c2cc5ed29df6eec323883ce46" length="24214" type="text/html"/>
   </url>
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/zh-Hant/tools/zhuyin-flashcards.html</loc>
-    <rs:md hash="sha-256:ee43e0190f2ae790633cd0d1ea7e2a0c1349516a6d4e3d4f1f204389ecbb7f7e" length="31524" type="text/html"/>
+    <rs:md hash="sha-256:fa05059c4ecf4d2c8a0a8ef6518966ca91734b7c644ebdf046a1e8a325de5c8e" length="33014" type="text/html"/>
   </url>
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/zh-Hant/tools/zhuyin-grade1-14-day-summer-calendar.html</loc>
-    <rs:md hash="sha-256:0fd54a92a26edcded417f3b434e2e19731749f4429660109694a1f7d6869b925" length="38705" type="text/html"/>
+    <rs:md hash="sha-256:179c838f928a3e14354b2adebe466dacf74019e0b385afab34919beb00338acc" length="39727" type="text/html"/>
   </url>
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/zh-Hant/tools/zhuyin-grandparent-video-call-kit.html</loc>
-    <rs:md hash="sha-256:95f28dcaa8433e4054daa5382fb5e1fba3125d204b71feae916352df9482e3bd" length="24097" type="text/html"/>
+    <rs:md hash="sha-256:10ab324e0cd25567fe64b8a7ddef70fe9e4d2598e3ebbef9b2b15409f56c1358" length="25133" type="text/html"/>
   </url>
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/zh-Hant/tools/zhuyin-library-storytime-kit.html</loc>
-    <rs:md hash="sha-256:959105ccb1dd33ab34262ce7c5d24d1f315866c227e43d26e255bba576a8645c" length="22120" type="text/html"/>
+    <rs:md hash="sha-256:686e2e01b28b08de4811cd51d2b400506f39fed7c72c08cd0bb9a201049ef519" length="23160" type="text/html"/>
   </url>
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/zh-Hant/tools/zhuyin-parent-teacher-handoff-kit.html</loc>
-    <rs:md hash="sha-256:106431ab62077861691b4f159ea721a008b7a313c170b19c02f66e9f4b0320ab" length="22840" type="text/html"/>
+    <rs:md hash="sha-256:3595daaddb4d09571ee35ed43a8d8189191f230f7e069faa13464154f318a708" length="23884" type="text/html"/>
   </url>
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/zh-Hant/tools/zhuyin-practice-sheet.html</loc>
-    <rs:md hash="sha-256:b7e1966f7158461fdb5c949c87e31a1d99690d3b66ffe29311a56e546b05be07" length="34631" type="text/html"/>
+    <rs:md hash="sha-256:a4a2eedb1332915024081ec2e6142c38ee6edb62d62be2741e6a4cf11997a032" length="36121" type="text/html"/>
   </url>
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/zh-Hant/tools/zhuyin-readiness-check.html</loc>
-    <rs:md hash="sha-256:07cc18067c9880cb443682d5a055996261e24d25fdf1a34b87c24eceb9c87308" length="42365" type="text/html"/>
+    <rs:md hash="sha-256:0991cb38318432e40c54bdcbbc160c901bed09366cae57be776fa15f5343309f" length="42846" type="text/html"/>
   </url>
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/zh-Hant/tools/zhuyin-short-sentence-reading-cards.html</loc>
-    <rs:md hash="sha-256:8c0fdf71e02b5c38265d2061cbba534bdf22ad1ae09b853dabe95de955892e4b" length="32253" type="text/html"/>
+    <rs:md hash="sha-256:ba53fe8a3fef0f7d878cd1cca17c83a9a1e5382670445c6bf589dd8477e5defc" length="33275" type="text/html"/>
   </url>
   <url>
     <loc>https://open.cait518.cc/ios-app-guide/zh-Hant/tools/zhuyin-story-sequencing-cards.html</loc>
-    <rs:md hash="sha-256:ce160d93591a853f2e3976906b5bf717b272059e452b4b29cc3f533686745aa0" length="33948" type="text/html"/>
+    <rs:md hash="sha-256:760b7f96ddfdfc1002f34551f28ca30e64a435bdabaafbe4a861e38c9691e6cf" length="34970" type="text/html"/>
   </url>
 </urlset>

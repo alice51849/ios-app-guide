@@ -48,6 +48,13 @@ class ShapeAndLadderTests(unittest.TestCase):
         self.assertEqual("ln_mochi_all_ww_gw", gw.campaign("mochi", "alt", "de", PLAN))
         self.assertEqual("ln_scanto_all_ww_gw", gw.campaign("scanto", "sr", "us", PLAN))
 
+    def test_long_key_uses_short_code_and_parses_back_to_the_roster_key(self):
+        value = gw.token("duowallpaperstudio", "alt", "ww")
+        self.assertEqual("ln_duowallpaper_alt_ww_gw", value)
+        self.assertEqual("duowallpaperstudio", gw.parse(value)["app"])
+        self.assertEqual([], gw.link_problems(value, app_key="duowallpaperstudio", storefront="us"))
+        self.assertTrue(gw.link_problems(value, app_key="mochi", storefront="us"))
+
     def test_longest_roster_key_fits_the_30_character_limit_without_a_date(self):
         from live_app_manifest import canonical_manifest
 

@@ -1,8 +1,8 @@
 {
   "schema": "lumi.live-app-roster/v1",
   "version": 1,
-  "revision": 13,
-  "roster_digest": "00c46815f543ccb76fc3bf469e34590e99118f602bafbc85d63c8d2eec517911",
+  "revision": 14,
+  "roster_digest": "589537afbd619ab8144add3b9c3a344956d29f015950552835f7eeb1a09fdb56",
   "apps": {
     "aibriefpack": {
       "app_id": "6791658210",
@@ -47,6 +47,10 @@
     "dbhalo": {
       "app_id": "6806826699",
       "name": "dB Halo"
+    },
+    "duowallpaperstudio": {
+      "app_id": "6824946559",
+      "name": "Foldable Wallpaper Studio"
     },
     "easyam": {
       "app_id": "6821790092",

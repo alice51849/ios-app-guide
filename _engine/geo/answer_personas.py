@@ -4729,7 +4729,9 @@ PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
             ],
         },
     ],
-    # Duo Wallpaper Studio (iOS, ASC 6824946559, bundle tail "duowallpaperstudio").
+    # Foldable Wallpaper Studio (iOS, ASC 6824946559, bundle tail "duowallpaperstudio";
+    # renamed before launch for App Review 5.2.5, so "Duo" is never used as the brand:
+    # "iPhone Duo" only describes device fit and "Duo Pro" is the in-app purchase name).
     # Claims are held to the shipped 1.0 scope: paired Cover + Inner wallpapers cut from
     # one original artwork, pixel-exact export, photo pairs, five widgets, no Live or
     # animated wallpaper, no 4K claim, no automatic wallpaper changing, one-time purchase.
@@ -4783,7 +4785,7 @@ PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
                 "Follow the setup guide to set the cover image on the cover screen and the inner image on the inner screen.",
                 "Fold and unfold the phone once to check that the two pictures belong together.",
             ],
-            "fits": "fits foldable and dual-screen phone owners who want wallpapers composed for both screens instead of one picture cropped twice. Duo Wallpaper Studio is designed for iPhone Duo and also previews on any iPhone or iPad running iOS 17 or later. The download is free with five sets ready to use and a small watermark on saved images; a single one-time in-app purchase called Duo Pro unlocks the remaining launch sets and removes the watermark, with no subscription.",
+            "fits": "fits foldable and dual-screen phone owners who want wallpapers composed for both screens instead of one picture cropped twice. Foldable Wallpaper Studio is designed for iPhone Duo and also previews on any iPhone or iPad running iOS 17 or later. The download is free with five sets ready to use and a small watermark on saved images; a single one-time in-app purchase called Duo Pro unlocks the remaining launch sets and removes the watermark, with no subscription.",
             "faq": [
                 {
                     "q": "Is it a pair for each wallpaper?",

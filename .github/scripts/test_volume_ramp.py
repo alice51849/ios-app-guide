@@ -198,7 +198,9 @@ class ErrorTest(unittest.TestCase):
         self.assertIn("run", calls[1][2]["body"])
         self.assertEqual(R.notify(event, "o/r", "t", gh=gh), "u7")
         self.assertEqual(calls[-1][1], "/repos/o/r/issues/7/comments")
-        self.assertIsNone(R.notify(event, "", "", gh=gh))  # local run: nothing to notify
+        # local run: nothing to notify. CI 的 GITHUB_TOKEN／GITHUB_REPOSITORY 會被 notify 當後備讀到，這裡清掉才是真的「本機」。
+        with mock.patch.dict("os.environ", {"GITHUB_TOKEN": "", "GITHUB_REPOSITORY": ""}):
+            self.assertIsNone(R.notify(event, "", "", gh=gh))
 
 
 if __name__ == "__main__":

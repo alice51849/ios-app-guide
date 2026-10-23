@@ -3011,6 +3011,112 @@ class StandardSitePublisherTests(ProjectScratchCase):
         contract = json.loads(contract_path.read_text(encoding="utf-8"))
         self.assertEqual(1, len(contract["documents"]))
 
+    def test_document_record_carries_leaflet_renderable_content(self) -> None:
+        manifest = fixture_manifest({"alpha": 1})
+        document = manifest["documents"][0]
+        record = publisher.document_record(
+            document,
+            "at://did:plc:test/site.standard.publication/3mrocqbkyt6mg",
+            {"published_at": "2026-07-28T00:00:00.000Z"},
+        )
+        self.assertEqual(document["text_content"], record["textContent"])
+        content = record["content"]
+        self.assertEqual("pub.leaflet.content", content["$type"])
+        self.assertEqual(1, len(content["pages"]))
+        page = content["pages"][0]
+        self.assertEqual("pub.leaflet.pages.linearDocument", page["$type"])
+        lines = [
+            line.strip()
+            for line in document["text_content"].splitlines()
+            if line.strip()
+        ]
+        blocks = [item["block"] for item in page["blocks"]]
+        self.assertEqual(lines, [block["plaintext"] for block in blocks])
+        for item in page["blocks"]:
+            self.assertEqual(
+                "pub.leaflet.pages.linearDocument#block", item["$type"]
+            )
+            self.assertEqual("pub.leaflet.blocks.text", item["block"]["$type"])
+        links = [
+            feature["uri"]
+            for block in blocks
+            for facet in block.get("facets", [])
+            for feature in facet["features"]
+        ]
+        self.assertIn(document["primary_app_store_url"], links)
+        self.assertIn("ct=standard_site", document["primary_app_store_url"])
+
+    def test_leaflet_link_facets_use_utf8_byte_offsets(self) -> None:
+        url = (
+            "https://apps.apple.com/app/id123?"
+            f"{attribution.PRIMARY_QUERY}"
+        )
+        content = publisher.leaflet_content(f"下載：{url}。\n\n第二段")
+        blocks = [item["block"] for item in content["pages"][0]["blocks"]]
+        self.assertEqual(2, len(blocks))
+        first = blocks[0]
+        facet = first["facets"][0]
+        raw = first["plaintext"].encode("utf-8")
+        index = facet["index"]
+        self.assertEqual(
+            url, raw[index["byteStart"]:index["byteEnd"]].decode("utf-8")
+        )
+        self.assertEqual(url, facet["features"][0]["uri"])
+        self.assertEqual(
+            "pub.leaflet.richtext.facet#link", facet["features"][0]["$type"]
+        )
+        self.assertNotIn("facets", blocks[1])
+        with self.assertRaises(publisher.PublishError):
+            publisher.leaflet_content(" \n\n ")
+
+    def test_text_only_remote_record_is_backfilled_with_leaflet_content(
+        self,
+    ) -> None:
+        state_path, contract_path, well_known_path = self.paths()
+        client = FakeRepoClient(self.DID)
+        manifest = fixture_manifest({"alpha": 1})
+        common = dict(
+            state_path=state_path,
+            contract_path=contract_path,
+            well_known_path=well_known_path,
+            limit=1,
+            publish=True,
+            environment=self.ENV,
+            client_factory=lambda _handle, _password: client,
+            expected_did=self.DID,
+        )
+        publisher.run(
+            manifest,
+            tid_generator=self.deterministic_tids(),
+            now=self.NOW,
+            **common,
+        )
+        state = json.loads(state_path.read_text(encoding="utf-8"))
+        canonical = manifest["documents"][0]["canonical_url"]
+        rkey = state["documents"][canonical]["rkey"]
+        key = (publisher.DOCUMENT_COLLECTION, rkey)
+        # Simulate a record written before Leaflet content existed.
+        client.records[key]["value"].pop("content")
+        puts_before = len(client.puts)
+
+        result = publisher.run(
+            manifest,
+            tid_generator=self.deterministic_tids(),
+            now=datetime(2026, 7, 28, 14, tzinfo=timezone.utc),
+            **common,
+        )
+
+        self.assertEqual(puts_before + 1, len(client.puts))
+        self.assertEqual(1, result["documents_changed"])
+        self.assertEqual(rkey, client.puts[-1][1])
+        written = client.puts[-1][2]
+        self.assertEqual("pub.leaflet.content", written["content"]["$type"])
+        self.assertEqual(
+            manifest["documents"][0]["text_content"], written["textContent"]
+        )
+        state = json.loads(state_path.read_text(encoding="utf-8"))
+        self.assertIs(True, state["documents"][canonical]["published"])
+
     def test_deleted_remote_document_is_recreated_on_the_same_rkey(self) -> None:
         state_path, contract_path, well_known_path = self.paths()
         client = FakeRepoClient(self.DID)

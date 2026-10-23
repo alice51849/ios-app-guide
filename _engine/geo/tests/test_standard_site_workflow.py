@@ -52,10 +52,10 @@ MIRROR_SHA256 = {
         "6f5bc16db73d0d895b660ecb0d68d56db488cae4bed79b3ed444f879a2abba58"
     ),
     "_engine/social/standard_site_publish.py": (
-        "aa60fddd59f875149398dc989c20a967628fca79f9ba817e37149ed7a7a1a252"
+        "04e549f03c3629e63fc4b58ed89a90a91b4a4a131c8cdf0cea3b32beb762d2ec"
     ),
     "_engine/social/tests/test_standard_site.py": (
-        "0ac50883d75ecb7639f7b1bea6baaac77e8fc5f0a55e448e7117b43ebceea029"
+        "a58edb92230ce9dd696877164b5616f943ec185767123b39baa394747d37a3df"
     ),
 }
 

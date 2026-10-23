@@ -715,13 +715,21 @@ def _link_facets(line: str) -> list[dict[str, object]]:
     return facets
 
 
-def leaflet_content(text: str) -> dict[str, object]:
+def leaflet_content(
+    text: str, canonical_url: str | None = None
+) -> dict[str, object]:
     """Render plain text as a Leaflet ``pub.leaflet.content`` linear page.
 
     Leaflet's ``/p/<did>/<rkey>`` renderer only reads ``content.pages``;
     ``textContent`` alone indexes but 404s. Every non-empty line becomes one
     text block (verbatim, so the attributed App Store URL is preserved) and
     every https URL gets a clickable link facet with UTF-8 byte offsets.
+
+    When ``canonical_url`` is given and the text does not already link it, a
+    final block links the canonical guide page. Leaflet's feeds render
+    content-backed documents from these blocks only (the "View this post on
+    the web" canonical link is emitted solely for textContent-only records),
+    so without this block feed items lose their outbound canonical link.
     """
     blocks: list[dict[str, object]] = []
     for raw_line in str(text).splitlines():
@@ -738,6 +746,31 @@ def leaflet_content(text: str) -> dict[str, object]:
         blocks.append({"$type": LEAFLET_LINEAR_BLOCK, "block": block})
     if not blocks:
         raise PublishError("Standard.site document has no renderable text")
+    if canonical_url is not None:
+        canonical = str(canonical_url)
+        if (
+            not canonical.startswith("https://")
+            or _LINK_RE.fullmatch(canonical) is None
+            or canonical != canonical.rstrip(_LINK_TRAILING_PROSE)
+        ):
+            raise PublishError(
+                f"Standard.site canonical URL is not linkable: {canonical!r}"
+            )
+        linked = {
+            feature["uri"]
+            for item in blocks
+            for facet in item["block"].get("facets", [])
+            for feature in facet["features"]
+        }
+        if canonical not in linked:
+            blocks.append({
+                "$type": LEAFLET_LINEAR_BLOCK,
+                "block": {
+                    "$type": LEAFLET_TEXT_BLOCK,
+                    "plaintext": canonical,
+                    "facets": _link_facets(canonical),
+                },
+            })
     return {
         "$type": LEAFLET_CONTENT,
         "pages": [{
@@ -762,7 +795,9 @@ def document_record(
         "title": document["title"],
         "description": document["description"],
         "textContent": document["text_content"],
-        "content": leaflet_content(str(document["text_content"])),
+        "content": leaflet_content(
+            str(document["text_content"]), str(document["canonical_url"])
+        ),
         "tags": list(document["tags"]),
         "publishedAt": published_at,
     }
@@ -779,7 +814,9 @@ def legacy_document_record(
         app_id=str(document["app_store_id"]),
         mode=str(document["legacy_app_store_link"]),
     )
-    record["content"] = leaflet_content(str(record["textContent"]))
+    record["content"] = leaflet_content(
+        str(record["textContent"]), str(document["canonical_url"])
+    )
     return record
 
 

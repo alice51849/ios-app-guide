@@ -45,6 +45,11 @@ import standard_site_pending as pending_state
 STATE_VERSION = 1
 PUBLICATION_COLLECTION = "site.standard.publication"
 DOCUMENT_COLLECTION = "site.standard.document"
+LEAFLET_CONTENT = "pub.leaflet.content"
+LEAFLET_LINEAR_DOCUMENT = "pub.leaflet.pages.linearDocument"
+LEAFLET_LINEAR_BLOCK = "pub.leaflet.pages.linearDocument#block"
+LEAFLET_TEXT_BLOCK = "pub.leaflet.blocks.text"
+LEAFLET_FACET = "pub.leaflet.richtext.facet"
 TID_ALPHABET = "234567abcdefghijklmnopqrstuvwxyz"
 TID_RE = re.compile(r"^[234567abcdefghij][234567abcdefghijklmnopqrstuvwxyz]{12}$")
 AT_URI_RE = re.compile(
@@ -684,6 +689,65 @@ def publication_record(manifest: Mapping[str, object]) -> dict[str, object]:
     }
 
 
+_LINK_RE = re.compile(
+    r"https://[^\s<>'\"\[\]{}()\u3000-\u303f\uff00-\uffef]+"
+)
+_LINK_TRAILING_PROSE = ".,;:!?"
+
+
+def _link_facets(line: str) -> list[dict[str, object]]:
+    facets: list[dict[str, object]] = []
+    for match in _LINK_RE.finditer(line):
+        uri = match.group(0).rstrip(_LINK_TRAILING_PROSE)
+        if not uri:
+            continue
+        start = len(line[: match.start()].encode("utf-8"))
+        end = start + len(uri.encode("utf-8"))
+        facets.append({
+            "$type": LEAFLET_FACET,
+            "index": {
+                "$type": LEAFLET_FACET + "#byteSlice",
+                "byteStart": start,
+                "byteEnd": end,
+            },
+            "features": [{"$type": LEAFLET_FACET + "#link", "uri": uri}],
+        })
+    return facets
+
+
+def leaflet_content(text: str) -> dict[str, object]:
+    """Render plain text as a Leaflet ``pub.leaflet.content`` linear page.
+
+    Leaflet's ``/p/<did>/<rkey>`` renderer only reads ``content.pages``;
+    ``textContent`` alone indexes but 404s. Every non-empty line becomes one
+    text block (verbatim, so the attributed App Store URL is preserved) and
+    every https URL gets a clickable link facet with UTF-8 byte offsets.
+    """
+    blocks: list[dict[str, object]] = []
+    for raw_line in str(text).splitlines():
+        line = raw_line.strip()
+        if not line:
+            continue
+        block: dict[str, object] = {
+            "$type": LEAFLET_TEXT_BLOCK,
+            "plaintext": line,
+        }
+        facets = _link_facets(line)
+        if facets:
+            block["facets"] = facets
+        blocks.append({"$type": LEAFLET_LINEAR_BLOCK, "block": block})
+    if not blocks:
+        raise PublishError("Standard.site document has no renderable text")
+    return {
+        "$type": LEAFLET_CONTENT,
+        "pages": [{
+            "$type": LEAFLET_LINEAR_DOCUMENT,
+            "id": "main",
+            "blocks": blocks,
+        }],
+    }
+
+
 def document_record(
     document: Mapping[str, object],
     publication_uri: str,
@@ -698,6 +762,7 @@ def document_record(
         "title": document["title"],
         "description": document["description"],
         "textContent": document["text_content"],
+        "content": leaflet_content(str(document["text_content"])),
         "tags": list(document["tags"]),
         "publishedAt": published_at,
     }
@@ -714,6 +779,7 @@ def legacy_document_record(
         app_id=str(document["app_store_id"]),
         mode=str(document["legacy_app_store_link"]),
     )
+    record["content"] = leaflet_content(str(record["textContent"]))
     return record
 
 
@@ -1269,8 +1335,22 @@ def reconcile_remote_state(
                 remote_record,
                 verified_at=verified_at,
             )
-        elif _document_semantics(remote_record) == _document_semantics(
-            legacy_document_record(document, active_site_uri, entry)
+        elif _document_semantics(
+            remote_record, include_content=False
+        ) == _document_semantics(desired, include_content=False):
+            # Same article, but the remote record predates Leaflet-renderable
+            # content (textContent-only records 404 on leaflet.pub/p/...).
+            # Queue an ordinary republish so the daily batch backfills it.
+            _mark_ordinary_republish_pending(
+                entry,
+                detected_at=verified_at,
+                republish_after_day=repair_after_day,
+            )
+        elif _document_semantics(
+            remote_record, include_content=False
+        ) == _document_semantics(
+            legacy_document_record(document, active_site_uri, entry),
+            include_content=False,
         ):
             legacy_hash = legacy_document_content_hash(document)
             if prior_published_hash == legacy_hash:
@@ -1365,9 +1445,13 @@ def reconcile_remote_state(
     }
 
 
-def _document_semantics(record: Mapping[str, object]) -> dict[str, object]:
+def _document_semantics(
+    record: Mapping[str, object], *, include_content: bool = True
+) -> dict[str, object]:
     result = dict(record)
     result.pop("updatedAt", None)
+    if not include_content:
+        result.pop("content", None)
     return result
 
 

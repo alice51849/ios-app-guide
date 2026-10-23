@@ -1,0 +1,6029 @@
+{
+ "schema": "lumi.promo_cards/v1",
+ "app": "cyca",
+ "app_id": "6782251621",
+ "app_store_url": "https://apps.apple.com/app/id6782251621",
+ "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.cyca",
+ "size": [
+  1080,
+  1350
+ ],
+ "built": "2026-10-23",
+ "items": [
+  {
+   "locale": "ar-SA",
+   "file": "cyca/ar-SA.jpg",
+   "intended_locale": "ar-SA",
+   "headline_locale": "ar-SA",
+   "screenshot_locale": "ar-SA",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:ara",
+    "script_chars": 126,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes)"
+   ],
+   "line1": "افهمي دورتك بنظرة",
+   "line2": "سجّلي الدورة والأعراض والمزاج في ثوانٍ",
+   "chips": [
+    "سجّلي الدورة والأعراض والمزاج في ثوانٍ",
+    "الدورة الشهرية والتبويض"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.274,
+    "family": "closeup2",
+    "font": "NotoSansArabic.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        366,
+        72,
+        713,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.29,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        88,
+        184,
+        991,
+        502
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 100,
+        "sub": 50,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.24,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.3,
+        1.4
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "افهمي دورتك بنظرة\nسجّلي الدورة والأعراض والمزاج في ثوانٍ\n\n📲 حمّله من الرابط في الملف الشخصي (bio)\n\n#Cyca",
+   "caption_link": "افهمي دورتك بنظرة\nسجّلي الدورة والأعراض والمزاج في ثوانٍ\n\nApp Store: https://apps.apple.com/app/id6782251621\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.cyca",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/cyca/ar-SA.jpg"
+  },
+  {
+   "locale": "bn-BD",
+   "file": "cyca/bn-BD.jpg",
+   "intended_locale": "bn-BD",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": false
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "no localized storefront screenshot (English-only or lookup failed); whole card in en-US"
+   ],
+   "line1": "Your Cycle at a Glance",
+   "line2": "Log your day in a tap, fully offline",
+   "chips": [
+    "Log your day in a tap, fully offline",
+    "Private, Offline, No Account"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.272,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        248,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.82,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        530,
+        709
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 96,
+        "sub": 48,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.11,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        733,
+        443,
+        853
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.89,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Your Cycle at a Glance\nLog your day in a tap, fully offline\n\n📲 Download via the link in bio\n\n#Cyca",
+   "caption_link": "Your Cycle at a Glance\nLog your day in a tap, fully offline\n\nApp Store: https://apps.apple.com/app/id6782251621\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.cyca",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/cyca/bn-BD.jpg"
+  },
+  {
+   "locale": "ca",
+   "file": "cyca/ca.jpg",
+   "intended_locale": "ca",
+   "headline_locale": "ca",
+   "screenshot_locale": "ca",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Entén el teu cicle",
+   "line2": "Regla, flux, símptomes i ànim en segons",
+   "chips": [
+    "Regla, flux, símptomes i ànim en segons",
+    "Ovulació i dies fèrtils"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.272,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        248,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.82,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        524,
+        661
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 96,
+        "sub": 48,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.29,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        685,
+        537,
+        770
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.6,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Entén el teu cicle\nRegla, flux, símptomes i ànim en segons\n\n📲 Descarrega-la des de l'enllaç de la bio\n\n#Cyca",
+   "caption_link": "Entén el teu cicle\nRegla, flux, símptomes i ànim en segons\n\nApp Store: https://apps.apple.com/app/id6782251621\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.cyca",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/cyca/ca.jpg"
+  },
+  {
+   "locale": "cs",
+   "file": "cyca/cs.jpg",
+   "intended_locale": "cs",
+   "headline_locale": "cs",
+   "screenshot_locale": "cs",
+   "localized": true,
+   "screenshots_used": [
+    0,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.23<0.24)"
+   ],
+   "line1": "Cyklus na první pohled",
+   "line2": "Menstruace, příznaky a nálada za vteřiny",
+   "chips": [
+    "Menstruace, příznaky a nálada za vteřiny",
+    "Ovulace a plodné dny bez účtu"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.249,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        270,
+        72,
+        809,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.83,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        191,
+        184,
+        889,
+        630
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.77,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Cyklus na první pohled\nMenstruace, příznaky a nálada za vteřiny\n\n📲 Stáhněte si ji přes odkaz v profilu (bio)\n\n#Cyca",
+   "caption_link": "Cyklus na první pohled\nMenstruace, příznaky a nálada za vteřiny\n\nApp Store: https://apps.apple.com/app/id6782251621\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.cyca",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/cyca/cs.jpg"
+  },
+  {
+   "locale": "da",
+   "file": "cyca/da.jpg",
+   "intended_locale": "da",
+   "headline_locale": "da",
+   "screenshot_locale": "da",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.208<0.24; closeup2×1.08: screen_area=0.224<0.24)"
+   ],
+   "line1": "Din cyklus på ét blik",
+   "line2": "Blødning, symptomer og humør på sekunder",
+   "chips": [
+    "Blødning, symptomer og humør på sekunder",
+    "Ægløsning og frugtbare dage"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.24,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.52,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        258,
+        72,
+        821,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.77,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        252,
+        184,
+        828,
+        696
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.05,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Din cyklus på ét blik\nBlødning, symptomer og humør på sekunder\n\n📲 Download via linket i bio\n\n#Cyca",
+   "caption_link": "Din cyklus på ét blik\nBlødning, symptomer og humør på sekunder\n\nApp Store: https://apps.apple.com/app/id6782251621\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.cyca",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/cyca/da.jpg"
+  },
+  {
+   "locale": "de-DE",
+   "file": "cyca/de-DE.jpg",
+   "intended_locale": "de-DE",
+   "headline_locale": "de-DE",
+   "screenshot_locale": "de-DE",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.212<0.24; closeup2×1.08: screen_area=0.229<0.24)"
+   ],
+   "line1": "Zyklus auf einen Blick",
+   "line2": "Periode, Symptome, Stimmung in Sekunden",
+   "chips": [
+    "Periode, Symptome, Stimmung in Sekunden",
+    "Periodenkalender & Eisprung"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.245,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.52,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        312,
+        72,
+        769,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.79,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        230,
+        184,
+        850,
+        684
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.14,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Zyklus auf einen Blick\nPeriode, Symptome, Stimmung in Sekunden\n\n📲 Download über den Link in der Bio\n\n#Cyca",
+   "caption_link": "Zyklus auf einen Blick\nPeriode, Symptome, Stimmung in Sekunden\n\nApp Store: https://apps.apple.com/app/id6782251621\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.cyca",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/cyca/de-DE.jpg"
+  },
+  {
+   "locale": "el",
+   "file": "cyca/el.jpg",
+   "intended_locale": "el",
+   "headline_locale": "el",
+   "screenshot_locale": "el",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:ell",
+    "script_chars": 210,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Ο κύκλος σου καθαρά",
+   "line2": "Περίοδος, ροή, διάθεση σε δευτερόλεπτα",
+   "chips": [
+    "Περίοδος, ροή, διάθεση σε δευτερόλεπτα",
+    "Ωορρηξία και γόνιμες ημέρες"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.272,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        248,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.82,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        533,
+        729
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 9.88,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        753,
+        433,
+        883
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.5,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Ο κύκλος σου καθαρά\nΠερίοδος, ροή, διάθεση σε δευτερόλεπτα\n\n📲 Λήψη από τον σύνδεσμο στο προφίλ (bio)\n\n#Cyca",
+   "caption_link": "Ο κύκλος σου καθαρά\nΠερίοδος, ροή, διάθεση σε δευτερόλεπτα\n\nApp Store: https://apps.apple.com/app/id6782251621\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.cyca",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/cyca/el.jpg"
+  },
+  {
+   "locale": "en-AU",
+   "file": "cyca/en-AU.jpg",
+   "intended_locale": "en-AU",
+   "headline_locale": "en-AU",
+   "screenshot_locale": "en-AU",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes)"
+   ],
+   "line1": "Know Your Cycle",
+   "line2": "Log period, flow and mood in seconds",
+   "chips": [
+    "Log period, flow and mood in seconds",
+    "Private, Offline, No Account"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.276,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        269,
+        72,
+        811,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.8,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        88,
+        184,
+        992,
+        496
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.76,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Know Your Cycle\nLog period, flow and mood in seconds\n\n📲 Download via the link in bio\n\n#Cyca",
+   "caption_link": "Know Your Cycle\nLog period, flow and mood in seconds\n\nApp Store: https://apps.apple.com/app/id6782251621\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.cyca",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/cyca/en-AU.jpg"
+  },
+  {
+   "locale": "en-CA",
+   "file": "cyca/en-CA.jpg",
+   "intended_locale": "en-CA",
+   "headline_locale": "en-CA",
+   "screenshot_locale": "en-CA",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes)"
+   ],
+   "line1": "Know Your Cycle",
+   "line2": "Log period, flow and mood in seconds",
+   "chips": [
+    "Log period, flow and mood in seconds",
+    "Private, Offline, No Account"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.276,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        269,
+        72,
+        811,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.8,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        88,
+        184,
+        992,
+        496
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.76,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Know Your Cycle\nLog period, flow and mood in seconds\n\n📲 Download via the link in bio\n\n#Cyca",
+   "caption_link": "Know Your Cycle\nLog period, flow and mood in seconds\n\nApp Store: https://apps.apple.com/app/id6782251621\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.cyca",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/cyca/en-CA.jpg"
+  },
+  {
+   "locale": "en-GB",
+   "file": "cyca/en-GB.jpg",
+   "intended_locale": "en-GB",
+   "headline_locale": "en-GB",
+   "screenshot_locale": "en-GB",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes)"
+   ],
+   "line1": "Know Your Cycle",
+   "line2": "Log period, flow and mood in seconds",
+   "chips": [
+    "Log period, flow and mood in seconds",
+    "Private, Offline, No Account"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.276,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        269,
+        72,
+        811,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.8,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        88,
+        184,
+        992,
+        496
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.76,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Know Your Cycle\nLog period, flow and mood in seconds\n\n📲 Download via the link in bio\n\n#Cyca",
+   "caption_link": "Know Your Cycle\nLog period, flow and mood in seconds\n\nApp Store: https://apps.apple.com/app/id6782251621\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.cyca",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/cyca/en-GB.jpg"
+  },
+  {
+   "locale": "en-US",
+   "file": "cyca/en-US.jpg",
+   "intended_locale": "en-US",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Your Cycle at a Glance",
+   "line2": "Log your day in a tap, fully offline",
+   "chips": [
+    "Log your day in a tap, fully offline",
+    "Private, Offline, No Account"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.272,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        248,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.82,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        530,
+        709
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 96,
+        "sub": 48,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.11,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        733,
+        443,
+        853
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.89,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Your Cycle at a Glance\nLog your day in a tap, fully offline\n\n📲 Download via the link in bio\n\n#Cyca",
+   "caption_link": "Your Cycle at a Glance\nLog your day in a tap, fully offline\n\nApp Store: https://apps.apple.com/app/id6782251621\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.cyca",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/cyca/en-US.jpg"
+  },
+  {
+   "locale": "es-ES",
+   "file": "cyca/es-ES.jpg",
+   "intended_locale": "es-ES",
+   "headline_locale": "es-ES",
+   "screenshot_locale": "es-ES",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Entiende tu ciclo",
+   "line2": "Regla, flujo y ánimo en segundos",
+   "chips": [
+    "Regla, flujo y ánimo en segundos",
+    "Ovulación y días fértiles"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.272,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        248,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.82,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        527,
+        644
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.29,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        668,
+        377,
+        788
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.65,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Entiende tu ciclo\nRegla, flujo y ánimo en segundos\n\n📲 Descárgala desde el enlace de la bio\n\n#Cyca",
+   "caption_link": "Entiende tu ciclo\nRegla, flujo y ánimo en segundos\n\nApp Store: https://apps.apple.com/app/id6782251621\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.cyca",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/cyca/es-ES.jpg"
+  },
+  {
+   "locale": "es-MX",
+   "file": "cyca/es-MX.jpg",
+   "intended_locale": "es-MX",
+   "headline_locale": "es-MX",
+   "screenshot_locale": "es-MX",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Entiende tu ciclo",
+   "line2": "Periodo, flujo y ánimo en segundos",
+   "chips": [
+    "Periodo, flujo y ánimo en segundos",
+    "Ovulación y días fértiles"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.272,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        248,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.82,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        527,
+        644
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.53,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        668,
+        377,
+        788
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.65,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Entiende tu ciclo\nPeriodo, flujo y ánimo en segundos\n\n📲 Descárgala desde el enlace de la bio\n\n#Cyca",
+   "caption_link": "Entiende tu ciclo\nPeriodo, flujo y ánimo en segundos\n\nApp Store: https://apps.apple.com/app/id6782251621\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.cyca",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/cyca/es-MX.jpg"
+  },
+  {
+   "locale": "fi",
+   "file": "cyca/fi.jpg",
+   "intended_locale": "fi",
+   "headline_locale": "fi",
+   "screenshot_locale": "fi",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Kierto selkeänä",
+   "line2": "Kirjaa vuoto ja oireet sekunneissa",
+   "chips": [
+    "Kirjaa vuoto ja oireet sekunneissa",
+    "Ovulaatio ja kierron seuranta"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.272,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        248,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.82,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        532,
+        576
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.11,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        600,
+        464,
+        720
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.41,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Kierto selkeänä\nKirjaa vuoto ja oireet sekunneissa\n\n📲 Lataa bion linkistä\n\n#Cyca",
+   "caption_link": "Kierto selkeänä\nKirjaa vuoto ja oireet sekunneissa\n\nApp Store: https://apps.apple.com/app/id6782251621\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.cyca",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/cyca/fi.jpg"
+  },
+  {
+   "locale": "fr-CA",
+   "file": "cyca/fr-CA.jpg",
+   "intended_locale": "fr-CA",
+   "headline_locale": "fr-CA",
+   "screenshot_locale": "fr-CA",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.235<0.24)"
+   ],
+   "line1": "Comprendre son cycle",
+   "line2": "Règles, flux et humeur en secondes",
+   "chips": [
+    "Règles, flux et humeur en secondes",
+    "Ovulation et période fertile"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.253,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        278,
+        72,
+        802,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.83,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        194,
+        184,
+        885,
+        618
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.9,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Comprendre son cycle\nRègles, flux et humeur en secondes\n\n📲 Téléchargez-la via le lien dans la bio\n\n#Cyca",
+   "caption_link": "Comprendre son cycle\nRègles, flux et humeur en secondes\n\nApp Store: https://apps.apple.com/app/id6782251621\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.cyca",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/cyca/fr-CA.jpg"
+  },
+  {
+   "locale": "fr-FR",
+   "file": "cyca/fr-FR.jpg",
+   "intended_locale": "fr-FR",
+   "headline_locale": "fr-FR",
+   "screenshot_locale": "fr-FR",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.235<0.24)"
+   ],
+   "line1": "Comprendre son cycle",
+   "line2": "Règles, flux et humeur en secondes",
+   "chips": [
+    "Règles, flux et humeur en secondes",
+    "Ovulation et période fertile"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.253,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        329,
+        72,
+        751,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.66,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        194,
+        184,
+        885,
+        618
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.9,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Comprendre son cycle\nRègles, flux et humeur en secondes\n\n📲 Téléchargez-la via le lien dans la bio\n\n#Cyca",
+   "caption_link": "Comprendre son cycle\nRègles, flux et humeur en secondes\n\nApp Store: https://apps.apple.com/app/id6782251621\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.cyca",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/cyca/fr-FR.jpg"
+  },
+  {
+   "locale": "gu-IN",
+   "file": "cyca/gu-IN.jpg",
+   "intended_locale": "gu-IN",
+   "headline_locale": "gu-IN",
+   "screenshot_locale": "gu-IN",
+   "localized": true,
+   "screenshots_used": [
+    2,
+    3,
+    4
+   ],
+   "demo_language_check": {
+    "method": "ocr:guj",
+    "script_chars": 121,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "સાયકલ એક નજરમાં",
+   "line2": "પિરિયડ, લક્ષણો અને મિજાજની નોંધ",
+   "chips": [
+    "પિરિયડ, લક્ષણો અને મિજાજની નોંધ",
+    "માસિક કેલેન્ડર અને ઓવ્યુલેશન"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.273,
+    "family": "split2",
+    "font": "NotoSansGujarati.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        248,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.82,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        536,
+        612
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.38,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        636,
+        387,
+        781
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.47,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "સાયકલ એક નજરમાં\nપિરિયડ, લક્ષણો અને મિજાજની નોંધ\n\n📲 બાયોમાંની લિંકથી ડાઉનલોડ કરો\n\n#Cyca",
+   "caption_link": "સાયકલ એક નજરમાં\nપિરિયડ, લક્ષણો અને મિજાજની નોંધ\n\nApp Store: https://apps.apple.com/app/id6782251621\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.cyca",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/cyca/gu-IN.jpg"
+  },
+  {
+   "locale": "he",
+   "file": "cyca/he.jpg",
+   "intended_locale": "he",
+   "headline_locale": "he",
+   "screenshot_locale": "he",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:heb",
+    "script_chars": 153,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "המחזור במבט אחד",
+   "line2": "מחזור, תסמינים ומצב רוח בשניות",
+   "chips": [
+    "מחזור, תסמינים ומצב רוח בשניות",
+    "ביוץ, ימי פוריות ולוח וסת"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.272,
+    "family": "split2",
+    "font": "NotoSansHebrew.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        649,
+        72,
+        1008,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.91,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        615,
+        184,
+        1008,
+        843
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.67,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.3,
+        1.4
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        666,
+        867,
+        1008,
+        987
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.74,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.4
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "המחזור במבט אחד\nמחזור, תסמינים ומצב רוח בשניות\n\n📲 הורדה דרך הקישור בביו\n\n#Cyca",
+   "caption_link": "המחזור במבט אחד\nמחזור, תסמינים ומצב רוח בשניות\n\nApp Store: https://apps.apple.com/app/id6782251621\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.cyca",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/cyca/he.jpg"
+  },
+  {
+   "locale": "hi",
+   "file": "cyca/hi.jpg",
+   "intended_locale": "hi",
+   "headline_locale": "hi",
+   "screenshot_locale": "hi",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:hin",
+    "script_chars": 193,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "अपना चक्र समझें",
+   "line2": "फ्लो, लक्षण और मूड सेकंडों में",
+   "chips": [
+    "फ्लो, लक्षण और मूड सेकंडों में",
+    "मासिक धर्म कैलेंडर, ओव्यूलेशन"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.272,
+    "family": "split2",
+    "font": "NotoSansDevanagari.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        417,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.28,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        529,
+        679
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 100,
+        "sub": 50,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.29,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        703,
+        430,
+        848
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.97,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "अपना चक्र समझें\nफ्लो, लक्षण और मूड सेकंडों में\n\n📲 बायो में दिए लिंक से डाउनलोड करें\n\n#Cyca",
+   "caption_link": "अपना चक्र समझें\nफ्लो, लक्षण और मूड सेकंडों में\n\nApp Store: https://apps.apple.com/app/id6782251621\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.cyca",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/cyca/hi.jpg"
+  },
+  {
+   "locale": "hr",
+   "file": "cyca/hr.jpg",
+   "intended_locale": "hr",
+   "headline_locale": "hr",
+   "screenshot_locale": "hr",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Ciklus na prvi pogled",
+   "line2": "Protok i simptomi u par sekundi",
+   "chips": [
+    "Protok i simptomi u par sekundi",
+    "Plodni dani i ovulacija"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.272,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        248,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.82,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        480,
+        819
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.27,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        843,
+        366,
+        972
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.99,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Ciklus na prvi pogled\nProtok i simptomi u par sekundi\n\n📲 Preuzmi putem poveznice u biografiji (bio)\n\n#Cyca",
+   "caption_link": "Ciklus na prvi pogled\nProtok i simptomi u par sekundi\n\nApp Store: https://apps.apple.com/app/id6782251621\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.cyca",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/cyca/hr.jpg"
+  },
+  {
+   "locale": "hu",
+   "file": "cyca/hu.jpg",
+   "intended_locale": "hu",
+   "headline_locale": "hu",
+   "screenshot_locale": "hu",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.23<0.24)"
+   ],
+   "line1": "Ciklusod egy pillantásra",
+   "line2": "Tünetek és hangulat pár másodperc alatt",
+   "chips": [
+    "Tünetek és hangulat pár másodperc alatt",
+    "Peteérés és termékeny napok"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.248,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        288,
+        72,
+        791,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.79,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        185,
+        184,
+        895,
+        631
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.97,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Ciklusod egy pillantásra\nTünetek és hangulat pár másodperc alatt\n\n📲 Töltsd le a bio linkjéről\n\n#Cyca",
+   "caption_link": "Ciklusod egy pillantásra\nTünetek és hangulat pár másodperc alatt\n\nApp Store: https://apps.apple.com/app/id6782251621\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.cyca",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/cyca/hu.jpg"
+  },
+  {
+   "locale": "id",
+   "file": "cyca/id.jpg",
+   "intended_locale": "id",
+   "headline_locale": "id",
+   "screenshot_locale": "id",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes)"
+   ],
+   "line1": "Siklus sekali lihat",
+   "line2": "Catat haid dan gejala dalam hitungan detik",
+   "chips": [
+    "Catat haid dan gejala dalam hitungan detik",
+    "Masa subur & ovulasi, privat"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.276,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        282,
+        72,
+        798,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.69,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        78,
+        184,
+        1001,
+        498
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 100,
+        "sub": 50,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.66,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Siklus sekali lihat\nCatat haid dan gejala dalam hitungan detik\n\n📲 Unduh lewat link di bio\n\n#Cyca",
+   "caption_link": "Siklus sekali lihat\nCatat haid dan gejala dalam hitungan detik\n\nApp Store: https://apps.apple.com/app/id6782251621\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.cyca",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/cyca/id.jpg"
+  },
+  {
+   "locale": "it",
+   "file": "cyca/it.jpg",
+   "intended_locale": "it",
+   "headline_locale": "it",
+   "screenshot_locale": "it",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Capisci il tuo ciclo",
+   "line2": "Ciclo, flusso e umore in pochi secondi",
+   "chips": [
+    "Ciclo, flusso e umore in pochi secondi",
+    "Ovulazione e giorni fertili"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.272,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        503,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.28,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        521,
+        644
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.04,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        668,
+        397,
+        797
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.67,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Capisci il tuo ciclo\nCiclo, flusso e umore in pochi secondi\n\n📲 Scaricala dal link nella bio\n\n#Cyca",
+   "caption_link": "Capisci il tuo ciclo\nCiclo, flusso e umore in pochi secondi\n\nApp Store: https://apps.apple.com/app/id6782251621\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.cyca",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/cyca/it.jpg"
+  },
+  {
+   "locale": "ja",
+   "file": "cyca/ja.jpg",
+   "intended_locale": "ja",
+   "headline_locale": "ja",
+   "screenshot_locale": "ja",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:jpn",
+    "script_chars": 84,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes)"
+   ],
+   "line1": "生理をサッと記録",
+   "line2": "経血量・症状・気分・メモを数秒で",
+   "chips": [
+    "経血量・症状・気分・メモを数秒で",
+    "生理管理・妊活・毎日の体調予報"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.273,
+    "family": "closeup2",
+    "font": "NotoSansJP.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        272,
+        72,
+        807,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.88,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        106,
+        184,
+        975,
+        506
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.65,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "生理をサッと記録\n経血量・症状・気分・メモを数秒で\n\n📲 ダウンロードはプロフィール（bio）のリンクから\n\n#Cyca",
+   "caption_link": "生理をサッと記録\n経血量・症状・気分・メモを数秒で\n\nApp Store: https://apps.apple.com/app/id6782251621\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.cyca",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/cyca/ja.jpg"
+  },
+  {
+   "locale": "kn-IN",
+   "file": "cyca/kn-IN.jpg",
+   "intended_locale": "kn-IN",
+   "headline_locale": "kn-IN",
+   "screenshot_locale": "kn-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:kan",
+    "script_chars": 177,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "ಮುಟ್ಟಿನ ಚಕ್ರ ಸ್ಪಷ್ಟ",
+   "line2": "ಹರಿವು, ಲಕ್ಷಣ, ಮನಸ್ಥಿತಿ ಕ್ಷಣದಲ್ಲಿ ಬರೆಯಿರಿ",
+   "chips": [
+    "ಹರಿವು, ಲಕ್ಷಣ, ಮನಸ್ಥಿತಿ ಕ್ಷಣದಲ್ಲಿ ಬರೆಯಿರಿ",
+    "ಮುಟ್ಟು ಕ್ಯಾಲೆಂಡರ್, ಅಂಡೋತ್ಪತ್ತಿ"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.272,
+    "family": "split2",
+    "font": "NotoSansKannada.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        243,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.81,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        539,
+        784
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.1,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        3
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        808,
+        463,
+        952
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.1,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "ಮುಟ್ಟಿನ ಚಕ್ರ ಸ್ಪಷ್ಟ\nಹರಿವು, ಲಕ್ಷಣ, ಮನಸ್ಥಿತಿ ಕ್ಷಣದಲ್ಲಿ ಬರೆಯಿರಿ\n\n📲 ಬಯೋದಲ್ಲಿರುವ ಲಿಂಕ್‌ನಿಂದ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ\n\n#Cyca",
+   "caption_link": "ಮುಟ್ಟಿನ ಚಕ್ರ ಸ್ಪಷ್ಟ\nಹರಿವು, ಲಕ್ಷಣ, ಮನಸ್ಥಿತಿ ಕ್ಷಣದಲ್ಲಿ ಬರೆಯಿರಿ\n\nApp Store: https://apps.apple.com/app/id6782251621\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.cyca",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/cyca/kn-IN.jpg"
+  },
+  {
+   "locale": "ko",
+   "file": "cyca/ko.jpg",
+   "intended_locale": "ko",
+   "headline_locale": "ko",
+   "screenshot_locale": "ko",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:kor",
+    "script_chars": 84,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes)"
+   ],
+   "line1": "생리 기록, 몇 초면 끝",
+   "line2": "양·증상·기분·메모를 간편하게",
+   "chips": [
+    "양·증상·기분·메모를 간편하게",
+    "생리달력·가임기 계산·컨디션"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.259,
+    "family": "closeup2",
+    "font": "NotoSansKR.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        318,
+        72,
+        762,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.69,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        78,
+        184,
+        1003,
+        439
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.77,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        268,
+        463,
+        813,
+        548
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.26,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "생리 기록, 몇 초면 끝\n양·증상·기분·메모를 간편하게\n\n📲 다운로드는 프로필(bio) 링크에서\n\n#Cyca",
+   "caption_link": "생리 기록, 몇 초면 끝\n양·증상·기분·메모를 간편하게\n\nApp Store: https://apps.apple.com/app/id6782251621\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.cyca",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/cyca/ko.jpg"
+  },
+  {
+   "locale": "ml-IN",
+   "file": "cyca/ml-IN.jpg",
+   "intended_locale": "ml-IN",
+   "headline_locale": "ml-IN",
+   "screenshot_locale": "ml-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:mal",
+    "script_chars": 239,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes)"
+   ],
+   "line1": "ചക്രം വ്യക്തം",
+   "line2": "ഒഴുക്ക്, ലക്ഷണങ്ങൾ, മൂഡ് നിമിഷങ്ങളിൽ",
+   "chips": [
+    "ഒഴുക്ക്, ലക്ഷണങ്ങൾ, മൂഡ് നിമിഷങ്ങളിൽ",
+    "ആർത്തവ കലണ്ടർ, അണ്ഡോത്പാദനം"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.261,
+    "family": "closeup2",
+    "font": "NotoSansMalayalam.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        296,
+        72,
+        785,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.79,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        137,
+        184,
+        943,
+        542
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.63,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "ചക്രം വ്യക്തം\nഒഴുക്ക്, ലക്ഷണങ്ങൾ, മൂഡ് നിമിഷങ്ങളിൽ\n\n📲 ബയോയിലെ ലിങ്ക് വഴി ഡൗൺലോഡ് ചെയ്യുക\n\n#Cyca",
+   "caption_link": "ചക്രം വ്യക്തം\nഒഴുക്ക്, ലക്ഷണങ്ങൾ, മൂഡ് നിമിഷങ്ങളിൽ\n\nApp Store: https://apps.apple.com/app/id6782251621\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.cyca",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/cyca/ml-IN.jpg"
+  },
+  {
+   "locale": "mr-IN",
+   "file": "cyca/mr-IN.jpg",
+   "intended_locale": "mr-IN",
+   "headline_locale": "mr-IN",
+   "screenshot_locale": "mr-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:mar",
+    "script_chars": 197,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "तुमची सायकल समजा",
+   "line2": "प्रवाह, लक्षणे, मूड काही सेकंदांत",
+   "chips": [
+    "प्रवाह, लक्षणे, मूड काही सेकंदांत",
+    "मासिक कॅलेंडर व ओव्ह्युलेशन"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.272,
+    "family": "split2",
+    "font": "NotoSansDevanagari.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        530,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.44,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        466,
+        869
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 9.99,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        893,
+        370,
+        1043
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.37,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "तुमची सायकल समजा\nप्रवाह, लक्षणे, मूड काही सेकंदांत\n\n📲 बायोमधील लिंकवरून डाउनलोड करा\n\n#Cyca",
+   "caption_link": "तुमची सायकल समजा\nप्रवाह, लक्षणे, मूड काही सेकंदांत\n\nApp Store: https://apps.apple.com/app/id6782251621\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.cyca",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/cyca/mr-IN.jpg"
+  },
+  {
+   "locale": "ms",
+   "file": "cyca/ms.jpg",
+   "intended_locale": "ms",
+   "headline_locale": "ms",
+   "screenshot_locale": "ms",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Kitaran sekali pandang",
+   "line2": "Haid, simptom dan mood dalam saat",
+   "chips": [
+    "Haid, simptom dan mood dalam saat",
+    "Ovulasi dan hari subur"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.272,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        481,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.23,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        523,
+        742
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 9.97,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        766,
+        376,
+        886
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.36,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Kitaran sekali pandang\nHaid, simptom dan mood dalam saat\n\n📲 Muat turun melalui pautan dalam bio\n\n#Cyca",
+   "caption_link": "Kitaran sekali pandang\nHaid, simptom dan mood dalam saat\n\nApp Store: https://apps.apple.com/app/id6782251621\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.cyca",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/cyca/ms.jpg"
+  },
+  {
+   "locale": "nl-NL",
+   "file": "cyca/nl-NL.jpg",
+   "intended_locale": "nl-NL",
+   "headline_locale": "nl-NL",
+   "screenshot_locale": "nl-NL",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes)"
+   ],
+   "line1": "Je cyclus in één blik",
+   "line2": "Bloeding, klachten, stemming in seconden",
+   "chips": [
+    "Bloeding, klachten, stemming in seconden",
+    "Ovulatie en vruchtbare dagen"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.248,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        278,
+        72,
+        803,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.73,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        79,
+        184,
+        1001,
+        466
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.81,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        229,
+        490,
+        851,
+        579
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.92,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Je cyclus in één blik\nBloeding, klachten, stemming in seconden\n\n📲 Download via de link in bio\n\n#Cyca",
+   "caption_link": "Je cyclus in één blik\nBloeding, klachten, stemming in seconden\n\nApp Store: https://apps.apple.com/app/id6782251621\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.cyca",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/cyca/nl-NL.jpg"
+  },
+  {
+   "locale": "no",
+   "file": "cyca/no.jpg",
+   "intended_locale": "no",
+   "headline_locale": "no",
+   "screenshot_locale": "no",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Syklusen på ett blikk",
+   "line2": "Mens, symptomer og humør på sekunder",
+   "chips": [
+    "Mens, symptomer og humør på sekunder",
+    "Eggløsning og fruktbare dager"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.272,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        527,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.29,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        530,
+        741
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.06,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        765,
+        452,
+        894
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.54,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Syklusen på ett blikk\nMens, symptomer og humør på sekunder\n\n📲 Last ned via lenken i bio\n\n#Cyca",
+   "caption_link": "Syklusen på ett blikk\nMens, symptomer og humør på sekunder\n\nApp Store: https://apps.apple.com/app/id6782251621\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.cyca",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/cyca/no.jpg"
+  },
+  {
+   "locale": "or-IN",
+   "file": "cyca/or-IN.jpg",
+   "intended_locale": "or-IN",
+   "headline_locale": "or-IN",
+   "screenshot_locale": "or-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:ori",
+    "script_chars": 151,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "ପିରିୟଡ଼ର ସମ୍ପୂର୍ଣ୍ଣ ହିସାବ",
+   "line2": "ପ୍ରବାହ, ଲକ୍ଷଣ, ମୁଡ୍ ସେକେଣ୍ଡରେ ଲେଖନ୍ତୁ",
+   "chips": [
+    "ପ୍ରବାହ, ଲକ୍ଷଣ, ମୁଡ୍ ସେକେଣ୍ଡରେ ଲେଖନ୍ତୁ",
+    "ମାସିକ କ୍ୟାଲେଣ୍ଡର, ଡିମ୍ବୋତ୍ସର୍ଗ"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.272,
+    "family": "split2",
+    "font": "NotoSansOriya.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        249,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.82,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        530,
+        843
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 100,
+        "sub": 50,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.38,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        867,
+        441,
+        1008
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.34,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "ପିରିୟଡ଼ର ସମ୍ପୂର୍ଣ୍ଣ ହିସାବ\nପ୍ରବାହ, ଲକ୍ଷଣ, ମୁଡ୍ ସେକେଣ୍ଡରେ ଲେଖନ୍ତୁ\n\n📲 ବାୟୋରେ ଥିବା ଲିଙ୍କରୁ ଡାଉନଲୋଡ୍ କରନ୍ତୁ\n\n#Cyca",
+   "caption_link": "ପିରିୟଡ଼ର ସମ୍ପୂର୍ଣ୍ଣ ହିସାବ\nପ୍ରବାହ, ଲକ୍ଷଣ, ମୁଡ୍ ସେକେଣ୍ଡରେ ଲେଖନ୍ତୁ\n\nApp Store: https://apps.apple.com/app/id6782251621\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.cyca",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/cyca/or-IN.jpg"
+  },
+  {
+   "locale": "pa-IN",
+   "file": "cyca/pa-IN.jpg",
+   "intended_locale": "pa-IN",
+   "headline_locale": "pa-IN",
+   "screenshot_locale": "pa-IN",
+   "localized": true,
+   "screenshots_used": [
+    0,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:pan",
+    "script_chars": 196,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "ਪੀਰੀਅਡ ਦਾ ਪੂਰਾ ਹਿਸਾਬ",
+   "line2": "ਵਹਾਅ, ਲੱਛਣ, ਮੂਡ ਸਕਿੰਟਾਂ ਵਿੱਚ ਲਿਖੋ",
+   "chips": [
+    "ਵਹਾਅ, ਲੱਛਣ, ਮੂਡ ਸਕਿੰਟਾਂ ਵਿੱਚ ਲਿਖੋ",
+    "ਮਾਹਵਾਰੀ ਕੈਲੰਡਰ, ਓਵੂਲੇਸ਼ਨ"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.27,
+    "family": "split2",
+    "font": "NotoSansGurmukhi.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        248,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.82,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        526,
+        637
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.33,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        661,
+        528,
+        755
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.77,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "ਪੀਰੀਅਡ ਦਾ ਪੂਰਾ ਹਿਸਾਬ\nਵਹਾਅ, ਲੱਛਣ, ਮੂਡ ਸਕਿੰਟਾਂ ਵਿੱਚ ਲਿਖੋ\n\n📲 ਬਾਇਓ ਵਿੱਚ ਦਿੱਤੇ ਲਿੰਕ ਤੋਂ ਡਾਊਨਲੋਡ ਕਰੋ\n\n#Cyca",
+   "caption_link": "ਪੀਰੀਅਡ ਦਾ ਪੂਰਾ ਹਿਸਾਬ\nਵਹਾਅ, ਲੱਛਣ, ਮੂਡ ਸਕਿੰਟਾਂ ਵਿੱਚ ਲਿਖੋ\n\nApp Store: https://apps.apple.com/app/id6782251621\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.cyca",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/cyca/pa-IN.jpg"
+  },
+  {
+   "locale": "pl",
+   "file": "cyca/pl.jpg",
+   "intended_locale": "pl",
+   "headline_locale": "pl",
+   "screenshot_locale": "pl",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "headline shortened to a shorter store hook: Owulacja i dni płodne",
+    "layout fallback split2->split2 (split2: text does not fit at minimum sizes)"
+   ],
+   "line1": "Owulacja i dni płodne",
+   "line2": "Zapisz objawy i nastrój w kilka sekund",
+   "chips": [
+    "Zapisz objawy i nastrój w kilka sekund",
+    "Owulacja i dni płodne"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.272,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        248,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.82,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        528,
+        719
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 9.81,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        743,
+        377,
+        872
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.56,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 split2）"
+   },
+   "caption_instagram": "Owulacja i dni płodne\nZapisz objawy i nastrój w kilka sekund\n\n📲 Pobierz przez link w bio\n\n#Cyca",
+   "caption_link": "Owulacja i dni płodne\nZapisz objawy i nastrój w kilka sekund\n\nApp Store: https://apps.apple.com/app/id6782251621\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.cyca",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/cyca/pl.jpg"
+  },
+  {
+   "locale": "pt-BR",
+   "file": "cyca/pt-BR.jpg",
+   "intended_locale": "pt-BR",
+   "headline_locale": "pt-BR",
+   "screenshot_locale": "pt-BR",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Seu ciclo num olhar",
+   "line2": "Fluxo, sintomas e humor em segundos",
+   "chips": [
+    "Fluxo, sintomas e humor em segundos",
+    "Período fértil e ovulação"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.272,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        248,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.82,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        520,
+        753
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 9.96,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        777,
+        400,
+        906
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.43,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Seu ciclo num olhar\nFluxo, sintomas e humor em segundos\n\n📲 Baixe pelo link na bio\n\n#Cyca",
+   "caption_link": "Seu ciclo num olhar\nFluxo, sintomas e humor em segundos\n\nApp Store: https://apps.apple.com/app/id6782251621\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.cyca",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/cyca/pt-BR.jpg"
+  },
+  {
+   "locale": "pt-PT",
+   "file": "cyca/pt-PT.jpg",
+   "intended_locale": "pt-PT",
+   "headline_locale": "pt-PT",
+   "screenshot_locale": "pt-PT",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.23<0.24)"
+   ],
+   "line1": "O seu ciclo num relance",
+   "line2": "Fluxo, sintomas e humor em segundos",
+   "chips": [
+    "Fluxo, sintomas e humor em segundos",
+    "Período fértil e ovulação"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.248,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        275,
+        72,
+        805,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.79,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        193,
+        184,
+        887,
+        631
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.6,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "O seu ciclo num relance\nFluxo, sintomas e humor em segundos\n\n📲 Download via the link in bio\n\n#Cyca",
+   "caption_link": "O seu ciclo num relance\nFluxo, sintomas e humor em segundos\n\nApp Store: https://apps.apple.com/app/id6782251621\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.cyca",
+   "cta_source": "en-fallback",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/cyca/pt-PT.jpg"
+  },
+  {
+   "locale": "ro",
+   "file": "cyca/ro.jpg",
+   "intended_locale": "ro",
+   "headline_locale": "ro",
+   "screenshot_locale": "ro",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes)"
+   ],
+   "line1": "Ciclul dintr-o privire",
+   "line2": "Flux, simptome și stare în câteva secunde",
+   "chips": [
+    "Flux, simptome și stare în câteva secunde",
+    "Ovulație și zile fertile"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.267,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        290,
+        72,
+        790,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.79,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        76,
+        184,
+        1003,
+        411
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.61,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        306,
+        435,
+        774,
+        523
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.27,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Ciclul dintr-o privire\nFlux, simptome și stare în câteva secunde\n\n📲 Descarcă din linkul din bio\n\n#Cyca",
+   "caption_link": "Ciclul dintr-o privire\nFlux, simptome și stare în câteva secunde\n\nApp Store: https://apps.apple.com/app/id6782251621\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.cyca",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/cyca/ro.jpg"
+  },
+  {
+   "locale": "ru",
+   "file": "cyca/ru.jpg",
+   "intended_locale": "ru",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:rus",
+    "script_chars": 197,
+    "mixed_english_words": {},
+    "all_used_screens_localized": false
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "no layout fits the hard minimum font sizes with the localized copy; whole card in en-US"
+   ],
+   "line1": "Your Cycle at a Glance",
+   "line2": "Log your day in a tap, fully offline",
+   "chips": [
+    "Log your day in a tap, fully offline",
+    "Private, Offline, No Account"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.272,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        248,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.82,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        530,
+        709
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 96,
+        "sub": 48,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.11,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        733,
+        443,
+        853
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.89,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Your Cycle at a Glance\nLog your day in a tap, fully offline\n\n📲 Download via the link in bio\n\n#Cyca",
+   "caption_link": "Your Cycle at a Glance\nLog your day in a tap, fully offline\n\nApp Store: https://apps.apple.com/app/id6782251621\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.cyca",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/cyca/ru.jpg"
+  },
+  {
+   "locale": "sk",
+   "file": "cyca/sk.jpg",
+   "intended_locale": "sk",
+   "headline_locale": "sk",
+   "screenshot_locale": "sk",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Cyklus na prvý pohľad",
+   "line2": "Zapíšte deň za pár sekúnd",
+   "chips": [
+    "Zapíšte deň za pár sekúnd",
+    "Ovulácia a plodné dni bez účtu"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.272,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        248,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.82,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        515,
+        753
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.25,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        777,
+        484,
+        897
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.41,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Cyklus na prvý pohľad\nZapíšte deň za pár sekúnd\n\n📲 Stiahnite si ju cez odkaz v profile (bio)\n\n#Cyca",
+   "caption_link": "Cyklus na prvý pohľad\nZapíšte deň za pár sekúnd\n\nApp Store: https://apps.apple.com/app/id6782251621\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.cyca",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/cyca/sk.jpg"
+  },
+  {
+   "locale": "sl-SI",
+   "file": "cyca/sl-SI.jpg",
+   "intended_locale": "sl-SI",
+   "headline_locale": "sl-SI",
+   "screenshot_locale": "sl-SI",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes)"
+   ],
+   "line1": "Cikel na prvi pogled",
+   "line2": "Krvavitev in simptomi v nekaj sekundah",
+   "chips": [
+    "Krvavitev in simptomi v nekaj sekundah",
+    "Menstrualni koledar, ovulacija"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.267,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        338,
+        72,
+        741,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.73,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        82,
+        184,
+        999,
+        411
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.74,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        228,
+        435,
+        851,
+        524
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.65,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Cikel na prvi pogled\nKrvavitev in simptomi v nekaj sekundah\n\n📲 Prenesite prek povezave v biu\n\n#Cyca",
+   "caption_link": "Cikel na prvi pogled\nKrvavitev in simptomi v nekaj sekundah\n\nApp Store: https://apps.apple.com/app/id6782251621\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.cyca",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/cyca/sl-SI.jpg"
+  },
+  {
+   "locale": "sv",
+   "file": "cyca/sv.jpg",
+   "intended_locale": "sv",
+   "headline_locale": "sv",
+   "screenshot_locale": "sv",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Din cykel i en blick",
+   "line2": "Mens, symtom och humör på sekunder",
+   "chips": [
+    "Mens, symtom och humör på sekunder",
+    "Ägglossning och fertila dagar"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.272,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        487,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.24,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        523,
+        615
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.08,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        639,
+        458,
+        774
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.57,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Din cykel i en blick\nMens, symtom och humör på sekunder\n\n📲 Ladda ner via länken i bion\n\n#Cyca",
+   "caption_link": "Din cykel i en blick\nMens, symtom och humör på sekunder\n\nApp Store: https://apps.apple.com/app/id6782251621\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.cyca",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/cyca/sv.jpg"
+  },
+  {
+   "locale": "ta-IN",
+   "file": "cyca/ta-IN.jpg",
+   "intended_locale": "ta-IN",
+   "headline_locale": "ta-IN",
+   "screenshot_locale": "ta-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:tam",
+    "script_chars": 267,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.198<0.24; closeup2×1.08: screen_area=0.213<0.24; closeup2×1.16: screen_area=0.228<0.24)"
+   ],
+   "line1": "சுழற்சி தெளிவாக",
+   "line2": "ஓட்டம், அறிகுறி, மனநிலை நொடிகளில்",
+   "chips": [
+    "ஓட்டம், அறிகுறி, மனநிலை நொடிகளில்",
+    "பீரியட் காலண்டர் & ஓவுலேஷன்"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.245,
+    "family": "closeup2",
+    "font": "NotoSansTamil.ttf",
+    "screen_ratio_vs_battai_split": 1.77,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        212,
+        72,
+        869,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.83,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        196,
+        184,
+        885,
+        725
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.54,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.25,
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "சுழற்சி தெளிவாக\nஓட்டம், அறிகுறி, மனநிலை நொடிகளில்\n\n📲 பயோவில் உள்ள இணைப்பு வழியாகப் பதிவிறக்குங்கள்\n\n#Cyca",
+   "caption_link": "சுழற்சி தெளிவாக\nஓட்டம், அறிகுறி, மனநிலை நொடிகளில்\n\nApp Store: https://apps.apple.com/app/id6782251621\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.cyca",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/cyca/ta-IN.jpg"
+  },
+  {
+   "locale": "te-IN",
+   "file": "cyca/te-IN.jpg",
+   "intended_locale": "te-IN",
+   "headline_locale": "te-IN",
+   "screenshot_locale": "te-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:tel",
+    "script_chars": 178,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "నెలసరి స్పష్టంగా",
+   "line2": "ప్రవాహం, లక్షణాలు, మూడ్ క్షణాల్లో",
+   "chips": [
+    "ప్రవాహం, లక్షణాలు, మూడ్ క్షణాల్లో",
+    "నెలసరి క్యాలెండర్, అండోత్సర్గం"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.272,
+    "family": "split2",
+    "font": "NotoSansTelugu.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        248,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.82,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        494,
+        793
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.02,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        3
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        817,
+        440,
+        965
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.1,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "నెలసరి స్పష్టంగా\nప్రవాహం, లక్షణాలు, మూడ్ క్షణాల్లో\n\n📲 బయోలోని లింక్ ద్వారా డౌన్‌లోడ్ చేయండి\n\n#Cyca",
+   "caption_link": "నెలసరి స్పష్టంగా\nప్రవాహం, లక్షణాలు, మూడ్ క్షణాల్లో\n\nApp Store: https://apps.apple.com/app/id6782251621\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.cyca",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/cyca/te-IN.jpg"
+  },
+  {
+   "locale": "th",
+   "file": "cyca/th.jpg",
+   "intended_locale": "th",
+   "headline_locale": "th",
+   "screenshot_locale": "th",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:tha",
+    "script_chars": 223,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "headline shortened to a shorter store hook: ปฏิทินรอบเดือน วันตกไข่",
+    "layout fallback split2->split2 (split2: text does not fit at minimum sizes)"
+   ],
+   "line1": "ปฏิทินรอบเดือน วันตกไข่",
+   "line2": "ปริมาณ อาการ อารมณ์ และโน้ต",
+   "chips": [
+    "ปริมาณ อาการ อารมณ์ และโน้ต",
+    "ปฏิทินรอบเดือน วันตกไข่"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.272,
+    "family": "split2",
+    "font": "NotoSansThai.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        503,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.29,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        529,
+        838
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.33,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        862,
+        528,
+        948
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.15,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 split2）"
+   },
+   "caption_instagram": "ปฏิทินรอบเดือน วันตกไข่\nปริมาณ อาการ อารมณ์ และโน้ต\n\n📲 ดาวน์โหลดได้ที่ลิงก์ในโปรไฟล์ (bio)\n\n#Cyca",
+   "caption_link": "ปฏิทินรอบเดือน วันตกไข่\nปริมาณ อาการ อารมณ์ และโน้ต\n\nApp Store: https://apps.apple.com/app/id6782251621\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.cyca",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/cyca/th.jpg"
+  },
+  {
+   "locale": "tr",
+   "file": "cyca/tr.jpg",
+   "intended_locale": "tr",
+   "headline_locale": "tr",
+   "screenshot_locale": "tr",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Döngün tek bakışta",
+   "line2": "Regl, belirti ve ruh hali saniyede",
+   "chips": [
+    "Regl, belirti ve ruh hali saniyede",
+    "Adet ve yumurtlama takibi"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.272,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        458,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.32,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        526,
+        818
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.38,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        842,
+        496,
+        971
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.05,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Döngün tek bakışta\nRegl, belirti ve ruh hali saniyede\n\n📲 Biyografideki bağlantıdan indirin\n\n#Cyca",
+   "caption_link": "Döngün tek bakışta\nRegl, belirti ve ruh hali saniyede\n\nApp Store: https://apps.apple.com/app/id6782251621\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.cyca",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/cyca/tr.jpg"
+  },
+  {
+   "locale": "uk",
+   "file": "cyca/uk.jpg",
+   "intended_locale": "uk",
+   "headline_locale": "uk",
+   "screenshot_locale": "uk",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:ukr",
+    "script_chars": 193,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Цикл як на долоні",
+   "line2": "Симптоми й настрій за секунди",
+   "chips": [
+    "Симптоми й настрій за секунди",
+    "Овуляція та фертильні дні"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.272,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        248,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.82,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        479,
+        813
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.08,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        837,
+        423,
+        966
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.11,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Цикл як на долоні\nСимптоми й настрій за секунди\n\n📲 Завантажуйте за посиланням у профілі (bio)\n\n#Cyca",
+   "caption_link": "Цикл як на долоні\nСимптоми й настрій за секунди\n\nApp Store: https://apps.apple.com/app/id6782251621\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.cyca",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/cyca/uk.jpg"
+  },
+  {
+   "locale": "ur-PK",
+   "file": "cyca/ur-PK.jpg",
+   "intended_locale": "ur-PK",
+   "headline_locale": "ur-PK",
+   "screenshot_locale": "ur-PK",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:urd",
+    "script_chars": 41,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "اپنا سائیکل سمجھیں",
+   "line2": "بہاؤ، علامات اور موڈ سیکنڈوں میں",
+   "chips": [
+    "بہاؤ، علامات اور موڈ سیکنڈوں میں",
+    "پیریڈ کیلنڈر اور اوویولیشن"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.272,
+    "family": "split2",
+    "font": "NotoSansArabic.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        832,
+        72,
+        1008,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.96,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        545,
+        184,
+        1008,
+        787
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 100,
+        "sub": 50,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.42,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.3,
+        1.4
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        697,
+        811,
+        1008,
+        950
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.45,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.4
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "اپنا سائیکل سمجھیں\nبہاؤ، علامات اور موڈ سیکنڈوں میں\n\n📲 بائیو میں دیے گئے لنک سے ڈاؤن لوڈ کریں\n\n#Cyca",
+   "caption_link": "اپنا سائیکل سمجھیں\nبہاؤ، علامات اور موڈ سیکنڈوں میں\n\nApp Store: https://apps.apple.com/app/id6782251621\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.cyca",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/cyca/ur-PK.jpg"
+  },
+  {
+   "locale": "vi",
+   "file": "cyca/vi.jpg",
+   "intended_locale": "vi",
+   "headline_locale": "vi",
+   "screenshot_locale": "vi",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Hiểu chu kỳ của bạn",
+   "line2": "Ghi kỳ kinh, triệu chứng trong vài giây",
+   "chips": [
+    "Ghi kỳ kinh, triệu chứng trong vài giây",
+    "Lịch kinh, ngày rụng trứng"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.272,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        248,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.82,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        525,
+        829
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.3,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        853,
+        436,
+        982
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.81,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Hiểu chu kỳ của bạn\nGhi kỳ kinh, triệu chứng trong vài giây\n\n📲 Tải về qua link ở bio\n\n#Cyca",
+   "caption_link": "Hiểu chu kỳ của bạn\nGhi kỳ kinh, triệu chứng trong vài giây\n\nApp Store: https://apps.apple.com/app/id6782251621\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.cyca",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/cyca/vi.jpg"
+  },
+  {
+   "locale": "zh-Hans",
+   "file": "cyca/zh-Hans.jpg",
+   "intended_locale": "zh-Hans",
+   "headline_locale": "zh-Hans",
+   "screenshot_locale": "zh-Hans",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:chi_sim",
+    "script_chars": 50,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes)"
+   ],
+   "line1": "经期几秒就记好",
+   "line2": "流量・症状・心情・备注",
+   "chips": [
+    "流量・症状・心情・备注",
+    "经痛记录・每日身体预报"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.257,
+    "family": "closeup2",
+    "font": "NotoSansSC.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        304,
+        72,
+        775,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.7,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        157,
+        184,
+        923,
+        442
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.81,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        292,
+        466,
+        787,
+        552
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.93,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "经期几秒就记好\n流量・症状・心情・备注\n\n📲 请到个人主页（bio）的链接下载\n\n#Cyca",
+   "caption_link": "经期几秒就记好\n流量・症状・心情・备注\n\nApp Store: https://apps.apple.com/app/id6782251621\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.cyca",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/cyca/zh-Hans.jpg"
+  },
+  {
+   "locale": "zh-Hant",
+   "file": "cyca/zh-Hant.jpg",
+   "intended_locale": "zh-Hant",
+   "headline_locale": "zh-Hant",
+   "screenshot_locale": "zh-Hant",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:chi_tra",
+    "script_chars": 54,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes)"
+   ],
+   "line1": "週期一眼看懂",
+   "line2": "幾秒記錄今天・完全離線",
+   "chips": [
+    "幾秒記錄今天・完全離線",
+    "經痛紀錄・經期日曆・每日身體預報"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.258,
+    "family": "closeup2",
+    "font": "NotoSansTC.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        304,
+        72,
+        775,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.7,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        208,
+        184,
+        873,
+        441
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.86,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        202,
+        465,
+        878,
+        551
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.44,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "週期一眼看懂\n幾秒記錄今天・完全離線\n\n📲 請到個人檔案（bio）的連結下載\n\n#Cyca",
+   "caption_link": "週期一眼看懂\n幾秒記錄今天・完全離線\n\nApp Store: https://apps.apple.com/app/id6782251621\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.cyca",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/cyca/zh-Hant.jpg"
+  }
+ ]
+}

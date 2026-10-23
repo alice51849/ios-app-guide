@@ -1,0 +1,5479 @@
+{
+ "schema": "lumi.promo_cards/v1",
+ "app": "countdaysnow",
+ "app_id": "6807079789",
+ "app_store_url": "https://apps.apple.com/app/id6807079789",
+ "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow",
+ "size": [
+  1080,
+  1350
+ ],
+ "built": "2026-10-23",
+ "items": [
+  {
+   "locale": "ar-SA",
+   "file": "countdaysnow/ar-SA.jpg",
+   "intended_locale": "ar-SA",
+   "headline_locale": "ar-SA",
+   "screenshot_locale": "ar-SA",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:ara",
+    "script_chars": 85,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "كم بقي على يومك؟",
+   "line2": "القادم واليوم وما مضى مع عدّ دقيق",
+   "chips": [
+    "القادم واليوم وما مضى مع عدّ دقيق",
+    "تركيز اليوم",
+    "القادم · اليوم · ما مضى"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.276,
+    "family": "closeup2",
+    "font": "NotoSansArabic.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        248,
+        72,
+        832,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.42,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        82,
+        184,
+        999,
+        496
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.79,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.3,
+        1.4
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "كم بقي على يومك؟\nالقادم واليوم وما مضى مع عدّ دقيق\n\n📲 حمّله من الرابط في الملف الشخصي (bio)\n\n#CountDaysNow",
+   "caption_link": "كم بقي على يومك؟\nالقادم واليوم وما مضى مع عدّ دقيق\n\nApp Store: https://apps.apple.com/app/id6807079789\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/countdaysnow/ar-SA.jpg"
+  },
+  {
+   "locale": "bn-BD",
+   "file": "countdaysnow/bn-BD.jpg",
+   "intended_locale": "bn-BD",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": false
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "no localized storefront screenshot (English-only or lookup failed); whole card in en-US",
+    "layout fallback closeup2->closeup2 (closeup2: screen_area=0.236<0.24)"
+   ],
+   "line1": "Count Down to Big Days",
+   "line2": "Plan the prep backwards from each date",
+   "chips": [
+    "Plan the prep backwards from each date",
+    "Countdown Plan: Work Backwards",
+    "Ahead · Today · Since"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.254,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        248,
+        72,
+        833,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.44,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        202,
+        184,
+        879,
+        614
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.69,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Count Down to Big Days\nPlan the prep backwards from each date\n\n📲 Download via the link in bio\n\n#CountDaysNow",
+   "caption_link": "Count Down to Big Days\nPlan the prep backwards from each date\n\nApp Store: https://apps.apple.com/app/id6807079789\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/countdaysnow/bn-BD.jpg"
+  },
+  {
+   "locale": "ca",
+   "file": "countdaysnow/ca.jpg",
+   "intended_locale": "ca",
+   "headline_locale": "ca",
+   "screenshot_locale": "ca",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Compta els dies",
+   "line2": "Dies que falten, avui i des de llavors",
+   "chips": [
+    "Dies que falten, avui i des de llavors",
+    "Focus del dia",
+    "Pròxim · Avui · Des de llavors"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.276,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        248,
+        72,
+        833,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.44,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        107,
+        184,
+        973,
+        497
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.17,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "Compta els dies\nDies que falten, avui i des de llavors\n\n📲 Descarrega-la des de l'enllaç de la bio\n\n#CountDaysNow",
+   "caption_link": "Compta els dies\nDies que falten, avui i des de llavors\n\nApp Store: https://apps.apple.com/app/id6807079789\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/countdaysnow/ca.jpg"
+  },
+  {
+   "locale": "cs",
+   "file": "countdaysnow/cs.jpg",
+   "intended_locale": "cs",
+   "headline_locale": "cs",
+   "screenshot_locale": "cs",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Odpočet důležitých dnů",
+   "line2": "Nadchází · Dnes · Uplynulo",
+   "chips": [
+    "Nadchází · Dnes · Uplynulo",
+    "Denní zaměření",
+    "Události, kategorie a archiv"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.252,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        248,
+        72,
+        833,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.44,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        135,
+        184,
+        945,
+        566
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.89,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "Odpočet důležitých dnů\nNadchází · Dnes · Uplynulo\n\n📲 Stáhněte si ji přes odkaz v profilu (bio)\n\n#CountDaysNow",
+   "caption_link": "Odpočet důležitých dnů\nNadchází · Dnes · Uplynulo\n\nApp Store: https://apps.apple.com/app/id6807079789\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/countdaysnow/cs.jpg"
+  },
+  {
+   "locale": "da",
+   "file": "countdaysnow/da.jpg",
+   "intended_locale": "da",
+   "headline_locale": "da",
+   "screenshot_locale": "da",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Tæl ned til dagen",
+   "line2": "Forude, i dag og siden i én visning",
+   "chips": [
+    "Forude, i dag og siden i én visning",
+    "Dagens fokus",
+    "Kommende · I dag · Siden"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.258,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        248,
+        72,
+        833,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.44,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        88,
+        184,
+        991,
+        436
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 100,
+        "sub": 50,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.35,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        371,
+        460,
+        709,
+        549
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 15.25,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "Tæl ned til dagen\nForude, i dag og siden i én visning\n\n📲 Download via linket i bio\n\n#CountDaysNow",
+   "caption_link": "Tæl ned til dagen\nForude, i dag og siden i én visning\n\nApp Store: https://apps.apple.com/app/id6807079789\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/countdaysnow/da.jpg"
+  },
+  {
+   "locale": "de-DE",
+   "file": "countdaysnow/de-DE.jpg",
+   "intended_locale": "de-DE",
+   "headline_locale": "de-DE",
+   "screenshot_locale": "de-DE",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback closeup2->closeup2 (closeup2: screen_area=0.234<0.24)"
+   ],
+   "line1": "Tage bis zum Termin",
+   "line2": "Demnächst, heute und seitdem",
+   "chips": [
+    "Demnächst, heute und seitdem",
+    "Tagesfokus",
+    "Demnächst · Heute · Seitdem"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.253,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        248,
+        72,
+        833,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.44,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        212,
+        184,
+        867,
+        619
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.04,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Tage bis zum Termin\nDemnächst, heute und seitdem\n\n📲 Download über den Link in der Bio\n\n#CountDaysNow",
+   "caption_link": "Tage bis zum Termin\nDemnächst, heute und seitdem\n\nApp Store: https://apps.apple.com/app/id6807079789\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/countdaysnow/de-DE.jpg"
+  },
+  {
+   "locale": "el",
+   "file": "countdaysnow/el.jpg",
+   "intended_locale": "el",
+   "headline_locale": "el",
+   "screenshot_locale": "el",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:ell",
+    "script_chars": 128,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback closeup2->closeup2 (closeup2: screen_area=0.23<0.24)"
+   ],
+   "line1": "Μέρες ως τη μεγάλη μέρα",
+   "line2": "Προσεχώς · Σήμερα · Από τότε",
+   "chips": [
+    "Προσεχώς · Σήμερα · Από τότε",
+    "Εστίαση ημέρας",
+    "Γεγονότα, κατηγορίες και αρχείο"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.248,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        248,
+        72,
+        833,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.44,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        188,
+        184,
+        892,
+        632
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.61,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Μέρες ως τη μεγάλη μέρα\nΠροσεχώς · Σήμερα · Από τότε\n\n📲 Λήψη από τον σύνδεσμο στο προφίλ (bio)\n\n#CountDaysNow",
+   "caption_link": "Μέρες ως τη μεγάλη μέρα\nΠροσεχώς · Σήμερα · Από τότε\n\nApp Store: https://apps.apple.com/app/id6807079789\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/countdaysnow/el.jpg"
+  },
+  {
+   "locale": "en-AU",
+   "file": "countdaysnow/en-AU.jpg",
+   "intended_locale": "en-AU",
+   "headline_locale": "en-AU",
+   "screenshot_locale": "en-AU",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback closeup2->closeup2 (closeup2: screen_area=0.236<0.24)"
+   ],
+   "line1": "Count Down to Big Days",
+   "line2": "Plan the prep backwards from each date",
+   "chips": [
+    "Plan the prep backwards from each date",
+    "Countdown Plan: Work Backwards",
+    "Ahead · Today · Since"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.254,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        248,
+        72,
+        833,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.44,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        202,
+        184,
+        879,
+        614
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.69,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Count Down to Big Days\nPlan the prep backwards from each date\n\n📲 Download via the link in bio\n\n#CountDaysNow",
+   "caption_link": "Count Down to Big Days\nPlan the prep backwards from each date\n\nApp Store: https://apps.apple.com/app/id6807079789\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/countdaysnow/en-AU.jpg"
+  },
+  {
+   "locale": "en-CA",
+   "file": "countdaysnow/en-CA.jpg",
+   "intended_locale": "en-CA",
+   "headline_locale": "en-CA",
+   "screenshot_locale": "en-CA",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback closeup2->closeup2 (closeup2: screen_area=0.236<0.24)"
+   ],
+   "line1": "Count Down to Big Days",
+   "line2": "Plan the prep backwards from each date",
+   "chips": [
+    "Plan the prep backwards from each date",
+    "Countdown Plan: Work Backwards",
+    "Ahead · Today · Since"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.254,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        248,
+        72,
+        833,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.44,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        202,
+        184,
+        879,
+        614
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.69,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Count Down to Big Days\nPlan the prep backwards from each date\n\n📲 Download via the link in bio\n\n#CountDaysNow",
+   "caption_link": "Count Down to Big Days\nPlan the prep backwards from each date\n\nApp Store: https://apps.apple.com/app/id6807079789\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/countdaysnow/en-CA.jpg"
+  },
+  {
+   "locale": "en-GB",
+   "file": "countdaysnow/en-GB.jpg",
+   "intended_locale": "en-GB",
+   "headline_locale": "en-GB",
+   "screenshot_locale": "en-GB",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback closeup2->closeup2 (closeup2: screen_area=0.236<0.24)"
+   ],
+   "line1": "Count Down to Big Days",
+   "line2": "Plan the prep backwards from each date",
+   "chips": [
+    "Plan the prep backwards from each date",
+    "Countdown Plan: Work Backwards",
+    "Ahead · Today · Since"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.254,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        248,
+        72,
+        833,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.44,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        202,
+        184,
+        879,
+        614
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.69,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Count Down to Big Days\nPlan the prep backwards from each date\n\n📲 Download via the link in bio\n\n#CountDaysNow",
+   "caption_link": "Count Down to Big Days\nPlan the prep backwards from each date\n\nApp Store: https://apps.apple.com/app/id6807079789\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/countdaysnow/en-GB.jpg"
+  },
+  {
+   "locale": "en-US",
+   "file": "countdaysnow/en-US.jpg",
+   "intended_locale": "en-US",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback closeup2->closeup2 (closeup2: screen_area=0.236<0.24)"
+   ],
+   "line1": "Count Down to Big Days",
+   "line2": "Plan the prep backwards from each date",
+   "chips": [
+    "Plan the prep backwards from each date",
+    "Countdown Plan: Work Backwards",
+    "Ahead · Today · Since"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.254,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        248,
+        72,
+        833,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.44,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        202,
+        184,
+        879,
+        614
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.69,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Count Down to Big Days\nPlan the prep backwards from each date\n\n📲 Download via the link in bio\n\n#CountDaysNow",
+   "caption_link": "Count Down to Big Days\nPlan the prep backwards from each date\n\nApp Store: https://apps.apple.com/app/id6807079789\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/countdaysnow/en-US.jpg"
+  },
+  {
+   "locale": "es-ES",
+   "file": "countdaysnow/es-ES.jpg",
+   "intended_locale": "es-ES",
+   "headline_locale": "es-ES",
+   "screenshot_locale": "es-ES",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Cuenta los días",
+   "line2": "Próximos, hoy y anteriores en 3 vistas",
+   "chips": [
+    "Próximos, hoy y anteriores en 3 vistas",
+    "Enfoque del día · Prioridad",
+    "Próximos · Hoy · Anteriores"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.276,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        248,
+        72,
+        833,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.44,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        123,
+        184,
+        957,
+        497
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.52,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "Cuenta los días\nPróximos, hoy y anteriores en 3 vistas\n\n📲 Descárgala desde el enlace de la bio\n\n#CountDaysNow",
+   "caption_link": "Cuenta los días\nPróximos, hoy y anteriores en 3 vistas\n\nApp Store: https://apps.apple.com/app/id6807079789\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/countdaysnow/es-ES.jpg"
+  },
+  {
+   "locale": "es-MX",
+   "file": "countdaysnow/es-MX.jpg",
+   "intended_locale": "es-MX",
+   "headline_locale": "es-MX",
+   "screenshot_locale": "es-MX",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Cuenta los días",
+   "line2": "Próximos, hoy y pasados en 3 vistas",
+   "chips": [
+    "Próximos, hoy y pasados en 3 vistas",
+    "Enfoque del día",
+    "Próximos · Hoy · Pasados"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.272,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        248,
+        72,
+        833,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.44,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        123,
+        184,
+        957,
+        509
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.49,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "Cuenta los días\nPróximos, hoy y pasados en 3 vistas\n\n📲 Descárgala desde el enlace de la bio\n\n#CountDaysNow",
+   "caption_link": "Cuenta los días\nPróximos, hoy y pasados en 3 vistas\n\nApp Store: https://apps.apple.com/app/id6807079789\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/countdaysnow/es-MX.jpg"
+  },
+  {
+   "locale": "fi",
+   "file": "countdaysnow/fi.jpg",
+   "intended_locale": "fi",
+   "headline_locale": "fi",
+   "screenshot_locale": "fi",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Tärkeät päivät tulossa",
+   "line2": "Tulossa, tänään ja kulunut",
+   "chips": [
+    "Tulossa, tänään ja kulunut",
+    "Päivän fokus",
+    "Tulossa · Tänään · Kulunut"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.253,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        248,
+        72,
+        833,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.44,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        152,
+        184,
+        929,
+        565
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.9,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "Tärkeät päivät tulossa\nTulossa, tänään ja kulunut\n\n📲 Lataa bion linkistä\n\n#CountDaysNow",
+   "caption_link": "Tärkeät päivät tulossa\nTulossa, tänään ja kulunut\n\nApp Store: https://apps.apple.com/app/id6807079789\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/countdaysnow/fi.jpg"
+  },
+  {
+   "locale": "fr-CA",
+   "file": "countdaysnow/fr-CA.jpg",
+   "intended_locale": "fr-CA",
+   "headline_locale": "fr-CA",
+   "screenshot_locale": "fr-CA",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Comptez les jours",
+   "line2": "À venir, aujourd'hui, depuis : 3 vues claires",
+   "chips": [
+    "À venir, aujourd'hui, depuis : 3 vues claires",
+    "Priorité du jour · Cap local",
+    "À venir · Aujourd’hui · Depuis"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.279,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        248,
+        72,
+        833,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.44,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        92,
+        184,
+        989,
+        487
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 96,
+        "sub": 48,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.58,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "Comptez les jours\nÀ venir, aujourd'hui, depuis : 3 vues claires\n\n📲 Téléchargez-la via le lien dans la bio\n\n#CountDaysNow",
+   "caption_link": "Comptez les jours\nÀ venir, aujourd'hui, depuis : 3 vues claires\n\nApp Store: https://apps.apple.com/app/id6807079789\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/countdaysnow/fr-CA.jpg"
+  },
+  {
+   "locale": "fr-FR",
+   "file": "countdaysnow/fr-FR.jpg",
+   "intended_locale": "fr-FR",
+   "headline_locale": "fr-FR",
+   "screenshot_locale": "fr-FR",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Comptez les jours",
+   "line2": "À venir, aujourd'hui, depuis : 3 vues claires",
+   "chips": [
+    "À venir, aujourd'hui, depuis : 3 vues claires",
+    "Priorité du jour",
+    "À venir · Aujourd’hui · Depuis"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.279,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        248,
+        72,
+        833,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.44,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        92,
+        184,
+        989,
+        487
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 96,
+        "sub": 48,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.58,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "Comptez les jours\nÀ venir, aujourd'hui, depuis : 3 vues claires\n\n📲 Téléchargez-la via le lien dans la bio\n\n#CountDaysNow",
+   "caption_link": "Comptez les jours\nÀ venir, aujourd'hui, depuis : 3 vues claires\n\nApp Store: https://apps.apple.com/app/id6807079789\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/countdaysnow/fr-FR.jpg"
+  },
+  {
+   "locale": "gu-IN",
+   "file": "countdaysnow/gu-IN.jpg",
+   "intended_locale": "gu-IN",
+   "headline_locale": "gu-IN",
+   "screenshot_locale": "gu-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:guj",
+    "script_chars": 188,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "મહત્વની તારીખો ગણો",
+   "line2": "ત્યારથી, આજે કે આગળ પસંદ કરો",
+   "chips": [
+    "ત્યારથી, આજે કે આગળ પસંદ કરો",
+    "આજનું ધ્યાન",
+    "આગળ · આજે · ત્યારથી"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.282,
+    "family": "closeup2",
+    "font": "NotoSansGujarati.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        247,
+        72,
+        833,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.43,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        86,
+        184,
+        993,
+        479
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 100,
+        "sub": 50,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.89,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "મહત્વની તારીખો ગણો\nત્યારથી, આજે કે આગળ પસંદ કરો\n\n📲 બાયોમાંની લિંકથી ડાઉનલોડ કરો\n\n#CountDaysNow",
+   "caption_link": "મહત્વની તારીખો ગણો\nત્યારથી, આજે કે આગળ પસંદ કરો\n\nApp Store: https://apps.apple.com/app/id6807079789\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/countdaysnow/gu-IN.jpg"
+  },
+  {
+   "locale": "he",
+   "file": "countdaysnow/he.jpg",
+   "intended_locale": "he",
+   "headline_locale": "he",
+   "screenshot_locale": "he",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:heb",
+    "script_chars": 140,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "כמה ימים נשארו?",
+   "line2": "מאז, היום ובהמשך לתאריכים החשובים",
+   "chips": [
+    "מאז, היום ובהמשך לתאריכים החשובים",
+    "המיקוד היומי",
+    "בהמשך · היום · מאז"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.271,
+    "family": "closeup2",
+    "font": "NotoSansHebrew.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        250,
+        72,
+        831,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.42,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        112,
+        184,
+        969,
+        511
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.55,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.3,
+        1.4
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "כמה ימים נשארו?\nמאז, היום ובהמשך לתאריכים החשובים\n\n📲 הורדה דרך הקישור בביו\n\n#CountDaysNow",
+   "caption_link": "כמה ימים נשארו?\nמאז, היום ובהמשך לתאריכים החשובים\n\nApp Store: https://apps.apple.com/app/id6807079789\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/countdaysnow/he.jpg"
+  },
+  {
+   "locale": "hi",
+   "file": "countdaysnow/hi.jpg",
+   "intended_locale": "hi",
+   "headline_locale": "hi",
+   "screenshot_locale": "hi",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:hin",
+    "script_chars": 160,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback closeup2->closeup2 (closeup2: screen_area=0.227<0.24)"
+   ],
+   "line1": "ख़ास दिनों की उलटी गिनती",
+   "line2": "आगे, आज और बीते पल",
+   "chips": [
+    "आगे, आज और बीते पल",
+    "आज का फ़ोकस",
+    "आगे · आज · तब से"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.245,
+    "family": "closeup2",
+    "font": "NotoSansDevanagari.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        248,
+        72,
+        832,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.43,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        232,
+        184,
+        848,
+        640
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.83,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "ख़ास दिनों की उलटी गिनती\nआगे, आज और बीते पल\n\n📲 बायो में दिए लिंक से डाउनलोड करें\n\n#CountDaysNow",
+   "caption_link": "ख़ास दिनों की उलटी गिनती\nआगे, आज और बीते पल\n\nApp Store: https://apps.apple.com/app/id6807079789\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/countdaysnow/hi.jpg"
+  },
+  {
+   "locale": "hr",
+   "file": "countdaysnow/hr.jpg",
+   "intended_locale": "hr",
+   "headline_locale": "hr",
+   "screenshot_locale": "hr",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Odbrojavanje dana",
+   "line2": "Događaji, kategorije i podsjetnici",
+   "chips": [
+    "Događaji, kategorije i podsjetnici",
+    "Dnevni fokus",
+    "Slijedi · Danas · Prošlo"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.265,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        248,
+        72,
+        833,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.44,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        80,
+        184,
+        1000,
+        421
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.03,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        376,
+        445,
+        705,
+        530
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 15.18,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "Odbrojavanje dana\nDogađaji, kategorije i podsjetnici\n\n📲 Preuzmi putem poveznice u biografiji (bio)\n\n#CountDaysNow",
+   "caption_link": "Odbrojavanje dana\nDogađaji, kategorije i podsjetnici\n\nApp Store: https://apps.apple.com/app/id6807079789\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/countdaysnow/hr.jpg"
+  },
+  {
+   "locale": "hu",
+   "file": "countdaysnow/hu.jpg",
+   "intended_locale": "hu",
+   "headline_locale": "hu",
+   "screenshot_locale": "hu",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Visszaszámlálás",
+   "line2": "Fontos napok, emlékeztetők, widget",
+   "chips": [
+    "Fontos napok, emlékeztetők, widget",
+    "Napi fókusz",
+    "Közelgő · Ma · Azóta"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.272,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        248,
+        72,
+        833,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.44,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        99,
+        184,
+        981,
+        509
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.8,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "Visszaszámlálás\nFontos napok, emlékeztetők, widget\n\n📲 Töltsd le a bio linkjéről\n\n#CountDaysNow",
+   "caption_link": "Visszaszámlálás\nFontos napok, emlékeztetők, widget\n\nApp Store: https://apps.apple.com/app/id6807079789\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/countdaysnow/hu.jpg"
+  },
+  {
+   "locale": "id",
+   "file": "countdaysnow/id.jpg",
+   "intended_locale": "id",
+   "headline_locale": "id",
+   "screenshot_locale": "id",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Hitung mundur harimu",
+   "line2": "Mendatang, hari ini, dan sejak",
+   "chips": [
+    "Mendatang, hari ini, dan sejak",
+    "Fokus Harian · Arah Pribadi",
+    "Mendatang · Hari ini · Sejak"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.252,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        248,
+        72,
+        833,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.44,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        116,
+        184,
+        965,
+        566
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.18,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "Hitung mundur harimu\nMendatang, hari ini, dan sejak\n\n📲 Unduh lewat link di bio\n\n#CountDaysNow",
+   "caption_link": "Hitung mundur harimu\nMendatang, hari ini, dan sejak\n\nApp Store: https://apps.apple.com/app/id6807079789\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/countdaysnow/id.jpg"
+  },
+  {
+   "locale": "it",
+   "file": "countdaysnow/it.jpg",
+   "intended_locale": "it",
+   "headline_locale": "it",
+   "screenshot_locale": "it",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback closeup2->closeup2 (closeup2: screen_area=0.235<0.24)"
+   ],
+   "line1": "Il conto alla rovescia",
+   "line2": "In arrivo, oggi, da allora: 3 viste",
+   "chips": [
+    "In arrivo, oggi, da allora: 3 viste",
+    "Focus del giorno",
+    "In arrivo · Oggi · Da allora"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.253,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        248,
+        72,
+        833,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.44,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        210,
+        184,
+        870,
+        618
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.68,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Il conto alla rovescia\nIn arrivo, oggi, da allora: 3 viste\n\n📲 Scaricala dal link nella bio\n\n#CountDaysNow",
+   "caption_link": "Il conto alla rovescia\nIn arrivo, oggi, da allora: 3 viste\n\nApp Store: https://apps.apple.com/app/id6807079789\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/countdaysnow/it.jpg"
+  },
+  {
+   "locale": "ja",
+   "file": "countdaysnow/ja.jpg",
+   "intended_locale": "ja",
+   "headline_locale": "ja",
+   "screenshot_locale": "ja",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:jpn",
+    "script_chars": 52,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "あと何日？ひと目で",
+   "line2": "これから・今日・あれから",
+   "chips": [
+    "これから・今日・あれから",
+    "今日のフォーカス",
+    "これから · 今日 · あれから"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.263,
+    "family": "closeup2",
+    "font": "NotoSansJP.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        250,
+        72,
+        829,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.44,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        94,
+        184,
+        985,
+        425
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 96,
+        "sub": 48,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.22,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        348,
+        449,
+        733,
+        535
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 15.06,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "あと何日？ひと目で\nこれから・今日・あれから\n\n📲 ダウンロードはプロフィール（bio）のリンクから\n\n#CountDaysNow",
+   "caption_link": "あと何日？ひと目で\nこれから・今日・あれから\n\nApp Store: https://apps.apple.com/app/id6807079789\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/countdaysnow/ja.jpg"
+  },
+  {
+   "locale": "kn-IN",
+   "file": "countdaysnow/kn-IN.jpg",
+   "intended_locale": "kn-IN",
+   "headline_locale": "kn-IN",
+   "screenshot_locale": "kn-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:kan",
+    "script_chars": 177,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "ಪ್ರಮುಖ ದಿನಕ್ಕೆ ಎಣಿಕೆ",
+   "line2": "ಮುಂದಿರುವ ದಿನ ಎಣಿಸಿ · ವಿಜೆಟ್‌ನಲ್ಲಿ ನೋಡಿ",
+   "chips": [
+    "ಮುಂದಿರುವ ದಿನ ಎಣಿಸಿ · ವಿಜೆಟ್‌ನಲ್ಲಿ ನೋಡಿ",
+    "ಇಂದಿನ ಗಮನ",
+    "ಮುಂದೆ · ಇಂದು · ಅಂದಿನಿಂದ"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.283,
+    "family": "closeup2",
+    "font": "NotoSansKannada.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        260,
+        72,
+        820,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.48,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        78,
+        184,
+        1003,
+        476
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 96,
+        "sub": 48,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.61,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "ಪ್ರಮುಖ ದಿನಕ್ಕೆ ಎಣಿಕೆ\nಮುಂದಿರುವ ದಿನ ಎಣಿಸಿ · ವಿಜೆಟ್‌ನಲ್ಲಿ ನೋಡಿ\n\n📲 ಬಯೋದಲ್ಲಿರುವ ಲಿಂಕ್‌ನಿಂದ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ\n\n#CountDaysNow",
+   "caption_link": "ಪ್ರಮುಖ ದಿನಕ್ಕೆ ಎಣಿಕೆ\nಮುಂದಿರುವ ದಿನ ಎಣಿಸಿ · ವಿಜೆಟ್‌ನಲ್ಲಿ ನೋಡಿ\n\nApp Store: https://apps.apple.com/app/id6807079789\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/countdaysnow/kn-IN.jpg"
+  },
+  {
+   "locale": "ko",
+   "file": "countdaysnow/ko.jpg",
+   "intended_locale": "ko",
+   "headline_locale": "ko",
+   "screenshot_locale": "ko",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:kor",
+    "script_chars": 42,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback closeup2->closeup2 (closeup2: screen_area=0.232<0.24)"
+   ],
+   "line1": "소중한 날까지 카운트다운",
+   "line2": "다가올 날·오늘·지난 날 한눈에",
+   "chips": [
+    "다가올 날·오늘·지난 날 한눈에",
+    "오늘의 초점",
+    "다가올 날 · 오늘 · 지난날"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.25,
+    "family": "closeup2",
+    "font": "NotoSansKR.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        250,
+        72,
+        829,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.44,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        228,
+        184,
+        853,
+        626
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.84,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "소중한 날까지 카운트다운\n다가올 날·오늘·지난 날 한눈에\n\n📲 다운로드는 프로필(bio) 링크에서\n\n#CountDaysNow",
+   "caption_link": "소중한 날까지 카운트다운\n다가올 날·오늘·지난 날 한눈에\n\nApp Store: https://apps.apple.com/app/id6807079789\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/countdaysnow/ko.jpg"
+  },
+  {
+   "locale": "ml-IN",
+   "file": "countdaysnow/ml-IN.jpg",
+   "intended_locale": "ml-IN",
+   "headline_locale": "ml-IN",
+   "screenshot_locale": "ml-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:mal",
+    "script_chars": 208,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "headline shortened to a shorter store hook: ഇന്നത്തെ ശ്രദ്ധ",
+    "layout fallback closeup2->closeup2 (closeup2: text does not fit at minimum sizes)"
+   ],
+   "line1": "ഇന്നത്തെ ശ്രദ്ധ",
+   "line2": "ദിവസങ്ങൾ എണ്ണൂ · ആദ്യ ദിവസം മുതൽ വിജറ്റ്",
+   "chips": [
+    "ദിവസങ്ങൾ എണ്ണൂ · ആദ്യ ദിവസം മുതൽ വിജറ്റ്",
+    "ഇന്നത്തെ ശ്രദ്ധ",
+    "വരാനിരിക്കുന്നത് · ഇന്ന് · അന്നുമുതൽ"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.259,
+    "family": "closeup2",
+    "font": "NotoSansMalayalam.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        246,
+        72,
+        835,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.43,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        82,
+        184,
+        999,
+        547
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.51,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "ഇന്നത്തെ ശ്രദ്ധ\nദിവസങ്ങൾ എണ്ണൂ · ആദ്യ ദിവസം മുതൽ വിജറ്റ്\n\n📲 ബയോയിലെ ലിങ്ക് വഴി ഡൗൺലോഡ് ചെയ്യുക\n\n#CountDaysNow",
+   "caption_link": "ഇന്നത്തെ ശ്രദ്ധ\nദിവസങ്ങൾ എണ്ണൂ · ആദ്യ ദിവസം മുതൽ വിജറ്റ്\n\nApp Store: https://apps.apple.com/app/id6807079789\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/countdaysnow/ml-IN.jpg"
+  },
+  {
+   "locale": "mr-IN",
+   "file": "countdaysnow/mr-IN.jpg",
+   "intended_locale": "mr-IN",
+   "headline_locale": "mr-IN",
+   "screenshot_locale": "mr-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:mar",
+    "script_chars": 175,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback closeup2->closeup2 (closeup2: screen_area=0.225<0.24)"
+   ],
+   "line1": "खास दिवसांची उलटी गणना",
+   "line2": "पुढे, आज आणि गेलेले क्षण",
+   "chips": [
+    "पुढे, आज आणि गेलेले क्षण",
+    "आजचा केंद्रबिंदू",
+    "पुढे · आज · तेव्हापासून"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.242,
+    "family": "closeup2",
+    "font": "NotoSansDevanagari.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        248,
+        72,
+        832,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.43,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        214,
+        184,
+        865,
+        647
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.78,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "खास दिवसांची उलटी गणना\nपुढे, आज आणि गेलेले क्षण\n\n📲 बायोमधील लिंकवरून डाउनलोड करा\n\n#CountDaysNow",
+   "caption_link": "खास दिवसांची उलटी गणना\nपुढे, आज आणि गेलेले क्षण\n\nApp Store: https://apps.apple.com/app/id6807079789\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/countdaysnow/mr-IN.jpg"
+  },
+  {
+   "locale": "ms",
+   "file": "countdaysnow/ms.jpg",
+   "intended_locale": "ms",
+   "headline_locale": "ms",
+   "screenshot_locale": "ms",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback closeup2->closeup2 (closeup2: screen_area=0.23<0.24)"
+   ],
+   "line1": "Kira detik hari penting",
+   "line2": "Akan datang, hari ini dan sejak",
+   "chips": [
+    "Akan datang, hari ini dan sejak",
+    "Fokus Harian",
+    "Akan datang · Hari ini · Sejak"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.248,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        248,
+        72,
+        833,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.44,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        198,
+        184,
+        882,
+        631
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.83,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Kira detik hari penting\nAkan datang, hari ini dan sejak\n\n📲 Muat turun melalui pautan dalam bio\n\n#CountDaysNow",
+   "caption_link": "Kira detik hari penting\nAkan datang, hari ini dan sejak\n\nApp Store: https://apps.apple.com/app/id6807079789\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/countdaysnow/ms.jpg"
+  },
+  {
+   "locale": "nl-NL",
+   "file": "countdaysnow/nl-NL.jpg",
+   "intended_locale": "nl-NL",
+   "headline_locale": "nl-NL",
+   "screenshot_locale": "nl-NL",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Aftellen naar je dag",
+   "line2": "Komend, vandaag en sinds",
+   "chips": [
+    "Komend, vandaag en sinds",
+    "Dagfocus",
+    "Komend · Vandaag · Sinds"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.267,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        248,
+        72,
+        833,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.44,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        81,
+        184,
+        999,
+        411
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.65,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        408,
+        435,
+        672,
+        524
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 15.31,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "Aftellen naar je dag\nKomend, vandaag en sinds\n\n📲 Download via de link in bio\n\n#CountDaysNow",
+   "caption_link": "Aftellen naar je dag\nKomend, vandaag en sinds\n\nApp Store: https://apps.apple.com/app/id6807079789\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/countdaysnow/nl-NL.jpg"
+  },
+  {
+   "locale": "no",
+   "file": "countdaysnow/no.jpg",
+   "intended_locale": "no",
+   "headline_locale": "no",
+   "screenshot_locale": "no",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Tell ned til dagen",
+   "line2": "Fremover, i dag og siden i én visning",
+   "chips": [
+    "Fremover, i dag og siden i én visning",
+    "Dagens fokus · Retning",
+    "Fremover · I dag · Siden"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.276,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        248,
+        72,
+        833,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.44,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        88,
+        184,
+        992,
+        498
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 100,
+        "sub": 50,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.58,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "Tell ned til dagen\nFremover, i dag og siden i én visning\n\n📲 Last ned via lenken i bio\n\n#CountDaysNow",
+   "caption_link": "Tell ned til dagen\nFremover, i dag og siden i én visning\n\nApp Store: https://apps.apple.com/app/id6807079789\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/countdaysnow/no.jpg"
+  },
+  {
+   "locale": "or-IN",
+   "file": "countdaysnow/or-IN.jpg",
+   "intended_locale": "or-IN",
+   "headline_locale": "or-IN",
+   "screenshot_locale": "or-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:ori",
+    "script_chars": 158,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "ଗୁରୁତ୍ୱପୂର୍ଣ୍ଣ ତାରିଖ ଗଣନା",
+   "line2": "ଠାରୁ, ଆଜି କିମ୍ବା ଆଗକୁ ବାଛନ୍ତୁ",
+   "chips": [
+    "ଠାରୁ, ଆଜି କିମ୍ବା ଆଗକୁ ବାଛନ୍ତୁ",
+    "ଆଜିର ଧ୍ୟାନ",
+    "ଆଗକୁ · ଆଜି · ସେବେଠାରୁ"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.253,
+    "family": "closeup2",
+    "font": "NotoSansOriya.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        248,
+        72,
+        833,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.44,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        94,
+        184,
+        986,
+        456
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.36,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        410,
+        480,
+        670,
+        565
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 15.54,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "ଗୁରୁତ୍ୱପୂର୍ଣ୍ଣ ତାରିଖ ଗଣନା\nଠାରୁ, ଆଜି କିମ୍ବା ଆଗକୁ ବାଛନ୍ତୁ\n\n📲 ବାୟୋରେ ଥିବା ଲିଙ୍କରୁ ଡାଉନଲୋଡ୍ କରନ୍ତୁ\n\n#CountDaysNow",
+   "caption_link": "ଗୁରୁତ୍ୱପୂର୍ଣ୍ଣ ତାରିଖ ଗଣନା\nଠାରୁ, ଆଜି କିମ୍ବା ଆଗକୁ ବାଛନ୍ତୁ\n\nApp Store: https://apps.apple.com/app/id6807079789\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/countdaysnow/or-IN.jpg"
+  },
+  {
+   "locale": "pa-IN",
+   "file": "countdaysnow/pa-IN.jpg",
+   "intended_locale": "pa-IN",
+   "headline_locale": "pa-IN",
+   "screenshot_locale": "pa-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:pan",
+    "script_chars": 128,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "ਅਹਿਮ ਮਿਤੀਆਂ ਦੀ ਗਿਣਤੀ",
+   "line2": "ਤੋਂ, ਅੱਜ ਜਾਂ ਅੱਗੇ ਚੁਣੋ",
+   "chips": [
+    "ਤੋਂ, ਅੱਜ ਜਾਂ ਅੱਗੇ ਚੁਣੋ",
+    "ਅੱਜ ਦਾ ਧਿਆਨ",
+    "ਅੱਗੇ · ਅੱਜ · ਉਦੋਂ ਤੋਂ"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.251,
+    "family": "closeup2",
+    "font": "NotoSansGurmukhi.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        247,
+        72,
+        833,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.43,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        81,
+        184,
+        999,
+        453
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.39,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        392,
+        477,
+        689,
+        569
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 15.47,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "ਅਹਿਮ ਮਿਤੀਆਂ ਦੀ ਗਿਣਤੀ\nਤੋਂ, ਅੱਜ ਜਾਂ ਅੱਗੇ ਚੁਣੋ\n\n📲 ਬਾਇਓ ਵਿੱਚ ਦਿੱਤੇ ਲਿੰਕ ਤੋਂ ਡਾਊਨਲੋਡ ਕਰੋ\n\n#CountDaysNow",
+   "caption_link": "ਅਹਿਮ ਮਿਤੀਆਂ ਦੀ ਗਿਣਤੀ\nਤੋਂ, ਅੱਜ ਜਾਂ ਅੱਗੇ ਚੁਣੋ\n\nApp Store: https://apps.apple.com/app/id6807079789\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/countdaysnow/pa-IN.jpg"
+  },
+  {
+   "locale": "pl",
+   "file": "countdaysnow/pl.jpg",
+   "intended_locale": "pl",
+   "headline_locale": "pl",
+   "screenshot_locale": "pl",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Odliczaj do ważnych dni",
+   "line2": "Nadchodzi, dziś i minęło",
+   "chips": [
+    "Nadchodzi, dziś i minęło",
+    "Fokus dnia",
+    "Nadchodzi · Dziś · Minęło"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.253,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        248,
+        72,
+        833,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.44,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        192,
+        184,
+        887,
+        565
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.71,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "Odliczaj do ważnych dni\nNadchodzi, dziś i minęło\n\n📲 Pobierz przez link w bio\n\n#CountDaysNow",
+   "caption_link": "Odliczaj do ważnych dni\nNadchodzi, dziś i minęło\n\nApp Store: https://apps.apple.com/app/id6807079789\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/countdaysnow/pl.jpg"
+  },
+  {
+   "locale": "pt-BR",
+   "file": "countdaysnow/pt-BR.jpg",
+   "intended_locale": "pt-BR",
+   "headline_locale": "pt-BR",
+   "screenshot_locale": "pt-BR",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback closeup2->closeup2 (closeup2: screen_area=0.232<0.24)"
+   ],
+   "line1": "Contagem das datas",
+   "line2": "Futuro, hoje e quanto tempo passou",
+   "chips": [
+    "Futuro, hoje e quanto tempo passou",
+    "Foco do dia · Escolha",
+    "A seguir · Hoje · Desde então"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.25,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        248,
+        72,
+        833,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.44,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        250,
+        184,
+        829,
+        626
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.94,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Contagem das datas\nFuturo, hoje e quanto tempo passou\n\n📲 Baixe pelo link na bio\n\n#CountDaysNow",
+   "caption_link": "Contagem das datas\nFuturo, hoje e quanto tempo passou\n\nApp Store: https://apps.apple.com/app/id6807079789\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/countdaysnow/pt-BR.jpg"
+  },
+  {
+   "locale": "pt-PT",
+   "file": "countdaysnow/pt-PT.jpg",
+   "intended_locale": "pt-PT",
+   "headline_locale": "pt-PT",
+   "screenshot_locale": "pt-PT",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback closeup2->closeup2 (closeup2: screen_area=0.21<0.24; closeup2×1.08: screen_area=0.226<0.24)"
+   ],
+   "line1": "Contagem das datas",
+   "line2": "O que vem, hoje e quanto tempo passou",
+   "chips": [
+    "O que vem, hoje e quanto tempo passou",
+    "Foco do dia",
+    "Por vir · Hoje · Desde então"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.242,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.52,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        248,
+        72,
+        833,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.44,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        251,
+        184,
+        829,
+        691
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.95,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Contagem das datas\nO que vem, hoje e quanto tempo passou\n\n📲 Download via the link in bio\n\n#CountDaysNow",
+   "caption_link": "Contagem das datas\nO que vem, hoje e quanto tempo passou\n\nApp Store: https://apps.apple.com/app/id6807079789\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow",
+   "cta_source": "en-fallback",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/countdaysnow/pt-PT.jpg"
+  },
+  {
+   "locale": "ro",
+   "file": "countdaysnow/ro.jpg",
+   "intended_locale": "ro",
+   "headline_locale": "ro",
+   "screenshot_locale": "ro",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback closeup2->closeup2 (closeup2: screen_area=0.23<0.24)"
+   ],
+   "line1": "Numărătoare de zile",
+   "line2": "Evenimente, categorii și mementouri",
+   "chips": [
+    "Evenimente, categorii și mementouri",
+    "Focusul zilei",
+    "Urmează · Astăzi · De atunci"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.249,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        248,
+        72,
+        833,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.44,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        166,
+        184,
+        913,
+        630
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.58,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Numărătoare de zile\nEvenimente, categorii și mementouri\n\n📲 Descarcă din linkul din bio\n\n#CountDaysNow",
+   "caption_link": "Numărătoare de zile\nEvenimente, categorii și mementouri\n\nApp Store: https://apps.apple.com/app/id6807079789\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/countdaysnow/ro.jpg"
+  },
+  {
+   "locale": "ru",
+   "file": "countdaysnow/ru.jpg",
+   "intended_locale": "ru",
+   "headline_locale": "ru",
+   "screenshot_locale": "ru",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:rus",
+    "script_chars": 209,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Дни до важных событий",
+   "line2": "Впереди · Сегодня · Прошло",
+   "chips": [
+    "Впереди · Сегодня · Прошло",
+    "Фокус дня · Личный выбор",
+    "События, категории и архив"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.254,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        248,
+        72,
+        833,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.44,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        94,
+        184,
+        987,
+        560
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.89,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "Дни до важных событий\nВпереди · Сегодня · Прошло\n\n📲 Скачать можно по ссылке в профиле (bio)\n\n#CountDaysNow",
+   "caption_link": "Дни до важных событий\nВпереди · Сегодня · Прошло\n\nApp Store: https://apps.apple.com/app/id6807079789\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/countdaysnow/ru.jpg"
+  },
+  {
+   "locale": "sk",
+   "file": "countdaysnow/sk.jpg",
+   "intended_locale": "sk",
+   "headline_locale": "sk",
+   "screenshot_locale": "sk",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback closeup2->closeup2 (closeup2: screen_area=0.23<0.24)"
+   ],
+   "line1": "Odpočet dôležitých dní",
+   "line2": "Udalosti, kategórie a pripomienky",
+   "chips": [
+    "Udalosti, kategórie a pripomienky",
+    "Fokus dňa",
+    "Pred nami · Dnes · Odvtedy"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.248,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        248,
+        72,
+        833,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.44,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        148,
+        184,
+        933,
+        631
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.01,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Odpočet dôležitých dní\nUdalosti, kategórie a pripomienky\n\n📲 Stiahnite si ju cez odkaz v profile (bio)\n\n#CountDaysNow",
+   "caption_link": "Odpočet dôležitých dní\nUdalosti, kategórie a pripomienky\n\nApp Store: https://apps.apple.com/app/id6807079789\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/countdaysnow/sk.jpg"
+  },
+  {
+   "locale": "sl-SI",
+   "file": "countdaysnow/sl-SI.jpg",
+   "intended_locale": "sl-SI",
+   "headline_locale": "sl-SI",
+   "screenshot_locale": "sl-SI",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Odštevanje dni",
+   "line2": "Dogodki, kategorije in opomniki",
+   "chips": [
+    "Dogodki, kategorije in opomniki",
+    "Fokus dneva",
+    "Prihaja · Danes · Od takrat"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.272,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        248,
+        72,
+        833,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.44,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        126,
+        184,
+        953,
+        509
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.04,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "Odštevanje dni\nDogodki, kategorije in opomniki\n\n📲 Prenesite prek povezave v biu\n\n#CountDaysNow",
+   "caption_link": "Odštevanje dni\nDogodki, kategorije in opomniki\n\nApp Store: https://apps.apple.com/app/id6807079789\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/countdaysnow/sl-SI.jpg"
+  },
+  {
+   "locale": "sv",
+   "file": "countdaysnow/sv.jpg",
+   "intended_locale": "sv",
+   "headline_locale": "sv",
+   "screenshot_locale": "sv",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback closeup2->closeup2 (closeup2: screen_area=0.23<0.24)"
+   ],
+   "line1": "Räkna ner till dagen",
+   "line2": "Framåt, i dag och sedan i en vy",
+   "chips": [
+    "Framåt, i dag och sedan i en vy",
+    "Dagens fokus · Dagens val",
+    "Framöver · I dag · Sedan"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.249,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        248,
+        72,
+        833,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.44,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        252,
+        184,
+        829,
+        630
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.93,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Räkna ner till dagen\nFramåt, i dag och sedan i en vy\n\n📲 Ladda ner via länken i bion\n\n#CountDaysNow",
+   "caption_link": "Räkna ner till dagen\nFramåt, i dag och sedan i en vy\n\nApp Store: https://apps.apple.com/app/id6807079789\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/countdaysnow/sv.jpg"
+  },
+  {
+   "locale": "ta-IN",
+   "file": "countdaysnow/ta-IN.jpg",
+   "intended_locale": "ta-IN",
+   "headline_locale": "ta-IN",
+   "screenshot_locale": "ta-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:tam",
+    "script_chars": 197,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "முக்கிய நாள்",
+   "line2": "வரும் நாட்களைக் கணக்கிடு · விட்ஜெட்",
+   "chips": [
+    "வரும் நாட்களைக் கணக்கிடு · விட்ஜெட்",
+    "இன்றைய கவனம்",
+    "வரவிருப்பவை · இன்று · கடந்தவை"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.25,
+    "family": "closeup2",
+    "font": "NotoSansTamil.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        247,
+        72,
+        833,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.43,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        126,
+        184,
+        954,
+        574
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.05,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "முக்கிய நாள்\nவரும் நாட்களைக் கணக்கிடு · விட்ஜெட்\n\n📲 பயோவில் உள்ள இணைப்பு வழியாகப் பதிவிறக்குங்கள்\n\n#CountDaysNow",
+   "caption_link": "முக்கிய நாள்\nவரும் நாட்களைக் கணக்கிடு · விட்ஜெட்\n\nApp Store: https://apps.apple.com/app/id6807079789\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/countdaysnow/ta-IN.jpg"
+  },
+  {
+   "locale": "te-IN",
+   "file": "countdaysnow/te-IN.jpg",
+   "intended_locale": "te-IN",
+   "headline_locale": "te-IN",
+   "screenshot_locale": "te-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:tel",
+    "script_chars": 171,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "ముఖ్యమైన రోజు",
+   "line2": "ఎన్ని రోజులున్నాయో లెక్కించండి",
+   "chips": [
+    "ఎన్ని రోజులున్నాయో లెక్కించండి",
+    "నేటి దృష్టి",
+    "రాబోయేవి · ఈ రోజు · గడిచినవి"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.275,
+    "family": "closeup2",
+    "font": "NotoSansTelugu.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        246,
+        72,
+        833,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.43,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        152,
+        184,
+        927,
+        499
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.8,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "ముఖ్యమైన రోజు\nఎన్ని రోజులున్నాయో లెక్కించండి\n\n📲 బయోలోని లింక్ ద్వారా డౌన్‌లోడ్ చేయండి\n\n#CountDaysNow",
+   "caption_link": "ముఖ్యమైన రోజు\nఎన్ని రోజులున్నాయో లెక్కించండి\n\nApp Store: https://apps.apple.com/app/id6807079789\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/countdaysnow/te-IN.jpg"
+  },
+  {
+   "locale": "th",
+   "file": "countdaysnow/th.jpg",
+   "intended_locale": "th",
+   "headline_locale": "th",
+   "screenshot_locale": "th",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:tha",
+    "script_chars": 160,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "นับถอยหลังวันสำคัญ",
+   "line2": "กำลังจะมาถึง · วันนี้ · ที่ผ่านมา",
+   "chips": [
+    "กำลังจะมาถึง · วันนี้ · ที่ผ่านมา",
+    "โฟกัสประจำวัน",
+    "กิจกรรม หมวดหมู่ และคลัง"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.253,
+    "family": "closeup2",
+    "font": "NotoSansThai.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        247,
+        72,
+        833,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.43,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        83,
+        184,
+        997,
+        455
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 100,
+        "sub": 50,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.99,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        386,
+        479,
+        693,
+        565
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 15.47,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "นับถอยหลังวันสำคัญ\nกำลังจะมาถึง · วันนี้ · ที่ผ่านมา\n\n📲 ดาวน์โหลดได้ที่ลิงก์ในโปรไฟล์ (bio)\n\n#CountDaysNow",
+   "caption_link": "นับถอยหลังวันสำคัญ\nกำลังจะมาถึง · วันนี้ · ที่ผ่านมา\n\nApp Store: https://apps.apple.com/app/id6807079789\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/countdaysnow/th.jpg"
+  },
+  {
+   "locale": "tr",
+   "file": "countdaysnow/tr.jpg",
+   "intended_locale": "tr",
+   "headline_locale": "tr",
+   "screenshot_locale": "tr",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Önemli günler",
+   "line2": "Geri sayım: Yaklaşan · Bugün · Geçen",
+   "chips": [
+    "Geri sayım: Yaklaşan · Bugün · Geçen",
+    "Günün Odağı",
+    "Etkinlikler, kategoriler ve arşiv"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.266,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        248,
+        72,
+        833,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.44,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        142,
+        184,
+        938,
+        525
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.21,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "Önemli günler\nGeri sayım: Yaklaşan · Bugün · Geçen\n\n📲 Biyografideki bağlantıdan indirin\n\n#CountDaysNow",
+   "caption_link": "Önemli günler\nGeri sayım: Yaklaşan · Bugün · Geçen\n\nApp Store: https://apps.apple.com/app/id6807079789\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/countdaysnow/tr.jpg"
+  },
+  {
+   "locale": "uk",
+   "file": "countdaysnow/uk.jpg",
+   "intended_locale": "uk",
+   "headline_locale": "uk",
+   "screenshot_locale": "uk",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:ukr",
+    "script_chars": 195,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Дні до важливих подій",
+   "line2": "Попереду · Сьогодні · Відтоді",
+   "chips": [
+    "Попереду · Сьогодні · Відтоді",
+    "Фокус дня",
+    "Події, категорії та архів"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.253,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        248,
+        72,
+        833,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.44,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        84,
+        184,
+        995,
+        565
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.72,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "Дні до важливих подій\nПопереду · Сьогодні · Відтоді\n\n📲 Завантажуйте за посиланням у профілі (bio)\n\n#CountDaysNow",
+   "caption_link": "Дні до важливих подій\nПопереду · Сьогодні · Відтоді\n\nApp Store: https://apps.apple.com/app/id6807079789\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/countdaysnow/uk.jpg"
+  },
+  {
+   "locale": "ur-PK",
+   "file": "countdaysnow/ur-PK.jpg",
+   "intended_locale": "ur-PK",
+   "headline_locale": "ur-PK",
+   "screenshot_locale": "ur-PK",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:urd",
+    "script_chars": 25,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "اہم دن گنتے رہیں",
+   "line2": "آنے والے، آج اور گزرے لمحات",
+   "chips": [
+    "آنے والے، آج اور گزرے لمحات",
+    "آج کی توجہ",
+    "آنے والے · آج · گزرے ہوئے"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.274,
+    "family": "closeup2",
+    "font": "NotoSansArabic.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        248,
+        72,
+        832,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.42,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        145,
+        184,
+        935,
+        504
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.62,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.3,
+        1.4
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "اہم دن گنتے رہیں\nآنے والے، آج اور گزرے لمحات\n\n📲 بائیو میں دیے گئے لنک سے ڈاؤن لوڈ کریں\n\n#CountDaysNow",
+   "caption_link": "اہم دن گنتے رہیں\nآنے والے، آج اور گزرے لمحات\n\nApp Store: https://apps.apple.com/app/id6807079789\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/countdaysnow/ur-PK.jpg"
+  },
+  {
+   "locale": "vi",
+   "file": "countdaysnow/vi.jpg",
+   "intended_locale": "vi",
+   "headline_locale": "vi",
+   "screenshot_locale": "vi",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback closeup2->closeup2 (closeup2: screen_area=0.228<0.24)"
+   ],
+   "line1": "Đếm ngược ngày vui",
+   "line2": "Sắp tới · Hôm nay · Đã qua",
+   "chips": [
+    "Sắp tới · Hôm nay · Đã qua",
+    "Trọng tâm hôm nay",
+    "Sự kiện, danh mục và kho lưu trữ"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.246,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        248,
+        72,
+        833,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.44,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        212,
+        184,
+        868,
+        636
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.77,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Đếm ngược ngày vui\nSắp tới · Hôm nay · Đã qua\n\n📲 Tải về qua link ở bio\n\n#CountDaysNow",
+   "caption_link": "Đếm ngược ngày vui\nSắp tới · Hôm nay · Đã qua\n\nApp Store: https://apps.apple.com/app/id6807079789\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/countdaysnow/vi.jpg"
+  },
+  {
+   "locale": "zh-Hans",
+   "file": "countdaysnow/zh-Hans.jpg",
+   "intended_locale": "zh-Hans",
+   "headline_locale": "zh-Hans",
+   "screenshot_locale": "zh-Hans",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:chi_sim",
+    "script_chars": 34,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "重要日子倒数中",
+   "line2": "将至・今天・已过三种视图",
+   "chips": [
+    "将至・今天・已过三种视图",
+    "每日聚焦",
+    "将至 · 今天 · 已过"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.258,
+    "family": "closeup2",
+    "font": "NotoSansSC.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        250,
+        72,
+        829,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.44,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        162,
+        184,
+        919,
+        441
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.71,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        418,
+        465,
+        661,
+        551
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 15.53,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "重要日子倒数中\n将至・今天・已过三种视图\n\n📲 请到个人主页（bio）的链接下载\n\n#CountDaysNow",
+   "caption_link": "重要日子倒数中\n将至・今天・已过三种视图\n\nApp Store: https://apps.apple.com/app/id6807079789\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/countdaysnow/zh-Hans.jpg"
+  },
+  {
+   "locale": "zh-Hant",
+   "file": "countdaysnow/zh-Hant.jpg",
+   "intended_locale": "zh-Hant",
+   "headline_locale": "zh-Hant",
+   "screenshot_locale": "zh-Hant",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:chi_tra",
+    "script_chars": 37,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "重要日子倒數中",
+   "line2": "將至・今天・已過三種檢視",
+   "chips": [
+    "將至・今天・已過三種檢視",
+    "每日焦點",
+    "將至 · 今天 · 已過"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.258,
+    "family": "closeup2",
+    "font": "NotoSansTC.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        250,
+        72,
+        829,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.44,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        162,
+        184,
+        919,
+        441
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.75,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        418,
+        465,
+        661,
+        551
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 15.53,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "重要日子倒數中\n將至・今天・已過三種檢視\n\n📲 請到個人檔案（bio）的連結下載\n\n#CountDaysNow",
+   "caption_link": "重要日子倒數中\n將至・今天・已過三種檢視\n\nApp Store: https://apps.apple.com/app/id6807079789\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/countdaysnow/zh-Hant.jpg"
+  }
+ ]
+}

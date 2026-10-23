@@ -1,0 +1,7080 @@
+{
+ "schema": "lumi.promo_cards/v1",
+ "app": "dailymate",
+ "app_id": "6790418321",
+ "app_store_url": "https://apps.apple.com/app/id6790418321",
+ "play_url": "https://play.google.com/store/apps/details?id=com.caitlyn.dailymate",
+ "size": [
+  1080,
+  1350
+ ],
+ "built": "2026-10-23",
+ "items": [
+  {
+   "locale": "ar-SA",
+   "file": "dailymate/ar-SA.jpg",
+   "intended_locale": "ar-SA",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {
+     "1": [
+      "Remove"
+     ],
+     "0": [
+      "English"
+     ],
+     "2": [
+      "English",
+      "Nederlands"
+     ]
+    },
+    "all_used_screens_localized": false
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "mixed English strings on all localized screenshots [['Remove'], ['English'], ['English', 'Nederlands']]; whole card in en-US",
+    "no localized storefront screenshot (English-only or lookup failed); whole card in en-US",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.208<0.24; orbit2×1.08: screen_area=0.224<0.24)"
+   ],
+   "line1": "Speak in Full Sentences",
+   "line2": "8,400 phrases in 47 languages",
+   "chips": [
+    "8,400 phrases in 47 languages",
+    "Learn Spanish, French & More",
+    "8,400 complete, practical phrases"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.24,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        258,
+        72,
+        821,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.23,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        190,
+        176,
+        889,
+        623
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.74,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        710,
+        216,
+        961
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.13,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Speak in Full Sentences\n8,400 phrases in 47 languages\n\n📲 Download via the link in bio\n\n#DailyMate",
+   "caption_link": "Speak in Full Sentences\n8,400 phrases in 47 languages\n\nApp Store: https://apps.apple.com/app/id6790418321\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymate/ar-SA.jpg"
+  },
+  {
+   "locale": "bn-BD",
+   "file": "dailymate/bn-BD.jpg",
+   "intended_locale": "bn-BD",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": false
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "no localized storefront screenshot (English-only or lookup failed); whole card in en-US",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.208<0.24; orbit2×1.08: screen_area=0.224<0.24)"
+   ],
+   "line1": "Speak in Full Sentences",
+   "line2": "8,400 phrases in 47 languages",
+   "chips": [
+    "8,400 phrases in 47 languages",
+    "Learn Spanish, French & More",
+    "8,400 complete, practical phrases"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.24,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        258,
+        72,
+        821,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.23,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        190,
+        176,
+        889,
+        623
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.74,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        710,
+        216,
+        961
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.13,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Speak in Full Sentences\n8,400 phrases in 47 languages\n\n📲 Download via the link in bio\n\n#DailyMate",
+   "caption_link": "Speak in Full Sentences\n8,400 phrases in 47 languages\n\nApp Store: https://apps.apple.com/app/id6790418321\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymate/bn-BD.jpg"
+  },
+  {
+   "locale": "ca",
+   "file": "dailymate/ca.jpg",
+   "intended_locale": "ca",
+   "headline_locale": "ca",
+   "screenshot_locale": "ca",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Frases completes",
+   "line2": "8.400 frases en 47 idiomes",
+   "chips": [
+    "8.400 frases en 47 idiomes",
+    "Aprèn anglès, francès, alemany",
+    "8.400 frases pràctiques i completes"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.271,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        256,
+        72,
+        823,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.23,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        86,
+        176,
+        994,
+        416
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 100,
+        "sub": 50,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.17,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        524,
+        221,
+        784
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.02,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      },
+      {
+       "kind": "card",
+       "plate": [
+        802,
+        781,
+        1040,
+        996
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.68,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Frases completes\n8.400 frases en 47 idiomes\n\n📲 Descarrega-la des de l'enllaç de la bio\n\n#DailyMate",
+   "caption_link": "Frases completes\n8.400 frases en 47 idiomes\n\nApp Store: https://apps.apple.com/app/id6790418321\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymate/ca.jpg"
+  },
+  {
+   "locale": "cs",
+   "file": "dailymate/cs.jpg",
+   "intended_locale": "cs",
+   "headline_locale": "cs",
+   "screenshot_locale": "cs",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Celé věty do života",
+   "line2": "8 400 vět ve 47 jazycích",
+   "chips": [
+    "8 400 vět ve 47 jazycích",
+    "Angličtina a němčina v praxi",
+    "8 400 praktických, úplných vět"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.272,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        408,
+        72,
+        672,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.48,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        84,
+        176,
+        997,
+        413
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.27,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        521,
+        249,
+        736
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.09,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Celé věty do života\n8 400 vět ve 47 jazycích\n\n📲 Stáhněte si ji přes odkaz v profilu (bio)\n\n#DailyMate",
+   "caption_link": "Celé věty do života\n8 400 vět ve 47 jazycích\n\nApp Store: https://apps.apple.com/app/id6790418321\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymate/cs.jpg"
+  },
+  {
+   "locale": "da",
+   "file": "dailymate/da.jpg",
+   "intended_locale": "da",
+   "headline_locale": "da",
+   "screenshot_locale": "da",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Lær hele sætninger",
+   "line2": "8.400 hverdagssætninger på 47 sprog",
+   "chips": [
+    "8.400 hverdagssætninger på 47 sprog",
+    "Lær engelsk, spansk og tysk",
+    "8.400 praktiske, hele sætninger"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.275,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        260,
+        72,
+        819,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.23,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        86,
+        176,
+        995,
+        403
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.85,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        512,
+        214,
+        772
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.77,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      },
+      {
+       "kind": "card",
+       "plate": [
+        830,
+        773,
+        1040,
+        1033
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.56,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Lær hele sætninger\n8.400 hverdagssætninger på 47 sprog\n\n📲 Download via linket i bio\n\n#DailyMate",
+   "caption_link": "Lær hele sætninger\n8.400 hverdagssætninger på 47 sprog\n\nApp Store: https://apps.apple.com/app/id6790418321\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymate/da.jpg"
+  },
+  {
+   "locale": "de-DE",
+   "file": "dailymate/de-DE.jpg",
+   "intended_locale": "de-DE",
+   "headline_locale": "de-DE",
+   "screenshot_locale": "de-DE",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Nie mehr sprachlos",
+   "line2": "8.400 Sätze in 47 Sprachen",
+   "chips": [
+    "8.400 Sätze in 47 Sprachen",
+    "Englisch lernen: echte Sätze",
+    "8.400 vollständige, praktische Sätze"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.275,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        254,
+        72,
+        826,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.23,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        90,
+        176,
+        989,
+        403
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.3,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        512,
+        270,
+        718
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.48,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Nie mehr sprachlos\n8.400 Sätze in 47 Sprachen\n\n📲 Download über den Link in der Bio\n\n#DailyMate",
+   "caption_link": "Nie mehr sprachlos\n8.400 Sätze in 47 Sprachen\n\nApp Store: https://apps.apple.com/app/id6790418321\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymate/de-DE.jpg"
+  },
+  {
+   "locale": "el",
+   "file": "dailymate/el.jpg",
+   "intended_locale": "el",
+   "headline_locale": "el",
+   "screenshot_locale": "el",
+   "localized": true,
+   "screenshots_used": [
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:ell",
+    "script_chars": 51,
+    "mixed_english_words": {
+     "1": [
+      "Remove"
+     ],
+     "0": [
+      "English"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [1, 0] with mixed English strings [['Remove'], ['English']]"
+   ],
+   "line1": "Ολόκληρες φράσεις",
+   "line2": "8.400 φράσεις σε 47 γλώσσες",
+   "chips": [
+    "8.400 φράσεις σε 47 γλώσσες",
+    "Μάθε αγγλικά και ισπανικά",
+    "8.400 πρακτικές, ολοκληρωμένες φράσεις"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.275,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        248,
+        72,
+        832,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.21,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        80,
+        176,
+        1001,
+        403
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.21,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        512,
+        276,
+        718
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.7,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Ολόκληρες φράσεις\n8.400 φράσεις σε 47 γλώσσες\n\n📲 Λήψη από τον σύνδεσμο στο προφίλ (bio)\n\n#DailyMate",
+   "caption_link": "Ολόκληρες φράσεις\n8.400 φράσεις σε 47 γλώσσες\n\nApp Store: https://apps.apple.com/app/id6790418321\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymate/el.jpg"
+  },
+  {
+   "locale": "en-AU",
+   "file": "dailymate/en-AU.jpg",
+   "intended_locale": "en-AU",
+   "headline_locale": "en-AU",
+   "screenshot_locale": "en-AU",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.208<0.24; orbit2×1.08: screen_area=0.224<0.24)"
+   ],
+   "line1": "Speak in Full Sentences",
+   "line2": "8,400 phrases, 47 languages",
+   "chips": [
+    "8,400 phrases, 47 languages",
+    "Learn Japanese, Italian & More",
+    "8,400 complete phrases"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.24,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        264,
+        72,
+        815,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.24,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        190,
+        176,
+        889,
+        623
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.69,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        710,
+        241,
+        961
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.29,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      },
+      {
+       "kind": "card",
+       "plate": [
+        847,
+        909,
+        1040,
+        1124
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.4,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Speak in Full Sentences\n8,400 phrases, 47 languages\n\n📲 Download via the link in bio\n\n#DailyMate",
+   "caption_link": "Speak in Full Sentences\n8,400 phrases, 47 languages\n\nApp Store: https://apps.apple.com/app/id6790418321\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymate/en-AU.jpg"
+  },
+  {
+   "locale": "en-CA",
+   "file": "dailymate/en-CA.jpg",
+   "intended_locale": "en-CA",
+   "headline_locale": "en-CA",
+   "screenshot_locale": "en-CA",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.208<0.24; orbit2×1.08: screen_area=0.224<0.24)"
+   ],
+   "line1": "Speak in Full Sentences",
+   "line2": "8,400 phrases, 47 languages",
+   "chips": [
+    "8,400 phrases, 47 languages",
+    "Learn French, Spanish & More",
+    "8,400 complete, practical phrases"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.24,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        268,
+        72,
+        811,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.27,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        190,
+        176,
+        889,
+        623
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.69,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        710,
+        206,
+        961
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.14,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Speak in Full Sentences\n8,400 phrases, 47 languages\n\n📲 Download via the link in bio\n\n#DailyMate",
+   "caption_link": "Speak in Full Sentences\n8,400 phrases, 47 languages\n\nApp Store: https://apps.apple.com/app/id6790418321\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymate/en-CA.jpg"
+  },
+  {
+   "locale": "en-GB",
+   "file": "dailymate/en-GB.jpg",
+   "intended_locale": "en-GB",
+   "headline_locale": "en-GB",
+   "screenshot_locale": "en-GB",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.208<0.24; orbit2×1.08: screen_area=0.224<0.24)"
+   ],
+   "line1": "Speak in Full Sentences",
+   "line2": "8,400 phrases, 47 languages",
+   "chips": [
+    "8,400 phrases, 47 languages",
+    "Learn Spanish, French, German",
+    "8,400 practical phrases"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.24,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        264,
+        72,
+        815,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.24,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        190,
+        176,
+        889,
+        623
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.69,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        710,
+        216,
+        961
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.11,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      },
+      {
+       "kind": "card",
+       "plate": [
+        863,
+        909,
+        1040,
+        1124
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.39,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Speak in Full Sentences\n8,400 phrases, 47 languages\n\n📲 Download via the link in bio\n\n#DailyMate",
+   "caption_link": "Speak in Full Sentences\n8,400 phrases, 47 languages\n\nApp Store: https://apps.apple.com/app/id6790418321\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymate/en-GB.jpg"
+  },
+  {
+   "locale": "en-US",
+   "file": "dailymate/en-US.jpg",
+   "intended_locale": "en-US",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.208<0.24; orbit2×1.08: screen_area=0.224<0.24)"
+   ],
+   "line1": "Speak in Full Sentences",
+   "line2": "8,400 phrases in 47 languages",
+   "chips": [
+    "8,400 phrases in 47 languages",
+    "Learn Spanish, French & More",
+    "8,400 complete, practical phrases"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.24,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        258,
+        72,
+        821,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.23,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        190,
+        176,
+        889,
+        623
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.74,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        710,
+        216,
+        961
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.13,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Speak in Full Sentences\n8,400 phrases in 47 languages\n\n📲 Download via the link in bio\n\n#DailyMate",
+   "caption_link": "Speak in Full Sentences\n8,400 phrases in 47 languages\n\nApp Store: https://apps.apple.com/app/id6790418321\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymate/en-US.jpg"
+  },
+  {
+   "locale": "es-ES",
+   "file": "dailymate/es-ES.jpg",
+   "intended_locale": "es-ES",
+   "headline_locale": "es-ES",
+   "screenshot_locale": "es-ES",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Frases completas",
+   "line2": "8.400 frases · 47 idiomas · widget",
+   "chips": [
+    "8.400 frases · 47 idiomas · widget",
+    "Aprende inglés, francés y más",
+    "8.400 frases prácticas y completas"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.267,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        242,
+        72,
+        839,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.17,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        86,
+        176,
+        994,
+        427
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 100,
+        "sub": 50,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.95,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        534,
+        220,
+        794
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.34,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      },
+      {
+       "kind": "card",
+       "plate": [
+        802,
+        788,
+        1040,
+        1003
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.43,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Frases completas\n8.400 frases · 47 idiomas · widget\n\n📲 Descárgala desde el enlace de la bio\n\n#DailyMate",
+   "caption_link": "Frases completas\n8.400 frases · 47 idiomas · widget\n\nApp Store: https://apps.apple.com/app/id6790418321\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymate/es-ES.jpg"
+  },
+  {
+   "locale": "es-MX",
+   "file": "dailymate/es-MX.jpg",
+   "intended_locale": "es-MX",
+   "headline_locale": "es-MX",
+   "screenshot_locale": "es-MX",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Frases completas",
+   "line2": "8.400 frases · 47 idiomas · widget",
+   "chips": [
+    "8.400 frases · 47 idiomas · widget",
+    "Inglés y más con frases reales",
+    "8,400 frases prácticas y completas"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.267,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        260,
+        72,
+        820,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.23,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        86,
+        176,
+        994,
+        427
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 100,
+        "sub": 50,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.95,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        534,
+        213,
+        785
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.23,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      },
+      {
+       "kind": "card",
+       "plate": [
+        802,
+        788,
+        1040,
+        1003
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.43,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Frases completas\n8.400 frases · 47 idiomas · widget\n\n📲 Descárgala desde el enlace de la bio\n\n#DailyMate",
+   "caption_link": "Frases completas\n8.400 frases · 47 idiomas · widget\n\nApp Store: https://apps.apple.com/app/id6790418321\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymate/es-MX.jpg"
+  },
+  {
+   "locale": "fi",
+   "file": "dailymate/fi.jpg",
+   "intended_locale": "fi",
+   "headline_locale": "fi",
+   "screenshot_locale": "fi",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.228<0.24)"
+   ],
+   "line1": "Opi kokonaisia lauseita",
+   "line2": "8 400 arjen lausetta 47 kielellä",
+   "chips": [
+    "8 400 arjen lausetta 47 kielellä",
+    "Opi englantia ja espanjaa",
+    "47 opiskeltavaa kieltä"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.246,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.02,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        263,
+        72,
+        817,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.24,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        130,
+        176,
+        951,
+        558
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.2,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        652,
+        234,
+        912
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.73,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Opi kokonaisia lauseita\n8 400 arjen lausetta 47 kielellä\n\n📲 Lataa bion linkistä\n\n#DailyMate",
+   "caption_link": "Opi kokonaisia lauseita\n8 400 arjen lausetta 47 kielellä\n\nApp Store: https://apps.apple.com/app/id6790418321\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymate/fi.jpg"
+  },
+  {
+   "locale": "fr-CA",
+   "file": "dailymate/fr-CA.jpg",
+   "intended_locale": "fr-CA",
+   "headline_locale": "fr-CA",
+   "screenshot_locale": "fr-CA",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.209<0.24; orbit2×1.08: screen_area=0.225<0.24)"
+   ],
+   "line1": "Des phrases entières",
+   "line2": "8 400 phrases · 47 langues · hors ligne",
+   "chips": [
+    "8 400 phrases · 47 langues · hors ligne",
+    "Anglais et espagnol en phrases",
+    "8 400 phrases pratiques et complètes"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.241,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        256,
+        72,
+        823,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.23,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        206,
+        176,
+        874,
+        622
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.78,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        709,
+        228,
+        1014
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.21,
+       "plate_alpha": 0.55,
+       "lines": 5,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Des phrases entières\n8 400 phrases · 47 langues · hors ligne\n\n📲 Téléchargez-la via le lien dans la bio\n\n#DailyMate",
+   "caption_link": "Des phrases entières\n8 400 phrases · 47 langues · hors ligne\n\nApp Store: https://apps.apple.com/app/id6790418321\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymate/fr-CA.jpg"
+  },
+  {
+   "locale": "fr-FR",
+   "file": "dailymate/fr-FR.jpg",
+   "intended_locale": "fr-FR",
+   "headline_locale": "fr-FR",
+   "screenshot_locale": "fr-FR",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.209<0.24; orbit2×1.08: screen_area=0.225<0.24)"
+   ],
+   "line1": "Des phrases entières",
+   "line2": "8 400 phrases · 47 langues · hors ligne",
+   "chips": [
+    "8 400 phrases · 47 langues · hors ligne",
+    "Anglais, espagnol au quotidien",
+    "8 400 phrases pratiques et complètes"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.241,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        256,
+        72,
+        823,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.23,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        206,
+        176,
+        874,
+        622
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.78,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        709,
+        237,
+        969
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.04,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Des phrases entières\n8 400 phrases · 47 langues · hors ligne\n\n📲 Téléchargez-la via le lien dans la bio\n\n#DailyMate",
+   "caption_link": "Des phrases entières\n8 400 phrases · 47 langues · hors ligne\n\nApp Store: https://apps.apple.com/app/id6790418321\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymate/fr-FR.jpg"
+  },
+  {
+   "locale": "gu-IN",
+   "file": "dailymate/gu-IN.jpg",
+   "intended_locale": "gu-IN",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {
+     "1": [
+      "Remove"
+     ],
+     "0": [
+      "English"
+     ],
+     "2": [
+      "English",
+      "Nederlands"
+     ]
+    },
+    "all_used_screens_localized": false
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "mixed English strings on all localized screenshots [['Remove'], ['English'], ['English', 'Nederlands']]; whole card in en-US",
+    "no localized storefront screenshot (English-only or lookup failed); whole card in en-US",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.208<0.24; orbit2×1.08: screen_area=0.224<0.24)"
+   ],
+   "line1": "Speak in Full Sentences",
+   "line2": "8,400 phrases in 47 languages",
+   "chips": [
+    "8,400 phrases in 47 languages",
+    "Learn Spanish, French & More",
+    "8,400 complete, practical phrases"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.24,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        258,
+        72,
+        821,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.23,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        190,
+        176,
+        889,
+        623
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.74,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        710,
+        216,
+        961
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.13,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Speak in Full Sentences\n8,400 phrases in 47 languages\n\n📲 Download via the link in bio\n\n#DailyMate",
+   "caption_link": "Speak in Full Sentences\n8,400 phrases in 47 languages\n\nApp Store: https://apps.apple.com/app/id6790418321\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymate/gu-IN.jpg"
+  },
+  {
+   "locale": "he",
+   "file": "dailymate/he.jpg",
+   "intended_locale": "he",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {
+     "1": [
+      "Remove"
+     ],
+     "0": [
+      "English"
+     ],
+     "2": [
+      "English",
+      "Nederlands"
+     ]
+    },
+    "all_used_screens_localized": false
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "mixed English strings on all localized screenshots [['Remove'], ['English'], ['English', 'Nederlands']]; whole card in en-US",
+    "no localized storefront screenshot (English-only or lookup failed); whole card in en-US",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.208<0.24; orbit2×1.08: screen_area=0.224<0.24)"
+   ],
+   "line1": "Speak in Full Sentences",
+   "line2": "8,400 phrases in 47 languages",
+   "chips": [
+    "8,400 phrases in 47 languages",
+    "Learn Spanish, French & More",
+    "8,400 complete, practical phrases"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.24,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        258,
+        72,
+        821,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.23,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        190,
+        176,
+        889,
+        623
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.74,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        710,
+        216,
+        961
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.13,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Speak in Full Sentences\n8,400 phrases in 47 languages\n\n📲 Download via the link in bio\n\n#DailyMate",
+   "caption_link": "Speak in Full Sentences\n8,400 phrases in 47 languages\n\nApp Store: https://apps.apple.com/app/id6790418321\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymate/he.jpg"
+  },
+  {
+   "locale": "hi",
+   "file": "dailymate/hi.jpg",
+   "intended_locale": "hi",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {
+     "1": [
+      "Remove",
+      "please"
+     ],
+     "0": [
+      "English"
+     ],
+     "2": [
+      "English",
+      "Nederlands"
+     ]
+    },
+    "all_used_screens_localized": false
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "mixed English strings on all localized screenshots [['Remove', 'please'], ['English'], ['English', 'Nederlands']]; whole card in en-US",
+    "no localized storefront screenshot (English-only or lookup failed); whole card in en-US",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.208<0.24; orbit2×1.08: screen_area=0.224<0.24)"
+   ],
+   "line1": "Speak in Full Sentences",
+   "line2": "8,400 phrases in 47 languages",
+   "chips": [
+    "8,400 phrases in 47 languages",
+    "Learn Spanish, French & More",
+    "8,400 complete, practical phrases"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.24,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        258,
+        72,
+        821,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.23,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        190,
+        176,
+        889,
+        623
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.74,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        710,
+        216,
+        961
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.13,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Speak in Full Sentences\n8,400 phrases in 47 languages\n\n📲 Download via the link in bio\n\n#DailyMate",
+   "caption_link": "Speak in Full Sentences\n8,400 phrases in 47 languages\n\nApp Store: https://apps.apple.com/app/id6790418321\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymate/hi.jpg"
+  },
+  {
+   "locale": "hr",
+   "file": "dailymate/hr.jpg",
+   "intended_locale": "hr",
+   "headline_locale": "hr",
+   "screenshot_locale": "hr",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Rečenice za život",
+   "line2": "8.400 rečenica na 47 jezika",
+   "chips": [
+    "8.400 rečenica na 47 jezika",
+    "Učite engleski i njemački",
+    "8.400 praktičnih, cjelovitih rečenica"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.267,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        268,
+        72,
+        813,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.27,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        91,
+        176,
+        989,
+        428
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 100,
+        "sub": 50,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.99,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        535,
+        245,
+        750
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.27,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      },
+      {
+       "kind": "card",
+       "plate": [
+        825,
+        788,
+        1040,
+        1039
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.46,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Rečenice za život\n8.400 rečenica na 47 jezika\n\n📲 Preuzmi putem poveznice u biografiji (bio)\n\n#DailyMate",
+   "caption_link": "Rečenice za život\n8.400 rečenica na 47 jezika\n\nApp Store: https://apps.apple.com/app/id6790418321\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymate/hr.jpg"
+  },
+  {
+   "locale": "hu",
+   "file": "dailymate/hu.jpg",
+   "intended_locale": "hu",
+   "headline_locale": "hu",
+   "screenshot_locale": "hu",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.209<0.24; orbit2×1.08: screen_area=0.225<0.24)"
+   ],
+   "line1": "Mondatok az élethez",
+   "line2": "8400 mondat 47 nyelven",
+   "chips": [
+    "8400 mondat 47 nyelven",
+    "Tanulj angolul és spanyolul",
+    "8 400 gyakorlatias, teljes mondat"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.241,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        236,
+        72,
+        843,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.14,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        250,
+        176,
+        830,
+        622
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.54,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        709,
+        237,
+        969
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.09,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Mondatok az élethez\n8400 mondat 47 nyelven\n\n📲 Töltsd le a bio linkjéről\n\n#DailyMate",
+   "caption_link": "Mondatok az élethez\n8400 mondat 47 nyelven\n\nApp Store: https://apps.apple.com/app/id6790418321\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymate/hu.jpg"
+  },
+  {
+   "locale": "id",
+   "file": "dailymate/id.jpg",
+   "intended_locale": "id",
+   "headline_locale": "id",
+   "screenshot_locale": "id",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Bicara tanpa kaku",
+   "line2": "8.400 kalimat dalam 47 bahasa",
+   "chips": [
+    "8.400 kalimat dalam 47 bahasa",
+    "Belajar bahasa Inggris praktis",
+    "8.400 kalimat utuh yang siap dipakai"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.273,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        250,
+        72,
+        829,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.22,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        82,
+        176,
+        998,
+        408
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 96,
+        "sub": 48,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.94,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        517,
+        195,
+        777
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.6,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      },
+      {
+       "kind": "card",
+       "plate": [
+        842,
+        776,
+        1040,
+        1081
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.68,
+       "plate_alpha": 0.55,
+       "lines": 5,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Bicara tanpa kaku\n8.400 kalimat dalam 47 bahasa\n\n📲 Unduh lewat link di bio\n\n#DailyMate",
+   "caption_link": "Bicara tanpa kaku\n8.400 kalimat dalam 47 bahasa\n\nApp Store: https://apps.apple.com/app/id6790418321\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymate/id.jpg"
+  },
+  {
+   "locale": "it",
+   "file": "dailymate/it.jpg",
+   "intended_locale": "it",
+   "headline_locale": "it",
+   "screenshot_locale": "it",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Frasi intere e vere",
+   "line2": "8.400 frasi · 47 lingue · widget",
+   "chips": [
+    "8.400 frasi · 47 lingue · widget",
+    "Impara inglese con frasi reali",
+    "8.400 frasi pratiche e complete"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.27,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        260,
+        72,
+        820,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.23,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        85,
+        176,
+        995,
+        419
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 96,
+        "sub": 48,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.02,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        526,
+        265,
+        732
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.02,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      },
+      {
+       "kind": "card",
+       "plate": [
+        833,
+        783,
+        1040,
+        998
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.61,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Frasi intere e vere\n8.400 frasi · 47 lingue · widget\n\n📲 Scaricala dal link nella bio\n\n#DailyMate",
+   "caption_link": "Frasi intere e vere\n8.400 frasi · 47 lingue · widget\n\nApp Store: https://apps.apple.com/app/id6790418321\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymate/it.jpg"
+  },
+  {
+   "locale": "ja",
+   "file": "dailymate/ja.jpg",
+   "intended_locale": "ja",
+   "headline_locale": "ja",
+   "screenshot_locale": "ja",
+   "localized": true,
+   "screenshots_used": [
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:jpn",
+    "script_chars": 31,
+    "mixed_english_words": {
+     "1": [
+      "Remove"
+     ],
+     "2": [
+      "English",
+      "Nederlands"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [1, 2] with mixed English strings [['Remove'], ['English', 'Nederlands']]"
+   ],
+   "line1": "文で覚えて話せる",
+   "line2": "47言語・8,400フレーズ",
+   "chips": [
+    "47言語・8,400フレーズ",
+    "毎日一文で身につく実用会話",
+    "実用的なフレーズ8,400件"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.264,
+    "family": "orbit2",
+    "font": "NotoSansJP.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        278,
+        72,
+        801,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.28,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        111,
+        176,
+        969,
+        439
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.46,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        544,
+        249,
+        756
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.42,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "文で覚えて話せる\n47言語・8,400フレーズ\n\n📲 ダウンロードはプロフィール（bio）のリンクから\n\n#DailyMate",
+   "caption_link": "文で覚えて話せる\n47言語・8,400フレーズ\n\nApp Store: https://apps.apple.com/app/id6790418321\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymate/ja.jpg"
+  },
+  {
+   "locale": "kn-IN",
+   "file": "dailymate/kn-IN.jpg",
+   "intended_locale": "kn-IN",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {
+     "1": [
+      "Remove"
+     ],
+     "0": [
+      "English"
+     ],
+     "2": [
+      "English",
+      "Nederlands"
+     ]
+    },
+    "all_used_screens_localized": false
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "mixed English strings on all localized screenshots [['Remove'], ['English'], ['English', 'Nederlands']]; whole card in en-US",
+    "no localized storefront screenshot (English-only or lookup failed); whole card in en-US",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.208<0.24; orbit2×1.08: screen_area=0.224<0.24)"
+   ],
+   "line1": "Speak in Full Sentences",
+   "line2": "8,400 phrases in 47 languages",
+   "chips": [
+    "8,400 phrases in 47 languages",
+    "Learn Spanish, French & More",
+    "8,400 complete, practical phrases"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.24,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        258,
+        72,
+        821,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.23,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        190,
+        176,
+        889,
+        623
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.74,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        710,
+        216,
+        961
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.13,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Speak in Full Sentences\n8,400 phrases in 47 languages\n\n📲 Download via the link in bio\n\n#DailyMate",
+   "caption_link": "Speak in Full Sentences\n8,400 phrases in 47 languages\n\nApp Store: https://apps.apple.com/app/id6790418321\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymate/kn-IN.jpg"
+  },
+  {
+   "locale": "ko",
+   "file": "dailymate/ko.jpg",
+   "intended_locale": "ko",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {
+     "1": [
+      "Remove"
+     ],
+     "0": [
+      "English"
+     ],
+     "2": [
+      "English",
+      "Nederlands"
+     ]
+    },
+    "all_used_screens_localized": false
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "mixed English strings on all localized screenshots [['Remove'], ['English'], ['English', 'Nederlands']]; whole card in en-US",
+    "no localized storefront screenshot (English-only or lookup failed); whole card in en-US",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.208<0.24; orbit2×1.08: screen_area=0.224<0.24)"
+   ],
+   "line1": "Speak in Full Sentences",
+   "line2": "8,400 phrases in 47 languages",
+   "chips": [
+    "8,400 phrases in 47 languages",
+    "Learn Spanish, French & More",
+    "8,400 complete, practical phrases"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.24,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        258,
+        72,
+        821,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.23,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        190,
+        176,
+        889,
+        623
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.74,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        710,
+        216,
+        961
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.13,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Speak in Full Sentences\n8,400 phrases in 47 languages\n\n📲 Download via the link in bio\n\n#DailyMate",
+   "caption_link": "Speak in Full Sentences\n8,400 phrases in 47 languages\n\nApp Store: https://apps.apple.com/app/id6790418321\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymate/ko.jpg"
+  },
+  {
+   "locale": "ml-IN",
+   "file": "dailymate/ml-IN.jpg",
+   "intended_locale": "ml-IN",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {
+     "1": [
+      "Remove"
+     ],
+     "0": [
+      "English"
+     ],
+     "2": [
+      "English",
+      "Nederlands"
+     ]
+    },
+    "all_used_screens_localized": false
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "mixed English strings on all localized screenshots [['Remove'], ['English'], ['English', 'Nederlands']]; whole card in en-US",
+    "no localized storefront screenshot (English-only or lookup failed); whole card in en-US",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.208<0.24; orbit2×1.08: screen_area=0.224<0.24)"
+   ],
+   "line1": "Speak in Full Sentences",
+   "line2": "8,400 phrases in 47 languages",
+   "chips": [
+    "8,400 phrases in 47 languages",
+    "Learn Spanish, French & More",
+    "8,400 complete, practical phrases"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.24,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        258,
+        72,
+        821,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.23,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        190,
+        176,
+        889,
+        623
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.74,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        710,
+        216,
+        961
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.13,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Speak in Full Sentences\n8,400 phrases in 47 languages\n\n📲 Download via the link in bio\n\n#DailyMate",
+   "caption_link": "Speak in Full Sentences\n8,400 phrases in 47 languages\n\nApp Store: https://apps.apple.com/app/id6790418321\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymate/ml-IN.jpg"
+  },
+  {
+   "locale": "mr-IN",
+   "file": "dailymate/mr-IN.jpg",
+   "intended_locale": "mr-IN",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {
+     "1": [
+      "Remove",
+      "please"
+     ],
+     "0": [
+      "English"
+     ],
+     "2": [
+      "English",
+      "Nederlands"
+     ]
+    },
+    "all_used_screens_localized": false
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "mixed English strings on all localized screenshots [['Remove', 'please'], ['English'], ['English', 'Nederlands']]; whole card in en-US",
+    "no localized storefront screenshot (English-only or lookup failed); whole card in en-US",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.208<0.24; orbit2×1.08: screen_area=0.224<0.24)"
+   ],
+   "line1": "Speak in Full Sentences",
+   "line2": "8,400 phrases in 47 languages",
+   "chips": [
+    "8,400 phrases in 47 languages",
+    "Learn Spanish, French & More",
+    "8,400 complete, practical phrases"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.24,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        258,
+        72,
+        821,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.23,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        190,
+        176,
+        889,
+        623
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.74,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        710,
+        216,
+        961
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.13,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Speak in Full Sentences\n8,400 phrases in 47 languages\n\n📲 Download via the link in bio\n\n#DailyMate",
+   "caption_link": "Speak in Full Sentences\n8,400 phrases in 47 languages\n\nApp Store: https://apps.apple.com/app/id6790418321\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymate/mr-IN.jpg"
+  },
+  {
+   "locale": "ms",
+   "file": "dailymate/ms.jpg",
+   "intended_locale": "ms",
+   "headline_locale": "ms",
+   "screenshot_locale": "ms",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Cakap tanpa kekok",
+   "line2": "8,400 ayat dalam 47 bahasa",
+   "chips": [
+    "8,400 ayat dalam 47 bahasa",
+    "Belajar bahasa Inggeris, Jepun",
+    "47 bahasa untuk dipelajari"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.275,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        310,
+        72,
+        771,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.26,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        88,
+        176,
+        992,
+        402
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.25,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        511,
+        225,
+        771
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.13,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      },
+      {
+       "kind": "card",
+       "plate": [
+        835,
+        772,
+        1040,
+        987
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.77,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Cakap tanpa kekok\n8,400 ayat dalam 47 bahasa\n\n📲 Muat turun melalui pautan dalam bio\n\n#DailyMate",
+   "caption_link": "Cakap tanpa kekok\n8,400 ayat dalam 47 bahasa\n\nApp Store: https://apps.apple.com/app/id6790418321\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymate/ms.jpg"
+  },
+  {
+   "locale": "nl-NL",
+   "file": "dailymate/nl-NL.jpg",
+   "intended_locale": "nl-NL",
+   "headline_locale": "nl-NL",
+   "screenshot_locale": "nl-NL",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.233<0.24)"
+   ],
+   "line1": "Zeg wat men echt zegt",
+   "line2": "8.400 zinnen in 47 talen",
+   "chips": [
+    "8.400 zinnen in 47 talen",
+    "Leer Engels, Spaans en meer",
+    "8.400 praktische, volledige zinnen"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.252,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.02,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        278,
+        72,
+        803,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.28,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        181,
+        176,
+        899,
+        540
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.67,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        635,
+        216,
+        886
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.13,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Zeg wat men echt zegt\n8.400 zinnen in 47 talen\n\n📲 Download via de link in bio\n\n#DailyMate",
+   "caption_link": "Zeg wat men echt zegt\n8.400 zinnen in 47 talen\n\nApp Store: https://apps.apple.com/app/id6790418321\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymate/nl-NL.jpg"
+  },
+  {
+   "locale": "no",
+   "file": "dailymate/no.jpg",
+   "intended_locale": "no",
+   "headline_locale": "no",
+   "screenshot_locale": "no",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Lær hele setninger",
+   "line2": "8 400 hverdagssetninger på 47 språk",
+   "chips": [
+    "8 400 hverdagssetninger på 47 språk",
+    "Lær engelsk, fransk og spansk",
+    "8 400 praktiske, hele setninger"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.272,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        258,
+        72,
+        821,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.23,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        81,
+        176,
+        999,
+        413
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.81,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        521,
+        234,
+        781
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.52,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      },
+      {
+       "kind": "card",
+       "plate": [
+        839,
+        779,
+        1040,
+        1039
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.56,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Lær hele setninger\n8 400 hverdagssetninger på 47 språk\n\n📲 Last ned via lenken i bio\n\n#DailyMate",
+   "caption_link": "Lær hele setninger\n8 400 hverdagssetninger på 47 språk\n\nApp Store: https://apps.apple.com/app/id6790418321\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymate/no.jpg"
+  },
+  {
+   "locale": "or-IN",
+   "file": "dailymate/or-IN.jpg",
+   "intended_locale": "or-IN",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {
+     "1": [
+      "Remove"
+     ],
+     "0": [
+      "English"
+     ],
+     "2": [
+      "English",
+      "Nederlands"
+     ]
+    },
+    "all_used_screens_localized": false
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "mixed English strings on all localized screenshots [['Remove'], ['English'], ['English', 'Nederlands']]; whole card in en-US",
+    "no localized storefront screenshot (English-only or lookup failed); whole card in en-US",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.208<0.24; orbit2×1.08: screen_area=0.224<0.24)"
+   ],
+   "line1": "Speak in Full Sentences",
+   "line2": "8,400 phrases in 47 languages",
+   "chips": [
+    "8,400 phrases in 47 languages",
+    "Learn Spanish, French & More",
+    "8,400 complete, practical phrases"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.24,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        258,
+        72,
+        821,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.23,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        190,
+        176,
+        889,
+        623
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.74,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        710,
+        216,
+        961
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.13,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Speak in Full Sentences\n8,400 phrases in 47 languages\n\n📲 Download via the link in bio\n\n#DailyMate",
+   "caption_link": "Speak in Full Sentences\n8,400 phrases in 47 languages\n\nApp Store: https://apps.apple.com/app/id6790418321\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymate/or-IN.jpg"
+  },
+  {
+   "locale": "pa-IN",
+   "file": "dailymate/pa-IN.jpg",
+   "intended_locale": "pa-IN",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {
+     "1": [
+      "Remove"
+     ],
+     "0": [
+      "English"
+     ],
+     "2": [
+      "English",
+      "Nederlands"
+     ]
+    },
+    "all_used_screens_localized": false
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "mixed English strings on all localized screenshots [['Remove'], ['English'], ['English', 'Nederlands']]; whole card in en-US",
+    "no localized storefront screenshot (English-only or lookup failed); whole card in en-US",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.208<0.24; orbit2×1.08: screen_area=0.224<0.24)"
+   ],
+   "line1": "Speak in Full Sentences",
+   "line2": "8,400 phrases in 47 languages",
+   "chips": [
+    "8,400 phrases in 47 languages",
+    "Learn Spanish, French & More",
+    "8,400 complete, practical phrases"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.24,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        258,
+        72,
+        821,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.23,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        190,
+        176,
+        889,
+        623
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.74,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        710,
+        216,
+        961
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.13,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Speak in Full Sentences\n8,400 phrases in 47 languages\n\n📲 Download via the link in bio\n\n#DailyMate",
+   "caption_link": "Speak in Full Sentences\n8,400 phrases in 47 languages\n\nApp Store: https://apps.apple.com/app/id6790418321\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymate/pa-IN.jpg"
+  },
+  {
+   "locale": "pl",
+   "file": "dailymate/pl.jpg",
+   "intended_locale": "pl",
+   "headline_locale": "pl",
+   "screenshot_locale": "pl",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Ucz się całych zdań",
+   "line2": "8400 codziennych zdań w 47 językach",
+   "chips": [
+    "8400 codziennych zdań w 47 językach",
+    "Nauka angielskiego na co dzień",
+    "8400 praktycznych, pełnych zdań"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.275,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        294,
+        72,
+        786,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.25,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        98,
+        176,
+        983,
+        403
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.85,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Ucz się całych zdań\n8400 codziennych zdań w 47 językach\n\n📲 Pobierz przez link w bio\n\n#DailyMate",
+   "caption_link": "Ucz się całych zdań\n8400 codziennych zdań w 47 językach\n\nApp Store: https://apps.apple.com/app/id6790418321\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymate/pl.jpg"
+  },
+  {
+   "locale": "pt-BR",
+   "file": "dailymate/pt-BR.jpg",
+   "intended_locale": "pt-BR",
+   "headline_locale": "pt-BR",
+   "screenshot_locale": "pt-BR",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Fale sem travar",
+   "line2": "8.400 frases em 47 idiomas",
+   "chips": [
+    "8.400 frases em 47 idiomas",
+    "Inglês e espanhol na prática",
+    "8.400 frases práticas e completas"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.269,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        236,
+        72,
+        843,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.14,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        113,
+        176,
+        967,
+        423
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.91,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        530,
+        242,
+        745
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.11,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      },
+      {
+       "kind": "card",
+       "plate": [
+        802,
+        785,
+        1040,
+        1000
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.5,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Fale sem travar\n8.400 frases em 47 idiomas\n\n📲 Baixe pelo link na bio\n\n#DailyMate",
+   "caption_link": "Fale sem travar\n8.400 frases em 47 idiomas\n\nApp Store: https://apps.apple.com/app/id6790418321\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymate/pt-BR.jpg"
+  },
+  {
+   "locale": "pt-PT",
+   "file": "dailymate/pt-PT.jpg",
+   "intended_locale": "pt-PT",
+   "headline_locale": "pt-PT",
+   "screenshot_locale": "pt-PT",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Fale como se fala",
+   "line2": "8.400 frases em 47 línguas",
+   "chips": [
+    "8.400 frases em 47 línguas",
+    "Aprende inglês, francês e mais",
+    "8.400 frases práticas e completas"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.267,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        241,
+        72,
+        839,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.17,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        90,
+        176,
+        989,
+        427
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 100,
+        "sub": 50,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.09,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        534,
+        220,
+        785
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.35,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      },
+      {
+       "kind": "card",
+       "plate": [
+        802,
+        788,
+        1040,
+        1003
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.42,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Fale como se fala\n8.400 frases em 47 línguas\n\n📲 Download via the link in bio\n\n#DailyMate",
+   "caption_link": "Fale como se fala\n8.400 frases em 47 línguas\n\nApp Store: https://apps.apple.com/app/id6790418321\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate",
+   "cta_source": "en-fallback",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymate/pt-PT.jpg"
+  },
+  {
+   "locale": "ro",
+   "file": "dailymate/ro.jpg",
+   "intended_locale": "ro",
+   "headline_locale": "ro",
+   "screenshot_locale": "ro",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Fraze pentru viață",
+   "line2": "8.400 de fraze în 47 de limbi",
+   "chips": [
+    "8.400 de fraze în 47 de limbi",
+    "Învață engleza și spaniola",
+    "8.400 de fraze practice și complete"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.273,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        258,
+        72,
+        822,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.23,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        79,
+        176,
+        1001,
+        409
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 96,
+        "sub": 48,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.12,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        518,
+        241,
+        733
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.58,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      },
+      {
+       "kind": "card",
+       "plate": [
+        836,
+        776,
+        1040,
+        1036
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.55,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Fraze pentru viață\n8.400 de fraze în 47 de limbi\n\n📲 Descarcă din linkul din bio\n\n#DailyMate",
+   "caption_link": "Fraze pentru viață\n8.400 de fraze în 47 de limbi\n\nApp Store: https://apps.apple.com/app/id6790418321\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymate/ro.jpg"
+  },
+  {
+   "locale": "ru",
+   "file": "dailymate/ru.jpg",
+   "intended_locale": "ru",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {
+     "1": [
+      "Remove",
+      "please"
+     ],
+     "0": [
+      "English"
+     ],
+     "2": [
+      "English",
+      "Nederlands"
+     ]
+    },
+    "all_used_screens_localized": false
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "mixed English strings on all localized screenshots [['Remove', 'please'], ['English'], ['English', 'Nederlands']]; whole card in en-US",
+    "no localized storefront screenshot (English-only or lookup failed); whole card in en-US",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.208<0.24; orbit2×1.08: screen_area=0.224<0.24)"
+   ],
+   "line1": "Speak in Full Sentences",
+   "line2": "8,400 phrases in 47 languages",
+   "chips": [
+    "8,400 phrases in 47 languages",
+    "Learn Spanish, French & More",
+    "8,400 complete, practical phrases"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.24,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        258,
+        72,
+        821,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.23,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        190,
+        176,
+        889,
+        623
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.74,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        710,
+        216,
+        961
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.13,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Speak in Full Sentences\n8,400 phrases in 47 languages\n\n📲 Download via the link in bio\n\n#DailyMate",
+   "caption_link": "Speak in Full Sentences\n8,400 phrases in 47 languages\n\nApp Store: https://apps.apple.com/app/id6790418321\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymate/ru.jpg"
+  },
+  {
+   "locale": "sk",
+   "file": "dailymate/sk.jpg",
+   "intended_locale": "sk",
+   "headline_locale": "sk",
+   "screenshot_locale": "sk",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Celé vety do života",
+   "line2": "8 400 viet v 47 jazykoch",
+   "chips": [
+    "8 400 viet v 47 jazykoch",
+    "Angličtina a nemčina v praxi",
+    "8 400 praktických, úplných viet"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.272,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        294,
+        72,
+        786,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.25,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        84,
+        176,
+        997,
+        413
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.25,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        521,
+        249,
+        736
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.08,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Celé vety do života\n8 400 viet v 47 jazykoch\n\n📲 Stiahnite si ju cez odkaz v profile (bio)\n\n#DailyMate",
+   "caption_link": "Celé vety do života\n8 400 viet v 47 jazykoch\n\nApp Store: https://apps.apple.com/app/id6790418321\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymate/sk.jpg"
+  },
+  {
+   "locale": "sl-SI",
+   "file": "dailymate/sl-SI.jpg",
+   "intended_locale": "sl-SI",
+   "headline_locale": "sl-SI",
+   "screenshot_locale": "sl-SI",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Stavki za življenje",
+   "line2": "8.400 stavkov v 47 jezikih",
+   "chips": [
+    "8.400 stavkov v 47 jezikih",
+    "Učenje angleščine v praksi",
+    "8.400 praktičnih, celih stavkov"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.27,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        263,
+        72,
+        817,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.24,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        89,
+        176,
+        991,
+        419
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 96,
+        "sub": 48,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.17,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        526,
+        256,
+        741
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.56,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      },
+      {
+       "kind": "card",
+       "plate": [
+        825,
+        783,
+        1040,
+        1034
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.52,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Stavki za življenje\n8.400 stavkov v 47 jezikih\n\n📲 Prenesite prek povezave v biu\n\n#DailyMate",
+   "caption_link": "Stavki za življenje\n8.400 stavkov v 47 jezikih\n\nApp Store: https://apps.apple.com/app/id6790418321\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymate/sl-SI.jpg"
+  },
+  {
+   "locale": "sv",
+   "file": "dailymate/sv.jpg",
+   "intended_locale": "sv",
+   "headline_locale": "sv",
+   "screenshot_locale": "sv",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.208<0.24; orbit2×1.08: screen_area=0.224<0.24)"
+   ],
+   "line1": "Lär dig hela meningar",
+   "line2": "8 400 vardagsfraser på 47 språk",
+   "chips": [
+    "8 400 vardagsfraser på 47 språk",
+    "Lär dig engelska och spanska",
+    "8 400 praktiska, fullständiga meningar"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.24,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        259,
+        72,
+        821,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.23,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        215,
+        176,
+        865,
+        623
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.72,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        710,
+        225,
+        970
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.07,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Lär dig hela meningar\n8 400 vardagsfraser på 47 språk\n\n📲 Ladda ner via länken i bion\n\n#DailyMate",
+   "caption_link": "Lär dig hela meningar\n8 400 vardagsfraser på 47 språk\n\nApp Store: https://apps.apple.com/app/id6790418321\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymate/sv.jpg"
+  },
+  {
+   "locale": "ta-IN",
+   "file": "dailymate/ta-IN.jpg",
+   "intended_locale": "ta-IN",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {
+     "1": [
+      "Remove"
+     ],
+     "0": [
+      "English"
+     ],
+     "2": [
+      "English",
+      "Nederlands"
+     ]
+    },
+    "all_used_screens_localized": false
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "mixed English strings on all localized screenshots [['Remove'], ['English'], ['English', 'Nederlands']]; whole card in en-US",
+    "no localized storefront screenshot (English-only or lookup failed); whole card in en-US",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.208<0.24; orbit2×1.08: screen_area=0.224<0.24)"
+   ],
+   "line1": "Speak in Full Sentences",
+   "line2": "8,400 phrases in 47 languages",
+   "chips": [
+    "8,400 phrases in 47 languages",
+    "Learn Spanish, French & More",
+    "8,400 complete, practical phrases"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.24,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        258,
+        72,
+        821,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.23,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        190,
+        176,
+        889,
+        623
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.74,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        710,
+        216,
+        961
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.13,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Speak in Full Sentences\n8,400 phrases in 47 languages\n\n📲 Download via the link in bio\n\n#DailyMate",
+   "caption_link": "Speak in Full Sentences\n8,400 phrases in 47 languages\n\nApp Store: https://apps.apple.com/app/id6790418321\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymate/ta-IN.jpg"
+  },
+  {
+   "locale": "te-IN",
+   "file": "dailymate/te-IN.jpg",
+   "intended_locale": "te-IN",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {
+     "1": [
+      "Remove",
+      "please"
+     ],
+     "0": [
+      "English"
+     ],
+     "2": [
+      "English",
+      "Nederlands"
+     ]
+    },
+    "all_used_screens_localized": false
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "mixed English strings on all localized screenshots [['Remove', 'please'], ['English'], ['English', 'Nederlands']]; whole card in en-US",
+    "no localized storefront screenshot (English-only or lookup failed); whole card in en-US",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.208<0.24; orbit2×1.08: screen_area=0.224<0.24)"
+   ],
+   "line1": "Speak in Full Sentences",
+   "line2": "8,400 phrases in 47 languages",
+   "chips": [
+    "8,400 phrases in 47 languages",
+    "Learn Spanish, French & More",
+    "8,400 complete, practical phrases"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.24,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        258,
+        72,
+        821,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.23,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        190,
+        176,
+        889,
+        623
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.74,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        710,
+        216,
+        961
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.13,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Speak in Full Sentences\n8,400 phrases in 47 languages\n\n📲 Download via the link in bio\n\n#DailyMate",
+   "caption_link": "Speak in Full Sentences\n8,400 phrases in 47 languages\n\nApp Store: https://apps.apple.com/app/id6790418321\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymate/te-IN.jpg"
+  },
+  {
+   "locale": "th",
+   "file": "dailymate/th.jpg",
+   "intended_locale": "th",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {
+     "1": [
+      "Remove",
+      "please"
+     ],
+     "0": [
+      "English"
+     ],
+     "2": [
+      "English",
+      "Nederlands"
+     ]
+    },
+    "all_used_screens_localized": false
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "mixed English strings on all localized screenshots [['Remove', 'please'], ['English'], ['English', 'Nederlands']]; whole card in en-US",
+    "no localized storefront screenshot (English-only or lookup failed); whole card in en-US",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.208<0.24; orbit2×1.08: screen_area=0.224<0.24)"
+   ],
+   "line1": "Speak in Full Sentences",
+   "line2": "8,400 phrases in 47 languages",
+   "chips": [
+    "8,400 phrases in 47 languages",
+    "Learn Spanish, French & More",
+    "8,400 complete, practical phrases"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.24,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        258,
+        72,
+        821,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.23,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        190,
+        176,
+        889,
+        623
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.74,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        710,
+        216,
+        961
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.13,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Speak in Full Sentences\n8,400 phrases in 47 languages\n\n📲 Download via the link in bio\n\n#DailyMate",
+   "caption_link": "Speak in Full Sentences\n8,400 phrases in 47 languages\n\nApp Store: https://apps.apple.com/app/id6790418321\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymate/th.jpg"
+  },
+  {
+   "locale": "tr",
+   "file": "dailymate/tr.jpg",
+   "intended_locale": "tr",
+   "headline_locale": "tr",
+   "screenshot_locale": "tr",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.23<0.24)"
+   ],
+   "line1": "Tam cümlelerle konuş",
+   "line2": "8.400 cümle, 47 dil",
+   "chips": [
+    "8.400 cümle, 47 dil",
+    "İngilizce öğren, rahat konuş",
+    "8.400 pratik, eksiksiz cümle"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.248,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.02,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        269,
+        72,
+        811,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.27,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        117,
+        176,
+        963,
+        551
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.24,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        645,
+        215,
+        905
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.57,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      },
+      {
+       "kind": "card",
+       "plate": [
+        875,
+        865,
+        1040,
+        1116
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.5,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Tam cümlelerle konuş\n8.400 cümle, 47 dil\n\n📲 Biyografideki bağlantıdan indirin\n\n#DailyMate",
+   "caption_link": "Tam cümlelerle konuş\n8.400 cümle, 47 dil\n\nApp Store: https://apps.apple.com/app/id6790418321\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymate/tr.jpg"
+  },
+  {
+   "locale": "uk",
+   "file": "dailymate/uk.jpg",
+   "intended_locale": "uk",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {
+     "1": [
+      "Remove"
+     ],
+     "0": [
+      "English"
+     ],
+     "2": [
+      "English",
+      "Nederlands"
+     ]
+    },
+    "all_used_screens_localized": false
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "mixed English strings on all localized screenshots [['Remove'], ['English'], ['English', 'Nederlands']]; whole card in en-US",
+    "no localized storefront screenshot (English-only or lookup failed); whole card in en-US",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.208<0.24; orbit2×1.08: screen_area=0.224<0.24)"
+   ],
+   "line1": "Speak in Full Sentences",
+   "line2": "8,400 phrases in 47 languages",
+   "chips": [
+    "8,400 phrases in 47 languages",
+    "Learn Spanish, French & More",
+    "8,400 complete, practical phrases"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.24,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        258,
+        72,
+        821,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.23,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        190,
+        176,
+        889,
+        623
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.74,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        710,
+        216,
+        961
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.13,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Speak in Full Sentences\n8,400 phrases in 47 languages\n\n📲 Download via the link in bio\n\n#DailyMate",
+   "caption_link": "Speak in Full Sentences\n8,400 phrases in 47 languages\n\nApp Store: https://apps.apple.com/app/id6790418321\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymate/uk.jpg"
+  },
+  {
+   "locale": "ur-PK",
+   "file": "dailymate/ur-PK.jpg",
+   "intended_locale": "ur-PK",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {
+     "1": [
+      "Remove"
+     ],
+     "0": [
+      "English"
+     ],
+     "2": [
+      "English",
+      "Nederlands"
+     ]
+    },
+    "all_used_screens_localized": false
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "mixed English strings on all localized screenshots [['Remove'], ['English'], ['English', 'Nederlands']]; whole card in en-US",
+    "no localized storefront screenshot (English-only or lookup failed); whole card in en-US",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.208<0.24; orbit2×1.08: screen_area=0.224<0.24)"
+   ],
+   "line1": "Speak in Full Sentences",
+   "line2": "8,400 phrases in 47 languages",
+   "chips": [
+    "8,400 phrases in 47 languages",
+    "Learn Spanish, French & More",
+    "8,400 complete, practical phrases"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.24,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        258,
+        72,
+        821,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.23,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        190,
+        176,
+        889,
+        623
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.74,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        710,
+        216,
+        961
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.13,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Speak in Full Sentences\n8,400 phrases in 47 languages\n\n📲 Download via the link in bio\n\n#DailyMate",
+   "caption_link": "Speak in Full Sentences\n8,400 phrases in 47 languages\n\nApp Store: https://apps.apple.com/app/id6790418321\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymate/ur-PK.jpg"
+  },
+  {
+   "locale": "vi",
+   "file": "dailymate/vi.jpg",
+   "intended_locale": "vi",
+   "headline_locale": "vi",
+   "screenshot_locale": "vi",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.226<0.24)"
+   ],
+   "line1": "Học cả câu, nói tự nhiên",
+   "line2": "8.400 câu, 47 ngôn ngữ",
+   "chips": [
+    "8.400 câu, 47 ngôn ngữ",
+    "Tiếng Anh giao tiếp hằng ngày",
+    "8.400 câu hoàn chỉnh, dùng được ngay"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.244,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.02,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        249,
+        72,
+        831,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.22,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        198,
+        176,
+        881,
+        564
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.52,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        657,
+        254,
+        872
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.17,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      },
+      {
+       "kind": "card",
+       "plate": [
+        824,
+        873,
+        1040,
+        1178
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.47,
+       "plate_alpha": 0.55,
+       "lines": 5,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Học cả câu, nói tự nhiên\n8.400 câu, 47 ngôn ngữ\n\n📲 Tải về qua link ở bio\n\n#DailyMate",
+   "caption_link": "Học cả câu, nói tự nhiên\n8.400 câu, 47 ngôn ngữ\n\nApp Store: https://apps.apple.com/app/id6790418321\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymate/vi.jpg"
+  },
+  {
+   "locale": "zh-Hans",
+   "file": "dailymate/zh-Hans.jpg",
+   "intended_locale": "zh-Hans",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {
+     "1": [
+      "Remove"
+     ],
+     "0": [
+      "English"
+     ],
+     "2": [
+      "English",
+      "Nederlands"
+     ]
+    },
+    "all_used_screens_localized": false
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "mixed English strings on all localized screenshots [['Remove'], ['English'], ['English', 'Nederlands']]; whole card in en-US",
+    "no localized storefront screenshot (English-only or lookup failed); whole card in en-US",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.208<0.24; orbit2×1.08: screen_area=0.224<0.24)"
+   ],
+   "line1": "Speak in Full Sentences",
+   "line2": "8,400 phrases in 47 languages",
+   "chips": [
+    "8,400 phrases in 47 languages",
+    "Learn Spanish, French & More",
+    "8,400 complete, practical phrases"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.24,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        258,
+        72,
+        821,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.23,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        190,
+        176,
+        889,
+        623
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.74,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        710,
+        216,
+        961
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.13,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Speak in Full Sentences\n8,400 phrases in 47 languages\n\n📲 Download via the link in bio\n\n#DailyMate",
+   "caption_link": "Speak in Full Sentences\n8,400 phrases in 47 languages\n\nApp Store: https://apps.apple.com/app/id6790418321\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymate/zh-Hans.jpg"
+  },
+  {
+   "locale": "zh-Hant",
+   "file": "dailymate/zh-Hant.jpg",
+   "intended_locale": "zh-Hant",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {
+     "1": [
+      "Remove"
+     ],
+     "0": [
+      "English"
+     ],
+     "2": [
+      "English",
+      "Nederlands"
+     ]
+    },
+    "all_used_screens_localized": false
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "mixed English strings on all localized screenshots [['Remove'], ['English'], ['English', 'Nederlands']]; whole card in en-US",
+    "no localized storefront screenshot (English-only or lookup failed); whole card in en-US",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.208<0.24; orbit2×1.08: screen_area=0.224<0.24)"
+   ],
+   "line1": "Speak in Full Sentences",
+   "line2": "8,400 phrases in 47 languages",
+   "chips": [
+    "8,400 phrases in 47 languages",
+    "Learn Spanish, French & More",
+    "8,400 complete, practical phrases"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.24,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        258,
+        72,
+        821,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.23,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        190,
+        176,
+        889,
+        623
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.74,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        710,
+        216,
+        961
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.13,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Speak in Full Sentences\n8,400 phrases in 47 languages\n\n📲 Download via the link in bio\n\n#DailyMate",
+   "caption_link": "Speak in Full Sentences\n8,400 phrases in 47 languages\n\nApp Store: https://apps.apple.com/app/id6790418321\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymate/zh-Hant.jpg"
+  }
+ ]
+}

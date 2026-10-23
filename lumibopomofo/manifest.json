@@ -1,0 +1,6836 @@
+{
+ "schema": "lumi.promo_cards/v1",
+ "app": "lumibopomofo",
+ "app_id": "6773017109",
+ "app_store_url": "https://apps.apple.com/app/id6773017109",
+ "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin",
+ "size": [
+  1080,
+  1350
+ ],
+ "built": "2026-10-23",
+ "items": [
+  {
+   "locale": "ar-SA",
+   "file": "lumibopomofo/ar-SA.jpg",
+   "intended_locale": "ar-SA",
+   "headline_locale": "ar-SA",
+   "screenshot_locale": "ar-SA",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0
+   ],
+   "demo_language_check": {
+    "method": "ocr:ara",
+    "script_chars": 57,
+    "mixed_english_words": {
+     "2": [
+      "TRAIN"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [2] with mixed English strings [['TRAIN']]",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.206<0.24; orbit2×1.08: screen_area=0.223<0.24; orbit2×1.16: screen_area=0.238<0.24)"
+   ],
+   "line1": "أصوات الصينية باللعب",
+   "line2": "نظام جوين في لعبة كواكب لطيفة",
+   "chips": [
+    "نظام جوين في لعبة كواكب لطيفة",
+    "تشويين: الصينية للأطفال",
+    "شخصيات ظريفة وإيقاع هادئ"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.256,
+    "family": "orbit2",
+    "font": "NotoSansArabic.ttf",
+    "screen_ratio_vs_battai_split": 1.37,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        384,
+        72,
+        695,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 10.26,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        168,
+        176,
+        911,
+        629
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.82,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.3,
+        1.4
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        882,
+        716,
+        1040,
+        942
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.93,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.4
+      }
+     ]
+    },
+    "phone_scale": 1.25,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "أصوات الصينية باللعب\nنظام جوين في لعبة كواكب لطيفة\n\n📲 حمّله من الرابط في الملف الشخصي (bio)\n\n#LumiBopomofo",
+   "caption_link": "أصوات الصينية باللعب\nنظام جوين في لعبة كواكب لطيفة\n\nApp Store: https://apps.apple.com/app/id6773017109\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofo/ar-SA.jpg"
+  },
+  {
+   "locale": "bn-BD",
+   "file": "lumibopomofo/bn-BD.jpg",
+   "intended_locale": "bn-BD",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": false
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "no localized storefront screenshot (English-only or lookup failed); whole card in en-US",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.212<0.24; orbit2×1.08: screen_area=0.228<0.24)"
+   ],
+   "line1": "Bopomofo by Playing",
+   "line2": "Listen, trace and ride the Tone Coaster",
+   "chips": [
+    "Listen, trace and ride the Tone Coaster",
+    "Zhuyin Games: Chinese Phonics"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.245,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        362,
+        72,
+        717,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 9.79,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        251,
+        176,
+        829,
+        611
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.41,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        699,
+        207,
+        950
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.25,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Bopomofo by Playing\nListen, trace and ride the Tone Coaster\n\n📲 Download via the link in bio\n\n#LumiBopomofo",
+   "caption_link": "Bopomofo by Playing\nListen, trace and ride the Tone Coaster\n\nApp Store: https://apps.apple.com/app/id6773017109\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofo/bn-BD.jpg"
+  },
+  {
+   "locale": "ca",
+   "file": "lumibopomofo/ca.jpg",
+   "intended_locale": "ca",
+   "headline_locale": "ca",
+   "screenshot_locale": "ca",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Zhuyin jugant",
+   "line2": "Jocs de planetes, de 3 a 6 anys",
+   "chips": [
+    "Jocs de planetes, de 3 a 6 anys",
+    "Zhuyin: xinès per a nens",
+    "Personatges adorables i ritme tranquil"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.245,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        362,
+        72,
+        717,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 9.79,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        152,
+        176,
+        927,
+        501
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.59,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        600,
+        233,
+        806
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 7.74,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Zhuyin jugant\nJocs de planetes, de 3 a 6 anys\n\n📲 Descarrega-la des de l'enllaç de la bio\n\n#LumiBopomofo",
+   "caption_link": "Zhuyin jugant\nJocs de planetes, de 3 a 6 anys\n\nApp Store: https://apps.apple.com/app/id6773017109\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofo/ca.jpg"
+  },
+  {
+   "locale": "cs",
+   "file": "lumibopomofo/cs.jpg",
+   "intended_locale": "cs",
+   "headline_locale": "cs",
+   "screenshot_locale": "cs",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Zhuyin hrou",
+   "line2": "Symboly a zvuky v planetární hře",
+   "chips": [
+    "Symboly a zvuky v planetární hře",
+    "Roztomilé postavy a klidné tempo"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.245,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        362,
+        72,
+        717,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 9.79,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        203,
+        176,
+        877,
+        501
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.67,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        600,
+        243,
+        860
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 7.79,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Zhuyin hrou\nSymboly a zvuky v planetární hře\n\n📲 Stáhněte si ji přes odkaz v profilu (bio)\n\n#LumiBopomofo",
+   "caption_link": "Zhuyin hrou\nSymboly a zvuky v planetární hře\n\nApp Store: https://apps.apple.com/app/id6773017109\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofo/cs.jpg"
+  },
+  {
+   "locale": "da",
+   "file": "lumibopomofo/da.jpg",
+   "intended_locale": "da",
+   "headline_locale": "da",
+   "screenshot_locale": "da",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Zhuyin gennem leg",
+   "line2": "Symboler, lyde og kombinationer",
+   "chips": [
+    "Symboler, lyde og kombinationer",
+    "Zhuyin: kinesisk for børn",
+    "Søde figurer og roligt tempo"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.275,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        362,
+        72,
+        717,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 9.79,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        94,
+        176,
+        987,
+        403
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 9.7,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        512,
+        214,
+        719
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 7.67,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      },
+      {
+       "kind": "card",
+       "plate": [
+        862,
+        773,
+        1040,
+        1033
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.21,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Zhuyin gennem leg\nSymboler, lyde og kombinationer\n\n📲 Download via linket i bio\n\n#LumiBopomofo",
+   "caption_link": "Zhuyin gennem leg\nSymboler, lyde og kombinationer\n\nApp Store: https://apps.apple.com/app/id6773017109\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofo/da.jpg"
+  },
+  {
+   "locale": "de-DE",
+   "file": "lumibopomofo/de-DE.jpg",
+   "intended_locale": "de-DE",
+   "headline_locale": "de-DE",
+   "screenshot_locale": "de-DE",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Zhuyin spielend",
+   "line2": "Mandarin-Laute als Planetenspiel",
+   "chips": [
+    "Mandarin-Laute als Planetenspiel",
+    "Zhuyin: Chinesisch für Kinder",
+    "Niedliche Figuren und ruhiges Lerntempo"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.265,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        362,
+        72,
+        717,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 9.79,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        104,
+        176,
+        976,
+        436
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 9.99,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        542,
+        254,
+        748
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 7.88,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      },
+      {
+       "kind": "card",
+       "plate": [
+        818,
+        793,
+        1040,
+        1098
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.01,
+       "plate_alpha": 0.55,
+       "lines": 5,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Zhuyin spielend\nMandarin-Laute als Planetenspiel\n\n📲 Download über den Link in der Bio\n\n#LumiBopomofo",
+   "caption_link": "Zhuyin spielend\nMandarin-Laute als Planetenspiel\n\nApp Store: https://apps.apple.com/app/id6773017109\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofo/de-DE.jpg"
+  },
+  {
+   "locale": "el",
+   "file": "lumibopomofo/el.jpg",
+   "intended_locale": "el",
+   "headline_locale": "el",
+   "screenshot_locale": "el",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0
+   ],
+   "demo_language_check": {
+    "method": "ocr:ell",
+    "script_chars": 123,
+    "mixed_english_words": {
+     "2": [
+      "TRAIN"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [2] with mixed English strings [['TRAIN']]"
+   ],
+   "line1": "Ζουγίν με παιχνίδι",
+   "line2": "Σύμβολα, ήχοι και συνδυασμοί",
+   "chips": [
+    "Σύμβολα, ήχοι και συνδυασμοί",
+    "Ζουγίν: κινέζικα για παιδιά",
+    "Χαριτωμένοι χαρακτήρες και ήρεμος ρυθμός"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.272,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        343,
+        72,
+        737,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 9.52,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        80,
+        176,
+        1000,
+        413
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 9.94,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        521,
+        255,
+        734
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 7.91,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Ζουγίν με παιχνίδι\nΣύμβολα, ήχοι και συνδυασμοί\n\n📲 Λήψη από τον σύνδεσμο στο προφίλ (bio)\n\n#LumiBopomofo",
+   "caption_link": "Ζουγίν με παιχνίδι\nΣύμβολα, ήχοι και συνδυασμοί\n\nApp Store: https://apps.apple.com/app/id6773017109\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofo/el.jpg"
+  },
+  {
+   "locale": "en-AU",
+   "file": "lumibopomofo/en-AU.jpg",
+   "intended_locale": "en-AU",
+   "headline_locale": "en-AU",
+   "screenshot_locale": "en-AU",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.208<0.24; orbit2×1.08: screen_area=0.224<0.24)"
+   ],
+   "line1": "Zhuyin Through Play",
+   "line2": "Short planet games for ages 3–6",
+   "chips": [
+    "Short planet games for ages 3–6",
+    "Zhuyin Games: Chinese Phonics",
+    "Cute space friends and calm feedback"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.24,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        362,
+        72,
+        717,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 9.79,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        171,
+        176,
+        909,
+        623
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.39,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        710,
+        207,
+        961
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.26,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      },
+      {
+       "kind": "card",
+       "plate": [
+        848,
+        909,
+        1040,
+        1205
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 7.87,
+       "plate_alpha": 0.55,
+       "lines": 5,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Zhuyin Through Play\nShort planet games for ages 3–6\n\n📲 Download via the link in bio\n\n#LumiBopomofo",
+   "caption_link": "Zhuyin Through Play\nShort planet games for ages 3–6\n\nApp Store: https://apps.apple.com/app/id6773017109\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofo/en-AU.jpg"
+  },
+  {
+   "locale": "en-CA",
+   "file": "lumibopomofo/en-CA.jpg",
+   "intended_locale": "en-CA",
+   "headline_locale": "en-CA",
+   "screenshot_locale": "en-CA",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.208<0.24; orbit2×1.08: screen_area=0.224<0.24)"
+   ],
+   "line1": "Zhuyin Through Play",
+   "line2": "Short planet games for ages 3–6",
+   "chips": [
+    "Short planet games for ages 3–6",
+    "Zhuyin Games: Chinese Phonics"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.24,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        362,
+        72,
+        717,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 9.79,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        171,
+        176,
+        909,
+        623
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.39,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        710,
+        207,
+        961
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.26,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Zhuyin Through Play\nShort planet games for ages 3–6\n\n📲 Download via the link in bio\n\n#LumiBopomofo",
+   "caption_link": "Zhuyin Through Play\nShort planet games for ages 3–6\n\nApp Store: https://apps.apple.com/app/id6773017109\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofo/en-CA.jpg"
+  },
+  {
+   "locale": "en-GB",
+   "file": "lumibopomofo/en-GB.jpg",
+   "intended_locale": "en-GB",
+   "headline_locale": "en-GB",
+   "screenshot_locale": "en-GB",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.208<0.24; orbit2×1.08: screen_area=0.224<0.24)"
+   ],
+   "line1": "Zhuyin Through Play",
+   "line2": "Short planet games for ages 3–6",
+   "chips": [
+    "Short planet games for ages 3–6",
+    "Zhuyin Games: Chinese Phonics",
+    "Cute characters and a gentle pace"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.24,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        362,
+        72,
+        717,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 9.79,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        171,
+        176,
+        909,
+        623
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.39,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        710,
+        207,
+        961
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.26,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Zhuyin Through Play\nShort planet games for ages 3–6\n\n📲 Download via the link in bio\n\n#LumiBopomofo",
+   "caption_link": "Zhuyin Through Play\nShort planet games for ages 3–6\n\nApp Store: https://apps.apple.com/app/id6773017109\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofo/en-GB.jpg"
+  },
+  {
+   "locale": "en-US",
+   "file": "lumibopomofo/en-US.jpg",
+   "intended_locale": "en-US",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.212<0.24; orbit2×1.08: screen_area=0.228<0.24)"
+   ],
+   "line1": "Bopomofo by Playing",
+   "line2": "Listen, trace and ride the Tone Coaster",
+   "chips": [
+    "Listen, trace and ride the Tone Coaster",
+    "Zhuyin Games: Chinese Phonics"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.245,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        362,
+        72,
+        717,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 9.79,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        251,
+        176,
+        829,
+        611
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.41,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        699,
+        207,
+        950
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.25,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Bopomofo by Playing\nListen, trace and ride the Tone Coaster\n\n📲 Download via the link in bio\n\n#LumiBopomofo",
+   "caption_link": "Bopomofo by Playing\nListen, trace and ride the Tone Coaster\n\nApp Store: https://apps.apple.com/app/id6773017109\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofo/en-US.jpg"
+  },
+  {
+   "locale": "es-ES",
+   "file": "lumibopomofo/es-ES.jpg",
+   "intended_locale": "es-ES",
+   "headline_locale": "es-ES",
+   "screenshot_locale": "es-ES",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "El zhuyin jugando",
+   "line2": "Símbolos y sonidos en actividades breves",
+   "chips": [
+    "Símbolos y sonidos en actividades breves",
+    "Zhuyin: chino para niños",
+    "Personajes adorables y ritmo tranquilo"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.255,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        362,
+        72,
+        717,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 9.79,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        95,
+        176,
+        985,
+        468
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 96,
+        "sub": 48,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.21,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        571,
+        253,
+        786
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.12,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      },
+      {
+       "kind": "card",
+       "plate": [
+        820,
+        813,
+        1040,
+        1073
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.11,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "El zhuyin jugando\nSímbolos y sonidos en actividades breves\n\n📲 Descárgala desde el enlace de la bio\n\n#LumiBopomofo",
+   "caption_link": "El zhuyin jugando\nSímbolos y sonidos en actividades breves\n\nApp Store: https://apps.apple.com/app/id6773017109\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofo/es-ES.jpg"
+  },
+  {
+   "locale": "es-MX",
+   "file": "lumibopomofo/es-MX.jpg",
+   "intended_locale": "es-MX",
+   "headline_locale": "es-MX",
+   "screenshot_locale": "es-MX",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "El zhuyin jugando",
+   "line2": "Símbolos y sonidos en actividades cortas",
+   "chips": [
+    "Símbolos y sonidos en actividades cortas",
+    "Zhuyin: chino para niños",
+    "Personajes tiernos y ritmo amable"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.255,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        362,
+        72,
+        717,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 9.79,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        95,
+        176,
+        985,
+        468
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 96,
+        "sub": 48,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.21,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        571,
+        253,
+        786
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.12,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      },
+      {
+       "kind": "card",
+       "plate": [
+        820,
+        813,
+        1040,
+        1064
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.11,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "El zhuyin jugando\nSímbolos y sonidos en actividades cortas\n\n📲 Descárgala desde el enlace de la bio\n\n#LumiBopomofo",
+   "caption_link": "El zhuyin jugando\nSímbolos y sonidos en actividades cortas\n\nApp Store: https://apps.apple.com/app/id6773017109\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofo/es-MX.jpg"
+  },
+  {
+   "locale": "fi",
+   "file": "lumibopomofo/fi.jpg",
+   "intended_locale": "fi",
+   "headline_locale": "fi",
+   "screenshot_locale": "fi",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.208<0.24; orbit2×1.08: screen_area=0.224<0.24)"
+   ],
+   "line1": "Zhuyin leikin kautta",
+   "line2": "Merkit, äänet ja yhdistelmät",
+   "chips": [
+    "Merkit, äänet ja yhdistelmät",
+    "Zhuyin: kiinaa lapsille",
+    "Söpöt hahmot ja rauhallinen tahti"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.24,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        362,
+        72,
+        717,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 9.79,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        184,
+        176,
+        895,
+        623
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.52,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        710,
+        198,
+        925
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.36,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Zhuyin leikin kautta\nMerkit, äänet ja yhdistelmät\n\n📲 Lataa bion linkistä\n\n#LumiBopomofo",
+   "caption_link": "Zhuyin leikin kautta\nMerkit, äänet ja yhdistelmät\n\nApp Store: https://apps.apple.com/app/id6773017109\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofo/fi.jpg"
+  },
+  {
+   "locale": "fr-CA",
+   "file": "lumibopomofo/fr-CA.jpg",
+   "intended_locale": "fr-CA",
+   "headline_locale": "fr-CA",
+   "screenshot_locale": "fr-CA",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Le zhuyin en jouant",
+   "line2": "Symboles et sons en mini-activités",
+   "chips": [
+    "Symboles et sons en mini-activités",
+    "Zhuyin : chinois pour enfants",
+    "Personnages adorables et rythme calme"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.275,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        362,
+        72,
+        717,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 9.79,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        84,
+        176,
+        995,
+        403
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 9.85,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        512,
+        208,
+        763
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 7.66,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Le zhuyin en jouant\nSymboles et sons en mini-activités\n\n📲 Téléchargez-la via le lien dans la bio\n\n#LumiBopomofo",
+   "caption_link": "Le zhuyin en jouant\nSymboles et sons en mini-activités\n\nApp Store: https://apps.apple.com/app/id6773017109\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofo/fr-CA.jpg"
+  },
+  {
+   "locale": "fr-FR",
+   "file": "lumibopomofo/fr-FR.jpg",
+   "intended_locale": "fr-FR",
+   "headline_locale": "fr-FR",
+   "screenshot_locale": "fr-FR",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Le zhuyin en jouant",
+   "line2": "Sons et symboles en activités courtes",
+   "chips": [
+    "Sons et symboles en activités courtes",
+    "Zhuyin : chinois pour enfants",
+    "Personnages mignons et rythme calme"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.275,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        362,
+        72,
+        717,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 9.79,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        84,
+        176,
+        995,
+        403
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 9.77,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        512,
+        208,
+        763
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 7.66,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Le zhuyin en jouant\nSons et symboles en activités courtes\n\n📲 Téléchargez-la via le lien dans la bio\n\n#LumiBopomofo",
+   "caption_link": "Le zhuyin en jouant\nSons et symboles en activités courtes\n\nApp Store: https://apps.apple.com/app/id6773017109\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofo/fr-FR.jpg"
+  },
+  {
+   "locale": "gu-IN",
+   "file": "lumibopomofo/gu-IN.jpg",
+   "intended_locale": "gu-IN",
+   "headline_locale": "gu-IN",
+   "screenshot_locale": "gu-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0
+   ],
+   "demo_language_check": {
+    "method": "ocr:guj",
+    "script_chars": 109,
+    "mixed_english_words": {
+     "2": [
+      "TRAIN"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [2] with mixed English strings [['TRAIN']]"
+   ],
+   "line1": "રમતાં રમતાં ઝુયિન",
+   "line2": "સાંભળો, આંગળીથી દોરો, ટોન કોસ્ટર",
+   "chips": [
+    "સાંભળો, આંગળીથી દોરો, ટોન કોસ્ટર",
+    "Zhuyin: બાળકો માટે ચાઇનીઝ"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.251,
+    "family": "orbit2",
+    "font": "NotoSansGujarati.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        362,
+        72,
+        718,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 9.79,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        152,
+        176,
+        927,
+        480
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.77,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        581,
+        225,
+        805
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.15,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "રમતાં રમતાં ઝુયિન\nસાંભળો, આંગળીથી દોરો, ટોન કોસ્ટર\n\n📲 બાયોમાંની લિંકથી ડાઉનલોડ કરો\n\n#LumiBopomofo",
+   "caption_link": "રમતાં રમતાં ઝુયિન\nસાંભળો, આંગળીથી દોરો, ટોન કોસ્ટર\n\nApp Store: https://apps.apple.com/app/id6773017109\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofo/gu-IN.jpg"
+  },
+  {
+   "locale": "he",
+   "file": "lumibopomofo/he.jpg",
+   "intended_locale": "he",
+   "headline_locale": "he",
+   "screenshot_locale": "he",
+   "localized": true,
+   "screenshots_used": [
+    0
+   ],
+   "demo_language_check": {
+    "method": "ocr:heb",
+    "script_chars": 117,
+    "mixed_english_words": {
+     "1": [
+      "Neutral"
+     ],
+     "2": [
+      "TRAIN"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [1, 2] with mixed English strings [['Neutral'], ['TRAIN']]"
+   ],
+   "line1": "צלילי הסינית במשחק",
+   "line2": "לומדים ג'ואין במשחק כוכבי לכת חמוד",
+   "chips": [
+    "לומדים ג'ואין במשחק כוכבי לכת חמוד",
+    "ג'ואין: סינית לילדים",
+    "דמויות חמודות וקצב עדין"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.269,
+    "family": "orbit2",
+    "font": "NotoSansHebrew.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        364,
+        72,
+        716,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 10.23,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        77,
+        176,
+        1003,
+        421
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 9.67,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.3,
+        1.4
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        823,
+        528,
+        1040,
+        698
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.42,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.4
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        784,
+        221,
+        1011
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.17,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.4
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "צלילי הסינית במשחק\nלומדים ג'ואין במשחק כוכבי לכת חמוד\n\n📲 הורדה דרך הקישור בביו\n\n#LumiBopomofo",
+   "caption_link": "צלילי הסינית במשחק\nלומדים ג'ואין במשחק כוכבי לכת חמוד\n\nApp Store: https://apps.apple.com/app/id6773017109\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofo/he.jpg"
+  },
+  {
+   "locale": "hi",
+   "file": "lumibopomofo/hi.jpg",
+   "intended_locale": "hi",
+   "headline_locale": "hi",
+   "screenshot_locale": "hi",
+   "localized": true,
+   "screenshots_used": [
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:hin",
+    "script_chars": 114,
+    "mixed_english_words": {
+     "1": [
+      "TRAIN"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [1] with mixed English strings [['TRAIN']]"
+   ],
+   "line1": "खेल-खेल में झुयिन",
+   "line2": "ग्रहों वाले खेल में छोटे अभ्यास",
+   "chips": [
+    "ग्रहों वाले खेल में छोटे अभ्यास",
+    "Zhuyin: बच्चों की चीनी",
+    "प्यारे पात्र और शांत गति"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.251,
+    "family": "orbit2",
+    "font": "NotoSansDevanagari.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        382,
+        72,
+        699,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 10.14,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        137,
+        176,
+        943,
+        482
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.39,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        583,
+        266,
+        754
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 7.93,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.5
+      },
+      {
+       "kind": "card",
+       "plate": [
+        823,
+        822,
+        1040,
+        993
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.73,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "खेल-खेल में झुयिन\nग्रहों वाले खेल में छोटे अभ्यास\n\n📲 बायो में दिए लिंक से डाउनलोड करें\n\n#LumiBopomofo",
+   "caption_link": "खेल-खेल में झुयिन\nग्रहों वाले खेल में छोटे अभ्यास\n\nApp Store: https://apps.apple.com/app/id6773017109\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofo/hi.jpg"
+  },
+  {
+   "locale": "hr",
+   "file": "lumibopomofo/hr.jpg",
+   "intended_locale": "hr",
+   "headline_locale": "hr",
+   "screenshot_locale": "hr",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Zhuyin kroz igru",
+   "line2": "Simboli i zvukovi u igri s planetima",
+   "chips": [
+    "Simboli i zvukovi u igri s planetima",
+    "Zhuyin: kineski za djecu",
+    "Slatki likovi i njezan tempo"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.265,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        362,
+        72,
+        717,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 9.79,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        90,
+        176,
+        989,
+        436
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 9.73,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        542,
+        211,
+        757
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 7.74,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      },
+      {
+       "kind": "card",
+       "plate": [
+        812,
+        793,
+        1040,
+        1008
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.68,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Zhuyin kroz igru\nSimboli i zvukovi u igri s planetima\n\n📲 Preuzmi putem poveznice u biografiji (bio)\n\n#LumiBopomofo",
+   "caption_link": "Zhuyin kroz igru\nSimboli i zvukovi u igri s planetima\n\nApp Store: https://apps.apple.com/app/id6773017109\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofo/hr.jpg"
+  },
+  {
+   "locale": "hu",
+   "file": "lumibopomofo/hu.jpg",
+   "intended_locale": "hu",
+   "headline_locale": "hu",
+   "screenshot_locale": "hu",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Zhuyin játékosan",
+   "line2": "Jelek és hangok bolygós játékban",
+   "chips": [
+    "Jelek és hangok bolygós játékban",
+    "Zhuyin: kínai gyerekeknek",
+    "Aranyos szereplők és nyugodt tempó"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.267,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        362,
+        72,
+        717,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 9.79,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        83,
+        176,
+        997,
+        428
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 100,
+        "sub": 50,
+        "ratio": 2.0
+       },
+       "contrast_p10": 9.8,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        815,
+        788,
+        1040,
+        1048
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.11,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Zhuyin játékosan\nJelek és hangok bolygós játékban\n\n📲 Töltsd le a bio linkjéről\n\n#LumiBopomofo",
+   "caption_link": "Zhuyin játékosan\nJelek és hangok bolygós játékban\n\nApp Store: https://apps.apple.com/app/id6773017109\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofo/hu.jpg"
+  },
+  {
+   "locale": "id",
+   "file": "lumibopomofo/id.jpg",
+   "intended_locale": "id",
+   "headline_locale": "id",
+   "screenshot_locale": "id",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Zhuyin sambil main",
+   "line2": "Bunyi Mandarin lewat game planet",
+   "chips": [
+    "Bunyi Mandarin lewat game planet",
+    "Zhuyin: mandarin untuk anak",
+    "Karakter lucu dan tempo yang tenang"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.275,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        362,
+        72,
+        717,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 9.79,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        84,
+        176,
+        996,
+        403
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 9.66,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        512,
+        270,
+        718
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 7.88,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      },
+      {
+       "kind": "card",
+       "plate": [
+        858,
+        773,
+        1040,
+        1078
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.1,
+       "plate_alpha": 0.55,
+       "lines": 5,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Zhuyin sambil main\nBunyi Mandarin lewat game planet\n\n📲 Unduh lewat link di bio\n\n#LumiBopomofo",
+   "caption_link": "Zhuyin sambil main\nBunyi Mandarin lewat game planet\n\nApp Store: https://apps.apple.com/app/id6773017109\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofo/id.jpg"
+  },
+  {
+   "locale": "it",
+   "file": "lumibopomofo/it.jpg",
+   "intended_locale": "it",
+   "headline_locale": "it",
+   "screenshot_locale": "it",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Lo zhuyin giocando",
+   "line2": "Simboli e suoni in mini attività",
+   "chips": [
+    "Simboli e suoni in mini attività",
+    "Zhuyin: cinese per bambini",
+    "Personaggi teneri e ritmo sereno"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.276,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        362,
+        72,
+        717,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 9.79,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        93,
+        176,
+        987,
+        393
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.11,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        503,
+        250,
+        709
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 7.7,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      },
+      {
+       "kind": "card",
+       "plate": [
+        815,
+        767,
+        1040,
+        1018
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.12,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Lo zhuyin giocando\nSimboli e suoni in mini attività\n\n📲 Scaricala dal link nella bio\n\n#LumiBopomofo",
+   "caption_link": "Lo zhuyin giocando\nSimboli e suoni in mini attività\n\nApp Store: https://apps.apple.com/app/id6773017109\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofo/it.jpg"
+  },
+  {
+   "locale": "ja",
+   "file": "lumibopomofo/ja.jpg",
+   "intended_locale": "ja",
+   "headline_locale": "ja",
+   "screenshot_locale": "ja",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0
+   ],
+   "demo_language_check": {
+    "method": "ocr:jpn",
+    "script_chars": 44,
+    "mixed_english_words": {
+     "2": [
+      "TRAIN"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [2] with mixed English strings [['TRAIN']]"
+   ],
+   "line1": "注音が遊んで身につく",
+   "line2": "音を聞く・なぞる・声調コースター",
+   "chips": [
+    "音を聞く・なぞる・声調コースター",
+    "注音符号で中国語の発音あそび"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.275,
+    "family": "orbit2",
+    "font": "NotoSansJP.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        367,
+        72,
+        713,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 9.86,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        91,
+        176,
+        989,
+        403
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.09,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        512,
+        252,
+        724
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 7.71,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "注音が遊んで身につく\n音を聞く・なぞる・声調コースター\n\n📲 ダウンロードはプロフィール（bio）のリンクから\n\n#LumiBopomofo",
+   "caption_link": "注音が遊んで身につく\n音を聞く・なぞる・声調コースター\n\nApp Store: https://apps.apple.com/app/id6773017109\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofo/ja.jpg"
+  },
+  {
+   "locale": "kn-IN",
+   "file": "lumibopomofo/kn-IN.jpg",
+   "intended_locale": "kn-IN",
+   "headline_locale": "kn-IN",
+   "screenshot_locale": "kn-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0
+   ],
+   "demo_language_check": {
+    "method": "ocr:kan",
+    "script_chars": 90,
+    "mixed_english_words": {
+     "2": [
+      "TRAIN"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [2] with mixed English strings [['TRAIN']]",
+    "layout fallback orbit2->split2 (orbit2: screen_area=0.18<0.24; orbit2×1.08: screen_area=0.194<0.24; orbit2×1.16: screen_area=0.208<0.24; orbit2×1.25: screen_area=0.223<0.24)"
+   ],
+   "line1": "ಆಡುತ್ತಾ ಝುಯಿನ್ ಕಲಿಕೆ",
+   "line2": "ಧ್ವನಿ ಕೇಳಿ · ಬರೆಯಿರಿ · ಟೋನ್ ಕೋಸ್ಟರ್",
+   "chips": [
+    "ಧ್ವನಿ ಕೇಳಿ · ಬರೆಯಿರಿ · ಟೋನ್ ಕೋಸ್ಟರ್",
+    "Zhuyin: ಮಕ್ಕಳಿಗೆ ಚೈನೀಸ್"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.27,
+    "family": "split2",
+    "font": "NotoSansKannada.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        417,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 9.17,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        530,
+        801
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 9.12,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        825,
+        428,
+        969
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.15,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 split2）"
+   },
+   "caption_instagram": "ಆಡುತ್ತಾ ಝುಯಿನ್ ಕಲಿಕೆ\nಧ್ವನಿ ಕೇಳಿ · ಬರೆಯಿರಿ · ಟೋನ್ ಕೋಸ್ಟರ್\n\n📲 ಬಯೋದಲ್ಲಿರುವ ಲಿಂಕ್‌ನಿಂದ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ\n\n#LumiBopomofo",
+   "caption_link": "ಆಡುತ್ತಾ ಝುಯಿನ್ ಕಲಿಕೆ\nಧ್ವನಿ ಕೇಳಿ · ಬರೆಯಿರಿ · ಟೋನ್ ಕೋಸ್ಟರ್\n\nApp Store: https://apps.apple.com/app/id6773017109\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofo/kn-IN.jpg"
+  },
+  {
+   "locale": "ko",
+   "file": "lumibopomofo/ko.jpg",
+   "intended_locale": "ko",
+   "headline_locale": "ko",
+   "screenshot_locale": "ko",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0
+   ],
+   "demo_language_check": {
+    "method": "ocr:kor",
+    "script_chars": 47,
+    "mixed_english_words": {
+     "2": [
+      "TRAIN"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [2] with mixed English strings [['TRAIN']]"
+   ],
+   "line1": "놀면서 익히는 주음",
+   "line2": "소리 듣기·따라 쓰기·성조 코스터",
+   "chips": [
+    "소리 듣기·따라 쓰기·성조 코스터",
+    "중국어 발음 놀이·주음부호 게임"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.266,
+    "family": "orbit2",
+    "font": "NotoSansKR.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        386,
+        72,
+        693,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 10.19,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        118,
+        176,
+        963,
+        431
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.15,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "놀면서 익히는 주음\n소리 듣기·따라 쓰기·성조 코스터\n\n📲 다운로드는 프로필(bio) 링크에서\n\n#LumiBopomofo",
+   "caption_link": "놀면서 익히는 주음\n소리 듣기·따라 쓰기·성조 코스터\n\nApp Store: https://apps.apple.com/app/id6773017109\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofo/ko.jpg"
+  },
+  {
+   "locale": "ml-IN",
+   "file": "lumibopomofo/ml-IN.jpg",
+   "intended_locale": "ml-IN",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:mal",
+    "script_chars": 156,
+    "mixed_english_words": {
+     "2": [
+      "TRAIN"
+     ]
+    },
+    "all_used_screens_localized": false
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [2] with mixed English strings [['TRAIN']]",
+    "no layout fits the hard minimum font sizes with the localized copy; whole card in en-US",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.212<0.24; orbit2×1.08: screen_area=0.228<0.24)"
+   ],
+   "line1": "Bopomofo by Playing",
+   "line2": "Listen, trace and ride the Tone Coaster",
+   "chips": [
+    "Listen, trace and ride the Tone Coaster",
+    "Zhuyin Games: Chinese Phonics"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.245,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        362,
+        72,
+        717,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 9.79,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        251,
+        176,
+        829,
+        611
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.41,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        699,
+        207,
+        950
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.25,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Bopomofo by Playing\nListen, trace and ride the Tone Coaster\n\n📲 Download via the link in bio\n\n#LumiBopomofo",
+   "caption_link": "Bopomofo by Playing\nListen, trace and ride the Tone Coaster\n\nApp Store: https://apps.apple.com/app/id6773017109\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofo/ml-IN.jpg"
+  },
+  {
+   "locale": "mr-IN",
+   "file": "lumibopomofo/mr-IN.jpg",
+   "intended_locale": "mr-IN",
+   "headline_locale": "mr-IN",
+   "screenshot_locale": "mr-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0
+   ],
+   "demo_language_check": {
+    "method": "ocr:mar",
+    "script_chars": 95,
+    "mixed_english_words": {
+     "2": [
+      "TRAIN"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [2] with mixed English strings [['TRAIN']]",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.228<0.24)"
+   ],
+   "line1": "खेळत खेळत झुयिन",
+   "line2": "आवाज ऐका, रेषा गिरवा, चार स्वर ओळखा",
+   "chips": [
+    "आवाज ऐका, रेषा गिरवा, चार स्वर ओळखा",
+    "Zhuyin: मुलांसाठी चिनी भाषा"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.245,
+    "family": "orbit2",
+    "font": "NotoSansDevanagari.ttf",
+    "screen_ratio_vs_battai_split": 1.02,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        362,
+        72,
+        717,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 9.79,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        118,
+        176,
+        962,
+        559
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.3,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        652,
+        217,
+        877
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.67,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.5
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "खेळत खेळत झुयिन\nआवाज ऐका, रेषा गिरवा, चार स्वर ओळखा\n\n📲 बायोमधील लिंकवरून डाउनलोड करा\n\n#LumiBopomofo",
+   "caption_link": "खेळत खेळत झुयिन\nआवाज ऐका, रेषा गिरवा, चार स्वर ओळखा\n\nApp Store: https://apps.apple.com/app/id6773017109\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofo/mr-IN.jpg"
+  },
+  {
+   "locale": "ms",
+   "file": "lumibopomofo/ms.jpg",
+   "intended_locale": "ms",
+   "headline_locale": "ms",
+   "screenshot_locale": "ms",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.208<0.24; orbit2×1.08: screen_area=0.224<0.24)"
+   ],
+   "line1": "Zhuyin sambil bermain",
+   "line2": "Bunyi Mandarin dalam permainan planet",
+   "chips": [
+    "Bunyi Mandarin dalam permainan planet",
+    "Zhuyin: mandarin kanak-kanak",
+    "Watak comel dan rentak yang tenang"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.24,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        362,
+        72,
+        717,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 9.79,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        152,
+        176,
+        927,
+        623
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.14,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Zhuyin sambil bermain\nBunyi Mandarin dalam permainan planet\n\n📲 Muat turun melalui pautan dalam bio\n\n#LumiBopomofo",
+   "caption_link": "Zhuyin sambil bermain\nBunyi Mandarin dalam permainan planet\n\nApp Store: https://apps.apple.com/app/id6773017109\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofo/ms.jpg"
+  },
+  {
+   "locale": "nl-NL",
+   "file": "lumibopomofo/nl-NL.jpg",
+   "intended_locale": "nl-NL",
+   "headline_locale": "nl-NL",
+   "screenshot_locale": "nl-NL",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Spelend zhuyin",
+   "line2": "Chinese klanken in een planetenspel",
+   "chips": [
+    "Chinese klanken in een planetenspel",
+    "Zhuyin: Chinees voor kinderen",
+    "Schattige figuren en een rustig tempo"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.245,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        362,
+        72,
+        717,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 9.79,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        124,
+        176,
+        957,
+        501
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.34,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        600,
+        223,
+        851
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 7.8,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      },
+      {
+       "kind": "card",
+       "plate": [
+        830,
+        834,
+        1040,
+        1094
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 7.95,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Spelend zhuyin\nChinese klanken in een planetenspel\n\n📲 Download via de link in bio\n\n#LumiBopomofo",
+   "caption_link": "Spelend zhuyin\nChinese klanken in een planetenspel\n\nApp Store: https://apps.apple.com/app/id6773017109\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofo/nl-NL.jpg"
+  },
+  {
+   "locale": "no",
+   "file": "lumibopomofo/no.jpg",
+   "intended_locale": "no",
+   "headline_locale": "no",
+   "screenshot_locale": "no",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Zhuyin gjennom lek",
+   "line2": "Symboler, lyder og kombinasjoner",
+   "chips": [
+    "Symboler, lyder og kombinasjoner",
+    "Zhuyin: kinesisk for barn",
+    "Søte figurer og rolig tempo"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.275,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        362,
+        72,
+        717,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 9.79,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        76,
+        176,
+        1005,
+        403
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 9.7,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        512,
+        214,
+        718
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 7.67,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      },
+      {
+       "kind": "card",
+       "plate": [
+        808,
+        773,
+        1040,
+        988
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.68,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Zhuyin gjennom lek\nSymboler, lyder og kombinasjoner\n\n📲 Last ned via lenken i bio\n\n#LumiBopomofo",
+   "caption_link": "Zhuyin gjennom lek\nSymboler, lyder og kombinasjoner\n\nApp Store: https://apps.apple.com/app/id6773017109\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofo/no.jpg"
+  },
+  {
+   "locale": "or-IN",
+   "file": "lumibopomofo/or-IN.jpg",
+   "intended_locale": "or-IN",
+   "headline_locale": "or-IN",
+   "screenshot_locale": "or-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0
+   ],
+   "demo_language_check": {
+    "method": "ocr:ori",
+    "script_chars": 52,
+    "mixed_english_words": {
+     "2": [
+      "TRAIN"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [2] with mixed English strings [['TRAIN']]"
+   ],
+   "line1": "ଖେଳି ଖେଳି ଜୁୟିନ୍",
+   "line2": "ଶୁଣନ୍ତୁ, ଆଙ୍ଗୁଠିରେ ଟାଣନ୍ତୁ, ସ୍ୱର ଖେଳ",
+   "chips": [
+    "ଶୁଣନ୍ତୁ, ଆଙ୍ଗୁଠିରେ ଟାଣନ୍ତୁ, ସ୍ୱର ଖେଳ",
+    "Zhuyin: ପିଲାଙ୍କ ଚାଇନିଜ୍"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.252,
+    "family": "orbit2",
+    "font": "NotoSansOriya.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        362,
+        72,
+        718,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 9.79,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        131,
+        176,
+        949,
+        478
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.4,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        580,
+        199,
+        818
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.18,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "ଖେଳି ଖେଳି ଜୁୟିନ୍\nଶୁଣନ୍ତୁ, ଆଙ୍ଗୁଠିରେ ଟାଣନ୍ତୁ, ସ୍ୱର ଖେଳ\n\n📲 ବାୟୋରେ ଥିବା ଲିଙ୍କରୁ ଡାଉନଲୋଡ୍ କରନ୍ତୁ\n\n#LumiBopomofo",
+   "caption_link": "ଖେଳି ଖେଳି ଜୁୟିନ୍\nଶୁଣନ୍ତୁ, ଆଙ୍ଗୁଠିରେ ଟାଣନ୍ତୁ, ସ୍ୱର ଖେଳ\n\nApp Store: https://apps.apple.com/app/id6773017109\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofo/or-IN.jpg"
+  },
+  {
+   "locale": "pa-IN",
+   "file": "lumibopomofo/pa-IN.jpg",
+   "intended_locale": "pa-IN",
+   "headline_locale": "pa-IN",
+   "screenshot_locale": "pa-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0
+   ],
+   "demo_language_check": {
+    "method": "ocr:pan",
+    "script_chars": 74,
+    "mixed_english_words": {
+     "2": [
+      "TRAIN"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [2] with mixed English strings [['TRAIN']]"
+   ],
+   "line1": "ਖੇਡ-ਖੇਡ ਵਿੱਚ ਝੁਯਿਨ",
+   "line2": "ਸੁਣੋ, ਉਂਗਲ ਨਾਲ ਲਿਖੋ, ਟੋਨ ਕੋਸਟਰ",
+   "chips": [
+    "ਸੁਣੋ, ਉਂਗਲ ਨਾਲ ਲਿਖੋ, ਟੋਨ ਕੋਸਟਰ",
+    "Zhuyin: ਬੱਚਿਆਂ ਲਈ ਚੀਨੀ"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.25,
+    "family": "orbit2",
+    "font": "NotoSansGurmukhi.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        362,
+        72,
+        718,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 9.79,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        122,
+        176,
+        957,
+        484
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.33,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        585,
+        208,
+        809
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.09,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "ਖੇਡ-ਖੇਡ ਵਿੱਚ ਝੁਯਿਨ\nਸੁਣੋ, ਉਂਗਲ ਨਾਲ ਲਿਖੋ, ਟੋਨ ਕੋਸਟਰ\n\n📲 ਬਾਇਓ ਵਿੱਚ ਦਿੱਤੇ ਲਿੰਕ ਤੋਂ ਡਾਊਨਲੋਡ ਕਰੋ\n\n#LumiBopomofo",
+   "caption_link": "ਖੇਡ-ਖੇਡ ਵਿੱਚ ਝੁਯਿਨ\nਸੁਣੋ, ਉਂਗਲ ਨਾਲ ਲਿਖੋ, ਟੋਨ ਕੋਸਟਰ\n\nApp Store: https://apps.apple.com/app/id6773017109\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofo/pa-IN.jpg"
+  },
+  {
+   "locale": "pl",
+   "file": "lumibopomofo/pl.jpg",
+   "intended_locale": "pl",
+   "headline_locale": "pl",
+   "screenshot_locale": "pl",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.208<0.24; orbit2×1.08: screen_area=0.224<0.24)"
+   ],
+   "line1": "Zhuyin przez zabawę",
+   "line2": "Symbole, dźwięki i połączenia",
+   "chips": [
+    "Symbole, dźwięki i połączenia",
+    "Zhuyin: chiński dla dzieci",
+    "Słodkie postacie i spokojne tempo"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.24,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        362,
+        72,
+        717,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 9.79,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        186,
+        176,
+        895,
+        623
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.71,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        710,
+        230,
+        916
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.37,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Zhuyin przez zabawę\nSymbole, dźwięki i połączenia\n\n📲 Pobierz przez link w bio\n\n#LumiBopomofo",
+   "caption_link": "Zhuyin przez zabawę\nSymbole, dźwięki i połączenia\n\nApp Store: https://apps.apple.com/app/id6773017109\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofo/pl.jpg"
+  },
+  {
+   "locale": "pt-BR",
+   "file": "lumibopomofo/pt-BR.jpg",
+   "intended_locale": "pt-BR",
+   "headline_locale": "pt-BR",
+   "screenshot_locale": "pt-BR",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Zhuyin brincando",
+   "line2": "Sons do mandarim num jogo de planetas",
+   "chips": [
+    "Sons do mandarim num jogo de planetas",
+    "Zhuyin: chinês para crianças",
+    "Personagens fofos e ritmo tranquilo"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.248,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        362,
+        72,
+        717,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 9.79,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        78,
+        176,
+        1003,
+        490
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 100,
+        "sub": 50,
+        "ratio": 2.0
+       },
+       "contrast_p10": 9.98,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        590,
+        269,
+        805
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 7.89,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Zhuyin brincando\nSons do mandarim num jogo de planetas\n\n📲 Baixe pelo link na bio\n\n#LumiBopomofo",
+   "caption_link": "Zhuyin brincando\nSons do mandarim num jogo de planetas\n\nApp Store: https://apps.apple.com/app/id6773017109\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofo/pt-BR.jpg"
+  },
+  {
+   "locale": "pt-PT",
+   "file": "lumibopomofo/pt-PT.jpg",
+   "intended_locale": "pt-PT",
+   "headline_locale": "pt-PT",
+   "screenshot_locale": "pt-PT",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Zhuyin a brincar",
+   "line2": "Sons do chinês num jogo de planetas",
+   "chips": [
+    "Sons do chinês num jogo de planetas",
+    "Zhuyin: chinês para crianças",
+    "Personagens ternurentas e ritmo calmo"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.245,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        362,
+        72,
+        717,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 9.79,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        88,
+        176,
+        991,
+        501
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.13,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        600,
+        269,
+        815
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 7.82,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Zhuyin a brincar\nSons do chinês num jogo de planetas\n\n📲 Download via the link in bio\n\n#LumiBopomofo",
+   "caption_link": "Zhuyin a brincar\nSons do chinês num jogo de planetas\n\nApp Store: https://apps.apple.com/app/id6773017109\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin",
+   "cta_source": "en-fallback",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofo/pt-PT.jpg"
+  },
+  {
+   "locale": "ro",
+   "file": "lumibopomofo/ro.jpg",
+   "intended_locale": "ro",
+   "headline_locale": "ro",
+   "screenshot_locale": "ro",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Zhuyin prin joacă",
+   "line2": "Simboluri și sunete într-un joc cu planete",
+   "chips": [
+    "Simboluri și sunete într-un joc cu planete",
+    "Zhuyin: chineză pentru copii",
+    "Personaje drăguțe și ritm liniștit"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.248,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        362,
+        72,
+        717,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 9.79,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        84,
+        176,
+        996,
+        491
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 100,
+        "sub": 50,
+        "ratio": 2.0
+       },
+       "contrast_p10": 9.88,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        591,
+        201,
+        851
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 7.96,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      },
+      {
+       "kind": "card",
+       "plate": [
+        817,
+        827,
+        1040,
+        1041
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.08,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Zhuyin prin joacă\nSimboluri și sunete într-un joc cu planete\n\n📲 Descarcă din linkul din bio\n\n#LumiBopomofo",
+   "caption_link": "Zhuyin prin joacă\nSimboluri și sunete într-un joc cu planete\n\nApp Store: https://apps.apple.com/app/id6773017109\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofo/ro.jpg"
+  },
+  {
+   "locale": "ru",
+   "file": "lumibopomofo/ru.jpg",
+   "intended_locale": "ru",
+   "headline_locale": "ru",
+   "screenshot_locale": "ru",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0
+   ],
+   "demo_language_check": {
+    "method": "ocr:rus",
+    "script_chars": 97,
+    "mixed_english_words": {
+     "2": [
+      "TRAIN"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [2] with mixed English strings [['TRAIN']]"
+   ],
+   "line1": "Чжуинь играючи",
+   "line2": "Знаки, звуки и сочетания в игре",
+   "chips": [
+    "Знаки, звуки и сочетания в игре",
+    "Чжуинь: китайский детям",
+    "Симпатичные персонажи и спокойный темп"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.271,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        358,
+        72,
+        722,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 9.72,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        93,
+        176,
+        987,
+        414
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 96,
+        "sub": 48,
+        "ratio": 2.0
+       },
+       "contrast_p10": 9.87,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        522,
+        260,
+        734
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 7.9,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Чжуинь играючи\nЗнаки, звуки и сочетания в игре\n\n📲 Скачать можно по ссылке в профиле (bio)\n\n#LumiBopomofo",
+   "caption_link": "Чжуинь играючи\nЗнаки, звуки и сочетания в игре\n\nApp Store: https://apps.apple.com/app/id6773017109\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofo/ru.jpg"
+  },
+  {
+   "locale": "sk",
+   "file": "lumibopomofo/sk.jpg",
+   "intended_locale": "sk",
+   "headline_locale": "sk",
+   "screenshot_locale": "sk",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Zhuyin hrou",
+   "line2": "Symboly a zvuky v hre s planétami",
+   "chips": [
+    "Symboly a zvuky v hre s planétami",
+    "Zhuyin: čínština pre deti",
+    "Roztomile postavicky a jemne tempo"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.245,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        362,
+        72,
+        717,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 9.79,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        203,
+        176,
+        877,
+        501
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.68,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        600,
+        205,
+        815
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 7.85,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      },
+      {
+       "kind": "card",
+       "plate": [
+        824,
+        834,
+        1040,
+        1094
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 7.95,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Zhuyin hrou\nSymboly a zvuky v hre s planétami\n\n📲 Stiahnite si ju cez odkaz v profile (bio)\n\n#LumiBopomofo",
+   "caption_link": "Zhuyin hrou\nSymboly a zvuky v hre s planétami\n\nApp Store: https://apps.apple.com/app/id6773017109\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofo/sk.jpg"
+  },
+  {
+   "locale": "sl-SI",
+   "file": "lumibopomofo/sl-SI.jpg",
+   "intended_locale": "sl-SI",
+   "headline_locale": "sl-SI",
+   "screenshot_locale": "sl-SI",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Zhuyin skozi igro",
+   "line2": "Poslušaj, sledi potezam, spoznaj tone",
+   "chips": [
+    "Poslušaj, sledi potezam, spoznaj tone",
+    "Zhuyin: kitajščina za otroke"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.248,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        362,
+        72,
+        717,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 9.79,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        91,
+        176,
+        989,
+        490
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 100,
+        "sub": 50,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.16,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        590,
+        235,
+        796
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 7.87,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Zhuyin skozi igro\nPoslušaj, sledi potezam, spoznaj tone\n\n📲 Prenesite prek povezave v biu\n\n#LumiBopomofo",
+   "caption_link": "Zhuyin skozi igro\nPoslušaj, sledi potezam, spoznaj tone\n\nApp Store: https://apps.apple.com/app/id6773017109\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofo/sl-SI.jpg"
+  },
+  {
+   "locale": "sv",
+   "file": "lumibopomofo/sv.jpg",
+   "intended_locale": "sv",
+   "headline_locale": "sv",
+   "screenshot_locale": "sv",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Zhuyin genom lek",
+   "line2": "Symboler, ljud och kombinationer",
+   "chips": [
+    "Symboler, ljud och kombinationer",
+    "Zhuyin: kinesiska för barn",
+    "Söta figurer och lugnt tempo"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.27,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        362,
+        72,
+        717,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 9.79,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        82,
+        176,
+        998,
+        419
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 96,
+        "sub": 48,
+        "ratio": 2.0
+       },
+       "contrast_p10": 9.83,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        526,
+        230,
+        732
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 7.83,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      },
+      {
+       "kind": "card",
+       "plate": [
+        801,
+        783,
+        1040,
+        998
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.2,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Zhuyin genom lek\nSymboler, ljud och kombinationer\n\n📲 Ladda ner via länken i bion\n\n#LumiBopomofo",
+   "caption_link": "Zhuyin genom lek\nSymboler, ljud och kombinationer\n\nApp Store: https://apps.apple.com/app/id6773017109\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofo/sv.jpg"
+  },
+  {
+   "locale": "ta-IN",
+   "file": "lumibopomofo/ta-IN.jpg",
+   "intended_locale": "ta-IN",
+   "headline_locale": "ta-IN",
+   "screenshot_locale": "ta-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0
+   ],
+   "demo_language_check": {
+    "method": "ocr:tam",
+    "script_chars": 169,
+    "mixed_english_words": {
+     "2": [
+      "TRAIN"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [2] with mixed English strings [['TRAIN']]",
+    "layout fallback orbit2->closeup2 (orbit2: screen_area=0.18<0.24; orbit2×1.08: screen_area=0.194<0.24; orbit2×1.16: screen_area=0.207<0.24; orbit2×1.25: screen_area=0.223<0.24; split2: text does not fit at minimum sizes; closeup2: screen_area=0.198<0.24; closeup2×1.08: screen_area=0.213<0.24; closeup2×1.16: screen_area=0.228<0.24)"
+   ],
+   "line1": "விளையாடி ஜுயின்",
+   "line2": "ஒலி கேட்டு, குறியீடு தேர்ந்து வரையுங்கள்",
+   "chips": [
+    "ஒலி கேட்டு, குறியீடு தேர்ந்து வரையுங்கள்",
+    "Zhuyin: குழந்தைகளுக்கு சீனம்"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.245,
+    "family": "closeup2",
+    "font": "NotoSansTamil.ttf",
+    "screen_ratio_vs_battai_split": 1.77,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        362,
+        72,
+        718,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 9.79,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        173,
+        184,
+        907,
+        725
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.77,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.25,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "விளையாடி ஜுயின்\nஒலி கேட்டு, குறியீடு தேர்ந்து வரையுங்கள்\n\n📲 பயோவில் உள்ள இணைப்பு வழியாகப் பதிவிறக்குங்கள்\n\n#LumiBopomofo",
+   "caption_link": "விளையாடி ஜுயின்\nஒலி கேட்டு, குறியீடு தேர்ந்து வரையுங்கள்\n\nApp Store: https://apps.apple.com/app/id6773017109\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofo/ta-IN.jpg"
+  },
+  {
+   "locale": "te-IN",
+   "file": "lumibopomofo/te-IN.jpg",
+   "intended_locale": "te-IN",
+   "headline_locale": "te-IN",
+   "screenshot_locale": "te-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0
+   ],
+   "demo_language_check": {
+    "method": "ocr:tel",
+    "script_chars": 130,
+    "mixed_english_words": {
+     "2": [
+      "TRAIN"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [2] with mixed English strings [['TRAIN']]"
+   ],
+   "line1": "ఆడుతూ జుయిన్",
+   "line2": "శబ్దం విని · గీత గీసి · టోన్ కోస్టర్",
+   "chips": [
+    "శబ్దం విని · గీత గీసి · టోన్ కోస్టర్",
+    "Zhuyin: పిల్లలకు చైనీస్"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.247,
+    "family": "orbit2",
+    "font": "NotoSansTelugu.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        366,
+        72,
+        715,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 9.86,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        144,
+        176,
+        936,
+        493
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.5,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        593,
+        277,
+        775
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 7.86,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "ఆడుతూ జుయిన్\nశబ్దం విని · గీత గీసి · టోన్ కోస్టర్\n\n📲 బయోలోని లింక్ ద్వారా డౌన్‌లోడ్ చేయండి\n\n#LumiBopomofo",
+   "caption_link": "ఆడుతూ జుయిన్\nశబ్దం విని · గీత గీసి · టోన్ కోస్టర్\n\nApp Store: https://apps.apple.com/app/id6773017109\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofo/te-IN.jpg"
+  },
+  {
+   "locale": "th",
+   "file": "lumibopomofo/th.jpg",
+   "intended_locale": "th",
+   "headline_locale": "th",
+   "screenshot_locale": "th",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0
+   ],
+   "demo_language_check": {
+    "method": "ocr:tha",
+    "script_chars": 64,
+    "mixed_english_words": {
+     "2": [
+      "TRAIN"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [2] with mixed English strings [['TRAIN']]",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.233<0.24)"
+   ],
+   "line1": "เรียนจู้อินผ่านเกม",
+   "line2": "เสียงภาษาจีนแบบสนุก สำหรับเด็ก 3–6 ขวบ",
+   "chips": [
+    "เสียงภาษาจีนแบบสนุก สำหรับเด็ก 3–6 ขวบ",
+    "จู้อิน โฟนิกส์จีนสำหรับเด็ก",
+    "ตัวละครน่ารัก จังหวะไม่เร่ง"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.251,
+    "family": "orbit2",
+    "font": "NotoSansThai.ttf",
+    "screen_ratio_vs_battai_split": 1.02,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        380,
+        72,
+        701,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 10.11,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        138,
+        176,
+        942,
+        541
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.39,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        636,
+        223,
+        862
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.48,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.5
+      },
+      {
+       "kind": "card",
+       "plate": [
+        833,
+        858,
+        1040,
+        1084
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.01,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.5
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "เรียนจู้อินผ่านเกม\nเสียงภาษาจีนแบบสนุก สำหรับเด็ก 3–6 ขวบ\n\n📲 ดาวน์โหลดได้ที่ลิงก์ในโปรไฟล์ (bio)\n\n#LumiBopomofo",
+   "caption_link": "เรียนจู้อินผ่านเกม\nเสียงภาษาจีนแบบสนุก สำหรับเด็ก 3–6 ขวบ\n\nApp Store: https://apps.apple.com/app/id6773017109\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofo/th.jpg"
+  },
+  {
+   "locale": "tr",
+   "file": "lumibopomofo/tr.jpg",
+   "intended_locale": "tr",
+   "headline_locale": "tr",
+   "screenshot_locale": "tr",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Oyunla Zhuyin",
+   "line2": "Semboller, sesler ve birleşimler",
+   "chips": [
+    "Semboller, sesler ve birleşimler",
+    "Zhuyin: çocuklar için Çince",
+    "Sevimli karakterler ve sakin ilerleme"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.245,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        362,
+        72,
+        717,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 9.79,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        140,
+        176,
+        939,
+        500
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.41,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        599,
+        234,
+        814
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 7.75,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      },
+      {
+       "kind": "card",
+       "plate": [
+        813,
+        833,
+        1040,
+        1084
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 7.98,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Oyunla Zhuyin\nSemboller, sesler ve birleşimler\n\n📲 Biyografideki bağlantıdan indirin\n\n#LumiBopomofo",
+   "caption_link": "Oyunla Zhuyin\nSemboller, sesler ve birleşimler\n\nApp Store: https://apps.apple.com/app/id6773017109\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofo/tr.jpg"
+  },
+  {
+   "locale": "uk",
+   "file": "lumibopomofo/uk.jpg",
+   "intended_locale": "uk",
+   "headline_locale": "uk",
+   "screenshot_locale": "uk",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0
+   ],
+   "demo_language_check": {
+    "method": "ocr:ukr",
+    "script_chars": 89,
+    "mixed_english_words": {
+     "2": [
+      "TRAIN"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [2] with mixed English strings [['TRAIN']]"
+   ],
+   "line1": "Чжуїнь граючи",
+   "line2": "Символи, звуки й поєднання в грі",
+   "chips": [
+    "Символи, звуки й поєднання в грі",
+    "Чжуїнь: китайська дітям",
+    "Милі персонажі й спокійний темп"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.245,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        358,
+        72,
+        722,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 9.72,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        112,
+        176,
+        969,
+        500
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.28,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        599,
+        253,
+        811
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 7.75,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Чжуїнь граючи\nСимволи, звуки й поєднання в грі\n\n📲 Завантажуйте за посиланням у профілі (bio)\n\n#LumiBopomofo",
+   "caption_link": "Чжуїнь граючи\nСимволи, звуки й поєднання в грі\n\nApp Store: https://apps.apple.com/app/id6773017109\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofo/uk.jpg"
+  },
+  {
+   "locale": "ur-PK",
+   "file": "lumibopomofo/ur-PK.jpg",
+   "intended_locale": "ur-PK",
+   "headline_locale": "ur-PK",
+   "screenshot_locale": "ur-PK",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0
+   ],
+   "demo_language_check": {
+    "method": "ocr:urd",
+    "script_chars": 42,
+    "mixed_english_words": {
+     "2": [
+      "TRAIN"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [2] with mixed English strings [['TRAIN']]",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.195<0.24; orbit2×1.08: screen_area=0.21<0.24; orbit2×1.16: screen_area=0.225<0.24)"
+   ],
+   "line1": "کھیل میں زوئین سیکھیں",
+   "line2": "آواز سنیں، لکیر بنائیں، چاروں سُر پہچانیں",
+   "chips": [
+    "آواز سنیں، لکیر بنائیں، چاروں سُر پہچانیں",
+    "Zhuyin: بچوں کے لیے چینی"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.241,
+    "family": "orbit2",
+    "font": "NotoSansArabic.ttf",
+    "screen_ratio_vs_battai_split": 1.37,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        392,
+        72,
+        689,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 10.26,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        180,
+        176,
+        899,
+        668
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.3,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.3,
+        1.4
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        879,
+        751,
+        1040,
+        981
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.29,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.4
+      }
+     ]
+    },
+    "phone_scale": 1.25,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "کھیل میں زوئین سیکھیں\nآواز سنیں، لکیر بنائیں، چاروں سُر پہچانیں\n\n📲 بائیو میں دیے گئے لنک سے ڈاؤن لوڈ کریں\n\n#LumiBopomofo",
+   "caption_link": "کھیل میں زوئین سیکھیں\nآواز سنیں، لکیر بنائیں، چاروں سُر پہچانیں\n\nApp Store: https://apps.apple.com/app/id6773017109\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofo/ur-PK.jpg"
+  },
+  {
+   "locale": "vi",
+   "file": "lumibopomofo/vi.jpg",
+   "intended_locale": "vi",
+   "headline_locale": "vi",
+   "screenshot_locale": "vi",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.209<0.24; orbit2×1.08: screen_area=0.225<0.24)"
+   ],
+   "line1": "Học Zhuyin qua trò chơi",
+   "line2": "Nghe âm, tô nét, tàu lượn thanh điệu",
+   "chips": [
+    "Nghe âm, tô nét, tàu lượn thanh điệu",
+    "Zhuyin: tiếng Trung cho bé",
+    "Nhân vật đáng yêu, nhịp học nhẹ nhàng"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.241,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        362,
+        72,
+        717,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 9.79,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        202,
+        176,
+        877,
+        620
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.82,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        707,
+        198,
+        958
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.43,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      },
+      {
+       "kind": "card",
+       "plate": [
+        848,
+        907,
+        1040,
+        1212
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 7.89,
+       "plate_alpha": 0.55,
+       "lines": 5,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Học Zhuyin qua trò chơi\nNghe âm, tô nét, tàu lượn thanh điệu\n\n📲 Tải về qua link ở bio\n\n#LumiBopomofo",
+   "caption_link": "Học Zhuyin qua trò chơi\nNghe âm, tô nét, tàu lượn thanh điệu\n\nApp Store: https://apps.apple.com/app/id6773017109\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofo/vi.jpg"
+  },
+  {
+   "locale": "zh-Hans",
+   "file": "lumibopomofo/zh-Hans.jpg",
+   "intended_locale": "zh-Hans",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": false
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "no localized storefront screenshot (English-only or lookup failed); whole card in en-US",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.212<0.24; orbit2×1.08: screen_area=0.228<0.24)"
+   ],
+   "line1": "Bopomofo by Playing",
+   "line2": "Listen, trace and ride the Tone Coaster",
+   "chips": [
+    "Listen, trace and ride the Tone Coaster",
+    "Zhuyin Games: Chinese Phonics"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.245,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        362,
+        72,
+        717,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 9.79,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        251,
+        176,
+        829,
+        611
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.41,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        699,
+        207,
+        950
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.25,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Bopomofo by Playing\nListen, trace and ride the Tone Coaster\n\n📲 Download via the link in bio\n\n#LumiBopomofo",
+   "caption_link": "Bopomofo by Playing\nListen, trace and ride the Tone Coaster\n\nApp Store: https://apps.apple.com/app/id6773017109\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofo/zh-Hans.jpg"
+  },
+  {
+   "locale": "zh-Hant",
+   "file": "lumibopomofo/zh-Hant.jpg",
+   "intended_locale": "zh-Hant",
+   "headline_locale": "zh-Hant",
+   "screenshot_locale": "zh-Hant",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0
+   ],
+   "demo_language_check": {
+    "method": "ocr:chi_tra",
+    "script_chars": 25,
+    "mixed_english_words": {
+     "2": [
+      "TRAIN"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [2] with mixed English strings [['TRAIN']]"
+   ],
+   "line1": "注音玩著就會",
+   "line2": "聽音・描寫・聲調雲霄飛車",
+   "chips": [
+    "聽音・描寫・聲調雲霄飛車",
+    "注音遊戲：聽音、描寫、拼音",
+    "37 個可愛注音小夥伴等孩子一一收集。"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.246,
+    "family": "orbit2",
+    "font": "NotoSansTC.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        384,
+        72,
+        695,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 10.18,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        208,
+        176,
+        871,
+        499
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.82,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        598,
+        249,
+        810
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 7.82,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "注音玩著就會\n聽音・描寫・聲調雲霄飛車\n\n📲 請到個人檔案（bio）的連結下載\n\n#LumiBopomofo",
+   "caption_link": "注音玩著就會\n聽音・描寫・聲調雲霄飛車\n\nApp Store: https://apps.apple.com/app/id6773017109\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofo/zh-Hant.jpg"
+  }
+ ]
+}

@@ -1,0 +1,6180 @@
+{
+ "schema": "lumi.promo_cards/v1",
+ "app": "lumibopomofopro",
+ "app_id": "6775773117",
+ "app_store_url": "https://apps.apple.com/app/id6775773117",
+ "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyinPro",
+ "size": [
+  1080,
+  1350
+ ],
+ "built": "2026-10-23",
+ "items": [
+  {
+   "locale": "ar-SA",
+   "file": "lumibopomofopro/ar-SA.jpg",
+   "intended_locale": "ar-SA",
+   "headline_locale": "ar-SA",
+   "screenshot_locale": "ar-SA",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:ara",
+    "script_chars": 44,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "رموز تشويين بثقة",
+   "line2": "الرموز وأصواتها وتركيباتها ونغماتها",
+   "chips": [
+    "الرموز وأصواتها وتركيباتها ونغماتها",
+    "نغمات الصينية وأوراق تدريب",
+    "شخصيات ظريفة وإيقاع هادئ"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.255,
+    "family": "orbit2",
+    "font": "NotoSansArabic.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        332,
+        72,
+        748,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.93,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        108,
+        176,
+        971,
+        467
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.32,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.3,
+        1.4
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        808,
+        570,
+        1040,
+        796
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.4,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.4
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        812,
+        247,
+        1043
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.38,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.4
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "رموز تشويين بثقة\nالرموز وأصواتها وتركيباتها ونغماتها\n\n📲 حمّله من الرابط في الملف الشخصي (bio)\n\n#LumiBopomofoPro",
+   "caption_link": "رموز تشويين بثقة\nالرموز وأصواتها وتركيباتها ونغماتها\n\nApp Store: https://apps.apple.com/app/id6775773117\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyinPro",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofopro/ar-SA.jpg"
+  },
+  {
+   "locale": "bn-BD",
+   "file": "lumibopomofopro/bn-BD.jpg",
+   "intended_locale": "bn-BD",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": false
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "no localized storefront screenshot (English-only or lookup failed); whole card in en-US",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.208<0.24; orbit2×1.08: screen_area=0.224<0.24)"
+   ],
+   "line1": "Get Mandarin Tones Right",
+   "line2": "All 37 Zhuyin sounds, blending and tones",
+   "chips": [
+    "All 37 Zhuyin sounds, blending and tones",
+    "Mandarin Tones & Worksheets"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.24,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        332,
+        72,
+        749,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.07,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        162,
+        176,
+        918,
+        623
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.56,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Get Mandarin Tones Right\nAll 37 Zhuyin sounds, blending and tones\n\n📲 Download via the link in bio\n\n#LumiBopomofoPro",
+   "caption_link": "Get Mandarin Tones Right\nAll 37 Zhuyin sounds, blending and tones\n\nApp Store: https://apps.apple.com/app/id6775773117\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyinPro",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofopro/bn-BD.jpg"
+  },
+  {
+   "locale": "ca",
+   "file": "lumibopomofopro/ca.jpg",
+   "intended_locale": "ca",
+   "headline_locale": "ca",
+   "screenshot_locale": "ca",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Domina el zhuyin",
+   "line2": "37 símbols, sons i combinacions",
+   "chips": [
+    "37 símbols, sons i combinacions",
+    "Tons del mandarí i fitxes",
+    "Personatges adorables i ritme tranquil"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.269,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        332,
+        72,
+        749,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.07,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        86,
+        176,
+        994,
+        423
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 100,
+        "sub": 50,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.15,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        530,
+        219,
+        736
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 7.39,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Domina el zhuyin\n37 símbols, sons i combinacions\n\n📲 Descarrega-la des de l'enllaç de la bio\n\n#LumiBopomofoPro",
+   "caption_link": "Domina el zhuyin\n37 símbols, sons i combinacions\n\nApp Store: https://apps.apple.com/app/id6775773117\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyinPro",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofopro/ca.jpg"
+  },
+  {
+   "locale": "cs",
+   "file": "lumibopomofopro/cs.jpg",
+   "intended_locale": "cs",
+   "headline_locale": "cs",
+   "screenshot_locale": "cs",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.208<0.24; orbit2×1.08: screen_area=0.224<0.24)"
+   ],
+   "line1": "Všech 37 znaků zhuyin",
+   "line2": "Zvuky, spojování a čínské tóny",
+   "chips": [
+    "Zvuky, spojování a čínské tóny",
+    "Čínské tóny a pracovní listy",
+    "Roztomilé postavy a klidné tempo"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.24,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        332,
+        72,
+        749,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.07,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        173,
+        176,
+        907,
+        623
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.69,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Všech 37 znaků zhuyin\nZvuky, spojování a čínské tóny\n\n📲 Stáhněte si ji přes odkaz v profilu (bio)\n\n#LumiBopomofoPro",
+   "caption_link": "Všech 37 znaků zhuyin\nZvuky, spojování a čínské tóny\n\nApp Store: https://apps.apple.com/app/id6775773117\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyinPro",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofopro/cs.jpg"
+  },
+  {
+   "locale": "da",
+   "file": "lumibopomofopro/da.jpg",
+   "intended_locale": "da",
+   "headline_locale": "da",
+   "screenshot_locale": "da",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Alle 37 zhuyin-tegn",
+   "line2": "Lyde og sammensætninger i korte spil",
+   "chips": [
+    "Lyde og sammensætninger i korte spil",
+    "Mandarintoner og øveark",
+    "Søde figurer og roligt tempo"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.275,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        332,
+        72,
+        749,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.07,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        94,
+        176,
+        985,
+        403
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.06,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        862,
+        773,
+        1040,
+        1033
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 7.04,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Alle 37 zhuyin-tegn\nLyde og sammensætninger i korte spil\n\n📲 Download via linket i bio\n\n#LumiBopomofoPro",
+   "caption_link": "Alle 37 zhuyin-tegn\nLyde og sammensætninger i korte spil\n\nApp Store: https://apps.apple.com/app/id6775773117\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyinPro",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofopro/da.jpg"
+  },
+  {
+   "locale": "de-DE",
+   "file": "lumibopomofopro/de-DE.jpg",
+   "intended_locale": "de-DE",
+   "headline_locale": "de-DE",
+   "screenshot_locale": "de-DE",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.209<0.24; orbit2×1.08: screen_area=0.225<0.24)"
+   ],
+   "line1": "Alle 37 Zhuyin-Laute",
+   "line2": "Lautverbindungen und Töne im Spiel",
+   "chips": [
+    "Lautverbindungen und Töne im Spiel",
+    "Mandarin-Töne & Arbeitsblätter"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.241,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        332,
+        72,
+        749,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.07,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        172,
+        176,
+        907,
+        622
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.79,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Alle 37 Zhuyin-Laute\nLautverbindungen und Töne im Spiel\n\n📲 Download über den Link in der Bio\n\n#LumiBopomofoPro",
+   "caption_link": "Alle 37 Zhuyin-Laute\nLautverbindungen und Töne im Spiel\n\nApp Store: https://apps.apple.com/app/id6775773117\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyinPro",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofopro/de-DE.jpg"
+  },
+  {
+   "locale": "el",
+   "file": "lumibopomofopro/el.jpg",
+   "intended_locale": "el",
+   "headline_locale": "el",
+   "screenshot_locale": "el",
+   "localized": true,
+   "screenshots_used": [
+    0
+   ],
+   "demo_language_check": {
+    "method": "ocr:ell",
+    "script_chars": 103,
+    "mixed_english_words": {
+     "1": [
+      "Coaster"
+     ],
+     "2": [
+      "Sound",
+      "Train"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [1, 2] with mixed English strings [['Coaster'], ['Sound', 'Train']]"
+   ],
+   "line1": "Και τα 37 σύμβολα",
+   "line2": "Ήχοι και συνδυασμοί zhuyin",
+   "chips": [
+    "Ήχοι και συνδυασμοί zhuyin",
+    "Τόνοι Μανδαρινικών & φυλλάδια",
+    "Χαριτωμένοι χαρακτήρες και ήρεμος ρυθμός"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.272,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        332,
+        72,
+        749,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.07,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        90,
+        176,
+        990,
+        413
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.31,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Και τα 37 σύμβολα\nΉχοι και συνδυασμοί zhuyin\n\n📲 Λήψη από τον σύνδεσμο στο προφίλ (bio)\n\n#LumiBopomofoPro",
+   "caption_link": "Και τα 37 σύμβολα\nΉχοι και συνδυασμοί zhuyin\n\nApp Store: https://apps.apple.com/app/id6775773117\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyinPro",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofopro/el.jpg"
+  },
+  {
+   "locale": "en-AU",
+   "file": "lumibopomofopro/en-AU.jpg",
+   "intended_locale": "en-AU",
+   "headline_locale": "en-AU",
+   "screenshot_locale": "en-AU",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.212<0.24; orbit2×1.08: screen_area=0.228<0.24)"
+   ],
+   "line1": "Get Mandarin Tones Right",
+   "line2": "All 37 Zhuyin symbols, sounds and blends",
+   "chips": [
+    "All 37 Zhuyin symbols, sounds and blends",
+    "Mandarin Tones & Worksheets",
+    "Cute space friends and calm feedback"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.245,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        332,
+        72,
+        749,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.07,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        162,
+        176,
+        918,
+        611
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.56,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        848,
+        902,
+        1040,
+        1198
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 6.75,
+       "plate_alpha": 0.55,
+       "lines": 5,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Get Mandarin Tones Right\nAll 37 Zhuyin symbols, sounds and blends\n\n📲 Download via the link in bio\n\n#LumiBopomofoPro",
+   "caption_link": "Get Mandarin Tones Right\nAll 37 Zhuyin symbols, sounds and blends\n\nApp Store: https://apps.apple.com/app/id6775773117\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyinPro",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofopro/en-AU.jpg"
+  },
+  {
+   "locale": "en-CA",
+   "file": "lumibopomofopro/en-CA.jpg",
+   "intended_locale": "en-CA",
+   "headline_locale": "en-CA",
+   "screenshot_locale": "en-CA",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.212<0.24; orbit2×1.08: screen_area=0.228<0.24)"
+   ],
+   "line1": "Get Mandarin Tones Right",
+   "line2": "All 37 Zhuyin symbols, sounds and blends",
+   "chips": [
+    "All 37 Zhuyin symbols, sounds and blends",
+    "Mandarin Tones & Worksheets"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.245,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        332,
+        72,
+        749,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.07,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        162,
+        176,
+        918,
+        611
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.56,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Get Mandarin Tones Right\nAll 37 Zhuyin symbols, sounds and blends\n\n📲 Download via the link in bio\n\n#LumiBopomofoPro",
+   "caption_link": "Get Mandarin Tones Right\nAll 37 Zhuyin symbols, sounds and blends\n\nApp Store: https://apps.apple.com/app/id6775773117\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyinPro",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofopro/en-CA.jpg"
+  },
+  {
+   "locale": "en-GB",
+   "file": "lumibopomofopro/en-GB.jpg",
+   "intended_locale": "en-GB",
+   "headline_locale": "en-GB",
+   "screenshot_locale": "en-GB",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.212<0.24; orbit2×1.08: screen_area=0.228<0.24)"
+   ],
+   "line1": "Get Mandarin Tones Right",
+   "line2": "All 37 Zhuyin symbols, sounds and blends",
+   "chips": [
+    "All 37 Zhuyin symbols, sounds and blends",
+    "Mandarin Tones & Worksheets",
+    "Cute characters and a gentle pace"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.245,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        332,
+        72,
+        749,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.07,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        162,
+        176,
+        918,
+        611
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.56,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Get Mandarin Tones Right\nAll 37 Zhuyin symbols, sounds and blends\n\n📲 Download via the link in bio\n\n#LumiBopomofoPro",
+   "caption_link": "Get Mandarin Tones Right\nAll 37 Zhuyin symbols, sounds and blends\n\nApp Store: https://apps.apple.com/app/id6775773117\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyinPro",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofopro/en-GB.jpg"
+  },
+  {
+   "locale": "en-US",
+   "file": "lumibopomofopro/en-US.jpg",
+   "intended_locale": "en-US",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.208<0.24; orbit2×1.08: screen_area=0.224<0.24)"
+   ],
+   "line1": "Get Mandarin Tones Right",
+   "line2": "All 37 Zhuyin sounds, blending and tones",
+   "chips": [
+    "All 37 Zhuyin sounds, blending and tones",
+    "Mandarin Tones & Worksheets"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.24,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        332,
+        72,
+        749,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.07,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        162,
+        176,
+        918,
+        623
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.56,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Get Mandarin Tones Right\nAll 37 Zhuyin sounds, blending and tones\n\n📲 Download via the link in bio\n\n#LumiBopomofoPro",
+   "caption_link": "Get Mandarin Tones Right\nAll 37 Zhuyin sounds, blending and tones\n\nApp Store: https://apps.apple.com/app/id6775773117\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyinPro",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofopro/en-US.jpg"
+  },
+  {
+   "locale": "es-ES",
+   "file": "lumibopomofopro/es-ES.jpg",
+   "intended_locale": "es-ES",
+   "headline_locale": "es-ES",
+   "screenshot_locale": "es-ES",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.208<0.24; orbit2×1.08: screen_area=0.224<0.24)"
+   ],
+   "line1": "Los 37 sonidos del zhuyin",
+   "line2": "Combinaciones y tonos en juegos cortos",
+   "chips": [
+    "Combinaciones y tonos en juegos cortos",
+    "Tonos del mandarín y fichas"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.24,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        332,
+        72,
+        749,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.07,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        144,
+        176,
+        936,
+        623
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.57,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        710,
+        238,
+        925
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 7.73,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Los 37 sonidos del zhuyin\nCombinaciones y tonos en juegos cortos\n\n📲 Descárgala desde el enlace de la bio\n\n#LumiBopomofoPro",
+   "caption_link": "Los 37 sonidos del zhuyin\nCombinaciones y tonos en juegos cortos\n\nApp Store: https://apps.apple.com/app/id6775773117\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyinPro",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofopro/es-ES.jpg"
+  },
+  {
+   "locale": "es-MX",
+   "file": "lumibopomofopro/es-MX.jpg",
+   "intended_locale": "es-MX",
+   "headline_locale": "es-MX",
+   "screenshot_locale": "es-MX",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Los 37 símbolos",
+   "line2": "Sonidos, combinaciones y tonos",
+   "chips": [
+    "Sonidos, combinaciones y tonos",
+    "Tonos del mandarín y fichas",
+    "Personajes tiernos y ritmo amable"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.265,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        332,
+        72,
+        749,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.07,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        111,
+        176,
+        969,
+        436
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.27,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        542,
+        238,
+        757
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 7.41,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      },
+      {
+       "kind": "card",
+       "plate": [
+        820,
+        793,
+        1040,
+        1044
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 6.95,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Los 37 símbolos\nSonidos, combinaciones y tonos\n\n📲 Descárgala desde el enlace de la bio\n\n#LumiBopomofoPro",
+   "caption_link": "Los 37 símbolos\nSonidos, combinaciones y tonos\n\nApp Store: https://apps.apple.com/app/id6775773117\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyinPro",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofopro/es-MX.jpg"
+  },
+  {
+   "locale": "fi",
+   "file": "lumibopomofopro/fi.jpg",
+   "intended_locale": "fi",
+   "headline_locale": "fi",
+   "screenshot_locale": "fi",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.208<0.24; orbit2×1.08: screen_area=0.224<0.24)"
+   ],
+   "line1": "Kaikki 37 zhuyin-merkkiä",
+   "line2": "Äänteet ja yhdistelmät lyhyissä peleissä",
+   "chips": [
+    "Äänteet ja yhdistelmät lyhyissä peleissä",
+    "Mandariinin sävyt ja tehtävät",
+    "Söpöt hahmot ja rauhallinen tahti"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.24,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        332,
+        72,
+        749,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.07,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        108,
+        176,
+        972,
+        623
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.43,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Kaikki 37 zhuyin-merkkiä\nÄänteet ja yhdistelmät lyhyissä peleissä\n\n📲 Lataa bion linkistä\n\n#LumiBopomofoPro",
+   "caption_link": "Kaikki 37 zhuyin-merkkiä\nÄänteet ja yhdistelmät lyhyissä peleissä\n\nApp Store: https://apps.apple.com/app/id6775773117\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyinPro",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofopro/fi.jpg"
+  },
+  {
+   "locale": "fr-CA",
+   "file": "lumibopomofopro/fr-CA.jpg",
+   "intended_locale": "fr-CA",
+   "headline_locale": "fr-CA",
+   "screenshot_locale": "fr-CA",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Les 37 symboles",
+   "line2": "Sons, combinaisons et tons du mandarin",
+   "chips": [
+    "Sons, combinaisons et tons du mandarin",
+    "Tons du mandarin & fiches",
+    "Personnages adorables et rythme calme"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.249,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        332,
+        72,
+        749,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.07,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        99,
+        176,
+        981,
+        488
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.37,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        589,
+        238,
+        795
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 7.44,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Les 37 symboles\nSons, combinaisons et tons du mandarin\n\n📲 Téléchargez-la via le lien dans la bio\n\n#LumiBopomofoPro",
+   "caption_link": "Les 37 symboles\nSons, combinaisons et tons du mandarin\n\nApp Store: https://apps.apple.com/app/id6775773117\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyinPro",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofopro/fr-CA.jpg"
+  },
+  {
+   "locale": "fr-FR",
+   "file": "lumibopomofopro/fr-FR.jpg",
+   "intended_locale": "fr-FR",
+   "headline_locale": "fr-FR",
+   "screenshot_locale": "fr-FR",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.21<0.24; orbit2×1.08: screen_area=0.226<0.24)"
+   ],
+   "line1": "Les 37 sons du zhuyin",
+   "line2": "Associations et tons, en jeux courts",
+   "chips": [
+    "Associations et tons, en jeux courts",
+    "Tons du mandarin & fiches"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.242,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        332,
+        72,
+        749,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.07,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        228,
+        176,
+        853,
+        618
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.73,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        706,
+        238,
+        912
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 7.7,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Les 37 sons du zhuyin\nAssociations et tons, en jeux courts\n\n📲 Téléchargez-la via le lien dans la bio\n\n#LumiBopomofoPro",
+   "caption_link": "Les 37 sons du zhuyin\nAssociations et tons, en jeux courts\n\nApp Store: https://apps.apple.com/app/id6775773117\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyinPro",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofopro/fr-FR.jpg"
+  },
+  {
+   "locale": "gu-IN",
+   "file": "lumibopomofopro/gu-IN.jpg",
+   "intended_locale": "gu-IN",
+   "headline_locale": "gu-IN",
+   "screenshot_locale": "gu-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:guj",
+    "script_chars": 48,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "બધા 37 ઝુયિન ધ્વનિ",
+   "line2": "જોડાણ અને સ્વર, ગ્રહ-રમતોમાં",
+   "chips": [
+    "જોડાણ અને સ્વર, ગ્રહ-રમતોમાં",
+    "ચાઇનીઝ ટોન અને વર્કશીટ"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.251,
+    "family": "orbit2",
+    "font": "NotoSansGujarati.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        331,
+        72,
+        749,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.1,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        99,
+        176,
+        981,
+        481
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.27,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        582,
+        246,
+        752
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 7.41,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "બધા 37 ઝુયિન ધ્વનિ\nજોડાણ અને સ્વર, ગ્રહ-રમતોમાં\n\n📲 બાયોમાંની લિંકથી ડાઉનલોડ કરો\n\n#LumiBopomofoPro",
+   "caption_link": "બધા 37 ઝુયિન ધ્વનિ\nજોડાણ અને સ્વર, ગ્રહ-રમતોમાં\n\nApp Store: https://apps.apple.com/app/id6775773117\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyinPro",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofopro/gu-IN.jpg"
+  },
+  {
+   "locale": "he",
+   "file": "lumibopomofopro/he.jpg",
+   "intended_locale": "he",
+   "headline_locale": "he",
+   "screenshot_locale": "he",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:heb",
+    "script_chars": 45,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "כל סימני הג׳ואין",
+   "line2": "צלילים, שילובים וטונים עם דמויות מתוקות",
+   "chips": [
+    "צלילים, שילובים וטונים עם דמויות מתוקות",
+    "סינית: טונים ודפי עבודה",
+    "זיהוי כל הסימנים וההגייה שלהם"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.24,
+    "family": "orbit2",
+    "font": "NotoSansHebrew.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        333,
+        72,
+        747,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.93,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        146,
+        176,
+        933,
+        517
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.55,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.3,
+        1.4
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        822,
+        615,
+        1040,
+        786
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 7.82,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.4
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        843,
+        201,
+        1113
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 7.65,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.4
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "כל סימני הג׳ואין\nצלילים, שילובים וטונים עם דמויות מתוקות\n\n📲 הורדה דרך הקישור בביו\n\n#LumiBopomofoPro",
+   "caption_link": "כל סימני הג׳ואין\nצלילים, שילובים וטונים עם דמויות מתוקות\n\nApp Store: https://apps.apple.com/app/id6775773117\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyinPro",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofopro/he.jpg"
+  },
+  {
+   "locale": "hi",
+   "file": "lumibopomofopro/hi.jpg",
+   "intended_locale": "hi",
+   "headline_locale": "hi",
+   "screenshot_locale": "hi",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:hin",
+    "script_chars": 68,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "सभी 37 झूयिन चिह्न",
+   "line2": "ध्वनि, संयोजन और टोन प्यारे पात्रों के साथ",
+   "chips": [
+    "ध्वनि, संयोजन और टोन प्यारे पात्रों के साथ",
+    "चीनी टोन और वर्कशीट अभ्यास",
+    "प्यारे पात्र और शांत गति"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.251,
+    "family": "orbit2",
+    "font": "NotoSansDevanagari.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        332,
+        72,
+        749,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.1,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        103,
+        176,
+        977,
+        481
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.14,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        582,
+        241,
+        807
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 7.39,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.5
+      },
+      {
+       "kind": "card",
+       "plate": [
+        823,
+        821,
+        1040,
+        992
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 7.11,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "सभी 37 झूयिन चिह्न\nध्वनि, संयोजन और टोन प्यारे पात्रों के साथ\n\n📲 बायो में दिए लिंक से डाउनलोड करें\n\n#LumiBopomofoPro",
+   "caption_link": "सभी 37 झूयिन चिह्न\nध्वनि, संयोजन और टोन प्यारे पात्रों के साथ\n\nApp Store: https://apps.apple.com/app/id6775773117\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyinPro",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofopro/hi.jpg"
+  },
+  {
+   "locale": "hr",
+   "file": "lumibopomofopro/hr.jpg",
+   "intended_locale": "hr",
+   "headline_locale": "hr",
+   "screenshot_locale": "hr",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.228<0.24)"
+   ],
+   "line1": "Svih 37 znakova zhuyina",
+   "line2": "Zvukovi, spajanje i kineski tonovi",
+   "chips": [
+    "Zvukovi, spajanje i kineski tonovi",
+    "Kineski tonovi i radni listovi",
+    "Prepoznavanje znakova i jasnog izgovora"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.246,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.02,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        332,
+        72,
+        749,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.07,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        104,
+        176,
+        975,
+        558
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.42,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        652,
+        193,
+        903
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 7.44,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Svih 37 znakova zhuyina\nZvukovi, spajanje i kineski tonovi\n\n📲 Preuzmi putem poveznice u biografiji (bio)\n\n#LumiBopomofoPro",
+   "caption_link": "Svih 37 znakova zhuyina\nZvukovi, spajanje i kineski tonovi\n\nApp Store: https://apps.apple.com/app/id6775773117\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyinPro",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofopro/hr.jpg"
+  },
+  {
+   "locale": "hu",
+   "file": "lumibopomofopro/hu.jpg",
+   "intended_locale": "hu",
+   "headline_locale": "hu",
+   "screenshot_locale": "hu",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Mind a 37 zhuyin jel",
+   "line2": "Hangok, összekapcsolás és tónusok",
+   "chips": [
+    "Hangok, összekapcsolás és tónusok",
+    "Kínai tónusok és feladatlapok",
+    "Aranyos szereplők és nyugodt tempó"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.275,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        332,
+        72,
+        749,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.07,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        84,
+        176,
+        997,
+        403
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.1,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        815,
+        773,
+        1040,
+        1033
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 7.15,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Mind a 37 zhuyin jel\nHangok, összekapcsolás és tónusok\n\n📲 Töltsd le a bio linkjéről\n\n#LumiBopomofoPro",
+   "caption_link": "Mind a 37 zhuyin jel\nHangok, összekapcsolás és tónusok\n\nApp Store: https://apps.apple.com/app/id6775773117\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyinPro",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofopro/hu.jpg"
+  },
+  {
+   "locale": "id",
+   "file": "lumibopomofopro/id.jpg",
+   "intended_locale": "id",
+   "headline_locale": "id",
+   "screenshot_locale": "id",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "37 simbol zhuyin",
+   "line2": "Bunyi dan gabungannya lewat gim singkat",
+   "chips": [
+    "Bunyi dan gabungannya lewat gim singkat",
+    "Nada Mandarin & lembar kerja",
+    "Karakter lucu dan tempo yang tenang"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.245,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        332,
+        72,
+        749,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.07,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        82,
+        176,
+        997,
+        501
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.33,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        600,
+        236,
+        860
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 7.42,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      },
+      {
+       "kind": "card",
+       "plate": [
+        858,
+        834,
+        1040,
+        1139
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 6.89,
+       "plate_alpha": 0.55,
+       "lines": 5,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "37 simbol zhuyin\nBunyi dan gabungannya lewat gim singkat\n\n📲 Unduh lewat link di bio\n\n#LumiBopomofoPro",
+   "caption_link": "37 simbol zhuyin\nBunyi dan gabungannya lewat gim singkat\n\nApp Store: https://apps.apple.com/app/id6775773117\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyinPro",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofopro/id.jpg"
+  },
+  {
+   "locale": "it",
+   "file": "lumibopomofopro/it.jpg",
+   "intended_locale": "it",
+   "headline_locale": "it",
+   "screenshot_locale": "it",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.208<0.24; orbit2×1.08: screen_area=0.224<0.24)"
+   ],
+   "line1": "I 37 suoni dello zhuyin",
+   "line2": "Combinazioni e toni in giochi brevi",
+   "chips": [
+    "Combinazioni e toni in giochi brevi",
+    "Toni del mandarino e schede"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.24,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        332,
+        72,
+        749,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.07,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        204,
+        176,
+        877,
+        623
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.68,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "I 37 suoni dello zhuyin\nCombinazioni e toni in giochi brevi\n\n📲 Scaricala dal link nella bio\n\n#LumiBopomofoPro",
+   "caption_link": "I 37 suoni dello zhuyin\nCombinazioni e toni in giochi brevi\n\nApp Store: https://apps.apple.com/app/id6775773117\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyinPro",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofopro/it.jpg"
+  },
+  {
+   "locale": "ja",
+   "file": "lumibopomofopro/ja.jpg",
+   "intended_locale": "ja",
+   "headline_locale": "ja",
+   "screenshot_locale": "ja",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:jpn",
+    "script_chars": 36,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "37の注音を楽しく",
+   "line2": "音のつなげ方・5つの声調も",
+   "chips": [
+    "音のつなげ方・5つの声調も",
+    "注音符号・声調練習・なぞり書き"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.266,
+    "family": "orbit2",
+    "font": "NotoSansJP.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        332,
+        72,
+        747,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.09,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        108,
+        176,
+        973,
+        433
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.46,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        539,
+        245,
+        751
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 7.33,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "37の注音を楽しく\n音のつなげ方・5つの声調も\n\n📲 ダウンロードはプロフィール（bio）のリンクから\n\n#LumiBopomofoPro",
+   "caption_link": "37の注音を楽しく\n音のつなげ方・5つの声調も\n\nApp Store: https://apps.apple.com/app/id6775773117\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyinPro",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofopro/ja.jpg"
+  },
+  {
+   "locale": "kn-IN",
+   "file": "lumibopomofopro/kn-IN.jpg",
+   "intended_locale": "kn-IN",
+   "headline_locale": "kn-IN",
+   "screenshot_locale": "kn-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:kan",
+    "script_chars": 87,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.204<0.24; orbit2×1.08: screen_area=0.22<0.24; orbit2×1.16: screen_area=0.235<0.24)"
+   ],
+   "line1": "ಝುಯಿನ್ ಆಟದಲ್ಲೇ ಪಕ್ಕಾ",
+   "line2": "37 ಧ್ವನಿಗಳು · ಜೋಡಣೆ · ಸ್ವರ",
+   "chips": [
+    "37 ಧ್ವನಿಗಳು · ಜೋಡಣೆ · ಸ್ವರ",
+    "ಚೈನೀಸ್ ಟೋನ್ ಮತ್ತು ಅಭ್ಯಾಸ ಹಾಳೆ"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.253,
+    "family": "orbit2",
+    "font": "NotoSansKannada.ttf",
+    "screen_ratio_vs_battai_split": 1.37,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        337,
+        72,
+        743,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.15,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        168,
+        176,
+        912,
+        638
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.7,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        724,
+        194,
+        1053
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.02,
+       "plate_alpha": 0.55,
+       "lines": 5,
+       "lh": 1.5
+      }
+     ]
+    },
+    "phone_scale": 1.25,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "ಝುಯಿನ್ ಆಟದಲ್ಲೇ ಪಕ್ಕಾ\n37 ಧ್ವನಿಗಳು · ಜೋಡಣೆ · ಸ್ವರ\n\n📲 ಬಯೋದಲ್ಲಿರುವ ಲಿಂಕ್‌ನಿಂದ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ\n\n#LumiBopomofoPro",
+   "caption_link": "ಝುಯಿನ್ ಆಟದಲ್ಲೇ ಪಕ್ಕಾ\n37 ಧ್ವನಿಗಳು · ಜೋಡಣೆ · ಸ್ವರ\n\nApp Store: https://apps.apple.com/app/id6775773117\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyinPro",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofopro/kn-IN.jpg"
+  },
+  {
+   "locale": "ko",
+   "file": "lumibopomofopro/ko.jpg",
+   "intended_locale": "ko",
+   "headline_locale": "ko",
+   "screenshot_locale": "ko",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:kor",
+    "script_chars": 12,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "37개 주음부호를 놀이로",
+   "line2": "소리·합치기·성조까지",
+   "chips": [
+    "소리·합치기·성조까지",
+    "주음부호 성조·따라쓰기·학습지"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.276,
+    "family": "orbit2",
+    "font": "NotoSansKR.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        332,
+        72,
+        747,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.09,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        87,
+        176,
+        993,
+        400
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.27,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "37개 주음부호를 놀이로\n소리·합치기·성조까지\n\n📲 다운로드는 프로필(bio) 링크에서\n\n#LumiBopomofoPro",
+   "caption_link": "37개 주음부호를 놀이로\n소리·합치기·성조까지\n\nApp Store: https://apps.apple.com/app/id6775773117\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyinPro",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofopro/ko.jpg"
+  },
+  {
+   "locale": "ml-IN",
+   "file": "lumibopomofopro/ml-IN.jpg",
+   "intended_locale": "ml-IN",
+   "headline_locale": "ml-IN",
+   "screenshot_locale": "ml-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:mal",
+    "script_chars": 54,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback orbit2->closeup2 (orbit2: screen_area=0.18<0.24; orbit2×1.08: screen_area=0.194<0.24; orbit2×1.16: screen_area=0.208<0.24; orbit2×1.25: screen_area=0.224<0.24; split2: text does not fit at minimum sizes; closeup2: screen_area=0.199<0.24; closeup2×1.08: screen_area=0.214<0.24; closeup2×1.16: screen_area=0.229<0.24)"
+   ],
+   "line1": "ജുയിൻ കളിയിലൂടെ",
+   "line2": "37 ശബ്ദങ്ങൾ · കൂട്ടിച്ചേർക്കൽ · സ്വരം",
+   "chips": [
+    "37 ശബ്ദങ്ങൾ · കൂട്ടിച്ചേർക്കൽ · സ്വരം",
+    "ചൈനീസ് ടോൺ, പരിശീലന ഷീറ്റ്"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.246,
+    "family": "closeup2",
+    "font": "NotoSansMalayalam.ttf",
+    "screen_ratio_vs_battai_split": 1.77,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        330,
+        72,
+        751,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.1,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        180,
+        184,
+        900,
+        723
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.82,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.25,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "ജുയിൻ കളിയിലൂടെ\n37 ശബ്ദങ്ങൾ · കൂട്ടിച്ചേർക്കൽ · സ്വരം\n\n📲 ബയോയിലെ ലിങ്ക് വഴി ഡൗൺലോഡ് ചെയ്യുക\n\n#LumiBopomofoPro",
+   "caption_link": "ജുയിൻ കളിയിലൂടെ\n37 ശബ്ദങ്ങൾ · കൂട്ടിച്ചേർക്കൽ · സ്വരം\n\nApp Store: https://apps.apple.com/app/id6775773117\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyinPro",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofopro/ml-IN.jpg"
+  },
+  {
+   "locale": "mr-IN",
+   "file": "lumibopomofopro/mr-IN.jpg",
+   "intended_locale": "mr-IN",
+   "headline_locale": "mr-IN",
+   "screenshot_locale": "mr-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:mar",
+    "script_chars": 41,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "सर्व 37 झुयिन ध्वनी",
+   "line2": "जोडणी आणि स्वर गोड पात्रांसोबत",
+   "chips": [
+    "जोडणी आणि स्वर गोड पात्रांसोबत",
+    "चिनी टोन आणि सराव पत्रके"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.253,
+    "family": "orbit2",
+    "font": "NotoSansDevanagari.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        332,
+        72,
+        749,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.1,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        115,
+        176,
+        965,
+        475
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.33,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        577,
+        226,
+        802
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 7.37,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "सर्व 37 झुयिन ध्वनी\nजोडणी आणि स्वर गोड पात्रांसोबत\n\n📲 बायोमधील लिंकवरून डाउनलोड करा\n\n#LumiBopomofoPro",
+   "caption_link": "सर्व 37 झुयिन ध्वनी\nजोडणी आणि स्वर गोड पात्रांसोबत\n\nApp Store: https://apps.apple.com/app/id6775773117\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyinPro",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofopro/mr-IN.jpg"
+  },
+  {
+   "locale": "ms",
+   "file": "lumibopomofopro/ms.jpg",
+   "intended_locale": "ms",
+   "headline_locale": "ms",
+   "screenshot_locale": "ms",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "37 simbol zhuyin",
+   "line2": "Bunyi dan gabungannya dalam permainan",
+   "chips": [
+    "Bunyi dan gabungannya dalam permainan",
+    "Nada Mandarin & lembaran kerja",
+    "Watak comel dan rentak yang tenang"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.245,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        332,
+        72,
+        749,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.07,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        82,
+        176,
+        997,
+        501
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.33,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        600,
+        272,
+        860
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 7.61,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      },
+      {
+       "kind": "card",
+       "plate": [
+        830,
+        834,
+        1040,
+        1139
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 6.8,
+       "plate_alpha": 0.55,
+       "lines": 5,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "37 simbol zhuyin\nBunyi dan gabungannya dalam permainan\n\n📲 Muat turun melalui pautan dalam bio\n\n#LumiBopomofoPro",
+   "caption_link": "37 simbol zhuyin\nBunyi dan gabungannya dalam permainan\n\nApp Store: https://apps.apple.com/app/id6775773117\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyinPro",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofopro/ms.jpg"
+  },
+  {
+   "locale": "nl-NL",
+   "file": "lumibopomofopro/nl-NL.jpg",
+   "intended_locale": "nl-NL",
+   "headline_locale": "nl-NL",
+   "screenshot_locale": "nl-NL",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.209<0.24; orbit2×1.08: screen_area=0.225<0.24)"
+   ],
+   "line1": "Alle 37 zhuyin-tekens",
+   "line2": "Klanken en combinaties in korte spelletjes",
+   "chips": [
+    "Klanken en combinaties in korte spelletjes",
+    "Mandarijntonen en werkbladen",
+    "Schattige figuren en een rustig tempo"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.241,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        332,
+        72,
+        749,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.07,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        148,
+        176,
+        933,
+        622
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.65,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        846,
+        909,
+        1040,
+        1214
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 6.81,
+       "plate_alpha": 0.55,
+       "lines": 5,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Alle 37 zhuyin-tekens\nKlanken en combinaties in korte spelletjes\n\n📲 Download via de link in bio\n\n#LumiBopomofoPro",
+   "caption_link": "Alle 37 zhuyin-tekens\nKlanken en combinaties in korte spelletjes\n\nApp Store: https://apps.apple.com/app/id6775773117\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyinPro",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofopro/nl-NL.jpg"
+  },
+  {
+   "locale": "no",
+   "file": "lumibopomofopro/no.jpg",
+   "intended_locale": "no",
+   "headline_locale": "no",
+   "screenshot_locale": "no",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Alle 37 zhuyin-tegn",
+   "line2": "Lyder og sammensetninger i korte spill",
+   "chips": [
+    "Lyder og sammensetninger i korte spill",
+    "Mandarintoner og øveark",
+    "Søte figurer og rolig tempo"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.275,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        332,
+        72,
+        749,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.07,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        94,
+        176,
+        985,
+        403
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.02,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        808,
+        773,
+        1040,
+        988
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 7.83,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Alle 37 zhuyin-tegn\nLyder og sammensetninger i korte spill\n\n📲 Last ned via lenken i bio\n\n#LumiBopomofoPro",
+   "caption_link": "Alle 37 zhuyin-tegn\nLyder og sammensetninger i korte spill\n\nApp Store: https://apps.apple.com/app/id6775773117\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyinPro",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofopro/no.jpg"
+  },
+  {
+   "locale": "or-IN",
+   "file": "lumibopomofopro/or-IN.jpg",
+   "intended_locale": "or-IN",
+   "headline_locale": "or-IN",
+   "screenshot_locale": "or-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:ori",
+    "script_chars": 55,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "ସମସ୍ତ 37 ଜୁଯିନ ଧ୍ୱନି",
+   "line2": "ମିଶ୍ରଣ ଓ ସ୍ୱର, ଗ୍ରହର ଛୋଟ ଖେଳରେ",
+   "chips": [
+    "ମିଶ୍ରଣ ଓ ସ୍ୱର, ଗ୍ରହର ଛୋଟ ଖେଳରେ",
+    "ଚାଇନିଜ୍ ଟୋନ୍ ଓ ଅଭ୍ୟାସ ପତ୍ର"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.252,
+    "family": "orbit2",
+    "font": "NotoSansOriya.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        332,
+        72,
+        749,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.07,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        97,
+        176,
+        983,
+        477
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.23,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        579,
+        245,
+        815
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 7.47,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "ସମସ୍ତ 37 ଜୁଯିନ ଧ୍ୱନି\nମିଶ୍ରଣ ଓ ସ୍ୱର, ଗ୍ରହର ଛୋଟ ଖେଳରେ\n\n📲 ବାୟୋରେ ଥିବା ଲିଙ୍କରୁ ଡାଉନଲୋଡ୍ କରନ୍ତୁ\n\n#LumiBopomofoPro",
+   "caption_link": "ସମସ୍ତ 37 ଜୁଯିନ ଧ୍ୱନି\nମିଶ୍ରଣ ଓ ସ୍ୱର, ଗ୍ରହର ଛୋଟ ଖେଳରେ\n\nApp Store: https://apps.apple.com/app/id6775773117\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyinPro",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofopro/or-IN.jpg"
+  },
+  {
+   "locale": "pa-IN",
+   "file": "lumibopomofopro/pa-IN.jpg",
+   "intended_locale": "pa-IN",
+   "headline_locale": "pa-IN",
+   "screenshot_locale": "pa-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:pan",
+    "script_chars": 43,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback orbit2->split2 (orbit2: screen_area=0.184<0.24; orbit2×1.08: screen_area=0.198<0.24; orbit2×1.16: screen_area=0.212<0.24; orbit2×1.25: screen_area=0.228<0.24)"
+   ],
+   "line1": "ਸਾਰੀਆਂ 37 ਜ਼ੂਯਿਨ ਧੁਨੀਆਂ",
+   "line2": "ਜੋੜ ਤੇ ਸੁਰ, ਗ੍ਰਹਿ ਵਾਲੀਆਂ ਖੇਡਾਂ ਵਿੱਚ",
+   "chips": [
+    "ਜੋੜ ਤੇ ਸੁਰ, ਗ੍ਰਹਿ ਵਾਲੀਆਂ ਖੇਡਾਂ ਵਿੱਚ",
+    "ਚੀਨੀ ਟੋਨ ਅਤੇ ਅਭਿਆਸ ਸ਼ੀਟਾਂ"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.273,
+    "family": "split2",
+    "font": "NotoSansGurmukhi.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        490,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.9,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        525,
+        861
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 9.64,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        885,
+        366,
+        1021
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.94,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 split2）"
+   },
+   "caption_instagram": "ਸਾਰੀਆਂ 37 ਜ਼ੂਯਿਨ ਧੁਨੀਆਂ\nਜੋੜ ਤੇ ਸੁਰ, ਗ੍ਰਹਿ ਵਾਲੀਆਂ ਖੇਡਾਂ ਵਿੱਚ\n\n📲 ਬਾਇਓ ਵਿੱਚ ਦਿੱਤੇ ਲਿੰਕ ਤੋਂ ਡਾਊਨਲੋਡ ਕਰੋ\n\n#LumiBopomofoPro",
+   "caption_link": "ਸਾਰੀਆਂ 37 ਜ਼ੂਯਿਨ ਧੁਨੀਆਂ\nਜੋੜ ਤੇ ਸੁਰ, ਗ੍ਰਹਿ ਵਾਲੀਆਂ ਖੇਡਾਂ ਵਿੱਚ\n\nApp Store: https://apps.apple.com/app/id6775773117\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyinPro",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofopro/pa-IN.jpg"
+  },
+  {
+   "locale": "pl",
+   "file": "lumibopomofopro/pl.jpg",
+   "intended_locale": "pl",
+   "headline_locale": "pl",
+   "screenshot_locale": "pl",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.208<0.24; orbit2×1.08: screen_area=0.224<0.24)"
+   ],
+   "line1": "Wszystkie 37 znaków",
+   "line2": "Zhuyin: dźwięki i łączenie w grach",
+   "chips": [
+    "Zhuyin: dźwięki i łączenie w grach",
+    "Tony chińskie i karty pracy",
+    "Słodkie postacie i spokojne tempo"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.24,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        332,
+        72,
+        749,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.07,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        242,
+        176,
+        839,
+        623
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.77,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        710,
+        213,
+        970
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 7.65,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Wszystkie 37 znaków\nZhuyin: dźwięki i łączenie w grach\n\n📲 Pobierz przez link w bio\n\n#LumiBopomofoPro",
+   "caption_link": "Wszystkie 37 znaków\nZhuyin: dźwięki i łączenie w grach\n\nApp Store: https://apps.apple.com/app/id6775773117\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyinPro",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofopro/pl.jpg"
+  },
+  {
+   "locale": "pt-BR",
+   "file": "lumibopomofopro/pt-BR.jpg",
+   "intended_locale": "pt-BR",
+   "headline_locale": "pt-BR",
+   "screenshot_locale": "pt-BR",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.208<0.24; orbit2×1.08: screen_area=0.224<0.24)"
+   ],
+   "line1": "Os 37 símbolos do zhuyin",
+   "line2": "Sons, tons e combinações em jogos curtos",
+   "chips": [
+    "Sons, tons e combinações em jogos curtos",
+    "Tons do mandarim e atividades",
+    "Personagens fofos e ritmo tranquilo"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.24,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        332,
+        72,
+        749,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.07,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        131,
+        176,
+        949,
+        623
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.57,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Os 37 símbolos do zhuyin\nSons, tons e combinações em jogos curtos\n\n📲 Baixe pelo link na bio\n\n#LumiBopomofoPro",
+   "caption_link": "Os 37 símbolos do zhuyin\nSons, tons e combinações em jogos curtos\n\nApp Store: https://apps.apple.com/app/id6775773117\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyinPro",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofopro/pt-BR.jpg"
+  },
+  {
+   "locale": "pt-PT",
+   "file": "lumibopomofopro/pt-PT.jpg",
+   "intended_locale": "pt-PT",
+   "headline_locale": "pt-PT",
+   "screenshot_locale": "pt-PT",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.208<0.24; orbit2×1.08: screen_area=0.224<0.24)"
+   ],
+   "line1": "Os 37 símbolos do zhuyin",
+   "line2": "Sons e combinações em jogos curtos",
+   "chips": [
+    "Sons e combinações em jogos curtos",
+    "Tons do mandarim e fichas",
+    "Personagens ternurentas e ritmo calmo"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.24,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        332,
+        72,
+        749,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.07,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        131,
+        176,
+        949,
+        623
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.57,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Os 37 símbolos do zhuyin\nSons e combinações em jogos curtos\n\n📲 Download via the link in bio\n\n#LumiBopomofoPro",
+   "caption_link": "Os 37 símbolos do zhuyin\nSons e combinações em jogos curtos\n\nApp Store: https://apps.apple.com/app/id6775773117\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyinPro",
+   "cta_source": "en-fallback",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofopro/pt-PT.jpg"
+  },
+  {
+   "locale": "ro",
+   "file": "lumibopomofopro/ro.jpg",
+   "intended_locale": "ro",
+   "headline_locale": "ro",
+   "screenshot_locale": "ro",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.209<0.24; orbit2×1.08: screen_area=0.225<0.24)"
+   ],
+   "line1": "Toate cele 37 de simboluri",
+   "line2": "Sunete, combinații și tonuri chinezești",
+   "chips": [
+    "Sunete, combinații și tonuri chinezești",
+    "Tonuri chinezești și fișe",
+    "Personaje drăguțe și ritm liniștit"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.241,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        332,
+        72,
+        749,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.07,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        119,
+        176,
+        961,
+        620
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.53,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Toate cele 37 de simboluri\nSunete, combinații și tonuri chinezești\n\n📲 Descarcă din linkul din bio\n\n#LumiBopomofoPro",
+   "caption_link": "Toate cele 37 de simboluri\nSunete, combinații și tonuri chinezești\n\nApp Store: https://apps.apple.com/app/id6775773117\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyinPro",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofopro/ro.jpg"
+  },
+  {
+   "locale": "ru",
+   "file": "lumibopomofopro/ru.jpg",
+   "intended_locale": "ru",
+   "headline_locale": "ru",
+   "screenshot_locale": "ru",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:rus",
+    "script_chars": 77,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.229<0.24)"
+   ],
+   "line1": "Все 37 знаков чжуинь",
+   "line2": "Звуки и сочетания в игре",
+   "chips": [
+    "Звуки и сочетания в игре",
+    "Тоны китайского и прописи",
+    "Симпатичные персонажи и спокойный темп"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.247,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.02,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        332,
+        72,
+        749,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.07,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        154,
+        176,
+        927,
+        553
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.56,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Все 37 знаков чжуинь\nЗвуки и сочетания в игре\n\n📲 Скачать можно по ссылке в профиле (bio)\n\n#LumiBopomofoPro",
+   "caption_link": "Все 37 знаков чжуинь\nЗвуки и сочетания в игре\n\nApp Store: https://apps.apple.com/app/id6775773117\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyinPro",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofopro/ru.jpg"
+  },
+  {
+   "locale": "sk",
+   "file": "lumibopomofopro/sk.jpg",
+   "intended_locale": "sk",
+   "headline_locale": "sk",
+   "screenshot_locale": "sk",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "37 znakov zhuyin",
+   "line2": "Zvuky, spájanie a čínske tóny",
+   "chips": [
+    "Zvuky, spájanie a čínske tóny",
+    "Čínske tóny a pracovné listy",
+    "Spoznávanie znakov a jasnej výslovnosti"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.267,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        332,
+        72,
+        749,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.07,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        88,
+        176,
+        992,
+        428
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 100,
+        "sub": 50,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.24,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        535,
+        275,
+        750
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 7.4,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "37 znakov zhuyin\nZvuky, spájanie a čínske tóny\n\n📲 Stiahnite si ju cez odkaz v profile (bio)\n\n#LumiBopomofoPro",
+   "caption_link": "37 znakov zhuyin\nZvuky, spájanie a čínske tóny\n\nApp Store: https://apps.apple.com/app/id6775773117\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyinPro",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofopro/sk.jpg"
+  },
+  {
+   "locale": "sl-SI",
+   "file": "lumibopomofopro/sl-SI.jpg",
+   "intended_locale": "sl-SI",
+   "headline_locale": "sl-SI",
+   "screenshot_locale": "sl-SI",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.209<0.24; orbit2×1.08: screen_area=0.225<0.24)"
+   ],
+   "line1": "Vseh 37 zvokov zhuyin",
+   "line2": "Povezovanje in toni skozi kratke igre",
+   "chips": [
+    "Povezovanje in toni skozi kratke igre",
+    "Kitajski toni in delovni listi"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.241,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        332,
+        72,
+        749,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.07,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        148,
+        176,
+        933,
+        622
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.65,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        709,
+        196,
+        960
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 7.72,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Vseh 37 zvokov zhuyin\nPovezovanje in toni skozi kratke igre\n\n📲 Prenesite prek povezave v biu\n\n#LumiBopomofoPro",
+   "caption_link": "Vseh 37 zvokov zhuyin\nPovezovanje in toni skozi kratke igre\n\nApp Store: https://apps.apple.com/app/id6775773117\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyinPro",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofopro/sl-SI.jpg"
+  },
+  {
+   "locale": "sv",
+   "file": "lumibopomofopro/sv.jpg",
+   "intended_locale": "sv",
+   "headline_locale": "sv",
+   "screenshot_locale": "sv",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.209<0.24; orbit2×1.08: screen_area=0.225<0.24)"
+   ],
+   "line1": "Alla 37 zhuyin-tecken",
+   "line2": "Ljud och sammansättningar i planetspel",
+   "chips": [
+    "Ljud och sammansättningar i planetspel",
+    "Mandarintoner och övningsblad",
+    "Söta figurer och lugnt tempo"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.241,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        332,
+        72,
+        749,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.07,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        148,
+        176,
+        932,
+        622
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.57,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        845,
+        909,
+        1040,
+        1169
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 6.71,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Alla 37 zhuyin-tecken\nLjud och sammansättningar i planetspel\n\n📲 Ladda ner via länken i bion\n\n#LumiBopomofoPro",
+   "caption_link": "Alla 37 zhuyin-tecken\nLjud och sammansättningar i planetspel\n\nApp Store: https://apps.apple.com/app/id6775773117\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyinPro",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofopro/sv.jpg"
+  },
+  {
+   "locale": "ta-IN",
+   "file": "lumibopomofopro/ta-IN.jpg",
+   "intended_locale": "ta-IN",
+   "headline_locale": "ta-IN",
+   "screenshot_locale": "ta-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:tam",
+    "script_chars": 88,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "ஜுயின் எளிதாக",
+   "line2": "37 ஒலிகள் · இணைப்பு · தொனிகள்",
+   "chips": [
+    "37 ஒலிகள் · இணைப்பு · தொனிகள்",
+    "சீன தொனிகள், பயிற்சித் தாள்கள்"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.261,
+    "family": "orbit2",
+    "font": "NotoSansTamil.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        331,
+        72,
+        749,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.1,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        95,
+        176,
+        985,
+        449
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.26,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "ஜுயின் எளிதாக\n37 ஒலிகள் · இணைப்பு · தொனிகள்\n\n📲 பயோவில் உள்ள இணைப்பு வழியாகப் பதிவிறக்குங்கள்\n\n#LumiBopomofoPro",
+   "caption_link": "ஜுயின் எளிதாக\n37 ஒலிகள் · இணைப்பு · தொனிகள்\n\nApp Store: https://apps.apple.com/app/id6775773117\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyinPro",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofopro/ta-IN.jpg"
+  },
+  {
+   "locale": "te-IN",
+   "file": "lumibopomofopro/te-IN.jpg",
+   "intended_locale": "te-IN",
+   "headline_locale": "te-IN",
+   "screenshot_locale": "te-IN",
+   "localized": true,
+   "screenshots_used": [
+    0,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:tel",
+    "script_chars": 137,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "ఝుయిన్ ఆటలతో",
+   "line2": "37 ధ్వనులు · కలయిక · స్వరాలు",
+   "chips": [
+    "37 ధ్వనులు · కలయిక · స్వరాలు",
+    "చైనీస్ టోన్లు, అభ్యాస పత్రాలు"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.248,
+    "family": "orbit2",
+    "font": "NotoSansTelugu.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        330,
+        72,
+        749,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.1,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        106,
+        176,
+        973,
+        491
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.28,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        591,
+        251,
+        824
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 7.5,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "ఝుయిన్ ఆటలతో\n37 ధ్వనులు · కలయిక · స్వరాలు\n\n📲 బయోలోని లింక్ ద్వారా డౌన్‌లోడ్ చేయండి\n\n#LumiBopomofoPro",
+   "caption_link": "ఝుయిన్ ఆటలతో\n37 ధ్వనులు · కలయిక · స్వరాలు\n\nApp Store: https://apps.apple.com/app/id6775773117\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyinPro",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofopro/te-IN.jpg"
+  },
+  {
+   "locale": "th",
+   "file": "lumibopomofopro/th.jpg",
+   "intended_locale": "th",
+   "headline_locale": "th",
+   "screenshot_locale": "th",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:tha",
+    "script_chars": 77,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "จู้อินครบ 37 สัญลักษณ์",
+   "line2": "เกมธีมดาวเคราะห์ที่ไม่เร่ง",
+   "chips": [
+    "เกมธีมดาวเคราะห์ที่ไม่เร่ง",
+    "ฝึกวรรณยุกต์ ลากเส้น ใบงาน",
+    "ตัวละครน่ารัก จังหวะไม่เร่ง"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.268,
+    "family": "orbit2",
+    "font": "NotoSansThai.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        331,
+        72,
+        749,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.1,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        90,
+        176,
+        991,
+        425
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.28,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        532,
+        270,
+        758
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 7.44,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.5
+      },
+      {
+       "kind": "card",
+       "plate": [
+        818,
+        786,
+        1040,
+        958
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.55,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "จู้อินครบ 37 สัญลักษณ์\nเกมธีมดาวเคราะห์ที่ไม่เร่ง\n\n📲 ดาวน์โหลดได้ที่ลิงก์ในโปรไฟล์ (bio)\n\n#LumiBopomofoPro",
+   "caption_link": "จู้อินครบ 37 สัญลักษณ์\nเกมธีมดาวเคราะห์ที่ไม่เร่ง\n\nApp Store: https://apps.apple.com/app/id6775773117\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyinPro",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofopro/th.jpg"
+  },
+  {
+   "locale": "tr",
+   "file": "lumibopomofopro/tr.jpg",
+   "intended_locale": "tr",
+   "headline_locale": "tr",
+   "screenshot_locale": "tr",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.209<0.24; orbit2×1.08: screen_area=0.225<0.24)"
+   ],
+   "line1": "37 sembolün tamamı",
+   "line2": "Sesler ve birleşimler oyunla",
+   "chips": [
+    "Sesler ve birleşimler oyunla",
+    "Çince tonlar, çalışma kağıdı",
+    "Sevimli karakterler ve sakin ilerleme"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.241,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        332,
+        72,
+        749,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.07,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        188,
+        176,
+        892,
+        622
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.69,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        709,
+        200,
+        969
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 7.71,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "37 sembolün tamamı\nSesler ve birleşimler oyunla\n\n📲 Biyografideki bağlantıdan indirin\n\n#LumiBopomofoPro",
+   "caption_link": "37 sembolün tamamı\nSesler ve birleşimler oyunla\n\nApp Store: https://apps.apple.com/app/id6775773117\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyinPro",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofopro/tr.jpg"
+  },
+  {
+   "locale": "uk",
+   "file": "lumibopomofopro/uk.jpg",
+   "intended_locale": "uk",
+   "headline_locale": "uk",
+   "screenshot_locale": "uk",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:ukr",
+    "script_chars": 80,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.228<0.24)"
+   ],
+   "line1": "Усі 37 знаків чжуїнь",
+   "line2": "Звуки та поєднання в грі",
+   "chips": [
+    "Звуки та поєднання в грі",
+    "Тони китайської та прописи",
+    "Милі персонажі й спокійний темп"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.246,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.02,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        332,
+        72,
+        749,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.07,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        183,
+        176,
+        897,
+        557
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.6,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Усі 37 знаків чжуїнь\nЗвуки та поєднання в грі\n\n📲 Завантажуйте за посиланням у профілі (bio)\n\n#LumiBopomofoPro",
+   "caption_link": "Усі 37 знаків чжуїнь\nЗвуки та поєднання в грі\n\nApp Store: https://apps.apple.com/app/id6775773117\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyinPro",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofopro/uk.jpg"
+  },
+  {
+   "locale": "ur-PK",
+   "file": "lumibopomofopro/ur-PK.jpg",
+   "intended_locale": "ur-PK",
+   "headline_locale": "ur-PK",
+   "screenshot_locale": "ur-PK",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:urd",
+    "script_chars": 23,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "ژوئین کی ساری آوازیں",
+   "line2": "جوڑ اور سُر پیارے کرداروں کے ساتھ",
+   "chips": [
+    "جوڑ اور سُر پیارے کرداروں کے ساتھ",
+    "چینی سُر اور مشقی ورق"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.263,
+    "family": "orbit2",
+    "font": "NotoSansArabic.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        332,
+        72,
+        748,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.93,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        86,
+        176,
+        994,
+        440
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.15,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.3,
+        1.4
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        824,
+        545,
+        1040,
+        721
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.36,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.4
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "ژوئین کی ساری آوازیں\nجوڑ اور سُر پیارے کرداروں کے ساتھ\n\n📲 بائیو میں دیے گئے لنک سے ڈاؤن لوڈ کریں\n\n#LumiBopomofoPro",
+   "caption_link": "ژوئین کی ساری آوازیں\nجوڑ اور سُر پیارے کرداروں کے ساتھ\n\nApp Store: https://apps.apple.com/app/id6775773117\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyinPro",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofopro/ur-PK.jpg"
+  },
+  {
+   "locale": "vi",
+   "file": "lumibopomofopro/vi.jpg",
+   "intended_locale": "vi",
+   "headline_locale": "vi",
+   "screenshot_locale": "vi",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.206<0.24; orbit2×1.08: screen_area=0.223<0.24; orbit2×1.16: screen_area=0.238<0.24)"
+   ],
+   "line1": "Đủ 37 ký hiệu chú âm",
+   "line2": "Nhận biết ký hiệu, âm, ghép âm",
+   "chips": [
+    "Nhận biết ký hiệu, âm, ghép âm",
+    "Thanh điệu, ghép vần, tô chữ",
+    "Nhân vật đáng yêu, nhịp học nhẹ nhàng"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.256,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.37,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        332,
+        72,
+        749,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.07,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        200,
+        176,
+        879,
+        629
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.74,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        716,
+        186,
+        1012
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.07,
+       "plate_alpha": 0.55,
+       "lines": 5,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.25,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Đủ 37 ký hiệu chú âm\nNhận biết ký hiệu, âm, ghép âm\n\n📲 Tải về qua link ở bio\n\n#LumiBopomofoPro",
+   "caption_link": "Đủ 37 ký hiệu chú âm\nNhận biết ký hiệu, âm, ghép âm\n\nApp Store: https://apps.apple.com/app/id6775773117\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyinPro",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofopro/vi.jpg"
+  },
+  {
+   "locale": "zh-Hans",
+   "file": "lumibopomofopro/zh-Hans.jpg",
+   "intended_locale": "zh-Hans",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": false
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "no localized storefront screenshot (English-only or lookup failed); whole card in en-US",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.208<0.24; orbit2×1.08: screen_area=0.224<0.24)"
+   ],
+   "line1": "Get Mandarin Tones Right",
+   "line2": "All 37 Zhuyin sounds, blending and tones",
+   "chips": [
+    "All 37 Zhuyin sounds, blending and tones",
+    "Mandarin Tones & Worksheets"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.24,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        332,
+        72,
+        749,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.07,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        162,
+        176,
+        918,
+        623
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.56,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Get Mandarin Tones Right\nAll 37 Zhuyin sounds, blending and tones\n\n📲 Download via the link in bio\n\n#LumiBopomofoPro",
+   "caption_link": "Get Mandarin Tones Right\nAll 37 Zhuyin sounds, blending and tones\n\nApp Store: https://apps.apple.com/app/id6775773117\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyinPro",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofopro/zh-Hans.jpg"
+  },
+  {
+   "locale": "zh-Hant",
+   "file": "lumibopomofopro/zh-Hant.jpg",
+   "intended_locale": "zh-Hant",
+   "headline_locale": "zh-Hant",
+   "screenshot_locale": "zh-Hant",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:chi_tra",
+    "script_chars": 12,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "小一前注音玩熟",
+   "line2": "37個注音・拼讀與聲調",
+   "chips": [
+    "37個注音・拼讀與聲調",
+    "幼小銜接・拼讀聲調・列印學習單"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.265,
+    "family": "orbit2",
+    "font": "NotoSansTC.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        354,
+        72,
+        725,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.14,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        157,
+        176,
+        923,
+        435
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.43,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        541,
+        251,
+        753
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 7.37,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "小一前注音玩熟\n37個注音・拼讀與聲調\n\n📲 請到個人檔案（bio）的連結下載\n\n#LumiBopomofoPro",
+   "caption_link": "小一前注音玩熟\n37個注音・拼讀與聲調\n\nApp Store: https://apps.apple.com/app/id6775773117\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyinPro",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumibopomofopro/zh-Hant.jpg"
+  }
+ ]
+}

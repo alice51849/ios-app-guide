@@ -1,0 +1,5587 @@
+{
+ "schema": "lumi.promo_cards/v1",
+ "app": "easyam",
+ "app_id": "6821790092",
+ "app_store_url": "https://apps.apple.com/app/id6821790092",
+ "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.Offday",
+ "size": [
+  1080,
+  1350
+ ],
+ "built": "2026-10-23",
+ "items": [
+  {
+   "locale": "ar-SA",
+   "file": "easyam/ar-SA.jpg",
+   "intended_locale": "ar-SA",
+   "headline_locale": "ar-SA",
+   "screenshot_locale": "ar-SA",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:ara",
+    "script_chars": 205,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "منبه يتخطى العطلات",
+   "line2": "يصمت في الإجازات ويرنّ أيام الدوام",
+   "chips": [
+    "يصمت في الإجازات ويرنّ أيام الدوام",
+    "يتخطى الاجازات الرسمية تلقائيا"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.254,
+    "family": "closeup2",
+    "font": "NotoSansArabic.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        284,
+        72,
+        797,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.16,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        94,
+        184,
+        986,
+        450
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.94,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.3,
+        1.4
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        258,
+        474,
+        823,
+        560
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 13.4,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.4
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "منبه يتخطى العطلات\nيصمت في الإجازات ويرنّ أيام الدوام\n\n📲 حمّله من الرابط في الملف الشخصي (bio)\n\n#EasyAM",
+   "caption_link": "منبه يتخطى العطلات\nيصمت في الإجازات ويرنّ أيام الدوام\n\nApp Store: https://apps.apple.com/app/id6821790092\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/easyam/ar-SA.jpg"
+  },
+  {
+   "locale": "bn-BD",
+   "file": "easyam/bn-BD.jpg",
+   "intended_locale": "bn-BD",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": false
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "no localized storefront screenshot (English-only or lookup failed); whole card in en-US"
+   ],
+   "line1": "Skips Holidays on Its Own",
+   "line2": "Still rings on every workday",
+   "chips": [
+    "Still rings on every workday",
+    "Rings for work, skips days off"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.252,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        262,
+        72,
+        819,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.08,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        142,
+        184,
+        939,
+        566
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.51,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "Skips Holidays on Its Own\nStill rings on every workday\n\n📲 Download via the link in bio\n\n#EasyAM",
+   "caption_link": "Skips Holidays on Its Own\nStill rings on every workday\n\nApp Store: https://apps.apple.com/app/id6821790092\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/easyam/bn-BD.jpg"
+  },
+  {
+   "locale": "ca",
+   "file": "easyam/ca.jpg",
+   "intended_locale": "ca",
+   "headline_locale": "ca",
+   "screenshot_locale": "ca",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3,
+    4
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Calla els festius",
+   "line2": "Sona només els dies de feina",
+   "chips": [
+    "Sona només els dies de feina",
+    "Alarma només els dies de feina"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.261,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        256,
+        72,
+        824,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.08,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        112,
+        184,
+        968,
+        432
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.94,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        218,
+        456,
+        861,
+        541
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.33,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "Calla els festius\nSona només els dies de feina\n\n📲 Descarrega-la des de l'enllaç de la bio\n\n#EasyAM",
+   "caption_link": "Calla els festius\nSona només els dies de feina\n\nApp Store: https://apps.apple.com/app/id6821790092\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/easyam/ca.jpg"
+  },
+  {
+   "locale": "cs",
+   "file": "easyam/cs.jpg",
+   "intended_locale": "cs",
+   "headline_locale": "cs",
+   "screenshot_locale": "cs",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3,
+    4
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback closeup2->closeup2 (closeup2: screen_area=0.23<0.24)"
+   ],
+   "line1": "Budík, který zná svátky",
+   "line2": "O svátcích mlčí, v pracovní dny zvoní",
+   "chips": [
+    "O svátcích mlčí, v pracovní dny zvoní",
+    "Přeskočí státní svátky i volno"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.248,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        245,
+        72,
+        835,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.08,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        198,
+        184,
+        883,
+        631
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.31,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Budík, který zná svátky\nO svátcích mlčí, v pracovní dny zvoní\n\n📲 Stáhněte si ji přes odkaz v profilu (bio)\n\n#EasyAM",
+   "caption_link": "Budík, který zná svátky\nO svátcích mlčí, v pracovní dny zvoní\n\nApp Store: https://apps.apple.com/app/id6821790092\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/easyam/cs.jpg"
+  },
+  {
+   "locale": "da",
+   "file": "easyam/da.jpg",
+   "intended_locale": "da",
+   "headline_locale": "da",
+   "screenshot_locale": "da",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Stille på helligdage",
+   "line2": "Ringer igen på første arbejdsdag",
+   "chips": [
+    "Ringer igen på første arbejdsdag",
+    "Alarm kun når du skal arbejde"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.261,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        224,
+        72,
+        856,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.03,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        78,
+        184,
+        1003,
+        427
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.84,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        226,
+        451,
+        854,
+        540
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.16,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "Stille på helligdage\nRinger igen på første arbejdsdag\n\n📲 Download via linket i bio\n\n#EasyAM",
+   "caption_link": "Stille på helligdage\nRinger igen på første arbejdsdag\n\nApp Store: https://apps.apple.com/app/id6821790092\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/easyam/da.jpg"
+  },
+  {
+   "locale": "de-DE",
+   "file": "easyam/de-DE.jpg",
+   "intended_locale": "de-DE",
+   "headline_locale": "de-DE",
+   "screenshot_locale": "de-DE",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3,
+    4
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback closeup2->closeup2 (closeup2: screen_area=0.23<0.24)"
+   ],
+   "line1": "Feiertag? Bleibt still",
+   "line2": "Arbeitstag klingelt, 7-Tage-Vorschau",
+   "chips": [
+    "Arbeitstag klingelt, 7-Tage-Vorschau",
+    "Klingelt auch im Urlaub nicht"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.248,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        239,
+        72,
+        841,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.07,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        258,
+        184,
+        823,
+        631
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.13,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Feiertag? Bleibt still\nArbeitstag klingelt, 7-Tage-Vorschau\n\n📲 Download über den Link in der Bio\n\n#EasyAM",
+   "caption_link": "Feiertag? Bleibt still\nArbeitstag klingelt, 7-Tage-Vorschau\n\nApp Store: https://apps.apple.com/app/id6821790092\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/easyam/de-DE.jpg"
+  },
+  {
+   "locale": "el",
+   "file": "easyam/el.jpg",
+   "intended_locale": "el",
+   "headline_locale": "el",
+   "screenshot_locale": "el",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:ell",
+    "script_chars": 246,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback closeup2->closeup2 (closeup2: screen_area=0.23<0.24)"
+   ],
+   "line1": "Σωπαίνει στις αργίες",
+   "line2": "Τις επόμενες 7 μέρες με μια ματιά",
+   "chips": [
+    "Τις επόμενες 7 μέρες με μια ματιά",
+    "Χτυπά μόνο όταν έχετε δουλειά"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.248,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        264,
+        72,
+        817,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.08,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        226,
+        184,
+        853,
+        632
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.31,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Σωπαίνει στις αργίες\nΤις επόμενες 7 μέρες με μια ματιά\n\n📲 Λήψη από τον σύνδεσμο στο προφίλ (bio)\n\n#EasyAM",
+   "caption_link": "Σωπαίνει στις αργίες\nΤις επόμενες 7 μέρες με μια ματιά\n\nApp Store: https://apps.apple.com/app/id6821790092\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/easyam/el.jpg"
+  },
+  {
+   "locale": "en-AU",
+   "file": "easyam/en-AU.jpg",
+   "intended_locale": "en-AU",
+   "headline_locale": "en-AU",
+   "screenshot_locale": "en-AU",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Quiet on Public Holidays",
+   "line2": "Still rings on every work day",
+   "chips": [
+    "Still rings on every work day",
+    "Public holiday? It stays quiet"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.252,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        251,
+        72,
+        829,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.08,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        122,
+        184,
+        957,
+        566
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.47,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "Quiet on Public Holidays\nStill rings on every work day\n\n📲 Download via the link in bio\n\n#EasyAM",
+   "caption_link": "Quiet on Public Holidays\nStill rings on every work day\n\nApp Store: https://apps.apple.com/app/id6821790092\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/easyam/en-AU.jpg"
+  },
+  {
+   "locale": "en-CA",
+   "file": "easyam/en-CA.jpg",
+   "intended_locale": "en-CA",
+   "headline_locale": "en-CA",
+   "screenshot_locale": "en-CA",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Quiet on Stat Holidays",
+   "line2": "Still rings on every workday",
+   "chips": [
+    "Still rings on every workday",
+    "Stat holiday? It stays quiet"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.252,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        251,
+        72,
+        829,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.08,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        172,
+        184,
+        907,
+        566
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.28,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "Quiet on Stat Holidays\nStill rings on every workday\n\n📲 Download via the link in bio\n\n#EasyAM",
+   "caption_link": "Quiet on Stat Holidays\nStill rings on every workday\n\nApp Store: https://apps.apple.com/app/id6821790092\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/easyam/en-CA.jpg"
+  },
+  {
+   "locale": "en-GB",
+   "file": "easyam/en-GB.jpg",
+   "intended_locale": "en-GB",
+   "headline_locale": "en-GB",
+   "screenshot_locale": "en-GB",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3,
+    4
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback closeup2->closeup2 (closeup2: screen_area=0.23<0.24)"
+   ],
+   "line1": "Quiet on Bank Holidays",
+   "line2": "Still rings on every working day",
+   "chips": [
+    "Still rings on every working day",
+    "Bank holiday? It stays quiet"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.248,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        251,
+        72,
+        829,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.08,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        148,
+        184,
+        932,
+        631
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.47,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Quiet on Bank Holidays\nStill rings on every working day\n\n📲 Download via the link in bio\n\n#EasyAM",
+   "caption_link": "Quiet on Bank Holidays\nStill rings on every working day\n\nApp Store: https://apps.apple.com/app/id6821790092\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/easyam/en-GB.jpg"
+  },
+  {
+   "locale": "en-US",
+   "file": "easyam/en-US.jpg",
+   "intended_locale": "en-US",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Skips Holidays on Its Own",
+   "line2": "Still rings on every workday",
+   "chips": [
+    "Still rings on every workday",
+    "Rings for work, skips days off"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.252,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        262,
+        72,
+        819,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.08,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        142,
+        184,
+        939,
+        566
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.51,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "Skips Holidays on Its Own\nStill rings on every workday\n\n📲 Download via the link in bio\n\n#EasyAM",
+   "caption_link": "Skips Holidays on Its Own\nStill rings on every workday\n\nApp Store: https://apps.apple.com/app/id6821790092\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/easyam/en-US.jpg"
+  },
+  {
+   "locale": "es-ES",
+   "file": "easyam/es-ES.jpg",
+   "intended_locale": "es-ES",
+   "headline_locale": "es-ES",
+   "screenshot_locale": "es-ES",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3,
+    4
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Calla en los festivos",
+   "line2": "¿Día de trabajo? Suena. Vista de 7 días",
+   "chips": [
+    "¿Día de trabajo? Suena. Vista de 7 días",
+    "Alarma solo en días laborables"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.268,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        243,
+        72,
+        837,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.08,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        82,
+        184,
+        999,
+        411
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.89,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        222,
+        435,
+        857,
+        520
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.9,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "Calla en los festivos\n¿Día de trabajo? Suena. Vista de 7 días\n\n📲 Descárgala desde el enlace de la bio\n\n#EasyAM",
+   "caption_link": "Calla en los festivos\n¿Día de trabajo? Suena. Vista de 7 días\n\nApp Store: https://apps.apple.com/app/id6821790092\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/easyam/es-ES.jpg"
+  },
+  {
+   "locale": "es-MX",
+   "file": "easyam/es-MX.jpg",
+   "intended_locale": "es-MX",
+   "headline_locale": "es-MX",
+   "screenshot_locale": "es-MX",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback closeup2->closeup2 (closeup2: screen_area=0.234<0.24)"
+   ],
+   "line1": "En días festivos, silencio",
+   "line2": "¿Día de trabajo? Suena. Vista de 7 días",
+   "chips": [
+    "¿Día de trabajo? Suena. Vista de 7 días",
+    "Despertador solo si trabajas"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.253,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        248,
+        72,
+        831,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.08,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        102,
+        184,
+        977,
+        619
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.05,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "En días festivos, silencio\n¿Día de trabajo? Suena. Vista de 7 días\n\n📲 Descárgala desde el enlace de la bio\n\n#EasyAM",
+   "caption_link": "En días festivos, silencio\n¿Día de trabajo? Suena. Vista de 7 días\n\nApp Store: https://apps.apple.com/app/id6821790092\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/easyam/es-MX.jpg"
+  },
+  {
+   "locale": "fi",
+   "file": "easyam/fi.jpg",
+   "intended_locale": "fi",
+   "headline_locale": "fi",
+   "screenshot_locale": "fi",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3,
+    4
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Hiljaa pyhäpäivinä",
+   "line2": "Soi taas ensimmäisenä työpäivänä",
+   "chips": [
+    "Soi taas ensimmäisenä työpäivänä",
+    "Herätys ohittaa pyhät ja lomat"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.263,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        262,
+        72,
+        819,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.08,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        92,
+        184,
+        988,
+        421
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.88,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        223,
+        445,
+        857,
+        534
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.96,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "Hiljaa pyhäpäivinä\nSoi taas ensimmäisenä työpäivänä\n\n📲 Lataa bion linkistä\n\n#EasyAM",
+   "caption_link": "Hiljaa pyhäpäivinä\nSoi taas ensimmäisenä työpäivänä\n\nApp Store: https://apps.apple.com/app/id6821790092\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/easyam/fi.jpg"
+  },
+  {
+   "locale": "fr-CA",
+   "file": "easyam/fr-CA.jpg",
+   "intended_locale": "fr-CA",
+   "headline_locale": "fr-CA",
+   "screenshot_locale": "fr-CA",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3,
+    4
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback closeup2->closeup2 (closeup2: screen_area=0.23<0.24)"
+   ],
+   "line1": "Muet les jours fériés",
+   "line2": "Jour de travail ? Il sonne. Aperçu 7 jours",
+   "chips": [
+    "Jour de travail ? Il sonne. Aperçu 7 jours",
+    "Congé demain? Il ne sonne pas"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.249,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        281,
+        72,
+        799,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.1,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        218,
+        184,
+        861,
+        630
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.22,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Muet les jours fériés\nJour de travail ? Il sonne. Aperçu 7 jours\n\n📲 Téléchargez-la via le lien dans la bio\n\n#EasyAM",
+   "caption_link": "Muet les jours fériés\nJour de travail ? Il sonne. Aperçu 7 jours\n\nApp Store: https://apps.apple.com/app/id6821790092\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/easyam/fr-CA.jpg"
+  },
+  {
+   "locale": "fr-FR",
+   "file": "easyam/fr-FR.jpg",
+   "intended_locale": "fr-FR",
+   "headline_locale": "fr-FR",
+   "screenshot_locale": "fr-FR",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3,
+    4
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback closeup2->closeup2 (closeup2: screen_area=0.23<0.24)"
+   ],
+   "line1": "Muet les jours fériés",
+   "line2": "Jour de travail ? Il sonne. Aperçu 7 jours",
+   "chips": [
+    "Jour de travail ? Il sonne. Aperçu 7 jours",
+    "Alarme qui sonne quand il faut"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.249,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        260,
+        72,
+        819,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.08,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        218,
+        184,
+        861,
+        630
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.22,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Muet les jours fériés\nJour de travail ? Il sonne. Aperçu 7 jours\n\n📲 Téléchargez-la via le lien dans la bio\n\n#EasyAM",
+   "caption_link": "Muet les jours fériés\nJour de travail ? Il sonne. Aperçu 7 jours\n\nApp Store: https://apps.apple.com/app/id6821790092\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/easyam/fr-FR.jpg"
+  },
+  {
+   "locale": "gu-IN",
+   "file": "easyam/gu-IN.jpg",
+   "intended_locale": "gu-IN",
+   "headline_locale": "gu-IN",
+   "screenshot_locale": "gu-IN",
+   "localized": true,
+   "screenshots_used": [
+    3,
+    4,
+    5
+   ],
+   "demo_language_check": {
+    "method": "ocr:guj",
+    "script_chars": 213,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "રજાના દિવસે એલાર્મ શાંત",
+   "line2": "કામના દિવસે ફરી વાગે, 7 દિવસ એક નજરમાં",
+   "chips": [
+    "કામના દિવસે ફરી વાગે, 7 દિવસ એક નજરમાં",
+    "કાલે વાગશે? ફક્ત કામના દિવસે"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.252,
+    "family": "closeup2",
+    "font": "NotoSansGujarati.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        260,
+        72,
+        820,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.08,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        82,
+        184,
+        997,
+        452
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.83,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        285,
+        476,
+        795,
+        567
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 13.62,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "રજાના દિવસે એલાર્મ શાંત\nકામના દિવસે ફરી વાગે, 7 દિવસ એક નજરમાં\n\n📲 બાયોમાંની લિંકથી ડાઉનલોડ કરો\n\n#EasyAM",
+   "caption_link": "રજાના દિવસે એલાર્મ શાંત\nકામના દિવસે ફરી વાગે, 7 દિવસ એક નજરમાં\n\nApp Store: https://apps.apple.com/app/id6821790092\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/easyam/gu-IN.jpg"
+  },
+  {
+   "locale": "he",
+   "file": "easyam/he.jpg",
+   "intended_locale": "he",
+   "headline_locale": "he",
+   "screenshot_locale": "he",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:heb",
+    "script_chars": 188,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "מעורר שמדלג על חגים",
+   "line2": "שותק בחופש ומצלצל בימי עבודה",
+   "chips": [
+    "שותק בחופש ומצלצל בימי עבודה",
+    "מדלג על חגים ועל ימי חופש"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.266,
+    "family": "closeup2",
+    "font": "NotoSansHebrew.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        259,
+        72,
+        821,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.14,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        79,
+        184,
+        1001,
+        418
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.89,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.3,
+        1.4
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        276,
+        442,
+        803,
+        527
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.82,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.4
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "מעורר שמדלג על חגים\nשותק בחופש ומצלצל בימי עבודה\n\n📲 הורדה דרך הקישור בביו\n\n#EasyAM",
+   "caption_link": "מעורר שמדלג על חגים\nשותק בחופש ומצלצל בימי עבודה\n\nApp Store: https://apps.apple.com/app/id6821790092\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/easyam/he.jpg"
+  },
+  {
+   "locale": "hi",
+   "file": "easyam/hi.jpg",
+   "intended_locale": "hi",
+   "headline_locale": "hi",
+   "screenshot_locale": "hi",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:hin",
+    "script_chars": 242,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "छुट्टी पर अलार्म चुप",
+   "line2": "काम के दिन बजे, अगले 7 दिन एक नज़र में",
+   "chips": [
+    "काम के दिन बजे, अगले 7 दिन एक नज़र में",
+    "कल बजेगा? सिर्फ़ काम के दिन"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.252,
+    "family": "closeup2",
+    "font": "NotoSansDevanagari.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        324,
+        72,
+        757,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.2,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        130,
+        184,
+        950,
+        566
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.23,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "छुट्टी पर अलार्म चुप\nकाम के दिन बजे, अगले 7 दिन एक नज़र में\n\n📲 बायो में दिए लिंक से डाउनलोड करें\n\n#EasyAM",
+   "caption_link": "छुट्टी पर अलार्म चुप\nकाम के दिन बजे, अगले 7 दिन एक नज़र में\n\nApp Store: https://apps.apple.com/app/id6821790092\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/easyam/hi.jpg"
+  },
+  {
+   "locale": "hr",
+   "file": "easyam/hr.jpg",
+   "intended_locale": "hr",
+   "headline_locale": "hr",
+   "screenshot_locale": "hr",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3,
+    4
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Za praznike šuti",
+   "line2": "Zvoni samo radnim danima",
+   "chips": [
+    "Zvoni samo radnim danima",
+    "Radni dani da, praznici ne"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.26,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        284,
+        72,
+        795,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.13,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        102,
+        184,
+        977,
+        432
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.75,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        266,
+        456,
+        814,
+        545
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.36,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "Za praznike šuti\nZvoni samo radnim danima\n\n📲 Preuzmi putem poveznice u biografiji (bio)\n\n#EasyAM",
+   "caption_link": "Za praznike šuti\nZvoni samo radnim danima\n\nApp Store: https://apps.apple.com/app/id6821790092\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/easyam/hr.jpg"
+  },
+  {
+   "locale": "hu",
+   "file": "easyam/hu.jpg",
+   "intended_locale": "hu",
+   "headline_locale": "hu",
+   "screenshot_locale": "hu",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3,
+    4
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback closeup2->closeup2 (closeup2: screen_area=0.225<0.24)"
+   ],
+   "line1": "Ünnepnapon hallgat",
+   "line2": "Munkanapon szól, szabadnapon nem",
+   "chips": [
+    "Munkanapon szól, szabadnapon nem",
+    "Munkanap igen, ünnepnap nem"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.242,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        279,
+        72,
+        801,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.1,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        185,
+        184,
+        895,
+        647
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.19,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Ünnepnapon hallgat\nMunkanapon szól, szabadnapon nem\n\n📲 Töltsd le a bio linkjéről\n\n#EasyAM",
+   "caption_link": "Ünnepnapon hallgat\nMunkanapon szól, szabadnapon nem\n\nApp Store: https://apps.apple.com/app/id6821790092\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/easyam/hu.jpg"
+  },
+  {
+   "locale": "id",
+   "file": "easyam/id.jpg",
+   "intended_locale": "id",
+   "headline_locale": "id",
+   "screenshot_locale": "id",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3,
+    4
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Libur? Alarm diam",
+   "line2": "Hari kerja berbunyi, lihat 7 hari ke depan",
+   "chips": [
+    "Hari kerja berbunyi, lihat 7 hari ke depan",
+    "Otomatis lewati libur nasional"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.283,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        256,
+        72,
+        823,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.08,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        97,
+        184,
+        983,
+        478
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.47,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "Libur? Alarm diam\nHari kerja berbunyi, lihat 7 hari ke depan\n\n📲 Unduh lewat link di bio\n\n#EasyAM",
+   "caption_link": "Libur? Alarm diam\nHari kerja berbunyi, lihat 7 hari ke depan\n\nApp Store: https://apps.apple.com/app/id6821790092\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/easyam/id.jpg"
+  },
+  {
+   "locale": "it",
+   "file": "easyam/it.jpg",
+   "intended_locale": "it",
+   "headline_locale": "it",
+   "screenshot_locale": "it",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3,
+    4
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Tace nei festivi",
+   "line2": "Giorni di lavoro? Suona. Vedi 7 giorni",
+   "chips": [
+    "Giorni di lavoro? Suona. Vedi 7 giorni",
+    "Salta festivi e ferie da sola"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.272,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        270,
+        72,
+        811,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.09,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        130,
+        184,
+        951,
+        509
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.06,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "Tace nei festivi\nGiorni di lavoro? Suona. Vedi 7 giorni\n\n📲 Scaricala dal link nella bio\n\n#EasyAM",
+   "caption_link": "Tace nei festivi\nGiorni di lavoro? Suona. Vedi 7 giorni\n\nApp Store: https://apps.apple.com/app/id6821790092\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/easyam/it.jpg"
+  },
+  {
+   "locale": "ja",
+   "file": "easyam/ja.jpg",
+   "intended_locale": "ja",
+   "headline_locale": "ja",
+   "screenshot_locale": "ja",
+   "localized": true,
+   "screenshots_used": [
+    4
+   ],
+   "demo_language_check": {
+    "method": "ocr:jpn",
+    "script_chars": 71,
+    "mixed_english_words": {
+     "1": [
+      "Cabinet",
+      "Office"
+     ],
+     "3": [
+      "Cabinet",
+      "Office",
+      "Cabinet",
+      "Office"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [1, 3] with mixed English strings [['Cabinet', 'Office'], ['Cabinet', 'Office', 'Cabinet', 'Office']]",
+    "layout fallback closeup2->closeup2 (closeup2: screen_area=0.231<0.24)"
+   ],
+   "line1": "祝日は鳴らない目覚まし",
+   "line2": "この先7日間の鳴る日がひと目で",
+   "chips": [
+    "この先7日間の鳴る日がひと目で"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.249,
+    "family": "closeup2",
+    "font": "NotoSansJP.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        89,
+        72,
+        991,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.79,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        158,
+        184,
+        921,
+        628
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.98,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "祝日は鳴らない目覚まし\nこの先7日間の鳴る日がひと目で\n\n📲 ダウンロードはプロフィール（bio）のリンクから\n\n#EasyAM",
+   "caption_link": "祝日は鳴らない目覚まし\nこの先7日間の鳴る日がひと目で\n\nApp Store: https://apps.apple.com/app/id6821790092\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/easyam/ja.jpg"
+  },
+  {
+   "locale": "kn-IN",
+   "file": "easyam/kn-IN.jpg",
+   "intended_locale": "kn-IN",
+   "headline_locale": "kn-IN",
+   "screenshot_locale": "kn-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:kan",
+    "script_chars": 257,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback closeup2->closeup2 (closeup2: screen_area=0.204<0.24; closeup2×1.08: screen_area=0.22<0.24; closeup2×1.16: screen_area=0.235<0.24)"
+   ],
+   "line1": "ರಜೆಯಲ್ಲಿ ಅಲಾರಂ ಸುಮ್ಮನೆ",
+   "line2": "ಕೆಲಸದ ದಿನ ಮಾತ್ರ ರಿಂಗ್ · ಮುಂದಿನ 7 ದಿನ",
+   "chips": [
+    "ಕೆಲಸದ ದಿನ ಮಾತ್ರ ರಿಂಗ್ · ಮುಂದಿನ 7 ದಿನ",
+    "ನಾಳೆ ರಿಂಗ್? ಕೆಲಸದ ದಿನ ಮಾತ್ರ"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.252,
+    "family": "closeup2",
+    "font": "NotoSansKannada.ttf",
+    "screen_ratio_vs_battai_split": 1.77,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        218,
+        72,
+        863,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.02,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        130,
+        184,
+        949,
+        708
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.3,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.25,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "ರಜೆಯಲ್ಲಿ ಅಲಾರಂ ಸುಮ್ಮನೆ\nಕೆಲಸದ ದಿನ ಮಾತ್ರ ರಿಂಗ್ · ಮುಂದಿನ 7 ದಿನ\n\n📲 ಬಯೋದಲ್ಲಿರುವ ಲಿಂಕ್‌ನಿಂದ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ\n\n#EasyAM",
+   "caption_link": "ರಜೆಯಲ್ಲಿ ಅಲಾರಂ ಸುಮ್ಮನೆ\nಕೆಲಸದ ದಿನ ಮಾತ್ರ ರಿಂಗ್ · ಮುಂದಿನ 7 ದಿನ\n\nApp Store: https://apps.apple.com/app/id6821790092\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/easyam/kn-IN.jpg"
+  },
+  {
+   "locale": "ko",
+   "file": "easyam/ko.jpg",
+   "intended_locale": "ko",
+   "headline_locale": "ko",
+   "screenshot_locale": "ko",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3,
+    4
+   ],
+   "demo_language_check": {
+    "method": "ocr:kor",
+    "script_chars": 76,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "공휴일엔 알아서 조용히",
+   "line2": "앞으로 7일 울리는 날을 한눈에",
+   "chips": [
+    "앞으로 7일 울리는 날을 한눈에"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.304,
+    "family": "closeup2",
+    "font": "NotoSansKR.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        267,
+        72,
+        813,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.09,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        83,
+        184,
+        997,
+        416
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.94,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "공휴일엔 알아서 조용히\n앞으로 7일 울리는 날을 한눈에\n\n📲 다운로드는 프로필(bio) 링크에서\n\n#EasyAM",
+   "caption_link": "공휴일엔 알아서 조용히\n앞으로 7일 울리는 날을 한눈에\n\nApp Store: https://apps.apple.com/app/id6821790092\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/easyam/ko.jpg"
+  },
+  {
+   "locale": "ml-IN",
+   "file": "easyam/ml-IN.jpg",
+   "intended_locale": "ml-IN",
+   "headline_locale": "ml-IN",
+   "screenshot_locale": "ml-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:mal",
+    "script_chars": 240,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback closeup2->closeup2 (closeup2: screen_area=0.199<0.24; closeup2×1.08: screen_area=0.214<0.24; closeup2×1.16: screen_area=0.23<0.24)"
+   ],
+   "line1": "അവധിക്ക് നിശബ്ദം",
+   "line2": "ജോലി ദിവസം മാത്രം മുഴങ്ങും",
+   "chips": [
+    "ജോലി ദിവസം മാത്രം മുഴങ്ങും"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.246,
+    "family": "closeup2",
+    "font": "NotoSansMalayalam.ttf",
+    "screen_ratio_vs_battai_split": 1.77,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        210,
+        72,
+        869,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.02,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        212,
+        184,
+        867,
+        722
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.36,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.25,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "അവധിക്ക് നിശബ്ദം\nജോലി ദിവസം മാത്രം മുഴങ്ങും\n\n📲 ബയോയിലെ ലിങ്ക് വഴി ഡൗൺലോഡ് ചെയ്യുക\n\n#EasyAM",
+   "caption_link": "അവധിക്ക് നിശബ്ദം\nജോലി ദിവസം മാത്രം മുഴങ്ങും\n\nApp Store: https://apps.apple.com/app/id6821790092\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/easyam/ml-IN.jpg"
+  },
+  {
+   "locale": "mr-IN",
+   "file": "easyam/mr-IN.jpg",
+   "intended_locale": "mr-IN",
+   "headline_locale": "mr-IN",
+   "screenshot_locale": "mr-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:mar",
+    "script_chars": 209,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "सुट्टीत अलार्म शांत",
+   "line2": "कामाच्या दिवशी वाजतो, पुढचे 7 दिवस एका नजरेत",
+   "chips": [
+    "कामाच्या दिवशी वाजतो, पुढचे 7 दिवस एका नजरेत",
+    "कामाच्या दिवशीच वाजणारा गजर"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.25,
+    "family": "closeup2",
+    "font": "NotoSansDevanagari.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        302,
+        72,
+        779,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.15,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        148,
+        184,
+        933,
+        574
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.66,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "सुट्टीत अलार्म शांत\nकामाच्या दिवशी वाजतो, पुढचे 7 दिवस एका नजरेत\n\n📲 बायोमधील लिंकवरून डाउनलोड करा\n\n#EasyAM",
+   "caption_link": "सुट्टीत अलार्म शांत\nकामाच्या दिवशी वाजतो, पुढचे 7 दिवस एका नजरेत\n\nApp Store: https://apps.apple.com/app/id6821790092\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/easyam/mr-IN.jpg"
+  },
+  {
+   "locale": "ms",
+   "file": "easyam/ms.jpg",
+   "intended_locale": "ms",
+   "headline_locale": "ms",
+   "screenshot_locale": "ms",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback closeup2->closeup2 (closeup2: screen_area=0.23<0.24)"
+   ],
+   "line1": "Cuti? Penggera senyap",
+   "line2": "Hari kerja berbunyi, lihat 7 hari akan datang",
+   "chips": [
+    "Hari kerja berbunyi, lihat 7 hari akan datang",
+    "Penggera senyap pada cuti umum"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.248,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        248,
+        72,
+        833,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.08,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        126,
+        184,
+        955,
+        631
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.34,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Cuti? Penggera senyap\nHari kerja berbunyi, lihat 7 hari akan datang\n\n📲 Muat turun melalui pautan dalam bio\n\n#EasyAM",
+   "caption_link": "Cuti? Penggera senyap\nHari kerja berbunyi, lihat 7 hari akan datang\n\nApp Store: https://apps.apple.com/app/id6821790092\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/easyam/ms.jpg"
+  },
+  {
+   "locale": "nl-NL",
+   "file": "easyam/nl-NL.jpg",
+   "intended_locale": "nl-NL",
+   "headline_locale": "nl-NL",
+   "screenshot_locale": "nl-NL",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Feestdag? Blijft stil",
+   "line2": "Werkdagen gaan af, 7 dagen vooruit",
+   "chips": [
+    "Werkdagen gaan af, 7 dagen vooruit",
+    "Stil op feestdagen en vakantie"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.263,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        228,
+        72,
+        853,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.03,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        80,
+        184,
+        999,
+        421
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.88,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        225,
+        445,
+        855,
+        534
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.91,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "Feestdag? Blijft stil\nWerkdagen gaan af, 7 dagen vooruit\n\n📲 Download via de link in bio\n\n#EasyAM",
+   "caption_link": "Feestdag? Blijft stil\nWerkdagen gaan af, 7 dagen vooruit\n\nApp Store: https://apps.apple.com/app/id6821790092\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/easyam/nl-NL.jpg"
+  },
+  {
+   "locale": "no",
+   "file": "easyam/no.jpg",
+   "intended_locale": "no",
+   "headline_locale": "no",
+   "screenshot_locale": "no",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback closeup2->closeup2 (closeup2: screen_area=0.227<0.24)"
+   ],
+   "line1": "Stille på helligdager",
+   "line2": "Ringer igjen første arbeidsdag",
+   "chips": [
+    "Ringer igjen første arbeidsdag",
+    "Stille på helligdager og ferie"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.245,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        246,
+        72,
+        834,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.08,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        219,
+        184,
+        861,
+        639
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.85,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Stille på helligdager\nRinger igjen første arbeidsdag\n\n📲 Last ned via lenken i bio\n\n#EasyAM",
+   "caption_link": "Stille på helligdager\nRinger igjen første arbeidsdag\n\nApp Store: https://apps.apple.com/app/id6821790092\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/easyam/no.jpg"
+  },
+  {
+   "locale": "or-IN",
+   "file": "easyam/or-IN.jpg",
+   "intended_locale": "or-IN",
+   "headline_locale": "or-IN",
+   "screenshot_locale": "or-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    4
+   ],
+   "demo_language_check": {
+    "method": "ocr:ori",
+    "script_chars": 230,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "ଛୁଟି ଦିନେ ଆଲାର୍ମ ଚୁପ୍",
+   "line2": "କାମ ଦିନ ପୁଣି ବାଜେ, 7 ଦିନ ଗୋଟିଏ ନଜରରେ",
+   "chips": [
+    "କାମ ଦିନ ପୁଣି ବାଜେ, 7 ଦିନ ଗୋଟିଏ ନଜରରେ",
+    "କାମ ଦିନରେ ବାଜେ, ଛୁଟିରେ ଚୁପ"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.284,
+    "family": "closeup2",
+    "font": "NotoSansOriya.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        319,
+        72,
+        761,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.17,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        89,
+        184,
+        991,
+        475
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 96,
+        "sub": 48,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.94,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "ଛୁଟି ଦିନେ ଆଲାର୍ମ ଚୁପ୍\nକାମ ଦିନ ପୁଣି ବାଜେ, 7 ଦିନ ଗୋଟିଏ ନଜରରେ\n\n📲 ବାୟୋରେ ଥିବା ଲିଙ୍କରୁ ଡାଉନଲୋଡ୍ କରନ୍ତୁ\n\n#EasyAM",
+   "caption_link": "ଛୁଟି ଦିନେ ଆଲାର୍ମ ଚୁପ୍\nକାମ ଦିନ ପୁଣି ବାଜେ, 7 ଦିନ ଗୋଟିଏ ନଜରରେ\n\nApp Store: https://apps.apple.com/app/id6821790092\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/easyam/or-IN.jpg"
+  },
+  {
+   "locale": "pa-IN",
+   "file": "easyam/pa-IN.jpg",
+   "intended_locale": "pa-IN",
+   "headline_locale": "pa-IN",
+   "screenshot_locale": "pa-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:pan",
+    "script_chars": 181,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback closeup2->closeup2 (closeup2: screen_area=0.203<0.24; closeup2×1.08: screen_area=0.219<0.24; closeup2×1.16: screen_area=0.234<0.24)"
+   ],
+   "line1": "ਛੁੱਟੀ ਵਾਲੇ ਦਿਨ ਅਲਾਰਮ ਚੁੱਪ",
+   "line2": "ਕੰਮ ਵਾਲੇ ਦਿਨ ਫਿਰ ਵੱਜੇ, 7 ਦਿਨ ਇੱਕ ਨਜ਼ਰ ਵਿੱਚ",
+   "chips": [
+    "ਕੰਮ ਵਾਲੇ ਦਿਨ ਫਿਰ ਵੱਜੇ, 7 ਦਿਨ ਇੱਕ ਨਜ਼ਰ ਵਿੱਚ",
+    "ਸਿਰਫ਼ ਕੰਮ ਵਾਲੇ ਦਿਨ ਵੱਜਦਾ ਹੈ"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.251,
+    "family": "closeup2",
+    "font": "NotoSansGurmukhi.ttf",
+    "screen_ratio_vs_battai_split": 1.77,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        312,
+        72,
+        769,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.16,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        232,
+        184,
+        847,
+        711
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.42,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.25,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "ਛੁੱਟੀ ਵਾਲੇ ਦਿਨ ਅਲਾਰਮ ਚੁੱਪ\nਕੰਮ ਵਾਲੇ ਦਿਨ ਫਿਰ ਵੱਜੇ, 7 ਦਿਨ ਇੱਕ ਨਜ਼ਰ ਵਿੱਚ\n\n📲 ਬਾਇਓ ਵਿੱਚ ਦਿੱਤੇ ਲਿੰਕ ਤੋਂ ਡਾਊਨਲੋਡ ਕਰੋ\n\n#EasyAM",
+   "caption_link": "ਛੁੱਟੀ ਵਾਲੇ ਦਿਨ ਅਲਾਰਮ ਚੁੱਪ\nਕੰਮ ਵਾਲੇ ਦਿਨ ਫਿਰ ਵੱਜੇ, 7 ਦਿਨ ਇੱਕ ਨਜ਼ਰ ਵਿੱਚ\n\nApp Store: https://apps.apple.com/app/id6821790092\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/easyam/pa-IN.jpg"
+  },
+  {
+   "locale": "pl",
+   "file": "easyam/pl.jpg",
+   "intended_locale": "pl",
+   "headline_locale": "pl",
+   "screenshot_locale": "pl",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3,
+    4
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Cisza w święta",
+   "line2": "Zadzwoni w pierwszy dzień pracy",
+   "chips": [
+    "Zadzwoni w pierwszy dzień pracy",
+    "Pomija święta, urlop i wolne"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.272,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        249,
+        72,
+        831,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.08,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        141,
+        184,
+        939,
+        509
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.14,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "Cisza w święta\nZadzwoni w pierwszy dzień pracy\n\n📲 Pobierz przez link w bio\n\n#EasyAM",
+   "caption_link": "Cisza w święta\nZadzwoni w pierwszy dzień pracy\n\nApp Store: https://apps.apple.com/app/id6821790092\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/easyam/pl.jpg"
+  },
+  {
+   "locale": "pt-BR",
+   "file": "easyam/pt-BR.jpg",
+   "intended_locale": "pt-BR",
+   "headline_locale": "pt-BR",
+   "screenshot_locale": "pt-BR",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Feriado? Não toca",
+   "line2": "Dia útil toca, prévia de 7 dias",
+   "chips": [
+    "Dia útil toca, prévia de 7 dias",
+    "Alarme que só toca em dia útil"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.261,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        237,
+        72,
+        843,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.05,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        87,
+        184,
+        993,
+        427
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 96,
+        "sub": 48,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.84,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        224,
+        451,
+        855,
+        540
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.12,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "Feriado? Não toca\nDia útil toca, prévia de 7 dias\n\n📲 Baixe pelo link na bio\n\n#EasyAM",
+   "caption_link": "Feriado? Não toca\nDia útil toca, prévia de 7 dias\n\nApp Store: https://apps.apple.com/app/id6821790092\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/easyam/pt-BR.jpg"
+  },
+  {
+   "locale": "pt-PT",
+   "file": "easyam/pt-PT.jpg",
+   "intended_locale": "pt-PT",
+   "headline_locale": "pt-PT",
+   "screenshot_locale": "pt-PT",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3,
+    4
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Feriado? Não toca",
+   "line2": "Dias úteis sim, com os próximos 7 dias à vista",
+   "chips": [
+    "Dias úteis sim, com os próximos 7 dias à vista",
+    "Dias úteis sim, feriados não"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.279,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        249,
+        72,
+        831,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.08,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        87,
+        184,
+        993,
+        487
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 96,
+        "sub": 48,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.34,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "Feriado? Não toca\nDias úteis sim, com os próximos 7 dias à vista\n\n📲 Download via the link in bio\n\n#EasyAM",
+   "caption_link": "Feriado? Não toca\nDias úteis sim, com os próximos 7 dias à vista\n\nApp Store: https://apps.apple.com/app/id6821790092\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday",
+   "cta_source": "en-fallback",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/easyam/pt-PT.jpg"
+  },
+  {
+   "locale": "ro",
+   "file": "easyam/ro.jpg",
+   "intended_locale": "ro",
+   "headline_locale": "ro",
+   "screenshot_locale": "ro",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Tace de sărbători",
+   "line2": "Sună doar în zilele lucrătoare",
+   "chips": [
+    "Sună doar în zilele lucrătoare",
+    "Alarma care tace de sărbători"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.263,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        286,
+        72,
+        795,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.13,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        87,
+        184,
+        993,
+        426
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 100,
+        "sub": 50,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.82,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        232,
+        450,
+        848,
+        535
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.12,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "Tace de sărbători\nSună doar în zilele lucrătoare\n\n📲 Descarcă din linkul din bio\n\n#EasyAM",
+   "caption_link": "Tace de sărbători\nSună doar în zilele lucrătoare\n\nApp Store: https://apps.apple.com/app/id6821790092\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/easyam/ro.jpg"
+  },
+  {
+   "locale": "ru",
+   "file": "easyam/ru.jpg",
+   "intended_locale": "ru",
+   "headline_locale": "ru",
+   "screenshot_locale": "ru",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3,
+    4
+   ],
+   "demo_language_check": {
+    "method": "ocr:rus",
+    "script_chars": 223,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback closeup2->closeup2 (closeup2: screen_area=0.232<0.24)"
+   ],
+   "line1": "В праздники молчит",
+   "line2": "Ближайшие 7 дней видно сразу",
+   "chips": [
+    "Ближайшие 7 дней видно сразу",
+    "Звонит в будни, не в праздники"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.25,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        210,
+        72,
+        870,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.02,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        179,
+        184,
+        901,
+        625
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.05,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "В праздники молчит\nБлижайшие 7 дней видно сразу\n\n📲 Скачать можно по ссылке в профиле (bio)\n\n#EasyAM",
+   "caption_link": "В праздники молчит\nБлижайшие 7 дней видно сразу\n\nApp Store: https://apps.apple.com/app/id6821790092\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/easyam/ru.jpg"
+  },
+  {
+   "locale": "sk",
+   "file": "easyam/sk.jpg",
+   "intended_locale": "sk",
+   "headline_locale": "sk",
+   "screenshot_locale": "sk",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3,
+    4
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback closeup2->closeup2 (closeup2: screen_area=0.23<0.24)"
+   ],
+   "line1": "Budík pozná sviatky",
+   "line2": "Cez sviatky mlčí, v pracovné dni zvoní",
+   "chips": [
+    "Cez sviatky mlčí, v pracovné dni zvoní",
+    "Sám preskočí sviatky aj voľno"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.248,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        246,
+        72,
+        834,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.08,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        201,
+        184,
+        879,
+        631
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.19,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Budík pozná sviatky\nCez sviatky mlčí, v pracovné dni zvoní\n\n📲 Stiahnite si ju cez odkaz v profile (bio)\n\n#EasyAM",
+   "caption_link": "Budík pozná sviatky\nCez sviatky mlčí, v pracovné dni zvoní\n\nApp Store: https://apps.apple.com/app/id6821790092\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/easyam/sk.jpg"
+  },
+  {
+   "locale": "sl-SI",
+   "file": "easyam/sl-SI.jpg",
+   "intended_locale": "sl-SI",
+   "headline_locale": "sl-SI",
+   "screenshot_locale": "sl-SI",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3,
+    4
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Ob praznikih molči",
+   "line2": "Zvoni samo ob delovnih dneh",
+   "chips": [
+    "Zvoni samo ob delovnih dneh",
+    "Delovni dnevi da, prazniki ne"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.267,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        288,
+        72,
+        793,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.13,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        86,
+        184,
+        995,
+        410
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.89,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        239,
+        434,
+        841,
+        523
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.88,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "Ob praznikih molči\nZvoni samo ob delovnih dneh\n\n📲 Prenesite prek povezave v biu\n\n#EasyAM",
+   "caption_link": "Ob praznikih molči\nZvoni samo ob delovnih dneh\n\nApp Store: https://apps.apple.com/app/id6821790092\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/easyam/sl-SI.jpg"
+  },
+  {
+   "locale": "sv",
+   "file": "easyam/sv.jpg",
+   "intended_locale": "sv",
+   "headline_locale": "sv",
+   "screenshot_locale": "sv",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3,
+    4
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Tyst på röda dagar",
+   "line2": "Ringer igen första arbetsdagen",
+   "chips": [
+    "Ringer igen första arbetsdagen",
+    "Tyst på helgdagar och semester"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.261,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        249,
+        72,
+        831,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.08,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        86,
+        184,
+        995,
+        427
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.94,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        210,
+        451,
+        870,
+        540
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.15,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "Tyst på röda dagar\nRinger igen första arbetsdagen\n\n📲 Ladda ner via länken i bion\n\n#EasyAM",
+   "caption_link": "Tyst på röda dagar\nRinger igen första arbetsdagen\n\nApp Store: https://apps.apple.com/app/id6821790092\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/easyam/sv.jpg"
+  },
+  {
+   "locale": "ta-IN",
+   "file": "easyam/ta-IN.jpg",
+   "intended_locale": "ta-IN",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:tam",
+    "script_chars": 270,
+    "mixed_english_words": {},
+    "all_used_screens_localized": false
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "no layout fits the hard minimum font sizes with the localized copy; whole card in en-US"
+   ],
+   "line1": "Skips Holidays on Its Own",
+   "line2": "Still rings on every workday",
+   "chips": [
+    "Still rings on every workday",
+    "Rings for work, skips days off"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.252,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        262,
+        72,
+        819,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.08,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        142,
+        184,
+        939,
+        566
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.51,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "Skips Holidays on Its Own\nStill rings on every workday\n\n📲 Download via the link in bio\n\n#EasyAM",
+   "caption_link": "Skips Holidays on Its Own\nStill rings on every workday\n\nApp Store: https://apps.apple.com/app/id6821790092\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/easyam/ta-IN.jpg"
+  },
+  {
+   "locale": "te-IN",
+   "file": "easyam/te-IN.jpg",
+   "intended_locale": "te-IN",
+   "headline_locale": "te-IN",
+   "screenshot_locale": "te-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:tel",
+    "script_chars": 246,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "సెలవులో మౌనం",
+   "line2": "పని రోజుల్లో మాత్రమే మోగుతుంది · 7 రోజులు",
+   "chips": [
+    "పని రోజుల్లో మాత్రమే మోగుతుంది · 7 రోజులు"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.254,
+    "family": "closeup2",
+    "font": "NotoSansTelugu.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        251,
+        72,
+        829,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.08,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        158,
+        184,
+        923,
+        560
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.97,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "సెలవులో మౌనం\nపని రోజుల్లో మాత్రమే మోగుతుంది · 7 రోజులు\n\n📲 బయోలోని లింక్ ద్వారా డౌన్‌లోడ్ చేయండి\n\n#EasyAM",
+   "caption_link": "సెలవులో మౌనం\nపని రోజుల్లో మాత్రమే మోగుతుంది · 7 రోజులు\n\nApp Store: https://apps.apple.com/app/id6821790092\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/easyam/te-IN.jpg"
+  },
+  {
+   "locale": "th",
+   "file": "easyam/th.jpg",
+   "intended_locale": "th",
+   "headline_locale": "th",
+   "screenshot_locale": "th",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3,
+    4
+   ],
+   "demo_language_check": {
+    "method": "ocr:tha",
+    "script_chars": 235,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "วันหยุด ปลุกเงียบเอง",
+   "line2": "ดังเฉพาะวันทำงาน ไม่ต้องปิดเอง",
+   "chips": [
+    "ดังเฉพาะวันทำงาน ไม่ต้องปิดเอง"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.293,
+    "family": "closeup2",
+    "font": "NotoSansThai.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        268,
+        72,
+        812,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.09,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        90,
+        184,
+        990,
+        447
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 96,
+        "sub": 48,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.94,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "วันหยุด ปลุกเงียบเอง\nดังเฉพาะวันทำงาน ไม่ต้องปิดเอง\n\n📲 ดาวน์โหลดได้ที่ลิงก์ในโปรไฟล์ (bio)\n\n#EasyAM",
+   "caption_link": "วันหยุด ปลุกเงียบเอง\nดังเฉพาะวันทำงาน ไม่ต้องปิดเอง\n\nApp Store: https://apps.apple.com/app/id6821790092\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/easyam/th.jpg"
+  },
+  {
+   "locale": "tr",
+   "file": "easyam/tr.jpg",
+   "intended_locale": "tr",
+   "headline_locale": "tr",
+   "screenshot_locale": "tr",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3,
+    4
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Tatilde susar",
+   "line2": "Önümüzdeki 7 gün tek bakışta",
+   "chips": [
+    "Önümüzdeki 7 gün tek bakışta",
+    "Tatil ve izinde susan alarm"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.272,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        298,
+        72,
+        783,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.15,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        183,
+        184,
+        897,
+        509
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.91,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "Tatilde susar\nÖnümüzdeki 7 gün tek bakışta\n\n📲 Biyografideki bağlantıdan indirin\n\n#EasyAM",
+   "caption_link": "Tatilde susar\nÖnümüzdeki 7 gün tek bakışta\n\nApp Store: https://apps.apple.com/app/id6821790092\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/easyam/tr.jpg"
+  },
+  {
+   "locale": "uk",
+   "file": "easyam/uk.jpg",
+   "intended_locale": "uk",
+   "headline_locale": "uk",
+   "screenshot_locale": "uk",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3,
+    4
+   ],
+   "demo_language_check": {
+    "method": "ocr:ukr",
+    "script_chars": 252,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "У свята мовчить",
+   "line2": "Найближчі 7 днів видно одразу",
+   "chips": [
+    "Найближчі 7 днів видно одразу",
+    "Будить лише в робочі дні"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.26,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        274,
+        72,
+        805,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.09,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        89,
+        184,
+        991,
+        431
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 100,
+        "sub": 50,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.88,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        262,
+        455,
+        819,
+        544
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.29,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "У свята мовчить\nНайближчі 7 днів видно одразу\n\n📲 Завантажуйте за посиланням у профілі (bio)\n\n#EasyAM",
+   "caption_link": "У свята мовчить\nНайближчі 7 днів видно одразу\n\nApp Store: https://apps.apple.com/app/id6821790092\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/easyam/uk.jpg"
+  },
+  {
+   "locale": "ur-PK",
+   "file": "easyam/ur-PK.jpg",
+   "intended_locale": "ur-PK",
+   "headline_locale": "ur-PK",
+   "screenshot_locale": "ur-PK",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:urd",
+    "script_chars": 75,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "چھٹی پر الارم خاموش",
+   "line2": "کام کے دن بجے، اگلے سات دن ایک نظر میں",
+   "chips": [
+    "کام کے دن بجے، اگلے سات دن ایک نظر میں",
+    "کام کے دن بجے، چھٹی پر نہیں"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.247,
+    "family": "closeup2",
+    "font": "NotoSansArabic.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        278,
+        72,
+        803,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.16,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        80,
+        184,
+        1000,
+        466
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.0,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.3,
+        1.4
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        276,
+        490,
+        805,
+        581
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 15.38,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.4
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "چھٹی پر الارم خاموش\nکام کے دن بجے، اگلے سات دن ایک نظر میں\n\n📲 بائیو میں دیے گئے لنک سے ڈاؤن لوڈ کریں\n\n#EasyAM",
+   "caption_link": "چھٹی پر الارم خاموش\nکام کے دن بجے، اگلے سات دن ایک نظر میں\n\nApp Store: https://apps.apple.com/app/id6821790092\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/easyam/ur-PK.jpg"
+  },
+  {
+   "locale": "vi",
+   "file": "easyam/vi.jpg",
+   "intended_locale": "vi",
+   "headline_locale": "vi",
+   "screenshot_locale": "vi",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3,
+    4
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Nghỉ lễ tự tắt",
+   "line2": "Xem trước 7 ngày tới",
+   "chips": [
+    "Xem trước 7 ngày tới",
+    "Nghỉ lễ tự tắt, đi làm tự reo"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.251,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        254,
+        72,
+        826,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.08,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        166,
+        184,
+        914,
+        456
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.85,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        250,
+        480,
+        829,
+        570
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 14.11,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "Nghỉ lễ tự tắt\nXem trước 7 ngày tới\n\n📲 Tải về qua link ở bio\n\n#EasyAM",
+   "caption_link": "Nghỉ lễ tự tắt\nXem trước 7 ngày tới\n\nApp Store: https://apps.apple.com/app/id6821790092\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/easyam/vi.jpg"
+  },
+  {
+   "locale": "zh-Hans",
+   "file": "easyam/zh-Hans.jpg",
+   "intended_locale": "zh-Hans",
+   "headline_locale": "zh-Hans",
+   "screenshot_locale": "zh-Hans",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3,
+    4
+   ],
+   "demo_language_check": {
+    "method": "ocr:chi_sim",
+    "script_chars": 88,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "节假日自动不响",
+   "line2": "调休补班照常叫醒",
+   "chips": [
+    "调休补班照常叫醒"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.295,
+    "family": "closeup2",
+    "font": "NotoSansSC.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        184,
+        72,
+        895,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.97,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        160,
+        184,
+        920,
+        441
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.47,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "节假日自动不响\n调休补班照常叫醒\n\n📲 请到个人主页（bio）的链接下载\n\n#EasyAM",
+   "caption_link": "节假日自动不响\n调休补班照常叫醒\n\nApp Store: https://apps.apple.com/app/id6821790092\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/easyam/zh-Hans.jpg"
+  },
+  {
+   "locale": "zh-Hant",
+   "file": "easyam/zh-Hant.jpg",
+   "intended_locale": "zh-Hant",
+   "headline_locale": "zh-Hant",
+   "screenshot_locale": "zh-Hant",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3,
+    4
+   ],
+   "demo_language_check": {
+    "method": "ocr:chi_tra",
+    "script_chars": 77,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "國定假日自動不響",
+   "line2": "補班日照響・看得到七天",
+   "chips": [
+    "補班日照響・看得到七天"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.295,
+    "family": "closeup2",
+    "font": "NotoSansTC.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        200,
+        72,
+        880,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.99,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        109,
+        184,
+        971,
+        443
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.63,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "國定假日自動不響\n補班日照響・看得到七天\n\n📲 請到個人檔案（bio）的連結下載\n\n#EasyAM",
+   "caption_link": "國定假日自動不響\n補班日照響・看得到七天\n\nApp Store: https://apps.apple.com/app/id6821790092\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/easyam/zh-Hant.jpg"
+  }
+ ]
+}

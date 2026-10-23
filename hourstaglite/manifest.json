@@ -1,0 +1,5506 @@
+{
+ "schema": "lumi.promo_cards/v1",
+ "app": "hourstaglite",
+ "app_id": "6794039979",
+ "app_store_url": "https://apps.apple.com/app/id6794039979",
+ "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite",
+ "size": [
+  1080,
+  1350
+ ],
+ "built": "2026-10-23",
+ "items": [
+  {
+   "locale": "ar-SA",
+   "file": "hourstaglite/ar-SA.jpg",
+   "intended_locale": "ar-SA",
+   "headline_locale": "ar-SA",
+   "screenshot_locale": "ar-SA",
+   "localized": true,
+   "screenshots_used": [
+    0
+   ],
+   "demo_language_check": {
+    "method": "ocr:ara",
+    "script_chars": 280,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "line1 replaced (forbidden wording)",
+    "headline shortened to a shorter store hook: نوع: احتياج - رغبة - اندفاع",
+    "layout fallback closeup2->closeup2 (closeup2: text does not fit at minimum sizes; closeup2: screen_area=0.233<0.24)"
+   ],
+   "line1": "نوع: احتياج - رغبة - اندفاع",
+   "line2": "احتياج أو رغبة أو اندفاع",
+   "chips": [
+    "احتياج أو رغبة أو اندفاع",
+    "نوع: احتياج - رغبة - اندفاع",
+    "نمط قيمتك - تحليل القيمة الكامل"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.251,
+    "family": "closeup2",
+    "font": "NotoSansArabic.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        380,
+        72,
+        701,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.2,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        236,
+        184,
+        844,
+        622
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.04,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.3,
+        1.4
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "نوع: احتياج - رغبة - اندفاع\nاحتياج أو رغبة أو اندفاع\n\n📲 حمّله من الرابط في الملف الشخصي (bio)\n\n#HoursTagLite",
+   "caption_link": "نوع: احتياج - رغبة - اندفاع\nاحتياج أو رغبة أو اندفاع\n\nApp Store: https://apps.apple.com/app/id6794039979\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/hourstaglite/ar-SA.jpg"
+  },
+  {
+   "locale": "bn-BD",
+   "file": "hourstaglite/bn-BD.jpg",
+   "intended_locale": "bn-BD",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    0
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": false
+   },
+   "screen_text_flags": {
+    "0": [
+     "$1",
+     "$4",
+     "$8"
+    ]
+   },
+   "warnings": [
+    "no localized storefront screenshot (English-only or lookup failed); whole card in en-US",
+    "screen text flags remain (no clean screenshot available): {0: ['$1', '$4', '$8']}",
+    "layout fallback closeup2->closeup2 (closeup2: screen_area=0.23<0.24)"
+   ],
+   "line1": "Check the Hours First",
+   "line2": "Then tag it Need, Want or Impulse",
+   "chips": [
+    "Then tag it Need, Want or Impulse",
+    "Stop Impulse Buying & Save",
+    "Type: Need - Want - Impulse"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.249,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        379,
+        72,
+        701,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.25,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        234,
+        184,
+        846,
+        630
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.06,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Check the Hours First\nThen tag it Need, Want or Impulse\n\n📲 Download via the link in bio\n\n#HoursTagLite",
+   "caption_link": "Check the Hours First\nThen tag it Need, Want or Impulse\n\nApp Store: https://apps.apple.com/app/id6794039979\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/hourstaglite/bn-BD.jpg"
+  },
+  {
+   "locale": "ca",
+   "file": "hourstaglite/ca.jpg",
+   "intended_locale": "ca",
+   "headline_locale": "ca",
+   "screenshot_locale": "ca",
+   "localized": true,
+   "screenshots_used": [
+    0
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback closeup2->closeup2 (closeup2: screen_area=0.23<0.24)"
+   ],
+   "line1": "Abans, mira les hores",
+   "line2": "Necessitat, desig o impuls",
+   "chips": [
+    "Necessitat, desig o impuls",
+    "Tipus: Necessitat - Desig - Impuls"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.248,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        379,
+        72,
+        701,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.25,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        206,
+        184,
+        874,
+        631
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.99,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Abans, mira les hores\nNecessitat, desig o impuls\n\n📲 Descarrega-la des de l'enllaç de la bio\n\n#HoursTagLite",
+   "caption_link": "Abans, mira les hores\nNecessitat, desig o impuls\n\nApp Store: https://apps.apple.com/app/id6794039979\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/hourstaglite/ca.jpg"
+  },
+  {
+   "locale": "cs",
+   "file": "hourstaglite/cs.jpg",
+   "intended_locale": "cs",
+   "headline_locale": "cs",
+   "screenshot_locale": "cs",
+   "localized": true,
+   "screenshots_used": [
+    0
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "line1 replaced (forbidden wording)"
+   ],
+   "line1": "Typ: Potřeba - Chci - Impuls",
+   "line2": "Potřeba, chci, nebo impuls?",
+   "chips": [
+    "Potřeba, chci, nebo impuls?"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.252,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        379,
+        72,
+        701,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.25,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        159,
+        184,
+        921,
+        566
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.83,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "Typ: Potřeba - Chci - Impuls\nPotřeba, chci, nebo impuls?\n\n📲 Stáhněte si ji přes odkaz v profilu (bio)\n\n#HoursTagLite",
+   "caption_link": "Typ: Potřeba - Chci - Impuls\nPotřeba, chci, nebo impuls?\n\nApp Store: https://apps.apple.com/app/id6794039979\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/hourstaglite/cs.jpg"
+  },
+  {
+   "locale": "da",
+   "file": "hourstaglite/da.jpg",
+   "intended_locale": "da",
+   "headline_locale": "da",
+   "screenshot_locale": "da",
+   "localized": true,
+   "screenshots_used": [
+    0
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Hvert køb koster timer",
+   "line2": "Behov, ønske eller impuls",
+   "chips": [
+    "Behov, ønske eller impuls",
+    "Tidspris: Din nettoværdi pr. arbejdstime",
+    "Type: Behov - Ønske - Impuls"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.253,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        379,
+        72,
+        701,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.25,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        190,
+        184,
+        891,
+        565
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.96,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "Hvert køb koster timer\nBehov, ønske eller impuls\n\n📲 Download via linket i bio\n\n#HoursTagLite",
+   "caption_link": "Hvert køb koster timer\nBehov, ønske eller impuls\n\nApp Store: https://apps.apple.com/app/id6794039979\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/hourstaglite/da.jpg"
+  },
+  {
+   "locale": "de-DE",
+   "file": "hourstaglite/de-DE.jpg",
+   "intended_locale": "de-DE",
+   "headline_locale": "de-DE",
+   "screenshot_locale": "de-DE",
+   "localized": true,
+   "screenshots_used": [
+    0
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "line1 replaced (forbidden wording)"
+   ],
+   "line1": "Impulskäufe stoppen & sparen",
+   "line2": "Bedarf, Wunsch oder Impuls?",
+   "chips": [
+    "Bedarf, Wunsch oder Impuls?",
+    "Typ: Bedarf - Wunsch - Impuls"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.257,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        379,
+        72,
+        701,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.25,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        78,
+        184,
+        1003,
+        553
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 100,
+        "sub": 50,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.63,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "Impulskäufe stoppen & sparen\nBedarf, Wunsch oder Impuls?\n\n📲 Download über den Link in der Bio\n\n#HoursTagLite",
+   "caption_link": "Impulskäufe stoppen & sparen\nBedarf, Wunsch oder Impuls?\n\nApp Store: https://apps.apple.com/app/id6794039979\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/hourstaglite/de-DE.jpg"
+  },
+  {
+   "locale": "el",
+   "file": "hourstaglite/el.jpg",
+   "intended_locale": "el",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    0
+   ],
+   "demo_language_check": {
+    "method": "ocr:ell",
+    "script_chars": 365,
+    "mixed_english_words": {},
+    "all_used_screens_localized": false
+   },
+   "screen_text_flags": {
+    "0": [
+     "$1",
+     "$4",
+     "$8"
+    ]
+   },
+   "warnings": [
+    "line1 replaced (forbidden wording)",
+    "no layout fits the hard minimum font sizes with the localized copy; whole card in en-US",
+    "screen text flags remain (no clean screenshot available): {0: ['$1', '$4', '$8']}",
+    "layout fallback closeup2->closeup2 (closeup2: screen_area=0.23<0.24)"
+   ],
+   "line1": "Check the Hours First",
+   "line2": "Then tag it Need, Want or Impulse",
+   "chips": [
+    "Then tag it Need, Want or Impulse",
+    "Stop Impulse Buying & Save",
+    "Type: Need - Want - Impulse"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.249,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        379,
+        72,
+        701,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.25,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        234,
+        184,
+        846,
+        630
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.06,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Check the Hours First\nThen tag it Need, Want or Impulse\n\n📲 Download via the link in bio\n\n#HoursTagLite",
+   "caption_link": "Check the Hours First\nThen tag it Need, Want or Impulse\n\nApp Store: https://apps.apple.com/app/id6794039979\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/hourstaglite/el.jpg"
+  },
+  {
+   "locale": "en-AU",
+   "file": "hourstaglite/en-AU.jpg",
+   "intended_locale": "en-AU",
+   "headline_locale": "en-AU",
+   "screenshot_locale": "en-AU",
+   "localized": true,
+   "screenshots_used": [
+    0
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback closeup2->closeup2 (closeup2: screen_area=0.23<0.24)"
+   ],
+   "line1": "Check the Hours First",
+   "line2": "Then tag it Need, Want or Impulse",
+   "chips": [
+    "Then tag it Need, Want or Impulse",
+    "Type: Need - Want - Impulse"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.249,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        379,
+        72,
+        701,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.25,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        234,
+        184,
+        846,
+        630
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.06,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Check the Hours First\nThen tag it Need, Want or Impulse\n\n📲 Download via the link in bio\n\n#HoursTagLite",
+   "caption_link": "Check the Hours First\nThen tag it Need, Want or Impulse\n\nApp Store: https://apps.apple.com/app/id6794039979\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/hourstaglite/en-AU.jpg"
+  },
+  {
+   "locale": "en-CA",
+   "file": "hourstaglite/en-CA.jpg",
+   "intended_locale": "en-CA",
+   "headline_locale": "en-CA",
+   "screenshot_locale": "en-CA",
+   "localized": true,
+   "screenshots_used": [
+    0
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {
+    "0": [
+     "$1",
+     "$4",
+     "$8"
+    ]
+   },
+   "warnings": [
+    "screen text flags remain (no clean screenshot available): {0: ['$1', '$4', '$8']}",
+    "layout fallback closeup2->closeup2 (closeup2: screen_area=0.23<0.24)"
+   ],
+   "line1": "Check the Hours First",
+   "line2": "Then tag it Need, Want or Impulse",
+   "chips": [
+    "Then tag it Need, Want or Impulse",
+    "Type: Need - Want - Impulse"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.249,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        379,
+        72,
+        701,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.25,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        234,
+        184,
+        846,
+        630
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.06,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Check the Hours First\nThen tag it Need, Want or Impulse\n\n📲 Download via the link in bio\n\n#HoursTagLite",
+   "caption_link": "Check the Hours First\nThen tag it Need, Want or Impulse\n\nApp Store: https://apps.apple.com/app/id6794039979\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/hourstaglite/en-CA.jpg"
+  },
+  {
+   "locale": "en-GB",
+   "file": "hourstaglite/en-GB.jpg",
+   "intended_locale": "en-GB",
+   "headline_locale": "en-GB",
+   "screenshot_locale": "en-GB",
+   "localized": true,
+   "screenshots_used": [
+    0
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {
+    "0": [
+     "$1",
+     "$4",
+     "$8"
+    ]
+   },
+   "warnings": [
+    "screen text flags remain (no clean screenshot available): {0: ['$1', '$4', '$8']}",
+    "layout fallback closeup2->closeup2 (closeup2: screen_area=0.23<0.24)"
+   ],
+   "line1": "Check the Hours First",
+   "line2": "Then tag it Need, Want or Impulse",
+   "chips": [
+    "Then tag it Need, Want or Impulse",
+    "Type: Need - Want - Impulse"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.249,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        379,
+        72,
+        701,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.25,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        234,
+        184,
+        846,
+        630
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.06,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Check the Hours First\nThen tag it Need, Want or Impulse\n\n📲 Download via the link in bio\n\n#HoursTagLite",
+   "caption_link": "Check the Hours First\nThen tag it Need, Want or Impulse\n\nApp Store: https://apps.apple.com/app/id6794039979\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/hourstaglite/en-GB.jpg"
+  },
+  {
+   "locale": "en-US",
+   "file": "hourstaglite/en-US.jpg",
+   "intended_locale": "en-US",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": true,
+   "screenshots_used": [
+    0
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {
+    "0": [
+     "$1",
+     "$4",
+     "$8"
+    ]
+   },
+   "warnings": [
+    "screen text flags remain (no clean screenshot available): {0: ['$1', '$4', '$8']}",
+    "layout fallback closeup2->closeup2 (closeup2: screen_area=0.23<0.24)"
+   ],
+   "line1": "Check the Hours First",
+   "line2": "Then tag it Need, Want or Impulse",
+   "chips": [
+    "Then tag it Need, Want or Impulse",
+    "Stop Impulse Buying & Save",
+    "Type: Need - Want - Impulse"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.249,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        379,
+        72,
+        701,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.25,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        234,
+        184,
+        846,
+        630
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.06,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Check the Hours First\nThen tag it Need, Want or Impulse\n\n📲 Download via the link in bio\n\n#HoursTagLite",
+   "caption_link": "Check the Hours First\nThen tag it Need, Want or Impulse\n\nApp Store: https://apps.apple.com/app/id6794039979\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/hourstaglite/en-US.jpg"
+  },
+  {
+   "locale": "es-ES",
+   "file": "hourstaglite/es-ES.jpg",
+   "intended_locale": "es-ES",
+   "headline_locale": "es-ES",
+   "screenshot_locale": "es-ES",
+   "localized": true,
+   "screenshots_used": [
+    0
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "line1 replaced (forbidden wording)",
+    "headline shortened to a shorter store hook: Tipo: Necesidad - Deseo - Impulso",
+    "layout fallback closeup2->closeup2 (closeup2: text does not fit at minimum sizes)"
+   ],
+   "line1": "Tipo: Necesidad - Deseo - Impulso",
+   "line2": "¿Necesidad, deseo o impulso?",
+   "chips": [
+    "¿Necesidad, deseo o impulso?",
+    "Tipo: Necesidad - Deseo - Impulso"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.257,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        379,
+        72,
+        701,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.25,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        91,
+        184,
+        989,
+        554
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 100,
+        "sub": 50,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.6,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Tipo: Necesidad - Deseo - Impulso\n¿Necesidad, deseo o impulso?\n\n📲 Descárgala desde el enlace de la bio\n\n#HoursTagLite",
+   "caption_link": "Tipo: Necesidad - Deseo - Impulso\n¿Necesidad, deseo o impulso?\n\nApp Store: https://apps.apple.com/app/id6794039979\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/hourstaglite/es-ES.jpg"
+  },
+  {
+   "locale": "es-MX",
+   "file": "hourstaglite/es-MX.jpg",
+   "intended_locale": "es-MX",
+   "headline_locale": "es-MX",
+   "screenshot_locale": "es-MX",
+   "localized": true,
+   "screenshots_used": [
+    0
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "line1 replaced (forbidden wording)",
+    "headline shortened to a shorter store hook: Tipo: Necesidad - Deseo - Impulso",
+    "layout fallback closeup2->closeup2 (closeup2: text does not fit at minimum sizes)"
+   ],
+   "line1": "Tipo: Necesidad - Deseo - Impulso",
+   "line2": "¿Necesidad, deseo o impulso?",
+   "chips": [
+    "¿Necesidad, deseo o impulso?",
+    "Tipo: Necesidad - Deseo - Impulso"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.257,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        379,
+        72,
+        701,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.25,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        91,
+        184,
+        989,
+        554
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 100,
+        "sub": 50,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.6,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Tipo: Necesidad - Deseo - Impulso\n¿Necesidad, deseo o impulso?\n\n📲 Descárgala desde el enlace de la bio\n\n#HoursTagLite",
+   "caption_link": "Tipo: Necesidad - Deseo - Impulso\n¿Necesidad, deseo o impulso?\n\nApp Store: https://apps.apple.com/app/id6794039979\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/hourstaglite/es-MX.jpg"
+  },
+  {
+   "locale": "fi",
+   "file": "hourstaglite/fi.jpg",
+   "intended_locale": "fi",
+   "headline_locale": "fi",
+   "screenshot_locale": "fi",
+   "localized": true,
+   "screenshots_used": [
+    0
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Ostos maksaa tunteja",
+   "line2": "Tarve, halu vai heräte",
+   "chips": [
+    "Tarve, halu vai heräte",
+    "Tyyppi: Tarve - Halu - Heräte"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.255,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        379,
+        72,
+        701,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.25,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        152,
+        184,
+        927,
+        559
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.78,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "Ostos maksaa tunteja\nTarve, halu vai heräte\n\n📲 Lataa bion linkistä\n\n#HoursTagLite",
+   "caption_link": "Ostos maksaa tunteja\nTarve, halu vai heräte\n\nApp Store: https://apps.apple.com/app/id6794039979\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/hourstaglite/fi.jpg"
+  },
+  {
+   "locale": "fr-CA",
+   "file": "hourstaglite/fr-CA.jpg",
+   "intended_locale": "fr-CA",
+   "headline_locale": "fr-CA",
+   "screenshot_locale": "fr-CA",
+   "localized": true,
+   "screenshots_used": [
+    0
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "line1 replaced (forbidden wording)"
+   ],
+   "line1": "Achat conscient: vraie valeur",
+   "line2": "Besoin, envie ou impulsion ?",
+   "chips": [
+    "Besoin, envie ou impulsion ?",
+    "Type: Besoin - Envie - Impulsion"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.252,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        379,
+        72,
+        701,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.25,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        84,
+        184,
+        997,
+        566
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.61,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "Achat conscient: vraie valeur\nBesoin, envie ou impulsion ?\n\n📲 Téléchargez-la via le lien dans la bio\n\n#HoursTagLite",
+   "caption_link": "Achat conscient: vraie valeur\nBesoin, envie ou impulsion ?\n\nApp Store: https://apps.apple.com/app/id6794039979\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/hourstaglite/fr-CA.jpg"
+  },
+  {
+   "locale": "fr-FR",
+   "file": "hourstaglite/fr-FR.jpg",
+   "intended_locale": "fr-FR",
+   "headline_locale": "fr-FR",
+   "screenshot_locale": "fr-FR",
+   "localized": true,
+   "screenshots_used": [
+    0
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "line1 replaced (forbidden wording)",
+    "headline shortened to a shorter store hook: Type: Besoin - Envie - Impulsion",
+    "layout fallback closeup2->closeup2 (closeup2: text does not fit at minimum sizes)"
+   ],
+   "line1": "Type: Besoin - Envie - Impulsion",
+   "line2": "Besoin, envie ou impulsion ?",
+   "chips": [
+    "Besoin, envie ou impulsion ?",
+    "Type: Besoin - Envie - Impulsion"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.257,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        379,
+        72,
+        701,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.25,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        90,
+        184,
+        991,
+        554
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 100,
+        "sub": 50,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.63,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Type: Besoin - Envie - Impulsion\nBesoin, envie ou impulsion ?\n\n📲 Téléchargez-la via le lien dans la bio\n\n#HoursTagLite",
+   "caption_link": "Type: Besoin - Envie - Impulsion\nBesoin, envie ou impulsion ?\n\nApp Store: https://apps.apple.com/app/id6794039979\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/hourstaglite/fr-FR.jpg"
+  },
+  {
+   "locale": "gu-IN",
+   "file": "hourstaglite/gu-IN.jpg",
+   "intended_locale": "gu-IN",
+   "headline_locale": "gu-IN",
+   "screenshot_locale": "gu-IN",
+   "localized": true,
+   "screenshots_used": [
+    0
+   ],
+   "demo_language_check": {
+    "method": "ocr:guj",
+    "script_chars": 265,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {
+    "0": [
+     "$1",
+     "$4",
+     "$8"
+    ]
+   },
+   "warnings": [
+    "line1 replaced (forbidden wording)",
+    "headline shortened to a shorter store hook: પ્રકાર: જરૂર - ઇચ્છા - ઉત્સાહ",
+    "screen text flags remain (no clean screenshot available): {0: ['$1', '$4', '$8']}",
+    "layout fallback closeup2->closeup2 (closeup2: text does not fit at minimum sizes; closeup2: screen_area=0.236<0.24)"
+   ],
+   "line1": "પ્રકાર: જરૂર - ઇચ્છા - ઉત્સાહ",
+   "line2": "જરૂર, ઇચ્છા કે ઉત્સાહ?",
+   "chips": [
+    "જરૂર, ઇચ્છા કે ઉત્સાહ?",
+    "પ્રકાર: જરૂર - ઇચ્છા - ઉત્સાહ"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.255,
+    "family": "closeup2",
+    "font": "NotoSansGujarati.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        379,
+        72,
+        701,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.25,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        208,
+        184,
+        871,
+        613
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.06,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "પ્રકાર: જરૂર - ઇચ્છા - ઉત્સાહ\nજરૂર, ઇચ્છા કે ઉત્સાહ?\n\n📲 બાયોમાંની લિંકથી ડાઉનલોડ કરો\n\n#HoursTagLite",
+   "caption_link": "પ્રકાર: જરૂર - ઇચ્છા - ઉત્સાહ\nજરૂર, ઇચ્છા કે ઉત્સાહ?\n\nApp Store: https://apps.apple.com/app/id6794039979\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/hourstaglite/gu-IN.jpg"
+  },
+  {
+   "locale": "he",
+   "file": "hourstaglite/he.jpg",
+   "intended_locale": "he",
+   "headline_locale": "he",
+   "screenshot_locale": "he",
+   "localized": true,
+   "screenshots_used": [
+    0
+   ],
+   "demo_language_check": {
+    "method": "ocr:heb",
+    "script_chars": 255,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {
+    "0": [
+     "$ 1",
+     "$ 4",
+     "$ 8"
+    ]
+   },
+   "warnings": [
+    "line1 replaced (forbidden wording)",
+    "screen text flags remain (no clean screenshot available): {0: ['$ 1', '$ 4', '$ 8']}"
+   ],
+   "line1": "עלות בזמן: הערך הנקי שלך לשעת עבודה",
+   "line2": "צריך, רוצה או דחף",
+   "chips": [
+    "צריך, רוצה או דחף",
+    "סוג: צריך - רוצה - דחף",
+    "דפוס הערך שלך - תובנות ערך מלאות"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.264,
+    "family": "closeup2",
+    "font": "NotoSansHebrew.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        380,
+        72,
+        699,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.2,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        82,
+        184,
+        999,
+        533
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.6,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.3,
+        1.4
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "עלות בזמן: הערך הנקי שלך לשעת עבודה\nצריך, רוצה או דחף\n\n📲 הורדה דרך הקישור בביו\n\n#HoursTagLite",
+   "caption_link": "עלות בזמן: הערך הנקי שלך לשעת עבודה\nצריך, רוצה או דחף\n\nApp Store: https://apps.apple.com/app/id6794039979\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/hourstaglite/he.jpg"
+  },
+  {
+   "locale": "hi",
+   "file": "hourstaglite/hi.jpg",
+   "intended_locale": "hi",
+   "headline_locale": "hi",
+   "screenshot_locale": "hi",
+   "localized": true,
+   "screenshots_used": [
+    0
+   ],
+   "demo_language_check": {
+    "method": "ocr:hin",
+    "script_chars": 291,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {
+    "0": [
+     "$1",
+     "$4",
+     "$8",
+     "ad"
+    ]
+   },
+   "warnings": [
+    "line1 replaced (forbidden wording)",
+    "headline shortened to a shorter store hook: प्रकार: जरूरत - चाहत - आवेग",
+    "screen text flags remain (no clean screenshot available): {0: ['$1', '$4', '$8', 'ad']}",
+    "layout fallback closeup2->closeup2 (closeup2: text does not fit at minimum sizes; closeup2: screen_area=0.237<0.24)"
+   ],
+   "line1": "प्रकार: जरूरत - चाहत - आवेग",
+   "line2": "जरूरत, चाहत या आवेग टैग करें",
+   "chips": [
+    "जरूरत, चाहत या आवेग टैग करें",
+    "प्रकार: जरूरत - चाहत - आवेग",
+    "आपका मूल्य रुझान - पूरा मूल्य विश्लेषण"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.255,
+    "family": "closeup2",
+    "font": "NotoSansDevanagari.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        380,
+        72,
+        701,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.25,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        196,
+        184,
+        883,
+        612
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.94,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "प्रकार: जरूरत - चाहत - आवेग\nजरूरत, चाहत या आवेग टैग करें\n\n📲 बायो में दिए लिंक से डाउनलोड करें\n\n#HoursTagLite",
+   "caption_link": "प्रकार: जरूरत - चाहत - आवेग\nजरूरत, चाहत या आवेग टैग करें\n\nApp Store: https://apps.apple.com/app/id6794039979\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/hourstaglite/hi.jpg"
+  },
+  {
+   "locale": "hr",
+   "file": "hourstaglite/hr.jpg",
+   "intended_locale": "hr",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    0
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": false
+   },
+   "screen_text_flags": {
+    "0": [
+     "$1",
+     "$4",
+     "$8"
+    ]
+   },
+   "warnings": [
+    "line1 replaced (forbidden wording)",
+    "no layout fits the hard minimum font sizes with the localized copy; whole card in en-US",
+    "screen text flags remain (no clean screenshot available): {0: ['$1', '$4', '$8']}",
+    "layout fallback closeup2->closeup2 (closeup2: screen_area=0.23<0.24)"
+   ],
+   "line1": "Check the Hours First",
+   "line2": "Then tag it Need, Want or Impulse",
+   "chips": [
+    "Then tag it Need, Want or Impulse",
+    "Stop Impulse Buying & Save",
+    "Type: Need - Want - Impulse"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.249,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        379,
+        72,
+        701,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.25,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        234,
+        184,
+        846,
+        630
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.06,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Check the Hours First\nThen tag it Need, Want or Impulse\n\n📲 Download via the link in bio\n\n#HoursTagLite",
+   "caption_link": "Check the Hours First\nThen tag it Need, Want or Impulse\n\nApp Store: https://apps.apple.com/app/id6794039979\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/hourstaglite/hr.jpg"
+  },
+  {
+   "locale": "hu",
+   "file": "hourstaglite/hu.jpg",
+   "intended_locale": "hu",
+   "headline_locale": "hu",
+   "screenshot_locale": "hu",
+   "localized": true,
+   "screenshots_used": [
+    0
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "line1 replaced (forbidden wording)",
+    "headline shortened to a shorter store hook: Típus: Szükség - Akar - Impulzus",
+    "layout fallback closeup2->closeup2 (closeup2: text does not fit at minimum sizes)"
+   ],
+   "line1": "Típus: Szükség - Akar - Impulzus",
+   "line2": "Szükség, Akar vagy Impulzus?",
+   "chips": [
+    "Szükség, Akar vagy Impulzus?",
+    "Típus: Szükség - Akar - Impulzus",
+    "Az értékmintád - Teljes értékelemzés"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.252,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        379,
+        72,
+        701,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.25,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        105,
+        184,
+        975,
+        566
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.61,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Típus: Szükség - Akar - Impulzus\nSzükség, Akar vagy Impulzus?\n\n📲 Töltsd le a bio linkjéről\n\n#HoursTagLite",
+   "caption_link": "Típus: Szükség - Akar - Impulzus\nSzükség, Akar vagy Impulzus?\n\nApp Store: https://apps.apple.com/app/id6794039979\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/hourstaglite/hu.jpg"
+  },
+  {
+   "locale": "id",
+   "file": "hourstaglite/id.jpg",
+   "intended_locale": "id",
+   "headline_locale": "id",
+   "screenshot_locale": "id",
+   "localized": true,
+   "screenshots_used": [
+    0
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {
+    "0": [
+     "$1",
+     "$4",
+     "$8"
+    ]
+   },
+   "warnings": [
+    "line1 replaced (forbidden wording)",
+    "headline shortened to a shorter store hook: Tipe: Perlu - Ingin - Impulsif",
+    "screen text flags remain (no clean screenshot available): {0: ['$1', '$4', '$8']}",
+    "layout fallback closeup2->closeup2 (closeup2: text does not fit at minimum sizes)"
+   ],
+   "line1": "Tipe: Perlu - Ingin - Impulsif",
+   "line2": "Perlu, Ingin, atau Impulsif?",
+   "chips": [
+    "Perlu, Ingin, atau Impulsif?",
+    "Tipe: Perlu - Ingin - Impulsif",
+    "Pola nilaimu - Wawasan nilai lengkap"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.252,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        379,
+        72,
+        701,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.25,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        113,
+        184,
+        967,
+        566
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.74,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Tipe: Perlu - Ingin - Impulsif\nPerlu, Ingin, atau Impulsif?\n\n📲 Unduh lewat link di bio\n\n#HoursTagLite",
+   "caption_link": "Tipe: Perlu - Ingin - Impulsif\nPerlu, Ingin, atau Impulsif?\n\nApp Store: https://apps.apple.com/app/id6794039979\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/hourstaglite/id.jpg"
+  },
+  {
+   "locale": "it",
+   "file": "hourstaglite/it.jpg",
+   "intended_locale": "it",
+   "headline_locale": "it",
+   "screenshot_locale": "it",
+   "localized": true,
+   "screenshots_used": [
+    0
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "line1 replaced (forbidden wording)"
+   ],
+   "line1": "Acquisto consapevole: valore",
+   "line2": "Necessità, desiderio o impulso?",
+   "chips": [
+    "Necessità, desiderio o impulso?",
+    "Tipo: Necessità - Desiderio - Impulso"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.27,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        379,
+        72,
+        701,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.25,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        79,
+        184,
+        1001,
+        515
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.63,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "Acquisto consapevole: valore\nNecessità, desiderio o impulso?\n\n📲 Scaricala dal link nella bio\n\n#HoursTagLite",
+   "caption_link": "Acquisto consapevole: valore\nNecessità, desiderio o impulso?\n\nApp Store: https://apps.apple.com/app/id6794039979\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/hourstaglite/it.jpg"
+  },
+  {
+   "locale": "ja",
+   "file": "hourstaglite/ja.jpg",
+   "intended_locale": "ja",
+   "headline_locale": "ja",
+   "screenshot_locale": "ja",
+   "localized": true,
+   "screenshots_used": [
+    0
+   ],
+   "demo_language_check": {
+    "method": "ocr:jpn",
+    "script_chars": 139,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {
+    "0": [
+     "$1",
+     "$4",
+     "$8"
+    ]
+   },
+   "warnings": [
+    "screen text flags remain (no clean screenshot available): {0: ['$1', '$4', '$8']}"
+   ],
+   "line1": "ポチる前に時間で見る",
+   "line2": "必要・欲しい・衝動でタグ付け",
+   "chips": [
+    "必要・欲しい・衝動でタグ付け",
+    "その値段は何時間分か見える",
+    "タイプ: 必要 - 欲しい - 衝動"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.268,
+    "family": "closeup2",
+    "font": "NotoSansJP.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        233,
+        72,
+        847,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.98,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        86,
+        184,
+        993,
+        411
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.57,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        258,
+        435,
+        821,
+        521
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 14.42,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "ポチる前に時間で見る\n必要・欲しい・衝動でタグ付け\n\n📲 ダウンロードはプロフィール（bio）のリンクから\n\n#HoursTagLite",
+   "caption_link": "ポチる前に時間で見る\n必要・欲しい・衝動でタグ付け\n\nApp Store: https://apps.apple.com/app/id6794039979\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/hourstaglite/ja.jpg"
+  },
+  {
+   "locale": "kn-IN",
+   "file": "hourstaglite/kn-IN.jpg",
+   "intended_locale": "kn-IN",
+   "headline_locale": "kn-IN",
+   "screenshot_locale": "kn-IN",
+   "localized": true,
+   "screenshots_used": [
+    0
+   ],
+   "demo_language_check": {
+    "method": "ocr:kan",
+    "script_chars": 342,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {
+    "0": [
+     "$1",
+     "$4",
+     "$8"
+    ]
+   },
+   "warnings": [
+    "screen text flags remain (no clean screenshot available): {0: ['$1', '$4', '$8']}",
+    "layout fallback closeup2->closeup2 (closeup2: screen_area=0.224<0.24)"
+   ],
+   "line1": "ಖರೀದಿಗೂ ಮುನ್ನ ಗಂಟೆ ಲೆಕ್ಕ",
+   "line2": "ಅವಶ್ಯಕತೆ, ಬಯಕೆ ಅಥವಾ ಆಕಸ್ಮಿಕ?",
+   "chips": [
+    "ಅವಶ್ಯಕತೆ, ಬಯಕೆ ಅಥವಾ ಆಕಸ್ಮಿಕ?",
+    "ಪ್ರಕಾರ: ಅವಶ್ಯಕತೆ - ಬಯಕೆ - ಆಕಸ್ಮಿಕ"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.242,
+    "family": "closeup2",
+    "font": "NotoSansKannada.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        384,
+        72,
+        695,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.25,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        144,
+        184,
+        936,
+        648
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.81,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "ಖರೀದಿಗೂ ಮುನ್ನ ಗಂಟೆ ಲೆಕ್ಕ\nಅವಶ್ಯಕತೆ, ಬಯಕೆ ಅಥವಾ ಆಕಸ್ಮಿಕ?\n\n📲 ಬಯೋದಲ್ಲಿರುವ ಲಿಂಕ್‌ನಿಂದ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ\n\n#HoursTagLite",
+   "caption_link": "ಖರೀದಿಗೂ ಮುನ್ನ ಗಂಟೆ ಲೆಕ್ಕ\nಅವಶ್ಯಕತೆ, ಬಯಕೆ ಅಥವಾ ಆಕಸ್ಮಿಕ?\n\nApp Store: https://apps.apple.com/app/id6794039979\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/hourstaglite/kn-IN.jpg"
+  },
+  {
+   "locale": "ko",
+   "file": "hourstaglite/ko.jpg",
+   "intended_locale": "ko",
+   "headline_locale": "ko",
+   "screenshot_locale": "ko",
+   "localized": true,
+   "screenshots_used": [
+    0
+   ],
+   "demo_language_check": {
+    "method": "ocr:kor",
+    "script_chars": 99,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {
+    "0": [
+     "$1",
+     "$4",
+     "$8"
+    ]
+   },
+   "warnings": [
+    "screen text flags remain (no clean screenshot available): {0: ['$1', '$4', '$8']}"
+   ],
+   "line1": "결제 전에 시간으로 보기",
+   "line2": "필요·갖고 싶음·충동으로 태그",
+   "chips": [
+    "필요·갖고 싶음·충동으로 태그",
+    "이 물건은 몇 시간의 값일까",
+    "유형: 필요 - 갖고 싶음 - 충동"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.269,
+    "family": "closeup2",
+    "font": "NotoSansKR.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        382,
+        72,
+        699,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.25,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        92,
+        184,
+        987,
+        408
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.57,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        292,
+        432,
+        788,
+        518
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 14.52,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "결제 전에 시간으로 보기\n필요·갖고 싶음·충동으로 태그\n\n📲 다운로드는 프로필(bio) 링크에서\n\n#HoursTagLite",
+   "caption_link": "결제 전에 시간으로 보기\n필요·갖고 싶음·충동으로 태그\n\nApp Store: https://apps.apple.com/app/id6794039979\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/hourstaglite/ko.jpg"
+  },
+  {
+   "locale": "ml-IN",
+   "file": "hourstaglite/ml-IN.jpg",
+   "intended_locale": "ml-IN",
+   "headline_locale": "ml-IN",
+   "screenshot_locale": "ml-IN",
+   "localized": true,
+   "screenshots_used": [
+    0
+   ],
+   "demo_language_check": {
+    "method": "ocr:mal",
+    "script_chars": 458,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {
+    "0": [
+     "$1",
+     "$4",
+     "$8"
+    ]
+   },
+   "warnings": [
+    "screen text flags remain (no clean screenshot available): {0: ['$1', '$4', '$8']}",
+    "layout fallback closeup2->closeup2 (closeup2: screen_area=0.198<0.24; closeup2×1.08: screen_area=0.214<0.24; closeup2×1.16: screen_area=0.229<0.24)"
+   ],
+   "line1": "വാങ്ങും മുമ്പ് മണിക്കൂർ",
+   "line2": "ആവശ്യം, ഇച്ഛ അല്ലെങ്കിൽ ഉത്സാഹം?",
+   "chips": [
+    "ആവശ്യം, ഇച്ഛ അല്ലെങ്കിൽ ഉത്സാഹം?",
+    "തരം: ആവശ്യം - ഇച്ഛിക്കുന്നു - ഉത്സാഹം"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.245,
+    "family": "closeup2",
+    "font": "NotoSansMalayalam.ttf",
+    "screen_ratio_vs_battai_split": 1.77,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        378,
+        72,
+        702,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.22,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        138,
+        184,
+        942,
+        724
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.82,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.25,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "വാങ്ങും മുമ്പ് മണിക്കൂർ\nആവശ്യം, ഇച്ഛ അല്ലെങ്കിൽ ഉത്സാഹം?\n\n📲 ബയോയിലെ ലിങ്ക് വഴി ഡൗൺലോഡ് ചെയ്യുക\n\n#HoursTagLite",
+   "caption_link": "വാങ്ങും മുമ്പ് മണിക്കൂർ\nആവശ്യം, ഇച്ഛ അല്ലെങ്കിൽ ഉത്സാഹം?\n\nApp Store: https://apps.apple.com/app/id6794039979\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/hourstaglite/ml-IN.jpg"
+  },
+  {
+   "locale": "mr-IN",
+   "file": "hourstaglite/mr-IN.jpg",
+   "intended_locale": "mr-IN",
+   "headline_locale": "mr-IN",
+   "screenshot_locale": "mr-IN",
+   "localized": true,
+   "screenshots_used": [
+    0
+   ],
+   "demo_language_check": {
+    "method": "ocr:mar",
+    "script_chars": 314,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {
+    "0": [
+     "$1",
+     "$4",
+     "$8",
+     "ad"
+    ]
+   },
+   "warnings": [
+    "line1 replaced (forbidden wording)",
+    "screen text flags remain (no clean screenshot available): {0: ['$1', '$4', '$8', 'ad']}",
+    "layout fallback closeup2->closeup2 (closeup2: screen_area=0.237<0.24)"
+   ],
+   "line1": "प्रकार: आवश्यक - आवडतं - आवेग",
+   "line2": "आवश्यक, आवडतं किंवा आवेग",
+   "chips": [
+    "आवश्यक, आवडतं किंवा आवेग"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.255,
+    "family": "closeup2",
+    "font": "NotoSansDevanagari.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        380,
+        72,
+        701,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.25,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        156,
+        184,
+        925,
+        612
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.79,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "प्रकार: आवश्यक - आवडतं - आवेग\nआवश्यक, आवडतं किंवा आवेग\n\n📲 बायोमधील लिंकवरून डाउनलोड करा\n\n#HoursTagLite",
+   "caption_link": "प्रकार: आवश्यक - आवडतं - आवेग\nआवश्यक, आवडतं किंवा आवेग\n\nApp Store: https://apps.apple.com/app/id6794039979\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/hourstaglite/mr-IN.jpg"
+  },
+  {
+   "locale": "ms",
+   "file": "hourstaglite/ms.jpg",
+   "intended_locale": "ms",
+   "headline_locale": "ms",
+   "screenshot_locale": "ms",
+   "localized": true,
+   "screenshots_used": [
+    0
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "line1 replaced (forbidden wording)",
+    "headline shortened to a shorter store hook: Jenis: Perlu - Mahu - Desakan",
+    "layout fallback closeup2->closeup2 (closeup2: text does not fit at minimum sizes)"
+   ],
+   "line1": "Jenis: Perlu - Mahu - Desakan",
+   "line2": "Perlu, Mahu atau Desakan?",
+   "chips": [
+    "Perlu, Mahu atau Desakan?",
+    "Jenis: Perlu - Mahu - Desakan",
+    "Corak nilai anda - Wawasan nilai lengkap"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.254,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        379,
+        72,
+        701,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.25,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        104,
+        184,
+        977,
+        560
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.68,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Jenis: Perlu - Mahu - Desakan\nPerlu, Mahu atau Desakan?\n\n📲 Muat turun melalui pautan dalam bio\n\n#HoursTagLite",
+   "caption_link": "Jenis: Perlu - Mahu - Desakan\nPerlu, Mahu atau Desakan?\n\nApp Store: https://apps.apple.com/app/id6794039979\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/hourstaglite/ms.jpg"
+  },
+  {
+   "locale": "nl-NL",
+   "file": "hourstaglite/nl-NL.jpg",
+   "intended_locale": "nl-NL",
+   "headline_locale": "nl-NL",
+   "screenshot_locale": "nl-NL",
+   "localized": true,
+   "screenshots_used": [
+    0
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {
+    "0": [
+     "$ 1",
+     "$ 4",
+     "$ 8"
+    ]
+   },
+   "warnings": [
+    "line1 replaced (forbidden wording)",
+    "headline shortened to a shorter store hook: Type: Nodig - Wens - Impuls",
+    "screen text flags remain (no clean screenshot available): {0: ['$ 1', '$ 4', '$ 8']}",
+    "layout fallback closeup2->closeup2 (closeup2: text does not fit at minimum sizes)"
+   ],
+   "line1": "Type: Nodig - Wens - Impuls",
+   "line2": "Nodig, wens of impuls?",
+   "chips": [
+    "Nodig, wens of impuls?",
+    "Type: Nodig - Wens - Impuls"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.252,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        379,
+        72,
+        701,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.25,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        148,
+        184,
+        931,
+        566
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.83,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Type: Nodig - Wens - Impuls\nNodig, wens of impuls?\n\n📲 Download via de link in bio\n\n#HoursTagLite",
+   "caption_link": "Type: Nodig - Wens - Impuls\nNodig, wens of impuls?\n\nApp Store: https://apps.apple.com/app/id6794039979\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/hourstaglite/nl-NL.jpg"
+  },
+  {
+   "locale": "no",
+   "file": "hourstaglite/no.jpg",
+   "intended_locale": "no",
+   "headline_locale": "no",
+   "screenshot_locale": "no",
+   "localized": true,
+   "screenshots_used": [
+    0
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Hvert kjøp koster timer",
+   "line2": "Behov, ønske eller impuls",
+   "chips": [
+    "Behov, ønske eller impuls",
+    "Type: Behov - Ønske - Impuls"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.253,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        379,
+        72,
+        701,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.25,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        190,
+        184,
+        891,
+        565
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.94,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "Hvert kjøp koster timer\nBehov, ønske eller impuls\n\n📲 Last ned via lenken i bio\n\n#HoursTagLite",
+   "caption_link": "Hvert kjøp koster timer\nBehov, ønske eller impuls\n\nApp Store: https://apps.apple.com/app/id6794039979\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/hourstaglite/no.jpg"
+  },
+  {
+   "locale": "or-IN",
+   "file": "hourstaglite/or-IN.jpg",
+   "intended_locale": "or-IN",
+   "headline_locale": "or-IN",
+   "screenshot_locale": "or-IN",
+   "localized": true,
+   "screenshots_used": [
+    0
+   ],
+   "demo_language_check": {
+    "method": "ocr:ori",
+    "script_chars": 270,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {
+    "0": [
+     "$1",
+     "$4",
+     "$8"
+    ]
+   },
+   "warnings": [
+    "screen text flags remain (no clean screenshot available): {0: ['$1', '$4', '$8']}",
+    "layout fallback closeup2->closeup2 (closeup2: screen_area=0.214<0.24; closeup2×1.08: screen_area=0.23<0.24)"
+   ],
+   "line1": "ଦାମ ଦେଖନ୍ତୁ କାମ ଘଣ୍ଟାରେ",
+   "line2": "ଆବଶ୍ୟକ, ଚାହିଁ ବା ଆକର୍ଷଣ?",
+   "chips": [
+    "ଆବଶ୍ୟକ, ଚାହିଁ ବା ଆକର୍ଷଣ?",
+    "ପ୍ରକାର: ଆବଶ୍ୟକ - ଚାହିଁ - ଆକର୍ଷଣ"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.247,
+    "family": "closeup2",
+    "font": "NotoSansOriya.ttf",
+    "screen_ratio_vs_battai_split": 1.52,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        380,
+        72,
+        701,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.25,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        236,
+        184,
+        843,
+        679
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.04,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "ଦାମ ଦେଖନ୍ତୁ କାମ ଘଣ୍ଟାରେ\nଆବଶ୍ୟକ, ଚାହିଁ ବା ଆକର୍ଷଣ?\n\n📲 ବାୟୋରେ ଥିବା ଲିଙ୍କରୁ ଡାଉନଲୋଡ୍ କରନ୍ତୁ\n\n#HoursTagLite",
+   "caption_link": "ଦାମ ଦେଖନ୍ତୁ କାମ ଘଣ୍ଟାରେ\nଆବଶ୍ୟକ, ଚାହିଁ ବା ଆକର୍ଷଣ?\n\nApp Store: https://apps.apple.com/app/id6794039979\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/hourstaglite/or-IN.jpg"
+  },
+  {
+   "locale": "pa-IN",
+   "file": "hourstaglite/pa-IN.jpg",
+   "intended_locale": "pa-IN",
+   "headline_locale": "pa-IN",
+   "screenshot_locale": "pa-IN",
+   "localized": true,
+   "screenshots_used": [
+    0
+   ],
+   "demo_language_check": {
+    "method": "ocr:pan",
+    "script_chars": 237,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {
+    "0": [
+     "$1",
+     "$4",
+     "$8"
+    ]
+   },
+   "warnings": [
+    "line1 replaced (forbidden wording)",
+    "screen text flags remain (no clean screenshot available): {0: ['$1', '$4', '$8']}",
+    "layout fallback closeup2->closeup2 (closeup2: screen_area=0.224<0.24)"
+   ],
+   "line1": "ਕਿਸਮ: ਜ਼ਰੂਰਤ - ਚਾਹਤ - ਇਮਪਲਸ",
+   "line2": "ਜ਼ਰੂਰਤ, ਚਾਹਤ ਜਾਂ ਇਮਪਲਸ?",
+   "chips": [
+    "ਜ਼ਰੂਰਤ, ਚਾਹਤ ਜਾਂ ਇਮਪਲਸ?",
+    "ਤੁਹਾਡਾ ਮੁੱਲ ਰੁਝਾਨ - ਪੂਰਾ ਮੁੱਲ ਵਿਸ਼ਲੇਸ਼ਣ"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.241,
+    "family": "closeup2",
+    "font": "NotoSansGurmukhi.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        379,
+        72,
+        701,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.25,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        166,
+        184,
+        913,
+        649
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.93,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "ਕਿਸਮ: ਜ਼ਰੂਰਤ - ਚਾਹਤ - ਇਮਪਲਸ\nਜ਼ਰੂਰਤ, ਚਾਹਤ ਜਾਂ ਇਮਪਲਸ?\n\n📲 ਬਾਇਓ ਵਿੱਚ ਦਿੱਤੇ ਲਿੰਕ ਤੋਂ ਡਾਊਨਲੋਡ ਕਰੋ\n\n#HoursTagLite",
+   "caption_link": "ਕਿਸਮ: ਜ਼ਰੂਰਤ - ਚਾਹਤ - ਇਮਪਲਸ\nਜ਼ਰੂਰਤ, ਚਾਹਤ ਜਾਂ ਇਮਪਲਸ?\n\nApp Store: https://apps.apple.com/app/id6794039979\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/hourstaglite/pa-IN.jpg"
+  },
+  {
+   "locale": "pl",
+   "file": "hourstaglite/pl.jpg",
+   "intended_locale": "pl",
+   "headline_locale": "pl",
+   "screenshot_locale": "pl",
+   "localized": true,
+   "screenshots_used": [
+    0
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Zakup kosztuje godziny",
+   "line2": "Potrzeba, zachcianka czy impuls",
+   "chips": [
+    "Potrzeba, zachcianka czy impuls",
+    "Typ: Potrzeba - Zachcianka - Impuls"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.253,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        379,
+        72,
+        701,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.25,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        120,
+        184,
+        961,
+        565
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.65,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "Zakup kosztuje godziny\nPotrzeba, zachcianka czy impuls\n\n📲 Pobierz przez link w bio\n\n#HoursTagLite",
+   "caption_link": "Zakup kosztuje godziny\nPotrzeba, zachcianka czy impuls\n\nApp Store: https://apps.apple.com/app/id6794039979\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/hourstaglite/pl.jpg"
+  },
+  {
+   "locale": "pt-BR",
+   "file": "hourstaglite/pt-BR.jpg",
+   "intended_locale": "pt-BR",
+   "headline_locale": "pt-BR",
+   "screenshot_locale": "pt-BR",
+   "localized": true,
+   "screenshots_used": [
+    0
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {
+    "0": [
+     "$ 1",
+     "$ 4",
+     "$ 8"
+    ]
+   },
+   "warnings": [
+    "line1 replaced (forbidden wording)",
+    "screen text flags remain (no clean screenshot available): {0: ['$ 1', '$ 4', '$ 8']}"
+   ],
+   "line1": "Compra consciente: valor real",
+   "line2": "Necessidade, desejo ou impulso?",
+   "chips": [
+    "Necessidade, desejo ou impulso?",
+    "Tipo: Necessidade - Desejo - Impulso"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.27,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        379,
+        72,
+        701,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.25,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        82,
+        184,
+        997,
+        515
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.6,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "Compra consciente: valor real\nNecessidade, desejo ou impulso?\n\n📲 Baixe pelo link na bio\n\n#HoursTagLite",
+   "caption_link": "Compra consciente: valor real\nNecessidade, desejo ou impulso?\n\nApp Store: https://apps.apple.com/app/id6794039979\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/hourstaglite/pt-BR.jpg"
+  },
+  {
+   "locale": "pt-PT",
+   "file": "hourstaglite/pt-PT.jpg",
+   "intended_locale": "pt-PT",
+   "headline_locale": "pt-PT",
+   "screenshot_locale": "pt-PT",
+   "localized": true,
+   "screenshots_used": [
+    0
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "line1 replaced (forbidden wording)"
+   ],
+   "line1": "Compra consciente: valor real",
+   "line2": "Necessidade, desejo ou impulso?",
+   "chips": [
+    "Necessidade, desejo ou impulso?",
+    "Tipo: Necessidade - Desejo - Impulso"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.27,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        379,
+        72,
+        701,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.25,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        82,
+        184,
+        997,
+        515
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.6,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "Compra consciente: valor real\nNecessidade, desejo ou impulso?\n\n📲 Download via the link in bio\n\n#HoursTagLite",
+   "caption_link": "Compra consciente: valor real\nNecessidade, desejo ou impulso?\n\nApp Store: https://apps.apple.com/app/id6794039979\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite",
+   "cta_source": "en-fallback",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/hourstaglite/pt-PT.jpg"
+  },
+  {
+   "locale": "ro",
+   "file": "hourstaglite/ro.jpg",
+   "intended_locale": "ro",
+   "headline_locale": "ro",
+   "screenshot_locale": "ro",
+   "localized": true,
+   "screenshots_used": [
+    0
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "line1 replaced (forbidden wording)",
+    "headline shortened to a shorter store hook: Tip: Necesitate - Dorintă - Impuls",
+    "layout fallback closeup2->closeup2 (closeup2: text does not fit at minimum sizes)"
+   ],
+   "line1": "Tip: Necesitate - Dorintă - Impuls",
+   "line2": "Necesitate, dorință sau impuls?",
+   "chips": [
+    "Necesitate, dorință sau impuls?",
+    "Tip: Necesitate - Dorintă - Impuls"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.252,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        379,
+        72,
+        701,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.25,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        94,
+        184,
+        986,
+        566
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.56,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Tip: Necesitate - Dorintă - Impuls\nNecesitate, dorință sau impuls?\n\n📲 Descarcă din linkul din bio\n\n#HoursTagLite",
+   "caption_link": "Tip: Necesitate - Dorintă - Impuls\nNecesitate, dorință sau impuls?\n\nApp Store: https://apps.apple.com/app/id6794039979\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/hourstaglite/ro.jpg"
+  },
+  {
+   "locale": "ru",
+   "file": "hourstaglite/ru.jpg",
+   "intended_locale": "ru",
+   "headline_locale": "ru",
+   "screenshot_locale": "ru",
+   "localized": true,
+   "screenshots_used": [
+    0
+   ],
+   "demo_language_check": {
+    "method": "ocr:rus",
+    "script_chars": 367,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "line1 replaced (forbidden wording)"
+   ],
+   "line1": "Тип: Нужно - Хотите - Импульс",
+   "line2": "Нужно, хочется или импульс",
+   "chips": [
+    "Нужно, хочется или импульс"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.263,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        379,
+        72,
+        701,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.25,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        84,
+        184,
+        995,
+        536
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 96,
+        "sub": 48,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.63,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "Тип: Нужно - Хотите - Импульс\nНужно, хочется или импульс\n\n📲 Скачать можно по ссылке в профиле (bio)\n\n#HoursTagLite",
+   "caption_link": "Тип: Нужно - Хотите - Импульс\nНужно, хочется или импульс\n\nApp Store: https://apps.apple.com/app/id6794039979\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/hourstaglite/ru.jpg"
+  },
+  {
+   "locale": "sk",
+   "file": "hourstaglite/sk.jpg",
+   "intended_locale": "sk",
+   "headline_locale": "sk",
+   "screenshot_locale": "sk",
+   "localized": true,
+   "screenshots_used": [
+    0
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "line1 replaced (forbidden wording)"
+   ],
+   "line1": "Typ: Potrebujem - Chcem - Impulzívne",
+   "line2": "Potrebujem, chcem, či impulz?",
+   "chips": [
+    "Potrebujem, chcem, či impulz?"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.27,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        379,
+        72,
+        701,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.25,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        83,
+        184,
+        997,
+        515
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.63,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "Typ: Potrebujem - Chcem - Impulzívne\nPotrebujem, chcem, či impulz?\n\n📲 Stiahnite si ju cez odkaz v profile (bio)\n\n#HoursTagLite",
+   "caption_link": "Typ: Potrebujem - Chcem - Impulzívne\nPotrebujem, chcem, či impulz?\n\nApp Store: https://apps.apple.com/app/id6794039979\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/hourstaglite/sk.jpg"
+  },
+  {
+   "locale": "sl-SI",
+   "file": "hourstaglite/sl-SI.jpg",
+   "intended_locale": "sl-SI",
+   "headline_locale": "sl-SI",
+   "screenshot_locale": "sl-SI",
+   "localized": true,
+   "screenshots_used": [
+    0
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "line1 replaced (forbidden wording)"
+   ],
+   "line1": "Vrsta: Potrebujem - Želim - Impulz",
+   "line2": "Potrebujem, želim ali impulz?",
+   "chips": [
+    "Potrebujem, želim ali impulz?"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.261,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        265,
+        72,
+        815,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.05,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        78,
+        184,
+        1001,
+        541
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 96,
+        "sub": 48,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.6,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "Vrsta: Potrebujem - Želim - Impulz\nPotrebujem, želim ali impulz?\n\n📲 Prenesite prek povezave v biu\n\n#HoursTagLite",
+   "caption_link": "Vrsta: Potrebujem - Želim - Impulz\nPotrebujem, želim ali impulz?\n\nApp Store: https://apps.apple.com/app/id6794039979\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/hourstaglite/sl-SI.jpg"
+  },
+  {
+   "locale": "sv",
+   "file": "hourstaglite/sv.jpg",
+   "intended_locale": "sv",
+   "headline_locale": "sv",
+   "screenshot_locale": "sv",
+   "localized": true,
+   "screenshots_used": [
+    0
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Varje köp kostar timmar",
+   "line2": "Behov, önskan eller impuls",
+   "chips": [
+    "Behov, önskan eller impuls",
+    "Typ: Behov - Önskan - Impuls"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.253,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        379,
+        72,
+        701,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.25,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        138,
+        184,
+        942,
+        565
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.79,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "Varje köp kostar timmar\nBehov, önskan eller impuls\n\n📲 Ladda ner via länken i bion\n\n#HoursTagLite",
+   "caption_link": "Varje köp kostar timmar\nBehov, önskan eller impuls\n\nApp Store: https://apps.apple.com/app/id6794039979\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/hourstaglite/sv.jpg"
+  },
+  {
+   "locale": "ta-IN",
+   "file": "hourstaglite/ta-IN.jpg",
+   "intended_locale": "ta-IN",
+   "headline_locale": "ta-IN",
+   "screenshot_locale": "ta-IN",
+   "localized": true,
+   "screenshots_used": [
+    0
+   ],
+   "demo_language_check": {
+    "method": "ocr:tam",
+    "script_chars": 386,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {
+    "0": [
+     "$1",
+     "$4",
+     "$8"
+    ]
+   },
+   "warnings": [
+    "screen text flags remain (no clean screenshot available): {0: ['$1', '$4', '$8']}",
+    "layout fallback closeup2->closeup2 (closeup2: screen_area=0.198<0.24; closeup2×1.08: screen_area=0.213<0.24; closeup2×1.16: screen_area=0.228<0.24)"
+   ],
+   "line1": "வேலை நேரக் கணக்கு",
+   "line2": "தேவை, விருப்பம் அல்லது உள்ளுணர்வு?",
+   "chips": [
+    "தேவை, விருப்பம் அல்லது உள்ளுணர்வு?",
+    "வகை: தேவை - விரும்பு - உள்ளுணர்வு"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.245,
+    "family": "closeup2",
+    "font": "NotoSansTamil.ttf",
+    "screen_ratio_vs_battai_split": 1.77,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        379,
+        72,
+        701,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.22,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        104,
+        184,
+        977,
+        725
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.62,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.25,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "வேலை நேரக் கணக்கு\nதேவை, விருப்பம் அல்லது உள்ளுணர்வு?\n\n📲 பயோவில் உள்ள இணைப்பு வழியாகப் பதிவிறக்குங்கள்\n\n#HoursTagLite",
+   "caption_link": "வேலை நேரக் கணக்கு\nதேவை, விருப்பம் அல்லது உள்ளுணர்வு?\n\nApp Store: https://apps.apple.com/app/id6794039979\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/hourstaglite/ta-IN.jpg"
+  },
+  {
+   "locale": "te-IN",
+   "file": "hourstaglite/te-IN.jpg",
+   "intended_locale": "te-IN",
+   "headline_locale": "te-IN",
+   "screenshot_locale": "te-IN",
+   "localized": true,
+   "screenshots_used": [
+    0
+   ],
+   "demo_language_check": {
+    "method": "ocr:tel",
+    "script_chars": 350,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {
+    "0": [
+     "$1",
+     "$4",
+     "$8"
+    ]
+   },
+   "warnings": [
+    "screen text flags remain (no clean screenshot available): {0: ['$1', '$4', '$8']}"
+   ],
+   "line1": "కొనే ముందు గంటలు",
+   "line2": "అవసరం, కోరిక లేదా ఉత్సాహం?",
+   "chips": [
+    "అవసరం, కోరిక లేదా ఉత్సాహం?",
+    "సమయపు ఖర్చు: ఒక్కో పని గంటకు నికర ఆదాయం",
+    "రకం: అవసరం - కోరిక - ఉత్సాహం"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.279,
+    "family": "closeup2",
+    "font": "NotoSansTelugu.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        378,
+        72,
+        701,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.22,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        84,
+        184,
+        995,
+        488
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 100,
+        "sub": 50,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.51,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "కొనే ముందు గంటలు\nఅవసరం, కోరిక లేదా ఉత్సాహం?\n\n📲 బయోలోని లింక్ ద్వారా డౌన్‌లోడ్ చేయండి\n\n#HoursTagLite",
+   "caption_link": "కొనే ముందు గంటలు\nఅవసరం, కోరిక లేదా ఉత్సాహం?\n\nApp Store: https://apps.apple.com/app/id6794039979\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/hourstaglite/te-IN.jpg"
+  },
+  {
+   "locale": "th",
+   "file": "hourstaglite/th.jpg",
+   "intended_locale": "th",
+   "headline_locale": "th",
+   "screenshot_locale": "th",
+   "localized": true,
+   "screenshots_used": [
+    0
+   ],
+   "demo_language_check": {
+    "method": "ocr:tha",
+    "script_chars": 349,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {
+    "0": [
+     "$1",
+     "$4",
+     "$8"
+    ]
+   },
+   "warnings": [
+    "screen text flags remain (no clean screenshot available): {0: ['$1', '$4', '$8']}"
+   ],
+   "line1": "ก่อนซื้อ ดูเป็นชั่วโมงงาน",
+   "line2": "ติดป้าย จำเป็น ต้องการ หรือกระตุ้น",
+   "chips": [
+    "ติดป้าย จำเป็น ต้องการ หรือกระตุ้น",
+    "ต้นทุนเวลา: รายรับสุทธิต่อชั่วโมงทำงาน",
+    "ประเภท: จำเป็น - ต้องการ - กระตุ้น"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.249,
+    "family": "closeup2",
+    "font": "NotoSansThai.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        379,
+        72,
+        701,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.22,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        80,
+        184,
+        1001,
+        461
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.55,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        206,
+        485,
+        875,
+        577
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 14.2,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "ก่อนซื้อ ดูเป็นชั่วโมงงาน\nติดป้าย จำเป็น ต้องการ หรือกระตุ้น\n\n📲 ดาวน์โหลดได้ที่ลิงก์ในโปรไฟล์ (bio)\n\n#HoursTagLite",
+   "caption_link": "ก่อนซื้อ ดูเป็นชั่วโมงงาน\nติดป้าย จำเป็น ต้องการ หรือกระตุ้น\n\nApp Store: https://apps.apple.com/app/id6794039979\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/hourstaglite/th.jpg"
+  },
+  {
+   "locale": "tr",
+   "file": "hourstaglite/tr.jpg",
+   "intended_locale": "tr",
+   "headline_locale": "tr",
+   "screenshot_locale": "tr",
+   "localized": true,
+   "screenshots_used": [
+    0
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {
+    "0": [
+     "$1",
+     "$4",
+     "$8"
+    ]
+   },
+   "warnings": [
+    "line1 replaced (forbidden wording)",
+    "screen text flags remain (no clean screenshot available): {0: ['$1', '$4', '$8']}"
+   ],
+   "line1": "Satın almadan önce saate çevir",
+   "line2": "İhtiyaç, istek ya da anlık",
+   "chips": [
+    "İhtiyaç, istek ya da anlık",
+    "Tür: İhtiyaç - İstek - Anlık"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.253,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        379,
+        72,
+        701,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.25,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        92,
+        184,
+        987,
+        565
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.61,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "Satın almadan önce saate çevir\nİhtiyaç, istek ya da anlık\n\n📲 Biyografideki bağlantıdan indirin\n\n#HoursTagLite",
+   "caption_link": "Satın almadan önce saate çevir\nİhtiyaç, istek ya da anlık\n\nApp Store: https://apps.apple.com/app/id6794039979\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/hourstaglite/tr.jpg"
+  },
+  {
+   "locale": "uk",
+   "file": "hourstaglite/uk.jpg",
+   "intended_locale": "uk",
+   "headline_locale": "uk",
+   "screenshot_locale": "uk",
+   "localized": true,
+   "screenshots_used": [
+    0
+   ],
+   "demo_language_check": {
+    "method": "ocr:ukr",
+    "script_chars": 374,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "line1 replaced (forbidden wording)",
+    "headline shortened to a shorter store hook: Тип: Потреба - Бажання - Імпульс",
+    "layout fallback closeup2->closeup2 (closeup2: text does not fit at minimum sizes)"
+   ],
+   "line1": "Тип: Потреба - Бажання - Імпульс",
+   "line2": "Потреба, бажання чи імпульс",
+   "chips": [
+    "Потреба, бажання чи імпульс",
+    "Тип: Потреба - Бажання - Імпульс"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.265,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        379,
+        72,
+        701,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.25,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        78,
+        184,
+        1002,
+        529
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.63,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Тип: Потреба - Бажання - Імпульс\nПотреба, бажання чи імпульс\n\n📲 Завантажуйте за посиланням у профілі (bio)\n\n#HoursTagLite",
+   "caption_link": "Тип: Потреба - Бажання - Імпульс\nПотреба, бажання чи імпульс\n\nApp Store: https://apps.apple.com/app/id6794039979\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/hourstaglite/uk.jpg"
+  },
+  {
+   "locale": "ur-PK",
+   "file": "hourstaglite/ur-PK.jpg",
+   "intended_locale": "ur-PK",
+   "headline_locale": "ur-PK",
+   "screenshot_locale": "ur-PK",
+   "localized": true,
+   "screenshots_used": [
+    0
+   ],
+   "demo_language_check": {
+    "method": "ocr:urd",
+    "script_chars": 235,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {
+    "0": [
+     "$1"
+    ]
+   },
+   "warnings": [
+    "line1 replaced (forbidden wording)",
+    "screen text flags remain (no clean screenshot available): {0: ['$1']}",
+    "layout fallback closeup2->closeup2 (closeup2: screen_area=0.232<0.24)"
+   ],
+   "line1": "قسم: ضرورت - چاہت - امپلس",
+   "line2": "ضرورت، چاہت یا امپلس",
+   "chips": [
+    "ضرورت، چاہت یا امپلس",
+    "آپ کا قدر کا رجحان - مکمل قدر کا تجزیہ"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.25,
+    "family": "closeup2",
+    "font": "NotoSansArabic.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        380,
+        72,
+        701,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.2,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        164,
+        184,
+        915,
+        625
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.82,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.3,
+        1.4
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "قسم: ضرورت - چاہت - امپلس\nضرورت، چاہت یا امپلس\n\n📲 بائیو میں دیے گئے لنک سے ڈاؤن لوڈ کریں\n\n#HoursTagLite",
+   "caption_link": "قسم: ضرورت - چاہت - امپلس\nضرورت، چاہت یا امپلس\n\nApp Store: https://apps.apple.com/app/id6794039979\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/hourstaglite/ur-PK.jpg"
+  },
+  {
+   "locale": "vi",
+   "file": "hourstaglite/vi.jpg",
+   "intended_locale": "vi",
+   "headline_locale": "vi",
+   "screenshot_locale": "vi",
+   "localized": true,
+   "screenshots_used": [
+    0
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "line1 replaced (forbidden wording)"
+   ],
+   "line1": "Loại: Cần - Muốn - Bốc đồng",
+   "line2": "Cần, Muốn hoặc Bốc đồng",
+   "chips": [
+    "Cần, Muốn hoặc Bốc đồng"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.251,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        379,
+        72,
+        701,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.25,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        91,
+        184,
+        989,
+        571
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.56,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "Loại: Cần - Muốn - Bốc đồng\nCần, Muốn hoặc Bốc đồng\n\n📲 Tải về qua link ở bio\n\n#HoursTagLite",
+   "caption_link": "Loại: Cần - Muốn - Bốc đồng\nCần, Muốn hoặc Bốc đồng\n\nApp Store: https://apps.apple.com/app/id6794039979\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/hourstaglite/vi.jpg"
+  },
+  {
+   "locale": "zh-Hans",
+   "file": "hourstaglite/zh-Hans.jpg",
+   "intended_locale": "zh-Hans",
+   "headline_locale": "zh-Hans",
+   "screenshot_locale": "zh-Hans",
+   "localized": true,
+   "screenshots_used": [
+    0
+   ],
+   "demo_language_check": {
+    "method": "ocr:chi_sim",
+    "script_chars": 122,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {
+    "0": [
+     "$1",
+     "$4",
+     "$8"
+    ]
+   },
+   "warnings": [
+    "screen text flags remain (no clean screenshot available): {0: ['$1', '$4', '$8']}"
+   ],
+   "line1": "剁手前先算工时",
+   "line2": "需要・想要・冲动一键标",
+   "chips": [
+    "需要・想要・冲动一键标",
+    "冲动消费前，先换算成工时",
+    "人生时间成本: 每工作一小时的实际收入价值"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.257,
+    "family": "closeup2",
+    "font": "NotoSansSC.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        281,
+        72,
+        799,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.09,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        157,
+        184,
+        923,
+        443
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.78,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        274,
+        467,
+        805,
+        554
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 14.52,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "剁手前先算工时\n需要・想要・冲动一键标\n\n📲 请到个人主页（bio）的链接下载\n\n#HoursTagLite",
+   "caption_link": "剁手前先算工时\n需要・想要・冲动一键标\n\nApp Store: https://apps.apple.com/app/id6794039979\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/hourstaglite/zh-Hans.jpg"
+  },
+  {
+   "locale": "zh-Hant",
+   "file": "hourstaglite/zh-Hant.jpg",
+   "intended_locale": "zh-Hant",
+   "headline_locale": "zh-Hant",
+   "screenshot_locale": "zh-Hant",
+   "localized": true,
+   "screenshots_used": [
+    0
+   ],
+   "demo_language_check": {
+    "method": "ocr:chi_tra",
+    "script_chars": 123,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {
+    "0": [
+     "$1",
+     "$4",
+     "$8"
+    ]
+   },
+   "warnings": [
+    "screen text flags remain (no clean screenshot available): {0: ['$1', '$4', '$8']}"
+   ],
+   "line1": "買前先算工時",
+   "line2": "需要・想要・衝動一次分",
+   "chips": [
+    "需要・想要・衝動一次分",
+    "衝動購物前，先換算成工時",
+    "人生時間成本: 每工作一小時的實領價值"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.257,
+    "family": "closeup2",
+    "font": "NotoSansTC.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        282,
+        72,
+        799,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.09,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        210,
+        184,
+        870,
+        442
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.93,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        274,
+        466,
+        805,
+        552
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 14.49,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "買前先算工時\n需要・想要・衝動一次分\n\n📲 請到個人檔案（bio）的連結下載\n\n#HoursTagLite",
+   "caption_link": "買前先算工時\n需要・想要・衝動一次分\n\nApp Store: https://apps.apple.com/app/id6794039979\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/hourstaglite/zh-Hant.jpg"
+  }
+ ]
+}

@@ -1,0 +1,6471 @@
+{
+ "schema": "lumi.promo_cards/v1",
+ "app": "dailymatelite",
+ "app_id": "6794725568",
+ "app_store_url": "https://apps.apple.com/app/id6794725568",
+ "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite",
+ "size": [
+  1080,
+  1350
+ ],
+ "built": "2026-10-23",
+ "items": [
+  {
+   "locale": "ar-SA",
+   "file": "dailymatelite/ar-SA.jpg",
+   "intended_locale": "ar-SA",
+   "headline_locale": "ar-SA",
+   "screenshot_locale": "ar-SA",
+   "localized": true,
+   "screenshots_used": [
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:ara",
+    "script_chars": 48,
+    "mixed_english_words": {
+     "1": [
+      "remove",
+      "large",
+      "metal"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [1] with mixed English strings [['remove', 'large', 'metal']]"
+   ],
+   "line1": "تكلّم بثقة في السفر",
+   "line2": "المطار والفندق والمطعم مع ردود طبيعية",
+   "chips": [
+    "المطار والفندق والمطعم مع ردود طبيعية",
+    "دليل محادثة للسفر بـ50 لغة",
+    "٨٬٤٠٠ زوج من العبارات والردود"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.242,
+    "family": "orbit2",
+    "font": "NotoSansArabic.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        309,
+        72,
+        771,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.93,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        86,
+        176,
+        995,
+        512
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 100,
+        "sub": 50,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.58,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.3,
+        1.4
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        891,
+        610,
+        1040,
+        886
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.07,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.4
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        840,
+        249,
+        1066
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.32,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.4
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "تكلّم بثقة في السفر\nالمطار والفندق والمطعم مع ردود طبيعية\n\n📲 حمّله من الرابط في الملف الشخصي (bio)\n\n#DailyMateLite",
+   "caption_link": "تكلّم بثقة في السفر\nالمطار والفندق والمطعم مع ردود طبيعية\n\nApp Store: https://apps.apple.com/app/id6794725568\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymatelite/ar-SA.jpg"
+  },
+  {
+   "locale": "bn-BD",
+   "file": "dailymatelite/bn-BD.jpg",
+   "intended_locale": "bn-BD",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": false
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "no localized storefront screenshot (English-only or lookup failed); whole card in en-US"
+   ],
+   "line1": "Speak Up Abroad",
+   "line2": "Real replies for airport, hotel and café",
+   "chips": [
+    "Real replies for airport, hotel and café",
+    "50-Language Travel Phrasebook",
+    "8,400 original cue-and-reply pairs"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.249,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        269,
+        72,
+        811,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.95,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        90,
+        176,
+        990,
+        489
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 100,
+        "sub": 50,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.3,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Speak Up Abroad\nReal replies for airport, hotel and café\n\n📲 Download via the link in bio\n\n#DailyMateLite",
+   "caption_link": "Speak Up Abroad\nReal replies for airport, hotel and café\n\nApp Store: https://apps.apple.com/app/id6794725568\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymatelite/bn-BD.jpg"
+  },
+  {
+   "locale": "ca",
+   "file": "dailymatelite/ca.jpg",
+   "intended_locale": "ca",
+   "headline_locale": "ca",
+   "screenshot_locale": "ca",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Parla quan viatges",
+   "line2": "Aeroport, hotel i restaurant",
+   "chips": [
+    "Aeroport, hotel i restaurant",
+    "Guia de conversa per viatjar",
+    "14 temes i 84 situacions quotidianes"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.272,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        290,
+        72,
+        789,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 15.0,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        89,
+        176,
+        991,
+        413
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.33,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        521,
+        250,
+        736
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.49,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      },
+      {
+       "kind": "card",
+       "plate": [
+        803,
+        779,
+        1040,
+        1039
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.39,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Parla quan viatges\nAeroport, hotel i restaurant\n\n📲 Descarrega-la des de l'enllaç de la bio\n\n#DailyMateLite",
+   "caption_link": "Parla quan viatges\nAeroport, hotel i restaurant\n\nApp Store: https://apps.apple.com/app/id6794725568\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymatelite/ca.jpg"
+  },
+  {
+   "locale": "cs",
+   "file": "dailymatelite/cs.jpg",
+   "intended_locale": "cs",
+   "headline_locale": "cs",
+   "screenshot_locale": "cs",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.23<0.24)"
+   ],
+   "line1": "Mluvte na cestách jistě",
+   "line2": "Letiště, hotel i restaurace",
+   "chips": [
+    "Letiště, hotel i restaurace",
+    "Konverzace na cesty: 50 jazyků",
+    "50 jazyků k procvičování"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.248,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.02,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        275,
+        72,
+        805,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.95,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        192,
+        176,
+        889,
+        551
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.55,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Mluvte na cestách jistě\nLetiště, hotel i restaurace\n\n📲 Stáhněte si ji přes odkaz v profilu (bio)\n\n#DailyMateLite",
+   "caption_link": "Mluvte na cestách jistě\nLetiště, hotel i restaurace\n\nApp Store: https://apps.apple.com/app/id6794725568\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymatelite/cs.jpg"
+  },
+  {
+   "locale": "da",
+   "file": "dailymatelite/da.jpg",
+   "intended_locale": "da",
+   "headline_locale": "da",
+   "screenshot_locale": "da",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Tal trygt på rejsen",
+   "line2": "Lufthavn, hotel og restaurant",
+   "chips": [
+    "Lufthavn, hotel og restaurant",
+    "Parlør til rejsen, 50 sprog",
+    "8.400 unikke indledninger og svar"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.268,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        304,
+        72,
+        776,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.96,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        81,
+        176,
+        999,
+        426
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 96,
+        "sub": 48,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.23,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        533,
+        219,
+        748
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.47,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Tal trygt på rejsen\nLufthavn, hotel og restaurant\n\n📲 Download via linket i bio\n\n#DailyMateLite",
+   "caption_link": "Tal trygt på rejsen\nLufthavn, hotel og restaurant\n\nApp Store: https://apps.apple.com/app/id6794725568\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymatelite/da.jpg"
+  },
+  {
+   "locale": "de-DE",
+   "file": "dailymatelite/de-DE.jpg",
+   "intended_locale": "de-DE",
+   "headline_locale": "de-DE",
+   "screenshot_locale": "de-DE",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Sicher auf Reisen",
+   "line2": "Flughafen, Hotel und Restaurant",
+   "chips": [
+    "Flughafen, Hotel und Restaurant",
+    "Sprachführer: Reise & Urlaub",
+    "8.400 eigenständige Impuls-Antwort-Paare"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.267,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        296,
+        72,
+        784,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 15.0,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        88,
+        176,
+        993,
+        428
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 100,
+        "sub": 50,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.94,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Sicher auf Reisen\nFlughafen, Hotel und Restaurant\n\n📲 Download über den Link in der Bio\n\n#DailyMateLite",
+   "caption_link": "Sicher auf Reisen\nFlughafen, Hotel und Restaurant\n\nApp Store: https://apps.apple.com/app/id6794725568\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymatelite/de-DE.jpg"
+  },
+  {
+   "locale": "el",
+   "file": "dailymatelite/el.jpg",
+   "intended_locale": "el",
+   "headline_locale": "el",
+   "screenshot_locale": "el",
+   "localized": true,
+   "screenshots_used": [
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:ell",
+    "script_chars": 74,
+    "mixed_english_words": {
+     "1": [
+      "remove",
+      "large",
+      "metal"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [1] with mixed English strings [['remove', 'large', 'metal']]",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.208<0.24; orbit2×1.08: screen_area=0.224<0.24)"
+   ],
+   "line1": "Μίλα άνετα στο ταξίδι",
+   "line2": "Αεροδρόμιο, ξενοδοχείο, εστιατόριο",
+   "chips": [
+    "Αεροδρόμιο, ξενοδοχείο, εστιατόριο",
+    "Οδηγός συνομιλίας για ταξίδια",
+    "8.400 πρωτότυπα ζεύγη διαλόγων"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.24,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        264,
+        72,
+        816,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.94,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        219,
+        176,
+        861,
+        624
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.63,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Μίλα άνετα στο ταξίδι\nΑεροδρόμιο, ξενοδοχείο, εστιατόριο\n\n📲 Λήψη από τον σύνδεσμο στο προφίλ (bio)\n\n#DailyMateLite",
+   "caption_link": "Μίλα άνετα στο ταξίδι\nΑεροδρόμιο, ξενοδοχείο, εστιατόριο\n\nApp Store: https://apps.apple.com/app/id6794725568\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymatelite/el.jpg"
+  },
+  {
+   "locale": "en-AU",
+   "file": "dailymatelite/en-AU.jpg",
+   "intended_locale": "en-AU",
+   "headline_locale": "en-AU",
+   "screenshot_locale": "en-AU",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Speak Up Abroad",
+   "line2": "Real replies for airport, hotel and café",
+   "chips": [
+    "Real replies for airport, hotel and café",
+    "50-Language Travel Phrasebook",
+    "8,400 original cue-and-reply pairs"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.249,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        269,
+        72,
+        811,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.95,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        90,
+        176,
+        990,
+        489
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 100,
+        "sub": 50,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.3,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Speak Up Abroad\nReal replies for airport, hotel and café\n\n📲 Download via the link in bio\n\n#DailyMateLite",
+   "caption_link": "Speak Up Abroad\nReal replies for airport, hotel and café\n\nApp Store: https://apps.apple.com/app/id6794725568\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymatelite/en-AU.jpg"
+  },
+  {
+   "locale": "en-CA",
+   "file": "dailymatelite/en-CA.jpg",
+   "intended_locale": "en-CA",
+   "headline_locale": "en-CA",
+   "screenshot_locale": "en-CA",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Speak Up Abroad",
+   "line2": "Real replies for airport, hotel and café",
+   "chips": [
+    "Real replies for airport, hotel and café",
+    "50-Language Travel Phrasebook",
+    "8,400 original cue-and-reply pairs"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.249,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        269,
+        72,
+        811,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.95,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        90,
+        176,
+        990,
+        489
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 100,
+        "sub": 50,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.3,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Speak Up Abroad\nReal replies for airport, hotel and café\n\n📲 Download via the link in bio\n\n#DailyMateLite",
+   "caption_link": "Speak Up Abroad\nReal replies for airport, hotel and café\n\nApp Store: https://apps.apple.com/app/id6794725568\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymatelite/en-CA.jpg"
+  },
+  {
+   "locale": "en-GB",
+   "file": "dailymatelite/en-GB.jpg",
+   "intended_locale": "en-GB",
+   "headline_locale": "en-GB",
+   "screenshot_locale": "en-GB",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Speak Up Abroad",
+   "line2": "Real replies for airport, hotel and café",
+   "chips": [
+    "Real replies for airport, hotel and café",
+    "50-Language Travel Phrasebook",
+    "8,400 original cue-and-reply pairs"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.249,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        269,
+        72,
+        811,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.95,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        90,
+        176,
+        990,
+        489
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 100,
+        "sub": 50,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.3,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Speak Up Abroad\nReal replies for airport, hotel and café\n\n📲 Download via the link in bio\n\n#DailyMateLite",
+   "caption_link": "Speak Up Abroad\nReal replies for airport, hotel and café\n\nApp Store: https://apps.apple.com/app/id6794725568\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymatelite/en-GB.jpg"
+  },
+  {
+   "locale": "en-US",
+   "file": "dailymatelite/en-US.jpg",
+   "intended_locale": "en-US",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Speak Up Abroad",
+   "line2": "Real replies for airport, hotel and café",
+   "chips": [
+    "Real replies for airport, hotel and café",
+    "50-Language Travel Phrasebook",
+    "8,400 original cue-and-reply pairs"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.249,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        269,
+        72,
+        811,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.95,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        90,
+        176,
+        990,
+        489
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 100,
+        "sub": 50,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.3,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Speak Up Abroad\nReal replies for airport, hotel and café\n\n📲 Download via the link in bio\n\n#DailyMateLite",
+   "caption_link": "Speak Up Abroad\nReal replies for airport, hotel and café\n\nApp Store: https://apps.apple.com/app/id6794725568\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymatelite/en-US.jpg"
+  },
+  {
+   "locale": "es-ES",
+   "file": "dailymatelite/es-ES.jpg",
+   "intended_locale": "es-ES",
+   "headline_locale": "es-ES",
+   "screenshot_locale": "es-ES",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Habla en tus viajes",
+   "line2": "Aeropuerto, hotel, restaurante: qué responder",
+   "chips": [
+    "Aeropuerto, hotel, restaurante: qué responder",
+    "Guía de conversación de viaje",
+    "50 idiomas para aprender"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.254,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        288,
+        72,
+        791,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.97,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        84,
+        176,
+        996,
+        470
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.28,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        822,
+        814,
+        1040,
+        1029
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.46,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Habla en tus viajes\nAeropuerto, hotel, restaurante: qué responder\n\n📲 Descárgala desde el enlace de la bio\n\n#DailyMateLite",
+   "caption_link": "Habla en tus viajes\nAeropuerto, hotel, restaurante: qué responder\n\nApp Store: https://apps.apple.com/app/id6794725568\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymatelite/es-ES.jpg"
+  },
+  {
+   "locale": "es-MX",
+   "file": "dailymatelite/es-MX.jpg",
+   "intended_locale": "es-MX",
+   "headline_locale": "es-MX",
+   "screenshot_locale": "es-MX",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Habla en tus viajes",
+   "line2": "Aeropuerto, hotel, restaurante: qué responder",
+   "chips": [
+    "Aeropuerto, hotel, restaurante: qué responder",
+    "Frases para viajar: 50 idiomas",
+    "50 idiomas para aprender"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.254,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        288,
+        72,
+        791,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.97,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        84,
+        176,
+        996,
+        470
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.28,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        572,
+        263,
+        778
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.55,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      },
+      {
+       "kind": "card",
+       "plate": [
+        822,
+        814,
+        1040,
+        1029
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.46,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Habla en tus viajes\nAeropuerto, hotel, restaurante: qué responder\n\n📲 Descárgala desde el enlace de la bio\n\n#DailyMateLite",
+   "caption_link": "Habla en tus viajes\nAeropuerto, hotel, restaurante: qué responder\n\nApp Store: https://apps.apple.com/app/id6794725568\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymatelite/es-MX.jpg"
+  },
+  {
+   "locale": "fi",
+   "file": "dailymatelite/fi.jpg",
+   "intended_locale": "fi",
+   "headline_locale": "fi",
+   "screenshot_locale": "fi",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.209<0.24; orbit2×1.08: screen_area=0.225<0.24)"
+   ],
+   "line1": "Puhu matkalla varmasti",
+   "line2": "Lentokenttä, hotelli ja ravintola",
+   "chips": [
+    "Lentokenttä, hotelli ja ravintola",
+    "Matkafraasit 50 kielellä",
+    "8 400 erilaista aloitusta ja vastausta"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.241,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        268,
+        72,
+        812,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.95,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        140,
+        176,
+        941,
+        622
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.58,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        840,
+        909,
+        1040,
+        1205
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.89,
+       "plate_alpha": 0.55,
+       "lines": 5,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Puhu matkalla varmasti\nLentokenttä, hotelli ja ravintola\n\n📲 Lataa bion linkistä\n\n#DailyMateLite",
+   "caption_link": "Puhu matkalla varmasti\nLentokenttä, hotelli ja ravintola\n\nApp Store: https://apps.apple.com/app/id6794725568\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymatelite/fi.jpg"
+  },
+  {
+   "locale": "fr-CA",
+   "file": "dailymatelite/fr-CA.jpg",
+   "intended_locale": "fr-CA",
+   "headline_locale": "fr-CA",
+   "screenshot_locale": "fr-CA",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "À l'aise en voyage",
+   "line2": "Aéroport, hôtel, restaurant : quoi répondre",
+   "chips": [
+    "Aéroport, hôtel, restaurant : quoi répondre",
+    "Conversation pour voyager",
+    "50 langues à pratiquer"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.247,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        374,
+        72,
+        707,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 15.08,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        87,
+        176,
+        993,
+        496
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 96,
+        "sub": 48,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.18,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        814,
+        830,
+        1040,
+        1000
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.52,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "À l'aise en voyage\nAéroport, hôtel, restaurant : quoi répondre\n\n📲 Téléchargez-la via le lien dans la bio\n\n#DailyMateLite",
+   "caption_link": "À l'aise en voyage\nAéroport, hôtel, restaurant : quoi répondre\n\nApp Store: https://apps.apple.com/app/id6794725568\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymatelite/fr-CA.jpg"
+  },
+  {
+   "locale": "fr-FR",
+   "file": "dailymatelite/fr-FR.jpg",
+   "intended_locale": "fr-FR",
+   "headline_locale": "fr-FR",
+   "screenshot_locale": "fr-FR",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "À l'aise en voyage",
+   "line2": "Aéroport, hôtel, restaurant : la bonne réponse",
+   "chips": [
+    "Aéroport, hôtel, restaurant : la bonne réponse",
+    "Guide de conversation voyage",
+    "50 langues à apprendre"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.247,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        374,
+        72,
+        707,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 15.08,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        87,
+        176,
+        993,
+        496
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 96,
+        "sub": 48,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.24,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        828,
+        830,
+        1040,
+        1045
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.06,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "À l'aise en voyage\nAéroport, hôtel, restaurant : la bonne réponse\n\n📲 Téléchargez-la via le lien dans la bio\n\n#DailyMateLite",
+   "caption_link": "À l'aise en voyage\nAéroport, hôtel, restaurant : la bonne réponse\n\nApp Store: https://apps.apple.com/app/id6794725568\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymatelite/fr-FR.jpg"
+  },
+  {
+   "locale": "gu-IN",
+   "file": "dailymatelite/gu-IN.jpg",
+   "intended_locale": "gu-IN",
+   "headline_locale": "gu-IN",
+   "screenshot_locale": "gu-IN",
+   "localized": true,
+   "screenshots_used": [
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:guj",
+    "script_chars": 32,
+    "mixed_english_words": {
+     "1": [
+      "remove",
+      "large",
+      "metal"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [1] with mixed English strings [['remove', 'large', 'metal']]"
+   ],
+   "line1": "વિદેશમાં બોલતાં ન અટકો",
+   "line2": "એરપોર્ટ, હોટેલ, રેસ્ટોરન્ટની વાતચીત",
+   "chips": [
+    "એરપોર્ટ, હોટેલ, રેસ્ટોરન્ટની વાતચીત",
+    "વિદેશમાં વાતચીત, 50 ભાષામાં",
+    "8,400 મૌલિક સંકેત–જવાબની જોડીઓ"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.26,
+    "family": "orbit2",
+    "font": "NotoSansGujarati.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        304,
+        72,
+        776,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 15.01,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        76,
+        176,
+        1005,
+        452
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.14,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        556,
+        226,
+        780
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.51,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.5
+      },
+      {
+       "kind": "card",
+       "plate": [
+        802,
+        803,
+        1040,
+        1028
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.58,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "વિદેશમાં બોલતાં ન અટકો\nએરપોર્ટ, હોટેલ, રેસ્ટોરન્ટની વાતચીત\n\n📲 બાયોમાંની લિંકથી ડાઉનલોડ કરો\n\n#DailyMateLite",
+   "caption_link": "વિદેશમાં બોલતાં ન અટકો\nએરપોર્ટ, હોટેલ, રેસ્ટોરન્ટની વાતચીત\n\nApp Store: https://apps.apple.com/app/id6794725568\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymatelite/gu-IN.jpg"
+  },
+  {
+   "locale": "he",
+   "file": "dailymatelite/he.jpg",
+   "intended_locale": "he",
+   "headline_locale": "he",
+   "screenshot_locale": "he",
+   "localized": true,
+   "screenshots_used": [
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:heb",
+    "script_chars": 40,
+    "mixed_english_words": {
+     "1": [
+      "remove",
+      "large",
+      "metal"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [1] with mixed English strings [['remove', 'large', 'metal']]",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.206<0.24; orbit2×1.08: screen_area=0.223<0.24; orbit2×1.16: screen_area=0.238<0.24)"
+   ],
+   "line1": "מדברים בביטחון בטיול",
+   "line2": "שדה תעופה, מלון ומסעדה עם תשובה טבעית",
+   "chips": [
+    "שדה תעופה, מלון ומסעדה עם תשובה טבעית",
+    "שיחון לטיולים ב-50 שפות",
+    "8,400 זוגות של משפטים ותשובות"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.256,
+    "family": "orbit2",
+    "font": "NotoSansHebrew.ttf",
+    "screen_ratio_vs_battai_split": 1.37,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        316,
+        72,
+        763,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.94,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        184,
+        176,
+        895,
+        629
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.58,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.3,
+        1.4
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        889,
+        716,
+        1040,
+        986
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.73,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.4
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        913,
+        204,
+        1183
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.23,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.4
+      }
+     ]
+    },
+    "phone_scale": 1.25,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "מדברים בביטחון בטיול\nשדה תעופה, מלון ומסעדה עם תשובה טבעית\n\n📲 הורדה דרך הקישור בביו\n\n#DailyMateLite",
+   "caption_link": "מדברים בביטחון בטיול\nשדה תעופה, מלון ומסעדה עם תשובה טבעית\n\nApp Store: https://apps.apple.com/app/id6794725568\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymatelite/he.jpg"
+  },
+  {
+   "locale": "hi",
+   "file": "dailymatelite/hi.jpg",
+   "intended_locale": "hi",
+   "headline_locale": "hi",
+   "screenshot_locale": "hi",
+   "localized": true,
+   "screenshots_used": [
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:hin",
+    "script_chars": 6,
+    "mixed_english_words": {
+     "1": [
+      "remove",
+      "large",
+      "metal"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [1] with mixed English strings [['remove', 'large', 'metal']]"
+   ],
+   "line1": "सफ़र में बेझिझक बोलें",
+   "line2": "एयरपोर्ट, होटल और रेस्तरां के जवाब",
+   "chips": [
+    "एयरपोर्ट, होटल और रेस्तरां के जवाब",
+    "सफ़र की बातचीत, 50 भाषाएँ",
+    "8,400 मौलिक संकेत–जवाब जोड़ियाँ"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.254,
+    "family": "orbit2",
+    "font": "NotoSansDevanagari.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        314,
+        72,
+        767,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 15.01,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        83,
+        176,
+        997,
+        472
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 100,
+        "sub": 50,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.01,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        574,
+        211,
+        802
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.55,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.5
+      },
+      {
+       "kind": "card",
+       "plate": [
+        811,
+        816,
+        1040,
+        1047
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.47,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "सफ़र में बेझिझक बोलें\nएयरपोर्ट, होटल और रेस्तरां के जवाब\n\n📲 बायो में दिए लिंक से डाउनलोड करें\n\n#DailyMateLite",
+   "caption_link": "सफ़र में बेझिझक बोलें\nएयरपोर्ट, होटल और रेस्तरां के जवाब\n\nApp Store: https://apps.apple.com/app/id6794725568\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymatelite/hi.jpg"
+  },
+  {
+   "locale": "hr",
+   "file": "dailymatelite/hr.jpg",
+   "intended_locale": "hr",
+   "headline_locale": "hr",
+   "screenshot_locale": "hr",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.23<0.24)"
+   ],
+   "line1": "Govori sigurno na putu",
+   "line2": "Zračna luka, hotel i restoran",
+   "chips": [
+    "Zračna luka, hotel i restoran",
+    "Razgovornik za put, 50 jezika",
+    "8.400 izvornih parova replika i odgovora"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.248,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.02,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        265,
+        72,
+        815,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.95,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        134,
+        176,
+        946,
+        552
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.54,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        827,
+        865,
+        1040,
+        1170
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.0,
+       "plate_alpha": 0.55,
+       "lines": 5,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Govori sigurno na putu\nZračna luka, hotel i restoran\n\n📲 Preuzmi putem poveznice u biografiji (bio)\n\n#DailyMateLite",
+   "caption_link": "Govori sigurno na putu\nZračna luka, hotel i restoran\n\nApp Store: https://apps.apple.com/app/id6794725568\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymatelite/hr.jpg"
+  },
+  {
+   "locale": "hu",
+   "file": "dailymatelite/hu.jpg",
+   "intended_locale": "hu",
+   "headline_locale": "hu",
+   "screenshot_locale": "hu",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Szólalj meg bátran",
+   "line2": "Reptér, szálloda és étterem",
+   "chips": [
+    "Reptér, szálloda és étterem",
+    "Úti társalgás 50 nyelven",
+    "8400 eredeti mondat–válasz pár"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.272,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        285,
+        72,
+        795,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.96,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        90,
+        176,
+        990,
+        413
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.34,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        521,
+        256,
+        736
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.47,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Szólalj meg bátran\nReptér, szálloda és étterem\n\n📲 Töltsd le a bio linkjéről\n\n#DailyMateLite",
+   "caption_link": "Szólalj meg bátran\nReptér, szálloda és étterem\n\nApp Store: https://apps.apple.com/app/id6794725568\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymatelite/hu.jpg"
+  },
+  {
+   "locale": "id",
+   "file": "dailymatelite/id.jpg",
+   "intended_locale": "id",
+   "headline_locale": "id",
+   "screenshot_locale": "id",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.214<0.24; orbit2×1.08: screen_area=0.23<0.24)"
+   ],
+   "line1": "Lancar saat traveling",
+   "line2": "Bandara, hotel, dan restoran",
+   "chips": [
+    "Bandara, hotel, dan restoran",
+    "Percakapan liburan, 50 bahasa",
+    "8.400 pasangan kalimat dan balasan"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.247,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        374,
+        72,
+        707,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 15.08,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        216,
+        176,
+        863,
+        605
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.66,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Lancar saat traveling\nBandara, hotel, dan restoran\n\n📲 Unduh lewat link di bio\n\n#DailyMateLite",
+   "caption_link": "Lancar saat traveling\nBandara, hotel, dan restoran\n\nApp Store: https://apps.apple.com/app/id6794725568\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymatelite/id.jpg"
+  },
+  {
+   "locale": "it",
+   "file": "dailymatelite/it.jpg",
+   "intended_locale": "it",
+   "headline_locale": "it",
+   "screenshot_locale": "it",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Parla in viaggio",
+   "line2": "Aeroporto, hotel, ristorante: cosa rispondere",
+   "chips": [
+    "Aeroporto, hotel, ristorante: cosa rispondere",
+    "Frasario di viaggio, 50 lingue",
+    "14 argomenti e 84 situazioni quotidiane"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.245,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        298,
+        72,
+        782,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 15.01,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        115,
+        176,
+        965,
+        501
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.35,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        600,
+        248,
+        815
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.56,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      },
+      {
+       "kind": "card",
+       "plate": [
+        821,
+        834,
+        1040,
+        1139
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.97,
+       "plate_alpha": 0.55,
+       "lines": 5,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Parla in viaggio\nAeroporto, hotel, ristorante: cosa rispondere\n\n📲 Scaricala dal link nella bio\n\n#DailyMateLite",
+   "caption_link": "Parla in viaggio\nAeroporto, hotel, ristorante: cosa rispondere\n\nApp Store: https://apps.apple.com/app/id6794725568\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymatelite/it.jpg"
+  },
+  {
+   "locale": "ja",
+   "file": "dailymatelite/ja.jpg",
+   "intended_locale": "ja",
+   "headline_locale": "ja",
+   "screenshot_locale": "ja",
+   "localized": true,
+   "screenshots_used": [
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:jpn",
+    "script_chars": 23,
+    "mixed_english_words": {
+     "1": [
+      "remove",
+      "large",
+      "metal"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [1] with mixed English strings [['remove', 'large', 'metal']]"
+   ],
+   "line1": "旅先で固まらない",
+   "line2": "空港・ホテル・レストランの受け答え",
+   "chips": [
+    "空港・ホテル・レストランの受け答え",
+    "旅行会話の受け答え・50言語",
+    "8,400組の問いかけと返答"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.246,
+    "family": "orbit2",
+    "font": "NotoSansJP.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        278,
+        72,
+        802,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.94,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        107,
+        176,
+        973,
+        498
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.55,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        835,
+        832,
+        1040,
+        1044
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.33,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "旅先で固まらない\n空港・ホテル・レストランの受け答え\n\n📲 ダウンロードはプロフィール（bio）のリンクから\n\n#DailyMateLite",
+   "caption_link": "旅先で固まらない\n空港・ホテル・レストランの受け答え\n\nApp Store: https://apps.apple.com/app/id6794725568\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymatelite/ja.jpg"
+  },
+  {
+   "locale": "kn-IN",
+   "file": "dailymatelite/kn-IN.jpg",
+   "intended_locale": "kn-IN",
+   "headline_locale": "kn-IN",
+   "screenshot_locale": "kn-IN",
+   "localized": true,
+   "screenshots_used": [
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:kan",
+    "script_chars": 45,
+    "mixed_english_words": {
+     "1": [
+      "remove",
+      "large",
+      "metal"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [1] with mixed English strings [['remove', 'large', 'metal']]",
+    "layout fallback orbit2->closeup2 (orbit2: screen_area=0.183<0.24; orbit2×1.08: screen_area=0.197<0.24; orbit2×1.16: screen_area=0.211<0.24; orbit2×1.25: screen_area=0.227<0.24; split2: text does not fit at minimum sizes; closeup2: screen_area=0.201<0.24; closeup2×1.08: screen_area=0.217<0.24; closeup2×1.16: screen_area=0.232<0.24)"
+   ],
+   "line1": "ವಿದೇಶದಲ್ಲೂ ಸಹಜ ಮಾತು",
+   "line2": "50 ಭಾಷೆ · ಪ್ರವಾಸದ ಸಂಭಾಷಣೆ",
+   "chips": [
+    "50 ಭಾಷೆ · ಪ್ರವಾಸದ ಸಂಭಾಷಣೆ",
+    "ಪ್ರವಾಸ ಸಂಭಾಷಣೆ, 50 ಭಾಷೆಗಳಲ್ಲಿ",
+    "8,400 ಮೂಲ ಸುಳಿವು–ಉತ್ತರ ಜೋಡಿಗಳು"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.249,
+    "family": "closeup2",
+    "font": "NotoSansKannada.ttf",
+    "screen_ratio_vs_battai_split": 1.77,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        248,
+        72,
+        831,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.94,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        220,
+        184,
+        860,
+        715
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.61,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.25,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "ವಿದೇಶದಲ್ಲೂ ಸಹಜ ಮಾತು\n50 ಭಾಷೆ · ಪ್ರವಾಸದ ಸಂಭಾಷಣೆ\n\n📲 ಬಯೋದಲ್ಲಿರುವ ಲಿಂಕ್‌ನಿಂದ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ\n\n#DailyMateLite",
+   "caption_link": "ವಿದೇಶದಲ್ಲೂ ಸಹಜ ಮಾತು\n50 ಭಾಷೆ · ಪ್ರವಾಸದ ಸಂಭಾಷಣೆ\n\nApp Store: https://apps.apple.com/app/id6794725568\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymatelite/kn-IN.jpg"
+  },
+  {
+   "locale": "ko",
+   "file": "dailymatelite/ko.jpg",
+   "intended_locale": "ko",
+   "headline_locale": "ko",
+   "screenshot_locale": "ko",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:kor",
+    "script_chars": 117,
+    "mixed_english_words": {
+     "0": [
+      "remove",
+      "large",
+      "metal"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [0] with mixed English strings [['remove', 'large', 'metal']]",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.229<0.24)"
+   ],
+   "line1": "여행지에서 말문이 트여요",
+   "line2": "공항·호텔·식당 대화 연습",
+   "chips": [
+    "공항·호텔·식당 대화 연습",
+    "50개 언어 상황별 여행 회화",
+    "8,400개의 상황별 질문·대답"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.247,
+    "family": "orbit2",
+    "font": "NotoSansKR.ttf",
+    "screen_ratio_vs_battai_split": 1.02,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        264,
+        72,
+        816,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.94,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        225,
+        176,
+        855,
+        553
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.64,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        647,
+        218,
+        858
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.59,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      },
+      {
+       "kind": "card",
+       "plate": [
+        854,
+        866,
+        1040,
+        1077
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.47,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "여행지에서 말문이 트여요\n공항·호텔·식당 대화 연습\n\n📲 다운로드는 프로필(bio) 링크에서\n\n#DailyMateLite",
+   "caption_link": "여행지에서 말문이 트여요\n공항·호텔·식당 대화 연습\n\nApp Store: https://apps.apple.com/app/id6794725568\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymatelite/ko.jpg"
+  },
+  {
+   "locale": "ml-IN",
+   "file": "dailymatelite/ml-IN.jpg",
+   "intended_locale": "ml-IN",
+   "headline_locale": "ml-IN",
+   "screenshot_locale": "ml-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:mal",
+    "script_chars": 457,
+    "mixed_english_words": {
+     "0": [
+      "remove",
+      "large",
+      "metal"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [0] with mixed English strings [['remove', 'large', 'metal']]",
+    "layout fallback orbit2->closeup2 (orbit2: screen_area=0.184<0.24; orbit2×1.08: screen_area=0.199<0.24; orbit2×1.16: screen_area=0.213<0.24; orbit2×1.25: screen_area=0.229<0.24; split2: text does not fit at minimum sizes; closeup2: screen_area=0.203<0.24; closeup2×1.08: screen_area=0.219<0.24; closeup2×1.16: screen_area=0.234<0.24)"
+   ],
+   "line1": "യാത്രയിൽ മടിക്കാതെ",
+   "line2": "50 ഭാഷ · യാത്രാ സംഭാഷണം",
+   "chips": [
+    "50 ഭാഷ · യാത്രാ സംഭാഷണം",
+    "യാത്രാ സംഭാഷണം, 50 ഭാഷകളിൽ",
+    "8,400 തനത് സൂചന–മറുപടി ജോടികൾ"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.251,
+    "family": "closeup2",
+    "font": "NotoSansMalayalam.ttf",
+    "screen_ratio_vs_battai_split": 1.77,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        256,
+        72,
+        825,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.94,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        204,
+        184,
+        875,
+        710
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.56,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.25,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "യാത്രയിൽ മടിക്കാതെ\n50 ഭാഷ · യാത്രാ സംഭാഷണം\n\n📲 ബയോയിലെ ലിങ്ക് വഴി ഡൗൺലോഡ് ചെയ്യുക\n\n#DailyMateLite",
+   "caption_link": "യാത്രയിൽ മടിക്കാതെ\n50 ഭാഷ · യാത്രാ സംഭാഷണം\n\nApp Store: https://apps.apple.com/app/id6794725568\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymatelite/ml-IN.jpg"
+  },
+  {
+   "locale": "mr-IN",
+   "file": "dailymatelite/mr-IN.jpg",
+   "intended_locale": "mr-IN",
+   "headline_locale": "mr-IN",
+   "screenshot_locale": "mr-IN",
+   "localized": true,
+   "screenshots_used": [
+    0
+   ],
+   "demo_language_check": {
+    "method": "ocr:mar",
+    "script_chars": 31,
+    "mixed_english_words": {
+     "1": [
+      "remove",
+      "large",
+      "metal"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [1] with mixed English strings [['remove', 'large', 'metal']]"
+   ],
+   "line1": "प्रवासात बिनधास्त बोला",
+   "line2": "विमानतळ, हॉटेल आणि रेस्टॉरंटची उत्तरे",
+   "chips": [
+    "विमानतळ, हॉटेल आणि रेस्टॉरंटची उत्तरे",
+    "प्रवासातील बोलचाल, 50 भाषा",
+    "8,400 स्वतंत्र संकेत-उत्तर जोड्या"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.26,
+    "family": "orbit2",
+    "font": "NotoSansDevanagari.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        291,
+        72,
+        789,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.96,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        82,
+        176,
+        997,
+        452
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.21,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        556,
+        218,
+        780
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.51,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.5
+      },
+      {
+       "kind": "card",
+       "plate": [
+        831,
+        803,
+        1040,
+        1028
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.62,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "प्रवासात बिनधास्त बोला\nविमानतळ, हॉटेल आणि रेस्टॉरंटची उत्तरे\n\n📲 बायोमधील लिंकवरून डाउनलोड करा\n\n#DailyMateLite",
+   "caption_link": "प्रवासात बिनधास्त बोला\nविमानतळ, हॉटेल आणि रेस्टॉरंटची उत्तरे\n\nApp Store: https://apps.apple.com/app/id6794725568\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymatelite/mr-IN.jpg"
+  },
+  {
+   "locale": "ms",
+   "file": "dailymatelite/ms.jpg",
+   "intended_locale": "ms",
+   "headline_locale": "ms",
+   "screenshot_locale": "ms",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.212<0.24; orbit2×1.08: screen_area=0.228<0.24)"
+   ],
+   "line1": "Yakin semasa melancong",
+   "line2": "Lapangan terbang, hotel dan restoran",
+   "chips": [
+    "Lapangan terbang, hotel dan restoran",
+    "Perbualan melancong, 50 bahasa",
+    "8,400 pasangan ungkapan dan balasan asli"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.245,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        256,
+        72,
+        823,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.95,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        160,
+        176,
+        919,
+        611
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.55,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Yakin semasa melancong\nLapangan terbang, hotel dan restoran\n\n📲 Muat turun melalui pautan dalam bio\n\n#DailyMateLite",
+   "caption_link": "Yakin semasa melancong\nLapangan terbang, hotel dan restoran\n\nApp Store: https://apps.apple.com/app/id6794725568\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymatelite/ms.jpg"
+  },
+  {
+   "locale": "nl-NL",
+   "file": "dailymatelite/nl-NL.jpg",
+   "intended_locale": "nl-NL",
+   "headline_locale": "nl-NL",
+   "screenshot_locale": "nl-NL",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Praten op reis",
+   "line2": "Vliegveld, hotel en restaurant",
+   "chips": [
+    "Vliegveld, hotel en restaurant",
+    "Taalgids op reis in 50 talen",
+    "8.400 paren van aanzetten en antwoorden"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.249,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        290,
+        72,
+        790,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 15.01,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        156,
+        176,
+        923,
+        489
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.57,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        590,
+        228,
+        796
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.51,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Praten op reis\nVliegveld, hotel en restaurant\n\n📲 Download via de link in bio\n\n#DailyMateLite",
+   "caption_link": "Praten op reis\nVliegveld, hotel en restaurant\n\nApp Store: https://apps.apple.com/app/id6794725568\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymatelite/nl-NL.jpg"
+  },
+  {
+   "locale": "no",
+   "file": "dailymatelite/no.jpg",
+   "intended_locale": "no",
+   "headline_locale": "no",
+   "screenshot_locale": "no",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.209<0.24; orbit2×1.08: screen_area=0.225<0.24)"
+   ],
+   "line1": "Snakk trygt på reisen",
+   "line2": "Flyplass, hotell og restaurant",
+   "chips": [
+    "Flyplass, hotell og restaurant",
+    "Parlør for reisen, 50 språk",
+    "8 400 unike åpninger og svar"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.241,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        278,
+        72,
+        802,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.95,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        210,
+        176,
+        869,
+        622
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.64,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        709,
+        237,
+        924
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.48,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      },
+      {
+       "kind": "card",
+       "plate": [
+        851,
+        909,
+        1040,
+        1169
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.92,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Snakk trygt på reisen\nFlyplass, hotell og restaurant\n\n📲 Last ned via lenken i bio\n\n#DailyMateLite",
+   "caption_link": "Snakk trygt på reisen\nFlyplass, hotell og restaurant\n\nApp Store: https://apps.apple.com/app/id6794725568\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymatelite/no.jpg"
+  },
+  {
+   "locale": "or-IN",
+   "file": "dailymatelite/or-IN.jpg",
+   "intended_locale": "or-IN",
+   "headline_locale": "or-IN",
+   "screenshot_locale": "or-IN",
+   "localized": true,
+   "screenshots_used": [
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:ori",
+    "script_chars": 33,
+    "mixed_english_words": {
+     "1": [
+      "remove",
+      "large",
+      "metal"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [1] with mixed English strings [['remove', 'large', 'metal']]",
+    "layout fallback orbit2->closeup2 (orbit2: screen_area=0.18<0.24; orbit2×1.08: screen_area=0.194<0.24; orbit2×1.16: screen_area=0.208<0.24; orbit2×1.25: screen_area=0.224<0.24; split2: text does not fit at minimum sizes; closeup2: screen_area=0.199<0.24; closeup2×1.08: screen_area=0.214<0.24; closeup2×1.16: screen_area=0.229<0.24)"
+   ],
+   "line1": "ବିଦେଶରେ ନିଃସଙ୍କୋଚରେ କୁହନ୍ତୁ",
+   "line2": "ବିମାନବନ୍ଦର, ହୋଟେଲ, ରେଷ୍ଟୁରାଣ୍ଟ କଥାବାର୍ତ୍ତା",
+   "chips": [
+    "ବିମାନବନ୍ଦର, ହୋଟେଲ, ରେଷ୍ଟୁରାଣ୍ଟ କଥାବାର୍ତ୍ତା",
+    "ଯାତ୍ରା କଥାବାର୍ତ୍ତା, 50 ଭାଷା",
+    "8,400ଟି ସ୍ୱତନ୍ତ୍ର ସଙ୍କେତ-ଉତ୍ତର ଯୋଡ଼ି"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.246,
+    "family": "closeup2",
+    "font": "NotoSansOriya.ttf",
+    "screen_ratio_vs_battai_split": 1.77,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        300,
+        72,
+        780,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.95,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        82,
+        184,
+        997,
+        723
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.09,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.25,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "ବିଦେଶରେ ନିଃସଙ୍କୋଚରେ କୁହନ୍ତୁ\nବିମାନବନ୍ଦର, ହୋଟେଲ, ରେଷ୍ଟୁରାଣ୍ଟ କଥାବାର୍ତ୍ତା\n\n📲 ବାୟୋରେ ଥିବା ଲିଙ୍କରୁ ଡାଉନଲୋଡ୍ କରନ୍ତୁ\n\n#DailyMateLite",
+   "caption_link": "ବିଦେଶରେ ନିଃସଙ୍କୋଚରେ କୁହନ୍ତୁ\nବିମାନବନ୍ଦର, ହୋଟେଲ, ରେଷ୍ଟୁରାଣ୍ଟ କଥାବାର୍ତ୍ତା\n\nApp Store: https://apps.apple.com/app/id6794725568\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymatelite/or-IN.jpg"
+  },
+  {
+   "locale": "pa-IN",
+   "file": "dailymatelite/pa-IN.jpg",
+   "intended_locale": "pa-IN",
+   "headline_locale": "pa-IN",
+   "screenshot_locale": "pa-IN",
+   "localized": true,
+   "screenshots_used": [
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:pan",
+    "script_chars": 6,
+    "mixed_english_words": {
+     "1": [
+      "remove",
+      "large",
+      "metal"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [1] with mixed English strings [['remove', 'large', 'metal']]"
+   ],
+   "line1": "ਵਿਦੇਸ਼ ਵਿੱਚ ਬੇਝਿਜਕ ਬੋਲੋ",
+   "line2": "ਹਵਾਈ ਅੱਡੇ, ਹੋਟਲ, ਰੈਸਟੋਰੈਂਟ ਦੀ ਗੱਲਬਾਤ",
+   "chips": [
+    "ਹਵਾਈ ਅੱਡੇ, ਹੋਟਲ, ਰੈਸਟੋਰੈਂਟ ਦੀ ਗੱਲਬਾਤ",
+    "ਸਫ਼ਰ ਦੀ ਗੱਲਬਾਤ, 50 ਭਾਸ਼ਾਵਾਂ",
+    "8,400 ਵੱਖਰੇ ਸੰਕੇਤ-ਜਵਾਬ ਜੋੜੇ"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.257,
+    "family": "orbit2",
+    "font": "NotoSansGurmukhi.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        318,
+        72,
+        762,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 15.01,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        84,
+        176,
+        996,
+        461
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 96,
+        "sub": 48,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.01,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        564,
+        214,
+        788
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.53,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.5
+      },
+      {
+       "kind": "card",
+       "plate": [
+        852,
+        809,
+        1040,
+        1088
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.89,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "ਵਿਦੇਸ਼ ਵਿੱਚ ਬੇਝਿਜਕ ਬੋਲੋ\nਹਵਾਈ ਅੱਡੇ, ਹੋਟਲ, ਰੈਸਟੋਰੈਂਟ ਦੀ ਗੱਲਬਾਤ\n\n📲 ਬਾਇਓ ਵਿੱਚ ਦਿੱਤੇ ਲਿੰਕ ਤੋਂ ਡਾਊਨਲੋਡ ਕਰੋ\n\n#DailyMateLite",
+   "caption_link": "ਵਿਦੇਸ਼ ਵਿੱਚ ਬੇਝਿਜਕ ਬੋਲੋ\nਹਵਾਈ ਅੱਡੇ, ਹੋਟਲ, ਰੈਸਟੋਰੈਂਟ ਦੀ ਗੱਲਬਾਤ\n\nApp Store: https://apps.apple.com/app/id6794725568\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymatelite/pa-IN.jpg"
+  },
+  {
+   "locale": "pl",
+   "file": "dailymatelite/pl.jpg",
+   "intended_locale": "pl",
+   "headline_locale": "pl",
+   "screenshot_locale": "pl",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.208<0.24; orbit2×1.08: screen_area=0.224<0.24)"
+   ],
+   "line1": "Mów pewnie w podróży",
+   "line2": "Lotnisko, hotel i restauracja",
+   "chips": [
+    "Lotnisko, hotel i restauracja",
+    "Rozmówki w podróży: 50 języków",
+    "50 języków do nauki"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.24,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        234,
+        72,
+        845,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.9,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        190,
+        176,
+        889,
+        623
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.62,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Mów pewnie w podróży\nLotnisko, hotel i restauracja\n\n📲 Pobierz przez link w bio\n\n#DailyMateLite",
+   "caption_link": "Mów pewnie w podróży\nLotnisko, hotel i restauracja\n\nApp Store: https://apps.apple.com/app/id6794725568\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymatelite/pl.jpg"
+  },
+  {
+   "locale": "pt-BR",
+   "file": "dailymatelite/pt-BR.jpg",
+   "intended_locale": "pt-BR",
+   "headline_locale": "pt-BR",
+   "screenshot_locale": "pt-BR",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Fale na viagem",
+   "line2": "Aeroporto, hotel e restaurante",
+   "chips": [
+    "Aeroporto, hotel e restaurante",
+    "Guia de conversação de viagem",
+    "50 idiomas"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.265,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        286,
+        72,
+        793,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.95,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        128,
+        176,
+        951,
+        436
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.23,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        822,
+        793,
+        1040,
+        909
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.13,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Fale na viagem\nAeroporto, hotel e restaurante\n\n📲 Baixe pelo link na bio\n\n#DailyMateLite",
+   "caption_link": "Fale na viagem\nAeroporto, hotel e restaurante\n\nApp Store: https://apps.apple.com/app/id6794725568\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymatelite/pt-BR.jpg"
+  },
+  {
+   "locale": "pt-PT",
+   "file": "dailymatelite/pt-PT.jpg",
+   "intended_locale": "pt-PT",
+   "headline_locale": "pt-PT",
+   "screenshot_locale": "pt-PT",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Fale em viagem",
+   "line2": "Aeroporto, hotel e restaurante",
+   "chips": [
+    "Aeroporto, hotel e restaurante",
+    "Guia de conversação em viagem",
+    "50 línguas"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.265,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        286,
+        72,
+        793,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.95,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        112,
+        176,
+        968,
+        436
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.08,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        833,
+        793,
+        1040,
+        918
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.12,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Fale em viagem\nAeroporto, hotel e restaurante\n\n📲 Download via the link in bio\n\n#DailyMateLite",
+   "caption_link": "Fale em viagem\nAeroporto, hotel e restaurante\n\nApp Store: https://apps.apple.com/app/id6794725568\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite",
+   "cta_source": "en-fallback",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymatelite/pt-PT.jpg"
+  },
+  {
+   "locale": "ro",
+   "file": "dailymatelite/ro.jpg",
+   "intended_locale": "ro",
+   "headline_locale": "ro",
+   "screenshot_locale": "ro",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.228<0.24)"
+   ],
+   "line1": "Vorbește sigur în călătorii",
+   "line2": "Aeroport, hotel și restaurant",
+   "chips": [
+    "Aeroport, hotel și restaurant",
+    "Ghid de conversație turistic",
+    "50 de limbi"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.246,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.02,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        272,
+        72,
+        808,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.95,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        132,
+        176,
+        947,
+        558
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.5,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        917,
+        869,
+        1040,
+        1030
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.98,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Vorbește sigur în călătorii\nAeroport, hotel și restaurant\n\n📲 Descarcă din linkul din bio\n\n#DailyMateLite",
+   "caption_link": "Vorbește sigur în călătorii\nAeroport, hotel și restaurant\n\nApp Store: https://apps.apple.com/app/id6794725568\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymatelite/ro.jpg"
+  },
+  {
+   "locale": "ru",
+   "file": "dailymatelite/ru.jpg",
+   "intended_locale": "ru",
+   "headline_locale": "ru",
+   "screenshot_locale": "ru",
+   "localized": true,
+   "screenshots_used": [
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:rus",
+    "script_chars": 63,
+    "mixed_english_words": {
+     "1": [
+      "remove",
+      "large",
+      "metal"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [1] with mixed English strings [['remove', 'large', 'metal']]"
+   ],
+   "line1": "Смело в поездке",
+   "line2": "Аэропорт, отель, ресторан",
+   "chips": [
+    "Аэропорт, отель, ресторан",
+    "Разговорник туриста: 50 языков",
+    "8 400 оригинальных пар реплик и ответов"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.269,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        252,
+        72,
+        829,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.94,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        84,
+        176,
+        997,
+        423
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 100,
+        "sub": 50,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.26,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Смело в поездке\nАэропорт, отель, ресторан\n\n📲 Скачать можно по ссылке в профиле (bio)\n\n#DailyMateLite",
+   "caption_link": "Смело в поездке\nАэропорт, отель, ресторан\n\nApp Store: https://apps.apple.com/app/id6794725568\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymatelite/ru.jpg"
+  },
+  {
+   "locale": "sk",
+   "file": "dailymatelite/sk.jpg",
+   "intended_locale": "sk",
+   "headline_locale": "sk",
+   "screenshot_locale": "sk",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.23<0.24)"
+   ],
+   "line1": "Hovorte na cestách smelo",
+   "line2": "Letisko, hotel aj reštaurácia",
+   "chips": [
+    "Letisko, hotel aj reštaurácia",
+    "Konverzácia na dovolenku",
+    "50 jazykov na učenie"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.248,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.02,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        252,
+        72,
+        827,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.94,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        147,
+        176,
+        933,
+        552
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.25,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        829,
+        865,
+        1040,
+        1026
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.2,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Hovorte na cestách smelo\nLetisko, hotel aj reštaurácia\n\n📲 Stiahnite si ju cez odkaz v profile (bio)\n\n#DailyMateLite",
+   "caption_link": "Hovorte na cestách smelo\nLetisko, hotel aj reštaurácia\n\nApp Store: https://apps.apple.com/app/id6794725568\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymatelite/sk.jpg"
+  },
+  {
+   "locale": "sl-SI",
+   "file": "dailymatelite/sl-SI.jpg",
+   "intended_locale": "sl-SI",
+   "headline_locale": "sl-SI",
+   "screenshot_locale": "sl-SI",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.228<0.24)"
+   ],
+   "line1": "Govori samozavestno",
+   "line2": "Letališče, hotel in restavracija",
+   "chips": [
+    "Letališče, hotel in restavracija",
+    "Frazarnik za potovanja",
+    "50 jezikov za učenje"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.246,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.02,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        265,
+        72,
+        815,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.95,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        142,
+        176,
+        937,
+        558
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.82,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        652,
+        242,
+        867
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.57,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      },
+      {
+       "kind": "card",
+       "plate": [
+        838,
+        869,
+        1040,
+        1039
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.08,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Govori samozavestno\nLetališče, hotel in restavracija\n\n📲 Prenesite prek povezave v biu\n\n#DailyMateLite",
+   "caption_link": "Govori samozavestno\nLetališče, hotel in restavracija\n\nApp Store: https://apps.apple.com/app/id6794725568\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymatelite/sl-SI.jpg"
+  },
+  {
+   "locale": "sv",
+   "file": "dailymatelite/sv.jpg",
+   "intended_locale": "sv",
+   "headline_locale": "sv",
+   "screenshot_locale": "sv",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.21<0.24; orbit2×1.08: screen_area=0.226<0.24)"
+   ],
+   "line1": "Prata tryggt på resan",
+   "line2": "Flygplats, hotell och restaurang",
+   "chips": [
+    "Flygplats, hotell och restaurang",
+    "Parlör för resan, 50 språk",
+    "8 400 unika inledningar och svar"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.242,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        299,
+        72,
+        781,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.95,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        200,
+        176,
+        881,
+        617
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.65,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        705,
+        237,
+        920
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.39,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Prata tryggt på resan\nFlygplats, hotell och restaurang\n\n📲 Ladda ner via länken i bion\n\n#DailyMateLite",
+   "caption_link": "Prata tryggt på resan\nFlygplats, hotell och restaurang\n\nApp Store: https://apps.apple.com/app/id6794725568\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymatelite/sv.jpg"
+  },
+  {
+   "locale": "ta-IN",
+   "file": "dailymatelite/ta-IN.jpg",
+   "intended_locale": "ta-IN",
+   "headline_locale": "ta-IN",
+   "screenshot_locale": "ta-IN",
+   "localized": true,
+   "screenshots_used": [
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:tam",
+    "script_chars": 47,
+    "mixed_english_words": {
+     "1": [
+      "remove",
+      "large",
+      "metal"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [1] with mixed English strings [['remove', 'large', 'metal']]",
+    "layout fallback orbit2->closeup2 (orbit2: screen_area=0.182<0.24; orbit2×1.08: screen_area=0.196<0.24; orbit2×1.16: screen_area=0.21<0.24; orbit2×1.25: screen_area=0.225<0.24; split2: text does not fit at minimum sizes; closeup2: screen_area=0.2<0.24; closeup2×1.08: screen_area=0.216<0.24; closeup2×1.16: screen_area=0.231<0.24)"
+   ],
+   "line1": "தயக்கமின்றி பேசு",
+   "line2": "50 மொழி · பயண உரையாடல்",
+   "chips": [
+    "50 மொழி · பயண உரையாடல்",
+    "வெளிநாட்டுப் பயண உரையாடல்",
+    "8,400 தனித்துவமான தொடக்கம்–பதில் ஜோடிகள்"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.247,
+    "family": "closeup2",
+    "font": "NotoSansTamil.ttf",
+    "screen_ratio_vs_battai_split": 1.77,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        373,
+        72,
+        707,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 15.12,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        116,
+        184,
+        965,
+        719
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.47,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.25,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "தயக்கமின்றி பேசு\n50 மொழி · பயண உரையாடல்\n\n📲 பயோவில் உள்ள இணைப்பு வழியாகப் பதிவிறக்குங்கள்\n\n#DailyMateLite",
+   "caption_link": "தயக்கமின்றி பேசு\n50 மொழி · பயண உரையாடல்\n\nApp Store: https://apps.apple.com/app/id6794725568\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymatelite/ta-IN.jpg"
+  },
+  {
+   "locale": "te-IN",
+   "file": "dailymatelite/te-IN.jpg",
+   "intended_locale": "te-IN",
+   "headline_locale": "te-IN",
+   "screenshot_locale": "te-IN",
+   "localized": true,
+   "screenshots_used": [
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:tel",
+    "script_chars": 30,
+    "mixed_english_words": {
+     "1": [
+      "remove",
+      "large",
+      "metal"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [1] with mixed English strings [['remove', 'large', 'metal']]",
+    "layout fallback orbit2->closeup2 (orbit2: screen_area=0.187<0.24; orbit2×1.08: screen_area=0.201<0.24; orbit2×1.16: screen_area=0.215<0.24; orbit2×1.25: screen_area=0.232<0.24; split2: text does not fit at minimum sizes; closeup2: screen_area=0.206<0.24; closeup2×1.08: screen_area=0.222<0.24; closeup2×1.16: screen_area=0.237<0.24)"
+   ],
+   "line1": "తడబడకుండా మాట్లాడండి",
+   "line2": "50 భాషలు · ప్రయాణ సంభాషణలు",
+   "chips": [
+    "50 భాషలు · ప్రయాణ సంభాషణలు",
+    "విదేశీ ప్రయాణ సంభాషణలు",
+    "8,400 ప్రత్యేక సంకేతం–జవాబు జతలు"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.255,
+    "family": "closeup2",
+    "font": "NotoSansTelugu.ttf",
+    "screen_ratio_vs_battai_split": 1.77,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        372,
+        72,
+        707,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 15.12,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        201,
+        184,
+        879,
+        702
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.65,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.25,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "తడబడకుండా మాట్లాడండి\n50 భాషలు · ప్రయాణ సంభాషణలు\n\n📲 బయోలోని లింక్ ద్వారా డౌన్‌లోడ్ చేయండి\n\n#DailyMateLite",
+   "caption_link": "తడబడకుండా మాట్లాడండి\n50 భాషలు · ప్రయాణ సంభాషణలు\n\nApp Store: https://apps.apple.com/app/id6794725568\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymatelite/te-IN.jpg"
+  },
+  {
+   "locale": "th",
+   "file": "dailymatelite/th.jpg",
+   "intended_locale": "th",
+   "headline_locale": "th",
+   "screenshot_locale": "th",
+   "localized": true,
+   "screenshots_used": [
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:tha",
+    "script_chars": 39,
+    "mixed_english_words": {
+     "1": [
+      "remove",
+      "large",
+      "metal"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [1] with mixed English strings [['remove', 'large', 'metal']]",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.205<0.24; orbit2×1.08: screen_area=0.221<0.24; orbit2×1.16: screen_area=0.237<0.24)"
+   ],
+   "line1": "เที่ยวต่างประเทศ พูดได้ไม่ติด",
+   "line2": "สนามบิน โรงแรม ร้านอาหาร",
+   "chips": [
+    "สนามบิน โรงแรม ร้านอาหาร",
+    "บทสนทนาเที่ยวต่างประเทศ 50ภาษา",
+    "ประโยคและคำตอบ 8,400 คู่"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.255,
+    "family": "orbit2",
+    "font": "NotoSansThai.ttf",
+    "screen_ratio_vs_battai_split": 1.37,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        309,
+        72,
+        771,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 15.01,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        156,
+        176,
+        925,
+        633
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.6,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        886,
+        915,
+        1040,
+        1204
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.79,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.5
+      }
+     ]
+    },
+    "phone_scale": 1.25,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "เที่ยวต่างประเทศ พูดได้ไม่ติด\nสนามบิน โรงแรม ร้านอาหาร\n\n📲 ดาวน์โหลดได้ที่ลิงก์ในโปรไฟล์ (bio)\n\n#DailyMateLite",
+   "caption_link": "เที่ยวต่างประเทศ พูดได้ไม่ติด\nสนามบิน โรงแรม ร้านอาหาร\n\nApp Store: https://apps.apple.com/app/id6794725568\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymatelite/th.jpg"
+  },
+  {
+   "locale": "tr",
+   "file": "dailymatelite/tr.jpg",
+   "intended_locale": "tr",
+   "headline_locale": "tr",
+   "screenshot_locale": "tr",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.21<0.24; orbit2×1.08: screen_area=0.227<0.24)"
+   ],
+   "line1": "Seyahatte rahat konuş",
+   "line2": "Havalimanı, otel, restoran",
+   "chips": [
+    "Havalimanı, otel, restoran",
+    "Tatil için konuşma kılavuzu",
+    "8.400 özgün ifade ve yanıt çifti"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.243,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        244,
+        72,
+        837,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.94,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        204,
+        176,
+        877,
+        616
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.62,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        704,
+        229,
+        910
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.32,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      },
+      {
+       "kind": "card",
+       "plate": [
+        846,
+        905,
+        1040,
+        1165
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.9,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Seyahatte rahat konuş\nHavalimanı, otel, restoran\n\n📲 Biyografideki bağlantıdan indirin\n\n#DailyMateLite",
+   "caption_link": "Seyahatte rahat konuş\nHavalimanı, otel, restoran\n\nApp Store: https://apps.apple.com/app/id6794725568\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymatelite/tr.jpg"
+  },
+  {
+   "locale": "uk",
+   "file": "dailymatelite/uk.jpg",
+   "intended_locale": "uk",
+   "headline_locale": "uk",
+   "screenshot_locale": "uk",
+   "localized": true,
+   "screenshots_used": [
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:ukr",
+    "script_chars": 70,
+    "mixed_english_words": {
+     "1": [
+      "remove",
+      "large",
+      "metal"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [1] with mixed English strings [['remove', 'large', 'metal']]",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.209<0.24; orbit2×1.08: screen_area=0.225<0.24)"
+   ],
+   "line1": "Сміливо в подорожі",
+   "line2": "Аеропорт, готель, ресторан",
+   "chips": [
+    "Аеропорт, готель, ресторан",
+    "Розмовник мандрівника, 50 мов",
+    "50 мов для вивчення"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.241,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        272,
+        72,
+        808,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.94,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        218,
+        176,
+        863,
+        622
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.66,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Сміливо в подорожі\nАеропорт, готель, ресторан\n\n📲 Завантажуйте за посиланням у профілі (bio)\n\n#DailyMateLite",
+   "caption_link": "Сміливо в подорожі\nАеропорт, готель, ресторан\n\nApp Store: https://apps.apple.com/app/id6794725568\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymatelite/uk.jpg"
+  },
+  {
+   "locale": "ur-PK",
+   "file": "dailymatelite/ur-PK.jpg",
+   "intended_locale": "ur-PK",
+   "headline_locale": "ur-PK",
+   "screenshot_locale": "ur-PK",
+   "localized": true,
+   "screenshots_used": [
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:urd",
+    "script_chars": 6,
+    "mixed_english_words": {
+     "1": [
+      "remove",
+      "large",
+      "metal"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [1] with mixed English strings [['remove', 'large', 'metal']]",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.193<0.24; orbit2×1.08: screen_area=0.209<0.24; orbit2×1.16: screen_area=0.223<0.24)"
+   ],
+   "line1": "سفر میں اعتماد سے بولیں",
+   "line2": "ہوائی اڈہ، ہوٹل اور ریستوران کے فطری جواب",
+   "chips": [
+    "ہوائی اڈہ، ہوٹل اور ریستوران کے فطری جواب",
+    "بیرون ملک بات چیت، 50 زبانیں",
+    "8,400 عملی جملوں اور جوابوں کے جوڑے"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.24,
+    "family": "orbit2",
+    "font": "NotoSansArabic.ttf",
+    "screen_ratio_vs_battai_split": 1.37,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        290,
+        72,
+        789,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.88,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        148,
+        176,
+        933,
+        672
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.63,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.3,
+        1.4
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        872,
+        754,
+        1040,
+        1031
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.21,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.4
+      }
+     ]
+    },
+    "phone_scale": 1.25,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "سفر میں اعتماد سے بولیں\nہوائی اڈہ، ہوٹل اور ریستوران کے فطری جواب\n\n📲 بائیو میں دیے گئے لنک سے ڈاؤن لوڈ کریں\n\n#DailyMateLite",
+   "caption_link": "سفر میں اعتماد سے بولیں\nہوائی اڈہ، ہوٹل اور ریستوران کے فطری جواب\n\nApp Store: https://apps.apple.com/app/id6794725568\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymatelite/ur-PK.jpg"
+  },
+  {
+   "locale": "vi",
+   "file": "dailymatelite/vi.jpg",
+   "intended_locale": "vi",
+   "headline_locale": "vi",
+   "screenshot_locale": "vi",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Đi du lịch tự tin nói",
+   "line2": "Sân bay, khách sạn, nhà hàng",
+   "chips": [
+    "Sân bay, khách sạn, nhà hàng",
+    "Hội thoại du lịch, 50 ngôn ngữ",
+    "50 ngôn ngữ để học"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.275,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        292,
+        72,
+        788,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 15.0,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        94,
+        176,
+        987,
+        403
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.28,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        512,
+        227,
+        772
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.5,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      },
+      {
+       "kind": "card",
+       "plate": [
+        814,
+        773,
+        1040,
+        943
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.2,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Đi du lịch tự tin nói\nSân bay, khách sạn, nhà hàng\n\n📲 Tải về qua link ở bio\n\n#DailyMateLite",
+   "caption_link": "Đi du lịch tự tin nói\nSân bay, khách sạn, nhà hàng\n\nApp Store: https://apps.apple.com/app/id6794725568\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymatelite/vi.jpg"
+  },
+  {
+   "locale": "zh-Hans",
+   "file": "dailymatelite/zh-Hans.jpg",
+   "intended_locale": "zh-Hans",
+   "headline_locale": "zh-Hans",
+   "screenshot_locale": "zh-Hans",
+   "localized": true,
+   "screenshots_used": [
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:chi_sim",
+    "script_chars": 16,
+    "mixed_english_words": {
+     "1": [
+      "remove",
+      "large",
+      "metal"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [1] with mixed English strings [['remove', 'large', 'metal']]"
+   ],
+   "line1": "出国开口不卡壳",
+   "line2": "机场・酒店・餐厅实用对话",
+   "chips": [
+    "机场・酒店・餐厅实用对话",
+    "出国旅游・点餐问路・50种语言",
+    "8,400 组场景提示与回复"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.266,
+    "family": "orbit2",
+    "font": "NotoSansSC.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        310,
+        72,
+        771,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 15.0,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        160,
+        176,
+        919,
+        433
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.48,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        539,
+        220,
+        751
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.48,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "出国开口不卡壳\n机场・酒店・餐厅实用对话\n\n📲 请到个人主页（bio）的链接下载\n\n#DailyMateLite",
+   "caption_link": "出国开口不卡壳\n机场・酒店・餐厅实用对话\n\nApp Store: https://apps.apple.com/app/id6794725568\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymatelite/zh-Hans.jpg"
+  },
+  {
+   "locale": "zh-Hant",
+   "file": "dailymatelite/zh-Hant.jpg",
+   "intended_locale": "zh-Hant",
+   "headline_locale": "zh-Hant",
+   "screenshot_locale": "zh-Hant",
+   "localized": true,
+   "screenshots_used": [
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:chi_tra",
+    "script_chars": 22,
+    "mixed_english_words": {
+     "1": [
+      "remove",
+      "large",
+      "metal"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [1] with mixed English strings [['remove', 'large', 'metal']]"
+   ],
+   "line1": "出國開口不卡",
+   "line2": "50種語言・旅行實用對話",
+   "chips": [
+    "50種語言・旅行實用對話",
+    "出國旅遊・點餐問路・50種語言",
+    "8,400 組情境提示與回覆"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.266,
+    "family": "orbit2",
+    "font": "NotoSansTC.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        310,
+        72,
+        771,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.95,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        213,
+        176,
+        867,
+        433
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.62,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        539,
+        220,
+        751
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.48,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "出國開口不卡\n50種語言・旅行實用對話\n\n📲 請到個人檔案（bio）的連結下載\n\n#DailyMateLite",
+   "caption_link": "出國開口不卡\n50種語言・旅行實用對話\n\nApp Store: https://apps.apple.com/app/id6794725568\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/dailymatelite/zh-Hant.jpg"
+  }
+ ]
+}

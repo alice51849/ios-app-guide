@@ -1,0 +1,6704 @@
+{
+ "schema": "lumi.promo_cards/v1",
+ "app": "gmoneylite",
+ "app_id": "6793436548",
+ "app_store_url": "https://apps.apple.com/app/id6793436548",
+ "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite",
+ "size": [
+  1080,
+  1350
+ ],
+ "built": "2026-10-23",
+ "items": [
+  {
+   "locale": "ar-SA",
+   "file": "gmoneylite/ar-SA.jpg",
+   "intended_locale": "ar-SA",
+   "headline_locale": "ar-SA",
+   "screenshot_locale": "ar-SA",
+   "localized": true,
+   "screenshots_used": [
+    5
+   ],
+   "demo_language_check": {
+    "method": "ocr:ara",
+    "script_chars": 40,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "سجّل بالعملة المحلية",
+   "line2": "وشاهدها فورًا بعملتك حتى دون إنترنت",
+   "chips": [
+    "وشاهدها فورًا بعملتك حتى دون إنترنت",
+    "ميزانية يومية بالساعة والودجت",
+    "حسب الفئة · رحلات · مرشحات · سجلات"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.273,
+    "family": "fan3_2",
+    "font": "NotoSansArabic.ttf",
+    "screen_ratio_vs_battai_split": 0.96,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        271,
+        72,
+        809,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.72,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        86,
+        176,
+        995,
+        447
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.97,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.3,
+        1.4
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板"
+   },
+   "caption_instagram": "سجّل بالعملة المحلية\nوشاهدها فورًا بعملتك حتى دون إنترنت\n\n📲 حمّله من الرابط في الملف الشخصي (bio)\n\n#GMoneyLite",
+   "caption_link": "سجّل بالعملة المحلية\nوشاهدها فورًا بعملتك حتى دون إنترنت\n\nApp Store: https://apps.apple.com/app/id6793436548\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoneylite/ar-SA.jpg"
+  },
+  {
+   "locale": "bn-BD",
+   "file": "gmoneylite/bn-BD.jpg",
+   "intended_locale": "bn-BD",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": false
+   },
+   "screen_text_flags": {
+    "1": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "$7",
+     "¥ 1",
+     "¥1"
+    ],
+    "0": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "¥ 1"
+    ],
+    "2": [
+     "$1",
+     "$2",
+     "$3",
+     "$5",
+     "$6",
+     "¥1",
+     "¥3",
+     "¥6",
+     "¥8"
+    ]
+   },
+   "warnings": [
+    "no localized storefront screenshot (English-only or lookup failed); whole card in en-US",
+    "screen text flags remain (no clean screenshot available): {1: ['$2', '$3', '$4', '$5', '$7', '¥ 1', '¥1'], 0: ['$2', '$3', '$4', '$5', '¥ 1'], 2: ['$1', '$2', '$3', '$5', '$6', '¥1', '¥3', '¥6', '¥8']}",
+    "layout fallback fan3_2->fan3_2 (fan3_2: screen_area=0.221<0.24; fan3_2×1.08: screen_area=0.238<0.24)"
+   ],
+   "line1": "Trip Costs, Converted",
+   "line2": "Log in local currency, even offline",
+   "chips": [
+    "Log in local currency, even offline",
+    "Travel Budget & Currency",
+    "By category · Trips · Filters · Records"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.255,
+    "family": "fan3_2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.29,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        267,
+        72,
+        813,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.83,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        248,
+        176,
+        833,
+        611
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.06,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板（自檢未過改用 fan3_2）"
+   },
+   "caption_instagram": "Trip Costs, Converted\nLog in local currency, even offline\n\n📲 Download via the link in bio\n\n#GMoneyLite",
+   "caption_link": "Trip Costs, Converted\nLog in local currency, even offline\n\nApp Store: https://apps.apple.com/app/id6793436548\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoneylite/bn-BD.jpg"
+  },
+  {
+   "locale": "ca",
+   "file": "gmoneylite/ca.jpg",
+   "intended_locale": "ca",
+   "headline_locale": "ca",
+   "screenshot_locale": "ca",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {
+    "1": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "$7",
+     "¥ 1",
+     "¥1"
+    ],
+    "0": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "¥ 1"
+    ],
+    "2": [
+     "$1",
+     "$2",
+     "$3",
+     "$5",
+     "$6",
+     "¥1",
+     "¥3",
+     "¥6",
+     "¥8"
+    ]
+   },
+   "warnings": [
+    "screen text flags remain (no clean screenshot available): {1: ['$2', '$3', '$4', '$5', '$7', '¥ 1', '¥1'], 0: ['$2', '$3', '$4', '$5', '¥ 1'], 2: ['$1', '$2', '$3', '$5', '$6', '¥1', '¥3', '¥6', '¥8']}",
+    "layout fallback fan3_2->fan3_2 (fan3_2: screen_area=0.223<0.24)"
+   ],
+   "line1": "Despeses a l'estranger",
+   "line2": "Moneda local, convertida al moment",
+   "chips": [
+    "Moneda local, convertida al moment",
+    "Límit diari, rellotge i widget"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.24,
+    "family": "fan3_2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.11,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        246,
+        72,
+        834,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.81,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        232,
+        176,
+        848,
+        605
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.9,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板（自檢未過改用 fan3_2）"
+   },
+   "caption_instagram": "Despeses a l'estranger\nMoneda local, convertida al moment\n\n📲 Descarrega-la des de l'enllaç de la bio\n\n#GMoneyLite",
+   "caption_link": "Despeses a l'estranger\nMoneda local, convertida al moment\n\nApp Store: https://apps.apple.com/app/id6793436548\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoneylite/ca.jpg"
+  },
+  {
+   "locale": "cs",
+   "file": "gmoneylite/cs.jpg",
+   "intended_locale": "cs",
+   "headline_locale": "cs",
+   "screenshot_locale": "cs",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {
+    "1": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "$7",
+     "¥ 1",
+     "¥1"
+    ],
+    "0": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "¥ 1"
+    ],
+    "2": [
+     "$1",
+     "$2",
+     "$3",
+     "$5",
+     "$6",
+     "¥1",
+     "¥3",
+     "¥6",
+     "¥8"
+    ]
+   },
+   "warnings": [
+    "screen text flags remain (no clean screenshot available): {1: ['$2', '$3', '$4', '$5', '$7', '¥ 1', '¥1'], 0: ['$2', '$3', '$4', '$5', '¥ 1'], 2: ['$1', '$2', '$3', '$5', '$6', '¥1', '¥3', '¥6', '¥8']}",
+    "layout fallback fan3_2->fan3_2 (fan3_2: screen_area=0.219<0.24; fan3_2×1.08: screen_area=0.236<0.24)"
+   ],
+   "line1": "Výdaje v místní měně",
+   "line2": "Hned i v domácí měně, i offline",
+   "chips": [
+    "Hned i v domácí měně, i offline",
+    "Denní limit: hodinky a widget"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.253,
+    "family": "fan3_2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.29,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        250,
+        72,
+        829,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.83,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        144,
+        176,
+        936,
+        617
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.01,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板（自檢未過改用 fan3_2）"
+   },
+   "caption_instagram": "Výdaje v místní měně\nHned i v domácí měně, i offline\n\n📲 Stáhněte si ji přes odkaz v profilu (bio)\n\n#GMoneyLite",
+   "caption_link": "Výdaje v místní měně\nHned i v domácí měně, i offline\n\nApp Store: https://apps.apple.com/app/id6793436548\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoneylite/cs.jpg"
+  },
+  {
+   "locale": "da",
+   "file": "gmoneylite/da.jpg",
+   "intended_locale": "da",
+   "headline_locale": "da",
+   "screenshot_locale": "da",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {
+    "1": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "$7",
+     "¥ 1",
+     "¥1"
+    ],
+    "0": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "¥ 1"
+    ],
+    "2": [
+     "$1",
+     "$2",
+     "$3",
+     "$5",
+     "$6",
+     "¥1",
+     "¥3",
+     "¥6",
+     "¥8"
+    ]
+   },
+   "warnings": [
+    "screen text flags remain (no clean screenshot available): {1: ['$2', '$3', '$4', '$5', '$7', '¥ 1', '¥1'], 0: ['$2', '$3', '$4', '$5', '¥ 1'], 2: ['$1', '$2', '$3', '$5', '$6', '¥1', '¥3', '¥6', '¥8']}"
+   ],
+   "line1": "Køb i lokal valuta",
+   "line2": "Se dem straks i din egen, offline",
+   "chips": [
+    "Se dem straks i din egen, offline",
+    "Dagsbudget på ur og widget",
+    "Pr. kategori · Rejser · Filtre · Poster"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.279,
+    "family": "fan3_2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.96,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        268,
+        72,
+        813,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.86,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        86,
+        176,
+        995,
+        428
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 100,
+        "sub": 50,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.61,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板"
+   },
+   "caption_instagram": "Køb i lokal valuta\nSe dem straks i din egen, offline\n\n📲 Download via linket i bio\n\n#GMoneyLite",
+   "caption_link": "Køb i lokal valuta\nSe dem straks i din egen, offline\n\nApp Store: https://apps.apple.com/app/id6793436548\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoneylite/da.jpg"
+  },
+  {
+   "locale": "de-DE",
+   "file": "gmoneylite/de-DE.jpg",
+   "intended_locale": "de-DE",
+   "headline_locale": "de-DE",
+   "screenshot_locale": "de-DE",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {
+    "1": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "$7",
+     "¥ 1",
+     "¥1"
+    ],
+    "0": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "¥ 1"
+    ],
+    "2": [
+     "$1",
+     "$2",
+     "$3",
+     "$5",
+     "$6",
+     "¥1",
+     "¥3",
+     "¥6",
+     "¥8"
+    ]
+   },
+   "warnings": [
+    "screen text flags remain (no clean screenshot available): {1: ['$2', '$3', '$4', '$5', '$7', '¥ 1', '¥1'], 0: ['$2', '$3', '$4', '$5', '¥ 1'], 2: ['$1', '$2', '$3', '$5', '$6', '¥1', '¥3', '¥6', '¥8']}",
+    "layout fallback fan3_2->closeup2 (fan3_2: text does not fit at minimum sizes; split2: text does not fit at minimum sizes; closeup2: screen_area=0.212<0.24; closeup2×1.08: screen_area=0.229<0.24)"
+   ],
+   "line1": "Reisekosten im Griff",
+   "line2": "In Landeswährung erfassen, sofort umrechnen",
+   "chips": [
+    "In Landeswährung erfassen, sofort umrechnen",
+    "Reisekosten & Urlaubsbudget"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.245,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.52,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        256,
+        72,
+        824,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.82,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        202,
+        184,
+        878,
+        684
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.85,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "closeup2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Reisekosten im Griff\nIn Landeswährung erfassen, sofort umrechnen\n\n📲 Download über den Link in der Bio\n\n#GMoneyLite",
+   "caption_link": "Reisekosten im Griff\nIn Landeswährung erfassen, sofort umrechnen\n\nApp Store: https://apps.apple.com/app/id6793436548\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoneylite/de-DE.jpg"
+  },
+  {
+   "locale": "el",
+   "file": "gmoneylite/el.jpg",
+   "intended_locale": "el",
+   "headline_locale": "el",
+   "screenshot_locale": "el",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:ell",
+    "script_chars": 254,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {
+    "1": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "$7",
+     "¥ 1",
+     "¥1"
+    ],
+    "0": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "¥ 1"
+    ],
+    "2": [
+     "$1",
+     "$2",
+     "$3",
+     "$5",
+     "$6",
+     "¥1",
+     "¥3",
+     "¥6",
+     "¥8"
+    ]
+   },
+   "warnings": [
+    "screen text flags remain (no clean screenshot available): {1: ['$2', '$3', '$4', '$5', '$7', '¥ 1', '¥1'], 0: ['$2', '$3', '$4', '$5', '¥ 1'], 2: ['$1', '$2', '$3', '$5', '$6', '¥1', '¥3', '¥6', '¥8']}",
+    "layout fallback fan3_2->fan3_2 (fan3_2: screen_area=0.217<0.24; fan3_2×1.08: screen_area=0.234<0.24)"
+   ],
+   "line1": "Αμέσως στο νόμισμά σου",
+   "line2": "Τοπικό νόμισμα, και χωρίς σύνδεση",
+   "chips": [
+    "Τοπικό νόμισμα, και χωρίς σύνδεση",
+    "Όριο ημέρας σε ρολόι & widget"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.25,
+    "family": "fan3_2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.29,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        252,
+        72,
+        828,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.83,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        184,
+        176,
+        897,
+        624
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.78,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板（自檢未過改用 fan3_2）"
+   },
+   "caption_instagram": "Αμέσως στο νόμισμά σου\nΤοπικό νόμισμα, και χωρίς σύνδεση\n\n📲 Λήψη από τον σύνδεσμο στο προφίλ (bio)\n\n#GMoneyLite",
+   "caption_link": "Αμέσως στο νόμισμά σου\nΤοπικό νόμισμα, και χωρίς σύνδεση\n\nApp Store: https://apps.apple.com/app/id6793436548\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoneylite/el.jpg"
+  },
+  {
+   "locale": "en-AU",
+   "file": "gmoneylite/en-AU.jpg",
+   "intended_locale": "en-AU",
+   "headline_locale": "en-AU",
+   "screenshot_locale": "en-AU",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {
+    "1": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "$7",
+     "¥ 1",
+     "¥1"
+    ],
+    "0": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "¥ 1"
+    ],
+    "2": [
+     "$1",
+     "$2",
+     "$3",
+     "$5",
+     "$6",
+     "¥1",
+     "¥3",
+     "¥6",
+     "¥8"
+    ]
+   },
+   "warnings": [
+    "screen text flags remain (no clean screenshot available): {1: ['$2', '$3', '$4', '$5', '$7', '¥ 1', '¥1'], 0: ['$2', '$3', '$4', '$5', '¥ 1'], 2: ['$1', '$2', '$3', '$5', '$6', '¥1', '¥3', '¥6', '¥8']}",
+    "layout fallback fan3_2->fan3_2 (fan3_2: screen_area=0.221<0.24; fan3_2×1.08: screen_area=0.238<0.24)"
+   ],
+   "line1": "Trip Costs, Converted",
+   "line2": "Log in local currency, even offline",
+   "chips": [
+    "Log in local currency, even offline",
+    "Travel Budget & Currency",
+    "By category · Trips · Filters · Records"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.255,
+    "family": "fan3_2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.29,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        267,
+        72,
+        813,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.83,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        248,
+        176,
+        833,
+        611
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.06,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板（自檢未過改用 fan3_2）"
+   },
+   "caption_instagram": "Trip Costs, Converted\nLog in local currency, even offline\n\n📲 Download via the link in bio\n\n#GMoneyLite",
+   "caption_link": "Trip Costs, Converted\nLog in local currency, even offline\n\nApp Store: https://apps.apple.com/app/id6793436548\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoneylite/en-AU.jpg"
+  },
+  {
+   "locale": "en-CA",
+   "file": "gmoneylite/en-CA.jpg",
+   "intended_locale": "en-CA",
+   "headline_locale": "en-CA",
+   "screenshot_locale": "en-CA",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {
+    "1": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "$7",
+     "¥ 1",
+     "¥1"
+    ],
+    "0": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "¥ 1"
+    ],
+    "2": [
+     "$1",
+     "$2",
+     "$3",
+     "$5",
+     "$6",
+     "¥1",
+     "¥3",
+     "¥6",
+     "¥8"
+    ]
+   },
+   "warnings": [
+    "screen text flags remain (no clean screenshot available): {1: ['$2', '$3', '$4', '$5', '$7', '¥ 1', '¥1'], 0: ['$2', '$3', '$4', '$5', '¥ 1'], 2: ['$1', '$2', '$3', '$5', '$6', '¥1', '¥3', '¥6', '¥8']}",
+    "layout fallback fan3_2->fan3_2 (fan3_2: screen_area=0.221<0.24; fan3_2×1.08: screen_area=0.238<0.24)"
+   ],
+   "line1": "Trip Costs, Converted",
+   "line2": "Log in local currency, even offline",
+   "chips": [
+    "Log in local currency, even offline",
+    "Travel Budget & Currency",
+    "By category · Trips · Filters · Records"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.255,
+    "family": "fan3_2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.29,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        267,
+        72,
+        813,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.83,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        248,
+        176,
+        833,
+        611
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.06,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板（自檢未過改用 fan3_2）"
+   },
+   "caption_instagram": "Trip Costs, Converted\nLog in local currency, even offline\n\n📲 Download via the link in bio\n\n#GMoneyLite",
+   "caption_link": "Trip Costs, Converted\nLog in local currency, even offline\n\nApp Store: https://apps.apple.com/app/id6793436548\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoneylite/en-CA.jpg"
+  },
+  {
+   "locale": "en-GB",
+   "file": "gmoneylite/en-GB.jpg",
+   "intended_locale": "en-GB",
+   "headline_locale": "en-GB",
+   "screenshot_locale": "en-GB",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {
+    "1": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "$7",
+     "¥ 1",
+     "¥1"
+    ],
+    "0": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "¥ 1"
+    ],
+    "2": [
+     "$1",
+     "$2",
+     "$3",
+     "$5",
+     "$6",
+     "¥1",
+     "¥3",
+     "¥6",
+     "¥8"
+    ]
+   },
+   "warnings": [
+    "screen text flags remain (no clean screenshot available): {1: ['$2', '$3', '$4', '$5', '$7', '¥ 1', '¥1'], 0: ['$2', '$3', '$4', '$5', '¥ 1'], 2: ['$1', '$2', '$3', '$5', '$6', '¥1', '¥3', '¥6', '¥8']}",
+    "layout fallback fan3_2->fan3_2 (fan3_2: screen_area=0.221<0.24; fan3_2×1.08: screen_area=0.238<0.24)"
+   ],
+   "line1": "Trip Costs, Converted",
+   "line2": "Log in local currency, even offline",
+   "chips": [
+    "Log in local currency, even offline",
+    "Travel Budget & Currency",
+    "By category · Trips · Filters · Records"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.255,
+    "family": "fan3_2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.29,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        267,
+        72,
+        813,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.83,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        248,
+        176,
+        833,
+        611
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.06,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板（自檢未過改用 fan3_2）"
+   },
+   "caption_instagram": "Trip Costs, Converted\nLog in local currency, even offline\n\n📲 Download via the link in bio\n\n#GMoneyLite",
+   "caption_link": "Trip Costs, Converted\nLog in local currency, even offline\n\nApp Store: https://apps.apple.com/app/id6793436548\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoneylite/en-GB.jpg"
+  },
+  {
+   "locale": "en-US",
+   "file": "gmoneylite/en-US.jpg",
+   "intended_locale": "en-US",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {
+    "1": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "$7",
+     "¥ 1",
+     "¥1"
+    ],
+    "0": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "¥ 1"
+    ],
+    "2": [
+     "$1",
+     "$2",
+     "$3",
+     "$5",
+     "$6",
+     "¥1",
+     "¥3",
+     "¥6",
+     "¥8"
+    ]
+   },
+   "warnings": [
+    "screen text flags remain (no clean screenshot available): {1: ['$2', '$3', '$4', '$5', '$7', '¥ 1', '¥1'], 0: ['$2', '$3', '$4', '$5', '¥ 1'], 2: ['$1', '$2', '$3', '$5', '$6', '¥1', '¥3', '¥6', '¥8']}",
+    "layout fallback fan3_2->fan3_2 (fan3_2: screen_area=0.221<0.24; fan3_2×1.08: screen_area=0.238<0.24)"
+   ],
+   "line1": "Trip Costs, Converted",
+   "line2": "Log in local currency, even offline",
+   "chips": [
+    "Log in local currency, even offline",
+    "Travel Budget & Currency",
+    "By category · Trips · Filters · Records"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.255,
+    "family": "fan3_2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.29,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        267,
+        72,
+        813,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.83,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        248,
+        176,
+        833,
+        611
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.06,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板（自檢未過改用 fan3_2）"
+   },
+   "caption_instagram": "Trip Costs, Converted\nLog in local currency, even offline\n\n📲 Download via the link in bio\n\n#GMoneyLite",
+   "caption_link": "Trip Costs, Converted\nLog in local currency, even offline\n\nApp Store: https://apps.apple.com/app/id6793436548\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoneylite/en-US.jpg"
+  },
+  {
+   "locale": "es-ES",
+   "file": "gmoneylite/es-ES.jpg",
+   "intended_locale": "es-ES",
+   "headline_locale": "es-ES",
+   "screenshot_locale": "es-ES",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {
+    "1": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "$7",
+     "¥ 1",
+     "¥1"
+    ],
+    "0": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "¥ 1"
+    ],
+    "2": [
+     "$1",
+     "$2",
+     "$3",
+     "$5",
+     "$6",
+     "¥1",
+     "¥3",
+     "¥6",
+     "¥8"
+    ]
+   },
+   "warnings": [
+    "screen text flags remain (no clean screenshot available): {1: ['$2', '$3', '$4', '$5', '$7', '¥ 1', '¥1'], 0: ['$2', '$3', '$4', '$5', '¥ 1'], 2: ['$1', '$2', '$3', '$5', '$6', '¥1', '¥3', '¥6', '¥8']}",
+    "layout fallback fan3_2->closeup2 (fan3_2: text does not fit at minimum sizes; split2: text does not fit at minimum sizes; closeup2: screen_area=0.212<0.24; closeup2×1.08: screen_area=0.229<0.24)"
+   ],
+   "line1": "Convierte al instante",
+   "line2": "Apunta en moneda local, incluso sin conexión",
+   "chips": [
+    "Apunta en moneda local, incluso sin conexión",
+    "Gasto diario en reloj y widget"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.245,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.52,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        256,
+        72,
+        824,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.83,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        238,
+        184,
+        842,
+        684
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.09,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "closeup2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Convierte al instante\nApunta en moneda local, incluso sin conexión\n\n📲 Descárgala desde el enlace de la bio\n\n#GMoneyLite",
+   "caption_link": "Convierte al instante\nApunta en moneda local, incluso sin conexión\n\nApp Store: https://apps.apple.com/app/id6793436548\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoneylite/es-ES.jpg"
+  },
+  {
+   "locale": "es-MX",
+   "file": "gmoneylite/es-MX.jpg",
+   "intended_locale": "es-MX",
+   "headline_locale": "es-MX",
+   "screenshot_locale": "es-MX",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {
+    "1": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "$7",
+     "¥ 1",
+     "¥1"
+    ],
+    "0": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "¥ 1"
+    ],
+    "2": [
+     "$1",
+     "$2",
+     "$3",
+     "$5",
+     "$6",
+     "¥1",
+     "¥3",
+     "¥6",
+     "¥8"
+    ]
+   },
+   "warnings": [
+    "screen text flags remain (no clean screenshot available): {1: ['$2', '$3', '$4', '$5', '$7', '¥ 1', '¥1'], 0: ['$2', '$3', '$4', '$5', '¥ 1'], 2: ['$1', '$2', '$3', '$5', '$6', '¥1', '¥3', '¥6', '¥8']}",
+    "layout fallback fan3_2->closeup2 (fan3_2: text does not fit at minimum sizes; split2: text does not fit at minimum sizes; closeup2: screen_area=0.212<0.24; closeup2×1.08: screen_area=0.229<0.24)"
+   ],
+   "line1": "Convierte al instante",
+   "line2": "Anota en moneda local, incluso sin conexión",
+   "chips": [
+    "Anota en moneda local, incluso sin conexión",
+    "Gasto diario en reloj y widget"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.245,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.52,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        256,
+        72,
+        824,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.83,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        238,
+        184,
+        842,
+        684
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.07,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "closeup2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Convierte al instante\nAnota en moneda local, incluso sin conexión\n\n📲 Descárgala desde el enlace de la bio\n\n#GMoneyLite",
+   "caption_link": "Convierte al instante\nAnota en moneda local, incluso sin conexión\n\nApp Store: https://apps.apple.com/app/id6793436548\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoneylite/es-MX.jpg"
+  },
+  {
+   "locale": "fi",
+   "file": "gmoneylite/fi.jpg",
+   "intended_locale": "fi",
+   "headline_locale": "fi",
+   "screenshot_locale": "fi",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {
+    "1": [
+     "$2",
+     "$3",
+     "$4",
+     "$7",
+     "¥ 1",
+     "¥1"
+    ],
+    "0": [
+     "$2",
+     "$3",
+     "$4",
+     "¥ 1"
+    ],
+    "2": [
+     "$1",
+     "$2",
+     "$3",
+     "$5",
+     "$6",
+     "¥1",
+     "¥3",
+     "¥6",
+     "¥8"
+    ]
+   },
+   "warnings": [
+    "screen text flags remain (no clean screenshot available): {1: ['$2', '$3', '$4', '$7', '¥ 1', '¥1'], 0: ['$2', '$3', '$4', '¥ 1'], 2: ['$1', '$2', '$3', '$5', '$6', '¥1', '¥3', '¥6', '¥8']}",
+    "layout fallback fan3_2->fan3_2 (fan3_2: screen_area=0.221<0.24; fan3_2×1.08: screen_area=0.238<0.24)"
+   ],
+   "line1": "Ostot omassa valuutassa",
+   "line2": "Kirjaa paikallisessa valuutassa, offline",
+   "chips": [
+    "Kirjaa paikallisessa valuutassa, offline",
+    "Päiväbudjetti kellossa"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.255,
+    "family": "fan3_2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.29,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        282,
+        72,
+        798,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.87,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        162,
+        176,
+        919,
+        612
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.51,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板（自檢未過改用 fan3_2）"
+   },
+   "caption_instagram": "Ostot omassa valuutassa\nKirjaa paikallisessa valuutassa, offline\n\n📲 Lataa bion linkistä\n\n#GMoneyLite",
+   "caption_link": "Ostot omassa valuutassa\nKirjaa paikallisessa valuutassa, offline\n\nApp Store: https://apps.apple.com/app/id6793436548\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoneylite/fi.jpg"
+  },
+  {
+   "locale": "fr-CA",
+   "file": "gmoneylite/fr-CA.jpg",
+   "intended_locale": "fr-CA",
+   "headline_locale": "fr-CA",
+   "screenshot_locale": "fr-CA",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {
+    "1": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "$7",
+     "¥ 1",
+     "¥1"
+    ],
+    "0": [
+     "$2",
+     "$3",
+     "$4",
+     "¥ 1"
+    ],
+    "2": [
+     "$1",
+     "$2",
+     "$3",
+     "$5",
+     "$6",
+     "¥1",
+     "¥3",
+     "¥6",
+     "¥8"
+    ]
+   },
+   "warnings": [
+    "screen text flags remain (no clean screenshot available): {1: ['$2', '$3', '$4', '$5', '$7', '¥ 1', '¥1'], 0: ['$2', '$3', '$4', '¥ 1'], 2: ['$1', '$2', '$3', '$5', '$6', '¥1', '¥3', '¥6', '¥8']}",
+    "layout fallback fan3_2->fan3_2 (fan3_2: screen_area=0.217<0.24; fan3_2×1.08: screen_area=0.234<0.24)"
+   ],
+   "line1": "Dépensez, c'est converti",
+   "line2": "Notez en devise locale, même hors ligne",
+   "chips": [
+    "Notez en devise locale, même hors ligne",
+    "Budget à l'étranger & devises"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.251,
+    "family": "fan3_2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.29,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        252,
+        72,
+        827,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.81,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        168,
+        176,
+        913,
+        623
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.96,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板（自檢未過改用 fan3_2）"
+   },
+   "caption_instagram": "Dépensez, c'est converti\nNotez en devise locale, même hors ligne\n\n📲 Téléchargez-la via le lien dans la bio\n\n#GMoneyLite",
+   "caption_link": "Dépensez, c'est converti\nNotez en devise locale, même hors ligne\n\nApp Store: https://apps.apple.com/app/id6793436548\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoneylite/fr-CA.jpg"
+  },
+  {
+   "locale": "fr-FR",
+   "file": "gmoneylite/fr-FR.jpg",
+   "intended_locale": "fr-FR",
+   "headline_locale": "fr-FR",
+   "screenshot_locale": "fr-FR",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {
+    "1": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "$7",
+     "¥ 1",
+     "¥1"
+    ],
+    "0": [
+     "$2",
+     "$3",
+     "$4",
+     "¥ 1"
+    ],
+    "2": [
+     "$1",
+     "$2",
+     "$3",
+     "$5",
+     "$6",
+     "¥1",
+     "¥3",
+     "¥6",
+     "¥8"
+    ]
+   },
+   "warnings": [
+    "screen text flags remain (no clean screenshot available): {1: ['$2', '$3', '$4', '$5', '$7', '¥ 1', '¥1'], 0: ['$2', '$3', '$4', '¥ 1'], 2: ['$1', '$2', '$3', '$5', '$6', '¥1', '¥3', '¥6', '¥8']}",
+    "layout fallback fan3_2->fan3_2 (fan3_2: screen_area=0.217<0.24; fan3_2×1.08: screen_area=0.234<0.24)"
+   ],
+   "line1": "Dépensez, c'est converti",
+   "line2": "Notez en devise locale, même hors ligne",
+   "chips": [
+    "Notez en devise locale, même hors ligne",
+    "Budget à l'étranger & devises"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.251,
+    "family": "fan3_2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.29,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        252,
+        72,
+        827,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.81,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        168,
+        176,
+        913,
+        623
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.96,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板（自檢未過改用 fan3_2）"
+   },
+   "caption_instagram": "Dépensez, c'est converti\nNotez en devise locale, même hors ligne\n\n📲 Téléchargez-la via le lien dans la bio\n\n#GMoneyLite",
+   "caption_link": "Dépensez, c'est converti\nNotez en devise locale, même hors ligne\n\nApp Store: https://apps.apple.com/app/id6793436548\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoneylite/fr-FR.jpg"
+  },
+  {
+   "locale": "gu-IN",
+   "file": "gmoneylite/gu-IN.jpg",
+   "intended_locale": "gu-IN",
+   "headline_locale": "gu-IN",
+   "screenshot_locale": "gu-IN",
+   "localized": true,
+   "screenshots_used": [
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:guj",
+    "script_chars": 178,
+    "mixed_english_words": {
+     "1": [
+      "guide"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {
+    "0": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "¥ 1"
+    ],
+    "2": [
+     "$1",
+     "$2",
+     "$3",
+     "$5",
+     "$6",
+     "¥1",
+     "¥3",
+     "¥6",
+     "¥8"
+    ]
+   },
+   "warnings": [
+    "dropped screenshots [1] with mixed English strings [['guide']]",
+    "screen text flags remain (no clean screenshot available): {0: ['$2', '$3', '$4', '$5', '¥ 1'], 2: ['$1', '$2', '$3', '$5', '$6', '¥1', '¥3', '¥6', '¥8']}",
+    "layout fallback fan3_2->split2 (fan3_2: screen_area=0.189<0.24; fan3_2×1.08: screen_area=0.204<0.24; fan3_2×1.16: screen_area=0.218<0.24; fan3_2×1.25: screen_area=0.235<0.24)"
+   ],
+   "line1": "વિદેશી ખર્ચ તમારા ચલણમાં",
+   "line2": "સ્થાનિક ચલણમાં નોંધો, ઓફલાઇન પણ",
+   "chips": [
+    "સ્થાનિક ચલણમાં નોંધો, ઓફલાઇન પણ",
+    "દૈનિક બજેટ ઘડિયાળ અને વિજેટ પર"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.275,
+    "family": "split2",
+    "font": "NotoSansGujarati.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        534,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.77,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        540,
+        846
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 100,
+        "sub": 50,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.1,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        870,
+        447,
+        1005
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 7.92,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板（自檢未過改用 split2）"
+   },
+   "caption_instagram": "વિદેશી ખર્ચ તમારા ચલણમાં\nસ્થાનિક ચલણમાં નોંધો, ઓફલાઇન પણ\n\n📲 બાયોમાંની લિંકથી ડાઉનલોડ કરો\n\n#GMoneyLite",
+   "caption_link": "વિદેશી ખર્ચ તમારા ચલણમાં\nસ્થાનિક ચલણમાં નોંધો, ઓફલાઇન પણ\n\nApp Store: https://apps.apple.com/app/id6793436548\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoneylite/gu-IN.jpg"
+  },
+  {
+   "locale": "he",
+   "file": "gmoneylite/he.jpg",
+   "intended_locale": "he",
+   "headline_locale": "he",
+   "screenshot_locale": "he",
+   "localized": true,
+   "screenshots_used": [
+    5
+   ],
+   "demo_language_check": {
+    "method": "ocr:heb",
+    "script_chars": 52,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "קונים במטבע המקומי",
+   "line2": "ורואים מיד במטבע שלכם, גם בלי חיבור",
+   "chips": [
+    "ורואים מיד במטבע שלכם, גם בלי חיבור",
+    "תקציב יומי בשעון ובווידג'ט",
+    "לפי קטגוריה · נסיעות · מסננים · רשומות"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.289,
+    "family": "fan3_2",
+    "font": "NotoSansHebrew.ttf",
+    "screen_ratio_vs_battai_split": 0.96,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        288,
+        72,
+        791,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.76,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        93,
+        176,
+        987,
+        395
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.44,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.3,
+        1.4
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板"
+   },
+   "caption_instagram": "קונים במטבע המקומי\nורואים מיד במטבע שלכם, גם בלי חיבור\n\n📲 הורדה דרך הקישור בביו\n\n#GMoneyLite",
+   "caption_link": "קונים במטבע המקומי\nורואים מיד במטבע שלכם, גם בלי חיבור\n\nApp Store: https://apps.apple.com/app/id6793436548\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoneylite/he.jpg"
+  },
+  {
+   "locale": "hi",
+   "file": "gmoneylite/hi.jpg",
+   "intended_locale": "hi",
+   "headline_locale": "hi",
+   "screenshot_locale": "hi",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:hin",
+    "script_chars": 193,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {
+    "1": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "$7",
+     "¥ 1",
+     "¥1"
+    ],
+    "0": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "¥ 1"
+    ],
+    "2": [
+     "$1",
+     "$2",
+     "$3",
+     "$5",
+     "$6",
+     "¥1",
+     "¥3",
+     "¥6",
+     "¥8"
+    ]
+   },
+   "warnings": [
+    "screen text flags remain (no clean screenshot available): {1: ['$2', '$3', '$4', '$5', '$7', '¥ 1', '¥1'], 0: ['$2', '$3', '$4', '$5', '¥ 1'], 2: ['$1', '$2', '$3', '$5', '$6', '¥1', '¥3', '¥6', '¥8']}"
+   ],
+   "line1": "स्थानीय मुद्रा में लिखें",
+   "line2": "तुरंत अपनी मुद्रा में देखें, ऑफलाइन भी",
+   "chips": [
+    "तुरंत अपनी मुद्रा में देखें, ऑफलाइन भी",
+    "दैनिक बजट वॉच और विजेट पर"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.26,
+    "family": "fan3_2",
+    "font": "NotoSansDevanagari.ttf",
+    "screen_ratio_vs_battai_split": 0.96,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        316,
+        72,
+        764,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.93,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        101,
+        176,
+        979,
+        488
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.61,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板"
+   },
+   "caption_instagram": "स्थानीय मुद्रा में लिखें\nतुरंत अपनी मुद्रा में देखें, ऑफलाइन भी\n\n📲 बायो में दिए लिंक से डाउनलोड करें\n\n#GMoneyLite",
+   "caption_link": "स्थानीय मुद्रा में लिखें\nतुरंत अपनी मुद्रा में देखें, ऑफलाइन भी\n\nApp Store: https://apps.apple.com/app/id6793436548\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoneylite/hi.jpg"
+  },
+  {
+   "locale": "hr",
+   "file": "gmoneylite/hr.jpg",
+   "intended_locale": "hr",
+   "headline_locale": "hr",
+   "screenshot_locale": "hr",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {
+    "1": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "$7",
+     "¥ 1",
+     "¥1"
+    ],
+    "0": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "¥ 1"
+    ],
+    "2": [
+     "$1",
+     "$2",
+     "$3",
+     "$6",
+     "¥1",
+     "¥3",
+     "¥6",
+     "¥8"
+    ]
+   },
+   "warnings": [
+    "screen text flags remain (no clean screenshot available): {1: ['$2', '$3', '$4', '$5', '$7', '¥ 1', '¥1'], 0: ['$2', '$3', '$4', '$5', '¥ 1'], 2: ['$1', '$2', '$3', '$6', '¥1', '¥3', '¥6', '¥8']}",
+    "layout fallback fan3_2->fan3_2 (fan3_2: screen_area=0.238<0.24)"
+   ],
+   "line1": "Troškovi u lokalnoj valuti",
+   "line2": "Odmah i u tvojoj valuti, i offline",
+   "chips": [
+    "Odmah i u tvojoj valuti, i offline",
+    "Dnevni limit na satu i widgetu"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.256,
+    "family": "fan3_2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.11,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        264,
+        72,
+        816,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.86,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        96,
+        176,
+        983,
+        558
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.63,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板（自檢未過改用 fan3_2）"
+   },
+   "caption_instagram": "Troškovi u lokalnoj valuti\nOdmah i u tvojoj valuti, i offline\n\n📲 Preuzmi putem poveznice u biografiji (bio)\n\n#GMoneyLite",
+   "caption_link": "Troškovi u lokalnoj valuti\nOdmah i u tvojoj valuti, i offline\n\nApp Store: https://apps.apple.com/app/id6793436548\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoneylite/hr.jpg"
+  },
+  {
+   "locale": "hu",
+   "file": "gmoneylite/hu.jpg",
+   "intended_locale": "hu",
+   "headline_locale": "hu",
+   "screenshot_locale": "hu",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {
+    "1": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "$7",
+     "¥ 1",
+     "¥1"
+    ],
+    "0": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "¥ 1"
+    ],
+    "2": [
+     "$1",
+     "$2",
+     "$3",
+     "$5",
+     "$6",
+     "¥1",
+     "¥3",
+     "¥6",
+     "¥8"
+    ]
+   },
+   "warnings": [
+    "screen text flags remain (no clean screenshot available): {1: ['$2', '$3', '$4', '$5', '$7', '¥ 1', '¥1'], 0: ['$2', '$3', '$4', '$5', '¥ 1'], 2: ['$1', '$2', '$3', '$5', '$6', '¥1', '¥3', '¥6', '¥8']}",
+    "layout fallback fan3_2->fan3_2 (fan3_2: screen_area=0.217<0.24; fan3_2×1.08: screen_area=0.234<0.24)"
+   ],
+   "line1": "Költés helyi pénznemben",
+   "line2": "Azonnal a sajátodban, offline is",
+   "chips": [
+    "Azonnal a sajátodban, offline is",
+    "Napi keret órán és widgeten"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.251,
+    "family": "fan3_2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.29,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        240,
+        72,
+        840,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.82,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        182,
+        176,
+        897,
+        623
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.83,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板（自檢未過改用 fan3_2）"
+   },
+   "caption_instagram": "Költés helyi pénznemben\nAzonnal a sajátodban, offline is\n\n📲 Töltsd le a bio linkjéről\n\n#GMoneyLite",
+   "caption_link": "Költés helyi pénznemben\nAzonnal a sajátodban, offline is\n\nApp Store: https://apps.apple.com/app/id6793436548\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoneylite/hu.jpg"
+  },
+  {
+   "locale": "id",
+   "file": "gmoneylite/id.jpg",
+   "intended_locale": "id",
+   "headline_locale": "id",
+   "screenshot_locale": "id",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {
+    "1": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "$7",
+     "¥ 1",
+     "¥1"
+    ],
+    "0": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "¥ 1"
+    ],
+    "2": [
+     "$1",
+     "$2",
+     "$3",
+     "$5",
+     "$6",
+     "¥1",
+     "¥3",
+     "¥6",
+     "¥8"
+    ]
+   },
+   "warnings": [
+    "screen text flags remain (no clean screenshot available): {1: ['$2', '$3', '$4', '$5', '$7', '¥ 1', '¥1'], 0: ['$2', '$3', '$4', '$5', '¥ 1'], 2: ['$1', '$2', '$3', '$5', '$6', '¥1', '¥3', '¥6', '¥8']}",
+    "layout fallback fan3_2->fan3_2 (fan3_2: screen_area=0.217<0.24; fan3_2×1.08: screen_area=0.234<0.24)"
+   ],
+   "line1": "Uang liburan simpel",
+   "line2": "Catat mata uang lokal, lihat di mata uangmu",
+   "chips": [
+    "Catat mata uang lokal, lihat di mata uangmu",
+    "Anggaran harian di jam tangan"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.251,
+    "family": "fan3_2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.29,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        242,
+        72,
+        837,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.82,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        184,
+        176,
+        897,
+        623
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.65,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板（自檢未過改用 fan3_2）"
+   },
+   "caption_instagram": "Uang liburan simpel\nCatat mata uang lokal, lihat di mata uangmu\n\n📲 Unduh lewat link di bio\n\n#GMoneyLite",
+   "caption_link": "Uang liburan simpel\nCatat mata uang lokal, lihat di mata uangmu\n\nApp Store: https://apps.apple.com/app/id6793436548\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoneylite/id.jpg"
+  },
+  {
+   "locale": "it",
+   "file": "gmoneylite/it.jpg",
+   "intended_locale": "it",
+   "headline_locale": "it",
+   "screenshot_locale": "it",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {
+    "1": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "$7",
+     "¥ 1",
+     "¥1"
+    ],
+    "0": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "¥ 1"
+    ],
+    "2": [
+     "$1",
+     "$2",
+     "$3",
+     "$5",
+     "$6",
+     "¥1",
+     "¥3",
+     "¥6",
+     "¥8"
+    ]
+   },
+   "warnings": [
+    "screen text flags remain (no clean screenshot available): {1: ['$2', '$3', '$4', '$5', '$7', '¥ 1', '¥1'], 0: ['$2', '$3', '$4', '$5', '¥ 1'], 2: ['$1', '$2', '$3', '$5', '$6', '¥1', '¥3', '¥6', '¥8']}",
+    "layout fallback fan3_2->fan3_2 (fan3_2: screen_area=0.221<0.24; fan3_2×1.08: screen_area=0.238<0.24)"
+   ],
+   "line1": "Spendi, è già convertito",
+   "line2": "In valuta locale, anche offline",
+   "chips": [
+    "In valuta locale, anche offline",
+    "Budget giornaliero su orologio",
+    "Per categoria · Viaggi · Filtri · Voci"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.255,
+    "family": "fan3_2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.29,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        248,
+        72,
+        832,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.8,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        188,
+        176,
+        891,
+        611
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.57,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板（自檢未過改用 fan3_2）"
+   },
+   "caption_instagram": "Spendi, è già convertito\nIn valuta locale, anche offline\n\n📲 Scaricala dal link nella bio\n\n#GMoneyLite",
+   "caption_link": "Spendi, è già convertito\nIn valuta locale, anche offline\n\nApp Store: https://apps.apple.com/app/id6793436548\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoneylite/it.jpg"
+  },
+  {
+   "locale": "ja",
+   "file": "gmoneylite/ja.jpg",
+   "intended_locale": "ja",
+   "headline_locale": "ja",
+   "screenshot_locale": "ja",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:jpn",
+    "script_chars": 85,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {
+    "1": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "¥ 1",
+     "¥1"
+    ],
+    "0": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "¥ 1"
+    ],
+    "2": [
+     "$1",
+     "$2",
+     "$3",
+     "$5",
+     "$6",
+     "¥1",
+     "¥3",
+     "¥6",
+     "¥8"
+    ]
+   },
+   "warnings": [
+    "screen text flags remain (no clean screenshot available): {1: ['$2', '$3', '$4', '$5', '¥ 1', '¥1'], 0: ['$2', '$3', '$4', '$5', '¥ 1'], 2: ['$1', '$2', '$3', '$5', '$6', '¥1', '¥3', '¥6', '¥8']}"
+   ],
+   "line1": "旅の出費をすぐ換算",
+   "line2": "現地通貨で記録・オフラインでも",
+   "chips": [
+    "現地通貨で記録・オフラインでも",
+    "旅行費用・旅費管理・外貨換算",
+    "カテゴリ別 · 旅程 · フィルター · 記録"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.282,
+    "family": "fan3_2",
+    "font": "NotoSansJP.ttf",
+    "screen_ratio_vs_battai_split": 0.96,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        250,
+        72,
+        830,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.8,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        90,
+        176,
+        989,
+        417
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 96,
+        "sub": 48,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.58,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板"
+   },
+   "caption_instagram": "旅の出費をすぐ換算\n現地通貨で記録・オフラインでも\n\n📲 ダウンロードはプロフィール（bio）のリンクから\n\n#GMoneyLite",
+   "caption_link": "旅の出費をすぐ換算\n現地通貨で記録・オフラインでも\n\nApp Store: https://apps.apple.com/app/id6793436548\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoneylite/ja.jpg"
+  },
+  {
+   "locale": "kn-IN",
+   "file": "gmoneylite/kn-IN.jpg",
+   "intended_locale": "kn-IN",
+   "headline_locale": "kn-IN",
+   "screenshot_locale": "kn-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:kan",
+    "script_chars": 196,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {
+    "1": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "$7",
+     "¥1"
+    ],
+    "0": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "¥ 1"
+    ],
+    "2": [
+     "$1",
+     "$2",
+     "$3",
+     "$5",
+     "$6",
+     "¥1",
+     "¥3",
+     "¥6",
+     "¥8"
+    ]
+   },
+   "warnings": [
+    "screen text flags remain (no clean screenshot available): {1: ['$2', '$3', '$4', '$5', '$7', '¥1'], 0: ['$2', '$3', '$4', '$5', '¥ 1'], 2: ['$1', '$2', '$3', '$5', '$6', '¥1', '¥3', '¥6', '¥8']}",
+    "layout fallback fan3_2->split2 (fan3_2: screen_area=0.186<0.24; fan3_2×1.08: screen_area=0.201<0.24; fan3_2×1.16: screen_area=0.215<0.24; fan3_2×1.25: screen_area=0.231<0.24)"
+   ],
+   "line1": "ವಿದೇಶದ ಖರ್ಚು ತಕ್ಷಣ ಲೆಕ್ಕ",
+   "line2": "ಸ್ಥಳೀಯ ಕರೆನ್ಸಿ ದಾಖಲೆ · ಆಫ್‌ಲೈನ್‌ನಲ್ಲೂ",
+   "chips": [
+    "ಸ್ಥಳೀಯ ಕರೆನ್ಸಿ ದಾಖಲೆ · ಆಫ್‌ಲೈನ್‌ನಲ್ಲೂ",
+    "ವಾಚ್, ವಿಜೆಟ್‌ನಲ್ಲಿ ದಿನದ ಬಜೆಟ್"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.275,
+    "family": "split2",
+    "font": "NotoSansKannada.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        382,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.78,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        543,
+        901
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 96,
+        "sub": 48,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.82,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        925,
+        451,
+        1058
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.37,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板（自檢未過改用 split2）"
+   },
+   "caption_instagram": "ವಿದೇಶದ ಖರ್ಚು ತಕ್ಷಣ ಲೆಕ್ಕ\nಸ್ಥಳೀಯ ಕರೆನ್ಸಿ ದಾಖಲೆ · ಆಫ್‌ಲೈನ್‌ನಲ್ಲೂ\n\n📲 ಬಯೋದಲ್ಲಿರುವ ಲಿಂಕ್‌ನಿಂದ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ\n\n#GMoneyLite",
+   "caption_link": "ವಿದೇಶದ ಖರ್ಚು ತಕ್ಷಣ ಲೆಕ್ಕ\nಸ್ಥಳೀಯ ಕರೆನ್ಸಿ ದಾಖಲೆ · ಆಫ್‌ಲೈನ್‌ನಲ್ಲೂ\n\nApp Store: https://apps.apple.com/app/id6793436548\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoneylite/kn-IN.jpg"
+  },
+  {
+   "locale": "ko",
+   "file": "gmoneylite/ko.jpg",
+   "intended_locale": "ko",
+   "headline_locale": "ko",
+   "screenshot_locale": "ko",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:kor",
+    "script_chars": 65,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {
+    "1": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "$7",
+     "¥ 1",
+     "¥1"
+    ],
+    "0": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "¥ 1"
+    ],
+    "2": [
+     "$1",
+     "$2",
+     "$3",
+     "$5",
+     "$6",
+     "¥1",
+     "¥3",
+     "¥6",
+     "¥8"
+    ]
+   },
+   "warnings": [
+    "screen text flags remain (no clean screenshot available): {1: ['$2', '$3', '$4', '$5', '$7', '¥ 1', '¥1'], 0: ['$2', '$3', '$4', '$5', '¥ 1'], 2: ['$1', '$2', '$3', '$5', '$6', '¥1', '¥3', '¥6', '¥8']}"
+   ],
+   "line1": "여행 경비 바로 환산",
+   "line2": "현지 통화로 기록·오프라인도 OK",
+   "chips": [
+    "현지 통화로 기록·오프라인도 OK",
+    "해외여행 경비·하루 예산",
+    "분류별 · 여행 · 필터 · 기록"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.278,
+    "family": "fan3_2",
+    "font": "NotoSansKR.ttf",
+    "screen_ratio_vs_battai_split": 0.96,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        262,
+        72,
+        817,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.82,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        106,
+        176,
+        973,
+        431
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.79,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板"
+   },
+   "caption_instagram": "여행 경비 바로 환산\n현지 통화로 기록·오프라인도 OK\n\n📲 다운로드는 프로필(bio) 링크에서\n\n#GMoneyLite",
+   "caption_link": "여행 경비 바로 환산\n현지 통화로 기록·오프라인도 OK\n\nApp Store: https://apps.apple.com/app/id6793436548\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoneylite/ko.jpg"
+  },
+  {
+   "locale": "ml-IN",
+   "file": "gmoneylite/ml-IN.jpg",
+   "intended_locale": "ml-IN",
+   "headline_locale": "ml-IN",
+   "screenshot_locale": "ml-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:mal",
+    "script_chars": 214,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {
+    "1": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "$7",
+     "¥1"
+    ],
+    "0": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "¥ 1"
+    ],
+    "2": [
+     "$1",
+     "$2",
+     "$3",
+     "$5",
+     "$6",
+     "¥1",
+     "¥3",
+     "¥6",
+     "¥8"
+    ]
+   },
+   "warnings": [
+    "screen text flags remain (no clean screenshot available): {1: ['$2', '$3', '$4', '$5', '$7', '¥1'], 0: ['$2', '$3', '$4', '$5', '¥ 1'], 2: ['$1', '$2', '$3', '$5', '$6', '¥1', '¥3', '¥6', '¥8']}",
+    "layout fallback fan3_2->split2 (fan3_2: screen_area=0.189<0.24; fan3_2×1.08: screen_area=0.203<0.24; fan3_2×1.16: screen_area=0.218<0.24; fan3_2×1.25: screen_area=0.234<0.24)"
+   ],
+   "line1": "വിദേശ ചെലവ് ഉടൻ",
+   "line2": "പ്രാദേശിക കറൻസിയിൽ · ഓഫ്‌ലൈനിലും",
+   "chips": [
+    "പ്രാദേശിക കറൻസിയിൽ · ഓഫ്‌ലൈനിലും",
+    "ദിന ബജറ്റ്: വാച്ച്, വിജറ്റ്"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.275,
+    "family": "split2",
+    "font": "NotoSansMalayalam.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        394,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.78,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        533,
+        950
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 9.51,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        974,
+        396,
+        1119
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.14,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板（自檢未過改用 split2）"
+   },
+   "caption_instagram": "വിദേശ ചെലവ് ഉടൻ\nപ്രാദേശിക കറൻസിയിൽ · ഓഫ്‌ലൈനിലും\n\n📲 ബയോയിലെ ലിങ്ക് വഴി ഡൗൺലോഡ് ചെയ്യുക\n\n#GMoneyLite",
+   "caption_link": "വിദേശ ചെലവ് ഉടൻ\nപ്രാദേശിക കറൻസിയിൽ · ഓഫ്‌ലൈനിലും\n\nApp Store: https://apps.apple.com/app/id6793436548\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoneylite/ml-IN.jpg"
+  },
+  {
+   "locale": "mr-IN",
+   "file": "gmoneylite/mr-IN.jpg",
+   "intended_locale": "mr-IN",
+   "headline_locale": "mr-IN",
+   "screenshot_locale": "mr-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:mar",
+    "script_chars": 192,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {
+    "1": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "$7",
+     "ad",
+     "¥1"
+    ],
+    "0": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "¥ 1"
+    ],
+    "2": [
+     "$1",
+     "$2",
+     "$3",
+     "$5",
+     "$6",
+     "¥1",
+     "¥3",
+     "¥6",
+     "¥8"
+    ]
+   },
+   "warnings": [
+    "screen text flags remain (no clean screenshot available): {1: ['$2', '$3', '$4', '$5', '$7', 'ad', '¥1'], 0: ['$2', '$3', '$4', '$5', '¥ 1'], 2: ['$1', '$2', '$3', '$5', '$6', '¥1', '¥3', '¥6', '¥8']}"
+   ],
+   "line1": "स्थानिक चलनात नोंदवा",
+   "line2": "लगेच तुमच्या चलनात पाहा, ऑफलाइनही",
+   "chips": [
+    "लगेच तुमच्या चलनात पाहा, ऑफलाइनही",
+    "रोजचे बजेट वॉच आणि विजेटवर"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.266,
+    "family": "fan3_2",
+    "font": "NotoSansDevanagari.ttf",
+    "screen_ratio_vs_battai_split": 0.96,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        309,
+        72,
+        771,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.92,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        74,
+        176,
+        1007,
+        468
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 96,
+        "sub": 48,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.62,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板"
+   },
+   "caption_instagram": "स्थानिक चलनात नोंदवा\nलगेच तुमच्या चलनात पाहा, ऑफलाइनही\n\n📲 बायोमधील लिंकवरून डाउनलोड करा\n\n#GMoneyLite",
+   "caption_link": "स्थानिक चलनात नोंदवा\nलगेच तुमच्या चलनात पाहा, ऑफलाइनही\n\nApp Store: https://apps.apple.com/app/id6793436548\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoneylite/mr-IN.jpg"
+  },
+  {
+   "locale": "ms",
+   "file": "gmoneylite/ms.jpg",
+   "intended_locale": "ms",
+   "headline_locale": "ms",
+   "screenshot_locale": "ms",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {
+    "1": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "$7",
+     "¥ 1",
+     "¥1"
+    ],
+    "0": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "¥ 1"
+    ],
+    "2": [
+     "$1",
+     "$2",
+     "$3",
+     "$5",
+     "$6",
+     "¥1",
+     "¥3",
+     "¥6",
+     "¥8"
+    ]
+   },
+   "warnings": [
+    "screen text flags remain (no clean screenshot available): {1: ['$2', '$3', '$4', '$5', '$7', '¥ 1', '¥1'], 0: ['$2', '$3', '$4', '$5', '¥ 1'], 2: ['$1', '$2', '$3', '$5', '$6', '¥1', '¥3', '¥6', '¥8']}"
+   ],
+   "line1": "Belanja cuti mudah",
+   "line2": "Catat mata wang tempatan, lihat nilai anda",
+   "chips": [
+    "Catat mata wang tempatan, lihat nilai anda",
+    "Bajet harian di jam & widget"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.269,
+    "family": "fan3_2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.96,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        258,
+        72,
+        823,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.83,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        92,
+        176,
+        988,
+        458
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.66,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板"
+   },
+   "caption_instagram": "Belanja cuti mudah\nCatat mata wang tempatan, lihat nilai anda\n\n📲 Muat turun melalui pautan dalam bio\n\n#GMoneyLite",
+   "caption_link": "Belanja cuti mudah\nCatat mata wang tempatan, lihat nilai anda\n\nApp Store: https://apps.apple.com/app/id6793436548\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoneylite/ms.jpg"
+  },
+  {
+   "locale": "nl-NL",
+   "file": "gmoneylite/nl-NL.jpg",
+   "intended_locale": "nl-NL",
+   "headline_locale": "nl-NL",
+   "screenshot_locale": "nl-NL",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {
+    "1": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "$7",
+     "¥ 1",
+     "¥1"
+    ],
+    "0": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "¥ 1"
+    ],
+    "2": [
+     "$1",
+     "$2",
+     "$3",
+     "$5",
+     "$6",
+     "¥1",
+     "¥3",
+     "¥6",
+     "¥8"
+    ]
+   },
+   "warnings": [
+    "screen text flags remain (no clean screenshot available): {1: ['$2', '$3', '$4', '$5', '$7', '¥ 1', '¥1'], 0: ['$2', '$3', '$4', '$5', '¥ 1'], 2: ['$1', '$2', '$3', '$5', '$6', '¥1', '¥3', '¥6', '¥8']}"
+   ],
+   "line1": "Reisgeld simpel",
+   "line2": "Noteer in lokale valuta, zie je eigen munt",
+   "chips": [
+    "Noteer in lokale valuta, zie je eigen munt",
+    "Dagbudget op horloge en widget",
+    "Per categorie · Reizen · Filters · Items"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.256,
+    "family": "fan3_2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.96,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        272,
+        72,
+        807,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.86,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        113,
+        176,
+        967,
+        501
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.97,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板"
+   },
+   "caption_instagram": "Reisgeld simpel\nNoteer in lokale valuta, zie je eigen munt\n\n📲 Download via de link in bio\n\n#GMoneyLite",
+   "caption_link": "Reisgeld simpel\nNoteer in lokale valuta, zie je eigen munt\n\nApp Store: https://apps.apple.com/app/id6793436548\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoneylite/nl-NL.jpg"
+  },
+  {
+   "locale": "no",
+   "file": "gmoneylite/no.jpg",
+   "intended_locale": "no",
+   "headline_locale": "no",
+   "screenshot_locale": "no",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {
+    "1": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "$7",
+     "¥ 1",
+     "¥1"
+    ],
+    "0": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "¥ 1"
+    ],
+    "2": [
+     "$1",
+     "$2",
+     "$3",
+     "$5",
+     "$6",
+     "¥1",
+     "¥3",
+     "¥6",
+     "¥8"
+    ]
+   },
+   "warnings": [
+    "screen text flags remain (no clean screenshot available): {1: ['$2', '$3', '$4', '$5', '$7', '¥ 1', '¥1'], 0: ['$2', '$3', '$4', '$5', '¥ 1'], 2: ['$1', '$2', '$3', '$5', '$6', '¥1', '¥3', '¥6', '¥8']}"
+   ],
+   "line1": "Kjøp i lokal valuta",
+   "line2": "Se dem straks i din egen, offline",
+   "chips": [
+    "Se dem straks i din egen, offline",
+    "Dagsbudsjett, klokke og widget"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.282,
+    "family": "fan3_2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.96,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        270,
+        72,
+        809,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.86,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        88,
+        176,
+        993,
+        419
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 96,
+        "sub": 48,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.65,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板"
+   },
+   "caption_instagram": "Kjøp i lokal valuta\nSe dem straks i din egen, offline\n\n📲 Last ned via lenken i bio\n\n#GMoneyLite",
+   "caption_link": "Kjøp i lokal valuta\nSe dem straks i din egen, offline\n\nApp Store: https://apps.apple.com/app/id6793436548\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoneylite/no.jpg"
+  },
+  {
+   "locale": "or-IN",
+   "file": "gmoneylite/or-IN.jpg",
+   "intended_locale": "or-IN",
+   "headline_locale": "or-IN",
+   "screenshot_locale": "or-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:ori",
+    "script_chars": 175,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {
+    "1": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "$7",
+     "¥1"
+    ],
+    "0": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "ad",
+     "¥ 1"
+    ],
+    "2": [
+     "$1",
+     "$2",
+     "$3",
+     "$5",
+     "$6",
+     "¥1",
+     "¥3",
+     "¥6",
+     "¥8"
+    ]
+   },
+   "warnings": [
+    "screen text flags remain (no clean screenshot available): {1: ['$2', '$3', '$4', '$5', '$7', '¥1'], 0: ['$2', '$3', '$4', '$5', 'ad', '¥ 1'], 2: ['$1', '$2', '$3', '$5', '$6', '¥1', '¥3', '¥6', '¥8']}"
+   ],
+   "line1": "ବିଦେଶ ଖର୍ଚ୍ଚ ନିଜ ମୁଦ୍ରାରେ",
+   "line2": "ସ୍ଥାନୀୟ ମୁଦ୍ରାରେ ଲେଖନ୍ତୁ, ଅଫଲାଇନରେ ବି",
+   "chips": [
+    "ସ୍ଥାନୀୟ ମୁଦ୍ରାରେ ଲେଖନ୍ତୁ, ଅଫଲାଇନରେ ବି",
+    "ଦୈନିକ ବଜେଟ୍ ୱାଚ୍ ଓ ୱିଜେଟରେ"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.273,
+    "family": "fan3_2",
+    "font": "NotoSansOriya.ttf",
+    "screen_ratio_vs_battai_split": 0.96,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        313,
+        72,
+        767,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.88,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        75,
+        176,
+        1005,
+        448
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.04,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板"
+   },
+   "caption_instagram": "ବିଦେଶ ଖର୍ଚ୍ଚ ନିଜ ମୁଦ୍ରାରେ\nସ୍ଥାନୀୟ ମୁଦ୍ରାରେ ଲେଖନ୍ତୁ, ଅଫଲାଇନରେ ବି\n\n📲 ବାୟୋରେ ଥିବା ଲିଙ୍କରୁ ଡାଉନଲୋଡ୍ କରନ୍ତୁ\n\n#GMoneyLite",
+   "caption_link": "ବିଦେଶ ଖର୍ଚ୍ଚ ନିଜ ମୁଦ୍ରାରେ\nସ୍ଥାନୀୟ ମୁଦ୍ରାରେ ଲେଖନ୍ତୁ, ଅଫଲାଇନରେ ବି\n\nApp Store: https://apps.apple.com/app/id6793436548\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoneylite/or-IN.jpg"
+  },
+  {
+   "locale": "pa-IN",
+   "file": "gmoneylite/pa-IN.jpg",
+   "intended_locale": "pa-IN",
+   "headline_locale": "pa-IN",
+   "screenshot_locale": "pa-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:pan",
+    "script_chars": 135,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {
+    "1": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "$7",
+     "¥ 1",
+     "¥1"
+    ],
+    "0": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "¥ 1"
+    ],
+    "2": [
+     "$1",
+     "$2",
+     "$3",
+     "$5",
+     "$6",
+     "¥1",
+     "¥3",
+     "¥6",
+     "¥8"
+    ]
+   },
+   "warnings": [
+    "screen text flags remain (no clean screenshot available): {1: ['$2', '$3', '$4', '$5', '$7', '¥ 1', '¥1'], 0: ['$2', '$3', '$4', '$5', '¥ 1'], 2: ['$1', '$2', '$3', '$5', '$6', '¥1', '¥3', '¥6', '¥8']}",
+    "layout fallback fan3_2->closeup2 (fan3_2: screen_area=0.19<0.24; fan3_2×1.08: screen_area=0.204<0.24; fan3_2×1.16: screen_area=0.219<0.24; fan3_2×1.25: screen_area=0.235<0.24; split2: text does not fit at minimum sizes; closeup2: screen_area=0.2<0.24; closeup2×1.08: screen_area=0.216<0.24; closeup2×1.16: screen_area=0.231<0.24)"
+   ],
+   "line1": "ਵਿਦੇਸ਼ੀ ਖਰਚਾ ਆਪਣੀ ਮੁਦਰਾ ਵਿੱਚ",
+   "line2": "ਸਥਾਨਕ ਮੁਦਰਾ ਵਿੱਚ ਲਿਖੋ, ਆਫਲਾਈਨ ਵੀ",
+   "chips": [
+    "ਸਥਾਨਕ ਮੁਦਰਾ ਵਿੱਚ ਲਿਖੋ, ਆਫਲਾਈਨ ਵੀ",
+    "ਵਾਚ ਤੇ ਵਿਜੇਟ ਉੱਤੇ ਰੋਜ਼ਾਨਾ ਬਜਟ"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.248,
+    "family": "closeup2",
+    "font": "NotoSansGurmukhi.ttf",
+    "screen_ratio_vs_battai_split": 1.77,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        299,
+        72,
+        781,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.91,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        146,
+        184,
+        933,
+        718
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.01,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.25,
+    "layout_family": "closeup2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "ਵਿਦੇਸ਼ੀ ਖਰਚਾ ਆਪਣੀ ਮੁਦਰਾ ਵਿੱਚ\nਸਥਾਨਕ ਮੁਦਰਾ ਵਿੱਚ ਲਿਖੋ, ਆਫਲਾਈਨ ਵੀ\n\n📲 ਬਾਇਓ ਵਿੱਚ ਦਿੱਤੇ ਲਿੰਕ ਤੋਂ ਡਾਊਨਲੋਡ ਕਰੋ\n\n#GMoneyLite",
+   "caption_link": "ਵਿਦੇਸ਼ੀ ਖਰਚਾ ਆਪਣੀ ਮੁਦਰਾ ਵਿੱਚ\nਸਥਾਨਕ ਮੁਦਰਾ ਵਿੱਚ ਲਿਖੋ, ਆਫਲਾਈਨ ਵੀ\n\nApp Store: https://apps.apple.com/app/id6793436548\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoneylite/pa-IN.jpg"
+  },
+  {
+   "locale": "pl",
+   "file": "gmoneylite/pl.jpg",
+   "intended_locale": "pl",
+   "headline_locale": "pl",
+   "screenshot_locale": "pl",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {
+    "1": [
+     "$2",
+     "$3",
+     "$4",
+     "$7",
+     "¥ 1",
+     "¥1"
+    ],
+    "0": [
+     "$2",
+     "$3",
+     "$4",
+     "¥ 1"
+    ],
+    "2": [
+     "$1",
+     "$2",
+     "$3",
+     "$5",
+     "$6",
+     "¥1",
+     "¥3",
+     "¥6",
+     "¥8"
+    ]
+   },
+   "warnings": [
+    "screen text flags remain (no clean screenshot available): {1: ['$2', '$3', '$4', '$7', '¥ 1', '¥1'], 0: ['$2', '$3', '$4', '¥ 1'], 2: ['$1', '$2', '$3', '$5', '$6', '¥1', '¥3', '¥6', '¥8']}",
+    "layout fallback fan3_2->fan3_2 (fan3_2: screen_area=0.238<0.24)"
+   ],
+   "line1": "Zakupy w twojej walucie",
+   "line2": "Zapisuj w lokalnej walucie, offline",
+   "chips": [
+    "Zapisuj w lokalnej walucie, offline",
+    "Dzienny budżet na zegarku",
+    "Wg kategorii · Podróże · Filtry · Wpisy"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.257,
+    "family": "fan3_2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.11,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        254,
+        72,
+        826,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.83,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        90,
+        176,
+        991,
+        557
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.8,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板（自檢未過改用 fan3_2）"
+   },
+   "caption_instagram": "Zakupy w twojej walucie\nZapisuj w lokalnej walucie, offline\n\n📲 Pobierz przez link w bio\n\n#GMoneyLite",
+   "caption_link": "Zakupy w twojej walucie\nZapisuj w lokalnej walucie, offline\n\nApp Store: https://apps.apple.com/app/id6793436548\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoneylite/pl.jpg"
+  },
+  {
+   "locale": "pt-BR",
+   "file": "gmoneylite/pt-BR.jpg",
+   "intended_locale": "pt-BR",
+   "headline_locale": "pt-BR",
+   "screenshot_locale": "pt-BR",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {
+    "1": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "$7",
+     "¥ 1",
+     "¥1"
+    ],
+    "0": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "¥ 1"
+    ],
+    "2": [
+     "$1",
+     "$2",
+     "$3",
+     "$5",
+     "$6",
+     "¥1",
+     "¥3",
+     "¥6",
+     "¥8"
+    ]
+   },
+   "warnings": [
+    "screen text flags remain (no clean screenshot available): {1: ['$2', '$3', '$4', '$5', '$7', '¥ 1', '¥1'], 0: ['$2', '$3', '$4', '$5', '¥ 1'], 2: ['$1', '$2', '$3', '$5', '$6', '¥1', '¥3', '¥6', '¥8']}",
+    "layout fallback fan3_2->fan3_2 (fan3_2: screen_area=0.218<0.24; fan3_2×1.08: screen_area=0.234<0.24)"
+   ],
+   "line1": "Gastos de viagem fáceis",
+   "line2": "Anote na moeda local e veja na sua",
+   "chips": [
+    "Anote na moeda local e veja na sua",
+    "Orçamento diário no relógio"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.251,
+    "family": "fan3_2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.29,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        235,
+        72,
+        845,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.8,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        156,
+        176,
+        925,
+        622
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.9,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板（自檢未過改用 fan3_2）"
+   },
+   "caption_instagram": "Gastos de viagem fáceis\nAnote na moeda local e veja na sua\n\n📲 Baixe pelo link na bio\n\n#GMoneyLite",
+   "caption_link": "Gastos de viagem fáceis\nAnote na moeda local e veja na sua\n\nApp Store: https://apps.apple.com/app/id6793436548\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoneylite/pt-BR.jpg"
+  },
+  {
+   "locale": "pt-PT",
+   "file": "gmoneylite/pt-PT.jpg",
+   "intended_locale": "pt-PT",
+   "headline_locale": "pt-PT",
+   "screenshot_locale": "pt-PT",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {
+    "1": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "$7",
+     "¥ 1",
+     "¥1"
+    ],
+    "0": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "¥ 1"
+    ],
+    "2": [
+     "$1",
+     "$2",
+     "$3",
+     "$5",
+     "$6",
+     "¥1",
+     "¥3",
+     "¥6",
+     "¥8"
+    ]
+   },
+   "warnings": [
+    "screen text flags remain (no clean screenshot available): {1: ['$2', '$3', '$4', '$5', '$7', '¥ 1', '¥1'], 0: ['$2', '$3', '$4', '$5', '¥ 1'], 2: ['$1', '$2', '$3', '$5', '$6', '¥1', '¥3', '¥6', '¥8']}",
+    "layout fallback fan3_2->fan3_2 (fan3_2: screen_area=0.218<0.24; fan3_2×1.08: screen_area=0.234<0.24)"
+   ],
+   "line1": "Gastos de viagem fáceis",
+   "line2": "Registe na moeda local e veja na sua",
+   "chips": [
+    "Registe na moeda local e veja na sua",
+    "Orçamento do dia no relógio"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.251,
+    "family": "fan3_2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.29,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        235,
+        72,
+        845,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.8,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        156,
+        176,
+        925,
+        622
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.9,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板（自檢未過改用 fan3_2）"
+   },
+   "caption_instagram": "Gastos de viagem fáceis\nRegiste na moeda local e veja na sua\n\n📲 Download via the link in bio\n\n#GMoneyLite",
+   "caption_link": "Gastos de viagem fáceis\nRegiste na moeda local e veja na sua\n\nApp Store: https://apps.apple.com/app/id6793436548\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite",
+   "cta_source": "en-fallback",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoneylite/pt-PT.jpg"
+  },
+  {
+   "locale": "ro",
+   "file": "gmoneylite/ro.jpg",
+   "intended_locale": "ro",
+   "headline_locale": "ro",
+   "screenshot_locale": "ro",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {
+    "1": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "$7",
+     "¥ 1",
+     "¥1"
+    ],
+    "0": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "¥ 1"
+    ],
+    "2": [
+     "$1",
+     "$2",
+     "$3",
+     "$5",
+     "$6",
+     "¥1",
+     "¥3",
+     "¥6",
+     "¥8"
+    ]
+   },
+   "warnings": [
+    "screen text flags remain (no clean screenshot available): {1: ['$2', '$3', '$4', '$5', '$7', '¥ 1', '¥1'], 0: ['$2', '$3', '$4', '$5', '¥ 1'], 2: ['$1', '$2', '$3', '$5', '$6', '¥1', '¥3', '¥6', '¥8']}",
+    "layout fallback fan3_2->fan3_2 (fan3_2: screen_area=0.219<0.24; fan3_2×1.08: screen_area=0.236<0.24)"
+   ],
+   "line1": "Notezi în moneda locală",
+   "line2": "Imediat și în moneda ta, offline",
+   "chips": [
+    "Imediat și în moneda ta, offline",
+    "Buget zilnic pe ceas și widget"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.253,
+    "family": "fan3_2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.29,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        249,
+        72,
+        831,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.81,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        139,
+        176,
+        941,
+        617
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.86,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板（自檢未過改用 fan3_2）"
+   },
+   "caption_instagram": "Notezi în moneda locală\nImediat și în moneda ta, offline\n\n📲 Descarcă din linkul din bio\n\n#GMoneyLite",
+   "caption_link": "Notezi în moneda locală\nImediat și în moneda ta, offline\n\nApp Store: https://apps.apple.com/app/id6793436548\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoneylite/ro.jpg"
+  },
+  {
+   "locale": "ru",
+   "file": "gmoneylite/ru.jpg",
+   "intended_locale": "ru",
+   "headline_locale": "ru",
+   "screenshot_locale": "ru",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:rus",
+    "script_chars": 250,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {
+    "1": [
+     "$2",
+     "$3",
+     "$4",
+     "$7",
+     "¥ 1",
+     "¥1"
+    ],
+    "0": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "¥ 1"
+    ],
+    "2": [
+     "$1",
+     "$2",
+     "$3",
+     "$6",
+     "¥1",
+     "¥3",
+     "¥6",
+     "¥8"
+    ]
+   },
+   "warnings": [
+    "screen text flags remain (no clean screenshot available): {1: ['$2', '$3', '$4', '$7', '¥ 1', '¥1'], 0: ['$2', '$3', '$4', '$5', '¥ 1'], 2: ['$1', '$2', '$3', '$6', '¥1', '¥3', '¥6', '¥8']}",
+    "layout fallback fan3_2->fan3_2 (fan3_2: screen_area=0.217<0.24; fan3_2×1.08: screen_area=0.234<0.24)"
+   ],
+   "line1": "Сразу в своей валюте",
+   "line2": "Траты в местной валюте, офлайн",
+   "chips": [
+    "Траты в местной валюте, офлайн",
+    "Бюджет на день: часы и виджет"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.25,
+    "family": "fan3_2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.29,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        241,
+        72,
+        839,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.81,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        151,
+        176,
+        929,
+        624
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.13,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板（自檢未過改用 fan3_2）"
+   },
+   "caption_instagram": "Сразу в своей валюте\nТраты в местной валюте, офлайн\n\n📲 Скачать можно по ссылке в профиле (bio)\n\n#GMoneyLite",
+   "caption_link": "Сразу в своей валюте\nТраты в местной валюте, офлайн\n\nApp Store: https://apps.apple.com/app/id6793436548\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoneylite/ru.jpg"
+  },
+  {
+   "locale": "sk",
+   "file": "gmoneylite/sk.jpg",
+   "intended_locale": "sk",
+   "headline_locale": "sk",
+   "screenshot_locale": "sk",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {
+    "1": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "$7",
+     "¥ 1",
+     "¥1"
+    ],
+    "0": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "¥ 1"
+    ],
+    "2": [
+     "$1",
+     "$2",
+     "$3",
+     "$5",
+     "$6",
+     "¥1",
+     "¥3",
+     "¥6",
+     "¥8"
+    ]
+   },
+   "warnings": [
+    "screen text flags remain (no clean screenshot available): {1: ['$2', '$3', '$4', '$5', '$7', '¥ 1', '¥1'], 0: ['$2', '$3', '$4', '$5', '¥ 1'], 2: ['$1', '$2', '$3', '$5', '$6', '¥1', '¥3', '¥6', '¥8']}",
+    "layout fallback fan3_2->fan3_2 (fan3_2: screen_area=0.238<0.24)"
+   ],
+   "line1": "Výdavky v miestnej mene",
+   "line2": "Hneď aj vo vašej mene, aj offline",
+   "chips": [
+    "Hneď aj vo vašej mene, aj offline",
+    "Denný rozpočet na hodinkách"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.256,
+    "family": "fan3_2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.11,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        237,
+        72,
+        843,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.82,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        81,
+        176,
+        999,
+        558
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.67,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板（自檢未過改用 fan3_2）"
+   },
+   "caption_instagram": "Výdavky v miestnej mene\nHneď aj vo vašej mene, aj offline\n\n📲 Stiahnite si ju cez odkaz v profile (bio)\n\n#GMoneyLite",
+   "caption_link": "Výdavky v miestnej mene\nHneď aj vo vašej mene, aj offline\n\nApp Store: https://apps.apple.com/app/id6793436548\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoneylite/sk.jpg"
+  },
+  {
+   "locale": "sl-SI",
+   "file": "gmoneylite/sl-SI.jpg",
+   "intended_locale": "sl-SI",
+   "headline_locale": "sl-SI",
+   "screenshot_locale": "sl-SI",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {
+    "1": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "$7",
+     "¥ 1",
+     "¥1"
+    ],
+    "0": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "¥ 1"
+    ],
+    "2": [
+     "$1",
+     "$2",
+     "$3",
+     "$5",
+     "$6",
+     "¥1",
+     "¥3",
+     "¥6",
+     "¥8"
+    ]
+   },
+   "warnings": [
+    "screen text flags remain (no clean screenshot available): {1: ['$2', '$3', '$4', '$5', '$7', '¥ 1', '¥1'], 0: ['$2', '$3', '$4', '$5', '¥ 1'], 2: ['$1', '$2', '$3', '$5', '$6', '¥1', '¥3', '¥6', '¥8']}",
+    "layout fallback fan3_2->fan3_2 (fan3_2: screen_area=0.217<0.24; fan3_2×1.08: screen_area=0.234<0.24)"
+   ],
+   "line1": "Stroški v lokalni valuti",
+   "line2": "Takoj tudi v vaši valuti, brez povezave",
+   "chips": [
+    "Takoj tudi v vaši valuti, brez povezave",
+    "Dnevni proračun na uri"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.251,
+    "family": "fan3_2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.29,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        276,
+        72,
+        805,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.86,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        129,
+        176,
+        951,
+        623
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.95,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板（自檢未過改用 fan3_2）"
+   },
+   "caption_instagram": "Stroški v lokalni valuti\nTakoj tudi v vaši valuti, brez povezave\n\n📲 Prenesite prek povezave v biu\n\n#GMoneyLite",
+   "caption_link": "Stroški v lokalni valuti\nTakoj tudi v vaši valuti, brez povezave\n\nApp Store: https://apps.apple.com/app/id6793436548\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoneylite/sl-SI.jpg"
+  },
+  {
+   "locale": "sv",
+   "file": "gmoneylite/sv.jpg",
+   "intended_locale": "sv",
+   "headline_locale": "sv",
+   "screenshot_locale": "sv",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {
+    "1": [
+     "$2",
+     "$3",
+     "$4",
+     "$7",
+     "¥ 1",
+     "¥1"
+    ],
+    "0": [
+     "$2",
+     "$3",
+     "$4",
+     "¥ 1"
+    ],
+    "2": [
+     "$1",
+     "$2",
+     "$3",
+     "$5",
+     "$6",
+     "¥1",
+     "¥3",
+     "¥6",
+     "¥8"
+    ]
+   },
+   "warnings": [
+    "screen text flags remain (no clean screenshot available): {1: ['$2', '$3', '$4', '$7', '¥ 1', '¥1'], 0: ['$2', '$3', '$4', '¥ 1'], 2: ['$1', '$2', '$3', '$5', '$6', '¥1', '¥3', '¥6', '¥8']}"
+   ],
+   "line1": "Köp i lokal valuta",
+   "line2": "Se dem direkt i din egen, offline",
+   "chips": [
+    "Se dem direkt i din egen, offline",
+    "Dagsbudget på klockan & widget",
+    "Per kategori · Resor · Filter · Poster"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.279,
+    "family": "fan3_2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.96,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        276,
+        72,
+        805,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.86,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        86,
+        176,
+        994,
+        428
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 100,
+        "sub": 50,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.61,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板"
+   },
+   "caption_instagram": "Köp i lokal valuta\nSe dem direkt i din egen, offline\n\n📲 Ladda ner via länken i bion\n\n#GMoneyLite",
+   "caption_link": "Köp i lokal valuta\nSe dem direkt i din egen, offline\n\nApp Store: https://apps.apple.com/app/id6793436548\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoneylite/sv.jpg"
+  },
+  {
+   "locale": "ta-IN",
+   "file": "gmoneylite/ta-IN.jpg",
+   "intended_locale": "ta-IN",
+   "headline_locale": "ta-IN",
+   "screenshot_locale": "ta-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:tam",
+    "script_chars": 296,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {
+    "1": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "$7",
+     "¥ 1",
+     "¥1"
+    ],
+    "0": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "¥ 1"
+    ],
+    "2": [
+     "$1",
+     "$2",
+     "$3",
+     "$5",
+     "$6",
+     "¥1",
+     "¥3",
+     "¥6",
+     "¥8"
+    ]
+   },
+   "warnings": [
+    "screen text flags remain (no clean screenshot available): {1: ['$2', '$3', '$4', '$5', '$7', '¥ 1', '¥1'], 0: ['$2', '$3', '$4', '$5', '¥ 1'], 2: ['$1', '$2', '$3', '$5', '$6', '¥1', '¥3', '¥6', '¥8']}",
+    "layout fallback fan3_2->fan3_2 (fan3_2: screen_area=0.235<0.24)"
+   ],
+   "line1": "உடனே மாற்று",
+   "line2": "உள்ளூர் நாணயப் பதிவு · ஆஃப்லைனிலும்",
+   "chips": [
+    "உள்ளூர் நாணயப் பதிவு · ஆஃப்லைனிலும்",
+    "தினசரி பட்ஜெட், வாட்ச்சில்"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.253,
+    "family": "fan3_2",
+    "font": "NotoSansTamil.ttf",
+    "screen_ratio_vs_battai_split": 1.11,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        236,
+        72,
+        845,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.82,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        97,
+        176,
+        983,
+        566
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.16,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板（自檢未過改用 fan3_2）"
+   },
+   "caption_instagram": "உடனே மாற்று\nஉள்ளூர் நாணயப் பதிவு · ஆஃப்லைனிலும்\n\n📲 பயோவில் உள்ள இணைப்பு வழியாகப் பதிவிறக்குங்கள்\n\n#GMoneyLite",
+   "caption_link": "உடனே மாற்று\nஉள்ளூர் நாணயப் பதிவு · ஆஃப்லைனிலும்\n\nApp Store: https://apps.apple.com/app/id6793436548\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoneylite/ta-IN.jpg"
+  },
+  {
+   "locale": "te-IN",
+   "file": "gmoneylite/te-IN.jpg",
+   "intended_locale": "te-IN",
+   "headline_locale": "te-IN",
+   "screenshot_locale": "te-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:tel",
+    "script_chars": 242,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {
+    "1": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "$7",
+     "¥1"
+    ],
+    "0": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "¥ 1"
+    ],
+    "2": [
+     "$1",
+     "$2",
+     "$3",
+     "$5",
+     "$6",
+     "¥1",
+     "¥3",
+     "¥6",
+     "¥8"
+    ]
+   },
+   "warnings": [
+    "screen text flags remain (no clean screenshot available): {1: ['$2', '$3', '$4', '$5', '$7', '¥1'], 0: ['$2', '$3', '$4', '$5', '¥ 1'], 2: ['$1', '$2', '$3', '$5', '$6', '¥1', '¥3', '¥6', '¥8']}",
+    "layout fallback fan3_2->fan3_2 (fan3_2: screen_area=0.235<0.24)"
+   ],
+   "line1": "వెంటనే మార్పిడి",
+   "line2": "స్థానిక కరెన్సీ నమోదు · ఆఫ్‌లైన్‌లోనూ",
+   "chips": [
+    "స్థానిక కరెన్సీ నమోదు · ఆఫ్‌లైన్‌లోనూ",
+    "రోజు బడ్జెట్: వాచ్, విడ్జెట్"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.253,
+    "family": "fan3_2",
+    "font": "NotoSansTelugu.ttf",
+    "screen_ratio_vs_battai_split": 1.11,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        263,
+        72,
+        817,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.87,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        168,
+        176,
+        912,
+        567
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.24,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板（自檢未過改用 fan3_2）"
+   },
+   "caption_instagram": "వెంటనే మార్పిడి\nస్థానిక కరెన్సీ నమోదు · ఆఫ్‌లైన్‌లోనూ\n\n📲 బయోలోని లింక్ ద్వారా డౌన్‌లోడ్ చేయండి\n\n#GMoneyLite",
+   "caption_link": "వెంటనే మార్పిడి\nస్థానిక కరెన్సీ నమోదు · ఆఫ్‌లైన్‌లోనూ\n\nApp Store: https://apps.apple.com/app/id6793436548\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoneylite/te-IN.jpg"
+  },
+  {
+   "locale": "th",
+   "file": "gmoneylite/th.jpg",
+   "intended_locale": "th",
+   "headline_locale": "th",
+   "screenshot_locale": "th",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:tha",
+    "script_chars": 216,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {
+    "1": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "$7",
+     "¥ 1",
+     "¥1"
+    ],
+    "0": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "¥ 1"
+    ],
+    "2": [
+     "$1",
+     "$2",
+     "$3",
+     "$5",
+     "$6",
+     "¥1",
+     "¥3",
+     "¥6",
+     "¥8"
+    ]
+   },
+   "warnings": [
+    "screen text flags remain (no clean screenshot available): {1: ['$2', '$3', '$4', '$5', '$7', '¥ 1', '¥1'], 0: ['$2', '$3', '$4', '$5', '¥ 1'], 2: ['$1', '$2', '$3', '$5', '$6', '¥1', '¥3', '¥6', '¥8']}"
+   ],
+   "line1": "จดสกุลท้องถิ่น เห็นทันที",
+   "line2": "แปลงเป็นสกุลเงินของคุณ แม้ออฟไลน์",
+   "chips": [
+    "แปลงเป็นสกุลเงินของคุณ แม้ออฟไลน์",
+    "งบรายวันบนนาฬิกาและวิดเจ็ต",
+    "ตามหมวดหมู่ · ทริป · ตัวกรอง · บันทึก"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.273,
+    "family": "fan3_2",
+    "font": "NotoSansThai.ttf",
+    "screen_ratio_vs_battai_split": 0.96,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        290,
+        72,
+        791,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.88,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        80,
+        176,
+        1001,
+        448
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.98,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板"
+   },
+   "caption_instagram": "จดสกุลท้องถิ่น เห็นทันที\nแปลงเป็นสกุลเงินของคุณ แม้ออฟไลน์\n\n📲 ดาวน์โหลดได้ที่ลิงก์ในโปรไฟล์ (bio)\n\n#GMoneyLite",
+   "caption_link": "จดสกุลท้องถิ่น เห็นทันที\nแปลงเป็นสกุลเงินของคุณ แม้ออฟไลน์\n\nApp Store: https://apps.apple.com/app/id6793436548\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoneylite/th.jpg"
+  },
+  {
+   "locale": "tr",
+   "file": "gmoneylite/tr.jpg",
+   "intended_locale": "tr",
+   "headline_locale": "tr",
+   "screenshot_locale": "tr",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {
+    "1": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "$7",
+     "¥ 1",
+     "¥1"
+    ],
+    "0": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "¥ 1"
+    ],
+    "2": [
+     "$1",
+     "$2",
+     "$3",
+     "$5",
+     "$6",
+     "¥1",
+     "¥3",
+     "¥6",
+     "¥8"
+    ]
+   },
+   "warnings": [
+    "screen text flags remain (no clean screenshot available): {1: ['$2', '$3', '$4', '$5', '$7', '¥ 1', '¥1'], 0: ['$2', '$3', '$4', '$5', '¥ 1'], 2: ['$1', '$2', '$3', '$5', '$6', '¥1', '¥3', '¥6', '¥8']}",
+    "layout fallback fan3_2->fan3_2 (fan3_2: screen_area=0.238<0.24)"
+   ],
+   "line1": "Anında kendi paranla",
+   "line2": "Yerel para biriminde kaydet",
+   "chips": [
+    "Yerel para biriminde kaydet",
+    "Saat ve widgette günlük bütçe"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.256,
+    "family": "fan3_2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.11,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        256,
+        72,
+        825,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.83,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        171,
+        176,
+        909,
+        558
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.25,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板（自檢未過改用 fan3_2）"
+   },
+   "caption_instagram": "Anında kendi paranla\nYerel para biriminde kaydet\n\n📲 Biyografideki bağlantıdan indirin\n\n#GMoneyLite",
+   "caption_link": "Anında kendi paranla\nYerel para biriminde kaydet\n\nApp Store: https://apps.apple.com/app/id6793436548\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoneylite/tr.jpg"
+  },
+  {
+   "locale": "uk",
+   "file": "gmoneylite/uk.jpg",
+   "intended_locale": "uk",
+   "headline_locale": "uk",
+   "screenshot_locale": "uk",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:ukr",
+    "script_chars": 258,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {
+    "1": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "$7",
+     "¥ 1",
+     "¥1"
+    ],
+    "0": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "¥ 1"
+    ],
+    "2": [
+     "$1",
+     "$2",
+     "$3",
+     "$5",
+     "$6",
+     "¥1",
+     "¥3",
+     "¥6",
+     "¥8"
+    ]
+   },
+   "warnings": [
+    "screen text flags remain (no clean screenshot available): {1: ['$2', '$3', '$4', '$5', '$7', '¥ 1', '¥1'], 0: ['$2', '$3', '$4', '$5', '¥ 1'], 2: ['$1', '$2', '$3', '$5', '$6', '¥1', '¥3', '¥6', '¥8']}",
+    "layout fallback fan3_2->fan3_2 (fan3_2: screen_area=0.219<0.24; fan3_2×1.08: screen_area=0.236<0.24)"
+   ],
+   "line1": "Одразу у своїй валюті",
+   "line2": "Витрати в місцевій валюті, офлайн",
+   "chips": [
+    "Витрати в місцевій валюті, офлайн",
+    "Денний бюджет на годиннику"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.253,
+    "family": "fan3_2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.29,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        236,
+        72,
+        843,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.8,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        135,
+        176,
+        945,
+        618
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.95,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板（自檢未過改用 fan3_2）"
+   },
+   "caption_instagram": "Одразу у своїй валюті\nВитрати в місцевій валюті, офлайн\n\n📲 Завантажуйте за посиланням у профілі (bio)\n\n#GMoneyLite",
+   "caption_link": "Одразу у своїй валюті\nВитрати в місцевій валюті, офлайн\n\nApp Store: https://apps.apple.com/app/id6793436548\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoneylite/uk.jpg"
+  },
+  {
+   "locale": "ur-PK",
+   "file": "gmoneylite/ur-PK.jpg",
+   "intended_locale": "ur-PK",
+   "headline_locale": "ur-PK",
+   "screenshot_locale": "ur-PK",
+   "localized": true,
+   "screenshots_used": [
+    5
+   ],
+   "demo_language_check": {
+    "method": "ocr:urd",
+    "script_chars": 26,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback fan3_2->fan3_2 (fan3_2: screen_area=0.205<0.24; fan3_2×1.08: screen_area=0.22<0.24; fan3_2×1.16: screen_area=0.236<0.24)"
+   ],
+   "line1": "مقامی کرنسی میں لکھیں",
+   "line2": "اور فوراً اپنی کرنسی میں دیکھیں",
+   "chips": [
+    "اور فوراً اپنی کرنسی میں دیکھیں",
+    "روزانہ بجٹ واچ اور ویجٹ پر",
+    "زمرے کے لحاظ سے · سفر · فلٹرز · ریکارڈز"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.254,
+    "family": "fan3_2",
+    "font": "NotoSansArabic.ttf",
+    "screen_ratio_vs_battai_split": 1.5,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        271,
+        72,
+        809,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.72,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        195,
+        176,
+        885,
+        663
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.59,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.3,
+        1.4
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.25,
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板（自檢未過改用 fan3_2）"
+   },
+   "caption_instagram": "مقامی کرنسی میں لکھیں\nاور فوراً اپنی کرنسی میں دیکھیں\n\n📲 بائیو میں دیے گئے لنک سے ڈاؤن لوڈ کریں\n\n#GMoneyLite",
+   "caption_link": "مقامی کرنسی میں لکھیں\nاور فوراً اپنی کرنسی میں دیکھیں\n\nApp Store: https://apps.apple.com/app/id6793436548\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoneylite/ur-PK.jpg"
+  },
+  {
+   "locale": "vi",
+   "file": "gmoneylite/vi.jpg",
+   "intended_locale": "vi",
+   "headline_locale": "vi",
+   "screenshot_locale": "vi",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {
+    "1": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "$7",
+     "¥ 1",
+     "¥1"
+    ],
+    "0": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "¥ 1"
+    ],
+    "2": [
+     "$1",
+     "$2",
+     "$3",
+     "$5",
+     "$6",
+     "¥1",
+     "¥3",
+     "¥6",
+     "¥8"
+    ]
+   },
+   "warnings": [
+    "screen text flags remain (no clean screenshot available): {1: ['$2', '$3', '$4', '$5', '$7', '¥ 1', '¥1'], 0: ['$2', '$3', '$4', '$5', '¥ 1'], 2: ['$1', '$2', '$3', '$5', '$6', '¥1', '¥3', '¥6', '¥8']}",
+    "layout fallback fan3_2->fan3_2 (fan3_2: screen_area=0.214<0.24; fan3_2×1.08: screen_area=0.231<0.24)"
+   ],
+   "line1": "Đổi ngay ra tiền nhà",
+   "line2": "Ghi bằng tiền địa phương",
+   "chips": [
+    "Ghi bằng tiền địa phương",
+    "Hạn mức ngày trên đồng hồ"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.247,
+    "family": "fan3_2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.29,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        258,
+        72,
+        822,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.83,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        236,
+        176,
+        844,
+        633
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.18,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板（自檢未過改用 fan3_2）"
+   },
+   "caption_instagram": "Đổi ngay ra tiền nhà\nGhi bằng tiền địa phương\n\n📲 Tải về qua link ở bio\n\n#GMoneyLite",
+   "caption_link": "Đổi ngay ra tiền nhà\nGhi bằng tiền địa phương\n\nApp Store: https://apps.apple.com/app/id6793436548\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoneylite/vi.jpg"
+  },
+  {
+   "locale": "zh-Hans",
+   "file": "gmoneylite/zh-Hans.jpg",
+   "intended_locale": "zh-Hans",
+   "headline_locale": "zh-Hans",
+   "screenshot_locale": "zh-Hans",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:chi_sim",
+    "script_chars": 64,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {
+    "1": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "$7",
+     "¥ 1",
+     "¥1"
+    ],
+    "0": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "¥ 1"
+    ],
+    "2": [
+     "$1",
+     "$2",
+     "$3",
+     "$5",
+     "$6",
+     "¥1",
+     "¥3",
+     "¥6",
+     "¥8"
+    ]
+   },
+   "warnings": [
+    "screen text flags remain (no clean screenshot available): {1: ['$2', '$3', '$4', '$5', '$7', '¥ 1', '¥1'], 0: ['$2', '$3', '$4', '$5', '¥ 1'], 2: ['$1', '$2', '$3', '$5', '$6', '¥1', '¥3', '¥6', '¥8']}"
+   ],
+   "line1": "出国记账立刻换算",
+   "line2": "当地货币记・没网也能用",
+   "chips": [
+    "当地货币记・没网也能用",
+    "出国预算・自由行花费・每日预算",
+    "中间参考汇率，刷卡或换现金可能略有差异。"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.277,
+    "family": "fan3_2",
+    "font": "NotoSansSC.ttf",
+    "screen_ratio_vs_battai_split": 0.96,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        234,
+        72,
+        845,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.76,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        110,
+        176,
+        970,
+        434
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.67,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板"
+   },
+   "caption_instagram": "出国记账立刻换算\n当地货币记・没网也能用\n\n📲 请到个人主页（bio）的链接下载\n\n#GMoneyLite",
+   "caption_link": "出国记账立刻换算\n当地货币记・没网也能用\n\nApp Store: https://apps.apple.com/app/id6793436548\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoneylite/zh-Hans.jpg"
+  },
+  {
+   "locale": "zh-Hant",
+   "file": "gmoneylite/zh-Hant.jpg",
+   "intended_locale": "zh-Hant",
+   "headline_locale": "zh-Hant",
+   "screenshot_locale": "zh-Hant",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:chi_tra",
+    "script_chars": 62,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {
+    "1": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "$7",
+     "¥ 1",
+     "¥1"
+    ],
+    "0": [
+     "$2",
+     "$3",
+     "$4",
+     "$5",
+     "¥ 1"
+    ],
+    "2": [
+     "$1",
+     "$2",
+     "$3",
+     "$5",
+     "$6",
+     "¥1",
+     "¥3",
+     "¥6",
+     "¥8"
+    ]
+   },
+   "warnings": [
+    "screen text flags remain (no clean screenshot available): {1: ['$2', '$3', '$4', '$5', '$7', '¥ 1', '¥1'], 0: ['$2', '$3', '$4', '$5', '¥ 1'], 2: ['$1', '$2', '$3', '$5', '$6', '¥1', '¥3', '¥6', '¥8']}"
+   ],
+   "line1": "出國記帳立刻換算",
+   "line2": "當地幣別記・離線也能用",
+   "chips": [
+    "當地幣別記・離線也能用",
+    "出國預算・自由行花費・每日預算",
+    "中間參考匯率，刷卡或換現金可能略有差異。"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.277,
+    "family": "fan3_2",
+    "font": "NotoSansTC.ttf",
+    "screen_ratio_vs_battai_split": 0.96,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        234,
+        72,
+        845,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.76,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        110,
+        176,
+        971,
+        434
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.74,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板"
+   },
+   "caption_instagram": "出國記帳立刻換算\n當地幣別記・離線也能用\n\n📲 請到個人檔案（bio）的連結下載\n\n#GMoneyLite",
+   "caption_link": "出國記帳立刻換算\n當地幣別記・離線也能用\n\nApp Store: https://apps.apple.com/app/id6793436548\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoneylite/zh-Hant.jpg"
+  }
+ ]
+}

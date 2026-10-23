@@ -529,6 +529,25 @@ CURATED_FALLBACK = {
             ["provenance app", 0],
         ],
     },
+    "duowallpaperstudio": {
+        "key": "duowallpaperstudio",
+        "gap_queries": [
+            "wallpapers made in pairs for both screens of a foldable iphone",
+            "cover screen close-up and inner screen full scene from one artwork",
+            "turn my own photo into a cover and inner wallpaper pair",
+            "foldable wallpaper app with no ads and a one-time purchase",
+        ],
+        # Competitor titles read off the live US App Store search results for
+        # "foldable wallpaper" and "dual screen wallpaper" on 2026-10-23; rank 0
+        # means the position was not measured, exactly as for the other
+        # curated fallbacks.
+        "top_competitors": [
+            ["duotheme: foldable wallpaper", 0],
+            ["duo wallpapers: 4k foldable", 0],
+            ["live wallpaper 4k: screen life", 0],
+            ["wallive: 4k wallpaper & widget", 0],
+        ],
+    },
     "zipbox": {
         "key": "zipbox",
         "gap_queries": [
@@ -612,6 +631,10 @@ BRAND = {
     "shift & holiday alarm clock": "Shift & Holiday Alarm Clock",
     "delta - game emulator": "Delta - Game Emulator", "igba: gba & gbc retro emulator": "iGBA: GBA & GBC Retro Emulator",
     "retroarch": "RetroArch", "provenance app": "Provenance App",
+    "duotheme: foldable wallpaper": "DuoTheme: Foldable Wallpaper",
+    "duo wallpapers: 4k foldable": "Duo Wallpapers: 4K Foldable",
+    "live wallpaper 4k: screen life": "Live Wallpaper 4K: Screen Life",
+    "wallive: 4k wallpaper & widget": "Wallive: 4K Wallpaper & Widget",
 }
 
 ATTRS = [  # (顯示, cta_bullets 命中關鍵詞)

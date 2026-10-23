@@ -22343,6 +22343,14 @@ class GeneratorTests(unittest.TestCase):
             # clock themes "with a one-time in-app purchase".
             "easyam",
         }
+        # Foldable Wallpaper Studio: free download (store price 0, released
+        # 2026-10-23) whose en-US description sells Duo Pro as "a one-time
+        # in-app purchase" that opens the remaining launch sets, with no
+        # subscription wording. The Guide engine mirror registers it only once
+        # its store data snapshot is mirrored, so expect it exactly when the
+        # registry this copy runs against has it.
+        if "duowallpaperstudio" in APPS:
+            free_with_unlock.add("duowallpaperstudio")
         self.assertEqual(paid_upfront | free_with_unlock, set(APPS))
         for key in paid_upfront:
             self.assertEqual("paid_upfront", APPS[key]["purchase_model"])

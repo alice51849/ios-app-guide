@@ -3,9 +3,9 @@
   "dataset_name": "Lumi Studio High-Intent Decision Routes",
   "inventory_contract": {
     "relative_path": "data/verified-ios-app-finder-catalog.json",
-    "expected_app_count": 55,
-    "app_keys_sha256": "bb2a1279adc005a6c0ba0b987ffebef95e3efc4df1e914bd049ef763d4a81ca6",
-    "copy_sha256": "e6eab4ab2ca795a3185fa97e8f83bf7565eee691b2577b4c63f23eb456618a31",
+    "expected_app_count": 56,
+    "app_keys_sha256": "3b8f236a1370422f5e0b445220a681cbd5a2739c29d98ede935c2d38abc2d39e",
+    "copy_sha256": "e84344460ef9fd2a48ae2fa2d97a2ff48bee2a7fa2de5c41ade50c1e6102a3b1",
     "official_locales_sha256": "e26dabf9370286ad8fd12034270cfcade92b2db4f4a0eecc19324203ce84d5bd"
   },
   "publisher": {
@@ -2444,6 +2444,65 @@
           "verify_before_install": [
             "先確認你要玩的是 .gba、.gbc 或 .gb 檔（或內含這些檔的 .zip），而且是你有權使用的檔案。",
             "購買前先看 App Store 頁面上你所在地區的價格，以及 iCloud 存檔同步的說明。"
+          ],
+          "evidence_refs": [
+            "summary.zh-Hant",
+            "fact.purchase_model",
+            "fact.one_time_option"
+          ]
+        }
+      }
+    },
+    {
+      "app_key": "duowallpaperstudio",
+      "route_slug": "wallpapers-that-fit-both-screens-of-a-foldable-iphone",
+      "intent_type": "problem_aware",
+      "primary": true,
+      "keyword_refs": [
+        0,
+        1,
+        2
+      ],
+      "locales": {
+        "en-US": {
+          "language": "en",
+          "market": "United States",
+          "culture_route": "Many people in the US who move to a foldable or dual-screen iPhone find that a favorite wallpaper looks right on one screen but cropped or stretched on the other, so closing and opening the phone feels like switching between two unrelated pictures.",
+          "query": "How do I get wallpapers that fit both screens of a foldable iPhone?",
+          "buyer_problem": "The cover screen is tall and narrow while the inner screen is closer to square, so one picture usually loses its subject on one screen or gets stretched on the other. The decision is whether wallpapers made as pairs, a close-up for the cover screen and the full scene for the inner screen cut from the same original artwork, fit how you use the phone.",
+          "decision_rule": "Favor a pair-based wallpaper app when you switch between the closed and open screens often and want both to look like one design. It is free to start with 5 sets and every tool, with a small watermark on saved images; a one-time in-app purchase opens the remaining launch sets and removes the watermark.",
+          "workflow_checks": [
+            "Is every set a true pair, with a close-up for the cover screen and the full scene for the inner screen?",
+            "Can you preview the closed and open screens before you save anything?",
+            "Can you turn your own photo into a pair and drag to set where the focus sits?"
+          ],
+          "alternative_lens": "If you use a single-screen iPhone and only want a new picture now and then, a general wallpaper gallery may be enough. iOS does not let apps change your wallpaper automatically, so after saving you still set each screen yourself by following a short setup guide.",
+          "verify_before_install": [
+            "Check that your iPhone or iPad runs iOS 17 or later; on models other than iPhone Duo, iOS scales the image.",
+            "Read the current listing for which sets are ready to use free and what the one-time purchase opens in your storefront."
+          ],
+          "evidence_refs": [
+            "summary.en",
+            "fact.purchase_model",
+            "fact.one_time_option"
+          ]
+        },
+        "zh-Hant": {
+          "language": "zh-Hant",
+          "market": "台灣",
+          "culture_route": "台灣不少換上摺疊或雙螢幕 iPhone 的人發現，原本喜歡的桌布放上去，外螢幕的主角被裁掉、內螢幕又被拉寬，合上和打開像是兩張不相干的圖。",
+          "query": "有沒有桌布能同時配合摺疊 iPhone 的外螢幕和內螢幕？",
+          "buyer_problem": "摺疊手機的外螢幕瘦長、內螢幕接近方形，同一張圖放上去，不是外螢幕裁掉主角，就是內螢幕被拉寬。要判斷的是：替兩個螢幕分別構圖的成對桌布（外螢幕特寫、內螢幕全景，出自同一幅原創畫面），是否符合你使用手機的方式。",
+          "decision_rule": "如果你常在合上與展開之間切換，希望兩個螢幕看起來是同一個設計，成對桌布比較合適。所有工具與 5 組桌布可直接使用，存檔會帶小浮水印；一次性 App 內購買可解鎖其餘首發組並移除浮水印。",
+          "workflow_checks": [
+            "每一組是不是真正成對，外螢幕特寫、內螢幕全景出自同一幅畫面？",
+            "儲存前能不能先在 App 內預覽合上與展開的樣子？",
+            "能不能用自己的照片做成一對，並拖曳設定焦點？"
+          ],
+          "alternative_lens": "如果你用的是單螢幕 iPhone，只是偶爾想換張圖，一般桌布圖庫可能就夠用。iOS 不允許 App 自動換桌布，儲存後仍要照「設定」分頁的簡短教學，自己設定外螢幕與內螢幕。",
+          "verify_before_install": [
+            "先確認你的 iPhone 或 iPad 是 iOS 17 以上；iPhone Duo 以外的機型由 iOS 縮放畫面。",
+            "購買前先看 App Store 頁面上哪些組可直接使用，以及一次性購買會解鎖哪些內容。"
           ],
           "evidence_refs": [
             "summary.zh-Hant",

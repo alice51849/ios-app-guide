@@ -7,7 +7,7 @@ geo_ask／geo_pick，蘋果報表分不出哪一群詞、哪一國帶來下載�
 （ln_<款>_sr_<國>_gw_1023），但蘋果一個追蹤碼要 5 次首次下載才顯示，一頁一國一天永遠達不到。
 
 形狀：ln_<款>_<詞群>_<國>_gw（agent/ct_codes.LN_RE 讀成 geo_pages 通路；最長 28 字元，上限 30）
-  款    live_app_manifest 的 key。蘋果本來就逐款出報表，放進碼裡不會多切一刀，只是讓點擊紀錄看得懂。
+  款    live_app_manifest 的 key（太長的款用 APP_CODES 短代號）。蘋果本來就逐款出報表，放進碼裡不會多切一刀，只是讓點擊紀錄看得懂。
   詞群  sr 品類主詞（該國使用者真的會搜的詞）／alt 比較與替代（競品名、vs）／
         ss 檔期（節日、連假、季節）／use 情境與問題長尾（怎麼做、壞了怎麼辦）；all＝詞群合併。
   國    兩碼商店國家；ww＝國家合併。
@@ -70,6 +70,10 @@ META_NAME = "growth-attribution-group"
 META_RE = re.compile(
     r'<meta\s+name="growth-attribution-group"\s+content="(?P<grp>[a-z]+)"\s*/?>', re.I)
 MARKER_PREFIX = "gw:"
+# 名冊 key 太長、放進碼會超過 30 字元的款，碼裡改用短代號（解析時換回名冊 key，比對與報表照舊用 key）。
+# 2026-10-23 雙螢幕桌布上架：ln_duowallpaperstudio_alt_ww_gw 是 31 字元。
+APP_CODES = {"duowallpaperstudio": "duowallpaper"}
+_KEYS_BY_CODE = {code: key for key, code in APP_CODES.items()}
 STOREFRONT_RE = re.compile(r"^/(?P<cc>[a-z]{2})/app/")
 
 
@@ -155,7 +159,7 @@ def open_cells(app: str, plan: dict | None = None) -> set[tuple[str, str]]:
 
 
 def token(app: str, group: str, market: str) -> str:
-    value = f"ln_{app}_{group}_{market}_{CHANNEL}"
+    value = f"ln_{APP_CODES.get(app, app)}_{group}_{market}_{CHANNEL}"
     if len(value) > MAX_TOKEN or not GW_RE.fullmatch(value):
         raise GwCampaignError(f"gw campaign does not fit: {value!r}")
     return value
@@ -179,7 +183,11 @@ def campaign(app: str, group: str, cc: str | None, plan: dict | None = None) -> 
 
 def parse(value: str | None) -> dict | None:
     match = GW_RE.fullmatch(value or "")
-    return match.groupdict() if match else None
+    if not match:
+        return None
+    parsed = match.groupdict()
+    parsed["app"] = _KEYS_BY_CODE.get(parsed["app"], parsed["app"])
+    return parsed
 
 
 def is_gw(value: str | None) -> bool:

@@ -12,8 +12,8 @@
   ],
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
-    "dateModified": "2026-10-23",
-    "contentDigest": "aac94efeede0d530283473c3885f644bb2a6f3d8c5707c4a03083234cb0cd690",
+    "dateModified": "2026-10-24",
+    "contentDigest": "90a1a815ba058cdb679e1eff10abab24b4e023a6ea3f4576274f280ad1f6096d",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
     "recordCount": 56
@@ -135,10 +135,11 @@
         "充電ケア",
         "充電範囲",
         "充電速度",
-        "データを書き出す"
+        "データを書き出す",
+        "バッテリー 劣化"
       ],
       "language": "ja",
-      "date_modified": "2026-10-23T21:21:38Z"
+      "date_modified": "2026-10-24T11:10:42Z"
     },
     {
       "id": "https://apps.apple.com/app/id6794178671",
@@ -698,10 +699,12 @@
         "幼稚園",
         "練習",
         "ゲーム",
-        "知育"
+        "知育",
+        "注音符号",
+        "注音 学習"
       ],
       "language": "ja",
-      "date_modified": "2026-10-23T21:21:38Z"
+      "date_modified": "2026-10-24T11:10:42Z"
     },
     {
       "id": "https://apps.apple.com/app/id6775773117",
@@ -906,10 +909,11 @@
         "声かけ",
         "ご褒美",
         "モチベーション",
-        "年少"
+        "年少",
+        "ごほうび シール"
       ],
       "language": "ja",
-      "date_modified": "2026-10-23T21:21:38Z"
+      "date_modified": "2026-10-24T11:10:42Z"
     },
     {
       "id": "https://apps.apple.com/app/id6779745474",
@@ -1004,10 +1008,11 @@
         "プライバシー",
         "保険証",
         "ファイル",
-        "診断書"
+        "診断書",
+        "個人情報 マスク"
       ],
       "language": "ja",
-      "date_modified": "2026-10-23T21:21:38Z"
+      "date_modified": "2026-10-24T11:10:42Z"
     },
     {
       "id": "https://apps.apple.com/app/id6785004775",
@@ -1581,10 +1586,11 @@
         "メモ",
         "計画",
         "行程",
-        "旅行"
+        "旅行",
+        "旅程"
       ],
       "language": "ja",
-      "date_modified": "2026-10-23T21:21:38Z"
+      "date_modified": "2026-10-24T11:10:42Z"
     },
     {
       "id": "https://apps.apple.com/app/id6787754435",
@@ -1675,10 +1681,12 @@
         "カウントダウン",
         "生成ai",
         "週間",
-        "管理"
+        "管理",
+        "claude 使用量",
+        "トークン 使用量"
       ],
       "language": "ja",
-      "date_modified": "2026-10-23T21:21:38Z"
+      "date_modified": "2026-10-24T11:10:42Z"
     },
     {
       "id": "https://apps.apple.com/app/id6790467886",
@@ -1738,10 +1746,11 @@
         "プロバイダ",
         "モデム",
         "対処",
-        "直し方"
+        "直し方",
+        "wifi つながらない"
       ],
       "language": "ja",
-      "date_modified": "2026-10-23T21:21:38Z"
+      "date_modified": "2026-10-24T11:10:42Z"
     },
     {
       "id": "https://apps.apple.com/app/id6797601720",
@@ -1838,10 +1847,12 @@
         "aes",
         "bz2",
         "xz",
-        "フォルダ"
+        "フォルダ",
+        "パスワード付きzip",
+        "7zを解凍"
       ],
       "language": "ja",
-      "date_modified": "2026-10-17T16:15:13Z"
+      "date_modified": "2026-10-24T11:10:42Z"
     }
   ]
 }

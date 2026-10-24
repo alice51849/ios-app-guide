@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-10-23",
-  "content_digest": "aac94efeede0d530283473c3885f644bb2a6f3d8c5707c4a03083234cb0cd690",
+  "date_modified": "2026-10-24",
+  "content_digest": "90a1a815ba058cdb679e1eff10abab24b4e023a6ea3f4576274f280ad1f6096d",
   "locale": "th",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -27,7 +27,8 @@
         "เลคเชอร์",
         "วาดรูป",
         "ออฟไลน์",
-        "มหาลัย"
+        "มหาลัย",
+        "จดโน้ตด้วยลายมือ"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -67,7 +68,9 @@
         "บริบท",
         "โน้ต",
         "แชท",
-        "สรุปให้"
+        "สรุปให้",
+        "พรอมต์ ai",
+        "จัดการพรอมต์"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -188,7 +191,8 @@
         "วันทำการ",
         "ค่าน้ำมัน",
         "ส่วนลด",
-        "วิศวะ"
+        "วิศวะ",
+        "เครื่องคิดเลข วิดเจ็ต"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -268,7 +272,8 @@
         "ประวัติย่อ",
         "นักศึกษา",
         "ฝึกงาน",
-        "docx"
+        "docx",
+        "เรซูเม่ ats"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -307,7 +312,9 @@
         "ไดอารี่",
         "มีลูก",
         "ปวดประจำเดือน",
-        "คำนวณ"
+        "คำนวณ",
+        "ติดตามประจำเดือน",
+        "รอบเดือน"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -558,7 +565,8 @@
         "การเงิน",
         "จัดการเงิน",
         "กระเป๋าเงิน",
-        "คำนวณเงิน"
+        "คำนวณเงิน",
+        "บันทึกค่าใช้จ่ายเที่ยว"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -961,7 +969,8 @@
         "ปฐมวัย",
         "เกมเด็ก",
         "เด็กเล็ก",
-        "ออกเสียง"
+        "ออกเสียง",
+        "โฟนิกส์เด็ก"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1127,7 +1136,8 @@
         "อนุบาล",
         "ไปโรงเรียน",
         "เข้านอน",
-        "ตื่นนอน"
+        "ตื่นนอน",
+        "กิจวัตรก่อนนอน"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1297,7 +1307,9 @@
         "ช่วงเวลา",
         "ประวัติ",
         "วิดเจ็ต",
-        "ล้างแอร์"
+        "ล้างแอร์",
+        "บันทึกงานบ้าน",
+        "เตือนงานบ้าน"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1422,7 +1434,8 @@
         "เกรน",
         "แสงรั่ว",
         "ผิวเนียน",
-        "35mm"
+        "35mm",
+        "ฟิลเตอร์วินเทจ"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1542,7 +1555,8 @@
         "ช้อปปิ้ง",
         "ของที่อยากได้",
         "โน้ต",
-        "ค้นหา"
+        "ค้นหา",
+        "บุ๊กมาร์ก"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1744,7 +1758,8 @@
         "แต่งรูป",
         "ภาพ",
         "พิกเซล",
-        "รูปภาพ"
+        "รูปภาพ",
+        "รูปติดบัตร ฟรี"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1818,7 +1833,8 @@
         "oled",
         "นาฬิกาปลุก",
         "ธีมนาฬิกา",
-        "จอเบิร์น"
+        "จอเบิร์น",
+        "นาฬิกาพลิก"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1940,7 +1956,8 @@
         "ที่พัก",
         "แจ้งเตือน",
         "พยากรณ์อากาศ",
-        "นับถอยหลัง"
+        "นับถอยหลัง",
+        "แผนเที่ยว"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

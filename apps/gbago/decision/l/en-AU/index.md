@@ -1,5 +1,5 @@
 ---
-title: "GBAGo: Visual Saves — Recovery Map · Auto Snapshots | iOS App"
+title: "paid gba emulator for iphone with save states and controller support"
 lang: "en-AU"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gbago/decision/l/en-AU/index.html"
 modified: "2026-10-24"
@@ -9,17 +9,17 @@ purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# GBAGo: Visual Saves — Recovery Map · Auto Snapshots | iOS App
+# paid gba emulator for iphone with save states and controller support
 
-Apart from three original demo cartridges made by Lumi Studio, GBAGo includes no games or content catalogue. Import through Files only files you created yourself or are authorised to use under applicable law. POWERFUL WHERE IT COUNTS - 4 save state slots out of the box, expandable to 12, each with its own thumbnail so hard-won progress is never lost again - Auto snapshots: a quiet snapshot every two minutes, keeping the last half hour of play as a strip of thumbnails you can jump back to - Auto save: close the app any time and continue exactly where you stopped - Accurate, battery-friendly mGBA core running at a rock-solid 60 frames per second - Fast forward at 2x, 4x, 8x or all the way to 32x to skip slow intros and long grinding sessions MADE FOR REAL PLAYERS - Turbo buttons for effortless rapid fire - Display filters: authentic CRT glow, smooth scaling or pixel-perfect sharpness - Adjustable aspect ratio to fit your screen the way you like it - Touch controls with adjustable opacity, tuned for comfortable long sessions YOUR COLLECTION, BEAUTIFULLY ORGANISED - Play a game once and its cover is captured from your own screen, turning your library into a shelf you will want to show off - GB and GBC backups run just as happily as GBA titles - Interface available in 50 languages GBAGo runs fully on your device. No accounts, no ads, no tracking, no data collection. When iCloud is enabled, GBAGo syncs save states, thumbnails and .sav battery saves through your private iCloud account. The developer does not receive this data. Local data remains until you delete it in GBAGo or remove the app. Turning off GBAGo under Apple Account \> iCloud stops future sync; deleting existing iCloud copies is a separate action in GBAGo or iCloud storage settings. Export and Share send only files you explicitly select to destinations you choose. Support: hourstag.app@gmail.com · https://alice51849.github.io/gbago-support/ TRADEMARKS AND AFFILIATION GBAGo is an independent app. It is not affiliated with, endorsed by, or sponsored by Nintendo Co., Ltd. Game Boy, Game Boy Color and Game Boy Advance are trademarks of Nintendo, used here only to describe file compatibility. Apart from three original Lumi Studio demo cartridges, GBAGo contains no games and does not supply or link to game files.
+GBAGo — 除 Lumi Studio 自製的三款原創 demo 卡帶外，GBAGo 不包含遊戲或內容目錄。請僅從「檔案」匯入由你自行創作，或依適用法律獲授權使用的檔案。. Paid download · Pay once · No subscription.
 
 - More
 - Paid download
 - Offline
 - App Store · $14.99
 
-[Get GBAGo: Visual Saves on the App Store](https://apps.apple.com/au/app/id6804564400?pt=118326163&ct=geo_pick&mt=8)
+[Get GBAGo on the App Store →](https://apps.apple.com/au/app/id6804564400?pt=118326163&ct=geo_pick&mt=8)
 
-[Read the full guide](https://open.cait518.cc/ios-app-guide/en-AU/gbago.html)
+[Read the full guide](https://open.cait518.cc/ios-app-guide/en-AU/answers/paid-gba-emulator-for-iphone-with-save-states-and-controller-support.html)
 
-> This is first-party material published by Lumi Studio, the developer of every listed app.
+> Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.

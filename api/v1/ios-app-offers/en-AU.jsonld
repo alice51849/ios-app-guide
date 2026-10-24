@@ -1008,8 +1008,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/en-AU.jsonld#offer-gbago",
         "url": "https://apps.apple.com/au/app/id6804564400?pt=118326163&ct=geo_pick&mt=8",
-        "name": "GBAGo: Visual Saves",
-        "description": "Apart from three original demo cartridges made by Lumi Studio, GBAGo includes no games or content catalogue. Import through Files only files you created",
+        "name": "GBAGo",
+        "description": "GBAGo — 除 Lumi Studio 自製的三款原創 demo 卡帶外，GBAGo 不包含遊戲或內容目錄。請僅從「檔案」匯入由你自行創作，或依適用法律獲授權使用的檔案。. Paid download · Pay once · No subscription.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1024,7 +1024,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6804564400"
           },
-          "name": "GBAGo: Visual Saves",
+          "name": "GBAGo",
           "operatingSystem": "iOS",
           "applicationCategory": "UtilitiesApplication",
           "url": "https://apps.apple.com/au/app/id6804564400?pt=118326163&ct=geo_pick&mt=8",
@@ -1035,11 +1035,11 @@
             "target": "https://apps.apple.com/au/app/id6804564400?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/en-AU/gbago.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/en-AU/answers/paid-gba-emulator-for-iphone-with-save-states-and-controller-support.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6804564400",
           "inLanguage": "en-AU",
-          "description": "Apart from three original demo cartridges made by Lumi Studio, GBAGo includes no games or content catalogue. Import through Files only files you created",
+          "description": "GBAGo — 除 Lumi Studio 自製的三款原創 demo 卡帶外，GBAGo 不包含遊戲或內容目錄。請僅從「檔案」匯入由你自行創作，或依適用法律獲授權使用的檔案。. Paid download · Pay once · No subscription.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/en-AU.jsonld#offer-gbago"
           },

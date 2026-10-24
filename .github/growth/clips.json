@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-23T09:02:57Z",
+  "updated_at": "2026-10-24T03:27:02Z",
   "note": "Planned by 00_GrowthEngine shorts/scripts/schedule_posts.py; each clip at most once per channel.",
   "clips": {
     "mochi/en": {
@@ -26,7 +26,7 @@
         "routine",
         "reminder"
       ],
-      "keyline": "To-Do List Widget & Chores",
+      "keyline": "Kawaii To-Do List & Chores",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -77,7 +77,7 @@
         "習慣",
         "計畫"
       ],
-      "keyline": "待辦清單・待辦事項・療癒手帳",
+      "keyline": "療癒手帳・購物清單小工具",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -113,7 +113,7 @@
       "name": "Mochi: かわいいToDo",
       "search": "Mochi かわいいToDo",
       "tags": [
-        "#かわいいToDoリストタスク管理",
+        "#かわいいToDo",
         "#ToDoリスト",
         "#タスク",
         "#チェックリスト",
@@ -128,7 +128,7 @@
         "予定",
         "メモ"
       ],
-      "keyline": "やることリスト・チェックリスト・ウィジェット",
+      "keyline": "やることリストをかわいく整える",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -164,7 +164,7 @@
       "name": "Mochi: 귀여운 할 일 목록 & 체크리스트",
       "search": "Mochi 귀여운 할 일",
       "tags": [
-        "#귀여운투두리스트체크리스트",
+        "#귀여운할일목록체크리스트",
         "#할일",
         "#알림",
         "#플래너",
@@ -179,7 +179,7 @@
         "습관",
         "루틴"
       ],
-      "keyline": "할 일 목록, 데일리 플래너, 위젯",
+      "keyline": "포근한 플래너로 하루 정리",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -230,7 +230,7 @@
         "hábitos",
         "rotina"
       ],
-      "keyline": "Lista de tarefas e checklist",
+      "keyline": "Tarefas fofas e checklist",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -281,7 +281,7 @@
         "gewohnheiten",
         "routine"
       ],
-      "keyline": "Aufgabenliste & Checkliste",
+      "keyline": "Süße To-do-Liste",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -317,7 +317,7 @@
       "name": "Mochi: Liste toute mignonne",
       "search": "Mochi Liste toute mignonne",
       "tags": [
-        "#ListeDeTâchesKawaii",
+        "#ListeTouteMignonne",
         "#Ménage",
         "#Agenda",
         "#Planning",
@@ -332,7 +332,7 @@
         "habitudes",
         "routine"
       ],
-      "keyline": "Checklist, rappels et planning",
+      "keyline": "Checklist, tâches et rappels",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -368,7 +368,7 @@
       "name": "CountDaysNow: Event Counter",
       "search": "CountDaysNow",
       "tags": [
-        "#CountdownWidget",
+        "#EventCounter",
         "#Days",
         "#Until",
         "#Since",
@@ -383,7 +383,7 @@
         "anniversary",
         "lock"
       ],
-      "keyline": "Days Until & Prep Checklists",
+      "keyline": "Countdown Plan: Work Backwards",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -419,11 +419,11 @@
       "name": "CountDaysNow: Event Counter",
       "search": "CountDaysNow",
       "tags": [
-        "#倒數日紀念日",
         "#倒數日",
         "#倒數計時",
         "#紀念日",
         "#生日",
+        "#還有幾天",
         "#CountDaysNow"
       ],
       "keywords": [
@@ -434,7 +434,7 @@
         "還有幾天",
         "農曆"
       ],
-      "keyline": "倒數計時小工具・提前準備清單",
+      "keyline": "倒數日 · 倒數計時 · 紀念日",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -485,7 +485,7 @@
         "記念日",
         "誕生日"
       ],
-      "keyline": "カウントダウン・あと何日・記念日",
+      "keyline": "カウントダウン · あと何日 · 経過日数",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -521,11 +521,11 @@
       "name": "CountDaysNow: Event Counter",
       "search": "CountDaysNow",
       "tags": [
-        "#디데이카운터",
         "#디데이",
         "#카운트다운",
         "#날짜계산",
         "#기념일",
+        "#생일",
         "#CountDaysNow"
       ],
       "keywords": [
@@ -536,7 +536,7 @@
         "생일",
         "커플"
       ],
-      "keyline": "D-day 위젯·기념일·날짜계산",
+      "keyline": "디데이 · 카운트다운 · 날짜계산",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -587,7 +587,7 @@
         "clear",
         "quality"
       ],
-      "keyline": "Photo Enhancer: Fix Blurry",
+      "keyline": "Unblur & HD",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -638,7 +638,7 @@
         "照片增強",
         "高畫質"
       ],
-      "keyline": "老照片修復・去模糊・提升畫質",
+      "keyline": "老照片修復・翻新舊相片",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -674,7 +674,7 @@
       "name": "Unblurry Pro：写真高画質化",
       "search": "Unblurry 写真高画質化",
       "tags": [
-        "#ぼやけた写真を修正",
+        "#写真高画質化",
         "#ぼかし除去",
         "#写真鮮明化",
         "#画像鮮明化",
@@ -689,7 +689,7 @@
         "画像修復",
         "写真修正"
       ],
-      "keyline": "写真高画質化・ぼやけ補正・古い写真の復元",
+      "keyline": "古い写真の復元・ぼやけ補正",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -980,7 +980,7 @@
       "name": "Lumi Mission Planet: Routines",
       "search": "Lumi Mission Planet",
       "tags": [
-        "#RewardChart",
+        "#Routines",
         "#Sticker",
         "#Star",
         "#Behavior",
@@ -995,7 +995,7 @@
         "motivation",
         "brushing"
       ],
-      "keyline": "Kids Chores & Sticker Board",
+      "keyline": "Kids Reward & Chore Chart",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -1403,7 +1403,7 @@
         "背景白",
         "背景色"
       ],
-      "keyline": "履歴書・各種申請のサイズに対応",
+      "keyline": "顔写真をぴったりのサイズに",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -1454,7 +1454,7 @@
         "배경지우기",
         "흰배경"
       ],
-      "keyline": "반명함·이력서용 규격 맞춤",
+      "keyline": "인물 사진을 원하는 규격으로",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -1643,7 +1643,7 @@
       "name": "G+Money Lite: Trip Spending",
       "search": "G+Money Lite",
       "tags": [
-        "#TravelBudget",
+        "#TripSpending",
         "#Expense",
         "#Converter",
         "#Exchange",
@@ -1658,7 +1658,7 @@
         "vacation",
         "abroad"
       ],
-      "keyline": "Trip & Vacation Budget Planner",
+      "keyline": "Travel Budget & Currency",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -1694,7 +1694,7 @@
       "name": "G+Money Lite：旅行記帳·匯率換算",
       "search": "G+Money Lite 旅行記帳",
       "tags": [
-        "#旅遊預算匯率換算",
+        "#旅行記帳匯率換算",
         "#記帳本",
         "#開銷",
         "#記帳軟體",
@@ -1709,7 +1709,7 @@
         "消費記錄",
         "支出紀錄"
       ],
-      "keyline": "出國自由行・每天還能花多少",
+      "keyline": "出國預算・自由行花費・每日預算",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -1913,7 +1913,7 @@
         "時間管理",
         "手機成癮"
       ],
-      "keyline": "戒手機・讀書計時・螢幕使用時間",
+      "keyline": "戒手機・封鎖App・螢幕使用時間",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -1964,7 +1964,7 @@
         "時間管理",
         "デジタルデトックス"
       ],
-      "keyline": "スマホ依存対策・スクリーンタイム管理",
+      "keyline": "アプリ制限・スマホ依存対策",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -2015,7 +2015,7 @@
         "공부",
         "시간관리"
       ],
-      "keyline": "스마트폰 중독 탈출·공부 시간 관리",
+      "keyline": "앱 차단·집중 타이머",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -2051,11 +2051,11 @@
       "name": "Lumi Bopomofo",
       "search": "Lumi Bopomofo",
       "tags": [
-        "#ZhuyinForKids",
         "#Mandarin",
         "#Symbols",
         "#Taiwanese",
         "#Traditional",
+        "#Tones",
         "#LumiBopomofo"
       ],
       "keywords": [
@@ -2066,7 +2066,7 @@
         "tones",
         "pronunciation"
       ],
-      "keyline": "Chinese Phonics & Tones Game",
+      "keyline": "Zhuyin Games: Chinese Phonics",
       "duration": 13.5,
       "compliance": {
         "store_claims_ok": true,
@@ -2103,11 +2103,11 @@
       "name": "Lumi注音星球",
       "search": "Lumi注音星球",
       "tags": [
-        "#學注音符號遊戲",
         "#注音符號",
         "#學注音",
         "#注音練習",
         "#台灣注音",
+        "#注音拼音",
         "#Lumi注音星球"
       ],
       "keywords": [
@@ -2118,7 +2118,7 @@
         "注音拼音",
         "拼音練習"
       ],
-      "keyline": "學注音符號遊戲",
+      "keyline": "注音遊戲：聽音、描寫、拼音",
       "duration": 13.5,
       "compliance": {
         "store_claims_ok": true,
@@ -2170,7 +2170,7 @@
         "声調",
         "書き順"
       ],
-      "keyline": "子供の四声・なぞり書き",
+      "keyline": "注音符号で中国語の発音あそび",
       "duration": 13.5,
       "compliance": {
         "store_claims_ok": true,
@@ -2362,7 +2362,7 @@
       "name": "Aim990：英文弱點教練",
       "search": "Aim990",
       "tags": [
-        "#英文聽力閱讀文法診斷",
+        "#英文弱點教練",
         "#聽力",
         "#閱讀",
         "#文法",
@@ -2377,7 +2377,7 @@
         "背單字",
         "練習"
       ],
-      "keyline": "多益練習・8分鐘找出3大弱點",
+      "keyline": "多益聽讀診斷與30天計畫",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -2428,7 +2428,7 @@
         "長文",
         "ディクテーション"
       ],
-      "keyline": "TOEIC L&R対策・8分診断と30日計画",
+      "keyline": "TOEIC L&R 8分診断と弱点処方",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -2617,11 +2617,11 @@
       "name": "BattAI: Battery Health & Life",
       "search": "BattAI Battery Health",
       "tags": [
+        "#BatteryHealthLife",
         "#BatteryHealthScore",
         "#MaximumCapacity",
         "#Cycles",
         "#ChargeCare",
-        "#ChargeRange",
         "#BattAIBatteryHealth"
       ],
       "keywords": [
@@ -2632,7 +2632,7 @@
         "Charge range",
         "Charge rate"
       ],
-      "keyline": "Battery Score & Trend",
+      "keyline": "Charge Alarm, Checker & Widget",
       "duration": 13.5,
       "compliance": {
         "store_claims_ok": true,
@@ -2684,7 +2684,7 @@
         "充電區間",
         "充電速率"
       ],
-      "keyline": "電池打分數 看趨勢",
+      "keyline": "電池壽命檢測・電池分析・充電提醒",
       "duration": 13.5,
       "compliance": {
         "store_claims_ok": true,
@@ -2736,7 +2736,7 @@
         "充電範囲",
         "充電速度"
       ],
-      "keyline": "電池の劣化をスコア化",
+      "keyline": "劣化チェック・充電通知・ウィジェット",
       "duration": 13.5,
       "compliance": {
         "store_claims_ok": true,
@@ -2788,7 +2788,7 @@
         "충전 구간",
         "충전 속도"
       ],
-      "keyline": "배터리 점수와 추세",
+      "keyline": "성능 수명 체크 · 충전 속도 · 완충 알림 · 위젯",
       "duration": 13.5,
       "compliance": {
         "store_claims_ok": true,
@@ -2825,7 +2825,7 @@
       "name": "CalDaily: Calculator & Themes",
       "search": "CalDaily Calculator",
       "tags": [
-        "#AestheticCalculator",
+        "#CalculatorThemes",
         "#Percent",
         "#Percentage",
         "#Split",
@@ -2840,7 +2840,7 @@
         "mortgage",
         "unit"
       ],
-      "keyline": "Themes, Widget, Tip & Loan",
+      "keyline": "Calculator & Themes",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -2942,7 +2942,7 @@
         "関数電卓",
         "日数計算"
       ],
-      "keyline": "割り勘・ローン・単位換算・燃費",
+      "keyline": "ウィジェット・8つのツール・履歴",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -3350,7 +3350,7 @@
         "calculator",
         "symptom"
       ],
-      "keyline": "Private Ovulation Calendar",
+      "keyline": "Private, Offline, No Account",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -3386,11 +3386,11 @@
       "name": "Cyca 經期週期追蹤・排卵",
       "search": "Cyca 經期",
       "tags": [
-        "#經期追蹤排卵期月經週期",
         "#經期追蹤",
         "#月經週期",
         "#排卵期計算器",
         "#排卵期",
+        "#經期記錄",
         "#Cyca經期"
       ],
       "keywords": [
@@ -4100,7 +4100,7 @@
       "name": "dB Halo: 소음 측정기",
       "search": "dB Halo 소음 측정기",
       "tags": [
-        "#소음측정기층간소음",
+        "#소음측정기",
         "#생활소음",
         "#데시벨",
         "#음량",
@@ -4115,7 +4115,7 @@
         "소음계",
         "주파수분석"
       ],
-      "keyline": "데시벨 측정·기록, 수면 일지",
+      "keyline": "소음 측정기",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -4166,7 +4166,7 @@
         "kindergarten",
         "learning"
       ],
-      "keyline": "Alphabet Tracing & Sounds",
+      "keyline": "ABC Kids",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -4253,7 +4253,7 @@
       "name": "Lumi レター Lite：こども英語ABC",
       "search": "Lumi レター Lite",
       "tags": [
-        "#アルファベット",
+        "#こども英語ABC",
         "#幼児英語",
         "#子供英語",
         "#abcなぞり",
@@ -4268,7 +4268,7 @@
         "幼児教育",
         "英語学習"
       ],
-      "keyline": "子供英語のABCなぞり書き・フォニックス",
+      "keyline": "アルファベットなぞり書き・フォニックス",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -4304,7 +4304,7 @@
       "name": "Lumi 레터 Lite: 어린이 영어 ABC",
       "search": "Lumi 레터 Lite",
       "tags": [
-        "#알파벳쓰기",
+        "#어린이영어ABC",
         "#소문자",
         "#대문자",
         "#취학전",
@@ -4319,7 +4319,7 @@
         "유아영어",
         "영어발음"
       ],
-      "keyline": "엄마표 영어 ABC·파닉스 놀이",
+      "keyline": "알파벳 따라쓰기·파닉스 놀이",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -4370,7 +4370,7 @@
         "العاب",
         "تعليمية"
       ],
-      "keyline": "تعلم الكتابة والنطق للأطفال",
+      "keyline": "تعلم كتابة الحروف الإنجليزية",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -4406,7 +4406,7 @@
       "name": "Lumi Math Planet: Explorer",
       "search": "Lumi Math Planet Explorer",
       "tags": [
-        "#KidsGames",
+        "#Explorer",
         "#Counting",
         "#Games",
         "#Multiplication",
@@ -4421,7 +4421,7 @@
         "tables",
         "kindergarten"
       ],
-      "keyline": "Addition, Subtraction & Clocks",
+      "keyline": "Explorer",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -4457,7 +4457,7 @@
       "name": "Lumi數學星球：探索版",
       "search": "Lumi數學星球 探索版",
       "tags": [
-        "#幼兒數學加減法九九乘法",
+        "#探索版",
         "#啟蒙",
         "#學前",
         "#大班",
@@ -4472,7 +4472,7 @@
         "幼稚園",
         "國小"
       ],
-      "keyline": "數數・時鐘・錢幣・數感練習",
+      "keyline": "探索版",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -4559,7 +4559,7 @@
       "name": "Lumi 수학 행성: 체험판",
       "search": "Lumi 수학 행성 체험판",
       "tags": [
-        "#유아수학놀이",
+        "#체험판",
         "#곱셈",
         "#나눗셈",
         "#셈하기",
@@ -4574,7 +4574,7 @@
         "받아올림",
         "유치원"
       ],
-      "keyline": "예비초등 덧셈 뺄셈 구구단",
+      "keyline": "체험판",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -4931,7 +4931,7 @@
         "隱藏",
         "隱私資料保護"
       ],
-      "keyline": "PDF、照片、證件影本遮蔽與塗黑",
+      "keyline": "分享前遮蔽個資與私密資訊",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -5033,7 +5033,7 @@
         "문서",
         "사진"
       ],
-      "keyline": "PDF·사진·신분증 가리기",
+      "keyline": "공유 전 개인정보 영구 가리기",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -5186,7 +5186,7 @@
         "paragon",
         "faktura"
       ],
-      "keyline": "Zaczernij PDF, zdjęcia, dowód",
+      "keyline": "Ukryj dane przed wysłaniem",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -5237,7 +5237,7 @@
         "filter",
         "maintenance"
       ],
-      "keyline": "Last Time",
+      "keyline": "When Did I Last? Home Upkeep",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -5324,11 +5324,11 @@
       "name": "Mochi DoneStamp：いつやった？",
       "search": "Mochi DoneStamp いつやった",
       "tags": [
+        "#いつやった",
         "#最後にやった日",
         "#交換時期",
         "#家電",
         "#家族共有",
-        "#忘れ防止",
         "#MochiDoneStampいつやった"
       ],
       "keywords": [
@@ -5339,7 +5339,7 @@
         "忘れ防止",
         "掃除"
       ],
-      "keyline": "前回いつ？家事と交換時期の記録",
+      "keyline": "前回の日付を記録・家事の周期リマインダー",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -5426,7 +5426,7 @@
       "name": "MoneyTag: Income & Expense",
       "search": "MoneyTag",
       "tags": [
-        "#SideHustleTracker",
+        "#IncomeExpense",
         "#Profit",
         "#Loss",
         "#SideHustle",
@@ -5441,7 +5441,7 @@
         "business",
         "accounting"
       ],
-      "keyline": "Income & Expense by Project",
+      "keyline": "Projects · Tags · Report",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -5492,7 +5492,7 @@
         "毛利",
         "營收"
       ],
-      "keyline": "每個專案各自記帳・損益一目了然",
+      "keyline": "專案 · 標籤 · 報表",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -5543,7 +5543,7 @@
         "経費",
         "副業"
       ],
-      "keyline": "副業の収支管理・案件ごとの利益",
+      "keyline": "プロジェクト · タグ · レポート",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -5645,7 +5645,7 @@
         "kinh doanh",
         "bán hàng"
       ],
-      "keyline": "Mỗi dự án một sổ, rõ lãi lỗ",
+      "keyline": "Dự án · Thẻ · Báo cáo",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -5783,11 +5783,11 @@
       "name": "100 Notes Studio: Pen & Paper",
       "search": "100 Notes Studio",
       "tags": [
-        "#手寫筆記本",
         "#手帳",
         "#日記",
         "#讀書計畫",
         "#抽認卡",
+        "#文字辨識",
         "#100NotesStudio"
       ],
       "keywords": [
@@ -5798,7 +5798,7 @@
         "文字辨識",
         "貼紙"
       ],
-      "keyline": "PDF標註・上課錄音・抽認卡複習",
+      "keyline": "手寫筆記本、PDF標註、錄音與複習",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -5936,7 +5936,7 @@
       "name": "100 Notes Studio: Заметки",
       "search": "100 Notes Studio",
       "tags": [
-        "#Конспекты",
+        "#Заметки",
         "#рукописный",
         "#дневник",
         "#планер",
@@ -5951,7 +5951,7 @@
         "лекции",
         "диктофон"
       ],
-      "keyline": "Заметки, тетрадь, PDF и аудио",
+      "keyline": "Электронная тетрадь, конспекты",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -6614,7 +6614,7 @@
         "delete",
         "screenshots"
       ],
-      "keyline": "Delete Duplicate & Blurry Pics",
+      "keyline": "Clean Up Photos & Storage",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -6665,7 +6665,7 @@
         "相簿整理",
         "圖庫清理"
       ],
-      "keyline": "重複照片・截圖清理・手機空間不足",
+      "keyline": "截圖清理・手機空間不足",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -6716,7 +6716,7 @@
         "maker",
         "wifi"
       ],
-      "keyline": "QR Scanner & Safe Link Check",
+      "keyline": "Instant Open, URL Check Later",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -6752,7 +6752,7 @@
       "name": "QR Code Halo：安全掃描與建立",
       "search": "QR Code Halo",
       "tags": [
-        "#掃描器條碼讀取與建立",
+        "#安全掃描與建立",
         "#條碼",
         "#掃碼",
         "#產生器",
@@ -6767,7 +6767,7 @@
         "辨識",
         "網址"
       ],
-      "keyline": "一掃即開・網址安全檢查",
+      "keyline": "安全掃描與建立",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -6803,7 +6803,7 @@
       "name": "SaveTag: AI Social Bookmarks",
       "search": "SaveTag",
       "tags": [
-        "#ReadLaterBookmarks",
+        "#AISocialBookmarks",
         "#Reading",
         "#List",
         "#Organizer",
@@ -6818,7 +6818,7 @@
         "wishlist",
         "recipes"
       ],
-      "keyline": "AI Tags for Links & Videos",
+      "keyline": "Link Saver: Watch & Read Later",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -7313,7 +7313,7 @@
       "name": "ScanTo Pro: PDF Scanner & OCR",
       "search": "ScanTo Pro",
       "tags": [
-        "#DokumenteScannen",
+        "#PDFScannerOCR",
         "#Dokumentenscanner",
         "#Texterkennung",
         "#Beleg",
@@ -7328,7 +7328,7 @@
         "rechnung",
         "ausweis"
       ],
-      "keyline": "PDF Scanner & OCR, offline",
+      "keyline": "Dokumente offline scannen",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -7415,7 +7415,7 @@
       "name": "Sereno: Sleep Sounds",
       "search": "Sereno Sleep Sounds",
       "tags": [
-        "#SleepSoundMachine",
+        "#SleepSounds",
         "#Machine",
         "#Pink",
         "#Ocean",
@@ -7466,7 +7466,7 @@
       "name": "Sereno: 極致睡眠音效",
       "search": "Sereno 極致睡眠音效",
       "tags": [
-        "#白噪音睡眠音效",
+        "#極致睡眠音效",
         "#熟睡",
         "#哄睡",
         "#胎內音",
@@ -7481,7 +7481,7 @@
         "粉紅噪音",
         "失眠"
       ],
-      "keyline": "雨聲・褐噪音・助眠與專注混音",
+      "keyline": "雨聲白噪音・助眠專注神器",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -7634,7 +7634,7 @@
         "text",
         "receipts"
       ],
-      "keyline": "Screenshot Organizer & OCR",
+      "keyline": "OCR Search & Photo Cleaner",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -7940,7 +7940,7 @@
         "會議紀錄",
         "語音備忘錄"
       ],
-      "keyline": "語音轉文字・錄音筆記・會議記錄",
+      "keyline": "語音轉文字・錄音筆記",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -7991,7 +7991,7 @@
         "aesthetic",
         "night"
       ],
-      "keyline": "Always-On Bedside Night Clock",
+      "keyline": "Nightstand & Bedside Clock",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -8027,7 +8027,7 @@
       "name": "Stay Clock:翻頁桌鐘",
       "search": "Stay Clock",
       "tags": [
-        "#翻頁時鐘床頭數位時鐘",
+        "#翻頁桌鐘",
         "#數位時鐘",
         "#床頭時鐘",
         "#翻頁時鐘",
@@ -8042,7 +8042,7 @@
         "待機時鐘",
         "鬧鐘"
       ],
-      "keyline": "桌鐘・充電時恆亮・整月行事曆",
+      "keyline": "全天顯示時間與行事曆",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -8282,7 +8282,7 @@
       "name": "TripBee Lite: Trip Planner",
       "search": "TripBee Lite",
       "tags": [
-        "#TravelItinerary",
+        "#TripPlanner",
         "#Agenda",
         "#Holiday",
         "#Schedule",
@@ -8297,7 +8297,7 @@
         "tickets",
         "road"
       ],
-      "keyline": "Vacation Timeline, Day by Day",
+      "keyline": "Trip Planner",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -8466,7 +8466,7 @@
       "name": "Trip Planet: Kids Quest",
       "search": "Trip Planet",
       "tags": [
-        "#KidsTravelGames",
+        "#KidsQuest",
         "#Vacation",
         "#Airplane",
         "#Flight",
@@ -8481,7 +8481,7 @@
         "toddler",
         "preschool"
       ],
-      "keyline": "Road Trip & Flight Missions",
+      "keyline": "Family Travel Missions & Games",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -8736,7 +8736,7 @@
         "connection",
         "test"
       ],
-      "keyline": "Internet Down? Spot the Cause",
+      "keyline": "Internet Down? Find the Cause",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -8772,11 +8772,11 @@
       "name": "WiFi Aid Lite",
       "search": "WiFi Aid Lite",
       "tags": [
-        "#網路故障檢測",
         "#斷線",
         "#連不上",
         "#網路慢",
         "#網路卡卡",
+        "#不穩",
         "#WiFiAidLite"
       ],
       "keywords": [
@@ -8787,7 +8787,7 @@
         "不穩",
         "測試"
       ],
-      "keyline": "網路故障檢測",
+      "keyline": "斷線 · 連不上 · 網路慢",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -8823,11 +8823,11 @@
       "name": "WiFi Aid Lite",
       "search": "WiFi Aid Lite",
       "tags": [
-        "#つながらない原因診断",
         "#繋がらない",
         "#インターネット",
         "#接続",
         "#遅い",
+        "#重い",
         "#WiFiAidLite"
       ],
       "keywords": [
@@ -8838,7 +8838,7 @@
         "重い",
         "不安定"
       ],
-      "keyline": "ネット不調・遅い・切れる原因を特定",
+      "keyline": "ネットがつながらない原因を特定",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -8976,7 +8976,7 @@
       "name": "Wordmate Lite: Vocabulary",
       "search": "Wordmate Lite",
       "tags": [
-        "#5WordsADay",
+        "#Vocabulary",
         "#Spanish",
         "#French",
         "#Japanese",
@@ -8991,7 +8991,7 @@
         "german",
         "language"
       ],
-      "keyline": "Learn Japanese, Korean & More",
+      "keyline": "Learn 5 words a day, offline",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -9027,11 +9027,11 @@
       "name": "Wordmate Lite 每天五個單字",
       "search": "Wordmate Lite 單字",
       "tags": [
-        "#每天五個單字",
         "#背單字",
         "#英文單字",
         "#英文",
         "#日文單字",
+        "#韓文單字",
         "#WordmateLite單字"
       ],
       "keywords": [
@@ -9042,7 +9042,7 @@
         "韓文單字",
         "離線"
       ],
-      "keyline": "旅遊日文・韓文單字，一分鐘",
+      "keyline": "44 種語言，一分鐘的字彙習慣",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -9144,7 +9144,7 @@
         "중국어",
         "스페인어"
       ],
-      "keyline": "하루 5단어, 1분이면 끝나는 어휘",
+      "keyline": "44개 언어, 1분이면 끝나는 어휘",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -9297,7 +9297,7 @@
         "password",
         "manager"
       ],
-      "keyline": "File Extractor & Opener",
+      "keyline": "Unarchiver & File Extractor",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -9348,7 +9348,7 @@
         "rar檔",
         "7z檔"
       ],
-      "keyline": "壓縮檔案開啟・預覽・密碼加密",
+      "keyline": "開啟壓縮檔・預覽・加密壓縮",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -9399,7 +9399,7 @@
         "一括",
         "展開"
       ],
-      "keyline": "圧縮ファイルを展開・パスワード付きも",
+      "keyline": "圧縮・解凍ツール パスワード対応",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -9552,7 +9552,7 @@
         "範本",
         "總結"
       ],
-      "keyline": "截圖、PDF 整理成重點摘要",
+      "keyline": "檔案、PDF 轉提示詞與摘要",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -9654,7 +9654,7 @@
         "텍스트추출",
         "이미지텍스트"
       ],
-      "keyline": "PDF·캡처 핵심 요약",
+      "keyline": "파일·PDF로 프롬프트 만들기",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -9705,7 +9705,7 @@
         "hours",
         "exam"
       ],
-      "keyline": "Study Hours Tracker & Streaks",
+      "keyline": "Face-down activity time ledger",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -9756,7 +9756,7 @@
         "閱讀",
         "習慣養成"
       ],
-      "keyline": "手機蓋著就計時・讀書時數紀錄",
+      "keyline": "翻面專注計時",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -9807,7 +9807,7 @@
         "読書",
         "習慣化"
       ],
-      "keyline": "スマホを伏せて勉強時間を記録",
+      "keyline": "机に伏せるだけ",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -9858,7 +9858,7 @@
         "생산성",
         "습관"
       ],
-      "keyline": "공부 타이머·공부 시간 기록",
+      "keyline": "책상에 엎어 두세요",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -10247,7 +10247,7 @@
         "anniversary",
         "lock"
       ],
-      "keyline": "Days Until & Prep Checklists",
+      "keyline": "Event Counter",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -10300,7 +10300,7 @@
         "還有幾天",
         "農曆"
       ],
-      "keyline": "倒數計時小工具・提前準備清單",
+      "keyline": "倒數日 · 倒數計時 · 紀念日",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -10353,7 +10353,7 @@
         "記念日",
         "誕生日"
       ],
-      "keyline": "カウントダウン・あと何日・記念日",
+      "keyline": "カウントダウン · あと何日 · 経過日数",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -10406,7 +10406,7 @@
         "생일",
         "커플"
       ],
-      "keyline": "D-day 위젯·기념일·날짜계산",
+      "keyline": "디데이 · 카운트다운 · 날짜계산",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -10459,7 +10459,7 @@
         "routine",
         "reminder"
       ],
-      "keyline": "To-Do List Widget & Chores",
+      "keyline": "Kawaii To-Do List & Chores",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -10512,7 +10512,7 @@
         "習慣",
         "計畫"
       ],
-      "keyline": "待辦清單・待辦事項・療癒手帳",
+      "keyline": "療癒手帳・購物清單小工具",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -10565,7 +10565,7 @@
         "予定",
         "メモ"
       ],
-      "keyline": "やることリスト・チェックリスト・ウィジェット",
+      "keyline": "やることリストをかわいく整える",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -10618,7 +10618,7 @@
         "습관",
         "루틴"
       ],
-      "keyline": "할 일 목록, 데일리 플래너, 위젯",
+      "keyline": "포근한 플래너로 하루 정리",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -10724,7 +10724,7 @@
         "gewohnheiten",
         "routine"
       ],
-      "keyline": "Aufgabenliste & Checkliste",
+      "keyline": "Süße To-do-Liste",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -10777,7 +10777,7 @@
         "habitudes",
         "routine"
       ],
-      "keyline": "Checklist, rappels et planning",
+      "keyline": "Checklist, tâches et rappels",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -10830,7 +10830,7 @@
         "motivation",
         "brushing"
       ],
-      "keyline": "Kids Chores & Sticker Board",
+      "keyline": "Routines",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -11254,7 +11254,7 @@
         "背景白",
         "背景色"
       ],
-      "keyline": "履歴書・各種申請のサイズに対応",
+      "keyline": "顔写真をぴったりのサイズに",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -11307,7 +11307,7 @@
         "배경지우기",
         "흰배경"
       ],
-      "keyline": "반명함·이력서용 규격 맞춤",
+      "keyline": "인물 사진을 원하는 규격으로",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -11519,7 +11519,7 @@
         "clear",
         "quality"
       ],
-      "keyline": "Photo Enhancer: Fix Blurry",
+      "keyline": "Unblur & HD",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -11572,7 +11572,7 @@
         "照片增強",
         "高畫質"
       ],
-      "keyline": "老照片修復・去模糊・提升畫質",
+      "keyline": "老照片修復・翻新舊相片",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -11625,7 +11625,7 @@
         "画像修復",
         "写真修正"
       ],
-      "keyline": "写真高画質化・ぼやけ補正・古い写真の復元",
+      "keyline": "古い写真の復元・ぼやけ補正",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -11943,7 +11943,7 @@
         "vacation",
         "abroad"
       ],
-      "keyline": "Trip & Vacation Budget Planner",
+      "keyline": "Trip Spending",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -11996,7 +11996,7 @@
         "消費記錄",
         "支出紀錄"
       ],
-      "keyline": "出國自由行・每天還能花多少",
+      "keyline": "出國預算・自由行花費・每日預算",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -12208,7 +12208,7 @@
         "時間管理",
         "手機成癮"
       ],
-      "keyline": "戒手機・讀書計時・螢幕使用時間",
+      "keyline": "戒手機・封鎖App・螢幕使用時間",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -12261,7 +12261,7 @@
         "時間管理",
         "デジタルデトックス"
       ],
-      "keyline": "スマホ依存対策・スクリーンタイム管理",
+      "keyline": "アプリ制限・集中タイマー",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -12314,7 +12314,7 @@
         "공부",
         "시간관리"
       ],
-      "keyline": "스마트폰 중독 탈출·공부 시간 관리",
+      "keyline": "스마트폰 중독 탈출·집중 타이머",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -12367,7 +12367,7 @@
         "tones",
         "pronunciation"
       ],
-      "keyline": "Chinese Phonics & Tones Game",
+      "keyline": "Zhuyin Games: Chinese Phonics",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -12420,7 +12420,7 @@
         "注音拼音",
         "拼音練習"
       ],
-      "keyline": "學注音符號遊戲",
+      "keyline": "注音遊戲：聽音、描寫、拼音",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -12473,7 +12473,7 @@
         "声調",
         "書き順"
       ],
-      "keyline": "子供の四声・なぞり書き",
+      "keyline": "注音符号で中国語の発音あそび",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -12632,7 +12632,7 @@
         "ticker",
         "neon"
       ],
-      "keyline": "Scrolling LED Sign & Banner",
+      "keyline": "Cue flows and marquee signs",
       "duration": 13.0,
       "compliance": {
         "store_claims_ok": true,
@@ -12669,11 +12669,11 @@
       "name": "LED Moving Text",
       "search": "LED Moving Text",
       "tags": [
-        "#跑馬燈大字看板",
         "#跑馬燈",
         "#字幕機",
         "#電子看板",
         "#手燈",
+        "#舉牌",
         "#LEDMovingText"
       ],
       "keywords": [
@@ -12930,19 +12930,19 @@
       "search": "DailyMate Phrases",
       "tags": [
         "#LanguagePhrases",
-        "#Conversation",
-        "#Sentences",
-        "#Speak",
         "#Everyday",
+        "#German",
+        "#Phrasebook",
+        "#Situations",
         "#DailyMatePhrases"
       ],
       "keywords": [
-        "conversation",
-        "sentences",
-        "speak",
         "everyday",
-        "japanese",
-        "korean"
+        "german",
+        "phrasebook",
+        "situations",
+        "expressions",
+        "listening"
       ],
       "keyline": "Learn Spanish, French & More",
       "compliance": {
@@ -13032,21 +13032,21 @@
       "search": "DailyMate 文で身につく語学",
       "tags": [
         "#文で身につく語学",
-        "#実用フレーズ",
+        "#実用",
         "#フレーズ集",
-        "#英会話",
-        "#英語学習",
+        "#日常会話",
+        "#韓国語",
         "#DailyMate文で身につく語学"
       ],
       "keywords": [
-        "実用フレーズ",
+        "実用",
         "フレーズ集",
-        "英会話",
-        "英語学習",
         "日常会話",
-        "発音"
+        "韓国語",
+        "中国語",
+        "スペイン語"
       ],
-      "keyline": "文で身につく語学",
+      "keyline": "毎日一文で身につく実用会話",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -13133,7 +13133,7 @@
       "name": "G+Money: Spending & Budget",
       "search": "G+Money",
       "tags": [
-        "#SpendingCurrency",
+        "#SpendingBudget",
         "#Multicurrency",
         "#Export",
         "#Savings",
@@ -13148,7 +13148,7 @@
         "wallet",
         "bookkeeping"
       ],
-      "keyline": "Spending & Currency",
+      "keyline": "Spending & Budget",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -13199,7 +13199,7 @@
         "收支",
         "記帳日記"
       ],
-      "keyline": "旅遊記帳・出國記帳・多幣別離線",
+      "keyline": "多幣別・離線記帳・分類報表",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -13250,7 +13250,7 @@
         "レート計算",
         "家計管理"
       ],
-      "keyline": "家計簿・予算・為替",
+      "keyline": "支出管理・お金管理・出費記録",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -13301,7 +13301,7 @@
         "돈관리",
         "절약"
       ],
-      "keyline": "가계부·예산·환율",
+      "keyline": "생활비·소비기록·지출관리",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -13643,11 +13643,11 @@
       "name": "Lumi注音星球 Pro",
       "search": "Lumi注音星球 Pro",
       "tags": [
-        "#幼兒注音拼讀",
         "#ㄅㄆㄇ",
         "#符號",
         "#練習",
         "#一年級",
+        "#小一",
         "#Lumi注音星球Pro"
       ],
       "keywords": [
@@ -13658,7 +13658,7 @@
         "小一",
         "國小"
       ],
-      "keyline": "聲調練習・列印學習單・幼小銜接",
+      "keyline": "ㄅㄆㄇ · 符號 · 練習",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -13694,7 +13694,7 @@
       "name": "Lumi Bopomofo Pro：台湾華語",
       "search": "Lumi Bopomofo Pro",
       "tags": [
-        "#注音台湾華語",
+        "#台湾華語",
         "#ボポモフォ",
         "#中国語",
         "#音声",
@@ -13796,7 +13796,7 @@
       "name": "Lumi Letters Pro: ABC Phonics",
       "search": "Lumi Letters Pro",
       "tags": [
-        "#KidsPhonics",
+        "#ABCPhonics",
         "#Short",
         "#Vowel",
         "#Kids",
@@ -13811,7 +13811,7 @@
         "awareness",
         "alphabet"
       ],
-      "keyline": "Kids Phonics",
+      "keyline": "ABC Phonics",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -13847,7 +13847,7 @@
       "name": "Lumi 字母星球 Pro：ABC啟蒙",
       "search": "Lumi 字母星球 Pro",
       "tags": [
-        "#兒童英文自然發音",
+        "#ABC啟蒙",
         "#Phonics",
         "#美語",
         "#英語",
@@ -13862,7 +13862,7 @@
         "國小",
         "學前"
       ],
-      "keyline": "聽音辨首中尾音・短母音・CVC拼讀",
+      "keyline": "ABC啟蒙",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -13898,7 +13898,7 @@
       "name": "Lumi レター Pro：ABCフォニックス",
       "search": "Lumi レター Pro",
       "tags": [
-        "#フォニックス英語",
+        "#ABCフォニックス",
         "#アルファベット",
         "#えいご",
         "#英単語",
@@ -14000,7 +14000,7 @@
       "name": "Lumi Math Pro: Kids Numbers",
       "search": "Lumi Math Pro",
       "tags": [
-        "#KidsPuzzles",
+        "#KidsNumbers",
         "#Reasoning",
         "#Mental",
         "#Competition",
@@ -14015,7 +14015,7 @@
         "brain",
         "teasers"
       ],
-      "keyline": "Logic, Patterns, Word Problems",
+      "keyline": "Logic Puzzles & Word Problems",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -14051,7 +14051,7 @@
       "name": "Lumi 數學星球：兒童數學",
       "search": "Lumi 數學星球 兒童數學",
       "tags": [
-        "#兒童數學思維",
+        "#兒童數學",
         "#思維",
         "#奧數",
         "#競賽",
@@ -14066,7 +14066,7 @@
         "規律",
         "找規律"
       ],
-      "keyline": "找規律・邏輯推理・應用題",
+      "keyline": "心算練習・邏輯推理・應用題",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -14102,7 +14102,7 @@
       "name": "Lumi さんすうプラネット：子供の算数",
       "search": "Lumi さんすうプラネット",
       "tags": [
-        "#文章題思考力",
+        "#子供の算数",
         "#論理",
         "#推理",
         "#規則性",
@@ -14117,7 +14117,7 @@
         "頭の体操",
         "暗算"
       ],
-      "keyline": "小1・小2の算数パズルと応用問題",
+      "keyline": "子供の算数",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -14153,7 +14153,7 @@
       "name": "Lumi 수학 행성: 아이 수학",
       "search": "Lumi 수학 행성 아이 수학",
       "tags": [
-        "#사고력수학",
+        "#아이수학",
         "#논리",
         "#추론",
         "#두뇌게임",
@@ -14168,7 +14168,7 @@
         "문제해결",
         "암산"
       ],
-      "keyline": "문장제·규칙 찾기·수학 퍼즐",
+      "keyline": "아이 수학",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -14204,11 +14204,11 @@
       "name": "Lumi Mission Planet Pro",
       "search": "Lumi Mission Planet Pro",
       "tags": [
-        "#KidsRoutine",
         "#Kids",
         "#Daily",
         "#Tasks",
         "#Checklist",
+        "#Habit",
         "#LumiMissionPlanetPro"
       ],
       "keywords": [
@@ -14219,7 +14219,7 @@
         "habit",
         "toddler"
       ],
-      "keyline": "Morning & Bedtime Checklist",
+      "keyline": "kids · daily · tasks",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -14270,7 +14270,7 @@
         "刷牙",
         "吃飯"
       ],
-      "keyline": "孩子刷牙・吃飯・收玩具・睡前任務",
+      "keyline": "每日打卡・日常紀錄・晚間提醒",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -14306,11 +14306,11 @@
       "name": "Lumi ミッション星 Pro 毎日の習慣",
       "search": "Lumi ミッション星 Pro",
       "tags": [
-        "#子供の習慣",
         "#寝る前",
         "#寝かしつけ",
         "#はみがき",
         "#歯磨き",
+        "#おかたづけ",
         "#Lumiミッション星Pro"
       ],
       "keywords": [
@@ -14408,7 +14408,7 @@
       "name": "Snapport: Passport & ID Photos",
       "search": "Snapport",
       "tags": [
-        "#PassportPhotoMaker",
+        "#PassportIDPhotos",
         "#Biometric",
         "#GreenCardPhoto",
         "#Student",
@@ -14423,7 +14423,7 @@
         "layout",
         "resume"
       ],
-      "keyline": "Visa & ID Photos, 2x2, Print",
+      "keyline": "2x2 35x45 Sizes, Print Sheet",
       "duration": 13.5,
       "compliance": {
         "store_claims_ok": true,
@@ -14460,7 +14460,7 @@
       "name": "Snapport: 護照證件照",
       "search": "Snapport",
       "tags": [
-        "#護照照片證件照",
+        "#護照證件照",
         "#護照照片",
         "#簽證照片",
         "#身分證照片",
@@ -14475,7 +14475,7 @@
         "履歷照",
         "學生證照片"
       ],
-      "keyline": "大頭照製作・簽證照片排版列印",
+      "keyline": "大頭照排版・台胞證白底照片",
       "duration": 13.5,
       "compliance": {
         "store_claims_ok": true,
@@ -14527,7 +14527,7 @@
         "免許証写真",
         "写真作成"
       ],
-      "keyline": "履歴書・ビザ写真も自宅で作成・印刷",
+      "keyline": "学生証・社員証の写真も自宅で撮影",
       "duration": 13.5,
       "compliance": {
         "store_claims_ok": true,
@@ -14956,7 +14956,7 @@
       "name": "WiFi Aid: Find WiFi Problems",
       "search": "WiFi Aid",
       "tags": [
-        "#FindNetworkIssues",
+        "#FindWiFiProblems",
         "#Latency",
         "#Jitter",
         "#Ipv6",
@@ -14971,7 +14971,7 @@
         "roaming",
         "access"
       ],
-      "keyline": "Find Network Issues",
+      "keyline": "Find WiFi Problems",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -15007,7 +15007,7 @@
       "name": "WiFi Aid：找出網路問題·診斷",
       "search": "WiFi Aid 找出網路問題",
       "tags": [
-        "#網路診斷找出連線問題",
+        "#找出網路問題診斷",
         "#中繼器",
         "#基地台",
         "#延遲",
@@ -15022,7 +15022,7 @@
         "回應時間",
         "連線品質"
       ],
-      "keyline": "網路診斷・找出連線問題",
+      "keyline": "找出網路問題·診斷",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -15124,7 +15124,7 @@
         "안정성",
         "IPv6"
       ],
-      "keyline": "공유기·메시·DNS 와이파이 점검",
+      "keyline": "네트워크 문제 진단",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -15160,7 +15160,7 @@
       "name": "Wordmate: Learn 44 Languages",
       "search": "Wordmate",
       "tags": [
-        "#44Languages",
+        "#Learn44Languages",
         "#Italian",
         "#Chinese",
         "#Portuguese",
@@ -15175,7 +15175,7 @@
         "arabic",
         "hindi"
       ],
-      "keyline": "44 Languages",
+      "keyline": "Learn 44 Languages",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -15226,7 +15226,7 @@
         "德文",
         "發音"
       ],
-      "keyline": "英文日文韓文單字卡・小工具複習",
+      "keyline": "單字卡・複習・單字小工具",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -15262,7 +15262,7 @@
       "name": "Wordmate：44言語の単語学習",
       "search": "Wordmate 単語学習",
       "tags": [
-        "#英単語44言語の単語帳",
+        "#44言語の単語学習",
         "#単語帳",
         "#復習",
         "#例文",
@@ -15277,7 +15277,7 @@
         "イタリア語",
         "ロシア語"
       ],
-      "keyline": "英単語・44言語の単語帳",
+      "keyline": "単語ウィジェットと暗記カード",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -15328,7 +15328,7 @@
         "베트남어",
         "아랍어"
       ],
-      "keyline": "44개 언어 단어 학습",
+      "keyline": "단어 위젯・단어장 복습",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -15726,7 +15726,7 @@
       "name": "HoursTag Lite: Price in Hours",
       "search": "HoursTag Lite",
       "tags": [
-        "#RealPrice",
+        "#PriceInHours",
         "#Expense",
         "#Budget",
         "#Money",
@@ -15793,7 +15793,7 @@
         "理財",
         "支出"
       ],
-      "keyline": "存錢・忍住衝動購物・理性消費",
+      "keyline": "衝動購物前，先換算成工時",
       "duration": 13.0,
       "compliance": {
         "store_claims_ok": true,
@@ -15845,7 +15845,7 @@
         "散財",
         "物欲"
       ],
-      "keyline": "衝動買いを防いで貯金",
+      "keyline": "その値段は何時間分か見える",
       "duration": 13.0,
       "compliance": {
         "store_claims_ok": true,
@@ -15897,7 +15897,7 @@
         "소비 습관",
         "후회"
       ],
-      "keyline": "충동구매 막고 돈 모으기",
+      "keyline": "이 물건은 몇 시간의 값일까",
       "duration": 13.0,
       "compliance": {
         "store_claims_ok": true,
@@ -16001,7 +16001,7 @@
         "envie",
         "shopping"
       ],
-      "keyline": "Achat conscient & économies",
+      "keyline": "Achat conscient: prix en temps",
       "duration": 13.0,
       "compliance": {
         "store_claims_ok": true,
@@ -16107,7 +16107,7 @@
         "散財",
         "物欲"
       ],
-      "keyline": "衝動買いを防いで貯金",
+      "keyline": "その値段は何時間分か見える",
       "duration": 12.0,
       "compliance": {
         "store_claims_ok": true,
@@ -16215,7 +16215,7 @@
         "envie",
         "shopping"
       ],
-      "keyline": "Achat conscient & économies",
+      "keyline": "Achat conscient: prix en temps",
       "duration": 12.0,
       "compliance": {
         "store_claims_ok": true,
@@ -16485,7 +16485,7 @@
         "layout",
         "resume"
       ],
-      "keyline": "Visa & ID Photos, 2x2, Print",
+      "keyline": "2x2 35x45 Sizes, Print Sheet",
       "duration": 12.0,
       "compliance": {
         "store_claims_ok": true,
@@ -16753,7 +16753,7 @@
         "충전 구간",
         "충전 속도"
       ],
-      "keyline": "배터리 점수와 추세",
+      "keyline": "성능 수명 체크 · 충전 속도 · 완충 알림 · 위젯",
       "duration": 13.5,
       "compliance": {
         "store_claims_ok": true,
@@ -16807,7 +16807,7 @@
         "充電區間",
         "充電速率"
       ],
-      "keyline": "電池打分數 看趨勢",
+      "keyline": "電池壽命檢測・電池分析・充電提醒",
       "duration": 13.5,
       "compliance": {
         "store_claims_ok": true,
@@ -17009,7 +17009,7 @@
         "注音拼音",
         "拼音練習"
       ],
-      "keyline": "學注音符號遊戲",
+      "keyline": "注音遊戲：聽音、描寫、拼音",
       "duration": 13.5,
       "compliance": {
         "store_claims_ok": true,
@@ -17530,7 +17530,7 @@
         "画像修復",
         "写真修正"
       ],
-      "keyline": "写真高画質化・ぼやけ補正・古い写真の復元",
+      "keyline": "古い写真の復元・ぼやけ補正",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -17889,7 +17889,7 @@
         "routine",
         "reminder"
       ],
-      "keyline": "To-Do List Widget & Chores",
+      "keyline": "Kawaii To-Do List & Chores",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -17946,7 +17946,7 @@
         "hábitos",
         "rotina"
       ],
-      "keyline": "Lista de tarefas e checklist",
+      "keyline": "Tarefas fofas e checklist",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -18003,7 +18003,7 @@
         "予定",
         "メモ"
       ],
-      "keyline": "やることリスト・チェックリスト・ウィジェット",
+      "keyline": "やることリストをかわいく整える",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -18060,7 +18060,7 @@
         "습관",
         "루틴"
       ],
-      "keyline": "할 일 목록, 데일리 플래너, 위젯",
+      "keyline": "포근한 플래너로 하루 정리",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -18095,6 +18095,84 @@
     }
   },
   "seo": {
+    "duowallpaperstudio": {
+      "en": {
+        "keywords": [
+          "cute",
+          "lock",
+          "home",
+          "background",
+          "photo",
+          "maker"
+        ],
+        "keyline": "cute · lock · home",
+        "tags": [
+          "#Cute",
+          "#Lock",
+          "#Home",
+          "#Background",
+          "#Photo",
+          "#FoldableWallpaperStudio"
+        ]
+      },
+      "zh-Hant": {
+        "keywords": [
+          "鎖定畫面",
+          "鎖屏",
+          "壁紙",
+          "桌面",
+          "背景",
+          "可愛"
+        ],
+        "keyline": "鎖定畫面 · 鎖屏 · 壁紙",
+        "tags": [
+          "#鎖定畫面",
+          "#鎖屏",
+          "#壁紙",
+          "#桌面",
+          "#背景",
+          "#FoldableWallpaperStudio"
+        ]
+      },
+      "ja": {
+        "keywords": [
+          "かわいい",
+          "可愛い",
+          "おしゃれ",
+          "シンプル",
+          "高画質",
+          "待ち受け"
+        ],
+        "keyline": "かわいい · 可愛い · おしゃれ",
+        "tags": [
+          "#かわいい",
+          "#可愛い",
+          "#おしゃれ",
+          "#シンプル",
+          "#高画質",
+          "#FoldableWallpaperStudio"
+        ]
+      },
+      "ko": {
+        "keywords": [
+          "바탕화면",
+          "만들기",
+          "사이즈",
+          "고화질",
+          "잠금화면",
+          "홈화면"
+        ],
+        "keyline": "폴더블 배경화면 커버·메인 세트, 위젯 폰꾸미기",
+        "tags": [
+          "#바탕화면",
+          "#만들기",
+          "#사이즈",
+          "#고화질",
+          "#잠금화면",
+          "#FoldableWallpaperStudio"
+        ]
+      }
+    },
     "gbago": {
       "en": {
         "keywords": [
@@ -18105,7 +18183,7 @@
           "backup",
           "checksum"
         ],
-        "keyline": "Retro Emulator · Recovery Map",
+        "keyline": "Visual Saves",
         "tags": [
           "#VisualSaves",
           "#Emulator",
@@ -18124,7 +18202,7 @@
           "快轉",
           "手把"
         ],
-        "keyline": "模擬器 · 即時存檔 · 自動快照",
+        "keyline": "視覺存檔",
         "tags": [
           "#視覺存檔",
           "#模擬器",
@@ -18143,7 +18221,7 @@
           "カセット",
           "連射"
         ],
-        "keyline": "エミュレーター · 自動スナップショット",
+        "keyline": "見えるセーブ",
         "tags": [
           "#見えるセーブ",
           "#エミュレータ",
@@ -18162,7 +18240,7 @@
           "복원",
           "카트리지"
         ],
-        "keyline": "에뮬레이터 · 자동 스냅샷 · 빠른 저장",
+        "keyline": "비주얼 세이브",
         "tags": [
           "#비주얼세이브",
           "#에뮬레이터",
@@ -18183,9 +18261,9 @@
           "アルバム整理",
           "ギャラリー整理"
         ],
-        "keyline": "写真整理・容量を軽くする",
+        "keyline": "写真整理・重複削除",
         "tags": [
-          "#写真整理容量を軽くする",
+          "#写真整理重複削除",
           "#空き容量",
           "#重複写真",
           "#類似写真",
@@ -18686,7 +18764,8 @@
       "date": "2026-10-24",
       "slot": 9,
       "channel": "telegram",
-      "clip": "battai_t10/ko"
+      "clip": "onepageppt/de",
+      "sprint": true
     },
     {
       "date": "2026-10-24",
@@ -18726,13 +18805,13 @@
       "date": "2026-10-25",
       "slot": 1,
       "channel": "threads",
-      "clip": "hourstaglite/zh-Hant"
+      "clip": "lumibopomofo/zh-Hant"
     },
     {
       "date": "2026-10-25",
       "slot": 9,
       "channel": "telegram",
-      "clip": "cyca/zh-Hant"
+      "clip": "battai_t10/ko"
     },
     {
       "date": "2026-10-25",
@@ -18744,7 +18823,7 @@
       "date": "2026-10-25",
       "slot": 15,
       "channel": "telegram",
-      "clip": "aim990/en"
+      "clip": "cyca/en"
     },
     {
       "date": "2026-10-25",
@@ -18778,7 +18857,7 @@
       "date": "2026-10-26",
       "slot": 1,
       "channel": "threads",
-      "clip": "lumibopomofo_b/zh-Hant"
+      "clip": "hourstaglite/zh-Hant"
     },
     {
       "date": "2026-10-26",
@@ -18790,13 +18869,13 @@
       "date": "2026-10-26",
       "slot": 12,
       "channel": "telegram",
-      "clip": "onepageppt/zh-Hant"
+      "clip": "aim990/zh-Hant"
     },
     {
       "date": "2026-10-26",
       "slot": 15,
       "channel": "telegram",
-      "clip": "unblurry/en"
+      "clip": "notesstudio100/en"
     },
     {
       "date": "2026-10-26",
@@ -18830,25 +18909,25 @@
       "date": "2026-10-27",
       "slot": 1,
       "channel": "threads",
-      "clip": "countdaysnow/zh-Hant"
+      "clip": "lumibopomofo_b/zh-Hant"
     },
     {
       "date": "2026-10-27",
       "slot": 9,
       "channel": "telegram",
-      "clip": "battai/ko"
+      "clip": "unblurry/ja"
     },
     {
       "date": "2026-10-27",
       "slot": 12,
       "channel": "telegram",
-      "clip": "lumiletters_t10/zh-Hant"
+      "clip": "onepageppt/zh-Hant"
     },
     {
       "date": "2026-10-27",
       "slot": 15,
       "channel": "telegram",
-      "clip": "notesstudio100/en"
+      "clip": "dbhalo/en"
     },
     {
       "date": "2026-10-27",
@@ -18882,25 +18961,25 @@
       "date": "2026-10-28",
       "slot": 1,
       "channel": "threads",
-      "clip": "lumibopomofo_t10/zh-Hant"
+      "clip": "countdaysnow/zh-Hant"
     },
     {
       "date": "2026-10-28",
       "slot": 9,
       "channel": "telegram",
-      "clip": "cyca/en"
+      "clip": "battai/ko"
     },
     {
       "date": "2026-10-28",
       "slot": 12,
       "channel": "telegram",
-      "clip": "aim990_t10b/vi"
+      "clip": "cyca/zh-Hant"
     },
     {
       "date": "2026-10-28",
       "slot": 15,
       "channel": "telegram",
-      "clip": "dbhalo/en"
+      "clip": "lumiletterspro/en"
     },
     {
       "date": "2026-10-28",
@@ -18913,13 +18992,13 @@
       "date": "2026-10-28",
       "slot": 18,
       "channel": "telegram",
-      "clip": "lumiletterspro/en"
+      "clip": "lumimissionpro/en"
     },
     {
       "date": "2026-10-28",
       "slot": 22,
       "channel": "telegram",
-      "clip": "lumimissionpro/en"
+      "clip": "photocream/en"
     },
     {
       "date": "2026-10-29",
@@ -18938,13 +19017,13 @@
       "date": "2026-10-29",
       "slot": 1,
       "channel": "threads",
-      "clip": "countdaysnow_b/zh-Hant"
+      "clip": "lumibopomofo_t10/zh-Hant"
     },
     {
       "date": "2026-10-29",
       "slot": 9,
       "channel": "telegram",
-      "clip": "onepageppt/de",
+      "clip": "maskmyfile/cs",
       "sprint": true
     },
     {
@@ -18957,7 +19036,7 @@
       "date": "2026-10-29",
       "slot": 15,
       "channel": "telegram",
-      "clip": "unblurry_b/en"
+      "clip": "aim990_t10/fr"
     },
     {
       "date": "2026-10-29",
@@ -18970,13 +19049,13 @@
       "date": "2026-10-29",
       "slot": 18,
       "channel": "telegram",
-      "clip": "photocream/en"
+      "clip": "picclear/en"
     },
     {
       "date": "2026-10-29",
       "slot": 22,
       "channel": "telegram",
-      "clip": "picclear/en"
+      "clip": "savetag/en"
     },
     {
       "date": "2026-10-30",
@@ -18989,32 +19068,32 @@
       "date": "2026-10-30",
       "slot": 1,
       "channel": "telegram",
-      "clip": "lumibopomofo_b/ja"
+      "clip": "mochidonestamp/zh-Hant",
+      "sprint": true
     },
     {
       "date": "2026-10-30",
       "slot": 1,
       "channel": "threads",
-      "clip": "easyam/zh-Hant"
+      "clip": "countdaysnow_b/zh-Hant"
     },
     {
       "date": "2026-10-30",
       "slot": 9,
       "channel": "telegram",
-      "clip": "maskmyfile/cs",
-      "sprint": true
+      "clip": "notesstudio100/ar"
     },
     {
       "date": "2026-10-30",
       "slot": 12,
       "channel": "telegram",
-      "clip": "battai_t10b/zh-Hant"
+      "clip": "unblurry_b/ja"
     },
     {
       "date": "2026-10-30",
       "slot": 15,
       "channel": "telegram",
-      "clip": "lumiletters/ar"
+      "clip": "sereno/en"
     },
     {
       "date": "2026-10-30",
@@ -19027,13 +19106,13 @@
       "date": "2026-10-30",
       "slot": 18,
       "channel": "telegram",
-      "clip": "savetag/en"
+      "clip": "sononote/en"
     },
     {
       "date": "2026-10-30",
       "slot": 22,
       "channel": "telegram",
-      "clip": "sereno/en"
+      "clip": "wifiaid/en"
     },
     {
       "date": "2026-10-31",
@@ -19046,32 +19125,32 @@
       "date": "2026-10-31",
       "slot": 1,
       "channel": "telegram",
-      "clip": "mochidonestamp/zh-Hant",
-      "sprint": true
+      "clip": "lumibopomofo_b/ja"
     },
     {
       "date": "2026-10-31",
       "slot": 1,
       "channel": "threads",
-      "clip": "claudeusagemini_b/zh-Hant"
+      "clip": "easyam/zh-Hant"
     },
     {
       "date": "2026-10-31",
       "slot": 9,
       "channel": "telegram",
-      "clip": "cyca/ja"
+      "clip": "lumimission/el",
+      "sprint": true
     },
     {
       "date": "2026-10-31",
       "slot": 12,
       "channel": "telegram",
-      "clip": "aim990/zh-Hant"
+      "clip": "battai_t10b/zh-Hant"
     },
     {
       "date": "2026-10-31",
       "slot": 15,
       "channel": "telegram",
-      "clip": "notesstudio100/ar"
+      "clip": "aibriefpack/en"
     },
     {
       "date": "2026-10-31",
@@ -19084,13 +19163,13 @@
       "date": "2026-10-31",
       "slot": 18,
       "channel": "telegram",
-      "clip": "sononote/en"
+      "clip": "caldaily/en"
     },
     {
       "date": "2026-10-31",
       "slot": 22,
       "channel": "telegram",
-      "clip": "wifiaid/en"
+      "clip": "dailymate/en"
     },
     {
       "date": "2026-11-01",
@@ -19102,19 +19181,19 @@
       "date": "2026-11-01",
       "slot": 1,
       "channel": "telegram",
-      "clip": "lumibopomofo/vi"
+      "clip": "hourstaglite/zh-Hant"
     },
     {
       "date": "2026-11-01",
       "slot": 1,
       "channel": "threads",
-      "clip": "onepageppt/zh-Hant"
+      "clip": "claudeusagemini_b/zh-Hant"
     },
     {
       "date": "2026-11-01",
       "slot": 9,
       "channel": "telegram",
-      "clip": "lumimission/el",
+      "clip": "maskmyfile/pl",
       "sprint": true
     },
     {
@@ -19127,7 +19206,7 @@
       "date": "2026-11-01",
       "slot": 15,
       "channel": "telegram",
-      "clip": "unblurry/pt-BR"
+      "clip": "aim990/en"
     },
     {
       "date": "2026-11-01",
@@ -19140,13 +19219,13 @@
       "date": "2026-11-01",
       "slot": 18,
       "channel": "telegram",
-      "clip": "aibriefpack/en"
+      "clip": "gmoney/en"
     },
     {
       "date": "2026-11-01",
       "slot": 22,
       "channel": "telegram",
-      "clip": "caldaily/en"
+      "clip": "lumibopomofopro/en"
     },
     {
       "date": "2026-11-02",
@@ -19159,32 +19238,31 @@
       "date": "2026-11-02",
       "slot": 1,
       "channel": "telegram",
-      "clip": "hourstaglite/zh-Hant"
+      "clip": "lumibopomofo/vi"
     },
     {
       "date": "2026-11-02",
       "slot": 1,
       "channel": "threads",
-      "clip": "mochi/zh-Hant"
+      "clip": "onepageppt/zh-Hant"
     },
     {
       "date": "2026-11-02",
       "slot": 9,
       "channel": "telegram",
-      "clip": "maskmyfile/pl",
-      "sprint": true
+      "clip": "cyca/ja"
     },
     {
       "date": "2026-11-02",
       "slot": 12,
       "channel": "telegram",
-      "clip": "battai/zh-Hant"
+      "clip": "notesstudio100/zh-Hant"
     },
     {
       "date": "2026-11-02",
       "slot": 15,
       "channel": "telegram",
-      "clip": "lumiletters/en"
+      "clip": "unblurry/en"
     },
     {
       "date": "2026-11-02",
@@ -19203,7 +19281,7 @@
       "date": "2026-11-02",
       "slot": 22,
       "channel": "telegram",
-      "clip": "dailymate/en"
+      "clip": "shotinbox/en"
     },
     {
       "date": "2026-11-03",
@@ -19215,31 +19293,31 @@
       "date": "2026-11-03",
       "slot": 1,
       "channel": "telegram",
-      "clip": "lumibopomofo_b/ko"
+      "clip": "countdaysnow/zh-Hant"
     },
     {
       "date": "2026-11-03",
       "slot": 1,
       "channel": "threads",
-      "clip": "battai/zh-Hant"
+      "clip": "mochi/zh-Hant"
     },
     {
       "date": "2026-11-03",
       "slot": 9,
       "channel": "telegram",
-      "clip": "cyca/ko"
+      "clip": "battai/zh-Hant"
     },
     {
       "date": "2026-11-03",
       "slot": 12,
       "channel": "telegram",
-      "clip": "notesstudio100/zh-Hant"
+      "clip": "lumiletters_t10/zh-Hant"
     },
     {
       "date": "2026-11-03",
       "slot": 15,
       "channel": "telegram",
-      "clip": "aim990_t10/fr"
+      "clip": "tripbeelite/en"
     },
     {
       "date": "2026-11-03",
@@ -19252,13 +19330,13 @@
       "date": "2026-11-03",
       "slot": 18,
       "channel": "telegram",
-      "clip": "gmoney/en"
+      "clip": "zipbox/en"
     },
     {
       "date": "2026-11-03",
       "slot": 22,
       "channel": "telegram",
-      "clip": "lumibopomofopro/en"
+      "clip": "tripplanet/en"
     },
     {
       "date": "2026-11-04",
@@ -19270,13 +19348,13 @@
       "date": "2026-11-04",
       "slot": 1,
       "channel": "telegram",
-      "clip": "countdaysnow/zh-Hant"
+      "clip": "lumibopomofo_b/ko"
     },
     {
       "date": "2026-11-04",
       "slot": 1,
       "channel": "threads",
-      "clip": "cyca/zh-Hant"
+      "clip": "battai/zh-Hant"
     },
     {
       "date": "2026-11-04",
@@ -19288,13 +19366,13 @@
       "date": "2026-11-04",
       "slot": 12,
       "channel": "telegram",
-      "clip": "unblurry_b/ja"
+      "clip": "aim990_t10b/vi"
     },
     {
       "date": "2026-11-04",
       "slot": 15,
       "channel": "telegram",
-      "clip": "shotinbox/en"
+      "clip": "wifiaidlite/en"
     },
     {
       "date": "2026-11-04",
@@ -19307,13 +19385,13 @@
       "date": "2026-11-04",
       "slot": 18,
       "channel": "telegram",
-      "clip": "tripbeelite/en"
+      "clip": "snapport_b/en"
     },
     {
       "date": "2026-11-04",
       "slot": 22,
       "channel": "telegram",
-      "clip": "zipbox/en"
+      "clip": "lumiweather/en"
     },
     {
       "date": "2026-11-05",
@@ -19325,31 +19403,31 @@
       "date": "2026-11-05",
       "slot": 1,
       "channel": "telegram",
-      "clip": "lumibopomofo_t10/zh-Hant"
+      "clip": "countdaysnow_b/zh-Hant"
     },
     {
       "date": "2026-11-05",
       "slot": 1,
       "channel": "threads",
-      "clip": "mochi_b/zh-Hant"
+      "clip": "cyca/zh-Hant"
     },
     {
       "date": "2026-11-05",
       "slot": 9,
       "channel": "telegram",
-      "clip": "battai/en"
+      "clip": "cyca/ko"
     },
     {
       "date": "2026-11-05",
       "slot": 12,
       "channel": "telegram",
-      "clip": "lumiletters/ja"
+      "clip": "notesstudio100/ja"
     },
     {
       "date": "2026-11-05",
       "slot": 15,
       "channel": "telegram",
-      "clip": "sereno_baby/en"
+      "clip": "unblurry_b/en"
     },
     {
       "date": "2026-11-05",
@@ -19362,13 +19440,13 @@
       "date": "2026-11-05",
       "slot": 18,
       "channel": "telegram",
-      "clip": "tripplanet/en"
+      "clip": "sereno_baby/en"
     },
     {
       "date": "2026-11-05",
       "slot": 22,
       "channel": "telegram",
-      "clip": "wifiaidlite/en"
+      "clip": "stayclock/en"
     },
     {
       "date": "2026-11-06",
@@ -19380,25 +19458,25 @@
       "date": "2026-11-06",
       "slot": 1,
       "channel": "telegram",
-      "clip": "countdaysnow_b/zh-Hant"
+      "clip": "lumibopomofo_t10/zh-Hant"
     },
     {
       "date": "2026-11-06",
       "slot": 1,
       "channel": "threads",
-      "clip": "battai_t10b/zh-Hant"
+      "clip": "mochi_b/zh-Hant"
     },
     {
       "date": "2026-11-06",
       "slot": 9,
       "channel": "telegram",
-      "clip": "cyca/id"
+      "clip": "battai/en"
     },
     {
       "date": "2026-11-06",
       "slot": 12,
       "channel": "telegram",
-      "clip": "aim990/ja"
+      "clip": "lumiletters/ja"
     },
     {
       "date": "2026-11-06",
@@ -19417,13 +19495,13 @@
       "date": "2026-11-06",
       "slot": 18,
       "channel": "telegram",
-      "clip": "snapport_b/en"
+      "clip": "wordmatelite/en"
     },
     {
       "date": "2026-11-06",
       "slot": 22,
       "channel": "telegram",
-      "clip": "lumiweather/en"
+      "clip": "moneytag/en"
     },
     {
       "date": "2026-11-07",
@@ -19435,31 +19513,31 @@
       "date": "2026-11-07",
       "slot": 1,
       "channel": "telegram",
-      "clip": "lumibopomofo_b/vi"
+      "clip": "claudeusagemini_b/ja"
     },
     {
       "date": "2026-11-07",
       "slot": 1,
       "channel": "threads",
-      "clip": "aim990/zh-Hant"
+      "clip": "battai_t10b/zh-Hant"
     },
     {
       "date": "2026-11-07",
       "slot": 9,
       "channel": "telegram",
-      "clip": "claudeusagemini_b/fr"
+      "clip": "aim990/ja"
     },
     {
       "date": "2026-11-07",
       "slot": 12,
       "channel": "telegram",
-      "clip": "unblurry/ja"
+      "clip": "dbhalo/zh-Hant"
     },
     {
       "date": "2026-11-07",
       "slot": 15,
       "channel": "telegram",
-      "clip": "stayclock/en"
+      "clip": "snapport/en"
     },
     {
       "date": "2026-11-07",
@@ -19472,13 +19550,13 @@
       "date": "2026-11-07",
       "slot": 18,
       "channel": "telegram",
-      "clip": "wordmatelite/en"
+      "clip": "tripbee/en"
     },
     {
       "date": "2026-11-07",
       "slot": 22,
       "channel": "telegram",
-      "clip": "moneytag/en"
+      "clip": "maskmyfile/en"
     },
     {
       "date": "2026-11-08",
@@ -19490,31 +19568,31 @@
       "date": "2026-11-08",
       "slot": 1,
       "channel": "telegram",
-      "clip": "lumiletters/ko"
+      "clip": "lumibopomofo_b/vi"
     },
     {
       "date": "2026-11-08",
       "slot": 1,
       "channel": "threads",
-      "clip": "unblurry/zh-Hant"
+      "clip": "aim990/zh-Hant"
     },
     {
       "date": "2026-11-08",
       "slot": 9,
       "channel": "telegram",
-      "clip": "notesstudio100/ja"
+      "clip": "cyca/id"
     },
     {
       "date": "2026-11-08",
       "slot": 12,
       "channel": "telegram",
-      "clip": "dbhalo/zh-Hant"
+      "clip": "notesstudio100/ko"
     },
     {
       "date": "2026-11-08",
       "slot": 15,
       "channel": "telegram",
-      "clip": "sereno_storm/en"
+      "clip": "unblurry/pt-BR"
     },
     {
       "date": "2026-11-08",
@@ -19527,7 +19605,7 @@
       "date": "2026-11-08",
       "slot": 18,
       "channel": "telegram",
-      "clip": "maskmyfile/en"
+      "clip": "sereno_storm/en"
     },
     {
       "date": "2026-11-08",
@@ -19545,19 +19623,19 @@
       "date": "2026-11-09",
       "slot": 1,
       "channel": "telegram",
-      "clip": "cyca/vi"
+      "clip": "lumiletters/ko"
     },
     {
       "date": "2026-11-09",
       "slot": 1,
       "channel": "threads",
-      "clip": "lumiletters/zh-Hant"
+      "clip": "notesstudio100/zh-Hant"
     },
     {
       "date": "2026-11-09",
       "slot": 9,
       "channel": "telegram",
-      "clip": "aim990/ko"
+      "clip": "photocream/cs"
     },
     {
       "date": "2026-11-09",
@@ -19569,19 +19647,19 @@
       "date": "2026-11-09",
       "slot": 15,
       "channel": "telegram",
-      "clip": "snapport/en"
+      "clip": "lockhour/en"
     },
     {
       "date": "2026-11-09",
       "slot": 18,
       "channel": "telegram",
-      "clip": "tripbee/en"
+      "clip": "cvdesk/en"
     },
     {
       "date": "2026-11-09",
       "slot": 22,
       "channel": "telegram",
-      "clip": "lockhour/en"
+      "clip": "mochidonestamp/en"
     },
     {
       "date": "2026-11-10",
@@ -19593,13 +19671,13 @@
       "date": "2026-11-10",
       "slot": 1,
       "channel": "telegram",
-      "clip": "unblurry_b/zh-Hant"
+      "clip": "aim990/ko"
     },
     {
       "date": "2026-11-10",
       "slot": 1,
       "channel": "threads",
-      "clip": "notesstudio100/zh-Hant"
+      "clip": "unblurry/zh-Hant"
     },
     {
       "date": "2026-11-10",
@@ -19617,19 +19695,19 @@
       "date": "2026-11-10",
       "slot": 15,
       "channel": "telegram",
-      "clip": "lumibopomofo_b/en"
+      "clip": "snapport_b/de"
     },
     {
       "date": "2026-11-10",
       "slot": 18,
       "channel": "telegram",
-      "clip": "cvdesk/en"
+      "clip": "lumimathpro/en"
     },
     {
       "date": "2026-11-10",
       "slot": 22,
       "channel": "telegram",
-      "clip": "mochidonestamp/en"
+      "clip": "lumimission_b/en"
     },
     {
       "date": "2026-11-11",
@@ -19641,19 +19719,19 @@
       "date": "2026-11-11",
       "slot": 1,
       "channel": "telegram",
-      "clip": "notesstudio100/ko"
+      "clip": "cyca/vi"
     },
     {
       "date": "2026-11-11",
       "slot": 1,
       "channel": "threads",
-      "clip": "unblurry_b/zh-Hant"
+      "clip": "lumiletters/zh-Hant"
     },
     {
       "date": "2026-11-11",
       "slot": 9,
       "channel": "telegram",
-      "clip": "photocream/cs"
+      "clip": "unblurry_b/nl"
     },
     {
       "date": "2026-11-11",
@@ -19665,19 +19743,19 @@
       "date": "2026-11-11",
       "slot": 15,
       "channel": "telegram",
-      "clip": "lumimathpro/en"
+      "clip": "lumibopomofo_b/en"
     },
     {
       "date": "2026-11-11",
       "slot": 18,
       "channel": "telegram",
-      "clip": "lumimission_b/en"
+      "clip": "lumimath/en"
     },
     {
       "date": "2026-11-11",
       "slot": 22,
       "channel": "telegram",
-      "clip": "lumimath/en"
+      "clip": "snapportlite/en"
     },
     {
       "date": "2026-11-12",
@@ -19689,43 +19767,43 @@
       "date": "2026-11-12",
       "slot": 1,
       "channel": "telegram",
-      "clip": "aim990/id"
+      "clip": "photocream/zh-Hant"
     },
     {
       "date": "2026-11-12",
       "slot": 1,
       "channel": "threads",
-      "clip": "lumiletters_t10/zh-Hant"
+      "clip": "dbhalo/zh-Hant"
     },
     {
       "date": "2026-11-12",
       "slot": 9,
       "channel": "telegram",
-      "clip": "savetag/cs"
+      "clip": "lumiletters/ar"
     },
     {
       "date": "2026-11-12",
       "slot": 12,
       "channel": "telegram",
-      "clip": "sereno/zh-Hant"
+      "clip": "savetag/zh-Hant"
     },
     {
       "date": "2026-11-12",
       "slot": 15,
       "channel": "telegram",
-      "clip": "snapport_b/de"
+      "clip": "lockhour_b/en"
     },
     {
       "date": "2026-11-12",
       "slot": 18,
       "channel": "telegram",
-      "clip": "lockhour_b/en"
+      "clip": "cvdesk_t10/en"
     },
     {
       "date": "2026-11-12",
       "slot": 22,
       "channel": "telegram",
-      "clip": "snapportlite/en"
+      "clip": "dailymatelite/en"
     },
     {
       "date": "2026-11-13",
@@ -19737,37 +19815,37 @@
       "date": "2026-11-13",
       "slot": 1,
       "channel": "telegram",
-      "clip": "claudeusagemini_b/ja"
+      "clip": "claudeusagemini_b/ko"
     },
     {
       "date": "2026-11-13",
       "slot": 1,
       "channel": "threads",
-      "clip": "dbhalo/zh-Hant"
+      "clip": "unblurry_b/zh-Hant"
     },
     {
       "date": "2026-11-13",
       "slot": 9,
       "channel": "telegram",
-      "clip": "unblurry/nl"
+      "clip": "aim990/id"
     },
     {
       "date": "2026-11-13",
       "slot": 12,
       "channel": "telegram",
-      "clip": "sononote/zh-Hant"
+      "clip": "sereno/zh-Hant"
     },
     {
       "date": "2026-11-13",
       "slot": 15,
       "channel": "telegram",
-      "clip": "cvdesk_t10/en"
+      "clip": "snapport/fr"
     },
     {
       "date": "2026-11-13",
       "slot": 18,
       "channel": "telegram",
-      "clip": "dailymatelite/en"
+      "clip": "lumimission/en"
     },
     {
       "date": "2026-11-13",
@@ -19785,13 +19863,13 @@
       "date": "2026-11-14",
       "slot": 1,
       "channel": "telegram",
-      "clip": "photocream/zh-Hant"
+      "clip": "unblurry/zh-Hant"
     },
     {
       "date": "2026-11-14",
       "slot": 1,
       "channel": "threads",
-      "clip": "lumiletterspro/zh-Hant"
+      "clip": "lumiletters_t10/zh-Hant"
     },
     {
       "date": "2026-11-14",
@@ -19803,13 +19881,13 @@
       "date": "2026-11-14",
       "slot": 12,
       "channel": "telegram",
-      "clip": "wifiaid/zh-Hant"
+      "clip": "sononote/zh-Hant"
     },
     {
       "date": "2026-11-14",
       "slot": 15,
       "channel": "telegram",
-      "clip": "lumimission/en"
+      "clip": "snapportlite_b/en"
     },
     {
       "date": "2026-11-14",
@@ -19833,7 +19911,7 @@
       "date": "2026-11-15",
       "slot": 1,
       "channel": "telegram",
-      "clip": "snapportlite_b/zh-Hant"
+      "clip": "wifiaid/zh-Hant"
     },
     {
       "date": "2026-11-15",
@@ -19845,19 +19923,19 @@
       "date": "2026-11-15",
       "slot": 9,
       "channel": "telegram",
-      "clip": "aim990/vi"
+      "clip": "lumiletters/en"
     },
     {
       "date": "2026-11-15",
       "slot": 12,
       "channel": "telegram",
-      "clip": "savetag/zh-Hant"
+      "clip": "aibriefpack/zh-Hant"
     },
     {
       "date": "2026-11-15",
       "slot": 15,
       "channel": "telegram",
-      "clip": "snapport/fr"
+      "clip": "ledmovingtext_b/de"
     },
     {
       "date": "2026-11-15",
@@ -19881,13 +19959,13 @@
       "date": "2026-11-16",
       "slot": 1,
       "channel": "telegram",
-      "clip": "unblurry_b/ko"
+      "clip": "snapportlite/ja"
     },
     {
       "date": "2026-11-16",
       "slot": 1,
       "channel": "threads",
-      "clip": "lumimissionpro/zh-Hant"
+      "clip": "lumiletterspro/zh-Hant"
     },
     {
       "date": "2026-11-16",
@@ -19899,11 +19977,17 @@
       "date": "2026-11-16",
       "slot": 12,
       "channel": "telegram",
-      "clip": "aibriefpack/zh-Hant"
+      "clip": "aim990/vi"
     },
     {
       "date": "2026-11-16",
       "slot": 15,
+      "channel": "telegram",
+      "clip": "snapport_b/fr"
+    },
+    {
+      "date": "2026-11-16",
+      "slot": 18,
       "channel": "telegram",
       "clip": "gmoneylite_b/en"
     },
@@ -19924,7 +20008,7 @@
       "date": "2026-11-17",
       "slot": 1,
       "channel": "telegram",
-      "clip": "snapportlite/ja"
+      "clip": "easyam/zh-Hant"
     },
     {
       "date": "2026-11-17",
@@ -19936,7 +20020,7 @@
       "date": "2026-11-17",
       "slot": 9,
       "channel": "telegram",
-      "clip": "shotinbox/de"
+      "clip": "unblurry_b/da"
     },
     {
       "date": "2026-11-17",
@@ -19947,12 +20031,6 @@
     {
       "date": "2026-11-17",
       "slot": 15,
-      "channel": "telegram",
-      "clip": "ledmovingtext_b/de"
-    },
-    {
-      "date": "2026-11-17",
-      "slot": 18,
       "channel": "telegram",
       "clip": "countdaysnow_b/en"
     },
@@ -19973,25 +20051,31 @@
       "date": "2026-11-18",
       "slot": 1,
       "channel": "telegram",
-      "clip": "easyam/zh-Hant"
+      "clip": "snapportlite_b/zh-Hant"
     },
     {
       "date": "2026-11-18",
       "slot": 1,
       "channel": "threads",
-      "clip": "photocream/zh-Hant"
+      "clip": "lumimissionpro/zh-Hant"
     },
     {
       "date": "2026-11-18",
       "slot": 9,
       "channel": "telegram",
-      "clip": "snapport_b/fr"
+      "clip": "savetag/cs"
     },
     {
       "date": "2026-11-18",
       "slot": 12,
       "channel": "telegram",
       "clip": "dailymate/zh-Hant"
+    },
+    {
+      "date": "2026-11-18",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "ledmovingtext/en"
     },
     {
       "date": "2026-11-18",
@@ -20010,25 +20094,31 @@
       "date": "2026-11-19",
       "slot": 1,
       "channel": "telegram",
-      "clip": "claudeusagemini_b/ko"
+      "clip": "gmoney/zh-Hant"
     },
     {
       "date": "2026-11-19",
       "slot": 1,
       "channel": "threads",
-      "clip": "picclear/zh-Hant"
+      "clip": "photocream/zh-Hant"
     },
     {
       "date": "2026-11-19",
       "slot": 9,
       "channel": "telegram",
-      "clip": "unblurry/da"
+      "clip": "claudeusagemini_b/fr"
     },
     {
       "date": "2026-11-19",
       "slot": 12,
       "channel": "telegram",
-      "clip": "gmoney/zh-Hant"
+      "clip": "lumibopomofopro/zh-Hant"
+    },
+    {
+      "date": "2026-11-19",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "snapport/es"
     },
     {
       "date": "2026-11-19",
@@ -20047,37 +20137,25 @@
       "date": "2026-11-20",
       "slot": 1,
       "channel": "telegram",
-      "clip": "lumibopomofopro/zh-Hant"
+      "clip": "unblurry/ko"
     },
     {
       "date": "2026-11-20",
       "slot": 1,
       "channel": "threads",
-      "clip": "savetag/zh-Hant"
+      "clip": "picclear/zh-Hant"
     },
     {
       "date": "2026-11-20",
       "slot": 9,
       "channel": "telegram",
-      "clip": "lumiweather/ja"
+      "clip": "shotinbox/de"
     },
     {
       "date": "2026-11-20",
       "slot": 12,
       "channel": "telegram",
-      "clip": "shotinbox/zh-Hant"
-    },
-    {
-      "date": "2026-11-20",
-      "slot": 15,
-      "channel": "telegram",
-      "clip": "snapportlite_b/en"
-    },
-    {
-      "date": "2026-11-20",
-      "slot": 18,
-      "channel": "telegram",
-      "clip": "ledmovingtext/en"
+      "clip": "tripplanet/zh-Hant"
     },
     {
       "date": "2026-11-20",
@@ -20096,25 +20174,25 @@
       "date": "2026-11-21",
       "slot": 1,
       "channel": "telegram",
-      "clip": "tripplanet/zh-Hant"
+      "clip": "wifiaidlite/zh-Hant"
     },
     {
       "date": "2026-11-21",
       "slot": 1,
       "channel": "threads",
-      "clip": "sereno/zh-Hant"
+      "clip": "savetag/zh-Hant"
     },
     {
       "date": "2026-11-21",
       "slot": 9,
       "channel": "telegram",
-      "clip": "snapport/es"
+      "clip": "wordmate/zh-Hant"
     },
     {
       "date": "2026-11-21",
       "slot": 12,
       "channel": "telegram",
-      "clip": "wifiaidlite/zh-Hant"
+      "clip": "stayclock_t10/ja"
     },
     {
       "date": "2026-11-21",
@@ -20133,13 +20211,13 @@
       "date": "2026-11-22",
       "slot": 1,
       "channel": "telegram",
-      "clip": "unblurry_t10b/ja"
+      "clip": "wordmatelite/zh-Hant"
     },
     {
       "date": "2026-11-22",
       "slot": 1,
       "channel": "threads",
-      "clip": "sononote/zh-Hant"
+      "clip": "sereno/zh-Hant"
     },
     {
       "date": "2026-11-22",
@@ -20151,7 +20229,13 @@
       "date": "2026-11-22",
       "slot": 12,
       "channel": "telegram",
-      "clip": "wordmate/zh-Hant"
+      "clip": "moneytag/zh-Hant"
+    },
+    {
+      "date": "2026-11-22",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "snapport_b/es"
     },
     {
       "date": "2026-11-22",
@@ -20170,25 +20254,25 @@
       "date": "2026-11-23",
       "slot": 1,
       "channel": "telegram",
-      "clip": "lumiweather/ko"
+      "clip": "unblurry_b/zh-Hant"
     },
     {
       "date": "2026-11-23",
       "slot": 1,
       "channel": "threads",
-      "clip": "wifiaid/zh-Hant"
+      "clip": "sononote/zh-Hant"
     },
     {
       "date": "2026-11-23",
       "slot": 9,
       "channel": "telegram",
-      "clip": "stayclock_t10/ja"
+      "clip": "tripbee_t10/id"
     },
     {
       "date": "2026-11-23",
       "slot": 12,
       "channel": "telegram",
-      "clip": "wordmatelite/zh-Hant"
+      "clip": "shotinbox/zh-Hant"
     },
     {
       "date": "2026-11-23",
@@ -20207,19 +20291,19 @@
       "date": "2026-11-24",
       "slot": 1,
       "channel": "telegram",
-      "clip": "moneytag/zh-Hant"
+      "clip": "wordmate/ja"
     },
     {
       "date": "2026-11-24",
       "slot": 1,
       "channel": "threads",
-      "clip": "aibriefpack/zh-Hant"
+      "clip": "wifiaid/zh-Hant"
     },
     {
       "date": "2026-11-24",
       "slot": 9,
       "channel": "telegram",
-      "clip": "snapport_b/es"
+      "clip": "stayclock/de"
     },
     {
       "date": "2026-11-24",
@@ -20244,13 +20328,13 @@
       "date": "2026-11-25",
       "slot": 1,
       "channel": "telegram",
-      "clip": "unblurry/zh-Hant"
+      "clip": "snapport/zh-Hant"
     },
     {
       "date": "2026-11-25",
       "slot": 1,
       "channel": "threads",
-      "clip": "caldaily/zh-Hant"
+      "clip": "aibriefpack/zh-Hant"
     },
     {
       "date": "2026-11-25",
@@ -20268,31 +20352,31 @@
       "date": "2026-11-26",
       "slot": 1,
       "channel": "instagram",
-      "clip": "unblurry/ja"
+      "clip": "notesstudio100/zh-Hant"
     },
     {
       "date": "2026-11-26",
       "slot": 1,
       "channel": "telegram",
-      "clip": "lumiweather/id"
+      "clip": "unblurry_t10b/ja"
     },
     {
       "date": "2026-11-26",
       "slot": 1,
       "channel": "threads",
-      "clip": "dailymate/zh-Hant"
+      "clip": "caldaily/zh-Hant"
     },
     {
       "date": "2026-11-26",
       "slot": 9,
       "channel": "telegram",
-      "clip": "stayclock/de"
+      "clip": "moneytag/cs"
     },
     {
       "date": "2026-11-26",
       "slot": 12,
       "channel": "telegram",
-      "clip": "tripbee_t10/id"
+      "clip": "tripbee/zh-Hant"
     },
     {
       "date": "2026-11-27",
@@ -20304,25 +20388,25 @@
       "date": "2026-11-27",
       "slot": 1,
       "channel": "telegram",
-      "clip": "snapport/zh-Hant"
+      "clip": "wordmate/ko"
     },
     {
       "date": "2026-11-27",
       "slot": 1,
       "channel": "threads",
-      "clip": "gmoney/zh-Hant"
+      "clip": "dailymate/zh-Hant"
     },
     {
       "date": "2026-11-27",
       "slot": 9,
       "channel": "telegram",
-      "clip": "moneytag/cs"
+      "clip": "lumimission_b/el"
     },
     {
       "date": "2026-11-27",
       "slot": 12,
       "channel": "telegram",
-      "clip": "lockhour/zh-Hant"
+      "clip": "stayclock/zh-Hant"
     },
     {
       "date": "2026-11-28",
@@ -20334,55 +20418,55 @@
       "date": "2026-11-28",
       "slot": 1,
       "channel": "telegram",
-      "clip": "cvdesk/zh-Hant"
+      "clip": "snapport/ja"
     },
     {
       "date": "2026-11-28",
       "slot": 1,
       "channel": "threads",
-      "clip": "lumibopomofopro/zh-Hant"
+      "clip": "gmoney/zh-Hant"
     },
     {
       "date": "2026-11-28",
-      "slot": 9,
-      "channel": "telegram",
-      "clip": "unblurry_b/nl"
-    },
-    {
-      "date": "2026-11-28",
-      "slot": 12,
-      "channel": "telegram",
-      "clip": "lumimathpro/zh-Hant"
-    },
-    {
-      "date": "2026-11-29",
-      "slot": 1,
-      "channel": "instagram",
-      "clip": "unblurry_b/ja"
-    },
-    {
-      "date": "2026-11-29",
-      "slot": 1,
-      "channel": "telegram",
-      "clip": "stayclock/zh-Hant"
-    },
-    {
-      "date": "2026-11-29",
-      "slot": 1,
-      "channel": "threads",
-      "clip": "shotinbox/zh-Hant"
-    },
-    {
-      "date": "2026-11-29",
       "slot": 9,
       "channel": "telegram",
       "clip": "scanto/de"
     },
     {
+      "date": "2026-11-28",
+      "slot": 12,
+      "channel": "telegram",
+      "clip": "lockhour/zh-Hant"
+    },
+    {
+      "date": "2026-11-29",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "notesstudio100/ja"
+    },
+    {
+      "date": "2026-11-29",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "unblurry_b/ko"
+    },
+    {
+      "date": "2026-11-29",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "lumibopomofopro/zh-Hant"
+    },
+    {
+      "date": "2026-11-29",
+      "slot": 9,
+      "channel": "telegram",
+      "clip": "tripbee_t10b/zh-Hant"
+    },
+    {
       "date": "2026-11-29",
       "slot": 12,
       "channel": "telegram",
-      "clip": "tripbee/zh-Hant"
+      "clip": "cvdesk/zh-Hant"
     },
     {
       "date": "2026-11-30",
@@ -20394,25 +20478,25 @@
       "date": "2026-11-30",
       "slot": 1,
       "channel": "telegram",
-      "clip": "snapport/ja"
+      "clip": "lumimathpro/zh-Hant"
     },
     {
       "date": "2026-11-30",
       "slot": 1,
       "channel": "threads",
-      "clip": "tripbeelite/zh-Hant"
+      "clip": "shotinbox/zh-Hant"
     },
     {
       "date": "2026-11-30",
       "slot": 9,
       "channel": "telegram",
-      "clip": "lumimission_b/el"
+      "clip": "snapportlite_b/cs"
     },
     {
       "date": "2026-11-30",
       "slot": 12,
       "channel": "telegram",
-      "clip": "lockhour_b/zh-Hant"
+      "clip": "lumimission/zh-Hant"
     },
     {
       "date": "2026-12-01",
@@ -20436,37 +20520,37 @@
       "date": "2026-12-01",
       "slot": 9,
       "channel": "telegram",
-      "clip": "unblurry/nb"
+      "clip": "snapport/ko"
     },
     {
       "date": "2026-12-01",
       "slot": 12,
+      "channel": "telegram",
+      "clip": "lockhour_b/zh-Hant"
+    },
+    {
+      "date": "2026-12-02",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "notesstudio100/ko"
+    },
+    {
+      "date": "2026-12-02",
+      "slot": 1,
       "channel": "telegram",
       "clip": "lumimath/zh-Hant"
     },
     {
       "date": "2026-12-02",
       "slot": 1,
-      "channel": "instagram",
-      "clip": "unblurry/zh-Hant"
-    },
-    {
-      "date": "2026-12-02",
-      "slot": 1,
-      "channel": "telegram",
-      "clip": "tripbee_t10b/zh-Hant"
-    },
-    {
-      "date": "2026-12-02",
-      "slot": 1,
       "channel": "threads",
-      "clip": "zipbox/zh-Hant"
+      "clip": "tripbeelite/zh-Hant"
     },
     {
       "date": "2026-12-02",
       "slot": 9,
       "channel": "telegram",
-      "clip": "snapportlite_b/cs"
+      "clip": "unblurry/nl"
     },
     {
       "date": "2026-12-02",
@@ -20496,13 +20580,13 @@
       "date": "2026-12-03",
       "slot": 9,
       "channel": "telegram",
-      "clip": "snapport/ko"
+      "clip": "hourstaglite/de"
     },
     {
       "date": "2026-12-03",
       "slot": 12,
       "channel": "telegram",
-      "clip": "lumimission/zh-Hant"
+      "clip": "lumimission_b/zh-Hant"
     },
     {
       "date": "2026-12-04",
@@ -20520,13 +20604,7 @@
       "date": "2026-12-04",
       "slot": 1,
       "channel": "threads",
-      "clip": "tripplanet/zh-Hant"
-    },
-    {
-      "date": "2026-12-04",
-      "slot": 9,
-      "channel": "telegram",
-      "clip": "unblurry_b/da"
+      "clip": "zipbox/zh-Hant"
     },
     {
       "date": "2026-12-04",
@@ -20538,7 +20616,7 @@
       "date": "2026-12-05",
       "slot": 1,
       "channel": "instagram",
-      "clip": "unblurry_b/zh-Hant"
+      "clip": "unblurry/ja"
     },
     {
       "date": "2026-12-05",
@@ -20550,13 +20628,13 @@
       "date": "2026-12-05",
       "slot": 1,
       "channel": "threads",
-      "clip": "wifiaidlite/zh-Hant"
+      "clip": "tripplanet/zh-Hant"
     },
     {
       "date": "2026-12-05",
       "slot": 9,
       "channel": "telegram",
-      "clip": "hourstaglite/de"
+      "clip": "unblurry_b/nb"
     },
     {
       "date": "2026-12-05",
@@ -20573,44 +20651,38 @@
     {
       "date": "2026-12-06",
       "slot": 1,
-      "channel": "telegram",
-      "clip": "lumimission_b/zh-Hant"
+      "channel": "threads",
+      "clip": "wifiaidlite/zh-Hant"
     },
     {
       "date": "2026-12-06",
+      "slot": 9,
+      "channel": "telegram",
+      "clip": "hourstaglite_b/de"
+    },
+    {
+      "date": "2026-12-07",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "dbhalo/zh-Hant"
+    },
+    {
+      "date": "2026-12-07",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "ledmovingtext/zh-Hant"
+    },
+    {
+      "date": "2026-12-07",
       "slot": 1,
       "channel": "threads",
       "clip": "snapport/zh-Hant"
     },
     {
-      "date": "2026-12-07",
-      "slot": 1,
-      "channel": "instagram",
-      "clip": "notesstudio100/zh-Hant"
-    },
-    {
-      "date": "2026-12-07",
-      "slot": 1,
-      "channel": "telegram",
-      "clip": "unblurry/ko"
-    },
-    {
-      "date": "2026-12-07",
-      "slot": 1,
-      "channel": "threads",
-      "clip": "lumiweather/zh-Hant"
-    },
-    {
-      "date": "2026-12-07",
-      "slot": 12,
-      "channel": "telegram",
-      "clip": "ledmovingtext/zh-Hant"
-    },
-    {
       "date": "2026-12-08",
       "slot": 1,
       "channel": "instagram",
-      "clip": "unblurry/ko"
+      "clip": "unblurry_b/ja"
     },
     {
       "date": "2026-12-08",
@@ -20622,7 +20694,7 @@
       "date": "2026-12-08",
       "slot": 9,
       "channel": "telegram",
-      "clip": "hourstaglite_b/de"
+      "clip": "unblurry/da"
     },
     {
       "date": "2026-12-09",
@@ -20634,37 +20706,44 @@
       "date": "2026-12-09",
       "slot": 1,
       "channel": "threads",
-      "clip": "stayclock/zh-Hant"
+      "clip": "lumiweather/zh-Hant"
     },
     {
       "date": "2026-12-10",
       "slot": 1,
       "channel": "instagram",
-      "clip": "notesstudio100/ja"
+      "clip": "lumiletterspro/zh-Hant"
     },
     {
       "date": "2026-12-10",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "stayclock/zh-Hant"
+    },
+    {
+      "date": "2026-12-11",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "unblurry/zh-Hant"
+    },
+    {
+      "date": "2026-12-11",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "onepageppt/ja",
+      "variant_repost": true
+    },
+    {
+      "date": "2026-12-11",
       "slot": 1,
       "channel": "threads",
       "clip": "wordmatelite/zh-Hant"
     },
     {
-      "date": "2026-12-10",
-      "slot": 9,
+      "date": "2026-12-11",
+      "slot": 15,
       "channel": "telegram",
-      "clip": "unblurry_b/nb"
-    },
-    {
-      "date": "2026-12-11",
-      "slot": 1,
-      "channel": "instagram",
-      "clip": "unblurry_b/ko"
-    },
-    {
-      "date": "2026-12-11",
-      "slot": 1,
-      "channel": "threads",
-      "clip": "moneytag/zh-Hant"
+      "clip": "unblurry_b/pt-BR"
     },
     {
       "date": "2026-12-12",
@@ -20676,110 +20755,117 @@
       "date": "2026-12-12",
       "slot": 1,
       "channel": "threads",
-      "clip": "maskmyfile/zh-Hant"
+      "clip": "moneytag/zh-Hant"
     },
     {
       "date": "2026-12-13",
-      "slot": 1,
-      "channel": "instagram",
-      "clip": "notesstudio100/ko"
-    },
-    {
-      "date": "2026-12-13",
-      "slot": 1,
-      "channel": "telegram",
-      "clip": "onepageppt/ja",
-      "variant_repost": true
-    },
-    {
-      "date": "2026-12-13",
-      "slot": 1,
-      "channel": "threads",
-      "clip": "scanto/zh-Hant"
-    },
-    {
-      "date": "2026-12-13",
-      "slot": 15,
-      "channel": "telegram",
-      "clip": "unblurry_t10/pt-BR"
-    },
-    {
-      "date": "2026-12-14",
-      "slot": 1,
-      "channel": "instagram",
-      "clip": "unblurry_t10b/ja"
-    },
-    {
-      "date": "2026-12-14",
-      "slot": 1,
-      "channel": "threads",
-      "clip": "tripbee/zh-Hant"
-    },
-    {
-      "date": "2026-12-15",
-      "slot": 1,
-      "channel": "instagram",
-      "clip": "dbhalo/zh-Hant"
-    },
-    {
-      "date": "2026-12-15",
-      "slot": 1,
-      "channel": "threads",
-      "clip": "lockhour/zh-Hant"
-    },
-    {
-      "date": "2026-12-16",
-      "slot": 1,
-      "channel": "instagram",
-      "clip": "lumiletterspro/zh-Hant"
-    },
-    {
-      "date": "2026-12-16",
-      "slot": 1,
-      "channel": "threads",
-      "clip": "cvdesk/zh-Hant"
-    },
-    {
-      "date": "2026-12-16",
-      "slot": 15,
-      "channel": "telegram",
-      "clip": "unblurry_b/pt-BR"
-    },
-    {
-      "date": "2026-12-17",
       "slot": 1,
       "channel": "instagram",
       "clip": "lumimissionpro/zh-Hant"
     },
     {
-      "date": "2026-12-17",
+      "date": "2026-12-13",
       "slot": 1,
       "channel": "threads",
-      "clip": "tripbee_t10b/zh-Hant"
+      "clip": "tripbee/zh-Hant"
     },
     {
-      "date": "2026-12-18",
+      "date": "2026-12-14",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "unblurry_b/zh-Hant"
+    },
+    {
+      "date": "2026-12-14",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "maskmyfile/zh-Hant"
+    },
+    {
+      "date": "2026-12-14",
+      "slot": 9,
+      "channel": "telegram",
+      "clip": "unblurry/nb"
+    },
+    {
+      "date": "2026-12-15",
       "slot": 1,
       "channel": "instagram",
       "clip": "photocream/zh-Hant"
     },
     {
-      "date": "2026-12-18",
+      "date": "2026-12-15",
       "slot": 1,
       "channel": "threads",
-      "clip": "lockhour_b/zh-Hant"
+      "clip": "scanto/zh-Hant"
     },
     {
-      "date": "2026-12-19",
+      "date": "2026-12-16",
       "slot": 1,
       "channel": "instagram",
       "clip": "picclear/zh-Hant"
     },
     {
-      "date": "2026-12-19",
+      "date": "2026-12-16",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "tripbee_t10b/zh-Hant"
+    },
+    {
+      "date": "2026-12-17",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "unblurry/ko"
+    },
+    {
+      "date": "2026-12-17",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "lockhour/zh-Hant"
+    },
+    {
+      "date": "2026-12-17",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "unblurry_t10/pt-BR"
+    },
+    {
+      "date": "2026-12-18",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "savetag/zh-Hant"
+    },
+    {
+      "date": "2026-12-18",
       "slot": 1,
       "channel": "telegram",
       "clip": "tripbeelite/ja",
+      "variant_repost": true
+    },
+    {
+      "date": "2026-12-18",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "cvdesk/zh-Hant"
+    },
+    {
+      "date": "2026-12-18",
+      "slot": 9,
+      "channel": "telegram",
+      "clip": "zipbox/ja",
+      "variant_repost": true
+    },
+    {
+      "date": "2026-12-19",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "sereno/zh-Hant"
+    },
+    {
+      "date": "2026-12-19",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "lumiweather/ja",
       "variant_repost": true
     },
     {
@@ -20789,66 +20875,59 @@
       "clip": "mochidonestamp/zh-Hant"
     },
     {
-      "date": "2026-12-19",
-      "slot": 9,
-      "channel": "telegram",
-      "clip": "zipbox/ja",
-      "variant_repost": true
-    },
-    {
       "date": "2026-12-20",
       "slot": 1,
       "channel": "instagram",
-      "clip": "savetag/zh-Hant"
+      "clip": "unblurry_b/ko"
     },
     {
       "date": "2026-12-20",
       "slot": 1,
       "channel": "threads",
-      "clip": "lumimathpro/zh-Hant"
+      "clip": "lockhour_b/zh-Hant"
     },
     {
       "date": "2026-12-21",
-      "slot": 1,
-      "channel": "instagram",
-      "clip": "sereno/zh-Hant"
-    },
-    {
-      "date": "2026-12-21",
-      "slot": 1,
-      "channel": "threads",
-      "clip": "lumimission/zh-Hant"
-    },
-    {
-      "date": "2026-12-22",
       "slot": 1,
       "channel": "instagram",
       "clip": "sononote/zh-Hant"
     },
     {
-      "date": "2026-12-22",
+      "date": "2026-12-21",
       "slot": 1,
       "channel": "threads",
-      "clip": "lumimath/zh-Hant"
+      "clip": "lumimathpro/zh-Hant"
     },
     {
-      "date": "2026-12-23",
+      "date": "2026-12-22",
       "slot": 1,
       "channel": "instagram",
       "clip": "wifiaid/zh-Hant"
     },
     {
-      "date": "2026-12-23",
+      "date": "2026-12-22",
       "slot": 1,
       "channel": "telegram",
       "clip": "dbhalo/ja",
       "variant_repost": true
     },
     {
+      "date": "2026-12-22",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "lumimission/zh-Hant"
+    },
+    {
+      "date": "2026-12-23",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "unblurry_t10b/ja"
+    },
+    {
       "date": "2026-12-23",
       "slot": 1,
       "channel": "threads",
-      "clip": "dailymatelite/zh-Hant"
+      "clip": "lumimath/zh-Hant"
     },
     {
       "date": "2026-12-24",
@@ -20867,7 +20946,14 @@
       "date": "2026-12-24",
       "slot": 1,
       "channel": "threads",
-      "clip": "lumimission_b/zh-Hant"
+      "clip": "dailymatelite/zh-Hant"
+    },
+    {
+      "date": "2026-12-24",
+      "slot": 9,
+      "channel": "telegram",
+      "clip": "mochidonestamp/ja",
+      "variant_repost": true
     },
     {
       "date": "2026-12-25",
@@ -20886,14 +20972,7 @@
       "date": "2026-12-25",
       "slot": 1,
       "channel": "threads",
-      "clip": "ledmovingtext/zh-Hant"
-    },
-    {
-      "date": "2026-12-25",
-      "slot": 9,
-      "channel": "telegram",
-      "clip": "mochidonestamp/ja",
-      "variant_repost": true
+      "clip": "lumimission_b/zh-Hant"
     },
     {
       "date": "2026-12-26",
@@ -20905,7 +20984,7 @@
       "date": "2026-12-26",
       "slot": 1,
       "channel": "threads",
-      "clip": "hourstag/zh-Hant"
+      "clip": "ledmovingtext/zh-Hant"
     },
     {
       "date": "2026-12-27",
@@ -20917,14 +20996,14 @@
       "date": "2026-12-27",
       "slot": 1,
       "channel": "telegram",
-      "clip": "sereno/ja",
+      "clip": "photocream/ja",
       "variant_repost": true
     },
     {
       "date": "2026-12-27",
       "slot": 1,
       "channel": "threads",
-      "clip": "qrcodehalo/zh-Hant"
+      "clip": "hourstag/zh-Hant"
     },
     {
       "date": "2026-12-28",
@@ -20935,8 +21014,15 @@
     {
       "date": "2026-12-28",
       "slot": 1,
+      "channel": "telegram",
+      "clip": "sereno/ja",
+      "variant_repost": true
+    },
+    {
+      "date": "2026-12-28",
+      "slot": 1,
       "channel": "threads",
-      "clip": "studydown/zh-Hant"
+      "clip": "qrcodehalo/zh-Hant"
     },
     {
       "date": "2026-12-29",
@@ -20947,22 +21033,8 @@
     {
       "date": "2026-12-29",
       "slot": 1,
-      "channel": "telegram",
-      "clip": "photocream/ja",
-      "variant_repost": true
-    },
-    {
-      "date": "2026-12-29",
-      "slot": 1,
       "channel": "threads",
-      "clip": "snapportlite/en"
-    },
-    {
-      "date": "2026-12-29",
-      "slot": 9,
-      "channel": "telegram",
-      "clip": "wifiaid/ja",
-      "variant_repost": true
+      "clip": "studydown/zh-Hant"
     },
     {
       "date": "2026-12-30",
@@ -20974,14 +21046,21 @@
       "date": "2026-12-30",
       "slot": 1,
       "channel": "telegram",
-      "clip": "savetag/ja",
+      "clip": "wifiaid/ja",
       "variant_repost": true
     },
     {
       "date": "2026-12-30",
       "slot": 1,
       "channel": "threads",
-      "clip": "gmoneylite/en"
+      "clip": "snapportlite/en"
+    },
+    {
+      "date": "2026-12-30",
+      "slot": 9,
+      "channel": "telegram",
+      "clip": "aibriefpack/ja",
+      "variant_repost": true
     },
     {
       "date": "2026-12-31",
@@ -20992,15 +21071,8 @@
     {
       "date": "2026-12-31",
       "slot": 1,
-      "channel": "telegram",
-      "clip": "aibriefpack/ja",
-      "variant_repost": true
-    },
-    {
-      "date": "2026-12-31",
-      "slot": 1,
       "channel": "threads",
-      "clip": "snapportlite_b/en"
+      "clip": "gmoneylite/en"
     },
     {
       "date": "2027-01-01",
@@ -21019,13 +21091,20 @@
       "date": "2027-01-01",
       "slot": 1,
       "channel": "threads",
-      "clip": "gmoneylite_b/en"
+      "clip": "snapportlite_b/en"
     },
     {
       "date": "2027-01-01",
       "slot": 9,
       "channel": "telegram",
       "clip": "countdaysnow/ja",
+      "variant_repost": true
+    },
+    {
+      "date": "2027-01-01",
+      "slot": 12,
+      "channel": "telegram",
+      "clip": "easyam/ja",
       "variant_repost": true
     },
     {
@@ -21038,27 +21117,27 @@
       "date": "2027-01-02",
       "slot": 1,
       "channel": "telegram",
-      "clip": "dailymate/ja",
+      "clip": "savetag/ja",
       "variant_repost": true
     },
     {
       "date": "2027-01-02",
       "slot": 1,
       "channel": "threads",
-      "clip": "easyam/en"
+      "clip": "gmoneylite_b/en"
     },
     {
       "date": "2027-01-02",
       "slot": 9,
       "channel": "telegram",
-      "clip": "easyam/ja",
+      "clip": "dailymate/ja",
       "variant_repost": true
     },
     {
       "date": "2027-01-03",
       "slot": 1,
       "channel": "instagram",
-      "clip": "lumiweather/ja"
+      "clip": "wordmate/zh-Hant"
     },
     {
       "date": "2027-01-03",
@@ -21071,17 +21150,11 @@
       "date": "2027-01-03",
       "slot": 1,
       "channel": "threads",
-      "clip": "claudeusagemini/en"
+      "clip": "easyam/en"
     },
     {
-      "date": "2027-01-04",
-      "slot": 1,
-      "channel": "instagram",
-      "clip": "wordmate/zh-Hant"
-    },
-    {
-      "date": "2027-01-04",
-      "slot": 1,
+      "date": "2027-01-03",
+      "slot": 9,
       "channel": "telegram",
       "clip": "lumibopomofopro/ja",
       "variant_repost": true
@@ -21089,85 +21162,84 @@
     {
       "date": "2027-01-04",
       "slot": 1,
-      "channel": "threads",
-      "clip": "lumibopomofo/en"
-    },
-    {
-      "date": "2027-01-04",
-      "slot": 9,
-      "channel": "telegram",
-      "clip": "shotinbox/ja",
-      "variant_repost": true
-    },
-    {
-      "date": "2027-01-05",
-      "slot": 1,
       "channel": "instagram",
       "clip": "stayclock/zh-Hant"
     },
     {
-      "date": "2027-01-05",
+      "date": "2027-01-04",
       "slot": 1,
       "channel": "telegram",
       "clip": "tripplanet/ko",
       "variant_repost": true
     },
     {
-      "date": "2027-01-05",
+      "date": "2027-01-04",
       "slot": 1,
       "channel": "threads",
-      "clip": "onepageppt/en"
+      "clip": "claudeusagemini/en"
     },
     {
       "date": "2027-01-05",
-      "slot": 9,
-      "channel": "telegram",
-      "clip": "wifiaidlite/id",
-      "variant_repost": true
-    },
-    {
-      "date": "2027-01-06",
-      "slot": 1,
-      "channel": "instagram",
-      "clip": "lumiweather/ko"
-    },
-    {
-      "date": "2027-01-06",
-      "slot": 1,
-      "channel": "telegram",
-      "clip": "wordmate/ja",
-      "variant_repost": true
-    },
-    {
-      "date": "2027-01-06",
-      "slot": 1,
-      "channel": "threads",
-      "clip": "claudeusagemini_b/en"
-    },
-    {
-      "date": "2027-01-07",
       "slot": 1,
       "channel": "instagram",
       "clip": "wordmatelite/zh-Hant"
     },
     {
-      "date": "2027-01-07",
+      "date": "2027-01-05",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "wifiaidlite/id",
+      "variant_repost": true
+    },
+    {
+      "date": "2027-01-05",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "lumibopomofo/en"
+    },
+    {
+      "date": "2027-01-06",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "wordmate/ja"
+    },
+    {
+      "date": "2027-01-06",
       "slot": 1,
       "channel": "telegram",
       "clip": "wordmatelite/vi",
       "variant_repost": true
     },
     {
+      "date": "2027-01-06",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "onepageppt/en"
+    },
+    {
+      "date": "2027-01-07",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "stayclock_t10/ja"
+    },
+    {
+      "date": "2027-01-07",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "shotinbox/ja",
+      "variant_repost": true
+    },
+    {
       "date": "2027-01-07",
       "slot": 1,
       "channel": "threads",
-      "clip": "lumibopomofo_b/en"
+      "clip": "claudeusagemini_b/en"
     },
     {
       "date": "2027-01-08",
       "slot": 1,
       "channel": "instagram",
-      "clip": "stayclock_t10/ja"
+      "clip": "moneytag/zh-Hant"
     },
     {
       "date": "2027-01-08",
@@ -21180,31 +21252,38 @@
       "date": "2027-01-08",
       "slot": 1,
       "channel": "threads",
+      "clip": "lumibopomofo_b/en"
+    },
+    {
+      "date": "2027-01-09",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "wordmate/ko"
+    },
+    {
+      "date": "2027-01-09",
+      "slot": 1,
+      "channel": "threads",
       "clip": "battai/en"
     },
     {
-      "date": "2027-01-09",
+      "date": "2027-01-10",
       "slot": 1,
       "channel": "instagram",
-      "clip": "lumiweather/id"
+      "clip": "tripbee/zh-Hant"
     },
     {
-      "date": "2027-01-09",
+      "date": "2027-01-10",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "moneytag/ja",
+      "variant_repost": true
+    },
+    {
+      "date": "2027-01-10",
       "slot": 1,
       "channel": "threads",
       "clip": "cyca/en"
-    },
-    {
-      "date": "2027-01-10",
-      "slot": 1,
-      "channel": "instagram",
-      "clip": "moneytag/zh-Hant"
-    },
-    {
-      "date": "2027-01-10",
-      "slot": 1,
-      "channel": "threads",
-      "clip": "aim990/en"
     },
     {
       "date": "2027-01-11",
@@ -21216,14 +21295,14 @@
       "date": "2027-01-11",
       "slot": 1,
       "channel": "telegram",
-      "clip": "moneytag/ja",
+      "clip": "stayclock/ja",
       "variant_repost": true
     },
     {
       "date": "2027-01-11",
       "slot": 1,
       "channel": "threads",
-      "clip": "unblurry/en"
+      "clip": "aim990/en"
     },
     {
       "date": "2027-01-12",
@@ -21235,46 +21314,39 @@
       "date": "2027-01-12",
       "slot": 1,
       "channel": "telegram",
-      "clip": "cvdesk/ja",
+      "clip": "scanto/ja",
       "variant_repost": true
     },
     {
       "date": "2027-01-12",
-      "slot": 1,
-      "channel": "threads",
-      "clip": "lumiletters/en"
-    },
-    {
-      "date": "2027-01-12",
-      "slot": 9,
-      "channel": "telegram",
-      "clip": "lumimathpro/ja",
-      "variant_repost": true
-    },
-    {
-      "date": "2027-01-13",
-      "slot": 1,
-      "channel": "instagram",
-      "clip": "tripbee/zh-Hant"
-    },
-    {
-      "date": "2027-01-13",
-      "slot": 1,
-      "channel": "telegram",
-      "clip": "stayclock/ja",
-      "variant_repost": true
-    },
-    {
-      "date": "2027-01-13",
       "slot": 1,
       "channel": "threads",
       "clip": "notesstudio100/en"
     },
     {
       "date": "2027-01-13",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "tripbee_t10/id"
+    },
+    {
+      "date": "2027-01-13",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "tripbee/ja",
+      "variant_repost": true
+    },
+    {
+      "date": "2027-01-13",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "unblurry/en"
+    },
+    {
+      "date": "2027-01-13",
       "slot": 9,
       "channel": "telegram",
-      "clip": "scanto/ja",
+      "clip": "cvdesk/ja",
       "variant_repost": true
     },
     {
@@ -21287,14 +21359,21 @@
       "date": "2027-01-14",
       "slot": 1,
       "channel": "telegram",
-      "clip": "lockhour/ja",
+      "clip": "lumimathpro/ja",
       "variant_repost": true
     },
     {
       "date": "2027-01-14",
       "slot": 1,
       "channel": "threads",
-      "clip": "unblurry_b/en"
+      "clip": "lumiletters/en"
+    },
+    {
+      "date": "2027-01-14",
+      "slot": 9,
+      "channel": "telegram",
+      "clip": "snapportlite/ko",
+      "variant_repost": true
     },
     {
       "date": "2027-01-15",
@@ -21306,7 +21385,7 @@
       "date": "2027-01-15",
       "slot": 1,
       "channel": "telegram",
-      "clip": "lumimath/ja",
+      "clip": "lockhour/ja",
       "variant_repost": true
     },
     {
@@ -21319,31 +21398,24 @@
       "date": "2027-01-16",
       "slot": 1,
       "channel": "instagram",
-      "clip": "tripbee_t10/id"
+      "clip": "tripbee_t10b/zh-Hant"
     },
     {
       "date": "2027-01-16",
       "slot": 1,
       "channel": "telegram",
-      "clip": "tripbee/ja",
+      "clip": "lumimath/ja",
       "variant_repost": true
     },
     {
       "date": "2027-01-16",
       "slot": 1,
       "channel": "threads",
-      "clip": "lumiletterspro/en"
+      "clip": "unblurry_b/en"
     },
     {
       "date": "2027-01-16",
       "slot": 9,
-      "channel": "telegram",
-      "clip": "snapportlite/ko",
-      "variant_repost": true
-    },
-    {
-      "date": "2027-01-16",
-      "slot": 12,
       "channel": "telegram",
       "clip": "dailymatelite/ja",
       "variant_repost": true
@@ -21358,14 +21430,21 @@
       "date": "2027-01-17",
       "slot": 1,
       "channel": "telegram",
-      "clip": "gmoneylite/ja",
+      "clip": "lumimission/ja",
       "variant_repost": true
     },
     {
       "date": "2027-01-17",
       "slot": 1,
       "channel": "threads",
-      "clip": "lumimissionpro/en"
+      "clip": "lumiletterspro/en"
+    },
+    {
+      "date": "2027-01-17",
+      "slot": 9,
+      "channel": "telegram",
+      "clip": "gmoneylite/ja",
+      "variant_repost": true
     },
     {
       "date": "2027-01-18",
@@ -21384,13 +21463,13 @@
       "date": "2027-01-18",
       "slot": 1,
       "channel": "threads",
-      "clip": "photocream/en"
+      "clip": "lumimissionpro/en"
     },
     {
       "date": "2027-01-19",
       "slot": 1,
       "channel": "instagram",
-      "clip": "tripbee_t10b/zh-Hant"
+      "clip": "lumimission/zh-Hant"
     },
     {
       "date": "2027-01-19",
@@ -21403,23 +21482,42 @@
       "date": "2027-01-19",
       "slot": 1,
       "channel": "threads",
-      "clip": "picclear/en"
+      "clip": "photocream/en"
     },
     {
       "date": "2027-01-20",
       "slot": 1,
       "channel": "instagram",
-      "clip": "lumimission/zh-Hant"
+      "clip": "lumimath/zh-Hant"
     },
     {
       "date": "2027-01-20",
       "slot": 1,
       "channel": "telegram",
-      "clip": "lumimission/ja",
+      "clip": "hourstaglite/ja",
       "variant_repost": true
     },
     {
       "date": "2027-01-20",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "picclear/en"
+    },
+    {
+      "date": "2027-01-21",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "dailymatelite/zh-Hant"
+    },
+    {
+      "date": "2027-01-21",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "ledmovingtext/ja",
+      "variant_repost": true
+    },
+    {
+      "date": "2027-01-21",
       "slot": 1,
       "channel": "threads",
       "clip": "savetag/en"

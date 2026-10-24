@@ -22,6 +22,7 @@ publisher: "Lumi Studio"
 - 主畫面小工具
 - Apple Watch
 - App Store · 免費
+- ★ 5.0/5 · 1
 
 [在 App Store 取得 EasyAM: 國定假日、連假不響的智慧鬧鐘](https://apps.apple.com/tw/app/id6821790092?pt=118326163&ct=geo_pick&mt=8)
 

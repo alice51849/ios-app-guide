@@ -115,6 +115,96 @@ def link_problems(text, app_store_url, play_url=None, label="text"):
     return out
 
 
+# ---------------------------------------------------------------- companion edition (a paid app's free Lite)
+#
+# A paid app whose free edition (same content, matching store copy) downloads far better gets that edition's
+# direct links as one extra line UNDER its own links (2026-10-24: DailyMate 1 download in 30 days, DailyMate Lite 17).
+# The paid app's own links stay the ones every check counts; the Lite line is only added when it still fits the
+# platform limit, never in place of the app's own link. Its ct is the app's own ct plus "_lite", so Apple reports the
+# two apart. App Store id -> companion; keep both cores in the same change (agent/ct_codes reads "<campaign>_lite").
+COMPANION_APPS = {
+    "6790418321": {"key": "dailymatelite", "app_store": "https://apps.apple.com/app/id6794725568",
+                   "play": "https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite"},
+}
+COMPANION_LABEL = "Lite"
+COMPANION_CT_SUFFIX = "_lite"
+_CT_MAX = 40  # agent/ct_codes.TOKEN_RE: 1-40 characters
+
+
+def companion_of(app_store_url):
+    """The companion entry (COMPANION_APPS) of the app an App Store link points to, or None."""
+    return COMPANION_APPS.get(app_store_id(app_store_url))
+
+
+def companion_ids(app_id):
+    """App Store ids of the companion edition of `app_id` (a set; empty for an app without one)."""
+    comp = COMPANION_APPS.get(str(app_id or ""))
+    return {app_store_id(comp["app_store"])} if comp else set()
+
+
+def companion_packages(app_id):
+    """Google Play packages of the companion edition of `app_id` (a set; empty for an app without one)."""
+    comp = COMPANION_APPS.get(str(app_id or ""))
+    return {play_package(comp["play"])} - {""} if comp else set()
+
+
+def primary_ids(ids):
+    """`ids` minus the companion editions of the other ids in it: the apps a text is about."""
+    ids = set(ids)
+    extra = set()
+    for app_id in ids:
+        extra |= companion_ids(app_id)
+    return ids - extra
+
+
+def companion_campaign(token):
+    """The ct of a companion line: the app's own ct plus "_lite", cut to stay a valid token."""
+    token = str(token or "")
+    if not token:
+        return ""
+    return token[:_CT_MAX - len(COMPANION_CT_SUFFIX)] + COMPANION_CT_SUFFIX
+
+
+def _companion_base(token):
+    t = str(token or "").strip().lower()
+    if t.endswith(COMPANION_CT_SUFFIX) and t[:-len(COMPANION_CT_SUFFIX)] in COARSE_CAMPAIGNS:
+        return t[:-len(COMPANION_CT_SUFFIX)]
+    return None
+
+
+def _companion_play_url(comp, play_url):
+    """The companion's Play link; when the app's own Play link carries an install referrer, the same one with
+    utm_source + "_lite" and the companion's own key."""
+    import urllib.parse
+    found = re.search(r"[?&]referrer=([^&\s]+)", play_url or "")
+    if not found:
+        return comp["play"]
+    src = (urllib.parse.parse_qs(urllib.parse.unquote(found.group(1))).get("utm_source") or [""])[0]
+    if not src:
+        return comp["play"]
+    ref = f"utm_source={companion_campaign(src)}&utm_campaign={comp['key']}"
+    return comp["play"] + "&referrer=" + urllib.parse.quote(ref, safe="")
+
+
+def _with_companion(out, app_store_url, play_url, play_label, max_len, measure):
+    """`out` plus the companion line(s) when the app has a companion, it is not linked yet and it fits max_len."""
+    comp = companion_of(app_store_url)
+    if not comp or app_store_id(comp["app_store"]) in store_ids_in(out):
+        return out
+    lite = comp["app_store"]
+    ct = _CT_PARAM.search(app_store_url)
+    if ct:
+        lite += ("&" if "?" in lite else "?") + "ct=" + companion_campaign(ct.group(1))
+    lines = [f"{COMPANION_LABEL}: {lite}"]
+    if play_url and comp.get("play") and not has_play_link(out, comp["play"]):
+        lines.append(f"{COMPANION_LABEL} {play_label}: {_companion_play_url(comp, play_url)}")
+    for n in range(len(lines), 0, -1):  # both lines, else the App Store one alone, else none
+        candidate = f"{out.rstrip()}\n" + "\n".join(lines[:n])
+        if max_len is None or measure(candidate) <= max_len:
+            return candidate
+    return out
+
+
 def _link_block(text, app_store_url, play_url, app_store_label, play_label):
     lines = []
     if not has_app_store_link(text, app_store_url):
@@ -141,9 +231,12 @@ def _cut(text, room):
 def _without_own_links(text, app_store_url, play_url):
     """`text` minus the lines that carry this app's own store links (the full link block is rebuilt after a trim)."""
     wanted_id, wanted_pkg = app_store_id(app_store_url), play_package(play_url)
+    ids, pkgs = {wanted_id} | companion_ids(wanted_id), {wanted_pkg} | companion_packages(wanted_id)
+    ids.discard("")
+    pkgs.discard("")
     keep = []
-    for line in (text or "").split("\n"):
-        own = (wanted_id and wanted_id in store_ids_in(line)) or (wanted_pkg and wanted_pkg in play_packages_in(line))
+    for line in (text or "").split("\n"):  # the companion line goes too: it is added back after the trim
+        own = bool(ids & store_ids_in(line)) or bool(pkgs & play_packages_in(line))
         if not own:
             keep.append(line)
     return "\n".join(keep)
@@ -156,8 +249,15 @@ def ensure_download_link(text, app_store_url, play_url=None, *, max_len=None, ap
     Raises MissingDownloadLink when the App Store link is not a valid apps.apple.com app link, or when
     the links do not fit `max_len` even after the body is trimmed (hashtag lines go first). `measure`
     counts length the platform's way (graphemes, URL weights); default is len(). Every App Store link of the
-    result carries the app's own ct level (app_campaign).
+    result carries the app's own ct level (app_campaign). An app with a companion edition (COMPANION_APPS) gets
+    its "Lite" line under its own links when that still fits max_len.
     """
+    out = _ensure_own_links(text, app_store_url, play_url, max_len=max_len, app_store_label=app_store_label,
+                            play_label=play_label, measure=measure, label=label)
+    return _with_companion(out, coarse_campaign_url(app_store_url), play_url, play_label, max_len, measure)
+
+
+def _ensure_own_links(text, app_store_url, play_url, *, max_len, app_store_label, play_label, measure, label):
     text = coarsen_campaign_links(text)  # first, so the platform limit is measured on what is sent
     app_store_url = coarse_campaign_url(app_store_url)
     if not app_store_id(app_store_url):
@@ -286,6 +386,8 @@ def coarse_campaign(token):
     t = raw.strip().lower()
     if not t or t in COARSE_CAMPAIGNS:
         return t or raw
+    if _companion_base(t):  # a companion line's <campaign>_lite (COMPANION_APPS) is sent as it is
+        return raw
     if t.startswith(_CAMPAIGN_KEEP):
         return raw
     if t in _CAMPAIGN_EXACT:
@@ -311,6 +413,9 @@ def app_ct_tier(app_id):
 def app_campaign(token, app_id):
     """The ct a token is sent as on this app's links: coarse_campaign, then the app's own tier merge."""
     t = coarse_campaign(token)
+    base = _companion_base(t)
+    if base:  # <campaign>_lite: the campaign part takes this app's tier merge, the suffix stays
+        return _TIER_MERGE[app_ct_tier(app_id)].get(base, base) + COMPANION_CT_SUFFIX
     return _TIER_MERGE[app_ct_tier(app_id)].get(t, t)
 
 

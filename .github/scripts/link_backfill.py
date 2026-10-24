@@ -245,7 +245,7 @@ class AppFinder:
     # Each _by_* answers None (no evidence), False (evidence for more than one app) or the app's iOS id.
 
     def _by_url(self, text):
-        ids = DL.store_ids_in(text)
+        ids = DL.primary_ids(DL.store_ids_in(text))  # an app's own companion "Lite" line is not a second app
         if not ids:
             return None
         known = {i for i in ids if i in self.by_id}
@@ -554,7 +554,7 @@ def classify(client, media, finder, state, reads=None, read_gap=0, sleeper=time.
     if read_gap:
         sleeper(read_gap)
     seen = " ".join(c.get("text", "") for c in mine) + "\n" + text
-    foreign = DL.store_ids_in(seen) - {ios}
+    foreign = DL.store_ids_in(seen) - {ios} - DL.companion_ids(ios)  # its own "Lite" line is no conflict
     if foreign:   # the post or our own comment already links another app (even one that is not in the catalog)
         row["status"] = "unknown_app"
         row["why"] = f"{row.get('why', '')} | conflict: id{', id'.join(sorted(foreign))} already linked under the post"

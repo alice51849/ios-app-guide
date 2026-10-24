@@ -505,6 +505,16 @@ class ConflictAndCountTest(unittest.TestCase):
         known = f"Task list too boring? https://apps.apple.com/app/id{MOCHI}"
         self.assertEqual(MOCHI, finder.resolve("threads", {"id": "x", "caption": known, "permalink": ""})["ios_id"])
 
+    def test_an_apps_own_lite_line_is_not_a_second_app(self):
+        apps = {"apps": [{"name": "DailyMate", "key": "dailymate", "app_store_id": "6790418321"},
+                         {"name": "DailyMate Lite", "key": "dailymatelite", "app_store_id": "6794725568"}]}
+        finder = B.AppFinder(OP.Catalog(clips={}, posts=[], improvements=apps))
+        text = ("Plan the day\nApp Store: https://apps.apple.com/app/id6790418321?ct=social\n"
+                "Lite: https://apps.apple.com/app/id6794725568?ct=social_lite")
+        self.assertEqual("6790418321", finder._by_url(text))
+        both = "https://apps.apple.com/app/id6794725568 https://apps.apple.com/app/id6785004775"
+        self.assertFalse(finder._by_url(both), "two unrelated apps still read as two apps")
+
     def test_our_own_reply_that_links_another_app_stops_the_backfill(self):
         post = reel("200", caption="Task list too boring?\nMochi on the App Store")
         mine = {"id": "r1", "text": f"Get it on the App Store: https://apps.apple.com/app/id{PLAIN}?pt=1&ct=x&mt=8",

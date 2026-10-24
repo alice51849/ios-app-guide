@@ -326,5 +326,87 @@ class ChannelLevelCampaignTest(unittest.TestCase):
         self.assertEqual([], D.fine_campaigns(out))
 
 
+class CompanionLiteTest(unittest.TestCase):
+    """DailyMate (paid) gets its free edition DailyMate Lite as one extra "Lite" line under its own links."""
+    DM = "https://apps.apple.com/app/id6790418321?ct=threads"
+    DM_PLAY = "https://play.google.com/store/apps/details?id=com.caitlyn.dailymate"
+    LITE = "https://apps.apple.com/app/id6794725568"
+    LITE_PLAY = "https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite"
+    OTHER = "https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=telegram&mt=8"  # Cute To-Do, tier A
+    OTHER_PLAY = "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dx"
+
+    def test_the_lite_line_follows_the_apps_own_links_with_its_own_ct(self):
+        out = D.ensure_download_link("Plan the day\n#planner", self.DM, self.DM_PLAY)
+        own = "App Store: https://apps.apple.com/app/id6790418321?ct=social"  # DailyMate is tier C: threads -> social
+        self.assertEqual("Plan the day\n#planner\n\n" + own + f"\nGoogle Play: {self.DM_PLAY}\n"
+                         f"Lite: {self.LITE}?ct=social_lite\nLite Google Play: {self.LITE_PLAY}", out)
+        self.assertLess(out.index("6790418321"), out.index("6794725568"))
+        self.assertNotRegex(out, r"(?i)free|免費|\$")
+        self.assertEqual(out, D.ensure_download_link(out, self.DM, self.DM_PLAY), "idempotent, never twice")
+        self.assertEqual(out, D.coarsen_campaign_links(out))
+        self.assertEqual([], D.fine_campaigns(out))
+
+    def test_checks_still_count_the_apps_own_link_only(self):
+        out = D.ensure_download_link("Plan the day", self.DM, self.DM_PLAY)
+        self.assertEqual([], D.link_problems(out, self.DM, self.DM_PLAY))
+        self.assertEqual([], D.threads_reply_problems(out, self.DM, self.DM_PLAY))
+        self.assertTrue(D.has_download_link(out, self.DM, self.DM_PLAY))
+        lite_only = f"Lite: {self.LITE}?ct=social_lite"
+        self.assertTrue(D.link_problems(lite_only, self.DM), "the Lite line alone is not DailyMate's link")
+        self.assertEqual({"6790418321"}, D.primary_ids(D.store_ids_in(out)))
+        self.assertEqual({"6794725568"}, D.primary_ids({"6794725568"}))
+        self.assertEqual({"6794725568"}, D.companion_ids("6790418321"))
+        self.assertEqual(set(), D.companion_ids("6785004775"))
+
+    def test_no_ct_on_the_app_means_none_on_lite_and_no_play_means_no_lite_play(self):
+        out = D.ensure_download_link("x", "https://apps.apple.com/app/id6790418321")
+        self.assertEqual(f"x\n\nApp Store: https://apps.apple.com/app/id6790418321\nLite: {self.LITE}", out)
+
+    def test_the_lite_ct_stays_a_valid_token(self):
+        self.assertEqual("social_lite", D.companion_campaign("social"))
+        long = "gx_reach_" + "a" * 40
+        lite = D.companion_campaign(long)
+        self.assertEqual(40, len(lite))
+        self.assertTrue(lite.endswith("_lite"))
+        self.assertEqual("", D.companion_campaign(""))
+        self.assertEqual("social_lite", D.app_campaign("threads_lite", "6794725568"))
+        self.assertEqual("threads_lite", D.app_campaign("threads_lite", "6785004775"), "tier A keeps threads")
+        self.assertEqual("wm_short15_lite", D.coarse_campaign("wm_short15_lite"), "older tokens unchanged")
+
+    def test_play_referrer_gets_the_lite_source(self):
+        play = self.DM_PLAY + "&referrer=utm_source%3Dthreads%26utm_campaign%3Ddailymate"
+        out = D.ensure_download_link("x", self.DM, play)
+        self.assertIn(self.LITE_PLAY + "&referrer=utm_source%3Dthreads_lite%26utm_campaign%3Ddailymatelite", out)
+
+    def test_no_room_means_no_lite_line_never_the_apps_own_link(self):
+        own = D.ensure_download_link("x", self.DM, self.DM_PLAY)
+        own = own[:own.index("\nLite: ")]
+        self.assertEqual(own, D.ensure_download_link("x", self.DM, self.DM_PLAY, max_len=len(own)))
+        one = own + f"\nLite: {self.LITE}?ct=social_lite"
+        self.assertEqual(one, D.ensure_download_link("x", self.DM, self.DM_PLAY, max_len=len(one)),
+                         "the Lite App Store line alone when both do not fit")
+        body = "word " * 60
+        out = D.ensure_download_link(body, self.DM, self.DM_PLAY, max_len=len(own) + 40)
+        self.assertLessEqual(len(out), len(own) + 40)
+        self.assertEqual([], D.link_problems(out, self.DM, self.DM_PLAY))
+        stale = f"{body}\n\nLite: {self.LITE}?ct=social_lite"  # a Lite line but not the app's own links: trimmed
+        out = D.ensure_download_link(stale, self.DM, self.DM_PLAY, max_len=len(one) + 20)
+        self.assertEqual([], D.link_problems(out, self.DM, self.DM_PLAY))
+        self.assertNotIn("Lite", out, "the old Lite line goes with the trim; the trimmed body fills the room first")
+        self.assertLessEqual(len(out), len(one) + 20)
+
+    def test_other_apps_are_untouched(self):
+        for text in ("Hi", "Hi\n#tag", "word " * 40):
+            out = D.ensure_download_link(text, self.OTHER, self.OTHER_PLAY)
+            self.assertNotIn("Lite", out)
+            self.assertEqual(f"{text.rstrip()}\n\nApp Store: {self.OTHER}\nGoogle Play: {self.OTHER_PLAY}", out)
+
+    def test_instagram_is_unchanged(self):
+        out = D.ensure_instagram_caption("Plan the day", "DailyMate")
+        self.assertEqual([], D.instagram_problems(out, "DailyMate"))
+        self.assertNotIn("Lite", out)
+        self.assertNotIn("apps.apple.com", out)
+
+
 if __name__ == "__main__":
     unittest.main()

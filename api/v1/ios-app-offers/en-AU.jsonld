@@ -6,7 +6,7 @@
   "name": "Lumi Studio Publisher Search Intent Catalogue",
   "description": "A first-party catalogue of who each app is designed for, the task they are trying to complete, and the direct App Store path.",
   "inLanguage": "en-AU",
-  "dateModified": "2026-10-23",
+  "dateModified": "2026-10-24",
   "numberOfItems": 56,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -811,7 +811,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/en-AU.jsonld#offer-duowallpaperstudio",
         "url": "https://apps.apple.com/au/app/id6824946559?pt=118326163&ct=geo_pick&mt=8",
         "name": "Foldable Wallpaper Studio",
-        "description": "One wallpaper rarely fits both screens of a foldable, so Foldable Wallpaper Studio makes pairs: a close-up for the tall cover screen and the full",
+        "description": "Foldable Wallpaper Studio — Wallpapers made in pairs for the two screens of iPhone Duo: a close-up on the cover screen, the whole scene on the inner screen. Free to start · One-time unlock · No subscription.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -837,11 +837,11 @@
             "target": "https://apps.apple.com/au/app/id6824946559?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/en-AU/duowallpaperstudio.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/en-AU/answers/wallpapers-for-both-screens-of-a-foldable-iphone.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6824946559",
           "inLanguage": "en-AU",
-          "description": "One wallpaper rarely fits both screens of a foldable, so Foldable Wallpaper Studio makes pairs: a close-up for the tall cover screen and the full",
+          "description": "Foldable Wallpaper Studio — Wallpapers made in pairs for the two screens of iPhone Duo: a close-up on the cover screen, the whole scene on the inner screen. Free to start · One-time unlock · No subscription.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/en-AU.jsonld#offer-duowallpaperstudio"
           },

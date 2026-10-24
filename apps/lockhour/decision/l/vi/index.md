@@ -2,7 +2,7 @@
 title: "ứng dụng iPhone tốt nhất để chặn mạng xã hội khi học"
 lang: "vi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lockhour/decision/l/vi/index.html"
-modified: "2026-10-23"
+modified: "2026-10-24"
 app_store_id: "6780107485"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

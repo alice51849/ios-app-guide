@@ -5,7 +5,7 @@
     <link>https://open.cait518.cc/ios-app-guide/</link>
     <description>Fresh publisher-disclosed iOS app guides, answers, free tools and open datasets.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 23 Oct 2026 22:53:08 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 24 Oct 2026 00:00:00 GMT</lastBuildDate>
     <generator>iOS App Guide static syndication generator</generator>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <ttl>360</ttl>
@@ -18,6 +18,34 @@
     <atom:link href="https://open.cait518.cc/ios-app-guide/feed.xml" rel="alternate" type="application/atom+xml"/>
     <atom:link href="https://open.cait518.cc/ios-app-guide/feed.json" rel="alternate" type="application/feed+json"/>
     <item>
+      <title>Bopomofo SKOS Vocabulary - 37 Zhuyin Symbols as Linked Open Data</title>
+      <link>https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html</link>
+      <description>Download a CC BY 4.0 SKOS vocabulary for all 37 Zhuyin symbols in JSON-LD, Turtle and N-Triples, with SHACL and DCAT/VoID metadata.</description>
+      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html</guid>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>DCAT 3 open-data catalog for Bopomofo resources</title>
+      <link>https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html</link>
+      <description>Download a static W3C DCAT 3 catalog covering sixteen verified Bopomofo datasets and 80 exact distributions.</description>
+      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html</guid>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>小一注音暑假怎麼準備？14 天低壓暖身指南（2026）</title>
+      <link>https://open.cait518.cc/ios-app-guide/guides/zhuyin-grade-1-preparation.html</link>
+      <description>免費 14 天小一注音暑假暖身指南：三條彈性起點、每天 8–10 分鐘，不打卡、不評分、不設定入學門檻，並附教育部符號與筆順來源。</description>
+      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/zhuyin-grade-1-preparation.html</guid>
+      <pubDate>Fri, 23 Oct 2026 23:51:57 GMT</pubDate>
+    </item>
+    <item>
+      <title>Free 5-Day Zhuyin Lesson Plan for Heritage Chinese Schools</title>
+      <link>https://open.cait518.cc/ios-app-guide/guides/zhuyin-5-day-lesson-plan-heritage-school.html</link>
+      <description>A print-ready five-day Bopomofo starter mini-unit for ages 4–8, available in English and Traditional Chinese with official sources.</description>
+      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/zhuyin-5-day-lesson-plan-heritage-school.html</guid>
+      <pubDate>Fri, 23 Oct 2026 23:51:57 GMT</pubDate>
+    </item>
+    <item>
       <title>Wallpapers for a foldable&#x27;s two screens: what to check</title>
       <link>https://open.cait518.cc/ios-app-guide/guides/duowallpaperstudio.html</link>
       <description>A foldable has two screens with different shapes, so a single wallpaper is usually cropped badly on one of them and looks accidental on both.</description>
@@ -27,20 +55,6 @@
         <media:title type="plain">Wallpapers for a foldable&#x27;s two screens: what to check preview image</media:title>
       </media:content>
       <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/duowallpaperstudio-share.jpg" width="1200" height="675"/>
-    </item>
-    <item>
-      <title>小一注音暑假怎麼準備？14 天低壓暖身指南（2026）</title>
-      <link>https://open.cait518.cc/ios-app-guide/guides/zhuyin-grade-1-preparation.html</link>
-      <description>免費 14 天小一注音暑假暖身指南：三條彈性起點、每天 8–10 分鐘，不打卡、不評分、不設定入學門檻，並附教育部符號與筆順來源。</description>
-      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/zhuyin-grade-1-preparation.html</guid>
-      <pubDate>Fri, 23 Oct 2026 22:19:48 GMT</pubDate>
-    </item>
-    <item>
-      <title>Free 5-Day Zhuyin Lesson Plan for Heritage Chinese Schools</title>
-      <link>https://open.cait518.cc/ios-app-guide/guides/zhuyin-5-day-lesson-plan-heritage-school.html</link>
-      <description>A print-ready five-day Bopomofo starter mini-unit for ages 4–8, available in English and Traditional Chinese with official sources.</description>
-      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/zhuyin-5-day-lesson-plan-heritage-school.html</guid>
-      <pubDate>Fri, 23 Oct 2026 22:19:48 GMT</pubDate>
     </item>
     <item>
       <title>Download a RO-Crate 1.3 Research Object for All 37 Bopomofo Symbols</title>
@@ -918,20 +932,6 @@
       <link>https://open.cait518.cc/ios-app-guide/en-US/tools/bandwidth-need-sheet.html</link>
       <description>List what your household does online at the same time and how many devices do it, then download a sheet with the Mbps you need and the headroom left on your plan.</description>
       <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/en-US/tools/bandwidth-need-sheet.html</guid>
-      <pubDate>Fri, 23 Oct 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Bopomofo SKOS Vocabulary - 37 Zhuyin Symbols as Linked Open Data</title>
-      <link>https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html</link>
-      <description>Download a CC BY 4.0 SKOS vocabulary for all 37 Zhuyin symbols in JSON-LD, Turtle and N-Triples, with SHACL and DCAT/VoID metadata.</description>
-      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html</guid>
-      <pubDate>Fri, 23 Oct 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>DCAT 3 open-data catalog for Bopomofo resources</title>
-      <link>https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html</link>
-      <description>Download a static W3C DCAT 3 catalog covering sixteen verified Bopomofo datasets and 80 exact distributions.</description>
-      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html</guid>
       <pubDate>Fri, 23 Oct 2026 00:00:00 GMT</pubDate>
     </item>
     <item>

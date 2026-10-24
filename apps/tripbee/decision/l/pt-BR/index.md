@@ -2,7 +2,7 @@
 title: "app de melhor planejador de roteiro para iPhone"
 lang: "pt-BR"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbee/decision/l/pt-BR/index.html"
-modified: "2026-10-23"
+modified: "2026-10-24"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"

@@ -2,7 +2,7 @@
 title: "WiFi Aid: Поиск проблем сети — Диагностика роутера, mesh, DNS | iOS App"
 lang: "ru"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/ru/index.html"
-modified: "2026-10-23"
+modified: "2026-10-24"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"

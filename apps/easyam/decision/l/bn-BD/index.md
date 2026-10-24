@@ -2,7 +2,7 @@
 title: "EasyAM: অ্যালার্ম ঘড়ি ও ছুটি — কাল বাজবে? শুধু কাজের দিনে | iOS App"
 lang: "bn-BD"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/easyam/decision/l/bn-BD/index.html"
-modified: "2026-10-23"
+modified: "2026-10-24"
 app_store_id: "6821790092"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

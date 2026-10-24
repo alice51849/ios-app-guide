@@ -2,7 +2,7 @@
 title: "iPhone で他のアプリからリンクを1か所に保存するには？"
 lang: "ja"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/savetag/decision/l/ja/index.html"
-modified: "2026-10-23"
+modified: "2026-10-24"
 app_store_id: "6802505528"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

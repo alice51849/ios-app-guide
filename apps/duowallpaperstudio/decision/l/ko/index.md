@@ -2,7 +2,7 @@
 title: "Foldable Wallpaper Studio — 폴더블 배경화면 커버·메인 세트, 위젯 폰꾸미기 | iOS App"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/duowallpaperstudio/decision/l/ko/index.html"
-modified: "2026-10-23"
+modified: "2026-10-24"
 app_store_id: "6824946559"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

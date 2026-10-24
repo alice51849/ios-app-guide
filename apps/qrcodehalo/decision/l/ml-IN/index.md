@@ -2,7 +2,7 @@
 title: "QR Code Halo: സ്കാൻ & സൃഷ്ടി — ഉടൻ തുറക്കൂ, പിന്നെ പരിശോധന | iOS App"
 lang: "ml-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/qrcodehalo/decision/l/ml-IN/index.html"
-modified: "2026-10-23"
+modified: "2026-10-24"
 app_store_id: "6806779853"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

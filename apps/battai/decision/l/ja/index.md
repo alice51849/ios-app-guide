@@ -2,7 +2,7 @@
 title: "正直な推定とレポートがある最高のiPhoneバッテリー状態アプリ"
 lang: "ja"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/battai/decision/l/ja/index.html"
-modified: "2026-10-23"
+modified: "2026-10-24"
 app_store_id: "6802423998"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

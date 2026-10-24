@@ -1,6 +1,14 @@
 {
- "updated_at": "2026-10-23T07:55:37Z",
+ "updated_at": "2026-10-24T07:35:30Z",
  "targets": [
+  {
+   "app_id": "6785004775",
+   "country": "br",
+   "locale": "pt-BR",
+   "keyword": "lista de tarefas fofa",
+   "rank": 2,
+   "leader_ratings": 0
+  },
   {
    "app_id": "6792850916",
    "country": "cz",
@@ -38,6 +46,14 @@
    "country": "de",
    "locale": "de-DE",
    "keyword": "onepager",
+   "rank": 2,
+   "leader_ratings": 0
+  },
+  {
+   "app_id": "6785004775",
+   "country": "de",
+   "locale": "de-DE",
+   "keyword": "süße to-do liste",
    "rank": 2,
    "leader_ratings": 0
   },
@@ -82,6 +98,14 @@
    "leader_ratings": 0
   },
   {
+   "app_id": "6798814385",
+   "country": "jp",
+   "locale": "ja",
+   "keyword": "1枚 資料作成",
+   "rank": 2,
+   "leader_ratings": 0
+  },
+  {
    "app_id": "6787193643",
    "country": "jp",
    "locale": "ja",
@@ -106,36 +130,12 @@
    "leader_ratings": 0
   },
   {
-   "app_id": "6792850916",
-   "country": "pl",
-   "locale": "pl",
-   "keyword": "zaczernianie",
-   "rank": 2,
-   "leader_ratings": 0
-  },
-  {
-   "app_id": "6818607603",
+   "app_id": "6779552704",
    "country": "tw",
    "locale": "zh-Hant",
-   "keyword": "ai 用量",
+   "keyword": "外出指數",
    "rank": 2,
    "leader_ratings": 0
-  },
-  {
-   "app_id": "6794039979",
-   "country": "us",
-   "locale": "en-US",
-   "keyword": "price in hours",
-   "rank": 2,
-   "leader_ratings": 0
-  },
-  {
-   "app_id": "6818607603",
-   "country": "tw",
-   "locale": "zh-Hant",
-   "keyword": "claude 用量",
-   "rank": 2,
-   "leader_ratings": 1
   },
   {
    "app_id": "6779750237",
@@ -146,26 +146,10 @@
    "leader_ratings": 2
   },
   {
-   "app_id": "6778748533",
-   "country": "tw",
-   "locale": "zh-Hant",
-   "keyword": "字母描寫",
-   "rank": 2,
-   "leader_ratings": 3
-  },
-  {
    "app_id": "6790800323",
    "country": "tw",
    "locale": "zh-Hant",
    "keyword": "多久一次",
-   "rank": 2,
-   "leader_ratings": 5
-  },
-  {
-   "app_id": "6773017109",
-   "country": "tw",
-   "locale": "zh-Hant",
-   "keyword": "注音描寫",
    "rank": 2,
    "leader_ratings": 5
   },
@@ -176,6 +160,14 @@
    "keyword": "ネット 繋がらない",
    "rank": 2,
    "leader_ratings": 10
+  },
+  {
+   "app_id": "6773017109",
+   "country": "tw",
+   "locale": "zh-Hant",
+   "keyword": "注音聲調",
+   "rank": 2,
+   "leader_ratings": 22
   },
   {
    "app_id": "6779745474",
@@ -198,6 +190,14 @@
    "country": "de",
    "locale": "de-DE",
    "keyword": "Leuchttafel",
+   "rank": 3,
+   "leader_ratings": 0
+  },
+  {
+   "app_id": "6779750237",
+   "country": "es",
+   "locale": "ca",
+   "keyword": "taula de recompenses",
    "rank": 3,
    "leader_ratings": 0
   }

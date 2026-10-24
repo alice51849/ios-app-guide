@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-10-23",
-  "content_digest": "aac94efeede0d530283473c3885f644bb2a6f3d8c5707c4a03083234cb0cd690",
+  "date_modified": "2026-10-24",
+  "content_digest": "90a1a815ba058cdb679e1eff10abab24b4e023a6ea3f4576274f280ad1f6096d",
   "locale": "pt-BR",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -26,7 +26,8 @@
         "gravação",
         "aula",
         "desenho",
-        "offline"
+        "offline",
+        "notas à mão"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -385,7 +386,8 @@
         "aeroporto",
         "restaurante",
         "hotel",
-        "offline"
+        "offline",
+        "guia de conversação"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -753,7 +755,8 @@
         "letras",
         "fila",
         "palco",
-        "aviso"
+        "aviso",
+        "placa aeroporto"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1202,7 +1205,8 @@
         "anonimizar",
         "lgpd",
         "exif",
-        "senha"
+        "senha",
+        "tarjar pdf"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1243,7 +1247,10 @@
         "calendário",
         "widget",
         "organização",
-        "diária"
+        "diária",
+        "lista de tarefas",
+        "checklist",
+        "to do list"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1853,7 +1860,8 @@
         "leitura",
         "prova",
         "vestibular",
-        "concurso"
+        "concurso",
+        "timer de foco"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1894,7 +1902,8 @@
         "fotos",
         "hotel",
         "museu",
-        "aeroporto"
+        "aeroporto",
+        "jogos para viagem de carro"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2017,7 +2026,8 @@
         "4k",
         "corrigir",
         "embaçada",
-        "ia"
+        "ia",
+        "corrigir foto borrada"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

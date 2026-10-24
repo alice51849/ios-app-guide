@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-10-23",
-  "content_digest": "aac94efeede0d530283473c3885f644bb2a6f3d8c5707c4a03083234cb0cd690",
+  "date_modified": "2026-10-24",
+  "content_digest": "90a1a815ba058cdb679e1eff10abab24b4e023a6ea3f4576274f280ad1f6096d",
   "locale": "ru",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -65,7 +65,9 @@
         "OCR",
         "контекст",
         "чат",
-        "документы"
+        "документы",
+        "краткое содержание pdf",
+        "промпт ии"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -106,7 +108,8 @@
         "баллы",
         "тест",
         "слова",
-        "подготовка"
+        "подготовка",
+        "toeic аудирование"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -266,7 +269,8 @@
         "собеседование",
         "студент",
         "docx",
-        "пример"
+        "пример",
+        "ats резюме"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -552,7 +556,9 @@
         "поездки",
         "траты",
         "за",
-        "день"
+        "день",
+        "расходы в путешествии",
+        "деньги в путешествии"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -591,7 +597,8 @@
         "валюта",
         "путешествия",
         "кошелек",
-        "смартчасы"
+        "смартчасы",
+        "расходы в путешествии"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -957,7 +964,8 @@
         "прописи",
         "чтение",
         "задания",
-        "слова"
+        "слова",
+        "фонетика для детей"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1161,7 +1169,8 @@
         "что",
         "одеть",
         "погоде",
-        "воздуха"
+        "воздуха",
+        "что надеть погода"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1523,7 +1532,9 @@
         "подборка",
         "теги",
         "рецепты",
-        "желаний"
+        "желаний",
+        "сохранить статьи",
+        "читать позже"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1844,7 +1855,8 @@
         "егэ",
         "часы",
         "секундомер",
-        "прогресс"
+        "прогресс",
+        "учет времени учебы"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

@@ -593,11 +593,18 @@ def _copy_candidates(items, channel, day, app_index, app_count):
         target_locale = locales[regional_rank % len(locales)]
     targeted = [item for item in candidates if item.get("lang") == target_locale]
     remaining = [item for item in candidates if item.get("lang") != target_locale]
+    held = []
+    if 0 <= launch_phase < FULL_LOCALE_SOCIAL_LAUNCH_DAYS:
+        # The launch target can be a locale this App has no catalog copy for (bn-BD); the rotation
+        # must then still land on catalog copy, with the static pool only as the last resort.
+        held = [item for item in targeted + remaining if item.get("source") != "publisher_intent_catalog"]
+        targeted = [item for item in targeted if item.get("source") == "publisher_intent_catalog"]
+        remaining = [item for item in remaining if item.get("source") == "publisher_intent_catalog"]
     cycle = day // app_count
     offset = (
         cycle + app_index + CHANNEL_SPECS[channel]["offset"]
     ) % max(len(remaining), 1)
-    return targeted + remaining[offset:] + remaining[:offset]
+    return targeted + remaining[offset:] + remaining[:offset] + held
 
 
 def rotated_channel_candidates(pool, channel, now=None):

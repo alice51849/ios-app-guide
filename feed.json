@@ -1,7 +1,7 @@
 {
  "schema": "lumi.social-feed/v1",
  "date": "2026-10-24",
- "generated_at": "2026-10-24T06:32:07Z",
+ "generated_at": "2026-10-24T16:05:22Z",
  "items": {
   "bluesky": [
    {
@@ -141,48 +141,69 @@
    },
    {
     "kind": "clip",
-    "key": "easyam/en",
+    "key": "duowallpaperstudio/en",
     "locale": "en",
-    "app": "easyam",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/8n1x9x.mp4",
-    "hook": "Holidays skipped automatically",
-    "name": "EasyAM: Holiday Alarm Clock",
-    "title": "Holidays skipped automatically | Rings for work, skips days off | EasyAM holiday alarm",
+    "app": "duowallpaperstudio",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/b3a83b5abb.mp4",
+    "hook": "Open: the whole scene",
+    "name": "Foldable Wallpaper Studio",
+    "title": "Open: the whole scene | Dual Screen Pairs & Widgets | Foldable Wallpaper Studio",
     "tags": [
-     "#HolidayAlarmClock",
-     "#Workday",
-     "#Shift",
-     "#Public",
-     "#Calendar",
-     "#EasyAMHolidayAlarm"
+     "#Cute",
+     "#Lock",
+     "#Home",
+     "#Background",
+     "#Photo",
+     "#FoldableWallpaperStudio"
     ],
-    "caption": "Holidays skipped automatically\nAdd time off, vacations stay quiet\nRings for work, skips days off\nEasyAM: Holiday Alarm Clock\nSearch “holiday alarm clock” on the App Store\nAlso on Google Play\n\n#HolidayAlarmClock #Workday #EasyAMholidayalarm",
+    "caption": "Open: the whole scene\n5 widgets drawn with your wallpaper\nDual Screen Pairs & Widgets\nSearch “Foldable Wallpaper Studio” on the App Store\n\n#Cute #Lock #FoldableWallpaperStudio",
     "button": "Get it on the App Store",
     "variant": "b",
-    "alt": "EasyAM: Holiday Alarm Clock — Holidays skipped automatically — Add time off, vacations stay quiet — Rings for work, skips days off",
-    "store": "https://apps.apple.com/us/app/id6821790092?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam",
+    "alt": "Foldable Wallpaper Studio — Open: the whole scene — 5 widgets drawn with your wallpaper — Dual Screen Pairs & Widgets",
+    "store": "https://apps.apple.com/us/app/id6824946559?pt=118326163&ct=social&mt=8",
+    "play": null,
     "review": {
      "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6821790092?action=write-review"
+     "url": "https://apps.apple.com/app/id6824946559?action=write-review"
     },
     "keywords": [
-     "workday",
-     "shift",
-     "public",
-     "calendar",
-     "weekday",
-     "vacation"
+     "cute",
+     "lock",
+     "home",
+     "background",
+     "photo",
+     "maker"
     ],
-    "keyline": "Rings for work, skips days off",
+    "keyline": "Dual Screen Pairs & Widgets",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "f45a7a4e972af86c",
+     "board": "f96f07572e601261",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "card/gsat2027/2026-10-24",
+    "locale": "zh-Hant",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/countdown-cards/card-20261024.jpg",
+    "caption": "116 學測 倒數 90 天\n今天也前進一步\n\nApp Store／Google Play 搜尋「CountDaysNow」\n\n#倒數日 #倒數計時 #紀念日",
+    "title": "116 學測 倒數 90 天",
+    "alt": "CountDaysNow — 116 學測 倒數 90 天 — 今天也前進一步 — App Store／Google Play 搜尋「CountDaysNow」 — 倒數日 · 倒數計時 · 紀念日",
+    "name": "CountDaysNow",
+    "hook": "116 學測 倒數 90 天",
+    "tags": [
+     "#倒數日",
+     "#倒數計時",
+     "#紀念日",
+     "#生日",
+     "#還有幾天"
+    ],
+    "button": "在 App Store 下載",
+    "store": "https://apps.apple.com/tw/app/id6807079789?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow"
    },
    {
     "kind": "card",
@@ -1091,48 +1112,69 @@
    },
    {
     "kind": "clip",
-    "key": "easyam/en",
+    "key": "duowallpaperstudio/en",
     "locale": "en",
-    "app": "easyam",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/8n1x9x.mp4",
-    "hook": "Holidays skipped automatically",
-    "name": "EasyAM: Holiday Alarm Clock",
-    "title": "Holidays skipped automatically | Rings for work, skips days off | EasyAM holiday alarm",
+    "app": "duowallpaperstudio",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/b3a83b5abb.mp4",
+    "hook": "Open: the whole scene",
+    "name": "Foldable Wallpaper Studio",
+    "title": "Open: the whole scene | Dual Screen Pairs & Widgets | Foldable Wallpaper Studio",
     "tags": [
-     "#HolidayAlarmClock",
-     "#Workday",
-     "#Shift",
-     "#Public",
-     "#Calendar",
-     "#EasyAMHolidayAlarm"
+     "#Cute",
+     "#Lock",
+     "#Home",
+     "#Background",
+     "#Photo",
+     "#FoldableWallpaperStudio"
     ],
-    "caption": "Holidays skipped automatically\nAdd time off, vacations stay quiet\nRings for work, skips days off\nEasyAM: Holiday Alarm Clock\nSearch “holiday alarm clock” on the App Store\nAlso on Google Play\n\n#HolidayAlarmClock #Workday #Shift #Public #EasyAMholidayalarm",
+    "caption": "Open: the whole scene\n5 widgets drawn with your wallpaper\nDual Screen Pairs & Widgets\nSearch “Foldable Wallpaper Studio” on the App Store\n\n#Cute #Lock #Home #Background #FoldableWallpaperStudio",
     "button": "Get it on the App Store",
     "variant": "b",
-    "alt": "EasyAM: Holiday Alarm Clock — Holidays skipped automatically — Add time off, vacations stay quiet — Rings for work, skips days off",
-    "store": "https://apps.apple.com/us/app/id6821790092?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam",
+    "alt": "Foldable Wallpaper Studio — Open: the whole scene — 5 widgets drawn with your wallpaper — Dual Screen Pairs & Widgets",
+    "store": "https://apps.apple.com/us/app/id6824946559?pt=118326163&ct=social&mt=8",
+    "play": null,
     "review": {
      "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6821790092?action=write-review"
+     "url": "https://apps.apple.com/app/id6824946559?action=write-review"
     },
     "keywords": [
-     "workday",
-     "shift",
-     "public",
-     "calendar",
-     "weekday",
-     "vacation"
+     "cute",
+     "lock",
+     "home",
+     "background",
+     "photo",
+     "maker"
     ],
-    "keyline": "Rings for work, skips days off",
+    "keyline": "Dual Screen Pairs & Widgets",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "f45a7a4e972af86c",
+     "board": "f96f07572e601261",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "card/gsat2027/2026-10-24",
+    "locale": "zh-Hant",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/countdown-cards/card-20261024.jpg",
+    "caption": "116 學測 倒數 90 天\n今天也前進一步\n\nApp Store／Google Play 搜尋「CountDaysNow」\n\n#倒數日 #倒數計時 #紀念日 #生日 #還有幾天",
+    "title": "116 學測 倒數 90 天",
+    "alt": "CountDaysNow — 116 學測 倒數 90 天 — 今天也前進一步 — App Store／Google Play 搜尋「CountDaysNow」 — 倒數日 · 倒數計時 · 紀念日",
+    "name": "CountDaysNow",
+    "hook": "116 學測 倒數 90 天",
+    "tags": [
+     "#倒數日",
+     "#倒數計時",
+     "#紀念日",
+     "#生日",
+     "#還有幾天"
+    ],
+    "button": "在 App Store 下載",
+    "store": "https://apps.apple.com/tw/app/id6807079789?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow"
    },
    {
     "kind": "card",
@@ -1335,60 +1377,59 @@
    },
    {
     "kind": "clip",
-    "key": "easyam/en",
+    "key": "duowallpaperstudio/en",
     "locale": "en",
-    "app": "easyam",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/8n1x9x.mp4",
-    "hook": "Holidays skipped automatically",
-    "name": "EasyAM: Holiday Alarm Clock",
-    "title": "Holidays skipped automatically | Rings for work, skips days off | EasyAM holiday alarm",
+    "app": "duowallpaperstudio",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/b3a83b5abb.mp4",
+    "hook": "Open: the whole scene",
+    "name": "Foldable Wallpaper Studio",
+    "title": "Open: the whole scene | Dual Screen Pairs & Widgets | Foldable Wallpaper Studio",
     "tags": [
-     "#HolidayAlarmClock",
-     "#Workday",
-     "#Shift",
-     "#Public",
-     "#Calendar",
-     "#EasyAMHolidayAlarm"
+     "#Cute",
+     "#Lock",
+     "#Home",
+     "#Background",
+     "#Photo",
+     "#FoldableWallpaperStudio"
     ],
-    "caption": "Holidays skipped automatically\nAdd time off, vacations stay quiet\nRings for work, skips days off\nEasyAM: Holiday Alarm Clock\nSearch “holiday alarm clock” on the App Store\nAlso on Google Play\n\n#HolidayAlarmClock #Workday #Shift #Public #EasyAMholidayalarm",
+    "caption": "Open: the whole scene\n5 widgets drawn with your wallpaper\nDual Screen Pairs & Widgets\nSearch “Foldable Wallpaper Studio” on the App Store\n\n#Cute #Lock #Home #Background #FoldableWallpaperStudio",
     "button": "Get it on the App Store",
     "variant": "b",
-    "alt": "EasyAM: Holiday Alarm Clock — Holidays skipped automatically — Add time off, vacations stay quiet — Rings for work, skips days off",
-    "store": "https://apps.apple.com/us/app/id6821790092?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam",
+    "alt": "Foldable Wallpaper Studio — Open: the whole scene — 5 widgets drawn with your wallpaper — Dual Screen Pairs & Widgets",
+    "store": "https://apps.apple.com/us/app/id6824946559?pt=118326163&ct=social&mt=8",
+    "play": null,
     "review": {
      "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6821790092?action=write-review"
+     "url": "https://apps.apple.com/app/id6824946559?action=write-review"
     },
     "keywords": [
-     "workday",
-     "shift",
-     "public",
-     "calendar",
-     "weekday",
-     "vacation"
+     "cute",
+     "lock",
+     "home",
+     "background",
+     "photo",
+     "maker"
     ],
-    "keyline": "Rings for work, skips days off",
+    "keyline": "Dual Screen Pairs & Widgets",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "f45a7a4e972af86c",
+     "board": "f96f07572e601261",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "youtube": {
-     "title": "Holidays skipped automatically | EasyAM holiday alarm #Shorts",
-     "description": "Holidays skipped automatically\nAdd time off, vacations stay quiet\nRings for work, skips days off\n\nEasyAM: Holiday Alarm Clock\nApp Store: https://apps.apple.com/us/app/id6821790092?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam\nAlready using this app? Rate or review it on the App Store\nhttps://apps.apple.com/app/id6821790092?action=write-review\n\nworkday · shift · public · calendar · weekday · vacation\n\n#Shorts #HolidayAlarmClock #EasyAMholidayalarm",
+     "title": "Open: the whole scene | Foldable Wallpaper Studio #Shorts",
+     "description": "Open: the whole scene\n5 widgets drawn with your wallpaper\nDual Screen Pairs & Widgets\n\nFoldable Wallpaper Studio\nApp Store: https://apps.apple.com/us/app/id6824946559?pt=118326163&ct=social&mt=8\nAlready using this app? Rate or review it on the App Store\nhttps://apps.apple.com/app/id6824946559?action=write-review\n\ncute · lock · home · background · photo · maker\n\n#Shorts #Cute #FoldableWallpaperStudio",
      "tags": [
-      "workday",
-      "shift",
-      "public",
-      "calendar",
-      "weekday",
-      "vacation",
-      "HolidayAlarmClock",
-      "EasyAMHolidayAlarm",
-      "EasyAM holiday alarm"
+      "cute",
+      "lock",
+      "home",
+      "background",
+      "photo",
+      "maker",
+      "FoldableWallpaperStudio",
+      "Foldable Wallpaper Studio"
      ]
     },
     "slot": 15
@@ -1544,52 +1585,77 @@
    },
    {
     "kind": "clip",
-    "key": "easyam/en",
+    "key": "duowallpaperstudio/en",
     "locale": "en",
-    "app": "easyam",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/8n1x9x.mp4",
-    "hook": "Holidays skipped automatically",
-    "name": "EasyAM: Holiday Alarm Clock",
-    "title": "Holidays skipped automatically | Rings for work, skips days off | EasyAM holiday alarm",
+    "app": "duowallpaperstudio",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/b3a83b5abb.mp4",
+    "hook": "Open: the whole scene",
+    "name": "Foldable Wallpaper Studio",
+    "title": "Open: the whole scene | Dual Screen Pairs & Widgets | Foldable Wallpaper Studio",
     "tags": [
-     "#HolidayAlarmClock",
-     "#Workday",
-     "#Shift",
-     "#Public",
-     "#Calendar",
-     "#EasyAMHolidayAlarm"
+     "#Cute",
+     "#Lock",
+     "#Home",
+     "#Background",
+     "#Photo",
+     "#FoldableWallpaperStudio"
     ],
-    "caption": "Holidays skipped automatically\nAdd time off, vacations stay quiet\nRings for work, skips days off\nEasyAM: Holiday Alarm Clock\nSearch “holiday alarm clock” on the App Store\nAlso on Google Play\n\n#HolidayAlarmClock #Workday #Shift #Public #EasyAMholidayalarm",
+    "caption": "Open: the whole scene\n5 widgets drawn with your wallpaper\nDual Screen Pairs & Widgets\nSearch “Foldable Wallpaper Studio” on the App Store\n\n#Cute #Lock #Home #Background #FoldableWallpaperStudio",
     "button": "Get it on the App Store",
     "variant": "b",
-    "alt": "EasyAM: Holiday Alarm Clock — Holidays skipped automatically — Add time off, vacations stay quiet — Rings for work, skips days off",
-    "store": "https://apps.apple.com/us/app/id6821790092?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam",
+    "alt": "Foldable Wallpaper Studio — Open: the whole scene — 5 widgets drawn with your wallpaper — Dual Screen Pairs & Widgets",
+    "store": "https://apps.apple.com/us/app/id6824946559?pt=118326163&ct=social&mt=8",
+    "play": null,
     "review": {
      "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6821790092?action=write-review"
+     "url": "https://apps.apple.com/app/id6824946559?action=write-review"
     },
     "keywords": [
-     "workday",
-     "shift",
-     "public",
-     "calendar",
-     "weekday",
-     "vacation"
+     "cute",
+     "lock",
+     "home",
+     "background",
+     "photo",
+     "maker"
     ],
-    "keyline": "Rings for work, skips days off",
+    "keyline": "Dual Screen Pairs & Widgets",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "f45a7a4e972af86c",
+     "board": "f96f07572e601261",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "Holidays skipped automatically\nAdd time off, vacations stay quiet\nRings for work, skips days off\nEasyAM: Holiday Alarm Clock\nSearch “holiday alarm clock” on the App Store\nAlso on Google Play\n\n#HolidayAlarmClock #Workday #Shift #Public #EasyAMholidayalarm\n\nGet it on the App Store: https://apps.apple.com/us/app/id6821790092?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam",
-     "link": "https://apps.apple.com/us/app/id6821790092?pt=118326163&ct=social&mt=8"
+     "description": "Open: the whole scene\n5 widgets drawn with your wallpaper\nDual Screen Pairs & Widgets\nSearch “Foldable Wallpaper Studio” on the App Store\n\n#Cute #Lock #Home #Background #FoldableWallpaperStudio\n\nGet it on the App Store: https://apps.apple.com/us/app/id6824946559?pt=118326163&ct=social&mt=8",
+     "link": "https://apps.apple.com/us/app/id6824946559?pt=118326163&ct=social&mt=8"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "card/gsat2027/2026-10-24",
+    "locale": "zh-Hant",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/countdown-cards/card-20261024.jpg",
+    "caption": "116 學測 倒數 90 天\n今天也前進一步\n\nApp Store／Google Play 搜尋「CountDaysNow」\n\n#倒數日 #倒數計時 #紀念日 #生日 #還有幾天",
+    "title": "116 學測 倒數 90 天",
+    "alt": "CountDaysNow — 116 學測 倒數 90 天 — 今天也前進一步 — App Store／Google Play 搜尋「CountDaysNow」 — 倒數日 · 倒數計時 · 紀念日",
+    "name": "CountDaysNow",
+    "hook": "116 學測 倒數 90 天",
+    "tags": [
+     "#倒數日",
+     "#倒數計時",
+     "#紀念日",
+     "#生日",
+     "#還有幾天"
+    ],
+    "button": "在 App Store 下載",
+    "store": "https://apps.apple.com/tw/app/id6807079789?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
+    "pinterest": {
+     "description": "116 學測 倒數 90 天\n今天也前進一步\n\nApp Store／Google Play 搜尋「CountDaysNow」\n\n#倒數日 #倒數計時 #紀念日 #生日 #還有幾天\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6807079789?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
+     "link": "https://apps.apple.com/tw/app/id6807079789?pt=118326163&ct=social&mt=8"
+    }
    },
    {
     "kind": "card",
@@ -3619,49 +3685,49 @@
    },
    {
     "kind": "clip",
-    "key": "easyam/en",
+    "key": "duowallpaperstudio/en",
     "locale": "en",
-    "app": "easyam",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/8n1x9x.mp4",
-    "hook": "Holidays skipped automatically",
-    "name": "EasyAM: Holiday Alarm Clock",
-    "title": "Holidays skipped automatically | Rings for work, skips days off | EasyAM holiday alarm",
+    "app": "duowallpaperstudio",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/b3a83b5abb.mp4",
+    "hook": "Open: the whole scene",
+    "name": "Foldable Wallpaper Studio",
+    "title": "Open: the whole scene | Dual Screen Pairs & Widgets | Foldable Wallpaper Studio",
     "tags": [
-     "#HolidayAlarmClock",
-     "#Workday",
-     "#Shift",
-     "#Public",
-     "#Calendar",
-     "#EasyAMHolidayAlarm"
+     "#Cute",
+     "#Lock",
+     "#Home",
+     "#Background",
+     "#Photo",
+     "#FoldableWallpaperStudio"
     ],
-    "caption": "Holidays skipped automatically\nAdd time off, vacations stay quiet\nRings for work, skips days off\nEasyAM: Holiday Alarm Clock\nSearch “holiday alarm clock” on the App Store\nAlso on Google Play\n\n#HolidayAlarmClock #Workday #Shift #Public #EasyAMholidayalarm",
+    "caption": "Open: the whole scene\n5 widgets drawn with your wallpaper\nDual Screen Pairs & Widgets\nSearch “Foldable Wallpaper Studio” on the App Store\n\n#Cute #Lock #Home #Background #FoldableWallpaperStudio",
     "button": "Get it on the App Store",
     "variant": "b",
-    "alt": "EasyAM: Holiday Alarm Clock — Holidays skipped automatically — Add time off, vacations stay quiet — Rings for work, skips days off",
-    "store": "https://apps.apple.com/us/app/id6821790092?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam",
+    "alt": "Foldable Wallpaper Studio — Open: the whole scene — 5 widgets drawn with your wallpaper — Dual Screen Pairs & Widgets",
+    "store": "https://apps.apple.com/us/app/id6824946559?pt=118326163&ct=social&mt=8",
+    "play": null,
     "review": {
      "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6821790092?action=write-review"
+     "url": "https://apps.apple.com/app/id6824946559?action=write-review"
     },
     "keywords": [
-     "workday",
-     "shift",
-     "public",
-     "calendar",
-     "weekday",
-     "vacation"
+     "cute",
+     "lock",
+     "home",
+     "background",
+     "photo",
+     "maker"
     ],
-    "keyline": "Rings for work, skips days off",
+    "keyline": "Dual Screen Pairs & Widgets",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "f45a7a4e972af86c",
+     "board": "f96f07572e601261",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "Holidays skipped automatically\nAdd time off, vacations stay quiet\nRings for work, skips days off\nEasyAM: Holiday Alarm Clock\nSearch “holiday alarm clock” on the App Store\nAlso on Google Play\n\n#HolidayAlarmClock #Workday #Shift #Public #EasyAMholidayalarm\n\nGet it on the App Store: https://apps.apple.com/us/app/id6821790092?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam"
+     "caption": "Open: the whole scene\n5 widgets drawn with your wallpaper\nDual Screen Pairs & Widgets\nSearch “Foldable Wallpaper Studio” on the App Store\n\n#Cute #Lock #Home #Background #FoldableWallpaperStudio\n\nGet it on the App Store: https://apps.apple.com/us/app/id6824946559?pt=118326163&ct=social&mt=8"
     },
     "slot": 15
    }
@@ -19159,6 +19225,534 @@
      "store_claims_ok": true,
      "screen_text_ok": true,
      "board": "f13ffb6a085ca841",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "gbago/en",
+    "locale": "en",
+    "app": "gbago",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/86a812784b.mp4",
+    "hook": "4 save slots, up to 12, each with a thumbnail",
+    "name": "GBAGo: Visual Saves",
+    "title": "4 save slots, up to 12, each with a thumbnail | Recovery Map · Auto Snapshots | GBAGo visual saves",
+    "tags": [
+     "#VisualSaves",
+     "#Emulator",
+     "#Retro",
+     "#Handheld",
+     "#Rewind",
+     "#GBAGoVisualSaves"
+    ],
+    "caption": "4 save slots, up to 12, each with a thumbnail\nAuto snapshot about every two minutes\nRecovery Map · Auto Snapshots\nGBAGo: Visual Saves\nSearch “GBAGo visual saves” on the App Store\nAlso on Google Play\n\n#VisualSaves #Emulator #GBAGovisualsaves",
+    "button": "Get it on the App Store",
+    "variant": "b",
+    "alt": "GBAGo: Visual Saves — 4 save slots, up to 12, each with a thumbnail — Auto snapshot about every two minutes — Recovery Map · Auto Snapshots",
+    "store": "https://apps.apple.com/us/app/id6804564400?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.GBAGo&referrer=utm_source%3Dsocial%26utm_campaign%3Dgbago",
+    "review": {
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6804564400?action=write-review"
+    },
+    "keywords": [
+     "emulator",
+     "retro",
+     "handheld",
+     "rewind",
+     "backup",
+     "checksum"
+    ],
+    "keyline": "Recovery Map · Auto Snapshots",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "41645584543378d1",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "gbago/zh-Hant",
+    "locale": "zh-Hant",
+    "app": "gbago",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/43dcf146ff.mp4",
+    "hook": "存檔 4 格起跳 可擴充到 12 格・附縮圖",
+    "name": "GBAGo: 視覺存檔",
+    "title": "存檔 4 格起跳 可擴充到 12 格・附縮圖 | 復原地圖 · 自動快照 | GBAGo 視覺存檔",
+    "tags": [
+     "#視覺存檔",
+     "#模擬器",
+     "#金手指",
+     "#即時存檔",
+     "#卡帶",
+     "#GBAGo視覺存檔"
+    ],
+    "caption": "存檔 4 格起跳 可擴充到 12 格・附縮圖\n每兩分鐘 自動存一張快照\n復原地圖 · 自動快照\nGBAGo: 視覺存檔\n在 App Store 搜尋「GBAGo 視覺存檔」\nAndroid 版在 Google Play\n\n#視覺存檔 #模擬器 #GBAGo視覺存檔",
+    "button": "在 App Store 下載",
+    "variant": "b",
+    "alt": "GBAGo: 視覺存檔 — 存檔 4 格起跳 可擴充到 12 格・附縮圖 — 每兩分鐘 自動存一張快照 — 復原地圖 · 自動快照",
+    "store": "https://apps.apple.com/tw/app/id6804564400?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.GBAGo&referrer=utm_source%3Dsocial%26utm_campaign%3Dgbago",
+    "review": {
+     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
+     "url": "https://apps.apple.com/app/id6804564400?action=write-review"
+    },
+    "keywords": [
+     "模擬器",
+     "金手指",
+     "即時存檔",
+     "卡帶",
+     "快轉",
+     "手把"
+    ],
+    "keyline": "復原地圖 · 自動快照",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "41645584543378d1",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "gbago/ja",
+    "locale": "ja",
+    "app": "gbago",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/0b63fd6075.mp4",
+    "hook": "セーブは4スロット 最大12まで・サムネイル付き",
+    "name": "GBAGo: 見えるセーブ",
+    "title": "セーブは4スロット 最大12まで・サムネイル付き | リカバリーマップ · 自動スナップショット | GBAGo 見えるセーブ",
+    "tags": [
+     "#見えるセーブ",
+     "#エミュレータ",
+     "#レトロゲーム",
+     "#チート",
+     "#どこでもセーブ",
+     "#GBAGo見えるセーブ"
+    ],
+    "caption": "セーブは4スロット 最大12まで・サムネイル付き\n2分ごとに 自動スナップショット\nリカバリーマップ · 自動スナップショット\nGBAGo: 見えるセーブ\nApp Storeで「GBAGo 見えるセーブ」を検索\nAndroidはGoogle Playで\n\n#見えるセーブ #エミュレータ #GBAGo見えるセーブ",
+    "button": "App Storeで入手",
+    "variant": "b",
+    "alt": "GBAGo: 見えるセーブ — セーブは4スロット 最大12まで・サムネイル付き — 2分ごとに 自動スナップショット — リカバリーマップ · 自動スナップショット",
+    "store": "https://apps.apple.com/jp/app/id6804564400?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.GBAGo&referrer=utm_source%3Dsocial%26utm_campaign%3Dgbago",
+    "review": {
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6804564400?action=write-review"
+    },
+    "keywords": [
+     "エミュレータ",
+     "レトロゲーム",
+     "チート",
+     "どこでもセーブ",
+     "カセット",
+     "連射"
+    ],
+    "keyline": "リカバリーマップ · 自動スナップショット",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "41645584543378d1",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "gbago/ko",
+    "locale": "ko",
+    "app": "gbago",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/7f3faa4746.mp4",
+    "hook": "저장 슬롯 기본 4개 최대 12개・썸네일 포함",
+    "name": "GBAGo: 비주얼 세이브",
+    "title": "저장 슬롯 기본 4개 최대 12개・썸네일 포함 | 복구 지도 · 자동 스냅샷 | GBAGo 비주얼 세이브",
+    "tags": [
+     "#비주얼세이브",
+     "#에뮬레이터",
+     "#레트로게임",
+     "#고전게임",
+     "#치트",
+     "#GBAGo비주얼세이브"
+    ],
+    "caption": "저장 슬롯 기본 4개 최대 12개・썸네일 포함\n2분마다 자동 스냅샷\n복구 지도 · 자동 스냅샷\nGBAGo: 비주얼 세이브\nApp Store에서 'GBAGo 비주얼 세이브' 검색\nAndroid는 Google Play에서\n\n#비주얼세이브 #에뮬레이터 #GBAGo비주얼세이브",
+    "button": "App Store에서 받기",
+    "variant": "b",
+    "alt": "GBAGo: 비주얼 세이브 — 저장 슬롯 기본 4개 최대 12개・썸네일 포함 — 2분마다 자동 스냅샷 — 복구 지도 · 자동 스냅샷",
+    "store": "https://apps.apple.com/kr/app/id6804564400?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.GBAGo&referrer=utm_source%3Dsocial%26utm_campaign%3Dgbago",
+    "review": {
+     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
+     "url": "https://apps.apple.com/app/id6804564400?action=write-review"
+    },
+    "keywords": [
+     "에뮬레이터",
+     "레트로게임",
+     "고전게임",
+     "치트",
+     "복원",
+     "카트리지"
+    ],
+    "keyline": "복구 지도 · 자동 스냅샷",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "41645584543378d1",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "gbago/de",
+    "locale": "de",
+    "app": "gbago",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/dc4a32de4d.mp4",
+    "hook": "4 Spielstand-Slots, erweiterbar auf 12, mit Vorschaubild",
+    "name": "GBAGo: Visuelle Spielstände",
+    "title": "4 Spielstand-Slots, erweiterbar auf 12, mit Vorschaubild | Rettungskarte · Auto-Snapshots | GBAGo S…",
+    "tags": [
+     "#VisuelleSpielstände",
+     "#Spiele",
+     "#Konsole",
+     "#Spielstand",
+     "#Cheats",
+     "#GBAGoSpielstände"
+    ],
+    "caption": "4 Spielstand-Slots, erweiterbar auf 12, mit Vorschaubild\nAuto-Snapshot alle zwei Minuten\nRettungskarte · Auto-Snapshots\nGBAGo: Visuelle Spielstände\nIm App Store nach „GBAGo Spielstände“ suchen\nAuch bei Google Play\n\n#VisuelleSpielstände #Spiele #GBAGoSpielstände",
+    "button": "Im App Store laden",
+    "variant": "b",
+    "alt": "GBAGo: Visuelle Spielstände — 4 Spielstand-Slots, erweiterbar auf 12, mit Vorschaubild — Auto-Snapshot alle zwei Minuten — Rettungskarte · Auto-Snapshots",
+    "store": "https://apps.apple.com/de/app/id6804564400?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.GBAGo&referrer=utm_source%3Dsocial%26utm_campaign%3Dgbago",
+    "review": {
+     "label": "Sie nutzen diese App bereits? Bewerten oder rezensieren Sie sie im App Store",
+     "url": "https://apps.apple.com/app/id6804564400?action=write-review"
+    },
+    "keywords": [
+     "spiele",
+     "konsole",
+     "spielstand",
+     "cheats",
+     "emulation",
+     "controller"
+    ],
+    "keyline": "Rettungskarte · Auto-Snapshots",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "41645584543378d1",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "gbago/pt-BR",
+    "locale": "pt-BR",
+    "app": "gbago",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/0e8cebdd2a.mp4",
+    "hook": "4 espaços de save, até 12, cada um com miniatura",
+    "name": "GBAGo: Saves visuais",
+    "title": "4 espaços de save, até 12, cada um com miniatura | Saves visuais | GBAGo saves visuais",
+    "tags": [
+     "#SavesVisuais",
+     "#Emulador",
+     "#Jogos",
+     "#Console",
+     "#Salvar",
+     "#GBAGoSavesVisuais"
+    ],
+    "caption": "4 espaços de save, até 12, cada um com miniatura\nCaptura automática a cada dois minutos\nGBAGo: Saves visuais\nPesquise “GBAGo saves visuais” na App Store\nTambém no Google Play\n\n#SavesVisuais #Emulador #GBAGosavesvisuais",
+    "button": "Baixar na App Store",
+    "variant": "b",
+    "alt": "GBAGo: Saves visuais — 4 espaços de save, até 12, cada um com miniatura — Captura automática a cada dois minutos",
+    "store": "https://apps.apple.com/br/app/id6804564400?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.GBAGo&referrer=utm_source%3Dsocial%26utm_campaign%3Dgbago",
+    "review": {
+     "label": "Já usa este app? Avalie ou escreva uma resenha na App Store",
+     "url": "https://apps.apple.com/app/id6804564400?action=write-review"
+    },
+    "keywords": [
+     "emulador",
+     "jogos",
+     "console",
+     "salvar",
+     "truques",
+     "cartucho"
+    ],
+    "keyline": "Saves visuais",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "41645584543378d1",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "duowallpaperstudio/en",
+    "locale": "en",
+    "app": "duowallpaperstudio",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/b3a83b5abb.mp4",
+    "hook": "Open: the whole scene",
+    "name": "Foldable Wallpaper Studio",
+    "title": "Open: the whole scene | Dual Screen Pairs & Widgets | Foldable Wallpaper Studio",
+    "tags": [
+     "#Cute",
+     "#Lock",
+     "#Home",
+     "#Background",
+     "#Photo",
+     "#FoldableWallpaperStudio"
+    ],
+    "caption": "Open: the whole scene\n5 widgets drawn with your wallpaper\nDual Screen Pairs & Widgets\nSearch “Foldable Wallpaper Studio” on the App Store\n\n#Cute #Lock #FoldableWallpaperStudio",
+    "button": "Get it on the App Store",
+    "variant": "b",
+    "alt": "Foldable Wallpaper Studio — Open: the whole scene — 5 widgets drawn with your wallpaper — Dual Screen Pairs & Widgets",
+    "store": "https://apps.apple.com/us/app/id6824946559?pt=118326163&ct=social&mt=8",
+    "play": null,
+    "review": {
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6824946559?action=write-review"
+    },
+    "keywords": [
+     "cute",
+     "lock",
+     "home",
+     "background",
+     "photo",
+     "maker"
+    ],
+    "keyline": "Dual Screen Pairs & Widgets",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "f96f07572e601261",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "duowallpaperstudio/zh-Hant",
+    "locale": "zh-Hant",
+    "app": "duowallpaperstudio",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/a05e4e38ec.mp4",
+    "hook": "展開，內螢幕是 整片全景",
+    "name": "Foldable Wallpaper Studio",
+    "title": "展開，內螢幕是 整片全景 | 摺疊手機雙螢幕高畫質桌布，外螢幕內螢幕成對＋主畫面美化小工具 | Foldable Wallpaper Studio",
+    "tags": [
+     "#鎖定畫面",
+     "#鎖屏",
+     "#壁紙",
+     "#桌面",
+     "#背景",
+     "#FoldableWallpaperStudio"
+    ],
+    "caption": "展開，內螢幕是 整片全景\n5 款小工具 畫上你選的桌布\n摺疊手機雙螢幕高畫質桌布，外螢幕內螢幕成對＋主畫面美化小工具\n在 App Store 搜尋「Foldable Wallpaper Studio」\n\n#鎖定畫面 #鎖屏 #FoldableWallpaperStudio",
+    "button": "在 App Store 下載",
+    "variant": "b",
+    "alt": "Foldable Wallpaper Studio — 展開，內螢幕是 整片全景 — 5 款小工具 畫上你選的桌布 — 摺疊手機雙螢幕高畫質桌布，外螢幕內螢幕成對＋主畫面美化小工具",
+    "store": "https://apps.apple.com/tw/app/id6824946559?pt=118326163&ct=social&mt=8",
+    "play": null,
+    "review": {
+     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
+     "url": "https://apps.apple.com/app/id6824946559?action=write-review"
+    },
+    "keywords": [
+     "鎖定畫面",
+     "鎖屏",
+     "壁紙",
+     "桌面",
+     "背景",
+     "可愛"
+    ],
+    "keyline": "摺疊手機雙螢幕高畫質桌布，外螢幕內螢幕成對＋主畫面美化小工具",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "f96f07572e601261",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "duowallpaperstudio/ja",
+    "locale": "ja",
+    "app": "duowallpaperstudio",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/c4285cfcdf.mp4",
+    "hook": "開けば 全景",
+    "name": "Foldable Wallpaper Studio",
+    "title": "開けば 全景 | 折りたたみスマホ用壁紙・外画面と内画面にぴったりのペア | Foldable Wallpaper Studio",
+    "tags": [
+     "#かわいい",
+     "#可愛い",
+     "#おしゃれ",
+     "#シンプル",
+     "#高画質",
+     "#FoldableWallpaperStudio"
+    ],
+    "caption": "開けば 全景\n選んだ壁紙で描く 5種のウィジェット\n折りたたみスマホ用壁紙・外画面と内画面にぴったりのペア\nApp Storeで「Foldable Wallpaper Studio」を検索\n\n#かわいい #可愛い #FoldableWallpaperStudio",
+    "button": "App Storeで入手",
+    "variant": "b",
+    "alt": "Foldable Wallpaper Studio — 開けば 全景 — 選んだ壁紙で描く 5種のウィジェット — 折りたたみスマホ用壁紙・外画面と内画面にぴったりのペア",
+    "store": "https://apps.apple.com/jp/app/id6824946559?pt=118326163&ct=social&mt=8",
+    "play": null,
+    "review": {
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6824946559?action=write-review"
+    },
+    "keywords": [
+     "かわいい",
+     "可愛い",
+     "おしゃれ",
+     "シンプル",
+     "高画質",
+     "待ち受け"
+    ],
+    "keyline": "折りたたみスマホ用壁紙・外画面と内画面にぴったりのペア",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "f96f07572e601261",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "duowallpaperstudio/ko",
+    "locale": "ko",
+    "app": "duowallpaperstudio",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/79299420af.mp4",
+    "hook": "펼치면 같은 장면의 전경",
+    "name": "Foldable Wallpaper Studio",
+    "title": "펼치면 같은 장면의 전경 | 폴더블 배경화면 커버·메인 세트, 위젯 폰꾸미기 | Foldable Wallpaper Studio",
+    "tags": [
+     "#바탕화면",
+     "#만들기",
+     "#사이즈",
+     "#고화질",
+     "#잠금화면",
+     "#FoldableWallpaperStudio"
+    ],
+    "caption": "펼치면 같은 장면의 전경\n고른 배경화면으로 그린 위젯 5종\n폴더블 배경화면 커버·메인 세트, 위젯 폰꾸미기\nApp Store에서 'Foldable Wallpaper Studio' 검색\n\n#바탕화면 #만들기 #FoldableWallpaperStudio",
+    "button": "App Store에서 받기",
+    "variant": "b",
+    "alt": "Foldable Wallpaper Studio — 펼치면 같은 장면의 전경 — 고른 배경화면으로 그린 위젯 5종 — 폴더블 배경화면 커버·메인 세트, 위젯 폰꾸미기",
+    "store": "https://apps.apple.com/kr/app/id6824946559?pt=118326163&ct=social&mt=8",
+    "play": null,
+    "review": {
+     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
+     "url": "https://apps.apple.com/app/id6824946559?action=write-review"
+    },
+    "keywords": [
+     "바탕화면",
+     "만들기",
+     "사이즈",
+     "고화질",
+     "잠금화면",
+     "홈화면"
+    ],
+    "keyline": "폴더블 배경화면 커버·메인 세트, 위젯 폰꾸미기",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "f96f07572e601261",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "duowallpaperstudio/de",
+    "locale": "de",
+    "app": "duowallpaperstudio",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/01e2afe12e.mp4",
+    "hook": "Aufgeklappt: die ganze Szene",
+    "name": "Foldable Wallpaper Studio",
+    "title": "Aufgeklappt: die ganze Szene | Foldable Hintergrundbilder HD | Foldable Wallpaper Studio",
+    "tags": [
+     "#Sperrbildschirm",
+     "#Hintergrund",
+     "#Handy",
+     "#Erstellen",
+     "#Süße",
+     "#FoldableWallpaperStudio"
+    ],
+    "caption": "Aufgeklappt: die ganze Szene\n5 Widgets mit deinem Hintergrund\nFoldable Hintergrundbilder HD\nIm App Store nach „Foldable Wallpaper Studio“ suchen\n\n#Sperrbildschirm #Hintergrund #FoldableWallpaperStudio",
+    "button": "Im App Store laden",
+    "variant": "b",
+    "alt": "Foldable Wallpaper Studio — Aufgeklappt: die ganze Szene — 5 Widgets mit deinem Hintergrund — Foldable Hintergrundbilder HD",
+    "store": "https://apps.apple.com/de/app/id6824946559?pt=118326163&ct=social&mt=8",
+    "play": null,
+    "review": {
+     "label": "Sie nutzen diese App bereits? Bewerten oder rezensieren Sie sie im App Store",
+     "url": "https://apps.apple.com/app/id6824946559?action=write-review"
+    },
+    "keywords": [
+     "sperrbildschirm",
+     "hintergrund",
+     "handy",
+     "erstellen",
+     "süße",
+     "foto"
+    ],
+    "keyline": "Foldable Hintergrundbilder HD",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "f96f07572e601261",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "duowallpaperstudio/pt-BR",
+    "locale": "pt-BR",
+    "app": "duowallpaperstudio",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/145faec030.mp4",
+    "hook": "Aberto: a cena inteira",
+    "name": "Foldable Wallpaper Studio",
+    "title": "Aberto: a cena inteira | Papel de parede para dobrável | Foldable Wallpaper Studio",
+    "tags": [
+     "#Celular",
+     "#Fundo",
+     "#Tela",
+     "#Bloqueio",
+     "#Estético",
+     "#FoldableWallpaperStudio"
+    ],
+    "caption": "Aberto: a cena inteira\n5 widgets com o seu papel de parede\nPapel de parede para dobrável\nPesquise “Foldable Wallpaper Studio” na App Store\n\n#Celular #Fundo #FoldableWallpaperStudio",
+    "button": "Baixar na App Store",
+    "variant": "b",
+    "alt": "Foldable Wallpaper Studio — Aberto: a cena inteira — 5 widgets com o seu papel de parede — Papel de parede para dobrável",
+    "store": "https://apps.apple.com/br/app/id6824946559?pt=118326163&ct=social&mt=8",
+    "play": null,
+    "review": {
+     "label": "Já usa este app? Avalie ou escreva uma resenha na App Store",
+     "url": "https://apps.apple.com/app/id6824946559?action=write-review"
+    },
+    "keywords": [
+     "celular",
+     "fundo",
+     "tela",
+     "bloqueio",
+     "estético",
+     "personalizado"
+    ],
+    "keyline": "Papel de parede para dobrável",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "f96f07572e601261",
      "real_recording": false,
      "rules": "2026-10-18"
     }
@@ -39987,6 +40581,708 @@
       "Mochi かわいいToDo"
      ]
     }
+   },
+   {
+    "kind": "clip",
+    "key": "gbago/en",
+    "locale": "en",
+    "app": "gbago",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/86a812784b.mp4",
+    "hook": "4 save slots, up to 12, each with a thumbnail",
+    "name": "GBAGo: Visual Saves",
+    "title": "4 save slots, up to 12, each with a thumbnail | Recovery Map · Auto Snapshots | GBAGo visual saves",
+    "tags": [
+     "#VisualSaves",
+     "#Emulator",
+     "#Retro",
+     "#Handheld",
+     "#Rewind",
+     "#GBAGoVisualSaves"
+    ],
+    "caption": "4 save slots, up to 12, each with a thumbnail\nAuto snapshot about every two minutes\nRecovery Map · Auto Snapshots\nGBAGo: Visual Saves\nSearch “GBAGo visual saves” on the App Store\nAlso on Google Play\n\n#VisualSaves #Emulator #Retro #Handheld #GBAGovisualsaves",
+    "button": "Get it on the App Store",
+    "variant": "b",
+    "alt": "GBAGo: Visual Saves — 4 save slots, up to 12, each with a thumbnail — Auto snapshot about every two minutes — Recovery Map · Auto Snapshots",
+    "store": "https://apps.apple.com/us/app/id6804564400?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.GBAGo&referrer=utm_source%3Dsocial%26utm_campaign%3Dgbago",
+    "review": {
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6804564400?action=write-review"
+    },
+    "keywords": [
+     "emulator",
+     "retro",
+     "handheld",
+     "rewind",
+     "backup",
+     "checksum"
+    ],
+    "keyline": "Recovery Map · Auto Snapshots",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "41645584543378d1",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "4 save slots, up to 12, each with a thumbnail | GBAGo visual saves #Shorts",
+     "description": "4 save slots, up to 12, each with a thumbnail\nAuto snapshot about every two minutes\nRecovery Map · Auto Snapshots\n\nGBAGo: Visual Saves\nApp Store: https://apps.apple.com/us/app/id6804564400?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GBAGo&referrer=utm_source%3Dsocial%26utm_campaign%3Dgbago\nAlready using this app? Rate or review it on the App Store\nhttps://apps.apple.com/app/id6804564400?action=write-review\n\nemulator · retro · handheld · rewind · backup · checksum\n\n#Shorts #VisualSaves #GBAGovisualsaves",
+     "tags": [
+      "emulator",
+      "retro",
+      "handheld",
+      "rewind",
+      "backup",
+      "checksum",
+      "VisualSaves",
+      "GBAGoVisualSaves",
+      "GBAGo visual saves"
+     ]
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "gbago/zh-Hant",
+    "locale": "zh-Hant",
+    "app": "gbago",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/43dcf146ff.mp4",
+    "hook": "存檔 4 格起跳 可擴充到 12 格・附縮圖",
+    "name": "GBAGo: 視覺存檔",
+    "title": "存檔 4 格起跳 可擴充到 12 格・附縮圖 | 復原地圖 · 自動快照 | GBAGo 視覺存檔",
+    "tags": [
+     "#視覺存檔",
+     "#模擬器",
+     "#金手指",
+     "#即時存檔",
+     "#卡帶",
+     "#GBAGo視覺存檔"
+    ],
+    "caption": "存檔 4 格起跳 可擴充到 12 格・附縮圖\n每兩分鐘 自動存一張快照\n復原地圖 · 自動快照\nGBAGo: 視覺存檔\n在 App Store 搜尋「GBAGo 視覺存檔」\nAndroid 版在 Google Play\n\n#視覺存檔 #模擬器 #金手指 #即時存檔 #GBAGo視覺存檔",
+    "button": "在 App Store 下載",
+    "variant": "b",
+    "alt": "GBAGo: 視覺存檔 — 存檔 4 格起跳 可擴充到 12 格・附縮圖 — 每兩分鐘 自動存一張快照 — 復原地圖 · 自動快照",
+    "store": "https://apps.apple.com/tw/app/id6804564400?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.GBAGo&referrer=utm_source%3Dsocial%26utm_campaign%3Dgbago",
+    "review": {
+     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
+     "url": "https://apps.apple.com/app/id6804564400?action=write-review"
+    },
+    "keywords": [
+     "模擬器",
+     "金手指",
+     "即時存檔",
+     "卡帶",
+     "快轉",
+     "手把"
+    ],
+    "keyline": "復原地圖 · 自動快照",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "41645584543378d1",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "存檔 4 格起跳 可擴充到 12 格・附縮圖 | GBAGo 視覺存檔 #Shorts",
+     "description": "存檔 4 格起跳 可擴充到 12 格・附縮圖\n每兩分鐘 自動存一張快照\n復原地圖 · 自動快照\n\nGBAGo: 視覺存檔\nApp Store: https://apps.apple.com/tw/app/id6804564400?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GBAGo&referrer=utm_source%3Dsocial%26utm_campaign%3Dgbago\n已經在用這款 App？可以到 App Store 評分或撰寫評論\nhttps://apps.apple.com/app/id6804564400?action=write-review\n\n模擬器 · 金手指 · 即時存檔 · 卡帶 · 快轉 · 手把\n\n#Shorts #視覺存檔 #GBAGo視覺存檔",
+     "tags": [
+      "模擬器",
+      "金手指",
+      "即時存檔",
+      "卡帶",
+      "快轉",
+      "手把",
+      "視覺存檔",
+      "GBAGo視覺存檔",
+      "GBAGo 視覺存檔"
+     ]
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "gbago/ja",
+    "locale": "ja",
+    "app": "gbago",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/0b63fd6075.mp4",
+    "hook": "セーブは4スロット 最大12まで・サムネイル付き",
+    "name": "GBAGo: 見えるセーブ",
+    "title": "セーブは4スロット 最大12まで・サムネイル付き | リカバリーマップ · 自動スナップショット | GBAGo 見えるセーブ",
+    "tags": [
+     "#見えるセーブ",
+     "#エミュレータ",
+     "#レトロゲーム",
+     "#チート",
+     "#どこでもセーブ",
+     "#GBAGo見えるセーブ"
+    ],
+    "caption": "セーブは4スロット 最大12まで・サムネイル付き\n2分ごとに 自動スナップショット\nリカバリーマップ · 自動スナップショット\nGBAGo: 見えるセーブ\nApp Storeで「GBAGo 見えるセーブ」を検索\nAndroidはGoogle Playで\n\n#見えるセーブ #エミュレータ #レトロゲーム #チート #GBAGo見えるセーブ",
+    "button": "App Storeで入手",
+    "variant": "b",
+    "alt": "GBAGo: 見えるセーブ — セーブは4スロット 最大12まで・サムネイル付き — 2分ごとに 自動スナップショット — リカバリーマップ · 自動スナップショット",
+    "store": "https://apps.apple.com/jp/app/id6804564400?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.GBAGo&referrer=utm_source%3Dsocial%26utm_campaign%3Dgbago",
+    "review": {
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6804564400?action=write-review"
+    },
+    "keywords": [
+     "エミュレータ",
+     "レトロゲーム",
+     "チート",
+     "どこでもセーブ",
+     "カセット",
+     "連射"
+    ],
+    "keyline": "リカバリーマップ · 自動スナップショット",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "41645584543378d1",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "セーブは4スロット 最大12まで・サムネイル付き | GBAGo 見えるセーブ #Shorts",
+     "description": "セーブは4スロット 最大12まで・サムネイル付き\n2分ごとに 自動スナップショット\nリカバリーマップ · 自動スナップショット\n\nGBAGo: 見えるセーブ\nApp Store: https://apps.apple.com/jp/app/id6804564400?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GBAGo&referrer=utm_source%3Dsocial%26utm_campaign%3Dgbago\nこのアプリをお使いですか？App Store で評価・レビューできます\nhttps://apps.apple.com/app/id6804564400?action=write-review\n\nエミュレータ · レトロゲーム · チート · どこでもセーブ · カセット · 連射\n\n#Shorts #見えるセーブ #GBAGo見えるセーブ",
+     "tags": [
+      "エミュレータ",
+      "レトロゲーム",
+      "チート",
+      "どこでもセーブ",
+      "カセット",
+      "連射",
+      "見えるセーブ",
+      "GBAGo見えるセーブ",
+      "GBAGo 見えるセーブ"
+     ]
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "gbago/ko",
+    "locale": "ko",
+    "app": "gbago",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/7f3faa4746.mp4",
+    "hook": "저장 슬롯 기본 4개 최대 12개・썸네일 포함",
+    "name": "GBAGo: 비주얼 세이브",
+    "title": "저장 슬롯 기본 4개 최대 12개・썸네일 포함 | 복구 지도 · 자동 스냅샷 | GBAGo 비주얼 세이브",
+    "tags": [
+     "#비주얼세이브",
+     "#에뮬레이터",
+     "#레트로게임",
+     "#고전게임",
+     "#치트",
+     "#GBAGo비주얼세이브"
+    ],
+    "caption": "저장 슬롯 기본 4개 최대 12개・썸네일 포함\n2분마다 자동 스냅샷\n복구 지도 · 자동 스냅샷\nGBAGo: 비주얼 세이브\nApp Store에서 'GBAGo 비주얼 세이브' 검색\nAndroid는 Google Play에서\n\n#비주얼세이브 #에뮬레이터 #레트로게임 #고전게임 #GBAGo비주얼세이브",
+    "button": "App Store에서 받기",
+    "variant": "b",
+    "alt": "GBAGo: 비주얼 세이브 — 저장 슬롯 기본 4개 최대 12개・썸네일 포함 — 2분마다 자동 스냅샷 — 복구 지도 · 자동 스냅샷",
+    "store": "https://apps.apple.com/kr/app/id6804564400?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.GBAGo&referrer=utm_source%3Dsocial%26utm_campaign%3Dgbago",
+    "review": {
+     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
+     "url": "https://apps.apple.com/app/id6804564400?action=write-review"
+    },
+    "keywords": [
+     "에뮬레이터",
+     "레트로게임",
+     "고전게임",
+     "치트",
+     "복원",
+     "카트리지"
+    ],
+    "keyline": "복구 지도 · 자동 스냅샷",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "41645584543378d1",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "저장 슬롯 기본 4개 최대 12개・썸네일 포함 | GBAGo 비주얼 세이브 #Shorts",
+     "description": "저장 슬롯 기본 4개 최대 12개・썸네일 포함\n2분마다 자동 스냅샷\n복구 지도 · 자동 스냅샷\n\nGBAGo: 비주얼 세이브\nApp Store: https://apps.apple.com/kr/app/id6804564400?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GBAGo&referrer=utm_source%3Dsocial%26utm_campaign%3Dgbago\n이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다\nhttps://apps.apple.com/app/id6804564400?action=write-review\n\n에뮬레이터 · 레트로게임 · 고전게임 · 치트 · 복원 · 카트리지\n\n#Shorts #비주얼세이브 #GBAGo비주얼세이브",
+     "tags": [
+      "에뮬레이터",
+      "레트로게임",
+      "고전게임",
+      "치트",
+      "복원",
+      "카트리지",
+      "비주얼세이브",
+      "GBAGo비주얼세이브",
+      "GBAGo 비주얼 세이브"
+     ]
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "gbago/de",
+    "locale": "de",
+    "app": "gbago",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/dc4a32de4d.mp4",
+    "hook": "4 Spielstand-Slots, erweiterbar auf 12, mit Vorschaubild",
+    "name": "GBAGo: Visuelle Spielstände",
+    "title": "4 Spielstand-Slots, erweiterbar auf 12, mit Vorschaubild | Rettungskarte · Auto-Snapshots | GBAGo S…",
+    "tags": [
+     "#VisuelleSpielstände",
+     "#Spiele",
+     "#Konsole",
+     "#Spielstand",
+     "#Cheats",
+     "#GBAGoSpielstände"
+    ],
+    "caption": "4 Spielstand-Slots, erweiterbar auf 12, mit Vorschaubild\nAuto-Snapshot alle zwei Minuten\nRettungskarte · Auto-Snapshots\nGBAGo: Visuelle Spielstände\nIm App Store nach „GBAGo Spielstände“ suchen\nAuch bei Google Play\n\n#VisuelleSpielstände #Spiele #Konsole #Spielstand #GBAGoSpielstände",
+    "button": "Im App Store laden",
+    "variant": "b",
+    "alt": "GBAGo: Visuelle Spielstände — 4 Spielstand-Slots, erweiterbar auf 12, mit Vorschaubild — Auto-Snapshot alle zwei Minuten — Rettungskarte · Auto-Snapshots",
+    "store": "https://apps.apple.com/de/app/id6804564400?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.GBAGo&referrer=utm_source%3Dsocial%26utm_campaign%3Dgbago",
+    "review": {
+     "label": "Sie nutzen diese App bereits? Bewerten oder rezensieren Sie sie im App Store",
+     "url": "https://apps.apple.com/app/id6804564400?action=write-review"
+    },
+    "keywords": [
+     "spiele",
+     "konsole",
+     "spielstand",
+     "cheats",
+     "emulation",
+     "controller"
+    ],
+    "keyline": "Rettungskarte · Auto-Snapshots",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "41645584543378d1",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "4 Spielstand-Slots, erweiterbar auf 12, mit Vorschaubild | GBAGo Spielstände #Shorts",
+     "description": "4 Spielstand-Slots, erweiterbar auf 12, mit Vorschaubild\nAuto-Snapshot alle zwei Minuten\nRettungskarte · Auto-Snapshots\n\nGBAGo: Visuelle Spielstände\nApp Store: https://apps.apple.com/de/app/id6804564400?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GBAGo&referrer=utm_source%3Dsocial%26utm_campaign%3Dgbago\nSie nutzen diese App bereits? Bewerten oder rezensieren Sie sie im App Store\nhttps://apps.apple.com/app/id6804564400?action=write-review\n\nspiele · konsole · spielstand · cheats · emulation · controller\n\n#Shorts #VisuelleSpielstände #GBAGoSpielstände",
+     "tags": [
+      "spiele",
+      "konsole",
+      "spielstand",
+      "cheats",
+      "emulation",
+      "controller",
+      "VisuelleSpielstände",
+      "GBAGoSpielstände",
+      "GBAGo Spielstände"
+     ]
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "gbago/pt-BR",
+    "locale": "pt-BR",
+    "app": "gbago",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/0e8cebdd2a.mp4",
+    "hook": "4 espaços de save, até 12, cada um com miniatura",
+    "name": "GBAGo: Saves visuais",
+    "title": "4 espaços de save, até 12, cada um com miniatura | Saves visuais | GBAGo saves visuais",
+    "tags": [
+     "#SavesVisuais",
+     "#Emulador",
+     "#Jogos",
+     "#Console",
+     "#Salvar",
+     "#GBAGoSavesVisuais"
+    ],
+    "caption": "4 espaços de save, até 12, cada um com miniatura\nCaptura automática a cada dois minutos\nGBAGo: Saves visuais\nPesquise “GBAGo saves visuais” na App Store\nTambém no Google Play\n\n#SavesVisuais #Emulador #Jogos #Console #GBAGosavesvisuais",
+    "button": "Baixar na App Store",
+    "variant": "b",
+    "alt": "GBAGo: Saves visuais — 4 espaços de save, até 12, cada um com miniatura — Captura automática a cada dois minutos",
+    "store": "https://apps.apple.com/br/app/id6804564400?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.GBAGo&referrer=utm_source%3Dsocial%26utm_campaign%3Dgbago",
+    "review": {
+     "label": "Já usa este app? Avalie ou escreva uma resenha na App Store",
+     "url": "https://apps.apple.com/app/id6804564400?action=write-review"
+    },
+    "keywords": [
+     "emulador",
+     "jogos",
+     "console",
+     "salvar",
+     "truques",
+     "cartucho"
+    ],
+    "keyline": "Saves visuais",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "41645584543378d1",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "4 espaços de save, até 12, cada um com miniatura | GBAGo saves visuais #Shorts",
+     "description": "4 espaços de save, até 12, cada um com miniatura\nCaptura automática a cada dois minutos\nSaves visuais\n\nGBAGo: Saves visuais\nApp Store: https://apps.apple.com/br/app/id6804564400?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GBAGo&referrer=utm_source%3Dsocial%26utm_campaign%3Dgbago\nJá usa este app? Avalie ou escreva uma resenha na App Store\nhttps://apps.apple.com/app/id6804564400?action=write-review\n\nemulador · jogos · console · salvar · truques · cartucho\n\n#Shorts #SavesVisuais #GBAGosavesvisuais",
+     "tags": [
+      "emulador",
+      "jogos",
+      "console",
+      "salvar",
+      "truques",
+      "cartucho",
+      "SavesVisuais",
+      "GBAGoSavesVisuais",
+      "GBAGo saves visuais"
+     ]
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "duowallpaperstudio/en",
+    "locale": "en",
+    "app": "duowallpaperstudio",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/b3a83b5abb.mp4",
+    "hook": "Open: the whole scene",
+    "name": "Foldable Wallpaper Studio",
+    "title": "Open: the whole scene | Dual Screen Pairs & Widgets | Foldable Wallpaper Studio",
+    "tags": [
+     "#Cute",
+     "#Lock",
+     "#Home",
+     "#Background",
+     "#Photo",
+     "#FoldableWallpaperStudio"
+    ],
+    "caption": "Open: the whole scene\n5 widgets drawn with your wallpaper\nDual Screen Pairs & Widgets\nSearch “Foldable Wallpaper Studio” on the App Store\n\n#Cute #Lock #Home #Background #FoldableWallpaperStudio",
+    "button": "Get it on the App Store",
+    "variant": "b",
+    "alt": "Foldable Wallpaper Studio — Open: the whole scene — 5 widgets drawn with your wallpaper — Dual Screen Pairs & Widgets",
+    "store": "https://apps.apple.com/us/app/id6824946559?pt=118326163&ct=social&mt=8",
+    "play": null,
+    "review": {
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6824946559?action=write-review"
+    },
+    "keywords": [
+     "cute",
+     "lock",
+     "home",
+     "background",
+     "photo",
+     "maker"
+    ],
+    "keyline": "Dual Screen Pairs & Widgets",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "f96f07572e601261",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "Open: the whole scene | Foldable Wallpaper Studio #Shorts",
+     "description": "Open: the whole scene\n5 widgets drawn with your wallpaper\nDual Screen Pairs & Widgets\n\nFoldable Wallpaper Studio\nApp Store: https://apps.apple.com/us/app/id6824946559?pt=118326163&ct=social&mt=8\nAlready using this app? Rate or review it on the App Store\nhttps://apps.apple.com/app/id6824946559?action=write-review\n\ncute · lock · home · background · photo · maker\n\n#Shorts #Cute #FoldableWallpaperStudio",
+     "tags": [
+      "cute",
+      "lock",
+      "home",
+      "background",
+      "photo",
+      "maker",
+      "FoldableWallpaperStudio",
+      "Foldable Wallpaper Studio"
+     ]
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "duowallpaperstudio/zh-Hant",
+    "locale": "zh-Hant",
+    "app": "duowallpaperstudio",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/a05e4e38ec.mp4",
+    "hook": "展開，內螢幕是 整片全景",
+    "name": "Foldable Wallpaper Studio",
+    "title": "展開，內螢幕是 整片全景 | 摺疊手機雙螢幕高畫質桌布，外螢幕內螢幕成對＋主畫面美化小工具 | Foldable Wallpaper Studio",
+    "tags": [
+     "#鎖定畫面",
+     "#鎖屏",
+     "#壁紙",
+     "#桌面",
+     "#背景",
+     "#FoldableWallpaperStudio"
+    ],
+    "caption": "展開，內螢幕是 整片全景\n5 款小工具 畫上你選的桌布\n摺疊手機雙螢幕高畫質桌布，外螢幕內螢幕成對＋主畫面美化小工具\n在 App Store 搜尋「Foldable Wallpaper Studio」\n\n#鎖定畫面 #鎖屏 #壁紙 #桌面 #FoldableWallpaperStudio",
+    "button": "在 App Store 下載",
+    "variant": "b",
+    "alt": "Foldable Wallpaper Studio — 展開，內螢幕是 整片全景 — 5 款小工具 畫上你選的桌布 — 摺疊手機雙螢幕高畫質桌布，外螢幕內螢幕成對＋主畫面美化小工具",
+    "store": "https://apps.apple.com/tw/app/id6824946559?pt=118326163&ct=social&mt=8",
+    "play": null,
+    "review": {
+     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
+     "url": "https://apps.apple.com/app/id6824946559?action=write-review"
+    },
+    "keywords": [
+     "鎖定畫面",
+     "鎖屏",
+     "壁紙",
+     "桌面",
+     "背景",
+     "可愛"
+    ],
+    "keyline": "摺疊手機雙螢幕高畫質桌布，外螢幕內螢幕成對＋主畫面美化小工具",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "f96f07572e601261",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "展開，內螢幕是 整片全景 | Foldable Wallpaper Studio #Shorts",
+     "description": "展開，內螢幕是 整片全景\n5 款小工具 畫上你選的桌布\n摺疊手機雙螢幕高畫質桌布，外螢幕內螢幕成對＋主畫面美化小工具\n\nFoldable Wallpaper Studio\nApp Store: https://apps.apple.com/tw/app/id6824946559?pt=118326163&ct=social&mt=8\n已經在用這款 App？可以到 App Store 評分或撰寫評論\nhttps://apps.apple.com/app/id6824946559?action=write-review\n\n鎖定畫面 · 鎖屏 · 壁紙 · 桌面 · 背景 · 可愛\n\n#Shorts #鎖定畫面 #FoldableWallpaperStudio",
+     "tags": [
+      "鎖定畫面",
+      "鎖屏",
+      "壁紙",
+      "桌面",
+      "背景",
+      "可愛",
+      "FoldableWallpaperStudio",
+      "Foldable Wallpaper Studio"
+     ]
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "duowallpaperstudio/ja",
+    "locale": "ja",
+    "app": "duowallpaperstudio",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/c4285cfcdf.mp4",
+    "hook": "開けば 全景",
+    "name": "Foldable Wallpaper Studio",
+    "title": "開けば 全景 | 折りたたみスマホ用壁紙・外画面と内画面にぴったりのペア | Foldable Wallpaper Studio",
+    "tags": [
+     "#かわいい",
+     "#可愛い",
+     "#おしゃれ",
+     "#シンプル",
+     "#高画質",
+     "#FoldableWallpaperStudio"
+    ],
+    "caption": "開けば 全景\n選んだ壁紙で描く 5種のウィジェット\n折りたたみスマホ用壁紙・外画面と内画面にぴったりのペア\nApp Storeで「Foldable Wallpaper Studio」を検索\n\n#かわいい #可愛い #おしゃれ #シンプル #FoldableWallpaperStudio",
+    "button": "App Storeで入手",
+    "variant": "b",
+    "alt": "Foldable Wallpaper Studio — 開けば 全景 — 選んだ壁紙で描く 5種のウィジェット — 折りたたみスマホ用壁紙・外画面と内画面にぴったりのペア",
+    "store": "https://apps.apple.com/jp/app/id6824946559?pt=118326163&ct=social&mt=8",
+    "play": null,
+    "review": {
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6824946559?action=write-review"
+    },
+    "keywords": [
+     "かわいい",
+     "可愛い",
+     "おしゃれ",
+     "シンプル",
+     "高画質",
+     "待ち受け"
+    ],
+    "keyline": "折りたたみスマホ用壁紙・外画面と内画面にぴったりのペア",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "f96f07572e601261",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "開けば 全景 | Foldable Wallpaper Studio #Shorts",
+     "description": "開けば 全景\n選んだ壁紙で描く 5種のウィジェット\n折りたたみスマホ用壁紙・外画面と内画面にぴったりのペア\n\nFoldable Wallpaper Studio\nApp Store: https://apps.apple.com/jp/app/id6824946559?pt=118326163&ct=social&mt=8\nこのアプリをお使いですか？App Store で評価・レビューできます\nhttps://apps.apple.com/app/id6824946559?action=write-review\n\nかわいい · 可愛い · おしゃれ · シンプル · 高画質 · 待ち受け\n\n#Shorts #かわいい #FoldableWallpaperStudio",
+     "tags": [
+      "かわいい",
+      "可愛い",
+      "おしゃれ",
+      "シンプル",
+      "高画質",
+      "待ち受け",
+      "FoldableWallpaperStudio",
+      "Foldable Wallpaper Studio"
+     ]
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "duowallpaperstudio/ko",
+    "locale": "ko",
+    "app": "duowallpaperstudio",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/79299420af.mp4",
+    "hook": "펼치면 같은 장면의 전경",
+    "name": "Foldable Wallpaper Studio",
+    "title": "펼치면 같은 장면의 전경 | 폴더블 배경화면 커버·메인 세트, 위젯 폰꾸미기 | Foldable Wallpaper Studio",
+    "tags": [
+     "#바탕화면",
+     "#만들기",
+     "#사이즈",
+     "#고화질",
+     "#잠금화면",
+     "#FoldableWallpaperStudio"
+    ],
+    "caption": "펼치면 같은 장면의 전경\n고른 배경화면으로 그린 위젯 5종\n폴더블 배경화면 커버·메인 세트, 위젯 폰꾸미기\nApp Store에서 'Foldable Wallpaper Studio' 검색\n\n#바탕화면 #만들기 #사이즈 #고화질 #FoldableWallpaperStudio",
+    "button": "App Store에서 받기",
+    "variant": "b",
+    "alt": "Foldable Wallpaper Studio — 펼치면 같은 장면의 전경 — 고른 배경화면으로 그린 위젯 5종 — 폴더블 배경화면 커버·메인 세트, 위젯 폰꾸미기",
+    "store": "https://apps.apple.com/kr/app/id6824946559?pt=118326163&ct=social&mt=8",
+    "play": null,
+    "review": {
+     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
+     "url": "https://apps.apple.com/app/id6824946559?action=write-review"
+    },
+    "keywords": [
+     "바탕화면",
+     "만들기",
+     "사이즈",
+     "고화질",
+     "잠금화면",
+     "홈화면"
+    ],
+    "keyline": "폴더블 배경화면 커버·메인 세트, 위젯 폰꾸미기",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "f96f07572e601261",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "펼치면 같은 장면의 전경 | Foldable Wallpaper Studio #Shorts",
+     "description": "펼치면 같은 장면의 전경\n고른 배경화면으로 그린 위젯 5종\n폴더블 배경화면 커버·메인 세트, 위젯 폰꾸미기\n\nFoldable Wallpaper Studio\nApp Store: https://apps.apple.com/kr/app/id6824946559?pt=118326163&ct=social&mt=8\n이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다\nhttps://apps.apple.com/app/id6824946559?action=write-review\n\n바탕화면 · 만들기 · 사이즈 · 고화질 · 잠금화면 · 홈화면\n\n#Shorts #바탕화면 #FoldableWallpaperStudio",
+     "tags": [
+      "바탕화면",
+      "만들기",
+      "사이즈",
+      "고화질",
+      "잠금화면",
+      "홈화면",
+      "FoldableWallpaperStudio",
+      "Foldable Wallpaper Studio"
+     ]
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "duowallpaperstudio/de",
+    "locale": "de",
+    "app": "duowallpaperstudio",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/01e2afe12e.mp4",
+    "hook": "Aufgeklappt: die ganze Szene",
+    "name": "Foldable Wallpaper Studio",
+    "title": "Aufgeklappt: die ganze Szene | Foldable Hintergrundbilder HD | Foldable Wallpaper Studio",
+    "tags": [
+     "#Sperrbildschirm",
+     "#Hintergrund",
+     "#Handy",
+     "#Erstellen",
+     "#Süße",
+     "#FoldableWallpaperStudio"
+    ],
+    "caption": "Aufgeklappt: die ganze Szene\n5 Widgets mit deinem Hintergrund\nFoldable Hintergrundbilder HD\nIm App Store nach „Foldable Wallpaper Studio“ suchen\n\n#Sperrbildschirm #Hintergrund #Handy #Erstellen #FoldableWallpaperStudio",
+    "button": "Im App Store laden",
+    "variant": "b",
+    "alt": "Foldable Wallpaper Studio — Aufgeklappt: die ganze Szene — 5 Widgets mit deinem Hintergrund — Foldable Hintergrundbilder HD",
+    "store": "https://apps.apple.com/de/app/id6824946559?pt=118326163&ct=social&mt=8",
+    "play": null,
+    "review": {
+     "label": "Sie nutzen diese App bereits? Bewerten oder rezensieren Sie sie im App Store",
+     "url": "https://apps.apple.com/app/id6824946559?action=write-review"
+    },
+    "keywords": [
+     "sperrbildschirm",
+     "hintergrund",
+     "handy",
+     "erstellen",
+     "süße",
+     "foto"
+    ],
+    "keyline": "Foldable Hintergrundbilder HD",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "f96f07572e601261",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "Aufgeklappt: die ganze Szene | Foldable Wallpaper Studio #Shorts",
+     "description": "Aufgeklappt: die ganze Szene\n5 Widgets mit deinem Hintergrund\nFoldable Hintergrundbilder HD\n\nFoldable Wallpaper Studio\nApp Store: https://apps.apple.com/de/app/id6824946559?pt=118326163&ct=social&mt=8\nSie nutzen diese App bereits? Bewerten oder rezensieren Sie sie im App Store\nhttps://apps.apple.com/app/id6824946559?action=write-review\n\nsperrbildschirm · hintergrund · handy · erstellen · süße · foto\n\n#Shorts #Sperrbildschirm #FoldableWallpaperStudio",
+     "tags": [
+      "sperrbildschirm",
+      "hintergrund",
+      "handy",
+      "erstellen",
+      "süße",
+      "foto",
+      "FoldableWallpaperStudio",
+      "Foldable Wallpaper Studio"
+     ]
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "duowallpaperstudio/pt-BR",
+    "locale": "pt-BR",
+    "app": "duowallpaperstudio",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/145faec030.mp4",
+    "hook": "Aberto: a cena inteira",
+    "name": "Foldable Wallpaper Studio",
+    "title": "Aberto: a cena inteira | Papel de parede para dobrável | Foldable Wallpaper Studio",
+    "tags": [
+     "#Celular",
+     "#Fundo",
+     "#Tela",
+     "#Bloqueio",
+     "#Estético",
+     "#FoldableWallpaperStudio"
+    ],
+    "caption": "Aberto: a cena inteira\n5 widgets com o seu papel de parede\nPapel de parede para dobrável\nPesquise “Foldable Wallpaper Studio” na App Store\n\n#Celular #Fundo #Tela #Bloqueio #FoldableWallpaperStudio",
+    "button": "Baixar na App Store",
+    "variant": "b",
+    "alt": "Foldable Wallpaper Studio — Aberto: a cena inteira — 5 widgets com o seu papel de parede — Papel de parede para dobrável",
+    "store": "https://apps.apple.com/br/app/id6824946559?pt=118326163&ct=social&mt=8",
+    "play": null,
+    "review": {
+     "label": "Já usa este app? Avalie ou escreva uma resenha na App Store",
+     "url": "https://apps.apple.com/app/id6824946559?action=write-review"
+    },
+    "keywords": [
+     "celular",
+     "fundo",
+     "tela",
+     "bloqueio",
+     "estético",
+     "personalizado"
+    ],
+    "keyline": "Papel de parede para dobrável",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "f96f07572e601261",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "Aberto: a cena inteira | Foldable Wallpaper Studio #Shorts",
+     "description": "Aberto: a cena inteira\n5 widgets com o seu papel de parede\nPapel de parede para dobrável\n\nFoldable Wallpaper Studio\nApp Store: https://apps.apple.com/br/app/id6824946559?pt=118326163&ct=social&mt=8\nJá usa este app? Avalie ou escreva uma resenha na App Store\nhttps://apps.apple.com/app/id6824946559?action=write-review\n\ncelular · fundo · tela · bloqueio · estético · personalizado\n\n#Shorts #Celular #FoldableWallpaperStudio",
+     "tags": [
+      "celular",
+      "fundo",
+      "tela",
+      "bloqueio",
+      "estético",
+      "personalizado",
+      "FoldableWallpaperStudio",
+      "Foldable Wallpaper Studio"
+     ]
+    }
    }
   ],
   "pinterest": [
@@ -52198,7 +53494,7 @@
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "3 levels in every topic\n47 languages to learn\nLearn Spanish, French & More\nDailyMate: Language Phrases\nSearch “everyday phrases” on the App Store\nAlso on Google Play\n\n#LanguagePhrases #Everyday #German #Phrasebook #DailyMatePhrases\n\nGet it on the App Store: https://apps.apple.com/us/app/id6790418321?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate",
+     "description": "3 levels in every topic\n47 languages to learn\nLearn Spanish, French & More\nDailyMate: Language Phrases\nSearch “everyday phrases” on the App Store\nAlso on Google Play\n\n#LanguagePhrases #Everyday #German #Phrasebook #DailyMatePhrases\n\nGet it on the App Store: https://apps.apple.com/us/app/id6790418321?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate\nLite: https://apps.apple.com/app/id6794725568?ct=social_lite\nLite Google Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite&referrer=utm_source%3Dsocial_lite%26utm_campaign%3Ddailymatelite",
      "link": "https://apps.apple.com/us/app/id6790418321?pt=118326163&ct=social&mt=8"
     }
    },
@@ -52246,7 +53542,7 @@
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "每個主題都分 初中高三級\n47 種語言任你學\n每日一句・情境短句與會話\nDailyMate：用句子學語言\n在 App Store 搜尋「DailyMate 用句子學語言」\nAndroid 版在 Google Play\n\n#用句子學語言 #實用會話 #英文短句 #學英文 #DailyMate用句子學語言\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6790418321?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate",
+     "description": "每個主題都分 初中高三級\n47 種語言任你學\n每日一句・情境短句與會話\nDailyMate：用句子學語言\n在 App Store 搜尋「DailyMate 用句子學語言」\nAndroid 版在 Google Play\n\n#用句子學語言 #實用會話 #英文短句 #學英文 #DailyMate用句子學語言\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6790418321?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate\nLite: https://apps.apple.com/app/id6794725568?ct=social_lite\nLite Google Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite&referrer=utm_source%3Dsocial_lite%26utm_campaign%3Ddailymatelite",
      "link": "https://apps.apple.com/tw/app/id6790418321?pt=118326163&ct=social&mt=8"
     }
    },
@@ -52294,7 +53590,7 @@
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "どのテーマも 3レベル\n学べる言語は47\n毎日一文で身につく実用会話\nDailyMate：文で身につく語学\nApp Storeで「DailyMate 文で身につく語学」を検索\nAndroidはGoogle Playで\n\n#文で身につく語学 #実用 #フレーズ集 #日常会話 #DailyMate文で身につく語学\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6790418321?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate",
+     "description": "どのテーマも 3レベル\n学べる言語は47\n毎日一文で身につく実用会話\nDailyMate：文で身につく語学\nApp Storeで「DailyMate 文で身につく語学」を検索\nAndroidはGoogle Playで\n\n#文で身につく語学 #実用 #フレーズ集 #日常会話 #DailyMate文で身につく語学\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6790418321?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate\nLite: https://apps.apple.com/app/id6794725568?ct=social_lite\nLite Google Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite&referrer=utm_source%3Dsocial_lite%26utm_campaign%3Ddailymatelite",
      "link": "https://apps.apple.com/jp/app/id6790418321?pt=118326163&ct=social&mt=8"
     }
    },
@@ -52342,7 +53638,7 @@
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "주제마다 3단계 난이도\n배울 수 있는 언어 47개\n생활영어, 일본어, 중국어 회화\nDailyMate: 문장으로 배우는 언어\nApp Store에서 'DailyMate 문장으로 배우는 언어' 검색\nAndroid는 Google Play에서\n\n#문장으로배우는언어 #영어회화 #영어공부 #일상회화 #DailyMate문장으로배우는언어\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6790418321?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate",
+     "description": "주제마다 3단계 난이도\n배울 수 있는 언어 47개\n생활영어, 일본어, 중국어 회화\nDailyMate: 문장으로 배우는 언어\nApp Store에서 'DailyMate 문장으로 배우는 언어' 검색\nAndroid는 Google Play에서\n\n#문장으로배우는언어 #영어회화 #영어공부 #일상회화 #DailyMate문장으로배우는언어\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6790418321?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate\nLite: https://apps.apple.com/app/id6794725568?ct=social_lite\nLite Google Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite&referrer=utm_source%3Dsocial_lite%26utm_campaign%3Ddailymatelite",
      "link": "https://apps.apple.com/kr/app/id6790418321?pt=118326163&ct=social&mt=8"
     }
    },
@@ -56890,6 +58186,582 @@
     "pinterest": {
      "description": "仮装、お菓子、かぼちゃ…タップで完了\nかわいいテーマ101種\nやることリストをかわいく整える\nMochi: かわいいToDo\nApp Storeで「Mochi かわいいToDo」を検索\nAndroidはGoogle Playで\n\n#リマインダー #予定 #メモ #習慣 #MochiかわいいToDo\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6785004775?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi",
      "link": "https://apps.apple.com/jp/app/id6785004775?pt=118326163&ct=social&mt=8"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "gbago/en",
+    "locale": "en",
+    "app": "gbago",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/86a812784b.mp4",
+    "hook": "4 save slots, up to 12, each with a thumbnail",
+    "name": "GBAGo: Visual Saves",
+    "title": "4 save slots, up to 12, each with a thumbnail | Recovery Map · Auto Snapshots | GBAGo visual saves",
+    "tags": [
+     "#VisualSaves",
+     "#Emulator",
+     "#Retro",
+     "#Handheld",
+     "#Rewind",
+     "#GBAGoVisualSaves"
+    ],
+    "caption": "4 save slots, up to 12, each with a thumbnail\nAuto snapshot about every two minutes\nRecovery Map · Auto Snapshots\nGBAGo: Visual Saves\nSearch “GBAGo visual saves” on the App Store\nAlso on Google Play\n\n#VisualSaves #Emulator #Retro #Handheld #GBAGovisualsaves",
+    "button": "Get it on the App Store",
+    "variant": "b",
+    "alt": "GBAGo: Visual Saves — 4 save slots, up to 12, each with a thumbnail — Auto snapshot about every two minutes — Recovery Map · Auto Snapshots",
+    "store": "https://apps.apple.com/us/app/id6804564400?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.GBAGo&referrer=utm_source%3Dsocial%26utm_campaign%3Dgbago",
+    "review": {
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6804564400?action=write-review"
+    },
+    "keywords": [
+     "emulator",
+     "retro",
+     "handheld",
+     "rewind",
+     "backup",
+     "checksum"
+    ],
+    "keyline": "Recovery Map · Auto Snapshots",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "41645584543378d1",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "4 save slots, up to 12, each with a thumbnail\nAuto snapshot about every two minutes\nRecovery Map · Auto Snapshots\nGBAGo: Visual Saves\nSearch “GBAGo visual saves” on the App Store\nAlso on Google Play\n\n#VisualSaves #Emulator #Retro #Handheld #GBAGovisualsaves\n\nGet it on the App Store: https://apps.apple.com/us/app/id6804564400?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GBAGo&referrer=utm_source%3Dsocial%26utm_campaign%3Dgbago",
+     "link": "https://apps.apple.com/us/app/id6804564400?pt=118326163&ct=social&mt=8"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "gbago/zh-Hant",
+    "locale": "zh-Hant",
+    "app": "gbago",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/43dcf146ff.mp4",
+    "hook": "存檔 4 格起跳 可擴充到 12 格・附縮圖",
+    "name": "GBAGo: 視覺存檔",
+    "title": "存檔 4 格起跳 可擴充到 12 格・附縮圖 | 復原地圖 · 自動快照 | GBAGo 視覺存檔",
+    "tags": [
+     "#視覺存檔",
+     "#模擬器",
+     "#金手指",
+     "#即時存檔",
+     "#卡帶",
+     "#GBAGo視覺存檔"
+    ],
+    "caption": "存檔 4 格起跳 可擴充到 12 格・附縮圖\n每兩分鐘 自動存一張快照\n復原地圖 · 自動快照\nGBAGo: 視覺存檔\n在 App Store 搜尋「GBAGo 視覺存檔」\nAndroid 版在 Google Play\n\n#視覺存檔 #模擬器 #金手指 #即時存檔 #GBAGo視覺存檔",
+    "button": "在 App Store 下載",
+    "variant": "b",
+    "alt": "GBAGo: 視覺存檔 — 存檔 4 格起跳 可擴充到 12 格・附縮圖 — 每兩分鐘 自動存一張快照 — 復原地圖 · 自動快照",
+    "store": "https://apps.apple.com/tw/app/id6804564400?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.GBAGo&referrer=utm_source%3Dsocial%26utm_campaign%3Dgbago",
+    "review": {
+     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
+     "url": "https://apps.apple.com/app/id6804564400?action=write-review"
+    },
+    "keywords": [
+     "模擬器",
+     "金手指",
+     "即時存檔",
+     "卡帶",
+     "快轉",
+     "手把"
+    ],
+    "keyline": "復原地圖 · 自動快照",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "41645584543378d1",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "存檔 4 格起跳 可擴充到 12 格・附縮圖\n每兩分鐘 自動存一張快照\n復原地圖 · 自動快照\nGBAGo: 視覺存檔\n在 App Store 搜尋「GBAGo 視覺存檔」\nAndroid 版在 Google Play\n\n#視覺存檔 #模擬器 #金手指 #即時存檔 #GBAGo視覺存檔\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6804564400?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GBAGo&referrer=utm_source%3Dsocial%26utm_campaign%3Dgbago",
+     "link": "https://apps.apple.com/tw/app/id6804564400?pt=118326163&ct=social&mt=8"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "gbago/ja",
+    "locale": "ja",
+    "app": "gbago",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/0b63fd6075.mp4",
+    "hook": "セーブは4スロット 最大12まで・サムネイル付き",
+    "name": "GBAGo: 見えるセーブ",
+    "title": "セーブは4スロット 最大12まで・サムネイル付き | リカバリーマップ · 自動スナップショット | GBAGo 見えるセーブ",
+    "tags": [
+     "#見えるセーブ",
+     "#エミュレータ",
+     "#レトロゲーム",
+     "#チート",
+     "#どこでもセーブ",
+     "#GBAGo見えるセーブ"
+    ],
+    "caption": "セーブは4スロット 最大12まで・サムネイル付き\n2分ごとに 自動スナップショット\nリカバリーマップ · 自動スナップショット\nGBAGo: 見えるセーブ\nApp Storeで「GBAGo 見えるセーブ」を検索\nAndroidはGoogle Playで\n\n#見えるセーブ #エミュレータ #レトロゲーム #チート #GBAGo見えるセーブ",
+    "button": "App Storeで入手",
+    "variant": "b",
+    "alt": "GBAGo: 見えるセーブ — セーブは4スロット 最大12まで・サムネイル付き — 2分ごとに 自動スナップショット — リカバリーマップ · 自動スナップショット",
+    "store": "https://apps.apple.com/jp/app/id6804564400?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.GBAGo&referrer=utm_source%3Dsocial%26utm_campaign%3Dgbago",
+    "review": {
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6804564400?action=write-review"
+    },
+    "keywords": [
+     "エミュレータ",
+     "レトロゲーム",
+     "チート",
+     "どこでもセーブ",
+     "カセット",
+     "連射"
+    ],
+    "keyline": "リカバリーマップ · 自動スナップショット",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "41645584543378d1",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "セーブは4スロット 最大12まで・サムネイル付き\n2分ごとに 自動スナップショット\nリカバリーマップ · 自動スナップショット\nGBAGo: 見えるセーブ\nApp Storeで「GBAGo 見えるセーブ」を検索\nAndroidはGoogle Playで\n\n#見えるセーブ #エミュレータ #レトロゲーム #チート #GBAGo見えるセーブ\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6804564400?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GBAGo&referrer=utm_source%3Dsocial%26utm_campaign%3Dgbago",
+     "link": "https://apps.apple.com/jp/app/id6804564400?pt=118326163&ct=social&mt=8"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "gbago/ko",
+    "locale": "ko",
+    "app": "gbago",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/7f3faa4746.mp4",
+    "hook": "저장 슬롯 기본 4개 최대 12개・썸네일 포함",
+    "name": "GBAGo: 비주얼 세이브",
+    "title": "저장 슬롯 기본 4개 최대 12개・썸네일 포함 | 복구 지도 · 자동 스냅샷 | GBAGo 비주얼 세이브",
+    "tags": [
+     "#비주얼세이브",
+     "#에뮬레이터",
+     "#레트로게임",
+     "#고전게임",
+     "#치트",
+     "#GBAGo비주얼세이브"
+    ],
+    "caption": "저장 슬롯 기본 4개 최대 12개・썸네일 포함\n2분마다 자동 스냅샷\n복구 지도 · 자동 스냅샷\nGBAGo: 비주얼 세이브\nApp Store에서 'GBAGo 비주얼 세이브' 검색\nAndroid는 Google Play에서\n\n#비주얼세이브 #에뮬레이터 #레트로게임 #고전게임 #GBAGo비주얼세이브",
+    "button": "App Store에서 받기",
+    "variant": "b",
+    "alt": "GBAGo: 비주얼 세이브 — 저장 슬롯 기본 4개 최대 12개・썸네일 포함 — 2분마다 자동 스냅샷 — 복구 지도 · 자동 스냅샷",
+    "store": "https://apps.apple.com/kr/app/id6804564400?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.GBAGo&referrer=utm_source%3Dsocial%26utm_campaign%3Dgbago",
+    "review": {
+     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
+     "url": "https://apps.apple.com/app/id6804564400?action=write-review"
+    },
+    "keywords": [
+     "에뮬레이터",
+     "레트로게임",
+     "고전게임",
+     "치트",
+     "복원",
+     "카트리지"
+    ],
+    "keyline": "복구 지도 · 자동 스냅샷",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "41645584543378d1",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "저장 슬롯 기본 4개 최대 12개・썸네일 포함\n2분마다 자동 스냅샷\n복구 지도 · 자동 스냅샷\nGBAGo: 비주얼 세이브\nApp Store에서 'GBAGo 비주얼 세이브' 검색\nAndroid는 Google Play에서\n\n#비주얼세이브 #에뮬레이터 #레트로게임 #고전게임 #GBAGo비주얼세이브\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6804564400?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GBAGo&referrer=utm_source%3Dsocial%26utm_campaign%3Dgbago",
+     "link": "https://apps.apple.com/kr/app/id6804564400?pt=118326163&ct=social&mt=8"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "gbago/de",
+    "locale": "de",
+    "app": "gbago",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/dc4a32de4d.mp4",
+    "hook": "4 Spielstand-Slots, erweiterbar auf 12, mit Vorschaubild",
+    "name": "GBAGo: Visuelle Spielstände",
+    "title": "4 Spielstand-Slots, erweiterbar auf 12, mit Vorschaubild | Rettungskarte · Auto-Snapshots | GBAGo S…",
+    "tags": [
+     "#VisuelleSpielstände",
+     "#Spiele",
+     "#Konsole",
+     "#Spielstand",
+     "#Cheats",
+     "#GBAGoSpielstände"
+    ],
+    "caption": "4 Spielstand-Slots, erweiterbar auf 12, mit Vorschaubild\nAuto-Snapshot alle zwei Minuten\nRettungskarte · Auto-Snapshots\nGBAGo: Visuelle Spielstände\nIm App Store nach „GBAGo Spielstände“ suchen\nAuch bei Google Play\n\n#VisuelleSpielstände #Spiele #Konsole #Spielstand #GBAGoSpielstände",
+    "button": "Im App Store laden",
+    "variant": "b",
+    "alt": "GBAGo: Visuelle Spielstände — 4 Spielstand-Slots, erweiterbar auf 12, mit Vorschaubild — Auto-Snapshot alle zwei Minuten — Rettungskarte · Auto-Snapshots",
+    "store": "https://apps.apple.com/de/app/id6804564400?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.GBAGo&referrer=utm_source%3Dsocial%26utm_campaign%3Dgbago",
+    "review": {
+     "label": "Sie nutzen diese App bereits? Bewerten oder rezensieren Sie sie im App Store",
+     "url": "https://apps.apple.com/app/id6804564400?action=write-review"
+    },
+    "keywords": [
+     "spiele",
+     "konsole",
+     "spielstand",
+     "cheats",
+     "emulation",
+     "controller"
+    ],
+    "keyline": "Rettungskarte · Auto-Snapshots",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "41645584543378d1",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "4 Spielstand-Slots, erweiterbar auf 12, mit Vorschaubild\nAuto-Snapshot alle zwei Minuten\nRettungskarte · Auto-Snapshots\nGBAGo: Visuelle Spielstände\nIm App Store nach „GBAGo Spielstände“ suchen\nAuch bei Google Play\n\n#VisuelleSpielstände #Spiele #Konsole #Spielstand #GBAGoSpielstände\n\nIm App Store laden: https://apps.apple.com/de/app/id6804564400?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GBAGo&referrer=utm_source%3Dsocial%26utm_campaign%3Dgbago",
+     "link": "https://apps.apple.com/de/app/id6804564400?pt=118326163&ct=social&mt=8"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "gbago/pt-BR",
+    "locale": "pt-BR",
+    "app": "gbago",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/0e8cebdd2a.mp4",
+    "hook": "4 espaços de save, até 12, cada um com miniatura",
+    "name": "GBAGo: Saves visuais",
+    "title": "4 espaços de save, até 12, cada um com miniatura | Saves visuais | GBAGo saves visuais",
+    "tags": [
+     "#SavesVisuais",
+     "#Emulador",
+     "#Jogos",
+     "#Console",
+     "#Salvar",
+     "#GBAGoSavesVisuais"
+    ],
+    "caption": "4 espaços de save, até 12, cada um com miniatura\nCaptura automática a cada dois minutos\nGBAGo: Saves visuais\nPesquise “GBAGo saves visuais” na App Store\nTambém no Google Play\n\n#SavesVisuais #Emulador #Jogos #Console #GBAGosavesvisuais",
+    "button": "Baixar na App Store",
+    "variant": "b",
+    "alt": "GBAGo: Saves visuais — 4 espaços de save, até 12, cada um com miniatura — Captura automática a cada dois minutos",
+    "store": "https://apps.apple.com/br/app/id6804564400?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.GBAGo&referrer=utm_source%3Dsocial%26utm_campaign%3Dgbago",
+    "review": {
+     "label": "Já usa este app? Avalie ou escreva uma resenha na App Store",
+     "url": "https://apps.apple.com/app/id6804564400?action=write-review"
+    },
+    "keywords": [
+     "emulador",
+     "jogos",
+     "console",
+     "salvar",
+     "truques",
+     "cartucho"
+    ],
+    "keyline": "Saves visuais",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "41645584543378d1",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "4 espaços de save, até 12, cada um com miniatura\nCaptura automática a cada dois minutos\nGBAGo: Saves visuais\nPesquise “GBAGo saves visuais” na App Store\nTambém no Google Play\n\n#SavesVisuais #Emulador #Jogos #Console #GBAGosavesvisuais\n\nBaixar na App Store: https://apps.apple.com/br/app/id6804564400?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GBAGo&referrer=utm_source%3Dsocial%26utm_campaign%3Dgbago",
+     "link": "https://apps.apple.com/br/app/id6804564400?pt=118326163&ct=social&mt=8"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "duowallpaperstudio/en",
+    "locale": "en",
+    "app": "duowallpaperstudio",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/b3a83b5abb.mp4",
+    "hook": "Open: the whole scene",
+    "name": "Foldable Wallpaper Studio",
+    "title": "Open: the whole scene | Dual Screen Pairs & Widgets | Foldable Wallpaper Studio",
+    "tags": [
+     "#Cute",
+     "#Lock",
+     "#Home",
+     "#Background",
+     "#Photo",
+     "#FoldableWallpaperStudio"
+    ],
+    "caption": "Open: the whole scene\n5 widgets drawn with your wallpaper\nDual Screen Pairs & Widgets\nSearch “Foldable Wallpaper Studio” on the App Store\n\n#Cute #Lock #Home #Background #FoldableWallpaperStudio",
+    "button": "Get it on the App Store",
+    "variant": "b",
+    "alt": "Foldable Wallpaper Studio — Open: the whole scene — 5 widgets drawn with your wallpaper — Dual Screen Pairs & Widgets",
+    "store": "https://apps.apple.com/us/app/id6824946559?pt=118326163&ct=social&mt=8",
+    "play": null,
+    "review": {
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6824946559?action=write-review"
+    },
+    "keywords": [
+     "cute",
+     "lock",
+     "home",
+     "background",
+     "photo",
+     "maker"
+    ],
+    "keyline": "Dual Screen Pairs & Widgets",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "f96f07572e601261",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "Open: the whole scene\n5 widgets drawn with your wallpaper\nDual Screen Pairs & Widgets\nSearch “Foldable Wallpaper Studio” on the App Store\n\n#Cute #Lock #Home #Background #FoldableWallpaperStudio\n\nGet it on the App Store: https://apps.apple.com/us/app/id6824946559?pt=118326163&ct=social&mt=8",
+     "link": "https://apps.apple.com/us/app/id6824946559?pt=118326163&ct=social&mt=8"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "duowallpaperstudio/zh-Hant",
+    "locale": "zh-Hant",
+    "app": "duowallpaperstudio",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/a05e4e38ec.mp4",
+    "hook": "展開，內螢幕是 整片全景",
+    "name": "Foldable Wallpaper Studio",
+    "title": "展開，內螢幕是 整片全景 | 摺疊手機雙螢幕高畫質桌布，外螢幕內螢幕成對＋主畫面美化小工具 | Foldable Wallpaper Studio",
+    "tags": [
+     "#鎖定畫面",
+     "#鎖屏",
+     "#壁紙",
+     "#桌面",
+     "#背景",
+     "#FoldableWallpaperStudio"
+    ],
+    "caption": "展開，內螢幕是 整片全景\n5 款小工具 畫上你選的桌布\n摺疊手機雙螢幕高畫質桌布，外螢幕內螢幕成對＋主畫面美化小工具\n在 App Store 搜尋「Foldable Wallpaper Studio」\n\n#鎖定畫面 #鎖屏 #壁紙 #桌面 #FoldableWallpaperStudio",
+    "button": "在 App Store 下載",
+    "variant": "b",
+    "alt": "Foldable Wallpaper Studio — 展開，內螢幕是 整片全景 — 5 款小工具 畫上你選的桌布 — 摺疊手機雙螢幕高畫質桌布，外螢幕內螢幕成對＋主畫面美化小工具",
+    "store": "https://apps.apple.com/tw/app/id6824946559?pt=118326163&ct=social&mt=8",
+    "play": null,
+    "review": {
+     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
+     "url": "https://apps.apple.com/app/id6824946559?action=write-review"
+    },
+    "keywords": [
+     "鎖定畫面",
+     "鎖屏",
+     "壁紙",
+     "桌面",
+     "背景",
+     "可愛"
+    ],
+    "keyline": "摺疊手機雙螢幕高畫質桌布，外螢幕內螢幕成對＋主畫面美化小工具",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "f96f07572e601261",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "展開，內螢幕是 整片全景\n5 款小工具 畫上你選的桌布\n摺疊手機雙螢幕高畫質桌布，外螢幕內螢幕成對＋主畫面美化小工具\n在 App Store 搜尋「Foldable Wallpaper Studio」\n\n#鎖定畫面 #鎖屏 #壁紙 #桌面 #FoldableWallpaperStudio\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6824946559?pt=118326163&ct=social&mt=8",
+     "link": "https://apps.apple.com/tw/app/id6824946559?pt=118326163&ct=social&mt=8"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "duowallpaperstudio/ja",
+    "locale": "ja",
+    "app": "duowallpaperstudio",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/c4285cfcdf.mp4",
+    "hook": "開けば 全景",
+    "name": "Foldable Wallpaper Studio",
+    "title": "開けば 全景 | 折りたたみスマホ用壁紙・外画面と内画面にぴったりのペア | Foldable Wallpaper Studio",
+    "tags": [
+     "#かわいい",
+     "#可愛い",
+     "#おしゃれ",
+     "#シンプル",
+     "#高画質",
+     "#FoldableWallpaperStudio"
+    ],
+    "caption": "開けば 全景\n選んだ壁紙で描く 5種のウィジェット\n折りたたみスマホ用壁紙・外画面と内画面にぴったりのペア\nApp Storeで「Foldable Wallpaper Studio」を検索\n\n#かわいい #可愛い #おしゃれ #シンプル #FoldableWallpaperStudio",
+    "button": "App Storeで入手",
+    "variant": "b",
+    "alt": "Foldable Wallpaper Studio — 開けば 全景 — 選んだ壁紙で描く 5種のウィジェット — 折りたたみスマホ用壁紙・外画面と内画面にぴったりのペア",
+    "store": "https://apps.apple.com/jp/app/id6824946559?pt=118326163&ct=social&mt=8",
+    "play": null,
+    "review": {
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6824946559?action=write-review"
+    },
+    "keywords": [
+     "かわいい",
+     "可愛い",
+     "おしゃれ",
+     "シンプル",
+     "高画質",
+     "待ち受け"
+    ],
+    "keyline": "折りたたみスマホ用壁紙・外画面と内画面にぴったりのペア",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "f96f07572e601261",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "開けば 全景\n選んだ壁紙で描く 5種のウィジェット\n折りたたみスマホ用壁紙・外画面と内画面にぴったりのペア\nApp Storeで「Foldable Wallpaper Studio」を検索\n\n#かわいい #可愛い #おしゃれ #シンプル #FoldableWallpaperStudio\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6824946559?pt=118326163&ct=social&mt=8",
+     "link": "https://apps.apple.com/jp/app/id6824946559?pt=118326163&ct=social&mt=8"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "duowallpaperstudio/ko",
+    "locale": "ko",
+    "app": "duowallpaperstudio",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/79299420af.mp4",
+    "hook": "펼치면 같은 장면의 전경",
+    "name": "Foldable Wallpaper Studio",
+    "title": "펼치면 같은 장면의 전경 | 폴더블 배경화면 커버·메인 세트, 위젯 폰꾸미기 | Foldable Wallpaper Studio",
+    "tags": [
+     "#바탕화면",
+     "#만들기",
+     "#사이즈",
+     "#고화질",
+     "#잠금화면",
+     "#FoldableWallpaperStudio"
+    ],
+    "caption": "펼치면 같은 장면의 전경\n고른 배경화면으로 그린 위젯 5종\n폴더블 배경화면 커버·메인 세트, 위젯 폰꾸미기\nApp Store에서 'Foldable Wallpaper Studio' 검색\n\n#바탕화면 #만들기 #사이즈 #고화질 #FoldableWallpaperStudio",
+    "button": "App Store에서 받기",
+    "variant": "b",
+    "alt": "Foldable Wallpaper Studio — 펼치면 같은 장면의 전경 — 고른 배경화면으로 그린 위젯 5종 — 폴더블 배경화면 커버·메인 세트, 위젯 폰꾸미기",
+    "store": "https://apps.apple.com/kr/app/id6824946559?pt=118326163&ct=social&mt=8",
+    "play": null,
+    "review": {
+     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
+     "url": "https://apps.apple.com/app/id6824946559?action=write-review"
+    },
+    "keywords": [
+     "바탕화면",
+     "만들기",
+     "사이즈",
+     "고화질",
+     "잠금화면",
+     "홈화면"
+    ],
+    "keyline": "폴더블 배경화면 커버·메인 세트, 위젯 폰꾸미기",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "f96f07572e601261",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "펼치면 같은 장면의 전경\n고른 배경화면으로 그린 위젯 5종\n폴더블 배경화면 커버·메인 세트, 위젯 폰꾸미기\nApp Store에서 'Foldable Wallpaper Studio' 검색\n\n#바탕화면 #만들기 #사이즈 #고화질 #FoldableWallpaperStudio\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6824946559?pt=118326163&ct=social&mt=8",
+     "link": "https://apps.apple.com/kr/app/id6824946559?pt=118326163&ct=social&mt=8"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "duowallpaperstudio/de",
+    "locale": "de",
+    "app": "duowallpaperstudio",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/01e2afe12e.mp4",
+    "hook": "Aufgeklappt: die ganze Szene",
+    "name": "Foldable Wallpaper Studio",
+    "title": "Aufgeklappt: die ganze Szene | Foldable Hintergrundbilder HD | Foldable Wallpaper Studio",
+    "tags": [
+     "#Sperrbildschirm",
+     "#Hintergrund",
+     "#Handy",
+     "#Erstellen",
+     "#Süße",
+     "#FoldableWallpaperStudio"
+    ],
+    "caption": "Aufgeklappt: die ganze Szene\n5 Widgets mit deinem Hintergrund\nFoldable Hintergrundbilder HD\nIm App Store nach „Foldable Wallpaper Studio“ suchen\n\n#Sperrbildschirm #Hintergrund #Handy #Erstellen #FoldableWallpaperStudio",
+    "button": "Im App Store laden",
+    "variant": "b",
+    "alt": "Foldable Wallpaper Studio — Aufgeklappt: die ganze Szene — 5 Widgets mit deinem Hintergrund — Foldable Hintergrundbilder HD",
+    "store": "https://apps.apple.com/de/app/id6824946559?pt=118326163&ct=social&mt=8",
+    "play": null,
+    "review": {
+     "label": "Sie nutzen diese App bereits? Bewerten oder rezensieren Sie sie im App Store",
+     "url": "https://apps.apple.com/app/id6824946559?action=write-review"
+    },
+    "keywords": [
+     "sperrbildschirm",
+     "hintergrund",
+     "handy",
+     "erstellen",
+     "süße",
+     "foto"
+    ],
+    "keyline": "Foldable Hintergrundbilder HD",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "f96f07572e601261",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "Aufgeklappt: die ganze Szene\n5 Widgets mit deinem Hintergrund\nFoldable Hintergrundbilder HD\nIm App Store nach „Foldable Wallpaper Studio“ suchen\n\n#Sperrbildschirm #Hintergrund #Handy #Erstellen #FoldableWallpaperStudio\n\nIm App Store laden: https://apps.apple.com/de/app/id6824946559?pt=118326163&ct=social&mt=8",
+     "link": "https://apps.apple.com/de/app/id6824946559?pt=118326163&ct=social&mt=8"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "duowallpaperstudio/pt-BR",
+    "locale": "pt-BR",
+    "app": "duowallpaperstudio",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/145faec030.mp4",
+    "hook": "Aberto: a cena inteira",
+    "name": "Foldable Wallpaper Studio",
+    "title": "Aberto: a cena inteira | Papel de parede para dobrável | Foldable Wallpaper Studio",
+    "tags": [
+     "#Celular",
+     "#Fundo",
+     "#Tela",
+     "#Bloqueio",
+     "#Estético",
+     "#FoldableWallpaperStudio"
+    ],
+    "caption": "Aberto: a cena inteira\n5 widgets com o seu papel de parede\nPapel de parede para dobrável\nPesquise “Foldable Wallpaper Studio” na App Store\n\n#Celular #Fundo #Tela #Bloqueio #FoldableWallpaperStudio",
+    "button": "Baixar na App Store",
+    "variant": "b",
+    "alt": "Foldable Wallpaper Studio — Aberto: a cena inteira — 5 widgets com o seu papel de parede — Papel de parede para dobrável",
+    "store": "https://apps.apple.com/br/app/id6824946559?pt=118326163&ct=social&mt=8",
+    "play": null,
+    "review": {
+     "label": "Já usa este app? Avalie ou escreva uma resenha na App Store",
+     "url": "https://apps.apple.com/app/id6824946559?action=write-review"
+    },
+    "keywords": [
+     "celular",
+     "fundo",
+     "tela",
+     "bloqueio",
+     "estético",
+     "personalizado"
+    ],
+    "keyline": "Papel de parede para dobrável",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "f96f07572e601261",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "Aberto: a cena inteira\n5 widgets com o seu papel de parede\nPapel de parede para dobrável\nPesquise “Foldable Wallpaper Studio” na App Store\n\n#Celular #Fundo #Tela #Bloqueio #FoldableWallpaperStudio\n\nBaixar na App Store: https://apps.apple.com/br/app/id6824946559?pt=118326163&ct=social&mt=8",
+     "link": "https://apps.apple.com/br/app/id6824946559?pt=118326163&ct=social&mt=8"
     }
    }
   ],
@@ -68849,7 +70721,7 @@
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "3 levels in every topic\n47 languages to learn\nLearn Spanish, French & More\nDailyMate: Language Phrases\nSearch “everyday phrases” on the App Store\nAlso on Google Play\n\n#LanguagePhrases #Everyday #German #Phrasebook #DailyMatePhrases\n\nGet it on the App Store: https://apps.apple.com/us/app/id6790418321?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate"
+     "caption": "3 levels in every topic\n47 languages to learn\nLearn Spanish, French & More\nDailyMate: Language Phrases\nSearch “everyday phrases” on the App Store\nAlso on Google Play\n\n#LanguagePhrases #Everyday #German #Phrasebook #DailyMatePhrases\n\nGet it on the App Store: https://apps.apple.com/us/app/id6790418321?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate\nLite: https://apps.apple.com/app/id6794725568?ct=social_lite\nLite Google Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite&referrer=utm_source%3Dsocial_lite%26utm_campaign%3Ddailymatelite"
     }
    },
    {
@@ -68896,7 +70768,7 @@
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "每個主題都分 初中高三級\n47 種語言任你學\n每日一句・情境短句與會話\nDailyMate：用句子學語言\n在 App Store 搜尋「DailyMate 用句子學語言」\nAndroid 版在 Google Play\n\n#用句子學語言 #實用會話 #英文短句 #學英文 #DailyMate用句子學語言\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6790418321?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate"
+     "caption": "每個主題都分 初中高三級\n47 種語言任你學\n每日一句・情境短句與會話\nDailyMate：用句子學語言\n在 App Store 搜尋「DailyMate 用句子學語言」\nAndroid 版在 Google Play\n\n#用句子學語言 #實用會話 #英文短句 #學英文 #DailyMate用句子學語言\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6790418321?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate\nLite: https://apps.apple.com/app/id6794725568?ct=social_lite\nLite Google Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite&referrer=utm_source%3Dsocial_lite%26utm_campaign%3Ddailymatelite"
     }
    },
    {
@@ -68943,7 +70815,7 @@
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "どのテーマも 3レベル\n学べる言語は47\n毎日一文で身につく実用会話\nDailyMate：文で身につく語学\nApp Storeで「DailyMate 文で身につく語学」を検索\nAndroidはGoogle Playで\n\n#文で身につく語学 #実用 #フレーズ集 #日常会話 #DailyMate文で身につく語学\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6790418321?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate"
+     "caption": "どのテーマも 3レベル\n学べる言語は47\n毎日一文で身につく実用会話\nDailyMate：文で身につく語学\nApp Storeで「DailyMate 文で身につく語学」を検索\nAndroidはGoogle Playで\n\n#文で身につく語学 #実用 #フレーズ集 #日常会話 #DailyMate文で身につく語学\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6790418321?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate\nLite: https://apps.apple.com/app/id6794725568?ct=social_lite\nLite Google Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite&referrer=utm_source%3Dsocial_lite%26utm_campaign%3Ddailymatelite"
     }
    },
    {
@@ -68990,7 +70862,7 @@
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "주제마다 3단계 난이도\n배울 수 있는 언어 47개\n생활영어, 일본어, 중국어 회화\nDailyMate: 문장으로 배우는 언어\nApp Store에서 'DailyMate 문장으로 배우는 언어' 검색\nAndroid는 Google Play에서\n\n#문장으로배우는언어 #영어회화 #영어공부 #일상회화 #DailyMate문장으로배우는언어\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6790418321?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate"
+     "caption": "주제마다 3단계 난이도\n배울 수 있는 언어 47개\n생활영어, 일본어, 중국어 회화\nDailyMate: 문장으로 배우는 언어\nApp Store에서 'DailyMate 문장으로 배우는 언어' 검색\nAndroid는 Google Play에서\n\n#문장으로배우는언어 #영어회화 #영어공부 #일상회화 #DailyMate문장으로배우는언어\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6790418321?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate\nLite: https://apps.apple.com/app/id6794725568?ct=social_lite\nLite Google Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite&referrer=utm_source%3Dsocial_lite%26utm_campaign%3Ddailymatelite"
     }
    },
    {
@@ -73442,6 +75314,570 @@
     },
     "tiktok": {
      "caption": "仮装、お菓子、かぼちゃ…タップで完了\nかわいいテーマ101種\nやることリストをかわいく整える\nMochi: かわいいToDo\nApp Storeで「Mochi かわいいToDo」を検索\nAndroidはGoogle Playで\n\n#リマインダー #予定 #メモ #習慣 #MochiかわいいToDo\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6785004775?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "gbago/en",
+    "locale": "en",
+    "app": "gbago",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/86a812784b.mp4",
+    "hook": "4 save slots, up to 12, each with a thumbnail",
+    "name": "GBAGo: Visual Saves",
+    "title": "4 save slots, up to 12, each with a thumbnail | Recovery Map · Auto Snapshots | GBAGo visual saves",
+    "tags": [
+     "#VisualSaves",
+     "#Emulator",
+     "#Retro",
+     "#Handheld",
+     "#Rewind",
+     "#GBAGoVisualSaves"
+    ],
+    "caption": "4 save slots, up to 12, each with a thumbnail\nAuto snapshot about every two minutes\nRecovery Map · Auto Snapshots\nGBAGo: Visual Saves\nSearch “GBAGo visual saves” on the App Store\nAlso on Google Play\n\n#VisualSaves #Emulator #Retro #Handheld #GBAGovisualsaves",
+    "button": "Get it on the App Store",
+    "variant": "b",
+    "alt": "GBAGo: Visual Saves — 4 save slots, up to 12, each with a thumbnail — Auto snapshot about every two minutes — Recovery Map · Auto Snapshots",
+    "store": "https://apps.apple.com/us/app/id6804564400?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.GBAGo&referrer=utm_source%3Dsocial%26utm_campaign%3Dgbago",
+    "review": {
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6804564400?action=write-review"
+    },
+    "keywords": [
+     "emulator",
+     "retro",
+     "handheld",
+     "rewind",
+     "backup",
+     "checksum"
+    ],
+    "keyline": "Recovery Map · Auto Snapshots",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "41645584543378d1",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "4 save slots, up to 12, each with a thumbnail\nAuto snapshot about every two minutes\nRecovery Map · Auto Snapshots\nGBAGo: Visual Saves\nSearch “GBAGo visual saves” on the App Store\nAlso on Google Play\n\n#VisualSaves #Emulator #Retro #Handheld #GBAGovisualsaves\n\nGet it on the App Store: https://apps.apple.com/us/app/id6804564400?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GBAGo&referrer=utm_source%3Dsocial%26utm_campaign%3Dgbago"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "gbago/zh-Hant",
+    "locale": "zh-Hant",
+    "app": "gbago",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/43dcf146ff.mp4",
+    "hook": "存檔 4 格起跳 可擴充到 12 格・附縮圖",
+    "name": "GBAGo: 視覺存檔",
+    "title": "存檔 4 格起跳 可擴充到 12 格・附縮圖 | 復原地圖 · 自動快照 | GBAGo 視覺存檔",
+    "tags": [
+     "#視覺存檔",
+     "#模擬器",
+     "#金手指",
+     "#即時存檔",
+     "#卡帶",
+     "#GBAGo視覺存檔"
+    ],
+    "caption": "存檔 4 格起跳 可擴充到 12 格・附縮圖\n每兩分鐘 自動存一張快照\n復原地圖 · 自動快照\nGBAGo: 視覺存檔\n在 App Store 搜尋「GBAGo 視覺存檔」\nAndroid 版在 Google Play\n\n#視覺存檔 #模擬器 #金手指 #即時存檔 #GBAGo視覺存檔",
+    "button": "在 App Store 下載",
+    "variant": "b",
+    "alt": "GBAGo: 視覺存檔 — 存檔 4 格起跳 可擴充到 12 格・附縮圖 — 每兩分鐘 自動存一張快照 — 復原地圖 · 自動快照",
+    "store": "https://apps.apple.com/tw/app/id6804564400?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.GBAGo&referrer=utm_source%3Dsocial%26utm_campaign%3Dgbago",
+    "review": {
+     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
+     "url": "https://apps.apple.com/app/id6804564400?action=write-review"
+    },
+    "keywords": [
+     "模擬器",
+     "金手指",
+     "即時存檔",
+     "卡帶",
+     "快轉",
+     "手把"
+    ],
+    "keyline": "復原地圖 · 自動快照",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "41645584543378d1",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "存檔 4 格起跳 可擴充到 12 格・附縮圖\n每兩分鐘 自動存一張快照\n復原地圖 · 自動快照\nGBAGo: 視覺存檔\n在 App Store 搜尋「GBAGo 視覺存檔」\nAndroid 版在 Google Play\n\n#視覺存檔 #模擬器 #金手指 #即時存檔 #GBAGo視覺存檔\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6804564400?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GBAGo&referrer=utm_source%3Dsocial%26utm_campaign%3Dgbago"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "gbago/ja",
+    "locale": "ja",
+    "app": "gbago",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/0b63fd6075.mp4",
+    "hook": "セーブは4スロット 最大12まで・サムネイル付き",
+    "name": "GBAGo: 見えるセーブ",
+    "title": "セーブは4スロット 最大12まで・サムネイル付き | リカバリーマップ · 自動スナップショット | GBAGo 見えるセーブ",
+    "tags": [
+     "#見えるセーブ",
+     "#エミュレータ",
+     "#レトロゲーム",
+     "#チート",
+     "#どこでもセーブ",
+     "#GBAGo見えるセーブ"
+    ],
+    "caption": "セーブは4スロット 最大12まで・サムネイル付き\n2分ごとに 自動スナップショット\nリカバリーマップ · 自動スナップショット\nGBAGo: 見えるセーブ\nApp Storeで「GBAGo 見えるセーブ」を検索\nAndroidはGoogle Playで\n\n#見えるセーブ #エミュレータ #レトロゲーム #チート #GBAGo見えるセーブ",
+    "button": "App Storeで入手",
+    "variant": "b",
+    "alt": "GBAGo: 見えるセーブ — セーブは4スロット 最大12まで・サムネイル付き — 2分ごとに 自動スナップショット — リカバリーマップ · 自動スナップショット",
+    "store": "https://apps.apple.com/jp/app/id6804564400?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.GBAGo&referrer=utm_source%3Dsocial%26utm_campaign%3Dgbago",
+    "review": {
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6804564400?action=write-review"
+    },
+    "keywords": [
+     "エミュレータ",
+     "レトロゲーム",
+     "チート",
+     "どこでもセーブ",
+     "カセット",
+     "連射"
+    ],
+    "keyline": "リカバリーマップ · 自動スナップショット",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "41645584543378d1",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "セーブは4スロット 最大12まで・サムネイル付き\n2分ごとに 自動スナップショット\nリカバリーマップ · 自動スナップショット\nGBAGo: 見えるセーブ\nApp Storeで「GBAGo 見えるセーブ」を検索\nAndroidはGoogle Playで\n\n#見えるセーブ #エミュレータ #レトロゲーム #チート #GBAGo見えるセーブ\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6804564400?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GBAGo&referrer=utm_source%3Dsocial%26utm_campaign%3Dgbago"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "gbago/ko",
+    "locale": "ko",
+    "app": "gbago",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/7f3faa4746.mp4",
+    "hook": "저장 슬롯 기본 4개 최대 12개・썸네일 포함",
+    "name": "GBAGo: 비주얼 세이브",
+    "title": "저장 슬롯 기본 4개 최대 12개・썸네일 포함 | 복구 지도 · 자동 스냅샷 | GBAGo 비주얼 세이브",
+    "tags": [
+     "#비주얼세이브",
+     "#에뮬레이터",
+     "#레트로게임",
+     "#고전게임",
+     "#치트",
+     "#GBAGo비주얼세이브"
+    ],
+    "caption": "저장 슬롯 기본 4개 최대 12개・썸네일 포함\n2분마다 자동 스냅샷\n복구 지도 · 자동 스냅샷\nGBAGo: 비주얼 세이브\nApp Store에서 'GBAGo 비주얼 세이브' 검색\nAndroid는 Google Play에서\n\n#비주얼세이브 #에뮬레이터 #레트로게임 #고전게임 #GBAGo비주얼세이브",
+    "button": "App Store에서 받기",
+    "variant": "b",
+    "alt": "GBAGo: 비주얼 세이브 — 저장 슬롯 기본 4개 최대 12개・썸네일 포함 — 2분마다 자동 스냅샷 — 복구 지도 · 자동 스냅샷",
+    "store": "https://apps.apple.com/kr/app/id6804564400?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.GBAGo&referrer=utm_source%3Dsocial%26utm_campaign%3Dgbago",
+    "review": {
+     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
+     "url": "https://apps.apple.com/app/id6804564400?action=write-review"
+    },
+    "keywords": [
+     "에뮬레이터",
+     "레트로게임",
+     "고전게임",
+     "치트",
+     "복원",
+     "카트리지"
+    ],
+    "keyline": "복구 지도 · 자동 스냅샷",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "41645584543378d1",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "저장 슬롯 기본 4개 최대 12개・썸네일 포함\n2분마다 자동 스냅샷\n복구 지도 · 자동 스냅샷\nGBAGo: 비주얼 세이브\nApp Store에서 'GBAGo 비주얼 세이브' 검색\nAndroid는 Google Play에서\n\n#비주얼세이브 #에뮬레이터 #레트로게임 #고전게임 #GBAGo비주얼세이브\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6804564400?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GBAGo&referrer=utm_source%3Dsocial%26utm_campaign%3Dgbago"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "gbago/de",
+    "locale": "de",
+    "app": "gbago",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/dc4a32de4d.mp4",
+    "hook": "4 Spielstand-Slots, erweiterbar auf 12, mit Vorschaubild",
+    "name": "GBAGo: Visuelle Spielstände",
+    "title": "4 Spielstand-Slots, erweiterbar auf 12, mit Vorschaubild | Rettungskarte · Auto-Snapshots | GBAGo S…",
+    "tags": [
+     "#VisuelleSpielstände",
+     "#Spiele",
+     "#Konsole",
+     "#Spielstand",
+     "#Cheats",
+     "#GBAGoSpielstände"
+    ],
+    "caption": "4 Spielstand-Slots, erweiterbar auf 12, mit Vorschaubild\nAuto-Snapshot alle zwei Minuten\nRettungskarte · Auto-Snapshots\nGBAGo: Visuelle Spielstände\nIm App Store nach „GBAGo Spielstände“ suchen\nAuch bei Google Play\n\n#VisuelleSpielstände #Spiele #Konsole #Spielstand #GBAGoSpielstände",
+    "button": "Im App Store laden",
+    "variant": "b",
+    "alt": "GBAGo: Visuelle Spielstände — 4 Spielstand-Slots, erweiterbar auf 12, mit Vorschaubild — Auto-Snapshot alle zwei Minuten — Rettungskarte · Auto-Snapshots",
+    "store": "https://apps.apple.com/de/app/id6804564400?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.GBAGo&referrer=utm_source%3Dsocial%26utm_campaign%3Dgbago",
+    "review": {
+     "label": "Sie nutzen diese App bereits? Bewerten oder rezensieren Sie sie im App Store",
+     "url": "https://apps.apple.com/app/id6804564400?action=write-review"
+    },
+    "keywords": [
+     "spiele",
+     "konsole",
+     "spielstand",
+     "cheats",
+     "emulation",
+     "controller"
+    ],
+    "keyline": "Rettungskarte · Auto-Snapshots",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "41645584543378d1",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "4 Spielstand-Slots, erweiterbar auf 12, mit Vorschaubild\nAuto-Snapshot alle zwei Minuten\nRettungskarte · Auto-Snapshots\nGBAGo: Visuelle Spielstände\nIm App Store nach „GBAGo Spielstände“ suchen\nAuch bei Google Play\n\n#VisuelleSpielstände #Spiele #Konsole #Spielstand #GBAGoSpielstände\n\nIm App Store laden: https://apps.apple.com/de/app/id6804564400?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GBAGo&referrer=utm_source%3Dsocial%26utm_campaign%3Dgbago"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "gbago/pt-BR",
+    "locale": "pt-BR",
+    "app": "gbago",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/0e8cebdd2a.mp4",
+    "hook": "4 espaços de save, até 12, cada um com miniatura",
+    "name": "GBAGo: Saves visuais",
+    "title": "4 espaços de save, até 12, cada um com miniatura | Saves visuais | GBAGo saves visuais",
+    "tags": [
+     "#SavesVisuais",
+     "#Emulador",
+     "#Jogos",
+     "#Console",
+     "#Salvar",
+     "#GBAGoSavesVisuais"
+    ],
+    "caption": "4 espaços de save, até 12, cada um com miniatura\nCaptura automática a cada dois minutos\nGBAGo: Saves visuais\nPesquise “GBAGo saves visuais” na App Store\nTambém no Google Play\n\n#SavesVisuais #Emulador #Jogos #Console #GBAGosavesvisuais",
+    "button": "Baixar na App Store",
+    "variant": "b",
+    "alt": "GBAGo: Saves visuais — 4 espaços de save, até 12, cada um com miniatura — Captura automática a cada dois minutos",
+    "store": "https://apps.apple.com/br/app/id6804564400?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.GBAGo&referrer=utm_source%3Dsocial%26utm_campaign%3Dgbago",
+    "review": {
+     "label": "Já usa este app? Avalie ou escreva uma resenha na App Store",
+     "url": "https://apps.apple.com/app/id6804564400?action=write-review"
+    },
+    "keywords": [
+     "emulador",
+     "jogos",
+     "console",
+     "salvar",
+     "truques",
+     "cartucho"
+    ],
+    "keyline": "Saves visuais",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "41645584543378d1",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "4 espaços de save, até 12, cada um com miniatura\nCaptura automática a cada dois minutos\nGBAGo: Saves visuais\nPesquise “GBAGo saves visuais” na App Store\nTambém no Google Play\n\n#SavesVisuais #Emulador #Jogos #Console #GBAGosavesvisuais\n\nBaixar na App Store: https://apps.apple.com/br/app/id6804564400?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GBAGo&referrer=utm_source%3Dsocial%26utm_campaign%3Dgbago"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "duowallpaperstudio/en",
+    "locale": "en",
+    "app": "duowallpaperstudio",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/b3a83b5abb.mp4",
+    "hook": "Open: the whole scene",
+    "name": "Foldable Wallpaper Studio",
+    "title": "Open: the whole scene | Dual Screen Pairs & Widgets | Foldable Wallpaper Studio",
+    "tags": [
+     "#Cute",
+     "#Lock",
+     "#Home",
+     "#Background",
+     "#Photo",
+     "#FoldableWallpaperStudio"
+    ],
+    "caption": "Open: the whole scene\n5 widgets drawn with your wallpaper\nDual Screen Pairs & Widgets\nSearch “Foldable Wallpaper Studio” on the App Store\n\n#Cute #Lock #Home #Background #FoldableWallpaperStudio",
+    "button": "Get it on the App Store",
+    "variant": "b",
+    "alt": "Foldable Wallpaper Studio — Open: the whole scene — 5 widgets drawn with your wallpaper — Dual Screen Pairs & Widgets",
+    "store": "https://apps.apple.com/us/app/id6824946559?pt=118326163&ct=social&mt=8",
+    "play": null,
+    "review": {
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6824946559?action=write-review"
+    },
+    "keywords": [
+     "cute",
+     "lock",
+     "home",
+     "background",
+     "photo",
+     "maker"
+    ],
+    "keyline": "Dual Screen Pairs & Widgets",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "f96f07572e601261",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "Open: the whole scene\n5 widgets drawn with your wallpaper\nDual Screen Pairs & Widgets\nSearch “Foldable Wallpaper Studio” on the App Store\n\n#Cute #Lock #Home #Background #FoldableWallpaperStudio\n\nGet it on the App Store: https://apps.apple.com/us/app/id6824946559?pt=118326163&ct=social&mt=8"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "duowallpaperstudio/zh-Hant",
+    "locale": "zh-Hant",
+    "app": "duowallpaperstudio",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/a05e4e38ec.mp4",
+    "hook": "展開，內螢幕是 整片全景",
+    "name": "Foldable Wallpaper Studio",
+    "title": "展開，內螢幕是 整片全景 | 摺疊手機雙螢幕高畫質桌布，外螢幕內螢幕成對＋主畫面美化小工具 | Foldable Wallpaper Studio",
+    "tags": [
+     "#鎖定畫面",
+     "#鎖屏",
+     "#壁紙",
+     "#桌面",
+     "#背景",
+     "#FoldableWallpaperStudio"
+    ],
+    "caption": "展開，內螢幕是 整片全景\n5 款小工具 畫上你選的桌布\n摺疊手機雙螢幕高畫質桌布，外螢幕內螢幕成對＋主畫面美化小工具\n在 App Store 搜尋「Foldable Wallpaper Studio」\n\n#鎖定畫面 #鎖屏 #壁紙 #桌面 #FoldableWallpaperStudio",
+    "button": "在 App Store 下載",
+    "variant": "b",
+    "alt": "Foldable Wallpaper Studio — 展開，內螢幕是 整片全景 — 5 款小工具 畫上你選的桌布 — 摺疊手機雙螢幕高畫質桌布，外螢幕內螢幕成對＋主畫面美化小工具",
+    "store": "https://apps.apple.com/tw/app/id6824946559?pt=118326163&ct=social&mt=8",
+    "play": null,
+    "review": {
+     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
+     "url": "https://apps.apple.com/app/id6824946559?action=write-review"
+    },
+    "keywords": [
+     "鎖定畫面",
+     "鎖屏",
+     "壁紙",
+     "桌面",
+     "背景",
+     "可愛"
+    ],
+    "keyline": "摺疊手機雙螢幕高畫質桌布，外螢幕內螢幕成對＋主畫面美化小工具",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "f96f07572e601261",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "展開，內螢幕是 整片全景\n5 款小工具 畫上你選的桌布\n摺疊手機雙螢幕高畫質桌布，外螢幕內螢幕成對＋主畫面美化小工具\n在 App Store 搜尋「Foldable Wallpaper Studio」\n\n#鎖定畫面 #鎖屏 #壁紙 #桌面 #FoldableWallpaperStudio\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6824946559?pt=118326163&ct=social&mt=8"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "duowallpaperstudio/ja",
+    "locale": "ja",
+    "app": "duowallpaperstudio",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/c4285cfcdf.mp4",
+    "hook": "開けば 全景",
+    "name": "Foldable Wallpaper Studio",
+    "title": "開けば 全景 | 折りたたみスマホ用壁紙・外画面と内画面にぴったりのペア | Foldable Wallpaper Studio",
+    "tags": [
+     "#かわいい",
+     "#可愛い",
+     "#おしゃれ",
+     "#シンプル",
+     "#高画質",
+     "#FoldableWallpaperStudio"
+    ],
+    "caption": "開けば 全景\n選んだ壁紙で描く 5種のウィジェット\n折りたたみスマホ用壁紙・外画面と内画面にぴったりのペア\nApp Storeで「Foldable Wallpaper Studio」を検索\n\n#かわいい #可愛い #おしゃれ #シンプル #FoldableWallpaperStudio",
+    "button": "App Storeで入手",
+    "variant": "b",
+    "alt": "Foldable Wallpaper Studio — 開けば 全景 — 選んだ壁紙で描く 5種のウィジェット — 折りたたみスマホ用壁紙・外画面と内画面にぴったりのペア",
+    "store": "https://apps.apple.com/jp/app/id6824946559?pt=118326163&ct=social&mt=8",
+    "play": null,
+    "review": {
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6824946559?action=write-review"
+    },
+    "keywords": [
+     "かわいい",
+     "可愛い",
+     "おしゃれ",
+     "シンプル",
+     "高画質",
+     "待ち受け"
+    ],
+    "keyline": "折りたたみスマホ用壁紙・外画面と内画面にぴったりのペア",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "f96f07572e601261",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "開けば 全景\n選んだ壁紙で描く 5種のウィジェット\n折りたたみスマホ用壁紙・外画面と内画面にぴったりのペア\nApp Storeで「Foldable Wallpaper Studio」を検索\n\n#かわいい #可愛い #おしゃれ #シンプル #FoldableWallpaperStudio\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6824946559?pt=118326163&ct=social&mt=8"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "duowallpaperstudio/ko",
+    "locale": "ko",
+    "app": "duowallpaperstudio",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/79299420af.mp4",
+    "hook": "펼치면 같은 장면의 전경",
+    "name": "Foldable Wallpaper Studio",
+    "title": "펼치면 같은 장면의 전경 | 폴더블 배경화면 커버·메인 세트, 위젯 폰꾸미기 | Foldable Wallpaper Studio",
+    "tags": [
+     "#바탕화면",
+     "#만들기",
+     "#사이즈",
+     "#고화질",
+     "#잠금화면",
+     "#FoldableWallpaperStudio"
+    ],
+    "caption": "펼치면 같은 장면의 전경\n고른 배경화면으로 그린 위젯 5종\n폴더블 배경화면 커버·메인 세트, 위젯 폰꾸미기\nApp Store에서 'Foldable Wallpaper Studio' 검색\n\n#바탕화면 #만들기 #사이즈 #고화질 #FoldableWallpaperStudio",
+    "button": "App Store에서 받기",
+    "variant": "b",
+    "alt": "Foldable Wallpaper Studio — 펼치면 같은 장면의 전경 — 고른 배경화면으로 그린 위젯 5종 — 폴더블 배경화면 커버·메인 세트, 위젯 폰꾸미기",
+    "store": "https://apps.apple.com/kr/app/id6824946559?pt=118326163&ct=social&mt=8",
+    "play": null,
+    "review": {
+     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
+     "url": "https://apps.apple.com/app/id6824946559?action=write-review"
+    },
+    "keywords": [
+     "바탕화면",
+     "만들기",
+     "사이즈",
+     "고화질",
+     "잠금화면",
+     "홈화면"
+    ],
+    "keyline": "폴더블 배경화면 커버·메인 세트, 위젯 폰꾸미기",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "f96f07572e601261",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "펼치면 같은 장면의 전경\n고른 배경화면으로 그린 위젯 5종\n폴더블 배경화면 커버·메인 세트, 위젯 폰꾸미기\nApp Store에서 'Foldable Wallpaper Studio' 검색\n\n#바탕화면 #만들기 #사이즈 #고화질 #FoldableWallpaperStudio\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6824946559?pt=118326163&ct=social&mt=8"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "duowallpaperstudio/de",
+    "locale": "de",
+    "app": "duowallpaperstudio",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/01e2afe12e.mp4",
+    "hook": "Aufgeklappt: die ganze Szene",
+    "name": "Foldable Wallpaper Studio",
+    "title": "Aufgeklappt: die ganze Szene | Foldable Hintergrundbilder HD | Foldable Wallpaper Studio",
+    "tags": [
+     "#Sperrbildschirm",
+     "#Hintergrund",
+     "#Handy",
+     "#Erstellen",
+     "#Süße",
+     "#FoldableWallpaperStudio"
+    ],
+    "caption": "Aufgeklappt: die ganze Szene\n5 Widgets mit deinem Hintergrund\nFoldable Hintergrundbilder HD\nIm App Store nach „Foldable Wallpaper Studio“ suchen\n\n#Sperrbildschirm #Hintergrund #Handy #Erstellen #FoldableWallpaperStudio",
+    "button": "Im App Store laden",
+    "variant": "b",
+    "alt": "Foldable Wallpaper Studio — Aufgeklappt: die ganze Szene — 5 Widgets mit deinem Hintergrund — Foldable Hintergrundbilder HD",
+    "store": "https://apps.apple.com/de/app/id6824946559?pt=118326163&ct=social&mt=8",
+    "play": null,
+    "review": {
+     "label": "Sie nutzen diese App bereits? Bewerten oder rezensieren Sie sie im App Store",
+     "url": "https://apps.apple.com/app/id6824946559?action=write-review"
+    },
+    "keywords": [
+     "sperrbildschirm",
+     "hintergrund",
+     "handy",
+     "erstellen",
+     "süße",
+     "foto"
+    ],
+    "keyline": "Foldable Hintergrundbilder HD",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "f96f07572e601261",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "Aufgeklappt: die ganze Szene\n5 Widgets mit deinem Hintergrund\nFoldable Hintergrundbilder HD\nIm App Store nach „Foldable Wallpaper Studio“ suchen\n\n#Sperrbildschirm #Hintergrund #Handy #Erstellen #FoldableWallpaperStudio\n\nIm App Store laden: https://apps.apple.com/de/app/id6824946559?pt=118326163&ct=social&mt=8"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "duowallpaperstudio/pt-BR",
+    "locale": "pt-BR",
+    "app": "duowallpaperstudio",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/145faec030.mp4",
+    "hook": "Aberto: a cena inteira",
+    "name": "Foldable Wallpaper Studio",
+    "title": "Aberto: a cena inteira | Papel de parede para dobrável | Foldable Wallpaper Studio",
+    "tags": [
+     "#Celular",
+     "#Fundo",
+     "#Tela",
+     "#Bloqueio",
+     "#Estético",
+     "#FoldableWallpaperStudio"
+    ],
+    "caption": "Aberto: a cena inteira\n5 widgets com o seu papel de parede\nPapel de parede para dobrável\nPesquise “Foldable Wallpaper Studio” na App Store\n\n#Celular #Fundo #Tela #Bloqueio #FoldableWallpaperStudio",
+    "button": "Baixar na App Store",
+    "variant": "b",
+    "alt": "Foldable Wallpaper Studio — Aberto: a cena inteira — 5 widgets com o seu papel de parede — Papel de parede para dobrável",
+    "store": "https://apps.apple.com/br/app/id6824946559?pt=118326163&ct=social&mt=8",
+    "play": null,
+    "review": {
+     "label": "Já usa este app? Avalie ou escreva uma resenha na App Store",
+     "url": "https://apps.apple.com/app/id6824946559?action=write-review"
+    },
+    "keywords": [
+     "celular",
+     "fundo",
+     "tela",
+     "bloqueio",
+     "estético",
+     "personalizado"
+    ],
+    "keyline": "Papel de parede para dobrável",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "f96f07572e601261",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "Aberto: a cena inteira\n5 widgets com o seu papel de parede\nPapel de parede para dobrável\nPesquise “Foldable Wallpaper Studio” na App Store\n\n#Celular #Fundo #Tela #Bloqueio #FoldableWallpaperStudio\n\nBaixar na App Store: https://apps.apple.com/br/app/id6824946559?pt=118326163&ct=social&mt=8"
     }
    }
   ]

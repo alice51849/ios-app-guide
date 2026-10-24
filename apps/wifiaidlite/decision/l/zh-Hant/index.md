@@ -2,7 +2,7 @@
 title: "WiFi Aid Lite — 無法上網？一鍵找出原因 | iOS App"
 lang: "zh-Hant"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaidlite/decision/l/zh-Hant/index.html"
-modified: "2026-10-23"
+modified: "2026-10-24"
 app_store_id: "6793414462"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

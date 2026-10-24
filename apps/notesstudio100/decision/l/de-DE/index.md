@@ -2,7 +2,7 @@
 title: "Gibt es eine Offline-Handschrift-Notizen-App fürs iPad mit PDF-Markup und ohne Abo?"
 lang: "de-DE"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/notesstudio100/decision/l/de-DE/index.html"
-modified: "2026-10-23"
+modified: "2026-10-24"
 app_store_id: "6798813048"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

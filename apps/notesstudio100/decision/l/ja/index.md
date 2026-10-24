@@ -2,7 +2,7 @@
 title: "100 Notes Studio：手書きノート — メモ帳・PDF注釈・講義録音 | iOS App"
 lang: "ja"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/notesstudio100/decision/l/ja/index.html"
-modified: "2026-10-23"
+modified: "2026-10-24"
 app_store_id: "6798813048"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

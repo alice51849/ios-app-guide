@@ -2,7 +2,7 @@
 title: "AI Brief: ફાઇલથી AI પ્રોમ્પ્ટ — ફાઇલ, PDF પરથી પ્રોમ્પ્ટ | iOS App"
 lang: "gu-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/aibriefpack/decision/l/gu-IN/index.html"
-modified: "2026-10-23"
+modified: "2026-10-24"
 app_store_id: "6791658210"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

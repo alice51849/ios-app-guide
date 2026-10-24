@@ -2,7 +2,7 @@
 title: "HoursTag: ଘଣ୍ଟାରେ କିଣନ୍ତୁ — ଘଣ୍ଟା ମଜୁରି ଓ ଖର୍ଚ୍ଚ | iOS App"
 lang: "or-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/or-IN/index.html"
-modified: "2026-10-23"
+modified: "2026-10-24"
 app_store_id: "6754218117"
 verified_live: true
 purchase_model: "paid_upfront"

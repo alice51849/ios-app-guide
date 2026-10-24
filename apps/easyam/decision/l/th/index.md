@@ -2,7 +2,7 @@
 title: "EasyAM: นาฬิกาปลุก ข้ามวันหยุด — ดังเฉพาะวันทำงาน ไม่ต้องปิดเอง | iOS App"
 lang: "th"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/easyam/decision/l/th/index.html"
-modified: "2026-10-23"
+modified: "2026-10-24"
 app_store_id: "6821790092"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

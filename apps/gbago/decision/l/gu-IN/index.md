@@ -2,7 +2,7 @@
 title: "GBAGo: વિઝ્યુઅલ સેવ — રિકવરી મેપ · ઓટો સ્નેપશોટ | iOS App"
 lang: "gu-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gbago/decision/l/gu-IN/index.html"
-modified: "2026-10-23"
+modified: "2026-10-24"
 app_store_id: "6804564400"
 verified_live: true
 purchase_model: "paid_upfront"

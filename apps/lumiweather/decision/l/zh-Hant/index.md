@@ -2,7 +2,7 @@
 title: "Lumi天氣星球：天氣預報與穿搭建議 — 今天穿什麼・帶傘嗎・降雨機率與紫外線 | iOS App"
 lang: "zh-Hant"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiweather/decision/l/zh-Hant/index.html"
-modified: "2026-10-23"
+modified: "2026-10-24"
 app_store_id: "6779552704"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

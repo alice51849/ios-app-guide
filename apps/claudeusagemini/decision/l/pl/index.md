@@ -2,7 +2,7 @@
 title: "UsageNow: Zużycie AI tracker — Limity Claude, Codex, Copilot | iOS App"
 lang: "pl"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/claudeusagemini/decision/l/pl/index.html"
-modified: "2026-10-23"
+modified: "2026-10-24"
 app_store_id: "6818607603"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

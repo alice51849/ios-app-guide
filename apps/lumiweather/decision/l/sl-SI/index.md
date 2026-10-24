@@ -2,7 +2,7 @@
 title: "Lumi Vreme: Napoved za danes — Ven ali ne? Dež, UV in veter | iOS App"
 lang: "sl-SI"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiweather/decision/l/sl-SI/index.html"
-modified: "2026-10-23"
+modified: "2026-10-24"
 app_store_id: "6779552704"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

@@ -2,7 +2,7 @@
 title: "Lumi ପାଗ: ଆଜିର ପୂର୍ବାନୁମାନ — ବାହାରକୁ ଯିବା ସ୍କୋର ଓ ପୋଷାକ | iOS App"
 lang: "or-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiweather/decision/l/or-IN/index.html"
-modified: "2026-10-23"
+modified: "2026-10-24"
 app_store_id: "6779552704"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

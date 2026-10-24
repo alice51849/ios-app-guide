@@ -1291,6 +1291,87 @@
    },
    "status": "green"
   },
+  "duowallpaperstudio": {
+   "blocked_terms": [],
+   "brands": [
+    "Foldable Wallpaper Studio"
+   ],
+   "live_updated": "2026-10-23",
+   "live_version": "1.0",
+   "locales": {
+    "de-DE": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-23",
+     "live_version": "1.0",
+     "same": true
+    },
+    "en-GB": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-23",
+     "live_version": "1.0",
+     "same": true
+    },
+    "en-US": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-23",
+     "live_version": "1.0",
+     "same": true
+    },
+    "es-ES": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-23",
+     "live_version": "1.0",
+     "same": true
+    },
+    "fr-FR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-23",
+     "live_version": "1.0",
+     "same": true
+    },
+    "ja": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-23",
+     "live_version": "1.0",
+     "same": true
+    },
+    "ko": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-23",
+     "live_version": "1.0",
+     "same": true
+    },
+    "pt-BR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-23",
+     "live_version": "1.0",
+     "same": true
+    },
+    "zh-Hans": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-23",
+     "live_version": "1.0",
+     "same": true
+    },
+    "zh-Hant": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-23",
+     "live_version": "1.0",
+     "same": true
+    }
+   },
+   "status": "green"
+  },
   "easyam": {
    "blocked_terms": [],
    "brands": [
@@ -1859,85 +1940,167 @@
    "status": "green"
   },
   "lockhour": {
-   "blocked_terms": [],
+   "blocked_terms": [
+    "把偷走你时间的应用屏蔽掉,把专注力拿回来。"
+   ],
    "brands": [
     "LockHour Pro"
    ],
-   "live_updated": "2026-10-09",
-   "live_version": "1.0.18",
+   "live_updated": "2026-10-23",
+   "live_version": "1.0.19",
    "locales": {
     "de-DE": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.18",
-     "same": true
+     "added": [
+      "Optimiert für das iPhone Duo. Die mit dem neuesten SDK entwickelte App füllt das gesamte innere Display und passt das Layout automatisch an, egal ob zugeklappt oder aufgeklappt.",
+      "Sperre ablenkende Apps und Websites, bis dein Timer abläuft – danach sind sie automatisch wieder frei.",
+      "Modus wählen, einmal tippen: Der Lernmodus arbeitet in Pomodoro-Zyklen, Tiefes Arbeiten schützt einen ganzen Arbeitsblock und Abendruhe hilft dir, abends das Handy wegzulegen.",
+      "Im Strengen Modus brauchst du für ein vorzeitiges Ende 60 Sekunden Wartezeit und eine getippte Bestätigung – so hörst du bewusst auf, nicht aus einem Impuls heraus."
+     ],
+     "dropped": [
+      "Mach jede Stunde bewusster. LockHour Pro hilft dir, ruhige Fokus-Sessions zu planen, Handy-Ablenkungen zu reduzieren und verlässliche Arbeitsgewohnheiten aufzubauen. Ideal für Studium, Deep Work und konzentrierte Aufgaben."
+     ],
+     "live_updated": "2026-10-23",
+     "live_version": "1.0.19",
+     "same": false
     },
     "en-GB": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.18",
-     "same": true
+     "added": [
+      "Optimised for iPhone Duo. Built with the latest SDK, the app fills the entire inner display and automatically adjusts its layout whether the device is folded or open.",
+      "Lock distracting apps and websites until your timer ends — then they come back on their own.",
+      "Pick a mode and tap once: Study Mode runs Pomodoro-style cycles, Deep Work protects a full block, and Sleep Wind Down helps you put the phone down at night.",
+      "Turn on Hard Mode and stopping early takes a 60-second cooldown plus a typed confirmation, so you quit on purpose, not on impulse."
+     ],
+     "dropped": [
+      "Protect your best hours. LockHour Pro helps you commit to calm focus sessions, reduce phone distractions and build better work habits without clutter. It is made for study, deep work, writing, planning and any task that deserves your full attention."
+     ],
+     "live_updated": "2026-10-23",
+     "live_version": "1.0.19",
+     "same": false
     },
     "en-US": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.18",
-     "same": true
+     "added": [
+      "Optimized for iPhone Duo. Built with the latest SDK, the app fills the entire inner display and automatically adjusts its layout whether the device is folded or open.",
+      "Lock distracting apps and websites until your timer ends — then they come back on their own.",
+      "Pick a mode and tap once: Study Mode runs Pomodoro-style cycles, Deep Work protects a full block, and Sleep Wind Down helps you put the phone down at night.",
+      "Turn on Hard Mode and stopping early takes a 60-second cooldown plus a typed confirmation, so you quit on purpose, not on impulse."
+     ],
+     "dropped": [
+      "Block the apps that steal your time — and get your focus back.",
+      "LockHour Pro is a calm, beautiful focus app that locks distracting apps during the time you set, then unlocks them automatically. No willpower required. Just start a session and stay on track.",
+      "Whether you’re working, studying, winding down for sleep, or trying not to reach for your phone first thing in the morning, LockHour Pro puts a gentle, intentional layer between you and the apps that pull you away."
+     ],
+     "live_updated": "2026-10-23",
+     "live_version": "1.0.19",
+     "same": false
     },
     "es-ES": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.18",
-     "same": true
+     "added": [
+      "Optimizada para el iPhone Duo. Creada con el SDK más reciente, la app ocupa toda la pantalla interior y ajusta su diseño automáticamente, con el dispositivo plegado o desplegado.",
+      "Bloquea las apps y webs que te distraen hasta que termine el temporizador; después vuelven solas.",
+      "Elige un modo y toca una vez: el Modo estudio funciona con ciclos tipo Pomodoro, el Trabajo profundo protege un bloque completo y la Relajación antes de dormir te ayuda a soltar el móvil por la noche.",
+      "Activa el Modo difícil y, para parar antes de tiempo, tendrás que esperar 60 segundos y escribir una confirmación: lo dejarás porque lo decides, no por impulso."
+     ],
+     "dropped": [
+      "Convierte tu tiempo en atención real. LockHour Pro te ayuda a bloquear sesiones de concentración, reducir distracciones del móvil y crear hábitos de trabajo más tranquilos. Perfecta para estudiar, trabajar en profundidad o proteger tus mejores horas."
+     ],
+     "live_updated": "2026-10-23",
+     "live_version": "1.0.19",
+     "same": false
     },
     "fr-FR": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.18",
-     "same": true
+     "added": [
+      "Optimisée pour l’iPhone Duo. Conçue avec le SDK le plus récent, l’app remplit tout l’écran intérieur et adapte automatiquement sa mise en page, appareil plié ou ouvert.",
+      "Verrouillez les apps et les sites qui vous distraient jusqu’à la fin du minuteur ; ils se débloquent ensuite d’eux-mêmes.",
+      "Choisissez un mode et touchez une fois : le Mode étude enchaîne des cycles type Pomodoro, le Travail en profondeur protège un bloc entier et la Détente avant le sommeil vous aide à poser le téléphone le soir.",
+      "Avec le Mode difficile, arrêter plus tôt demande 60 secondes d’attente et une confirmation à taper : vous arrêtez par choix, pas sur un coup de tête."
+     ],
+     "dropped": [
+      "Reprenez le contrôle de vos heures utiles. LockHour Pro transforme vos sessions de travail en moments calmes, nets et sans distractions. Conçu pour les étudiants, créatifs et professionnels qui veulent avancer sans bruit."
+     ],
+     "live_updated": "2026-10-23",
+     "live_version": "1.0.19",
+     "same": false
     },
     "ja": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.18",
-     "same": true
+     "added": [
+      "iPhone Duoに最適化。最新の開発キットでビルドしており、内側のディスプレイ全体に表示され、折りたたんでも開いても自動でレイアウトが調整されます。",
+      "気が散るアプリとWebサイトを、タイマーが終わるまでロック。時間になれば自動で元に戻ります。",
+      "勉強、仕事、寝る前——モードを選んでワンタップ。勉強モードはポモドーロ式のサイクル、ディープワークはまとまった作業時間を守り、おやすみ前は夜にスマホを手放す習慣づくりを手伝います。",
+      "ハードモードをオンにすると、途中でやめるには60秒のクールダウンと文字入力での確認が必要。勢いでやめてしまうのを防ぎます。"
+     ],
+     "dropped": [
+      "あなたの時間を奪うアプリをブロックして、集中を取り戻す。",
+      "LockHour Pro は、気が散るアプリを設定した時間だけロックし、時間が来たら自動で解除する、美しく落ち着いた集中アプリです。意志の力は不要。セッションを始めるだけで、まっすぐ進めます。",
+      "仕事でも、勉強でも、寝る前でも、朝起きてすぐスマホに手を伸ばしたくない時でも——LockHour Pro は、あなたと気を散らすアプリの間に、やさしく意図的なワンクッションを置きます。"
+     ],
+     "live_updated": "2026-10-23",
+     "live_version": "1.0.19",
+     "same": false
     },
     "ko": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.18",
-     "same": true
+     "added": [
+      "iPhone Duo에 최적화되었습니다. 최신 개발 도구로 빌드되어 안쪽 디스플레이 전체를 가득 채우며, 접거나 펼쳐도 레이아웃이 자동으로 조정됩니다.",
+      "집중을 방해하는 앱과 웹사이트를 타이머가 끝날 때까지 잠가 두고, 시간이 되면 자동으로 풀어 줍니다.",
+      "공부, 일, 잠들기 전 — 모드를 고르고 한 번만 탭하세요. 공부 모드는 뽀모도로 방식으로 반복하고, 딥 워크는 긴 작업 시간을 지켜 주며, 잠들기 전 모드는 밤에 휴대폰을 내려놓도록 도와줍니다.",
+      "하드 모드를 켜면 중간에 멈추려 할 때 60초를 기다린 뒤 확인 문구를 직접 입력해야 해서, 충동이 아니라 결정으로 멈추게 됩니다."
+     ],
+     "dropped": [
+      "당신의 시간을 빼앗는 앱을 차단하고, 집중을 되찾으세요.",
+      "LockHour Pro는 방해되는 앱을 정해진 시간 동안 잠그고, 시간이 끝나면 자동으로 풀어주는 차분하고 아름다운 집중 앱입니다. 의지력은 필요 없습니다. 세션을 시작하기만 하면 흐트러지지 않습니다.",
+      "일할 때도, 공부할 때도, 잠들기 전에도, 아침에 눈뜨자마자 휴대폰을 집어 들고 싶지 않을 때도—LockHour Pro는 당신과 주의를 빼앗는 앱 사이에 부드럽고 의도적인 한 겹을 더합니다."
+     ],
+     "live_updated": "2026-10-23",
+     "live_version": "1.0.19",
+     "same": false
     },
     "pt-BR": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.18",
-     "same": true
+     "added": [
+      "Otimizado para iPhone Duo. Criado com o SDK mais recente, o app ocupa toda a tela interna e ajusta o layout automaticamente, com o aparelho dobrado ou aberto.",
+      "Bloqueie apps e sites que distraem até o timer acabar — depois eles voltam sozinhos.",
+      "Escolha um modo e toque uma vez: o Modo de estudo roda ciclos no estilo Pomodoro, o Trabalho Profundo protege um bloco inteiro e o Relaxar antes de dormir ajuda você a largar o celular à noite.",
+      "Com o Modo Difícil, parar antes da hora exige 60 segundos de espera e uma confirmação digitada, para você parar por decisão, não por impulso."
+     ],
+     "dropped": [
+      "Proteja suas melhores horas. LockHour Pro ajuda você a iniciar sessões de foco calmas, reduzir distrações do celular e criar hábitos produtivos com mais leveza. Ideal para estudar, escrever, trabalhar em profundidade ou manter uma rotina mais intencional."
+     ],
+     "live_updated": "2026-10-23",
+     "live_version": "1.0.19",
+     "same": false
     },
     "zh-Hans": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.18",
-     "same": true
+     "added": [
+      "已针对 iPhone Duo 优化。本应用使用最新开发工具包构建,铺满整块内屏,无论折叠还是展开都会自动调整布局。",
+      "把让你分心的应用和网站锁到计时结束,时间一到自动恢复。",
+      "学习、工作、睡前、起床,选好模式点一下就开始:学习模式内置番茄钟循环,深度工作守住一整段时间,睡前放松帮你放下手机。",
+      "开启强制模式后,想提前结束要先冷静 60 秒并输入确认文字,不会一时冲动就放弃。"
+     ],
+     "dropped": [
+      "把偷走你时间的应用屏蔽掉,把专注力拿回来。",
+      "LockHour Pro 是一款治愈又精致的专注应用:在你设定的时间内锁住让你分心的应用,时间一到自动解锁。不必靠意志力硬撑——开启一个专注时段,就能稳稳向前。",
+      "无论是工作、学习、睡前放松,还是早上不想一睁眼就刷手机,LockHour Pro 都会在你和那些夺走注意力的应用之间,加上一层温柔而刻意的缓冲。"
+     ],
+     "live_updated": "2026-10-23",
+     "live_version": "1.0.19",
+     "same": false
     },
     "zh-Hant": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.18",
-     "same": true
+     "added": [
+      "已針對 iPhone Duo 最佳化。本 App 以最新開發套件建置,填滿整個內螢幕,無論摺起或打開都會自動調整版面。",
+      "把會讓你分心的 App 和網站鎖到計時結束,時間一到自動恢復。",
+      "讀書、工作、睡前、起床,選好模式按一下就開始:學習模式內建番茄鐘循環,深度工作守住一整段時間,睡前放鬆幫你放下手機。",
+      "開啟強制模式後,想提前結束要先冷靜 60 秒並打字確認,不會一時衝動就放棄。"
+     ],
+     "dropped": [
+      "封鎖偷走你時間的 App,把專注力拿回來。",
+      "LockHour Pro 是一款療癒又精緻的專注 App:在你設定的時間內鎖住會分心的 App,時間到自動解鎖。不必靠意志力硬撐——開始一個專注時段,就能穩穩前進。",
+      "不論是工作、讀書、睡前放鬆,還是早上不想一睜眼就滑手機,LockHour Pro 都在你和那些奪走注意力的 App 之間,加上一層溫柔而刻意的緩衝。"
+     ],
+     "live_updated": "2026-10-23",
+     "live_version": "1.0.19",
+     "same": false
     }
    },
-   "status": "green"
+   "status": "red"
   },
   "lumibopomofo": {
    "blocked_terms": [],
@@ -4675,81 +4838,131 @@
    "brands": [
     "Unblurry Pro"
    ],
-   "live_updated": "2026-10-09",
-   "live_version": "1.0.13",
+   "live_updated": "2026-10-23",
+   "live_version": "1.0.14",
    "locales": {
     "de-DE": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.13",
-     "same": true
+     "added": [
+      "Optimiert für das iPhone Duo. Die mit dem neuesten SDK entwickelte App füllt das gesamte innere Display und passt das Layout automatisch an, egal ob zugeklappt oder aufgeklappt.",
+      "Verbessere und speichere jeden Tag kostenlos Fotos. Schalte Unblurry Pro einmalig frei und entferne Wasserzeichen, exportiere in voller Originalauflösung, nutze 4× Hochskalierung, Porträt- & Wiederherstellen-Modi, unbegrenzte tägliche Speicherungen und alle Premium-Themes — für immer deins, mit einem Kauf, ohne Abo."
+     ],
+     "dropped": [
+      "Verbessere und speichere jeden Tag kostenlos Fotos. Schalte Unblurry Pro einmalig frei und entferne Wasserzeichen, exportiere in voller Originalauflösung, nutze 4× Hochskalierung, Porträt- & Wiederherstellen-Modi, unbegrenzte tägliche Speicherungen, alle Premium-Themes und jeden zukünftigen Modus — für immer deins, mit einem Kauf, ohne Abo."
+     ],
+     "live_updated": "2026-10-23",
+     "live_version": "1.0.14",
+     "same": false
     },
     "en-GB": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.13",
-     "same": true
+     "added": [
+      "Optimised for iPhone Duo. Built with the latest SDK, the app fills the entire inner display and automatically adjusts its layout whether the device is folded or open.",
+      "Your photos stay private because processing happens locally on your device. No subscription, no ads, no tracking. Pay once to unlock Unblurry Pro, remove watermarks, export at full original resolution, and get 4× upscaling plus the Portrait & Restore mode."
+     ],
+     "dropped": [
+      "Your photos stay private because processing happens locally on your device. No subscription, no ads, no tracking. Pay once to unlock Unblurry Pro, remove watermarks, export at full original resolution, and keep every future mode."
+     ],
+     "live_updated": "2026-10-23",
+     "live_version": "1.0.14",
+     "same": false
     },
     "en-US": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.13",
-     "same": true
+     "added": [
+      "Optimized for iPhone Duo. Built with the latest SDK, the app fills the entire inner display and automatically adjusts its layout whether the device is folded or open.",
+      "Enhance and save for free every day. Unlock Unblurry Pro a single time to remove watermarks, export at full original resolution, get 4× upscaling, Portrait & Restore modes, unlimited daily saves and all premium themes — yours forever, one purchase, no subscription."
+     ],
+     "dropped": [
+      "Enhance and save for free every day. Unlock Unblurry Pro a single time to remove watermarks, export at full original resolution, get 4× upscaling, Portrait & Restore modes, unlimited daily saves, all premium themes, and every future mode — yours forever, one purchase, no subscription."
+     ],
+     "live_updated": "2026-10-23",
+     "live_version": "1.0.14",
+     "same": false
     },
     "es-ES": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.13",
-     "same": true
+     "added": [
+      "Optimizada para el iPhone Duo. Creada con el SDK más reciente, la app ocupa toda la pantalla interior y ajusta su diseño automáticamente, con el dispositivo plegado o desplegado.",
+      "Mejora y guarda fotos gratis cada día. Desbloquea Unblurry Pro una sola vez para eliminar marcas de agua, exportar a la resolución original completa, obtener escalado 4×, modos Retrato y restauración, guardados diarios ilimitados y todos los temas premium: tuyos para siempre, con una única compra y sin suscripción."
+     ],
+     "dropped": [
+      "Mejora y guarda fotos gratis cada día. Desbloquea Unblurry Pro una sola vez para eliminar marcas de agua, exportar a la resolución original completa, obtener escalado 4×, modos Retrato y restauración, guardados diarios ilimitados, todos los temas premium y todos los modos futuros: tuyos para siempre, con una única compra y sin suscripción."
+     ],
+     "live_updated": "2026-10-23",
+     "live_version": "1.0.14",
+     "same": false
     },
     "fr-FR": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.13",
-     "same": true
+     "added": [
+      "Optimisée pour l’iPhone Duo. Conçue avec le SDK le plus récent, l’app remplit tout l’écran intérieur et adapte automatiquement sa mise en page, appareil plié ou ouvert.",
+      "Améliorez et enregistrez des photos gratuitement chaque jour. Débloquez Unblurry Pro une seule fois pour supprimer les filigranes, exporter en pleine résolution d’origine, obtenir l’agrandissement 4×, les modes Portrait et restauration, les enregistrements quotidiens illimités et tous les thèmes premium — à vous pour toujours, avec un achat unique, sans abonnement."
+     ],
+     "dropped": [
+      "Améliorez et enregistrez des photos gratuitement chaque jour. Débloquez Unblurry Pro une seule fois pour supprimer les filigranes, exporter en pleine résolution d’origine, obtenir l’agrandissement 4×, les modes Portrait et restauration, les enregistrements quotidiens illimités, tous les thèmes premium et tous les futurs modes — à vous pour toujours, avec un achat unique, sans abonnement."
+     ],
+     "live_updated": "2026-10-23",
+     "live_version": "1.0.14",
+     "same": false
     },
     "ja": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.13",
-     "same": true
+     "added": [
+      "iPhone Duoに最適化。最新の開発キットでビルドしており、内側のディスプレイ全体に表示され、折りたたんでも開いても自動でレイアウトが調整されます。",
+      "毎日無料で写真を補正して保存できます。Unblurry Pro を一度購入すれば、ウォーターマークなし、元のフル解像度での書き出し、4× アップスケール、ポートレート&復元モード、毎日の無制限保存、そしてすべてのプレミアムテーマが解放されます。買い切りで、ずっと使えて、サブスクは不要です。"
+     ],
+     "dropped": [
+      "毎日無料で写真を補正して保存できます。Unblurry Pro を一度購入すれば、ウォーターマークなし、元のフル解像度での書き出し、4× アップスケール、ポートレート&復元モード、毎日の無制限保存、すべてのプレミアムテーマ、そして今後追加されるすべてのモードが解放されます。買い切りで、ずっと使えて、サブスクは不要です。"
+     ],
+     "live_updated": "2026-10-23",
+     "live_version": "1.0.14",
+     "same": false
     },
     "ko": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.13",
-     "same": true
+     "added": [
+      "iPhone Duo에 최적화되었습니다. 최신 개발 도구로 빌드되어 안쪽 디스플레이 전체를 가득 채우며, 접거나 펼쳐도 레이아웃이 자동으로 조정됩니다.",
+      "매일 무료로 사진을 향상하고 저장하세요. Unblurry Pro를 한 번만 잠금 해제하면 워터마크 제거, 원본 전체 해상도 내보내기, 4× 업스케일, 인물 & 복원 모드, 일일 무제한 저장, 모든 프리미엄 테마를 영구적으로 사용할 수 있습니다. 한 번의 구매, 영구 소장, 구독은 없습니다."
+     ],
+     "dropped": [
+      "매일 무료로 사진을 향상하고 저장하세요. Unblurry Pro를 한 번만 잠금 해제하면 워터마크 제거, 원본 전체 해상도 내보내기, 4× 업스케일, 인물 & 복원 모드, 일일 무제한 저장, 모든 프리미엄 테마, 앞으로 추가될 모든 모드를 영구적으로 사용할 수 있습니다. 한 번의 구매, 영구 소장, 구독은 없습니다."
+     ],
+     "live_updated": "2026-10-23",
+     "live_version": "1.0.14",
+     "same": false
     },
     "pt-BR": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.13",
-     "same": true
+     "added": [
+      "Otimizado para iPhone Duo. Criado com o SDK mais recente, o app ocupa toda a tela interna e ajusta o layout automaticamente, com o aparelho dobrado ou aberto.",
+      "Melhore e salve fotos grátis todos os dias. Desbloqueie o Unblurry Pro uma única vez para remover marcas-d'água, exportar na resolução original completa, usar ampliação 4×, modos Retrato e restauração, salvamentos diários ilimitados e todos os temas premium — seu para sempre, em uma compra única, sem assinatura."
+     ],
+     "dropped": [
+      "Melhore e salve fotos grátis todos os dias. Desbloqueie o Unblurry Pro uma única vez para remover marcas-d'água, exportar na resolução original completa, usar ampliação 4×, modos Retrato e restauração, salvamentos diários ilimitados, todos os temas premium e todos os modos futuros — seu para sempre, em uma compra única, sem assinatura."
+     ],
+     "live_updated": "2026-10-23",
+     "live_version": "1.0.14",
+     "same": false
     },
     "zh-Hans": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.13",
-     "same": true
+     "added": [
+      "已针对 iPhone Duo 优化。本应用使用最新开发工具包构建,铺满整块内屏,无论折叠还是展开都会自动调整布局。",
+      "每天都能免费增强并保存照片。一次解锁 Unblurry Pro,即可去除水印、以完整原始分辨率导出、获得 4× 放大、人像与修复模式、每日无限保存,以及所有高级主题 — 一次购买,永久拥有,没有订阅。"
+     ],
+     "dropped": [
+      "每天都能免费增强并保存照片。一次解锁 Unblurry Pro,即可去除水印、以完整原始分辨率导出、获得 4× 放大、人像与修复模式、每日无限保存、所有高级主题,以及未来推出的每一种模式 — 一次购买,永久拥有,没有订阅。"
+     ],
+     "live_updated": "2026-10-23",
+     "live_version": "1.0.14",
+     "same": false
     },
     "zh-Hant": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.13",
-     "same": true
+     "added": [
+      "已針對 iPhone Duo 最佳化。本 App 以最新開發套件建置,填滿整個內螢幕,無論摺起或打開都會自動調整版面。",
+      "每天都能免費強化並儲存照片。一次解鎖 Unblurry Pro,即可移除浮水印、以完整原始解析度匯出、使用 4× 放大、人像與修復模式、享有每日不限次儲存,以及所有進階主題 — 一次購買,永久擁有,沒有訂閱。"
+     ],
+     "dropped": [
+      "每天都能免費強化並儲存照片。一次解鎖 Unblurry Pro,即可移除浮水印、以完整原始解析度匯出、使用 4× 放大、人像與修復模式、享有每日不限次儲存、所有進階主題,以及未來推出的每一種模式 — 一次購買,永久擁有,沒有訂閱。"
+     ],
+     "live_updated": "2026-10-23",
+     "live_version": "1.0.14",
+     "same": false
     }
    },
-   "status": "green"
+   "status": "red"
   },
   "wifiaid": {
    "blocked_terms": [],
@@ -5175,11 +5388,11 @@
   "gb"
  ],
  "counts": {
-  "green": 52,
-  "red": 3,
+  "green": 51,
+  "red": 5,
   "unknown": 0
  },
  "errors": [],
- "generated_at": "2026-10-23T01:58:45Z",
+ "generated_at": "2026-10-24T02:40:19Z",
  "schema": "growth.store-copy-drift/v1"
 }

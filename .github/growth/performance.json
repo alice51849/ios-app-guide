@@ -1,23 +1,23 @@
 {
-  "updated_at": "2026-10-24T04:24:37Z",
+  "updated_at": "2026-10-25T04:28:27Z",
   "note": "Insights of our own IG / Threads posts by .github/scripts/post_performance.py. score = views + 3*likes + 5*replies + 8*(saves+shares+reposts). boost = best apps, read by 00_GrowthEngine shorts/scripts/schedule_posts.py.",
   "sources": {
-    "instagram": "ok: 34 posts",
-    "threads": "ok: 20 posts"
+    "instagram": "ok: 38 posts",
+    "threads": "ok: 19 posts"
   },
   "boost": [
     "mochi_suneung",
     "onepageppt",
     "unblurry",
     "battai",
-    "notesstudio100"
+    "claudeusagemini"
   ],
   "demote": [
-    "lumiletters",
     "lumimath",
     "lumimission",
     "moneytag",
-    "mochidonestamp"
+    "mochidonestamp",
+    "wordmatelite"
   ],
   "hook_winners": {
     "apps": {
@@ -37,7 +37,7 @@
     "channels": {
       "instagram": {
         "posts": 14,
-        "median_views": 3.5,
+        "median_views": 11.0,
         "keep_slot": 9,
         "daily": 2
       },
@@ -56,13 +56,14 @@
     "instagram": {
       "zh-Hant": {
         "hour": 12,
-        "avg_views": 33.0,
-        "posts": 20,
+        "avg_views": 23.3,
+        "posts": 22,
         "hours": {
-          "1": 6.5,
+          "1": 19.5,
           "5": 1.3,
+          "7": 0.0,
           "9": 0.3,
-          "12": 33.0
+          "12": 23.3
         }
       }
     },
@@ -80,11 +81,11 @@
       },
       "zh-Hant": {
         "hour": 13,
-        "avg_views": 80.5,
+        "avg_views": 81.5,
         "posts": 11,
         "hours": {
-          "6": 29.0,
-          "13": 80.5,
+          "6": 29.5,
+          "13": 81.5,
           "16": 10.0,
           "23": 6.0
         }
@@ -105,18 +106,18 @@
       {
         "key": "onepageppt",
         "posts": 2,
-        "views": 161,
+        "views": 163,
         "engagement": 2,
-        "score": 171,
-        "avg_score": 85.5
+        "score": 173,
+        "avg_score": 86.5
       },
       {
         "key": "unblurry",
         "posts": 1,
-        "views": 75,
+        "views": 76,
         "engagement": 1,
-        "score": 78,
-        "avg_score": 78.0
+        "score": 79,
+        "avg_score": 79.0
       },
       {
         "key": "battai",
@@ -125,6 +126,22 @@
         "engagement": 0,
         "score": 135,
         "avg_score": 67.5
+      },
+      {
+        "key": "claudeusagemini",
+        "posts": 6,
+        "views": 212,
+        "engagement": 2,
+        "score": 222,
+        "avg_score": 37.0
+      },
+      {
+        "key": "lumiweather",
+        "posts": 1,
+        "views": 27,
+        "engagement": 1,
+        "score": 30,
+        "avg_score": 30.0
       },
       {
         "key": "notesstudio100",
@@ -149,14 +166,6 @@
         "engagement": 2,
         "score": 60,
         "avg_score": 20.0
-      },
-      {
-        "key": "claudeusagemini",
-        "posts": 5,
-        "views": 89,
-        "engagement": 2,
-        "score": 99,
-        "avg_score": 19.8
       },
       {
         "key": "mochi",
@@ -197,14 +206,6 @@
         "engagement": 0,
         "score": 27,
         "avg_score": 9.0
-      },
-      {
-        "key": "tripbee",
-        "posts": 1,
-        "views": 8,
-        "engagement": 0,
-        "score": 8,
-        "avg_score": 8.0
       },
       {
         "key": "countdaysnow",
@@ -287,6 +288,22 @@
         "avg_score": 5.0
       },
       {
+        "key": "tripbee",
+        "posts": 2,
+        "views": 8,
+        "engagement": 0,
+        "score": 8,
+        "avg_score": 4.0
+      },
+      {
+        "key": "mochi_b",
+        "posts": 1,
+        "views": 4,
+        "engagement": 0,
+        "score": 4,
+        "avg_score": 4.0
+      },
+      {
         "key": "hourstaglite",
         "posts": 2,
         "views": 6,
@@ -317,14 +334,6 @@
         "engagement": 1,
         "score": 3,
         "avg_score": 1.5
-      },
-      {
-        "key": "lumiweather",
-        "posts": 1,
-        "views": 1,
-        "engagement": 0,
-        "score": 1,
-        "avg_score": 1.0
       },
       {
         "key": "wordmate",
@@ -373,40 +382,48 @@
         "engagement": 0,
         "score": 0,
         "avg_score": 0.0
+      },
+      {
+        "key": "wordmatelite",
+        "posts": 1,
+        "views": 0,
+        "engagement": 0,
+        "score": 0,
+        "avg_score": 0.0
       }
     ],
     "locales": [
       {
         "key": "ko",
-        "posts": 1,
-        "views": 165,
+        "posts": 2,
+        "views": 287,
         "engagement": 0,
-        "score": 165,
-        "avg_score": 165.0
+        "score": 287,
+        "avg_score": 143.5
       },
       {
         "key": "ja",
-        "posts": 3,
+        "posts": 4,
         "views": 86,
         "engagement": 0,
         "score": 86,
-        "avg_score": 28.7
+        "avg_score": 21.5
       },
       {
         "key": "zh-Hant",
-        "posts": 31,
-        "views": 521,
-        "engagement": 10,
-        "score": 569,
-        "avg_score": 18.4
+        "posts": 33,
+        "views": 554,
+        "engagement": 11,
+        "score": 605,
+        "avg_score": 18.3
       },
       {
         "key": "en",
         "posts": 22,
-        "views": 208,
+        "views": 209,
         "engagement": 3,
-        "score": 221,
-        "avg_score": 10.0
+        "score": 222,
+        "avg_score": 10.1
       },
       {
         "key": "cs",
@@ -441,10 +458,20 @@
         "locale": "zh-Hant",
         "hook": "笔记、截图、PDF一键生成PPT。",
         "posts": 1,
-        "views": 127,
+        "views": 128,
         "engagement": 1,
-        "score": 132,
-        "avg_score": 132.0
+        "score": 133,
+        "avg_score": 133.0
+      },
+      {
+        "app": "claudeusagemini",
+        "locale": "ko",
+        "hook": "작업 중에 또 AI 한도 초과?",
+        "posts": 1,
+        "views": 122,
+        "engagement": 0,
+        "score": 122,
+        "avg_score": 122.0
       },
       {
         "app": "battai",
@@ -461,10 +488,10 @@
         "locale": "en",
         "hook": "Unblur photos in HD.",
         "posts": 1,
-        "views": 75,
+        "views": 76,
         "engagement": 1,
-        "score": 78,
-        "avg_score": 78.0
+        "score": 79,
+        "avg_score": 79.0
       },
       {
         "app": "mochi",
@@ -481,10 +508,10 @@
         "locale": "zh-Hant",
         "hook": "沒有人會讀完整份報告，大家只看那一頁簡報。",
         "posts": 1,
-        "views": 34,
+        "views": 35,
         "engagement": 1,
-        "score": 39,
-        "avg_score": 39.0
+        "score": 40,
+        "avg_score": 40.0
       },
       {
         "app": "lumibopomofo",
@@ -501,10 +528,20 @@
         "locale": "zh-Hant",
         "hook": "Claude、Codex、Copilot、Gemini 一起看",
         "posts": 2,
-        "views": 56,
+        "views": 57,
         "engagement": 2,
-        "score": 66,
-        "avg_score": 33.0
+        "score": 67,
+        "avg_score": 33.5
+      },
+      {
+        "app": "lumiweather",
+        "locale": "zh-Hant",
+        "hook": "穿什麼、帶什麼 直接告訴你",
+        "posts": 1,
+        "views": 27,
+        "engagement": 1,
+        "score": 30,
+        "avg_score": 30.0
       },
       {
         "app": "lumibopomofo_b",
@@ -807,6 +844,16 @@
         "avg_score": 4.0
       },
       {
+        "app": "mochi_b",
+        "locale": "zh-Hant",
+        "hook": "讀書、工作、購物 一個 App 整理",
+        "posts": 1,
+        "views": 4,
+        "engagement": 0,
+        "score": 4,
+        "avg_score": 4.0
+      },
+      {
         "app": "hourstag",
         "locale": "en",
         "hook": "That impulse buy did not cost you money. It cost you a whole",
@@ -860,16 +907,6 @@
         "app": "wordmate",
         "locale": "en",
         "hook": "Pick from 44 languages",
-        "posts": 1,
-        "views": 1,
-        "engagement": 0,
-        "score": 1,
-        "avg_score": 1.0
-      },
-      {
-        "app": "lumiweather",
-        "locale": "zh-Hant",
-        "hook": "穿什麼、帶什麼 直接告訴你",
         "posts": 1,
         "views": 1,
         "engagement": 0,
@@ -995,24 +1032,44 @@
         "engagement": 0,
         "score": 0,
         "avg_score": 0.0
+      },
+      {
+        "app": "wordmatelite",
+        "locale": "ja",
+        "hook": "",
+        "posts": 1,
+        "views": 0,
+        "engagement": 0,
+        "score": 0,
+        "avg_score": 0.0
+      },
+      {
+        "app": "tripbee",
+        "locale": "zh-Hant",
+        "hook": "機票、行程 還在翻截圖？",
+        "posts": 1,
+        "views": 0,
+        "engagement": 0,
+        "score": 0,
+        "avg_score": 0.0
       }
     ],
     "variants": [
       {
         "key": "b",
-        "posts": 13,
-        "views": 369,
-        "engagement": 4,
-        "score": 387,
-        "avg_score": 29.8
+        "posts": 14,
+        "views": 400,
+        "engagement": 5,
+        "score": 421,
+        "avg_score": 30.1
       },
       {
         "key": "a",
-        "posts": 3,
-        "views": 23,
+        "posts": 5,
+        "views": 145,
         "engagement": 1,
-        "score": 26,
-        "avg_score": 8.7
+        "score": 148,
+        "avg_score": 29.6
       },
       {
         "key": "c",
@@ -1170,12 +1227,12 @@
       "kind": "image",
       "variant": null,
       "metrics": {
-        "views": 34,
+        "views": 35,
         "likes": 0,
         "replies": 1,
         "reposts": 0
       },
-      "score": 39
+      "score": 40
     },
     {
       "channel": "threads",
@@ -1322,12 +1379,12 @@
       "kind": "image",
       "variant": null,
       "metrics": {
-        "views": 75,
+        "views": 76,
         "likes": 1,
         "replies": 0,
         "reposts": 0
       },
-      "score": 78
+      "score": 79
     },
     {
       "channel": "threads",
@@ -1539,12 +1596,12 @@
       "kind": "clip",
       "variant": "b",
       "metrics": {
-        "views": 49,
+        "views": 50,
         "likes": 0,
         "replies": 1,
         "reposts": 0
       },
-      "score": 54
+      "score": 55
     },
     {
       "channel": "instagram",
@@ -1911,12 +1968,12 @@
       "kind": "image",
       "variant": null,
       "metrics": {
-        "views": 127,
+        "views": 128,
         "likes": 0,
         "replies": 1,
         "reposts": 0
       },
-      "score": 132
+      "score": 133
     },
     {
       "channel": "instagram",
@@ -2224,14 +2281,98 @@
       "kind": "clip",
       "variant": "b",
       "metrics": {
-        "views": 1,
-        "reach": 1,
+        "views": 27,
+        "reach": 24,
+        "likes": 1,
+        "saves": 0,
+        "shares": 0,
+        "replies": 0
+      },
+      "score": 30
+    },
+    {
+      "channel": "instagram",
+      "id": "18142390801614274",
+      "link": "https://www.instagram.com/p/De3Xulzlgxx/",
+      "posted_at": "2026-10-24T05:22:18",
+      "app": "wordmatelite",
+      "locale": "ja",
+      "hook": "",
+      "clip": "utility/word/wordmatelite/deadline/ja",
+      "kind": "utility",
+      "variant": null,
+      "metrics": {
+        "views": 0,
+        "reach": 0,
         "likes": 0,
         "saves": 0,
         "shares": 0,
         "replies": 0
       },
-      "score": 1
+      "score": 0
+    },
+    {
+      "channel": "instagram",
+      "id": "18095495306264824",
+      "link": "https://www.instagram.com/p/De3me3hFYyh/",
+      "posted_at": "2026-10-24T07:31:05",
+      "app": "tripbee",
+      "locale": "zh-Hant",
+      "hook": "機票、行程 還在翻截圖？",
+      "clip": "tripbee/zh-Hant",
+      "kind": "clip",
+      "variant": "a",
+      "metrics": {
+        "views": 0,
+        "reach": 0,
+        "likes": 0,
+        "saves": 0,
+        "shares": 0,
+        "replies": 0
+      },
+      "score": 0
+    },
+    {
+      "channel": "instagram",
+      "id": "18075291272749886",
+      "link": "https://www.instagram.com/reel/De4IqbtjG9y/",
+      "posted_at": "2026-10-24T12:30:07",
+      "app": "mochi_b",
+      "locale": "zh-Hant",
+      "hook": "讀書、工作、購物 一個 App 整理",
+      "clip": "mochi_b/zh-Hant",
+      "kind": "clip",
+      "variant": "b",
+      "metrics": {
+        "views": 4,
+        "reach": 3,
+        "likes": 0,
+        "saves": 0,
+        "shares": 0,
+        "replies": 0
+      },
+      "score": 4
+    },
+    {
+      "channel": "instagram",
+      "id": "18013132454973485",
+      "link": "https://www.instagram.com/reel/De5ivJ0gZsf/",
+      "posted_at": "2026-10-25T01:37:10",
+      "app": "claudeusagemini",
+      "locale": "ko",
+      "hook": "작업 중에 또 AI 한도 초과?",
+      "clip": "claudeusagemini/ko",
+      "kind": "clip",
+      "variant": "a",
+      "metrics": {
+        "views": 122,
+        "reach": 116,
+        "likes": 0,
+        "saves": 0,
+        "shares": 0,
+        "replies": 0
+      },
+      "score": 122
     }
   ]
 }

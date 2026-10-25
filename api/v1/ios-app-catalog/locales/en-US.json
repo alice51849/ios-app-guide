@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-10-24",
-  "content_digest": "e386fc957415bc2c3ab949769f7aa4ea76ab923e8557658760765345cc8bdd90",
+  "date_modified": "2026-10-25",
+  "content_digest": "aec9888a4e5392b47266258316add339842c2d00a9c61b928e6d7109c0d26086",
   "locale": "en-US",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -489,8 +489,7 @@
         "schedule",
         "wake",
         "theme",
-        "digital",
-        "holiday alarm clock"
+        "digital"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1284,10 +1283,7 @@
         "notes",
         "errands",
         "watch",
-        "themes",
-        "checklist",
-        "todo list",
-        "to do list"
+        "themes"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1330,8 +1326,7 @@
         "recurring",
         "household",
         "days",
-        "since",
-        "when did i last do"
+        "since"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1420,8 +1415,7 @@
         "pdf",
         "notes",
         "pptx",
-        "csv",
-        "one page summary"
+        "csv"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

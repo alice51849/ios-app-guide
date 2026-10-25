@@ -2,7 +2,7 @@
 title: "aplikasi perencana itinerary terbaik untuk iPhone"
 lang: "id"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbee/decision/l/id/index.html"
-modified: "2026-10-24"
+modified: "2026-10-25"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"

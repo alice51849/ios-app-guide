@@ -2,7 +2,7 @@
 title: "Lumi Mission Planet Pro — সকাল ও ঘুমের আগের রুটিন | iOS App"
 lang: "bn-BD"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimissionpro/decision/l/bn-BD/index.html"
-modified: "2026-10-24"
+modified: "2026-10-25"
 app_store_id: "6779745474"
 verified_live: true
 purchase_model: "paid_upfront"

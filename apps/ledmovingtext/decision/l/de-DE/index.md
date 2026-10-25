@@ -2,7 +2,7 @@
 title: "LED-Laufschrift-App für Konzerte und Abholungen am Flughafen"
 lang: "de-DE"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/ledmovingtext/decision/l/de-DE/index.html"
-modified: "2026-10-24"
+modified: "2026-10-25"
 app_store_id: "6806639602"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

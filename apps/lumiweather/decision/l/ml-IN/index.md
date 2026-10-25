@@ -2,7 +2,7 @@
 title: "Lumi കാലാവസ്ഥ: മഴയും വെയിലും — പുറത്തിറങ്ങൽ സ്കോറും വസ്ത്രവും | iOS App"
 lang: "ml-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiweather/decision/l/ml-IN/index.html"
-modified: "2026-10-24"
+modified: "2026-10-25"
 app_store_id: "6779552704"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

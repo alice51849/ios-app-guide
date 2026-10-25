@@ -2,7 +2,7 @@
 title: "WiFi Aid: ନେଟୱର୍କ ସମସ୍ୟା — ରାଉଟର, ମେଶ ଓ DNS ଯାଞ୍ଚ | iOS App"
 lang: "or-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/or-IN/index.html"
-modified: "2026-10-24"
+modified: "2026-10-25"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"

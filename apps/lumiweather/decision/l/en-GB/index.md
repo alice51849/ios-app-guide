@@ -2,7 +2,7 @@
 title: "weather app to help me plan when to go outside"
 lang: "en-GB"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiweather/decision/l/en-GB/index.html"
-modified: "2026-10-24"
+modified: "2026-10-25"
 app_store_id: "6779552704"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

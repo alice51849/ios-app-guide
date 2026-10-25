@@ -2,7 +2,7 @@
 title: "Foldable Wallpaper Studio — Foldable Hintergrundbilder HD | iOS App"
 lang: "de-DE"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/duowallpaperstudio/decision/l/de-DE/index.html"
-modified: "2026-10-24"
+modified: "2026-10-25"
 app_store_id: "6824946559"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

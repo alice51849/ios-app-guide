@@ -2,7 +2,7 @@
 title: "UsageNow: Лимиты ИИ и расход — Claude, Codex, Copilot, Gemini | iOS App"
 lang: "ru"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/claudeusagemini/decision/l/ru/index.html"
-modified: "2026-10-24"
+modified: "2026-10-25"
 app_store_id: "6818607603"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

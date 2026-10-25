@@ -2,7 +2,7 @@
 title: "EasyAM: Réveil et jours fériés — Alarme qui sonne quand il faut | iOS App"
 lang: "fr-FR"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/easyam/decision/l/fr-FR/index.html"
-modified: "2026-10-24"
+modified: "2026-10-25"
 app_store_id: "6821790092"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

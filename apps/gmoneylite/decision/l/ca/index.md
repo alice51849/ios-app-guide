@@ -2,7 +2,7 @@
 title: "G+Money Lite: Diners de viatge — Límit diari, rellotge i widget | iOS App"
 lang: "ca"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gmoneylite/decision/l/ca/index.html"
-modified: "2026-10-24"
+modified: "2026-10-25"
 app_store_id: "6793436548"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

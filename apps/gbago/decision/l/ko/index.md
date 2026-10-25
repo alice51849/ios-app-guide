@@ -2,7 +2,7 @@
 title: "GBAGo: 비주얼 세이브 — 복구 지도 · 자동 스냅샷 | iOS App"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gbago/decision/l/ko/index.html"
-modified: "2026-10-24"
+modified: "2026-10-25"
 app_store_id: "6804564400"
 verified_live: true
 purchase_model: "paid_upfront"

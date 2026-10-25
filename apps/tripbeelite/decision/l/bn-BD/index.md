@@ -2,7 +2,7 @@
 title: "TripBee Lite: ভ্রমণ পরিকল্পনা — ছুটির দিনভিত্তিক সূচি | iOS App"
 lang: "bn-BD"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbeelite/decision/l/bn-BD/index.html"
-modified: "2026-10-24"
+modified: "2026-10-25"
 app_store_id: "6791299610"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

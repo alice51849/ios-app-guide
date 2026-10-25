@@ -2,7 +2,7 @@
 title: "估計誠實又有報告的最佳 iPhone 電池健康 App"
 lang: "zh-Hant"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/battai/decision/l/zh-Hant/index.html"
-modified: "2026-10-24"
+modified: "2026-10-25"
 app_store_id: "6802423998"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

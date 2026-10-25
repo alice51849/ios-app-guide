@@ -2,7 +2,7 @@
 title: "bester Einnahmen-Ausgaben-Tracker für Freelance-Projekte ohne Abo"
 lang: "de-DE"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/moneytag/decision/l/de-DE/index.html"
-modified: "2026-10-24"
+modified: "2026-10-25"
 app_store_id: "6801956402"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

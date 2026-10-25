@@ -2,7 +2,7 @@
 title: "Foldable Wallpaper Studio — 折叠屏手机高清壁纸，外屏内屏成对，配套锁屏桌面美化小组件 | iOS App"
 lang: "zh-Hans"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/duowallpaperstudio/decision/l/zh-Hans/index.html"
-modified: "2026-10-24"
+modified: "2026-10-25"
 app_store_id: "6824946559"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

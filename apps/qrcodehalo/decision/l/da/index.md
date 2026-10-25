@@ -2,7 +2,7 @@
 title: "QR Code Halo: Scan og opret — Åbner straks, tjek bagefter | iOS App"
 lang: "da"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/qrcodehalo/decision/l/da/index.html"
-modified: "2026-10-24"
+modified: "2026-10-25"
 app_store_id: "6806779853"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

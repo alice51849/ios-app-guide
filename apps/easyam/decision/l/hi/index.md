@@ -2,7 +2,7 @@
 title: "EasyAM: छुट्टी अलार्म घड़ी — कल बजेगा? सिर्फ़ काम के दिन | iOS App"
 lang: "hi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/easyam/decision/l/hi/index.html"
-modified: "2026-10-24"
+modified: "2026-10-25"
 app_store_id: "6821790092"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

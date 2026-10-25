@@ -2,7 +2,7 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-10-25",
-  "content_digest": "aec9888a4e5392b47266258316add339842c2d00a9c61b928e6d7109c0d26086",
+  "content_digest": "c0eb3b1da4842c62c983bc356a5ef064232879949719350e9024007ad62e4602",
   "locale": "pt-BR",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -224,7 +224,8 @@
         "prova",
         "viagem",
         "namoro",
-        "calendário"
+        "calendário",
+        "contagem regressiva prova"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -385,7 +386,8 @@
         "aeroporto",
         "restaurante",
         "hotel",
-        "offline"
+        "offline",
+        "guia de conversação"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -835,7 +837,10 @@
         "símbolos",
         "escrita",
         "pré-escola",
-        "sons"
+        "sons",
+        "fonética chinesa",
+        "bopomofo",
+        "chinês para crianças"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -875,7 +880,10 @@
         "pré-escola",
         "alfabetização",
         "revisão",
-        "bilíngue"
+        "bilíngue",
+        "bopomofo",
+        "mandarim crianças",
+        "zhuyin"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1202,7 +1210,8 @@
         "anonimizar",
         "lgpd",
         "exif",
-        "senha"
+        "senha",
+        "tarjar pdf"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1243,7 +1252,10 @@
         "calendário",
         "widget",
         "organização",
-        "diária"
+        "diária",
+        "lista de tarefas",
+        "checklist",
+        "to do list"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1324,7 +1336,9 @@
         "fluxo de caixa",
         "vendas",
         "aluguel",
-        "clientes"
+        "clientes",
+        "despesas do projeto",
+        "receitas e despesas"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1853,7 +1867,8 @@
         "leitura",
         "prova",
         "vestibular",
-        "concurso"
+        "concurso",
+        "timer de foco"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1894,7 +1909,8 @@
         "fotos",
         "hotel",
         "museu",
-        "aeroporto"
+        "aeroporto",
+        "jogos para viagem de carro"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2017,7 +2033,8 @@
         "4k",
         "corrigir",
         "embaçada",
-        "ia"
+        "ia",
+        "corrigir foto borrada"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2061,7 +2078,9 @@
         "reset",
         "llm",
         "meter",
-        "sessão"
+        "sessão",
+        "uso de tokens",
+        "limite codex"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

@@ -2,7 +2,7 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-10-25",
-  "content_digest": "aec9888a4e5392b47266258316add339842c2d00a9c61b928e6d7109c0d26086",
+  "content_digest": "c0eb3b1da4842c62c983bc356a5ef064232879949719350e9024007ad62e4602",
   "locale": "ja",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -178,7 +178,8 @@
         "充電ケア",
         "充電範囲",
         "充電速度",
-        "データを書き出す"
+        "データを書き出す",
+        "バッテリー 劣化"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1047,7 +1048,9 @@
         "幼稚園",
         "練習",
         "ゲーム",
-        "知育"
+        "知育",
+        "注音符号",
+        "注音 学習"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1367,7 +1370,8 @@
         "声かけ",
         "ご褒美",
         "モチベーション",
-        "年少"
+        "年少",
+        "ごほうび シール"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1521,7 +1525,8 @@
         "プライバシー",
         "保険証",
         "ファイル",
-        "診断書"
+        "診断書",
+        "個人情報 マスク"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2426,7 +2431,8 @@
         "メモ",
         "計画",
         "行程",
-        "旅行"
+        "旅行",
+        "旅程"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2673,7 +2679,8 @@
         "プロバイダ",
         "モデム",
         "対処",
-        "直し方"
+        "直し方",
+        "wifi つながらない"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2827,7 +2834,9 @@
         "aes",
         "bz2",
         "xz",
-        "フォルダ"
+        "フォルダ",
+        "パスワード付きzip",
+        "7zを解凍"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,

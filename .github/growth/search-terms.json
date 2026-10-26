@@ -31,16 +31,16 @@
     "weight": 0.45
    },
    "FR": {
-    "date": "2026-10-22",
+    "date": "2026-10-25",
     "locale": "fr",
     "paid": false,
-    "rank": 7,
+    "rank": 6,
     "results": 21,
     "term": "toeic lecture",
     "weight": 0.3
    },
    "JP": {
-    "date": "2026-10-24",
+    "date": "2026-10-25",
     "locale": "ja",
     "paid": false,
     "rank": 5,
@@ -49,7 +49,7 @@
     "weight": 0.6
    },
    "KR": {
-    "date": "2026-10-22",
+    "date": "2026-10-25",
     "locale": "ko",
     "paid": false,
     "rank": 10,
@@ -69,25 +69,25 @@
   },
   "battai": {
    "BR": {
-    "date": "2026-10-22",
+    "date": "2026-10-25",
     "locale": "pt-BR",
     "paid": false,
-    "rank": 6,
-    "results": 9,
+    "rank": 5,
+    "results": 8,
     "term": "capacidade da bateria",
     "weight": 0.2
    },
    "DE": {
     "date": "2026-10-24",
     "locale": "de",
-    "paid": true,
+    "paid": false,
     "rank": 7,
     "results": 11,
     "term": "akku kapazität",
     "weight": 0.4
    },
    "FR": {
-    "date": "2026-10-22",
+    "date": "2026-10-25",
     "locale": "fr",
     "paid": false,
     "rank": 5,
@@ -96,10 +96,10 @@
     "weight": 0.3
    },
    "KR": {
-    "date": "2026-10-22",
+    "date": "2026-10-25",
     "locale": "ko",
     "paid": false,
-    "rank": 8,
+    "rank": 9,
     "results": 164,
     "term": "배터리",
     "weight": 0.3
@@ -123,7 +123,7 @@
     "weight": 0.1
    },
    "TW": {
-    "date": "2026-10-22",
+    "date": "2026-10-25",
     "locale": "zh-Hant",
     "paid": false,
     "rank": 3,
@@ -143,12 +143,12 @@
   },
   "claudeusagemini": {
    "BR": {
-    "date": "2026-10-22",
+    "date": "2026-10-25",
     "locale": "pt-BR",
     "paid": false,
-    "rank": 2,
-    "results": 3,
-    "term": "uso do copilot",
+    "rank": 4,
+    "results": 26,
+    "term": "uso de tokens",
     "weight": 0.2
    },
    "DE": {
@@ -161,12 +161,12 @@
     "weight": 0.4
    },
    "FR": {
-    "date": "2026-10-22",
+    "date": "2026-10-25",
     "locale": "fr",
     "paid": false,
-    "rank": 4,
-    "results": 4,
-    "term": "consommation tokens",
+    "rank": 2,
+    "results": 5,
+    "term": "suivi utilisation ia",
     "weight": 0.3
    },
    "JP": {
@@ -179,7 +179,7 @@
     "weight": 0.6
    },
    "KR": {
-    "date": "2026-10-22",
+    "date": "2026-10-25",
     "locale": "ko",
     "paid": false,
     "rank": 3,
@@ -206,12 +206,12 @@
     "weight": 0.1
    },
    "TW": {
-    "date": "2026-10-22",
+    "date": "2026-10-25",
     "locale": "zh-Hant",
     "paid": false,
     "rank": 2,
-    "results": 29,
-    "term": "token 用量",
+    "results": 16,
+    "term": "ai 用量追蹤",
     "weight": 0.3
    },
    "VN": {
@@ -226,10 +226,10 @@
   },
   "cvdesk": {
    "BR": {
-    "date": "2026-10-22",
+    "date": "2026-10-25",
     "locale": "pt-BR",
     "paid": false,
-    "rank": 5,
+    "rank": 2,
     "results": 93,
     "term": "currículo ats",
     "weight": 0.2
@@ -262,11 +262,11 @@
     "weight": 0.6
    },
    "KR": {
-    "date": "2026-10-22",
+    "date": "2026-10-25",
     "locale": "ko",
     "paid": false,
-    "rank": 9,
-    "results": 46,
+    "rank": 8,
+    "results": 47,
     "term": "ats 이력서",
     "weight": 0.3
    },
@@ -280,12 +280,12 @@
     "weight": 0.1
    },
    "TW": {
-    "date": "2026-10-22",
+    "date": "2026-10-25",
     "locale": "zh-Hant",
     "paid": false,
-    "rank": 2,
-    "results": 23,
-    "term": "履歷產生器",
+    "rank": 3,
+    "results": 32,
+    "term": "ats 履歷",
     "weight": 0.3
    }
   },
@@ -324,7 +324,7 @@
   },
   "easyam": {
    "BR": {
-    "date": "2026-10-22",
+    "date": "2026-10-25",
     "locale": "pt-BR",
     "paid": false,
     "rank": 3,
@@ -342,11 +342,11 @@
     "weight": 0.4
    },
    "FR": {
-    "date": "2026-10-22",
+    "date": "2026-10-25",
     "locale": "fr",
     "paid": false,
-    "rank": 4,
-    "results": 11,
+    "rank": 3,
+    "results": 13,
     "term": "réveil jours fériés",
     "weight": 0.3
    },
@@ -368,15 +368,6 @@
     "term": "祝日 鳴らない 目覚まし",
     "weight": 0.6
    },
-   "KR": {
-    "date": "2026-10-22",
-    "locale": "ko",
-    "paid": false,
-    "rank": 8,
-    "results": 178,
-    "term": "공휴일 알람",
-    "weight": 0.3
-   },
    "RU": {
     "date": "2026-10-23",
     "locale": "ru",
@@ -396,12 +387,12 @@
     "weight": 0.1
    },
    "TW": {
-    "date": "2026-10-22",
+    "date": "2026-10-25",
     "locale": "zh-Hant",
     "paid": false,
     "rank": 3,
-    "results": 26,
-    "term": "假日不響 鬧鐘",
+    "results": 17,
+    "term": "國定假日 鬧鐘",
     "weight": 0.3
    },
    "US": {
@@ -447,7 +438,7 @@
   },
   "hourstaglite": {
    "FR": {
-    "date": "2026-10-22",
+    "date": "2026-10-25",
     "locale": "fr",
     "paid": false,
     "rank": 9,
@@ -484,6 +475,15 @@
     "term": "お迎え ボード",
     "weight": 0.6
    },
+   "KR": {
+    "date": "2026-10-25",
+    "locale": "ko",
+    "paid": false,
+    "rank": 10,
+    "results": 17,
+    "term": "흐르는 글씨",
+    "weight": 0.3
+   },
    "VN": {
     "date": "2026-10-24",
     "locale": "vi",
@@ -496,7 +496,7 @@
   },
   "lumibopomofo": {
    "BR": {
-    "date": "2026-10-22",
+    "date": "2026-10-25",
     "locale": "pt-BR",
     "paid": false,
     "rank": 2,
@@ -514,11 +514,11 @@
     "weight": 0.4
    },
    "FR": {
-    "date": "2026-10-22",
+    "date": "2026-10-25",
     "locale": "fr",
     "paid": false,
     "rank": 3,
-    "results": 3,
+    "results": 4,
     "term": "apprendre zhuyin",
     "weight": 0.3
    },
@@ -541,10 +541,10 @@
     "weight": 0.6
    },
    "KR": {
-    "date": "2026-10-22",
+    "date": "2026-10-25",
     "locale": "ko",
     "paid": false,
-    "rank": 2,
+    "rank": 4,
     "results": 7,
     "term": "주음부호",
     "weight": 0.3
@@ -567,6 +567,15 @@
     "term": "ภาษาจีนสำหรับเด็ก",
     "weight": 0.1
    },
+   "TW": {
+    "date": "2026-10-25",
+    "locale": "zh-Hant",
+    "paid": true,
+    "rank": 10,
+    "results": 177,
+    "term": "學注音",
+    "weight": 0.3
+   },
    "US": {
     "date": "2026-10-23",
     "locale": "en",
@@ -588,7 +597,7 @@
     "weight": 0.4
    },
    "JP": {
-    "date": "2026-10-24",
+    "date": "2026-10-25",
     "locale": "ja",
     "paid": false,
     "rank": 3,
@@ -597,7 +606,7 @@
     "weight": 0.6
    },
    "KR": {
-    "date": "2026-10-22",
+    "date": "2026-10-25",
     "locale": "ko",
     "paid": false,
     "rank": 7,
@@ -664,21 +673,21 @@
     "weight": 0.1
    },
    "TW": {
-    "date": "2026-10-22",
+    "date": "2026-10-25",
     "locale": "zh-Hant",
     "paid": true,
-    "rank": 5,
-    "results": 132,
+    "rank": 7,
+    "results": 137,
     "term": "天氣 穿搭",
     "weight": 0.3
    }
   },
   "maskmyfile": {
    "BR": {
-    "date": "2026-10-22",
+    "date": "2026-10-25",
     "locale": "pt-BR",
     "paid": false,
-    "rank": 6,
+    "rank": 7,
     "results": 11,
     "term": "tarjar pdf",
     "weight": 0.2
@@ -713,7 +722,7 @@
   },
   "mochi": {
    "BR": {
-    "date": "2026-10-24",
+    "date": "2026-10-25",
     "locale": "pt-BR",
     "paid": true,
     "rank": 8,
@@ -722,11 +731,11 @@
     "weight": 0.2
    },
    "CA": {
-    "date": "2026-10-24",
+    "date": "2026-10-25",
     "locale": "en",
     "paid": false,
-    "rank": 3,
-    "results": 188,
+    "rank": 2,
+    "results": 181,
     "term": "cute to do list",
     "weight": 0.25
    },
@@ -740,11 +749,11 @@
     "weight": 0.45
    },
    "KR": {
-    "date": "2026-10-22",
+    "date": "2026-10-25",
     "locale": "ko",
     "paid": false,
     "rank": 10,
-    "results": 85,
+    "results": 86,
     "term": "귀여운 플래너",
     "weight": 0.3
    },
@@ -767,7 +776,7 @@
     "weight": 0.1
    },
    "US": {
-    "date": "2026-10-24",
+    "date": "2026-10-25",
     "locale": "en",
     "paid": true,
     "rank": 2,
@@ -787,20 +796,20 @@
   },
   "mochidonestamp": {
    "BR": {
-    "date": "2026-10-22",
+    "date": "2026-10-25",
     "locale": "pt-BR",
     "paid": false,
-    "rank": 3,
-    "results": 15,
+    "rank": 2,
+    "results": 17,
     "term": "registro última vez",
     "weight": 0.2
    },
    "KR": {
-    "date": "2026-10-22",
+    "date": "2026-10-25",
     "locale": "ko",
     "paid": false,
-    "rank": 9,
-    "results": 54,
+    "rank": 7,
+    "results": 55,
     "term": "마지막 기록",
     "weight": 0.3
    },
@@ -852,9 +861,9 @@
     "weight": 0.4
    },
    "TW": {
-    "date": "2026-10-22",
+    "date": "2026-10-25",
     "locale": "zh-Hant",
-    "paid": true,
+    "paid": false,
     "rank": 1,
     "results": 8,
     "term": "專案支出",
@@ -871,15 +880,6 @@
     "term": "一页 总结",
     "weight": 0.45
    },
-   "KR": {
-    "date": "2026-10-22",
-    "locale": "ko",
-    "paid": false,
-    "rank": 5,
-    "results": 31,
-    "term": "발표 자료",
-    "weight": 0.3
-   },
    "TH": {
     "date": "2026-10-24",
     "locale": "th",
@@ -890,11 +890,11 @@
     "weight": 0.1
    },
    "TW": {
-    "date": "2026-10-22",
+    "date": "2026-10-25",
     "locale": "zh-Hant",
     "paid": false,
-    "rank": 6,
-    "results": 69,
+    "rank": 5,
+    "results": 70,
     "term": "一頁 摘要",
     "weight": 0.3
    },
@@ -930,11 +930,11 @@
   },
   "qrcodehalo": {
    "TW": {
-    "date": "2026-10-22",
+    "date": "2026-10-25",
     "locale": "zh-Hant",
     "paid": false,
     "rank": 6,
-    "results": 10,
+    "results": 12,
     "term": "qr code 連結 檢查",
     "weight": 0.3
    }
@@ -952,10 +952,10 @@
   },
   "scanto": {
    "US": {
-    "date": "2026-10-24",
+    "date": "2026-10-25",
     "locale": "en",
     "paid": false,
-    "rank": 6,
+    "rank": 8,
     "results": 186,
     "term": "Offline PDF & OCR",
     "weight": 1.0
@@ -963,16 +963,25 @@
   },
   "shotinbox": {
    "US": {
-    "date": "2026-10-24",
+    "date": "2026-10-25",
     "locale": "en",
     "paid": false,
-    "rank": 9,
-    "results": 181,
+    "rank": 8,
+    "results": 180,
     "term": "Sort Screenshots",
     "weight": 1.0
    }
   },
   "stayclock": {
+   "FR": {
+    "date": "2026-10-25",
+    "locale": "fr",
+    "paid": false,
+    "rank": 4,
+    "results": 76,
+    "term": "horloge de chevet",
+    "weight": 0.3
+   },
    "TH": {
     "date": "2026-10-24",
     "locale": "th",
@@ -983,7 +992,7 @@
     "weight": 0.1
    },
    "US": {
-    "date": "2026-10-24",
+    "date": "2026-10-25",
     "locale": "en",
     "paid": true,
     "rank": 9,
@@ -1025,10 +1034,10 @@
     "weight": 0.6
    },
    "TW": {
-    "date": "2026-10-22",
+    "date": "2026-10-25",
     "locale": "zh-Hant",
     "paid": false,
-    "rank": 5,
+    "rank": 6,
     "results": 25,
     "term": "小孩 旅行",
     "weight": 0.3
@@ -1036,7 +1045,7 @@
   },
   "unblurry": {
    "BR": {
-    "date": "2026-10-22",
+    "date": "2026-10-25",
     "locale": "pt-BR",
     "paid": false,
     "rank": 4,
@@ -1045,7 +1054,7 @@
     "weight": 0.2
    },
    "KR": {
-    "date": "2026-10-22",
+    "date": "2026-10-25",
     "locale": "ko",
     "paid": false,
     "rank": 5,
@@ -1054,7 +1063,7 @@
     "weight": 0.3
    },
    "US": {
-    "date": "2026-10-24",
+    "date": "2026-10-25",
     "locale": "en",
     "paid": true,
     "rank": 4,
@@ -1076,16 +1085,16 @@
   },
   "wifiaidlite": {
    "JP": {
-    "date": "2026-10-24",
+    "date": "2026-10-25",
     "locale": "ja",
     "paid": false,
-    "rank": 9,
+    "rank": 7,
     "results": 9,
     "term": "wifi つながらない",
     "weight": 0.6
    },
    "KR": {
-    "date": "2026-10-22",
+    "date": "2026-10-25",
     "locale": "ko",
     "paid": false,
     "rank": 1,
@@ -1105,11 +1114,11 @@
   },
   "wordmate": {
    "US": {
-    "date": "2026-10-24",
+    "date": "2026-10-25",
     "locale": "en",
     "paid": false,
     "rank": 9,
-    "results": 171,
+    "results": 173,
     "term": "44 languages",
     "weight": 1.0
    }
@@ -1136,10 +1145,10 @@
     "weight": 0.6
    },
    "TW": {
-    "date": "2026-10-22",
+    "date": "2026-10-25",
     "locale": "zh-Hant",
     "paid": false,
-    "rank": 6,
+    "rank": 7,
     "results": 13,
     "term": "密碼保護 zip",
     "weight": 0.3
@@ -1155,7 +1164,7 @@
    }
   }
  },
- "as_of": "2026-10-24",
+ "as_of": "2026-10-25",
  "fresh_days": 7,
  "schema": "lumi.search-terms/v1",
  "source": "00_GrowthEngine data/rank_watch/history.csv + reports/funnel-latest.json",

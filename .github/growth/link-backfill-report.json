@@ -1,8 +1,8 @@
 {
- "generated": "2026-10-25T04:47:46Z",
+ "generated": "2026-10-26T04:53:31Z",
  "mode": "apply",
  "counts": {
-  "ok_reply": 18,
+  "ok_reply": 21,
   "unknown_app": 47,
   "ok_store_only": 719,
   "ok_backfilled_earlier": 13,
@@ -14,6 +14,30 @@
  "rows": [
   {
    "channel": "threads",
+   "id": "17938058007394395",
+   "permalink": "https://www.threads.com/@hourstag.app/post/De8Q8rXjJXY",
+   "date": "2026-10-26",
+   "app": "mochi",
+   "status": "ok_reply",
+   "text": "First time hosting Thanksgiving and my brain is just a pile of tiny jobs. So it all went into a cute checklist: menu, groceries, who's bring",
+   "why": "trial",
+   "ios_id": "6785004775",
+   "locale": "en-US"
+  },
+  {
+   "channel": "threads",
+   "id": "17897497500413736",
+   "permalink": "https://www.threads.com/@hourstag.app/post/De8XMYTlbGM",
+   "date": "2026-10-26",
+   "app": "claudeusagemini",
+   "status": "ok_reply",
+   "text": "Claude 跑到一半突然說額度用完，才發現不是 5 小時額度，而是每週額度先見底？UsageNow 讓你在主畫面小工具上看 Claude 5 小時與每週額度（含各模型每週上限）、Codex、Copilot 進階請求和 Gemini 每日配額，還有重置倒數。可以自己設 90% 或",
+   "why": "brand",
+   "ios_id": "6818607603",
+   "locale": "zh-Hant"
+  },
+  {
+   "channel": "threads",
    "id": "18056565971807893",
    "permalink": "https://www.threads.com/@hourstag.app/post/De5kmDAIEQT",
    "date": "2026-10-25",
@@ -22,6 +46,18 @@
    "text": "連假最後一天，趁今天先把「收假清單」寫好 📝 ☐ 明天要回的訊息 ☐ 這週要交的東西 ☐ 便當菜先買好 ☐ 鬧鐘調回平日 設好提醒、放上主畫面小工具，明天一醒來看一眼就知道從哪開始，不用帶著連假的腦袋硬開機。 用 iPhone Duo 嗎？這款現在填滿整個內螢幕，摺起或打開版面都",
    "why": "trial",
    "ios_id": "6785004775",
+   "locale": "zh-Hant"
+  },
+  {
+   "channel": "threads",
+   "id": "17931961221164698",
+   "permalink": "https://www.threads.com/@hourstag.app/post/De6yMZRFuLr",
+   "date": "2026-10-25",
+   "app": "lockhour",
+   "status": "ok_reply",
+   "text": "收假前一晚最常發生的事：說好早點睡，結果躺在床上滑短影音滑到兩點，隔天上班整個人當機。 今晚試試 LockHour 的「睡前放鬆」：開始一個時段，選好的社群和影音 App 會先被鎖住，時間到自動解鎖。明天早上還可以用「晨間重啟」，起床先別碰社群。 不用靠意志力硬撐。連假的最後一晚",
+   "why": "brand",
+   "ios_id": "6780107485",
    "locale": "zh-Hant"
   },
   {

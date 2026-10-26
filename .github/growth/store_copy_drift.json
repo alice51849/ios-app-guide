@@ -1053,15 +1053,17 @@
    "brands": [
     "DailyMate"
    ],
-   "live_updated": "2026-10-10",
-   "live_version": "1.0.8",
+   "live_updated": "2026-10-25",
+   "live_version": "1.0.9",
    "locales": {
     "de-DE": {
-     "added": [],
+     "added": [
+      "Optimiert für das iPhone Duo. Die mit dem neuesten SDK entwickelte App füllt das gesamte innere Display und passt das Layout automatisch an, egal ob zugeklappt oder aufgeklappt."
+     ],
      "dropped": [],
-     "live_updated": "2026-10-10",
-     "live_version": "1.0.8",
-     "same": true
+     "live_updated": "2026-10-25",
+     "live_version": "1.0.9",
+     "same": false
     },
     "en-GB": {
      "added": [],
@@ -1071,11 +1073,13 @@
      "same": true
     },
     "en-US": {
-     "added": [],
+     "added": [
+      "Optimized for iPhone Duo. Built with the latest SDK, the app fills the entire inner display and automatically adjusts its layout whether the device is folded or open."
+     ],
      "dropped": [],
-     "live_updated": "2026-10-10",
-     "live_version": "1.0.8",
-     "same": true
+     "live_updated": "2026-10-25",
+     "live_version": "1.0.9",
+     "same": false
     },
     "es-ES": {
      "added": [],
@@ -1085,32 +1089,40 @@
      "same": true
     },
     "fr-FR": {
-     "added": [],
+     "added": [
+      "Optimisée pour l’iPhone Duo. Conçue avec le SDK le plus récent, l’app remplit tout l’écran intérieur et adapte automatiquement sa mise en page, appareil plié ou ouvert."
+     ],
      "dropped": [],
-     "live_updated": "2026-10-10",
-     "live_version": "1.0.8",
-     "same": true
+     "live_updated": "2026-10-25",
+     "live_version": "1.0.9",
+     "same": false
     },
     "ja": {
-     "added": [],
+     "added": [
+      "iPhone Duoに最適化。最新の開発キットでビルドしており、内側のディスプレイ全体に表示され、折りたたんでも開いても自動でレイアウトが調整されます。"
+     ],
      "dropped": [],
-     "live_updated": "2026-10-10",
-     "live_version": "1.0.8",
-     "same": true
+     "live_updated": "2026-10-25",
+     "live_version": "1.0.9",
+     "same": false
     },
     "ko": {
-     "added": [],
+     "added": [
+      "iPhone Duo에 최적화되었습니다. 최신 개발 도구로 빌드되어 안쪽 디스플레이 전체를 가득 채우며, 접거나 펼쳐도 레이아웃이 자동으로 조정됩니다."
+     ],
      "dropped": [],
-     "live_updated": "2026-10-10",
-     "live_version": "1.0.8",
-     "same": true
+     "live_updated": "2026-10-25",
+     "live_version": "1.0.9",
+     "same": false
     },
     "pt-BR": {
-     "added": [],
+     "added": [
+      "Otimizado para iPhone Duo. Criado com o SDK mais recente, o app ocupa toda a tela interna e ajusta o layout automaticamente, com o aparelho dobrado ou aberto."
+     ],
      "dropped": [],
-     "live_updated": "2026-10-10",
-     "live_version": "1.0.8",
-     "same": true
+     "live_updated": "2026-10-25",
+     "live_version": "1.0.9",
+     "same": false
     },
     "zh-Hans": {
      "added": [],
@@ -1120,14 +1132,16 @@
      "same": true
     },
     "zh-Hant": {
-     "added": [],
+     "added": [
+      "已針對 iPhone Duo 最佳化。本 App 以最新開發套件建置,填滿整個內螢幕,無論摺起或打開都會自動調整版面。"
+     ],
      "dropped": [],
-     "live_updated": "2026-10-10",
-     "live_version": "1.0.8",
-     "same": true
+     "live_updated": "2026-10-25",
+     "live_version": "1.0.9",
+     "same": false
     }
    },
-   "status": "green"
+   "status": "red"
   },
   "dailymatelite": {
    "blocked_terms": [],
@@ -3390,15 +3404,24 @@
    "brands": [
     "PhotoCream Pro"
    ],
-   "live_updated": "2026-10-09",
-   "live_version": "1.0.13",
+   "live_updated": "2026-10-25",
+   "live_version": "1.0.14",
    "locales": {
     "de-DE": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.13",
-     "same": true
+     "added": [
+      "Optimiert für das iPhone Duo. Die mit dem neuesten SDK entwickelte App füllt das gesamte innere Display und passt das Layout automatisch an, egal ob zugeklappt oder aufgeklappt.",
+      "Look klauen: Wähle ein beliebiges Foto, das dir gefällt. PhotoCream Pro analysiert seine Farben direkt auf deinem Gerät und macht daraus ein bearbeitbares Film-Grading für deine eigenen Fotos.",
+      "Dazu über 100 Film-Looks mit Körnung, Halation, Lichtlecks und Vignette, live in der Vorschau, noch bevor du auslöst.",
+      "Feinschliff mit Kurven, HSL und Split-Toning: Die Haut wird glatter, während Augen und Haare scharf bleiben. Alles bleibt auf deinem Gerät.",
+      "Außerdem: Augen vergrößern, die Silhouette natürlich strecken sowie Text, Rahmen, Körnung, Staub und Datumsstempel wie auf klassischen Filmfotos.",
+      "Eine einmalige Freischaltung in der App entfernt das Wasserzeichen und öffnet alle Premium-Pakete. Kein Abo, keine Werbung, und deine Fotos werden nie hochgeladen."
+     ],
+     "dropped": [
+      "PhotoCream Pro verwandelt dein Handy in eine Filmkamera: Körnung, Halation und Lichtlecks siehst du live, noch bevor du auslöst. Über 100 authentische Film-Looks, Farben aus jedem Foto übernehmen, Haut retuschieren und Licht, Farbe und Kurven im vollwertigen Editor feinjustieren. Alles läuft auf deinem Gerät: ohne Abo, ohne Werbung, und deine Fotos werden nie hochgeladen. Dazu kommen ein schmaleres Gesicht, größere Augen, eine gestreckte Silhouette und ein Datumsstempel wie auf klassischen Filmfotos."
+     ],
+     "live_updated": "2026-10-25",
+     "live_version": "1.0.14",
+     "same": false
     },
     "en-GB": {
      "added": [],
@@ -3408,11 +3431,20 @@
      "same": true
     },
     "en-US": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.13",
-     "same": true
+     "added": [
+      "Optimized for iPhone Duo. Built with the latest SDK, the app fills the entire inner display and automatically adjusts its layout whether the device is folded or open.",
+      "Steal the Look: pick any photo you love, and PhotoCream Pro reads its colors on your device and turns them into an editable film grade you can apply to your own shots.",
+      "Plus 100+ film looks — grain, halation, light leaks and vignette — previewed live before you shoot.",
+      "Fine-tune with curves, HSL and split toning, and smooth skin while eyes and hair stay sharp. Everything stays on your device.",
+      "44 languages with instant in-app switching"
+     ],
+     "dropped": [
+      "PhotoCream Pro turns your phone into a premium film camera and a pro photo studio. Shoot authentic analog looks in real time, then fine-tune every detail — all on-device, no subscription, no ads.",
+      "22 languages with instant in-app switching"
+     ],
+     "live_updated": "2026-10-25",
+     "live_version": "1.0.14",
+     "same": false
     },
     "es-ES": {
      "added": [],
@@ -3422,32 +3454,72 @@
      "same": true
     },
     "fr-FR": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.13",
-     "same": true
+     "added": [
+      "Optimisée pour l’iPhone Duo. Conçue avec le SDK le plus récent, l’app remplit tout l’écran intérieur et adapte automatiquement sa mise en page, appareil plié ou ouvert.",
+      "Volez le style : choisissez n'importe quelle photo que vous aimez, PhotoCream Pro analyse ses couleurs sur l'appareil et en fait un étalonnage argentique modifiable à appliquer à vos propres photos.",
+      "Et plus de 100 looks argentiques — grain, halo, fuites de lumière et vignettage — en aperçu direct avant même de déclencher.",
+      "Peaufinez avec les courbes, le TSL et le virage partiel, et lissez la peau tout en gardant yeux et cheveux nets. Tout reste sur votre appareil.",
+      "Et aussi : yeux agrandis, silhouette allongée naturellement, texte, cadres, grain, poussière et date incrustée façon photo argentique.",
+      "Un déverrouillage unique dans l'app retire le filigrane et ouvre tous les packs premium. Sans abonnement, sans publicité, et vos photos ne sont jamais envoyées en ligne."
+     ],
+     "dropped": [
+      "PhotoCream Pro transforme votre téléphone en appareil argentique : voyez le grain, le halo et les fuites de lumière en direct, avant même de déclencher. Plus de 100 looks argentiques, copie des couleurs de n'importe quelle photo, retouche de la peau et éditeur complet pour la lumière, la couleur et les courbes. Tout se passe sur l'appareil : sans abonnement, sans publicité, et vos photos ne sont jamais envoyées en ligne. Et aussi : visage affiné, yeux agrandis, silhouette allongée et date incrustée façon photo argentique."
+     ],
+     "live_updated": "2026-10-25",
+     "live_version": "1.0.14",
+     "same": false
     },
     "ja": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.13",
-     "same": true
+     "added": [
+      "iPhone Duoに最適化。最新の開発キットでビルドしており、内側のディスプレイ全体に表示され、折りたたんでも開いても自動でレイアウトが調整されます。",
+      "ルックを盗む:お気に入りの写真を1枚選ぶと、PhotoCream Proが端末内でその色を分析し、自分の写真に適用できる調整可能なフィルムカラーに変換します。",
+      "さらに100種類以上のフィルム調ルック。粒子・ハレーション・光漏れ・周辺減光を、シャッターを切る前からライブプレビューで確認できます。",
+      "カーブ・HSL・スプリットトーンで細かく仕上げ、目や髪のシャープさを保ったまま肌をなめらかに。処理はすべて端末内で完結します。",
+      "目を大きく、全身をすらりと自然に伸ばす補正や、テキスト・フレーム・粒子・ダスト、昔のフィルム写真のような日付スタンプも。",
+      "アプリ内の1回限りのアンロックで透かしが消え、すべてのプレミアムパックが使えるようになります。サブスクなし、広告なし。写真がアップロードされることもありません。"
+     ],
+     "dropped": [
+      "PhotoCream Proは、スマホをフィルムカメラに変えるアプリです。シャッターを切る前から、粒子・ハレーション・光漏れをライブプレビューで確認できます。100種類以上のフィルム調ルック、好きな写真の色をコピーする機能、美肌補正、光・色・カーブまで調整できる本格エディタを搭載。すべて端末内で完結し、サブスクも広告もありません。写真がアップロードされることもありません。",
+      "プロフェッショナルな写真編集機能で、写真をさらに美しく。周波数分離技術を使用した肌美化で、顔の詳細に焦点を当てます。顔や体のリシェイプ機能で、写真内の人物のプロポーションを簡単に調整。光や色、曲線の調整機能で、写真の細部をコントロールし、テキスト、フレーム、粒子効果を追加して個性をプラス。",
+      "PhotoCream Proは一度の購入で、サブスクリプションなし、広告なし、完全にプライバシーを保護し、すべての編集はデバイス上で行われ、アップロードは不要です。今すぐダウンロードして、プロフェッショナルな撮影と編集の楽しさを体験してください!"
+     ],
+     "live_updated": "2026-10-25",
+     "live_version": "1.0.14",
+     "same": false
     },
     "ko": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.13",
-     "same": true
+     "added": [
+      "iPhone Duo에 최적화되었습니다. 최신 개발 도구로 빌드되어 안쪽 디스플레이 전체를 가득 채우며, 접거나 펼쳐도 레이아웃이 자동으로 조정됩니다.",
+      "룩 훔치기: 마음에 드는 사진을 고르면 PhotoCream Pro가 기기 안에서 그 색감을 분석해, 내 사진에 입힐 수 있는 편집 가능한 필름 색보정으로 만들어 줘요.",
+      "여기에 100개 이상의 필름 룩까지. 그레인, 할레이션, 빛샘, 비네팅을 셔터를 누르기 전에 실시간으로 확인하세요.",
+      "커브, HSL, 스플릿 토닝으로 섬세하게 다듬고, 눈과 머리카락은 선명하게 둔 채 피부만 매끈하게. 모든 처리는 기기 안에서 이뤄져요.",
+      "눈 키우기, 몸을 자연스럽게 길어 보이게 하는 보정, 텍스트·프레임·그레인·먼지, 옛 필름 사진 같은 날짜 스탬프도 넣을 수 있어요.",
+      "앱 내 1회 잠금 해제로 워터마크가 사라지고 모든 프리미엄 팩이 열려요. 구독도 광고도 없고, 사진은 어디에도 업로드되지 않아요."
+     ],
+     "dropped": [
+      "PhotoCream Pro는 휴대폰을 필름카메라로 바꿔 주는 앱이에요. 셔터를 누르기 전에 그레인, 할레이션, 빛샘을 실시간으로 확인하세요. 100개 이상의 필름 룩, 원하는 사진의 색감 복사, 뷰티 보정, 빛·색·커브까지 다루는 편집 도구를 담았어요. 모든 처리는 기기 안에서 이뤄지고 구독도 광고도 없습니다.",
+      "전문 사진 편집기로 사진을 한층 더 아름답게 만드세요. 주파수 분리 기술을 사용하여 피부를 미화하고 얼굴의 세부 사항에 집중합니다. 얼굴 및 몸매 리셰이프 기능으로 사진 속 인물의 비율을 쉽게 조정할 수 있습니다. 빛과 색상, 곡선 조정 기능으로 사진의 세부 사항을 제어하고, 텍스트, 프레임, 입자 효과를 추가하여 개성을 더하세요.",
+      "PhotoCream Pro는 일회성 구매로, 구독이나 광고가 없으며, 완전한 개인 정보 보호를 제공합니다. 모든 편집은 기기에서 이루어지며 업로드가 필요 없습니다. 지금 다운로드하여 전문적인 촬영 및 편집의 즐거움을 경험해보세요!"
+     ],
+     "live_updated": "2026-10-25",
+     "live_version": "1.0.14",
+     "same": false
     },
     "pt-BR": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.13",
-     "same": true
+     "added": [
+      "Otimizado para iPhone Duo. Criado com o SDK mais recente, o app ocupa toda a tela interna e ajusta o layout automaticamente, com o aparelho dobrado ou aberto.",
+      "Roube o visual: escolha qualquer foto que você ama e o PhotoCream Pro analisa as cores no seu aparelho e as transforma em uma correção de cor de filme editável para aplicar nas suas fotos.",
+      "E mais de 100 looks de filme com grão, halação, vazamento de luz e vinheta, com prévia ao vivo antes de clicar.",
+      "Ajuste curvas, HSL e tonalização dividida, e suavize a pele mantendo olhos e cabelo nítidos. Tudo fica no seu aparelho.",
+      "E ainda: olhos maiores, silhueta alongada de forma natural e texto, molduras, grão, poeira ou carimbo de data como nas fotos de filme clássicas.",
+      "Um desbloqueio único dentro do app remove a marca d'água e libera todos os pacotes premium. Sem assinatura, sem anúncios e suas fotos nunca são enviadas para a internet."
+     ],
+     "dropped": [
+      "PhotoCream Pro transforma seu celular em uma câmera analógica: veja grão, halação e vazamento de luz ao vivo, antes mesmo de clicar. Mais de 100 looks de filme, cópia das cores de qualquer foto, retoque de pele e um editor completo de luz, cor e curvas. Tudo roda no seu aparelho: sem assinatura, sem anúncios e suas fotos nunca são enviadas para a internet. E ainda: rosto mais fino, olhos maiores, silhueta alongada e carimbo de data como nas fotos de filme."
+     ],
+     "live_updated": "2026-10-25",
+     "live_version": "1.0.14",
+     "same": false
     },
     "zh-Hans": {
      "added": [],
@@ -3457,14 +3529,23 @@
      "same": true
     },
     "zh-Hant": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.13",
-     "same": true
+     "added": [
+      "已針對 iPhone Duo 最佳化。本 App 以最新開發套件建置,填滿整個內螢幕,無論摺起或打開都會自動調整版面。",
+      "「偷取風格」:選一張你喜歡的照片,PhotoCream Pro 會在手機上分析它的色調,做成可以微調的底片調色,一鍵套到你的照片上。",
+      "還有超過 100 種底片風格:顆粒、光暈、漏光、暗角,按下快門前就能即時預覽成品。",
+      "拍完再用曲線、HSL、分離色調細修,柔膚時眼神與髮絲依然清晰。全部在裝置上完成,照片不上傳。",
+      "支援 44 種語言,可在 App 內即時切換介面語言"
+     ],
+     "dropped": [
+      "PhotoCream Pro 把你的手機變成一台質感底片相機,同時也是一間隨身的專業修圖工作室。不用扛著老相機、不用花時間等沖掃,打開 App 就能即時拍出道地的底片氛圍,拍完再細細調整每一個細節——全部在裝置上完成,無訂閱、無廣告。",
+      "支援 22 種語言,可在 App 內即時切換介面語言"
+     ],
+     "live_updated": "2026-10-25",
+     "live_version": "1.0.14",
+     "same": false
     }
    },
-   "status": "green"
+   "status": "red"
   },
   "picclear": {
    "blocked_terms": [],
@@ -4400,81 +4481,141 @@
    "brands": [
     "Stay Clock"
    ],
-   "live_updated": "2026-10-09",
-   "live_version": "1.0.6",
+   "live_updated": "2026-10-24",
+   "live_version": "1.0.7",
    "locales": {
     "de-DE": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.6",
-     "same": true
+     "added": [
+      "Optimiert für das iPhone Duo. Die mit dem neuesten SDK entwickelte App füllt das gesamte innere Display und passt das Layout automatisch an, egal ob zugeklappt oder aufgeklappt.",
+      "Stay Clock verwandelt dein iPhone oder iPad in eine dauerhaft leuchtende Tischuhr, die du noch vom anderen Ende des Raums ablesen kannst. Wähle aus 101 Zifferblättern, Klappuhren inklusive (100 davon mit dem optionalen Kauf der Vollversion), und schalte nachts auf ein gedimmtes rotes Zifferblatt auf reinem Schwarz.",
+      "Dasselbe Zifferblatt begleitet dich zu Standby, Sperrbildschirm, Home-Bildschirm-Widgets und Apple Watch, mit einem Kalender passend zu jedem Zifferblatt, Stundensignal und einfachem Wecker."
+     ],
+     "dropped": [
+      "Stay Clock verwandelt dein iPhone oder iPad in eine dauerhaft leuchtende Tischuhr, die du noch vom anderen Ende des Raums ablesen kannst. Große Zeit, ein Kalender, der zu jedem Zifferblatt passt, und ein Look, der dich zu Standby, Sperrbildschirm, Home-Bildschirm-Widgets und Apple Watch begleitet."
+     ],
+     "live_updated": "2026-10-24",
+     "live_version": "1.0.7",
+     "same": false
     },
     "en-GB": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.6",
-     "same": true
+     "added": [
+      "Optimised for iPhone Duo. Built with the latest SDK, the app fills the entire inner display and automatically adjusts its layout whether the device is folded or open.",
+      "Stay Clock turns your iPhone or iPad into an always-on desk clock you can read from across the room. Pick from 101 faces, flip clocks included (100 with the optional Lifetime unlock), and switch to a dim red face on true black at night.",
+      "The same face follows you to StandBy, the Lock Screen, Home Screen widgets and Apple Watch, with a calendar that fits each face, an hourly chime and a simple alarm."
+     ],
+     "dropped": [
+      "Stay Clock turns your iPhone or iPad into an always-on desk clock you can read from across the room. Big time, a calendar that fits each face, and one look that follows you to StandBy, the Lock Screen, Home Screen widgets and Apple Watch."
+     ],
+     "live_updated": "2026-10-24",
+     "live_version": "1.0.7",
+     "same": false
     },
     "en-US": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.6",
-     "same": true
+     "added": [
+      "Optimized for iPhone Duo. Built with the latest SDK, the app fills the entire inner display and automatically adjusts its layout whether the device is folded or open.",
+      "Stay Clock turns your iPhone or iPad into an always-on desk clock you can read from across the room. Pick from 101 faces, flip clocks included (100 with the optional Lifetime unlock), and switch to a dim red face on true black at night.",
+      "The same face follows you to StandBy, the Lock Screen, Home Screen widgets and Apple Watch, with a calendar that fits each face, an hourly chime and a simple alarm."
+     ],
+     "dropped": [
+      "Stay Clock turns your iPhone or iPad into an always-on desk clock you can read from across the room. Big time, a calendar that fits each face, and one look that follows you to StandBy, the Lock Screen, Home Screen widgets and Apple Watch."
+     ],
+     "live_updated": "2026-10-24",
+     "live_version": "1.0.7",
+     "same": false
     },
     "es-ES": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.6",
-     "same": true
+     "added": [
+      "Optimizada para el iPhone Duo. Creada con el SDK más reciente, la app ocupa toda la pantalla interior y ajusta su diseño automáticamente, con el dispositivo plegado o desplegado.",
+      "Stay Clock convierte tu iPhone o iPad en un reloj de mesa siempre encendido que puedes leer desde el otro lado de la habitación. Elige entre 101 esferas, relojes flip incluidos (100 con la compra opcional de por vida), y por la noche cambia a una esfera roja tenue sobre negro puro.",
+      "La misma esfera te acompaña en StandBy, la pantalla bloqueada, los widgets de la pantalla de inicio y el Apple Watch, con un calendario a juego con cada esfera, aviso a cada hora y una alarma sencilla."
+     ],
+     "dropped": [
+      "Stay Clock convierte tu iPhone o iPad en un reloj de mesa siempre encendido que puedes leer desde el otro lado de la habitación. Hora grande, un calendario que se adapta a cada esfera, y un mismo aspecto que te acompaña en StandBy, la pantalla bloqueada, los widgets de la pantalla de inicio y el Apple Watch."
+     ],
+     "live_updated": "2026-10-24",
+     "live_version": "1.0.7",
+     "same": false
     },
     "fr-FR": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.6",
-     "same": true
+     "added": [
+      "Optimisée pour l’iPhone Duo. Conçue avec le SDK le plus récent, l’app remplit tout l’écran intérieur et adapte automatiquement sa mise en page, appareil plié ou ouvert.",
+      "Stay Clock transforme votre iPhone ou iPad en horloge toujours allumée, lisible depuis l’autre bout de la pièce. Choisissez parmi 101 cadrans, horloges flip incluses (dont 100 avec l’achat à vie facultatif), et passez la nuit à un cadran rouge tamisé sur fond noir pur.",
+      "Le même cadran vous suit sur StandBy, l’écran verrouillé, les widgets de l’écran d’accueil et l’Apple Watch, avec un calendrier adapté à chaque cadran, un carillon horaire et une alarme simple."
+     ],
+     "dropped": [
+      "Stay Clock transforme votre iPhone ou iPad en horloge toujours allumée, lisible depuis l’autre bout de la pièce. Une heure grande et lisible, un calendrier adapté à chaque cadran, et un même style qui vous suit sur StandBy, l’écran verrouillé, les widgets de l’écran d’accueil et l’Apple Watch."
+     ],
+     "live_updated": "2026-10-24",
+     "live_version": "1.0.7",
+     "same": false
     },
     "ja": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.6",
-     "same": true
+     "added": [
+      "iPhone Duoに最適化。最新の開発キットでビルドしており、内側のディスプレイ全体に表示され、折りたたんでも開いても自動でレイアウトが調整されます。",
+      "Stay Clockは、iPhoneやiPadを部屋の隅からでも読める常時点灯のデスク時計に変えます。パタパタ時計を含む101種類の文字盤から選べて(うち100種類は任意のLifetime購入で追加)、夜は真っ黒な背景に控えめな赤い文字盤へ切り替えられます。",
+      "同じ文字盤がStandBy、ロック画面、ホーム画面ウィジェット、Apple Watchまで続き、文字盤に合うカレンダー、時報、シンプルなアラームも使えます。"
+     ],
+     "dropped": [
+      "Stay Clockは、iPhoneやiPadを部屋の隅からでも読める常時点灯のデスク時計に変えます。大きな時刻表示、それぞれの文字盤に合うカレンダー、そしてStandBy、ロック画面、ホーム画面ウィジェット、Apple Watchまで続く一つの文字盤。"
+     ],
+     "live_updated": "2026-10-24",
+     "live_version": "1.0.7",
+     "same": false
     },
     "ko": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.6",
-     "same": true
+     "added": [
+      "iPhone Duo에 최적화되었습니다. 최신 개발 도구로 빌드되어 안쪽 디스플레이 전체를 가득 채우며, 접거나 펼쳐도 레이아웃이 자동으로 조정됩니다.",
+      "Stay Clock은 아이폰과 아이패드를 방 반대편에서도 읽을 수 있는 상시 켜짐 탁상시계로 바꿔줍니다. 플립 시계를 포함한 101종의 페이스 중에서 고르고(그중 100종은 선택형 Lifetime 구매로 추가), 밤에는 완전한 검정 배경에 은은한 빨간 페이스로 바꿀 수 있습니다.",
+      "같은 페이스가 StandBy, 잠금 화면, 홈 화면 위젯, Apple Watch까지 그대로 이어지며, 페이스마다 어울리는 캘린더와 정시 알림, 간단한 알람도 함께합니다."
+     ],
+     "dropped": [
+      "Stay Clock은 아이폰과 아이패드를 방 반대편에서도 읽을 수 있는 상시 켜짐 탁상시계로 바꿔줍니다. 큼직한 시간, 각 페이스에 맞는 캘린더, 그리고 StandBy, 잠금 화면, 홈 화면 위젯, Apple Watch까지 그대로 이어지는 하나의 디자인."
+     ],
+     "live_updated": "2026-10-24",
+     "live_version": "1.0.7",
+     "same": false
     },
     "pt-BR": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.6",
-     "same": true
+     "added": [
+      "Otimizado para iPhone Duo. Criado com o SDK mais recente, o app ocupa toda a tela interna e ajusta o layout automaticamente, com o aparelho dobrado ou aberto.",
+      "O Stay Clock transforma seu iPhone ou iPad em um relógio de mesa sempre ativo, legível do outro lado do quarto. Escolha entre 101 mostradores, incluindo relógios flip (100 deles com a compra vitalícia opcional), e à noite mude para um mostrador vermelho suave sobre preto absoluto.",
+      "O mesmo mostrador acompanha você no StandBy, na Tela Bloqueada, nos widgets da Tela de Início e no Apple Watch, com um calendário que combina com cada mostrador, aviso de hora cheia e um alarme simples."
+     ],
+     "dropped": [
+      "O Stay Clock transforma seu iPhone ou iPad em um relógio de mesa sempre ativo, legível do outro lado do quarto. Hora grande, um calendário que se adapta a cada mostrador e um visual que acompanha você no StandBy, na Tela Bloqueada, nos widgets da Tela de Início e no Apple Watch."
+     ],
+     "live_updated": "2026-10-24",
+     "live_version": "1.0.7",
+     "same": false
     },
     "zh-Hans": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.6",
-     "same": true
+     "added": [
+      "已针对 iPhone Duo 优化。本应用使用最新开发工具包构建,铺满整块内屏,无论折叠还是展开都会自动调整布局。",
+      "Stay Clock 将你的 iPhone 或 iPad 变成一款充电时保持常亮的桌面时钟,隔着房间也能看清时间。101 款表盘随心换,也有翻页时钟(其中 100 款通过一次性 Lifetime 解锁);夜里可切换为纯黑底柔和红字,不刺眼。",
+      "同一款表盘会同步出现在 StandBy、锁定屏幕、主屏幕小组件与 Apple Watch 上,还有与每款表盘搭配的整月日历、整点报时与简易闹钟。"
+     ],
+     "dropped": [
+      "Stay Clock 将你的 iPhone 或 iPad 变成一款常亮桌面时钟,即使隔着房间也能看清时间。大号时间数字、与每款表盘搭配的日历,以及一款可以同步出现在 StandBy、锁定屏幕、主屏幕小组件和 Apple Watch 上的统一设计。"
+     ],
+     "live_updated": "2026-10-24",
+     "live_version": "1.0.7",
+     "same": false
     },
     "zh-Hant": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.6",
-     "same": true
+     "added": [
+      "已針對 iPhone Duo 最佳化。本 App 以最新開發套件建置,填滿整個內螢幕,無論摺起或打開都會自動調整版面。",
+      "Stay Clock 把你的 iPhone 或 iPad 變成一座全天候桌鐘,充電時保持恆亮,隔著房間也看得清楚。101 款錶面隨你換,也有翻頁鐘(其中 100 款以一次性 Lifetime 解鎖);夜裡可改成純黑底柔和紅字,不刺眼。",
+      "同一款錶面會同步出現在 StandBy、鎖定畫面、主畫面小工具與 Apple Watch,還有可依錶面搭配的整月行事曆、整點報時與簡易鬧鐘。"
+     ],
+     "dropped": [
+      "Stay Clock 把你的 iPhone 或 iPad 變成一座全天候桌鐘,隔著房間也看得清楚。大大的時間顯示、配合每款錶面的行事曆,還有一款同步出現在 StandBy、鎖定畫面、主畫面小工具與 Apple Watch 的錶面設計。"
+     ],
+     "live_updated": "2026-10-24",
+     "live_version": "1.0.7",
+     "same": false
     }
    },
-   "status": "green"
+   "status": "red"
   },
   "studydown": {
    "blocked_terms": [],
@@ -4838,8 +4979,8 @@
    "brands": [
     "Unblurry Pro"
    ],
-   "live_updated": "2026-10-23",
-   "live_version": "1.0.14",
+   "live_updated": "2026-10-25",
+   "live_version": "1.0.15",
    "locales": {
     "de-DE": {
      "added": [
@@ -4849,8 +4990,8 @@
      "dropped": [
       "Verbessere und speichere jeden Tag kostenlos Fotos. Schalte Unblurry Pro einmalig frei und entferne Wasserzeichen, exportiere in voller Originalauflösung, nutze 4× Hochskalierung, Porträt- & Wiederherstellen-Modi, unbegrenzte tägliche Speicherungen, alle Premium-Themes und jeden zukünftigen Modus — für immer deins, mit einem Kauf, ohne Abo."
      ],
-     "live_updated": "2026-10-23",
-     "live_version": "1.0.14",
+     "live_updated": "2026-10-25",
+     "live_version": "1.0.15",
      "same": false
     },
     "en-GB": {
@@ -4873,8 +5014,8 @@
      "dropped": [
       "Enhance and save for free every day. Unlock Unblurry Pro a single time to remove watermarks, export at full original resolution, get 4× upscaling, Portrait & Restore modes, unlimited daily saves, all premium themes, and every future mode — yours forever, one purchase, no subscription."
      ],
-     "live_updated": "2026-10-23",
-     "live_version": "1.0.14",
+     "live_updated": "2026-10-25",
+     "live_version": "1.0.15",
      "same": false
     },
     "es-ES": {
@@ -4897,8 +5038,8 @@
      "dropped": [
       "Améliorez et enregistrez des photos gratuitement chaque jour. Débloquez Unblurry Pro une seule fois pour supprimer les filigranes, exporter en pleine résolution d’origine, obtenir l’agrandissement 4×, les modes Portrait et restauration, les enregistrements quotidiens illimités, tous les thèmes premium et tous les futurs modes — à vous pour toujours, avec un achat unique, sans abonnement."
      ],
-     "live_updated": "2026-10-23",
-     "live_version": "1.0.14",
+     "live_updated": "2026-10-25",
+     "live_version": "1.0.15",
      "same": false
     },
     "ja": {
@@ -4909,8 +5050,8 @@
      "dropped": [
       "毎日無料で写真を補正して保存できます。Unblurry Pro を一度購入すれば、ウォーターマークなし、元のフル解像度での書き出し、4× アップスケール、ポートレート&復元モード、毎日の無制限保存、すべてのプレミアムテーマ、そして今後追加されるすべてのモードが解放されます。買い切りで、ずっと使えて、サブスクは不要です。"
      ],
-     "live_updated": "2026-10-23",
-     "live_version": "1.0.14",
+     "live_updated": "2026-10-25",
+     "live_version": "1.0.15",
      "same": false
     },
     "ko": {
@@ -4921,8 +5062,8 @@
      "dropped": [
       "매일 무료로 사진을 향상하고 저장하세요. Unblurry Pro를 한 번만 잠금 해제하면 워터마크 제거, 원본 전체 해상도 내보내기, 4× 업스케일, 인물 & 복원 모드, 일일 무제한 저장, 모든 프리미엄 테마, 앞으로 추가될 모든 모드를 영구적으로 사용할 수 있습니다. 한 번의 구매, 영구 소장, 구독은 없습니다."
      ],
-     "live_updated": "2026-10-23",
-     "live_version": "1.0.14",
+     "live_updated": "2026-10-25",
+     "live_version": "1.0.15",
      "same": false
     },
     "pt-BR": {
@@ -4933,8 +5074,8 @@
      "dropped": [
       "Melhore e salve fotos grátis todos os dias. Desbloqueie o Unblurry Pro uma única vez para remover marcas-d'água, exportar na resolução original completa, usar ampliação 4×, modos Retrato e restauração, salvamentos diários ilimitados, todos os temas premium e todos os modos futuros — seu para sempre, em uma compra única, sem assinatura."
      ],
-     "live_updated": "2026-10-23",
-     "live_version": "1.0.14",
+     "live_updated": "2026-10-25",
+     "live_version": "1.0.15",
      "same": false
     },
     "zh-Hans": {
@@ -4957,8 +5098,8 @@
      "dropped": [
       "每天都能免費強化並儲存照片。一次解鎖 Unblurry Pro,即可移除浮水印、以完整原始解析度匯出、使用 4× 放大、人像與修復模式、享有每日不限次儲存、所有進階主題,以及未來推出的每一種模式 — 一次購買,永久擁有,沒有訂閱。"
      ],
-     "live_updated": "2026-10-23",
-     "live_version": "1.0.14",
+     "live_updated": "2026-10-25",
+     "live_version": "1.0.15",
      "same": false
     }
    },
@@ -5388,11 +5529,11 @@
   "gb"
  ],
  "counts": {
-  "green": 51,
-  "red": 5,
+  "green": 48,
+  "red": 8,
   "unknown": 0
  },
  "errors": [],
- "generated_at": "2026-10-25T02:38:02Z",
+ "generated_at": "2026-10-26T01:48:31Z",
  "schema": "growth.store-copy-drift/v1"
 }

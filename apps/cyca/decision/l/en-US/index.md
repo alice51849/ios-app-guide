@@ -21,7 +21,7 @@ In a category where data sensitivity is the whole story, the right period tracke
 - No tracking
 - Private / on-device
 - App Store · Free
-- ★ 5.0/5 · 1
+- ★ 5.0/5 · 2
 
 [Get Cyca on the App Store →](https://apps.apple.com/us/app/id6782251621?pt=118326163&ct=geo_pick&mt=8)
 

@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-10-25T04:28:27Z",
+  "updated_at": "2026-10-26T04:31:21Z",
   "note": "Insights of our own IG / Threads posts by .github/scripts/post_performance.py. score = views + 3*likes + 5*replies + 8*(saves+shares+reposts). boost = best apps, read by 00_GrowthEngine shorts/scripts/schedule_posts.py.",
   "sources": {
-    "instagram": "ok: 38 posts",
-    "threads": "ok: 19 posts"
+    "instagram": "ok: 40 posts",
+    "threads": "ok: 17 posts"
   },
   "boost": [
     "mochi_suneung",
@@ -37,8 +37,8 @@
     "channels": {
       "instagram": {
         "posts": 14,
-        "median_views": 11.0,
-        "keep_slot": 9,
+        "median_views": 17.5,
+        "keep_slot": 15,
         "daily": 2
       },
       "threads": {
@@ -56,14 +56,14 @@
     "instagram": {
       "zh-Hant": {
         "hour": 12,
-        "avg_views": 23.3,
-        "posts": 22,
+        "avg_views": 31.7,
+        "posts": 24,
         "hours": {
           "1": 19.5,
-          "5": 1.3,
+          "5": 1.1,
           "7": 0.0,
           "9": 0.3,
-          "12": 23.3
+          "12": 31.7
         }
       }
     },
@@ -75,7 +75,7 @@
         "hours": {
           "1": 9.3,
           "8": 12.3,
-          "13": 6.5,
+          "13": 7.5,
           "16": 8.0
         }
       },
@@ -130,10 +130,10 @@
       {
         "key": "claudeusagemini",
         "posts": 6,
-        "views": 212,
+        "views": 214,
         "engagement": 2,
-        "score": 222,
-        "avg_score": 37.0
+        "score": 224,
+        "avg_score": 37.3
       },
       {
         "key": "lumiweather",
@@ -142,6 +142,14 @@
         "engagement": 1,
         "score": 30,
         "avg_score": 30.0
+      },
+      {
+        "key": "mochi_b",
+        "posts": 1,
+        "views": 29,
+        "engagement": 0,
+        "score": 29,
+        "avg_score": 29.0
       },
       {
         "key": "notesstudio100",
@@ -192,12 +200,28 @@
         "avg_score": 14.0
       },
       {
+        "key": "mochi_halloween",
+        "posts": 1,
+        "views": 12,
+        "engagement": 0,
+        "score": 12,
+        "avg_score": 12.0
+      },
+      {
+        "key": "countdaysnow",
+        "posts": 1,
+        "views": 10,
+        "engagement": 0,
+        "score": 10,
+        "avg_score": 10.0
+      },
+      {
         "key": "lumibopomofo",
-        "posts": 6,
-        "views": 56,
+        "posts": 8,
+        "views": 59,
         "engagement": 3,
-        "score": 69,
-        "avg_score": 11.5
+        "score": 72,
+        "avg_score": 9.0
       },
       {
         "key": "zipbox",
@@ -206,14 +230,6 @@
         "engagement": 0,
         "score": 27,
         "avg_score": 9.0
-      },
-      {
-        "key": "countdaysnow",
-        "posts": 1,
-        "views": 8,
-        "engagement": 0,
-        "score": 8,
-        "avg_score": 8.0
       },
       {
         "key": "caldaily",
@@ -296,27 +312,11 @@
         "avg_score": 4.0
       },
       {
-        "key": "mochi_b",
-        "posts": 1,
-        "views": 4,
-        "engagement": 0,
-        "score": 4,
-        "avg_score": 4.0
-      },
-      {
         "key": "hourstaglite",
         "posts": 2,
         "views": 6,
         "engagement": 0,
         "score": 6,
-        "avg_score": 3.0
-      },
-      {
-        "key": "snapport",
-        "posts": 1,
-        "views": 3,
-        "engagement": 0,
-        "score": 3,
         "avg_score": 3.0
       },
       {
@@ -326,6 +326,14 @@
         "engagement": 0,
         "score": 2,
         "avg_score": 2.0
+      },
+      {
+        "key": "snapport",
+        "posts": 2,
+        "views": 3,
+        "engagement": 0,
+        "score": 3,
+        "avg_score": 1.5
       },
       {
         "key": "ledmovingtext",
@@ -395,11 +403,11 @@
     "locales": [
       {
         "key": "ko",
-        "posts": 2,
-        "views": 287,
+        "posts": 3,
+        "views": 292,
         "engagement": 0,
-        "score": 287,
-        "avg_score": 143.5
+        "score": 292,
+        "avg_score": 97.3
       },
       {
         "key": "ja",
@@ -411,19 +419,19 @@
       },
       {
         "key": "zh-Hant",
-        "posts": 33,
-        "views": 554,
+        "posts": 35,
+        "views": 579,
         "engagement": 11,
-        "score": 605,
-        "avg_score": 18.3
+        "score": 630,
+        "avg_score": 18.0
       },
       {
         "key": "en",
-        "posts": 22,
-        "views": 209,
+        "posts": 23,
+        "views": 223,
         "engagement": 3,
-        "score": 222,
-        "avg_score": 10.1
+        "score": 236,
+        "avg_score": 10.3
       },
       {
         "key": "cs",
@@ -468,10 +476,10 @@
         "locale": "ko",
         "hook": "작업 중에 또 AI 한도 초과?",
         "posts": 1,
-        "views": 122,
+        "views": 124,
         "engagement": 0,
-        "score": 122,
-        "avg_score": 122.0
+        "score": 124,
+        "avg_score": 124.0
       },
       {
         "app": "battai",
@@ -542,6 +550,16 @@
         "engagement": 1,
         "score": 30,
         "avg_score": 30.0
+      },
+      {
+        "app": "mochi_b",
+        "locale": "zh-Hant",
+        "hook": "讀書、工作、購物 一個 App 整理",
+        "posts": 1,
+        "views": 29,
+        "engagement": 0,
+        "score": 29,
+        "avg_score": 29.0
       },
       {
         "app": "lumibopomofo_b",
@@ -624,6 +642,26 @@
         "avg_score": 12.0
       },
       {
+        "app": "mochi_halloween",
+        "locale": "en",
+        "hook": "Cute to do list for Halloween prep",
+        "posts": 1,
+        "views": 12,
+        "engagement": 0,
+        "score": 12,
+        "avg_score": 12.0
+      },
+      {
+        "app": "countdaysnow",
+        "locale": "en",
+        "hook": "Plan backwards from the dates that matter.",
+        "posts": 1,
+        "views": 10,
+        "engagement": 0,
+        "score": 10,
+        "avg_score": 10.0
+      },
+      {
         "app": "claudeusagemini",
         "locale": "en",
         "hook": "Translated into 50 languages",
@@ -677,16 +715,6 @@
         "app": "zipbox",
         "locale": "en",
         "hook": "Raspakiraj bez reklama.",
-        "posts": 1,
-        "views": 8,
-        "engagement": 0,
-        "score": 8,
-        "avg_score": 8.0
-      },
-      {
-        "app": "countdaysnow",
-        "locale": "en",
-        "hook": "Plan backwards from the dates that matter.",
         "posts": 1,
         "views": 8,
         "engagement": 0,
@@ -774,16 +802,6 @@
         "avg_score": 6.0
       },
       {
-        "app": "lumibopomofo",
-        "locale": "zh-Hant",
-        "hook": "",
-        "posts": 1,
-        "views": 1,
-        "engagement": 1,
-        "score": 6,
-        "avg_score": 6.0
-      },
-      {
         "app": "scanto",
         "locale": "en",
         "hook": "A document scanner that keeps everything on your device — ev",
@@ -844,16 +862,6 @@
         "avg_score": 4.0
       },
       {
-        "app": "mochi_b",
-        "locale": "zh-Hant",
-        "hook": "讀書、工作、購物 一個 App 整理",
-        "posts": 1,
-        "views": 4,
-        "engagement": 0,
-        "score": 4,
-        "avg_score": 4.0
-      },
-      {
         "app": "hourstag",
         "locale": "en",
         "hook": "That impulse buy did not cost you money. It cost you a whole",
@@ -871,6 +879,26 @@
         "views": 3,
         "engagement": 0,
         "score": 3,
+        "avg_score": 3.0
+      },
+      {
+        "app": "lumibopomofo",
+        "locale": "ko",
+        "hook": "소리를 듣고 알맞은 기호 고르기",
+        "posts": 1,
+        "views": 3,
+        "engagement": 0,
+        "score": 3,
+        "avg_score": 3.0
+      },
+      {
+        "app": "lumibopomofo",
+        "locale": "zh-Hant",
+        "hook": "",
+        "posts": 2,
+        "views": 1,
+        "engagement": 1,
+        "score": 6,
         "avg_score": 3.0
       },
       {
@@ -1052,24 +1080,34 @@
         "engagement": 0,
         "score": 0,
         "avg_score": 0.0
+      },
+      {
+        "app": "snapport",
+        "locale": "zh-Hant",
+        "hook": "護照照片 在家就能拍",
+        "posts": 1,
+        "views": 0,
+        "engagement": 0,
+        "score": 0,
+        "avg_score": 0.0
       }
     ],
     "variants": [
       {
         "key": "b",
-        "posts": 14,
-        "views": 400,
+        "posts": 15,
+        "views": 428,
         "engagement": 5,
-        "score": 421,
-        "avg_score": 30.1
+        "score": 449,
+        "avg_score": 29.9
       },
       {
         "key": "a",
-        "posts": 5,
-        "views": 145,
+        "posts": 7,
+        "views": 159,
         "engagement": 1,
-        "score": 148,
-        "avg_score": 29.6
+        "score": 162,
+        "avg_score": 23.1
       },
       {
         "key": "c",
@@ -1436,12 +1474,12 @@
       "kind": "image",
       "variant": null,
       "metrics": {
-        "views": 8,
+        "views": 10,
         "likes": 0,
         "replies": 0,
         "reposts": 0
       },
-      "score": 8
+      "score": 10
     },
     {
       "channel": "instagram",
@@ -2344,14 +2382,14 @@
       "kind": "clip",
       "variant": "b",
       "metrics": {
-        "views": 4,
-        "reach": 3,
+        "views": 29,
+        "reach": 26,
         "likes": 0,
         "saves": 0,
         "shares": 0,
         "replies": 0
       },
-      "score": 4
+      "score": 29
     },
     {
       "channel": "instagram",
@@ -2365,14 +2403,98 @@
       "kind": "clip",
       "variant": "a",
       "metrics": {
-        "views": 122,
-        "reach": 116,
+        "views": 124,
+        "reach": 117,
         "likes": 0,
         "saves": 0,
         "shares": 0,
         "replies": 0
       },
-      "score": 122
+      "score": 124
+    },
+    {
+      "channel": "instagram",
+      "id": "18130829209789130",
+      "link": "https://www.instagram.com/p/De583aMkbI7/",
+      "posted_at": "2026-10-25T05:25:18",
+      "app": "lumibopomofo",
+      "locale": "zh-Hant",
+      "hook": "",
+      "clip": "utility/zhuyin/lumibopomofo/zy02/zh-Hant",
+      "kind": "utility",
+      "variant": null,
+      "metrics": {
+        "views": 0,
+        "reach": 0,
+        "likes": 0,
+        "saves": 0,
+        "shares": 0,
+        "replies": 0
+      },
+      "score": 0
+    },
+    {
+      "channel": "instagram",
+      "id": "18140349031714090",
+      "link": "https://www.instagram.com/p/De6Ln6jGwtb/",
+      "posted_at": "2026-10-25T07:34:11",
+      "app": "snapport",
+      "locale": "zh-Hant",
+      "hook": "護照照片 在家就能拍",
+      "clip": "snapport/zh-Hant",
+      "kind": "clip",
+      "variant": "a",
+      "metrics": {
+        "views": 0,
+        "reach": 0,
+        "likes": 0,
+        "saves": 0,
+        "shares": 0,
+        "replies": 0
+      },
+      "score": 0
+    },
+    {
+      "channel": "instagram",
+      "id": "18109544291127658",
+      "link": "https://www.instagram.com/reel/De7XR7ODzTz/",
+      "posted_at": "2026-10-25T18:35:33",
+      "app": "mochi_halloween",
+      "locale": "en",
+      "hook": "Cute to do list for Halloween prep",
+      "clip": "mochi_halloween/en",
+      "kind": "clip",
+      "variant": "a",
+      "metrics": {
+        "views": 12,
+        "reach": 10,
+        "likes": 0,
+        "saves": 0,
+        "shares": 0,
+        "replies": 0
+      },
+      "score": 12
+    },
+    {
+      "channel": "instagram",
+      "id": "18125429723293063",
+      "link": "https://www.instagram.com/reel/De8YDPcEfgM/",
+      "posted_at": "2026-10-26T04:01:32",
+      "app": "lumibopomofo",
+      "locale": "ko",
+      "hook": "소리를 듣고 알맞은 기호 고르기",
+      "clip": "lumibopomofo/ko",
+      "kind": "clip",
+      "variant": "b",
+      "metrics": {
+        "views": 3,
+        "reach": 0,
+        "likes": 0,
+        "saves": 0,
+        "shares": 0,
+        "replies": 0
+      },
+      "score": 3
     }
   ]
 }

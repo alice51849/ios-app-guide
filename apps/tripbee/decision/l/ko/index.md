@@ -2,7 +2,7 @@
 title: "여행 일정 짜기 추천 앱 (iPhone)"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbee/decision/l/ko/index.html"
-modified: "2026-10-25"
+modified: "2026-10-26"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"

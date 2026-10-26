@@ -2,7 +2,7 @@
 title: "G+Money: দৈনিক খরচ ও বাজেট — ভ্রমণ খরচ ও মুদ্রা বিনিময় | iOS App"
 lang: "bn-BD"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gmoney/decision/l/bn-BD/index.html"
-modified: "2026-10-25"
+modified: "2026-10-26"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"

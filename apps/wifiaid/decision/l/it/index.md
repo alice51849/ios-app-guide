@@ -2,7 +2,7 @@
 title: "WiFi Aid: Trova guasti di rete — Diagnosi router, mesh e DNS | iOS App"
 lang: "it"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/it/index.html"
-modified: "2026-10-25"
+modified: "2026-10-26"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"

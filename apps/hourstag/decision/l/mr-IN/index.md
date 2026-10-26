@@ -2,7 +2,7 @@
 title: "HoursTag: खरेदी वेळेची किंमत — तासाचा पगार आणि खर्च | iOS App"
 lang: "mr-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/mr-IN/index.html"
-modified: "2026-10-25"
+modified: "2026-10-26"
 app_store_id: "6754218117"
 verified_live: true
 purchase_model: "paid_upfront"

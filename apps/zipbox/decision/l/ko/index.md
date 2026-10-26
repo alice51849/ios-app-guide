@@ -2,7 +2,7 @@
 title: "Zipbox 압축풀기: ZIP RAR 7z — 압축 해제·압축파일 열기 | iOS App"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/zipbox/decision/l/ko/index.html"
-modified: "2026-10-25"
+modified: "2026-10-26"
 app_store_id: "6806776579"
 verified_live: true
 purchase_model: "paid_upfront"

@@ -2,7 +2,7 @@
 title: "WiFi Aid Lite — Niente internet? Ecco perché | iOS App"
 lang: "it"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaidlite/decision/l/it/index.html"
-modified: "2026-10-25"
+modified: "2026-10-26"
 app_store_id: "6793414462"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

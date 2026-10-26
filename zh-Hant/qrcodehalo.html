@@ -8,7 +8,7 @@
 <!-- guide-design:end -->
 <title>QR Code Halo：安全掃描與建立 — 一掃即開，事後本機查風險 | iOS App</title>
 <meta name="description" content="QR Code Halo 掃到就直接執行。用相機掃描或選擇照片：網址直接用瀏覽器開啟，Passkey 登入碼與 App 連結直接交給 iOS，Wi-Fi 碼會跳出 iOS 的加入網路提示，電話、簡訊、Email 與地點則交給各自的 App。聯絡人和行程會開啟 iOS">
-<meta name="keywords" content="條碼, 掃碼, 產生器, 讀取, 辨識, 網址, 釣魚, 詐騙, 連結檢查, 名片, wifi, 批次, 相簿, 圖片, 美化, 菜單, 票券, 離線, 隱私, 歷史, 匯出, 庫存, 防詐, 商品, 電話, 簡訊, 郵件, 行事曆, 定位, 聯絡人, qr code 連結 檢查">
+<meta name="keywords" content="條碼, 掃碼, 產生器, 讀取, 辨識, 網址, 釣魚, 詐騙, 連結檢查, 名片, wifi, 批次, 相簿, 圖片, 美化, 菜單, 票券, 離線, 隱私, 歷史, 匯出, 庫存, 防詐, 商品, 電話, 簡訊, 郵件, 行事曆, 定位, 聯絡人">
 <link rel="canonical" href="https://open.cait518.cc/ios-app-guide/zh-Hant/qrcodehalo.html">
 <!-- smart-app-banner:start -->
 <meta name="apple-itunes-app" content="app-id=6806779853, affiliate-data=pt=118326163&amp;ct=geo_pick&amp;mt=8">
@@ -128,7 +128,6 @@
 <link rel="alternate" hreflang="zh-Hant" href="https://open.cait518.cc/ios-app-guide/zh-Hant/qrcodehalo.html">
 <link rel="alternate" hreflang="x-default" href="https://open.cait518.cc/ios-app-guide/en-US/qrcodehalo.html">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"MobileApplication","name":"QR Code Halo：安全掃描與建立","operatingSystem":"iOS","applicationCategory":"UtilitiesApplication","description":"QR Code Halo 掃到就直接執行。用相機掃描或選擇照片：網址直接用瀏覽器開啟，Passkey 登入碼與 App 連結直接交給 iOS，Wi-Fi 碼會跳出 iOS 的加入網路提示，電話、簡訊、Email 與地點則交給各自的 App。聯絡人和行程會開啟 iOS 的新增畫面，由你確認後才加入。純文字會直接複製並顯示一行說明；javascript:、data:、file: 這類內容一律不開啟。想先檢查再決定，可到設定關閉「掃描後自動執行」；批次掃描只收集、不執行。\n\n歷史紀錄裡的安全檢查\n除非開啟「不儲存到歷史紀錄」，批次掃描以外的每次掃描都會存在這台裝置上。在歷史紀錄點開任一筆、按「安全檢查」，就能用下面兩個本機工具重新檢視。\nLocal Payload Security Inspector\n完全在裝置端解析完整 payload，逐項顯示 scheme、host、path、query 與 fragment，並提供 Safe、Caution 或 Blocked、透明 findings 和 action disposition。判定規則固定且可重現，不查詢網路信譽，也不產生含糊分數；解析失敗時會阻擋外部操作。\nQR Verification\n將結果儲存為本機參照，再依完整 SHA-256 指紋、QR 碼格式、內容類型、URL 組成項目、安全層級與動作狀態比較後續掃描。\n\nBatch Risk & Difference Audit\n將整批結果依完全相同內容與 host 分組，在明確界線內比較容易混淆的相似 host，並顯示整體風險及每一筆風險。所有完整 payload 都能閱讀，完整稽核閱讀免費開放。\n\nQR Code Halo 能做什麼\n用相機掃描，或辨識照片中的條碼，同一畫面可同時讀多個\n20 種條碼格式：QR、Micro QR、Aztec、Data Matrix、PDF417、Micro PDF417、EAN-8、EAN-13、UPC-A、UPC-E、Code 39、Code 93、Code 128、Interleaved 2 of 5、ITF-14、Codabar、GS1 DataBar 與 MSI Plessey\n批次掃描自動略過重複，支援變焦與手電筒\n產生文字、連結、Wi-Fi、聯絡人、電子郵件、電話、簡訊、位置與行事曆行程 QR Code\n歷史記錄不限筆數：我的最愛、搜尋，可依類型、日期、格式、標籤或分類篩選與排序\n在裝置本機自動分類，也可以自己改，並能把歷史匯出成 CSV\n備份與還原都會先顯示真實的筆數、大小與日期範圍，再由你決定\n隱私模式自動清除歷史，支援儲存到照片、列印、分享延伸功能與 Siri 捷徑\n\nQR Code Halo 是 App Store 免費下載：免費 3 次掃描、9 種 QR Code 全部可用、歷史記錄不限筆數，我的最愛、搜尋與篩選都在其中，沒有廣告也不用帳號。可選購的 Lifetime Pro 一次買斷、永久擁有，增加無限次掃描、批次儲存與開啟結果、CSV 批次產生與批次匯出、備份與還原、高解析度匯出與自訂 Aurora 樣式。絕無訂閱。\n有掃不出來的條碼，或希望我們加的功能，歡迎來信：hourstag.app@gmail.com\n\n這不是文件掃描器：不掃描紙本、不做 OCR，也不維護 PDF 文件庫。PDF 只用來匯出 QR 圖稿。Share Extension 僅能把 URL 或純文字建立成 QR。\n\n針對 iPhone Duo 最佳化。","url":"https://apps.apple.com/tw/app/id6806779853?pt=118326163&ct=geo_pick&mt=8","installUrl":"https://apps.apple.com/tw/app/id6806779853?pt=118326163&ct=geo_pick&mt=8","featureList":["條碼","掃碼","產生器","讀取","辨識","網址","釣魚","詐騙"],"keywords":"條碼, 掃碼, 產生器, 讀取, 辨識, 網址, 釣魚, 詐騙, 連結檢查, 名片, wifi, 批次, 相簿, 圖片, 美化, 菜單, 票券, 離線, 隱私, 歷史, 匯出, 庫存, 防詐, 商品, 電話, 簡訊, 郵件, 行事曆, 定位, 聯絡人","@id":"https://apps.apple.com/app/id6806779853","identifier":{"@type":"PropertyValue","propertyID":"Apple App Store ID","value":"6806779853"},"downloadUrl":"https://apps.apple.com/tw/app/id6806779853?pt=118326163&ct=geo_pick&mt=8","potentialAction":{"@type":"InstallAction","target":"https://apps.apple.com/tw/app/id6806779853?pt=118326163&ct=geo_pick&mt=8"},"mainEntityOfPage":{"@id":"https://open.cait518.cc/ios-app-guide/zh-Hant/qrcodehalo.html#webpage"},"offers":{"@type":"Offer","price":"0","priceCurrency":"TWD","url":"https://apps.apple.com/tw/app/id6806779853?pt=118326163&ct=geo_pick&mt=8","availability":"https://schema.org/InStock"}}</script>
-<style>.searched-as{margin:1.2em 0;font-size:.95em;line-height:1.6}.searched-as-label{font-weight:600;margin-right:.35em}</style>
 <!-- app-store-facts-style:start -->
 <link rel="stylesheet" href="https://open.cait518.cc/ios-app-guide/assets/app-store-facts-v1.css">
 <!-- app-store-facts-style:end -->
@@ -216,8 +215,6 @@
     <li>釣魚</li>
     <li>詐騙</li>
   </ul>
-
-  <p class="searched-as"><span class="searched-as-label">大家這樣搜尋這款 App：</span>qr code 連結 檢查</p>
 
   <h2>價格</h2>
   <p>免費下載,一次性購買即可解鎖全部功能,沒有訂閱陷阱。</p>

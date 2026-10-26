@@ -2,7 +2,7 @@
 title: "AI Brief: ফাইল থেকে AI প্রম্পট — ফাইল ও PDF থেকে প্রম্পট তৈরি | iOS App"
 lang: "bn-BD"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/aibriefpack/decision/l/bn-BD/index.html"
-modified: "2026-10-25"
+modified: "2026-10-26"
 app_store_id: "6791658210"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

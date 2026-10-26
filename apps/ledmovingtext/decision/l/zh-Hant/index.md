@@ -2,7 +2,7 @@
 title: "演唱會與接機用的 LED 跑馬燈 App"
 lang: "zh-Hant"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/ledmovingtext/decision/l/zh-Hant/index.html"
-modified: "2026-10-25"
+modified: "2026-10-26"
 app_store_id: "6806639602"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

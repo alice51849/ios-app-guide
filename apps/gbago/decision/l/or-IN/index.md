@@ -2,7 +2,7 @@
 title: "GBAGo: ଦୃଶ୍ୟ ସେଭ୍ — ରିକଭରି ମ୍ୟାପ୍ · ଅଟୋ ସ୍ନାପସଟ୍ | iOS App"
 lang: "or-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gbago/decision/l/or-IN/index.html"
-modified: "2026-10-25"
+modified: "2026-10-26"
 app_store_id: "6804564400"
 verified_live: true
 purchase_model: "paid_upfront"

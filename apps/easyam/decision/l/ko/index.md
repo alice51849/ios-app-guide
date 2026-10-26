@@ -2,7 +2,7 @@
 title: "EasyAM: 스마트 공휴일 알람 시계 — 내일 울릴지 고민 끝! 출근·연차·휴가 알아서 척척 | iOS App"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/easyam/decision/l/ko/index.html"
-modified: "2026-10-25"
+modified: "2026-10-26"
 app_store_id: "6821790092"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

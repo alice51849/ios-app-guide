@@ -2,7 +2,7 @@
 title: "開く前にリンクを表示する QR コードスキャナーアプリ"
 lang: "ja"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/qrcodehalo/decision/l/ja/index.html"
-modified: "2026-10-25"
+modified: "2026-10-26"
 app_store_id: "6806779853"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

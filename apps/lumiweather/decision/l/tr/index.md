@@ -2,7 +2,7 @@
 title: "Lumi Hava: Hava Durumu Tahmini — Dışarı çıkılır mı? Yağış ve UV | iOS App"
 lang: "tr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiweather/decision/l/tr/index.html"
-modified: "2026-10-25"
+modified: "2026-10-26"
 app_store_id: "6779552704"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

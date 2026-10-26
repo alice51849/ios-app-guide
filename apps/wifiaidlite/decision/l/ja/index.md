@@ -2,7 +2,7 @@
 title: "WiFi Aid Lite — ネットがつながらない原因を特定 | iOS App"
 lang: "ja"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaidlite/decision/l/ja/index.html"
-modified: "2026-10-25"
+modified: "2026-10-26"
 app_store_id: "6793414462"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

@@ -2,7 +2,7 @@
 title: "Foldable Wallpaper Studio — فولڈ ایبل فون وال پیپر جوڑی | iOS App"
 lang: "ur-PK"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/duowallpaperstudio/decision/l/ur-PK/index.html"
-modified: "2026-10-25"
+modified: "2026-10-26"
 app_store_id: "6824946559"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

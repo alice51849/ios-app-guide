@@ -2,7 +2,7 @@
 title: "Foldable Wallpaper Studio — Párové tapety, skladací mobil | iOS App"
 lang: "sk"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/duowallpaperstudio/decision/l/sk/index.html"
-modified: "2026-10-25"
+modified: "2026-10-26"
 app_store_id: "6824946559"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

@@ -1,8 +1,8 @@
 {
- "generated": "2026-10-25T16:27:57Z",
+ "generated": "2026-10-26T04:53:31Z",
  "mode": "apply",
  "counts": {
-  "ok_reply": 19,
+  "ok_reply": 21,
   "unknown_app": 47,
   "ok_store_only": 719,
   "ok_backfilled_earlier": 13,
@@ -12,6 +12,30 @@
   "missing": 3
  },
  "rows": [
+  {
+   "channel": "threads",
+   "id": "17938058007394395",
+   "permalink": "https://www.threads.com/@hourstag.app/post/De8Q8rXjJXY",
+   "date": "2026-10-26",
+   "app": "mochi",
+   "status": "ok_reply",
+   "text": "First time hosting Thanksgiving and my brain is just a pile of tiny jobs. So it all went into a cute checklist: menu, groceries, who's bring",
+   "why": "trial",
+   "ios_id": "6785004775",
+   "locale": "en-US"
+  },
+  {
+   "channel": "threads",
+   "id": "17897497500413736",
+   "permalink": "https://www.threads.com/@hourstag.app/post/De8XMYTlbGM",
+   "date": "2026-10-26",
+   "app": "claudeusagemini",
+   "status": "ok_reply",
+   "text": "Claude 跑到一半突然說額度用完，才發現不是 5 小時額度，而是每週額度先見底？UsageNow 讓你在主畫面小工具上看 Claude 5 小時與每週額度（含各模型每週上限）、Codex、Copilot 進階請求和 Gemini 每日配額，還有重置倒數。可以自己設 90% 或",
+   "why": "brand",
+   "ios_id": "6818607603",
+   "locale": "zh-Hant"
+  },
   {
    "channel": "threads",
    "id": "18056565971807893",

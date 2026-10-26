@@ -699,7 +699,7 @@ def main():
         print("clip: no clips.json yet, nothing to post")
         return 0
     channel = "instagram" if args.channel == "preview" else args.channel
-    if args.channel != "preview" and CR.paused_notice(channel):  # channel rotation holdout week
+    if args.channel != "preview" and CR.paused_notice(channel, day):  # channel rotation holdout week
         return 0
     clip = scheduled(load(), day, args.slot, channel)
     if not clip:

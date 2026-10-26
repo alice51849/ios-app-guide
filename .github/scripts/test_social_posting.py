@@ -891,6 +891,13 @@ class TelegramPageReadyGateTests(unittest.TestCase):
     APPS = tuple(str(7_000_000_000 + index) for index in range(10))
     NOW = dt.datetime(2026, 10, 14, 1, 5, tzinfo=dt.timezone.utc)
 
+    def setUp(self):
+        super().setUp()
+        # main() runs on the real calendar: keep the channel rotation holdout week from skipping the post.
+        holdout = mock.patch.object(telegram_post.CR, "paused_notice", return_value=False)
+        holdout.start()
+        self.addCleanup(holdout.stop)
+
     def pool(self):
         return [
             {
@@ -2696,6 +2703,10 @@ class TelegramDownloadLinkTests(_LinkGuardCase):
 
     def setUp(self):
         super().setUp()
+        # main() runs on the real calendar: keep the channel rotation holdout week from skipping the post.
+        holdout = mock.patch.object(telegram_post.CR, "paused_notice", return_value=False)
+        holdout.start()
+        self.addCleanup(holdout.stop)
         for target in ("sys.stdout", "sys.stderr"):
             patcher = mock.patch(target, new_callable=io.StringIO)
             setattr(self, "out" if target == "sys.stdout" else "err", patcher.start())

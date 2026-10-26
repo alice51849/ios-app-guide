@@ -45,6 +45,8 @@ jobs:
           # schedule reach clips.json, no numbers). lib/outbound_links.py is the shared download-link check the
           # planner imports; geo/sku_routing.py + geo/data/sku_routing.json give each paid <-> Lite family's door
           # (SKU routing: the edition that earns the most per product-page view goes first).
+          # geo/store_copy_drift.py: tags and keywords skip a red app's dropped claims (search_intent.dropped; the
+          # report is this repo's .github/growth/store_copy_drift.json), so post_qa does not refuse the caption.
           # data/rank_watch/history.csv (keyword ranks) rebuilds search-terms.json: the caption's App Store search
           # term is the one each app is closest to the top 3 on per storefront (build_search_terms.py).
           # reports/coverage_floor_latest.json: the apps below the weekly promotion floor go first after
@@ -53,6 +55,7 @@ jobs:
           sparse-checkout: |
             shorts/
             lib/outbound_links.py
+            geo/store_copy_drift.py
             geo/sku_routing.py
             geo/data/sku_routing.json
             reports/funnel-latest.json

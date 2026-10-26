@@ -1,7 +1,7 @@
 {
  "schema": "lumi.social-feed/v1",
  "date": "2026-10-26",
- "generated_at": "2026-10-26T07:03:27Z",
+ "generated_at": "2026-10-26T16:01:48Z",
  "items": {
   "bluesky": [
    {
@@ -141,48 +141,69 @@
    },
    {
     "kind": "clip",
-    "key": "notesstudio100/en",
-    "locale": "en",
-    "app": "notesstudio100",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/wrj17p.mp4",
-    "hook": "Every notebook, its own look",
-    "name": "100 Notes Studio: Pen & Paper",
-    "title": "Every notebook, its own look | Note Taking, Handwriting & PDF | 100 Notes Studio",
+    "key": "maskmyfile/cs",
+    "locale": "cs",
+    "app": "maskmyfile",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/b9a59b.mp4",
+    "hook": "Něco chybí? Přidejte to",
+    "name": "Mask My File: Odstraňte údaje",
+    "title": "Něco chybí? Přidejte to | Skryjte citlivé informace | Mask My File",
     "tags": [
-     "#PenPaper",
-     "#Notebook",
-     "#Journal",
-     "#Planner",
-     "#Annotate",
-     "#100NotesStudio"
+     "#OdstraňteÚdaje",
+     "#Anonymizace",
+     "#Cenzura",
+     "#OsobníÚdaje",
+     "#ObčanskýPrůkaz",
+     "#MaskMyFile"
     ],
-    "caption": "Every notebook, its own look\nAudio saved to the page\nNote Taking, Handwriting & PDF\n100 Notes Studio: Pen & Paper\nSearch “100 Notes Studio” on the App Store\nAlso on Google Play\n\n#PenPaper #Notebook #100NotesStudio",
-    "button": "Get it on the App Store",
+    "caption": "Něco chybí? Přidejte to\nUloží novou kopii, originál zůstane\nSkryjte citlivé informace\nMask My File: Odstraňte údaje\nVyhledejte „Mask My File“ v App Storu\nTaké na Google Play\n\n#OdstraňteÚdaje #Anonymizace #MaskMyFile",
+    "button": "Stáhnout z App Storu",
     "variant": "b",
-    "alt": "100 Notes Studio: Pen & Paper — Every notebook, its own look — Audio saved to the page — Note Taking, Handwriting & PDF",
-    "store": "https://apps.apple.com/us/app/id6798813048?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.NotesStudio100&referrer=utm_source%3Dsocial%26utm_campaign%3Dnotesstudio100",
+    "alt": "Mask My File: Odstraňte údaje — Něco chybí? Přidejte to — Uloží novou kopii, originál zůstane — Skryjte citlivé informace",
+    "store": "https://apps.apple.com/cz/app/id6792850916?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MaskMyFile&referrer=utm_source%3Dsocial%26utm_campaign%3Dmaskmyfile",
     "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6798813048?action=write-review"
+     "label": "Už tuto aplikaci používáte? Ohodnoťte ji nebo napište recenzi v App Storu",
+     "url": "https://apps.apple.com/app/id6792850916?action=write-review"
     },
     "keywords": [
-     "notebook",
-     "journal",
-     "planner",
-     "annotate",
-     "stylus",
-     "lecture"
+     "anonymizace",
+     "cenzura",
+     "osobní údaje",
+     "občanský průkaz",
+     "lékařská zpráva",
+     "smlouva"
     ],
-    "keyline": "Note Taking, Handwriting & PDF",
+    "keyline": "Skryjte citlivé informace",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "09d545c91056ba06",
+     "board": "f88a32e9a9deb640",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "card/gsat2027/2026-10-26",
+    "locale": "zh-Hant",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/countdown-cards/card-20261026.jpg",
+    "caption": "116 學測 倒數 88 天\n一起撐過去\n\nApp Store／Google Play 搜尋「CountDaysNow」\n\n#倒數日 #倒數計時 #紀念日",
+    "title": "116 學測 倒數 88 天",
+    "alt": "CountDaysNow — 116 學測 倒數 88 天 — 一起撐過去 — App Store／Google Play 搜尋「CountDaysNow」 — 倒數日 · 倒數計時 · 紀念日",
+    "name": "CountDaysNow",
+    "hook": "116 學測 倒數 88 天",
+    "tags": [
+     "#倒數日",
+     "#倒數計時",
+     "#紀念日",
+     "#生日",
+     "#還有幾天"
+    ],
+    "button": "在 App Store 下載",
+    "store": "https://apps.apple.com/tw/app/id6807079789?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow"
    },
    {
     "kind": "card",
@@ -1224,48 +1245,69 @@
    },
    {
     "kind": "clip",
-    "key": "notesstudio100/en",
-    "locale": "en",
-    "app": "notesstudio100",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/wrj17p.mp4",
-    "hook": "Every notebook, its own look",
-    "name": "100 Notes Studio: Pen & Paper",
-    "title": "Every notebook, its own look | Note Taking, Handwriting & PDF | 100 Notes Studio",
+    "key": "maskmyfile/cs",
+    "locale": "cs",
+    "app": "maskmyfile",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/b9a59b.mp4",
+    "hook": "Něco chybí? Přidejte to",
+    "name": "Mask My File: Odstraňte údaje",
+    "title": "Něco chybí? Přidejte to | Skryjte citlivé informace | Mask My File",
     "tags": [
-     "#PenPaper",
-     "#Notebook",
-     "#Journal",
-     "#Planner",
-     "#Annotate",
-     "#100NotesStudio"
+     "#OdstraňteÚdaje",
+     "#Anonymizace",
+     "#Cenzura",
+     "#OsobníÚdaje",
+     "#ObčanskýPrůkaz",
+     "#MaskMyFile"
     ],
-    "caption": "Every notebook, its own look\nAudio saved to the page\nNote Taking, Handwriting & PDF\n100 Notes Studio: Pen & Paper\nSearch “100 Notes Studio” on the App Store\nAlso on Google Play\n\n#PenPaper #Notebook #Journal #Planner #100NotesStudio",
-    "button": "Get it on the App Store",
+    "caption": "Něco chybí? Přidejte to\nUloží novou kopii, originál zůstane\nSkryjte citlivé informace\nMask My File: Odstraňte údaje\nVyhledejte „Mask My File“ v App Storu\nTaké na Google Play\n\n#OdstraňteÚdaje #Anonymizace #Cenzura #OsobníÚdaje #MaskMyFile",
+    "button": "Stáhnout z App Storu",
     "variant": "b",
-    "alt": "100 Notes Studio: Pen & Paper — Every notebook, its own look — Audio saved to the page — Note Taking, Handwriting & PDF",
-    "store": "https://apps.apple.com/us/app/id6798813048?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.NotesStudio100&referrer=utm_source%3Dsocial%26utm_campaign%3Dnotesstudio100",
+    "alt": "Mask My File: Odstraňte údaje — Něco chybí? Přidejte to — Uloží novou kopii, originál zůstane — Skryjte citlivé informace",
+    "store": "https://apps.apple.com/cz/app/id6792850916?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MaskMyFile&referrer=utm_source%3Dsocial%26utm_campaign%3Dmaskmyfile",
     "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6798813048?action=write-review"
+     "label": "Už tuto aplikaci používáte? Ohodnoťte ji nebo napište recenzi v App Storu",
+     "url": "https://apps.apple.com/app/id6792850916?action=write-review"
     },
     "keywords": [
-     "notebook",
-     "journal",
-     "planner",
-     "annotate",
-     "stylus",
-     "lecture"
+     "anonymizace",
+     "cenzura",
+     "osobní údaje",
+     "občanský průkaz",
+     "lékařská zpráva",
+     "smlouva"
     ],
-    "keyline": "Note Taking, Handwriting & PDF",
+    "keyline": "Skryjte citlivé informace",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "09d545c91056ba06",
+     "board": "f88a32e9a9deb640",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "card/gsat2027/2026-10-26",
+    "locale": "zh-Hant",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/countdown-cards/card-20261026.jpg",
+    "caption": "116 學測 倒數 88 天\n一起撐過去\n\nApp Store／Google Play 搜尋「CountDaysNow」\n\n#倒數日 #倒數計時 #紀念日 #生日 #還有幾天",
+    "title": "116 學測 倒數 88 天",
+    "alt": "CountDaysNow — 116 學測 倒數 88 天 — 一起撐過去 — App Store／Google Play 搜尋「CountDaysNow」 — 倒數日 · 倒數計時 · 紀念日",
+    "name": "CountDaysNow",
+    "hook": "116 學測 倒數 88 天",
+    "tags": [
+     "#倒數日",
+     "#倒數計時",
+     "#紀念日",
+     "#生日",
+     "#還有幾天"
+    ],
+    "button": "在 App Store 下載",
+    "store": "https://apps.apple.com/tw/app/id6807079789?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow"
    }
   ],
   "youtube": [
@@ -1449,60 +1491,62 @@
    },
    {
     "kind": "clip",
-    "key": "notesstudio100/en",
-    "locale": "en",
-    "app": "notesstudio100",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/wrj17p.mp4",
-    "hook": "Every notebook, its own look",
-    "name": "100 Notes Studio: Pen & Paper",
-    "title": "Every notebook, its own look | Note Taking, Handwriting & PDF | 100 Notes Studio",
+    "key": "maskmyfile/cs",
+    "locale": "cs",
+    "app": "maskmyfile",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/b9a59b.mp4",
+    "hook": "Něco chybí? Přidejte to",
+    "name": "Mask My File: Odstraňte údaje",
+    "title": "Něco chybí? Přidejte to | Skryjte citlivé informace | Mask My File",
     "tags": [
-     "#PenPaper",
-     "#Notebook",
-     "#Journal",
-     "#Planner",
-     "#Annotate",
-     "#100NotesStudio"
+     "#OdstraňteÚdaje",
+     "#Anonymizace",
+     "#Cenzura",
+     "#OsobníÚdaje",
+     "#ObčanskýPrůkaz",
+     "#MaskMyFile"
     ],
-    "caption": "Every notebook, its own look\nAudio saved to the page\nNote Taking, Handwriting & PDF\n100 Notes Studio: Pen & Paper\nSearch “100 Notes Studio” on the App Store\nAlso on Google Play\n\n#PenPaper #Notebook #Journal #Planner #100NotesStudio",
-    "button": "Get it on the App Store",
+    "caption": "Něco chybí? Přidejte to\nUloží novou kopii, originál zůstane\nSkryjte citlivé informace\nMask My File: Odstraňte údaje\nVyhledejte „Mask My File“ v App Storu\nTaké na Google Play\n\n#OdstraňteÚdaje #Anonymizace #Cenzura #OsobníÚdaje #MaskMyFile",
+    "button": "Stáhnout z App Storu",
     "variant": "b",
-    "alt": "100 Notes Studio: Pen & Paper — Every notebook, its own look — Audio saved to the page — Note Taking, Handwriting & PDF",
-    "store": "https://apps.apple.com/us/app/id6798813048?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.NotesStudio100&referrer=utm_source%3Dsocial%26utm_campaign%3Dnotesstudio100",
+    "alt": "Mask My File: Odstraňte údaje — Něco chybí? Přidejte to — Uloží novou kopii, originál zůstane — Skryjte citlivé informace",
+    "store": "https://apps.apple.com/cz/app/id6792850916?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MaskMyFile&referrer=utm_source%3Dsocial%26utm_campaign%3Dmaskmyfile",
     "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6798813048?action=write-review"
+     "label": "Už tuto aplikaci používáte? Ohodnoťte ji nebo napište recenzi v App Storu",
+     "url": "https://apps.apple.com/app/id6792850916?action=write-review"
     },
     "keywords": [
-     "notebook",
-     "journal",
-     "planner",
-     "annotate",
-     "stylus",
-     "lecture"
+     "anonymizace",
+     "cenzura",
+     "osobní údaje",
+     "občanský průkaz",
+     "lékařská zpráva",
+     "smlouva"
     ],
-    "keyline": "Note Taking, Handwriting & PDF",
+    "keyline": "Skryjte citlivé informace",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "09d545c91056ba06",
+     "board": "f88a32e9a9deb640",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "youtube": {
-     "title": "Every notebook, its own look | 100 Notes Studio #Shorts",
-     "description": "Every notebook, its own look\nAudio saved to the page\nNote Taking, Handwriting & PDF\n\n100 Notes Studio: Pen & Paper\nApp Store: https://apps.apple.com/us/app/id6798813048?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.NotesStudio100&referrer=utm_source%3Dsocial%26utm_campaign%3Dnotesstudio100\nAlready using this app? Rate or review it on the App Store\nhttps://apps.apple.com/app/id6798813048?action=write-review\n\nnotebook · journal · planner · annotate · stylus · lecture\n\n#Shorts #PenPaper #100NotesStudio",
+     "title": "Něco chybí? Přidejte to | Mask My File #Shorts",
+     "description": "Něco chybí? Přidejte to\nUloží novou kopii, originál zůstane\nSkryjte citlivé informace\n\nMask My File: Odstraňte údaje\nApp Store: https://apps.apple.com/cz/app/id6792850916?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MaskMyFile&referrer=utm_source%3Dsocial%26utm_campaign%3Dmaskmyfile\nUž tuto aplikaci používáte? Ohodnoťte ji nebo napište recenzi v App Storu\nhttps://apps.apple.com/app/id6792850916?action=write-review\n\nanonymizace · cenzura · osobní údaje · občanský průkaz · lékařská zpráva · smlouva\n\n#Shorts #OdstraňteÚdaje #MaskMyFile",
      "tags": [
-      "notebook",
-      "journal",
-      "planner",
-      "annotate",
-      "stylus",
-      "lecture",
-      "PenPaper",
-      "100NotesStudio",
-      "100 Notes Studio"
+      "anonymizace",
+      "cenzura",
+      "osobní údaje",
+      "občanský průkaz",
+      "lékařská zpráva",
+      "smlouva",
+      "OdstraňteÚdaje",
+      "OsobníÚdaje",
+      "ObčanskýPrůkaz",
+      "MaskMyFile",
+      "Mask My File"
      ]
     },
     "slot": 15
@@ -1658,52 +1702,77 @@
    },
    {
     "kind": "clip",
-    "key": "notesstudio100/en",
-    "locale": "en",
-    "app": "notesstudio100",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/wrj17p.mp4",
-    "hook": "Every notebook, its own look",
-    "name": "100 Notes Studio: Pen & Paper",
-    "title": "Every notebook, its own look | Note Taking, Handwriting & PDF | 100 Notes Studio",
+    "key": "maskmyfile/cs",
+    "locale": "cs",
+    "app": "maskmyfile",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/b9a59b.mp4",
+    "hook": "Něco chybí? Přidejte to",
+    "name": "Mask My File: Odstraňte údaje",
+    "title": "Něco chybí? Přidejte to | Skryjte citlivé informace | Mask My File",
     "tags": [
-     "#PenPaper",
-     "#Notebook",
-     "#Journal",
-     "#Planner",
-     "#Annotate",
-     "#100NotesStudio"
+     "#OdstraňteÚdaje",
+     "#Anonymizace",
+     "#Cenzura",
+     "#OsobníÚdaje",
+     "#ObčanskýPrůkaz",
+     "#MaskMyFile"
     ],
-    "caption": "Every notebook, its own look\nAudio saved to the page\nNote Taking, Handwriting & PDF\n100 Notes Studio: Pen & Paper\nSearch “100 Notes Studio” on the App Store\nAlso on Google Play\n\n#PenPaper #Notebook #Journal #Planner #100NotesStudio",
-    "button": "Get it on the App Store",
+    "caption": "Něco chybí? Přidejte to\nUloží novou kopii, originál zůstane\nSkryjte citlivé informace\nMask My File: Odstraňte údaje\nVyhledejte „Mask My File“ v App Storu\nTaké na Google Play\n\n#OdstraňteÚdaje #Anonymizace #Cenzura #OsobníÚdaje #MaskMyFile",
+    "button": "Stáhnout z App Storu",
     "variant": "b",
-    "alt": "100 Notes Studio: Pen & Paper — Every notebook, its own look — Audio saved to the page — Note Taking, Handwriting & PDF",
-    "store": "https://apps.apple.com/us/app/id6798813048?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.NotesStudio100&referrer=utm_source%3Dsocial%26utm_campaign%3Dnotesstudio100",
+    "alt": "Mask My File: Odstraňte údaje — Něco chybí? Přidejte to — Uloží novou kopii, originál zůstane — Skryjte citlivé informace",
+    "store": "https://apps.apple.com/cz/app/id6792850916?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MaskMyFile&referrer=utm_source%3Dsocial%26utm_campaign%3Dmaskmyfile",
     "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6798813048?action=write-review"
+     "label": "Už tuto aplikaci používáte? Ohodnoťte ji nebo napište recenzi v App Storu",
+     "url": "https://apps.apple.com/app/id6792850916?action=write-review"
     },
     "keywords": [
-     "notebook",
-     "journal",
-     "planner",
-     "annotate",
-     "stylus",
-     "lecture"
+     "anonymizace",
+     "cenzura",
+     "osobní údaje",
+     "občanský průkaz",
+     "lékařská zpráva",
+     "smlouva"
     ],
-    "keyline": "Note Taking, Handwriting & PDF",
+    "keyline": "Skryjte citlivé informace",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "09d545c91056ba06",
+     "board": "f88a32e9a9deb640",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "Every notebook, its own look\nAudio saved to the page\nNote Taking, Handwriting & PDF\n100 Notes Studio: Pen & Paper\nSearch “100 Notes Studio” on the App Store\nAlso on Google Play\n\n#PenPaper #Notebook #Journal #Planner #100NotesStudio\n\nGet it on the App Store: https://apps.apple.com/us/app/id6798813048?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.NotesStudio100&referrer=utm_source%3Dsocial%26utm_campaign%3Dnotesstudio100",
-     "link": "https://apps.apple.com/us/app/id6798813048?pt=118326163&ct=social&mt=8"
+     "description": "Něco chybí? Přidejte to\nUloží novou kopii, originál zůstane\nSkryjte citlivé informace\nMask My File: Odstraňte údaje\nVyhledejte „Mask My File“ v App Storu\nTaké na Google Play\n\n#OdstraňteÚdaje #Anonymizace #Cenzura #OsobníÚdaje #MaskMyFile\n\nStáhnout z App Storu: https://apps.apple.com/cz/app/id6792850916?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MaskMyFile&referrer=utm_source%3Dsocial%26utm_campaign%3Dmaskmyfile",
+     "link": "https://apps.apple.com/cz/app/id6792850916?pt=118326163&ct=social&mt=8"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "card/gsat2027/2026-10-26",
+    "locale": "zh-Hant",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/countdown-cards/card-20261026.jpg",
+    "caption": "116 學測 倒數 88 天\n一起撐過去\n\nApp Store／Google Play 搜尋「CountDaysNow」\n\n#倒數日 #倒數計時 #紀念日 #生日 #還有幾天",
+    "title": "116 學測 倒數 88 天",
+    "alt": "CountDaysNow — 116 學測 倒數 88 天 — 一起撐過去 — App Store／Google Play 搜尋「CountDaysNow」 — 倒數日 · 倒數計時 · 紀念日",
+    "name": "CountDaysNow",
+    "hook": "116 學測 倒數 88 天",
+    "tags": [
+     "#倒數日",
+     "#倒數計時",
+     "#紀念日",
+     "#生日",
+     "#還有幾天"
+    ],
+    "button": "在 App Store 下載",
+    "store": "https://apps.apple.com/tw/app/id6807079789?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
+    "pinterest": {
+     "description": "116 學測 倒數 88 天\n一起撐過去\n\nApp Store／Google Play 搜尋「CountDaysNow」\n\n#倒數日 #倒數計時 #紀念日 #生日 #還有幾天\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6807079789?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
+     "link": "https://apps.apple.com/tw/app/id6807079789?pt=118326163&ct=social&mt=8"
+    }
    },
    {
     "kind": "card",
@@ -4210,49 +4279,49 @@
    },
    {
     "kind": "clip",
-    "key": "notesstudio100/en",
-    "locale": "en",
-    "app": "notesstudio100",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/wrj17p.mp4",
-    "hook": "Every notebook, its own look",
-    "name": "100 Notes Studio: Pen & Paper",
-    "title": "Every notebook, its own look | Note Taking, Handwriting & PDF | 100 Notes Studio",
+    "key": "maskmyfile/cs",
+    "locale": "cs",
+    "app": "maskmyfile",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/b9a59b.mp4",
+    "hook": "Něco chybí? Přidejte to",
+    "name": "Mask My File: Odstraňte údaje",
+    "title": "Něco chybí? Přidejte to | Skryjte citlivé informace | Mask My File",
     "tags": [
-     "#PenPaper",
-     "#Notebook",
-     "#Journal",
-     "#Planner",
-     "#Annotate",
-     "#100NotesStudio"
+     "#OdstraňteÚdaje",
+     "#Anonymizace",
+     "#Cenzura",
+     "#OsobníÚdaje",
+     "#ObčanskýPrůkaz",
+     "#MaskMyFile"
     ],
-    "caption": "Every notebook, its own look\nAudio saved to the page\nNote Taking, Handwriting & PDF\n100 Notes Studio: Pen & Paper\nSearch “100 Notes Studio” on the App Store\nAlso on Google Play\n\n#PenPaper #Notebook #Journal #Planner #100NotesStudio",
-    "button": "Get it on the App Store",
+    "caption": "Něco chybí? Přidejte to\nUloží novou kopii, originál zůstane\nSkryjte citlivé informace\nMask My File: Odstraňte údaje\nVyhledejte „Mask My File“ v App Storu\nTaké na Google Play\n\n#OdstraňteÚdaje #Anonymizace #Cenzura #OsobníÚdaje #MaskMyFile",
+    "button": "Stáhnout z App Storu",
     "variant": "b",
-    "alt": "100 Notes Studio: Pen & Paper — Every notebook, its own look — Audio saved to the page — Note Taking, Handwriting & PDF",
-    "store": "https://apps.apple.com/us/app/id6798813048?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.NotesStudio100&referrer=utm_source%3Dsocial%26utm_campaign%3Dnotesstudio100",
+    "alt": "Mask My File: Odstraňte údaje — Něco chybí? Přidejte to — Uloží novou kopii, originál zůstane — Skryjte citlivé informace",
+    "store": "https://apps.apple.com/cz/app/id6792850916?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MaskMyFile&referrer=utm_source%3Dsocial%26utm_campaign%3Dmaskmyfile",
     "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6798813048?action=write-review"
+     "label": "Už tuto aplikaci používáte? Ohodnoťte ji nebo napište recenzi v App Storu",
+     "url": "https://apps.apple.com/app/id6792850916?action=write-review"
     },
     "keywords": [
-     "notebook",
-     "journal",
-     "planner",
-     "annotate",
-     "stylus",
-     "lecture"
+     "anonymizace",
+     "cenzura",
+     "osobní údaje",
+     "občanský průkaz",
+     "lékařská zpráva",
+     "smlouva"
     ],
-    "keyline": "Note Taking, Handwriting & PDF",
+    "keyline": "Skryjte citlivé informace",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "09d545c91056ba06",
+     "board": "f88a32e9a9deb640",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "Every notebook, its own look\nAudio saved to the page\nNote Taking, Handwriting & PDF\n100 Notes Studio: Pen & Paper\nSearch “100 Notes Studio” on the App Store\nAlso on Google Play\n\n#PenPaper #Notebook #Journal #Planner #100NotesStudio\n\nGet it on the App Store: https://apps.apple.com/us/app/id6798813048?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.NotesStudio100&referrer=utm_source%3Dsocial%26utm_campaign%3Dnotesstudio100"
+     "caption": "Něco chybí? Přidejte to\nUloží novou kopii, originál zůstane\nSkryjte citlivé informace\nMask My File: Odstraňte údaje\nVyhledejte „Mask My File“ v App Storu\nTaké na Google Play\n\n#OdstraňteÚdaje #Anonymizace #Cenzura #OsobníÚdaje #MaskMyFile\n\nStáhnout z App Storu: https://apps.apple.com/cz/app/id6792850916?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MaskMyFile&referrer=utm_source%3Dsocial%26utm_campaign%3Dmaskmyfile"
     },
     "slot": 15
    }

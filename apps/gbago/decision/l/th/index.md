@@ -2,7 +2,7 @@
 title: "GBAGo: เซฟแบบเห็นภาพ — แผนผังกู้คืน · สแนปช็อตออโต้ | iOS App"
 lang: "th"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gbago/decision/l/th/index.html"
-modified: "2026-10-26"
+modified: "2026-10-27"
 app_store_id: "6804564400"
 verified_live: true
 purchase_model: "paid_upfront"

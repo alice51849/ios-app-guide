@@ -2,7 +2,7 @@
 title: "UsageNow: AI వినియోగ ట్రాకర్ — Claude, Codex, Copilot పరిమితి | iOS App"
 lang: "te-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/claudeusagemini/decision/l/te-IN/index.html"
-modified: "2026-10-26"
+modified: "2026-10-27"
 app_store_id: "6818607603"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

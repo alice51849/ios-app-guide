@@ -2,7 +2,7 @@
 title: "GBAGo: ভিজ্যুয়াল সেভ — রিকভারি ম্যাপ · অটো স্ন্যাপশট | iOS App"
 lang: "bn-BD"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gbago/decision/l/bn-BD/index.html"
-modified: "2026-10-26"
+modified: "2026-10-27"
 app_store_id: "6804564400"
 verified_live: true
 purchase_model: "paid_upfront"

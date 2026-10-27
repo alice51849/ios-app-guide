@@ -2,7 +2,7 @@
 title: "ứng dụng lập lịch trình chuyến đi tốt nhất cho iPhone"
 lang: "vi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbee/decision/l/vi/index.html"
-modified: "2026-10-26"
+modified: "2026-10-27"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"

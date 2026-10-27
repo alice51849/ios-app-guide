@@ -2,7 +2,7 @@
 title: "G+Money Lite: Bani de vacanță — Buget zilnic pe ceas și widget | iOS App"
 lang: "ro"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gmoneylite/decision/l/ro/index.html"
-modified: "2026-10-26"
+modified: "2026-10-27"
 app_store_id: "6793436548"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

@@ -2,7 +2,7 @@
 title: "HoursTag: Часы для покупки — Почасовая ставка и траты | iOS App"
 lang: "ru"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/ru/index.html"
-modified: "2026-10-26"
+modified: "2026-10-27"
 app_store_id: "6754218117"
 verified_live: true
 purchase_model: "paid_upfront"

@@ -2,7 +2,7 @@
 title: "Foldable Wallpaper Studio — Fond d'écran pliable et widget | iOS App"
 lang: "fr-FR"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/duowallpaperstudio/decision/l/fr-FR/index.html"
-modified: "2026-10-26"
+modified: "2026-10-27"
 app_store_id: "6824946559"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

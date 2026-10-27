@@ -2,7 +2,7 @@
 title: "WiFi Aid: കണക്ഷൻ പ്രശ്നം — റൗട്ടർ, മെഷ്, DNS പരിശോധന | iOS App"
 lang: "ml-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/ml-IN/index.html"
-modified: "2026-10-26"
+modified: "2026-10-27"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"

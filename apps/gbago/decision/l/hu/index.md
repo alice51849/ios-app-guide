@@ -2,7 +2,7 @@
 title: "GBAGo: Vizuális mentések — Helyreállítás · Pillanatképek | iOS App"
 lang: "hu"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gbago/decision/l/hu/index.html"
-modified: "2026-10-26"
+modified: "2026-10-27"
 app_store_id: "6804564400"
 verified_live: true
 purchase_model: "paid_upfront"

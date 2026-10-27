@@ -2,7 +2,7 @@
 title: "OnePage PPT: diapositivo IA — Apresentação a partir de notas | iOS App"
 lang: "pt-PT"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/onepageppt/decision/l/pt-PT/index.html"
-modified: "2026-10-26"
+modified: "2026-10-27"
 app_store_id: "6798814385"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

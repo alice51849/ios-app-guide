@@ -1066,11 +1066,13 @@
      "same": false
     },
     "en-GB": {
-     "added": [],
+     "added": [
+      "Optimised for iPhone Duo. Built with the latest SDK, the app fills the entire inner display and automatically adjusts its layout whether the device is folded or open."
+     ],
      "dropped": [],
-     "live_updated": "2026-10-10",
-     "live_version": "1.0.8",
-     "same": true
+     "live_updated": "2026-10-25",
+     "live_version": "1.0.9",
+     "same": false
     },
     "en-US": {
      "added": [
@@ -1082,11 +1084,13 @@
      "same": false
     },
     "es-ES": {
-     "added": [],
+     "added": [
+      "Optimizada para el iPhone Duo. Creada con el SDK más reciente, la app ocupa toda la pantalla interior y ajusta su diseño automáticamente, con el dispositivo plegado o desplegado."
+     ],
      "dropped": [],
-     "live_updated": "2026-10-10",
-     "live_version": "1.0.8",
-     "same": true
+     "live_updated": "2026-10-25",
+     "live_version": "1.0.9",
+     "same": false
     },
     "fr-FR": {
      "added": [
@@ -1125,11 +1129,13 @@
      "same": false
     },
     "zh-Hans": {
-     "added": [],
+     "added": [
+      "已针对 iPhone Duo 优化。本应用使用最新开发工具包构建,铺满整块内屏,无论折叠还是展开都会自动调整布局。"
+     ],
      "dropped": [],
-     "live_updated": "2026-10-10",
-     "live_version": "1.0.8",
-     "same": true
+     "live_updated": "2026-10-25",
+     "live_version": "1.0.9",
+     "same": false
     },
     "zh-Hant": {
      "added": [
@@ -1148,162 +1154,336 @@
    "brands": [
     "DailyMate Lite"
    ],
-   "live_updated": "2026-10-09",
-   "live_version": "1.0.7",
+   "live_updated": "2026-10-27",
+   "live_version": "1.0.8",
    "locales": {
     "de-DE": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.7",
-     "same": true
+     "added": [
+      "Optimiert für das iPhone Duo. Die mit dem neuesten SDK entwickelte App füllt das gesamte innere Display und passt das Layout automatisch an, egal ob zugeklappt oder aufgeklappt.",
+      "Lernen Sie jede der 50 Sprachen, nicht nur eine: Englisch, Spanisch, Französisch, Japanisch, Koreanisch und viele mehr. Wechseln Sie jederzeit; jede Sprache behält ihren eigenen Fortschritt und ihre gespeicherten Sätze.",
+      "Täglich auf dem Home-Bildschirm wiederholen: Das Widget zeigt Ihren nächsten Satz zum Lernen, wechselt zum nächsten, sobald Sie ihn gelernt haben, und lässt Sie Sätze direkt im Widget überspringen oder speichern.",
+      "Üben Sie vor der Reise, was Sie sagen möchten: Sicherheitskontrolle am Flughafen, Check-in im Hotel, nach dem Weg fragen, Essen bestellen und mehr. 84 Alltagssituationen, jede Karte mit einem Satz, den Sie hören werden, und einer natürlichen Antwort.",
+      "Hören Sie jeden Satz mit Stimmen direkt auf dem Gerät und einstellbarem Sprechtempo.",
+      "So lernen Sie ganze Wortwechsel statt einzelner Vokabeln.",
+      "Nutzungsbedingungen (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"
+     ],
+     "dropped": [
+      "Sicherer sprechen, wenn es darauf ankommt. DailyMate Lite macht aus Situationen auf Reisen, bei der Arbeit, im Restaurant, rund um Gesundheit und Alltag kurze Übungen aus Impuls und Antwort – in 50 Sprachen. Das Reisethema auf Anfängerniveau ist kostenlos; die vollständige Bibliothek lässt sich mit einem Einmalkauf dauerhaft nutzen.",
+      "Terms of Use (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.8",
+     "same": false
     },
     "en-GB": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.7",
-     "same": true
+     "added": [
+      "Optimised for iPhone Duo. Built with the latest SDK, the app fills the entire inner display and automatically adjusts its layout whether the device is folded or open.",
+      "Learn any of 50 languages, not just one: English, Spanish, Japanese, Korean, French, German and many more. Switch anytime, and every language keeps its own progress and saved phrases.",
+      "Review every day from your Home Screen: the widget shows your next phrase to learn, moves on once you have learned it, and lets you skip or save phrases right from the widget.",
+      "Rehearse what to say before your trip: airport security, hotel check-in, asking directions, ordering food and more. 84 real-life situations, each card a line you'll hear plus a natural reply.",
+      "Hear every phrase with on-device voices at adjustable speed.",
+      "Learn whole exchanges, not just isolated words."
+     ],
+     "dropped": [
+      "Be ready when it is your turn to speak. DailyMate Lite turns everyday situations into short cue-and-reply practice in 50 languages. Start free with the Travel topic at Beginner level, then unlock the full library with one purchase. No subscription."
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.8",
+     "same": false
     },
     "en-US": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.7",
-     "same": true
+     "added": [
+      "Optimized for iPhone Duo. Built with the latest SDK, the app fills the entire inner display and automatically adjusts its layout whether the device is folded or open.",
+      "Learn any of 50 languages, not just one: English, Spanish, Japanese, Korean, French, German and many more. Switch anytime, and every language keeps its own progress and saved phrases.",
+      "Review every day from your Home Screen: the widget shows your next phrase to learn, moves on once you have learned it, and lets you skip or save phrases right from the widget.",
+      "Rehearse what to say before your trip: airport security, hotel check-in, asking directions, ordering food and more. 84 real-life situations, each card a line you'll hear plus a natural reply.",
+      "Hear every phrase with on-device voices at adjustable speed.",
+      "Learn whole exchanges, not just isolated words."
+     ],
+     "dropped": [
+      "Be ready when it is your turn to speak. DailyMate Lite turns everyday situations into short cue-and-reply practice in 50 languages. Start free with the Traveler topic at Beginner level, then unlock the full library with one purchase. No subscription."
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.8",
+     "same": false
     },
     "es-ES": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.7",
-     "same": true
+     "added": [
+      "Optimizada para el iPhone Duo. Creada con el SDK más reciente, la app ocupa toda la pantalla interior y ajusta su diseño automáticamente, con el dispositivo plegado o desplegado.",
+      "Aprende cualquiera de los 50 idiomas, no solo uno: inglés, francés, japonés, coreano, italiano y muchos más. Cambia cuando quieras; cada idioma conserva su progreso y sus frases guardadas.",
+      "Repasa cada día desde la pantalla de inicio: el widget muestra la siguiente frase por aprender, pasa a la siguiente cuando la aprendes y te deja saltar o guardar frases desde el propio widget.",
+      "Ensaya lo que vas a decir antes del viaje: el control de seguridad del aeropuerto, el check-in en el hotel, preguntar una dirección, pedir la comida y mucho más. 84 situaciones reales; cada tarjeta une una frase que vas a oír con una respuesta natural.",
+      "Escucha cada frase con las voces del dispositivo y velocidad ajustable.",
+      "Aprende diálogos completos, no solo palabras sueltas.",
+      "Términos de uso (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"
+     ],
+     "dropped": [
+      "Habla con confianza cuando llegue el momento. DailyMate Lite convierte situaciones cotidianas en breves intercambios que puedes escuchar y practicar en 50 idiomas. Empieza gratis con el tema Viajes en el nivel principiante y desbloquea toda la biblioteca con un único pago. Sin suscripción.",
+      "Terms of Use (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.8",
+     "same": false
     },
     "fr-FR": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.7",
-     "same": true
+     "added": [
+      "Optimisée pour l’iPhone Duo. Conçue avec le SDK le plus récent, l’app remplit tout l’écran intérieur et adapte automatiquement sa mise en page, appareil plié ou ouvert.",
+      "Apprenez n’importe laquelle des 50 langues, pas seulement une : anglais, espagnol, japonais, coréen, italien et bien d’autres. Changez quand vous voulez ; chaque langue conserve sa progression et ses phrases enregistrées.",
+      "Révisez chaque jour depuis l’écran d’accueil : le widget affiche la prochaine phrase à apprendre, passe à la suivante une fois apprise et vous permet de passer ou d’enregistrer des phrases directement dans le widget.",
+      "Répétez ce que vous direz avant de partir : contrôle de sécurité à l’aéroport, arrivée à l’hôtel, demander votre chemin, commander au restaurant et bien plus. 84 situations de la vie réelle, chaque carte associant une phrase que vous entendrez à une réponse naturelle.",
+      "Écoutez chaque phrase avec les voix de votre appareil, à la vitesse de votre choix.",
+      "Apprenez des échanges complets, pas seulement des mots isolés.",
+      "Conditions d'utilisation (EULA) : https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"
+     ],
+     "dropped": [
+      "Parlez avec assurance quand l’occasion se présente. DailyMate Lite transforme des situations du quotidien en courts échanges à écouter et à pratiquer dans 50 langues. Commencez gratuitement par le thème Voyage au niveau débutant, puis débloquez toute la bibliothèque en un seul achat. Aucun abonnement.",
+      "Terms of Use (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.8",
+     "same": false
     },
     "ja": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.7",
-     "same": true
+     "added": [
+      "iPhone Duoに最適化。最新の開発キットでビルドしており、内側のディスプレイ全体に表示され、折りたたんでも開いても自動でレイアウトが調整されます。",
+      "旅行英会話をはじめ、50言語からどれでも選んで学べます。英語、韓国語、中国語、スペイン語、フランス語など、いつでも切り替え可能。進捗とお気に入りは言語ごとに保存されます。",
+      "ホーム画面のウィジェットで毎日復習:まだ覚えていない次のフレーズを表示し、覚えたら次のフレーズへ。ウィジェット上でスキップやお気に入り登録もできます。",
+      "旅行の前に、言いたいことを先に練習。空港の保安検査、ホテルのチェックイン、道をたずねる、料理を注文するなど84の生活場面を収録し、1枚のカードに、聞こえてくる一言と自然な返し方がセットになっています。",
+      "どのフレーズも端末の音声で発音を確認でき、読み上げ速度も調整できます。",
+      "単語だけでなく、受け答えをまるごと身につけられます。",
+      "利用規約(EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"
+     ],
+     "dropped": [
+      "いざ話そうとすると、言葉が出てこない。DailyMate Lite は、旅行、仕事、食事、健康などの場面を、短い問いかけと自然な返答のペアにまとめました。50言語を、一往復の会話で身につけられます。",
+      "Terms of Use (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.8",
+     "same": false
     },
     "ko": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.7",
-     "same": true
+     "added": [
+      "iPhone Duo에 최적화되었습니다. 최신 개발 도구로 빌드되어 안쪽 디스플레이 전체를 가득 채우며, 접거나 펼쳐도 레이아웃이 자동으로 조정됩니다.",
+      "50개 언어 중 원하는 언어를 골라 배우세요. 하나만이 아닙니다. 영어, 일본어, 중국어, 스페인어, 프랑스어 등 언제든 바꿀 수 있고, 언어마다 진도와 저장한 문장이 따로 보관됩니다.",
+      "홈 화면 위젯으로 매일 복습: 아직 익히지 않은 다음 문장을 보여 주고, 익히면 다음 문장으로 넘어갑니다. 위젯에서 바로 건너뛰거나 저장할 수도 있어요.",
+      "여행 전에 할 말을 미리 연습하세요. 공항 보안 검색, 호텔 체크인, 길 묻기, 음식 주문 등 84개 생활 장면을 담았고, 카드마다 듣게 될 한마디와 자연스러운 대답이 짝을 이룹니다.",
+      "모든 문장을 기기 음성으로 듣고, 말하기 속도도 조절할 수 있어요.",
+      "단어만 외우는 대신 주고받는 대화를 통째로 익힙니다.",
+      "이용약관(EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"
+     ],
+     "dropped": [
+      "막상 말하려는 순간, 알맞은 표현이 떠오르지 않나요? DailyMate Lite는 여행, 업무, 식사, 건강 등 실제 장면을 짧은 질문과 자연스러운 대답으로 구성해, 50개 언어를 한 차례의 온전한 대화로 연습할 수 있게 해 줍니다.",
+      "Terms of Use (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.8",
+     "same": false
     },
     "pt-BR": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.7",
-     "same": true
+     "added": [
+      "Otimizado para iPhone Duo. Criado com o SDK mais recente, o app ocupa toda a tela interna e ajusta o layout automaticamente, com o aparelho dobrado ou aberto.",
+      "Aprenda qualquer um dos 50 idiomas, não só um: inglês, espanhol, francês, japonês, coreano e muitos outros. Troque quando quiser; cada idioma guarda o próprio progresso e as frases salvas.",
+      "Revise todo dia na Tela de Início: o widget mostra a próxima frase a aprender, passa para a seguinte quando você aprende e permite pular ou salvar frases direto no widget.",
+      "Ensaie o que vai dizer antes da viagem: controle de segurança no aeroporto, check-in no hotel, pedir informações, fazer o pedido no restaurante e muito mais. São 84 situações reais, e cada cartão traz uma frase que você vai ouvir e uma resposta natural.",
+      "Ouça cada frase com as vozes do próprio aparelho e velocidade ajustável.",
+      "Aprenda diálogos completos, não só palavras soltas.",
+      "Termos de Uso (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"
+     ],
+     "dropped": [
+      "Fale com mais confiança quando a conversa acontecer. DailyMate Lite transforma situações de viagem, trabalho, alimentação, saúde e vida social em exercícios rápidos de frase e resposta em 50 idiomas. O tema Viagem no nível Iniciante é grátis; a biblioteca completa fica disponível com uma única compra.",
+      "Terms of Use (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.8",
+     "same": false
     },
     "zh-Hans": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.7",
-     "same": true
+     "added": [
+      "已针对 iPhone Duo 优化。本应用使用最新开发工具包构建,铺满整块内屏,无论折叠还是展开都会自动调整布局。",
+      "50 种语言任你选,不只学一种:英语、日语、韩语、西班牙语、法语、泰语、越南语......想学哪种就切换哪种,每种语言的进度与收藏都分开保存。",
+      "主屏幕小组件每天陪你复习:小组件会显示下一句还没学过的句子,学会就自动换下一句,也能直接在小组件上换句、收藏。",
+      "出国前,把要说的话先练一遍:机场安检、酒店入住、问路、点餐等 84 个生活情境,每张卡片都是一句提示加一句自然回复。",
+      "每一句都能用设备自带语音听发音,语速可调。",
+      "一来一回练完整对话,不只背单词。",
+      "使用条款(EULA):https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"
+     ],
+     "dropped": [
+      "想开口时,不必先在脑中拼凑单词。DailyMate Lite 将旅行、工作、餐饮、健康等生活场景整理成简短提示与自然回复,让你用完整的一问一答练习 50 种语言。",
+      "Terms of Use (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.8",
+     "same": false
     },
     "zh-Hant": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.7",
-     "same": true
+     "added": [
+      "已針對 iPhone Duo 最佳化。本 App 以最新開發套件建置,填滿整個內螢幕,無論摺起或打開都會自動調整版面。",
+      "50 種語言任你選,不只學一種:英語、日語、韓語、西班牙語、法語、泰語、越南語......想學哪種就切換哪種,每種語言的進度與收藏都分開保存。",
+      "主畫面小工具每天陪你複習:小工具會顯示下一句還沒學過的句子,學會就自動換下一句,也能直接在小工具上換句、收藏。",
+      "出國前,把要說的話先練一遍:機場安檢、飯店入住、問路、點餐等 84 個生活情境,每張卡片都是一句提示加一句自然回覆。",
+      "每一句都能用裝置內建語音聽發音,語速可調。",
+      "一來一往練完整對話,不只背單字。",
+      "使用條款(EULA):https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"
+     ],
+     "dropped": [
+      "想開口時,不必先在腦中拼湊單字。DailyMate Lite 將旅行、工作、餐飲、健康等生活情境整理成簡短提示與自然回覆,讓你用完整的一來一往練習 50 種語言。",
+      "Terms of Use (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.8",
+     "same": false
     }
    },
-   "status": "green"
+   "status": "red"
   },
   "dbhalo": {
    "blocked_terms": [],
    "brands": [
     "dB Halo"
    ],
-   "live_updated": "2026-10-09",
-   "live_version": "1.0.5",
+   "live_updated": "2026-10-26",
+   "live_version": "1.0.6",
    "locales": {
     "de-DE": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.5",
-     "same": true
+     "added": [
+      "Optimiert für das iPhone Duo. Die mit dem neuesten SDK entwickelte App füllt das gesamte innere Display und passt das Layout automatisch an, egal ob zugeklappt oder aufgeklappt.",
+      "Sofort sehen, wie laut es gerade ist: großer Live-Wert in dB mit Minimum, Mittelwert, Maximum und Spitze, dazu ein Ereignisprotokoll mit Zeitstempeln. Miss Lärm von Nachbarn, Baustellen, Verkehr oder Konzerten und exportiere einen PDF-Bericht oder CSV-Daten.",
+      "Schätze die heutige Lärmbelastung und die verbleibende Zeit nach NIOSH- oder OSHA-Kriterien, analysiere Geräusche als FFT-Spektrum, RTA und Spektrogramm, und lass das Schlaftagebuch Schnarchen und andere nächtliche Geräusche festhalten. Alles wird direkt auf dem Gerät verarbeitet, auf iPhone und iPad.",
+      "Wähle A-, C- oder Z-Bewertung, nutze ein externes Mikrofon und speichere mehrere Kalibrierungsprofile für unterschiedliche Mikrofone."
+     ],
+     "dropped": [
+      "Verwandle dein iPhone oder iPad in einen übersichtlichen, privaten Schallpegelmesser. Der große Halo zeigt den aktuellen Schallpegel samt Sicherheitsbereich sowie Minimum, Mittelwert, Maximum und Spitze. Ein Ereignisprotokoll mit Zeitstempeln hält Veränderungen der Geräuschkulisse fest. Wähle A-, C- oder Z-Bewertung, nutze ein externes Mikrofon und speichere mehrere Kalibrierungsprofile für unterschiedliche Mikrofone."
+     ],
+     "live_updated": "2026-10-26",
+     "live_version": "1.0.6",
+     "same": false
     },
     "en-GB": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.5",
-     "same": true
+     "added": [
+      "Optimised for iPhone Duo. Built with the latest SDK, the app fills the entire inner display and automatically adjusts its layout whether the device is folded or open.",
+      "See how loud it is right now: a big live dB reading with minimum, average, maximum and peak, plus a time-stamped log of loud events. Keep an eye on building works, a noisy flat, the commute or a rehearsal room, then export a PDF report or CSV.",
+      "Estimate today’s noise exposure and remaining time against NIOSH or OSHA criteria, analyse sound in FFT, RTA and Spectrogram views, and let the Sleep Journal log snoring and other night sounds. Processing stays on your devices.",
+      "Select A, C or Z weighting, use an external microphone and save several calibration profiles for different setups. FFT Spectrum, RTA octave bands and Spectrogram share one live session. Noise Dose offers a useful first look at noise at work, but not a formal workplace assessment. The on-device Sleep Journal recognises and classifies snoring, breathing, speech, coughing, alarms, animal sounds, impacts, ambient sound and crying, logging each event without retaining raw microphone audio. Microphone audio is not stored by default; an AAC file is created only when you deliberately start a recording."
+     ],
+     "dropped": [
+      "Whether you are keeping an eye on building works, a noisy flat, the commute or a rehearsal room, dB Halo gives you a clear view of the sound around you while processing stays on your devices. The large Halo safety ring shows live dB at a glance, alongside minimum, average, maximum and peak readings and a time-stamped event log. Select A, C or Z weighting, use an external microphone and save several calibration profiles for different setups.",
+      "Analyse one live session in three synchronised views: FFT Spectrum, RTA octave bands and Spectrogram. Noise Dose estimates daily exposure against NIOSH or OSHA criteria and shows the remaining safer time. It offers a useful first look at noise at work, but not a formal workplace assessment. The on-device Sleep Journal recognises and classifies snoring, breathing, speech, coughing, alarms, animal sounds, impacts, ambient sound and crying, logging each event without retaining raw microphone audio. Microphone audio is not stored by default; an AAC file is created only when you deliberately start a recording."
+     ],
+     "live_updated": "2026-10-26",
+     "live_version": "1.0.6",
+     "same": false
     },
     "en-US": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.5",
-     "same": true
+     "added": [
+      "Optimized for iPhone Duo. Built with the latest SDK, the app fills the entire inner display and automatically adjusts its layout whether the device is folded or open.",
+      "See how loud it is right now: a big live dB reading with minimum, average, maximum and peak, plus a time-stamped log of loud events. Measure noisy neighbors, a home workshop, a gym or a concert, then export a PDF report or CSV.",
+      "Estimate today’s noise exposure and remaining time against NIOSH or OSHA criteria, analyze sound in FFT, RTA and Spectrogram views, and let the Sleep Journal log snoring and other night sounds. Everything is processed on your device.",
+      "Choose A, C or Z weighting, connect an external microphone and save multiple calibration profiles for different setups. FFT Spectrum, RTA octave bands and Spectrogram share one live session. The on-device Sleep Journal recognizes and classifies snoring, breathing, speech, coughing, alarms, animal sounds, impacts, ambient sound and crying, then logs each event without saving raw microphone audio. Microphone audio is not saved by default; an AAC file is created only when you explicitly start a recording."
+     ],
+     "dropped": [
+      "From a home workshop and HVAC rumble to a gym floor or concert venue, dB Halo helps you understand sound without sending data off your device. The large Halo safety ring shows live dB at a glance, with minimum, average, maximum, and peak readings plus a time-stamped event log. Choose A, C, or Z weighting, connect an external microphone, and save multiple calibration profiles for different setups.",
+      "Analyze one live session in three synchronized views: FFT Spectrum, RTA octave bands, and Spectrogram. Noise Dose estimates daily exposure against NIOSH or OSHA criteria and shows remaining safer time. The on-device Sleep Journal recognizes and classifies snoring, breathing, speech, coughing, alarms, animal sounds, impacts, ambient sound, and crying, then logs each event without saving raw microphone audio. Microphone audio is not saved by default; an AAC file is created only when you explicitly start a recording."
+     ],
+     "live_updated": "2026-10-26",
+     "live_version": "1.0.6",
+     "same": false
     },
     "es-ES": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.5",
-     "same": true
+     "added": [
+      "Optimizada para el iPhone Duo. Creada con el SDK más reciente, la app ocupa toda la pantalla interior y ajusta su diseño automáticamente, con el dispositivo plegado o desplegado.",
+      "Mira al instante cuántos decibelios hay ahora: una lectura grande en directo con el mínimo, la media, el máximo y el pico, y un registro de ruidos fuertes con hora. Mide el ruido en un piso, una obra, un concierto o un gimnasio y exporta un informe PDF o datos CSV.",
+      "Estima la exposición diaria al ruido y el tiempo restante según los criterios NIOSH u OSHA, analiza el sonido con FFT, RTA y espectrograma, y deja que el diario de sueño registre los ronquidos y otros sonidos nocturnos. Todo se procesa en el dispositivo, en el móvil o el iPad."
+     ],
+     "dropped": [
+      "dB Halo muestra de un vistazo el nivel de presión sonora en un piso, una obra, un concierto o un gimnasio, y estima cuánto tiempo de exposición queda según el criterio elegido. La aplicación convierte el móvil o el iPad en un sonómetro claro y completo. El gran anillo Halo indica la zona sonora y muestra la lectura actual, el mínimo, la media, el máximo y el pico, además de un registro de eventos con hora y nivel."
+     ],
+     "live_updated": "2026-10-26",
+     "live_version": "1.0.6",
+     "same": false
     },
     "fr-FR": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.5",
-     "same": true
+     "added": [
+      "Optimisée pour l’iPhone Duo. Conçue avec le SDK le plus récent, l’app remplit tout l’écran intérieur et adapte automatiquement sa mise en page, appareil plié ou ouvert.",
+      "Voyez tout de suite combien de décibels il y a autour de vous : grande mesure en direct avec les valeurs minimale, moyenne, maximale et de crête, et un journal horodaté des bruits forts. Mesurez un appartement haussmannien, un chantier, un concert ou un atelier, puis exportez un rapport PDF ou des données CSV.",
+      "Estimez l’exposition au bruit de la journée et le temps restant selon les critères NIOSH ou OSHA, analysez le son en vues FFT, RTA et spectrogramme, et laissez le journal du sommeil noter les ronflements et autres bruits nocturnes. Tout est traité sur l’appareil, sur iPhone ou iPad.",
+      "Choisissez la pondération A/C/Z, utilisez un microphone externe et conservez plusieurs profils d’étalonnage adaptés à votre matériel."
+     ],
+     "dropped": [
+      "Dans un appartement haussmannien, sur un chantier, à un concert ou dans un atelier, dB Halo transforme votre iPhone ou votre iPad en sonomètre complet dont le traitement s’effectue sur l’appareil. Le grand anneau de sécurité Halo affiche le niveau sonore en direct, les valeurs minimale, moyenne, maximale et de crête, ainsi qu’un journal d’événements horodaté. Choisissez la pondération A/C/Z, utilisez un microphone externe et conservez plusieurs profils d’étalonnage adaptés à votre matériel."
+     ],
+     "live_updated": "2026-10-26",
+     "live_version": "1.0.6",
+     "same": false
     },
     "ja": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.5",
-     "same": true
+     "added": [
+      "iPhone Duoに最適化。最新の開発キットでビルドしており、内側のディスプレイ全体に表示され、折りたたんでも開いても自動でレイアウトが調整されます。",
+      "開けばすぐ、今の音が何dBかわかります。大きな数字のリアルタイム表示に、最小・平均・最大・ピーク、大きな音を時刻つきで残す記録まで。上の階の足音、工事、近所の騒音も測れて、PDFレポートやCSVで書き出せます。",
+      "NIOSHまたはOSHAの基準で今日の騒音ばく露と、あとどれくらい過ごせるかを推定し、FFTスペクトル、RTA、スペクトログラムで音を解析。いびきなど夜の音を記録する睡眠ジャーナルもあります。処理はすべて端末内で完結し、iPhone、iPad、Apple Watchに対応しています。"
+     ],
+     "dropped": [
+      "周囲の音は今、何dBなのか。選んだ基準では、より安全に過ごせる時間があとどれくらいか。dB Haloなら、ひと目で確認できます。",
+      "測定、音響解析、記録、書き出しをこのデバイス内で完結する騒音計です。iPhone、iPad、Apple Watchに対応しています。"
+     ],
+     "live_updated": "2026-10-26",
+     "live_version": "1.0.6",
+     "same": false
     },
     "ko": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.5",
-     "same": true
+     "added": [
+      "iPhone Duo에 최적화되었습니다. 최신 개발 도구로 빌드되어 안쪽 디스플레이 전체를 가득 채우며, 접거나 펼쳐도 레이아웃이 자동으로 조정됩니다.",
+      "앱을 열면 지금 몇 dB인지 바로 보입니다. 큰 숫자의 실시간 측정값에 최소·평균·최대·피크, 큰 소리를 시간과 함께 남기는 기록까지. 층간소음, 공사 소음, 이웃 소음도 측정하고 PDF 보고서나 CSV로 내보낼 수 있습니다.",
+      "NIOSH 또는 OSHA 기준으로 오늘의 소음 노출과 남은 시간을 추정하고, FFT 스펙트럼·RTA·스펙트로그램으로 소리를 분석하며, 수면 일지로 코골이 등 밤사이 소리를 기록합니다. 모든 처리는 기기 안에서 이루어지며 iPhone, iPad, Apple Watch를 지원합니다."
+     ],
+     "dropped": [
+      "지금 이곳의 소리는 몇 dB일까요? 선택한 기준에서 안전 시간이 얼마나 남았는지도 한눈에 확인해 보세요.",
+      "dB Halo는 소리 측정부터 음향 분석, 기록, 내보내기까지 기기에서 처리하는 소음 측정기입니다. iPhone, iPad, Apple Watch를 지원합니다."
+     ],
+     "live_updated": "2026-10-26",
+     "live_version": "1.0.6",
+     "same": false
     },
     "pt-BR": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.5",
-     "same": true
+     "added": [
+      "Otimizado para iPhone Duo. Criado com o SDK mais recente, o app ocupa toda a tela interna e ajusta o layout automaticamente, com o aparelho dobrado ou aberto.",
+      "Veja na hora quantos decibéis tem agora: leitura grande ao vivo com mínimo, média, máximo e pico, além de um registro de barulhos fortes com horário. Meça o barulho no condomínio, no trânsito, em oficinas, obras ou festas e exporte um relatório PDF ou dados CSV.",
+      "Estime a exposição ao ruído do dia e o tempo restante pelos critérios NIOSH ou OSHA, analise o som nas visualizações FFT, RTA e espectrograma, e deixe o diário do sono registrar roncos e outros sons da noite. Tudo é processado no aparelho, no celular ou no iPad."
+     ],
+     "dropped": [
+      "No celular ou no iPad, use o dB Halo como medidor de decibéis em condomínios, no trânsito, em oficinas, obras ou festas. A tela do Halo indica a zona sonora enquanto o aplicativo está monitorando o ambiente. Veja a leitura atual, mínima, média, máxima e de pico, além do registro de eventos com horário e nível."
+     ],
+     "live_updated": "2026-10-26",
+     "live_version": "1.0.6",
+     "same": false
     },
     "zh-Hans": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.5",
-     "same": true
+     "added": [
+      "已针对 iPhone Duo 优化。本应用使用最新开发工具包构建,铺满整块内屏,无论折叠还是展开都会自动调整布局。",
+      "打开就知道现在多少分贝:大字实时读数,附最低、平均、最高与峰值,吵不吵一眼看懂。楼上脚步、装修施工、邻居噪音都能测,声音事件自动带时间戳记录,还能导出 PDF 报告或 CSV。",
+      "选 NIOSH 或 OSHA 标准,估算今天的噪声暴露量和还能待多久;另有 FFT 频谱、RTA 与声谱图,以及记录打鼾等夜间声音的睡眠日志。所有处理都在设备上完成,支持 iPhone、iPad 和 Apple Watch。"
+     ],
+     "dropped": [
+      "周围声音有多响?主要能量集中在哪些频段?按所选标准估算,安全时长还剩多久?dB Halo 将实时声级、专业声学分析、噪声剂量与睡眠声音记录集中在一处,所有处理均在设备端完成。支持 iPhone、iPad 和 Apple Watch。"
+     ],
+     "live_updated": "2026-10-26",
+     "live_version": "1.0.6",
+     "same": false
     },
     "zh-Hant": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.5",
-     "same": true
+     "added": [
+      "已針對 iPhone Duo 最佳化。本 App 以最新開發套件建置,填滿整個內螢幕,無論摺起或打開都會自動調整版面。",
+      "打開就知道現在幾分貝:大字即時讀值,附最低、平均、最高與峰值,吵不吵一眼看懂。樓上腳步、裝潢施工、鄰居噪音都能量,聲音事件自動附時間戳記錄,還能匯出 PDF 報告或 CSV。",
+      "選 NIOSH 或 OSHA 標準,估算今天的噪音暴露量與還能待多久;另有 FFT 頻譜、RTA 與聲譜圖,以及記錄打鼾等夜間聲音的睡眠日誌。所有處理都在裝置上完成,支援 iPhone、iPad 與 Apple Watch。"
+     ],
+     "dropped": [
+      "周遭聲音有多大?能量集中在哪些頻段?依所選標準預估,安全時長還剩多少?dB Halo 把即時聲級、聲學分析、噪音劑量與睡眠聲音紀錄整合在同一個 App,所有處理都在裝置端完成。支援 iPhone、iPad 與 Apple Watch。"
+     ],
+     "live_updated": "2026-10-26",
+     "live_version": "1.0.6",
+     "same": false
     }
    },
-   "status": "green"
+   "status": "red"
   },
   "duowallpaperstudio": {
    "blocked_terms": [],
@@ -2837,81 +3017,101 @@
     "ルミのおてんき星",
     "루미 날씨"
    ],
-   "live_updated": "2026-10-09",
-   "live_version": "1.7.7",
+   "live_updated": "2026-10-26",
+   "live_version": "1.7.8",
    "locales": {
     "de-DE": {
-     "added": [],
+     "added": [
+      "Optimiert für das iPhone Duo. Die mit dem neuesten SDK entwickelte App füllt das gesamte innere Display und passt das Layout automatisch an, egal ob zugeklappt oder aufgeklappt."
+     ],
      "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.7.7",
-     "same": true
+     "live_updated": "2026-10-26",
+     "live_version": "1.7.8",
+     "same": false
     },
     "en-GB": {
-     "added": [],
+     "added": [
+      "Optimised for iPhone Duo. Built with the latest SDK, the app fills the entire inner display and automatically adjusts its layout whether the device is folded or open."
+     ],
      "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.7.7",
-     "same": true
+     "live_updated": "2026-10-26",
+     "live_version": "1.7.8",
+     "same": false
     },
     "en-US": {
-     "added": [],
+     "added": [
+      "Optimized for iPhone Duo. Built with the latest SDK, the app fills the entire inner display and automatically adjusts its layout whether the device is folded or open."
+     ],
      "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.7.7",
-     "same": true
+     "live_updated": "2026-10-26",
+     "live_version": "1.7.8",
+     "same": false
     },
     "es-ES": {
-     "added": [],
+     "added": [
+      "Optimizada para el iPhone Duo. Creada con el SDK más reciente, la app ocupa toda la pantalla interior y ajusta su diseño automáticamente, con el dispositivo plegado o desplegado."
+     ],
      "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.7.7",
-     "same": true
+     "live_updated": "2026-10-26",
+     "live_version": "1.7.8",
+     "same": false
     },
     "fr-FR": {
-     "added": [],
+     "added": [
+      "Optimisée pour l’iPhone Duo. Conçue avec le SDK le plus récent, l’app remplit tout l’écran intérieur et adapte automatiquement sa mise en page, appareil plié ou ouvert."
+     ],
      "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.7.7",
-     "same": true
+     "live_updated": "2026-10-26",
+     "live_version": "1.7.8",
+     "same": false
     },
     "ja": {
-     "added": [],
+     "added": [
+      "iPhone Duoに最適化。最新の開発キットでビルドしており、内側のディスプレイ全体に表示され、折りたたんでも開いても自動でレイアウトが調整されます。"
+     ],
      "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.7.7",
-     "same": true
+     "live_updated": "2026-10-26",
+     "live_version": "1.7.8",
+     "same": false
     },
     "ko": {
-     "added": [],
+     "added": [
+      "iPhone Duo에 최적화되었습니다. 최신 개발 도구로 빌드되어 안쪽 디스플레이 전체를 가득 채우며, 접거나 펼쳐도 레이아웃이 자동으로 조정됩니다."
+     ],
      "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.7.7",
-     "same": true
+     "live_updated": "2026-10-26",
+     "live_version": "1.7.8",
+     "same": false
     },
     "pt-BR": {
-     "added": [],
+     "added": [
+      "Otimizado para iPhone Duo. Criado com o SDK mais recente, o app ocupa toda a tela interna e ajusta o layout automaticamente, com o aparelho dobrado ou aberto."
+     ],
      "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.7.7",
-     "same": true
+     "live_updated": "2026-10-26",
+     "live_version": "1.7.8",
+     "same": false
     },
     "zh-Hans": {
-     "added": [],
+     "added": [
+      "已针对 iPhone Duo 优化。本应用使用最新开发工具包构建,铺满整块内屏,无论折叠还是展开都会自动调整布局。"
+     ],
      "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.7.7",
-     "same": true
+     "live_updated": "2026-10-26",
+     "live_version": "1.7.8",
+     "same": false
     },
     "zh-Hant": {
-     "added": [],
+     "added": [
+      "已針對 iPhone Duo 最佳化。本 App 以最新開發套件建置,填滿整個內螢幕,無論摺起或打開都會自動調整版面。"
+     ],
      "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.7.7",
-     "same": true
+     "live_updated": "2026-10-26",
+     "live_version": "1.7.8",
+     "same": false
     }
    },
-   "status": "green"
+   "status": "red"
   },
   "maskmyfile": {
    "blocked_terms": [],
@@ -2999,81 +3199,161 @@
    "brands": [
     "Mochi"
    ],
-   "live_updated": "2026-10-09",
-   "live_version": "1.0.16",
+   "live_updated": "2026-10-26",
+   "live_version": "1.0.17",
    "locales": {
     "de-DE": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.16",
-     "same": true
+     "added": [
+      "Optimiert für das iPhone Duo. Die mit dem neuesten SDK entwickelte App füllt das gesamte innere Display und passt das Layout automatisch an, egal ob zugeklappt oder aufgeklappt.",
+      "Mochi ist die süße, gemütliche To-do-Liste, in der jede Aufgabe ein eigenes kleines Emoji bekommen kann. Tippe nach dem Erledigen auf den Kreis und genieße den kleinen Moment der Ruhe.",
+      "Wechsle zwischen 101 Designs (5 gratis, 96 mit Premium) und behalte deine Liste im Widget auf dem Home-Bildschirm und auf der Apple Watch im Blick.",
+      "Plane Studium, Arbeit, Einkäufe, Gewohnheiten und Tagesroutinen an einem liebevollen Ort."
+     ],
+     "dropped": [
+      "Mochi ist die süße, beruhigende To-do-Liste für einen besser organisierten Alltag. Notiere Aufgaben, tippe nach dem Erledigen auf den kleinen Kreis und genieße das gute Gefühl, Schritt für Schritt mehr Klarheit zu schaffen.",
+      "Nutze Mochi für Studium, Arbeit, Einkaufsliste, Tagesplanung, Gewohnheiten, Routinen, Zeitpläne, Notizen und alles, was du nicht vergessen möchtest. Wähle aus 101 liebevoll gestalteten Designs (5 gratis, 96 mit Premium), platziere hübsche Widgets auf dem Home-Bildschirm und prüfe Aufgaben auf der Apple Watch."
+     ],
+     "live_updated": "2026-10-26",
+     "live_version": "1.0.17",
+     "same": false
     },
     "en-GB": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.16",
-     "same": true
+     "added": [
+      "Optimised for iPhone Duo. Built with the latest SDK, the app fills the entire inner display and automatically adjusts its layout whether the device is folded or open.",
+      "Mochi is the cute, cosy to-do list where every task can get its own little emoji — tap the circle when you’re done and enjoy that tiny moment of calm.",
+      "Switch between 101 themes (5 free, 96 with Premium) and keep your list on a Home Screen widget and Apple Watch.",
+      "Plan study, work, shopping lists, habits, timetables and daily routines in one adorable place."
+     ],
+     "dropped": [
+      "Mochi makes everyday planning feel cute, calm and beautifully simple. Add your tasks, tap the little circle when something is done, and enjoy the gentle satisfaction of bringing order to your day.",
+      "Use Mochi for study, work, shopping lists, daily planning, habits, routines, timetables, notes and everything you want to remember. Choose from 101 carefully designed themes (5 free, 96 with Premium), add adorable widgets to your Home Screen and keep up with tasks on Apple Watch."
+     ],
+     "live_updated": "2026-10-26",
+     "live_version": "1.0.17",
+     "same": false
     },
     "en-US": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.16",
-     "same": true
+     "added": [
+      "Optimized for iPhone Duo. Built with the latest SDK, the app fills the entire inner display and automatically adjusts its layout whether the device is folded or open.",
+      "Mochi is the cute, cozy to-do list where every task can get its own little emoji — tap the circle when you’re done and enjoy that tiny burst of calm.",
+      "Switch between 101 themes (5 free, 96 with Premium) and keep your list on a Home Screen widget and Apple Watch.",
+      "Plan school, work, errands, groceries, habits and daily routines in one adorable place."
+     ],
+     "dropped": [
+      "Mochi is the cute, cozy to-do list that makes getting organized feel good. Add tasks, tap the little circle when you finish, and enjoy the tiny burst of calm that comes from checking something off.",
+      "Plan school, work, errands, groceries, habits, routines, schedules, notes and daily goals in one adorable place. Customize your checklist with 101 beautifully crafted themes (5 free, 96 with Premium), keep important tasks on your Home Screen with widgets, and check your list from Apple Watch."
+     ],
+     "live_updated": "2026-10-26",
+     "live_version": "1.0.17",
+     "same": false
     },
     "es-ES": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.16",
-     "same": true
+     "added": [
+      "Optimizada para el iPhone Duo. Creada con el SDK más reciente, la app ocupa toda la pantalla interior y ajusta su diseño automáticamente, con el dispositivo plegado o desplegado.",
+      "Mochi es la lista de tareas mona y tranquila en la que cada tarea puede llevar su propio emoji. Toca el circulito al terminar y disfruta de ese pequeño momento de calma.",
+      "Cambia entre 101 temas (5 gratis, 96 con Premium) y ten tu lista siempre a mano en un widget de la pantalla de inicio y en el Apple Watch.",
+      "Organiza estudios, trabajo, la compra, hábitos y rutinas diarias en un solo lugar adorable."
+     ],
+     "dropped": [
+      "Mochi convierte tu lista de tareas en un espacio bonito, tranquilo y fácil de usar. Añade lo que quieres hacer, toca el circulito cuando lo termines y disfruta de esa sensación de ver el día cada vez más ordenado.",
+      "Úsalo para estudiar, trabajar, hacer la compra, planificar el día, seguir hábitos, rutinas, horarios, notas y todas esas pequeñas cosas que no quieres olvidar. Elige entre 101 temas cuidados (5 gratis, 96 con Premium), coloca widgets adorables en la pantalla de inicio y consulta tus tareas desde el Apple Watch."
+     ],
+     "live_updated": "2026-10-26",
+     "live_version": "1.0.17",
+     "same": false
     },
     "fr-FR": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.16",
-     "same": true
+     "added": [
+      "Optimisée pour l’iPhone Duo. Conçue avec le SDK le plus récent, l’app remplit tout l’écran intérieur et adapte automatiquement sa mise en page, appareil plié ou ouvert.",
+      "Mochi, c’est la liste de tâches mignonne et apaisante où chaque tâche peut avoir son petit emoji. Touche le cercle quand c’est fait et savoure ce petit moment de calme.",
+      "Choisis parmi 101 thèmes (5 gratuits, 96 avec Premium) et garde ta liste sous les yeux grâce au widget de l’écran d’accueil et à l’Apple Watch.",
+      "Études, travail, courses, habitudes et routines du quotidien : tout s’organise au même endroit."
+     ],
+     "dropped": [
+      "Mochi transforme ta liste de tâches en un espace doux, mignon et vraiment agréable à utiliser. Ajoute ce que tu veux faire, touche le petit cercle quand c’est terminé et savoure le plaisir simple de voir ta journée s’alléger.",
+      "Parfait pour les études, le travail, les courses, le planning quotidien, les habitudes, les routines, les notes, l’emploi du temps et toutes les petites choses à ne pas oublier. Personnalise l’app avec 101 thèmes soignés (5 gratuits, 96 avec Premium), installe des widgets adorables et retrouve tes tâches sur Apple Watch."
+     ],
+     "live_updated": "2026-10-26",
+     "live_version": "1.0.17",
+     "same": false
     },
     "ja": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.16",
-     "same": true
+     "added": [
+      "iPhone Duoに最適化。最新の開発キットでビルドしており、内側のディスプレイ全体に表示され、折りたたんでも開いても自動でレイアウトが調整されます。",
+      "Mochiは、タスクごとに小さな絵文字を添えられる、かわいくてやさしいToDoリストです。終わったら小さな丸をタップ。チェックするたびに、気持ちがふわっと軽くなります。",
+      "101種類のテーマ(5種類は無料、96種類はプレミアム)で気分に合わせて着せ替え。ホーム画面のウィジェットやApple Watchで、やることをいつでも確認できます。",
+      "勉強、仕事、買い物リスト、習慣、毎日のルーティンまで、ひとつのアプリでかわいく整理。"
+     ],
+     "dropped": [
+      "Mochiは、毎日のやることをかわいく、やさしく整えるToDoリストアプリです。タスクを書いて、終わったら小さな丸をタップ。ひとつずつチェックするたびに、気持ちまでふわっと軽くなります。",
+      "勉強、仕事、買い物リスト、今日の予定、習慣づけ、ルーティン、スケジュール、メモ、日々の小さな用事まで、ぜんぶかわいく管理。101種類のきれいなテーマ(5種類は無料、96種類はプレミアム)、ホーム画面のキュートなウィジェット、Apple Watch対応で、いつでもやることを確認できます。"
+     ],
+     "live_updated": "2026-10-26",
+     "live_version": "1.0.17",
+     "same": false
     },
     "ko": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.16",
-     "same": true
+     "added": [
+      "iPhone Duo에 최적화되었습니다. 최신 개발 도구로 빌드되어 안쪽 디스플레이 전체를 가득 채우며, 접거나 펼쳐도 레이아웃이 자동으로 조정됩니다.",
+      "Mochi는 할 일마다 작은 이모지를 붙일 수 있는 귀엽고 포근한 투두리스트예요. 끝나면 작은 동그라미를 탭하고, 체크할 때마다 하루가 조금씩 가벼워지는 걸 느껴 보세요.",
+      "101가지 테마(5가지는 무료, 96가지는 프리미엄)로 바꿔 가며 쓰고, 홈 화면 위젯과 Apple Watch에서 할 일을 바로 확인하세요.",
+      "공부, 업무, 장보기, 습관, 하루 루틴까지 한 곳에서 귀엽게 정리할 수 있어요."
+     ],
+     "dropped": [
+      "Mochi는 매일의 할 일을 귀엽고 포근하게 정리해 주는 체크리스트 앱입니다. 할 일을 적고, 끝나면 작은 동그라미를 탭하세요. 하나씩 체크할 때마다 하루가 조금 더 가벼워집니다.",
+      "공부, 업무, 장보기, 데일리 플래너, 습관 만들기, 루틴, 일정, 메모와 잊기 쉬운 작은 일까지 Mochi에서 예쁘게 관리할 수 있어요. 101가지 감성 테마(5가지는 무료, 96가지는 프리미엄), 홈 화면 위젯, Apple Watch 지원으로 언제 어디서나 할 일을 확인하세요."
+     ],
+     "live_updated": "2026-10-26",
+     "live_version": "1.0.17",
+     "same": false
     },
     "pt-BR": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.16",
-     "same": true
+     "added": [
+      "Otimizado para iPhone Duo. Criado com o SDK mais recente, o app ocupa toda a tela interna e ajusta o layout automaticamente, com o aparelho dobrado ou aberto.",
+      "Mochi é a lista de tarefas fofa e tranquila em que cada tarefa pode ganhar um emoji. Toque no círculo quando concluir e sinta aquela satisfação leve a cada item marcado.",
+      "Troque entre 101 temas (5 grátis, 96 com Premium) e deixe sua lista à mão no widget da Tela de Início e no Apple Watch.",
+      "Organize estudos, trabalho, lista de compras, hábitos e rotina diária em um só lugar fofo."
+     ],
+     "dropped": [
+      "Mochi deixa sua lista de tarefas mais fofa, calma e gostosa de usar. Anote o que precisa fazer, toque no pequeno círculo quando concluir e sinta a satisfação leve de ver o dia ficando em ordem.",
+      "Use para estudos, trabalho, lista de compras, planejamento diário, hábitos, rotina, agenda, horários, notas e tudo o que você não quer esquecer. Escolha entre 101 temas lindos (5 grátis, 96 com Premium), coloque widgets fofos na Tela de Início e acompanhe as tarefas pelo Apple Watch."
+     ],
+     "live_updated": "2026-10-26",
+     "live_version": "1.0.17",
+     "same": false
     },
     "zh-Hans": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.16",
-     "same": true
+     "added": [
+      "已针对 iPhone Duo 优化。本应用使用最新开发工具包构建,铺满整块内屏,无论折叠还是展开都会自动调整布局。",
+      "Mochi 是可爱又暖心的待办清单:写下任务,每一项都能配上小表情,完成时轻点小圆圈打勾,每次完成都有小小的成就感。",
+      "101 款主题外观(5 款免费、96 款需高级版)随心换,清单还能放上主屏幕小组件和 Apple Watch。",
+      "学习、工作、购物清单、每日计划、习惯打卡和行程,都能用清晰又可爱的方式整理。"
+     ],
+     "dropped": [
+      "Mochi 是一款可爱又治愈的待办清单 App,让每天的计划变得更轻松、更有仪式感。写下任务,轻点小圆圈完成打勾,看着清单一点点变短,获得柔软又真实的成就感。",
+      "你可以用 Mochi 安排学习、工作、购物清单、每日计划、习惯打卡、课程表、行程、笔记和日常惯例。101 款精美主题外观(5 款免费、96 款需高级版),让你的任务列表像手帐一样好看;可爱桌面小组件和 Apple Watch App,则让重要事项随时在眼前。"
+     ],
+     "live_updated": "2026-10-26",
+     "live_version": "1.0.17",
+     "same": false
     },
     "zh-Hant": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.16",
-     "same": true
+     "added": [
+      "已針對 iPhone Duo 最佳化。本 App 以最新開發套件建置,填滿整個內螢幕,無論摺起或打開都會自動調整版面。",
+      "Mochi 是可愛又暖心的待辦清單:寫下任務,每一項都能配上小表情,完成時輕點小圓圈打勾,每次完成都有小小的成就感。",
+      "101 款主題外觀(5 款免費、96 款需進階版)隨心換,清單還能放上主畫面小工具與 Apple Watch。",
+      "讀書、工作、購物清單、每日計畫、習慣與行程,都能用清楚又可愛的方式整理。"
+     ],
+     "dropped": [
+      "Mochi 是一款可愛又療癒的待辦清單 App,讓安排生活不再只是壓力,而是一件有質感的小事。寫下任務,輕點小圓圈完成打勾,讓每一次完成都帶來舒服的成就感。",
+      "不論是讀書、工作、購物清單、每日計畫、習慣追蹤、行程、課表、筆記或日常慣例,Mochi 都能用清楚又可愛的方式陪你整理。101 款精美主題外觀(5 款免費、96 款需進階版)、桌面小工具與 Apple Watch App,讓重要事項隨時可見,也讓你的清單更有個人風格。"
+     ],
+     "live_updated": "2026-10-26",
+     "live_version": "1.0.17",
+     "same": false
     }
    },
-   "status": "green"
+   "status": "red"
   },
   "mochidonestamp": {
    "blocked_terms": [],
@@ -3242,81 +3522,155 @@
    "brands": [
     "100 Notes Studio"
    ],
-   "live_updated": "2026-10-12",
-   "live_version": "1.0.8",
+   "live_updated": "2026-10-26",
+   "live_version": "1.0.9",
    "locales": {
     "de-DE": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-12",
-     "live_version": "1.0.8",
-     "same": true
+     "added": [
+      "Optimiert für das iPhone Duo. Die mit dem neuesten SDK entwickelte App füllt das gesamte innere Display und passt das Layout automatisch an, egal ob zugeklappt oder aufgeklappt.",
+      "Handschriftliche Notizen wie mit Stift auf Papier: 29 Stifte und Pinsel, vom Füller und Bleistift bis zum Kalligrafiepinsel und Aquarell – und Ihre Handschrift ist später durchsuchbar.",
+      "Markieren Sie Vorlesungs-PDFs, nehmen Sie Audio direkt auf der Seite auf, auf der Sie schreiben, und wiederholen Sie mit Karteikarten und verteilter Wiederholung.",
+      "Wählen Sie aus 100 Notizbuch-Stilen. Die Kernbearbeitung funktioniert offline."
+     ],
+     "dropped": [
+      "Eine App statt fünf. 100 Notes Studio ist ein privates Offline-Studio für Stift und Papier auf Tablet und Smartphone. Schreiben Sie von Hand, tippen Sie, kommentieren Sie PDFs, hängen Sie Aufnahmen an Seiten und lernen Sie an einem Ort."
+     ],
+     "live_updated": "2026-10-26",
+     "live_version": "1.0.9",
+     "same": false
     },
     "en-GB": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-12",
-     "live_version": "1.0.8",
-     "same": true
+     "added": [
+      "Optimised for iPhone Duo. Built with the latest SDK, the app fills the entire inner display and automatically adjusts its layout whether the device is folded or open.",
+      "Handwrite notes that feel like pen on paper: 29 pens and brushes, from fountain pen and pencil to fude brush and watercolour, and your handwriting is searchable later.",
+      "Mark up lecture PDFs, record audio right on the page you are writing, then revise with flashcards and spaced repetition.",
+      "Choose from 100 notebook styles. Core editing works offline."
+     ],
+     "dropped": [
+      "100 Notes Studio is a private, offline workspace for handwriting, typed notes, PDF markup, page-attached audio recordings and revision."
+     ],
+     "live_updated": "2026-10-26",
+     "live_version": "1.0.9",
+     "same": false
     },
     "en-US": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-12",
-     "live_version": "1.0.8",
-     "same": true
+     "added": [
+      "Optimized for iPhone Duo. Built with the latest SDK, the app fills the entire inner display and automatically adjusts its layout whether the device is folded or open.",
+      "Handwrite notes that feel like pen on paper: 29 pens and brushes, from fountain pen and pencil to fude brush and watercolor, and your handwriting is searchable later.",
+      "Mark up lecture PDFs, record audio right on the page you are writing, then review with flashcards and spaced repetition.",
+      "Choose from 100 notebook styles. Core editing works offline."
+     ],
+     "dropped": [
+      "100 Notes Studio is a private, offline workspace for handwriting, typed notes, PDF markup, page-attached audio recordings and study."
+     ],
+     "live_updated": "2026-10-26",
+     "live_version": "1.0.9",
+     "same": false
     },
     "es-ES": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-12",
-     "live_version": "1.0.8",
-     "same": true
+     "added": [
+      "Optimizada para el iPhone Duo. Creada con el SDK más reciente, la app ocupa toda la pantalla interior y ajusta su diseño automáticamente, con el dispositivo plegado o desplegado.",
+      "Escribe a mano como con boli y papel: 29 plumas y pinceles, desde la estilográfica y el lápiz hasta el pincel de caligrafía y la acuarela, y luego puedes buscar en tu propia letra.",
+      "Subraya y anota los PDF de clase, graba audio en la misma página en la que escribes y repasa con fichas y repetición espaciada.",
+      "Elige entre 100 estilos de cuaderno. La edición básica funciona sin conexión."
+     ],
+     "dropped": [
+      "100 Notes Studio reúne escritura a mano, texto con formato, anotación de PDF, audio por página y herramientas de estudio en un espacio privado que funciona sin conexión. La interfaz está adaptada para tabletas y móviles, con escritura fluida mediante un lápiz digital compatible."
+     ],
+     "live_updated": "2026-10-26",
+     "live_version": "1.0.9",
+     "same": false
     },
     "fr-FR": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-12",
-     "live_version": "1.0.8",
-     "same": true
+     "added": [
+      "Optimisée pour l’iPhone Duo. Conçue avec le SDK le plus récent, l’app remplit tout l’écran intérieur et adapte automatiquement sa mise en page, appareil plié ou ouvert.",
+      "Écrivez à la main comme avec un stylo sur du papier : 29 stylos et pinceaux, du stylo-plume et du crayon au pinceau de calligraphie et à l'aquarelle, et vous pouvez ensuite rechercher dans votre écriture manuscrite.",
+      "Annotez les PDF de vos cours, enregistrez l'audio sur la page même où vous écrivez, puis révisez avec des cartes de révision et la répétition espacée.",
+      "Choisissez parmi 100 styles de carnet. L'édition de base fonctionne hors ligne."
+     ],
+     "dropped": [
+      "Une seule app au lieu d'en jongler avec cinq. 100 Notes Studio est un atelier papier-crayon privé et entièrement hors ligne pour tablette et téléphone, compatible avec les stylets. Écrivez à la main, tapez au clavier, annotez vos PDF, joignez un enregistrement à sa page et révisez au même endroit."
+     ],
+     "live_updated": "2026-10-26",
+     "live_version": "1.0.9",
+     "same": false
     },
     "ja": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-12",
-     "live_version": "1.0.8",
-     "same": true
+     "added": [
+      "iPhone Duoに最適化。最新の開発キットでビルドしており、内側のディスプレイ全体に表示され、折りたたんでも開いても自動でレイアウトが調整されます。",
+      "紙にペンで書くような手書きノート。万年筆や鉛筆から筆ペン、水彩まで29種類のペンとブラシがあり、手書きの文字もあとから検索できます。",
+      "講義のPDFに直接書き込み、書いているページにそのまま録音を残して、単語カードと間隔反復で復習できます。",
+      "ノートのスタイルは100種類。主な編集機能はオフラインでも使えます。"
+     ],
+     "dropped": [
+      "手書き、キーボード入力、PDFへの書き込み、ページに残す録音、暗記学習を、整理されたオフライン環境にまとめられます。100 Notes Studioはタブレットとスマートフォンの両方に合わせて設計されています。"
+     ],
+     "live_updated": "2026-10-26",
+     "live_version": "1.0.9",
+     "same": false
     },
     "ko": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-12",
-     "live_version": "1.0.8",
-     "same": true
+     "added": [
+      "iPhone Duo에 최적화되었습니다. 최신 개발 도구로 빌드되어 안쪽 디스플레이 전체를 가득 채우며, 접거나 펼쳐도 레이아웃이 자동으로 조정됩니다.",
+      "종이에 펜으로 쓰듯 손글씨로 필기하세요. 만년필과 연필부터 붓펜, 수채화까지 29가지 펜과 브러시가 있고, 손글씨도 나중에 검색할 수 있습니다.",
+      "강의 PDF에 바로 필기하고, 지금 쓰는 페이지에 녹음을 남긴 뒤, 플래시카드와 간격 반복으로 복습하세요.",
+      "노트 스타일은 100가지. 주요 편집 기능은 오프라인에서도 쓸 수 있습니다."
+     ],
+     "dropped": [
+      "100 Notes Studio는 손글씨, 타이핑, PDF 학습과 자료 정리를 한 흐름으로 묶은 개인용 작업 공간입니다. 주요 편집 기능은 네트워크 연결 없이도 사용할 수 있습니다."
+     ],
+     "live_updated": "2026-10-26",
+     "live_version": "1.0.9",
+     "same": false
     },
     "pt-BR": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-12",
-     "live_version": "1.0.8",
-     "same": true
+     "added": [
+      "Otimizado para iPhone Duo. Criado com o SDK mais recente, o app ocupa toda a tela interna e ajusta o layout automaticamente, com o aparelho dobrado ou aberto.",
+      "Escreva à mão como caneta no papel: 29 canetas e pincéis, da caneta-tinteiro e do lápis ao pincel de caligrafia e à aquarela, e depois dá para buscar na sua própria letra.",
+      "Marque os PDFs das aulas, grave áudio direto na página em que você está escrevendo e revise com flashcards e repetição espaçada.",
+      "Escolha entre 100 estilos de caderno. A edição principal funciona offline."
+     ],
+     "dropped": [
+      "O 100 Notes Studio reúne escrita à mão, digitação, marcação de PDF e ferramentas de estudo em um espaço privado que funciona offline. Crie cadernos, escreva com liberdade e encontre o conteúdo de que precisa sem interromper o fluxo."
+     ],
+     "live_updated": "2026-10-26",
+     "live_version": "1.0.9",
+     "same": false
     },
     "zh-Hans": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-12",
-     "live_version": "1.0.8",
-     "same": true
+     "added": [
+      "已针对 iPhone Duo 优化。本应用使用最新开发工具包构建,铺满整块内屏,无论折叠还是展开都会自动调整布局。",
+      "像在纸上一样手写笔记:钢笔、铅笔、毛笔、水彩等 29 种笔刷,手写的字之后还能直接搜索。",
+      "课件 PDF 直接划重点、写批注;上课录音存在同一页,复习时回到那一页就能听到。",
+      "再用闪卡与间隔重复排程复习;另有 100 款笔记本风格,核心编辑离线也能用。",
+      "100 Notes Studio 适合日常书写、资料整理与学习复习。"
+     ],
+     "dropped": [
+      "把手写、键入、PDF 阅读批注、页面录音和学习复习集中到一个安静的工作空间。100 Notes Studio 以平板体验为主,也为手机提供完整流程;核心编辑无需联网即可使用。",
+      "100 Notes Studio: Pen & Paper 适合日常书写、资料整理与学习复习。"
+     ],
+     "live_updated": "2026-10-26",
+     "live_version": "1.0.9",
+     "same": false
     },
     "zh-Hant": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-12",
-     "live_version": "1.0.8",
-     "same": true
+     "added": [
+      "已針對 iPhone Duo 最佳化。本 App 以最新開發套件建置,填滿整個內螢幕,無論摺起或打開都會自動調整版面。",
+      "像在紙上一樣手寫筆記:鋼筆、鉛筆、毛筆、水彩等 29 種筆刷,手寫的字之後還能直接搜尋。",
+      "講義 PDF 直接畫重點、寫註記;上課錄音存在同一頁,複習時回到那一頁就聽得到。",
+      "再用抽認卡與間隔重複排程複習;另有 100 款筆記本風格,核心編輯離線也能用。",
+      "100 Notes Studio 適合日常書寫、資料整理與學習複習。"
+     ],
+     "dropped": [
+      "把手寫、鍵入、PDF 閱讀標註、頁面錄音與學習複習整合到一個安靜的工作空間。100 Notes Studio 以平板體驗為主,也為手機提供完整流程;核心編輯不需連網即可使用。",
+      "100 Notes Studio: Pen & Paper 適合日常書寫、資料整理與學習複習。"
+     ],
+     "live_updated": "2026-10-26",
+     "live_version": "1.0.9",
+     "same": false
     }
    },
-   "status": "green"
+   "status": "red"
   },
   "onepageppt": {
    "blocked_terms": [],
@@ -3424,11 +3778,20 @@
      "same": false
     },
     "en-GB": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.13",
-     "same": true
+     "added": [
+      "Optimised for iPhone Duo. Built with the latest SDK, the app fills the entire inner display and automatically adjusts its layout whether the device is folded or open.",
+      "Steal the Look: pick any photo you love, and PhotoCream Pro reads its colours on your device and turns them into an editable film grade you can apply to your own shots.",
+      "Plus 100+ film looks — grain, halation, light leaks and vignette — previewed live before you shoot.",
+      "Fine-tune with curves, HSL and split toning, and smooth skin while eyes and hair stay sharp. Everything stays on your device.",
+      "Also: enlarge eyes, lengthen the body naturally, and add text, frames, grain, dust or a date stamp just like on classic film prints.",
+      "A one-time in-app unlock removes the watermark and opens every premium pack. No subscription, no ads, and your photos are never uploaded."
+     ],
+     "dropped": [
+      "PhotoCream Pro turns your phone into a film camera: watch grain, halation and light leaks appear live before you press the shutter. Choose from 100+ authentic film looks, copy the colours of any photo, retouch skin and fine-tune light, colour and curves in a full editor. Everything runs on your device, with no subscription and no ads, and your photos are never uploaded. Plus face slimming, eye enlargement, body lengthening and a date stamp just like on classic film prints."
+     ],
+     "live_updated": "2026-10-25",
+     "live_version": "1.0.14",
+     "same": false
     },
     "en-US": {
      "added": [
@@ -3447,11 +3810,20 @@
      "same": false
     },
     "es-ES": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.13",
-     "same": true
+     "added": [
+      "Optimizada para el iPhone Duo. Creada con el SDK más reciente, la app ocupa toda la pantalla interior y ajusta su diseño automáticamente, con el dispositivo plegado o desplegado.",
+      "Roba el estilo: elige cualquier foto que te encante y PhotoCream Pro analiza sus colores en tu dispositivo y los convierte en un etalonaje de carrete editable para aplicarlo a tus fotos.",
+      "Además, más de 100 looks de carrete con grano, halo, fugas de luz y viñeteado, en vista previa en directo antes de disparar.",
+      "Afina con curvas, HSL y virado dividido, y suaviza la piel mientras ojos y pelo siguen nítidos. Todo se queda en tu dispositivo.",
+      "Y también: agrandar los ojos, estilizar la silueta de forma natural y añadir texto, marcos, grano, polvo o fecha como en las fotos de carrete clásicas.",
+      "Un desbloqueo único dentro de la app quita la marca de agua y abre todos los paquetes premium. Sin suscripción, sin anuncios y tus fotos no se suben a ningún sitio."
+     ],
+     "dropped": [
+      "PhotoCream Pro convierte tu móvil en una cámara analógica: mira el grano, el halo y las fugas de luz en directo, antes de disparar. Más de 100 looks de carrete, copia de los colores de cualquier foto, retoque de piel y un editor completo de luz, color y curvas. Todo ocurre en tu dispositivo: sin suscripción, sin anuncios y tus fotos no se suben a ningún sitio."
+     ],
+     "live_updated": "2026-10-25",
+     "live_version": "1.0.14",
+     "same": false
     },
     "fr-FR": {
      "added": [
@@ -3522,11 +3894,20 @@
      "same": false
     },
     "zh-Hans": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.13",
-     "same": true
+     "added": [
+      "已针对 iPhone Duo 优化。本应用使用最新开发工具包构建,铺满整块内屏,无论折叠还是展开都会自动调整布局。",
+      "「偷取风格」:选一张你喜欢的照片,PhotoCream Pro 会在手机上分析它的色调,做成可以微调的胶片调色,一键套用到你的照片上。",
+      "还有超过 100 种胶片风格:颗粒、光晕、漏光、暗角,按下快门前就能实时预览成品。",
+      "拍完再用曲线、HSL、分离色调细修,柔肤时眼神与发丝依然清晰。全部在设备上完成,照片不上传。",
+      "支持 44 种语言,可在应用内实时切换界面语言"
+     ],
+     "dropped": [
+      "PhotoCream Pro 把你的手机变成一台高级感胶片相机,同时也是一间随身的专业修图工作室。不用扛着老相机、不用花时间等冲扫,打开应用就能实时拍出地道的胶片氛围,拍完再细细调整每一个细节——全部在设备上完成,无订阅、无广告。",
+      "支持 22 种语言,可在应用内实时切换界面语言"
+     ],
+     "live_updated": "2026-10-25",
+     "live_version": "1.0.14",
+     "same": false
     },
     "zh-Hant": {
      "added": [
@@ -3792,85 +4173,203 @@
    "status": "green"
   },
   "scanto": {
-   "blocked_terms": [],
+   "blocked_terms": [
+    "33の表示言語に対応(自動判定/手動切替)。"
+   ],
    "brands": [
     "ScanTo Pro"
    ],
-   "live_updated": "2026-10-09",
-   "live_version": "1.2.8",
+   "live_updated": "2026-10-26",
+   "live_version": "1.2.9",
    "locales": {
     "de-DE": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.2.8",
-     "same": true
+     "added": [
+      "Optimiert für das iPhone Duo. Die mit dem neuesten SDK entwickelte App füllt das gesamte innere Display und passt das Layout automatisch an, egal ob zugeklappt oder aufgeklappt.",
+      "Scanne Verträge, Belege und Ausweise als gestochen scharfe PDFs – und finde jedes Dokument später, indem du ein einziges Wort aus dem Inhalt eintippst.",
+      "Die Texterkennung (OCR) auf dem Gerät liest jeden Scan und sortiert ihn automatisch in Belege, IDs, Karten und Verträge – nie wieder nach Dateinamen suchen.",
+      "Alles funktioniert offline: Nichts wird hochgeladen, kein Konto, auch im Flugmodus. Sperre die App mit Face ID und exportiere passwortgeschützte PDFs.",
+      "Lade die App kostenlos und teste 3 Scans gratis (kostenlose Exporte tragen ein Wasserzeichen). Ein einziger Einmalkauf schaltet unbegrenztes Scannen frei, entfernt das Wasserzeichen dauerhaft und öffnet jeden erweiterten Export – OCR-Textexport, passwortgeschützte PDFs und das ID-Karten-Layout. Kein Abo, keine Werbung, keine Testphase, die heimlich zur Zahlung wird.",
+      "Jetzt in 44 Sprachen – automatisch erkannt oder jederzeit umschaltbar."
+     ],
+     "dropped": [
+      "Der Scanner, der alles auf deinem Gerät erledigt – auch das Lesen des Textes – und das beweist, indem er nie online geht.",
+      "ScanTo Pro verwandelt Papier in Sekunden in saubere, gestochen scharfe PDFs: Verträge, Quittungen, Formulare, Ausweise, Notizen. Dann tut er, was kaum ein anderer Scanner ohne Abo oder Cloud kann – er liest den Text in deinen Dokumenten, direkt auf dem iPhone, damit du sie später durchsuchen kannst.",
+      "Lade kostenlos und teste deinen ersten Scan gratis. Ein einziger Einmalkauf schaltet unbegrenztes Scannen frei, entfernt das Wasserzeichen dauerhaft und öffnet jeden erweiterten Export – OCR-Textexport, passwortgeschützte PDFs und das ID-Karten-Layout. Kein Abo, keine Werbung, keine Testphase, die heimlich zur Zahlung wird.",
+      "Jetzt in 33 Sprachen – automatisch erkannt oder jederzeit umschaltbar."
+     ],
+     "live_updated": "2026-10-26",
+     "live_version": "1.2.9",
+     "same": false
     },
     "en-GB": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.2.8",
-     "same": true
+     "added": [
+      "Optimised for iPhone Duo. Built with the latest SDK, the app fills the entire inner display and automatically adjusts its layout whether the device is folded or open.",
+      "Scan contracts, receipts and IDs into crisp PDFs — then find any of them later by typing one word from inside the document.",
+      "On-device text recognition (OCR) reads every scan and auto-sorts it into Receipts, IDs, Cards and Contracts, so you never hunt by file name again.",
+      "It all works offline: nothing is uploaded, no account, same in Aeroplane Mode. Lock the app with Face ID; the one-off unlock adds password-protected PDFs.",
+      "3 free scans to try; a one-off purchase unlocks unlimited scans, removes the watermark and adds advanced exports — no subscription"
+     ],
+     "dropped": [
+      "A document scanner that keeps everything on your device — even OCR.",
+      "ScanTo Pro turns paper into crisp, tidy PDFs in seconds: receipts, contracts, forms, IDs and notes. On-device text recognition reads each scan so you can search what’s inside later.",
+      "One-off purchase, no subscription"
+     ],
+     "live_updated": "2026-10-26",
+     "live_version": "1.2.9",
+     "same": false
     },
     "en-US": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.2.8",
-     "same": true
+     "added": [
+      "Optimized for iPhone Duo. Built with the latest SDK, the app fills the entire inner display and automatically adjusts its layout whether the device is folded or open.",
+      "Scan contracts, receipts and IDs into crisp PDFs — then find any of them later by typing one word from inside the document.",
+      "On-device text recognition (OCR) reads every scan and auto-sorts it into Receipts, IDs, Cards and Contracts, so you never hunt by file name again.",
+      "It all works offline: nothing is uploaded, no account, same in airplane mode. Lock the app with Face ID and export password-protected PDFs.",
+      "Download free and try 3 scans on us (free exports carry a watermark). A single one-time purchase unlocks unlimited scanning, removes the watermark for good and opens every advanced export — OCR text export, password-encrypted PDFs and the ID-card layout. No subscription, no ads, no trial that quietly starts charging.",
+      "Now available in 44 languages — auto-detected, or switch any time.",
+      "Built for lawyers, accountants, freelancers, founders, students — anyone who scans something they'd rather not hand to someone else's server."
+     ],
+     "dropped": [
+      "The scanner that does everything on your device — including reading the text — and proves it by never going online.",
+      "ScanTo Pro turns paper into clean, crisp PDFs in seconds: contracts, receipts, forms, IDs, notes. Then it does what almost no other scanner does without a subscription or the cloud — it reads the text inside your documents, on your iPhone, so you can search them later.",
+      "Download free and try your first scan on us. A single one-time purchase unlocks unlimited scanning, removes the watermark for good and opens every advanced export — OCR text export, password-encrypted PDFs and the ID-card layout. No subscription, no ads, no trial that quietly starts charging.",
+      "Now available in 33 languages — auto-detected, or switch any time.",
+      "Built for lawyers, doctors, accountants, founders, students — anyone who scans something they'd rather not hand to someone else's server."
+     ],
+     "live_updated": "2026-10-26",
+     "live_version": "1.2.9",
+     "same": false
     },
     "es-ES": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.2.8",
-     "same": true
+     "added": [
+      "Optimizada para el iPhone Duo. Creada con el SDK más reciente, la app ocupa toda la pantalla interior y ajusta su diseño automáticamente, con el dispositivo plegado o desplegado.",
+      "Escanea contratos, recibos y documentos de identidad en PDF nítidos y, después, encuentra cualquiera escribiendo una sola palabra de su contenido.",
+      "El reconocimiento de texto (OCR) en el dispositivo lee cada escaneo y lo clasifica automáticamente en Recibos, Identificaciones, Tarjetas y Contratos: se acabó buscar por nombre de archivo.",
+      "Todo funciona sin conexión: no se sube nada, sin cuenta, igual en modo avión. Bloquea la app con Face ID y exporta PDF protegidos con contraseña.",
+      "Descarga gratis y prueba 3 escaneos sin coste (las exportaciones gratuitas llevan marca de agua). Una sola compra única desbloquea el escaneo ilimitado, quita la marca de agua para siempre y abre todos los exports avanzados — exportar texto OCR, PDF cifrados y el formato de identificación. Sin suscripción, sin anuncios, sin prueba que empieza a cobrar a escondidas.",
+      "Ahora en 44 idiomas de interfaz – detectados automáticamente o a tu elección."
+     ],
+     "dropped": [
+      "El escáner que lo hace todo en tu dispositivo – incluido leer el texto – y lo demuestra no conectándose nunca.",
+      "ScanTo Pro convierte el papel en PDF limpios y nítidos en segundos: contratos, recibos, formularios, documentos, notas. Luego hace lo que casi ningún otro escáner hace sin suscripción ni nube – lee el texto de tus documentos, en tu iPhone, para que puedas buscarlos después.",
+      "Descarga gratis y prueba tu primer escaneo gratis. Una sola compra única desbloquea el escaneo ilimitado, quita la marca de agua para siempre y abre todos los exports avanzados — exportar texto OCR, PDF cifrados y el formato de identificación. Sin suscripción, sin anuncios, sin prueba que empieza a cobrar a escondidas.",
+      "Ahora en 33 idiomas de interfaz – detectados automáticamente o a tu elección."
+     ],
+     "live_updated": "2026-10-26",
+     "live_version": "1.2.9",
+     "same": false
     },
     "fr-FR": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.2.8",
-     "same": true
+     "added": [
+      "Optimisée pour l’iPhone Duo. Conçue avec le SDK le plus récent, l’app remplit tout l’écran intérieur et adapte automatiquement sa mise en page, appareil plié ou ouvert.",
+      "Numérisez contrats, reçus et pièces d’identité en PDF nets, puis retrouvez n’importe lequel en tapant un seul mot de son contenu.",
+      "La reconnaissance de texte (OCR) sur l’appareil lit chaque scan et le classe automatiquement dans Reçus, Identifiants, Cartes et Contrats : fini les recherches par nom de fichier.",
+      "Tout fonctionne hors ligne : rien n’est envoyé, aucun compte, même en mode Avion. Verrouillez l’app avec Face ID et exportez des PDF protégés par mot de passe.",
+      "Téléchargez gratuitement et essayez 3 numérisations offertes (les exports gratuits portent un filigrane). Un seul achat unique débloque la numérisation illimitée, retire le filigrane définitivement et ouvre tous les exports avancés — export de texte OCR, PDF chiffrés et format carte d'identité. Sans abonnement, sans publicité, sans essai qui se transforme en paiement.",
+      "Désormais en 44 langues d'interface – détectées automatiquement ou au choix."
+     ],
+     "dropped": [
+      "Le scanner qui fait tout sur votre appareil – y compris lire le texte – et le prouve en ne se connectant jamais.",
+      "ScanTo Pro transforme le papier en PDF nets et propres en quelques secondes : contrats, reçus, formulaires, pièces d'identité, notes. Puis il fait ce que presque aucun autre scanner ne fait sans abonnement ni cloud – il lit le texte de vos documents, sur votre iPhone, pour que vous puissiez les rechercher ensuite.",
+      "Téléchargez gratuitement et essayez votre premier scan offert. Un seul achat unique débloque la numérisation illimitée, retire le filigrane définitivement et ouvre tous les exports avancés — export de texte OCR, PDF chiffrés et format carte d'identité. Sans abonnement, sans publicité, sans essai qui se transforme en paiement.",
+      "Désormais en 33 langues d'interface – détectées automatiquement ou au choix."
+     ],
+     "live_updated": "2026-10-26",
+     "live_version": "1.2.9",
+     "same": false
     },
     "ja": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.2.8",
-     "same": true
+     "added": [
+      "iPhone Duoに最適化。最新の開発キットでビルドしており、内側のディスプレイ全体に表示され、折りたたんでも開いても自動でレイアウトが調整されます。",
+      "契約書・レシート・身分証を鮮明なPDFにスキャン。あとから中身の単語をひとつ入力するだけで、その書類が見つかります。",
+      "端末内の文字認識(OCR)がスキャンごとに文字を読み取り、レシート・証明書・名刺・契約書に自動で分類。ファイル名で探す必要はありません。",
+      "すべてオフラインで完結:アップロードなし、アカウント不要、機内モードでも同じように使えます。Face IDでアプリをロックし、パスワード付きPDFも書き出せます。",
+      "無料でダウンロードして、3回までスキャンをお試しいただけます(無料の書き出しには透かしが入ります)。一度の購入でスキャンが無制限になり、透かしを永久に除去。さらにOCRテキスト書き出し・パスワード付きPDF・IDカード版面などの高度な書き出しもすべて使えます。サブスクなし、広告なし、いつの間にか課金される無料体験もなし。",
+      "44の表示言語に対応(自動判定/手動切替)。"
+     ],
+     "dropped": [
+      "「書類の中の文字を読む」ことまで端末内で完結し、決してオンラインにならないスキャナー。",
+      "ScanTo Pro は、契約書・レシート・フォーム・ID・メモを数秒で鮮明な PDF に変換します。そして、多くのスキャナーがサブスクやクラウドなしには実現できないこと——あなたの iPhone 上で書類内の文字を読み取り、後から検索できるようにします。",
+      "無料でダウンロードして、最初のスキャンは無料でお試し。一度の購入でスキャンが無制限になり、透かしを永久に除去。さらにOCRテキスト書き出し・パスワード付きPDF・IDカード版面などの高度な書き出しもすべて使えます。サブスクなし、広告なし、いつの間にか課金される無料体験もなし。",
+      "33の表示言語に対応(自動判定/手動切替)。"
+     ],
+     "live_updated": "2026-10-26",
+     "live_version": "1.2.9",
+     "same": false
     },
     "ko": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.2.8",
-     "same": true
+     "added": [
+      "iPhone Duo에 최적화되었습니다. 최신 개발 도구로 빌드되어 안쪽 디스플레이 전체를 가득 채우며, 접거나 펼쳐도 레이아웃이 자동으로 조정됩니다.",
+      "계약서, 영수증, 신분증을 선명한 PDF로 스캔하고, 나중에 문서 속 단어 하나만 입력하면 그 문서를 바로 찾을 수 있어요.",
+      "기기 내 문자 인식(OCR)이 모든 스캔을 읽고 영수증·신분증·명함·계약서로 자동 분류해, 파일 이름으로 찾을 필요가 없어요.",
+      "모든 과정이 오프라인: 업로드 없음, 계정 없음, 비행기 모드에서도 똑같이 작동해요. Face ID로 앱을 잠그고 암호로 보호된 PDF도 내보낼 수 있어요.",
+      "무료로 다운로드하고 3번까지 스캔을 체험해 보세요(무료 내보내기에는 워터마크가 들어갑니다). 한 번의 구매로 무제한 스캔과 워터마크 영구 제거는 물론 OCR 텍스트 내보내기, 암호화 PDF, 신분증 레이아웃 등 모든 고급 내보내기를 사용할 수 있습니다. 구독 없음, 광고 없음, 슬그머니 결제되는 무료 체험 없음.",
+      "44개 표시 언어 지원 (자동 감지 또는 수동 전환)."
+     ],
+     "dropped": [
+      "'문서 속 글자를 읽는 것'까지 기기 안에서 끝내고, 절대 온라인이 되지 않는 스캐너.",
+      "ScanTo Pro는 계약서, 영수증, 양식, 신분증, 메모를 몇 초 만에 선명한 PDF로 바꿔 줍니다. 그리고 대부분의 스캐너가 구독이나 클라우드 없이는 못 하는 일을 합니다 — 당신의 iPhone에서 문서 안의 글자를 읽어, 나중에 검색할 수 있게 합니다.",
+      "무료로 다운로드하고 첫 스캔은 무료로 체험하세요. 한 번의 구매로 무제한 스캔과 워터마크 영구 제거는 물론 OCR 텍스트 내보내기, 암호화 PDF, 신분증 레이아웃 등 모든 고급 내보내기를 사용할 수 있습니다. 구독 없음, 광고 없음, 슬그머니 결제되는 무료 체험 없음.",
+      "33개 표시 언어 지원 (자동 감지 또는 수동 전환)."
+     ],
+     "live_updated": "2026-10-26",
+     "live_version": "1.2.9",
+     "same": false
     },
     "pt-BR": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.2.8",
-     "same": true
+     "added": [
+      "Otimizado para iPhone Duo. Criado com o SDK mais recente, o app ocupa toda a tela interna e ajusta o layout automaticamente, com o aparelho dobrado ou aberto.",
+      "Digitalize contratos, recibos e documentos de identidade em PDFs nítidos — e depois encontre qualquer um digitando uma única palavra do conteúdo.",
+      "O reconhecimento de texto (OCR) no aparelho lê cada digitalização e a organiza automaticamente em Recibos, Documentos, Cartões e Contratos, sem precisar procurar pelo nome do arquivo.",
+      "Tudo funciona offline: nada é enviado, sem conta, igual no modo avião. Bloqueie o app com Face ID; a compra única adiciona PDFs protegidos por senha.",
+      "Teste 3 digitalizações grátis; uma compra única libera digitalização ilimitada, remove a marca d’água e adiciona exportações avançadas, sem assinatura"
+     ],
+     "dropped": [
+      "O scanner de documentos que faz tudo no seu aparelho — inclusive reconhecer texto.",
+      "O ScanTo Pro transforma papel em PDFs nítidos e organizados em segundos: recibos, contratos, formulários, documentos de identidade e anotações. O OCR no dispositivo lê o texto para você encontrar o conteúdo depois com busca.",
+      "Compra única, sem assinatura"
+     ],
+     "live_updated": "2026-10-26",
+     "live_version": "1.2.9",
+     "same": false
     },
     "zh-Hans": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.2.8",
-     "same": true
+     "added": [
+      "已针对 iPhone Duo 优化。本应用使用最新开发工具包构建,铺满整块内屏,无论折叠还是展开都会自动调整布局。",
+      "把合同、收据、证件扫描成清晰 PDF,之后输入一个词,就能找到正文里有这个词的那一份。",
+      "每次扫描都会在设备上自动识别文字(OCR),并归类为收据、证件、名片、合同,不用记文件名,也不用一页页翻。",
+      "全部离线完成:不上传、不用账号,开飞行模式也照样能用;还能用 Face ID 锁住应用,一次解锁后可导出带密码的 PDF。",
+      "可免费扫描 3 次;一次购买即可无限扫描、去除水印并解锁高级导出,无订阅"
+     ],
+     "dropped": [
+      "一款连“读取文件里的文字”都在手机上完成、并且无需联网的文档扫描器。",
+      "ScanTo Pro 可在几秒内把纸张变成清晰整洁的 PDF:合同、收据、表格、证件和笔记。随后,设备端 OCR 会识别文件中的文字,让你以后可以直接搜索内容。",
+      "一次购买,无订阅"
+     ],
+     "live_updated": "2026-10-26",
+     "live_version": "1.2.9",
+     "same": false
     },
     "zh-Hant": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.2.8",
-     "same": true
+     "added": [
+      "已針對 iPhone Duo 最佳化。本 App 以最新開發套件建置,填滿整個內螢幕,無論摺起或打開都會自動調整版面。",
+      "把合約、收據、證件掃成清晰 PDF,之後打一個詞,就找到內文有這個詞的那一份。",
+      "每次掃描都會在 iPhone 上自動辨識文字(OCR),並分類成收據、證件、名片、合約,不必記檔名,也不用一頁頁翻。",
+      "全部離線完成:不上傳、不用帳號,開飛航模式也照樣能用;還能用 Face ID 鎖住 App、匯出有密碼的 PDF。",
+      "免費下載就能先掃描 3 份(免費匯出會帶浮水印)。只要一次買斷,即可無限掃描、永久移除浮水印,並解鎖全部進階匯出——OCR 文字匯出、密碼加密 PDF 與證件雙面版面。沒有訂閱、沒有廣告、沒有偷偷轉收費的試用。",
+      "支援 44 種介面語言,自動偵測或隨時手動切換。"
+     ],
+     "dropped": [
+      "一款連「讀文件裡的字」都在你手機上完成、而且永不連網的掃描器。",
+      "ScanTo Pro 能在幾秒內把紙本變成乾淨清晰的 PDF:合約、收據、表格、證件、筆記。接著,它做到幾乎沒有掃描 App 不靠雲端與訂閱就能做的事——在你的 iPhone 上讀出文件裡的文字,讓你日後能搜尋它們。",
+      "免費下載,首次掃描免費體驗。只要一次買斷,即可無限掃描、永久移除浮水印,並解鎖全部進階匯出——OCR 文字匯出、密碼加密 PDF 與證件雙面版面。沒有訂閱、沒有廣告、沒有偷偷轉收費的試用。",
+      "支援 33 種介面語言,自動偵測或隨時手動切換。"
+     ],
+     "live_updated": "2026-10-26",
+     "live_version": "1.2.9",
+     "same": false
     }
    },
-   "status": "green"
+   "status": "red"
   },
   "sereno": {
    "blocked_terms": [
@@ -4396,85 +4895,299 @@
    "status": "green"
   },
   "sononote": {
-   "blocked_terms": [],
+   "blocked_terms": [
+    "POURQUOI VOUS L'ADOREREZ",
+    "WHY YOU'LL LOVE IT",
+    "なぜ気に入るのか",
+    "チェックリストとしてすぐに使える行動項目",
+    "以你选择的语气起草后续邮件",
+    "以隱私為前提的設計",
+    "你会爱上它的理由",
+    "再度聞く必要のない明確な要約と重要なポイント",
+    "提供清晰的摘要和重點,讓你不必再重聽",
+    "為什麼你會喜愛它",
+    "自然に話すだけで、誇れる文書が手に入ります。",
+    "自然地說話,擁有讓你驕傲的文字。",
+    "自然说话,轻松收获值得骄傲的文字。",
+    "行動項目為你提取,形成待辦清單",
+    "說話幾秒鐘即可獲得精美筆記,而不是一堆原始文字",
+    "사랑할 수밖에 없는 이유",
+    "실행 항목이 체크리스트로 자동 정리됩니다."
+   ],
    "brands": [
     "Sono Note"
    ],
-   "live_updated": "2026-10-09",
-   "live_version": "1.4.10",
+   "live_updated": "2026-10-26",
+   "live_version": "1.4.11",
    "locales": {
     "de-DE": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.4.10",
-     "same": true
+     "added": [
+      "Optimiert für das iPhone Duo. Die mit dem neuesten SDK entwickelte App füllt das gesamte innere Display und passt das Layout automatisch an, egal ob zugeklappt oder aufgeklappt.",
+      "Nehmen Sie ein Meeting, eine Vorlesung oder eine spontane Idee auf – Sono Note macht daraus eine klare Zusammenfassung, Kernpunkte und eine Aufgabenliste statt eines endlosen Rohtranskripts.",
+      "Auf Wunsch entwirft die App auch eine Follow-up-E-Mail im gewählten Ton, und die Originalaufnahme bleibt in der Notiz, damit Sie jederzeit nachhören und prüfen können.",
+      "Vorlagen für Meetings, Kundengespräche, Unterricht und Interviews liefern schon beim ersten Mal eine brauchbare Notiz. Export als Text, Markdown oder PDF.",
+      "Starten Sie kostenlos mit 2 Notizen pro Tag, jeweils bis zu 3 Minuten. Werden Sie Pro für unbegrenzte Notizen, Aufnahmen bis zu 3 Stunden, PDF-Export, erweiterte Vorlagen, benutzerdefiniertes Vokabular, jeden E-Mail-Ton zur Nachverfolgung und vollständige Sicherung & Wiederherstellung – mit einem einmaligen lebenslangen Freischalten."
+     ],
+     "dropped": [
+      "Sprechen Sie natürlich. Verlassen Sie sich auf Texte, die Sie stolz machen.",
+      "Sono Note verwandelt das chaotische Denken, das Sie laut aussprechen, in saubere, strukturierte Texte in Sekunden. Erfassen Sie einen Gedanken, eine Vorlesung, einen Kundentermin oder ein schnelles Update, und Sono Note transkribiert es, räumt es auf und liefert Ihnen eine fertige Notiz: eine klare Zusammenfassung, die wichtigsten Punkte, Ihre Aufgaben und eine versandfertige E-Mail. Oft schon, bevor Sie Ihr Telefon weggelegt haben.",
+      "Das ist kein Meeting-Bot oder einfacher Rekorder. Es ist ein privates Schreibstudio, das Ihre Stimme in nutzbare Arbeit verwandelt.",
+      "WARUM SIE ES LIEBEN WERDEN",
+      "Sprechen Sie Sekunden – erhalten Sie eine perfekte Notiz, kein Textwirrwarr",
+      "Eine prägnante Zusammenfassung und die wichtigsten Punkte, damit Sie nie wieder zuhören müssen",
+      "Aufgaben werden für Sie als fertige Checkliste herausgezogen",
+      "Eine E-Mail zur Nachverfolgung, im genau gewählten Ton verfasst",
+      "Spielen Sie die Originalaufnahme jederzeit direkt in der Notiz ab",
+      "Exportieren Sie als Text, Markdown oder PDF und teilen Sie es überall",
+      "Starten Sie kostenlos mit 3 Notizen pro Tag, jeweils bis zu 3 Minuten. Werden Sie Pro für unbegrenzte Notizen, Aufnahmen bis zu 3 Stunden, PDF-Export, erweiterte Vorlagen, benutzerdefiniertes Vokabular, jeden E-Mail-Ton zur Nachverfolgung und vollständige Sicherung & Wiederherstellung – mit einem einmaligen lebenslangen Freischalten."
+     ],
+     "live_updated": "2026-10-26",
+     "live_version": "1.4.11",
+     "same": false
     },
     "en-GB": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.4.10",
-     "same": true
+     "added": [
+      "Optimised for iPhone Duo. Built with the latest SDK, the app fills the entire inner display and automatically adjusts its layout whether the device is folded or open.",
+      "Record a meeting, lecture or quick idea, and Sono Note turns it into a clean summary, key points and an action-item list — not a wall of raw transcript.",
+      "It can also draft a follow-up email in the tone you choose, and the original recording stays in the note so you can replay and check it anytime.",
+      "Templates for meetings, client calls, classes and interviews get you a useful note on the first try. Export as text, Markdown or PDF.",
+      "Start free with 2 notes a day, up to 3 minutes each. Go Pro with a single one-time purchase — no subscription, ever — for unlimited notes, recordings up to 3 hours, PDF export, advanced templates, custom vocabulary, every follow-up email tone, and full backup & restore."
+     ],
+     "dropped": [
+      "Speak naturally. Walk away with writing you're proud of.",
+      "Sono Note turns the messy way you actually think — out loud — into clean, structured writing in seconds. Capture a thought, a lecture, a client call, or a quick update, and Sono Note transcribes it, tidies it up, and hands you a finished note: a clear summary, the key points, your action items, and a follow-up email ready to send. Often before you've even put your phone down.",
+      "This isn't a meeting bot or a plain recorder. It's a private writing studio that turns your voice into work you can actually use.",
+      "WHY YOU'LL LOVE IT",
+      "Speak for seconds — get a polished note, not a wall of raw text",
+      "A crisp summary and key points, so you never have to listen again",
+      "Action items pulled out for you as a ready-to-check list",
+      "A follow-up email, drafted in the exact tone you choose",
+      "Replay the original recording any time, right inside the note",
+      "Export as text, Markdown, or PDF and share it anywhere",
+      "Start free with 3 notes a day, up to 3 minutes each. Go Pro with a single one-time purchase — no subscription, ever — for unlimited notes, recordings up to 3 hours, PDF export, advanced templates, custom vocabulary, every follow-up email tone, and full backup & restore."
+     ],
+     "live_updated": "2026-10-26",
+     "live_version": "1.4.11",
+     "same": false
     },
     "en-US": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.4.10",
-     "same": true
+     "added": [
+      "Optimized for iPhone Duo. Built with the latest SDK, the app fills the entire inner display and automatically adjusts its layout whether the device is folded or open.",
+      "Record a meeting, lecture or quick idea, and Sono Note turns it into a clean summary, key points and an action-item list — not a wall of raw transcript.",
+      "It can also draft a follow-up email in the tone you choose, and the original recording stays in the note so you can replay and check it anytime.",
+      "Templates for meetings, client calls, classes and interviews get you a useful note on the first try. Export as text, Markdown or PDF.",
+      "Start free with 2 notes a day, up to 3 minutes each. Go Pro with a single one-time purchase — no subscription, ever — for unlimited notes, recordings up to 3 hours, PDF export, advanced templates, custom vocabulary, every follow-up email tone, and full backup & restore."
+     ],
+     "dropped": [
+      "Speak naturally. Walk away with writing you're proud of.",
+      "Sono Note turns the messy way you actually think — out loud — into clean, structured writing in seconds. Capture a thought, a lecture, a client call, or a quick update, and Sono Note transcribes it, tidies it up, and hands you a finished note: a clear summary, the key points, your action items, and a follow-up email ready to send. Often before you've even put your phone down.",
+      "This isn't a meeting bot or a plain recorder. It's a private writing studio that turns your voice into work you can actually use.",
+      "WHY YOU'LL LOVE IT",
+      "Speak for seconds — get a polished note, not a wall of raw text",
+      "A crisp summary and key points, so you never have to listen again",
+      "Action items pulled out for you as a ready-to-check list",
+      "A follow-up email, drafted in the exact tone you choose",
+      "Replay the original recording any time, right inside the note",
+      "Export as text, Markdown, or PDF and share it anywhere",
+      "Start free with 3 notes a day, up to 3 minutes each. Go Pro with a single one-time purchase — no subscription, ever — for unlimited notes, recordings up to 3 hours, PDF export, advanced templates, custom vocabulary, every follow-up email tone, and full backup & restore."
+     ],
+     "live_updated": "2026-10-26",
+     "live_version": "1.4.11",
+     "same": false
     },
     "es-ES": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.4.10",
-     "same": true
+     "added": [
+      "Optimizada para el iPhone Duo. Creada con el SDK más reciente, la app ocupa toda la pantalla interior y ajusta su diseño automáticamente, con el dispositivo plegado o desplegado.",
+      "Graba una reunión, una clase o una idea rápida y Sono Note la convierte en un resumen claro, puntos clave y una lista de tareas, no en un muro de transcripción en bruto.",
+      "También puede redactar un correo de seguimiento con el tono que elijas, y la grabación original se queda en la nota para que la vuelvas a escuchar y la compruebes cuando quieras.",
+      "Plantillas para reuniones, llamadas con clientes, clases y entrevistas te dan una nota útil a la primera. Exporta en texto, Markdown o PDF.",
+      "Comienza gratis con 2 notas al día, de hasta 3 minutos cada una. Pasa a Pro para notas ilimitadas, grabaciones de hasta 3 horas, exportación a PDF, plantillas avanzadas, vocabulario personalizado, todos los tonos de email de seguimiento y copia de seguridad y restauración completas — con un desbloqueo de por vida único."
+     ],
+     "dropped": [
+      "Habla con naturalidad. Termina con un texto que te enorgullece.",
+      "Sono Note convierte la forma desordenada en la que piensas —en voz alta— en escritura limpia y estructurada en segundos. Captura una idea, una clase, una llamada con un cliente o una actualización rápida, y Sono Note lo transcribe, lo ordena y te entrega una nota final: un resumen claro, los puntos clave, tus tareas y un email de seguimiento listo para enviar. A menudo, antes de que incluso hayas dejado el teléfono.",
+      "Esto no es un bot de reuniones ni un simple grabador. Es un estudio de escritura privado que transforma tu voz en un trabajo que realmente puedes usar.",
+      "POR QUÉ TE ENCANTARÁ",
+      "Habla unos segundos — obtén una nota pulida, no un muro de texto bruto",
+      "Un resumen nítido y puntos clave, para que nunca tengas que escuchar de nuevo",
+      "Tareas extraídas para ti como una lista lista para revisar",
+      "Un email de seguimiento, redactado en el tono exacto que elijas",
+      "Reproduce la grabación original en cualquier momento, directamente dentro de la nota",
+      "Exporta como texto, Markdown o PDF y compártelo en cualquier lugar",
+      "Comienza gratis con 3 notas al día, de hasta 3 minutos cada una. Pasa a Pro para notas ilimitadas, grabaciones de hasta 3 horas, exportación a PDF, plantillas avanzadas, vocabulario personalizado, todos los tonos de email de seguimiento y copia de seguridad y restauración completas — con un desbloqueo de por vida único."
+     ],
+     "live_updated": "2026-10-26",
+     "live_version": "1.4.11",
+     "same": false
     },
     "fr-FR": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.4.10",
-     "same": true
+     "added": [
+      "Optimisée pour l’iPhone Duo. Conçue avec le SDK le plus récent, l’app remplit tout l’écran intérieur et adapte automatiquement sa mise en page, appareil plié ou ouvert.",
+      "Enregistrez une réunion, un cours ou une idée rapide : Sono Note en fait un résumé clair, les points clés et une liste de tâches, pas un mur de transcription brute.",
+      "Il peut aussi rédiger un e-mail de suivi dans le ton de votre choix, et l’enregistrement d’origine reste dans la note pour le réécouter et vérifier à tout moment.",
+      "Des modèles pour réunions, appels clients, cours et entretiens vous donnent une note utile dès le premier essai. Exportez en texte, Markdown ou PDF.",
+      "Commencez gratuitement avec 2 notes par jour, jusqu'à 3 minutes chacune. Passez au Pro pour des notes illimitées, des enregistrements jusqu'à 3 heures, l'export PDF, des modèles avancés, un vocabulaire personnalisé, chaque ton d'e-mail de suivi, et une sauvegarde et restauration complètes — avec un déverrouillage à vie unique."
+     ],
+     "dropped": [
+      "Parlez naturellement. Repartez avec un texte dont vous êtes fier.",
+      "Sono Note transforme la façon désordonnée dont vous pensez — à haute voix — en écriture claire et structurée en quelques secondes. Capturez une idée, un cours, un appel client ou une mise à jour rapide, et Sono Note la transcrit, la nettoie et vous remet une note finalisée : un résumé clair, les points clés, vos actions à réaliser, et un e-mail de suivi prêt à envoyer. Souvent avant même que vous n'ayez reposé votre téléphone.",
+      "Ce n'est ni un robot de réunion ni un simple enregistreur. C'est un studio d'écriture privé qui transforme votre voix en un travail réellement utile.",
+      "POURQUOI VOUS L'ADOREREZ",
+      "Parlez quelques secondes — obtenez une note soignée, pas une masse de texte brut",
+      "Un résumé précis et les points clés, pour ne plus jamais réécouter",
+      "Des actions extraites pour vous, prêtes à être cochées",
+      "Un e-mail de suivi, rédigé dans le ton exact que vous choisissez",
+      "Réécoutez l'enregistrement original à tout moment, directement dans la note",
+      "Exportez en texte, Markdown, ou PDF et partagez-le partout",
+      "Commencez gratuitement avec 3 notes par jour, jusqu'à 3 minutes chacune. Passez au Pro pour des notes illimitées, des enregistrements jusqu'à 3 heures, l'export PDF, des modèles avancés, un vocabulaire personnalisé, chaque ton d'e-mail de suivi, et une sauvegarde et restauration complètes — avec un déverrouillage à vie unique."
+     ],
+     "live_updated": "2026-10-26",
+     "live_version": "1.4.11",
+     "same": false
     },
     "ja": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.4.10",
-     "same": true
+     "added": [
+      "iPhone Duoに最適化。最新の開発キットでビルドしており、内側のディスプレイ全体に表示され、折りたたんでも開いても自動でレイアウトが調整されます。",
+      "会議や講義、思いついたアイデアを録音するだけで、Sono Note が要約・要点・やることリストにまとめます。長い文字起こしをそのまま渡したりはしません。",
+      "選んだトーンでフォローアップメールの下書きも作成。元の録音はメモに残るので、いつでも聞き直して確認できます。",
+      "会議、顧客との通話、授業、面接などのテンプレートで、最初から使えるメモに。テキスト、Markdown、PDF で書き出せます。",
+      "1日2つのメモ、各3分まで無料で始められます。Pro版にアップグレードすれば、無制限のメモ、最大3時間の録音、PDFエクスポート、高度なテンプレート、カスタム語彙、すべてのフォローアップメールトーン、完全なバックアップ&復元が可能になります。生涯利用の一度きりのアンロックで利用可能。"
+     ],
+     "dropped": [
+      "自然に話すだけで、誇れる文書が手に入ります。",
+      "Sono Noteは、あなたが実際に考える声を、数秒で整理された文章に変えます。思いついたアイデア、講義、クライアントとの通話、簡単な更新をキャプチャして、Sono Noteがそれを文字起こしし、整え、完成したメモとして提供します。明確な要約、重要なポイント、行動項目、そして送信準備完了のフォローアップメールが瞬時に得られます。",
+      "これは会議ボットや単なるレコーダーではありません。あなたの声を実際に活用できる作品に変えるプライベートなライティングスタジオです。",
+      "なぜ気に入るのか",
+      "数秒話すだけで、洗練されたメモが得られます。生のテキストの壁ではありません。",
+      "再度聞く必要のない明確な要約と重要なポイント",
+      "チェックリストとしてすぐに使える行動項目",
+      "選んだトーンでドラフトされたフォローアップメール",
+      "メモ内でいつでも元の録音を再生可能",
+      "テキスト、Markdown、PDFとしてエクスポートしてどこにでも共有",
+      "1日3つのメモ、各3分まで無料で始められます。Pro版にアップグレードすれば、無制限のメモ、最大3時間の録音、PDFエクスポート、高度なテンプレート、カスタム語彙、すべてのフォローアップメールトーン、完全なバックアップ&復元が可能になります。生涯利用の一度きりのアンロックで利用可能。"
+     ],
+     "live_updated": "2026-10-26",
+     "live_version": "1.4.11",
+     "same": false
     },
     "ko": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.4.10",
-     "same": true
+     "added": [
+      "iPhone Duo에 최적화되었습니다. 최신 개발 도구로 빌드되어 안쪽 디스플레이 전체를 가득 채우며, 접거나 펼쳐도 레이아웃이 자동으로 조정됩니다.",
+      "회의, 강의, 떠오른 아이디어를 녹음하면 Sono Note가 깔끔한 요약, 핵심 포인트, 할 일 목록으로 정리해 줍니다. 긴 받아쓰기 원문이 아닙니다.",
+      "원하는 어조로 후속 이메일 초안도 작성하고, 원본 녹음은 노트에 그대로 남아 언제든 다시 듣고 확인할 수 있습니다.",
+      "회의, 고객 통화, 수업, 인터뷰 템플릿으로 처음부터 쓸모 있는 노트를 받아 보세요. 텍스트, Markdown, PDF로 내보낼 수 있습니다.",
+      "하루에 2개의 노트, 각 최대 3분으로 무료로 시작하세요. Pro로 업그레이드하여 무제한 노트, 최대 3시간 녹음, PDF 내보내기, 고급 템플릿, 사용자 정의 어휘, 모든 후속 이메일 톤, 전체 백업 및 복원을 이용하세요 — 일회성 영구 잠금 해제로."
+     ],
+     "dropped": [
+      "자연스럽게 말하세요. 당신이 자랑스러워할 글을 얻으세요.",
+      "Sono Note는 당신의 생각을 말로 표현하는 혼란스러운 방식을 몇 초 만에 깔끔하고 구조화된 글로 바꿉니다. 생각, 강의, 고객 통화, 빠른 업데이트를 캡처하고, Sono Note는 이를 필사하고 정리하여 완성된 노트를 제공합니다: 명확한 요약, 핵심 포인트, 실행 항목, 그리고 전송 준비된 후속 이메일. 때로는 휴대폰을 내려놓기도 전에 완료됩니다.",
+      "이것은 단순한 녹음기가 아닙니다. 이것은 당신의 목소리를 실제로 사용할 수 있는 작업으로 바꾸는 개인 글쓰기 스튜디오입니다.",
+      "사랑할 수밖에 없는 이유",
+      "몇 초만 말하면 정리된 노트를 얻을 수 있습니다. 벽처럼 쌓인 원문이 아닙니다.",
+      "명확한 요약과 핵심 포인트로 다시 들을 필요가 없습니다.",
+      "실행 항목이 체크리스트로 자동 정리됩니다.",
+      "원하는 톤으로 작성된 후속 이메일",
+      "노트 내에서 언제든지 원본 녹음을 재생",
+      "텍스트, Markdown, PDF로 내보내고 어디서든 공유",
+      "하루에 3개의 노트, 각 최대 3분으로 무료로 시작하세요. Pro로 업그레이드하여 무제한 노트, 최대 3시간 녹음, PDF 내보내기, 고급 템플릿, 사용자 정의 어휘, 모든 후속 이메일 톤, 전체 백업 및 복원을 이용하세요 — 일회성 영구 잠금 해제로."
+     ],
+     "live_updated": "2026-10-26",
+     "live_version": "1.4.11",
+     "same": false
     },
     "pt-BR": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.4.10",
-     "same": true
+     "added": [
+      "Otimizado para iPhone Duo. Criado com o SDK mais recente, o app ocupa toda a tela interna e ajusta o layout automaticamente, com o aparelho dobrado ou aberto.",
+      "Grave uma reunião, uma aula ou uma ideia rápida e o Sono Note transforma tudo em um resumo claro, pontos principais e uma lista de tarefas, não em um paredão de transcrição bruta.",
+      "Ele também pode rascunhar um e-mail de acompanhamento no tom que você escolher, e a gravação original fica na nota para você ouvir de novo e conferir quando quiser.",
+      "Modelos para reuniões, ligações com clientes, aulas e entrevistas entregam uma nota útil logo de primeira. Exporte em texto, Markdown ou PDF.",
+      "Comece gratuitamente com 2 notas por dia, de até 3 minutos cada. Torne-se Pro para notas ilimitadas, gravações de até 3 horas, exportação em PDF, modelos avançados, vocabulário personalizado, todos os tons de e-mail de acompanhamento e backup & restauração completos — com um desbloqueio vitalício único."
+     ],
+     "dropped": [
+      "Fale naturalmente. Saia com um texto de que você se orgulha.",
+      "Sono Note transforma a maneira desordenada como você pensa — em voz alta — em escrita limpa e estruturada em segundos. Capture um pensamento, uma aula, uma ligação com um cliente ou uma atualização rápida, e o Sono Note transcreve, organiza e entrega uma nota final: um resumo claro, os pontos principais, seus itens de ação e um e-mail de acompanhamento pronto para enviar. Muitas vezes antes mesmo de você colocar o celular de volta no bolso.",
+      "Isso não é um assistente de reuniões ou um simples gravador. É um estúdio de escrita privado que transforma sua voz em trabalho que você realmente pode usar.",
+      "POR QUE VOCÊ VAI AMAR",
+      "Fale por segundos — receba uma nota polida, não um bloco de texto bruto",
+      "Um resumo nítido e pontos principais, para que você nunca precise ouvir novamente",
+      "Itens de ação extraídos para você como uma lista pronta para verificar",
+      "Um e-mail de acompanhamento, redigido no tom exato que você escolher",
+      "Reproduza a gravação original a qualquer momento, diretamente na nota",
+      "Exporte como texto, Markdown ou PDF e compartilhe em qualquer lugar",
+      "Comece gratuitamente com 3 notas por dia, de até 3 minutos cada. Torne-se Pro para notas ilimitadas, gravações de até 3 horas, exportação em PDF, modelos avançados, vocabulário personalizado, todos os tons de e-mail de acompanhamento e backup & restauração completos — com um desbloqueio vitalício único."
+     ],
+     "live_updated": "2026-10-26",
+     "live_version": "1.4.11",
+     "same": false
     },
     "zh-Hans": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.4.10",
-     "same": true
+     "added": [
+      "已针对 iPhone Duo 优化。本应用使用最新开发工具包构建,铺满整块内屏,无论折叠还是展开都会自动调整布局。",
+      "开会、上课或整理想法时按下录音,Sono Note 会自动整理出摘要、要点和待办清单,而不是一大段逐字稿。",
+      "还能按你选的语气起草跟进邮件;原始录音保留在笔记里,随时回听核对。",
+      "内置会议、客户电话、课堂、面试等模板,第一次用就能得到好用的笔记;可导出文本、Markdown 或 PDF。",
+      "免费开始,每天2条笔记,每条最长3分钟。升级到专业版,享受无限笔记、最长3小时录音、PDF导出、高级模板、自定义词汇、各种后续邮件语气,以及完整备份与恢复——一次性解锁终身使用。"
+     ],
+     "dropped": [
+      "自然说话,轻松收获值得骄傲的文字。",
+      "Sono Note将你随口而出的杂乱思绪转化为简洁、结构化的文字,只需几秒钟。捕捉一个想法、一场讲座、一次客户通话或快速更新,Sono Note会将其转录、整理,并呈现给你一份完成的笔记:清晰的总结、关键点、行动事项,以及一封待发送的后续邮件。通常在你放下手机之前就已完成。",
+      "这不是会议机器人或普通录音机,而是将你的声音转化为实用文字的私人写作工作室。",
+      "你会爱上它的理由",
+      "说几秒钟——得到的是精美笔记,而不是一大段原始文本",
+      "清晰的总结和关键点,让你无需再听",
+      "自动提取的行动事项,已准备好检查列表",
+      "以你选择的语气起草后续邮件",
+      "随时在笔记中重播原始录音",
+      "以文本、Markdown或PDF格式导出,随处分享",
+      "免费开始,每天3条笔记,每条最长3分钟。升级到专业版,享受无限笔记、最长3小时录音、PDF导出、高级模板、自定义词汇、各种后续邮件语气,以及完整备份与恢复——一次性解锁终身使用。"
+     ],
+     "live_updated": "2026-10-26",
+     "live_version": "1.4.11",
+     "same": false
     },
     "zh-Hant": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.4.10",
-     "same": true
+     "added": [
+      "已針對 iPhone Duo 最佳化。本 App 以最新開發套件建置,填滿整個內螢幕,無論摺起或打開都會自動調整版面。",
+      "開會、上課或整理想法時按下錄音,Sono Note 會自動整理出摘要、重點和待辦清單,而不是一大串逐字稿。",
+      "還能依你選的語氣草擬後續郵件;原始錄音保留在筆記裡,隨時重聽核對。",
+      "內建會議、客戶電話、課堂、面試等範本,第一次用就能得到好用的筆記;可匯出文字、Markdown 或 PDF。",
+      "隱私優先",
+      "筆記都存在你的 iPhone 上。不用帳號、沒有廣告、不追蹤。我們沒有自己的伺服器,任何內容都不會上傳給我們。語音轉文字使用 Apple 語音辨識,部分語言可能會把音訊傳給 Apple;切換到「僅限本機」模式,所有處理都留在你的裝置上,開飛航模式也能用。",
+      "資料由你掌控",
+      "所有資料可備份成一個標註日期的檔案,一鍵就能還原。瀏覽、重播、分享原始錄音,或在同一個地方刪除錄音,一切由你決定。",
+      "為真實生活設計",
+      "工作進度、客戶電話、課堂、面試、看診、靈感、客服案件、專案回顧都有現成範本,第一次用就能得到實用的結果;支援數十種語言,隨時切換。",
+      "免費開始:每天 2 則筆記,每則最長 3 分鐘。升級專業版可享無限筆記、最長 3 小時錄音、PDF 匯出、進階範本、自訂詞彙、所有後續郵件語氣,以及完整備份與還原——一次購買永久解鎖,不用訂閱。",
+      "好想法常常是說出來的,Sono Note 幫你一句都不漏。",
+      "產生的文字請先核對再使用;單人、清楚的錄音效果最好。"
+     ],
+     "dropped": [
+      "自然地說話,擁有讓你驕傲的文字。",
+      "Sono Note 將你隨意的思考方式——大聲說出來——轉化為乾淨、結構化的文字,只需幾秒鐘。捕捉一個想法、一堂課、一通客戶電話或快速更新,Sono Note 會將其轉錄、整理,並交給你一份完成的筆記:清晰的摘要、重點、你的行動項目,以及準備好發送的後續郵件。通常在你放下手機前就能完成。",
+      "這不是會議機器人或普通錄音機。這是一個私人寫作工作室,將你的聲音轉化為你實際上可以使用的工作。",
+      "為什麼你會喜愛它",
+      "說話幾秒鐘即可獲得精美筆記,而不是一堆原始文字",
+      "提供清晰的摘要和重點,讓你不必再重聽",
+      "行動項目為你提取,形成待辦清單",
+      "後續郵件根據你選擇的語氣草擬",
+      "隨時在筆記中重播原始錄音",
+      "以文字、Markdown 或 PDF 格式匯出,隨處分享",
+      "以隱私為前提的設計",
+      "筆記都存在你的 iPhone 上。無需帳號、無廣告、無追蹤。我們沒有自己的伺服器,任何內容都不會上傳給我們。語音轉文字使用 Apple 語音辨識,部分語言可能會把音訊傳送給 Apple;切換到「僅限本機」模式,所有處理都留在你的裝置上,飛航模式下也能使用。",
+      "你的資料屬於你",
+      "將所有資料備份至單個日期檔案,並一鍵還原。瀏覽、重播、分享原始音訊,或從一個簡單的地方刪除每個錄音。你始終掌控一切。",
+      "為真實生活而設計",
+      "現成的範本適用於工作更新、客戶電話、課堂、面試、就醫、創意、支援案例和專案回顧,讓你在第一次嘗試時就能獲得真正有用的結果——支援數十種語言,隨時可以切換。",
+      "免費開始,每天3則筆記,每則最多3分鐘。升級到專業版享有無限筆記、最長3小時錄音、PDF 匯出、進階範本、自訂詞彙、各種後續郵件語氣,以及完整備份和還原選項——可選擇一次性永久解鎖。",
+      "你的最佳思考發生在大聲說出時。Sono Note 確保這些思緒不會遺失。",
+      "生成的文字需經過審核後使用。最清晰的結果來自於清晰、單一說話者的錄音。"
+     ],
+     "live_updated": "2026-10-26",
+     "live_version": "1.4.11",
+     "same": false
     }
    },
-   "status": "green"
+   "status": "red"
   },
   "stayclock": {
    "blocked_terms": [],
@@ -5002,8 +5715,8 @@
      "dropped": [
       "Your photos stay private because processing happens locally on your device. No subscription, no ads, no tracking. Pay once to unlock Unblurry Pro, remove watermarks, export at full original resolution, and keep every future mode."
      ],
-     "live_updated": "2026-10-23",
-     "live_version": "1.0.14",
+     "live_updated": "2026-10-25",
+     "live_version": "1.0.15",
      "same": false
     },
     "en-US": {
@@ -5026,8 +5739,8 @@
      "dropped": [
       "Mejora y guarda fotos gratis cada día. Desbloquea Unblurry Pro una sola vez para eliminar marcas de agua, exportar a la resolución original completa, obtener escalado 4×, modos Retrato y restauración, guardados diarios ilimitados, todos los temas premium y todos los modos futuros: tuyos para siempre, con una única compra y sin suscripción."
      ],
-     "live_updated": "2026-10-23",
-     "live_version": "1.0.14",
+     "live_updated": "2026-10-25",
+     "live_version": "1.0.15",
      "same": false
     },
     "fr-FR": {
@@ -5086,8 +5799,8 @@
      "dropped": [
       "每天都能免费增强并保存照片。一次解锁 Unblurry Pro,即可去除水印、以完整原始分辨率导出、获得 4× 放大、人像与修复模式、每日无限保存、所有高级主题,以及未来推出的每一种模式 — 一次购买,永久拥有,没有订阅。"
      ],
-     "live_updated": "2026-10-23",
-     "live_version": "1.0.14",
+     "live_updated": "2026-10-25",
+     "live_version": "1.0.15",
      "same": false
     },
     "zh-Hant": {
@@ -5110,81 +5823,249 @@
    "brands": [
     "WiFi Aid"
    ],
-   "live_updated": "2026-10-12",
-   "live_version": "1.0.13",
+   "live_updated": "2026-10-26",
+   "live_version": "1.0.14",
    "locales": {
     "de-DE": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-12",
-     "live_version": "1.0.13",
-     "same": true
+     "added": [
+      "Optimiert für das iPhone Duo. Die mit dem neuesten SDK entwickelte App füllt das gesamte innere Display und passt das Layout automatisch an, egal ob zugeklappt oder aufgeklappt.",
+      "WLAN schon wieder langsam oder weg? WiFi Aid prüft WLAN, DNS und Internet mit einem Tippen und zeigt, ob das Problem wahrscheinlich am WLAN, am DNS, beim Internetanbieter oder nur an einer Website liegt – mit den Belegen hinter jedem Ergebnis.",
+      "Deep Check misst länger und entlarvt wackelige Verbindungen, die verbunden aussehen, aber ständig hängen. Im Mesh-WLAN siehst du, mit welchem Knoten du verbunden bist und ob er seit dem letzten Check gewechselt hat.",
+      "Prüfe auch von der Apple Watch oder per Widget auf dem Home-Bildschirm; der Verlauf bleibt nur auf diesem Gerät.",
+      "Check starten — WLAN, DNS und Internet mit einem Tippen prüfen, Ergebnis in Sekunden",
+      "Deep Check — mehr Stabilitätsmessungen für Probleme, die kommen und gehen",
+      "Website prüfen — erkennen, ob nur eine Seite ausfällt oder die ganze Verbindung",
+      "Alle Fakten — DNS, TCP, TLS, TTFB, HTTP, direkte IP, IPv4 und IPv6, Punkt für Punkt",
+      "Mesh-Knoten — sehen, mit welchem Knoten du verbunden bist und ob du gewechselt hast",
+      "Test-Verlauf — frühere Ergebnisse vergleichen, nur auf diesem Gerät gespeichert",
+      "Apple Watch — einen Check direkt am Handgelenk starten",
+      "Widget & iPad — Verbindungsstatus auf dem Home-Bildschirm und volles iPad-Layout",
+      "Kein Konto, keine Werbung, keine Analyse, kein Tracking."
+     ],
+     "dropped": [
+      "Erkennt die wahrscheinlichste Störung anhand unabhängiger Pfade, DNS, TCP, TLS, Laufzeit und Stabilität. Einmal vorab bezahlen – kein Abo, keine Werbung, kein Tracking.",
+      "Check starten — WLAN, DNS und Internet mit einem Tipp",
+      "Deep Check — Mehr Fakten und Stabilität",
+      "Website prüfen — Prüfe, ob eine Seite oder das Netz ausfällt",
+      "Fakten — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6",
+      "Verbindung instabil — Schwankung",
+      "Test-Verlauf — Daten bleiben lokal auf deinem Gerät",
+      "Apple Watch — Check starten",
+      "Widget · iPad — Verbunden · Check starten",
+      "Kein Konto, keine Werbung, kein Tracking. Daten bleiben lokal auf deinem Gerät."
+     ],
+     "live_updated": "2026-10-26",
+     "live_version": "1.0.14",
+     "same": false
     },
     "en-GB": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-12",
-     "live_version": "1.0.13",
-     "same": true
+     "added": [
+      "Optimised for iPhone Duo. Built with the latest SDK, the app fills the entire inner display and automatically adjusts its layout whether the device is folded or open.",
+      "Wi-Fi slow or dropping again? WiFi Aid runs Wi-Fi, DNS and internet checks in one tap and tells you whether the problem most likely lies with your Wi-Fi, DNS, your internet provider or a single website — with the evidence behind every verdict.",
+      "Deep Check keeps sampling to catch spotty connections that look connected but keep lagging, and on mesh Wi-Fi it shows which node you're on and whether it changed since your last check.",
+      "Check from Apple Watch or a Home Screen widget; your check history stays only on this device.",
+      "Run a Check — test Wi-Fi, DNS and internet in one tap and get a verdict in seconds",
+      "Deep Check — collect more stability samples to pin down problems that come and go",
+      "Check a Website — see whether one site is down or your whole connection is failing",
+      "Full evidence — DNS, TCP, TLS, TTFB, HTTP, direct IP, IPv4 and IPv6, item by item",
+      "Mesh node — see which node you are on and whether you roamed",
+      "Check History — compare past results, stored only on this device",
+      "Apple Watch — run a check from your wrist",
+      "Widget & iPad — connection status on your Home Screen and a full iPad layout",
+      "No account, adverts, analytics or tracking."
+     ],
+     "dropped": [
+      "Find the most likely connection fault with independent path, DNS, TCP, TLS, timing and stability checks. One upfront payment—no subscription, adverts or tracking.",
+      "Run a Check — Wi-Fi, DNS and internet checks in one tap",
+      "Deep Check — More evidence and stability samples",
+      "Check a Website — See whether one destination or the wider internet is failing",
+      "Evidence — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6",
+      "Connection looks unstable — Variation",
+      "Check History — Private records stored only on this device",
+      "Apple Watch — Run a Check",
+      "Widget · iPad — Connected · Run a Check",
+      "No account, adverts, analytics or tracking. Private records stored only on this device."
+     ],
+     "live_updated": "2026-10-26",
+     "live_version": "1.0.14",
+     "same": false
     },
     "en-US": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-12",
-     "live_version": "1.0.13",
-     "same": true
+     "added": [
+      "Optimized for iPhone Duo. Built with the latest SDK, the app fills the entire inner display and automatically adjusts its layout whether the device is folded or open.",
+      "Wi-Fi slow or dropping again? WiFi Aid runs Wi-Fi, DNS and internet checks in one tap and tells you whether the problem most likely lies with your Wi-Fi, DNS, your internet provider or a single website — with the evidence behind every verdict.",
+      "Deep Check keeps sampling to catch spotty connections that look connected but keep lagging, and on mesh Wi-Fi it shows which node you're on and whether it changed since your last check.",
+      "Check from Apple Watch or a Home Screen widget; your check history stays only on this device.",
+      "Run a Check — test Wi-Fi, DNS and internet in one tap and get a verdict in seconds",
+      "Deep Check — collect more stability samples to pin down problems that come and go",
+      "Check a Website — see whether one site is down or your whole connection is failing",
+      "Full evidence — DNS, TCP, TLS, TTFB, HTTP, direct IP, IPv4 and IPv6, item by item",
+      "Mesh node — see which node you are on and whether you roamed",
+      "Check History — compare past results, stored only on this device",
+      "Apple Watch — run a check from your wrist",
+      "Widget & iPad — connection status on your Home Screen and a full iPad layout",
+      "No account, ads, analytics or tracking."
+     ],
+     "dropped": [
+      "Find the most likely connection problem with independent path, DNS, TCP, TLS, timing and stability checks. Pay once upfront—no subscription, ads or tracking.",
+      "Run a Check — Wi-Fi, DNS and internet checks in one tap",
+      "Deep Check — More evidence and stability samples",
+      "Check a Website — See whether one destination or the wider internet is failing",
+      "Evidence — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6",
+      "Connection looks unstable — Variation",
+      "Check History — Private records stored only on this device",
+      "Apple Watch — Run a Check",
+      "Widget · iPad — Connected · Run a Check",
+      "No account, ads, analytics or tracking. Private records stored only on this device."
+     ],
+     "live_updated": "2026-10-26",
+     "live_version": "1.0.14",
+     "same": false
     },
     "es-ES": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-12",
-     "live_version": "1.0.13",
-     "same": true
+     "added": [
+      "Optimizada para el iPhone Duo. Creada con el SDK más reciente, la app ocupa toda la pantalla interior y ajusta su diseño automáticamente, con el dispositivo plegado o desplegado.",
+      "¿La wifi vuelve a ir lenta o se corta? WiFi Aid comprueba la wifi, el DNS e internet con un toque y te dice si el problema está probablemente en tu wifi, el DNS, tu proveedor de internet o una sola web, con las pruebas de cada diagnóstico.",
+      "El test profundo sigue tomando muestras para detectar conexiones intermitentes que parecen conectadas pero van a tirones, y en redes wifi mesh muestra a qué nodo estás conectado y si ha cambiado desde el último test.",
+      "Haz el test desde el Apple Watch o desde un widget de la pantalla de inicio; el historial se queda solo en este dispositivo.",
+      "Hacer test — comprueba wifi, DNS e internet con un toque y obtén el diagnóstico en segundos",
+      "Test profundo — más muestras de estabilidad para cazar fallos que van y vienen",
+      "Probar una web — descubre si solo falla un sitio o toda la conexión",
+      "Pruebas completas — DNS, TCP, TLS, TTFB, HTTP, IP directa, IPv4 e IPv6, punto por punto",
+      "Nodo mesh — mira a qué nodo estás conectado y si has cambiado de nodo",
+      "Historial — compara resultados anteriores, guardados solo en este dispositivo",
+      "Apple Watch — haz un test desde la muñeca",
+      "Widget y iPad — estado de la conexión en la pantalla de inicio y diseño completo para iPad",
+      "Sin cuenta, anuncios, análisis ni rastreo."
+     ],
+     "dropped": [
+      "Detecta la causa probable con pruebas independientes de rutas, DNS, TCP, TLS, tiempos y estabilidad. Un único pago inicial, sin suscripciones, anuncios ni seguimiento.",
+      "Hacer test — Tests de Wi-Fi y DNS en un toque",
+      "Test profundo — Más pruebas y estabilidad de red",
+      "Probar una web — Comprueba si un destino o internet fallan",
+      "Pruebas — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6",
+      "Conexión inestable — Fluctuación",
+      "Historial — Registros privados solo en este dispositivo",
+      "Apple Watch — Hacer test",
+      "Widget · iPad — Conectado · Hacer test",
+      "Sin cuenta, anuncios ni rastreo. Registros privados solo en este dispositivo."
+     ],
+     "live_updated": "2026-10-26",
+     "live_version": "1.0.14",
+     "same": false
     },
     "fr-FR": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-12",
-     "live_version": "1.0.13",
-     "same": true
+     "added": [
+      "Optimisée pour l’iPhone Duo. Conçue avec le SDK le plus récent, l’app remplit tout l’écran intérieur et adapte automatiquement sa mise en page, appareil plié ou ouvert.",
+      "Le Wi-Fi rame ou coupe encore ? WiFi Aid teste le Wi-Fi, le DNS et Internet d’un seul toucher et vous dit si le problème vient probablement de votre Wi-Fi, du DNS, de votre fournisseur d’accès ou d’un seul site, preuves à l’appui pour chaque diagnostic.",
+      "Le test complet continue de mesurer pour démasquer les connexions instables qui semblent connectées mais rament, et sur un réseau Wi-Fi mesh, il indique à quel nœud vous êtes connecté et s’il a changé depuis le dernier test.",
+      "Testez aussi depuis l’Apple Watch ou un widget de l’écran d’accueil ; l’historique reste uniquement sur cet appareil.",
+      "Lancer un test — testez le Wi-Fi, le DNS et Internet d’un toucher, diagnostic en quelques secondes",
+      "Test complet — davantage de mesures de stabilité pour cerner les problèmes intermittents",
+      "Tester un site — voyez si un seul site est en panne ou toute votre connexion",
+      "Toutes les preuves — DNS, TCP, TLS, TTFB, HTTP, IP directe, IPv4 et IPv6, point par point",
+      "Nœud mesh — voyez à quel nœud vous êtes connecté et si vous avez changé de nœud",
+      "Historique — comparez les résultats précédents, conservés uniquement sur cet appareil",
+      "Apple Watch — lancez un test depuis votre poignet",
+      "Widget et iPad — état de la connexion sur l’écran d’accueil et mise en page complète sur iPad",
+      "Sans compte, pub, analyse ni suivi."
+     ],
+     "dropped": [
+      "Identifiez la cause probable grâce aux contrôles indépendants des chemins, DNS, TCP, TLS, délais et stabilité. Achat initial unique, sans abonnement, pub ni suivi.",
+      "Lancer un test — Tests Wi-Fi et DNS en un geste",
+      "Test complet — Preuves et stabilité réseau",
+      "Tester un site — Vérifier un site ou l'internet global",
+      "Preuves — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6",
+      "Connexion instable — Gigue",
+      "Historique — Données privées locales uniquement",
+      "Apple Watch — Lancer un test",
+      "Widget · iPad — Connecté · Lancer un test",
+      "Sans compte, pub, ni suivi. Données privées locales uniquement."
+     ],
+     "live_updated": "2026-10-26",
+     "live_version": "1.0.14",
+     "same": false
     },
     "ja": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-12",
-     "live_version": "1.0.13",
-     "same": true
+     "added": [
+      "iPhone Duoに最適化。最新の開発キットでビルドしており、内側のディスプレイ全体に表示され、折りたたんでも開いても自動でレイアウトが調整されます。",
+      "ウェブサイトをチェック:特定のサイトだけが落ちているのか、回線全体の問題なのかをすぐに判定します。",
+      "メッシュノード:いま接続しているノードと、前回のチェックからノードが切り替わったか(ローミング)を表示します。"
+     ],
+     "dropped": [
+      "ウェブサイトをチェック:特定のサイトだけが落ちているのか、回線全体の障害なのかをすぐに判定します。"
+     ],
+     "live_updated": "2026-10-26",
+     "live_version": "1.0.14",
+     "same": false
     },
     "ko": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-12",
-     "live_version": "1.0.13",
-     "same": true
+     "added": [
+      "iPhone Duo에 최적화되었습니다. 최신 개발 도구로 빌드되어 안쪽 디스플레이 전체를 가득 채우며, 접거나 펼쳐도 레이아웃이 자동으로 조정됩니다.",
+      "웹사이트 검사: 특정 사이트만 문제인지, 인터넷 전체에 문제가 있는지 바로 판별합니다.",
+      "메시 노드: 지금 연결된 노드와 지난 검사 이후 노드가 바뀌었는지(로밍) 보여 줍니다."
+     ],
+     "dropped": [
+      "웹사이트 검사: 특정 사이트만 문제인지, 인터넷 전체에 장애가 있는지 바로 판별합니다."
+     ],
+     "live_updated": "2026-10-26",
+     "live_version": "1.0.14",
+     "same": false
     },
     "pt-BR": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-12",
-     "live_version": "1.0.13",
-     "same": true
+     "added": [
+      "Otimizado para iPhone Duo. Criado com o SDK mais recente, o app ocupa toda a tela interna e ajusta o layout automaticamente, com o aparelho dobrado ou aberto.",
+      "O Wi-Fi ficou lento ou caindo de novo? O WiFi Aid testa o Wi-Fi, o DNS e a internet com um toque e diz se o problema provavelmente está no seu Wi-Fi, no DNS, na sua operadora ou em um único site, com as evidências por trás de cada diagnóstico.",
+      "O teste profundo continua coletando amostras para pegar conexões instáveis que parecem conectadas mas travam, e em redes Wi-Fi mesh mostra a qual nó você está conectado e se ele mudou desde o último teste.",
+      "Teste também pelo Apple Watch ou por um widget da Tela de Início; o histórico fica só neste dispositivo.",
+      "Fazer um teste — teste Wi-Fi, DNS e internet com um toque e receba o diagnóstico em segundos",
+      "Teste profundo — mais amostras de estabilidade para problemas que vêm e vão",
+      "Testar um site — descubra se só um site caiu ou se é a conexão inteira",
+      "Evidências completas — DNS, TCP, TLS, TTFB, HTTP, IP direto, IPv4 e IPv6, item por item",
+      "Nó mesh — veja a qual nó você está conectado e se trocou de nó",
+      "Histórico — compare resultados anteriores, salvos só neste dispositivo",
+      "Apple Watch — faça um teste pelo pulso",
+      "Widget e iPad — status da conexão na Tela de Início e layout completo no iPad",
+      "Sem conta, anúncios, análises ou rastreamento."
+     ],
+     "dropped": [
+      "Encontre a causa mais provável com testes independentes de rotas, DNS, TCP, TLS, tempos e estabilidade. Uma compra antecipada, sem assinatura, anúncios ou rastreamento.",
+      "Fazer um Teste — Testes de Wi-Fi, DNS e internet com um toque",
+      "Teste profundo — Mais evidências e estabilidade da rede",
+      "Testar um Site — Veja se um site ou toda a internet está falhando",
+      "Evidências — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6",
+      "A conexão parece instável — Flutuação",
+      "Histórico — Registros privados apenas neste dispositivo",
+      "Apple Watch — Fazer um Teste",
+      "Widget · iPad — Conectado · Fazer um Teste",
+      "Sem conta, anúncios ou rastreamento. Registros privados apenas neste dispositivo."
+     ],
+     "live_updated": "2026-10-26",
+     "live_version": "1.0.14",
+     "same": false
     },
     "zh-Hans": {
-     "added": [],
+     "added": [
+      "已针对 iPhone Duo 优化。本应用使用最新开发工具包构建,铺满整块内屏,无论折叠还是展开都会自动调整布局。",
+      "Mesh 节点:显示当前连接的是哪个节点,以及与上次检查相比是否换了节点(漫游)。"
+     ],
      "dropped": [],
-     "live_updated": "2026-10-12",
-     "live_version": "1.0.13",
-     "same": true
+     "live_updated": "2026-10-26",
+     "live_version": "1.0.14",
+     "same": false
     },
     "zh-Hant": {
-     "added": [],
+     "added": [
+      "已針對 iPhone Duo 最佳化。本 App 以最新開發套件建置,填滿整個內螢幕,無論摺起或打開都會自動調整版面。",
+      "Mesh 節點:顯示目前連到哪個節點、和上次檢查相比有沒有換節點(漫遊)。"
+     ],
      "dropped": [],
-     "live_updated": "2026-10-12",
-     "live_version": "1.0.13",
-     "same": true
+     "live_updated": "2026-10-26",
+     "live_version": "1.0.14",
+     "same": false
     }
    },
-   "status": "green"
+   "status": "red"
   },
   "wifiaidlite": {
    "blocked_terms": [],
@@ -5529,11 +6410,11 @@
   "gb"
  ],
  "counts": {
-  "green": 48,
-  "red": 8,
+  "green": 40,
+  "red": 16,
   "unknown": 0
  },
  "errors": [],
- "generated_at": "2026-10-26T01:48:31Z",
+ "generated_at": "2026-10-27T02:29:09Z",
  "schema": "growth.store-copy-drift/v1"
 }

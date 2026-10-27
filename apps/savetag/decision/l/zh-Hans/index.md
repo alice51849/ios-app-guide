@@ -2,7 +2,7 @@
 title: "在 iPhone 上怎么把其他应用里的链接集中存到一个地方？"
 lang: "zh-Hans"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/savetag/decision/l/zh-Hans/index.html"
-modified: "2026-10-26"
+modified: "2026-10-27"
 app_store_id: "6802505528"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

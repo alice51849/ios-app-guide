@@ -2,7 +2,7 @@
 title: "Lumi Math Pro: শিশুদের সংখ্যা — যুক্তির ধাঁধা ও গণিত সমস্যা | iOS App"
 lang: "bn-BD"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimathpro/decision/l/bn-BD/index.html"
-modified: "2026-10-26"
+modified: "2026-10-27"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"

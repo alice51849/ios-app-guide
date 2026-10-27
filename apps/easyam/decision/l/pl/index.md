@@ -2,7 +2,7 @@
 title: "EasyAM: Budzik na dni robocze — Pomija święta, urlop i wolne | iOS App"
 lang: "pl"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/easyam/decision/l/pl/index.html"
-modified: "2026-10-26"
+modified: "2026-10-27"
 app_store_id: "6821790092"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

@@ -23,6 +23,7 @@ import json
 import os
 import subprocess
 import sys
+import time
 import urllib.request
 from pathlib import Path
 from typing import Callable
@@ -217,12 +218,31 @@ class Gh:
         self.repo = repo
         self.runner = runner or self._run
 
-    @staticmethod
-    def _run(argv: list[str]) -> str:
-        completed = subprocess.run(argv, capture_output=True, text=True, timeout=120)
-        if completed.returncode != 0:
-            raise WatchdogError(f"{' '.join(argv[:3])} failed: {completed.stderr.strip()[:300]}")
-        return completed.stdout
+    # 暫時性網路錯誤（本機高負載時常見 TLS handshake timeout）：退避重試，
+    # 只對這類錯誤重試；HTTP 4xx、404 等確定性錯誤第一次就照實失敗。
+    TRANSIENT = ("tls handshake timeout", "i/o timeout", "timeout", "connection reset",
+                 "connection refused", "eof", "no such host", "temporary failure",
+                 "http 502", "http 503", "http 504", "bad gateway", "service unavailable",
+                 "gateway timeout")
+    RETRY_DELAYS = (5, 15, 45)
+
+    @classmethod
+    def _run(cls, argv: list[str]) -> str:
+        last = ""
+        for attempt in range(len(cls.RETRY_DELAYS) + 1):
+            try:
+                completed = subprocess.run(argv, capture_output=True, text=True, timeout=120)
+            except subprocess.TimeoutExpired:
+                last = "subprocess timeout"
+            else:
+                if completed.returncode == 0:
+                    return completed.stdout
+                last = completed.stderr.strip()
+                if not any(token in last.lower() for token in cls.TRANSIENT):
+                    break
+            if attempt < len(cls.RETRY_DELAYS):
+                time.sleep(cls.RETRY_DELAYS[attempt])
+        raise WatchdogError(f"{' '.join(argv[:3])} failed: {last[:300]}")
 
     def api(self, path: str, *, paginate: bool = False) -> object:
         argv = ["gh", "api", path]

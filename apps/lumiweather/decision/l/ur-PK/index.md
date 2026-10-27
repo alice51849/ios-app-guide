@@ -2,7 +2,7 @@
 title: "Lumi موسم: آج کی پیش گوئی — باہر جانے کا اسکور اور لباس | iOS App"
 lang: "ur-PK"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiweather/decision/l/ur-PK/index.html"
-modified: "2026-10-26"
+modified: "2026-10-27"
 app_store_id: "6779552704"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

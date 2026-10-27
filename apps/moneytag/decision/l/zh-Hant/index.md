@@ -2,7 +2,7 @@
 title: "最佳無訂閱的自由接案專案收支追蹤工具"
 lang: "zh-Hant"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/moneytag/decision/l/zh-Hant/index.html"
-modified: "2026-10-26"
+modified: "2026-10-27"
 app_store_id: "6801956402"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

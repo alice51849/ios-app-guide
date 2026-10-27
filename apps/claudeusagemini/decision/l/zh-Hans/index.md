@@ -2,7 +2,7 @@
 title: "UsageNow：AI 用量追踪器 — Claude、Codex、Copilot、Gemini 额度 | iOS App"
 lang: "zh-Hans"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/claudeusagemini/decision/l/zh-Hans/index.html"
-modified: "2026-10-26"
+modified: "2026-10-27"
 app_store_id: "6818607603"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

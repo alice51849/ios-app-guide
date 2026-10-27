@@ -2,7 +2,7 @@
 title: "iPhone에서 Claude와 Codex 사용 한도와 초기화 시각을 확인하는 앱"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/claudeusagemini/decision/l/ko/index.html"
-modified: "2026-10-26"
+modified: "2026-10-27"
 app_store_id: "6818607603"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

@@ -2,7 +2,7 @@
 title: "aplikasi iPhone terbaik untuk menyekat media sosial semasa belajar"
 lang: "ms"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lockhour/decision/l/ms/index.html"
-modified: "2026-10-26"
+modified: "2026-10-27"
 app_store_id: "6780107485"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

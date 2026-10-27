@@ -1,8 +1,8 @@
 {
- "generated": "2026-10-26T04:53:31Z",
+ "generated": "2026-10-27T09:05:46Z",
  "mode": "apply",
  "counts": {
-  "ok_reply": 21,
+  "ok_reply": 23,
   "unknown_app": 47,
   "ok_store_only": 719,
   "ok_backfilled_earlier": 13,
@@ -12,6 +12,30 @@
   "missing": 3
  },
  "rows": [
+  {
+   "channel": "threads",
+   "id": "18356960188216709",
+   "permalink": "https://www.threads.com/@hourstag.app/post/De-uMg2DV4b",
+   "date": "2026-10-27",
+   "app": "mochi",
+   "status": "ok_reply",
+   "text": "Starting my reset now instead of waiting for January. One small checklist for the rest of the year: drink water, a short walk, read before b",
+   "why": "trial",
+   "ios_id": "6785004775",
+   "locale": "en-US"
+  },
+  {
+   "channel": "threads",
+   "id": "17975062890160193",
+   "permalink": "https://www.threads.com/@hourstag.app/post/De-3ZOJjU5X",
+   "date": "2026-10-27",
+   "app": "battai",
+   "status": "ok_reply",
+   "text": "저는 혼자 앱을 만드는 개발자입니다. 요즘 '배터리가 하루를 못 버티는데 기변할까, 배터리만 바꿀까' 고민하는 분이 많더라고요. 느낌으로 결정하면 큰돈이 그냥 나갑니다. 그래서 BattAI를 만들었어요. 공개 iOS API의 다섯 가지 값(배터리 잔량",
+   "why": "brand",
+   "ios_id": "6802423998",
+   "locale": "ko"
+  },
   {
    "channel": "threads",
    "id": "17938058007394395",

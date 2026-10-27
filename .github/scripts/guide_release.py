@@ -71,7 +71,12 @@ def undeployed(api: Callable[[str], object], repo: str, live_sha: str, head: str
     pending: list[Pending] = []
     for commit in commits[:MAX_COMMITS_SCANNED]:
         sha = str(commit.get("sha") or "")
-        detail = api(f"repos/{repo}/commits/{sha}") or {}
+        try:
+            detail = api(f"repos/{repo}/commits/{sha}") or {}
+        except RuntimeError:
+            # 暫時性網路錯誤（高負載下 gh 逾時）重試後仍失敗：這顆 commit 的檔案清單未知，
+            # 依下方保守規則視為站內容，而不是讓整輪發布失敗（10-27 配對發布連兩輪因此中斷）。
+            detail = {}
         files = detail.get("files") or []
         # The commit API drops the file list of very large commits (a 62k-page
         # site-wide pass came back with files=[] and was judged "up to date")

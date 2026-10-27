@@ -1,7 +1,7 @@
 {
   "version": 2,
   "source": "Apple iTunes Lookup API",
-  "checked_at": "2026-10-26T14:23:06Z",
+  "checked_at": "2026-10-27T11:43:55Z",
   "app_count": 56,
   "app_ids": [
     "6754218117",
@@ -7433,8 +7433,8 @@
         "price": "0",
         "currency": "JPY",
         "formatted_price": "無料",
-        "rating_value": 5.0,
-        "rating_count": 1
+        "rating_value": 4.0,
+        "rating_count": 2
       },
       "6779745474": {
         "price": "1000",
@@ -12551,7 +12551,9 @@
       "6824946559": {
         "price": "0",
         "currency": "TWD",
-        "formatted_price": "免費"
+        "formatted_price": "免費",
+        "rating_value": 5.0,
+        "rating_count": 1
       }
     },
     "ua": {
@@ -12956,8 +12958,8 @@
         "price": "0",
         "currency": "USD",
         "formatted_price": "Free",
-        "rating_value": 4.3,
-        "rating_count": 37
+        "rating_value": 4.2,
+        "rating_count": 40
       },
       "6787193643": {
         "price": "0",

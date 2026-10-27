@@ -17,6 +17,7 @@ publisher: "Lumi Studio"
 - 免費開始 · 一次性解鎖
 - 無廣告
 - App Store · 免費
+- ★ 5.0/5 · 1
 
 [在 App Store 取得 Foldable Wallpaper Studio](https://apps.apple.com/tw/app/id6824946559?pt=118326163&ct=geo_pick&mt=8)
 

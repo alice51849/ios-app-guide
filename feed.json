@@ -1,7 +1,7 @@
 {
  "schema": "lumi.social-feed/v1",
  "date": "2026-10-27",
- "generated_at": "2026-10-27T06:52:36Z",
+ "generated_at": "2026-10-27T16:04:11Z",
  "items": {
   "bluesky": [
    {
@@ -96,48 +96,69 @@
    },
    {
     "kind": "clip",
-    "key": "easyam/en",
-    "locale": "en",
-    "app": "easyam",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/8n1x9x.mp4",
-    "hook": "Holidays skipped automatically",
-    "name": "EasyAM: Holiday Alarm Clock",
-    "title": "Holidays skipped automatically | Rings for work, skips days off | EasyAM holiday alarm",
+    "key": "maskmyfile/cs",
+    "locale": "cs",
+    "app": "maskmyfile",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/b9a59b.mp4",
+    "hook": "Něco chybí? Přidejte to",
+    "name": "Mask My File: Odstraňte údaje",
+    "title": "Něco chybí? Přidejte to | Skryjte citlivé informace | Mask My File",
     "tags": [
-     "#HolidayAlarmClock",
-     "#Workday",
-     "#Shift",
-     "#Public",
-     "#Calendar",
-     "#EasyAMHolidayAlarm"
+     "#OdstraňteÚdaje",
+     "#Anonymizace",
+     "#Cenzura",
+     "#OsobníÚdaje",
+     "#ObčanskýPrůkaz",
+     "#MaskMyFile"
     ],
-    "caption": "Holidays skipped automatically\nAdd time off, vacations stay quiet\nRings for work, skips days off\nEasyAM: Holiday Alarm Clock\nSearch “holiday alarm clock” on the App Store\nAlso on Google Play\n\n#HolidayAlarmClock #Workday #EasyAMholidayalarm",
-    "button": "Get it on the App Store",
+    "caption": "Něco chybí? Přidejte to\nUloží novou kopii, originál zůstane\nSkryjte citlivé informace\nMask My File: Odstraňte údaje\nVyhledejte „Mask My File“ v App Storu\nTaké na Google Play\n\n#OdstraňteÚdaje #Anonymizace #MaskMyFile",
+    "button": "Stáhnout z App Storu",
     "variant": "b",
-    "alt": "EasyAM: Holiday Alarm Clock — Holidays skipped automatically — Add time off, vacations stay quiet — Rings for work, skips days off",
-    "store": "https://apps.apple.com/us/app/id6821790092?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam",
+    "alt": "Mask My File: Odstraňte údaje — Něco chybí? Přidejte to — Uloží novou kopii, originál zůstane — Skryjte citlivé informace",
+    "store": "https://apps.apple.com/cz/app/id6792850916?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MaskMyFile&referrer=utm_source%3Dsocial%26utm_campaign%3Dmaskmyfile",
     "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6821790092?action=write-review"
+     "label": "Už tuto aplikaci používáte? Ohodnoťte ji nebo napište recenzi v App Storu",
+     "url": "https://apps.apple.com/app/id6792850916?action=write-review"
     },
     "keywords": [
-     "workday",
-     "shift",
-     "public",
-     "calendar",
-     "weekday",
-     "vacation"
+     "anonymizace",
+     "cenzura",
+     "osobní údaje",
+     "občanský průkaz",
+     "lékařská zpráva",
+     "smlouva"
     ],
-    "keyline": "Rings for work, skips days off",
+    "keyline": "Skryjte citlivé informace",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "f45a7a4e972af86c",
+     "board": "f88a32e9a9deb640",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "card/suneung2027/2026-10-27",
+    "locale": "ko",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/countdown-cards/card-20261027.jpg",
+    "caption": "2027학년도 수능 D-23\n남은 날을 계획으로\n\nApp Store · Google Play에서 'CountDaysNow' 검색\n\n#디데이 #카운트다운 #날짜계산",
+    "title": "2027학년도 수능 D-23",
+    "alt": "CountDaysNow — 2027학년도 수능 D-23 — 남은 날을 계획으로 — App Store · Google Play에서 'CountDaysNow' 검색 — 디데이 · 카운트다운 · 날짜계산",
+    "name": "CountDaysNow",
+    "hook": "2027학년도 수능 D-23",
+    "tags": [
+     "#디데이",
+     "#카운트다운",
+     "#날짜계산",
+     "#기념일",
+     "#생일"
+    ],
+    "button": "App Store에서 받기",
+    "store": "https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow"
    },
    {
     "kind": "card",
@@ -1261,48 +1282,69 @@
    },
    {
     "kind": "clip",
-    "key": "easyam/en",
-    "locale": "en",
-    "app": "easyam",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/8n1x9x.mp4",
-    "hook": "Holidays skipped automatically",
-    "name": "EasyAM: Holiday Alarm Clock",
-    "title": "Holidays skipped automatically | Rings for work, skips days off | EasyAM holiday alarm",
+    "key": "maskmyfile/cs",
+    "locale": "cs",
+    "app": "maskmyfile",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/b9a59b.mp4",
+    "hook": "Něco chybí? Přidejte to",
+    "name": "Mask My File: Odstraňte údaje",
+    "title": "Něco chybí? Přidejte to | Skryjte citlivé informace | Mask My File",
     "tags": [
-     "#HolidayAlarmClock",
-     "#Workday",
-     "#Shift",
-     "#Public",
-     "#Calendar",
-     "#EasyAMHolidayAlarm"
+     "#OdstraňteÚdaje",
+     "#Anonymizace",
+     "#Cenzura",
+     "#OsobníÚdaje",
+     "#ObčanskýPrůkaz",
+     "#MaskMyFile"
     ],
-    "caption": "Holidays skipped automatically\nAdd time off, vacations stay quiet\nRings for work, skips days off\nEasyAM: Holiday Alarm Clock\nSearch “holiday alarm clock” on the App Store\nAlso on Google Play\n\n#HolidayAlarmClock #Workday #Shift #Public #EasyAMholidayalarm",
-    "button": "Get it on the App Store",
+    "caption": "Něco chybí? Přidejte to\nUloží novou kopii, originál zůstane\nSkryjte citlivé informace\nMask My File: Odstraňte údaje\nVyhledejte „Mask My File“ v App Storu\nTaké na Google Play\n\n#OdstraňteÚdaje #Anonymizace #Cenzura #OsobníÚdaje #MaskMyFile",
+    "button": "Stáhnout z App Storu",
     "variant": "b",
-    "alt": "EasyAM: Holiday Alarm Clock — Holidays skipped automatically — Add time off, vacations stay quiet — Rings for work, skips days off",
-    "store": "https://apps.apple.com/us/app/id6821790092?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam",
+    "alt": "Mask My File: Odstraňte údaje — Něco chybí? Přidejte to — Uloží novou kopii, originál zůstane — Skryjte citlivé informace",
+    "store": "https://apps.apple.com/cz/app/id6792850916?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MaskMyFile&referrer=utm_source%3Dsocial%26utm_campaign%3Dmaskmyfile",
     "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6821790092?action=write-review"
+     "label": "Už tuto aplikaci používáte? Ohodnoťte ji nebo napište recenzi v App Storu",
+     "url": "https://apps.apple.com/app/id6792850916?action=write-review"
     },
     "keywords": [
-     "workday",
-     "shift",
-     "public",
-     "calendar",
-     "weekday",
-     "vacation"
+     "anonymizace",
+     "cenzura",
+     "osobní údaje",
+     "občanský průkaz",
+     "lékařská zpráva",
+     "smlouva"
     ],
-    "keyline": "Rings for work, skips days off",
+    "keyline": "Skryjte citlivé informace",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "f45a7a4e972af86c",
+     "board": "f88a32e9a9deb640",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "card/suneung2027/2026-10-27",
+    "locale": "ko",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/countdown-cards/card-20261027.jpg",
+    "caption": "2027학년도 수능 D-23\n남은 날을 계획으로\n\nApp Store · Google Play에서 'CountDaysNow' 검색\n\n#디데이 #카운트다운 #날짜계산 #기념일 #생일",
+    "title": "2027학년도 수능 D-23",
+    "alt": "CountDaysNow — 2027학년도 수능 D-23 — 남은 날을 계획으로 — App Store · Google Play에서 'CountDaysNow' 검색 — 디데이 · 카운트다운 · 날짜계산",
+    "name": "CountDaysNow",
+    "hook": "2027학년도 수능 D-23",
+    "tags": [
+     "#디데이",
+     "#카운트다운",
+     "#날짜계산",
+     "#기념일",
+     "#생일"
+    ],
+    "button": "App Store에서 받기",
+    "store": "https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow"
    }
   ],
   "youtube": [
@@ -1428,60 +1470,62 @@
    },
    {
     "kind": "clip",
-    "key": "easyam/en",
-    "locale": "en",
-    "app": "easyam",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/8n1x9x.mp4",
-    "hook": "Holidays skipped automatically",
-    "name": "EasyAM: Holiday Alarm Clock",
-    "title": "Holidays skipped automatically | Rings for work, skips days off | EasyAM holiday alarm",
+    "key": "maskmyfile/cs",
+    "locale": "cs",
+    "app": "maskmyfile",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/b9a59b.mp4",
+    "hook": "Něco chybí? Přidejte to",
+    "name": "Mask My File: Odstraňte údaje",
+    "title": "Něco chybí? Přidejte to | Skryjte citlivé informace | Mask My File",
     "tags": [
-     "#HolidayAlarmClock",
-     "#Workday",
-     "#Shift",
-     "#Public",
-     "#Calendar",
-     "#EasyAMHolidayAlarm"
+     "#OdstraňteÚdaje",
+     "#Anonymizace",
+     "#Cenzura",
+     "#OsobníÚdaje",
+     "#ObčanskýPrůkaz",
+     "#MaskMyFile"
     ],
-    "caption": "Holidays skipped automatically\nAdd time off, vacations stay quiet\nRings for work, skips days off\nEasyAM: Holiday Alarm Clock\nSearch “holiday alarm clock” on the App Store\nAlso on Google Play\n\n#HolidayAlarmClock #Workday #Shift #Public #EasyAMholidayalarm",
-    "button": "Get it on the App Store",
+    "caption": "Něco chybí? Přidejte to\nUloží novou kopii, originál zůstane\nSkryjte citlivé informace\nMask My File: Odstraňte údaje\nVyhledejte „Mask My File“ v App Storu\nTaké na Google Play\n\n#OdstraňteÚdaje #Anonymizace #Cenzura #OsobníÚdaje #MaskMyFile",
+    "button": "Stáhnout z App Storu",
     "variant": "b",
-    "alt": "EasyAM: Holiday Alarm Clock — Holidays skipped automatically — Add time off, vacations stay quiet — Rings for work, skips days off",
-    "store": "https://apps.apple.com/us/app/id6821790092?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam",
+    "alt": "Mask My File: Odstraňte údaje — Něco chybí? Přidejte to — Uloží novou kopii, originál zůstane — Skryjte citlivé informace",
+    "store": "https://apps.apple.com/cz/app/id6792850916?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MaskMyFile&referrer=utm_source%3Dsocial%26utm_campaign%3Dmaskmyfile",
     "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6821790092?action=write-review"
+     "label": "Už tuto aplikaci používáte? Ohodnoťte ji nebo napište recenzi v App Storu",
+     "url": "https://apps.apple.com/app/id6792850916?action=write-review"
     },
     "keywords": [
-     "workday",
-     "shift",
-     "public",
-     "calendar",
-     "weekday",
-     "vacation"
+     "anonymizace",
+     "cenzura",
+     "osobní údaje",
+     "občanský průkaz",
+     "lékařská zpráva",
+     "smlouva"
     ],
-    "keyline": "Rings for work, skips days off",
+    "keyline": "Skryjte citlivé informace",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "f45a7a4e972af86c",
+     "board": "f88a32e9a9deb640",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "youtube": {
-     "title": "Holidays skipped automatically | EasyAM holiday alarm #Shorts",
-     "description": "Holidays skipped automatically\nAdd time off, vacations stay quiet\nRings for work, skips days off\n\nEasyAM: Holiday Alarm Clock\nApp Store: https://apps.apple.com/us/app/id6821790092?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam\nAlready using this app? Rate or review it on the App Store\nhttps://apps.apple.com/app/id6821790092?action=write-review\n\nworkday · shift · public · calendar · weekday · vacation\n\n#Shorts #HolidayAlarmClock #EasyAMholidayalarm",
+     "title": "Něco chybí? Přidejte to | Mask My File #Shorts",
+     "description": "Něco chybí? Přidejte to\nUloží novou kopii, originál zůstane\nSkryjte citlivé informace\n\nMask My File: Odstraňte údaje\nApp Store: https://apps.apple.com/cz/app/id6792850916?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MaskMyFile&referrer=utm_source%3Dsocial%26utm_campaign%3Dmaskmyfile\nUž tuto aplikaci používáte? Ohodnoťte ji nebo napište recenzi v App Storu\nhttps://apps.apple.com/app/id6792850916?action=write-review\n\nanonymizace · cenzura · osobní údaje · občanský průkaz · lékařská zpráva · smlouva\n\n#Shorts #OdstraňteÚdaje #MaskMyFile",
      "tags": [
-      "workday",
-      "shift",
-      "public",
-      "calendar",
-      "weekday",
-      "vacation",
-      "HolidayAlarmClock",
-      "EasyAMHolidayAlarm",
-      "EasyAM holiday alarm"
+      "anonymizace",
+      "cenzura",
+      "osobní údaje",
+      "občanský průkaz",
+      "lékařská zpráva",
+      "smlouva",
+      "OdstraňteÚdaje",
+      "OsobníÚdaje",
+      "ObčanskýPrůkaz",
+      "MaskMyFile",
+      "Mask My File"
      ]
     },
     "slot": 15
@@ -1588,52 +1632,77 @@
    },
    {
     "kind": "clip",
-    "key": "easyam/en",
-    "locale": "en",
-    "app": "easyam",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/8n1x9x.mp4",
-    "hook": "Holidays skipped automatically",
-    "name": "EasyAM: Holiday Alarm Clock",
-    "title": "Holidays skipped automatically | Rings for work, skips days off | EasyAM holiday alarm",
+    "key": "maskmyfile/cs",
+    "locale": "cs",
+    "app": "maskmyfile",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/b9a59b.mp4",
+    "hook": "Něco chybí? Přidejte to",
+    "name": "Mask My File: Odstraňte údaje",
+    "title": "Něco chybí? Přidejte to | Skryjte citlivé informace | Mask My File",
     "tags": [
-     "#HolidayAlarmClock",
-     "#Workday",
-     "#Shift",
-     "#Public",
-     "#Calendar",
-     "#EasyAMHolidayAlarm"
+     "#OdstraňteÚdaje",
+     "#Anonymizace",
+     "#Cenzura",
+     "#OsobníÚdaje",
+     "#ObčanskýPrůkaz",
+     "#MaskMyFile"
     ],
-    "caption": "Holidays skipped automatically\nAdd time off, vacations stay quiet\nRings for work, skips days off\nEasyAM: Holiday Alarm Clock\nSearch “holiday alarm clock” on the App Store\nAlso on Google Play\n\n#HolidayAlarmClock #Workday #Shift #Public #EasyAMholidayalarm",
-    "button": "Get it on the App Store",
+    "caption": "Něco chybí? Přidejte to\nUloží novou kopii, originál zůstane\nSkryjte citlivé informace\nMask My File: Odstraňte údaje\nVyhledejte „Mask My File“ v App Storu\nTaké na Google Play\n\n#OdstraňteÚdaje #Anonymizace #Cenzura #OsobníÚdaje #MaskMyFile",
+    "button": "Stáhnout z App Storu",
     "variant": "b",
-    "alt": "EasyAM: Holiday Alarm Clock — Holidays skipped automatically — Add time off, vacations stay quiet — Rings for work, skips days off",
-    "store": "https://apps.apple.com/us/app/id6821790092?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam",
+    "alt": "Mask My File: Odstraňte údaje — Něco chybí? Přidejte to — Uloží novou kopii, originál zůstane — Skryjte citlivé informace",
+    "store": "https://apps.apple.com/cz/app/id6792850916?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MaskMyFile&referrer=utm_source%3Dsocial%26utm_campaign%3Dmaskmyfile",
     "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6821790092?action=write-review"
+     "label": "Už tuto aplikaci používáte? Ohodnoťte ji nebo napište recenzi v App Storu",
+     "url": "https://apps.apple.com/app/id6792850916?action=write-review"
     },
     "keywords": [
-     "workday",
-     "shift",
-     "public",
-     "calendar",
-     "weekday",
-     "vacation"
+     "anonymizace",
+     "cenzura",
+     "osobní údaje",
+     "občanský průkaz",
+     "lékařská zpráva",
+     "smlouva"
     ],
-    "keyline": "Rings for work, skips days off",
+    "keyline": "Skryjte citlivé informace",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "f45a7a4e972af86c",
+     "board": "f88a32e9a9deb640",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "Holidays skipped automatically\nAdd time off, vacations stay quiet\nRings for work, skips days off\nEasyAM: Holiday Alarm Clock\nSearch “holiday alarm clock” on the App Store\nAlso on Google Play\n\n#HolidayAlarmClock #Workday #Shift #Public #EasyAMholidayalarm\n\nGet it on the App Store: https://apps.apple.com/us/app/id6821790092?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam",
-     "link": "https://apps.apple.com/us/app/id6821790092?pt=118326163&ct=social&mt=8"
+     "description": "Něco chybí? Přidejte to\nUloží novou kopii, originál zůstane\nSkryjte citlivé informace\nMask My File: Odstraňte údaje\nVyhledejte „Mask My File“ v App Storu\nTaké na Google Play\n\n#OdstraňteÚdaje #Anonymizace #Cenzura #OsobníÚdaje #MaskMyFile\n\nStáhnout z App Storu: https://apps.apple.com/cz/app/id6792850916?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MaskMyFile&referrer=utm_source%3Dsocial%26utm_campaign%3Dmaskmyfile",
+     "link": "https://apps.apple.com/cz/app/id6792850916?pt=118326163&ct=social&mt=8"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "card/suneung2027/2026-10-27",
+    "locale": "ko",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/countdown-cards/card-20261027.jpg",
+    "caption": "2027학년도 수능 D-23\n남은 날을 계획으로\n\nApp Store · Google Play에서 'CountDaysNow' 검색\n\n#디데이 #카운트다운 #날짜계산 #기념일 #생일",
+    "title": "2027학년도 수능 D-23",
+    "alt": "CountDaysNow — 2027학년도 수능 D-23 — 남은 날을 계획으로 — App Store · Google Play에서 'CountDaysNow' 검색 — 디데이 · 카운트다운 · 날짜계산",
+    "name": "CountDaysNow",
+    "hook": "2027학년도 수능 D-23",
+    "tags": [
+     "#디데이",
+     "#카운트다운",
+     "#날짜계산",
+     "#기념일",
+     "#생일"
+    ],
+    "button": "App Store에서 받기",
+    "store": "https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
+    "pinterest": {
+     "description": "2027학년도 수능 D-23\n남은 날을 계획으로\n\nApp Store · Google Play에서 'CountDaysNow' 검색\n\n#디데이 #카운트다운 #날짜계산 #기념일 #생일\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
+     "link": "https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8"
+    }
    },
    {
     "kind": "card",
@@ -4452,49 +4521,49 @@
    },
    {
     "kind": "clip",
-    "key": "easyam/en",
-    "locale": "en",
-    "app": "easyam",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/8n1x9x.mp4",
-    "hook": "Holidays skipped automatically",
-    "name": "EasyAM: Holiday Alarm Clock",
-    "title": "Holidays skipped automatically | Rings for work, skips days off | EasyAM holiday alarm",
+    "key": "maskmyfile/cs",
+    "locale": "cs",
+    "app": "maskmyfile",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/b9a59b.mp4",
+    "hook": "Něco chybí? Přidejte to",
+    "name": "Mask My File: Odstraňte údaje",
+    "title": "Něco chybí? Přidejte to | Skryjte citlivé informace | Mask My File",
     "tags": [
-     "#HolidayAlarmClock",
-     "#Workday",
-     "#Shift",
-     "#Public",
-     "#Calendar",
-     "#EasyAMHolidayAlarm"
+     "#OdstraňteÚdaje",
+     "#Anonymizace",
+     "#Cenzura",
+     "#OsobníÚdaje",
+     "#ObčanskýPrůkaz",
+     "#MaskMyFile"
     ],
-    "caption": "Holidays skipped automatically\nAdd time off, vacations stay quiet\nRings for work, skips days off\nEasyAM: Holiday Alarm Clock\nSearch “holiday alarm clock” on the App Store\nAlso on Google Play\n\n#HolidayAlarmClock #Workday #Shift #Public #EasyAMholidayalarm",
-    "button": "Get it on the App Store",
+    "caption": "Něco chybí? Přidejte to\nUloží novou kopii, originál zůstane\nSkryjte citlivé informace\nMask My File: Odstraňte údaje\nVyhledejte „Mask My File“ v App Storu\nTaké na Google Play\n\n#OdstraňteÚdaje #Anonymizace #Cenzura #OsobníÚdaje #MaskMyFile",
+    "button": "Stáhnout z App Storu",
     "variant": "b",
-    "alt": "EasyAM: Holiday Alarm Clock — Holidays skipped automatically — Add time off, vacations stay quiet — Rings for work, skips days off",
-    "store": "https://apps.apple.com/us/app/id6821790092?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam",
+    "alt": "Mask My File: Odstraňte údaje — Něco chybí? Přidejte to — Uloží novou kopii, originál zůstane — Skryjte citlivé informace",
+    "store": "https://apps.apple.com/cz/app/id6792850916?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MaskMyFile&referrer=utm_source%3Dsocial%26utm_campaign%3Dmaskmyfile",
     "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6821790092?action=write-review"
+     "label": "Už tuto aplikaci používáte? Ohodnoťte ji nebo napište recenzi v App Storu",
+     "url": "https://apps.apple.com/app/id6792850916?action=write-review"
     },
     "keywords": [
-     "workday",
-     "shift",
-     "public",
-     "calendar",
-     "weekday",
-     "vacation"
+     "anonymizace",
+     "cenzura",
+     "osobní údaje",
+     "občanský průkaz",
+     "lékařská zpráva",
+     "smlouva"
     ],
-    "keyline": "Rings for work, skips days off",
+    "keyline": "Skryjte citlivé informace",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "f45a7a4e972af86c",
+     "board": "f88a32e9a9deb640",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "Holidays skipped automatically\nAdd time off, vacations stay quiet\nRings for work, skips days off\nEasyAM: Holiday Alarm Clock\nSearch “holiday alarm clock” on the App Store\nAlso on Google Play\n\n#HolidayAlarmClock #Workday #Shift #Public #EasyAMholidayalarm\n\nGet it on the App Store: https://apps.apple.com/us/app/id6821790092?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam"
+     "caption": "Něco chybí? Přidejte to\nUloží novou kopii, originál zůstane\nSkryjte citlivé informace\nMask My File: Odstraňte údaje\nVyhledejte „Mask My File“ v App Storu\nTaké na Google Play\n\n#OdstraňteÚdaje #Anonymizace #Cenzura #OsobníÚdaje #MaskMyFile\n\nStáhnout z App Storu: https://apps.apple.com/cz/app/id6792850916?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MaskMyFile&referrer=utm_source%3Dsocial%26utm_campaign%3Dmaskmyfile"
     },
     "slot": 15
    }

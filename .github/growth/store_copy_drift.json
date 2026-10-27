@@ -3339,31 +3339,31 @@
     "Sereno"
    ],
    "live_updated": "2026-10-27",
-   "live_version": "1.1.2",
+   "live_version": "1.1.1",
    "locales": {
     "de-DE": {
+     "added": [
+      "Sereno verwandelt Ihr Telefon in eine Klangmaschine für Schlaf, Konzentration und Entspannung. Regen, Meer, Wind, Feuer und mehr sind echte Aufnahmen vor Ort, gemischt zu über 1000 einzigartigen Klanglandschaften und beim Zuhören zufällig neu angeordnet, sodass Sie nie eine feste Schleife hören.",
+      "Fertige Szenen für Schlaf, tiefe Konzentration, Lernen, Entspannung, Meditation, Natur, Lesen, Reisen und mehr. Speichern Sie Ihre Lieblingsmixe.",
+      "Für das iPhone Duo optimiert."
+     ],
+     "dropped": [
+      "Optimiert für das iPhone Duo. Die mit dem neuesten SDK entwickelte App füllt das gesamte innere Display und passt das Layout automatisch an, egal ob zugeklappt oder aufgeklappt.",
+      "Sereno macht Ihr iPhone zur Klangmaschine für den Schlaf: Kombinieren Sie Regen, Meer, Feuer, Ventilator und weißes, pinkes oder braunes Rauschen und stellen Sie die Lautstärke jeder Ebene einzeln ein.",
+      "Naturklänge sind echte Field-Recordings, die sich beim Hören zufällig neu anordnen – nie eine feste Schleife – und über 1000 fertige Mischungen bieten einen schnellen Einstieg.",
+      "Der Schlaf-Timer blendet sanft aus, das Sonnenaufgang-Wecken begrüßt Sie mit Vogelgesang, und die Wiedergabe läuft offline und auf dem Sperrbildschirm weiter.",
+      "Fertige Szenen: Regnerische Nacht, Tiefer Schlaf, Ruhiger Fokus, Lernsitzung, Meditation und Nachtflug. Eigene Szenen können Sie speichern und benennen."
+     ],
+     "live_updated": "2026-10-18",
+     "live_version": "1.1.1",
+     "same": false
+    },
+    "en-GB": {
      "added": [],
      "dropped": [],
      "live_updated": "2026-10-27",
      "live_version": "1.1.2",
      "same": true
-    },
-    "en-GB": {
-     "added": [
-      "Sereno turns your phone into a sound machine for sleep, focus, and relaxation. Rain, ocean, wind, fire, and more are real field recordings, blended into 1000+ unique soundscapes and re-sequenced at random as you listen, so you never hear a fixed loop.",
-      "Ready-made scenes for sleep, deep focus, study, relaxation, meditation, nature, reading, travel, and more. Save your favourite mixes.",
-      "Optimised for iPhone Duo."
-     ],
-     "dropped": [
-      "Optimised for iPhone Duo. Built with the latest SDK, the app fills the entire inner display and automatically adjusts its layout whether the device is folded or open.",
-      "Sereno turns your iPhone into a sleep sound machine: layer rain, ocean, fire, fans and white, pink or brown noise, and set each layer's volume to build your own mix.",
-      "Nature sounds are real field recordings that reshuffle as you listen — never a fixed loop — and 1000+ ready-made blends give you a place to start.",
-      "A sleep timer fades out gently, a sunrise wake-up greets you with birdsong, and playback keeps going offline and on the lock screen.",
-      "Ready-made scenes like Rainy Night, Deep Sleep, Steady Focus, Study Session, Meditation and Red-Eye Flight. Save and name your own."
-     ],
-     "live_updated": "2026-10-18",
-     "live_version": "1.1.1",
-     "same": false
     },
     "en-US": {
      "added": [],
@@ -3373,21 +3373,11 @@
      "same": true
     },
     "es-ES": {
-     "added": [
-      "Sereno convierte tu teléfono en una máquina de sonidos para dormir, concentrarte y relajarte. La lluvia, el océano, el viento, el fuego y mucho más son grabaciones de campo reales, combinadas en más de 1000 paisajes sonoros únicos y reordenadas al azar mientras escuchas, así que nunca oirás un bucle fijo.",
-      "Escenas preparadas para dormir, concentración profunda, estudio, relajación, meditación, naturaleza, lectura, viajes y más. Guarda tus mezclas favoritas.",
-      "Optimizada para el iPhone Duo."
-     ],
-     "dropped": [
-      "Optimizada para el iPhone Duo. Creada con el SDK más reciente, la app ocupa toda la pantalla interior y ajusta su diseño automáticamente, con el dispositivo plegado o desplegado.",
-      "Sereno convierte tu iPhone en una máquina de sonidos para dormir: combina lluvia, mar, fuego, ventilador y ruido blanco, rosa o marrón, y ajusta el volumen de cada capa para crear tu propia mezcla.",
-      "Los sonidos de la naturaleza son grabaciones reales que se reordenan al azar mientras escuchas, nunca en un bucle fijo, y tienes más de 1000 mezclas listas para empezar.",
-      "El temporizador de sueño se apaga suavemente, el despertar con el amanecer te recibe con cantos de pájaros y la reproducción sigue sin conexión y con la pantalla bloqueada.",
-      "Escenas listas: Noche Lluviosa, Sueño Profundo, Enfoque constante, Sesión de Estudio, Meditación y Vuelo Nocturno. Guarda y pon nombre a las tuyas."
-     ],
-     "live_updated": "2026-10-18",
-     "live_version": "1.1.1",
-     "same": false
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-27",
+     "live_version": "1.1.2",
+     "same": true
     },
     "fr-FR": {
      "added": [
@@ -3414,11 +3404,21 @@
      "same": true
     },
     "ko": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-27",
-     "live_version": "1.1.2",
-     "same": true
+     "added": [
+      "Sereno는 휴대폰을 수면, 집중, 휴식을 위한 사운드 머신으로 바꿔 줍니다. 비, 바다, 바람, 불 등의 소리는 실제 현장 녹음으로, 1000개 이상의 독특한 사운드스케이프로 혼합되며 듣는 동안 무작위로 재배열되므로 고정된 루프가 들리지 않습니다.",
+      "수면, 깊은 집중, 공부, 휴식, 명상, 자연, 독서, 여행 등을 위한 준비된 장면. 마음에 드는 믹스를 저장하세요.",
+      "iPhone Duo에 최적화."
+     ],
+     "dropped": [
+      "iPhone Duo에 최적화되었습니다. 최신 개발 도구로 빌드되어 안쪽 디스플레이 전체를 가득 채우며, 접거나 펼쳐도 레이아웃이 자동으로 조정됩니다.",
+      "Sereno는 iPhone을 수면 사운드 머신으로 바꿔 줍니다. 빗소리, 파도, 모닥불, 선풍기에 화이트·핑크·브라운 노이즈를 겹치고 레이어마다 볼륨을 따로 맞춰 나만의 믹스를 만드세요.",
+      "자연의 소리는 실제 현장 녹음이며 듣는 동안 무작위로 순서가 바뀌어 같은 루프가 반복되지 않아요. 1000가지가 넘는 완성된 믹스로 바로 시작할 수도 있어요.",
+      "수면 타이머는 소리를 부드럽게 줄여 주고, 일출 알람은 새소리로 아침을 열어 줍니다. 오프라인에서도, 잠금 화면에서도 재생이 계속돼요.",
+      "바로 쓸 수 있는 장면: 비 오는 밤, 깊은 수면, 차분한 집중, 공부 세션, 명상, 야간 비행. 직접 만든 믹스도 장면으로 저장하고 이름을 붙일 수 있어요."
+     ],
+     "live_updated": "2026-10-18",
+     "live_version": "1.1.1",
+     "same": false
     },
     "pt-BR": {
      "added": [
@@ -4737,6 +4737,6 @@
   "unknown": 0
  },
  "errors": [],
- "generated_at": "2026-10-27T04:46:04Z",
+ "generated_at": "2026-10-27T05:06:26Z",
  "schema": "growth.store-copy-drift/v1"
 }

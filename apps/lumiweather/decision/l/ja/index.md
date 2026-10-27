@@ -21,7 +21,7 @@ publisher: "Lumi Studio"
 - プライベート／端末内
 - ウィジェット
 - App Store · 無料
-- ★ 5.0/5 · 1
+- ★ 4.0/5 · 2
 
 [App Store で ルミのおてんき星：天気予報・今日の服装 を入手](https://apps.apple.com/jp/app/id6779552704?pt=118326163&ct=geo_pick&mt=8)
 

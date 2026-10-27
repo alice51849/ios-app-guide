@@ -270,7 +270,7 @@
       "record_count": 56
     },
     "bn-BD": {
-      "date_modified": "2026-10-27T11:17:22Z",
+      "date_modified": "2026-10-27T13:36:27Z",
       "formats": {
         "atom": {
           "accepted_content_types": [
@@ -280,7 +280,7 @@
           ],
           "content_type": "application/atom+xml",
           "path": "bn-BD/feed.xml",
-          "sha256": "ac2f6ad35a6c5e60ece1f699110414e2dccbf715319229fa5f29f30781862688",
+          "sha256": "ce7f8a9ab120a65b37195626ceb1df0b427496bce0aa47daa17eb36551dc4d53",
           "url": "https://open.cait518.cc/ios-app-guide/bn-BD/feed.xml"
         },
         "json_feed": {
@@ -290,7 +290,7 @@
           ],
           "content_type": "application/feed+json",
           "path": "bn-BD/feed.json",
-          "sha256": "fa6f1de8256dd5f7ca11246c6759259476763eb4f01209f6910eef39b4517727",
+          "sha256": "9c659ea489e84083c3a2a91c7e579a25aa796be85cd2f31dacd22c4d929aa991",
           "url": "https://open.cait518.cc/ios-app-guide/bn-BD/feed.json"
         },
         "rss": {
@@ -301,7 +301,7 @@
           ],
           "content_type": "application/rss+xml",
           "path": "bn-BD/rss.xml",
-          "sha256": "4e7a79e5f533c68e27fc5644472dab036035c75be9c61721a5bc4f9d5298897c",
+          "sha256": "a92c0ab9457582959a384f113af9ad3aa01284c1e0a19983094823a5c0cc1fee",
           "url": "https://open.cait518.cc/ios-app-guide/bn-BD/rss.xml"
         }
       },
@@ -2230,7 +2230,7 @@
       "record_count": 56
     }
   },
-  "generation_digest": "40b751308ad9ef8654a0a73f3c736eceb1d39b8b5d50597037bd81eafd78b7fb",
+  "generation_digest": "4eddfbdb807bdeb641a688f3d4468d172b44475a34adfcd452d825dbe6c997c9",
   "locale_count": 50,
   "notification_feed_count": 147,
   "purchase_models": {
@@ -2242,7 +2242,7 @@
   "site": "https://open.cait518.cc/ios-app-guide",
   "sitemap_sha256": "eedfaec0eecc743288e44042fbc7a343596da7c95687d0e8dca5ff2c7baa068d",
   "source": {
-    "catalog_content_digest": "87e3bdee21c4a99ca66bd8b3a5cc7f7c8ae92be6620c7c05c69254c308fc3c5c",
+    "catalog_content_digest": "2998368c0c16aa0786ee030084387046f62e8553faf6e89343536964628e3082",
     "roster_digest": "589537afbd619ab8144add3b9c3a344956d29f015950552835f7eeb1a09fdb56",
     "source_files": {
       "../social/videogen/registry.py": "fa574d5e16655040f5d61ddf0ffc8b95e5d578b4fc6a5d66f2bc092159813b66",

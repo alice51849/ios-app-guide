@@ -2,7 +2,7 @@
 title: "Foldable Wallpaper Studio — Papel de parede para dobrável | iOS App"
 lang: "pt-PT"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/duowallpaperstudio/decision/l/pt-PT/index.html"
-modified: "2026-10-27"
+modified: "2026-10-28"
 app_store_id: "6824946559"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

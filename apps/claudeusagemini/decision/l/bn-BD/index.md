@@ -2,7 +2,7 @@
 title: "UsageNow: AI ব্যবহার ট্র্যাকার — Claude, Codex, Copilot সীমা | iOS App"
 lang: "bn-BD"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/claudeusagemini/decision/l/bn-BD/index.html"
-modified: "2026-10-27"
+modified: "2026-10-28"
 app_store_id: "6818607603"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

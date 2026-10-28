@@ -2,7 +2,7 @@
 title: "ShotInbox AI: Sort Screenshots — స్క్రీన్‌షాట్ వర్గీకరణ, OCR | iOS App"
 lang: "te-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/shotinbox/decision/l/te-IN/index.html"
-modified: "2026-10-27"
+modified: "2026-10-28"
 app_store_id: "6802166527"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

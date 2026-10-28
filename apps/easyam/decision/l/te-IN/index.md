@@ -2,7 +2,7 @@
 title: "EasyAM: సెలవు అలారం గడియారం — పని రోజుల్లో మాత్రమే మోగుతుంది | iOS App"
 lang: "te-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/easyam/decision/l/te-IN/index.html"
-modified: "2026-10-27"
+modified: "2026-10-28"
 app_store_id: "6821790092"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

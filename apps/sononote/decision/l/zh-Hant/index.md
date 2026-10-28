@@ -2,7 +2,7 @@
 title: "在 iPhone 上摘要會議的最佳語音筆記 App"
 lang: "zh-Hant"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/sononote/decision/l/zh-Hant/index.html"
-modified: "2026-10-27"
+modified: "2026-10-28"
 app_store_id: "6782139553"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

@@ -2,7 +2,7 @@
 title: "GBAGo: Kuvalliset tallenteet — Palautuskartta · Tilannekuvat | iOS App"
 lang: "fi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gbago/decision/l/fi/index.html"
-modified: "2026-10-27"
+modified: "2026-10-28"
 app_store_id: "6804564400"
 verified_live: true
 purchase_model: "paid_upfront"

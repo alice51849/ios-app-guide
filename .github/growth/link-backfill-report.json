@@ -1,8 +1,8 @@
 {
- "generated": "2026-10-27T15:24:29Z",
+ "generated": "2026-10-28T05:48:24Z",
  "mode": "apply",
  "counts": {
-  "ok_reply": 24,
+  "ok_reply": 25,
   "unknown_app": 47,
   "ok_store_only": 719,
   "ok_backfilled_earlier": 13,
@@ -12,6 +12,18 @@
   "missing": 3
  },
  "rows": [
+  {
+   "channel": "threads",
+   "id": "17967086961196979",
+   "permalink": "https://www.threads.com/@hourstag.app/post/DfBcCHmDRFR",
+   "date": "2026-10-28",
+   "app": "mochi",
+   "status": "ok_reply",
+   "text": "ENEM chegando e meu cronograma de estudos era um caos. Agora cada matéria virou uma lista fofa no iPhone: redação, matemática, revisão de na",
+   "why": "trial",
+   "ios_id": "6785004775",
+   "locale": "pt-BR"
+  },
   {
    "channel": "threads",
    "id": "18356960188216709",

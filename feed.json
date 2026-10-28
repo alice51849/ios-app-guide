@@ -1,7 +1,7 @@
 {
  "schema": "lumi.social-feed/v1",
  "date": "2026-10-28",
- "generated_at": "2026-10-28T07:31:47Z",
+ "generated_at": "2026-10-28T16:02:05Z",
  "items": {
   "bluesky": [
    {
@@ -141,48 +141,90 @@
    },
    {
     "kind": "clip",
-    "key": "easyam/en",
-    "locale": "en",
-    "app": "easyam",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/8n1x9x.mp4",
-    "hook": "67 countries and regions",
-    "name": "EasyAM: Holiday Alarm Clock",
-    "title": "67 countries and regions | Rings for work, skips days off | EasyAM holiday alarm",
+    "key": "maskmyfile/cs",
+    "locale": "cs",
+    "app": "maskmyfile",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/b9a59b.mp4",
+    "hook": "Něco chybí? Přidejte to",
+    "name": "Mask My File: Odstraňte údaje",
+    "title": "Něco chybí? Přidejte to | Skryjte citlivé informace | Mask My File",
     "tags": [
-     "#HolidayAlarmClock",
-     "#Workday",
-     "#Shift",
-     "#Public",
-     "#Calendar",
-     "#EasyAMHolidayAlarm"
+     "#OdstraňteÚdaje",
+     "#Anonymizace",
+     "#Cenzura",
+     "#OsobníÚdaje",
+     "#ObčanskýPrůkaz",
+     "#MaskMyFile"
     ],
-    "caption": "67 countries and regions\nHolidays skipped automatically\nRings for work, skips days off\nEasyAM: Holiday Alarm Clock\nSearch “holiday alarm clock” on the App Store\nAlso on Google Play\n\n#HolidayAlarmClock #Workday #EasyAMholidayalarm",
-    "button": "Get it on the App Store",
-    "variant": "c",
-    "alt": "EasyAM: Holiday Alarm Clock — 67 countries and regions — Holidays skipped automatically — Rings for work, skips days off",
-    "store": "https://apps.apple.com/us/app/id6821790092?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam",
+    "caption": "Něco chybí? Přidejte to\nUloží novou kopii, originál zůstane\nSkryjte citlivé informace\nMask My File: Odstraňte údaje\nVyhledejte „Mask My File“ v App Storu\nTaké na Google Play\n\n#OdstraňteÚdaje #Anonymizace #MaskMyFile",
+    "button": "Stáhnout z App Storu",
+    "variant": "b",
+    "alt": "Mask My File: Odstraňte údaje — Něco chybí? Přidejte to — Uloží novou kopii, originál zůstane — Skryjte citlivé informace",
+    "store": "https://apps.apple.com/cz/app/id6792850916?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MaskMyFile&referrer=utm_source%3Dsocial%26utm_campaign%3Dmaskmyfile",
     "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6821790092?action=write-review"
+     "label": "Už tuto aplikaci používáte? Ohodnoťte ji nebo napište recenzi v App Storu",
+     "url": "https://apps.apple.com/app/id6792850916?action=write-review"
     },
     "keywords": [
-     "workday",
-     "shift",
-     "public",
-     "calendar",
-     "weekday",
-     "vacation"
+     "anonymizace",
+     "cenzura",
+     "osobní údaje",
+     "občanský průkaz",
+     "lékařská zpráva",
+     "smlouva"
     ],
-    "keyline": "Rings for work, skips days off",
+    "keyline": "Skryjte citlivé informace",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "f45a7a4e972af86c",
+     "board": "f88a32e9a9deb640",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "card/gsat2027/2026-10-28",
+    "locale": "zh-Hant",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/countdown-cards/card-20261028.jpg",
+    "caption": "116 學測 倒數 86 天\n今天也前進一步\n\nApp Store／Google Play 搜尋「CountDaysNow」\n\n#倒數日 #倒數計時 #紀念日",
+    "title": "116 學測 倒數 86 天",
+    "alt": "CountDaysNow — 116 學測 倒數 86 天 — 今天也前進一步 — App Store／Google Play 搜尋「CountDaysNow」 — 倒數日 · 倒數計時 · 紀念日",
+    "name": "CountDaysNow",
+    "hook": "116 學測 倒數 86 天",
+    "tags": [
+     "#倒數日",
+     "#倒數計時",
+     "#紀念日",
+     "#生日",
+     "#還有幾天"
+    ],
+    "button": "在 App Store 下載",
+    "store": "https://apps.apple.com/tw/app/id6807079789?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow"
+   },
+   {
+    "kind": "card",
+    "key": "utility/count/lumimath/count_2/en",
+    "locale": "en",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/utility-cards/card-20261028.jpg",
+    "caption": "Let's count: 2\n2 apples\nHold up 2 on one hand\n\nLumi Math Planet: Solve a question and a little planet lights up\nSearch “Lumi Math Planet” on App Store or Google Play\n\n#Explorer #Counting #Games",
+    "title": "Let's count: 2",
+    "alt": "Lumi Math Planet — Let's count: 2 — 2 apples — Hold up 2 on one hand — Explorer",
+    "name": "Lumi Math Planet",
+    "hook": "Let's count: 2",
+    "tags": [
+     "#Explorer",
+     "#Counting",
+     "#Games",
+     "#Multiplication",
+     "#Times"
+    ],
+    "button": "Get it on the App Store",
+    "store": "https://apps.apple.com/us/app/id6778269699?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiMathFree&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumimath"
    },
    {
     "kind": "card",
@@ -1451,48 +1493,90 @@
    },
    {
     "kind": "clip",
-    "key": "easyam/en",
-    "locale": "en",
-    "app": "easyam",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/8n1x9x.mp4",
-    "hook": "67 countries and regions",
-    "name": "EasyAM: Holiday Alarm Clock",
-    "title": "67 countries and regions | Rings for work, skips days off | EasyAM holiday alarm",
+    "key": "maskmyfile/cs",
+    "locale": "cs",
+    "app": "maskmyfile",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/b9a59b.mp4",
+    "hook": "Něco chybí? Přidejte to",
+    "name": "Mask My File: Odstraňte údaje",
+    "title": "Něco chybí? Přidejte to | Skryjte citlivé informace | Mask My File",
     "tags": [
-     "#HolidayAlarmClock",
-     "#Workday",
-     "#Shift",
-     "#Public",
-     "#Calendar",
-     "#EasyAMHolidayAlarm"
+     "#OdstraňteÚdaje",
+     "#Anonymizace",
+     "#Cenzura",
+     "#OsobníÚdaje",
+     "#ObčanskýPrůkaz",
+     "#MaskMyFile"
     ],
-    "caption": "67 countries and regions\nHolidays skipped automatically\nRings for work, skips days off\nEasyAM: Holiday Alarm Clock\nSearch “holiday alarm clock” on the App Store\nAlso on Google Play\n\n#HolidayAlarmClock #Workday #Shift #Public #EasyAMholidayalarm",
-    "button": "Get it on the App Store",
-    "variant": "c",
-    "alt": "EasyAM: Holiday Alarm Clock — 67 countries and regions — Holidays skipped automatically — Rings for work, skips days off",
-    "store": "https://apps.apple.com/us/app/id6821790092?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam",
+    "caption": "Něco chybí? Přidejte to\nUloží novou kopii, originál zůstane\nSkryjte citlivé informace\nMask My File: Odstraňte údaje\nVyhledejte „Mask My File“ v App Storu\nTaké na Google Play\n\n#OdstraňteÚdaje #Anonymizace #Cenzura #OsobníÚdaje #MaskMyFile",
+    "button": "Stáhnout z App Storu",
+    "variant": "b",
+    "alt": "Mask My File: Odstraňte údaje — Něco chybí? Přidejte to — Uloží novou kopii, originál zůstane — Skryjte citlivé informace",
+    "store": "https://apps.apple.com/cz/app/id6792850916?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MaskMyFile&referrer=utm_source%3Dsocial%26utm_campaign%3Dmaskmyfile",
     "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6821790092?action=write-review"
+     "label": "Už tuto aplikaci používáte? Ohodnoťte ji nebo napište recenzi v App Storu",
+     "url": "https://apps.apple.com/app/id6792850916?action=write-review"
     },
     "keywords": [
-     "workday",
-     "shift",
-     "public",
-     "calendar",
-     "weekday",
-     "vacation"
+     "anonymizace",
+     "cenzura",
+     "osobní údaje",
+     "občanský průkaz",
+     "lékařská zpráva",
+     "smlouva"
     ],
-    "keyline": "Rings for work, skips days off",
+    "keyline": "Skryjte citlivé informace",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "f45a7a4e972af86c",
+     "board": "f88a32e9a9deb640",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "card/gsat2027/2026-10-28",
+    "locale": "zh-Hant",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/countdown-cards/card-20261028.jpg",
+    "caption": "116 學測 倒數 86 天\n今天也前進一步\n\nApp Store／Google Play 搜尋「CountDaysNow」\n\n#倒數日 #倒數計時 #紀念日 #生日 #還有幾天",
+    "title": "116 學測 倒數 86 天",
+    "alt": "CountDaysNow — 116 學測 倒數 86 天 — 今天也前進一步 — App Store／Google Play 搜尋「CountDaysNow」 — 倒數日 · 倒數計時 · 紀念日",
+    "name": "CountDaysNow",
+    "hook": "116 學測 倒數 86 天",
+    "tags": [
+     "#倒數日",
+     "#倒數計時",
+     "#紀念日",
+     "#生日",
+     "#還有幾天"
+    ],
+    "button": "在 App Store 下載",
+    "store": "https://apps.apple.com/tw/app/id6807079789?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow"
+   },
+   {
+    "kind": "card",
+    "key": "utility/count/lumimath/count_2/en",
+    "locale": "en",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/utility-cards/card-20261028.jpg",
+    "caption": "Let's count: 2\n2 apples\nHold up 2 on one hand\n\nLumi Math Planet: Solve a question and a little planet lights up\nSearch “Lumi Math Planet” on App Store or Google Play\n\n#Explorer #Counting #Games #Multiplication #Times",
+    "title": "Let's count: 2",
+    "alt": "Lumi Math Planet — Let's count: 2 — 2 apples — Hold up 2 on one hand — Explorer",
+    "name": "Lumi Math Planet",
+    "hook": "Let's count: 2",
+    "tags": [
+     "#Explorer",
+     "#Counting",
+     "#Games",
+     "#Multiplication",
+     "#Times"
+    ],
+    "button": "Get it on the App Store",
+    "store": "https://apps.apple.com/us/app/id6778269699?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiMathFree&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumimath"
    }
   ],
   "youtube": [
@@ -1677,60 +1761,62 @@
    },
    {
     "kind": "clip",
-    "key": "easyam/en",
-    "locale": "en",
-    "app": "easyam",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/8n1x9x.mp4",
-    "hook": "Holidays skipped automatically",
-    "name": "EasyAM: Holiday Alarm Clock",
-    "title": "Holidays skipped automatically | Rings for work, skips days off | EasyAM holiday alarm",
+    "key": "maskmyfile/cs",
+    "locale": "cs",
+    "app": "maskmyfile",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/b9a59b.mp4",
+    "hook": "Něco chybí? Přidejte to",
+    "name": "Mask My File: Odstraňte údaje",
+    "title": "Něco chybí? Přidejte to | Skryjte citlivé informace | Mask My File",
     "tags": [
-     "#HolidayAlarmClock",
-     "#Workday",
-     "#Shift",
-     "#Public",
-     "#Calendar",
-     "#EasyAMHolidayAlarm"
+     "#OdstraňteÚdaje",
+     "#Anonymizace",
+     "#Cenzura",
+     "#OsobníÚdaje",
+     "#ObčanskýPrůkaz",
+     "#MaskMyFile"
     ],
-    "caption": "Holidays skipped automatically\nAdd time off, vacations stay quiet\nRings for work, skips days off\nEasyAM: Holiday Alarm Clock\nSearch “holiday alarm clock” on the App Store\nAlso on Google Play\n\n#HolidayAlarmClock #Workday #Shift #Public #EasyAMholidayalarm",
-    "button": "Get it on the App Store",
+    "caption": "Něco chybí? Přidejte to\nUloží novou kopii, originál zůstane\nSkryjte citlivé informace\nMask My File: Odstraňte údaje\nVyhledejte „Mask My File“ v App Storu\nTaké na Google Play\n\n#OdstraňteÚdaje #Anonymizace #Cenzura #OsobníÚdaje #MaskMyFile",
+    "button": "Stáhnout z App Storu",
     "variant": "b",
-    "alt": "EasyAM: Holiday Alarm Clock — Holidays skipped automatically — Add time off, vacations stay quiet — Rings for work, skips days off",
-    "store": "https://apps.apple.com/us/app/id6821790092?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam",
+    "alt": "Mask My File: Odstraňte údaje — Něco chybí? Přidejte to — Uloží novou kopii, originál zůstane — Skryjte citlivé informace",
+    "store": "https://apps.apple.com/cz/app/id6792850916?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MaskMyFile&referrer=utm_source%3Dsocial%26utm_campaign%3Dmaskmyfile",
     "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6821790092?action=write-review"
+     "label": "Už tuto aplikaci používáte? Ohodnoťte ji nebo napište recenzi v App Storu",
+     "url": "https://apps.apple.com/app/id6792850916?action=write-review"
     },
     "keywords": [
-     "workday",
-     "shift",
-     "public",
-     "calendar",
-     "weekday",
-     "vacation"
+     "anonymizace",
+     "cenzura",
+     "osobní údaje",
+     "občanský průkaz",
+     "lékařská zpráva",
+     "smlouva"
     ],
-    "keyline": "Rings for work, skips days off",
+    "keyline": "Skryjte citlivé informace",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "f45a7a4e972af86c",
+     "board": "f88a32e9a9deb640",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "youtube": {
-     "title": "Holidays skipped automatically | EasyAM holiday alarm #Shorts",
-     "description": "Holidays skipped automatically\nAdd time off, vacations stay quiet\nRings for work, skips days off\n\nEasyAM: Holiday Alarm Clock\nApp Store: https://apps.apple.com/us/app/id6821790092?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam\nAlready using this app? Rate or review it on the App Store\nhttps://apps.apple.com/app/id6821790092?action=write-review\n\nworkday · shift · public · calendar · weekday · vacation\n\n#Shorts #HolidayAlarmClock #EasyAMholidayalarm",
+     "title": "Něco chybí? Přidejte to | Mask My File #Shorts",
+     "description": "Něco chybí? Přidejte to\nUloží novou kopii, originál zůstane\nSkryjte citlivé informace\n\nMask My File: Odstraňte údaje\nApp Store: https://apps.apple.com/cz/app/id6792850916?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MaskMyFile&referrer=utm_source%3Dsocial%26utm_campaign%3Dmaskmyfile\nUž tuto aplikaci používáte? Ohodnoťte ji nebo napište recenzi v App Storu\nhttps://apps.apple.com/app/id6792850916?action=write-review\n\nanonymizace · cenzura · osobní údaje · občanský průkaz · lékařská zpráva · smlouva\n\n#Shorts #OdstraňteÚdaje #MaskMyFile",
      "tags": [
-      "workday",
-      "shift",
-      "public",
-      "calendar",
-      "weekday",
-      "vacation",
-      "HolidayAlarmClock",
-      "EasyAMHolidayAlarm",
-      "EasyAM holiday alarm"
+      "anonymizace",
+      "cenzura",
+      "osobní údaje",
+      "občanský průkaz",
+      "lékařská zpráva",
+      "smlouva",
+      "OdstraňteÚdaje",
+      "OsobníÚdaje",
+      "ObčanskýPrůkaz",
+      "MaskMyFile",
+      "Mask My File"
      ]
     },
     "slot": 15
@@ -1886,52 +1972,102 @@
    },
    {
     "kind": "clip",
-    "key": "easyam/en",
-    "locale": "en",
-    "app": "easyam",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/8n1x9x.mp4",
-    "hook": "Long weekend? Your alarm stays quiet",
-    "name": "EasyAM: Holiday Alarm Clock",
-    "title": "Long weekend? Your alarm stays quiet | Rings for work, skips days off | EasyAM holiday alarm",
+    "key": "maskmyfile/cs",
+    "locale": "cs",
+    "app": "maskmyfile",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/b9a59b.mp4",
+    "hook": "Chráněno v zařízení",
+    "name": "Mask My File: Odstraňte údaje",
+    "title": "Chráněno v zařízení | Skryjte citlivé informace | Mask My File",
     "tags": [
-     "#HolidayAlarmClock",
-     "#Workday",
-     "#Shift",
-     "#Public",
-     "#Calendar",
-     "#EasyAMHolidayAlarm"
+     "#OdstraňteÚdaje",
+     "#Anonymizace",
+     "#Cenzura",
+     "#OsobníÚdaje",
+     "#ObčanskýPrůkaz",
+     "#MaskMyFile"
     ],
-    "caption": "Long weekend? Your alarm stays quiet\nHolidays skipped automatically\nRings for work, skips days off\nEasyAM: Holiday Alarm Clock\nSearch “holiday alarm clock” on the App Store\nAlso on Google Play\n\n#HolidayAlarmClock #Workday #Shift #Public #EasyAMholidayalarm",
-    "button": "Get it on the App Store",
-    "variant": "a",
-    "alt": "EasyAM: Holiday Alarm Clock — Long weekend? Your alarm stays quiet — Holidays skipped automatically — Rings for work, skips days off",
-    "store": "https://apps.apple.com/us/app/id6821790092?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam",
+    "caption": "Chráněno v zařízení\nNěco chybí? Přidejte to\nSkryjte citlivé informace\nMask My File: Odstraňte údaje\nVyhledejte „Mask My File“ v App Storu\nTaké na Google Play\n\n#OdstraňteÚdaje #Anonymizace #Cenzura #OsobníÚdaje #MaskMyFile",
+    "button": "Stáhnout z App Storu",
+    "variant": "c",
+    "alt": "Mask My File: Odstraňte údaje — Chráněno v zařízení — Něco chybí? Přidejte to — Skryjte citlivé informace",
+    "store": "https://apps.apple.com/cz/app/id6792850916?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MaskMyFile&referrer=utm_source%3Dsocial%26utm_campaign%3Dmaskmyfile",
     "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6821790092?action=write-review"
+     "label": "Už tuto aplikaci používáte? Ohodnoťte ji nebo napište recenzi v App Storu",
+     "url": "https://apps.apple.com/app/id6792850916?action=write-review"
     },
     "keywords": [
-     "workday",
-     "shift",
-     "public",
-     "calendar",
-     "weekday",
-     "vacation"
+     "anonymizace",
+     "cenzura",
+     "osobní údaje",
+     "občanský průkaz",
+     "lékařská zpráva",
+     "smlouva"
     ],
-    "keyline": "Rings for work, skips days off",
+    "keyline": "Skryjte citlivé informace",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "f45a7a4e972af86c",
+     "board": "f88a32e9a9deb640",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "Long weekend? Your alarm stays quiet\nHolidays skipped automatically\nRings for work, skips days off\nEasyAM: Holiday Alarm Clock\nSearch “holiday alarm clock” on the App Store\nAlso on Google Play\n\n#HolidayAlarmClock #Workday #Shift #Public #EasyAMholidayalarm\n\nGet it on the App Store: https://apps.apple.com/us/app/id6821790092?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam",
-     "link": "https://apps.apple.com/us/app/id6821790092?pt=118326163&ct=social&mt=8"
+     "description": "Chráněno v zařízení\nNěco chybí? Přidejte to\nSkryjte citlivé informace\nMask My File: Odstraňte údaje\nVyhledejte „Mask My File“ v App Storu\nTaké na Google Play\n\n#OdstraňteÚdaje #Anonymizace #Cenzura #OsobníÚdaje #MaskMyFile\n\nStáhnout z App Storu: https://apps.apple.com/cz/app/id6792850916?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MaskMyFile&referrer=utm_source%3Dsocial%26utm_campaign%3Dmaskmyfile",
+     "link": "https://apps.apple.com/cz/app/id6792850916?pt=118326163&ct=social&mt=8"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "card/gsat2027/2026-10-28",
+    "locale": "zh-Hant",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/countdown-cards/card-20261028.jpg",
+    "caption": "116 學測 倒數 86 天\n今天也前進一步\n\nApp Store／Google Play 搜尋「CountDaysNow」\n\n#倒數日 #倒數計時 #紀念日 #生日 #還有幾天",
+    "title": "116 學測 倒數 86 天",
+    "alt": "CountDaysNow — 116 學測 倒數 86 天 — 今天也前進一步 — App Store／Google Play 搜尋「CountDaysNow」 — 倒數日 · 倒數計時 · 紀念日",
+    "name": "CountDaysNow",
+    "hook": "116 學測 倒數 86 天",
+    "tags": [
+     "#倒數日",
+     "#倒數計時",
+     "#紀念日",
+     "#生日",
+     "#還有幾天"
+    ],
+    "button": "在 App Store 下載",
+    "store": "https://apps.apple.com/tw/app/id6807079789?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
+    "pinterest": {
+     "description": "116 學測 倒數 86 天\n今天也前進一步\n\nApp Store／Google Play 搜尋「CountDaysNow」\n\n#倒數日 #倒數計時 #紀念日 #生日 #還有幾天\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6807079789?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
+     "link": "https://apps.apple.com/tw/app/id6807079789?pt=118326163&ct=social&mt=8"
+    }
+   },
+   {
+    "kind": "card",
+    "key": "utility/count/lumimath/count_2/en",
+    "locale": "en",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/utility-cards/card-20261028.jpg",
+    "caption": "Let's count: 2\n2 apples\nHold up 2 on one hand\n\nLumi Math Planet: Solve a question and a little planet lights up\nSearch “Lumi Math Planet” on App Store or Google Play\n\n#Explorer #Counting #Games #Multiplication #Times",
+    "title": "Let's count: 2",
+    "alt": "Lumi Math Planet — Let's count: 2 — 2 apples — Hold up 2 on one hand — Explorer",
+    "name": "Lumi Math Planet",
+    "hook": "Let's count: 2",
+    "tags": [
+     "#Explorer",
+     "#Counting",
+     "#Games",
+     "#Multiplication",
+     "#Times"
+    ],
+    "button": "Get it on the App Store",
+    "store": "https://apps.apple.com/us/app/id6778269699?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiMathFree&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumimath",
+    "pinterest": {
+     "description": "Let's count: 2\n2 apples\nHold up 2 on one hand\n\nLumi Math Planet: Solve a question and a little planet lights up\nSearch “Lumi Math Planet” on App Store or Google Play\n\n#Explorer #Counting #Games #Multiplication #Times\n\nGet it on the App Store: https://apps.apple.com/us/app/id6778269699?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiMathFree&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumimath",
+     "link": "https://apps.apple.com/us/app/id6778269699?pt=118326163&ct=social&mt=8"
+    }
    },
    {
     "kind": "card",
@@ -3790,6 +3926,34 @@
    },
    {
     "kind": "card",
+    "key": "carousel/battai-zh-Hant-pain-20261022",
+    "locale": "zh-Hant",
+    "app": "battai",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/battai-zh-Hant-pain-20261022/01.jpg",
+    "images": [
+     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/battai-zh-Hant-pain-20261022/01.jpg",
+     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/battai-zh-Hant-pain-20261022/02.jpg",
+     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/battai-zh-Hant-pain-20261022/03.jpg",
+     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/battai-zh-Hant-pain-20261022/04.jpg",
+     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/battai-zh-Hant-pain-20261022/05.jpg"
+    ],
+    "caption": "電池健康度 哪天掉到 80%？\n\n電池健康分數 連評分依據都看得到\n✓ 最大容量趨勢 ＋循環次數\n✓ 送修、二手轉賣 都用得上的電池報告\n\nApp Store 搜尋「BattAI」",
+    "title": "電池健康度 哪天掉到 80%？",
+    "alt": "電池健康度 哪天掉到 80%？ | 電池健康分數 連評分依據都看得到 | 最大容量趨勢 ＋循環次數 | 送修、二手轉賣 都用得上的電池報告 | BattAI: 電池健康分數 / 規則、來源與限制都說清楚 / App Store 搜尋「BattAI」",
+    "name": "BattAI: 電池健康分數",
+    "hook": "電池健康度 哪天掉到 80%？",
+    "tags": [],
+    "button": "在 App Store 下載",
+    "store": "https://apps.apple.com/tw/app/id6802423998?pt=118326163&ct=social&mt=8",
+    "format": "pain",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.BattAI&referrer=utm_source%3Dsocial%26utm_campaign%3Dbattai",
+    "pinterest": {
+     "description": "電池健康度 哪天掉到 80%？\n\n電池健康分數 連評分依據都看得到\n✓ 最大容量趨勢 ＋循環次數\n✓ 送修、二手轉賣 都用得上的電池報告\n\nApp Store 搜尋「BattAI」\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6802423998?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI&referrer=utm_source%3Dsocial%26utm_campaign%3Dbattai",
+     "link": "https://apps.apple.com/tw/app/id6802423998?pt=118326163&ct=social&mt=8"
+    }
+   },
+   {
+    "kind": "card",
     "key": "carousel/battai-en-pain-20261022",
     "locale": "en",
     "app": "battai",
@@ -3820,6 +3984,62 @@
     "pinterest": {
      "description": "When will battery health hit 80%?\n\nA health score, and what shapes it\n✓ Max capacity trend and cycle count\n✓ A clear report for service or resale\n\nSearch “BattAI Battery Health” on the App Store\n\n#BatteryHealthScore #MaximumCapacity #Cycles #ChargeCare #ChargeRange\n\nGet it on the App Store: https://apps.apple.com/us/app/id6802423998?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI&referrer=utm_source%3Dsocial%26utm_campaign%3Dbattai",
      "link": "https://apps.apple.com/us/app/id6802423998?pt=118326163&ct=social&mt=8"
+    }
+   },
+   {
+    "kind": "card",
+    "key": "carousel/battai-ja-pain-20261022",
+    "locale": "ja",
+    "app": "battai",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/battai-ja-pain-20261022/01.jpg",
+    "images": [
+     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/battai-ja-pain-20261022/01.jpg",
+     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/battai-ja-pain-20261022/02.jpg",
+     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/battai-ja-pain-20261022/03.jpg",
+     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/battai-ja-pain-20261022/04.jpg",
+     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/battai-ja-pain-20261022/05.jpg"
+    ],
+    "caption": "バッテリー最大容量 いつ80%を切る？\n\n状態スコアと その要因まで\n✓ 最大容量の推移と サイクル数\n✓ 修理や売却に使える 電池レポート\n\nApp Store で「BattAI」を検索",
+    "title": "バッテリー最大容量 いつ80%を切る？",
+    "alt": "バッテリー最大容量 いつ80%を切る？ | 状態スコアと その要因まで | 最大容量の推移と サイクル数 | 修理や売却に使える 電池レポート | BattAI: バッテリー状態スコア / ルール、情報源、限界を明確に / App Store で「BattAI」を検索",
+    "name": "BattAI: バッテリー状態スコア",
+    "hook": "バッテリー最大容量 いつ80%を切る？",
+    "tags": [],
+    "button": "App Storeで入手",
+    "store": "https://apps.apple.com/jp/app/id6802423998?pt=118326163&ct=social&mt=8",
+    "format": "pain",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.BattAI&referrer=utm_source%3Dsocial%26utm_campaign%3Dbattai",
+    "pinterest": {
+     "description": "バッテリー最大容量 いつ80%を切る？\n\n状態スコアと その要因まで\n✓ 最大容量の推移と サイクル数\n✓ 修理や売却に使える 電池レポート\n\nApp Store で「BattAI」を検索\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6802423998?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI&referrer=utm_source%3Dsocial%26utm_campaign%3Dbattai",
+     "link": "https://apps.apple.com/jp/app/id6802423998?pt=118326163&ct=social&mt=8"
+    }
+   },
+   {
+    "kind": "card",
+    "key": "carousel/battai-ko-pain-20261022",
+    "locale": "ko",
+    "app": "battai",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/battai-ko-pain-20261022/01.jpg",
+    "images": [
+     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/battai-ko-pain-20261022/01.jpg",
+     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/battai-ko-pain-20261022/02.jpg",
+     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/battai-ko-pain-20261022/03.jpg",
+     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/battai-ko-pain-20261022/04.jpg",
+     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/battai-ko-pain-20261022/05.jpg"
+    ],
+    "caption": "배터리 성능 최대치 언제 80% 깨질까?\n\n배터리 상태 점수와 점수를 만드는 요소\n✓ 성능 최대치 추세와 사이클 수\n✓ 수리·중고 판매에 쓰는 배터리 리포트\n\nApp Store에서 ‘BattAI’ 검색",
+    "title": "배터리 성능 최대치 언제 80% 깨질까?",
+    "alt": "배터리 성능 최대치 언제 80% 깨질까? | 배터리 상태 점수와 점수를 만드는 요소 | 성능 최대치 추세와 사이클 수 | 수리·중고 판매에 쓰는 배터리 리포트 | BattAI: 배터리 상태 점수 / 규칙, 출처, 한계를 분명하게 / App Store에서 ‘BattAI’ 검색",
+    "name": "BattAI: 배터리 상태 점수",
+    "hook": "배터리 성능 최대치 언제 80% 깨질까?",
+    "tags": [],
+    "button": "App Store에서 받기",
+    "store": "https://apps.apple.com/kr/app/id6802423998?pt=118326163&ct=social&mt=8",
+    "format": "pain",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.BattAI&referrer=utm_source%3Dsocial%26utm_campaign%3Dbattai",
+    "pinterest": {
+     "description": "배터리 성능 최대치 언제 80% 깨질까?\n\n배터리 상태 점수와 점수를 만드는 요소\n✓ 성능 최대치 추세와 사이클 수\n✓ 수리·중고 판매에 쓰는 배터리 리포트\n\nApp Store에서 ‘BattAI’ 검색\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6802423998?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI&referrer=utm_source%3Dsocial%26utm_campaign%3Dbattai",
+     "link": "https://apps.apple.com/kr/app/id6802423998?pt=118326163&ct=social&mt=8"
     }
    },
    {
@@ -4950,49 +5170,49 @@
    },
    {
     "kind": "clip",
-    "key": "easyam/en",
-    "locale": "en",
-    "app": "easyam",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/8n1x9x.mp4",
-    "hook": "67 countries and regions",
-    "name": "EasyAM: Holiday Alarm Clock",
-    "title": "67 countries and regions | Rings for work, skips days off | EasyAM holiday alarm",
+    "key": "maskmyfile/cs",
+    "locale": "cs",
+    "app": "maskmyfile",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/b9a59b.mp4",
+    "hook": "Něco chybí? Přidejte to",
+    "name": "Mask My File: Odstraňte údaje",
+    "title": "Něco chybí? Přidejte to | Skryjte citlivé informace | Mask My File",
     "tags": [
-     "#HolidayAlarmClock",
-     "#Workday",
-     "#Shift",
-     "#Public",
-     "#Calendar",
-     "#EasyAMHolidayAlarm"
+     "#OdstraňteÚdaje",
+     "#Anonymizace",
+     "#Cenzura",
+     "#OsobníÚdaje",
+     "#ObčanskýPrůkaz",
+     "#MaskMyFile"
     ],
-    "caption": "67 countries and regions\nHolidays skipped automatically\nRings for work, skips days off\nEasyAM: Holiday Alarm Clock\nSearch “holiday alarm clock” on the App Store\nAlso on Google Play\n\n#HolidayAlarmClock #Workday #Shift #Public #EasyAMholidayalarm",
-    "button": "Get it on the App Store",
-    "variant": "c",
-    "alt": "EasyAM: Holiday Alarm Clock — 67 countries and regions — Holidays skipped automatically — Rings for work, skips days off",
-    "store": "https://apps.apple.com/us/app/id6821790092?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam",
+    "caption": "Něco chybí? Přidejte to\nUloží novou kopii, originál zůstane\nSkryjte citlivé informace\nMask My File: Odstraňte údaje\nVyhledejte „Mask My File“ v App Storu\nTaké na Google Play\n\n#OdstraňteÚdaje #Anonymizace #Cenzura #OsobníÚdaje #MaskMyFile",
+    "button": "Stáhnout z App Storu",
+    "variant": "b",
+    "alt": "Mask My File: Odstraňte údaje — Něco chybí? Přidejte to — Uloží novou kopii, originál zůstane — Skryjte citlivé informace",
+    "store": "https://apps.apple.com/cz/app/id6792850916?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MaskMyFile&referrer=utm_source%3Dsocial%26utm_campaign%3Dmaskmyfile",
     "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6821790092?action=write-review"
+     "label": "Už tuto aplikaci používáte? Ohodnoťte ji nebo napište recenzi v App Storu",
+     "url": "https://apps.apple.com/app/id6792850916?action=write-review"
     },
     "keywords": [
-     "workday",
-     "shift",
-     "public",
-     "calendar",
-     "weekday",
-     "vacation"
+     "anonymizace",
+     "cenzura",
+     "osobní údaje",
+     "občanský průkaz",
+     "lékařská zpráva",
+     "smlouva"
     ],
-    "keyline": "Rings for work, skips days off",
+    "keyline": "Skryjte citlivé informace",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "f45a7a4e972af86c",
+     "board": "f88a32e9a9deb640",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "67 countries and regions\nHolidays skipped automatically\nRings for work, skips days off\nEasyAM: Holiday Alarm Clock\nSearch “holiday alarm clock” on the App Store\nAlso on Google Play\n\n#HolidayAlarmClock #Workday #Shift #Public #EasyAMholidayalarm\n\nGet it on the App Store: https://apps.apple.com/us/app/id6821790092?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam"
+     "caption": "Něco chybí? Přidejte to\nUloží novou kopii, originál zůstane\nSkryjte citlivé informace\nMask My File: Odstraňte údaje\nVyhledejte „Mask My File“ v App Storu\nTaké na Google Play\n\n#OdstraňteÚdaje #Anonymizace #Cenzura #OsobníÚdaje #MaskMyFile\n\nStáhnout z App Storu: https://apps.apple.com/cz/app/id6792850916?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MaskMyFile&referrer=utm_source%3Dsocial%26utm_campaign%3Dmaskmyfile"
     },
     "slot": 15
    }
@@ -20365,19 +20585,19 @@
     "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/b3a83b5abb.mp4",
     "hook": "Recolor it, add your own words",
     "name": "Foldable Wallpaper Studio",
-    "title": "Recolor it, add your own words | Dual Screen Pairs & Widgets | Foldable Wallpaper Studio",
+    "title": "Recolor it, add your own words | fold · folding · flip | Foldable Wallpaper Studio",
     "tags": [
-     "#Cute",
-     "#Lock",
-     "#Home",
-     "#Background",
-     "#Photo",
+     "#Fold",
+     "#Folding",
+     "#Flip",
+     "#Pair",
+     "#Pairs",
      "#FoldableWallpaperStudio"
     ],
-    "caption": "Recolor it, add your own words\nOpen: the whole scene\nDual Screen Pairs & Widgets\nSearch “Foldable Wallpaper Studio” on the App Store\n\n#Cute #Lock #FoldableWallpaperStudio",
+    "caption": "Recolor it, add your own words\nOpen: the whole scene\nfold · folding · flip\nSearch “Foldable Wallpaper Studio” on the App Store\n\n#Fold #Folding #FoldableWallpaperStudio",
     "button": "Get it on the App Store",
     "variant": "c",
-    "alt": "Foldable Wallpaper Studio — Recolor it, add your own words — Open: the whole scene — Dual Screen Pairs & Widgets",
+    "alt": "Foldable Wallpaper Studio — Recolor it, add your own words — Open: the whole scene — fold · folding · flip",
     "store": "https://apps.apple.com/us/app/id6824946559?pt=118326163&ct=social&mt=8",
     "play": null,
     "review": {
@@ -20385,14 +20605,14 @@
      "url": "https://apps.apple.com/app/id6824946559?action=write-review"
     },
     "keywords": [
-     "cute",
-     "lock",
-     "home",
-     "background",
-     "photo",
-     "maker"
+     "fold",
+     "folding",
+     "flip",
+     "pair",
+     "pairs",
+     "outer"
     ],
-    "keyline": "Dual Screen Pairs & Widgets",
+    "keyline": "fold · folding · flip",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
@@ -20409,19 +20629,19 @@
     "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/a05e4e38ec.mp4",
     "hook": "展開，內螢幕是 整片全景",
     "name": "Foldable Wallpaper Studio",
-    "title": "展開，內螢幕是 整片全景 | 摺疊手機雙螢幕高畫質桌布，外螢幕內螢幕成對＋主畫面美化小工具 | Foldable Wallpaper Studio",
+    "title": "展開，內螢幕是 整片全景 | 適用Duo・高畫質・外螢幕特寫・內螢幕全景・美化小工具 | Foldable Wallpaper Studio",
     "tags": [
+     "#雙螢幕成對桌布",
+     "#折疊",
      "#鎖定畫面",
-     "#鎖屏",
-     "#壁紙",
-     "#桌面",
-     "#背景",
+     "#主畫面",
+     "#原創",
      "#FoldableWallpaperStudio"
     ],
-    "caption": "展開，內螢幕是 整片全景\n5 款小工具 畫上你選的桌布\n摺疊手機雙螢幕高畫質桌布，外螢幕內螢幕成對＋主畫面美化小工具\n在 App Store 搜尋「Foldable Wallpaper Studio」\n\n#鎖定畫面 #鎖屏 #FoldableWallpaperStudio",
+    "caption": "展開，內螢幕是 整片全景\n5 款小工具 畫上你選的桌布\n適用Duo・高畫質・外螢幕特寫・內螢幕全景・美化小工具\n在 App Store 搜尋「Foldable Wallpaper Studio」\n\n#雙螢幕成對桌布 #折疊 #FoldableWallpaperStudio",
     "button": "在 App Store 下載",
     "variant": "b",
-    "alt": "Foldable Wallpaper Studio — 展開，內螢幕是 整片全景 — 5 款小工具 畫上你選的桌布 — 摺疊手機雙螢幕高畫質桌布，外螢幕內螢幕成對＋主畫面美化小工具",
+    "alt": "Foldable Wallpaper Studio — 展開，內螢幕是 整片全景 — 5 款小工具 畫上你選的桌布 — 適用Duo・高畫質・外螢幕特寫・內螢幕全景・美化小工具",
     "store": "https://apps.apple.com/tw/app/id6824946559?pt=118326163&ct=social&mt=8",
     "play": null,
     "review": {
@@ -20429,14 +20649,14 @@
      "url": "https://apps.apple.com/app/id6824946559?action=write-review"
     },
     "keywords": [
+     "折疊",
      "鎖定畫面",
-     "鎖屏",
-     "壁紙",
-     "桌面",
-     "背景",
-     "可愛"
+     "主畫面",
+     "原創",
+     "插畫",
+     "星空"
     ],
-    "keyline": "摺疊手機雙螢幕高畫質桌布，外螢幕內螢幕成對＋主畫面美化小工具",
+    "keyline": "適用Duo・高畫質・外螢幕特寫・內螢幕全景・美化小工具",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
@@ -20453,19 +20673,19 @@
     "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/c4285cfcdf.mp4",
     "hook": "閉じれば クローズアップ",
     "name": "Foldable Wallpaper Studio",
-    "title": "閉じれば クローズアップ | 折りたたみスマホ用壁紙・外画面と内画面にぴったりのペア | Foldable Wallpaper Studio",
+    "title": "閉じれば クローズアップ | Duo対応・閉じればアップ、開けば全景のペア壁紙 | Foldable Wallpaper Studio",
     "tags": [
-     "#かわいい",
-     "#可愛い",
-     "#おしゃれ",
-     "#シンプル",
-     "#高画質",
+     "#外画面と内画面",
+     "#スマホ",
+     "#2画面",
+     "#待ち受け",
+     "#ロック画面",
      "#FoldableWallpaperStudio"
     ],
-    "caption": "閉じれば クローズアップ\n開けば 全景\n折りたたみスマホ用壁紙・外画面と内画面にぴったりのペア\nApp Storeで「Foldable Wallpaper Studio」を検索\n\n#かわいい #可愛い #FoldableWallpaperStudio",
+    "caption": "閉じれば クローズアップ\n開けば 全景\nDuo対応・閉じればアップ、開けば全景のペア壁紙\nApp Storeで「Foldable Wallpaper Studio」を検索\n\n#外画面と内画面 #スマホ #FoldableWallpaperStudio",
     "button": "App Storeで入手",
     "variant": "a",
-    "alt": "Foldable Wallpaper Studio — 閉じれば クローズアップ — 開けば 全景 — 折りたたみスマホ用壁紙・外画面と内画面にぴったりのペア",
+    "alt": "Foldable Wallpaper Studio — 閉じれば クローズアップ — 開けば 全景 — Duo対応・閉じればアップ、開けば全景のペア壁紙",
     "store": "https://apps.apple.com/jp/app/id6824946559?pt=118326163&ct=social&mt=8",
     "play": null,
     "review": {
@@ -20473,14 +20693,14 @@
      "url": "https://apps.apple.com/app/id6824946559?action=write-review"
     },
     "keywords": [
-     "かわいい",
-     "可愛い",
-     "おしゃれ",
-     "シンプル",
-     "高画質",
-     "待ち受け"
+     "スマホ",
+     "2画面",
+     "待ち受け",
+     "ロック画面",
+     "ウィジェット",
+     "おそろい"
     ],
-    "keyline": "折りたたみスマホ用壁紙・外画面と内画面にぴったりのペア",
+    "keyline": "Duo対応・閉じればアップ、開けば全景のペア壁紙",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
@@ -20497,19 +20717,19 @@
     "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/79299420af.mp4",
     "hook": "접으면 클로즈업",
     "name": "Foldable Wallpaper Studio",
-    "title": "접으면 클로즈업 | 폴더블 배경화면 커버·메인 세트, 위젯 폰꾸미기 | Foldable Wallpaper Studio",
+    "title": "접으면 클로즈업 | Duo를 접으면 클로즈업, 펼치면 전경 | Foldable Wallpaper Studio",
     "tags": [
-     "#바탕화면",
-     "#만들기",
-     "#사이즈",
-     "#고화질",
+     "#커버메인세트",
+     "#폴더블폰",
+     "#커버화면",
+     "#메인화면",
      "#잠금화면",
      "#FoldableWallpaperStudio"
     ],
-    "caption": "접으면 클로즈업\n펼치면 같은 장면의 전경\n폴더블 배경화면 커버·메인 세트, 위젯 폰꾸미기\nApp Store에서 'Foldable Wallpaper Studio' 검색\n\n#바탕화면 #만들기 #FoldableWallpaperStudio",
+    "caption": "펼치면 같은 장면의 전경\nDuo를 접으면 클로즈업, 펼치면 전경\nApp Store에서 'Foldable Wallpaper Studio' 검색\n\n#커버메인세트 #폴더블폰 #FoldableWallpaperStudio",
     "button": "App Store에서 받기",
     "variant": "a",
-    "alt": "Foldable Wallpaper Studio — 접으면 클로즈업 — 펼치면 같은 장면의 전경 — 폴더블 배경화면 커버·메인 세트, 위젯 폰꾸미기",
+    "alt": "Foldable Wallpaper Studio — 접으면 클로즈업 — 펼치면 같은 장면의 전경 — Duo를 접으면 클로즈업, 펼치면 전경",
     "store": "https://apps.apple.com/kr/app/id6824946559?pt=118326163&ct=social&mt=8",
     "play": null,
     "review": {
@@ -20517,14 +20737,14 @@
      "url": "https://apps.apple.com/app/id6824946559?action=write-review"
     },
     "keywords": [
-     "바탕화면",
-     "만들기",
-     "사이즈",
-     "고화질",
+     "폴더블폰",
+     "커버화면",
+     "메인화면",
      "잠금화면",
-     "홈화면"
+     "위젯",
+     "폰꾸미기"
     ],
-    "keyline": "폴더블 배경화면 커버·메인 세트, 위젯 폰꾸미기",
+    "keyline": "Duo를 접으면 클로즈업, 펼치면 전경",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
@@ -20541,19 +20761,19 @@
     "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/01e2afe12e.mp4",
     "hook": "Aufgeklappt: die ganze Szene",
     "name": "Foldable Wallpaper Studio",
-    "title": "Aufgeklappt: die ganze Szene | Foldable Hintergrundbilder HD | Foldable Wallpaper Studio",
+    "title": "Aufgeklappt: die ganze Szene | faltbar · klapphandy · paar | Foldable Wallpaper Studio",
     "tags": [
-     "#Sperrbildschirm",
-     "#Hintergrund",
-     "#Handy",
-     "#Erstellen",
-     "#Süße",
+     "#Faltbar",
+     "#Klapphandy",
+     "#Paar",
+     "#Außendisplay",
+     "#Innendisplay",
      "#FoldableWallpaperStudio"
     ],
-    "caption": "Aufgeklappt: die ganze Szene\n5 Widgets mit deinem Hintergrund\nFoldable Hintergrundbilder HD\nIm App Store nach „Foldable Wallpaper Studio“ suchen\n\n#Sperrbildschirm #Hintergrund #FoldableWallpaperStudio",
+    "caption": "Aufgeklappt: die ganze Szene\n5 Widgets mit deinem Hintergrund\nfaltbar · klapphandy · paar\nIm App Store nach „Foldable Wallpaper Studio“ suchen\n\n#Faltbar #Klapphandy #FoldableWallpaperStudio",
     "button": "Im App Store laden",
     "variant": "b",
-    "alt": "Foldable Wallpaper Studio — Aufgeklappt: die ganze Szene — 5 Widgets mit deinem Hintergrund — Foldable Hintergrundbilder HD",
+    "alt": "Foldable Wallpaper Studio — Aufgeklappt: die ganze Szene — 5 Widgets mit deinem Hintergrund — faltbar · klapphandy · paar",
     "store": "https://apps.apple.com/de/app/id6824946559?pt=118326163&ct=social&mt=8",
     "play": null,
     "review": {
@@ -20561,14 +20781,14 @@
      "url": "https://apps.apple.com/app/id6824946559?action=write-review"
     },
     "keywords": [
-     "sperrbildschirm",
-     "hintergrund",
-     "handy",
-     "erstellen",
-     "süße",
-     "foto"
+     "faltbar",
+     "klapphandy",
+     "paar",
+     "außendisplay",
+     "innendisplay",
+     "sperrbildschirm"
     ],
-    "keyline": "Foldable Hintergrundbilder HD",
+    "keyline": "faltbar · klapphandy · paar",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
@@ -20585,19 +20805,19 @@
     "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/145faec030.mp4",
     "hook": "Troque a cor, escreva uma frase curta",
     "name": "Foldable Wallpaper Studio",
-    "title": "Troque a cor, escreva uma frase curta | Papel de parede para dobrável | Foldable Wallpaper Studio",
+    "title": "Troque a cor, escreva uma frase curta | foldable · celular · fundo | Foldable Wallpaper Studio",
     "tags": [
+     "#Foldable",
      "#Celular",
      "#Fundo",
-     "#Tela",
+     "#TelaDupla",
      "#Bloqueio",
-     "#Estético",
      "#FoldableWallpaperStudio"
     ],
-    "caption": "Troque a cor, escreva uma frase curta\nAberto: a cena inteira\nPapel de parede para dobrável\nPesquise “Foldable Wallpaper Studio” na App Store\n\n#Celular #Fundo #FoldableWallpaperStudio",
+    "caption": "Troque a cor, escreva uma frase curta\nAberto: a cena inteira\nfoldable · celular · fundo\nPesquise “Foldable Wallpaper Studio” na App Store\n\n#Foldable #Celular #FoldableWallpaperStudio",
     "button": "Baixar na App Store",
     "variant": "c",
-    "alt": "Foldable Wallpaper Studio — Troque a cor, escreva uma frase curta — Aberto: a cena inteira — Papel de parede para dobrável",
+    "alt": "Foldable Wallpaper Studio — Troque a cor, escreva uma frase curta — Aberto: a cena inteira — foldable · celular · fundo",
     "store": "https://apps.apple.com/br/app/id6824946559?pt=118326163&ct=social&mt=8",
     "play": null,
     "review": {
@@ -20605,14 +20825,14 @@
      "url": "https://apps.apple.com/app/id6824946559?action=write-review"
     },
     "keywords": [
+     "foldable",
      "celular",
      "fundo",
-     "tela",
+     "tela dupla",
      "bloqueio",
-     "estético",
-     "personalizado"
+     "combinando"
     ],
-    "keyline": "Papel de parede para dobrável",
+    "keyline": "foldable · celular · fundo",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
@@ -41263,19 +41483,19 @@
     "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/b3a83b5abb.mp4",
     "hook": "Open: the whole scene",
     "name": "Foldable Wallpaper Studio",
-    "title": "Open: the whole scene | Dual Screen Pairs & Widgets | Foldable Wallpaper Studio",
+    "title": "Open: the whole scene | fold · folding · flip | Foldable Wallpaper Studio",
     "tags": [
-     "#Cute",
-     "#Lock",
-     "#Home",
-     "#Background",
-     "#Photo",
+     "#Fold",
+     "#Folding",
+     "#Flip",
+     "#Pair",
+     "#Pairs",
      "#FoldableWallpaperStudio"
     ],
-    "caption": "Open: the whole scene\n5 widgets drawn with your wallpaper\nDual Screen Pairs & Widgets\nSearch “Foldable Wallpaper Studio” on the App Store\n\n#Cute #Lock #Home #Background #FoldableWallpaperStudio",
+    "caption": "Open: the whole scene\n5 widgets drawn with your wallpaper\nfold · folding · flip\nSearch “Foldable Wallpaper Studio” on the App Store\n\n#Fold #Folding #Flip #Pair #FoldableWallpaperStudio",
     "button": "Get it on the App Store",
     "variant": "b",
-    "alt": "Foldable Wallpaper Studio — Open: the whole scene — 5 widgets drawn with your wallpaper — Dual Screen Pairs & Widgets",
+    "alt": "Foldable Wallpaper Studio — Open: the whole scene — 5 widgets drawn with your wallpaper — fold · folding · flip",
     "store": "https://apps.apple.com/us/app/id6824946559?pt=118326163&ct=social&mt=8",
     "play": null,
     "review": {
@@ -41283,14 +41503,14 @@
      "url": "https://apps.apple.com/app/id6824946559?action=write-review"
     },
     "keywords": [
-     "cute",
-     "lock",
-     "home",
-     "background",
-     "photo",
-     "maker"
+     "fold",
+     "folding",
+     "flip",
+     "pair",
+     "pairs",
+     "outer"
     ],
-    "keyline": "Dual Screen Pairs & Widgets",
+    "keyline": "fold · folding · flip",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
@@ -41300,14 +41520,14 @@
     },
     "youtube": {
      "title": "Open: the whole scene | Foldable Wallpaper Studio #Shorts",
-     "description": "Open: the whole scene\n5 widgets drawn with your wallpaper\nDual Screen Pairs & Widgets\n\nFoldable Wallpaper Studio\nApp Store: https://apps.apple.com/us/app/id6824946559?pt=118326163&ct=social&mt=8\nAlready using this app? Rate or review it on the App Store\nhttps://apps.apple.com/app/id6824946559?action=write-review\n\ncute · lock · home · background · photo · maker\n\n#Shorts #Cute #FoldableWallpaperStudio",
+     "description": "Open: the whole scene\n5 widgets drawn with your wallpaper\nfold · folding · flip\n\nFoldable Wallpaper Studio\nApp Store: https://apps.apple.com/us/app/id6824946559?pt=118326163&ct=social&mt=8\nAlready using this app? Rate or review it on the App Store\nhttps://apps.apple.com/app/id6824946559?action=write-review\n\nfold · folding · flip · pair · pairs · outer\n\n#Shorts #Fold #FoldableWallpaperStudio",
      "tags": [
-      "cute",
-      "lock",
-      "home",
-      "background",
-      "photo",
-      "maker",
+      "fold",
+      "folding",
+      "flip",
+      "pair",
+      "pairs",
+      "outer",
       "FoldableWallpaperStudio",
       "Foldable Wallpaper Studio"
      ]
@@ -41321,19 +41541,19 @@
     "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/a05e4e38ec.mp4",
     "hook": "展開，內螢幕是 整片全景",
     "name": "Foldable Wallpaper Studio",
-    "title": "展開，內螢幕是 整片全景 | 摺疊手機雙螢幕高畫質桌布，外螢幕內螢幕成對＋主畫面美化小工具 | Foldable Wallpaper Studio",
+    "title": "展開，內螢幕是 整片全景 | 適用Duo・高畫質・外螢幕特寫・內螢幕全景・美化小工具 | Foldable Wallpaper Studio",
     "tags": [
+     "#雙螢幕成對桌布",
+     "#折疊",
      "#鎖定畫面",
-     "#鎖屏",
-     "#壁紙",
-     "#桌面",
-     "#背景",
+     "#主畫面",
+     "#原創",
      "#FoldableWallpaperStudio"
     ],
-    "caption": "展開，內螢幕是 整片全景\n5 款小工具 畫上你選的桌布\n摺疊手機雙螢幕高畫質桌布，外螢幕內螢幕成對＋主畫面美化小工具\n在 App Store 搜尋「Foldable Wallpaper Studio」\n\n#鎖定畫面 #鎖屏 #壁紙 #桌面 #FoldableWallpaperStudio",
+    "caption": "展開，內螢幕是 整片全景\n5 款小工具 畫上你選的桌布\n適用Duo・高畫質・外螢幕特寫・內螢幕全景・美化小工具\n在 App Store 搜尋「Foldable Wallpaper Studio」\n\n#雙螢幕成對桌布 #折疊 #鎖定畫面 #主畫面 #FoldableWallpaperStudio",
     "button": "在 App Store 下載",
     "variant": "b",
-    "alt": "Foldable Wallpaper Studio — 展開，內螢幕是 整片全景 — 5 款小工具 畫上你選的桌布 — 摺疊手機雙螢幕高畫質桌布，外螢幕內螢幕成對＋主畫面美化小工具",
+    "alt": "Foldable Wallpaper Studio — 展開，內螢幕是 整片全景 — 5 款小工具 畫上你選的桌布 — 適用Duo・高畫質・外螢幕特寫・內螢幕全景・美化小工具",
     "store": "https://apps.apple.com/tw/app/id6824946559?pt=118326163&ct=social&mt=8",
     "play": null,
     "review": {
@@ -41341,14 +41561,14 @@
      "url": "https://apps.apple.com/app/id6824946559?action=write-review"
     },
     "keywords": [
+     "折疊",
      "鎖定畫面",
-     "鎖屏",
-     "壁紙",
-     "桌面",
-     "背景",
-     "可愛"
+     "主畫面",
+     "原創",
+     "插畫",
+     "星空"
     ],
-    "keyline": "摺疊手機雙螢幕高畫質桌布，外螢幕內螢幕成對＋主畫面美化小工具",
+    "keyline": "適用Duo・高畫質・外螢幕特寫・內螢幕全景・美化小工具",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
@@ -41358,14 +41578,15 @@
     },
     "youtube": {
      "title": "展開，內螢幕是 整片全景 | Foldable Wallpaper Studio #Shorts",
-     "description": "展開，內螢幕是 整片全景\n5 款小工具 畫上你選的桌布\n摺疊手機雙螢幕高畫質桌布，外螢幕內螢幕成對＋主畫面美化小工具\n\nFoldable Wallpaper Studio\nApp Store: https://apps.apple.com/tw/app/id6824946559?pt=118326163&ct=social&mt=8\n已經在用這款 App？可以到 App Store 評分或撰寫評論\nhttps://apps.apple.com/app/id6824946559?action=write-review\n\n鎖定畫面 · 鎖屏 · 壁紙 · 桌面 · 背景 · 可愛\n\n#Shorts #鎖定畫面 #FoldableWallpaperStudio",
+     "description": "展開，內螢幕是 整片全景\n5 款小工具 畫上你選的桌布\n適用Duo・高畫質・外螢幕特寫・內螢幕全景・美化小工具\n\nFoldable Wallpaper Studio\nApp Store: https://apps.apple.com/tw/app/id6824946559?pt=118326163&ct=social&mt=8\n已經在用這款 App？可以到 App Store 評分或撰寫評論\nhttps://apps.apple.com/app/id6824946559?action=write-review\n\n折疊 · 鎖定畫面 · 主畫面 · 原創 · 插畫 · 星空\n\n#Shorts #雙螢幕成對桌布 #FoldableWallpaperStudio",
      "tags": [
+      "折疊",
       "鎖定畫面",
-      "鎖屏",
-      "壁紙",
-      "桌面",
-      "背景",
-      "可愛",
+      "主畫面",
+      "原創",
+      "插畫",
+      "星空",
+      "雙螢幕成對桌布",
       "FoldableWallpaperStudio",
       "Foldable Wallpaper Studio"
      ]
@@ -41379,19 +41600,19 @@
     "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/c4285cfcdf.mp4",
     "hook": "開けば 全景",
     "name": "Foldable Wallpaper Studio",
-    "title": "開けば 全景 | 折りたたみスマホ用壁紙・外画面と内画面にぴったりのペア | Foldable Wallpaper Studio",
+    "title": "開けば 全景 | Duo対応・閉じればアップ、開けば全景のペア壁紙 | Foldable Wallpaper Studio",
     "tags": [
-     "#かわいい",
-     "#可愛い",
-     "#おしゃれ",
-     "#シンプル",
-     "#高画質",
+     "#外画面と内画面",
+     "#スマホ",
+     "#2画面",
+     "#待ち受け",
+     "#ロック画面",
      "#FoldableWallpaperStudio"
     ],
-    "caption": "開けば 全景\n選んだ壁紙で描く 5種のウィジェット\n折りたたみスマホ用壁紙・外画面と内画面にぴったりのペア\nApp Storeで「Foldable Wallpaper Studio」を検索\n\n#かわいい #可愛い #おしゃれ #シンプル #FoldableWallpaperStudio",
+    "caption": "開けば 全景\n選んだ壁紙で描く 5種のウィジェット\nDuo対応・閉じればアップ、開けば全景のペア壁紙\nApp Storeで「Foldable Wallpaper Studio」を検索\n\n#外画面と内画面 #スマホ #2画面 #待ち受け #FoldableWallpaperStudio",
     "button": "App Storeで入手",
     "variant": "b",
-    "alt": "Foldable Wallpaper Studio — 開けば 全景 — 選んだ壁紙で描く 5種のウィジェット — 折りたたみスマホ用壁紙・外画面と内画面にぴったりのペア",
+    "alt": "Foldable Wallpaper Studio — 開けば 全景 — 選んだ壁紙で描く 5種のウィジェット — Duo対応・閉じればアップ、開けば全景のペア壁紙",
     "store": "https://apps.apple.com/jp/app/id6824946559?pt=118326163&ct=social&mt=8",
     "play": null,
     "review": {
@@ -41399,14 +41620,14 @@
      "url": "https://apps.apple.com/app/id6824946559?action=write-review"
     },
     "keywords": [
-     "かわいい",
-     "可愛い",
-     "おしゃれ",
-     "シンプル",
-     "高画質",
-     "待ち受け"
+     "スマホ",
+     "2画面",
+     "待ち受け",
+     "ロック画面",
+     "ウィジェット",
+     "おそろい"
     ],
-    "keyline": "折りたたみスマホ用壁紙・外画面と内画面にぴったりのペア",
+    "keyline": "Duo対応・閉じればアップ、開けば全景のペア壁紙",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
@@ -41416,14 +41637,15 @@
     },
     "youtube": {
      "title": "開けば 全景 | Foldable Wallpaper Studio #Shorts",
-     "description": "開けば 全景\n選んだ壁紙で描く 5種のウィジェット\n折りたたみスマホ用壁紙・外画面と内画面にぴったりのペア\n\nFoldable Wallpaper Studio\nApp Store: https://apps.apple.com/jp/app/id6824946559?pt=118326163&ct=social&mt=8\nこのアプリをお使いですか？App Store で評価・レビューできます\nhttps://apps.apple.com/app/id6824946559?action=write-review\n\nかわいい · 可愛い · おしゃれ · シンプル · 高画質 · 待ち受け\n\n#Shorts #かわいい #FoldableWallpaperStudio",
+     "description": "開けば 全景\n選んだ壁紙で描く 5種のウィジェット\nDuo対応・閉じればアップ、開けば全景のペア壁紙\n\nFoldable Wallpaper Studio\nApp Store: https://apps.apple.com/jp/app/id6824946559?pt=118326163&ct=social&mt=8\nこのアプリをお使いですか？App Store で評価・レビューできます\nhttps://apps.apple.com/app/id6824946559?action=write-review\n\nスマホ · 2画面 · 待ち受け · ロック画面 · ウィジェット · おそろい\n\n#Shorts #外画面と内画面 #FoldableWallpaperStudio",
      "tags": [
-      "かわいい",
-      "可愛い",
-      "おしゃれ",
-      "シンプル",
-      "高画質",
+      "スマホ",
+      "2画面",
       "待ち受け",
+      "ロック画面",
+      "ウィジェット",
+      "おそろい",
+      "外画面と内画面",
       "FoldableWallpaperStudio",
       "Foldable Wallpaper Studio"
      ]
@@ -41437,19 +41659,19 @@
     "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/79299420af.mp4",
     "hook": "펼치면 같은 장면의 전경",
     "name": "Foldable Wallpaper Studio",
-    "title": "펼치면 같은 장면의 전경 | 폴더블 배경화면 커버·메인 세트, 위젯 폰꾸미기 | Foldable Wallpaper Studio",
+    "title": "펼치면 같은 장면의 전경 | Duo를 접으면 클로즈업, 펼치면 전경 | Foldable Wallpaper Studio",
     "tags": [
-     "#바탕화면",
-     "#만들기",
-     "#사이즈",
-     "#고화질",
+     "#커버메인세트",
+     "#폴더블폰",
+     "#커버화면",
+     "#메인화면",
      "#잠금화면",
      "#FoldableWallpaperStudio"
     ],
-    "caption": "펼치면 같은 장면의 전경\n고른 배경화면으로 그린 위젯 5종\n폴더블 배경화면 커버·메인 세트, 위젯 폰꾸미기\nApp Store에서 'Foldable Wallpaper Studio' 검색\n\n#바탕화면 #만들기 #사이즈 #고화질 #FoldableWallpaperStudio",
+    "caption": "펼치면 같은 장면의 전경\n고른 배경화면으로 그린 위젯 5종\nDuo를 접으면 클로즈업, 펼치면 전경\nApp Store에서 'Foldable Wallpaper Studio' 검색\n\n#커버메인세트 #폴더블폰 #커버화면 #메인화면 #FoldableWallpaperStudio",
     "button": "App Store에서 받기",
     "variant": "b",
-    "alt": "Foldable Wallpaper Studio — 펼치면 같은 장면의 전경 — 고른 배경화면으로 그린 위젯 5종 — 폴더블 배경화면 커버·메인 세트, 위젯 폰꾸미기",
+    "alt": "Foldable Wallpaper Studio — 펼치면 같은 장면의 전경 — 고른 배경화면으로 그린 위젯 5종 — Duo를 접으면 클로즈업, 펼치면 전경",
     "store": "https://apps.apple.com/kr/app/id6824946559?pt=118326163&ct=social&mt=8",
     "play": null,
     "review": {
@@ -41457,14 +41679,14 @@
      "url": "https://apps.apple.com/app/id6824946559?action=write-review"
     },
     "keywords": [
-     "바탕화면",
-     "만들기",
-     "사이즈",
-     "고화질",
+     "폴더블폰",
+     "커버화면",
+     "메인화면",
      "잠금화면",
-     "홈화면"
+     "위젯",
+     "폰꾸미기"
     ],
-    "keyline": "폴더블 배경화면 커버·메인 세트, 위젯 폰꾸미기",
+    "keyline": "Duo를 접으면 클로즈업, 펼치면 전경",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
@@ -41474,14 +41696,15 @@
     },
     "youtube": {
      "title": "펼치면 같은 장면의 전경 | Foldable Wallpaper Studio #Shorts",
-     "description": "펼치면 같은 장면의 전경\n고른 배경화면으로 그린 위젯 5종\n폴더블 배경화면 커버·메인 세트, 위젯 폰꾸미기\n\nFoldable Wallpaper Studio\nApp Store: https://apps.apple.com/kr/app/id6824946559?pt=118326163&ct=social&mt=8\n이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다\nhttps://apps.apple.com/app/id6824946559?action=write-review\n\n바탕화면 · 만들기 · 사이즈 · 고화질 · 잠금화면 · 홈화면\n\n#Shorts #바탕화면 #FoldableWallpaperStudio",
+     "description": "펼치면 같은 장면의 전경\n고른 배경화면으로 그린 위젯 5종\nDuo를 접으면 클로즈업, 펼치면 전경\n\nFoldable Wallpaper Studio\nApp Store: https://apps.apple.com/kr/app/id6824946559?pt=118326163&ct=social&mt=8\n이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다\nhttps://apps.apple.com/app/id6824946559?action=write-review\n\n폴더블폰 · 커버화면 · 메인화면 · 잠금화면 · 위젯 · 폰꾸미기\n\n#Shorts #커버메인세트 #FoldableWallpaperStudio",
      "tags": [
-      "바탕화면",
-      "만들기",
-      "사이즈",
-      "고화질",
+      "폴더블폰",
+      "커버화면",
+      "메인화면",
       "잠금화면",
-      "홈화면",
+      "위젯",
+      "폰꾸미기",
+      "커버메인세트",
       "FoldableWallpaperStudio",
       "Foldable Wallpaper Studio"
      ]
@@ -41495,19 +41718,19 @@
     "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/01e2afe12e.mp4",
     "hook": "Aufgeklappt: die ganze Szene",
     "name": "Foldable Wallpaper Studio",
-    "title": "Aufgeklappt: die ganze Szene | Foldable Hintergrundbilder HD | Foldable Wallpaper Studio",
+    "title": "Aufgeklappt: die ganze Szene | faltbar · klapphandy · paar | Foldable Wallpaper Studio",
     "tags": [
-     "#Sperrbildschirm",
-     "#Hintergrund",
-     "#Handy",
-     "#Erstellen",
-     "#Süße",
+     "#Faltbar",
+     "#Klapphandy",
+     "#Paar",
+     "#Außendisplay",
+     "#Innendisplay",
      "#FoldableWallpaperStudio"
     ],
-    "caption": "Aufgeklappt: die ganze Szene\n5 Widgets mit deinem Hintergrund\nFoldable Hintergrundbilder HD\nIm App Store nach „Foldable Wallpaper Studio“ suchen\n\n#Sperrbildschirm #Hintergrund #Handy #Erstellen #FoldableWallpaperStudio",
+    "caption": "Aufgeklappt: die ganze Szene\n5 Widgets mit deinem Hintergrund\nfaltbar · klapphandy · paar\nIm App Store nach „Foldable Wallpaper Studio“ suchen\n\n#Faltbar #Klapphandy #Paar #Außendisplay #FoldableWallpaperStudio",
     "button": "Im App Store laden",
     "variant": "b",
-    "alt": "Foldable Wallpaper Studio — Aufgeklappt: die ganze Szene — 5 Widgets mit deinem Hintergrund — Foldable Hintergrundbilder HD",
+    "alt": "Foldable Wallpaper Studio — Aufgeklappt: die ganze Szene — 5 Widgets mit deinem Hintergrund — faltbar · klapphandy · paar",
     "store": "https://apps.apple.com/de/app/id6824946559?pt=118326163&ct=social&mt=8",
     "play": null,
     "review": {
@@ -41515,14 +41738,14 @@
      "url": "https://apps.apple.com/app/id6824946559?action=write-review"
     },
     "keywords": [
-     "sperrbildschirm",
-     "hintergrund",
-     "handy",
-     "erstellen",
-     "süße",
-     "foto"
+     "faltbar",
+     "klapphandy",
+     "paar",
+     "außendisplay",
+     "innendisplay",
+     "sperrbildschirm"
     ],
-    "keyline": "Foldable Hintergrundbilder HD",
+    "keyline": "faltbar · klapphandy · paar",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
@@ -41532,14 +41755,14 @@
     },
     "youtube": {
      "title": "Aufgeklappt: die ganze Szene | Foldable Wallpaper Studio #Shorts",
-     "description": "Aufgeklappt: die ganze Szene\n5 Widgets mit deinem Hintergrund\nFoldable Hintergrundbilder HD\n\nFoldable Wallpaper Studio\nApp Store: https://apps.apple.com/de/app/id6824946559?pt=118326163&ct=social&mt=8\nSie nutzen diese App bereits? Bewerten oder rezensieren Sie sie im App Store\nhttps://apps.apple.com/app/id6824946559?action=write-review\n\nsperrbildschirm · hintergrund · handy · erstellen · süße · foto\n\n#Shorts #Sperrbildschirm #FoldableWallpaperStudio",
+     "description": "Aufgeklappt: die ganze Szene\n5 Widgets mit deinem Hintergrund\nfaltbar · klapphandy · paar\n\nFoldable Wallpaper Studio\nApp Store: https://apps.apple.com/de/app/id6824946559?pt=118326163&ct=social&mt=8\nSie nutzen diese App bereits? Bewerten oder rezensieren Sie sie im App Store\nhttps://apps.apple.com/app/id6824946559?action=write-review\n\nfaltbar · klapphandy · paar · außendisplay · innendisplay · sperrbildschirm\n\n#Shorts #Faltbar #FoldableWallpaperStudio",
      "tags": [
+      "faltbar",
+      "klapphandy",
+      "paar",
+      "außendisplay",
+      "innendisplay",
       "sperrbildschirm",
-      "hintergrund",
-      "handy",
-      "erstellen",
-      "süße",
-      "foto",
       "FoldableWallpaperStudio",
       "Foldable Wallpaper Studio"
      ]
@@ -41553,19 +41776,19 @@
     "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/145faec030.mp4",
     "hook": "Aberto: a cena inteira",
     "name": "Foldable Wallpaper Studio",
-    "title": "Aberto: a cena inteira | Papel de parede para dobrável | Foldable Wallpaper Studio",
+    "title": "Aberto: a cena inteira | foldable · celular · fundo | Foldable Wallpaper Studio",
     "tags": [
+     "#Foldable",
      "#Celular",
      "#Fundo",
-     "#Tela",
+     "#TelaDupla",
      "#Bloqueio",
-     "#Estético",
      "#FoldableWallpaperStudio"
     ],
-    "caption": "Aberto: a cena inteira\n5 widgets com o seu papel de parede\nPapel de parede para dobrável\nPesquise “Foldable Wallpaper Studio” na App Store\n\n#Celular #Fundo #Tela #Bloqueio #FoldableWallpaperStudio",
+    "caption": "Aberto: a cena inteira\n5 widgets com o seu papel de parede\nfoldable · celular · fundo\nPesquise “Foldable Wallpaper Studio” na App Store\n\n#Foldable #Celular #Fundo #TelaDupla #FoldableWallpaperStudio",
     "button": "Baixar na App Store",
     "variant": "b",
-    "alt": "Foldable Wallpaper Studio — Aberto: a cena inteira — 5 widgets com o seu papel de parede — Papel de parede para dobrável",
+    "alt": "Foldable Wallpaper Studio — Aberto: a cena inteira — 5 widgets com o seu papel de parede — foldable · celular · fundo",
     "store": "https://apps.apple.com/br/app/id6824946559?pt=118326163&ct=social&mt=8",
     "play": null,
     "review": {
@@ -41573,14 +41796,14 @@
      "url": "https://apps.apple.com/app/id6824946559?action=write-review"
     },
     "keywords": [
+     "foldable",
      "celular",
      "fundo",
-     "tela",
+     "tela dupla",
      "bloqueio",
-     "estético",
-     "personalizado"
+     "combinando"
     ],
-    "keyline": "Papel de parede para dobrável",
+    "keyline": "foldable · celular · fundo",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
@@ -41590,14 +41813,15 @@
     },
     "youtube": {
      "title": "Aberto: a cena inteira | Foldable Wallpaper Studio #Shorts",
-     "description": "Aberto: a cena inteira\n5 widgets com o seu papel de parede\nPapel de parede para dobrável\n\nFoldable Wallpaper Studio\nApp Store: https://apps.apple.com/br/app/id6824946559?pt=118326163&ct=social&mt=8\nJá usa este app? Avalie ou escreva uma resenha na App Store\nhttps://apps.apple.com/app/id6824946559?action=write-review\n\ncelular · fundo · tela · bloqueio · estético · personalizado\n\n#Shorts #Celular #FoldableWallpaperStudio",
+     "description": "Aberto: a cena inteira\n5 widgets com o seu papel de parede\nfoldable · celular · fundo\n\nFoldable Wallpaper Studio\nApp Store: https://apps.apple.com/br/app/id6824946559?pt=118326163&ct=social&mt=8\nJá usa este app? Avalie ou escreva uma resenha na App Store\nhttps://apps.apple.com/app/id6824946559?action=write-review\n\nfoldable · celular · fundo · tela dupla · bloqueio · combinando\n\n#Shorts #Foldable #FoldableWallpaperStudio",
      "tags": [
+      "foldable",
       "celular",
       "fundo",
-      "tela",
+      "tela dupla",
       "bloqueio",
-      "estético",
-      "personalizado",
+      "combinando",
+      "TelaDupla",
       "FoldableWallpaperStudio",
       "Foldable Wallpaper Studio"
      ]
@@ -58366,19 +58590,19 @@
     "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/b3a83b5abb.mp4",
     "hook": "Closed: a close-up",
     "name": "Foldable Wallpaper Studio",
-    "title": "Closed: a close-up | Dual Screen Pairs & Widgets | Foldable Wallpaper Studio",
+    "title": "Closed: a close-up | fold · folding · flip | Foldable Wallpaper Studio",
     "tags": [
-     "#Cute",
-     "#Lock",
-     "#Home",
-     "#Background",
-     "#Photo",
+     "#Fold",
+     "#Folding",
+     "#Flip",
+     "#Pair",
+     "#Pairs",
      "#FoldableWallpaperStudio"
     ],
-    "caption": "Closed: a close-up\nOpen: the whole scene\nDual Screen Pairs & Widgets\nSearch “Foldable Wallpaper Studio” on the App Store\n\n#Cute #Lock #Home #Background #FoldableWallpaperStudio",
+    "caption": "Closed: a close-up\nOpen: the whole scene\nfold · folding · flip\nSearch “Foldable Wallpaper Studio” on the App Store\n\n#Fold #Folding #Flip #Pair #FoldableWallpaperStudio",
     "button": "Get it on the App Store",
     "variant": "a",
-    "alt": "Foldable Wallpaper Studio — Closed: a close-up — Open: the whole scene — Dual Screen Pairs & Widgets",
+    "alt": "Foldable Wallpaper Studio — Closed: a close-up — Open: the whole scene — fold · folding · flip",
     "store": "https://apps.apple.com/us/app/id6824946559?pt=118326163&ct=social&mt=8",
     "play": null,
     "review": {
@@ -58386,14 +58610,14 @@
      "url": "https://apps.apple.com/app/id6824946559?action=write-review"
     },
     "keywords": [
-     "cute",
-     "lock",
-     "home",
-     "background",
-     "photo",
-     "maker"
+     "fold",
+     "folding",
+     "flip",
+     "pair",
+     "pairs",
+     "outer"
     ],
-    "keyline": "Dual Screen Pairs & Widgets",
+    "keyline": "fold · folding · flip",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
@@ -58402,7 +58626,7 @@
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "Closed: a close-up\nOpen: the whole scene\nDual Screen Pairs & Widgets\nSearch “Foldable Wallpaper Studio” on the App Store\n\n#Cute #Lock #Home #Background #FoldableWallpaperStudio\n\nGet it on the App Store: https://apps.apple.com/us/app/id6824946559?pt=118326163&ct=social&mt=8",
+     "description": "Closed: a close-up\nOpen: the whole scene\nfold · folding · flip\nSearch “Foldable Wallpaper Studio” on the App Store\n\n#Fold #Folding #Flip #Pair #FoldableWallpaperStudio\n\nGet it on the App Store: https://apps.apple.com/us/app/id6824946559?pt=118326163&ct=social&mt=8",
      "link": "https://apps.apple.com/us/app/id6824946559?pt=118326163&ct=social&mt=8"
     }
    },
@@ -58414,19 +58638,19 @@
     "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/a05e4e38ec.mp4",
     "hook": "換色 再加一行字",
     "name": "Foldable Wallpaper Studio",
-    "title": "換色 再加一行字 | 摺疊手機雙螢幕高畫質桌布，外螢幕內螢幕成對＋主畫面美化小工具 | Foldable Wallpaper Studio",
+    "title": "換色 再加一行字 | 適用Duo・高畫質・外螢幕特寫・內螢幕全景・美化小工具 | Foldable Wallpaper Studio",
     "tags": [
+     "#雙螢幕成對桌布",
+     "#折疊",
      "#鎖定畫面",
-     "#鎖屏",
-     "#壁紙",
-     "#桌面",
-     "#背景",
+     "#主畫面",
+     "#原創",
      "#FoldableWallpaperStudio"
     ],
-    "caption": "換色 再加一行字\n展開，內螢幕是 整片全景\n摺疊手機雙螢幕高畫質桌布，外螢幕內螢幕成對＋主畫面美化小工具\n在 App Store 搜尋「Foldable Wallpaper Studio」\n\n#鎖定畫面 #鎖屏 #壁紙 #桌面 #FoldableWallpaperStudio",
+    "caption": "換色 再加一行字\n展開，內螢幕是 整片全景\n適用Duo・高畫質・外螢幕特寫・內螢幕全景・美化小工具\n在 App Store 搜尋「Foldable Wallpaper Studio」\n\n#雙螢幕成對桌布 #折疊 #鎖定畫面 #主畫面 #FoldableWallpaperStudio",
     "button": "在 App Store 下載",
     "variant": "c",
-    "alt": "Foldable Wallpaper Studio — 換色 再加一行字 — 展開，內螢幕是 整片全景 — 摺疊手機雙螢幕高畫質桌布，外螢幕內螢幕成對＋主畫面美化小工具",
+    "alt": "Foldable Wallpaper Studio — 換色 再加一行字 — 展開，內螢幕是 整片全景 — 適用Duo・高畫質・外螢幕特寫・內螢幕全景・美化小工具",
     "store": "https://apps.apple.com/tw/app/id6824946559?pt=118326163&ct=social&mt=8",
     "play": null,
     "review": {
@@ -58434,14 +58658,14 @@
      "url": "https://apps.apple.com/app/id6824946559?action=write-review"
     },
     "keywords": [
+     "折疊",
      "鎖定畫面",
-     "鎖屏",
-     "壁紙",
-     "桌面",
-     "背景",
-     "可愛"
+     "主畫面",
+     "原創",
+     "插畫",
+     "星空"
     ],
-    "keyline": "摺疊手機雙螢幕高畫質桌布，外螢幕內螢幕成對＋主畫面美化小工具",
+    "keyline": "適用Duo・高畫質・外螢幕特寫・內螢幕全景・美化小工具",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
@@ -58450,7 +58674,7 @@
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "換色 再加一行字\n展開，內螢幕是 整片全景\n摺疊手機雙螢幕高畫質桌布，外螢幕內螢幕成對＋主畫面美化小工具\n在 App Store 搜尋「Foldable Wallpaper Studio」\n\n#鎖定畫面 #鎖屏 #壁紙 #桌面 #FoldableWallpaperStudio\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6824946559?pt=118326163&ct=social&mt=8",
+     "description": "換色 再加一行字\n展開，內螢幕是 整片全景\n適用Duo・高畫質・外螢幕特寫・內螢幕全景・美化小工具\n在 App Store 搜尋「Foldable Wallpaper Studio」\n\n#雙螢幕成對桌布 #折疊 #鎖定畫面 #主畫面 #FoldableWallpaperStudio\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6824946559?pt=118326163&ct=social&mt=8",
      "link": "https://apps.apple.com/tw/app/id6824946559?pt=118326163&ct=social&mt=8"
     }
    },
@@ -58462,19 +58686,19 @@
     "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/c4285cfcdf.mp4",
     "hook": "開けば 全景",
     "name": "Foldable Wallpaper Studio",
-    "title": "開けば 全景 | 折りたたみスマホ用壁紙・外画面と内画面にぴったりのペア | Foldable Wallpaper Studio",
+    "title": "開けば 全景 | Duo対応・閉じればアップ、開けば全景のペア壁紙 | Foldable Wallpaper Studio",
     "tags": [
-     "#かわいい",
-     "#可愛い",
-     "#おしゃれ",
-     "#シンプル",
-     "#高画質",
+     "#外画面と内画面",
+     "#スマホ",
+     "#2画面",
+     "#待ち受け",
+     "#ロック画面",
      "#FoldableWallpaperStudio"
     ],
-    "caption": "開けば 全景\n選んだ壁紙で描く 5種のウィジェット\n折りたたみスマホ用壁紙・外画面と内画面にぴったりのペア\nApp Storeで「Foldable Wallpaper Studio」を検索\n\n#かわいい #可愛い #おしゃれ #シンプル #FoldableWallpaperStudio",
+    "caption": "開けば 全景\n選んだ壁紙で描く 5種のウィジェット\nDuo対応・閉じればアップ、開けば全景のペア壁紙\nApp Storeで「Foldable Wallpaper Studio」を検索\n\n#外画面と内画面 #スマホ #2画面 #待ち受け #FoldableWallpaperStudio",
     "button": "App Storeで入手",
     "variant": "b",
-    "alt": "Foldable Wallpaper Studio — 開けば 全景 — 選んだ壁紙で描く 5種のウィジェット — 折りたたみスマホ用壁紙・外画面と内画面にぴったりのペア",
+    "alt": "Foldable Wallpaper Studio — 開けば 全景 — 選んだ壁紙で描く 5種のウィジェット — Duo対応・閉じればアップ、開けば全景のペア壁紙",
     "store": "https://apps.apple.com/jp/app/id6824946559?pt=118326163&ct=social&mt=8",
     "play": null,
     "review": {
@@ -58482,14 +58706,14 @@
      "url": "https://apps.apple.com/app/id6824946559?action=write-review"
     },
     "keywords": [
-     "かわいい",
-     "可愛い",
-     "おしゃれ",
-     "シンプル",
-     "高画質",
-     "待ち受け"
+     "スマホ",
+     "2画面",
+     "待ち受け",
+     "ロック画面",
+     "ウィジェット",
+     "おそろい"
     ],
-    "keyline": "折りたたみスマホ用壁紙・外画面と内画面にぴったりのペア",
+    "keyline": "Duo対応・閉じればアップ、開けば全景のペア壁紙",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
@@ -58498,7 +58722,7 @@
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "開けば 全景\n選んだ壁紙で描く 5種のウィジェット\n折りたたみスマホ用壁紙・外画面と内画面にぴったりのペア\nApp Storeで「Foldable Wallpaper Studio」を検索\n\n#かわいい #可愛い #おしゃれ #シンプル #FoldableWallpaperStudio\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6824946559?pt=118326163&ct=social&mt=8",
+     "description": "開けば 全景\n選んだ壁紙で描く 5種のウィジェット\nDuo対応・閉じればアップ、開けば全景のペア壁紙\nApp Storeで「Foldable Wallpaper Studio」を検索\n\n#外画面と内画面 #スマホ #2画面 #待ち受け #FoldableWallpaperStudio\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6824946559?pt=118326163&ct=social&mt=8",
      "link": "https://apps.apple.com/jp/app/id6824946559?pt=118326163&ct=social&mt=8"
     }
    },
@@ -58510,19 +58734,19 @@
     "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/79299420af.mp4",
     "hook": "펼치면 같은 장면의 전경",
     "name": "Foldable Wallpaper Studio",
-    "title": "펼치면 같은 장면의 전경 | 폴더블 배경화면 커버·메인 세트, 위젯 폰꾸미기 | Foldable Wallpaper Studio",
+    "title": "펼치면 같은 장면의 전경 | Duo를 접으면 클로즈업, 펼치면 전경 | Foldable Wallpaper Studio",
     "tags": [
-     "#바탕화면",
-     "#만들기",
-     "#사이즈",
-     "#고화질",
+     "#커버메인세트",
+     "#폴더블폰",
+     "#커버화면",
+     "#메인화면",
      "#잠금화면",
      "#FoldableWallpaperStudio"
     ],
-    "caption": "펼치면 같은 장면의 전경\n고른 배경화면으로 그린 위젯 5종\n폴더블 배경화면 커버·메인 세트, 위젯 폰꾸미기\nApp Store에서 'Foldable Wallpaper Studio' 검색\n\n#바탕화면 #만들기 #사이즈 #고화질 #FoldableWallpaperStudio",
+    "caption": "펼치면 같은 장면의 전경\n고른 배경화면으로 그린 위젯 5종\nDuo를 접으면 클로즈업, 펼치면 전경\nApp Store에서 'Foldable Wallpaper Studio' 검색\n\n#커버메인세트 #폴더블폰 #커버화면 #메인화면 #FoldableWallpaperStudio",
     "button": "App Store에서 받기",
     "variant": "b",
-    "alt": "Foldable Wallpaper Studio — 펼치면 같은 장면의 전경 — 고른 배경화면으로 그린 위젯 5종 — 폴더블 배경화면 커버·메인 세트, 위젯 폰꾸미기",
+    "alt": "Foldable Wallpaper Studio — 펼치면 같은 장면의 전경 — 고른 배경화면으로 그린 위젯 5종 — Duo를 접으면 클로즈업, 펼치면 전경",
     "store": "https://apps.apple.com/kr/app/id6824946559?pt=118326163&ct=social&mt=8",
     "play": null,
     "review": {
@@ -58530,14 +58754,14 @@
      "url": "https://apps.apple.com/app/id6824946559?action=write-review"
     },
     "keywords": [
-     "바탕화면",
-     "만들기",
-     "사이즈",
-     "고화질",
+     "폴더블폰",
+     "커버화면",
+     "메인화면",
      "잠금화면",
-     "홈화면"
+     "위젯",
+     "폰꾸미기"
     ],
-    "keyline": "폴더블 배경화면 커버·메인 세트, 위젯 폰꾸미기",
+    "keyline": "Duo를 접으면 클로즈업, 펼치면 전경",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
@@ -58546,7 +58770,7 @@
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "펼치면 같은 장면의 전경\n고른 배경화면으로 그린 위젯 5종\n폴더블 배경화면 커버·메인 세트, 위젯 폰꾸미기\nApp Store에서 'Foldable Wallpaper Studio' 검색\n\n#바탕화면 #만들기 #사이즈 #고화질 #FoldableWallpaperStudio\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6824946559?pt=118326163&ct=social&mt=8",
+     "description": "펼치면 같은 장면의 전경\n고른 배경화면으로 그린 위젯 5종\nDuo를 접으면 클로즈업, 펼치면 전경\nApp Store에서 'Foldable Wallpaper Studio' 검색\n\n#커버메인세트 #폴더블폰 #커버화면 #메인화면 #FoldableWallpaperStudio\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6824946559?pt=118326163&ct=social&mt=8",
      "link": "https://apps.apple.com/kr/app/id6824946559?pt=118326163&ct=social&mt=8"
     }
    },
@@ -58558,19 +58782,19 @@
     "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/01e2afe12e.mp4",
     "hook": "Farben ändern, eine kurze Textzeile",
     "name": "Foldable Wallpaper Studio",
-    "title": "Farben ändern, eine kurze Textzeile | Foldable Hintergrundbilder HD | Foldable Wallpaper Studio",
+    "title": "Farben ändern, eine kurze Textzeile | faltbar · klapphandy · paar | Foldable Wallpaper Studio",
     "tags": [
-     "#Sperrbildschirm",
-     "#Hintergrund",
-     "#Handy",
-     "#Erstellen",
-     "#Süße",
+     "#Faltbar",
+     "#Klapphandy",
+     "#Paar",
+     "#Außendisplay",
+     "#Innendisplay",
      "#FoldableWallpaperStudio"
     ],
-    "caption": "Farben ändern, eine kurze Textzeile\nAufgeklappt: die ganze Szene\nFoldable Hintergrundbilder HD\nIm App Store nach „Foldable Wallpaper Studio“ suchen\n\n#Sperrbildschirm #Hintergrund #Handy #Erstellen #FoldableWallpaperStudio",
+    "caption": "Farben ändern, eine kurze Textzeile\nAufgeklappt: die ganze Szene\nfaltbar · klapphandy · paar\nIm App Store nach „Foldable Wallpaper Studio“ suchen\n\n#Faltbar #Klapphandy #Paar #Außendisplay #FoldableWallpaperStudio",
     "button": "Im App Store laden",
     "variant": "c",
-    "alt": "Foldable Wallpaper Studio — Farben ändern, eine kurze Textzeile — Aufgeklappt: die ganze Szene — Foldable Hintergrundbilder HD",
+    "alt": "Foldable Wallpaper Studio — Farben ändern, eine kurze Textzeile — Aufgeklappt: die ganze Szene — faltbar · klapphandy · paar",
     "store": "https://apps.apple.com/de/app/id6824946559?pt=118326163&ct=social&mt=8",
     "play": null,
     "review": {
@@ -58578,14 +58802,14 @@
      "url": "https://apps.apple.com/app/id6824946559?action=write-review"
     },
     "keywords": [
-     "sperrbildschirm",
-     "hintergrund",
-     "handy",
-     "erstellen",
-     "süße",
-     "foto"
+     "faltbar",
+     "klapphandy",
+     "paar",
+     "außendisplay",
+     "innendisplay",
+     "sperrbildschirm"
     ],
-    "keyline": "Foldable Hintergrundbilder HD",
+    "keyline": "faltbar · klapphandy · paar",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
@@ -58594,7 +58818,7 @@
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "Farben ändern, eine kurze Textzeile\nAufgeklappt: die ganze Szene\nFoldable Hintergrundbilder HD\nIm App Store nach „Foldable Wallpaper Studio“ suchen\n\n#Sperrbildschirm #Hintergrund #Handy #Erstellen #FoldableWallpaperStudio\n\nIm App Store laden: https://apps.apple.com/de/app/id6824946559?pt=118326163&ct=social&mt=8",
+     "description": "Farben ändern, eine kurze Textzeile\nAufgeklappt: die ganze Szene\nfaltbar · klapphandy · paar\nIm App Store nach „Foldable Wallpaper Studio“ suchen\n\n#Faltbar #Klapphandy #Paar #Außendisplay #FoldableWallpaperStudio\n\nIm App Store laden: https://apps.apple.com/de/app/id6824946559?pt=118326163&ct=social&mt=8",
      "link": "https://apps.apple.com/de/app/id6824946559?pt=118326163&ct=social&mt=8"
     }
    },
@@ -58606,19 +58830,19 @@
     "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/145faec030.mp4",
     "hook": "Fechado: um close",
     "name": "Foldable Wallpaper Studio",
-    "title": "Fechado: um close | Papel de parede para dobrável | Foldable Wallpaper Studio",
+    "title": "Fechado: um close | foldable · celular · fundo | Foldable Wallpaper Studio",
     "tags": [
+     "#Foldable",
      "#Celular",
      "#Fundo",
-     "#Tela",
+     "#TelaDupla",
      "#Bloqueio",
-     "#Estético",
      "#FoldableWallpaperStudio"
     ],
-    "caption": "Fechado: um close\nAberto: a cena inteira\nPapel de parede para dobrável\nPesquise “Foldable Wallpaper Studio” na App Store\n\n#Celular #Fundo #Tela #Bloqueio #FoldableWallpaperStudio",
+    "caption": "Fechado: um close\nAberto: a cena inteira\nfoldable · celular · fundo\nPesquise “Foldable Wallpaper Studio” na App Store\n\n#Foldable #Celular #Fundo #TelaDupla #FoldableWallpaperStudio",
     "button": "Baixar na App Store",
     "variant": "a",
-    "alt": "Foldable Wallpaper Studio — Fechado: um close — Aberto: a cena inteira — Papel de parede para dobrável",
+    "alt": "Foldable Wallpaper Studio — Fechado: um close — Aberto: a cena inteira — foldable · celular · fundo",
     "store": "https://apps.apple.com/br/app/id6824946559?pt=118326163&ct=social&mt=8",
     "play": null,
     "review": {
@@ -58626,14 +58850,14 @@
      "url": "https://apps.apple.com/app/id6824946559?action=write-review"
     },
     "keywords": [
+     "foldable",
      "celular",
      "fundo",
-     "tela",
+     "tela dupla",
      "bloqueio",
-     "estético",
-     "personalizado"
+     "combinando"
     ],
-    "keyline": "Papel de parede para dobrável",
+    "keyline": "foldable · celular · fundo",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
@@ -58642,7 +58866,7 @@
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "Fechado: um close\nAberto: a cena inteira\nPapel de parede para dobrável\nPesquise “Foldable Wallpaper Studio” na App Store\n\n#Celular #Fundo #Tela #Bloqueio #FoldableWallpaperStudio\n\nBaixar na App Store: https://apps.apple.com/br/app/id6824946559?pt=118326163&ct=social&mt=8",
+     "description": "Fechado: um close\nAberto: a cena inteira\nfoldable · celular · fundo\nPesquise “Foldable Wallpaper Studio” na App Store\n\n#Foldable #Celular #Fundo #TelaDupla #FoldableWallpaperStudio\n\nBaixar na App Store: https://apps.apple.com/br/app/id6824946559?pt=118326163&ct=social&mt=8",
      "link": "https://apps.apple.com/br/app/id6824946559?pt=118326163&ct=social&mt=8"
     }
    }
@@ -75060,19 +75284,19 @@
     "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/b3a83b5abb.mp4",
     "hook": "Recolor it, add your own words",
     "name": "Foldable Wallpaper Studio",
-    "title": "Recolor it, add your own words | Dual Screen Pairs & Widgets | Foldable Wallpaper Studio",
+    "title": "Recolor it, add your own words | fold · folding · flip | Foldable Wallpaper Studio",
     "tags": [
-     "#Cute",
-     "#Lock",
-     "#Home",
-     "#Background",
-     "#Photo",
+     "#Fold",
+     "#Folding",
+     "#Flip",
+     "#Pair",
+     "#Pairs",
      "#FoldableWallpaperStudio"
     ],
-    "caption": "Recolor it, add your own words\nOpen: the whole scene\nDual Screen Pairs & Widgets\nSearch “Foldable Wallpaper Studio” on the App Store\n\n#Cute #Lock #Home #Background #FoldableWallpaperStudio",
+    "caption": "Recolor it, add your own words\nOpen: the whole scene\nfold · folding · flip\nSearch “Foldable Wallpaper Studio” on the App Store\n\n#Fold #Folding #Flip #Pair #FoldableWallpaperStudio",
     "button": "Get it on the App Store",
     "variant": "c",
-    "alt": "Foldable Wallpaper Studio — Recolor it, add your own words — Open: the whole scene — Dual Screen Pairs & Widgets",
+    "alt": "Foldable Wallpaper Studio — Recolor it, add your own words — Open: the whole scene — fold · folding · flip",
     "store": "https://apps.apple.com/us/app/id6824946559?pt=118326163&ct=social&mt=8",
     "play": null,
     "review": {
@@ -75080,14 +75304,14 @@
      "url": "https://apps.apple.com/app/id6824946559?action=write-review"
     },
     "keywords": [
-     "cute",
-     "lock",
-     "home",
-     "background",
-     "photo",
-     "maker"
+     "fold",
+     "folding",
+     "flip",
+     "pair",
+     "pairs",
+     "outer"
     ],
-    "keyline": "Dual Screen Pairs & Widgets",
+    "keyline": "fold · folding · flip",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
@@ -75096,7 +75320,7 @@
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "Recolor it, add your own words\nOpen: the whole scene\nDual Screen Pairs & Widgets\nSearch “Foldable Wallpaper Studio” on the App Store\n\n#Cute #Lock #Home #Background #FoldableWallpaperStudio\n\nGet it on the App Store: https://apps.apple.com/us/app/id6824946559?pt=118326163&ct=social&mt=8"
+     "caption": "Recolor it, add your own words\nOpen: the whole scene\nfold · folding · flip\nSearch “Foldable Wallpaper Studio” on the App Store\n\n#Fold #Folding #Flip #Pair #FoldableWallpaperStudio\n\nGet it on the App Store: https://apps.apple.com/us/app/id6824946559?pt=118326163&ct=social&mt=8"
     }
    },
    {
@@ -75107,19 +75331,19 @@
     "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/a05e4e38ec.mp4",
     "hook": "展開，內螢幕是 整片全景",
     "name": "Foldable Wallpaper Studio",
-    "title": "展開，內螢幕是 整片全景 | 摺疊手機雙螢幕高畫質桌布，外螢幕內螢幕成對＋主畫面美化小工具 | Foldable Wallpaper Studio",
+    "title": "展開，內螢幕是 整片全景 | 適用Duo・高畫質・外螢幕特寫・內螢幕全景・美化小工具 | Foldable Wallpaper Studio",
     "tags": [
+     "#雙螢幕成對桌布",
+     "#折疊",
      "#鎖定畫面",
-     "#鎖屏",
-     "#壁紙",
-     "#桌面",
-     "#背景",
+     "#主畫面",
+     "#原創",
      "#FoldableWallpaperStudio"
     ],
-    "caption": "展開，內螢幕是 整片全景\n5 款小工具 畫上你選的桌布\n摺疊手機雙螢幕高畫質桌布，外螢幕內螢幕成對＋主畫面美化小工具\n在 App Store 搜尋「Foldable Wallpaper Studio」\n\n#鎖定畫面 #鎖屏 #壁紙 #桌面 #FoldableWallpaperStudio",
+    "caption": "展開，內螢幕是 整片全景\n5 款小工具 畫上你選的桌布\n適用Duo・高畫質・外螢幕特寫・內螢幕全景・美化小工具\n在 App Store 搜尋「Foldable Wallpaper Studio」\n\n#雙螢幕成對桌布 #折疊 #鎖定畫面 #主畫面 #FoldableWallpaperStudio",
     "button": "在 App Store 下載",
     "variant": "b",
-    "alt": "Foldable Wallpaper Studio — 展開，內螢幕是 整片全景 — 5 款小工具 畫上你選的桌布 — 摺疊手機雙螢幕高畫質桌布，外螢幕內螢幕成對＋主畫面美化小工具",
+    "alt": "Foldable Wallpaper Studio — 展開，內螢幕是 整片全景 — 5 款小工具 畫上你選的桌布 — 適用Duo・高畫質・外螢幕特寫・內螢幕全景・美化小工具",
     "store": "https://apps.apple.com/tw/app/id6824946559?pt=118326163&ct=social&mt=8",
     "play": null,
     "review": {
@@ -75127,14 +75351,14 @@
      "url": "https://apps.apple.com/app/id6824946559?action=write-review"
     },
     "keywords": [
+     "折疊",
      "鎖定畫面",
-     "鎖屏",
-     "壁紙",
-     "桌面",
-     "背景",
-     "可愛"
+     "主畫面",
+     "原創",
+     "插畫",
+     "星空"
     ],
-    "keyline": "摺疊手機雙螢幕高畫質桌布，外螢幕內螢幕成對＋主畫面美化小工具",
+    "keyline": "適用Duo・高畫質・外螢幕特寫・內螢幕全景・美化小工具",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
@@ -75143,7 +75367,7 @@
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "展開，內螢幕是 整片全景\n5 款小工具 畫上你選的桌布\n摺疊手機雙螢幕高畫質桌布，外螢幕內螢幕成對＋主畫面美化小工具\n在 App Store 搜尋「Foldable Wallpaper Studio」\n\n#鎖定畫面 #鎖屏 #壁紙 #桌面 #FoldableWallpaperStudio\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6824946559?pt=118326163&ct=social&mt=8"
+     "caption": "展開，內螢幕是 整片全景\n5 款小工具 畫上你選的桌布\n適用Duo・高畫質・外螢幕特寫・內螢幕全景・美化小工具\n在 App Store 搜尋「Foldable Wallpaper Studio」\n\n#雙螢幕成對桌布 #折疊 #鎖定畫面 #主畫面 #FoldableWallpaperStudio\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6824946559?pt=118326163&ct=social&mt=8"
     }
    },
    {
@@ -75154,19 +75378,19 @@
     "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/c4285cfcdf.mp4",
     "hook": "閉じれば クローズアップ",
     "name": "Foldable Wallpaper Studio",
-    "title": "閉じれば クローズアップ | 折りたたみスマホ用壁紙・外画面と内画面にぴったりのペア | Foldable Wallpaper Studio",
+    "title": "閉じれば クローズアップ | Duo対応・閉じればアップ、開けば全景のペア壁紙 | Foldable Wallpaper Studio",
     "tags": [
-     "#かわいい",
-     "#可愛い",
-     "#おしゃれ",
-     "#シンプル",
-     "#高画質",
+     "#外画面と内画面",
+     "#スマホ",
+     "#2画面",
+     "#待ち受け",
+     "#ロック画面",
      "#FoldableWallpaperStudio"
     ],
-    "caption": "閉じれば クローズアップ\n開けば 全景\n折りたたみスマホ用壁紙・外画面と内画面にぴったりのペア\nApp Storeで「Foldable Wallpaper Studio」を検索\n\n#かわいい #可愛い #おしゃれ #シンプル #FoldableWallpaperStudio",
+    "caption": "閉じれば クローズアップ\n開けば 全景\nDuo対応・閉じればアップ、開けば全景のペア壁紙\nApp Storeで「Foldable Wallpaper Studio」を検索\n\n#外画面と内画面 #スマホ #2画面 #待ち受け #FoldableWallpaperStudio",
     "button": "App Storeで入手",
     "variant": "a",
-    "alt": "Foldable Wallpaper Studio — 閉じれば クローズアップ — 開けば 全景 — 折りたたみスマホ用壁紙・外画面と内画面にぴったりのペア",
+    "alt": "Foldable Wallpaper Studio — 閉じれば クローズアップ — 開けば 全景 — Duo対応・閉じればアップ、開けば全景のペア壁紙",
     "store": "https://apps.apple.com/jp/app/id6824946559?pt=118326163&ct=social&mt=8",
     "play": null,
     "review": {
@@ -75174,14 +75398,14 @@
      "url": "https://apps.apple.com/app/id6824946559?action=write-review"
     },
     "keywords": [
-     "かわいい",
-     "可愛い",
-     "おしゃれ",
-     "シンプル",
-     "高画質",
-     "待ち受け"
+     "スマホ",
+     "2画面",
+     "待ち受け",
+     "ロック画面",
+     "ウィジェット",
+     "おそろい"
     ],
-    "keyline": "折りたたみスマホ用壁紙・外画面と内画面にぴったりのペア",
+    "keyline": "Duo対応・閉じればアップ、開けば全景のペア壁紙",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
@@ -75190,7 +75414,7 @@
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "閉じれば クローズアップ\n開けば 全景\n折りたたみスマホ用壁紙・外画面と内画面にぴったりのペア\nApp Storeで「Foldable Wallpaper Studio」を検索\n\n#かわいい #可愛い #おしゃれ #シンプル #FoldableWallpaperStudio\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6824946559?pt=118326163&ct=social&mt=8"
+     "caption": "閉じれば クローズアップ\n開けば 全景\nDuo対応・閉じればアップ、開けば全景のペア壁紙\nApp Storeで「Foldable Wallpaper Studio」を検索\n\n#外画面と内画面 #スマホ #2画面 #待ち受け #FoldableWallpaperStudio\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6824946559?pt=118326163&ct=social&mt=8"
     }
    },
    {
@@ -75201,19 +75425,19 @@
     "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/79299420af.mp4",
     "hook": "접으면 클로즈업",
     "name": "Foldable Wallpaper Studio",
-    "title": "접으면 클로즈업 | 폴더블 배경화면 커버·메인 세트, 위젯 폰꾸미기 | Foldable Wallpaper Studio",
+    "title": "접으면 클로즈업 | Duo를 접으면 클로즈업, 펼치면 전경 | Foldable Wallpaper Studio",
     "tags": [
-     "#바탕화면",
-     "#만들기",
-     "#사이즈",
-     "#고화질",
+     "#커버메인세트",
+     "#폴더블폰",
+     "#커버화면",
+     "#메인화면",
      "#잠금화면",
      "#FoldableWallpaperStudio"
     ],
-    "caption": "접으면 클로즈업\n펼치면 같은 장면의 전경\n폴더블 배경화면 커버·메인 세트, 위젯 폰꾸미기\nApp Store에서 'Foldable Wallpaper Studio' 검색\n\n#바탕화면 #만들기 #사이즈 #고화질 #FoldableWallpaperStudio",
+    "caption": "펼치면 같은 장면의 전경\nDuo를 접으면 클로즈업, 펼치면 전경\nApp Store에서 'Foldable Wallpaper Studio' 검색\n\n#커버메인세트 #폴더블폰 #커버화면 #메인화면 #FoldableWallpaperStudio",
     "button": "App Store에서 받기",
     "variant": "a",
-    "alt": "Foldable Wallpaper Studio — 접으면 클로즈업 — 펼치면 같은 장면의 전경 — 폴더블 배경화면 커버·메인 세트, 위젯 폰꾸미기",
+    "alt": "Foldable Wallpaper Studio — 접으면 클로즈업 — 펼치면 같은 장면의 전경 — Duo를 접으면 클로즈업, 펼치면 전경",
     "store": "https://apps.apple.com/kr/app/id6824946559?pt=118326163&ct=social&mt=8",
     "play": null,
     "review": {
@@ -75221,14 +75445,14 @@
      "url": "https://apps.apple.com/app/id6824946559?action=write-review"
     },
     "keywords": [
-     "바탕화면",
-     "만들기",
-     "사이즈",
-     "고화질",
+     "폴더블폰",
+     "커버화면",
+     "메인화면",
      "잠금화면",
-     "홈화면"
+     "위젯",
+     "폰꾸미기"
     ],
-    "keyline": "폴더블 배경화면 커버·메인 세트, 위젯 폰꾸미기",
+    "keyline": "Duo를 접으면 클로즈업, 펼치면 전경",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
@@ -75237,7 +75461,7 @@
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "접으면 클로즈업\n펼치면 같은 장면의 전경\n폴더블 배경화면 커버·메인 세트, 위젯 폰꾸미기\nApp Store에서 'Foldable Wallpaper Studio' 검색\n\n#바탕화면 #만들기 #사이즈 #고화질 #FoldableWallpaperStudio\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6824946559?pt=118326163&ct=social&mt=8"
+     "caption": "펼치면 같은 장면의 전경\nDuo를 접으면 클로즈업, 펼치면 전경\nApp Store에서 'Foldable Wallpaper Studio' 검색\n\n#커버메인세트 #폴더블폰 #커버화면 #메인화면 #FoldableWallpaperStudio\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6824946559?pt=118326163&ct=social&mt=8"
     }
    },
    {
@@ -75248,19 +75472,19 @@
     "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/01e2afe12e.mp4",
     "hook": "Aufgeklappt: die ganze Szene",
     "name": "Foldable Wallpaper Studio",
-    "title": "Aufgeklappt: die ganze Szene | Foldable Hintergrundbilder HD | Foldable Wallpaper Studio",
+    "title": "Aufgeklappt: die ganze Szene | faltbar · klapphandy · paar | Foldable Wallpaper Studio",
     "tags": [
-     "#Sperrbildschirm",
-     "#Hintergrund",
-     "#Handy",
-     "#Erstellen",
-     "#Süße",
+     "#Faltbar",
+     "#Klapphandy",
+     "#Paar",
+     "#Außendisplay",
+     "#Innendisplay",
      "#FoldableWallpaperStudio"
     ],
-    "caption": "Aufgeklappt: die ganze Szene\n5 Widgets mit deinem Hintergrund\nFoldable Hintergrundbilder HD\nIm App Store nach „Foldable Wallpaper Studio“ suchen\n\n#Sperrbildschirm #Hintergrund #Handy #Erstellen #FoldableWallpaperStudio",
+    "caption": "Aufgeklappt: die ganze Szene\n5 Widgets mit deinem Hintergrund\nfaltbar · klapphandy · paar\nIm App Store nach „Foldable Wallpaper Studio“ suchen\n\n#Faltbar #Klapphandy #Paar #Außendisplay #FoldableWallpaperStudio",
     "button": "Im App Store laden",
     "variant": "b",
-    "alt": "Foldable Wallpaper Studio — Aufgeklappt: die ganze Szene — 5 Widgets mit deinem Hintergrund — Foldable Hintergrundbilder HD",
+    "alt": "Foldable Wallpaper Studio — Aufgeklappt: die ganze Szene — 5 Widgets mit deinem Hintergrund — faltbar · klapphandy · paar",
     "store": "https://apps.apple.com/de/app/id6824946559?pt=118326163&ct=social&mt=8",
     "play": null,
     "review": {
@@ -75268,14 +75492,14 @@
      "url": "https://apps.apple.com/app/id6824946559?action=write-review"
     },
     "keywords": [
-     "sperrbildschirm",
-     "hintergrund",
-     "handy",
-     "erstellen",
-     "süße",
-     "foto"
+     "faltbar",
+     "klapphandy",
+     "paar",
+     "außendisplay",
+     "innendisplay",
+     "sperrbildschirm"
     ],
-    "keyline": "Foldable Hintergrundbilder HD",
+    "keyline": "faltbar · klapphandy · paar",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
@@ -75284,7 +75508,7 @@
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "Aufgeklappt: die ganze Szene\n5 Widgets mit deinem Hintergrund\nFoldable Hintergrundbilder HD\nIm App Store nach „Foldable Wallpaper Studio“ suchen\n\n#Sperrbildschirm #Hintergrund #Handy #Erstellen #FoldableWallpaperStudio\n\nIm App Store laden: https://apps.apple.com/de/app/id6824946559?pt=118326163&ct=social&mt=8"
+     "caption": "Aufgeklappt: die ganze Szene\n5 Widgets mit deinem Hintergrund\nfaltbar · klapphandy · paar\nIm App Store nach „Foldable Wallpaper Studio“ suchen\n\n#Faltbar #Klapphandy #Paar #Außendisplay #FoldableWallpaperStudio\n\nIm App Store laden: https://apps.apple.com/de/app/id6824946559?pt=118326163&ct=social&mt=8"
     }
    },
    {
@@ -75295,19 +75519,19 @@
     "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/145faec030.mp4",
     "hook": "Troque a cor, escreva uma frase curta",
     "name": "Foldable Wallpaper Studio",
-    "title": "Troque a cor, escreva uma frase curta | Papel de parede para dobrável | Foldable Wallpaper Studio",
+    "title": "Troque a cor, escreva uma frase curta | foldable · celular · fundo | Foldable Wallpaper Studio",
     "tags": [
+     "#Foldable",
      "#Celular",
      "#Fundo",
-     "#Tela",
+     "#TelaDupla",
      "#Bloqueio",
-     "#Estético",
      "#FoldableWallpaperStudio"
     ],
-    "caption": "Troque a cor, escreva uma frase curta\nAberto: a cena inteira\nPapel de parede para dobrável\nPesquise “Foldable Wallpaper Studio” na App Store\n\n#Celular #Fundo #Tela #Bloqueio #FoldableWallpaperStudio",
+    "caption": "Troque a cor, escreva uma frase curta\nAberto: a cena inteira\nfoldable · celular · fundo\nPesquise “Foldable Wallpaper Studio” na App Store\n\n#Foldable #Celular #Fundo #TelaDupla #FoldableWallpaperStudio",
     "button": "Baixar na App Store",
     "variant": "c",
-    "alt": "Foldable Wallpaper Studio — Troque a cor, escreva uma frase curta — Aberto: a cena inteira — Papel de parede para dobrável",
+    "alt": "Foldable Wallpaper Studio — Troque a cor, escreva uma frase curta — Aberto: a cena inteira — foldable · celular · fundo",
     "store": "https://apps.apple.com/br/app/id6824946559?pt=118326163&ct=social&mt=8",
     "play": null,
     "review": {
@@ -75315,14 +75539,14 @@
      "url": "https://apps.apple.com/app/id6824946559?action=write-review"
     },
     "keywords": [
+     "foldable",
      "celular",
      "fundo",
-     "tela",
+     "tela dupla",
      "bloqueio",
-     "estético",
-     "personalizado"
+     "combinando"
     ],
-    "keyline": "Papel de parede para dobrável",
+    "keyline": "foldable · celular · fundo",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
@@ -75331,7 +75555,7 @@
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "Troque a cor, escreva uma frase curta\nAberto: a cena inteira\nPapel de parede para dobrável\nPesquise “Foldable Wallpaper Studio” na App Store\n\n#Celular #Fundo #Tela #Bloqueio #FoldableWallpaperStudio\n\nBaixar na App Store: https://apps.apple.com/br/app/id6824946559?pt=118326163&ct=social&mt=8"
+     "caption": "Troque a cor, escreva uma frase curta\nAberto: a cena inteira\nfoldable · celular · fundo\nPesquise “Foldable Wallpaper Studio” na App Store\n\n#Foldable #Celular #Fundo #TelaDupla #FoldableWallpaperStudio\n\nBaixar na App Store: https://apps.apple.com/br/app/id6824946559?pt=118326163&ct=social&mt=8"
     }
    }
   ]

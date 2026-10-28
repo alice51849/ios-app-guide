@@ -18,7 +18,6 @@ BattAI BattAI ใช้ข้อมูล 5 อย่างจาก API สา�
 - ไม่มีโฆษณา
 - Apple Watch
 - App Store · ฟรี
-- ★ 2.0/5 · 1
 
 [ดาวน์โหลด BattAI: คะแนนสุขภาพแบตเตอรี่ บน App Store](https://apps.apple.com/th/app/id6802423998?pt=118326163&ct=geo_pick&mt=8)
 

@@ -4869,6 +4869,159 @@ PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
                 },
             ],
         },
+    ],
+    # TripBee Cute (60_TripBeeCute) is pre-publication. Claims here are held to
+    # what the app does today: an illustrated trip booklet (bookshelf of
+    # covers, 56 original cover drawings -- 6 free and 50 with Cute Pass --
+    # countdown, boarding-pass flight cards, day plans, packing list), a
+    # self-contained web booklet shared as a file, optional iCloud planning
+    # with friends, CSV import, backup/restore, widgets and Apple Watch.
+    # It has no AI import, no account and no subscription.
+    "tripbeecute": [
+        {
+            "query": "cute travel itinerary app to share a trip plan with friends on iphone",
+            "guide_title": "A cute trip itinerary you can share with friends: what to check",
+            "triggers": [
+                "cute travel itinerary",
+                "cute trip planner",
+                "illustrated travel planner",
+                "share trip itinerary with friends",
+                "travel booklet app",
+                "kawaii travel planner",
+            ],
+            "persona": "friends and couples planning a trip together who want the plan to look good and be easy to share",
+            "lead": (
+                "A trip plan that lives in a spreadsheet or a long chat thread "
+                "is hard to read on the way to the airport, and nobody wants "
+                "to open an app they have to install just to see the flight "
+                "time."
+            ),
+            "paras": [
+                (
+                    "The plan that actually gets used is the one companions can "
+                    "open without effort. Look for an itinerary app that turns "
+                    "the trip into a single scrolling page with the countdown, "
+                    "flights, day-by-day plans and packing list together, and "
+                    "that can export that page as a file anyone opens in a "
+                    "normal browser, with no account and no app to install."
+                ),
+                (
+                    "If you plan together, check how changes are shared. An "
+                    "invite through the iCloud accounts you already have keeps "
+                    "everyone editing the same trip without a new sign-up, and "
+                    "the trip should still open on a plane or abroad when there "
+                    "is no signal. Reminders should be local notifications on "
+                    "your own phone."
+                ),
+            ],
+            "look": [
+                "One illustrated page per trip: countdown, flights, daily plans and a packing list.",
+                "A web booklet saved as one file that opens in any browser, offline.",
+                "Optional iCloud planning with friends instead of a new account.",
+                "A layout that works on iPhone and iPad.",
+                "No subscription and no advertising.",
+            ],
+            "steps": [
+                "Create a booklet with the destination and dates, then pick a cover drawing.",
+                "Add the flights and a plan for each day, with a time, place and note.",
+                "Fill in the packing list and set reminders for the plans that matter.",
+                "Preview the web booklet and send the file to your travel companions.",
+                "If you are planning together, invite friends through iCloud so everyone edits the same trip.",
+            ],
+            "fits": (
+                "fits friends, couples and families who want a trip plan that "
+                "looks like a keepsake and can be sent as a web page. The "
+                "download keeps one booklet at a time with six standard covers; "
+                "a single one-time in-app purchase adds several booklets, 50 "
+                "more covers, smart packing lists, backup and restore, and "
+                "iCloud planning with friends."
+            ),
+            "faq": [
+                {
+                    "q": "Do my friends need the app to see the plan?",
+                    "a": "No. The web booklet is one self-contained file that opens in any browser, even offline. Only people who edit the trip together through iCloud need the app.",
+                },
+                {
+                    "q": "Does it need an account?",
+                    "a": "No. Booklets are stored on your device, and in your own iCloud only when you turn iCloud on.",
+                },
+                {
+                    "q": "Is there a subscription?",
+                    "a": "No. The download keeps one booklet at a time, and a single one-time in-app purchase unlocks several booklets, more covers, backup and restore, and iCloud planning with friends.",
+                },
+                {
+                    "q": "Can I move a plan in from a spreadsheet?",
+                    "a": "Yes. Export the CSV template, fill it in a spreadsheet and import it back as a new booklet.",
+                },
+            ],
+        },
+        {
+            "query": "travel countdown and packing list app with cute covers iphone",
+            "guide_title": "A trip countdown with a packing list: what to check",
+            "triggers": [
+                "trip countdown app",
+                "vacation countdown and packing list",
+                "travel packing list app",
+                "boarding pass style flight card",
+                "travel journal planner cute",
+                "weekend trip planner",
+            ],
+            "persona": "people who like to look forward to a trip, count down to departure and keep everything for it on one page",
+            "lead": (
+                "Counting down to a holiday is half the fun, but the dates, "
+                "the flight and the packing list usually sit in three "
+                "different apps."
+            ),
+            "paras": [
+                (
+                    "A good trip page keeps the days left, the flight details "
+                    "and the things you still need to pack in one place, so "
+                    "the information you want at the airport is the first "
+                    "thing you see. Boarding-pass style flight cards make "
+                    "times, gates and booking references easy to scan."
+                ),
+                (
+                    "Weather for the destination and the local time are "
+                    "useful additions, and a rainy-day plan saves a day when "
+                    "the forecast turns. A widget that shows the next trip "
+                    "on the Home Screen or Lock Screen keeps the countdown in "
+                    "view without opening the app."
+                ),
+            ],
+            "look": [
+                "A countdown to departure and a flight card you can read at a glance.",
+                "A packing list on the same page as the plan.",
+                "Destination weather and a rainy-day plan for each day.",
+                "Home Screen and Lock Screen widgets, and an Apple Watch app.",
+                "Original illustrated cover drawings, not stock photos.",
+            ],
+            "steps": [
+                "Create a booklet for the trip and pick a cover.",
+                "Add the flight card and the plans you already know about.",
+                "Work through the packing list in the Prep tab as you pack.",
+                "Add the widget to the Home Screen to keep the countdown in view.",
+                "Check the weather in the days before you leave and adjust the plan.",
+            ],
+            "fits": (
+                "fits people who plan for the fun of it and want the countdown, "
+                "flights, plans and packing list on one illustrated page, "
+                "without an account or a subscription."
+            ),
+            "faq": [
+                {
+                    "q": "Is the countdown on the Home Screen?",
+                    "a": "Yes. Home Screen and Lock Screen widgets show the next booklet on its cover with the days left and upcoming plans.",
+                },
+                {
+                    "q": "Where does the weather come from?",
+                    "a": "The destination name is looked up with Apple's geocoder, and then only the coordinates and dates are sent to a public weather service (Open-Meteo) to get the forecast; no account is involved.",
+                },
+                {
+                    "q": "Does it include a packing list?",
+                    "a": "Yes. Every booklet has a Prep tab with a packing list, and smart packing lists are part of the one-time in-app purchase.",
+                },
+            ],
+        },
     ]
 }
 

@@ -170,7 +170,10 @@ class PostTest(unittest.TestCase):
                     mock.patch.object(U, "post_instagram", return_value=None), \
                     mock.patch.object(U, "post_threads", side_effect=RuntimeError("down")), \
                     mock.patch.object(U, "qa_problems", return_value=[]), \
+                    mock.patch.object(U.CR, "paused_notice", return_value=False), \
                     mock.patch.object(P, "record_post") as record:
+                # The real channel-rotation plan pauses one channel a week (telegram 2026-10-26..11-02 broke this
+                # test and with it the daily post step); this test is about recording, not the holdout.
                 self.assertEqual(U.main(), 0)
         record.assert_called_once_with("telegram", "utility/word/aim990/invoice/zh-Hant", "https://t.me/x/1")
 

@@ -1,0 +1,5131 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""Persona-scoped recommendation data (page type: "best [app] for [persona]").
+
+Each entry is verified from app source/READMEs/store copy by the persona
+research worker (2026-07-08). Content is structured around a single user
+type's real objections and workflow, NOT a generic feature list with a
+persona label. Honesty rules applied:
+  - aim990: HAS a subscription and TOEIC/ETS is a trademark → NEVER framed as
+    "no subscription"; includes not-affiliated + no-score-guarantee caveats.
+  - unblurry: honest about what on-device sharpening can and cannot recover.
+  - pay-once framing used only for genuinely pay-once / one-time-unlock apps.
+
+Consumed by answer_facts._persona_facts(); queries fed from queries.py.
+"""
+import json
+from pathlib import Path
+from typing import Any
+
+import persona_closers
+
+# app_key -> list of persona entries.
+# Each entry:
+#   query    : canonical persona query (also added to queries.py)
+#   triggers : distinctive substrings; ANY match routes to this persona
+#   persona  : short label
+#   lead     : opening line (honest concession first where relevant)
+#   paras    : 2 short-answer paragraphs
+#   look     : what_to_look_for bullets (the persona's must-haves)
+#   steps    : decision_steps
+#   fits     : where_app_fits (conversion hook)
+#   faq      : persona-specific Q/A (objection handling)
+PERSONAS: dict[str, list[dict[str, Any]]] = {
+    "scanto": [
+        {
+            "query": "best offline document scanner app no cloud for nurses",
+            "triggers": ["for nurses", "for a nurse", "nurse", "patient consent", "medical paperwork"],
+            "persona": "nurses & clinical staff",
+            "lead": "If you scan patient consent forms, discharge paperwork or referrals, the scanner has to keep that paperwork on the device — never uploaded to someone else's cloud.",
+            "paras": [
+                "For clinical work the priority is confidentiality and speed: capture a consent form, discharge sheet or ID in one tap, keep it fully on-device, and lock it behind Face ID. A scanner that makes zero network requests is the only kind you can safely use for sensitive patient paperwork.",
+                "It also needs to work when the ward Wi-Fi is flaky — everything should function offline, with sharp multi-page PDFs and OCR so a form is searchable later. Avoid any scanner that forces a cloud account or free-tier upload.",
+            ],
+            "look": [
+                "Zero network requests — paperwork never leaves the phone.",
+                "Face ID / password lock on finished PDFs.",
+                "Works fully offline (no ward Wi-Fi needed).",
+                "One-tap capture and sharp multi-page PDFs.",
+                "OCR so forms are searchable, pay-once (no per-scan paywall).",
+            ],
+            "steps": [
+                "Confirm the scanner makes no network requests.",
+                "Scan a consent form and lock the PDF with Face ID.",
+                "Check it works with Wi-Fi off.",
+                "Verify OCR makes the text searchable.",
+                "Keep the file on-device or export deliberately.",
+            ],
+            "fits": "fits nurses who need fast, private, offline scanning of sensitive paperwork without a cloud account.",
+            "faq": [
+                {"q": "Does anything get uploaded to a cloud?", "a": "No — a properly offline scanner processes on-device and makes no network requests, so patient paperwork stays on your phone."},
+                {"q": "Can I lock a scanned form?", "a": "Yes — lock the finished PDF behind Face ID or a password before it's stored or shared."},
+                {"q": "Will it work without hospital Wi-Fi?", "a": "Yes — scanning, OCR and export all work offline."},
+            ],
+        },
+        {
+            "query": "best document scanner app no subscription for students",
+            "triggers": ["for students", "for a student", "student", "lecture notes", "handouts"],
+            "persona": "students",
+            "lead": "For scanning lecture notes and handouts, the thing that matters most to a student is that one purchase covers unlimited scans — no paywall reappearing mid-semester.",
+            "paras": [
+                "A student scanner should turn a stack of handwritten notes or printed handouts into a clean, searchable PDF in seconds, with OCR so you can find a topic before an exam. Batch multiple pages into one file per lecture.",
+                "Pay-once matters here: a single purchase should give unlimited scans, with no monthly fee and no watermark on the exported PDF.",
+            ],
+            "look": [
+                "Pay once — unlimited scans, no monthly fee.",
+                "OCR so notes are searchable before exams.",
+                "Batch many pages into one PDF per lecture.",
+                "No watermark on exports.",
+                "Fast auto edge-detection for quick capture.",
+            ],
+            "steps": [
+                "Scan a page of notes and check the edges auto-detect.",
+                "Batch a full lecture into one PDF.",
+                "Enable OCR and search for a keyword.",
+                "Confirm exports have no watermark.",
+                "Verify it's a one-time purchase, not a subscription.",
+            ],
+            "fits": "fits students who want unlimited, searchable note scans from a single pay-once purchase.",
+            "faq": [
+                {"q": "Is there a monthly fee?", "a": "No — a pay-once scanner charges once and gives unlimited scans, which suits a student budget better than a subscription."},
+                {"q": "Can I search my scanned notes?", "a": "Yes — OCR turns printed and clear handwritten text into searchable content."},
+                {"q": "Can I combine a whole lecture?", "a": "Yes — batch several pages into one PDF per class."},
+            ],
+        },
+    ],
+    "snapport": [
+        {
+            "query": "best passport photo app for babies and toddlers at home",
+            "triggers": ["for babies", "for a baby", "baby", "toddler", "infant", "newborn"],
+            "persona": "parents of babies & toddlers",
+            "lead": "Getting a compliant passport photo of a baby is the hard case: they won't sit still, can't hold a pose, and most countries relax the neutral-expression rule for infants — so the app has to help you crop and size, not force an adult pose.",
+            "paras": [
+                "For a baby photo, lay the child on a plain white sheet and shoot from directly above, or hold them against a plain background. The app's job is the fiddly part: detecting the face, cropping to the exact country size, and checking head proportions — since a wailing or sleeping infant is usually accepted.",
+                "Country-specific templates matter because infant head-size ratios and dimensions differ. A home app that outputs the correct size for your country saves a trip to a studio that may not handle babies well anyway.",
+            ],
+            "look": [
+                "Country-specific size templates (head ratio varies for infants).",
+                "Face-alignment guides for an unposed baby.",
+                "Plain-background handling / background removal.",
+                "Export a single correctly-sized photo to print.",
+                "Guidance on relaxed infant expression rules.",
+            ],
+            "steps": [
+                "Lay the baby on a plain white sheet, shoot from directly above.",
+                "Pick your country's template in the app.",
+                "Let it detect the face and crop to size.",
+                "Check head proportions against the guide.",
+                "Export and print (or order prints).",
+            ],
+            "fits": "fits parents who need a compliant infant passport photo at home without wrestling a baby into a studio pose.",
+            "faq": [
+                {"q": "My baby won't hold a neutral expression — is that OK?", "a": "For infants most countries relax the neutral-expression and open-eyes rules; check your country's guidance, which the app's template reflects."},
+                {"q": "How do I get a plain background with a baby?", "a": "Shoot against a plain white sheet or use background removal, then let the app crop to size."},
+                {"q": "Will it be the right size for my country?", "a": "Yes — pick your country's template so the head ratio and dimensions match official requirements. Always confirm against the official spec."},
+            ],
+        },
+        {
+            "query": "best app to take professional id photo for resume",
+            "triggers": ["for resume", "for a resume", "resume photo", "cv photo", "professional headshot", "id photo for job"],
+            "persona": "job seekers",
+            "lead": "For a resume or job-application headshot, you don't need a studio — you need a cropped, correctly-proportioned photo with a clean background that looks professional at a small size.",
+            "paras": [
+                "A resume-photo template crops to the right proportions and lets you swap a messy background for a plain one, so a phone snap becomes a tidy headshot. Shoot in soft, even light facing a window and keep a neutral, approachable expression.",
+                "Because it's on-device, your photo isn't uploaded anywhere, and a single export gives you a file ready to drop into a CV or a LinkedIn/ID upload.",
+            ],
+            "look": [
+                "Resume / ID headshot template with correct proportions.",
+                "Background replacement to a clean, plain colour.",
+                "On-device processing (photo isn't uploaded).",
+                "Single-photo export ready for a CV or profile.",
+                "Guidance on framing and expression.",
+            ],
+            "steps": [
+                "Face a window in soft, even light.",
+                "Use the resume/ID template to frame the crop.",
+                "Swap the background for a plain colour.",
+                "Keep a neutral, approachable expression.",
+                "Export and place it on your CV or profile.",
+            ],
+            "fits": "fits job seekers who want a clean, professional headshot from their phone without a photo studio.",
+            "faq": [
+                {"q": "Do I need a studio backdrop?", "a": "No — background replacement gives you a clean plain background from any setting."},
+                {"q": "Is my photo uploaded anywhere?", "a": "On-device processing keeps the photo on your phone unless you export it."},
+                {"q": "What size should a resume photo be?", "a": "There's no single standard; a square or 3:4 headshot works for most CVs and profiles — the template keeps proportions right."},
+            ],
+        },
+    ],
+    "cvdesk": [
+        {
+            "query": "best resume builder app for career changers 2026",
+            "triggers": ["career changer", "career change", "changing careers", "switching careers"],
+            "persona": "career changers",
+            "lead": "When you're switching fields, the resume problem is different: your experience is real but 'unrelated' on paper, and ATS filters reject you before a human reads it. The fix is reframing and keyword matching, not a prettier template.",
+            "paras": [
+                "A career-changer resume needs transferable skills surfaced and the target job's language mirrored. Paste the job description, see which required skills are missing from your draft, and rework your bullets to speak the new field's vocabulary — so the ATS scores you in range.",
+                "Doing this on-device means you can iterate honestly on real experience without uploading your CV to a third-party server, and export an ATS-safe PDF with no watermark.",
+            ],
+            "look": [
+                "Job-description keyword matcher (see missing skills).",
+                "On-device ATS score and fix list.",
+                "Reframe bullets to the target field's language.",
+                "ATS-safe PDF export, no watermark.",
+                "No CV data uploaded to a server.",
+            ],
+            "steps": [
+                "Paste the target job description.",
+                "See which required skills are missing.",
+                "Rewrite bullets to mirror the new field's terms.",
+                "Recheck the ATS score until it's in range.",
+                "Export an ATS-safe PDF.",
+            ],
+            "fits": "fits career changers who need to reframe transferable experience so ATS systems don't filter them out.",
+            "faq": [
+                {"q": "How do I get past ATS with unrelated experience?", "a": "Mirror the target job's keywords and surface transferable skills; the keyword matcher shows exactly what's missing."},
+                {"q": "Is my resume uploaded anywhere?", "a": "No — the ATS scoring and matching run on-device, so your CV stays on your phone."},
+                {"q": "Will the PDF have a watermark?", "a": "No — exports are clean, ATS-safe PDFs."},
+            ],
+        },
+        {
+            "query": "best ats resume app to tailor applications for each job",
+            "triggers": ["tailor applications", "tailor each job", "for recent graduates", "for new grads", "for graduates", "recent graduate"],
+            "persona": "recent graduates",
+            "lead": "New grads apply to a lot of roles with a thin work history, so the winning move is tailoring each application to the posting — not sending the same generic CV everywhere.",
+            "paras": [
+                "Paste each job description and immediately see which skills or keywords your resume is missing, then adjust before you submit. With limited experience, matching the posting's language is what gets you past the ATS filter to a human reviewer.",
+                "Because matching runs on-device, you can tailor quickly for every application without sharing your CV with any third-party service, and export a clean ATS-safe PDF each time.",
+            ],
+            "look": [
+                "Offline job-description keyword matcher.",
+                "Instant view of missing skills per posting.",
+                "On-device ATS score.",
+                "Fast re-tailoring for many applications.",
+                "No third-party upload of your CV.",
+            ],
+            "steps": [
+                "Paste the job posting for the role.",
+                "See the missing keywords vs your resume.",
+                "Add the genuine skills you have that match.",
+                "Confirm the ATS score improved.",
+                "Export a tailored PDF for that application.",
+            ],
+            "fits": "fits recent graduates tailoring each application to beat ATS filters with a limited work history.",
+            "faq": [
+                {"q": "Should I really change my CV for every job?", "a": "Tailoring the keywords to each posting materially improves ATS pass rates, which matters most when your experience is thin."},
+                {"q": "Does it share my CV with anyone?", "a": "No — matching and scoring are on-device."},
+                {"q": "Is it a subscription?", "a": "It's a pay-once app — check the current App Store listing for exact pricing."},
+            ],
+        },
+    ],
+    "picclear": [
+        {
+            "query": "best app to free up iphone storage deleting duplicate photos",
+            "triggers": ["running out of storage", "storage is full", "free up storage", "out of space", "iphone storage full"],
+            "persona": "people out of storage",
+            "lead": "When your iPhone says 'Storage Almost Full', the fastest wins are exact-duplicate photos, near-identical burst shots, big videos and old screenshots — cleared in that order, with a review step so you never lose the keeper.",
+            "paras": [
+                "An on-device Vision scan can find true duplicates and visually-similar groups across your whole library, plus surface the large videos quietly eating gigabytes. The important part is that you review and confirm — nothing is auto-deleted.",
+                "Clearing the biggest groups first reclaims space quickly, and doing it on-device means your library is never uploaded to a service.",
+            ],
+            "look": [
+                "On-device scan for exact + near-duplicate photos.",
+                "Large videos sorted by size.",
+                "Similar bursts grouped so you keep the best.",
+                "Review-and-confirm — no auto-delete.",
+                "Runs on-device (library not uploaded).",
+            ],
+            "steps": [
+                "Scan the library for duplicates and similar shots.",
+                "Sort videos by size to find the biggest.",
+                "Review each group and keep the best one.",
+                "Confirm before deleting.",
+                "Empty 'Recently Deleted' to reclaim the space.",
+            ],
+            "fits": "fits anyone out of storage who wants gigabytes back fast without deleting the wrong photo.",
+            "faq": [
+                {"q": "Will it delete photos without asking?", "a": "No — you review each group and confirm; nothing is removed without approval."},
+                {"q": "What frees the most space fastest?", "a": "Large videos and exact duplicates first, then near-identical bursts and old screenshots."},
+                {"q": "Is my library uploaded?", "a": "No — scanning runs on-device."},
+            ],
+        },
+        {
+            "query": "best app to clean up thousands of old photos on iphone",
+            "triggers": ["thousands of old photos", "years of photos", "for seniors", "for my parents", "not tech savvy", "clean up old photos"],
+            "persona": "people with years of photos",
+            "lead": "After years of photos, the risk isn't finding duplicates — it's accidentally deleting something you wanted. The right tool surfaces near-duplicates by how they look, and never removes anything without an explicit yes.",
+            "paras": [
+                "A visual-similarity scan groups shots that look alike (not just identical filenames), so you can keep the best of each moment and clear the rest. Handling a large recent library in one pass means you make real progress without scrolling forever.",
+                "Because it never auto-deletes and shows a clear before/after, it's safe for someone who isn't especially tech-savvy — and it keeps everything on-device.",
+            ],
+            "look": [
+                "Near-duplicate grouping by visual similarity.",
+                "Handles a large library in one scan.",
+                "Never auto-deletes — explicit approval only.",
+                "Clear review so you keep the best of each moment.",
+                "On-device and private.",
+            ],
+            "steps": [
+                "Run a full-library similarity scan.",
+                "Review groups of look-alike photos.",
+                "Keep the best of each moment.",
+                "Approve the rest for deletion.",
+                "Empty 'Recently Deleted' to finish.",
+            ],
+            "fits": "fits people with years of accumulated photos who want a safe, guided cleanup they won't regret.",
+            "faq": [
+                {"q": "Is it safe if I'm not techy?", "a": "Yes — it only groups and suggests; you approve every deletion, and nothing goes automatically."},
+                {"q": "Does it find look-alikes, not just identical files?", "a": "Yes — it groups by visual similarity, so near-duplicate bursts are caught too."},
+                {"q": "Are my photos uploaded?", "a": "No — the scan runs on-device."},
+            ],
+        },
+    ],
+    "unblurry": [
+        {
+            "query": "best app to fix blurry photos of kids on iphone",
+            "triggers": ["blurry photos of kids", "blurry photo of my", "for parents", "of my kids", "family photos blurry"],
+            "persona": "parents & families",
+            "lead": "Kids never hold still, so soft-focus and camera-shake shots are inevitable. On-device sharpening can improve many of these — with the honest caveat that mild blur responds best and severe motion blur may not fully clear.",
+            "paras": [
+                "For a slightly soft photo of your child, Auto Clear and Sharpen modes can improve visible clarity in seconds, and a before/after slider lets you see the real improvement before you save — so you keep the shot only if it genuinely looks better.",
+                "It works on-device with no subscription, so family photos aren't uploaded anywhere. Set expectations honestly: it sharpens soft focus and mild shake best; a heavily smeared shot leaves less usable visual information.",
+            ],
+            "look": [
+                "Auto Clear / Sharpen for soft-focus shots.",
+                "Before/after slider to judge the real result.",
+                "On-device — family photos not uploaded.",
+                "Pay-once, no subscription.",
+                "Honest limits: best on mild blur, not severe smear.",
+            ],
+            "steps": [
+                "Open the soft or shaky photo of your child.",
+                "Try Auto Clear, then Sharpen.",
+                "Compare with the before/after slider.",
+                "Save only if it genuinely looks better.",
+                "For very blurry shots, keep expectations realistic.",
+            ],
+            "fits": "fits parents rescuing soft-focus or mildly shaky photos of their kids, with honest limits on severe blur.",
+            "faq": [
+                {"q": "Can it fix any blurry photo?", "a": "It works best on soft focus and mild camera shake; a severely motion-blurred photo has little usable visual information, so results vary."},
+                {"q": "Are my family photos uploaded?", "a": "No — processing is on-device."},
+                {"q": "Is it a subscription?", "a": "No — it's pay-once."},
+            ],
+        },
+        {
+            "query": "best app to sharpen and enhance product photos on iphone",
+            "triggers": ["product photos", "for small business", "for a small business", "product shots", "enhance product"],
+            "persona": "small business owners",
+            "lead": "For product listings, a slightly soft or low-resolution shot costs sales. On-device sharpening and upscaling can improve edges and perceived detail — best used on decent-but-soft photos rather than tiny, badly-degraded ones.",
+            "paras": [
+                "Super Resolution and 4× Upscale modes can improve clarity and apparent detail in low-resolution product shots, and a Document mode crisps up text-heavy images like labels. A before/after slider keeps you honest about the result before you publish.",
+                "It's on-device with no subscription, so you can batch through a catalogue without uploading anything or paying a monthly fee. Manage expectations: it enhances captured information; it can't recreate information that was never captured.",
+            ],
+            "look": [
+                "Super Resolution / 4× Upscale for low-res shots.",
+                "Document mode for labels and text.",
+                "Before/after slider to verify quality.",
+                "On-device, pay-once (no monthly fee).",
+                "Honest limits: enhances, doesn't invent detail.",
+            ],
+            "steps": [
+                "Open the soft or low-res product photo.",
+                "Apply Sharpen or Super Resolution / 4× Upscale.",
+                "Use Document mode for label text.",
+                "Compare before/after.",
+                "Export the sharper image for your listing.",
+            ],
+            "fits": "fits small business owners sharpening product photos for listings without a subscription or cloud upload.",
+            "faq": [
+                {"q": "Can it make a tiny photo look pro?", "a": "It can improve clarity in low-resolution shots, but it can't recreate information that was never captured — start from the best original you have."},
+                {"q": "Does it upload my product images?", "a": "No — enhancement is on-device."},
+                {"q": "Is there a monthly fee?", "a": "No — it's a pay-once app."},
+            ],
+        },
+    ],
+    "sononote": [
+        {
+            "query": "best voice notes app that summarizes meetings on iphone",
+            "triggers": ["for remote workers", "for business professionals", "summarizes meetings", "summarize meetings", "meeting summary", "follow-up email"],
+            "persona": "remote workers & professionals",
+            "lead": "After a call you don't want a raw transcript — you want the summary, the action items, and a draft follow-up. And for client conversations, you want to know exactly where the audio goes.",
+            "paras": [
+                "Record or import a meeting, get an accurate transcript, then a concise summary with extracted action items and a draft follow-up email — turning an hour of talk into something you can act on in a minute. Nothing is uploaded to the developer, and Local Only mode keeps transcription entirely on the iPhone.",
+                "For remote work this replaces frantic note-taking during calls: let it capture and summarise while you stay present in the conversation.",
+            ],
+            "look": [
+                "Transcription with Apple speech recognition, plus a Local Only mode.",
+                "Automatic summary + action items.",
+                "Draft follow-up email generated for you.",
+                "No account, and nothing uploaded to the developer.",
+                "Export to your notes or tasks app.",
+            ],
+            "steps": [
+                "Record or import the meeting audio.",
+                "Let it transcribe (choose Local Only mode to keep audio on the device).",
+                "Generate the summary and action items.",
+                "Review the draft follow-up email.",
+                "Export the notes where your team lives.",
+            ],
+            "fits": "fits remote workers who want summaries, action items and follow-ups from calls without a cloud account.",
+            "faq": [
+                {"q": "Does my meeting audio leave my phone?", "a": "Nothing is uploaded to the developer. Transcription uses Apple speech recognition, which may send audio to Apple for some languages; in Local Only mode everything stays on your iPhone."},
+                {"q": "Do I get action items, not just a transcript?", "a": "Yes — it extracts action items and a summary, and can draft a follow-up email."},
+                {"q": "Can I share the notes?", "a": "Yes — export the summary and to-dos to your notes or tasks app."},
+            ],
+        },
+        {
+            "query": "best app to record lectures and get automatic notes",
+            "triggers": ["record lectures", "record a lecture", "lecture notes automatically", "for college students", "study notes from audio"],
+            "persona": "students",
+            "lead": "For lectures, the win is turning an hour of audio into clean notes: a transcript plus the key points and a short summary — so revision takes minutes, not a re-listen.",
+            "paras": [
+                "Record the class, get a transcript, then one-tap bulleted key points and a concise summary you can study from. Reviewing a summary beats scrubbing through audio when exams are close.",
+                "Notes live on your iPhone with nothing uploaded to the developer, Local Only mode keeps transcription on the device, and there's no per-recording paywall to worry about mid-term.",
+            ],
+            "look": [
+                "Transcript of the full lecture.",
+                "One-tap key points + summary.",
+                "Local Only mode keeps everything on the device.",
+                "No per-recording paywall.",
+                "Export notes to study from.",
+            ],
+            "steps": [
+                "Record the lecture (with permission).",
+                "Transcribe it to text.",
+                "Generate key points and a summary.",
+                "Study from the summary before the exam.",
+                "Export notes to your study app.",
+            ],
+            "fits": "fits students turning recorded lectures into clean, studyable notes fast.",
+            "faq": [
+                {"q": "Do I have to re-listen to the whole lecture?", "a": "No — you study from the auto-generated key points and summary instead."},
+                {"q": "Are my recordings private?", "a": "Yes — notes live on your iPhone and nothing is uploaded to the developer; choose Local Only mode to keep transcription on the device too."},
+                {"q": "Should I record lectures?", "a": "Ask your lecturer's permission first; recording policies vary by institution."},
+            ],
+        },
+    ],
+    "lockhour": [
+        {
+            "query": "best app to block social media while studying iphone",
+            "triggers": ["while studying", "during final exams", "for exams", "block tiktok", "block instagram", "block social media"],
+            "persona": "students in exam season",
+            "lead": "During exams, willpower isn't the tool — a hard timed block is. The app should shut off TikTok, Instagram and any distraction for a set study session and reopen them automatically when time's up.",
+            "paras": [
+                "Using Apple's Screen Time API, you can hard-block specific apps, whole categories or websites for a timed focus session, with an optional Hard Mode that adds a cooldown and a confirmation before you can stop early. When the timer ends, everything unlocks on its own — no manual re-enabling.",
+                "It's a pay-once focus tool with no monthly fee, which suits a student who just wants distraction gone during revision blocks.",
+            ],
+            "look": [
+                "Hard block on apps, categories and websites.",
+                "Timed sessions that auto-unlock when done.",
+                "Optional Hard Mode: a cooldown and a confirmation before you can stop early.",
+                "Uses Apple Screen Time (system-level block).",
+                "Pay-once, no monthly fee.",
+            ],
+            "steps": [
+                "Pick the apps/categories to block (e.g. socials).",
+                "Set the study session length.",
+                "Optionally enable Hard Mode.",
+                "Start the session and study.",
+                "Everything unlocks automatically at the end.",
+            ],
+            "fits": "fits students who need social media hard-blocked during timed revision sessions.",
+            "faq": [
+                {"q": "Can I cheat and unlock early?", "a": "Hard Mode adds a cooldown and a confirmation before you can stop early, so quitting becomes a deliberate choice; otherwise everything unlocks when the timer ends."},
+                {"q": "Does it really block apps?", "a": "Yes — it uses Apple's Screen Time API for a system-level block, not just reminders."},
+                {"q": "Is it a subscription?", "a": "No — it's pay-once."},
+            ],
+        },
+        {
+            "query": "best focus app to stop phone distractions working from home",
+            "triggers": ["working from home", "work from home", "for remote workers", "deep work", "stop distractions at work"],
+            "persona": "remote workers",
+            "lead": "Working from home, the phone is the leak. A deep-work block that shields your chosen apps for a fixed stretch keeps you in uninterrupted focus without relying on self-control.",
+            "paras": [
+                "Choose the apps and categories that derail you, set a focus duration, and let a Deep Work mode shield them — with an optional Hard Mode that puts a cooldown and a confirmation before stopping early. It's the difference between 'I'll just check quickly' and an actual focus block.",
+                "As a pay-once tool it fits a home-office setup without adding yet another monthly subscription.",
+            ],
+            "look": [
+                "Deep Work mode shields chosen apps/categories.",
+                "Set focus-block duration.",
+                "Optional Hard Mode: a cooldown and a confirmation before you can stop early.",
+                "System-level block via Screen Time.",
+                "Pay-once, no monthly fee.",
+            ],
+            "steps": [
+                "Select the apps that distract you.",
+                "Set a focus-block length.",
+                "Enable Hard Mode if you need it.",
+                "Start Deep Work and do the task.",
+                "Apps return automatically when time's up.",
+            ],
+            "fits": "fits remote workers who want uninterrupted deep-work blocks without willpower battles.",
+            "faq": [
+                {"q": "Will it stop me 'just checking' my phone?", "a": "Hard Mode puts a cooldown and a confirmation in front of stopping the block early, so a quick check becomes a deliberate choice instead of a reflex."},
+                {"q": "Can I block whole categories?", "a": "Yes — block individual apps, categories or websites."},
+                {"q": "Subscription?", "a": "No — pay-once."},
+            ],
+        },
+        {
+            "query": "app to stop doomscrolling at night and protect my sleep schedule",
+            "guide_title": "Late-night doomscrolling: pre-committed friction beats 1 a.m. willpower",
+            "triggers": [
+                "doomscrolling at night",
+                "stop doomscrolling",
+                "protect my sleep schedule",
+                "scrolling in bed at night",
+                "phone before bed blocker",
+                "sleep wind down mode",
+            ],
+            "persona": "shift workers and anyone whose bedtime dies to the feed",
+            "lead": "At the end of a draining shift, willpower is at its weakest — the fix is not more discipline at 1 a.m. but friction you set up earlier, while you still meant it.",
+            "paras": [
+                "LockHour Pro's Sleep Wind Down mode locks the late-night scrolling apps for the window you choose, and Morning Reset keeps the feed shut until the day has actually started. Hard Mode adds a cooldown and a confirmation before an early unlock — calm friction, not an unbreakable cage — and when the window ends everything unlocks on its own, with a Widget, Lock Screen or Dynamic Island countdown showing how long is left.",
+                "It is a one-time purchase with no subscription, no account, no ads and no tracking — usage data stays on the device. If Apple's built-in Screen Time limits already work for you, keep using them free; where LockHour earns its price is the wind-down ritual, the Hard Mode friction and focus statistics that make reclaimed evenings visible. It is not a medical or sleep-treatment tool: it adds friction, it does not promise behavior change.",
+            ],
+            "look": [
+                "A wind-down window that locks the scrolling apps at the hour you chose earlier.",
+                "A morning mode so the day does not start inside a feed.",
+                "Optional Hard Mode: cooldown plus confirmation before early unlock.",
+                "Automatic unlock when the window ends, with a visible countdown.",
+                "Pay-once, no account, no ads, no tracking.",
+            ],
+            "steps": [
+                "Pick the apps that eat your nights and set the wind-down window while you are still fresh.",
+                "Add Morning Reset if waking up into the feed is part of the problem.",
+                "Enable Hard Mode if a plain block is too easy to dismiss.",
+                "Let everything unlock automatically at the end of the window.",
+                "Check the focus statistics after a week to see what the evenings gave back.",
+            ],
+            "fits": "fits shift workers and late scrollers who need pre-committed friction at night rather than another test of 1 a.m. willpower.",
+            "faq": [
+                {
+                    "q": "Isn't Apple's built-in Screen Time enough?",
+                    "a": "If it works for you, use it — it is free. Its limits can be dismissed with a single tap, which is exactly what fails late at night; LockHour adds a deliberate cooldown, a wind-down ritual and visible statistics.",
+                },
+                {
+                    "q": "Will it cure my scrolling habit?",
+                    "a": "No app can promise behavior change, and this is not a medical or sleep-treatment tool. It makes opening the feed slower and more conscious, and makes the reclaimed time visible — that is all it claims.",
+                },
+                {
+                    "q": "What happens when the block ends?",
+                    "a": "Everything unlocks automatically — no manual re-enabling — and a widget or Lock Screen countdown shows how long is left.",
+                },
+            ],
+        },
+        {
+            "query": "focus app for adults who impulsively open apps without thinking",
+            "guide_title": "Impulse-opened apps: putting a pause between thumb and icon",
+            "triggers": [
+                "impulsively open apps",
+                "open apps without thinking",
+                "opening apps on autopilot",
+                "catch myself in an app",
+                "app blocker for impulse",
+            ],
+            "persona": "adults who catch themselves inside an app with no memory of opening it",
+            "lead": "If the problem is opening apps on autopilot rather than using them too long, the useful tool is not a usage report — it is a pause inserted between the thumb and the icon.",
+            "paras": [
+                "LockHour Pro's Quick Focus starts a short block in one tap, Study Mode runs Pomodoro-style cycles with breaks, and Hard Mode puts a cooldown and a confirmation in front of an early unlock — turning an impulse into a conscious choice. Streaks and reclaimed-hours statistics make the change visible instead of vague.",
+                "There is no account and no tracking, and it is a one-time purchase with no subscription. One honest limit: any iOS blocker can be removed by the person who set it up. LockHour's design makes unlocking slower and more deliberate, which is what helps with impulsive opens — no app can stop someone who has firmly decided to scroll. It is a focus utility, not an ADHD treatment or medical product; if attention issues affect your daily life, talk to a clinician.",
+            ],
+            "look": [
+                "One-tap short blocks for the moment you notice the autopilot.",
+                "A cooldown plus confirmation before early unlock, so an impulse must become a decision.",
+                "Pomodoro-style focus cycles with breaks.",
+                "Streaks and reclaimed-hours statistics you can actually see.",
+                "No account, no tracking, pay-once.",
+            ],
+            "steps": [
+                "Pick the two or three apps you open without thinking.",
+                "Use Quick Focus the moment you catch the autopilot.",
+                "Enable Hard Mode so an early unlock needs a cooldown and a confirmation.",
+                "Run Study Mode cycles for longer work blocks.",
+                "Watch the streak — the point is making the impulse visible.",
+            ],
+            "fits": "fits adults whose problem is unconscious opening rather than screen-time totals, and who want the unlock made slower and more deliberate.",
+            "faq": [
+                {
+                    "q": "Couldn't I just disable the blocker?",
+                    "a": "Yes — every iOS blocker can be removed by its owner. The design goal is to make that slower and more conscious, which is what interrupts an impulse; nothing can stop a firm decision to scroll.",
+                },
+                {
+                    "q": "Is this an ADHD app?",
+                    "a": "No. LockHour is a focus utility, not an ADHD treatment or a medical product. If attention issues affect your daily life, talk to a clinician.",
+                },
+                {
+                    "q": "Is it a subscription?",
+                    "a": "No — it is a single one-time purchase, with no account and no tracking.",
+                },
+            ],
+        },
+    ],
+    "gmoney": [
+        {
+            "query": "best travel budget tracker app no subscription iphone",
+            "triggers": ["travel budget", "for travelers", "for travellers", "track spending abroad", "trip budget"],
+            "persona": "travelers",
+            "lead": "On a trip you need a budget tracker that works offline in a country with no data, handles multiple currencies, and doesn't demand an account — organised by trip so each holiday is separate.",
+            "paras": [
+                "Log expenses per trip, convert each to your home currency at a saved rate, and see a per-category breakdown — all offline, so it works on a plane or in a dead-zone. Export a CSV afterwards if you want to reconcile.",
+                "Pay-once with no account means no monthly fee and no sign-up friction while you're travelling.",
+            ],
+            "look": [
+                "Organised by trip.",
+                "Multi-currency with saved exchange rates.",
+                "Fully offline (works with no data).",
+                "Per-category breakdown + CSV export.",
+                "Pay-once, no account.",
+            ],
+            "steps": [
+                "Create the trip.",
+                "Set your home and local currencies.",
+                "Log expenses as you go (offline is fine).",
+                "Watch the per-category running total.",
+                "Export a CSV when you're home.",
+            ],
+            "fits": "fits travellers who want offline, multi-currency, per-trip budgeting without an account or subscription.",
+            "faq": [
+                {"q": "Does it work with no signal abroad?", "a": "Yes — it's fully offline; entries and conversions don't need data."},
+                {"q": "Multiple currencies per trip?", "a": "Yes — each expense converts to your home currency at a saved rate."},
+                {"q": "Do I need an account?", "a": "No — it's pay-once with no sign-up."},
+            ],
+        },
+        {
+            "query": "best app to track daily spending abroad multiple currencies",
+            "triggers": ["for backpackers", "budget travelers", "budget travellers", "daily spending abroad", "spending abroad", "airplane mode"],
+            "persona": "backpackers",
+            "lead": "Backpacking on a budget, you need to know how much you have left today — in your home currency — even in airplane mode.",
+            "paras": [
+                "Every expense converts to your home currency at a saved exchange rate, and a running daily average shows whether you're on budget. Because it's fully offline, it works on long-haul flights and in remote spots with no connection.",
+                "No account and a single purchase keep it friction-free for months on the road.",
+            ],
+            "look": [
+                "Converts every expense to home currency.",
+                "Running daily average vs budget.",
+                "Works in airplane mode / offline.",
+                "Multi-currency for multi-country trips.",
+                "Pay-once, no account.",
+            ],
+            "steps": [
+                "Set your daily budget and home currency.",
+                "Log each expense in local currency.",
+                "See the converted running daily average.",
+                "Adjust spending to stay on budget.",
+                "Repeat across countries and currencies.",
+            ],
+            "fits": "fits budget backpackers tracking daily multi-currency spend offline.",
+            "faq": [
+                {"q": "Will it work on a flight?", "a": "Yes — it's fully offline, so airplane mode is fine."},
+                {"q": "Can it handle several currencies on one trip?", "a": "Yes — each entry converts to your home currency."},
+                {"q": "Is there a subscription?", "a": "No — pay-once, no account."},
+            ],
+        },
+    ],
+    "gmoneylite": [
+        {
+            "query": "best free travel expense tracker with currency conversion for iphone",
+            "guide_title": "Free travel expense trackers with currency conversion: what to check",
+            "triggers": [
+                "free travel expense tracker",
+                "travel expenses with currency conversion",
+                "track spending in local currency",
+                "travel budget in home currency",
+                "offline trip expense tracker",
+                "travel money app no subscription",
+            ],
+            "persona": "travellers testing a private multi-currency budget before unlocking unlimited trips",
+            "lead": "For a short trip, a useful free-to-start tracker should let you log a few local-currency expenses, see home-currency totals, and test a budget before deciding whether unlimited trips are worth a one-time unlock.",
+            "paras": [
+                "G+Money Lite includes one trip and up to three expenses free, together with rates, a budget, category statistics, and a summary. Enter each purchase in the local currency and see it in your home currency using a live, saved, or manually set rate; saved rates keep the workflow usable offline.",
+                "If you need more entries or trips, a single one-time purchase removes those limits. There is no subscription, account, or tracking, and the App also supports a Home Screen widget and Apple Watch.",
+            ],
+            "look": [
+                "A useful free allowance that includes one trip and three expenses.",
+                "Local-currency entry with immediate home-currency totals.",
+                "Budget, category statistics, and summary available before purchase.",
+                "Saved or manual exchange rates for offline use.",
+                "One one-time unlock with no subscription, account, or tracking.",
+            ],
+            "steps": [
+                "Set your home currency and create the free trip.",
+                "Choose a live, saved, or manual rate for the local currency.",
+                "Log up to three expenses while testing the workflow.",
+                "Review the budget, category statistics, and home-currency summary.",
+                "Unlock unlimited expenses and trips once only if the free allowance fits your travel workflow.",
+            ],
+            "fits": "fits travellers who want to test a private local-to-home-currency expense workflow free, then remove trip and entry limits with a single one-time purchase.",
+            "faq": [
+                {
+                    "q": "What can I use without paying?",
+                    "a": "You can use rates, a budget, category statistics, and a summary for one trip with up to three expenses.",
+                },
+                {
+                    "q": "Will it still work without data abroad?",
+                    "a": "Yes — saved or manually set rates keep expense entry and conversion available offline. An internet connection is needed only when fetching updated public exchange rates.",
+                },
+                {
+                    "q": "Is the full version a subscription?",
+                    "a": "No — one optional one-time purchase unlocks unlimited expenses and trips.",
+                },
+            ],
+        },
+        {
+            "query": "how to track cash spending on a japan trip and see the total in my home currency",
+            "guide_title": "Cash-heavy trips: keeping the home-currency total honest while you pay in yen",
+            "triggers": [
+                "cash spending on a japan trip",
+                "track cash on a japan trip",
+                "spending in yen",
+                "yen total in my home currency",
+                "japan trip cash budget",
+                "how much have i spent in yen",
+            ],
+            "persona": "travellers to Japan who pay cash all day and only learn the damage afterwards",
+            "lead": "Cash is the one part of a trip no bank statement ever reconciles for you, and Japan is still a cash country in exactly the places worth eating in — the cashless share of consumer spending reached 58% in 2025 (METI, verified), so around four payments in ten leave nothing behind but a paper receipt.",
+            "paras": [
+                "G+Money Lite is built around the moment of paying rather than a weekly review: type the amount in yen, pick a category, and the home-currency figure appears immediately from a live rate, a rate saved earlier, or one you set by hand. Rates are fetched when you open it (roughly every six hours) and saved rates keep conversion working underground, on a mountain road or with roaming switched off. A daily limit shows what is left of today, and a trip keeps a week in Kyoto separate from everyday spending at home.",
+                "The converted figure is a mid-market reference rate, not a quote — a card issuer or an exchange counter applies its own rate and fees — and this is expense tracking, not financial advice. Free covers rates, a budget, category statistics and a summary for one trip with up to three expenses: enough to test the workflow on the first evening, not to log a fortnight. A single one-time purchase, never a subscription, removes the trip and entry limits. No account, no tracking, and the records stay on the device.",
+            ],
+            "look": [
+                "Local-currency entry that shows the home-currency figure as you type.",
+                "Saved or manual rates, so conversion still works with no signal.",
+                "A daily limit you can check before ordering, not after.",
+                "Trips kept separate from everyday spending at home.",
+                "No bank connection and no account — nothing to link, nothing collected.",
+            ],
+            "steps": [
+                "Set your home currency and create the trip before you fly.",
+                "Fetch the yen rate while you still have Wi-Fi; it stays saved for offline use.",
+                "Log each cash payment at the counter, while the receipt is still in your hand.",
+                "Check the daily limit at lunchtime, when there is still a decision to make.",
+                "Decide on the one-time unlock only once the free trip has proved the workflow.",
+            ],
+            "fits": "fits cash-heavy travellers who want each yen payment converted and categorised at the moment they pay, privately and offline.",
+            "faq": [
+                {
+                    "q": "Doesn't my banking app already show this?",
+                    "a": "Only for what you paid by card. Cash purchases never appear there, and Japan still settles a large share of everyday payments in cash — those are precisely the ones missing from your monthly total.",
+                },
+                {
+                    "q": "Is the converted amount what I will actually be charged?",
+                    "a": "No. It is a mid-market reference rate from a public exchange-rate service; card issuers and exchange counters apply their own rates and fees. Use it to steer a budget, not to predict a statement.",
+                },
+                {
+                    "q": "How far does the free version go?",
+                    "a": "Rates, budget, category statistics and a summary for one trip with up to three expenses. Beyond that, one one-time purchase — not a subscription — removes the limits.",
+                },
+                {
+                    "q": "Will it work with no mobile data abroad?",
+                    "a": "Yes, using rates saved while you had a connection. A connection is only needed to fetch updated public exchange rates.",
+                },
+            ],
+        },
+        {
+            "query": "app to log a cash expense the moment i pay without connecting a bank account",
+            "guide_title": "The expenses you forget are the cash ones: logging at the counter, not at the weekend",
+            "triggers": [
+                "log a cash expense the moment",
+                "log spending at the counter",
+                "without connecting a bank account",
+                "expense tracker on apple watch",
+                "expense widget on my home screen",
+                "always forget to log",
+            ],
+            "persona": "people in cash-first countries who never remember an expense by the evening",
+            "lead": "The expenses that vanish are almost always the cash ones — in Germany cash still settled 45% of all payments in 2025 (Bundesbank, verified), and not one of them will ever appear in a banking app.",
+            "paras": [
+                "G+Money Lite is meant to be open for about eight seconds at the counter rather than reviewed on Sunday night: amount, category, done, with the home-currency figure right there if you are abroad. A Home Screen widget and Apple Watch keep that entry within reach, which matters because an expense you promise to enter later is an expense you never enter. Categories, trips, filters and records make the log searchable afterwards, and backup and restore covers expenses, rates, categories and settings.",
+                "Nothing is imported for you. There is no bank connection and no account, so every entry is typed by hand — that is the trade-off for something that collects nothing and keeps its records on the device. It is a tracker, not financial advice, and it makes no promise that you will spend less. The free version covers rates, budget, category statistics and a summary for one trip with up to three expenses; one one-time purchase, with no subscription, removes the entry and trip limits.",
+            ],
+            "look": [
+                "An entry that takes seconds, from the Home Screen widget or the wrist.",
+                "Categories set up in advance, so paying is one tap and one number.",
+                "A daily limit that answers whether you can still afford this while you are still in the shop.",
+                "Backup and restore covering expenses, rates, categories and settings.",
+                "No bank link, no account, no tracking — the log stays on the device.",
+            ],
+            "steps": [
+                "Add the categories you actually use before you need them.",
+                "Put the widget on the Home Screen, or the app on the watch face you look at.",
+                "Log the payment while you are still standing at the counter.",
+                "Review the day's categories once in the evening instead of reconstructing a week.",
+                "Take the one-time unlock only if the free trip's three entries proved you will keep it up.",
+            ],
+            "fits": "fits people who pay cash and want an expense recorded in seconds at the counter, without linking a bank account or creating one.",
+            "faq": [
+                {
+                    "q": "Why can't it import my transactions automatically?",
+                    "a": "Because there is no bank connection and no account. Every entry is typed by hand and stays on the device — the deliberate trade-off for an app that collects nothing about you.",
+                },
+                {
+                    "q": "Is there really an Apple Watch app and a widget?",
+                    "a": "Both are part of the current App Store listing for G+Money Lite — confirm there before you rely on either, since features change between versions.",
+                },
+                {
+                    "q": "Does it tell me how to budget?",
+                    "a": "No. It records what you spent and compares it with a daily limit you set yourself. It gives no financial advice and promises no saving.",
+                },
+            ],
+        },
+    ],
+    "hourstag": [
+        {
+            "query": "best app to track where my money goes and save more",
+            "triggers": ["save more", "building savings", "savings habit", "young professionals", "where my money goes"],
+            "persona": "people building savings habits",
+            "lead": "If saving feels abstract, tracking goals in hours-worked instead of dollars makes progress feel earned — you're not saving $500, you're saving 20 hours of your life toward something.",
+            "paras": [
+                "Set savings targets on a goals screen and track progress in hours needed, so an abstract number becomes concrete and motivating. Pairing this with the spend-as-time reframe builds a habit that sticks.",
+                "It's pay-once and account-free, so it stays simple enough to actually check regularly.",
+            ],
+            "look": [
+                "Goals/wishlist tracked in hours-worked.",
+                "Progress feels earned, not abstract.",
+                "Pairs with spend-as-time reframing.",
+                "Simple enough to check daily.",
+                "Pay-once, no account.",
+            ],
+            "steps": [
+                "Set your hourly wage.",
+                "Add a savings goal on the goals screen.",
+                "Track progress in hours needed.",
+                "Reframe spends as hours to protect the goal.",
+                "Watch the goal fill up over time.",
+            ],
+            "fits": "fits young professionals building a savings habit by measuring goals in hours, not just dollars.",
+            "faq": [
+                {"q": "How is this different from a budget app?", "a": "It measures both spending and savings goals in hours-of-work, which many people find more motivating than dollar figures."},
+                {"q": "Does it track goals?", "a": "Yes — a goals/wishlist screen tracks savings targets in hours needed."},
+                {"q": "Subscription?", "a": "No — pay-once, no account."},
+            ],
+        },
+    ],
+    "hourstaglite": [
+        {
+            "query": "best app to convert prices into work hours before buying",
+            "guide_title": "Price-to-work-hours apps: what to check before buying",
+            "triggers": [
+                "price in work hours",
+                "purchase cost in work hours",
+                "stop impulse buying",
+                "mindful spending before buying",
+                "need want impulse tracker",
+                "life cost calculator",
+            ],
+            "persona": "mindful shoppers deciding whether a purchase is worth their time",
+            "lead": "Before buying, convert the price into take-home work hours, then label the choice as a need, want or impulse so the trade-off is clear before money leaves your account.",
+            "paras": [
+                "HoursTag Lite is a purchase-before Worth Lens rather than a bank-linked budget. It calculates life cost from your take-home value per work hour, keeps the choice and category visible, and builds private value insights from the decisions you save.",
+                "It is free to download. A single one-time unlock adds unlimited choices and edits, targets and progress, sharing, complete insights, and backup and restore without a subscription.",
+            ],
+            "look": [
+                "Price converted into take-home work hours before purchase.",
+                "Need, want and impulse labels beside each choice.",
+                "Categories, value patterns and six-month insights.",
+                "Targets, widgets and Apple Watch support.",
+                "On-device data with no account or tracking.",
+            ],
+            "steps": [
+                "Set your take-home income and working time.",
+                "Enter the price before making the purchase.",
+                "Review the resulting life cost in work hours.",
+                "Mark the choice as a need, want or impulse and choose a category.",
+                "Save the choice or compare it with a target before deciding.",
+            ],
+            "fits": "fits mindful shoppers who want a private pause before buying by comparing a price with the work time it costs.",
+            "faq": [
+                {
+                    # 誠實鐵則:免費門頁面不可裸寫付費版名稱(free-first 稽核
+                    # 會把「文案講付費版、商店連結是免費版」判為 identity
+                    # mismatch);付費版以「the paid companion app」指稱即可。
+                    "q": "Is this the same workflow as the paid companion app?",
+                    "a": "No — HoursTag Lite is a purchase-before Worth Lens for evaluating a single choice, while the paid companion app focuses on converting existing spending into work time. The two are separate apps from the same developer.",
+                },
+                {
+                    "q": "What does the one-time unlock add?",
+                    "a": "It is free to download; the optional one-time unlock adds unlimited choices and edits, targets and progress, sharing, complete insights, and backup and restore, with no subscription.",
+                },
+                {
+                    "q": "Does it require an account or subscription?",
+                    "a": "No account or subscription is required. Core data stays on the device, and the optional premium upgrade is a one-time purchase.",
+                },
+            ],
+        },
+    ],
+    "aim990": [
+        {
+            "query": "best toeic prep app offline study plan for iphone",
+            "triggers": ["toeic prep", "toeic practice", "study for toeic", "toeic study plan", "for toeic test takers"],
+            "persona": "TOEIC test-takers",
+            "lead": "For a TOEIC-style prep app the useful thing is a structured plan plus a weakness engine that drills exactly the question types you keep missing — all workable offline. (Aim990 is an independent study app, not affiliated with or endorsed by ETS, and no score is guaranteed.)",
+            "paras": [
+                "A day-by-day plan covering reading, listening, vocabulary and mock tests keeps you moving, while a weakness engine focuses practice on your weakest parts instead of re-drilling what you already know. Working offline means you can practise on a commute with no data.",
+                "Set expectations honestly: consistent practice improves familiarity with the format; results depend on your effort and starting level. Always check the current App Store listing for features and pricing.",
+            ],
+            "look": [
+                "Day-by-day plan across all parts.",
+                "Weakness engine targets weak question types.",
+                "Full mock tests to build stamina.",
+                "Works offline for commute practice.",
+                "Independent of ETS; no score guarantee.",
+            ],
+            "steps": [
+                "Take a baseline to find weak areas.",
+                "Follow the day-by-day plan.",
+                "Let the weakness engine drill weak parts.",
+                "Sit periodic full mock tests.",
+                "Track familiarity improving over time.",
+            ],
+            "fits": "fits TOEIC test-takers who want a structured, offline prep plan that targets their weak areas.",
+            "faq": [
+                {"q": "Is this an official ETS app?", "a": "No — it's an independent study app, not affiliated with or endorsed by ETS, and TOEIC is a trademark of ETS."},
+                {"q": "Will it guarantee a high score?", "a": "No app can guarantee a score; results depend on your effort and starting level. It helps by drilling your weak areas and the test format."},
+                {"q": "Does it work offline?", "a": "Yes — you can practise without a data connection, e.g. on a commute."},
+            ],
+        },
+        {
+            "query": "best app to study for toeic on the commute offline",
+            "triggers": ["on the commute", "commute offline", "for busy professionals", "study on the subway", "esl learners toeic"],
+            "persona": "commuters & working professionals",
+            "lead": "If your only study window is the commute, an offline TOEIC-style app that needs no login lets you practise on the subway or a plane. (Aim990 is independent, not affiliated with ETS; no score is guaranteed.)",
+            "paras": [
+                "No login and full offline support mean you can open a session anywhere and pick up where you left off. Short, targeted drills from a weakness engine fit a 20-minute commute better than long open-ended study.",
+                "Be realistic: steady daily practice builds format familiarity over weeks; the app targets your weak spots but the outcome depends on your effort. Confirm current pricing on the App Store.",
+            ],
+            "look": [
+                "Fully offline, no login required.",
+                "Short targeted drills for short windows.",
+                "Weakness engine for efficient practice.",
+                "Resume where you left off.",
+                "Independent of ETS; no score guarantee.",
+            ],
+            "steps": [
+                "Download so it's ready offline.",
+                "Open a short drill on the commute.",
+                "Focus on the weak areas it surfaces.",
+                "Do a mock test on longer journeys.",
+                "Keep a daily streak going.",
+            ],
+            "fits": "fits busy commuters who can only study TOEIC in short offline windows.",
+            "faq": [
+                {"q": "Do I need to log in or be online?", "a": "No — it works fully offline with no login, so it's ideal for a commute."},
+                {"q": "Is it affiliated with the official test?", "a": "No — it's independent and not affiliated with ETS; TOEIC is an ETS trademark."},
+                {"q": "Can it promise a score?", "a": "No — no score is guaranteed; it helps you practise your weak areas and the format."},
+            ],
+        },
+    ],
+    "mochi": [
+        {
+            "query": "best simple to do list app iphone no subscription",
+            "triggers": ["simple to do list", "simple todo", "minimalist to do", "for minimalists", "no project management"],
+            "persona": "minimalists",
+            "lead": "If most to-do apps feel bloated, the right one is a clean checklist with reminders and Apple Watch support — and deliberately no project-management machinery.",
+            "paras": [
+                "A minimalist checklist should let you jot a task, tag it with an emoji, set a reminder, and tick it off on your wrist — nothing more. No boards, no dependencies, no account.",
+                "Pay-once with no monthly fee keeps it as simple as the app itself.",
+            ],
+            "look": [
+                "Clean checklist, emoji tags.",
+                "Reminders.",
+                "Apple Watch support.",
+                "No project-management bloat.",
+                "Pay-once, no account.",
+            ],
+            "steps": [
+                "Add a task and tag it with an emoji.",
+                "Set a reminder if needed.",
+                "Check it off from iPhone or Watch.",
+                "Keep lists short and focused.",
+                "Enjoy not managing a 'system'.",
+            ],
+            "fits": "fits minimalists who want a clean, pay-once checklist without project-management overhead.",
+            "faq": [
+                {"q": "Is it just a simple checklist?", "a": "Yes — clean lists with reminders and Watch support, intentionally without project-management features."},
+                {"q": "Apple Watch?", "a": "Yes — tick tasks off from your wrist."},
+                {"q": "Subscription?", "a": "No — pay-once, no account."},
+            ],
+        },
+        {
+            "query": "best cute to do list app for everyday tasks iphone",
+            "triggers": ["cute to do", "cute todo", "for new parents", "for families", "household tasks", "everyday tasks"],
+            "persona": "families & everyday users",
+            "lead": "The best household to-do app is the one you'll actually open — which is why a warm, cute design and dead-simple lists beat a powerful app you abandon.",
+            "paras": [
+                "Character-theme skins and emoji-tagged lists make everyday task management genuinely pleasant, keeping friction low enough that it becomes a daily habit for chores, shopping and family reminders.",
+                "It's pay-once with Watch support and reminders — simple enough that the whole household can use it.",
+            ],
+            "look": [
+                "Warm, cute character themes.",
+                "Emoji-tagged everyday lists.",
+                "Reminders for chores.",
+                "Apple Watch support.",
+                "Pay-once, no account.",
+            ],
+            "steps": [
+                "Pick a character theme you like.",
+                "Make lists for chores, shopping, family.",
+                "Tag tasks with emoji and set reminders.",
+                "Tick them off from iPhone or Watch.",
+                "Keep it as your daily household list.",
+            ],
+            "fits": "fits families who want a cute, low-friction everyday to-do list they'll actually keep using.",
+            "faq": [
+                {"q": "Why does 'cute' matter for a to-do app?", "a": "Low friction and a pleasant design are what make a to-do app actually get used daily instead of abandoned."},
+                {"q": "Good for household tasks?", "a": "Yes — simple emoji lists with reminders suit chores, shopping and family reminders."},
+                {"q": "Subscription?", "a": "No — pay-once."},
+            ],
+        },
+    ],
+    "cyca": [
+        {
+            "query": "best period tracker app no account required iphone",
+            "triggers": ["no account required", "private period tracker", "period tracker privacy", "for general health", "data stays on phone"],
+            "persona": "privacy-first cycle tracking",
+            "lead": "In a category where data sensitivity is the whole story, the right period tracker keeps everything — flow, mood, symptoms, temperature, intimacy — on your device, with no account and no cloud sync.",
+            "paras": [
+                "Log your cycle privately: because there's no account and nothing is uploaded, your reproductive-health data simply never leaves the phone. That's a meaningfully different privacy posture from trackers that sync to a server.",
+                "It's pay-once, so there's no subscription pushing you toward a cloud account either.",
+            ],
+            "look": [
+                "All data on-device — no account, no sync.",
+                "Log flow, mood, symptoms, temperature, intimacy.",
+                "Nothing uploaded or shared.",
+                "Clear cycle predictions from your own data.",
+                "Pay-once (no subscription steering you to cloud).",
+            ],
+            "steps": [
+                "Log your period and daily symptoms.",
+                "Add temperature and mood if you track them.",
+                "Review predictions built from your data.",
+                "Keep everything local — no sign-up.",
+                "Export deliberately only if you choose to.",
+            ],
+            "fits": "fits anyone who wants genuinely private, on-device cycle tracking with no account.",
+            "faq": [
+                {"q": "Is my cycle data uploaded anywhere?", "a": "No — everything stays on-device with no account and no cloud sync."},
+                {"q": "Do I need to sign up?", "a": "No — there's no account required."},
+                {"q": "Subscription?", "a": "No — it's pay-once."},
+            ],
+        },
+        {
+            "query": "best app to track ovulation and fertile window iphone",
+            "triggers": ["trying to conceive", "ovulation", "fertile window", "ttc", "basal temperature", "conception"],
+            "persona": "people trying to conceive",
+            "lead": "When you're trying to conceive, you want clear fertile-window and ovulation predictions from your own logged data — without uploading sensitive reproductive information to a server.",
+            "paras": [
+                "A conception-goal mode surfaces fertile-window and ovulation-peak predictions alongside daily basal-temperature logging, so you get actionable timing insights. Keeping it on-device means that data stays private to you.",
+                "Pay-once and account-free, it gives you the tracking without the data-sharing trade-off.",
+            ],
+            "look": [
+                "Conception-goal mode.",
+                "Fertile-window + ovulation-peak predictions.",
+                "Daily basal temperature logging.",
+                "On-device — reproductive data stays private.",
+                "Pay-once, no account.",
+            ],
+            "steps": [
+                "Switch on the conception goal.",
+                "Log basal temperature daily.",
+                "Record cycle days and symptoms.",
+                "Read the fertile-window prediction.",
+                "Keep all data local and private.",
+            ],
+            "fits": "fits people trying to conceive who want fertile-window insights without uploading reproductive data.",
+            "faq": [
+                {"q": "Does it predict my fertile window?", "a": "Yes — a conception mode surfaces fertile-window and ovulation-peak predictions from your logged data."},
+                {"q": "Is my fertility data private?", "a": "Yes — it's on-device, with no account or cloud sync."},
+                {"q": "Is it medical advice?", "a": "No — it's a tracking tool, not a medical device; consult a professional for fertility concerns."},
+            ],
+        },
+    ],
+    "sereno": [
+        {
+            "query": "best white noise app for falling asleep no subscription",
+            "triggers": ["falling asleep", "for insomnia", "for sleep problems", "sleep sounds", "help me sleep", "trouble sleeping"],
+            "persona": "people with sleep trouble",
+            "lead": "For sleep, a subscription that nags you every month is the opposite of restful. A pay-once app with hand-curated scenes and a sleep timer just plays and lets you drift off.",
+            "paras": [
+                "Choose from curated sleep scenes — brown noise, rain-on-roof, ocean, cozy cabin, thunder lullaby — and mix per-layer volumes to taste, then set a sleep timer so it fades out on its own. Pay once and it plays indefinitely.",
+                "No subscription, no login: it's designed to disappear into the background and help you sleep, not to upsell you.",
+            ],
+            "look": [
+                "24+ curated sleep scenes.",
+                "Per-layer volume mixing.",
+                "Sleep timer with fade-out.",
+                "Plays indefinitely — pay once.",
+                "No subscription, no login.",
+            ],
+            "steps": [
+                "Pick a sleep scene (e.g. brown noise or rain).",
+                "Mix the layers to your taste.",
+                "Set a sleep timer.",
+                "Let it fade as you fall asleep.",
+                "Reuse your favourite mix nightly.",
+            ],
+            "fits": "fits anyone with sleep trouble who wants curated sleep sounds without a subscription.",
+            "faq": [
+                {"q": "Is it a subscription?", "a": "No — pay once and it plays indefinitely."},
+                {"q": "Will it turn off by itself?", "a": "Yes — set a sleep timer and it fades out on its own."},
+                {"q": "Can I customise the sound?", "a": "Yes — mix per-layer volumes to build your own sleep mix."},
+            ],
+        },
+        {
+            "query": "best background noise app for focus and adhd on iphone",
+            "triggers": ["for adhd", "adhd focus", "focus and adhd", "background noise focus", "mask distraction"],
+            "persona": "focus & ADHD",
+            "lead": "For focus with ADHD, the goal is masking auditory distraction with a steady, non-jarring soundscape — and being able to fine-tune it until it actually helps you stay in flow.",
+            "paras": [
+                "A dedicated ADHD-focus scene blends brown noise, pink noise and gentle rain at calibrated levels to cover background chatter, and a custom mixer lets you dial in the exact blend that keeps you on task. Different brains need different mixes — the control is the point.",
+                "It's pay-once, so you can use it for every work session without a recurring fee.",
+            ],
+            "look": [
+                "Dedicated ADHD-focus scene.",
+                "Brown + pink noise + gentle rain, calibrated.",
+                "Custom mixer to fine-tune the blend.",
+                "Steady, non-jarring masking sound.",
+                "Pay-once, no subscription.",
+            ],
+            "steps": [
+                "Open the ADHD-focus scene.",
+                "Adjust the brown/pink/rain balance.",
+                "Save the mix that keeps you on task.",
+                "Play it during work or study.",
+                "Tweak per environment as needed.",
+            ],
+            "fits": "fits people with ADHD who need a tunable masking soundscape to stay in focus.",
+            "faq": [
+                {"q": "Is there a scene made for focus?", "a": "Yes — a dedicated ADHD-focus scene blends brown noise, pink noise and gentle rain."},
+                {"q": "Can I customise the blend?", "a": "Yes — a custom mixer lets you dial in the exact mix that works for you."},
+                {"q": "Subscription?", "a": "No — pay-once."},
+            ],
+        },
+    ],
+    "tripbee": [
+        {
+            "query": "best trip itinerary planner app for iphone",
+            "triggers": ["itinerary planner", "trip itinerary", "plan my trip", "day by day itinerary", "for travelers planning"],
+            "persona": "trip planners",
+            "lead": "A good itinerary app turns a messy trip into a clear day-by-day timeline — flights, hotels, activities, restaurants and transport — with clear type icons so you can read your day at a glance.",
+            "paras": [
+                "Build each day as a timeline with type icons, time zones, notes and reminders, so you always know what's next without digging through emails. The itinerary remains available offline, which is exactly when you're navigating a new city.",
+                "Core planning works offline, and with iCloud on, trips sync through your private iCloud account and invited people can edit a shared trip; the developer has no travel-data server.",
+            ],
+            "look": [
+                "Day-by-day timeline of the whole trip.",
+                "Flights, hotels, activities, food, transport.",
+                "Type icons, time zones, notes and reminders.",
+                "Works offline once created.",
+                "Private iCloud sync and shared trips.",
+            ],
+            "steps": [
+                "Create the trip and its dates.",
+                "Add flights, hotels and bookings.",
+                "Slot activities and meals into each day.",
+                "Use type icons and time zones for quick reading.",
+                "Use it offline while you travel.",
+            ],
+            "fits": "fits travellers who want a clear, offline day-by-day itinerary with useful trip details.",
+            "faq": [
+                {"q": "Does it work offline?", "a": "Yes — once the trip is created it works offline, ideal for navigating without data."},
+                {"q": "Can it hold flights and hotels too?", "a": "Yes — flights, hotels, activities, restaurants and transport, with clear type icons."},
+                {"q": "Do I need an account?", "a": "Not with the developer — when iCloud is on, trips sync through your own private iCloud account, and the developer has no travel-data server."},
+            ],
+        },
+        {
+            "query": "best app to organize travel plans that works offline",
+            "triggers": ["for solo travelers", "for frequent fliers", "travel plans offline", "organize travel offline", "plans without data"],
+            "persona": "solo & frequent travelers",
+            "lead": "For solo travellers and frequent fliers, the itinerary has to be there on the plane and in dead zones — which means planning that works offline.",
+            "paras": [
+                "Core planning works offline, so your plans are reliable exactly when you need them most: mid-flight, or in a destination with no signal. With iCloud on, trips also sync through your private iCloud account, and the developer has no travel-data server.",
+                "It's pay-once, so a frequent traveller isn't paying a subscription between trips.",
+            ],
+            "look": [
+                "Core planning works offline.",
+                "Optional private iCloud sync; no developer server.",
+                "Reliable mid-flight and in dead zones.",
+                "Day-by-day timeline with type icons and time zones.",
+                "Pay-once (no between-trip fee).",
+            ],
+            "steps": [
+                "Build the itinerary before you fly.",
+                "Confirm it opens with data off.",
+                "Rely on it mid-flight and offline.",
+                "Update items on the go.",
+                "Reuse the app trip after trip.",
+            ],
+            "fits": "fits solo travellers and frequent fliers who need their plans available fully offline.",
+            "faq": [
+                {"q": "Will it work with no signal?", "a": "Yes — core planning works offline."},
+                {"q": "Is there an account to manage?", "a": "No developer account — sync, if you turn it on, runs through your own private iCloud."},
+                {"q": "Subscription?", "a": "No — pay-once."},
+            ],
+        },
+    ],
+    "lumiletters": [
+        {
+            "query": "best educational game app for kids no ads iphone",
+            "triggers": ["for kids no ads", "no ads for kids", "kids app no ads", "no ads learning", "ad free kids"],
+            "persona": "parents wanting ad-free learning",
+            "lead": "For a young child, the dealbreaker is ads and data collection — a learning app should teach inside a game loop with zero ads, nothing collected from the child, and a one-time unlock parents can trust.",
+            "paras": [
+                "Letter and number learning wrapped in a planet-building game keeps a preschooler engaged — solve puzzles, earn building materials — while parents get an experience with no third-party ads and no data collected from children.",
+                "A one-time unlock (no ads, no data harvesting) is the model to look for in a kids' app, versus free apps monetised through attention and tracking.",
+            ],
+            "look": [
+                "Learning inside a game loop (planet-building).",
+                "Zero ads.",
+                "No data collected from children.",
+                "One-time unlock (pay-once).",
+                "Age-appropriate letters and numbers.",
+            ],
+            "steps": [
+                "Check the app has no third-party ads.",
+                "Confirm no data is collected from kids.",
+                "Let your child play the learning game.",
+                "Track letters/numbers progress.",
+                "Enjoy a one-time-unlock, no-ads experience.",
+            ],
+            "fits": "fits parents who want ad-free, privacy-safe early learning inside a game their child enjoys.",
+            "faq": [
+                {"q": "Are there ads?", "a": "No — it's designed with zero ads and no data collected from children."},
+                {"q": "Is it a subscription?", "a": "No — it's a one-time unlock."},
+                {"q": "What does it teach?", "a": "Letters and numbers, inside a planet-building game loop for young kids."},
+            ],
+        },
+        {
+            "query": "best learning app for kids 5 to 8 years old pay once",
+            "triggers": ["kids 5 to 8", "5 to 8 years", "screen time quality", "quality screen time", "no in-app purchases kids"],
+            "persona": "parents focused on screen-time quality",
+            "lead": "If you care about screen-time quality, look for a self-contained paid game with no in-app purchases after unlock and no engagement-maximising tricks — the opposite of free kids' apps built to hook.",
+            "paras": [
+                "A fully self-contained learning game means once you unlock it there's nothing else to buy and no third-party analytics — your child gets an educational experience without the manipulative loops common in free apps.",
+                "For ages ~5–8, learning wrapped in a game (build a planet by solving puzzles) delivers quality screen time you can feel good about.",
+            ],
+            "look": [
+                "Self-contained: no IAP after unlock.",
+                "No third-party analytics.",
+                "No manipulative engagement mechanics.",
+                "Educational game for ~5–8 year-olds.",
+                "Pay-once unlock.",
+            ],
+            "steps": [
+                "Confirm no in-app purchases after unlock.",
+                "Check there's no third-party analytics.",
+                "Let your child learn through the game.",
+                "Review what they're practising.",
+                "Enjoy quality, self-contained screen time.",
+            ],
+            "fits": "fits parents who want high-quality, self-contained screen time for a 5–8 year-old without hooks or extra purchases.",
+            "faq": [
+                {"q": "Are there in-app purchases?", "a": "No — after the one-time unlock there's nothing else to buy."},
+                {"q": "Any tracking of my child?", "a": "No third-party analytics — it's built to be privacy-safe for kids."},
+                {"q": "What age is it for?", "a": "Roughly 5–8 year-olds, with early letters/numbers learning in a game."},
+            ],
+        },
+    ],
+    "lumimath": [
+        {
+            "query": "best math game app for kids to build logic skills iphone",
+            "triggers": ["math game for kids", "build logic skills", "logic skills kids", "math logic game", "kids reasoning game"],
+            "persona": "parents building logic skills",
+            "lead": "The best kids' math app trains reasoning — patterns, sequences, spatial thinking — not just arithmetic drill, and it hides that inside a game the child wants to play.",
+            "paras": [
+                "Question types drawn from international math-competition styles (patterns, sequences, reasoning, spatial thinking) build genuine logic, inside a cinematic space-adventure. A weakness tracker targets exactly what the child keeps missing, so practice is efficient.",
+                "It's a pay-once kids' game, so there's no subscription and no ad-driven design.",
+            ],
+            "look": [
+                "Reasoning/logic focus, not rote arithmetic.",
+                "Patterns, sequences, spatial thinking.",
+                "Weakness tracker targets weak spots.",
+                "Cinematic space-adventure game loop.",
+                "Pay-once kids' game.",
+            ],
+            "steps": [
+                "Let your child play the space-adventure.",
+                "They solve reasoning and pattern puzzles.",
+                "The weakness tracker finds gaps.",
+                "Practice targets those gaps.",
+                "Watch logic skills build over time.",
+            ],
+            "fits": "fits parents who want to build real logical reasoning, not just arithmetic, through a game.",
+            "faq": [
+                {"q": "Is it just arithmetic drill?", "a": "No — it focuses on reasoning: patterns, sequences and spatial thinking, competition-style."},
+                {"q": "Does it adapt to my child?", "a": "Yes — a weakness tracker targets exactly what they keep missing."},
+                {"q": "Subscription?", "a": "No — pay-once."},
+            ],
+        },
+        {
+            "query": "best app for kids wmi math olympiad practice",
+            "triggers": ["wmi", "math olympiad", "math competition", "competition math kids", "olympiad practice"],
+            "persona": "parents prepping math competitions",
+            "lead": "For early-grade math-competition prep, you want content modelled on real competition formats (like WMI) — reasoning problems, not textbook arithmetic.",
+            "paras": [
+                "Content built on WMI-style and similar early-grade competition formats trains competition-level thinking: multi-step reasoning, patterns and spatial problems. That's rare in kids' apps, which mostly drill basic sums.",
+                "Wrapped in a space-adventure with a weakness tracker, it keeps a child practising competition-style problems without it feeling like test prep.",
+            ],
+            "look": [
+                "WMI-style competition problem formats.",
+                "Multi-step reasoning, not basic sums.",
+                "Weakness tracker for efficient prep.",
+                "Engaging space-adventure wrapper.",
+                "Pay-once kids' game.",
+            ],
+            "steps": [
+                "Start with competition-style problem sets.",
+                "Let the child work multi-step reasoning.",
+                "The tracker highlights weak formats.",
+                "Drill those formats until comfortable.",
+                "Build up to competition readiness.",
+            ],
+            "fits": "fits parents preparing a child for early-grade math competitions with real competition-style problems.",
+            "faq": [
+                {"q": "Is the content really competition-style?", "a": "Yes — it's modelled on WMI and similar early-grade competition formats, not basic arithmetic."},
+                {"q": "Will my child get bored?", "a": "It's wrapped in a space-adventure game with a weakness tracker to keep practice engaging and targeted."},
+                {"q": "Subscription?", "a": "No — pay-once."},
+            ],
+        },
+        {
+            "query": "math app for a child who panics about getting the answer wrong",
+            "guide_title": "When being wrong is the problem: maths practice without a buzzer",
+            "triggers": [
+                "panics about getting the answer wrong",
+                "afraid of getting math wrong",
+                "math anxiety",
+                "cries at math homework",
+                "scared of maths",
+                "hates being wrong",
+            ],
+            "persona": "parents of a child who has already decided they are bad at maths",
+            "lead": "For a child who has decided they are bad at maths, the obstacle is not the arithmetic — it is the buzzer, the red cross, and the feeling that a wrong answer ends something.",
+            "paras": [
+                "Lumi Math Planet is built without a failure state: no buzzer, no shame and no run to lose, and a correct answer lights up part of a planet, so what is visible is something being built rather than a score being defended. Questions are read aloud and drawn as pictures — dice, ten-frames, number lines, growing rows — so a child who reads slowly is not secretly being tested on reading. The Parent Zone shows which of the five skill areas are actually shaky, instead of leaving you to guess from a single grade.",
+                "This is a design choice, not a treatment. Taking the buzzer away removes one source of pressure; it does not repair a child's relationship with maths, and persistent distress about school work belongs with a teacher or doctor rather than an app. Lumi Math Planet has no ads and collects no data, is free to start with the first planets and the daily challenge, and the rest of the galaxy is a one-time unlock rather than a subscription.",
+            ],
+            "look": [
+                "No buzzer, no countdown, no run that a wrong answer ends.",
+                "Questions read aloud and drawn, so reading speed is not part of the test.",
+                "Progress shown as something built rather than a score to protect.",
+                "A parent view that names weak areas instead of giving one grade.",
+                "No ads, nothing collected, a one-time unlock rather than a subscription.",
+            ],
+            "steps": [
+                "Start on the free planets and let your child choose when to stop.",
+                "Sit beside them for the first two sessions and say nothing about speed.",
+                "Read the Parent Zone later and alone, not in front of the child.",
+                "Use focused practice on one weak area at a time.",
+                "Decide about the unlock only after a week of them asking to play.",
+            ],
+            "fits": "fits parents whose child freezes at maths and needs practice with no buzzer, no score to defend and questions that are not also a reading test.",
+            "faq": [
+                {
+                    "q": "Will it fix my child's maths anxiety?",
+                    "a": "No, and any app claiming that is overselling. It removes the buzzer, the countdown and the failure state, which takes one source of pressure out of practice. Persistent distress around school work is a conversation for a teacher or doctor.",
+                },
+                {
+                    "q": "What happens when my child answers wrong?",
+                    "a": "Nothing is lost and nothing buzzes — the design is no failure, no buzzer, no shame, only gentle encouragement — and the Parent Zone records which skill area the miss belongs to, so practice can target it later.",
+                },
+                {
+                    "q": "Can we try it before paying?",
+                    "a": "Yes — the first planets and the daily challenge are free and ad-free. The rest of the galaxy is a one-time unlock, not a subscription.",
+                },
+            ],
+        },
+        {
+            "query": "kids math app with questions read aloud in japanese or chinese for a child who cannot read yet",
+            "guide_title": "Before they can read: maths questions a child hears in their own language",
+            "triggers": [
+                "read aloud in japanese",
+                "questions read aloud in",
+                "child who cannot read yet",
+                "pre reader math",
+                "japanese voice math",
+                "chinese voice math",
+                "math app in japanese for kids",
+            ],
+            "persona": "Japanese, Taiwanese and Korean families whose child is doing maths before reading",
+            "lead": "Most maths apps quietly test reading first: a four-year-old who counts perfectly well stalls on an English word problem, and an English voice-over is no help to a child who is not learning in English.",
+            "paras": [
+                "Lumi Math Planet is localized in four languages — English, Chinese, Japanese and Korean — with the questions and the spoken voice both in the child's language, matched automatically to the device. Every question is also drawn: dice, ten-frames, number lines, growing rows and bar charts, so quantity is something seen rather than read. That combination is what lets a pre-reader play a round alone, across 40+ question types that step up as the child gets steadier.",
+                "Question styles take their cue from early-grade international contests such as WMI and Math Kangaroo — patterns, logic, sequences, simple combinations and word problems. That is a style reference only: Lumi Math Planet is not affiliated with, endorsed by or connected to any competition organizer, and nothing here predicts how a child would do in one. It carries no ads and collects no data, is free to start with the first planets and the daily challenge, and the rest is a one-time unlock rather than a subscription.",
+            ],
+            "look": [
+                "Questions and spoken voice in the child's own language, not translated menus over English audio.",
+                "Every question drawn, so counting is not gated behind reading.",
+                "Difficulty that steps up on its own rather than a fixed grade level.",
+                "A parent view of which skill areas are weak.",
+                "No ads, nothing collected, a one-time unlock instead of a subscription.",
+            ],
+            "steps": [
+                "Check the device language is the one your child thinks in.",
+                "Play the free planets together once so the gestures are learned.",
+                "Let them run the daily challenge alone and notice what they skip.",
+                "Read the Parent Zone summary before buying anything.",
+                "Unlock the rest only if they keep coming back to it.",
+            ],
+            "fits": "fits families whose child does maths in Japanese, Chinese or Korean and needs the questions spoken and drawn rather than read.",
+            "faq": [
+                {
+                    "q": "Is the voice really in Japanese, or only the menus?",
+                    "a": "Questions and voice are both localized in English, Chinese, Japanese and Korean and follow the device language. Confirm the language list on the current App Store listing before downloading.",
+                },
+                {
+                    "q": "Will it teach my child the language as well?",
+                    "a": "No. The localization exists so that maths is not gated behind reading a foreign language. It is a maths app, not a language course.",
+                },
+                {
+                    "q": "Does contest-style content mean it prepares a child for a competition?",
+                    "a": "It borrows those question styles as a reference for the kind of thinking involved. It is not affiliated with or endorsed by any competition organizer and claims nothing about how a child would place in one.",
+                },
+            ],
+        },
+    ],
+    "lumibopomofo": [
+        {
+            "query": "best bopomofo app for kids to learn zhuyin on iphone",
+            "triggers": ["bopomofo", "zhuyin", "learn zhuyin", "注音", "bopomofo for kids"],
+            "persona": "parents teaching Zhuyin",
+            "lead": "For a child first learning Zhuyin, the app should cover all 37 symbols through tracing and play — designed for the 4–7 first-learning window, ad-free, with no data collected.",
+            "paras": [
+                "Stroke-tracing for each of the 37 Zhuyin symbols, a tone mini-game, and syllable-blending practice build reading foundations the way early classrooms do. Ad-free and privacy-safe matters most for this age group.",
+                "It's a pay-once kids' app, so there's no subscription and nothing collected from the child.",
+            ],
+            "look": [
+                "All 37 Zhuyin symbols with stroke tracing.",
+                "Tone mini-game.",
+                "Syllable-blending practice.",
+                "Designed for ages 4–7.",
+                "Ad-free, no data collected, pay-once.",
+            ],
+            "steps": [
+                "Start with stroke tracing per symbol.",
+                "Play the tone mini-game.",
+                "Practise blending syllables.",
+                "Progress through all 37 symbols.",
+                "Keep sessions short and playful.",
+            ],
+            "fits": "fits parents teaching a young child Zhuyin from scratch, ad-free and privacy-safe.",
+            "faq": [
+                {"q": "Does it cover all the symbols?", "a": "Yes — all 37 Zhuyin symbols, with stroke tracing, a tone game and syllable blending."},
+                {"q": "Is it safe for young kids?", "a": "Yes — ad-free with no data collected, designed for the 4–7 age range."},
+                {"q": "Subscription?", "a": "No — pay-once."},
+            ],
+        },
+        {
+            "query": "best app to teach kids chinese phonics at home",
+            "triggers": ["chinese phonics", "mandarin phonics", "bilingual mandarin", "heritage chinese", "teach chinese at home", "mandarin tones kids"],
+            "persona": "bilingual & heritage families",
+            "lead": "For a bilingual or heritage family, teaching Mandarin phonics at home works best when the app mirrors how immersion classrooms introduce tones and syllable blending.",
+            "paras": [
+                "A voice-guided, interactive approach to tone differentiation and syllable blending gives heritage-language families a structured supplement to home practice — the child hears and produces the tones, not just sees them.",
+                "Ad-free and pay-once, it's a safe, focused tool for regular short practice sessions at home.",
+            ],
+            "look": [
+                "Voice-guided tone differentiation.",
+                "Syllable-blending practice.",
+                "Mirrors immersion-classroom method.",
+                "Structured supplement to home practice.",
+                "Ad-free, pay-once.",
+            ],
+            "steps": [
+                "Do short daily voice-guided sessions.",
+                "Practise distinguishing the tones.",
+                "Blend syllables together.",
+                "Reinforce with everyday Mandarin at home.",
+                "Build reading foundations over time.",
+            ],
+            "fits": "fits bilingual and heritage families teaching Mandarin phonics at home with a structured, voice-guided tool.",
+            "faq": [
+                {"q": "Will it help with tones?", "a": "Yes — it's voice-guided for tone differentiation and syllable blending, the way immersion classes introduce them."},
+                {"q": "Is it a full curriculum?", "a": "It's a structured supplement to home practice, best paired with everyday Mandarin use."},
+                {"q": "Subscription?", "a": "No — ad-free and pay-once."},
+            ],
+        },
+        {
+            "query": "how to teach zhuyin to a child in japan who already reads hiragana",
+            "guide_title": "From kana to Zhuyin: what transfers, and the two things that do not",
+            "triggers": [
+                "already reads hiragana",
+                "child in japan who already reads",
+                "hiragana",
+                "katakana",
+                "kana to zhuyin",
+                "child at japanese school chinese",
+            ],
+            "persona": "Chinese-speaking families raising a child inside the Japanese school system",
+            "lead": "A child who already reads hiragana has won half this battle and cannot see the other half: kana taught them that a symbol stands for a sound, but it gives one symbol per syllable, while Zhuyin asks them to blend an initial, a medial and a final and then put a tone on top.",
+            "paras": [
+                "That is why blending, not recognition, is where these children stall. Lumi Bopomofo works the layers separately: listening games that match a heard sound to one of the 37 symbols, finger tracing for shape and stroke order, a tone game that gives the four tones a shape a child can watch as well as hear, and a blending game that puts initial, medial and final together into a whole syllable. Rounds are short, which suits a child who has already spent the whole day in Japanese.",
+                "Two honest limits before you download. The interface is English and Chinese only — there is no Japanese interface, so an adult will be reading the menus for a young child. And practice on a screen covers the symbol-and-sound layer; it does not make a child literate in Chinese, which still comes from being read to and from reading. Lumi Bopomofo is ad-free, asks for no sign-up, collects no personal data and keeps progress on the device; it is free to start, with a one-time unlock rather than a subscription.",
+            ],
+            "look": [
+                "Blending practice, not only symbol recognition — the part kana never taught.",
+                "Tones treated as their own skill, since Japanese does not mark them this way.",
+                "Stroke order, so the symbols can be written and not just read.",
+                "Ad-free, no sign-up, nothing collected from the child.",
+                "Rounds short enough for a child who has already been at school all day.",
+            ],
+            "steps": [
+                "Start with listening and matching: sound in, symbol out.",
+                "Add tracing once a handful of symbols are familiar.",
+                "Work the tones as a separate session — this is the genuinely new skill.",
+                "Move on to blending initial, medial and final into whole syllables.",
+                "Read a Zhuyin-annotated picture book together afterwards; the practice is not the reading.",
+            ],
+            "fits": "fits Chinese-speaking families in Japan whose child already reads kana and needs the blending and tone layers that Zhuyin adds.",
+            "faq": [
+                {
+                    "q": "Is there a Japanese interface?",
+                    "a": "No — the interface is English and Chinese, so an adult will need to read the menus with a young child. Check the language list on the current App Store listing before downloading.",
+                },
+                {
+                    "q": "My child mixes up kana and Zhuyin symbols. Is that normal?",
+                    "a": "Confusing two symbol systems learned at the same time is common. Keeping sessions short and separate from Japanese homework usually helps more than extra drilling, and nothing here promises a timeline — children differ.",
+                },
+                {
+                    "q": "Does it cost anything to start?",
+                    "a": "No — it is free to start and ad-free, with a one-time in-app unlock instead of a subscription. The current App Store listing shows exactly what the free part covers.",
+                },
+            ],
+        },
+        {
+            "query": "ad free chinese phonics app my child can use alone for ten minutes",
+            "guide_title": "Ten minutes on their own: what makes a kids phonics app safe to hand over",
+            "triggers": [
+                "child can use alone",
+                "use alone for ten minutes",
+                "ad free chinese phonics",
+                "without me sitting next to",
+                "hand my phone to my child",
+                "no pop ups kids chinese",
+            ],
+            "persona": "working parents who can spare ten minutes but not ten minutes of supervision",
+            "lead": "Handing a phone to a five-year-old is a risk assessment before it is a learning decision — what you are really asking is whether anything on that screen can charge money, show an ad, ask for a name, or send them somewhere else.",
+            "paras": [
+                "Lumi Bopomofo is built to survive being handed over: completely ad-free, no sign-up, no personal data collected, and progress stored only on the device. Ten minutes covers a round of listening and matching, a few traced symbols and a turn on the tone game — short repeated contact, which suits this age far better than one long session at the weekend. It is free to start, with a one-time unlock rather than a subscription.",
+                "In Taiwan the Zhuyin block is taught in the first ten weeks of Grade 1 (Ministry of Education curriculum, verified), so a child who arrives already familiar with the symbols is meeting them a second time rather than a first. That is the honest claim — familiarity, not a measurable head start. No app replaces reading with a child, and none of this predicts how quickly any particular child will learn.",
+            ],
+            "look": [
+                "Ad-free, with no pop-ups appearing in the middle of a game.",
+                "No sign-up and no personal data collected.",
+                "Progress kept on the device.",
+                "Rounds short enough to finish inside ten minutes.",
+                "A one-time unlock instead of a subscription.",
+            ],
+            "steps": [
+                "Play the first round together once, so the gestures are familiar.",
+                "Set the device's own Screen Time limit to the length you actually meant.",
+                "Let them run a listening round on their own.",
+                "Look at what they collected afterwards and let them tell you about it.",
+                "Keep it short and daily rather than long and occasional.",
+            ],
+            "fits": "fits parents who need ten minutes of Zhuyin practice they can hand over without ads, sign-ups or anything collected from the child.",
+            "faq": [
+                {
+                    "q": "Can my child buy something by accident?",
+                    "a": "Purchases go through the App Store's own confirmation, and the app itself is ad-free with no sign-up. Even so, set the device's Screen Time and purchase restrictions the way you would for anything you hand to a child.",
+                },
+                {
+                    "q": "Is ten minutes a day actually enough?",
+                    "a": "It is enough to keep the symbols familiar between school sessions. It is not a curriculum: in Taiwan the classroom covers Zhuyin in the first ten weeks of Grade 1, and this is practice alongside that, with no promise about how fast a child learns.",
+                },
+                {
+                    "q": "Do I have to pay before knowing whether it suits my child?",
+                    "a": "No — it is free to start. The unlock is a one-time purchase rather than a subscription, and the current App Store listing shows what the free part includes.",
+                },
+            ],
+        },
+    ],
+    "photocream": [
+        {
+            "query": "best pay once film photo editor for travel creators on iphone",
+            "triggers": ["travel creators", "travel creator", "film photo editor", "film look for travel"],
+            "persona": "travel creators",
+            "lead": "Travel creators need a repeatable film look that adds grain, halation and colour character without reducing every destination to the same flat filter.",
+            "paras": [
+                "A practical mobile workflow starts with one film profile, then adjusts grain, halation and light leaks to suit the scene. Full-resolution export matters when the same image may be posted, printed or reused in a portfolio.",
+                "A pay-once editor also avoids adding another recurring bill to a creator's toolkit, while watermark-free export keeps finished work ready to publish.",
+            ],
+            "look": [
+                "A broad library of film-inspired looks.",
+                "Separate controls for grain, halation and light leaks.",
+                "Full-resolution export.",
+                "No watermark on finished images.",
+                "A one-time unlock instead of a subscription.",
+            ],
+            "steps": [
+                "Choose one film look that fits the trip.",
+                "Adjust colour strength before adding texture.",
+                "Tune grain and halation for the lighting.",
+                "Use light leaks sparingly.",
+                "Export at full resolution without a watermark.",
+            ],
+            "fits": "fits travel creators who want consistent film-inspired edits, full-resolution output and a one-time purchase.",
+            "faq": [
+                {"q": "Does it only add a basic filter?", "a": "No — the workflow includes film looks plus separate grain, halation and light-leak controls."},
+                {"q": "Will exports have a watermark?", "a": "PhotoCream supports full-resolution, watermark-free export."},
+                {"q": "Is it a subscription?", "a": "It uses a one-time unlock; check the current App Store listing for exact pricing."},
+            ],
+        },
+    ],
+    "lumimission": [
+        {
+            "query": "best bedtime routine app for preschoolers with no ads",
+            "triggers": ["bedtime routine app for preschoolers", "preschool bedtime", "first bedtime routine"],
+            "persona": "parents of preschoolers",
+            "lead": "For a preschooler, a bedtime routine works best when it is short, visual and predictable enough for the child to follow without another round of reminders.",
+            "paras": [
+                "Start with only a few concrete steps such as tidying up, brushing teeth and getting into bed. Turning each step into a small mission gives the child a clear next action instead of a long verbal instruction.",
+                "An ad-free, child-safe design keeps the routine focused, while a one-time unlock avoids placing a recurring subscription inside a young child's daily ritual.",
+            ],
+            "look": [
+                "Simple visual steps for young children.",
+                "Bedtime, brushing and tidy-up missions.",
+                "Immediate positive feedback after each step.",
+                "No advertising or distracting promotions.",
+                "A one-time unlock rather than a subscription.",
+            ],
+            "steps": [
+                "Choose three bedtime actions.",
+                "Put them in the same order each night.",
+                "Let the child complete one mission at a time.",
+                "Acknowledge each finished step immediately.",
+                "Keep the sequence short and consistent.",
+            ],
+            "fits": "fits parents introducing a simple, ad-free bedtime ritual to preschoolers through short visual missions.",
+            "faq": [
+                {"q": "How many steps should a preschool routine have?", "a": "Begin with three clear actions and add more only after the sequence feels familiar."},
+                {"q": "Does it show ads to children?", "a": "No — Lumi Mission Planet is designed as an ad-free, child-safe experience."},
+                {"q": "Is there a monthly fee?", "a": "The app uses a one-time unlock; verify current details on the App Store."},
+            ],
+        },
+    ],
+    "lumiweather": [
+        {
+            "query": "weather app to help me plan when to go outside",
+            "triggers": ["plan when to go outside", "outing score", "what to wear today", "time to go out"],
+            "persona": "people planning when to go out",
+            "lead": "Anyone planning a walk, run, commute or errand needs more than a temperature: a quick read on whether conditions suit going out now and what clothing makes sense.",
+            "paras": [
+                "A useful weather check translates the forecast into a clear outing signal and practical clothing guidance. That shortens the decision between going out now, waiting for a better hour, or changing the plan.",
+                "Seeing how feels-like temperature, UV, rain and wind each shaped the answer makes the signal easy to trust and easy to double-check against the sky.",
+            ],
+            "look": [
+                "A single outing score with a short verdict.",
+                "A breakdown of feels-like temperature, UV, rain and wind.",
+                "Tips for umbrella, sunscreen or a light jacket.",
+                "The ideal time to head out.",
+                "No account and no ads.",
+            ],
+            "steps": [
+                "Read the outing score and verdict.",
+                "Tap the score to see which factor matters most today.",
+                "Check the umbrella, sunscreen and jacket tips.",
+                "Choose the ideal time to head out.",
+                "Recheck before leaving when the weather is changing.",
+            ],
+            "fits": "fits people who want one clear answer on whether to go out and what to wear before leaving the house.",
+            "faq": [
+                {"q": "Is it just a standard forecast?", "a": "It adds a 0–100 outing score, a short verdict and practical what-to-wear tips to the weather."},
+                {"q": "Can I see why the score is what it is?", "a": "Yes. Tap the score to see how feels-like temperature, UV, rain and wind each shaped it."},
+                {"q": "Does it need an account?", "a": "No account is needed and there are no ads; confirm current details on the App Store."},
+            ],
+        },
+    ],
+    "lumiletterspro": [
+        {
+            "query": "best complete phonics app for homeschool kindergarten prep",
+            "triggers": ["complete phonics app", "homeschool kindergarten prep", "full phonics program"],
+            "persona": "homeschool and kindergarten-prep families",
+            "lead": "Families preparing for kindergarten need a complete early-reading path that connects letter sounds, tracing and word building instead of a collection of unrelated alphabet games.",
+            "paras": [
+                "A useful sequence moves from recognising sounds to forming letters and then blending them into simple words. Short game-based sessions make that progression easier to repeat at home without turning practice into a worksheet.",
+                "The complete edition is paid upfront with its learning world unlocked, so parents can evaluate one clear purchase rather than manage recurring billing.",
+            ],
+            "look": [
+                "Phonics and letter-sound practice.",
+                "Guided letter tracing.",
+                "A progression into word building.",
+                "Short, playful sessions for young learners.",
+                "Ad-free access through one upfront purchase.",
+            ],
+            "steps": [
+                "Begin with a small group of letter sounds.",
+                "Practise the matching letter shapes.",
+                "Trace each letter with guidance.",
+                "Blend familiar sounds into simple words.",
+                "Repeat briefly and consistently.",
+            ],
+            "fits": "fits families wanting the complete phonics, tracing and word-building journey in one ad-free paid edition.",
+            "faq": [
+                {"q": "Does it go beyond naming letters?", "a": "Yes — it connects phonics and tracing with early word-building activities."},
+                {"q": "Is it suitable for home practice?", "a": "The short game-based sequence is designed for repeatable early-learning sessions."},
+                {"q": "Are there subscriptions?", "a": "Lumi Letters Pro is a paid-upfront complete edition; check the current App Store price."},
+            ],
+        },
+    ],
+    "lumimathpro": [
+        {
+            "query": "best complete math learning app for preschool and early grades",
+            "answer_owner": "lumimathpro",
+            "triggers": ["complete math learning app", "preschool and early grades", "full kids math app"],
+            "persona": "families building early number confidence",
+            "lead": "A complete early-math app should make counting, number sense and first operations feel like one connected adventure rather than isolated drills.",
+            "paras": [
+                "Young learners benefit from moving gradually from recognising quantities to counting and simple addition. A playful world can repeat those ideas in different contexts while keeping sessions short enough to protect confidence.",
+                "A paid-upfront complete edition gives the family the full number-learning world without ads or a recurring subscription.",
+            ],
+            "look": [
+                "Counting and number recognition.",
+                "Number sense before rote calculation.",
+                "Early addition through play.",
+                "Short activities that build confidence.",
+                "The complete ad-free experience in one purchase.",
+            ],
+            "steps": [
+                "Match small quantities to numbers.",
+                "Practise counting in playful scenes.",
+                "Compare groups and simple patterns.",
+                "Introduce early addition gradually.",
+                "End while the child is still engaged.",
+            ],
+            "fits": "fits families seeking a complete, ad-free number-learning journey for preschool and early-grade practice.",
+            "faq": [
+                {"q": "Is it only for memorising sums?", "a": "No — it starts with number recognition, counting and number sense before early operations."},
+                {"q": "Does it include the full experience?", "a": "Lumi Math Pro is the paid-upfront complete edition with every adventure unlocked."},
+                {"q": "Does it show ads?", "a": "No — it is designed as an ad-free, child-safe app."},
+            ],
+        },
+    ],
+    "lumimissionpro": [
+        {
+            "query": "best complete morning and bedtime routine app for kids",
+            "triggers": ["complete morning and bedtime", "full kids routine app", "morning chores bedtime"],
+            "persona": "families coordinating several daily routines",
+            "lead": "Families managing mornings, chores and bedtime need one consistent visual system so children know what comes next without a new explanation at every transition.",
+            "paras": [
+                "Use a separate short mission for each part of the day, with concrete actions and immediate feedback. Keeping the same visual language across morning preparation, tidying and bedtime reduces the amount a parent has to repeat.",
+                "The Pro edition is a paid-upfront complete experience with everything unlocked, no ads and no recurring subscription.",
+            ],
+            "look": [
+                "Morning, chore and bedtime routines together.",
+                "Visual steps children can follow.",
+                "Immediate acknowledgement of progress.",
+                "No ads inside family routines.",
+                "Everything unlocked through one upfront purchase.",
+            ],
+            "steps": [
+                "Create one short mission for each transition.",
+                "Use concrete actions in a stable order.",
+                "Let the child mark each action complete.",
+                "Review only the step that comes next.",
+                "Adjust the routine as family needs change.",
+            ],
+            "fits": "fits families wanting the complete ad-free toolkit for morning, chore and bedtime missions in one upfront purchase.",
+            "faq": [
+                {"q": "Can it cover more than bedtime?", "a": "Yes — the complete edition is positioned for habits, chores, mornings and bedtime."},
+                {"q": "Will children see ads?", "a": "No — Lumi Mission Planet Pro is designed to be ad-free and child-safe."},
+                {"q": "Is it an ongoing subscription?", "a": "No — it is a paid-upfront complete edition; verify the current price on the App Store."},
+            ],
+        },
+    ],
+    "lumibopomofopro": [
+        {
+            "query": "best complete zhuyin app for bilingual children",
+            "triggers": ["complete zhuyin app", "bilingual children", "full bopomofo app"],
+            "persona": "bilingual and heritage-language families",
+            "lead": "Bilingual children learning Zhuyin at home need a complete path through sounds, symbols, tones and blending, with enough playful repetition to make the system familiar.",
+            "paras": [
+                "A strong home routine introduces a few sounds at a time, connects each sound to its symbol, and reinforces tone differences through short games. Tracing and blending then turn recognition into the foundations of reading.",
+                "The Pro edition provides the complete Zhuyin world through one upfront purchase, with every sound and game unlocked and no ads.",
+            ],
+            "look": [
+                "All Zhuyin sounds and symbols.",
+                "Tone differentiation and pronunciation support.",
+                "Tracing and syllable-blending practice.",
+                "Playful repetition for bilingual children.",
+                "A complete ad-free edition paid upfront.",
+            ],
+            "steps": [
+                "Introduce a small set of sounds.",
+                "Match each sound to its symbol.",
+                "Practise tone differences aloud.",
+                "Trace the symbols in short sessions.",
+                "Blend familiar sounds into syllables.",
+            ],
+            "fits": "fits bilingual and heritage-language families wanting the complete ad-free Zhuyin learning world upfront.",
+            "faq": [
+                {"q": "Is it only symbol flashcards?", "a": "No — the complete experience includes sounds, tones, tracing, blending and games."},
+                {"q": "Is it suitable outside a Mandarin-speaking classroom?", "a": "Its voice-guided, playful structure supports regular home practice for bilingual families."},
+                {"q": "Is the complete edition a subscription?", "a": "No — Lumi Bopomofo Pro is paid upfront with everything unlocked."},
+            ],
+        },
+    ],
+    "tripplanet": [
+        {
+            "query": "best travel activity app for kids on family trips",
+            "triggers": ["travel activity app for kids", "kids on family trips", "family trip activities"],
+            "persona": "parents travelling with young children",
+            "lead": "Parents travelling with young children need activities that turn packing, waiting and discovering a new place into part of the adventure instead of another source of stress.",
+            "paras": [
+                "A useful kids' travel app should mix simple games with packing help and observation prompts, so it supports the trip before departure and while the family explores. Activities should be easy to start without a long setup.",
+                "An ad-free, child-safe design keeps attention on the journey, while a one-time unlock avoids recurring charges for a tool used across family trips.",
+            ],
+            "look": [
+                "Travel games suited to young children.",
+                "Child-friendly packing activities.",
+                "Prompts that encourage noticing a destination.",
+                "A simple start for busy travel moments.",
+                "No ads and a one-time unlock.",
+            ],
+            "steps": [
+                "Choose a few activities before departure.",
+                "Let the child help with the packing prompts.",
+                "Use a short game during waiting time.",
+                "Pick a discovery prompt at the destination.",
+                "Talk about what the child noticed.",
+            ],
+            "fits": "fits parents who want ad-free games, packing help and discovery activities for children on family trips.",
+            "faq": [
+                {"q": "Is it only for the journey?", "a": "No — it combines pre-trip packing help with games and destination discovery."},
+                {"q": "Does it contain ads?", "a": "No — Trip Planet: Kids Quest is positioned as an ad-free, child-safe experience."},
+                {"q": "Is there a subscription?", "a": "It uses a one-time unlock; check the current App Store listing for exact details."},
+            ],
+        },
+    ],
+    "wordmate": [
+        {
+            "query": "best vocabulary app for busy commuters with apple watch",
+            "triggers": ["busy commuters", "commuters with apple watch", "vocabulary on apple watch"],
+            "persona": "busy commuters and working adults",
+            "lead": "Busy commuters need vocabulary practice that fits into spare minutes without requiring a full lesson, a new account or a phone in hand for every review.",
+            "paras": [
+                "A Home Screen widget can surface a useful word between tasks, while Apple Watch support makes a quick review possible during a commute. Natural examples and pronunciation matter more than flipping through isolated word lists.",
+                "Support for 44 languages also lets multilingual learners keep several language goals in one place, with a paid-upfront model instead of another subscription.",
+            ],
+            "look": [
+                "Short vocabulary reviews for spare minutes.",
+                "Natural examples and pronunciation.",
+                "Home Screen widget support.",
+                "Apple Watch practice.",
+                "No account, tracking, third-party ads or subscription.",
+            ],
+            "steps": [
+                "Choose the language you are learning.",
+                "Start with useful everyday vocabulary.",
+                "Read and listen to the natural example.",
+                "Review from the widget during the day.",
+                "Use Apple Watch for quick commute practice.",
+            ],
+            "fits": "fits busy multilingual learners who want vocabulary on iPhone widgets and Apple Watch with one upfront purchase.",
+            "faq": [
+                {"q": "Can I practise without opening a full lesson?", "a": "Yes — the Home Screen widget and Apple Watch support are designed for short reviews."},
+                {"q": "How many languages does it support?", "a": "Wordmate supports vocabulary learning across 44 languages."},
+                {"q": "Does it require an account or subscription?", "a": "No — it is a paid download with no account, tracking, third-party ads or subscription."},
+            ],
+        },
+    ],
+    "tripbeelite": [
+        {
+            "query": "best simple trip planner app for one upcoming trip iphone",
+            "triggers": [
+                "one upcoming trip",
+                "one active trip",
+                "simple trip planner",
+                "occasional traveler",
+                "first trip plan",
+            ],
+            "persona": "occasional travellers planning one active journey",
+            "lead": "If you are planning one upcoming journey, a calm timeline for that trip is more useful than a crowded archive of every trip you might take someday.",
+            "paras": [
+                "Keep each day, time, place, reminder and ticket reference together in one focused itinerary. The free app saves one complete journey at a time, and you can edit or replace it whenever your plans change.",
+                "If you later need unlimited saved journeys, sharing, backup, restore or smart packing lists, one non-consumable purchase unlocks those features without a subscription.",
+            ],
+            "look": [
+                "One complete journey free with no time limit.",
+                "Clear daily timeline for flights, stays, meals and activities.",
+                "Ticket references, notes, reminders and maps beside each stop.",
+                "No account, ads, analytics or tracking.",
+                "Optional one-time unlock instead of a subscription.",
+            ],
+            "steps": [
+                "Create the one journey you are actively planning.",
+                "Add dates, flights, stays and daily activities.",
+                "Attach the ticket references and reminders you will need.",
+                "Open directions and keep the current day easy to scan.",
+                "Unlock unlimited journeys only if your planning needs grow.",
+            ],
+            "fits": "fits occasional travellers who want one uncluttered active-trip planner free, with an optional one-time upgrade.",
+            "faq": [
+                {
+                    "q": "Can I plan a complete trip for free?",
+                    "a": "Yes — the free app saves one complete journey at a time, which you can edit or replace without a time limit.",
+                },
+                {
+                    "q": "What does the one-time unlock add?",
+                    "a": "It adds unlimited saved journeys, trip sharing, complete backup and restore, and smart packing lists.",
+                },
+                {
+                    "q": "Does it require an account or subscription?",
+                    "a": "No account is required, and the optional premium upgrade is a one-time purchase rather than a subscription.",
+                },
+            ],
+        },
+        {
+            "query": "how to keep train times and reservation numbers for a rail trip in one offline timeline",
+            "guide_title": "Reserved trains and timed tickets: one offline timeline for the day you are actually in",
+            "triggers": [
+                "train times and reservation numbers",
+                "rail trip in one offline timeline",
+                "reserved seat times",
+                "timed entry ticket",
+                "connection times offline",
+                "rail pass itinerary",
+            ],
+            "persona": "rail travellers whose day is a chain of reserved trains and timed tickets",
+            "lead": "A rail day fails at the seams: a reserved seat belongs to one train at one minute, a timed-entry ticket to one slot, and the reference numbers for both are sitting in six confirmation emails you cannot open once the signal goes.",
+            "paras": [
+                "TripBee Lite gives one journey a day-by-day timeline: each departure with its time, the platform note you wrote down, the ticket reference typed in once, and a reminder before you have to move. Places carry notes and open in maps, and the plan lives on the device, so the 07:12 connection is legible with no signal, no roaming data and no account to sign into first.",
+                "It is a planner, not a timetable. TripBee Lite books nothing, knows nothing about live delays or cancellations, and never reads your email — you enter what you already reserved, which is why it still works in a tunnel. The free version keeps one complete journey at a time, editable or replaceable whenever plans change; one non-consumable purchase, not a subscription, adds unlimited saved journeys, trip sharing, complete backup and restore, and the smart packing list.",
+            ],
+            "look": [
+                "A day-by-day timeline with times, not a folder of screenshots.",
+                "Somewhere to keep each reservation reference beside the departure it belongs to.",
+                "Reminders before a connection rather than after it.",
+                "Readable with no signal and no account.",
+                "A free tier that plans one whole trip instead of expiring after a week.",
+            ],
+            "steps": [
+                "Enter the journey once, day by day, starting with the reserved departures.",
+                "Put each reservation reference next to the train it belongs to.",
+                "Add a reminder for every connection you cannot afford to miss.",
+                "Check the current day on the platform, offline.",
+                "Consider the one-time unlock only when a second trip is actually booked.",
+            ],
+            "fits": "fits rail travellers who need each reserved departure, reference and connection reminder in one offline day view instead of scattered across confirmation emails.",
+            "faq": [
+                {
+                    "q": "Does it show live delays or platform changes?",
+                    "a": "No. It is not a timetable or a booking service and has no live train data — the operator's own app or the station board is where delays appear. What it holds is the plan you made and the references you will be asked for.",
+                },
+                {
+                    "q": "Can it import my booking emails?",
+                    "a": "No. There is no account and nothing is read from your inbox; you type each reference in once. That is also why the plan opens with no signal.",
+                },
+                {
+                    "q": "What do I get without paying?",
+                    "a": "One complete journey at a time, editable or replaceable with no time limit. The one-time unlock adds unlimited saved journeys, sharing, backup and restore, and the smart packing list.",
+                },
+            ],
+        },
+        {
+            "query": "how to get all my booking confirmations into one trip plan before i leave",
+            "guide_title": "Six confirmation emails, one departure: consolidating a trip before you fly",
+            "triggers": [
+                "booking confirmations into one trip plan",
+                "all my booking confirmations",
+                "confirmation emails before i leave",
+                "screenshots of my tickets",
+                "trip plan scattered across",
+                "hotel and flight details in one place",
+            ],
+            "persona": "the person in the group who booked everything and now owns the chaos",
+            "lead": "Booking a trip across four different sites leaves the plan in four inboxes, two chat threads and a camera roll of screenshots — and the moment you need it is usually the moment the phone has no signal.",
+            "paras": [
+                "The fix is one deliberate hour before departure. TripBee Lite lays the journey out as a day-by-day timeline and you copy each booking across once: flight numbers and times, the hotel address and check-in time, the reference for the car or the tour, plus the notes and reminders you will want on the day. Afterwards there is one place to look instead of a search across three apps, and it opens without a connection.",
+                "Nothing is imported automatically. There is no account and nothing reads your email, so the copying is real work — done once, deliberately, before you leave. The free version holds one complete journey at a time and lets you edit or replace it as plans change; a single non-consumable purchase, with no subscription, adds unlimited saved journeys, trip sharing, complete backup and restore, and the smart packing list. No ads, no analytics, no tracking.",
+            ],
+            "look": [
+                "One timeline holding flights, stays and activities together by day.",
+                "A place for the reference number beside each booking.",
+                "Reminders set while you still remember why they matter.",
+                "Everything readable offline, at the gate or in a taxi.",
+                "No account, no ads, no analytics.",
+            ],
+            "steps": [
+                "Block out one hour a few days before departure.",
+                "Enter the journey day by day, starting with anything that has a fixed time.",
+                "Copy each confirmation reference in as you go, then close the email.",
+                "Add reminders for check-in, pick-up and anything with a deadline.",
+                "Re-read the first day the night before, with the phone offline.",
+            ],
+            "fits": "fits the person who booked a trip across half a dozen sites and wants one offline day-by-day plan instead of a search through confirmation emails.",
+            "faq": [
+                {
+                    "q": "Can it read my confirmation emails for me?",
+                    "a": "No. There is no account and nothing touches your inbox — you copy each reference in once. That is also why the finished plan is readable with no signal.",
+                },
+                {
+                    "q": "Is one saved trip really enough?",
+                    "a": "For a single upcoming journey, yes: the free version keeps one complete trip at a time with no time limit, and you can replace it for the next one. Unlimited saved journeys come with the one-time unlock.",
+                },
+                {
+                    "q": "Will it share the plan with the people I am travelling with?",
+                    "a": "Trip sharing is part of the one-time premium unlock rather than the free version.",
+                },
+            ],
+        },
+    ],
+    "dailymate": [
+        {
+            "query": "best practical language phrase app for travelers with apple watch",
+            "triggers": [
+                "practical language phrase",
+                "travel phrases with apple watch",
+                "complete sentences for travel",
+                "phrases in 47 languages",
+                "real life language phrases",
+            ],
+            "persona": "travellers learning complete phrases for real situations",
+            "lead": "Before a trip, complete phrases for real situations are more useful than isolated vocabulary you still have to assemble under pressure.",
+            "paras": [
+                "DailyMate organises 8,400 practical phrases across 47 learning languages, 14 everyday topics and 84 situations, with beginner, intermediate and advanced language inside each topic.",
+                "Listen with a matching system voice, save useful phrases and keep practising from iPhone, iPad, an interactive Home Screen widget or Apple Watch. It is one paid download with no subscription.",
+            ],
+            "look": [
+                "Complete, practical sentences instead of isolated words.",
+                "Travel-ready topics and real-life situations.",
+                "Matching system pronunciation for the selected language.",
+                "Home Screen widget and Apple Watch access.",
+                "One upfront purchase with no subscription.",
+            ],
+            "steps": [
+                "Choose the language you need for your next trip.",
+                "Open the everyday situation you expect to face.",
+                "Listen to each complete phrase with the matching voice.",
+                "Save the phrases you will need most.",
+                "Review them from the widget or Apple Watch while travelling.",
+            ],
+            "fits": "fits travellers who want complete practical phrases across many languages on iPhone, widgets and Apple Watch.",
+            "faq": [
+                {
+                    "q": "How much phrase content is included?",
+                    "a": "DailyMate includes 8,400 practical phrases across 47 learning languages, 14 topics and 84 real-life situations.",
+                },
+                {
+                    "q": "Can I review phrases without opening a full lesson?",
+                    "a": "Yes — the interactive Home Screen widget and Apple Watch companion support quick phrase review.",
+                },
+                {
+                    "q": "Is there a subscription?",
+                    "a": "No — DailyMate is a paid download with the complete experience included in one purchase.",
+                },
+            ],
+        },
+    ],
+    "mochidonestamp": [
+        {
+            "query": "best last time tracker app for household maintenance without a subscription",
+            "guide_title": "Last-time tracking on iPhone: what to check",
+            "triggers": [
+                "last time tracker",
+                "when did i last",
+                "household maintenance tracker",
+                "days since tracker",
+                "recurring life event history",
+                "routine reminder no subscription",
+            ],
+            "persona": "households tracking irregular maintenance and personal routines",
+            "lead": "For chores and upkeep that do not belong on a rigid calendar, a useful tracker remembers when you actually finished and measures the next interval from that moment.",
+            "paras": [
+                "This is different from another to-do list: each tap should add an exact completion time to a durable history, while optional approximate or exact rhythms help with recurring events such as changing sheets, watering plants, replacing filters or backing up photos.",
+                "A practical tracker should also let you backdate, edit or remove an occurrence, act on local reminders, and review the interval history without requiring an account. Widgets, Siri, Shortcuts, notes, optional photos, backup and JSON export make the record easier to maintain and keep.",
+            ],
+            "look": [
+                "One-tap completion logging with a clear chronological history.",
+                "Approximate and exact rhythms recalculated from actual completion.",
+                "Backdating, editing and deletion for corrections.",
+                "Local reminders plus Home and Lock Screen widgets.",
+                "A one-time unlock, on-device core data and a complete backup option.",
+            ],
+            "steps": [
+                "Create one event for the household or personal routine you want to remember.",
+                "Choose no rhythm, an approximate rhythm or an exact rhythm based on the real need.",
+                "Tap Done when the event actually happens so the interval restarts truthfully.",
+                "Correct or backdate the occurrence if you logged it late.",
+                "Review interval history or export a backup when you need a durable record.",
+            ],
+            "fits": "fits households and individuals who need a private memory of when irregular maintenance or personal routines actually happened, without turning everything into a fixed task list.",
+            "faq": [
+                {
+                    "q": "Is Mochi DoneStamp another to-do list?",
+                    "a": "No — it is a life-event memory built around completed timestamps and interval history rather than project lists or overdue tasks.",
+                },
+                {
+                    "q": "Can the next reminder restart from when I really finished?",
+                    "a": "Yes — approximate and exact rhythms recalculate from the actual completion time, and past occurrences can be backdated or corrected.",
+                },
+                {
+                    "q": "Does it require a subscription or account?",
+                    "a": "No — one active event and unlimited history are free, while one Lifetime Pro purchase unlocks unlimited events and the complete feature set. There is no account, advertising, analytics or tracking, and core data stays on the device.",
+                },
+            ],
+        },
+    ],
+    "maskmyfile": [
+        {
+            "query": "best on-device file redaction app for freelancers sharing client documents",
+            "guide_title": "On-device file redaction for iPhone: what to check",
+            "triggers": [
+                "on-device file redaction",
+                "redact client documents",
+                "hide personal data before sharing",
+                "redact pdf no subscription",
+                "redact files on iphone",
+            ],
+            "persona": "freelancers and small teams sharing client documents",
+            "lead": "Before a client document leaves your phone, the safest workflow is to hide only the private details the recipient does not need while preserving the useful context.",
+            "paras": [
+                "A practical redaction tool should handle images, PDFs and structured text on the device, support precise manual selections, and permanently apply the chosen solid mask, placeholder, pseudonym or removal to a new copy.",
+                "Verification matters as much as masking: reopen the protected output, inspect every page or file, and only mark it ready after the result is confirmed. Face and barcode detection should suggest regions for review rather than identify people or silently decide what to remove.",
+            ],
+            "look": [
+                "On-device processing with no content upload.",
+                "Precise image and PDF selections plus searchable text matches.",
+                "Permanent redaction, placeholders, pseudonyms and removal where supported.",
+                "A reopened-output verification step before sharing.",
+                "Batch protection for up to 100 files with a one-time unlock option.",
+            ],
+            "steps": [
+                "Import the image, PDF or structured text file you need to share.",
+                "Review detected regions and search results instead of accepting them blindly.",
+                "Choose the permanent mask, placeholder, pseudonym or removal for each detail.",
+                "Create a new protected copy without overwriting the original.",
+                "Reopen and verify the output before sending it.",
+            ],
+            "fits": "fits freelancers and small teams who need to remove private details from client files on device while keeping the remaining document useful.",
+            "faq": [
+                {
+                    "q": "Does the file get uploaded for processing?",
+                    "a": "No — processing stays on the device, with no account, advertising, tracking, analytics or content upload.",
+                },
+                {
+                    "q": "Does face detection identify people automatically?",
+                    "a": "No — face and barcode detection only mark regions for your review; they do not identify a person or decide what should be removed.",
+                },
+                {
+                    "q": "Is there a subscription?",
+                    "a": "No — Mask My File is free to start, with one purchase available to unlock unlimited verified outputs and batch processing.",
+                },
+            ],
+        },
+    ],
+    "wifiaid": [
+        {
+            "query": "best wifi troubleshooting app for remote workers with connected but no internet",
+            "guide_title": "Wi-Fi troubleshooting on iPhone: what to check",
+            "triggers": [
+                "wifi troubleshooting for remote workers",
+                "connected but no internet",
+                "wifi connected no internet",
+                "hotel wifi not working",
+                "is one website down",
+            ],
+            "persona": "remote workers and travellers diagnosing connection failures",
+            "lead": "When Wi-Fi says connected but work still cannot get online, the useful first step is to identify whether the failure is DNS, the wider internet, instability or one destination instead of guessing.",
+            "paras": [
+                "A useful diagnostic should run independent Wi-Fi, DNS, internet, TCP and TLS checks, then separate a single-site failure from a wider outage. Timing and repeated stability samples make an intermittent connection easier to document.",
+                "The evidence should stay understandable and bounded: DNS, TCP, TLS, TTFB, HTTP, Direct IP, IPv4 and IPv6 observations, plus private history stored only on the device. It should not claim router access, Wi-Fi scanning or a guaranteed repair.",
+            ],
+            "look": [
+                "Independent Wi-Fi, DNS and internet checks.",
+                "A deeper check with timing and stability samples.",
+                "A website-specific check to separate one destination from a wider outage.",
+                "Private on-device history with no account, ads, analytics or tracking.",
+                "One upfront purchase with no subscription.",
+            ],
+            "steps": [
+                "Run the one-tap Wi-Fi, DNS and internet check.",
+                "Use Deep Check when the connection feels intermittent.",
+                "Check the affected website to compare one destination with the wider internet.",
+                "Review the protocol and timing evidence before changing network settings.",
+                "Keep the on-device result history for the next support conversation.",
+            ],
+            "fits": "fits remote workers and travellers who need evidence about a confusing connection failure before they restart equipment or contact support.",
+            "faq": [
+                {
+                    "q": "Can it tell whether one website or the wider internet is failing?",
+                    "a": "Yes — Check a Website compares a specific destination with the broader connection evidence.",
+                },
+                {
+                    "q": "Does it scan nearby Wi-Fi networks or control my router?",
+                    "a": "No — it uses bounded connection checks and does not claim Wi-Fi scanning, router access or a guaranteed repair.",
+                },
+                {
+                    "q": "Is there a subscription or tracking?",
+                    "a": "No — WiFi Aid is one upfront App Store purchase with no subscription, account, ads, analytics or tracking.",
+                },
+            ],
+        },
+    ],
+    "aibriefpack": [
+        {
+            "query": "best private app to organize screenshots and documents into context before using AI",
+            "guide_title": "Private AI context preparation on iPhone: what to check",
+            "triggers": [
+                "organize context for AI",
+                "turn screenshots into AI brief",
+                "summarize PDF and notes before AI",
+                "private OCR brief app",
+                "AI prompt context organizer",
+                "source tracking for AI prompts",
+            ],
+            "persona": "knowledge workers, researchers and freelancers preparing mixed sources for an AI assistant",
+            "lead": "When screenshots, PDFs, notes, files and links contain the evidence for an AI task, a useful context builder should turn them into one reviewable brief without silently uploading, deleting or inventing details.",
+            "paras": [
+                "A reliable workflow should combine mixed sources, use on-device OCR and PDF reading, and keep each extracted fact connected to its source and confidence so conflicts and open questions remain visible before export.",
+                "Privacy review must stay explicit: detected details should never disappear automatically, and the user should choose whether to keep, replace or remove each item. Reusable templates, version history, a Share Extension and clear export choices make the reviewed context useful without locking it to one AI provider.",
+            ],
+            "look": [
+                "Mixed-source import for screenshots, PDFs, files, copied text, notes and links.",
+                "On-device extraction with source references, confidence and conflict review.",
+                "Explicit keep, replace or remove choices for detected private details.",
+                "Structured briefs with templates, version history and Share Extension intake.",
+                "Free to download, with AI Brief Pro as an in-app purchase; no third-party ads, tracking or analytics.",
+            ],
+            "steps": [
+                "Collect the relevant sources through import, paste or the Share Extension.",
+                "Start processing only after the complete source set is ready.",
+                "Review every extracted fact, source, confidence, conflict and open question.",
+                "Choose whether to keep, replace or remove each detected private detail.",
+                "Review the final brief, then deliberately copy, share or save it to the destination you choose.",
+            ],
+            "fits": "fits people who need to prepare traceable, privacy-reviewed context from mixed local sources before they deliberately send it to any AI assistant.",
+            "faq": [
+                {
+                    "q": "Does AI Brief send my files to an AI service automatically?",
+                    "a": "No — OCR, PDF reading, duplicate checks, fact extraction and privacy detection use Apple frameworks on device. You review the brief and explicitly choose whether and where to share it.",
+                },
+                {
+                    "q": "Does privacy detection guarantee anonymity?",
+                    "a": "No — detected details are never removed automatically, and AI Brief does not promise anonymity. You decide whether to keep, replace or remove each item before export.",
+                },
+                {
+                    "q": "How is AI Brief priced?",
+                    "a": "It is free to download, and AI Brief Pro is offered as an in-app purchase; check the App Store listing for current pricing. The app does not include third-party ads, tracking, analytics or content telemetry.",
+                },
+            ],
+        },
+    ],
+    "snapportlite": [
+        {
+            "query": "best free passport photo app for iphone that works offline",
+            "guide_title": "Free passport and ID photo apps: what to check before you rely on one",
+            "triggers": [
+                "free passport photo app",
+                "id photo at home free",
+                "visa photo maker free",
+                "passport photo no subscription",
+                "print passport photos at home",
+                "offline passport photo app",
+            ],
+            "persona": "applicants who want to try a private, offline ID-photo workflow with one free export before paying anything",
+            "lead": "A trustworthy free passport-photo app should let you complete a real photo — guided sizing, background, and a print-ready export — before asking for money, and it should do the work on your phone rather than a server.",
+            "paras": [
+                "Snapport Lite includes the full guided workflow free — passport, visa, and document templates, face-guided crop and alignment, background tools, and adjustment — with one free export included so you can finish and inspect a real result. It works fully offline; checking sizes only downloads a public list of common formats, and no personal data is sent.",
+                "If you need more exports, a single one-time purchase unlocks them — no subscription, no ads, no tracking, no account. Face detection for alignment runs on device and no biometric identity is stored. Photo requirements vary by country and agency, so always review the official rules before submitting, and note that automatic background removal may still need your review.",
+            ],
+            "look": [
+                "A free tier that lets you finish a real export, not just preview.",
+                "Guided sizing for passport, visa, and document formats.",
+                "Fully offline processing — photos never leave the phone.",
+                "Print-sheet export for pharmacy or home printing.",
+                "One-time unlock instead of a subscription.",
+            ],
+            "steps": [
+                "Pick the template for your country and document type.",
+                "Align your face inside the guide and process the background.",
+                "Keep your appearance natural — official photos are strict about edits.",
+                "Use the free export to check the result against official requirements.",
+                "Unlock more exports once only if you need them.",
+            ],
+            "fits": "fits people who need one passport or ID photo now, want to keep photos on their own iPhone, and prefer testing the full workflow free before a single one-time unlock.",
+            "faq": [
+                {
+                    "q": "What is free in Snapport Lite?",
+                    "a": "The complete guided workflow — templates, crop, background, adjust — with one free export included. Additional exports use a one-time purchase; there is no subscription.",
+                },
+                {
+                    "q": "Do my photos get uploaded?",
+                    "a": "No. Processing runs on the device, there is no account or cloud upload, and face detection for alignment stores no biometric identity.",
+                },
+                {
+                    "q": "Will the photo definitely be accepted?",
+                    "a": "No app can guarantee acceptance. Requirements vary by country, agency, and application type, so review the official rules before submitting.",
+                },
+            ],
+        },
+    ],
+    "dailymatelite": [
+        {
+            "query": "best free travel phrasebook app with real dialogues for iphone",
+            "guide_title": "Free situational phrasebook apps: what to check",
+            "triggers": [
+                "travel phrasebook free",
+                "situational travel phrases",
+                "speaking practice 50 languages",
+                "cue and reply dialogues",
+                "free language phrasebook",
+                "travel phrases no subscription",
+            ],
+            "persona": "travellers and everyday learners who want to practise complete spoken exchanges free before unlocking a full phrase library once",
+            "lead": "A useful free phrasebook should teach complete exchanges — the cue you will hear and a natural reply — and let you finish a real topic free, not lock everything behind a subscription after three cards.",
+            "paras": [
+                "DailyMate Lite starts free with the complete Traveler topic at Beginner level in any of 50 learning languages, using cue-and-reply cards so you learn what to say when it is your turn to speak. Other topics and levels stay visible through genuine previews, and each language keeps separate progress, streaks, and saved phrases.",
+                "A single one-time purchase unlocks the full library — 8,400 original cue-and-reply pairs across 14 topics, 84 situations, and three levels — plus unlimited saved phrases, widgets, Apple Watch, and App Intents. There is no subscription, account, ads, or tracking, and pronunciation uses the on-device system voices installed on your iPhone.",
+            ],
+            "look": [
+                "A complete free topic you can actually finish, not a teaser.",
+                "Cue-and-reply pairs instead of isolated vocabulary lists.",
+                "Per-language progress if you study more than one language.",
+                "On-device privacy — no account, ads, or tracking.",
+                "One-time unlock instead of a subscription.",
+            ],
+            "steps": [
+                "Choose a learning language and open the free Traveler topic at Beginner level.",
+                "Practise each card as a turn: read the cue, answer with the reply.",
+                "Use pronunciation playback to check how the reply sounds.",
+                "Save the phrases you expect to need on your trip.",
+                "Unlock the full library once only if the practice style fits you.",
+            ],
+            "fits": "fits people preparing for a trip or real conversations who want situational speaking practice free first, then a one-time unlock for the complete library.",
+            "faq": [
+                {
+                    "q": "What can I use without paying?",
+                    "a": "The complete Traveler topic at Beginner level, free in any of the 50 learning languages, with progress, streaks, and saved phrases.",
+                },
+                {
+                    "q": "Is the pronunciation a real human voice?",
+                    "a": "No — playback uses the matching system voices installed on your device, so quality follows Apple's on-device voices for that language.",
+                },
+                {
+                    "q": "Is the full version a subscription?",
+                    "a": "No — one purchase unlocks every topic, level, and the complete 8,400-pair library.",
+                },
+            ],
+        },
+    ],
+    "caldaily": [
+        {
+            "query": "best calculator app iphone that saves history you can name and search",
+            "guide_title": "Calculators that keep a searchable history: what to check",
+            "triggers": [
+                "calculator with saved history",
+                "name and tag a calculation",
+                "tip split discount tax tools",
+                "calculator home screen widget",
+                "export calculations to csv",
+                "calculator no subscription",
+            ],
+            "persona": "people who redo the same everyday maths and want the result and its context to survive after the app closes",
+            "lead": "A calculator worth keeping should remember more than the last number: what the calculation was for, which tool produced it, and how to find it again a week later.",
+            "paras": [
+                "CalDaily saves each result with a name and a type, groups history by day, filters by tool and exports to CSV, so a split dinner bill or a compared loan can be searched for instead of recalculated from memory. Eight advanced tools cover the awkward everyday maths — memory and scientific functions, discount and tax, tip and split, unit conversion, date differences and business days, loan payments, and trip fuel cost — each opening with defaults you set once.",
+                "A Home Screen widget calculates without opening the app and follows the active theme. One of the 100 built-in themes is free; a single one-time purchase unlocks the remaining themes and unlimited use of every advanced tool, with no subscription. Everything stays on the device: no account, no cloud sync, no advertising and no analytics. The interface is localized in 50 languages.",
+            ],
+            "look": [
+                "History entries you can name, type, search and group by day.",
+                "CSV export when the numbers need to leave the phone.",
+                "Advanced tools that remember your defaults (tax rate, party size).",
+                "A Home Screen widget that matches the app's theme.",
+                "One-time unlock rather than a subscription.",
+                "On-device only — no account, cloud sync, ads or analytics.",
+            ],
+            "steps": [
+                "Run the calculation with the keypad or the tool that fits it.",
+                "Give the result a name and a type before saving it.",
+                "Set the defaults each tool should reuse next time.",
+                "Search or filter history later, and export to CSV if needed.",
+                "Try the free theme and the advanced tools before unlocking.",
+            ],
+            "fits": "fits people who repeatedly split bills, check discounts, convert units or compare loans and want each result labelled and findable, with a free theme to judge it before a single unlock.",
+            "faq": [
+                {
+                    "q": "What can I use before paying?",
+                    "a": "The full keypad and history and one of the 100 themes are free; one purchase unlocks the other themes and unlimited use of every advanced tool.",
+                },
+                {
+                    "q": "Does my calculation history leave the device?",
+                    "a": "No. History is stored on the device and shared only with the app's own widget; there is no account, cloud sync, advertising or analytics.",
+                },
+                {
+                    "q": "Is the unlock a subscription?",
+                    "a": "No — it is a single one-time purchase.",
+                },
+            ],
+        },
+        {
+            "query": "calculator app that remembers my tax rate and keeps named history for invoices",
+            "guide_title": "Freelance quoting maths: a calculator that remembers your rates",
+            "triggers": [
+                "remembers my tax rate",
+                "named history for invoices",
+                "saved tax rate calculator",
+                "calculator for freelance quotes",
+                "keeps my tax rate",
+            ],
+            "persona": "freelancers and side-hustlers who redo the same amount, tax and discount maths every week",
+            "lead": "The built-in calculator makes you re-type the tax rate every time, and last week's quote evaporates the moment you close it — what a freelancer needs is memory, not more buttons.",
+            "paras": [
+                "CalDaily's Discount & Tax tool stores your defaults, so your local VAT or sales-tax rate is set once and reused; seven more advanced tools cover tip and split, unit conversion, date differences and business days, loan payments and trip fuel cost. Every result can be named, typed and searched later; history is grouped by day, filterable by tool, and exports to CSV for a spreadsheet.",
+                "One theme is free, so you can test the workflow before the single one-time purchase that unlocks all themes and unlimited use of every advanced tool — no subscription, no account, no cloud, no ads, no analytics; everything stays on the device. It is a calculator with memory, not tax software: verify rates with your tax authority, as nothing here is tax or accounting advice.",
+            ],
+            "look": [
+                "Defaults that persist — set your local VAT or sales-tax rate once.",
+                "Results you can name, type and search when the invoice question comes back.",
+                "History grouped by day with CSV export for reconciliation.",
+                "A one-time unlock rather than a subscription.",
+                "On-device only: no account, cloud, ads or analytics.",
+            ],
+            "steps": [
+                "Set your usual tax rate and discount as tool defaults.",
+                "Run the quote and name the result after the client or job.",
+                "Search the history when the invoice or reconciliation question arrives.",
+                "Export CSV if the numbers need to reach a spreadsheet.",
+                "Use the free theme and tools to judge it before the one-time unlock.",
+            ],
+            "fits": "fits freelancers who quote with the same tax and discount maths weekly and want each result named and findable — memory, not tax advice.",
+            "faq": [
+                {
+                    "q": "The built-in calculator is free — why pay?",
+                    "a": "If it covers you, keep it. What CalDaily sells is memory: saved defaults and a named, searchable history — not smarter arithmetic.",
+                },
+                {
+                    "q": "Does it know my country's tax rates?",
+                    "a": "No — you set your local VAT or sales-tax rate yourself as a default. Verify rates with your tax authority; this is not tax or accounting advice.",
+                },
+                {
+                    "q": "Is my history uploaded anywhere?",
+                    "a": "No — history stays on the device; there is no account, cloud sync, ads or analytics.",
+                },
+            ],
+        },
+        {
+            "query": "app to split a dinner bill with tip and still find the math a week later",
+            "guide_title": "Splitting the dinner bill: keeping the maths, not the debts",
+            "triggers": [
+                "split a dinner bill with tip",
+                "find the math a week later",
+                "tip and split history",
+                "always handed the bill",
+                "remember how we split the bill",
+            ],
+            "persona": "the friend who always gets handed the bill",
+            "lead": "Splitting a bill at the table is easy; the hard part comes a week later when someone asks what they paid — and the built-in calculator remembers nothing.",
+            "paras": [
+                "CalDaily's Tip & Split tool remembers your usual party size and tip percentage, works from a Home Screen widget without opening the app, and lets you name the result — 'Friday dinner' — so it is searchable later, with history grouped by day, filterable and exportable to CSV.",
+                "Be clear about what it is not: CalDaily is not an expense-splitting or IOU tracker — it keeps the calculation and its result, it does not track running balances between people. If you need that, use a dedicated shared-expenses tool; CalDaily fits the person who settles at the table and just wants the maths to survive. Free to try with one free theme; a single one-time purchase unlocks the other themes and unlimited use of every advanced tool, with no account and no subscription.",
+            ],
+            "look": [
+                "Tip and split defaults that remember last time's party size.",
+                "A Home Screen widget that does the maths without opening the app.",
+                "Named, searchable results grouped by day.",
+                "CSV export if the group wants the record.",
+                "One-time unlock, no account — and no pretence of debt tracking.",
+            ],
+            "steps": [
+                "Set your usual tip percentage and party size once.",
+                "Split from the widget at the table.",
+                "Name the result after the dinner before you pocket the phone.",
+                "Search it when the question comes back a week later.",
+                "Settle up in person — this app keeps maths, not balances.",
+            ],
+            "fits": "fits the designated bill-splitter who settles on the spot and wants the calculation findable later — not someone tracking balances between friends over time.",
+            "faq": [
+                {
+                    "q": "Is this like a shared-expenses or IOU app?",
+                    "a": "No — it keeps the calculation and its named result, not running balances. If you need to track shared expenses between friends over time, use a dedicated tool for that.",
+                },
+                {
+                    "q": "Do I have to open the app every time?",
+                    "a": "No — the Home Screen widget calculates directly and follows the active theme.",
+                },
+                {
+                    "q": "What does the purchase unlock?",
+                    "a": "One theme is free; a single one-time purchase unlocks the rest and unlimited use of every advanced tool — no subscription, no account.",
+                },
+            ],
+        },
+    ],
+    "wordmatelite": [
+        {
+            "query": "best free vocabulary app for adults one minute a day no flashcard decks",
+            "guide_title": "One-minute vocabulary habits: what to check before you commit",
+            "triggers": [
+                "free vocabulary app adults",
+                "learn five words a day",
+                "vocabulary without building decks",
+                "offline vocabulary practice",
+                "daily streak language habit",
+                "vocabulary app no subscription",
+            ],
+            "persona": "adults who abandoned flashcard apps and want a one-minute daily session they can actually keep",
+            "lead": "Most vocabulary apps fail on maintenance, not content: decks to build and review queues that grow faster than the time available. A habit-sized session is a better test of whether an app will survive week three.",
+            "paras": [
+                "WordMate Lite is built around a five-word 'pebble trail': one focused minute, five words, and a completion screen that shows exactly which five you learned. There are no decks to build and no review backlog. Progress is visible as streaks, words learned today and in total, and per-topic and per-unit rings, with 14 life topics — travel, business, exams, dining, interviews, health and others — across beginner, intermediate and advanced levels.",
+                "The free tier keeps one learning language and one path at beginner level open for good; everything else stays visible behind a lock or a real preview. One non-consumable purchase unlocks all 44 learning languages, all paths and levels, unlimited learning and unlimited saved words, with no subscription. It works offline, needs no account, and stores data on the device with no third-party advertising or tracking. Pronunciation uses the system text-to-speech voices installed on the device, not recorded voice actors.",
+            ],
+            "look": [
+                "A session short enough to repeat daily — five words, about a minute.",
+                "No deck building and no growing review queue.",
+                "Visible progress: streak, daily count, per-topic rings.",
+                "Works offline with no account or sign-in.",
+                "One-time unlock instead of a subscription.",
+            ],
+            "steps": [
+                "Pick one learning language and one life path to start free.",
+                "Finish a five-word trail and check the completion screen.",
+                "Set a daily goal (5, 10, 15 or 20 words) you can sustain.",
+                "Save the words you want to revisit and choose a voice for pronunciation.",
+                "Unlock every language, path and level once only if the daily rhythm sticks.",
+            ],
+            "fits": "fits adults who want vocabulary as a one-minute daily habit rather than a flashcard project, with a free path and level to test the rhythm before a single one-time unlock.",
+            "faq": [
+                {
+                    "q": "How much can I learn without paying?",
+                    "a": "One learning language and one path at beginner level stay open for good. Everything else stays visible with a lock or a preview.",
+                },
+                {
+                    "q": "Is the pronunciation recorded by native speakers?",
+                    "a": "No — it uses the system text-to-speech voices installed on your device, with per-language voice selection.",
+                },
+                {
+                    "q": "Does it work without a connection or an account?",
+                    "a": "Yes. It works offline, needs no account or sign-in, and keeps data on your device with no third-party ads or tracking.",
+                },
+            ],
+        },
+    ],
+    "onepageppt": [
+        {
+            "query": "app that turns meeting notes into one presentation slide",
+            "guide_title": "Notes to one slide: what to check before your next meeting recap",
+            "triggers": [
+                "turn notes into a slide",
+                "one slide summary of a report",
+                "executive summary slide maker",
+                "meeting recap single slide",
+                "make a slide from a pdf",
+                "editable pptx export from notes",
+            ],
+            "persona": "consultants, founders and project managers who owe someone one clear page, not a deck",
+            "lead": "Most slide tools assume you want a deck. When the deliverable is a single recap page, the real test is whether the app can take raw notes, a PDF or a table and lay them out as one readable 16:9 slide without template fiddling.",
+            "paras": [
+                "OnePage PPT takes whatever you already have — typed or pasted notes, screenshots, photos, PDFs, CSV tables — pulls out the key points on the device, and lays them out as one presentation-ready 16:9 slide. Numbers become column, bar, line, donut or funnel charts; steps become a process flow; dates become a timeline; two options become a comparison. It only draws a chart the data can honestly support — it never invents figures.",
+                "If the first layout isn't right, six one-tap redesigns — Cleaner, More Visual, More Professional, More Bold, More Compact, More Editorial — each genuinely rebuild the slide with different chart forms, typography and layout, and you can lock any element and redesign around it. Export is an editable .pptx for PowerPoint, Keynote or Google Slides, a PDF, or a high-resolution PNG. Everything runs on the device: no account, no sign-in, no tracking, and it works with no network at all. It's free to try, and Lifetime Pro is a single one-time purchase with no subscription.",
+            ],
+            "look": [
+                "Accepts what you already have: notes, screenshots, PDFs, CSV tables.",
+                "Picks the right visual — chart, flow, timeline, comparison — from the actual data.",
+                "Never invents figures; charts only what the data supports.",
+                "Exports an editable .pptx, not just a flat image.",
+                "Runs fully on-device with no account, and a one-time purchase instead of a subscription.",
+            ],
+            "steps": [
+                "Paste your meeting notes or import the source PDF or CSV.",
+                "Tap Make My Slide and check the headline summary is faithful.",
+                "Cycle the six redesigns until the layout fits the audience.",
+                "Lock the elements you like and redesign around them.",
+                "Export .pptx for the deck owner, or PDF/PNG for email and chat.",
+            ],
+            "fits": "fits anyone who has to compress a report, meeting or dataset into one page a busy reader will actually look at, without opening a full deck editor.",
+            "faq": [
+                {
+                    "q": "Can I edit the slide afterwards in PowerPoint or Keynote?",
+                    "a": "Yes — it exports an editable .pptx that opens in PowerPoint, Keynote and Google Slides, plus PDF and high-resolution PNG.",
+                },
+                {
+                    "q": "Will it make up numbers for the charts?",
+                    "a": "No — it only draws a chart the supplied data can honestly support, and never invents figures.",
+                },
+                {
+                    "q": "Does my content leave the device?",
+                    "a": "No — everything runs on your iPhone or iPad, with no account, no sign-in, no tracking, and it works fully offline.",
+                },
+            ],
+        },
+        {
+            "query": "make a one slide summary of a pdf for a class presentation",
+            "guide_title": "One-slide class presentations: turning readings and data into a single page",
+            "triggers": [
+                "one page presentation for class",
+                "summarize a pdf into a slide",
+                "csv to chart slide",
+                "single slide assignment",
+                "turn lecture notes into a slide",
+                "student presentation one slide",
+            ],
+            "persona": "students and teachers who need one clear slide from a reading, dataset or lesson",
+            "lead": "For a one-slide assignment or a lesson recap, the slow part isn't the content — it's fighting a deck editor. The better test is whether an app can read the source PDF or CSV itself and produce one honest, presentation-ready page.",
+            "paras": [
+                "OnePage PPT reads the material you give it — pasted notes, a photographed handout, a PDF reading or a CSV of results — summarises the key points on the device, and lays them out as a single 16:9 slide. Data becomes a real chart only when the numbers support one; steps become a process flow and dates a timeline, so a methods section or a history topic gets the right visual form instead of a wall of bullets.",
+                "Every element stays editable: tap to rewrite a headline, swap an image, reorder blocks, or run one of the six redesign styles until it looks right, with version history to step back to any earlier draft. Export a PDF or PNG to hand in, or an editable .pptx to drop into a class deck. It runs entirely on the device with no account and works offline, so it's usable in class or on the bus; it's free to try, with a single one-time Lifetime Pro purchase and no subscription.",
+            ],
+            "look": [
+                "Reads PDFs, photos of handouts, notes and CSV tables directly.",
+                "Chooses chart, timeline, flow or comparison from the actual content.",
+                "Everything stays editable, with version history to undo a bad draft.",
+                "Exports PDF/PNG to submit, or editable .pptx for a shared deck.",
+                "Works offline on-device with no account, free to try, one-time unlock.",
+            ],
+            "steps": [
+                "Import the reading PDF, dataset CSV, or a photo of the handout.",
+                "Tap Make My Slide and check the summary against the source.",
+                "Fix any headline by tapping it and rewriting in place.",
+                "Try the redesign styles until the page reads clearly from the back row.",
+                "Export PDF or PNG to submit, or .pptx if it joins a group deck.",
+            ],
+            "fits": "fits students and teachers who need one accurate, good-looking page from real course material without learning a deck editor.",
+            "faq": [
+                {
+                    "q": "Can it chart my experiment or survey data?",
+                    "a": "Yes — import a CSV or paste the numbers and it picks a column, bar, line, donut or funnel chart the data actually supports; it never fabricates values.",
+                },
+                {
+                    "q": "Do I need an account or internet in class?",
+                    "a": "No — it runs fully on-device with no account or sign-in, and everything works with no network at all.",
+                },
+                {
+                    "q": "Is it a subscription?",
+                    "a": "No — it's free to try, and Lifetime Pro is a single one-time purchase with no recurring fee.",
+                },
+            ],
+        },
+        {
+            "query": "app to turn a csv or spreadsheet into one chart slide on iphone",
+            "guide_title": "CSV to one chart slide: the fastest honest path",
+            "triggers": [
+                "csv or spreadsheet into one chart slide",
+                "spreadsheet into one chart slide",
+                "csv into a chart slide",
+                "one chart slide on iphone",
+                "chart slide from a csv",
+            ],
+            "persona": "analysts, founders and ops people told to bring one page by morning",
+            "lead": "When the numbers are in a CSV and the meeting is tomorrow morning, the most expensive hour is the one spent dragging chart boxes around a blank deck editor.",
+            "paras": [
+                "OnePage PPT imports the CSV — or a PDF, a screenshot, pasted text — pulls the key points on the device, and picks the chart the data actually supports: column, bar, line, donut or funnel for numbers, a flow for steps, a timeline for dates, a comparison for two options. Its standing rule is the honest part: it only draws a chart the data can honestly support — it never invents figures.",
+                "The output is an editable .pptx for PowerPoint, Keynote or Google Slides, plus PDF and high-resolution PNG, with six one-tap redesigns if the first layout is not right. Everything runs on the device with no account and works offline; it is free to try, and Lifetime Pro is a single one-time purchase. One human step remains: the text takeaways are extracted automatically, so read them against the source before presenting — every element is tap-to-edit.",
+            ],
+            "look": [
+                "Direct CSV and spreadsheet import — no retyping the numbers.",
+                "Chart type chosen from the data, never a fabricated figure.",
+                "An editable .pptx out, not a flat image.",
+                "Six one-tap redesigns, with elements you can lock.",
+                "On-device and offline, free to try, one-time Lifetime Pro.",
+            ],
+            "steps": [
+                "Import the CSV or paste the table.",
+                "Check the chart type it chose matches what the data says.",
+                "Read every extracted takeaway against the source numbers.",
+                "Cycle the redesigns until it reads from the back of the room.",
+                "Export .pptx for the deck owner or PNG for the chat thread.",
+            ],
+            "fits": "fits anyone who owes a one-page number story by morning and wants the chart drawn from the data, not from imagination.",
+            "faq": [
+                {
+                    "q": "Will the AI make up numbers?",
+                    "a": "No — it only draws a chart the supplied data can honestly support and never invents figures. The text summaries still deserve a human read-through, and every element is editable.",
+                },
+                {
+                    "q": "Can the deck owner edit my slide?",
+                    "a": "Yes — it exports an editable .pptx that opens in PowerPoint, Keynote and Google Slides.",
+                },
+                {
+                    "q": "Does my data leave the phone?",
+                    "a": "No — import, extraction and layout all run on the device; it works with no network at all.",
+                },
+            ],
+        },
+        {
+            "query": "turn a photo of a whiteboard into a clean summary slide",
+            "guide_title": "From whiteboard photo to client-ready recap",
+            "triggers": [
+                "photo of a whiteboard",
+                "whiteboard into a clean summary slide",
+                "whiteboard photo to slide",
+                "workshop recap slide",
+                "whiteboard picture into a slide",
+            ],
+            "persona": "consultants and project managers who leave a workshop with one whiteboard photo and owe a recap",
+            "lead": "Everyone photographs the whiteboard; almost no one turns the photo into anything — and by next week it is just pixels whose meaning nobody remembers.",
+            "paras": [
+                "OnePage PPT imports the photo or screenshot directly, extracts the key points on the device, and lays them out as one 16:9 recap slide. Six one-tap redesigns — Cleaner, More Visual, More Professional, More Bold, More Compact, More Editorial — genuinely rebuild the layout; you can lock the elements that are right and redesign around them, and version history steps back to any earlier draft.",
+                "An honest limit: extraction quality tracks the handwriting, and a messy whiteboard will produce points you must check against the photo before anything reaches a client — no accuracy rate is promised. The photo itself never leaves the device; projects stay local and everything works offline. A general chat AI can also read a photo — the differences here are that the output is an editable .pptx layout and the photo is not uploaded anywhere. Free to try; Lifetime Pro is one purchase.",
+            ],
+            "look": [
+                "Direct photo and screenshot import, processed on the device.",
+                "A 16:9 recap layout, not a text dump.",
+                "Redesign styles that rebuild the page, with lockable elements.",
+                "Version history to recover an earlier draft.",
+                "Photo never uploaded; offline; free to try with a one-time Pro.",
+            ],
+            "steps": [
+                "Photograph the whiteboard before it is erased — straight-on if you can.",
+                "Import and extract, then check every point against the photo.",
+                "Lock the correct elements and redesign the rest.",
+                "Step back through version history if a redesign loses something.",
+                "Export .pptx or PDF and send the recap while the workshop is fresh.",
+            ],
+            "fits": "fits consultants who owe a clean recap page from a whiteboard photo and want the photo processed locally, not uploaded.",
+            "faq": [
+                {
+                    "q": "How accurate is the handwriting extraction?",
+                    "a": "No recognition rate is promised — a tidy board extracts well, a messy one will not. Check every extracted point against the photo; each one is tap-to-edit.",
+                },
+                {
+                    "q": "Why not just ask a chat AI to read the photo?",
+                    "a": "That works too. The differences: the output here is an editable .pptx layout rather than prose, and the photo stays on your device instead of being uploaded.",
+                },
+                {
+                    "q": "Is there a subscription?",
+                    "a": "No — it is free to try, and Lifetime Pro is a single one-time purchase.",
+                },
+            ],
+        },
+    ],
+    "wifiaidlite": [
+        {
+            "query": "how to tell if the wifi or the website is down free app",
+            "guide_title": "Wi-Fi or the site: how to tell which one is actually broken",
+            "triggers": [
+                "is it my wifi or the website",
+                "wifi or the website",
+                "wifi connected but no internet",
+                "wi-fi connected but no internet",
+                "connected but no internet",
+                "check if a website is down",
+                "website is down",
+                "whole internet connection",
+                "dns not resolving iphone",
+                "slow wifi diagnose",
+                "network test app no account",
+            ],
+            "persona": "anyone staring at a page that will not load and guessing which part failed",
+            "lead": "Rebooting the router is a guess. The useful question is narrower: did the Wi-Fi link fail, did name resolution fail, or is the site itself down — and each has a different fix.",
+            "paras": [
+                "WiFi Aid Lite runs Wi-Fi, DNS and internet checks in one tap, then shows the evidence rather than a verdict: DNS, TCP, TLS, time to first byte, HTTP, direct IP, IPv4 and IPv6. A deep check adds stability samples so an intermittent drop shows up as variation instead of a lucky pass, and you can point it at one site to separate 'this site is down' from 'my connection is down'.",
+                "Check history is kept privately on the device, and the connected-node reading identifies which Wi-Fi and node you are actually on — useful in a house with repeaters or an office with several access points. There is no account, no ads, no analytics and no tracking. One complete check is free across all tools; an optional one-time unlock removes the limit, with no subscription.",
+            ],
+            "look": [
+                "Separates Wi-Fi, DNS and the site instead of one pass/fail verdict.",
+                "Shows the evidence chain: DNS, TCP, TLS, first byte, HTTP.",
+                "Stability samples so intermittent drops are visible.",
+                "History kept on the device, with no account or tracking.",
+                "One complete check is free across all tools, then an optional one-time unlock.",
+            ],
+            "steps": [
+                "Run the one-tap check while the problem is happening.",
+                "Read whether DNS, the connection, or the site failed.",
+                "Run a deep check if it works sometimes and not others.",
+                "Check the specific site to rule out a wider outage.",
+                "Note the connected node before moving to another access point.",
+            ],
+            "fits": "fits people who want to know which link in the chain broke before calling the provider or resetting anything.",
+            "faq": [
+                {
+                    "q": "Can it tell me whether the site itself is down?",
+                    "a": "Yes — you can check one site or the wider internet, which separates a single site being down from your own connection failing.",
+                },
+                {
+                    "q": "How much works without paying?",
+                    "a": "One complete check is free, shared across all tools. An optional one-time unlock removes the limit; there is no subscription.",
+                },
+                {
+                    "q": "Is any of this sent anywhere?",
+                    "a": "No — there is no account, no ads, no analytics and no tracking, and check history is stored only on the device.",
+                },
+            ],
+        },
+        {
+            "query": "free app to document bad wifi and internet problems as evidence for my isp",
+            "guide_title": "Documenting a bad connection: records your ISP cannot wave away",
+            "triggers": [
+                "document bad wifi",
+                "evidence for my isp",
+                "proof of internet problems",
+                "wifi complaint evidence",
+                "log connection problems for my provider",
+            ],
+            "persona": "tenants and home workers whose provider always says it looks fine from here",
+            "lead": "Without records, a complaint call is your word against the support script — what changes the conversation is a dated history of checks run while the problem was happening.",
+            "paras": [
+                "WiFi Aid Lite's evidence chain covers DNS, TCP, TLS, time to first byte, HTTP, direct IP, IPv4 and IPv6; Deep Check adds stability samples so an intermittent fault shows up as variation, and Check History keeps every timestamped result privately on the device. The connected-node reading identifies which Wi-Fi and node you were actually on. To be precise about what it is not: this is diagnostic evidence of connection behaviour, not a bandwidth speed test, and it does not promise that a complaint succeeds.",
+                "One complete check is free across all tools, then a single one-time unlock — no subscription, no ads, no account, no tracking. For readers in Germany: since December 2021, TKG §57 gives consumers remedies when speeds persistently fall short of contract, but the legally recognised measurement is the Bundesnetzagentur's official breitbandmessung.de procedure — WiFi Aid Lite's records are for day-to-day incident documentation and clearer ISP conversations, not the statutory measurement.",
+            ],
+            "look": [
+                "Timestamped check history stored privately on the device.",
+                "An evidence chain — DNS, TCP, TLS, first byte, HTTP — rather than a pass/fail verdict.",
+                "Stability sampling so intermittent faults become visible.",
+                "Identification of the Wi-Fi node you were on at the time.",
+                "A real free use of every tool before a one-time unlock.",
+            ],
+            "steps": [
+                "Run a check while the problem is happening, not after it clears.",
+                "Use Deep Check when the fault is intermittent.",
+                "Let the history accumulate for a week or two before calling.",
+                "Quote specific dated results in the ISP conversation.",
+                "In Germany, also run breitbandmessung.de if you intend a formal TKG claim.",
+            ],
+            "fits": "fits tenants and home workers who need an independent, dated record of connection problems before the next support call — with no promise about the complaint's outcome.",
+            "faq": [
+                {
+                    "q": "Will this evidence force my ISP to act?",
+                    "a": "No promise of that — it gives you specific, dated observations instead of vague complaints, which makes the conversation concrete. Outcomes depend on your provider and contract.",
+                },
+                {
+                    "q": "Is this a speed test?",
+                    "a": "No — it documents connection behaviour (DNS, TCP, TLS, timing, stability), not bandwidth. In Germany, a formal TKG speed claim requires the official breitbandmessung.de measurement.",
+                },
+                {
+                    "q": "My ISP has its own app — why a third-party record?",
+                    "a": "The ISP's tool validates its own network. An independent record is timestamped, stays only on your phone, and is not maintained by the party you are complaining about.",
+                },
+            ],
+        },
+        {
+            "query": "video calls keep dropping how to tell if its my wifi router or the internet",
+            "guide_title": "Calls that drop mid-meeting: finding which layer to blame",
+            "triggers": [
+                "video calls keep dropping",
+                "calls keep dropping",
+                "freezes during meetings",
+                "meeting keeps freezing",
+                "drops during video calls",
+            ],
+            "persona": "remote workers whose meetings freeze while everything else seems fine",
+            "lead": "Intermittent drops are the worst kind of fault: rebooting the router fixes it until the next meeting, and without a layered check you never learn which layer actually failed.",
+            "paras": [
+                "WiFi Aid Lite's one-tap check tests the Wi-Fi link, DNS and the wider internet as separate layers, and its variation reading — connection looks unstable — is aimed exactly at the intermittent case; Deep Check adds stability samples over time, and Check a Website separates one struggling service from a broken connection. Results are timestamped and stay on the device, with no account.",
+                "Rebooting often helps, but it destroys the evidence: run the check first, then reboot, and the next time it happens you will know whether it was the Wi-Fi link, name resolution or the connection beyond your router. One complete check is free across all tools, then a one-time unlock with no subscription. This is diagnostic evidence, not a promised fix — results describe your connection at the time of the check.",
+            ],
+            "look": [
+                "Separate Wi-Fi, DNS and internet layers, not one verdict.",
+                "An instability reading built for intermittent faults.",
+                "Stability sampling over time, not a single snapshot.",
+                "A per-site check to rule out one service's bad day.",
+                "Free complete use of each tool; one-time unlock, no account.",
+            ],
+            "steps": [
+                "When the call freezes, run the one-tap check before touching the router.",
+                "Note which layer failed — Wi-Fi link, DNS, or beyond.",
+                "Run Deep Check afterwards to catch instability between meetings.",
+                "Check the meeting service itself to rule out its outage.",
+                "Only then reboot — and keep the dated result for the pattern.",
+            ],
+            "fits": "fits remote workers who want to stop guessing between Wi-Fi, router and provider when meetings freeze — evidence first, reboot second.",
+            "faq": [
+                {
+                    "q": "Rebooting the router usually works — why bother checking?",
+                    "a": "Rebooting leaves you with no information. One check first tells you which layer failed, so a repeating fault becomes a documented pattern instead of a mystery.",
+                },
+                {
+                    "q": "Can it fix the drops?",
+                    "a": "No — it is diagnostic evidence, not a promised fix. Results describe your connection at the time of the check; the remedy depends on which layer the evidence points to.",
+                },
+                {
+                    "q": "What does it cost?",
+                    "a": "Every tool includes one complete free use; after that a single one-time unlock — no subscription, no ads, no account, no tracking.",
+                },
+            ],
+        },
+    ],
+    "notesstudio100": [
+        {
+            "query": "best offline handwriting notes app for ipad with pdf markup no subscription",
+            "guide_title": "Handwriting plus PDF markup on iPad: what to check before you commit",
+            "triggers": [
+                "handwriting notes app ipad",
+                "pdf markup and handwriting in one app",
+                "notes app no subscription",
+                "offline notes app no account",
+                "annotate lecture pdfs by hand",
+                "apple pencil note taking app",
+            ],
+            "persona": "students and professionals who write by hand on iPad and want their PDFs in the same place",
+            "lead": "Most handwriting apps are fine until the moment you need to mark up a PDF, search your own handwriting, or open the app on a plane — that is where the differences show up.",
+            "paras": [
+                "100 Notes Studio is a handwriting and document workspace: twenty-nine pens and brushes with pressure and tilt on supported strokes, palm rejection, pixel and whole-stroke erasers, lasso, ruler, shape tools and a laser pointer for presenting. Pages can be fixed size or an infinite canvas in A4, A5, Letter, screen or custom dimensions, and typed text sits alongside ink with lists, checklists, tables and links.",
+                "PDFs are first-class rather than an afterthought: import and mark up with highlights, underline, strike-through, text notes and handwriting, then rotate, crop, insert, extract, merge and export. Handwriting and PDF text recognition run on the device, so search covers titles, body text, handwriting and attachments, and study tools add linked flashcards, cloze cards and spaced repetition. There is no account, no ads, no third-party tracking and no external AI; editing, search and study work offline, and a notebook or the whole workspace can be locked with device authentication.",
+            ],
+            "look": [
+                "Handwriting and PDF markup in one place, not two apps.",
+                "On-device recognition so your own handwriting is searchable.",
+                "Works offline with no account and no third-party tracking.",
+                "A real free tier to test before any purchase.",
+                "A one-time upgrade rather than a monthly fee.",
+            ],
+            "steps": [
+                "Write a page with the pen you would actually use and check pressure and palm rejection.",
+                "Import a real PDF and mark it up, then export to confirm the result.",
+                "Search for a word you only ever wrote by hand.",
+                "Turn off the network and confirm editing, search and study still work.",
+                "Decide on the one-time upgrade only after the free notebook proves the workflow.",
+            ],
+            "fits": "fits people who take handwritten notes on iPad and also live in PDFs, and who would rather pay once than subscribe.",
+            "faq": [
+                {
+                    "q": "How much can I do without paying?",
+                    "a": "The free version includes the core editor, all twenty-nine writing tools, PDF markup, page audio attachments, handwriting search and the study tools, with one active notebook, unlimited pages and two of the hundred styles.",
+                },
+                {
+                    "q": "What does the paid upgrade add?",
+                    "a": "One optional one-time upgrade adds unlimited notebooks, all hundred styles, vector-ink PDF export, restorable page history and encrypted backup. There is no subscription.",
+                },
+                {
+                    "q": "Does anything leave my device?",
+                    "a": "No — there is no account, no ads, no third-party tracking or analytics and no external AI. Notes stay on the device unless you export or back them up yourself.",
+                },
+            ],
+        },
+        {
+            "query": "note taking app that records lecture audio and links it to the page",
+            "guide_title": "Lecture notes that survive the exam: audio, handwriting and spaced repetition",
+            "triggers": [
+                "record lecture audio with notes",
+                "audio attached to notes page",
+                "flashcards from my own notes",
+                "spaced repetition note app",
+                "study app offline no account",
+                "annotate lecture slides",
+            ],
+            "persona": "students revising from their own lecture notes weeks later",
+            "lead": "The test of a study app is not the day you write the notes — it is the week before the exam, when you need to find one idea again and turn it into practice.",
+            "paras": [
+                "100 Notes Studio attaches audio recordings to the page you choose, so a recorded explanation stays with the notes it belongs to instead of sitting in a separate voice-memo list. Lecture slides and readings can be imported as PDFs and marked up by hand or with text notes in the same notebook, and an auto-numbered table of contents, nested folders, tags, pins and favorites keep a term's material navigable.",
+                "For revision, on-device handwriting and PDF recognition make your own notes searchable, and study tools turn them into linked flashcards and cloze cards reviewed with FSRS spaced repetition. Everything works offline with no account, no ads and no third-party tracking; page history is restorable and deleted pages land in a recoverable trash. The free version covers the core editor and study tools with one active notebook, and a single one-time upgrade removes the notebook limit.",
+            ],
+            "look": [
+                "Audio that stays attached to the page it explains.",
+                "Your handwriting and imported PDFs both searchable on-device.",
+                "Flashcards and spaced repetition built from your own notes.",
+                "Recoverable trash and restorable page history before an exam.",
+                "Offline, no account, one-time upgrade instead of a subscription.",
+            ],
+            "steps": [
+                "Record one lecture with audio attached to the page you are writing.",
+                "Import the slides as a PDF and annotate them in the same notebook.",
+                "Search a term you only wrote by hand to confirm recognition works.",
+                "Turn a page into flashcards and run a spaced-repetition session.",
+                "Check the table of contents and folders still make sense a week later.",
+            ],
+            "fits": "fits students who want lecture audio, slides, handwriting and revision in one offline notebook rather than four separate apps.",
+            "faq": [
+                {
+                    "q": "Is the audio recorded per notebook or per page?",
+                    "a": "Recordings attach to the page you choose, so the audio stays with the notes it belongs to.",
+                },
+                {
+                    "q": "Can it read my handwriting?",
+                    "a": "Handwriting and PDF text recognition run on the device, and search covers titles, body text, handwriting and attachments.",
+                },
+                {
+                    "q": "Do I need a subscription for the study tools?",
+                    "a": "No — the flashcards, cloze cards and spaced repetition are in the free version, with one active notebook; the optional one-time upgrade removes that limit.",
+                },
+            ],
+        },
+        {
+            "query": "ipad notes app with built in spaced repetition flashcards for exam revision",
+            "guide_title": "Notes and spaced repetition in one place: revision without the export step",
+            "triggers": [
+                "spaced repetition flashcards for exam revision",
+                "built in spaced repetition",
+                "flashcards without leaving my notes",
+                "notes app with fsrs",
+                "stop copying notes into flashcards",
+            ],
+            "persona": "exam-season students who do not want to shuttle material between a notes app and a flashcard app",
+            "lead": "The step that kills most revision systems is the transfer: notes live in one app, flashcards in another, and moving material between them is the moment people quit.",
+            "paras": [
+                "100 Notes Studio builds the study tools into the notebook: linked flashcards and cloze cards made from your own pages, reviewed with FSRS — the open-source spaced-repetition scheduler that Anki also uses. Handwriting and PDF text recognition run on the device, so search covers titles, body text, handwriting and attachments, and audio recordings can be pinned to the page they explain.",
+                "The free version already includes the core editor, twenty-nine brushes, PDF markup, page audio, handwriting search and the study tools — one active notebook, unlimited pages, two styles — so you can test the whole loop before the single one-time upgrade that adds unlimited notebooks, all hundred styles, vector-ink PDF export, page history and encrypted backup. No account, no ads, no third-party tracking, no external AI, and it works offline. If flashcards are all you want, Anki goes deeper — the case for 100 Notes is notes, PDFs, audio and cards living in one place.",
+            ],
+            "look": [
+                "Flashcards and cloze cards created from the notes themselves.",
+                "FSRS spaced repetition — the same open scheduler Anki uses.",
+                "On-device recognition so handwriting is searchable at revision time.",
+                "Audio pinned to the page it explains.",
+                "A free tier that includes the study tools; one-time upgrade, no subscription.",
+            ],
+            "steps": [
+                "Take one lecture's notes and turn the key points into linked or cloze cards.",
+                "Run an FSRS review session the next day.",
+                "Search a term you only wrote by hand to confirm recognition.",
+                "Work offline once to confirm nothing needs a connection.",
+                "Upgrade once only if the one-notebook free tier proves the loop.",
+            ],
+            "fits": "fits exam-season students who want notes, PDFs, audio and spaced-repetition cards in one offline app instead of shuttling between two.",
+            "faq": [
+                {
+                    "q": "Anki is free and has FSRS — why this?",
+                    "a": "If flashcards are all you need, Anki is deeper. 100 Notes' case is that the notes, PDF markup, recordings and cards live in one app — and its free tier includes the study tools, so you can test that claim before paying.",
+                },
+                {
+                    "q": "Does the recognition happen in a cloud?",
+                    "a": "No — handwriting and PDF text recognition run on the device, with no account, no external AI and no third-party tracking.",
+                },
+                {
+                    "q": "What limits does the free version have?",
+                    "a": "One active notebook with unlimited pages and two of the hundred styles; the editor, brushes, PDF markup, audio, search and study tools are all included. A single one-time upgrade removes the limits.",
+                },
+            ],
+        },
+        {
+            "query": "goodnotes alternative one time purchase handwriting app ipad",
+            "guide_title": "Leaving notes subscriptions: an honest GoodNotes comparison",
+            "triggers": [
+                "goodnotes alternative",
+                "one time purchase handwriting app",
+                "handwriting app without a subscription",
+                "notes subscription fatigue",
+            ],
+            "persona": "long-time digital note-takers tired of yearly fees on a decade-long habit",
+            "lead": "Handwritten notes are a ten-year habit, so the pricing model is a fair top criterion — but an honest comparison starts by admitting that GoodNotes itself also sells a one-time edition.",
+            "paras": [
+                "As of this writing, GoodNotes lists Essential and Pro subscription tiers (about $11.99 and $35.99 per year) and — on Apple platforms — a one-time Special Edition (about $35.99) with a different feature set; pricing is subject to change, so check the App Store for today's figures. The real choice is not subscription versus not — it is which feature set you want to own outright.",
+                "100 Notes Studio is free at its core with one optional one-time upgrade: twenty-nine pens and brushes with pressure and tilt — fountain, calligraphy, fude brush, watercolor and charcoal among them — palm rejection, a hundred notebook styles, PDF markup and on-device handwriting search, with no account, no third-party tracking and no external AI. The honest difference: it has no cloud cross-platform sync or collaboration, which GoodNotes' subscription tiers are built around. It suits the single-device, own-your-backups note-taker — and the free tier lets you verify the current feature set yourself rather than trusting a roadmap.",
+            ],
+            "look": [
+                "Whether a vendor's one-time option — GoodNotes' Special Edition included — covers the features you need.",
+                "A real free tier to verify current features instead of trusting promises.",
+                "Pressure and tilt on the pens you actually write with.",
+                "On-device handwriting search, no account, no third-party tracking.",
+                "Where sync lives: 100 Notes has no cloud cross-platform sync — you own the backups.",
+            ],
+            "steps": [
+                "List what you use daily: pens, PDF markup, search, sync, collaboration.",
+                "Check GoodNotes' current one-time Special Edition against that list — it exists, with a different feature set.",
+                "Test 100 Notes' free tier with your own pen and one real PDF.",
+                "Decide whether cloud sync or collaboration is a must-have — 100 Notes does not have them.",
+                "Pay once only for the app whose current features, not promises, cover your list.",
+            ],
+            "fits": "fits single-device note-takers who want handwriting, PDFs and search owned outright, manage their own backups, and do not need cloud collaboration.",
+            "faq": [
+                {
+                    "q": "Doesn't GoodNotes only do subscriptions now?",
+                    "a": "No — alongside its subscription tiers it also sells a one-time Special Edition on Apple platforms, with a different feature set. Compare current pricing on the App Store; it changes.",
+                },
+                {
+                    "q": "Will 100 Notes keep getting updates after I pay once?",
+                    "a": "No roadmap promises here — judge it by the current feature set, which the free tier lets you verify before paying anything.",
+                },
+                {
+                    "q": "Can I sync between iPad and other platforms?",
+                    "a": "No — there is no cloud cross-platform sync or collaboration. Backups are yours to make, including encrypted backup with the one-time upgrade.",
+                },
+            ],
+        },
+    ],
+    "moneytag": [
+        {
+            "query": "best income and expense tracker for freelance projects no subscription",
+            "guide_title": "Project profit tracking for freelancers: what to keep separate",
+            "triggers": [
+                "income and expense tracker for freelance projects",
+                "freelance project income and expenses",
+                "track profit by client project",
+                "side hustle income expense tracker",
+                "project bookkeeping no subscription",
+                "tag expenses across projects",
+                "multi currency freelance ledger",
+                "freelance project bookkeeping",
+                "profit and loss by project",
+                "project income expense tracker",
+            ],
+            "persona": "freelancers and side-hustle owners who need a separate bottom line for every project",
+            "lead": "A monthly budget cannot tell a freelancer whether one client project actually made money — each project needs its own income, expenses and net result.",
+            "paras": [
+                "MoneyTag treats every job, client or side hustle as a separate ledger. Income and expenses stay distinct, the project card shows the running net result, and each entry can carry multiple tags so costs such as equipment, travel or tax deductions can also be compared across projects.",
+                "Entries can use a local currency with an automatic or manual exchange rate while the project keeps one reporting currency. Reports break results down by period, type, category, month and day, with CSV and PDF export available through an optional one-time Lifetime Pro unlock. Ledger data stays on the device, and saved or manual exchange rates work offline with no account. Automatic rate updates contact Frankfurter or ExchangeRate-API; their Cloudflare infrastructure may process connection, usage and diagnostic data for functionality and analytics, as disclosed in the app's privacy information.",
+            ],
+            "look": [
+                "A separate income, expense and net total for every project.",
+                "Tags that can compare the same cost across multiple projects.",
+                "Multi-currency entries without changing the project's base currency.",
+                "Useful reports and export that remain under your control.",
+                "Offline use with a one-time upgrade instead of a subscription.",
+            ],
+            "steps": [
+                "Create one ledger for a real client project or side hustle.",
+                "Record both income and expenses in the currencies you actually use.",
+                "Tag shared costs such as equipment, travel or tax deductions.",
+                "Check the project net result and compare one tag across projects.",
+                "Preview the filtered report before deciding whether export is useful.",
+            ],
+            "fits": "fits freelancers and side-hustle owners who want project-level profit and cross-project tags without moving their financial records into an account-based subscription service.",
+            "faq": [
+                {
+                    "q": "Can I keep each client or side hustle separate?",
+                    "a": "Yes — every project has its own ledger, reporting currency, income, expenses and net result.",
+                },
+                {
+                    "q": "Can I compare one expense type across projects?",
+                    "a": "Yes — assign the same tag to entries in different projects, then switch the tag view from the current project to all projects.",
+                },
+                {
+                    "q": "Is there a subscription or online account?",
+                    "a": "No — the core workflow works offline with no account, and the optional Pro upgrade is a one-time purchase.",
+                },
+            ],
+        },
+    ],
+    "battai": [
+        {
+            "query": "best iphone battery health app with honest estimates and report",
+            "guide_title": "iPhone battery health apps: what they can really know",
+            "triggers": [
+                "battery health app",
+                "battery health report",
+                "time to 80",
+                "replace iphone battery",
+                "battery replacement",
+                "sell iphone battery",
+                "battery capacity trend",
+            ],
+            "persona": "long-term iPhone owners deciding whether to service, keep or sell their device",
+            "lead": "A battery score is only useful when the app separates what iOS measured, what it estimated and what you entered yourself.",
+            "paras": [
+                "A third-party iPhone app can directly read battery level, charge state, Low Power Mode, whole-device thermal state and time. It cannot directly read cycle count, maximum capacity, battery temperature, voltage, current or per-app drain. A trustworthy health view keeps those limits visible, leaves missing data missing and shows estimates as ranges with their confidence and sample count.",
+                "BattAI builds a private trend from those public readings, labels the source of each result, and lets you calibrate with values you enter or a battery-related extract from an iOS Analytics file. Its health factors, charging patterns and exportable report can support a service or resale conversation without pretending to be an Apple diagnosis. The core workflow is free; one Lifetime Pro purchase adds deeper history, planning and reports, with no subscription, account, ads, telemetry or internet requests.",
+            ],
+            "look": [
+                "A clear distinction between measured, estimated and user-provided values.",
+                "Ranges, confidence and sample counts instead of false precision.",
+                "Calibration from values you provide or an iOS Analytics file.",
+                "Long-term health and charging trends with an exportable report.",
+                "No account, ads, tracking or recurring subscription.",
+            ],
+            "steps": [
+                "Check which battery values the app says iOS directly provides.",
+                "Open one estimate and inspect its source, range, confidence and sample count.",
+                "Add a capacity value manually or review the Analytics import before calibrating.",
+                "Let the trend collect enough observations instead of trusting a first-day prediction.",
+                "Review the report and its limitations before using it for service or resale.",
+            ],
+            "fits": "fits iPhone owners who want a transparent battery trend and a useful record for a keep, service or resale decision without false sensor claims.",
+            "faq": [
+                {
+                    "q": "Can an iPhone app directly read exact cycle count, battery temperature or charging watts?",
+                    "a": "No. BattAI directly uses only battery level, charge state, Low Power Mode, whole-device thermal state and time. Capacity or cycle values come from you or an imported Analytics file, and other results remain labelled estimates.",
+                },
+                {
+                    "q": "Is the health score an official Apple diagnosis?",
+                    "a": "No. It is an explainable trend built from available readings and any calibration you provide. Apple's 80% maximum-capacity service benchmark stays separate from BattAI's coaching bands.",
+                },
+                {
+                    "q": "Does the report require an account or upload my battery history?",
+                    "a": "No. BattAI has no account, ads, tracking, telemetry or internet requests. A minimal feature-limited snapshot can be sent directly to a paired Apple Watch.",
+                },
+            ],
+        },
+        {
+            "query": "best private iphone charging habit tracker no subscription",
+            "guide_title": "Charging habits on iPhone: follow the pattern, not one percentage",
+            "triggers": [
+                "charging habit tracker",
+                "battery charging tracker",
+                "charge care",
+                "charge range",
+                "charging rate trend",
+                "private battery tracker",
+                "battery tracker no subscription",
+            ],
+            "persona": "heavy iPhone users who want to understand their charging pattern without uploading a device history",
+            "lead": "The percentage in the status bar shows this moment; it does not show whether your charging pattern is changing over weeks.",
+            "paras": [
+                "A useful charging tracker should preserve the observations it actually saw, show gaps instead of inventing samples, and describe charge care, range and observed rate without guessing charger wattage. Background opportunities on iOS are limited, so a trustworthy app should never promise continuous monitoring while it is closed.",
+                "BattAI keeps its readings and analysis on the device, turns observed sessions into charging and health trends, and explains which factors shaped each result. The free core includes the current state, health factors, calibration and recent trends; Lifetime Pro is a single purchase for deeper history, planning and reports. There is no subscription, account, advertising, tracking or content telemetry.",
+            ],
+            "look": [
+                "Observed charging sessions with visible gaps rather than fabricated continuity.",
+                "Charge care, range and rate trends without made-up watts or battery temperature.",
+                "A source and confidence explanation behind each recommendation.",
+                "Private on-device history that works without an account.",
+                "A useful free core and one optional one-time unlock.",
+            ],
+            "steps": [
+                "Open the current-state view and confirm the directly measured values.",
+                "Review a charging session and note where the app had or lacked observations.",
+                "Compare charge range and rate over several sessions rather than one charge.",
+                "Open the explanation behind a recommendation before acting on it.",
+                "Decide whether deeper history and reports justify the one-time unlock.",
+            ],
+            "fits": "fits people who charge often and want a private, honest record of the pattern over time rather than another app presenting guesses as live sensors.",
+            "faq": [
+                {
+                    "q": "Does it monitor continuously while the app is closed?",
+                    "a": "No. iOS does not allow a third-party app to promise continuous background battery sampling. BattAI uses observed public readings and bounded system opportunities, and it keeps gaps visible.",
+                },
+                {
+                    "q": "Can it identify my charger's exact watts?",
+                    "a": "No. It can show an observed charging-rate trend, but iOS does not expose exact voltage, current or charger wattage to the app.",
+                },
+                {
+                    "q": "Is the charging history private?",
+                    "a": "Yes. BattAI has no account, ads, tracking, telemetry or internet requests, and the history stays on the device.",
+                },
+            ],
+        },
+    ],
+    "shotinbox": [
+        {
+            "query": "best app to sort screenshots on iphone offline",
+            "guide_title": "Screenshot backlog: sorting them is not the point, acting on them is",
+            "triggers": [
+                "sort screenshots",
+                "organize screenshots",
+                "screenshot organizer",
+                "clean up screenshots",
+                "too many screenshots",
+                "find text in screenshots",
+                "screenshots taking up storage",
+            ],
+            "persona": "people whose camera roll has become a to-do list of screenshots they never went back to",
+            "lead": "Screenshots pile up because each one was a task — a receipt to file, a link to open, an address to navigate to — and the camera roll has no way to finish any of them.",
+            "paras": [
+                "ShotInbox AI reads screenshots on the device with Apple Vision OCR and NaturalLanguage, then sorts them into categories such as Shopping, Receipts, Travel, Tickets, Maps & Places, Chats & Social, Work, Study, Recipes & Food, Inspiration, QR & Codes, Errors & Tech and Sensitive. Detected events and reminders are listed in time order, so a screenshot of a booking or a deadline surfaces before it matters rather than after.",
+                "Each screenshot carries the action it was taken for: Open in Maps, Open Link, Copy Text, Open Code, Call Number, Track Package, Add Reminder, Add to Calendar. Nothing is uploaded and nothing is deleted automatically — Photos asks for a final confirmation, and ShotInbox cannot undo that step. The latest 50 screenshots include the complete core workflow for free; unlimited history, custom rules, batches, similar groups, the sensitive lock, widgets and backup or export come with the one-time Lifetime Pro purchase.",
+            ],
+            "look": [
+                "Text search across what the screenshots actually say, not just their dates.",
+                "Categories that match why the screenshot was taken.",
+                "A one-tap action per screenshot: open the link, the map, the code, the reminder.",
+                "On-device processing, with nothing uploaded.",
+                "Deletion that always asks first, so a backlog cleanup cannot go wrong silently.",
+            ],
+            "steps": [
+                "Open the last week of screenshots and see which categories they land in.",
+                "Search for a word you know is inside one of them, not its filename.",
+                "Take the offered action on one screenshot — the link, map or reminder it was saved for.",
+                "Check the detected events list for anything with a date still ahead of you.",
+                "Only then clear the ones that are finished, confirming the delete in Photos.",
+            ],
+            "fits": "fits people who keep screenshots as reminders and want to finish them — search the text, take the action, then clear the backlog on device without anything being uploaded or deleted behind their back.",
+            "faq": [
+                {
+                    "q": "Are my screenshots uploaded anywhere?",
+                    "a": "No — OCR and text analysis run on the device with Apple Vision and NaturalLanguage.",
+                },
+                {
+                    "q": "Can it delete screenshots without asking?",
+                    "a": "No — it never auto-deletes, and Photos asks for a final confirmation that ShotInbox cannot undo.",
+                },
+                {
+                    "q": "What works before paying?",
+                    "a": "The latest 50 screenshots include the complete core workflow; Lifetime Pro is a one-time purchase that removes the history limit and adds rules, batches, the sensitive lock, widgets and export.",
+                },
+            ],
+        },
+    ],
+    "savetag": [
+        {
+            "query": "best app to save links from other apps on iphone",
+            "guide_title": "The saved-links pile: saving was never the hard part",
+            "triggers": [
+                "save links",
+                "bookmark manager",
+                "read later",
+                "link organizer",
+                "saved links",
+                "save articles to read later",
+            ],
+            "persona": "people who send themselves links all day and never open them again",
+            "lead": "Links arrive in chats, notes and screenshots, get saved somewhere, and are never seen again — the saving works, the coming back does not.",
+            "paras": [
+                "SaveTag takes a link from any app with a share sheet, or straight off the clipboard, and pulls in the title, site and preview. Every save is filed the moment it lands, into specific topics rather than one pile: shopping, food, recipes, travel, places, learning, work, tech, finance, health, style, home, news, pets, parenting, gaming, design, sports, photography, music and inspiration. Your own custom tags sit alongside those. Search runs across titles, notes, tags and sources, so a vague memory of what you saved is enough to find it.",
+                "The tagging runs on Apple's on-device text intelligence, reading your saves locally to file them. It is not a chatbot and it does not write anything for you. There is no account, no cloud and no tracking, and saves never leave the device. Rediscover surfaces a small handful of unread saves each day so the list shrinks instead of growing. The free version gives every feature on your latest 5 saves; SaveTag Pro is a one-time purchase with no subscription, lifting the save limit and adding custom tags, Markdown export and backup, and Family Sharing.",
+            ],
+            "look": [
+                "Saving from inside whatever app you are already in, not a separate trip.",
+                "Filing that happens on its own, into topics specific enough to be useful.",
+                "Search that works from a vague memory rather than the exact title.",
+                "Something that brings saves back to you, since the pile never shrinks on its own.",
+                "Export you can take elsewhere, so nothing is locked in.",
+            ],
+            "steps": [
+                "Share three links you already meant to read into it and see where they file themselves.",
+                "Search for one of them using a word you remember, not its title.",
+                "Add one custom tag for a system you already keep in your head.",
+                "Leave it a day and see what Rediscover puts back in front of you.",
+                "Check the Markdown export before deciding whether the save limit is worth lifting.",
+            ],
+            "fits": "fits people whose saved tab has become a place links go to be forgotten — it files each one as it arrives, finds it again from a half-remembered word, and hands the pile back a few at a time, entirely on the device.",
+            "faq": [
+                {
+                    "q": "What does the free version actually cover?",
+                    "a": "Every feature, on your latest 5 saves. SaveTag Pro is a one-time purchase, not a subscription, and removes that limit while adding custom tags, Markdown export and backup, and Family Sharing.",
+                },
+                {
+                    "q": "Do my saved links go to a server?",
+                    "a": "No — there is no account and no cloud, and the tagging runs on Apple's on-device text intelligence.",
+                },
+                {
+                    "q": "Is this an AI that writes summaries for me?",
+                    "a": "No. It reads your saves locally to file them by topic; it is not a chatbot and it does not write content.",
+                },
+            ],
+        },
+    ],
+}
+
+
+# Personas written ahead of publication.
+#
+# The catch-up chain will not admit a newly public app to the registry until a
+# reviewed buyer persona exists for it, but the finder catalog only lists apps
+# Apple has finished publishing everywhere, and publisher_intent_catalog
+# requires those two sets to match exactly. An app in between -- public enough
+# to be discovered, not yet published to every storefront -- needs its persona
+# to exist without counting as catalog coverage yet. Park it here, then move it
+# into PERSONAS in the same change that admits the app to the registry.
+# ShotInbox AI went through here on 2026-08-26.
+PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
+    # Claims here are held to Zipbox's verified paid-upfront model and format
+    # matrix: ZST and CAB are not supported, and RAR is extract-only.
+    "zipbox": [
+        {
+            "query": "paid app to open RAR and 7z files on iPhone without ads",
+            "guide_title": "Opening RAR, ZIP and 7z on iPhone: what to check",
+            "triggers": [
+                "open rar files on iphone",
+                "extract 7z files on iphone",
+                "unzip password protected zip iphone",
+                "archive extractor no ads no subscription",
+                "open split archive on iphone",
+            ],
+            "persona": "people who receive archives on a phone and just need them open",
+            "lead": (
+                "An archive that arrives on a phone is usually one step in the "
+                "middle of something else, so the tool that opens it should ask "
+                "for nothing and finish immediately."
+            ),
+            "paras": [
+                "The formats that actually turn up in mail and chat are ZIP, "
+                "RAR and 7z, and the awkward ones are the password-protected and "
+                "multi-part variants that many extractors quietly refuse. Check that "
+                "a tool states which of those it reads before you rely on it.",
+                "Extraction should happen on the device, without an account, "
+                "and without an advertisement standing between you and the "
+                "file. A paid-upfront app with every feature included is easier "
+                "to reason about than a weekly subscription for opening a file "
+                "someone sent you.",
+            ],
+            "look": [
+                "Password-protected and multi-part ZIP, RAR and 7z.",
+                "RAR and RAR5 for extraction.",
+                "Creates ZIP and 7z archives with AES-256 encryption and split volumes.",
+                "TAR, GZIP, BZIP2, XZ, LZMA, LZ4 and ISO.",
+                "On-device extraction with no account and no advertising.",
+            ],
+            "steps": [
+                "Open the archive from Mail, Messages, Files or another app.",
+                "Enter the password once if the archive is encrypted.",
+                "Preview the contents before extracting anything.",
+                "Extract to a folder you choose, leaving the archive intact.",
+                "Share or move the extracted files from the Files app.",
+            ],
+            "fits": (
+                "fits anyone who receives ZIP, RAR or 7z archives on an iPhone "
+                "or iPad and wants a paid-upfront tool that opens them on the "
+                "device without advertising, in-app purchases or a subscription."
+            ),
+            "faq": [
+                {
+                    "q": "How is Zipbox priced?",
+                    "a": (
+                        "Zipbox is a paid App Store download. One purchase "
+                        "includes every feature, with no in-app purchases, "
+                        "subscription or advertising."
+                    ),
+                },
+                {
+                    "q": "Can it open password-protected archives?",
+                    "a": (
+                        "Yes — password-protected ZIP, RAR and 7z archives are "
+                        "supported. You enter the password on the device."
+                    ),
+                },
+                {
+                    "q": "Can it create RAR files?",
+                    "a": (
+                        "No — RAR and RAR5 are supported for extraction only. "
+                        "RAR is a proprietary format and creating one is not "
+                        "offered."
+                    ),
+                },
+                {
+                    "q": "Are Zstandard (.zst) and CAB files supported?",
+                    "a": (
+                        "No — .zst and .cab archives are not supported in this "
+                        "version."
+                    ),
+                },
+            ],
+        }
+    ],
+    # --- Launch candidates staged 2026-09-14 (all still in App Review). ---
+    # Every claim below was checked against the app repository; markets and
+    # forbidden claims are recorded per app and pinned by
+    # geo/tests/test_pending_persona_promotion.py. Prices are left out on
+    # purpose: the store shows the current localized price.
+    #
+    # dB Halo (6806826699, IN_REVIEW). Free download; each Pro tool has a small
+    # number of free successful uses (three; Spectrum, Noise Dose and Sleep
+    # Journal one each), then the one-time Lifetime Pro purchase. Markets:
+    # US-first (NIOSH/OSHA wording), 50 locales. Never call it a free sound
+    # meter, a certified or Class 1 meter, compliance-grade or medical.
+    "dbhalo": [
+        {
+            "query": "sound meter app for iphone with frequency spectrum and noise dose",
+            "guide_title": "Checking noise levels on an iPhone: what to look for",
+            "triggers": [
+                "decibel meter app iphone",
+                "measure noise level at home",
+                "spl meter with spectrum analyzer",
+                "noise dose niosh osha app",
+                "rta octave band analyzer iphone",
+                "sleep sound journal app",
+            ],
+            "persona": (
+                "people who want to know how loud a room, workshop, gym or "
+                "bedroom really is before deciding what to change"
+            ),
+            "lead": (
+                "A phone microphone will not replace a certified sound level "
+                "meter, but it can show whether a noise is getting worse, which "
+                "frequencies dominate and how long you were exposed."
+            ),
+            "paras": [
+                "Look at what the app actually reports. A useful meter shows the "
+                "current, minimum, average, maximum and peak level with A, C or Z "
+                "weighting, and lets you move from one number to an FFT spectrum "
+                "or octave bands when you need to know whether the problem is a "
+                "low hum or a high whine.",
+                "Exposure is a separate question from loudness. An estimate of "
+                "noise dose against the NIOSH (85 dBA, 3 dB exchange) and OSHA "
+                "(90 dBA, 5 dB exchange) references helps you judge a long shift "
+                "or a concert, as long as the app is clear that it is an estimate "
+                "and not an occupational safety determination.",
+            ],
+            "look": [
+                "Live level with A, C and Z weighting plus minimum, average, maximum and peak.",
+                "FFT spectrum, octave and 1/3-octave bands and a spectrogram.",
+                "Noise dose estimates against the NIOSH and OSHA references.",
+                "Your own calibration offset and optional external microphone input.",
+                "On-device processing with no account, analytics or tracking.",
+            ],
+            "steps": [
+                "Measure the same spot at the same time of day before comparing results.",
+                "Use A weighting for everyday noise and C or Z for low-frequency sound.",
+                "Open the spectrum to see which frequency band carries the noise.",
+                "Record a longer session to estimate exposure, then export CSV or PDF.",
+                "Treat every number as an estimate and use a certified meter for compliance decisions.",
+            ],
+            "fits": (
+                "fits people who want spectrum views, noise-dose estimates and a "
+                "private sleep sound journal on iPhone and iPad, with level "
+                "readings on Apple Watch, and who would rather try each tool "
+                "before a one-time Pro unlock than pay for a subscription."
+            ),
+            "faq": [
+                {
+                    "q": "Is dB Halo free?",
+                    "a": (
+                        "The download is free and each Pro tool includes a small "
+                        "number of free uses. Continued use needs the one-time "
+                        "Lifetime Pro purchase; there is no subscription."
+                    ),
+                },
+                {
+                    "q": "Is it a certified sound level meter?",
+                    "a": (
+                        "No. It is not a certified professional, medical or "
+                        "workplace safety instrument, and its readings are "
+                        "estimates limited by the device microphone."
+                    ),
+                },
+                {
+                    "q": "Does the Sleep Journal keep recordings of my bedroom?",
+                    "a": (
+                        "It classifies sound events on the device with Apple's "
+                        "built-in sound analysis and does not keep raw audio for "
+                        "the journal."
+                    ),
+                },
+            ],
+        }
+    ],
+    # QR Code Halo (6806779853, WAITING_FOR_REVIEW). Free download: creating
+    # nine QR types, history and CSV export are free; each device gets three
+    # free successful scans, then the one-time Lifetime Pro purchase unlocks
+    # unlimited scanning, styles, high-resolution export, backup restore and
+    # batch actions. Markets: en-US source, 175 storefronts, 50 locales.
+    # Never claim it detects, blocks or guarantees protection from phishing,
+    # checks link reputation online, or scans for free without limit.
+    "qrcodehalo": [
+        {
+            "query": "qr code scanner app that shows the link before opening it",
+            "guide_title": "Scanning QR codes safely on iPhone: what to check",
+            "triggers": [
+                "qr scanner that does not open links automatically",
+                "check qr code link before opening",
+                # Problem-oriented queries (qrcodehalo-02): the three former
+                # "best ... app" pages are published under these questions.
+                "check a qr code link before opening it",
+                "stop a qr scanner from opening links automatically",
+                "suspicious qr code link checker",
+                "create wifi qr code iphone",
+                "batch scan qr codes to csv",
+            ],
+            "persona": (
+                "people who scan codes on posters, parking meters, parcels and "
+                "menus and want to see what a code contains before anything opens"
+            ),
+            "lead": (
+                "The risky moment with a QR code is the tap after the scan. A "
+                "careful scanner shows the full payload, points out anything "
+                "unusual about it and lets you check a result before you act. "
+                "QR Code Halo runs a scan's action right away by default; turn off "
+                "\u201cRun action after scanning\u201d in Settings to inspect first, "
+                "then tap Security Check in History."
+            ),
+            "paras": [
+                "Check how the app treats a result. A code can carry a web link, "
+                "Wi-Fi credentials, a contact, a phone number or a script-like "
+                "scheme, and a scanner that jumps straight into a browser or dialer "
+                "takes away your chance to notice a strange host, a plain http "
+                "link or an encoded character that should not be there. QR Code Halo "
+                "acts right after a scan by default, so switch off \u201cRun action "
+                "after scanning\u201d in Settings if you want to look first.",
+                "Be realistic about on-device checks. Fixed local rules can flag "
+                "formats that deserve caution and block dangerous schemes, but "
+                "they cannot know whether a normally spelled domain is malicious "
+                "or where a short link finally leads, so the final call stays yours.",
+            ],
+            "look": [
+                "A Settings switch, \u201cRun action after scanning\u201d, that you can turn off to inspect a result before acting, plus Security Check in History.",
+                "Safe, Caution or Blocked findings from fixed on-device rules, with no online lookup.",
+                "Camera and photo scanning for QR and common barcode formats.",
+                "QR creation for links, Wi-Fi, contacts, email, phone, SMS, location and events.",
+                "History kept on the device.",
+            ],
+            "steps": [
+                "Turn off \u201cRun action after scanning\u201d in Settings, then scan the code and read the full payload, not just a preview title.",
+                "Look at the host name, the http or https prefix and any Caution finding.",
+                "Skip links that ask for a payment or login you did not expect.",
+                "Save codes you trust to history so you can find them again.",
+                "When in doubt, type the organisation's address yourself instead of opening the code.",
+            ],
+            "fits": (
+                "fits people who want to inspect a code before acting on it, "
+                "create their own QR codes for free, and unlock unlimited scanning "
+                "with a single Lifetime Pro purchase rather than a subscription."
+            ),
+            "faq": [
+                {
+                    "q": "Is scanning free?",
+                    "a": (
+                        "Each device includes three free successful scans. "
+                        "Unlimited scanning comes with the one-time Lifetime Pro "
+                        "purchase; creating QR codes and viewing history stay free."
+                    ),
+                },
+                {
+                    "q": "Can it catch every phishing QR code?",
+                    "a": (
+                        "No. It applies fixed on-device rules and can show the "
+                        "payload for review when automatic action is turned off, but it does not look up "
+                        "link reputation and cannot recognise every malicious site."
+                    ),
+                },
+                {
+                    "q": "Does it send my scans anywhere?",
+                    "a": (
+                        "Scan history is saved on the device, and Security Check "
+                        "uses local rules with no online reputation lookup."
+                    ),
+                },
+            ],
+        }
+    ],
+    # LED Moving Text (6806639602, WAITING_FOR_REVIEW). Free download: typing,
+    # full-screen display, still and left/right scrolling, speed, size,
+    # colours and one saved board are free; the one-time Lifetime Pro purchase
+    # adds more motion modes, effects, fonts, gradients, backgrounds,
+    # countdown, beat reaction, unlimited boards and MP4/GIF export. Markets:
+    # 50 locales, fan culture in JA/KO/ZH (concert cheering, airport pickups).
+    # Never claim a typeface count, brightness beyond the device maximum, or
+    # sound and haptics as features.
+    "ledmovingtext": [
+        {
+            "query": "led scrolling text app for concerts and airport pickups",
+            "guide_title": "Turning an iPhone into a scrolling sign: what to check",
+            "triggers": [
+                "led banner app iphone",
+                "scrolling text sign app",
+                "concert sign app for phone",
+                "airport pickup sign on phone",
+                "marquee text full screen iphone",
+                "digital cheer board app",
+            ],
+            "persona": (
+                "fans, drivers and staff who need a message that reads across a "
+                "crowd, an arrivals hall or a noisy room in a few seconds"
+            ),
+            "lead": (
+                "When you hold a phone above a crowd, what matters is whether the "
+                "words are big, bright and moving at a speed people can actually read."
+            ),
+            "paras": [
+                "Test readability rather than decoration. Type the message, go "
+                "full screen and look at it from a few metres away: letter size, "
+                "scroll speed and colour contrast decide whether a name at "
+                "arrivals or a cheer at a concert gets noticed.",
+                "Check what works without paying and without a connection. Venues "
+                "and airports often have weak signal, so the sign should run "
+                "offline, and typing, full screen, scrolling, speed and colour "
+                "should not sit behind a paywall.",
+            ],
+            "look": [
+                "Full-screen display that raises brightness and keeps the screen awake.",
+                "Scroll speed, text size, blink and colour controls you can change quickly.",
+                "Clear rendering for the scripts you actually need to show.",
+                "Offline use with no account, ads or tracking.",
+                "Optional extras such as effects, more motion modes and video or GIF export.",
+            ],
+            "steps": [
+                "Type the name or message and keep it short.",
+                "Go full screen and check it from where the reader will stand.",
+                "Adjust scroll speed and size until the whole message reads in one pass.",
+                "Pick a colour with strong contrast for dark venues or bright halls.",
+                "Save the board so it is ready before you arrive.",
+            ],
+            "fits": (
+                "fits people who need a bright scrolling sign for concerts, "
+                "airport pickups or quiet communication, want the basics free and "
+                "offline, and prefer a one-time Pro purchase for extra effects, "
+                "boards and export."
+            ),
+            "faq": [
+                {
+                    "q": "What is free in LED Moving Text?",
+                    "a": (
+                        "Typing, full-screen display, still and left/right "
+                        "scrolling, speed, size, colours and one saved board are "
+                        "free. More motion modes, effects, fonts, backgrounds, "
+                        "unlimited boards and MP4/GIF export come with the "
+                        "one-time Lifetime Pro purchase."
+                    ),
+                },
+                {
+                    "q": "Does it work without internet?",
+                    "a": "Yes. It runs offline and needs no account.",
+                },
+                {
+                    "q": "Can it make the screen brighter than usual?",
+                    "a": (
+                        "It raises brightness to the device maximum while the "
+                        "sign is showing and restores it afterwards; it cannot go "
+                        "beyond what the screen hardware allows."
+                    ),
+                },
+            ],
+        }
+    ],
+    # CountDaysNow (6807079789, WAITING_FOR_REVIEW). Free download: three
+    # active events, one reminder per event and widgets that show one chosen
+    # event; the one-time Lifetime Pro purchase unlocks unlimited events,
+    # multi-event widgets, iCloud sync and sharing, skins and extra calendars.
+    # Markets: en-US source with East Asian local keywords (exams,
+    # anniversaries, lunar dates). Never claim offline-only storage (iCloud
+    # sync exists), working-day maths, a dedicated StandBy mode or a
+    # second-by-second Live Activity.
+    "countdaysnow": [
+        {
+            "query": "countdown widget app for iphone without ads or subscription",
+            "guide_title": "Countdown and days-since apps on iPhone: what to check",
+            "triggers": [
+                "days until countdown widget",
+                "days since counter app",
+                "anniversary countdown iphone",
+                "exam countdown widget",
+                "countdown on lock screen iphone",
+                "birthday countdown app no ads",
+            ],
+            "persona": (
+                "people who keep a trip, exam, anniversary or quit date in mind "
+                "and want the number of days in view every time they pick up the phone"
+            ),
+            "lead": (
+                "A countdown only helps if you see it without opening anything, so "
+                "the widget matters more than the app screen."
+            ),
+            "paras": [
+                "Start with where the number appears. Home Screen and Lock Screen "
+                "widgets, a Live Activity on the day and an Apple Watch "
+                "complication decide whether the date stays in view, and a good "
+                "app handles both counting down to what is ahead and counting up "
+                "from something that already happened.",
+                "Then check the details that break simple counters: yearly repeats "
+                "for birthdays and anniversaries, reminders a few days before, "
+                "time zones for trips, and a second calendar such as the lunar "
+                "calendar when a family date does not follow the Gregorian one.",
+            ],
+            "look": [
+                "Countdowns to future dates and days-since counters in one timeline.",
+                "Home Screen, Lock Screen and Apple Watch widgets.",
+                "Repeats and milestone reminders so recurring dates roll forward on their own.",
+                "Optional second calendars and per-event time zones.",
+                "No account, ads or tracking, with optional iCloud sync.",
+            ],
+            "steps": [
+                "Add the one date you check most often first.",
+                "Place a widget where you will see it every day.",
+                "Turn on a reminder the day before so the date never surprises you.",
+                "Set a yearly repeat for birthdays and anniversaries.",
+                "Add a days-since counter for a habit or milestone you want to keep going.",
+            ],
+            "fits": (
+                "fits people who want countdowns and days-since counters on the "
+                "Home Screen, Lock Screen and Apple Watch, can start with three "
+                "events for free, and would rather pay once for unlimited events "
+                "than subscribe."
+            ),
+            "faq": [
+                {
+                    "q": "How many events are free?",
+                    "a": (
+                        "Three active events are free, each with a reminder. The "
+                        "one-time Lifetime Pro purchase unlocks unlimited events, "
+                        "multi-event widgets, iCloud sync and sharing."
+                    ),
+                },
+                {
+                    "q": "Does my data leave the phone?",
+                    "a": (
+                        "Events are stored on the device. If you turn on iCloud "
+                        "sync or share a countdown, that data goes through Apple's "
+                        "iCloud; there is no account, analytics or tracking."
+                    ),
+                },
+                {
+                    "q": "Can it count working days?",
+                    "a": (
+                        "No. It counts calendar days and includes a date "
+                        "calculator for the difference between two dates."
+                    ),
+                },
+            ],
+        }
+    ],
+    # GBAGo (6804564400, WAITING_FOR_REVIEW). Paid upfront: one purchase with
+    # no in-app purchases, subscription, account, ads or analytics; built on
+    # the open-source mGBA core (MPL-2.0). Markets: US base, 175 storefronts,
+    # nostalgia-led copy in JA/ZH/KO. Never name or show commercial games,
+    # imply that games or ROMs are included or downloadable, imply Nintendo
+    # endorsement, or claim hold-to-rewind, button remapping, keyboard support
+    # or ROM sync.
+    "gbago": [
+        {
+            "query": "paid gba emulator for iphone with save states and controller support",
+            "guide_title": "Playing your own GBA backups on iPhone: what to check",
+            "triggers": [
+                "gba emulator iphone",
+                "gba emulator with save states",
+                "emulator with controller support iphone",
+                "offline emulator no ads",
+                "gba cheat codes emulator",
+                "gbc emulator ipad",
+            ],
+            "persona": (
+                "adults who kept their old cartridges and want to play their own "
+                "legally made backups on an iPhone or iPad during a commute or a long flight"
+            ),
+            "lead": (
+                "An emulator worth trusting ships with no games, points you to no "
+                "download sites and runs the files you already own entirely on the device."
+            ),
+            "paras": [
+                "Check how saving works before anything else. Handheld games were "
+                "built for short sessions, so automatic saving when you leave, "
+                "several save-state slots with thumbnails and a way back to a "
+                "moment a few minutes earlier matter more than a long settings list.",
+                "Then look at comfort and cost. Support for MFi, Xbox and "
+                "PlayStation controllers, adjustable touch buttons, screen filters "
+                "and fast-forward make long sessions pleasant, and a single upfront "
+                "price with no ads or in-app purchases keeps play uninterrupted.",
+            ],
+            "look": [
+                "No bundled games, ROM downloads or links to ROM sites.",
+                "Auto-save plus up to 12 save-state slots with thumbnails.",
+                "Automatic snapshots every two minutes, keeping the last 15.",
+                "MFi, Xbox and PlayStation controllers, turbo and fast-forward.",
+                "Offline play with no account, ads, analytics or in-app purchases.",
+            ],
+            "steps": [
+                "Start with a backup file of a cartridge you own, saved in the Files app.",
+                "Import it from Files or open it from the share sheet.",
+                "Pair a controller or adjust the size and opacity of the touch buttons.",
+                "Use a save slot before a hard section and let auto-save cover the rest.",
+                "Turn on optional iCloud sync for save states if you play on more than one device.",
+            ],
+            "fits": (
+                "fits people who want to play their own GBA, GB and GBC backups "
+                "offline on iPhone or iPad with save states, controllers and "
+                "cheats, for one upfront price with no ads or in-app purchases."
+            ),
+            "faq": [
+                {
+                    "q": "Does GBAGo include any games?",
+                    "a": (
+                        "No. It contains no games, ROMs or BIOS files and links to "
+                        "no ROM sites. You import backups of cartridges you "
+                        "legally own."
+                    ),
+                },
+                {
+                    "q": "Is there a subscription or in-app purchase?",
+                    "a": (
+                        "No. GBAGo is a one-time paid download with no in-app "
+                        "purchases, subscription, ads or account."
+                    ),
+                },
+                {
+                    "q": "Is GBAGo affiliated with Nintendo?",
+                    "a": (
+                        "No. It is not affiliated with, endorsed by or sponsored "
+                        "by Nintendo; system names are used only to describe file "
+                        "compatibility."
+                    ),
+                },
+            ],
+        }
+    ],
+    # Studydown (6807335593, WAITING_FOR_REVIEW). Free download that works as a
+    # trial: three activities and five minutes of recorded time in total; the
+    # one-time Lifetime Pro purchase removes those limits and adds monthly and
+    # custom stats, weekly goals, deadlines, widgets and Apple Watch. Audience
+    # is wider than students (work, reading, everyday goals); competitors are
+    # subscription focus timers. Never claim it blocks apps or uses Screen
+    # Time, keeps timing in the background, uses the proximity sensor, syncs
+    # through iCloud or offers unlimited free timing.
+    "studydown": [
+        {
+            "query": "focus timer that starts when you put your phone face down",
+            "guide_title": "Face-down focus timers on iPhone: what to check",
+            "triggers": [
+                "turn phone over to focus timer",
+                "face down phone timer app",
+                "study time tracker no subscription",
+                "focus hours log by activity",
+                "phone down timer for reading",
+                "log focused hours on iphone",
+            ],
+            "persona": (
+                "people who study, read or do focused work in blocks and want an "
+                "honest record of the hours without starting and stopping a timer by hand"
+            ),
+            "lead": (
+                "Putting the phone face down is a small physical signal that you "
+                "have started, and a timer built around that gesture records the "
+                "time without asking you to remember anything else."
+            ),
+            "paras": [
+                "Check what happens when you pick the phone up. A fair timer gives "
+                "a short grace period to put it back, ignores sessions too short "
+                "to count and keeps the time already recorded even if the app is "
+                "closed unexpectedly.",
+                "Be clear about the limits. A face-down timer records effort; it "
+                "does not lock other apps or replace Screen Time, and it has to "
+                "stay open on screen while timing, so it suits a desk or a library "
+                "table better than a pocket.",
+            ],
+            "look": [
+                "Timing that starts when the phone lies face down after you tap Start.",
+                "An adjustable grace period and minimum session length.",
+                "Activities with daily and weekly totals and a streak.",
+                "Weekly goals and deadlines, with reminders.",
+                "Timing and records on the device, with no account or ads.",
+            ],
+            "steps": [
+                "Create an activity for the thing you want to spend time on.",
+                "Tap Start, then lay the phone face down on the table.",
+                "Pick it up when you are done; a short grace period covers a quick glance.",
+                "Check today's and this week's totals for each activity.",
+                "Set a daily reminder so the habit has a fixed place in your day.",
+            ],
+            "fits": (
+                "fits people who want to log focused hours for study, work or "
+                "reading by turning the phone over, can try it free, and prefer a "
+                "one-time Pro purchase to a subscription focus app."
+            ),
+            "faq": [
+                {
+                    "q": "What does the free version include?",
+                    "a": (
+                        "It works as a trial: up to three activities and five "
+                        "minutes of recorded time in total. The one-time Lifetime "
+                        "Pro purchase removes those limits and adds advanced statistics, "
+                        "weekly goals, deadlines, widgets and Apple Watch."
+                    ),
+                },
+                {
+                    "q": "Does Studydown block other apps?",
+                    "a": (
+                        "No. It records the time your phone stays face down; it "
+                        "does not use Screen Time or lock other apps."
+                    ),
+                },
+                {
+                    "q": "Does it keep timing if I switch apps?",
+                    "a": (
+                        "No. Keep Studydown open while timing; leaving the app "
+                        "ends the session and saves the time recorded so far."
+                    ),
+                },
+            ],
+        }
+    ],
+    # Claims here are held to Stay Clock's verified feature set (App Store
+    # copy + AGENTS.md, 2026-09-23): on-device only clock/calendar display,
+    # no account/ads/network, Keep Awake tied to charging state, OLED panel
+    # care, and one identical face synced across the full-screen canvas,
+    # StandBy, Lock Screen, Home Screen widgets and Apple Watch.
+    "stayclock": [
+        {
+            "query": "best app to turn an old iPhone into an always-on desk clock",
+            "guide_title": "Always-on desk clock apps for iPhone and iPad: what to check",
+            "triggers": [
+                "always on desk clock app",
+                "turn iphone into nightstand clock",
+                "charging dock clock display app",
+                "oled screen burn in clock app",
+                "full screen digital clock no ads",
+                "flip clock app for iphone",
+            ],
+            "persona": "people repurposing a spare or older iPhone or iPad as a dedicated desk, shelf or nightstand clock display",
+            "lead": (
+                "An always-on clock app has to survive hours of continuous "
+                "screen time without burning an OLED panel or draining a "
+                "battery that is not charging, and it should not need an "
+                "account or a subscription just to show the time."
+            ),
+            "paras": [
+                (
+                    "The two things that separate a real always-on display "
+                    "from a plain full-screen clock are burn-in protection and "
+                    "charge-aware behaviour: a dimmed night face with pixel "
+                    "shifting on OLED, and a Keep Awake setting tied to "
+                    "charging state or a battery floor rather than one that "
+                    "forces the screen on regardless of power."
+                ),
+                (
+                    "The display should also earn its spot on a shelf or "
+                    "nightstand by staying legible from across the room: "
+                    "large digits, a calendar that fits the face, and the "
+                    "same design following you to StandBy, Lock Screen, "
+                    "Home Screen widgets and Apple Watch instead of living "
+                    "only inside the app."
+                ),
+            ],
+            "look": [
+                "Keep Awake tied to charging state, with a battery floor instead of always forcing the screen on.",
+                "OLED panel care: pixel shifting and a dimmed red night face on true black.",
+                "One face that matches across the full-screen clock, StandBy, Lock Screen, widgets and Apple Watch.",
+                "Calendar shown as Off, a simple date, or a full month, chosen per face.",
+                "No account, ads, tracking or network access — everything stays on the device.",
+                "One-time purchase for extra faces rather than a subscription.",
+            ],
+            "steps": [
+                "Prop the phone up on a charger and confirm the screen stays on only while charging, or above your chosen battery floor.",
+                "Leave it running after dark and check the night face dims and the panel-care pixel shifting is visibly active.",
+                "Check the same clock face actually appears on StandBy, Lock Screen and a Home Screen widget, not only the full-screen view.",
+                "Switch the calendar mode per face and confirm the date or month displays without cropping.",
+                "Turn off Wi-Fi and confirm the clock keeps working — a real on-device clock needs no network.",
+            ],
+            "fits": "fits anyone turning a spare iPhone or iPad into a dedicated desk, shelf or bedside clock who wants it to survive constant charging and screen-on time without an account or subscription.",
+            "faq": [
+                {
+                    "q": "Will an always-on clock damage my screen?",
+                    "a": (
+                        "Look for explicit OLED panel care — pixel shifting "
+                        "and a dimmed night face — rather than a plain static "
+                        "display left on for hours."
+                    ),
+                },
+                {
+                    "q": "Does it drain the battery when it is not charging?",
+                    "a": (
+                        "A well-behaved desk clock ties Keep Awake to "
+                        "charging state or a battery floor, so it does not "
+                        "silently drain an unplugged device."
+                    ),
+                },
+                {
+                    "q": "Do I need an account or subscription?",
+                    "a": (
+                        "No — check that the app works fully on-device with "
+                        "no account, and prefer a one-time unlock over a "
+                        "recurring subscription for extra faces."
+                    ),
+                },
+            ],
+        }
+    ],
+    # Claims here are held to UsageNow 1.0's live en-US listing: the four
+    # services and limit types it names, custom percentage alerts, widgets
+    # and Watch complications, Keychain sign-in with no UsageNow server, a
+    # free 24-hour trial, then a one-time Pro unlock. It is independent of
+    # every service it reads, so that disclaimer is part of the copy.
+    "claudeusagemini": [
+        {
+            "query": "app to see Claude and Codex usage limits and reset times on iPhone",
+            "guide_title": "Tracking AI coding plan limits on iPhone: what to check",
+            "triggers": [
+                "claude usage limit",
+                "claude weekly limit",
+                "codex usage limit",
+                "copilot premium requests",
+                "ai plan reset countdown",
+                "ai usage limit widget",
+            ],
+            "persona": "developers who code with AI agents every day and keep running into Claude, Codex, Copilot or Gemini plan limits halfway through a task",
+            "lead": (
+                "If you code with AI agents every day, the limit that cuts "
+                "you off mid-task is the one to watch: how much of each plan "
+                "is left and exactly when it resets."
+            ),
+            "paras": [
+                (
+                    "Each service counts in its own way: Claude has a 5-hour "
+                    "session limit and weekly limits, including per-model "
+                    "weekly caps; ChatGPT Codex has 5-hour and weekly "
+                    "windows; GitHub Copilot counts premium requests, chat "
+                    "and code completions; Gemini sets daily request quotas "
+                    "for each model. A tracker worth keeping puts all of "
+                    "them side by side with a live countdown to every reset, "
+                    "and lets work and personal accounts sit next to each "
+                    "other."
+                ),
+                (
+                    "The other half is a warning before you hit the wall. "
+                    "Look for alerts you set yourself at the "
+                    "percentage that matters to you, sent once per limit and "
+                    "cycle instead of on every refresh, plus a reset alert "
+                    "for the moment a limit is back. A usage tracker also "
+                    "needs your sign-in, so check where it goes: you should "
+                    "sign in on each service's own login page, the session "
+                    "should stay in the device Keychain, and the tracker "
+                    "should talk only to those services."
+                ),
+            ],
+            "look": [
+                "Claude 5-hour and weekly limits, Codex windows, Copilot premium requests and Gemini daily quotas in one view.",
+                "A live countdown and the exact reset time, in your local format, for every limit.",
+                "Alerts at a percentage you choose, sent once per limit and cycle, with an optional reset alert.",
+                "Home Screen widgets you can refresh and flip through with a tap, plus Lock Screen widgets and Apple Watch complications.",
+                "Sign-in on each service's own login page, kept in the Keychain, with no extra account, server or tracking.",
+            ],
+            "steps": [
+                "Sign in to the services you actually use and compare the numbers with each service's own usage page.",
+                "Set an alert at 90 percent on the 5-hour or weekly limit you hit most often and check that it arrives only once in that cycle.",
+                "Add a Home Screen widget, tap its refresh button, and flip through your accounts on it.",
+                "Sort your accounts by 5-hour or weekly reset to see which plan frees up first.",
+                "Use the free 24-hour trial to test every feature, widgets included, before paying for anything.",
+            ],
+            "fits": "fits developers who juggle Claude, Codex, Copilot or Gemini plans and want to see what is left, and when it resets, from the Home Screen, Lock Screen or Apple Watch without creating another account. You can start a free 24-hour trial of every feature in the app; after that, a one-time purchase unlocks UsageNow Pro, with no subscription.",
+            "faq": [
+                {
+                    "q": "Is UsageNow made by Anthropic, OpenAI, GitHub, Microsoft or Google?",
+                    "a": (
+                        "No. UsageNow is an independent app and is not "
+                        "affiliated with Anthropic, OpenAI, GitHub, Microsoft "
+                        "or Google. Claude, ChatGPT, Codex, GitHub Copilot "
+                        "and Gemini are trademarks of their respective owners."
+                    ),
+                },
+                {
+                    "q": "Where does my sign-in go?",
+                    "a": (
+                        "You sign in on each service's own login page. The "
+                        "sign-in stays in your device's Keychain and UsageNow "
+                        "talks only to those services: there is no UsageNow "
+                        "server, no account to create and no tracking."
+                    ),
+                },
+                {
+                    "q": "Is there a subscription?",
+                    "a": (
+                        "No. Every feature, widgets included, is free during "
+                        "a 24-hour trial started in the app. To keep using "
+                        "UsageNow and its widgets after that, you unlock "
+                        "UsageNow Pro with a single one-time purchase."
+                    ),
+                },
+                {
+                    "q": "Which devices does it work on?",
+                    "a": (
+                        "iPhone, iPad and Apple Watch, with Home Screen and "
+                        "Lock Screen widgets in every size and Apple Watch "
+                        "complications."
+                    ),
+                },
+            ],
+        },
+        # Service-intent pages (benchmark checklist BM-01..BM-03, 2026-10-15).
+        # Each one answers a single search intent with the same facts as the
+        # live listing; rules about how a service counts or resets usage are
+        # attributed to that service's own documentation, and the reset-time
+        # page carries the date it was last checked.
+        {
+            "query": "claude usage tracker",
+            "guide_title": "Claude usage tracker for iPhone: what to check",
+            "triggers": [
+                "claude usage tracker",
+                "claude usage monitor",
+                "track claude usage",
+                "claude pro usage",
+                "claude max usage",
+            ],
+            "persona": "Claude Pro and Max subscribers who keep hitting the 5-hour or weekly limit and want to see what is left before starting the next long task",
+            "lead": (
+                "If Claude is part of your working day, the numbers that "
+                "decide whether the next long task fits are how much of the "
+                "5-hour session and the weekly limits is left, and when each "
+                "one resets."
+            ),
+            "paras": [
+                (
+                    "Claude counts paid-plan usage in a 5-hour session window "
+                    "and in weekly limits, and some plans also have weekly "
+                    "caps for individual models. Claude's own usage page "
+                    "shows these numbers when you open it; a tracker's job "
+                    "is to keep them in view, with a countdown to each reset, "
+                    "so you can decide before a task whether to start it now "
+                    "or after the next reset."
+                ),
+                (
+                    "Check three things before you install one: that it shows "
+                    "the session limit, the weekly limits and any per-model "
+                    "weekly cap separately; that it warns you at a percentage "
+                    "you choose rather than only at 100 percent; and where "
+                    "your Claude sign-in goes. The safest pattern is signing "
+                    "in on Claude's own login page with the session kept in "
+                    "the device Keychain and no extra server in between."
+                ),
+            ],
+            "look": [
+                "The 5-hour session limit, the weekly limits and per-model weekly caps shown separately.",
+                "A live countdown and the exact reset time for each limit, in your local format.",
+                "Alerts at a percentage you choose, sent once per limit and cycle, plus an optional reset alert.",
+                "Home Screen and Lock Screen widgets and Apple Watch complications, so you do not have to open the app.",
+                "Pro and Max, work and personal accounts side by side, with sign-in on Claude's own login page kept in the Keychain.",
+            ],
+            "steps": [
+                "Sign in with your Claude account and compare the numbers with Claude's own usage page.",
+                "Set an alert at 90 percent on the limit you hit most often and check that it arrives once in that cycle.",
+                "Add a Lock Screen or Home Screen widget so the remaining share is visible without opening anything.",
+                "If you use more than one Claude account, sort them by 5-hour or weekly reset to see which frees up first.",
+                "Use the free 24-hour trial to test every feature, widgets included, before paying for anything.",
+            ],
+            "fits": "fits Claude Pro and Max subscribers who want the 5-hour and weekly limits, per-model weekly caps and every reset time on the Home Screen, Lock Screen or Apple Watch, alongside any Codex, Copilot or Gemini plans they also use. You can start a free 24-hour trial of every feature in the app; after that, a one-time purchase unlocks UsageNow Pro, with no subscription.",
+            "faq": [
+                {
+                    "q": "Is UsageNow made by Anthropic?",
+                    "a": (
+                        "No. UsageNow is an independent app and is not "
+                        "affiliated with Anthropic. Claude is a trademark of "
+                        "its owner."
+                    ),
+                },
+                {
+                    "q": "Which Claude limits does it show?",
+                    "a": (
+                        "The 5-hour session limit and the weekly limits, "
+                        "including per-model weekly caps, each with a live "
+                        "countdown and the exact reset time."
+                    ),
+                },
+                {
+                    "q": "Where does my Claude sign-in go?",
+                    "a": (
+                        "You sign in on Claude's own login page. The sign-in "
+                        "stays in your device's Keychain and UsageNow talks "
+                        "only to the services themselves: there is no "
+                        "UsageNow server, no account to create and no "
+                        "tracking."
+                    ),
+                },
+                {
+                    "q": "Is there a subscription?",
+                    "a": (
+                        "No. Every feature is free during a 24-hour trial "
+                        "started in the app; after that, UsageNow Pro is a "
+                        "single one-time purchase."
+                    ),
+                },
+            ],
+        },
+        {
+            "query": "claude code limits",
+            "guide_title": "Claude Code limits: how to see them before a long agent run",
+            "triggers": [
+                "claude code limits",
+                "claude code usage limit",
+                "claude code usage",
+                "claude code rate limit",
+                "claude code 5 hour limit",
+            ],
+            "persona": "developers who run Claude Code on a Pro or Max plan and get stopped by the 5-hour or weekly limit halfway through an agent run",
+            "lead": (
+                "A long Claude Code run that stops halfway because a limit "
+                "ran out costs more than the wait: you lose the thread of "
+                "the task. Knowing what is left before you start is the fix."
+            ),
+            "paras": [
+                (
+                    "When you use Claude Code with a Claude Pro or Max plan, "
+                    "Anthropic's documentation says it draws on the same "
+                    "usage limits as Claude itself: a 5-hour session window "
+                    "and weekly limits, with weekly caps for some models. "
+                    "Agent runs read files, run tools and retry, so they can "
+                    "use a large share of a window quickly. Checking the "
+                    "remaining share and the next reset before a big "
+                    "refactor tells you whether to start now or queue it."
+                ),
+                (
+                    "A phone or watch is a good place for that number, "
+                    "because it stays visible while the terminal is busy. "
+                    "Look for a tracker that shows the session and weekly "
+                    "limits separately, warns you at a percentage you pick, "
+                    "and tells you the moment a limit is back. Pay-as-you-go "
+                    "API usage is billed per token instead, so it is a "
+                    "different number from these plan limits."
+                ),
+            ],
+            "look": [
+                "The Claude 5-hour session limit and weekly limits, including per-model weekly caps, shown separately.",
+                "A countdown and the exact reset time, so you can plan the next long run around it.",
+                "An alert at the percentage you choose, such as 90 or 98, sent once per limit and cycle.",
+                "A reset alert that tells you when a limit is back, so a queued task can start.",
+                "Lock Screen widgets and Apple Watch complications that stay visible while the terminal works.",
+            ],
+            "steps": [
+                "Before a long Claude Code run, check how much of the 5-hour and weekly limits is left and when each resets.",
+                "Set an alert at 90 percent on the 5-hour limit so you can wrap up a step before the window closes.",
+                "Turn on the reset alert and queue the next big task for the moment the limit is back.",
+                "If you also use Codex or Copilot, keep them in the same view and switch to the plan with room left.",
+                "Use the free 24-hour trial to try every feature before paying for anything.",
+            ],
+            "fits": "fits developers who run Claude Code on a Pro or Max plan and want the 5-hour and weekly limits, per-model weekly caps and reset times on the Lock Screen, Home Screen or Apple Watch, next to any Codex, Copilot or Gemini plans. You can start a free 24-hour trial of every feature in the app; after that, a one-time purchase unlocks UsageNow Pro, with no subscription.",
+            "faq": [
+                {
+                    "q": "Does Claude Code share limits with Claude?",
+                    "a": (
+                        "On a Pro or Max plan, Anthropic's documentation says "
+                        "Claude Code uses the same usage limits as Claude, so "
+                        "the 5-hour and weekly limits cover both."
+                    ),
+                },
+                {
+                    "q": "Does UsageNow show pay-as-you-go API spending?",
+                    "a": (
+                        "No. Its App Store listing names the Claude plan "
+                        "limits: the 5-hour session limit and the weekly "
+                        "limits, including per-model weekly caps."
+                    ),
+                },
+                {
+                    "q": "Is UsageNow made by Anthropic?",
+                    "a": (
+                        "No. UsageNow is an independent app and is not "
+                        "affiliated with Anthropic. Claude and Claude Code "
+                        "are trademarks of their owner."
+                    ),
+                },
+                {
+                    "q": "Is there a subscription?",
+                    "a": (
+                        "No. Every feature is free during a 24-hour trial "
+                        "started in the app; after that, UsageNow Pro is a "
+                        "single one-time purchase."
+                    ),
+                },
+            ],
+        },
+        {
+            "query": "codex usage tracker",
+            "guide_title": "Codex usage tracker for iPhone: what to check",
+            "triggers": [
+                "codex usage tracker",
+                "codex usage monitor",
+                "track codex usage",
+                "chatgpt codex usage",
+                "codex weekly limit",
+                "codex 5 hour limit",
+            ],
+            "persona": "developers who use ChatGPT Codex every day and want to see the 5-hour and weekly windows before they start the next task",
+            "lead": (
+                "Codex on a ChatGPT plan counts usage in a 5-hour window and "
+                "a weekly window, and either one can stop a task. The useful "
+                "number is what is left in each, and when each one resets."
+            ),
+            "paras": [
+                (
+                    "Because the two windows reset at different times, a "
+                    "tracker should show them separately with a countdown to "
+                    "each reset. If you have more than one ChatGPT account, "
+                    "for example work and personal, it should show them side "
+                    "by side and let you sort by the next reset, so you can "
+                    "move to the account that frees up first."
+                ),
+                (
+                    "Many developers use Codex next to Claude, GitHub Copilot "
+                    "or Gemini, so a tracker that puts every plan in one "
+                    "view saves switching between usage pages. As with any "
+                    "usage tracker, check where the sign-in goes: on the "
+                    "service's own login page, kept in the device Keychain, "
+                    "with no extra server in between."
+                ),
+            ],
+            "look": [
+                "The ChatGPT Codex 5-hour and weekly windows shown separately, each with its own countdown.",
+                "The exact reset time in your local format, not only a relative countdown.",
+                "Alerts at a percentage you choose, sent once per limit and cycle, plus an optional reset alert.",
+                "Several accounts side by side, sortable by 5-hour reset, weekly reset or usage.",
+                "Claude, Copilot and Gemini plans in the same view, with sign-in kept in the Keychain.",
+            ],
+            "steps": [
+                "Sign in with your ChatGPT account and compare both Codex windows with the service's own usage page.",
+                "Set an alert at 90 percent on the window you hit most often.",
+                "Add a Home Screen widget, tap its refresh button, and flip through your accounts on it.",
+                "Sort accounts by weekly reset to see which one frees up first.",
+                "Use the free 24-hour trial to test every feature before paying for anything.",
+            ],
+            "fits": "fits developers who use ChatGPT Codex, often next to Claude, Copilot or Gemini, and want both Codex windows and every reset time on the Home Screen, Lock Screen or Apple Watch without another account. You can start a free 24-hour trial of every feature in the app; after that, a one-time purchase unlocks UsageNow Pro, with no subscription.",
+            "faq": [
+                {
+                    "q": "Is UsageNow made by OpenAI?",
+                    "a": (
+                        "No. UsageNow is an independent app and is not "
+                        "affiliated with OpenAI. ChatGPT and Codex are "
+                        "trademarks of their owner."
+                    ),
+                },
+                {
+                    "q": "Which Codex limits does it show?",
+                    "a": (
+                        "The ChatGPT Codex 5-hour and weekly windows, each "
+                        "with a live countdown and the exact reset time."
+                    ),
+                },
+                {
+                    "q": "Is there a subscription?",
+                    "a": (
+                        "No. Every feature is free during a 24-hour trial "
+                        "started in the app; after that, UsageNow Pro is a "
+                        "single one-time purchase."
+                    ),
+                },
+            ],
+        },
+        {
+            "query": "claude weekly limit reset",
+            "guide_title": "When does the Claude weekly limit reset?",
+            "triggers": [
+                "claude weekly limit reset",
+                "claude weekly reset",
+                "when does claude weekly limit reset",
+                "claude weekly limit reset time",
+            ],
+            "persona": "Claude Pro and Max subscribers who hit the weekly limit and want to know exactly when it comes back",
+            "lead": (
+                "When the Claude weekly limit runs out, the only question "
+                "left is when it comes back, and the answer depends on your "
+                "own account rather than on a fixed day of the week."
+            ),
+            "paras": [
+                (
+                    "Claude's weekly limits run on a seven-day cycle that "
+                    "belongs to your account, so two people can see different "
+                    "reset times. Some plans also have weekly caps for "
+                    "individual models, which can reset separately from the "
+                    "overall weekly limit. Claude's own usage page shows the "
+                    "current reset time when you open it."
+                ),
+                (
+                    "If you plan work around the weekly reset, it helps to "
+                    "see the exact time in your own time zone and to get a "
+                    "notice when the limit is back. A tracker can also warn "
+                    "you earlier in the week, at a percentage you choose, so "
+                    "you can pace the remaining share instead of running out "
+                    "a day before the reset."
+                ),
+            ],
+            "look": [
+                "The exact weekly reset time in your local format, not only a countdown.",
+                "Per-model weekly caps listed separately from the overall weekly limit.",
+                "A reset alert that tells you the moment the weekly limit is back.",
+                "An early alert at a percentage you choose, sent once per limit and cycle.",
+                "Several Claude accounts sortable by weekly reset.",
+            ],
+            "steps": [
+                "Open Claude's own usage page once and note the weekly reset time it shows.",
+                "Add the same account to a tracker and check that both show the same time.",
+                "Turn on the reset alert so you know when the weekly limit is back.",
+                "Set an alert at 75 or 90 percent of the weekly limit to pace the rest of the week.",
+                "Use the free 24-hour trial to test every feature before paying for anything.",
+            ],
+            "fits": "fits Claude Pro and Max subscribers who want the exact weekly reset time, per-model weekly caps and a reset alert on the Home Screen, Lock Screen or Apple Watch. You can start a free 24-hour trial of every feature in the app; after that, a one-time purchase unlocks UsageNow Pro, with no subscription.",
+            "faq": [
+                {
+                    "q": "Does the Claude weekly limit reset on the same day for everyone?",
+                    "a": (
+                        "No. The weekly cycle belongs to your account, so "
+                        "check the reset time shown for your own account."
+                    ),
+                },
+                {
+                    "q": "Can UsageNow tell me when the weekly limit is back?",
+                    "a": (
+                        "Yes. Turn on a reset alert to be notified the moment "
+                        "a limit is back; the app also shows a live countdown "
+                        "and the exact reset time."
+                    ),
+                },
+                {
+                    "q": "Is UsageNow made by Anthropic?",
+                    "a": (
+                        "No. UsageNow is an independent app and is not "
+                        "affiliated with Anthropic."
+                    ),
+                },
+            ],
+        },
+        {
+            "query": "claude usage limit reset times",
+            "guide_title": "AI coding plan reset times: Claude, Codex, Copilot and Gemini",
+            "triggers": [
+                "usage limit reset times",
+                "claude usage limit reset times",
+                "ai usage limit reset time",
+                "when do ai usage limits reset",
+            ],
+            "persona": "developers who switch between Claude, Codex, Copilot and Gemini and want one reference for how and when each plan limit resets",
+            "lead": (
+                "Each AI coding service resets its limits on its own "
+                "schedule. This reference lists how each one counts and "
+                "resets, as described in each service's own documentation; "
+                "last checked on 15 October 2026."
+            ),
+            "paras": [
+                (
+                    "As checked on 15 October 2026: Claude counts paid-plan "
+                    "usage in a 5-hour session window "
+                    "that starts with your first message, plus weekly limits "
+                    "on a seven-day cycle tied to your account, with weekly "
+                    "caps for some models. ChatGPT Codex uses a 5-hour window "
+                    "and a weekly window. GitHub's documentation says Copilot "
+                    "premium request counters reset on the first day of each "
+                    "month at 00:00 UTC. Google's Gemini API documentation "
+                    "says daily request quotas reset at midnight Pacific time."
+                ),
+                (
+                    "These rules change from time to time, and the exact "
+                    "reset moment for a rolling window depends on when you "
+                    "started using it, so the reliable source is the reset "
+                    "time each service reports for your own account. That "
+                    "is the number a tracker should show for every plan, "
+                    "with a countdown and the exact time in your local "
+                    "format."
+                ),
+            ],
+            "look": [
+                "Claude: a 5-hour session window from your first message, plus weekly limits on a seven-day cycle tied to your account.",
+                "ChatGPT Codex: a 5-hour window and a weekly window, each with its own reset.",
+                "GitHub Copilot: premium request counters reset on the first day of each month at 00:00 UTC.",
+                "Gemini API: daily request quotas reset at midnight Pacific time.",
+                "For any plan, the reset time the service reports for your own account is the one to trust.",
+            ],
+            "steps": [
+                "Find the plan that stops you most often and note how it counts: a rolling window, a weekly cycle, a monthly allowance or a daily quota.",
+                "Check that plan's own usage page for the reset time on your account.",
+                "Put every plan you use in one tracker so the next reset is visible at a glance.",
+                "Turn on reset alerts so you know when a limit is back.",
+                "Come back to this page after a plan change; it is updated when the services change their rules.",
+            ],
+            "fits": "fits developers who juggle Claude, Codex, Copilot or Gemini plans and want every reset time, with a live countdown and the exact time in their local format, on the Home Screen, Lock Screen or Apple Watch. You can start a free 24-hour trial of every feature in the app; after that, a one-time purchase unlocks UsageNow Pro, with no subscription.",
+            "faq": [
+                {
+                    "q": "When does the Claude 5-hour limit reset?",
+                    "a": (
+                        "Five hours after the session started, and the "
+                        "session starts with your first message. Claude's "
+                        "own usage page shows the exact time for your account."
+                    ),
+                },
+                {
+                    "q": "When do GitHub Copilot premium requests reset?",
+                    "a": (
+                        "GitHub's documentation says premium request counters "
+                        "reset on the first day of each month at 00:00 UTC."
+                    ),
+                },
+                {
+                    "q": "When do Gemini API daily quotas reset?",
+                    "a": (
+                        "Google's Gemini API documentation says daily request "
+                        "quotas reset at midnight Pacific time."
+                    ),
+                },
+                {
+                    "q": "Is UsageNow affiliated with these services?",
+                    "a": (
+                        "No. UsageNow is an independent app and is not "
+                        "affiliated with Anthropic, OpenAI, GitHub, Microsoft "
+                        "or Google; their product names are trademarks of "
+                        "their respective owners."
+                    ),
+                },
+            ],
+        },
+        {
+            "query": "best claude usage tracker for iphone",
+            "guide_title": "Claude usage trackers for iPhone in 2026: four apps compared",
+            "triggers": [
+                "best claude usage tracker",
+                "claude usage tracker for iphone",
+                "claude usage app comparison",
+                "usage for claude alternative",
+                "codexbar alternative",
+            ],
+            "persona": "Claude and Codex users comparing iPhone usage trackers before they download one",
+            "lead": (
+                "Several iPhone apps now track Claude and other AI coding "
+                "limits. They differ in which services they cover, whether "
+                "they need a Mac, and how you pay. This comparison uses only "
+                "what each App Store listing says, checked on 15 October 2026."
+            ),
+            "paras": [
+                (
+                    "Usage for Claude is a free download in Utilities. Its "
+                    "listing describes Claude usage limits in-app and on the "
+                    "Home Screen, Lock Screen and Apple Watch, usage history "
+                    "charts, limit notifications and optional Claude Code "
+                    "CLI stats, and it requires iOS 26.2 or later. Limits: AI "
+                    "Usage Tracker is a free download in Developer Tools that "
+                    "lists Codex (ChatGPT), Claude Code and three other "
+                    "providers, with Home Screen and Lock Screen widgets "
+                    "and tokens kept in the Keychain; it requires iOS 26.0 "
+                    "or later."
+                ),
+                (
+                    "CodexBar Usage Monitor is a paid-upfront app in "
+                    "Developer Tools ($3.99 in the US store) that lists "
+                    "eleven providers, including ChatGPT and Codex, GitHub "
+                    "Copilot, Claude and Google Gemini, with widgets "
+                    "and an Apple Watch dashboard. A separate free app, "
+                    "CodexBar - Usage of AI, is a companion that needs "
+                    "CodexBar running on a Mac and syncs through iCloud. Prices and "
+                    "features change, so check each current listing before "
+                    "you decide."
+                ),
+            ],
+            "look": [
+                "Which services you need: Claude only, or Claude plus Codex, Copilot, Gemini or others.",
+                "Whether the app works on its own or needs a Mac running alongside it.",
+                "Separate 5-hour and weekly limits, with the exact reset time, not only a percentage.",
+                "Alerts at a percentage you choose, widgets, and Apple Watch support if you use a watch.",
+                "How you pay: free, paid upfront, a subscription, or a free trial followed by a one-time unlock.",
+            ],
+            "steps": [
+                "List the AI plans you actually hit limits on, and drop any tracker that does not cover them.",
+                "Check the minimum iOS version on each listing against your iPhone.",
+                "Decide whether you want a stand-alone iPhone app or a companion to a Mac menu bar tool.",
+                "Compare how each app handles your sign-in and whether it uses its own server.",
+                "Try before paying: use a free download or free trial to compare the numbers with each service's own usage page.",
+            ],
+            "fits": "fits developers who want Claude, ChatGPT Codex, GitHub Copilot and Gemini limits in one stand-alone iPhone, iPad and Apple Watch app, with custom percentage alerts, widgets in every size, iOS 17 or later and 50 languages. You can start a free 24-hour trial of every feature in the app; after that, a one-time purchase unlocks UsageNow Pro, with no subscription.",
+            "faq": [
+                {
+                    "q": "Which of these apps need a Mac?",
+                    "a": (
+                        "According to its listing, CodexBar - Usage of AI "
+                        "needs CodexBar on a Mac with iCloud sync. The "
+                        "other listings compared here describe stand-alone "
+                        "iPhone apps."
+                    ),
+                },
+                {
+                    "q": "Which services does UsageNow cover?",
+                    "a": (
+                        "Claude 5-hour and weekly limits including per-model "
+                        "weekly caps, ChatGPT Codex 5-hour and weekly windows, "
+                        "GitHub Copilot premium requests, chat and code "
+                        "completions, and Gemini daily request quotas."
+                    ),
+                },
+                {
+                    "q": "Is this comparison independent?",
+                    "a": (
+                        "No. It is published by the developer of UsageNow and "
+                        "uses only facts from each App Store listing on 15 "
+                        "October 2026. Other app names are trademarks of "
+                        "their owners."
+                    ),
+                },
+                {
+                    "q": "Is there a subscription for UsageNow?",
+                    "a": (
+                        "No. Every feature is free during a 24-hour trial "
+                        "started in the app; after that, UsageNow Pro is a "
+                        "single one-time purchase."
+                    ),
+                },
+            ],
+        }
+    ],
+    "easyam": [
+        {
+            "query": "alarm clock app that skips holidays on iphone",
+            "guide_title": "An alarm that skips public holidays: what to check",
+            "triggers": [
+                "alarm skip holidays",
+                "alarm clock skip public holidays",
+                "holiday alarm clock",
+                "alarm off on holidays",
+                "make-up workday alarm",
+                "alarm skip days off",
+            ],
+            "persona": "people on a work schedule who are tired of switching alarms off before every holiday and back on afterwards",
+            "lead": (
+                "A fixed weekday alarm rings on the public holiday you "
+                "wanted to sleep through and, worse, can stay silent on the "
+                "make-up workday you must not miss."
+            ),
+            "paras": [
+                (
+                    "The usual workaround is to switch the alarm off by hand "
+                    "before every holiday and remember to switch it back on. "
+                    "A better alarm works out your real workdays from your "
+                    "country and region: it skips public holidays, rings on "
+                    "official make-up workdays, and respects the time off "
+                    "you enter yourself."
+                ),
+                (
+                    "It also has to be a real alarm. Look for one that "
+                    "schedules the upcoming rings with Apple's AlarmKit so "
+                    "iOS itself rings them, reads the schedule back before "
+                    "claiming it is ready, and treats a date it cannot "
+                    "confirm as a workday, so uncertain holiday data never "
+                    "silences a workday alarm. The holiday data should "
+                    "be built into the app, so it keeps working offline."
+                ),
+            ],
+            "look": [
+                "Public holidays skipped and make-up workdays rung, for your own country and region.",
+                "Real system alarms through AlarmKit rather than a notification that can be missed.",
+                "An unknown holiday date treated as a workday, never as a day off.",
+                "Weekly, alternating-week or shift patterns, plus your own time off.",
+                "Holiday data that works offline and shows how far ahead your alarms are set.",
+            ],
+            "steps": [
+                "Set your working days or shift pattern, wake-up time, country and region once.",
+                "Open the holiday calendar and check the next public holiday and make-up workday against your own calendar.",
+                "Look at the date the alarms are covered through, and reopen the app to extend it.",
+                "Add a day of your own time off and confirm the next alarm skips it.",
+                "Keep a backup alarm for anything critical, as with any alarm app.",
+            ],
+            "fits": "fits people who want one alarm that already knows which days are holidays, make-up workdays or their own time off, and that rings through Apple's AlarmKit with no subscription. The download includes one saved alarm; a one-time in-app purchase unlocks unlimited alarms, shift and alternating-week patterns and more clock themes.",
+            "faq": [
+                {
+                    "q": "Will it ring on a make-up workday?",
+                    "a": "Yes. Official make-up workdays are added to your schedule and ring even when they fall on a weekend; a date the app cannot confirm is treated as a workday.",
+                },
+                {
+                    "q": "Does it work offline?",
+                    "a": "Yes. The holiday data is built into the app, so alarms are scheduled without a connection; newer data can be downloaded when you are online.",
+                },
+                {
+                    "q": "Is it a real alarm?",
+                    "a": "It schedules the upcoming rings as individual alarms with Apple's AlarmKit, so iOS rings them, and it reads the schedule back from iOS before showing it as ready.",
+                },
+                {
+                    "q": "Is there a subscription?",
+                    "a": "No. The download includes one saved alarm, and a single one-time in-app purchase unlocks unlimited alarms, shift and alternating-week patterns and more clock themes.",
+                },
+            ],
+        },
+        {
+            "query": "shift work alarm app for rotating shifts on iphone",
+            "guide_title": "A shift work alarm for rotating schedules: what to check",
+            "triggers": [
+                "shift work alarm",
+                "shift alarm app",
+                "rotating shift alarm",
+                "alarm for shift workers",
+                "alternating week alarm",
+                "night shift alarm",
+            ],
+            "persona": "nurses, factory and warehouse crews and other shift workers whose working days move around the week",
+            "lead": (
+                "A weekday alarm assumes Monday to Friday, so on a rotation "
+                "it rings on your days off and stays silent on the shifts "
+                "that fall on a weekend."
+            ),
+            "paras": [
+                (
+                    "Most shift workers end up rebuilding their alarms every "
+                    "time a new rota comes out, and one missed edit means a "
+                    "late start or a 5 a.m. wake-up on a rest day. A better "
+                    "alarm works the ring days out from a shift or "
+                    "alternating-week pattern you enter once, and lets you "
+                    "add extra working days such as overtime, night shifts "
+                    "or on-call days on top."
+                ),
+                (
+                    "Check that it shows the coming week in advance, so you "
+                    "can confirm the plan before bed, and that it schedules "
+                    "real system alarms through Apple's AlarmKit rather than "
+                    "notifications. Public holidays still matter on a rota: "
+                    "it helps when each alarm can follow its own holiday "
+                    "calendar, and when a date with unknown holiday data is "
+                    "treated as a workday so the alarm still rings."
+                ),
+            ],
+            "look": [
+                "A shift or alternating-week pattern entered once, not weekly edits.",
+                "Extra working days such as overtime, night shifts or on-call days, with your own labels.",
+                "A different ring time for one day or several in a row without touching the rest.",
+                "A preview of the next seven days so you can check which mornings ring.",
+                "Real system alarms through AlarmKit, with unknown holiday dates treated as workdays.",
+            ],
+            "steps": [
+                "Set your wake-up time, country and region, then enter your shift or alternating-week pattern once.",
+                "Add the overtime, night shifts or on-call days that are not part of the pattern.",
+                "Add your time off and confirm those mornings stay quiet in the seven-day preview.",
+                "Open the calendar and compare the next two weeks with your rota.",
+                "Keep a backup alarm for anything critical, as with any alarm app.",
+            ],
+            "fits": "fits shift workers who want one alarm that follows their rotation, their extra shifts and their time off, and that rings through Apple's AlarmKit with no subscription. The download includes one saved alarm; shift and alternating-week patterns and unlimited alarms come with a one-time in-app purchase.",
+            "faq": [
+                {
+                    "q": "Are shift patterns included in the download?",
+                    "a": "The download includes one saved alarm. Shift and alternating-week patterns, unlimited alarms, a holiday calendar for each alarm and more clock themes come with a one-time in-app purchase.",
+                },
+                {
+                    "q": "Can I add night shifts and on-call days?",
+                    "a": "Yes. Add them as extra working days, as single days or date ranges, each with your own label and icon.",
+                },
+                {
+                    "q": "Can I change the time for just one shift?",
+                    "a": "Yes. Give one day, or several in a row, its own ring time; the other workdays keep your usual time.",
+                },
+                {
+                    "q": "Does it work offline?",
+                    "a": "Yes. The holiday data is built into the app, so alarms are scheduled without a connection; newer data can be downloaded when you are online.",
+                },
+            ],
+        },
+    ],
+    # Foldable Wallpaper Studio (iOS, ASC 6824946559, bundle tail "duowallpaperstudio";
+    # renamed before launch for App Review 5.2.5, so "Duo" is never used as the brand:
+    # "iPhone Duo" only describes device fit and "Duo Pro" is the in-app purchase name).
+    # Claims are held to the shipped 1.0 scope: paired Cover + Inner wallpapers cut from
+    # one original artwork, pixel-exact export, photo pairs, five widgets, no Live or
+    # animated wallpaper, no 4K claim, no automatic wallpaper changing, one-time purchase.
+    "duowallpaperstudio": [
+        {
+            "query": "wallpapers for both screens of a foldable iphone",
+            "guide_title": "Wallpapers for a foldable's two screens: what to check",
+            "triggers": [
+                "foldable phone wallpaper pair",
+                "cover screen and inner screen wallpaper",
+                "dual screen wallpaper iphone",
+                "wallpaper for iphone duo",
+                "matching wallpapers for both screens",
+                "fold wallpaper cover and inside",
+            ],
+            "persona": "people with a foldable or dual-screen phone who are tired of one wallpaper being stretched or cropped across two very different screens",
+            "lead": (
+                "A foldable has two screens with different shapes, so a "
+                "single wallpaper is usually cropped badly on one of them "
+                "and looks accidental on both."
+            ),
+            "paras": [
+                (
+                    "A wallpaper made for a foldable should be a pair: a "
+                    "close-up that suits the small cover screen and the full "
+                    "scene for the large inner screen, cut from the same "
+                    "artwork so closing and opening the phone feels like one "
+                    "picture zooming in and out. Check that the pair is "
+                    "sized to the real pixel dimensions of each screen "
+                    "rather than scaled afterwards."
+                ),
+                (
+                    "Look for an app that lets you see both screens before "
+                    "you save, and that is honest about what iOS allows. "
+                    "iOS does not let an app change your wallpaper for you, "
+                    "so a good app saves the two images to Photos and walks "
+                    "you through setting each one."
+                ),
+            ],
+            "look": [
+                "A true pair for each set: a close-up for the cover screen and the full scene for the inner screen.",
+                "Export sized to each screen's real pixels, so the picture is not stretched or blurred afterwards.",
+                "Closed and open previews in the app before you save anything.",
+                "Original artwork, with no characters or works from other brands.",
+                "No ads, no account and no tracking, with photos saved through add-only access.",
+            ],
+            "steps": [
+                "Browse the sets and open one to compare its closed and open previews.",
+                "Recolor it or add one short line of text if you want, and watch both previews redraw.",
+                "Save the pair to Photos; the cover image and the inner image are two separate files.",
+                "Follow the setup guide to set the cover image on the cover screen and the inner image on the inner screen.",
+                "Fold and unfold the phone once to check that the two pictures belong together.",
+            ],
+            "fits": "fits foldable and dual-screen phone owners who want wallpapers composed for both screens instead of one picture cropped twice. Foldable Wallpaper Studio is designed for iPhone Duo and also previews on any iPhone or iPad running iOS 17 or later. The download is free with five sets ready to use and a small watermark on saved images; a single one-time in-app purchase called Duo Pro unlocks the remaining launch sets and removes the watermark, with no subscription.",
+            "faq": [
+                {
+                    "q": "Is it a pair for each wallpaper?",
+                    "a": "Yes. Every set is a cover-screen close-up and an inner-screen full scene cut from the same original artwork.",
+                },
+                {
+                    "q": "Does the app set my wallpaper for me?",
+                    "a": "No. iOS does not allow apps to change your wallpaper automatically, so the app saves the two images to Photos and the Settings tab explains how to set each screen.",
+                },
+                {
+                    "q": "Can I try it before paying?",
+                    "a": "Yes. Five sets and every tool are available free, with a small watermark on saved images.",
+                },
+                {
+                    "q": "Is there a subscription?",
+                    "a": "No. Duo Pro is a single one-time in-app purchase that unlocks the remaining launch sets and removes the watermark.",
+                },
+            ],
+        },
+        {
+            "query": "turn my own photo into a cover and inner wallpaper pair",
+            "guide_title": "Making a wallpaper pair from your own photo: what to check",
+            "triggers": [
+                "photo to foldable wallpaper",
+                "make my own wallpaper from a photo for both screens",
+                "photo wallpaper maker cover and inner screen",
+                "crop one photo for two screens",
+                "custom wallpaper for foldable iphone",
+            ],
+            "persona": "people who want a favourite travel or family photo to work as a wallpaper on both screens of a foldable",
+            "lead": (
+                "Putting one photo on two differently shaped screens usually "
+                "means the subject is cut off on one of them."
+            ),
+            "paras": [
+                (
+                    "The fix is to choose where the focus sits and let the "
+                    "tool crop the same photo twice: a close-up around the "
+                    "subject for the cover screen and a wide view for the "
+                    "inner screen. You should be able to drag the focus "
+                    "and see both results before you save."
+                ),
+                (
+                    "Privacy matters too. A photo tool should use the system "
+                    "photo picker so it only sees the picture you choose, "
+                    "keep the photo on your device, and save the result with "
+                    "add-only access to your library."
+                ),
+            ],
+            "look": [
+                "One photo turned into two exports, a cover close-up and an inner wide view.",
+                "A draggable focus point with both previews updating as you move it.",
+                "The system photo picker, so the app never reads your whole library.",
+                "Output at each screen's real pixel size, saved as two images to Photos.",
+                "Home Screen and Lock Screen widgets in colors taken from a wallpaper set you choose.",
+            ],
+            "steps": [
+                "Open the Create tab and choose one photo with the system picker.",
+                "Drag the focus onto the person or place that should stay visible on the cover screen.",
+                "Check the inner preview and adjust until the wide view looks right.",
+                "Save both images to Photos and set each one with the setup guide.",
+                "Optionally add a clock, calendar or text-card widget in colors from a wallpaper set you choose.",
+            ],
+            "fits": "fits people who would rather use their own photos than a gallery of stock wallpapers, with the focus set where they want it on both screens. Photo pairs work in the free download, with a small watermark on saved images that Duo Pro, a one-time in-app purchase with no subscription, removes.",
+            "faq": [
+                {
+                    "q": "Does the app read my whole photo library?",
+                    "a": "No. It uses the system photo picker, so it only receives the picture you choose, and it saves results with add-only access.",
+                },
+                {
+                    "q": "Can I choose which part of the photo shows on the cover screen?",
+                    "a": "Yes. Drag the focus in the Create tab and both previews redraw.",
+                },
+                {
+                    "q": "Is a photo pair free?",
+                    "a": "You can make photo pairs in the free download; saved images carry a small watermark that the one-time Duo Pro purchase removes.",
+                },
+                {
+                    "q": "Does it add widgets as well?",
+                    "a": "Yes. An art clock, calendar, photo frame, battery and text card can be added to the Home Screen and Lock Screen in colors taken from the wallpaper set you choose. Extra widget styles and the palettes of paid sets come with the one-time Duo Pro purchase.",
+                },
+            ],
+        },
+    ],
+    # TripBee Cute (60_TripBeeCute) is pre-publication. Claims here are held to
+    # what the app does today: an illustrated trip booklet (bookshelf of
+    # covers, 56 original cover drawings -- 6 free and 50 with Cute Pass --
+    # countdown, boarding-pass flight cards, day plans, packing list), a
+    # self-contained web booklet shared as a file, optional iCloud planning
+    # with friends, CSV import, backup/restore, widgets and Apple Watch.
+    # It has no AI import, no account and no subscription.
+    "tripbeecute": [
+        {
+            "query": "cute travel itinerary app to share a trip plan with friends on iphone",
+            "guide_title": "A cute trip itinerary you can share with friends: what to check",
+            "triggers": [
+                "cute travel itinerary",
+                "cute trip planner",
+                "illustrated travel planner",
+                "share trip itinerary with friends",
+                "travel booklet app",
+                "kawaii travel planner",
+            ],
+            "persona": "friends and couples planning a trip together who want the plan to look good and be easy to share",
+            "lead": (
+                "A trip plan that lives in a spreadsheet or a long chat thread "
+                "is hard to read on the way to the airport, and nobody wants "
+                "to open an app they have to install just to see the flight "
+                "time."
+            ),
+            "paras": [
+                (
+                    "The plan that actually gets used is the one companions can "
+                    "open without effort. Look for an itinerary app that turns "
+                    "the trip into a single scrolling page with the countdown, "
+                    "flights, day-by-day plans and packing list together, and "
+                    "that can export that page as a file anyone opens in a "
+                    "normal browser, with no account and no app to install."
+                ),
+                (
+                    "If you plan together, check how changes are shared. An "
+                    "invite through the iCloud accounts you already have keeps "
+                    "everyone editing the same trip without a new sign-up, and "
+                    "the trip should still open on a plane or abroad when there "
+                    "is no signal. Reminders should be local notifications on "
+                    "your own phone."
+                ),
+            ],
+            "look": [
+                "One illustrated page per trip: countdown, flights, daily plans and a packing list.",
+                "A web booklet saved as one file that opens in any browser, offline.",
+                "Optional iCloud planning with friends instead of a new account.",
+                "A layout that works on iPhone and iPad.",
+                "No subscription and no advertising.",
+            ],
+            "steps": [
+                "Create a booklet with the destination and dates, then pick a cover drawing.",
+                "Add the flights and a plan for each day, with a time, place and note.",
+                "Fill in the packing list and set reminders for the plans that matter.",
+                "Preview the web booklet and send the file to your travel companions.",
+                "If you are planning together, invite friends through iCloud so everyone edits the same trip.",
+            ],
+            "fits": (
+                "fits friends, couples and families who want a trip plan that "
+                "looks like a keepsake and can be sent as a web page. The "
+                "download keeps one booklet at a time with six standard covers; "
+                "a single one-time in-app purchase adds several booklets, 50 "
+                "more covers, smart packing lists, backup and restore, and "
+                "iCloud planning with friends."
+            ),
+            "faq": [
+                {
+                    "q": "Do my friends need the app to see the plan?",
+                    "a": "No. The web booklet is one self-contained file that opens in any browser, even offline. Only people who edit the trip together through iCloud need the app.",
+                },
+                {
+                    "q": "Does it need an account?",
+                    "a": "No. Booklets are stored on your device, and in your own iCloud only when you turn iCloud on.",
+                },
+                {
+                    "q": "Is there a subscription?",
+                    "a": "No. The download keeps one booklet at a time, and a single one-time in-app purchase unlocks several booklets, more covers, backup and restore, and iCloud planning with friends.",
+                },
+                {
+                    "q": "Can I move a plan in from a spreadsheet?",
+                    "a": "Yes. Export the CSV template, fill it in a spreadsheet and import it back as a new booklet.",
+                },
+            ],
+        },
+        {
+            "query": "travel countdown and packing list app with cute covers iphone",
+            "guide_title": "A trip countdown with a packing list: what to check",
+            "triggers": [
+                "trip countdown app",
+                "vacation countdown and packing list",
+                "travel packing list app",
+                "boarding pass style flight card",
+                "travel journal planner cute",
+                "weekend trip planner",
+            ],
+            "persona": "people who like to look forward to a trip, count down to departure and keep everything for it on one page",
+            "lead": (
+                "Counting down to a holiday is half the fun, but the dates, "
+                "the flight and the packing list usually sit in three "
+                "different apps."
+            ),
+            "paras": [
+                (
+                    "A good trip page keeps the days left, the flight details "
+                    "and the things you still need to pack in one place, so "
+                    "the information you want at the airport is the first "
+                    "thing you see. Boarding-pass style flight cards make "
+                    "times, gates and booking references easy to scan."
+                ),
+                (
+                    "Weather for the destination and the local time are "
+                    "useful additions, and a rainy-day plan saves a day when "
+                    "the forecast turns. A widget that shows the next trip "
+                    "on the Home Screen or Lock Screen keeps the countdown in "
+                    "view without opening the app."
+                ),
+            ],
+            "look": [
+                "A countdown to departure and a flight card you can read at a glance.",
+                "A packing list on the same page as the plan.",
+                "Destination weather and a rainy-day plan for each day.",
+                "Home Screen and Lock Screen widgets, and an Apple Watch app.",
+                "Original illustrated cover drawings, not stock photos.",
+            ],
+            "steps": [
+                "Create a booklet for the trip and pick a cover.",
+                "Add the flight card and the plans you already know about.",
+                "Work through the packing list in the Prep tab as you pack.",
+                "Add the widget to the Home Screen to keep the countdown in view.",
+                "Check the weather in the days before you leave and adjust the plan.",
+            ],
+            "fits": (
+                "fits people who plan for the fun of it and want the countdown, "
+                "flights, plans and packing list on one illustrated page, "
+                "without an account or a subscription."
+            ),
+            "faq": [
+                {
+                    "q": "Is the countdown on the Home Screen?",
+                    "a": "Yes. Home Screen and Lock Screen widgets show the next booklet on its cover with the days left and upcoming plans.",
+                },
+                {
+                    "q": "Where does the weather come from?",
+                    "a": "The destination name is looked up with Apple's geocoder, and then only the coordinates and dates are sent to a public weather service (Open-Meteo) to get the forecast; no account is involved.",
+                },
+                {
+                    "q": "Does it include a packing list?",
+                    "a": "Yes. Every booklet has a Prep tab with a packing list, and smart packing lists are part of the one-time in-app purchase.",
+                },
+            ],
+        },
+    ]
+}
+
+# Zipbox has entered the canonical live roster; its reviewed pre-publication
+# persona now participates in every live-roster consumer.
+PERSONAS["zipbox"] = PENDING_PERSONAS.pop("zipbox")
+
+# 假日鬧鐘（easyam）10-20 上架並由新款追趕登記；互推站 easyam-support 同一提交上架。
+PERSONAS["easyam"] = PENDING_PERSONAS.pop("easyam")
+
+AUTO_REGISTRY_PATH = (
+    Path(__file__).resolve().parents[1] / "social" / "videogen" / "registry_auto.json"
+)
+
+
+def promote_registered_personas(
+    pending: dict[str, list[dict[str, Any]]],
+    personas: dict[str, list[dict[str, Any]]],
+    registered: set[str] | frozenset[str],
+) -> list[str]:
+    """Move staged personas into ``personas`` once catch-up registers the app.
+
+    new_app_catchup writes an app into registry_auto.json only after Apple
+    Lookup shows it publicly and catalog_audit has accepted its reviewed
+    persona, and every live-roster consumer (portfolio_app_finder,
+    publisher_intent_catalog) then requires the live set to equal PERSONAS.
+    Promoting on that same registration lets launch day proceed without a
+    manual edit, while apps still in review stay staged and change no
+    published output.
+    """
+    promoted = sorted((set(pending) & set(registered)) - set(personas))
+    for key in promoted:
+        personas[key] = pending.pop(key)
+    return promoted
+
+
+def _registered_auto_keys(path: Path = AUTO_REGISTRY_PATH) -> frozenset[str]:
+    try:
+        document = json.loads(path.read_text(encoding="utf-8"))
+    except FileNotFoundError:
+        return frozenset()
+    except (OSError, UnicodeError, json.JSONDecodeError) as error:
+        raise RuntimeError(f"Invalid automatic app registry: {path}") from error
+    if not isinstance(document, dict):
+        raise RuntimeError(f"Invalid automatic app registry: {path}")
+    return frozenset(document)
+
+
+PROMOTED_PENDING_PERSONAS = promote_registered_personas(
+    PENDING_PERSONAS, PERSONAS, _registered_auto_keys()
+)
+
+
+def persona_meta_description(lead: str, name: str, limit: int = 160) -> str:
+    suffix = f" — {name}."
+    available = max(24, limit - len(suffix))
+    summary = lead.strip()
+    if len(summary) > available:
+        summary = summary[: available - 1].rsplit(" ", 1)[0].rstrip(" ,;:-") + "…"
+    return summary + suffix
+
+
+def persona_facts(q: str, key: str, name: str) -> dict[str, Any] | None:
+    """Match a persona query for `key` and return a content overlay, or None."""
+    entries = PERSONAS.get(key)
+    if not entries:
+        return None
+    ql = q.lower()
+    # Longest matched trigger wins, not list order. A specific persona
+    # ("...who already reads hiragana") shares its topic word with the app's
+    # generic entry ("zhuyin"), so first-match hands every specific query to
+    # the generic page -- the same class of mis-route that sent
+    # "flashcards from my own notes" to the wrong app in 2026-08. Ties keep
+    # list order, so single-entry apps and non-overlapping triggers behave
+    # exactly as before.
+    best: tuple[int, dict[str, Any]] | None = None
+    for e in entries:
+        hits = [t for t in e["triggers"] if t in ql]
+        if not hits:
+            continue
+        score = max(len(t) for t in hits)
+        if best is None or score > best[0]:
+            best = (score, e)
+    if best is None:
+        return None
+    e = best[1]
+    strengths = e["fits"]
+    return {
+        "meta_description": persona_meta_description(e["lead"], name),
+        "lead": persona_closers.persona_lead(e["lead"], key, name),
+        "short_answer_paragraphs": [p.replace("the app", name).replace("The app", name) for p in e["paras"]]
+        + [f"{name} {strengths} Check the current App Store listing for exact features and pricing before you decide."],
+        "what_to_look_for": e["look"],
+        "decision_steps": e["steps"],
+        "where_app_fits": f"{name} {e['fits']}",
+        "faq": e["faq"],
+    }
+
+
+ALL_PERSONA_QUERIES: dict[str, list[str]] = {k: [e["query"] for e in v] for k, v in PERSONAS.items()}
+
+if __name__ == "__main__":
+    n = sum(len(v) for v in PERSONAS.values())
+    print(f"{len(PERSONAS)} apps, {n} persona pages")
+    for k, v in PERSONAS.items():
+        for e in v:
+            print(f"  {k}: {e['query']}")

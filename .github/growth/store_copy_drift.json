@@ -163,11 +163,35 @@
    "status": "green"
   },
   "battai": {
-   "blocked_terms": [],
+   "blocked_terms": [
+    "24 小时后只有电量卡片免费",
+    "Bonnes pratiques",
+    "design capacity",
+    "Evolução da capacidade",
+    "nominal charge capacity",
+    "Qué te dice BattAI",
+    "Tudo grátis por 24 horas",
+    "Zyklen",
+    "サイクル",
+    "不会自动扣费,也不是订阅",
+    "为检修、二手转让或个人留档生成清晰的电池报告。",
+    "充放電回数",
+    "充满、电量低或过热时提醒",
+    "公称充電容量",
+    "匯出",
+    "同一份报告存为 PNG 图片",
+    "循環次數",
+    "所有主屏幕与锁屏小组件",
+    "書き出",
+    "設計容量",
+    "내보내",
+    "사이클",
+    "설계 용량"
+   ],
    "brands": [
     "BattAI"
    ],
-   "live_updated": "2026-10-22",
+   "live_updated": "2026-10-27",
    "live_version": "1.1.8",
    "locales": {
     "de-DE": {
@@ -192,18 +216,156 @@
      "same": true
     },
     "es-ES": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-22",
-     "live_version": "1.1.8",
-     "same": true
+     "added": [
+      "Optimizada para el iPhone Duo. Creada con el SDK más reciente, la app ocupa toda la pantalla interior y ajusta su diseño automáticamente, con el dispositivo plegado o desplegado.",
+      "Puntúa la salud de tu batería y sigue su evolución.",
+      "Estima cuándo la capacidad máxima bajará al 80%.",
+      "Exporta un informe de reventa antes de vender tu móvil.",
+      "Ajustes muestra la capacidad máxima de hoy, pero no cómo cambia. BattAI sigue tu batería a diario: convierte el nivel y las cargas en una puntuación, una evolución, una estimación del 80% e informes. Ideal antes de cambiar de móvil, venderlo o comprar uno de segunda mano.",
+      "PUNTUACIÓN DE SALUD DE LA BATERÍA",
+      "De 0 a 100 en cinco niveles: Excelente, Buena, Aceptable, Requiere atención, Revisión de servicio",
+      "Qué forma la puntuación: capacidad 40%, ciclos 25%, edad del dispositivo 10%, calor 10%, hábitos de carga 15%, con el factor principal destacado",
+      "CAPACIDAD MÁXIMA Y TIEMPO HASTA EL 80%",
+      "Registros de capacidad máxima en un gráfico con intervalo de confianza del 95%",
+      "El cambio mensual de capacidad muestra a qué ritmo avanza el desgaste",
+      "Un rango estimado de meses hasta el 80%, para planificar un cambio de batería o de móvil si te importa su vida útil",
+      "CUIDADO DE CARGA",
+      "Cada carga recibe de 0 a 100 puntos según nivel inicial y final, ritmo de carga, tiempo al 100% y más",
+      "Rango de carga (por ejemplo, 30% → 88%), duración y ritmo: Lento, Habitual, Rápido o Muy rápido",
+      "Hábitos puntuados uno a uno (profundidad de descarga, límite de carga, carga nocturna, calor al cargar, frecuencia), con consejos como usar 80–90% cuando te venga bien",
+      "AVISOS DE BATERÍA",
+      "Notificación de carga al 80%, 90% o 100% (batería llena)",
+      "Aviso de batería baja al 10%, 20% o 30%",
+      "Aviso de calor cuando el móvil se calienta",
+      "Aviso en la app de descarga inusual cuando el consumo supera el nivel habitual de este dispositivo",
+      "DESCARGA Y CALOR",
+      "Descarga por hora, descarga nocturna en reposo y calor del dispositivo de los últimos 7 días, para ver qué se come la autonomía",
+      "INFORMES Y EXPORTACIÓN",
+      "Informe de reventa: una página para el comprador, con la fuente de cada valor y cómo verificar la capacidad máxima en Ajustes",
+      "Informe completo (3 páginas) o breve (1 página con el rango al 80%) en PDF o PNG; registros en CSV o JSON",
+      "Transfiere tus datos a otro dispositivo cuando cambies de móvil",
+      "WIDGETS, APPLE WATCH Y ATAJOS",
+      "Widgets en la pantalla de inicio y la bloqueada: puntuación, capacidad máxima y descarga de hoy",
+      "App del reloj y complicaciones: puntuación y estimación del 80% en tu muñeca",
+      "Atajos: consulta tu puntuación o añade un registro al conectar o desconectar",
+      "IMPORTACIÓN Y PRIVACIDAD",
+      "Importa la capacidad máxima y el número de ciclos desde los datos de análisis del sistema o introdúcelos tú. Solo se leen el número de ciclos, la capacidad nominal y la capacidad de diseño.",
+      "Sin cuenta, análisis, rastreo, SDK de terceros ni solicitudes de red. Los datos se quedan en este móvil; solo una instantánea mínima va al reloj enlazado. Puedes borrarlo todo cuando quieras.",
+      "Algunas funciones requieren una compra: historial ilimitado, rango de planificación al 80%, informe PDF, exportación en CSV y JSON, alertas de descarga inusual, exposición al ritmo de carga, todos los widgets, resumen semanal y transferencia a otro dispositivo.",
+      "FUENTES Y LÍMITES",
+      "Las API públicas del sistema solo ofrecen nivel de batería, estado de carga, modo de bajo consumo, estado térmico del dispositivo y hora; la capacidad máxima y los ciclos los aportas tú o un archivo que importas. El calor se refiere a todo el dispositivo, no a la temperatura de la batería. Las puntuaciones y estimaciones son rangos calculados: no son valores oficiales del fabricante ni una promesa de cuánto durará la batería. El primer informe antes de comprar necesita 14 días de registros, y la estimación del 80% al menos 3 registros de capacidad a lo largo de 30 días o más. El sistema programa las revisiones en segundo plano, así que la hora de los avisos puede variar."
+     ],
+     "dropped": [
+      "BattAI",
+      "Usa cinco valores de API públicas de iOS.",
+      "Sin cuenta, rastreo, anuncios ni red.",
+      "Qué te dice BattAI",
+      "Nivel de batería, carga y calor",
+      "Puntuación de salud y qué la afecta",
+      "Avisos si está llena, baja o caliente",
+      "Todos los widgets de pantalla de inicio y bloqueo",
+      "Salud",
+      "Puntuación de salud de la batería",
+      "Qué forma la puntuación",
+      "Evolución de la capacidad",
+      "Carga",
+      "Cuidado de carga",
+      "Rango de carga",
+      "Ritmo de carga",
+      "Informes",
+      "Crea un informe claro de la batería para servicio, reventa o tus archivos.",
+      "Informe completo: los gráficos y textos de la app",
+      "El mismo informe guardado como PNG",
+      "Todos tus datos en una tabla de texto",
+      "Privacidad",
+      "Sin anuncios, analítica, seguimiento, SDK de terceros ni solicitudes de internet. Los datos permanecen aquí, salvo una instantánea mínima enviada directamente al Apple Watch enlazado.",
+      "Las API públicas de iOS ofrecen nivel de batería, estado de carga, modo de bajo consumo, estado térmico de todo el dispositivo y hora. BattAI marca cualquier otro resultado como estimado o aportado por ti.",
+      "Las reglas fijas siguen pautas establecidas para baterías de iones de litio sobre descargas profundas, periodos largos con carga alta, calor y volumen de carga. La referencia de servicio de Apple del 80% se mantiene separada de las bandas de orientación de BattAI. Ningún resultado promete más vida útil.",
+      "Usa todo gratis durante 24 horas",
+      "Sin cargos automáticos. No es una suscripción.",
+      "Después de 24 horas solo la tarjeta de batería es gratis",
+      "Desbloquea una vez y todo es tuyo",
+      "Tu compra está vinculada a tu cuenta de Apple y funciona en tus dispositivos."
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.1.9",
+     "same": false
     },
     "fr-FR": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-22",
-     "live_version": "1.1.8",
-     "same": true
+     "added": [
+      "Optimisée pour l’iPhone Duo. Conçue avec le SDK le plus récent, l’app remplit tout l’écran intérieur et adapte automatiquement sa mise en page, appareil plié ou ouvert.",
+      "Notez la santé de votre batterie et suivez son évolution.",
+      "Estimez quand la capacité maximale atteindra 80%.",
+      "Exportez un rapport de revente avant de vendre votre téléphone.",
+      "Les Réglages affichent la capacité maximale du jour, pas son évolution. BattAI suit votre batterie au quotidien : niveau et recharges deviennent une note, une évolution, une estimation des 80% et des rapports. Idéal avant de changer de téléphone, de le revendre ou d’en acheter un d’occasion.",
+      "NOTE DE SANTÉ DE LA BATTERIE",
+      "Note de 0 à 100 en cinq niveaux : Excellent, Bon, Correct, À surveiller, Contrôle conseillé",
+      "Ce qui façonne la note : capacité 40%, cycles 25%, âge de l’appareil 10%, chaleur 10%, habitudes de recharge 15%, facteur principal mis en avant",
+      "CAPACITÉ ET ESTIMATION DES 80%",
+      "Relevés de capacité maximale en graphique, avec intervalle de confiance à 95%",
+      "La variation mensuelle montre à quelle vitesse progresse l’usure",
+      "Une fourchette de mois avant 80%, pour prévoir le remplacement de la batterie ou du téléphone si la durée de vie compte pour vous",
+      "RECHARGE",
+      "Chaque recharge est notée sur 100 : niveaux de départ et d’arrivée, rythme, temps à 100%, etc.",
+      "Plage de recharge (ex. 30% → 88%), durée et rythme : Lent, Habituel, Rapide ou Très rapide",
+      "Habitudes notées une à une (profondeur de décharge, plafond, recharge nocturne, chaleur, fréquence), avec des conseils comme 80–90% si cela vous convient",
+      "ALERTES BATTERIE",
+      "Notification de charge à 80%, 90% ou 100% (batterie pleine)",
+      "Alerte batterie faible à 10%, 20% ou 30%",
+      "Alerte en cas de surchauffe du téléphone",
+      "Dans l’app, signalement d’une décharge inhabituelle au-delà du niveau habituel de cet appareil",
+      "DÉCHARGE ET CHALEUR",
+      "Décharge par heure, décharge nocturne en veille et chaleur de l’appareil sur 7 jours, pour voir ce qui grignote l’autonomie",
+      "RAPPORTS ET EXPORT",
+      "Rapport de revente : une page pour l’acheteur, avec la source de chaque valeur et comment vérifier la capacité maximale dans Réglages",
+      "Rapport complet (3 pages) ou condensé (1 page avec la plage à 80%) en PDF ou PNG ; relevés en CSV ou JSON",
+      "Transfert de l’historique vers un nouvel appareil",
+      "WIDGETS, APPLE WATCH ET RACCOURCIS",
+      "Widgets d’écran d’accueil et d’écran verrouillé : note, capacité maximale et décharge du jour",
+      "App pour la montre et complications : note et estimation des 80% au poignet",
+      "Raccourcis : consultez votre note ou ajoutez un relevé quand vous branchez ou débranchez",
+      "IMPORT ET CONFIDENTIALITÉ",
+      "Importez capacité maximale et nombre de cycles depuis les données d’analyse du système, ou saisissez-les. Seuls le nombre de cycles, la capacité nominale et la capacité de conception sont lus.",
+      "Ni compte, ni analyses, ni suivi, ni SDK tiers, ni requêtes réseau. Les données restent sur ce téléphone ; seul un aperçu minimal part vers la montre jumelée. Vous pouvez tout supprimer à tout moment.",
+      "Certaines fonctions nécessitent un achat : historique illimité, plage de planification à 80%, rapport PDF, export CSV et JSON, alertes de décharge inhabituelle, exposition au rythme de recharge, tous les widgets, résumé hebdomadaire et transfert vers un nouvel appareil.",
+      "SOURCES ET LIMITES",
+      "Les API publiques du système ne fournissent que niveau de batterie, état de charge, mode Économie d’énergie, état thermique de l’appareil et heure ; capacité maximale et nombre de cycles viennent de vous ou d’un fichier importé. La chaleur concerne tout l’appareil, pas la température de la batterie. Notes et estimations sont des fourchettes calculées : ni valeurs officielles du fabricant, ni promesse sur la durée de vie de la batterie. Le premier rapport avant achat demande 14 jours de relevés, l’estimation des 80% au moins 3 relevés de capacité sur 30 jours ou plus. Le système planifie les vérifications en arrière-plan : l’heure des alertes peut varier."
+     ],
+     "dropped": [
+      "BattAI",
+      "Cinq valeurs des API publiques d’iOS.",
+      "Ni compte, ni pistage, ni pub, ni réseau.",
+      "Ce que BattAI vous dit",
+      "Batterie, charge et chaleur",
+      "Indice de santé et ce qui l'influence",
+      "Alertes si pleine, faible ou chaude",
+      "Tous les widgets d’écran d’accueil et verrouillé",
+      "Santé",
+      "Note de santé de la batterie",
+      "Ce qui façonne la note",
+      "Évolution capacité maximale",
+      "Recharge",
+      "Bonnes pratiques",
+      "Plage de recharge",
+      "Rythme de recharge",
+      "Rapports",
+      "Créez un rapport clair sur la batterie pour le service, la revente ou vos dossiers.",
+      "Rapport complet : les graphiques et les textes de l'app",
+      "Le même rapport enregistré en PNG",
+      "Toutes vos données dans un tableau texte",
+      "Confidentialité",
+      "Aucune publicité, analyse, suivi, SDK tiers ou requête Internet. Les données restent ici, sauf un instantané minimal envoyé directement à l’Apple Watch jumelée.",
+      "Les API publiques d’iOS donnent le niveau de batterie, l’état de recharge, le mode économie d’énergie, l’état thermique de tout l’appareil et l’heure. BattAI marque tout autre résultat comme estimé ou fourni par vous.",
+      "Les règles fixes suivent les recommandations établies pour les batteries lithium-ion sur les décharges profondes, les longues périodes à charge élevée, la chaleur et le volume de recharge. Le repère de service Apple de 80% reste distinct des plages de conseil BattAI. Aucun résultat ne promet une durée de vie supplémentaire.",
+      "Tout est gratuit pendant 24 h",
+      "Aucun prélèvement automatique. Ce n’est pas un abonnement.",
+      "Après 24 h, seule la carte batterie reste gratuite",
+      "Débloquez une fois pour tout garder",
+      "Votre achat est lié à votre compte Apple et fonctionne sur vos appareils."
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.1.9",
+     "same": false
     },
     "ja": {
      "added": [],
@@ -220,18 +382,158 @@
      "same": true
     },
     "pt-BR": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-22",
-     "live_version": "1.1.8",
-     "same": true
+     "added": [
+      "Otimizado para iPhone Duo. Criado com o SDK mais recente, o app ocupa toda a tela interna e ajusta o layout automaticamente, com o aparelho dobrado ou aberto.",
+      "Dê uma nota à saúde da bateria e acompanhe a evolução.",
+      "Estime quando a capacidade máxima chega a 80%.",
+      "Exporte um relatório de revenda antes de vender o celular.",
+      "Os Ajustes mostram a capacidade máxima de hoje, mas não como ela muda. O BattAI acompanha a bateria no dia a dia: transforma o nível e as cargas em uma nota, uma evolução, uma estimativa dos 80% e relatórios. Ideal antes de trocar de celular, vender o seu ou comprar um usado.",
+      "PONTUAÇÃO DE SAÚDE DA BATERIA",
+      "Nota de 0 a 100 em cinco níveis: Excelente, Boa, Razoável, Precisa de cuidado, Verificar assistência",
+      "O que forma a pontuação: capacidade 40%, ciclos 25%, idade do aparelho 10%, calor 10%, hábitos de carga 15%, com o fator principal em destaque",
+      "CAPACIDADE MÁXIMA E TEMPO ATÉ 80%",
+      "Seus registros de capacidade máxima em um gráfico com intervalo de confiança de 95%",
+      "A variação mensal da capacidade mostra a velocidade do desgaste",
+      "Uma faixa estimada de meses até 80%, para planejar a troca da bateria ou do celular se a vida útil importa para você",
+      "CUIDADO NA CARGA",
+      "Cada carga recebe uma nota de 0 a 100 conforme níveis inicial e final, velocidade de carga, tempo em 100% e mais",
+      "Faixa de carga (por exemplo, 30% → 88%), duração e velocidade: Lenta, Típica, Rápida ou Muito rápida",
+      "Hábitos avaliados um a um (profundidade de descarga, limite de carga, carga noturna, calor ao carregar, frequência), com dicas como usar 80–90% quando for conveniente",
+      "ALERTAS DE BATERIA",
+      "Notificação de carga em 80%, 90% ou 100% (bateria cheia)",
+      "Alerta de bateria fraca em 10%, 20% ou 30%",
+      "Alerta de calor quando o celular esquenta",
+      "Aviso no app de consumo incomum quando o uso passa do nível habitual deste aparelho",
+      "CONSUMO E CALOR",
+      "Consumo por hora, consumo em espera à noite e calor do aparelho nos últimos 7 dias, para ver o que drena a bateria",
+      "RELATÓRIOS E EXPORTAÇÃO",
+      "Relatório de revenda: uma página para o comprador, com a origem de cada valor e como conferir a capacidade máxima nos Ajustes",
+      "Relatório completo (3 páginas) ou resumido (1 página com a faixa até 80%) em PDF ou PNG; registros em CSV ou JSON",
+      "Mova seus dados para outro aparelho na troca de celular",
+      "WIDGETS, APPLE WATCH E ATALHOS",
+      "Widgets na Tela de Início e na Tela Bloqueada: nota, capacidade máxima e consumo de hoje",
+      "App do relógio e complicações: nota e estimativa dos 80% no pulso",
+      "Atalhos: consulte a nota ou adicione um registro ao conectar ou desconectar",
+      "IMPORTAÇÃO E PRIVACIDADE",
+      "Importe a capacidade máxima e a contagem de ciclos dos dados de análise do sistema ou digite os valores. Só são lidas a contagem de ciclos, a capacidade nominal e a capacidade de projeto.",
+      "Sem conta, análises, rastreamento, SDKs de terceiros ou solicitações de rede. Os dados ficam neste celular; só um resumo mínimo vai para o relógio emparelhado. Apague todos os dados quando quiser.",
+      "Alguns recursos exigem compra: histórico ilimitado, faixa de planejamento até 80%, relatório PDF, exportação CSV e JSON, alertas de consumo incomum, exposição à velocidade de carga, todos os widgets, resumo semanal e mover dados para outro aparelho.",
+      "FONTES E LIMITES",
+      "As APIs públicas do sistema fornecem apenas nível da bateria, estado de carga, Modo de Pouca Energia, estado térmico do aparelho e hora; a capacidade máxima e a contagem de ciclos vêm de você ou de um arquivo importado. O calor se refere ao aparelho todo, não à temperatura da bateria. Notas e estimativas são faixas calculadas: não são valores oficiais do fabricante nem uma promessa de quanto a bateria vai durar. O primeiro relatório antes da compra precisa de 14 dias de registros, e a estimativa dos 80% de pelo menos 3 registros de capacidade ao longo de 30 dias ou mais. O sistema decide quando as verificações em segundo plano acontecem, então o horário dos alertas pode variar."
+     ],
+     "dropped": [
+      "BattAI",
+      "Usa cinco dados das APIs públicas do iOS.",
+      "Sem conta, rastreio, anúncios ou rede.",
+      "O que o BattAI mostra",
+      "Nível da bateria, carga e calor",
+      "Uma nota de saúde e o que a define",
+      "Avisa se cheia, baixa ou quente",
+      "Todos os widgets da Tela de Início e Bloqueio",
+      "Saúde",
+      "Pontuação de saúde da bateria",
+      "O que forma a pontuação",
+      "Evolução da capacidade",
+      "Carga",
+      "Cuidado na carga",
+      "Faixa de carga",
+      "Velocidade de carga",
+      "Relatórios",
+      "Crie um relatório claro da bateria para assistência, revenda ou seus registros.",
+      "Relatório completo: os gráficos e textos do app",
+      "O mesmo relatório salvo como PNG",
+      "Todos os seus dados em uma tabela de texto",
+      "Privacidade",
+      "Sem anúncios, análises, rastreamento, SDKs de terceiros ou acesso à internet. Os dados ficam aqui, exceto por um resumo mínimo enviado diretamente ao Apple Watch emparelhado.",
+      "As APIs públicas do iOS fornecem nível, estado da carga, Pouca Energia, estado térmico do aparelho inteiro e hora. O BattAI marca qualquer outro resultado como estimado ou informado por você.",
+      "As regras fixas seguem orientações consolidadas sobre íons de lítio: descarga profunda, longos períodos com carga alta, calor e volume de carga. A referência de serviço de 80% da capacidade máxima da Apple fica separada das faixas de orientação do BattAI. Nenhum resultado promete mais vida útil.",
+      "Tudo grátis por 24 horas",
+      "Sem cobrança automática. Não é assinatura.",
+      "Depois de 24 horas, só o cartão da bateria é grátis",
+      "Desbloqueie uma vez e tudo é seu",
+      "A compra fica vinculada à sua conta Apple e funciona nos seus aparelhos."
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.1.9",
+     "same": false
     },
     "zh-Hans": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-22",
-     "live_version": "1.1.8",
-     "same": true
+     "added": [
+      "已针对 iPhone Duo 优化。本应用使用最新开发工具包构建,铺满整块内屏,无论折叠还是展开都会自动调整布局。",
+      "给电池健康打分,看最大容量趋势。",
+      "预计最大容量何时降到 80%。",
+      "卖旧手机前,导出二手转让电池报告。",
+      "设置只告诉你现在的最大容量,看不到它怎么变化。BattAI 在你日常使用手机时持续记录电量与充电,把电池检测整理成看得懂的分数、趋势、预估和报告;换新机、卖旧手机或买二手机验机时,都能把电池状况说清楚。想要更完整,随时补充最大容量或循环次数。",
+      "【电池健康评分】",
+      "0–100 分,分为优秀、良好、一般、需要养护、检查服务五级",
+      "评分依据逐项列出:容量 40%、循环次数 25%、设备使用年限 10%、热暴露 10%、充电习惯 15%,主要扣分原因一目了然",
+      "【最大容量趋势与 80% 预估】",
+      "最大容量记录绘成趋势图,附 95% 置信区间",
+      "每月容量变化,看出电池损耗、老化快不快",
+      "预计还要约几个月降到 80%,以区间呈现;在意电池寿命时,方便规划何时更换电池或换机",
+      "【充电养护】",
+      "每次充电都有 0–100 分的充电养护分数,依起始与结束电量、充电速率、100% 停留时间等计分",
+      "记录充电区间(例如 30% → 88%)、时长与充电速率(较慢、常见、较快、很快),快充多不多一看就知道",
+      "充电习惯分五项评分:放电深度、充电上限、过夜充电、充电时发热、充电频率,并按你的记录给出保养建议,例如合适时使用 80–90%",
+      "【电池提醒】",
+      "充到 80%、90% 或满电时提醒你拔掉充电线",
+      "低电量提醒:电量剩 10%、20% 或 30% 时提醒你充电",
+      "手机过热发烫时提醒你降温",
+      "App 内异常耗电提示:耗电高于这台手机平常水平时,在 App 内告诉你",
+      "【耗电与热状态】",
+      "每小时耗电百分比与夜间待机耗电,掉电快不用再猜",
+      "近 7 天设备热状态,看出哪些时段手机容易发烫",
+      "【报告与导出】",
+      "二手转让报告:一页给买家,逐项标明数值来源,附在设置中核对最大容量的步骤,验机有依据",
+      "完整报告(3 页)与精简报告(1 页,含 80% 规划区间)",
+      "存成 PDF 或 PNG 图片发给买家或维修店;原始读数可导出 CSV、JSON",
+      "换新机时,把数据移到另一台设备",
+      "【小组件、Apple Watch 与快捷指令】",
+      "主屏幕与锁定屏幕小组件,不打开 App 也能看健康分数、最大容量与今日耗电",
+      "手表 App 与表盘复杂功能,抬腕就能看分数与 80% 预估",
+      "快捷指令:查询当前分数,或在接上、拔下充电器时自动添加一条读数",
+      "【导入与隐私】",
+      "从系统「分析数据」的 log-aggregated 文件导入最大容量与循环次数,也可以手动输入;只读取循环次数、标称充电容量与设计容量,其他内容立即丢弃",
+      "无需账号,没有分析、跟踪、第三方 SDK 或网络请求;数据只存在这台手机,只把最小快照传给配对的手表,随时可删除全部数据",
+      "部分功能需在 App 内购买后使用:无限历史、80% 规划区间、PDF 电池报告、CSV/JSON 数据导出、异常耗电提醒、充电速率暴露、全部小组件、每周电池养护摘要、将数据移到另一台设备。",
+      "数据来源与限制",
+      "系统公开 API 只提供电量、充电状态、低电量模式、整部手机的热状态与时间;最大容量与循环次数来自你的输入或导入的文件。App 读不到电池温度、电压或电流,热状态指整部手机。分数与预估是依读数算出的参考区间,不是官方或原厂数值,也不代表电池还能用多久的承诺。未购买者的首份体验报告需累积 14 天读数;80% 预估需要至少 3 条、首末相隔 30 天以上的最大容量记录。提醒时间由系统后台调度决定,可能有偏差。"
+     ],
+     "dropped": [
+      "BattAI",
+      "使用公开 iOS API 的五项数据。",
+      "没有账户、追踪、广告或网络请求。",
+      "BattAI 会告诉你什么",
+      "电量、充电与发热",
+      "健康评分,以及影响它的因素",
+      "充满、电量低或过热时提醒",
+      "所有主屏幕与锁屏小组件",
+      "健康",
+      "电池健康评分",
+      "评分依据",
+      "最大容量趋势",
+      "充电",
+      "充电养护",
+      "充电区间",
+      "充电速率",
+      "报告",
+      "为检修、二手转让或个人留档生成清晰的电池报告。",
+      "完整报告:App 的图表与文字",
+      "同一份报告存为 PNG 图片",
+      "全部数据的纯文本表格",
+      "隐私",
+      "无广告、分析、跟踪、第三方 SDK 或网络请求。数据保存在这里,只会把最小快照直接发给已配对的 Apple Watch。",
+      "公开 iOS API 只提供电量、充电状态、低电量模式、整机热状态和时间。BattAI 会把其他结果标为“估算”或“你提供”。",
+      "固定规则遵循关于深度放电、高电量长时间停留、热和充电量的常见锂离子电池养护建议。Apple 的最大容量 80% 服务基准与 BattAI 养护区间分开处理,不承诺延长寿命。",
+      "全部功能免费用 24 小时",
+      "不会自动扣费,也不是订阅",
+      "24 小时后只有电量卡片免费",
+      "购买一次,永久拥有全部功能",
+      "购买会关联到 Apple Account,并可在你的设备上使用。"
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.1.9",
+     "same": false
     },
     "zh-Hant": {
      "added": [],
@@ -241,7 +543,7 @@
      "same": true
     }
    },
-   "status": "green"
+   "status": "red"
   },
   "caldaily": {
    "blocked_terms": [],
@@ -260,7 +562,7 @@
     "CalDaily 電卓とテーマ",
     "CalDaily"
    ],
-   "live_updated": "2026-10-09",
+   "live_updated": "2026-10-27",
    "live_version": "1.0.7",
    "locales": {
     "de-DE": {
@@ -285,18 +587,40 @@
      "same": true
     },
     "es-ES": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.7",
-     "same": true
+     "added": [
+      "Optimizada para el iPhone Duo. Creada con el SDK más reciente, la app ocupa toda la pantalla interior y ajusta su diseño automáticamente, con el dispositivo plegado o desplegado.",
+      "Una calculadora bonita que lo recuerda todo: 100 temas integrados y un widget en la pantalla de inicio que calcula sin abrir la app.",
+      "Pon nombre a cualquier resultado y búscalo después (la cena que dividisteis, el préstamo que comparaste) en lugar de volver a calcularlo.",
+      "Ocho herramientas para las cuentas de cada día: propina y división de la cuenta, descuento e impuestos, cuotas de préstamo, conversión de unidades, diferencia entre fechas y días laborables, coste de combustible del viaje, memoria y funciones científicas.",
+      "El historial se agrupa por días, se filtra por herramienta y se exporta a CSV para tu hoja de cálculo. Cada herramienta se abre con los valores que configuraste una vez, así no vuelves a escribir el mismo tipo impositivo ni el número de personas."
+     ],
+     "dropped": [
+      "Una calculadora que conservarás, porque recuerda de qué iba cada número.",
+      "La mayoría de las calculadoras lo olvidan todo al cerrarse. CalDaily guarda cada resultado y te deja ponerle un nombre y un tipo, así una semana después encuentras la cena que dividisteis o el préstamo que comparaste en lugar de rehacerlo. El historial se agrupa por día, se filtra por herramienta y se exporta a CSV para una hoja de cálculo.",
+      "Ocho herramientas se ocupan de las cuentas cotidianas que un teclado simple vuelve incómodas: memoria, funciones científicas, descuento e impuestos, propina y división, conversión de unidades, diferencia de fechas y días laborables, cuota de préstamo y coste del combustible de un viaje. Cada una se abre con los valores que fijaste una vez.",
+      "El widget calcula desde la pantalla de inicio y adopta el tema que estés usando."
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.8",
+     "same": false
     },
     "fr-FR": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.7",
-     "same": true
+     "added": [
+      "Optimisée pour l’iPhone Duo. Conçue avec le SDK le plus récent, l’app remplit tout l’écran intérieur et adapte automatiquement sa mise en page, appareil plié ou ouvert.",
+      "Une jolie calculatrice qui se souvient : 100 thèmes intégrés et un widget sur l'écran d'accueil qui calcule sans ouvrir l'app.",
+      "Nommez n'importe quel résultat et retrouvez-le plus tard (le dîner partagé, le prêt comparé) au lieu de tout recalculer.",
+      "Huit outils pour les calculs du quotidien : pourboire et partage de l'addition, remise et TVA, mensualités de prêt, conversion d'unités, écart entre dates et jours ouvrés, coût du carburant d'un trajet, mémoire et fonctions scientifiques.",
+      "L'historique se regroupe par jour, se filtre par outil et s'exporte en CSV pour votre tableur. Chaque outil s'ouvre avec les valeurs par défaut réglées une fois, pour ne plus retaper le même taux de TVA ou le nombre de convives."
+     ],
+     "dropped": [
+      "Une calculatrice que vous gardez, parce qu'elle se souvient du contexte de chaque nombre.",
+      "La plupart des calculatrices oublient tout dès qu'on les ferme. CalDaily conserve chaque résultat et vous laisse lui donner un nom et un type. Une semaine plus tard, vous retrouvez le dîner partagé ou le prêt comparé au lieu de tout refaire. L'historique se regroupe par jour, se filtre par outil et s'exporte en CSV vers un tableur.",
+      "Huit outils prennent en charge les calculs du quotidien qu'un simple clavier rend pénibles : mémoire, fonctions scientifiques, remise et taxe, pourboire et partage, conversion d'unités, écart de dates et jours ouvrés, mensualité de prêt et coût du carburant d'un trajet. Chacun s'ouvre avec les valeurs par défaut que vous avez définies une fois.",
+      "Le widget calcule depuis l'écran d'accueil et reprend le thème choisi."
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.8",
+     "same": false
     },
     "ja": {
      "added": [],
@@ -313,18 +637,40 @@
      "same": true
     },
     "pt-BR": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.7",
-     "same": true
+     "added": [
+      "Otimizado para iPhone Duo. Criado com o SDK mais recente, o app ocupa toda a tela interna e ajusta o layout automaticamente, com o aparelho dobrado ou aberto.",
+      "Uma calculadora bonita que lembra: 100 temas integrados e um widget na Tela de Início que calcula sem abrir o app.",
+      "Dê nome a qualquer resultado e encontre depois (o jantar que vocês dividiram, o empréstimo que você comparou) em vez de refazer a conta.",
+      "Oito ferramentas para as contas do dia a dia: gorjeta e divisão da conta, desconto e imposto, parcelas de empréstimo, conversão de unidades, diferença entre datas e dias úteis, custo de combustível da viagem, memória e funções científicas.",
+      "O histórico se agrupa por dia, filtra por ferramenta e exporta para CSV para sua planilha. Cada ferramenta abre com os valores padrão que você definiu uma vez, então não precisa digitar de novo a mesma alíquota ou número de pessoas."
+     ],
+     "dropped": [
+      "Uma calculadora que você mantém, porque ela lembra o contexto de cada número.",
+      "A maioria das calculadoras esquece tudo assim que fecha. O CalDaily guarda cada resultado e deixa você dar a ele um nome e um tipo, então uma semana depois você encontra o jantar que dividiu ou o empréstimo que comparou em vez de refazer a conta. O histórico se agrupa por dia, filtra por ferramenta e exporta em CSV para uma planilha.",
+      "Oito ferramentas cuidam das contas do dia a dia que um teclado simples torna trabalhosas: memória, funções científicas, desconto e imposto, gorjeta e divisão, conversão de unidades, diferença de datas e dias úteis, parcela de empréstimo e custo de combustível de uma viagem. Cada uma abre com os padrões que você definiu uma vez.",
+      "O widget calcula direto na tela de início e acompanha o tema escolhido."
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.8",
+     "same": false
     },
     "zh-Hans": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.7",
-     "same": true
+     "added": [
+      "已针对 iPhone Duo 优化。本应用使用最新开发工具包构建,铺满整块内屏,无论折叠还是展开都会自动调整布局。",
+      "会记住每一笔结果的计算器:结果可以命名,下周直接搜索那次分摊的晚餐或比较过的贷款,不用重算。",
+      "小费分摊、折扣与税、贷款月供、单位换算、日期差与工作日、行程油费等 8 种工具,常用的税率与人数设一次就好。",
+      "100 款按键主题随时换,桌面小组件不打开应用也能算。",
+      "记录会自动按日期分组,可按工具筛选,需要时也能导出 CSV 放进表格。"
+     ],
+     "dropped": [
+      "一台你会真正留着用的计算器,因为它记得每个数字背后的来龙去脉。",
+      "大多数计算器一关就忘了。CalDaily 会保留每一笔结果,还能让你为它命名、标上类型,所以一周后你可以直接搜索那次分摊的晚餐或比较过的贷款,而不必从头重算。记录会自动按日期分组,可按工具筛选,需要时也能导出 CSV 放进表格。",
+      "八种进阶工具处理普通键盘做起来别扭的日常计算:内存、科学函数、折扣与税、小费与分摊、单位换算、日期差与工作日、贷款月供、行程油费。每一个都会带入你设置过一次的默认值,不必每次重输同样的税率或人数。",
+      "桌面小组件不用打开应用就能计算,并且会跟着当前主题一起变化。"
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.8",
+     "same": false
     },
     "zh-Hant": {
      "added": [],
@@ -334,14 +680,14 @@
      "same": true
     }
    },
-   "status": "green"
+   "status": "red"
   },
   "claudeusagemini": {
    "blocked_terms": [],
    "brands": [
     "UsageNow"
    ],
-   "live_updated": "2026-10-22",
+   "live_updated": "2026-10-27",
    "live_version": "1.0.2",
    "locales": {
     "de-DE": {
@@ -354,8 +700,8 @@
     "en-GB": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-22",
-     "live_version": "1.0.2",
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.3",
      "same": true
     },
     "en-US": {
@@ -368,15 +714,15 @@
     "es-ES": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-22",
-     "live_version": "1.0.2",
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.3",
      "same": true
     },
     "fr-FR": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-22",
-     "live_version": "1.0.2",
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.3",
      "same": true
     },
     "ja": {
@@ -396,8 +742,8 @@
     "pt-BR": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-22",
-     "live_version": "1.0.2",
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.3",
      "same": true
     },
     "zh-Hant": {
@@ -415,7 +761,7 @@
    "brands": [
     "CountDaysNow"
    ],
-   "live_updated": "2026-10-09",
+   "live_updated": "2026-10-27",
    "live_version": "1.0.3",
    "locales": {
     "de-DE": {
@@ -428,8 +774,8 @@
     "en-GB": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.3",
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.4",
      "same": true
     },
     "en-US": {
@@ -442,15 +788,15 @@
     "es-ES": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.3",
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.4",
      "same": true
     },
     "fr-FR": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.3",
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.4",
      "same": true
     },
     "ja": {
@@ -470,15 +816,15 @@
     "pt-BR": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.3",
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.4",
      "same": true
     },
     "zh-Hans": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.3",
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.4",
      "same": true
     },
     "zh-Hant": {
@@ -498,7 +844,7 @@
     "CV Desk ATS 简历制作",
     "CV Desk"
    ],
-   "live_updated": "2026-10-09",
+   "live_updated": "2026-10-27",
    "live_version": "1.4.9",
    "locales": {
     "de-DE": {
@@ -523,18 +869,38 @@
      "same": true
     },
     "es-ES": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.4.9",
-     "same": true
+     "added": [
+      "Optimizada para el iPhone Duo. Creada con el SDK más reciente, la app ocupa toda la pantalla interior y ajusta su diseño automáticamente, con el dispositivo plegado o desplegado.",
+      "Puntúa tu currículum antes de enviarlo: obtén al instante una puntuación ATS de 0 a 100 con correcciones claras que aplicas con un toque, para que los sistemas de selección lean bien tu experiencia y tus palabras clave.",
+      "Después expórtalo en PDF de una columna con texto real seleccionable, o en un Word (.docx) editable, listo para enviar.",
+      "Guarda un currículum adaptado para cada oferta. Todo ocurre en tu iPhone, sin necesidad de cuenta."
+     ],
+     "dropped": [
+      "Crea un currículum compatible con ATS que los sistemas de los reclutadores leen de verdad — todo en tu iPhone. Sin cuenta. Sin subir nada. Sin suscripción.",
+      "La mayoría de apps de currículum tienen tres problemas: una suscripción sorpresa al descargar, una marca de agua en la exportación y plantillas bonitas que no pasan el análisis ATS y se rechazan automáticamente. CV Desk soluciona los tres.",
+      "PUNTUACIÓN ATS (EN EL DISPOSITIVO)",
+      "Consulta al instante una puntuación ATS de 0 a 100 con correcciones claras y tocables — para que tu CV se analice bien y cubra las palabras clave correctas."
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.4.10",
+     "same": false
     },
     "fr-FR": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.4.9",
-     "same": true
+     "added": [
+      "Optimisée pour l’iPhone Duo. Conçue avec le SDK le plus récent, l’app remplit tout l’écran intérieur et adapte automatiquement sa mise en page, appareil plié ou ouvert.",
+      "Évaluez votre CV avant de postuler : obtenez instantanément un score ATS de 0 à 100 avec des corrections claires et cliquables, pour que les logiciels de recrutement lisent correctement votre expérience et vos mots-clés.",
+      "Exportez-le ensuite en PDF sur une colonne avec du vrai texte sélectionnable, ou en Word (.docx) modifiable, prêt à envoyer.",
+      "Gardez un CV adapté pour chaque offre. Tout se fait sur votre iPhone, sans compte."
+     ],
+     "dropped": [
+      "Créez un CV compatible ATS que les systèmes des recruteurs lisent vraiment — entièrement sur votre iPhone. Sans compte. Sans envoi. Sans abonnement.",
+      "La plupart des applis de CV posent trois problèmes : un abonnement surprise au moment du téléchargement, un filigrane sur l'export, et de jolis modèles qui échouent à l'analyse ATS et sont rejetés automatiquement. CV Desk règle les trois.",
+      "SCORE ATS (SUR L'APPAREIL)",
+      "Obtenez un score ATS de 0 à 100 instantané, avec des correctifs clairs et cliquables — pour que votre CV soit bien analysé et couvre les bons mots-clés."
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.4.10",
+     "same": false
     },
     "ja": {
      "added": [],
@@ -551,18 +917,38 @@
      "same": true
     },
     "pt-BR": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.4.9",
-     "same": true
+     "added": [
+      "Otimizado para iPhone Duo. Criado com o SDK mais recente, o app ocupa toda a tela interna e ajusta o layout automaticamente, com o aparelho dobrado ou aberto.",
+      "Dê nota ao seu currículo antes de se candidatar: veja na hora uma pontuação ATS de 0 a 100 com correções claras que você aplica com um toque, para que os sistemas de recrutamento leiam corretamente sua experiência e suas palavras-chave.",
+      "Depois exporte um PDF de coluna única com texto real selecionável, ou um Word (.docx) editável, pronto para enviar.",
+      "Guarde um currículo personalizado para cada vaga. Tudo acontece no seu iPhone, sem precisar de conta."
+     ],
+     "dropped": [
+      "Crie um currículo compatível com ATS que os sistemas dos recrutadores realmente leem — tudo no seu iPhone. Sem conta. Sem upload. Sem assinatura.",
+      "A maioria dos apps de currículo tem três problemas: uma assinatura surpresa na hora de baixar, uma marca d'água na exportação e modelos bonitos que falham na análise ATS e são rejeitados automaticamente. O CV Desk resolve os três.",
+      "PONTUAÇÃO ATS (NO APARELHO)",
+      "Veja na hora uma pontuação ATS de 0 a 100 com correções claras e tocáveis — para o seu currículo ser analisado corretamente e cobrir as palavras-chave certas."
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.4.10",
+     "same": false
     },
     "zh-Hans": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.4.9",
-     "same": true
+     "added": [
+      "已针对 iPhone Duo 优化。本应用使用最新开发工具包构建,铺满整块内屏,无论折叠还是展开都会自动调整布局。",
+      "投递前先给简历打分:即时算出 0–100 的 ATS 分数,并列出具体、可点按的修改建议,让企业的 ATS 系统正确读到你的经历和关键词。",
+      "改好后导出单栏、文字可选取的 PDF,或可编辑的 Word(.docx),直接拿去投递。",
+      "每个职位各存一份简历,随时调整;全部在 iPhone 上完成,无需注册账号。"
+     ],
+     "dropped": [
+      "在你的 iPhone 上,做出一份能被企业 ATS 系统正确解析的简历 —— 无需账号、不上传、无订阅。",
+      "多数简历 App 有三个痛点:填到最后才发现要订阅才能下载、免费版导出带水印、漂亮的模板却过不了 ATS 自动解析而被刷掉。CV Desk 一次全部解决。",
+      "设备端 ATS 分数",
+      "即时算出 0–100 的 ATS 分数,并给出具体、可点击的修改建议,让简历被正确解析、覆盖对的关键词。"
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.4.10",
+     "same": false
     },
     "zh-Hant": {
      "added": [],
@@ -572,7 +958,7 @@
      "same": true
     }
    },
-   "status": "green"
+   "status": "red"
   },
   "cyca": {
    "blocked_terms": [],
@@ -907,7 +1293,7 @@
    "brands": [
     "Foldable Wallpaper Studio"
    ],
-   "live_updated": "2026-10-23",
+   "live_updated": "2026-10-27",
    "live_version": "1.0",
    "locales": {
     "de-DE": {
@@ -920,8 +1306,8 @@
     "en-GB": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-23",
-     "live_version": "1.0",
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.1",
      "same": true
     },
     "en-US": {
@@ -934,15 +1320,15 @@
     "es-ES": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-23",
-     "live_version": "1.0",
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.1",
      "same": true
     },
     "fr-FR": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-23",
-     "live_version": "1.0",
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.1",
      "same": true
     },
     "ja": {
@@ -962,15 +1348,15 @@
     "pt-BR": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-23",
-     "live_version": "1.0",
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.1",
      "same": true
     },
     "zh-Hans": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-23",
-     "live_version": "1.0",
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.1",
      "same": true
     },
     "zh-Hant": {
@@ -1150,7 +1536,7 @@
    "brands": [
     "G+Money"
    ],
-   "live_updated": "2026-10-09",
+   "live_updated": "2026-10-27",
    "live_version": "2.1.13",
    "locales": {
     "de-DE": {
@@ -1175,18 +1561,38 @@
      "same": true
     },
     "es-ES": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "2.1.13",
-     "same": true
+     "added": [
+      "Optimizada para el iPhone Duo. Creada con el SDK más reciente, la app ocupa toda la pantalla interior y ajusta su diseño automáticamente, con el dispositivo plegado o desplegado.",
+      "¿Gastas en otra moneda de viaje? Apunta cada gasto en la moneda local y míralo al instante en tu moneda, con el total del viaje siempre actualizado.",
+      "Lleva cada viaje por separado con su propio subtotal, pon un límite diario para ver cuánto te queda hoy y registra también los gastos del día a día en casa.",
+      "50 divisas integradas: las tasas se actualizan cuando tienes conexión y, sin señal, sigue convirtiendo con la última tasa guardada o con la que tú indiques.",
+      "Conversor: 50 divisas, tasas actualizadas automáticamente con conexión; sin conexión usa la última guardada o una manual"
+     ],
+     "dropped": [
+      "G+Money une dos herramientas del día a día en una sola — un conversor de divisas ultrarrápido y un control de gastos precioso — para la vida diaria y los viajes. Totalmente sin conexión. Totalmente privado.",
+      "Registra lo que gastas, pon un presupuesto diario y mira exactamente a dónde va tu dinero, en casa o en el extranjero. ¿Necesitas otra moneda? Conversión al instante con tasas en vivo o manuales, incluso sin señal.",
+      "Conversor: 50 divisas, actualización automática o tasas manuales, 100% sin conexión"
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "2.1.14",
+     "same": false
     },
     "fr-FR": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "2.1.13",
-     "same": true
+     "added": [
+      "Optimisée pour l’iPhone Duo. Conçue avec le SDK le plus récent, l’app remplit tout l’écran intérieur et adapte automatiquement sa mise en page, appareil plié ou ouvert.",
+      "Vous dépensez dans une autre devise en voyage ? Saisissez chaque dépense en devise locale et voyez-la aussitôt dans votre devise, avec le total du voyage toujours à jour.",
+      "Séparez chaque voyage avec son propre sous-total, fixez une limite quotidienne pour savoir ce qu’il reste aujourd’hui et notez aussi vos dépenses du quotidien.",
+      "50 devises intégrées : les taux se mettent à jour quand vous êtes en ligne et, sans réseau, la conversion continue avec le dernier taux enregistré ou le vôtre.",
+      "Convertisseur : 50 devises, taux mis à jour automatiquement en ligne ; hors ligne, dernier taux enregistré ou taux manuel"
+     ],
+     "dropped": [
+      "G+Money réunit deux outils du quotidien en un seul — un convertisseur de devises ultra-rapide et un suivi de dépenses élégant — pour la vie de tous les jours comme pour les voyages. Entièrement hors ligne. Totalement privé.",
+      "Enregistrez vos dépenses, fixez un budget quotidien et voyez exactement où va votre argent, chez vous ou à l'étranger. Besoin d'une autre devise ? Conversion instantanée avec taux en direct ou manuels, même sans réseau.",
+      "Convertisseur : 50 devises, mise à jour auto ou taux manuels, 100% hors ligne"
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "2.1.14",
+     "same": false
     },
     "ja": {
      "added": [],
@@ -1203,18 +1609,38 @@
      "same": true
     },
     "pt-BR": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "2.1.13",
-     "same": true
+     "added": [
+      "Otimizado para iPhone Duo. Criado com o SDK mais recente, o app ocupa toda a tela interna e ajusta o layout automaticamente, com o aparelho dobrado ou aberto.",
+      "Gastando em outra moeda na viagem? Registre cada gasto na moeda local e veja na hora na sua moeda, com o total da viagem sempre atualizado.",
+      "Mantenha cada viagem separada com seu próprio subtotal, defina um limite diário para ver quanto ainda pode gastar hoje e registre também os gastos do dia a dia em casa.",
+      "50 moedas integradas: as taxas se atualizam quando você está online e, sem sinal, a conversão continua com a última taxa salva ou com a que você definir.",
+      "Conversor: 50 moedas, taxas atualizadas automaticamente online; offline usa a última taxa salva ou uma manual"
+     ],
+     "dropped": [
+      "O G+Money une duas ferramentas do dia a dia em uma só — um conversor de moedas ultrarrápido e um lindo controle de gastos — para a vida diária e para viagens. Totalmente offline. Totalmente privado.",
+      "Registre o que você gasta, defina um orçamento diário e veja exatamente para onde vai seu dinheiro, em casa ou no exterior. Precisa de outra moeda? Converta na hora com taxas ao vivo ou manuais, mesmo sem sinal.",
+      "Conversor: 50 moedas, atualização automática ou taxas manuais, 100% offline"
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "2.1.14",
+     "same": false
     },
     "zh-Hans": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "2.1.13",
-     "same": true
+     "added": [
+      "已针对 iPhone Duo 优化。本应用使用最新开发工具包构建,铺满整块内屏,无论折叠还是展开都会自动调整布局。",
+      "出国花外币,直接用当地货币记一笔,立刻换算成本国货币,整趟旅程花了多少一眼就知道。",
+      "每趟旅程分开记、各自小计;设好每日上限,随时看今天还能花多少。平时的日常开销也能一起记。",
+      "内置 50 种货币换算:联网时自动更新汇率,没有信号也能用最近一次的汇率或自定义汇率继续换算。",
+      "货币换算:50 种世界货币,联网时自动更新汇率,离线时用最近一次或自定义汇率"
+     ],
+     "dropped": [
+      "G+Money 把两个每天都会用到的工具合而为一——超快的货币换算 + 精美的记账——生活与旅行都适用。完全离线、完全私密。",
+      "记下每一笔花费、设定每日预算,清楚看到钱花到哪,不论在家或出国。需要换算其他货币?即时换算,汇率自动更新或自定义皆可,没有信号也能用。",
+      "货币换算:50 种世界货币,自动更新或手动汇率,完全离线"
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "2.1.14",
+     "same": false
     },
     "zh-Hant": {
      "added": [],
@@ -1224,14 +1650,17 @@
      "same": true
     }
    },
-   "status": "green"
+   "status": "red"
   },
   "gmoneylite": {
-   "blocked_terms": [],
+   "blocked_terms": [
+    "G+Money Lite — 聪明的旅行汇率记账",
+    "旅行记账,从此简单"
+   ],
    "brands": [
     "G+Money Lite"
    ],
-   "live_updated": "2026-10-09",
+   "live_updated": "2026-10-27",
    "live_version": "1.0.6",
    "locales": {
     "de-DE": {
@@ -1256,18 +1685,60 @@
      "same": true
     },
     "es-ES": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.6",
-     "same": true
+     "added": [
+      "Optimizada para el iPhone Duo. Creada con el SDK más reciente, la app ocupa toda la pantalla interior y ajusta su diseño automáticamente, con el dispositivo plegado o desplegado.",
+      "Ten claro cuánto te queda por gastar hoy, viajes donde viajes. Apunta cada compra en la moneda local y mírala al momento en tu moneda, ya descontada del presupuesto de hoy. Se pone en rojo cuando te pasas del presupuesto diario.",
+      "¿Sin conexión? Sigue apuntando con los últimos tipos de cambio guardados.",
+      "Consulta el gasto de hoy en el widget de la pantalla de inicio o en tu Apple Watch.",
+      "Los tipos de cambio se actualizan solos al abrir la app (cada 6 horas aprox.), o puedes introducirlos tú. Sin conexión se usan los guardados.",
+      "Presupuesto diario (opcional): compara el gasto de cada día con tu presupuesto.",
+      "Mira en qué se te va el dinero por categorías, lleva cada viaje por separado y filtra tus registros.",
+      "Sin compra: cambio, presupuesto y resumen, 1 viaje y 3 gastos.",
+      "Una compra única opcional dentro de la app desbloquea gastos y viajes ilimitados."
+     ],
+     "dropped": [
+      "G+Money Lite — Conversor de divisas y gastos de viaje",
+      "El dinero del viaje, fácil",
+      "Registra cada compra en la moneda local y velo al instante en tu moneda, con o sin conexión.",
+      "Tipos en vivo o manuales: Podemos obtener los últimos tipos automáticamente, o defínelos tú. Siempre funciona sin conexión.",
+      "Obtiene los últimos tipos al abrir la app (cada 6 horas aprox.). Funciona sin conexión con tus tipos guardados.",
+      "Presupuesto diario: Opcional. Comprueba cada día frente al presupuesto.",
+      "Por categoría · Viajes · Filtros · Registros",
+      "Sin compra: cambio, presupuesto y resumen · 1 viaje · 3 gastos",
+      "Un solo pago · Sin suscripción",
+      "Desbloquea gastos y viajes ilimitados."
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.7",
+     "same": false
     },
     "fr-FR": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.6",
-     "same": true
+     "added": [
+      "Optimisée pour l’iPhone Duo. Conçue avec le SDK le plus récent, l’app remplit tout l’écran intérieur et adapte automatiquement sa mise en page, appareil plié ou ouvert.",
+      "Sachez combien il vous reste à dépenser aujourd'hui, où que vous voyagiez. Notez chaque achat dans la devise locale : il s'affiche aussitôt dans votre devise, déjà déduit du budget du jour. Le montant passe au rouge dès que vous dépassez votre budget quotidien.",
+      "Pas de connexion ? Continuez à noter avec les derniers taux enregistrés.",
+      "Suivez vos dépenses du jour dans le widget de l'écran d'accueil ou sur votre Apple Watch.",
+      "Les derniers taux se mettent à jour automatiquement à l'ouverture de l'app (environ toutes les 6 heures), ou saisissez les vôtres. Hors ligne, les taux enregistrés sont utilisés.",
+      "Budget quotidien (facultatif) : comparez les dépenses de chaque jour à votre budget.",
+      "Voyez où part votre argent par catégorie, gardez chaque voyage à part et filtrez vos dépenses.",
+      "Sans achat : taux, budget et bilan, 1 voyage et 3 dépenses.",
+      "Un achat intégré unique et facultatif débloque les dépenses et voyages illimités."
+     ],
+     "dropped": [
+      "G+Money Lite — Convertisseur de devises & suivi de dépenses de voyage",
+      "L’argent en voyage, simplifié",
+      "Notez chaque achat en devise locale et voyez-le aussitôt dans votre devise – en ligne ou hors ligne.",
+      "Taux en direct ou manuels: Nous récupérons les derniers taux automatiquement, ou définissez-les vous-même. Fonctionne toujours hors ligne.",
+      "Récupère les derniers taux à l’ouverture de l’app (environ toutes les 6 heures). Fonctionne hors ligne avec vos taux enregistrés.",
+      "Budget quotidien: Facultatif. Suivez chaque jour par rapport au budget.",
+      "Par catégorie · Voyages · Filtres · Entrées",
+      "Sans achat : taux, budget, bilan · 1 voyage · 3 dépenses",
+      "Un seul achat · Sans abonnement",
+      "Débloquez les dépenses et voyages illimités."
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.7",
+     "same": false
     },
     "ja": {
      "added": [],
@@ -1284,18 +1755,64 @@
      "same": true
     },
     "pt-BR": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.6",
-     "same": true
+     "added": [
+      "Otimizado para iPhone Duo. Criado com o SDK mais recente, o app ocupa toda a tela interna e ajusta o layout automaticamente, com o aparelho dobrado ou aberto.",
+      "Saiba quanto você ainda pode gastar hoje, onde quer que esteja viajando. Anote cada compra na moeda local e veja na hora na sua moeda, já descontada do orçamento do dia. O valor fica vermelho quando você passa do orçamento diário.",
+      "Sem conexão? Continue anotando com as últimas cotações salvas.",
+      "Veja os gastos de hoje no widget da Tela de Início ou no Apple Watch.",
+      "As cotações mais recentes são atualizadas sozinhas quando você abre o app (cerca de a cada 6 horas), ou você digita as suas. Offline, valem as cotações salvas.",
+      "Orçamento diário (opcional): veja o gasto de cada dia ao lado do seu orçamento.",
+      "Veja para onde vai seu dinheiro por categoria, mantenha cada viagem separada e filtre seus registros.",
+      "Sem compra: câmbio, orçamento e resumo, 1 viagem e 3 despesas.",
+      "Uma compra única opcional dentro do app desbloqueia despesas e viagens ilimitadas."
+     ],
+     "dropped": [
+      "G+Money Lite — Conversor de moedas e gastos de viagem",
+      "Dinheiro de viagem, simplificado",
+      "Registre cada compra na moeda local e veja na hora na sua moeda – online ou offline.",
+      "Taxas ao vivo ou manuais: Buscamos as taxas mais recentes automaticamente, ou defina você mesmo. Sempre funciona offline.",
+      "Busca as taxas mais recentes ao abrir o app (a cada 6 horas, aprox.). Funciona offline com suas taxas salvas.",
+      "Orçamento diário: Opcional. Veja como cada dia fica em relação ao orçamento.",
+      "Por categoria · Viagens · Filtros · Registros",
+      "Sem compra: câmbio, orçamento e resumo · 1 viagem · 3 despesas",
+      "Pagamento único · Sem assinatura",
+      "Desbloqueie despesas e viagens ilimitadas."
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.7",
+     "same": false
     },
     "zh-Hans": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.6",
-     "same": true
+     "added": [
+      "已针对 iPhone Duo 优化。本应用使用最新开发工具包构建,铺满整块内屏,无论折叠还是展开都会自动调整布局。",
+      "出国每天还能花多少,打开就知道。用当地币种记下每一笔,自动换算成你的本国货币、扣进今天的预算;超过每日上限就标红。",
+      "没有网络也能记,用上次保存的汇率照样换算。",
+      "主屏幕小组件和 Apple Watch 上也能看到今天的花费。",
+      "打开 App 时自动获取最新汇率(约每 6 小时),也能手动输入;没网络就用已保存的汇率。",
+      "每日上限(选填):每天的花费和上限并排对照。",
+      "按分类看钱花在哪里、每趟旅程分开记、可筛选查询。",
+      "备份与还原:包含消费、汇率、分类与设置。",
+      "主屏幕小组件 · Apple Watch",
+      "不购买也能用:汇率、预算、基本摘要、1 个旅程、3 笔支出。",
+      "另有一次性 App 内购买(可选),解锁无限支出与旅程。"
+     ],
+     "dropped": [
+      "G+Money Lite — 聪明的旅行汇率记账",
+      "旅行记账,从此简单",
+      "用当地币种记下每一笔,立刻换算成你的本国货币 — 有无网络都能用。",
+      "自动或手动汇率: 可自动获取最新汇率,也可自行输入。离线一样能用。",
+      "打开 App 时自动获取最新汇率(约每 6 小时)。离线时使用已保存的汇率。",
+      "每日上限: 选填。可查看每天的花费与上限对比。",
+      "分类统计 · 旅程 · 筛选 · 记录",
+      "备份与还原: 包含消费、汇率、分类与设置。",
+      "Widget · Apple Watch",
+      "无需购买:汇率、预算、基本摘要 · 1 个旅程 · 3 笔支出",
+      "一次付费解锁 · 绝无订阅",
+      "一次解锁无限支出与旅程。"
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.7",
+     "same": false
     },
     "zh-Hant": {
      "added": [],
@@ -1305,14 +1822,14 @@
      "same": true
     }
    },
-   "status": "green"
+   "status": "red"
   },
   "hourstag": {
    "blocked_terms": [],
    "brands": [
     "HoursTag"
    ],
-   "live_updated": "2026-10-09",
+   "live_updated": "2026-10-27",
    "live_version": "3.0.18",
    "locales": {
     "de-DE": {
@@ -1337,18 +1854,28 @@
      "same": true
     },
     "es-ES": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "3.0.18",
-     "same": true
+     "added": [
+      "Optimizada para el iPhone Duo. Creada con el SDK más reciente, la app ocupa toda la pantalla interior y ajusta su diseño automáticamente, con el dispositivo plegado o desplegado.",
+      "Usar la app en 44 idiomas"
+     ],
+     "dropped": [
+      "Usar la app en 17 idiomas"
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "3.0.19",
+     "same": false
     },
     "fr-FR": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "3.0.18",
-     "same": true
+     "added": [
+      "Optimisée pour l’iPhone Duo. Conçue avec le SDK le plus récent, l’app remplit tout l’écran intérieur et adapte automatiquement sa mise en page, appareil plié ou ouvert.",
+      "Utiliser l'app en 44 langues"
+     ],
+     "dropped": [
+      "Utiliser l'app en 17 langues"
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "3.0.19",
+     "same": false
     },
     "ja": {
      "added": [],
@@ -1365,18 +1892,28 @@
      "same": true
     },
     "pt-BR": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "3.0.18",
-     "same": true
+     "added": [
+      "Otimizado para iPhone Duo. Criado com o SDK mais recente, o app ocupa toda a tela interna e ajusta o layout automaticamente, com o aparelho dobrado ou aberto.",
+      "Usar o app em 44 idiomas"
+     ],
+     "dropped": [
+      "Usar o app em 17 idiomas"
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "3.0.19",
+     "same": false
     },
     "zh-Hans": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "3.0.18",
-     "same": true
+     "added": [
+      "已针对 iPhone Duo 优化。本应用使用最新开发工具包构建,铺满整块内屏,无论折叠还是展开都会自动调整布局。",
+      "支持 44 种语言"
+     ],
+     "dropped": [
+      "支持 17 种语言"
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "3.0.19",
+     "same": false
     },
     "zh-Hant": {
      "added": [],
@@ -1386,14 +1923,18 @@
      "same": true
     }
    },
-   "status": "green"
+   "status": "red"
   },
   "hourstaglite": {
-   "blocked_terms": [],
+   "blocked_terms": [
+    "人生时间成本: 每工作一小时的实际收入价值",
+    "类型: 必要 - 想要 - 冲动",
+    "认识你的价值透镜"
+   ],
    "brands": [
     "HoursTag Lite"
    ],
-   "live_updated": "2026-10-09",
+   "live_updated": "2026-10-27",
    "live_version": "1.1.5",
    "locales": {
     "de-DE": {
@@ -1418,18 +1959,74 @@
      "same": true
     },
     "es-ES": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.1.5",
-     "same": true
+     "added": [
+      "Optimizada para el iPhone Duo. Creada con el SDK más reciente, la app ocupa toda la pantalla interior y ajusta su diseño automáticamente, con el dispositivo plegado o desplegado.",
+      "Antes de comprar, mira cuántas horas de trabajo te cuesta de verdad. Introduce tu sueldo neto por hora y HoursTag Lite convierte cada precio en tiempo de trabajo.",
+      "Etiqueta cada compra como Necesidad, Deseo o Impulso para pillar las compras impulsivas, y mira cuántas horas de trabajo se ha llevado cada categoría.",
+      "¿Ahorras para algo? Mira cuánto tendrías que trabajar para conseguirlo y sigue tu progreso.",
+      "Qué puedes hacer",
+      "Convierte cualquier precio en horas de trabajo según tu sueldo neto",
+      "Etiqueta tus compras: Necesidad, Deseo o Impulso",
+      "Horas de trabajo por categoría",
+      "Metas de ahorro: las horas que hay detrás de cada meta y tu progreso",
+      "Copia de seguridad y restauración de ingresos, gastos, metas y ajustes",
+      "Widget de la pantalla de inicio y Apple Watch",
+      "Tus 3 primeras conversiones no requieren compra.",
+      "Una compra única opcional dentro de la app desbloquea conversiones y registros ilimitados, metas de ahorro con progreso, tendencias por categoría, compartir y copias de seguridad."
+     ],
+     "dropped": [
+      "HoursTag Lite - El precio real de las cosas",
+      "Cada compra cuesta horas de tu vida. HoursTag Lite convierte los precios en tiempo de trabajo, para que gastes con claridad.",
+      "Conoce tu prisma de valor",
+      "Costo en tiempo: Tu valor neto por hora trabajada",
+      "Tipo: Necesidad - Deseo - Impulso",
+      "Tu patrón de valor - Análisis completo de valor",
+      "¿Cuánto cuesta una meta?: Ve el trabajo detrás de una meta y sigue tu progreso.",
+      "Copia y restauración: Incluye ingresos, gastos, metas y preferencias.",
+      "Widget - Apple Watch",
+      "Un solo pago · Acceso de por vida · Sin suscripción",
+      "Decisiones y ediciones ilimitadas",
+      "Metas y progreso ilimitados",
+      "Compartir, análisis y respaldos"
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.1.6",
+     "same": false
     },
     "fr-FR": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.1.5",
-     "same": true
+     "added": [
+      "Optimisée pour l’iPhone Duo. Conçue avec le SDK le plus récent, l’app remplit tout l’écran intérieur et adapte automatiquement sa mise en page, appareil plié ou ouvert.",
+      "Avant d'acheter, voyez combien d'heures de travail cela vous coûte vraiment. Indiquez votre salaire horaire net et HoursTag Lite convertit chaque prix en temps de travail.",
+      "Classez chaque achat en Besoin, Envie ou Impulsion pour repérer les achats impulsifs, et voyez combien d'heures de travail chaque catégorie a englouties.",
+      "Vous économisez pour quelque chose ? Voyez combien de temps il faut travailler pour l'obtenir et suivez votre progression.",
+      "Ce que vous pouvez faire",
+      "Convertir n'importe quel prix en heures de travail selon votre salaire net",
+      "Classer vos achats : Besoin, Envie ou Impulsion",
+      "Heures de travail par catégorie",
+      "Objectifs d'épargne : les heures derrière chaque objectif et votre progression",
+      "Sauvegarde et restauration des revenus, dépenses, objectifs et réglages",
+      "Widget de l'écran d'accueil et Apple Watch",
+      "Vos 3 premières conversions ne nécessitent aucun achat.",
+      "Un achat intégré unique et facultatif débloque les conversions et enregistrements illimités, les objectifs d'épargne avec progression, les tendances par catégorie, le partage et les sauvegardes."
+     ],
+     "dropped": [
+      "HoursTag Lite - Le vrai prix des choses",
+      "Chaque achat coûte des heures de votre vie. HoursTag Lite convertit les prix en temps de travail, pour dépenser en conscience.",
+      "Découvrez votre prisme de valeur",
+      "Coût en temps: Votre valeur nette par heure travaillée",
+      "Type: Besoin - Envie - Impulsion",
+      "Votre profil de valeur - Analyse complète de la valeur",
+      "Combien coûte un objectif ?: Voyez le travail derrière un objectif et suivez votre progression.",
+      "Sauvegarde et restauration: Inclut revenu, dépenses, objectifs et préférences.",
+      "Widget - Apple Watch",
+      "Un seul achat · Accès à vie · Sans abonnement",
+      "Choix et modifications illimités",
+      "Objectifs et progression illimités",
+      "Partage, analyses et sauvegardes"
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.1.6",
+     "same": false
     },
     "ja": {
      "added": [],
@@ -1446,18 +2043,74 @@
      "same": true
     },
     "pt-BR": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.1.5",
-     "same": true
+     "added": [
+      "Otimizado para iPhone Duo. Criado com o SDK mais recente, o app ocupa toda a tela interna e ajusta o layout automaticamente, com o aparelho dobrado ou aberto.",
+      "Antes de comprar, veja quantas horas de trabalho aquilo realmente custa. Informe seu salário líquido por hora e o HoursTag Lite transforma cada preço em tempo de trabalho.",
+      "Marque cada compra como Necessidade, Desejo ou Impulso para flagrar as compras por impulso, e veja quantas horas de trabalho cada categoria consumiu.",
+      "Está juntando dinheiro para algo? Veja quanto tempo precisa trabalhar para isso e acompanhe seu progresso.",
+      "O que você pode fazer",
+      "Transforme qualquer preço em horas de trabalho com base no salário líquido",
+      "Marque compras como Necessidade, Desejo ou Impulso",
+      "Horas de trabalho por categoria",
+      "Metas de economia: as horas por trás de cada meta e o progresso",
+      "Backup e restauração de renda, gastos, metas e ajustes",
+      "Widget da Tela de Início e Apple Watch",
+      "As 3 primeiras conversões não exigem compra.",
+      "Uma compra única opcional dentro do app desbloqueia conversões e registros ilimitados, metas de economia com progresso, tendências por categoria, compartilhamento e backup."
+     ],
+     "dropped": [
+      "HoursTag Lite - O preço real das coisas",
+      "Cada compra custa horas da sua vida. O HoursTag Lite converte preços em tempo de trabalho, para você gastar com clareza.",
+      "Conheça seu prisma de valor",
+      "Custo em tempo: Seu valor líquido por hora trabalhada",
+      "Tipo: Necessidade - Desejo - Impulso",
+      "Seu padrão de valor - Análise completa de valor",
+      "Quanto custa uma meta?: Veja o trabalho por trás de uma meta e acompanhe seu progresso.",
+      "Backup e restauração: Inclui renda, gastos, metas e preferências.",
+      "Widget - Apple Watch",
+      "Pagamento único · Acesso vitalício · Sem assinatura",
+      "Escolhas e edições ilimitadas",
+      "Metas e progresso ilimitados",
+      "Compartilhamento, análises e backups"
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.1.6",
+     "same": false
     },
     "zh-Hans": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.1.5",
-     "same": true
+     "added": [
+      "已针对 iPhone Duo 优化。本应用使用最新开发工具包构建,铺满整块内屏,无论折叠还是展开都会自动调整布局。",
+      "结账前,先看这笔要工作几小时。输入你的实际到手时薪,HoursTag Lite 就把每个价格换算成工作时数。",
+      "再把它标成必要、想要或冲动,冲动消费一眼现形;累计看得到各类别花掉多少工时。",
+      "想存钱买的目标,也算给你看要工作多久,并追踪进度。",
+      "主要功能",
+      "时薪换算:按到手时薪,把任何价格换成工作时数",
+      "必要/想要/冲动标签:每笔花费都标清楚",
+      "各类别工时统计:看每个类别花掉多少工时",
+      "存钱目标:算出要工作多久,并追踪进度",
+      "备份与恢复:收入、花费、目标与偏好设置",
+      "主屏幕小组件与 Apple Watch",
+      "不购买也能先换算 3 次。",
+      "另有一次性 App 内购买(可选),解锁无限次换算与记录、存钱目标与进度、分类趋势、分享与备份。"
+     ],
+     "dropped": [
+      "HoursTag Lite - 看见每样东西的真实代价",
+      "每一笔花费,都消耗你生命中的工时。HoursTag Lite 把价格换算成工作时间,让你花得明白。",
+      "认识你的价值透镜",
+      "人生时间成本: 每工作一小时的实际收入价值",
+      "类型: 必要 - 想要 - 冲动",
+      "你的价值模式 - 完整价值洞察",
+      "这个目标要花多少时间?: 看见一个目标背后的工时,并追踪进度。",
+      "备份与恢复: 包含收入、花费、目标与偏好设置。",
+      "Widget - Apple Watch",
+      "一次付费 · 永久使用 · 绝无订阅",
+      "无限选择与编辑",
+      "无限目标与进度",
+      "分享、洞察与备份"
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.1.6",
+     "same": false
     },
     "zh-Hant": {
      "added": [],
@@ -1467,7 +2120,7 @@
      "same": true
     }
    },
-   "status": "green"
+   "status": "red"
   },
   "ledmovingtext": {
    "blocked_terms": [],
@@ -1722,7 +2375,7 @@
     "Lumi Bopomofo Pro",
     "Lumi注音星球 Pro"
    ],
-   "live_updated": "2026-10-09",
+   "live_updated": "2026-10-27",
    "live_version": "1.0.24",
    "locales": {
     "de-DE": {
@@ -1747,18 +2400,34 @@
      "same": true
     },
     "es-ES": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.24",
-     "same": true
+     "added": [
+      "Optimizada para el iPhone Duo. Creada con el SDK más reciente, la app ocupa toda la pantalla interior y ajusta su diseño automáticamente, con el dispositivo plegado o desplegado.",
+      "Combinación de sonidos y tonos del zhuyin para preparar primaria: en el tren de los sonidos une inicial, medial y final en una sílaba, y en la montaña rusa de los tonos distingue los cinco tonos.",
+      "Practica los 37 sonidos del bopomofo paso a paso con escuchar y emparejar, trazos en orden, la pesca de bopomofo y la carrera de estrellas; el repaso diario recupera los sonidos que tu hijo aún no domina.",
+      "Desde la zona para padres imprimes fichas de trazado y de examen con los sonidos aprendidos o fallados hace poco, para practicar sin pantalla. Una sola compra lo incluye todo: sin anuncios ni compras dentro de la app."
+     ],
+     "dropped": [
+      "Ayuda a tu hijo a enamorarse de la fonética china con una adorable aventura espacial.",
+      "Lumi Bopomofo Pro es la edición completa de nuestro juego de aprendizaje de zhuyin y bopomofo, creado para niños de 3 a 7 años. Convierte los 37 sonidos bopomofo en un viaje cósmico y divertido, para que los niños aprendan pronunciación, combinaciones de sonidos y tonos de forma natural mientras juegan. Así construyen una base sólida para el mandarín en preescolar y primero de primaria."
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.25",
+     "same": false
     },
     "fr-FR": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.24",
-     "same": true
+     "added": [
+      "Optimisée pour l’iPhone Duo. Conçue avec le SDK le plus récent, l’app remplit tout l’écran intérieur et adapte automatiquement sa mise en page, appareil plié ou ouvert.",
+      "Assemblage des sons et tons du zhuyin pour préparer le CP : dans le train des sons, l’enfant relie initiale, médiane et finale en une syllabe, puis distingue les cinq tons dans les montagnes russes des tons.",
+      "Les 37 sons du bopomofo se travaillent pas à pas : écoute et association, tracé dans l’ordre des traits, pêche au bopomofo et course aux étoiles. La révision du jour fait revenir les sons pas encore maîtrisés.",
+      "Depuis l’espace parents, imprimez des fiches de tracé et de quiz avec les sons appris ou récemment manqués, pour s’exercer sans écran. Un seul achat inclut tout : sans publicité ni achats intégrés."
+     ],
+     "dropped": [
+      "Aidez votre enfant à aimer la phonétique chinoise grâce à une adorable aventure dans l’espace.",
+      "Lumi Bopomofo Pro est l’édition complète de notre jeu d’apprentissage du zhuyin et du bopomofo, conçue pour les enfants de 3 à 7 ans. Elle transforme les 37 sons bopomofo en un voyage cosmique ludique, pour apprendre naturellement la prononciation, les combinaisons de sons et les tons en jouant. C’est une base solide pour le mandarin en maternelle et au début de l’école primaire."
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.25",
+     "same": false
     },
     "ja": {
      "added": [],
@@ -1775,11 +2444,19 @@
      "same": true
     },
     "pt-BR": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.24",
-     "same": true
+     "added": [
+      "Otimizado para iPhone Duo. Criado com o SDK mais recente, o app ocupa toda a tela interna e ajusta o layout automaticamente, com o aparelho dobrado ou aberto.",
+      "Junção de sons e tons do zhuyin para quem vai entrar no 1o ano: no trem dos sons, a criança junta inicial, medial e final em uma sílaba e, na montanha-russa dos tons, distingue os cinco tons.",
+      "Os 37 sons do bopomofo são praticados passo a passo com ouvir e combinar, traçado na ordem dos traços, pescaria de bopomofo e corrida das estrelas; a revisão diária traz de volta os sons que a criança ainda não domina.",
+      "Na área dos pais, imprima folhas de traçado e de teste com os sons aprendidos ou errados recentemente, para praticar longe da tela. Uma compra inclui tudo: sem anúncios e sem compras no app."
+     ],
+     "dropped": [
+      "Um começo carinhoso para os sons do chinês mandarim.",
+      "Lumi Bopomofo Pro transforma o Zhuyin, sistema fonético do mandarim, em uma aventura de planetas para crianças de 3 a 6 anos. Atividades curtas ajudam a reconhecer símbolos, sons e combinações de forma leve."
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.25",
+     "same": false
     },
     "zh-Hant": {
      "added": [],
@@ -1789,7 +2466,7 @@
      "same": true
     }
    },
-   "status": "green"
+   "status": "red"
   },
   "lumiletters": {
    "blocked_terms": [],
@@ -1806,7 +2483,7 @@
     "Lumi レター Lite",
     "Lumi 레터 Lite"
    ],
-   "live_updated": "2026-10-09",
+   "live_updated": "2026-10-27",
    "live_version": "1.1.8",
    "locales": {
     "de-DE": {
@@ -1831,18 +2508,30 @@
      "same": true
     },
     "es-ES": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.1.8",
-     "same": true
+     "added": [
+      "Optimizada para el iPhone Duo. Creada con el SDK más reciente, la app ocupa toda la pantalla interior y ajusta su diseño automáticamente, con el dispositivo plegado o desplegado.",
+      "Lumi Letters Lite convierte el abecedario inglés en una aventura entre estrellas para niños de 3 a 7 años: escuchan el nombre y el sonido de cada letra, trazan mayúsculas y minúsculas siguiendo las guías de trazo y coleccionan simpáticos amigos letra. Sin anuncios y funciona sin conexión.",
+      "Empieza por la letra A y el primer planeta, y desbloquea el resto solo si a tu familia le gusta."
+     ],
+     "dropped": [
+      "Empieza por la letra A y el primer planeta, y desbloquea el resto solo si a tu familia le gusta. Lumi Letters Lite convierte el abecedario inglés en una aventura entre estrellas para niños de 3 a 7 años: escuchan el nombre y el sonido de cada letra, trazan mayúsculas y minúsculas siguiendo las guías de trazo y coleccionan simpáticos amigos letra. Sin anuncios y funciona sin conexión."
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.1.9",
+     "same": false
     },
     "fr-FR": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.1.8",
-     "same": true
+     "added": [
+      "Optimisée pour l’iPhone Duo. Conçue avec le SDK le plus récent, l’app remplit tout l’écran intérieur et adapte automatiquement sa mise en page, appareil plié ou ouvert.",
+      "Lumi Letters Lite transforme l’alphabet anglais en aventure étoilée pour les enfants de 3 à 7 ans : ils écoutent le nom et le son de chaque lettre, tracent majuscules et minuscules en suivant les repères de tracé et collectionnent de charmants amis lettres. Sans publicité et sans connexion.",
+      "Commencez par la lettre A et la première planète, puis débloquez la suite seulement si votre enfant accroche."
+     ],
+     "dropped": [
+      "Commencez par la lettre A et la première planète, puis débloquez la suite seulement si votre enfant accroche. Lumi Letters Lite transforme l’alphabet anglais en aventure étoilée pour les enfants de 3 à 7 ans : ils écoutent le nom et le son de chaque lettre, tracent majuscules et minuscules en suivant les repères de tracé et collectionnent de charmants amis lettres. Sans publicité et sans connexion."
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.1.9",
+     "same": false
     },
     "ja": {
      "added": [],
@@ -1859,11 +2548,17 @@
      "same": true
     },
     "pt-BR": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.1.8",
-     "same": true
+     "added": [
+      "Otimizado para iPhone Duo. Criado com o SDK mais recente, o app ocupa toda a tela interna e ajusta o layout automaticamente, com o aparelho dobrado ou aberto.",
+      "O Lumi Letters Lite transforma o alfabeto em inglês em uma aventura entre as estrelas para crianças de 3 a 7 anos: elas ouvem o nome e o som de cada letra, traçam maiúsculas e minúsculas seguindo guias de traçado e colecionam adoráveis amigos letrinhas. Sem anúncios e funciona sem internet.",
+      "Comece pela letra A e pelo primeiro planeta e libere o resto só se a sua família gostar."
+     ],
+     "dropped": [
+      "Comece pela letra A e pelo primeiro planeta e libere o resto só se a sua família gostar. O Lumi Letters Lite transforma o alfabeto em inglês em uma aventura entre as estrelas para crianças de 3 a 7 anos: elas ouvem o nome e o som de cada letra, traçam maiúsculas e minúsculas seguindo guias de traçado e colecionam adoráveis amigos letrinhas. Sem anúncios e funciona sem internet."
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.1.9",
+     "same": false
     },
     "zh-Hant": {
      "added": [],
@@ -1873,7 +2568,7 @@
      "same": true
     }
    },
-   "status": "green"
+   "status": "red"
   },
   "lumiletterspro": {
    "blocked_terms": [],
@@ -1887,7 +2582,7 @@
     "Lumi レター Pro",
     "Lumi 레터 Pro"
    ],
-   "live_updated": "2026-10-08",
+   "live_updated": "2026-10-27",
    "live_version": "1.3.6",
    "locales": {
     "de-DE": {
@@ -1912,18 +2607,32 @@
      "same": true
     },
     "es-ES": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-08",
-     "live_version": "1.3.6",
-     "same": true
+     "added": [
+      "Optimizada para el iPhone Duo. Creada con el SDK más reciente, la app ocupa toda la pantalla interior y ajusta su diseño automáticamente, con el dispositivo plegado o desplegado.",
+      "Fonética real, no solo la canción del ABC: primero el NOMBRE de la letra y el SONIDO de la letra, luego los sonidos inicial, final y medio, luego la lectura de imagen a letra, una secuencia habitual en preescolar en los países de habla inglesa.",
+      "44 idiomas de interfaz integrados, todo incluido en una sola compra."
+     ],
+     "dropped": [
+      "Fonética real, no solo la canción del ABC: primero el NOMBRE de la letra y el SONIDO de la letra, luego los sonidos inicial, final y medio, luego la lectura de imagen a letra, el mismo camino utilizado en los jardines de infancia de habla inglesa.",
+      "Cuatro idiomas integrados: inglés, chino, japonés y coreano, una compra para todo el mundo."
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.3.7",
+     "same": false
     },
     "fr-FR": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-08",
-     "live_version": "1.3.6",
-     "same": true
+     "added": [
+      "Optimisée pour l’iPhone Duo. Conçue avec le SDK le plus récent, l’app remplit tout l’écran intérieur et adapte automatiquement sa mise en page, appareil plié ou ouvert.",
+      "De vraies phonétiques, pas seulement la chanson de l'ABC : d'abord le NOM de la lettre et le SON de la lettre, puis les sons de début, de fin et de milieu, puis la lecture image-à-lettre, une progression courante dans les maternelles anglophones.",
+      "44 langues d’interface intégrées, le tout inclus dans un seul achat."
+     ],
+     "dropped": [
+      "De vraies phonétiques, pas seulement la chanson de l'ABC : d'abord le NOM de la lettre et le SON de la lettre, puis les sons de début, de fin et de milieu, puis la lecture image-à-lettre, le même chemin utilisé dans les maternelles anglophones.",
+      "Quatre langues intégrées : anglais, chinois, japonais et coréen, un achat pour le monde entier."
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.3.7",
+     "same": false
     },
     "ja": {
      "added": [],
@@ -1940,11 +2649,13 @@
      "same": true
     },
     "pt-BR": {
-     "added": [],
+     "added": [
+      "Otimizado para iPhone Duo. Criado com o SDK mais recente, o app ocupa toda a tela interna e ajusta o layout automaticamente, com o aparelho dobrado ou aberto."
+     ],
      "dropped": [],
-     "live_updated": "2026-10-08",
-     "live_version": "1.3.6",
-     "same": true
+     "live_updated": "2026-10-27",
+     "live_version": "1.3.7",
+     "same": false
     },
     "zh-Hant": {
      "added": [],
@@ -1954,10 +2665,12 @@
      "same": true
     }
    },
-   "status": "green"
+   "status": "red"
   },
   "lumimath": {
-   "blocked_terms": [],
+   "blocked_terms": [
+    "Cuatro idiomas nativos"
+   ],
    "brands": [
     "Lumi Math Planet",
     "Lumi கணிதக் கோள்",
@@ -1969,7 +2682,7 @@
     "Lumi 수학 행성",
     "Lumi數學星球"
    ],
-   "live_updated": "2026-10-12",
+   "live_updated": "2026-10-27",
    "live_version": "1.0.21",
    "locales": {
     "de-DE": {
@@ -1994,18 +2707,78 @@
      "same": true
     },
     "es-ES": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-12",
-     "live_version": "1.0.21",
-     "same": true
+     "added": [
+      "Optimizada para el iPhone Duo. Creada con el SDK más reciente, la app ocupa toda la pantalla interior y ajusta su diseño automáticamente, con el dispositivo plegado o desplegado.",
+      "Matemáticas antes de saber leer: 46 tipos de preguntas con imágenes, cada una leída en voz alta, desde contar y sumar hasta las tablas de multiplicar, el reloj y el dinero.",
+      "Acierta una y un pequeño planeta se ilumina. Si falla, no hay pitidos, solo ánimo y cariño.",
+      "Las familias siguen el progreso en cinco áreas, practican los puntos débiles e imprimen fichas con soluciones. Sin anuncios ni suscripción.",
+      "Cada planeta tiene su propia personalidad luminosa. Cada objeto está esculpido en un cálido estilo de arte de arcilla. Cada pregunta se lee en voz alta con una voz suave y amable. Esto no es una hoja de trabajo con un dibujo animado pegado encima, es un pequeño mundo construido con el tipo de amor que esperarías de un gran maestro.",
+      "La mayoría de las aplicaciones de matemáticas entrenan velocidad. Lumi construye mentes. Los tipos de preguntas abarcan patrones numéricos, lógica, razonamiento espacial, combinatoria sencilla y problemas de la vida real. Tu hijo aprende a pensar como un joven matemático, justo en la mesa de la cocina.",
+      "Suma y resta más allá de 100 (con reagrupación), multiplicación, división, enlaces numéricos, valor posicional, comparación, patrones, impar/par, ordinales, tiempo y dinero: 46 tipos de preguntas que se nivelan automáticamente. Ya sea un prelector, un niño que recién comienza la escuela, o alguien reconstruyendo sus fundamentos, todos comienzan en su propio nivel y suben desde allí.",
+      "44 idiomas de interfaz",
+      "Sigue automáticamente el idioma del dispositivo, o puedes elegir otro dentro de la app."
+     ],
+     "dropped": [
+      "Resuelve una pregunta y un pequeño planeta se ilumina. Lumi Math Planet convierte contar, sumar, restar, las tablas de multiplicar, el reloj y el dinero en una entrañable aventura espacial: 46 tipos de preguntas con imágenes y lectura en voz alta. Las familias pueden seguir el progreso, practicar los puntos débiles e imprimir fichas con soluciones. Sin anuncios ni suscripción.",
+      "Cada planeta tiene su propia personalidad luminosa. Cada objeto está esculpido en un cálido estilo de arte de arcilla. Cada pregunta se lee en voz alta con una voz suave y real. Esto no es una hoja de trabajo con un dibujo animado pegado encima, es un pequeño mundo construido con el tipo de amor que esperarías de un gran maestro.",
+      "La mayoría de las aplicaciones de matemáticas entrenan velocidad. Lumi construye mentes. Nuestros estilos de preguntas están inspirados en los grandes desafíos de matemáticas tempranas del mundo – WMI y Math Kangaroo entre ellos: patrones numéricos, lógica, razonamiento espacial, combinatoria simple, problemas del mundo real. Tu hijo aprende a pensar como un joven matemático, justo en la mesa de la cocina.",
+      "Suma y resta más allá de 100 (con reagrupación), multiplicación, división, enlaces numéricos, valor posicional, comparación, patrones, impar/par, ordinales, tiempo y dinero: más de 40 tipos de preguntas que se nivelan automáticamente. Ya sea un prelector, un niño que recién comienza la escuela, o alguien reconstruyendo sus fundamentos, todos comienzan en su propio nivel y suben desde allí.",
+      "Cuatro idiomas nativos",
+      "Inglés · Chino · Japonés · Coreano – preguntas y voz completamente localizadas, automáticamente adaptadas a tu dispositivo.",
+      "(Los estilos de preguntas están inspirados en concursos internacionales de matemáticas tempranas solo para práctica; no afiliado a WMI, Math Kangaroo o cualquier organización.)"
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.22",
+     "same": false
     },
     "fr-FR": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-12",
-     "live_version": "1.0.21",
-     "same": true
+     "added": [
+      "Optimisée pour l’iPhone Duo. Conçue avec le SDK le plus récent, l’app remplit tout l’écran intérieur et adapte automatiquement sa mise en page, appareil plié ou ouvert.",
+      "Des maths avant même de savoir lire : 46 types de questions en images, chacune lue à voix haute, du comptage et des additions aux tables de multiplication, à l’heure et à la monnaie.",
+      "Une bonne réponse, et une petite planète s’illumine. En cas d’erreur, pas de buzzer : seulement des encouragements tout en douceur.",
+      "Les parents suivent les progrès dans cinq domaines, font travailler les points faibles et impriment des fiches avec corrigés. Sans publicité ni abonnement.",
+      "Un univers que votre enfant illumine en réfléchissant",
+      "Lumi Math Planet fait des maths une aventure spatiale chaleureuse et cinématographique. À chaque énigme résolue, une petite planète sombre reprend vie : des bâtiments s'élèvent, des aurores apparaissent et un adorable ami de l'espace descend dire bonjour. De Glimmer Planet jusqu'à Boss Planet, chaque bonne réponse rend l'univers un peu plus beau. Pas d'échec. Pas de buzzer. Pas de honte, seulement des encouragements. La confiance grandit d'elle-même.",
+      "Les enfants demandent à y jouer. C'est ce qui change tout.",
+      "Un soin qui se ressent",
+      "Chaque planète a sa personnalité lumineuse. Chaque objet adopte un style pâte à modeler chaleureux. Chaque question est lue à voix haute, d'un ton doux et bienveillant. Ce n'est pas une fiche d'exercices avec un dessin animé collé dessus : c'est un petit monde construit avec l'amour qu'on attend d'un grand enseignant.",
+      "La plupart des applis de maths entraînent la vitesse. Lumi forme la réflexion. Les types de questions couvrent les suites numériques, la logique, le repérage dans l'espace, la combinatoire simple et les problèmes concrets. Votre enfant apprend à raisonner comme un jeune mathématicien, à la table de la cuisine.",
+      "Chaque question est visuelle. Dés, cadres de dix, droites graduées, rangées qui grandissent, diagrammes en barres : les maths abstraites deviennent une image qu'on comprend d'un coup d'œil. Pas de par cœur. Pas de devinettes. Juste un vrai sens des nombres, découvert.",
+      "Du tout premier nombre au raisonnement de niveau concours",
+      "Additions et soustractions au-delà de 100 (avec retenue), multiplication, division, décompositions, numération, comparaisons, suites, pair/impair, nombres ordinaux, heure et monnaie : 46 types de questions dont le niveau s'ajuste tout seul. Enfant qui ne lit pas encore, élève qui entre à l'école ou toute personne qui consolide ses bases : chacun commence à son niveau et progresse à partir de là.",
+      "Des progrès que vous voyez vraiment",
+      "L'espace parents montre les acquis dans cinq domaines de compétences, repère les points faibles et lance un entraînement ciblé en un geste. Exportez une fiche d'exercices imprimable et un bilan d'apprentissage (à imprimer ou en PDF) et gardez chaque étape avec vous.",
+      "44 langues d’interface",
+      "Suit automatiquement la langue de l’appareil, ou choisissez-en une dans l’app.",
+      "Le luxe discret",
+      "Pas de publicité. Jamais. Aucune donnée collectée : rien ne quitte l'appareil. Pas de compte, pas de connexion. Chaque lien vers l'extérieur passe par un contrôle parental.",
+      "Une promesse tenue : un seul achat intégré. Pas d'abonnement, pas de relances. Commencez sans achat avec votre première planète et le défi du jour ; débloquez toute la galaxie quand vous le souhaitez.",
+      "Décollez, et regardez votre enfant bâtir un univers qui tourne grâce à ce qu'il vient d'apprendre."
+     ],
+     "dropped": [
+      "Réponds à une question et une petite planète s'illumine. Lumi Math Planet transforme le comptage, les additions et soustractions, les tables de multiplication, l'heure et la monnaie en une douce aventure spatiale : 46 types de questions en images, avec lecture à voix haute. Les parents suivent les progrès, travaillent les points faibles et impriment des fiches avec corrigé. Sans publicité, sans abonnement.",
+      "Un univers que votre enfant éclaire avec son propre esprit",
+      "Lumi Math Planet transforme les mathématiques en une aventure spatiale chaleureuse et cinématographique. Résolvez une énigme et une petite planète sombre s'illumine – des bâtiments s'élèvent, des aurores apparaissent et un adorable ami de l'espace descend pour dire bonjour. Du Glimmer Planet jusqu'au Boss Planet, chaque bonne réponse rend l'univers un peu plus beau. Pas d'échec. Pas de buzzer. Pas de honte – seulement des encouragements doux. Ainsi, la confiance grandit d'elle-même.",
+      "Les enfants demandent à y jouer. C'est la partie qui change tout.",
+      "Conçu avec un soin que vous pouvez ressentir",
+      "Chaque planète a sa propre personnalité lumineuse. Chaque objet est sculpté dans un style d'art en argile chaleureux. Chaque question est lue à haute voix par une voix douce et réelle. Ce n'est pas une feuille de travail avec un dessin animé agrafé dessus – c'est un petit monde construit avec l'amour que vous attendez d'un grand enseignant.",
+      "La plupart des applications de mathématiques entraînent la vitesse. Lumi construit des esprits. Nos styles de questions sont inspirés des grands défis de mathématiques précoces du monde – WMI et Math Kangaroo parmi eux : motifs numériques, logique, raisonnement spatial, combinatoire simple, problèmes réels. Votre enfant apprend à penser comme un jeune mathématicien, directement à la table de la cuisine.",
+      "Chaque question est visuelle. Dés, cadres de dix, lignes numériques, rangées croissantes, graphiques à barres – les mathématiques abstraites deviennent une image que vous comprenez en un coup d'œil. Pas de mémorisation. Pas de devinettes. Juste un véritable sens des nombres, découvert.",
+      "Du tout premier nombre à la pensée de niveau concours",
+      "Addition & soustraction au-delà de 100 (avec regroupement), multiplication, division, liens numériques, valeur de position, comparaison, motifs, impair/pair, ordinaux, temps et argent – plus de 40 types de questions qui se nivellent automatiquement. Que ce soit un pré-lecteur, un enfant qui commence juste l'école, ou quelqu'un reconstruisant ses bases, chacun commence à son propre niveau et monte à partir de là.",
+      "Une croissance que vous pouvez réellement voir",
+      "La zone parentale montre l'apprentissage à travers cinq domaines de compétences, repère les points faibles et ouvre une pratique ciblée en un clic. Exportez une feuille de travail imprimable et un rapport d'apprentissage (imprimez-le ou enregistrez un PDF) et emportez chaque étape avec vous.",
+      "Quatre langues maternelles",
+      "Anglais · Chinois · Japonais · Coréen – questions et voix entièrement localisées, automatiquement adaptées à votre appareil.",
+      "Les luxes silencieux",
+      "Pas de publicité. Jamais. Aucune donnée collectée – rien ne quitte jamais l'appareil. Pas de compte, pas de connexion. Chaque tapotement sortant est derrière une barrière parentale.",
+      "Une promesse tenue : un seul achat intégré. Pas d'abonnement, pas d'insistance. Commencez sans achat avec votre première planète et le défi quotidien ; débloquez toute la galaxie quand vous êtes prêt.",
+      "Décollez – et regardez votre enfant construire un univers qui fonctionne grâce à ce qu'il vient d'apprendre.",
+      "(Les styles de questions sont inspirés par des concours internationaux de mathématiques précoces uniquement pour la pratique ; non affilié à WMI, Math Kangaroo ou toute organisation.)"
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.22",
+     "same": false
     },
     "ja": {
      "added": [],
@@ -2022,11 +2795,26 @@
      "same": true
     },
     "pt-BR": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-12",
-     "live_version": "1.0.21",
-     "same": true
+     "added": [
+      "Otimizado para iPhone Duo. Criado com o SDK mais recente, o app ocupa toda a tela interna e ajusta o layout automaticamente, com o aparelho dobrado ou aberto.",
+      "Matemática antes de saber ler: 46 tipos de perguntas com imagens, cada uma lida em voz alta, da contagem e da adição à tabuada, ao relógio e ao dinheiro.",
+      "Acertou, e um planetinha acende. Errou? Nada de sons chatos, só um incentivo carinhoso.",
+      "Os pais acompanham o progresso em cinco áreas, treinam os pontos fracos e imprimem atividades com gabarito. Sem anúncios e sem assinatura.",
+      "Imagens claras e botões grandes para mãos pequenas",
+      "Sem anúncios, sem conta e sem coleta de dados; funciona offline",
+      "Disponível em 44 idiomas",
+      "Comece sem comprar com o primeiro planeta e o desafio diário; uma única compra no app desbloqueia a galáxia inteira, sem assinatura"
+     ],
+     "dropped": [
+      "Acertou uma pergunta, e um planetinha acende. O Lumi Math Planet transforma contagem, adição, subtração, tabuada, relógio e dinheiro numa aventura espacial carinhosa: 46 tipos de perguntas com imagens e leitura em voz alta. Pais e responsáveis acompanham o progresso, treinam os pontos fracos e imprimem atividades com gabarito. Sem anúncios e sem assinatura.",
+      "Perguntas visuais sobre números, padrões, formas e adição",
+      "Voz suave e controles para pequenos",
+      "Sem anúncios, sem conta e funciona offline",
+      "Ritmo calmo inspirado em Montessori"
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.22",
+     "same": false
     },
     "zh-Hant": {
      "added": [],
@@ -2036,7 +2824,7 @@
      "same": true
     }
    },
-   "status": "green"
+   "status": "red"
   },
   "lumimathpro": {
    "blocked_terms": [],
@@ -2118,7 +2906,9 @@
    "status": "green"
   },
   "lumimission": {
-   "blocked_terms": [],
+   "blocked_terms": [
+    "Inspirado em Montessori"
+   ],
    "brands": [
     "Lumi Hành Tinh Nhiệm Vụ",
     "Lumi Πλανήτης Αποστολών",
@@ -2136,7 +2926,7 @@
     "Lumi 任務星球",
     "Lumi 미션 별"
    ],
-   "live_updated": "2026-10-09",
+   "live_updated": "2026-10-27",
    "live_version": "1.4.8",
    "locales": {
     "de-DE": {
@@ -2161,18 +2951,28 @@
      "same": true
     },
     "es-ES": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.4.8",
-     "same": true
+     "added": [
+      "Optimizada para el iPhone Duo. Creada con el SDK más reciente, la app ocupa toda la pantalla interior y ajusta su diseño automáticamente, con el dispositivo plegado o desplegado.",
+      "Disponible en 44 idiomas"
+     ],
+     "dropped": [
+      "Disponible en inglés, chino tradicional, japonés y coreano"
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.4.9",
+     "same": false
     },
     "fr-FR": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.4.8",
-     "same": true
+     "added": [
+      "Optimisée pour l’iPhone Duo. Conçue avec le SDK le plus récent, l’app remplit tout l’écran intérieur et adapte automatiquement sa mise en page, appareil plié ou ouvert.",
+      "Disponible en 44 langues"
+     ],
+     "dropped": [
+      "Disponible en anglais, chinois traditionnel, japonais et coréen"
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.4.9",
+     "same": false
     },
     "ja": {
      "added": [],
@@ -2189,18 +2989,44 @@
      "same": true
     },
     "pt-BR": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.4.8",
-     "same": true
+     "added": [
+      "Otimizado para iPhone Duo. Criado com o SDK mais recente, o app ocupa toda a tela interna e ajusta o layout automaticamente, com o aparelho dobrado ou aberto.",
+      "Fazer uma criança pequena escovar os dentes, terminar a refeição ou guardar os brinquedos não deveria ser uma batalha todo dia.",
+      "Lumi Mission Planet transforma a rotina em missões gentis: a criança toca na tela a cada pequeno passo, um coelhinho fofo comemora na hora e o planeta inteiro festeja quando a missão termina.",
+      "Feito para pais e mães de crianças de cerca de 3 a 7 anos, para usar junto.",
+      "Missões diárias: refeições, escovar os dentes, dormir, arrumar e se preparar para a escola, além de missões personalizadas",
+      "Seis amiguinhos para colecionar e 100 adesivos de conquista",
+      "Painel dos pais: resumo do dia, calendário de 7 dias e o horário exato de cada toque",
+      "Lembrete diário no horário que combina com sua família",
+      "Sem conta, sem anúncios, sem rastreamento; funciona offline",
+      "Disponível em 44 idiomas",
+      "As missões de refeição, dentes, sono e arrumação podem ser usadas sem compra, junto com o coelhinho e os primeiros adesivos. Uma compra única desbloqueia a missão da escola, as missões personalizadas, os seis amiguinhos e a coleção completa de adesivos. Sem assinatura."
+     ],
+     "dropped": [
+      "Transforme a rotina diária em pequenas conquistas felizes.",
+      "Lumi Mission Planet ajuda crianças de 3 a 6 anos a escovar os dentes, se vestir, guardar brinquedos, se preparar para dormir e colaborar em casa. Missões calmas e estrelas valorizam o esforço sem anúncios, pressa ou pressão.",
+      "Missões para hábitos e responsabilidades",
+      "Reforço positivo com recompensas",
+      "Funciona offline",
+      "Seguro e confiável para famílias",
+      "Inspirado em Montessori",
+      "Teste as missões básicas, desbloqueio único"
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.4.9",
+     "same": false
     },
     "zh-Hans": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.4.8",
-     "same": true
+     "added": [
+      "已针对 iPhone Duo 优化。本应用使用最新开发工具包构建,铺满整块内屏,无论折叠还是展开都会自动调整布局。",
+      "界面支持 44 种语言"
+     ],
+     "dropped": [
+      "界面支持中文(繁体)、英语、日语、韩语"
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.4.9",
+     "same": false
     },
     "zh-Hant": {
      "added": [],
@@ -2210,10 +3036,12 @@
      "same": true
     }
    },
-   "status": "green"
+   "status": "red"
   },
   "lumimissionpro": {
-   "blocked_terms": [],
+   "blocked_terms": [
+    "Inspirado em Montessori"
+   ],
    "brands": [
     "Lumi Hành Tinh Nhiệm Vụ Pro",
     "Lumi Πλανήτης Αποστολών Pro",
@@ -2230,7 +3058,7 @@
     "Lumi 任務星球 Pro",
     "Lumi 미션 별 Pro"
    ],
-   "live_updated": "2026-10-09",
+   "live_updated": "2026-10-27",
    "live_version": "1.0.13",
    "locales": {
     "de-DE": {
@@ -2255,18 +3083,36 @@
      "same": true
     },
     "es-ES": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.13",
-     "same": true
+     "added": [
+      "Optimizada para el iPhone Duo. Creada con el SDK más reciente, la app ocupa toda la pantalla interior y ajusta su diseño automáticamente, con el dispositivo plegado o desplegado.",
+      "Lumi Mission Planet Pro convierte cinco rutinas diarias en misiones suaves. Tu hijo toca la pantalla por cada pequeña victoria y el compañero que ha elegido salta y lo celebra al momento. Al terminar una misión, todo el planeta lo festeja.",
+      "El panel para padres registra cada misión completada con su hora, con resumen del día y calendario de 7 días, además de misiones personalizadas ilimitadas. Una sola compra lo desbloquea todo, con En familia.",
+      "Disponible en 44 idiomas"
+     ],
+     "dropped": [
+      "Lumi Mission Planet Pro convierte cinco rutinas diarias en misiones suaves. Tu hijo toca la pantalla por cada pequeño logro, y Lumi, un adorable oso espacial, salta y aplaude en el acto. Completa una misión y todo el planeta celebra. La retroalimentación es inmediata, por lo que la motivación también lo es.",
+      "Esta es la edición completa. Una compra desbloquea todo, para siempre, para toda la familia con Compartir en Familia.",
+      "Inglés, Chino Tradicional, Japonés y Coreano"
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.14",
+     "same": false
     },
     "fr-FR": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.13",
-     "same": true
+     "added": [
+      "Optimisée pour l’iPhone Duo. Conçue avec le SDK le plus récent, l’app remplit tout l’écran intérieur et adapte automatiquement sa mise en page, appareil plié ou ouvert.",
+      "Lumi Mission Planet Pro transforme cinq routines quotidiennes en missions douces. Votre enfant touche l'écran à chaque petite victoire, et le compagnon qu'il a choisi saute de joie aussitôt. Une mission terminée, et toute la planète fait la fête.",
+      "Le tableau de bord parent enregistre chaque réussite avec son heure, avec l'aperçu du jour et un calendrier sur 7 jours, plus des missions personnalisées illimitées. Un seul achat débloque tout, avec le Partage familial.",
+      "Disponible en 44 langues"
+     ],
+     "dropped": [
+      "Lumi Mission Planet Pro transforme cinq routines quotidiennes en missions douces. Votre enfant appuie sur l'écran pour chaque petite victoire, et Lumi, un adorable ours de l'espace, saute et applaudit sur place. Terminez une mission et toute la planète célèbre. Le retour est immédiat, donc la motivation aussi.",
+      "C'est l'édition complète. Un achat débloque tout, pour toujours, pour toute la famille avec le partage familial.",
+      "Anglais, Chinois traditionnel, Japonais et Coréen"
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.14",
+     "same": false
     },
     "ja": {
      "added": [],
@@ -2283,18 +3129,48 @@
      "same": true
     },
     "pt-BR": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.13",
-     "same": true
+     "added": [
+      "Otimizado para iPhone Duo. Criado com o SDK mais recente, o app ocupa toda a tela interna e ajusta o layout automaticamente, com o aparelho dobrado ou aberto.",
+      "Fazer uma criança pequena escovar os dentes, terminar a refeição ou guardar os brinquedos não deveria ser uma batalha todo dia.",
+      "Lumi Mission Planet Pro transforma cinco rotinas diárias em missões gentis: a criança toca na tela a cada pequena vitória, o amiguinho que ela escolheu pula e comemora na hora, e o planeta inteiro festeja a missão concluída.",
+      "O painel dos pais registra cada conclusão com o horário, com resumo do dia e calendário de 7 dias, além de missões personalizadas ilimitadas. Uma única compra desbloqueia tudo, com Compartilhamento Familiar.",
+      "Cinco missões diárias: refeições, escovar os dentes, dormir, arrumar e se preparar para a escola",
+      "Missões personalizadas ilimitadas, com ícone e cenário à sua escolha",
+      "Seis amiguinhos para escolher e 100 adesivos de conquista",
+      "Lembrete diário opcional no horário que combina com sua família",
+      "Sem anúncios, sem conta, sem rastreamento; funciona offline",
+      "Disponível em 44 idiomas",
+      "Compra única, tudo desbloqueado, sem compras no app"
+     ],
+     "dropped": [
+      "Transforme a rotina diária em pequenas conquistas felizes.",
+      "Lumi Mission Planet ajuda crianças de 3 a 6 anos a escovar os dentes, se vestir, guardar brinquedos, se preparar para dormir e colaborar em casa. Missões calmas e estrelas valorizam o esforço sem anúncios, pressa ou pressão.",
+      "Missões para hábitos e responsabilidades",
+      "Reforço positivo com recompensas",
+      "Funciona offline",
+      "Seguro e confiável para famílias",
+      "Inspirado em Montessori",
+      "Grátis para testar, desbloqueio único"
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.14",
+     "same": false
     },
     "zh-Hans": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.13",
-     "same": true
+     "added": [
+      "已针对 iPhone Duo 优化。本应用使用最新开发工具包构建,铺满整块内屏,无论折叠还是展开都会自动调整布局。",
+      "Lumi 任务星球 Pro 把五个日常生活常规变成温柔的小任务。孩子每完成一小步就点一下屏幕,你选的伙伴立刻跳起来欢呼;整个任务完成时,全星球一起庆祝。",
+      "家长后台逐条记下每次完成的时间,今日总览、七天日历一目了然;还能无限自定义任务。一次购买全部解锁,无内购、无订阅,支持家人共享。",
+      "支持 44 种界面语言"
+     ],
+     "dropped": [
+      "Lumi 任务星球 Pro 把五个日常生活常规变成温柔的小任务。孩子每完成一小步就点一下屏幕,太空小熊 Lumi 立刻跳起来欢呼;整个任务完成时,全星球一起庆祝。反馈是即时的,动力也就是即时的。",
+      "这是付费完整版:一次购买,永久解锁全部内容,无广告、无内购、无订阅,并支持家人共享,一人购买全家使用。",
+      "支持繁体中文、英文、日文、韩文"
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.14",
+     "same": false
     },
     "zh-Hant": {
      "added": [],
@@ -2304,7 +3180,7 @@
      "same": true
     }
    },
-   "status": "green"
+   "status": "red"
   },
   "lumiweather": {
    "blocked_terms": [],
@@ -2429,11 +3305,14 @@
    "status": "green"
   },
   "maskmyfile": {
-   "blocked_terms": [],
+   "blocked_terms": [
+    "ÚSALO CUANDO IMPORTA",
+    "在关键时刻放心使用"
+   ],
    "brands": [
     "Mask My File"
    ],
-   "live_updated": "2026-10-09",
+   "live_updated": "2026-10-27",
    "live_version": "1.0.8",
    "locales": {
     "de-DE": {
@@ -2458,18 +3337,38 @@
      "same": true
     },
     "es-ES": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.8",
-     "same": true
+     "added": [
+      "Optimizada para el iPhone Duo. Creada con el SDK más reciente, la app ocupa toda la pantalla interior y ajusta su diseño automáticamente, con el dispositivo plegado o desplegado.",
+      "Tacha tus datos personales antes de compartir. Mask My File encuentra nombres, teléfonos, correos, direcciones y datos de cuentas y pagos, y oculta para siempre solo lo que elijas.",
+      "Funciona con PDF, fotos, capturas de pantalla y archivos de texto, y elimina los metadatos cuando el formato lo permite. El original nunca se sobrescribe: obtienes una copia nueva que se vuelve a abrir y se verifica.",
+      "Úsalo para solicitudes de alquiler, nóminas, archivos de clientes y copias del DNI."
+     ],
+     "dropped": [
+      "Comparte con seguridad sin perder el contexto que de verdad importa. Mask My File localiza los datos privados antes de que envíes un archivo, oculta de forma permanente solo lo que tú elijas y después vuelve a abrir y verifica la nueva copia antes de mostrar Private Ready.",
+      "ÚSALO CUANDO IMPORTA",
+      "Antes de enviar un contrato de alquiler, un informe médico, una nómina con tu DNI o el expediente de un cliente a un compañero, conserva el contexto útil y oculta para siempre los detalles que no necesitan ver."
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.9",
+     "same": false
     },
     "fr-FR": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.8",
-     "same": true
+     "added": [
+      "Optimisée pour l’iPhone Duo. Conçue avec le SDK le plus récent, l’app remplit tout l’écran intérieur et adapte automatiquement sa mise en page, appareil plié ou ouvert.",
+      "Caviardez vos données personnelles avant de partager. Mask My File repère les noms, numéros de téléphone, e-mails, adresses, données de compte et de paiement, puis masque définitivement uniquement ce que vous choisissez.",
+      "Fonctionne avec les PDF, photos, captures d'écran et fichiers texte, et supprime les métadonnées quand le format le permet. L'original n'est jamais écrasé : vous obtenez une nouvelle copie, rouverte et vérifiée.",
+      "Idéal pour les dossiers de location, fiches de paie, fichiers clients et copies de pièces d'identité.",
+      "Un seul achat à vie débloque des exports vérifiés et des lots de fichiers illimités. Sans abonnement. Restaurez votre achat depuis l'App Store."
+     ],
+     "dropped": [
+      "Partagez en toute sérénité sans perdre le contexte utile. Mask My File détecte les données privées avant l'envoi d'un fichier, les masque définitivement selon votre choix, puis rouvre et vérifie la nouvelle copie avant d'afficher Private Ready.",
+      "QUAND CELA COMPTE VRAIMENT",
+      "Avant d'envoyer un dossier de location, de partager un document médical ou de transmettre un fichier client à un collègue, conservez le contexte nécessaire et masquez pour toujours les informations que les autres n'ont pas besoin de voir.",
+      "Un seul achat à vie débloque des exports vérifiés et un traitement par lots illimités. Sans abonnement. Restaurez votre achat depuis l'App Store."
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.9",
+     "same": false
     },
     "ja": {
      "added": [],
@@ -2486,18 +3385,36 @@
      "same": true
     },
     "pt-BR": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.8",
-     "same": true
+     "added": [
+      "Otimizado para iPhone Duo. Criado com o SDK mais recente, o app ocupa toda a tela interna e ajusta o layout automaticamente, com o aparelho dobrado ou aberto.",
+      "Tarje seus dados pessoais antes de compartilhar. O Mask My File encontra nomes, telefones, e-mails, endereços, dados de conta e de pagamento e oculta para sempre só o que você escolher.",
+      "Funciona com PDF, fotos, capturas de tela e arquivos de texto, e remove metadados quando o formato permite. O original nunca é sobrescrito: você recebe uma cópia nova, reaberta e verificada.",
+      "Use para fichas de aluguel, holerites, arquivos de clientes e cópias de RG."
+     ],
+     "dropped": [
+      "Compartilhe com segurança sem perder o contexto útil. O Mask My File encontra dados pessoais antes de você enviar um arquivo, tarja em definitivo o que você escolher e depois reabre e verifica o novo arquivo antes de mostrar o selo Private Ready.",
+      "USE QUANDO REALMENTE IMPORTA",
+      "Antes de enviar uma proposta de aluguel, compartilhar um exame médico ou entregar a ficha de um cliente a um colega, preserve o contexto necessário e oculte para sempre os detalhes sigilosos."
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.9",
+     "same": false
     },
     "zh-Hans": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.8",
-     "same": true
+     "added": [
+      "已针对 iPhone Duo 优化。本应用使用最新开发工具包构建,铺满整块内屏,无论折叠还是展开都会自动调整布局。",
+      "发文件前先把个人信息涂黑:自动找出姓名、电话、邮箱、地址、账号与支付信息,你选定的地方永久遮挡。",
+      "PDF、照片、截图与文本文件都能处理,格式支持时还会移除元数据;原文件不动,另存一份重新打开验证过的新文件。",
+      "租房申请、工资条、客户资料、证件复印件,发出去之前先过一遍。"
+     ],
+     "dropped": [
+      "安心分享,同时保留有用的上下文。Mask My File 会在你发送文件前找出隐私信息,永久遮挡后,再重新打开并核对新导出的文件,确认无误才显示 Private Ready。",
+      "在关键时刻放心使用",
+      "无论是提交租房申请、分享医疗文档,还是把客户文件交给同事,都能在永久遮挡隐私信息的同时,保留必要的上下文。"
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.9",
+     "same": false
     },
     "zh-Hant": {
      "added": [],
@@ -2507,7 +3424,7 @@
      "same": true
     }
    },
-   "status": "green"
+   "status": "red"
   },
   "mochi": {
    "blocked_terms": [],
@@ -2595,7 +3512,7 @@
    "brands": [
     "Mochi DoneStamp"
    ],
-   "live_updated": "2026-10-09",
+   "live_updated": "2026-10-27",
    "live_version": "1.0.18",
    "locales": {
     "de-DE": {
@@ -2620,18 +3537,40 @@
      "same": true
     },
     "es-ES": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.18",
-     "same": true
+     "added": [
+      "Optimizada para el iPhone Duo. Creada con el SDK más reciente, la app ocupa toda la pantalla interior y ajusta su diseño automáticamente, con el dispositivo plegado o desplegado.",
+      "¿Cuándo cambiaste las sábanas, limpiaste el filtro del aire acondicionado o le cambiaste el aceite al coche por última vez?",
+      "Al terminar una tarea, toca una vez y Mochi DoneStamp guarda la hora exacta, para que siempre veas cuánto tiempo ha pasado.",
+      "Define un ritmo para recibir un aviso cuando toque; la siguiente fecha siempre cuenta desde el día en que de verdad lo hiciste.",
+      "Modo oscuro, iPad, VoiceOver y Dynamic Type",
+      "Apple Watch: consulta la última vez y regístrala desde la muñeca"
+     ],
+     "dropped": [
+      "¿Cuándo cambiaste las sábanas, regaste una planta, llamaste a tu familia, hiciste una copia de tus fotos o cambiaste un filtro por última vez?",
+      "Mochi DoneStamp recuerda los eventos de tu vida; no es otra lista de tareas. Cuando termines algo, toca una vez y la hora exacta quedará en un historial tranquilo. Añade un ritmo aproximado o exacto cuando te resulte útil. La próxima fecha siempre se vuelve a calcular desde el momento real en que terminaste.",
+      "Modo oscuro, iPad, VoiceOver, RTL y Dynamic Type"
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.19",
+     "same": false
     },
     "fr-FR": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.18",
-     "same": true
+     "added": [
+      "Optimisée pour l’iPhone Duo. Conçue avec le SDK le plus récent, l’app remplit tout l’écran intérieur et adapte automatiquement sa mise en page, appareil plié ou ouvert.",
+      "Quand avez-vous changé les draps, nettoyé le filtre de la hotte ou fait la vidange de la voiture pour la dernière fois ?",
+      "Une fois la tâche terminée, touchez une fois et Mochi DoneStamp enregistre l’heure exacte : vous voyez toujours depuis combien de temps c’est fait.",
+      "Choisissez un rythme pour recevoir un rappel au bon moment ; la prochaine date se calcule toujours à partir du jour où vous l’avez réellement fait.",
+      "Mode sombre, iPad, VoiceOver et Dynamic Type",
+      "Apple Watch : voyez la dernière fois et enregistrez-la depuis votre poignet"
+     ],
+     "dropped": [
+      "Quand avez-vous changé les draps, arrosé une plante, appelé vos proches, sauvegardé vos photos ou remplacé un filtre pour la dernière fois ?",
+      "Mochi DoneStamp mémorise les événements de la vie : ce n’est pas une liste de tâches. Une fois l’action terminée, un toucher suffit pour conserver l’heure exacte dans un historique apaisé. Ajoutez au besoin un rythme approximatif ou précis. La prochaine échéance repart toujours de l’heure réelle de réalisation.",
+      "Mode sombre, iPad, VoiceOver, RTL et Dynamic Type"
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.19",
+     "same": false
     },
     "ja": {
      "added": [],
@@ -2648,18 +3587,40 @@
      "same": true
     },
     "pt-BR": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.18",
-     "same": true
+     "added": [
+      "Otimizado para iPhone Duo. Criado com o SDK mais recente, o app ocupa toda a tela interna e ajusta o layout automaticamente, com o aparelho dobrado ou aberto.",
+      "Quando foi a última vez que você trocou a roupa de cama, limpou o filtro do ar-condicionado ou trocou o óleo do carro?",
+      "Terminou uma tarefa? Toque uma vez e o Mochi DoneStamp registra o horário exato, para você sempre ver quanto tempo passou.",
+      "Defina um ritmo para receber um lembrete na hora certa; a próxima data sempre conta a partir do dia em que você realmente fez.",
+      "Apple Watch: veja a última vez e registre direto do pulso"
+     ],
+     "dropped": [
+      "Quando foi a última vez que você trocou os lençóis, regou uma planta, ligou para a família, fez backup das fotos ou trocou um filtro?",
+      "Mochi DoneStamp é uma memória para eventos da vida, não mais uma lista de tarefas. Terminou algo? Um toque guarda a hora exata em um histórico tranquilo. Adicione um ritmo aproximado ou exato quando fizer sentido; a próxima data sempre recomeça a partir da conclusão real."
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.19",
+     "same": false
     },
     "zh-Hans": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.18",
-     "same": true
+     "added": [
+      "已针对 iPhone Duo 优化。本应用使用最新开发工具包构建,铺满整块内屏,无论折叠还是展开都会自动调整布局。",
+      "上次换床单、清洗空调滤网、给车换机油,是什么时候?",
+      "事情做完点一下,Mochi DoneStamp 就记下准确时间,随时看到距离上次已经几天。",
+      "设好周期就会到期提醒;下次日期从你真正做完那天重新计算,不会被过期的截止日绑住。",
+      "深色模式、iPad、VoiceOver 与动态字体",
+      "Apple Watch:在手表上查看上次时间并一键记录",
+      "免费版可创建 1 个进行中事件,历史不限;一次买断即可解锁无限事件与完整功能。"
+     ],
+     "dropped": [
+      "上次换床单、给植物浇水、打电话给家人、备份照片或更换滤芯,是什么时候?",
+      "Mochi DoneStamp 是生活事件记忆器,不是另一款待办清单。事情做完只需点一下,精确时间就会成为清晰而安静的历史。需要时可添加“大约”或“精确”节奏;下次时间始终从实际完成时重新计算,不会被过期的截止日期束缚。",
+      "深色模式、iPad、VoiceOver、RTL 与动态字体",
+      "免费版可创建 1 个进行中事件,历史不限。 只需一次买断 Lifetime Pro,即可解锁无限事件与完整功能。"
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.19",
+     "same": false
     },
     "zh-Hant": {
      "added": [],
@@ -2669,7 +3630,7 @@
      "same": true
     }
    },
-   "status": "green"
+   "status": "red"
   },
   "moneytag": {
    "blocked_terms": [],
@@ -2838,7 +3799,7 @@
    "brands": [
     "OnePage PPT"
    ],
-   "live_updated": "2026-10-09",
+   "live_updated": "2026-10-27",
    "live_version": "1.0.7",
    "locales": {
     "de-DE": {
@@ -2863,18 +3824,22 @@
      "same": true
     },
     "es-ES": {
-     "added": [],
+     "added": [
+      "Optimizada para el iPhone Duo. Creada con el SDK más reciente, la app ocupa toda la pantalla interior y ajusta su diseño automáticamente, con el dispositivo plegado o desplegado."
+     ],
      "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.7",
-     "same": true
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.8",
+     "same": false
     },
     "fr-FR": {
-     "added": [],
+     "added": [
+      "Optimisée pour l’iPhone Duo. Conçue avec le SDK le plus récent, l’app remplit tout l’écran intérieur et adapte automatiquement sa mise en page, appareil plié ou ouvert."
+     ],
      "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.7",
-     "same": true
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.8",
+     "same": false
     },
     "ja": {
      "added": [],
@@ -2891,18 +3856,22 @@
      "same": true
     },
     "pt-BR": {
-     "added": [],
+     "added": [
+      "Otimizado para iPhone Duo. Criado com o SDK mais recente, o app ocupa toda a tela interna e ajusta o layout automaticamente, com o aparelho dobrado ou aberto."
+     ],
      "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.7",
-     "same": true
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.8",
+     "same": false
     },
     "zh-Hans": {
-     "added": [],
+     "added": [
+      "已针对 iPhone Duo 优化。本应用使用最新开发工具包构建,铺满整块内屏,无论折叠还是展开都会自动调整布局。"
+     ],
      "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.7",
-     "same": true
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.8",
+     "same": false
     },
     "zh-Hant": {
      "added": [],
@@ -2912,7 +3881,7 @@
      "same": true
     }
    },
-   "status": "green"
+   "status": "red"
   },
   "photocream": {
    "blocked_terms": [],
@@ -3000,7 +3969,7 @@
    "brands": [
     "PicClear Pro"
    ],
-   "live_updated": "2026-10-09",
+   "live_updated": "2026-10-27",
    "live_version": "1.9.8",
    "locales": {
     "de-DE": {
@@ -3025,18 +3994,38 @@
      "same": true
     },
     "es-ES": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.9.8",
-     "same": true
+     "added": [
+      "Optimizada para el iPhone Duo. Creada con el SDK más reciente, la app ocupa toda la pantalla interior y ajusta su diseño automáticamente, con el dispositivo plegado o desplegado.",
+      "Las fotos parecidas y las ráfagas se agrupan con una mejor foto sugerida para conservar, y puedes previsualizarlo todo antes de borrar nada. Tus Favoritos nunca se seleccionan automáticamente.",
+      "Lo que borras pasa primero a «Eliminados recientemente» en Fotos, así que puedes recuperarlo durante un tiempo. Todo se analiza en tu iPhone.",
+      "Disponible en 45 idiomas"
+     ],
+     "dropped": [
+      "PicClear Pro analiza tu fototeca directamente en tu dispositivo, agrupa lo que es seguro eliminar y te deja revisarlo todo antes de borrar una sola foto. La forma tranquila y privada de recuperar tu espacio.",
+      "Disponible en inglés, alemán, francés, italiano, español, japonés, coreano, chino simplificado y chino tradicional",
+      "PAGA UNA VEZ. LIMPIA PARA SIEMPRE.",
+      "Un único desbloqueo sencillo: sin suscripción, sin cargos ocultos. Tu espacio, de vuelta en tus manos."
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.9.9",
+     "same": false
     },
     "fr-FR": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.9.8",
-     "same": true
+     "added": [
+      "Optimisée pour l’iPhone Duo. Conçue avec le SDK le plus récent, l’app remplit tout l’écran intérieur et adapte automatiquement sa mise en page, appareil plié ou ouvert.",
+      "Les photos similaires et les rafales sont regroupées, avec une meilleure photo suggérée à garder dans chaque groupe, et vous voyez un aperçu de tout avant la moindre suppression. Vos favoris ne sont jamais sélectionnés automatiquement.",
+      "Les éléments supprimés vont d’abord dans « Supprimés récemment » dans Photos : vous pouvez encore les récupérer pendant un certain temps. Tout est analysé sur votre iPhone.",
+      "Disponible en 45 langues"
+     ],
+     "dropped": [
+      "PicClear Pro analyse votre photothèque directement sur votre appareil, regroupe ce qui peut être supprimé en toute sécurité et vous laisse tout vérifier avant qu’une seule photo ne soit effacée. La façon sereine et privée de récupérer votre espace.",
+      "Disponible en anglais, allemand, français, italien, espagnol, japonais, coréen, chinois simplifié et chinois traditionnel",
+      "PAYEZ UNE FOIS. NETTOYEZ POUR TOUJOURS.",
+      "Un seul déverrouillage simple — pas d’abonnement, pas de frais cachés. Votre espace, de nouveau entre vos mains."
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.9.9",
+     "same": false
     },
     "ja": {
      "added": [],
@@ -3053,18 +4042,38 @@
      "same": true
     },
     "pt-BR": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.9.8",
-     "same": true
+     "added": [
+      "Otimizado para iPhone Duo. Criado com o SDK mais recente, o app ocupa toda a tela interna e ajusta o layout automaticamente, com o aparelho dobrado ou aberto.",
+      "Fotos parecidas e sequências de disparo são agrupadas com uma melhor foto sugerida para manter, e você vê a prévia de tudo antes de apagar qualquer coisa. Seus Favoritos nunca são selecionados automaticamente.",
+      "Os itens apagados vão primeiro para a pasta de itens apagados recentemente do app Fotos, então ainda dá para recuperá-los por um tempo. Tudo é analisado no seu iPhone.",
+      "Sem conta, sem anúncios e sem envio para a nuvem, e funciona totalmente offline. Recupere seu espaço com o PicClear Pro."
+     ],
+     "dropped": [
+      "O PicClear Pro analisa sua fototeca diretamente no aparelho, agrupa itens para revisão segura e não apaga nada antes da sua confirmação. Suas fotos nunca são enviadas para a nuvem, não é preciso criar conta e não há anúncios.",
+      "Revise miniaturas, proteja Favoritos e mantenha a melhor foto sugerida em cada grupo. Um jeito simples e privado de retomar o controle da sua galeria."
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.9.9",
+     "same": false
     },
     "zh-Hans": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.9.8",
-     "same": true
+     "added": [
+      "已针对 iPhone Duo 优化。本应用使用最新开发工具包构建,铺满整块内屏,无论折叠还是展开都会自动调整布局。",
+      "清出占空间的照片,腾出好几 GB 的存储空间:重复照片、相似连拍、屏幕截图、模糊照片,还有最占空间的大视频。",
+      "相似照片自动分组,每组建议保留最好的一张;删除前可以逐张预览,「个人收藏」永远不会被自动选中。",
+      "删除的项目会先进入「照片」的「最近删除」,一段时间内都能恢复。全部在 iPhone 上分析,照片不上传。",
+      "支持 45 种界面语言"
+     ],
+     "dropped": [
+      "清出占空间的照片,腾出好几 GB 的存储空间——重复照片、屏幕截图、模糊照片,还有最占空间的视频。",
+      "PicClear Pro 直接在你的设备上扫描相册,把可安全清理的项目分门别类,并让你在删除任何一张照片前先完整查看。这是一种沉静、注重隐私的方式,帮你把存储空间拿回来。",
+      "提供英语、德语、法语、意大利语、西班牙语、日语、韩语、简体中文和繁体中文",
+      "付一次,永久清理",
+      "只要一次解锁——无订阅、无隐藏费用。你的存储空间,重新回到你手中。"
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.9.9",
+     "same": false
     },
     "zh-Hant": {
      "added": [],
@@ -3074,7 +4083,7 @@
      "same": true
     }
    },
-   "status": "green"
+   "status": "red"
   },
   "qrcodehalo": {
    "blocked_terms": [],
@@ -3082,7 +4091,7 @@
     "QR Code Halo สแกน & สร้าง",
     "QR Code Halo"
    ],
-   "live_updated": "2026-10-09",
+   "live_updated": "2026-10-27",
    "live_version": "1.0.3",
    "locales": {
     "de-DE": {
@@ -3107,18 +4116,32 @@
      "same": true
     },
     "es-ES": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.3",
-     "same": true
+     "added": [
+      "Optimizada para el iPhone Duo. Creada con el SDK más reciente, la app ocupa toda la pantalla interior y ajusta su diseño automáticamente, con el dispositivo plegado o desplegado.",
+      "Escanea códigos QR y de barras en 20 formatos con la cámara o desde una foto, y actúa al momento: los enlaces se abren y los códigos wifi muestran el aviso para unirte a la red.",
+      "¿Te preocupa que un código sea una estafa? Ábrelo en el Historial y toca «Revisión de seguridad». En tu dispositivo, QR Code Halo descompone el enlace y marca las URL sospechosas, los enlaces sin HTTPS y los dominios que mezclan alfabetos como seguros, con precaución o bloqueados. Los códigos javascript:, data: y file: nunca se abren, y puedes desactivar «Ejecutar al escanear» para revisar cada código antes.",
+      "También puedes crear 9 tipos de códigos QR, como de wifi, contactos y eventos."
+     ],
+     "dropped": [
+      "QR Code Halo actúa en cuanto lee un código. Escanea con la cámara o elige una foto: los enlaces se abren en tu navegador, los códigos de inicio con llave de acceso y los enlaces de app pasan directamente a iOS, los códigos Wi-Fi muestran el aviso de iOS para unirse a la red, y las llamadas, mensajes, correos y lugares se abren en su app. Los contactos y eventos abren la pantalla de añadir de iOS para que confirmes. El texto se copia con una nota breve, y los códigos javascript:, data: o file: nunca se abren. Para revisar cada código antes, desactiva “Ejecutar al escanear” en Ajustes; el escaneo por lotes solo recopila."
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.4",
+     "same": false
     },
     "fr-FR": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.3",
-     "same": true
+     "added": [
+      "Optimisée pour l’iPhone Duo. Conçue avec le SDK le plus récent, l’app remplit tout l’écran intérieur et adapte automatiquement sa mise en page, appareil plié ou ouvert.",
+      "Scannez les QR codes et les codes-barres en 20 formats, avec la caméra ou depuis une photo, et l'action est immédiate : les liens s'ouvrent et les codes Wi-Fi affichent l'invite pour rejoindre le réseau.",
+      "Peur qu'un code soit une arnaque ? Ouvrez-le dans l'Historique et touchez « Contrôle de sécurité ». Sur votre appareil, QR Code Halo décompose le lien et signale les URL suspectes, les liens sans HTTPS et les domaines qui mélangent les alphabets comme sûrs, à surveiller ou bloqués. Les codes javascript:, data: et file: ne s'ouvrent jamais, et vous pouvez désactiver « Exécuter dès la lecture » pour vérifier chaque code avant de l'ouvrir.",
+      "Créez aussi 9 types de QR codes, dont Wi-Fi, contacts et événements."
+     ],
+     "dropped": [
+      "QR Code Halo agit dès qu'il lit un code. Scannez avec la caméra ou choisissez une photo : les liens s'ouvrent dans votre navigateur, les codes de connexion par clé d'accès et les liens d'app passent directement à iOS, les codes Wi-Fi affichent la demande d'iOS pour rejoindre le réseau, et appels, messages, e-mails et lieux s'ouvrent dans leur app. Les contacts et les événements ouvrent l'écran d'ajout d'iOS, que vous validez. Le texte est copié avec une courte note, et les codes javascript:, data: ou file: ne sont jamais ouverts. Pour vérifier chaque code d'abord, désactivez « Exécuter dès la lecture » dans Réglages ; le scan par lot se contente de collecter."
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.4",
+     "same": false
     },
     "ja": {
      "added": [],
@@ -3135,18 +4158,48 @@
      "same": true
     },
     "pt-BR": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.3",
-     "same": true
+     "added": [
+      "Otimizado para iPhone Duo. Criado com o SDK mais recente, o app ocupa toda a tela interna e ajusta o layout automaticamente, com o aparelho dobrado ou aberto.",
+      "Escaneie QR codes e códigos de barras em 20 formatos com a câmera ou de uma foto, e a ação acontece na hora: links abrem e códigos de Wi-Fi mostram o aviso para entrar na rede.",
+      "Medo de que o código seja golpe? Abra no Histórico e toque em “Checar segurança”. No próprio aparelho, o QR Code Halo separa o link em partes e marca URLs suspeitas, links sem HTTPS e domínios que misturam alfabetos como seguros, atenção ou bloqueados. Códigos javascript:, data: e file: nunca abrem, e você pode desativar “Executar ao escanear” para checar cada código antes.",
+      "Também dá para criar 9 tipos de QR code, como de Wi-Fi, contatos e eventos."
+     ],
+     "dropped": [
+      "O QR Code Halo age no instante em que lê um código. Escaneie com a câmera ou escolha uma foto: links abrem no seu navegador, códigos de login com chave-senha e links de app vão direto para o iOS, códigos Wi-Fi mostram o aviso do iOS para entrar na rede, e ligações, mensagens, e-mails e locais abrem no app de cada um. Contatos e eventos abrem a tela de adicionar do iOS para você confirmar. Texto é copiado com um aviso curto, e códigos javascript:, data: ou file: nunca são abertos. Para conferir cada código antes, desative “Executar ao escanear” em Ajustes; escanear em lote só coleta."
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.4",
+     "same": false
     },
     "zh-Hans": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.3",
-     "same": true
+     "added": [
+      "已针对 iPhone Duo 优化。本应用使用最新开发工具包构建,铺满整块内屏,无论折叠还是展开都会自动调整布局。",
+      "扫二维码和条形码,一扫就执行:网址直接打开、Wi-Fi 弹出加入提示,相机或相册照片都能识别,支持 20 种码制。",
+      "担心扫到诈骗链接?在历史记录里点开任一条、点“安全检查”,在手机上把网址拆开逐项检查,标出可疑网址、非 HTTPS 链接和混用不同文字的域名;javascript:、data:、file: 这类危险码一律不打开。想每次先检查再打开,可在设置中关闭“扫描后自动执行”。",
+      "还能制作网址、Wi-Fi、联系人、日程等 9 种二维码。",
+      "除非开启“不保存到历史记录”,批量扫描以外的每次扫描都会保存在这台设备上。在历史记录里点开任一条、点“安全检查”,就能用下面两个本地工具重新查看。",
+      "本地安全检查",
+      "在设备上解析完整内容,逐项列出协议、域名、路径、查询参数与片段,标为“安全”“注意”或“已阻止”,并附上看得懂的检查结果与建议操作。判定规则固定、可复现,不查询网络信誉,也不给模糊的分数;解析有疑问时一律不执行外部操作。",
+      "二维码验证",
+      "把一条结果保存为本地参照,之后再扫到时,按完整 SHA-256 指纹、码制、内容类型、网址组成、安全级别与建议操作逐项比对。",
+      "批量审计",
+      "把整批结果按完全相同的内容与域名分组,在明确范围内比对容易混淆的相似域名,并同时显示整体风险、每一条的风险与完整内容。完整审计免费开放阅读。",
+      "它不是文档扫描器:不扫描纸张,不做 OCR,也不管理 PDF 文档库。PDF 只导出 QR 图稿。分享扩展只能把网址或纯文本制成二维码。"
+     ],
+     "dropped": [
+      "QR Code Halo 扫到就直接执行。用相机扫描或选择照片:网址直接在浏览器中打开,通行密钥登录码和 App 链接直接交给 iOS,Wi-Fi 码会弹出 iOS 的加入网络提示,电话、短信、邮件和地点则交给相应的 App。联系人和日程会打开 iOS 的添加界面,由你确认后才会添加。纯文本会直接复制并显示一行提示;javascript:、data:、file: 这类内容一律不会打开。想先检查再决定,可在设置中关闭“扫描后自动执行”;批量扫描只收集、不执行。",
+      "除非开启“不保存到历史记录”,批量扫描以外的每次扫描都会保存在这台设备上。在历史记录中点开任意一条,再点“安全检查”,即可用下面两个本地工具重新查看。",
+      "Local Payload Security Inspector",
+      "在设备端解析完整 payload,逐项显示 scheme、host、path、query 和 fragment,并给出 Safe、Caution 或 Blocked、透明 findings 与 action disposition。规则固定且可复现,不查询网络信誉,也不生成含糊分数;解析失败时禁止外部操作。",
+      "QR Verification",
+      "将结果保存为本机参照,再按完整 SHA-256 指纹、二维码格式、内容类型、URL 组成项、安全级别和操作状态比较后续扫描。",
+      "Batch Risk & Difference Audit",
+      "把一批结果按完全相同内容和 host 分组,有限度比较容易混淆的相似 host,并显示总体风险和每一项风险。所有完整 payload 都可阅读,审计阅读本身不设付费限制。",
+      "它不是文档扫描器:不扫描纸张,不做 OCR,也不管理 PDF 文档库。PDF 只导出 QR 图稿。Share Extension 仅把 URL 或纯文本制成 QR。"
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.4",
+     "same": false
     },
     "zh-Hant": {
      "added": [],
@@ -3156,7 +4209,7 @@
      "same": true
     }
    },
-   "status": "green"
+   "status": "red"
   },
   "savetag": {
    "blocked_terms": [],
@@ -3321,42 +4374,19 @@
    "status": "green"
   },
   "sereno": {
-   "blocked_terms": [
-    "ADHD",
-    "AirPlay",
-    "baby sleep",
-    "bedside mode",
-    "tinnitus",
-    "ベッドサイドモード",
-    "婴儿",
-    "嬰兒",
-    "耳鳴",
-    "赤ちゃん",
-    "아기",
-    "이명"
-   ],
+   "blocked_terms": [],
    "brands": [
     "Sereno"
    ],
    "live_updated": "2026-10-27",
-   "live_version": "1.1.1",
+   "live_version": "1.1.2",
    "locales": {
     "de-DE": {
-     "added": [
-      "Sereno verwandelt Ihr Telefon in eine Klangmaschine für Schlaf, Konzentration und Entspannung. Regen, Meer, Wind, Feuer und mehr sind echte Aufnahmen vor Ort, gemischt zu über 1000 einzigartigen Klanglandschaften und beim Zuhören zufällig neu angeordnet, sodass Sie nie eine feste Schleife hören.",
-      "Fertige Szenen für Schlaf, tiefe Konzentration, Lernen, Entspannung, Meditation, Natur, Lesen, Reisen und mehr. Speichern Sie Ihre Lieblingsmixe.",
-      "Für das iPhone Duo optimiert."
-     ],
-     "dropped": [
-      "Optimiert für das iPhone Duo. Die mit dem neuesten SDK entwickelte App füllt das gesamte innere Display und passt das Layout automatisch an, egal ob zugeklappt oder aufgeklappt.",
-      "Sereno macht Ihr iPhone zur Klangmaschine für den Schlaf: Kombinieren Sie Regen, Meer, Feuer, Ventilator und weißes, pinkes oder braunes Rauschen und stellen Sie die Lautstärke jeder Ebene einzeln ein.",
-      "Naturklänge sind echte Field-Recordings, die sich beim Hören zufällig neu anordnen – nie eine feste Schleife – und über 1000 fertige Mischungen bieten einen schnellen Einstieg.",
-      "Der Schlaf-Timer blendet sanft aus, das Sonnenaufgang-Wecken begrüßt Sie mit Vogelgesang, und die Wiedergabe läuft offline und auf dem Sperrbildschirm weiter.",
-      "Fertige Szenen: Regnerische Nacht, Tiefer Schlaf, Ruhiger Fokus, Lernsitzung, Meditation und Nachtflug. Eigene Szenen können Sie speichern und benennen."
-     ],
-     "live_updated": "2026-10-18",
-     "live_version": "1.1.1",
-     "same": false
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-27",
+     "live_version": "1.1.2",
+     "same": true
     },
     "en-GB": {
      "added": [],
@@ -3380,21 +4410,11 @@
      "same": true
     },
     "fr-FR": {
-     "added": [
-      "Sereno transforme votre téléphone en machine sonore pour le sommeil, la concentration et la détente. La pluie, l'océan, le vent, le feu et bien d'autres sons sont de vrais enregistrements de terrain, assemblés en plus de 1000 paysages sonores uniques et réagencés au hasard pendant votre écoute : vous n'entendez jamais de boucle fixe.",
-      "Des scènes prêtes à l'emploi pour le sommeil, la concentration profonde, l'étude, la détente, la méditation, la nature, la lecture, le voyage et plus encore. Enregistrez vos mélanges préférés.",
-      "Optimisée pour l'iPhone Duo."
-     ],
-     "dropped": [
-      "Optimisée pour l’iPhone Duo. Conçue avec le SDK le plus récent, l’app remplit tout l’écran intérieur et adapte automatiquement sa mise en page, appareil plié ou ouvert.",
-      "Sereno transforme votre iPhone en machine à sons pour dormir : superposez pluie, océan, feu, ventilateur et bruit blanc, rose ou brun, et réglez le volume de chaque couche pour créer votre propre mix.",
-      "Les sons de la nature sont de vrais enregistrements de terrain qui se réorganisent au hasard pendant l'écoute, jamais en boucle fixe, et plus de 1000 mélanges prêts à l'emploi vous permettent de commencer tout de suite.",
-      "La minuterie de sommeil baisse le son en douceur, le réveil au lever du soleil vous accueille avec le chant des oiseaux, et la lecture continue hors ligne et sur l'écran verrouillé.",
-      "Scènes prêtes à l'emploi : Nuit pluvieuse, Sommeil profond, Concentration stable, Session d'étude, Méditation et Vol de nuit. Enregistrez et nommez aussi les vôtres."
-     ],
-     "live_updated": "2026-10-18",
-     "live_version": "1.1.1",
-     "same": false
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-27",
+     "live_version": "1.1.2",
+     "same": true
     },
     "ja": {
      "added": [],
@@ -3404,55 +4424,25 @@
      "same": true
     },
     "ko": {
-     "added": [
-      "Sereno는 휴대폰을 수면, 집중, 휴식을 위한 사운드 머신으로 바꿔 줍니다. 비, 바다, 바람, 불 등의 소리는 실제 현장 녹음으로, 1000개 이상의 독특한 사운드스케이프로 혼합되며 듣는 동안 무작위로 재배열되므로 고정된 루프가 들리지 않습니다.",
-      "수면, 깊은 집중, 공부, 휴식, 명상, 자연, 독서, 여행 등을 위한 준비된 장면. 마음에 드는 믹스를 저장하세요.",
-      "iPhone Duo에 최적화."
-     ],
-     "dropped": [
-      "iPhone Duo에 최적화되었습니다. 최신 개발 도구로 빌드되어 안쪽 디스플레이 전체를 가득 채우며, 접거나 펼쳐도 레이아웃이 자동으로 조정됩니다.",
-      "Sereno는 iPhone을 수면 사운드 머신으로 바꿔 줍니다. 빗소리, 파도, 모닥불, 선풍기에 화이트·핑크·브라운 노이즈를 겹치고 레이어마다 볼륨을 따로 맞춰 나만의 믹스를 만드세요.",
-      "자연의 소리는 실제 현장 녹음이며 듣는 동안 무작위로 순서가 바뀌어 같은 루프가 반복되지 않아요. 1000가지가 넘는 완성된 믹스로 바로 시작할 수도 있어요.",
-      "수면 타이머는 소리를 부드럽게 줄여 주고, 일출 알람은 새소리로 아침을 열어 줍니다. 오프라인에서도, 잠금 화면에서도 재생이 계속돼요.",
-      "바로 쓸 수 있는 장면: 비 오는 밤, 깊은 수면, 차분한 집중, 공부 세션, 명상, 야간 비행. 직접 만든 믹스도 장면으로 저장하고 이름을 붙일 수 있어요."
-     ],
-     "live_updated": "2026-10-18",
-     "live_version": "1.1.1",
-     "same": false
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-27",
+     "live_version": "1.1.2",
+     "same": true
     },
     "pt-BR": {
-     "added": [
-      "O Sereno transforma seu telefone em uma máquina de sons para dormir, focar e relaxar. Chuva, oceano, vento, fogo e muito mais são gravações de campo reais, combinadas em mais de 1000 paisagens sonoras únicas e reorganizadas ao acaso enquanto você ouve, para que você nunca escute um loop fixo.",
-      "Cenas prontas para dormir, foco profundo, estudo, relaxamento, meditação, natureza, leitura, viagem e mais. Salve suas misturas favoritas.",
-      "Otimizado para o iPhone Duo."
-     ],
-     "dropped": [
-      "Otimizado para iPhone Duo. Criado com o SDK mais recente, o app ocupa toda a tela interna e ajusta o layout automaticamente, com o aparelho dobrado ou aberto.",
-      "O Sereno transforma seu iPhone em uma máquina de sons para dormir: combine chuva, mar, fogo, ventilador e ruído branco, rosa ou marrom, e ajuste o volume de cada camada para criar sua própria mistura.",
-      "Os sons da natureza são gravações reais de campo que se reorganizam aleatoriamente enquanto você ouve, nunca em loop fixo, e mais de 1000 misturas prontas ajudam você a começar na hora.",
-      "O timer de sono diminui o som suavemente, o despertar ao nascer do sol recebe você com canto de pássaros e a reprodução continua offline e com a tela bloqueada.",
-      "Cenas prontas: Noite Chuvosa, Sono Profundo, Foco Constante, Sessão de Estudo, Meditação e Voo Noturno. Salve e dê nome às suas próprias cenas."
-     ],
-     "live_updated": "2026-10-18",
-     "live_version": "1.1.1",
-     "same": false
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-27",
+     "live_version": "1.1.2",
+     "same": true
     },
     "zh-Hans": {
-     "added": [
-      "Sereno 将您的手机变成用于睡眠、专注与放松的声音机。雨声、海浪、风声、火焰等均为实地录音,融合成 1000 多种独特的音景,并在您聆听时随机重新编排,因此您不会听到固定的循环。",
-      "为睡眠、深度专注、学习、放松、冥想、自然、阅读、旅行等准备的现成场景。可保存您喜爱的混音。",
-      "针对 iPhone Duo 优化。"
-     ],
-     "dropped": [
-      "已针对 iPhone Duo 优化。本应用使用最新开发工具包构建,铺满整块内屏,无论折叠还是展开都会自动调整布局。",
-      "Sereno 把您的 iPhone 变成睡眠声音机:雨声、海浪、篝火、风扇,再加上白噪音、粉红噪音或棕噪音自由叠加,每一层音量单独调节,混出属于您的入睡声音。",
-      "自然声音都是实地录音,播放时随机重新排列,不会固定循环;另有 1000 多种现成混音,打开就能听。",
-      "睡眠定时器会柔和淡出,日出唤醒用鸟鸣叫您起床,离线和锁屏状态下也能继续播放。",
-      "现成场景:雨夜、深度睡眠、稳定专注、学习时段、冥想、红眼航班。也可以把自己的混音保存为场景并命名。"
-     ],
-     "live_updated": "2026-10-18",
-     "live_version": "1.1.1",
-     "same": false
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-27",
+     "live_version": "1.1.2",
+     "same": true
     },
     "zh-Hant": {
      "added": [],
@@ -3462,7 +4452,7 @@
      "same": true
     }
    },
-   "status": "red"
+   "status": "green"
   },
   "shotinbox": {
    "blocked_terms": [],
@@ -3875,7 +4865,7 @@
    "brands": [
     "Studydown"
    ],
-   "live_updated": "2026-10-08",
+   "live_updated": "2026-10-27",
    "live_version": "1.0.3",
    "locales": {
     "de-DE": {
@@ -3886,11 +4876,19 @@
      "same": true
     },
     "en-GB": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-08",
-     "live_version": "1.0.3",
-     "same": true
+     "added": [
+      "Optimised for iPhone Duo. Built with the latest SDK, the app fills the entire inner display and automatically adjusts its layout whether the device is folded or open.",
+      "Flip your phone face down to start the timer. Pick it up and it pauses, so only real focus time counts towards your revision and work hours.",
+      "See today, this week, your streak and a breakdown by subject or project, plus how often you picked up your phone and how long you stayed focused.",
+      "Set a deadline and a target, and Studydown shows the daily pace you still need."
+     ],
+     "dropped": [
+      "A little time for a project, a book or a skill you want to develop. Studydown helps you see those moments adding up, with a simple gesture: placing your phone face down.",
+      "Every face-down session keeps a Focus Signature: phone pickups and average uninterrupted time. Give each deadline an effort target to see logged Activity time and the daily pace still required."
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.4",
+     "same": false
     },
     "en-US": {
      "added": [],
@@ -3900,18 +4898,34 @@
      "same": true
     },
     "es-ES": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-08",
-     "live_version": "1.0.3",
-     "same": true
+     "added": [
+      "Optimizada para el iPhone Duo. Creada con el SDK más reciente, la app ocupa toda la pantalla interior y ajusta su diseño automáticamente, con el dispositivo plegado o desplegado.",
+      "Pon el móvil boca abajo y empieza a contar; levántalo y se pausa, así solo cuenta el tiempo de concentración real en tus horas de estudio y de trabajo.",
+      "Consulta el tiempo de hoy y de la semana, tu racha de días y el reparto por asignatura o proyecto, además de cuántas veces levantaste el móvil y cuánto duró tu concentración.",
+      "Fija una fecha límite y un objetivo, y Studydown te muestra el ritmo diario que aún necesitas."
+     ],
+     "dropped": [
+      "Dedica tiempo a lo que te importa y descubre cómo se acumula tu esfuerzo. Studydown registra el tiempo para proyectos, lectura y aficiones cuando dejas el móvil con la pantalla hacia abajo.",
+      "Cada sesión guarda una firma de concentración: cuántas veces levantaste el teléfono y la duración media sin interrupciones. Asigna un objetivo de tiempo a cada plazo y consulta lo registrado y el ritmo diario necesario."
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.4",
+     "same": false
     },
     "fr-FR": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-08",
-     "live_version": "1.0.3",
-     "same": true
+     "added": [
+      "Optimisée pour l’iPhone Duo. Conçue avec le SDK le plus récent, l’app remplit tout l’écran intérieur et adapte automatiquement sa mise en page, appareil plié ou ouvert.",
+      "Posez le téléphone écran contre la table et le chrono démarre ; reprenez-le et il se met en pause : seul le vrai temps de concentration compte dans vos heures de révision et de travail.",
+      "Consultez le temps du jour et de la semaine, votre série de jours et la répartition par matière ou projet, ainsi que le nombre de fois où vous avez repris le téléphone et la durée de votre concentration.",
+      "Fixez une échéance et un objectif, et Studydown vous indique le rythme quotidien qu'il vous reste à tenir."
+     ],
+     "dropped": [
+      "Un projet, un livre, une passion : voyez le temps que vous leur consacrez. Studydown transforme un geste simple, poser le téléphone écran contre la table, en un carnet de vos activités.",
+      "Chaque séance conserve une signature de concentration : prises en main du téléphone et durée moyenne sans interruption. Fixez un objectif d’effort à chaque échéance pour voir le temps réalisé et le rythme quotidien requis."
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.4",
+     "same": false
     },
     "ja": {
      "added": [],
@@ -3928,18 +4942,34 @@
      "same": true
     },
     "pt-BR": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-08",
-     "live_version": "1.0.3",
-     "same": true
+     "added": [
+      "Otimizado para iPhone Duo. Criado com o SDK mais recente, o app ocupa toda a tela interna e ajusta o layout automaticamente, com o aparelho dobrado ou aberto.",
+      "Vire o celular com a tela para baixo e o timer começa; levante e ele pausa, então só o tempo de foco de verdade entra nas suas horas de estudo e trabalho.",
+      "Veja o tempo de hoje e da semana, sua sequência de dias e a divisão por matéria ou projeto, além de quantas vezes você pegou o celular e quanto tempo durou seu foco.",
+      "Defina um prazo e uma meta, e o Studydown mostra o ritmo diário que ainda falta."
+     ],
+     "dropped": [
+      "Dê espaço ao que importa e veja o tempo que você dedica a isso. O Studydown registra projetos, leitura e hobbies com um gesto simples: apoiar o celular com a tela virada para baixo.",
+      "Cada sessão guarda uma assinatura de foco: quantas vezes o celular foi levantado e a duração média sem interrupção. Defina uma meta de tempo por prazo e veja o tempo registrado e o ritmo diário necessário."
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.4",
+     "same": false
     },
     "zh-Hans": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-08",
-     "live_version": "1.0.3",
-     "same": true
+     "added": [
+      "已针对 iPhone Duo 优化。本应用使用最新开发工具包构建,铺满整块内屏,无论折叠还是展开都会自动调整布局。",
+      "手机屏幕朝下扣在桌上就开始计时,拿起来就暂停,只记下真正专注的学习和工作时长。",
+      "今天、本周累计多少,连续打卡几天,各科目或项目的分布一目了然;每次计时还会记下拿起手机几次、平均能连续专注多久。",
+      "为考试或项目设好截止日期和目标时长,Studydown 会算出接下来每天要学多久。"
+     ],
+     "dropped": [
+      "把手机屏幕朝下,给真正重要的事留出时间。无论是推进项目、阅读、学语言还是练琴,Studydown 都能按活动记录你的投入,让时间不再只有模糊的印象。",
+      "每次翻面计时都会留下专注签名:拿起手机的次数与平均连续专注时长。还可为每个截止日期设置投入目标,结合已记录的活动时间,算出接下来每天需要完成的节奏。"
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.4",
+     "same": false
     },
     "zh-Hant": {
      "added": [],
@@ -3949,7 +4979,7 @@
      "same": true
     }
    },
-   "status": "green"
+   "status": "red"
   },
   "tripbee": {
    "blocked_terms": [],
@@ -3957,7 +4987,7 @@
     "TripBee Pro",
     "TripBee"
    ],
-   "live_updated": "2026-10-09",
+   "live_updated": "2026-10-27",
    "live_version": "1.0.8",
    "locales": {
     "de-DE": {
@@ -3982,18 +5012,38 @@
      "same": true
     },
     "es-ES": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.8",
-     "same": true
+     "added": [
+      "Optimizada para el iPhone Duo. Creada con el SDK más reciente, la app ocupa toda la pantalla interior y ajusta su diseño automáticamente, con el dispositivo plegado o desplegado.",
+      "Un viaje, un plan compartido: todas las personas que invites pueden editar el mismo itinerario día a día, con vuelos, hoteles, restaurantes y visitas por orden horario, tarjetas de embarque y códigos de reserva en cada parada, e indicaciones de Mapas de Apple con un toque.",
+      "La lista de equipaje inteligente se hace sola según los días, la estación y cada miembro de la familia, con planes alternativos para días de lluvia y una cuenta atrás antes de salir.",
+      "Funciona sin conexión; activa iCloud para sincronizar en privado. Sin anuncios ni seguimiento.",
+      "Itinerario día a día con horas, iconos, zonas horarias, notas y recordatorios, además de tarjetas de embarque y códigos de reserva en cada parada",
+      "Compra única, sin suscripción."
+     ],
+     "dropped": [
+      "Planifica sin conexión, sincroniza en privado con iCloud e invita a otros a editar el viaje. Compra única, sin anuncios ni seguimiento.",
+      "Itinerario día a día con horas, iconos, zonas horarias, notas y recordatorios"
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.9",
+     "same": false
     },
     "fr-FR": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.8",
-     "same": true
+     "added": [
+      "Optimisée pour l’iPhone Duo. Conçue avec le SDK le plus récent, l’app remplit tout l’écran intérieur et adapte automatiquement sa mise en page, appareil plié ou ouvert.",
+      "Organisez un voyage à plusieurs : toutes les personnes invitées peuvent modifier le même programme jour par jour, avec vols, hôtels, restaurants et visites dans l’ordre, cartes d’embarquement et codes de réservation à chaque étape, et itinéraire dans Plans en un toucher.",
+      "La liste de valise intelligente se remplit selon la durée, la saison et chaque membre de la famille, avec des plans B pour les jours de pluie et un compte à rebours avant le départ.",
+      "Fonctionne hors ligne ; activez iCloud pour synchroniser en privé. Sans pub ni suivi.",
+      "Programme jour par jour avec horaires, icônes, fuseaux horaires, notes et rappels, ainsi que cartes d’embarquement et codes de réservation à chaque étape",
+      "Achat unique, sans abonnement."
+     ],
+     "dropped": [
+      "Planifiez hors ligne, synchronisez en privé avec iCloud et invitez d’autres personnes à modifier le voyage. Achat unique, sans pub ni suivi.",
+      "Programme jour par jour avec horaires, icônes, fuseaux horaires, notes et rappels"
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.9",
+     "same": false
     },
     "ja": {
      "added": [],
@@ -4010,18 +5060,38 @@
      "same": true
     },
     "pt-BR": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.8",
-     "same": true
+     "added": [
+      "Otimizado para iPhone Duo. Criado com o SDK mais recente, o app ocupa toda a tela interna e ajusta o layout automaticamente, com o aparelho dobrado ou aberto.",
+      "Planejem a viagem juntos: todos que você convidar podem editar o mesmo roteiro dia a dia, com voos, hotéis, restaurantes e passeios em ordem de horário, cartões de embarque e códigos de reserva em cada parada, e rotas do app Mapas com um toque.",
+      "A lista de mala inteligente se monta sozinha conforme os dias, a estação e cada pessoa da família, com planos alternativos para dias de chuva e contagem regressiva antes de viajar.",
+      "Funciona offline; ative o iCloud para sincronizar em privado. Sem anúncios nem rastreamento.",
+      "Roteiro dia a dia com horários, ícones, fusos horários, notas e lembretes, além de cartões de embarque e códigos de reserva em cada parada",
+      "Compra única, sem assinatura."
+     ],
+     "dropped": [
+      "Planeje offline, sincronize em privado com o iCloud e convide outras pessoas para editar a viagem. Compra única, sem anúncios nem rastreamento.",
+      "Roteiro dia a dia com horários, ícones, fusos horários, notas e lembretes"
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.9",
+     "same": false
     },
     "zh-Hans": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.8",
-     "same": true
+     "added": [
+      "已针对 iPhone Duo 优化。本应用使用最新开发工具包构建,铺满整块内屏,无论折叠还是展开都会自动调整布局。",
+      "多人出游,一份行程大家一起编:航班、酒店、餐厅和景点按时间排成逐日行程,登机牌和预订号就放在对应站点,每一站一键打开 Apple 地图导航。",
+      "智能打包清单按天数、季节和每位家人自动生成,下雨也有备选方案,出发前还有倒计时。",
+      "行程离线也能看;开启 iCloud 即可在你的私人 iCloud 中同步,无广告、无追踪。",
+      "逐日行程时间轴:支持航班、酒店、餐厅和活动,完整记录时间、类型图标、时区、地址、备注与提醒,登机牌、票券和预订号也能附在对应站点,跨国转机和多城市行程也清清楚楚",
+      "一次购买,无需订阅。"
+     ],
+     "dropped": [
+      "离线规划行程,用 iCloud 私密同步,并邀请他人共同编辑共享行程。一次购买,无广告、无追踪。",
+      "逐日行程时间轴:支持航班、酒店、餐厅和活动,完整记录时间、类型图标、时区、地址、备注与提醒,跨国转机和多城市行程也清清楚楚"
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.9",
+     "same": false
     },
     "zh-Hant": {
      "added": [],
@@ -4031,14 +5101,14 @@
      "same": true
     }
    },
-   "status": "green"
+   "status": "red"
   },
   "tripbeelite": {
    "blocked_terms": [],
    "brands": [
     "TripBee Lite"
    ],
-   "live_updated": "2026-10-09",
+   "live_updated": "2026-10-27",
    "live_version": "1.0.8",
    "locales": {
     "de-DE": {
@@ -4063,18 +5133,40 @@
      "same": true
     },
     "es-ES": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.8",
-     "same": true
+     "added": [
+      "Optimizada para el iPhone Duo. Creada con el SDK más reciente, la app ocupa toda la pantalla interior y ajusta su diseño automáticamente, con el dispositivo plegado o desplegado.",
+      "Organiza cada día de tus vacaciones en una sola línea de tiempo: el vuelo de la mañana, los traslados, las visitas, la entrada al hotel y la cena, en orden y con el tiempo libre entre paradas calculado automáticamente.",
+      "Los datos del vuelo, el hotel y los billetes y tus notas se quedan en el día que les corresponde, con una cuenta atrás y el tiempo del destino antes de salir.",
+      "Consulta tu próxima parada directamente en el Apple Watch.",
+      "Una única compra Premium desbloquea viajes guardados ilimitados, compartir, copia de seguridad y restauración completas, y la lista de equipaje inteligente durante toda la vida útil de la app. Sin suscripción.",
+      "Premium también incluye la sincronización con iCloud: tus viajes se mantienen al día en todos tus dispositivos y puedes invitar a tus amigos a un viaje para editarlo juntos. Los cambios se sincronizan automáticamente con iCloud."
+     ],
+     "dropped": [
+      "Dedica toda tu atención al próximo viaje. TripBee Lite es un planificador sereno y cuidado, creado alrededor de un único viaje activo.",
+      "Ordena vuelos, alojamientos y planes en una cronología diaria clara y guarda notas, recordatorios y referencias de billetes donde los necesitas.",
+      "Una única compra Premium no consumible desbloquea viajes guardados ilimitados, compartir, copia de seguridad y restauración completas, y la lista de equipaje inteligente durante toda la vida útil de la app. Sin suscripción."
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.9",
+     "same": false
     },
     "fr-FR": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.8",
-     "same": true
+     "added": [
+      "Optimisée pour l’iPhone Duo. Conçue avec le SDK le plus récent, l’app remplit tout l’écran intérieur et adapte automatiquement sa mise en page, appareil plié ou ouvert.",
+      "Organisez chaque jour de vos vacances sur une seule chronologie : vol du matin, transferts, visites, arrivée à l’hôtel et dîner, dans l’ordre, avec le temps libre entre deux étapes calculé pour vous.",
+      "Les infos de vol, d’hôtel et de billets ainsi que vos notes restent rattachées au bon jour, avec un compte à rebours et la météo de la destination avant le départ.",
+      "Consultez votre prochaine étape directement sur l’Apple Watch.",
+      "Un achat Premium unique déverrouille un nombre illimité de voyages enregistrés, le partage, la sauvegarde et la restauration complètes, ainsi que la liste de bagages intelligente pour toute la durée de vie de l’app. Aucun abonnement.",
+      "Premium inclut aussi la synchronisation iCloud : vos voyages restent à jour sur tous vos appareils, et vous pouvez inviter des amis à un voyage pour le modifier ensemble. Les modifications se synchronisent automatiquement via iCloud."
+     ],
+     "dropped": [
+      "Concentrez-vous pleinement sur votre prochain voyage. TripBee Lite est un planificateur sobre et soigné, conçu autour d’un seul séjour actif.",
+      "Organisez vols, hébergements et sorties sur une chronologie claire, puis gardez notes, rappels et références de billets à portée de main.",
+      "Un achat Premium unique et non consommable déverrouille un nombre illimité de voyages enregistrés, le partage, la sauvegarde et la restauration complètes, ainsi que la liste de bagages intelligente pour toute la durée de vie de l’app. Aucun abonnement."
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.9",
+     "same": false
     },
     "ja": {
      "added": [],
@@ -4091,18 +5183,40 @@
      "same": true
     },
     "pt-BR": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.8",
-     "same": true
+     "added": [
+      "Otimizado para iPhone Duo. Criado com o SDK mais recente, o app ocupa toda a tela interna e ajusta o layout automaticamente, com o aparelho dobrado ou aberto.",
+      "Organize cada dia das férias em uma única linha do tempo: voo da manhã, traslados, passeios, check-in no hotel e jantar, em ordem, com o tempo livre entre as paradas calculado para você.",
+      "Dados de voo, hotel e passagens e suas notas ficam no dia certo, com contagem regressiva e a previsão do tempo no destino antes de viajar.",
+      "Veja a próxima parada direto no Apple Watch.",
+      "Uma compra Premium única libera viagens salvas ilimitadas, compartilhamento, backup e restauração completos e a lista inteligente de bagagem por toda a vida útil do app. Sem assinatura.",
+      "O Premium também inclui a sincronização com o iCloud: suas viagens ficam atualizadas em todos os seus dispositivos, e você pode convidar amigos para uma viagem e editá-la juntos. As alterações são sincronizadas automaticamente pelo iCloud."
+     ],
+     "dropped": [
+      "Dê atenção total à próxima viagem. TripBee Lite é um planejador tranquilo e refinado, criado em torno de uma única viagem ativa.",
+      "Organize voos, hospedagens e passeios em uma linha do tempo diária e mantenha notas, lembretes e referências de passagens sempre à mão.",
+      "Uma compra Premium única e não consumível libera viagens salvas ilimitadas, compartilhamento, backup e restauração completos e a lista inteligente de bagagem por toda a vida útil do app. Sem assinatura."
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.9",
+     "same": false
     },
     "zh-Hans": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.8",
-     "same": true
+     "added": [
+      "已针对 iPhone Duo 优化。本应用使用最新开发工具包构建,铺满整块内屏,无论折叠还是展开都会自动调整布局。",
+      "自由行的每一天排成一条时间线:早上的航班、交通、景点到晚上的酒店与晚餐按时间排好,行程之间的空档自动算给你看。",
+      "航班、住宿、票券信息和备注都收在当天;出发前有倒数,也能看到当地天气。",
+      "在 Apple Watch 上直接看下一站。",
+      "一次购买 Premium,即可永久解锁无限旅程、旅程分享、完整备份与恢复,以及智能打包清单。没有订阅。",
+      "Premium 还包含 iCloud 同步:旅程在你所有设备上保持最新,还能邀请朋友加入同一趟旅程一起编辑,更改会通过 iCloud 自动同步。"
+     ],
+     "dropped": [
+      "把注意力留给眼前这段旅行。TripBee Lite 是一款从容精致的旅行规划工具,专为清晰整理一段当前旅程而设计。",
+      "用清晰的每日时间线安排航班、住宿和活动,将备注、提醒及票券信息放在需要时随手可查的位置。",
+      "一次购买非消耗型 Premium,即可永久解锁无限旅程、旅程分享、完整备份与恢复,以及智能打包清单。没有订阅。"
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.9",
+     "same": false
     },
     "zh-Hant": {
      "added": [],
@@ -4112,7 +5226,7 @@
      "same": true
     }
    },
-   "status": "green"
+   "status": "red"
   },
   "tripplanet": {
    "blocked_terms": [],
@@ -4475,7 +5589,7 @@
    "brands": [
     "Wordmate"
    ],
-   "live_updated": "2026-10-09",
+   "live_updated": "2026-10-27",
    "live_version": "1.0.9",
    "locales": {
     "de-DE": {
@@ -4500,18 +5614,33 @@
      "same": true
     },
     "es-ES": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.9",
-     "same": true
+     "added": [
+      "Optimizada para el iPhone Duo. Creada con el SDK más reciente, la app ocupa toda la pantalla interior y ajusta su diseño automáticamente, con el dispositivo plegado o desplegado.",
+      "Aprende vocabulario en 44 idiomas con 84 unidades de 14 temas prácticos, como el aeropuerto, el hotel o preguntar cómo llegar, en tres niveles y con pronunciación para escuchar. Las palabras en inglés incluyen además frases de ejemplo.",
+      "Sigue desde el widget interactivo de la pantalla de inicio o desde el Apple Watch, en cualquier minuto libre."
+     ],
+     "dropped": [
+      "Convierte cualquier hueco del día en vocabulario nuevo. Wordmate reúne 44 idiomas en 14 temas prácticos y tres niveles, con una frase de ejemplo para cada palabra en inglés y pronunciación para escuchar. Estudia desde el widget interactivo de la pantalla de inicio o desde el reloj. Pagas una sola vez: sin suscripciones ni compras dentro de la app."
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.10",
+     "same": false
     },
     "fr-FR": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.9",
-     "same": true
+     "added": [
+      "Optimisée pour l’iPhone Duo. Conçue avec le SDK le plus récent, l’app remplit tout l’écran intérieur et adapte automatiquement sa mise en page, appareil plié ou ouvert.",
+      "Apprenez le vocabulaire de 44 langues avec 84 unités réparties en 14 thèmes pratiques (aéroport, hôtel, demander son chemin...), sur trois niveaux et avec la prononciation à écouter. Les mots anglais sont en plus accompagnés de phrases d’exemple.",
+      "Continuez depuis le widget interactif de l’écran d’accueil ou l’Apple Watch, dès que vous avez une minute.",
+      "Un seul achat inclut toutes les langues et toutes les fonctions : sans abonnement ni achat intégré."
+     ],
+     "dropped": [
+      "Transformez chaque temps mort en occasion d’enrichir votre vocabulaire. Wordmate propose 44 langues, 14 thèmes concrets et trois niveaux, avec une phrase d’exemple pour chaque mot anglais et la prononciation à écouter. Révisez depuis le widget interactif de l’écran d’accueil ou depuis la montre. Un seul achat, sans abonnement ni achat intégré.",
+      "UN ACHAT. L’APPLICATION COMPLÈTE.",
+      "Wordmate est proposé en téléchargement payant sur l’App Store. Achetez l’application une fois : les 44 langues, tous les niveaux d’apprentissage et toutes les fonctionnalités sont inclus dès le départ, notamment le widget interactif et l’Apple Watch. Aucun abonnement, aucun achat intégré et aucune mise à niveau payante."
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.10",
+     "same": false
     },
     "ja": {
      "added": [],
@@ -4528,18 +5657,33 @@
      "same": true
     },
     "pt-BR": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.9",
-     "same": true
+     "added": [
+      "Otimizado para iPhone Duo. Criado com o SDK mais recente, o app ocupa toda a tela interna e ajusta o layout automaticamente, com o aparelho dobrado ou aberto.",
+      "Aprenda vocabulário em 44 idiomas com 84 unidades de 14 temas práticos, como aeroporto, hotel e pedir informações, em três níveis e com pronúncia para ouvir. As palavras em inglês ainda vêm com frases de exemplo.",
+      "Continue pelo widget interativo da Tela de Início ou pelo Apple Watch, em qualquer minutinho livre."
+     ],
+     "dropped": [
+      "Leve o vocabulário para os momentos que já fazem parte da sua rotina. O Wordmate reúne 44 idiomas em 14 temas práticos e três níveis, com uma frase de exemplo para cada palavra em inglês e pronúncia para ouvir. Estude pelo widget interativo da Tela de Início ou pelo relógio. Você paga uma vez: sem assinatura nem compras dentro do app."
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.10",
+     "same": false
     },
     "zh-Hans": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.9",
-     "same": true
+     "added": [
+      "已针对 iPhone Duo 优化。本应用使用最新开发工具包构建,铺满整块内屏,无论折叠还是展开都会自动调整布局。",
+      "44 种语言的单词按机场、酒店、问路等 14 个实用主题、84 个单元分开背,分初中高 3 个级别,还能听发音,学英语时每个单词都配例句。",
+      "主屏幕交互式小组件和 Apple Watch 上都能直接背单词,通勤、排队也不中断。",
+      "一次购买即包含全部语言与功能:无订阅、无 App 内购买。"
+     ],
+     "dropped": [
+      "把碎片时间变成真正的词汇积累。Wordmate 把 44 种语言的单词整理成 14 个实用主题、3 个级别,学英语时每个单词都配例句,还能听发音。主屏幕交互式小组件和手表上都能直接复习,通勤、排队也不中断。一次购买,无订阅、无内购。",
+      "一次 App Store 购买,完整内容全部包含",
+      "Wordmate 是直接付费下载的完整 App。在 App Store 购买一次,即可使用 44 种语言、所有学习级别与全部功能,包括主屏幕交互式小组件和 Apple Watch。没有订阅、应用内购买,也无需另付费升级。"
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.10",
+     "same": false
     },
     "zh-Hant": {
      "added": [],
@@ -4549,7 +5693,7 @@
      "same": true
     }
    },
-   "status": "green"
+   "status": "red"
   },
   "wordmatelite": {
    "blocked_terms": [],
@@ -4649,7 +5793,7 @@
     "Zipbox 解凍",
     "Zipbox"
    ],
-   "live_updated": "2026-10-09",
+   "live_updated": "2026-10-27",
    "live_version": "1.0.4",
    "locales": {
     "de-DE": {
@@ -4674,11 +5818,20 @@
      "same": true
     },
     "es-ES": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.4",
-     "same": true
+     "added": [
+      "Optimizada para el iPhone Duo. Creada con el SDK más reciente, la app ocupa toda la pantalla interior y ajusta su diseño automáticamente, con el dispositivo plegado o desplegado.",
+      "Abre RAR, 7z, ZIP y 10 formatos de archivo comprimido más directamente en el iPhone. Mira dentro antes de extraer: previsualiza fotos, vídeo, PDF, texto y código, y saca solo el archivo que necesitas.",
+      "También abre ZIP, RAR y 7z protegidos con contraseña o divididos en partes, directamente desde Archivos, una descarga de Safari, Mail o el menú Compartir.",
+      "Crea archivos ZIP y 7z con cifrado AES-256 y volúmenes divididos."
+     ],
+     "dropped": [
+      "Ningún anuncio, nunca. Ni un banner, ni un vídeo a pantalla completa, ni una cuenta atrás entre tú y un archivo que ya es tuyo.",
+      "Mira antes de extraer. Recorre la lista, previsualiza fotos, vídeos, PDF, texto y código, y saca solo el archivo que de verdad necesitas.",
+      "Abre directamente desde Archivos, desde una descarga de Safari, desde Mail o desde cualquier menú de compartir, y devuelve el resultado por el mismo camino."
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.5",
+     "same": false
     },
     "ja": {
      "added": [],
@@ -4695,18 +5848,36 @@
      "same": true
     },
     "pt-BR": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.4",
-     "same": true
+     "added": [
+      "Otimizado para iPhone Duo. Criado com o SDK mais recente, o app ocupa toda a tela interna e ajusta o layout automaticamente, com o aparelho dobrado ou aberto.",
+      "Abra RAR, 7z, ZIP e mais 10 formatos de arquivo compactado direto no iPhone. Olhe dentro antes de extrair: veja fotos, vídeos, PDF, texto e código, e tire só o arquivo de que precisa.",
+      "ZIP, RAR e 7z com senha ou divididos em partes também abrem, direto pelo app Arquivos, por um download do Safari, pelo Mail ou pelo menu Compartilhar.",
+      "Crie arquivos ZIP e 7z com criptografia AES-256 e volumes divididos."
+     ],
+     "dropped": [
+      "Nenhuma propaganda, nunca. Sem banner, sem vídeo em tela cheia, sem contagem regressiva entre você e um arquivo que já é seu.",
+      "Olhe antes de extrair. Percorra a lista, veja fotos, vídeos, PDF, texto e código, e tire só o arquivo de que você realmente precisa.",
+      "Abra direto pelo Arquivos, por um download do Safari, pelo Mail ou por qualquer menu de compartilhamento, e devolva o resultado pelo mesmo caminho."
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.5",
+     "same": false
     },
     "zh-Hans": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.4",
-     "same": true
+     "added": [
+      "已针对 iPhone Duo 优化。本应用使用最新开发工具包构建,铺满整块内屏,无论折叠还是展开都会自动调整布局。",
+      "手机直接打开 RAR、7z、ZIP 等 13 种压缩包。不用先解压就能看里面有什么,照片、视频、PDF、文本和代码都能预览,只取出你要的那一个文件。",
+      "有密码、分卷的 ZIP、RAR、7z 也能打开;从文件 App、Safari 下载、邮件或分享菜单直接打开,处理完再沿原路分享出去。",
+      "还能创建 ZIP、7z 压缩包,支持 AES-256 密码加密与分卷输出。"
+     ],
+     "dropped": [
+      "永远零广告。没有横幅、没有全屏视频,也没有一句“还剩 5 秒”挡在你和自己的文件中间。",
+      "先看再解压。直接浏览压缩包里的清单,预览照片、视频、PDF、文本和代码,只把真正需要的那一个文件取出来。",
+      "从文件 App、Safari 下载项、邮件或任意分享菜单直接打开,处理完再原路发出去。"
+     ],
+     "live_updated": "2026-10-27",
+     "live_version": "1.0.5",
+     "same": false
     },
     "zh-Hant": {
      "added": [],
@@ -4716,7 +5887,7 @@
      "same": true
     }
    },
-   "status": "green"
+   "status": "red"
   }
  },
  "countries": [
@@ -4732,11 +5903,11 @@
   "gb"
  ],
  "counts": {
-  "green": 55,
-  "red": 1,
+  "green": 33,
+  "red": 23,
   "unknown": 0
  },
  "errors": [],
- "generated_at": "2026-10-27T05:06:26Z",
+ "generated_at": "2026-10-28T02:46:48Z",
  "schema": "growth.store-copy-drift/v1"
 }

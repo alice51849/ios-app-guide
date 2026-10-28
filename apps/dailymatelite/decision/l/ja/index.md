@@ -2,7 +2,7 @@
 title: "DailyMate Lite：ひとこと練習 — 旅行会話の受け答え・50言語 | iOS App"
 lang: "ja"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymatelite/decision/l/ja/index.html"
-modified: "2026-10-27"
+modified: "2026-10-28"
 app_store_id: "6794725568"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

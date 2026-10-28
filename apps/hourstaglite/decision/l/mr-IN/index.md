@@ -2,7 +2,7 @@
 title: "HoursTag Lite: किंमत तासांत — जाणीवपूर्वक खरेदी: खरी किंमत | iOS App"
 lang: "mr-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstaglite/decision/l/mr-IN/index.html"
-modified: "2026-10-27"
+modified: "2026-10-28"
 app_store_id: "6794039979"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

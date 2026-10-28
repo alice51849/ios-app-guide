@@ -2,7 +2,7 @@
 title: "G+Money Lite: യാത്രാച്ചെലവ് — ദിന ബജറ്റ്: വാച്ച്, വിജറ്റ് | iOS App"
 lang: "ml-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gmoneylite/decision/l/ml-IN/index.html"
-modified: "2026-10-27"
+modified: "2026-10-28"
 app_store_id: "6793436548"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

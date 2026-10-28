@@ -2,7 +2,7 @@
 title: "Есть ли офлайн-приложение для рукописных заметок на iPad с разметкой PDF и без подписки?"
 lang: "ru"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/notesstudio100/decision/l/ru/index.html"
-modified: "2026-10-27"
+modified: "2026-10-28"
 app_store_id: "6798813048"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

@@ -2,7 +2,7 @@
 title: "이름을 붙여 검색할 수 있는 기록을 저장하는 iPhone 계산기 앱 추천"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/caldaily/decision/l/ko/index.html"
-modified: "2026-10-27"
+modified: "2026-10-28"
 app_store_id: "6794178671"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

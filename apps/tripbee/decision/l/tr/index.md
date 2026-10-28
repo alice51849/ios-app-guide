@@ -2,7 +2,7 @@
 title: "iPhone için en iyi gezi planlayıcı uygulaması"
 lang: "tr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbee/decision/l/tr/index.html"
-modified: "2026-10-27"
+modified: "2026-10-28"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"

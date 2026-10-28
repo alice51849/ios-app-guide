@@ -2,7 +2,7 @@
 title: "QR Code Halo: Escanea y Crea — Abre al momento, revisa luego | iOS App"
 lang: "es-ES"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/qrcodehalo/decision/l/es-ES/index.html"
-modified: "2026-10-27"
+modified: "2026-10-28"
 app_store_id: "6806779853"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

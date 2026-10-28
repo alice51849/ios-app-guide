@@ -2,7 +2,7 @@
 title: "WiFi Aid Lite: Kiểm tra mạng — Mất kết nối? Tìm nguyên nhân | iOS App"
 lang: "vi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaidlite/decision/l/vi/index.html"
-modified: "2026-10-27"
+modified: "2026-10-28"
 app_store_id: "6793414462"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

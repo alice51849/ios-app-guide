@@ -1,8 +1,8 @@
 {
- "generated": "2026-10-26T04:53:31Z",
+ "generated": "2026-10-28T20:20:32Z",
  "mode": "apply",
  "counts": {
-  "ok_reply": 21,
+  "ok_reply": 27,
   "unknown_app": 47,
   "ok_store_only": 719,
   "ok_backfilled_earlier": 13,
@@ -12,6 +12,78 @@
   "missing": 3
  },
  "rows": [
+  {
+   "channel": "threads",
+   "id": "17967086961196979",
+   "permalink": "https://www.threads.com/@hourstag.app/post/DfBcCHmDRFR",
+   "date": "2026-10-28",
+   "app": "mochi",
+   "status": "ok_reply",
+   "text": "ENEM chegando e meu cronograma de estudos era um caos. Agora cada matéria virou uma lista fofa no iPhone: redação, matemática, revisão de na",
+   "why": "trial",
+   "ios_id": "6785004775",
+   "locale": "pt-BR"
+  },
+  {
+   "channel": "threads",
+   "id": "17953216506324592",
+   "permalink": "https://www.threads.com/@hourstag.app/post/DfCnGiqHfzJ",
+   "date": "2026-10-28",
+   "app": "onepageppt",
+   "status": "ok_reply",
+   "text": "簡報製作・筆記截圖秒變投影片。 把落落長的文字,變成別人真的會看完的一頁。不用再從空白頁開始,也不用把 20 頁資料硬塞成一頁。 OnePage PPT: AI 一頁簡報",
+   "why": "brand",
+   "ios_id": "6798814385",
+   "locale": "ja"
+  },
+  {
+   "channel": "threads",
+   "id": "17911693254472965",
+   "permalink": "https://www.threads.com/@hourstag.app/post/DfCgbMKG_vK",
+   "date": "2026-10-28",
+   "app": "mochi",
+   "status": "ok_reply",
+   "text": "Vai viajar no feriado? Eu sou o desenvolvedor do Mochi e uso ele assim: uma lista “antes de sair de casa” com as 4 coisas que sempre esqueço",
+   "why": "brand",
+   "ios_id": "6785004775",
+   "locale": "other"
+  },
+  {
+   "channel": "threads",
+   "id": "18356960188216709",
+   "permalink": "https://www.threads.com/@hourstag.app/post/De-uMg2DV4b",
+   "date": "2026-10-27",
+   "app": "mochi",
+   "status": "ok_reply",
+   "text": "Starting my reset now instead of waiting for January. One small checklist for the rest of the year: drink water, a short walk, read before b",
+   "why": "trial",
+   "ios_id": "6785004775",
+   "locale": "en-US"
+  },
+  {
+   "channel": "threads",
+   "id": "18001804398039640",
+   "permalink": "https://www.threads.com/@hourstag.app/post/De_7zc0oBaX",
+   "date": "2026-10-27",
+   "app": "mochi",
+   "status": "ok_reply",
+   "text": "期中考週加上報告、社團、打工，待辦全塞在腦袋裡？ Mochi 是一個可愛又療癒的待辦清單：寫下任務，輕點小圓圈就打勾完成，每完成一件都有一點小小的成就感。 讀書、工作、購物清單、習慣、行程都放得下；101 款主題外觀，桌面小工具讓今天的事一解鎖就看到，也能用 Apple Watc",
+   "why": "brand",
+   "ios_id": "6785004775",
+   "locale": "zh-Hant"
+  },
+  {
+   "channel": "threads",
+   "id": "17975062890160193",
+   "permalink": "https://www.threads.com/@hourstag.app/post/De-3ZOJjU5X",
+   "date": "2026-10-27",
+   "app": "battai",
+   "status": "ok_reply",
+   "text": "저는 혼자 앱을 만드는 개발자입니다. 요즘 '배터리가 하루를 못 버티는데 기변할까, 배터리만 바꿀까' 고민하는 분이 많더라고요. 느낌으로 결정하면 큰돈이 그냥 나갑니다. 그래서 BattAI를 만들었어요. 공개 iOS API의 다섯 가지 값(배터리 잔량",
+   "why": "brand",
+   "ios_id": "6802423998",
+   "locale": "ko"
+  },
   {
    "channel": "threads",
    "id": "17938058007394395",

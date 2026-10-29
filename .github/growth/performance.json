@@ -1,23 +1,23 @@
 {
-  "updated_at": "2026-10-26T04:31:21Z",
+  "updated_at": "2026-10-28T05:25:32Z",
   "note": "Insights of our own IG / Threads posts by .github/scripts/post_performance.py. score = views + 3*likes + 5*replies + 8*(saves+shares+reposts). boost = best apps, read by 00_GrowthEngine shorts/scripts/schedule_posts.py.",
   "sources": {
     "instagram": "ok: 40 posts",
-    "threads": "ok: 17 posts"
+    "threads": "ok: 16 posts"
   },
   "boost": [
     "mochi_suneung",
-    "onepageppt",
     "unblurry",
-    "battai",
-    "claudeusagemini"
+    "onepageppt",
+    "wifiaidlite",
+    "battai"
   ],
   "demote": [
-    "lumimath",
     "lumimission",
     "moneytag",
     "mochidonestamp",
-    "wordmatelite"
+    "wordmatelite",
+    "gmoney"
   ],
   "hook_winners": {
     "apps": {
@@ -37,7 +37,7 @@
     "channels": {
       "instagram": {
         "posts": 14,
-        "median_views": 17.5,
+        "median_views": 19.0,
         "keep_slot": 15,
         "daily": 2
       },
@@ -54,10 +54,19 @@
   },
   "best_hours": {
     "instagram": {
+      "ja": {
+        "hour": 1,
+        "avg_views": 24.5,
+        "posts": 6,
+        "hours": {
+          "1": 24.5,
+          "5": 12.5
+        }
+      },
       "zh-Hant": {
         "hour": 12,
         "avg_views": 31.7,
-        "posts": 24,
+        "posts": 26,
         "hours": {
           "1": 19.5,
           "5": 1.1,
@@ -75,7 +84,7 @@
         "hours": {
           "1": 9.3,
           "8": 12.3,
-          "13": 7.5,
+          "13": 8.5,
           "16": 8.0
         }
       },
@@ -104,14 +113,6 @@
         "avg_score": 165.0
       },
       {
-        "key": "onepageppt",
-        "posts": 2,
-        "views": 163,
-        "engagement": 2,
-        "score": 173,
-        "avg_score": 86.5
-      },
-      {
         "key": "unblurry",
         "posts": 1,
         "views": 76,
@@ -120,12 +121,28 @@
         "avg_score": 79.0
       },
       {
-        "key": "battai",
+        "key": "onepageppt",
+        "posts": 3,
+        "views": 174,
+        "engagement": 2,
+        "score": 184,
+        "avg_score": 61.3
+      },
+      {
+        "key": "wifiaidlite",
         "posts": 2,
-        "views": 135,
+        "views": 110,
         "engagement": 0,
-        "score": 135,
-        "avg_score": 67.5
+        "score": 110,
+        "avg_score": 55.0
+      },
+      {
+        "key": "battai",
+        "posts": 3,
+        "views": 141,
+        "engagement": 1,
+        "score": 146,
+        "avg_score": 48.7
       },
       {
         "key": "claudeusagemini",
@@ -160,14 +177,6 @@
         "avg_score": 22.0
       },
       {
-        "key": "wifiaidlite",
-        "posts": 1,
-        "views": 22,
-        "engagement": 0,
-        "score": 22,
-        "avg_score": 22.0
-      },
-      {
         "key": "lumibopomofo_b",
         "posts": 3,
         "views": 50,
@@ -182,6 +191,22 @@
         "engagement": 1,
         "score": 76,
         "avg_score": 19.0
+      },
+      {
+        "key": "mochi_halloween",
+        "posts": 3,
+        "views": 57,
+        "engagement": 0,
+        "score": 57,
+        "avg_score": 19.0
+      },
+      {
+        "key": "lumibopomofo",
+        "posts": 9,
+        "views": 120,
+        "engagement": 3,
+        "score": 133,
+        "avg_score": 14.8
       },
       {
         "key": "sononote",
@@ -200,28 +225,12 @@
         "avg_score": 14.0
       },
       {
-        "key": "mochi_halloween",
-        "posts": 1,
-        "views": 12,
-        "engagement": 0,
-        "score": 12,
-        "avg_score": 12.0
-      },
-      {
         "key": "countdaysnow",
         "posts": 1,
-        "views": 10,
+        "views": 11,
         "engagement": 0,
-        "score": 10,
-        "avg_score": 10.0
-      },
-      {
-        "key": "lumibopomofo",
-        "posts": 8,
-        "views": 59,
-        "engagement": 3,
-        "score": 72,
-        "avg_score": 9.0
+        "score": 11,
+        "avg_score": 11.0
       },
       {
         "key": "zipbox",
@@ -241,6 +250,14 @@
       },
       {
         "key": "shotinbox",
+        "posts": 1,
+        "views": 6,
+        "engagement": 0,
+        "score": 6,
+        "avg_score": 6.0
+      },
+      {
+        "key": "dbhalo",
         "posts": 1,
         "views": 6,
         "engagement": 0,
@@ -273,14 +290,6 @@
       },
       {
         "key": "scanto",
-        "posts": 1,
-        "views": 5,
-        "engagement": 0,
-        "score": 5,
-        "avg_score": 5.0
-      },
-      {
-        "key": "dbhalo",
         "posts": 1,
         "views": 5,
         "engagement": 0,
@@ -398,40 +407,48 @@
         "engagement": 0,
         "score": 0,
         "avg_score": 0.0
+      },
+      {
+        "key": "gmoney",
+        "posts": 1,
+        "views": 0,
+        "engagement": 0,
+        "score": 0,
+        "avg_score": 0.0
       }
     ],
     "locales": [
       {
         "key": "ko",
-        "posts": 3,
-        "views": 292,
-        "engagement": 0,
-        "score": 292,
-        "avg_score": 97.3
+        "posts": 5,
+        "views": 446,
+        "engagement": 1,
+        "score": 451,
+        "avg_score": 90.2
       },
       {
         "key": "ja",
-        "posts": 4,
-        "views": 86,
+        "posts": 6,
+        "views": 107,
         "engagement": 0,
-        "score": 86,
-        "avg_score": 21.5
+        "score": 107,
+        "avg_score": 17.8
       },
       {
         "key": "zh-Hant",
-        "posts": 35,
-        "views": 579,
+        "posts": 37,
+        "views": 580,
         "engagement": 11,
-        "score": 630,
-        "avg_score": 18.0
+        "score": 631,
+        "avg_score": 17.1
       },
       {
         "key": "en",
         "posts": 23,
-        "views": 223,
+        "views": 257,
         "engagement": 3,
-        "score": 236,
-        "avg_score": 10.3
+        "score": 270,
+        "avg_score": 11.7
       },
       {
         "key": "cs",
@@ -447,6 +464,14 @@
         "views": 3,
         "engagement": 1,
         "score": 6,
+        "avg_score": 3.0
+      },
+      {
+        "key": "pt-BR",
+        "posts": 1,
+        "views": 3,
+        "engagement": 0,
+        "score": 3,
         "avg_score": 3.0
       }
     ],
@@ -474,7 +499,7 @@
       {
         "app": "claudeusagemini",
         "locale": "ko",
-        "hook": "작업 중에 또 AI 한도 초과?",
+        "hook": "",
         "posts": 1,
         "views": 124,
         "engagement": 0,
@@ -490,6 +515,16 @@
         "engagement": 0,
         "score": 110,
         "avg_score": 110.0
+      },
+      {
+        "app": "wifiaidlite",
+        "locale": "ko",
+        "hook": "다음 할 일까지",
+        "posts": 1,
+        "views": 87,
+        "engagement": 0,
+        "score": 87,
+        "avg_score": 87.0
       },
       {
         "app": "unblurry",
@@ -510,6 +545,26 @@
         "engagement": 0,
         "score": 66,
         "avg_score": 66.0
+      },
+      {
+        "app": "lumibopomofo",
+        "locale": "ko",
+        "hook": "소리를 듣고 알맞은 기호 고르기",
+        "posts": 1,
+        "views": 64,
+        "engagement": 0,
+        "score": 64,
+        "avg_score": 64.0
+      },
+      {
+        "app": "mochi_halloween",
+        "locale": "en",
+        "hook": "Cute to do list for Halloween prep",
+        "posts": 1,
+        "views": 44,
+        "engagement": 0,
+        "score": 44,
+        "avg_score": 44.0
       },
       {
         "app": "onepageppt",
@@ -574,12 +629,22 @@
       {
         "app": "battai",
         "locale": "ja",
-        "hook": "状態スコアと その要因まで",
+        "hook": "",
         "posts": 1,
         "views": 25,
         "engagement": 0,
         "score": 25,
         "avg_score": 25.0
+      },
+      {
+        "app": "wifiaidlite",
+        "locale": "zh-Hant",
+        "hook": "“网络又卡了”——问题到底出在路由器、DNS、运营商,还是网站本身?WiFi Aid Lite 通过多条独立路径同时检测",
+        "posts": 1,
+        "views": 23,
+        "engagement": 0,
+        "score": 23,
+        "avg_score": 23.0
       },
       {
         "app": "claudeusagemini",
@@ -595,16 +660,6 @@
         "app": "notesstudio100",
         "locale": "en",
         "hook": "Заметки от руки и PDF.",
-        "posts": 1,
-        "views": 22,
-        "engagement": 0,
-        "score": 22,
-        "avg_score": 22.0
-      },
-      {
-        "app": "wifiaidlite",
-        "locale": "zh-Hant",
-        "hook": "“网络又卡了”——问题到底出在路由器、DNS、运营商,还是网站本身?WiFi Aid Lite 通过多条独立路径同时检测",
         "posts": 1,
         "views": 22,
         "engagement": 0,
@@ -642,19 +697,39 @@
         "avg_score": 12.0
       },
       {
-        "app": "mochi_halloween",
-        "locale": "en",
-        "hook": "Cute to do list for Halloween prep",
-        "posts": 1,
-        "views": 12,
-        "engagement": 0,
-        "score": 12,
-        "avg_score": 12.0
-      },
-      {
         "app": "countdaysnow",
         "locale": "en",
         "hook": "Plan backwards from the dates that matter.",
+        "posts": 1,
+        "views": 11,
+        "engagement": 0,
+        "score": 11,
+        "avg_score": 11.0
+      },
+      {
+        "app": "onepageppt",
+        "locale": "ja",
+        "hook": "メモもPDFも スクショも",
+        "posts": 1,
+        "views": 11,
+        "engagement": 0,
+        "score": 11,
+        "avg_score": 11.0
+      },
+      {
+        "app": "battai",
+        "locale": "ko",
+        "hook": "저는 혼자 앱을 만드는 개발자입니다. 요즘 '배터리가 하루를 못 버티는데 기변할까, 배터리만 바꿀까' 고민하",
+        "posts": 1,
+        "views": 6,
+        "engagement": 1,
+        "score": 11,
+        "avg_score": 11.0
+      },
+      {
+        "app": "claudeusagemini",
+        "locale": "en",
+        "hook": "Translated into 50 languages",
         "posts": 1,
         "views": 10,
         "engagement": 0,
@@ -662,9 +737,9 @@
         "avg_score": 10.0
       },
       {
-        "app": "claudeusagemini",
-        "locale": "en",
-        "hook": "Translated into 50 languages",
+        "app": "mochi_halloween",
+        "locale": "ja",
+        "hook": "仮装、お菓子、かぼちゃ…タップで完了",
         "posts": 1,
         "views": 10,
         "engagement": 0,
@@ -792,6 +867,16 @@
         "avg_score": 6.0
       },
       {
+        "app": "dbhalo",
+        "locale": "en",
+        "hook": "Spectrum, Dose & Sleep Journal.",
+        "posts": 1,
+        "views": 6,
+        "engagement": 0,
+        "score": 6,
+        "avg_score": 6.0
+      },
+      {
         "app": "stayclock",
         "locale": "en",
         "hook": "Always-on time and calendar.",
@@ -805,16 +890,6 @@
         "app": "scanto",
         "locale": "en",
         "hook": "A document scanner that keeps everything on your device — ev",
-        "posts": 1,
-        "views": 5,
-        "engagement": 0,
-        "score": 5,
-        "avg_score": 5.0
-      },
-      {
-        "app": "dbhalo",
-        "locale": "en",
-        "hook": "Spectrum, Dose & Sleep Journal.",
         "posts": 1,
         "views": 5,
         "engagement": 0,
@@ -882,9 +957,9 @@
         "avg_score": 3.0
       },
       {
-        "app": "lumibopomofo",
-        "locale": "ko",
-        "hook": "소리를 듣고 알맞은 기호 고르기",
+        "app": "mochi_halloween",
+        "locale": "pt-BR",
+        "hook": "Fantasia, doces, abóbora…um toque e pronto",
         "posts": 1,
         "views": 3,
         "engagement": 0,
@@ -912,16 +987,6 @@
         "avg_score": 3.0
       },
       {
-        "app": "lumibopomofo",
-        "locale": "zh-Hant",
-        "hook": "注音 原來這麼好玩！",
-        "posts": 1,
-        "views": 0,
-        "engagement": 1,
-        "score": 3,
-        "avg_score": 3.0
-      },
-      {
         "app": "qrcodehalo",
         "locale": "en",
         "hook": "Scanning never auto-opens a destination.",
@@ -930,6 +995,16 @@
         "engagement": 0,
         "score": 2,
         "avg_score": 2.0
+      },
+      {
+        "app": "lumibopomofo",
+        "locale": "zh-Hant",
+        "hook": "注音 原來這麼好玩！",
+        "posts": 2,
+        "views": 0,
+        "engagement": 1,
+        "score": 3,
+        "avg_score": 1.5
       },
       {
         "app": "wordmate",
@@ -1090,32 +1165,42 @@
         "engagement": 0,
         "score": 0,
         "avg_score": 0.0
+      },
+      {
+        "app": "gmoney",
+        "locale": "zh-Hant",
+        "hook": "錢到底 花去哪了？",
+        "posts": 1,
+        "views": 0,
+        "engagement": 0,
+        "score": 0,
+        "avg_score": 0.0
       }
     ],
     "variants": [
       {
         "key": "b",
-        "posts": 15,
-        "views": 428,
+        "posts": 18,
+        "views": 513,
         "engagement": 5,
-        "score": 449,
-        "avg_score": 29.9
+        "score": 534,
+        "avg_score": 29.7
       },
       {
         "key": "a",
-        "posts": 7,
-        "views": 159,
+        "posts": 9,
+        "views": 191,
         "engagement": 1,
-        "score": 162,
-        "avg_score": 23.1
+        "score": 194,
+        "avg_score": 21.6
       },
       {
         "key": "c",
-        "posts": 12,
-        "views": 82,
+        "posts": 13,
+        "views": 169,
         "engagement": 4,
-        "score": 102,
-        "avg_score": 8.5
+        "score": 189,
+        "avg_score": 14.5
       }
     ]
   },
@@ -1436,12 +1521,12 @@
       "kind": "image",
       "variant": null,
       "metrics": {
-        "views": 22,
+        "views": 23,
         "likes": 0,
         "replies": 0,
         "reposts": 0
       },
-      "score": 22
+      "score": 23
     },
     {
       "channel": "threads",
@@ -1474,12 +1559,12 @@
       "kind": "image",
       "variant": null,
       "metrics": {
-        "views": 10,
+        "views": 11,
         "likes": 0,
         "replies": 0,
         "reposts": 0
       },
-      "score": 10
+      "score": 11
     },
     {
       "channel": "instagram",
@@ -1554,12 +1639,12 @@
       "kind": "image",
       "variant": null,
       "metrics": {
-        "views": 5,
+        "views": 6,
         "likes": 0,
         "replies": 0,
         "reposts": 0
       },
-      "score": 5
+      "score": 6
     },
     {
       "channel": "instagram",
@@ -1835,7 +1920,7 @@
       "posted_at": "2026-10-18T05:59:15",
       "app": "battai",
       "locale": "ja",
-      "hook": "状態スコアと その要因まで",
+      "hook": "",
       "clip": "battai/ja",
       "kind": "clip",
       "variant": "b",
@@ -2398,7 +2483,7 @@
       "posted_at": "2026-10-25T01:37:10",
       "app": "claudeusagemini",
       "locale": "ko",
-      "hook": "작업 중에 또 AI 한도 초과?",
+      "hook": "",
       "clip": "claudeusagemini/ko",
       "kind": "clip",
       "variant": "a",
@@ -2466,14 +2551,14 @@
       "kind": "clip",
       "variant": "a",
       "metrics": {
-        "views": 12,
-        "reach": 10,
+        "views": 44,
+        "reach": 37,
         "likes": 0,
         "saves": 0,
         "shares": 0,
         "replies": 0
       },
-      "score": 12
+      "score": 44
     },
     {
       "channel": "instagram",
@@ -2487,14 +2572,159 @@
       "kind": "clip",
       "variant": "b",
       "metrics": {
-        "views": 3,
+        "views": 64,
+        "reach": 57,
+        "likes": 0,
+        "saves": 0,
+        "shares": 0,
+        "replies": 0
+      },
+      "score": 64
+    },
+    {
+      "channel": "instagram",
+      "id": "18076992575725482",
+      "link": "https://www.instagram.com/p/De9bTkylsUE/",
+      "posted_at": "2026-10-26T13:48:55",
+      "app": "gmoney",
+      "locale": "zh-Hant",
+      "hook": "錢到底 花去哪了？",
+      "clip": "gmoney/zh-Hant",
+      "kind": "clip",
+      "variant": "a",
+      "metrics": {
+        "views": 0,
         "reach": 0,
         "likes": 0,
         "saves": 0,
         "shares": 0,
         "replies": 0
       },
+      "score": 0
+    },
+    {
+      "channel": "instagram",
+      "id": "18641253250048749",
+      "link": "https://www.instagram.com/reel/De978mwj_CU/",
+      "posted_at": "2026-10-26T18:34:16",
+      "app": "mochi_halloween",
+      "locale": "pt-BR",
+      "hook": "Fantasia, doces, abóbora…um toque e pronto",
+      "clip": "mochi_halloween/pt-BR",
+      "kind": "clip",
+      "variant": "b",
+      "metrics": {
+        "views": 3,
+        "reach": 3,
+        "likes": 0,
+        "saves": 0,
+        "shares": 0,
+        "replies": 0
+      },
       "score": 3
+    },
+    {
+      "channel": "instagram",
+      "id": "18105253538203519",
+      "link": "https://www.instagram.com/reel/De-rg_NDHeQ/",
+      "posted_at": "2026-10-27T01:30:06",
+      "app": "onepageppt",
+      "locale": "ja",
+      "hook": "メモもPDFも スクショも",
+      "clip": "onepageppt/ja",
+      "kind": "clip",
+      "variant": "b",
+      "metrics": {
+        "views": 11,
+        "reach": 9,
+        "likes": 0,
+        "saves": 0,
+        "shares": 0,
+        "replies": 0
+      },
+      "score": 11
+    },
+    {
+      "channel": "threads",
+      "id": "17975062890160193",
+      "link": "https://www.threads.com/@hourstag.app/post/De-3ZOJjU5X",
+      "posted_at": "2026-10-27T03:14:06",
+      "app": "battai",
+      "locale": "ko",
+      "hook": "저는 혼자 앱을 만드는 개발자입니다. 요즘 '배터리가 하루를 못 버티는데 기변할까, 배터리만 바꿀까' 고민하",
+      "clip": null,
+      "kind": "image",
+      "variant": null,
+      "metrics": {
+        "views": 6,
+        "likes": 0,
+        "replies": 1,
+        "reposts": 0
+      },
+      "score": 11
+    },
+    {
+      "channel": "instagram",
+      "id": "18399347719207108",
+      "link": "https://www.instagram.com/p/De_U0Wulp8A/",
+      "posted_at": "2026-10-27T07:30:43",
+      "app": "lumibopomofo",
+      "locale": "zh-Hant",
+      "hook": "注音 原來這麼好玩！",
+      "clip": "lumibopomofo/zh-Hant",
+      "kind": "clip",
+      "variant": "a",
+      "metrics": {
+        "views": 0,
+        "reach": 0,
+        "likes": 0,
+        "saves": 0,
+        "shares": 0,
+        "replies": 0
+      },
+      "score": 0
+    },
+    {
+      "channel": "instagram",
+      "id": "18451956754192558",
+      "link": "https://www.instagram.com/reel/DfAgu8kFLDo/",
+      "posted_at": "2026-10-27T18:34:21",
+      "app": "mochi_halloween",
+      "locale": "ja",
+      "hook": "仮装、お菓子、かぼちゃ…タップで完了",
+      "clip": "mochi_halloween/ja",
+      "kind": "clip",
+      "variant": "b",
+      "metrics": {
+        "views": 10,
+        "reach": 10,
+        "likes": 0,
+        "saves": 0,
+        "shares": 0,
+        "replies": 0
+      },
+      "score": 10
+    },
+    {
+      "channel": "instagram",
+      "id": "17914644375541096",
+      "link": "https://www.instagram.com/reel/DfBQjgqFEZW/",
+      "posted_at": "2026-10-28T01:32:11",
+      "app": "wifiaidlite",
+      "locale": "ko",
+      "hook": "다음 할 일까지",
+      "clip": "wifiaidlite/ko",
+      "kind": "clip",
+      "variant": "c",
+      "metrics": {
+        "views": 87,
+        "reach": 72,
+        "likes": 0,
+        "saves": 0,
+        "shares": 0,
+        "replies": 0
+      },
+      "score": 87
     }
   ]
 }

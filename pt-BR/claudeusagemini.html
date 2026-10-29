@@ -8,7 +8,7 @@
 <!-- guide-design:end -->
 <title>UsageNow: Monitor de uso de IA — Limites Claude, Codex, Copilot | iOS App</title>
 <meta name="description" content="Bateu o limite da IA no meio do trabalho? O UsageNow mostra quanto resta de cada plano de IA e exatamente quando ele reinicia, direto na Tela de Início">
-<meta name="keywords" content="ai, code, dev, desenvolvedor, usage, tracker, consumo, cota, contador, token, widget, reset, llm, meter, sessão">
+<meta name="keywords" content="ai, code, dev, desenvolvedor, usage, tracker, consumo, cota, contador, token, widget, reset, llm, meter, sessão, uso de tokens, limite codex">
 <link rel="canonical" href="https://open.cait518.cc/ios-app-guide/pt-BR/claudeusagemini.html">
 <!-- smart-app-banner:start -->
 <meta name="apple-itunes-app" content="app-id=6818607603, affiliate-data=pt=118326163&amp;ct=geo_pick&amp;mt=8">
@@ -128,6 +128,7 @@
 <link rel="alternate" hreflang="zh-Hant" href="https://open.cait518.cc/ios-app-guide/zh-Hant/claudeusagemini.html">
 <link rel="alternate" hreflang="x-default" href="https://open.cait518.cc/ios-app-guide/en-US/claudeusagemini.html">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"MobileApplication","name":"UsageNow: Monitor de uso de IA","operatingSystem":"iOS","applicationCategory":"BusinessApplication","description":"Bateu o limite da IA no meio do trabalho? O UsageNow mostra quanto resta de cada plano de IA e exatamente quando ele reinicia, direto na Tela de Início, e ainda avisa você antes de acabar.\n\nTODOS OS LIMITES NUM RELANCE\nClaude: o limite de sessão de 5 horas e os limites semanais, incluindo os de cada modelo\nChatGPT Codex: as janelas de 5 horas e semanal\nGitHub Copilot: solicitações premium, chat e sugestões de código\nGemini: cotas diárias de solicitações para cada modelo\nUma contagem regressiva ao vivo até cada reinício, com o horário exato no formato da sua região\n\nALERTAS ANTES DE BATER NO LIMITE\nCrie seus próprios alertas: escolha o limite de 5 horas, o limite semanal ou todos os limites e digite a porcentagem que importa para você, como 90 ou 98. Adicione quantos quiser.\nCada alerta chega uma única vez por limite e por ciclo, então sua Tela Bloqueada fica em silêncio. Ative um alerta de reinício para saber no instante em que um limite voltar.\n\nWIDGETS QUE FAZEM MAIS\nNavegue por todas as suas contas direto no widget\nToque em um widget para atualizá-lo sempre que quiser os números mais recentes\nWidgets para a Tela de Início e a Tela Bloqueada em todos os tamanhos, além de complicações para o Apple Watch\n\nTODAS AS SUAS CONTAS, NA SUA ORDEM\nTrabalho e pessoal, Pro e Max, lado a lado. Ordene por reinício de 5 horas, reinício semanal, maior ou menor uso, nome ou serviço, ou arraste as contas para a ordem que preferir.\n\nONDE VOCÊ TRABALHAR\niPhone, iPad e Apple Watch.\n\nPRIVACIDADE DESDE A ORIGEM\nVocê entra pela página de login oficial de cada serviço. Seu login fica nas Chaves do seu dispositivo, e o UsageNow se comunica apenas com os próprios serviços. Não há servidor do UsageNow, nenhuma conta para criar e nenhum rastreamento.\n\nNO SEU IDIOMA\nTotalmente traduzido para 50 idiomas, com datas e horários escritos do jeito da sua região. Troque o idioma em Ajustes quando quiser.\n\nEXPERIMENTE TUDO ANTES\nComece no app um teste grátis de 24 horas e use todos os recursos, widgets incluídos. Para continuar usando o UsageNow e seus widgets depois do teste, desbloqueie o UsageNow Pro com uma única compra. Sem assinatura.\n\nO UsageNow é um app independente e não tem afiliação com Anthropic, OpenAI, GitHub, Microsoft ou Google. Claude, ChatGPT, Codex, GitHub Copilot e Gemini são marcas registradas de seus respectivos proprietários.\n\nDúvidas ou ideias? hourstag.app@gmail.com\n\nO app é otimizado para o iPhone Duo. Ao abrir o aparelho e usá-lo na horizontal, a tela interna muda para um layout em duas colunas pensado para o espaço extra, em vez de apenas esticar a tela de um celular comum. Ao fechar, o app continua na tela externa com o layout em uma coluna.","url":"https://apps.apple.com/br/app/id6818607603?pt=118326163&ct=geo_pick&mt=8","installUrl":"https://apps.apple.com/br/app/id6818607603?pt=118326163&ct=geo_pick&mt=8","featureList":["ai","code","dev","desenvolvedor","usage","tracker","consumo","cota"],"keywords":"ai, code, dev, desenvolvedor, usage, tracker, consumo, cota, contador, token, widget, reset, llm, meter, sessão","@id":"https://apps.apple.com/app/id6818607603","identifier":{"@type":"PropertyValue","propertyID":"Apple App Store ID","value":"6818607603"},"downloadUrl":"https://apps.apple.com/br/app/id6818607603?pt=118326163&ct=geo_pick&mt=8","potentialAction":{"@type":"InstallAction","target":"https://apps.apple.com/br/app/id6818607603?pt=118326163&ct=geo_pick&mt=8"},"mainEntityOfPage":{"@id":"https://open.cait518.cc/ios-app-guide/pt-BR/claudeusagemini.html#webpage"},"offers":{"@type":"Offer","price":"0","priceCurrency":"BRL","url":"https://apps.apple.com/br/app/id6818607603?pt=118326163&ct=geo_pick&mt=8","availability":"https://schema.org/InStock"}}</script>
+<style>.searched-as{margin:1.2em 0;font-size:.95em;line-height:1.6}.searched-as-label{font-weight:600;margin-right:.35em}</style>
 <!-- app-store-facts-style:start -->
 <link rel="stylesheet" href="https://open.cait518.cc/ios-app-guide/assets/app-store-facts-v1.css">
 <!-- app-store-facts-style:end -->
@@ -137,11 +138,11 @@
 <!-- app-decision-card-style:start -->
 <link rel="stylesheet" href="/ios-app-guide/assets/app-decision-card-v1.css">
 <!-- app-decision-card-style:end -->
-<link rel="site.standard.publication" href="at://did:plc:kboucnzkxzmqmatvhes4xlt4/site.standard.publication/3mrocqbkyt6mg">
-<script type="application/ld+json" data-first-party-disclosure="publisher">{"@context":"https://schema.org","@type":"WebSite","@id":"https://open.cait518.cc/ios-app-guide/#website","url":"https://open.cait518.cc/ios-app-guide","publisher":{"@type":"Organization","@id":"https://open.cait518.cc/ios-app-guide/#organization","name":"Lumi Studio","url":"https://open.cait518.cc/ios-app-guide/about.html","description":"Developer of the featured apps and operator of this site."}}</script>
 <link rel="alternate" type="application/atom+xml" title="iOS App Guide — latest answers &amp; guides (Atom)" href="https://open.cait518.cc/ios-app-guide/feed.xml">
 <link rel="alternate" type="application/rss+xml" title="iOS App Guide — latest answers &amp; guides (RSS 2.0)" href="https://open.cait518.cc/ios-app-guide/rss.xml">
 <link rel="alternate" type="application/feed+json" title="iOS App Guide — latest answers &amp; guides (JSON Feed 1.1)" href="https://open.cait518.cc/ios-app-guide/feed.json">
+<link rel="site.standard.publication" href="at://did:plc:kboucnzkxzmqmatvhes4xlt4/site.standard.publication/3mrocqbkyt6mg">
+<script type="application/ld+json" data-first-party-disclosure="publisher">{"@context":"https://schema.org","@type":"WebSite","@id":"https://open.cait518.cc/ios-app-guide/#website","url":"https://open.cait518.cc/ios-app-guide","publisher":{"@type":"Organization","@id":"https://open.cait518.cc/ios-app-guide/#organization","name":"Lumi Studio","url":"https://open.cait518.cc/ios-app-guide/about.html","description":"Developer of the featured apps and operator of this site."}}</script>
 </head>
 <body>
 <p class="first-party-disclosure" data-first-party-disclosure="banner" role="note" style="margin:0;padding:8px 16px;background:#f3f4f6;color:#1f2937;border-bottom:1px solid #d1d5db;font-size:13px;line-height:1.5;text-align:center">Este site é mantido pela Lumi Studio, desenvolvedora dos apps apresentados. Os apps recomendados aqui são nossos.</p>
@@ -172,13 +173,6 @@
 <!-- app-store-review:start -->
 <div class="app-store-review" data-app-store-review="6818607603" style="margin:1rem 0;font-size:.9em;text-align:center"><a class="app-store-review__link" href="https://apps.apple.com/br/app/id6818607603?action=write-review" rel="nofollow noopener">Já usa este app? Avalie ou escreva uma resenha na App Store</a></div>
 <!-- app-store-review:end -->
-<!-- app-hook-clip:start -->
-<figure class="app-hook-clip" data-app-key="claudeusagemini" lang="en" style="margin:18px 0;max-width:300px">
-<video controls playsinline muted loop preload="none" poster="https://open.cait518.cc/ios-app-guide/social/img/claudeusagemini-share.jpg" width="1080" height="1920" style="display:block;width:100%;aspect-ratio:9/16;border-radius:18px;background:#111;object-fit:contain" aria-label="AI limit hit mid-task again? | UsageNow: AI Usage Tracker"><source src="https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/7j8u68.mp4" type="video/mp4"></video>
-<figcaption style="margin-top:6px;font-size:14px;color:#6b6257">AI limit hit mid-task again?</figcaption>
-</figure>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"VideoObject","name":"AI limit hit mid-task again? | UsageNow: AI Usage Tracker","description":"Bateu o limite da IA no meio do trabalho? O UsageNow mostra quanto resta de cada plano de IA e exatamente quando ele reinicia, direto na Tela de Início","thumbnailUrl":["https://open.cait518.cc/ios-app-guide/social/img/claudeusagemini-share.jpg"],"uploadDate":"2026-10-18T00:00:00+00:00","contentUrl":"https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/7j8u68.mp4","duration":"PT13.5S","inLanguage":"en"}</script>
-<!-- app-hook-clip:end -->
 <h2>O que é UsageNow: Monitor de uso de IA?</h2>
   <p>UsageNow: Monitor de uso de IA é um app iOS. Limites Claude, Codex, Copilot</p>
   <p>Bateu o limite da IA no meio do trabalho? O UsageNow mostra quanto resta de cada plano de IA e exatamente quando ele reinicia, direto na Tela de Início, e ainda avisa você antes de acabar.</p>
@@ -220,6 +214,8 @@
     <li>consumo</li>
     <li>cota</li>
   </ul>
+
+  <p class="searched-as"><span class="searched-as-label">As pessoas encontram este app buscando por: </span>uso de tokens, limite codex</p>
 
   <h2>Preço</h2>
   <p>Download grátis, compra única para desbloquear tudo. Sem assinatura.</p>

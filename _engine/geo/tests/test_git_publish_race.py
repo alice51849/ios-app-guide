@@ -99,6 +99,9 @@ class GitPublishRaceTests(unittest.TestCase):
             REMOTE_FIRST_RETRY_DELAY_SECONDS="0",
             REMOTE_FIRST_TIMEOUT_SECONDS="30",
         )
+        # geo-daily exports a real job deadline; keep these cases hermetic.
+        env.pop("REMOTE_FIRST_DEADLINE_EPOCH", None)
+        env.pop("REMOTE_FIRST_MIN_RECONCILE_SECONDS", None)
         result = subprocess.run(
             ["bash", "-c", script],
             cwd=self.worker,
@@ -275,17 +278,126 @@ printf 'attempts=%s\\n' "$REMOTE_FIRST_ATTEMPTS_USED"
         )
         self.assertNotEqual(0, missing_worker.returncode)
 
+    def assert_worker_not_published(self, origin_before: str) -> None:
+        self.assertEqual(origin_before, self.origin_head())
+        missing_worker = self.git(
+            self.root,
+            f"--git-dir={self.origin}",
+            "cat-file",
+            "-e",
+            "main:worker.txt",
+            check=False,
+        )
+        self.assertNotEqual(0, missing_worker.returncode)
+
+    def test_deadline_too_close_stops_before_merge_without_push(self) -> None:
+        self.commit_file(self.worker, "worker.txt", "worker\n", "worker content")
+        competitor_sha = self.commit_file(
+            self.competitor, "remote.txt", "remote\n", "remote work"
+        )
+        self.git(self.competitor, "push", "origin", "main")
+        script = f"""
+source {shlex.quote(str(HELPER))}
+export REMOTE_FIRST_DEADLINE_EPOCH="$(( $(date +%s) + 5 ))"
+reconcile_phase() {{
+  printf 'reconcile-ran\\n' > reconcile-ran.txt
+}}
+if remote_first_publish reconcile_phase origin main 5; then
+  exit 90
+fi
+test ! -e reconcile-ran.txt
+printf 'attempts=%s\\n' "$REMOTE_FIRST_ATTEMPTS_USED"
+"""
+        result = self.run_bash(script)
+        self.assertIn("attempts=1", result.stdout)
+        self.assertIn("not enough job time left", result.stdout)
+        self.assertEqual(competitor_sha, self.origin_head())
+        self.assert_worker_not_published(competitor_sha)
+        self.assertNotEqual(
+            0,
+            self.git(
+                self.worker,
+                "merge-base",
+                "--is-ancestor",
+                competitor_sha,
+                "HEAD",
+                check=False,
+            ).returncode,
+        )
+
+    def test_reconcile_over_job_budget_is_killed_without_push(self) -> None:
+        origin_before = self.origin_head()
+        self.commit_file(self.worker, "worker.txt", "worker\n", "worker content")
+        script = f"""
+source {shlex.quote(str(HELPER))}
+export REMOTE_FIRST_TIMEOUT_SECONDS=1
+export REMOTE_FIRST_DEADLINE_EPOCH="$(( $(date +%s) + 4 ))"
+reconcile_phase() {{
+  sleep 20
+  printf 'gate-was-bypassed\\n' > callback-continued.txt
+}}
+if remote_first_publish reconcile_phase origin main 5; then
+  exit 90
+fi
+test ! -e callback-continued.txt
+printf 'attempts=%s\\n' "$REMOTE_FIRST_ATTEMPTS_USED"
+"""
+        result = self.run_bash(script)
+        self.assertIn("attempts=1", result.stdout)
+        self.assertIn("ran out of the job time budget", result.stdout)
+        self.assert_worker_not_published(origin_before)
+
+    def test_retry_skipped_when_last_reconcile_cannot_fit(self) -> None:
+        self.commit_file(self.worker, "worker.txt", "worker\n", "worker content")
+        competitor = shlex.quote(str(self.competitor))
+        script = f"""
+source {shlex.quote(str(HELPER))}
+export REMOTE_FIRST_TIMEOUT_SECONDS=1
+export REMOTE_FIRST_DEADLINE_EPOCH="$(( $(date +%s) + 6 ))"
+reconcile_phase() {{ sleep 3; }}
+remote_first_before_push() {{
+  printf 'remote-race\\n' > {competitor}/race.txt
+  git -C {competitor} add race.txt
+  git -C {competitor} commit -m 'remote race'
+  git -C {competitor} push origin main
+}}
+if remote_first_publish reconcile_phase origin main 5; then
+  exit 90
+fi
+printf 'attempts=%s\\n' "$REMOTE_FIRST_ATTEMPTS_USED"
+"""
+        result = self.run_bash(script)
+        self.assertIn("push rejected after attempt 1", result.stdout)
+        self.assertIn("attempts=2", result.stdout)
+        self.assertIn("not enough job time left for publish attempt 2", result.stdout)
+        remote_sha = self.git(
+            self.competitor, "rev-parse", "HEAD"
+        ).stdout.strip()
+        self.assert_worker_not_published(remote_sha)
+
     def test_helper_is_bounded_and_non_destructive(self) -> None:
         source = HELPER.read_text(encoding="utf-8")
         self.assertIn("attempt <= max_attempts", source)
         self.assertIn("bash -euo pipefail -c", source)
         self.assertIn("git fetch --no-tags", source)
+        self.assertIn("REMOTE_FIRST_DEADLINE_EPOCH", source)
+        self.assertIn("timeout --kill-after=30", source)
         self.assertIn("git merge --no-edit -X theirs", source)
         self.assertIn("git merge-base --is-ancestor", source)
         self.assertIn('git push "$remote" "HEAD:refs/heads/${branch}"', source)
         self.assertNotIn("rebase", source)
         self.assertNotIn("reset --hard", source)
         self.assertNotIn("--force", source)
+
+    def test_geo_daily_records_deadline_inside_job_timeout(self) -> None:
+        workflow = (
+            REPO_ROOT / ".github" / "workflows" / "geo-daily.yml"
+        ).read_text(encoding="utf-8")
+        deadline = workflow.index(
+            'REMOTE_FIRST_DEADLINE_EPOCH=$(( $(date +%s) + 350 * 60 ))'
+        )
+        self.assertLess(deadline, workflow.index("uses: actions/checkout@v5"))
+        self.assertIn("timeout-minutes: 355", workflow)
 
 
 if __name__ == "__main__":

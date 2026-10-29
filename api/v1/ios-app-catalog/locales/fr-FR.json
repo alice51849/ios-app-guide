@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-10-28",
-  "content_digest": "83f0c37f4a225a76d8a04b53260333d6ca9fba2270e7781c8db58cbeac968b32",
+  "date_modified": "2026-10-29",
+  "content_digest": "7166c92e3b95243abb9e567445635d50d4beb86c9e466f179205313bc60208f8",
   "locale": "fr-FR",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -108,7 +108,8 @@
         "test",
         "écoute",
         "niveau",
-        "préparation"
+        "préparation",
+        "toeic lecture"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -753,7 +754,8 @@
         "néon",
         "vitrine",
         "texte",
-        "panneau"
+        "panneau",
+        "pancarte concert"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -873,7 +875,10 @@
         "maternelle",
         "CP",
         "quiz",
-        "bilingue"
+        "bilingue",
+        "zhuyin",
+        "bopomofo",
+        "mandarin enfants"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1318,7 +1323,8 @@
         "trésorerie",
         "association",
         "cagnotte",
-        "location"
+        "location",
+        "dépenses projet"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1808,7 +1814,8 @@
         "polices",
         "écran verrouillé",
         "format 24h",
-        "réveil"
+        "réveil",
+        "horloge de chevet"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

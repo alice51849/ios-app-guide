@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-10-28",
-  "content_digest": "83f0c37f4a225a76d8a04b53260333d6ca9fba2270e7781c8db58cbeac968b32",
+  "date_modified": "2026-10-29",
+  "content_digest": "7166c92e3b95243abb9e567445635d50d4beb86c9e466f179205313bc60208f8",
   "locale": "en-US",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -274,7 +274,8 @@
         "recruiter",
         "interview",
         "professional",
-        "docx"
+        "docx",
+        "ats resume"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1283,7 +1284,10 @@
         "notes",
         "errands",
         "watch",
-        "themes"
+        "themes",
+        "checklist",
+        "to do list",
+        "todo list"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1415,7 +1419,8 @@
         "pdf",
         "notes",
         "pptx",
-        "csv"
+        "csv",
+        "one page summary"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2137,7 +2142,10 @@
         "llm",
         "agent",
         "session",
-        "weekly"
+        "weekly",
+        "claude usage limit",
+        "codex usage limit",
+        "ai usage tracker"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-10-28",
-  "content_digest": "83f0c37f4a225a76d8a04b53260333d6ca9fba2270e7781c8db58cbeac968b32",
+  "date_modified": "2026-10-29",
+  "content_digest": "7166c92e3b95243abb9e567445635d50d4beb86c9e466f179205313bc60208f8",
   "locale": "pt-BR",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -224,7 +224,8 @@
         "prova",
         "viagem",
         "namoro",
-        "calendário"
+        "calendário",
+        "contagem regressiva prova"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -385,7 +386,8 @@
         "aeroporto",
         "restaurante",
         "hotel",
-        "offline"
+        "offline",
+        "guia de conversação"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1202,7 +1204,8 @@
         "anonimizar",
         "lgpd",
         "exif",
-        "senha"
+        "senha",
+        "tarjar pdf"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1243,7 +1246,10 @@
         "calendário",
         "widget",
         "organização",
-        "diária"
+        "diária",
+        "lista de tarefas",
+        "checklist",
+        "to do list"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1324,7 +1330,9 @@
         "fluxo de caixa",
         "vendas",
         "aluguel",
-        "clientes"
+        "clientes",
+        "despesas do projeto",
+        "receitas e despesas"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1853,7 +1861,8 @@
         "leitura",
         "prova",
         "vestibular",
-        "concurso"
+        "concurso",
+        "timer de foco"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1894,7 +1903,8 @@
         "fotos",
         "hotel",
         "museu",
-        "aeroporto"
+        "aeroporto",
+        "jogos para viagem de carro"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2017,7 +2027,8 @@
         "4k",
         "corrigir",
         "embaçada",
-        "ia"
+        "ia",
+        "corrigir foto borrada"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2061,7 +2072,9 @@
         "reset",
         "llm",
         "meter",
-        "sessão"
+        "sessão",
+        "uso de tokens",
+        "limite codex"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

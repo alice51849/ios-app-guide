@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-10-28",
-  "content_digest": "83f0c37f4a225a76d8a04b53260333d6ca9fba2270e7781c8db58cbeac968b32",
+  "date_modified": "2026-10-29",
+  "content_digest": "7166c92e3b95243abb9e567445635d50d4beb86c9e466f179205313bc60208f8",
   "locale": "vi",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -194,7 +194,8 @@
         "đếm ngày",
         "thuế",
         "đơn giản",
-        "lịch sử"
+        "lịch sử",
+        "máy tính widget"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -315,7 +316,8 @@
         "đau bụng kinh",
         "canh",
         "tính",
-        "đếm"
+        "đếm",
+        "lịch theo dõi kinh"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -355,7 +357,8 @@
         "đối thoại",
         "pháp",
         "đức",
-        "tây ban nha"
+        "tây ban nha",
+        "câu giao tiếp hàng ngày"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -491,7 +494,9 @@
         "sớm",
         "học",
         "trực",
-        "tuần"
+        "tuần",
+        "báo thức tắt ngày lễ",
+        "widget báo thức"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -617,7 +622,8 @@
         "du lịch",
         "đơn giản",
         "nhật ký",
-        "smartwatch"
+        "smartwatch",
+        "chi tiêu du lịch"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -788,7 +794,8 @@
         "thông báo",
         "neon",
         "biểu diễn",
-        "lễ hội"
+        "lễ hội",
+        "bảng đón sân bay"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1211,7 +1218,8 @@
         "áo",
         "bão",
         "xem",
-        "coi"
+        "coi",
+        "thời tiết gia đình"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1253,7 +1261,8 @@
         "tài liệu",
         "văn bản",
         "pdf",
-        "quét"
+        "quét",
+        "che thông tin"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1463,7 +1472,8 @@
         "35mm",
         "analog",
         "editor",
-        "filter"
+        "filter",
+        "filter phim"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1726,7 +1736,8 @@
         "screenshot",
         "sort",
         "tìm",
-        "kiếm"
+        "kiếm",
+        "sắp xếp ảnh chụp màn hình"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2178,7 +2189,9 @@
         "widget",
         "đồng hồ",
         "ổn định",
-        "cáp quang"
+        "cáp quang",
+        "chẩn đoán wifi",
+        "phân tích wifi"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -2220,7 +2233,8 @@
         "khắc phục",
         "sự cố",
         "modem",
-        "khách sạn"
+        "khách sạn",
+        "kiểm tra mạng"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

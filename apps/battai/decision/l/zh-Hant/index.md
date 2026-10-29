@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - 無廣告
 - Apple Watch
 - App Store · 免費
-- ★ 5.0/5 · 1
+- ★ 5.0/5 · 2
 
 [在 App Store 取得 BattAI →](https://apps.apple.com/tw/app/id6802423998?pt=118326163&ct=geo_pick&mt=8)
 

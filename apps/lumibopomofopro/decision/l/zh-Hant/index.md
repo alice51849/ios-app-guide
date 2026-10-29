@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - 無廣告
 - 隱私優先／裝置端
 - App Store · $290.00
-- ★ 4.0/5 · 2
+- ★ 3.0/5 · 1
 
 [在 App Store 取得 Lumi Bopomofo Pro →](https://apps.apple.com/tw/app/id6775773117?pt=118326163&ct=geo_pick&mt=8)
 

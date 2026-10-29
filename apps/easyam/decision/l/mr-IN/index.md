@@ -2,7 +2,7 @@
 title: "EasyAM: सुट्टी अलार्म घड्याळ — कामाच्या दिवशीच वाजणारा गजर | iOS App"
 lang: "mr-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/easyam/decision/l/mr-IN/index.html"
-modified: "2026-10-28"
+modified: "2026-10-29"
 app_store_id: "6821790092"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

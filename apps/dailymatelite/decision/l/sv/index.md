@@ -2,7 +2,7 @@
 title: "DailyMate Lite: Tala idag — Parlör för resan, 50 språk | iOS App"
 lang: "sv"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymatelite/decision/l/sv/index.html"
-modified: "2026-10-28"
+modified: "2026-10-29"
 app_store_id: "6794725568"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

@@ -2,7 +2,7 @@
 title: "Mochi DoneStamp：上次何时 — 家务保养记录·到期循环提醒 | iOS App"
 lang: "zh-Hans"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochidonestamp/decision/l/zh-Hans/index.html"
-modified: "2026-10-28"
+modified: "2026-10-29"
 app_store_id: "6790800323"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

@@ -2,7 +2,7 @@
 title: "GBAGo: Wizualne zapisy — Mapa odzyskiwania · Migawki | iOS App"
 lang: "pl"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gbago/decision/l/pl/index.html"
-modified: "2026-10-28"
+modified: "2026-10-29"
 app_store_id: "6804564400"
 verified_live: true
 purchase_model: "paid_upfront"

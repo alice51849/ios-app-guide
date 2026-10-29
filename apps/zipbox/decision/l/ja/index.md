@@ -2,7 +2,7 @@
 title: "iPhone で RAR や 7z を広告なしで開ける有料アプリ"
 lang: "ja"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/zipbox/decision/l/ja/index.html"
-modified: "2026-10-28"
+modified: "2026-10-29"
 app_store_id: "6806776579"
 verified_live: true
 purchase_model: "paid_upfront"

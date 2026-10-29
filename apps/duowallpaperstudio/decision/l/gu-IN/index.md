@@ -2,7 +2,7 @@
 title: "Foldable Wallpaper Studio — ફોલ્ડેબલ ફોન HD વૉલપેપર જોડી | iOS App"
 lang: "gu-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/duowallpaperstudio/decision/l/gu-IN/index.html"
-modified: "2026-10-28"
+modified: "2026-10-29"
 app_store_id: "6824946559"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

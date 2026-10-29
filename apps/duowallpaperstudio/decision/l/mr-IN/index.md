@@ -2,7 +2,7 @@
 title: "Foldable Wallpaper Studio — फोल्डेबल मोबाईल वॉलपेपर जोडी | iOS App"
 lang: "mr-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/duowallpaperstudio/decision/l/mr-IN/index.html"
-modified: "2026-10-28"
+modified: "2026-10-29"
 app_store_id: "6824946559"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

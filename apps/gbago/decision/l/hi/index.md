@@ -2,7 +2,7 @@
 title: "GBAGo: विज़ुअल सेव — रिकवरी मैप · ऑटो स्नैपशॉट | iOS App"
 lang: "hi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gbago/decision/l/hi/index.html"
-modified: "2026-10-28"
+modified: "2026-10-29"
 app_store_id: "6804564400"
 verified_live: true
 purchase_model: "paid_upfront"

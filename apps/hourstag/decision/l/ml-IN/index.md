@@ -2,7 +2,7 @@
 title: "HoursTag: സമയം വാങ്ങുക — മണിക്കൂർ വേതനവും ചെലവും | iOS App"
 lang: "ml-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/ml-IN/index.html"
-modified: "2026-10-28"
+modified: "2026-10-29"
 app_store_id: "6754218117"
 verified_live: true
 purchase_model: "paid_upfront"

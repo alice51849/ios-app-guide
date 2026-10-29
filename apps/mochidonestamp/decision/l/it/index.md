@@ -2,7 +2,7 @@
 title: "Mochi DoneStamp: Ultima volta — Quando l'ho fatto? Promemoria | iOS App"
 lang: "it"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochidonestamp/decision/l/it/index.html"
-modified: "2026-10-28"
+modified: "2026-10-29"
 app_store_id: "6790800323"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

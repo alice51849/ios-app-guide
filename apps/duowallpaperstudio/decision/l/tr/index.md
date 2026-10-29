@@ -2,7 +2,7 @@
 title: "Foldable Wallpaper Studio — Katlanabilir çift duvar kağıdı | iOS App"
 lang: "tr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/duowallpaperstudio/decision/l/tr/index.html"
-modified: "2026-10-28"
+modified: "2026-10-29"
 app_store_id: "6824946559"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

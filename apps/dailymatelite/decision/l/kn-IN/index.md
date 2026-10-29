@@ -2,7 +2,7 @@
 title: "DailyMate Lite: ದಿನವೂ ಮಾತನಾಡಿ — ಪ್ರವಾಸ ಸಂಭಾಷಣೆ, 50 ಭಾಷೆಗಳಲ್ಲಿ | iOS App"
 lang: "kn-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymatelite/decision/l/kn-IN/index.html"
-modified: "2026-10-28"
+modified: "2026-10-29"
 app_store_id: "6794725568"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

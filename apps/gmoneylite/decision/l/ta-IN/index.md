@@ -2,7 +2,7 @@
 title: "G+Money Lite: பயணச் செலவு — தினசரி பட்ஜெட், வாட்ச்சில் | iOS App"
 lang: "ta-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gmoneylite/decision/l/ta-IN/index.html"
-modified: "2026-10-28"
+modified: "2026-10-29"
 app_store_id: "6793436548"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

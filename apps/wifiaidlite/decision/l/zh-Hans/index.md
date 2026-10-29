@@ -2,7 +2,7 @@
 title: "WiFi Aid Lite：网络故障检测 — 上不了网？一键找出原因 | iOS App"
 lang: "zh-Hans"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaidlite/decision/l/zh-Hans/index.html"
-modified: "2026-10-28"
+modified: "2026-10-29"
 app_store_id: "6793414462"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

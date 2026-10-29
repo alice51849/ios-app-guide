@@ -2,7 +2,7 @@
 title: "EasyAM: விடுமுறை அலாரம் — லீவு நாளில் ஒலிக்காத கடிகாரம் | iOS App"
 lang: "ta-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/easyam/decision/l/ta-IN/index.html"
-modified: "2026-10-28"
+modified: "2026-10-29"
 app_store_id: "6821790092"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

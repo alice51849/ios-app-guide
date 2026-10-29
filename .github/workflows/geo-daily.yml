@@ -48,6 +48,12 @@ jobs:
       APP_STORE_PROVIDER_TOKEN: "118326163"
       STANDARD_SITE_GUIDE_CONTRACT_URL: https://raw.githubusercontent.com/alice51849/alice51849.github.io/main/standard_site_guide_contract.json
     steps:
+      - name: Record job publish deadline
+        # Both commit phases stop starting merge/reconcile attempts they cannot
+        # finish before timeout-minutes (355) cancels the job; 350 leaves room
+        # for the final bounded push and cleanup. Without it run 40887904887
+        # (2026-10-29) was cancelled 46 minutes into a localized reconcile.
+        run: echo "REMOTE_FIRST_DEADLINE_EPOCH=$(( $(date +%s) + 350 * 60 ))" >> "$GITHUB_ENV"
       - uses: actions/checkout@v5
         with:
           ref: main

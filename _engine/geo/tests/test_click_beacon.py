@@ -4,6 +4,9 @@ from __future__ import annotations
 
 import json
 import os
+import shutil
+import subprocess
+import urllib.parse
 from pathlib import Path
 import sys
 import tempfile
@@ -157,6 +160,143 @@ class InjectTreeTests(unittest.TestCase):
         _write(self.root, "a.html", PAGE)
         _write(self.root, "data/hero-tasks/manifest.json", "{not json")
         self.assertEqual(1, cb.inject_tree(self.root)[cb.ADDED])
+
+
+DUO_ID = cb.AICT_APPS["duowallpaperstudio"]
+DUO_LINK = f"https://apps.apple.com/jp/app/id{DUO_ID}?pt=118326163&amp;ct=geo_pick&amp;mt=8"
+DUO_PAGE = (
+    '<!doctype html>\n<html lang="ja"><head><title>D</title>\n</head><body>'
+    f'<a id="duo" href="{DUO_LINK}">Get</a>'
+    f'<a id="rev" href="https://apps.apple.com/jp/app/id{DUO_ID}?action=write-review">Rate</a>'
+    '<a id="other" href="https://apps.apple.com/jp/app/id111111111?pt=1&amp;ct=geo_x&amp;mt=8">Other</a>'
+    '<a id="play" href="https://play.google.com/store/apps/details?id=com.example.duo&amp;referrer='
+    'utm_source%3Dgeo_pick%26utm_campaign%3Dduowallpaperstudio">Play</a>'
+    '<a id="oplay" href="https://play.google.com/store/apps/details?id=com.example.x&amp;referrer='
+    'utm_source%3Dgeo_x%26utm_campaign%3Dmochi">Play2</a>'
+    "</body></html>\n"
+)
+
+
+class AiCtBlockTests(unittest.TestCase):
+    """人工智慧來源追蹤碼:只放雙螢幕桌布自己的頁面,碼合規,非人工智慧來源時連結不變。"""
+
+    def setUp(self):
+        scratch = tempfile.TemporaryDirectory()
+        self.addCleanup(scratch.cleanup)
+        self.root = Path(scratch.name)
+
+    def test_tokens_are_registered_campaigns(self):
+        agent = GEO.parent / "agent"
+        if not (agent / "ct_codes.py").is_file():
+            self.skipTest("agent/ct_codes.py lives only in 00_GrowthEngine")
+        if str(agent) not in sys.path:
+            sys.path.insert(0, str(agent))
+        try:
+            import ct_codes
+        except ImportError:
+            self.skipTest("agent/ct_codes.py lives only in 00_GrowthEngine")
+        tokens = {ct for _, ct in cb.AICT_ENGINES} | set(cb.AICT_NAMES.values())
+        self.assertEqual({"ai_chatgpt", "ai_perplexity", "ai_gemini", "ai_copilot"}, tokens)
+        for token in tokens:
+            self.assertEqual([], ct_codes.ct_problems(token), token)
+            self.assertEqual("ai_referral", ct_codes.channel_for_ct(token))
+
+    def test_scope_is_only_the_apps_own_pages(self):
+        self.assertEqual({"duowallpaperstudio": "6824946559"}, cb.AICT_APPS)
+        for rel in ("ja/duowallpaperstudio.html", "hubs/duowallpaperstudio.html",
+                    "apps/duowallpaperstudio/decision/l/ja/index.html",
+                    "alternatives/duowallpaperstudio-vs-x.html", "guides/duowallpaperstudio.html"):
+            self.assertEqual("duowallpaperstudio", cb.ai_ct_app(rel, DUO_PAGE), rel)
+        self.assertIsNone(cb.ai_ct_app("en-US/answers/foldable.html", DUO_PAGE))
+        self.assertIsNone(cb.ai_ct_app("ja/mochi.html", DUO_PAGE))
+        self.assertIsNone(cb.ai_ct_app("ja/duowallpaperstudiox.html", DUO_PAGE))
+        self.assertIsNone(cb.ai_ct_app("ja/duowallpaperstudio.html", PAGE))
+
+    def test_tree_pass_adds_only_to_duo_pages_and_is_idempotent(self):
+        root = self.root
+        duo = _write(root, "ja/duowallpaperstudio.html", DUO_PAGE)
+        answer = _write(root, "en-US/answers/a.html", DUO_PAGE)
+        other = _write(root, "ja/mochi.html", PAGE)
+        pinned = _write(root, "en-US/decide/duowallpaperstudio/r.html", DUO_PAGE)
+        amp = _write(root, "stories/duowallpaperstudio.html",
+                     DUO_PAGE.replace('<html lang="ja">', '<html amp lang="ja">'))
+        _write(root, "data/high-intent-decision-routes/expected-output-manifest.json",
+               json.dumps({"expected_outputs": [
+                   {"relative_path": "en-US/decide/duowallpaperstudio/r.html"}]}))
+        stats = cb.inject_tree(root)
+        self.assertEqual((1, 1), (stats["ai_ct_pages"], stats["ai_ct_skipped"]))
+        text = duo.read_text()
+        self.assertEqual(1, text.count(cb.AICT_START))
+        self.assertLess(text.index(cb.AICT_END), text.index("</head>"))
+        self.assertIn(DUO_LINK, text)  # 靜態連結不改
+        for path in (answer, other, amp):
+            self.assertNotIn(cb.AICT_START, path.read_text(), path)
+        self.assertEqual(DUO_PAGE, pinned.read_text())
+        again = cb.inject_tree(root)
+        self.assertEqual(text, duo.read_text())
+        self.assertEqual(1, again["ai_ct_pages"])
+
+    def test_stale_block_is_removed_from_out_of_scope_pages(self):
+        stale = PAGE.replace("</head>", cb.ai_ct_block() + "\n</head>")
+        path = _write(self.root, "ja/mochi.html", stale)
+        cb.inject_tree(self.root)
+        self.assertNotIn(cb.AICT_START, path.read_text())
+        self.assertIn(cb.CLICK_START, path.read_text())
+
+    def _run_js(self, url: str, referrer: str) -> dict:
+        node = shutil.which("node")
+        if not node:
+            self.skipTest("node is not installed")
+        anchors = {}
+        for anchor_id in ("duo", "rev", "other", "play", "oplay"):
+            start = DUO_PAGE.index(f'id="{anchor_id}" href="') + len(f'id="{anchor_id}" href="')
+            anchors[anchor_id] = DUO_PAGE[start:DUO_PAGE.index('"', start)].replace("&amp;", "&")
+        js = cb.ai_ct_block().split("<script>", 1)[1].split("</script>", 1)[0]
+        harness = (
+            "const A=" + json.dumps(anchors) + ";"
+            "const els=Object.entries(A).map(([id,href])=>({id,href}));"
+            "globalThis.location=new URL(" + json.dumps(url) + ");"
+            "globalThis.document={referrer:" + json.dumps(referrer) + ",readyState:'complete',"
+            "querySelectorAll:()=>els,addEventListener:()=>{}};"
+            + js +
+            "process.stdout.write(JSON.stringify(Object.fromEntries(els.map(e=>[e.id,e.href]))));"
+        )
+        out = subprocess.run([node, "-e", harness], capture_output=True, text=True, check=True)
+        return {"before": anchors, "after": json.loads(out.stdout)}
+
+    def test_runtime_leaves_links_alone_without_ai_source(self):
+        page = "https://guide.example/ja/duowallpaperstudio.html"
+        for url, ref in ((page, ""), (page, "https://www.google.com/"),
+                         (page + "?utm_source=newsletter", "https://bing.com/"),
+                         (page + "?utm_source=constructor", ""),
+                         (page, "https://notchatgpt.com/")):
+            run = self._run_js(url, ref)
+            self.assertEqual(run["before"], run["after"], (url, ref))
+
+    def test_runtime_swaps_only_the_apps_tracked_links(self):
+        page = "https://guide.example/ja/duowallpaperstudio.html"
+        cases = (
+            (page, "https://chatgpt.com/", "ai_chatgpt"),
+            (page + "?utm_source=chatgpt.com", "", "ai_chatgpt"),
+            (page, "https://www.perplexity.ai/search", "ai_perplexity"),
+            (page + "?utm_source=perplexity", "", "ai_perplexity"),
+            (page, "https://gemini.google.com/", "ai_gemini"),
+            (page, "https://copilot.microsoft.com/", "ai_copilot"),
+        )
+        for url, ref, token in cases:
+            run = self._run_js(url, ref)
+            before, after = run["before"], run["after"]
+            duo = urllib.parse.urlsplit(after["duo"])
+            query = dict(urllib.parse.parse_qsl(duo.query))
+            self.assertEqual(token, query["ct"], (url, ref))
+            self.assertEqual(("apps.apple.com", f"/jp/app/id{DUO_ID}"), (duo.netloc, duo.path))
+            self.assertEqual({"pt": "118326163", "mt": "8"}, {k: query[k] for k in ("pt", "mt")})
+            for unchanged in ("rev", "other", "oplay"):
+                self.assertEqual(before[unchanged], after[unchanged], unchanged)
+            play = dict(urllib.parse.parse_qsl(urllib.parse.urlsplit(after["play"]).query))
+            referrer = dict(urllib.parse.parse_qsl(play["referrer"]))
+            self.assertEqual({"utm_source": token, "utm_campaign": "duowallpaperstudio"}, referrer)
+            self.assertEqual("com.example.duo", play["id"])
 
 
 class PagesWorkflowTests(unittest.TestCase):

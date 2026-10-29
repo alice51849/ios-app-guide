@@ -1,9 +1,9 @@
 {
  "schema": "lumi.android-live-snapshot/v1",
  "source": "AndroidPlay android_live_scan (Play page HTTP 200 + publish LIVE)",
- "source_generated": "2026-10-24T23:45:05+0800",
+ "source_generated": "2026-10-30T03:28:59+0800",
  "count": 54,
- "content_sha256": "015bc65b2b3e65e68aa2b240e95fa3475de41333f24b384b32bab6a991345d76",
+ "content_sha256": "50c5cca3da2fc6d8606033946f89e9a7e2aaf3ffece99f3b658a06a9385b7a1f",
  "apps": {
   "aibriefpack": {
    "ios_app_id": "6791658210",
@@ -22,7 +22,7 @@
     },
     "zh-TW": {
      "title": "AI Brief",
-     "short_description": "把截圖、檔案與筆記整理成任何 AI 都能看懂的清晰摘要"
+     "short_description": "把截圖、PDF、檔案與筆記整理成一份 AI 提示詞摘要包，圖片轉文字與重點擷取都在本機完成"
     }
    }
   },
@@ -60,11 +60,11 @@
    "copy": {
     "en-US": {
      "title": "BattAI: Battery Health & Life",
-     "short_description": "Battery health checker: health score, capacity over time and time to 80%"
+     "short_description": "Battery health checker: score, capacity over time, charging habits, time to 80%"
     },
     "zh-TW": {
-     "title": "BattAI: 電池健康分數",
-     "short_description": "預估到 80% 的時間"
+     "title": "BattAI: 電池健康分數與電池分析",
+     "short_description": "電池分析與電池健康檢測：健康分數、最大容量趨勢、充電習慣，預估何時降到 80%"
     }
    }
   },
@@ -142,7 +142,7 @@
     },
     "zh-TW": {
      "title": "Cyca 經期週期追蹤・排卵",
-     "short_description": "私密生理期週期追蹤，搭配每日身體預報與舒緩日曆"
+     "short_description": "私密的經期日曆與生理期紀錄，預估排卵期與易孕期，還有每日身體預報"
     }
    }
   },
@@ -159,11 +159,11 @@
    "copy": {
     "en-US": {
      "title": "DailyMate: Language Phrasebook",
-     "short_description": "Phrasebook app with 8,400 everyday phrases in 47 languages, by topic and level"
+     "short_description": "Phrasebook app with 8,400 everyday phrases in 47 languages for travel and work"
     },
     "zh-TW": {
      "title": "DailyMate：用句子學語言",
-     "short_description": "47 種語言、8,400 句生活會話，旅遊、工作、日常情境都用得上，還能聽發音"
+     "short_description": "47 種語言、8,400 句生活會話，旅遊、工作情境都用得上；每日一句，邊聽發音邊累積"
     }
    }
   },
@@ -283,11 +283,11 @@
    "copy": {
     "en-US": {
      "title": "G+Money Lite",
-     "short_description": "Log travel expenses in local currency and see them in your home currency"
+     "short_description": "Travel expense tracker with auto currency conversion and a daily travel budget"
     },
     "zh-TW": {
      "title": "G+Money Lite：旅遊記帳・匯率",
-     "short_description": "出國用當地貨幣記帳，馬上換算台幣；離線也能用已存匯率，設每日預算"
+     "short_description": "出國旅遊記帳：用當地貨幣記一筆，馬上換算台幣等本國貨幣；離線也能用已存匯率，設每日預算"
     }
    }
   },
@@ -388,11 +388,11 @@
    "copy": {
     "en-US": {
      "title": "Lumi Bopomofo: Learn Zhuyin",
-     "short_description": "Kids learn Bopomofo (Zhuyin) Chinese sounds with feeding, tracing and tone games"
+     "short_description": "Learn Chinese for kids: Zhuyin (Bopomofo) Mandarin sounds, tracing, tone games"
     },
     "zh-TW": {
      "title": "Lumi注音星球：注音符號學習遊戲",
-     "short_description": "幼兒學注音好幫手：餵食小夥伴、描寫筆順、聲調與拼音遊戲，輕鬆認讀 37 個注音符號"
+     "short_description": "幼兒學注音遊戲：餵小夥伴認ㄅㄆㄇ、跟著筆順描寫、聽聲調玩拼音，輕鬆認讀 37 個注音符號"
     }
    }
   },
@@ -409,7 +409,7 @@
    "copy": {
     "en-US": {
      "title": "Lumi Bopomofo Pro: Zhuyin",
-     "short_description": "Learn Zhuyin (Bopomofo) through play: sounds, blending, tones and tracing"
+     "short_description": "Mandarin for kids: Zhuyin sounds, tones, blending, tracing and worksheets"
     },
     "zh-TW": {
      "title": "Lumi注音星球 Pro：ㄅㄆㄇ注音遊戲",
@@ -430,11 +430,11 @@
    "copy": {
     "en-US": {
      "title": "Lumi Letters Lite: ABC Kids",
-     "short_description": "ABC kids game: trace the alphabet, hear letter sounds and play phonics, ages 3-7"
+     "short_description": "ABC kids game: trace the alphabet, letter sounds & phonics, preschool, ages 3-7"
     },
     "zh-TW": {
-     "title": "Lumi 字母星球 Lite：兒童英文ABC遊戲",
-     "short_description": "給3到7歲孩子的英文字母啟蒙：跟著筆順描寫大小寫、聽字母發音，在星球闖關中玩自然發音"
+     "title": "Lumi 字母星球 Lite：兒童英文ABC遊戲・自然發音",
+     "short_description": "3到7歲兒童英文字母啟蒙：跟著筆順描寫ABC大小寫、聽字母發音，在星球闖關中玩自然發音遊戲"
     }
    }
   },
@@ -454,8 +454,8 @@
      "short_description": "Phonics for kids 3–6: hear letter sounds, trace the ABCs and practice reading"
     },
     "zh-TW": {
-     "title": "Lumi 字母星球 Pro：ABC啟蒙",
-     "short_description": "3–6 歲英文自然發音啟蒙：聽字母音、描寫大小寫、看圖拼讀，還能列印今日學習單"
+     "title": "Lumi 字母星球 Pro：ABC啟蒙・英文自然發音",
+     "short_description": "3–6 歲兒童英文自然發音 Phonics 啟蒙：聽字母音、描寫大小寫、看圖拼讀，還能列印今日學習單"
     }
    }
   },
@@ -472,11 +472,11 @@
    "copy": {
     "en-US": {
      "title": "Lumi Math Planet: Kids Math",
-     "short_description": "Math games for kids: counting, adding, patterns and logic puzzles in space"
+     "short_description": "Math games for kids: counting, adding, times tables, patterns and logic puzzles"
     },
     "zh-TW": {
-     "title": "Lumi數學星球：探索版",
-     "short_description": "幼兒數學遊戲：數數、加減法、找規律、邏輯推理，答對一題就點亮一顆星球的太空冒險"
+     "title": "Lumi數學星球：探索版・九九乘法",
+     "short_description": "幼兒數學遊戲：數數、加減法、九九乘法、找規律與邏輯推理，答對一題就點亮一顆星球的太空冒險"
     }
    }
   },
@@ -493,11 +493,11 @@
    "copy": {
     "en-US": {
      "title": "Lumi Math Pro: Kids Numbers",
-     "short_description": "Math for kids 5–8: logic puzzles, patterns and number sense in a space adventure"
+     "short_description": "Math for kids 5–8: logic puzzles, patterns & number sense in a space adventure"
     },
     "zh-TW": {
-     "title": "Lumi 數學星球：兒童數學",
-     "short_description": "5–8 歲兒童數學冒險：邏輯推理、找規律、加減乘除，還有弱項練習與列印學習單"
+     "title": "Lumi 數學星球：兒童數學・心算練習",
+     "short_description": "5–8 歲兒童數學遊戲：邏輯推理、找規律、應用題、加減乘除心算，還有弱項練習與列印學習單"
     }
    }
   },
@@ -518,7 +518,7 @@
     },
     "zh-TW": {
      "title": "Lumi 任務星球：生活常規・集點獎勵",
-     "short_description": "刷牙、吃飯、睡覺、收玩具都變成好玩的任務，用集點貼紙陪孩子養成生活常規"
+     "short_description": "兒童作息表與集點貼紙：把刷牙、吃飯、睡覺、收玩具變成好玩的任務，陪孩子養成生活常規"
     }
    }
   },
@@ -829,7 +829,7 @@
    "copy": {
     "en-US": {
      "title": "ShotInbox AI: Sort Screenshots",
-     "short_description": "Screenshot organizer: on-device OCR search, auto categories and cleanup"
+     "short_description": "Screenshot organizer: on-device OCR search, auto categories, clear old shots"
     },
     "zh-TW": {
      "title": "ShotInbox AI: Sort Screenshots",
@@ -994,7 +994,7 @@
    "match": "bundle_id_exact",
    "copy": {
     "en-US": {
-     "title": "Trip Planet: Kids Quest",
+     "title": "Trip Planet: Kids Travel Quest",
      "short_description": "Family travel missions for kids 3–10: turn every trip into a space adventure"
     },
     "zh-TW": {
@@ -1079,11 +1079,11 @@
    "copy": {
     "en-US": {
      "title": "Wordmate: Vocabulary Builder",
-     "short_description": "Vocabulary builder for 44 languages: focused lessons, example sentences, audio"
+     "short_description": "Vocabulary builder, 44 languages: flashcards, lessons, example sentences, audio"
     },
     "zh-TW": {
-     "title": "Wordmate：44 種語言背單字",
-     "short_description": "用 14 個生活主題背單字，44 種語言任你選，附發音朗讀與進度追蹤"
+     "title": "Wordmate：44 種語言背單字・單字卡",
+     "short_description": "44 種語言單字卡：依 14 個生活主題背單字，收藏重點字隨時複習，還能聽發音朗讀"
     }
    }
   },

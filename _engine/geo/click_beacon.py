@@ -24,6 +24,15 @@
   - AMP 網頁故事(AMP 不允許自訂 JS);
   - ``</head>`` 不是剛好一個的頁面(位置不明就不猜)。
 
+人工智慧來源追蹤碼(2026-10-29 主動發現卡 5,只套雙螢幕桌布):``inject`` 同時在
+``AICT_APPS`` 那幾款自己的頁面(路徑含該款 key、頁上有該款 App Store 連結)放第二塊
+內嵌 JS。來源網址主機或網址 ``utm_source`` 是 ChatGPT／Perplexity／Gemini／Copilot 時,
+把頁上該款 App Store 下載連結的 ct 換成 ``ai_<引擎>``、該款 Play 連結 referrer 的
+utm_source 換成同一碼(utm_campaign 照舊是款 key);沒有人工智慧來源時完全不動。
+repo 裡的頁面與靜態連結不變(只在部署產物執行時改),點擊計數在點擊當下讀 ct,
+所以人工智慧來源的點擊也記成 ai_ 碼。判讀:蘋果活動報表各 ai_ 碼的瀏覽／首次下載,
+11-26 仍 0 下載就收掉(``AICT_APPS`` 清空即全部移除)。
+
 本檔是 00_GrowthEngine geo/ 的正本,Guide ``_engine/geo/`` 是逐 byte 鏡像。
 """
 from __future__ import annotations
@@ -59,6 +68,90 @@ _CLICK_JS = (
     "document.addEventListener('click',h,true);"
     "document.addEventListener('auxclick',h,true)})();"
 )
+
+
+# ------------------------------------------------------------ 人工智慧來源追蹤碼
+# 款 key → App Store id。只放進這裡的款才會帶這塊(11-26 判讀;0 下載就清空)。
+AICT_APPS = {"duowallpaperstudio": "6824946559"}
+# 來源主機(含子網域)→ ct;utm_source 也接受這些主機或第一段名稱(chatgpt、perplexity…)。
+AICT_ENGINES = (
+    ("chatgpt.com", "ai_chatgpt"),
+    ("chat.openai.com", "ai_chatgpt"),
+    ("perplexity.ai", "ai_perplexity"),
+    ("gemini.google.com", "ai_gemini"),
+    ("copilot.microsoft.com", "ai_copilot"),
+    ("copilot.com", "ai_copilot"),
+)
+AICT_NAMES = {"chatgpt": "ai_chatgpt", "openai": "ai_chatgpt", "perplexity": "ai_perplexity",
+              "gemini": "ai_gemini", "copilot": "ai_copilot"}
+AICT_START = "<!-- ls-aict:start -->"
+AICT_END = "<!-- ls-aict:end -->"
+AICT_RE = re.compile(re.escape(AICT_START) + r".*?" + re.escape(AICT_END) + r"\n?", re.S)
+
+
+def _aict_js() -> str:
+    engines = json.dumps([list(row) for row in AICT_ENGINES], separators=(",", ":"))
+    names = json.dumps(AICT_NAMES, separators=(",", ":"), sort_keys=True)
+    ids = json.dumps({v: k for k, v in AICT_APPS.items()}, separators=(",", ":"), sort_keys=True)
+    keys = json.dumps(sorted(AICT_APPS), separators=(",", ":"))
+    return (
+        "(function(){try{var M=" + engines + ",N=" + names + ",I=" + ids + ",K=" + keys + ";"
+        "function m(h){h=String(h||'').toLowerCase().replace(/^\\s+|\\s+$/g,'').replace(/^www\\./,'');"
+        "if(!h)return'';for(var i=0;i<M.length;i++){var d=M[i][0];"
+        "if(h===d||h.slice(-d.length-1)==='.'+d)return M[i][1]}"
+        "return Object.prototype.hasOwnProperty.call(N,h)?N[h]:''}"
+        "var c='';try{c=m(new URLSearchParams(location.search).get('utm_source'))}catch(_){}"
+        "if(!c&&document.referrer){try{c=m(new URL(document.referrer).hostname)}catch(_){}}"
+        "if(!c)return;"
+        "function f(){var a=document.querySelectorAll('a[href]');for(var i=0;i<a.length;i++){try{"
+        "var u=new URL(a[i].href),q=u.searchParams,x=u.pathname.match(/\\/id(\\d+)/);"
+        "if(u.hostname==='apps.apple.com'&&x&&I[x[1]]&&q.has('ct')&&!q.has('action')){"
+        "q.set('ct',c);a[i].href=u.toString()}"
+        "else if(u.hostname==='play.google.com'&&q.get('referrer')){"
+        "var r=new URLSearchParams(q.get('referrer'));"
+        "if(K.indexOf(r.get('utm_campaign'))>=0&&r.get('utm_source')){"
+        "r.set('utm_source',c);q.set('referrer',r.toString());a[i].href=u.toString()}}"
+        "}catch(_){}}}"
+        "if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',f);else f()"
+        "}catch(_){}})();"
+    )
+
+
+def ai_ct_block() -> str:
+    """受管的人工智慧來源追蹤碼區塊(只放在 AICT_APPS 那幾款自己的頁面)。"""
+    return f"{AICT_START}\n<script>{_aict_js()}</script>\n{AICT_END}"
+
+
+def ai_ct_app(relative: str, source: str) -> str | None:
+    """這頁屬於哪一款 AICT_APPS(路徑一段以款 key 開頭、頁上有該款 App Store 連結),否則 None。"""
+    for key, app_id in AICT_APPS.items():
+        if re.search(r"(?:^|/)" + re.escape(key) + r"(?:[./-]|$)", relative) and (
+            f"/id{app_id}?" in source or f"/id{app_id}\"" in source
+        ):
+            return key
+    return None
+
+
+def inject_ai_ct_html(source: str, wanted: bool) -> tuple[str, str]:
+    """與 inject_html 同一套規則放／移除人工智慧來源追蹤碼區塊;wanted=False 只移除。"""
+    found = list(AICT_RE.finditer(source))
+    if source.count(AICT_START) != len(found) or source.count(AICT_END) != len(found):
+        return source, SKIP_MALFORMED
+    block = ai_ct_block()
+    stripped = AICT_RE.sub("", source) if found else source
+    if not wanted:
+        return stripped, (REMOVED if found else UNCHANGED)
+    if _CSP_RE.search(stripped):
+        return stripped, (REMOVED if found else SKIP_CSP)
+    if _AMP_RE.search(stripped):
+        return stripped, (REMOVED if found else SKIP_AMP)
+    if len(found) == 1 and found[0].group(0).rstrip("\n") == block:
+        return source, UNCHANGED
+    closes = list(_HEAD_CLOSE_RE.finditer(stripped))
+    if len(closes) != 1:
+        return stripped, (REMOVED if found else SKIP_HEAD)
+    at = closes[0].start()
+    return stripped[:at] + block + "\n" + stripped[at:], ADDED
 
 
 def click_beacon_block() -> str:
@@ -148,7 +241,8 @@ def inject_tree(pages: Path = PAGES) -> dict[str, int]:
     pages = Path(pages)
     stats = {"scanned": 0, "with_beacon": 0, ADDED: 0, UNCHANGED: 0, REMOVED: 0,
              SKIP_CSP: 0, SKIP_AMP: 0, SKIP_HEAD: 0, SKIP_MALFORMED: 0,
-             "pinned": len(_pinned_paths(pages)), "non_utf8": 0, "io_error": 0}
+             "pinned": len(_pinned_paths(pages)), "non_utf8": 0, "io_error": 0,
+             "ai_ct_pages": 0, "ai_ct_skipped": 0}
     for path in site_pages(pages):
         stats["scanned"] += 1
         try:
@@ -160,6 +254,14 @@ def inject_tree(pages: Path = PAGES) -> dict[str, int]:
             stats["io_error"] += 1
             continue
         updated, status = inject_html(source)
+        relative = path.relative_to(pages).as_posix()
+        app = ai_ct_app(relative, updated)
+        if app or AICT_START in updated:
+            updated, ai_status = inject_ai_ct_html(updated, bool(app))
+            if app and ai_status in (ADDED, UNCHANGED):
+                stats["ai_ct_pages"] += 1
+            elif app:
+                stats["ai_ct_skipped"] += 1
         if updated != source:
             try:
                 path.write_text(updated, encoding="utf-8")
@@ -178,9 +280,13 @@ def main(argv: list[str] | None = None) -> int:
     inject = sub.add_parser("inject", help="在部署產物每頁 </head> 前放點擊計數區塊")
     inject.add_argument("--pages", type=Path, default=PAGES)
     sub.add_parser("block", help="印出點擊計數區塊")
+    sub.add_parser("ai-block", help="印出人工智慧來源追蹤碼區塊")
     args = parser.parse_args(argv)
     if args.command == "block":
         print(click_beacon_block())
+        return 0
+    if args.command == "ai-block":
+        print(ai_ct_block())
         return 0
     stats = inject_tree(args.pages)
     print("click beacon: " + json.dumps(stats, sort_keys=True))

@@ -125,6 +125,12 @@ jobs:
             --site-root "$GITHUB_WORKSPACE" --repair
           cd _engine/geo
           python3 build_pages_i18n.py --cached-live --missing-apps
+          # The Finder below reads its catalogue summaries from the en-US and
+          # zh-Hant page meta descriptions, and the sealed high-intent copy
+          # digest is checked right after it. Refresh exactly those locales
+          # from the current store copy first, or a store-copy update leaves
+          # the Finder reading stale committed pages (run 41120928747).
+          python3 build_pages_i18n.py --cached-live en-US zh-Hant
           python3 aeo_guide.py --missing
           python3 ensure_live_guides.py
           python3 gen_webstories.py

@@ -1867,15 +1867,14 @@ class DevToGateTests(unittest.TestCase):
         {"title": "Second", "body": "two"},
     )
 
-    @staticmethod
-    def ios_only_app_id():
-        """A catalog app that is NOT live on Google Play in the current Android snapshot (an app goes to Play
-        later, e.g. UsageNow on 2026-10-30, so a hard-coded id goes stale and turns into a Play-live one)."""
-        android = common.android_apps()
-        ios_only = sorted(app.app_id for app in portfolio_daily.load_public_apps() if app.app_id not in android)
-        if not ios_only:
-            raise AssertionError("every catalog app is live on Google Play: no iOS-only app left for this fixture")
-        return ios_only[0]
+    # A fixed Android snapshot, so the fixture does not age with the live one (UsageNow went to Google Play on
+    # 2026-10-30) and an empty/broken scan cannot pick a Play app: IOS_ONLY is on the App Store only, ON_PLAY on both.
+    IOS_ONLY, ON_PLAY = "6818607603", "6785004775"
+    ANDROID = {ON_PLAY: {"ios_app_id": ON_PLAY, "key": "mochi",
+                         "play_url": "https://play.google.com/store/apps/details?id=com.example.mochi"}}
+
+    def fixed_android(self):
+        return mock.patch.object(common, "android_apps", return_value=dict(self.ANDROID))
 
     def test_social_workflows_buffer_test_output(self):
         for name in (
@@ -1942,7 +1941,7 @@ class DevToGateTests(unittest.TestCase):
         self.assertTrue(devto_post.publication_due(self.POOL, published, now))
 
     def test_dead_article_url_is_skipped_until_it_becomes_live(self):
-        store = f"App Store: https://apps.apple.com/app/id{self.ios_only_app_id()}?ct=dv"   # an iOS-only app: no Google Play link due
+        store = f"App Store: https://apps.apple.com/app/id{self.IOS_ONLY}?ct=dv"   # an iOS-only app: no Google Play link due
         pool = (
             {
                 "title": "Unavailable",
@@ -1955,14 +1954,19 @@ class DevToGateTests(unittest.TestCase):
         )
         with mock.patch.object(
             devto_post, "validate_url", side_effect=lambda url: "missing" not in url
-        ):
+        ), self.fixed_android():
             selected = devto_post.next_publishable(pool, ())
         self.assertEqual("Ready", selected["title"])
 
     def test_an_article_goes_out_only_with_the_download_links_of_the_apps_it_names(self):
-        ios_only = f"https://apps.apple.com/app/id{self.ios_only_app_id()}?ct=dv"
-        mochi = "https://apps.apple.com/app/id6785004775?ct=dv"      # live on Google Play
-        play = common.play_store_url("6785004775", "dv")
+        with self.fixed_android():
+            self._check_article_links()
+
+    def _check_article_links(self):
+        ios_only = f"https://apps.apple.com/app/id{self.IOS_ONLY}?ct=dv"
+        mochi = f"https://apps.apple.com/app/id{self.ON_PLAY}?ct=dv"      # live on Google Play (fixed snapshot)
+        play = common.play_store_url(self.ON_PLAY, "dv")
+        self.assertTrue(play)
         problems = devto_post.article_link_problems
         self.assertEqual(["no App Store download link in the article"], problems({"body": "Read https://example.com"}))
         self.assertEqual([], problems({"body": f"x {ios_only}"}))

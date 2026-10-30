@@ -536,6 +536,7 @@ CURATED_FALLBACK = {
             "cover screen close-up and inner screen full scene from one artwork",
             "turn my own photo into a cover and inner wallpaper pair",
             "foldable wallpaper app with no ads and a one-time purchase",
+            "matching wallpaper set for a foldable phone cover screen and main screen",
         ],
         # Competitor titles read off the live US App Store search results for
         # "foldable wallpaper" and "dual screen wallpaper" on 2026-10-23; rank 0

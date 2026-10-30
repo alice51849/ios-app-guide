@@ -301,6 +301,25 @@ class PipelineAccelerationTests(unittest.TestCase):
             workflow,
         )
 
+    def test_finder_summary_pages_refresh_before_first_finder(self):
+        # The incremental page build only adds missing Apps, but the first
+        # Finder run reads en-US/zh-Hant meta descriptions and the sealed
+        # high-intent copy digest is checked right after it.
+        workflow = guide_workflow()
+        incremental = workflow.index(
+            "build_pages_i18n.py --cached-live --missing-apps"
+        )
+        refresh = workflow.index(
+            "build_pages_i18n.py --cached-live en-US zh-Hant"
+        )
+        first_finder = workflow.index("python3 portfolio_app_finder.py")
+        first_high_intent = workflow.index(
+            "python3 high_intent_decision_routes.py"
+        )
+        self.assertLess(incremental, refresh)
+        self.assertLess(refresh, first_finder)
+        self.assertLess(first_finder, first_high_intent)
+
 
 if __name__ == "__main__":
     unittest.main()

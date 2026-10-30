@@ -3,6 +3,7 @@
 import os
 import sys
 import unittest
+from unittest import mock
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -12,9 +13,24 @@ import devto_link_fix as D  # noqa: E402
 import link_backfill as B  # noqa: E402
 import own_posts as OP  # noqa: E402
 import download_links as DL  # noqa: E402
+import social_post_common as SPC  # noqa: E402
 
 MOCHI = "6785004775"   # on Google Play in the Android snapshot
-PLAIN = "6818607603"   # iOS only
+PLAIN = "6818607603"   # iOS only (in the fixed snapshot below)
+
+# A fixed Android snapshot, so the fixtures do not age with the live one (UsageNow went to Google Play on
+# 2026-10-30, which turned the "iOS only" app into a Play app): MOCHI is on Google Play, PLAIN is not.
+ANDROID = {MOCHI: {"ios_app_id": MOCHI, "key": "mochi", "package": "com.alice51849.MochiTodo",
+                   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo"}}
+_android_patch = mock.patch.object(SPC, "android_apps", side_effect=lambda: dict(ANDROID))
+
+
+def setUpModule():
+    _android_patch.start()
+
+
+def tearDownModule():
+    _android_patch.stop()
 
 
 class FakeDevto:

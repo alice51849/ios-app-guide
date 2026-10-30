@@ -578,12 +578,43 @@ def _lead_sentences(text: str, limit: int = SUMMARY_MAX_CHARS) -> str:
     return lead
 
 
+DEVICE_NOTE_PARAGRAPHS_PATH = HERE / "data" / "device_note_paragraphs.json"
+_DEVICE_NOTE_CACHE: frozenset[str] | None = None
+
+
+def device_note_paragraphs() -> frozenset[str]:
+    """Exact device-compatibility lead paragraphs shared by store descriptions.
+
+    Only a paragraph that equals one of these whole (whitespace-normalised)
+    is skipped; any other paragraph, including copy legitimately shared by a
+    Lite/Pro pair, still supplies the summary.
+    """
+    global _DEVICE_NOTE_CACHE
+    if _DEVICE_NOTE_CACHE is None:
+        payload = json.loads(
+            DEVICE_NOTE_PARAGRAPHS_PATH.read_text(encoding="utf-8")
+        )
+        paragraphs = payload.get("paragraphs")
+        if (
+            payload.get("schema") != "device-note-paragraphs/v1"
+            or not isinstance(paragraphs, dict)
+            or not paragraphs
+        ):
+            raise ValueError("Device note paragraph list is invalid")
+        _DEVICE_NOTE_CACHE = frozenset(
+            _single_line(value) for value in paragraphs.values()
+            if _single_line(value)
+        )
+    return _DEVICE_NOTE_CACHE
+
+
 def store_copy_summary(key: str, locale: str, page_summary: str = "") -> str:
     """Summary taken from the App Store description, not internal copy.
 
     Registry ``sub``/``tag`` are video and campaign lines. They are reused
     only when ``sub`` is verbatim in the stored App Store description;
-    otherwise the description's leading complete sentences are used.
+    otherwise the description's leading complete sentences are used, skipping
+    a paragraph that is exactly a listed device-compatibility note.
     """
     import build_pages_i18n
 
@@ -597,7 +628,10 @@ def store_copy_summary(key: str, locale: str, page_summary: str = "") -> str:
     sub = _single_line(APPS[key].get("sub"))
     if sub and sub in _single_line(description):
         return sub
+    device_notes = device_note_paragraphs()
     for paragraph in re.split(r"\n\s*\n", description):
+        if _single_line(paragraph) in device_notes:
+            continue
         lead = _lead_sentences(paragraph)
         if len(lead) >= 20:
             return lead

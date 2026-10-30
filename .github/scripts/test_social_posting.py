@@ -1867,6 +1867,16 @@ class DevToGateTests(unittest.TestCase):
         {"title": "Second", "body": "two"},
     )
 
+    @staticmethod
+    def ios_only_app_id():
+        """A catalog app that is NOT live on Google Play in the current Android snapshot (an app goes to Play
+        later, e.g. UsageNow on 2026-10-30, so a hard-coded id goes stale and turns into a Play-live one)."""
+        android = common.android_apps()
+        ios_only = sorted(app.app_id for app in portfolio_daily.load_public_apps() if app.app_id not in android)
+        if not ios_only:
+            raise AssertionError("every catalog app is live on Google Play: no iOS-only app left for this fixture")
+        return ios_only[0]
+
     def test_social_workflows_buffer_test_output(self):
         for name in (
             "portfolio-daily.yml",
@@ -1932,7 +1942,7 @@ class DevToGateTests(unittest.TestCase):
         self.assertTrue(devto_post.publication_due(self.POOL, published, now))
 
     def test_dead_article_url_is_skipped_until_it_becomes_live(self):
-        store = "App Store: https://apps.apple.com/app/id6818607603?ct=dv"   # an iOS-only app: no Google Play link due
+        store = f"App Store: https://apps.apple.com/app/id{self.ios_only_app_id()}?ct=dv"   # an iOS-only app: no Google Play link due
         pool = (
             {
                 "title": "Unavailable",
@@ -1950,7 +1960,7 @@ class DevToGateTests(unittest.TestCase):
         self.assertEqual("Ready", selected["title"])
 
     def test_an_article_goes_out_only_with_the_download_links_of_the_apps_it_names(self):
-        ios_only = "https://apps.apple.com/app/id6818607603?ct=dv"
+        ios_only = f"https://apps.apple.com/app/id{self.ios_only_app_id()}?ct=dv"
         mochi = "https://apps.apple.com/app/id6785004775?ct=dv"      # live on Google Play
         play = common.play_store_url("6785004775", "dv")
         problems = devto_post.article_link_problems

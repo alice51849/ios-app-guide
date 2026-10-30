@@ -208,7 +208,7 @@ def publish(url):
         run(["git", "add", "-A"], cwd=PAGES)
         run(["git", "commit", "-m",
              "Subscription-swap hub: pay-once escape list with 5-year cost math\n\n"
-             "Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>"], cwd=PAGES)
+             "Session-Source: growth-auto"], cwd=PAGES)
         run(["git", "pull", "--rebase", "--autostash"], cwd=PAGES)
         run(["git", "push"], cwd=PAGES)
         print("pushed")

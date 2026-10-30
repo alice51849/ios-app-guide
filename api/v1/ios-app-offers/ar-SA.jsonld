@@ -6,7 +6,7 @@
   "name": "كتالوج نوايا البحث للناشر Lumi Studio",
   "description": "كتالوج ينشره المطور مباشرةً ويوضح الفئة التي صُمم لها كل تطبيق، والمهمة التي تريد إنجازها، والمسار المباشر إلى App Store.",
   "inLanguage": "ar-SA",
-  "dateModified": "2026-10-23",
+  "dateModified": "2026-10-30",
   "numberOfItems": 56,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -19,7 +19,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ar-SA.jsonld#offer-notesstudio100",
         "url": "https://apps.apple.com/sa/app/id6798813048?pt=118326163&ct=geo_pick&mt=8",
         "name": "100 Notes Studio: Pen & Paper",
-        "description": "اجمع الكتابة اليدوية والنصوص وملفات PDF والمراجعة في مساحة هادئة تعمل دون اتصال. صُمّم 100 Notes Studio للأجهزة اللوحية، مع تجربة كاملة للهاتف، كي تنظم",
+        "description": "اكتب ملاحظاتك بخط يدك وكأنك تكتب بالقلم على الورق: 29 قلمًا وفرشاة، من قلم الحبر والرصاص إلى فرشاة الخط والألوان المائية، ويمكنك البحث في خط يدك لاحقًا.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -49,7 +49,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6798813048",
           "inLanguage": "ar-SA",
-          "description": "اجمع الكتابة اليدوية والنصوص وملفات PDF والمراجعة في مساحة هادئة تعمل دون اتصال. صُمّم 100 Notes Studio للأجهزة اللوحية، مع تجربة كاملة للهاتف، كي تنظم",
+          "description": "اكتب ملاحظاتك بخط يدك وكأنك تكتب بالقلم على الورق: 29 قلمًا وفرشاة، من قلم الحبر والرصاص إلى فرشاة الخط والألوان المائية، ويمكنك البحث في خط يدك لاحقًا.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ar-SA.jsonld#offer-notesstudio100"
           },
@@ -217,7 +217,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ar-SA.jsonld#offer-battai",
         "url": "https://apps.apple.com/sa/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
         "name": "BattAI: نتيجة صحة البطارية",
-        "description": "BattAI يستخدم ⁦BattAI⁩ خمس قيم من واجهات ⁦iOS API⁩ العامة: مستوى البطارية وحالة الشحن ونمط الطاقة المنخفضة والحالة الحرارية للجهاز بالكامل والوقت. تُحسب النتائج الأخرى من هذه القراءات أو تضيفها أنت. تعرض كل معلومة مصدرها وحدودها.",
+        "description": "قيّم صحة بطاريتك بنتيجة واضحة وتابع اتجاهها.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -247,7 +247,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802423998",
           "inLanguage": "ar-SA",
-          "description": "BattAI يستخدم ⁦BattAI⁩ خمس قيم من واجهات ⁦iOS API⁩ العامة: مستوى البطارية وحالة الشحن ونمط الطاقة المنخفضة والحالة الحرارية للجهاز بالكامل والوقت. تُحسب النتائج الأخرى من هذه القراءات أو تضيفها أنت. تعرض كل معلومة مصدرها وحدودها.",
+          "description": "قيّم صحة بطاريتك بنتيجة واضحة وتابع اتجاهها.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ar-SA.jsonld#offer-battai"
           },
@@ -283,7 +283,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ar-SA.jsonld#offer-caldaily",
         "url": "https://apps.apple.com/sa/app/id6794178671?pt=118326163&ct=geo_pick&mt=8",
         "name": "CalDaily حاسبة وسمات",
-        "description": "آلة حاسبة ستستمر في استخدامها فعلًا، لأنها تتذكر ما وراء كل رقم.",
+        "description": "آلة حاسبة أنيقة تتذكّر: 100 سمة مدمجة، وأداة على الشاشة الرئيسية تحسب دون فتح التطبيق.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -313,7 +313,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6794178671",
           "inLanguage": "ar-SA",
-          "description": "آلة حاسبة ستستمر في استخدامها فعلًا، لأنها تتذكر ما وراء كل رقم.",
+          "description": "آلة حاسبة أنيقة تتذكّر: 100 سمة مدمجة، وأداة على الشاشة الرئيسية تحسب دون فتح التطبيق.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ar-SA.jsonld#offer-caldaily"
           },
@@ -613,7 +613,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ar-SA.jsonld#offer-dailymatelite",
         "url": "https://apps.apple.com/sa/app/id6794725568?pt=118326163&ct=geo_pick&mt=8",
         "name": "DailyMate Lite: تكلّم الآن",
-        "description": "تكلّم بثقة عندما يحين الموقف. يحوّل DailyMate Lite مواقف الحياة اليومية إلى تدريب قصير يجمع عبارة تبدأ الحوار بردّ طبيعي، عبر ٥٠ لغة. ابدأ مجانًا بموضوع",
+        "description": "تعلّم أي لغة من ٥٠ لغة، لا لغة واحدة فقط: الإنجليزية والإسبانية والفرنسية واليابانية والكورية وغيرها الكثير. بدّل اللغة متى شئت، ولكل لغة تقدّمها وعباراتها",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -643,7 +643,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6794725568",
           "inLanguage": "ar-SA",
-          "description": "تكلّم بثقة عندما يحين الموقف. يحوّل DailyMate Lite مواقف الحياة اليومية إلى تدريب قصير يجمع عبارة تبدأ الحوار بردّ طبيعي، عبر ٥٠ لغة. ابدأ مجانًا بموضوع",
+          "description": "تعلّم أي لغة من ٥٠ لغة، لا لغة واحدة فقط: الإنجليزية والإسبانية والفرنسية واليابانية والكورية وغيرها الكثير. بدّل اللغة متى شئت، ولكل لغة تقدّمها وعباراتها",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ar-SA.jsonld#offer-dailymatelite"
           },
@@ -679,7 +679,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ar-SA.jsonld#offer-dbhalo",
         "url": "https://apps.apple.com/sa/app/id6806826699?pt=118326163&ct=geo_pick&mt=8",
         "name": "dB Halo: مقياس الديسيبل",
-        "description": "اعرف مستوى الصوت وتكوينه الترددي والمدة الآمنة المقدّرة المتبقية من نظرة واحدة، من دون إرسال البيانات إلى أي جهة. يعمل تطبيق dB Halo بالكامل على الجهاز",
+        "description": "اعرف كم ديسيبل حولك الآن: قراءة كبيرة مباشرة مع الحد الأدنى والمتوسط والحد الأقصى والذروة، وسجل للأحداث الصاخبة مع الوقت. قِس ضجيج الجيران والورش والطرق",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -709,7 +709,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806826699",
           "inLanguage": "ar-SA",
-          "description": "اعرف مستوى الصوت وتكوينه الترددي والمدة الآمنة المقدّرة المتبقية من نظرة واحدة، من دون إرسال البيانات إلى أي جهة. يعمل تطبيق dB Halo بالكامل على الجهاز",
+          "description": "اعرف كم ديسيبل حولك الآن: قراءة كبيرة مباشرة مع الحد الأدنى والمتوسط والحد الأقصى والذروة، وسجل للأحداث الصاخبة مع الوقت. قِس ضجيج الجيران والورش والطرق",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ar-SA.jsonld#offer-dbhalo"
           },
@@ -2395,7 +2395,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ar-SA.jsonld#offer-qrcodehalo",
         "url": "https://apps.apple.com/sa/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
         "name": "QR Code Halo: مسح وإنشاء",
-        "description": "ينفّذ QR Code Halo الإجراء لحظة قراءة الرمز. امسح بالكاميرا أو اختر صورة: تُفتح الروابط في المتصفح، وتنتقل رموز تسجيل الدخول بمفتاح المرور وروابط التطبيقات",
+        "description": "امسح رموز QR والباركود بـ20 تنسيقًا من الكاميرا أو من صورة، ويتم التنفيذ فورًا: تُفتح الروابط، وتُظهر رموز Wi-Fi نافذة الانضمام إلى الشبكة.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2425,7 +2425,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806779853",
           "inLanguage": "ar-SA",
-          "description": "ينفّذ QR Code Halo الإجراء لحظة قراءة الرمز. امسح بالكاميرا أو اختر صورة: تُفتح الروابط في المتصفح، وتنتقل رموز تسجيل الدخول بمفتاح المرور وروابط التطبيقات",
+          "description": "امسح رموز QR والباركود بـ20 تنسيقًا من الكاميرا أو من صورة، ويتم التنفيذ فورًا: تُفتح الروابط، وتُظهر رموز Wi-Fi نافذة الانضمام إلى الشبكة.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ar-SA.jsonld#offer-qrcodehalo"
           },
@@ -2659,7 +2659,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ar-SA.jsonld#offer-shotinbox",
         "url": "https://apps.apple.com/sa/app/id6802166527?pt=118326163&ct=geo_pick&mt=8",
         "name": "ShotInbox AI: Sort Screenshots",
-        "description": "لقطات شاشتك مرتّبة اعثر على كل لقطة شاشة وتعامل معها ونظّفها.",
+        "description": "لقطات شاشتك تُرتَّب تلقائيًا: التسوّق، الإيصالات، التذاكر، السفر، الخرائط والأماكن، الدردشات والتواصل، العمل وغيرها.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2689,7 +2689,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802166527",
           "inLanguage": "ar-SA",
-          "description": "لقطات شاشتك مرتّبة اعثر على كل لقطة شاشة وتعامل معها ونظّفها.",
+          "description": "لقطات شاشتك تُرتَّب تلقائيًا: التسوّق، الإيصالات، التذاكر، السفر، الخرائط والأماكن، الدردشات والتواصل، العمل وغيرها.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ar-SA.jsonld#offer-shotinbox"
           },
@@ -2923,7 +2923,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ar-SA.jsonld#offer-stayclock",
         "url": "https://apps.apple.com/sa/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
         "name": "Stay Clock: ساعة مكتب رقمية",
-        "description": "يحوّل Stay Clock آيفون أو آيباد إلى ساعة مكتب مضيئة بلا توقف، تُقرأ بوضوح من طرف الغرفة. وقت كبير، وتقويم يناسب كل وجه، ومظهر واحد يرافقك إلى وضع الاستعداد",
+        "description": "يحوّل Stay Clock آيفون أو آيباد إلى ساعة مكتب مضيئة بلا توقف، تُقرأ بوضوح من طرف الغرفة. اختر من بين ١٠١ وجه، منها ساعات الأرقام القلّابة (١٠٠ منها مع شراء",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2953,7 +2953,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6814035888",
           "inLanguage": "ar-SA",
-          "description": "يحوّل Stay Clock آيفون أو آيباد إلى ساعة مكتب مضيئة بلا توقف، تُقرأ بوضوح من طرف الغرفة. وقت كبير، وتقويم يناسب كل وجه، ومظهر واحد يرافقك إلى وضع الاستعداد",
+          "description": "يحوّل Stay Clock آيفون أو آيباد إلى ساعة مكتب مضيئة بلا توقف، تُقرأ بوضوح من طرف الغرفة. اختر من بين ١٠١ وجه، منها ساعات الأرقام القلّابة (١٠٠ منها مع شراء",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ar-SA.jsonld#offer-stayclock"
           },
@@ -2989,7 +2989,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ar-SA.jsonld#offer-studydown",
         "url": "https://apps.apple.com/sa/app/id6807335593?pt=118326163&ct=geo_pick&mt=8",
         "name": "Studydown: مؤقت التركيز",
-        "description": "امنح ما يهمك وقتًا تراه. يساعدك Studydown على تسجيل الوقت الذي تخصصه لمشروع أو قراءة أو تعلم لغة أو ممارسة هواية، بمجرد وضع الهاتف ووجهه إلى الأسفل.",
+        "description": "اقلب هاتفك ووجهه إلى الأسفل ليبدأ المؤقت، وارفعه ليتوقف، فلا يُحسب إلا وقت التركيز الحقيقي في ساعات مذاكرتك وعملك.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3019,7 +3019,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6807335593",
           "inLanguage": "ar-SA",
-          "description": "امنح ما يهمك وقتًا تراه. يساعدك Studydown على تسجيل الوقت الذي تخصصه لمشروع أو قراءة أو تعلم لغة أو ممارسة هواية، بمجرد وضع الهاتف ووجهه إلى الأسفل.",
+          "description": "اقلب هاتفك ووجهه إلى الأسفل ليبدأ المؤقت، وارفعه ليتوقف، فلا يُحسب إلا وقت التركيز الحقيقي في ساعات مذاكرتك وعملك.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ar-SA.jsonld#offer-studydown"
           },
@@ -3451,7 +3451,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ar-SA.jsonld#offer-wifiaidlite",
         "url": "https://apps.apple.com/sa/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
         "name": "WiFi Aid Lite",
-        "description": "اكتشف المشكلة الحقيقية. يمكنك إجراء فحص كامل واحد إجمالًا، بأي أداة، دون شراء. شراء اختياري لمرة واحدة داخل التطبيق يفتح الفحوصات غير المحدودة ومقارنة ما",
+        "description": "الإنترنت مقطوع أو بطيء جدًا؟ بلمسة واحدة يفحص التطبيق شبكة Wi-Fi وDNS والإنترنت بالترتيب، ثم يوضح الخطوة التي يتعطل عندها الاتصال والسبب الأرجح وما يمكنك",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3481,7 +3481,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6793414462",
           "inLanguage": "ar-SA",
-          "description": "اكتشف المشكلة الحقيقية. يمكنك إجراء فحص كامل واحد إجمالًا، بأي أداة، دون شراء. شراء اختياري لمرة واحدة داخل التطبيق يفتح الفحوصات غير المحدودة ومقارنة ما",
+          "description": "الإنترنت مقطوع أو بطيء جدًا؟ بلمسة واحدة يفحص التطبيق شبكة Wi-Fi وDNS والإنترنت بالترتيب، ثم يوضح الخطوة التي يتعطل عندها الاتصال والسبب الأرجح وما يمكنك",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ar-SA.jsonld#offer-wifiaidlite"
           },
@@ -3517,7 +3517,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ar-SA.jsonld#offer-wordmatelite",
         "url": "https://apps.apple.com/sa/app/id6797601720?pt=118326163&ct=geo_pick&mt=8",
         "name": "Wordmate Lite: تعلّم المفردات",
-        "description": "معظم خطط تعلّم اللغات تنهار لأنها كبيرة أكثر من اللازم. يبدأ Wordmate Lite من الطرف الآخر: دقيقة واحدة، وخمس كلمات، وخطوة واحدة تراها أمامك على المسار.",
+        "description": "تعلّم 5 كلمات في دقيقة تقريبًا: الإنجليزية أو اليابانية أو الكورية أو أي لغة من 44 لغة، بدءًا من مواقف حقيقية مثل السفر والمطاعم والتسوّق.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3547,7 +3547,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6797601720",
           "inLanguage": "ar-SA",
-          "description": "معظم خطط تعلّم اللغات تنهار لأنها كبيرة أكثر من اللازم. يبدأ Wordmate Lite من الطرف الآخر: دقيقة واحدة، وخمس كلمات، وخطوة واحدة تراها أمامك على المسار.",
+          "description": "تعلّم 5 كلمات في دقيقة تقريبًا: الإنجليزية أو اليابانية أو الكورية أو أي لغة من 44 لغة، بدءًا من مواقف حقيقية مثل السفر والمطاعم والتسوّق.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ar-SA.jsonld#offer-wordmatelite"
           },
@@ -3649,7 +3649,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ar-SA.jsonld#offer-zipbox",
         "url": "https://apps.apple.com/sa/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
         "name": "Zipbox: فك ضغط RAR وZIP و7z",
-        "description": "Zipbox تطبيق مدفوع من App Store. شراء التطبيق يشمل كل الميزات، بلا مشتريات داخل التطبيق أو اشتراكات أو إعلانات. تُعالج 13 صيغة محليًا على جهازك.",
+        "description": "افتح ملفات RAR و7z وZIP و10 تنسيقات ضغط أخرى مباشرة على هاتفك. انظر داخل الأرشيف قبل الاستخراج: عاين الصور والفيديو وPDF والنصوص والشيفرات، ثم استخرج الملف",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3679,7 +3679,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806776579",
           "inLanguage": "ar-SA",
-          "description": "Zipbox تطبيق مدفوع من App Store. شراء التطبيق يشمل كل الميزات، بلا مشتريات داخل التطبيق أو اشتراكات أو إعلانات. تُعالج 13 صيغة محليًا على جهازك.",
+          "description": "افتح ملفات RAR و7z وZIP و10 تنسيقات ضغط أخرى مباشرة على هاتفك. انظر داخل الأرشيف قبل الاستخراج: عاين الصور والفيديو وPDF والنصوص والشيفرات، ثم استخرج الملف",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ar-SA.jsonld#offer-zipbox"
           },

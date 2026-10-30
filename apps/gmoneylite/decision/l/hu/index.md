@@ -2,7 +2,7 @@
 title: "G+Money Lite: Utazási kiadások — Napi keret órán és widgeten | iOS App"
 lang: "hu"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gmoneylite/decision/l/hu/index.html"
-modified: "2026-10-29"
+modified: "2026-10-30"
 app_store_id: "6793436548"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # G+Money Lite: Utazási kiadások — Napi keret órán és widgeten | iOS App
 
-G+Money Lite — Okos utazási pénznem- és költségkövető Utazási pénz, egyszerűen Rögzítsd minden vásárlást a helyi pénznemben, és azonnal lásd az otthoni pénznemben — online vagy offline. Átváltás • Élő vagy kézi árfolyamok: Automatikusan lekérhetjük a legfrissebb árfolyamokat, vagy te is beállíthatod őket. Mindig offline működik. • A legfrissebb árfolyamokat automatikusan lekérjük, amikor megnyitod az alkalmazást (kb. 6 óránként). Mindig offline működik a mentett árfolyamaiddal. • Középpiaci referenciaárfolyam. Kártyás és készpénzes tranzakciók eltérhetnek. Költés • Napi keret: Opcionális. Nézd meg, hogyan alakul a költségvetésed minden nap. • Kategória szerint · Utazások · Szűrők · Feljegyzések • Biztonsági mentés és visszaállítás: Tartalmazza a költségeket, árfolyamokat, kategóriákat és beállításokat. • Widget · Apple Watch Minden az eszközödön marad. Nincs fiók, nincs nyomkövetés. Az árfolyamok egy nyilvános árfolyam-szolgáltatást használnak. Vásárlás nélkül: árfolyamok, keret, összegzés · 1 út · 3 kiadás Egyszeri fizetés · Élethosszig · Nincs előfizetés Oldd fel a korlátlan kiadásokat és utakat. iPhone Duo-ra optimalizálva.
+Optimalizálva az iPhone Duo készülékhez. A legújabb SDK-val készült alkalmazás kitölti a teljes belső kijelzőt, és automatikusan igazítja az elrendezést, akár össze van hajtva a készülék, akár ki van nyitva. Tudd, mennyit költhetsz még ma, bárhová utazol. Rögzíts minden vásárlást a helyi pénznemben: azonnal látod a saját pénznemedben, a mai keretből levonva. Ha túlléped a napi keretet, az összeg pirosra vált. Nincs net? Rögzíts tovább a legutóbb mentett árfolyamokkal. A mai költést a Főképernyő widgetjén vagy az Apple Watchon is látod. Átváltás • Az app megnyitásakor automatikusan frissülnek az árfolyamok (nagyjából 6 óránként), de megadhatod a sajátodat is. Offline a mentett árfolyamok érvényesek. • Középpiaci referenciaárfolyam. Kártyás és készpénzes tranzakciók eltérhetnek. Költés • Napi keret (opcionális): minden nap költése a keret mellett. • Kategóriánként látod, mire megy el a pénz, minden utat külön vezetsz, és szűrheted a tételeket. • Biztonsági mentés és visszaállítás: Tartalmazza a költségeket, árfolyamokat, kategóriákat és beállításokat. • Widget · Apple Watch Minden az eszközödön marad. Nincs fiók, nincs nyomkövetés. Az árfolyamok egy nyilvános árfolyam-szolgáltatást használnak. Vásárlás nélkül: árfolyamok, keret és összegzés, 1 út és 3 kiadás. Egy opcionális, egyszeri alkalmazáson belüli vásárlás korlátlan kiadást és utat old fel. iPhone Duo-ra optimalizálva.
 
 - Pénzügy & utazás
 - Ingyenes kezdés

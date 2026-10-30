@@ -6,7 +6,7 @@
   "name": "Lumi Studio Yayıncı Arama Niyeti Kataloğu",
   "description": "Her uygulamanın kimler için tasarlandığını, tamamlamaya çalıştıkları görevi ve doğrudan App Store yolunu gösteren bir birinci taraf katalog.",
   "inLanguage": "tr",
-  "dateModified": "2026-10-23",
+  "dateModified": "2026-10-30",
   "numberOfItems": 56,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -19,7 +19,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/tr.jsonld#offer-notesstudio100",
         "url": "https://apps.apple.com/tr/app/id6798813048?pt=118326163&ct=geo_pick&mt=8",
         "name": "100 Notes Studio: Pen & Paper",
-        "description": "100 Notes Studio; el yazısı, klavye, PDF işaretleme, sayfaya bağlı ses ve çalışma araçlarını çevrimdışı bir düzende bir araya getirir. Yazın, metin ekleyin",
+        "description": "Kâğıda kalemle yazar gibi elle not alın: dolma kalem ve kurşun kalemden kaligrafi fırçası ve suluboyaya kadar 29 kalem ve fırça; el yazınızda da sonradan",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -49,7 +49,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6798813048",
           "inLanguage": "tr",
-          "description": "100 Notes Studio; el yazısı, klavye, PDF işaretleme, sayfaya bağlı ses ve çalışma araçlarını çevrimdışı bir düzende bir araya getirir. Yazın, metin ekleyin",
+          "description": "Kâğıda kalemle yazar gibi elle not alın: dolma kalem ve kurşun kalemden kaligrafi fırçası ve suluboyaya kadar 29 kalem ve fırça; el yazınızda da sonradan",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/tr.jsonld#offer-notesstudio100"
           },
@@ -217,7 +217,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/tr.jsonld#offer-battai",
         "url": "https://apps.apple.com/tr/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
         "name": "BattAI: Pil sağlığı puanı",
-        "description": "BattAI BattAI herkese açık iOS API’lerinden beş değer kullanır: pil düzeyi, şarj durumu, Düşük Güç Modu, cihazın genel termal durumu ve zaman. Diğer sonuçlar bu ölçümlerden hesaplanır veya sizin tarafınızdan eklenir. Her ayrıntı kaynağını ve sınırlarını gösterir.",
+        "description": "Pil sağlığını puanlayın, kapasite trendini izleyin.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -247,7 +247,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802423998",
           "inLanguage": "tr",
-          "description": "BattAI BattAI herkese açık iOS API’lerinden beş değer kullanır: pil düzeyi, şarj durumu, Düşük Güç Modu, cihazın genel termal durumu ve zaman. Diğer sonuçlar bu ölçümlerden hesaplanır veya sizin tarafınızdan eklenir. Her ayrıntı kaynağını ve sınırlarını gösterir.",
+          "description": "Pil sağlığını puanlayın, kapasite trendini izleyin.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/tr.jsonld#offer-battai"
           },
@@ -283,7 +283,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/tr.jsonld#offer-caldaily",
         "url": "https://apps.apple.com/tr/app/id6794178671?pt=118326163&ct=geo_pick&mt=8",
         "name": "CalDaily: hesap makinesi",
-        "description": "Gerçekten kullanmaya devam edeceğiniz bir hesap makinesi, çünkü her sayının arkasındaki düşünceyi de hatırlıyor.",
+        "description": "Hatırlayan şık bir hesap makinesi: 100 yerleşik tema ve uygulamayı açmadan hesap yapan bir Ana Ekran widget'ı.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -313,7 +313,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6794178671",
           "inLanguage": "tr",
-          "description": "Gerçekten kullanmaya devam edeceğiniz bir hesap makinesi, çünkü her sayının arkasındaki düşünceyi de hatırlıyor.",
+          "description": "Hatırlayan şık bir hesap makinesi: 100 yerleşik tema ve uygulamayı açmadan hesap yapan bir Ana Ekran widget'ı.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/tr.jsonld#offer-caldaily"
           },
@@ -613,7 +613,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/tr.jsonld#offer-dailymatelite",
         "url": "https://apps.apple.com/tr/app/id6794725568?pt=118326163&ct=geo_pick&mt=8",
         "name": "DailyMate Lite: Bugün Konuşun",
-        "description": "İhtiyacınız olduğunda doğal biçimde konuşun. DailyMate Lite, günlük durumları 50 dilde kısa ifade ve yanıt alıştırmalarına dönüştürür. Seyahat konusunun",
+        "description": "Yalnızca birini değil, 50 dilden istediğinizi öğrenin: İngilizce, İspanyolca, Fransızca, Japonca, Korece ve çok daha fazlası. İstediğiniz zaman değiştirin",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -643,7 +643,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6794725568",
           "inLanguage": "tr",
-          "description": "İhtiyacınız olduğunda doğal biçimde konuşun. DailyMate Lite, günlük durumları 50 dilde kısa ifade ve yanıt alıştırmalarına dönüştürür. Seyahat konusunun",
+          "description": "Yalnızca birini değil, 50 dilden istediğinizi öğrenin: İngilizce, İspanyolca, Fransızca, Japonca, Korece ve çok daha fazlası. İstediğiniz zaman değiştirin",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/tr.jsonld#offer-dailymatelite"
           },
@@ -679,7 +679,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/tr.jsonld#offer-dbhalo",
         "url": "https://apps.apple.com/tr/app/id6806826699?pt=118326163&ct=geo_pick&mt=8",
         "name": "dB Halo: Desibel Ölçer",
-        "description": "Çevredeki gürültüyü ve tahmini kalan güvenli süreyi anında görün. dB Halo, iPhone ve iPad için anlaşılır, kapsamlı bir ses seviyesi ölçerdir; Apple",
+        "description": "Şu an kaç desibel olduğunu hemen görün: minimum, ortalama, maksimum ve tepe değerleriyle büyük canlı ölçüm, ayrıca yüksek seslerin zaman damgalı kaydı",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -709,7 +709,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806826699",
           "inLanguage": "tr",
-          "description": "Çevredeki gürültüyü ve tahmini kalan güvenli süreyi anında görün. dB Halo, iPhone ve iPad için anlaşılır, kapsamlı bir ses seviyesi ölçerdir; Apple",
+          "description": "Şu an kaç desibel olduğunu hemen görün: minimum, ortalama, maksimum ve tepe değerleriyle büyük canlı ölçüm, ayrıca yüksek seslerin zaman damgalı kaydı",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/tr.jsonld#offer-dbhalo"
           },
@@ -2395,7 +2395,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/tr.jsonld#offer-qrcodehalo",
         "url": "https://apps.apple.com/tr/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
         "name": "QR Code Halo: Kod Tarayıcı",
-        "description": "QR Code Halo, bir kodu okuduğu anda harekete geçer. Kamerayla tarayın ya da bir fotoğraf seçin: bağlantılar tarayıcınızda açılır, geçiş anahtarıyla giriş",
+        "description": "20 formattaki QR kodlarını ve barkodları kamerayla ya da bir fotoğraftan tarayın, işlem hemen gerçekleşsin: bağlantılar açılır, Wi-Fi kodları ağa katılma",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2425,7 +2425,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806779853",
           "inLanguage": "tr",
-          "description": "QR Code Halo, bir kodu okuduğu anda harekete geçer. Kamerayla tarayın ya da bir fotoğraf seçin: bağlantılar tarayıcınızda açılır, geçiş anahtarıyla giriş",
+          "description": "20 formattaki QR kodlarını ve barkodları kamerayla ya da bir fotoğraftan tarayın, işlem hemen gerçekleşsin: bağlantılar açılır, Wi-Fi kodları ağa katılma",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/tr.jsonld#offer-qrcodehalo"
           },
@@ -2659,7 +2659,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/tr.jsonld#offer-shotinbox",
         "url": "https://apps.apple.com/tr/app/id6802166527?pt=118326163&ct=geo_pick&mt=8",
         "name": "ShotInbox AI: Sort Screenshots",
-        "description": "Ekran görüntüleriniz düzenli",
+        "description": "Ekran görüntüleriniz otomatik olarak sıralanır: Alışveriş, Fişler, Biletler, Seyahat, Haritalar ve yerler, Sohbet ve sosyal, İş ve daha fazlası.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2689,7 +2689,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802166527",
           "inLanguage": "tr",
-          "description": "Ekran görüntüleriniz düzenli",
+          "description": "Ekran görüntüleriniz otomatik olarak sıralanır: Alışveriş, Fişler, Biletler, Seyahat, Haritalar ve yerler, Sohbet ve sosyal, İş ve daha fazlası.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/tr.jsonld#offer-shotinbox"
           },
@@ -2923,7 +2923,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/tr.jsonld#offer-stayclock",
         "url": "https://apps.apple.com/tr/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
         "name": "Stay Clock: Çevirmeli Saat",
-        "description": "Stay Clock, iPhone'unuzu veya iPad'inizi odanın diğer ucundan bile okunabilen, her an açık bir masa saatine dönüştürür. Büyük saat, her kadrana uyan bir",
+        "description": "Stay Clock, iPhone'unuzu veya iPad'inizi odanın diğer ucundan bile okunabilen, her an açık bir masa saatine dönüştürür. Çevirmeli saatler de dahil 101",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2953,7 +2953,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6814035888",
           "inLanguage": "tr",
-          "description": "Stay Clock, iPhone'unuzu veya iPad'inizi odanın diğer ucundan bile okunabilen, her an açık bir masa saatine dönüştürür. Büyük saat, her kadrana uyan bir",
+          "description": "Stay Clock, iPhone'unuzu veya iPad'inizi odanın diğer ucundan bile okunabilen, her an açık bir masa saatine dönüştürür. Çevirmeli saatler de dahil 101",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/tr.jsonld#offer-stayclock"
           },
@@ -2989,7 +2989,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/tr.jsonld#offer-studydown",
         "url": "https://apps.apple.com/tr/app/id6807335593?pt=118326163&ct=geo_pick&mt=8",
         "name": "Studydown: Odak Sayacı",
-        "description": "Önem verdiğiniz şeylere zaman ayırın, emeğinizin biriktiğini görün. Studydown; projelere, okumaya ve hobilere ayırdığınız zamanı, telefonu ekranı aşağı",
+        "description": "Telefonu ekranı aşağı bakacak şekilde bırakın, sayaç başlasın; elinize alın, dursun. Böylece ders ve iş saatlerinize yalnızca gerçek odak süresi eklenir.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3019,7 +3019,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6807335593",
           "inLanguage": "tr",
-          "description": "Önem verdiğiniz şeylere zaman ayırın, emeğinizin biriktiğini görün. Studydown; projelere, okumaya ve hobilere ayırdığınız zamanı, telefonu ekranı aşağı",
+          "description": "Telefonu ekranı aşağı bakacak şekilde bırakın, sayaç başlasın; elinize alın, dursun. Böylece ders ve iş saatlerinize yalnızca gerçek odak süresi eklenir.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/tr.jsonld#offer-studydown"
           },
@@ -3451,7 +3451,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/tr.jsonld#offer-wifiaidlite",
         "url": "https://apps.apple.com/tr/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
         "name": "WiFi Aid Lite",
-        "description": "Gerçek sorunu bulun. Satın almadan, herhangi bir araçla toplamda bir tam kontrol yapılabilir. İsteğe bağlı tek seferlik uygulama içi satın alma, sınırsız",
+        "description": "İnternet yok mu, her şey yavaş mı? Tek dokunuşla Wi-Fi, DNS ve interneti sırayla kontrol eder; sorunun hangi adımda olduğunu, en olası nedeni ve sonra ne",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3481,7 +3481,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6793414462",
           "inLanguage": "tr",
-          "description": "Gerçek sorunu bulun. Satın almadan, herhangi bir araçla toplamda bir tam kontrol yapılabilir. İsteğe bağlı tek seferlik uygulama içi satın alma, sınırsız",
+          "description": "İnternet yok mu, her şey yavaş mı? Tek dokunuşla Wi-Fi, DNS ve interneti sırayla kontrol eder; sorunun hangi adımda olduğunu, en olası nedeni ve sonra ne",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/tr.jsonld#offer-wifiaidlite"
           },
@@ -3517,7 +3517,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/tr.jsonld#offer-wordmatelite",
         "url": "https://apps.apple.com/tr/app/id6797601720?pt=118326163&ct=geo_pick&mt=8",
         "name": "Wordmate Lite: Kelime Ezberle",
-        "description": "Çoğu dil planı, daha ilk günden fazla büyük olduğu için ikinci haftada biter. Wordmate Lite tam tersinden başlar: bir dakika, beş kelime ve patikada",
+        "description": "Yaklaşık bir dakikada 5 kelime öğren: İngilizce, Japonca, Korece ya da 44 dilden herhangi biri; seyahat, dışarıda yemek ve alışveriş gibi gerçek",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3547,7 +3547,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6797601720",
           "inLanguage": "tr",
-          "description": "Çoğu dil planı, daha ilk günden fazla büyük olduğu için ikinci haftada biter. Wordmate Lite tam tersinden başlar: bir dakika, beş kelime ve patikada",
+          "description": "Yaklaşık bir dakikada 5 kelime öğren: İngilizce, Japonca, Korece ya da 44 dilden herhangi biri; seyahat, dışarıda yemek ve alışveriş gibi gerçek",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/tr.jsonld#offer-wordmatelite"
           },
@@ -3649,7 +3649,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/tr.jsonld#offer-zipbox",
         "url": "https://apps.apple.com/tr/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
         "name": "Zipbox: RAR, ZIP, 7z Açma",
-        "description": "Zipbox, App Store'da ücretli bir uygulamadır. Tek satın alımla tüm özellikler gelir; uygulama içi satın alma, abonelik veya reklam yoktur. 13 biçim cihazda",
+        "description": "RAR, 7z, ZIP ve 10 farklı arşiv biçimini daha doğrudan iPhone'da açın. Çıkarmadan önce içine bakın: fotoğraf, video, PDF, metin ve kodu önizleyin, sonra",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3679,7 +3679,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806776579",
           "inLanguage": "tr",
-          "description": "Zipbox, App Store'da ücretli bir uygulamadır. Tek satın alımla tüm özellikler gelir; uygulama içi satın alma, abonelik veya reklam yoktur. 13 biçim cihazda",
+          "description": "RAR, 7z, ZIP ve 10 farklı arşiv biçimini daha doğrudan iPhone'da açın. Çıkarmadan önce içine bakın: fotoğraf, video, PDF, metin ve kodu önizleyin, sonra",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/tr.jsonld#offer-zipbox"
           },

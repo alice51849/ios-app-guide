@@ -6,7 +6,7 @@
   "name": "Catalogue des intentions de recherche de l’éditeur Lumi Studio",
   "description": "Un catalogue publié directement par le développeur qui indique à qui chaque application est destinée, la tâche à accomplir et l’accès direct à l’App Store.",
   "inLanguage": "fr-FR",
-  "dateModified": "2026-10-23",
+  "dateModified": "2026-10-30",
   "numberOfItems": 56,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -19,7 +19,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-notesstudio100",
         "url": "https://apps.apple.com/fr/app/id6798813048?pt=118326163&ct=geo_pick&mt=8",
         "name": "100 Notes Studio: Pen & Paper",
-        "description": "Une seule app au lieu d'en jongler avec cinq. 100 Notes Studio est un atelier papier-crayon privé et entièrement hors ligne pour tablette et téléphone",
+        "description": "Écrivez à la main comme avec un stylo sur du papier : 29 stylos et pinceaux, du stylo-plume et du crayon au pinceau de calligraphie et à l'aquarelle, et",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -49,7 +49,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6798813048",
           "inLanguage": "fr-FR",
-          "description": "Une seule app au lieu d'en jongler avec cinq. 100 Notes Studio est un atelier papier-crayon privé et entièrement hors ligne pour tablette et téléphone",
+          "description": "Écrivez à la main comme avec un stylo sur du papier : 29 stylos et pinceaux, du stylo-plume et du crayon au pinceau de calligraphie et à l'aquarelle, et",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-notesstudio100"
           },
@@ -217,7 +217,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-battai",
         "url": "https://apps.apple.com/fr/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
         "name": "BattAI: Santé de la batterie",
-        "description": "BattAI BattAI utilise cinq valeurs fournies par les API publiques d’iOS : niveau de batterie, état de recharge, mode économie d’énergie, état thermique de l’appareil et heure. Les autres résultats sont calculés à partir de ces relevés ou ajoutés par vous. Chaque détail indique sa source et ses limites.",
+        "description": "Notez la santé de votre batterie et suivez son évolution.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -247,7 +247,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802423998",
           "inLanguage": "fr-FR",
-          "description": "BattAI BattAI utilise cinq valeurs fournies par les API publiques d’iOS : niveau de batterie, état de recharge, mode économie d’énergie, état thermique de l’appareil et heure. Les autres résultats sont calculés à partir de ces relevés ou ajoutés par vous. Chaque détail indique sa source et ses limites.",
+          "description": "Notez la santé de votre batterie et suivez son évolution.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-battai"
           },
@@ -283,7 +283,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-caldaily",
         "url": "https://apps.apple.com/fr/app/id6794178671?pt=118326163&ct=geo_pick&mt=8",
         "name": "CalDaily : calculatrice",
-        "description": "Une calculatrice que vous gardez, parce qu'elle se souvient du contexte de chaque nombre.",
+        "description": "Une jolie calculatrice qui se souvient : 100 thèmes intégrés et un widget sur l'écran d'accueil qui calcule sans ouvrir l'app.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -313,7 +313,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6794178671",
           "inLanguage": "fr-FR",
-          "description": "Une calculatrice que vous gardez, parce qu'elle se souvient du contexte de chaque nombre.",
+          "description": "Une jolie calculatrice qui se souvient : 100 thèmes intégrés et un widget sur l'écran d'accueil qui calcule sans ouvrir l'app.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-caldaily"
           },
@@ -613,7 +613,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-dailymatelite",
         "url": "https://apps.apple.com/fr/app/id6794725568?pt=118326163&ct=geo_pick&mt=8",
         "name": "DailyMate Lite",
-        "description": "Parlez avec assurance quand l’occasion se présente. DailyMate Lite transforme des situations du quotidien en courts échanges à écouter et à pratiquer",
+        "description": "Apprenez n’importe laquelle des 50 langues, pas seulement une : anglais, espagnol, japonais, coréen, italien et bien d’autres. Changez quand vous voulez",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -643,7 +643,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6794725568",
           "inLanguage": "fr-FR",
-          "description": "Parlez avec assurance quand l’occasion se présente. DailyMate Lite transforme des situations du quotidien en courts échanges à écouter et à pratiquer",
+          "description": "Apprenez n’importe laquelle des 50 langues, pas seulement une : anglais, espagnol, japonais, coréen, italien et bien d’autres. Changez quand vous voulez",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-dailymatelite"
           },
@@ -679,7 +679,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-dbhalo",
         "url": "https://apps.apple.com/fr/app/id6806826699?pt=118326163&ct=geo_pick&mt=8",
         "name": "dB Halo : Sonomètre",
-        "description": "Dans un appartement haussmannien, sur un chantier, à un concert ou dans un atelier, dB Halo transforme votre iPhone ou votre iPad en sonomètre complet dont",
+        "description": "Voyez tout de suite combien de décibels il y a autour de vous : grande mesure en direct avec les valeurs minimale, moyenne, maximale et de crête, et un",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -709,7 +709,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806826699",
           "inLanguage": "fr-FR",
-          "description": "Dans un appartement haussmannien, sur un chantier, à un concert ou dans un atelier, dB Halo transforme votre iPhone ou votre iPad en sonomètre complet dont",
+          "description": "Voyez tout de suite combien de décibels il y a autour de vous : grande mesure en direct avec les valeurs minimale, moyenne, maximale et de crête, et un",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-dbhalo"
           },
@@ -810,7 +810,7 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-duowallpaperstudio",
         "url": "https://apps.apple.com/fr/app/id6824946559?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Foldable Wallpaper Studio",
+        "name": "Fond d'écran pliable – paires",
         "description": "Des fonds d'écran en paires pour les deux écrans de l'iPhone Duo : fermé, un gros plan sur l'écran externe ; ouvert, toute la scène sur l'écran interne",
         "seller": {
           "@type": "Organization",
@@ -826,7 +826,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6824946559"
           },
-          "name": "Foldable Wallpaper Studio",
+          "name": "Fond d'écran pliable – paires",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
           "url": "https://apps.apple.com/fr/app/id6824946559?pt=118326163&ct=geo_pick&mt=8",
@@ -2395,7 +2395,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-qrcodehalo",
         "url": "https://apps.apple.com/fr/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
         "name": "QR Code Halo : Scan sécurisé",
-        "description": "QR Code Halo agit dès qu'il lit un code. Scannez avec la caméra ou choisissez une photo : les liens s'ouvrent dans votre navigateur, les codes de connexion",
+        "description": "Scannez les QR codes et les codes-barres en 20 formats, avec la caméra ou depuis une photo, et l'action est immédiate : les liens s'ouvrent et les codes",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2425,7 +2425,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806779853",
           "inLanguage": "fr-FR",
-          "description": "QR Code Halo agit dès qu'il lit un code. Scannez avec la caméra ou choisissez une photo : les liens s'ouvrent dans votre navigateur, les codes de connexion",
+          "description": "Scannez les QR codes et les codes-barres en 20 formats, avec la caméra ou depuis une photo, et l'action est immédiate : les liens s'ouvrent et les codes",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-qrcodehalo"
           },
@@ -2659,7 +2659,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-shotinbox",
         "url": "https://apps.apple.com/fr/app/id6802166527?pt=118326163&ct=geo_pick&mt=8",
         "name": "ShotInbox AI: Sort Screenshots",
-        "description": "Vos captures, enfin rangées",
+        "description": "Vos captures, rangées automatiquement : Achats, Reçus, Billets, Voyages, Plans et lieux, Discussions et réseaux, Travail et plus encore.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2689,7 +2689,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802166527",
           "inLanguage": "fr-FR",
-          "description": "Vos captures, enfin rangées",
+          "description": "Vos captures, rangées automatiquement : Achats, Reçus, Billets, Voyages, Plans et lieux, Discussions et réseaux, Travail et plus encore.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-shotinbox"
           },
@@ -2989,7 +2989,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-studydown",
         "url": "https://apps.apple.com/fr/app/id6807335593?pt=118326163&ct=geo_pick&mt=8",
         "name": "Studydown : Chronomètre",
-        "description": "Un projet, un livre, une passion : voyez le temps que vous leur consacrez. Studydown transforme un geste simple, poser le téléphone écran contre la",
+        "description": "Posez le téléphone écran contre la table et le chrono démarre ; reprenez-le et il se met en pause : seul le vrai temps de concentration compte dans vos",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3019,7 +3019,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6807335593",
           "inLanguage": "fr-FR",
-          "description": "Un projet, un livre, une passion : voyez le temps que vous leur consacrez. Studydown transforme un geste simple, poser le téléphone écran contre la",
+          "description": "Posez le téléphone écran contre la table et le chrono démarre ; reprenez-le et il se met en pause : seul le vrai temps de concentration compte dans vos",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-studydown"
           },
@@ -3451,7 +3451,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-wifiaidlite",
         "url": "https://apps.apple.com/fr/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
         "name": "WiFi Aid Lite",
-        "description": "Une vérification complète au total, avec l'outil de votre choix, est possible sans achat. Un achat intégré unique et facultatif débloque les",
+        "description": "Plus d'internet ou connexion qui rame ? En un geste, l'app vérifie le Wi-Fi, le DNS et internet dans l'ordre, puis indique l'étape qui bloque, la cause",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3481,7 +3481,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6793414462",
           "inLanguage": "fr-FR",
-          "description": "Une vérification complète au total, avec l'outil de votre choix, est possible sans achat. Un achat intégré unique et facultatif débloque les",
+          "description": "Plus d'internet ou connexion qui rame ? En un geste, l'app vérifie le Wi-Fi, le DNS et internet dans l'ordre, puis indique l'étape qui bloque, la cause",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-wifiaidlite"
           },
@@ -3583,7 +3583,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-wordmatelite",
         "url": "https://apps.apple.com/fr/app/id6797601720?pt=118326163&ct=geo_pick&mt=8",
         "name": "Wordmate Lite: vocabulaire",
-        "description": "Cinq mots, une minute, un pas visible sur votre chemin. Wordmate Lite transforme la résolution un peu vague d'apprendre une langue en une habitude assez",
+        "description": "Apprenez 5 mots en une minute environ : anglais, japonais, coréen ou n'importe laquelle des 44 langues, en partant de situations réelles comme le voyage",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3613,7 +3613,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6797601720",
           "inLanguage": "fr-FR",
-          "description": "Cinq mots, une minute, un pas visible sur votre chemin. Wordmate Lite transforme la résolution un peu vague d'apprendre une langue en une habitude assez",
+          "description": "Apprenez 5 mots en une minute environ : anglais, japonais, coréen ou n'importe laquelle des 44 langues, en partant de situations réelles comme le voyage",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-wordmatelite"
           },
@@ -3649,7 +3649,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-zipbox",
         "url": "https://apps.apple.com/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
         "name": "Zipbox : ouvrir RAR, ZIP et 7z",
-        "description": "Zipbox est une app payante de l’App Store. Un achat inclut tout, sans achats intégrés, abonnements ni publicité. Les 13 formats sont traités sur l’appareil",
+        "description": "Ouvrez les fichiers RAR, 7z, ZIP et 10 autres formats d’archive directement sur l’iPhone. Regardez à l’intérieur avant d’extraire : aperçu des photos",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3679,7 +3679,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806776579",
           "inLanguage": "fr-FR",
-          "description": "Zipbox est une app payante de l’App Store. Un achat inclut tout, sans achats intégrés, abonnements ni publicité. Les 13 formats sont traités sur l’appareil",
+          "description": "Ouvrez les fichiers RAR, 7z, ZIP et 10 autres formats d’archive directement sur l’iPhone. Regardez à l’intérieur avant d’extraire : aperçu des photos",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-zipbox"
           },

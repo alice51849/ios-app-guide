@@ -2,7 +2,7 @@
 title: "HoursTag Lite: Pris i timer — Bevidste køb: reel pris | iOS App"
 lang: "da"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstaglite/decision/l/da/index.html"
-modified: "2026-10-29"
+modified: "2026-10-30"
 app_store_id: "6794039979"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # HoursTag Lite: Pris i timer — Bevidste køb: reel pris | iOS App
 
-HoursTag Lite - Den sande pris på ting Hvert køb koster timer af dit liv. HoursTag Lite omregner priser til arbejdstid – så du bruger penge med klarhed. Mød dit værdiprisme - Tidspris: Din nettoværdi pr. arbejdstime - Type: Behov - Ønske - Impuls - Dit værdimønster - Komplet værdianalyse - Hvad koster et mål?: Se arbejdet bag et mål, og følg dine fremskridt. - Sikkerhedskopi: Inkluderer indkomst, forbrug, mål og indstillinger. - Widget - Apple Watch Alt bliver på din enhed. Ingen konto, ingen sporing. Én betaling · Livstidsadgang · Intet abonnement Ubegrænsede valg og ændringer Ubegrænsede mål og fremskridt Deling, indsigt og backup Optimeret til iPhone Duo.
+Optimeret til iPhone Duo. Appen er bygget med den nyeste SDK, fylder hele den indre skærm og tilpasser layoutet automatisk, både foldet sammen og foldet ud. Før du køber, så se, hvor mange arbejdstimer det reelt koster. Indtast din timeløn efter skat, og HoursTag Lite omregner hver pris til arbejdstid. Mærk hvert køb som Behov, Ønske eller Impuls, så impulskøbene bliver tydelige, og se, hvor mange arbejdstimer hver kategori har kostet. Sparer du op til noget? Se, hvor længe du skal arbejde for det, og følg dine fremskridt. Det kan du • Omregn enhver pris til arbejdstimer ud fra din løn efter skat • Mærk køb som Behov, Ønske eller Impuls • Arbejdstimer pr. kategori • Opsparingsmål: timerne bag hvert mål og dine fremskridt • Backup og gendannelse af indkomst, forbrug, mål og indstillinger • Widget på hjemmeskærmen og Apple Watch Alt bliver på din enhed. Ingen konto, ingen sporing. Dine første 3 omregninger kræver intet køb. Et valgfrit engangskøb i appen låser op for ubegrænsede omregninger og registreringer, opsparingsmål med fremskridt, kategoritrends, deling og backup. Optimeret til iPhone Duo.
 
 - Penge & rejse
 - Gratis at komme i gang

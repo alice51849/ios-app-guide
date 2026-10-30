@@ -6,7 +6,7 @@
   "name": "Lumi Studio 개발사 검색 의도 카탈로그",
   "description": "각 앱의 대상 사용자, 완료하려는 작업, App Store로 바로 이동하는 경로를 개발사가 직접 공개한 카탈로그입니다.",
   "inLanguage": "ko",
-  "dateModified": "2026-10-23",
+  "dateModified": "2026-10-30",
   "numberOfItems": 56,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -19,7 +19,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-notesstudio100",
         "url": "https://apps.apple.com/kr/app/id6798813048?pt=118326163&ct=geo_pick&mt=8",
         "name": "100 Notes Studio: Pen & Paper",
-        "description": "100 Notes Studio는 손글씨, 타이핑, PDF 학습과 자료 정리를 한 흐름으로 묶은 개인용 작업 공간입니다. 주요 편집 기능은 네트워크 연결 없이도 사용할 수 있습니다.",
+        "description": "종이에 펜으로 쓰듯 손글씨로 필기하세요. 만년필과 연필부터 붓펜, 수채화까지 29가지 펜과 브러시가 있고, 손글씨도 나중에 검색할 수 있습니다.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -49,7 +49,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6798813048",
           "inLanguage": "ko",
-          "description": "100 Notes Studio는 손글씨, 타이핑, PDF 학습과 자료 정리를 한 흐름으로 묶은 개인용 작업 공간입니다. 주요 편집 기능은 네트워크 연결 없이도 사용할 수 있습니다.",
+          "description": "종이에 펜으로 쓰듯 손글씨로 필기하세요. 만년필과 연필부터 붓펜, 수채화까지 29가지 펜과 브러시가 있고, 손글씨도 나중에 검색할 수 있습니다.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-notesstudio100"
           },
@@ -613,7 +613,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-dailymatelite",
         "url": "https://apps.apple.com/kr/app/id6794725568?pt=118326163&ct=geo_pick&mt=8",
         "name": "DailyMate Lite: 바로 쓰는 한마디",
-        "description": "막상 말하려는 순간, 알맞은 표현이 떠오르지 않나요? DailyMate Lite는 여행, 업무, 식사, 건강 등 실제 장면을 짧은 질문과 자연스러운 대답으로 구성해, 50개 언어를 한 차례의 온전한 대화로 연습할 수 있게 해 줍니다.",
+        "description": "50개 언어 중 원하는 언어를 골라 배우세요. 하나만이 아닙니다. 영어, 일본어, 중국어, 스페인어, 프랑스어 등 언제든 바꿀 수 있고, 언어마다 진도와 저장한 문장이 따로 보관됩니다.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -643,7 +643,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6794725568",
           "inLanguage": "ko",
-          "description": "막상 말하려는 순간, 알맞은 표현이 떠오르지 않나요? DailyMate Lite는 여행, 업무, 식사, 건강 등 실제 장면을 짧은 질문과 자연스러운 대답으로 구성해, 50개 언어를 한 차례의 온전한 대화로 연습할 수 있게 해 줍니다.",
+          "description": "50개 언어 중 원하는 언어를 골라 배우세요. 하나만이 아닙니다. 영어, 일본어, 중국어, 스페인어, 프랑스어 등 언제든 바꿀 수 있고, 언어마다 진도와 저장한 문장이 따로 보관됩니다.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-dailymatelite"
           },
@@ -805,72 +805,6 @@
     {
       "@type": "ListItem",
       "position": 13,
-      "url": "https://apps.apple.com/kr/app/id6824946559?pt=118326163&ct=geo_pick&mt=8",
-      "item": {
-        "@type": "Offer",
-        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-duowallpaperstudio",
-        "url": "https://apps.apple.com/kr/app/id6824946559?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Foldable Wallpaper Studio",
-        "description": "iPhone Duo의 커버 화면과 메인 화면을 위한 세트 배경화면. 접으면 커버 화면에 클로즈업, 펼치면 메인 화면에 같은 장면의 전경이 펼쳐집니다.",
-        "seller": {
-          "@type": "Organization",
-          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
-          "name": "Lumi Studio",
-          "url": "https://open.cait518.cc/ios-app-guide/about.html"
-        },
-        "itemOffered": {
-          "@type": "MobileApplication",
-          "@id": "https://apps.apple.com/app/id6824946559",
-          "identifier": {
-            "@type": "PropertyValue",
-            "propertyID": "Apple App Store ID",
-            "value": "6824946559"
-          },
-          "name": "Foldable Wallpaper Studio",
-          "operatingSystem": "iOS",
-          "applicationCategory": "PhotographyApplication",
-          "url": "https://apps.apple.com/kr/app/id6824946559?pt=118326163&ct=geo_pick&mt=8",
-          "installUrl": "https://apps.apple.com/kr/app/id6824946559?pt=118326163&ct=geo_pick&mt=8",
-          "downloadUrl": "https://apps.apple.com/kr/app/id6824946559?pt=118326163&ct=geo_pick&mt=8",
-          "potentialAction": {
-            "@type": "InstallAction",
-            "target": "https://apps.apple.com/kr/app/id6824946559?pt=118326163&ct=geo_pick&mt=8"
-          },
-          "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/ko/duowallpaperstudio.html#webpage"
-          },
-          "sameAs": "https://apps.apple.com/app/id6824946559",
-          "inLanguage": "ko",
-          "description": "iPhone Duo의 커버 화면과 메인 화면을 위한 세트 배경화면. 접으면 커버 화면에 클로즈업, 펼치면 메인 화면에 같은 장면의 전경이 펼쳐집니다.",
-          "offers": {
-            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-duowallpaperstudio"
-          },
-          "additionalProperty": [
-            {
-              "@type": "PropertyValue",
-              "name": "purchase_model",
-              "value": "free_with_lifetime_unlock"
-            },
-            {
-              "@type": "PropertyValue",
-              "name": "one_time_option",
-              "value": true
-            }
-          ],
-          "isAccessibleForFree": true
-        },
-        "price": "0",
-        "priceCurrency": "KRW",
-        "availability": "https://schema.org/InStock",
-        "eligibleRegion": {
-          "@type": "Country",
-          "identifier": "KR"
-        }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 14,
       "url": "https://apps.apple.com/kr/app/id6755782939?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -936,7 +870,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 15,
+      "position": 14,
       "url": "https://apps.apple.com/kr/app/id6793436548?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1002,7 +936,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 16,
+      "position": 15,
       "url": "https://apps.apple.com/kr/app/id6804564400?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1068,7 +1002,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 17,
+      "position": 16,
       "url": "https://apps.apple.com/kr/app/id6754218117?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1134,7 +1068,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 18,
+      "position": 17,
       "url": "https://apps.apple.com/kr/app/id6794039979?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1200,7 +1134,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 19,
+      "position": 18,
       "url": "https://apps.apple.com/kr/app/id6806639602?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1266,7 +1200,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 20,
+      "position": 19,
       "url": "https://apps.apple.com/kr/app/id6780107485?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1332,7 +1266,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 21,
+      "position": 20,
       "url": "https://apps.apple.com/kr/app/id6773017109?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1398,7 +1332,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 22,
+      "position": 21,
       "url": "https://apps.apple.com/kr/app/id6775773117?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1464,7 +1398,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 23,
+      "position": 22,
       "url": "https://apps.apple.com/kr/app/id6778748533?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1530,7 +1464,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 24,
+      "position": 23,
       "url": "https://apps.apple.com/kr/app/id6778491147?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1596,7 +1530,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 25,
+      "position": 24,
       "url": "https://apps.apple.com/kr/app/id6778269699?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1662,7 +1596,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 26,
+      "position": 25,
       "url": "https://apps.apple.com/kr/app/id6776958488?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1728,7 +1662,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 27,
+      "position": 26,
       "url": "https://apps.apple.com/kr/app/id6779750237?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1794,7 +1728,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 28,
+      "position": 27,
       "url": "https://apps.apple.com/kr/app/id6779745474?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1860,7 +1794,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 29,
+      "position": 28,
       "url": "https://apps.apple.com/kr/app/id6792850916?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1926,7 +1860,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 30,
+      "position": 29,
       "url": "https://apps.apple.com/kr/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1992,7 +1926,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 31,
+      "position": 30,
       "url": "https://apps.apple.com/kr/app/id6790800323?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2058,7 +1992,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 32,
+      "position": 31,
       "url": "https://apps.apple.com/kr/app/id6801956402?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2124,7 +2058,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 33,
+      "position": 32,
       "url": "https://apps.apple.com/kr/app/id6798814385?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2190,7 +2124,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 34,
+      "position": 33,
       "url": "https://apps.apple.com/kr/app/id6781808054?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2256,7 +2190,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 35,
+      "position": 34,
       "url": "https://apps.apple.com/kr/app/id6780223070?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2322,14 +2256,14 @@
     },
     {
       "@type": "ListItem",
-      "position": 36,
+      "position": 35,
       "url": "https://apps.apple.com/kr/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-qrcodehalo",
         "url": "https://apps.apple.com/kr/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
         "name": "QR Code Halo: QR코드 바로 실행",
-        "description": "QR Code Halo는 코드를 읽는 순간 바로 실행합니다. 카메라로 스캔하거나 사진을 선택하면 링크는 브라우저에서 열리고, 패스키 로그인 코드와 앱 링크는 곧바로 iOS로 전달되며, Wi-Fi 코드는 iOS의 연결 확인 창을 띄우고, 전화·메시지·이메일·장소는 각 앱에서",
+        "description": "QR코드와 바코드를 20가지 형식으로 읽고 바로 실행합니다. 카메라나 사진으로 스캔하면 링크는 바로 열리고, Wi-Fi 코드는 네트워크 연결 안내가 뜹니다.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2359,7 +2293,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806779853",
           "inLanguage": "ko",
-          "description": "QR Code Halo는 코드를 읽는 순간 바로 실행합니다. 카메라로 스캔하거나 사진을 선택하면 링크는 브라우저에서 열리고, 패스키 로그인 코드와 앱 링크는 곧바로 iOS로 전달되며, Wi-Fi 코드는 iOS의 연결 확인 창을 띄우고, 전화·메시지·이메일·장소는 각 앱에서",
+          "description": "QR코드와 바코드를 20가지 형식으로 읽고 바로 실행합니다. 카메라나 사진으로 스캔하면 링크는 바로 열리고, Wi-Fi 코드는 네트워크 연결 안내가 뜹니다.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-qrcodehalo"
           },
@@ -2388,7 +2322,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 37,
+      "position": 36,
       "url": "https://apps.apple.com/kr/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2454,7 +2388,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 38,
+      "position": 37,
       "url": "https://apps.apple.com/kr/app/id6779977651?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2520,7 +2454,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 39,
+      "position": 38,
       "url": "https://apps.apple.com/kr/app/id6788236641?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2586,14 +2520,14 @@
     },
     {
       "@type": "ListItem",
-      "position": 40,
+      "position": 39,
       "url": "https://apps.apple.com/kr/app/id6802166527?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-shotinbox",
         "url": "https://apps.apple.com/kr/app/id6802166527?pt=118326163&ct=geo_pick&mt=8",
         "name": "ShotInbox AI: 스크린샷 정리",
-        "description": "스크린샷을 깔끔하게 모든 스크린샷을 찾고, 처리하고, 정리하세요.",
+        "description": "스크린샷을 자동으로 분류합니다: 쇼핑, 영수증, 티켓, 여행, 지도 및 장소, 채팅 및 소셜, 업무 등 한 장 한 장 알맞은 곳으로.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2623,7 +2557,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802166527",
           "inLanguage": "ko",
-          "description": "스크린샷을 깔끔하게 모든 스크린샷을 찾고, 처리하고, 정리하세요.",
+          "description": "스크린샷을 자동으로 분류합니다: 쇼핑, 영수증, 티켓, 여행, 지도 및 장소, 채팅 및 소셜, 업무 등 한 장 한 장 알맞은 곳으로.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-shotinbox"
           },
@@ -2652,7 +2586,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 41,
+      "position": 40,
       "url": "https://apps.apple.com/kr/app/id6780575828?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2718,7 +2652,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 42,
+      "position": 41,
       "url": "https://apps.apple.com/kr/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2784,7 +2718,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 43,
+      "position": 42,
       "url": "https://apps.apple.com/kr/app/id6782139553?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2850,14 +2784,14 @@
     },
     {
       "@type": "ListItem",
-      "position": 44,
+      "position": 43,
       "url": "https://apps.apple.com/kr/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-stayclock",
         "url": "https://apps.apple.com/kr/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
         "name": "Stay Clock: 플립 탁상시계",
-        "description": "Stay Clock은 아이폰과 아이패드를 방 반대편에서도 읽을 수 있는 상시 켜짐 탁상시계로 바꿔줍니다. 큼직한 시간, 각 페이스에 맞는 캘린더, 그리고 StandBy, 잠금 화면, 홈 화면 위젯, Apple Watch까지 그대로 이어지는 하나의 디자인.",
+        "description": "Stay Clock은 아이폰과 아이패드를 방 반대편에서도 읽을 수 있는 상시 켜짐 탁상시계로 바꿔줍니다. 플립 시계를 포함한 101종의 페이스 중에서 고르고(그중 100종은 선택형 Lifetime 구매로 추가), 밤에는 완전한 검정 배경에 은은한 빨간 페이스로 바꿀 수 있습니다",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2887,7 +2821,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6814035888",
           "inLanguage": "ko",
-          "description": "Stay Clock은 아이폰과 아이패드를 방 반대편에서도 읽을 수 있는 상시 켜짐 탁상시계로 바꿔줍니다. 큼직한 시간, 각 페이스에 맞는 캘린더, 그리고 StandBy, 잠금 화면, 홈 화면 위젯, Apple Watch까지 그대로 이어지는 하나의 디자인.",
+          "description": "Stay Clock은 아이폰과 아이패드를 방 반대편에서도 읽을 수 있는 상시 켜짐 탁상시계로 바꿔줍니다. 플립 시계를 포함한 101종의 페이스 중에서 고르고(그중 100종은 선택형 Lifetime 구매로 추가), 밤에는 완전한 검정 배경에 은은한 빨간 페이스로 바꿀 수 있습니다",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-stayclock"
           },
@@ -2916,14 +2850,14 @@
     },
     {
       "@type": "ListItem",
-      "position": 45,
+      "position": 44,
       "url": "https://apps.apple.com/kr/app/id6807335593?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-studydown",
         "url": "https://apps.apple.com/kr/app/id6807335593?pt=118326163&ct=geo_pick&mt=8",
         "name": "Studydown: 집중 타이머",
-        "description": "휴대폰을 뒤집고, 소중한 일에 시간을 써 보세요. Studydown은 업무 프로젝트부터 독서, 외국어 연습, 취미까지 활동별로 들인 시간을 기록합니다.",
+        "description": "휴대폰을 화면이 아래로 가게 엎어 두면 타이머가 시작되고, 들어 올리면 멈춰서 공부·업무 시간에 진짜 집중한 시간만 쌓입니다.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2953,7 +2887,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6807335593",
           "inLanguage": "ko",
-          "description": "휴대폰을 뒤집고, 소중한 일에 시간을 써 보세요. Studydown은 업무 프로젝트부터 독서, 외국어 연습, 취미까지 활동별로 들인 시간을 기록합니다.",
+          "description": "휴대폰을 화면이 아래로 가게 엎어 두면 타이머가 시작되고, 들어 올리면 멈춰서 공부·업무 시간에 진짜 집중한 시간만 쌓입니다.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-studydown"
           },
@@ -2982,7 +2916,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 46,
+      "position": 45,
       "url": "https://apps.apple.com/kr/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3048,7 +2982,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 47,
+      "position": 46,
       "url": "https://apps.apple.com/kr/app/id6791299610?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3114,7 +3048,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 48,
+      "position": 47,
       "url": "https://apps.apple.com/kr/app/id6787754435?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3180,7 +3114,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 49,
+      "position": 48,
       "url": "https://apps.apple.com/kr/app/id6782275018?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3246,7 +3180,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 50,
+      "position": 49,
       "url": "https://apps.apple.com/kr/app/id6818607603?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3312,7 +3246,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 51,
+      "position": 50,
       "url": "https://apps.apple.com/kr/app/id6790467886?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3378,14 +3312,14 @@
     },
     {
       "@type": "ListItem",
-      "position": 52,
+      "position": 51,
       "url": "https://apps.apple.com/kr/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-wifiaidlite",
         "url": "https://apps.apple.com/kr/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
         "name": "WiFi Aid Lite",
-        "description": "\"또 인터넷이 느려졌다\" — 원인은 공유기일까요, DNS일까요, 통신사일까요, 아니면 사이트 자체일까요? WiFi Aid Lite는 여러 독립 경로로 DNS, TCP, TLS, 응답 시간, 안정성을 동시에 검사하고 증거를 교차 비교해 가장 가능성 높은 원인을 알려 줍니다",
+        "description": "\"또 인터넷이 느려졌다\" — 원인은 Wi-Fi일까요, 공유기일까요, DNS일까요, 아니면 사이트 자체일까요?",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3415,7 +3349,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6793414462",
           "inLanguage": "ko",
-          "description": "\"또 인터넷이 느려졌다\" — 원인은 공유기일까요, DNS일까요, 통신사일까요, 아니면 사이트 자체일까요? WiFi Aid Lite는 여러 독립 경로로 DNS, TCP, TLS, 응답 시간, 안정성을 동시에 검사하고 증거를 교차 비교해 가장 가능성 높은 원인을 알려 줍니다",
+          "description": "\"또 인터넷이 느려졌다\" — 원인은 Wi-Fi일까요, 공유기일까요, DNS일까요, 아니면 사이트 자체일까요?",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-wifiaidlite"
           },
@@ -3444,14 +3378,14 @@
     },
     {
       "@type": "ListItem",
-      "position": 53,
+      "position": 52,
       "url": "https://apps.apple.com/kr/app/id6797601720?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-wordmatelite",
         "url": "https://apps.apple.com/kr/app/id6797601720?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Wordmate Lite 하루 5단어",
-        "description": "단어장을 만들다가 지쳐서 공부 자체를 놓아버린 적이 있다면, Wordmate Lite는 그 지점을 없애기 위해 만든 어휘 앱입니다.",
+        "name": "Wordmate Lite 일본어·영어 단어",
+        "description": "하루 5단어를 1분 만에. 일본어, 영어 등 44개 언어 중에서 골라 여행, 외식, 쇼핑 같은 실제 상황부터 시작합니다.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3466,7 +3400,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6797601720"
           },
-          "name": "Wordmate Lite 하루 5단어",
+          "name": "Wordmate Lite 일본어·영어 단어",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
           "url": "https://apps.apple.com/kr/app/id6797601720?pt=118326163&ct=geo_pick&mt=8",
@@ -3481,7 +3415,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6797601720",
           "inLanguage": "ko",
-          "description": "단어장을 만들다가 지쳐서 공부 자체를 놓아버린 적이 있다면, Wordmate Lite는 그 지점을 없애기 위해 만든 어휘 앱입니다.",
+          "description": "하루 5단어를 1분 만에. 일본어, 영어 등 44개 언어 중에서 골라 여행, 외식, 쇼핑 같은 실제 상황부터 시작합니다.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-wordmatelite"
           },
@@ -3510,7 +3444,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 54,
+      "position": 53,
       "url": "https://apps.apple.com/kr/app/id6789917808?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3576,14 +3510,14 @@
     },
     {
       "@type": "ListItem",
-      "position": 55,
+      "position": 54,
       "url": "https://apps.apple.com/kr/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-zipbox",
         "url": "https://apps.apple.com/kr/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
         "name": "Zipbox 압축풀기: ZIP RAR 7z",
-        "description": "Zipbox는 App Store 유료 다운로드 앱입니다. 한 번 구매하면 모든 기능을 바로 쓸 수 있으며, 앱 내 구입·구독·광고가 없습니다. 13가지 형식은 기기 안에서만 처리됩니다.",
+        "description": "RAR, 7z, ZIP 등 13가지 압축파일을 iPhone에서 바로 엽니다. 풀기 전에 안을 먼저 보고 사진, 동영상, PDF, 텍스트, 코드를 미리 본 뒤 필요한 파일만 꺼낼 수 있습니다.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3613,7 +3547,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806776579",
           "inLanguage": "ko",
-          "description": "Zipbox는 App Store 유료 다운로드 앱입니다. 한 번 구매하면 모든 기능을 바로 쓸 수 있으며, 앱 내 구입·구독·광고가 없습니다. 13가지 형식은 기기 안에서만 처리됩니다.",
+          "description": "RAR, 7z, ZIP 등 13가지 압축파일을 iPhone에서 바로 엽니다. 풀기 전에 안을 먼저 보고 사진, 동영상, PDF, 텍스트, 코드를 미리 본 뒤 필요한 파일만 꺼낼 수 있습니다.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-zipbox"
           },
@@ -3642,7 +3576,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 56,
+      "position": 55,
       "url": "https://apps.apple.com/kr/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3682,6 +3616,72 @@
           "description": "지금 나가기 좋은지, 무엇을 입어야 할지, 우산이나 선크림이 필요한지 한눈에 알려주는 날씨 앱입니다.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-lumiweather"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "KRW",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "KR"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 56,
+      "url": "https://apps.apple.com/kr/app/id6824946559?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-duowallpaperstudio",
+        "url": "https://apps.apple.com/kr/app/id6824946559?pt=118326163&ct=geo_pick&mt=8",
+        "name": "폴더블 배경화면 - 커버·메인 세트",
+        "description": "iPhone Duo의 커버 화면과 메인 화면을 위한 세트 배경화면. 접으면 커버 화면에 클로즈업, 펼치면 메인 화면에 같은 장면의 전경이 펼쳐집니다.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6824946559",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6824946559"
+          },
+          "name": "폴더블 배경화면 - 커버·메인 세트",
+          "operatingSystem": "iOS",
+          "applicationCategory": "PhotographyApplication",
+          "url": "https://apps.apple.com/kr/app/id6824946559?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/kr/app/id6824946559?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/kr/app/id6824946559?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/kr/app/id6824946559?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ko/duowallpaperstudio.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6824946559",
+          "inLanguage": "ko",
+          "description": "iPhone Duo의 커버 화면과 메인 화면을 위한 세트 배경화면. 접으면 커버 화면에 클로즈업, 펼치면 메인 화면에 같은 장면의 전경이 펼쳐집니다.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-duowallpaperstudio"
           },
           "additionalProperty": [
             {

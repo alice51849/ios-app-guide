@@ -2,7 +2,7 @@
 title: "ShotInbox AI: Sort Screenshots — Cerca testo e pulisci le foto | iOS App"
 lang: "it"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/shotinbox/decision/l/it/index.html"
-modified: "2026-10-29"
+modified: "2026-10-30"
 app_store_id: "6802166527"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # ShotInbox AI: Sort Screenshots — Cerca testo e pulisci le foto | iOS App
 
-Screenshot finalmente in ordine Trova, gestisci e ripulisci ogni screenshot. Le 50 schermate più recenti includono gratis l’intero flusso essenziale. Organizzazione • Acquisti · Ricevute · Viaggi · Biglietti · Mappe e luoghi · Chat e social · Lavoro · Studio · Ricette e cibo · Ispirazione · QR e codici · Errori e tecnica · Sensibili • Cerca testo, categorie, link… • Eventi e promemoria rilevati, ordinati per data. • Apri in Mappe · Apri link · Copia testo · Apri codice · Chiama numero · Traccia pacco · Aggiungi promemoria · Aggiungi al calendario • Mai eliminati in automatico. Foto chiederà la conferma finale. ShotInbox non potrà annullare. Privacy sul dispositivo OCR · Apple Vision · NaturalLanguage Apple Vision e Natural Language funzionano sul dispositivo. Nessun caricamento. Privato, locale e interamente sotto il tuo controllo. ShotInbox Pro a vita US$5.99 · Un solo acquisto • Accesso a vita • Nessun abbonamento. • Cronologia screenshot illimitata • Regole, gruppi e azioni in blocco • Blocco, widget, backup ed esportazione Assistenza: hourstag.app@gmail.com Ottimizzata per iPhone Duo.
+Ottimizzata per iPhone Duo. Realizzata con l’SDK più recente, l’app riempie tutto lo schermo interno e adatta il layout automaticamente, sia da chiuso che da aperto. I tuoi screenshot, ordinati in automatico: Acquisti, Ricevute, Biglietti, Viaggi, Mappe e luoghi, Chat e social, Lavoro e altro. Cerca anche il testo dentro ogni screenshot. Link, numeri di telefono, indirizzi, codici QR e numeri di tracciamento vengono rilevati, così con un tocco apri Mappe, segui un pacco o aggiungi un promemoria o un evento al calendario. Elimina quelli che non ti servono più e libera spazio. Niente viene mai cancellato in automatico e Foto ti chiede sempre conferma. Organizzazione • Acquisti · Ricevute · Viaggi · Biglietti · Mappe e luoghi · Chat e social · Lavoro · Studio · Ricette e cibo · Ispirazione · QR e codici · Errori e tecnica · Sensibili • Eventi e promemoria rilevati, ordinati per data. • Apri in Mappe · Apri link · Copia testo · Apri codice · Chiama numero · Traccia pacco · Aggiungi promemoria · Aggiungi al calendario Privacy sul dispositivo Apple Vision e Natural Language funzionano sul dispositivo. Nessun caricamento. Le 50 schermate più recenti includono gratis l’intero flusso essenziale. ShotInbox Pro a vita: Un solo acquisto • Accesso a vita • Nessun abbonamento. • Cronologia screenshot illimitata • Regole, gruppi e azioni in blocco • Blocco, widget, backup ed esportazione Assistenza: hourstag.app@gmail.com Ottimizzata per iPhone Duo.
 
 - Foto e utilità
 - Gratis per iniziare · sblocco unico

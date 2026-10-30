@@ -6,7 +6,7 @@
   "name": "Catalogul de intenții de căutare Lumi Studio al editorului",
   "description": "O listă de primă parte a destinatarilor fiecărei aplicații, a sarcinii pe care încearcă să o îndeplinească și a traseului direct către App Store.",
   "inLanguage": "ro",
-  "dateModified": "2026-10-23",
+  "dateModified": "2026-10-30",
   "numberOfItems": 56,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -19,7 +19,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ro.jsonld#offer-notesstudio100",
         "url": "https://apps.apple.com/ro/app/id6798813048?pt=118326163&ct=geo_pick&mt=8",
         "name": "100 Notes Studio: Pen & Paper",
-        "description": "Adună scrisul de mână, textul tastat, adnotările PDF și instrumentele de studiu într-un spațiu de lucru clar. Editorul pune accent pe utilizarea privată",
+        "description": "Scrie notițe de mână ca pe hârtie, cu pixul: 29 de stilouri și pensule, de la stilou și creion la pensula de caligrafie și acuarelă, iar mai târziu poți",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -49,7 +49,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6798813048",
           "inLanguage": "ro",
-          "description": "Adună scrisul de mână, textul tastat, adnotările PDF și instrumentele de studiu într-un spațiu de lucru clar. Editorul pune accent pe utilizarea privată",
+          "description": "Scrie notițe de mână ca pe hârtie, cu pixul: 29 de stilouri și pensule, de la stilou și creion la pensula de caligrafie și acuarelă, iar mai târziu poți",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ro.jsonld#offer-notesstudio100"
           },
@@ -85,7 +85,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ro.jsonld#offer-aibriefpack",
         "url": "https://apps.apple.com/ro/app/id6791658210?pt=118326163&ct=geo_pick&mt=8",
         "name": "AI Brief: Fișiere în prompt AI",
-        "description": "Context mai bun. Răspunsuri mai bune.",
+        "description": "Transformă capturile de ecran, PDF-urile, fișierele și notițele într-un singur prompt AI bine organizat, cu obiectivul, faptele și sursele puse în ordine.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -115,7 +115,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6791658210",
           "inLanguage": "ro",
-          "description": "Context mai bun. Răspunsuri mai bune.",
+          "description": "Transformă capturile de ecran, PDF-urile, fișierele și notițele într-un singur prompt AI bine organizat, cu obiectivul, faptele și sursele puse în ordine.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ro.jsonld#offer-aibriefpack"
           },
@@ -217,7 +217,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ro.jsonld#offer-battai",
         "url": "https://apps.apple.com/ro/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
         "name": "BattAI: Sănătatea bateriei",
-        "description": "BattAI BattAI folosește cinci valori din API-urile publice iOS: nivelul bateriei, starea încărcării, consum redus, starea termică a întregului dispozitiv și ora. Celelalte rezultate sunt calculate din aceste citiri sau adăugate de tine. Fiecare detaliu arată sursa și limitele.",
+        "description": "Află scorul sănătății bateriei și urmărește tendința.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -247,7 +247,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802423998",
           "inLanguage": "ro",
-          "description": "BattAI BattAI folosește cinci valori din API-urile publice iOS: nivelul bateriei, starea încărcării, consum redus, starea termică a întregului dispozitiv și ora. Celelalte rezultate sunt calculate din aceste citiri sau adăugate de tine. Fiecare detaliu arată sursa și limitele.",
+          "description": "Află scorul sănătății bateriei și urmărește tendința.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ro.jsonld#offer-battai"
           },
@@ -283,7 +283,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ro.jsonld#offer-caldaily",
         "url": "https://apps.apple.com/ro/app/id6794178671?pt=118326163&ct=geo_pick&mt=8",
         "name": "CalDaily: calculator și teme",
-        "description": "Un calculator pe care chiar continui să îl folosești, pentru că ține minte gândul din spatele fiecărui număr.",
+        "description": "Un calculator frumos care ține minte: 100 de teme integrate și un widget pe ecranul principal care calculează fără să deschizi aplicația.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -313,7 +313,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6794178671",
           "inLanguage": "ro",
-          "description": "Un calculator pe care chiar continui să îl folosești, pentru că ține minte gândul din spatele fiecărui număr.",
+          "description": "Un calculator frumos care ține minte: 100 de teme integrate și un widget pe ecranul principal care calculează fără să deschizi aplicația.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ro.jsonld#offer-caldaily"
           },
@@ -613,7 +613,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ro.jsonld#offer-dailymatelite",
         "url": "https://apps.apple.com/ro/app/id6794725568?pt=118326163&ct=geo_pick&mt=8",
         "name": "DailyMate Lite: Vorbește azi",
-        "description": "Vorbește când contează. DailyMate Lite transformă situațiile reale în exerciții scurte, cu o replică utilă și un răspuns firesc, în 50 de limbi. Începe",
+        "description": "Învață oricare dintre cele 50 de limbi, nu doar una: engleză, spaniolă, franceză, japoneză, coreeană și multe altele. Schimbă oricând; fiecare limbă își",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -643,7 +643,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6794725568",
           "inLanguage": "ro",
-          "description": "Vorbește când contează. DailyMate Lite transformă situațiile reale în exerciții scurte, cu o replică utilă și un răspuns firesc, în 50 de limbi. Începe",
+          "description": "Învață oricare dintre cele 50 de limbi, nu doar una: engleză, spaniolă, franceză, japoneză, coreeană și multe altele. Schimbă oricând; fiecare limbă își",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ro.jsonld#offer-dailymatelite"
           },
@@ -679,7 +679,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ro.jsonld#offer-dbhalo",
         "url": "https://apps.apple.com/ro/app/id6806826699?pt=118326163&ct=geo_pick&mt=8",
         "name": "dB Halo: Sonometru",
-        "description": "dB Halo transformă iPhone sau iPad într-un sonometru cu analizor audio și procesare integrală pe dispozitiv. Inelul Halo afișează în timp real nivelul",
+        "description": "Vezi imediat câți decibeli sunt acum: valoare mare în timp real, cu minim, medie, maxim și vârf, plus un jurnal al zgomotelor puternice cu marcaj de",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -709,7 +709,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806826699",
           "inLanguage": "ro",
-          "description": "dB Halo transformă iPhone sau iPad într-un sonometru cu analizor audio și procesare integrală pe dispozitiv. Inelul Halo afișează în timp real nivelul",
+          "description": "Vezi imediat câți decibeli sunt acum: valoare mare în timp real, cu minim, medie, maxim și vârf, plus un jurnal al zgomotelor puternice cu marcaj de",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ro.jsonld#offer-dbhalo"
           },
@@ -943,7 +943,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ro.jsonld#offer-gmoneylite",
         "url": "https://apps.apple.com/ro/app/id6793436548?pt=118326163&ct=geo_pick&mt=8",
         "name": "G+Money Lite: Bani de vacanță",
-        "description": "G+Money Lite — Converter de valută și tracker de cheltuieli inteligent pentru călătorii",
+        "description": "Află cât mai poți cheltui azi, oriunde ai călători. Notează fiecare cumpărătură în moneda locală și vezi-o imediat în moneda ta, deja scăzută din bugetul",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -973,7 +973,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6793436548",
           "inLanguage": "ro",
-          "description": "G+Money Lite — Converter de valută și tracker de cheltuieli inteligent pentru călătorii",
+          "description": "Află cât mai poți cheltui azi, oriunde ai călători. Notează fiecare cumpărătură în moneda locală și vezi-o imediat în moneda ta, deja scăzută din bugetul",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ro.jsonld#offer-gmoneylite"
           },
@@ -1075,7 +1075,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ro.jsonld#offer-hourstaglite",
         "url": "https://apps.apple.com/ro/app/id6794039979?pt=118326163&ct=geo_pick&mt=8",
         "name": "HoursTag Lite: Preț în ore",
-        "description": "HoursTag Lite - Vezi adevărata valoare a lucrurilor",
+        "description": "Înainte să cumperi, vezi câte ore de muncă te costă de fapt. Introdu salariul net pe oră, iar HoursTag Lite transformă fiecare preț în timp de muncă.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1105,7 +1105,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6794039979",
           "inLanguage": "ro",
-          "description": "HoursTag Lite - Vezi adevărata valoare a lucrurilor",
+          "description": "Înainte să cumperi, vezi câte ore de muncă te costă de fapt. Introdu salariul net pe oră, iar HoursTag Lite transformă fiecare preț în timp de muncă.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ro.jsonld#offer-hourstaglite"
           },
@@ -1933,7 +1933,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ro.jsonld#offer-maskmyfile",
         "url": "https://apps.apple.com/ro/app/id6792850916?pt=118326163&ct=geo_pick&mt=8",
         "name": "Mask My File: Șterge datele",
-        "description": "Distribuie în siguranță fără să pierzi contextul util. Mask My File găsește datele personale înainte să trimiți un fișier, acoperă definitiv ce alegi, apoi",
+        "description": "Înnegrește datele personale înainte să le trimiți. Mask My File găsește nume, numere de telefon, e-mailuri, adrese, date de cont și de plată, apoi",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1963,7 +1963,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6792850916",
           "inLanguage": "ro",
-          "description": "Distribuie în siguranță fără să pierzi contextul util. Mask My File găsește datele personale înainte să trimiți un fișier, acoperă definitiv ce alegi, apoi",
+          "description": "Înnegrește datele personale înainte să le trimiți. Mask My File găsește nume, numere de telefon, e-mailuri, adrese, date de cont și de plată, apoi",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ro.jsonld#offer-maskmyfile"
           },
@@ -2065,7 +2065,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ro.jsonld#offer-mochidonestamp",
         "url": "https://apps.apple.com/ro/app/id6790800323?pt=118326163&ct=geo_pick&mt=8",
         "name": "Mochi DoneStamp: Ultima dată",
-        "description": "Când ai schimbat ultima dată așternutul, ai udat o plantă, ai sunat familia, ai salvat fotografiile sau ai înlocuit un filtru?",
+        "description": "Când ai schimbat ultima dată așternutul, ai curățat filtrul de la aer condiționat sau ai schimbat uleiul la mașină?",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2095,7 +2095,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6790800323",
           "inLanguage": "ro",
-          "description": "Când ai schimbat ultima dată așternutul, ai udat o plantă, ai sunat familia, ai salvat fotografiile sau ai înlocuit un filtru?",
+          "description": "Când ai schimbat ultima dată așternutul, ai curățat filtrul de la aer condiționat sau ai schimbat uleiul la mașină?",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ro.jsonld#offer-mochidonestamp"
           },
@@ -2395,7 +2395,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ro.jsonld#offer-qrcodehalo",
         "url": "https://apps.apple.com/ro/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
         "name": "QR Code Halo: Scaner coduri",
-        "description": "QR Code Halo acționează imediat ce citește un cod. Scanează cu camera sau alege o poză: linkurile se deschid în browser, codurile de conectare cu cheie",
+        "description": "Scanează coduri QR și coduri de bare în 20 de formate cu camera sau dintr-o poză, iar acțiunea are loc imediat: linkurile se deschid, iar codurile Wi-Fi",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2425,7 +2425,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806779853",
           "inLanguage": "ro",
-          "description": "QR Code Halo acționează imediat ce citește un cod. Scanează cu camera sau alege o poză: linkurile se deschid în browser, codurile de conectare cu cheie",
+          "description": "Scanează coduri QR și coduri de bare în 20 de formate cu camera sau dintr-o poză, iar acțiunea are loc imediat: linkurile se deschid, iar codurile Wi-Fi",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ro.jsonld#offer-qrcodehalo"
           },
@@ -2659,7 +2659,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ro.jsonld#offer-shotinbox",
         "url": "https://apps.apple.com/ro/app/id6802166527?pt=118326163&ct=geo_pick&mt=8",
         "name": "ShotInbox AI: Sort Screenshots",
-        "description": "Capturile tale, în ordine",
+        "description": "Capturile tale, sortate automat: Cumpărături, Bonuri, Bilete, Călătorii, Hărți și locuri, Conversații și social, Muncă și altele.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2689,7 +2689,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802166527",
           "inLanguage": "ro",
-          "description": "Capturile tale, în ordine",
+          "description": "Capturile tale, sortate automat: Cumpărături, Bonuri, Bilete, Călătorii, Hărți și locuri, Conversații și social, Muncă și altele.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ro.jsonld#offer-shotinbox"
           },
@@ -2923,7 +2923,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ro.jsonld#offer-stayclock",
         "url": "https://apps.apple.com/ro/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
         "name": "Stay Clock: Ceas de Birou",
-        "description": "Stay Clock transformă iPhone-ul sau iPad-ul dumneavoastră într-un ceas de birou mereu pornit, care se poate citi din cealaltă parte a camerei. Oră mare, un",
+        "description": "Stay Clock transformă iPhone-ul sau iPad-ul dumneavoastră într-un ceas de birou mereu aprins, care se poate citi din cealaltă parte a camerei. Alegeți",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2953,7 +2953,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6814035888",
           "inLanguage": "ro",
-          "description": "Stay Clock transformă iPhone-ul sau iPad-ul dumneavoastră într-un ceas de birou mereu pornit, care se poate citi din cealaltă parte a camerei. Oră mare, un",
+          "description": "Stay Clock transformă iPhone-ul sau iPad-ul dumneavoastră într-un ceas de birou mereu aprins, care se poate citi din cealaltă parte a camerei. Alegeți",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ro.jsonld#offer-stayclock"
           },
@@ -2989,7 +2989,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ro.jsonld#offer-studydown",
         "url": "https://apps.apple.com/ro/app/id6807335593?pt=118326163&ct=geo_pick&mt=8",
         "name": "Studydown: Cronometru",
-        "description": "Fă loc lucrurilor importante și vezi timpul pe care li-l dedici. Studydown înregistrează timpul pentru proiecte, citit și pasiuni atunci când așezi",
+        "description": "Întoarce telefonul cu ecranul în jos și cronometrul începe să numere; ridică-l și se oprește, așa că la orele de învățat și de lucru se adună doar",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3019,7 +3019,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6807335593",
           "inLanguage": "ro",
-          "description": "Fă loc lucrurilor importante și vezi timpul pe care li-l dedici. Studydown înregistrează timpul pentru proiecte, citit și pasiuni atunci când așezi",
+          "description": "Întoarce telefonul cu ecranul în jos și cronometrul începe să numere; ridică-l și se oprește, așa că la orele de învățat și de lucru se adună doar",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ro.jsonld#offer-studydown"
           },
@@ -3385,7 +3385,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ro.jsonld#offer-wifiaidlite",
         "url": "https://apps.apple.com/ro/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
         "name": "WiFi Aid Lite",
-        "description": "Găsește problema reală. Fără cumpărare poți face în total o singură verificare completă, cu orice instrument. O achiziție unică opțională în aplicație",
+        "description": "Fără internet sau totul merge greu? Cu o atingere, aplicația verifică pe rând Wi-Fi-ul, DNS-ul și internetul și îți arată la ce pas se blochează, cauza cea",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3415,7 +3415,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6793414462",
           "inLanguage": "ro",
-          "description": "Găsește problema reală. Fără cumpărare poți face în total o singură verificare completă, cu orice instrument. O achiziție unică opțională în aplicație",
+          "description": "Fără internet sau totul merge greu? Cu o atingere, aplicația verifică pe rând Wi-Fi-ul, DNS-ul și internetul și îți arată la ce pas se blochează, cauza cea",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ro.jsonld#offer-wifiaidlite"
           },
@@ -3451,7 +3451,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ro.jsonld#offer-wifiaid",
         "url": "https://apps.apple.com/ro/app/id6790467886?pt=118326163&ct=geo_pick&mt=8",
         "name": "WiFi Aid: Diagnoză de rețea",
-        "description": "Găsește cauza cea mai probabilă prin teste independente de traseu, DNS, TCP, TLS, timpi și stabilitate. O singură plată inițială, fără abonament, reclame",
+        "description": "Wi-Fi-ul merge iar greu sau se întrerupe? WiFi Aid verifică Wi-Fi-ul, DNS-ul și internetul cu o singură atingere și îți spune dacă problema e cel mai",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3481,7 +3481,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6790467886",
           "inLanguage": "ro",
-          "description": "Găsește cauza cea mai probabilă prin teste independente de traseu, DNS, TCP, TLS, timpi și stabilitate. O singură plată inițială, fără abonament, reclame",
+          "description": "Wi-Fi-ul merge iar greu sau se întrerupe? WiFi Aid verifică Wi-Fi-ul, DNS-ul și internetul cu o singură atingere și îți spune dacă problema e cel mai",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ro.jsonld#offer-wifiaid"
           },
@@ -3517,7 +3517,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ro.jsonld#offer-wordmatelite",
         "url": "https://apps.apple.com/ro/app/id6797601720?pt=118326163&ct=geo_pick&mt=8",
         "name": "Wordmate Lite: cuvinte zilnic",
-        "description": "Vrei să avansezi într-o limbă străină, dar seara trece iar și nu ai reținut niciun cuvânt nou. Wordmate Lite reduce învățarea la un minut pe zi, un minut",
+        "description": "Învață 5 cuvinte în aproximativ un minut: engleză, japoneză, coreeană sau oricare dintre cele 44 de limbi, începând cu situații reale precum călătoriile",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3547,7 +3547,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6797601720",
           "inLanguage": "ro",
-          "description": "Vrei să avansezi într-o limbă străină, dar seara trece iar și nu ai reținut niciun cuvânt nou. Wordmate Lite reduce învățarea la un minut pe zi, un minut",
+          "description": "Învață 5 cuvinte în aproximativ un minut: engleză, japoneză, coreeană sau oricare dintre cele 44 de limbi, începând cu situații reale precum călătoriile",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ro.jsonld#offer-wordmatelite"
           },
@@ -3649,7 +3649,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ro.jsonld#offer-zipbox",
         "url": "https://apps.apple.com/ro/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
         "name": "Zipbox: deschide RAR, ZIP, 7z",
-        "description": "Zipbox este o aplicație cu plată din App Store. O cumpărare include totul, fără achiziții în aplicație, abonamente ori reclame. Cele 13 formate sunt",
+        "description": "Deschide RAR, 7z, ZIP și alte 10 formate de arhivă direct pe iPhone. Uită-te înăuntru înainte de extragere: previzualizează poze, video, PDF, text și",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3679,7 +3679,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806776579",
           "inLanguage": "ro",
-          "description": "Zipbox este o aplicație cu plată din App Store. O cumpărare include totul, fără achiziții în aplicație, abonamente ori reclame. Cele 13 formate sunt",
+          "description": "Deschide RAR, 7z, ZIP și alte 10 formate de arhivă direct pe iPhone. Uită-te înăuntru înainte de extragere: previzualizează poze, video, PDF, text și",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ro.jsonld#offer-zipbox"
           },

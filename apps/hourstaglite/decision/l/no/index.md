@@ -2,7 +2,7 @@
 title: "HoursTag Lite: Pris i timer — Bevisste kjøp: reell pris | iOS App"
 lang: "no"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstaglite/decision/l/no/index.html"
-modified: "2026-10-29"
+modified: "2026-10-30"
 app_store_id: "6794039979"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # HoursTag Lite: Pris i timer — Bevisste kjøp: reell pris | iOS App
 
-HoursTag Lite - Den virkelige prisen på ting Hvert kjøp koster timer av livet ditt. HoursTag Lite gjør priser om til arbeidstid – så du bruker penger med klarhet. Møt verdiprismet ditt - Tidskostnad: Din nettoverdi per arbeidstime - Type: Behov - Ønske - Impuls - Ditt verdimønster - Fullstendig verdianalyse - Hva koster et mål?: Se arbeidet bak et mål, og følg fremgangen din. - Sikkerhetskopi: Inkluderer inntekt, forbruk, mål og innstillinger. - Widget - Apple Watch Alt blir på enheten din. Ingen konto, ingen sporing. Én betaling · Livstidstilgang · Ingen abonnement Ubegrensede valg og endringer Ubegrensede mål og fremgang Deling, innsikt og sikkerhetskopier Optimalisert for iPhone Duo.
+Optimalisert for iPhone Duo. Appen er bygget med den nyeste SDK-en, fyller hele den indre skjermen og tilpasser oppsettet automatisk, både sammenbrettet og utbrettet. Før du kjøper, se hvor mange arbeidstimer det egentlig koster. Legg inn timelønnen din etter skatt, så gjør HoursTag Lite hver pris om til arbeidstid. Merk hvert kjøp som Behov, Ønske eller Impuls for å avsløre impulskjøp, og se hvor mange arbeidstimer hver kategori har tatt. Sparer du til noe? Se hvor lenge du må jobbe for det, og følg fremgangen. Dette kan du gjøre • Gjør enhver pris om til arbeidstimer ut fra lønnen din etter skatt • Merk kjøp som Behov, Ønske eller Impuls • Arbeidstimer per kategori • Sparemål: timene bak hvert mål og fremgangen • Sikkerhetskopi og gjenoppretting av inntekt, forbruk, mål og innstillinger • Widget på Hjem-skjermen og Apple Watch Alt blir på enheten din. Ingen konto, ingen sporing. De første 3 omregningene krever ikke kjøp. Et valgfritt engangskjøp i appen låser opp ubegrensede omregninger og registreringer, sparemål med fremgang, kategoritrender, deling og sikkerhetskopi. Optimalisert for iPhone Duo.
 
 - Økonomi og reise
 - Gratis å starte

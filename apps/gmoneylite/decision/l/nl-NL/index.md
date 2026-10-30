@@ -2,7 +2,7 @@
 title: "G+Money Lite: Reisuitgaven — Dagbudget op horloge en widget | iOS App"
 lang: "nl-NL"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gmoneylite/decision/l/nl-NL/index.html"
-modified: "2026-10-29"
+modified: "2026-10-30"
 app_store_id: "6793436548"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # G+Money Lite: Reisuitgaven — Dagbudget op horloge en widget | iOS App
 
-G+Money Lite — Slimme reisvaluta- & uitgaventracker Reisgeld, simpel gemaakt Leg elke aankoop vast in de lokale valuta en zie het meteen in je eigen valuta – online of offline. Omrekenen • Live of handmatige koersen: We halen de nieuwste koersen automatisch op, of stel ze zelf in. Werkt altijd offline. • Haalt de nieuwste koersen op bij het openen van de app (ongeveer elke 6 uur). Werkt offline met je opgeslagen koersen. • Indicatieve middenkoers. Kaarten en contant geld kunnen afwijken. Uitgaven • Dagbudget: Optioneel. Zie hoe elke dag tegenover het budget staat. • Per categorie · Reizen · Filters · Items • Back-up en herstel: Bevat uitgaven, koersen, categorieën en instellingen. • Widget · Apple Watch Alles blijft op je apparaat. Geen account, geen tracking. Koersen via een openbare wisselkoersdienst. Zonder aankoop: koersen, budget, overzicht · 1 reis · 3 uitgaven Eenmalige betaling · Geen abonnement Ontgrendel voorgoed onbeperkte uitgaven en reizen. Geoptimaliseerd voor iPhone Duo.
+Geoptimaliseerd voor iPhone Duo. De app is gebouwd met de nieuwste SDK, vult het hele binnenscherm en past de indeling automatisch aan, dichtgeklapt of opengeklapt. Weet hoeveel je vandaag nog kunt uitgeven, waar je ook reist. Noteer elke aankoop in de lokale valuta en zie hem meteen in je eigen valuta, al afgeboekt van het budget van vandaag. Ga je over je dagbudget, dan wordt het bedrag rood. Geen verbinding? Noteer gewoon verder met de laatst opgeslagen koersen. Bekijk je uitgaven van vandaag in de widget op het beginscherm of op je Apple Watch. Omrekenen • De nieuwste koersen worden automatisch opgehaald als je de app opent (ongeveer elke 6 uur), of je voert ze zelf in. Offline worden de opgeslagen koersen gebruikt. • Indicatieve middenkoers. Kaarten en contant geld kunnen afwijken. Uitgaven • Dagbudget (optioneel): zie de uitgaven van elke dag naast je budget. • Zie per categorie waar je geld naartoe gaat, houd elke reis apart en filter je posten. • Back-up en herstel: Bevat uitgaven, koersen, categorieën en instellingen. • Widget · Apple Watch Alles blijft op je apparaat. Geen account, geen tracking. Koersen via een openbare wisselkoersdienst. Zonder aankoop: koersen, budget en overzicht, 1 reis en 3 uitgaven. Een optionele eenmalige in-app-aankoop ontgrendelt onbeperkte uitgaven en reizen. Geoptimaliseerd voor iPhone Duo.
 
 - Geld & reizen
 - Gratis te starten · eenmalige ontgrendeling

@@ -2,7 +2,7 @@
 title: "G+Money Lite: Gastos de viaje — Gasto diario en reloj y widget | iOS App"
 lang: "es-MX"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gmoneylite/decision/l/es-MX/index.html"
-modified: "2026-10-29"
+modified: "2026-10-30"
 app_store_id: "6793436548"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # G+Money Lite: Gastos de viaje — Gasto diario en reloj y widget | iOS App
 
-G+Money Lite — Conversor de divisas y gastos de viaje El dinero del viaje, fácil Registra cada compra en la moneda local y velo al instante en tu moneda, con o sin conexión. Convertir • Tipos en vivo o manuales: Podemos obtener los últimos tipos automáticamente, o defínelos tú. Siempre funciona sin conexión. • Obtiene los últimos tipos al abrir la app (cada 6 horas aprox.). Funciona sin conexión con tus tipos guardados. • Tipo medio de referencia. Tarjetas y efectivo pueden variar. Gastos • Presupuesto diario: Opcional. Comprueba cada día frente al presupuesto. • Por categoría · Viajes · Filtros · Registros • Copia y restauración: Incluye gastos, tipos, categorías y ajustes. • Widget · Apple Watch Todo se queda en tu dispositivo. Sin cuenta, sin seguimiento. Los tipos usan un servicio público de cambio. Sin compra: cambio, presupuesto y resumen · 1 viaje · 3 gastos Un solo pago · Sin suscripción Desbloquea gastos y viajes ilimitados. Optimizada para el iPhone Duo.
+Optimizada para el iPhone Duo. Creada con el SDK más reciente, la app ocupa toda la pantalla interior y ajusta su diseño automáticamente, con el dispositivo plegado o desplegado. Ten claro cuánto te queda por gastar hoy, viajes a donde viajes. Anota cada compra en la moneda local y mírala al instante en tu moneda, ya descontada del presupuesto de hoy. Se pone en rojo cuando te pasas de tu presupuesto diario. ¿Sin conexión? Sigue anotando con los últimos tipos de cambio guardados. Revisa el gasto de hoy en el widget de la pantalla de inicio o en tu Apple Watch. Convertir • Los tipos de cambio se actualizan solos al abrir la app (cada 6 horas aprox.), o puedes capturarlos tú. Sin conexión se usan los guardados. • Tipo medio de referencia. Tarjetas y efectivo pueden variar. Gastos • Presupuesto diario (opcional): compara el gasto de cada día con tu presupuesto. • Ve en qué se va tu dinero por categoría, lleva cada viaje por separado y filtra tus registros. • Copia y restauración: Incluye gastos, tipos, categorías y ajustes. • Widget · Apple Watch Todo se queda en tu dispositivo. Sin cuenta, sin seguimiento. Los tipos usan un servicio público de cambio. Sin compra: cambio, presupuesto y resumen, 1 viaje y 3 gastos. Una compra única opcional dentro de la app desbloquea gastos y viajes ilimitados. Optimizada para el iPhone Duo.
 
 - Dinero y viajes
 - Gratis para empezar · desbloqueo único

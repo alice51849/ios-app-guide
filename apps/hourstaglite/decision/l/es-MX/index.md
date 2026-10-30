@@ -2,7 +2,7 @@
 title: "HoursTag Lite: Precio en horas — Compra consciente: precio real | iOS App"
 lang: "es-MX"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstaglite/decision/l/es-MX/index.html"
-modified: "2026-10-29"
+modified: "2026-10-30"
 app_store_id: "6794039979"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # HoursTag Lite: Precio en horas — Compra consciente: precio real | iOS App
 
-HoursTag Lite - El precio real de las cosas Cada compra cuesta horas de tu vida. HoursTag Lite convierte los precios en tiempo de trabajo, para que gastes con claridad. Conoce tu prisma de valor - Costo en tiempo: Tu valor neto por hora trabajada - Tipo: Necesidad - Deseo - Impulso - Tu patrón de valor - Análisis completo de valor - ¿Cuánto cuesta una meta?: Ve el trabajo detrás de una meta y sigue tu progreso. - Copia y restauración: Incluye ingresos, gastos, metas y preferencias. - Widget - Apple Watch Todo se queda en tu dispositivo. Sin cuenta, sin rastreo. Un solo pago · Acceso de por vida · Sin suscripción Decisiones y ediciones ilimitadas Metas y progreso ilimitados Compartir, análisis y respaldos Optimizada para el iPhone Duo.
+Optimizada para el iPhone Duo. Creada con el SDK más reciente, la app ocupa toda la pantalla interior y ajusta su diseño automáticamente, con el dispositivo plegado o desplegado. Antes de comprar, ve cuántas horas de trabajo te cuesta en realidad. Ingresa tu sueldo neto por hora y HoursTag Lite convierte cada precio en tiempo de trabajo. Etiqueta cada compra como Necesidad, Deseo o Impulso para detectar las compras impulsivas, y ve cuántas horas de trabajo se llevó cada categoría. ¿Ahorras para algo? Ve cuánto tendrías que trabajar para lograrlo y sigue tu progreso. Qué puedes hacer • Convierte cualquier precio en horas de trabajo según tu sueldo neto • Etiqueta tus compras: Necesidad, Deseo o Impulso • Horas de trabajo por categoría • Metas de ahorro: las horas detrás de cada meta y tu progreso • Respaldo y restauración de ingresos, gastos, metas y configuración • Widget de la pantalla de inicio y Apple Watch Todo se queda en tu dispositivo. Sin cuenta, sin rastreo. Tus primeras 3 conversiones no requieren compra. Una compra única opcional dentro de la app desbloquea conversiones y registros ilimitados, metas de ahorro con progreso, tendencias por categoría, compartir y respaldos. Optimizada para el iPhone Duo.
 
 - Dinero y viajes
 - Gratis para empezar · desbloqueo único

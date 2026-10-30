@@ -2,7 +2,7 @@
 title: "適合雙語兒童的最佳完整注音學習 App"
 lang: "zh-Hant"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumibopomofopro/decision/l/zh-Hant/index.html"
-modified: "2026-10-29"
+modified: "2026-10-30"
 app_store_id: "6775773117"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - 無廣告
 - 隱私優先／裝置端
 - App Store · $290.00
-- ★ 3.0/5 · 1
+- ★ 4.0/5 · 2
 
 [在 App Store 取得 Lumi Bopomofo Pro →](https://apps.apple.com/tw/app/id6775773117?pt=118326163&ct=geo_pick&mt=8)
 

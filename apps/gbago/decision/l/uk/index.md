@@ -2,7 +2,7 @@
 title: "GBAGo: Візуальні сейви — Мапа відновлення · Автознімки | iOS App"
 lang: "uk"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gbago/decision/l/uk/index.html"
-modified: "2026-10-29"
+modified: "2026-10-30"
 app_store_id: "6804564400"
 verified_live: true
 purchase_model: "paid_upfront"

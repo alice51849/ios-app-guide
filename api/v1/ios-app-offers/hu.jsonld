@@ -6,7 +6,7 @@
   "name": "Lumi Studio Kiadói Keresési Szándék Katalógus",
   "description": "Egy első kézből származó katalógus arról, hogy az egyes alkalmazások kinek készültek, milyen feladatot próbálnak megoldani, és a közvetlen App Store útvonal.",
   "inLanguage": "hu",
-  "dateModified": "2026-10-23",
+  "dateModified": "2026-10-30",
   "numberOfItems": 56,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -19,7 +19,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-notesstudio100",
         "url": "https://apps.apple.com/hu/app/id6798813048?pt=118326163&ct=geo_pick&mt=8",
         "name": "100 Notes Studio: Pen & Paper",
-        "description": "Ne oszd szét a kézírást, a gépelt szöveget, a dokumentumjelölést, a hangfelvételeket és a tanulást több alkalmazás között. A 100 Notes Studio mindezt egy",
+        "description": "Írj kézzel úgy, mintha tollal írnál papírra: 29 toll és ecset a töltőtolltól és ceruzától a kalligráfiaecsetig és az akvarellig, a kézírásodban pedig",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -49,7 +49,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6798813048",
           "inLanguage": "hu",
-          "description": "Ne oszd szét a kézírást, a gépelt szöveget, a dokumentumjelölést, a hangfelvételeket és a tanulást több alkalmazás között. A 100 Notes Studio mindezt egy",
+          "description": "Írj kézzel úgy, mintha tollal írnál papírra: 29 toll és ecset a töltőtolltól és ceruzától a kalligráfiaecsetig és az akvarellig, a kézírásodban pedig",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-notesstudio100"
           },
@@ -85,7 +85,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-aibriefpack",
         "url": "https://apps.apple.com/hu/app/id6791658210?pt=118326163&ct=geo_pick&mt=8",
         "name": "AI Brief: Fájlokból AI-prompt",
-        "description": "Jobb kontextus. Jobb válaszok.",
+        "description": "Alakítsd a képernyőképeket, PDF-eket, fájlokat és jegyzeteket egyetlen átlátható AI-prompttá, amelyben a cél, a tények és a források rendezetten",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -115,7 +115,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6791658210",
           "inLanguage": "hu",
-          "description": "Jobb kontextus. Jobb válaszok.",
+          "description": "Alakítsd a képernyőképeket, PDF-eket, fájlokat és jegyzeteket egyetlen átlátható AI-prompttá, amelyben a cél, a tények és a források rendezetten",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-aibriefpack"
           },
@@ -217,7 +217,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-battai",
         "url": "https://apps.apple.com/hu/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
         "name": "BattAI: Akkuállapot",
-        "description": "BattAI A BattAI öt értéket használ a nyilvános iOS API-kból: töltöttségi szintet, töltési állapotot, Alacsony töltöttségű módot, az egész készülék hőállapotát és az időt. A többi eredmény ezekből készül vagy tőled származik. Minden adatnál látható a forrás és a korlátok.",
+        "description": "Pontozd az akkumulátor állapotát, és kövesd a változását.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -247,7 +247,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802423998",
           "inLanguage": "hu",
-          "description": "BattAI A BattAI öt értéket használ a nyilvános iOS API-kból: töltöttségi szintet, töltési állapotot, Alacsony töltöttségű módot, az egész készülék hőállapotát és az időt. A többi eredmény ezekből készül vagy tőled származik. Minden adatnál látható a forrás és a korlátok.",
+          "description": "Pontozd az akkumulátor állapotát, és kövesd a változását.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-battai"
           },
@@ -283,7 +283,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-caldaily",
         "url": "https://apps.apple.com/hu/app/id6794178671?pt=118326163&ct=geo_pick&mt=8",
         "name": "CalDaily: számológép, témák",
-        "description": "Egy számológép, amit tényleg tovább használsz, mert megjegyzi, mi állt az egyes számok mögött.",
+        "description": "Szép számológép, amely emlékszik: 100 beépített téma és egy főképernyő-widget, amely az app megnyitása nélkül is számol.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -313,7 +313,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6794178671",
           "inLanguage": "hu",
-          "description": "Egy számológép, amit tényleg tovább használsz, mert megjegyzi, mi állt az egyes számok mögött.",
+          "description": "Szép számológép, amely emlékszik: 100 beépített téma és egy főképernyő-widget, amely az app megnyitása nélkül is számol.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-caldaily"
           },
@@ -613,7 +613,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-dailymatelite",
         "url": "https://apps.apple.com/hu/app/id6794725568?pt=118326163&ct=geo_pick&mt=8",
         "name": "DailyMate Lite: Beszélj ma",
-        "description": "Szólalj meg természetesen, amikor eljön a pillanat. A DailyMate Lite hétköznapi helyzetekből készít rövid mondat–válasz gyakorlatokat 50 nyelven. Kezdd",
+        "description": "Tanuld az 50 nyelv bármelyikét, ne csak egyet: angol, spanyol, francia, japán, koreai és még sok más. Válts bármikor; minden nyelv külön őrzi a haladásodat",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -643,7 +643,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6794725568",
           "inLanguage": "hu",
-          "description": "Szólalj meg természetesen, amikor eljön a pillanat. A DailyMate Lite hétköznapi helyzetekből készít rövid mondat–válasz gyakorlatokat 50 nyelven. Kezdd",
+          "description": "Tanuld az 50 nyelv bármelyikét, ne csak egyet: angol, spanyol, francia, japán, koreai és még sok más. Válts bármikor; minden nyelv külön őrzi a haladásodat",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-dailymatelite"
           },
@@ -679,7 +679,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-dbhalo",
         "url": "https://apps.apple.com/hu/app/id6806826699?pt=118326163&ct=geo_pick&mt=8",
         "name": "dB Halo: Zajszintmérő",
-        "description": "A dB Halo teljes egészében az eszközön működő zajszintmérő és hangelemző iPhone-on, iPaden és Apple Watchon. Egyetlen pillantással mutatja az aktuális",
+        "description": "Azonnal látod, hány decibel van most körülötted: nagy, élő mérés minimummal, átlaggal, maximummal és csúcsértékkel, plusz időbélyeges napló a hangos",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -709,7 +709,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806826699",
           "inLanguage": "hu",
-          "description": "A dB Halo teljes egészében az eszközön működő zajszintmérő és hangelemző iPhone-on, iPaden és Apple Watchon. Egyetlen pillantással mutatja az aktuális",
+          "description": "Azonnal látod, hány decibel van most körülötted: nagy, élő mérés minimummal, átlaggal, maximummal és csúcsértékkel, plusz időbélyeges napló a hangos",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-dbhalo"
           },
@@ -943,7 +943,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-gmoneylite",
         "url": "https://apps.apple.com/hu/app/id6793436548?pt=118326163&ct=geo_pick&mt=8",
         "name": "G+Money Lite: Utazási kiadások",
-        "description": "G+Money Lite — Okos utazási pénznem- és költségkövető",
+        "description": "Tudd, mennyit költhetsz még ma, bárhová utazol. Rögzíts minden vásárlást a helyi pénznemben: azonnal látod a saját pénznemedben, a mai keretből levonva. Ha",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -973,7 +973,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6793436548",
           "inLanguage": "hu",
-          "description": "G+Money Lite — Okos utazási pénznem- és költségkövető",
+          "description": "Tudd, mennyit költhetsz még ma, bárhová utazol. Rögzíts minden vásárlást a helyi pénznemben: azonnal látod a saját pénznemedben, a mai keretből levonva. Ha",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-gmoneylite"
           },
@@ -1075,7 +1075,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-hourstaglite",
         "url": "https://apps.apple.com/hu/app/id6794039979?pt=118326163&ct=geo_pick&mt=8",
         "name": "HoursTag Lite: Ár munkaórában",
-        "description": "HoursTag Lite - Lásd a dolgok valódi árát",
+        "description": "Vásárlás előtt nézd meg, hány munkaórádba kerül valójában. Add meg a nettó órabéredet, és a HoursTag Lite minden árat munkaidőre vált.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1105,7 +1105,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6794039979",
           "inLanguage": "hu",
-          "description": "HoursTag Lite - Lásd a dolgok valódi árát",
+          "description": "Vásárlás előtt nézd meg, hány munkaórádba kerül valójában. Add meg a nettó órabéredet, és a HoursTag Lite minden árat munkaidőre vált.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-hourstaglite"
           },
@@ -1933,7 +1933,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-maskmyfile",
         "url": "https://apps.apple.com/hu/app/id6792850916?pt=118326163&ct=geo_pick&mt=8",
         "name": "Mask My File: Adatok törlése",
-        "description": "Oszd meg biztonságosan úgy, hogy a fontos szövegkörnyezet megmarad. A Mask My File még a küldés előtt megtalálja a személyes adatokat, véglegesen kitakarja",
+        "description": "Takard ki a személyes adatokat, mielőtt megosztasz valamit. A Mask My File megtalálja a neveket, telefonszámokat, e-mail-címeket, lakcímeket, számla- és",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1963,7 +1963,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6792850916",
           "inLanguage": "hu",
-          "description": "Oszd meg biztonságosan úgy, hogy a fontos szövegkörnyezet megmarad. A Mask My File még a küldés előtt megtalálja a személyes adatokat, véglegesen kitakarja",
+          "description": "Takard ki a személyes adatokat, mielőtt megosztasz valamit. A Mask My File megtalálja a neveket, telefonszámokat, e-mail-címeket, lakcímeket, számla- és",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-maskmyfile"
           },
@@ -2065,7 +2065,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-mochidonestamp",
         "url": "https://apps.apple.com/hu/app/id6790800323?pt=118326163&ct=geo_pick&mt=8",
         "name": "Mochi DoneStamp: Legutóbb",
-        "description": "Mikor cseréltél utoljára ágyneműt, locsoltál növényt, hívtad fel a családot, mentetted a fotókat vagy cseréltél szűrőt?",
+        "description": "Mikor cseréltél utoljára ágyneműt, tisztítottad a klíma szűrőjét vagy cseréltettél olajat az autóban?",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2095,7 +2095,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6790800323",
           "inLanguage": "hu",
-          "description": "Mikor cseréltél utoljára ágyneműt, locsoltál növényt, hívtad fel a családot, mentetted a fotókat vagy cseréltél szűrőt?",
+          "description": "Mikor cseréltél utoljára ágyneműt, tisztítottad a klíma szűrőjét vagy cseréltettél olajat az autóban?",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-mochidonestamp"
           },
@@ -2395,7 +2395,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-qrcodehalo",
         "url": "https://apps.apple.com/hu/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
         "name": "QR Code Halo: vonalkódolvasó",
-        "description": "A QR Code Halo azonnal cselekszik, amint beolvas egy kódot. Szkennelj kamerával vagy válassz fotót: a linkek a böngészőben nyílnak meg, a jelkulcsos",
+        "description": "Olvass be QR- és vonalkódokat 20 formátumban kamerával vagy fotóról, és a művelet azonnal megtörténik: a linkek megnyílnak, a Wi-Fi-kódok pedig felajánlják",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2425,7 +2425,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806779853",
           "inLanguage": "hu",
-          "description": "A QR Code Halo azonnal cselekszik, amint beolvas egy kódot. Szkennelj kamerával vagy válassz fotót: a linkek a böngészőben nyílnak meg, a jelkulcsos",
+          "description": "Olvass be QR- és vonalkódokat 20 formátumban kamerával vagy fotóról, és a művelet azonnal megtörténik: a linkek megnyílnak, a Wi-Fi-kódok pedig felajánlják",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-qrcodehalo"
           },
@@ -2659,7 +2659,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-shotinbox",
         "url": "https://apps.apple.com/hu/app/id6802166527?pt=118326163&ct=geo_pick&mt=8",
         "name": "ShotInbox AI: Sort Screenshots",
-        "description": "Képernyőképek rendben",
+        "description": "Képernyőképei automatikusan rendezve: Vásárlás, Nyugták, Jegyek, Utazás, Térképek és helyek, Csevegés és közösségi, Munka és még sok más.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2689,7 +2689,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802166527",
           "inLanguage": "hu",
-          "description": "Képernyőképek rendben",
+          "description": "Képernyőképei automatikusan rendezve: Vásárlás, Nyugták, Jegyek, Utazás, Térképek és helyek, Csevegés és közösségi, Munka és még sok más.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-shotinbox"
           },
@@ -2923,7 +2923,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-stayclock",
         "url": "https://apps.apple.com/hu/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
         "name": "Stay Clock: Asztali Óra",
-        "description": "A Stay Clock mindig bekapcsolt asztali órává alakítja iPhone-ját vagy iPad-jét, amely a szoba túlsó végéből is olvasható. Nagy idő, minden számlaphoz",
+        "description": "A Stay Clock mindig bekapcsolt asztali órává alakítja iPhone-ját vagy iPad-jét, amely a szoba túlsó végéből is olvasható. Válasszon 101 számlap közül",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2953,7 +2953,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6814035888",
           "inLanguage": "hu",
-          "description": "A Stay Clock mindig bekapcsolt asztali órává alakítja iPhone-ját vagy iPad-jét, amely a szoba túlsó végéből is olvasható. Nagy idő, minden számlaphoz",
+          "description": "A Stay Clock mindig bekapcsolt asztali órává alakítja iPhone-ját vagy iPad-jét, amely a szoba túlsó végéből is olvasható. Válasszon 101 számlap közül",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-stayclock"
           },
@@ -2989,7 +2989,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-studydown",
         "url": "https://apps.apple.com/hu/app/id6807335593?pt=118326163&ct=geo_pick&mt=8",
         "name": "Studydown: Időmérés",
-        "description": "Szánj időt arra, ami fontos, és lásd, mennyit tettél érte. A Studydown a projektjeidre, olvasásra és hobbikra fordított időt rögzíti, amikor képernyővel",
+        "description": "Fordítsd képernyővel lefelé a telefont, és indul az időmérés; ha felveszed, megáll, így a tanulási és munkaidődbe csak a valódi fókuszidő számít bele.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3019,7 +3019,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6807335593",
           "inLanguage": "hu",
-          "description": "Szánj időt arra, ami fontos, és lásd, mennyit tettél érte. A Studydown a projektjeidre, olvasásra és hobbikra fordított időt rögzíti, amikor képernyővel",
+          "description": "Fordítsd képernyővel lefelé a telefont, és indul az időmérés; ha felveszed, megáll, így a tanulási és munkaidődbe csak a valódi fókuszidő számít bele.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-studydown"
           },
@@ -3385,7 +3385,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-wifiaidlite",
         "url": "https://apps.apple.com/hu/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
         "name": "WiFi Aid Lite",
-        "description": "Találd meg a valódi problémát. Vásárlás nélkül összesen egy teljes ellenőrzés végezhető, bármelyik eszközzel. Egy választható, egyszeri alkalmazáson belüli",
+        "description": "Nincs internet, vagy minden akad? Egy koppintással az app sorban ellenőrzi a Wi-Fit, a DNS-t és az internetet, majd megmutatja, melyik lépésnél van a hiba",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3415,7 +3415,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6793414462",
           "inLanguage": "hu",
-          "description": "Találd meg a valódi problémát. Vásárlás nélkül összesen egy teljes ellenőrzés végezhető, bármelyik eszközzel. Egy választható, egyszeri alkalmazáson belüli",
+          "description": "Nincs internet, vagy minden akad? Egy koppintással az app sorban ellenőrzi a Wi-Fit, a DNS-t és az internetet, majd megmutatja, melyik lépésnél van a hiba",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-wifiaidlite"
           },
@@ -3451,7 +3451,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-wifiaid",
         "url": "https://apps.apple.com/hu/app/id6790467886?pt=118326163&ct=geo_pick&mt=8",
         "name": "WiFi Aid: Hálózati hibák",
-        "description": "Független útvonal-, DNS-, TCP-, TLS-, időzítés- és stabilitástesztekkel derítse ki a legvalószínűbb okot. Egyszeri előrefizetés, előfizetés, reklám és",
+        "description": "Megint lassú vagy akadozik a Wi-Fi? A WiFi Aid egy koppintással teszteli a Wi-Fi-t, a DNS-t és az internetet, és megmondja, hogy a hiba valószínűleg a",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3481,7 +3481,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6790467886",
           "inLanguage": "hu",
-          "description": "Független útvonal-, DNS-, TCP-, TLS-, időzítés- és stabilitástesztekkel derítse ki a legvalószínűbb okot. Egyszeri előrefizetés, előfizetés, reklám és",
+          "description": "Megint lassú vagy akadozik a Wi-Fi? A WiFi Aid egy koppintással teszteli a Wi-Fi-t, a DNS-t és az internetet, és megmondja, hogy a hiba valószínűleg a",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-wifiaid"
           },
@@ -3517,7 +3517,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-wordmatelite",
         "url": "https://apps.apple.com/hu/app/id6797601720?pt=118326163&ct=geo_pick&mt=8",
         "name": "Wordmate Lite: szótanulás",
-        "description": "Szeretnél végre haladni egy nyelvvel, de estére megint elfogy a nap, és egyetlen új szó sem ragadt meg. A Wordmate Lite napi egy percre rövidíti a tanulást",
+        "description": "Tanulj meg 5 szót nagyjából egy perc alatt: angolul, japánul, koreaiul vagy a 44 nyelv bármelyikén, valós helyzetekből kiindulva, mint az utazás, az",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3547,7 +3547,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6797601720",
           "inLanguage": "hu",
-          "description": "Szeretnél végre haladni egy nyelvvel, de estére megint elfogy a nap, és egyetlen új szó sem ragadt meg. A Wordmate Lite napi egy percre rövidíti a tanulást",
+          "description": "Tanulj meg 5 szót nagyjából egy perc alatt: angolul, japánul, koreaiul vagy a 44 nyelv bármelyikén, valós helyzetekből kiindulva, mint az utazás, az",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-wordmatelite"
           },
@@ -3649,7 +3649,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-zipbox",
         "url": "https://apps.apple.com/hu/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
         "name": "Zipbox: RAR, ZIP, 7z kibontó",
-        "description": "A Zipbox fizetős app az App Store-ban. Egy vásárlás minden funkciót ad, alkalmazáson belüli vásárlás, előfizetés és reklám nélkül. A Zipbox 13 formátumot",
+        "description": "Nyiss meg RAR, 7z, ZIP és további 10 archívumformátumot közvetlenül az iPhone-on. Kibontás előtt nézz bele: előnézet fotókhoz, videókhoz, PDF-hez",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3679,7 +3679,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806776579",
           "inLanguage": "hu",
-          "description": "A Zipbox fizetős app az App Store-ban. Egy vásárlás minden funkciót ad, alkalmazáson belüli vásárlás, előfizetés és reklám nélkül. A Zipbox 13 formátumot",
+          "description": "Nyiss meg RAR, 7z, ZIP és további 10 archívumformátumot közvetlenül az iPhone-on. Kibontás előtt nézz bele: előnézet fotókhoz, videókhoz, PDF-hez",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-zipbox"
           },

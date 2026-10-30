@@ -2,7 +2,7 @@
 title: "HoursTag Lite: Prezzo in ore — Acquisto consapevole: valore | iOS App"
 lang: "it"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstaglite/decision/l/it/index.html"
-modified: "2026-10-29"
+modified: "2026-10-30"
 app_store_id: "6794039979"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # HoursTag Lite: Prezzo in ore — Acquisto consapevole: valore | iOS App
 
-HoursTag Lite - Il vero prezzo delle cose Ogni acquisto costa ore della tua vita. HoursTag Lite converte i prezzi in tempo di lavoro, per spendere con consapevolezza. Scopri il tuo prisma del valore - Costo in tempo: Il tuo valore netto per ora di lavoro - Tipo: Necessità - Desiderio - Impulso - Il tuo schema di valore - Analisi completa del valore - Quanto costa un obiettivo?: Vedi il lavoro dietro un obiettivo e monitora i progressi. - Backup e ripristino: Include reddito, spese, obiettivi e preferenze. - Widget - Apple Watch Tutto resta sul tuo dispositivo. Nessun account, nessun tracciamento. Un solo pagamento · Accesso a vita · Nessun abbonamento Scelte e modifiche illimitate Obiettivi e progressi illimitati Condivisione, analisi e backup Ottimizzata per iPhone Duo.
+Ottimizzata per iPhone Duo. Realizzata con l’SDK più recente, l’app riempie tutto lo schermo interno e adatta il layout automaticamente, sia da chiuso che da aperto. Prima di comprare, scopri quante ore di lavoro ti costa davvero. Inserisci la tua paga oraria netta e HoursTag Lite trasforma ogni prezzo in tempo di lavoro. Segna ogni acquisto come Necessità, Desiderio o Impulso per smascherare gli acquisti d'impulso, e guarda quante ore di lavoro si è presa ogni categoria. Stai risparmiando per qualcosa? Scopri quanto dovresti lavorare per averlo e segui i tuoi progressi. Cosa puoi fare • Trasforma qualsiasi prezzo in ore di lavoro in base alla paga netta • Etichetta gli acquisti: Necessità, Desiderio o Impulso • Ore di lavoro per categoria • Obiettivi di risparmio: le ore dietro ogni obiettivo e i progressi • Backup e ripristino di entrate, spese, obiettivi e impostazioni • Widget della schermata Home e Apple Watch Tutto resta sul tuo dispositivo. Nessun account, nessun tracciamento. Le prime 3 conversioni non richiedono acquisti. Un acquisto in-app unico e facoltativo sblocca conversioni e registrazioni illimitate, obiettivi di risparmio con progressi, tendenze per categoria, condivisione e backup. Ottimizzata per iPhone Duo.
 
 - Denaro e viaggi
 - Gratis per iniziare · sblocco unico

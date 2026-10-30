@@ -2,7 +2,7 @@
 title: "Mochi DoneStamp : Mémo — C'était quand ? Rappels ménage | iOS App"
 lang: "fr-CA"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochidonestamp/decision/l/fr-CA/index.html"
-modified: "2026-10-29"
+modified: "2026-10-30"
 app_store_id: "6790800323"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # Mochi DoneStamp : Mémo — C'était quand ? Rappels ménage | iOS App
 
-Quand avez-vous changé le filtre de la fournaise, hivérisé le robinet extérieur, appelé la famille, changé la literie ou sauvegardé les photos du chalet pour la dernière fois? Mochi DoneStamp mémorise les événements de la vie; ce n’est pas une autre liste de tâches. Une fois l’action terminée, un toucher suffit pour conserver la date et l’heure exactes dans un historique apaisé. Ajoutez au besoin un rythme approximatif ou précis. La prochaine échéance repart toujours du vrai moment où vous avez terminé. • Enregistrement en un toucher avec annulation immédiate • Ajout, modification et suppression des moments passés • Rythmes souples ou précis, de la minute à l’année • Rappels locaux avec actions Terminé et Me le rappeler plus tard • Widgets interactifs sur l’écran d’accueil et l’écran verrouillé • Siri et Raccourcis • Notes et photos compressées facultatives • Analyse des intervalles, sauvegarde complète et export JSON unique • Mode sombre, iPad, VoiceOver, RTL et Dynamic Type La version gratuite comprend un événement actif et un historique illimité. Un seul achat de DoneStamp Pro débloque les événements illimités et toutes les fonctions pour toujours. Aucun compte, aucune publicité, aucune analyse et aucun suivi. Vos données essentielles restent sur votre appareil. Aucun abonnement, jamais. Optimisée pour iPhone Duo.
+Optimisée pour l’iPhone Duo. Conçue avec le SDK le plus récent, l’app remplit tout l’écran intérieur et adapte automatiquement sa mise en page, appareil plié ou ouvert. Quand avez-vous changé les draps, le filtre de la fournaise ou l’huile de l’auto pour la dernière fois? Une fois la tâche faite, touchez une fois et Mochi DoneStamp enregistre l’heure exacte; vous voyez toujours depuis combien de temps c’est fait. Choisissez un rythme pour recevoir un rappel au bon moment; la prochaine date se calcule toujours à partir du jour où vous l’avez vraiment fait. • Enregistrement en un toucher avec annulation immédiate • Ajout, modification et suppression des moments passés • Rythmes souples ou précis, de la minute à l’année • Rappels locaux avec actions Terminé et Me le rappeler plus tard • Widgets interactifs sur l’écran d’accueil et l’écran verrouillé • Siri et Raccourcis • Notes et photos compressées facultatives • Analyse des intervalles, sauvegarde complète et export JSON unique • Mode sombre, iPad, VoiceOver et Dynamic Type • Apple Watch : voyez la dernière fois et enregistrez-la depuis votre poignet La version gratuite comprend un événement actif et un historique illimité. Un seul achat de DoneStamp Pro débloque les événements illimités et toutes les fonctions pour toujours. Aucun compte, aucune publicité, aucune analyse et aucun suivi. Vos données essentielles restent sur votre appareil. Aucun abonnement, jamais. Optimisée pour iPhone Duo.
 
 - Mode de vie
 - Gratuit au départ · déblocage unique

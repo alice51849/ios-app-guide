@@ -6,7 +6,7 @@
   "name": "Lumi Studio Utgivaresökintentskatalog",
   "description": "En förstapartsöversikt över vem varje app är avsedd för, uppgiften de försöker slutföra och den direkta App Store-sökvägen.",
   "inLanguage": "sv",
-  "dateModified": "2026-10-23",
+  "dateModified": "2026-10-30",
   "numberOfItems": 56,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -19,7 +19,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/sv.jsonld#offer-notesstudio100",
         "url": "https://apps.apple.com/se/app/id6798813048?pt=118326163&ct=geo_pick&mt=8",
         "name": "100 Notes Studio: Pen & Paper",
-        "description": "100 Notes Studio samlar handskrift, formaterad text, PDF-kommentarer, sidbunden ljudinspelning och studieverktyg i en privat arbetsyta som fungerar utan",
+        "description": "Skriv anteckningar för hand som med penna på papper: 29 pennor och penslar, från reservoarpenna och blyerts till kalligrafipensel och akvarell, och din",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -49,7 +49,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6798813048",
           "inLanguage": "sv",
-          "description": "100 Notes Studio samlar handskrift, formaterad text, PDF-kommentarer, sidbunden ljudinspelning och studieverktyg i en privat arbetsyta som fungerar utan",
+          "description": "Skriv anteckningar för hand som med penna på papper: 29 pennor och penslar, från reservoarpenna och blyerts till kalligrafipensel och akvarell, och din",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/sv.jsonld#offer-notesstudio100"
           },
@@ -85,7 +85,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/sv.jsonld#offer-aibriefpack",
         "url": "https://apps.apple.com/se/app/id6791658210?pt=118326163&ct=geo_pick&mt=8",
         "name": "AI Brief: Filer till AI-prompt",
-        "description": "Bättre sammanhang. Bättre svar.",
+        "description": "Gör skärmbilder, PDF:er, filer och anteckningar till en välordnad AI-prompt där mål, fakta och källor är sorterade.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -115,7 +115,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6791658210",
           "inLanguage": "sv",
-          "description": "Bättre sammanhang. Bättre svar.",
+          "description": "Gör skärmbilder, PDF:er, filer och anteckningar till en välordnad AI-prompt där mål, fakta och källor är sorterade.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/sv.jsonld#offer-aibriefpack"
           },
@@ -217,7 +217,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/sv.jsonld#offer-battai",
         "url": "https://apps.apple.com/se/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
         "name": "BattAI: Batteriets hälsopoäng",
-        "description": "BattAI BattAI använder fem värden från offentliga iOS-API:er: batterinivå, laddningsstatus, strömsparläge, hela enhetens termiska tillstånd och tid. Andra resultat beräknas från dessa mätningar eller läggs till av dig. Varje uppgift visar källa och gränser.",
+        "description": "Sätt poäng på batterihälsan och följ trenden.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -247,7 +247,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802423998",
           "inLanguage": "sv",
-          "description": "BattAI BattAI använder fem värden från offentliga iOS-API:er: batterinivå, laddningsstatus, strömsparläge, hela enhetens termiska tillstånd och tid. Andra resultat beräknas från dessa mätningar eller läggs till av dig. Varje uppgift visar källa och gränser.",
+          "description": "Sätt poäng på batterihälsan och följ trenden.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/sv.jsonld#offer-battai"
           },
@@ -283,7 +283,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/sv.jsonld#offer-caldaily",
         "url": "https://apps.apple.com/se/app/id6794178671?pt=118326163&ct=geo_pick&mt=8",
         "name": "CalDaily: kalkylator och teman",
-        "description": "En kalkylator du behåller, eftersom den minns vad varje tal handlade om.",
+        "description": "En snygg miniräknare som minns: 100 inbyggda teman och en widget på hemskärmen som räknar utan att du öppnar appen.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -313,7 +313,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6794178671",
           "inLanguage": "sv",
-          "description": "En kalkylator du behåller, eftersom den minns vad varje tal handlade om.",
+          "description": "En snygg miniräknare som minns: 100 inbyggda teman och en widget på hemskärmen som räknar utan att du öppnar appen.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/sv.jsonld#offer-caldaily"
           },
@@ -613,7 +613,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/sv.jsonld#offer-dailymatelite",
         "url": "https://apps.apple.com/se/app/id6794725568?pt=118326163&ct=geo_pick&mt=8",
         "name": "DailyMate Lite: Tala idag",
-        "description": "Prata när det verkligen gäller. Med DailyMate Lite tränar du kompletta replikväxlingar i vardagliga situationer: en naturlig inledning och ett svar som",
+        "description": "Lär dig vilket som helst av 50 språk, inte bara ett: engelska, spanska, franska, japanska, koreanska och många fler. Byt när du vill; varje språk har",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -643,7 +643,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6794725568",
           "inLanguage": "sv",
-          "description": "Prata när det verkligen gäller. Med DailyMate Lite tränar du kompletta replikväxlingar i vardagliga situationer: en naturlig inledning och ett svar som",
+          "description": "Lär dig vilket som helst av 50 språk, inte bara ett: engelska, spanska, franska, japanska, koreanska och många fler. Byt när du vill; varje språk har",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/sv.jsonld#offer-dailymatelite"
           },
@@ -679,7 +679,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/sv.jsonld#offer-dbhalo",
         "url": "https://apps.apple.com/se/app/id6806826699?pt=118326163&ct=geo_pick&mt=8",
         "name": "dB Halo: Ljudnivåmätare",
-        "description": "Se direkt hur hög ljudnivån är omkring dig och hur mycket säkrare exponeringstid som återstår. dB Halo är en privat ljudnivåmätare med spektrumanalys som",
+        "description": "Se direkt hur många decibel det är nu: stort livevärde med minimum, medelvärde, maximum och topp, plus en tidsstämplad logg över höga ljud. Mät oväsen från",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -709,7 +709,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806826699",
           "inLanguage": "sv",
-          "description": "Se direkt hur hög ljudnivån är omkring dig och hur mycket säkrare exponeringstid som återstår. dB Halo är en privat ljudnivåmätare med spektrumanalys som",
+          "description": "Se direkt hur många decibel det är nu: stort livevärde med minimum, medelvärde, maximum och topp, plus en tidsstämplad logg över höga ljud. Mät oväsen från",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/sv.jsonld#offer-dbhalo"
           },
@@ -943,7 +943,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/sv.jsonld#offer-gmoneylite",
         "url": "https://apps.apple.com/se/app/id6793436548?pt=118326163&ct=geo_pick&mt=8",
         "name": "G+Money Lite: Reseutgifter",
-        "description": "G+Money Lite — Smart resevaluta- & utgiftsspårare",
+        "description": "Vet hur mycket du har kvar att spendera i dag, var du än reser. Registrera varje köp i lokal valuta och se det direkt i din egen valuta, draget från dagens",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -973,7 +973,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6793436548",
           "inLanguage": "sv",
-          "description": "G+Money Lite — Smart resevaluta- & utgiftsspårare",
+          "description": "Vet hur mycket du har kvar att spendera i dag, var du än reser. Registrera varje köp i lokal valuta och se det direkt i din egen valuta, draget från dagens",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/sv.jsonld#offer-gmoneylite"
           },
@@ -1075,7 +1075,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/sv.jsonld#offer-hourstaglite",
         "url": "https://apps.apple.com/se/app/id6794039979?pt=118326163&ct=geo_pick&mt=8",
         "name": "HoursTag Lite: Pris i timmar",
-        "description": "HoursTag Lite - Det verkliga priset på saker",
+        "description": "Se innan du köper hur många arbetstimmar det egentligen kostar. Ange din timlön efter skatt så räknar HoursTag Lite om varje pris till arbetstid.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1105,7 +1105,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6794039979",
           "inLanguage": "sv",
-          "description": "HoursTag Lite - Det verkliga priset på saker",
+          "description": "Se innan du köper hur många arbetstimmar det egentligen kostar. Ange din timlön efter skatt så räknar HoursTag Lite om varje pris till arbetstid.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/sv.jsonld#offer-hourstaglite"
           },
@@ -1933,7 +1933,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/sv.jsonld#offer-maskmyfile",
         "url": "https://apps.apple.com/se/app/id6792850916?pt=118326163&ct=geo_pick&mt=8",
         "name": "Mask My File: Radera dina data",
-        "description": "Dela säkert utan att förlora det nyttiga sammanhanget. Mask My File hittar personuppgifter innan du skickar en fil, maskerar permanent det du väljer och",
+        "description": "Svärta personuppgifter innan du delar. Mask My File hittar namn, telefonnummer, mejladresser, adresser, konto- och betaluppgifter och döljer sedan",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1963,7 +1963,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6792850916",
           "inLanguage": "sv",
-          "description": "Dela säkert utan att förlora det nyttiga sammanhanget. Mask My File hittar personuppgifter innan du skickar en fil, maskerar permanent det du väljer och",
+          "description": "Svärta personuppgifter innan du delar. Mask My File hittar namn, telefonnummer, mejladresser, adresser, konto- och betaluppgifter och döljer sedan",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/sv.jsonld#offer-maskmyfile"
           },
@@ -2065,7 +2065,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/sv.jsonld#offer-mochidonestamp",
         "url": "https://apps.apple.com/se/app/id6790800323?pt=118326163&ct=geo_pick&mt=8",
         "name": "Mochi DoneStamp: Senast",
-        "description": "När bytte du senast lakan, vattnade en växt, ringde familjen, säkerhetskopierade foton eller bytte ett filter?",
+        "description": "När bytte du senast lakan, rengjorde fläktfiltret i köket eller bytte olja på bilen?",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2095,7 +2095,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6790800323",
           "inLanguage": "sv",
-          "description": "När bytte du senast lakan, vattnade en växt, ringde familjen, säkerhetskopierade foton eller bytte ett filter?",
+          "description": "När bytte du senast lakan, rengjorde fläktfiltret i köket eller bytte olja på bilen?",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/sv.jsonld#offer-mochidonestamp"
           },
@@ -2395,7 +2395,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/sv.jsonld#offer-qrcodehalo",
         "url": "https://apps.apple.com/se/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
         "name": "QR Code Halo: Skanna och skapa",
-        "description": "QR Code Halo agerar direkt när en kod läses. Skanna med kameran eller välj en bild: länkar öppnas i webbläsaren, koder för inloggning med nyckel och",
+        "description": "Skanna QR-koder och streckkoder i 20 format med kameran eller från en bild, så händer det direkt: länkar öppnas och wifi-koder visar frågan om att",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2425,7 +2425,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806779853",
           "inLanguage": "sv",
-          "description": "QR Code Halo agerar direkt när en kod läses. Skanna med kameran eller välj en bild: länkar öppnas i webbläsaren, koder för inloggning med nyckel och",
+          "description": "Skanna QR-koder och streckkoder i 20 format med kameran eller från en bild, så händer det direkt: länkar öppnas och wifi-koder visar frågan om att",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/sv.jsonld#offer-qrcodehalo"
           },
@@ -2659,7 +2659,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/sv.jsonld#offer-shotinbox",
         "url": "https://apps.apple.com/se/app/id6802166527?pt=118326163&ct=geo_pick&mt=8",
         "name": "ShotInbox AI: Sort Screenshots",
-        "description": "Dina skärmbilder, sorterade",
+        "description": "Dina skärmbilder, automatiskt sorterade: Shopping, Kvitton, Biljetter, Resor, Kartor och platser, Chattar och socialt, Arbete med mera.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2689,7 +2689,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802166527",
           "inLanguage": "sv",
-          "description": "Dina skärmbilder, sorterade",
+          "description": "Dina skärmbilder, automatiskt sorterade: Shopping, Kvitton, Biljetter, Resor, Kartor och platser, Chattar och socialt, Arbete med mera.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/sv.jsonld#offer-shotinbox"
           },
@@ -2923,7 +2923,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/sv.jsonld#offer-stayclock",
         "url": "https://apps.apple.com/se/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
         "name": "Stay Clock: Bordsklocka",
-        "description": "Stay Clock gör din iPhone eller iPad till en bordsklocka som alltid är på och går att läsa tvärs över rummet. Stor tid, en kalender som passar varje",
+        "description": "Stay Clock gör din iPhone eller iPad till en bordsklocka som alltid är på och går att läsa tvärs över rummet. Välj bland 101 urtavlor, även flippklockor",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2953,7 +2953,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6814035888",
           "inLanguage": "sv",
-          "description": "Stay Clock gör din iPhone eller iPad till en bordsklocka som alltid är på och går att läsa tvärs över rummet. Stor tid, en kalender som passar varje",
+          "description": "Stay Clock gör din iPhone eller iPad till en bordsklocka som alltid är på och går att läsa tvärs över rummet. Välj bland 101 urtavlor, även flippklockor",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/sv.jsonld#offer-stayclock"
           },
@@ -2989,7 +2989,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/sv.jsonld#offer-studydown",
         "url": "https://apps.apple.com/se/app/id6807335593?pt=118326163&ct=geo_pick&mt=8",
         "name": "Studydown: Tidtagning",
-        "description": "Ge plats åt det som betyder något och se tiden du lägger på det. Studydown registrerar tid för projekt, läsning och hobbyer när du lägger telefonen med",
+        "description": "Lägg telefonen med skärmen nedåt så startar tiden, lyft den så pausas den, så bara verklig fokustid räknas till dina plugg- och arbetstimmar.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3019,7 +3019,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6807335593",
           "inLanguage": "sv",
-          "description": "Ge plats åt det som betyder något och se tiden du lägger på det. Studydown registrerar tid för projekt, läsning och hobbyer när du lägger telefonen med",
+          "description": "Lägg telefonen med skärmen nedåt så startar tiden, lyft den så pausas den, så bara verklig fokustid räknas till dina plugg- och arbetstimmar.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/sv.jsonld#offer-studydown"
           },
@@ -3385,7 +3385,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/sv.jsonld#offer-wifiaidlite",
         "url": "https://apps.apple.com/se/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
         "name": "WiFi Aid Lite",
-        "description": "Hitta det riktiga problemet. Utan köp kan du göra en fullständig kontroll totalt, med vilket verktyg som helst. Ett valfritt engångsköp i appen låser upp",
+        "description": "Inget internet eller segt? Med ett tryck kontrollerar appen wifi, DNS och internet i tur och ordning och visar var det tar stopp, den mest sannolika",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3415,7 +3415,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6793414462",
           "inLanguage": "sv",
-          "description": "Hitta det riktiga problemet. Utan köp kan du göra en fullständig kontroll totalt, med vilket verktyg som helst. Ett valfritt engångsköp i appen låser upp",
+          "description": "Inget internet eller segt? Med ett tryck kontrollerar appen wifi, DNS och internet i tur och ordning och visar var det tar stopp, den mest sannolika",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/sv.jsonld#offer-wifiaidlite"
           },
@@ -3451,7 +3451,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/sv.jsonld#offer-wifiaid",
         "url": "https://apps.apple.com/se/app/id6790467886?pt=118326163&ct=geo_pick&mt=8",
         "name": "WiFi Aid: Hitta nätverksfel",
-        "description": "Hitta den troligaste orsaken med oberoende tester av vägar, DNS, TCP, TLS, svarstid och stabilitet. En betalning i förskott, utan abonnemang, reklam",
+        "description": "Är wifi-nätet långsamt eller tappar det igen? WiFi Aid testar wifi, DNS och internet med ett tryck och berättar om problemet troligen ligger i ditt wifi, i",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3481,7 +3481,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6790467886",
           "inLanguage": "sv",
-          "description": "Hitta den troligaste orsaken med oberoende tester av vägar, DNS, TCP, TLS, svarstid och stabilitet. En betalning i förskott, utan abonnemang, reklam",
+          "description": "Är wifi-nätet långsamt eller tappar det igen? WiFi Aid testar wifi, DNS och internet med ett tryck och berättar om problemet troligen ligger i ditt wifi, i",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/sv.jsonld#offer-wifiaid"
           },
@@ -3517,7 +3517,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/sv.jsonld#offer-wordmatelite",
         "url": "https://apps.apple.com/se/app/id6797601720?pt=118326163&ct=geo_pick&mt=8",
         "name": "Wordmate Lite: Ordförråd",
-        "description": "Fem ord. En minut. En stig du faktiskt ser.",
+        "description": "Lär dig 5 ord på ungefär en minut: engelska, japanska, koreanska eller något av 44 språk, med start i verkliga situationer som resor, restaurangbesök och",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3547,7 +3547,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6797601720",
           "inLanguage": "sv",
-          "description": "Fem ord. En minut. En stig du faktiskt ser.",
+          "description": "Lär dig 5 ord på ungefär en minut: engelska, japanska, koreanska eller något av 44 språk, med start i verkliga situationer som resor, restaurangbesök och",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/sv.jsonld#offer-wordmatelite"
           },
@@ -3649,7 +3649,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/sv.jsonld#offer-zipbox",
         "url": "https://apps.apple.com/se/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
         "name": "Zipbox: öppna RAR, ZIP, 7z",
-        "description": "Zipbox är en betalapp i App Store. Ett köp ger alla funktioner, utan köp i appen, abonnemang eller reklam. Alla 13 format behandlas på enheten.",
+        "description": "Öppna RAR, 7z, ZIP och 10 andra arkivformat direkt i iPhone. Titta in innan du packar upp: förhandsgranska bilder, video, PDF, text och kod, och plocka",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3679,7 +3679,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806776579",
           "inLanguage": "sv",
-          "description": "Zipbox är en betalapp i App Store. Ett köp ger alla funktioner, utan köp i appen, abonnemang eller reklam. Alla 13 format behandlas på enheten.",
+          "description": "Öppna RAR, 7z, ZIP och 10 andra arkivformat direkt i iPhone. Titta in innan du packar upp: förhandsgranska bilder, video, PDF, text och kod, och plocka",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/sv.jsonld#offer-zipbox"
           },

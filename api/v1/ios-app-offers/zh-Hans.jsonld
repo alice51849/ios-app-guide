@@ -6,7 +6,7 @@
   "name": "Lumi Studio 开发者搜索意图目录",
   "description": "第一方目录，说明每款 App 的适用人群、想完成的任务以及直达 App Store 的下载入口。",
   "inLanguage": "zh-Hans",
-  "dateModified": "2026-10-23",
+  "dateModified": "2026-10-30",
   "numberOfItems": 56,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -19,7 +19,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-notesstudio100",
         "url": "https://apps.apple.com/cn/app/id6798813048?pt=118326163&ct=geo_pick&mt=8",
         "name": "100 Notes Studio: Pen & Paper",
-        "description": "把手写、键入、PDF 阅读批注、页面录音和学习复习集中到一个安静的工作空间。100 Notes Studio 以平板体验为主，也为手机提供完整流程；核心编辑无需联网即可使用。",
+        "description": "像在纸上一样手写笔记：钢笔、铅笔、毛笔、水彩等 29 种笔刷，手写的字之后还能直接搜索。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -49,7 +49,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6798813048",
           "inLanguage": "zh-Hans",
-          "description": "把手写、键入、PDF 阅读批注、页面录音和学习复习集中到一个安静的工作空间。100 Notes Studio 以平板体验为主，也为手机提供完整流程；核心编辑无需联网即可使用。",
+          "description": "像在纸上一样手写笔记：钢笔、铅笔、毛笔、水彩等 29 种笔刷，手写的字之后还能直接搜索。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-notesstudio100"
           },
@@ -85,7 +85,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-aibriefpack",
         "url": "https://apps.apple.com/cn/app/id6791658210?pt=118326163&ct=geo_pick&mt=8",
         "name": "AI Brief：文件转 AI 提示词",
-        "description": "更好的背景，更优的回答。 将截图、文件、笔记和文档转化为一份清晰的 AI 就绪摘要。",
+        "description": "把截图、PDF、文件和笔记整理成一份分段清晰的 AI 提示词：目标、事实、来源一目了然。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -115,7 +115,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6791658210",
           "inLanguage": "zh-Hans",
-          "description": "更好的背景，更优的回答。 将截图、文件、笔记和文档转化为一份清晰的 AI 就绪摘要。",
+          "description": "把截图、PDF、文件和笔记整理成一份分段清晰的 AI 提示词：目标、事实、来源一目了然。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-aibriefpack"
           },
@@ -217,7 +217,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-battai",
         "url": "https://apps.apple.com/cn/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
         "name": "BattAI: 电池健康评分",
-        "description": "BattAI BattAI 只使用公开 iOS API 提供的五项数据：电量、充电状态、低电量模式、整机热状态和时间。其他结果由这些读数计算或由你补充。每项都会显示来源和限制。",
+        "description": "已针对 iPhone Duo 优化。本应用使用最新开发工具包构建，铺满整块内屏，无论折叠还是展开都会自动调整布局。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -247,7 +247,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802423998",
           "inLanguage": "zh-Hans",
-          "description": "BattAI BattAI 只使用公开 iOS API 提供的五项数据：电量、充电状态、低电量模式、整机热状态和时间。其他结果由这些读数计算或由你补充。每项都会显示来源和限制。",
+          "description": "已针对 iPhone Duo 优化。本应用使用最新开发工具包构建，铺满整块内屏，无论折叠还是展开都会自动调整布局。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-battai"
           },
@@ -283,7 +283,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-caldaily",
         "url": "https://apps.apple.com/cn/app/id6794178671?pt=118326163&ct=geo_pick&mt=8",
         "name": "CalDaily 计算器与主题",
-        "description": "一台你会真正留着用的计算器，因为它记得每个数字背后的来龙去脉。",
+        "description": "会记住每一笔结果的计算器：结果可以命名，下周直接搜索那次分摊的晚餐或比较过的贷款，不用重算。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -313,7 +313,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6794178671",
           "inLanguage": "zh-Hans",
-          "description": "一台你会真正留着用的计算器，因为它记得每个数字背后的来龙去脉。",
+          "description": "会记住每一笔结果的计算器：结果可以命名，下周直接搜索那次分摊的晚餐或比较过的贷款，不用重算。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-caldaily"
           },
@@ -613,7 +613,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-dailymatelite",
         "url": "https://apps.apple.com/cn/app/id6794725568?pt=118326163&ct=geo_pick&mt=8",
         "name": "DailyMate Lite：开口练习",
-        "description": "想开口时，不必先在脑中拼凑单词。DailyMate Lite 将旅行、工作、餐饮、健康等生活场景整理成简短提示与自然回复，让你用完整的一问一答练习 50 种语言。",
+        "description": "50 种语言任你选，不只学一种：英语、日语、韩语、西班牙语、法语、泰语、越南语……想学哪种就切换哪种，每种语言的进度与收藏都分开保存。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -643,7 +643,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6794725568",
           "inLanguage": "zh-Hans",
-          "description": "想开口时，不必先在脑中拼凑单词。DailyMate Lite 将旅行、工作、餐饮、健康等生活场景整理成简短提示与自然回复，让你用完整的一问一答练习 50 种语言。",
+          "description": "50 种语言任你选，不只学一种：英语、日语、韩语、西班牙语、法语、泰语、越南语……想学哪种就切换哪种，每种语言的进度与收藏都分开保存。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-dailymatelite"
           },
@@ -679,7 +679,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-dbhalo",
         "url": "https://apps.apple.com/cn/app/id6806826699?pt=118326163&ct=geo_pick&mt=8",
         "name": "dB Halo：声级计",
-        "description": "周围声音有多响？主要能量集中在哪些频段？按所选标准估算，安全时长还剩多久？dB Halo 将实时声级、专业声学分析、噪声剂量与睡眠声音记录集中在一处，所有处理均在设备端完成。支持 iPhone、iPad 和 Apple Watch。",
+        "description": "打开就知道现在多少分贝：大字实时读数，附最低、平均、最高与峰值，吵不吵一眼看懂。楼上脚步、装修施工、邻居噪音都能测，声音事件自动带时间戳记录，还能导出 PDF 报告或 CSV。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -709,7 +709,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806826699",
           "inLanguage": "zh-Hans",
-          "description": "周围声音有多响？主要能量集中在哪些频段？按所选标准估算，安全时长还剩多久？dB Halo 将实时声级、专业声学分析、噪声剂量与睡眠声音记录集中在一处，所有处理均在设备端完成。支持 iPhone、iPad 和 Apple Watch。",
+          "description": "打开就知道现在多少分贝：大字实时读数，附最低、平均、最高与峰值，吵不吵一眼看懂。楼上脚步、装修施工、邻居噪音都能测，声音事件自动带时间戳记录，还能导出 PDF 报告或 CSV。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-dbhalo"
           },
@@ -943,7 +943,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-gmoneylite",
         "url": "https://apps.apple.com/cn/app/id6793436548?pt=118326163&ct=geo_pick&mt=8",
         "name": "G+Money Lite：旅行记账·汇率换算",
-        "description": "G+Money Lite — 聪明的旅行汇率记账",
+        "description": "出国每天还能花多少，打开就知道。用当地币种记下每一笔，自动换算成你的本国货币、扣进今天的预算；超过每日上限就标红。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -973,7 +973,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6793436548",
           "inLanguage": "zh-Hans",
-          "description": "G+Money Lite — 聪明的旅行汇率记账",
+          "description": "出国每天还能花多少，打开就知道。用当地币种记下每一笔，自动换算成你的本国货币、扣进今天的预算；超过每日上限就标红。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-gmoneylite"
           },
@@ -1075,7 +1075,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-hourstaglite",
         "url": "https://apps.apple.com/cn/app/id6794039979?pt=118326163&ct=geo_pick&mt=8",
         "name": "HoursTag Lite：买前先算工时",
-        "description": "HoursTag Lite - 看见每样东西的真实代价",
+        "description": "结账前，先看这笔要工作几小时。输入你的实际到手时薪，HoursTag Lite 就把每个价格换算成工作时数。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1105,7 +1105,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6794039979",
           "inLanguage": "zh-Hans",
-          "description": "HoursTag Lite - 看见每样东西的真实代价",
+          "description": "结账前，先看这笔要工作几小时。输入你的实际到手时薪，HoursTag Lite 就把每个价格换算成工作时数。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-hourstaglite"
           },
@@ -1891,7 +1891,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-maskmyfile",
         "url": "https://apps.apple.com/cn/app/id6792850916?pt=118326163&ct=geo_pick&mt=8",
         "name": "Mask My File：分享前移除个人信息",
-        "description": "安心分享，同时保留有用的上下文。Mask My File 会在你发送文件前找出隐私信息，永久遮挡后，再重新打开并核对新导出的文件，确认无误才显示 Private Ready。",
+        "description": "发文件前先把个人信息涂黑：自动找出姓名、电话、邮箱、地址、账号与支付信息，你选定的地方永久遮挡。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1921,7 +1921,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6792850916",
           "inLanguage": "zh-Hans",
-          "description": "安心分享，同时保留有用的上下文。Mask My File 会在你发送文件前找出隐私信息，永久遮挡后，再重新打开并核对新导出的文件，确认无误才显示 Private Ready。",
+          "description": "发文件前先把个人信息涂黑：自动找出姓名、电话、邮箱、地址、账号与支付信息，你选定的地方永久遮挡。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-maskmyfile"
           },
@@ -2023,7 +2023,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-mochidonestamp",
         "url": "https://apps.apple.com/cn/app/id6790800323?pt=118326163&ct=geo_pick&mt=8",
         "name": "Mochi DoneStamp：上次何时",
-        "description": "上次换床单、给植物浇水、打电话给家人、备份照片或更换滤芯，是什么时候？",
+        "description": "上次换床单、清洗空调滤网、给车换机油，是什么时候？",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2053,7 +2053,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6790800323",
           "inLanguage": "zh-Hans",
-          "description": "上次换床单、给植物浇水、打电话给家人、备份照片或更换滤芯，是什么时候？",
+          "description": "上次换床单、清洗空调滤网、给车换机油，是什么时候？",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-mochidonestamp"
           },
@@ -2353,7 +2353,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-qrcodehalo",
         "url": "https://apps.apple.com/cn/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
         "name": "QR Code Halo：安全扫码与制作",
-        "description": "QR Code Halo 扫到就直接执行。用相机扫描或选择照片：网址直接在浏览器中打开，通行密钥登录码和 App 链接直接交给 iOS，Wi-Fi 码会弹出 iOS 的加入网络提示，电话、短信、邮件和地点则交给相应的 App。联系人和日程会打开 iOS",
+        "description": "扫二维码和条形码，一扫就执行：网址直接打开、Wi-Fi 弹出加入提示，相机或相册照片都能识别，支持 20 种码制。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2383,7 +2383,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806779853",
           "inLanguage": "zh-Hans",
-          "description": "QR Code Halo 扫到就直接执行。用相机扫描或选择照片：网址直接在浏览器中打开，通行密钥登录码和 App 链接直接交给 iOS，Wi-Fi 码会弹出 iOS 的加入网络提示，电话、短信、邮件和地点则交给相应的 App。联系人和日程会打开 iOS",
+          "description": "扫二维码和条形码，一扫就执行：网址直接打开、Wi-Fi 弹出加入提示，相机或相册照片都能识别，支持 20 种码制。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-qrcodehalo"
           },
@@ -2617,7 +2617,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-shotinbox",
         "url": "https://apps.apple.com/cn/app/id6802166527?pt=118326163&ct=geo_pick&mt=8",
         "name": "ShotInbox AI: Sort Screenshots",
-        "description": "截图，井然有序 让每张截图都能找到、处理、清理。",
+        "description": "截图自动分好类：购物、收据、票券、旅行、地图与地点、聊天与社交、工作……每张都归到对的地方。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2647,7 +2647,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802166527",
           "inLanguage": "zh-Hans",
-          "description": "截图，井然有序 让每张截图都能找到、处理、清理。",
+          "description": "截图自动分好类：购物、收据、票券、旅行、地图与地点、聊天与社交、工作……每张都归到对的地方。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-shotinbox"
           },
@@ -2881,7 +2881,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-stayclock",
         "url": "https://apps.apple.com/cn/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
         "name": "Stay Clock:翻页桌面时钟",
-        "description": "Stay Clock 将你的 iPhone 或 iPad 变成一款常亮桌面时钟,即使隔着房间也能看清时间。大号时间数字、与每款表盘搭配的日历,以及一款可以同步出现在 StandBy、锁定屏幕、主屏幕小组件和 Apple Watch 上的统一设计。",
+        "description": "Stay Clock 将你的 iPhone 或 iPad 变成一款充电时保持常亮的桌面时钟，隔着房间也能看清时间。101 款表盘随心换，也有翻页时钟（其中 100 款通过一次性 Lifetime 解锁）；夜里可切换为纯黑底柔和红字，不刺眼。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2911,7 +2911,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6814035888",
           "inLanguage": "zh-Hans",
-          "description": "Stay Clock 将你的 iPhone 或 iPad 变成一款常亮桌面时钟,即使隔着房间也能看清时间。大号时间数字、与每款表盘搭配的日历,以及一款可以同步出现在 StandBy、锁定屏幕、主屏幕小组件和 Apple Watch 上的统一设计。",
+          "description": "Stay Clock 将你的 iPhone 或 iPad 变成一款充电时保持常亮的桌面时钟，隔着房间也能看清时间。101 款表盘随心换，也有翻页时钟（其中 100 款通过一次性 Lifetime 解锁）；夜里可切换为纯黑底柔和红字，不刺眼。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-stayclock"
           },
@@ -2947,7 +2947,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-studydown",
         "url": "https://apps.apple.com/cn/app/id6807335593?pt=118326163&ct=geo_pick&mt=8",
         "name": "Studydown：翻面专注计时",
-        "description": "把手机屏幕朝下，给真正重要的事留出时间。无论是推进项目、阅读、学语言还是练琴，Studydown 都能按活动记录你的投入，让时间不再只有模糊的印象。",
+        "description": "手机屏幕朝下扣在桌上就开始计时，拿起来就暂停，只记下真正专注的学习和工作时长。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2977,7 +2977,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6807335593",
           "inLanguage": "zh-Hans",
-          "description": "把手机屏幕朝下，给真正重要的事留出时间。无论是推进项目、阅读、学语言还是练琴，Studydown 都能按活动记录你的投入，让时间不再只有模糊的印象。",
+          "description": "手机屏幕朝下扣在桌上就开始计时，拿起来就暂停，只记下真正专注的学习和工作时长。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-studydown"
           },
@@ -3329,7 +3329,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-wifiaidlite",
         "url": "https://apps.apple.com/cn/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
         "name": "WiFi Aid Lite：网络故障检测",
-        "description": "“网络又卡了”——问题到底出在路由器、DNS、运营商,还是网站本身?WiFi Aid Lite 通过多条独立路径同时检测 DNS、TCP、TLS、响应时间与稳定性,交叉比对各项证据,告诉你最可能的故障原因,不必再瞎猜、重启碰运气。",
+        "description": "“网络又卡了”——问题出在 Wi-Fi、路由器、DNS，还是网站本身？",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3359,7 +3359,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6793414462",
           "inLanguage": "zh-Hans",
-          "description": "“网络又卡了”——问题到底出在路由器、DNS、运营商,还是网站本身?WiFi Aid Lite 通过多条独立路径同时检测 DNS、TCP、TLS、响应时间与稳定性,交叉比对各项证据,告诉你最可能的故障原因,不必再瞎猜、重启碰运气。",
+          "description": "“网络又卡了”——问题出在 Wi-Fi、路由器、DNS，还是网站本身？",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-wifiaidlite"
           },
@@ -3593,7 +3593,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-zipbox",
         "url": "https://apps.apple.com/cn/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
         "name": "Zipbox 解压缩：RAR ZIP 7z",
-        "description": "Zipbox 是 App Store 付费下载 App，一次购买就包含全部功能，没有 App 内购买、订阅或广告。13 种格式都在设备本地处理。",
+        "description": "手机直接打开 RAR、7z、ZIP 等 13 种压缩包。不用先解压就能看里面有什么，照片、视频、PDF、文本和代码都能预览，只取出你要的那一个文件。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3623,7 +3623,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806776579",
           "inLanguage": "zh-Hans",
-          "description": "Zipbox 是 App Store 付费下载 App，一次购买就包含全部功能，没有 App 内购买、订阅或广告。13 种格式都在设备本地处理。",
+          "description": "手机直接打开 RAR、7z、ZIP 等 13 种压缩包。不用先解压就能看里面有什么，照片、视频、PDF、文本和代码都能预览，只取出你要的那一个文件。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-zipbox"
           },

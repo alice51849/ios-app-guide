@@ -6,7 +6,7 @@
   "name": "Каталог намерений поиска издателя Lumi Studio",
   "description": "Каталог, созданный издателем, с информацией о целевой аудитории каждого приложения, задачах, которые оно помогает решать, и прямой ссылкой в App Store.",
   "inLanguage": "ru",
-  "dateModified": "2026-10-23",
+  "dateModified": "2026-10-30",
   "numberOfItems": 56,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -85,7 +85,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-aibriefpack",
         "url": "https://apps.apple.com/ru/app/id6791658210?pt=118326163&ct=geo_pick&mt=8",
         "name": "AI Brief: Файлы в промпт ИИ",
-        "description": "Лучший контекст. Лучшие ответы.",
+        "description": "Превратите скриншоты, PDF, файлы и заметки в один аккуратный промпт для ИИ, где цель, факты и источники разложены по местам.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -115,7 +115,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6791658210",
           "inLanguage": "ru",
-          "description": "Лучший контекст. Лучшие ответы.",
+          "description": "Превратите скриншоты, PDF, файлы и заметки в один аккуратный промпт для ИИ, где цель, факты и источники разложены по местам.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-aibriefpack"
           },
@@ -217,7 +217,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-battai",
         "url": "https://apps.apple.com/ru/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
         "name": "BattAI: Состояние батареи",
-        "description": "BattAI BattAI использует пять значений из публичных API iOS: уровень заряда, состояние зарядки, режим энергосбережения, тепловое состояние всего устройства и время. Остальные результаты рассчитываются по этим показаниям или добавляются вами. У каждого показателя указаны источник и ограничения.",
+        "description": "Оцените состояние батареи в баллах и следите за динамикой.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -247,7 +247,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802423998",
           "inLanguage": "ru",
-          "description": "BattAI BattAI использует пять значений из публичных API iOS: уровень заряда, состояние зарядки, режим энергосбережения, тепловое состояние всего устройства и время. Остальные результаты рассчитываются по этим показаниям или добавляются вами. У каждого показателя указаны источник и ограничения.",
+          "description": "Оцените состояние батареи в баллах и следите за динамикой.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-battai"
           },
@@ -283,7 +283,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-caldaily",
         "url": "https://apps.apple.com/ru/app/id6794178671?pt=118326163&ct=geo_pick&mt=8",
         "name": "CalDaily: калькулятор и темы",
-        "description": "Калькулятор, который остаётся с вами, потому что помнит, о чём было каждое число.",
+        "description": "Красивый калькулятор, который помнит: 100 встроенных тем и виджет на экране «Домой», который считает, не открывая приложение.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -313,7 +313,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6794178671",
           "inLanguage": "ru",
-          "description": "Калькулятор, который остаётся с вами, потому что помнит, о чём было каждое число.",
+          "description": "Красивый калькулятор, который помнит: 100 встроенных тем и виджет на экране «Домой», который считает, не открывая приложение.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-caldaily"
           },
@@ -613,7 +613,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-dailymatelite",
         "url": "https://apps.apple.com/ru/app/id6794725568?pt=118326163&ct=geo_pick&mt=8",
         "name": "DailyMate Lite: Живые фразы",
-        "description": "Говорите уверенно именно тогда, когда это нужно. DailyMate Lite превращает жизненные ситуации в короткие тренировки: вы видите первую реплику и учитесь",
+        "description": "Учите любой из 50 языков, а не только один: английский, испанский, французский, японский, корейский и многие другие. Переключайтесь когда угодно; у каждого",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -643,7 +643,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6794725568",
           "inLanguage": "ru",
-          "description": "Говорите уверенно именно тогда, когда это нужно. DailyMate Lite превращает жизненные ситуации в короткие тренировки: вы видите первую реплику и учитесь",
+          "description": "Учите любой из 50 языков, а не только один: английский, испанский, французский, японский, корейский и многие другие. Переключайтесь когда угодно; у каждого",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-dailymatelite"
           },
@@ -679,7 +679,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-dbhalo",
         "url": "https://apps.apple.com/ru/app/id6806826699?pt=118326163&ct=geo_pick&mt=8",
         "name": "dB Halo: Шумомер",
-        "description": "dB Halo — шумомер для iPhone, iPad и Apple Watch. Все данные обрабатываются на устройстве. Кольцо Halo помогает сразу оценить текущий уровень звука в дБ",
+        "description": "Сразу видно, сколько децибел вокруг: крупные показания в реальном времени с минимумом, средним, максимумом и пиком, плюс журнал громких событий с отметками",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -709,7 +709,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806826699",
           "inLanguage": "ru",
-          "description": "dB Halo — шумомер для iPhone, iPad и Apple Watch. Все данные обрабатываются на устройстве. Кольцо Halo помогает сразу оценить текущий уровень звука в дБ",
+          "description": "Сразу видно, сколько децибел вокруг: крупные показания в реальном времени с минимумом, средним, максимумом и пиком, плюс журнал громких событий с отметками",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-dbhalo"
           },
@@ -943,7 +943,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-gmoneylite",
         "url": "https://apps.apple.com/ru/app/id6793436548?pt=118326163&ct=geo_pick&mt=8",
         "name": "G+Money Lite: Траты в поездке",
-        "description": "G+Money Lite — Умный трекер валюты и расходов для путешествий",
+        "description": "Знайте, сколько ещё можно потратить сегодня, куда бы вы ни поехали. Записывайте каждую покупку в местной валюте — она сразу пересчитается в вашу валюту и",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -973,7 +973,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6793436548",
           "inLanguage": "ru",
-          "description": "G+Money Lite — Умный трекер валюты и расходов для путешествий",
+          "description": "Знайте, сколько ещё можно потратить сегодня, куда бы вы ни поехали. Записывайте каждую покупку в местной валюте — она сразу пересчитается в вашу валюту и",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-gmoneylite"
           },
@@ -1075,7 +1075,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-hourstaglite",
         "url": "https://apps.apple.com/ru/app/id6794039979?pt=118326163&ct=geo_pick&mt=8",
         "name": "HoursTag Lite: Цена в часах",
-        "description": "HoursTag Lite - Увидьте настоящую цену вещей",
+        "description": "Перед покупкой посмотрите, сколько часов работы она на самом деле стоит. Введите, сколько вы получаете в час на руки, и HoursTag Lite переведёт любую",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1105,7 +1105,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6794039979",
           "inLanguage": "ru",
-          "description": "HoursTag Lite - Увидьте настоящую цену вещей",
+          "description": "Перед покупкой посмотрите, сколько часов работы она на самом деле стоит. Введите, сколько вы получаете в час на руки, и HoursTag Lite переведёт любую",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-hourstaglite"
           },
@@ -1933,7 +1933,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-maskmyfile",
         "url": "https://apps.apple.com/ru/app/id6792850916?pt=118326163&ct=geo_pick&mt=8",
         "name": "Mask My File: Удалите данные",
-        "description": "Делитесь безопасно, не теряя нужного контекста. Mask My File находит личные данные до того, как вы отправите файл, навсегда скрывает только то, что вы",
+        "description": "Закрасьте личные данные, прежде чем делиться. Mask My File находит имена, номера телефонов, адреса почты и проживания, данные счетов и платежей, а затем",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1963,7 +1963,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6792850916",
           "inLanguage": "ru",
-          "description": "Делитесь безопасно, не теряя нужного контекста. Mask My File находит личные данные до того, как вы отправите файл, навсегда скрывает только то, что вы",
+          "description": "Закрасьте личные данные, прежде чем делиться. Mask My File находит имена, номера телефонов, адреса почты и проживания, данные счетов и платежей, а затем",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-maskmyfile"
           },
@@ -2065,7 +2065,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-mochidonestamp",
         "url": "https://apps.apple.com/ru/app/id6790800323?pt=118326163&ct=geo_pick&mt=8",
         "name": "Mochi DoneStamp: Когда было",
-        "description": "Когда вы в последний раз меняли постельное бельё, поливали цветы, звонили близким, сохраняли фотографии или меняли фильтр?",
+        "description": "Когда вы в последний раз меняли постельное бельё, чистили фильтр кондиционера или меняли масло в машине?",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2095,7 +2095,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6790800323",
           "inLanguage": "ru",
-          "description": "Когда вы в последний раз меняли постельное бельё, поливали цветы, звонили близким, сохраняли фотографии или меняли фильтр?",
+          "description": "Когда вы в последний раз меняли постельное бельё, чистили фильтр кондиционера или меняли масло в машине?",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-mochidonestamp"
           },
@@ -2395,7 +2395,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-qrcodehalo",
         "url": "https://apps.apple.com/ru/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
         "name": "QR Code Halo: сканер кодов",
-        "description": "QR Code Halo срабатывает в момент, когда считывает код. Сканируйте камерой или выберите фото: ссылки открываются в браузере, коды для входа с ключом",
+        "description": "Сканируйте QR-коды и штрихкоды 20 форматов камерой или с фото, и действие выполняется сразу: ссылки открываются, а коды Wi-Fi показывают запрос на",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2425,7 +2425,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806779853",
           "inLanguage": "ru",
-          "description": "QR Code Halo срабатывает в момент, когда считывает код. Сканируйте камерой или выберите фото: ссылки открываются в браузере, коды для входа с ключом",
+          "description": "Сканируйте QR-коды и штрихкоды 20 форматов камерой или с фото, и действие выполняется сразу: ссылки открываются, а коды Wi-Fi показывают запрос на",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-qrcodehalo"
           },
@@ -2659,7 +2659,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-shotinbox",
         "url": "https://apps.apple.com/ru/app/id6802166527?pt=118326163&ct=geo_pick&mt=8",
         "name": "ShotInbox AI: Sort Screenshots",
-        "description": "Все снимки по местам",
+        "description": "Скриншоты автоматически сортируются по категориям: Покупки, Чеки, Билеты, Поездки, Карты и места, Чаты и соцсети, Работа и другие.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2689,7 +2689,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802166527",
           "inLanguage": "ru",
-          "description": "Все снимки по местам",
+          "description": "Скриншоты автоматически сортируются по категориям: Покупки, Чеки, Билеты, Поездки, Карты и места, Чаты и соцсети, Работа и другие.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-shotinbox"
           },
@@ -2923,7 +2923,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-stayclock",
         "url": "https://apps.apple.com/ru/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
         "name": "Stay Clock: перекидные часы",
-        "description": "Stay Clock превращает ваш iPhone или iPad в настольные часы, которые светятся без перерыва и читаются с другого конца комнаты. Крупное время, календарь",
+        "description": "Stay Clock превращает ваш iPhone или iPad в настольные часы, которые светятся без перерыва и читаются с другого конца комнаты. Выбирайте из 101 циферблата",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2953,7 +2953,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6814035888",
           "inLanguage": "ru",
-          "description": "Stay Clock превращает ваш iPhone или iPad в настольные часы, которые светятся без перерыва и читаются с другого конца комнаты. Крупное время, календарь",
+          "description": "Stay Clock превращает ваш iPhone или iPad в настольные часы, которые светятся без перерыва и читаются с другого конца комнаты. Выбирайте из 101 циферблата",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-stayclock"
           },
@@ -2989,7 +2989,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-studydown",
         "url": "https://apps.apple.com/ru/app/id6807335593?pt=118326163&ct=geo_pick&mt=8",
         "name": "Studydown: Учёт времени",
-        "description": "Находите время для важного и замечайте свои усилия. Studydown записывает время для рабочих проектов, чтения и увлечений, когда вы кладёте телефон экраном",
+        "description": "Положите телефон экраном вниз, и таймер запустится; возьмёте в руки — встанет на паузу, поэтому в часы учёбы и работы попадает только настоящее время",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3019,7 +3019,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6807335593",
           "inLanguage": "ru",
-          "description": "Находите время для важного и замечайте свои усилия. Studydown записывает время для рабочих проектов, чтения и увлечений, когда вы кладёте телефон экраном",
+          "description": "Положите телефон экраном вниз, и таймер запустится; возьмёте в руки — встанет на паузу, поэтому в часы учёбы и работы попадает только настоящее время",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-studydown"
           },
@@ -3385,7 +3385,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-wifiaidlite",
         "url": "https://apps.apple.com/ru/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
         "name": "WiFi Aid Lite",
-        "description": "Найдите реальную проблему. Без покупки доступна всего одна полная проверка любым инструментом. Необязательная разовая покупка в приложении открывает",
+        "description": "Нет интернета или всё тормозит? Одно касание — и приложение по порядку проверит Wi-Fi, DNS и интернет, покажет, на каком этапе сбой, самую вероятную",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3415,7 +3415,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6793414462",
           "inLanguage": "ru",
-          "description": "Найдите реальную проблему. Без покупки доступна всего одна полная проверка любым инструментом. Необязательная разовая покупка в приложении открывает",
+          "description": "Нет интернета или всё тормозит? Одно касание — и приложение по порядку проверит Wi-Fi, DNS и интернет, покажет, на каком этапе сбой, самую вероятную",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-wifiaidlite"
           },
@@ -3451,7 +3451,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-wifiaid",
         "url": "https://apps.apple.com/ru/app/id6790467886?pt=118326163&ct=geo_pick&mt=8",
         "name": "WiFi Aid: Поиск проблем сети",
-        "description": "Найдите вероятную причину с помощью независимых проверок маршрутов, DNS, TCP, TLS, времени отклика и стабильности. Разовая оплата, без подписки, рекламы",
+        "description": "Wi-Fi снова тормозит или отваливается? WiFi Aid одним касанием проверяет Wi-Fi, DNS и интернет и говорит, где скорее всего проблема: в вашем Wi-Fi, в",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3481,7 +3481,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6790467886",
           "inLanguage": "ru",
-          "description": "Найдите вероятную причину с помощью независимых проверок маршрутов, DNS, TCP, TLS, времени отклика и стабильности. Разовая оплата, без подписки, рекламы",
+          "description": "Wi-Fi снова тормозит или отваливается? WiFi Aid одним касанием проверяет Wi-Fi, DNS и интернет и говорит, где скорее всего проблема: в вашем Wi-Fi, в",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-wifiaid"
           },
@@ -3517,7 +3517,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-wordmatelite",
         "url": "https://apps.apple.com/ru/app/id6797601720?pt=118326163&ct=geo_pick&mt=8",
         "name": "Wordmate Lite: 5 слов в день",
-        "description": "Большинство планов по изучению языка срывается просто потому, что они слишком большие. Wordmate Lite начинает с другого конца: одна минута, пять слов и",
+        "description": "Учите 5 слов примерно за минуту: английский, японский, корейский или любой из 44 языков, начиная с реальных ситуаций вроде путешествий, кафе и покупок.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3547,7 +3547,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6797601720",
           "inLanguage": "ru",
-          "description": "Большинство планов по изучению языка срывается просто потому, что они слишком большие. Wordmate Lite начинает с другого конца: одна минута, пять слов и",
+          "description": "Учите 5 слов примерно за минуту: английский, японский, корейский или любой из 44 языков, начиная с реальных ситуаций вроде путешествий, кафе и покупок.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-wordmatelite"
           },
@@ -3649,7 +3649,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-zipbox",
         "url": "https://apps.apple.com/ru/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
         "name": "Zipbox: открыть RAR, ZIP, 7z",
-        "description": "Zipbox: платное приложение из App Store. Одна покупка включает все функции: без встроенных покупок, подписок и рекламы. Все 13 форматов обрабатываются на",
+        "description": "Открывайте RAR, 7z, ZIP и ещё 10 форматов архивов прямо на iPhone. Загляните внутрь до распаковки: просмотр фото, видео, PDF, текста и кода, а затем",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3679,7 +3679,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806776579",
           "inLanguage": "ru",
-          "description": "Zipbox: платное приложение из App Store. Одна покупка включает все функции: без встроенных покупок, подписок и рекламы. Все 13 форматов обрабатываются на",
+          "description": "Открывайте RAR, 7z, ZIP и ещё 10 форматов архивов прямо на iPhone. Загляните внутрь до распаковки: просмотр фото, видео, PDF, текста и кода, а затем",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-zipbox"
           },

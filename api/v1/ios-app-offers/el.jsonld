@@ -6,7 +6,7 @@
   "name": "Κατάλογος Προθέσεων Αναζήτησης Εκδότη Lumi Studio",
   "description": "Ένας πρωτογενής κατάλογος που δείχνει για ποιον προορίζεται κάθε εφαρμογή, το έργο που προσπαθεί να ολοκληρώσει και την άμεση διαδρομή στο App Store.",
   "inLanguage": "el",
-  "dateModified": "2026-10-23",
+  "dateModified": "2026-10-30",
   "numberOfItems": 56,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -19,7 +19,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-notesstudio100",
         "url": "https://apps.apple.com/gr/app/id6798813048?pt=118326163&ct=geo_pick&mt=8",
         "name": "100 Notes Studio: Pen & Paper",
-        "description": "Μία εφαρμογή αντί για πέντε. Το 100 Notes Studio είναι ένα ιδιωτικό και εντελώς offline στούντιο μολυβιού και χαρτιού για tablet και τηλέφωνο, με",
+        "description": "Γράψτε στο χέρι σαν με στυλό σε χαρτί: 29 πένες και πινέλα, από πένα και μολύβι έως πινέλο καλλιγραφίας και ακουαρέλα, με αναζήτηση και στον γραφικό σας",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -49,7 +49,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6798813048",
           "inLanguage": "el",
-          "description": "Μία εφαρμογή αντί για πέντε. Το 100 Notes Studio είναι ένα ιδιωτικό και εντελώς offline στούντιο μολυβιού και χαρτιού για tablet και τηλέφωνο, με",
+          "description": "Γράψτε στο χέρι σαν με στυλό σε χαρτί: 29 πένες και πινέλα, από πένα και μολύβι έως πινέλο καλλιγραφίας και ακουαρέλα, με αναζήτηση και στον γραφικό σας",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-notesstudio100"
           },
@@ -85,7 +85,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-aibriefpack",
         "url": "https://apps.apple.com/gr/app/id6791658210?pt=118326163&ct=geo_pick&mt=8",
         "name": "AI Brief: Αρχεία σε AI prompt",
-        "description": "Καλύτερο πλαίσιο. Καλύτερες απαντήσεις.",
+        "description": "Μετατρέψτε στιγμιότυπα οθόνης, PDF, αρχεία και σημειώσεις σε ένα οργανωμένο AI prompt, με τον στόχο, τα γεγονότα και τις πηγές ταξινομημένα.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -115,7 +115,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6791658210",
           "inLanguage": "el",
-          "description": "Καλύτερο πλαίσιο. Καλύτερες απαντήσεις.",
+          "description": "Μετατρέψτε στιγμιότυπα οθόνης, PDF, αρχεία και σημειώσεις σε ένα οργανωμένο AI prompt, με τον στόχο, τα γεγονότα και τις πηγές ταξινομημένα.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-aibriefpack"
           },
@@ -217,7 +217,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-battai",
         "url": "https://apps.apple.com/gr/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
         "name": "BattAI: Υγεία μπαταρίας",
-        "description": "BattAI Το BattAI χρησιμοποιεί πέντε τιμές από τα δημόσια API του iOS: επίπεδο μπαταρίας, κατάσταση φόρτισης, Λειτουργία χαμηλής ισχύος, θερμική κατάσταση όλης της συσκευής και χρόνο. Τα άλλα αποτελέσματα υπολογίζονται από αυτές τις μετρήσεις ή προστίθενται από εσάς. Κάθε στοιχείο δείχνει την πηγή και τα όριά του.",
+        "description": "Βαθμολογήστε την υγεία της μπαταρίας και δείτε την πορεία της.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -247,7 +247,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802423998",
           "inLanguage": "el",
-          "description": "BattAI Το BattAI χρησιμοποιεί πέντε τιμές από τα δημόσια API του iOS: επίπεδο μπαταρίας, κατάσταση φόρτισης, Λειτουργία χαμηλής ισχύος, θερμική κατάσταση όλης της συσκευής και χρόνο. Τα άλλα αποτελέσματα υπολογίζονται από αυτές τις μετρήσεις ή προστίθενται από εσάς. Κάθε στοιχείο δείχνει την πηγή και τα όριά του.",
+          "description": "Βαθμολογήστε την υγεία της μπαταρίας και δείτε την πορεία της.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-battai"
           },
@@ -283,7 +283,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-caldaily",
         "url": "https://apps.apple.com/gr/app/id6794178671?pt=118326163&ct=geo_pick&mt=8",
         "name": "CalDaily αριθμομηχανή",
-        "description": "Μια αριθμομηχανή που θα συνεχίσετε πραγματικά να χρησιμοποιείτε, επειδή θυμάται τι κρύβεται πίσω από κάθε αριθμό.",
+        "description": "Μια όμορφη αριθμομηχανή που θυμάται: 100 ενσωματωμένα θέματα και ένα widget στην αρχική οθόνη που υπολογίζει χωρίς να ανοίξετε την εφαρμογή.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -313,7 +313,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6794178671",
           "inLanguage": "el",
-          "description": "Μια αριθμομηχανή που θα συνεχίσετε πραγματικά να χρησιμοποιείτε, επειδή θυμάται τι κρύβεται πίσω από κάθε αριθμό.",
+          "description": "Μια όμορφη αριθμομηχανή που θυμάται: 100 ενσωματωμένα θέματα και ένα widget στην αρχική οθόνη που υπολογίζει χωρίς να ανοίξετε την εφαρμογή.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-caldaily"
           },
@@ -613,7 +613,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-dailymatelite",
         "url": "https://apps.apple.com/gr/app/id6794725568?pt=118326163&ct=geo_pick&mt=8",
         "name": "DailyMate Lite: Μίλα σήμερα",
-        "description": "Μιλήστε φυσικά όταν έρθει η στιγμή. Το DailyMate Lite μετατρέπει καθημερινές καταστάσεις σε σύντομη εξάσκηση με ατάκες και απαντήσεις σε 50 γλώσσες",
+        "description": "Μάθετε όποια από τις 50 γλώσσες θέλετε, όχι μόνο μία: αγγλικά, ισπανικά, γαλλικά, ιαπωνικά, κορεατικά και πολλές ακόμη. Αλλάξτε όποτε θέλετε· κάθε γλώσσα",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -643,7 +643,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6794725568",
           "inLanguage": "el",
-          "description": "Μιλήστε φυσικά όταν έρθει η στιγμή. Το DailyMate Lite μετατρέπει καθημερινές καταστάσεις σε σύντομη εξάσκηση με ατάκες και απαντήσεις σε 50 γλώσσες",
+          "description": "Μάθετε όποια από τις 50 γλώσσες θέλετε, όχι μόνο μία: αγγλικά, ισπανικά, γαλλικά, ιαπωνικά, κορεατικά και πολλές ακόμη. Αλλάξτε όποτε θέλετε· κάθε γλώσσα",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-dailymatelite"
           },
@@ -679,7 +679,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-dbhalo",
         "url": "https://apps.apple.com/gr/app/id6806826699?pt=118326163&ct=geo_pick&mt=8",
         "name": "dB Halo: Ηχόμετρο",
-        "description": "Το dB Halo μετατρέπει το iPhone ή το iPad σε εύχρηστο ηχόμετρο με επεξεργασία στη συσκευή, ενώ προσφέρει αυτόνομη μέτρηση στο Apple Watch. Ο μεγάλος",
+        "description": "Δείτε αμέσως πόσα ντεσιμπέλ έχει γύρω σας: μεγάλη ζωντανή ένδειξη με ελάχιστη, μέση και μέγιστη τιμή και κορυφή, μαζί με αρχείο δυνατών ήχων με χρονικές",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -709,7 +709,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806826699",
           "inLanguage": "el",
-          "description": "Το dB Halo μετατρέπει το iPhone ή το iPad σε εύχρηστο ηχόμετρο με επεξεργασία στη συσκευή, ενώ προσφέρει αυτόνομη μέτρηση στο Apple Watch. Ο μεγάλος",
+          "description": "Δείτε αμέσως πόσα ντεσιμπέλ έχει γύρω σας: μεγάλη ζωντανή ένδειξη με ελάχιστη, μέση και μέγιστη τιμή και κορυφή, μαζί με αρχείο δυνατών ήχων με χρονικές",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-dbhalo"
           },
@@ -943,7 +943,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-gmoneylite",
         "url": "https://apps.apple.com/gr/app/id6793436548?pt=118326163&ct=geo_pick&mt=8",
         "name": "G+Money Lite: Έξοδα ταξιδιού",
-        "description": "G+Money Lite — Έξυπνος μετατροπέας νομισμάτων & παρακολούθησης εξόδων",
+        "description": "Μάθε πόσα μπορείς ακόμη να ξοδέψεις σήμερα, όπου κι αν ταξιδεύεις. Κατέγραψε κάθε αγορά στο τοπικό νόμισμα και δες τη αμέσως στο δικό σου νόμισμα",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -973,7 +973,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6793436548",
           "inLanguage": "el",
-          "description": "G+Money Lite — Έξυπνος μετατροπέας νομισμάτων & παρακολούθησης εξόδων",
+          "description": "Μάθε πόσα μπορείς ακόμη να ξοδέψεις σήμερα, όπου κι αν ταξιδεύεις. Κατέγραψε κάθε αγορά στο τοπικό νόμισμα και δες τη αμέσως στο δικό σου νόμισμα",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-gmoneylite"
           },
@@ -1075,7 +1075,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-hourstaglite",
         "url": "https://apps.apple.com/gr/app/id6794039979?pt=118326163&ct=geo_pick&mt=8",
         "name": "HoursTag Lite: Τιμή σε ώρες",
-        "description": "HoursTag Lite - Δείτε την πραγματική τιμή των πραγμάτων",
+        "description": "Πριν αγοράσεις, δες πόσες ώρες δουλειάς κοστίζει πραγματικά. Βάλε τον καθαρό ωριαίο μισθό σου και το HoursTag Lite μετατρέπει κάθε τιμή σε χρόνο εργασίας.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1105,7 +1105,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6794039979",
           "inLanguage": "el",
-          "description": "HoursTag Lite - Δείτε την πραγματική τιμή των πραγμάτων",
+          "description": "Πριν αγοράσεις, δες πόσες ώρες δουλειάς κοστίζει πραγματικά. Βάλε τον καθαρό ωριαίο μισθό σου και το HoursTag Lite μετατρέπει κάθε τιμή σε χρόνο εργασίας.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-hourstaglite"
           },
@@ -1933,7 +1933,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-maskmyfile",
         "url": "https://apps.apple.com/gr/app/id6792850916?pt=118326163&ct=geo_pick&mt=8",
         "name": "Mask My File: Σβήστε δεδομένα",
-        "description": "Μοιραστείτε με ασφάλεια χωρίς να χάσετε το χρήσιμο πλαίσιο. Το Mask My File εντοπίζει ιδιωτικά στοιχεία προτού στείλετε ένα αρχείο, αποκρύπτει μόνιμα",
+        "description": "Μαυρίστε τα προσωπικά στοιχεία πριν τα μοιραστείτε. Το Mask My File βρίσκει ονόματα, τηλέφωνα, email, διευθύνσεις, στοιχεία λογαριασμών και πληρωμών και",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1963,7 +1963,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6792850916",
           "inLanguage": "el",
-          "description": "Μοιραστείτε με ασφάλεια χωρίς να χάσετε το χρήσιμο πλαίσιο. Το Mask My File εντοπίζει ιδιωτικά στοιχεία προτού στείλετε ένα αρχείο, αποκρύπτει μόνιμα",
+          "description": "Μαυρίστε τα προσωπικά στοιχεία πριν τα μοιραστείτε. Το Mask My File βρίσκει ονόματα, τηλέφωνα, email, διευθύνσεις, στοιχεία λογαριασμών και πληρωμών και",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-maskmyfile"
           },
@@ -2065,7 +2065,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-mochidonestamp",
         "url": "https://apps.apple.com/gr/app/id6790800323?pt=118326163&ct=geo_pick&mt=8",
         "name": "Mochi DoneStamp: Τελευταία",
-        "description": "Πότε άλλαξες τελευταία τα σεντόνια, πότισες ένα φυτό, τηλεφώνησες στην οικογένεια, αποθήκευσες φωτογραφίες ή άλλαξες φίλτρο;",
+        "description": "Πότε άλλαξες τελευταία φορά τα σεντόνια, καθάρισες το φίλτρο του κλιματιστικού ή άλλαξες λάδια στο αυτοκίνητο;",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2095,7 +2095,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6790800323",
           "inLanguage": "el",
-          "description": "Πότε άλλαξες τελευταία τα σεντόνια, πότισες ένα φυτό, τηλεφώνησες στην οικογένεια, αποθήκευσες φωτογραφίες ή άλλαξες φίλτρο;",
+          "description": "Πότε άλλαξες τελευταία φορά τα σεντόνια, καθάρισες το φίλτρο του κλιματιστικού ή άλλαξες λάδια στο αυτοκίνητο;",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-mochidonestamp"
           },
@@ -2395,7 +2395,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-qrcodehalo",
         "url": "https://apps.apple.com/gr/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
         "name": "QR Code Halo: Σάρωση",
-        "description": "Το QR Code Halo ενεργεί τη στιγμή που διαβάζει έναν κωδικό. Σαρώστε με την κάμερα ή επιλέξτε μια φωτογραφία: οι σύνδεσμοι ανοίγουν στο πρόγραμμα περιήγησης",
+        "description": "Σαρώστε κωδικούς QR και barcode σε 20 μορφές, με την κάμερα ή από φωτογραφία, και η ενέργεια γίνεται αμέσως: οι σύνδεσμοι ανοίγουν και οι κωδικοί Wi-Fi",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2425,7 +2425,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806779853",
           "inLanguage": "el",
-          "description": "Το QR Code Halo ενεργεί τη στιγμή που διαβάζει έναν κωδικό. Σαρώστε με την κάμερα ή επιλέξτε μια φωτογραφία: οι σύνδεσμοι ανοίγουν στο πρόγραμμα περιήγησης",
+          "description": "Σαρώστε κωδικούς QR και barcode σε 20 μορφές, με την κάμερα ή από φωτογραφία, και η ενέργεια γίνεται αμέσως: οι σύνδεσμοι ανοίγουν και οι κωδικοί Wi-Fi",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-qrcodehalo"
           },
@@ -2659,7 +2659,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-shotinbox",
         "url": "https://apps.apple.com/gr/app/id6802166527?pt=118326163&ct=geo_pick&mt=8",
         "name": "ShotInbox AI: Sort Screenshots",
-        "description": "Τα στιγμιότυπά σας, τακτοποιημένα",
+        "description": "Τα στιγμιότυπα οθόνης σας ταξινομούνται αυτόματα: Αγορές, Αποδείξεις, Εισιτήρια, Ταξίδια, Χάρτες και μέρη, Συνομιλίες και κοινωνικά, Εργασία και άλλα.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2689,7 +2689,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802166527",
           "inLanguage": "el",
-          "description": "Τα στιγμιότυπά σας, τακτοποιημένα",
+          "description": "Τα στιγμιότυπα οθόνης σας ταξινομούνται αυτόματα: Αγορές, Αποδείξεις, Εισιτήρια, Ταξίδια, Χάρτες και μέρη, Συνομιλίες και κοινωνικά, Εργασία και άλλα.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-shotinbox"
           },
@@ -2923,7 +2923,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-stayclock",
         "url": "https://apps.apple.com/gr/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
         "name": "Stay Clock: ρολόι flip",
-        "description": "Το Stay Clock μετατρέπει το iPhone ή το iPad σας σε ένα επιτραπέζιο ρολόι πάντα αναμμένο, ευανάγνωστο και από την άλλη άκρη του δωματίου. Μεγάλη ώρα",
+        "description": "Το Stay Clock μετατρέπει το iPhone ή το iPad σας σε ένα επιτραπέζιο ρολόι πάντα αναμμένο, ευανάγνωστο και από την άλλη άκρη του δωματίου. Διαλέξτε",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2953,7 +2953,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6814035888",
           "inLanguage": "el",
-          "description": "Το Stay Clock μετατρέπει το iPhone ή το iPad σας σε ένα επιτραπέζιο ρολόι πάντα αναμμένο, ευανάγνωστο και από την άλλη άκρη του δωματίου. Μεγάλη ώρα",
+          "description": "Το Stay Clock μετατρέπει το iPhone ή το iPad σας σε ένα επιτραπέζιο ρολόι πάντα αναμμένο, ευανάγνωστο και από την άλλη άκρη του δωματίου. Διαλέξτε",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-stayclock"
           },
@@ -2989,7 +2989,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-studydown",
         "url": "https://apps.apple.com/gr/app/id6807335593?pt=118326163&ct=geo_pick&mt=8",
         "name": "Studydown: Χρονόμετρο",
-        "description": "Δώστε χρόνο σε όσα έχουν σημασία και δείτε την προσπάθειά σας να αποτυπώνεται. Το Studydown καταγράφει τον χρόνο για ένα έργο, το διάβασμα ή ένα χόμπι",
+        "description": "Γύρνα το κινητό με την οθόνη προς τα κάτω και το χρονόμετρο ξεκινά· σήκωσέ το και σταματά, έτσι μετρά μόνο ο πραγματικός χρόνος συγκέντρωσης στις ώρες",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3019,7 +3019,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6807335593",
           "inLanguage": "el",
-          "description": "Δώστε χρόνο σε όσα έχουν σημασία και δείτε την προσπάθειά σας να αποτυπώνεται. Το Studydown καταγράφει τον χρόνο για ένα έργο, το διάβασμα ή ένα χόμπι",
+          "description": "Γύρνα το κινητό με την οθόνη προς τα κάτω και το χρονόμετρο ξεκινά· σήκωσέ το και σταματά, έτσι μετρά μόνο ο πραγματικός χρόνος συγκέντρωσης στις ώρες",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-studydown"
           },
@@ -3385,7 +3385,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-wifiaidlite",
         "url": "https://apps.apple.com/gr/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
         "name": "WiFi Aid Lite",
-        "description": "Βρείτε το πραγματικό πρόβλημα. Χωρίς αγορά μπορείτε να κάνετε συνολικά έναν πλήρη έλεγχο, με οποιοδήποτε εργαλείο. Μια προαιρετική εφάπαξ αγορά μέσα στην",
+        "description": "Δεν έχετε ίντερνετ ή όλα σέρνονται; Με ένα πάτημα η εφαρμογή ελέγχει με τη σειρά το Wi-Fi, το DNS και το διαδίκτυο και δείχνει σε ποιο βήμα κολλάει, ποια",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3415,7 +3415,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6793414462",
           "inLanguage": "el",
-          "description": "Βρείτε το πραγματικό πρόβλημα. Χωρίς αγορά μπορείτε να κάνετε συνολικά έναν πλήρη έλεγχο, με οποιοδήποτε εργαλείο. Μια προαιρετική εφάπαξ αγορά μέσα στην",
+          "description": "Δεν έχετε ίντερνετ ή όλα σέρνονται; Με ένα πάτημα η εφαρμογή ελέγχει με τη σειρά το Wi-Fi, το DNS και το διαδίκτυο και δείχνει σε ποιο βήμα κολλάει, ποια",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-wifiaidlite"
           },
@@ -3451,7 +3451,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-wifiaid",
         "url": "https://apps.apple.com/gr/app/id6790467886?pt=118326163&ct=geo_pick&mt=8",
         "name": "WiFi Aid: Εντοπισμός βλαβών",
-        "description": "Βρείτε την πιθανότερη αιτία με ανεξάρτητους ελέγχους διαδρομών, DNS, TCP, TLS, χρόνων και σταθερότητας. Μία αρχική πληρωμή, χωρίς συνδρομή, διαφημίσεις ή",
+        "description": "Το Wi-Fi πάλι αργό ή πέφτει; Το WiFi Aid ελέγχει Wi-Fi, DNS και internet με ένα πάτημα και σας λέει αν το πρόβλημα είναι πιθανότατα στο Wi-Fi, στο DNS",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3481,7 +3481,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6790467886",
           "inLanguage": "el",
-          "description": "Βρείτε την πιθανότερη αιτία με ανεξάρτητους ελέγχους διαδρομών, DNS, TCP, TLS, χρόνων και σταθερότητας. Μία αρχική πληρωμή, χωρίς συνδρομή, διαφημίσεις ή",
+          "description": "Το Wi-Fi πάλι αργό ή πέφτει; Το WiFi Aid ελέγχει Wi-Fi, DNS και internet με ένα πάτημα και σας λέει αν το πρόβλημα είναι πιθανότατα στο Wi-Fi, στο DNS",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-wifiaid"
           },
@@ -3517,7 +3517,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-wordmatelite",
         "url": "https://apps.apple.com/gr/app/id6797601720?pt=118326163&ct=geo_pick&mt=8",
         "name": "Wordmate Lite: λεξιλόγιο",
-        "description": "Θέλεις επιτέλους να προχωρήσεις σε μια ξένη γλώσσα, αλλά το βράδυ περνάει ξανά χωρίς ούτε μία καινούργια λέξη. Το Wordmate Lite περιορίζει τη μελέτη σε ένα",
+        "description": "Μάθε 5 λέξεις σε περίπου ένα λεπτό: αγγλικά, ιαπωνικά, κορεατικά ή όποια από τις 44 γλώσσες θέλεις, ξεκινώντας από πραγματικές καταστάσεις όπως ταξίδια",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3547,7 +3547,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6797601720",
           "inLanguage": "el",
-          "description": "Θέλεις επιτέλους να προχωρήσεις σε μια ξένη γλώσσα, αλλά το βράδυ περνάει ξανά χωρίς ούτε μία καινούργια λέξη. Το Wordmate Lite περιορίζει τη μελέτη σε ένα",
+          "description": "Μάθε 5 λέξεις σε περίπου ένα λεπτό: αγγλικά, ιαπωνικά, κορεατικά ή όποια από τις 44 γλώσσες θέλεις, ξεκινώντας από πραγματικές καταστάσεις όπως ταξίδια",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-wordmatelite"
           },
@@ -3649,7 +3649,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-zipbox",
         "url": "https://apps.apple.com/gr/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
         "name": "Zipbox: άνοιγμα RAR, ZIP, 7z",
-        "description": "Το Zipbox είναι επί πληρωμή στο App Store. Μία αγορά δίνει τα πάντα, χωρίς αγορές εντός εφαρμογής, συνδρομές ή διαφημίσεις. Και οι 13 μορφές επεξεργάζονται",
+        "description": "Ανοίξτε RAR, 7z, ZIP και 10 ακόμη μορφές αρχείων συμπίεσης απευθείας στο iPhone. Δείτε το περιεχόμενο πριν την αποσυμπίεση: προεπισκόπηση φωτογραφιών",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3679,7 +3679,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806776579",
           "inLanguage": "el",
-          "description": "Το Zipbox είναι επί πληρωμή στο App Store. Μία αγορά δίνει τα πάντα, χωρίς αγορές εντός εφαρμογής, συνδρομές ή διαφημίσεις. Και οι 13 μορφές επεξεργάζονται",
+          "description": "Ανοίξτε RAR, 7z, ZIP και 10 ακόμη μορφές αρχείων συμπίεσης απευθείας στο iPhone. Δείτε το περιεχόμενο πριν την αποσυμπίεση: προεπισκόπηση φωτογραφιών",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-zipbox"
           },

@@ -6,7 +6,7 @@
   "name": "קטלוג כוונות החיפוש של Lumi Studio מפרסם",
   "description": "קטלוג רשמי המציג עבור מי מיועדת כל אפליקציה, המשימה שהיא נועדה לבצע, והמסלול הישיר ל-App Store.",
   "inLanguage": "he",
-  "dateModified": "2026-10-23",
+  "dateModified": "2026-10-30",
   "numberOfItems": 56,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -19,7 +19,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-notesstudio100",
         "url": "https://apps.apple.com/il/app/id6798813048?pt=118326163&ct=geo_pick&mt=8",
         "name": "100 Notes Studio: Pen & Paper",
-        "description": "אפליקציה אחת במקום חמש. 100 Notes Studio הוא סטודיו פרטי ואופליין לחלוטין לנייר ולעט, עם ממשק מלא לטאבלט ולטלפון. כותבים ביד, מקלידים, מסמנים PDF, מצרפים",
+        "description": "כתבו הערות ביד כמו בעט על נייר: 29 עטים ומכחולים, מעט נובע ועיפרון ועד מכחול קליגרפיה וצבעי מים, ואפשר לחפש בכתב היד שלכם אחר כך.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -49,7 +49,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6798813048",
           "inLanguage": "he",
-          "description": "אפליקציה אחת במקום חמש. 100 Notes Studio הוא סטודיו פרטי ואופליין לחלוטין לנייר ולעט, עם ממשק מלא לטאבלט ולטלפון. כותבים ביד, מקלידים, מסמנים PDF, מצרפים",
+          "description": "כתבו הערות ביד כמו בעט על נייר: 29 עטים ומכחולים, מעט נובע ועיפרון ועד מכחול קליגרפיה וצבעי מים, ואפשר לחפש בכתב היד שלכם אחר כך.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-notesstudio100"
           },
@@ -85,7 +85,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-aibriefpack",
         "url": "https://apps.apple.com/il/app/id6791658210?pt=118326163&ct=geo_pick&mt=8",
         "name": "AI Brief: מקבצים לפרומפט AI",
-        "description": "הקשר טוב יותר. תשובות טובות יותר.",
+        "description": "הפכו צילומי מסך, קובצי PDF, קבצים ופתקים לפרומפט AI אחד מסודר, שבו המטרה, העובדות והמקורות ממוינים.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -115,7 +115,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6791658210",
           "inLanguage": "he",
-          "description": "הקשר טוב יותר. תשובות טובות יותר.",
+          "description": "הפכו צילומי מסך, קובצי PDF, קבצים ופתקים לפרומפט AI אחד מסודר, שבו המטרה, העובדות והמקורות ממוינים.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-aibriefpack"
           },
@@ -217,7 +217,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-battai",
         "url": "https://apps.apple.com/il/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
         "name": "BattAI: ציון בריאות הסוללה",
-        "description": "BattAI ⁦BattAI⁩ משתמש בחמישה ערכים מממשקי ⁦iOS API⁩ ציבוריים: רמת הסוללה, מצב הטעינה, מצב סוללה חלשה, המצב התרמי של המכשיר כולו והזמן. תוצאות אחרות מחושבות מהמדידות האלה או נוספות על ידך. ליד כל פרט מוצגים המקור והמגבלות.",
+        "description": "בדיקת סוללה עם ציון בריאות ומעקב אחרי המגמה.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -247,7 +247,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802423998",
           "inLanguage": "he",
-          "description": "BattAI ⁦BattAI⁩ משתמש בחמישה ערכים מממשקי ⁦iOS API⁩ ציבוריים: רמת הסוללה, מצב הטעינה, מצב סוללה חלשה, המצב התרמי של המכשיר כולו והזמן. תוצאות אחרות מחושבות מהמדידות האלה או נוספות על ידך. ליד כל פרט מוצגים המקור והמגבלות.",
+          "description": "בדיקת סוללה עם ציון בריאות ומעקב אחרי המגמה.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-battai"
           },
@@ -283,7 +283,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-caldaily",
         "url": "https://apps.apple.com/il/app/id6794178671?pt=118326163&ct=geo_pick&mt=8",
         "name": "CalDaily מחשבון ועיצובים",
-        "description": "מחשבון שתמשיכו להשתמש בו באמת, כי הוא זוכר מה עומד מאחורי כל מספר.",
+        "description": "מחשבון יפה שזוכר: 100 עיצובים מובנים, ווידג'ט במסך הבית שמחשב בלי לפתוח את האפליקציה.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -313,7 +313,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6794178671",
           "inLanguage": "he",
-          "description": "מחשבון שתמשיכו להשתמש בו באמת, כי הוא זוכר מה עומד מאחורי כל מספר.",
+          "description": "מחשבון יפה שזוכר: 100 עיצובים מובנים, ווידג'ט במסך הבית שמחשב בלי לפתוח את האפליקציה.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-caldaily"
           },
@@ -613,7 +613,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-dailymatelite",
         "url": "https://apps.apple.com/il/app/id6794725568?pt=118326163&ct=geo_pick&mt=8",
         "name": "DailyMate Lite: מדברים",
-        "description": "מדברים בביטחון כשהרגע מגיע. DailyMate Lite הופך מצבים יומיומיים לתרגול קצר של משפט פתיחה ותשובה טבעית ב-50 שפות. מתחילים בחינם בנושא הנסיעות ברמת",
+        "description": "לומדים כל אחת מ-50 שפות, לא רק אחת: אנגלית, ספרדית, צרפתית, יפנית, קוריאנית ועוד הרבה. מחליפים מתי שרוצים, ולכל שפה נשמרים ההתקדמות והמשפטים השמורים שלה.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -643,7 +643,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6794725568",
           "inLanguage": "he",
-          "description": "מדברים בביטחון כשהרגע מגיע. DailyMate Lite הופך מצבים יומיומיים לתרגול קצר של משפט פתיחה ותשובה טבעית ב-50 שפות. מתחילים בחינם בנושא הנסיעות ברמת",
+          "description": "לומדים כל אחת מ-50 שפות, לא רק אחת: אנגלית, ספרדית, צרפתית, יפנית, קוריאנית ועוד הרבה. מחליפים מתי שרוצים, ולכל שפה נשמרים ההתקדמות והמשפטים השמורים שלה.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-dailymatelite"
           },
@@ -679,7 +679,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-dbhalo",
         "url": "https://apps.apple.com/il/app/id6806826699?pt=118326163&ct=geo_pick&mt=8",
         "name": "dB Halo: מד עוצמת קול",
-        "description": "dB Halo הוא מד עוצמת קול ברור ששומר על הפרטיות ב-iPhone, ב-iPad ובשעון Apple Watch עצמו. טבעת Halo גדולה מציגה בזמן אמת את רמת לחץ הקול, לצד ערכי",
+        "description": "רואים מיד כמה דציבלים יש סביבכם: קריאה גדולה בזמן אמת עם מינימום, ממוצע, מקסימום ושיא, ויומן אירועי רעש עם חותמות זמן. מודדים רעש משכנים, משיפוצים",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -709,7 +709,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806826699",
           "inLanguage": "he",
-          "description": "dB Halo הוא מד עוצמת קול ברור ששומר על הפרטיות ב-iPhone, ב-iPad ובשעון Apple Watch עצמו. טבעת Halo גדולה מציגה בזמן אמת את רמת לחץ הקול, לצד ערכי",
+          "description": "רואים מיד כמה דציבלים יש סביבכם: קריאה גדולה בזמן אמת עם מינימום, ממוצע, מקסימום ושיא, ויומן אירועי רעש עם חותמות זמן. מודדים רעש משכנים, משיפוצים",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-dbhalo"
           },
@@ -943,7 +943,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-gmoneylite",
         "url": "https://apps.apple.com/il/app/id6793436548?pt=118326163&ct=geo_pick&mt=8",
         "name": "G+Money Lite: הוצאות טיול",
-        "description": "G+Money Lite — מעקב חכם אחרי מטבעות והוצאות בזמן נסיעות",
+        "description": "דעו כמה עוד אפשר להוציא היום, לאן שלא תיסעו. רשמו כל קנייה במטבע המקומי וראו אותה מיד במטבע שלכם, כבר מקוזזת מהתקציב של היום. כשעוברים את התקציב היומי",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -973,7 +973,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6793436548",
           "inLanguage": "he",
-          "description": "G+Money Lite — מעקב חכם אחרי מטבעות והוצאות בזמן נסיעות",
+          "description": "דעו כמה עוד אפשר להוציא היום, לאן שלא תיסעו. רשמו כל קנייה במטבע המקומי וראו אותה מיד במטבע שלכם, כבר מקוזזת מהתקציב של היום. כשעוברים את התקציב היומי",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-gmoneylite"
           },
@@ -1075,7 +1075,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-hourstaglite",
         "url": "https://apps.apple.com/il/app/id6794039979?pt=118326163&ct=geo_pick&mt=8",
         "name": "HoursTag Lite: מחיר בשעות",
-        "description": "HoursTag Lite - ראה את המחיר האמיתי של דברים",
+        "description": "לפני שקונים, בדקו כמה שעות עבודה זה באמת עולה. הזינו את השכר נטו לשעה, ו-HoursTag Lite יהפוך כל מחיר לזמן עבודה.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1105,7 +1105,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6794039979",
           "inLanguage": "he",
-          "description": "HoursTag Lite - ראה את המחיר האמיתי של דברים",
+          "description": "לפני שקונים, בדקו כמה שעות עבודה זה באמת עולה. הזינו את השכר נטו לשעה, ו-HoursTag Lite יהפוך כל מחיר לזמן עבודה.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-hourstaglite"
           },
@@ -1933,7 +1933,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-maskmyfile",
         "url": "https://apps.apple.com/il/app/id6792850916?pt=118326163&ct=geo_pick&mt=8",
         "name": "Mask My File: מחיקת מידע אישי",
-        "description": "שתפו בבטחה בלי לאבד את ההקשר החשוב. Mask My File מאתר פרטים פרטיים לפני שליחת הקובץ, מסתיר אותם לצמיתות, ואז פותח מחדש את הקובץ שנוצר ומאמת אותו לפני",
+        "description": "השחירו מידע אישי לפני שאתם משתפים. Mask My File מאתר שמות, מספרי טלפון, כתובות אימייל, כתובות מגורים, פרטי חשבון ותשלום, ומסתיר לצמיתות רק את מה שבחרתם.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1963,7 +1963,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6792850916",
           "inLanguage": "he",
-          "description": "שתפו בבטחה בלי לאבד את ההקשר החשוב. Mask My File מאתר פרטים פרטיים לפני שליחת הקובץ, מסתיר אותם לצמיתות, ואז פותח מחדש את הקובץ שנוצר ומאמת אותו לפני",
+          "description": "השחירו מידע אישי לפני שאתם משתפים. Mask My File מאתר שמות, מספרי טלפון, כתובות אימייל, כתובות מגורים, פרטי חשבון ותשלום, ומסתיר לצמיתות רק את מה שבחרתם.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-maskmyfile"
           },
@@ -2065,7 +2065,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-mochidonestamp",
         "url": "https://apps.apple.com/il/app/id6790800323?pt=118326163&ct=geo_pick&mt=8",
         "name": "Mochi DoneStamp: מתי לאחרונה",
-        "description": "מתי בפעם האחרונה החלפת מצעים, השקית עציץ, התקשרת למשפחה, גיבית תמונות או החלפת מסנן?",
+        "description": "מתי בפעם האחרונה החלפת מצעים, ניקית את מסנן המזגן או החלפת שמן ברכב?",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2095,7 +2095,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6790800323",
           "inLanguage": "he",
-          "description": "מתי בפעם האחרונה החלפת מצעים, השקית עציץ, התקשרת למשפחה, גיבית תמונות או החלפת מסנן?",
+          "description": "מתי בפעם האחרונה החלפת מצעים, ניקית את מסנן המזגן או החלפת שמן ברכב?",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-mochidonestamp"
           },
@@ -2395,7 +2395,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-qrcodehalo",
         "url": "https://apps.apple.com/il/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
         "name": "QR Code Halo: סריקה ויצירה",
-        "description": "ברגע ש-QR Code Halo קורא קוד, הוא פועל. סרקו במצלמה או בחרו תמונה: קישורים נפתחים בדפדפן, קודי כניסה עם מפתח גישה וקישורים לאפליקציות עוברים ישירות",
+        "description": "סורקים קודי QR וברקודים ב-20 פורמטים, במצלמה או מתמונה, והפעולה מתבצעת מיד: קישורים נפתחים, וקודי Wi-Fi מציגים את בקשת ההצטרפות לרשת.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2425,7 +2425,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806779853",
           "inLanguage": "he",
-          "description": "ברגע ש-QR Code Halo קורא קוד, הוא פועל. סרקו במצלמה או בחרו תמונה: קישורים נפתחים בדפדפן, קודי כניסה עם מפתח גישה וקישורים לאפליקציות עוברים ישירות",
+          "description": "סורקים קודי QR וברקודים ב-20 פורמטים, במצלמה או מתמונה, והפעולה מתבצעת מיד: קישורים נפתחים, וקודי Wi-Fi מציגים את בקשת ההצטרפות לרשת.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-qrcodehalo"
           },
@@ -2659,7 +2659,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-shotinbox",
         "url": "https://apps.apple.com/il/app/id6802166527?pt=118326163&ct=geo_pick&mt=8",
         "name": "ShotInbox AI: Sort Screenshots",
-        "description": "צילומי המסך שלך, מסודרים",
+        "description": "צילומי המסך שלכם ממוינים אוטומטית: קניות, קבלות, כרטיסים, נסיעות, מפות ומקומות, צ׳אטים ורשתות חברתיות, עבודה ועוד.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2689,7 +2689,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802166527",
           "inLanguage": "he",
-          "description": "צילומי המסך שלך, מסודרים",
+          "description": "צילומי המסך שלכם ממוינים אוטומטית: קניות, קבלות, כרטיסים, נסיעות, מפות ומקומות, צ׳אטים ורשתות חברתיות, עבודה ועוד.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-shotinbox"
           },
@@ -2923,7 +2923,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-stayclock",
         "url": "https://apps.apple.com/il/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
         "name": "Stay Clock: שעון קלפים",
-        "description": "Stay Clock הופך את ה-iPhone או ה-iPad שלכם לשעון שולחני שדולק תמיד ואפשר לקרוא אותו מהצד השני של החדר. שעון גדול, לוח שנה שמתאים לכל לוח שעון, ומראה אחד",
+        "description": "Stay Clock הופך את ה-iPhone או ה-iPad שלכם לשעון שולחני שדולק תמיד ואפשר לקרוא אותו מהצד השני של החדר. בחרו מתוך 101 לוחות שעון, כולל שעוני קלפים (100",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2953,7 +2953,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6814035888",
           "inLanguage": "he",
-          "description": "Stay Clock הופך את ה-iPhone או ה-iPad שלכם לשעון שולחני שדולק תמיד ואפשר לקרוא אותו מהצד השני של החדר. שעון גדול, לוח שנה שמתאים לכל לוח שעון, ומראה אחד",
+          "description": "Stay Clock הופך את ה-iPhone או ה-iPad שלכם לשעון שולחני שדולק תמיד ואפשר לקרוא אותו מהצד השני של החדר. בחרו מתוך 101 לוחות שעון, כולל שעוני קלפים (100",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-stayclock"
           },
@@ -2989,7 +2989,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-studydown",
         "url": "https://apps.apple.com/il/app/id6807335593?pt=118326163&ct=geo_pick&mt=8",
         "name": "Studydown: טיימר ריכוז",
-        "description": "פנו זמן למה שחשוב לכם, וראו לאן הוא הולך. Studydown מתעד את הזמן שאתם מקדישים לפרויקט, לקריאה או לתחביב, בעזרת פעולה פשוטה: הנחת הטלפון כשהמסך כלפי מטה.",
+        "description": "הניחו את הטלפון עם המסך כלפי מטה והטיימר מתחיל, הרימו אותו והוא נעצר, כך שרק זמן ריכוז אמיתי נספר בשעות הלימוד והעבודה שלכם.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3019,7 +3019,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6807335593",
           "inLanguage": "he",
-          "description": "פנו זמן למה שחשוב לכם, וראו לאן הוא הולך. Studydown מתעד את הזמן שאתם מקדישים לפרויקט, לקריאה או לתחביב, בעזרת פעולה פשוטה: הנחת הטלפון כשהמסך כלפי מטה.",
+          "description": "הניחו את הטלפון עם המסך כלפי מטה והטיימר מתחיל, הרימו אותו והוא נעצר, כך שרק זמן ריכוז אמיתי נספר בשעות הלימוד והעבודה שלכם.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-studydown"
           },
@@ -3385,7 +3385,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-wifiaidlite",
         "url": "https://apps.apple.com/il/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
         "name": "WiFi Aid Lite",
-        "description": "מצא את הבעיה האמיתית. אפשר לבצע בדיקה מלאה אחת בסך הכול, בכל כלי, בלי לרכוש. רכישה חד-פעמית אופציונלית בתוך האפליקציה פותחת בדיקות ללא הגבלה ואת ההשוואה",
+        "description": "אין אינטרנט או שהכול זוחל? בנגיעה אחת האפליקציה בודקת לפי הסדר את ה-Wi-Fi, את ה-DNS ואת האינטרנט, ומראה באיזה שלב זה נתקע, מה הסיבה הסבירה ביותר ומה כדאי",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3415,7 +3415,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6793414462",
           "inLanguage": "he",
-          "description": "מצא את הבעיה האמיתית. אפשר לבצע בדיקה מלאה אחת בסך הכול, בכל כלי, בלי לרכוש. רכישה חד-פעמית אופציונלית בתוך האפליקציה פותחת בדיקות ללא הגבלה ואת ההשוואה",
+          "description": "אין אינטרנט או שהכול זוחל? בנגיעה אחת האפליקציה בודקת לפי הסדר את ה-Wi-Fi, את ה-DNS ואת האינטרנט, ומראה באיזה שלב זה נתקע, מה הסיבה הסבירה ביותר ומה כדאי",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-wifiaidlite"
           },
@@ -3451,7 +3451,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-wifiaid",
         "url": "https://apps.apple.com/il/app/id6790467886?pt=118326163&ct=geo_pick&mt=8",
         "name": "WiFi Aid: איתור תקלות רשת",
-        "description": "מצאו את הסיבה הסבירה ביותר בעזרת בדיקות בלתי תלויות של נתיבים, DNS,‏ TCP,‏ TLS, תזמון ויציבות. תשלום מראש פעם אחת, ללא מינוי, פרסומות או מעקב.",
+        "description": "ה-Wi-Fi שוב איטי או מתנתק? WiFi Aid בודק Wi-Fi, DNS ואינטרנט בהקשה אחת ומראה אם הבעיה כנראה ברשת ה-Wi-Fi, ב-DNS, אצל ספק האינטרנט או באתר אחד בלבד, עם",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3481,7 +3481,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6790467886",
           "inLanguage": "he",
-          "description": "מצאו את הסיבה הסבירה ביותר בעזרת בדיקות בלתי תלויות של נתיבים, DNS,‏ TCP,‏ TLS, תזמון ויציבות. תשלום מראש פעם אחת, ללא מינוי, פרסומות או מעקב.",
+          "description": "ה-Wi-Fi שוב איטי או מתנתק? WiFi Aid בודק Wi-Fi, DNS ואינטרנט בהקשה אחת ומראה אם הבעיה כנראה ברשת ה-Wi-Fi, ב-DNS, אצל ספק האינטרנט או באתר אחד בלבד, עם",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-wifiaid"
           },
@@ -3517,7 +3517,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-wordmatelite",
         "url": "https://apps.apple.com/il/app/id6797601720?pt=118326163&ct=geo_pick&mt=8",
         "name": "Wordmate Lite: לומדים שפות",
-        "description": "רוב תוכניות הלימוד נשברות כי הן גדולות מדי. Wordmate Lite מתחיל מהצד ההפוך: דקה אחת, חמש מילים, וצעד אחד שרואים על השביל.",
+        "description": "לומדים 5 מילים בערך בדקה: אנגלית, יפנית, קוריאנית או כל אחת מ-44 שפות, ומתחילים ממצבים אמיתיים כמו טיול, מסעדה וקניות.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3547,7 +3547,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6797601720",
           "inLanguage": "he",
-          "description": "רוב תוכניות הלימוד נשברות כי הן גדולות מדי. Wordmate Lite מתחיל מהצד ההפוך: דקה אחת, חמש מילים, וצעד אחד שרואים על השביל.",
+          "description": "לומדים 5 מילים בערך בדקה: אנגלית, יפנית, קוריאנית או כל אחת מ-44 שפות, ומתחילים ממצבים אמיתיים כמו טיול, מסעדה וקניות.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-wordmatelite"
           },
@@ -3649,7 +3649,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-zipbox",
         "url": "https://apps.apple.com/il/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
         "name": "Zipbox: חילוץ RAR, ZIP, 7z",
-        "description": "Zipbox היא אפליקציה בתשלום ב-App Store. רכישה אחת כוללת את כל התכונות, בלי רכישות בתוך האפליקציה, מינויים או פרסומות. כל 13 הפורמטים מעובדים במכשיר.",
+        "description": "פותחים RAR, 7z, ZIP ועוד 10 פורמטים של ארכיונים ישירות באייפון. מציצים פנימה לפני החילוץ: תצוגה מקדימה של תמונות, וידאו, PDF, טקסט וקוד, ומחלצים רק את",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3679,7 +3679,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806776579",
           "inLanguage": "he",
-          "description": "Zipbox היא אפליקציה בתשלום ב-App Store. רכישה אחת כוללת את כל התכונות, בלי רכישות בתוך האפליקציה, מינויים או פרסומות. כל 13 הפורמטים מעובדים במכשיר.",
+          "description": "פותחים RAR, 7z, ZIP ועוד 10 פורמטים של ארכיונים ישירות באייפון. מציצים פנימה לפני החילוץ: תצוגה מקדימה של תמונות, וידאו, PDF, טקסט וקוד, ומחלצים רק את",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-zipbox"
           },

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title description" xml:lang="ja" direction="ltr">
 <title id="title">dB Halo：デシベル測定 — 騒音・周波数解析・睡眠日記 | iOS App</title>
-<desc id="description">周囲の音は今、何dBなのか。選んだ基準では、より安全に過ごせる時間があとどれくらいか。dB Haloなら、ひと目で確認できます。 無料で開始・買い切りで解除</desc>
+<desc id="description">開けばすぐ、今の音が何dBかわかります。大きな数字のリアルタイム表示に、最小・平均・最大・ピーク、大きな音を時刻つきで残す記録まで。上の階の足音、工事、近所の騒音も測れて、PDFレポートやCSVで書き出せます。 無料で開始・買い切りで解除</desc>
 <defs>
 <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
 <stop offset="0" stop-color="#132a13"/>
@@ -23,7 +23,7 @@
 <text class="app-name" x="400" y="188" font-size="48" text-anchor="start">dB Halo：デシベル測定</text>
 <text x="400" y="238" text-anchor="start" font-size="23" font-weight="650" fill="#e2e8f0" direction="ltr">App Store ID 6806826699</text>
 <text class="query" x="100" y="392" font-size="31" text-anchor="start">dB Halo：デシベル測定 — 騒音・周波数解析・睡眠日記 | iOS App</text>
-<text class="context" x="100" y="457" font-size="16" text-anchor="start">周囲の音は今、何dBなのか。選んだ基準では、より安全に過ごせる時間があとどれくらいか。dB Haloなら、ひと目で確認できます。</text>
+<text class="context" x="100" y="457" font-size="16" text-anchor="start" transform="translate(100 0) scale(0.6101 1) translate(-100 0)">開けばすぐ、今の音が何dBかわかります。大きな数字のリアルタイム表示に、最小・平均・最大・ピーク、大きな音を時刻つきで残す記録まで。上の階の足音、工事、近所の騒音も測れて、PDFレポートやCSVで書き出せます。</text>
 <line x1="100" y1="498" x2="1100" y2="498" stroke="#ffffff" stroke-opacity="0.22"/>
 <text class="purchase-model" x="100" y="548" font-size="25" text-anchor="start">無料で開始・買い切りで解除</text>
 <text x="1100" y="548" text-anchor="end" font-size="25" font-weight="800" fill="#ffffff">App Store</text>

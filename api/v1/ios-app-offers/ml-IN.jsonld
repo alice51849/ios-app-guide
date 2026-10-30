@@ -6,7 +6,7 @@
   "name": "Lumi Studio പ്രസാധകന്റെ തിരയൽ ഉദ്ദേശ്യ കാറ്റലോഗ്",
   "description": "ഓരോ ആപ്പും ആരെ ലക്ഷ്യമിട്ട് രൂപകൽപ്പന ചെയ്തതാണെന്ന്, അവർ പൂർത്തിയാക്കാൻ ശ്രമിക്കുന്ന ജോലി, നേരിട്ട് App Store വഴി എത്താനുള്ള വഴി എന്നിവയുടെ ആദ്യകക്ഷി കാറ്റലോഗ്",
   "inLanguage": "ml-IN",
-  "dateModified": "2026-10-23",
+  "dateModified": "2026-10-30",
   "numberOfItems": 56,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -19,7 +19,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ml-IN.jsonld#offer-notesstudio100",
         "url": "https://apps.apple.com/in/app/id6798813048?pt=118326163&ct=geo_pick&mt=8",
         "name": "100 Notes Studio: Pen & Paper",
-        "description": "100 Notes Studio കൈയെഴുത്ത്, ടൈപ്പിംഗ്, PDF പഠനം, ഉള്ളടക്ക ക്രമീകരണം എന്നിവയെ സ്വകാര്യ പ്രവർത്തനയിടത്തിൽ കൂട്ടിച്ചേർക്കുന്നു. പ്രധാന എഡിറ്റിംഗ്",
+        "description": "കടലാസിൽ പേന കൊണ്ട് എഴുതുന്ന അതേ അനുഭവത്തോടെ കൈകൊണ്ട് കുറിപ്പുകൾ എഴുതൂ: ഫൗണ്ടൻ പേനയും പെൻസിലും മുതൽ കാലിഗ്രഫി ബ്രഷും ജലച്ചായവും വരെ 29 പേനകളും ബ്രഷുകളും",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -49,7 +49,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6798813048",
           "inLanguage": "ml-IN",
-          "description": "100 Notes Studio കൈയെഴുത്ത്, ടൈപ്പിംഗ്, PDF പഠനം, ഉള്ളടക്ക ക്രമീകരണം എന്നിവയെ സ്വകാര്യ പ്രവർത്തനയിടത്തിൽ കൂട്ടിച്ചേർക്കുന്നു. പ്രധാന എഡിറ്റിംഗ്",
+          "description": "കടലാസിൽ പേന കൊണ്ട് എഴുതുന്ന അതേ അനുഭവത്തോടെ കൈകൊണ്ട് കുറിപ്പുകൾ എഴുതൂ: ഫൗണ്ടൻ പേനയും പെൻസിലും മുതൽ കാലിഗ്രഫി ബ്രഷും ജലച്ചായവും വരെ 29 പേനകളും ബ്രഷുകളും",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ml-IN.jsonld#offer-notesstudio100"
           },
@@ -85,7 +85,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ml-IN.jsonld#offer-aibriefpack",
         "url": "https://apps.apple.com/in/app/id6791658210?pt=118326163&ct=geo_pick&mt=8",
         "name": "AI Brief: ഫയലിൽ നിന്ന് നിർദേശം",
-        "description": "മികച്ച context. മികച്ച ഉത്തരങ്ങൾ.",
+        "description": "സ്ക്രീൻഷോട്ടുകൾ, PDF-കൾ, ഫയലുകൾ, കുറിപ്പുകൾ എന്നിവ ലക്ഷ്യവും വസ്തുതകളും ഉറവിടങ്ങളും വേർതിരിച്ച ഒരൊറ്റ ചിട്ടയായ AI പ്രോംപ്റ്റാക്കി മാറ്റൂ.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -115,7 +115,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6791658210",
           "inLanguage": "ml-IN",
-          "description": "മികച്ച context. മികച്ച ഉത്തരങ്ങൾ.",
+          "description": "സ്ക്രീൻഷോട്ടുകൾ, PDF-കൾ, ഫയലുകൾ, കുറിപ്പുകൾ എന്നിവ ലക്ഷ്യവും വസ്തുതകളും ഉറവിടങ്ങളും വേർതിരിച്ച ഒരൊറ്റ ചിട്ടയായ AI പ്രോംപ്റ്റാക്കി മാറ്റൂ.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ml-IN.jsonld#offer-aibriefpack"
           },
@@ -217,7 +217,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ml-IN.jsonld#offer-battai",
         "url": "https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
         "name": "BattAI: ബാറ്ററി ആരോഗ്യ സ്കോർ",
-        "description": "BattAI BattAI പൊതു iOS API-കളിൽ നിന്ന് 5 മൂല്യങ്ങൾ ഉപയോഗിക്കുന്നു: ബാറ്ററി നില, ചാർജ് നില, Low Power Mode, മുഴുവൻ ഉപകരണത്തിന്റെ താപാവസ്ഥ, സമയം. മറ്റു ഫലങ്ങൾ ഈ അളവുകളിൽ നിന്ന് കണക്കാക്കുകയോ നിങ്ങൾ ചേർക്കുകയോ ചെയ്യുന്നു. ഓരോ വിവരവും ഉറവിടവും പരിധിയും കാണിക്കുന്നു.",
+        "description": "ബാറ്ററി ആരോഗ്യത്തിന് സ്കോർ നേടൂ, ട്രെൻഡ് കാണൂ.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -247,7 +247,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802423998",
           "inLanguage": "ml-IN",
-          "description": "BattAI BattAI പൊതു iOS API-കളിൽ നിന്ന് 5 മൂല്യങ്ങൾ ഉപയോഗിക്കുന്നു: ബാറ്ററി നില, ചാർജ് നില, Low Power Mode, മുഴുവൻ ഉപകരണത്തിന്റെ താപാവസ്ഥ, സമയം. മറ്റു ഫലങ്ങൾ ഈ അളവുകളിൽ നിന്ന് കണക്കാക്കുകയോ നിങ്ങൾ ചേർക്കുകയോ ചെയ്യുന്നു. ഓരോ വിവരവും ഉറവിടവും പരിധിയും കാണിക്കുന്നു.",
+          "description": "ബാറ്ററി ആരോഗ്യത്തിന് സ്കോർ നേടൂ, ട്രെൻഡ് കാണൂ.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ml-IN.jsonld#offer-battai"
           },
@@ -283,7 +283,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ml-IN.jsonld#offer-caldaily",
         "url": "https://apps.apple.com/in/app/id6794178671?pt=118326163&ct=geo_pick&mt=8",
         "name": "CalDaily കാൽക്കുലേറ്റർ",
-        "description": "നിങ്ങൾ ശരിക്കും ഉപയോഗിച്ചുകൊണ്ടിരിക്കുന്ന ഒരു കാൽക്കുലേറ്റർ, കാരണം ഓരോ സംഖ്യയ്ക്കും പിന്നിലെ ചിന്ത അത് ഓർത്തുവയ്ക്കുന്നു.",
+        "description": "ഓർമ്മിച്ചുവയ്ക്കുന്ന മനോഹരമായ കാൽക്കുലേറ്റർ: ഉള്ളിൽ തന്നെ 100 തീമുകൾ, ആപ്പ് തുറക്കാതെ കണക്കുകൂട്ടുന്ന ഹോം സ്ക്രീൻ വിജറ്റും.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -313,7 +313,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6794178671",
           "inLanguage": "ml-IN",
-          "description": "നിങ്ങൾ ശരിക്കും ഉപയോഗിച്ചുകൊണ്ടിരിക്കുന്ന ഒരു കാൽക്കുലേറ്റർ, കാരണം ഓരോ സംഖ്യയ്ക്കും പിന്നിലെ ചിന്ത അത് ഓർത്തുവയ്ക്കുന്നു.",
+          "description": "ഓർമ്മിച്ചുവയ്ക്കുന്ന മനോഹരമായ കാൽക്കുലേറ്റർ: ഉള്ളിൽ തന്നെ 100 തീമുകൾ, ആപ്പ് തുറക്കാതെ കണക്കുകൂട്ടുന്ന ഹോം സ്ക്രീൻ വിജറ്റും.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ml-IN.jsonld#offer-caldaily"
           },
@@ -613,7 +613,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ml-IN.jsonld#offer-dailymatelite",
         "url": "https://apps.apple.com/in/app/id6794725568?pt=118326163&ct=geo_pick&mt=8",
         "name": "DailyMate Lite: സംസാരിക്കൂ",
-        "description": "സംസാരിക്കേണ്ട നിമിഷത്തിൽ ശരിയായ വാക്കുകൾ തയ്യാറായിരിക്കട്ടെ. DailyMate Lite യഥാർഥ ജീവിതസാഹചര്യങ്ങളെ ചെറുതും സ്വാഭാവികവുമായ സൂചന–മറുപടി പരിശീലനങ്ങളാക്കുന്നു",
+        "description": "ഒന്നല്ല, 50 ഭാഷകളിൽ ഏതും പഠിക്കൂ: ഇംഗ്ലീഷ്, സ്പാനിഷ്, ഫ്രഞ്ച്, ജാപ്പനീസ്, കൊറിയൻ എന്നിങ്ങനെ പലതും. എപ്പോൾ വേണമെങ്കിലും ഭാഷ മാറ്റാം; ഓരോ ഭാഷയുടെയും",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -643,7 +643,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6794725568",
           "inLanguage": "ml-IN",
-          "description": "സംസാരിക്കേണ്ട നിമിഷത്തിൽ ശരിയായ വാക്കുകൾ തയ്യാറായിരിക്കട്ടെ. DailyMate Lite യഥാർഥ ജീവിതസാഹചര്യങ്ങളെ ചെറുതും സ്വാഭാവികവുമായ സൂചന–മറുപടി പരിശീലനങ്ങളാക്കുന്നു",
+          "description": "ഒന്നല്ല, 50 ഭാഷകളിൽ ഏതും പഠിക്കൂ: ഇംഗ്ലീഷ്, സ്പാനിഷ്, ഫ്രഞ്ച്, ജാപ്പനീസ്, കൊറിയൻ എന്നിങ്ങനെ പലതും. എപ്പോൾ വേണമെങ്കിലും ഭാഷ മാറ്റാം; ഓരോ ഭാഷയുടെയും",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ml-IN.jsonld#offer-dailymatelite"
           },
@@ -679,7 +679,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ml-IN.jsonld#offer-dbhalo",
         "url": "https://apps.apple.com/in/app/id6806826699?pt=118326163&ct=geo_pick&mt=8",
         "name": "dB Halo: ശബ്ദനില മീറ്റർ",
-        "description": "ഇപ്പോൾ ശബ്ദം എത്ര ഉച്ചത്തിലാണെന്നും കണക്കാക്കിയ സുരക്ഷിത സമ്പർക്ക സമയം എത്ര ബാക്കിയുണ്ടെന്നും dB Halo ഒറ്റനോട്ടത്തിൽ കാണിക്കുന്നു. iPhone, iPad, Apple",
+        "description": "തുറന്ന ഉടനെ ഇപ്പോൾ എത്ര ഡെസിബെൽ ഉണ്ടെന്ന് അറിയാം: വലിയ അക്കത്തിൽ തത്സമയ അളവ്, കൂടെ കുറഞ്ഞത്, ശരാശരി, കൂടിയത്, പീക്ക്, ഉച്ചത്തിലുള്ള ശബ്ദങ്ങൾ സമയത്തോടെ",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -709,7 +709,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806826699",
           "inLanguage": "ml-IN",
-          "description": "ഇപ്പോൾ ശബ്ദം എത്ര ഉച്ചത്തിലാണെന്നും കണക്കാക്കിയ സുരക്ഷിത സമ്പർക്ക സമയം എത്ര ബാക്കിയുണ്ടെന്നും dB Halo ഒറ്റനോട്ടത്തിൽ കാണിക്കുന്നു. iPhone, iPad, Apple",
+          "description": "തുറന്ന ഉടനെ ഇപ്പോൾ എത്ര ഡെസിബെൽ ഉണ്ടെന്ന് അറിയാം: വലിയ അക്കത്തിൽ തത്സമയ അളവ്, കൂടെ കുറഞ്ഞത്, ശരാശരി, കൂടിയത്, പീക്ക്, ഉച്ചത്തിലുള്ള ശബ്ദങ്ങൾ സമയത്തോടെ",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ml-IN.jsonld#offer-dbhalo"
           },
@@ -943,7 +943,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ml-IN.jsonld#offer-gmoneylite",
         "url": "https://apps.apple.com/in/app/id6793436548?pt=118326163&ct=geo_pick&mt=8",
         "name": "G+Money Lite: യാത്രാച്ചെലവ്",
-        "description": "G+Money Lite — സ്മാർട്ട് യാത്രാ നാണ്യം & ചെലവ് ട്രാക്കർ",
+        "description": "എവിടെ യാത്ര ചെയ്താലും, ഇന്ന് ഇനി എത്ര ചെലവാക്കാം എന്ന് അറിയാം. ഓരോ വാങ്ങലും പ്രാദേശിക കറൻസിയിൽ രേഖപ്പെടുത്തൂ—ഉടൻ നിങ്ങളുടെ കറൻസിയിൽ കാണാം, ഇന്നത്തെ ബജറ്റിൽ",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -973,7 +973,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6793436548",
           "inLanguage": "ml-IN",
-          "description": "G+Money Lite — സ്മാർട്ട് യാത്രാ നാണ്യം & ചെലവ് ട്രാക്കർ",
+          "description": "എവിടെ യാത്ര ചെയ്താലും, ഇന്ന് ഇനി എത്ര ചെലവാക്കാം എന്ന് അറിയാം. ഓരോ വാങ്ങലും പ്രാദേശിക കറൻസിയിൽ രേഖപ്പെടുത്തൂ—ഉടൻ നിങ്ങളുടെ കറൻസിയിൽ കാണാം, ഇന്നത്തെ ബജറ്റിൽ",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ml-IN.jsonld#offer-gmoneylite"
           },
@@ -1075,7 +1075,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ml-IN.jsonld#offer-hourstaglite",
         "url": "https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=geo_pick&mt=8",
         "name": "HoursTag Lite: വില മണിക്കൂറിൽ",
-        "description": "HoursTag Lite - വസ്തുക്കളുടെ യഥാർത്ഥ വില കാണുക",
+        "description": "വാങ്ങുന്നതിന് മുമ്പ്, അതിന് യഥാർഥത്തിൽ എത്ര മണിക്കൂർ ജോലി വേണമെന്ന് നോക്കൂ. കൈയിൽ കിട്ടുന്ന മണിക്കൂർ വേതനം നൽകിയാൽ HoursTag Lite ഓരോ വിലയും ജോലിസമയമാക്കി",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1105,7 +1105,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6794039979",
           "inLanguage": "ml-IN",
-          "description": "HoursTag Lite - വസ്തുക്കളുടെ യഥാർത്ഥ വില കാണുക",
+          "description": "വാങ്ങുന്നതിന് മുമ്പ്, അതിന് യഥാർഥത്തിൽ എത്ര മണിക്കൂർ ജോലി വേണമെന്ന് നോക്കൂ. കൈയിൽ കിട്ടുന്ന മണിക്കൂർ വേതനം നൽകിയാൽ HoursTag Lite ഓരോ വിലയും ജോലിസമയമാക്കി",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ml-IN.jsonld#offer-hourstaglite"
           },
@@ -1933,7 +1933,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ml-IN.jsonld#offer-maskmyfile",
         "url": "https://apps.apple.com/in/app/id6792850916?pt=118326163&ct=geo_pick&mt=8",
         "name": "Mask My File: വിവരങ്ങൾ നീക്കുക",
-        "description": "ഉപകാരപ്രദമായ പശ്ചാത്തലം നഷ്ടപ്പെടാതെ സുരക്ഷിതമായി പങ്കിടൂ. Mask My File നിങ്ങൾ ഫയൽ അയയ്ക്കും മുൻപ് സ്വകാര്യ വിവരങ്ങൾ കണ്ടെത്തുന്നു, തിരഞ്ഞെടുത്ത ഭാഗം",
+        "description": "പങ്കിടുന്നതിന് മുൻപ് സ്വകാര്യ വിവരങ്ങൾ കറുപ്പിക്കൂ. Mask My File പേരുകൾ, ഫോൺ നമ്പറുകൾ, ഇമെയിൽ, വിലാസങ്ങൾ, അക്കൗണ്ട്, പേയ്‌മെന്റ് വിവരങ്ങൾ എന്നിവ കണ്ടെത്തി",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1963,7 +1963,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6792850916",
           "inLanguage": "ml-IN",
-          "description": "ഉപകാരപ്രദമായ പശ്ചാത്തലം നഷ്ടപ്പെടാതെ സുരക്ഷിതമായി പങ്കിടൂ. Mask My File നിങ്ങൾ ഫയൽ അയയ്ക്കും മുൻപ് സ്വകാര്യ വിവരങ്ങൾ കണ്ടെത്തുന്നു, തിരഞ്ഞെടുത്ത ഭാഗം",
+          "description": "പങ്കിടുന്നതിന് മുൻപ് സ്വകാര്യ വിവരങ്ങൾ കറുപ്പിക്കൂ. Mask My File പേരുകൾ, ഫോൺ നമ്പറുകൾ, ഇമെയിൽ, വിലാസങ്ങൾ, അക്കൗണ്ട്, പേയ്‌മെന്റ് വിവരങ്ങൾ എന്നിവ കണ്ടെത്തി",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ml-IN.jsonld#offer-maskmyfile"
           },
@@ -2065,7 +2065,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ml-IN.jsonld#offer-mochidonestamp",
         "url": "https://apps.apple.com/in/app/id6790800323?pt=118326163&ct=geo_pick&mt=8",
         "name": "Mochi DoneStamp: അവസാനമായി",
-        "description": "അവസാനമായി കിടക്കവിരി മാറ്റിയത്, ചെടിക്ക് വെള്ളം നൽകിയതു, കുടുംബത്തെ വിളിച്ചത്, ഫോട്ടോ ബാക്കപ്പ് ചെയ്തതു, ഫിൽട്ടർ മാറ്റിയത് എപ്പോൾ?",
+        "description": "അവസാനമായി കിടക്കവിരി മാറ്റിയത്, എസി ഫിൽട്ടർ വൃത്തിയാക്കിയത്, വണ്ടിയുടെ ഓയിൽ മാറ്റിയത് എപ്പോഴാണ്?",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2095,7 +2095,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6790800323",
           "inLanguage": "ml-IN",
-          "description": "അവസാനമായി കിടക്കവിരി മാറ്റിയത്, ചെടിക്ക് വെള്ളം നൽകിയതു, കുടുംബത്തെ വിളിച്ചത്, ഫോട്ടോ ബാക്കപ്പ് ചെയ്തതു, ഫിൽട്ടർ മാറ്റിയത് എപ്പോൾ?",
+          "description": "അവസാനമായി കിടക്കവിരി മാറ്റിയത്, എസി ഫിൽട്ടർ വൃത്തിയാക്കിയത്, വണ്ടിയുടെ ഓയിൽ മാറ്റിയത് എപ്പോഴാണ്?",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ml-IN.jsonld#offer-mochidonestamp"
           },
@@ -2395,7 +2395,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ml-IN.jsonld#offer-qrcodehalo",
         "url": "https://apps.apple.com/in/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
         "name": "QR Code Halo: സ്കാൻ & സൃഷ്ടി",
-        "description": "QR Code Halo കോഡ് വായിച്ച നിമിഷം തന്നെ പ്രവർത്തിക്കുന്നു. ക്യാമറ ഉപയോഗിച്ച് സ്കാൻ ചെയ്യൂ അല്ലെങ്കിൽ ഒരു ഫോട്ടോ തിരഞ്ഞെടുക്കൂ: ലിങ്കുകൾ നിങ്ങളുടെ ബ്രൗസറിൽ",
+        "description": "ക്യാമറ ഉപയോഗിച്ചോ ഫോട്ടോയിൽ നിന്നോ 20 ഫോർമാറ്റുകളിലുള്ള QR കോഡും ബാർകോഡും സ്കാൻ ചെയ്യൂ, കാര്യം ഉടൻ നടക്കും: ലിങ്കുകൾ തുറക്കും, Wi-Fi കോഡുകൾ",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2425,7 +2425,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806779853",
           "inLanguage": "ml-IN",
-          "description": "QR Code Halo കോഡ് വായിച്ച നിമിഷം തന്നെ പ്രവർത്തിക്കുന്നു. ക്യാമറ ഉപയോഗിച്ച് സ്കാൻ ചെയ്യൂ അല്ലെങ്കിൽ ഒരു ഫോട്ടോ തിരഞ്ഞെടുക്കൂ: ലിങ്കുകൾ നിങ്ങളുടെ ബ്രൗസറിൽ",
+          "description": "ക്യാമറ ഉപയോഗിച്ചോ ഫോട്ടോയിൽ നിന്നോ 20 ഫോർമാറ്റുകളിലുള്ള QR കോഡും ബാർകോഡും സ്കാൻ ചെയ്യൂ, കാര്യം ഉടൻ നടക്കും: ലിങ്കുകൾ തുറക്കും, Wi-Fi കോഡുകൾ",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ml-IN.jsonld#offer-qrcodehalo"
           },
@@ -2659,7 +2659,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ml-IN.jsonld#offer-shotinbox",
         "url": "https://apps.apple.com/in/app/id6802166527?pt=118326163&ct=geo_pick&mt=8",
         "name": "ShotInbox AI: Sort Screenshots",
-        "description": "നിങ്ങളുടെ സ്ക്രീൻഷോട്ടുകൾ, ക്രമത്തിൽ",
+        "description": "നിങ്ങളുടെ സ്ക്രീൻഷോട്ടുകൾ സ്വയം തരംതിരിക്കപ്പെടുന്നു: വാങ്ങൽ, രസീതുകൾ, ടിക്കറ്റുകൾ, യാത്ര, മാപ്പുകളും സ്ഥലങ്ങളും, ചാറ്റും സോഷ്യലും, ജോലി എന്നിവയും മറ്റും.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2689,7 +2689,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802166527",
           "inLanguage": "ml-IN",
-          "description": "നിങ്ങളുടെ സ്ക്രീൻഷോട്ടുകൾ, ക്രമത്തിൽ",
+          "description": "നിങ്ങളുടെ സ്ക്രീൻഷോട്ടുകൾ സ്വയം തരംതിരിക്കപ്പെടുന്നു: വാങ്ങൽ, രസീതുകൾ, ടിക്കറ്റുകൾ, യാത്ര, മാപ്പുകളും സ്ഥലങ്ങളും, ചാറ്റും സോഷ്യലും, ജോലി എന്നിവയും മറ്റും.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ml-IN.jsonld#offer-shotinbox"
           },
@@ -2923,7 +2923,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ml-IN.jsonld#offer-stayclock",
         "url": "https://apps.apple.com/in/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
         "name": "Stay Clock: മേശ ക്ലോക്ക്",
-        "description": "Stay Clock നിങ്ങളുടെ iPhone-നെയോ iPad-നെയോ, മുറിക്ക് അപ്പുറത്ത് നിന്ന് പോലും വായിക്കാവുന്ന എപ്പോഴും ഓണായ ഒരു മേശ ക്ലോക്കാക്കി മാറ്റുന്നു. വലിയ സമയം, ഓരോ",
+        "description": "Stay Clock നിങ്ങളുടെ iPhone-നെയോ iPad-നെയോ മുറിക്ക് അപ്പുറത്ത് നിന്ന് പോലും വായിക്കാവുന്ന എപ്പോഴും ഓണായ ഒരു മേശ ക്ലോക്കാക്കി മാറ്റുന്നു. ഫ്ലിപ്പ്",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2953,7 +2953,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6814035888",
           "inLanguage": "ml-IN",
-          "description": "Stay Clock നിങ്ങളുടെ iPhone-നെയോ iPad-നെയോ, മുറിക്ക് അപ്പുറത്ത് നിന്ന് പോലും വായിക്കാവുന്ന എപ്പോഴും ഓണായ ഒരു മേശ ക്ലോക്കാക്കി മാറ്റുന്നു. വലിയ സമയം, ഓരോ",
+          "description": "Stay Clock നിങ്ങളുടെ iPhone-നെയോ iPad-നെയോ മുറിക്ക് അപ്പുറത്ത് നിന്ന് പോലും വായിക്കാവുന്ന എപ്പോഴും ഓണായ ഒരു മേശ ക്ലോക്കാക്കി മാറ്റുന്നു. ഫ്ലിപ്പ്",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ml-IN.jsonld#offer-stayclock"
           },
@@ -2989,7 +2989,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ml-IN.jsonld#offer-studydown",
         "url": "https://apps.apple.com/in/app/id6807335593?pt=118326163&ct=geo_pick&mt=8",
         "name": "Studydown: ഫോക്കസ്",
-        "description": "നിങ്ങൾക്ക് പ്രധാനമായ കാര്യങ്ങൾക്കായി സമയം മാറ്റിവയ്ക്കൂ, ചെലവിട്ട സമയത്തിന്റെ കണക്ക് കാണൂ. ജോലി, വായന, ഭാഷാപഠനം, ഹോബി—ഓരോ പ്രവർത്തനത്തിനും നൽകിയ സമയം",
+        "description": "ഫോൺ സ്ക്രീൻ താഴേക്കാക്കി വെച്ചാൽ ടൈമർ തുടങ്ങും, എടുത്താൽ നിൽക്കും; അതുകൊണ്ട് പഠനത്തിന്റെയും ജോലിയുടെയും മണിക്കൂറുകളിൽ യഥാർത്ഥ ശ്രദ്ധാസമയം മാത്രമേ കൂട്ടൂ.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3019,7 +3019,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6807335593",
           "inLanguage": "ml-IN",
-          "description": "നിങ്ങൾക്ക് പ്രധാനമായ കാര്യങ്ങൾക്കായി സമയം മാറ്റിവയ്ക്കൂ, ചെലവിട്ട സമയത്തിന്റെ കണക്ക് കാണൂ. ജോലി, വായന, ഭാഷാപഠനം, ഹോബി—ഓരോ പ്രവർത്തനത്തിനും നൽകിയ സമയം",
+          "description": "ഫോൺ സ്ക്രീൻ താഴേക്കാക്കി വെച്ചാൽ ടൈമർ തുടങ്ങും, എടുത്താൽ നിൽക്കും; അതുകൊണ്ട് പഠനത്തിന്റെയും ജോലിയുടെയും മണിക്കൂറുകളിൽ യഥാർത്ഥ ശ്രദ്ധാസമയം മാത്രമേ കൂട്ടൂ.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ml-IN.jsonld#offer-studydown"
           },
@@ -3385,7 +3385,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ml-IN.jsonld#offer-wifiaidlite",
         "url": "https://apps.apple.com/in/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
         "name": "WiFi Aid Lite",
-        "description": "യഥാർത്ഥ പ്രശ്നം കണ്ടെത്തുക. വാങ്ങാതെ തന്നെ ഏത് ടൂളിലും ആകെ ഒരു തവണ പൂർണ്ണ പരിശോധന നടത്താം. ഓപ്ഷണൽ ഒറ്റത്തവണ ഇൻ-ആപ്പ് വാങ്ങലിലൂടെ പരിധിയില്ലാത്ത പരിശോധനകളും",
+        "description": "നെറ്റ് ഇല്ലേ, അതോ വളരെ പതുക്കെയാണോ? ഒറ്റ ടാപ്പിൽ ആപ്പ് Wi-Fi, DNS, ഇന്റർനെറ്റ് എന്നിവ ക്രമത്തിൽ പരിശോധിച്ച് പ്രശ്നം ഏത് ഘട്ടത്തിലാണ്, ഏറ്റവും സാധ്യതയുള്ള",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3415,7 +3415,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6793414462",
           "inLanguage": "ml-IN",
-          "description": "യഥാർത്ഥ പ്രശ്നം കണ്ടെത്തുക. വാങ്ങാതെ തന്നെ ഏത് ടൂളിലും ആകെ ഒരു തവണ പൂർണ്ണ പരിശോധന നടത്താം. ഓപ്ഷണൽ ഒറ്റത്തവണ ഇൻ-ആപ്പ് വാങ്ങലിലൂടെ പരിധിയില്ലാത്ത പരിശോധനകളും",
+          "description": "നെറ്റ് ഇല്ലേ, അതോ വളരെ പതുക്കെയാണോ? ഒറ്റ ടാപ്പിൽ ആപ്പ് Wi-Fi, DNS, ഇന്റർനെറ്റ് എന്നിവ ക്രമത്തിൽ പരിശോധിച്ച് പ്രശ്നം ഏത് ഘട്ടത്തിലാണ്, ഏറ്റവും സാധ്യതയുള്ള",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ml-IN.jsonld#offer-wifiaidlite"
           },
@@ -3451,7 +3451,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ml-IN.jsonld#offer-wifiaid",
         "url": "https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=geo_pick&mt=8",
         "name": "WiFi Aid: കണക്ഷൻ പ്രശ്നം",
-        "description": "ഒറ്റ ടാപ്പിൽ Wi‑Fi, ഇന്റർനെറ്റ് പ്രശ്നങ്ങൾ പരിശോധിക്കൂ. DNS, TCP, TLS, വേഗം, ജിറ്റർ, IPv4, IPv6 തെളിവുകൾ കണ്ട് ശരിയായ പരിഹാരം തിരഞ്ഞെടുക്കൂ—പരസ്യമോ",
+        "description": "Wi-Fi വീണ്ടും മന്ദഗതിയിലാണോ, മുറിയുന്നുണ്ടോ? WiFi Aid ഒറ്റ ടാപ്പിൽ Wi-Fi, DNS, ഇന്റർനെറ്റ് എന്നിവ പരിശോധിച്ച് പ്രശ്നം മിക്കവാറും നിങ്ങളുടെ Wi-Fi-യിലോ",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3481,7 +3481,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6790467886",
           "inLanguage": "ml-IN",
-          "description": "ഒറ്റ ടാപ്പിൽ Wi‑Fi, ഇന്റർനെറ്റ് പ്രശ്നങ്ങൾ പരിശോധിക്കൂ. DNS, TCP, TLS, വേഗം, ജിറ്റർ, IPv4, IPv6 തെളിവുകൾ കണ്ട് ശരിയായ പരിഹാരം തിരഞ്ഞെടുക്കൂ—പരസ്യമോ",
+          "description": "Wi-Fi വീണ്ടും മന്ദഗതിയിലാണോ, മുറിയുന്നുണ്ടോ? WiFi Aid ഒറ്റ ടാപ്പിൽ Wi-Fi, DNS, ഇന്റർനെറ്റ് എന്നിവ പരിശോധിച്ച് പ്രശ്നം മിക്കവാറും നിങ്ങളുടെ Wi-Fi-യിലോ",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ml-IN.jsonld#offer-wifiaid"
           },
@@ -3517,7 +3517,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ml-IN.jsonld#offer-wordmatelite",
         "url": "https://apps.apple.com/in/app/id6797601720?pt=118326163&ct=geo_pick&mt=8",
         "name": "Wordmate Lite: ഇംഗ്ലീഷ് പഠനം",
-        "description": "പുതിയ വാക്കുകൾ പഠിക്കണം എന്ന് കരുതി വലിയൊരു കോഴ്സ് ഇൻസ്റ്റാൾ ചെയ്ത്, മൂന്നാം ദിവസം അത് അടച്ചുവെച്ച അനുഭവം പലർക്കുമുണ്ട്. ആദ്യ ദിവസം തന്നെ നൂറ് കാർഡ്",
+        "description": "ഏകദേശം ഒരു മിനിറ്റിൽ 5 വാക്കുകൾ പഠിക്കൂ: ഇംഗ്ലീഷ്, ജാപ്പനീസ്, കൊറിയൻ അല്ലെങ്കിൽ 44 ഭാഷകളിൽ ഏതും, യാത്ര, പുറത്തെ ഭക്ഷണം, ഷോപ്പിംഗ് പോലുള്ള യഥാർഥ",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3547,7 +3547,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6797601720",
           "inLanguage": "ml-IN",
-          "description": "പുതിയ വാക്കുകൾ പഠിക്കണം എന്ന് കരുതി വലിയൊരു കോഴ്സ് ഇൻസ്റ്റാൾ ചെയ്ത്, മൂന്നാം ദിവസം അത് അടച്ചുവെച്ച അനുഭവം പലർക്കുമുണ്ട്. ആദ്യ ദിവസം തന്നെ നൂറ് കാർഡ്",
+          "description": "ഏകദേശം ഒരു മിനിറ്റിൽ 5 വാക്കുകൾ പഠിക്കൂ: ഇംഗ്ലീഷ്, ജാപ്പനീസ്, കൊറിയൻ അല്ലെങ്കിൽ 44 ഭാഷകളിൽ ഏതും, യാത്ര, പുറത്തെ ഭക്ഷണം, ഷോപ്പിംഗ് പോലുള്ള യഥാർഥ",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ml-IN.jsonld#offer-wordmatelite"
           },
@@ -3649,7 +3649,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ml-IN.jsonld#offer-zipbox",
         "url": "https://apps.apple.com/in/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
         "name": "Zipbox: ZIP, RAR, 7z തുറക്കുക",
-        "description": "Zipbox App Store-ലെ പണമടച്ചുള്ള ആപ്പാണ്. ഒരിക്കൽ വാങ്ങിയാൽ എല്ലാ സൗകര്യവും ലഭിക്കും; ഇൻ-ആപ്പ് വാങ്ങലോ സബ്സ്ക്രിപ്ഷനോ പരസ്യമോ ഇല്ല. 13 ഫോർമാറ്റും ഉപകരണത്തിൽ",
+        "description": "ഫോണിൽ തന്നെ നേരിട്ട് RAR, 7z, ZIP ഉൾപ്പെടെ 13 തരം ആർക്കൈവുകൾ തുറക്കൂ. പുറത്തെടുക്കുന്നതിന് മുമ്പ് ഉള്ളിൽ നോക്കൂ: ഫോട്ടോ, വീഡിയോ, PDF, ടെക്സ്റ്റ്, കോഡ്",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3679,7 +3679,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806776579",
           "inLanguage": "ml-IN",
-          "description": "Zipbox App Store-ലെ പണമടച്ചുള്ള ആപ്പാണ്. ഒരിക്കൽ വാങ്ങിയാൽ എല്ലാ സൗകര്യവും ലഭിക്കും; ഇൻ-ആപ്പ് വാങ്ങലോ സബ്സ്ക്രിപ്ഷനോ പരസ്യമോ ഇല്ല. 13 ഫോർമാറ്റും ഉപകരണത്തിൽ",
+          "description": "ഫോണിൽ തന്നെ നേരിട്ട് RAR, 7z, ZIP ഉൾപ്പെടെ 13 തരം ആർക്കൈവുകൾ തുറക്കൂ. പുറത്തെടുക്കുന്നതിന് മുമ്പ് ഉള്ളിൽ നോക്കൂ: ഫോട്ടോ, വീഡിയോ, PDF, ടെക്സ്റ്റ്, കോഡ്",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ml-IN.jsonld#offer-zipbox"
           },

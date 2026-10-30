@@ -2,7 +2,7 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-10-30",
-  "content_digest": "d6e45b55a4ccd3f3f4f09cf0012214d7e12f3082e592059f04645f44292161fd",
+  "content_digest": "315c6b0abaef0a077eb757c22a7308b224812b6571321417bb5e6cfffe6dffcb",
   "locale": "pt-BR",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -143,7 +143,9 @@
         "Cuidado na carga",
         "Faixa de carga",
         "Velocidade de carga",
-        "Exportar dados"
+        "Exportar dados",
+        "capacidade da bateria",
+        "saúde da bateria"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -500,20 +502,18 @@
       "summary": "Papéis de parede em pares para as duas telas do iPhone Duo: fechado, um close na tela externa; aberto, a cena inteira na tela interna, da mesma arte original. Mais de 300 pares em 14 estilos · 5 widgets com o seu papel de parede · pares com suas fotos · sem anúncios, sem conta e sem coleta de dados.",
       "category": "photo-utility",
       "search_terms": [
+        "foldable",
         "celular",
         "fundo",
-        "tela",
+        "tela dupla",
         "bloqueio",
+        "widgets",
+        "combinando",
+        "oled",
+        "ilustração",
         "estético",
-        "personalizado",
         "fofo",
-        "bonito",
-        "frases",
-        "preto",
-        "amoled",
-        "foto",
-        "criar",
-        "flores"
+        "preto"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -877,7 +877,10 @@
         "pré-escola",
         "alfabetização",
         "revisão",
-        "bilíngue"
+        "bilíngue",
+        "bopomofo",
+        "mandarim crianças",
+        "zhuyin"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -2072,9 +2075,7 @@
         "reset",
         "llm",
         "meter",
-        "sessão",
-        "uso de tokens",
-        "limite codex"
+        "sessão"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

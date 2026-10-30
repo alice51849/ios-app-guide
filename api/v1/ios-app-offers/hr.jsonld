@@ -6,7 +6,7 @@
   "name": "Katalog namjera pretraživanja izdavača Lumi Studio",
   "description": "Katalog iz prve ruke o tome za koga je svaka aplikacija namijenjena, koji zadatak žele izvršiti i izravnom putu do App Storea.",
   "inLanguage": "hr",
-  "dateModified": "2026-10-23",
+  "dateModified": "2026-10-30",
   "numberOfItems": 56,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -19,7 +19,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-notesstudio100",
         "url": "https://apps.apple.com/hr/app/id6798813048?pt=118326163&ct=geo_pick&mt=8",
         "name": "100 Notes Studio: Pen & Paper",
-        "description": "100 Notes Studio povezuje rukopis, tipkanje, označavanje PDF dokumenata, organizaciju bilježnica i učenje u miran radni prostor koji radi i bez mreže.",
+        "description": "Pišite bilješke rukom kao olovkom na papiru: 29 pera i kistova, od nalivpera i olovke do kaligrafskog kista i akvarela, a kasnije možete pretraživati i",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -49,7 +49,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6798813048",
           "inLanguage": "hr",
-          "description": "100 Notes Studio povezuje rukopis, tipkanje, označavanje PDF dokumenata, organizaciju bilježnica i učenje u miran radni prostor koji radi i bez mreže.",
+          "description": "Pišite bilješke rukom kao olovkom na papiru: 29 pera i kistova, od nalivpera i olovke do kaligrafskog kista i akvarela, a kasnije možete pretraživati i",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-notesstudio100"
           },
@@ -85,7 +85,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-aibriefpack",
         "url": "https://apps.apple.com/hr/app/id6791658210?pt=118326163&ct=geo_pick&mt=8",
         "name": "AI Brief: Datoteke u AI upit",
-        "description": "Bolji kontekst. Bolji odgovori.",
+        "description": "Pretvorite snimke zaslona, PDF-ove, datoteke i bilješke u jedan pregledan AI upit u kojem su cilj, činjenice i izvori posloženi.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -115,7 +115,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6791658210",
           "inLanguage": "hr",
-          "description": "Bolji kontekst. Bolji odgovori.",
+          "description": "Pretvorite snimke zaslona, PDF-ove, datoteke i bilješke u jedan pregledan AI upit u kojem su cilj, činjenice i izvori posloženi.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-aibriefpack"
           },
@@ -217,7 +217,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-battai",
         "url": "https://apps.apple.com/hr/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
         "name": "BattAI: Ocjena stanja baterije",
-        "description": "BattAI BattAI koristi pet vrijednosti iz javnih API-ja sustava iOS: razinu baterije, stanje punjenja, način niske potrošnje, toplinsko stanje cijelog uređaja i vrijeme. Ostali rezultati izračunavaju se iz tih očitanja ili ih dodajete vi. Svaki podatak prikazuje izvor i ograničenja.",
+        "description": "Ocijenite stanje baterije i pratite kako se mijenja.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -247,7 +247,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802423998",
           "inLanguage": "hr",
-          "description": "BattAI BattAI koristi pet vrijednosti iz javnih API-ja sustava iOS: razinu baterije, stanje punjenja, način niske potrošnje, toplinsko stanje cijelog uređaja i vrijeme. Ostali rezultati izračunavaju se iz tih očitanja ili ih dodajete vi. Svaki podatak prikazuje izvor i ograničenja.",
+          "description": "Ocijenite stanje baterije i pratite kako se mijenja.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-battai"
           },
@@ -283,7 +283,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-caldaily",
         "url": "https://apps.apple.com/hr/app/id6794178671?pt=118326163&ct=geo_pick&mt=8",
         "name": "CalDaily: kalkulator i teme",
-        "description": "Kalkulator koji ćete zaista nastaviti koristiti, jer pamti razmišljanje iza svakog broja.",
+        "description": "Lijep kalkulator koji pamti: 100 ugrađenih tema i widget na početnom zaslonu koji računa bez otvaranja aplikacije.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -313,7 +313,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6794178671",
           "inLanguage": "hr",
-          "description": "Kalkulator koji ćete zaista nastaviti koristiti, jer pamti razmišljanje iza svakog broja.",
+          "description": "Lijep kalkulator koji pamti: 100 ugrađenih tema i widget na početnom zaslonu koji računa bez otvaranja aplikacije.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-caldaily"
           },
@@ -613,7 +613,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-dailymatelite",
         "url": "https://apps.apple.com/hr/app/id6794725568?pt=118326163&ct=geo_pick&mt=8",
         "name": "DailyMate Lite: Govori danas",
-        "description": "Govori kad je važno. DailyMate Lite pretvara stvarne situacije u kratke vježbe s korisnom replikom i prirodnim odgovorom na 50 jezika. Besplatno započni",
+        "description": "Uči bilo koji od 50 jezika, a ne samo jedan: engleski, španjolski, francuski, japanski, korejski i mnoge druge. Mijenjaj kad god želiš; svaki jezik čuva",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -643,7 +643,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6794725568",
           "inLanguage": "hr",
-          "description": "Govori kad je važno. DailyMate Lite pretvara stvarne situacije u kratke vježbe s korisnom replikom i prirodnim odgovorom na 50 jezika. Besplatno započni",
+          "description": "Uči bilo koji od 50 jezika, a ne samo jedan: engleski, španjolski, francuski, japanski, korejski i mnoge druge. Mijenjaj kad god želiš; svaki jezik čuva",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-dailymatelite"
           },
@@ -679,7 +679,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-dbhalo",
         "url": "https://apps.apple.com/hr/app/id6806826699?pt=118326163&ct=geo_pick&mt=8",
         "name": "dB Halo: Mjerač razine zvuka",
-        "description": "Odmah provjerite koliko je okolina glasna, koje frekvencije prevladavaju i koliko je procijenjenog sigurnog vremena ostalo. dB Halo mjeri razinu zvuka i",
+        "description": "Odmah vidite koliko je decibela oko vas: velik prikaz razine uživo s minimumom, prosjekom, maksimumom i vršnom vrijednošću te zapis glasnih događaja s",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -709,7 +709,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806826699",
           "inLanguage": "hr",
-          "description": "Odmah provjerite koliko je okolina glasna, koje frekvencije prevladavaju i koliko je procijenjenog sigurnog vremena ostalo. dB Halo mjeri razinu zvuka i",
+          "description": "Odmah vidite koliko je decibela oko vas: velik prikaz razine uživo s minimumom, prosjekom, maksimumom i vršnom vrijednošću te zapis glasnih događaja s",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-dbhalo"
           },
@@ -943,7 +943,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-gmoneylite",
         "url": "https://apps.apple.com/hr/app/id6793436548?pt=118326163&ct=geo_pick&mt=8",
         "name": "G+Money Lite: Putni troškovi",
-        "description": "G+Money Lite — Pametan putni konverter valuta i praćenje troškova",
+        "description": "Na svakom putovanju znajte koliko još danas smijete potrošiti. Upišite svaku kupnju u lokalnoj valuti i odmah je vidite u svojoj valuti, već oduzetu od",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -973,7 +973,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6793436548",
           "inLanguage": "hr",
-          "description": "G+Money Lite — Pametan putni konverter valuta i praćenje troškova",
+          "description": "Na svakom putovanju znajte koliko još danas smijete potrošiti. Upišite svaku kupnju u lokalnoj valuti i odmah je vidite u svojoj valuti, već oduzetu od",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-gmoneylite"
           },
@@ -1075,7 +1075,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-hourstaglite",
         "url": "https://apps.apple.com/hr/app/id6794039979?pt=118326163&ct=geo_pick&mt=8",
         "name": "HoursTag Lite: Cijena u satima",
-        "description": "HoursTag Lite - Pogledaj pravu cijenu stvari",
+        "description": "Prije kupnje pogledajte koliko vas sati rada to stvarno stoji. Unesite neto satnicu i HoursTag Lite pretvara svaku cijenu u radno vrijeme.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1105,7 +1105,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6794039979",
           "inLanguage": "hr",
-          "description": "HoursTag Lite - Pogledaj pravu cijenu stvari",
+          "description": "Prije kupnje pogledajte koliko vas sati rada to stvarno stoji. Unesite neto satnicu i HoursTag Lite pretvara svaku cijenu u radno vrijeme.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-hourstaglite"
           },
@@ -1933,7 +1933,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-maskmyfile",
         "url": "https://apps.apple.com/hr/app/id6792850916?pt=118326163&ct=geo_pick&mt=8",
         "name": "Mask My File: Ukloni podatke",
-        "description": "Dijelite bez brige i zadržite koristan kontekst. Mask My File pronalazi privatne podatke prije nego što pošaljete datoteku, trajno prekriva ono što",
+        "description": "Zacrnite osobne podatke prije dijeljenja. Mask My File pronalazi imena, telefonske brojeve, e-adrese, adrese te podatke o računima i plaćanju, a zatim",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1963,7 +1963,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6792850916",
           "inLanguage": "hr",
-          "description": "Dijelite bez brige i zadržite koristan kontekst. Mask My File pronalazi privatne podatke prije nego što pošaljete datoteku, trajno prekriva ono što",
+          "description": "Zacrnite osobne podatke prije dijeljenja. Mask My File pronalazi imena, telefonske brojeve, e-adrese, adrese te podatke o računima i plaćanju, a zatim",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-maskmyfile"
           },
@@ -2065,7 +2065,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-mochidonestamp",
         "url": "https://apps.apple.com/hr/app/id6790800323?pt=118326163&ct=geo_pick&mt=8",
         "name": "Mochi DoneStamp: Zadnji put",
-        "description": "Kada ste zadnji put promijenili posteljinu, zalili biljku, nazvali obitelj, sigurnosno kopirali fotografije ili zamijenili filtar?",
+        "description": "Kada ste zadnji put promijenili posteljinu, očistili filtar klima-uređaja ili promijenili ulje u autu?",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2095,7 +2095,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6790800323",
           "inLanguage": "hr",
-          "description": "Kada ste zadnji put promijenili posteljinu, zalili biljku, nazvali obitelj, sigurnosno kopirali fotografije ili zamijenili filtar?",
+          "description": "Kada ste zadnji put promijenili posteljinu, očistili filtar klima-uređaja ili promijenili ulje u autu?",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-mochidonestamp"
           },
@@ -2395,7 +2395,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-qrcodehalo",
         "url": "https://apps.apple.com/hr/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
         "name": "QR Code Halo: Skener kodova",
-        "description": "QR Code Halo djeluje čim pročita kod. Skenirajte kamerom ili odaberite sliku: poveznice se otvaraju u pregledniku, kodovi za prijavu pristupnim ključem i",
+        "description": "Skenirajte QR kodove i crtične kodove u 20 formata kamerom ili sa slike, a radnja se izvršava odmah: poveznice se otvaraju, a Wi-Fi kodovi prikazuju upit",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2425,7 +2425,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806779853",
           "inLanguage": "hr",
-          "description": "QR Code Halo djeluje čim pročita kod. Skenirajte kamerom ili odaberite sliku: poveznice se otvaraju u pregledniku, kodovi za prijavu pristupnim ključem i",
+          "description": "Skenirajte QR kodove i crtične kodove u 20 formata kamerom ili sa slike, a radnja se izvršava odmah: poveznice se otvaraju, a Wi-Fi kodovi prikazuju upit",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-qrcodehalo"
           },
@@ -2659,7 +2659,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-shotinbox",
         "url": "https://apps.apple.com/hr/app/id6802166527?pt=118326163&ct=geo_pick&mt=8",
         "name": "ShotInbox AI: Sort Screenshots",
-        "description": "Vaše snimke, uredno složene",
+        "description": "Vaše snimke zaslona, automatski razvrstane: Kupnja, Računi, Putovanja, Karte i mjesta, Razgovori i društveno, Posao i još mnogo toga.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2689,7 +2689,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802166527",
           "inLanguage": "hr",
-          "description": "Vaše snimke, uredno složene",
+          "description": "Vaše snimke zaslona, automatski razvrstane: Kupnja, Računi, Putovanja, Karte i mjesta, Razgovori i društveno, Posao i još mnogo toga.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-shotinbox"
           },
@@ -2923,7 +2923,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-stayclock",
         "url": "https://apps.apple.com/hr/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
         "name": "Stay Clock: preklopni sat",
-        "description": "Stay Clock pretvara vaš iPhone ili iPad u stolni sat koji svijetli bez prekida i čita se s drugog kraja sobe. Velik prikaz vremena, kalendar prilagođen",
+        "description": "Stay Clock pretvara vaš iPhone ili iPad u stolni sat koji svijetli bez prekida i čita se s drugog kraja sobe. Birajte između 101 brojčanika, uključujući",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2953,7 +2953,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6814035888",
           "inLanguage": "hr",
-          "description": "Stay Clock pretvara vaš iPhone ili iPad u stolni sat koji svijetli bez prekida i čita se s drugog kraja sobe. Velik prikaz vremena, kalendar prilagođen",
+          "description": "Stay Clock pretvara vaš iPhone ili iPad u stolni sat koji svijetli bez prekida i čita se s drugog kraja sobe. Birajte između 101 brojčanika, uključujući",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-stayclock"
           },
@@ -2989,7 +2989,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-studydown",
         "url": "https://apps.apple.com/hr/app/id6807335593?pt=118326163&ct=geo_pick&mt=8",
         "name": "Studydown: Praćenje vremena",
-        "description": "Odvojite vrijeme za ono što vam je važno. Studydown bilježi koliko ulažete u projekt, čitanje ili hobi: dovoljno je odabrati aktivnost i položiti telefon",
+        "description": "Okrenite telefon zaslonom prema dolje i mjerenje počinje, podignite ga i stane, pa se u sate učenja i rada računa samo stvarna koncentracija.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3019,7 +3019,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6807335593",
           "inLanguage": "hr",
-          "description": "Odvojite vrijeme za ono što vam je važno. Studydown bilježi koliko ulažete u projekt, čitanje ili hobi: dovoljno je odabrati aktivnost i položiti telefon",
+          "description": "Okrenite telefon zaslonom prema dolje i mjerenje počinje, podignite ga i stane, pa se u sate učenja i rada računa samo stvarna koncentracija.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-studydown"
           },
@@ -3385,7 +3385,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-wifiaidlite",
         "url": "https://apps.apple.com/hr/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
         "name": "WiFi Aid Lite",
-        "description": "Pronađi stvarni problem. Bez kupnje možete ukupno jednom provesti potpunu provjeru bilo kojim alatom. Neobavezna jednokratna kupnja u aplikaciji otključava",
+        "description": "Nema interneta ili sve zapinje? Jednim dodirom aplikacija redom provjerava Wi-Fi, DNS i internet te pokazuje u kojem koraku nastaje problem, koji je",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3415,7 +3415,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6793414462",
           "inLanguage": "hr",
-          "description": "Pronađi stvarni problem. Bez kupnje možete ukupno jednom provesti potpunu provjeru bilo kojim alatom. Neobavezna jednokratna kupnja u aplikaciji otključava",
+          "description": "Nema interneta ili sve zapinje? Jednim dodirom aplikacija redom provjerava Wi-Fi, DNS i internet te pokazuje u kojem koraku nastaje problem, koji je",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-wifiaidlite"
           },
@@ -3451,7 +3451,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-wifiaid",
         "url": "https://apps.apple.com/hr/app/id6790467886?pt=118326163&ct=geo_pick&mt=8",
         "name": "WiFi Aid: Dijagnostika mreže",
-        "description": "Pronađite najvjerojatniji uzrok neovisnim provjerama putanja, DNS-a, TCP-a, TLS-a, vremena i stabilnosti. Jedno plaćanje unaprijed, bez pretplate, oglasa i",
+        "description": "Wi-Fi opet spor ili se prekida? WiFi Aid jednim dodirom provjerava Wi-Fi, DNS i internet te vam kaže je li problem najvjerojatnije u Wi-Fi mreži, DNS-u",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3481,7 +3481,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6790467886",
           "inLanguage": "hr",
-          "description": "Pronađite najvjerojatniji uzrok neovisnim provjerama putanja, DNS-a, TCP-a, TLS-a, vremena i stabilnosti. Jedno plaćanje unaprijed, bez pretplate, oglasa i",
+          "description": "Wi-Fi opet spor ili se prekida? WiFi Aid jednim dodirom provjerava Wi-Fi, DNS i internet te vam kaže je li problem najvjerojatnije u Wi-Fi mreži, DNS-u",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-wifiaid"
           },
@@ -3517,7 +3517,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-wordmatelite",
         "url": "https://apps.apple.com/hr/app/id6797601720?pt=118326163&ct=geo_pick&mt=8",
         "name": "Wordmate Lite: vokabular",
-        "description": "Želiš napokon pomaknuti strani jezik s mrtve točke, ali večer opet prođe bez ijedne nove riječi. Wordmate Lite svodi učenje na jednu minutu dnevno",
+        "description": "Nauči 5 riječi za otprilike minutu: engleski, japanski, korejski ili bilo koji od 44 jezika, počevši od stvarnih situacija poput putovanja, odlaska u",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3547,7 +3547,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6797601720",
           "inLanguage": "hr",
-          "description": "Želiš napokon pomaknuti strani jezik s mrtve točke, ali večer opet prođe bez ijedne nove riječi. Wordmate Lite svodi učenje na jednu minutu dnevno",
+          "description": "Nauči 5 riječi za otprilike minutu: engleski, japanski, korejski ili bilo koji od 44 jezika, počevši od stvarnih situacija poput putovanja, odlaska u",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-wordmatelite"
           },
@@ -3649,7 +3649,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-zipbox",
         "url": "https://apps.apple.com/hr/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
         "name": "Zipbox: otvori RAR, ZIP, 7z",
-        "description": "Zipbox se plaća pri preuzimanju s App Storea. Sve su funkcije uključene, bez kupnji u aplikaciji, pretplata i oglasa. Svih 13 formata obrađuje se na",
+        "description": "Otvarajte RAR, 7z, ZIP i još 10 formata arhiva izravno na iPhoneu. Pogledajte unutra prije raspakiravanja: pregled fotografija, videozapisa, PDF-a",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3679,7 +3679,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806776579",
           "inLanguage": "hr",
-          "description": "Zipbox se plaća pri preuzimanju s App Storea. Sve su funkcije uključene, bez kupnji u aplikaciji, pretplata i oglasa. Svih 13 formata obrađuje se na",
+          "description": "Otvarajte RAR, 7z, ZIP i još 10 formata arhiva izravno na iPhoneu. Pogledajte unutra prije raspakiravanja: pregled fotografija, videozapisa, PDF-a",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-zipbox"
           },

@@ -2,7 +2,7 @@
 title: "Mochi DoneStamp: Naposledy — Kedy to bolo? Pripomienky | iOS App"
 lang: "sk"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochidonestamp/decision/l/sk/index.html"
-modified: "2026-10-29"
+modified: "2026-10-30"
 app_store_id: "6790800323"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # Mochi DoneStamp: Naposledy — Kedy to bolo? Pripomienky | iOS App
 
-Kedy ste naposledy menili posteľnú bielizeň, polievali rastlinu, volali rodine, zálohovali fotky alebo menili filter? Mochi DoneStamp je pamäť pre životné udalosti, nie ďalší zoznam úloh. Po dokončení stačí jedno ťuknutie a presný čas sa uloží do pokojnej histórie. Podľa potreby pridajte približný alebo presný rytmus. Ďalší termín sa vždy prepočíta od skutočného dokončenia. • Záznam jedným ťuknutím a Späť • Pridanie, úprava alebo odstránenie minulých chvíľ • Flexibilné a presné rytmy od minút po roky • Lokálne oznámenia s Hotovo a Odložiť • Interaktívne widgety plochy a zamknutej obrazovky • Siri, Skratky, voliteľné poznámky a fotky • Štatistiky intervalov, úplná záloha a export JSON • Tmavý režim, iPad, VoiceOver a Dynamic Type Zdarma získate jednu aktívnu udalosť a neobmedzenú históriu. Jediný nákup Lifetime Pro odomkne neobmedzené udalosti a všetky funkcie. Bez účtu, reklám, analytiky a sledovania. Základné údaje zostávajú v zariadení. Žiadne predplatné. Optimalizované pre iPhone Duo.
+Optimalizované pre iPhone Duo. Aplikácia je zostavená s najnovším SDK, vyplní celý vnútorný displej a automaticky prispôsobí rozloženie, či je zariadenie zložené, alebo rozložené. Kedy ste naposledy menili posteľnú bielizeň, čistili filter klimatizácie alebo menili olej v aute? Keď je hotovo, stačí jedno ťuknutie a Mochi DoneStamp zaznamená presný čas, takže vždy vidíte, koľko uplynulo. Nastavte rytmus a dostanete pripomienku, keď príde čas; ďalší termín sa vždy počíta odo dňa, keď ste to skutočne urobili. • Záznam jedným ťuknutím a Späť • Pridanie, úprava alebo odstránenie minulých chvíľ • Flexibilné a presné rytmy od minút po roky • Lokálne oznámenia s Hotovo a Odložiť • Interaktívne widgety plochy a zamknutej obrazovky • Siri, Skratky, voliteľné poznámky a fotky • Štatistiky intervalov, úplná záloha a export JSON • Tmavý režim, iPad, VoiceOver a Dynamic Type • Apple Watch: posledný čas a záznam priamo zo zápästia Zdarma získate jednu aktívnu udalosť a neobmedzenú históriu. Jediný nákup Lifetime Pro odomkne neobmedzené udalosti a všetky funkcie. Bez účtu, reklám, analytiky a sledovania. Základné údaje zostávajú v zariadení. Žiadne predplatné. Optimalizované pre iPhone Duo.
 
 - Životný štýl
 - Zadarmo na začiatok

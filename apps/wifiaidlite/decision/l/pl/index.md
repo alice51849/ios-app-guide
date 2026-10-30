@@ -2,7 +2,7 @@
 title: "WiFi Aid Lite — Brak internetu? Oto przyczyna | iOS App"
 lang: "pl"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaidlite/decision/l/pl/index.html"
-modified: "2026-10-29"
+modified: "2026-10-30"
 app_store_id: "6793414462"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # WiFi Aid Lite — Brak internetu? Oto przyczyna | iOS App
 
-Znajdź prawdziwy problem. Bez zakupu możesz wykonać łącznie jedno pełne sprawdzenie dowolnym narzędziem. Opcjonalny jednorazowy zakup w aplikacji odblokowuje nieograniczone sprawdzenia i porównanie przed naprawą i po niej—bez subskrypcji, reklam i śledzenia. • Rozpocznij — Wi-Fi, DNS i internet za jednym kliknięciem • Deep Check — Więcej dowodów i stabilność • Sprawdź Stronę — Jedna strona lub cały internet • Dowody — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Połączenie jest niestabilne — Wahanie (Jitter) • Historia — Dane są przechowywane tylko na tym urządzeniu • Podłączony węzeł — Dokładna lokalizacja rozpoznaje Wi-Fi i bieżący węzeł Bez konta, reklam i śledzenia. Dane są przechowywane tylko na tym urządzeniu. Bez zakupu możesz wykonać łącznie jedno pełne sprawdzenie dowolnym narzędziem. Opcjonalny jednorazowy zakup w aplikacji odblokowuje nieograniczone sprawdzenia i porównanie przed naprawą i po niej—bez subskrypcji, reklam i śledzenia.
+Zoptymalizowana dla urządzenia iPhone Duo. Zbudowana przy użyciu najnowszego SDK aplikacja wypełnia cały wewnętrzny wyświetlacz i automatycznie dopasowuje układ, gdy urządzenie jest złożone lub rozłożone. Nie działa internet albo wszystko się tnie? Jednym dotknięciem aplikacja sprawdza po kolei Wi-Fi, DNS i internet, a potem pokazuje, na którym etapie jest problem, jaka jest najbardziej prawdopodobna przyczyna i co zrobić dalej. „Sprawdź Stronę” pokaże, czy problem dotyczy tylko jednej strony, czy całego połączenia. „Dokładna kontrola” zbiera więcej pomiarów, by wyłapać przerwy, które pojawiają się i znikają. Każdy wynik pokazuje dowody (DNS, TCP, TLS, czas odpowiedzi, IPv4 i IPv6), więc nie musisz zgadywać ani restartować wszystkiego na ślepo. • Strony logowania: wykrywa Wi-Fi w hotelach, kawiarniach i na lotniskach, które jest połączone, ale wciąż wymaga logowania w przeglądarce • Stabilność: powtarzane pomiary ujawniają wahania na połączeniach, które wyglądają dobrze, ale działają wolno • Co robić dalej: konkretne kroki, np. otwarcie strony logowania, wypróbowanie zaufanej usługi DNS lub test bliżej routera • Historia: porównuj wyniki w czasie; dane zostają tylko na tym urządzeniu • Podłączony węzeł: po zezwoleniu na dokładną lokalizację rozpoznaje tę sieć Wi-Fi i węzeł, z którym masz połączenie Pierwsza pełna kontrola, dowolnym narzędziem, nie wymaga zakupu. Potem opcjonalny jednorazowy zakup w aplikacji odblokowuje nieograniczone kontrole wszystkimi narzędziami, pełną historię i porównanie przed naprawą i po niej. Bez subskrypcji. Bez konta, reklam, analityki i śledzenia. Lokalizacja służy tylko do rozpoznania sieci Wi-Fi i węzła i jest przetwarzana na urządzeniu. Historia nigdy nie trafia do chmury.
 
 - Więcej
 - Darmowe na start · jednorazowe odblokowanie

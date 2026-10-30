@@ -2,7 +2,7 @@
 title: "WiFi Aid Lite: WLAN-Test — Kein Internet? Ursache finden | iOS App"
 lang: "de-DE"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaidlite/decision/l/de-DE/index.html"
-modified: "2026-10-29"
+modified: "2026-10-30"
 app_store_id: "6793414462"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # WiFi Aid Lite: WLAN-Test — Kein Internet? Ursache finden | iOS App
 
-Das echte Problem. Ohne Kauf ist insgesamt eine vollständige Prüfung möglich, mit einem beliebigen Tool. Ein optionaler Einmalkauf schaltet unbegrenzte Prüfungen und den Vorher-nachher-Vergleich nach der Behebung frei—kein Abo, keine Werbung oder Tracking. • Check starten — WLAN, DNS und Internet mit einem Tipp • Deep Check — Mehr Fakten und Stabilität • Website prüfen — Eine Seite oder das ganze Web • Fakten — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Verbindung instabil — Schwankung • Test-Verlauf — Daten bleiben lokal auf deinem Gerät • Verbundener Knoten — Genauer Standort erkennt WLAN und aktuellen Knoten Kein Konto, keine Werbung, kein Tracking. Daten bleiben lokal auf deinem Gerät. Ohne Kauf ist insgesamt eine vollständige Prüfung möglich, mit einem beliebigen Tool. Ein optionaler Einmalkauf schaltet unbegrenzte Prüfungen und den Vorher-nachher-Vergleich nach der Behebung frei—kein Abo, keine Werbung oder Tracking.
+Optimiert für das iPhone Duo. Die mit dem neuesten SDK entwickelte App füllt das gesamte innere Display und passt das Layout automatisch an, egal ob zugeklappt oder aufgeklappt. Kein Internet oder alles lahm? Ein Tipp prüft WLAN, DNS und Internet der Reihe nach und zeigt, an welcher Stelle es hakt, was die wahrscheinlichste Ursache ist und was du als Nächstes tun kannst. Mit „Website prüfen“ siehst du, ob nur eine Seite streikt oder deine ganze Verbindung. Der „Gründliche Check“ sammelt mehr Messungen und erwischt auch Aussetzer, die kommen und gehen. Jedes Ergebnis zeigt seine Belege (DNS, TCP, TLS, Antwortzeit, IPv4 und IPv6), damit du nicht raten oder auf gut Glück neu starten musst. • Anmeldeseiten: erkennt WLAN im Hotel, Café oder am Flughafen, das verbunden ist, aber noch eine Anmeldung im Browser verlangt • Stabilität: wiederholte Messungen decken Schwankungen auf, wenn die Verbindung gut aussieht, sich aber langsam anfühlt • Nächste Schritte: konkrete Tipps, etwa die Anmeldeseite öffnen, einen vertrauenswürdigen DNS-Dienst nutzen oder näher am Router testen • Test-Verlauf: Ergebnisse über die Zeit vergleichen; alles bleibt nur auf diesem Gerät • Verbundener Knoten: Mit genauem Standort erkennt die App dieses WLAN und den Knoten, mit dem du verbunden bist Deine erste vollständige Prüfung, mit einem beliebigen Tool, ist ohne Kauf möglich. Ein optionaler Einmalkauf in der App schaltet danach unbegrenzte Prüfungen mit allen Tools, den vollständigen Verlauf und den Vorher-nachher-Vergleich nach der Behebung frei. Kein Abo. Kein Konto, keine Werbung, keine Analyse, kein Tracking. Der Standort dient nur dazu, WLAN und Knoten zu erkennen, und wird auf dem Gerät verarbeitet. Der Verlauf wird nie hochgeladen.
 
 - Mehr
 - Kostenloser Einstieg · einmalige Freischaltung

@@ -2,7 +2,7 @@
 title: "SaveTag : favoris par IA — Liens à lire ou voir plus tard | iOS App"
 lang: "fr-FR"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/savetag/decision/l/fr-FR/index.html"
-modified: "2026-10-29"
+modified: "2026-10-30"
 app_store_id: "6802505528"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

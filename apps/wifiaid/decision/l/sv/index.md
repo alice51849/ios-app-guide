@@ -2,7 +2,7 @@
 title: "WiFi Aid: Hitta nätverksfel — Router-, mesh- och DNS-diagnos | iOS App"
 lang: "sv"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/sv/index.html"
-modified: "2026-10-29"
+modified: "2026-10-30"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # WiFi Aid: Hitta nätverksfel — Router-, mesh- och DNS-diagnos | iOS App
 
-Hitta den troligaste orsaken med oberoende tester av vägar, DNS, TCP, TLS, svarstid och stabilitet. En betalning i förskott, utan abonnemang, reklam eller spårning. • Starta Test — Wi-Fi, DNS och internettester med ett tryck • Deep Check — Mer bevis och stabilitet • Testa en Webbplats — Se om felet beror på en sida eller nätet • Bevis — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Anslutningen är instabil — Variation • Test-historik — Datan sparas bara på denna enhet • Apple Watch — Starta Test • Widget · iPad — Ansluten · Starta Test Inget konto, annonser eller spårning. Datan sparas bara på denna enhet. Ett engångsköp i App Store. Ingen prenumeration. Optimerad för iPhone Duo.
+Optimerad för iPhone Duo. Appen är byggd med den senaste SDK:n, fyller hela den inre skärmen och anpassar layouten automatiskt, både hopfälld och utfälld. Är wifi-nätet långsamt eller tappar det igen? WiFi Aid testar wifi, DNS och internet med ett tryck och berättar om problemet troligen ligger i ditt wifi, i DNS, hos internetleverantören eller på en enda webbplats – med bevisen bakom varje bedömning. Deep Check fortsätter att mäta för att avslöja ostabila anslutningar som ser anslutna ut men hackar, och i mesh-nät visar den vilken nod du är ansluten till och om den har bytts sedan förra testet. Testa även från Apple Watch eller en widget på hemskärmen; testhistoriken stannar bara på den här enheten. • Starta test — testa wifi, DNS och internet med ett tryck och få svar på några sekunder • Deep Check — fler stabilitetsmätningar för problem som kommer och går • Testa en webbplats — se om bara en sajt ligger nere eller hela anslutningen • Alla bevis — DNS, TCP, TLS, TTFB, HTTP, direkt IP, IPv4 och IPv6, punkt för punkt • Mesh-nod — se vilken nod du är ansluten till och om du har bytt • Testhistorik — jämför tidigare resultat, sparade bara på den här enheten • Apple Watch — kör ett test från handleden • Widget och iPad — anslutningsstatus på hemskärmen och fullständig iPad-layout Inget konto, inga annonser, ingen analys eller spårning. Ett engångsköp i App Store. Ingen prenumeration. Optimerad för iPhone Duo.
 
 - Foto & verktyg
 - Betald nedladdning

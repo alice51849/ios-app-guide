@@ -2,7 +2,7 @@
 title: "best iphone battery health app with honest estimates and report"
 lang: "en-US"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/battai/decision/l/en-US/index.html"
-modified: "2026-10-29"
+modified: "2026-10-30"
 app_store_id: "6802423998"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,6 +18,7 @@ A battery score is only useful when the app separates what iOS measured, what it
 - No ads
 - Apple Watch
 - App Store · Free
+- ★ 5.0/5 · 1
 
 [Get BattAI on the App Store →](https://apps.apple.com/us/app/id6802423998?pt=118326163&ct=geo_pick&mt=8)
 

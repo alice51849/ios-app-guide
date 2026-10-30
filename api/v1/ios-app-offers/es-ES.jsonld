@@ -6,7 +6,7 @@
   "name": "Catálogo de intenciones de búsqueda del editor Lumi Studio",
   "description": "Un catálogo publicado directamente por el desarrollador que indica para quién está diseñada cada app, la tarea que quiere completar y el acceso directo a App Store.",
   "inLanguage": "es-ES",
-  "dateModified": "2026-10-23",
+  "dateModified": "2026-10-30",
   "numberOfItems": 56,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -217,7 +217,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/es-ES.jsonld#offer-battai",
         "url": "https://apps.apple.com/es/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
         "name": "BattAI: Salud de la batería",
-        "description": "BattAI BattAI usa cinco valores de las API públicas de iOS: nivel de batería, estado de carga, modo de bajo consumo, estado térmico del dispositivo y hora. Los demás resultados se calculan con esas lecturas o los añades tú. Cada dato muestra su fuente y sus límites.",
+        "description": "Puntúa la salud de tu batería y sigue su evolución.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -247,7 +247,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802423998",
           "inLanguage": "es-ES",
-          "description": "BattAI BattAI usa cinco valores de las API públicas de iOS: nivel de batería, estado de carga, modo de bajo consumo, estado térmico del dispositivo y hora. Los demás resultados se calculan con esas lecturas o los añades tú. Cada dato muestra su fuente y sus límites.",
+          "description": "Puntúa la salud de tu batería y sigue su evolución.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/es-ES.jsonld#offer-battai"
           },
@@ -283,7 +283,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/es-ES.jsonld#offer-caldaily",
         "url": "https://apps.apple.com/es/app/id6794178671?pt=118326163&ct=geo_pick&mt=8",
         "name": "CalDaily: calculadora y temas",
-        "description": "Una calculadora que conservarás, porque recuerda de qué iba cada número.",
+        "description": "Una calculadora bonita que lo recuerda todo: 100 temas integrados y un widget en la pantalla de inicio que calcula sin abrir la app.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -313,7 +313,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6794178671",
           "inLanguage": "es-ES",
-          "description": "Una calculadora que conservarás, porque recuerda de qué iba cada número.",
+          "description": "Una calculadora bonita que lo recuerda todo: 100 temas integrados y un widget en la pantalla de inicio que calcula sin abrir la app.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/es-ES.jsonld#offer-caldaily"
           },
@@ -613,7 +613,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/es-ES.jsonld#offer-dailymatelite",
         "url": "https://apps.apple.com/es/app/id6794725568?pt=118326163&ct=geo_pick&mt=8",
         "name": "DailyMate Lite: Habla hoy",
-        "description": "Habla con confianza cuando llegue el momento. DailyMate Lite convierte situaciones cotidianas en breves intercambios que puedes escuchar y practicar en",
+        "description": "Aprende cualquiera de los 50 idiomas, no solo uno: inglés, francés, japonés, coreano, italiano y muchos más. Cambia cuando quieras; cada idioma conserva su",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -643,7 +643,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6794725568",
           "inLanguage": "es-ES",
-          "description": "Habla con confianza cuando llegue el momento. DailyMate Lite convierte situaciones cotidianas en breves intercambios que puedes escuchar y practicar en",
+          "description": "Aprende cualquiera de los 50 idiomas, no solo uno: inglés, francés, japonés, coreano, italiano y muchos más. Cambia cuando quieras; cada idioma conserva su",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/es-ES.jsonld#offer-dailymatelite"
           },
@@ -679,7 +679,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/es-ES.jsonld#offer-dbhalo",
         "url": "https://apps.apple.com/es/app/id6806826699?pt=118326163&ct=geo_pick&mt=8",
         "name": "dB Halo: Sonómetro",
-        "description": "dB Halo muestra de un vistazo el nivel de presión sonora en un piso, una obra, un concierto o un gimnasio, y estima cuánto tiempo de exposición queda según",
+        "description": "Mira al instante cuántos decibelios hay ahora: una lectura grande en directo con el mínimo, la media, el máximo y el pico, y un registro de ruidos",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -709,7 +709,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806826699",
           "inLanguage": "es-ES",
-          "description": "dB Halo muestra de un vistazo el nivel de presión sonora en un piso, una obra, un concierto o un gimnasio, y estima cuánto tiempo de exposición queda según",
+          "description": "Mira al instante cuántos decibelios hay ahora: una lectura grande en directo con el mínimo, la media, el máximo y el pico, y un registro de ruidos",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/es-ES.jsonld#offer-dbhalo"
           },
@@ -2395,7 +2395,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/es-ES.jsonld#offer-qrcodehalo",
         "url": "https://apps.apple.com/es/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
         "name": "QR Code Halo: Escanea y Crea",
-        "description": "QR Code Halo actúa en cuanto lee un código. Escanea con la cámara o elige una foto: los enlaces se abren en tu navegador, los códigos de inicio con llave",
+        "description": "Escanea códigos QR y de barras en 20 formatos con la cámara o desde una foto, y actúa al momento: los enlaces se abren y los códigos wifi muestran el aviso",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2425,7 +2425,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806779853",
           "inLanguage": "es-ES",
-          "description": "QR Code Halo actúa en cuanto lee un código. Escanea con la cámara o elige una foto: los enlaces se abren en tu navegador, los códigos de inicio con llave",
+          "description": "Escanea códigos QR y de barras en 20 formatos con la cámara o desde una foto, y actúa al momento: los enlaces se abren y los códigos wifi muestran el aviso",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/es-ES.jsonld#offer-qrcodehalo"
           },
@@ -2659,7 +2659,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/es-ES.jsonld#offer-shotinbox",
         "url": "https://apps.apple.com/es/app/id6802166527?pt=118326163&ct=geo_pick&mt=8",
         "name": "ShotInbox AI: Sort Screenshots",
-        "description": "Tus capturas, bien ordenadas",
+        "description": "Tus capturas, ordenadas automáticamente: Compras, Recibos, Billetes, Viajes, Mapas y lugares, Chats y redes, Trabajo y más.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2689,7 +2689,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802166527",
           "inLanguage": "es-ES",
-          "description": "Tus capturas, bien ordenadas",
+          "description": "Tus capturas, ordenadas automáticamente: Compras, Recibos, Billetes, Viajes, Mapas y lugares, Chats y redes, Trabajo y más.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/es-ES.jsonld#offer-shotinbox"
           },
@@ -2923,7 +2923,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/es-ES.jsonld#offer-stayclock",
         "url": "https://apps.apple.com/es/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
         "name": "Stay Clock: reloj flip",
-        "description": "Stay Clock convierte tu iPhone o iPad en un reloj de mesa siempre encendido que puedes leer desde el otro lado de la habitación. Hora grande, un calendario",
+        "description": "Stay Clock convierte tu iPhone o iPad en un reloj de mesa siempre encendido que puedes leer desde el otro lado de la habitación. Elige entre 101 esferas",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2953,7 +2953,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6814035888",
           "inLanguage": "es-ES",
-          "description": "Stay Clock convierte tu iPhone o iPad en un reloj de mesa siempre encendido que puedes leer desde el otro lado de la habitación. Hora grande, un calendario",
+          "description": "Stay Clock convierte tu iPhone o iPad en un reloj de mesa siempre encendido que puedes leer desde el otro lado de la habitación. Elige entre 101 esferas",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/es-ES.jsonld#offer-stayclock"
           },
@@ -2989,7 +2989,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/es-ES.jsonld#offer-studydown",
         "url": "https://apps.apple.com/es/app/id6807335593?pt=118326163&ct=geo_pick&mt=8",
         "name": "Studydown: Cronómetro",
-        "description": "Dedica tiempo a lo que te importa y descubre cómo se acumula tu esfuerzo. Studydown registra el tiempo para proyectos, lectura y aficiones cuando dejas",
+        "description": "Pon el móvil boca abajo y empieza a contar; levántalo y se pausa, así solo cuenta el tiempo de concentración real en tus horas de estudio y de trabajo.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3019,7 +3019,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6807335593",
           "inLanguage": "es-ES",
-          "description": "Dedica tiempo a lo que te importa y descubre cómo se acumula tu esfuerzo. Studydown registra el tiempo para proyectos, lectura y aficiones cuando dejas",
+          "description": "Pon el móvil boca abajo y empieza a contar; levántalo y se pausa, así solo cuenta el tiempo de concentración real en tus horas de estudio y de trabajo.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/es-ES.jsonld#offer-studydown"
           },
@@ -3451,7 +3451,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/es-ES.jsonld#offer-wifiaidlite",
         "url": "https://apps.apple.com/es/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
         "name": "WiFi Aid Lite",
-        "description": "Puedes hacer una comprobación completa en total, con cualquier herramienta, sin comprar. Una compra única opcional dentro de la app desbloquea",
+        "description": "¿Sin internet o va lentísimo? Con un toque se revisan el Wi-Fi, el DNS e internet por orden, y ves en qué paso falla, la causa más probable y qué probar",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3481,7 +3481,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6793414462",
           "inLanguage": "es-ES",
-          "description": "Puedes hacer una comprobación completa en total, con cualquier herramienta, sin comprar. Una compra única opcional dentro de la app desbloquea",
+          "description": "¿Sin internet o va lentísimo? Con un toque se revisan el Wi-Fi, el DNS e internet por orden, y ves en qué paso falla, la causa más probable y qué probar",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/es-ES.jsonld#offer-wifiaidlite"
           },
@@ -3517,7 +3517,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/es-ES.jsonld#offer-wordmatelite",
         "url": "https://apps.apple.com/es/app/id6797601720?pt=118326163&ct=geo_pick&mt=8",
         "name": "Wordmate Lite: vocabulario",
-        "description": "Cinco palabras, un minuto, un paso visible en tu camino. Wordmate Lite convierte ese propósito difuso de aprender un idioma en una costumbre lo bastante",
+        "description": "Aprende 5 palabras en un minuto: inglés, japonés, coreano o cualquiera de los 44 idiomas, empezando por situaciones reales como viajar, comer fuera o ir de",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3547,7 +3547,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6797601720",
           "inLanguage": "es-ES",
-          "description": "Cinco palabras, un minuto, un paso visible en tu camino. Wordmate Lite convierte ese propósito difuso de aprender un idioma en una costumbre lo bastante",
+          "description": "Aprende 5 palabras en un minuto: inglés, japonés, coreano o cualquiera de los 44 idiomas, empezando por situaciones reales como viajar, comer fuera o ir de",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/es-ES.jsonld#offer-wordmatelite"
           },
@@ -3649,7 +3649,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/es-ES.jsonld#offer-zipbox",
         "url": "https://apps.apple.com/es/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
         "name": "Zipbox: abrir RAR, ZIP y 7z",
-        "description": "Zipbox es una app de pago en App Store. Una compra incluye todo, sin compras dentro de la app, suscripciones ni anuncios. Los 13 formatos se procesan en el",
+        "description": "Abre RAR, 7z, ZIP y 10 formatos de archivo comprimido más directamente en el iPhone. Mira dentro antes de extraer: previsualiza fotos, vídeo, PDF, texto",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3679,7 +3679,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806776579",
           "inLanguage": "es-ES",
-          "description": "Zipbox es una app de pago en App Store. Una compra incluye todo, sin compras dentro de la app, suscripciones ni anuncios. Los 13 formatos se procesan en el",
+          "description": "Abre RAR, 7z, ZIP y 10 formatos de archivo comprimido más directamente en el iPhone. Mira dentro antes de extraer: previsualiza fotos, vídeo, PDF, texto",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/es-ES.jsonld#offer-zipbox"
           },

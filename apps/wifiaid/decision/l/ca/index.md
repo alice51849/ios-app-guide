@@ -2,7 +2,7 @@
 title: "WiFi Aid: Diagnòstic de xarxa — Diagnosi de router, mesh i DNS | iOS App"
 lang: "ca"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/ca/index.html"
-modified: "2026-10-29"
+modified: "2026-10-30"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # WiFi Aid: Diagnòstic de xarxa — Diagnosi de router, mesh i DNS | iOS App
 
-Troba la causa més probable amb proves independents de rutes, DNS, TCP, TLS, temps i estabilitat. Un únic pagament inicial, sense subscripcions, anuncis ni seguiment. • Fer un test — Tests de Wi-Fi i DNS en un toc • Test profund — Més proves i estabilitat de xarxa • Provar un web — Comprova si un destí o internet fallen • Proves — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Connexió inestable — Fluctuació • Historial — Registres privats només en aquest dispositiu • Apple Watch — Fer un test • Widget · iPad — Connectat · Fer un test Sense compte, anuncis ni rastreig. Registres privats només en aquest dispositiu. Una única compra inicial a l’App Store. Sense subscripció. Optimitzada per a l'iPhone Duo.
+Optimitzada per a l’iPhone Duo. Creada amb l’SDK més recent, l’app ocupa tota la pantalla interior i n’ajusta el disseny automàticament, tant amb el dispositiu plegat com obert. La Wi-Fi torna a anar lenta o es talla? WiFi Aid prova la Wi-Fi, el DNS i internet amb un sol toc i et diu si el problema és probablement la teva Wi-Fi, el DNS, el proveïdor d’internet o un sol web, amb les proves de cada diagnòstic. El test profund continua prenent mostres per detectar connexions intermitents que semblen connectades però van lentes, i en xarxes Wi-Fi mesh mostra a quin node estàs connectat i si ha canviat des de l’última prova. Fes la prova des de l’Apple Watch o des d’un widget de la pantalla d’inici; l’historial es queda només en aquest dispositiu. • Fer un test — prova la Wi-Fi, el DNS i internet amb un toc i tingues el diagnòstic en segons • Test profund — recull més mostres d’estabilitat per localitzar problemes que van i venen • Provar un web — comprova si només falla un lloc o tota la connexió • Proves completes — DNS, TCP, TLS, TTFB, HTTP, IP directa, IPv4 i IPv6, punt per punt • Node mesh — mira a quin node estàs connectat i si has canviat de node • Historial — compara resultats anteriors, desats només en aquest dispositiu • Apple Watch — fes una prova des del canell • Widget i iPad — estat de la connexió a la pantalla d’inici i disseny complet per a iPad Sense compte, anuncis, analítiques ni rastreig. Una única compra inicial a l’App Store. Sense subscripció. Optimitzada per a l'iPhone Duo.
 
 - Fotografia i utilitat
 - Descàrrega de pagament

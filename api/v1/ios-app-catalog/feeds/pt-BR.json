@@ -13,7 +13,7 @@
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
     "dateModified": "2026-10-30",
-    "contentDigest": "d6e45b55a4ccd3f3f4f09cf0012214d7e12f3082e592059f04645f44292161fd",
+    "contentDigest": "315c6b0abaef0a077eb757c22a7308b224812b6571321417bb5e6cfffe6dffcb",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
     "recordCount": 56
@@ -100,10 +100,12 @@
         "Cuidado na carga",
         "Faixa de carga",
         "Velocidade de carga",
-        "Exportar dados"
+        "Exportar dados",
+        "capacidade da bateria",
+        "saúde da bateria"
       ],
       "language": "pt-BR",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-10-30T22:31:19Z"
     },
     {
       "id": "https://apps.apple.com/app/id6794178671",
@@ -295,23 +297,21 @@
       "title": "Papel de parede dobrável",
       "content_text": "Papéis de parede em pares para as duas telas do iPhone Duo: fechado, um close na tela externa; aberto, a cena inteira na tela interna, da mesma arte original. Mais de 300 pares em 14 estilos · 5 widgets com o seu papel de parede · pares com suas fotos · sem anúncios, sem conta e sem coleta de dados.",
       "tags": [
+        "foldable",
         "celular",
         "fundo",
-        "tela",
+        "tela dupla",
         "bloqueio",
+        "widgets",
+        "combinando",
+        "oled",
+        "ilustração",
         "estético",
-        "personalizado",
         "fofo",
-        "bonito",
-        "frases",
-        "preto",
-        "amoled",
-        "foto",
-        "criar",
-        "flores"
+        "preto"
       ],
       "language": "pt-BR",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-10-30T22:31:19Z"
     },
     {
       "id": "https://apps.apple.com/app/id6755782939",
@@ -510,10 +510,13 @@
         "pré-escola",
         "alfabetização",
         "revisão",
-        "bilíngue"
+        "bilíngue",
+        "bopomofo",
+        "mandarim crianças",
+        "zhuyin"
       ],
       "language": "pt-BR",
-      "date_modified": "2026-10-26T04:23:40Z"
+      "date_modified": "2026-10-30T22:31:19Z"
     },
     {
       "id": "https://apps.apple.com/app/id6778748533",
@@ -1179,12 +1182,10 @@
         "reset",
         "llm",
         "meter",
-        "sessão",
-        "uso de tokens",
-        "limite codex"
+        "sessão"
       ],
       "language": "pt-BR",
-      "date_modified": "2026-10-29T04:54:40Z"
+      "date_modified": "2026-10-30T22:31:19Z"
     },
     {
       "id": "https://apps.apple.com/app/id6790467886",

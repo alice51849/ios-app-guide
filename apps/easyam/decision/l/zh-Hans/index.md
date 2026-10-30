@@ -2,7 +2,7 @@
 title: "EasyAM: 法定节假日闹钟·工作日智能闹钟 — 明早响不响不用再想：放假、请假都不响，调休补班照常叫醒 | iOS App"
 lang: "zh-Hans"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/easyam/decision/l/zh-Hans/index.html"
-modified: "2026-10-29"
+modified: "2026-10-30"
 app_store_id: "6821790092"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

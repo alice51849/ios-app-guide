@@ -6,7 +6,7 @@
   "name": "แคตตาล็อกเจตนาการค้นหาจากผู้พัฒนา Lumi Studio",
   "description": "แคตตาล็อกที่ผู้พัฒนาเผยแพร่โดยตรง ระบุว่าแต่ละแอปเหมาะกับใคร ต้องการทำงานใดให้เสร็จ และเข้าถึง App Store โดยตรงได้อย่างไร",
   "inLanguage": "th",
-  "dateModified": "2026-10-23",
+  "dateModified": "2026-10-30",
   "numberOfItems": 56,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -217,7 +217,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/th.jsonld#offer-battai",
         "url": "https://apps.apple.com/th/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
         "name": "BattAI: คะแนนสุขภาพแบตเตอรี่",
-        "description": "BattAI BattAI ใช้ข้อมูล 5 อย่างจาก API สาธารณะของ iOS: ระดับแบตเตอรี่ สถานะการชาร์จ โหมดประหยัดพลังงาน สถานะความร้อนของทั้งเครื่อง และเวลา ผลอื่นคำนวณจากข้อมูลเหล่านี้หรือคุณเป็นผู้เพิ่ม ทุกหัวข้อแสดงแหล่งข้อมูลและข้อจำกัด",
+        "description": "ให้คะแนนสุขภาพแบตเตอรี่ และดูแนวโน้มได้ต่อเนื่อง",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -247,7 +247,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802423998",
           "inLanguage": "th",
-          "description": "BattAI BattAI ใช้ข้อมูล 5 อย่างจาก API สาธารณะของ iOS: ระดับแบตเตอรี่ สถานะการชาร์จ โหมดประหยัดพลังงาน สถานะความร้อนของทั้งเครื่อง และเวลา ผลอื่นคำนวณจากข้อมูลเหล่านี้หรือคุณเป็นผู้เพิ่ม ทุกหัวข้อแสดงแหล่งข้อมูลและข้อจำกัด",
+          "description": "ให้คะแนนสุขภาพแบตเตอรี่ และดูแนวโน้มได้ต่อเนื่อง",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/th.jsonld#offer-battai"
           },
@@ -283,7 +283,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/th.jsonld#offer-caldaily",
         "url": "https://apps.apple.com/th/app/id6794178671?pt=118326163&ct=geo_pick&mt=8",
         "name": "CalDaily: เครื่องคิดเลข",
-        "description": "เครื่องคิดเลขที่คุณจะใช้ต่อไปจริง ๆ เพราะมันจำความคิดที่อยู่เบื้องหลังตัวเลขแต่ละตัวเอาไว้ด้วย",
+        "description": "เครื่องคิดเลขสวย ๆ ที่จำได้ทุกอย่าง มีธีมในตัว 100 แบบ และวิดเจ็ตบนหน้าจอโฮมที่คิดเลขได้โดยไม่ต้องเปิดแอป",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -313,7 +313,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6794178671",
           "inLanguage": "th",
-          "description": "เครื่องคิดเลขที่คุณจะใช้ต่อไปจริง ๆ เพราะมันจำความคิดที่อยู่เบื้องหลังตัวเลขแต่ละตัวเอาไว้ด้วย",
+          "description": "เครื่องคิดเลขสวย ๆ ที่จำได้ทุกอย่าง มีธีมในตัว 100 แบบ และวิดเจ็ตบนหน้าจอโฮมที่คิดเลขได้โดยไม่ต้องเปิดแอป",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/th.jsonld#offer-caldaily"
           },
@@ -613,7 +613,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/th.jsonld#offer-dailymatelite",
         "url": "https://apps.apple.com/th/app/id6794725568?pt=118326163&ct=geo_pick&mt=8",
         "name": "DailyMate Lite: พร้อมคุย",
-        "description": "พร้อมพูดเมื่อเจอสถานการณ์จริง DailyMate Lite เปลี่ยนเหตุการณ์ในชีวิตประจำวันให้เป็นแบบฝึกสั้น ๆ ที่จับคู่ประโยคเริ่มบทสนทนากับคำตอบที่เป็นธรรมชาติใน 50",
+        "description": "เรียนได้ทุกภาษาจาก 50 ภาษา ไม่ใช่แค่ภาษาเดียว ทั้งอังกฤษ ญี่ปุ่น เกาหลี จีน ฝรั่งเศส และอีกมากมาย สลับภาษาได้ทุกเมื่อ",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -643,7 +643,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6794725568",
           "inLanguage": "th",
-          "description": "พร้อมพูดเมื่อเจอสถานการณ์จริง DailyMate Lite เปลี่ยนเหตุการณ์ในชีวิตประจำวันให้เป็นแบบฝึกสั้น ๆ ที่จับคู่ประโยคเริ่มบทสนทนากับคำตอบที่เป็นธรรมชาติใน 50",
+          "description": "เรียนได้ทุกภาษาจาก 50 ภาษา ไม่ใช่แค่ภาษาเดียว ทั้งอังกฤษ ญี่ปุ่น เกาหลี จีน ฝรั่งเศส และอีกมากมาย สลับภาษาได้ทุกเมื่อ",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/th.jsonld#offer-dailymatelite"
           },
@@ -679,7 +679,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/th.jsonld#offer-dbhalo",
         "url": "https://apps.apple.com/th/app/id6806826699?pt=118326163&ct=geo_pick&mt=8",
         "name": "dB Halo: เครื่องวัดระดับเสียง",
-        "description": "รู้ทันทีว่าเสียงรอบตัวดังเพียงใด และระยะเวลาที่ปลอดภัยโดยประมาณยังเหลือเท่าไร dB Halo คือเครื่องวัดระดับเสียงบน iPhone และ iPad ที่อ่านง่าย วง Halo",
+        "description": "เปิดแล้วรู้ทันทีว่าตอนนี้กี่เดซิเบล ตัวเลขใหญ่แบบเรียลไทม์ พร้อมค่าต่ำสุด ค่าเฉลี่ย ค่าสูงสุด และค่าพีค และบันทึกเสียงดังพร้อมเวลา วัดเสียงจากเพื่อนบ้าน",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -709,7 +709,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806826699",
           "inLanguage": "th",
-          "description": "รู้ทันทีว่าเสียงรอบตัวดังเพียงใด และระยะเวลาที่ปลอดภัยโดยประมาณยังเหลือเท่าไร dB Halo คือเครื่องวัดระดับเสียงบน iPhone และ iPad ที่อ่านง่าย วง Halo",
+          "description": "เปิดแล้วรู้ทันทีว่าตอนนี้กี่เดซิเบล ตัวเลขใหญ่แบบเรียลไทม์ พร้อมค่าต่ำสุด ค่าเฉลี่ย ค่าสูงสุด และค่าพีค และบันทึกเสียงดังพร้อมเวลา วัดเสียงจากเพื่อนบ้าน",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/th.jsonld#offer-dbhalo"
           },
@@ -2395,7 +2395,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/th.jsonld#offer-qrcodehalo",
         "url": "https://apps.apple.com/th/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
         "name": "QR Code Halo สแกน & สร้าง",
-        "description": "QR Code Halo ทำงานทันทีที่อ่านโค้ดได้ สแกนด้วยกล้องหรือเลือกรูปภาพ แล้วลิงก์จะเปิดในเบราว์เซอร์ โค้ดลงชื่อเข้าด้วยพาสคีย์และลิงก์แอปจะส่งต่อให้ iOS ทันที",
+        "description": "สแกน QR โค้ดและบาร์โค้ดได้ 20 รูปแบบ จากกล้องหรือจากรูปภาพ แล้วทำงานทันที ลิงก์เปิดขึ้นเลย ส่วนโค้ด Wi-Fi จะขึ้นข้อความให้เข้าร่วมเครือข่าย",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2425,7 +2425,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806779853",
           "inLanguage": "th",
-          "description": "QR Code Halo ทำงานทันทีที่อ่านโค้ดได้ สแกนด้วยกล้องหรือเลือกรูปภาพ แล้วลิงก์จะเปิดในเบราว์เซอร์ โค้ดลงชื่อเข้าด้วยพาสคีย์และลิงก์แอปจะส่งต่อให้ iOS ทันที",
+          "description": "สแกน QR โค้ดและบาร์โค้ดได้ 20 รูปแบบ จากกล้องหรือจากรูปภาพ แล้วทำงานทันที ลิงก์เปิดขึ้นเลย ส่วนโค้ด Wi-Fi จะขึ้นข้อความให้เข้าร่วมเครือข่าย",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/th.jsonld#offer-qrcodehalo"
           },
@@ -2659,7 +2659,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/th.jsonld#offer-shotinbox",
         "url": "https://apps.apple.com/th/app/id6802166527?pt=118326163&ct=geo_pick&mt=8",
         "name": "ShotInbox AI: Sort Screenshots",
-        "description": "ภาพหน้าจอของคุณ เป็นระเบียบ",
+        "description": "ภาพหน้าจอถูกจัดหมวดให้อัตโนมัติ: ช้อปปิ้ง ใบเสร็จ ตั๋ว การเดินทาง แผนที่และสถานที่ แชตและโซเชียล งาน และอื่น ๆ",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2689,7 +2689,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802166527",
           "inLanguage": "th",
-          "description": "ภาพหน้าจอของคุณ เป็นระเบียบ",
+          "description": "ภาพหน้าจอถูกจัดหมวดให้อัตโนมัติ: ช้อปปิ้ง ใบเสร็จ ตั๋ว การเดินทาง แผนที่และสถานที่ แชตและโซเชียล งาน และอื่น ๆ",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/th.jsonld#offer-shotinbox"
           },
@@ -2923,7 +2923,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/th.jsonld#offer-stayclock",
         "url": "https://apps.apple.com/th/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
         "name": "Stay Clock: นาฬิกาตั้งโต๊ะพลิก",
-        "description": "Stay Clock เปลี่ยน iPhone หรือ iPad ของคุณให้เป็นนาฬิกาตั้งโต๊ะที่เปิดค้างตลอด อ่านได้แม้อยู่อีกฝั่งของห้อง ตัวเลขเวลาขนาดใหญ่",
+        "description": "Stay Clock เปลี่ยน iPhone หรือ iPad ของคุณให้เป็นนาฬิกาตั้งโต๊ะที่เปิดค้างตลอด อ่านได้แม้อยู่อีกฝั่งของห้อง เลือกได้จาก 101 หน้าปัด รวมถึงนาฬิกาแบบพลิก",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2953,7 +2953,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6814035888",
           "inLanguage": "th",
-          "description": "Stay Clock เปลี่ยน iPhone หรือ iPad ของคุณให้เป็นนาฬิกาตั้งโต๊ะที่เปิดค้างตลอด อ่านได้แม้อยู่อีกฝั่งของห้อง ตัวเลขเวลาขนาดใหญ่",
+          "description": "Stay Clock เปลี่ยน iPhone หรือ iPad ของคุณให้เป็นนาฬิกาตั้งโต๊ะที่เปิดค้างตลอด อ่านได้แม้อยู่อีกฝั่งของห้อง เลือกได้จาก 101 หน้าปัด รวมถึงนาฬิกาแบบพลิก",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/th.jsonld#offer-stayclock"
           },
@@ -2989,7 +2989,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/th.jsonld#offer-studydown",
         "url": "https://apps.apple.com/th/app/id6807335593?pt=118326163&ct=geo_pick&mt=8",
         "name": "Studydown: จับเวลาโฟกัส",
-        "description": "ให้เวลากับสิ่งที่สำคัญ แล้วเห็นว่าคุณทุ่มเทไปแค่ไหน Studydown บันทึกเวลาของโปรเจกต์ การอ่าน หรือกิจกรรมยามว่าง เพียงวางโทรศัพท์คว่ำหน้าจอ",
+        "description": "คว่ำโทรศัพท์ลงแล้วตัวจับเวลาเริ่มทันที หยิบขึ้นมาก็หยุด ชั่วโมงอ่านหนังสือและทำงานจึงนับเฉพาะเวลาที่ตั้งใจจริง",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3019,7 +3019,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6807335593",
           "inLanguage": "th",
-          "description": "ให้เวลากับสิ่งที่สำคัญ แล้วเห็นว่าคุณทุ่มเทไปแค่ไหน Studydown บันทึกเวลาของโปรเจกต์ การอ่าน หรือกิจกรรมยามว่าง เพียงวางโทรศัพท์คว่ำหน้าจอ",
+          "description": "คว่ำโทรศัพท์ลงแล้วตัวจับเวลาเริ่มทันที หยิบขึ้นมาก็หยุด ชั่วโมงอ่านหนังสือและทำงานจึงนับเฉพาะเวลาที่ตั้งใจจริง",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/th.jsonld#offer-studydown"
           },
@@ -3451,7 +3451,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/th.jsonld#offer-wifiaidlite",
         "url": "https://apps.apple.com/th/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
         "name": "WiFi Aid Lite",
-        "description": "ค้นหาปัญหาที่แท้จริง. ตรวจแบบเต็มได้รวม 1 ครั้งด้วยเครื่องมือใดก็ได้โดยไม่ต้องซื้อ",
+        "description": "เน็ตหลุดหรือช้าจนใช้ไม่ได้? แตะครั้งเดียว แอปจะตรวจ Wi-Fi, DNS และอินเทอร์เน็ตตามลำดับ แล้วบอกว่าติดอยู่ที่ขั้นไหน สาเหตุที่เป็นไปได้มากที่สุดคืออะไร",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3481,7 +3481,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6793414462",
           "inLanguage": "th",
-          "description": "ค้นหาปัญหาที่แท้จริง. ตรวจแบบเต็มได้รวม 1 ครั้งด้วยเครื่องมือใดก็ได้โดยไม่ต้องซื้อ",
+          "description": "เน็ตหลุดหรือช้าจนใช้ไม่ได้? แตะครั้งเดียว แอปจะตรวจ Wi-Fi, DNS และอินเทอร์เน็ตตามลำดับ แล้วบอกว่าติดอยู่ที่ขั้นไหน สาเหตุที่เป็นไปได้มากที่สุดคืออะไร",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/th.jsonld#offer-wifiaidlite"
           },
@@ -3517,7 +3517,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/th.jsonld#offer-wordmatelite",
         "url": "https://apps.apple.com/th/app/id6797601720?pt=118326163&ct=geo_pick&mt=8",
         "name": "Wordmate Lite วันละ 5 คำ",
-        "description": "หลายคนหยุดเรียนภาษาตรงจุดที่ยังทำการ์ดคำศัพท์ไม่เสร็จ Wordmate Lite ตัดขั้นตอนนั้นทิ้งไปเลย",
+        "description": "เรียนวันละ 5 คำในเวลาราว 1 นาที เลือกได้ทั้งอังกฤษ ญี่ปุ่น เกาหลี หรือภาษาใดก็ได้จาก 44 ภาษา เริ่มจากสถานการณ์จริงอย่างการเที่ยว การกินข้าวนอกบ้าน",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3547,7 +3547,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6797601720",
           "inLanguage": "th",
-          "description": "หลายคนหยุดเรียนภาษาตรงจุดที่ยังทำการ์ดคำศัพท์ไม่เสร็จ Wordmate Lite ตัดขั้นตอนนั้นทิ้งไปเลย",
+          "description": "เรียนวันละ 5 คำในเวลาราว 1 นาที เลือกได้ทั้งอังกฤษ ญี่ปุ่น เกาหลี หรือภาษาใดก็ได้จาก 44 ภาษา เริ่มจากสถานการณ์จริงอย่างการเที่ยว การกินข้าวนอกบ้าน",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/th.jsonld#offer-wordmatelite"
           },
@@ -3649,7 +3649,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/th.jsonld#offer-zipbox",
         "url": "https://apps.apple.com/th/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
         "name": "Zipbox: แตกไฟล์ RAR ZIP 7z",
-        "description": "Zipbox เป็นแอปแบบชำระเงินบน App Store ซื้อครั้งเดียวได้ทุกฟีเจอร์ ไม่มีการซื้อในแอป การสมัครสมาชิก หรือโฆษณา รองรับ 13 รูปแบบและประมวลผลบนเครื่องเท่านั้น",
+        "description": "เปิดไฟล์ RAR, 7z, ZIP และไฟล์บีบอัดอีก 10 รูปแบบบน iPhone ได้ทันที ดูข้างในก่อนแตกไฟล์ ดูตัวอย่างรูป วิดีโอ PDF ข้อความ และโค้ด",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3679,7 +3679,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806776579",
           "inLanguage": "th",
-          "description": "Zipbox เป็นแอปแบบชำระเงินบน App Store ซื้อครั้งเดียวได้ทุกฟีเจอร์ ไม่มีการซื้อในแอป การสมัครสมาชิก หรือโฆษณา รองรับ 13 รูปแบบและประมวลผลบนเครื่องเท่านั้น",
+          "description": "เปิดไฟล์ RAR, 7z, ZIP และไฟล์บีบอัดอีก 10 รูปแบบบน iPhone ได้ทันที ดูข้างในก่อนแตกไฟล์ ดูตัวอย่างรูป วิดีโอ PDF ข้อความ และโค้ด",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/th.jsonld#offer-zipbox"
           },

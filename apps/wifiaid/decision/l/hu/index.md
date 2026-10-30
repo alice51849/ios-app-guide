@@ -2,7 +2,7 @@
 title: "WiFi Aid: Hálózati hibák — Router, mesh, DNS diagnosztika | iOS App"
 lang: "hu"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/hu/index.html"
-modified: "2026-10-29"
+modified: "2026-10-30"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # WiFi Aid: Hálózati hibák — Router, mesh, DNS diagnosztika | iOS App
 
-Független útvonal-, DNS-, TCP-, TLS-, időzítés- és stabilitástesztekkel derítse ki a legvalószínűbb okot. Egyszeri előrefizetés, előfizetés, reklám és követés nélkül. • Teszt Indítása — Wi-Fi, DNS és internet egyetlen érintéssel • Deep Check — Több bizonyíték és stabilitás • Weboldal Teszt — Tudd meg, hogy a weboldal vagy a net rossz • Bizonyíték — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • A kapcsolat instabil — Ingadozás • Teszt Előzmények — Az adatokat csak az eszköz tárolja • Apple Watch — Teszt Indítása • Widget · iPad — Kapcsolódva · Teszt Indítása Nincs fiók, hirdetés vagy követés. Az adatokat csak az eszköz tárolja. Egyetlen előzetes vásárlás az App Store-ban. Nincs előfizetés. iPhone Duo-ra optimalizálva.
+Optimalizálva az iPhone Duo készülékhez. A legújabb SDK-val készült alkalmazás kitölti a teljes belső kijelzőt, és automatikusan igazítja az elrendezést, akár össze van hajtva a készülék, akár ki van nyitva. Megint lassú vagy akadozik a Wi-Fi? A WiFi Aid egy koppintással teszteli a Wi-Fi-t, a DNS-t és az internetet, és megmondja, hogy a hiba valószínűleg a Wi-Fi-ben, a DNS-ben, az internetszolgáltatónál vagy csak egy weboldalon van, minden eredmény mögött bizonyítékkal. A Deep Check tovább mintavételez, hogy lebuktassa az akadozó kapcsolatokat, amelyek csatlakozottnak látszanak, mégis megakadnak. Mesh Wi-Fi-n azt is mutatja, melyik csomóponthoz kapcsolódsz, és változott-e az utolsó teszt óta. Tesztelj az Apple Watchról vagy a kezdőképernyő widgetjéről is; a tesztelőzmények csak ezen az eszközön maradnak. • Teszt indítása — Wi-Fi, DNS és internet egy koppintással, eredmény másodpercek alatt • Deep Check — több stabilitási minta a jövő-menő hibákhoz • Weboldal teszt — kiderül, csak egy oldal nem működik, vagy az egész kapcsolat • Minden bizonyíték — DNS, TCP, TLS, TTFB, HTTP, közvetlen IP, IPv4 és IPv6, tételesen • Mesh csomópont — látod, melyik csomóponthoz kapcsolódsz, és váltottál-e • Teszt előzmények — korábbi eredmények összevetése, csak ezen az eszközön tárolva • Apple Watch — teszt indítása a csuklódról • Widget és iPad — kapcsolat állapota a kezdőképernyőn és teljes iPad-elrendezés Nincs fiók, hirdetés, analitika vagy követés. Egyetlen előzetes vásárlás az App Store-ban. Nincs előfizetés. iPhone Duo-ra optimalizálva.
 
 - Fotó & segédprogram
 - Fizetős letöltés

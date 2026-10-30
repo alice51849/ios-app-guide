@@ -2,7 +2,7 @@
 title: "HoursTag Lite: Ár munkaórában — Tudatos vásárlás: valós ár | iOS App"
 lang: "hu"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstaglite/decision/l/hu/index.html"
-modified: "2026-10-29"
+modified: "2026-10-30"
 app_store_id: "6794039979"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # HoursTag Lite: Ár munkaórában — Tudatos vásárlás: valós ár | iOS App
 
-HoursTag Lite - Lásd a dolgok valódi árát Minden vásárlás órákat vesz el az életedből. Az HoursTag Lite átalakítja az árakat munkai idővé — így világosan költhetsz. Ismerd meg az értékprizmádat - Időköltség: Nettó értéked munkaóránként - Típus: Szükség - Akar - Impulzus - Az értékmintád - Teljes értékelemzés - Mennyibe fog kerülni egy cél?: Lásd a munkát egy cél mögött — és kövesd a fejlődésed. - Biztonsági mentés & visszaállítás: Tartalmazza a jövedelmet, kiadásokat, célokat és beállításokat. - Widget - Apple Watch Minden az eszközödön marad. Nincs fiók, nincs nyomkövetés. Egyszeri fizetés · Élethosszig · Nincs előfizetés Korlátlan döntések és szerkesztések Korlátlan célok és haladás Megosztás, elemzés és mentések iPhone Duo-ra optimalizálva.
+Optimalizálva az iPhone Duo készülékhez. A legújabb SDK-val készült alkalmazás kitölti a teljes belső kijelzőt, és automatikusan igazítja az elrendezést, akár össze van hajtva a készülék, akár ki van nyitva. Vásárlás előtt nézd meg, hány munkaórádba kerül valójában. Add meg a nettó órabéredet, és a HoursTag Lite minden árat munkaidőre vált. Jelöld meg minden vásárlásod Szükséglet, Vágy vagy Impulzus címkével, hogy lebuktasd az impulzusvásárlásokat, és lásd, melyik kategória hány munkaórát vitt el. Spórolsz valamire? Nézd meg, mennyit kell dolgoznod érte, és kövesd a haladást. Mire jó • Bármilyen árat munkaórára vált a nettó béred alapján • Vásárlások címkézése: Szükséglet, Vágy vagy Impulzus • Munkaórák kategóriánként • Megtakarítási célok: az egyes célok mögötti órák és a haladás • Bevételek, kiadások, célok és beállítások mentése és visszaállítása • Főképernyő-widget és Apple Watch Minden az eszközödön marad. Nincs fiók, nincs nyomkövetés. Az első 3 átváltás vásárlás nélkül is elérhető. Egy opcionális, egyszeri alkalmazáson belüli vásárlás feloldja a korlátlan átváltást és rögzítést, a megtakarítási célokat haladással, a kategóriatrendeket, a megosztást és a mentést. iPhone Duo-ra optimalizálva.
 
 - Pénzügy & utazás
 - Ingyenes kezdés

@@ -6,7 +6,7 @@
   "name": "Katalog Niat Pencarian Penerbit Lumi Studio",
   "description": "Katalog yang diterbitkan langsung oleh pengembang untuk menjelaskan sasaran setiap aplikasi, tugas yang ingin diselesaikan, dan akses langsung ke App Store.",
   "inLanguage": "id",
-  "dateModified": "2026-10-23",
+  "dateModified": "2026-10-30",
   "numberOfItems": 56,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -19,7 +19,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/id.jsonld#offer-notesstudio100",
         "url": "https://apps.apple.com/id/app/id6798813048?pt=118326163&ct=geo_pick&mt=8",
         "name": "100 Notes Studio: Pen & Paper",
-        "description": "Satukan tulisan tangan, teks ketik, anotasi dokumen, rekaman, dan bahan belajar dalam ruang kerja yang rapi dan sepenuhnya offline. 100 Notes Studio",
+        "description": "Tulis catatan dengan tangan serasa pena di atas kertas: 29 pena dan kuas, dari pena tinta dan pensil hingga kuas kaligrafi dan cat air, dan tulisan",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -49,7 +49,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6798813048",
           "inLanguage": "id",
-          "description": "Satukan tulisan tangan, teks ketik, anotasi dokumen, rekaman, dan bahan belajar dalam ruang kerja yang rapi dan sepenuhnya offline. 100 Notes Studio",
+          "description": "Tulis catatan dengan tangan serasa pena di atas kertas: 29 pena dan kuas, dari pena tinta dan pensil hingga kuas kaligrafi dan cat air, dan tulisan",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/id.jsonld#offer-notesstudio100"
           },
@@ -217,7 +217,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/id.jsonld#offer-battai",
         "url": "https://apps.apple.com/id/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
         "name": "BattAI: Skor kesehatan baterai",
-        "description": "BattAI BattAI memakai 5 nilai dari API publik iOS: tingkat baterai, status pengisian, Mode Daya Rendah, status termal seluruh perangkat, dan waktu. Hasil lain dihitung dari pembacaan tersebut atau ditambahkan oleh Anda. Setiap detail menunjukkan sumber dan batasnya",
+        "description": "Beri skor kesehatan baterai dan lihat trennya.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -247,7 +247,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802423998",
           "inLanguage": "id",
-          "description": "BattAI BattAI memakai 5 nilai dari API publik iOS: tingkat baterai, status pengisian, Mode Daya Rendah, status termal seluruh perangkat, dan waktu. Hasil lain dihitung dari pembacaan tersebut atau ditambahkan oleh Anda. Setiap detail menunjukkan sumber dan batasnya",
+          "description": "Beri skor kesehatan baterai dan lihat trennya.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/id.jsonld#offer-battai"
           },
@@ -283,7 +283,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/id.jsonld#offer-caldaily",
         "url": "https://apps.apple.com/id/app/id6794178671?pt=118326163&ct=geo_pick&mt=8",
         "name": "CalDaily: kalkulator & tema",
-        "description": "Kalkulator yang benar-benar akan terus Anda pakai, karena ia mengingat apa yang ada di balik setiap angka.",
+        "description": "Kalkulator cantik yang ingat: 100 tema bawaan, plus widget Layar Utama yang bisa menghitung tanpa membuka app.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -313,7 +313,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6794178671",
           "inLanguage": "id",
-          "description": "Kalkulator yang benar-benar akan terus Anda pakai, karena ia mengingat apa yang ada di balik setiap angka.",
+          "description": "Kalkulator cantik yang ingat: 100 tema bawaan, plus widget Layar Utama yang bisa menghitung tanpa membuka app.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/id.jsonld#offer-caldaily"
           },
@@ -613,7 +613,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/id.jsonld#offer-dailymatelite",
         "url": "https://apps.apple.com/id/app/id6794725568?pt=118326163&ct=geo_pick&mt=8",
         "name": "DailyMate Lite",
-        "description": "Siap berbicara saat situasi nyata datang. DailyMate Lite mengubah percakapan sehari-hari menjadi latihan singkat berupa kalimat pembuka dan balasan alami",
+        "description": "Pelajari bahasa mana pun dari 50 bahasa, bukan cuma satu: Inggris, Spanyol, Prancis, Jepang, Korea, dan banyak lagi. Ganti kapan saja; setiap bahasa",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -643,7 +643,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6794725568",
           "inLanguage": "id",
-          "description": "Siap berbicara saat situasi nyata datang. DailyMate Lite mengubah percakapan sehari-hari menjadi latihan singkat berupa kalimat pembuka dan balasan alami",
+          "description": "Pelajari bahasa mana pun dari 50 bahasa, bukan cuma satu: Inggris, Spanyol, Prancis, Jepang, Korea, dan banyak lagi. Ganti kapan saja; setiap bahasa",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/id.jsonld#offer-dailymatelite"
           },
@@ -679,7 +679,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/id.jsonld#offer-dbhalo",
         "url": "https://apps.apple.com/id/app/id6806826699?pt=118326163&ct=geo_pick&mt=8",
         "name": "dB Halo: Pengukur desibel",
-        "description": "Di kos-kosan, kafe, tepi jalan raya, atau sekitar proyek, tingkat kebisingan dapat berubah dari menit ke menit. dB Halo menampilkan tingkat tekanan suara",
+        "description": "Langsung lihat berapa desibel saat ini: angka besar secara langsung dengan nilai minimum, rata-rata, maksimum, dan puncak, plus catatan suara keras",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -709,7 +709,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806826699",
           "inLanguage": "id",
-          "description": "Di kos-kosan, kafe, tepi jalan raya, atau sekitar proyek, tingkat kebisingan dapat berubah dari menit ke menit. dB Halo menampilkan tingkat tekanan suara",
+          "description": "Langsung lihat berapa desibel saat ini: angka besar secara langsung dengan nilai minimum, rata-rata, maksimum, dan puncak, plus catatan suara keras",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/id.jsonld#offer-dbhalo"
           },
@@ -2395,7 +2395,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/id.jsonld#offer-qrcodehalo",
         "url": "https://apps.apple.com/id/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
         "name": "QR Code Halo: Pindai & Buat",
-        "description": "QR Code Halo langsung bertindak begitu membaca kode. Pindai dengan kamera atau pilih foto: tautan terbuka di browser, kode masuk dengan kunci sandi dan",
+        "description": "Pindai kode QR dan barcode dalam 20 format dari kamera atau foto, lalu langsung dijalankan: tautan terbuka dan kode Wi-Fi memunculkan permintaan untuk",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2425,7 +2425,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806779853",
           "inLanguage": "id",
-          "description": "QR Code Halo langsung bertindak begitu membaca kode. Pindai dengan kamera atau pilih foto: tautan terbuka di browser, kode masuk dengan kunci sandi dan",
+          "description": "Pindai kode QR dan barcode dalam 20 format dari kamera atau foto, lalu langsung dijalankan: tautan terbuka dan kode Wi-Fi memunculkan permintaan untuk",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/id.jsonld#offer-qrcodehalo"
           },
@@ -2659,7 +2659,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/id.jsonld#offer-shotinbox",
         "url": "https://apps.apple.com/id/app/id6802166527?pt=118326163&ct=geo_pick&mt=8",
         "name": "ShotInbox AI: Sort Screenshots",
-        "description": "Tangkapan layar Anda, rapi",
+        "description": "Tangkapan layar Anda diurutkan otomatis: Belanja, Struk, Tiket, Perjalanan, Peta & tempat, Obrolan & sosial, Kerja, dan lainnya.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2689,7 +2689,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802166527",
           "inLanguage": "id",
-          "description": "Tangkapan layar Anda, rapi",
+          "description": "Tangkapan layar Anda diurutkan otomatis: Belanja, Struk, Tiket, Perjalanan, Peta & tempat, Obrolan & sosial, Kerja, dan lainnya.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/id.jsonld#offer-shotinbox"
           },
@@ -2923,7 +2923,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/id.jsonld#offer-stayclock",
         "url": "https://apps.apple.com/id/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
         "name": "Stay Clock: Jam Meja Flip",
-        "description": "Stay Clock mengubah iPhone atau iPad Anda menjadi jam meja yang selalu aktif dan bisa dibaca dari seberang ruangan. Waktu besar, kalender yang menyesuaikan",
+        "description": "Stay Clock mengubah iPhone atau iPad Anda menjadi jam meja yang selalu aktif dan bisa dibaca dari seberang ruangan. Pilih dari 101 tampilan, termasuk jam",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2953,7 +2953,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6814035888",
           "inLanguage": "id",
-          "description": "Stay Clock mengubah iPhone atau iPad Anda menjadi jam meja yang selalu aktif dan bisa dibaca dari seberang ruangan. Waktu besar, kalender yang menyesuaikan",
+          "description": "Stay Clock mengubah iPhone atau iPad Anda menjadi jam meja yang selalu aktif dan bisa dibaca dari seberang ruangan. Pilih dari 101 tampilan, termasuk jam",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/id.jsonld#offer-stayclock"
           },
@@ -2989,7 +2989,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/id.jsonld#offer-studydown",
         "url": "https://apps.apple.com/id/app/id6807335593?pt=118326163&ct=geo_pick&mt=8",
         "name": "Studydown: Pencatat Waktu",
-        "description": "Luangkan waktu untuk hal yang penting dan lihat hasil usahamu. Studydown mencatat waktu untuk proyek, membaca, atau hobi saat kamu meletakkan ponsel dengan",
+        "description": "Telungkupkan ponsel dan timer langsung berjalan, angkat dan timer berhenti, jadi hanya waktu fokus sungguhan yang dihitung ke jam belajar dan kerjamu.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3019,7 +3019,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6807335593",
           "inLanguage": "id",
-          "description": "Luangkan waktu untuk hal yang penting dan lihat hasil usahamu. Studydown mencatat waktu untuk proyek, membaca, atau hobi saat kamu meletakkan ponsel dengan",
+          "description": "Telungkupkan ponsel dan timer langsung berjalan, angkat dan timer berhenti, jadi hanya waktu fokus sungguhan yang dihitung ke jam belajar dan kerjamu.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/id.jsonld#offer-studydown"
           },
@@ -3451,7 +3451,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/id.jsonld#offer-wifiaidlite",
         "url": "https://apps.apple.com/id/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
         "name": "WiFi Aid Lite",
-        "description": "Temukan masalah aslinya. Tanpa pembelian, kamu bisa melakukan total satu pemeriksaan lengkap dengan alat apa pun. Pembelian dalam aplikasi sekali bayar",
+        "description": "Internet mati atau lemot? Sekali ketuk, aplikasi mengecek Wi-Fi, DNS, dan internet secara berurutan, lalu menunjukkan di tahap mana masalahnya, penyebab",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3481,7 +3481,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6793414462",
           "inLanguage": "id",
-          "description": "Temukan masalah aslinya. Tanpa pembelian, kamu bisa melakukan total satu pemeriksaan lengkap dengan alat apa pun. Pembelian dalam aplikasi sekali bayar",
+          "description": "Internet mati atau lemot? Sekali ketuk, aplikasi mengecek Wi-Fi, DNS, dan internet secara berurutan, lalu menunjukkan di tahap mana masalahnya, penyebab",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/id.jsonld#offer-wifiaidlite"
           },
@@ -3517,7 +3517,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/id.jsonld#offer-wordmatelite",
         "url": "https://apps.apple.com/id/app/id6797601720?pt=118326163&ct=geo_pick&mt=8",
         "name": "Wordmate Lite 5 Kata Sehari",
-        "description": "Banyak orang berhenti belajar bahasa tepat di titik kartu hafalannya belum juga rampung. Wordmate Lite menghapus langkah itu.",
+        "description": "Pelajari 5 kata dalam sekitar satu menit: bahasa Inggris, Jepang, Korea, atau salah satu dari 44 bahasa, dimulai dari situasi nyata seperti jalan-jalan",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3547,7 +3547,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6797601720",
           "inLanguage": "id",
-          "description": "Banyak orang berhenti belajar bahasa tepat di titik kartu hafalannya belum juga rampung. Wordmate Lite menghapus langkah itu.",
+          "description": "Pelajari 5 kata dalam sekitar satu menit: bahasa Inggris, Jepang, Korea, atau salah satu dari 44 bahasa, dimulai dari situasi nyata seperti jalan-jalan",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/id.jsonld#offer-wordmatelite"
           },
@@ -3649,7 +3649,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/id.jsonld#offer-zipbox",
         "url": "https://apps.apple.com/id/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
         "name": "Zipbox: Ekstrak RAR, ZIP, 7z",
-        "description": "Zipbox adalah app berbayar di App Store. Sekali beli, semua fitur tersedia; tanpa pembelian dalam app, langganan, atau iklan. Semua 13 format diproses di",
+        "description": "Buka RAR, 7z, ZIP, dan 10 format arsip lainnya langsung di iPhone. Lihat isinya sebelum mengekstrak: pratinjau foto, video, PDF, teks, dan kode, lalu",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3679,7 +3679,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806776579",
           "inLanguage": "id",
-          "description": "Zipbox adalah app berbayar di App Store. Sekali beli, semua fitur tersedia; tanpa pembelian dalam app, langganan, atau iklan. Semua 13 format diproses di",
+          "description": "Buka RAR, 7z, ZIP, dan 10 format arsip lainnya langsung di iPhone. Lihat isinya sebelum mengekstrak: pratinjau foto, video, PDF, teks, dan kode, lalu",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/id.jsonld#offer-zipbox"
           },

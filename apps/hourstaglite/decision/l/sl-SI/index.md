@@ -2,7 +2,7 @@
 title: "HoursTag Lite: Koliko ur dela — Zavesten nakup: prava cena | iOS App"
 lang: "sl-SI"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstaglite/decision/l/sl-SI/index.html"
-modified: "2026-10-29"
+modified: "2026-10-30"
 app_store_id: "6794039979"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # HoursTag Lite: Koliko ur dela — Zavesten nakup: prava cena | iOS App
 
-HoursTag Lite - Oglejte si pravo ceno stvari Vsak nakup stane ure vašega življenja. HoursTag Lite pretvarja cene v delovni čas — tako porabite s jasnostjo. Spoznajte svojo prizmo vrednosti - Cena v času: Vaša neto vrednost na uro dela - Vrsta: Potrebujem - Želim - Impulz - Vaš vzorec vrednosti - Popolna analiza vrednosti - Koliko bo stal cilj?: Oglejte si delo za ciljem — in spremljajte svoj napredek. - Varnostno kopiranje in obnova: Vključuje dohodek, porabo, cilje in nastavitve. - Widget - Apple Watch Vse ostane na vaši napravi. Brez računa, brez sledenja. Eno plačilo · Doživljenjski dostop · Brez naročnine Neomejene odločitve in urejanje Neomejeni cilji in napredek Deljenje, analiza in varnostne kopije Optimizirano za iPhone Duo.
+Optimizirano za iPhone Duo. Aplikacija je izdelana z najnovejšim SDK, zapolni celoten notranji zaslon in samodejno prilagodi postavitev, ne glede na to, ali je naprava zaprta ali odprta. Pred nakupom poglejte, koliko ur dela vas to v resnici stane. Vnesite neto urno postavko in HoursTag Lite vsako ceno pretvori v delovni čas. Vsak nakup označite kot Potreba, Želja ali Impulz, da razkrijete impulzivne nakupe, in poglejte, koliko delovnih ur je pobrala vsaka kategorija. Varčujete za nekaj? Poglejte, koliko morate delati za to, in spremljajte napredek. Kaj lahko naredite • Vsako ceno pretvorite v ure dela glede na neto plačo • Oznake nakupov: Potreba, Želja ali Impulz • Delovne ure po kategorijah • Varčevalni cilji: ure za vsakim ciljem in napredek • Varnostna kopija in obnova prihodkov, porabe, ciljev in nastavitev • Pripomoček na začetnem zaslonu in Apple Watch Vse ostane na vaši napravi. Brez računa, brez sledenja. Prve 3 pretvorbe so na voljo brez nakupa. Neobvezen enkratni nakup v aplikaciji odklene neomejene pretvorbe in vnose, varčevalne cilje z napredkom, trende po kategorijah, deljenje in varnostne kopije. Optimizirano za iPhone Duo.
 
 - Denar in potovanja
 - Brezplačen začetek

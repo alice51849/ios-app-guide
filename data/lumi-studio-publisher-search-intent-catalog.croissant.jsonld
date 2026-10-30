@@ -180,7 +180,7 @@
     "@id": "https://open.cait518.cc/ios-app-guide/#organization"
   },
   "datePublished": "2026-07-19",
-  "dateModified": "2026-10-24",
+  "dateModified": "2026-10-30",
   "version": "1.0.0",
   "sdVersion": "1.0.0",
   "isLiveDataset": false,
@@ -261,9 +261,9 @@
       "name": "lumi-studio-publisher-search-intent-catalog.csv",
       "description": "Canonical UTF-8 table loaded by the publisher_intents RecordSet.",
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv",
-      "contentSize": "2986134 B",
+      "contentSize": "2995329 B",
       "encodingFormat": "text/csv",
-      "sha256": "01cc02b7ba252ab47b17e6e8b6325365f715d345108bb98a861fa5d3188455ac"
+      "sha256": "fbd7071dd223ee776f2f17552f7428b2a2d360c0ee83b18ae2802725735f2768"
     },
     {
       "@type": "cr:FileObject",
@@ -271,9 +271,9 @@
       "name": "lumi-studio-publisher-search-intent-catalog.jsonl",
       "description": "The same 2,800 records serialized as newline-delimited JSON.",
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl",
-      "contentSize": "4150339 B",
+      "contentSize": "4159498 B",
       "encodingFormat": "application/x-ndjson",
-      "sha256": "e1f0ce94553e917887d246debd8b0cd7b123d7f2698ac10983abe0bea812dcaf"
+      "sha256": "39da30ee98a0fc7118c18670d1b8de2855effa59c5037a81cbf92e03d67d54e4"
     },
     {
       "@type": "cr:FileObject",
@@ -281,9 +281,9 @@
       "name": "lumi-studio-publisher-search-intent-catalog.json",
       "description": "Dataset envelope with provenance, coverage and all 2,800 records.",
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json",
-      "contentSize": "4618068 B",
+      "contentSize": "4627227 B",
       "encodingFormat": "application/json",
-      "sha256": "6cf6270bd8bfa4f42ae9b78f51dde16ed028e790f5d2dad68f38e9a6109b250b"
+      "sha256": "f6e5db0c7f2e0c6b8aa279e9fbaa62d5256139fb1288541d058a8407428ad721"
     }
   ],
   "recordSet": [
@@ -304,7 +304,7 @@
           "publisher_intents/app_name": "100 Notes Studio: Pen & Paper",
           "publisher_intents/app_store_id": "6798813048",
           "publisher_intents/publisher_query": "100 Notes Studio: Pen & Paper — دفتر ملاحظات بخط اليد وPDF | iOS App",
-          "publisher_intents/decision_context": "اجمع الكتابة اليدوية والنصوص وملفات PDF والمراجعة في مساحة هادئة تعمل دون اتصال. صُمّم 100 Notes Studio للأجهزة اللوحية، مع تجربة كاملة للهاتف، كي تنظم",
+          "publisher_intents/decision_context": "اكتب ملاحظاتك بخط يدك وكأنك تكتب بالقلم على الورق: 29 قلمًا وفرشاة، من قلم الحبر والرصاص إلى فرشاة الخط والألوان المائية، ويمكنك البحث في خط يدك لاحقًا.",
           "publisher_intents/purchase_model": "free_with_lifetime_unlock",
           "publisher_intents/one_time_option": true,
           "publisher_intents/source_persona_query": "best offline handwriting notes app for ipad with pdf markup no subscription",

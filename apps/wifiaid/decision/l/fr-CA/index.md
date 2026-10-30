@@ -2,7 +2,7 @@
 title: "WiFi Aid: Diagnostic réseau — Diagnostic routeur, mesh, DNS | iOS App"
 lang: "fr-CA"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/fr-CA/index.html"
-modified: "2026-10-29"
+modified: "2026-10-30"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # WiFi Aid: Diagnostic réseau — Diagnostic routeur, mesh, DNS | iOS App
 
-Repérez la cause probable grâce aux vérifications indépendantes des chemins, DNS, TCP, TLS, délais et stabilité. Un seul achat initial, sans abonnement, pub ni suivi. • Faire une vérification — Tests Wi-Fi et DNS en un geste • Vérification complète — Preuves et stabilité réseau • Vérifier un site — Vérifier un site ou l'internet global • Preuves — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Connexion instable — Gigue • Historique — Données privées locales uniquement • Apple Watch — Faire une vérification • Widget · iPad — Connecté · Faire une vérification Sans compte, pub, ni suivi. Données privées locales uniquement. Un seul achat initial sur l’App Store. Aucun abonnement. Optimisée pour iPhone Duo.
+Optimisée pour l’iPhone Duo. Conçue avec le SDK le plus récent, l’app remplit tout l’écran intérieur et adapte automatiquement sa mise en page, appareil plié ou ouvert. Le Wi-Fi est encore lent ou décroche? WiFi Aid vérifie le Wi-Fi, le DNS et Internet d’un seul toucher et vous dit si le problème vient probablement de votre Wi-Fi, du DNS, de votre fournisseur Internet ou d’un seul site, avec les preuves derrière chaque diagnostic. La vérification complète continue de prendre des mesures pour repérer les connexions instables qui semblent connectées mais ralentissent, et sur un réseau Wi-Fi maillé, elle indique à quel nœud vous êtes connecté et s’il a changé depuis la dernière vérification. Vérifiez depuis l’Apple Watch ou un widget de l’écran d’accueil; l’historique reste uniquement sur cet appareil. • Faire une vérification — testez le Wi-Fi, le DNS et Internet d’un toucher et obtenez un diagnostic en quelques secondes • Vérification complète — plus d’échantillons de stabilité pour cerner les problèmes intermittents • Vérifier un site — voyez si un seul site est en panne ou toute votre connexion • Toutes les preuves — DNS, TCP, TLS, TTFB, HTTP, IP directe, IPv4 et IPv6, point par point • Nœud mesh — voyez à quel nœud vous êtes connecté et si vous avez changé de nœud • Historique — comparez les résultats précédents, conservés uniquement sur cet appareil • Apple Watch — lancez une vérification depuis votre poignet • Widget et iPad — état de la connexion sur l’écran d’accueil et mise en page complète pour iPad Aucun compte, aucune pub, aucune analyse ni aucun suivi. Un seul achat initial sur l’App Store. Aucun abonnement. Optimisée pour iPhone Duo.
 
 - Photo et utilitaire
 - Téléchargement payant

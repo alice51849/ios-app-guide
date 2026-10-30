@@ -6,7 +6,7 @@
   "name": "Lumi Studio प्रकाशक खोज-इरादा कैटलॉग",
   "description": "डेवलपर द्वारा सीधे प्रकाशित कैटलॉग, जो बताता है कि हर ऐप किसके लिए बनाया गया है, उपयोगकर्ता कौन-सा काम पूरा करना चाहता है और App Store तक सीधा रास्ता क्या है।",
   "inLanguage": "hi",
-  "dateModified": "2026-10-23",
+  "dateModified": "2026-10-30",
   "numberOfItems": 56,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -19,7 +19,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hi.jsonld#offer-notesstudio100",
         "url": "https://apps.apple.com/in/app/id6798813048?pt=118326163&ct=geo_pick&mt=8",
         "name": "100 Notes Studio: Pen & Paper",
-        "description": "अलग-अलग नोट ऐप्स में सामग्री बाँटने के बजाय, 100 Notes Studio में हाथ से लिखना, टाइप करना, PDF पर टिप्पणी करना, पन्ने से जुड़ी रिकॉर्डिंग और पढ़ाई के औज़ार",
+        "description": "कागज़ पर पेन से लिखने जैसे अहसास के साथ हाथ से नोट्स लिखें: फ़ाउंटेन पेन और पेंसिल से लेकर कैलिग्राफ़ी ब्रश और वॉटरकलर तक 29 पेन और ब्रश, और बाद में अपनी",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -49,7 +49,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6798813048",
           "inLanguage": "hi",
-          "description": "अलग-अलग नोट ऐप्स में सामग्री बाँटने के बजाय, 100 Notes Studio में हाथ से लिखना, टाइप करना, PDF पर टिप्पणी करना, पन्ने से जुड़ी रिकॉर्डिंग और पढ़ाई के औज़ार",
+          "description": "कागज़ पर पेन से लिखने जैसे अहसास के साथ हाथ से नोट्स लिखें: फ़ाउंटेन पेन और पेंसिल से लेकर कैलिग्राफ़ी ब्रश और वॉटरकलर तक 29 पेन और ब्रश, और बाद में अपनी",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hi.jsonld#offer-notesstudio100"
           },
@@ -85,7 +85,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hi.jsonld#offer-aibriefpack",
         "url": "https://apps.apple.com/in/app/id6791658210?pt=118326163&ct=geo_pick&mt=8",
         "name": "AI Brief: फाइल से AI प्रॉम्प्ट",
-        "description": "बेहतर संदर्भ, बेहतर उत्तर।",
+        "description": "स्क्रीनशॉट, PDF, फ़ाइलें और नोट्स को एक व्यवस्थित AI प्रॉम्प्ट में बदलें, जिसमें लक्ष्य, तथ्य और स्रोत अलग-अलग सजे हों।",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -115,7 +115,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6791658210",
           "inLanguage": "hi",
-          "description": "बेहतर संदर्भ, बेहतर उत्तर।",
+          "description": "स्क्रीनशॉट, PDF, फ़ाइलें और नोट्स को एक व्यवस्थित AI प्रॉम्प्ट में बदलें, जिसमें लक्ष्य, तथ्य और स्रोत अलग-अलग सजे हों।",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hi.jsonld#offer-aibriefpack"
           },
@@ -217,7 +217,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hi.jsonld#offer-battai",
         "url": "https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
         "name": "BattAI: बैटरी स्वास्थ्य स्कोर",
-        "description": "BattAI BattAI सार्वजनिक iOS API से पाँच मान लेता है: बैटरी स्तर, चार्ज स्थिति, लो पावर मोड, पूरे डिवाइस की तापीय स्थिति और समय। दूसरे नतीजे इन मापों से निकाले जाते हैं या आप जोड़ते हैं। हर जानकारी अपना स्रोत और सीमा दिखाती है।",
+        "description": "बैटरी स्वास्थ्य को स्कोर दें और ट्रेंड देखें।",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -247,7 +247,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802423998",
           "inLanguage": "hi",
-          "description": "BattAI BattAI सार्वजनिक iOS API से पाँच मान लेता है: बैटरी स्तर, चार्ज स्थिति, लो पावर मोड, पूरे डिवाइस की तापीय स्थिति और समय। दूसरे नतीजे इन मापों से निकाले जाते हैं या आप जोड़ते हैं। हर जानकारी अपना स्रोत और सीमा दिखाती है।",
+          "description": "बैटरी स्वास्थ्य को स्कोर दें और ट्रेंड देखें।",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hi.jsonld#offer-battai"
           },
@@ -283,7 +283,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hi.jsonld#offer-caldaily",
         "url": "https://apps.apple.com/in/app/id6794178671?pt=118326163&ct=geo_pick&mt=8",
         "name": "CalDaily कैलकुलेटर और थीम",
-        "description": "एक कैलकुलेटर जिसे आप सचमुच इस्तेमाल करते रहेंगे, क्योंकि यह हर संख्या के पीछे की सोच याद रखता है।",
+        "description": "याद रखने वाला सुंदर कैलकुलेटर: अंदर ही 100 थीम, और होम स्क्रीन विजेट जो ऐप खोले बिना हिसाब कर देता है।",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -313,7 +313,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6794178671",
           "inLanguage": "hi",
-          "description": "एक कैलकुलेटर जिसे आप सचमुच इस्तेमाल करते रहेंगे, क्योंकि यह हर संख्या के पीछे की सोच याद रखता है।",
+          "description": "याद रखने वाला सुंदर कैलकुलेटर: अंदर ही 100 थीम, और होम स्क्रीन विजेट जो ऐप खोले बिना हिसाब कर देता है।",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hi.jsonld#offer-caldaily"
           },
@@ -613,7 +613,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hi.jsonld#offer-dailymatelite",
         "url": "https://apps.apple.com/in/app/id6794725568?pt=118326163&ct=geo_pick&mt=8",
         "name": "DailyMate Lite: रोज़ बोलें",
-        "description": "जब सही शब्द चाहिए हों, तैयार रहें। DailyMate Lite वास्तविक जीवन की स्थितियों को छोटे, स्वाभाविक संकेत–जवाब अभ्यासों में बदलता है—50 भाषाओं में। किसी भी",
+        "description": "सिर्फ़ एक नहीं, 50 भाषाओं में से कोई भी सीखें: अंग्रेज़ी, स्पैनिश, फ़्रेंच, जापानी, कोरियन और बहुत सी। जब चाहें भाषा बदलें; हर भाषा की प्रगति और सेव किए",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -643,7 +643,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6794725568",
           "inLanguage": "hi",
-          "description": "जब सही शब्द चाहिए हों, तैयार रहें। DailyMate Lite वास्तविक जीवन की स्थितियों को छोटे, स्वाभाविक संकेत–जवाब अभ्यासों में बदलता है—50 भाषाओं में। किसी भी",
+          "description": "सिर्फ़ एक नहीं, 50 भाषाओं में से कोई भी सीखें: अंग्रेज़ी, स्पैनिश, फ़्रेंच, जापानी, कोरियन और बहुत सी। जब चाहें भाषा बदलें; हर भाषा की प्रगति और सेव किए",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hi.jsonld#offer-dailymatelite"
           },
@@ -679,7 +679,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hi.jsonld#offer-dbhalo",
         "url": "https://apps.apple.com/in/app/id6806826699?pt=118326163&ct=geo_pick&mt=8",
         "name": "dB Halo: ध्वनि स्तर मापक",
-        "description": "आसपास की आवाज़ अभी कितनी तेज़ है और अनुमानित सुरक्षित समय कितना बचा है—dB Halo दोनों बातें एक नज़र में दिखाता है। यह iPhone, iPad और Apple Watch के लिए",
+        "description": "खोलते ही जानिए कि अभी कितने डेसिबल हैं: बड़े अंकों में लाइव माप, साथ में न्यूनतम, औसत, अधिकतम और पीक, और समय के साथ तेज़ आवाज़ों का लॉग। पड़ोस का शोर",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -709,7 +709,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806826699",
           "inLanguage": "hi",
-          "description": "आसपास की आवाज़ अभी कितनी तेज़ है और अनुमानित सुरक्षित समय कितना बचा है—dB Halo दोनों बातें एक नज़र में दिखाता है। यह iPhone, iPad और Apple Watch के लिए",
+          "description": "खोलते ही जानिए कि अभी कितने डेसिबल हैं: बड़े अंकों में लाइव माप, साथ में न्यूनतम, औसत, अधिकतम और पीक, और समय के साथ तेज़ आवाज़ों का लॉग। पड़ोस का शोर",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hi.jsonld#offer-dbhalo"
           },
@@ -943,7 +943,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hi.jsonld#offer-gmoneylite",
         "url": "https://apps.apple.com/in/app/id6793436548?pt=118326163&ct=geo_pick&mt=8",
         "name": "G+Money Lite: यात्रा खर्च",
-        "description": "G+Money Lite — स्मार्ट यात्रा मुद्रा और खर्च ट्रैकर",
+        "description": "कहीं भी घूमें, जानिए आज आप और कितना खर्च कर सकते हैं। हर खरीद स्थानीय मुद्रा में लिखें—वह तुरंत आपकी अपनी मुद्रा में दिखेगी और आज के बजट से घट जाएगी। दैनिक",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -973,7 +973,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6793436548",
           "inLanguage": "hi",
-          "description": "G+Money Lite — स्मार्ट यात्रा मुद्रा और खर्च ट्रैकर",
+          "description": "कहीं भी घूमें, जानिए आज आप और कितना खर्च कर सकते हैं। हर खरीद स्थानीय मुद्रा में लिखें—वह तुरंत आपकी अपनी मुद्रा में दिखेगी और आज के बजट से घट जाएगी। दैनिक",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hi.jsonld#offer-gmoneylite"
           },
@@ -1075,7 +1075,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hi.jsonld#offer-hourstaglite",
         "url": "https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=geo_pick&mt=8",
         "name": "HoursTag Lite: कीमत घंटों में",
-        "description": "HoursTag Lite - चीज़ों की असली कीमत देखें",
+        "description": "खरीदने से पहले देखें कि उसकी असली कीमत कितने घंटे का काम है। अपनी हाथ में आने वाली प्रति घंटा कमाई डालें, HoursTag Lite हर कीमत को काम के समय में बदल देगा।",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1105,7 +1105,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6794039979",
           "inLanguage": "hi",
-          "description": "HoursTag Lite - चीज़ों की असली कीमत देखें",
+          "description": "खरीदने से पहले देखें कि उसकी असली कीमत कितने घंटे का काम है। अपनी हाथ में आने वाली प्रति घंटा कमाई डालें, HoursTag Lite हर कीमत को काम के समय में बदल देगा।",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hi.jsonld#offer-hourstaglite"
           },
@@ -1933,7 +1933,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hi.jsonld#offer-maskmyfile",
         "url": "https://apps.apple.com/in/app/id6792850916?pt=118326163&ct=geo_pick&mt=8",
         "name": "Mask My File: जानकारी हटाएँ",
-        "description": "उपयोगी संदर्भ खोए बिना सुरक्षित रूप से साझा करें। Mask My File आपके फ़ाइल भेजने से पहले निजी विवरण ढूँढता है, आपके चुने हिस्सों को स्थायी रूप से छिपाता है",
+        "description": "शेयर करने से पहले निजी जानकारी काली कर दें। Mask My File नाम, फ़ोन नंबर, ईमेल, पते, खाते और भुगतान की जानकारी ढूँढता है, फिर सिर्फ़ वही हमेशा के लिए छिपाता",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1963,7 +1963,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6792850916",
           "inLanguage": "hi",
-          "description": "उपयोगी संदर्भ खोए बिना सुरक्षित रूप से साझा करें। Mask My File आपके फ़ाइल भेजने से पहले निजी विवरण ढूँढता है, आपके चुने हिस्सों को स्थायी रूप से छिपाता है",
+          "description": "शेयर करने से पहले निजी जानकारी काली कर दें। Mask My File नाम, फ़ोन नंबर, ईमेल, पते, खाते और भुगतान की जानकारी ढूँढता है, फिर सिर्फ़ वही हमेशा के लिए छिपाता",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hi.jsonld#offer-maskmyfile"
           },
@@ -2065,7 +2065,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hi.jsonld#offer-mochidonestamp",
         "url": "https://apps.apple.com/in/app/id6790800323?pt=118326163&ct=geo_pick&mt=8",
         "name": "Mochi DoneStamp: पिछली बार",
-        "description": "आपने पिछली बार चादर कब बदली, पौधे को पानी कब दिया, परिवार को कब फ़ोन किया, फ़ोटो का बैकअप या फ़िल्टर कब बदला?",
+        "description": "आपने आख़िरी बार चादर कब बदली, एसी का फ़िल्टर कब साफ़ किया या गाड़ी का इंजन ऑयल कब बदला?",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2095,7 +2095,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6790800323",
           "inLanguage": "hi",
-          "description": "आपने पिछली बार चादर कब बदली, पौधे को पानी कब दिया, परिवार को कब फ़ोन किया, फ़ोटो का बैकअप या फ़िल्टर कब बदला?",
+          "description": "आपने आख़िरी बार चादर कब बदली, एसी का फ़िल्टर कब साफ़ किया या गाड़ी का इंजन ऑयल कब बदला?",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hi.jsonld#offer-mochidonestamp"
           },
@@ -2395,7 +2395,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hi.jsonld#offer-qrcodehalo",
         "url": "https://apps.apple.com/in/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
         "name": "QR Code Halo: स्कैन व बनाएँ",
-        "description": "QR Code Halo कोड पढ़ते ही काम कर देता है। कैमरे से स्कैन कीजिए या फ़ोटो चुनिए: लिंक आपके ब्राउज़र में खुलते हैं, पासकी से साइन इन वाले कोड और ऐप लिंक",
+        "description": "कैमरे से या फ़ोटो से 20 फ़ॉर्मैट के QR कोड और बारकोड स्कैन कीजिए, और काम तुरंत होता है: लिंक खुल जाते हैं और Wi-Fi कोड पर नेटवर्क से जुड़ने का संकेत आता है",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2425,7 +2425,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806779853",
           "inLanguage": "hi",
-          "description": "QR Code Halo कोड पढ़ते ही काम कर देता है। कैमरे से स्कैन कीजिए या फ़ोटो चुनिए: लिंक आपके ब्राउज़र में खुलते हैं, पासकी से साइन इन वाले कोड और ऐप लिंक",
+          "description": "कैमरे से या फ़ोटो से 20 फ़ॉर्मैट के QR कोड और बारकोड स्कैन कीजिए, और काम तुरंत होता है: लिंक खुल जाते हैं और Wi-Fi कोड पर नेटवर्क से जुड़ने का संकेत आता है",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hi.jsonld#offer-qrcodehalo"
           },
@@ -2659,7 +2659,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hi.jsonld#offer-shotinbox",
         "url": "https://apps.apple.com/in/app/id6802166527?pt=118326163&ct=geo_pick&mt=8",
         "name": "ShotInbox AI: Sort Screenshots",
-        "description": "आपके स्क्रीनशॉट, व्यवस्थित",
+        "description": "आपके स्क्रीनशॉट अपने आप छँट जाते हैं: खरीदारी, रसीदें, टिकट, यात्रा, मैप और जगहें, चैट और सोशल, काम और भी बहुत कुछ।",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2689,7 +2689,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802166527",
           "inLanguage": "hi",
-          "description": "आपके स्क्रीनशॉट, व्यवस्थित",
+          "description": "आपके स्क्रीनशॉट अपने आप छँट जाते हैं: खरीदारी, रसीदें, टिकट, यात्रा, मैप और जगहें, चैट और सोशल, काम और भी बहुत कुछ।",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hi.jsonld#offer-shotinbox"
           },
@@ -2923,7 +2923,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hi.jsonld#offer-stayclock",
         "url": "https://apps.apple.com/in/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
         "name": "Stay Clock: फ़्लिप डेस्क क्लॉक",
-        "description": "Stay Clock आपके iPhone या iPad को एक ऐसी हमेशा ऑन डेस्क क्लॉक में बदल देता है, जिसे आप कमरे के दूसरे कोने से भी आसानी से पढ़ सकते हैं। बड़ा समय, हर फ़ेस के",
+        "description": "Stay Clock आपके iPhone या iPad को हमेशा ऑन रहने वाली डेस्क क्लॉक में बदल देता है, जिसे कमरे के दूसरे कोने से भी आसानी से पढ़ा जा सकता है। फ़्लिप क्लॉक समेत",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2953,7 +2953,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6814035888",
           "inLanguage": "hi",
-          "description": "Stay Clock आपके iPhone या iPad को एक ऐसी हमेशा ऑन डेस्क क्लॉक में बदल देता है, जिसे आप कमरे के दूसरे कोने से भी आसानी से पढ़ सकते हैं। बड़ा समय, हर फ़ेस के",
+          "description": "Stay Clock आपके iPhone या iPad को हमेशा ऑन रहने वाली डेस्क क्लॉक में बदल देता है, जिसे कमरे के दूसरे कोने से भी आसानी से पढ़ा जा सकता है। फ़्लिप क्लॉक समेत",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hi.jsonld#offer-stayclock"
           },
@@ -2989,7 +2989,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hi.jsonld#offer-studydown",
         "url": "https://apps.apple.com/in/app/id6807335593?pt=118326163&ct=geo_pick&mt=8",
         "name": "Studydown: फ़ोकस टाइमर",
-        "description": "ज़रूरी चीज़ों के लिए समय निकालें और अपनी मेहनत का हिसाब देखें। काम का प्रोजेक्ट, किताब पढ़ना या कोई नया हुनर सीखना—Studydown हर गतिविधि में लगाए समय को अलग",
+        "description": "फ़ोन को स्क्रीन नीचे करके रखते ही टाइमर शुरू, उठाते ही रुक जाता है; इसलिए पढ़ाई और काम के घंटों में सिर्फ़ असली फ़ोकस वाला समय ही जुड़ता है।",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3019,7 +3019,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6807335593",
           "inLanguage": "hi",
-          "description": "ज़रूरी चीज़ों के लिए समय निकालें और अपनी मेहनत का हिसाब देखें। काम का प्रोजेक्ट, किताब पढ़ना या कोई नया हुनर सीखना—Studydown हर गतिविधि में लगाए समय को अलग",
+          "description": "फ़ोन को स्क्रीन नीचे करके रखते ही टाइमर शुरू, उठाते ही रुक जाता है; इसलिए पढ़ाई और काम के घंटों में सिर्फ़ असली फ़ोकस वाला समय ही जुड़ता है।",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hi.jsonld#offer-studydown"
           },
@@ -3385,7 +3385,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hi.jsonld#offer-wifiaidlite",
         "url": "https://apps.apple.com/in/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
         "name": "WiFi Aid Lite",
-        "description": "असली समस्या खोजें. बिना खरीदे किसी भी टूल से कुल एक बार पूरी जाँच की जा सकती है। वैकल्पिक वन-टाइम इन-ऐप खरीद से असीमित जाँच और ठीक करने से पहले व बाद की",
+        "description": "नेट नहीं चल रहा या बहुत धीमा है? एक टैप में ऐप वाई-फ़ाई, DNS और इंटरनेट को क्रम से जाँचता है और बताता है कि दिक्कत किस चरण पर है, सबसे संभावित वजह क्या",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3415,7 +3415,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6793414462",
           "inLanguage": "hi",
-          "description": "असली समस्या खोजें. बिना खरीदे किसी भी टूल से कुल एक बार पूरी जाँच की जा सकती है। वैकल्पिक वन-टाइम इन-ऐप खरीद से असीमित जाँच और ठीक करने से पहले व बाद की",
+          "description": "नेट नहीं चल रहा या बहुत धीमा है? एक टैप में ऐप वाई-फ़ाई, DNS और इंटरनेट को क्रम से जाँचता है और बताता है कि दिक्कत किस चरण पर है, सबसे संभावित वजह क्या",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hi.jsonld#offer-wifiaidlite"
           },
@@ -3451,7 +3451,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hi.jsonld#offer-wifiaid",
         "url": "https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=geo_pick&mt=8",
         "name": "WiFi Aid: नेटवर्क समस्या खोजें",
-        "description": "स्वतंत्र पाथ, DNS, TCP, TLS, टाइमिंग और स्थिरता जाँच से सबसे संभावित कारण जानें। केवल एक बार अग्रिम भुगतान—न सदस्यता, न विज्ञापन, न ट्रैकिंग।",
+        "description": "Wi-Fi फिर धीमा है या बार-बार कट रहा है? WiFi Aid एक टैप में Wi-Fi, DNS और इंटरनेट जाँचकर बताता है कि समस्या संभवतः आपके Wi-Fi, DNS, इंटरनेट प्रदाता या",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3481,7 +3481,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6790467886",
           "inLanguage": "hi",
-          "description": "स्वतंत्र पाथ, DNS, TCP, TLS, टाइमिंग और स्थिरता जाँच से सबसे संभावित कारण जानें। केवल एक बार अग्रिम भुगतान—न सदस्यता, न विज्ञापन, न ट्रैकिंग।",
+          "description": "Wi-Fi फिर धीमा है या बार-बार कट रहा है? WiFi Aid एक टैप में Wi-Fi, DNS और इंटरनेट जाँचकर बताता है कि समस्या संभवतः आपके Wi-Fi, DNS, इंटरनेट प्रदाता या",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hi.jsonld#offer-wifiaid"
           },
@@ -3517,7 +3517,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hi.jsonld#offer-wordmatelite",
         "url": "https://apps.apple.com/in/app/id6797601720?pt=118326163&ct=geo_pick&mt=8",
         "name": "Wordmate Lite: इंग्लिश सीखें",
-        "description": "नए शब्द सीखने का इरादा अक्सर तीसरे दिन ही टूट जाता है, क्योंकि ज़्यादातर ऐप पहले ही दिन सौ कार्ड सामने रख देते हैं। Wordmate Lite इसका उलटा करता है। एक बार",
+        "description": "करीब एक मिनट में 5 शब्द सीखें: अंग्रेज़ी, जापानी, कोरियाई या 44 भाषाओं में से कोई भी, यात्रा, बाहर खाना और खरीदारी जैसी असल स्थितियों से शुरुआत करते हुए।",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3547,7 +3547,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6797601720",
           "inLanguage": "hi",
-          "description": "नए शब्द सीखने का इरादा अक्सर तीसरे दिन ही टूट जाता है, क्योंकि ज़्यादातर ऐप पहले ही दिन सौ कार्ड सामने रख देते हैं। Wordmate Lite इसका उलटा करता है। एक बार",
+          "description": "करीब एक मिनट में 5 शब्द सीखें: अंग्रेज़ी, जापानी, कोरियाई या 44 भाषाओं में से कोई भी, यात्रा, बाहर खाना और खरीदारी जैसी असल स्थितियों से शुरुआत करते हुए।",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hi.jsonld#offer-wordmatelite"
           },
@@ -3649,7 +3649,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hi.jsonld#offer-zipbox",
         "url": "https://apps.apple.com/in/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
         "name": "Zipbox: ZIP, RAR, 7z अनज़िप",
-        "description": "Zipbox App Store का सशुल्क ऐप है। एक खरीद में सभी सुविधाएँ हैं; ऐप के अंदर खरीद, सब्सक्रिप्शन या विज्ञापन नहीं। 13 फ़ॉर्मैट डिवाइस पर ही प्रोसेस होते हैं।",
+        "description": "फ़ोन पर ही सीधे RAR, 7z, ZIP समेत 13 तरह के आर्काइव खोलिए। निकालने से पहले अंदर झाँकिए: फ़ोटो, वीडियो, PDF, टेक्स्ट और कोड का प्रीव्यू देखिए, फिर सिर्फ़",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3679,7 +3679,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806776579",
           "inLanguage": "hi",
-          "description": "Zipbox App Store का सशुल्क ऐप है। एक खरीद में सभी सुविधाएँ हैं; ऐप के अंदर खरीद, सब्सक्रिप्शन या विज्ञापन नहीं। 13 फ़ॉर्मैट डिवाइस पर ही प्रोसेस होते हैं।",
+          "description": "फ़ोन पर ही सीधे RAR, 7z, ZIP समेत 13 तरह के आर्काइव खोलिए। निकालने से पहले अंदर झाँकिए: फ़ोटो, वीडियो, PDF, टेक्स्ट और कोड का प्रीव्यू देखिए, फिर सिर्फ़",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hi.jsonld#offer-zipbox"
           },

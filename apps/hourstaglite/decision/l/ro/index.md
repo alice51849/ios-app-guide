@@ -2,7 +2,7 @@
 title: "HoursTag Lite: Preț în ore — Cumpărare conștientă: preț | iOS App"
 lang: "ro"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstaglite/decision/l/ro/index.html"
-modified: "2026-10-29"
+modified: "2026-10-30"
 app_store_id: "6794039979"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # HoursTag Lite: Preț în ore — Cumpărare conștientă: preț | iOS App
 
-HoursTag Lite - Vezi adevărata valoare a lucrurilor Fiecare achiziție costă ore din viața ta. HoursTag Lite transformă prețurile în timp de muncă — astfel încât să cheltuiești cu claritate. Descoperă prisma valorii - Cost în timp: Valoarea ta netă per oră lucrată - Tip: Necesitate - Dorintă - Impuls - Tiparul tău de valoare - Analiză completă a valorii - Ce va costa un obiectiv?: Vezi munca din spatele unui obiectiv — și urmărește-ți progresul. - Backup & restaurare: Include venituri, cheltuieli, obiective și preferințe. - Widget - Apple Watch Totul rămâne pe dispozitivul tău. Fără cont, fără urmărire. O singură plată · Acces pe viață · Fără abonament Alegeri și editări nelimitate Obiective și progres nelimitate Distribuire, analize și copii Optimizată pentru iPhone Duo.
+Optimizată pentru iPhone Duo. Creată cu cel mai recent SDK, aplicația umple tot ecranul interior și își ajustează automat aspectul, fie că dispozitivul e pliat, fie deschis. Înainte să cumperi, vezi câte ore de muncă te costă de fapt. Introdu salariul net pe oră, iar HoursTag Lite transformă fiecare preț în timp de muncă. Etichetează fiecare cumpărătură ca Nevoie, Dorință sau Impuls ca să prinzi cumpărăturile impulsive, și vezi câte ore de muncă a înghițit fiecare categorie. Strângi bani pentru ceva? Vezi cât trebuie să muncești pentru asta și urmărește-ți progresul. Ce poți face • Transformă orice preț în ore de muncă după salariul net • Etichete pentru cumpărături: Nevoie, Dorință sau Impuls • Ore de muncă pe categorii • Obiective de economisire: orele din spatele fiecărui obiectiv și progresul • Backup și restaurare pentru venituri, cheltuieli, obiective și setări • Widget pe ecranul principal și Apple Watch Totul rămâne pe dispozitivul tău. Fără cont, fără urmărire. Primele 3 conversii nu necesită achiziție. O achiziție opțională unică în aplicație deblochează conversii și înregistrări nelimitate, obiective de economisire cu progres, tendințe pe categorii, partajare și backup. Optimizată pentru iPhone Duo.
 
 - Bani & călătorii
 - Început gratuit

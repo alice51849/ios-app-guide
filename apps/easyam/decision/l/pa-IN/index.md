@@ -2,7 +2,7 @@
 title: "EasyAM: ਛੁੱਟੀ ਅਲਾਰਮ ਘੜੀ — ਸਿਰਫ਼ ਕੰਮ ਵਾਲੇ ਦਿਨ ਵੱਜਦਾ ਹੈ | iOS App"
 lang: "pa-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/easyam/decision/l/pa-IN/index.html"
-modified: "2026-10-29"
+modified: "2026-10-30"
 app_store_id: "6821790092"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

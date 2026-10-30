@@ -2,7 +2,7 @@
 title: "HoursTag Lite: Cijena u satima — Svjesna kupnja: prava cijena | iOS App"
 lang: "hr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstaglite/decision/l/hr/index.html"
-modified: "2026-10-29"
+modified: "2026-10-30"
 app_store_id: "6794039979"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # HoursTag Lite: Cijena u satima — Svjesna kupnja: prava cijena | iOS App
 
-HoursTag Lite - Pogledaj pravu cijenu stvari Svaka kupovina košta sate tvog života. HoursTag Lite pretvara cijene u radno vrijeme — tako trošiš s jasnoćom. Upoznajte svoju prizmu vrijednosti - Cijena u vremenu: Vaša neto vrijednost po satu rada - Tip: Potrebno - Željeno - Impulsivno - Vaš obrazac vrijednosti - Potpuna analiza vrijednosti - Koliko će koštati cilj?: Pogledaj rad iza cilja — i prati svoj napredak. - Sigurnosna kopija i obnova: Uključuje prihod, troškove, ciljeve i postavke. - Widget - Apple Watch Sve ostaje na tvom uređaju. Nema računa, nema praćenja. Jedno plaćanje · Doživotni pristup · Bez pretplate Neograničene odluke i izmjene Neograničeni ciljevi i napredak Dijeljenje, analiza i sigurnosne kopije Optimizirano za iPhone Duo.
+Optimizirano za iPhone Duo. Aplikacija je izrađena s najnovijim SDK-om, ispunjava cijeli unutarnji zaslon i automatski prilagođava raspored, bilo da je uređaj sklopljen ili otvoren. Prije kupnje pogledajte koliko vas sati rada to stvarno stoji. Unesite neto satnicu i HoursTag Lite pretvara svaku cijenu u radno vrijeme. Označite svaku kupnju kao Potreba, Želja ili Impuls da uočite impulzivne kupnje, i vidite koliko je radnih sati odnijela svaka kategorija. Štedite za nešto? Pogledajte koliko za to morate raditi i pratite napredak. Što možete • Pretvorite bilo koju cijenu u sate rada prema neto plaći • Oznake kupnje: Potreba, Želja ili Impuls • Radni sati po kategoriji • Ciljevi štednje: sati iza svakog cilja i napredak • Sigurnosna kopija i vraćanje prihoda, potrošnje, ciljeva i postavki • Widget na početnom zaslonu i Apple Watch Sve ostaje na tvom uređaju. Nema računa, nema praćenja. Prva 3 preračunavanja dostupna su bez kupnje. Neobavezna jednokratna kupnja u aplikaciji otključava neograničena preračunavanja i zapise, ciljeve štednje s napretkom, trendove kategorija, dijeljenje i sigurnosne kopije. Optimizirano za iPhone Duo.
 
 - Novac i putovanja
 - Besplatno za početak

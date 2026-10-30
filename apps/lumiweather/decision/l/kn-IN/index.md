@@ -2,7 +2,7 @@
 title: "Lumi ಹವಾಮಾನ: ಇಂದಿನ ಮುನ್ಸೂಚನೆ — ಹೊರಹೋಗುವ ಸ್ಕೋರ್ ಮತ್ತು ಉಡುಪು | iOS App"
 lang: "kn-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiweather/decision/l/kn-IN/index.html"
-modified: "2026-10-29"
+modified: "2026-10-30"
 app_store_id: "6779552704"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

@@ -6,7 +6,7 @@
   "name": "Katalog vyhledávacích záměrů vydavatele Lumi Studio",
   "description": "Katalog od první strany, který uvádí, pro koho je každá aplikace určena, jaký úkol má splnit a přímou cestu do App Store.",
   "inLanguage": "cs",
-  "dateModified": "2026-10-23",
+  "dateModified": "2026-10-30",
   "numberOfItems": 56,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -19,7 +19,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-notesstudio100",
         "url": "https://apps.apple.com/cz/app/id6798813048?pt=118326163&ct=geo_pick&mt=8",
         "name": "100 Notes Studio: Pen & Paper",
-        "description": "100 Notes Studio spojuje rukopis, psaný text, anotace PDF, organizaci sešitů a studijní nástroje v klidném pracovním prostoru, který funguje i bez sítě.",
+        "description": "Pište rukou jako perem na papír: 29 per a štětců, od plnicího pera a tužky po kaligrafický štětec a akvarel, a ve svém rukopisu pak můžete vyhledávat.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -49,7 +49,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6798813048",
           "inLanguage": "cs",
-          "description": "100 Notes Studio spojuje rukopis, psaný text, anotace PDF, organizaci sešitů a studijní nástroje v klidném pracovním prostoru, který funguje i bez sítě.",
+          "description": "Pište rukou jako perem na papír: 29 per a štětců, od plnicího pera a tužky po kaligrafický štětec a akvarel, a ve svém rukopisu pak můžete vyhledávat.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-notesstudio100"
           },
@@ -85,7 +85,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-aibriefpack",
         "url": "https://apps.apple.com/cz/app/id6791658210?pt=118326163&ct=geo_pick&mt=8",
         "name": "AI Brief: Ze souborů AI prompt",
-        "description": "Lepší kontext. Lepší odpovědi.",
+        "description": "Proměňte snímky obrazovky, PDF, soubory a poznámky v jeden přehledný AI prompt, ve kterém je jasný cíl, fakta i zdroje.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -115,7 +115,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6791658210",
           "inLanguage": "cs",
-          "description": "Lepší kontext. Lepší odpovědi.",
+          "description": "Proměňte snímky obrazovky, PDF, soubory a poznámky v jeden přehledný AI prompt, ve kterém je jasný cíl, fakta i zdroje.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-aibriefpack"
           },
@@ -217,7 +217,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-battai",
         "url": "https://apps.apple.com/cz/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
         "name": "BattAI: Skóre kondice baterie",
-        "description": "BattAI BattAI používá pět hodnot z veřejných API iOS: stav baterie, stav nabíjení, úsporný režim, tepelný stav celého zařízení a čas. Ostatní výsledky se počítají z těchto měření nebo z údajů, které přidáte. U každého údaje je uveden zdroj a omezení.",
+        "description": "Ohodnoťte kondici baterie skóre a sledujte vývoj.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -247,7 +247,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802423998",
           "inLanguage": "cs",
-          "description": "BattAI BattAI používá pět hodnot z veřejných API iOS: stav baterie, stav nabíjení, úsporný režim, tepelný stav celého zařízení a čas. Ostatní výsledky se počítají z těchto měření nebo z údajů, které přidáte. U každého údaje je uveden zdroj a omezení.",
+          "description": "Ohodnoťte kondici baterie skóre a sledujte vývoj.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-battai"
           },
@@ -283,7 +283,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-caldaily",
         "url": "https://apps.apple.com/cz/app/id6794178671?pt=118326163&ct=geo_pick&mt=8",
         "name": "CalDaily: kalkulačka a motivy",
-        "description": "Kalkulačka, kterou budete opravdu používat dál, protože si pamatuje, co za každým číslem stálo.",
+        "description": "Krásná kalkulačka, která si pamatuje: 100 vestavěných motivů a widget na ploše, který počítá bez otevření aplikace.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -313,7 +313,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6794178671",
           "inLanguage": "cs",
-          "description": "Kalkulačka, kterou budete opravdu používat dál, protože si pamatuje, co za každým číslem stálo.",
+          "description": "Krásná kalkulačka, která si pamatuje: 100 vestavěných motivů a widget na ploše, který počítá bez otevření aplikace.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-caldaily"
           },
@@ -613,7 +613,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-dailymatelite",
         "url": "https://apps.apple.com/cz/app/id6794725568?pt=118326163&ct=geo_pick&mt=8",
         "name": "DailyMate Lite: Mluvte jistě",
-        "description": "Mluvte jistě právě tehdy, když to potřebujete. DailyMate Lite mění situace ze života v krátká cvičení: uvidíte úvodní repliku a naučíte se přirozeně",
+        "description": "Učte se kterýkoli z 50 jazyků, nejen jeden: angličtinu, španělštinu, francouzštinu, japonštinu, korejštinu a mnoho dalších. Přepínejte kdykoli; každý jazyk",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -643,7 +643,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6794725568",
           "inLanguage": "cs",
-          "description": "Mluvte jistě právě tehdy, když to potřebujete. DailyMate Lite mění situace ze života v krátká cvičení: uvidíte úvodní repliku a naučíte se přirozeně",
+          "description": "Učte se kterýkoli z 50 jazyků, nejen jeden: angličtinu, španělštinu, francouzštinu, japonštinu, korejštinu a mnoho dalších. Přepínejte kdykoli; každý jazyk",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-dailymatelite"
           },
@@ -679,7 +679,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-dbhalo",
         "url": "https://apps.apple.com/cz/app/id6806826699?pt=118326163&ct=geo_pick&mt=8",
         "name": "dB Halo: Hlukoměr",
-        "description": "Na první pohled zjistíte, jak hlasité je okolí, které frekvence převládají a kolik bezpečného času podle odhadu zbývá. dB Halo měří hladinu zvuku a",
+        "description": "Hned po otevření víte, kolik decibelů je kolem vás: velký živý údaj s minimem, průměrem, maximem a špičkou a časově označený záznam hlasitých událostí",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -709,7 +709,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806826699",
           "inLanguage": "cs",
-          "description": "Na první pohled zjistíte, jak hlasité je okolí, které frekvence převládají a kolik bezpečného času podle odhadu zbývá. dB Halo měří hladinu zvuku a",
+          "description": "Hned po otevření víte, kolik decibelů je kolem vás: velký živý údaj s minimem, průměrem, maximem a špičkou a časově označený záznam hlasitých událostí",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-dbhalo"
           },
@@ -943,7 +943,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-gmoneylite",
         "url": "https://apps.apple.com/cz/app/id6793436548?pt=118326163&ct=geo_pick&mt=8",
         "name": "G+Money Lite: Výdaje na cesty",
-        "description": "G+Money Lite — Chytrý převodník měn a sledovač výdajů",
+        "description": "Ať cestujete kamkoli, víte, kolik ještě dnes můžete utratit. Každý nákup zapíšete v místní měně, hned ho uvidíte ve své měně a odečtený z dnešního rozpočtu",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -973,7 +973,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6793436548",
           "inLanguage": "cs",
-          "description": "G+Money Lite — Chytrý převodník měn a sledovač výdajů",
+          "description": "Ať cestujete kamkoli, víte, kolik ještě dnes můžete utratit. Každý nákup zapíšete v místní měně, hned ho uvidíte ve své měně a odečtený z dnešního rozpočtu",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-gmoneylite"
           },
@@ -1075,7 +1075,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-hourstaglite",
         "url": "https://apps.apple.com/cz/app/id6794039979?pt=118326163&ct=geo_pick&mt=8",
         "name": "HoursTag Lite: Cena v hodinách",
-        "description": "HoursTag Lite - Uvidíte skutečnou cenu věcí",
+        "description": "Než něco koupíte, podívejte se, kolik hodin práce vás to doopravdy stojí. Zadejte svou čistou hodinovou mzdu a HoursTag Lite převede každou cenu na",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1105,7 +1105,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6794039979",
           "inLanguage": "cs",
-          "description": "HoursTag Lite - Uvidíte skutečnou cenu věcí",
+          "description": "Než něco koupíte, podívejte se, kolik hodin práce vás to doopravdy stojí. Zadejte svou čistou hodinovou mzdu a HoursTag Lite převede každou cenu na",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-hourstaglite"
           },
@@ -1933,7 +1933,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-maskmyfile",
         "url": "https://apps.apple.com/cz/app/id6792850916?pt=118326163&ct=geo_pick&mt=8",
         "name": "Mask My File: Odstraňte údaje",
-        "description": "Sdílejte bezpečně a přitom zachovejte užitečný kontext. Mask My File najde soukromé údaje dřív, než soubor odešlete, trvale začerní to, co vyberete, a poté",
+        "description": "Před sdílením začerněte osobní údaje. Mask My File najde jména, telefonní čísla, e-maily, adresy, čísla účtů a platební údaje a natrvalo skryje jen to",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1963,7 +1963,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6792850916",
           "inLanguage": "cs",
-          "description": "Sdílejte bezpečně a přitom zachovejte užitečný kontext. Mask My File najde soukromé údaje dřív, než soubor odešlete, trvale začerní to, co vyberete, a poté",
+          "description": "Před sdílením začerněte osobní údaje. Mask My File najde jména, telefonní čísla, e-maily, adresy, čísla účtů a platební údaje a natrvalo skryje jen to",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-maskmyfile"
           },
@@ -2065,7 +2065,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-mochidonestamp",
         "url": "https://apps.apple.com/cz/app/id6790800323?pt=118326163&ct=geo_pick&mt=8",
         "name": "Mochi DoneStamp: Naposledy",
-        "description": "Kdy jste naposledy měnili povlečení, zalévali rostlinu, volali rodině, zálohovali fotky nebo měnili filtr?",
+        "description": "Kdy jste naposledy měnili povlečení, čistili filtr klimatizace nebo měnili olej v autě?",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2095,7 +2095,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6790800323",
           "inLanguage": "cs",
-          "description": "Kdy jste naposledy měnili povlečení, zalévali rostlinu, volali rodině, zálohovali fotky nebo měnili filtr?",
+          "description": "Kdy jste naposledy měnili povlečení, čistili filtr klimatizace nebo měnili olej v autě?",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-mochidonestamp"
           },
@@ -2395,7 +2395,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-qrcodehalo",
         "url": "https://apps.apple.com/cz/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
         "name": "QR Code Halo: čtečka a tvorba",
-        "description": "QR Code Halo jedná hned, jak přečte kód. Naskenujte kód kamerou nebo vyberte fotku: odkazy se otevřou v prohlížeči, kódy pro přihlášení přístupovým",
+        "description": "Skenujte QR kódy a čárové kódy ve 20 formátech fotoaparátem nebo z fotky a akce proběhne hned: odkazy se otevřou a kódy Wi-Fi nabídnou připojení k síti.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2425,7 +2425,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806779853",
           "inLanguage": "cs",
-          "description": "QR Code Halo jedná hned, jak přečte kód. Naskenujte kód kamerou nebo vyberte fotku: odkazy se otevřou v prohlížeči, kódy pro přihlášení přístupovým",
+          "description": "Skenujte QR kódy a čárové kódy ve 20 formátech fotoaparátem nebo z fotky a akce proběhne hned: odkazy se otevřou a kódy Wi-Fi nabídnou připojení k síti.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-qrcodehalo"
           },
@@ -2659,7 +2659,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-shotinbox",
         "url": "https://apps.apple.com/cz/app/id6802166527?pt=118326163&ct=geo_pick&mt=8",
         "name": "ShotInbox AI: Sort Screenshots",
-        "description": "Vaše snímky, přehledně",
+        "description": "Vaše snímky obrazovky, automaticky roztříděné: Nákupy, Účtenky, Lístky, Cestování, Mapy a místa, Chaty a sociální sítě, Práce a další.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2689,7 +2689,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802166527",
           "inLanguage": "cs",
-          "description": "Vaše snímky, přehledně",
+          "description": "Vaše snímky obrazovky, automaticky roztříděné: Nákupy, Účtenky, Lístky, Cestování, Mapy a místa, Chaty a sociální sítě, Práce a další.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-shotinbox"
           },
@@ -2923,7 +2923,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-stayclock",
         "url": "https://apps.apple.com/cz/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
         "name": "Stay Clock: sklápěcí hodiny",
-        "description": "Stay Clock promění váš iPhone nebo iPad v nepřetržitě svítící stolní hodiny, čitelné z druhého konce místnosti. Velký čas, kalendář padnoucí ke každému",
+        "description": "Stay Clock promění váš iPhone nebo iPad v nepřetržitě svítící stolní hodiny, čitelné z druhého konce místnosti. Vyberte si ze 101 ciferníků včetně",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2953,7 +2953,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6814035888",
           "inLanguage": "cs",
-          "description": "Stay Clock promění váš iPhone nebo iPad v nepřetržitě svítící stolní hodiny, čitelné z druhého konce místnosti. Velký čas, kalendář padnoucí ke každému",
+          "description": "Stay Clock promění váš iPhone nebo iPad v nepřetržitě svítící stolní hodiny, čitelné z druhého konce místnosti. Vyberte si ze 101 ciferníků včetně",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-stayclock"
           },
@@ -2989,7 +2989,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-studydown",
         "url": "https://apps.apple.com/cz/app/id6807335593?pt=118326163&ct=geo_pick&mt=8",
         "name": "Studydown: Měření času",
-        "description": "Věnujte se tomu, na čem vám záleží, a uvidíte, kolik času tomu dáváte. Studydown zaznamenává práci na projektu, čtení i koníčky pomocí jednoduchého",
+        "description": "Otočte telefon displejem dolů a měření začne, zvednete ho a zastaví se, takže se do hodin učení a práce počítá jen skutečné soustředění.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3019,7 +3019,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6807335593",
           "inLanguage": "cs",
-          "description": "Věnujte se tomu, na čem vám záleží, a uvidíte, kolik času tomu dáváte. Studydown zaznamenává práci na projektu, čtení i koníčky pomocí jednoduchého",
+          "description": "Otočte telefon displejem dolů a měření začne, zvednete ho a zastaví se, takže se do hodin učení a práce počítá jen skutečné soustředění.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-studydown"
           },
@@ -3385,7 +3385,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-wifiaidlite",
         "url": "https://apps.apple.com/cz/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
         "name": "WiFi Aid Lite",
-        "description": "Najděte skutečný problém. Bez nákupu můžete celkem jednou provést úplnou kontrolu libovolným nástrojem. Volitelný jednorázový nákup v aplikaci odemkne",
+        "description": "Nejde internet nebo se všechno vleče? Jedním klepnutím aplikace postupně zkontroluje Wi-Fi, DNS a internet a ukáže, ve kterém kroku je problém, jaká je",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3415,7 +3415,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6793414462",
           "inLanguage": "cs",
-          "description": "Najděte skutečný problém. Bez nákupu můžete celkem jednou provést úplnou kontrolu libovolným nástrojem. Volitelný jednorázový nákup v aplikaci odemkne",
+          "description": "Nejde internet nebo se všechno vleče? Jedním klepnutím aplikace postupně zkontroluje Wi-Fi, DNS a internet a ukáže, ve kterém kroku je problém, jaká je",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-wifiaidlite"
           },
@@ -3451,7 +3451,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-wifiaid",
         "url": "https://apps.apple.com/cz/app/id6790467886?pt=118326163&ct=geo_pick&mt=8",
         "name": "WiFi Aid: Najděte chyby sítě",
-        "description": "Najděte nejpravděpodobnější příčinu pomocí nezávislých testů tras, DNS, TCP, TLS, odezvy a stability. Jedna platba předem, bez předplatného, reklam a",
+        "description": "Wi-Fi zase zpomaluje nebo vypadává? WiFi Aid jedním klepnutím otestuje Wi-Fi, DNS i internet a řekne vám, zda je problém nejspíš ve Wi-Fi, v DNS, u",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3481,7 +3481,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6790467886",
           "inLanguage": "cs",
-          "description": "Najděte nejpravděpodobnější příčinu pomocí nezávislých testů tras, DNS, TCP, TLS, odezvy a stability. Jedna platba předem, bez předplatného, reklam a",
+          "description": "Wi-Fi zase zpomaluje nebo vypadává? WiFi Aid jedním klepnutím otestuje Wi-Fi, DNS i internet a řekne vám, zda je problém nejspíš ve Wi-Fi, v DNS, u",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-wifiaid"
           },
@@ -3517,7 +3517,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-wordmatelite",
         "url": "https://apps.apple.com/cz/app/id6797601720?pt=118326163&ct=geo_pick&mt=8",
         "name": "Wordmate Lite: slovíčka denně",
-        "description": "Chcete se konečně pohnout v cizím jazyce, jenže večer zase uteče a nová slovíčka nikde. Wordmate Lite zkracuje učení na jednu minutu denně, kterou skutečně",
+        "description": "Naučte se 5 slov zhruba za minutu: angličtinu, japonštinu, korejštinu nebo kterýkoli ze 44 jazyků, od skutečných situací, jako je cestování, jídlo v",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3547,7 +3547,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6797601720",
           "inLanguage": "cs",
-          "description": "Chcete se konečně pohnout v cizím jazyce, jenže večer zase uteče a nová slovíčka nikde. Wordmate Lite zkracuje učení na jednu minutu denně, kterou skutečně",
+          "description": "Naučte se 5 slov zhruba za minutu: angličtinu, japonštinu, korejštinu nebo kterýkoli ze 44 jazyků, od skutečných situací, jako je cestování, jídlo v",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-wordmatelite"
           },
@@ -3649,7 +3649,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-zipbox",
         "url": "https://apps.apple.com/cz/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
         "name": "Zipbox: otevřít RAR, ZIP, 7z",
-        "description": "Zipbox je placená aplikace z App Storu. Jedna koupě zahrnuje všechny funkce, bez nákupů v aplikaci, předplatného a reklam. Všech 13 formátů se zpracuje v",
+        "description": "Otevírejte RAR, 7z, ZIP a dalších 10 formátů archivů přímo v iPhonu. Než rozbalíte, podívejte se dovnitř: náhled fotek, videí, PDF, textu a kódu, a pak",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3679,7 +3679,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806776579",
           "inLanguage": "cs",
-          "description": "Zipbox je placená aplikace z App Storu. Jedna koupě zahrnuje všechny funkce, bez nákupů v aplikaci, předplatného a reklam. Všech 13 formátů se zpracuje v",
+          "description": "Otevírejte RAR, 7z, ZIP a dalších 10 formátů archivů přímo v iPhonu. Než rozbalíte, podívejte se dovnitř: náhled fotek, videí, PDF, textu a kódu, a pak",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-zipbox"
           },

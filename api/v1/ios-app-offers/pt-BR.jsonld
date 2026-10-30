@@ -6,7 +6,7 @@
   "name": "Catálogo de intenções de busca da publicadora Lumi Studio",
   "description": "Um catálogo publicado diretamente pela desenvolvedora que mostra para quem cada app foi criado, a tarefa que a pessoa quer concluir e o acesso direto à App Store.",
   "inLanguage": "pt-BR",
-  "dateModified": "2026-10-23",
+  "dateModified": "2026-10-30",
   "numberOfItems": 56,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -217,7 +217,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/pt-BR.jsonld#offer-battai",
         "url": "https://apps.apple.com/br/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
         "name": "BattAI: Saúde da bateria",
-        "description": "BattAI O BattAI usa cinco dados das APIs públicas do iOS: nível da bateria, estado da carga, Pouca Energia, estado térmico do aparelho inteiro e hora. Os outros resultados são calculados com essas leituras ou adicionados por você. Cada dado mostra fonte e limites.",
+        "description": "Dê uma nota à saúde da bateria e acompanhe a evolução.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -247,7 +247,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802423998",
           "inLanguage": "pt-BR",
-          "description": "BattAI O BattAI usa cinco dados das APIs públicas do iOS: nível da bateria, estado da carga, Pouca Energia, estado térmico do aparelho inteiro e hora. Os outros resultados são calculados com essas leituras ou adicionados por você. Cada dado mostra fonte e limites.",
+          "description": "Dê uma nota à saúde da bateria e acompanhe a evolução.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/pt-BR.jsonld#offer-battai"
           },
@@ -283,7 +283,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/pt-BR.jsonld#offer-caldaily",
         "url": "https://apps.apple.com/br/app/id6794178671?pt=118326163&ct=geo_pick&mt=8",
         "name": "CalDaily: calculadora e temas",
-        "description": "Uma calculadora que você mantém, porque ela lembra o contexto de cada número.",
+        "description": "Uma calculadora bonita que lembra: 100 temas integrados e um widget na Tela de Início que calcula sem abrir o app.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -313,7 +313,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6794178671",
           "inLanguage": "pt-BR",
-          "description": "Uma calculadora que você mantém, porque ela lembra o contexto de cada número.",
+          "description": "Uma calculadora bonita que lembra: 100 temas integrados e um widget na Tela de Início que calcula sem abrir o app.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/pt-BR.jsonld#offer-caldaily"
           },
@@ -613,7 +613,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/pt-BR.jsonld#offer-dailymatelite",
         "url": "https://apps.apple.com/br/app/id6794725568?pt=118326163&ct=geo_pick&mt=8",
         "name": "DailyMate Lite: Fale agora",
-        "description": "Fale com mais confiança quando a conversa acontecer. DailyMate Lite transforma situações de viagem, trabalho, alimentação, saúde e vida social em",
+        "description": "Aprenda qualquer um dos 50 idiomas, não só um: inglês, espanhol, francês, japonês, coreano e muitos outros. Troque quando quiser; cada idioma guarda o",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -643,7 +643,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6794725568",
           "inLanguage": "pt-BR",
-          "description": "Fale com mais confiança quando a conversa acontecer. DailyMate Lite transforma situações de viagem, trabalho, alimentação, saúde e vida social em",
+          "description": "Aprenda qualquer um dos 50 idiomas, não só um: inglês, espanhol, francês, japonês, coreano e muitos outros. Troque quando quiser; cada idioma guarda o",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/pt-BR.jsonld#offer-dailymatelite"
           },
@@ -679,7 +679,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/pt-BR.jsonld#offer-dbhalo",
         "url": "https://apps.apple.com/br/app/id6806826699?pt=118326163&ct=geo_pick&mt=8",
         "name": "dB Halo: Decibelímetro",
-        "description": "No celular ou no iPad, use o dB Halo como medidor de decibéis em condomínios, no trânsito, em oficinas, obras ou festas. A tela do Halo indica a zona",
+        "description": "Veja na hora quantos decibéis tem agora: leitura grande ao vivo com mínimo, média, máximo e pico, além de um registro de barulhos fortes com horário",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -709,7 +709,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806826699",
           "inLanguage": "pt-BR",
-          "description": "No celular ou no iPad, use o dB Halo como medidor de decibéis em condomínios, no trânsito, em oficinas, obras ou festas. A tela do Halo indica a zona",
+          "description": "Veja na hora quantos decibéis tem agora: leitura grande ao vivo com mínimo, média, máximo e pico, além de um registro de barulhos fortes com horário",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/pt-BR.jsonld#offer-dbhalo"
           },
@@ -805,72 +805,6 @@
     {
       "@type": "ListItem",
       "position": 13,
-      "url": "https://apps.apple.com/br/app/id6824946559?pt=118326163&ct=geo_pick&mt=8",
-      "item": {
-        "@type": "Offer",
-        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/pt-BR.jsonld#offer-duowallpaperstudio",
-        "url": "https://apps.apple.com/br/app/id6824946559?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Foldable Wallpaper Studio",
-        "description": "Papéis de parede em pares para as duas telas do iPhone Duo: fechado, um close na tela externa; aberto, a cena inteira na tela interna, da mesma arte",
-        "seller": {
-          "@type": "Organization",
-          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
-          "name": "Lumi Studio",
-          "url": "https://open.cait518.cc/ios-app-guide/about.html"
-        },
-        "itemOffered": {
-          "@type": "MobileApplication",
-          "@id": "https://apps.apple.com/app/id6824946559",
-          "identifier": {
-            "@type": "PropertyValue",
-            "propertyID": "Apple App Store ID",
-            "value": "6824946559"
-          },
-          "name": "Foldable Wallpaper Studio",
-          "operatingSystem": "iOS",
-          "applicationCategory": "PhotographyApplication",
-          "url": "https://apps.apple.com/br/app/id6824946559?pt=118326163&ct=geo_pick&mt=8",
-          "installUrl": "https://apps.apple.com/br/app/id6824946559?pt=118326163&ct=geo_pick&mt=8",
-          "downloadUrl": "https://apps.apple.com/br/app/id6824946559?pt=118326163&ct=geo_pick&mt=8",
-          "potentialAction": {
-            "@type": "InstallAction",
-            "target": "https://apps.apple.com/br/app/id6824946559?pt=118326163&ct=geo_pick&mt=8"
-          },
-          "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/pt-BR/duowallpaperstudio.html#webpage"
-          },
-          "sameAs": "https://apps.apple.com/app/id6824946559",
-          "inLanguage": "pt-BR",
-          "description": "Papéis de parede em pares para as duas telas do iPhone Duo: fechado, um close na tela externa; aberto, a cena inteira na tela interna, da mesma arte",
-          "offers": {
-            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/pt-BR.jsonld#offer-duowallpaperstudio"
-          },
-          "additionalProperty": [
-            {
-              "@type": "PropertyValue",
-              "name": "purchase_model",
-              "value": "free_with_lifetime_unlock"
-            },
-            {
-              "@type": "PropertyValue",
-              "name": "one_time_option",
-              "value": true
-            }
-          ],
-          "isAccessibleForFree": true
-        },
-        "price": "0",
-        "priceCurrency": "BRL",
-        "availability": "https://schema.org/InStock",
-        "eligibleRegion": {
-          "@type": "Country",
-          "identifier": "BR"
-        }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 14,
       "url": "https://apps.apple.com/br/app/id6755782939?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -936,7 +870,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 15,
+      "position": 14,
       "url": "https://apps.apple.com/br/app/id6793436548?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1002,7 +936,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 16,
+      "position": 15,
       "url": "https://apps.apple.com/br/app/id6804564400?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1068,7 +1002,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 17,
+      "position": 16,
       "url": "https://apps.apple.com/br/app/id6754218117?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1134,7 +1068,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 18,
+      "position": 17,
       "url": "https://apps.apple.com/br/app/id6794039979?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1200,7 +1134,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 19,
+      "position": 18,
       "url": "https://apps.apple.com/br/app/id6806639602?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1266,7 +1200,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 20,
+      "position": 19,
       "url": "https://apps.apple.com/br/app/id6780107485?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1332,7 +1266,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 21,
+      "position": 20,
       "url": "https://apps.apple.com/br/app/id6773017109?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1398,7 +1332,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 22,
+      "position": 21,
       "url": "https://apps.apple.com/br/app/id6775773117?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1464,7 +1398,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 23,
+      "position": 22,
       "url": "https://apps.apple.com/br/app/id6778748533?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1530,7 +1464,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 24,
+      "position": 23,
       "url": "https://apps.apple.com/br/app/id6778491147?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1596,7 +1530,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 25,
+      "position": 24,
       "url": "https://apps.apple.com/br/app/id6778269699?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1662,7 +1596,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 26,
+      "position": 25,
       "url": "https://apps.apple.com/br/app/id6776958488?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1728,7 +1662,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 27,
+      "position": 26,
       "url": "https://apps.apple.com/br/app/id6779750237?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1794,7 +1728,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 28,
+      "position": 27,
       "url": "https://apps.apple.com/br/app/id6779745474?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1860,7 +1794,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 29,
+      "position": 28,
       "url": "https://apps.apple.com/br/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1926,7 +1860,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 30,
+      "position": 29,
       "url": "https://apps.apple.com/br/app/id6792850916?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1992,7 +1926,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 31,
+      "position": 30,
       "url": "https://apps.apple.com/br/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2058,7 +1992,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 32,
+      "position": 31,
       "url": "https://apps.apple.com/br/app/id6790800323?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2124,7 +2058,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 33,
+      "position": 32,
       "url": "https://apps.apple.com/br/app/id6801956402?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2190,7 +2124,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 34,
+      "position": 33,
       "url": "https://apps.apple.com/br/app/id6798814385?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2230,6 +2164,72 @@
           "description": "Transforme aquele paredão de texto em UM slide que as pessoas realmente leem.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/pt-BR.jsonld#offer-onepageppt"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "BRL",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "BR"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 34,
+      "url": "https://apps.apple.com/br/app/id6824946559?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/pt-BR.jsonld#offer-duowallpaperstudio",
+        "url": "https://apps.apple.com/br/app/id6824946559?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Papel de parede dobrável",
+        "description": "Papéis de parede em pares para as duas telas do iPhone Duo: fechado, um close na tela externa; aberto, a cena inteira na tela interna, da mesma arte",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6824946559",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6824946559"
+          },
+          "name": "Papel de parede dobrável",
+          "operatingSystem": "iOS",
+          "applicationCategory": "PhotographyApplication",
+          "url": "https://apps.apple.com/br/app/id6824946559?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/br/app/id6824946559?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/br/app/id6824946559?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/br/app/id6824946559?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/pt-BR/duowallpaperstudio.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6824946559",
+          "inLanguage": "pt-BR",
+          "description": "Papéis de parede em pares para as duas telas do iPhone Duo: fechado, um close na tela externa; aberto, a cena inteira na tela interna, da mesma arte",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/pt-BR.jsonld#offer-duowallpaperstudio"
           },
           "additionalProperty": [
             {
@@ -2395,7 +2395,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/pt-BR.jsonld#offer-qrcodehalo",
         "url": "https://apps.apple.com/br/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
         "name": "QR Code Halo: Escanear e Criar",
-        "description": "O QR Code Halo age no instante em que lê um código. Escaneie com a câmera ou escolha uma foto: links abrem no seu navegador, códigos de login com",
+        "description": "Escaneie QR codes e códigos de barras em 20 formatos com a câmera ou de uma foto, e a ação acontece na hora: links abrem e códigos de Wi-Fi mostram o aviso",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2425,7 +2425,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806779853",
           "inLanguage": "pt-BR",
-          "description": "O QR Code Halo age no instante em que lê um código. Escaneie com a câmera ou escolha uma foto: links abrem no seu navegador, códigos de login com",
+          "description": "Escaneie QR codes e códigos de barras em 20 formatos com a câmera ou de uma foto, e a ação acontece na hora: links abrem e códigos de Wi-Fi mostram o aviso",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/pt-BR.jsonld#offer-qrcodehalo"
           },
@@ -2659,7 +2659,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/pt-BR.jsonld#offer-shotinbox",
         "url": "https://apps.apple.com/br/app/id6802166527?pt=118326163&ct=geo_pick&mt=8",
         "name": "ShotInbox AI: Sort Screenshots",
-        "description": "Suas capturas, organizadas",
+        "description": "Suas capturas, organizadas automaticamente: Compras, Recibos, Bilhetes, Viagens, Mapas e lugares, Conversas e redes, Trabalho e mais.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2689,7 +2689,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802166527",
           "inLanguage": "pt-BR",
-          "description": "Suas capturas, organizadas",
+          "description": "Suas capturas, organizadas automaticamente: Compras, Recibos, Bilhetes, Viagens, Mapas e lugares, Conversas e redes, Trabalho e mais.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/pt-BR.jsonld#offer-shotinbox"
           },
@@ -2923,7 +2923,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/pt-BR.jsonld#offer-stayclock",
         "url": "https://apps.apple.com/br/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
         "name": "Stay Clock: Relógio de Mesa",
-        "description": "O Stay Clock transforma seu iPhone ou iPad em um relógio de mesa sempre ativo, legível do outro lado do quarto. Hora grande, um calendário que se adapta",
+        "description": "O Stay Clock transforma seu iPhone ou iPad em um relógio de mesa sempre ativo, legível do outro lado do quarto. Escolha entre 101 mostradores, incluindo",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2953,7 +2953,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6814035888",
           "inLanguage": "pt-BR",
-          "description": "O Stay Clock transforma seu iPhone ou iPad em um relógio de mesa sempre ativo, legível do outro lado do quarto. Hora grande, um calendário que se adapta",
+          "description": "O Stay Clock transforma seu iPhone ou iPad em um relógio de mesa sempre ativo, legível do outro lado do quarto. Escolha entre 101 mostradores, incluindo",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/pt-BR.jsonld#offer-stayclock"
           },
@@ -2989,7 +2989,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/pt-BR.jsonld#offer-studydown",
         "url": "https://apps.apple.com/br/app/id6807335593?pt=118326163&ct=geo_pick&mt=8",
         "name": "Studydown: Timer de foco",
-        "description": "Dê espaço ao que importa e veja o tempo que você dedica a isso. O Studydown registra projetos, leitura e hobbies com um gesto simples: apoiar o celular com",
+        "description": "Vire o celular com a tela para baixo e o timer começa; levante e ele pausa, então só o tempo de foco de verdade entra nas suas horas de estudo e trabalho.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3019,7 +3019,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6807335593",
           "inLanguage": "pt-BR",
-          "description": "Dê espaço ao que importa e veja o tempo que você dedica a isso. O Studydown registra projetos, leitura e hobbies com um gesto simples: apoiar o celular com",
+          "description": "Vire o celular com a tela para baixo e o timer começa; levante e ele pausa, então só o tempo de foco de verdade entra nas suas horas de estudo e trabalho.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/pt-BR.jsonld#offer-studydown"
           },
@@ -3451,7 +3451,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/pt-BR.jsonld#offer-wifiaidlite",
         "url": "https://apps.apple.com/br/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
         "name": "WiFi Aid Lite",
-        "description": "Você pode fazer uma verificação completa no total, com qualquer ferramenta, sem compra. Uma compra única opcional no app desbloqueia verificações",
+        "description": "Sem internet ou tudo lento? Com um toque, o app verifica Wi-Fi, DNS e internet em ordem e mostra em qual etapa está o problema, a causa mais provável e o",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3481,7 +3481,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6793414462",
           "inLanguage": "pt-BR",
-          "description": "Você pode fazer uma verificação completa no total, com qualquer ferramenta, sem compra. Uma compra única opcional no app desbloqueia verificações",
+          "description": "Sem internet ou tudo lento? Com um toque, o app verifica Wi-Fi, DNS e internet em ordem e mostra em qual etapa está o problema, a causa mais provável e o",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/pt-BR.jsonld#offer-wifiaidlite"
           },
@@ -3517,7 +3517,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/pt-BR.jsonld#offer-wordmatelite",
         "url": "https://apps.apple.com/br/app/id6797601720?pt=118326163&ct=geo_pick&mt=8",
         "name": "Wordmate Lite: aprenda idiomas",
-        "description": "Cinco palavras, um minuto, um passo que dá para ver. O Wordmate Lite pega aquela promessa de finalmente aprender um idioma e corta em pedaços pequenos o",
+        "description": "Aprenda 5 palavras em cerca de um minuto: inglês, japonês, coreano ou qualquer um dos 44 idiomas, começando por situações reais como viagem, restaurante",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3547,7 +3547,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6797601720",
           "inLanguage": "pt-BR",
-          "description": "Cinco palavras, um minuto, um passo que dá para ver. O Wordmate Lite pega aquela promessa de finalmente aprender um idioma e corta em pedaços pequenos o",
+          "description": "Aprenda 5 palavras em cerca de um minuto: inglês, japonês, coreano ou qualquer um dos 44 idiomas, começando por situações reais como viagem, restaurante",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/pt-BR.jsonld#offer-wordmatelite"
           },
@@ -3649,7 +3649,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/pt-BR.jsonld#offer-zipbox",
         "url": "https://apps.apple.com/br/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
         "name": "Zipbox: abrir RAR, ZIP e 7z",
-        "description": "Zipbox é um app pago na App Store. Uma compra inclui todos os recursos, sem compras no app, assinaturas ou propaganda. Os 13 formatos são processados no",
+        "description": "Abra RAR, 7z, ZIP e mais 10 formatos de arquivo compactado direto no iPhone. Olhe dentro antes de extrair: veja fotos, vídeos, PDF, texto e código, e",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3679,7 +3679,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806776579",
           "inLanguage": "pt-BR",
-          "description": "Zipbox é um app pago na App Store. Uma compra inclui todos os recursos, sem compras no app, assinaturas ou propaganda. Os 13 formatos são processados no",
+          "description": "Abra RAR, 7z, ZIP e mais 10 formatos de arquivo compactado direto no iPhone. Olhe dentro antes de extrair: veja fotos, vídeos, PDF, texto e código, e",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/pt-BR.jsonld#offer-zipbox"
           },

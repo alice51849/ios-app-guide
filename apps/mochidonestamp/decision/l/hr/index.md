@@ -2,7 +2,7 @@
 title: "Mochi DoneStamp: Zadnji put — Kad je to bilo? Podsjetnici | iOS App"
 lang: "hr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochidonestamp/decision/l/hr/index.html"
-modified: "2026-10-29"
+modified: "2026-10-30"
 app_store_id: "6790800323"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # Mochi DoneStamp: Zadnji put — Kad je to bilo? Podsjetnici | iOS App
 
-Kada ste zadnji put promijenili posteljinu, zalili biljku, nazvali obitelj, sigurnosno kopirali fotografije ili zamijenili filtar? Mochi DoneStamp pamti životne događaje i nije još jedan popis obveza. Kada završite, jedan dodir sprema točno vrijeme u mirnu povijest. Po potrebi dodajte približan ili točan ritam. Sljedeći datum uvijek se računa iznova od stvarnog završetka. • Zapis jednim dodirom i Poništi • Dodavanje, uređivanje ili brisanje ranijih trenutaka • Fleksibilni i točni ritmovi od minuta do godina • Lokalne obavijesti s Gotovo i Odgodi • Interaktivni widgeti početnog i zaključanog zaslona • Siri, Prečaci, neobavezne bilješke i fotografije • Statistika razmaka, potpuna kopija i JSON izvoz • Tamni način, iPad, VoiceOver i Dynamic Type Besplatno dobivate jedan aktivni događaj i neograničenu povijest. Jedna kupnja Lifetime Pro otključava neograničene događaje i sve značajke. Bez računa, oglasa, analitike ili praćenja. Glavni podaci ostaju na uređaju. Bez pretplate. Optimizirano za iPhone Duo.
+Optimizirano za iPhone Duo. Aplikacija je izrađena s najnovijim SDK-om, ispunjava cijeli unutarnji zaslon i automatski prilagođava raspored, bilo da je uređaj sklopljen ili otvoren. Kada ste zadnji put promijenili posteljinu, očistili filtar klima-uređaja ili promijenili ulje u autu? Kad nešto obavite, dodirnite jednom i Mochi DoneStamp zabilježi točno vrijeme, pa uvijek vidite koliko je prošlo. Postavite ritam i dobit ćete podsjetnik kad dođe vrijeme; sljedeći datum uvijek se računa od dana kad ste to stvarno obavili. • Zapis jednim dodirom i Poništi • Dodavanje, uređivanje ili brisanje ranijih trenutaka • Fleksibilni i točni ritmovi od minuta do godina • Lokalne obavijesti s Gotovo i Odgodi • Interaktivni widgeti početnog i zaključanog zaslona • Siri, Prečaci, neobavezne bilješke i fotografije • Statistika razmaka, potpuna kopija i JSON izvoz • Tamni način, iPad, VoiceOver i Dynamic Type • Apple Watch: pogledajte zadnji put i zabilježite sa zapešća Besplatno dobivate jedan aktivni događaj i neograničenu povijest. Jedna kupnja Lifetime Pro otključava neograničene događaje i sve značajke. Bez računa, oglasa, analitike ili praćenja. Glavni podaci ostaju na uređaju. Bez pretplate. Optimizirano za iPhone Duo.
 
 - Životni stil
 - Besplatno za početak

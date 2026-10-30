@@ -2,7 +2,7 @@
 title: "WiFi Aid Lite — Nema interneta? Pronađi uzrok | iOS App"
 lang: "hr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaidlite/decision/l/hr/index.html"
-modified: "2026-10-29"
+modified: "2026-10-30"
 app_store_id: "6793414462"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # WiFi Aid Lite — Nema interneta? Pronađi uzrok | iOS App
 
-Pronađi stvarni problem. Bez kupnje možete ukupno jednom provesti potpunu provjeru bilo kojim alatom. Neobavezna jednokratna kupnja u aplikaciji otključava neograničene provjere i usporedbu prije i nakon popravka—bez pretplate, oglasa ili praćenja. • Pokreni test — Provjere Wi-Fi-ja i DNS-a jednim dodirom • Dubinski test — Više dokaza i stabilnost mreže • Testiraj web stranicu — Jednu stranicu ili cijeli internet • Dokazi — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Veza se čini nestabilnom — Varijacija • Povijest — Privatni zapisi samo na ovom uređaju • Povezani čvor — Precizna lokacija prepoznaje Wi-Fi i trenutačni čvor Bez računa, oglasa ili praćenja. Privatni zapisi samo na ovom uređaju. Bez kupnje možete ukupno jednom provesti potpunu provjeru bilo kojim alatom. Neobavezna jednokratna kupnja u aplikaciji otključava neograničene provjere i usporedbu prije i nakon popravka—bez pretplate, oglasa ili praćenja.
+Optimizirano za iPhone Duo. Aplikacija je izrađena s najnovijim SDK-om, ispunjava cijeli unutarnji zaslon i automatski prilagođava raspored, bilo da je uređaj sklopljen ili otvoren. Nema interneta ili sve zapinje? Jednim dodirom aplikacija redom provjerava Wi-Fi, DNS i internet te pokazuje u kojem koraku nastaje problem, koji je najvjerojatniji uzrok i što pokušati dalje. „Testiraj web stranicu” otkriva je li problem samo u jednoj stranici ili u cijeloj vezi. „Dubinski test” prikuplja više mjerenja kako bi uhvatio prekide koji dolaze i odlaze. Svaki rezultat prikazuje svoje dokaze (DNS, TCP, TLS, vrijeme odziva, IPv4 i IPv6), pa ne morate nagađati ni ponovno pokretati naslijepo. • Stranice za prijavu: prepoznaje Wi-Fi u hotelima, kafićima i zračnim lukama koji je povezan, ali još traži prijavu u pregledniku • Stabilnost: ponovljena mjerenja otkrivaju oscilacije na vezama koje izgledaju dobro, a sporo rade • Što učiniti dalje: konkretni koraci, primjerice otvoriti stranicu za prijavu, isprobati pouzdanu DNS uslugu ili testirati bliže usmjerivaču • Povijest: usporedite rezultate kroz vrijeme; podaci ostaju samo na ovom uređaju • Povezani čvor: uz dopuštenu preciznu lokaciju prepoznaje ovaj Wi-Fi i čvor na koji ste spojeni Prva potpuna provjera, bilo kojim alatom, ne zahtijeva kupnju. Nakon toga neobavezna jednokratna kupnja u aplikaciji otključava neograničene provjere svim alatima, cijelu povijest i usporedbu prije i nakon popravka. Bez pretplate. Bez računa, oglasa, analitike i praćenja. Lokacija se koristi samo za prepoznavanje Wi-Fi mreže i čvora te se obrađuje na uređaju. Povijest se nikada ne prenosi u oblak.
 
 - Više
 - Besplatno za početak

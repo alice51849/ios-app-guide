@@ -2,7 +2,7 @@
 title: "WiFi Aid: Vind netwerkfouten — Router-, mesh- en DNS-diagnose | iOS App"
 lang: "nl-NL"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/nl-NL/index.html"
-modified: "2026-10-29"
+modified: "2026-10-30"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # WiFi Aid: Vind netwerkfouten — Router-, mesh- en DNS-diagnose | iOS App
 
-Vind de waarschijnlijke oorzaak met tests van routes, DNS, TCP, TLS, timing en stabiliteit. Eenmalig vooraf betalen, zonder abonnement, reclame of tracking. • Start Check — Wifi, DNS en internet checks in één tik • Deep Check — Meer bewijs en stabiliteit • Check een website — Kijk of een site of het internet faalt • Bewijs — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Verbinding onstabiel — Variatie • Geschiedenis — Tests blijven privé op je apparaat • Apple Watch — Start Check • Widget · iPad — Verbonden · Start Check Geen account, ads, of tracking. Tests blijven privé op je apparaat. Eenmalige aankoop vooraf in de App Store. Geen abonnement. Geoptimaliseerd voor iPhone Duo.
+Geoptimaliseerd voor iPhone Duo. De app is gebouwd met de nieuwste SDK, vult het hele binnenscherm en past de indeling automatisch aan, dichtgeklapt of opengeklapt. Is de wifi weer traag of valt hij weg? WiFi Aid test wifi, DNS en internet met één tik en vertelt of het probleem waarschijnlijk bij je wifi, de DNS, je internetprovider of één website ligt, met het bewijs achter elke conclusie. Deep Check blijft metingen doen om haperende verbindingen te vangen die verbonden lijken maar blijven hangen, en op mesh-wifi zie je met welk knooppunt je verbonden bent en of dat sinds de vorige check is gewisseld. Check ook vanaf je Apple Watch of een widget op je beginscherm; de geschiedenis blijft alleen op dit apparaat. • Start check — test wifi, DNS en internet met één tik en krijg binnen seconden een conclusie • Deep Check — meer stabiliteitsmetingen voor problemen die komen en gaan • Check een website — zie of alleen één site plat ligt of je hele verbinding • Volledig bewijs — DNS, TCP, TLS, TTFB, HTTP, direct IP, IPv4 en IPv6, punt voor punt • Mesh-knooppunt — zie met welk knooppunt je verbonden bent en of je bent gewisseld • Geschiedenis — vergelijk eerdere resultaten, alleen op dit apparaat opgeslagen • Apple Watch — start een check vanaf je pols • Widget en iPad — verbindingsstatus op je beginscherm en een volledige iPad-indeling Geen account, advertenties, analyse of tracking. Eenmalige aankoop vooraf in de App Store. Geen abonnement. Geoptimaliseerd voor iPhone Duo.
 
 - Foto & hulpmiddel
 - Betaalde aanschaf

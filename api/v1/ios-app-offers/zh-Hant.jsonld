@@ -6,7 +6,7 @@
   "name": "Lumi Studio 開發者搜尋意圖目錄",
   "description": "第一方目錄，說明每款 App 的適合對象、想完成的任務，以及 App Store 下載入口。",
   "inLanguage": "zh-Hant",
-  "dateModified": "2026-10-23",
+  "dateModified": "2026-10-30",
   "numberOfItems": 56,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -613,7 +613,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hant.jsonld#offer-dailymatelite",
         "url": "https://apps.apple.com/tw/app/id6794725568?pt=118326163&ct=geo_pick&mt=8",
         "name": "DailyMate Lite：開口練習",
-        "description": "想開口時，不必先在腦中拼湊單字。DailyMate Lite 將旅行、工作、餐飲、健康等生活情境整理成簡短提示與自然回覆，讓你用完整的一來一往練習 50 種語言。",
+        "description": "50 種語言任你選，不只學一種：英語、日語、韓語、西班牙語、法語、泰語、越南語……想學哪種就切換哪種，每種語言的進度與收藏都分開保存。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -643,7 +643,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6794725568",
           "inLanguage": "zh-Hant",
-          "description": "想開口時，不必先在腦中拼湊單字。DailyMate Lite 將旅行、工作、餐飲、健康等生活情境整理成簡短提示與自然回覆，讓你用完整的一來一往練習 50 種語言。",
+          "description": "50 種語言任你選，不只學一種：英語、日語、韓語、西班牙語、法語、泰語、越南語……想學哪種就切換哪種，每種語言的進度與收藏都分開保存。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hant.jsonld#offer-dailymatelite"
           },
@@ -805,72 +805,6 @@
     {
       "@type": "ListItem",
       "position": 13,
-      "url": "https://apps.apple.com/tw/app/id6824946559?pt=118326163&ct=geo_pick&mt=8",
-      "item": {
-        "@type": "Offer",
-        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hant.jsonld#offer-duowallpaperstudio",
-        "url": "https://apps.apple.com/tw/app/id6824946559?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Foldable Wallpaper Studio",
-        "description": "專為 iPhone Duo 雙螢幕打造的成對桌布：合上，外螢幕是特寫；展開，內螢幕是整片全景，兩張出自同一幅原創畫面。",
-        "seller": {
-          "@type": "Organization",
-          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
-          "name": "Lumi Studio",
-          "url": "https://open.cait518.cc/ios-app-guide/about.html"
-        },
-        "itemOffered": {
-          "@type": "MobileApplication",
-          "@id": "https://apps.apple.com/app/id6824946559",
-          "identifier": {
-            "@type": "PropertyValue",
-            "propertyID": "Apple App Store ID",
-            "value": "6824946559"
-          },
-          "name": "Foldable Wallpaper Studio",
-          "operatingSystem": "iOS",
-          "applicationCategory": "PhotographyApplication",
-          "url": "https://apps.apple.com/tw/app/id6824946559?pt=118326163&ct=geo_pick&mt=8",
-          "installUrl": "https://apps.apple.com/tw/app/id6824946559?pt=118326163&ct=geo_pick&mt=8",
-          "downloadUrl": "https://apps.apple.com/tw/app/id6824946559?pt=118326163&ct=geo_pick&mt=8",
-          "potentialAction": {
-            "@type": "InstallAction",
-            "target": "https://apps.apple.com/tw/app/id6824946559?pt=118326163&ct=geo_pick&mt=8"
-          },
-          "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/zh-Hant/duowallpaperstudio.html#webpage"
-          },
-          "sameAs": "https://apps.apple.com/app/id6824946559",
-          "inLanguage": "zh-Hant",
-          "description": "專為 iPhone Duo 雙螢幕打造的成對桌布：合上，外螢幕是特寫；展開，內螢幕是整片全景，兩張出自同一幅原創畫面。",
-          "offers": {
-            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hant.jsonld#offer-duowallpaperstudio"
-          },
-          "additionalProperty": [
-            {
-              "@type": "PropertyValue",
-              "name": "purchase_model",
-              "value": "free_with_lifetime_unlock"
-            },
-            {
-              "@type": "PropertyValue",
-              "name": "one_time_option",
-              "value": true
-            }
-          ],
-          "isAccessibleForFree": true
-        },
-        "price": "0",
-        "priceCurrency": "TWD",
-        "availability": "https://schema.org/InStock",
-        "eligibleRegion": {
-          "@type": "Country",
-          "identifier": "TW"
-        }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 14,
       "url": "https://apps.apple.com/tw/app/id6755782939?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -936,7 +870,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 15,
+      "position": 14,
       "url": "https://apps.apple.com/tw/app/id6793436548?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1002,7 +936,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 16,
+      "position": 15,
       "url": "https://apps.apple.com/tw/app/id6804564400?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1068,7 +1002,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 17,
+      "position": 16,
       "url": "https://apps.apple.com/tw/app/id6754218117?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1134,7 +1068,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 18,
+      "position": 17,
       "url": "https://apps.apple.com/tw/app/id6794039979?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1200,7 +1134,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 19,
+      "position": 18,
       "url": "https://apps.apple.com/tw/app/id6806639602?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1266,7 +1200,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 20,
+      "position": 19,
       "url": "https://apps.apple.com/tw/app/id6780107485?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1332,7 +1266,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 21,
+      "position": 20,
       "url": "https://apps.apple.com/tw/app/id6773017109?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1398,7 +1332,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 22,
+      "position": 21,
       "url": "https://apps.apple.com/tw/app/id6775773117?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1464,7 +1398,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 23,
+      "position": 22,
       "url": "https://apps.apple.com/tw/app/id6778748533?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1530,7 +1464,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 24,
+      "position": 23,
       "url": "https://apps.apple.com/tw/app/id6778491147?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1596,7 +1530,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 25,
+      "position": 24,
       "url": "https://apps.apple.com/tw/app/id6778269699?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1662,7 +1596,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 26,
+      "position": 25,
       "url": "https://apps.apple.com/tw/app/id6776958488?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1728,7 +1662,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 27,
+      "position": 26,
       "url": "https://apps.apple.com/tw/app/id6779750237?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1794,7 +1728,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 28,
+      "position": 27,
       "url": "https://apps.apple.com/tw/app/id6779745474?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1860,7 +1794,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 29,
+      "position": 28,
       "url": "https://apps.apple.com/tw/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1926,7 +1860,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 30,
+      "position": 29,
       "url": "https://apps.apple.com/tw/app/id6792850916?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1992,7 +1926,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 31,
+      "position": 30,
       "url": "https://apps.apple.com/tw/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2058,7 +1992,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 32,
+      "position": 31,
       "url": "https://apps.apple.com/tw/app/id6790800323?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2124,7 +2058,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 33,
+      "position": 32,
       "url": "https://apps.apple.com/tw/app/id6801956402?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2190,7 +2124,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 34,
+      "position": 33,
       "url": "https://apps.apple.com/tw/app/id6798814385?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2256,7 +2190,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 35,
+      "position": 34,
       "url": "https://apps.apple.com/tw/app/id6781808054?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2322,7 +2256,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 36,
+      "position": 35,
       "url": "https://apps.apple.com/tw/app/id6780223070?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2388,7 +2322,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 37,
+      "position": 36,
       "url": "https://apps.apple.com/tw/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2454,7 +2388,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 38,
+      "position": 37,
       "url": "https://apps.apple.com/tw/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2520,7 +2454,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 39,
+      "position": 38,
       "url": "https://apps.apple.com/tw/app/id6779977651?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2586,7 +2520,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 40,
+      "position": 39,
       "url": "https://apps.apple.com/tw/app/id6788236641?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2652,7 +2586,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 41,
+      "position": 40,
       "url": "https://apps.apple.com/tw/app/id6802166527?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2718,7 +2652,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 42,
+      "position": 41,
       "url": "https://apps.apple.com/tw/app/id6780575828?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2784,7 +2718,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 43,
+      "position": 42,
       "url": "https://apps.apple.com/tw/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2850,7 +2784,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 44,
+      "position": 43,
       "url": "https://apps.apple.com/tw/app/id6782139553?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2916,14 +2850,14 @@
     },
     {
       "@type": "ListItem",
-      "position": 45,
+      "position": 44,
       "url": "https://apps.apple.com/tw/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hant.jsonld#offer-stayclock",
         "url": "https://apps.apple.com/tw/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
         "name": "Stay Clock:翻頁桌鐘",
-        "description": "Stay Clock 把你的 iPhone 或 iPad 變成一座全天候桌鐘,隔著房間也看得清楚。大大的時間顯示、配合每款錶面的行事曆,還有一款同步出現在 StandBy、鎖定畫面、主畫面小工具與 Apple Watch 的錶面設計。",
+        "description": "Stay Clock 把你的 iPhone 或 iPad 變成一座全天候桌鐘，充電時保持恆亮，隔著房間也看得清楚。101 款錶面隨你換，也有翻頁鐘（其中 100 款以一次性 Lifetime 解鎖）；夜裡可改成純黑底柔和紅字，不刺眼。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2953,7 +2887,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6814035888",
           "inLanguage": "zh-Hant",
-          "description": "Stay Clock 把你的 iPhone 或 iPad 變成一座全天候桌鐘,隔著房間也看得清楚。大大的時間顯示、配合每款錶面的行事曆,還有一款同步出現在 StandBy、鎖定畫面、主畫面小工具與 Apple Watch 的錶面設計。",
+          "description": "Stay Clock 把你的 iPhone 或 iPad 變成一座全天候桌鐘，充電時保持恆亮，隔著房間也看得清楚。101 款錶面隨你換，也有翻頁鐘（其中 100 款以一次性 Lifetime 解鎖）；夜裡可改成純黑底柔和紅字，不刺眼。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hant.jsonld#offer-stayclock"
           },
@@ -2982,7 +2916,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 46,
+      "position": 45,
       "url": "https://apps.apple.com/tw/app/id6807335593?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3048,7 +2982,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 47,
+      "position": 46,
       "url": "https://apps.apple.com/tw/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3114,7 +3048,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 48,
+      "position": 47,
       "url": "https://apps.apple.com/tw/app/id6791299610?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3180,7 +3114,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 49,
+      "position": 48,
       "url": "https://apps.apple.com/tw/app/id6787754435?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3246,7 +3180,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 50,
+      "position": 49,
       "url": "https://apps.apple.com/tw/app/id6782275018?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3312,7 +3246,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 51,
+      "position": 50,
       "url": "https://apps.apple.com/tw/app/id6818607603?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3378,7 +3312,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 52,
+      "position": 51,
       "url": "https://apps.apple.com/tw/app/id6790467886?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3444,14 +3378,14 @@
     },
     {
       "@type": "ListItem",
-      "position": 53,
+      "position": 52,
       "url": "https://apps.apple.com/tw/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hant.jsonld#offer-wifiaidlite",
         "url": "https://apps.apple.com/tw/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
         "name": "WiFi Aid Lite",
-        "description": "「網路又卡住了」——問題到底出在路由器、DNS、ISP,還是網站本身?WiFi Aid Lite 用多條獨立路徑同時檢測 DNS、TCP、TLS、回應時間與穩定度,交叉比對各項證據,告訴你最可能的故障原因,不必再瞎猜、重開機碰運氣。",
+        "description": "「網路又卡住了」——問題出在 Wi-Fi、路由器、DNS，還是網站本身？",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3481,7 +3415,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6793414462",
           "inLanguage": "zh-Hant",
-          "description": "「網路又卡住了」——問題到底出在路由器、DNS、ISP,還是網站本身?WiFi Aid Lite 用多條獨立路徑同時檢測 DNS、TCP、TLS、回應時間與穩定度,交叉比對各項證據,告訴你最可能的故障原因,不必再瞎猜、重開機碰運氣。",
+          "description": "「網路又卡住了」——問題出在 Wi-Fi、路由器、DNS，還是網站本身？",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hant.jsonld#offer-wifiaidlite"
           },
@@ -3510,14 +3444,14 @@
     },
     {
       "@type": "ListItem",
-      "position": 54,
+      "position": 53,
       "url": "https://apps.apple.com/tw/app/id6797601720?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hant.jsonld#offer-wordmatelite",
         "url": "https://apps.apple.com/tw/app/id6797601720?pt=118326163&ct=geo_pick&mt=8",
         "name": "Wordmate Lite 每天五個單字",
-        "description": "很多人的外語進度，是停在「還沒把單字卡做好」的那一步。Wordmate Lite 想拿掉的就是這一步。",
+        "description": "每天五個單字，一分鐘學完：日文、韓文、英文等 44 種語言任選，從旅遊、用餐、購物這些生活情境開始。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3547,7 +3481,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6797601720",
           "inLanguage": "zh-Hant",
-          "description": "很多人的外語進度，是停在「還沒把單字卡做好」的那一步。Wordmate Lite 想拿掉的就是這一步。",
+          "description": "每天五個單字，一分鐘學完：日文、韓文、英文等 44 種語言任選，從旅遊、用餐、購物這些生活情境開始。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hant.jsonld#offer-wordmatelite"
           },
@@ -3576,7 +3510,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 55,
+      "position": 54,
       "url": "https://apps.apple.com/tw/app/id6789917808?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3642,7 +3576,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 56,
+      "position": 55,
       "url": "https://apps.apple.com/tw/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3698,6 +3632,72 @@
           "isAccessibleForFree": false
         },
         "price": "150",
+        "priceCurrency": "TWD",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "TW"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 56,
+      "url": "https://apps.apple.com/tw/app/id6824946559?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hant.jsonld#offer-duowallpaperstudio",
+        "url": "https://apps.apple.com/tw/app/id6824946559?pt=118326163&ct=geo_pick&mt=8",
+        "name": "摺疊手機桌布 - 雙螢幕成對桌布",
+        "description": "專為 iPhone Duo 雙螢幕打造的成對桌布：合上，外螢幕是特寫；展開，內螢幕是整片全景，兩張出自同一幅原創畫面。",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6824946559",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6824946559"
+          },
+          "name": "摺疊手機桌布 - 雙螢幕成對桌布",
+          "operatingSystem": "iOS",
+          "applicationCategory": "PhotographyApplication",
+          "url": "https://apps.apple.com/tw/app/id6824946559?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/tw/app/id6824946559?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/tw/app/id6824946559?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/tw/app/id6824946559?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/zh-Hant/duowallpaperstudio.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6824946559",
+          "inLanguage": "zh-Hant",
+          "description": "專為 iPhone Duo 雙螢幕打造的成對桌布：合上，外螢幕是特寫；展開，內螢幕是整片全景，兩張出自同一幅原創畫面。",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hant.jsonld#offer-duowallpaperstudio"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
         "priceCurrency": "TWD",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {

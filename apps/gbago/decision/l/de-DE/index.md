@@ -2,7 +2,7 @@
 title: "GBAGo: Visuelle Spielstände — Rettungskarte · Auto-Snapshots | iOS App"
 lang: "de-DE"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gbago/decision/l/de-DE/index.html"
-modified: "2026-10-29"
+modified: "2026-10-30"
 app_store_id: "6804564400"
 verified_live: true
 purchase_model: "paid_upfront"

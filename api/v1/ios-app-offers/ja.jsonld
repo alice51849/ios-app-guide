@@ -6,7 +6,7 @@
   "name": "Lumi Studio 開発元検索意図カタログ",
   "description": "各アプリの対象ユーザー、達成したいタスク、App Store への直接の導線を、開発元が公開するカタログです。",
   "inLanguage": "ja",
-  "dateModified": "2026-10-23",
+  "dateModified": "2026-10-30",
   "numberOfItems": 56,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -19,7 +19,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-notesstudio100",
         "url": "https://apps.apple.com/jp/app/id6798813048?pt=118326163&ct=geo_pick&mt=8",
         "name": "100 Notes Studio：手書きノート",
-        "description": "手書き、キーボード入力、PDFへの書き込み、ページに残す録音、暗記学習を、整理されたオフライン環境にまとめられます。100 Notes Studioはタブレットとスマートフォンの両方に合わせて設計されています。",
+        "description": "紙にペンで書くような手書きノート。万年筆や鉛筆から筆ペン、水彩まで29種類のペンとブラシがあり、手書きの文字もあとから検索できます。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -49,7 +49,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6798813048",
           "inLanguage": "ja",
-          "description": "手書き、キーボード入力、PDFへの書き込み、ページに残す録音、暗記学習を、整理されたオフライン環境にまとめられます。100 Notes Studioはタブレットとスマートフォンの両方に合わせて設計されています。",
+          "description": "紙にペンで書くような手書きノート。万年筆や鉛筆から筆ペン、水彩まで29種類のペンとブラシがあり、手書きの文字もあとから検索できます。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-notesstudio100"
           },
@@ -613,7 +613,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-dailymatelite",
         "url": "https://apps.apple.com/jp/app/id6794725568?pt=118326163&ct=geo_pick&mt=8",
         "name": "DailyMate Lite：ひとこと練習",
-        "description": "いざ話そうとすると、言葉が出てこない。DailyMate Lite は、旅行、仕事、食事、健康などの場面を、短い問いかけと自然な返答のペアにまとめました。50言語を、一往復の会話で身につけられます。",
+        "description": "旅行英会話をはじめ、50言語からどれでも選んで学べます。英語、韓国語、中国語、スペイン語、フランス語など、いつでも切り替え可能。進捗とお気に入りは言語ごとに保存されます。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -643,7 +643,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6794725568",
           "inLanguage": "ja",
-          "description": "いざ話そうとすると、言葉が出てこない。DailyMate Lite は、旅行、仕事、食事、健康などの場面を、短い問いかけと自然な返答のペアにまとめました。50言語を、一往復の会話で身につけられます。",
+          "description": "旅行英会話をはじめ、50言語からどれでも選んで学べます。英語、韓国語、中国語、スペイン語、フランス語など、いつでも切り替え可能。進捗とお気に入りは言語ごとに保存されます。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-dailymatelite"
           },
@@ -679,7 +679,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-dbhalo",
         "url": "https://apps.apple.com/jp/app/id6806826699?pt=118326163&ct=geo_pick&mt=8",
         "name": "dB Halo：デシベル測定",
-        "description": "周囲の音は今、何dBなのか。選んだ基準では、より安全に過ごせる時間があとどれくらいか。dB Haloなら、ひと目で確認できます。",
+        "description": "開けばすぐ、今の音が何dBかわかります。大きな数字のリアルタイム表示に、最小・平均・最大・ピーク、大きな音を時刻つきで残す記録まで。上の階の足音、工事、近所の騒音も測れて、PDFレポートやCSVで書き出せます。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -709,7 +709,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806826699",
           "inLanguage": "ja",
-          "description": "周囲の音は今、何dBなのか。選んだ基準では、より安全に過ごせる時間があとどれくらいか。dB Haloなら、ひと目で確認できます。",
+          "description": "開けばすぐ、今の音が何dBかわかります。大きな数字のリアルタイム表示に、最小・平均・最大・ピーク、大きな音を時刻つきで残す記録まで。上の階の足音、工事、近所の騒音も測れて、PDFレポートやCSVで書き出せます。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-dbhalo"
           },
@@ -805,72 +805,6 @@
     {
       "@type": "ListItem",
       "position": 13,
-      "url": "https://apps.apple.com/jp/app/id6824946559?pt=118326163&ct=geo_pick&mt=8",
-      "item": {
-        "@type": "Offer",
-        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-duowallpaperstudio",
-        "url": "https://apps.apple.com/jp/app/id6824946559?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Foldable Wallpaper Studio",
-        "description": "iPhone Duoの外画面と内画面のためのペア壁紙。閉じれば外画面にクローズアップ、開けば内画面に全景。2枚は同じオリジナル作品から切り出しています。",
-        "seller": {
-          "@type": "Organization",
-          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
-          "name": "Lumi Studio",
-          "url": "https://open.cait518.cc/ios-app-guide/about.html"
-        },
-        "itemOffered": {
-          "@type": "MobileApplication",
-          "@id": "https://apps.apple.com/app/id6824946559",
-          "identifier": {
-            "@type": "PropertyValue",
-            "propertyID": "Apple App Store ID",
-            "value": "6824946559"
-          },
-          "name": "Foldable Wallpaper Studio",
-          "operatingSystem": "iOS",
-          "applicationCategory": "PhotographyApplication",
-          "url": "https://apps.apple.com/jp/app/id6824946559?pt=118326163&ct=geo_pick&mt=8",
-          "installUrl": "https://apps.apple.com/jp/app/id6824946559?pt=118326163&ct=geo_pick&mt=8",
-          "downloadUrl": "https://apps.apple.com/jp/app/id6824946559?pt=118326163&ct=geo_pick&mt=8",
-          "potentialAction": {
-            "@type": "InstallAction",
-            "target": "https://apps.apple.com/jp/app/id6824946559?pt=118326163&ct=geo_pick&mt=8"
-          },
-          "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/ja/duowallpaperstudio.html#webpage"
-          },
-          "sameAs": "https://apps.apple.com/app/id6824946559",
-          "inLanguage": "ja",
-          "description": "iPhone Duoの外画面と内画面のためのペア壁紙。閉じれば外画面にクローズアップ、開けば内画面に全景。2枚は同じオリジナル作品から切り出しています。",
-          "offers": {
-            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-duowallpaperstudio"
-          },
-          "additionalProperty": [
-            {
-              "@type": "PropertyValue",
-              "name": "purchase_model",
-              "value": "free_with_lifetime_unlock"
-            },
-            {
-              "@type": "PropertyValue",
-              "name": "one_time_option",
-              "value": true
-            }
-          ],
-          "isAccessibleForFree": true
-        },
-        "price": "0",
-        "priceCurrency": "JPY",
-        "availability": "https://schema.org/InStock",
-        "eligibleRegion": {
-          "@type": "Country",
-          "identifier": "JP"
-        }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 14,
       "url": "https://apps.apple.com/jp/app/id6755782939?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -936,7 +870,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 15,
+      "position": 14,
       "url": "https://apps.apple.com/jp/app/id6793436548?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1002,7 +936,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 16,
+      "position": 15,
       "url": "https://apps.apple.com/jp/app/id6804564400?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1068,7 +1002,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 17,
+      "position": 16,
       "url": "https://apps.apple.com/jp/app/id6754218117?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1134,7 +1068,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 18,
+      "position": 17,
       "url": "https://apps.apple.com/jp/app/id6794039979?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1200,7 +1134,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 19,
+      "position": 18,
       "url": "https://apps.apple.com/jp/app/id6806639602?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1266,7 +1200,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 20,
+      "position": 19,
       "url": "https://apps.apple.com/jp/app/id6780107485?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1332,7 +1266,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 21,
+      "position": 20,
       "url": "https://apps.apple.com/jp/app/id6773017109?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1398,7 +1332,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 22,
+      "position": 21,
       "url": "https://apps.apple.com/jp/app/id6775773117?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1464,7 +1398,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 23,
+      "position": 22,
       "url": "https://apps.apple.com/jp/app/id6778748533?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1530,7 +1464,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 24,
+      "position": 23,
       "url": "https://apps.apple.com/jp/app/id6778491147?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1596,7 +1530,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 25,
+      "position": 24,
       "url": "https://apps.apple.com/jp/app/id6778269699?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1662,7 +1596,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 26,
+      "position": 25,
       "url": "https://apps.apple.com/jp/app/id6776958488?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1728,7 +1662,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 27,
+      "position": 26,
       "url": "https://apps.apple.com/jp/app/id6779750237?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1794,7 +1728,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 28,
+      "position": 27,
       "url": "https://apps.apple.com/jp/app/id6779745474?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1860,7 +1794,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 29,
+      "position": 28,
       "url": "https://apps.apple.com/jp/app/id6792850916?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1926,7 +1860,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 30,
+      "position": 29,
       "url": "https://apps.apple.com/jp/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1992,7 +1926,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 31,
+      "position": 30,
       "url": "https://apps.apple.com/jp/app/id6790800323?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2058,7 +1992,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 32,
+      "position": 31,
       "url": "https://apps.apple.com/jp/app/id6801956402?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2124,14 +2058,14 @@
     },
     {
       "@type": "ListItem",
-      "position": 33,
+      "position": 32,
       "url": "https://apps.apple.com/jp/app/id6798814385?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-onepageppt",
         "url": "https://apps.apple.com/jp/app/id6798814385?pt=118326163&ct=geo_pick&mt=8",
         "name": "OnePage PPT: AI資料作成",
-        "description": "文字の壁を、読んでもらえる「1枚」に。 OnePage PPTは、あなたが渡した素材から要点を抜き出して、そのまま発表できる16:9のスライド1枚に組み上げます。テンプレート選びも、ボックスの配置も必要ありません。",
+        "description": "iPhone Duoに最適化。最新の開発キットでビルドしており、内側のディスプレイ全体に表示され、折りたたんでも開いても自動でレイアウトが調整されます。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2161,7 +2095,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6798814385",
           "inLanguage": "ja",
-          "description": "文字の壁を、読んでもらえる「1枚」に。 OnePage PPTは、あなたが渡した素材から要点を抜き出して、そのまま発表できる16:9のスライド1枚に組み上げます。テンプレート選びも、ボックスの配置も必要ありません。",
+          "description": "iPhone Duoに最適化。最新の開発キットでビルドしており、内側のディスプレイ全体に表示され、折りたたんでも開いても自動でレイアウトが調整されます。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-onepageppt"
           },
@@ -2190,7 +2124,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 34,
+      "position": 33,
       "url": "https://apps.apple.com/jp/app/id6781808054?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2256,7 +2190,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 35,
+      "position": 34,
       "url": "https://apps.apple.com/jp/app/id6780223070?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2322,7 +2256,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 36,
+      "position": 35,
       "url": "https://apps.apple.com/jp/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2388,7 +2322,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 37,
+      "position": 36,
       "url": "https://apps.apple.com/jp/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2454,7 +2388,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 38,
+      "position": 37,
       "url": "https://apps.apple.com/jp/app/id6779977651?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2520,7 +2454,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 39,
+      "position": 38,
       "url": "https://apps.apple.com/jp/app/id6788236641?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2586,7 +2520,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 40,
+      "position": 39,
       "url": "https://apps.apple.com/jp/app/id6802166527?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2652,7 +2586,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 41,
+      "position": 40,
       "url": "https://apps.apple.com/jp/app/id6780575828?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2718,7 +2652,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 42,
+      "position": 41,
       "url": "https://apps.apple.com/jp/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2784,7 +2718,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 43,
+      "position": 42,
       "url": "https://apps.apple.com/jp/app/id6782139553?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2850,14 +2784,14 @@
     },
     {
       "@type": "ListItem",
-      "position": 44,
+      "position": 43,
       "url": "https://apps.apple.com/jp/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-stayclock",
         "url": "https://apps.apple.com/jp/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
         "name": "Stay Clock:パタパタ卓上時計",
-        "description": "Stay Clockは、iPhoneやiPadを部屋の隅からでも読める常時点灯のデスク時計に変えます。大きな時刻表示、それぞれの文字盤に合うカレンダー、そしてStandBy、ロック画面、ホーム画面ウィジェット、Apple Watchまで続く一つの文字盤。",
+        "description": "Stay Clockは、iPhoneやiPadを部屋の隅からでも読める常時点灯のデスク時計に変えます。パタパタ時計を含む101種類の文字盤から選べて（うち100種類は任意のLifetime購入で追加）、夜は真っ黒な背景に控えめな赤い文字盤へ切り替えられます。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2887,7 +2821,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6814035888",
           "inLanguage": "ja",
-          "description": "Stay Clockは、iPhoneやiPadを部屋の隅からでも読める常時点灯のデスク時計に変えます。大きな時刻表示、それぞれの文字盤に合うカレンダー、そしてStandBy、ロック画面、ホーム画面ウィジェット、Apple Watchまで続く一つの文字盤。",
+          "description": "Stay Clockは、iPhoneやiPadを部屋の隅からでも読める常時点灯のデスク時計に変えます。パタパタ時計を含む101種類の文字盤から選べて（うち100種類は任意のLifetime購入で追加）、夜は真っ黒な背景に控えめな赤い文字盤へ切り替えられます。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-stayclock"
           },
@@ -2916,14 +2850,14 @@
     },
     {
       "@type": "ListItem",
-      "position": 45,
+      "position": 44,
       "url": "https://apps.apple.com/jp/app/id6807335593?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-studydown",
         "url": "https://apps.apple.com/jp/app/id6807335593?pt=118326163&ct=geo_pick&mt=8",
         "name": "Studydown：伏せて時間記録",
-        "description": "スマートフォンを伏せて、大切なことに向き合う時間を。Studydown は、仕事のプロジェクト、読書、語学、趣味などに使った時間を、項目ごとに残せる記録アプリです。",
+        "description": "スマホを画面を下にして置けば計測スタート、持ち上げれば一時停止。勉強や仕事の時間に、本当に集中した分だけが記録されます。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2953,7 +2887,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6807335593",
           "inLanguage": "ja",
-          "description": "スマートフォンを伏せて、大切なことに向き合う時間を。Studydown は、仕事のプロジェクト、読書、語学、趣味などに使った時間を、項目ごとに残せる記録アプリです。",
+          "description": "スマホを画面を下にして置けば計測スタート、持ち上げれば一時停止。勉強や仕事の時間に、本当に集中した分だけが記録されます。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-studydown"
           },
@@ -2982,7 +2916,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 46,
+      "position": 45,
       "url": "https://apps.apple.com/jp/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3048,7 +2982,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 47,
+      "position": 46,
       "url": "https://apps.apple.com/jp/app/id6791299610?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3114,7 +3048,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 48,
+      "position": 47,
       "url": "https://apps.apple.com/jp/app/id6787754435?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3180,7 +3114,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 49,
+      "position": 48,
       "url": "https://apps.apple.com/jp/app/id6782275018?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3246,7 +3180,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 50,
+      "position": 49,
       "url": "https://apps.apple.com/jp/app/id6818607603?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3312,7 +3246,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 51,
+      "position": 50,
       "url": "https://apps.apple.com/jp/app/id6790467886?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3378,14 +3312,14 @@
     },
     {
       "@type": "ListItem",
-      "position": 52,
+      "position": 51,
       "url": "https://apps.apple.com/jp/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-wifiaidlite",
         "url": "https://apps.apple.com/jp/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
         "name": "WiFi Aid Lite",
-        "description": "「またネットが遅い」——原因はルーター?DNS?プロバイダ?それともサイト側?WiFi Aid Lite は複数の独立した経路で DNS・TCP・TLS・応答時間・安定性を同時にチェックし、証拠を突き合わせて最も可能性の高い原因を提示します。勘に頼って再起動を繰り返す必要はもうありません。",
+        "description": "「またネットが遅い」——原因は Wi-Fi？ルーター？DNS？それともサイト側？",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3415,7 +3349,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6793414462",
           "inLanguage": "ja",
-          "description": "「またネットが遅い」——原因はルーター?DNS?プロバイダ?それともサイト側?WiFi Aid Lite は複数の独立した経路で DNS・TCP・TLS・応答時間・安定性を同時にチェックし、証拠を突き合わせて最も可能性の高い原因を提示します。勘に頼って再起動を繰り返す必要はもうありません。",
+          "description": "「またネットが遅い」——原因は Wi-Fi？ルーター？DNS？それともサイト側？",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-wifiaidlite"
           },
@@ -3444,14 +3378,14 @@
     },
     {
       "@type": "ListItem",
-      "position": 53,
+      "position": 52,
       "url": "https://apps.apple.com/jp/app/id6797601720?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-wordmatelite",
         "url": "https://apps.apple.com/jp/app/id6797601720?pt=118326163&ct=geo_pick&mt=8",
         "name": "Wordmate Lite 1日5単語",
-        "description": "単語帳を作るところで力尽きて、勉強そのものが止まってしまう。Wordmate Lite は、その「作る手間」をなくすために生まれた語彙アプリです。",
+        "description": "1日5語を約1分で。英語、韓国語、中国語など44言語から選べて、旅行、外食、買い物といった身近な場面から始められます。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3481,7 +3415,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6797601720",
           "inLanguage": "ja",
-          "description": "単語帳を作るところで力尽きて、勉強そのものが止まってしまう。Wordmate Lite は、その「作る手間」をなくすために生まれた語彙アプリです。",
+          "description": "1日5語を約1分で。英語、韓国語、中国語など44言語から選べて、旅行、外食、買い物といった身近な場面から始められます。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-wordmatelite"
           },
@@ -3510,7 +3444,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 54,
+      "position": 53,
       "url": "https://apps.apple.com/jp/app/id6789917808?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3576,7 +3510,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 55,
+      "position": 54,
       "url": "https://apps.apple.com/jp/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3642,7 +3576,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 56,
+      "position": 55,
       "url": "https://apps.apple.com/jp/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3682,6 +3616,72 @@
           "description": "今出かけるのにちょうどいいか、何を着ればいいか、傘や日焼け止めが必要かが、ひと目でわかる天気アプリです。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-lumiweather"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "JPY",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "JP"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 56,
+      "url": "https://apps.apple.com/jp/app/id6824946559?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-duowallpaperstudio",
+        "url": "https://apps.apple.com/jp/app/id6824946559?pt=118326163&ct=geo_pick&mt=8",
+        "name": "折りたたみ壁紙 - 外画面と内画面",
+        "description": "iPhone Duoの外画面と内画面のためのペア壁紙。閉じれば外画面にクローズアップ、開けば内画面に全景。2枚は同じオリジナル作品から切り出しています。",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6824946559",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6824946559"
+          },
+          "name": "折りたたみ壁紙 - 外画面と内画面",
+          "operatingSystem": "iOS",
+          "applicationCategory": "PhotographyApplication",
+          "url": "https://apps.apple.com/jp/app/id6824946559?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/jp/app/id6824946559?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/jp/app/id6824946559?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/jp/app/id6824946559?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ja/duowallpaperstudio.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6824946559",
+          "inLanguage": "ja",
+          "description": "iPhone Duoの外画面と内画面のためのペア壁紙。閉じれば外画面にクローズアップ、開けば内画面に全景。2枚は同じオリジナル作品から切り出しています。",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-duowallpaperstudio"
           },
           "additionalProperty": [
             {

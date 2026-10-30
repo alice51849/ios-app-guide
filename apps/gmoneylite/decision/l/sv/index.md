@@ -2,7 +2,7 @@
 title: "G+Money Lite: Reseutgifter — Dagsbudget på klockan & widget | iOS App"
 lang: "sv"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gmoneylite/decision/l/sv/index.html"
-modified: "2026-10-29"
+modified: "2026-10-30"
 app_store_id: "6793436548"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # G+Money Lite: Reseutgifter — Dagsbudget på klockan & widget | iOS App
 
-G+Money Lite — Smart resevaluta- & utgiftsspårare Reskassan, enkelt Registrera varje köp i lokal valuta och se det direkt i din egen valuta – online eller offline. Växla • Live- eller manuella kurser: Vi hämtar de senaste kurserna automatiskt, eller ange dem själv. Fungerar alltid offline. • Hämtar de senaste kurserna när du öppnar appen (ungefär var 6:e timme). Fungerar offline med dina sparade kurser. • Mittkurs som referens. Kort och kontanter kan skilja sig. Utgifter • Dagsbudget: Valfritt. Se hur varje dag ligger mot budgeten. • Per kategori · Resor · Filter · Poster • Säkerhetskopiera & återställ: Inkluderar utgifter, kurser, kategorier och inställningar. • Widget · Apple Watch Allt stannar på din enhet. Inget konto, ingen spårning. Kurser via en offentlig växelkurstjänst. Utan köp: kurser, budget, översikt · 1 resa · 3 utgifter En betalning · Ingen prenumeration Lås upp obegränsade utgifter och resor för alltid. Optimerad för iPhone Duo.
+Optimerad för iPhone Duo. Appen är byggd med den senaste SDK:n, fyller hela den inre skärmen och anpassar layouten automatiskt, både hopfälld och utfälld. Vet hur mycket du har kvar att spendera i dag, var du än reser. Registrera varje köp i lokal valuta och se det direkt i din egen valuta, draget från dagens budget. Beloppet blir rött när du går över dagsbudgeten. Ingen anslutning? Fortsätt registrera med de senast sparade kurserna. Se dagens utgifter i widgeten på hemskärmen eller på din Apple Watch. Växla • De senaste kurserna hämtas automatiskt när du öppnar appen (ungefär var 6:e timme), eller så anger du egna. Offline används de sparade kurserna. • Mittkurs som referens. Kort och kontanter kan skilja sig. Utgifter • Dagsbudget (valfritt): se varje dags utgifter bredvid budgeten. • Se vad pengarna går till per kategori, håll varje resa för sig och filtrera dina poster. • Säkerhetskopiera & återställ: Inkluderar utgifter, kurser, kategorier och inställningar. • Widget · Apple Watch Allt stannar på din enhet. Inget konto, ingen spårning. Kurser via en offentlig växelkurstjänst. Utan köp: kurser, budget och översikt, 1 resa och 3 utgifter. Ett valfritt engångsköp i appen låser upp obegränsade utgifter och resor. Optimerad för iPhone Duo.
 
 - Ekonomi & resor
 - Gratis att börja · engångsupplåsning

@@ -13,7 +13,7 @@
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
     "dateModified": "2026-10-30",
-    "contentDigest": "d6e45b55a4ccd3f3f4f09cf0012214d7e12f3082e592059f04645f44292161fd",
+    "contentDigest": "315c6b0abaef0a077eb757c22a7308b224812b6571321417bb5e6cfffe6dffcb",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
     "recordCount": 56
@@ -322,24 +322,21 @@
       "content_text": "Hình nền thường đặt lên điện thoại gập hay bị cắt mất chủ thể ở màn hình ngoài hoặc bị kéo giãn ở màn hình trong; mỗi cặp trong Foldable Wallpaper Studio được cắt từ cùng một khung cảnh: cận cảnh bên ngoài, toàn cảnh bên trong. Tất cả được thiết kế cho hai màn hình của iPhone Duo.",
       "tags": [
         "điện thoại",
-        "đẹp",
         "khóa",
-        "ảnh",
-        "tạo",
-        "tối giản",
-        "vũ trụ",
-        "phong cảnh",
-        "đồng hồ",
-        "đen",
-        "hoa",
-        "lịch",
-        "chủ đề",
         "ngoài",
-        "đổi",
-        "áp"
+        "scenery",
+        "landscape",
+        "city",
+        "rainy",
+        "watercolor",
+        "painting",
+        "fantasy",
+        "autumn",
+        "snowy",
+        "text"
       ],
       "language": "vi",
-      "date_modified": "2026-10-23T20:31:17Z"
+      "date_modified": "2026-10-30T22:31:19Z"
     },
     {
       "id": "https://apps.apple.com/app/id6755782939",
@@ -726,10 +723,10 @@
         "bão",
         "xem",
         "coi",
-        "thời tiết gia đình"
+        "thời tiết trẻ em"
       ],
       "language": "vi",
-      "date_modified": "2026-10-29T04:54:40Z"
+      "date_modified": "2026-10-30T22:31:19Z"
     },
     {
       "id": "https://apps.apple.com/app/id6792850916",
@@ -751,10 +748,11 @@
         "văn bản",
         "pdf",
         "quét",
-        "che thông tin"
+        "che thông tin",
+        "ẩn thông tin cá nhân"
       ],
       "language": "vi",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-10-30T22:31:19Z"
     },
     {
       "id": "https://apps.apple.com/app/id6785004775",
@@ -1254,10 +1252,12 @@
         "bộ đếm",
         "đặt lại",
         "phiên",
-        "api"
+        "api",
+        "giới hạn claude",
+        "theo dõi mức dùng ai"
       ],
       "language": "vi",
-      "date_modified": "2026-10-11T13:38:16Z"
+      "date_modified": "2026-10-30T22:31:19Z"
     },
     {
       "id": "https://apps.apple.com/app/id6790467886",
@@ -1371,10 +1371,11 @@
         "tar",
         "gz",
         "iso",
-        "aes"
+        "aes",
+        "zip có mật khẩu"
       ],
       "language": "vi",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-10-30T22:31:19Z"
     }
   ]
 }

@@ -2,7 +2,7 @@
 title: "GBAGo: காட்சி சேமிப்புகள் — மீட்பு வரைபடம் · ஸ்னாப்ஷாட் | iOS App"
 lang: "ta-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gbago/decision/l/ta-IN/index.html"
-modified: "2026-10-29"
+modified: "2026-10-30"
 app_store_id: "6804564400"
 verified_live: true
 purchase_model: "paid_upfront"

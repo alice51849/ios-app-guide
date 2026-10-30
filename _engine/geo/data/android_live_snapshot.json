@@ -1,9 +1,9 @@
 {
  "schema": "lumi.android-live-snapshot/v1",
  "source": "AndroidPlay android_live_scan (Play page HTTP 200 + publish LIVE)",
- "source_generated": "2026-10-30T03:28:59+0800",
+ "source_generated": "2026-10-30T17:37:06+0800",
  "count": 54,
- "content_sha256": "50c5cca3da2fc6d8606033946f89e9a7e2aaf3ffece99f3b658a06a9385b7a1f",
+ "content_sha256": "37e6704a618bc1ec36f62079165c161e968fa6702bce892365b174e427297956",
  "apps": {
   "aibriefpack": {
    "ios_app_id": "6791658210",
@@ -1130,6 +1130,12 @@
    }
   }
  },
- "unmapped": [],
+ "unmapped": [
+  {
+   "folder": "56_MetroTimeHelper",
+   "package": "com.alice51849.MetroTimeHelper",
+   "reason": "no_unique_ios_match"
+  }
+ ],
  "baseline_first_seen": "2026-10-11T14:26:56+0800"
 }

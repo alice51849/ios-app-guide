@@ -27,12 +27,10 @@ END_MARKER = "<!-- END MANAGED APP STORE LINKS -->"
 README_PATH = "README.md"
 COMMIT_MESSAGE = """Add direct App Store links to support README
 
-Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
-Copilot-Session: 56b03b63-e910-42f2-bb48-3d22fbc5c8b1"""
+Session-Source: growth-auto"""
 REMOVE_MESSAGE = """Remove stale App Store links from support README
 
-Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
-Copilot-Session: 56b03b63-e910-42f2-bb48-3d22fbc5c8b1"""
+Session-Source: growth-auto"""
 REPOSITORY_TITLES = {
     "lumi-support": "Lumi Bopomofo",
     "lumi-letters-support": "Lumi Letters",

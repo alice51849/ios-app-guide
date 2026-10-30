@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-10-29T05:34:40Z",
+  "updated_at": "2026-10-30T05:34:31Z",
   "note": "Insights of our own IG / Threads posts by .github/scripts/post_performance.py. score = views + 3*likes + 5*replies + 8*(saves+shares+reposts). boost = best apps, read by 00_GrowthEngine shorts/scripts/schedule_posts.py.",
   "sources": {
     "instagram": "ok: 40 posts",
-    "threads": "ok: 15 posts"
+    "threads": "ok: 14 posts"
   },
   "boost": [
     "mochi_suneung",
     "wifiaidlite",
-    "unblurry",
+    "onepageppt",
     "battai",
-    "onepageppt"
+    "unblurry"
   ],
   "demote": [
     "moneytag",
@@ -27,7 +27,7 @@
       "mochi/zh-Hant": "b"
     },
     "locales": {
-      "en": "a",
+      "en": "c",
       "zh-Hant": "b"
     },
     "global": "b"
@@ -38,8 +38,8 @@
     "channels": {
       "instagram": {
         "posts": 14,
-        "median_views": 7.0,
-        "keep_slot": 15,
+        "median_views": 2.5,
+        "keep_slot": 1,
         "daily": 2
       },
       "threads": {
@@ -55,12 +55,21 @@
   },
   "best_hours": {
     "instagram": {
+      "en": {
+        "hour": 18,
+        "avg_views": 19.0,
+        "posts": 14,
+        "hours": {
+          "5": 0.0,
+          "18": 19.0
+        }
+      },
       "ja": {
         "hour": 1,
-        "avg_views": 16.7,
-        "posts": 7,
+        "avg_views": 14.8,
+        "posts": 8,
         "hours": {
-          "1": 16.7,
+          "1": 14.8,
           "5": 12.5
         }
       },
@@ -94,7 +103,7 @@
         "avg_views": 81.5,
         "posts": 11,
         "hours": {
-          "6": 30.0,
+          "6": 30.5,
           "13": 81.5,
           "16": 10.0,
           "23": 6.0
@@ -122,12 +131,12 @@
         "avg_score": 87.5
       },
       {
-        "key": "unblurry",
-        "posts": 1,
-        "views": 77,
-        "engagement": 1,
-        "score": 80,
-        "avg_score": 80.0
+        "key": "onepageppt",
+        "posts": 4,
+        "views": 184,
+        "engagement": 3,
+        "score": 199,
+        "avg_score": 49.8
       },
       {
         "key": "battai",
@@ -138,20 +147,20 @@
         "avg_score": 49.0
       },
       {
-        "key": "onepageppt",
-        "posts": 4,
-        "views": 180,
-        "engagement": 3,
-        "score": 195,
-        "avg_score": 48.8
+        "key": "unblurry",
+        "posts": 2,
+        "views": 77,
+        "engagement": 1,
+        "score": 80,
+        "avg_score": 40.0
       },
       {
         "key": "claudeusagemini",
-        "posts": 6,
-        "views": 215,
+        "posts": 7,
+        "views": 216,
         "engagement": 2,
-        "score": 225,
-        "avg_score": 37.5
+        "score": 226,
+        "avg_score": 32.3
       },
       {
         "key": "lumiweather",
@@ -162,12 +171,12 @@
         "avg_score": 30.0
       },
       {
-        "key": "mochi_b",
-        "posts": 1,
-        "views": 29,
-        "engagement": 0,
-        "score": 29,
-        "avg_score": 29.0
+        "key": "mochi",
+        "posts": 5,
+        "views": 115,
+        "engagement": 1,
+        "score": 120,
+        "avg_score": 24.0
       },
       {
         "key": "notesstudio100",
@@ -187,19 +196,19 @@
       },
       {
         "key": "lumibopomofo_b",
-        "posts": 3,
-        "views": 50,
+        "posts": 4,
+        "views": 53,
         "engagement": 2,
-        "score": 60,
-        "avg_score": 20.0
+        "score": 63,
+        "avg_score": 15.8
       },
       {
-        "key": "mochi",
-        "posts": 5,
-        "views": 85,
-        "engagement": 1,
-        "score": 90,
-        "avg_score": 18.0
+        "key": "mochi_b",
+        "posts": 2,
+        "views": 31,
+        "engagement": 0,
+        "score": 31,
+        "avg_score": 15.5
       },
       {
         "key": "lumibopomofo",
@@ -243,6 +252,14 @@
       },
       {
         "key": "caldaily",
+        "posts": 1,
+        "views": 7,
+        "engagement": 0,
+        "score": 7,
+        "avg_score": 7.0
+      },
+      {
+        "key": "tripplanet",
         "posts": 1,
         "views": 7,
         "engagement": 0,
@@ -354,14 +371,6 @@
         "avg_score": 1.5
       },
       {
-        "key": "tripplanet",
-        "posts": 1,
-        "views": 1,
-        "engagement": 0,
-        "score": 1,
-        "avg_score": 1.0
-      },
-      {
         "key": "wordmate",
         "posts": 2,
         "views": 1,
@@ -395,7 +404,7 @@
       },
       {
         "key": "moneytag",
-        "posts": 1,
+        "posts": 2,
         "views": 0,
         "engagement": 0,
         "score": 0,
@@ -446,26 +455,26 @@
       {
         "key": "zh-Hant",
         "posts": 38,
-        "views": 581,
+        "views": 582,
         "engagement": 11,
-        "score": 632,
-        "avg_score": 16.6
+        "score": 633,
+        "avg_score": 16.7
       },
       {
         "key": "ja",
-        "posts": 8,
-        "views": 119,
+        "posts": 9,
+        "views": 132,
         "engagement": 1,
-        "score": 124,
-        "avg_score": 15.5
+        "score": 137,
+        "avg_score": 15.2
       },
       {
         "key": "en",
-        "posts": 27,
-        "views": 272,
+        "posts": 29,
+        "views": 304,
         "engagement": 3,
-        "score": 285,
-        "avg_score": 10.6
+        "score": 317,
+        "avg_score": 10.9
       },
       {
         "key": "cs",
@@ -477,19 +486,19 @@
       },
       {
         "key": "de",
-        "posts": 2,
+        "posts": 3,
         "views": 3,
         "engagement": 1,
         "score": 6,
-        "avg_score": 3.0
+        "avg_score": 2.0
       },
       {
         "key": "pt-BR",
-        "posts": 1,
+        "posts": 2,
         "views": 3,
         "engagement": 0,
         "score": 3,
-        "avg_score": 3.0
+        "avg_score": 1.5
       }
     ],
     "hooks": [
@@ -608,10 +617,10 @@
         "locale": "zh-Hant",
         "hook": "Claude、Codex、Copilot、Gemini 一起看",
         "posts": 2,
-        "views": 58,
+        "views": 59,
         "engagement": 2,
-        "score": 68,
-        "avg_score": 34.0
+        "score": 69,
+        "avg_score": 34.5
       },
       {
         "app": "lumiweather",
@@ -642,6 +651,16 @@
         "engagement": 2,
         "score": 56,
         "avg_score": 28.0
+      },
+      {
+        "app": "mochi",
+        "locale": "en",
+        "hook": "Right on your Home Screen",
+        "posts": 2,
+        "views": 49,
+        "engagement": 1,
+        "score": 54,
+        "avg_score": 27.0
       },
       {
         "app": "battai",
@@ -694,6 +713,16 @@
         "avg_score": 15.0
       },
       {
+        "app": "onepageppt",
+        "locale": "ja",
+        "hook": "簡報製作・筆記截圖秒變投影片。",
+        "posts": 1,
+        "views": 10,
+        "engagement": 1,
+        "score": 15,
+        "avg_score": 15.0
+      },
+      {
         "app": "sononote",
         "locale": "en",
         "hook": "The best idea of the week happened while you were driving.",
@@ -712,16 +741,6 @@
         "engagement": 0,
         "score": 14,
         "avg_score": 14.0
-      },
-      {
-        "app": "mochi",
-        "locale": "en",
-        "hook": "Right on your Home Screen",
-        "posts": 2,
-        "views": 19,
-        "engagement": 1,
-        "score": 24,
-        "avg_score": 12.0
       },
       {
         "app": "zipbox",
@@ -760,16 +779,6 @@
         "posts": 1,
         "views": 11,
         "engagement": 0,
-        "score": 11,
-        "avg_score": 11.0
-      },
-      {
-        "app": "onepageppt",
-        "locale": "ja",
-        "hook": "簡報製作・筆記截圖秒變投影片。",
-        "posts": 1,
-        "views": 6,
-        "engagement": 1,
         "score": 11,
         "avg_score": 11.0
       },
@@ -857,6 +866,16 @@
         "app": "lumibopomofo",
         "locale": "en",
         "hook": "37 friends to collect",
+        "posts": 1,
+        "views": 7,
+        "engagement": 0,
+        "score": 7,
+        "avg_score": 7.0
+      },
+      {
+        "app": "tripplanet",
+        "locale": "ja",
+        "hook": "移動日のミッションも ワンタップで",
         "posts": 1,
         "views": 7,
         "engagement": 0,
@@ -994,6 +1013,16 @@
         "avg_score": 3.0
       },
       {
+        "app": "lumibopomofo_b",
+        "locale": "ja",
+        "hook": "正しい記号で フレンドにごはん",
+        "posts": 1,
+        "views": 3,
+        "engagement": 0,
+        "score": 3,
+        "avg_score": 3.0
+      },
+      {
         "app": "lumibopomofo",
         "locale": "zh-Hant",
         "hook": "",
@@ -1024,6 +1053,16 @@
         "avg_score": 2.0
       },
       {
+        "app": "mochi_b",
+        "locale": "en",
+        "hook": "So much to do, so easy to forget?",
+        "posts": 1,
+        "views": 2,
+        "engagement": 0,
+        "score": 2,
+        "avg_score": 2.0
+      },
+      {
         "app": "lumibopomofo",
         "locale": "zh-Hant",
         "hook": "注音 原來這麼好玩！",
@@ -1037,16 +1076,6 @@
         "app": "wordmate",
         "locale": "en",
         "hook": "Pick from 44 languages",
-        "posts": 1,
-        "views": 1,
-        "engagement": 0,
-        "score": 1,
-        "avg_score": 1.0
-      },
-      {
-        "app": "tripplanet",
-        "locale": "ja",
-        "hook": "移動日のミッションも ワンタップで",
         "posts": 1,
         "views": 1,
         "engagement": 0,
@@ -1252,32 +1281,62 @@
         "engagement": 0,
         "score": 0,
         "avg_score": 0.0
+      },
+      {
+        "app": "claudeusagemini",
+        "locale": "de",
+        "hook": "Schon wieder am KI-Limit?",
+        "posts": 1,
+        "views": 0,
+        "engagement": 0,
+        "score": 0,
+        "avg_score": 0.0
+      },
+      {
+        "app": "unblurry",
+        "locale": "pt-BR",
+        "hook": "Foto borrada? Deixe cristalina",
+        "posts": 1,
+        "views": 0,
+        "engagement": 0,
+        "score": 0,
+        "avg_score": 0.0
+      },
+      {
+        "app": "moneytag",
+        "locale": "en",
+        "hook": "",
+        "posts": 1,
+        "views": 0,
+        "engagement": 0,
+        "score": 0,
+        "avg_score": 0.0
       }
     ],
     "variants": [
       {
         "key": "b",
-        "posts": 19,
-        "views": 520,
+        "posts": 20,
+        "views": 530,
         "engagement": 5,
-        "score": 541,
-        "avg_score": 28.5
+        "score": 551,
+        "avg_score": 27.6
       },
       {
         "key": "c",
         "posts": 14,
-        "views": 248,
+        "views": 278,
         "engagement": 4,
-        "score": 268,
-        "avg_score": 19.1
+        "score": 298,
+        "avg_score": 21.3
       },
       {
         "key": "a",
-        "posts": 11,
-        "views": 191,
+        "posts": 14,
+        "views": 193,
         "engagement": 1,
-        "score": 194,
-        "avg_score": 17.6
+        "score": 196,
+        "avg_score": 14.0
       }
     ]
   },
@@ -1796,12 +1855,12 @@
       "kind": "clip",
       "variant": "b",
       "metrics": {
-        "views": 51,
+        "views": 52,
         "likes": 0,
         "replies": 1,
         "reposts": 0
       },
-      "score": 56
+      "score": 57
     },
     {
       "channel": "instagram",
@@ -2857,12 +2916,12 @@
       "kind": "image",
       "variant": null,
       "metrics": {
-        "views": 6,
+        "views": 10,
         "likes": 0,
         "replies": 1,
         "reposts": 0
       },
-      "score": 11
+      "score": 15
     },
     {
       "channel": "instagram",
@@ -2876,14 +2935,14 @@
       "kind": "clip",
       "variant": "c",
       "metrics": {
-        "views": 14,
-        "reach": 12,
+        "views": 44,
+        "reach": 38,
         "likes": 0,
         "saves": 0,
         "shares": 0,
         "replies": 0
       },
-      "score": 14
+      "score": 44
     },
     {
       "channel": "instagram",
@@ -2918,14 +2977,14 @@
       "kind": "clip",
       "variant": "b",
       "metrics": {
-        "views": 1,
-        "reach": 1,
+        "views": 7,
+        "reach": 7,
         "likes": 0,
         "saves": 0,
         "shares": 0,
         "replies": 0
       },
-      "score": 1
+      "score": 7
     },
     {
       "channel": "instagram",
@@ -2936,6 +2995,111 @@
       "locale": "en",
       "hook": "",
       "clip": "utility/bedtime/lumimission/bedtime_bunny/en",
+      "kind": "utility",
+      "variant": null,
+      "metrics": {
+        "views": 0,
+        "reach": 0,
+        "likes": 0,
+        "saves": 0,
+        "shares": 0,
+        "replies": 0
+      },
+      "score": 0
+    },
+    {
+      "channel": "instagram",
+      "id": "18115092374033289",
+      "link": "https://www.instagram.com/p/DfEe9GnldWL/",
+      "posted_at": "2026-10-29T07:35:24",
+      "app": "claudeusagemini",
+      "locale": "de",
+      "hook": "Schon wieder am KI-Limit?",
+      "clip": "claudeusagemini/de",
+      "kind": "clip",
+      "variant": "a",
+      "metrics": {
+        "views": 0,
+        "reach": 0,
+        "likes": 0,
+        "saves": 0,
+        "shares": 0,
+        "replies": 0
+      },
+      "score": 0
+    },
+    {
+      "channel": "instagram",
+      "id": "17911352139556103",
+      "link": "https://www.instagram.com/reel/DfFp8svjavU/",
+      "posted_at": "2026-10-29T18:31:03",
+      "app": "mochi_b",
+      "locale": "en",
+      "hook": "So much to do, so easy to forget?",
+      "clip": "mochi_b/en",
+      "kind": "clip",
+      "variant": "a",
+      "metrics": {
+        "views": 2,
+        "reach": 2,
+        "likes": 0,
+        "saves": 0,
+        "shares": 0,
+        "replies": 0
+      },
+      "score": 2
+    },
+    {
+      "channel": "instagram",
+      "id": "17899481529393185",
+      "link": "https://www.instagram.com/p/DfFw--hGaDs/",
+      "posted_at": "2026-10-29T19:32:18",
+      "app": "unblurry",
+      "locale": "pt-BR",
+      "hook": "Foto borrada? Deixe cristalina",
+      "clip": "unblurry/pt-BR",
+      "kind": "clip",
+      "variant": "a",
+      "metrics": {
+        "views": 0,
+        "reach": 0,
+        "likes": 0,
+        "saves": 0,
+        "shares": 0,
+        "replies": 0
+      },
+      "score": 0
+    },
+    {
+      "channel": "instagram",
+      "id": "18115848110269854",
+      "link": "https://www.instagram.com/reel/DfGaadvk8WS/",
+      "posted_at": "2026-10-30T01:34:33",
+      "app": "lumibopomofo_b",
+      "locale": "ja",
+      "hook": "正しい記号で フレンドにごはん",
+      "clip": "lumibopomofo_b/ja",
+      "kind": "clip",
+      "variant": "b",
+      "metrics": {
+        "views": 3,
+        "reach": 1,
+        "likes": 0,
+        "saves": 0,
+        "shares": 0,
+        "replies": 0
+      },
+      "score": 3
+    },
+    {
+      "channel": "instagram",
+      "id": "18348184849267616",
+      "link": "https://www.instagram.com/p/DfG0TfcDr_K/",
+      "posted_at": "2026-10-30T05:20:38",
+      "app": "moneytag",
+      "locale": "en",
+      "hook": "",
+      "clip": "utility/ledger/moneytag/design_gig/en",
       "kind": "utility",
       "variant": null,
       "metrics": {

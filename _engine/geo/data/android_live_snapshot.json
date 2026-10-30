@@ -1,9 +1,9 @@
 {
  "schema": "lumi.android-live-snapshot/v1",
  "source": "AndroidPlay android_live_scan (Play page HTTP 200 + publish LIVE)",
- "source_generated": "2026-10-30T17:37:06+0800",
- "count": 54,
- "content_sha256": "37e6704a618bc1ec36f62079165c161e968fa6702bce892365b174e427297956",
+ "source_generated": "2026-10-30T19:38:07+0800",
+ "count": 55,
+ "content_sha256": "930b48d164101005f0e605fb377e40da1031d718184f849a9773c065ec917f9b",
  "apps": {
   "aibriefpack": {
    "ios_app_id": "6791658210",
@@ -84,6 +84,27 @@
     },
     "zh-TW": {
      "title": "CalDaily 計算機與主題"
+    }
+   }
+  },
+  "claudeusagemini": {
+   "ios_app_id": "6818607603",
+   "ios_name": "UsageNow",
+   "android_folder": "55_UsageNow",
+   "package": "com.alice51849.ClaudeUsageMini",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini",
+   "paid": false,
+   "first_seen": "2026-10-30T19:38:07+0800",
+   "launch_wave": "new",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "UsageNow: AI Usage Tracker",
+     "short_description": "Claude, Codex, Copilot and Gemini usage limits and reset times"
+    },
+    "zh-TW": {
+     "title": "UsageNow：AI 用量與額度追蹤",
+     "short_description": "Claude、Codex、Copilot、Gemini 額度與重置倒數"
     }
    }
   },

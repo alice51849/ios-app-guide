@@ -1,7 +1,7 @@
 {
  "schema": "lumi.social-feed/v1",
  "date": "2026-10-30",
- "generated_at": "2026-10-30T07:45:54Z",
+ "generated_at": "2026-10-30T14:28:33Z",
  "items": {
   "bluesky": [
    {
@@ -141,48 +141,69 @@
    },
    {
     "kind": "clip",
-    "key": "easyam/en",
-    "locale": "en",
-    "app": "easyam",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/8n1x9x.mp4",
-    "hook": "67 countries and regions",
-    "name": "EasyAM: Holiday Alarm Clock",
-    "title": "67 countries and regions | Rings for work, skips days off | EasyAM holiday alarm",
+    "key": "maskmyfile/el",
+    "locale": "el",
+    "app": "maskmyfile",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/qz3lmz.mp4",
+    "hook": "Ξεχάσατε κάτι; Προσθέστε το",
+    "name": "Mask My File: Σβήστε δεδομένα",
+    "title": "Ξεχάσατε κάτι; Προσθέστε το | Απόκρυψη πριν την κοινοποίηση | Mask My File",
     "tags": [
-     "#HolidayAlarmClock",
-     "#Workday",
-     "#Shift",
-     "#Public",
-     "#Calendar",
-     "#EasyAMHolidayAlarm"
+     "#Σβήστεδεδομένα",
+     "#ανωνυμοποίηση",
+     "#λογοκρισία",
+     "#προσωπικάδεδομένα",
+     "#ταυτότητα",
+     "#MaskMyFile"
     ],
-    "caption": "67 countries and regions\nHolidays skipped automatically\nRings for work, skips days off\nEasyAM: Holiday Alarm Clock\nSearch “holiday alarm clock” on the App Store\nAlso on Google Play\n\n#HolidayAlarmClock #Workday #EasyAMholidayalarm",
-    "button": "Get it on the App Store",
-    "variant": "c",
-    "alt": "EasyAM: Holiday Alarm Clock — 67 countries and regions — Holidays skipped automatically — Rings for work, skips days off",
-    "store": "https://apps.apple.com/us/app/id6821790092?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam",
+    "caption": "Ξεχάσατε κάτι; Προσθέστε το\nΝέο αντίγραφο, το πρωτότυπο μένει ίδιο\nΑπόκρυψη πριν την κοινοποίηση\nMask My File: Σβήστε δεδομένα\nΑναζητήστε «Mask My File» στο App Store\nΚαι στο Google Play\n\n#Σβήστεδεδομένα #ανωνυμοποίηση #MaskMyFile",
+    "button": "Λήψη από το App Store",
+    "variant": "b",
+    "alt": "Mask My File: Σβήστε δεδομένα — Ξεχάσατε κάτι; Προσθέστε το — Νέο αντίγραφο, το πρωτότυπο μένει ίδιο — Απόκρυψη πριν την κοινοποίηση",
+    "store": "https://apps.apple.com/gr/app/id6792850916?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MaskMyFile&referrer=utm_source%3Dsocial%26utm_campaign%3Dmaskmyfile",
     "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6821790092?action=write-review"
+     "label": "Χρησιμοποιείτε ήδη αυτή την εφαρμογή; Βαθμολογήστε τη ή γράψτε μια κριτική στο App Store",
+     "url": "https://apps.apple.com/app/id6792850916?action=write-review"
     },
     "keywords": [
-     "workday",
-     "shift",
-     "public",
-     "calendar",
-     "weekday",
-     "vacation"
+     "ανωνυμοποίηση",
+     "λογοκρισία",
+     "προσωπικά δεδομένα",
+     "ταυτότητα",
+     "διαβατήριο",
+     "ιατρικό αρχείο"
     ],
-    "keyline": "Rings for work, skips days off",
+    "keyline": "Απόκρυψη πριν την κοινοποίηση",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "f45a7a4e972af86c",
+     "board": "f88a32e9a9deb640",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "card/gsat2027/2026-10-30",
+    "locale": "zh-Hant",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/countdown-cards/card-20261030.jpg",
+    "caption": "116 學測 倒數 84 天\n一起撐過去\n\nApp Store／Google Play 搜尋「CountDaysNow」\n\n#倒數日 #倒數計時 #紀念日",
+    "title": "116 學測 倒數 84 天",
+    "alt": "CountDaysNow — 116 學測 倒數 84 天 — 一起撐過去 — App Store／Google Play 搜尋「CountDaysNow」 — 倒數日 · 倒數計時 · 紀念日",
+    "name": "CountDaysNow",
+    "hook": "116 學測 倒數 84 天",
+    "tags": [
+     "#倒數日",
+     "#倒數計時",
+     "#紀念日",
+     "#生日",
+     "#還有幾天"
+    ],
+    "button": "在 App Store 下載",
+    "store": "https://apps.apple.com/tw/app/id6807079789?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow"
    },
    {
     "kind": "card",
@@ -1054,7 +1075,7 @@
     "button": "Get it on the App Store",
     "store": "https://apps.apple.com/us/app/id6818607603?pt=118326163&ct=social&mt=8",
     "format": "pain",
-    "play": null
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini"
    },
    {
     "kind": "card",
@@ -1079,7 +1100,7 @@
     "button": "App Storeで入手",
     "store": "https://apps.apple.com/jp/app/id6818607603?pt=118326163&ct=social&mt=8",
     "format": "pain",
-    "play": null
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini"
    },
    {
     "kind": "card",
@@ -1622,48 +1643,69 @@
    },
    {
     "kind": "clip",
-    "key": "easyam/en",
-    "locale": "en",
-    "app": "easyam",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/8n1x9x.mp4",
-    "hook": "67 countries and regions",
-    "name": "EasyAM: Holiday Alarm Clock",
-    "title": "67 countries and regions | Rings for work, skips days off | EasyAM holiday alarm",
+    "key": "maskmyfile/el",
+    "locale": "el",
+    "app": "maskmyfile",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/qz3lmz.mp4",
+    "hook": "Ξεχάσατε κάτι; Προσθέστε το",
+    "name": "Mask My File: Σβήστε δεδομένα",
+    "title": "Ξεχάσατε κάτι; Προσθέστε το | Απόκρυψη πριν την κοινοποίηση | Mask My File",
     "tags": [
-     "#HolidayAlarmClock",
-     "#Workday",
-     "#Shift",
-     "#Public",
-     "#Calendar",
-     "#EasyAMHolidayAlarm"
+     "#Σβήστεδεδομένα",
+     "#ανωνυμοποίηση",
+     "#λογοκρισία",
+     "#προσωπικάδεδομένα",
+     "#ταυτότητα",
+     "#MaskMyFile"
     ],
-    "caption": "67 countries and regions\nHolidays skipped automatically\nRings for work, skips days off\nEasyAM: Holiday Alarm Clock\nSearch “holiday alarm clock” on the App Store\nAlso on Google Play\n\n#HolidayAlarmClock #Workday #Shift #Public #EasyAMholidayalarm",
-    "button": "Get it on the App Store",
-    "variant": "c",
-    "alt": "EasyAM: Holiday Alarm Clock — 67 countries and regions — Holidays skipped automatically — Rings for work, skips days off",
-    "store": "https://apps.apple.com/us/app/id6821790092?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam",
+    "caption": "Ξεχάσατε κάτι; Προσθέστε το\nΝέο αντίγραφο, το πρωτότυπο μένει ίδιο\nΑπόκρυψη πριν την κοινοποίηση\nMask My File: Σβήστε δεδομένα\nΑναζητήστε «Mask My File» στο App Store\nΚαι στο Google Play\n\n#Σβήστεδεδομένα #ανωνυμοποίηση #λογοκρισία #προσωπικάδεδομένα #MaskMyFile",
+    "button": "Λήψη από το App Store",
+    "variant": "b",
+    "alt": "Mask My File: Σβήστε δεδομένα — Ξεχάσατε κάτι; Προσθέστε το — Νέο αντίγραφο, το πρωτότυπο μένει ίδιο — Απόκρυψη πριν την κοινοποίηση",
+    "store": "https://apps.apple.com/gr/app/id6792850916?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MaskMyFile&referrer=utm_source%3Dsocial%26utm_campaign%3Dmaskmyfile",
     "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6821790092?action=write-review"
+     "label": "Χρησιμοποιείτε ήδη αυτή την εφαρμογή; Βαθμολογήστε τη ή γράψτε μια κριτική στο App Store",
+     "url": "https://apps.apple.com/app/id6792850916?action=write-review"
     },
     "keywords": [
-     "workday",
-     "shift",
-     "public",
-     "calendar",
-     "weekday",
-     "vacation"
+     "ανωνυμοποίηση",
+     "λογοκρισία",
+     "προσωπικά δεδομένα",
+     "ταυτότητα",
+     "διαβατήριο",
+     "ιατρικό αρχείο"
     ],
-    "keyline": "Rings for work, skips days off",
+    "keyline": "Απόκρυψη πριν την κοινοποίηση",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "f45a7a4e972af86c",
+     "board": "f88a32e9a9deb640",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "card/gsat2027/2026-10-30",
+    "locale": "zh-Hant",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/countdown-cards/card-20261030.jpg",
+    "caption": "116 學測 倒數 84 天\n一起撐過去\n\nApp Store／Google Play 搜尋「CountDaysNow」\n\n#倒數日 #倒數計時 #紀念日 #生日 #還有幾天",
+    "title": "116 學測 倒數 84 天",
+    "alt": "CountDaysNow — 116 學測 倒數 84 天 — 一起撐過去 — App Store／Google Play 搜尋「CountDaysNow」 — 倒數日 · 倒數計時 · 紀念日",
+    "name": "CountDaysNow",
+    "hook": "116 學測 倒數 84 天",
+    "tags": [
+     "#倒數日",
+     "#倒數計時",
+     "#紀念日",
+     "#生日",
+     "#還有幾天"
+    ],
+    "button": "在 App Store 下載",
+    "store": "https://apps.apple.com/tw/app/id6807079789?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow"
    },
    {
     "kind": "card",
@@ -1871,60 +1913,61 @@
    },
    {
     "kind": "clip",
-    "key": "easyam/en",
-    "locale": "en",
-    "app": "easyam",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/8n1x9x.mp4",
-    "hook": "67 countries and regions",
-    "name": "EasyAM: Holiday Alarm Clock",
-    "title": "67 countries and regions | Rings for work, skips days off | EasyAM holiday alarm",
+    "key": "maskmyfile/el",
+    "locale": "el",
+    "app": "maskmyfile",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/qz3lmz.mp4",
+    "hook": "Ξεχάσατε κάτι; Προσθέστε το",
+    "name": "Mask My File: Σβήστε δεδομένα",
+    "title": "Ξεχάσατε κάτι; Προσθέστε το | Απόκρυψη πριν την κοινοποίηση | Mask My File",
     "tags": [
-     "#HolidayAlarmClock",
-     "#Workday",
-     "#Shift",
-     "#Public",
-     "#Calendar",
-     "#EasyAMHolidayAlarm"
+     "#Σβήστεδεδομένα",
+     "#ανωνυμοποίηση",
+     "#λογοκρισία",
+     "#προσωπικάδεδομένα",
+     "#ταυτότητα",
+     "#MaskMyFile"
     ],
-    "caption": "67 countries and regions\nHolidays skipped automatically\nRings for work, skips days off\nEasyAM: Holiday Alarm Clock\nSearch “holiday alarm clock” on the App Store\nAlso on Google Play\n\n#HolidayAlarmClock #Workday #Shift #Public #EasyAMholidayalarm",
-    "button": "Get it on the App Store",
-    "variant": "c",
-    "alt": "EasyAM: Holiday Alarm Clock — 67 countries and regions — Holidays skipped automatically — Rings for work, skips days off",
-    "store": "https://apps.apple.com/us/app/id6821790092?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam",
+    "caption": "Ξεχάσατε κάτι; Προσθέστε το\nΝέο αντίγραφο, το πρωτότυπο μένει ίδιο\nΑπόκρυψη πριν την κοινοποίηση\nMask My File: Σβήστε δεδομένα\nΑναζητήστε «Mask My File» στο App Store\nΚαι στο Google Play\n\n#Σβήστεδεδομένα #ανωνυμοποίηση #λογοκρισία #προσωπικάδεδομένα #MaskMyFile",
+    "button": "Λήψη από το App Store",
+    "variant": "b",
+    "alt": "Mask My File: Σβήστε δεδομένα — Ξεχάσατε κάτι; Προσθέστε το — Νέο αντίγραφο, το πρωτότυπο μένει ίδιο — Απόκρυψη πριν την κοινοποίηση",
+    "store": "https://apps.apple.com/gr/app/id6792850916?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MaskMyFile&referrer=utm_source%3Dsocial%26utm_campaign%3Dmaskmyfile",
     "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6821790092?action=write-review"
+     "label": "Χρησιμοποιείτε ήδη αυτή την εφαρμογή; Βαθμολογήστε τη ή γράψτε μια κριτική στο App Store",
+     "url": "https://apps.apple.com/app/id6792850916?action=write-review"
     },
     "keywords": [
-     "workday",
-     "shift",
-     "public",
-     "calendar",
-     "weekday",
-     "vacation"
+     "ανωνυμοποίηση",
+     "λογοκρισία",
+     "προσωπικά δεδομένα",
+     "ταυτότητα",
+     "διαβατήριο",
+     "ιατρικό αρχείο"
     ],
-    "keyline": "Rings for work, skips days off",
+    "keyline": "Απόκρυψη πριν την κοινοποίηση",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "f45a7a4e972af86c",
+     "board": "f88a32e9a9deb640",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "youtube": {
-     "title": "67 countries and regions | EasyAM holiday alarm #Shorts",
-     "description": "67 countries and regions\nHolidays skipped automatically\nRings for work, skips days off\n\nEasyAM: Holiday Alarm Clock\nApp Store: https://apps.apple.com/us/app/id6821790092?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam\nAlready using this app? Rate or review it on the App Store\nhttps://apps.apple.com/app/id6821790092?action=write-review\n\nworkday · shift · public · calendar · weekday · vacation\n\n#Shorts #HolidayAlarmClock #EasyAMholidayalarm",
+     "title": "Ξεχάσατε κάτι; Προσθέστε το | Mask My File #Shorts",
+     "description": "Ξεχάσατε κάτι; Προσθέστε το\nΝέο αντίγραφο, το πρωτότυπο μένει ίδιο\nΑπόκρυψη πριν την κοινοποίηση\n\nMask My File: Σβήστε δεδομένα\nApp Store: https://apps.apple.com/gr/app/id6792850916?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MaskMyFile&referrer=utm_source%3Dsocial%26utm_campaign%3Dmaskmyfile\nΧρησιμοποιείτε ήδη αυτή την εφαρμογή; Βαθμολογήστε τη ή γράψτε μια κριτική στο App Store\nhttps://apps.apple.com/app/id6792850916?action=write-review\n\nανωνυμοποίηση · λογοκρισία · προσωπικά δεδομένα · ταυτότητα · διαβατήριο · ιατρικό αρχείο\n\n#Shorts #Σβήστεδεδομένα #MaskMyFile",
      "tags": [
-      "workday",
-      "shift",
-      "public",
-      "calendar",
-      "weekday",
-      "vacation",
-      "HolidayAlarmClock",
-      "EasyAMHolidayAlarm",
-      "EasyAM holiday alarm"
+      "ανωνυμοποίηση",
+      "λογοκρισία",
+      "προσωπικά δεδομένα",
+      "ταυτότητα",
+      "διαβατήριο",
+      "ιατρικό αρχείο",
+      "Σβήστεδεδομένα",
+      "προσωπικάδεδομένα",
+      "MaskMyFile",
+      "Mask My File"
      ]
     },
     "slot": 15
@@ -2080,52 +2123,77 @@
    },
    {
     "kind": "clip",
-    "key": "easyam/en",
-    "locale": "en",
-    "app": "easyam",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/8n1x9x.mp4",
-    "hook": "67 countries and regions",
-    "name": "EasyAM: Holiday Alarm Clock",
-    "title": "67 countries and regions | Rings for work, skips days off | EasyAM holiday alarm",
+    "key": "maskmyfile/el",
+    "locale": "el",
+    "app": "maskmyfile",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/qz3lmz.mp4",
+    "hook": "Ξεχάσατε κάτι; Προσθέστε το",
+    "name": "Mask My File: Σβήστε δεδομένα",
+    "title": "Ξεχάσατε κάτι; Προσθέστε το | Απόκρυψη πριν την κοινοποίηση | Mask My File",
     "tags": [
-     "#HolidayAlarmClock",
-     "#Workday",
-     "#Shift",
-     "#Public",
-     "#Calendar",
-     "#EasyAMHolidayAlarm"
+     "#Σβήστεδεδομένα",
+     "#ανωνυμοποίηση",
+     "#λογοκρισία",
+     "#προσωπικάδεδομένα",
+     "#ταυτότητα",
+     "#MaskMyFile"
     ],
-    "caption": "67 countries and regions\nHolidays skipped automatically\nRings for work, skips days off\nEasyAM: Holiday Alarm Clock\nSearch “holiday alarm clock” on the App Store\nAlso on Google Play\n\n#HolidayAlarmClock #Workday #Shift #Public #EasyAMholidayalarm",
-    "button": "Get it on the App Store",
-    "variant": "c",
-    "alt": "EasyAM: Holiday Alarm Clock — 67 countries and regions — Holidays skipped automatically — Rings for work, skips days off",
-    "store": "https://apps.apple.com/us/app/id6821790092?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam",
+    "caption": "Ξεχάσατε κάτι; Προσθέστε το\nΝέο αντίγραφο, το πρωτότυπο μένει ίδιο\nΑπόκρυψη πριν την κοινοποίηση\nMask My File: Σβήστε δεδομένα\nΑναζητήστε «Mask My File» στο App Store\nΚαι στο Google Play\n\n#Σβήστεδεδομένα #ανωνυμοποίηση #λογοκρισία #προσωπικάδεδομένα #MaskMyFile",
+    "button": "Λήψη από το App Store",
+    "variant": "b",
+    "alt": "Mask My File: Σβήστε δεδομένα — Ξεχάσατε κάτι; Προσθέστε το — Νέο αντίγραφο, το πρωτότυπο μένει ίδιο — Απόκρυψη πριν την κοινοποίηση",
+    "store": "https://apps.apple.com/gr/app/id6792850916?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MaskMyFile&referrer=utm_source%3Dsocial%26utm_campaign%3Dmaskmyfile",
     "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6821790092?action=write-review"
+     "label": "Χρησιμοποιείτε ήδη αυτή την εφαρμογή; Βαθμολογήστε τη ή γράψτε μια κριτική στο App Store",
+     "url": "https://apps.apple.com/app/id6792850916?action=write-review"
     },
     "keywords": [
-     "workday",
-     "shift",
-     "public",
-     "calendar",
-     "weekday",
-     "vacation"
+     "ανωνυμοποίηση",
+     "λογοκρισία",
+     "προσωπικά δεδομένα",
+     "ταυτότητα",
+     "διαβατήριο",
+     "ιατρικό αρχείο"
     ],
-    "keyline": "Rings for work, skips days off",
+    "keyline": "Απόκρυψη πριν την κοινοποίηση",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "f45a7a4e972af86c",
+     "board": "f88a32e9a9deb640",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "67 countries and regions\nHolidays skipped automatically\nRings for work, skips days off\nEasyAM: Holiday Alarm Clock\nSearch “holiday alarm clock” on the App Store\nAlso on Google Play\n\n#HolidayAlarmClock #Workday #Shift #Public #EasyAMholidayalarm\n\nGet it on the App Store: https://apps.apple.com/us/app/id6821790092?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam",
-     "link": "https://apps.apple.com/us/app/id6821790092?pt=118326163&ct=social&mt=8"
+     "description": "Ξεχάσατε κάτι; Προσθέστε το\nΝέο αντίγραφο, το πρωτότυπο μένει ίδιο\nΑπόκρυψη πριν την κοινοποίηση\nMask My File: Σβήστε δεδομένα\nΑναζητήστε «Mask My File» στο App Store\nΚαι στο Google Play\n\n#Σβήστεδεδομένα #ανωνυμοποίηση #λογοκρισία #προσωπικάδεδομένα #MaskMyFile\n\nΛήψη από το App Store: https://apps.apple.com/gr/app/id6792850916?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MaskMyFile&referrer=utm_source%3Dsocial%26utm_campaign%3Dmaskmyfile",
+     "link": "https://apps.apple.com/gr/app/id6792850916?pt=118326163&ct=social&mt=8"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "card/gsat2027/2026-10-30",
+    "locale": "zh-Hant",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/countdown-cards/card-20261030.jpg",
+    "caption": "116 學測 倒數 84 天\n一起撐過去\n\nApp Store／Google Play 搜尋「CountDaysNow」\n\n#倒數日 #倒數計時 #紀念日 #生日 #還有幾天",
+    "title": "116 學測 倒數 84 天",
+    "alt": "CountDaysNow — 116 學測 倒數 84 天 — 一起撐過去 — App Store／Google Play 搜尋「CountDaysNow」 — 倒數日 · 倒數計時 · 紀念日",
+    "name": "CountDaysNow",
+    "hook": "116 學測 倒數 84 天",
+    "tags": [
+     "#倒數日",
+     "#倒數計時",
+     "#紀念日",
+     "#生日",
+     "#還有幾天"
+    ],
+    "button": "在 App Store 下載",
+    "store": "https://apps.apple.com/tw/app/id6807079789?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
+    "pinterest": {
+     "description": "116 學測 倒數 84 天\n一起撐過去\n\nApp Store／Google Play 搜尋「CountDaysNow」\n\n#倒數日 #倒數計時 #紀念日 #生日 #還有幾天\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6807079789?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
+     "link": "https://apps.apple.com/tw/app/id6807079789?pt=118326163&ct=social&mt=8"
+    }
    },
    {
     "kind": "card",
@@ -3843,9 +3911,9 @@
     "button": "Im App Store laden",
     "store": "https://apps.apple.com/de/app/id6818607603?pt=118326163&ct=social&mt=8",
     "format": "pain",
-    "play": null,
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
     "pinterest": {
-     "description": "Schon wieder am KI-Limit?\n\nClaude, Codex, Copilot & Gemini\n✓ Rest & Reset-Zeit auf einen Blick\n✓ In 50 Sprachen übersetzt\n\nIm App Store nach „UsageNow“ suchen\n\n#KINutzungTracker #Entwickler #Verbrauch #Kontingent #Quota\n\nIm App Store laden: https://apps.apple.com/de/app/id6818607603?pt=118326163&ct=social&mt=8",
+     "description": "Schon wieder am KI-Limit?\n\nClaude, Codex, Copilot & Gemini\n✓ Rest & Reset-Zeit auf einen Blick\n✓ In 50 Sprachen übersetzt\n\nIm App Store nach „UsageNow“ suchen\n\n#KINutzungTracker #Entwickler #Verbrauch #Kontingent #Quota\n\nIm App Store laden: https://apps.apple.com/de/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
      "link": "https://apps.apple.com/de/app/id6818607603?pt=118326163&ct=social&mt=8"
     }
    },
@@ -4335,9 +4403,9 @@
     "button": "在 App Store 下載",
     "store": "https://apps.apple.com/tw/app/id6818607603?pt=118326163&ct=social&mt=8",
     "format": "pain",
-    "play": null,
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
     "pinterest": {
-     "description": "寫到一半 AI 額度又爆了？\n\nClaude、Codex、Copilot、Gemini 一起看\n✓ 剩多少、何時重置 一眼看清\n✓ 完整翻譯 50 種語言 繁體中文隨時切換\n\nApp Store 搜尋「UsageNow」\n\n#UsageNow\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6818607603?pt=118326163&ct=social&mt=8",
+     "description": "寫到一半 AI 額度又爆了？\n\nClaude、Codex、Copilot、Gemini 一起看\n✓ 剩多少、何時重置 一眼看清\n✓ 完整翻譯 50 種語言 繁體中文隨時切換\n\nApp Store 搜尋「UsageNow」\n\n#UsageNow\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
      "link": "https://apps.apple.com/tw/app/id6818607603?pt=118326163&ct=social&mt=8"
     }
    },
@@ -4369,9 +4437,9 @@
     "button": "Get it on the App Store",
     "store": "https://apps.apple.com/us/app/id6818607603?pt=118326163&ct=social&mt=8",
     "format": "pain",
-    "play": null,
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
     "pinterest": {
-     "description": "AI limit hit mid-task again?\n\nClaude, Codex, Copilot & Gemini\n✓ What's left & when it resets\n✓ Translated into 50 languages\n\nSearch “UsageNow” on the App Store\n\n#AIUsageTracker #Developer #Coding #Quota #Reset\n\nGet it on the App Store: https://apps.apple.com/us/app/id6818607603?pt=118326163&ct=social&mt=8",
+     "description": "AI limit hit mid-task again?\n\nClaude, Codex, Copilot & Gemini\n✓ What's left & when it resets\n✓ Translated into 50 languages\n\nSearch “UsageNow” on the App Store\n\n#AIUsageTracker #Developer #Coding #Quota #Reset\n\nGet it on the App Store: https://apps.apple.com/us/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
      "link": "https://apps.apple.com/us/app/id6818607603?pt=118326163&ct=social&mt=8"
     }
    },
@@ -4399,9 +4467,9 @@
     "button": "App Storeで入手",
     "store": "https://apps.apple.com/jp/app/id6818607603?pt=118326163&ct=social&mt=8",
     "format": "pain",
-    "play": null,
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
     "pinterest": {
-     "description": "作業の途中で またAIの上限？\n\nClaude・Codex・ Copilot・Geminiをまとめて\n✓ 残りとリセット時刻が ひと目でわかる\n✓ 50の言語に 完全対応\n\nApp Store で「UsageNow」を検索\n\n#UsageNow\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6818607603?pt=118326163&ct=social&mt=8",
+     "description": "作業の途中で またAIの上限？\n\nClaude・Codex・ Copilot・Geminiをまとめて\n✓ 残りとリセット時刻が ひと目でわかる\n✓ 50の言語に 完全対応\n\nApp Store で「UsageNow」を検索\n\n#UsageNow\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
      "link": "https://apps.apple.com/jp/app/id6818607603?pt=118326163&ct=social&mt=8"
     }
    },
@@ -4429,9 +4497,9 @@
     "button": "App Store에서 받기",
     "store": "https://apps.apple.com/kr/app/id6818607603?pt=118326163&ct=social&mt=8",
     "format": "pain",
-    "play": null,
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
     "pinterest": {
-     "description": "작업 중에 또 AI 한도 초과?\n\nClaude·Codex·Copilot Gemini까지 한눈에\n✓ 초기화 시간까지 한눈에\n✓ 50개 언어로 완전 번역\n\nApp Store에서 ‘UsageNow’ 검색\n\n#UsageNow\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6818607603?pt=118326163&ct=social&mt=8",
+     "description": "작업 중에 또 AI 한도 초과?\n\nClaude·Codex·Copilot Gemini까지 한눈에\n✓ 초기화 시간까지 한눈에\n✓ 50개 언어로 완전 번역\n\nApp Store에서 ‘UsageNow’ 검색\n\n#UsageNow\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
      "link": "https://apps.apple.com/kr/app/id6818607603?pt=118326163&ct=social&mt=8"
     }
    },
@@ -5607,49 +5675,49 @@
    },
    {
     "kind": "clip",
-    "key": "easyam/en",
-    "locale": "en",
-    "app": "easyam",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/8n1x9x.mp4",
-    "hook": "67 countries and regions",
-    "name": "EasyAM: Holiday Alarm Clock",
-    "title": "67 countries and regions | Rings for work, skips days off | EasyAM holiday alarm",
+    "key": "maskmyfile/el",
+    "locale": "el",
+    "app": "maskmyfile",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/qz3lmz.mp4",
+    "hook": "Ξεχάσατε κάτι; Προσθέστε το",
+    "name": "Mask My File: Σβήστε δεδομένα",
+    "title": "Ξεχάσατε κάτι; Προσθέστε το | Απόκρυψη πριν την κοινοποίηση | Mask My File",
     "tags": [
-     "#HolidayAlarmClock",
-     "#Workday",
-     "#Shift",
-     "#Public",
-     "#Calendar",
-     "#EasyAMHolidayAlarm"
+     "#Σβήστεδεδομένα",
+     "#ανωνυμοποίηση",
+     "#λογοκρισία",
+     "#προσωπικάδεδομένα",
+     "#ταυτότητα",
+     "#MaskMyFile"
     ],
-    "caption": "67 countries and regions\nHolidays skipped automatically\nRings for work, skips days off\nEasyAM: Holiday Alarm Clock\nSearch “holiday alarm clock” on the App Store\nAlso on Google Play\n\n#HolidayAlarmClock #Workday #Shift #Public #EasyAMholidayalarm",
-    "button": "Get it on the App Store",
-    "variant": "c",
-    "alt": "EasyAM: Holiday Alarm Clock — 67 countries and regions — Holidays skipped automatically — Rings for work, skips days off",
-    "store": "https://apps.apple.com/us/app/id6821790092?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam",
+    "caption": "Ξεχάσατε κάτι; Προσθέστε το\nΝέο αντίγραφο, το πρωτότυπο μένει ίδιο\nΑπόκρυψη πριν την κοινοποίηση\nMask My File: Σβήστε δεδομένα\nΑναζητήστε «Mask My File» στο App Store\nΚαι στο Google Play\n\n#Σβήστεδεδομένα #ανωνυμοποίηση #λογοκρισία #προσωπικάδεδομένα #MaskMyFile",
+    "button": "Λήψη από το App Store",
+    "variant": "b",
+    "alt": "Mask My File: Σβήστε δεδομένα — Ξεχάσατε κάτι; Προσθέστε το — Νέο αντίγραφο, το πρωτότυπο μένει ίδιο — Απόκρυψη πριν την κοινοποίηση",
+    "store": "https://apps.apple.com/gr/app/id6792850916?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MaskMyFile&referrer=utm_source%3Dsocial%26utm_campaign%3Dmaskmyfile",
     "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6821790092?action=write-review"
+     "label": "Χρησιμοποιείτε ήδη αυτή την εφαρμογή; Βαθμολογήστε τη ή γράψτε μια κριτική στο App Store",
+     "url": "https://apps.apple.com/app/id6792850916?action=write-review"
     },
     "keywords": [
-     "workday",
-     "shift",
-     "public",
-     "calendar",
-     "weekday",
-     "vacation"
+     "ανωνυμοποίηση",
+     "λογοκρισία",
+     "προσωπικά δεδομένα",
+     "ταυτότητα",
+     "διαβατήριο",
+     "ιατρικό αρχείο"
     ],
-    "keyline": "Rings for work, skips days off",
+    "keyline": "Απόκρυψη πριν την κοινοποίηση",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "f45a7a4e972af86c",
+     "board": "f88a32e9a9deb640",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "67 countries and regions\nHolidays skipped automatically\nRings for work, skips days off\nEasyAM: Holiday Alarm Clock\nSearch “holiday alarm clock” on the App Store\nAlso on Google Play\n\n#HolidayAlarmClock #Workday #Shift #Public #EasyAMholidayalarm\n\nGet it on the App Store: https://apps.apple.com/us/app/id6821790092?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam"
+     "caption": "Ξεχάσατε κάτι; Προσθέστε το\nΝέο αντίγραφο, το πρωτότυπο μένει ίδιο\nΑπόκρυψη πριν την κοινοποίηση\nMask My File: Σβήστε δεδομένα\nΑναζητήστε «Mask My File» στο App Store\nΚαι στο Google Play\n\n#Σβήστεδεδομένα #ανωνυμοποίηση #λογοκρισία #προσωπικάδεδομένα #MaskMyFile\n\nΛήψη από το App Store: https://apps.apple.com/gr/app/id6792850916?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MaskMyFile&referrer=utm_source%3Dsocial%26utm_campaign%3Dmaskmyfile"
     },
     "slot": 15
    }
@@ -14095,12 +14163,12 @@
      "#Weekly",
      "#UsageNow"
     ],
-    "caption": "Now you know when it resets\nUsageNow shows every account\nUsageNow: AI Usage Tracker\nSearch “copilot usage” on the App Store\n\n#Reset #Countdown #UsageNow",
+    "caption": "Now you know when it resets\nUsageNow shows every account\nUsageNow: AI Usage Tracker\nSearch “copilot usage” on the App Store\nAlso on Google Play\n\n#Reset #Countdown #UsageNow",
     "button": "Get it on the App Store",
     "variant": "c",
     "alt": "UsageNow: AI Usage Tracker — Now you know when it resets — UsageNow shows every account",
     "store": "https://apps.apple.com/us/app/id6818607603?pt=118326163&ct=social&mt=8",
-    "play": null,
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
     "review": {
      "label": "Already using this app? Rate or review it on the App Store",
      "url": "https://apps.apple.com/app/id6818607603?action=write-review"
@@ -14139,12 +14207,12 @@
      "#倒數計時",
      "#UsageNow"
     ],
-    "caption": "哪個 AI 帳號 還有額度？\nUsageNow：AI 用量與額度追蹤\n在 App Store 搜尋「ai 用量追蹤」\n\n#限額 #配額 #UsageNow",
+    "caption": "哪個 AI 帳號 還有額度？\nUsageNow：AI 用量與額度追蹤\n在 App Store 搜尋「ai 用量追蹤」\nAndroid 版在 Google Play\n\n#限額 #配額 #UsageNow",
     "button": "在 App Store 下載",
     "variant": "a",
     "alt": "UsageNow：AI 用量與額度追蹤 — 哪個 AI 帳號 還有額度？",
     "store": "https://apps.apple.com/tw/app/id6818607603?pt=118326163&ct=social&mt=8",
-    "play": null,
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
     "review": {
      "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
      "url": "https://apps.apple.com/app/id6818607603?action=write-review"
@@ -14183,12 +14251,12 @@
      "#利用状況",
      "#UsageNow"
     ],
-    "caption": "UsageNowで 全アカウントの残量\n5時間・週間ごとに 90%でお知らせ\nClaude・Codex・Copilot・Gemini残量\nUsageNow：AI使用量トラッカー\nApp Storeで「codex 使用制限」を検索\n\n#上限 #トークン #UsageNow",
+    "caption": "UsageNowで 全アカウントの残量\n5時間・週間ごとに 90%でお知らせ\nClaude・Codex・Copilot・Gemini残量\nUsageNow：AI使用量トラッカー\nApp Storeで「codex 使用制限」を検索\nAndroidはGoogle Playで\n\n#上限 #トークン #UsageNow",
     "button": "App Storeで入手",
     "variant": "b",
     "alt": "UsageNow：AI使用量トラッカー — UsageNowで 全アカウントの残量 — 5時間・週間ごとに 90%でお知らせ — Claude・Codex・Copilot・Gemini残量",
     "store": "https://apps.apple.com/jp/app/id6818607603?pt=118326163&ct=social&mt=8",
-    "play": null,
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
     "review": {
      "label": "このアプリをお使いですか？App Store で評価・レビューできます",
      "url": "https://apps.apple.com/app/id6818607603?action=write-review"
@@ -14227,12 +14295,12 @@
      "#Entwickler",
      "#UsageNow"
     ],
-    "caption": "UsageNow zeigt alle Konten\nHinweis bei 90 % für 5 Std. & Woche\nUsageNow: KI-Nutzung Tracker\nIm App Store nach „ki nutzung tracker“ suchen\n\n#Quota #Zähler #UsageNow",
+    "caption": "UsageNow zeigt alle Konten\nHinweis bei 90 % für 5 Std. & Woche\nUsageNow: KI-Nutzung Tracker\nIm App Store nach „ki nutzung tracker“ suchen\nAuch bei Google Play\n\n#Quota #Zähler #UsageNow",
     "button": "Im App Store laden",
     "variant": "b",
     "alt": "UsageNow: KI-Nutzung Tracker — UsageNow zeigt alle Konten — Hinweis bei 90 % für 5 Std. & Woche",
     "store": "https://apps.apple.com/de/app/id6818607603?pt=118326163&ct=social&mt=8",
-    "play": null,
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
     "review": {
      "label": "Sie nutzen diese App bereits? Bewerten oder rezensieren Sie sie im App Store",
      "url": "https://apps.apple.com/app/id6818607603?action=write-review"
@@ -14271,12 +14339,12 @@
      "#Cuota",
      "#UsageNow"
     ],
-    "caption": "UsageNow muestra todas tus cuentas\nAviso al 90 % en 5 horas y semanal\nUsageNow: Monitor de uso IA\nBusca «UsageNow» en el App Store\n\n#Contador #Reinicio #UsageNow",
+    "caption": "UsageNow muestra todas tus cuentas\nAviso al 90 % en 5 horas y semanal\nUsageNow: Monitor de uso IA\nBusca «UsageNow» en el App Store\nTambién en Google Play\n\n#Contador #Reinicio #UsageNow",
     "button": "Descargar en el App Store",
     "variant": "b",
     "alt": "UsageNow: Monitor de uso IA — UsageNow muestra todas tus cuentas — Aviso al 90 % en 5 horas y semanal",
     "store": "https://apps.apple.com/es/app/id6818607603?pt=118326163&ct=social&mt=8",
-    "play": null,
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
     "review": {
      "label": "¿Ya usas esta app? Valórala o escribe una reseña en el App Store",
      "url": "https://apps.apple.com/app/id6818607603?action=write-review"
@@ -14314,12 +14382,12 @@
      "#Quota",
      "#UsageNow"
     ],
-    "caption": "UsageNow affiche tous vos comptes\nAlerte à 90 % sur 5 h et semaine\nUsageNow : Suivi d'usage IA\nRecherchez « suivi utilisation ia » sur l'App Store\n\n#Compteur #Jeton #UsageNow",
+    "caption": "UsageNow affiche tous vos comptes\nAlerte à 90 % sur 5 h et semaine\nUsageNow : Suivi d'usage IA\nRecherchez « suivi utilisation ia » sur l'App Store\nAussi sur Google Play\n\n#Compteur #Jeton #UsageNow",
     "button": "Télécharger sur l'App Store",
     "variant": "b",
     "alt": "UsageNow : Suivi d'usage IA — UsageNow affiche tous vos comptes — Alerte à 90 % sur 5 h et semaine",
     "store": "https://apps.apple.com/fr/app/id6818607603?pt=118326163&ct=social&mt=8",
-    "play": null,
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
     "review": {
      "label": "Vous utilisez déjà cette app ? Notez-la ou rédigez un avis sur l’App Store",
      "url": "https://apps.apple.com/app/id6818607603?action=write-review"
@@ -18669,12 +18737,12 @@
      "#Reset",
      "#UsageNow"
     ],
-    "caption": "Translated into 50 languages\nClaude, Codex, Copilot & Gemini\nClaude, Codex & Copilot Limits\nUsageNow: AI Usage Tracker\nSearch “copilot usage” on the App Store\n\n#AIUsageTracker #Developer #UsageNow",
+    "caption": "Translated into 50 languages\nClaude, Codex, Copilot & Gemini\nClaude, Codex & Copilot Limits\nUsageNow: AI Usage Tracker\nSearch “copilot usage” on the App Store\nAlso on Google Play\n\n#AIUsageTracker #Developer #UsageNow",
     "button": "Get it on the App Store",
     "variant": "c",
     "alt": "UsageNow: AI Usage Tracker — Translated into 50 languages — Claude, Codex, Copilot & Gemini — Claude, Codex & Copilot Limits",
     "store": "https://apps.apple.com/us/app/id6818607603?pt=118326163&ct=social&mt=8",
-    "play": null,
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
     "review": {
      "label": "Already using this app? Rate or review it on the App Store",
      "url": "https://apps.apple.com/app/id6818607603?action=write-review"
@@ -18713,12 +18781,12 @@
      "#限額",
      "#UsageNow"
     ],
-    "caption": "Claude、Codex、Copilot、Gemini 一起看\n剩多少、何時重置 一眼看清\nClaude、Codex、Copilot 重置倒數\nUsageNow：AI 用量與額度追蹤\n在 App Store 搜尋「ai 用量追蹤」\n\n#AI用量與額度追蹤 #開發者 #UsageNow",
+    "caption": "Claude、Codex、Copilot、Gemini 一起看\n剩多少、何時重置 一眼看清\nClaude、Codex、Copilot 重置倒數\nUsageNow：AI 用量與額度追蹤\n在 App Store 搜尋「ai 用量追蹤」\nAndroid 版在 Google Play\n\n#AI用量與額度追蹤 #開發者 #UsageNow",
     "button": "在 App Store 下載",
     "variant": "b",
     "alt": "UsageNow：AI 用量與額度追蹤 — Claude、Codex、Copilot、Gemini 一起看 — 剩多少、何時重置 一眼看清 — Claude、Codex、Copilot 重置倒數",
     "store": "https://apps.apple.com/tw/app/id6818607603?pt=118326163&ct=social&mt=8",
-    "play": null,
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
     "review": {
      "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
      "url": "https://apps.apple.com/app/id6818607603?action=write-review"
@@ -18757,12 +18825,12 @@
      "#上限",
      "#UsageNow"
     ],
-    "caption": "Claude・Codex・ Copilot・Geminiをまとめて\n残りとリセット時刻が ひと目でわかる\nClaude・Codex・Copilot・Gemini残量\nUsageNow：AI使用量トラッカー\nApp Storeで「codex 使用制限」を検索\n\n#AI使用量トラッカー #開発者 #UsageNow",
+    "caption": "Claude・Codex・ Copilot・Geminiをまとめて\n残りとリセット時刻が ひと目でわかる\nClaude・Codex・Copilot・Gemini残量\nUsageNow：AI使用量トラッカー\nApp Storeで「codex 使用制限」を検索\nAndroidはGoogle Playで\n\n#AI使用量トラッカー #開発者 #UsageNow",
     "button": "App Storeで入手",
     "variant": "b",
     "alt": "UsageNow：AI使用量トラッカー — Claude・Codex・ Copilot・Geminiをまとめて — 残りとリセット時刻が ひと目でわかる — Claude・Codex・Copilot・Gemini残量",
     "store": "https://apps.apple.com/jp/app/id6818607603?pt=118326163&ct=social&mt=8",
-    "play": null,
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
     "review": {
      "label": "このアプリをお使いですか？App Store で評価・レビューできます",
      "url": "https://apps.apple.com/app/id6818607603?action=write-review"
@@ -18801,12 +18869,12 @@
      "#Quota",
      "#UsageNow"
     ],
-    "caption": "Claude, Codex, Copilot & Gemini\nRest & Reset-Zeit auf einen Blick\nClaude, Codex & Copilot Limits\nUsageNow: KI-Nutzung Tracker\nIm App Store nach „ki nutzung tracker“ suchen\n\n#KINutzungTracker #Entwickler #UsageNow",
+    "caption": "Claude, Codex, Copilot & Gemini\nRest & Reset-Zeit auf einen Blick\nClaude, Codex & Copilot Limits\nUsageNow: KI-Nutzung Tracker\nIm App Store nach „ki nutzung tracker“ suchen\nAuch bei Google Play\n\n#KINutzungTracker #Entwickler #UsageNow",
     "button": "Im App Store laden",
     "variant": "b",
     "alt": "UsageNow: KI-Nutzung Tracker — Claude, Codex, Copilot & Gemini — Rest & Reset-Zeit auf einen Blick — Claude, Codex & Copilot Limits",
     "store": "https://apps.apple.com/de/app/id6818607603?pt=118326163&ct=social&mt=8",
-    "play": null,
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
     "review": {
      "label": "Sie nutzen diese App bereits? Bewerten oder rezensieren Sie sie im App Store",
      "url": "https://apps.apple.com/app/id6818607603?action=write-review"
@@ -18845,12 +18913,12 @@
      "#Contador",
      "#UsageNow"
     ],
-    "caption": "Claude, Codex, Copilot y Gemini\nLo que queda y cuándo se restablece\nLímites Claude, Codex, Copilot\nUsageNow: Monitor de uso IA\nBusca «UsageNow» en el App Store\n\n#MonitorDeUsoIA #Desarrollador #UsageNow",
+    "caption": "Claude, Codex, Copilot y Gemini\nLo que queda y cuándo se restablece\nLímites Claude, Codex, Copilot\nUsageNow: Monitor de uso IA\nBusca «UsageNow» en el App Store\nTambién en Google Play\n\n#MonitorDeUsoIA #Desarrollador #UsageNow",
     "button": "Descargar en el App Store",
     "variant": "b",
     "alt": "UsageNow: Monitor de uso IA — Claude, Codex, Copilot y Gemini — Lo que queda y cuándo se restablece — Límites Claude, Codex, Copilot",
     "store": "https://apps.apple.com/es/app/id6818607603?pt=118326163&ct=social&mt=8",
-    "play": null,
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
     "review": {
      "label": "¿Ya usas esta app? Valórala o escribe una reseña en el App Store",
      "url": "https://apps.apple.com/app/id6818607603?action=write-review"
@@ -18888,12 +18956,12 @@
      "#Compteur",
      "#UsageNow"
     ],
-    "caption": "Claude, Codex, Copilot et Gemini\nCe qu'il reste et la remise à zéro\nLimites Claude, Codex, Copilot\nUsageNow : Suivi d'usage IA\nRecherchez « suivi utilisation ia » sur l'App Store\n\n#SuiviDusageIA #Développeur #UsageNow",
+    "caption": "Claude, Codex, Copilot et Gemini\nCe qu'il reste et la remise à zéro\nLimites Claude, Codex, Copilot\nUsageNow : Suivi d'usage IA\nRecherchez « suivi utilisation ia » sur l'App Store\nAussi sur Google Play\n\n#SuiviDusageIA #Développeur #UsageNow",
     "button": "Télécharger sur l'App Store",
     "variant": "b",
     "alt": "UsageNow : Suivi d'usage IA — Claude, Codex, Copilot et Gemini — Ce qu'il reste et la remise à zéro — Limites Claude, Codex, Copilot",
     "store": "https://apps.apple.com/fr/app/id6818607603?pt=118326163&ct=social&mt=8",
-    "play": null,
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
     "review": {
      "label": "Vous utilisez déjà cette app ? Notez-la ou rédigez un avis sur l’App Store",
      "url": "https://apps.apple.com/app/id6818607603?action=write-review"
@@ -19767,12 +19835,12 @@
      "#利用状況",
      "#UsageNow"
     ],
-    "caption": "Claude・Codex・ Copilot・Geminiをまとめて\n残りとリセット時刻が ひと目でわかる\nClaude・Codex・Copilot・Gemini残量\nUsageNow：AI使用量トラッカー\nApp Storeで「UsageNow」を検索\n\n#上限 #トークン #UsageNow",
+    "caption": "Claude・Codex・ Copilot・Geminiをまとめて\n残りとリセット時刻が ひと目でわかる\nClaude・Codex・Copilot・Gemini残量\nUsageNow：AI使用量トラッカー\nApp Storeで「UsageNow」を検索\nAndroidはGoogle Playで\n\n#上限 #トークン #UsageNow",
     "button": "App Storeで入手",
     "variant": "b",
     "alt": "UsageNow：AI使用量トラッカー — Claude・Codex・ Copilot・Geminiをまとめて — 残りとリセット時刻が ひと目でわかる — Claude・Codex・Copilot・Gemini残量",
     "store": "https://apps.apple.com/jp/app/id6818607603?pt=118326163&ct=social&mt=8",
-    "play": null,
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
     "review": {
      "label": "このアプリをお使いですか？App Store で評価・レビューできます",
      "url": "https://apps.apple.com/app/id6818607603?action=write-review"
@@ -32520,12 +32588,12 @@
      "#Weekly",
      "#UsageNow"
     ],
-    "caption": "Now you know when it resets\nUsageNow shows every account\nUsageNow: AI Usage Tracker\nSearch “copilot usage” on the App Store\n\n#Reset #Countdown #Agent #Session #UsageNow",
+    "caption": "Now you know when it resets\nUsageNow shows every account\nUsageNow: AI Usage Tracker\nSearch “copilot usage” on the App Store\nAlso on Google Play\n\n#Reset #Countdown #Agent #Session #UsageNow",
     "button": "Get it on the App Store",
     "variant": "c",
     "alt": "UsageNow: AI Usage Tracker — Now you know when it resets — UsageNow shows every account",
     "store": "https://apps.apple.com/us/app/id6818607603?pt=118326163&ct=social&mt=8",
-    "play": null,
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
     "review": {
      "label": "Already using this app? Rate or review it on the App Store",
      "url": "https://apps.apple.com/app/id6818607603?action=write-review"
@@ -32548,7 +32616,7 @@
     },
     "youtube": {
      "title": "Now you know when it resets | UsageNow #Shorts",
-     "description": "Now you know when it resets\nUsageNow shows every account\nAI Usage Tracker\n\nUsageNow: AI Usage Tracker\nApp Store: https://apps.apple.com/us/app/id6818607603?pt=118326163&ct=social&mt=8\nAlready using this app? Rate or review it on the App Store\nhttps://apps.apple.com/app/id6818607603?action=write-review\n\ndeveloper · coding · quota · reset · countdown · agent\n\n#Shorts #Reset #UsageNow",
+     "description": "Now you know when it resets\nUsageNow shows every account\nAI Usage Tracker\n\nUsageNow: AI Usage Tracker\nApp Store: https://apps.apple.com/us/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini\nAlready using this app? Rate or review it on the App Store\nhttps://apps.apple.com/app/id6818607603?action=write-review\n\ndeveloper · coding · quota · reset · countdown · agent\n\n#Shorts #Reset #UsageNow",
      "tags": [
       "developer",
       "coding",
@@ -32579,12 +32647,12 @@
      "#倒數計時",
      "#UsageNow"
     ],
-    "caption": "哪個 AI 帳號 還有額度？\nUsageNow：AI 用量與額度追蹤\n在 App Store 搜尋「ai 用量追蹤」\n\n#限額 #配額 #限制 #剩餘 #UsageNow",
+    "caption": "哪個 AI 帳號 還有額度？\nUsageNow：AI 用量與額度追蹤\n在 App Store 搜尋「ai 用量追蹤」\nAndroid 版在 Google Play\n\n#限額 #配額 #限制 #剩餘 #UsageNow",
     "button": "在 App Store 下載",
     "variant": "a",
     "alt": "UsageNow：AI 用量與額度追蹤 — 哪個 AI 帳號 還有額度？",
     "store": "https://apps.apple.com/tw/app/id6818607603?pt=118326163&ct=social&mt=8",
-    "play": null,
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
     "review": {
      "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
      "url": "https://apps.apple.com/app/id6818607603?action=write-review"
@@ -32607,7 +32675,7 @@
     },
     "youtube": {
      "title": "哪個 AI 帳號 還有額度？ | UsageNow #Shorts",
-     "description": "哪個 AI 帳號 還有額度？\nAI 用量與額度追蹤\n\nUsageNow：AI 用量與額度追蹤\nApp Store: https://apps.apple.com/tw/app/id6818607603?pt=118326163&ct=social&mt=8\n已經在用這款 App？可以到 App Store 評分或撰寫評論\nhttps://apps.apple.com/app/id6818607603?action=write-review\n\n開發者 · 工程師 · 使用量 · 限額 · 配額 · 限制\n\n#Shorts #限額 #UsageNow",
+     "description": "哪個 AI 帳號 還有額度？\nAI 用量與額度追蹤\n\nUsageNow：AI 用量與額度追蹤\nApp Store: https://apps.apple.com/tw/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini\n已經在用這款 App？可以到 App Store 評分或撰寫評論\nhttps://apps.apple.com/app/id6818607603?action=write-review\n\n開發者 · 工程師 · 使用量 · 限額 · 配額 · 限制\n\n#Shorts #限額 #UsageNow",
      "tags": [
       "開發者",
       "工程師",
@@ -32638,12 +32706,12 @@
      "#利用状況",
      "#UsageNow"
     ],
-    "caption": "UsageNowで 全アカウントの残量\n5時間・週間ごとに 90%でお知らせ\nClaude・Codex・Copilot・Gemini残量\nUsageNow：AI使用量トラッカー\nApp Storeで「codex 使用制限」を検索\n\n#上限 #トークン #ウィジェット #リセット #UsageNow",
+    "caption": "UsageNowで 全アカウントの残量\n5時間・週間ごとに 90%でお知らせ\nClaude・Codex・Copilot・Gemini残量\nUsageNow：AI使用量トラッカー\nApp Storeで「codex 使用制限」を検索\nAndroidはGoogle Playで\n\n#上限 #トークン #ウィジェット #リセット #UsageNow",
     "button": "App Storeで入手",
     "variant": "b",
     "alt": "UsageNow：AI使用量トラッカー — UsageNowで 全アカウントの残量 — 5時間・週間ごとに 90%でお知らせ — Claude・Codex・Copilot・Gemini残量",
     "store": "https://apps.apple.com/jp/app/id6818607603?pt=118326163&ct=social&mt=8",
-    "play": null,
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
     "review": {
      "label": "このアプリをお使いですか？App Store で評価・レビューできます",
      "url": "https://apps.apple.com/app/id6818607603?action=write-review"
@@ -32666,7 +32734,7 @@
     },
     "youtube": {
      "title": "UsageNowで 全アカウントの残量 | UsageNow #Shorts",
-     "description": "UsageNowで 全アカウントの残量\n5時間・週間ごとに 90%でお知らせ\nClaude・Codex・Copilot・Gemini残量\n\nUsageNow：AI使用量トラッカー\nApp Store: https://apps.apple.com/jp/app/id6818607603?pt=118326163&ct=social&mt=8\nこのアプリをお使いですか？App Store で評価・レビューできます\nhttps://apps.apple.com/app/id6818607603?action=write-review\n\n開発者 · エンジニア · 制限 · 上限 · トークン · ウィジェット\n\n#Shorts #上限 #UsageNow",
+     "description": "UsageNowで 全アカウントの残量\n5時間・週間ごとに 90%でお知らせ\nClaude・Codex・Copilot・Gemini残量\n\nUsageNow：AI使用量トラッカー\nApp Store: https://apps.apple.com/jp/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini\nこのアプリをお使いですか？App Store で評価・レビューできます\nhttps://apps.apple.com/app/id6818607603?action=write-review\n\n開発者 · エンジニア · 制限 · 上限 · トークン · ウィジェット\n\n#Shorts #上限 #UsageNow",
      "tags": [
       "開発者",
       "エンジニア",
@@ -32697,12 +32765,12 @@
      "#Entwickler",
      "#UsageNow"
     ],
-    "caption": "UsageNow zeigt alle Konten\nHinweis bei 90 % für 5 Std. & Woche\nUsageNow: KI-Nutzung Tracker\nIm App Store nach „ki nutzung tracker“ suchen\n\n#Quota #Zähler #Reset #Countdown #UsageNow",
+    "caption": "UsageNow zeigt alle Konten\nHinweis bei 90 % für 5 Std. & Woche\nUsageNow: KI-Nutzung Tracker\nIm App Store nach „ki nutzung tracker“ suchen\nAuch bei Google Play\n\n#Quota #Zähler #Reset #Countdown #UsageNow",
     "button": "Im App Store laden",
     "variant": "b",
     "alt": "UsageNow: KI-Nutzung Tracker — UsageNow zeigt alle Konten — Hinweis bei 90 % für 5 Std. & Woche",
     "store": "https://apps.apple.com/de/app/id6818607603?pt=118326163&ct=social&mt=8",
-    "play": null,
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
     "review": {
      "label": "Sie nutzen diese App bereits? Bewerten oder rezensieren Sie sie im App Store",
      "url": "https://apps.apple.com/app/id6818607603?action=write-review"
@@ -32725,7 +32793,7 @@
     },
     "youtube": {
      "title": "UsageNow zeigt alle Konten | UsageNow #Shorts",
-     "description": "UsageNow zeigt alle Konten\nHinweis bei 90 % für 5 Std. & Woche\nKI-Nutzung Tracker\n\nUsageNow: KI-Nutzung Tracker\nApp Store: https://apps.apple.com/de/app/id6818607603?pt=118326163&ct=social&mt=8\nSie nutzen diese App bereits? Bewerten oder rezensieren Sie sie im App Store\nhttps://apps.apple.com/app/id6818607603?action=write-review\n\nentwickler · verbrauch · kontingent · quota · zähler · reset\n\n#Shorts #Quota #UsageNow",
+     "description": "UsageNow zeigt alle Konten\nHinweis bei 90 % für 5 Std. & Woche\nKI-Nutzung Tracker\n\nUsageNow: KI-Nutzung Tracker\nApp Store: https://apps.apple.com/de/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini\nSie nutzen diese App bereits? Bewerten oder rezensieren Sie sie im App Store\nhttps://apps.apple.com/app/id6818607603?action=write-review\n\nentwickler · verbrauch · kontingent · quota · zähler · reset\n\n#Shorts #Quota #UsageNow",
      "tags": [
       "entwickler",
       "verbrauch",
@@ -32755,12 +32823,12 @@
      "#Cuota",
      "#UsageNow"
     ],
-    "caption": "UsageNow muestra todas tus cuentas\nAviso al 90 % en 5 horas y semanal\nUsageNow: Monitor de uso IA\nBusca «UsageNow» en el App Store\n\n#Contador #Reinicio #Desarrollador #Consumo #UsageNow",
+    "caption": "UsageNow muestra todas tus cuentas\nAviso al 90 % en 5 horas y semanal\nUsageNow: Monitor de uso IA\nBusca «UsageNow» en el App Store\nTambién en Google Play\n\n#Contador #Reinicio #Desarrollador #Consumo #UsageNow",
     "button": "Descargar en el App Store",
     "variant": "b",
     "alt": "UsageNow: Monitor de uso IA — UsageNow muestra todas tus cuentas — Aviso al 90 % en 5 horas y semanal",
     "store": "https://apps.apple.com/es/app/id6818607603?pt=118326163&ct=social&mt=8",
-    "play": null,
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
     "review": {
      "label": "¿Ya usas esta app? Valórala o escribe una reseña en el App Store",
      "url": "https://apps.apple.com/app/id6818607603?action=write-review"
@@ -32782,7 +32850,7 @@
     },
     "youtube": {
      "title": "UsageNow muestra todas tus cuentas | UsageNow #Shorts",
-     "description": "UsageNow muestra todas tus cuentas\nAviso al 90 % en 5 horas y semanal\nMonitor de uso IA\n\nUsageNow: Monitor de uso IA\nApp Store: https://apps.apple.com/es/app/id6818607603?pt=118326163&ct=social&mt=8\n¿Ya usas esta app? Valórala o escribe una reseña en el App Store\nhttps://apps.apple.com/app/id6818607603?action=write-review\n\ndesarrollador · consumo · cuota · contador · reinicio\n\n#Shorts #Contador #UsageNow",
+     "description": "UsageNow muestra todas tus cuentas\nAviso al 90 % en 5 horas y semanal\nMonitor de uso IA\n\nUsageNow: Monitor de uso IA\nApp Store: https://apps.apple.com/es/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini\n¿Ya usas esta app? Valórala o escribe una reseña en el App Store\nhttps://apps.apple.com/app/id6818607603?action=write-review\n\ndesarrollador · consumo · cuota · contador · reinicio\n\n#Shorts #Contador #UsageNow",
      "tags": [
       "desarrollador",
       "consumo",
@@ -32810,12 +32878,12 @@
      "#Quota",
      "#UsageNow"
     ],
-    "caption": "UsageNow affiche tous vos comptes\nAlerte à 90 % sur 5 h et semaine\nUsageNow : Suivi d'usage IA\nRecherchez « suivi utilisation ia » sur l'App Store\n\n#Compteur #Jeton #Développeur #Consommation #UsageNow",
+    "caption": "UsageNow affiche tous vos comptes\nAlerte à 90 % sur 5 h et semaine\nUsageNow : Suivi d'usage IA\nRecherchez « suivi utilisation ia » sur l'App Store\nAussi sur Google Play\n\n#Compteur #Jeton #Développeur #Consommation #UsageNow",
     "button": "Télécharger sur l'App Store",
     "variant": "b",
     "alt": "UsageNow : Suivi d'usage IA — UsageNow affiche tous vos comptes — Alerte à 90 % sur 5 h et semaine",
     "store": "https://apps.apple.com/fr/app/id6818607603?pt=118326163&ct=social&mt=8",
-    "play": null,
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
     "review": {
      "label": "Vous utilisez déjà cette app ? Notez-la ou rédigez un avis sur l’App Store",
      "url": "https://apps.apple.com/app/id6818607603?action=write-review"
@@ -32837,7 +32905,7 @@
     },
     "youtube": {
      "title": "UsageNow affiche tous vos comptes | UsageNow #Shorts",
-     "description": "UsageNow affiche tous vos comptes\nAlerte à 90 % sur 5 h et semaine\nSuivi d'usage IA\n\nUsageNow : Suivi d'usage IA\nApp Store: https://apps.apple.com/fr/app/id6818607603?pt=118326163&ct=social&mt=8\nVous utilisez déjà cette app ? Notez-la ou rédigez un avis sur l’App Store\nhttps://apps.apple.com/app/id6818607603?action=write-review\n\ndéveloppeur · consommation · quota · compteur · jeton\n\n#Shorts #Compteur #UsageNow",
+     "description": "UsageNow affiche tous vos comptes\nAlerte à 90 % sur 5 h et semaine\nSuivi d'usage IA\n\nUsageNow : Suivi d'usage IA\nApp Store: https://apps.apple.com/fr/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini\nVous utilisez déjà cette app ? Notez-la ou rédigez un avis sur l’App Store\nhttps://apps.apple.com/app/id6818607603?action=write-review\n\ndéveloppeur · consommation · quota · compteur · jeton\n\n#Shorts #Compteur #UsageNow",
      "tags": [
       "développeur",
       "consommation",
@@ -38698,12 +38766,12 @@
      "#Reset",
      "#UsageNow"
     ],
-    "caption": "Translated into 50 languages\nClaude, Codex, Copilot & Gemini\nClaude, Codex & Copilot Limits\nUsageNow: AI Usage Tracker\nSearch “copilot usage” on the App Store\n\n#AIUsageTracker #Developer #Coding #Quota #UsageNow",
+    "caption": "Translated into 50 languages\nClaude, Codex, Copilot & Gemini\nClaude, Codex & Copilot Limits\nUsageNow: AI Usage Tracker\nSearch “copilot usage” on the App Store\nAlso on Google Play\n\n#AIUsageTracker #Developer #Coding #Quota #UsageNow",
     "button": "Get it on the App Store",
     "variant": "c",
     "alt": "UsageNow: AI Usage Tracker — Translated into 50 languages — Claude, Codex, Copilot & Gemini — Claude, Codex & Copilot Limits",
     "store": "https://apps.apple.com/us/app/id6818607603?pt=118326163&ct=social&mt=8",
-    "play": null,
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
     "review": {
      "label": "Already using this app? Rate or review it on the App Store",
      "url": "https://apps.apple.com/app/id6818607603?action=write-review"
@@ -38726,7 +38794,7 @@
     },
     "youtube": {
      "title": "Translated into 50 languages | UsageNow #Shorts",
-     "description": "Translated into 50 languages\nClaude, Codex, Copilot & Gemini\nClaude, Codex & Copilot Limits\n\nUsageNow: AI Usage Tracker\nApp Store: https://apps.apple.com/us/app/id6818607603?pt=118326163&ct=social&mt=8\nAlready using this app? Rate or review it on the App Store\nhttps://apps.apple.com/app/id6818607603?action=write-review\n\ndeveloper · coding · quota · reset · countdown · agent\n\n#Shorts #AIUsageTracker #UsageNow",
+     "description": "Translated into 50 languages\nClaude, Codex, Copilot & Gemini\nClaude, Codex & Copilot Limits\n\nUsageNow: AI Usage Tracker\nApp Store: https://apps.apple.com/us/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini\nAlready using this app? Rate or review it on the App Store\nhttps://apps.apple.com/app/id6818607603?action=write-review\n\ndeveloper · coding · quota · reset · countdown · agent\n\n#Shorts #AIUsageTracker #UsageNow",
      "tags": [
       "developer",
       "coding",
@@ -38756,12 +38824,12 @@
      "#限額",
      "#UsageNow"
     ],
-    "caption": "Claude、Codex、Copilot、Gemini 一起看\n剩多少、何時重置 一眼看清\nClaude、Codex、Copilot 重置倒數\nUsageNow：AI 用量與額度追蹤\n在 App Store 搜尋「ai 用量追蹤」\n\n#AI用量與額度追蹤 #開發者 #工程師 #使用量 #UsageNow",
+    "caption": "Claude、Codex、Copilot、Gemini 一起看\n剩多少、何時重置 一眼看清\nClaude、Codex、Copilot 重置倒數\nUsageNow：AI 用量與額度追蹤\n在 App Store 搜尋「ai 用量追蹤」\nAndroid 版在 Google Play\n\n#AI用量與額度追蹤 #開發者 #工程師 #使用量 #UsageNow",
     "button": "在 App Store 下載",
     "variant": "b",
     "alt": "UsageNow：AI 用量與額度追蹤 — Claude、Codex、Copilot、Gemini 一起看 — 剩多少、何時重置 一眼看清 — Claude、Codex、Copilot 重置倒數",
     "store": "https://apps.apple.com/tw/app/id6818607603?pt=118326163&ct=social&mt=8",
-    "play": null,
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
     "review": {
      "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
      "url": "https://apps.apple.com/app/id6818607603?action=write-review"
@@ -38784,7 +38852,7 @@
     },
     "youtube": {
      "title": "Claude、Codex、Copilot、Gemini 一起看 | UsageNow #Shorts",
-     "description": "Claude、Codex、Copilot、Gemini 一起看\n剩多少、何時重置 一眼看清\nClaude、Codex、Copilot 重置倒數\n\nUsageNow：AI 用量與額度追蹤\nApp Store: https://apps.apple.com/tw/app/id6818607603?pt=118326163&ct=social&mt=8\n已經在用這款 App？可以到 App Store 評分或撰寫評論\nhttps://apps.apple.com/app/id6818607603?action=write-review\n\n開發者 · 工程師 · 使用量 · 限額 · 配額 · 限制\n\n#Shorts #AI用量與額度追蹤 #UsageNow",
+     "description": "Claude、Codex、Copilot、Gemini 一起看\n剩多少、何時重置 一眼看清\nClaude、Codex、Copilot 重置倒數\n\nUsageNow：AI 用量與額度追蹤\nApp Store: https://apps.apple.com/tw/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini\n已經在用這款 App？可以到 App Store 評分或撰寫評論\nhttps://apps.apple.com/app/id6818607603?action=write-review\n\n開發者 · 工程師 · 使用量 · 限額 · 配額 · 限制\n\n#Shorts #AI用量與額度追蹤 #UsageNow",
      "tags": [
       "開發者",
       "工程師",
@@ -38814,12 +38882,12 @@
      "#上限",
      "#UsageNow"
     ],
-    "caption": "Claude・Codex・ Copilot・Geminiをまとめて\n残りとリセット時刻が ひと目でわかる\nClaude・Codex・Copilot・Gemini残量\nUsageNow：AI使用量トラッカー\nApp Storeで「codex 使用制限」を検索\n\n#AI使用量トラッカー #開発者 #エンジニア #制限 #UsageNow",
+    "caption": "Claude・Codex・ Copilot・Geminiをまとめて\n残りとリセット時刻が ひと目でわかる\nClaude・Codex・Copilot・Gemini残量\nUsageNow：AI使用量トラッカー\nApp Storeで「codex 使用制限」を検索\nAndroidはGoogle Playで\n\n#AI使用量トラッカー #開発者 #エンジニア #制限 #UsageNow",
     "button": "App Storeで入手",
     "variant": "b",
     "alt": "UsageNow：AI使用量トラッカー — Claude・Codex・ Copilot・Geminiをまとめて — 残りとリセット時刻が ひと目でわかる — Claude・Codex・Copilot・Gemini残量",
     "store": "https://apps.apple.com/jp/app/id6818607603?pt=118326163&ct=social&mt=8",
-    "play": null,
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
     "review": {
      "label": "このアプリをお使いですか？App Store で評価・レビューできます",
      "url": "https://apps.apple.com/app/id6818607603?action=write-review"
@@ -38842,7 +38910,7 @@
     },
     "youtube": {
      "title": "Claude・Codex・ Copilot・Geminiをまとめて | UsageNow #Shorts",
-     "description": "Claude・Codex・ Copilot・Geminiをまとめて\n残りとリセット時刻が ひと目でわかる\nClaude・Codex・Copilot・Gemini残量\n\nUsageNow：AI使用量トラッカー\nApp Store: https://apps.apple.com/jp/app/id6818607603?pt=118326163&ct=social&mt=8\nこのアプリをお使いですか？App Store で評価・レビューできます\nhttps://apps.apple.com/app/id6818607603?action=write-review\n\n開発者 · エンジニア · 制限 · 上限 · トークン · ウィジェット\n\n#Shorts #AI使用量トラッカー #UsageNow",
+     "description": "Claude・Codex・ Copilot・Geminiをまとめて\n残りとリセット時刻が ひと目でわかる\nClaude・Codex・Copilot・Gemini残量\n\nUsageNow：AI使用量トラッカー\nApp Store: https://apps.apple.com/jp/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini\nこのアプリをお使いですか？App Store で評価・レビューできます\nhttps://apps.apple.com/app/id6818607603?action=write-review\n\n開発者 · エンジニア · 制限 · 上限 · トークン · ウィジェット\n\n#Shorts #AI使用量トラッカー #UsageNow",
      "tags": [
       "開発者",
       "エンジニア",
@@ -38872,12 +38940,12 @@
      "#Quota",
      "#UsageNow"
     ],
-    "caption": "Claude, Codex, Copilot & Gemini\nRest & Reset-Zeit auf einen Blick\nClaude, Codex & Copilot Limits\nUsageNow: KI-Nutzung Tracker\nIm App Store nach „ki nutzung tracker“ suchen\n\n#KINutzungTracker #Entwickler #Verbrauch #Kontingent #UsageNow",
+    "caption": "Claude, Codex, Copilot & Gemini\nRest & Reset-Zeit auf einen Blick\nClaude, Codex & Copilot Limits\nUsageNow: KI-Nutzung Tracker\nIm App Store nach „ki nutzung tracker“ suchen\nAuch bei Google Play\n\n#KINutzungTracker #Entwickler #Verbrauch #Kontingent #UsageNow",
     "button": "Im App Store laden",
     "variant": "b",
     "alt": "UsageNow: KI-Nutzung Tracker — Claude, Codex, Copilot & Gemini — Rest & Reset-Zeit auf einen Blick — Claude, Codex & Copilot Limits",
     "store": "https://apps.apple.com/de/app/id6818607603?pt=118326163&ct=social&mt=8",
-    "play": null,
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
     "review": {
      "label": "Sie nutzen diese App bereits? Bewerten oder rezensieren Sie sie im App Store",
      "url": "https://apps.apple.com/app/id6818607603?action=write-review"
@@ -38900,7 +38968,7 @@
     },
     "youtube": {
      "title": "Claude, Codex, Copilot & Gemini | UsageNow #Shorts",
-     "description": "Claude, Codex, Copilot & Gemini\nRest & Reset-Zeit auf einen Blick\nClaude, Codex & Copilot Limits\n\nUsageNow: KI-Nutzung Tracker\nApp Store: https://apps.apple.com/de/app/id6818607603?pt=118326163&ct=social&mt=8\nSie nutzen diese App bereits? Bewerten oder rezensieren Sie sie im App Store\nhttps://apps.apple.com/app/id6818607603?action=write-review\n\nentwickler · verbrauch · kontingent · quota · zähler · reset\n\n#Shorts #KINutzungTracker #UsageNow",
+     "description": "Claude, Codex, Copilot & Gemini\nRest & Reset-Zeit auf einen Blick\nClaude, Codex & Copilot Limits\n\nUsageNow: KI-Nutzung Tracker\nApp Store: https://apps.apple.com/de/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini\nSie nutzen diese App bereits? Bewerten oder rezensieren Sie sie im App Store\nhttps://apps.apple.com/app/id6818607603?action=write-review\n\nentwickler · verbrauch · kontingent · quota · zähler · reset\n\n#Shorts #KINutzungTracker #UsageNow",
      "tags": [
       "entwickler",
       "verbrauch",
@@ -38930,12 +38998,12 @@
      "#Contador",
      "#UsageNow"
     ],
-    "caption": "Claude, Codex, Copilot y Gemini\nLo que queda y cuándo se restablece\nLímites Claude, Codex, Copilot\nUsageNow: Monitor de uso IA\nBusca «UsageNow» en el App Store\n\n#MonitorDeUsoIA #Desarrollador #Consumo #Cuota #UsageNow",
+    "caption": "Claude, Codex, Copilot y Gemini\nLo que queda y cuándo se restablece\nLímites Claude, Codex, Copilot\nUsageNow: Monitor de uso IA\nBusca «UsageNow» en el App Store\nTambién en Google Play\n\n#MonitorDeUsoIA #Desarrollador #Consumo #Cuota #UsageNow",
     "button": "Descargar en el App Store",
     "variant": "b",
     "alt": "UsageNow: Monitor de uso IA — Claude, Codex, Copilot y Gemini — Lo que queda y cuándo se restablece — Límites Claude, Codex, Copilot",
     "store": "https://apps.apple.com/es/app/id6818607603?pt=118326163&ct=social&mt=8",
-    "play": null,
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
     "review": {
      "label": "¿Ya usas esta app? Valórala o escribe una reseña en el App Store",
      "url": "https://apps.apple.com/app/id6818607603?action=write-review"
@@ -38957,7 +39025,7 @@
     },
     "youtube": {
      "title": "Claude, Codex, Copilot y Gemini | UsageNow #Shorts",
-     "description": "Claude, Codex, Copilot y Gemini\nLo que queda y cuándo se restablece\nLímites Claude, Codex, Copilot\n\nUsageNow: Monitor de uso IA\nApp Store: https://apps.apple.com/es/app/id6818607603?pt=118326163&ct=social&mt=8\n¿Ya usas esta app? Valórala o escribe una reseña en el App Store\nhttps://apps.apple.com/app/id6818607603?action=write-review\n\ndesarrollador · consumo · cuota · contador · reinicio\n\n#Shorts #MonitorDeUsoIA #UsageNow",
+     "description": "Claude, Codex, Copilot y Gemini\nLo que queda y cuándo se restablece\nLímites Claude, Codex, Copilot\n\nUsageNow: Monitor de uso IA\nApp Store: https://apps.apple.com/es/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini\n¿Ya usas esta app? Valórala o escribe una reseña en el App Store\nhttps://apps.apple.com/app/id6818607603?action=write-review\n\ndesarrollador · consumo · cuota · contador · reinicio\n\n#Shorts #MonitorDeUsoIA #UsageNow",
      "tags": [
       "desarrollador",
       "consumo",
@@ -38986,12 +39054,12 @@
      "#Compteur",
      "#UsageNow"
     ],
-    "caption": "Claude, Codex, Copilot et Gemini\nCe qu'il reste et la remise à zéro\nLimites Claude, Codex, Copilot\nUsageNow : Suivi d'usage IA\nRecherchez « suivi utilisation ia » sur l'App Store\n\n#SuiviDusageIA #Développeur #Consommation #Quota #UsageNow",
+    "caption": "Claude, Codex, Copilot et Gemini\nCe qu'il reste et la remise à zéro\nLimites Claude, Codex, Copilot\nUsageNow : Suivi d'usage IA\nRecherchez « suivi utilisation ia » sur l'App Store\nAussi sur Google Play\n\n#SuiviDusageIA #Développeur #Consommation #Quota #UsageNow",
     "button": "Télécharger sur l'App Store",
     "variant": "b",
     "alt": "UsageNow : Suivi d'usage IA — Claude, Codex, Copilot et Gemini — Ce qu'il reste et la remise à zéro — Limites Claude, Codex, Copilot",
     "store": "https://apps.apple.com/fr/app/id6818607603?pt=118326163&ct=social&mt=8",
-    "play": null,
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
     "review": {
      "label": "Vous utilisez déjà cette app ? Notez-la ou rédigez un avis sur l’App Store",
      "url": "https://apps.apple.com/app/id6818607603?action=write-review"
@@ -39013,7 +39081,7 @@
     },
     "youtube": {
      "title": "Claude, Codex, Copilot et Gemini | UsageNow #Shorts",
-     "description": "Claude, Codex, Copilot et Gemini\nCe qu'il reste et la remise à zéro\nLimites Claude, Codex, Copilot\n\nUsageNow : Suivi d'usage IA\nApp Store: https://apps.apple.com/fr/app/id6818607603?pt=118326163&ct=social&mt=8\nVous utilisez déjà cette app ? Notez-la ou rédigez un avis sur l’App Store\nhttps://apps.apple.com/app/id6818607603?action=write-review\n\ndéveloppeur · consommation · quota · compteur · jeton\n\n#Shorts #SuiviDusageIA #UsageNow",
+     "description": "Claude, Codex, Copilot et Gemini\nCe qu'il reste et la remise à zéro\nLimites Claude, Codex, Copilot\n\nUsageNow : Suivi d'usage IA\nApp Store: https://apps.apple.com/fr/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini\nVous utilisez déjà cette app ? Notez-la ou rédigez un avis sur l’App Store\nhttps://apps.apple.com/app/id6818607603?action=write-review\n\ndéveloppeur · consommation · quota · compteur · jeton\n\n#Shorts #SuiviDusageIA #UsageNow",
      "tags": [
       "développeur",
       "consommation",
@@ -40183,12 +40251,12 @@
      "#利用状況",
      "#UsageNow"
     ],
-    "caption": "Claude・Codex・ Copilot・Geminiをまとめて\n残りとリセット時刻が ひと目でわかる\nClaude・Codex・Copilot・Gemini残量\nUsageNow：AI使用量トラッカー\nApp Storeで「UsageNow」を検索\n\n#上限 #トークン #ウィジェット #リセット #UsageNow",
+    "caption": "Claude・Codex・ Copilot・Geminiをまとめて\n残りとリセット時刻が ひと目でわかる\nClaude・Codex・Copilot・Gemini残量\nUsageNow：AI使用量トラッカー\nApp Storeで「UsageNow」を検索\nAndroidはGoogle Playで\n\n#上限 #トークン #ウィジェット #リセット #UsageNow",
     "button": "App Storeで入手",
     "variant": "b",
     "alt": "UsageNow：AI使用量トラッカー — Claude・Codex・ Copilot・Geminiをまとめて — 残りとリセット時刻が ひと目でわかる — Claude・Codex・Copilot・Gemini残量",
     "store": "https://apps.apple.com/jp/app/id6818607603?pt=118326163&ct=social&mt=8",
-    "play": null,
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
     "review": {
      "label": "このアプリをお使いですか？App Store で評価・レビューできます",
      "url": "https://apps.apple.com/app/id6818607603?action=write-review"
@@ -40211,7 +40279,7 @@
     },
     "youtube": {
      "title": "Claude・Codex・ Copilot・Geminiをまとめて | UsageNow #Shorts",
-     "description": "Claude・Codex・ Copilot・Geminiをまとめて\n残りとリセット時刻が ひと目でわかる\nClaude・Codex・Copilot・Gemini残量\n\nUsageNow：AI使用量トラッカー\nApp Store: https://apps.apple.com/jp/app/id6818607603?pt=118326163&ct=social&mt=8\nこのアプリをお使いですか？App Store で評価・レビューできます\nhttps://apps.apple.com/app/id6818607603?action=write-review\n\n開発者 · エンジニア · 制限 · 上限 · トークン · ウィジェット\n\n#Shorts #上限 #UsageNow",
+     "description": "Claude・Codex・ Copilot・Geminiをまとめて\n残りとリセット時刻が ひと目でわかる\nClaude・Codex・Copilot・Gemini残量\n\nUsageNow：AI使用量トラッカー\nApp Store: https://apps.apple.com/jp/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini\nこのアプリをお使いですか？App Store で評価・レビューできます\nhttps://apps.apple.com/app/id6818607603?action=write-review\n\n開発者 · エンジニア · 制限 · 上限 · トークン · ウィジェット\n\n#Shorts #上限 #UsageNow",
      "tags": [
       "開発者",
       "エンジニア",
@@ -51372,12 +51440,12 @@
      "#Weekly",
      "#UsageNow"
     ],
-    "caption": "Now you know when it resets\nUsageNow shows every account\nUsageNow: AI Usage Tracker\nSearch “copilot usage” on the App Store\n\n#Reset #Countdown #Agent #Session #UsageNow",
+    "caption": "Now you know when it resets\nUsageNow shows every account\nUsageNow: AI Usage Tracker\nSearch “copilot usage” on the App Store\nAlso on Google Play\n\n#Reset #Countdown #Agent #Session #UsageNow",
     "button": "Get it on the App Store",
     "variant": "c",
     "alt": "UsageNow: AI Usage Tracker — Now you know when it resets — UsageNow shows every account",
     "store": "https://apps.apple.com/us/app/id6818607603?pt=118326163&ct=social&mt=8",
-    "play": null,
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
     "review": {
      "label": "Already using this app? Rate or review it on the App Store",
      "url": "https://apps.apple.com/app/id6818607603?action=write-review"
@@ -51399,7 +51467,7 @@
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "Now you know when it resets\nUsageNow shows every account\nUsageNow: AI Usage Tracker\nSearch “copilot usage” on the App Store\n\n#Reset #Countdown #Agent #Session #UsageNow\n\nGet it on the App Store: https://apps.apple.com/us/app/id6818607603?pt=118326163&ct=social&mt=8",
+     "description": "Now you know when it resets\nUsageNow shows every account\nUsageNow: AI Usage Tracker\nSearch “copilot usage” on the App Store\nAlso on Google Play\n\n#Reset #Countdown #Agent #Session #UsageNow\n\nGet it on the App Store: https://apps.apple.com/us/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
      "link": "https://apps.apple.com/us/app/id6818607603?pt=118326163&ct=social&mt=8"
     }
    },
@@ -51420,12 +51488,12 @@
      "#倒數計時",
      "#UsageNow"
     ],
-    "caption": "哪個 AI 帳號 還有額度？\nUsageNow：AI 用量與額度追蹤\n在 App Store 搜尋「ai 用量追蹤」\n\n#限額 #配額 #限制 #剩餘 #UsageNow",
+    "caption": "哪個 AI 帳號 還有額度？\nUsageNow：AI 用量與額度追蹤\n在 App Store 搜尋「ai 用量追蹤」\nAndroid 版在 Google Play\n\n#限額 #配額 #限制 #剩餘 #UsageNow",
     "button": "在 App Store 下載",
     "variant": "a",
     "alt": "UsageNow：AI 用量與額度追蹤 — 哪個 AI 帳號 還有額度？",
     "store": "https://apps.apple.com/tw/app/id6818607603?pt=118326163&ct=social&mt=8",
-    "play": null,
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
     "review": {
      "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
      "url": "https://apps.apple.com/app/id6818607603?action=write-review"
@@ -51447,7 +51515,7 @@
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "哪個 AI 帳號 還有額度？\nUsageNow：AI 用量與額度追蹤\n在 App Store 搜尋「ai 用量追蹤」\n\n#限額 #配額 #限制 #剩餘 #UsageNow\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6818607603?pt=118326163&ct=social&mt=8",
+     "description": "哪個 AI 帳號 還有額度？\nUsageNow：AI 用量與額度追蹤\n在 App Store 搜尋「ai 用量追蹤」\nAndroid 版在 Google Play\n\n#限額 #配額 #限制 #剩餘 #UsageNow\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
      "link": "https://apps.apple.com/tw/app/id6818607603?pt=118326163&ct=social&mt=8"
     }
    },
@@ -51468,12 +51536,12 @@
      "#利用状況",
      "#UsageNow"
     ],
-    "caption": "UsageNowで 全アカウントの残量\n5時間・週間ごとに 90%でお知らせ\nClaude・Codex・Copilot・Gemini残量\nUsageNow：AI使用量トラッカー\nApp Storeで「codex 使用制限」を検索\n\n#上限 #トークン #ウィジェット #リセット #UsageNow",
+    "caption": "UsageNowで 全アカウントの残量\n5時間・週間ごとに 90%でお知らせ\nClaude・Codex・Copilot・Gemini残量\nUsageNow：AI使用量トラッカー\nApp Storeで「codex 使用制限」を検索\nAndroidはGoogle Playで\n\n#上限 #トークン #ウィジェット #リセット #UsageNow",
     "button": "App Storeで入手",
     "variant": "b",
     "alt": "UsageNow：AI使用量トラッカー — UsageNowで 全アカウントの残量 — 5時間・週間ごとに 90%でお知らせ — Claude・Codex・Copilot・Gemini残量",
     "store": "https://apps.apple.com/jp/app/id6818607603?pt=118326163&ct=social&mt=8",
-    "play": null,
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
     "review": {
      "label": "このアプリをお使いですか？App Store で評価・レビューできます",
      "url": "https://apps.apple.com/app/id6818607603?action=write-review"
@@ -51495,7 +51563,7 @@
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "UsageNowで 全アカウントの残量\n5時間・週間ごとに 90%でお知らせ\nClaude・Codex・Copilot・Gemini残量\nUsageNow：AI使用量トラッカー\nApp Storeで「codex 使用制限」を検索\n\n#上限 #トークン #ウィジェット #リセット #UsageNow\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6818607603?pt=118326163&ct=social&mt=8",
+     "description": "UsageNowで 全アカウントの残量\n5時間・週間ごとに 90%でお知らせ\nClaude・Codex・Copilot・Gemini残量\nUsageNow：AI使用量トラッカー\nApp Storeで「codex 使用制限」を検索\nAndroidはGoogle Playで\n\n#上限 #トークン #ウィジェット #リセット #UsageNow\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
      "link": "https://apps.apple.com/jp/app/id6818607603?pt=118326163&ct=social&mt=8"
     }
    },
@@ -51516,12 +51584,12 @@
      "#Entwickler",
      "#UsageNow"
     ],
-    "caption": "UsageNow zeigt alle Konten\nHinweis bei 90 % für 5 Std. & Woche\nUsageNow: KI-Nutzung Tracker\nIm App Store nach „ki nutzung tracker“ suchen\n\n#Quota #Zähler #Reset #Countdown #UsageNow",
+    "caption": "UsageNow zeigt alle Konten\nHinweis bei 90 % für 5 Std. & Woche\nUsageNow: KI-Nutzung Tracker\nIm App Store nach „ki nutzung tracker“ suchen\nAuch bei Google Play\n\n#Quota #Zähler #Reset #Countdown #UsageNow",
     "button": "Im App Store laden",
     "variant": "b",
     "alt": "UsageNow: KI-Nutzung Tracker — UsageNow zeigt alle Konten — Hinweis bei 90 % für 5 Std. & Woche",
     "store": "https://apps.apple.com/de/app/id6818607603?pt=118326163&ct=social&mt=8",
-    "play": null,
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
     "review": {
      "label": "Sie nutzen diese App bereits? Bewerten oder rezensieren Sie sie im App Store",
      "url": "https://apps.apple.com/app/id6818607603?action=write-review"
@@ -51543,7 +51611,7 @@
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "UsageNow zeigt alle Konten\nHinweis bei 90 % für 5 Std. & Woche\nUsageNow: KI-Nutzung Tracker\nIm App Store nach „ki nutzung tracker“ suchen\n\n#Quota #Zähler #Reset #Countdown #UsageNow\n\nIm App Store laden: https://apps.apple.com/de/app/id6818607603?pt=118326163&ct=social&mt=8",
+     "description": "UsageNow zeigt alle Konten\nHinweis bei 90 % für 5 Std. & Woche\nUsageNow: KI-Nutzung Tracker\nIm App Store nach „ki nutzung tracker“ suchen\nAuch bei Google Play\n\n#Quota #Zähler #Reset #Countdown #UsageNow\n\nIm App Store laden: https://apps.apple.com/de/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
      "link": "https://apps.apple.com/de/app/id6818607603?pt=118326163&ct=social&mt=8"
     }
    },
@@ -51564,12 +51632,12 @@
      "#Cuota",
      "#UsageNow"
     ],
-    "caption": "UsageNow muestra todas tus cuentas\nAviso al 90 % en 5 horas y semanal\nUsageNow: Monitor de uso IA\nBusca «UsageNow» en el App Store\n\n#Contador #Reinicio #Desarrollador #Consumo #UsageNow",
+    "caption": "UsageNow muestra todas tus cuentas\nAviso al 90 % en 5 horas y semanal\nUsageNow: Monitor de uso IA\nBusca «UsageNow» en el App Store\nTambién en Google Play\n\n#Contador #Reinicio #Desarrollador #Consumo #UsageNow",
     "button": "Descargar en el App Store",
     "variant": "b",
     "alt": "UsageNow: Monitor de uso IA — UsageNow muestra todas tus cuentas — Aviso al 90 % en 5 horas y semanal",
     "store": "https://apps.apple.com/es/app/id6818607603?pt=118326163&ct=social&mt=8",
-    "play": null,
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
     "review": {
      "label": "¿Ya usas esta app? Valórala o escribe una reseña en el App Store",
      "url": "https://apps.apple.com/app/id6818607603?action=write-review"
@@ -51590,7 +51658,7 @@
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "UsageNow muestra todas tus cuentas\nAviso al 90 % en 5 horas y semanal\nUsageNow: Monitor de uso IA\nBusca «UsageNow» en el App Store\n\n#Contador #Reinicio #Desarrollador #Consumo #UsageNow\n\nDescargar en el App Store: https://apps.apple.com/es/app/id6818607603?pt=118326163&ct=social&mt=8",
+     "description": "UsageNow muestra todas tus cuentas\nAviso al 90 % en 5 horas y semanal\nUsageNow: Monitor de uso IA\nBusca «UsageNow» en el App Store\nTambién en Google Play\n\n#Contador #Reinicio #Desarrollador #Consumo #UsageNow\n\nDescargar en el App Store: https://apps.apple.com/es/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
      "link": "https://apps.apple.com/es/app/id6818607603?pt=118326163&ct=social&mt=8"
     }
    },
@@ -51611,12 +51679,12 @@
      "#Quota",
      "#UsageNow"
     ],
-    "caption": "UsageNow affiche tous vos comptes\nAlerte à 90 % sur 5 h et semaine\nUsageNow : Suivi d'usage IA\nRecherchez « suivi utilisation ia » sur l'App Store\n\n#Compteur #Jeton #Développeur #Consommation #UsageNow",
+    "caption": "UsageNow affiche tous vos comptes\nAlerte à 90 % sur 5 h et semaine\nUsageNow : Suivi d'usage IA\nRecherchez « suivi utilisation ia » sur l'App Store\nAussi sur Google Play\n\n#Compteur #Jeton #Développeur #Consommation #UsageNow",
     "button": "Télécharger sur l'App Store",
     "variant": "b",
     "alt": "UsageNow : Suivi d'usage IA — UsageNow affiche tous vos comptes — Alerte à 90 % sur 5 h et semaine",
     "store": "https://apps.apple.com/fr/app/id6818607603?pt=118326163&ct=social&mt=8",
-    "play": null,
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
     "review": {
      "label": "Vous utilisez déjà cette app ? Notez-la ou rédigez un avis sur l’App Store",
      "url": "https://apps.apple.com/app/id6818607603?action=write-review"
@@ -51637,7 +51705,7 @@
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "UsageNow affiche tous vos comptes\nAlerte à 90 % sur 5 h et semaine\nUsageNow : Suivi d'usage IA\nRecherchez « suivi utilisation ia » sur l'App Store\n\n#Compteur #Jeton #Développeur #Consommation #UsageNow\n\nTélécharger sur l'App Store: https://apps.apple.com/fr/app/id6818607603?pt=118326163&ct=social&mt=8",
+     "description": "UsageNow affiche tous vos comptes\nAlerte à 90 % sur 5 h et semaine\nUsageNow : Suivi d'usage IA\nRecherchez « suivi utilisation ia » sur l'App Store\nAussi sur Google Play\n\n#Compteur #Jeton #Développeur #Consommation #UsageNow\n\nTélécharger sur l'App Store: https://apps.apple.com/fr/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
      "link": "https://apps.apple.com/fr/app/id6818607603?pt=118326163&ct=social&mt=8"
     }
    },
@@ -56362,12 +56430,12 @@
      "#Reset",
      "#UsageNow"
     ],
-    "caption": "Translated into 50 languages\nClaude, Codex, Copilot & Gemini\nClaude, Codex & Copilot Limits\nUsageNow: AI Usage Tracker\nSearch “copilot usage” on the App Store\n\n#AIUsageTracker #Developer #Coding #Quota #UsageNow",
+    "caption": "Translated into 50 languages\nClaude, Codex, Copilot & Gemini\nClaude, Codex & Copilot Limits\nUsageNow: AI Usage Tracker\nSearch “copilot usage” on the App Store\nAlso on Google Play\n\n#AIUsageTracker #Developer #Coding #Quota #UsageNow",
     "button": "Get it on the App Store",
     "variant": "c",
     "alt": "UsageNow: AI Usage Tracker — Translated into 50 languages — Claude, Codex, Copilot & Gemini — Claude, Codex & Copilot Limits",
     "store": "https://apps.apple.com/us/app/id6818607603?pt=118326163&ct=social&mt=8",
-    "play": null,
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
     "review": {
      "label": "Already using this app? Rate or review it on the App Store",
      "url": "https://apps.apple.com/app/id6818607603?action=write-review"
@@ -56389,7 +56457,7 @@
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "Translated into 50 languages\nClaude, Codex, Copilot & Gemini\nClaude, Codex & Copilot Limits\nUsageNow: AI Usage Tracker\nSearch “copilot usage” on the App Store\n\n#AIUsageTracker #Developer #Coding #Quota #UsageNow\n\nGet it on the App Store: https://apps.apple.com/us/app/id6818607603?pt=118326163&ct=social&mt=8",
+     "description": "Translated into 50 languages\nClaude, Codex, Copilot & Gemini\nClaude, Codex & Copilot Limits\nUsageNow: AI Usage Tracker\nSearch “copilot usage” on the App Store\nAlso on Google Play\n\n#AIUsageTracker #Developer #Coding #Quota #UsageNow\n\nGet it on the App Store: https://apps.apple.com/us/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
      "link": "https://apps.apple.com/us/app/id6818607603?pt=118326163&ct=social&mt=8"
     }
    },
@@ -56410,12 +56478,12 @@
      "#限額",
      "#UsageNow"
     ],
-    "caption": "Claude、Codex、Copilot、Gemini 一起看\n剩多少、何時重置 一眼看清\nClaude、Codex、Copilot 重置倒數\nUsageNow：AI 用量與額度追蹤\n在 App Store 搜尋「ai 用量追蹤」\n\n#AI用量與額度追蹤 #開發者 #工程師 #使用量 #UsageNow",
+    "caption": "Claude、Codex、Copilot、Gemini 一起看\n剩多少、何時重置 一眼看清\nClaude、Codex、Copilot 重置倒數\nUsageNow：AI 用量與額度追蹤\n在 App Store 搜尋「ai 用量追蹤」\nAndroid 版在 Google Play\n\n#AI用量與額度追蹤 #開發者 #工程師 #使用量 #UsageNow",
     "button": "在 App Store 下載",
     "variant": "b",
     "alt": "UsageNow：AI 用量與額度追蹤 — Claude、Codex、Copilot、Gemini 一起看 — 剩多少、何時重置 一眼看清 — Claude、Codex、Copilot 重置倒數",
     "store": "https://apps.apple.com/tw/app/id6818607603?pt=118326163&ct=social&mt=8",
-    "play": null,
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
     "review": {
      "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
      "url": "https://apps.apple.com/app/id6818607603?action=write-review"
@@ -56437,7 +56505,7 @@
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "Claude、Codex、Copilot、Gemini 一起看\n剩多少、何時重置 一眼看清\nClaude、Codex、Copilot 重置倒數\nUsageNow：AI 用量與額度追蹤\n在 App Store 搜尋「ai 用量追蹤」\n\n#AI用量與額度追蹤 #開發者 #工程師 #使用量 #UsageNow\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6818607603?pt=118326163&ct=social&mt=8",
+     "description": "Claude、Codex、Copilot、Gemini 一起看\n剩多少、何時重置 一眼看清\nClaude、Codex、Copilot 重置倒數\nUsageNow：AI 用量與額度追蹤\n在 App Store 搜尋「ai 用量追蹤」\nAndroid 版在 Google Play\n\n#AI用量與額度追蹤 #開發者 #工程師 #使用量 #UsageNow\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
      "link": "https://apps.apple.com/tw/app/id6818607603?pt=118326163&ct=social&mt=8"
     }
    },
@@ -56458,12 +56526,12 @@
      "#上限",
      "#UsageNow"
     ],
-    "caption": "Claude・Codex・ Copilot・Geminiをまとめて\n残りとリセット時刻が ひと目でわかる\nClaude・Codex・Copilot・Gemini残量\nUsageNow：AI使用量トラッカー\nApp Storeで「codex 使用制限」を検索\n\n#AI使用量トラッカー #開発者 #エンジニア #制限 #UsageNow",
+    "caption": "Claude・Codex・ Copilot・Geminiをまとめて\n残りとリセット時刻が ひと目でわかる\nClaude・Codex・Copilot・Gemini残量\nUsageNow：AI使用量トラッカー\nApp Storeで「codex 使用制限」を検索\nAndroidはGoogle Playで\n\n#AI使用量トラッカー #開発者 #エンジニア #制限 #UsageNow",
     "button": "App Storeで入手",
     "variant": "b",
     "alt": "UsageNow：AI使用量トラッカー — Claude・Codex・ Copilot・Geminiをまとめて — 残りとリセット時刻が ひと目でわかる — Claude・Codex・Copilot・Gemini残量",
     "store": "https://apps.apple.com/jp/app/id6818607603?pt=118326163&ct=social&mt=8",
-    "play": null,
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
     "review": {
      "label": "このアプリをお使いですか？App Store で評価・レビューできます",
      "url": "https://apps.apple.com/app/id6818607603?action=write-review"
@@ -56485,7 +56553,7 @@
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "Claude・Codex・ Copilot・Geminiをまとめて\n残りとリセット時刻が ひと目でわかる\nClaude・Codex・Copilot・Gemini残量\nUsageNow：AI使用量トラッカー\nApp Storeで「codex 使用制限」を検索\n\n#AI使用量トラッカー #開発者 #エンジニア #制限 #UsageNow\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6818607603?pt=118326163&ct=social&mt=8",
+     "description": "Claude・Codex・ Copilot・Geminiをまとめて\n残りとリセット時刻が ひと目でわかる\nClaude・Codex・Copilot・Gemini残量\nUsageNow：AI使用量トラッカー\nApp Storeで「codex 使用制限」を検索\nAndroidはGoogle Playで\n\n#AI使用量トラッカー #開発者 #エンジニア #制限 #UsageNow\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
      "link": "https://apps.apple.com/jp/app/id6818607603?pt=118326163&ct=social&mt=8"
     }
    },
@@ -56506,12 +56574,12 @@
      "#Quota",
      "#UsageNow"
     ],
-    "caption": "Claude, Codex, Copilot & Gemini\nRest & Reset-Zeit auf einen Blick\nClaude, Codex & Copilot Limits\nUsageNow: KI-Nutzung Tracker\nIm App Store nach „ki nutzung tracker“ suchen\n\n#KINutzungTracker #Entwickler #Verbrauch #Kontingent #UsageNow",
+    "caption": "Claude, Codex, Copilot & Gemini\nRest & Reset-Zeit auf einen Blick\nClaude, Codex & Copilot Limits\nUsageNow: KI-Nutzung Tracker\nIm App Store nach „ki nutzung tracker“ suchen\nAuch bei Google Play\n\n#KINutzungTracker #Entwickler #Verbrauch #Kontingent #UsageNow",
     "button": "Im App Store laden",
     "variant": "b",
     "alt": "UsageNow: KI-Nutzung Tracker — Claude, Codex, Copilot & Gemini — Rest & Reset-Zeit auf einen Blick — Claude, Codex & Copilot Limits",
     "store": "https://apps.apple.com/de/app/id6818607603?pt=118326163&ct=social&mt=8",
-    "play": null,
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
     "review": {
      "label": "Sie nutzen diese App bereits? Bewerten oder rezensieren Sie sie im App Store",
      "url": "https://apps.apple.com/app/id6818607603?action=write-review"
@@ -56533,7 +56601,7 @@
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "Claude, Codex, Copilot & Gemini\nRest & Reset-Zeit auf einen Blick\nClaude, Codex & Copilot Limits\nUsageNow: KI-Nutzung Tracker\nIm App Store nach „ki nutzung tracker“ suchen\n\n#KINutzungTracker #Entwickler #Verbrauch #Kontingent #UsageNow\n\nIm App Store laden: https://apps.apple.com/de/app/id6818607603?pt=118326163&ct=social&mt=8",
+     "description": "Claude, Codex, Copilot & Gemini\nRest & Reset-Zeit auf einen Blick\nClaude, Codex & Copilot Limits\nUsageNow: KI-Nutzung Tracker\nIm App Store nach „ki nutzung tracker“ suchen\nAuch bei Google Play\n\n#KINutzungTracker #Entwickler #Verbrauch #Kontingent #UsageNow\n\nIm App Store laden: https://apps.apple.com/de/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
      "link": "https://apps.apple.com/de/app/id6818607603?pt=118326163&ct=social&mt=8"
     }
    },
@@ -56554,12 +56622,12 @@
      "#Contador",
      "#UsageNow"
     ],
-    "caption": "Claude, Codex, Copilot y Gemini\nLo que queda y cuándo se restablece\nLímites Claude, Codex, Copilot\nUsageNow: Monitor de uso IA\nBusca «UsageNow» en el App Store\n\n#MonitorDeUsoIA #Desarrollador #Consumo #Cuota #UsageNow",
+    "caption": "Claude, Codex, Copilot y Gemini\nLo que queda y cuándo se restablece\nLímites Claude, Codex, Copilot\nUsageNow: Monitor de uso IA\nBusca «UsageNow» en el App Store\nTambién en Google Play\n\n#MonitorDeUsoIA #Desarrollador #Consumo #Cuota #UsageNow",
     "button": "Descargar en el App Store",
     "variant": "b",
     "alt": "UsageNow: Monitor de uso IA — Claude, Codex, Copilot y Gemini — Lo que queda y cuándo se restablece — Límites Claude, Codex, Copilot",
     "store": "https://apps.apple.com/es/app/id6818607603?pt=118326163&ct=social&mt=8",
-    "play": null,
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
     "review": {
      "label": "¿Ya usas esta app? Valórala o escribe una reseña en el App Store",
      "url": "https://apps.apple.com/app/id6818607603?action=write-review"
@@ -56580,7 +56648,7 @@
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "Claude, Codex, Copilot y Gemini\nLo que queda y cuándo se restablece\nLímites Claude, Codex, Copilot\nUsageNow: Monitor de uso IA\nBusca «UsageNow» en el App Store\n\n#MonitorDeUsoIA #Desarrollador #Consumo #Cuota #UsageNow\n\nDescargar en el App Store: https://apps.apple.com/es/app/id6818607603?pt=118326163&ct=social&mt=8",
+     "description": "Claude, Codex, Copilot y Gemini\nLo que queda y cuándo se restablece\nLímites Claude, Codex, Copilot\nUsageNow: Monitor de uso IA\nBusca «UsageNow» en el App Store\nTambién en Google Play\n\n#MonitorDeUsoIA #Desarrollador #Consumo #Cuota #UsageNow\n\nDescargar en el App Store: https://apps.apple.com/es/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
      "link": "https://apps.apple.com/es/app/id6818607603?pt=118326163&ct=social&mt=8"
     }
    },
@@ -56601,12 +56669,12 @@
      "#Compteur",
      "#UsageNow"
     ],
-    "caption": "Claude, Codex, Copilot et Gemini\nCe qu'il reste et la remise à zéro\nLimites Claude, Codex, Copilot\nUsageNow : Suivi d'usage IA\nRecherchez « suivi utilisation ia » sur l'App Store\n\n#SuiviDusageIA #Développeur #Consommation #Quota #UsageNow",
+    "caption": "Claude, Codex, Copilot et Gemini\nCe qu'il reste et la remise à zéro\nLimites Claude, Codex, Copilot\nUsageNow : Suivi d'usage IA\nRecherchez « suivi utilisation ia » sur l'App Store\nAussi sur Google Play\n\n#SuiviDusageIA #Développeur #Consommation #Quota #UsageNow",
     "button": "Télécharger sur l'App Store",
     "variant": "b",
     "alt": "UsageNow : Suivi d'usage IA — Claude, Codex, Copilot et Gemini — Ce qu'il reste et la remise à zéro — Limites Claude, Codex, Copilot",
     "store": "https://apps.apple.com/fr/app/id6818607603?pt=118326163&ct=social&mt=8",
-    "play": null,
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
     "review": {
      "label": "Vous utilisez déjà cette app ? Notez-la ou rédigez un avis sur l’App Store",
      "url": "https://apps.apple.com/app/id6818607603?action=write-review"
@@ -56627,7 +56695,7 @@
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "Claude, Codex, Copilot et Gemini\nCe qu'il reste et la remise à zéro\nLimites Claude, Codex, Copilot\nUsageNow : Suivi d'usage IA\nRecherchez « suivi utilisation ia » sur l'App Store\n\n#SuiviDusageIA #Développeur #Consommation #Quota #UsageNow\n\nTélécharger sur l'App Store: https://apps.apple.com/fr/app/id6818607603?pt=118326163&ct=social&mt=8",
+     "description": "Claude, Codex, Copilot et Gemini\nCe qu'il reste et la remise à zéro\nLimites Claude, Codex, Copilot\nUsageNow : Suivi d'usage IA\nRecherchez « suivi utilisation ia » sur l'App Store\nAussi sur Google Play\n\n#SuiviDusageIA #Développeur #Consommation #Quota #UsageNow\n\nTélécharger sur l'App Store: https://apps.apple.com/fr/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
      "link": "https://apps.apple.com/fr/app/id6818607603?pt=118326163&ct=social&mt=8"
     }
    },
@@ -57560,12 +57628,12 @@
      "#利用状況",
      "#UsageNow"
     ],
-    "caption": "Claude・Codex・ Copilot・Geminiをまとめて\n残りとリセット時刻が ひと目でわかる\nClaude・Codex・Copilot・Gemini残量\nUsageNow：AI使用量トラッカー\nApp Storeで「UsageNow」を検索\n\n#上限 #トークン #ウィジェット #リセット #UsageNow",
+    "caption": "Claude・Codex・ Copilot・Geminiをまとめて\n残りとリセット時刻が ひと目でわかる\nClaude・Codex・Copilot・Gemini残量\nUsageNow：AI使用量トラッカー\nApp Storeで「UsageNow」を検索\nAndroidはGoogle Playで\n\n#上限 #トークン #ウィジェット #リセット #UsageNow",
     "button": "App Storeで入手",
     "variant": "b",
     "alt": "UsageNow：AI使用量トラッカー — Claude・Codex・ Copilot・Geminiをまとめて — 残りとリセット時刻が ひと目でわかる — Claude・Codex・Copilot・Gemini残量",
     "store": "https://apps.apple.com/jp/app/id6818607603?pt=118326163&ct=social&mt=8",
-    "play": null,
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
     "review": {
      "label": "このアプリをお使いですか？App Store で評価・レビューできます",
      "url": "https://apps.apple.com/app/id6818607603?action=write-review"
@@ -57587,7 +57655,7 @@
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "Claude・Codex・ Copilot・Geminiをまとめて\n残りとリセット時刻が ひと目でわかる\nClaude・Codex・Copilot・Gemini残量\nUsageNow：AI使用量トラッカー\nApp Storeで「UsageNow」を検索\n\n#上限 #トークン #ウィジェット #リセット #UsageNow\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6818607603?pt=118326163&ct=social&mt=8",
+     "description": "Claude・Codex・ Copilot・Geminiをまとめて\n残りとリセット時刻が ひと目でわかる\nClaude・Codex・Copilot・Gemini残量\nUsageNow：AI使用量トラッカー\nApp Storeで「UsageNow」を検索\nAndroidはGoogle Playで\n\n#上限 #トークン #ウィジェット #リセット #UsageNow\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
      "link": "https://apps.apple.com/jp/app/id6818607603?pt=118326163&ct=social&mt=8"
     }
    },
@@ -68179,12 +68247,12 @@
      "#Weekly",
      "#UsageNow"
     ],
-    "caption": "Now you know when it resets\nUsageNow shows every account\nUsageNow: AI Usage Tracker\nSearch “copilot usage” on the App Store\n\n#Reset #Countdown #Agent #Session #UsageNow",
+    "caption": "Now you know when it resets\nUsageNow shows every account\nUsageNow: AI Usage Tracker\nSearch “copilot usage” on the App Store\nAlso on Google Play\n\n#Reset #Countdown #Agent #Session #UsageNow",
     "button": "Get it on the App Store",
     "variant": "c",
     "alt": "UsageNow: AI Usage Tracker — Now you know when it resets — UsageNow shows every account",
     "store": "https://apps.apple.com/us/app/id6818607603?pt=118326163&ct=social&mt=8",
-    "play": null,
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
     "review": {
      "label": "Already using this app? Rate or review it on the App Store",
      "url": "https://apps.apple.com/app/id6818607603?action=write-review"
@@ -68206,7 +68274,7 @@
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "Now you know when it resets\nUsageNow shows every account\nUsageNow: AI Usage Tracker\nSearch “copilot usage” on the App Store\n\n#Reset #Countdown #Agent #Session #UsageNow\n\nGet it on the App Store: https://apps.apple.com/us/app/id6818607603?pt=118326163&ct=social&mt=8"
+     "caption": "Now you know when it resets\nUsageNow shows every account\nUsageNow: AI Usage Tracker\nSearch “copilot usage” on the App Store\nAlso on Google Play\n\n#Reset #Countdown #Agent #Session #UsageNow\n\nGet it on the App Store: https://apps.apple.com/us/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini"
     }
    },
    {
@@ -68226,12 +68294,12 @@
      "#倒數計時",
      "#UsageNow"
     ],
-    "caption": "哪個 AI 帳號 還有額度？\nUsageNow：AI 用量與額度追蹤\n在 App Store 搜尋「ai 用量追蹤」\n\n#限額 #配額 #限制 #剩餘 #UsageNow",
+    "caption": "哪個 AI 帳號 還有額度？\nUsageNow：AI 用量與額度追蹤\n在 App Store 搜尋「ai 用量追蹤」\nAndroid 版在 Google Play\n\n#限額 #配額 #限制 #剩餘 #UsageNow",
     "button": "在 App Store 下載",
     "variant": "a",
     "alt": "UsageNow：AI 用量與額度追蹤 — 哪個 AI 帳號 還有額度？",
     "store": "https://apps.apple.com/tw/app/id6818607603?pt=118326163&ct=social&mt=8",
-    "play": null,
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
     "review": {
      "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
      "url": "https://apps.apple.com/app/id6818607603?action=write-review"
@@ -68253,7 +68321,7 @@
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "哪個 AI 帳號 還有額度？\nUsageNow：AI 用量與額度追蹤\n在 App Store 搜尋「ai 用量追蹤」\n\n#限額 #配額 #限制 #剩餘 #UsageNow\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6818607603?pt=118326163&ct=social&mt=8"
+     "caption": "哪個 AI 帳號 還有額度？\nUsageNow：AI 用量與額度追蹤\n在 App Store 搜尋「ai 用量追蹤」\nAndroid 版在 Google Play\n\n#限額 #配額 #限制 #剩餘 #UsageNow\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini"
     }
    },
    {
@@ -68273,12 +68341,12 @@
      "#利用状況",
      "#UsageNow"
     ],
-    "caption": "UsageNowで 全アカウントの残量\n5時間・週間ごとに 90%でお知らせ\nClaude・Codex・Copilot・Gemini残量\nUsageNow：AI使用量トラッカー\nApp Storeで「codex 使用制限」を検索\n\n#上限 #トークン #ウィジェット #リセット #UsageNow",
+    "caption": "UsageNowで 全アカウントの残量\n5時間・週間ごとに 90%でお知らせ\nClaude・Codex・Copilot・Gemini残量\nUsageNow：AI使用量トラッカー\nApp Storeで「codex 使用制限」を検索\nAndroidはGoogle Playで\n\n#上限 #トークン #ウィジェット #リセット #UsageNow",
     "button": "App Storeで入手",
     "variant": "b",
     "alt": "UsageNow：AI使用量トラッカー — UsageNowで 全アカウントの残量 — 5時間・週間ごとに 90%でお知らせ — Claude・Codex・Copilot・Gemini残量",
     "store": "https://apps.apple.com/jp/app/id6818607603?pt=118326163&ct=social&mt=8",
-    "play": null,
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
     "review": {
      "label": "このアプリをお使いですか？App Store で評価・レビューできます",
      "url": "https://apps.apple.com/app/id6818607603?action=write-review"
@@ -68300,7 +68368,7 @@
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "UsageNowで 全アカウントの残量\n5時間・週間ごとに 90%でお知らせ\nClaude・Codex・Copilot・Gemini残量\nUsageNow：AI使用量トラッカー\nApp Storeで「codex 使用制限」を検索\n\n#上限 #トークン #ウィジェット #リセット #UsageNow\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6818607603?pt=118326163&ct=social&mt=8"
+     "caption": "UsageNowで 全アカウントの残量\n5時間・週間ごとに 90%でお知らせ\nClaude・Codex・Copilot・Gemini残量\nUsageNow：AI使用量トラッカー\nApp Storeで「codex 使用制限」を検索\nAndroidはGoogle Playで\n\n#上限 #トークン #ウィジェット #リセット #UsageNow\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini"
     }
    },
    {
@@ -68320,12 +68388,12 @@
      "#Entwickler",
      "#UsageNow"
     ],
-    "caption": "UsageNow zeigt alle Konten\nHinweis bei 90 % für 5 Std. & Woche\nUsageNow: KI-Nutzung Tracker\nIm App Store nach „ki nutzung tracker“ suchen\n\n#Quota #Zähler #Reset #Countdown #UsageNow",
+    "caption": "UsageNow zeigt alle Konten\nHinweis bei 90 % für 5 Std. & Woche\nUsageNow: KI-Nutzung Tracker\nIm App Store nach „ki nutzung tracker“ suchen\nAuch bei Google Play\n\n#Quota #Zähler #Reset #Countdown #UsageNow",
     "button": "Im App Store laden",
     "variant": "b",
     "alt": "UsageNow: KI-Nutzung Tracker — UsageNow zeigt alle Konten — Hinweis bei 90 % für 5 Std. & Woche",
     "store": "https://apps.apple.com/de/app/id6818607603?pt=118326163&ct=social&mt=8",
-    "play": null,
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
     "review": {
      "label": "Sie nutzen diese App bereits? Bewerten oder rezensieren Sie sie im App Store",
      "url": "https://apps.apple.com/app/id6818607603?action=write-review"
@@ -68347,7 +68415,7 @@
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "UsageNow zeigt alle Konten\nHinweis bei 90 % für 5 Std. & Woche\nUsageNow: KI-Nutzung Tracker\nIm App Store nach „ki nutzung tracker“ suchen\n\n#Quota #Zähler #Reset #Countdown #UsageNow\n\nIm App Store laden: https://apps.apple.com/de/app/id6818607603?pt=118326163&ct=social&mt=8"
+     "caption": "UsageNow zeigt alle Konten\nHinweis bei 90 % für 5 Std. & Woche\nUsageNow: KI-Nutzung Tracker\nIm App Store nach „ki nutzung tracker“ suchen\nAuch bei Google Play\n\n#Quota #Zähler #Reset #Countdown #UsageNow\n\nIm App Store laden: https://apps.apple.com/de/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini"
     }
    },
    {
@@ -68367,12 +68435,12 @@
      "#Cuota",
      "#UsageNow"
     ],
-    "caption": "UsageNow muestra todas tus cuentas\nAviso al 90 % en 5 horas y semanal\nUsageNow: Monitor de uso IA\nBusca «UsageNow» en el App Store\n\n#Contador #Reinicio #Desarrollador #Consumo #UsageNow",
+    "caption": "UsageNow muestra todas tus cuentas\nAviso al 90 % en 5 horas y semanal\nUsageNow: Monitor de uso IA\nBusca «UsageNow» en el App Store\nTambién en Google Play\n\n#Contador #Reinicio #Desarrollador #Consumo #UsageNow",
     "button": "Descargar en el App Store",
     "variant": "b",
     "alt": "UsageNow: Monitor de uso IA — UsageNow muestra todas tus cuentas — Aviso al 90 % en 5 horas y semanal",
     "store": "https://apps.apple.com/es/app/id6818607603?pt=118326163&ct=social&mt=8",
-    "play": null,
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
     "review": {
      "label": "¿Ya usas esta app? Valórala o escribe una reseña en el App Store",
      "url": "https://apps.apple.com/app/id6818607603?action=write-review"
@@ -68393,7 +68461,7 @@
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "UsageNow muestra todas tus cuentas\nAviso al 90 % en 5 horas y semanal\nUsageNow: Monitor de uso IA\nBusca «UsageNow» en el App Store\n\n#Contador #Reinicio #Desarrollador #Consumo #UsageNow\n\nDescargar en el App Store: https://apps.apple.com/es/app/id6818607603?pt=118326163&ct=social&mt=8"
+     "caption": "UsageNow muestra todas tus cuentas\nAviso al 90 % en 5 horas y semanal\nUsageNow: Monitor de uso IA\nBusca «UsageNow» en el App Store\nTambién en Google Play\n\n#Contador #Reinicio #Desarrollador #Consumo #UsageNow\n\nDescargar en el App Store: https://apps.apple.com/es/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini"
     }
    },
    {
@@ -68413,12 +68481,12 @@
      "#Quota",
      "#UsageNow"
     ],
-    "caption": "UsageNow affiche tous vos comptes\nAlerte à 90 % sur 5 h et semaine\nUsageNow : Suivi d'usage IA\nRecherchez « suivi utilisation ia » sur l'App Store\n\n#Compteur #Jeton #Développeur #Consommation #UsageNow",
+    "caption": "UsageNow affiche tous vos comptes\nAlerte à 90 % sur 5 h et semaine\nUsageNow : Suivi d'usage IA\nRecherchez « suivi utilisation ia » sur l'App Store\nAussi sur Google Play\n\n#Compteur #Jeton #Développeur #Consommation #UsageNow",
     "button": "Télécharger sur l'App Store",
     "variant": "b",
     "alt": "UsageNow : Suivi d'usage IA — UsageNow affiche tous vos comptes — Alerte à 90 % sur 5 h et semaine",
     "store": "https://apps.apple.com/fr/app/id6818607603?pt=118326163&ct=social&mt=8",
-    "play": null,
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
     "review": {
      "label": "Vous utilisez déjà cette app ? Notez-la ou rédigez un avis sur l’App Store",
      "url": "https://apps.apple.com/app/id6818607603?action=write-review"
@@ -68439,7 +68507,7 @@
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "UsageNow affiche tous vos comptes\nAlerte à 90 % sur 5 h et semaine\nUsageNow : Suivi d'usage IA\nRecherchez « suivi utilisation ia » sur l'App Store\n\n#Compteur #Jeton #Développeur #Consommation #UsageNow\n\nTélécharger sur l'App Store: https://apps.apple.com/fr/app/id6818607603?pt=118326163&ct=social&mt=8"
+     "caption": "UsageNow affiche tous vos comptes\nAlerte à 90 % sur 5 h et semaine\nUsageNow : Suivi d'usage IA\nRecherchez « suivi utilisation ia » sur l'App Store\nAussi sur Google Play\n\n#Compteur #Jeton #Développeur #Consommation #UsageNow\n\nTélécharger sur l'App Store: https://apps.apple.com/fr/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini"
     }
    },
    {
@@ -73065,12 +73133,12 @@
      "#Reset",
      "#UsageNow"
     ],
-    "caption": "Translated into 50 languages\nClaude, Codex, Copilot & Gemini\nClaude, Codex & Copilot Limits\nUsageNow: AI Usage Tracker\nSearch “copilot usage” on the App Store\n\n#AIUsageTracker #Developer #Coding #Quota #UsageNow",
+    "caption": "Translated into 50 languages\nClaude, Codex, Copilot & Gemini\nClaude, Codex & Copilot Limits\nUsageNow: AI Usage Tracker\nSearch “copilot usage” on the App Store\nAlso on Google Play\n\n#AIUsageTracker #Developer #Coding #Quota #UsageNow",
     "button": "Get it on the App Store",
     "variant": "c",
     "alt": "UsageNow: AI Usage Tracker — Translated into 50 languages — Claude, Codex, Copilot & Gemini — Claude, Codex & Copilot Limits",
     "store": "https://apps.apple.com/us/app/id6818607603?pt=118326163&ct=social&mt=8",
-    "play": null,
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
     "review": {
      "label": "Already using this app? Rate or review it on the App Store",
      "url": "https://apps.apple.com/app/id6818607603?action=write-review"
@@ -73092,7 +73160,7 @@
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "Translated into 50 languages\nClaude, Codex, Copilot & Gemini\nClaude, Codex & Copilot Limits\nUsageNow: AI Usage Tracker\nSearch “copilot usage” on the App Store\n\n#AIUsageTracker #Developer #Coding #Quota #UsageNow\n\nGet it on the App Store: https://apps.apple.com/us/app/id6818607603?pt=118326163&ct=social&mt=8"
+     "caption": "Translated into 50 languages\nClaude, Codex, Copilot & Gemini\nClaude, Codex & Copilot Limits\nUsageNow: AI Usage Tracker\nSearch “copilot usage” on the App Store\nAlso on Google Play\n\n#AIUsageTracker #Developer #Coding #Quota #UsageNow\n\nGet it on the App Store: https://apps.apple.com/us/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini"
     }
    },
    {
@@ -73112,12 +73180,12 @@
      "#限額",
      "#UsageNow"
     ],
-    "caption": "Claude、Codex、Copilot、Gemini 一起看\n剩多少、何時重置 一眼看清\nClaude、Codex、Copilot 重置倒數\nUsageNow：AI 用量與額度追蹤\n在 App Store 搜尋「ai 用量追蹤」\n\n#AI用量與額度追蹤 #開發者 #工程師 #使用量 #UsageNow",
+    "caption": "Claude、Codex、Copilot、Gemini 一起看\n剩多少、何時重置 一眼看清\nClaude、Codex、Copilot 重置倒數\nUsageNow：AI 用量與額度追蹤\n在 App Store 搜尋「ai 用量追蹤」\nAndroid 版在 Google Play\n\n#AI用量與額度追蹤 #開發者 #工程師 #使用量 #UsageNow",
     "button": "在 App Store 下載",
     "variant": "b",
     "alt": "UsageNow：AI 用量與額度追蹤 — Claude、Codex、Copilot、Gemini 一起看 — 剩多少、何時重置 一眼看清 — Claude、Codex、Copilot 重置倒數",
     "store": "https://apps.apple.com/tw/app/id6818607603?pt=118326163&ct=social&mt=8",
-    "play": null,
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
     "review": {
      "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
      "url": "https://apps.apple.com/app/id6818607603?action=write-review"
@@ -73139,7 +73207,7 @@
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "Claude、Codex、Copilot、Gemini 一起看\n剩多少、何時重置 一眼看清\nClaude、Codex、Copilot 重置倒數\nUsageNow：AI 用量與額度追蹤\n在 App Store 搜尋「ai 用量追蹤」\n\n#AI用量與額度追蹤 #開發者 #工程師 #使用量 #UsageNow\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6818607603?pt=118326163&ct=social&mt=8"
+     "caption": "Claude、Codex、Copilot、Gemini 一起看\n剩多少、何時重置 一眼看清\nClaude、Codex、Copilot 重置倒數\nUsageNow：AI 用量與額度追蹤\n在 App Store 搜尋「ai 用量追蹤」\nAndroid 版在 Google Play\n\n#AI用量與額度追蹤 #開發者 #工程師 #使用量 #UsageNow\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini"
     }
    },
    {
@@ -73159,12 +73227,12 @@
      "#上限",
      "#UsageNow"
     ],
-    "caption": "Claude・Codex・ Copilot・Geminiをまとめて\n残りとリセット時刻が ひと目でわかる\nClaude・Codex・Copilot・Gemini残量\nUsageNow：AI使用量トラッカー\nApp Storeで「codex 使用制限」を検索\n\n#AI使用量トラッカー #開発者 #エンジニア #制限 #UsageNow",
+    "caption": "Claude・Codex・ Copilot・Geminiをまとめて\n残りとリセット時刻が ひと目でわかる\nClaude・Codex・Copilot・Gemini残量\nUsageNow：AI使用量トラッカー\nApp Storeで「codex 使用制限」を検索\nAndroidはGoogle Playで\n\n#AI使用量トラッカー #開発者 #エンジニア #制限 #UsageNow",
     "button": "App Storeで入手",
     "variant": "b",
     "alt": "UsageNow：AI使用量トラッカー — Claude・Codex・ Copilot・Geminiをまとめて — 残りとリセット時刻が ひと目でわかる — Claude・Codex・Copilot・Gemini残量",
     "store": "https://apps.apple.com/jp/app/id6818607603?pt=118326163&ct=social&mt=8",
-    "play": null,
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
     "review": {
      "label": "このアプリをお使いですか？App Store で評価・レビューできます",
      "url": "https://apps.apple.com/app/id6818607603?action=write-review"
@@ -73186,7 +73254,7 @@
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "Claude・Codex・ Copilot・Geminiをまとめて\n残りとリセット時刻が ひと目でわかる\nClaude・Codex・Copilot・Gemini残量\nUsageNow：AI使用量トラッカー\nApp Storeで「codex 使用制限」を検索\n\n#AI使用量トラッカー #開発者 #エンジニア #制限 #UsageNow\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6818607603?pt=118326163&ct=social&mt=8"
+     "caption": "Claude・Codex・ Copilot・Geminiをまとめて\n残りとリセット時刻が ひと目でわかる\nClaude・Codex・Copilot・Gemini残量\nUsageNow：AI使用量トラッカー\nApp Storeで「codex 使用制限」を検索\nAndroidはGoogle Playで\n\n#AI使用量トラッカー #開発者 #エンジニア #制限 #UsageNow\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini"
     }
    },
    {
@@ -73206,12 +73274,12 @@
      "#Quota",
      "#UsageNow"
     ],
-    "caption": "Claude, Codex, Copilot & Gemini\nRest & Reset-Zeit auf einen Blick\nClaude, Codex & Copilot Limits\nUsageNow: KI-Nutzung Tracker\nIm App Store nach „ki nutzung tracker“ suchen\n\n#KINutzungTracker #Entwickler #Verbrauch #Kontingent #UsageNow",
+    "caption": "Claude, Codex, Copilot & Gemini\nRest & Reset-Zeit auf einen Blick\nClaude, Codex & Copilot Limits\nUsageNow: KI-Nutzung Tracker\nIm App Store nach „ki nutzung tracker“ suchen\nAuch bei Google Play\n\n#KINutzungTracker #Entwickler #Verbrauch #Kontingent #UsageNow",
     "button": "Im App Store laden",
     "variant": "b",
     "alt": "UsageNow: KI-Nutzung Tracker — Claude, Codex, Copilot & Gemini — Rest & Reset-Zeit auf einen Blick — Claude, Codex & Copilot Limits",
     "store": "https://apps.apple.com/de/app/id6818607603?pt=118326163&ct=social&mt=8",
-    "play": null,
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
     "review": {
      "label": "Sie nutzen diese App bereits? Bewerten oder rezensieren Sie sie im App Store",
      "url": "https://apps.apple.com/app/id6818607603?action=write-review"
@@ -73233,7 +73301,7 @@
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "Claude, Codex, Copilot & Gemini\nRest & Reset-Zeit auf einen Blick\nClaude, Codex & Copilot Limits\nUsageNow: KI-Nutzung Tracker\nIm App Store nach „ki nutzung tracker“ suchen\n\n#KINutzungTracker #Entwickler #Verbrauch #Kontingent #UsageNow\n\nIm App Store laden: https://apps.apple.com/de/app/id6818607603?pt=118326163&ct=social&mt=8"
+     "caption": "Claude, Codex, Copilot & Gemini\nRest & Reset-Zeit auf einen Blick\nClaude, Codex & Copilot Limits\nUsageNow: KI-Nutzung Tracker\nIm App Store nach „ki nutzung tracker“ suchen\nAuch bei Google Play\n\n#KINutzungTracker #Entwickler #Verbrauch #Kontingent #UsageNow\n\nIm App Store laden: https://apps.apple.com/de/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini"
     }
    },
    {
@@ -73253,12 +73321,12 @@
      "#Contador",
      "#UsageNow"
     ],
-    "caption": "Claude, Codex, Copilot y Gemini\nLo que queda y cuándo se restablece\nLímites Claude, Codex, Copilot\nUsageNow: Monitor de uso IA\nBusca «UsageNow» en el App Store\n\n#MonitorDeUsoIA #Desarrollador #Consumo #Cuota #UsageNow",
+    "caption": "Claude, Codex, Copilot y Gemini\nLo que queda y cuándo se restablece\nLímites Claude, Codex, Copilot\nUsageNow: Monitor de uso IA\nBusca «UsageNow» en el App Store\nTambién en Google Play\n\n#MonitorDeUsoIA #Desarrollador #Consumo #Cuota #UsageNow",
     "button": "Descargar en el App Store",
     "variant": "b",
     "alt": "UsageNow: Monitor de uso IA — Claude, Codex, Copilot y Gemini — Lo que queda y cuándo se restablece — Límites Claude, Codex, Copilot",
     "store": "https://apps.apple.com/es/app/id6818607603?pt=118326163&ct=social&mt=8",
-    "play": null,
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
     "review": {
      "label": "¿Ya usas esta app? Valórala o escribe una reseña en el App Store",
      "url": "https://apps.apple.com/app/id6818607603?action=write-review"
@@ -73279,7 +73347,7 @@
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "Claude, Codex, Copilot y Gemini\nLo que queda y cuándo se restablece\nLímites Claude, Codex, Copilot\nUsageNow: Monitor de uso IA\nBusca «UsageNow» en el App Store\n\n#MonitorDeUsoIA #Desarrollador #Consumo #Cuota #UsageNow\n\nDescargar en el App Store: https://apps.apple.com/es/app/id6818607603?pt=118326163&ct=social&mt=8"
+     "caption": "Claude, Codex, Copilot y Gemini\nLo que queda y cuándo se restablece\nLímites Claude, Codex, Copilot\nUsageNow: Monitor de uso IA\nBusca «UsageNow» en el App Store\nTambién en Google Play\n\n#MonitorDeUsoIA #Desarrollador #Consumo #Cuota #UsageNow\n\nDescargar en el App Store: https://apps.apple.com/es/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini"
     }
    },
    {
@@ -73299,12 +73367,12 @@
      "#Compteur",
      "#UsageNow"
     ],
-    "caption": "Claude, Codex, Copilot et Gemini\nCe qu'il reste et la remise à zéro\nLimites Claude, Codex, Copilot\nUsageNow : Suivi d'usage IA\nRecherchez « suivi utilisation ia » sur l'App Store\n\n#SuiviDusageIA #Développeur #Consommation #Quota #UsageNow",
+    "caption": "Claude, Codex, Copilot et Gemini\nCe qu'il reste et la remise à zéro\nLimites Claude, Codex, Copilot\nUsageNow : Suivi d'usage IA\nRecherchez « suivi utilisation ia » sur l'App Store\nAussi sur Google Play\n\n#SuiviDusageIA #Développeur #Consommation #Quota #UsageNow",
     "button": "Télécharger sur l'App Store",
     "variant": "b",
     "alt": "UsageNow : Suivi d'usage IA — Claude, Codex, Copilot et Gemini — Ce qu'il reste et la remise à zéro — Limites Claude, Codex, Copilot",
     "store": "https://apps.apple.com/fr/app/id6818607603?pt=118326163&ct=social&mt=8",
-    "play": null,
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
     "review": {
      "label": "Vous utilisez déjà cette app ? Notez-la ou rédigez un avis sur l’App Store",
      "url": "https://apps.apple.com/app/id6818607603?action=write-review"
@@ -73325,7 +73393,7 @@
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "Claude, Codex, Copilot et Gemini\nCe qu'il reste et la remise à zéro\nLimites Claude, Codex, Copilot\nUsageNow : Suivi d'usage IA\nRecherchez « suivi utilisation ia » sur l'App Store\n\n#SuiviDusageIA #Développeur #Consommation #Quota #UsageNow\n\nTélécharger sur l'App Store: https://apps.apple.com/fr/app/id6818607603?pt=118326163&ct=social&mt=8"
+     "caption": "Claude, Codex, Copilot et Gemini\nCe qu'il reste et la remise à zéro\nLimites Claude, Codex, Copilot\nUsageNow : Suivi d'usage IA\nRecherchez « suivi utilisation ia » sur l'App Store\nAussi sur Google Play\n\n#SuiviDusageIA #Développeur #Consommation #Quota #UsageNow\n\nTélécharger sur l'App Store: https://apps.apple.com/fr/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini"
     }
    },
    {
@@ -74238,12 +74306,12 @@
      "#利用状況",
      "#UsageNow"
     ],
-    "caption": "Claude・Codex・ Copilot・Geminiをまとめて\n残りとリセット時刻が ひと目でわかる\nClaude・Codex・Copilot・Gemini残量\nUsageNow：AI使用量トラッカー\nApp Storeで「UsageNow」を検索\n\n#上限 #トークン #ウィジェット #リセット #UsageNow",
+    "caption": "Claude・Codex・ Copilot・Geminiをまとめて\n残りとリセット時刻が ひと目でわかる\nClaude・Codex・Copilot・Gemini残量\nUsageNow：AI使用量トラッカー\nApp Storeで「UsageNow」を検索\nAndroidはGoogle Playで\n\n#上限 #トークン #ウィジェット #リセット #UsageNow",
     "button": "App Storeで入手",
     "variant": "b",
     "alt": "UsageNow：AI使用量トラッカー — Claude・Codex・ Copilot・Geminiをまとめて — 残りとリセット時刻が ひと目でわかる — Claude・Codex・Copilot・Gemini残量",
     "store": "https://apps.apple.com/jp/app/id6818607603?pt=118326163&ct=social&mt=8",
-    "play": null,
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
     "review": {
      "label": "このアプリをお使いですか？App Store で評価・レビューできます",
      "url": "https://apps.apple.com/app/id6818607603?action=write-review"
@@ -74265,7 +74333,7 @@
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "Claude・Codex・ Copilot・Geminiをまとめて\n残りとリセット時刻が ひと目でわかる\nClaude・Codex・Copilot・Gemini残量\nUsageNow：AI使用量トラッカー\nApp Storeで「UsageNow」を検索\n\n#上限 #トークン #ウィジェット #リセット #UsageNow\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6818607603?pt=118326163&ct=social&mt=8"
+     "caption": "Claude・Codex・ Copilot・Geminiをまとめて\n残りとリセット時刻が ひと目でわかる\nClaude・Codex・Copilot・Gemini残量\nUsageNow：AI使用量トラッカー\nApp Storeで「UsageNow」を検索\nAndroidはGoogle Playで\n\n#上限 #トークン #ウィジェット #リセット #UsageNow\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini"
     }
    },
    {

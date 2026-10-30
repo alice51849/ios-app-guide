@@ -776,7 +776,8 @@ class ReviewLinkFeedTest(unittest.TestCase):
         it = S.clip_item("claudeusagemini/ko", pair_clip(), "youtube", DAY)
         _, desc, _ = S.yt_meta(it)
         lines = desc.splitlines()
-        store = next(i for i, line in enumerate(lines) if line.startswith("App Store: "))
+        # 有 Android 版時 Google Play 緊接在 App Store 後面，評論連結要排在最後一個商店連結之後。
+        store = max(i for i, line in enumerate(lines) if line.startswith(("App Store: ", "Google Play: ")))
         self.assertEqual(lines[store + 1:store + 3], [it["review"]["label"], REVIEW_URL])
         self.assertNotIn("ct=", lines[store + 2])
 

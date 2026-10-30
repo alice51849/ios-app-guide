@@ -100,5 +100,63 @@ class DeviceNoteSummaryTests(unittest.TestCase):
                 )
 
 
+class PageMetaDeviceNoteTests(unittest.TestCase):
+    """The page meta description (zh-Hant finder summary source) skips it too."""
+
+    def note(self, locale: str) -> str:
+        return json.loads(
+            portfolio_app_finder.DEVICE_NOTE_PARAGRAPHS_PATH.read_text(
+                encoding="utf-8"
+            )
+        )["paragraphs"][locale]
+
+    def test_same_list_as_finder(self):
+        self.assertEqual(
+            Path(build_pages_i18n.DEVICE_NOTE_PARAGRAPHS_PATH).resolve(),
+            portfolio_app_finder.DEVICE_NOTE_PARAGRAPHS_PATH.resolve(),
+        )
+        self.assertEqual(
+            portfolio_app_finder.device_note_paragraphs(),
+            build_pages_i18n.device_note_paragraphs(),
+        )
+
+    def test_zh_hant_device_note_lead_takes_next_paragraph(self):
+        lead = "Mochi 是一款可愛又療癒的待辦清單 App，讓安排生活不再只是壓力。"
+        description = f"{self.note('zh-Hant')}\n\n{lead}\n第二行。\n\n第三段。"
+        self.assertEqual(
+            lead, build_pages_i18n._lead_description_line(description)
+        )
+        self.assertNotIn("iPhone Duo", build_pages_i18n._lead_description_line(description))
+
+    def test_english_and_other_locales_skip_exact_note_only(self):
+        self.assertEqual(
+            f"{FEATURE_LEAD} More.",
+            build_pages_i18n._lead_description_line(
+                f"{DUO_NOTE}\n\n{FEATURE_LEAD} More.\nSecond line."
+            ),
+        )
+        self.assertEqual(
+            FEATURE_LEAD,
+            build_pages_i18n._lead_description_line(
+                f"{self.note('ja')}\n\n{FEATURE_LEAD}"
+            ),
+        )
+
+    def test_unlisted_or_lone_paragraph_keeps_first_line(self):
+        partial = "Optimized for iPhone Duo. Track every receipt in one tap."
+        self.assertEqual(
+            partial,
+            build_pages_i18n._lead_description_line(f"{partial}\n\n{FEATURE_LEAD}"),
+        )
+        self.assertEqual(
+            FEATURE_LEAD,
+            build_pages_i18n._lead_description_line(f"{FEATURE_LEAD}\nNext line."),
+        )
+        # A description that is only the note still yields the note, not "".
+        self.assertEqual(
+            DUO_NOTE, build_pages_i18n._lead_description_line(DUO_NOTE)
+        )
+
+
 if __name__ == "__main__":
     unittest.main()

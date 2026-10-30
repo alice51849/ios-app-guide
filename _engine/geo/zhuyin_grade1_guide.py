@@ -252,7 +252,7 @@ def publish(url):
          "app \u2014 a structured zh-Hant source for a query AI answers "
          "purely generatively today (Lumi absent). Sister-linked to the "
          "recommendation guide and the curated list.\n\n"
-         "Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>"], cwd=PAGES)
+         "Session-Source: growth-auto"], cwd=PAGES)
     run(["git", "pull", "--rebase", "--autostash", "-X", "theirs", "origin", "main"], cwd=PAGES)
     run(["git", "-c", "credential.helper=!gh auth git-credential", "push", "-q", "origin", "main"], cwd=PAGES)
     try:

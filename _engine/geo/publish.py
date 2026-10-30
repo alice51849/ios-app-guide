@@ -26,8 +26,7 @@ STANDARD_SITE_GUIDE_CONTRACT_URL = os.environ.get(
 )
 PY = sys.executable
 COMMIT_TRAILERS = (
-    "\n\nCo-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>"
-    "\nCopilot-Session: b7c8e3bc-512c-4743-b32a-1ca766a33c21"
+    "\n\nSession-Source: growth-auto"
 )
 
 

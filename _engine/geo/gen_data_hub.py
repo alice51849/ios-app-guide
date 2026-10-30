@@ -1478,7 +1478,7 @@ def publish(urls):
         run(["git", "add", "-A"], cwd=repo)
         run(["git", "commit", "-m",
              "Open data hub update (CC-BY, AI-citable datasets)\n\n"
-             "Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>"], cwd=repo)
+             "Session-Source: growth-auto"], cwd=repo)
         run(["git", "pull", "--rebase", "--autostash"], cwd=repo)
         run(["git", "push"], cwd=repo)
         print("pushed pages repo")

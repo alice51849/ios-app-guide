@@ -113,10 +113,61 @@ def reconcile_lastmod_after_rebase(env):
     )
 
 
+def mirror_catalog_sources(pages=None, data_dir=None):
+    """Byte-mirror data/<key>_full.json into the Guide's _engine/data.
+
+    2026-10-30 Guide 87626c42e：這支用 00_GrowthEngine data/ 重產目錄 API，但
+    Guide _engine/data 只有新款追趕鏡像會更新；商店文案每日同步（d4440b5e4）改了
+    cyca 等 20 款的 data/ 後沒人鏡像，pages.yml 用 _engine/data 跑
+    owned_app_feeds.py --check 報「Stale catalog localization source」擋下部署。
+    只更新 Guide 已追蹤的檔（新款仍由 new_app_catchup 的鏡像負責），回傳改了哪些。
+    """
+    pages = pages or PAGES
+    data_dir = data_dir or os.path.join(os.path.dirname(HERE), "data")
+    target_dir = os.path.join(pages, "_engine", "data")
+    if not os.path.isdir(target_dir):
+        return []
+    changed = []
+    for name in sorted(os.listdir(target_dir)):
+        if not name.endswith("_full.json"):
+            continue
+        source = os.path.join(data_dir, name)
+        target = os.path.join(target_dir, name)
+        if not os.path.isfile(source):
+            continue
+        with open(source, "rb") as handle:
+            payload = handle.read()
+        with open(target, "rb") as handle:
+            if handle.read() == payload:
+                continue
+        temporary = target + ".tmp"
+        with open(temporary, "wb") as handle:
+            handle.write(payload)
+        os.replace(temporary, target)
+        changed.append(name)
+    return changed
+
+
+def guide_owned_feeds_check_command(pages=None):
+    """The exact gate pages.yml runs: the Guide mirror code on _engine/data."""
+    pages = pages or PAGES
+    return [
+        PY, os.path.join(pages, "_engine", "geo", "owned_app_feeds.py"),
+        "--pages-dir", pages, "--check",
+    ]
+
+
 def reconcile_owned_feeds(env):
     command = [PY, os.path.join(HERE, "owned_app_feeds.py"), "--pages-dir", PAGES]
+    mirrored = mirror_catalog_sources()
+    if mirrored:
+        print(f"✅ _engine/data 鏡像補齊 {len(mirrored)} 款：{', '.join(mirrored)}")
     require(command + ["--refresh-catalog"], env=env)
     require(command + ["--check"], env=env)
+    # 提交前再用 Guide 自己的鏡像程式＋_engine/data 驗一次（與部署閘門同一條），
+    # 失敗就 require 中止：不 commit、不 push。
+    if os.path.isfile(guide_owned_feeds_check_command()[1]):
+        require(guide_owned_feeds_check_command(), env=env)
 
 
 def main():

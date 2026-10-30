@@ -1288,6 +1288,54 @@ def _single_line(value):
     return re.sub(r"\s+", " ", str(value or "")).strip()
 
 
+DEVICE_NOTE_PARAGRAPHS_PATH = os.path.join(
+    HERE, "data", "device_note_paragraphs.json"
+)
+
+
+@lru_cache(maxsize=1)
+def device_note_paragraphs():
+    """Exact device-compatibility paragraphs shared by store descriptions.
+
+    Same list the finder summary uses (portfolio_app_finder); only a whole
+    paragraph equal to one of these (whitespace-normalised) is skipped.
+    """
+    with open(DEVICE_NOTE_PARAGRAPHS_PATH, encoding="utf-8") as handle:
+        payload = json.load(handle)
+    paragraphs = payload.get("paragraphs")
+    if (
+        payload.get("schema") != "device-note-paragraphs/v1"
+        or not isinstance(paragraphs, dict)
+        or not paragraphs
+    ):
+        raise ValueError("Device note paragraph list is invalid")
+    return frozenset(
+        _single_line(value) for value in paragraphs.values()
+        if _single_line(value)
+    )
+
+
+def _lead_description_line(desc):
+    """First description line for the meta description.
+
+    Leading paragraphs that exactly equal a listed device-compatibility note
+    are skipped so every App does not share the same summary; any other
+    description keeps its first line unchanged.
+    """
+    text = str(desc or "")
+    notes = device_note_paragraphs()
+    while True:
+        parts = re.split(r"\n\s*\n", text, maxsplit=1)
+        if (
+            len(parts) == 2
+            and _single_line(parts[0]) in notes
+            and _single_line(parts[1])
+        ):
+            text = parts[1]
+            continue
+        return text.split("\n")[0]
+
+
 def _is_native_copy(locale, field, value, localizations):
     text = _single_line(value)
     if not text:
@@ -1519,7 +1567,7 @@ def build_one(key, locale, all_locales, *, copy_by_locale=None):
     feats = kws[:8]
     faq = build_faq(locale, name, sub, kws, key)
     short_desc = _word_bounded_excerpt(
-        desc.split("\n")[0] if desc else sub, 155
+        _lead_description_line(desc) if desc else sub, 155
     )
     title_sub = _word_bounded_excerpt(sub, 60)
 

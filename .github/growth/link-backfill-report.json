@@ -1,8 +1,8 @@
 {
- "generated": "2026-10-29T18:31:19Z",
+ "generated": "2026-10-30T10:07:00Z",
  "mode": "apply",
  "counts": {
-  "ok_reply": 29,
+  "ok_reply": 31,
   "unknown_app": 47,
   "ok_store_only": 719,
   "ok_backfilled_earlier": 13,
@@ -12,6 +12,30 @@
   "missing": 3
  },
  "rows": [
+  {
+   "channel": "threads",
+   "id": "18230979562336647",
+   "permalink": "https://www.threads.com/@hourstag.app/post/DfGih8tmdCC",
+   "date": "2026-10-30",
+   "app": "lumimath",
+   "status": "ok_reply",
+   "text": "\"Five more minutes\" — about a learning game, for once. Our app, not a ranking: Try patterns and number games. Free start; one-time unlock fo",
+   "why": "brand",
+   "ios_id": "6778269699",
+   "locale": "en"
+  },
+  {
+   "channel": "threads",
+   "id": "17917952052464908",
+   "permalink": "https://www.threads.com/@hourstag.app/post/DfGcLLpm8yb",
+   "date": "2026-10-30",
+   "app": "mochi",
+   "status": "ok_reply",
+   "text": "Fall reset checklist I'm actually finishing this year 🍂 ☐ swap closet ☐ clean out the fridge ☐ back up phone photos ☐ book that appointment ",
+   "why": "trial",
+   "ios_id": "6785004775",
+   "locale": "en-US"
+  },
   {
    "channel": "threads",
    "id": "18056790587589100",

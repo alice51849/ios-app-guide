@@ -1,10 +1,11 @@
 {
- "generated": "2026-10-29T10:03:57Z",
+ "generated": "2026-10-30T10:07:00Z",
  "mode": "apply",
  "counts": {
   "ok_caption": 33,
   "draft_skipped": 13,
-  "ok_backfilled_earlier": 1
+  "ok_backfilled_earlier": 1,
+  "list_failed": 1
  },
  "rows": [
   {
@@ -430,6 +431,11 @@
    "app": "",
    "status": "draft_skipped",
    "text": "(draft placeholder)"
+  },
+  {
+   "channel": "devto",
+   "id": "",
+   "status": "list_failed"
   }
  ]
 }

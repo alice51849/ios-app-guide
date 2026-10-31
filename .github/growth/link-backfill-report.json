@@ -1,12 +1,12 @@
 {
- "generated": "2026-10-31T12:41:44Z",
+ "generated": "2026-10-31T19:23:20Z",
  "mode": "apply",
  "counts": {
   "ok_reply": 34,
   "unknown_app": 47,
+  "ok_backfilled_earlier": 15,
   "backfilled": 2,
-  "ok_store_only": 717,
-  "ok_backfilled_earlier": 13,
+  "ok_store_only": 715,
   "ok_bio_link": 68,
   "ok_caption": 4,
   "taken_down": 4,
@@ -389,16 +389,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DelvJHInzTa",
    "date": "2026-10-18",
    "app": "stayclock",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "Always-on time and calendar. Your iPhone or iPad becomes an always-on desk clock you can read from across the room. Stay Clock: Flip Desk Cl",
    "why": "url+brand",
    "ios_id": "6814035888",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "17978595528140013",
-   "at": "2026-10-31T12:39:07Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",
@@ -454,16 +449,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DeiK4cOklsA",
    "date": "2026-10-16",
    "app": "qrcodehalo",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "Scanning never auto-opens a destination. You first see what a code contains and what the on-device check found, and the final call is yours.",
    "why": "url+brand",
    "ios_id": "6806779853",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "18128602540849261",
-   "at": "2026-10-31T12:39:07Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",
@@ -471,11 +461,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DehGb7ulP-U",
    "date": "2026-10-15",
    "app": "dbhalo",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "Spectrum, Dose & Sleep Journal. The large Halo ring shows live decibels at a glance, with minimum, average, maximum and peak readings. dB Ha",
    "why": "url+brand",
    "ios_id": "6806826699",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "18126597578480861",
+   "at": "2026-10-31T19:20:44Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -483,11 +478,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DeegbdAGei7",
    "date": "2026-10-14",
    "app": "countdaysnow",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "Plan backwards from the dates that matter. Future, current and past events are kept in three clear views, with precise day counts. CountDays",
    "why": "url+brand",
    "ios_id": "6807079789",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "18120899095989996",
+   "at": "2026-10-31T19:20:44Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",

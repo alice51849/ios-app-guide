@@ -2,7 +2,7 @@
 title: "Cyca: পিরিয়ড ও সাইকেল ট্র্যাক — মাসিক ক্যালেন্ডার, ডিম্বস্ফোটন | iOS App"
 lang: "bn-BD"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/cyca/decision/l/bn-BD/index.html"
-modified: "2026-10-30"
+modified: "2026-10-31"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

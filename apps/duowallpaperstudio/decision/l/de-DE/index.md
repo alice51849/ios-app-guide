@@ -2,7 +2,7 @@
 title: "Foldable Hintergrundbilder — Für Duo: außen nah, innen weit | iOS App"
 lang: "de-DE"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/duowallpaperstudio/decision/l/de-DE/index.html"
-modified: "2026-10-30"
+modified: "2026-10-31"
 app_store_id: "6824946559"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

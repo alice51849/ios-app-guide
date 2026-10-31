@@ -2,7 +2,7 @@
 title: "Foldable Wallpaper Studio — ফোল্ডেবল Duo জোড়া ওয়ালপেপার | iOS App"
 lang: "bn-BD"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/duowallpaperstudio/decision/l/bn-BD/index.html"
-modified: "2026-10-30"
+modified: "2026-10-31"
 app_store_id: "6824946559"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

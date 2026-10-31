@@ -2,7 +2,7 @@
 title: "名前を付けて検索できる履歴を保存する iPhone 電卓アプリのおすすめ"
 lang: "ja"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/caldaily/decision/l/ja/index.html"
-modified: "2026-10-30"
+modified: "2026-10-31"
 app_store_id: "6794178671"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

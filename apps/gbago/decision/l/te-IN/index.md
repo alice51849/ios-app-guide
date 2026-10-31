@@ -2,7 +2,7 @@
 title: "GBAGo: దృశ్య సేవ్స్ — రికవరీ మ్యాప్ · స్నాప్‌షాట్‌లు | iOS App"
 lang: "te-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gbago/decision/l/te-IN/index.html"
-modified: "2026-10-30"
+modified: "2026-10-31"
 app_store_id: "6804564400"
 verified_live: true
 purchase_model: "paid_upfront"

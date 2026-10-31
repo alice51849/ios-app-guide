@@ -2,7 +2,7 @@
 title: "HoursTag: Ώρες αγοράς — Ωριαία αμοιβή και έξοδα | iOS App"
 lang: "el"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/el/index.html"
-modified: "2026-10-30"
+modified: "2026-10-31"
 app_store_id: "6754218117"
 verified_live: true
 purchase_model: "paid_upfront"

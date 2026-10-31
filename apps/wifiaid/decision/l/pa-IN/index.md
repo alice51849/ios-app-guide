@@ -2,7 +2,7 @@
 title: "WiFi Aid: ਨੈੱਟਵਰਕ ਸਮੱਸਿਆ ਲੱਭੋ — ਰਾਊਟਰ, ਮੈਸ਼ ਅਤੇ DNS ਜਾਂਚ | iOS App"
 lang: "pa-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/pa-IN/index.html"
-modified: "2026-10-30"
+modified: "2026-10-31"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"

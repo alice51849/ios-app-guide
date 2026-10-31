@@ -2,7 +2,7 @@
 title: "BattAI: نتيجة صحة البطارية — تنبيهات الشحن والحرارة | iOS App"
 lang: "ar-SA"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/battai/decision/l/ar-SA/index.html"
-modified: "2026-10-30"
+modified: "2026-10-31"
 app_store_id: "6802423998"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

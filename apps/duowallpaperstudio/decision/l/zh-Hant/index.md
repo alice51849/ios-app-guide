@@ -2,7 +2,7 @@
 title: "摺疊手機桌布 - 雙螢幕成對桌布 — 適用Duo・高畫質・外螢幕特寫・內螢幕全景・美化小工具 | iOS App"
 lang: "zh-Hant"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/duowallpaperstudio/decision/l/zh-Hant/index.html"
-modified: "2026-10-30"
+modified: "2026-10-31"
 app_store_id: "6824946559"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

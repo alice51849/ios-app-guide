@@ -2,7 +2,7 @@
 title: "HoursTag: وقت کی قیمت — فی گھنٹہ اجرت اور اخراجات | iOS App"
 lang: "ur-PK"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/ur-PK/index.html"
-modified: "2026-10-30"
+modified: "2026-10-31"
 app_store_id: "6754218117"
 verified_live: true
 purchase_model: "paid_upfront"

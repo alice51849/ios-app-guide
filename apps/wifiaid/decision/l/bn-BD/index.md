@@ -2,7 +2,7 @@
 title: "WiFi Aid: নেটওয়ার্ক সমস্যা — রাউটার, মেশ ও DNS যাচাই | iOS App"
 lang: "bn-BD"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/bn-BD/index.html"
-modified: "2026-10-30"
+modified: "2026-10-31"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"

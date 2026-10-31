@@ -2,7 +2,7 @@
 title: "Foldable Wallpaper Studio — ಫೋಲ್ಡಬಲ್ Duo ವಾಲ್ಪೇಪರ್ ಜೋಡಿ | iOS App"
 lang: "kn-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/duowallpaperstudio/decision/l/kn-IN/index.html"
-modified: "2026-10-30"
+modified: "2026-10-31"
 app_store_id: "6824946559"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

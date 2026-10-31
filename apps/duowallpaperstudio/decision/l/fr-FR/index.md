@@ -2,7 +2,7 @@
 title: "Fond d'écran pliable – paires — Écran externe/interne pour Duo | iOS App"
 lang: "fr-FR"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/duowallpaperstudio/decision/l/fr-FR/index.html"
-modified: "2026-10-30"
+modified: "2026-10-31"
 app_store_id: "6824946559"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

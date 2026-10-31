@@ -2,7 +2,7 @@
 title: "折りたたみ壁紙 - 外画面と内画面 — Duo対応・閉じればアップ、開けば全景のペア壁紙 | iOS App"
 lang: "ja"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/duowallpaperstudio/decision/l/ja/index.html"
-modified: "2026-10-30"
+modified: "2026-10-31"
 app_store_id: "6824946559"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

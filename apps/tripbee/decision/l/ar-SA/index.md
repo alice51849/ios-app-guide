@@ -2,7 +2,7 @@
 title: "تطبيق أفضل مخطّط لبرنامج الرحلة لـ iPhone"
 lang: "ar-SA"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbee/decision/l/ar-SA/index.html"
-modified: "2026-10-30"
+modified: "2026-10-31"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"

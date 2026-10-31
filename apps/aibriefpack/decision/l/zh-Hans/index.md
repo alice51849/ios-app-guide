@@ -2,7 +2,7 @@
 title: "AI Brief：文件转 AI 提示词 — 文件、PDF 转提示词与摘要 | iOS App"
 lang: "zh-Hans"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/aibriefpack/decision/l/zh-Hans/index.html"
-modified: "2026-10-30"
+modified: "2026-10-31"
 app_store_id: "6791658210"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

@@ -579,7 +579,6 @@
    "brands": [
     "Cyca 生理・排卵日トラッカー",
     "Cyca 생리·배란일 트래커",
-    "Cyca 經期週期追蹤・排卵",
     "Cyca 经期周期追踪・排卵",
     "Cyca"
    ],
@@ -2136,9 +2135,11 @@
     "Lumi Планета Місій",
     "Lumi كوكب المهام",
     "Lumi ミッション星 生活習慣",
+    "Belohnungstafel",
     "Lumi مشن سیارہ",
     "Lumi मिशन ग्रह",
     "Lumi ดาวภารกิจ",
+    "Lumi Mission",
     "Lumi 任務星球",
     "Lumi 미션 별"
    ],
@@ -3173,77 +3174,147 @@
    "live_version": "1.0.6",
    "locales": {
     "de-DE": {
-     "added": [],
-     "dropped": [],
+     "added": [
+      "Jetzt sichern. Und diesmal wirklich lesen."
+     ],
+     "dropped": [
+      "Optimiert für das iPhone Duo. Die mit dem neuesten SDK entwickelte App füllt das gesamte innere Display und passt das Layout automatisch an, egal ob zugeklappt oder aufgeklappt.",
+      "Jetzt sichern. Und diesmal wirklich lesen. Teile einen Link aus jeder App, und SaveTag versieht ihn direkt auf deinem Gerät mit Schlagworten: Essen, Reisen, Mode, Shopping und mehr.",
+      "Titel, Website und Vorschau werden automatisch ergänzt, und die Suche findet Dinge auch mit vager Erinnerung statt exakter Wörter.",
+      "Der Rückblick holt jeden Tag ein paar ungelesene Links hervor, damit die Liste wirklich kürzer wird."
+     ],
      "live_updated": "2026-10-09",
      "live_version": "1.0.6",
-     "same": true
+     "same": false
     },
     "en-GB": {
-     "added": [],
-     "dropped": [],
+     "added": [
+      "Save it now. Actually read it later."
+     ],
+     "dropped": [
+      "Optimised for iPhone Duo. Built with the latest SDK, the app fills the entire inner display and automatically adjusts its layout whether the device is folded or open.",
+      "Save it now. Actually read it later. Share a link from any app and SaveTag tags it on your device: food, travel, style, shopping and more.",
+      "Titles, sites and previews fill in for you, and search finds things from a rough memory, not exact words.",
+      "Rediscover brings back a few unread saves each day, so the list actually gets shorter."
+     ],
      "live_updated": "2026-10-09",
      "live_version": "1.0.6",
-     "same": true
+     "same": false
     },
     "en-US": {
-     "added": [],
-     "dropped": [],
+     "added": [
+      "Save it now. Actually read it later."
+     ],
+     "dropped": [
+      "Optimized for iPhone Duo. Built with the latest SDK, the app fills the entire inner display and automatically adjusts its layout whether the device is folded or open.",
+      "Save it now. Actually read it later. Share a link from any app and SaveTag tags it on your device: food, travel, style, shopping and more.",
+      "Titles, sites and previews fill in for you, and search finds things from a rough memory, not exact words.",
+      "Rediscover brings back a few unread saves each day, so the list actually gets shorter."
+     ],
      "live_updated": "2026-10-09",
      "live_version": "1.0.6",
-     "same": true
+     "same": false
     },
     "es-ES": {
-     "added": [],
-     "dropped": [],
+     "added": [
+      "Guárdalo ahora. Léelo de verdad luego."
+     ],
+     "dropped": [
+      "Optimizada para el iPhone Duo. Creada con el SDK más reciente, la app ocupa toda la pantalla interior y ajusta su diseño automáticamente, con el dispositivo plegado o desplegado.",
+      "Guárdalo ahora. Léelo de verdad luego. Comparte un enlace desde cualquier app y SaveTag lo etiqueta en tu dispositivo: comida, viajes, moda, compras y más.",
+      "El título, la web y la vista previa se rellenan solos, y la búsqueda encuentra las cosas con un recuerdo vago, sin las palabras exactas.",
+      "Redescubrir te trae cada día unos cuantos guardados sin leer, para que la lista se acorte de verdad."
+     ],
      "live_updated": "2026-10-09",
      "live_version": "1.0.6",
-     "same": true
+     "same": false
     },
     "fr-FR": {
-     "added": [],
-     "dropped": [],
+     "added": [
+      "Sauvegardez maintenant. Lisez vraiment plus tard."
+     ],
+     "dropped": [
+      "Optimisée pour l’iPhone Duo. Conçue avec le SDK le plus récent, l’app remplit tout l’écran intérieur et adapte automatiquement sa mise en page, appareil plié ou ouvert.",
+      "Sauvegardez maintenant. Lisez vraiment plus tard. Partagez un lien depuis n'importe quelle app et SaveTag lui attribue des étiquettes sur votre appareil : cuisine, voyages, mode, shopping et plus encore.",
+      "Titre, site et aperçu se remplissent automatiquement, et la recherche retrouve vos liens à partir d'un vague souvenir, sans les mots exacts.",
+      "Redécouverte vous propose chaque jour quelques liens non lus, pour que la liste raccourcisse enfin."
+     ],
      "live_updated": "2026-10-09",
      "live_version": "1.0.6",
-     "same": true
+     "same": false
     },
     "ja": {
-     "added": [],
-     "dropped": [],
+     "added": [
+      "保存する。そして、今度こそ読み切る。"
+     ],
+     "dropped": [
+      "iPhone Duoに最適化。最新の開発キットでビルドしており、内側のディスプレイ全体に表示され、折りたたんでも開いても自動でレイアウトが調整されます。",
+      "保存する。そして、今度こそ読み切る。どのアプリからでもリンクを共有するだけで、SaveTag が端末上でグルメ・旅行・ファッション・買い物などのタグを付けます。",
+      "タイトル、サイト名、プレビューは自動で入り、正確な言葉を覚えていなくても、うろ覚えで検索して見つかります。",
+      "「再発見」が毎日いくつか未読の保存を届けるので、リストがちゃんと減っていきます。"
+     ],
      "live_updated": "2026-10-09",
      "live_version": "1.0.6",
-     "same": true
+     "same": false
     },
     "ko": {
-     "added": [],
-     "dropped": [],
+     "added": [
+      "일단 저장하고, 이번엔 진짜 다 읽습니다."
+     ],
+     "dropped": [
+      "iPhone Duo에 최적화되었습니다. 최신 개발 도구로 빌드되어 안쪽 디스플레이 전체를 가득 채우며, 접거나 펼쳐도 레이아웃이 자동으로 조정됩니다.",
+      "일단 저장하고, 이번엔 진짜 다 읽습니다. 어떤 앱에서든 링크를 공유하면 SaveTag이 기기에서 바로 맛집·여행·패션·쇼핑 같은 태그를 붙여 줍니다.",
+      "제목, 사이트, 미리보기는 자동으로 채워지고, 정확한 단어가 기억나지 않아도 어렴풋한 기억만으로 검색됩니다.",
+      "‘다시 발견’이 매일 안 읽은 저장 몇 개를 꺼내 주니, 목록이 정말로 줄어듭니다."
+     ],
      "live_updated": "2026-10-09",
      "live_version": "1.0.6",
-     "same": true
+     "same": false
     },
     "pt-BR": {
-     "added": [],
-     "dropped": [],
+     "added": [
+      "Salve agora. E dessa vez leia mesmo."
+     ],
+     "dropped": [
+      "Otimizado para iPhone Duo. Criado com o SDK mais recente, o app ocupa toda a tela interna e ajusta o layout automaticamente, com o aparelho dobrado ou aberto.",
+      "Salve agora. E dessa vez leia mesmo. Compartilhe um link de qualquer app e o SaveTag coloca etiquetas no seu aparelho: comida, viagem, estilo, compras e mais.",
+      "Título, site e prévia são preenchidos sozinhos, e a busca encontra as coisas a partir de uma lembrança vaga, sem as palavras exatas.",
+      "Redescobrir traz todo dia alguns links salvos ainda não lidos, para a lista diminuir de verdade."
+     ],
      "live_updated": "2026-10-09",
      "live_version": "1.0.6",
-     "same": true
+     "same": false
     },
     "zh-Hans": {
-     "added": [],
-     "dropped": [],
+     "added": [
+      "先存下来,而且这次真的会看完。"
+     ],
+     "dropped": [
+      "已针对 iPhone Duo 优化。本应用使用最新开发工具包构建,铺满整块内屏,无论折叠还是展开都会自动调整布局。",
+      "先存下来,而且这次真的会看完。从任何 App 分享链接进来,自动贴上美食、旅行、穿搭、购物等主题标签。",
+      "标题、来源与预览图自动带入;记得大概意思就搜得到,不必背原来的字。",
+      "“重新发现”每天挑几条还没读的给你,清单真的会变短。"
+     ],
      "live_updated": "2026-10-09",
      "live_version": "1.0.6",
-     "same": true
+     "same": false
     },
     "zh-Hant": {
-     "added": [],
-     "dropped": [],
+     "added": [
+      "先存下來,而且真的會看完。"
+     ],
+     "dropped": [
+      "已針對 iPhone Duo 最佳化。本 App 以最新開發套件建置,填滿整個內螢幕,無論摺起或打開都會自動調整版面。",
+      "先存下來,而且真的會看完。從任何 App 分享連結進來,自動貼上美食、旅遊、穿搭、購物等主題標籤。",
+      "標題、來源與預覽圖自動帶入;記得大概意思就搜得到,不必背原本的字。",
+      "「重新發現」每天挑幾則還沒讀的給你,清單真的會變短。"
+     ],
      "live_updated": "2026-10-09",
      "live_version": "1.0.6",
-     "same": true
+     "same": false
     }
    },
-   "status": "green"
+   "status": "red"
   },
   "scanto": {
    "blocked_terms": [],
@@ -4501,9 +4572,9 @@
     "Wordmate Lite 5 Kata Sehari",
     "Wordmate Lite 5 từ mỗi ngày",
     "Wordmate Lite วันละ 5 คํา",
+    "Wordmate Lite 일본어·영어 단어",
     "Wordmate Lite 每天五个单词",
     "Wordmate Lite 每天五個單字",
-    "Wordmate Lite 하루 5단어",
     "Wordmate Lite 1日5単語",
     "Wordmate Lite"
    ],
@@ -4675,11 +4746,11 @@
   "gb"
  ],
  "counts": {
-  "green": 56,
-  "red": 0,
+  "green": 55,
+  "red": 1,
   "unknown": 0
  },
  "errors": [],
- "generated_at": "2026-10-30T03:33:05Z",
+ "generated_at": "2026-10-31T02:53:27Z",
  "schema": "growth.store-copy-drift/v1"
 }

@@ -1,9 +1,9 @@
 {
  "schema": "lumi.android-live-snapshot/v1",
  "source": "AndroidPlay android_live_scan (Play page HTTP 200 + publish LIVE)",
- "source_generated": "2026-10-30T19:38:07+0800",
+ "source_generated": "2026-10-31T10:46:26+0800",
  "count": 55,
- "content_sha256": "930b48d164101005f0e605fb377e40da1031d718184f849a9773c065ec917f9b",
+ "content_sha256": "d562ed5eedd91a16c6605b608e21763dc665b9bfb357ae594962f7661d20b439",
  "apps": {
   "aibriefpack": {
    "ios_app_id": "6791658210",
@@ -1155,6 +1155,11 @@
   {
    "folder": "56_MetroTimeHelper",
    "package": "com.alice51849.MetroTimeHelper",
+   "reason": "no_unique_ios_match"
+  },
+  {
+   "folder": "60_TripBeeCute",
+   "package": "com.alice51849.TripBeeCute",
    "reason": "no_unique_ios_match"
   }
  ],

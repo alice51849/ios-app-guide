@@ -153,7 +153,10 @@ SLOT_WORKFLOWS: dict[str, dict[str, dict]] = {
         # Telegram/Threads/Instagram, so it is watched, never dispatched.
         "countdown-daily.yml": {
             "slots": {3: 10},
-            "max_age_hours": SLOT_MAX_AGE_HOURS,
+            # 24 + 3 (watchdog actually runs ~06:12Z, 3h after this 03:10Z slot; GitHub delays this
+            # workflow to 08:47-09:54Z) + 3 margin = 30. The shared 27h made every normal day red at the
+            # 06:12Z run; a missed day is still red at the 18:12Z run (>=39h). Recompute if delays move.
+            "max_age_hours": 30,
             "heal": "monitor",
             "reason": "no slot gate or dedupe: a rerun would post a duplicate card",
         },

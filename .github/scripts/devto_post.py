@@ -2,10 +2,12 @@
 # -*- coding: utf-8 -*-
 """Dev.to 自動發文 — 防重複且嚴格遵守每篇至少間隔 72 小時。"""
 import datetime as _dt
+import hashlib
 import json
 import os
 import re
 import sys
+import urllib.error
 import urllib.parse
 import urllib.request
 
@@ -20,6 +22,71 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 UA = "Mozilla/5.0 (Lumi Apps poster)"
 MIN_PUBLISH_INTERVAL = _dt.timedelta(hours=72)
 PAGE_SIZE = 100
+BUYER_GUIDE_POOL = "devto_buyer_job_articles.json"
+
+
+def _validate_buyer_guide(article):
+    url = article.get("canonical_url", "")
+    if not all(isinstance(article.get(field), str) for field in (
+        "canonical_url", "source_sha256", "title", "body"
+    )):
+        raise ValueError("Buyer guide fields must be strings")
+    parsed = urllib.parse.urlsplit(url)
+    if (
+        parsed.scheme != "https"
+        or parsed.netloc not in {"open.cait518.cc", "alice51849.github.io"}
+        or not re.fullmatch(
+            r"/ios-app-guide/buyer-guides/en-US/[a-z0-9-]+\.html", parsed.path
+        )
+        or parsed.query or parsed.fragment
+        or not re.fullmatch(r"[0-9a-f]{64}", article.get("source_sha256", ""))
+        or not article.get("title", "").strip()
+        or not article.get("body", "").strip()
+    ):
+        raise ValueError("Buyer guide needs an exact first-party canonical and source digest")
+
+
+def load_pool():
+    with open(os.path.join(HERE, "devto_articles.json"), encoding="utf-8") as pool_file:
+        pool = json.load(pool_file)
+    candidate_path = os.path.join(HERE, BUYER_GUIDE_POOL)
+    if os.path.isfile(candidate_path):
+        with open(candidate_path, encoding="utf-8") as candidate_file:
+            candidates = json.load(candidate_file)
+        if not isinstance(candidates, list):
+            raise ValueError("Buyer guide queue must be a list")
+        for article in candidates:
+            if not isinstance(article, dict):
+                raise ValueError("Malformed buyer guide")
+            _validate_buyer_guide(article)
+        pool = [*pool, *candidates]
+    return pool
+
+
+def _same_article(candidate, published):
+    if candidate["title"].strip() == (published.get("title") or "").strip():
+        return True
+    canonical = candidate.get("canonical_url")
+    return bool(canonical and canonical == published.get("canonical_url"))
+
+
+def buyer_guide_source_is_live(article):
+    if "source_sha256" not in article:
+        return True
+    _validate_buyer_guide(article)
+    url = article["canonical_url"]
+    request = urllib.request.Request(url, method="GET", headers={"User-Agent": UA})
+    try:
+        with urllib.request.urlopen(request, timeout=25) as response:
+            if response.status != 200 or response.geturl() != url:
+                return False
+            body = response.read(1_048_577)
+        return (
+            len(body) <= 1_048_576
+            and hashlib.sha256(body).hexdigest() == article["source_sha256"]
+        )
+    except (OSError, urllib.error.URLError):
+        return False
 
 
 def published_articles(key):
@@ -77,12 +144,9 @@ def _published_at(article):
 
 
 def next_unpublished(pool, published):
-    done = {
-        article.get("title", "").strip()
-        for article in published
-    }
     return next(
-        (article for article in pool if article["title"].strip() not in done),
+        (article for article in pool
+         if not any(_same_article(article, item) for item in published)),
         None,
     )
 
@@ -95,12 +159,14 @@ def article_urls(article):
 
 
 def next_publishable(pool, published):
-    done = {
-        article.get("title", "").strip()
-        for article in published
-    }
     for article in pool:
-        if article["title"].strip() in done:
+        if any(_same_article(article, item) for item in published):
+            continue
+        if not buyer_guide_source_is_live(article):
+            print(
+                f"Dev.to: buyer guide is not the exact live source yet: {article['title']}",
+                file=sys.stderr,
+            )
             continue
         dead = [url for url in article_urls(article) if not validate_url(url)]
         if dead:
@@ -115,11 +181,10 @@ def next_publishable(pool, published):
 
 
 def latest_pool_publication(pool, published):
-    pool_titles = {article["title"].strip() for article in pool}
     matches = [
         article
         for article in published
-        if article.get("title", "").strip() in pool_titles
+        if any(_same_article(candidate, article) for candidate in pool)
     ]
     return max((_published_at(article) for article in matches), default=None)
 
@@ -149,6 +214,8 @@ def _publish(key, article):
             "tags": article.get("tags", [])[:4],
         }
     }
+    if article.get("canonical_url"):
+        payload["article"]["canonical_url"] = article["canonical_url"]
     req = urllib.request.Request(
         "https://dev.to/api/articles",
         data=json.dumps(payload).encode(),
@@ -176,10 +243,7 @@ def main():
         )
         return 1
     try:
-        with open(
-            os.path.join(HERE, "devto_articles.json"), encoding="utf-8"
-        ) as pool_file:
-            pool = json.load(pool_file)
+        pool = load_pool()
         published = published_articles(key)
         print(f"Dev.to authenticated history: {len(published)} articles")
         if not next_unpublished(pool, published):

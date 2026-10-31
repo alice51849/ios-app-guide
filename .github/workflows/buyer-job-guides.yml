@@ -1,0 +1,38 @@
+name: Buyer job guide contract
+
+on:
+  pull_request:
+    paths:
+      - "_engine/geo/buyer_job_guides.py"
+      - "_engine/geo/gen_app_page_related.py"
+      - "_engine/geo/data/buyer_job_*.json"
+      - "_engine/geo/tests/test_buyer_job_guides.py"
+      - "buyer-guides/**"
+      - "data/buyer-job-guides/**"
+      - ".github/scripts/devto_*.py"
+      - ".github/scripts/devto_buyer_job_articles.json"
+      - ".github/scripts/test_buyer_guide_syndication.py"
+      - ".github/workflows/buyer-job-guides.yml"
+      - ".github/workflows/geo-daily.yml"
+  push:
+    branches: ["feat/buyer-job-guides-*"]
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    env:
+      GEO_PAGES: ${{ github.workspace }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Check native copy, payment models, evidence, and preservation
+        run: python3 -m unittest discover -s _engine/geo/tests -p test_buyer_job_guides.py -q -b
+      - name: Check candidate publishing without network or credentials
+        run: PYTHONPATH=.github/scripts python3 -m unittest -q -b test_buyer_guide_syndication
+      - name: Check reproducible artifacts
+        run: python3 _engine/geo/buyer_job_guides.py --check

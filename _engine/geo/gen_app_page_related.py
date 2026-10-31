@@ -19,6 +19,7 @@ publisher_intent_catalog 都靠「一頁只有一個 App Store ID」判定頁面
 import argparse
 import html
 import os
+from pathlib import Path
 import re
 import sys
 
@@ -299,6 +300,10 @@ def main():
         process_locale(locale, state)
     if not args.locale:
         process_hubs(state)
+        import buyer_job_guides
+
+        increment = buyer_job_guides.materialize(Path(PAGES), check=args.check, site=SITE)
+        state["changed"].extend(increment["changed"] + increment["removed"])
 
     print(
         f"app-page related links: {len(state['changed'])} 個檔案"

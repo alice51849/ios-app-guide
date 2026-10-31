@@ -22906,6 +22906,38 @@ class GeneratorTests(unittest.TestCase):
         title = re.search(r"<title>([^<]+)</title>", hub).group(1)
         self.assertFalse(title.endswith(("pay o", "Wordmat")))
 
+    def test_aeo_guide_keeps_offers_but_never_self_rating(self):
+        from unittest import mock
+        import aeo_guide_refresh_facts
+
+        app_id = aeo_guide.APPSTORE["wordmate"]
+        facts = {f"{app_id}|US": {
+            "live": True, "retrieved_at": dt.date.today().isoformat(),
+            "app_binary_price": 0, "currency": "USD",
+            "rating_value": 4.43, "rating_count": 7,
+        }}
+        with mock.patch.object(aeo_guide, "_FACTS", facts):
+            offers, rating = aeo_guide.real_offer_and_rating("wordmate")
+            self.assertEqual("USD", offers["priceCurrency"])
+            self.assertIsNone(rating)
+            guide = aeo_guide.render("wordmate", aeo_guide_free_batch3.C["wordmate"])
+            self.assertIn('"offers"', guide)
+            self.assertNotIn("aggregateRating", guide)
+            self.assertNotIn("AggregateRating", guide)
+            with tempfile.TemporaryDirectory() as tmp:
+                page = os.path.join(tmp, "wordmate.html")
+                stale = {"@type": "SoftwareApplication", "name": "Wordmate",
+                         "aggregateRating": {"@type": "AggregateRating",
+                                             "ratingValue": 4.43, "ratingCount": 7}}
+                with open(page, "w", encoding="utf-8") as fh:
+                    fh.write('<script type="application/ld+json">'
+                             + json.dumps(stale) + "</script>")
+                aeo_guide_refresh_facts.patch_file(page, "wordmate", False)
+                with open(page, encoding="utf-8") as fh:
+                    patched = fh.read()
+                self.assertNotIn("aggregateRating", patched)
+                self.assertIn('"offers"', patched)
+
     def test_new_live_apps_have_curated_comparison_surfaces(self):
         expected = {
             "dailymate": {

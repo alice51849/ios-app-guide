@@ -1,11 +1,19 @@
 {
- "updated_at": "2026-10-30T08:57:52Z",
+ "updated_at": "2026-10-31T08:50:59Z",
  "targets": [
   {
    "app_id": "6785004775",
    "country": "br",
    "locale": "pt-BR",
    "keyword": "lista de tarefas fofa",
+   "rank": 2,
+   "leader_ratings": 0
+  },
+  {
+   "app_id": "6794039979",
+   "country": "cz",
+   "locale": "cs",
+   "keyword": "impulzivní nákup",
    "rank": 2,
    "leader_ratings": 0
   },
@@ -114,14 +122,6 @@
    "leader_ratings": 0
   },
   {
-   "app_id": "6782275018",
-   "country": "no",
-   "locale": "no",
-   "keyword": "gjør bilde skarpt",
-   "rank": 2,
-   "leader_ratings": 0
-  },
-  {
    "app_id": "6824946559",
    "country": "pl",
    "locale": "pl",
@@ -134,14 +134,6 @@
    "country": "tw",
    "locale": "zh-Hant",
    "keyword": "英文履歷",
-   "rank": 2,
-   "leader_ratings": 0
-  },
-  {
-   "app_id": "6787193643",
-   "country": "tw",
-   "locale": "zh-Hant",
-   "keyword": "飛機上 小孩",
    "rank": 2,
    "leader_ratings": 0
   },
@@ -200,6 +192,14 @@
    "keyword": "zhuyin for kids",
    "rank": 2,
    "leader_ratings": 15
+  },
+  {
+   "app_id": "6792850916",
+   "country": "cz",
+   "locale": "cs",
+   "keyword": "anonymizace pdf",
+   "rank": 3,
+   "leader_ratings": 0
   }
  ]
 }

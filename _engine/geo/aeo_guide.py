@@ -69,7 +69,7 @@ SCHEMA_CAT = {"photo-utility": "MultimediaApplication", "productivity": "Busines
               "finance": "FinanceApplication", "health": "HealthApplication",
               "education": "EducationalApplication", "kids": "EducationalApplication"}
 
-# 2026-09-23:JSON-LD 加真實 price/rating(AEO 優化 —— AI 助理引用時更容易判斷「這是
+# 2026-09-23:JSON-LD 加真實 price(2026-10-31 起不輸出評分;AEO 優化 —— AI 助理引用時更容易判斷「這是
 # 可信的實際商品」)。資料只認 ~/.growth-private/app_store_facts_cache.json(來源
 # itunes.apple.com/lookup 的真實回應,見該檔 "source" 欄位),絕不捏造。快取不存在、
 # 該 app 沒有條目、或資料超過 60 天沒更新,一律不寫這兩個欄位(寧可缺,不可假)。
@@ -89,7 +89,7 @@ _FACTS = _load_facts_cache()
 
 
 def real_offer_and_rating(key):
-    """回傳 (offers, aggregateRating) — 皆為 dict 或 None。只用實測快取,絕不捏造。"""
+    """回傳 (offers, None) — offers 為 dict 或 None。只用實測快取,絕不捏造;評分不輸出。"""
     app_id = APPSTORE.get(key, "")
     entry = _FACTS.get(f"{app_id}|US") if app_id else None
     if not entry or not entry.get("live"):
@@ -107,14 +107,10 @@ def real_offer_and_rating(key):
     if price is not None and currency:
         offers = {"@type": "Offer", "price": price, "priceCurrency": currency,
                   "availability": "https://schema.org/InStock"}
-    rating = None
-    rv, rc = entry.get("rating_value"), entry.get("rating_count")
-    # 門檻 rc>=5:n=1 的「真實」評分在統計上是雜訊,可能是單一 1 星或 5 星,
-    # 發布出去對 AI 助理判讀是誤導而非幫助(這不是造假,是不發布沒有代表性的樣本)。
-    if isinstance(rv, (int, float)) and isinstance(rc, int) and rc >= 5:
-        rating = {"@type": "AggregateRating", "ratingValue": round(rv, 2),
-                  "ratingCount": rc, "bestRating": 5, "worstRating": 1}
-    return offers, rating
+    # 不輸出評分:發行者替自家 App 標的 aggregateRating 屬於 Google 評論摘要規範
+    # 禁止的自我評論標記(同 gen_app_store_facts.py 只留 offers 的做法)。
+    # 保留雙值回傳只為相容既有呼叫端,評分一律 None。
+    return offers, None
 
 
 def en_desc(key):
@@ -237,11 +233,10 @@ def render(key, c):
                   "name": a["name"], "operatingSystem": "iOS", "applicationCategory": scat,
                   "url": url, "installUrl": url, "description": meta,
                   "featureList": a.get("cta_bullets", []) + a.get("keywords", [])[:5]}
-    offers, rating = real_offer_and_rating(key)
+    offers, _ = real_offer_and_rating(key)
     if offers:
         app_schema["offers"] = offers
-    if rating:
-        app_schema["aggregateRating"] = rating
+    # 價格留著(買家需要的產品事實);評分不留:發行者替自家 App 標評分屬自我評論標記。
     faq_schema = {"@context": "https://schema.org", "@type": "FAQPage",
                   "mainEntity": [{"@type": "Question", "name": q,
                                   "acceptedAnswer": {"@type": "Answer", "text": ans}} for q, ans in faqs]}

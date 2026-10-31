@@ -6,6 +6,7 @@ import datetime as dt
 import io
 import os
 import sys
+import tempfile
 import unittest
 from pathlib import Path
 from unittest import mock
@@ -312,19 +313,119 @@ class BackfillTest(unittest.TestCase):
             with contextlib.redirect_stdout(io.StringIO()):   # the ::error:: line is not a real alert here
                 self.assertEqual(B.main(["audit"]), 1)
 
-    def test_an_older_post_with_the_app_store_link_but_no_play_link_is_left_alone(self):
+    def test_an_older_instagram_post_with_the_app_store_link_but_no_play_link_is_left_alone(self):
         store, _play = B.links_for("instagram", MOCHI)
         client = ig([reel(caption=f"Hook\nApp Store: {store}")])
         rows = self.run_channel(client, apply=True)
         self.assertEqual(rows[0]["status"], "ok_store_only")
         self.assertEqual((client.writes, client.reads), ([], 0))
-        reply = {"id": "r1", "text": f"App Store: {store}", "user": "brand", "own": True}
-        client = FakeClient("threads", [{"id": "200", "text": "Task list too boring?", "permalink": "https://www.threads.com/@b/post/BBB",
-                                         "timestamp": "2026-10-15T06:00:00+0000"}], {"200": [reply]})
+
+    # ---- the Play-only round (review 2026-10-31: the ok_store_only exemption is lifted on Threads) ...
+
+    @staticmethod
+    def th_post(pid="200", text="Task list too boring?", ts="2026-10-15T06:00:00+0000"):
+        return {"id": pid, "text": text, "permalink": f"https://www.threads.com/@b/post/{pid}", "timestamp": ts}
+
+    def test_threads_post_with_only_the_app_store_link_gets_one_play_only_reply(self):
+        store, play = B.links_for("threads", MOCHI)
+        client = FakeClient("threads", [self.th_post(text=f"Mochi\nApp Store: {store}")])
         state = fresh_state()
-        self.assertEqual(self.run_channel(client, state, apply=True)[0]["status"], "ok_store_only")
+        rows = self.run_channel(client, state, apply=True)
+        self.assertEqual(rows[0]["status"], "backfilled")
+        self.assertEqual(len(client.writes), 1)
+        text = client.writes[0][1]
+        self.assertIn(play, text)
+        self.assertIn("play.google.com", text)
+        self.assertNotIn("apps.apple.com", text, "only the Play link: the App Store link is already there")
+        self.assertIn("utm_source%3Dthreads", text, "the existing ct format of the Play link")
+        self.assertTrue(state["done"]["threads"]["200"]["play_only"])
+        self.assertEqual(self.run_channel(client, state, apply=True)[0]["status"], "ok_backfilled_earlier")
+        self.assertEqual(len(client.writes), 1, "a post is done once")
+
+    def test_our_older_reply_with_only_the_app_store_link_gets_the_play_link(self):
+        store, play = B.links_for("threads", MOCHI)
+        reply = {"id": "r1", "text": f"App Store: {store}", "user": "brand", "own": True}
+        client = FakeClient("threads", [self.th_post()], {"200": [reply]})
+        state = fresh_state()
+        state["checked"]["threads"] = {"200": "ok_store_only"}   # cached by the old rule: looked at again
+        audit = self.run_channel(client, copy.deepcopy(state))
+        self.assertEqual(audit[0]["status"], "missing_play")
+        rows = self.run_channel(client, state, apply=True)
+        self.assertEqual(rows[0]["status"], "backfilled")
+        self.assertNotIn("apps.apple.com", client.writes[0][1])
+        self.assertIn(play, client.writes[0][1])
+
+    def test_a_post_that_already_has_the_play_link_gets_nothing(self):
+        store, play = B.links_for("threads", MOCHI)
+        client = FakeClient("threads", [self.th_post(text=f"Mochi\nApp Store: {store}")],
+                            {"200": [{"id": "r1", "text": f"Google Play: {play}", "user": "brand", "own": True}]})
+        self.assertEqual(self.run_channel(client, apply=True)[0]["status"], "ok_reply")
         self.assertEqual(client.writes, [])
-        self.assertEqual(state["checked"]["threads"]["200"], "ok_store_only", "never read again")
+        client = FakeClient("threads", [self.th_post(text=f"Mochi\nApp Store: {store}\nGoogle Play: {play}")])
+        self.assertEqual(self.run_channel(client, apply=True)[0]["status"], "ok_caption")
+        self.assertEqual((client.writes, client.reads), ([], 0))
+
+    def test_an_ios_only_app_or_an_unknown_android_state_gets_no_play_reply(self):
+        store, _play = B.links_for("threads", PLAIN)
+        snapshot = {k: v for k, v in B.android_apps().items() if k != PLAIN}   # pin PLAIN as iOS only
+        client = FakeClient("threads", [self.th_post("300", f"Plain Pro\nApp Store: {store}")])
+        with mock.patch.object(B, "android_apps", return_value=snapshot), \
+                mock.patch("social_post_common.android_apps", return_value=snapshot):
+            self.assertEqual(self.run_channel(client, apply=True)[0]["status"], "ok_caption")
+        self.assertEqual(client.writes, [])
+        store, _play = B.links_for("threads", MOCHI)
+        client = FakeClient("threads", [self.th_post(text=f"Mochi\nApp Store: {store}")])
+        with mock.patch.object(B, "android_apps", return_value={}), \
+                mock.patch("social_post_common.android_apps", return_value={}):
+            rows = self.run_channel(client, apply=True)
+        self.assertNotIn(rows[0]["status"], ("backfilled", "backfilled_unverified"))
+        self.assertEqual(client.writes, [], "the Android state cannot be read: never a guess")
+
+    def test_the_last_14_days_go_first_then_the_long_tail_newest_first(self):
+        now = dt.datetime(2026, 10, 31, tzinfo=dt.timezone.utc)
+        media = [{"id": "old", "timestamp": "2026-09-01T00:00:00+0000"},
+                 {"id": "new", "timestamp": "2026-10-30T00:00:00+0000"},
+                 {"id": "mid", "timestamp": "2026-10-20T00:00:00+0000"},
+                 {"id": "older", "timestamp": "2026-08-01T00:00:00+0000"},
+                 {"id": "none"}]
+        self.assertEqual([m["id"] for m in B.by_window(media, "threads", now)], ["new", "mid", "old", "older", "none"])
+        store, _play = B.links_for("threads", MOCHI)
+        client = FakeClient("threads", [self.th_post("1", f"Mochi App Store: {store}", "2026-09-01T00:00:00+0000"),
+                                        self.th_post("2", f"Mochi App Store: {store}", "2026-10-29T00:00:00+0000")])
+        self.run_channel(client, apply=True, max_new=1, now=now)
+        self.assertEqual([w[0] for w in client.writes], ["2"], "the recent post first, at the run's own cap")
+
+    def test_a_threads_limit_signal_pauses_the_play_round_and_the_app_store_round_goes_on(self):
+        store, _play = B.links_for("threads", MOCHI)
+        err = OP.ApiError(400, 4, "Application request limit reached")
+        client = FakeClient("threads", [self.th_post(text=f"Mochi\nApp Store: {store}")], fail_on_write=err)
+        state, logs = fresh_state(), []
+        rows = self.run_channel(client, state, apply=True, log=logs.append)
+        self.assertTrue(rows[0]["status"].startswith("write_failed"))
+        self.assertIn("threads", state["play_paused"])
+        self.assertTrue(any(line.startswith("::warning::") and "paused" in line for line in logs))
+        client = FakeClient("threads", [self.th_post(text=f"Mochi\nApp Store: {store}"),
+                                        self.th_post("201", "Task list too boring? Mochi")])
+        rows = self.run_channel(client, state, apply=True)
+        self.assertEqual({r["id"]: r["status"] for r in rows}, {"200": "play_paused", "201": "backfilled"})
+        self.assertEqual([w[0] for w in client.writes], ["201"])
+        self.assertIn("apps.apple.com", client.writes[0][1])
+
+    def test_a_throttled_read_pauses_the_play_round_and_merge_keeps_the_pause(self):
+        client = FakeClient("threads", [self.th_post()], fail_comments=OP.ApiError(429, 0, "Too many requests"))
+        state = fresh_state()
+        rows = self.run_channel(client, state, apply=True)
+        self.assertEqual(rows[-1]["status"], "throttled")
+        self.assertIn("threads", state["play_paused"])
+        with tempfile.TemporaryDirectory() as tmp:
+            saved, current = Path(tmp) / "saved.json", Path(tmp) / "state.json"
+            B.save_state(state, saved)
+            B.save_state(fresh_state(), current)
+            B.merge_state(saved, current)
+            self.assertIn("threads", B.load_state(current)["play_paused"])
+
+    def test_instagram_never_takes_part_in_the_play_round(self):
+        self.assertEqual(B.PLAY_ONLY_CHANNELS, {"threads"})
 
     # ---- the read-back of an Instagram comment (the list of a post hides the account's own comments) ...
 

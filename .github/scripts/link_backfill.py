@@ -75,6 +75,13 @@ LINK_BUDGET_24H = {"threads": 20}
 # The Threads Mochi trial posts (threads_post.py, threads_mochi_trial.json, 2026-10-20 .. 11-01) carry no brand in
 # their main text, so the finder names them by that text: the trial file gives the app and the entry's own ct.
 TRIAL_PATH = Path(__file__).resolve().parent / "threads_mochi_trial.json"
+# Play-only round (review 2026-10-31): a Threads post (or our own older reply) that carries the App Store link but
+# no Google Play link, of an app that is live on Google Play, gets one reply with only the Play link. Newest first,
+# so the posts of the last PLAY_RECENT_DAYS days go before the long tail; the run caps and gaps stay as they are.
+# The first throttle / limit answer on Threads pauses this round (state["play_paused"]) until the key is removed;
+# the App Store round goes on under its own rules. Instagram stays NO_WRITE.
+PLAY_ONLY_CHANNELS = {"threads"}
+PLAY_RECENT_DAYS = {"threads": 14}
 NO_WRITE = {"instagram": "Instagram texts point to the profile (bio) link and carry no URL (owner 2026-10-17); "
                          "no link comment is added any more, the ones added earlier stay"}
 
@@ -83,7 +90,22 @@ def load_state(path=STATE):
     state = OP.load_json(path, {})
     for key in ("done", "checked", "failed"):
         state.setdefault(key, {})
+    state.setdefault("play_paused", {})
     return state
+
+
+def play_paused(state, channel):
+    return bool((state.get("play_paused") or {}).get(channel))
+
+
+def pause_play(state, channel, why, now, log=print):
+    """Stop-loss: the Play-only round of the channel stops at the first throttle / limit signal (kept in the state
+    file until someone removes the key)."""
+    if channel not in PLAY_ONLY_CHANNELS or play_paused(state, channel):
+        return
+    state.setdefault("play_paused", {})[channel] = {"at": now.strftime("%Y-%m-%dT%H:%M:%SZ"), "why": str(why)[:160]}
+    log(f"::warning::{channel}: throttle / limit signal ({str(why)[:100]}); the Play-only backfill is paused "
+        f"(state play_paused.{channel}); the App Store backfill goes on under its own limits")
 
 
 def save_state(state, path=STATE):
@@ -499,7 +521,9 @@ def _short(text, n):
 
 def classify(client, media, finder, state, reads=None, read_gap=0, sleeper=time.sleep):
     """One audit row: what this post promotes and whether it already carries the link.
-    `reads` = {"n": comment reads so far, "max": budget}; a read that would exceed it leaves the post unchecked."""
+    `reads` = {"n": comment reads so far, "max": budget}; a read that would exceed it leaves the post unchecked.
+    On a PLAY_ONLY_CHANNELS channel a post with the App Store link but no Play link of an Android-live app is
+    "missing_play" (one reply with only the Play link is owed); elsewhere it stays "ok_store_only"."""
     channel, pid = client.channel, str(media["id"])
     text = media.get("caption") or ""
     row = {"channel": channel, "id": pid, "permalink": media.get("permalink", ""),
@@ -527,11 +551,17 @@ def classify(client, media, finder, state, reads=None, read_gap=0, sleeper=time.
     if DL.has_download_link(text, store, play):
         row["status"] = "ok_caption"
         return row, None
-    if DL.has_app_store_link(text, store):   # an older post: the App Store link is the direct download, no second round for Play
+    play_round = channel in PLAY_ONLY_CHANNELS and bool(play)
+    if DL.has_app_store_link(text, store) and not play_round:   # the App Store link is the direct download
         row["status"] = "ok_store_only"
+        return row, None
+    if play_round and DL.has_app_store_link(text, store) and play_paused(state, channel):
+        row["status"] = "play_paused"   # stop-loss: no read, no write
         return row, None
     done = state["done"].get(channel, {}).get(pid)
     cached = state["checked"].get(channel, {}).get(pid)
+    if cached == "ok_store_only" and play_round:   # cached before the Play-only round existed: look again
+        cached = None
     if cached and not done:
         row["status"] = cached
         return row, None
@@ -568,9 +598,12 @@ def classify(client, media, finder, state, reads=None, read_gap=0, sleeper=time.
             row["status"] = "ok_comment" if channel == "instagram" else "ok_reply"
             state["checked"].setdefault(channel, {})[pid] = row["status"]  # never read this post again
         return row, None
-    if not done and DL.has_app_store_link(seen, store):   # our own older reply has the App Store link: enough
+    if not done and DL.has_app_store_link(seen, store) and not play_round:   # our own older reply has it: enough
         row["status"] = "ok_store_only"
         state["checked"].setdefault(channel, {})[pid] = row["status"]
+        return row, None
+    if not done and DL.has_app_store_link(seen, store) and play_paused(state, channel):
+        row["status"] = "play_paused"
         return row, None
     if done:  # written earlier but the list does not show it: the post's comment count is the proof, never write a second one
         count = comments_count(client, media["id"])
@@ -589,10 +622,18 @@ def classify(client, media, finder, state, reads=None, read_gap=0, sleeper=time.
         if count > len(listed):   # (replies under other people's comments count too: those posts wait, they are listed)
             row["status"] = "unlisted_comments"   # one of them may be a link we wrote earlier: never a second one
             return row, None
-    row["status"] = "missing"
+    row["status"] = "missing_play" if DL.has_app_store_link(seen, store) else "missing"
     row["own_replies"] = [_short(c.get("text", ""), 100) for c in mine][:3]
     return row, {"store": store, "play": play, "missing_store": not DL.has_app_store_link(seen, store),
                  "missing_play": bool(play) and not DL.has_play_link(seen, play)}
+
+
+def by_window(media, channel, now):
+    """Newest first; the posts of the last PLAY_RECENT_DAYS days of the channel before the long tail (stable)."""
+    floor = dt.datetime.min.replace(tzinfo=dt.timezone.utc)
+    since = now - dt.timedelta(days=PLAY_RECENT_DAYS.get(channel, 0))
+    when = {id(m): _when(m.get("timestamp")) or floor for m in media}
+    return sorted(media, key=lambda m: (when[id(m)] < since, -(when[id(m)] - floor).total_seconds()))
 
 
 def run(client, catalog, state, *, apply=False, max_new=5, only=None, sleeper=time.sleep, gap=GAP, read_gap=0,
@@ -614,6 +655,7 @@ def run(client, catalog, state, *, apply=False, max_new=5, only=None, sleeper=ti
     try:
         client.me()
         media = list_media(client, pages=pages)
+        media = by_window(media, channel, now)
     except Exception as exc:
         log(f"::warning::{channel}: listing our posts failed, skipped ({exc})")
         return [{"channel": channel, "id": "", "status": f"list_failed:{getattr(exc, 'code', 'x')}"}]
@@ -642,6 +684,7 @@ def run(client, catalog, state, *, apply=False, max_new=5, only=None, sleeper=ti
             row, todo = classify(client, m, finder, state, reads, read_gap=read_gap, sleeper=sleeper)
         except Exception as exc:
             if is_throttle(exc):
+                pause_play(state, channel, exc, now, log)
                 log(f"::warning::{channel}: the platform says slow down ({exc}); stopping here")
                 rows.append({"channel": channel, "id": str(m.get("id")), "status": "throttled"})
                 break
@@ -687,12 +730,16 @@ def run(client, catalog, state, *, apply=False, max_new=5, only=None, sleeper=ti
             fail["n"] += 1
             fail["last"] = row["status"]
             fail["at"] = now.strftime("%Y-%m-%dT%H:%M:%SZ")
+            if is_throttle(exc):
+                pause_play(state, channel, exc, now, log)
             persist()
             log(f"::warning::{channel}: writing under {row['id']} failed ({str(exc)[:120]}); stopping this channel for now")
             break
         at = now.strftime("%Y-%m-%dT%H:%M:%SZ")
         receipt = state["done"].setdefault(channel, {})[row["id"]] = {
             "at": at, "comment_id": str(new_id or ""), "app": row["app"], "verified": False, "count_before": before}
+        if not todo["missing_store"]:
+            receipt["play_only"] = True
         persist()  # the receipt is safe on disk before the read-back
         verified, via = False, ""
         try:
@@ -783,6 +830,9 @@ def merge_state(saved_path, path=STATE):
                 else:   # done: a verified receipt stays verified; otherwise the later write wins
                     keep_new = (bool(entry.get("verified")), entry.get("at", "")) >= (bool(old.get("verified")), old.get("at", ""))
                     have[pid] = entry if keep_new else old
+    for channel, entry in (saved.get("play_paused") or {}).items():   # a pause is never lifted by a merge
+        if entry and not state["play_paused"].get(channel):
+            state["play_paused"][channel] = entry
     save_state(state, path)
 
 
@@ -849,7 +899,7 @@ def main(argv=None):
         Path(args.report).write_text(json.dumps(report, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     save_state(state)   # receipts, plus the posts an audit found already linked (never read again)
     print(f"link_backfill {args.cmd}: {counts}")
-    todo = [r for r in rows if r["status"] in ("missing", "unknown_app", "not_checked", "unlisted_comments",
+    todo = [r for r in rows if r["status"] in ("missing", "missing_play", "unknown_app", "not_checked", "unlisted_comments",
                                               "link_unreachable")
             or r["status"].startswith(("write_failed", "backfilled_unverified"))]
     for r in todo[:40]:

@@ -490,5 +490,44 @@ class GeneratorWiringTests(unittest.TestCase):
             policy(), [PAGE], ROOT_ROBOTS, child_body=writer.call_args.args[1]), [])
 
 
+class GoogleExtendedVerdictTests(unittest.TestCase):
+    """2026-10-31 debate verdict, topic 1: only Google-Extended is re-allowed."""
+
+    @staticmethod
+    def stdlib(text):
+        from urllib.robotparser import RobotFileParser
+        parser = RobotFileParser()
+        parser.parse(text.splitlines())
+        return parser
+
+    def test_stdlib_parser_allows_google_extended_only(self):
+        text = policy()
+        for parsed in (self.stdlib(text), RobotsPolicy(text)):
+            can = (parsed.can_fetch if hasattr(parsed, "can_fetch")
+                   else lambda bot, url: parsed.allowed(bot, url, ROOT_ROBOTS))
+            with self.subTest(parser=type(parsed).__name__):
+                self.assertTrue(can("Google-Extended", f"{PUBLIC_ROOT}/"))
+                self.assertTrue(can("Google-Extended", PAGE))
+                for bot in ("GPTBot", "CCBot"):
+                    self.assertFalse(can(bot, f"{PUBLIC_ROOT}/"), bot)
+                    self.assertFalse(can(bot, PAGE), bot)
+                for bot in ("Googlebot", "OAI-SearchBot"):
+                    self.assertTrue(can(bot, f"{PUBLIC_ROOT}/"), bot)
+                    self.assertTrue(can(bot, PAGE), bot)
+
+    def test_google_extended_keeps_private_path_disallows(self):
+        parsed = self.stdlib(policy())
+        for path in PRIVATE_PATHS:
+            self.assertFalse(parsed.can_fetch(
+                "Google-Extended", f"{PUBLIC_ROOT}{path}x"), path)
+
+    def test_training_list_keeps_every_other_opt_out(self):
+        self.assertNotIn("Google-Extended", TRAINING_CRAWLERS)
+        for bot in ("Amazonbot", "Applebot-Extended", "Bytespider", "CCBot",
+                    "ClaudeBot", "CloudflareBrowserRenderingCrawler", "GPTBot",
+                    "meta-externalagent"):
+            self.assertIn(bot, TRAINING_CRAWLERS)
+
+
 if __name__ == "__main__":
     unittest.main()

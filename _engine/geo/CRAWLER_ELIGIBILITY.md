@@ -86,9 +86,13 @@ Manifest 屬於同一 Guide commit/tree；readback 必須先核對 manifest 與
 generation，再驗完整 source／canonical SHA。不得清除 response 裡的 email、
 未知 script、文字、其他註解或任意 markup 讓 Gate 變綠。
 
-保留 canonical host 已有的 Cloudflare 訓練拒絕選擇：GPTBot、
-Applebot-Extended、Google-Extended 等訓練產品不取得 Allow；
+保留 canonical host 已有的 Cloudflare 訓練拒絕選擇：GPTBot、CCBot、
+Applebot-Extended 等訓練產品不取得 Allow；
 尤其不可把 GPTBot 的拒絕擴大成 OAI-SearchBot 的拒絕。
+例外：Google-Extended 依 2026-10-31 辯論裁決（題 1，
+`reports/strategy_debate/2026-10-31_gemini_extended.md`）改為取得 Allow——
+它同時管 Gemini Apps／Vertex AI 的 grounding，且不影響 Google 搜尋收錄與排名；
+停損：搜尋主控台曝光比改前 7 天掉超過 20% 就移回 TRAINING_CRAWLERS。
 Cloudflare Managed robots 與 origin 規則會合併，重複 bot group 的
 Allow／Disallow 同長度時 Allow 可能勝出，所以原先矛盾的 Allow 必須從來源移除。
 

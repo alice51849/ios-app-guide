@@ -23339,6 +23339,39 @@ class GeneratorTests(unittest.TestCase):
             self.assertEqual(1, result["product_pages"])
             self.assertEqual(1, result["answer_pages"])
 
+    def test_app_decision_card_adds_verified_play_link_with_same_ct(self):
+        app_id = gen_app_decision_cards.APPSTORE["tripbeelite"]
+        store = f"https://apps.apple.com/tw/app/id{app_id}?pt=118326163&ct=geo_pick&mt=8"
+        snapshot = {"tripbeelite": {
+            "ios_app_id": app_id,
+            "play_url": "https://play.google.com/store/apps/details?id=com.example.trip",
+        }}
+        with mock.patch.object(gen_app_decision_cards, "_PLAY_APPS", snapshot):
+            play = gen_app_decision_cards.play_url_for("tripbeelite", app_id, store)
+            self.assertEqual("", gen_app_decision_cards.play_url_for("tripbeelite", "1", store))
+            self.assertEqual("", gen_app_decision_cards.play_url_for("other", app_id, store))
+        self.assertEqual(
+            "https://play.google.com/store/apps/details?id=com.example.trip"
+            "&referrer=utm_source%3Dgeo_pick%26utm_campaign%3Dtripbeelite",
+            play,
+        )
+        with mock.patch.object(gen_app_decision_cards, "_PLAY_APPS", {}):
+            self.assertEqual("", gen_app_decision_cards.play_url_for("tripbeelite", app_id, store))
+        content = {"name": "T", "promise": "P", "facts": [], "terms": "",
+                   "storefront": None, "store_url": store, "cta": "Get"}
+        without = gen_app_decision_cards.card_block("tripbeelite", app_id, content)
+        self.assertNotIn("play.google.com", without)
+        with_play = gen_app_decision_cards.card_block(
+            "tripbeelite", app_id, {**content, "play_url": play})
+        self.assertIn(
+            '<p class="iag-decision-card__play">Android: <a href="'
+            "https://play.google.com/store/apps/details?id=com.example.trip&amp;referrer="
+            'utm_source%3Dgeo_pick%26utm_campaign%3Dtripbeelite" rel="noopener">Google Play</a></p>',
+            with_play,
+        )
+        self.assertLess(with_play.index("iag-decision-card__cta"), with_play.index("iag-decision-card__play"))
+        self.assertIn(".iag-decision-card__play", gen_app_decision_cards.STYLESHEET)
+
     def test_app_decision_cards_preserve_localized_copy_and_are_idempotent(self):
         app_id = gen_app_decision_cards.APPSTORE["tripbeelite"]
         fallback = aeo_answers.default_content(

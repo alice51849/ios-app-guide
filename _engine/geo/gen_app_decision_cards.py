@@ -232,6 +232,17 @@ STYLESHEET = """\
   outline-offset: 4px;
 }
 
+.iag-decision-card__play {
+  margin: 0.45rem 0 0;
+  font-size: 0.82rem;
+  opacity: 0.86;
+}
+
+.iag-decision-card__play a {
+  color: inherit;
+  text-decoration: underline;
+}
+
 @media (max-width: 34rem) {
   .iag-decision-card {
     grid-template-columns: minmax(0, 1fr);
@@ -276,11 +287,45 @@ STYLESHEET = """\
     color: #000;
   }
 
-  .iag-decision-card__cta {
+  .iag-decision-card__cta,
+  .iag-decision-card__play {
     display: none;
   }
 }
 """
+
+
+# 2026-10-31 GEO 轉介小改：Google Play 也上線的款，首屏卡片 App Store 按鈕下面多一行
+# Play 直連（同一個 ct 寫進 install referrer，點擊計數記成 s=play）。只信任
+# android_play 的已驗證快照；快照有任何問題一律當「不知道」＝不放 Play 連結
+# （與 android_play／gen_app_store_review_ctas 同一條規則）。
+_PLAY_APPS: dict[str, dict] | None = None
+
+
+def _play_apps() -> dict[str, dict]:
+    global _PLAY_APPS
+    if _PLAY_APPS is None:
+        try:
+            import android_play  # noqa: PLC0415 - geo/android_play.py
+
+            _PLAY_APPS = dict(android_play.load_snapshot())
+        except Exception:  # noqa: BLE001 - unknown Android status = no Play link
+            _PLAY_APPS = {}
+    return _PLAY_APPS
+
+
+def play_url_for(key: str, app_id: str, store_url: str) -> str:
+    """該款已驗證上線 Google Play 時的 Play 直連（帶與 App Store 相同的 ct），否則空字串。"""
+    entry = _play_apps().get(key)
+    if not isinstance(entry, dict) or str(entry.get("ios_app_id") or "") != str(app_id):
+        return ""
+    ct = (urllib.parse.parse_qs(urllib.parse.urlsplit(store_url).query).get("ct") or [""])[0]
+    try:
+        import android_play  # noqa: PLC0415
+
+        return android_play.tracked_play_url(entry.get("play_url", ""), ct, key)
+    except Exception:  # noqa: BLE001 - malformed snapshot row = no Play link
+        return ""
 
 
 def page_campaign(path: Path, pages: Path) -> str:
@@ -492,6 +537,7 @@ def _page_content(
         "storefront": _storefront_fact(source, answer),
         "store_url": store_url,
         "cta": cta,
+        "play_url": play_url_for(key, app_id, store_url),
     }
 
 
@@ -570,6 +616,15 @@ def card_block(key: str, app_id: str, content: dict[str, object]) -> str:
             f'href="{esc(content["store_url"])}" rel="nofollow noopener" '
             f'aria-label="{esc(content["cta"])}" title="{esc(content["cta"])}">'
             f'{esc(content["cta"])}</a>'
+        ),
+        *(
+            [
+                f'    <p class="iag-decision-card__play">Android: '
+                f'<a href="{esc(content["play_url"])}" rel="noopener">'
+                "Google Play</a></p>"
+            ]
+            if content.get("play_url")
+            else []
         ),
         "  </div>",
         "</aside>",

@@ -1,8 +1,8 @@
 {
- "generated": "2026-10-30T10:07:00Z",
+ "generated": "2026-10-31T05:50:16Z",
  "mode": "apply",
  "counts": {
-  "ok_reply": 31,
+  "ok_reply": 33,
   "unknown_app": 47,
   "ok_store_only": 719,
   "ok_backfilled_earlier": 13,
@@ -12,6 +12,30 @@
   "missing": 3
  },
  "rows": [
+  {
+   "channel": "threads",
+   "id": "18114997433520396",
+   "permalink": "https://www.threads.com/@hourstag.app/post/DfJKhrFlfY-",
+   "date": "2026-10-31",
+   "app": "cvdesk",
+   "status": "ok_reply",
+   "text": "我是獨立開發者。看過太多人履歷投了幾十家沒回音，問題不在經歷，而是履歷在 ATS（應徵者追蹤系統）那關就被程式讀亂了：兩欄排版、表格、姓名放頁首，程式一拆就散。CV Desk 在 iPhone 上即時算出 0–100 的 ATS 分數，給你可以點的修正建議；匯出單欄、文字真正可選",
+   "why": "brand",
+   "ios_id": "6781337213",
+   "locale": "zh-Hant"
+  },
+  {
+   "channel": "threads",
+   "id": "18026774357873723",
+   "permalink": "https://www.threads.com/@hourstag.app/post/DfJBCskoE2a",
+   "date": "2026-10-31",
+   "app": "mochi",
+   "status": "ok_reply",
+   "text": "Midterms now, finals next, and \"study everything\" was my whole plan. Now each class gets its own cute checklist: chapter notes, practice pro",
+   "why": "trial",
+   "ios_id": "6785004775",
+   "locale": "en-US"
+  },
   {
    "channel": "threads",
    "id": "18230979562336647",

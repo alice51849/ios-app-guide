@@ -204,7 +204,12 @@ class BackfillTest(unittest.TestCase):
 
     def test_app_found_by_name_in_the_text_gets_its_own_link(self):
         client = ig([reel("556", "Plain Pro makes it simple")])
-        rows = self.run_channel(client, apply=True)
+        # Pin PLAIN as iOS only: the live Android snapshot grows as apps launch on Play (10-30 it did).
+        snapshot = {k: v for k, v in B.android_apps().items() if k != PLAIN}
+        self.assertIn(MOCHI, snapshot)
+        with mock.patch.object(B, "android_apps", return_value=snapshot), \
+                mock.patch("social_post_common.android_apps", return_value=snapshot):
+            rows = self.run_channel(client, apply=True)
         self.assertEqual(rows[0]["status"], "backfilled")
         self.assertIn(f"id{PLAIN}", client.writes[0][1])
         self.assertNotIn("play.google.com", client.writes[0][1])  # iOS only

@@ -507,7 +507,11 @@ class GeneratorTests(unittest.TestCase):
                 "BraveSearchBot",
                 "Applebot",
             ):
-                self.assertIn(f"User-agent: {agent}\nAllow: /", robots)
+                # Group-level check: private-path Disallow lines now come before
+                # "Allow: /" (first-match parsers), so assert on the whole group.
+                group = robots.split(f"User-agent: {agent}\n", 1)[1].split("\n\n", 1)[0]
+                self.assertIn("Allow: /", group.splitlines(), agent)
+                self.assertNotIn("Disallow: /", group.splitlines(), agent)
     def test_live_guide_fallback_only_creates_missing_pages(self):
         with tempfile.TemporaryDirectory() as directory:
             guides = Path(directory) / "guides"

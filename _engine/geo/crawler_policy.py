@@ -81,8 +81,12 @@ def render_robots(sitemaps, guide_site: str, extra_allowed=()) -> str:
     for bot in allowed:
         if bot.casefold() in denied:
             continue
-        out.extend((f"User-agent: {bot}", "Allow: /"))
+        # Disallow before Allow: RFC 9309 parsers use the longest match (same result),
+        # first-match parsers (e.g. CPython urllib.robotparser before 3.13.x) would
+        # otherwise let "Allow: /" win over the private paths.
+        out.append(f"User-agent: {bot}")
         out.extend(f"Disallow: {path}" for path in PRIVATE_PATHS)
+        out.append("Allow: /")
         out.append("")
     for bot in TRAINING_CRAWLERS:
         out.extend((f"User-agent: {bot}", "Disallow: /", ""))

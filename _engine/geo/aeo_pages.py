@@ -537,6 +537,7 @@ CURATED_FALLBACK = {
             "turn my own photo into a cover and inner wallpaper pair",
             "foldable wallpaper app with no ads and a one-time purchase",
             "matching wallpaper set for a foldable phone cover screen and main screen",
+            "wallpaper app for iphone duo cover and inner screens",
         ],
         # Competitor titles read off the live US App Store search results for
         # "foldable wallpaper" and "dual screen wallpaper" on 2026-10-23; rank 0

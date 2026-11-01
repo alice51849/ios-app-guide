@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-10-31T05:21:38Z",
+  "updated_at": "2026-11-01T05:50:02Z",
   "note": "Insights of our own IG / Threads posts by .github/scripts/post_performance.py. score = views + 3*likes + 5*replies + 8*(saves+shares+reposts). boost = best apps, read by 00_GrowthEngine shorts/scripts/schedule_posts.py.",
   "sources": {
     "instagram": "ok: 39 posts",
-    "threads": "ok: 14 posts"
+    "threads": "ok: 12 posts"
   },
   "boost": [
     "cvdesk",
     "mochi_suneung",
     "wifiaidlite",
     "onepageppt",
-    "unblurry"
+    "duowallpaperstudio"
   ],
   "demote": [
     "moneytag",
@@ -38,8 +38,8 @@
     "channels": {
       "instagram": {
         "posts": 14,
-        "median_views": 6.0,
-        "keep_slot": 15,
+        "median_views": 7.0,
+        "keep_slot": 1,
         "daily": 2
       },
       "threads": {
@@ -58,7 +58,7 @@
       "en": {
         "hour": 18,
         "avg_views": 21.2,
-        "posts": 15,
+        "posts": 17,
         "hours": {
           "5": 0.0,
           "18": 21.2,
@@ -67,10 +67,10 @@
       },
       "ja": {
         "hour": 1,
-        "avg_views": 17.2,
-        "posts": 9,
+        "avg_views": 38.3,
+        "posts": 10,
         "hours": {
-          "1": 17.2,
+          "1": 38.3,
           "5": 12.5
         }
       },
@@ -81,7 +81,7 @@
         "hours": {
           "1": 19.5,
           "5": 1.1,
-          "7": 0.0,
+          "7": 0.2,
           "9": 0.3,
           "12": 31.7
         }
@@ -90,22 +90,22 @@
     "threads": {
       "en": {
         "hour": 8,
-        "avg_views": 12.3,
+        "avg_views": 12.7,
         "posts": 15,
         "hours": {
           "1": 9.3,
-          "8": 12.3,
+          "8": 12.7,
           "13": 9.5,
           "16": 8.0
         }
       },
       "zh-Hant": {
         "hour": 13,
-        "avg_views": 81.5,
+        "avg_views": 82.5,
         "posts": 12,
         "hours": {
           "6": 30.5,
-          "13": 81.5,
+          "13": 82.5,
           "16": 10.0,
           "23": 6.0
         }
@@ -118,10 +118,10 @@
       {
         "key": "cvdesk",
         "posts": 1,
-        "views": 210,
+        "views": 351,
         "engagement": 2,
-        "score": 218,
-        "avg_score": 218.0
+        "score": 359,
+        "avg_score": 359.0
       },
       {
         "key": "mochi_suneung",
@@ -134,18 +134,26 @@
       {
         "key": "wifiaidlite",
         "posts": 3,
-        "views": 188,
+        "views": 293,
         "engagement": 0,
-        "score": 188,
-        "avg_score": 62.7
+        "score": 293,
+        "avg_score": 97.7
       },
       {
         "key": "onepageppt",
         "posts": 4,
-        "views": 184,
+        "views": 186,
         "engagement": 3,
-        "score": 199,
-        "avg_score": 49.8
+        "score": 201,
+        "avg_score": 50.2
+      },
+      {
+        "key": "duowallpaperstudio",
+        "posts": 1,
+        "views": 39,
+        "engagement": 2,
+        "score": 45,
+        "avg_score": 45.0
       },
       {
         "key": "unblurry",
@@ -188,14 +196,6 @@
         "avg_score": 22.0
       },
       {
-        "key": "mochi_b",
-        "posts": 2,
-        "views": 42,
-        "engagement": 0,
-        "score": 42,
-        "avg_score": 21.0
-      },
-      {
         "key": "mochi_halloween",
         "posts": 3,
         "views": 62,
@@ -212,12 +212,28 @@
         "avg_score": 19.2
       },
       {
-        "key": "mochi",
-        "posts": 7,
-        "views": 120,
+        "key": "countdaysnow",
+        "posts": 1,
+        "views": 13,
         "engagement": 1,
-        "score": 125,
-        "avg_score": 17.9
+        "score": 18,
+        "avg_score": 18.0
+      },
+      {
+        "key": "mochi",
+        "posts": 8,
+        "views": 123,
+        "engagement": 1,
+        "score": 128,
+        "avg_score": 16.0
+      },
+      {
+        "key": "mochi_b",
+        "posts": 3,
+        "views": 47,
+        "engagement": 0,
+        "score": 47,
+        "avg_score": 15.7
       },
       {
         "key": "lumibopomofo",
@@ -244,20 +260,28 @@
         "avg_score": 14.0
       },
       {
-        "key": "countdaysnow",
+        "key": "stayclock",
         "posts": 1,
-        "views": 13,
-        "engagement": 0,
-        "score": 13,
-        "avg_score": 13.0
+        "views": 7,
+        "engagement": 1,
+        "score": 12,
+        "avg_score": 12.0
+      },
+      {
+        "key": "dbhalo",
+        "posts": 1,
+        "views": 6,
+        "engagement": 1,
+        "score": 11,
+        "avg_score": 11.0
       },
       {
         "key": "zipbox",
         "posts": 3,
         "views": 27,
-        "engagement": 0,
-        "score": 27,
-        "avg_score": 9.0
+        "engagement": 1,
+        "score": 32,
+        "avg_score": 10.7
       },
       {
         "key": "caldaily",
@@ -276,23 +300,15 @@
         "avg_score": 7.0
       },
       {
+        "key": "qrcodehalo",
+        "posts": 1,
+        "views": 2,
+        "engagement": 1,
+        "score": 7,
+        "avg_score": 7.0
+      },
+      {
         "key": "shotinbox",
-        "posts": 1,
-        "views": 6,
-        "engagement": 0,
-        "score": 6,
-        "avg_score": 6.0
-      },
-      {
-        "key": "dbhalo",
-        "posts": 1,
-        "views": 6,
-        "engagement": 0,
-        "score": 6,
-        "avg_score": 6.0
-      },
-      {
-        "key": "stayclock",
         "posts": 1,
         "views": 6,
         "engagement": 0,
@@ -356,14 +372,6 @@
         "avg_score": 2.5
       },
       {
-        "key": "qrcodehalo",
-        "posts": 1,
-        "views": 2,
-        "engagement": 0,
-        "score": 2,
-        "avg_score": 2.0
-      },
-      {
         "key": "snapport",
         "posts": 2,
         "views": 3,
@@ -421,7 +429,7 @@
       },
       {
         "key": "mochidonestamp",
-        "posts": 1,
+        "posts": 2,
         "views": 0,
         "engagement": 0,
         "score": 0,
@@ -462,28 +470,28 @@
         "avg_score": 103.4
       },
       {
-        "key": "zh-Hant",
-        "posts": 40,
-        "views": 792,
-        "engagement": 13,
-        "score": 851,
-        "avg_score": 21.3
+        "key": "ja",
+        "posts": 11,
+        "views": 303,
+        "engagement": 3,
+        "score": 314,
+        "avg_score": 28.5
       },
       {
-        "key": "ja",
-        "posts": 10,
-        "views": 159,
-        "engagement": 1,
-        "score": 164,
-        "avg_score": 16.4
+        "key": "zh-Hant",
+        "posts": 40,
+        "views": 936,
+        "engagement": 13,
+        "score": 995,
+        "avg_score": 24.9
       },
       {
         "key": "en",
-        "posts": 30,
-        "views": 317,
-        "engagement": 3,
-        "score": 330,
-        "avg_score": 11.0
+        "posts": 32,
+        "views": 318,
+        "engagement": 8,
+        "score": 356,
+        "avg_score": 11.1
       },
       {
         "key": "cs",
@@ -495,11 +503,11 @@
       },
       {
         "key": "pt-BR",
-        "posts": 3,
-        "views": 8,
+        "posts": 4,
+        "views": 15,
         "engagement": 0,
-        "score": 8,
-        "avg_score": 2.7
+        "score": 15,
+        "avg_score": 3.8
       },
       {
         "key": "de",
@@ -516,10 +524,10 @@
         "locale": "zh-Hant",
         "hook": "我是獨立開發者。看過太多人履歷投了幾十家沒回音，問題不在經歷，而是履歷在 ATS（應徵者追蹤系統）那關就被程式讀亂了：兩",
         "posts": 1,
-        "views": 210,
+        "views": 351,
         "engagement": 2,
-        "score": 218,
-        "avg_score": 218.0
+        "score": 359,
+        "avg_score": 359.0
       },
       {
         "app": "mochi_suneung",
@@ -546,10 +554,10 @@
         "locale": "zh-Hant",
         "hook": "笔记、截图、PDF一键生成PPT。",
         "posts": 1,
-        "views": 128,
+        "views": 130,
         "engagement": 1,
-        "score": 133,
-        "avg_score": 133.0
+        "score": 135,
+        "avg_score": 135.0
       },
       {
         "app": "claudeusagemini",
@@ -560,6 +568,16 @@
         "engagement": 0,
         "score": 124,
         "avg_score": 124.0
+      },
+      {
+        "app": "wifiaidlite",
+        "locale": "ja",
+        "hook": "次の一手も分かる",
+        "posts": 1,
+        "views": 118,
+        "engagement": 0,
+        "score": 118,
+        "avg_score": 118.0
       },
       {
         "app": "battai",
@@ -600,6 +618,16 @@
         "engagement": 0,
         "score": 64,
         "avg_score": 64.0
+      },
+      {
+        "app": "duowallpaperstudio",
+        "locale": "ja",
+        "hook": "開けば 全景",
+        "posts": 1,
+        "views": 39,
+        "engagement": 2,
+        "score": 45,
+        "avg_score": 45.0
       },
       {
         "app": "mochi_halloween",
@@ -722,6 +750,16 @@
         "avg_score": 22.0
       },
       {
+        "app": "countdaysnow",
+        "locale": "en",
+        "hook": "Plan backwards from the dates that matter.",
+        "posts": 1,
+        "views": 13,
+        "engagement": 1,
+        "score": 18,
+        "avg_score": 18.0
+      },
+      {
         "app": "lumibopomofo_b",
         "locale": "ja",
         "hook": "正しい記号で フレンドにごはん",
@@ -772,16 +810,6 @@
         "avg_score": 14.0
       },
       {
-        "app": "countdaysnow",
-        "locale": "en",
-        "hook": "Plan backwards from the dates that matter.",
-        "posts": 1,
-        "views": 13,
-        "engagement": 0,
-        "score": 13,
-        "avg_score": 13.0
-      },
-      {
         "app": "mochi_b",
         "locale": "en",
         "hook": "So much to do, so easy to forget?",
@@ -792,12 +820,12 @@
         "avg_score": 13.0
       },
       {
-        "app": "wifiaidlite",
-        "locale": "ja",
-        "hook": "次の一手も分かる",
+        "app": "zipbox",
+        "locale": "en",
+        "hook": "Raspakiraj bez reklama.",
         "posts": 1,
-        "views": 13,
-        "engagement": 0,
+        "views": 8,
+        "engagement": 1,
         "score": 13,
         "avg_score": 13.0
       },
@@ -808,6 +836,16 @@
         "posts": 1,
         "views": 12,
         "engagement": 0,
+        "score": 12,
+        "avg_score": 12.0
+      },
+      {
+        "app": "stayclock",
+        "locale": "en",
+        "hook": "Always-on time and calendar.",
+        "posts": 1,
+        "views": 7,
+        "engagement": 1,
         "score": 12,
         "avg_score": 12.0
       },
@@ -828,6 +866,16 @@
         "posts": 1,
         "views": 11,
         "engagement": 0,
+        "score": 11,
+        "avg_score": 11.0
+      },
+      {
+        "app": "dbhalo",
+        "locale": "en",
+        "hook": "Spectrum, Dose & Sleep Journal.",
+        "posts": 1,
+        "views": 6,
+        "engagement": 1,
         "score": 11,
         "avg_score": 11.0
       },
@@ -865,16 +913,6 @@
         "app": "hourstag",
         "locale": "zh-Hant",
         "hook": "那筆衝動購物花的不是錢，是你一整天的工時。",
-        "posts": 1,
-        "views": 8,
-        "engagement": 0,
-        "score": 8,
-        "avg_score": 8.0
-      },
-      {
-        "app": "zipbox",
-        "locale": "en",
-        "hook": "Raspakiraj bez reklama.",
         "posts": 1,
         "views": 8,
         "engagement": 0,
@@ -932,9 +970,29 @@
         "avg_score": 7.0
       },
       {
+        "app": "mochi",
+        "locale": "pt-BR",
+        "hook": "Um toque e pronto",
+        "posts": 1,
+        "views": 7,
+        "engagement": 0,
+        "score": 7,
+        "avg_score": 7.0
+      },
+      {
         "app": "maskmyfile",
         "locale": "cs",
         "hook": "Něco chybí? Přidejte to",
+        "posts": 1,
+        "views": 2,
+        "engagement": 1,
+        "score": 7,
+        "avg_score": 7.0
+      },
+      {
+        "app": "qrcodehalo",
+        "locale": "en",
+        "hook": "Scanning never auto-opens a destination.",
         "posts": 1,
         "views": 2,
         "engagement": 1,
@@ -962,26 +1020,6 @@
         "avg_score": 6.0
       },
       {
-        "app": "dbhalo",
-        "locale": "en",
-        "hook": "Spectrum, Dose & Sleep Journal.",
-        "posts": 1,
-        "views": 6,
-        "engagement": 0,
-        "score": 6,
-        "avg_score": 6.0
-      },
-      {
-        "app": "stayclock",
-        "locale": "en",
-        "hook": "Always-on time and calendar.",
-        "posts": 1,
-        "views": 6,
-        "engagement": 0,
-        "score": 6,
-        "avg_score": 6.0
-      },
-      {
         "app": "scanto",
         "locale": "en",
         "hook": "A document scanner that keeps everything on your device — ev",
@@ -992,9 +1030,9 @@
         "avg_score": 5.0
       },
       {
-        "app": "mochi",
+        "app": "mochi_b",
         "locale": "pt-BR",
-        "hook": "Um toque e pronto",
+        "hook": "Tanta coisa pra fazer e você esquece?",
         "posts": 1,
         "views": 5,
         "engagement": 0,
@@ -1092,16 +1130,6 @@
         "avg_score": 3.0
       },
       {
-        "app": "qrcodehalo",
-        "locale": "en",
-        "hook": "Scanning never auto-opens a destination.",
-        "posts": 1,
-        "views": 2,
-        "engagement": 0,
-        "score": 2,
-        "avg_score": 2.0
-      },
-      {
         "app": "lumibopomofo",
         "locale": "zh-Hant",
         "hook": "注音 原來這麼好玩！",
@@ -1115,6 +1143,16 @@
         "app": "wordmate",
         "locale": "en",
         "hook": "Pick from 44 languages",
+        "posts": 1,
+        "views": 1,
+        "engagement": 0,
+        "score": 1,
+        "avg_score": 1.0
+      },
+      {
+        "app": "mochi",
+        "locale": "zh-Hant",
+        "hook": "待辦清單 也可以這麼可愛",
         "posts": 1,
         "views": 1,
         "engagement": 0,
@@ -1352,9 +1390,9 @@
         "avg_score": 0.0
       },
       {
-        "app": "mochi",
-        "locale": "zh-Hant",
-        "hook": "待辦清單 也可以這麼可愛",
+        "app": "battai",
+        "locale": "en",
+        "hook": "When will battery health hit 80%?",
         "posts": 1,
         "views": 0,
         "engagement": 0,
@@ -1362,9 +1400,19 @@
         "avg_score": 0.0
       },
       {
-        "app": "battai",
+        "app": "mochidonestamp",
         "locale": "en",
-        "hook": "When will battery health hit 80%?",
+        "hook": "",
+        "posts": 1,
+        "views": 0,
+        "engagement": 0,
+        "score": 0,
+        "avg_score": 0.0
+      },
+      {
+        "app": "mochi",
+        "locale": "en",
+        "hook": "",
         "posts": 1,
         "views": 0,
         "engagement": 0,
@@ -1375,27 +1423,27 @@
     "variants": [
       {
         "key": "b",
-        "posts": 21,
-        "views": 549,
-        "engagement": 5,
-        "score": 570,
-        "avg_score": 27.1
+        "posts": 22,
+        "views": 590,
+        "engagement": 7,
+        "score": 617,
+        "avg_score": 28.0
       },
       {
         "key": "c",
         "posts": 15,
-        "views": 291,
+        "views": 396,
         "engagement": 4,
-        "score": 311,
-        "avg_score": 20.7
+        "score": 416,
+        "avg_score": 27.7
       },
       {
         "key": "a",
-        "posts": 15,
-        "views": 204,
+        "posts": 16,
+        "views": 210,
         "engagement": 1,
-        "score": 207,
-        "avg_score": 13.8
+        "score": 213,
+        "avg_score": 13.3
       }
     ]
   },
@@ -1737,10 +1785,10 @@
       "metrics": {
         "views": 8,
         "likes": 0,
-        "replies": 0,
+        "replies": 1,
         "reposts": 0
       },
-      "score": 8
+      "score": 13
     },
     {
       "channel": "threads",
@@ -1756,10 +1804,10 @@
       "metrics": {
         "views": 13,
         "likes": 0,
-        "replies": 0,
+        "replies": 1,
         "reposts": 0
       },
-      "score": 13
+      "score": 18
     },
     {
       "channel": "instagram",
@@ -1836,10 +1884,10 @@
       "metrics": {
         "views": 6,
         "likes": 0,
-        "replies": 0,
+        "replies": 1,
         "reposts": 0
       },
-      "score": 6
+      "score": 11
     },
     {
       "channel": "instagram",
@@ -1876,10 +1924,10 @@
       "metrics": {
         "views": 2,
         "likes": 0,
-        "replies": 0,
+        "replies": 1,
         "reposts": 0
       },
-      "score": 2
+      "score": 7
     },
     {
       "channel": "instagram",
@@ -2141,12 +2189,12 @@
       "kind": "image",
       "variant": null,
       "metrics": {
-        "views": 6,
+        "views": 7,
         "likes": 0,
-        "replies": 0,
+        "replies": 1,
         "reposts": 0
       },
-      "score": 6
+      "score": 12
     },
     {
       "channel": "instagram",
@@ -2286,12 +2334,12 @@
       "kind": "image",
       "variant": null,
       "metrics": {
-        "views": 128,
+        "views": 130,
         "likes": 0,
         "replies": 1,
         "reposts": 0
       },
-      "score": 133
+      "score": 135
     },
     {
       "channel": "instagram",
@@ -3183,14 +3231,14 @@
       "kind": "clip",
       "variant": "a",
       "metrics": {
-        "views": 0,
-        "reach": 0,
+        "views": 1,
+        "reach": 1,
         "likes": 0,
         "saves": 0,
         "shares": 0,
         "replies": 0
       },
-      "score": 0
+      "score": 1
     },
     {
       "channel": "instagram",
@@ -3204,14 +3252,14 @@
       "kind": "clip",
       "variant": "b",
       "metrics": {
-        "views": 5,
-        "reach": 6,
+        "views": 7,
+        "reach": 7,
         "likes": 0,
         "saves": 0,
         "shares": 0,
         "replies": 0
       },
-      "score": 5
+      "score": 7
     },
     {
       "channel": "instagram",
@@ -3246,14 +3294,14 @@
       "kind": "clip",
       "variant": "c",
       "metrics": {
-        "views": 13,
-        "reach": 12,
+        "views": 118,
+        "reach": 111,
         "likes": 0,
         "saves": 0,
         "shares": 0,
         "replies": 0
       },
-      "score": 13
+      "score": 118
     },
     {
       "channel": "threads",
@@ -3267,12 +3315,96 @@
       "kind": "image",
       "variant": null,
       "metrics": {
-        "views": 210,
+        "views": 351,
         "likes": 1,
         "replies": 1,
         "reposts": 0
       },
-      "score": 218
+      "score": 359
+    },
+    {
+      "channel": "instagram",
+      "id": "17999518320030390",
+      "link": "https://www.instagram.com/p/DfJZSy0Dj06/",
+      "posted_at": "2026-10-31T05:22:19",
+      "app": "mochidonestamp",
+      "locale": "en",
+      "hook": "",
+      "clip": "utility/chore/mochidonestamp/ac_filter/en",
+      "kind": "utility",
+      "variant": null,
+      "metrics": {
+        "views": 0,
+        "reach": 0,
+        "likes": 0,
+        "saves": 0,
+        "shares": 0,
+        "replies": 0
+      },
+      "score": 0
+    },
+    {
+      "channel": "instagram",
+      "id": "18292925443290186",
+      "link": "https://www.instagram.com/reel/DfKz2gdoNc8/",
+      "posted_at": "2026-10-31T18:33:50",
+      "app": "mochi_b",
+      "locale": "pt-BR",
+      "hook": "Tanta coisa pra fazer e você esquece?",
+      "clip": "mochi_b/pt-BR",
+      "kind": "clip",
+      "variant": "a",
+      "metrics": {
+        "views": 5,
+        "reach": 3,
+        "likes": 0,
+        "saves": 0,
+        "shares": 0,
+        "replies": 0
+      },
+      "score": 5
+    },
+    {
+      "channel": "instagram",
+      "id": "17927202843439202",
+      "link": "https://www.instagram.com/reel/DfLjfrWE4DH/",
+      "posted_at": "2026-11-01T01:29:58",
+      "app": "duowallpaperstudio",
+      "locale": "ja",
+      "hook": "開けば 全景",
+      "clip": "duowallpaperstudio/ja",
+      "kind": "clip",
+      "variant": "b",
+      "metrics": {
+        "views": 39,
+        "reach": 35,
+        "likes": 2,
+        "saves": 0,
+        "shares": 0,
+        "replies": 0
+      },
+      "score": 45
+    },
+    {
+      "channel": "instagram",
+      "id": "18089052875320472",
+      "link": "https://www.instagram.com/p/DfL-ET5m2h2/",
+      "posted_at": "2026-11-01T05:22:08",
+      "app": "mochi",
+      "locale": "en",
+      "hook": "",
+      "clip": "utility/checklist/mochi/sunday-reset/en",
+      "kind": "utility",
+      "variant": null,
+      "metrics": {
+        "views": 0,
+        "reach": 0,
+        "likes": 0,
+        "saves": 0,
+        "shares": 0,
+        "replies": 0
+      },
+      "score": 0
     }
   ]
 }

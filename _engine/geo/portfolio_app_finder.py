@@ -601,8 +601,12 @@ def device_note_paragraphs() -> frozenset[str]:
             or not paragraphs
         ):
             raise ValueError("Device note paragraph list is invalid")
+        short = payload.get("short_paragraphs", {})
+        if not isinstance(short, dict):
+            raise ValueError("Device note paragraph list is invalid")
         _DEVICE_NOTE_CACHE = frozenset(
-            _single_line(value) for value in paragraphs.values()
+            _single_line(value)
+            for value in (*paragraphs.values(), *short.values())
             if _single_line(value)
         )
     return _DEVICE_NOTE_CACHE

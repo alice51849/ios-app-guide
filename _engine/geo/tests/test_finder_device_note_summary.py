@@ -120,6 +120,34 @@ class PageMetaDeviceNoteTests(unittest.TestCase):
             build_pages_i18n.device_note_paragraphs(),
         )
 
+    def test_short_device_note_lead_is_skipped_in_page_meta(self):
+        # GBAGo 1.0.1 en-US opens with the short claim line (run 41273896213).
+        payload = json.loads(
+            portfolio_app_finder.DEVICE_NOTE_PARAGRAPHS_PATH.read_text(
+                encoding="utf-8"
+            )
+        )
+        short = payload["short_paragraphs"]["en-US"]
+        self.assertEqual("Optimized for iPhone Duo: truly full screen.", short)
+        claim = GEO.parent / "aso" / "duo" / "claim_lines.json"
+        if claim.is_file():
+            source = json.loads(claim.read_text(encoding="utf-8"))
+            self.assertEqual(source["promo_line"], payload["short_paragraphs"])
+        lead = "GBAGo is a game emulator for iPhone and iPad."
+        description = f"{short}\n\n{lead} Import files.\n\nThird."
+        self.assertEqual(
+            f"{lead} Import files.",
+            build_pages_i18n._lead_description_line(description),
+        )
+        self.assertIn(short, portfolio_app_finder.device_note_paragraphs())
+
+    def test_short_note_inside_longer_paragraph_is_kept(self):
+        line = "Optimized for iPhone Duo: truly full screen. Upgrading soon?"
+        description = f"{line}\n\nSecond paragraph."
+        self.assertEqual(
+            line, build_pages_i18n._lead_description_line(description)
+        )
+
     def test_zh_hant_device_note_lead_takes_next_paragraph(self):
         lead = "Mochi 是一款可愛又療癒的待辦清單 App，讓安排生活不再只是壓力。"
         description = f"{self.note('zh-Hant')}\n\n{lead}\n第二行。\n\n第三段。"

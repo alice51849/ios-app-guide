@@ -1150,7 +1150,7 @@
       "record_count": 56
     },
     "ja": {
-      "date_modified": "2026-11-01T03:10:05Z",
+      "date_modified": "2026-11-01T05:54:59Z",
       "formats": {
         "atom": {
           "accepted_content_types": [
@@ -1160,7 +1160,7 @@
           ],
           "content_type": "application/atom+xml",
           "path": "ja/feed.xml",
-          "sha256": "7e441eeb9b2d9ca3f5769e573f9fe13bc067a8ee80771e81f7b4368e2f334d95",
+          "sha256": "d7f0cec7f75d8336054240777f7bf55ec8057968f5f2fbb6e390904a3a1a7684",
           "url": "https://open.cait518.cc/ios-app-guide/ja/feed.xml"
         },
         "json_feed": {
@@ -1170,7 +1170,7 @@
           ],
           "content_type": "application/feed+json",
           "path": "ja/feed.json",
-          "sha256": "409081048c93e826418851d0051cade6e9f33eb0183c66052fec9e7f5c13d14d",
+          "sha256": "bfd7f10c1770b968fc4e18a197257816b7e295086432bad5332cac66909a1770",
           "url": "https://open.cait518.cc/ios-app-guide/ja/feed.json"
         },
         "rss": {
@@ -1181,7 +1181,7 @@
           ],
           "content_type": "application/rss+xml",
           "path": "ja/rss.xml",
-          "sha256": "c3a22e8fa6d919b8f5edd70c81b7eae24fae8b7cd0d3e9c6546b1e17c0487bbc",
+          "sha256": "c86ed0b42e2982a41338cea52ea2805448a2de238d0ac05ef9aa8c1de3e3897e",
           "url": "https://open.cait518.cc/ios-app-guide/ja/rss.xml"
         }
       },
@@ -2190,7 +2190,7 @@
       "record_count": 56
     },
     "zh-Hant": {
-      "date_modified": "2026-11-01T03:10:05Z",
+      "date_modified": "2026-11-01T05:54:05Z",
       "formats": {
         "atom": {
           "accepted_content_types": [
@@ -2200,7 +2200,7 @@
           ],
           "content_type": "application/atom+xml",
           "path": "zh-Hant/feed.xml",
-          "sha256": "6b666e41c0f1aaf0edd751b242ed751cd407c4b0c6102d7950a680642a7f808f",
+          "sha256": "20689f9ba32f3008e3881b8031c289021f7a129077ba92bbd55e8dbd7ebecb0e",
           "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/feed.xml"
         },
         "json_feed": {
@@ -2210,7 +2210,7 @@
           ],
           "content_type": "application/feed+json",
           "path": "zh-Hant/feed.json",
-          "sha256": "b2ada80a09e76100ea36af08f20204047321794b8e885e6a9db4e38423c53529",
+          "sha256": "d19132154af83df790005009de442d7cb0ea7b5e9b531acdffe00204973c064e",
           "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/feed.json"
         },
         "rss": {
@@ -2221,7 +2221,7 @@
           ],
           "content_type": "application/rss+xml",
           "path": "zh-Hant/rss.xml",
-          "sha256": "2822783a65d07371849e19ec9cf94f39ab564330eff8923fbbce7ae6bfa98f6d",
+          "sha256": "f27fece832a4cf98ca19b32d2a29df4b9117da2e851a5a9d9e5511396da21d39",
           "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/rss.xml"
         }
       },
@@ -2230,7 +2230,7 @@
       "record_count": 56
     }
   },
-  "generation_digest": "8d0001fbf87be073c5462b7b4466327b6606db2e51b7d1b09faad6d46e7c2fee",
+  "generation_digest": "4b31fa667a4521c9d02da8a80c35cb3e3895b9578cf9419730a9034234afe455",
   "locale_count": 50,
   "notification_feed_count": 147,
   "purchase_models": {
@@ -2242,12 +2242,12 @@
   "site": "https://open.cait518.cc/ios-app-guide",
   "sitemap_sha256": "64e6dcfaae5d992ee4bf8f08054ca61f216c6d4d0fb8d41a195cd333fec874e2",
   "source": {
-    "catalog_content_digest": "a5616bc5a95699f8a658c40e060a4b8f30dff27c6d1efe65c3236142129ba99a",
+    "catalog_content_digest": "2855552bc73588f130bc0579db71c6d513c2ad6076c1ef87127be958fbf71b09",
     "roster_digest": "589537afbd619ab8144add3b9c3a344956d29f015950552835f7eeb1a09fdb56",
     "source_files": {
       "../social/videogen/registry.py": "fa574d5e16655040f5d61ddf0ffc8b95e5d578b4fc6a5d66f2bc092159813b66",
       "app_store_storefronts.py": "5f6f065cfb94ff45613982b112a35876dd8396f814466700a6c960a8a8c50ad1",
-      "build_pages_i18n.py": "032bf99768100575799f917aee80c9624f387657bef0017f15a4f74c8a6afdd7",
+      "build_pages_i18n.py": "7e563f6776f8b729c0a4e47488d8af258b8dd4010ddcb8b82074debb0631a46e",
       "data/paid_upfront_surface_repairs.json": "b7f48683121484d0327ae24b9d70ced2c48920debde420218de05dfa20e6fa1c",
       "deployment_generation.py": "37306bb0800b15b9fcea2d72207e0dd6cd1ebcbf65b6affe16791218bcdaae6b",
       "external_app_locales.py": "a684a3b7583c0f1920272305071d3009e978b96f9e0b4f1043edcac4b4747cdf",

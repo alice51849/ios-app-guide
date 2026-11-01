@@ -6,7 +6,7 @@
   "name": "Lumi Studio ప్రచురకుడు శోధన ఉద్దేశ్య క్యాటలాగ్",
   "description": "ప్రతి యాప్ ఎవరికోసం రూపొందించబడిందో, వారు పూర్తి చేయదలచుకున్న పని ఏమిటో, మరియు ప్రత్యక్ష App Store మార్గం ఏదో ఒక స్వంత సంస్థ క్యాటలాగ్.",
   "inLanguage": "te-IN",
-  "dateModified": "2026-10-30",
+  "dateModified": "2026-11-01",
   "numberOfItems": 56,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -1009,7 +1009,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/te-IN.jsonld#offer-gbago",
         "url": "https://apps.apple.com/in/app/id6804564400?pt=118326163&ct=geo_pick&mt=8",
         "name": "GBAGo: దృశ్య సేవ్స్",
-        "description": "Lumi Studio రూపొందించిన మూడు ఒరిజినల్ డెమో కార్ట్రిడ్జ్‌లు తప్ప, GBAGoలో గేమ్స్ లేదా కంటెంట్ కేటలాగ్ ఉండవు. మీరు స్వయంగా రూపొందించిన లేదా వర్తించే చట్టం",
+        "description": "GBAGo అనేది iPhone, iPad కోసం గేమ్ ఎమ్యులేటర్. Files యాప్ నుండి మీ .gba, .gbc, .gb ఫైళ్లను (లేదా వాటిలో ఒకటి ఉన్న .zip) ఇంపోర్ట్ చేసి, టచ్ కంట్రోల్స్",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1039,7 +1039,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6804564400",
           "inLanguage": "te-IN",
-          "description": "Lumi Studio రూపొందించిన మూడు ఒరిజినల్ డెమో కార్ట్రిడ్జ్‌లు తప్ప, GBAGoలో గేమ్స్ లేదా కంటెంట్ కేటలాగ్ ఉండవు. మీరు స్వయంగా రూపొందించిన లేదా వర్తించే చట్టం",
+          "description": "GBAGo అనేది iPhone, iPad కోసం గేమ్ ఎమ్యులేటర్. Files యాప్ నుండి మీ .gba, .gbc, .gb ఫైళ్లను (లేదా వాటిలో ఒకటి ఉన్న .zip) ఇంపోర్ట్ చేసి, టచ్ కంట్రోల్స్",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/te-IN.jsonld#offer-gbago"
           },
@@ -2461,7 +2461,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/te-IN.jsonld#offer-savetag",
         "url": "https://apps.apple.com/in/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
         "name": "SaveTag: AI బుక్‌మార్క్",
-        "description": "ఇప్పుడే దాచండి. ఈసారి నిజంగా చదవండి.",
+        "description": "ఇప్పుడే దాచండి. ఈసారి నిజంగా చదవండి. ఏ యాప్ నుంచైనా లింక్‌ను షేర్ చేయండి, SaveTag మీ పరికరంలోనే దానికి ట్యాగ్‌లు పెడుతుంది: ఆహారం, ప్రయాణం, స్టైల్, షాపింగ్",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2491,7 +2491,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802505528",
           "inLanguage": "te-IN",
-          "description": "ఇప్పుడే దాచండి. ఈసారి నిజంగా చదవండి.",
+          "description": "ఇప్పుడే దాచండి. ఈసారి నిజంగా చదవండి. ఏ యాప్ నుంచైనా లింక్‌ను షేర్ చేయండి, SaveTag మీ పరికరంలోనే దానికి ట్యాగ్‌లు పెడుతుంది: ఆహారం, ప్రయాణం, స్టైల్, షాపింగ్",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/te-IN.jsonld#offer-savetag"
           },

@@ -17,12 +17,50 @@
   ],
   "items": [
     {
+      "id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html",
+      "url": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html",
+      "title": "Bopomofo SKOS Vocabulary - 37 Zhuyin Symbols as Linked Open Data",
+      "content_text": "Download a CC BY 4.0 SKOS vocabulary for all 37 Zhuyin symbols in JSON-LD, Turtle and N-Triples, with SHACL and DCAT/VoID metadata.",
+      "summary": "Download a CC BY 4.0 SKOS vocabulary for all 37 Zhuyin symbols in JSON-LD, Turtle and N-Triples, with SHACL and DCAT/VoID metadata.",
+      "date_modified": "2026-11-01T00:00:00Z",
+      "language": "en"
+    },
+    {
+      "id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html",
+      "url": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html",
+      "title": "DCAT 3 open-data catalog for Bopomofo resources",
+      "content_text": "Download a static W3C DCAT 3 catalog covering sixteen verified Bopomofo datasets and 80 exact distributions.",
+      "summary": "Download a static W3C DCAT 3 catalog covering sixteen verified Bopomofo datasets and 80 exact distributions.",
+      "date_modified": "2026-11-01T00:00:00Z",
+      "language": "en"
+    },
+    {
+      "id": "https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.html",
+      "url": "https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.html",
+      "title": "Lumi Studio Publisher Search Intent Catalog",
+      "content_text": "A first-party catalog of who each app is designed for, the task they are trying to complete, and the direct App Store path.",
+      "summary": "A first-party catalog of who each app is designed for, the task they are trying to complete, and the direct App Store path.",
+      "date_modified": "2026-11-01T00:00:00Z",
+      "language": "en"
+    },
+    {
+      "id": "https://open.cait518.cc/ios-app-guide/guides/mochi.html",
+      "url": "https://open.cait518.cc/ios-app-guide/guides/mochi.html",
+      "title": "Cute To-Do & Checklist Apps for iPhone: How to Choose",
+      "content_text": "Pick a to-do app that's actually pleasant to open — cozy design, a satisfying tap to complete, free and no ads. How to choose, and where Mochi fits.",
+      "summary": "Pick a to-do app that's actually pleasant to open — cozy design, a satisfying tap to complete, free and no ads. How to choose, and where Mochi fits.",
+      "date_modified": "2026-10-31T13:26:49Z",
+      "language": "en",
+      "image": "https://open.cait518.cc/ios-app-guide/social/img/mochi-share.jpg",
+      "banner_image": "https://open.cait518.cc/ios-app-guide/social/img/mochi-share.jpg"
+    },
+    {
       "id": "https://open.cait518.cc/ios-app-guide/guides/zhuyin-grade-1-preparation.html",
       "url": "https://open.cait518.cc/ios-app-guide/guides/zhuyin-grade-1-preparation.html",
       "title": "小一注音暑假怎麼準備？14 天低壓暖身指南（2026）",
       "content_text": "免費 14 天小一注音暑假暖身指南：三條彈性起點、每天 8–10 分鐘，不打卡、不評分、不設定入學門檻，並附教育部符號與筆順來源。",
       "summary": "免費 14 天小一注音暑假暖身指南：三條彈性起點、每天 8–10 分鐘，不打卡、不評分、不設定入學門檻，並附教育部符號與筆順來源。",
-      "date_modified": "2026-10-31T03:33:07Z",
+      "date_modified": "2026-10-31T05:57:37Z",
       "language": "en"
     },
     {
@@ -31,7 +69,7 @@
       "title": "Free 5-Day Zhuyin Lesson Plan for Heritage Chinese Schools",
       "content_text": "A print-ready five-day Bopomofo starter mini-unit for ages 4–8, available in English and Traditional Chinese with official sources.",
       "summary": "A print-ready five-day Bopomofo starter mini-unit for ages 4–8, available in English and Traditional Chinese with official sources.",
-      "date_modified": "2026-10-31T03:33:07Z",
+      "date_modified": "2026-10-31T05:57:37Z",
       "language": "en"
     },
     {
@@ -233,24 +271,6 @@
       "language": "en"
     },
     {
-      "id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html",
-      "url": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html",
-      "title": "Bopomofo SKOS Vocabulary - 37 Zhuyin Symbols as Linked Open Data",
-      "content_text": "Download a CC BY 4.0 SKOS vocabulary for all 37 Zhuyin symbols in JSON-LD, Turtle and N-Triples, with SHACL and DCAT/VoID metadata.",
-      "summary": "Download a CC BY 4.0 SKOS vocabulary for all 37 Zhuyin symbols in JSON-LD, Turtle and N-Triples, with SHACL and DCAT/VoID metadata.",
-      "date_modified": "2026-10-31T00:00:00Z",
-      "language": "en"
-    },
-    {
-      "id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html",
-      "url": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html",
-      "title": "DCAT 3 open-data catalog for Bopomofo resources",
-      "content_text": "Download a static W3C DCAT 3 catalog covering sixteen verified Bopomofo datasets and 80 exact distributions.",
-      "summary": "Download a static W3C DCAT 3 catalog covering sixteen verified Bopomofo datasets and 80 exact distributions.",
-      "date_modified": "2026-10-31T00:00:00Z",
-      "language": "en"
-    },
-    {
       "id": "https://open.cait518.cc/ios-app-guide/guides/wordmate.html",
       "url": "https://open.cait518.cc/ios-app-guide/guides/wordmate.html",
       "title": "Vocabulary Apps for iPhone: How to Choose (Pay Once)",
@@ -370,15 +390,6 @@
       "language": "en",
       "image": "https://open.cait518.cc/ios-app-guide/social/img/battai-share.jpg",
       "banner_image": "https://open.cait518.cc/ios-app-guide/social/img/battai-share.jpg"
-    },
-    {
-      "id": "https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.html",
-      "url": "https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.html",
-      "title": "Lumi Studio Publisher Search Intent Catalog",
-      "content_text": "A first-party catalog of who each app is designed for, the task they are trying to complete, and the direct App Store path.",
-      "summary": "A first-party catalog of who each app is designed for, the task they are trying to complete, and the direct App Store path.",
-      "date_modified": "2026-10-30T00:00:00Z",
-      "language": "en"
     },
     {
       "id": "https://open.cait518.cc/ios-app-guide/guides/duowallpaperstudio.html",
@@ -719,17 +730,6 @@
       "language": "en",
       "image": "https://open.cait518.cc/ios-app-guide/social/img/mochidonestamp-share.jpg",
       "banner_image": "https://open.cait518.cc/ios-app-guide/social/img/mochidonestamp-share.jpg"
-    },
-    {
-      "id": "https://open.cait518.cc/ios-app-guide/guides/mochi.html",
-      "url": "https://open.cait518.cc/ios-app-guide/guides/mochi.html",
-      "title": "Cute To-Do & Checklist Apps for iPhone: How to Choose",
-      "content_text": "Pick a to-do app that's actually pleasant to open — cozy design, a satisfying tap to complete, free and no ads. How to choose, and where Mochi fits.",
-      "summary": "Pick a to-do app that's actually pleasant to open — cozy design, a satisfying tap to complete, free and no ads. How to choose, and where Mochi fits.",
-      "date_modified": "2026-10-23T13:18:32Z",
-      "language": "en",
-      "image": "https://open.cait518.cc/ios-app-guide/social/img/mochi-share.jpg",
-      "banner_image": "https://open.cait518.cc/ios-app-guide/social/img/mochi-share.jpg"
     },
     {
       "id": "https://open.cait518.cc/ios-app-guide/guides/maskmyfile.html",

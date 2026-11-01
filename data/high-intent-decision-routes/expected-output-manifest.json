@@ -5,7 +5,7 @@
   "creative_count": 56,
   "current_inventory": {
     "app_keys_sha256": "3b8f236a1370422f5e0b445220a681cbd5a2739c29d98ede935c2d38abc2d39e",
-    "copy_sha256": "0be770b1201a8bc93fa4657077de0ecfbf2d5f3533332a094ee4891711c8ee83",
+    "copy_sha256": "341554c93a9aa9363f6fc45f4a2b0d3643d3456bb43679c4180a3ad428a92614",
     "missing_route_app_keys": [],
     "missing_route_app_keys_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
     "public_apps": 56
@@ -24,12 +24,12 @@
       "relative_path": "data/high-intent-decision-routes/conversion-contracts.schema.json"
     },
     {
-      "generated_sha256": "5ecf78c587a51ea12dccc1444bd8f2dfc64409731dabc8b664c448377d2ecd2a",
+      "generated_sha256": "bd5d501df2c1eeb133aa54487a6d1646a2af42c33440a82ab8fc5b9a3868eeb2",
       "kind": "coverage_report",
       "relative_path": "data/high-intent-decision-routes/coverage.json"
     },
     {
-      "generated_sha256": "fbf8a2679c87dbed77b6ee042d05d5336f28793e01e02d3830c389bdaf2e0382",
+      "generated_sha256": "55c21f81c9471c3cb62379c6f1369ba6125c897e24fe40484726ebe7fd6f559f",
       "kind": "json_feed",
       "relative_path": "data/high-intent-decision-routes/feed.json"
     },
@@ -104,7 +104,7 @@
       "relative_path": "en-US/decide/easyam/stop-your-alarm-ringing-on-public-holidays-and-days-off.html"
     },
     {
-      "generated_sha256": "2075b236900ccf0f0edf66fe7944a0790bb685bd480c670f4496c833dc9a90f9",
+      "generated_sha256": "38690875cf498207323b51beaf0086b9365b5423254b4f1c775485c379bec393",
       "kind": "route_html",
       "relative_path": "en-US/decide/gbago/keep-emulator-save-progress-safe-and-recoverable-on-iphone.html"
     },
@@ -229,7 +229,7 @@
       "relative_path": "en-US/decide/qrcodehalo/qr-scanner-that-shows-the-full-link-before-opening.html"
     },
     {
-      "generated_sha256": "8c639756d6e0ade03dc17da2de50178ababb96360741923c4397abf94103695b",
+      "generated_sha256": "20dcf897301d895e31897e1213335864b1600310810901cafb4bdaa6151a0d17",
       "kind": "route_html",
       "relative_path": "en-US/decide/savetag/turn-saved-links-into-a-readable-queue.html"
     },
@@ -369,7 +369,7 @@
       "relative_path": "zh-Hant/decide/easyam/stop-your-alarm-ringing-on-public-holidays-and-days-off.html"
     },
     {
-      "generated_sha256": "c6cbb09ab9309d369b869ef29f44bc17bdb727b0b088ae3431df0f6d4f9fa9ed",
+      "generated_sha256": "b2f265693e1f28bc6a41eccab35570f5962a3d03f9a87340c2c428d2729a9a53",
       "kind": "route_html",
       "relative_path": "zh-Hant/decide/gbago/keep-emulator-save-progress-safe-and-recoverable-on-iphone.html"
     },
@@ -394,7 +394,7 @@
       "relative_path": "zh-Hant/decide/mochidonestamp/remember-when-household-task-was-done.html"
     },
     {
-      "generated_sha256": "137d0617c108a9f8714d8cbb6b6d3be46dcfd91c50a1ac6f0918f155ba30dad1",
+      "generated_sha256": "69a408ffbe825047b441533983887313177237fe7447e6cabe2c688bb2de3845",
       "kind": "route_html",
       "relative_path": "zh-Hant/decide/savetag/turn-saved-links-into-a-readable-queue.html"
     },
@@ -407,14 +407,14 @@
   "fallback_records": 0,
   "inventory": {
     "app_keys_sha256": "3b8f236a1370422f5e0b445220a681cbd5a2739c29d98ede935c2d38abc2d39e",
-    "copy_sha256": "0be770b1201a8bc93fa4657077de0ecfbf2d5f3533332a094ee4891711c8ee83",
+    "copy_sha256": "341554c93a9aa9363f6fc45f4a2b0d3643d3456bb43679c4180a3ad428a92614",
     "official_locales_sha256": "e26dabf9370286ad8fd12034270cfcade92b2db4f4a0eecc19324203ce84d5bd",
     "public_apps": 56,
     "relative_path": "data/verified-ios-app-finder-catalog.json"
   },
-  "manifest_digest": "902fb789401379bd69d256cd50c38e850a60d767b75bc101f700596f2558029f",
+  "manifest_digest": "b6a42ca68bc18533eb7692da098ddb3a140d9c24720fa7023016492ac00e7d58",
   "owner": "high_intent_decision_routes",
-  "release_contract_digest": "b5dfd6e5077caafafebc9fa1467ef7b4ba6dce69891f86de62ce10d0dc489565",
+  "release_contract_digest": "c27e6c483c5cb7f8df0def560760a61a06e425debf94a544e4b5392bea31957d",
   "release_state": "exact",
   "route_count": 73,
   "routes": [
@@ -666,8 +666,8 @@
       "creative_id": "gbago:keep-emulator-save-progress-safe-and-recoverable-on-iphone:problem_aware",
       "intent_type": "problem_aware",
       "locale": "en-US",
-      "output_sha256": "2075b236900ccf0f0edf66fe7944a0790bb685bd480c670f4496c833dc9a90f9",
-      "record_digest": "a7192ad54caca37818265ce4c2093d1690b1c35a1de314f50c15665572583cf7",
+      "output_sha256": "38690875cf498207323b51beaf0086b9365b5423254b4f1c775485c379bec393",
+      "record_digest": "7d33c202c1b9e0cee6303f506d5c98fac67b2c38fac12601950d31c1f51193a9",
       "relative_path": "en-US/decide/gbago/keep-emulator-save-progress-safe-and-recoverable-on-iphone.html",
       "route_id": "en-US:gbago:keep-emulator-save-progress-safe-and-recoverable-on-iphone",
       "route_slug": "keep-emulator-save-progress-safe-and-recoverable-on-iphone",
@@ -1091,8 +1091,8 @@
       "creative_id": "savetag:turn-saved-links-into-a-readable-queue:privacy_pay_once",
       "intent_type": "privacy_pay_once",
       "locale": "en-US",
-      "output_sha256": "8c639756d6e0ade03dc17da2de50178ababb96360741923c4397abf94103695b",
-      "record_digest": "b3f42c868f34a101142e5a25227306b261ff1dadadefdc946431f698ac66ac26",
+      "output_sha256": "20dcf897301d895e31897e1213335864b1600310810901cafb4bdaa6151a0d17",
+      "record_digest": "2b4b02c4bf3966c89ec60c5a40df38e9d6ac8cbd306dee64c29fa69e8a29bd8b",
       "relative_path": "en-US/decide/savetag/turn-saved-links-into-a-readable-queue.html",
       "route_id": "en-US:savetag:turn-saved-links-into-a-readable-queue",
       "route_slug": "turn-saved-links-into-a-readable-queue",
@@ -1550,8 +1550,8 @@
       "creative_id": "gbago:keep-emulator-save-progress-safe-and-recoverable-on-iphone:problem_aware",
       "intent_type": "problem_aware",
       "locale": "zh-Hant",
-      "output_sha256": "c6cbb09ab9309d369b869ef29f44bc17bdb727b0b088ae3431df0f6d4f9fa9ed",
-      "record_digest": "92946d610ed8aeaf2f3657024a7ca5d2626a07264ca44f9a7a8c68fc389e3604",
+      "output_sha256": "b2f265693e1f28bc6a41eccab35570f5962a3d03f9a87340c2c428d2729a9a53",
+      "record_digest": "ae306f7b0f180e1f89d2d48dbaa0ad4f26e22ec2e3500194937fe9cf78f842ae",
       "relative_path": "zh-Hant/decide/gbago/keep-emulator-save-progress-safe-and-recoverable-on-iphone.html",
       "route_id": "zh-Hant:gbago:keep-emulator-save-progress-safe-and-recoverable-on-iphone",
       "route_slug": "keep-emulator-save-progress-safe-and-recoverable-on-iphone",
@@ -1635,8 +1635,8 @@
       "creative_id": "savetag:turn-saved-links-into-a-readable-queue:privacy_pay_once",
       "intent_type": "privacy_pay_once",
       "locale": "zh-Hant",
-      "output_sha256": "137d0617c108a9f8714d8cbb6b6d3be46dcfd91c50a1ac6f0918f155ba30dad1",
-      "record_digest": "83f41eaf63c92e7a5e98e7c302371216ee2f21c139938b0c030590513f24b8b3",
+      "output_sha256": "69a408ffbe825047b441533983887313177237fe7447e6cabe2c688bb2de3845",
+      "record_digest": "786d7b456585bb301448c3a219d70a67d27a6f238c30a977cc815aab125c57e2",
       "relative_path": "zh-Hant/decide/savetag/turn-saved-links-into-a-readable-queue.html",
       "route_id": "zh-Hant:savetag:turn-saved-links-into-a-readable-queue",
       "route_slug": "turn-saved-links-into-a-readable-queue",
@@ -1662,5 +1662,5 @@
   ],
   "schema_version": 2,
   "site": "https://open.cait518.cc/ios-app-guide",
-  "source_contract_digest": "a7743c83754c2143da65276e0e5e411b9bba6832ea0d9c5213acb289e1d08f1d"
+  "source_contract_digest": "4b67505680bae1e310ef2c81dd7f26b944ce21f9583eb81849290e026e5f5455"
 }

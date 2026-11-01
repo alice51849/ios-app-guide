@@ -6,7 +6,7 @@
   "name": "Lumi Studio പ്രസാധകന്റെ തിരയൽ ഉദ്ദേശ്യ കാറ്റലോഗ്",
   "description": "ഓരോ ആപ്പും ആരെ ലക്ഷ്യമിട്ട് രൂപകൽപ്പന ചെയ്തതാണെന്ന്, അവർ പൂർത്തിയാക്കാൻ ശ്രമിക്കുന്ന ജോലി, നേരിട്ട് App Store വഴി എത്താനുള്ള വഴി എന്നിവയുടെ ആദ്യകക്ഷി കാറ്റലോഗ്",
   "inLanguage": "ml-IN",
-  "dateModified": "2026-10-30",
+  "dateModified": "2026-11-01",
   "numberOfItems": 56,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -1009,7 +1009,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ml-IN.jsonld#offer-gbago",
         "url": "https://apps.apple.com/in/app/id6804564400?pt=118326163&ct=geo_pick&mt=8",
         "name": "GBAGo: ദൃശ്യ സേവുകൾ",
-        "description": "Lumi Studio നിർമ്മിച്ച മൂന്ന് ഒറിജിനൽ ഡെമോ കാർട്രിഡ്ജുകൾ ഒഴികെ, GBAGoയിൽ ഗെയിമുകളോ ഉള്ളടക്ക കാറ്റലോഗോ ഉൾപ്പെടുത്തിയിട്ടില്ല. നിങ്ങൾ തന്നെ സൃഷ്ടിച്ചതോ",
+        "description": "iPhone-നും iPad-നുമുള്ള ഗെയിം എമുലേറ്ററാണ് GBAGo. Files ആപ്പിൽ നിന്ന് .gba, .gbc, .gb ഫയലുകൾ (അല്ലെങ്കിൽ അവയിലൊന്ന് അടങ്ങിയ .zip) ഇംപോർട്ട് ചെയ്ത്, ടച്ച്",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1039,7 +1039,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6804564400",
           "inLanguage": "ml-IN",
-          "description": "Lumi Studio നിർമ്മിച്ച മൂന്ന് ഒറിജിനൽ ഡെമോ കാർട്രിഡ്ജുകൾ ഒഴികെ, GBAGoയിൽ ഗെയിമുകളോ ഉള്ളടക്ക കാറ്റലോഗോ ഉൾപ്പെടുത്തിയിട്ടില്ല. നിങ്ങൾ തന്നെ സൃഷ്ടിച്ചതോ",
+          "description": "iPhone-നും iPad-നുമുള്ള ഗെയിം എമുലേറ്ററാണ് GBAGo. Files ആപ്പിൽ നിന്ന് .gba, .gbc, .gb ഫയലുകൾ (അല്ലെങ്കിൽ അവയിലൊന്ന് അടങ്ങിയ .zip) ഇംപോർട്ട് ചെയ്ത്, ടച്ച്",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ml-IN.jsonld#offer-gbago"
           },
@@ -2461,7 +2461,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ml-IN.jsonld#offer-savetag",
         "url": "https://apps.apple.com/in/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
         "name": "SaveTag: AI ബുക്ക്മാർക്ക്",
-        "description": "ഇപ്പോൾ സേവ് ചെയ്യൂ. ഇത്തവണ ശരിക്കും വായിക്കൂ.",
+        "description": "ഇപ്പോൾ സേവ് ചെയ്യൂ. ഇത്തവണ ശരിക്കും വായിക്കൂ. ഏത് ആപ്പിൽ നിന്നും ലിങ്ക് ഷെയർ ചെയ്യൂ, SaveTag നിങ്ങളുടെ ഉപകരണത്തിൽ തന്നെ അതിന് ടാഗ് നൽകും: ഭക്ഷണം, യാത്ര",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2491,7 +2491,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802505528",
           "inLanguage": "ml-IN",
-          "description": "ഇപ്പോൾ സേവ് ചെയ്യൂ. ഇത്തവണ ശരിക്കും വായിക്കൂ.",
+          "description": "ഇപ്പോൾ സേവ് ചെയ്യൂ. ഇത്തവണ ശരിക്കും വായിക്കൂ. ഏത് ആപ്പിൽ നിന്നും ലിങ്ക് ഷെയർ ചെയ്യൂ, SaveTag നിങ്ങളുടെ ഉപകരണത്തിൽ തന്നെ അതിന് ടാഗ് നൽകും: ഭക്ഷണം, യാത്ര",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ml-IN.jsonld#offer-savetag"
           },

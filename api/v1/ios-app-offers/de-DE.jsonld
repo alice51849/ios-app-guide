@@ -6,7 +6,7 @@
   "name": "Lumi Studio – Katalog der Suchintentionen des Herausgebers",
   "description": "Ein direkt vom Entwickler veröffentlichter Katalog, der zeigt, für wen jede App entwickelt wurde, welche Aufgabe die jeweilige Person erledigen möchte und wie sie direkt zum App Store gelangt.",
   "inLanguage": "de-DE",
-  "dateModified": "2026-10-30",
+  "dateModified": "2026-11-01",
   "numberOfItems": 56,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -1009,7 +1009,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/de-DE.jsonld#offer-gbago",
         "url": "https://apps.apple.com/de/app/id6804564400?pt=118326163&ct=geo_pick&mt=8",
         "name": "GBAGo: Visuelle Spielstände",
-        "description": "Abgesehen von drei originalen Demo-Modulen von Lumi Studio enthält GBAGo keine Spiele und keinen Inhaltskatalog. Importiere über „Dateien“ nur Dateien, die",
+        "description": "GBAGo ist ein Emulator für Spiele auf iPhone und iPad. Importiere deine .gba-, .gbc- und .gb-Dateien (oder eine .zip-Datei mit einer davon) aus der",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1039,7 +1039,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6804564400",
           "inLanguage": "de-DE",
-          "description": "Abgesehen von drei originalen Demo-Modulen von Lumi Studio enthält GBAGo keine Spiele und keinen Inhaltskatalog. Importiere über „Dateien“ nur Dateien, die",
+          "description": "GBAGo ist ein Emulator für Spiele auf iPhone und iPad. Importiere deine .gba-, .gbc- und .gb-Dateien (oder eine .zip-Datei mit einer davon) aus der",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/de-DE.jsonld#offer-gbago"
           },
@@ -2395,7 +2395,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/de-DE.jsonld#offer-savetag",
         "url": "https://apps.apple.com/de/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
         "name": "SaveTag: KI Lesezeichen",
-        "description": "Jetzt sichern. Und diesmal wirklich lesen.",
+        "description": "Jetzt sichern. Und diesmal wirklich lesen. Teile einen Link aus jeder App, und SaveTag versieht ihn direkt auf deinem Gerät mit Schlagworten: Essen, Reisen",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2425,7 +2425,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802505528",
           "inLanguage": "de-DE",
-          "description": "Jetzt sichern. Und diesmal wirklich lesen.",
+          "description": "Jetzt sichern. Und diesmal wirklich lesen. Teile einen Link aus jeder App, und SaveTag versieht ihn direkt auf deinem Gerät mit Schlagworten: Essen, Reisen",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/de-DE.jsonld#offer-savetag"
           },

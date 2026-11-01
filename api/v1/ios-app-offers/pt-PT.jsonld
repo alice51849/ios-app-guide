@@ -6,7 +6,7 @@
   "name": "Catálogo de intenções de pesquisa do editor Lumi Studio",
   "description": "Um catálogo publicado diretamente pelo programador que explica a quem se destina cada app, a tarefa que pretende realizar e o acesso direto à App Store.",
   "inLanguage": "pt-PT",
-  "dateModified": "2026-10-30",
+  "dateModified": "2026-11-01",
   "numberOfItems": 56,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -943,7 +943,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/pt-PT.jsonld#offer-gbago",
         "url": "https://apps.apple.com/pt/app/id6804564400?pt=118326163&ct=geo_pick&mt=8",
         "name": "GBAGo: Saves visuais",
-        "description": "À exceção de três cartuchos de demonstração originais criados pela Lumi Studio, o GBAGo não inclui jogos nem catálogo de conteúdos. A partir de",
+        "description": "GBAGo é um emulador de jogos para iPhone e iPad. Importe os seus ficheiros .gba, .gbc e .gb (ou um .zip com um deles) a partir da app Ficheiros e jogue a",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -973,7 +973,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6804564400",
           "inLanguage": "pt-PT",
-          "description": "À exceção de três cartuchos de demonstração originais criados pela Lumi Studio, o GBAGo não inclui jogos nem catálogo de conteúdos. A partir de",
+          "description": "GBAGo é um emulador de jogos para iPhone e iPad. Importe os seus ficheiros .gba, .gbc e .gb (ou um .zip com um deles) a partir da app Ficheiros e jogue a",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/pt-PT.jsonld#offer-gbago"
           },
@@ -2461,7 +2461,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/pt-PT.jsonld#offer-savetag",
         "url": "https://apps.apple.com/pt/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
         "name": "SaveTag: marcadores com IA",
-        "description": "Guarde agora. E desta vez leia mesmo.",
+        "description": "Guarde agora. E desta vez leia mesmo. Partilhe um link a partir de qualquer app e o SaveTag atribui-lhe etiquetas no seu dispositivo: comida, viagens",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2491,7 +2491,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802505528",
           "inLanguage": "pt-PT",
-          "description": "Guarde agora. E desta vez leia mesmo.",
+          "description": "Guarde agora. E desta vez leia mesmo. Partilhe um link a partir de qualquer app e o SaveTag atribui-lhe etiquetas no seu dispositivo: comida, viagens",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/pt-PT.jsonld#offer-savetag"
           },

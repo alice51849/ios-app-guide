@@ -6,7 +6,7 @@
   "name": "Lumi Studio 개발사 검색 의도 카탈로그",
   "description": "각 앱의 대상 사용자, 완료하려는 작업, App Store로 바로 이동하는 경로를 개발사가 직접 공개한 카탈로그입니다.",
   "inLanguage": "ko",
-  "dateModified": "2026-10-30",
+  "dateModified": "2026-11-01",
   "numberOfItems": 56,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -943,7 +943,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-gbago",
         "url": "https://apps.apple.com/kr/app/id6804564400?pt=118326163&ct=geo_pick&mt=8",
         "name": "GBAGo: 비주얼 세이브",
-        "description": "Lumi Studio가 직접 만든 오리지널 데모 카트리지 3종을 제외하면 GBAGo에는 게임이나 콘텐츠 카탈로그가 포함되지 않습니다. 파일 앱에서는 직접 만들었거나 관련 법률에 따라 사용 권한을 받은 파일만 가져오세요.",
+        "description": "GBAGo는 iPhone과 iPad용 게임 에뮬레이터입니다. 파일 앱에서 .gba, .gbc, .gb 게임 파일(또는 그중 하나가 담긴 .zip)을 가져온 뒤, 화면 터치 컨트롤이나 게임 컨트롤러로 60fps로 플레이하세요. 미리보기가 있는 저장 슬롯과 2분마다 자동으로",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -973,7 +973,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6804564400",
           "inLanguage": "ko",
-          "description": "Lumi Studio가 직접 만든 오리지널 데모 카트리지 3종을 제외하면 GBAGo에는 게임이나 콘텐츠 카탈로그가 포함되지 않습니다. 파일 앱에서는 직접 만들었거나 관련 법률에 따라 사용 권한을 받은 파일만 가져오세요.",
+          "description": "GBAGo는 iPhone과 iPad용 게임 에뮬레이터입니다. 파일 앱에서 .gba, .gbc, .gb 게임 파일(또는 그중 하나가 담긴 .zip)을 가져온 뒤, 화면 터치 컨트롤이나 게임 컨트롤러로 60fps로 플레이하세요. 미리보기가 있는 저장 슬롯과 2분마다 자동으로",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-gbago"
           },
@@ -2329,7 +2329,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-savetag",
         "url": "https://apps.apple.com/kr/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
         "name": "SaveTag: AI 링크 보관함",
-        "description": "일단 저장하고, 이번엔 진짜 다 읽습니다.",
+        "description": "일단 저장하고, 이번엔 진짜 다 읽습니다. 어떤 앱에서든 링크를 공유하면 SaveTag이 기기에서 바로 맛집·여행·패션·쇼핑 같은 태그를 붙여 줍니다.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2359,7 +2359,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802505528",
           "inLanguage": "ko",
-          "description": "일단 저장하고, 이번엔 진짜 다 읽습니다.",
+          "description": "일단 저장하고, 이번엔 진짜 다 읽습니다. 어떤 앱에서든 링크를 공유하면 SaveTag이 기기에서 바로 맛집·여행·패션·쇼핑 같은 태그를 붙여 줍니다.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-savetag"
           },

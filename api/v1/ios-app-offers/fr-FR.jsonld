@@ -6,7 +6,7 @@
   "name": "Catalogue des intentions de recherche de l’éditeur Lumi Studio",
   "description": "Un catalogue publié directement par le développeur qui indique à qui chaque application est destinée, la tâche à accomplir et l’accès direct à l’App Store.",
   "inLanguage": "fr-FR",
-  "dateModified": "2026-10-30",
+  "dateModified": "2026-11-01",
   "numberOfItems": 56,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -1009,7 +1009,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-gbago",
         "url": "https://apps.apple.com/fr/app/id6804564400?pt=118326163&ct=geo_pick&mt=8",
         "name": "GBAGo: Sauvegardes visuelles",
-        "description": "À l'exception de trois cartouches de démonstration originales créées par Lumi Studio, GBAGo ne contient aucun jeu ni catalogue de contenu. Depuis Fichiers",
+        "description": "GBAGo est un émulateur de jeux pour iPhone et iPad. Importez vos fichiers .gba, .gbc et .gb (ou un .zip en contenant un) via l'app Fichiers et jouez à 60",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1039,7 +1039,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6804564400",
           "inLanguage": "fr-FR",
-          "description": "À l'exception de trois cartouches de démonstration originales créées par Lumi Studio, GBAGo ne contient aucun jeu ni catalogue de contenu. Depuis Fichiers",
+          "description": "GBAGo est un émulateur de jeux pour iPhone et iPad. Importez vos fichiers .gba, .gbc et .gb (ou un .zip en contenant un) via l'app Fichiers et jouez à 60",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-gbago"
           },
@@ -2461,7 +2461,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-savetag",
         "url": "https://apps.apple.com/fr/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
         "name": "SaveTag : favoris par IA",
-        "description": "Sauvegardez maintenant. Lisez vraiment plus tard.",
+        "description": "Sauvegardez maintenant. Lisez vraiment plus tard. Partagez un lien depuis n'importe quelle app et SaveTag lui attribue des étiquettes sur votre appareil",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2491,7 +2491,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802505528",
           "inLanguage": "fr-FR",
-          "description": "Sauvegardez maintenant. Lisez vraiment plus tard.",
+          "description": "Sauvegardez maintenant. Lisez vraiment plus tard. Partagez un lien depuis n'importe quelle app et SaveTag lui attribue des étiquettes sur votre appareil",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-savetag"
           },

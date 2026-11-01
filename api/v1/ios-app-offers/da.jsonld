@@ -6,7 +6,7 @@
   "name": "Lumi Studio – udgiverens katalog over søgeintentioner",
   "description": "Et katalog udgivet direkte af udvikleren, som viser, hvem hver app er udviklet til, hvilken opgave brugeren vil løse, og den direkte vej til App Store.",
   "inLanguage": "da",
-  "dateModified": "2026-10-30",
+  "dateModified": "2026-11-01",
   "numberOfItems": 56,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -1009,7 +1009,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/da.jsonld#offer-gbago",
         "url": "https://apps.apple.com/dk/app/id6804564400?pt=118326163&ct=geo_pick&mt=8",
         "name": "GBAGo: Visuelle gemte",
-        "description": "Bortset fra tre originale demokassetter fra Lumi Studio indeholder GBAGo ingen spil eller indholdskatalog. Importér kun filer fra Arkiver, som du selv",
+        "description": "GBAGo er en emulator til spil på iPhone og iPad. Importér dine egne .gba-, .gbc- og .gb-filer (eller en .zip med en af dem) fra appen Filer, og spil i 60",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1039,7 +1039,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6804564400",
           "inLanguage": "da",
-          "description": "Bortset fra tre originale demokassetter fra Lumi Studio indeholder GBAGo ingen spil eller indholdskatalog. Importér kun filer fra Arkiver, som du selv",
+          "description": "GBAGo er en emulator til spil på iPhone og iPad. Importér dine egne .gba-, .gbc- og .gb-filer (eller en .zip med en af dem) fra appen Filer, og spil i 60",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/da.jsonld#offer-gbago"
           },
@@ -2461,7 +2461,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/da.jsonld#offer-savetag",
         "url": "https://apps.apple.com/dk/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
         "name": "SaveTag: AI-bogmærker",
-        "description": "Gem nu. Og læs det så rent faktisk senere.",
+        "description": "Gem nu. Og læs det så rent faktisk senere. Del et link fra en hvilken som helst app, og SaveTag giver det etiketter direkte på din enhed: mad, rejser, stil",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2491,7 +2491,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802505528",
           "inLanguage": "da",
-          "description": "Gem nu. Og læs det så rent faktisk senere.",
+          "description": "Gem nu. Og læs det så rent faktisk senere. Del et link fra en hvilken som helst app, og SaveTag giver det etiketter direkte på din enhed: mad, rejser, stil",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/da.jsonld#offer-savetag"
           },

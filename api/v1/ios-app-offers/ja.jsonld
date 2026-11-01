@@ -6,7 +6,7 @@
   "name": "Lumi Studio 開発元検索意図カタログ",
   "description": "各アプリの対象ユーザー、達成したいタスク、App Store への直接の導線を、開発元が公開するカタログです。",
   "inLanguage": "ja",
-  "dateModified": "2026-10-30",
+  "dateModified": "2026-11-01",
   "numberOfItems": 56,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -943,7 +943,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-gbago",
         "url": "https://apps.apple.com/jp/app/id6804564400?pt=118326163&ct=geo_pick&mt=8",
         "name": "GBAGo: 見えるセーブ",
-        "description": "Lumi Studioが制作したオリジナルのデモカートリッジ3本を除き、GBAGoにゲームやコンテンツカタログは含まれません。「ファイル」から読み込めるのは、ご自身で作成したファイル、または適用法令に基づき使用許諾を得たファイルだけです。",
+        "description": "GBAGoは、iPhone・iPad向けのゲームエミュレーターです。「ファイル」アプリから、お手持ちの.gba、.gbc、.gbのゲームファイル（またはそのいずれかを含む.zip）をインポートし、画面上のタッチ操作やゲームコントローラーを使って60fpsでプレイできます。プレビュー付きのセーブスロットと2分ご",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -973,7 +973,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6804564400",
           "inLanguage": "ja",
-          "description": "Lumi Studioが制作したオリジナルのデモカートリッジ3本を除き、GBAGoにゲームやコンテンツカタログは含まれません。「ファイル」から読み込めるのは、ご自身で作成したファイル、または適用法令に基づき使用許諾を得たファイルだけです。",
+          "description": "GBAGoは、iPhone・iPad向けのゲームエミュレーターです。「ファイル」アプリから、お手持ちの.gba、.gbc、.gbのゲームファイル（またはそのいずれかを含む.zip）をインポートし、画面上のタッチ操作やゲームコントローラーを使って60fpsでプレイできます。プレビュー付きのセーブスロットと2分ご",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-gbago"
           },

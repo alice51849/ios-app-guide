@@ -104,7 +104,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **Foldable Wallpaper Studio** | Foldable Wallpaper Studio — 适配Duo折叠屏手机高清壁纸，外屏内屏成对，锁屏桌面小组件 \| iOS App | 专为 iPhone Duo 双屏打造的成对壁纸：合上，外屏是特写；展开，内屏是整片全景，两张出自同一幅原创画面。 | 免费开始使用 · 一次购买解锁 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hans/duowallpaperstudio.html) | [在 App Store 获取 Foldable Wallpaper Studio](https://apps.apple.com/cn/app/id6824946559?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money** | 无需订阅的最佳旅行预算追踪应用 iPhone | 旅行时你需要一个在无移动数据的国家也能离线可用、支持多币种且不要求账户的预算追踪器——按旅行分类，确保每次假期独立。这个缺口，正是 G+Money 想补上的。 | 付费下载 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-travel-budget-tracker-app-no-subscription-iphone.html) | [在 App Store 获取 G+Money →](https://apps.apple.com/cn/app/id6755782939?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money Lite：旅行记账·汇率换算** | G+Money Lite：旅行记账·汇率换算 — 出国预算・自由行花费・每日预算 \| iOS App | 出国每天还能花多少，打开就知道。用当地币种记下每一笔，自动换算成你的本国货币、扣进今天的预算；超过每日上限就标红。 | 免费开始使用 · 一次购买解锁 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hans/gmoneylite.html) | [在 App Store 获取 G+Money Lite：旅行记账·汇率换算](https://apps.apple.com/cn/app/id6793436548?pt=118326163&ct=geo_pick&mt=8) |
-| **GBAGo: 可视化存档** | GBAGo: 可视化存档 — 恢复地图 · 自动快照 \| iOS App | 除 Lumi Studio 自制的三款原创 demo 卡带外，GBAGo 不包含游戏或内容目录。请仅从“文件”导入由你自行创作，或依适用法律获授权使用的文件。 | 付费下载 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hans/gbago.html) | [在 App Store 获取 GBAGo: 可视化存档](https://apps.apple.com/cn/app/id6804564400?pt=118326163&ct=geo_pick&mt=8) |
+| **GBAGo: 可视化存档** | GBAGo: 可视化存档 — 恢复地图 · 自动快照 \| iOS App | GBAGo 是一款适用于 iPhone 和 iPad 的游戏模拟器。从“文件”App 导入你自己的 .gba、.gbc 和 .gb 游戏文件（或包含其中之一的 .zip），即可使用屏幕触控按键或游戏手柄以 60 fps 畅玩。带预览图的存档位和每 2 | 付费下载 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hans/gbago.html) | [在 App Store 获取 GBAGo: 可视化存档](https://apps.apple.com/cn/app/id6804564400?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag Lite：买前先算工时** | HoursTag Lite：买前先算工时 — 冲动消费前，先换算成工时 \| iOS App | 结账前，先看这笔要工作几小时。输入你的实际到手时薪，HoursTag Lite 就把每个价格换算成工作时数。 | 免费开始使用 · 一次购买解锁 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hans/hourstaglite.html) | [在 App Store 获取 HoursTag Lite：买前先算工时](https://apps.apple.com/cn/app/id6794039979?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag：价格换工时** | HoursTag：价格换工时 — 月薪时薪计算・花费记账本 \| iOS App | 这真正要花你多少？不是多少钱——是你生命中的几个小时。 | 付费下载 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hans/hourstag.html) | [在 App Store 获取 HoursTag：价格换工时](https://apps.apple.com/cn/app/id6754218117?pt=118326163&ct=geo_pick&mt=8) |
 | **LED Moving Text** | LED Moving Text — 手机立刻变成应援灯牌 \| iOS App | 打上一句话，手机就变成一块会发光、会滚动的大字牌，隔着整个场馆、站台或人群都看得清楚。 | 免费开始使用 · 一次购买解锁 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hans/ledmovingtext.html) | [在 App Store 获取 LED Moving Text](https://apps.apple.com/cn/app/id6806639602?pt=118326163&ct=geo_pick&mt=8) |
@@ -156,6 +156,6 @@ JSON、JSONL 和 CSV 格式包含相同的 2,800 条记录。
 
 [首页](https://open.cait518.cc/ios-app-guide/zh-Hans/index.html) · [开放数据](https://open.cait518.cc/ios-app-guide/zh-Hans/data/lumi-studio-publisher-search-intent-catalog.html) · [许可协议](https://creativecommons.org/licenses/by/4.0/)
 
-更新日期: 2026-10-30
+更新日期: 2026-11-01
 
 CC BY 4.0 适用于原始目录编纂；应用名称和 App Store 标识归其所有者所有。

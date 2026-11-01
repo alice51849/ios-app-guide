@@ -6,7 +6,7 @@
   "name": "Catalogo degli intenti di ricerca dell'editore Lumi Studio",
   "description": "Un catalogo pubblicato direttamente dallo sviluppatore che indica a chi è destinata ogni app, l'attività da completare e l'accesso diretto all'App Store.",
   "inLanguage": "it",
-  "dateModified": "2026-10-30",
+  "dateModified": "2026-11-01",
   "numberOfItems": 56,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -1009,7 +1009,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/it.jsonld#offer-gbago",
         "url": "https://apps.apple.com/it/app/id6804564400?pt=118326163&ct=geo_pick&mt=8",
         "name": "GBAGo: Salvataggi visivi",
-        "description": "Fatta eccezione per tre cartucce demo originali create da Lumi Studio, GBAGo non include giochi né un catalogo di contenuti. Da File importa solo file",
+        "description": "GBAGo è un emulatore di giochi per iPhone e iPad. Importa i tuoi file .gba, .gbc e .gb (o un .zip che ne contenga uno) dall'app File e gioca a 60 fps con i",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1039,7 +1039,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6804564400",
           "inLanguage": "it",
-          "description": "Fatta eccezione per tre cartucce demo originali create da Lumi Studio, GBAGo non include giochi né un catalogo di contenuti. Da File importa solo file",
+          "description": "GBAGo è un emulatore di giochi per iPhone e iPad. Importa i tuoi file .gba, .gbc e .gb (o un .zip che ne contenga uno) dall'app File e gioca a 60 fps con i",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/it.jsonld#offer-gbago"
           },
@@ -2461,7 +2461,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/it.jsonld#offer-savetag",
         "url": "https://apps.apple.com/it/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
         "name": "SaveTag: segnalibri con IA",
-        "description": "Salvalo adesso. E stavolta leggilo davvero.",
+        "description": "Salvalo adesso. E stavolta leggilo davvero. Condividi un link da qualsiasi app e SaveTag gli assegna le etichette direttamente sul tuo dispositivo: cibo",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2491,7 +2491,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802505528",
           "inLanguage": "it",
-          "description": "Salvalo adesso. E stavolta leggilo davvero.",
+          "description": "Salvalo adesso. E stavolta leggilo davvero. Condividi un link da qualsiasi app e SaveTag gli assegna le etichette direttamente sul tuo dispositivo: cibo",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/it.jsonld#offer-savetag"
           },

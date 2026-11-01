@@ -6,7 +6,7 @@
   "name": "Katalog vyhledávacích záměrů vydavatele Lumi Studio",
   "description": "Katalog od první strany, který uvádí, pro koho je každá aplikace určena, jaký úkol má splnit a přímou cestu do App Store.",
   "inLanguage": "cs",
-  "dateModified": "2026-10-30",
+  "dateModified": "2026-11-01",
   "numberOfItems": 56,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -1009,7 +1009,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-gbago",
         "url": "https://apps.apple.com/cz/app/id6804564400?pt=118326163&ct=geo_pick&mt=8",
         "name": "GBAGo: Vizuální uložené",
-        "description": "Kromě tří původních demo kazet od Lumi Studio GBAGo neobsahuje hry ani katalog obsahu. Z aplikace Soubory importujte pouze soubory, které jste sami",
+        "description": "GBAGo je emulátor her na iPhone a iPad. Importujte své soubory .gba, .gbc a .gb (nebo .zip s jedním z nich) z aplikace Soubory a hrajte při 60 fps s",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1039,7 +1039,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6804564400",
           "inLanguage": "cs",
-          "description": "Kromě tří původních demo kazet od Lumi Studio GBAGo neobsahuje hry ani katalog obsahu. Z aplikace Soubory importujte pouze soubory, které jste sami",
+          "description": "GBAGo je emulátor her na iPhone a iPad. Importujte své soubory .gba, .gbc a .gb (nebo .zip s jedním z nich) z aplikace Soubory a hrajte při 60 fps s",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-gbago"
           },
@@ -2461,7 +2461,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-savetag",
         "url": "https://apps.apple.com/cz/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
         "name": "SaveTag: záložky s AI",
-        "description": "Ulož teď. A tentokrát to opravdu přečti.",
+        "description": "Ulož teď. A tentokrát to opravdu přečti. Sdílej odkaz z jakékoli aplikace a SaveTag mu přímo v zařízení přidá štítky: jídlo, cestování, styl, nákupy a",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2491,7 +2491,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802505528",
           "inLanguage": "cs",
-          "description": "Ulož teď. A tentokrát to opravdu přečti.",
+          "description": "Ulož teď. A tentokrát to opravdu přečti. Sdílej odkaz z jakékoli aplikace a SaveTag mu přímo v zařízení přidá štítky: jídlo, cestování, styl, nákupy a",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-savetag"
           },

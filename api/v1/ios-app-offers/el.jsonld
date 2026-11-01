@@ -6,7 +6,7 @@
   "name": "Κατάλογος Προθέσεων Αναζήτησης Εκδότη Lumi Studio",
   "description": "Ένας πρωτογενής κατάλογος που δείχνει για ποιον προορίζεται κάθε εφαρμογή, το έργο που προσπαθεί να ολοκληρώσει και την άμεση διαδρομή στο App Store.",
   "inLanguage": "el",
-  "dateModified": "2026-10-30",
+  "dateModified": "2026-11-01",
   "numberOfItems": 56,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -1009,7 +1009,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-gbago",
         "url": "https://apps.apple.com/gr/app/id6804564400?pt=118326163&ct=geo_pick&mt=8",
         "name": "GBAGo: Οπτικές αποθηκεύσεις",
-        "description": "Εκτός από τρεις πρωτότυπες demo κασέτες της Lumi Studio, το GBAGo δεν περιλαμβάνει παιχνίδια ή κατάλογο περιεχομένου. Από τα Αρχεία εισήγαγε μόνο αρχεία",
+        "description": "Το GBAGo είναι εξομοιωτής παιχνιδιών (emulator) για iPhone και iPad. Εισαγάγετε τα αρχεία σας .gba, .gbc και .gb (ή ένα .zip που περιέχει ένα) από την",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1039,7 +1039,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6804564400",
           "inLanguage": "el",
-          "description": "Εκτός από τρεις πρωτότυπες demo κασέτες της Lumi Studio, το GBAGo δεν περιλαμβάνει παιχνίδια ή κατάλογο περιεχομένου. Από τα Αρχεία εισήγαγε μόνο αρχεία",
+          "description": "Το GBAGo είναι εξομοιωτής παιχνιδιών (emulator) για iPhone και iPad. Εισαγάγετε τα αρχεία σας .gba, .gbc και .gb (ή ένα .zip που περιέχει ένα) από την",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-gbago"
           },
@@ -2461,7 +2461,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-savetag",
         "url": "https://apps.apple.com/gr/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
         "name": "SaveTag: σελιδοδείκτες AI",
-        "description": "Αποθήκευσέ το τώρα. Και αυτή τη φορά διάβασέ το στ' αλήθεια.",
+        "description": "Αποθήκευσέ το τώρα. Και αυτή τη φορά διάβασέ το στ' αλήθεια. Μοιράσου έναν σύνδεσμο από οποιαδήποτε εφαρμογή και το SaveTag του βάζει ετικέτες στη",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2491,7 +2491,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802505528",
           "inLanguage": "el",
-          "description": "Αποθήκευσέ το τώρα. Και αυτή τη φορά διάβασέ το στ' αλήθεια.",
+          "description": "Αποθήκευσέ το τώρα. Και αυτή τη φορά διάβασέ το στ' αλήθεια. Μοιράσου έναν σύνδεσμο από οποιαδήποτε εφαρμογή και το SaveTag του βάζει ετικέτες στη",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-savetag"
           },

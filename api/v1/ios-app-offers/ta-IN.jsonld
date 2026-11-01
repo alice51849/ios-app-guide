@@ -6,7 +6,7 @@
   "name": "Lumi Studio வெளியீட்டாளர் தேடல் நோக்கக் குறியீட்டு அட்டவணை",
   "description": "ஒவ்வொரு செயலியும் யாருக்காக வடிவமைக்கப்பட்டுள்ளதோ, அவர்கள் நிறைவேற்ற முயற்சிக்கும் பணியோ, நேரடி App Store பாதையோ ஆகியவற்றின் முதல்-பார்ட்டி அட்டவணை.",
   "inLanguage": "ta-IN",
-  "dateModified": "2026-10-30",
+  "dateModified": "2026-11-01",
   "numberOfItems": 56,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -1009,7 +1009,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-gbago",
         "url": "https://apps.apple.com/in/app/id6804564400?pt=118326163&ct=geo_pick&mt=8",
         "name": "GBAGo: காட்சி சேமிப்புகள்",
-        "description": "Lumi Studio உருவாக்கிய மூன்று அசல் டெமோ கார்ட்ரிட்ஜ்களைத் தவிர, GBAGoவில் கேம்களோ உள்ளடக்கப் பட்டியலோ இல்லை. நீங்கள் உருவாக்கிய அல்லது பொருந்தும்",
+        "description": "GBAGo, iPhone, iPad-க்கான கேம் எமுலேட்டர். Files ஆப்பிலிருந்து .gba, .gbc, .gb கோப்புகளை (அல்லது ஒன்றைக் கொண்ட .zip) இம்போர்ட் செய்து, டச் அல்லது கேம்",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1039,7 +1039,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6804564400",
           "inLanguage": "ta-IN",
-          "description": "Lumi Studio உருவாக்கிய மூன்று அசல் டெமோ கார்ட்ரிட்ஜ்களைத் தவிர, GBAGoவில் கேம்களோ உள்ளடக்கப் பட்டியலோ இல்லை. நீங்கள் உருவாக்கிய அல்லது பொருந்தும்",
+          "description": "GBAGo, iPhone, iPad-க்கான கேம் எமுலேட்டர். Files ஆப்பிலிருந்து .gba, .gbc, .gb கோப்புகளை (அல்லது ஒன்றைக் கொண்ட .zip) இம்போர்ட் செய்து, டச் அல்லது கேம்",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-gbago"
           },
@@ -2461,7 +2461,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-savetag",
         "url": "https://apps.apple.com/in/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
         "name": "SaveTag: AI புக்மார்க்",
-        "description": "இப்போதே சேமியுங்கள். இந்த முறை உண்மையிலேயே படியுங்கள்.",
+        "description": "இப்போதே சேமியுங்கள். இந்த முறை உண்மையிலேயே படியுங்கள். எந்த ஆப்பிலிருந்தும் இணைப்பைப் பகிருங்கள்; SaveTag உங்கள் சாதனத்திலேயே அதற்கு டேக் இடும்: உணவு",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2491,7 +2491,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802505528",
           "inLanguage": "ta-IN",
-          "description": "இப்போதே சேமியுங்கள். இந்த முறை உண்மையிலேயே படியுங்கள்.",
+          "description": "இப்போதே சேமியுங்கள். இந்த முறை உண்மையிலேயே படியுங்கள். எந்த ஆப்பிலிருந்தும் இணைப்பைப் பகிருங்கள்; SaveTag உங்கள் சாதனத்திலேயே அதற்கு டேக் இடும்: உணவு",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-savetag"
           },

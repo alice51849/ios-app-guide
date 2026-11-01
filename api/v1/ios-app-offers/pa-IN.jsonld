@@ -6,7 +6,7 @@
   "name": "Lumi Studio ਪ੍ਰਕਾਸ਼ਕ ਖੋਜ ਇਰਾਦਾ ਕੈਟਾਲੌਗ",
   "description": "ਇੱਕ ਪਹਿਲਾ-ਪੱਖ ਕੈਟਾਲੌਗ ਜਿਸ ਵਿੱਚ ਦਰਸਾਇਆ ਗਿਆ ਹੈ ਕਿ ਹਰ ਐਪ ਕਿਸ ਲਈ ਬਣਾਇਆ ਗਿਆ ਹੈ, ਉਹ ਕਿਹੜਾ ਕੰਮ ਪੂਰਾ ਕਰਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰ ਰਿਹਾ ਹੈ, ਅਤੇ ਸਿੱਧਾ App Store ਪੱਥ।",
   "inLanguage": "pa-IN",
-  "dateModified": "2026-10-30",
+  "dateModified": "2026-11-01",
   "numberOfItems": 56,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -1009,7 +1009,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/pa-IN.jsonld#offer-gbago",
         "url": "https://apps.apple.com/in/app/id6804564400?pt=118326163&ct=geo_pick&mt=8",
         "name": "GBAGo: ਵਿਜ਼ੂਅਲ ਸੇਵ",
-        "description": "Lumi Studio ਵੱਲੋਂ ਬਣਾਈਆਂ ਤਿੰਨ ਮੂਲ ਡੈਮੋ ਕਾਰਟ੍ਰਿਜਾਂ ਤੋਂ ਇਲਾਵਾ GBAGo ਵਿੱਚ ਕੋਈ ਗੇਮ ਜਾਂ ਸਮੱਗਰੀ ਕੈਟਾਲਾਗ ਸ਼ਾਮਲ ਨਹੀਂ ਹੈ। Files ਤੋਂ ਸਿਰਫ਼ ਉਹੀ ਫਾਈਲਾਂ ਇੰਪੋਰਟ ਕਰੋ ਜੋ",
+        "description": "GBAGo, iPhone ਅਤੇ iPad ਲਈ ਇੱਕ ਗੇਮ ਇਮੂਲੇਟਰ ਹੈ। Files ਐਪ ਤੋਂ ਆਪਣੀਆਂ .gba, .gbc ਅਤੇ .gb ਗੇਮ ਫ਼ਾਈਲਾਂ (ਜਾਂ ਇਨ੍ਹਾਂ ਵਿੱਚੋਂ ਕਿਸੇ ਇੱਕ ਵਾਲੀ .zip) ਇੰਪੋਰਟ ਕਰੋ ਅਤੇ",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1039,7 +1039,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6804564400",
           "inLanguage": "pa-IN",
-          "description": "Lumi Studio ਵੱਲੋਂ ਬਣਾਈਆਂ ਤਿੰਨ ਮੂਲ ਡੈਮੋ ਕਾਰਟ੍ਰਿਜਾਂ ਤੋਂ ਇਲਾਵਾ GBAGo ਵਿੱਚ ਕੋਈ ਗੇਮ ਜਾਂ ਸਮੱਗਰੀ ਕੈਟਾਲਾਗ ਸ਼ਾਮਲ ਨਹੀਂ ਹੈ। Files ਤੋਂ ਸਿਰਫ਼ ਉਹੀ ਫਾਈਲਾਂ ਇੰਪੋਰਟ ਕਰੋ ਜੋ",
+          "description": "GBAGo, iPhone ਅਤੇ iPad ਲਈ ਇੱਕ ਗੇਮ ਇਮੂਲੇਟਰ ਹੈ। Files ਐਪ ਤੋਂ ਆਪਣੀਆਂ .gba, .gbc ਅਤੇ .gb ਗੇਮ ਫ਼ਾਈਲਾਂ (ਜਾਂ ਇਨ੍ਹਾਂ ਵਿੱਚੋਂ ਕਿਸੇ ਇੱਕ ਵਾਲੀ .zip) ਇੰਪੋਰਟ ਕਰੋ ਅਤੇ",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/pa-IN.jsonld#offer-gbago"
           },
@@ -2461,7 +2461,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/pa-IN.jsonld#offer-savetag",
         "url": "https://apps.apple.com/in/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
         "name": "SaveTag: AI ਬੁੱਕਮਾਰਕ",
-        "description": "ਹੁਣੇ ਸੰਭਾਲੋ। ਅਤੇ ਇਸ ਵਾਰ ਸੱਚਮੁੱਚ ਪੜ੍ਹੋ।",
+        "description": "ਹੁਣੇ ਸੰਭਾਲੋ। ਅਤੇ ਇਸ ਵਾਰ ਸੱਚਮੁੱਚ ਪੜ੍ਹੋ। ਕਿਸੇ ਵੀ ਐਪ ਤੋਂ ਲਿੰਕ ਸਾਂਝਾ ਕਰੋ, SaveTag ਤੁਹਾਡੇ ਡਿਵਾਈਸ 'ਤੇ ਹੀ ਉਸ ਨੂੰ ਟੈਗ ਲਾ ਦਿੰਦਾ ਹੈ: ਖਾਣਾ, ਸਫ਼ਰ, ਸਟਾਈਲ, ਸ਼ਾਪਿੰਗ ਅਤੇ",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2491,7 +2491,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802505528",
           "inLanguage": "pa-IN",
-          "description": "ਹੁਣੇ ਸੰਭਾਲੋ। ਅਤੇ ਇਸ ਵਾਰ ਸੱਚਮੁੱਚ ਪੜ੍ਹੋ।",
+          "description": "ਹੁਣੇ ਸੰਭਾਲੋ। ਅਤੇ ਇਸ ਵਾਰ ਸੱਚਮੁੱਚ ਪੜ੍ਹੋ। ਕਿਸੇ ਵੀ ਐਪ ਤੋਂ ਲਿੰਕ ਸਾਂਝਾ ਕਰੋ, SaveTag ਤੁਹਾਡੇ ਡਿਵਾਈਸ 'ਤੇ ਹੀ ਉਸ ਨੂੰ ਟੈਗ ਲਾ ਦਿੰਦਾ ਹੈ: ਖਾਣਾ, ਸਫ਼ਰ, ਸਟਾਈਲ, ਸ਼ਾਪਿੰਗ ਅਤੇ",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/pa-IN.jsonld#offer-savetag"
           },

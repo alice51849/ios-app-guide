@@ -6,7 +6,7 @@
   "name": "קטלוג כוונות החיפוש של Lumi Studio מפרסם",
   "description": "קטלוג רשמי המציג עבור מי מיועדת כל אפליקציה, המשימה שהיא נועדה לבצע, והמסלול הישיר ל-App Store.",
   "inLanguage": "he",
-  "dateModified": "2026-10-30",
+  "dateModified": "2026-11-01",
   "numberOfItems": 56,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -1009,7 +1009,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-gbago",
         "url": "https://apps.apple.com/il/app/id6804564400?pt=118326163&ct=geo_pick&mt=8",
         "name": "GBAGo: שמירות חזותיות",
-        "description": "מלבד שלוש מחסניות הדגמה מקוריות של Lumi Studio, GBAGo אינו כולל משחקים או קטלוג תוכן. יש לייבא מ״קבצים״ רק קבצים שיצרת בעצמך או שהשימוש בהם הותר לך לפי",
+        "description": "GBAGo הוא אמולטור משחקים ל-iPhone ול-iPad. ייבאו מאפליקציית הקבצים קובצי משחק משלכם בפורמט .gba, .gbc או .gb (או קובץ .zip שמכיל אחד מהם) ושחקו ב-60 fps עם",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1039,7 +1039,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6804564400",
           "inLanguage": "he",
-          "description": "מלבד שלוש מחסניות הדגמה מקוריות של Lumi Studio, GBAGo אינו כולל משחקים או קטלוג תוכן. יש לייבא מ״קבצים״ רק קבצים שיצרת בעצמך או שהשימוש בהם הותר לך לפי",
+          "description": "GBAGo הוא אמולטור משחקים ל-iPhone ול-iPad. ייבאו מאפליקציית הקבצים קובצי משחק משלכם בפורמט .gba, .gbc או .gb (או קובץ .zip שמכיל אחד מהם) ושחקו ב-60 fps עם",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-gbago"
           },
@@ -2461,7 +2461,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-savetag",
         "url": "https://apps.apple.com/il/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
         "name": "SaveTag: סימניות עם AI",
-        "description": "שמור עכשיו. וגם תקרא באמת אחר כך.",
+        "description": "שמור עכשיו. וגם תקרא באמת אחר כך. שתף קישור מכל אפליקציה, ו-SaveTag יוסיף לו תגיות ישירות במכשיר: אוכל, טיולים, סטייל, קניות ועוד.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2491,7 +2491,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802505528",
           "inLanguage": "he",
-          "description": "שמור עכשיו. וגם תקרא באמת אחר כך.",
+          "description": "שמור עכשיו. וגם תקרא באמת אחר כך. שתף קישור מכל אפליקציה, ו-SaveTag יוסיף לו תגיות ישירות במכשיר: אוכל, טיולים, סטייל, קניות ועוד.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-savetag"
           },

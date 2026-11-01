@@ -6,7 +6,7 @@
   "name": "แคตตาล็อกเจตนาการค้นหาจากผู้พัฒนา Lumi Studio",
   "description": "แคตตาล็อกที่ผู้พัฒนาเผยแพร่โดยตรง ระบุว่าแต่ละแอปเหมาะกับใคร ต้องการทำงานใดให้เสร็จ และเข้าถึง App Store โดยตรงได้อย่างไร",
   "inLanguage": "th",
-  "dateModified": "2026-10-30",
+  "dateModified": "2026-11-01",
   "numberOfItems": 56,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -1009,7 +1009,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/th.jsonld#offer-gbago",
         "url": "https://apps.apple.com/th/app/id6804564400?pt=118326163&ct=geo_pick&mt=8",
         "name": "GBAGo: เซฟแบบเห็นภาพ",
-        "description": "นอกจากตลับเดโมต้นฉบับ 3 ตลับที่ Lumi Studio สร้างขึ้นเองแล้ว GBAGo ไม่มีเกมหรือแค็ตตาล็อกเนื้อหา",
+        "description": "GBAGo คืออีมูเลเตอร์เกมสำหรับ iPhone และ iPad นำเข้าไฟล์เกม .gba, .gbc และ .gb ของคุณเอง (หรือไฟล์ .zip ที่มีไฟล์ใดไฟล์หนึ่งในนั้น) จากแอปไฟล์",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1039,7 +1039,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6804564400",
           "inLanguage": "th",
-          "description": "นอกจากตลับเดโมต้นฉบับ 3 ตลับที่ Lumi Studio สร้างขึ้นเองแล้ว GBAGo ไม่มีเกมหรือแค็ตตาล็อกเนื้อหา",
+          "description": "GBAGo คืออีมูเลเตอร์เกมสำหรับ iPhone และ iPad นำเข้าไฟล์เกม .gba, .gbc และ .gb ของคุณเอง (หรือไฟล์ .zip ที่มีไฟล์ใดไฟล์หนึ่งในนั้น) จากแอปไฟล์",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/th.jsonld#offer-gbago"
           },
@@ -2461,7 +2461,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/th.jsonld#offer-savetag",
         "url": "https://apps.apple.com/th/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
         "name": "SaveTag: บุ๊กมาร์ก AI",
-        "description": "เก็บไว้ตอนนี้ แล้วคราวนี้ได้อ่านจริง",
+        "description": "เก็บไว้ตอนนี้ แล้วคราวนี้ได้อ่านจริง แชร์ลิงก์จากแอปไหนก็ได้ แล้ว SaveTag จะติดแท็กให้บนอุปกรณ์ทันที: อาหาร ท่องเที่ยว แฟชั่น ช้อปปิ้ง และอีกมากมาย",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2491,7 +2491,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802505528",
           "inLanguage": "th",
-          "description": "เก็บไว้ตอนนี้ แล้วคราวนี้ได้อ่านจริง",
+          "description": "เก็บไว้ตอนนี้ แล้วคราวนี้ได้อ่านจริง แชร์ลิงก์จากแอปไหนก็ได้ แล้ว SaveTag จะติดแท็กให้บนอุปกรณ์ทันที: อาหาร ท่องเที่ยว แฟชั่น ช้อปปิ้ง และอีกมากมาย",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/th.jsonld#offer-savetag"
           },

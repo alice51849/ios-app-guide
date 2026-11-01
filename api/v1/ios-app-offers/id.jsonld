@@ -6,7 +6,7 @@
   "name": "Katalog Niat Pencarian Penerbit Lumi Studio",
   "description": "Katalog yang diterbitkan langsung oleh pengembang untuk menjelaskan sasaran setiap aplikasi, tugas yang ingin diselesaikan, dan akses langsung ke App Store.",
   "inLanguage": "id",
-  "dateModified": "2026-10-30",
+  "dateModified": "2026-11-01",
   "numberOfItems": 56,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -1009,7 +1009,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/id.jsonld#offer-gbago",
         "url": "https://apps.apple.com/id/app/id6804564400?pt=118326163&ct=geo_pick&mt=8",
         "name": "GBAGo: Simpanan visual",
-        "description": "Selain tiga kartrid demo orisinal buatan Lumi Studio, GBAGo tidak menyertakan gim atau katalog konten. Dari File, impor hanya berkas yang kamu buat sendiri",
+        "description": "GBAGo adalah emulator game untuk iPhone dan iPad. Impor file game .gba, .gbc, dan .gb milik Anda (atau .zip yang berisi salah satunya) dari app File",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1039,7 +1039,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6804564400",
           "inLanguage": "id",
-          "description": "Selain tiga kartrid demo orisinal buatan Lumi Studio, GBAGo tidak menyertakan gim atau katalog konten. Dari File, impor hanya berkas yang kamu buat sendiri",
+          "description": "GBAGo adalah emulator game untuk iPhone dan iPad. Impor file game .gba, .gbc, dan .gb milik Anda (atau .zip yang berisi salah satunya) dari app File",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/id.jsonld#offer-gbago"
           },
@@ -2461,7 +2461,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/id.jsonld#offer-savetag",
         "url": "https://apps.apple.com/id/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
         "name": "SaveTag: markah buku AI",
-        "description": "Simpan sekarang. Dan kali ini benar-benar dibaca.",
+        "description": "Simpan sekarang. Dan kali ini benar-benar dibaca. Bagikan tautan dari aplikasi mana pun, dan SaveTag langsung memberinya label di perangkatmu: kuliner",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2491,7 +2491,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802505528",
           "inLanguage": "id",
-          "description": "Simpan sekarang. Dan kali ini benar-benar dibaca.",
+          "description": "Simpan sekarang. Dan kali ini benar-benar dibaca. Bagikan tautan dari aplikasi mana pun, dan SaveTag langsung memberinya label di perangkatmu: kuliner",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/id.jsonld#offer-savetag"
           },

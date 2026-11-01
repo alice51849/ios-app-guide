@@ -6,7 +6,7 @@
   "name": "Lumi Studio Yayıncı Arama Niyeti Kataloğu",
   "description": "Her uygulamanın kimler için tasarlandığını, tamamlamaya çalıştıkları görevi ve doğrudan App Store yolunu gösteren bir birinci taraf katalog.",
   "inLanguage": "tr",
-  "dateModified": "2026-10-30",
+  "dateModified": "2026-11-01",
   "numberOfItems": 56,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -1009,7 +1009,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/tr.jsonld#offer-gbago",
         "url": "https://apps.apple.com/tr/app/id6804564400?pt=118326163&ct=geo_pick&mt=8",
         "name": "GBAGo: Görsel kayıtlar",
-        "description": "Lumi Studio'nun hazırladığı üç özgün demo kartuş dışında GBAGo oyun veya içerik kataloğu içermez. Dosyalar’dan yalnızca kendiniz oluşturduğunuz ya da",
+        "description": "GBAGo, iPhone ve iPad için bir oyun emülatörüdür. Kendi .gba, .gbc ve .gb dosyalarınızı (ya da birini içeren bir .zip) Dosyalar uygulamasından içe aktarın",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1039,7 +1039,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6804564400",
           "inLanguage": "tr",
-          "description": "Lumi Studio'nun hazırladığı üç özgün demo kartuş dışında GBAGo oyun veya içerik kataloğu içermez. Dosyalar’dan yalnızca kendiniz oluşturduğunuz ya da",
+          "description": "GBAGo, iPhone ve iPad için bir oyun emülatörüdür. Kendi .gba, .gbc ve .gb dosyalarınızı (ya da birini içeren bir .zip) Dosyalar uygulamasından içe aktarın",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/tr.jsonld#offer-gbago"
           },
@@ -2461,7 +2461,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/tr.jsonld#offer-savetag",
         "url": "https://apps.apple.com/tr/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
         "name": "SaveTag: yapay zekâlı yer imi",
-        "description": "Şimdi kaydet. Bu sefer gerçekten oku.",
+        "description": "Şimdi kaydet. Bu sefer gerçekten oku. Herhangi bir uygulamadan bağlantıyı paylaş, SaveTag onu doğrudan cihazında etiketlesin: yemek, seyahat, stil",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2491,7 +2491,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802505528",
           "inLanguage": "tr",
-          "description": "Şimdi kaydet. Bu sefer gerçekten oku.",
+          "description": "Şimdi kaydet. Bu sefer gerçekten oku. Herhangi bir uygulamadan bağlantıyı paylaş, SaveTag onu doğrudan cihazında etiketlesin: yemek, seyahat, stil",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/tr.jsonld#offer-savetag"
           },

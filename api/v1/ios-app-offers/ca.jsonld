@@ -6,7 +6,7 @@
   "name": "Catàleg d'intencions de cerca de Lumi Studio Editor",
   "description": "Catàleg de primera mà que mostra per a qui està dissenyada cada app, la tasca que volen completar i el camí directe a l'App Store.",
   "inLanguage": "ca",
-  "dateModified": "2026-10-30",
+  "dateModified": "2026-11-01",
   "numberOfItems": 56,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -1009,7 +1009,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-gbago",
         "url": "https://apps.apple.com/es/app/id6804564400?pt=118326163&ct=geo_pick&mt=8",
         "name": "GBAGo: Partides visuals",
-        "description": "Llevat de tres cartutxos de demostració originals creats per Lumi Studio, GBAGo no inclou jocs ni cap catàleg de contingut. Des de Fitxers, importa només",
+        "description": "GBAGo és un emulador de jocs per a iPhone i iPad. Importa els teus fitxers .gba, .gbc i .gb (o un .zip que en contingui un) des de l'app Arxius i juga a 60",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1039,7 +1039,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6804564400",
           "inLanguage": "ca",
-          "description": "Llevat de tres cartutxos de demostració originals creats per Lumi Studio, GBAGo no inclou jocs ni cap catàleg de contingut. Des de Fitxers, importa només",
+          "description": "GBAGo és un emulador de jocs per a iPhone i iPad. Importa els teus fitxers .gba, .gbc i .gb (o un .zip que en contingui un) des de l'app Arxius i juga a 60",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-gbago"
           },
@@ -2461,7 +2461,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-savetag",
         "url": "https://apps.apple.com/es/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
         "name": "SaveTag: marcadors amb IA",
-        "description": "Desa-ho ara. I aquesta vegada llegeix-ho de debò.",
+        "description": "Desa-ho ara. I aquesta vegada llegeix-ho de debò. Comparteix un enllaç des de qualsevol app i SaveTag l'etiqueta al teu dispositiu: menjar, viatges, estil",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2491,7 +2491,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802505528",
           "inLanguage": "ca",
-          "description": "Desa-ho ara. I aquesta vegada llegeix-ho de debò.",
+          "description": "Desa-ho ara. I aquesta vegada llegeix-ho de debò. Comparteix un enllaç des de qualsevol app i SaveTag l'etiqueta al teu dispositiu: menjar, viatges, estil",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-savetag"
           },

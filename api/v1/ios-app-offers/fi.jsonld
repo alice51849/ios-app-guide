@@ -6,7 +6,7 @@
   "name": "Lumi Studio Julkaisijan Hakutarkoitusluettelo",
   "description": "Ensimmäisen osapuolen luettelo siitä, kenelle kukin sovellus on suunniteltu, mitä tehtävää he pyrkivät suorittamaan ja suora App Store -polku.",
   "inLanguage": "fi",
-  "dateModified": "2026-10-30",
+  "dateModified": "2026-11-01",
   "numberOfItems": 56,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -1009,7 +1009,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fi.jsonld#offer-gbago",
         "url": "https://apps.apple.com/fi/app/id6804564400?pt=118326163&ct=geo_pick&mt=8",
         "name": "GBAGo: Kuvalliset tallenteet",
-        "description": "Lumi Studion kolmea alkuperäistä demopelikasettia lukuun ottamatta GBAGo ei sisällä pelejä eikä sisältöluetteloa. Tuo Tiedostot-apista vain itse luomiasi",
+        "description": "GBAGo on peliemulaattori iPhonelle ja iPadille. Tuo omat .gba-, .gbc- ja .gb-pelitiedostosi (tai .zip, jossa on yksi niistä) Tiedostot-sovelluksesta ja",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1039,7 +1039,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6804564400",
           "inLanguage": "fi",
-          "description": "Lumi Studion kolmea alkuperäistä demopelikasettia lukuun ottamatta GBAGo ei sisällä pelejä eikä sisältöluetteloa. Tuo Tiedostot-apista vain itse luomiasi",
+          "description": "GBAGo on peliemulaattori iPhonelle ja iPadille. Tuo omat .gba-, .gbc- ja .gb-pelitiedostosi (tai .zip, jossa on yksi niistä) Tiedostot-sovelluksesta ja",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fi.jsonld#offer-gbago"
           },
@@ -2461,7 +2461,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fi.jsonld#offer-savetag",
         "url": "https://apps.apple.com/fi/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
         "name": "SaveTag: tekoälykirjanmerkit",
-        "description": "Tallenna nyt. Lue oikeasti myöhemmin.",
+        "description": "Tallenna nyt. Lue oikeasti myöhemmin. Jaa linkki mistä tahansa sovelluksesta, niin SaveTag lisää sille tunnisteet suoraan laitteellasi: ruoka, matkat",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2491,7 +2491,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802505528",
           "inLanguage": "fi",
-          "description": "Tallenna nyt. Lue oikeasti myöhemmin.",
+          "description": "Tallenna nyt. Lue oikeasti myöhemmin. Jaa linkki mistä tahansa sovelluksesta, niin SaveTag lisää sille tunnisteet suoraan laitteellasi: ruoka, matkat",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fi.jsonld#offer-savetag"
           },

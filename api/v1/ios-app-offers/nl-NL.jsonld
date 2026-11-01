@@ -6,7 +6,7 @@
   "name": "Lumi Studio Uitgever Zoekintentiecatalogus",
   "description": "Een catalogus van de eerste partij met informatie over voor wie elke app is ontworpen, welke taak ze proberen te voltooien en het directe App Store-pad.",
   "inLanguage": "nl-NL",
-  "dateModified": "2026-10-30",
+  "dateModified": "2026-11-01",
   "numberOfItems": 56,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -1009,7 +1009,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/nl-NL.jsonld#offer-gbago",
         "url": "https://apps.apple.com/nl/app/id6804564400?pt=118326163&ct=geo_pick&mt=8",
         "name": "GBAGo: Visuele saves",
-        "description": "Afgezien van drie originele democartridges van Lumi Studio bevat GBAGo geen spellen of inhoudscatalogus. Importeer vanuit Bestanden alleen bestanden die je",
+        "description": "GBAGo is een emulator voor games op iPhone en iPad. Importeer je eigen .gba-, .gbc- en .gb-bestanden (of een .zip met een daarvan) via de Bestanden-app",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1039,7 +1039,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6804564400",
           "inLanguage": "nl-NL",
-          "description": "Afgezien van drie originele democartridges van Lumi Studio bevat GBAGo geen spellen of inhoudscatalogus. Importeer vanuit Bestanden alleen bestanden die je",
+          "description": "GBAGo is een emulator voor games op iPhone en iPad. Importeer je eigen .gba-, .gbc- en .gb-bestanden (of een .zip met een daarvan) via de Bestanden-app",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/nl-NL.jsonld#offer-gbago"
           },
@@ -2461,7 +2461,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/nl-NL.jsonld#offer-savetag",
         "url": "https://apps.apple.com/nl/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
         "name": "SaveTag: AI-bladwijzers",
-        "description": "Nu bewaren. En deze keer ook echt lezen.",
+        "description": "Nu bewaren. En deze keer ook echt lezen. Deel een link vanuit elke app en SaveTag geeft hem direct op je apparaat labels: eten, reizen, stijl, shoppen en",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2491,7 +2491,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802505528",
           "inLanguage": "nl-NL",
-          "description": "Nu bewaren. En deze keer ook echt lezen.",
+          "description": "Nu bewaren. En deze keer ook echt lezen. Deel een link vanuit elke app en SaveTag geeft hem direct op je apparaat labels: eten, reizen, stijl, shoppen en",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/nl-NL.jsonld#offer-savetag"
           },

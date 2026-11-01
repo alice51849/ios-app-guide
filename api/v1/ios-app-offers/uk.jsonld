@@ -6,7 +6,7 @@
   "name": "Каталог намірів пошуку видавця Lumi Studio",
   "description": "Каталог першої сторони, що описує, для кого призначений кожен додаток, яке завдання він допомагає виконати, і прямий шлях до App Store.",
   "inLanguage": "uk",
-  "dateModified": "2026-10-30",
+  "dateModified": "2026-11-01",
   "numberOfItems": 56,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -1009,7 +1009,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-gbago",
         "url": "https://apps.apple.com/ua/app/id6804564400?pt=118326163&ct=geo_pick&mt=8",
         "name": "GBAGo: Візуальні сейви",
-        "description": "Окрім трьох оригінальних демокартриджів від Lumi Studio, GBAGo не містить ігор чи каталогу контенту. Імпортуйте з програми «Файли» лише створені вами файли",
+        "description": "GBAGo — емулятор ігор для iPhone та iPad. Імпортуйте свої файли .gba, .gbc і .gb (або .zip з одним із них) із застосунку «Файли» та грайте з частотою 60",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1039,7 +1039,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6804564400",
           "inLanguage": "uk",
-          "description": "Окрім трьох оригінальних демокартриджів від Lumi Studio, GBAGo не містить ігор чи каталогу контенту. Імпортуйте з програми «Файли» лише створені вами файли",
+          "description": "GBAGo — емулятор ігор для iPhone та iPad. Імпортуйте свої файли .gba, .gbc і .gb (або .zip з одним із них) із застосунку «Файли» та грайте з частотою 60",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-gbago"
           },
@@ -2461,7 +2461,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-savetag",
         "url": "https://apps.apple.com/ua/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
         "name": "SaveTag: закладки з ШІ",
-        "description": "Збережіть зараз. І цього разу справді прочитайте.",
+        "description": "Збережіть зараз. І цього разу справді прочитайте. Поділіться посиланням з будь-якого застосунку, і SaveTag просто на пристрої додасть мітки: їжа, подорожі",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2491,7 +2491,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802505528",
           "inLanguage": "uk",
-          "description": "Збережіть зараз. І цього разу справді прочитайте.",
+          "description": "Збережіть зараз. І цього разу справді прочитайте. Поділіться посиланням з будь-якого застосунку, і SaveTag просто на пристрої додасть мітки: їжа, подорожі",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-savetag"
           },

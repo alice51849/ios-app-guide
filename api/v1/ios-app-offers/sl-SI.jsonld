@@ -6,7 +6,7 @@
   "name": "Katalog iskalnih namenov založnika Lumi Studio",
   "description": "Katalog prve roke, ki opisuje, za koga je vsaka aplikacija namenjena, katero nalogo poskuša uporabnik opraviti in neposredno pot do App Store.",
   "inLanguage": "sl-SI",
-  "dateModified": "2026-10-30",
+  "dateModified": "2026-11-01",
   "numberOfItems": 56,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -1009,7 +1009,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/sl-SI.jsonld#offer-gbago",
         "url": "https://apps.apple.com/si/app/id6804564400?pt=118326163&ct=geo_pick&mt=8",
         "name": "GBAGo: Vizualne shranitve",
-        "description": "Razen treh izvirnih predstavitvenih kartuš podjetja Lumi Studio GBAGo ne vključuje iger ali kataloga vsebine. Iz Datotek uvozite samo datoteke, ki ste",
+        "description": "GBAGo je emulator iger za iPhone in iPad. Uvozite svoje datoteke .gba, .gbc in .gb (ali .zip z eno od njih) iz aplikacije Datoteke in igrajte pri 60 fps",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1039,7 +1039,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6804564400",
           "inLanguage": "sl-SI",
-          "description": "Razen treh izvirnih predstavitvenih kartuš podjetja Lumi Studio GBAGo ne vključuje iger ali kataloga vsebine. Iz Datotek uvozite samo datoteke, ki ste",
+          "description": "GBAGo je emulator iger za iPhone in iPad. Uvozite svoje datoteke .gba, .gbc in .gb (ali .zip z eno od njih) iz aplikacije Datoteke in igrajte pri 60 fps",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/sl-SI.jsonld#offer-gbago"
           },
@@ -2461,7 +2461,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/sl-SI.jsonld#offer-savetag",
         "url": "https://apps.apple.com/si/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
         "name": "SaveTag: zaznamki z UI",
-        "description": "Shrani zdaj. In tokrat res preberi.",
+        "description": "Shrani zdaj. In tokrat res preberi. Deli povezavo iz katere koli aplikacije in SaveTag ji kar v napravi doda oznake: hrana, potovanja, slog, nakupovanje in",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2491,7 +2491,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802505528",
           "inLanguage": "sl-SI",
-          "description": "Shrani zdaj. In tokrat res preberi.",
+          "description": "Shrani zdaj. In tokrat res preberi. Deli povezavo iz katere koli aplikacije in SaveTag ji kar v napravi doda oznake: hrana, potovanja, slog, nakupovanje in",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/sl-SI.jsonld#offer-savetag"
           },

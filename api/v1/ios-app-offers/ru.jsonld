@@ -6,7 +6,7 @@
   "name": "Каталог намерений поиска издателя Lumi Studio",
   "description": "Каталог, созданный издателем, с информацией о целевой аудитории каждого приложения, задачах, которые оно помогает решать, и прямой ссылкой в App Store.",
   "inLanguage": "ru",
-  "dateModified": "2026-10-30",
+  "dateModified": "2026-11-01",
   "numberOfItems": 56,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -1009,7 +1009,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-gbago",
         "url": "https://apps.apple.com/ru/app/id6804564400?pt=118326163&ct=geo_pick&mt=8",
         "name": "GBAGo: Визуальные сейвы",
-        "description": "Кроме трёх оригинальных демо-картриджей от Lumi Studio, GBAGo не содержит игр или каталога контента. Импортируйте из приложения «Файлы» только созданные",
+        "description": "GBAGo — эмулятор игр для iPhone и iPad. Импортируйте свои файлы .gba, .gbc и .gb (или .zip с одним из них) из приложения «Файлы» и играйте с частотой 60",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1039,7 +1039,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6804564400",
           "inLanguage": "ru",
-          "description": "Кроме трёх оригинальных демо-картриджей от Lumi Studio, GBAGo не содержит игр или каталога контента. Импортируйте из приложения «Файлы» только созданные",
+          "description": "GBAGo — эмулятор игр для iPhone и iPad. Импортируйте свои файлы .gba, .gbc и .gb (или .zip с одним из них) из приложения «Файлы» и играйте с частотой 60",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-gbago"
           },
@@ -2461,7 +2461,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-savetag",
         "url": "https://apps.apple.com/ru/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
         "name": "SaveTag: закладки с ИИ",
-        "description": "Сохраните сейчас. И в этот раз действительно прочитайте.",
+        "description": "Сохраните сейчас. И в этот раз действительно прочитайте. Поделитесь ссылкой из любого приложения, и SaveTag прямо на устройстве расставит метки: еда",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2491,7 +2491,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802505528",
           "inLanguage": "ru",
-          "description": "Сохраните сейчас. И в этот раз действительно прочитайте.",
+          "description": "Сохраните сейчас. И в этот раз действительно прочитайте. Поделитесь ссылкой из любого приложения, и SaveTag прямо на устройстве расставит метки: еда",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-savetag"
           },

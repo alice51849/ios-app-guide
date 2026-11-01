@@ -2,7 +2,7 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-11-01",
-  "content_digest": "2855552bc73588f130bc0579db71c6d513c2ad6076c1ef87127be958fbf71b09",
+  "content_digest": "f2902a1702c6cb7d31f0b0b7d15b56b38dc310a16f33b090dbd990469bd0c3c5",
   "locale": "zh-Hant",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -153,9 +153,7 @@
         "讀書",
         "求職",
         "畢業門檻",
-        "上班族",
-        "多益",
-        "英文檢定"
+        "上班族"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -416,7 +414,8 @@
         "日記",
         "症狀",
         "心情",
-        "經期 追蹤"
+        "經期 追蹤",
+        "月經 app"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -583,7 +582,8 @@
         "音量",
         "安靜",
         "低頻",
-        "打呼"
+        "打呼",
+        "頻譜分析"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1095,7 +1095,8 @@
         "鎖手機",
         "防沉迷",
         "鎖機",
-        "定時"
+        "定時",
+        "app 封鎖"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1151,8 +1152,7 @@
         "注音發音",
         "寶寶",
         "注音符號遊戲",
-        "學注音符號",
-        "注音"
+        "學注音符號"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1509,10 +1509,7 @@
         "蓋章",
         "教養",
         "幼兒園",
-        "早睡早起",
-        "兒童 習慣",
-        "獎勵 貼紙",
-        "睡前 習慣"
+        "早睡早起"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1922,7 +1919,8 @@
         "ppt製作",
         "專案",
         "提報",
-        "pdf"
+        "pdf",
+        "一頁 摘要"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2914,6 +2912,7 @@
         "延遲測試",
         "連線測試",
         "TCP",
+        "網路 檢查",
         "wifi 診斷"
       ],
       "purchase_model": "paid_upfront",

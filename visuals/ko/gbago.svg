@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title description" xml:lang="ko" direction="ltr">
 <title id="title">GBAGo: 비주얼 세이브 — 복구 지도 · 자동 스냅샷 | iOS App</title>
-<desc id="description">Lumi Studio가 직접 만든 오리지널 데모 카트리지 3종을 제외하면 GBAGo에는 게임이나 콘텐츠 카탈로그가 포함되지 않습니다. 파일 앱에서는 직접 만들었거나 관련 법률에 따라 사용 권한을 받은 파일만 가져오세요. 유료 다운로드</desc>
+<desc id="description">GBAGo는 iPhone과 iPad용 게임 에뮬레이터입니다. 파일 앱에서 .gba, .gbc, .gb 게임 파일(또는 그중 하나가 담긴 .zip)을 가져온 뒤, 화면 터치 컨트롤이나 게임 컨트롤러로 60fps로 플레이하세요. 미리보기가 있는 저장 슬롯과 2분마다 자동으로 유료 다운로드</desc>
 <defs>
 <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
 <stop offset="0" stop-color="#132a13"/>
@@ -23,7 +23,7 @@
 <text class="app-name" x="400" y="188" font-size="48" text-anchor="start">GBAGo: 비주얼 세이브</text>
 <text x="400" y="238" text-anchor="start" font-size="23" font-weight="650" fill="#e2e8f0" direction="ltr">App Store ID 6804564400</text>
 <text class="query" x="100" y="392" font-size="35" text-anchor="start" transform="translate(100 0) scale(0.9653 1) translate(-100 0)">GBAGo: 비주얼 세이브 — 복구 지도 · 자동 스냅샷 | iOS App</text>
-<text class="context" x="100" y="457" font-size="16" text-anchor="start" transform="translate(100 0) scale(0.6210 1) translate(-100 0)">Lumi Studio가 직접 만든 오리지널 데모 카트리지 3종을 제외하면 GBAGo에는 게임이나 콘텐츠 카탈로그가 포함되지 않습니다. 파일 앱에서는 직접 만들었거나 관련 법률에 따라 사용 권한을 받은 파일만 가져오세요.</text>
+<text class="context" x="100" y="457" font-size="16" text-anchor="start" transform="translate(100 0) scale(0.5242 1) translate(-100 0)">GBAGo는 iPhone과 iPad용 게임 에뮬레이터입니다. 파일 앱에서 .gba, .gbc, .gb 게임 파일(또는 그중 하나가 담긴 .zip)을 가져온 뒤, 화면 터치 컨트롤이나 게임 컨트롤러로 60fps로 플레이하세요. 미리보기가 있는 저장 슬롯과 2분마다 자동으로</text>
 <line x1="100" y1="498" x2="1100" y2="498" stroke="#ffffff" stroke-opacity="0.22"/>
 <text class="purchase-model" x="100" y="548" font-size="25" text-anchor="start">유료 다운로드</text>
 <text x="1100" y="548" text-anchor="end" font-size="25" font-weight="800" fill="#ffffff">App Store</text>

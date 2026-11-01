@@ -5022,6 +5022,194 @@ PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
                 },
             ],
         },
+    ],
+    # Meow Party: 2 Player Cat Games (58_MeowParty, ASC 6829184924, bundle
+    # tail "foldparty") is pre-publication. Claims here are held to what build
+    # 179f737a ships: 200 original cat minigames in four families of 50 (party,
+    # fold puzzles, arcade and rhythm, cozy creations); 146 are solo and 54
+    # can be played by two people face to face on one phone (51 of those also
+    # have a computer rival); rounds of about 30 to 120 seconds with levels;
+    # Party mode (3, 5 or 10 random games in a row with a scoreboard); a
+    # sticker book; fold moves with an on-screen alternative (hold-to-close
+    # button or two-finger pinch) so every game is playable on a regular
+    # iPhone. Paid upfront, no in-app purchases, no ads, no account, no
+    # network features, no data collected, 50 interface languages. It has no
+    # online multiplayer, no vibration and no Android version.
+    "foldparty": [
+        {
+            "query": "2 player games for two people on one iphone offline without ads",
+            "guide_title": "Two-player games on one phone: what to check",
+            "triggers": [
+                "2 player games one phone",
+                "two player games on one iphone",
+                "games for couples on one phone",
+                "face to face party games phone",
+                "two player cat games",
+                "split screen games for two on iphone",
+            ],
+            "persona": (
+                "friends, couples and families who want to pass a few minutes "
+                "at a cafe table, on the couch or on a train by playing against "
+                "each other on the one phone they have with them"
+            ),
+            "lead": (
+                "Most two-player phone games turn out to be a handful of ideas "
+                "padded with ads, or they need a second phone and an internet "
+                "connection before anyone can start."
+            ),
+            "paras": [
+                (
+                    "Look for games built for two people facing each other "
+                    "across one screen: each player gets a side, rounds are "
+                    "short enough to swap in a new game often, and nothing "
+                    "interrupts the play. Meow Party has 200 original cat "
+                    "minigames; 54 of them are made for two players on one "
+                    "phone, with rounds of about 30 to 120 seconds, and a "
+                    "Party mode strings 3, 5 or 10 random games together with "
+                    "a running scoreboard."
+                ),
+                (
+                    "Then check what happens when the other person is not "
+                    "there and what it costs. A computer rival lets you "
+                    "practice most of the two-player games on your own, 146 "
+                    "games are solo to begin with, and a single upfront price "
+                    "with no in-app purchases, no ads and no account means the "
+                    "whole collection plays offline on a plane or abroad."
+                ),
+            ],
+            "look": [
+                "Two-player games where each person plays from their own side of one screen.",
+                "Short rounds of about 30 to 120 seconds, plus solo games with levels that get harder.",
+                "A Party mode of 3, 5 or 10 random games with a scoreboard.",
+                "A computer rival for practice when you are on your own.",
+                "Offline play with no ads, no account and no in-app purchases.",
+            ],
+            "steps": [
+                "Sit across from each other with the phone flat on the table between you.",
+                "Pick a game with the two-player filter, or start a Party of 3, 5 or 10 random games.",
+                "Read the short rules on the title screen and play a round.",
+                "Check the scoreboard on the break screen, then play the next random game.",
+                "On your own, play the solo games or warm up against a computer rival.",
+            ],
+            "fits": (
+                "fits friends, couples and families who want quick face-to-face "
+                "games on one phone, plus plenty of solo games for the rest of "
+                "the time, for one upfront price with no in-app purchases, no "
+                "ads and no account."
+            ),
+            "faq": [
+                {
+                    "q": "Do we need two phones or an internet connection?",
+                    "a": (
+                        "No. The two-player games are played face to face on "
+                        "one phone, and Meow Party has no network features, so "
+                        "everything works offline."
+                    ),
+                },
+                {
+                    "q": "How many games can two people play together?",
+                    "a": (
+                        "54 of the 200 games can be played by two people on "
+                        "one phone, and most of those also offer a computer "
+                        "rival. The other 146 games are solo."
+                    ),
+                },
+                {
+                    "q": "Is there a subscription or in-app purchase?",
+                    "a": (
+                        "No. Meow Party is a one-time paid download that "
+                        "includes all 200 games, with no in-app purchases, "
+                        "subscription, ads or account."
+                    ),
+                },
+            ],
+        },
+        {
+            "query": "fun games that use the fold on a foldable iphone and still work on a regular iphone",
+            "guide_title": "Games that make use of a foldable phone: what to check",
+            "triggers": [
+                "foldable phone games",
+                "games for foldable iphone",
+                "fold and unfold puzzle games",
+                "cute cat minigames collection",
+                "cozy cat mini games offline",
+                "minigame collection paid no ads",
+            ],
+            "persona": (
+                "people with a foldable iPhone, or a household where some phones "
+                "fold and some do not, who want small games that use the fold "
+                "for something instead of just stretching the picture"
+            ),
+            "lead": (
+                "Most games treat a foldable like any other big screen, so "
+                "folding and unfolding the phone never changes anything in "
+                "the game."
+            ),
+            "paras": [
+                (
+                    "A game that makes use of the fold gives the crease a job: "
+                    "a net, a center line or a mirror between two players, a "
+                    "secret you peek at on the outer screen before opening the "
+                    "phone, or a puzzle you solve by folding two halves "
+                    "together. Meow Party is built around ideas like these, "
+                    "across four families of 50 games: party, fold puzzles, "
+                    "arcade and rhythm, and cozy creations."
+                ),
+                (
+                    "Just as important is what happens on a phone that does "
+                    "not fold. Check that every fold move has an on-screen "
+                    "alternative; in Meow Party it is a hold-to-close or "
+                    "hold-to-peek button or, in solo games, a two-finger pinch, so every game stays fully playable "
+                    "on a regular iPhone and a family can share the same "
+                    "games whatever phones they carry."
+                ),
+            ],
+            "look": [
+                "Games where folding or the crease is part of the play, not just a bigger picture.",
+                "An on-screen alternative for every fold move on a regular iPhone.",
+                "Four families of 50 games: party, fold puzzles, arcade and rhythm, cozy creations.",
+                "A sticker book that collects a sticker for each game's first star and three stars.",
+                "The interface in 50 languages, following the system language.",
+            ],
+            "steps": [
+                "Browse by family, or use the Folding filter to see the games that react to the fold.",
+                "On a foldable, follow the title-screen hint to fold, close or open the phone at the right moment.",
+                "On a regular iPhone, use the on-screen hold-to-close or hold-to-peek button instead, or a two-finger pinch in solo games.",
+                "Earn stars across the levels and fill in the sticker book.",
+                "Hand the phone across the table for one of the two-player games.",
+            ],
+            "fits": (
+                "fits people who want a large collection of short, cute games "
+                "that use a foldable phone's fold and still play fully on a "
+                "regular iPhone, offline, for one upfront price with no in-app "
+                "purchases or ads."
+            ),
+            "faq": [
+                {
+                    "q": "Do I need a foldable phone?",
+                    "a": (
+                        "No. Every game is fully playable on a regular iPhone: "
+                        "each fold move has an on-screen hold-to-close or "
+                        "hold-to-peek button, or a two-finger pinch in solo games. On a foldable the fold itself "
+                        "becomes part of many games."
+                    ),
+                },
+                {
+                    "q": "Are the games original?",
+                    "a": (
+                        "Yes. All 200 minigames are original, and in every game "
+                        "you play as a cat from the Meow Squad."
+                    ),
+                },
+                {
+                    "q": "Does Meow Party collect any data?",
+                    "a": (
+                        "No. It has no network features, needs no account and "
+                        "collects no data; progress stays on your device."
+                    ),
+                },
+            ],
+        },
     ]
 }
 

@@ -1,12 +1,12 @@
 {
- "generated": "2026-10-31T19:23:20Z",
+ "generated": "2026-11-01T00:13:22Z",
  "mode": "apply",
  "counts": {
   "ok_reply": 34,
   "unknown_app": 47,
-  "ok_backfilled_earlier": 15,
+  "ok_backfilled_earlier": 17,
   "backfilled": 2,
-  "ok_store_only": 715,
+  "ok_store_only": 713,
   "ok_bio_link": 68,
   "ok_caption": 4,
   "taken_down": 4,
@@ -461,16 +461,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DehGb7ulP-U",
    "date": "2026-10-15",
    "app": "dbhalo",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "Spectrum, Dose & Sleep Journal. The large Halo ring shows live decibels at a glance, with minimum, average, maximum and peak readings. dB Ha",
    "why": "url+brand",
    "ios_id": "6806826699",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "18126597578480861",
-   "at": "2026-10-31T19:20:44Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",
@@ -478,16 +473,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DeegbdAGei7",
    "date": "2026-10-14",
    "app": "countdaysnow",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "Plan backwards from the dates that matter. Future, current and past events are kept in three clear views, with precise day counts. CountDays",
    "why": "url+brand",
    "ios_id": "6807079789",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "18120899095989996",
-   "at": "2026-10-31T19:20:44Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",
@@ -525,11 +515,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdxMyqiEjRK",
    "date": "2026-09-26",
    "app": "lumibopomofo",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "Zhuyin: चीनी फोनिक्स। मंदारिन चीनी ध्वनियों की प्यारी शुरुआत। Lumi बोपोमोफो आज़माना हो तो यहीं मिलेगा: https://apps.apple.com/in/app/id67730",
    "why": "url",
    "ios_id": "6773017109",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "17929931304424129",
+   "at": "2026-11-01T00:10:19Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -537,11 +532,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdwdcB6Elvj",
    "date": "2026-09-26",
    "app": "zipbox",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "Raspakiraj bez reklama. Pogledajte sadržaj arhive bez raspakiravanja. Zipbox: otvori RAR, ZIP, 7z Ako želite probati, evo ga: https://apps.a",
    "why": "url+brand",
    "ios_id": "6806776579",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "18180071656447098",
+   "at": "2026-11-01T00:10:19Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",

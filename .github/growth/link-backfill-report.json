@@ -1,12 +1,12 @@
 {
- "generated": "2026-11-01T13:35:05Z",
+ "generated": "2026-11-01T19:46:57Z",
  "mode": "apply",
  "counts": {
   "ok_reply": 36,
   "unknown_app": 47,
-  "ok_backfilled_earlier": 19,
+  "ok_backfilled_earlier": 21,
   "backfilled": 2,
-  "ok_store_only": 711,
+  "ok_store_only": 709,
   "ok_bio_link": 68,
   "ok_caption": 4,
   "taken_down": 4,
@@ -563,16 +563,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdtKCVMk7EL",
    "date": "2026-09-25",
    "app": "wifiaidlite",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "“网络又卡了”——问题到底出在路由器、DNS、运营商,还是网站本身?WiFi Aid Lite 通过多条独立路径同时检测 DNS、TCP、TLS、响应时间与稳定性,交叉比对各项证据,告诉你最可能的故障原因,不必再瞎猜、重启碰运气。 运行检查:一键完成 Wi-Fi、DNS 与互联网",
    "why": "url+brand",
    "ios_id": "6793414462",
-   "locale": "zh-Hant",
-   "own_replies": [],
-   "comment_id": "18471700576190839",
-   "at": "2026-11-01T13:32:13Z",
-   "verified": true,
-   "via": "list"
+   "locale": "zh-Hant"
   },
   {
    "channel": "threads",
@@ -580,16 +575,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/Ddtz_xQE5TJ",
    "date": "2026-09-25",
    "app": "snapportlite",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "Create ID photos at home. Make passport, visa, and document photos with guided sizing, background tools, and print-ready export. Snapport Li",
    "why": "url+brand",
    "ios_id": "6792856304",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "17953773258302315",
-   "at": "2026-11-01T13:32:13Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",
@@ -597,11 +587,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdsG9vPAYxS",
    "date": "2026-09-24",
    "app": "unblurry",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "Unblur photos in HD. Make it crystal clear. Unblurry Pro: Unblur & HD Leaving the link here: https://apps.apple.com/us/app/id6782275018?pt=1",
    "why": "url+brand",
    "ios_id": "6782275018",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "17975671794139469",
+   "at": "2026-11-01T19:44:13Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -609,11 +604,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdrDbDVn-r_",
    "date": "2026-09-24",
    "app": "tripplanet",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "Six confirmation emails, two screenshots, one note — and no actual plan. Our app, not a ranking: Travel quests and badges for ages 3–10. Par",
    "why": "url+brand",
    "ios_id": "6787193643",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "18216800446363528",
+   "at": "2026-11-01T19:44:13Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",

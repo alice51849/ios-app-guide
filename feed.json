@@ -1,7 +1,7 @@
 {
  "schema": "lumi.social-feed/v1",
  "date": "2026-11-01",
- "generated_at": "2026-11-01T08:13:46Z",
+ "generated_at": "2026-11-01T16:03:36Z",
  "items": {
   "bluesky": [
    {
@@ -96,48 +96,69 @@
    },
    {
     "kind": "clip",
-    "key": "scanto/en",
+    "key": "shotinbox/en",
     "locale": "en",
-    "app": "scanto",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/jmy42w.mp4",
-    "hook": "Locked with Face ID",
-    "name": "ScanTo Pro: Offline PDF & OCR",
-    "title": "Locked with Face ID | Private Document & ID Scanner | ScanTo Pro",
+    "app": "shotinbox",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/8wjz03.mp4",
+    "hook": "Done with it? Clear it out",
+    "name": "ShotInbox AI: Sort Screenshots",
+    "title": "Done with it? Clear it out | OCR Search & Photo Cleaner | ShotInbox",
     "tags": [
-     "#OfflinePDFOCR",
-     "#Scan",
-     "#Text",
-     "#Recognition",
-     "#Receipt",
-     "#ScanToPro"
+     "#SortScreenshots",
+     "#Organizer",
+     "#Manager",
+     "#Duplicate",
+     "#Similar",
+     "#ShotInbox"
     ],
-    "caption": "Locked with Face ID\nScan to PDF in seconds\nPrivate Document & ID Scanner\nScanTo Pro: Offline PDF & OCR\nSearch “Offline PDF & OCR” on the App Store\nAlso on Google Play\n\n#OfflinePDFOCR #Scan #ScanToPro",
+    "caption": "Done with it? Clear it out\nSearch the text inside them\nOCR Search & Photo Cleaner\nShotInbox AI: Sort Screenshots\nSearch “Sort Screenshots” on the App Store\nAlso on Google Play\n\n#SortScreenshots #Organizer #ShotInbox",
     "button": "Get it on the App Store",
     "variant": "c",
-    "alt": "ScanTo Pro: Offline PDF & OCR — Locked with Face ID — Scan to PDF in seconds — Private Document & ID Scanner",
-    "store": "https://apps.apple.com/us/app/id6779977651?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.OfflineScannerPro&referrer=utm_source%3Dsocial%26utm_campaign%3Dscanto",
+    "alt": "ShotInbox AI: Sort Screenshots — Done with it? Clear it out — Search the text inside them — OCR Search & Photo Cleaner",
+    "store": "https://apps.apple.com/us/app/id6802166527?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ShotInbox&referrer=utm_source%3Dsocial%26utm_campaign%3Dshotinbox",
     "review": {
      "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6779977651?action=write-review"
+     "url": "https://apps.apple.com/app/id6802166527?action=write-review"
     },
     "keywords": [
-     "scan",
+     "organizer",
+     "manager",
+     "duplicate",
+     "similar",
      "text",
-     "recognition",
-     "receipt",
-     "password",
-     "encrypted"
+     "receipts"
     ],
-    "keyline": "Private Document & ID Scanner",
+    "keyline": "OCR Search & Photo Cleaner",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "bdb90d0a80a48d75",
+     "board": "f6c970e3cb08d22c",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "card/gsat2027/2026-11-01",
+    "locale": "zh-Hant",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/countdown-cards/card-20261101.jpg",
+    "caption": "116 學測 倒數 82 天\n今天也前進一步\n\nApp Store／Google Play 搜尋「CountDaysNow」\n\n#倒數日 #倒數計時 #紀念日",
+    "title": "116 學測 倒數 82 天",
+    "alt": "CountDaysNow — 116 學測 倒數 82 天 — 今天也前進一步 — App Store／Google Play 搜尋「CountDaysNow」 — 倒數日 · 倒數計時 · 紀念日",
+    "name": "CountDaysNow",
+    "hook": "116 學測 倒數 82 天",
+    "tags": [
+     "#倒數日",
+     "#倒數計時",
+     "#紀念日",
+     "#生日",
+     "#還有幾天"
+    ],
+    "button": "在 App Store 下載",
+    "store": "https://apps.apple.com/tw/app/id6807079789?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow"
    },
    {
     "kind": "card",
@@ -1760,48 +1781,69 @@
    },
    {
     "kind": "clip",
-    "key": "scanto/en",
+    "key": "shotinbox/en",
     "locale": "en",
-    "app": "scanto",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/jmy42w.mp4",
-    "hook": "Locked with Face ID",
-    "name": "ScanTo Pro: Offline PDF & OCR",
-    "title": "Locked with Face ID | Private Document & ID Scanner | ScanTo Pro",
+    "app": "shotinbox",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/8wjz03.mp4",
+    "hook": "Done with it? Clear it out",
+    "name": "ShotInbox AI: Sort Screenshots",
+    "title": "Done with it? Clear it out | OCR Search & Photo Cleaner | ShotInbox",
     "tags": [
-     "#OfflinePDFOCR",
-     "#Scan",
-     "#Text",
-     "#Recognition",
-     "#Receipt",
-     "#ScanToPro"
+     "#SortScreenshots",
+     "#Organizer",
+     "#Manager",
+     "#Duplicate",
+     "#Similar",
+     "#ShotInbox"
     ],
-    "caption": "Locked with Face ID\nScan to PDF in seconds\nPrivate Document & ID Scanner\nScanTo Pro: Offline PDF & OCR\nSearch “Offline PDF & OCR” on the App Store\nAlso on Google Play\n\n#OfflinePDFOCR #Scan #Text #Recognition #ScanToPro",
+    "caption": "Done with it? Clear it out\nSearch the text inside them\nOCR Search & Photo Cleaner\nShotInbox AI: Sort Screenshots\nSearch “Sort Screenshots” on the App Store\nAlso on Google Play\n\n#SortScreenshots #Organizer #Manager #Duplicate #ShotInbox",
     "button": "Get it on the App Store",
     "variant": "c",
-    "alt": "ScanTo Pro: Offline PDF & OCR — Locked with Face ID — Scan to PDF in seconds — Private Document & ID Scanner",
-    "store": "https://apps.apple.com/us/app/id6779977651?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.OfflineScannerPro&referrer=utm_source%3Dsocial%26utm_campaign%3Dscanto",
+    "alt": "ShotInbox AI: Sort Screenshots — Done with it? Clear it out — Search the text inside them — OCR Search & Photo Cleaner",
+    "store": "https://apps.apple.com/us/app/id6802166527?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ShotInbox&referrer=utm_source%3Dsocial%26utm_campaign%3Dshotinbox",
     "review": {
      "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6779977651?action=write-review"
+     "url": "https://apps.apple.com/app/id6802166527?action=write-review"
     },
     "keywords": [
-     "scan",
+     "organizer",
+     "manager",
+     "duplicate",
+     "similar",
      "text",
-     "recognition",
-     "receipt",
-     "password",
-     "encrypted"
+     "receipts"
     ],
-    "keyline": "Private Document & ID Scanner",
+    "keyline": "OCR Search & Photo Cleaner",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "bdb90d0a80a48d75",
+     "board": "f6c970e3cb08d22c",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "card/gsat2027/2026-11-01",
+    "locale": "zh-Hant",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/countdown-cards/card-20261101.jpg",
+    "caption": "116 學測 倒數 82 天\n今天也前進一步\n\nApp Store／Google Play 搜尋「CountDaysNow」\n\n#倒數日 #倒數計時 #紀念日 #生日 #還有幾天",
+    "title": "116 學測 倒數 82 天",
+    "alt": "CountDaysNow — 116 學測 倒數 82 天 — 今天也前進一步 — App Store／Google Play 搜尋「CountDaysNow」 — 倒數日 · 倒數計時 · 紀念日",
+    "name": "CountDaysNow",
+    "hook": "116 學測 倒數 82 天",
+    "tags": [
+     "#倒數日",
+     "#倒數計時",
+     "#紀念日",
+     "#生日",
+     "#還有幾天"
+    ],
+    "button": "在 App Store 下載",
+    "store": "https://apps.apple.com/tw/app/id6807079789?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow"
    },
    {
     "kind": "card",
@@ -1948,60 +1990,59 @@
    },
    {
     "kind": "clip",
-    "key": "scanto/en",
+    "key": "shotinbox/en",
     "locale": "en",
-    "app": "scanto",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/jmy42w.mp4",
-    "hook": "Locked with Face ID",
-    "name": "ScanTo Pro: Offline PDF & OCR",
-    "title": "Locked with Face ID | Private Document & ID Scanner | ScanTo Pro",
+    "app": "shotinbox",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/8wjz03.mp4",
+    "hook": "Done with it? Clear it out",
+    "name": "ShotInbox AI: Sort Screenshots",
+    "title": "Done with it? Clear it out | OCR Search & Photo Cleaner | ShotInbox",
     "tags": [
-     "#OfflinePDFOCR",
-     "#Scan",
-     "#Text",
-     "#Recognition",
-     "#Receipt",
-     "#ScanToPro"
+     "#SortScreenshots",
+     "#Organizer",
+     "#Manager",
+     "#Duplicate",
+     "#Similar",
+     "#ShotInbox"
     ],
-    "caption": "Locked with Face ID\nScan to PDF in seconds\nPrivate Document & ID Scanner\nScanTo Pro: Offline PDF & OCR\nSearch “Offline PDF & OCR” on the App Store\nAlso on Google Play\n\n#OfflinePDFOCR #Scan #Text #Recognition #ScanToPro",
+    "caption": "Done with it? Clear it out\nSearch the text inside them\nOCR Search & Photo Cleaner\nShotInbox AI: Sort Screenshots\nSearch “Sort Screenshots” on the App Store\nAlso on Google Play\n\n#SortScreenshots #Organizer #Manager #Duplicate #ShotInbox",
     "button": "Get it on the App Store",
     "variant": "c",
-    "alt": "ScanTo Pro: Offline PDF & OCR — Locked with Face ID — Scan to PDF in seconds — Private Document & ID Scanner",
-    "store": "https://apps.apple.com/us/app/id6779977651?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.OfflineScannerPro&referrer=utm_source%3Dsocial%26utm_campaign%3Dscanto",
+    "alt": "ShotInbox AI: Sort Screenshots — Done with it? Clear it out — Search the text inside them — OCR Search & Photo Cleaner",
+    "store": "https://apps.apple.com/us/app/id6802166527?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ShotInbox&referrer=utm_source%3Dsocial%26utm_campaign%3Dshotinbox",
     "review": {
      "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6779977651?action=write-review"
+     "url": "https://apps.apple.com/app/id6802166527?action=write-review"
     },
     "keywords": [
-     "scan",
+     "organizer",
+     "manager",
+     "duplicate",
+     "similar",
      "text",
-     "recognition",
-     "receipt",
-     "password",
-     "encrypted"
+     "receipts"
     ],
-    "keyline": "Private Document & ID Scanner",
+    "keyline": "OCR Search & Photo Cleaner",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "bdb90d0a80a48d75",
+     "board": "f6c970e3cb08d22c",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "youtube": {
-     "title": "Locked with Face ID | ScanTo Pro #Shorts",
-     "description": "Locked with Face ID\nScan to PDF in seconds\nPrivate Document & ID Scanner\n\nScanTo Pro: Offline PDF & OCR\nApp Store: https://apps.apple.com/us/app/id6779977651?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.OfflineScannerPro&referrer=utm_source%3Dsocial%26utm_campaign%3Dscanto\nAlready using this app? Rate or review it on the App Store\nhttps://apps.apple.com/app/id6779977651?action=write-review\n\nscan · text · recognition · receipt · password · encrypted\n\n#Shorts #OfflinePDFOCR #ScanToPro",
+     "title": "Done with it? Clear it out | ShotInbox #Shorts",
+     "description": "Done with it? Clear it out\nSearch the text inside them\nOCR Search & Photo Cleaner\n\nShotInbox AI: Sort Screenshots\nApp Store: https://apps.apple.com/us/app/id6802166527?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ShotInbox&referrer=utm_source%3Dsocial%26utm_campaign%3Dshotinbox\nAlready using this app? Rate or review it on the App Store\nhttps://apps.apple.com/app/id6802166527?action=write-review\n\norganizer · manager · duplicate · similar · text · receipts\n\n#Shorts #SortScreenshots #ShotInbox",
      "tags": [
-      "scan",
+      "organizer",
+      "manager",
+      "duplicate",
+      "similar",
       "text",
-      "recognition",
-      "receipt",
-      "password",
-      "encrypted",
-      "OfflinePDFOCR",
-      "ScanToPro",
-      "ScanTo Pro"
+      "receipts",
+      "SortScreenshots",
+      "ShotInbox"
      ]
     },
     "slot": 15
@@ -2108,52 +2149,77 @@
    },
    {
     "kind": "clip",
-    "key": "scanto/en",
+    "key": "shotinbox/en",
     "locale": "en",
-    "app": "scanto",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/jmy42w.mp4",
-    "hook": "Locked with Face ID",
-    "name": "ScanTo Pro: Offline PDF & OCR",
-    "title": "Locked with Face ID | Private Document & ID Scanner | ScanTo Pro",
+    "app": "shotinbox",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/8wjz03.mp4",
+    "hook": "Done with it? Clear it out",
+    "name": "ShotInbox AI: Sort Screenshots",
+    "title": "Done with it? Clear it out | OCR Search & Photo Cleaner | ShotInbox",
     "tags": [
-     "#OfflinePDFOCR",
-     "#Scan",
-     "#Text",
-     "#Recognition",
-     "#Receipt",
-     "#ScanToPro"
+     "#SortScreenshots",
+     "#Organizer",
+     "#Manager",
+     "#Duplicate",
+     "#Similar",
+     "#ShotInbox"
     ],
-    "caption": "Locked with Face ID\nScan to PDF in seconds\nPrivate Document & ID Scanner\nScanTo Pro: Offline PDF & OCR\nSearch “Offline PDF & OCR” on the App Store\nAlso on Google Play\n\n#OfflinePDFOCR #Scan #Text #Recognition #ScanToPro",
+    "caption": "Done with it? Clear it out\nSearch the text inside them\nOCR Search & Photo Cleaner\nShotInbox AI: Sort Screenshots\nSearch “Sort Screenshots” on the App Store\nAlso on Google Play\n\n#SortScreenshots #Organizer #Manager #Duplicate #ShotInbox",
     "button": "Get it on the App Store",
     "variant": "c",
-    "alt": "ScanTo Pro: Offline PDF & OCR — Locked with Face ID — Scan to PDF in seconds — Private Document & ID Scanner",
-    "store": "https://apps.apple.com/us/app/id6779977651?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.OfflineScannerPro&referrer=utm_source%3Dsocial%26utm_campaign%3Dscanto",
+    "alt": "ShotInbox AI: Sort Screenshots — Done with it? Clear it out — Search the text inside them — OCR Search & Photo Cleaner",
+    "store": "https://apps.apple.com/us/app/id6802166527?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ShotInbox&referrer=utm_source%3Dsocial%26utm_campaign%3Dshotinbox",
     "review": {
      "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6779977651?action=write-review"
+     "url": "https://apps.apple.com/app/id6802166527?action=write-review"
     },
     "keywords": [
-     "scan",
+     "organizer",
+     "manager",
+     "duplicate",
+     "similar",
      "text",
-     "recognition",
-     "receipt",
-     "password",
-     "encrypted"
+     "receipts"
     ],
-    "keyline": "Private Document & ID Scanner",
+    "keyline": "OCR Search & Photo Cleaner",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "bdb90d0a80a48d75",
+     "board": "f6c970e3cb08d22c",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "Locked with Face ID\nScan to PDF in seconds\nPrivate Document & ID Scanner\nScanTo Pro: Offline PDF & OCR\nSearch “Offline PDF & OCR” on the App Store\nAlso on Google Play\n\n#OfflinePDFOCR #Scan #Text #Recognition #ScanToPro\n\nGet it on the App Store: https://apps.apple.com/us/app/id6779977651?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.OfflineScannerPro&referrer=utm_source%3Dsocial%26utm_campaign%3Dscanto",
-     "link": "https://apps.apple.com/us/app/id6779977651?pt=118326163&ct=social&mt=8"
+     "description": "Done with it? Clear it out\nSearch the text inside them\nOCR Search & Photo Cleaner\nShotInbox AI: Sort Screenshots\nSearch “Sort Screenshots” on the App Store\nAlso on Google Play\n\n#SortScreenshots #Organizer #Manager #Duplicate #ShotInbox\n\nGet it on the App Store: https://apps.apple.com/us/app/id6802166527?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ShotInbox&referrer=utm_source%3Dsocial%26utm_campaign%3Dshotinbox",
+     "link": "https://apps.apple.com/us/app/id6802166527?pt=118326163&ct=social&mt=8"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "card/gsat2027/2026-11-01",
+    "locale": "zh-Hant",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/countdown-cards/card-20261101.jpg",
+    "caption": "116 學測 倒數 82 天\n今天也前進一步\n\nApp Store／Google Play 搜尋「CountDaysNow」\n\n#倒數日 #倒數計時 #紀念日 #生日 #還有幾天",
+    "title": "116 學測 倒數 82 天",
+    "alt": "CountDaysNow — 116 學測 倒數 82 天 — 今天也前進一步 — App Store／Google Play 搜尋「CountDaysNow」 — 倒數日 · 倒數計時 · 紀念日",
+    "name": "CountDaysNow",
+    "hook": "116 學測 倒數 82 天",
+    "tags": [
+     "#倒數日",
+     "#倒數計時",
+     "#紀念日",
+     "#生日",
+     "#還有幾天"
+    ],
+    "button": "在 App Store 下載",
+    "store": "https://apps.apple.com/tw/app/id6807079789?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
+    "pinterest": {
+     "description": "116 學測 倒數 82 天\n今天也前進一步\n\nApp Store／Google Play 搜尋「CountDaysNow」\n\n#倒數日 #倒數計時 #紀念日 #生日 #還有幾天\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6807079789?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
+     "link": "https://apps.apple.com/tw/app/id6807079789?pt=118326163&ct=social&mt=8"
+    }
    },
    {
     "kind": "card",
@@ -6101,49 +6167,49 @@
    },
    {
     "kind": "clip",
-    "key": "scanto/en",
+    "key": "shotinbox/en",
     "locale": "en",
-    "app": "scanto",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/jmy42w.mp4",
-    "hook": "Locked with Face ID",
-    "name": "ScanTo Pro: Offline PDF & OCR",
-    "title": "Locked with Face ID | Private Document & ID Scanner | ScanTo Pro",
+    "app": "shotinbox",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/8wjz03.mp4",
+    "hook": "Done with it? Clear it out",
+    "name": "ShotInbox AI: Sort Screenshots",
+    "title": "Done with it? Clear it out | OCR Search & Photo Cleaner | ShotInbox",
     "tags": [
-     "#OfflinePDFOCR",
-     "#Scan",
-     "#Text",
-     "#Recognition",
-     "#Receipt",
-     "#ScanToPro"
+     "#SortScreenshots",
+     "#Organizer",
+     "#Manager",
+     "#Duplicate",
+     "#Similar",
+     "#ShotInbox"
     ],
-    "caption": "Locked with Face ID\nScan to PDF in seconds\nPrivate Document & ID Scanner\nScanTo Pro: Offline PDF & OCR\nSearch “Offline PDF & OCR” on the App Store\nAlso on Google Play\n\n#OfflinePDFOCR #Scan #Text #Recognition #ScanToPro",
+    "caption": "Done with it? Clear it out\nSearch the text inside them\nOCR Search & Photo Cleaner\nShotInbox AI: Sort Screenshots\nSearch “Sort Screenshots” on the App Store\nAlso on Google Play\n\n#SortScreenshots #Organizer #Manager #Duplicate #ShotInbox",
     "button": "Get it on the App Store",
     "variant": "c",
-    "alt": "ScanTo Pro: Offline PDF & OCR — Locked with Face ID — Scan to PDF in seconds — Private Document & ID Scanner",
-    "store": "https://apps.apple.com/us/app/id6779977651?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.OfflineScannerPro&referrer=utm_source%3Dsocial%26utm_campaign%3Dscanto",
+    "alt": "ShotInbox AI: Sort Screenshots — Done with it? Clear it out — Search the text inside them — OCR Search & Photo Cleaner",
+    "store": "https://apps.apple.com/us/app/id6802166527?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ShotInbox&referrer=utm_source%3Dsocial%26utm_campaign%3Dshotinbox",
     "review": {
      "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6779977651?action=write-review"
+     "url": "https://apps.apple.com/app/id6802166527?action=write-review"
     },
     "keywords": [
-     "scan",
+     "organizer",
+     "manager",
+     "duplicate",
+     "similar",
      "text",
-     "recognition",
-     "receipt",
-     "password",
-     "encrypted"
+     "receipts"
     ],
-    "keyline": "Private Document & ID Scanner",
+    "keyline": "OCR Search & Photo Cleaner",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "bdb90d0a80a48d75",
+     "board": "f6c970e3cb08d22c",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "Locked with Face ID\nScan to PDF in seconds\nPrivate Document & ID Scanner\nScanTo Pro: Offline PDF & OCR\nSearch “Offline PDF & OCR” on the App Store\nAlso on Google Play\n\n#OfflinePDFOCR #Scan #Text #Recognition #ScanToPro\n\nGet it on the App Store: https://apps.apple.com/us/app/id6779977651?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.OfflineScannerPro&referrer=utm_source%3Dsocial%26utm_campaign%3Dscanto"
+     "caption": "Done with it? Clear it out\nSearch the text inside them\nOCR Search & Photo Cleaner\nShotInbox AI: Sort Screenshots\nSearch “Sort Screenshots” on the App Store\nAlso on Google Play\n\n#SortScreenshots #Organizer #Manager #Duplicate #ShotInbox\n\nGet it on the App Store: https://apps.apple.com/us/app/id6802166527?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ShotInbox&referrer=utm_source%3Dsocial%26utm_campaign%3Dshotinbox"
     },
     "slot": 15
    }

@@ -23,6 +23,7 @@ LAUNCH_CANDIDATES = {
     "studydown": ("6807335593", "Studydown"),
     "claudeusagemini": ("6818607603", "UsageNow"),
     "duowallpaperstudio": ("6824946559", "Foldable Wallpaper Studio"),
+    "foldparty": ("6829184924", "Meow Party"),
 }
 FIELDS = {"query", "guide_title", "triggers", "persona", "lead", "paras",
           "look", "steps", "fits", "faq"}
@@ -49,6 +50,9 @@ FORBIDDEN = {
                            "unlimited free", "forever", "guaranteed",
                            "changes your wallpaper automatically",
                            "subscription required"),
+    "foldparty": ("online multiplayer", "android", "vibration", "haptic",
+                  "free to play", "unlimited free", "subscription required",
+                  "1000 games", "iphone duo"),
 }
 REQUIRED = {
     "dbhalo": ("not a certified",),
@@ -62,6 +66,8 @@ REQUIRED = {
     "easyam": ("alarmkit", "workday", "offline", "no subscription"),
     "duowallpaperstudio": ("iphone duo", "one-time", "no subscription",
                            "add-only", "does not allow apps to change your wallpaper"),
+    "foldparty": ("200", "one phone", "offline", "regular iphone",
+                  "no in-app purchases", "one-time paid download"),
 }
 
 

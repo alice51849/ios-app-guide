@@ -1,9 +1,9 @@
 {
  "schema": "lumi.android-live-snapshot/v1",
  "source": "AndroidPlay android_live_scan (Play page HTTP 200 + publish LIVE)",
- "source_generated": "2026-10-31T10:46:26+0800",
- "count": 55,
- "content_sha256": "d562ed5eedd91a16c6605b608e21763dc665b9bfb357ae594962f7661d20b439",
+ "source_generated": "2026-11-01T15:56:42+0800",
+ "count": 56,
+ "content_sha256": "df0891ce480f3c38e9b73ae9dd9723df781a5c99411da83d7d9b1c604c08ed0c",
  "apps": {
   "aibriefpack": {
    "ios_app_id": "6791658210",
@@ -227,6 +227,27 @@
     "zh-TW": {
      "title": "dB Halo：分貝計與聲級計",
      "short_description": "分貝計與噪音測量：即時看懂環境有多吵，還有頻譜分析與睡眠日誌"
+    }
+   }
+  },
+  "duowallpaperstudio": {
+   "ios_app_id": "6824946559",
+   "ios_name": "Foldable Wallpaper Studio",
+   "android_folder": "54_DuoWallpaperStudio",
+   "package": "com.alice51849.DuoWallpaperStudio",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.DuoWallpaperStudio",
+   "paid": false,
+   "first_seen": "2026-11-01T15:56:42+0800",
+   "launch_wave": "new",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "Foldable Wallpaper Studio",
+     "short_description": "Dual screen wallpaper pairs for fold & flip phones: cover + inner, 300+ sets"
+    },
+    "zh-TW": {
+     "title": "摺疊手機桌布 - 雙螢幕成對桌布",
+     "short_description": "摺疊手機桌布：翻蓋與摺疊手機外螢幕＋內螢幕成對雙螢幕桌布，300 組以上"
     }
    }
   },

@@ -6,130 +6,130 @@
 # JSON catalog: https://open.cait518.cc/ios-app-guide/data/verified-ios-app-finder-catalog.json
 
 User-agent: *
-Allow: /
 Disallow: /.git/
 Disallow: /.github/
 Disallow: /_engine/
 Disallow: /ios-app-guide/_engine/
+Allow: /
 
 User-agent: OAI-SearchBot
-Allow: /
 Disallow: /.git/
 Disallow: /.github/
 Disallow: /_engine/
 Disallow: /ios-app-guide/_engine/
+Allow: /
 
 User-agent: PerplexityBot
-Allow: /
 Disallow: /.git/
 Disallow: /.github/
 Disallow: /_engine/
 Disallow: /ios-app-guide/_engine/
+Allow: /
 
 User-agent: Applebot
-Allow: /
 Disallow: /.git/
 Disallow: /.github/
 Disallow: /_engine/
 Disallow: /ios-app-guide/_engine/
+Allow: /
 
 User-agent: Googlebot
-Allow: /
 Disallow: /.git/
 Disallow: /.github/
 Disallow: /_engine/
 Disallow: /ios-app-guide/_engine/
+Allow: /
 
 User-agent: Bingbot
-Allow: /
 Disallow: /.git/
 Disallow: /.github/
 Disallow: /_engine/
 Disallow: /ios-app-guide/_engine/
+Allow: /
 
 User-agent: ChatGPT-User
-Allow: /
 Disallow: /.git/
 Disallow: /.github/
 Disallow: /_engine/
 Disallow: /ios-app-guide/_engine/
+Allow: /
 
 User-agent: Perplexity-User
-Allow: /
 Disallow: /.git/
 Disallow: /.github/
 Disallow: /_engine/
 Disallow: /ios-app-guide/_engine/
+Allow: /
 
 User-agent: Claude-User
-Allow: /
 Disallow: /.git/
 Disallow: /.github/
 Disallow: /_engine/
 Disallow: /ios-app-guide/_engine/
+Allow: /
 
 User-agent: Claude-SearchBot
-Allow: /
 Disallow: /.git/
 Disallow: /.github/
 Disallow: /_engine/
 Disallow: /ios-app-guide/_engine/
+Allow: /
 
 User-agent: Claude-Web
-Allow: /
 Disallow: /.git/
 Disallow: /.github/
 Disallow: /_engine/
 Disallow: /ios-app-guide/_engine/
+Allow: /
 
 User-agent: anthropic-ai
-Allow: /
 Disallow: /.git/
 Disallow: /.github/
 Disallow: /_engine/
 Disallow: /ios-app-guide/_engine/
+Allow: /
 
 User-agent: BraveSearchBot
-Allow: /
 Disallow: /.git/
 Disallow: /.github/
 Disallow: /_engine/
 Disallow: /ios-app-guide/_engine/
+Allow: /
 
 User-agent: DuckDuckBot
-Allow: /
 Disallow: /.git/
 Disallow: /.github/
 Disallow: /_engine/
 Disallow: /ios-app-guide/_engine/
+Allow: /
 
 User-agent: cohere-ai
-Allow: /
 Disallow: /.git/
 Disallow: /.github/
 Disallow: /_engine/
 Disallow: /ios-app-guide/_engine/
+Allow: /
 
 User-agent: YandexBot
-Allow: /
 Disallow: /.git/
 Disallow: /.github/
 Disallow: /_engine/
 Disallow: /ios-app-guide/_engine/
+Allow: /
 
 User-agent: PetalBot
-Allow: /
 Disallow: /.git/
 Disallow: /.github/
 Disallow: /_engine/
 Disallow: /ios-app-guide/_engine/
+Allow: /
 
 User-agent: Google-Extended
-Allow: /
 Disallow: /.git/
 Disallow: /.github/
 Disallow: /_engine/
 Disallow: /ios-app-guide/_engine/
+Allow: /
 
 User-agent: Amazonbot
 Disallow: /

@@ -1,9 +1,9 @@
 {
  "schema": "lumi.android-live-snapshot/v1",
  "source": "AndroidPlay android_live_scan (Play page HTTP 200 + publish LIVE)",
- "source_generated": "2026-11-01T15:56:42+0800",
+ "source_generated": "2026-11-02T23:29:26+0800",
  "count": 56,
- "content_sha256": "df0891ce480f3c38e9b73ae9dd9723df781a5c99411da83d7d9b1c604c08ed0c",
+ "content_sha256": "c9125adc3414f4b86919a430f6626218a3f42dc6eaaa4dbd67c45972af79eb2f",
  "apps": {
   "aibriefpack": {
    "ios_app_id": "6791658210",
@@ -724,11 +724,11 @@
    "copy": {
     "en-US": {
      "title": "OnePage PPT: AI Slide Maker",
-     "short_description": "AI slide maker: turn notes, PDFs and photos into one presentation-ready slide"
+     "short_description": "AI slide maker: notes, PDFs, photos & tables into one presentation-ready slide"
     },
     "zh-TW": {
      "title": "OnePage PPT: AI 一頁簡報",
-     "short_description": "筆記、螢幕截圖、PDF秒變投影片"
+     "short_description": "筆記、貼上文字、CSV 表格一鍵變成一頁簡報投影片：自動抓重點、挑對呈現方式"
     }
    }
   },

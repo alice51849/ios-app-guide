@@ -1630,7 +1630,8 @@ class TelegramDailyCatalogTests(unittest.TestCase):
         android = common.android_apps()
         on_play = [app for app in self.apps if app.app_id in android]
         self.assertTrue(on_play)
-        self.assertTrue([app for app in self.apps if app.app_id not in android])
+        # Every public App may be on Google Play (2026-11 onward); the iOS-only branch is then
+        # exercised by the dedicated test below with one App taken off the snapshot.
         combined = "\n".join(message.text for message in messages)
         play_lines = [
             line.strip() for line in combined.splitlines()
@@ -1649,6 +1650,24 @@ class TelegramDailyCatalogTests(unittest.TestCase):
                 store = app.appstore_url(campaign)
                 self.assertIn(f"  {store}\n  {expected}", combined)
         self.assertNotIn("lumi_social", combined)
+
+    def test_catalog_leaves_the_play_line_out_for_an_ios_only_app(self):
+        android = dict(common.android_apps())
+        dropped = next(app for app in self.apps if app.app_id in android)
+        dropped_play = android.pop(dropped.app_id)["play_url"]
+        with mock.patch.object(common, "_ANDROID", android):
+            messages = portfolio_daily.telegram_messages(
+                self.apps, today=dt.date(2026, 10, 16)
+            )
+            combined = "\n".join(message.text for message in messages)
+            play_lines = [
+                line for line in combined.splitlines()
+                if line.strip().startswith("Google Play: ")
+            ]
+            on_play = [app for app in self.apps if app.app_id in android]
+            self.assertEqual(len(on_play), len(play_lines))
+            self.assertIn(dropped.appstore_url(portfolio_daily.PLATFORM_CAMPAIGNS["telegram"]), combined)
+            self.assertNotIn(dropped_play + "&", combined)
 
     def test_catalog_refuses_a_missing_play_link(self):
         messages = portfolio_daily.telegram_messages(
@@ -2248,6 +2267,12 @@ class TelegramCampaignAndPaidLocaleTest(unittest.TestCase):
 _POOL = []
 
 
+def _ios_only_public_apps():
+    """Public Apps with no live Google Play page in the snapshot (none once the whole catalog is on Play)."""
+    android = common.android_apps()
+    return [app for app in portfolio_daily.load_public_apps() if app.app_id not in android]
+
+
 def _shared_pool():
     """telegram_post.load_pool() once for the link-coverage classes (it reads the whole intent catalog)."""
     if not _POOL:
@@ -2677,7 +2702,9 @@ class ThreadsPoolLinkCoverageTests(unittest.TestCase):
             if problems:
                 bad.append((item.get("app"), item.get("lang"), problems))
         self.assertEqual([], bad[:10])
-        self.assertTrue(0 < android < len(self.pool), "the pool must hold Android and iOS-only apps")
+        self.assertTrue(0 < android <= len(self.pool), "the pool must hold Android apps")
+        if _ios_only_public_apps():
+            self.assertLess(android, len(self.pool), "iOS-only apps must reach the pool too")
 
     def test_publisher_intent_bodies_stay_link_free_and_fit(self):
         bad = [(item["app"], item["lang"]) for item in self.pool
@@ -2809,7 +2836,9 @@ class TelegramPoolLinkCoverageTests(unittest.TestCase):
         self.assertEqual([], bad[:10], f"{len(bad)} of {len(self.pool)} pool texts miss the download link")
         self.assertIn("publisher_intent_catalog", sources)
         self.assertGreater(len(sources), 1, "telegram_posts.json items are part of the pool too")
-        self.assertTrue(0 < android < len(self.pool), "the pool must hold Android and iOS-only apps")
+        self.assertTrue(0 < android <= len(self.pool), "the pool must hold Android apps")
+        if _ios_only_public_apps():
+            self.assertLess(android, len(self.pool), "iOS-only apps must reach the pool too")
 
     def test_every_item_of_telegram_posts_json_that_can_post_has_its_link(self):
         with open(os.path.join(HERE, "telegram_posts.json"), encoding="utf-8") as handle:

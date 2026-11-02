@@ -1,0 +1,55 @@
+{
+  "schema": "lumi.app-image-gallery/v1",
+  "note": "雙螢幕桌布預覽圖試點（reports/strategy_debate/2026-10-31_gemini_extended.md 題 2）：只放 3 個既有語系頁、只用應用程式內既有桌布（outreach/press/duo_pairs_pack，原樣裁切），不宣稱沒有的功能、文字不出現價格／免費／Pro。判讀 11-14 初讀、11-21 定案；停損：圖片曝光 <50 或 duo_img 點擊 <5 就移除本檔該款並重跑 app_hook_clips.py。",
+  "apps": {
+    "duowallpaperstudio": {
+      "app_id": "6824946559",
+      "campaign": "duo_img",
+      "asset_dir": "assets/app-gallery/duowallpaperstudio",
+      "locales": ["en-US", "ko", "de-DE"],
+      "copy": {
+        "en-US": {
+          "heading": "Wallpaper pairs from the app: cover screen and inner screen",
+          "intro": "Each pair is cut from one original artwork: a close-up for the small cover screen and the whole scene for the large inner screen.",
+          "cover": "cover screen, close-up",
+          "inner": "inner screen, full scene",
+          "app_store": "Open Foldable Wallpaper Studio on the App Store",
+          "play": "Get it on Google Play"
+        },
+        "ko": {
+          "heading": "앱 속 배경화면 세트: 커버 화면과 메인 화면",
+          "intro": "각 세트는 하나의 원본 작품에서 잘라 냈습니다. 작은 커버 화면에는 클로즈업, 큰 메인 화면에는 전체 장면이 들어갑니다.",
+          "cover": "커버 화면, 클로즈업",
+          "inner": "메인 화면, 전체 장면",
+          "app_store": "App Store에서 폴더블 배경화면 - 커버·메인 세트 열기",
+          "play": "Google Play에서 받기"
+        },
+        "de-DE": {
+          "heading": "Hintergrundpaare aus der App: Außen- und Innendisplay",
+          "intro": "Jedes Paar stammt aus einem Originalmotiv: eine Nahaufnahme für das kleine Außendisplay und die ganze Szene für das große Innendisplay.",
+          "cover": "Außendisplay, Nahaufnahme",
+          "inner": "Innendisplay, ganze Szene",
+          "app_store": "Foldable Hintergrundbilder im App Store öffnen",
+          "play": "Bei Google Play laden"
+        }
+      },
+      "pairs": [
+        {
+          "name": {"en-US": "Summer Railway", "ko": "여름 철길", "de-DE": "Sommerbahn"},
+          "cover": {"file": "pair1_summer-railway_outer_1398x2034.jpg", "width": 1398, "height": 2034},
+          "inner": {"file": "pair1_summer-railway_inner_2853x2007.jpg", "width": 2853, "height": 2007}
+        },
+        {
+          "name": {"en-US": "Glacier Aurora", "ko": "빙하 오로라", "de-DE": "Gletscher-Polarlicht"},
+          "cover": {"file": "pair2_glacier-aurora_outer_1398x2034.jpg", "width": 1398, "height": 2034},
+          "inner": {"file": "pair2_glacier-aurora_inner_2853x2007.jpg", "width": 2853, "height": 2007}
+        },
+        {
+          "name": {"en-US": "Clay Puppy", "ko": "점토 강아지", "de-DE": "Knetwelpe"},
+          "cover": {"file": "pair3_clay-puppy_outer_1398x2034.jpg", "width": 1398, "height": 2034},
+          "inner": {"file": "pair3_clay-puppy_inner_2853x2007.jpg", "width": 2853, "height": 2007}
+        }
+      ]
+    }
+  }
+}

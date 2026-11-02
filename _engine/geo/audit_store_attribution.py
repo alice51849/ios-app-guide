@@ -561,7 +561,7 @@ def validate_reference(ref: Reference, *, provider: str,
     campaign = dict(urllib.parse.parse_qsl(urllib.parse.urlsplit(normalized).query))["ct"]
     from gen_store_attribution import (
         ATOMIC_CAMPAIGNS, BUCKETS, PROTECTED_CAMPAIGNS, TOKEN_PREFIX,
-        atomic_locale_campaigns,
+        app_bound_campaign, atomic_locale_campaigns,
     )
 
     allowed = {TOKEN_PREFIX + bucket for bucket in BUCKETS} | PROTECTED_CAMPAIGNS
@@ -574,6 +574,9 @@ def validate_reference(ref: Reference, *, provider: str,
     app_campaign = _app_result_campaign(normalized)
     if app_campaign is not None:
         allowed.add(app_campaign)
+    linked = APP_STORE_PATH_RE.fullmatch(urllib.parse.urlsplit(normalized).path)
+    if app_bound_campaign(campaign, linked["app_id"] if linked else None):
+        allowed.add(campaign)
     if campaign not in allowed and gw_campaign_problems(campaign, normalized) == []:
         # Intent-page gw codes (gw_campaign.py): app x storefront x keyword group.
         # Only a code whose app is the linked app and whose market is the link's

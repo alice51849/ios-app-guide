@@ -1373,6 +1373,22 @@ class AtomicCampaignTaxonomyTests(unittest.TestCase):
             # Control: another App's result-image campaign on this App's link.
             self.campaign(attribution.atomic_app_campaign(other), app_id=app_id)
 
+    def test_app_bound_campaign_is_kept_and_allowed_only_on_its_own_app(self):
+        own = LIVE_APPS["duowallpaperstudio"]
+        self.campaign("duo_img", locale="ko", app_id=own)  # app_image_gallery.py
+        with self.assertRaises(audit.AttributionError):
+            self.campaign("duo_img", app_id=APP_ID)
+        kept = attribution.final_store_url(
+            store_url(app_id=own, campaign="duo_img"), "geo_pick", PROVIDER,
+            locale="en-US", availability=AVAILABILITY, app_id=own,
+        )
+        self.assertIn("ct=duo_img", kept)
+        restamped = attribution.final_store_url(
+            store_url(app_id=APP_ID, campaign="duo_img"), "geo_pick", PROVIDER,
+            locale="en-US", availability=AVAILABILITY, app_id=APP_ID,
+        )
+        self.assertIn("ct=geo_pick", restamped)
+
     def test_campaigns_outside_the_enumerated_patterns_still_fail(self):
         for campaign, locale in (
             ("iag_oembed", "en-US"),           # prefix alone is not a campaign

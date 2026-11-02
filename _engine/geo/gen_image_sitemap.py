@@ -448,6 +448,7 @@ def collect(
     *,
     include_hubs: bool = False,
     include_answers: bool = False,
+    include_galleries: bool = False,
 ) -> list[tuple[str, str]]:
     stories = pages / "stories"
     if not stories.is_dir():
@@ -540,6 +541,20 @@ def collect(
             seen_pages.add(page_url)
             entries.append((page_url, image_url))
 
+    if include_galleries:
+        # Owned in-app wallpaper previews (app_image_gallery.py): several images
+        # under one page, listed in data order. Read from the data, not the page,
+        # because the gallery block is re-injected after this step in geo-daily.
+        import app_image_gallery
+
+        for page_url, image_urls in app_image_gallery.page_entries(pages, site):
+            if page_url in seen_pages:
+                raise ValueError(f"Duplicate Image Sitemap page URL: {page_url}")
+            for image_url in image_urls:
+                _owned_file(image_url, pages, site)
+                entries.append((page_url, image_url))
+            seen_pages.add(page_url)
+
     if not entries:
         raise ValueError("No canonical Web Story posters were found")
     return entries
@@ -549,9 +564,14 @@ def render(entries: list[tuple[str, str]]) -> str:
     ET.register_namespace("", SITEMAP_NS)
     ET.register_namespace("image", IMAGE_NS)
     root = ET.Element(f"{{{SITEMAP_NS}}}urlset")
+    url = None
+    previous = None
     for page_url, image_url in entries:
-        url = ET.SubElement(root, f"{{{SITEMAP_NS}}}url")
-        ET.SubElement(url, f"{{{SITEMAP_NS}}}loc").text = page_url
+        # Consecutive entries of one page share a single <url> (gallery pages).
+        if page_url != previous:
+            url = ET.SubElement(root, f"{{{SITEMAP_NS}}}url")
+            ET.SubElement(url, f"{{{SITEMAP_NS}}}loc").text = page_url
+            previous = page_url
         image = ET.SubElement(url, f"{{{IMAGE_NS}}}image")
         ET.SubElement(image, f"{{{IMAGE_NS}}}loc").text = image_url
     ET.indent(root, space="  ")
@@ -574,6 +594,7 @@ def generate(pages: Path = PAGES, site: str = SITE) -> tuple[int, bool]:
         site,
         include_hubs=True,
         include_answers=True,
+        include_galleries=True,
     )
     changed = _write_if_changed(pages / "sitemap_images.xml", render(entries))
     return len(entries), changed

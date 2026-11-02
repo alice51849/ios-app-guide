@@ -364,6 +364,16 @@ def build(pages: Path = PAGES, *, today: str | None = None,
         f"pages={len(records)} sitemap={indexed} changed={changed}",
         flush=True,
     )
+    # Owned wallpaper previews (geo/data/app_image_gallery.json) sit right after
+    # the clip, so every pass that re-injects the clip after a page rebuild
+    # re-injects them too.
+    import app_image_gallery
+
+    gallery = app_image_gallery.build(pages, SITE)
+    print(
+        "APP_IMAGE_GALLERY " + " ".join(f"{k}={v}" for k, v in gallery.items()),
+        flush=True,
+    )
     return records
 
 

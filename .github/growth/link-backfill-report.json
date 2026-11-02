@@ -1,12 +1,12 @@
 {
- "generated": "2026-11-01T19:46:57Z",
+ "generated": "2026-11-02T00:50:59Z",
  "mode": "apply",
  "counts": {
   "ok_reply": 36,
   "unknown_app": 47,
-  "ok_backfilled_earlier": 21,
+  "ok_backfilled_earlier": 23,
+  "ok_store_only": 707,
   "backfilled": 2,
-  "ok_store_only": 709,
   "ok_bio_link": 68,
   "ok_caption": 4,
   "taken_down": 4,
@@ -587,16 +587,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdsG9vPAYxS",
    "date": "2026-09-24",
    "app": "unblurry",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "Unblur photos in HD. Make it crystal clear. Unblurry Pro: Unblur & HD Leaving the link here: https://apps.apple.com/us/app/id6782275018?pt=1",
    "why": "url+brand",
    "ios_id": "6782275018",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "17975671794139469",
-   "at": "2026-11-01T19:44:13Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",
@@ -604,16 +599,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdrDbDVn-r_",
    "date": "2026-09-24",
    "app": "tripplanet",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "Six confirmation emails, two screenshots, one note — and no actual plan. Our app, not a ranking: Travel quests and badges for ages 3–10. Par",
    "why": "url+brand",
    "ios_id": "6787193643",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "18216800446363528",
-   "at": "2026-11-01T19:44:13Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",
@@ -633,11 +623,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdotzMvH-RS",
    "date": "2026-09-23",
    "app": "shotinbox",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "本機截圖分類、OCR搜尋與時間軸。 最近 50 張截圖可免費使用完整核心流程。 ShotInbox AI: Sort Screenshots 順手附個連結: https://apps.apple.com/tw/app/id6802166527?pt=118326163&ct=th",
    "why": "url+brand",
    "ios_id": "6802166527",
-   "locale": "zh-Hant"
+   "locale": "zh-Hant",
+   "own_replies": [],
+   "comment_id": "18633419464033014",
+   "at": "2026-11-02T00:48:22Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -645,11 +640,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdpgkZkn0ka",
    "date": "2026-09-23",
    "app": "maskmyfile",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "分享前遮蔽個資與私密資訊。 安全分享,同時保留有用的脈絡。Mask My File 會在你送出檔案前找出私密資訊,永久遮蔽後,再重新開啟並驗證輸出的新檔案,確認無誤才顯示 Private Ready。 Mask My File：分享前移除個資 App Store 上找得到: ht",
    "why": "url+brand",
    "ios_id": "6792850916",
-   "locale": "zh-Hant"
+   "locale": "zh-Hant",
+   "own_replies": [],
+   "comment_id": "18032277050685852",
+   "at": "2026-11-02T00:48:22Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",

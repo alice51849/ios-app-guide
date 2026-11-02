@@ -183,6 +183,16 @@ SECTION_BUCKETS = {
 # stories/ directories are skipped anyway, this is the belt to that braces.
 STORY_CAMPAIGN = "iag_story"
 PROTECTED_CAMPAIGNS = frozenset({STORY_CAMPAIGN})
+# Campaigns a generator mints for exactly one App: kept on that App's links
+# only (any other App's link is re-stamped, and the audit rejects it there).
+# app_image_gallery.py: the Foldable Wallpaper Studio preview-image pilot
+# (reports/strategy_debate/2026-10-31_gemini_extended.md, topic 2).
+APP_BOUND_CAMPAIGNS = {"duo_img": "6824946559"}
+
+
+def app_bound_campaign(campaign: str | None, app_id: str | None) -> bool:
+    """True when ``campaign`` is a single-App campaign owned by ``app_id``."""
+    return bool(campaign) and app_id is not None and APP_BOUND_CAMPAIGNS.get(campaign) == app_id
 
 # Publisher-owned atomic endpoints.  This stamping pass only rewrites *.html,
 # so the JSON/JSON-LD collections below keep the campaign their own generator
@@ -401,7 +411,7 @@ def final_store_url(
         return None
     url = align_storefront(url, locale, availability)
     existing = existing_campaign(url)
-    if existing in PROTECTED_CAMPAIGNS:
+    if existing in PROTECTED_CAMPAIGNS or app_bound_campaign(existing, app_id):
         campaign = existing
     else:
         # Intent pages that declare a keyword group (gw_campaign.META_NAME) get

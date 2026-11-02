@@ -1,27 +1,28 @@
 {
-  "updated_at": "2026-11-01T05:50:02Z",
+  "updated_at": "2026-11-02T05:49:23Z",
   "note": "Insights of our own IG / Threads posts by .github/scripts/post_performance.py. score = views + 3*likes + 5*replies + 8*(saves+shares+reposts). boost = best apps, read by 00_GrowthEngine shorts/scripts/schedule_posts.py.",
   "sources": {
-    "instagram": "ok: 39 posts",
-    "threads": "ok: 12 posts"
+    "instagram": "ok: 38 posts",
+    "threads": "ok: 11 posts"
   },
   "boost": [
     "cvdesk",
     "mochi_suneung",
     "wifiaidlite",
-    "onepageppt",
-    "duowallpaperstudio"
+    "duowallpaperstudio",
+    "gmoney"
   ],
   "demote": [
+    "lumimission",
     "moneytag",
     "mochidonestamp",
     "wordmatelite",
-    "gmoney",
     "aibriefpack"
   ],
   "hook_winners": {
     "apps": {
       "claudeusagemini/en": "c",
+      "ledmovingtext/de": "b",
       "lumibopomofo/zh-Hant": "c",
       "lumibopomofo_b/zh-Hant": "c",
       "mochi/zh-Hant": "b"
@@ -55,10 +56,19 @@
   },
   "best_hours": {
     "instagram": {
+      "de": {
+        "hour": 13,
+        "avg_views": 1.5,
+        "posts": 5,
+        "hours": {
+          "7": 0.0,
+          "13": 1.5
+        }
+      },
       "en": {
         "hour": 18,
         "avg_views": 21.2,
-        "posts": 17,
+        "posts": 18,
         "hours": {
           "5": 0.0,
           "18": 21.2,
@@ -67,10 +77,10 @@
       },
       "ja": {
         "hour": 1,
-        "avg_views": 38.3,
+        "avg_views": 44.8,
         "posts": 10,
         "hours": {
-          "1": 38.3,
+          "1": 44.8,
           "5": 12.5
         }
       },
@@ -95,15 +105,16 @@
         "hours": {
           "1": 9.3,
           "8": 12.7,
-          "13": 9.5,
+          "13": 10.5,
           "16": 8.0
         }
       },
       "zh-Hant": {
-        "hour": 13,
-        "avg_views": 82.5,
-        "posts": 12,
+        "hour": 3,
+        "avg_views": 256.5,
+        "posts": 13,
         "hours": {
+          "3": 256.5,
           "6": 30.5,
           "13": 82.5,
           "16": 10.0,
@@ -140,20 +151,28 @@
         "avg_score": 97.7
       },
       {
+        "key": "duowallpaperstudio",
+        "posts": 1,
+        "views": 78,
+        "engagement": 2,
+        "score": 84,
+        "avg_score": 84.0
+      },
+      {
+        "key": "gmoney",
+        "posts": 2,
+        "views": 162,
+        "engagement": 1,
+        "score": 167,
+        "avg_score": 83.5
+      },
+      {
         "key": "onepageppt",
         "posts": 4,
         "views": 186,
         "engagement": 3,
         "score": 201,
         "avg_score": 50.2
-      },
-      {
-        "key": "duowallpaperstudio",
-        "posts": 1,
-        "views": 39,
-        "engagement": 2,
-        "score": 45,
-        "avg_score": 45.0
       },
       {
         "key": "unblurry",
@@ -204,6 +223,14 @@
         "avg_score": 20.7
       },
       {
+        "key": "mochi_b",
+        "posts": 4,
+        "views": 80,
+        "engagement": 0,
+        "score": 80,
+        "avg_score": 20.0
+      },
+      {
         "key": "lumibopomofo_b",
         "posts": 4,
         "views": 67,
@@ -214,10 +241,10 @@
       {
         "key": "countdaysnow",
         "posts": 1,
-        "views": 13,
+        "views": 14,
         "engagement": 1,
-        "score": 18,
-        "avg_score": 18.0
+        "score": 19,
+        "avg_score": 19.0
       },
       {
         "key": "mochi",
@@ -226,14 +253,6 @@
         "engagement": 1,
         "score": 128,
         "avg_score": 16.0
-      },
-      {
-        "key": "mochi_b",
-        "posts": 3,
-        "views": 47,
-        "engagement": 0,
-        "score": 47,
-        "avg_score": 15.7
       },
       {
         "key": "lumibopomofo",
@@ -260,7 +279,7 @@
         "avg_score": 14.0
       },
       {
-        "key": "stayclock",
+        "key": "dbhalo",
         "posts": 1,
         "views": 7,
         "engagement": 1,
@@ -268,12 +287,12 @@
         "avg_score": 12.0
       },
       {
-        "key": "dbhalo",
+        "key": "stayclock",
         "posts": 1,
-        "views": 6,
+        "views": 7,
         "engagement": 1,
-        "score": 11,
-        "avg_score": 11.0
+        "score": 12,
+        "avg_score": 12.0
       },
       {
         "key": "zipbox",
@@ -284,26 +303,18 @@
         "avg_score": 10.7
       },
       {
-        "key": "caldaily",
+        "key": "qrcodehalo",
         "posts": 1,
-        "views": 7,
-        "engagement": 0,
-        "score": 7,
-        "avg_score": 7.0
+        "views": 3,
+        "engagement": 1,
+        "score": 8,
+        "avg_score": 8.0
       },
       {
         "key": "tripplanet",
         "posts": 1,
         "views": 7,
         "engagement": 0,
-        "score": 7,
-        "avg_score": 7.0
-      },
-      {
-        "key": "qrcodehalo",
-        "posts": 1,
-        "views": 2,
-        "engagement": 1,
         "score": 7,
         "avg_score": 7.0
       },
@@ -356,6 +367,14 @@
         "avg_score": 4.0
       },
       {
+        "key": "caldaily",
+        "posts": 2,
+        "views": 7,
+        "engagement": 0,
+        "score": 7,
+        "avg_score": 3.5
+      },
+      {
         "key": "hourstaglite",
         "posts": 2,
         "views": 6,
@@ -381,11 +400,11 @@
       },
       {
         "key": "ledmovingtext",
-        "posts": 2,
+        "posts": 3,
         "views": 0,
         "engagement": 1,
         "score": 3,
-        "avg_score": 1.5
+        "avg_score": 1.0
       },
       {
         "key": "wordmate",
@@ -444,14 +463,6 @@
         "avg_score": 0.0
       },
       {
-        "key": "gmoney",
-        "posts": 1,
-        "views": 0,
-        "engagement": 0,
-        "score": 0,
-        "avg_score": 0.0
-      },
-      {
         "key": "aibriefpack",
         "posts": 1,
         "views": 0,
@@ -472,26 +483,26 @@
       {
         "key": "ja",
         "posts": 11,
-        "views": 303,
+        "views": 342,
         "engagement": 3,
-        "score": 314,
-        "avg_score": 28.5
+        "score": 353,
+        "avg_score": 32.1
       },
       {
         "key": "zh-Hant",
-        "posts": 40,
-        "views": 936,
-        "engagement": 13,
-        "score": 995,
-        "avg_score": 24.9
+        "posts": 41,
+        "views": 1098,
+        "engagement": 14,
+        "score": 1162,
+        "avg_score": 28.3
       },
       {
         "key": "en",
-        "posts": 32,
-        "views": 318,
+        "posts": 33,
+        "views": 321,
         "engagement": 8,
-        "score": 356,
-        "avg_score": 11.1
+        "score": 359,
+        "avg_score": 10.9
       },
       {
         "key": "cs",
@@ -504,18 +515,18 @@
       {
         "key": "pt-BR",
         "posts": 4,
-        "views": 15,
+        "views": 26,
         "engagement": 0,
-        "score": 15,
-        "avg_score": 3.8
+        "score": 26,
+        "avg_score": 6.5
       },
       {
         "key": "de",
-        "posts": 3,
-        "views": 3,
+        "posts": 5,
+        "views": 25,
         "engagement": 1,
-        "score": 6,
-        "avg_score": 2.0
+        "score": 28,
+        "avg_score": 5.6
       }
     ],
     "hooks": [
@@ -528,6 +539,16 @@
         "engagement": 2,
         "score": 359,
         "avg_score": 359.0
+      },
+      {
+        "app": "gmoney",
+        "locale": "zh-Hant",
+        "hook": "我是獨立開發者。每次出國回來都被問「這趟花了多少？」，我以前答不出來：日圓付錢、台幣想預算，兩邊從來沒對起來。所以做了 ",
+        "posts": 1,
+        "views": 162,
+        "engagement": 1,
+        "score": 167,
+        "avg_score": 167.0
       },
       {
         "app": "mochi_suneung",
@@ -590,6 +611,16 @@
         "avg_score": 110.0
       },
       {
+        "app": "duowallpaperstudio",
+        "locale": "ja",
+        "hook": "開けば 全景",
+        "posts": 1,
+        "views": 78,
+        "engagement": 2,
+        "score": 84,
+        "avg_score": 84.0
+      },
+      {
         "app": "unblurry",
         "locale": "en",
         "hook": "Unblur photos in HD.",
@@ -620,19 +651,9 @@
         "avg_score": 64.0
       },
       {
-        "app": "duowallpaperstudio",
-        "locale": "ja",
-        "hook": "開けば 全景",
-        "posts": 1,
-        "views": 39,
-        "engagement": 2,
-        "score": 45,
-        "avg_score": 45.0
-      },
-      {
         "app": "mochi_halloween",
         "locale": "en",
-        "hook": "Cute to do list for Halloween prep",
+        "hook": "",
         "posts": 1,
         "views": 44,
         "engagement": 0,
@@ -750,14 +771,24 @@
         "avg_score": 22.0
       },
       {
+        "app": "mochi_b",
+        "locale": "de",
+        "hook": "Studium, Arbeit, Einkauf an einem Ort",
+        "posts": 1,
+        "views": 22,
+        "engagement": 0,
+        "score": 22,
+        "avg_score": 22.0
+      },
+      {
         "app": "countdaysnow",
         "locale": "en",
         "hook": "Plan backwards from the dates that matter.",
         "posts": 1,
-        "views": 13,
+        "views": 14,
         "engagement": 1,
-        "score": 18,
-        "avg_score": 18.0
+        "score": 19,
+        "avg_score": 19.0
       },
       {
         "app": "lumibopomofo_b",
@@ -770,9 +801,19 @@
         "avg_score": 17.0
       },
       {
+        "app": "mochi_b",
+        "locale": "pt-BR",
+        "hook": "Tanta coisa pra fazer e você esquece?",
+        "posts": 1,
+        "views": 16,
+        "engagement": 0,
+        "score": 16,
+        "avg_score": 16.0
+      },
+      {
         "app": "mochi_halloween",
         "locale": "ja",
-        "hook": "仮装、お菓子、かぼちゃ…タップで完了",
+        "hook": "",
         "posts": 1,
         "views": 15,
         "engagement": 0,
@@ -840,6 +881,16 @@
         "avg_score": 12.0
       },
       {
+        "app": "dbhalo",
+        "locale": "en",
+        "hook": "Spectrum, Dose & Sleep Journal.",
+        "posts": 1,
+        "views": 7,
+        "engagement": 1,
+        "score": 12,
+        "avg_score": 12.0
+      },
+      {
         "app": "stayclock",
         "locale": "en",
         "hook": "Always-on time and calendar.",
@@ -866,16 +917,6 @@
         "posts": 1,
         "views": 11,
         "engagement": 0,
-        "score": 11,
-        "avg_score": 11.0
-      },
-      {
-        "app": "dbhalo",
-        "locale": "en",
-        "hook": "Spectrum, Dose & Sleep Journal.",
-        "posts": 1,
-        "views": 6,
-        "engagement": 1,
         "score": 11,
         "avg_score": 11.0
       },
@@ -916,6 +957,16 @@
         "posts": 1,
         "views": 8,
         "engagement": 0,
+        "score": 8,
+        "avg_score": 8.0
+      },
+      {
+        "app": "qrcodehalo",
+        "locale": "en",
+        "hook": "Scanning never auto-opens a destination.",
+        "posts": 1,
+        "views": 3,
+        "engagement": 1,
         "score": 8,
         "avg_score": 8.0
       },
@@ -990,16 +1041,6 @@
         "avg_score": 7.0
       },
       {
-        "app": "qrcodehalo",
-        "locale": "en",
-        "hook": "Scanning never auto-opens a destination.",
-        "posts": 1,
-        "views": 2,
-        "engagement": 1,
-        "score": 7,
-        "avg_score": 7.0
-      },
-      {
         "app": "hourstaglite",
         "locale": "en",
         "hook": "See the real price of things.",
@@ -1023,16 +1064,6 @@
         "app": "scanto",
         "locale": "en",
         "hook": "A document scanner that keeps everything on your device — ev",
-        "posts": 1,
-        "views": 5,
-        "engagement": 0,
-        "score": 5,
-        "avg_score": 5.0
-      },
-      {
-        "app": "mochi_b",
-        "locale": "pt-BR",
-        "hook": "Tanta coisa pra fazer e você esquece?",
         "posts": 1,
         "views": 5,
         "engagement": 0,
@@ -1102,7 +1133,7 @@
       {
         "app": "mochi_halloween",
         "locale": "pt-BR",
-        "hook": "Fantasia, doces, abóbora…um toque e pronto",
+        "hook": "",
         "posts": 1,
         "views": 3,
         "engagement": 0,
@@ -1418,16 +1449,36 @@
         "engagement": 0,
         "score": 0,
         "avg_score": 0.0
+      },
+      {
+        "app": "ledmovingtext",
+        "locale": "de",
+        "hook": "Dein Handy wird zum LED-Schild",
+        "posts": 1,
+        "views": 0,
+        "engagement": 0,
+        "score": 0,
+        "avg_score": 0.0
+      },
+      {
+        "app": "caldaily",
+        "locale": "en",
+        "hook": "Calculator, but make it aesthetic",
+        "posts": 1,
+        "views": 0,
+        "engagement": 0,
+        "score": 0,
+        "avg_score": 0.0
       }
     ],
     "variants": [
       {
         "key": "b",
-        "posts": 22,
-        "views": 590,
+        "posts": 23,
+        "views": 651,
         "engagement": 7,
-        "score": 617,
-        "avg_score": 28.0
+        "score": 678,
+        "avg_score": 29.5
       },
       {
         "key": "c",
@@ -1439,11 +1490,11 @@
       },
       {
         "key": "a",
-        "posts": 16,
-        "views": 210,
+        "posts": 18,
+        "views": 221,
         "engagement": 1,
-        "score": 213,
-        "avg_score": 13.3
+        "score": 224,
+        "avg_score": 12.4
       }
     ]
   },
@@ -1802,12 +1853,12 @@
       "kind": "image",
       "variant": null,
       "metrics": {
-        "views": 13,
+        "views": 14,
         "likes": 0,
         "replies": 1,
         "reposts": 0
       },
-      "score": 18
+      "score": 19
     },
     {
       "channel": "instagram",
@@ -1882,12 +1933,12 @@
       "kind": "image",
       "variant": null,
       "metrics": {
-        "views": 6,
+        "views": 7,
         "likes": 0,
         "replies": 1,
         "reposts": 0
       },
-      "score": 11
+      "score": 12
     },
     {
       "channel": "instagram",
@@ -1922,12 +1973,12 @@
       "kind": "image",
       "variant": null,
       "metrics": {
-        "views": 2,
+        "views": 3,
         "likes": 0,
         "replies": 1,
         "reposts": 0
       },
-      "score": 7
+      "score": 8
     },
     {
       "channel": "instagram",
@@ -2789,7 +2840,7 @@
       "posted_at": "2026-10-25T18:35:33",
       "app": "mochi_halloween",
       "locale": "en",
-      "hook": "Cute to do list for Halloween prep",
+      "hook": "",
       "clip": "mochi_halloween/en",
       "kind": "clip",
       "variant": "a",
@@ -2852,7 +2903,7 @@
       "posted_at": "2026-10-26T18:34:16",
       "app": "mochi_halloween",
       "locale": "pt-BR",
-      "hook": "Fantasia, doces, abóbora…um toque e pronto",
+      "hook": "",
       "clip": "mochi_halloween/pt-BR",
       "kind": "clip",
       "variant": "b",
@@ -2934,7 +2985,7 @@
       "posted_at": "2026-10-27T18:34:21",
       "app": "mochi_halloween",
       "locale": "ja",
-      "hook": "仮装、お菓子、かぼちゃ…タップで完了",
+      "hook": "",
       "clip": "mochi_halloween/ja",
       "kind": "clip",
       "variant": "b",
@@ -3355,14 +3406,14 @@
       "kind": "clip",
       "variant": "a",
       "metrics": {
-        "views": 5,
-        "reach": 3,
+        "views": 16,
+        "reach": 15,
         "likes": 0,
         "saves": 0,
         "shares": 0,
         "replies": 0
       },
-      "score": 5
+      "score": 16
     },
     {
       "channel": "instagram",
@@ -3376,14 +3427,14 @@
       "kind": "clip",
       "variant": "b",
       "metrics": {
-        "views": 39,
-        "reach": 35,
+        "views": 78,
+        "reach": 73,
         "likes": 2,
         "saves": 0,
         "shares": 0,
         "replies": 0
       },
-      "score": 45
+      "score": 84
     },
     {
       "channel": "instagram",
@@ -3405,6 +3456,88 @@
         "replies": 0
       },
       "score": 0
+    },
+    {
+      "channel": "instagram",
+      "id": "18120320411077573",
+      "link": "https://www.instagram.com/p/DfMM1hRm17v/",
+      "posted_at": "2026-11-01T07:31:06",
+      "app": "ledmovingtext",
+      "locale": "de",
+      "hook": "Dein Handy wird zum LED-Schild",
+      "clip": "ledmovingtext/de",
+      "kind": "clip",
+      "variant": "a",
+      "metrics": {
+        "views": 0,
+        "reach": 0,
+        "likes": 0,
+        "saves": 0,
+        "shares": 0,
+        "replies": 0
+      },
+      "score": 0
+    },
+    {
+      "channel": "instagram",
+      "id": "18109545818153350",
+      "link": "https://www.instagram.com/reel/DfNYnnLjfcI/",
+      "posted_at": "2026-11-01T18:33:36",
+      "app": "mochi_b",
+      "locale": "de",
+      "hook": "Studium, Arbeit, Einkauf an einem Ort",
+      "clip": "mochi_b/de",
+      "kind": "clip",
+      "variant": "b",
+      "metrics": {
+        "views": 22,
+        "reach": 20,
+        "likes": 0,
+        "saves": 0,
+        "shares": 0,
+        "replies": 0
+      },
+      "score": 22
+    },
+    {
+      "channel": "instagram",
+      "id": "18153653119544902",
+      "link": "https://www.instagram.com/p/DfNfWR-H5LB/",
+      "posted_at": "2026-11-01T19:32:07",
+      "app": "caldaily",
+      "locale": "en",
+      "hook": "Calculator, but make it aesthetic",
+      "clip": "caldaily/en",
+      "kind": "clip",
+      "variant": "a",
+      "metrics": {
+        "views": 0,
+        "reach": 0,
+        "likes": 0,
+        "saves": 0,
+        "shares": 0,
+        "replies": 0
+      },
+      "score": 0
+    },
+    {
+      "channel": "threads",
+      "id": "18135141019775670",
+      "link": "https://www.threads.com/@hourstag.app/post/DfOUJiolbcU",
+      "posted_at": "2026-11-02T03:13:58",
+      "app": "gmoney",
+      "locale": "zh-Hant",
+      "hook": "我是獨立開發者。每次出國回來都被問「這趟花了多少？」，我以前答不出來：日圓付錢、台幣想預算，兩邊從來沒對起來。所以做了 ",
+      "clip": null,
+      "kind": "image",
+      "variant": null,
+      "metrics": {
+        "views": 162,
+        "likes": 0,
+        "replies": 1,
+        "reposts": 0
+      },
+      "score": 167
     }
   ]
 }

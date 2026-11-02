@@ -1,7 +1,7 @@
 {
  "schema": "duo-copies/v1",
  "source_repo": "00_GrowthEngine",
- "source_head": "a5f8b0c24ab8",
+ "source_head": "495fc46ea172",
  "note": "逐 byte 副本，正本在 00_GrowthEngine；用 aso/duo/sync_duo_copies.py 更新，不要手改",
  "files": {
   ".github/scripts/duo_line.py": {
@@ -22,7 +22,7 @@
   },
   "_engine/ops/company/duo_verified.json": {
    "source": "ops/company/duo_verified.json",
-   "sha256": "3f6534af9460d15b745179281edb03fb7f2a54139450ba1c6643b4b27776c4b5"
+   "sha256": "ab2b95f268adce9182649ffd006141bce7e3e17bbe6afa90c31964cb01e63367"
   }
  }
 }

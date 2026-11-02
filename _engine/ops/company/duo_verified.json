@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T17:04:22+00:00",
+ "generated_at": "2026-11-01T16:24:17+00:00",
  "source": "本機 02 session：state/duo 驗證收據＋ASC 線上版本（唯讀）＋本機 git 差異；宣稱 Duo 滿版優化只可用 verified 列的款",
  "verified": [
   {
@@ -10,12 +10,12 @@
    "pass_build": "37",
    "bundle_id": "com.alice51849.LumiLettersLite",
    "asc_app_id": "6778748533",
-   "live_version": "1.1.8",
-   "live_build": "38",
+   "live_version": "1.1.9",
+   "live_build": "40",
    "duoshot_dir": "/Users/alice51849/AgentOffice/deep_qa/state/DUOSHOT/01_LumiLettersLite",
    "via": "carry_forward",
    "evidence": {
-    "range": "29b25ea0..ed452c5b",
+    "range": "29b25ea0..a0cc32e1",
     "changed_files": 1
    }
   },
@@ -27,21 +27,25 @@
    "pass_build": "32",
    "bundle_id": "com.alice51849.LumiLetters",
    "asc_app_id": "6778491147",
-   "live_version": "1.3.6",
-   "live_build": "32",
+   "live_version": "1.3.7",
+   "live_build": "33",
    "duoshot_dir": "/Users/alice51849/AgentOffice/deep_qa/state/DUOSHOT/02_LumiLettersPro",
-   "via": "direct"
+   "via": "carry_forward",
+   "evidence": {
+    "range": "67ed126a..430cb46d",
+    "changed_files": 1
+   }
   },
   {
    "key": "03_LumiMathPlanet",
    "duo_receipt": "03_LumiMathPlanet.json",
    "verdict": "pass",
-   "pass_version": "1.0.21",
-   "pass_build": "44",
+   "pass_version": "1.0.22",
+   "pass_build": "48",
    "bundle_id": "com.alice51849.LumiMathFree",
    "asc_app_id": "6778269699",
-   "live_version": "1.0.21",
-   "live_build": "44",
+   "live_version": "1.0.22",
+   "live_build": "48",
    "duoshot_dir": "/Users/alice51849/AgentOffice/deep_qa/state/DUOSHOT/03_LumiMathPlanet",
    "via": "direct"
   },
@@ -49,25 +53,29 @@
    "key": "04_LumiMathPro",
    "duo_receipt": "04_LumiMathPro.json",
    "verdict": "pass",
-   "pass_version": "1.0.15",
-   "pass_build": "32",
+   "pass_version": "1.0.16",
+   "pass_build": "36",
    "bundle_id": "com.alice51849.LumiMathPlanet",
    "asc_app_id": "6776958488",
-   "live_version": "1.0.15",
-   "live_build": "32",
+   "live_version": "1.0.17",
+   "live_build": "37",
    "duoshot_dir": "/Users/alice51849/AgentOffice/deep_qa/state/DUOSHOT/04_LumiMathPro",
-   "via": "direct"
+   "via": "carry_forward",
+   "evidence": {
+    "range": "37e2705..dc382c7b",
+    "changed_files": 1
+   }
   },
   {
    "key": "05_LumiBopomofo",
    "duo_receipt": "05_LumiBopomofo.json",
    "verdict": "pass",
-   "pass_version": "1.0.17",
-   "pass_build": "72",
+   "pass_version": "1.0.18",
+   "pass_build": "74",
    "bundle_id": "com.alice51849.LumiZhuyin",
    "asc_app_id": "6773017109",
-   "live_version": "1.0.17",
-   "live_build": "72",
+   "live_version": "1.0.18",
+   "live_build": "74",
    "duoshot_dir": "/Users/alice51849/AgentOffice/deep_qa/state/DUOSHOT/05_LumiBopomofo",
    "via": "direct"
   },
@@ -75,12 +83,12 @@
    "key": "06_LumiBopomofoPro",
    "duo_receipt": "06_LumiBopomofoPro.json",
    "verdict": "pass",
-   "pass_version": "1.0.24",
-   "pass_build": "50",
+   "pass_version": "1.0.25",
+   "pass_build": "53",
    "bundle_id": "com.alice51849.LumiZhuyinPro",
    "asc_app_id": "6775773117",
-   "live_version": "1.0.24",
-   "live_build": "50",
+   "live_version": "1.0.25",
+   "live_build": "53",
    "duoshot_dir": "/Users/alice51849/AgentOffice/deep_qa/state/DUOSHOT/06_LumiBopomofoPro",
    "via": "direct"
   },
@@ -88,12 +96,12 @@
    "key": "07_LumiMissionPlanet",
    "duo_receipt": "07_LumiMissionPlanet.json",
    "verdict": "pass",
-   "pass_version": "1.4.8",
-   "pass_build": "41",
+   "pass_version": "1.4.9",
+   "pass_build": "46",
    "bundle_id": "com.alice51849.LumiMissionLite",
    "asc_app_id": "6779750237",
-   "live_version": "1.4.8",
-   "live_build": "41",
+   "live_version": "1.4.9",
+   "live_build": "46",
    "duoshot_dir": "/Users/alice51849/AgentOffice/deep_qa/state/DUOSHOT/07_LumiMissionPlanet",
    "via": "direct"
   },
@@ -101,29 +109,25 @@
    "key": "08_LumiMissionPlanetPro",
    "duo_receipt": "08_LumiMissionPlanetPro.json",
    "verdict": "pass",
-   "pass_version": "1.0.12",
-   "pass_build": "31",
+   "pass_version": "1.0.14",
+   "pass_build": "35",
    "bundle_id": "com.alice51849.LumiMissionPro",
    "asc_app_id": "6779745474",
-   "live_version": "1.0.13",
-   "live_build": "32",
+   "live_version": "1.0.14",
+   "live_build": "35",
    "duoshot_dir": "/Users/alice51849/AgentOffice/deep_qa/state/DUOSHOT/08_LumiMissionPlanetPro",
-   "via": "carry_forward",
-   "evidence": {
-    "range": "1d7d03f6..17a0650f",
-    "changed_files": 3
-   }
+   "via": "direct"
   },
   {
    "key": "09_LumiWeather",
    "duo_receipt": "09_LumiWeather.json",
    "verdict": "pass",
-   "pass_version": "1.7.7",
-   "pass_build": "39",
+   "pass_version": "1.7.8",
+   "pass_build": "41",
    "bundle_id": "com.alice51849.LumiWeather",
    "asc_app_id": "6779552704",
-   "live_version": "1.7.7",
-   "live_build": "39",
+   "live_version": "1.7.8",
+   "live_build": "41",
    "duoshot_dir": "/Users/alice51849/AgentOffice/deep_qa/state/DUOSHOT/09_LumiWeather",
    "via": "direct"
   },
@@ -135,59 +139,57 @@
    "pass_build": "32",
    "bundle_id": "com.focuslockpro.app",
    "asc_app_id": "6780107485",
-   "live_version": "1.0.18",
-   "live_build": "33",
+   "live_version": "1.0.20",
+   "live_build": "35",
    "duoshot_dir": "/Users/alice51849/AgentOffice/deep_qa/state/DUOSHOT/10_LockHourPro",
    "via": "carry_forward",
    "evidence": {
-    "range": "db2b7be9..aa2b5429",
-    "changed_files": 1
+    "rule": "duo_once_20261028",
+    "note": "曾通過一次 Duo 驗證；依業主 10-28 規則不再重驗",
+    "diff": "差異含 App 程式或資源：ScreenTime/ScreenTimeController.swift、Views/Home/HomeShell.swift"
    }
   },
   {
    "key": "11_ScanToPro",
    "duo_receipt": "11_ScanToPro.json",
    "verdict": "pass",
-   "pass_version": "1.2.6",
-   "pass_build": "59",
+   "pass_version": "1.2.9",
+   "pass_build": "63",
    "bundle_id": "com.alice51849.OfflineScannerPro",
    "asc_app_id": "6779977651",
-   "live_version": "1.2.8",
-   "live_build": "61",
+   "live_version": "1.2.10",
+   "live_build": "64",
    "duoshot_dir": "/Users/alice51849/AgentOffice/deep_qa/state/DUOSHOT/11_ScanToPro",
    "via": "carry_forward",
    "evidence": {
-    "range": "26351a96..c000df76",
-    "changed_files": 2
+    "rule": "duo_once_20261028",
+    "note": "曾通過一次 Duo 驗證；依業主 10-28 規則不再重驗",
+    "diff": "差異含 App 程式或資源：marketing/capture_check.py、marketing/capture_search_hits.sh、marketing/search_demo_i18n/ar-SA.json、marketing/search_demo_i18n/bn-BD.json、marketing/search_demo_i18n/ca.json"
    }
   },
   {
    "key": "12_PicClearPro",
    "duo_receipt": "12_PicClearPro.json",
    "verdict": "pass",
-   "pass_version": "1.9.7",
-   "pass_build": "35",
+   "pass_version": "1.9.9",
+   "pass_build": "39",
    "bundle_id": "com.picclear.app",
    "asc_app_id": "6780223070",
-   "live_version": "1.9.8",
-   "live_build": "36",
+   "live_version": "1.9.9",
+   "live_build": "39",
    "duoshot_dir": "/Users/alice51849/AgentOffice/deep_qa/state/DUOSHOT/12_PicClearPro",
-   "via": "carry_forward",
-   "evidence": {
-    "range": "f29d8d5a..90e457f6",
-    "changed_files": 2
-   }
+   "via": "direct"
   },
   {
    "key": "13_HoursTag",
    "duo_receipt": "13_HoursTag.json",
    "verdict": "pass",
-   "pass_version": "3.0.18",
-   "pass_build": "56",
+   "pass_version": "3.0.19",
+   "pass_build": "59",
    "bundle_id": "com.caitlyn.hourstag",
    "asc_app_id": "6754218117",
-   "live_version": "3.0.18",
-   "live_build": "56",
+   "live_version": "3.0.19",
+   "live_build": "59",
    "duoshot_dir": "/Users/alice51849/AgentOffice/deep_qa/state/DUOSHOT/13_HoursTag",
    "via": "direct"
   },
@@ -195,8 +197,8 @@
    "key": "14_Snapport",
    "duo_receipt": "14_Snapport.json",
    "verdict": "pass",
-   "pass_version": "1.11.3",
-   "pass_build": "24",
+   "pass_version": "1.11.5",
+   "pass_build": "27",
    "bundle_id": "com.snapport.app",
    "asc_app_id": "6780575828",
    "live_version": "1.11.4",
@@ -204,8 +206,9 @@
    "duoshot_dir": "/Users/alice51849/AgentOffice/deep_qa/state/DUOSHOT/14_Snapport",
    "via": "carry_forward",
    "evidence": {
-    "range": "14aa36db..2cf49269",
-    "changed_files": 2
+    "rule": "duo_once_20261028",
+    "note": "曾通過一次 Duo 驗證；依業主 10-28 規則不再重驗",
+    "diff": "差異含 App 程式或資源：Views/Onboarding/OnboardingView.swift"
    }
   },
   {
@@ -216,10 +219,15 @@
    "pass_build": "46",
    "bundle_id": "com.caitlai.globi",
    "asc_app_id": "6755782939",
-   "live_version": "2.1.13",
-   "live_build": "46",
+   "live_version": "2.1.14",
+   "live_build": "47",
    "duoshot_dir": "/Users/alice51849/AgentOffice/deep_qa/state/DUOSHOT/15_GMoney",
-   "via": "direct"
+   "via": "carry_forward",
+   "evidence": {
+    "rule": "duo_once_20261028",
+    "note": "曾通過一次 Duo 驗證；依業主 10-28 規則不再重驗",
+    "diff": "差異含 App 程式或資源：marketing/copy_v2_dual.py"
+   }
   },
   {
    "key": "16_CVDesk",
@@ -229,10 +237,15 @@
    "pass_build": "36",
    "bundle_id": "com.alice51849.cvdesk",
    "asc_app_id": "6781337213",
-   "live_version": "1.4.9",
-   "live_build": "36",
+   "live_version": "1.4.10",
+   "live_build": "39",
    "duoshot_dir": "/Users/alice51849/AgentOffice/deep_qa/state/DUOSHOT/16_CVDesk",
-   "via": "direct"
+   "via": "carry_forward",
+   "evidence": {
+    "rule": "duo_once_20261028",
+    "note": "曾通過一次 Duo 驗證；依業主 10-28 規則不再重驗",
+    "diff": "差異含 App 程式或資源：Resuma/App/RootView.swift、Resuma/Resources/DemoSeed.swift"
+   }
   },
   {
    "key": "17_PhotoCreamPro",
@@ -242,13 +255,14 @@
    "pass_build": "27",
    "bundle_id": "com.alice51849.photocream",
    "asc_app_id": "6781808054",
-   "live_version": "1.0.13",
-   "live_build": "29",
+   "live_version": "1.0.15",
+   "live_build": "31",
    "duoshot_dir": "/Users/alice51849/AgentOffice/deep_qa/state/DUOSHOT/17_PhotoCreamPro",
    "via": "carry_forward",
    "evidence": {
-    "range": "a3a019c8..b48cb6c1",
-    "changed_files": 2
+    "rule": "duo_once_20261028",
+    "note": "曾通過一次 Duo 驗證；依業主 10-28 規則不再重驗",
+    "diff": "差異含 App 程式或資源：Photocream/App/RootView.swift、Photocream/Features/Editor/EditorView.swift、Photocream/Features/Onboarding/OnboardingView.swift、Photocream/Features/StealLook/StealLookView.swift、Photocream/Resources/ShotHarness.swift"
    }
   },
   {
@@ -259,12 +273,12 @@
    "pass_build": "22",
    "bundle_id": "com.caitlyn.clearnotevoice",
    "asc_app_id": "6782139553",
-   "live_version": "1.4.10",
-   "live_build": "23",
+   "live_version": "1.4.11",
+   "live_build": "24",
    "duoshot_dir": "/Users/alice51849/AgentOffice/deep_qa/state/DUOSHOT/18_SonoNote",
    "via": "carry_forward",
    "evidence": {
-    "range": "b3d0fcc2..321ec929",
+    "range": "b3d0fcc2..d4efc4a3",
     "changed_files": 1
    }
   },
@@ -272,12 +286,12 @@
    "key": "19_Cyca",
    "duo_receipt": "19_Cyca.json",
    "verdict": "pass",
-   "pass_version": "1.0.12",
-   "pass_build": "26",
+   "pass_version": "1.0.13",
+   "pass_build": "29",
    "bundle_id": "com.alice51849.Cyca",
    "asc_app_id": "6782251621",
-   "live_version": "1.0.12",
-   "live_build": "26",
+   "live_version": "1.0.13",
+   "live_build": "29",
    "duoshot_dir": "/Users/alice51849/AgentOffice/deep_qa/state/DUOSHOT/19_Cyca",
    "via": "direct"
   },
@@ -289,10 +303,14 @@
    "pass_build": "30",
    "bundle_id": "com.alice51849.MochiTodo",
    "asc_app_id": "6785004775",
-   "live_version": "1.0.16",
-   "live_build": "30",
+   "live_version": "1.0.17",
+   "live_build": "32",
    "duoshot_dir": "/Users/alice51849/AgentOffice/deep_qa/state/DUOSHOT/20_Mochi",
-   "via": "direct"
+   "via": "carry_forward",
+   "evidence": {
+    "range": "6864400b..76756a37",
+    "changed_files": 2
+   }
   },
   {
    "key": "21_UnblurryPro",
@@ -302,167 +320,226 @@
    "pass_build": "24",
    "bundle_id": "com.unblurry.app",
    "asc_app_id": "6782275018",
-   "live_version": "1.0.13",
-   "live_build": "25",
+   "live_version": "1.0.16",
+   "live_build": "30",
    "duoshot_dir": "/Users/alice51849/AgentOffice/deep_qa/state/DUOSHOT/21_UnblurryPro",
    "via": "carry_forward",
    "evidence": {
-    "range": "6292e132..a0846eef",
-    "changed_files": 2
+    "rule": "duo_once_20261028",
+    "note": "曾通過一次 Duo 驗證；依業主 10-28 規則不再重驗",
+    "diff": "差異含 App 程式或資源：Unblurry/Debug/ScreenshotMode.swift、Unblurry/Views/Enhance/CompareSlider.swift、Unblurry/Views/Enhance/EnhanceView.swift、Unblurry/Views/Enhance/EnhanceViewModel.swift"
    }
   },
   {
    "key": "22_LumiTripPlanet",
    "duo_receipt": "22_LumiTripPlanet.json",
    "verdict": "pass",
-   "pass_version": "1.0.6",
-   "pass_build": "25",
+   "pass_version": "1.0.7",
+   "pass_build": "27",
    "bundle_id": "com.alice51849.TripPlanet",
    "asc_app_id": "6787193643",
-   "live_version": "1.0.6",
-   "live_build": "25",
+   "live_version": "1.0.8",
+   "live_build": "33",
    "duoshot_dir": "/Users/alice51849/AgentOffice/deep_qa/state/DUOSHOT/22_LumiTripPlanet",
-   "via": "direct"
+   "via": "carry_forward",
+   "evidence": {
+    "rule": "duo_once_20261028",
+    "note": "曾通過一次 Duo 驗證；依業主 10-28 規則不再重驗",
+    "diff": "差異含 App 程式或資源：Managers/TripStore.swift、Shared/Localization/CommerceCopy.swift、Shared/Localization/LocStrings_Group1.swift、Shared/Localization/LocStrings_Group10.swift、Shared/Localization/LocStrings_Group2.swift"
+   }
+  },
+  {
+   "key": "23_Sereno",
+   "duo_receipt": "24_Sereno.json",
+   "verdict": "pass",
+   "pass_version": "1.0.6",
+   "pass_build": "12",
+   "bundle_id": "com.alice51849.Sereno",
+   "asc_app_id": "6788236641",
+   "live_version": "1.1.2",
+   "live_build": "19",
+   "duoshot_dir": "/Users/alice51849/AgentOffice/deep_qa/state/DUOSHOT/23_Sereno",
+   "via": "carry_forward",
+   "evidence": {
+    "rule": "duo_once_20261028",
+    "note": "曾通過一次 Duo 驗證；依業主 10-28 規則不再重驗",
+    "diff": "差異含 App 程式或資源：App/SerenoApp.swift、Audio/AudioEngine.swift、Audio/MasterBus.swift、Audio/SampleBank.swift、Audio/SampleStream.swift"
+   }
   },
   {
    "key": "24_TripBeePro",
    "duo_receipt": "24_TripBeePro.json",
    "verdict": "pass",
-   "pass_version": "1.0.8",
-   "pass_build": "41",
+   "pass_version": "1.0.9",
+   "pass_build": "45",
    "bundle_id": "com.alice51849.Tripbee",
    "asc_app_id": "6787754435",
-   "live_version": "1.0.8",
-   "live_build": "41",
+   "live_version": "1.0.9",
+   "live_build": "45",
    "duoshot_dir": "/Users/alice51849/AgentOffice/deep_qa/state/DUOSHOT/24_TripBeePro",
    "via": "direct"
   },
   {
    "key": "25_Wordmate",
-   "duo_receipt": "25_Wordmate.json",
+   "duo_receipt": "26_Wordmate.json",
    "verdict": "pass",
-   "pass_version": "1.0.8",
-   "pass_build": "14",
+   "pass_version": "1.0.4",
+   "pass_build": "9",
    "bundle_id": "com.caitlyn.flashdot",
    "asc_app_id": "6789917808",
-   "live_version": "1.0.9",
-   "live_build": "15",
+   "live_version": "1.0.11",
+   "live_build": "17",
    "duoshot_dir": "/Users/alice51849/AgentOffice/deep_qa/state/DUOSHOT/25_Wordmate",
    "via": "carry_forward",
    "evidence": {
-    "range": "40013ff3..a8d3a4ab",
-    "changed_files": 2
+    "rule": "duo_once_20261028",
+    "note": "曾通過一次 Duo 驗證；依業主 10-28 規則不再重驗",
+    "diff": "差異含 App 程式或資源：Work/newwords/SCHEMA.txt、app.json、ios/Wordmate/Info.plist、l10n/generate_l10n.py、l10n/verify.py"
    }
   },
   {
    "key": "26_DailyMate",
-   "duo_receipt": "26_DailyMate.json",
+   "duo_receipt": "27_DailyMate.json",
    "verdict": "pass",
-   "pass_version": "1.0.8",
-   "pass_build": "13",
+   "pass_version": "1.0.4",
+   "pass_build": "8",
    "bundle_id": "com.caitlyn.dailymate",
    "asc_app_id": "6790418321",
-   "live_version": "1.0.8",
-   "live_build": "13",
+   "live_version": "1.0.10",
+   "live_build": "15",
    "duoshot_dir": "/Users/alice51849/AgentOffice/deep_qa/state/DUOSHOT/26_DailyMate",
-   "via": "direct"
+   "via": "carry_forward",
+   "evidence": {
+    "rule": "duo_once_20261028",
+    "note": "曾通過一次 Duo 驗證；依業主 10-28 規則不再重驗",
+    "diff": "差異含 App 程式或資源：app.json、ios/DailyMate/Info.plist、package-lock.json、package.json、src/responsive.js"
+   }
+  },
+  {
+   "key": "27_WiFiAid",
+   "duo_receipt": "28_WiFiAid.json",
+   "verdict": "pass",
+   "pass_version": "1.0.10",
+   "pass_build": "15",
+   "bundle_id": "com.alice51849.WiFiAid",
+   "asc_app_id": "6790467886",
+   "live_version": "1.0.15",
+   "live_build": "23",
+   "duoshot_dir": "/Users/alice51849/AgentOffice/deep_qa/state/DUOSHOT/27_WiFiAid",
+   "via": "carry_forward",
+   "evidence": {
+    "rule": "duo_once_20261028",
+    "note": "曾通過一次 Duo 驗證；依業主 10-28 規則不再重驗",
+    "diff": "差異含 App 程式或資源：WiFiAid.xcodeproj/project.pbxproj、WiFiAid/App/AppModel.swift、WiFiAid/App/RunNetworkCheckIntent.swift、WiFiAid/Managers/ReviewPrompt.swift"
+   }
   },
   {
    "key": "28_MochiDoneStamp",
-   "duo_receipt": "28_MochiDoneStamp.json",
+   "duo_receipt": "29_MochiDoneStamp.json",
    "verdict": "pass",
-   "pass_version": "1.0.16",
-   "pass_build": "27",
+   "pass_version": "1.0.15",
+   "pass_build": "26",
    "bundle_id": "com.alice51849.MochiDoneStamp",
    "asc_app_id": "6790800323",
-   "live_version": "1.0.18",
-   "live_build": "29",
+   "live_version": "1.0.19",
+   "live_build": "32",
    "duoshot_dir": "/Users/alice51849/AgentOffice/deep_qa/state/DUOSHOT/28_MochiDoneStamp",
    "via": "carry_forward",
    "evidence": {
-    "range": "e41d35cb..3ecf7b0f",
-    "changed_files": 5
+    "rule": "duo_once_20261028",
+    "note": "曾通過一次 Duo 驗證；依業主 10-28 規則不再重驗",
+    "diff": "差異含 App 程式或資源：Views/SettingsView.swift"
    }
   },
   {
    "key": "29_Aim990",
-   "duo_receipt": "29_Aim990.json",
+   "duo_receipt": "30_Aim990.json",
    "verdict": "pass",
-   "pass_version": "2.0.1",
-   "pass_build": "47",
+   "pass_version": "1.4.6",
+   "pass_build": "40",
    "bundle_id": "com.alice51849.aim990",
    "asc_app_id": "6784974530",
-   "live_version": "2.0.1",
-   "live_build": "47",
+   "live_version": "2.0.2",
+   "live_build": "48",
    "duoshot_dir": "/Users/alice51849/AgentOffice/deep_qa/state/DUOSHOT/29_Aim990",
-   "via": "direct"
+   "via": "carry_forward",
+   "evidence": {
+    "rule": "duo_once_20261028",
+    "note": "曾通過一次 Duo 驗證；依業主 10-28 規則不再重驗",
+    "diff": "差異含 App 程式或資源：Aim990.xcodeproj/project.pbxproj、Aim990.xcodeproj/xcshareddata/xcschemes/Aim990UITests.xcscheme、Aim990/App/Aim990App.swift、Aim990/App/AppRouter.swift、Aim990/App/DemoLearnerSeed.swift"
+   }
   },
   {
    "key": "30_TripBeeLite",
    "duo_receipt": "30_TripBeeLite.json",
    "verdict": "pass",
-   "pass_version": "1.0.7",
-   "pass_build": "19",
+   "pass_version": "1.0.9",
+   "pass_build": "23",
    "bundle_id": "com.alice51849.TripbeeLite",
    "asc_app_id": "6791299610",
-   "live_version": "1.0.8",
-   "live_build": "20",
+   "live_version": "1.0.9",
+   "live_build": "23",
    "duoshot_dir": "/Users/alice51849/AgentOffice/deep_qa/state/DUOSHOT/30_TripBeeLite",
-   "via": "carry_forward",
-   "evidence": {
-    "range": "a2b1f76e..f17ceb3a",
-    "changed_files": 2
-   }
+   "via": "direct"
   },
   {
    "key": "31_AIBrief",
-   "duo_receipt": "31_AIBrief.json",
+   "duo_receipt": "33_AIBrief.json",
    "verdict": "pass",
-   "pass_version": "1.0.4",
-   "pass_build": "19",
+   "pass_version": "1.0.2",
+   "pass_build": "17",
    "bundle_id": "com.alice51849.AIBriefPack",
    "asc_app_id": "6791658210",
-   "live_version": "1.0.5",
-   "live_build": "20",
+   "live_version": "1.0.6",
+   "live_build": "24",
    "duoshot_dir": "/Users/alice51849/AgentOffice/deep_qa/state/DUOSHOT/31_AIBrief",
    "via": "carry_forward",
    "evidence": {
-    "range": "d134b976..85de8923",
-    "changed_files": 3
+    "range": "9d0dc537..1682b19d",
+    "changed_files": 4
    }
   },
   {
    "key": "32_GMoneyLite",
-   "duo_receipt": "32_GMoneyLite.json",
+   "duo_receipt": "34_GMoneyLite.json",
    "verdict": "pass",
-   "pass_version": "1.0.6",
-   "pass_build": "15",
+   "pass_version": "1.0.4",
+   "pass_build": "13",
    "bundle_id": "com.alice51849.GMoneyLite",
    "asc_app_id": "6793436548",
-   "live_version": "1.0.6",
-   "live_build": "15",
+   "live_version": "1.0.7",
+   "live_build": "17",
    "duoshot_dir": "/Users/alice51849/AgentOffice/deep_qa/state/DUOSHOT/32_GMoneyLite",
-   "via": "direct"
+   "via": "carry_forward",
+   "evidence": {
+    "rule": "duo_once_20261028",
+    "note": "曾通過一次 Duo 驗證；依業主 10-28 規則不再重驗",
+    "diff": "差異含 App 程式或資源：src/currencyNames.js"
+   }
   },
   {
    "key": "33_HoursTagLite",
-   "duo_receipt": "33_HoursTagLite.json",
+   "duo_receipt": "35_HoursTagLite.json",
    "verdict": "pass",
-   "pass_version": "1.1.5",
-   "pass_build": "14",
+   "pass_version": "1.1.3",
+   "pass_build": "12",
    "bundle_id": "com.alice51849.HoursTagLite",
    "asc_app_id": "6794039979",
-   "live_version": "1.1.5",
-   "live_build": "14",
+   "live_version": "1.1.6",
+   "live_build": "16",
    "duoshot_dir": "/Users/alice51849/AgentOffice/deep_qa/state/DUOSHOT/33_HoursTagLite",
-   "via": "direct"
+   "via": "carry_forward",
+   "evidence": {
+    "range": "1d04049..9428a150",
+    "changed_files": 1
+   }
   },
   {
    "key": "34_SnapportLite",
    "duo_receipt": "34_SnapportLite.json",
    "verdict": "pass",
-   "pass_version": "1.0.5",
-   "pass_build": "16",
+   "pass_version": "1.0.7",
+   "pass_build": "19",
    "bundle_id": "com.alice51849.SnapportLite",
    "asc_app_id": "6792856304",
    "live_version": "1.0.6",
@@ -470,243 +547,335 @@
    "duoshot_dir": "/Users/alice51849/AgentOffice/deep_qa/state/DUOSHOT/34_SnapportLite",
    "via": "carry_forward",
    "evidence": {
-    "range": "f7fc376d..154814ee",
-    "changed_files": 2
+    "rule": "duo_once_20261028",
+    "note": "曾通過一次 Duo 驗證；依業主 10-28 規則不再重驗",
+    "diff": "差異含 App 程式或資源：Resources/Assets.xcassets/BrandIcon.imageset/Contents.json、Resources/Assets.xcassets/BrandIcon.imageset/brand-icon@3x.png、Views/Onboarding/OnboardingView.swift"
    }
   },
   {
    "key": "35_WordmateLite",
-   "duo_receipt": "35_WordmateLite.json",
+   "duo_receipt": "37_WordmateLite.json",
    "verdict": "pass",
-   "pass_version": "1.0.6",
-   "pass_build": "13",
+   "pass_version": "1.0.3",
+   "pass_build": "10",
    "bundle_id": "com.alice51849.WordmateLite",
    "asc_app_id": "6797601720",
-   "live_version": "1.0.6",
-   "live_build": "13",
+   "live_version": "1.0.7",
+   "live_build": "15",
    "duoshot_dir": "/Users/alice51849/AgentOffice/deep_qa/state/DUOSHOT/35_WordmateLite",
-   "via": "direct"
+   "via": "carry_forward",
+   "evidence": {
+    "rule": "duo_once_20261028",
+    "note": "曾通過一次 Duo 驗證；依業主 10-28 規則不再重驗",
+    "diff": "差異含 App 程式或資源：l10n/generate_l10n.py、l10n/verify.py、src/content/gen/gen_uk_el_he_loc2_nt.py、src/content/translate.py、src/content/validate.py"
+   }
   },
   {
    "key": "36_DailyMateLite",
    "duo_receipt": "36_DailyMateLite.json",
    "verdict": "pass",
-   "pass_version": "1.0.7",
-   "pass_build": "19",
+   "pass_version": "1.0.8",
+   "pass_build": "22",
    "bundle_id": "com.alice51849.DailyMateLite",
    "asc_app_id": "6794725568",
-   "live_version": "1.0.7",
-   "live_build": "19",
+   "live_version": "1.0.8",
+   "live_build": "22",
    "duoshot_dir": "/Users/alice51849/AgentOffice/deep_qa/state/DUOSHOT/36_DailyMateLite",
    "via": "direct"
+  },
+  {
+   "key": "37_WiFiAidLite",
+   "duo_receipt": "39_WiFiAidLite.json",
+   "verdict": "pass",
+   "pass_version": "1.0.5",
+   "pass_build": "15",
+   "bundle_id": "com.alice51849.WiFiAidLite",
+   "asc_app_id": "6793414462",
+   "live_version": "1.0.10",
+   "live_build": "24",
+   "duoshot_dir": "/Users/alice51849/AgentOffice/deep_qa/state/DUOSHOT/37_WiFiAidLite",
+   "via": "carry_forward",
+   "evidence": {
+    "rule": "duo_once_20261028",
+    "note": "曾通過一次 Duo 驗證；依業主 10-28 規則不再重驗",
+    "diff": "差異含 App 程式或資源：LinkLumen.xcodeproj/project.pbxproj、LinkLumen/App/AppModel.swift、LinkLumen/App/RootView.swift、LinkLumen/App/RunNetworkCheckIntent.swift、LinkLumen/Localization/Localization.swift"
+   }
   },
   {
    "key": "38_MaskMyFile",
    "duo_receipt": "38_MaskMyFile.json",
    "verdict": "pass",
-   "pass_version": "1.0.6",
-   "pass_build": "16",
+   "pass_version": "1.0.9",
+   "pass_build": "20",
    "bundle_id": "com.alice51849.MaskMyFile",
    "asc_app_id": "6792850916",
-   "live_version": "1.0.8",
-   "live_build": "18",
+   "live_version": "1.0.9",
+   "live_build": "20",
    "duoshot_dir": "/Users/alice51849/AgentOffice/deep_qa/state/DUOSHOT/38_MaskMyFile",
-   "via": "carry_forward",
-   "evidence": {
-    "range": "9e8d238c..edbec29e",
-    "changed_files": 2
-   }
+   "via": "direct"
   },
   {
    "key": "39_CalDaily",
-   "duo_receipt": "40_CalDaily.json",
+   "duo_receipt": "39_CalDaily.json",
    "verdict": "pass",
-   "pass_version": "1.0.5",
-   "pass_build": "11",
+   "pass_version": "1.0.8",
+   "pass_build": "16",
    "bundle_id": "com.alice51849.CalDaily",
    "asc_app_id": "6794178671",
-   "live_version": "1.0.7",
-   "live_build": "13",
+   "live_version": "1.0.8",
+   "live_build": "16",
    "duoshot_dir": "/Users/alice51849/AgentOffice/deep_qa/state/DUOSHOT/40_CalDaily",
-   "via": "carry_forward",
-   "evidence": {
-    "range": "c7642753..31067052",
-    "changed_files": 9
-   }
+   "via": "direct"
+  },
+  {
+   "key": "40_100NotesStudio",
+   "duo_receipt": "40_100NotesStudio.json",
+   "verdict": "pass",
+   "pass_version": "1.0.9",
+   "pass_build": "25",
+   "bundle_id": "com.alice51849.NotesStudio100",
+   "asc_app_id": "6798813048",
+   "live_version": "1.0.9",
+   "live_build": "25",
+   "duoshot_dir": "/Users/alice51849/AgentOffice/deep_qa/state/DUOSHOT/41_100NotesStudio",
+   "via": "direct"
   },
   {
    "key": "41_OnePagePPT",
-   "duo_receipt": "42_OnePagePPT.json",
+   "duo_receipt": "41_OnePagePPT.json",
    "verdict": "pass",
    "pass_version": "1.0.5",
    "pass_build": "10",
    "bundle_id": "com.alice51849.OnePagePPT",
    "asc_app_id": "6798814385",
-   "live_version": "1.0.7",
-   "live_build": "12",
+   "live_version": "1.0.8",
+   "live_build": "14",
    "duoshot_dir": "/Users/alice51849/AgentOffice/deep_qa/state/DUOSHOT/42_OnePagePPT",
    "via": "carry_forward",
    "evidence": {
-    "range": "209bdf49..50d302a6",
-    "changed_files": 2
+    "rule": "duo_once_20261028",
+    "note": "曾通過一次 Duo 驗證；依業主 10-28 規則不再重驗",
+    "diff": "差異含 App 程式或資源：OnePagePPTTests/AppStoreScreenshotTests.swift"
+   }
+  },
+  {
+   "key": "42_BattAI",
+   "duo_receipt": "42_BattAI.json",
+   "verdict": "pass",
+   "pass_version": "1.1.9",
+   "pass_build": "44",
+   "bundle_id": "com.alice51849.BattAI",
+   "asc_app_id": "6802423998",
+   "live_version": "1.1.9",
+   "live_build": "46",
+   "duoshot_dir": "/Users/alice51849/AgentOffice/deep_qa/state/DUOSHOT/43_BattAI",
+   "via": "carry_forward",
+   "evidence": {
+    "range": "1b2106a..75e77bd1",
+    "changed_files": 47
    }
   },
   {
    "key": "43_MoneyTag",
-   "duo_receipt": "44_MoneyTag.json",
+   "duo_receipt": "43_MoneyTag.json",
    "verdict": "pass",
    "pass_version": "1.1.4",
    "pass_build": "16",
    "bundle_id": "com.alice51849.MoneyTag",
    "asc_app_id": "6801956402",
-   "live_version": "1.1.4",
-   "live_build": "16",
+   "live_version": "1.1.5",
+   "live_build": "17",
    "duoshot_dir": "/Users/alice51849/AgentOffice/deep_qa/state/DUOSHOT/44_MoneyTag",
-   "via": "direct"
+   "via": "carry_forward",
+   "evidence": {
+    "rule": "duo_once_20261028",
+    "note": "曾通過一次 Duo 驗證；依業主 10-28 規則不再重驗",
+    "diff": "差異含 App 程式或資源：.gitignore"
+   }
   },
   {
    "key": "44_ShotInbox",
-   "duo_receipt": "45_ShotInbox.json",
+   "duo_receipt": "44_ShotInbox.json",
    "verdict": "pass",
    "pass_version": "1.0.4",
    "pass_build": "12",
    "bundle_id": "com.alice51849.ShotInbox",
    "asc_app_id": "6802166527",
-   "live_version": "1.0.4",
-   "live_build": "12",
-   "duoshot_dir": "/Users/alice51849/AgentOffice/deep_qa/state/DUOSHOT/45_ShotInbox",
-   "via": "direct"
+   "live_version": "1.0.5",
+   "live_build": "15",
+   "via": "carry_forward",
+   "evidence": {
+    "rule": "duo_once_20261028",
+    "note": "曾通過一次 Duo 驗證；依業主 10-28 規則不再重驗",
+    "diff": "差異含 App 程式或資源：ShotInbox/Resources/Localizations/generate_localizations.py、ShotInbox/ScreenshotPipeline/StorefrontPreview.swift"
+   }
   },
   {
    "key": "45_SaveTag",
-   "duo_receipt": "46_SaveTag.json",
+   "duo_receipt": "45_SaveTag.json",
    "verdict": "pass",
    "pass_version": "1.0.6",
    "pass_build": "14",
    "bundle_id": "com.alice51849.SaveTag",
    "asc_app_id": "6802505528",
-   "live_version": "1.0.6",
-   "live_build": "14",
+   "live_version": "1.0.7",
+   "live_build": "16",
    "duoshot_dir": "/Users/alice51849/AgentOffice/deep_qa/state/DUOSHOT/46_SaveTag",
-   "via": "direct"
+   "via": "carry_forward",
+   "evidence": {
+    "rule": "duo_once_20261028",
+    "note": "曾通過一次 Duo 驗證；依業主 10-28 規則不再重驗",
+    "diff": "差異含 App 程式或資源：.gitignore、SaveTag/Features/Home/HomeView.swift、SaveTag/Resources/Localizations/gen_strings.py、SaveTag/Store/DemoSeed.swift、art/make_icon.py"
+   }
   },
   {
    "key": "46_QRCodeHalo",
    "duo_receipt": "49_QRCodeHalo.json",
    "verdict": "pass",
-   "pass_version": "1.0.2",
-   "pass_build": "16",
+   "pass_version": "1.0.4",
+   "pass_build": "19",
    "bundle_id": "com.alice51849.QRCodeHalo",
    "asc_app_id": "6806779853",
-   "live_version": "1.0.3",
-   "live_build": "17",
+   "live_version": "1.0.4",
+   "live_build": "19",
    "duoshot_dir": "/Users/alice51849/AgentOffice/deep_qa/state/DUOSHOT/47_QRCodeHalo",
-   "via": "carry_forward",
-   "evidence": {
-    "range": "a21ffb80..71ed3ef2",
-    "changed_files": 2
-   }
+   "via": "direct"
   },
   {
    "key": "47_dBHalo",
-   "duo_receipt": "48_dBHalo.json",
+   "duo_receipt": "47_dBHalo.json",
    "verdict": "pass",
-   "pass_version": "1.0.4",
-   "pass_build": "13",
+   "pass_version": "1.0.6",
+   "pass_build": "18",
    "bundle_id": "com.alice51849.dBHalo",
    "asc_app_id": "6806826699",
-   "live_version": "1.0.5",
-   "live_build": "14",
+   "live_version": "1.0.6",
+   "live_build": "18",
    "duoshot_dir": "/Users/alice51849/AgentOffice/deep_qa/state/DUOSHOT/48_dBHalo",
-   "via": "carry_forward",
-   "evidence": {
-    "range": "5b69c0b3..def6600c",
-    "changed_files": 2
-   }
+   "via": "direct"
   },
   {
    "key": "48_LEDMovingText",
    "duo_receipt": "48_LEDMovingText.json",
    "verdict": "pass",
-   "pass_version": "1.0.6",
-   "pass_build": "14",
+   "pass_version": "1.0.7",
+   "pass_build": "18",
    "bundle_id": "com.alice51849.LEDMovingText",
    "asc_app_id": "6806639602",
    "live_version": "1.0.6",
    "live_build": "14",
    "duoshot_dir": "/Users/alice51849/AgentOffice/deep_qa/state/DUOSHOT/49_LEDMovingText",
-   "via": "direct"
+   "via": "carry_forward",
+   "evidence": {
+    "rule": "duo_once_20261028",
+    "note": "曾通過一次 Duo 驗證；依業主 10-28 規則不再重驗",
+    "diff": "差異含 App 程式或資源：LEDMovingText/Features/Editor/EditorView.swift、LEDMovingText/Features/Player/PlayerView.swift、LEDMovingText/Storefront/StorefrontStaging.swift、marketing/screenshots/build_captions.py、marketing/screenshots/recapture_20261023/capture.sh"
+   }
   },
   {
    "key": "49_CountDaysNow",
-   "duo_receipt": "52_CountDaysNow.json",
+   "duo_receipt": "49_CountDaysNow.json",
    "verdict": "pass",
    "pass_version": "1.0.3",
    "pass_build": "89",
    "bundle_id": "com.alice51849.CountDaysNow",
    "asc_app_id": "6807079789",
-   "live_version": "1.0.3",
-   "live_build": "89",
+   "live_version": "1.0.4",
+   "live_build": "91",
    "duoshot_dir": "/Users/alice51849/AgentOffice/deep_qa/state/DUOSHOT/50_CountDaysNow",
+   "via": "carry_forward",
+   "evidence": {
+    "range": "782e033e..2a0d22f6",
+    "changed_files": 5
+   }
+  },
+  {
+   "key": "50_GBAGo",
+   "duo_receipt": "53_GBAGo.json",
+   "verdict": "pass",
+   "pass_version": "1.0.1",
+   "pass_build": "23",
+   "bundle_id": "com.alice51849.GBAGo",
+   "asc_app_id": "6804564400",
+   "live_version": "1.0.1",
+   "live_build": "23",
    "via": "direct"
   },
   {
    "key": "51_Zipbox",
-   "duo_receipt": "52_Zipbox.json",
+   "duo_receipt": "51_Zipbox.json",
    "verdict": "pass",
-   "pass_version": "1.0.4",
-   "pass_build": "6",
+   "pass_version": "1.0.5",
+   "pass_build": "8",
    "bundle_id": "com.alice51849.Zipbox",
    "asc_app_id": "6806776579",
-   "live_version": "1.0.4",
-   "live_build": "6",
+   "live_version": "1.0.5",
+   "live_build": "8",
    "duoshot_dir": "/Users/alice51849/AgentOffice/deep_qa/state/DUOSHOT/52_Zipbox",
    "via": "direct"
   },
   {
    "key": "52_Studydown",
-   "duo_receipt": "53_Studydown.json",
+   "duo_receipt": "52_Studydown.json",
    "verdict": "pass",
-   "pass_version": "1.0.2",
-   "pass_build": "6",
+   "pass_version": "1.0.4",
+   "pass_build": "8",
    "bundle_id": "com.alice51849.Studydown",
    "asc_app_id": "6807335593",
-   "live_version": "1.0.3",
-   "live_build": "7",
+   "live_version": "1.0.4",
+   "live_build": "9",
    "duoshot_dir": "/Users/alice51849/AgentOffice/deep_qa/state/DUOSHOT/53_Studydown",
    "via": "carry_forward",
    "evidence": {
-    "range": "5d4d9c5c..9394f489",
+    "range": "fcd5b87..4451ccf6",
     "changed_files": 2
    }
   },
   {
    "key": "53_StayClock",
-   "duo_receipt": "56_StayClock.json",
+   "duo_receipt": "53_StayClock.json",
    "verdict": "pass",
    "pass_version": "1.0.5",
    "pass_build": "34",
    "bundle_id": "com.alice51849.StayClock",
    "asc_app_id": "6814035888",
-   "live_version": "1.0.6",
-   "live_build": "35",
+   "live_version": "1.0.7",
+   "live_build": "37",
    "duoshot_dir": "/Users/alice51849/AgentOffice/deep_qa/state/DUOSHOT/54_StayClock",
    "via": "carry_forward",
    "evidence": {
-    "range": "b7281d6a..1ef4e278",
-    "changed_files": 2
+    "rule": "duo_once_20261028",
+    "note": "曾通過一次 Duo 驗證；依業主 10-28 規則不再重驗",
+    "diff": "差異含 App 程式或資源：.gitignore、DesignAssets/canvas/previews/stay-landscape.png、DesignAssets/canvas/previews/stay-night-portrait.png、DesignAssets/canvas/previews/stay-portrait.png、DesignAssets/controls/previews/ipad-dark.png"
+   }
+  },
+  {
+   "key": "54_DuoWallpaperStudio",
+   "duo_receipt": "54_DuoWallpaperStudio.json",
+   "verdict": "pass",
+   "pass_version": "1.0.1",
+   "pass_build": "16",
+   "bundle_id": "com.alice51849.DuoWallpaperStudio",
+   "asc_app_id": "6824946559",
+   "live_version": "1.0.2",
+   "live_build": "17",
+   "via": "carry_forward",
+   "evidence": {
+    "rule": "duo_once_20261028",
+    "note": "曾通過一次 Duo 驗證；依業主 10-28 規則不再重驗",
+    "diff": "差異含 App 程式或資源：StoreAssets/contracts/portfolio-distinctness.json"
    }
   },
   {
    "key": "55_UsageNow",
-   "duo_receipt": "56_UsageNow.json",
+   "duo_receipt": "55_UsageNow.json",
    "verdict": "pass",
-   "pass_version": "1.0.1",
-   "pass_build": "22",
+   "pass_version": "1.0.3",
+   "pass_build": "25",
    "bundle_id": "com.alice51849.ClaudeUsageMini",
    "asc_app_id": "6818607603",
-   "live_version": "1.0.1",
-   "live_build": "22",
+   "live_version": "1.0.3",
+   "live_build": "25",
    "duoshot_dir": "/Users/alice51849/AgentOffice/deep_qa/state/DUOSHOT/56_UsageNow",
    "via": "direct"
   },
@@ -723,107 +892,28 @@
    "via": "direct"
   }
  ],
- "needs_duo_run": [
-  {
-   "key": "23_Sereno",
-   "duo_receipt": "23_Sereno.json",
-   "verdict": "pass",
-   "pass_version": "1.1.1",
-   "pass_build": "17",
-   "bundle_id": "com.alice51849.Sereno",
-   "asc_app_id": "6788236641",
-   "live_version": "1.1.1",
-   "live_build": "18",
-   "duoshot_dir": "/Users/alice51849/AgentOffice/deep_qa/state/DUOSHOT/23_Sereno",
-   "reason": "差異含 App 程式或資源：DesignSystem/DesignTokens.swift、Managers/AppConfig.swift、Managers/AppModel.swift、Managers/LocalFunnel.swift、Managers/ResumeMix.swift"
-  },
-  {
-   "key": "27_WiFiAid",
-   "duo_receipt": "27_WiFiAid.json",
-   "verdict": "pass",
-   "pass_version": "1.0.12",
-   "pass_build": "17",
-   "bundle_id": "com.alice51849.WiFiAid",
-   "asc_app_id": "6790467886",
-   "live_version": "1.0.13",
-   "live_build": "20",
-   "duoshot_dir": "/Users/alice51849/AgentOffice/deep_qa/state/DUOSHOT/27_WiFiAid",
-   "reason": "差異含 App 程式或資源：WiFiAid.xcodeproj/project.pbxproj、WiFiAid/App/AppModel.swift、WiFiAid/App/RunNetworkCheckIntent.swift、WiFiAid/Managers/ReviewPrompt.swift"
-  },
-  {
-   "key": "37_WiFiAidLite",
-   "duo_receipt": "37_WiFiAidLite.json",
-   "verdict": "pass",
-   "pass_version": "1.0.6",
-   "pass_build": "16",
-   "bundle_id": "com.alice51849.WiFiAidLite",
-   "asc_app_id": "6793414462",
-   "live_version": "1.0.9",
-   "live_build": "20",
-   "duoshot_dir": "/Users/alice51849/AgentOffice/deep_qa/state/DUOSHOT/37_WiFiAidLite",
-   "reason": "差異含 App 程式或資源：LinkLumen.xcodeproj/project.pbxproj、LinkLumen/App/AppModel.swift、LinkLumen/App/RootView.swift、LinkLumen/App/RunNetworkCheckIntent.swift、LinkLumen/Localization/Localization.swift"
-  },
-  {
-   "key": "40_100NotesStudio",
-   "duo_receipt": "41_100NotesStudio.json",
-   "verdict": "pass",
-   "pass_version": "1.0.5",
-   "pass_build": "20",
-   "bundle_id": "com.alice51849.NotesStudio100",
-   "asc_app_id": "6798813048",
-   "live_version": "1.0.8",
-   "live_build": "23",
-   "duoshot_dir": "/Users/alice51849/AgentOffice/deep_qa/state/DUOSHOT/41_100NotesStudio",
-   "reason": "差異含 App 程式或資源：App/NotesStudio100App.swift、Editor/DrawingAutosaveService.swift、Editor/NotebookEditorView.swift、Editor/StudioToolPaletteView.swift、Models/StudioModels.swift"
-  },
-  {
-   "key": "42_BattAI",
-   "duo_receipt": "43_BattAI.json",
-   "verdict": "pass",
-   "pass_version": "1.1.3",
-   "pass_build": "34",
-   "bundle_id": "com.alice51849.BattAI",
-   "asc_app_id": "6802423998",
-   "live_version": "1.1.7",
-   "live_build": "39",
-   "duoshot_dir": "/Users/alice51849/AgentOffice/deep_qa/state/DUOSHOT/43_BattAI",
-   "reason": "repo 找不到線上建置的提交"
-  }
- ],
+ "needs_duo_run": [],
  "not_live": [
   {
-   "key": "50_GBAGo",
-   "duo_receipt": "51_GBAGo.json",
-   "verdict": "pass",
-   "pass_version": "1.0.1",
-   "pass_build": "21",
-   "bundle_id": "com.alice51849.GBAGo",
-   "asc_app_id": "6804564400",
-   "live_version": null,
-   "live_build": null,
-   "duoshot_dir": "/Users/alice51849/AgentOffice/deep_qa/state/DUOSHOT/51_GBAGo",
-   "reason": "線上沒有此版本"
-  },
-  {
-   "key": "54_DuoWallpaperStudio",
-   "duo_receipt": "54_DuoWallpaperStudio.json",
-   "verdict": "pass",
-   "pass_version": "1.0",
-   "pass_build": "4",
-   "bundle_id": "com.alice51849.DuoWallpaperStudio",
-   "asc_app_id": "6824946559",
-   "live_version": null,
-   "live_build": null,
-   "reason": "線上沒有此版本"
-  },
-  {
    "key": "56_MetroTimeHelper",
-   "duo_receipt": "59_MetroTimeHelper.json",
+   "duo_receipt": "56_MetroTimeHelper.json",
    "verdict": "pass",
    "pass_version": "1.0",
    "pass_build": "4",
    "bundle_id": "com.alice51849.MetroTimeHelper",
    "asc_app_id": "6819061896",
+   "live_version": null,
+   "live_build": null,
+   "reason": "線上沒有此版本"
+  },
+  {
+   "key": "60_TripBeeCute",
+   "duo_receipt": "60_TripBeeCute.json",
+   "verdict": "pass",
+   "pass_version": "1.0.0",
+   "pass_build": "1",
+   "bundle_id": "com.alice51849.TripBeeCute",
+   "asc_app_id": "6826987407",
    "live_version": null,
    "live_build": null,
    "reason": "線上沒有此版本"

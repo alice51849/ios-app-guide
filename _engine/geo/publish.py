@@ -8,11 +8,12 @@ ASO 文案(data/<app>_full.json)更新後,跑這支即可讓全球 LLM 索引更
     python geo/publish.py --no-push  # 只重建(不部署/推送)
 """
 import os
+import re
 import subprocess
 import sys
 
 from official_locales import OFFICIAL_LOCALES
-from site_config import PUBLIC_SITE
+from site_config import ORIGIN_HOST, PUBLIC_SITE
 from live_app_manifest import runtime_manifest_path
 from publish_freshness_guard import PublishFreshnessBlocked, require_fresh
 
@@ -28,6 +29,111 @@ PY = sys.executable
 COMMIT_TRAILERS = (
     "\n\nSession-Source: growth-auto"
 )
+
+
+# 2026-11-02 Guide 355ac05aa9（同 10-19 4bce9c82）：以 origin 站址 github.io 重產
+# 1,083 檔、sitemap_index 590→4 筆就推上指南站，部署被 canonical 閘門擋 3 小時。
+# 提交前先驗產物站址與 sitemap 筆數；不放寬部署閘門，只是更早在推送端擋下。
+SITEMAP_LOC_RE = re.compile(r"<loc>\s*([^<\s]+)\s*</loc>")
+CANONICAL_RE = re.compile(
+    r"<link\b[^>]*\brel=[\"']canonical[\"'][^>]*>", re.IGNORECASE
+)
+HREF_RE = re.compile(r"\bhref=[\"']([^\"']+)[\"']", re.IGNORECASE)
+GUARDED_SITEMAPS = ("sitemap_index.xml", "sitemap.xml")
+SITEMAP_MIN_KEEP_RATIO = 0.5
+
+
+class GuideSiteGuardBlocked(RuntimeError):
+    """Generated Guide output points at the wrong site or lost its sitemap."""
+
+
+def _on_public_site(url, public_site):
+    return url == public_site or url.startswith(public_site.rstrip("/") + "/")
+
+
+def _git_show(pages, spec):
+    result = subprocess.run(
+        ["git", "show", spec], cwd=pages, capture_output=True, text=True,
+    )
+    return result.stdout if result.returncode == 0 else None
+
+
+def _staged_paths(pages):
+    result = subprocess.run(
+        ["git", "diff", "--cached", "--name-only", "--diff-filter=AM", "-z"],
+        cwd=pages, capture_output=True, text=True,
+    )
+    if result.returncode != 0:
+        raise GuideSiteGuardBlocked(
+            f"無法列出指南站暫存檔：{(result.stderr or '').strip()[-300:]}"
+        )
+    return [path for path in result.stdout.split("\0") if path]
+
+
+def guide_site_problems(pages, public_site=None, staged=None):
+    """Return problems in the staged Guide tree; empty list means safe to commit.
+
+    * every staged sitemap <loc> and HTML canonical must be on ``public_site``;
+    * ``public_site`` itself must not be the GitHub Pages origin host;
+    * sitemap_index.xml / sitemap.xml may not drop below half of HEAD's entries.
+    """
+    public_site = (public_site or PUBLIC_SITE).rstrip("/")
+    problems = []
+    if public_site.split("://", 1)[-1].split("/", 1)[0] == ORIGIN_HOST:
+        problems.append(f"公開站址 {public_site} 是 origin 網域 {ORIGIN_HOST}")
+    staged = _staged_paths(pages) if staged is None else staged
+    staged_set = set(staged)
+    for name in GUARDED_SITEMAPS:
+        path = os.path.join(pages, name)
+        if name not in staged_set or not os.path.exists(path):
+            continue
+        with open(path, encoding="utf-8", errors="replace") as handle:
+            locs = SITEMAP_LOC_RE.findall(handle.read())
+        foreign = [loc for loc in locs if not _on_public_site(loc, public_site)]
+        if foreign:
+            problems.append(
+                f"{name} 有 {len(foreign)} 筆不在 {public_site}（例 {foreign[0]}）"
+            )
+        previous = _git_show(pages, f"HEAD:{name}")
+        if previous is not None:
+            before = len(SITEMAP_LOC_RE.findall(previous))
+            if before and len(locs) < before * SITEMAP_MIN_KEEP_RATIO:
+                problems.append(
+                    f"{name} 筆數由 {before} 驟降為 {len(locs)}（低於前一版一半）"
+                )
+    bad_canonical = []
+    for name in staged:
+        if not name.endswith(".html"):
+            continue
+        path = os.path.join(pages, name)
+        try:
+            with open(path, encoding="utf-8", errors="replace") as handle:
+                head = handle.read(65536)
+        except OSError:
+            continue
+        for tag in CANONICAL_RE.findall(head):
+            href = HREF_RE.search(tag)
+            if href and href.group(1).startswith("http") and not _on_public_site(
+                href.group(1), public_site
+            ):
+                bad_canonical.append(f"{name} → {href.group(1)}")
+                break
+    if bad_canonical:
+        problems.append(
+            f"{len(bad_canonical)} 個頁面 canonical 不在 {public_site}"
+            f"（例 {bad_canonical[0]}）"
+        )
+    return problems
+
+
+def require_guide_site_identity(pages=None, public_site=None):
+    problems = guide_site_problems(pages or PAGES, public_site)
+    if problems:
+        for problem in problems:
+            print(f"::error::指南站產物站址檢查失敗：{problem}", file=sys.stderr)
+        raise GuideSiteGuardBlocked(
+            "指南站產物站址／sitemap 檢查失敗，拒絕提交與推送：" + "；".join(problems)
+        )
 
 
 def run(cmd, cwd=None, env=None):
@@ -548,6 +654,7 @@ def main():
         print("內容無變更,略過部署與 IndexNow。")
         print("\n✅ GEO 發布完成(無變更)")
         return
+    require_guide_site_identity(PAGES)
     require(["git", "-c", "user.name=alice51849",
              "-c", "user.email=alice51849@users.noreply.github.com",
              "commit", "-m", "Update multilingual GEO pages" + COMMIT_TRAILERS],

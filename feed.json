@@ -1,7 +1,7 @@
 {
  "schema": "lumi.social-feed/v1",
  "date": "2026-11-02",
- "generated_at": "2026-11-02T02:05:06Z",
+ "generated_at": "2026-11-02T08:23:12Z",
  "items": {
   "bluesky": [
    {
@@ -141,48 +141,69 @@
    },
    {
     "kind": "clip",
-    "key": "mochidonestamp/en",
+    "key": "notesstudio100/en",
     "locale": "en",
-    "app": "mochidonestamp",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/8ebu6b.mp4",
-    "hook": "Every time, remembered",
-    "name": "Mochi DoneStamp: Last Time",
-    "title": "Every time, remembered | When Did I Last? Home Upkeep | Mochi DoneStamp",
+    "app": "notesstudio100",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/wrj17p.mp4",
+    "hook": "Review with flashcards",
+    "name": "100 Notes Studio: Pen & Paper",
+    "title": "Review with flashcards | Note Taking, Handwriting & PDF | 100 Notes Studio",
     "tags": [
-     "#LastTime",
-     "#Done",
-     "#Cleaning",
-     "#Family",
-     "#Plant",
-     "#MochiDoneStamp"
+     "#PenPaper",
+     "#Notebook",
+     "#Journal",
+     "#Planner",
+     "#Annotate",
+     "#100NotesStudio"
     ],
-    "caption": "Every time, remembered\nDone? Tap once.\nWhen Did I Last? Home Upkeep\nMochi DoneStamp: Last Time\nSearch “Mochi DoneStamp” on the App Store\nAlso on Google Play\n\n#LastTime #Done #MochiDoneStamp",
+    "caption": "Review with flashcards\nEvery notebook, its own look\nNote Taking, Handwriting & PDF\n100 Notes Studio: Pen & Paper\nSearch “100 Notes Studio” on the App Store\nAlso on Google Play\n\n#PenPaper #Notebook #100NotesStudio",
     "button": "Get it on the App Store",
     "variant": "c",
-    "alt": "Mochi DoneStamp: Last Time — Every time, remembered — Done? Tap once. — When Did I Last? Home Upkeep",
-    "store": "https://apps.apple.com/us/app/id6790800323?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiDoneStamp&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochidonestamp",
+    "alt": "100 Notes Studio: Pen & Paper — Review with flashcards — Every notebook, its own look — Note Taking, Handwriting & PDF",
+    "store": "https://apps.apple.com/us/app/id6798813048?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.NotesStudio100&referrer=utm_source%3Dsocial%26utm_campaign%3Dnotesstudio100",
     "review": {
      "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6790800323?action=write-review"
+     "url": "https://apps.apple.com/app/id6798813048?action=write-review"
     },
     "keywords": [
-     "done",
-     "cleaning",
-     "family",
-     "plant",
-     "filter",
-     "maintenance"
+     "notebook",
+     "journal",
+     "planner",
+     "annotate",
+     "stylus",
+     "lecture"
     ],
-    "keyline": "When Did I Last? Home Upkeep",
+    "keyline": "Note Taking, Handwriting & PDF",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "0ba5cdec3a24a67c",
+     "board": "09d545c91056ba06",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "utility/word/aim990/reimburse/ko",
+    "locale": "ko",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/utility-cards/card-20261102.jpg",
+    "caption": "오늘의 토익 비즈니스 영단어: reimburse  (v.)\n상환하다, 환급하다\n예문: The company will reimburse your travel expenses.\n\nAim990: 8분이면 보이는 토익 약점\nApp Store · Google Play에서 'Aim990' 검색\n\n#영어약점코치 #문법 #듣기",
+    "title": "오늘의 토익 비즈니스 영단어: reimburse  (v.)",
+    "alt": "Aim990 — 오늘의 토익 비즈니스 영단어: reimburse  (v.) — 상환하다, 환급하다 — 예문: The company will reimburse your travel expenses. — 토익 LC RC 8분 진단",
+    "name": "Aim990",
+    "hook": "오늘의 토익 비즈니스 영단어: reimburse  (v.)",
+    "tags": [
+     "#영어약점코치",
+     "#문법",
+     "#듣기",
+     "#독해",
+     "#단어"
+    ],
+    "button": "App Store에서 받기",
+    "store": "https://apps.apple.com/kr/app/id6784974530?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.aim990&referrer=utm_source%3Dsocial%26utm_campaign%3Daim990"
    },
    {
     "kind": "card",
@@ -1929,48 +1950,69 @@
    },
    {
     "kind": "clip",
-    "key": "mochidonestamp/en",
+    "key": "notesstudio100/en",
     "locale": "en",
-    "app": "mochidonestamp",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/8ebu6b.mp4",
-    "hook": "Every time, remembered",
-    "name": "Mochi DoneStamp: Last Time",
-    "title": "Every time, remembered | When Did I Last? Home Upkeep | Mochi DoneStamp",
+    "app": "notesstudio100",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/wrj17p.mp4",
+    "hook": "Review with flashcards",
+    "name": "100 Notes Studio: Pen & Paper",
+    "title": "Review with flashcards | Note Taking, Handwriting & PDF | 100 Notes Studio",
     "tags": [
-     "#LastTime",
-     "#Done",
-     "#Cleaning",
-     "#Family",
-     "#Plant",
-     "#MochiDoneStamp"
+     "#PenPaper",
+     "#Notebook",
+     "#Journal",
+     "#Planner",
+     "#Annotate",
+     "#100NotesStudio"
     ],
-    "caption": "Every time, remembered\nDone? Tap once.\nWhen Did I Last? Home Upkeep\nMochi DoneStamp: Last Time\nSearch “Mochi DoneStamp” on the App Store\nAlso on Google Play\n\n#LastTime #Done #Cleaning #Family #MochiDoneStamp",
+    "caption": "Review with flashcards\nEvery notebook, its own look\nNote Taking, Handwriting & PDF\n100 Notes Studio: Pen & Paper\nSearch “100 Notes Studio” on the App Store\nAlso on Google Play\n\n#PenPaper #Notebook #Journal #Planner #100NotesStudio",
     "button": "Get it on the App Store",
     "variant": "c",
-    "alt": "Mochi DoneStamp: Last Time — Every time, remembered — Done? Tap once. — When Did I Last? Home Upkeep",
-    "store": "https://apps.apple.com/us/app/id6790800323?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiDoneStamp&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochidonestamp",
+    "alt": "100 Notes Studio: Pen & Paper — Review with flashcards — Every notebook, its own look — Note Taking, Handwriting & PDF",
+    "store": "https://apps.apple.com/us/app/id6798813048?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.NotesStudio100&referrer=utm_source%3Dsocial%26utm_campaign%3Dnotesstudio100",
     "review": {
      "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6790800323?action=write-review"
+     "url": "https://apps.apple.com/app/id6798813048?action=write-review"
     },
     "keywords": [
-     "done",
-     "cleaning",
-     "family",
-     "plant",
-     "filter",
-     "maintenance"
+     "notebook",
+     "journal",
+     "planner",
+     "annotate",
+     "stylus",
+     "lecture"
     ],
-    "keyline": "When Did I Last? Home Upkeep",
+    "keyline": "Note Taking, Handwriting & PDF",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "0ba5cdec3a24a67c",
+     "board": "09d545c91056ba06",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "utility/word/aim990/reimburse/ko",
+    "locale": "ko",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/utility-cards/card-20261102.jpg",
+    "caption": "오늘의 토익 비즈니스 영단어: reimburse  (v.)\n상환하다, 환급하다\n예문: The company will reimburse your travel expenses.\n\nAim990: 8분이면 보이는 토익 약점\nApp Store · Google Play에서 'Aim990' 검색\n\n#영어약점코치 #문법 #듣기 #독해 #단어",
+    "title": "오늘의 토익 비즈니스 영단어: reimburse  (v.)",
+    "alt": "Aim990 — 오늘의 토익 비즈니스 영단어: reimburse  (v.) — 상환하다, 환급하다 — 예문: The company will reimburse your travel expenses. — 토익 LC RC 8분 진단",
+    "name": "Aim990",
+    "hook": "오늘의 토익 비즈니스 영단어: reimburse  (v.)",
+    "tags": [
+     "#영어약점코치",
+     "#문법",
+     "#듣기",
+     "#독해",
+     "#단어"
+    ],
+    "button": "App Store에서 받기",
+    "store": "https://apps.apple.com/kr/app/id6784974530?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.aim990&referrer=utm_source%3Dsocial%26utm_campaign%3Daim990"
    }
   ],
   "youtube": [
@@ -2157,60 +2199,60 @@
    },
    {
     "kind": "clip",
-    "key": "mochidonestamp/en",
+    "key": "notesstudio100/en",
     "locale": "en",
-    "app": "mochidonestamp",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/8ebu6b.mp4",
-    "hook": "Every time, remembered",
-    "name": "Mochi DoneStamp: Last Time",
-    "title": "Every time, remembered | When Did I Last? Home Upkeep | Mochi DoneStamp",
+    "app": "notesstudio100",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/wrj17p.mp4",
+    "hook": "Review with flashcards",
+    "name": "100 Notes Studio: Pen & Paper",
+    "title": "Review with flashcards | Note Taking, Handwriting & PDF | 100 Notes Studio",
     "tags": [
-     "#LastTime",
-     "#Done",
-     "#Cleaning",
-     "#Family",
-     "#Plant",
-     "#MochiDoneStamp"
+     "#PenPaper",
+     "#Notebook",
+     "#Journal",
+     "#Planner",
+     "#Annotate",
+     "#100NotesStudio"
     ],
-    "caption": "Every time, remembered\nDone? Tap once.\nWhen Did I Last? Home Upkeep\nMochi DoneStamp: Last Time\nSearch “Mochi DoneStamp” on the App Store\nAlso on Google Play\n\n#LastTime #Done #Cleaning #Family #MochiDoneStamp",
+    "caption": "Review with flashcards\nEvery notebook, its own look\nNote Taking, Handwriting & PDF\n100 Notes Studio: Pen & Paper\nSearch “100 Notes Studio” on the App Store\nAlso on Google Play\n\n#PenPaper #Notebook #Journal #Planner #100NotesStudio",
     "button": "Get it on the App Store",
     "variant": "c",
-    "alt": "Mochi DoneStamp: Last Time — Every time, remembered — Done? Tap once. — When Did I Last? Home Upkeep",
-    "store": "https://apps.apple.com/us/app/id6790800323?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiDoneStamp&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochidonestamp",
+    "alt": "100 Notes Studio: Pen & Paper — Review with flashcards — Every notebook, its own look — Note Taking, Handwriting & PDF",
+    "store": "https://apps.apple.com/us/app/id6798813048?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.NotesStudio100&referrer=utm_source%3Dsocial%26utm_campaign%3Dnotesstudio100",
     "review": {
      "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6790800323?action=write-review"
+     "url": "https://apps.apple.com/app/id6798813048?action=write-review"
     },
     "keywords": [
-     "done",
-     "cleaning",
-     "family",
-     "plant",
-     "filter",
-     "maintenance"
+     "notebook",
+     "journal",
+     "planner",
+     "annotate",
+     "stylus",
+     "lecture"
     ],
-    "keyline": "When Did I Last? Home Upkeep",
+    "keyline": "Note Taking, Handwriting & PDF",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "0ba5cdec3a24a67c",
+     "board": "09d545c91056ba06",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "youtube": {
-     "title": "Every time, remembered | Mochi DoneStamp #Shorts",
-     "description": "Every time, remembered\nDone? Tap once.\nWhen Did I Last? Home Upkeep\n\nMochi DoneStamp: Last Time\nApp Store: https://apps.apple.com/us/app/id6790800323?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiDoneStamp&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochidonestamp\nAlready using this app? Rate or review it on the App Store\nhttps://apps.apple.com/app/id6790800323?action=write-review\n\ndone · cleaning · family · plant · filter · maintenance\n\n#Shorts #LastTime #MochiDoneStamp",
+     "title": "Review with flashcards | 100 Notes Studio #Shorts",
+     "description": "Review with flashcards\nEvery notebook, its own look\nNote Taking, Handwriting & PDF\n\n100 Notes Studio: Pen & Paper\nApp Store: https://apps.apple.com/us/app/id6798813048?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.NotesStudio100&referrer=utm_source%3Dsocial%26utm_campaign%3Dnotesstudio100\nAlready using this app? Rate or review it on the App Store\nhttps://apps.apple.com/app/id6798813048?action=write-review\n\nnotebook · journal · planner · annotate · stylus · lecture\n\n#Shorts #PenPaper #100NotesStudio",
      "tags": [
-      "done",
-      "cleaning",
-      "family",
-      "plant",
-      "filter",
-      "maintenance",
-      "LastTime",
-      "MochiDoneStamp",
-      "Mochi DoneStamp"
+      "notebook",
+      "journal",
+      "planner",
+      "annotate",
+      "stylus",
+      "lecture",
+      "PenPaper",
+      "100NotesStudio",
+      "100 Notes Studio"
      ]
     },
     "slot": 15
@@ -2366,52 +2408,77 @@
    },
    {
     "kind": "clip",
-    "key": "mochidonestamp/en",
+    "key": "notesstudio100/en",
     "locale": "en",
-    "app": "mochidonestamp",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/8ebu6b.mp4",
-    "hook": "Every time, remembered",
-    "name": "Mochi DoneStamp: Last Time",
-    "title": "Every time, remembered | When Did I Last? Home Upkeep | Mochi DoneStamp",
+    "app": "notesstudio100",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/wrj17p.mp4",
+    "hook": "Review with flashcards",
+    "name": "100 Notes Studio: Pen & Paper",
+    "title": "Review with flashcards | Note Taking, Handwriting & PDF | 100 Notes Studio",
     "tags": [
-     "#LastTime",
-     "#Done",
-     "#Cleaning",
-     "#Family",
-     "#Plant",
-     "#MochiDoneStamp"
+     "#PenPaper",
+     "#Notebook",
+     "#Journal",
+     "#Planner",
+     "#Annotate",
+     "#100NotesStudio"
     ],
-    "caption": "Every time, remembered\nDone? Tap once.\nWhen Did I Last? Home Upkeep\nMochi DoneStamp: Last Time\nSearch “Mochi DoneStamp” on the App Store\nAlso on Google Play\n\n#LastTime #Done #Cleaning #Family #MochiDoneStamp",
+    "caption": "Review with flashcards\nEvery notebook, its own look\nNote Taking, Handwriting & PDF\n100 Notes Studio: Pen & Paper\nSearch “100 Notes Studio” on the App Store\nAlso on Google Play\n\n#PenPaper #Notebook #Journal #Planner #100NotesStudio",
     "button": "Get it on the App Store",
     "variant": "c",
-    "alt": "Mochi DoneStamp: Last Time — Every time, remembered — Done? Tap once. — When Did I Last? Home Upkeep",
-    "store": "https://apps.apple.com/us/app/id6790800323?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiDoneStamp&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochidonestamp",
+    "alt": "100 Notes Studio: Pen & Paper — Review with flashcards — Every notebook, its own look — Note Taking, Handwriting & PDF",
+    "store": "https://apps.apple.com/us/app/id6798813048?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.NotesStudio100&referrer=utm_source%3Dsocial%26utm_campaign%3Dnotesstudio100",
     "review": {
      "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6790800323?action=write-review"
+     "url": "https://apps.apple.com/app/id6798813048?action=write-review"
     },
     "keywords": [
-     "done",
-     "cleaning",
-     "family",
-     "plant",
-     "filter",
-     "maintenance"
+     "notebook",
+     "journal",
+     "planner",
+     "annotate",
+     "stylus",
+     "lecture"
     ],
-    "keyline": "When Did I Last? Home Upkeep",
+    "keyline": "Note Taking, Handwriting & PDF",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "0ba5cdec3a24a67c",
+     "board": "09d545c91056ba06",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "Every time, remembered\nDone? Tap once.\nWhen Did I Last? Home Upkeep\nMochi DoneStamp: Last Time\nSearch “Mochi DoneStamp” on the App Store\nAlso on Google Play\n\n#LastTime #Done #Cleaning #Family #MochiDoneStamp\n\nGet it on the App Store: https://apps.apple.com/us/app/id6790800323?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiDoneStamp&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochidonestamp",
-     "link": "https://apps.apple.com/us/app/id6790800323?pt=118326163&ct=social&mt=8"
+     "description": "Review with flashcards\nEvery notebook, its own look\nNote Taking, Handwriting & PDF\n100 Notes Studio: Pen & Paper\nSearch “100 Notes Studio” on the App Store\nAlso on Google Play\n\n#PenPaper #Notebook #Journal #Planner #100NotesStudio\n\nGet it on the App Store: https://apps.apple.com/us/app/id6798813048?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.NotesStudio100&referrer=utm_source%3Dsocial%26utm_campaign%3Dnotesstudio100",
+     "link": "https://apps.apple.com/us/app/id6798813048?pt=118326163&ct=social&mt=8"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "utility/word/aim990/reimburse/ko",
+    "locale": "ko",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/utility-cards/card-20261102.jpg",
+    "caption": "오늘의 토익 비즈니스 영단어: reimburse  (v.)\n상환하다, 환급하다\n예문: The company will reimburse your travel expenses.\n\nAim990: 8분이면 보이는 토익 약점\nApp Store · Google Play에서 'Aim990' 검색\n\n#영어약점코치 #문법 #듣기 #독해 #단어",
+    "title": "오늘의 토익 비즈니스 영단어: reimburse  (v.)",
+    "alt": "Aim990 — 오늘의 토익 비즈니스 영단어: reimburse  (v.) — 상환하다, 환급하다 — 예문: The company will reimburse your travel expenses. — 토익 LC RC 8분 진단",
+    "name": "Aim990",
+    "hook": "오늘의 토익 비즈니스 영단어: reimburse  (v.)",
+    "tags": [
+     "#영어약점코치",
+     "#문법",
+     "#듣기",
+     "#독해",
+     "#단어"
+    ],
+    "button": "App Store에서 받기",
+    "store": "https://apps.apple.com/kr/app/id6784974530?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.aim990&referrer=utm_source%3Dsocial%26utm_campaign%3Daim990",
+    "pinterest": {
+     "description": "오늘의 토익 비즈니스 영단어: reimburse  (v.)\n상환하다, 환급하다\n예문: The company will reimburse your travel expenses.\n\nAim990: 8분이면 보이는 토익 약점\nApp Store · Google Play에서 'Aim990' 검색\n\n#영어약점코치 #문법 #듣기 #독해 #단어\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6784974530?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.aim990&referrer=utm_source%3Dsocial%26utm_campaign%3Daim990",
+     "link": "https://apps.apple.com/kr/app/id6784974530?pt=118326163&ct=social&mt=8"
+    }
    },
    {
     "kind": "card",
@@ -6620,49 +6687,49 @@
    },
    {
     "kind": "clip",
-    "key": "mochidonestamp/en",
+    "key": "notesstudio100/en",
     "locale": "en",
-    "app": "mochidonestamp",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/8ebu6b.mp4",
-    "hook": "Every time, remembered",
-    "name": "Mochi DoneStamp: Last Time",
-    "title": "Every time, remembered | When Did I Last? Home Upkeep | Mochi DoneStamp",
+    "app": "notesstudio100",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/wrj17p.mp4",
+    "hook": "Review with flashcards",
+    "name": "100 Notes Studio: Pen & Paper",
+    "title": "Review with flashcards | Note Taking, Handwriting & PDF | 100 Notes Studio",
     "tags": [
-     "#LastTime",
-     "#Done",
-     "#Cleaning",
-     "#Family",
-     "#Plant",
-     "#MochiDoneStamp"
+     "#PenPaper",
+     "#Notebook",
+     "#Journal",
+     "#Planner",
+     "#Annotate",
+     "#100NotesStudio"
     ],
-    "caption": "Every time, remembered\nDone? Tap once.\nWhen Did I Last? Home Upkeep\nMochi DoneStamp: Last Time\nSearch “Mochi DoneStamp” on the App Store\nAlso on Google Play\n\n#LastTime #Done #Cleaning #Family #MochiDoneStamp",
+    "caption": "Review with flashcards\nEvery notebook, its own look\nNote Taking, Handwriting & PDF\n100 Notes Studio: Pen & Paper\nSearch “100 Notes Studio” on the App Store\nAlso on Google Play\n\n#PenPaper #Notebook #Journal #Planner #100NotesStudio",
     "button": "Get it on the App Store",
     "variant": "c",
-    "alt": "Mochi DoneStamp: Last Time — Every time, remembered — Done? Tap once. — When Did I Last? Home Upkeep",
-    "store": "https://apps.apple.com/us/app/id6790800323?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiDoneStamp&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochidonestamp",
+    "alt": "100 Notes Studio: Pen & Paper — Review with flashcards — Every notebook, its own look — Note Taking, Handwriting & PDF",
+    "store": "https://apps.apple.com/us/app/id6798813048?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.NotesStudio100&referrer=utm_source%3Dsocial%26utm_campaign%3Dnotesstudio100",
     "review": {
      "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6790800323?action=write-review"
+     "url": "https://apps.apple.com/app/id6798813048?action=write-review"
     },
     "keywords": [
-     "done",
-     "cleaning",
-     "family",
-     "plant",
-     "filter",
-     "maintenance"
+     "notebook",
+     "journal",
+     "planner",
+     "annotate",
+     "stylus",
+     "lecture"
     ],
-    "keyline": "When Did I Last? Home Upkeep",
+    "keyline": "Note Taking, Handwriting & PDF",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "0ba5cdec3a24a67c",
+     "board": "09d545c91056ba06",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "Every time, remembered\nDone? Tap once.\nWhen Did I Last? Home Upkeep\nMochi DoneStamp: Last Time\nSearch “Mochi DoneStamp” on the App Store\nAlso on Google Play\n\n#LastTime #Done #Cleaning #Family #MochiDoneStamp\n\nGet it on the App Store: https://apps.apple.com/us/app/id6790800323?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiDoneStamp&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochidonestamp"
+     "caption": "Review with flashcards\nEvery notebook, its own look\nNote Taking, Handwriting & PDF\n100 Notes Studio: Pen & Paper\nSearch “100 Notes Studio” on the App Store\nAlso on Google Play\n\n#PenPaper #Notebook #Journal #Planner #100NotesStudio\n\nGet it on the App Store: https://apps.apple.com/us/app/id6798813048?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.NotesStudio100&referrer=utm_source%3Dsocial%26utm_campaign%3Dnotesstudio100"
     },
     "slot": 15
    }
@@ -7212,231 +7279,6 @@
    },
    {
     "kind": "clip",
-    "key": "onepageppt/en",
-    "locale": "en",
-    "app": "onepageppt",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/ygk4g4.mp4",
-    "hook": "Export editable PPTX",
-    "name": "OnePage PPT: AI Slide Maker",
-    "title": "Export editable PPTX | Presentation & Infographic | OnePage PPT",
-    "tags": [
-     "#AISlideMaker",
-     "#Deck",
-     "#Pitch",
-     "#Chart",
-     "#Graph",
-     "#OnePagePPT"
-    ],
-    "caption": "Export editable PPTX\nPaste notes, PDFs, screenshots\nPresentation & Infographic\nOnePage PPT: AI Slide Maker\nSearch “OnePage PPT” on the App Store\nAlso on Google Play\n\n#AISlideMaker #Deck #OnePagePPT",
-    "button": "Get it on the App Store",
-    "variant": "c",
-    "alt": "OnePage PPT: AI Slide Maker — Export editable PPTX — Paste notes, PDFs, screenshots — Presentation & Infographic",
-    "store": "https://apps.apple.com/us/app/id6798814385?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt",
-    "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6798814385?action=write-review"
-    },
-    "keywords": [
-     "deck",
-     "pitch",
-     "chart",
-     "graph",
-     "diagram",
-     "generator"
-    ],
-    "keyline": "Presentation & Infographic",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "3770a5c2653a56c0",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "boost_rank": 4
-   },
-   {
-    "kind": "clip",
-    "key": "onepageppt/zh-Hant",
-    "locale": "zh-Hant",
-    "app": "onepageppt",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/2a6roi.mp4",
-    "hook": "貼上筆記、PDF 或截圖",
-    "name": "OnePage PPT: AI 一頁簡報",
-    "title": "貼上筆記、PDF 或截圖 | 簡報製作・筆記截圖秒變投影片 | OnePage PPT 一頁簡報",
-    "tags": [
-     "#AI一頁簡報",
-     "#懶人包",
-     "#重點整理",
-     "#摘要",
-     "#會議紀錄",
-     "#OnePagePPT一頁簡報"
-    ],
-    "caption": "貼上筆記、PDF 或截圖\n一鍵換風格\n簡報製作・筆記截圖秒變投影片\nOnePage PPT: AI 一頁簡報\n在 App Store 搜尋「一頁 摘要」\nAndroid 版在 Google Play\n\n#AI一頁簡報 #懶人包 #OnePagePPT一頁簡報",
-    "button": "在 App Store 下載",
-    "variant": "b",
-    "alt": "OnePage PPT: AI 一頁簡報 — 貼上筆記、PDF 或截圖 — 一鍵換風格 — 簡報製作・筆記截圖秒變投影片",
-    "store": "https://apps.apple.com/tw/app/id6798814385?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt",
-    "review": {
-     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
-     "url": "https://apps.apple.com/app/id6798814385?action=write-review"
-    },
-    "keywords": [
-     "懶人包",
-     "重點整理",
-     "摘要",
-     "會議紀錄",
-     "報告",
-     "生成"
-    ],
-    "keyline": "簡報製作・筆記截圖秒變投影片",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "3770a5c2653a56c0",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "boost_rank": 4
-   },
-   {
-    "kind": "clip",
-    "key": "onepageppt/ja",
-    "locale": "ja",
-    "app": "onepageppt",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/eunx79.mp4",
-    "hook": "メモもPDFも スクショも",
-    "name": "OnePage PPT: AI資料作成",
-    "title": "メモもPDFも スクショも | メモからプレゼン資料・スライドへ | OnePage PPT AI資料作成",
-    "tags": [
-     "#AI資料作成",
-     "#要約",
-     "#議事録",
-     "#会議",
-     "#企画書",
-     "#OnePagePPTAI資料作成"
-    ],
-    "caption": "メモもPDFも スクショも\nデザインも ワンタップで一新\nメモからプレゼン資料・スライドへ\nOnePage PPT: AI資料作成\nApp Storeで「OnePage PPT AI資料作成」を検索\nAndroidはGoogle Playで\n\n#AI資料作成 #要約 #OnePagePPTAI資料作成",
-    "button": "App Storeで入手",
-    "variant": "b",
-    "alt": "OnePage PPT: AI資料作成 — メモもPDFも スクショも — デザインも ワンタップで一新 — メモからプレゼン資料・スライドへ",
-    "store": "https://apps.apple.com/jp/app/id6798814385?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt",
-    "review": {
-     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
-     "url": "https://apps.apple.com/app/id6798814385?action=write-review"
-    },
-    "keywords": [
-     "要約",
-     "議事録",
-     "会議",
-     "企画書",
-     "報告書",
-     "レポート"
-    ],
-    "keyline": "メモからプレゼン資料・スライドへ",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "3770a5c2653a56c0",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "boost_rank": 4
-   },
-   {
-    "kind": "clip",
-    "key": "onepageppt/ko",
-    "locale": "ko",
-    "app": "onepageppt",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/zpx40x.mp4",
-    "hook": "메모·PDF·캡처 그대로 붙여넣기",
-    "name": "OnePage PPT: AI 발표자료",
-    "title": "메모·PDF·캡처 그대로 붙여넣기 | AI 발표자료 | OnePage PPT 발표자료",
-    "tags": [
-     "#AI발표자료",
-     "#프레젠테이션",
-     "#요약",
-     "#회의록",
-     "#보고서",
-     "#OnePagePPT발표자료"
-    ],
-    "caption": "메모·PDF·캡처 그대로 붙여넣기\n디자인도 탭 한 번에 변신\nOnePage PPT: AI 발표자료\nApp Store에서 'OnePage PPT 발표자료' 검색\nAndroid는 Google Play에서\n\n#AI발표자료 #프레젠테이션 #OnePagePPT발표자료",
-    "button": "App Store에서 받기",
-    "variant": "b",
-    "alt": "OnePage PPT: AI 발표자료 — 메모·PDF·캡처 그대로 붙여넣기 — 디자인도 탭 한 번에 변신",
-    "store": "https://apps.apple.com/kr/app/id6798814385?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt",
-    "review": {
-     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
-     "url": "https://apps.apple.com/app/id6798814385?action=write-review"
-    },
-    "keywords": [
-     "프레젠테이션",
-     "요약",
-     "회의록",
-     "보고서",
-     "차트",
-     "그래프"
-    ],
-    "keyline": "AI 발표자료",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "3770a5c2653a56c0",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "boost_rank": 4
-   },
-   {
-    "kind": "clip",
-    "key": "onepageppt/de",
-    "locale": "de",
-    "app": "onepageppt",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/11zznw.mp4",
-    "hook": "Notizen, PDFs, Screenshots einfügen",
-    "name": "OnePage PPT: KI Folien",
-    "title": "Notizen, PDFs, Screenshots einfügen | KI Folien | OnePage PPT",
-    "tags": [
-     "#KIFolien",
-     "#Zusammenfassung",
-     "#Erstellen",
-     "#Generator",
-     "#Notizen",
-     "#OnePagePPT"
-    ],
-    "caption": "Notizen, PDFs, Screenshots einfügen\nSofort neu gestalten\nOnePage PPT: KI Folien\nIm App Store nach „OnePage PPT“ suchen\nAuch bei Google Play\n\n#KIFolien #Zusammenfassung #OnePagePPT",
-    "button": "Im App Store laden",
-    "variant": "b",
-    "alt": "OnePage PPT: KI Folien — Notizen, PDFs, Screenshots einfügen — Sofort neu gestalten",
-    "store": "https://apps.apple.com/de/app/id6798814385?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt",
-    "review": {
-     "label": "Sie nutzen diese App bereits? Bewerten oder rezensieren Sie sie im App Store",
-     "url": "https://apps.apple.com/app/id6798814385?action=write-review"
-    },
-    "keywords": [
-     "zusammenfassung",
-     "erstellen",
-     "generator",
-     "notizen",
-     "referat",
-     "vortrag"
-    ],
-    "keyline": "KI Folien",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "3770a5c2653a56c0",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "boost_rank": 4
-   },
-   {
-    "kind": "clip",
     "key": "duowallpaperstudio/en",
     "locale": "en",
     "app": "duowallpaperstudio",
@@ -7478,7 +7320,7 @@
      "real_recording": false,
      "rules": "2026-10-18"
     },
-    "boost_rank": 5
+    "boost_rank": 4
    },
    {
     "kind": "clip",
@@ -7523,7 +7365,7 @@
      "real_recording": false,
      "rules": "2026-10-18"
     },
-    "boost_rank": 5
+    "boost_rank": 4
    },
    {
     "kind": "clip",
@@ -7568,7 +7410,7 @@
      "real_recording": false,
      "rules": "2026-10-18"
     },
-    "boost_rank": 5
+    "boost_rank": 4
    },
    {
     "kind": "clip",
@@ -7613,7 +7455,7 @@
      "real_recording": false,
      "rules": "2026-10-18"
     },
-    "boost_rank": 5
+    "boost_rank": 4
    },
    {
     "kind": "clip",
@@ -7658,7 +7500,7 @@
      "real_recording": false,
      "rules": "2026-10-18"
     },
-    "boost_rank": 5
+    "boost_rank": 4
    },
    {
     "kind": "clip",
@@ -7700,6 +7542,231 @@
      "store_claims_ok": true,
      "screen_text_ok": true,
      "board": "f96f07572e601261",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "boost_rank": 4
+   },
+   {
+    "kind": "clip",
+    "key": "gmoney/en",
+    "locale": "en",
+    "app": "gmoney",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/txsq79.mp4",
+    "hook": "See what's left today",
+    "name": "G+Money: Spending & Budget",
+    "title": "See what's left today | Spending & Budget | G+Money",
+    "tags": [
+     "#SpendingBudget",
+     "#Multicurrency",
+     "#Export",
+     "#Savings",
+     "#Finance",
+     "#GMoney"
+    ],
+    "caption": "See what's left today\nSee where it went, by category\nG+Money: Spending & Budget\nSearch “G+Money” on the App Store\nAlso on Google Play\n\n#SpendingBudget #Multicurrency #GMoney",
+    "button": "Get it on the App Store",
+    "variant": "c",
+    "alt": "G+Money: Spending & Budget — See what's left today — See where it went, by category",
+    "store": "https://apps.apple.com/us/app/id6755782939?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
+    "review": {
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
+    },
+    "keywords": [
+     "multicurrency",
+     "export",
+     "savings",
+     "finance",
+     "wallet",
+     "bookkeeping"
+    ],
+    "keyline": "Spending & Budget",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "987a384c8c1d4d89",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "boost_rank": 5
+   },
+   {
+    "kind": "clip",
+    "key": "gmoney/zh-Hant",
+    "locale": "zh-Hant",
+    "app": "gmoney",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/ve63hr.mp4",
+    "hook": "按分類 看見錢花去哪",
+    "name": "G+Money：日常記帳·預算·匯率",
+    "title": "按分類 看見錢花去哪 | 多幣別・離線記帳・分類報表 | G+Money 記帳",
+    "tags": [
+     "#日常記帳預算匯率",
+     "#多國貨幣",
+     "#本機儲存",
+     "#換匯",
+     "#出差",
+     "#GMoney記帳"
+    ],
+    "caption": "按分類 看見錢花去哪\n換算＋記帳 離線也能用\n多幣別・離線記帳・分類報表\nG+Money：日常記帳·預算·匯率\n在 App Store 搜尋「G+Money 記帳」\nAndroid 版在 Google Play\n\n#日常記帳預算匯率 #多國貨幣 #GMoney記帳",
+    "button": "在 App Store 下載",
+    "variant": "b",
+    "alt": "G+Money：日常記帳·預算·匯率 — 按分類 看見錢花去哪 — 換算＋記帳 離線也能用 — 多幣別・離線記帳・分類報表",
+    "store": "https://apps.apple.com/tw/app/id6755782939?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
+    "review": {
+     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
+     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
+    },
+    "keywords": [
+     "多國貨幣",
+     "本機儲存",
+     "換匯",
+     "出差",
+     "收支",
+     "記帳日記"
+    ],
+    "keyline": "多幣別・離線記帳・分類報表",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "987a384c8c1d4d89",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "boost_rank": 5
+   },
+   {
+    "kind": "clip",
+    "key": "gmoney/ja",
+    "locale": "ja",
+    "app": "gmoney",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/lk7ile.mp4",
+    "hook": "カテゴリ別に 使い道が見える",
+    "name": "G+Money：家計簿・予算・為替",
+    "title": "カテゴリ別に 使い道が見える | 支出管理・お金管理・出費記録 | G+Money 家計簿",
+    "tags": [
+     "#家計簿予算為替",
+     "#お小遣い帳",
+     "#通貨換算",
+     "#貯金",
+     "#支出記録",
+     "#GMoney家計簿"
+    ],
+    "caption": "カテゴリ別に 使い道が見える\n換算も記録も オフラインでOK\n支出管理・お金管理・出費記録\nG+Money：家計簿・予算・為替\nApp Storeで「G+Money 家計簿」を検索\nAndroidはGoogle Playで\n\n#家計簿予算為替 #お小遣い帳 #GMoney家計簿",
+    "button": "App Storeで入手",
+    "variant": "b",
+    "alt": "G+Money：家計簿・予算・為替 — カテゴリ別に 使い道が見える — 換算も記録も オフラインでOK — 支出管理・お金管理・出費記録",
+    "store": "https://apps.apple.com/jp/app/id6755782939?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
+    "review": {
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
+    },
+    "keywords": [
+     "お小遣い帳",
+     "通貨換算",
+     "貯金",
+     "支出記録",
+     "レート計算",
+     "家計管理"
+    ],
+    "keyline": "支出管理・お金管理・出費記録",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "987a384c8c1d4d89",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "boost_rank": 5
+   },
+   {
+    "kind": "clip",
+    "key": "gmoney/ko",
+    "locale": "ko",
+    "app": "gmoney",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/nck8iy.mp4",
+    "hook": "분류별로 어디에 썼는지 한눈에",
+    "name": "G+Money：가계부·예산·환율",
+    "title": "분류별로 어디에 썼는지 한눈에 | 생활비·소비기록·지출관리 | G+Money 가계부",
+    "tags": [
+     "#가계부예산환율",
+     "#용돈기입장",
+     "#환율계산기",
+     "#통화변환",
+     "#가계부앱",
+     "#GMoney가계부"
+    ],
+    "caption": "분류별로 어디에 썼는지 한눈에\n환율 계산·기록 오프라인에서도\n생활비·소비기록·지출관리\nG+Money：가계부·예산·환율\nApp Store에서 'G+Money 가계부' 검색\nAndroid는 Google Play에서\n\n#가계부예산환율 #용돈기입장 #GMoney가계부",
+    "button": "App Store에서 받기",
+    "variant": "b",
+    "alt": "G+Money：가계부·예산·환율 — 분류별로 어디에 썼는지 한눈에 — 환율 계산·기록 오프라인에서도 — 생활비·소비기록·지출관리",
+    "store": "https://apps.apple.com/kr/app/id6755782939?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
+    "review": {
+     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
+     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
+    },
+    "keywords": [
+     "용돈기입장",
+     "환율계산기",
+     "통화변환",
+     "가계부앱",
+     "돈관리",
+     "절약"
+    ],
+    "keyline": "생활비·소비기록·지출관리",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "987a384c8c1d4d89",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "boost_rank": 5
+   },
+   {
+    "kind": "clip",
+    "key": "gmoney/id",
+    "locale": "id",
+    "app": "gmoney",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/jgixdt.mp4",
+    "hook": "Lihat ke mana uangmu, per kategori",
+    "name": "G+Money: Catat & atur anggaran",
+    "title": "Lihat ke mana uangmu, per kategori | Catat & atur anggaran | G+Money",
+    "tags": [
+     "#CatatAturAnggaran",
+     "#Catatan",
+     "#Keuangan",
+     "#Konverter",
+     "#Mata",
+     "#GMoney"
+    ],
+    "caption": "Lihat ke mana uangmu, per kategori\nKonversi & catat, tanpa sinyal\nG+Money: Catat & atur anggaran\nCari “G+Money” di App Store\nJuga ada di Google Play\n\n#CatatAturAnggaran #Catatan #GMoney",
+    "button": "Unduh di App Store",
+    "variant": "b",
+    "alt": "G+Money: Catat & atur anggaran — Lihat ke mana uangmu, per kategori — Konversi & catat, tanpa sinyal",
+    "store": "https://apps.apple.com/id/app/id6755782939?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
+    "review": {
+     "label": "Sudah memakai aplikasi ini? Beri nilai atau ulasan di App Store",
+     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
+    },
+    "keywords": [
+     "catatan",
+     "keuangan",
+     "konverter",
+     "mata",
+     "uang",
+     "pencatat"
+    ],
+    "keyline": "Catat & atur anggaran",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "987a384c8c1d4d89",
      "real_recording": false,
      "rules": "2026-10-18"
     },
@@ -12452,6 +12519,226 @@
      "store_claims_ok": true,
      "screen_text_ok": true,
      "board": "09d545c91056ba06",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "onepageppt/en",
+    "locale": "en",
+    "app": "onepageppt",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/ygk4g4.mp4",
+    "hook": "Export editable PPTX",
+    "name": "OnePage PPT: AI Slide Maker",
+    "title": "Export editable PPTX | Presentation & Infographic | OnePage PPT",
+    "tags": [
+     "#AISlideMaker",
+     "#Deck",
+     "#Pitch",
+     "#Chart",
+     "#Graph",
+     "#OnePagePPT"
+    ],
+    "caption": "Export editable PPTX\nPaste notes, PDFs, screenshots\nPresentation & Infographic\nOnePage PPT: AI Slide Maker\nSearch “OnePage PPT” on the App Store\nAlso on Google Play\n\n#AISlideMaker #Deck #OnePagePPT",
+    "button": "Get it on the App Store",
+    "variant": "c",
+    "alt": "OnePage PPT: AI Slide Maker — Export editable PPTX — Paste notes, PDFs, screenshots — Presentation & Infographic",
+    "store": "https://apps.apple.com/us/app/id6798814385?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt",
+    "review": {
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6798814385?action=write-review"
+    },
+    "keywords": [
+     "deck",
+     "pitch",
+     "chart",
+     "graph",
+     "diagram",
+     "generator"
+    ],
+    "keyline": "Presentation & Infographic",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "3770a5c2653a56c0",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "onepageppt/zh-Hant",
+    "locale": "zh-Hant",
+    "app": "onepageppt",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/2a6roi.mp4",
+    "hook": "貼上筆記、PDF 或截圖",
+    "name": "OnePage PPT: AI 一頁簡報",
+    "title": "貼上筆記、PDF 或截圖 | 簡報製作・筆記截圖秒變投影片 | OnePage PPT 一頁簡報",
+    "tags": [
+     "#AI一頁簡報",
+     "#懶人包",
+     "#重點整理",
+     "#摘要",
+     "#會議紀錄",
+     "#OnePagePPT一頁簡報"
+    ],
+    "caption": "貼上筆記、PDF 或截圖\n一鍵換風格\n簡報製作・筆記截圖秒變投影片\nOnePage PPT: AI 一頁簡報\n在 App Store 搜尋「一頁 摘要」\nAndroid 版在 Google Play\n\n#AI一頁簡報 #懶人包 #OnePagePPT一頁簡報",
+    "button": "在 App Store 下載",
+    "variant": "b",
+    "alt": "OnePage PPT: AI 一頁簡報 — 貼上筆記、PDF 或截圖 — 一鍵換風格 — 簡報製作・筆記截圖秒變投影片",
+    "store": "https://apps.apple.com/tw/app/id6798814385?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt",
+    "review": {
+     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
+     "url": "https://apps.apple.com/app/id6798814385?action=write-review"
+    },
+    "keywords": [
+     "懶人包",
+     "重點整理",
+     "摘要",
+     "會議紀錄",
+     "報告",
+     "生成"
+    ],
+    "keyline": "簡報製作・筆記截圖秒變投影片",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "3770a5c2653a56c0",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "onepageppt/ja",
+    "locale": "ja",
+    "app": "onepageppt",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/eunx79.mp4",
+    "hook": "メモもPDFも スクショも",
+    "name": "OnePage PPT: AI資料作成",
+    "title": "メモもPDFも スクショも | メモからプレゼン資料・スライドへ | OnePage PPT AI資料作成",
+    "tags": [
+     "#AI資料作成",
+     "#要約",
+     "#議事録",
+     "#会議",
+     "#企画書",
+     "#OnePagePPTAI資料作成"
+    ],
+    "caption": "メモもPDFも スクショも\nデザインも ワンタップで一新\nメモからプレゼン資料・スライドへ\nOnePage PPT: AI資料作成\nApp Storeで「OnePage PPT AI資料作成」を検索\nAndroidはGoogle Playで\n\n#AI資料作成 #要約 #OnePagePPTAI資料作成",
+    "button": "App Storeで入手",
+    "variant": "b",
+    "alt": "OnePage PPT: AI資料作成 — メモもPDFも スクショも — デザインも ワンタップで一新 — メモからプレゼン資料・スライドへ",
+    "store": "https://apps.apple.com/jp/app/id6798814385?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt",
+    "review": {
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6798814385?action=write-review"
+    },
+    "keywords": [
+     "要約",
+     "議事録",
+     "会議",
+     "企画書",
+     "報告書",
+     "レポート"
+    ],
+    "keyline": "メモからプレゼン資料・スライドへ",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "3770a5c2653a56c0",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "onepageppt/ko",
+    "locale": "ko",
+    "app": "onepageppt",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/zpx40x.mp4",
+    "hook": "메모·PDF·캡처 그대로 붙여넣기",
+    "name": "OnePage PPT: AI 발표자료",
+    "title": "메모·PDF·캡처 그대로 붙여넣기 | AI 발표자료 | OnePage PPT 발표자료",
+    "tags": [
+     "#AI발표자료",
+     "#프레젠테이션",
+     "#요약",
+     "#회의록",
+     "#보고서",
+     "#OnePagePPT발표자료"
+    ],
+    "caption": "메모·PDF·캡처 그대로 붙여넣기\n디자인도 탭 한 번에 변신\nOnePage PPT: AI 발표자료\nApp Store에서 'OnePage PPT 발표자료' 검색\nAndroid는 Google Play에서\n\n#AI발표자료 #프레젠테이션 #OnePagePPT발표자료",
+    "button": "App Store에서 받기",
+    "variant": "b",
+    "alt": "OnePage PPT: AI 발표자료 — 메모·PDF·캡처 그대로 붙여넣기 — 디자인도 탭 한 번에 변신",
+    "store": "https://apps.apple.com/kr/app/id6798814385?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt",
+    "review": {
+     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
+     "url": "https://apps.apple.com/app/id6798814385?action=write-review"
+    },
+    "keywords": [
+     "프레젠테이션",
+     "요약",
+     "회의록",
+     "보고서",
+     "차트",
+     "그래프"
+    ],
+    "keyline": "AI 발표자료",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "3770a5c2653a56c0",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "onepageppt/de",
+    "locale": "de",
+    "app": "onepageppt",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/11zznw.mp4",
+    "hook": "Notizen, PDFs, Screenshots einfügen",
+    "name": "OnePage PPT: KI Folien",
+    "title": "Notizen, PDFs, Screenshots einfügen | KI Folien | OnePage PPT",
+    "tags": [
+     "#KIFolien",
+     "#Zusammenfassung",
+     "#Erstellen",
+     "#Generator",
+     "#Notizen",
+     "#OnePagePPT"
+    ],
+    "caption": "Notizen, PDFs, Screenshots einfügen\nSofort neu gestalten\nOnePage PPT: KI Folien\nIm App Store nach „OnePage PPT“ suchen\nAuch bei Google Play\n\n#KIFolien #Zusammenfassung #OnePagePPT",
+    "button": "Im App Store laden",
+    "variant": "b",
+    "alt": "OnePage PPT: KI Folien — Notizen, PDFs, Screenshots einfügen — Sofort neu gestalten",
+    "store": "https://apps.apple.com/de/app/id6798814385?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt",
+    "review": {
+     "label": "Sie nutzen diese App bereits? Bewerten oder rezensieren Sie sie im App Store",
+     "url": "https://apps.apple.com/app/id6798814385?action=write-review"
+    },
+    "keywords": [
+     "zusammenfassung",
+     "erstellen",
+     "generator",
+     "notizen",
+     "referat",
+     "vortrag"
+    ],
+    "keyline": "KI Folien",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "3770a5c2653a56c0",
      "real_recording": false,
      "rules": "2026-10-18"
     }
@@ -18043,226 +18330,6 @@
    },
    {
     "kind": "clip",
-    "key": "gmoney/en",
-    "locale": "en",
-    "app": "gmoney",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/txsq79.mp4",
-    "hook": "See what's left today",
-    "name": "G+Money: Spending & Budget",
-    "title": "See what's left today | Spending & Budget | G+Money",
-    "tags": [
-     "#SpendingBudget",
-     "#Multicurrency",
-     "#Export",
-     "#Savings",
-     "#Finance",
-     "#GMoney"
-    ],
-    "caption": "See what's left today\nSee where it went, by category\nG+Money: Spending & Budget\nSearch “G+Money” on the App Store\nAlso on Google Play\n\n#SpendingBudget #Multicurrency #GMoney",
-    "button": "Get it on the App Store",
-    "variant": "c",
-    "alt": "G+Money: Spending & Budget — See what's left today — See where it went, by category",
-    "store": "https://apps.apple.com/us/app/id6755782939?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
-    "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
-    },
-    "keywords": [
-     "multicurrency",
-     "export",
-     "savings",
-     "finance",
-     "wallet",
-     "bookkeeping"
-    ],
-    "keyline": "Spending & Budget",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "987a384c8c1d4d89",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    }
-   },
-   {
-    "kind": "clip",
-    "key": "gmoney/zh-Hant",
-    "locale": "zh-Hant",
-    "app": "gmoney",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/ve63hr.mp4",
-    "hook": "按分類 看見錢花去哪",
-    "name": "G+Money：日常記帳·預算·匯率",
-    "title": "按分類 看見錢花去哪 | 多幣別・離線記帳・分類報表 | G+Money 記帳",
-    "tags": [
-     "#日常記帳預算匯率",
-     "#多國貨幣",
-     "#本機儲存",
-     "#換匯",
-     "#出差",
-     "#GMoney記帳"
-    ],
-    "caption": "按分類 看見錢花去哪\n換算＋記帳 離線也能用\n多幣別・離線記帳・分類報表\nG+Money：日常記帳·預算·匯率\n在 App Store 搜尋「G+Money 記帳」\nAndroid 版在 Google Play\n\n#日常記帳預算匯率 #多國貨幣 #GMoney記帳",
-    "button": "在 App Store 下載",
-    "variant": "b",
-    "alt": "G+Money：日常記帳·預算·匯率 — 按分類 看見錢花去哪 — 換算＋記帳 離線也能用 — 多幣別・離線記帳・分類報表",
-    "store": "https://apps.apple.com/tw/app/id6755782939?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
-    "review": {
-     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
-     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
-    },
-    "keywords": [
-     "多國貨幣",
-     "本機儲存",
-     "換匯",
-     "出差",
-     "收支",
-     "記帳日記"
-    ],
-    "keyline": "多幣別・離線記帳・分類報表",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "987a384c8c1d4d89",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    }
-   },
-   {
-    "kind": "clip",
-    "key": "gmoney/ja",
-    "locale": "ja",
-    "app": "gmoney",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/lk7ile.mp4",
-    "hook": "カテゴリ別に 使い道が見える",
-    "name": "G+Money：家計簿・予算・為替",
-    "title": "カテゴリ別に 使い道が見える | 支出管理・お金管理・出費記録 | G+Money 家計簿",
-    "tags": [
-     "#家計簿予算為替",
-     "#お小遣い帳",
-     "#通貨換算",
-     "#貯金",
-     "#支出記録",
-     "#GMoney家計簿"
-    ],
-    "caption": "カテゴリ別に 使い道が見える\n換算も記録も オフラインでOK\n支出管理・お金管理・出費記録\nG+Money：家計簿・予算・為替\nApp Storeで「G+Money 家計簿」を検索\nAndroidはGoogle Playで\n\n#家計簿予算為替 #お小遣い帳 #GMoney家計簿",
-    "button": "App Storeで入手",
-    "variant": "b",
-    "alt": "G+Money：家計簿・予算・為替 — カテゴリ別に 使い道が見える — 換算も記録も オフラインでOK — 支出管理・お金管理・出費記録",
-    "store": "https://apps.apple.com/jp/app/id6755782939?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
-    "review": {
-     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
-     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
-    },
-    "keywords": [
-     "お小遣い帳",
-     "通貨換算",
-     "貯金",
-     "支出記録",
-     "レート計算",
-     "家計管理"
-    ],
-    "keyline": "支出管理・お金管理・出費記録",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "987a384c8c1d4d89",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    }
-   },
-   {
-    "kind": "clip",
-    "key": "gmoney/ko",
-    "locale": "ko",
-    "app": "gmoney",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/nck8iy.mp4",
-    "hook": "분류별로 어디에 썼는지 한눈에",
-    "name": "G+Money：가계부·예산·환율",
-    "title": "분류별로 어디에 썼는지 한눈에 | 생활비·소비기록·지출관리 | G+Money 가계부",
-    "tags": [
-     "#가계부예산환율",
-     "#용돈기입장",
-     "#환율계산기",
-     "#통화변환",
-     "#가계부앱",
-     "#GMoney가계부"
-    ],
-    "caption": "분류별로 어디에 썼는지 한눈에\n환율 계산·기록 오프라인에서도\n생활비·소비기록·지출관리\nG+Money：가계부·예산·환율\nApp Store에서 'G+Money 가계부' 검색\nAndroid는 Google Play에서\n\n#가계부예산환율 #용돈기입장 #GMoney가계부",
-    "button": "App Store에서 받기",
-    "variant": "b",
-    "alt": "G+Money：가계부·예산·환율 — 분류별로 어디에 썼는지 한눈에 — 환율 계산·기록 오프라인에서도 — 생활비·소비기록·지출관리",
-    "store": "https://apps.apple.com/kr/app/id6755782939?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
-    "review": {
-     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
-     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
-    },
-    "keywords": [
-     "용돈기입장",
-     "환율계산기",
-     "통화변환",
-     "가계부앱",
-     "돈관리",
-     "절약"
-    ],
-    "keyline": "생활비·소비기록·지출관리",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "987a384c8c1d4d89",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    }
-   },
-   {
-    "kind": "clip",
-    "key": "gmoney/id",
-    "locale": "id",
-    "app": "gmoney",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/jgixdt.mp4",
-    "hook": "Lihat ke mana uangmu, per kategori",
-    "name": "G+Money: Catat & atur anggaran",
-    "title": "Lihat ke mana uangmu, per kategori | Catat & atur anggaran | G+Money",
-    "tags": [
-     "#CatatAturAnggaran",
-     "#Catatan",
-     "#Keuangan",
-     "#Konverter",
-     "#Mata",
-     "#GMoney"
-    ],
-    "caption": "Lihat ke mana uangmu, per kategori\nKonversi & catat, tanpa sinyal\nG+Money: Catat & atur anggaran\nCari “G+Money” di App Store\nJuga ada di Google Play\n\n#CatatAturAnggaran #Catatan #GMoney",
-    "button": "Unduh di App Store",
-    "variant": "b",
-    "alt": "G+Money: Catat & atur anggaran — Lihat ke mana uangmu, per kategori — Konversi & catat, tanpa sinyal",
-    "store": "https://apps.apple.com/id/app/id6755782939?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
-    "review": {
-     "label": "Sudah memakai aplikasi ini? Beri nilai atau ulasan di App Store",
-     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
-    },
-    "keywords": [
-     "catatan",
-     "keuangan",
-     "konverter",
-     "mata",
-     "uang",
-     "pencatat"
-    ],
-    "keyline": "Catat & atur anggaran",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "987a384c8c1d4d89",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    }
-   },
-   {
-    "kind": "clip",
     "key": "hourstag/en",
     "locale": "en",
     "app": "hourstag",
@@ -22842,306 +22909,6 @@
    },
    {
     "kind": "clip",
-    "key": "onepageppt/en",
-    "locale": "en",
-    "app": "onepageppt",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/ygk4g4.mp4",
-    "hook": "Export editable PPTX",
-    "name": "OnePage PPT: AI Slide Maker",
-    "title": "Export editable PPTX | Presentation & Infographic | OnePage PPT",
-    "tags": [
-     "#AISlideMaker",
-     "#Deck",
-     "#Pitch",
-     "#Chart",
-     "#Graph",
-     "#OnePagePPT"
-    ],
-    "caption": "Export editable PPTX\nPaste notes, PDFs, screenshots\nPresentation & Infographic\nOnePage PPT: AI Slide Maker\nSearch “OnePage PPT” on the App Store\nAlso on Google Play\n\n#AISlideMaker #Deck #Pitch #Chart #OnePagePPT",
-    "button": "Get it on the App Store",
-    "variant": "c",
-    "alt": "OnePage PPT: AI Slide Maker — Export editable PPTX — Paste notes, PDFs, screenshots — Presentation & Infographic",
-    "store": "https://apps.apple.com/us/app/id6798814385?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt",
-    "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6798814385?action=write-review"
-    },
-    "keywords": [
-     "deck",
-     "pitch",
-     "chart",
-     "graph",
-     "diagram",
-     "generator"
-    ],
-    "keyline": "Presentation & Infographic",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "3770a5c2653a56c0",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "youtube": {
-     "title": "Export editable PPTX | OnePage PPT #Shorts",
-     "description": "Export editable PPTX\nPaste notes, PDFs, screenshots\nPresentation & Infographic\n\nOnePage PPT: AI Slide Maker\nApp Store: https://apps.apple.com/us/app/id6798814385?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt\nAlready using this app? Rate or review it on the App Store\nhttps://apps.apple.com/app/id6798814385?action=write-review\n\ndeck · pitch · chart · graph · diagram · generator\n\n#Shorts #AISlideMaker #OnePagePPT",
-     "tags": [
-      "deck",
-      "pitch",
-      "chart",
-      "graph",
-      "diagram",
-      "generator",
-      "AISlideMaker",
-      "OnePagePPT",
-      "OnePage PPT"
-     ]
-    },
-    "boost_rank": 4
-   },
-   {
-    "kind": "clip",
-    "key": "onepageppt/zh-Hant",
-    "locale": "zh-Hant",
-    "app": "onepageppt",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/2a6roi.mp4",
-    "hook": "貼上筆記、PDF 或截圖",
-    "name": "OnePage PPT: AI 一頁簡報",
-    "title": "貼上筆記、PDF 或截圖 | 簡報製作・筆記截圖秒變投影片 | OnePage PPT 一頁簡報",
-    "tags": [
-     "#AI一頁簡報",
-     "#懶人包",
-     "#重點整理",
-     "#摘要",
-     "#會議紀錄",
-     "#OnePagePPT一頁簡報"
-    ],
-    "caption": "貼上筆記、PDF 或截圖\n一鍵換風格\n簡報製作・筆記截圖秒變投影片\nOnePage PPT: AI 一頁簡報\n在 App Store 搜尋「一頁 摘要」\nAndroid 版在 Google Play\n\n#AI一頁簡報 #懶人包 #重點整理 #摘要 #OnePagePPT一頁簡報",
-    "button": "在 App Store 下載",
-    "variant": "b",
-    "alt": "OnePage PPT: AI 一頁簡報 — 貼上筆記、PDF 或截圖 — 一鍵換風格 — 簡報製作・筆記截圖秒變投影片",
-    "store": "https://apps.apple.com/tw/app/id6798814385?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt",
-    "review": {
-     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
-     "url": "https://apps.apple.com/app/id6798814385?action=write-review"
-    },
-    "keywords": [
-     "懶人包",
-     "重點整理",
-     "摘要",
-     "會議紀錄",
-     "報告",
-     "生成"
-    ],
-    "keyline": "簡報製作・筆記截圖秒變投影片",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "3770a5c2653a56c0",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "youtube": {
-     "title": "貼上筆記、PDF 或截圖 | OnePage PPT 一頁簡報 #Shorts",
-     "description": "貼上筆記、PDF 或截圖\n一鍵換風格\n簡報製作・筆記截圖秒變投影片\n\nOnePage PPT: AI 一頁簡報\nApp Store: https://apps.apple.com/tw/app/id6798814385?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt\n已經在用這款 App？可以到 App Store 評分或撰寫評論\nhttps://apps.apple.com/app/id6798814385?action=write-review\n\n懶人包 · 重點整理 · 摘要 · 會議紀錄 · 報告 · 生成\n\n#Shorts #AI一頁簡報 #OnePagePPT一頁簡報",
-     "tags": [
-      "懶人包",
-      "重點整理",
-      "摘要",
-      "會議紀錄",
-      "報告",
-      "生成",
-      "AI一頁簡報",
-      "OnePagePPT一頁簡報",
-      "OnePage PPT 一頁簡報"
-     ]
-    },
-    "boost_rank": 4
-   },
-   {
-    "kind": "clip",
-    "key": "onepageppt/ja",
-    "locale": "ja",
-    "app": "onepageppt",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/eunx79.mp4",
-    "hook": "メモもPDFも スクショも",
-    "name": "OnePage PPT: AI資料作成",
-    "title": "メモもPDFも スクショも | メモからプレゼン資料・スライドへ | OnePage PPT AI資料作成",
-    "tags": [
-     "#AI資料作成",
-     "#要約",
-     "#議事録",
-     "#会議",
-     "#企画書",
-     "#OnePagePPTAI資料作成"
-    ],
-    "caption": "メモもPDFも スクショも\nデザインも ワンタップで一新\nメモからプレゼン資料・スライドへ\nOnePage PPT: AI資料作成\nApp Storeで「OnePage PPT AI資料作成」を検索\nAndroidはGoogle Playで\n\n#AI資料作成 #要約 #議事録 #会議 #OnePagePPTAI資料作成",
-    "button": "App Storeで入手",
-    "variant": "b",
-    "alt": "OnePage PPT: AI資料作成 — メモもPDFも スクショも — デザインも ワンタップで一新 — メモからプレゼン資料・スライドへ",
-    "store": "https://apps.apple.com/jp/app/id6798814385?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt",
-    "review": {
-     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
-     "url": "https://apps.apple.com/app/id6798814385?action=write-review"
-    },
-    "keywords": [
-     "要約",
-     "議事録",
-     "会議",
-     "企画書",
-     "報告書",
-     "レポート"
-    ],
-    "keyline": "メモからプレゼン資料・スライドへ",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "3770a5c2653a56c0",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "youtube": {
-     "title": "メモもPDFも スクショも | OnePage PPT AI資料作成 #Shorts",
-     "description": "メモもPDFも スクショも\nデザインも ワンタップで一新\nメモからプレゼン資料・スライドへ\n\nOnePage PPT: AI資料作成\nApp Store: https://apps.apple.com/jp/app/id6798814385?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt\nこのアプリをお使いですか？App Store で評価・レビューできます\nhttps://apps.apple.com/app/id6798814385?action=write-review\n\n要約 · 議事録 · 会議 · 企画書 · 報告書 · レポート\n\n#Shorts #AI資料作成 #OnePagePPTAI資料作成",
-     "tags": [
-      "要約",
-      "議事録",
-      "会議",
-      "企画書",
-      "報告書",
-      "レポート",
-      "AI資料作成",
-      "OnePagePPTAI資料作成",
-      "OnePage PPT AI資料作成"
-     ]
-    },
-    "boost_rank": 4
-   },
-   {
-    "kind": "clip",
-    "key": "onepageppt/ko",
-    "locale": "ko",
-    "app": "onepageppt",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/zpx40x.mp4",
-    "hook": "메모·PDF·캡처 그대로 붙여넣기",
-    "name": "OnePage PPT: AI 발표자료",
-    "title": "메모·PDF·캡처 그대로 붙여넣기 | AI 발표자료 | OnePage PPT 발표자료",
-    "tags": [
-     "#AI발표자료",
-     "#프레젠테이션",
-     "#요약",
-     "#회의록",
-     "#보고서",
-     "#OnePagePPT발표자료"
-    ],
-    "caption": "메모·PDF·캡처 그대로 붙여넣기\n디자인도 탭 한 번에 변신\nOnePage PPT: AI 발표자료\nApp Store에서 'OnePage PPT 발표자료' 검색\nAndroid는 Google Play에서\n\n#AI발표자료 #프레젠테이션 #요약 #회의록 #OnePagePPT발표자료",
-    "button": "App Store에서 받기",
-    "variant": "b",
-    "alt": "OnePage PPT: AI 발표자료 — 메모·PDF·캡처 그대로 붙여넣기 — 디자인도 탭 한 번에 변신",
-    "store": "https://apps.apple.com/kr/app/id6798814385?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt",
-    "review": {
-     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
-     "url": "https://apps.apple.com/app/id6798814385?action=write-review"
-    },
-    "keywords": [
-     "프레젠테이션",
-     "요약",
-     "회의록",
-     "보고서",
-     "차트",
-     "그래프"
-    ],
-    "keyline": "AI 발표자료",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "3770a5c2653a56c0",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "youtube": {
-     "title": "메모·PDF·캡처 그대로 붙여넣기 | OnePage PPT 발표자료 #Shorts",
-     "description": "메모·PDF·캡처 그대로 붙여넣기\n디자인도 탭 한 번에 변신\nAI 발표자료\n\nOnePage PPT: AI 발표자료\nApp Store: https://apps.apple.com/kr/app/id6798814385?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt\n이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다\nhttps://apps.apple.com/app/id6798814385?action=write-review\n\n프레젠테이션 · 요약 · 회의록 · 보고서 · 차트 · 그래프\n\n#Shorts #AI발표자료 #OnePagePPT발표자료",
-     "tags": [
-      "프레젠테이션",
-      "요약",
-      "회의록",
-      "보고서",
-      "차트",
-      "그래프",
-      "AI발표자료",
-      "OnePagePPT발표자료",
-      "OnePage PPT 발표자료"
-     ]
-    },
-    "boost_rank": 4
-   },
-   {
-    "kind": "clip",
-    "key": "onepageppt/de",
-    "locale": "de",
-    "app": "onepageppt",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/11zznw.mp4",
-    "hook": "Notizen, PDFs, Screenshots einfügen",
-    "name": "OnePage PPT: KI Folien",
-    "title": "Notizen, PDFs, Screenshots einfügen | KI Folien | OnePage PPT",
-    "tags": [
-     "#KIFolien",
-     "#Zusammenfassung",
-     "#Erstellen",
-     "#Generator",
-     "#Notizen",
-     "#OnePagePPT"
-    ],
-    "caption": "Notizen, PDFs, Screenshots einfügen\nSofort neu gestalten\nOnePage PPT: KI Folien\nIm App Store nach „OnePage PPT“ suchen\nAuch bei Google Play\n\n#KIFolien #Zusammenfassung #Erstellen #Generator #OnePagePPT",
-    "button": "Im App Store laden",
-    "variant": "b",
-    "alt": "OnePage PPT: KI Folien — Notizen, PDFs, Screenshots einfügen — Sofort neu gestalten",
-    "store": "https://apps.apple.com/de/app/id6798814385?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt",
-    "review": {
-     "label": "Sie nutzen diese App bereits? Bewerten oder rezensieren Sie sie im App Store",
-     "url": "https://apps.apple.com/app/id6798814385?action=write-review"
-    },
-    "keywords": [
-     "zusammenfassung",
-     "erstellen",
-     "generator",
-     "notizen",
-     "referat",
-     "vortrag"
-    ],
-    "keyline": "KI Folien",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "3770a5c2653a56c0",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "youtube": {
-     "title": "Notizen, PDFs, Screenshots einfügen | OnePage PPT #Shorts",
-     "description": "Notizen, PDFs, Screenshots einfügen\nSofort neu gestalten\nKI Folien\n\nOnePage PPT: KI Folien\nApp Store: https://apps.apple.com/de/app/id6798814385?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt\nSie nutzen diese App bereits? Bewerten oder rezensieren Sie sie im App Store\nhttps://apps.apple.com/app/id6798814385?action=write-review\n\nzusammenfassung · erstellen · generator · notizen · referat · vortrag\n\n#Shorts #KIFolien #OnePagePPT",
-     "tags": [
-      "zusammenfassung",
-      "erstellen",
-      "generator",
-      "notizen",
-      "referat",
-      "vortrag",
-      "KIFolien",
-      "OnePagePPT",
-      "OnePage PPT"
-     ]
-    },
-    "boost_rank": 4
-   },
-   {
-    "kind": "clip",
     "key": "duowallpaperstudio/en",
     "locale": "en",
     "app": "duowallpaperstudio",
@@ -23197,7 +22964,7 @@
       "Foldable Wallpaper Studio"
      ]
     },
-    "boost_rank": 5
+    "boost_rank": 4
    },
    {
     "kind": "clip",
@@ -23257,7 +23024,7 @@
       "Foldable Wallpaper Studio"
      ]
     },
-    "boost_rank": 5
+    "boost_rank": 4
    },
    {
     "kind": "clip",
@@ -23317,7 +23084,7 @@
       "Foldable Wallpaper Studio"
      ]
     },
-    "boost_rank": 5
+    "boost_rank": 4
    },
    {
     "kind": "clip",
@@ -23377,7 +23144,7 @@
       "Foldable Wallpaper Studio"
      ]
     },
-    "boost_rank": 5
+    "boost_rank": 4
    },
    {
     "kind": "clip",
@@ -23436,7 +23203,7 @@
       "Foldable Wallpaper Studio"
      ]
     },
-    "boost_rank": 5
+    "boost_rank": 4
    },
    {
     "kind": "clip",
@@ -23494,6 +23261,306 @@
       "TelaDupla",
       "FoldableWallpaperStudio",
       "Foldable Wallpaper Studio"
+     ]
+    },
+    "boost_rank": 4
+   },
+   {
+    "kind": "clip",
+    "key": "gmoney/en",
+    "locale": "en",
+    "app": "gmoney",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/txsq79.mp4",
+    "hook": "See what's left today",
+    "name": "G+Money: Spending & Budget",
+    "title": "See what's left today | Spending & Budget | G+Money",
+    "tags": [
+     "#SpendingBudget",
+     "#Multicurrency",
+     "#Export",
+     "#Savings",
+     "#Finance",
+     "#GMoney"
+    ],
+    "caption": "See what's left today\nSee where it went, by category\nG+Money: Spending & Budget\nSearch “G+Money” on the App Store\nAlso on Google Play\n\n#SpendingBudget #Multicurrency #Export #Savings #GMoney",
+    "button": "Get it on the App Store",
+    "variant": "c",
+    "alt": "G+Money: Spending & Budget — See what's left today — See where it went, by category",
+    "store": "https://apps.apple.com/us/app/id6755782939?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
+    "review": {
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
+    },
+    "keywords": [
+     "multicurrency",
+     "export",
+     "savings",
+     "finance",
+     "wallet",
+     "bookkeeping"
+    ],
+    "keyline": "Spending & Budget",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "987a384c8c1d4d89",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "See what's left today | G+Money #Shorts",
+     "description": "See what's left today\nSee where it went, by category\nSpending & Budget\n\nG+Money: Spending & Budget\nApp Store: https://apps.apple.com/us/app/id6755782939?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney\nAlready using this app? Rate or review it on the App Store\nhttps://apps.apple.com/app/id6755782939?action=write-review\n\nmulticurrency · export · savings · finance · wallet · bookkeeping\n\n#Shorts #SpendingBudget #GMoney",
+     "tags": [
+      "multicurrency",
+      "export",
+      "savings",
+      "finance",
+      "wallet",
+      "bookkeeping",
+      "SpendingBudget",
+      "GMoney",
+      "G+Money"
+     ]
+    },
+    "boost_rank": 5
+   },
+   {
+    "kind": "clip",
+    "key": "gmoney/zh-Hant",
+    "locale": "zh-Hant",
+    "app": "gmoney",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/ve63hr.mp4",
+    "hook": "按分類 看見錢花去哪",
+    "name": "G+Money：日常記帳·預算·匯率",
+    "title": "按分類 看見錢花去哪 | 多幣別・離線記帳・分類報表 | G+Money 記帳",
+    "tags": [
+     "#日常記帳預算匯率",
+     "#多國貨幣",
+     "#本機儲存",
+     "#換匯",
+     "#出差",
+     "#GMoney記帳"
+    ],
+    "caption": "按分類 看見錢花去哪\n換算＋記帳 離線也能用\n多幣別・離線記帳・分類報表\nG+Money：日常記帳·預算·匯率\n在 App Store 搜尋「G+Money 記帳」\nAndroid 版在 Google Play\n\n#日常記帳預算匯率 #多國貨幣 #本機儲存 #換匯 #GMoney記帳",
+    "button": "在 App Store 下載",
+    "variant": "b",
+    "alt": "G+Money：日常記帳·預算·匯率 — 按分類 看見錢花去哪 — 換算＋記帳 離線也能用 — 多幣別・離線記帳・分類報表",
+    "store": "https://apps.apple.com/tw/app/id6755782939?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
+    "review": {
+     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
+     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
+    },
+    "keywords": [
+     "多國貨幣",
+     "本機儲存",
+     "換匯",
+     "出差",
+     "收支",
+     "記帳日記"
+    ],
+    "keyline": "多幣別・離線記帳・分類報表",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "987a384c8c1d4d89",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "按分類 看見錢花去哪 | G+Money 記帳 #Shorts",
+     "description": "按分類 看見錢花去哪\n換算＋記帳 離線也能用\n多幣別・離線記帳・分類報表\n\nG+Money：日常記帳·預算·匯率\nApp Store: https://apps.apple.com/tw/app/id6755782939?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney\n已經在用這款 App？可以到 App Store 評分或撰寫評論\nhttps://apps.apple.com/app/id6755782939?action=write-review\n\n多國貨幣 · 本機儲存 · 換匯 · 出差 · 收支 · 記帳日記\n\n#Shorts #日常記帳預算匯率 #GMoney記帳",
+     "tags": [
+      "多國貨幣",
+      "本機儲存",
+      "換匯",
+      "出差",
+      "收支",
+      "記帳日記",
+      "日常記帳預算匯率",
+      "GMoney記帳",
+      "G+Money 記帳"
+     ]
+    },
+    "boost_rank": 5
+   },
+   {
+    "kind": "clip",
+    "key": "gmoney/ja",
+    "locale": "ja",
+    "app": "gmoney",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/lk7ile.mp4",
+    "hook": "カテゴリ別に 使い道が見える",
+    "name": "G+Money：家計簿・予算・為替",
+    "title": "カテゴリ別に 使い道が見える | 支出管理・お金管理・出費記録 | G+Money 家計簿",
+    "tags": [
+     "#家計簿予算為替",
+     "#お小遣い帳",
+     "#通貨換算",
+     "#貯金",
+     "#支出記録",
+     "#GMoney家計簿"
+    ],
+    "caption": "カテゴリ別に 使い道が見える\n換算も記録も オフラインでOK\n支出管理・お金管理・出費記録\nG+Money：家計簿・予算・為替\nApp Storeで「G+Money 家計簿」を検索\nAndroidはGoogle Playで\n\n#家計簿予算為替 #お小遣い帳 #通貨換算 #貯金 #GMoney家計簿",
+    "button": "App Storeで入手",
+    "variant": "b",
+    "alt": "G+Money：家計簿・予算・為替 — カテゴリ別に 使い道が見える — 換算も記録も オフラインでOK — 支出管理・お金管理・出費記録",
+    "store": "https://apps.apple.com/jp/app/id6755782939?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
+    "review": {
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
+    },
+    "keywords": [
+     "お小遣い帳",
+     "通貨換算",
+     "貯金",
+     "支出記録",
+     "レート計算",
+     "家計管理"
+    ],
+    "keyline": "支出管理・お金管理・出費記録",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "987a384c8c1d4d89",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "カテゴリ別に 使い道が見える | G+Money 家計簿 #Shorts",
+     "description": "カテゴリ別に 使い道が見える\n換算も記録も オフラインでOK\n支出管理・お金管理・出費記録\n\nG+Money：家計簿・予算・為替\nApp Store: https://apps.apple.com/jp/app/id6755782939?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney\nこのアプリをお使いですか？App Store で評価・レビューできます\nhttps://apps.apple.com/app/id6755782939?action=write-review\n\nお小遣い帳 · 通貨換算 · 貯金 · 支出記録 · レート計算 · 家計管理\n\n#Shorts #家計簿予算為替 #GMoney家計簿",
+     "tags": [
+      "お小遣い帳",
+      "通貨換算",
+      "貯金",
+      "支出記録",
+      "レート計算",
+      "家計管理",
+      "家計簿予算為替",
+      "GMoney家計簿",
+      "G+Money 家計簿"
+     ]
+    },
+    "boost_rank": 5
+   },
+   {
+    "kind": "clip",
+    "key": "gmoney/ko",
+    "locale": "ko",
+    "app": "gmoney",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/nck8iy.mp4",
+    "hook": "분류별로 어디에 썼는지 한눈에",
+    "name": "G+Money：가계부·예산·환율",
+    "title": "분류별로 어디에 썼는지 한눈에 | 생활비·소비기록·지출관리 | G+Money 가계부",
+    "tags": [
+     "#가계부예산환율",
+     "#용돈기입장",
+     "#환율계산기",
+     "#통화변환",
+     "#가계부앱",
+     "#GMoney가계부"
+    ],
+    "caption": "분류별로 어디에 썼는지 한눈에\n환율 계산·기록 오프라인에서도\n생활비·소비기록·지출관리\nG+Money：가계부·예산·환율\nApp Store에서 'G+Money 가계부' 검색\nAndroid는 Google Play에서\n\n#가계부예산환율 #용돈기입장 #환율계산기 #통화변환 #GMoney가계부",
+    "button": "App Store에서 받기",
+    "variant": "b",
+    "alt": "G+Money：가계부·예산·환율 — 분류별로 어디에 썼는지 한눈에 — 환율 계산·기록 오프라인에서도 — 생활비·소비기록·지출관리",
+    "store": "https://apps.apple.com/kr/app/id6755782939?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
+    "review": {
+     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
+     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
+    },
+    "keywords": [
+     "용돈기입장",
+     "환율계산기",
+     "통화변환",
+     "가계부앱",
+     "돈관리",
+     "절약"
+    ],
+    "keyline": "생활비·소비기록·지출관리",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "987a384c8c1d4d89",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "분류별로 어디에 썼는지 한눈에 | G+Money 가계부 #Shorts",
+     "description": "분류별로 어디에 썼는지 한눈에\n환율 계산·기록 오프라인에서도\n생활비·소비기록·지출관리\n\nG+Money：가계부·예산·환율\nApp Store: https://apps.apple.com/kr/app/id6755782939?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney\n이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다\nhttps://apps.apple.com/app/id6755782939?action=write-review\n\n용돈기입장 · 환율계산기 · 통화변환 · 가계부앱 · 돈관리 · 절약\n\n#Shorts #가계부예산환율 #GMoney가계부",
+     "tags": [
+      "용돈기입장",
+      "환율계산기",
+      "통화변환",
+      "가계부앱",
+      "돈관리",
+      "절약",
+      "가계부예산환율",
+      "GMoney가계부",
+      "G+Money 가계부"
+     ]
+    },
+    "boost_rank": 5
+   },
+   {
+    "kind": "clip",
+    "key": "gmoney/id",
+    "locale": "id",
+    "app": "gmoney",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/jgixdt.mp4",
+    "hook": "Lihat ke mana uangmu, per kategori",
+    "name": "G+Money: Catat & atur anggaran",
+    "title": "Lihat ke mana uangmu, per kategori | Catat & atur anggaran | G+Money",
+    "tags": [
+     "#CatatAturAnggaran",
+     "#Catatan",
+     "#Keuangan",
+     "#Konverter",
+     "#Mata",
+     "#GMoney"
+    ],
+    "caption": "Lihat ke mana uangmu, per kategori\nKonversi & catat, tanpa sinyal\nG+Money: Catat & atur anggaran\nCari “G+Money” di App Store\nJuga ada di Google Play\n\n#CatatAturAnggaran #Catatan #Keuangan #Konverter #GMoney",
+    "button": "Unduh di App Store",
+    "variant": "b",
+    "alt": "G+Money: Catat & atur anggaran — Lihat ke mana uangmu, per kategori — Konversi & catat, tanpa sinyal",
+    "store": "https://apps.apple.com/id/app/id6755782939?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
+    "review": {
+     "label": "Sudah memakai aplikasi ini? Beri nilai atau ulasan di App Store",
+     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
+    },
+    "keywords": [
+     "catatan",
+     "keuangan",
+     "konverter",
+     "mata",
+     "uang",
+     "pencatat"
+    ],
+    "keyline": "Catat & atur anggaran",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "987a384c8c1d4d89",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "Lihat ke mana uangmu, per kategori | G+Money #Shorts",
+     "description": "Lihat ke mana uangmu, per kategori\nKonversi & catat, tanpa sinyal\nCatat & atur anggaran\n\nG+Money: Catat & atur anggaran\nApp Store: https://apps.apple.com/id/app/id6755782939?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney\nSudah memakai aplikasi ini? Beri nilai atau ulasan di App Store\nhttps://apps.apple.com/app/id6755782939?action=write-review\n\ncatatan · keuangan · konverter · mata · uang · pencatat\n\n#Shorts #CatatAturAnggaran #GMoney",
+     "tags": [
+      "catatan",
+      "keuangan",
+      "konverter",
+      "mata",
+      "uang",
+      "pencatat",
+      "CatatAturAnggaran",
+      "GMoney",
+      "G+Money"
      ]
     },
     "boost_rank": 5
@@ -29870,6 +29937,301 @@
       "اختبارات",
       "100NotesStudio",
       "100 Notes Studio"
+     ]
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "onepageppt/en",
+    "locale": "en",
+    "app": "onepageppt",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/ygk4g4.mp4",
+    "hook": "Export editable PPTX",
+    "name": "OnePage PPT: AI Slide Maker",
+    "title": "Export editable PPTX | Presentation & Infographic | OnePage PPT",
+    "tags": [
+     "#AISlideMaker",
+     "#Deck",
+     "#Pitch",
+     "#Chart",
+     "#Graph",
+     "#OnePagePPT"
+    ],
+    "caption": "Export editable PPTX\nPaste notes, PDFs, screenshots\nPresentation & Infographic\nOnePage PPT: AI Slide Maker\nSearch “OnePage PPT” on the App Store\nAlso on Google Play\n\n#AISlideMaker #Deck #Pitch #Chart #OnePagePPT",
+    "button": "Get it on the App Store",
+    "variant": "c",
+    "alt": "OnePage PPT: AI Slide Maker — Export editable PPTX — Paste notes, PDFs, screenshots — Presentation & Infographic",
+    "store": "https://apps.apple.com/us/app/id6798814385?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt",
+    "review": {
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6798814385?action=write-review"
+    },
+    "keywords": [
+     "deck",
+     "pitch",
+     "chart",
+     "graph",
+     "diagram",
+     "generator"
+    ],
+    "keyline": "Presentation & Infographic",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "3770a5c2653a56c0",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "Export editable PPTX | OnePage PPT #Shorts",
+     "description": "Export editable PPTX\nPaste notes, PDFs, screenshots\nPresentation & Infographic\n\nOnePage PPT: AI Slide Maker\nApp Store: https://apps.apple.com/us/app/id6798814385?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt\nAlready using this app? Rate or review it on the App Store\nhttps://apps.apple.com/app/id6798814385?action=write-review\n\ndeck · pitch · chart · graph · diagram · generator\n\n#Shorts #AISlideMaker #OnePagePPT",
+     "tags": [
+      "deck",
+      "pitch",
+      "chart",
+      "graph",
+      "diagram",
+      "generator",
+      "AISlideMaker",
+      "OnePagePPT",
+      "OnePage PPT"
+     ]
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "onepageppt/zh-Hant",
+    "locale": "zh-Hant",
+    "app": "onepageppt",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/2a6roi.mp4",
+    "hook": "貼上筆記、PDF 或截圖",
+    "name": "OnePage PPT: AI 一頁簡報",
+    "title": "貼上筆記、PDF 或截圖 | 簡報製作・筆記截圖秒變投影片 | OnePage PPT 一頁簡報",
+    "tags": [
+     "#AI一頁簡報",
+     "#懶人包",
+     "#重點整理",
+     "#摘要",
+     "#會議紀錄",
+     "#OnePagePPT一頁簡報"
+    ],
+    "caption": "貼上筆記、PDF 或截圖\n一鍵換風格\n簡報製作・筆記截圖秒變投影片\nOnePage PPT: AI 一頁簡報\n在 App Store 搜尋「一頁 摘要」\nAndroid 版在 Google Play\n\n#AI一頁簡報 #懶人包 #重點整理 #摘要 #OnePagePPT一頁簡報",
+    "button": "在 App Store 下載",
+    "variant": "b",
+    "alt": "OnePage PPT: AI 一頁簡報 — 貼上筆記、PDF 或截圖 — 一鍵換風格 — 簡報製作・筆記截圖秒變投影片",
+    "store": "https://apps.apple.com/tw/app/id6798814385?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt",
+    "review": {
+     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
+     "url": "https://apps.apple.com/app/id6798814385?action=write-review"
+    },
+    "keywords": [
+     "懶人包",
+     "重點整理",
+     "摘要",
+     "會議紀錄",
+     "報告",
+     "生成"
+    ],
+    "keyline": "簡報製作・筆記截圖秒變投影片",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "3770a5c2653a56c0",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "貼上筆記、PDF 或截圖 | OnePage PPT 一頁簡報 #Shorts",
+     "description": "貼上筆記、PDF 或截圖\n一鍵換風格\n簡報製作・筆記截圖秒變投影片\n\nOnePage PPT: AI 一頁簡報\nApp Store: https://apps.apple.com/tw/app/id6798814385?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt\n已經在用這款 App？可以到 App Store 評分或撰寫評論\nhttps://apps.apple.com/app/id6798814385?action=write-review\n\n懶人包 · 重點整理 · 摘要 · 會議紀錄 · 報告 · 生成\n\n#Shorts #AI一頁簡報 #OnePagePPT一頁簡報",
+     "tags": [
+      "懶人包",
+      "重點整理",
+      "摘要",
+      "會議紀錄",
+      "報告",
+      "生成",
+      "AI一頁簡報",
+      "OnePagePPT一頁簡報",
+      "OnePage PPT 一頁簡報"
+     ]
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "onepageppt/ja",
+    "locale": "ja",
+    "app": "onepageppt",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/eunx79.mp4",
+    "hook": "メモもPDFも スクショも",
+    "name": "OnePage PPT: AI資料作成",
+    "title": "メモもPDFも スクショも | メモからプレゼン資料・スライドへ | OnePage PPT AI資料作成",
+    "tags": [
+     "#AI資料作成",
+     "#要約",
+     "#議事録",
+     "#会議",
+     "#企画書",
+     "#OnePagePPTAI資料作成"
+    ],
+    "caption": "メモもPDFも スクショも\nデザインも ワンタップで一新\nメモからプレゼン資料・スライドへ\nOnePage PPT: AI資料作成\nApp Storeで「OnePage PPT AI資料作成」を検索\nAndroidはGoogle Playで\n\n#AI資料作成 #要約 #議事録 #会議 #OnePagePPTAI資料作成",
+    "button": "App Storeで入手",
+    "variant": "b",
+    "alt": "OnePage PPT: AI資料作成 — メモもPDFも スクショも — デザインも ワンタップで一新 — メモからプレゼン資料・スライドへ",
+    "store": "https://apps.apple.com/jp/app/id6798814385?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt",
+    "review": {
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6798814385?action=write-review"
+    },
+    "keywords": [
+     "要約",
+     "議事録",
+     "会議",
+     "企画書",
+     "報告書",
+     "レポート"
+    ],
+    "keyline": "メモからプレゼン資料・スライドへ",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "3770a5c2653a56c0",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "メモもPDFも スクショも | OnePage PPT AI資料作成 #Shorts",
+     "description": "メモもPDFも スクショも\nデザインも ワンタップで一新\nメモからプレゼン資料・スライドへ\n\nOnePage PPT: AI資料作成\nApp Store: https://apps.apple.com/jp/app/id6798814385?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt\nこのアプリをお使いですか？App Store で評価・レビューできます\nhttps://apps.apple.com/app/id6798814385?action=write-review\n\n要約 · 議事録 · 会議 · 企画書 · 報告書 · レポート\n\n#Shorts #AI資料作成 #OnePagePPTAI資料作成",
+     "tags": [
+      "要約",
+      "議事録",
+      "会議",
+      "企画書",
+      "報告書",
+      "レポート",
+      "AI資料作成",
+      "OnePagePPTAI資料作成",
+      "OnePage PPT AI資料作成"
+     ]
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "onepageppt/ko",
+    "locale": "ko",
+    "app": "onepageppt",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/zpx40x.mp4",
+    "hook": "메모·PDF·캡처 그대로 붙여넣기",
+    "name": "OnePage PPT: AI 발표자료",
+    "title": "메모·PDF·캡처 그대로 붙여넣기 | AI 발표자료 | OnePage PPT 발표자료",
+    "tags": [
+     "#AI발표자료",
+     "#프레젠테이션",
+     "#요약",
+     "#회의록",
+     "#보고서",
+     "#OnePagePPT발표자료"
+    ],
+    "caption": "메모·PDF·캡처 그대로 붙여넣기\n디자인도 탭 한 번에 변신\nOnePage PPT: AI 발표자료\nApp Store에서 'OnePage PPT 발표자료' 검색\nAndroid는 Google Play에서\n\n#AI발표자료 #프레젠테이션 #요약 #회의록 #OnePagePPT발표자료",
+    "button": "App Store에서 받기",
+    "variant": "b",
+    "alt": "OnePage PPT: AI 발표자료 — 메모·PDF·캡처 그대로 붙여넣기 — 디자인도 탭 한 번에 변신",
+    "store": "https://apps.apple.com/kr/app/id6798814385?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt",
+    "review": {
+     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
+     "url": "https://apps.apple.com/app/id6798814385?action=write-review"
+    },
+    "keywords": [
+     "프레젠테이션",
+     "요약",
+     "회의록",
+     "보고서",
+     "차트",
+     "그래프"
+    ],
+    "keyline": "AI 발표자료",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "3770a5c2653a56c0",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "메모·PDF·캡처 그대로 붙여넣기 | OnePage PPT 발표자료 #Shorts",
+     "description": "메모·PDF·캡처 그대로 붙여넣기\n디자인도 탭 한 번에 변신\nAI 발표자료\n\nOnePage PPT: AI 발표자료\nApp Store: https://apps.apple.com/kr/app/id6798814385?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt\n이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다\nhttps://apps.apple.com/app/id6798814385?action=write-review\n\n프레젠테이션 · 요약 · 회의록 · 보고서 · 차트 · 그래프\n\n#Shorts #AI발표자료 #OnePagePPT발표자료",
+     "tags": [
+      "프레젠테이션",
+      "요약",
+      "회의록",
+      "보고서",
+      "차트",
+      "그래프",
+      "AI발표자료",
+      "OnePagePPT발표자료",
+      "OnePage PPT 발표자료"
+     ]
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "onepageppt/de",
+    "locale": "de",
+    "app": "onepageppt",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/11zznw.mp4",
+    "hook": "Notizen, PDFs, Screenshots einfügen",
+    "name": "OnePage PPT: KI Folien",
+    "title": "Notizen, PDFs, Screenshots einfügen | KI Folien | OnePage PPT",
+    "tags": [
+     "#KIFolien",
+     "#Zusammenfassung",
+     "#Erstellen",
+     "#Generator",
+     "#Notizen",
+     "#OnePagePPT"
+    ],
+    "caption": "Notizen, PDFs, Screenshots einfügen\nSofort neu gestalten\nOnePage PPT: KI Folien\nIm App Store nach „OnePage PPT“ suchen\nAuch bei Google Play\n\n#KIFolien #Zusammenfassung #Erstellen #Generator #OnePagePPT",
+    "button": "Im App Store laden",
+    "variant": "b",
+    "alt": "OnePage PPT: KI Folien — Notizen, PDFs, Screenshots einfügen — Sofort neu gestalten",
+    "store": "https://apps.apple.com/de/app/id6798814385?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt",
+    "review": {
+     "label": "Sie nutzen diese App bereits? Bewerten oder rezensieren Sie sie im App Store",
+     "url": "https://apps.apple.com/app/id6798814385?action=write-review"
+    },
+    "keywords": [
+     "zusammenfassung",
+     "erstellen",
+     "generator",
+     "notizen",
+     "referat",
+     "vortrag"
+    ],
+    "keyline": "KI Folien",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "3770a5c2653a56c0",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "Notizen, PDFs, Screenshots einfügen | OnePage PPT #Shorts",
+     "description": "Notizen, PDFs, Screenshots einfügen\nSofort neu gestalten\nKI Folien\n\nOnePage PPT: KI Folien\nApp Store: https://apps.apple.com/de/app/id6798814385?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt\nSie nutzen diese App bereits? Bewerten oder rezensieren Sie sie im App Store\nhttps://apps.apple.com/app/id6798814385?action=write-review\n\nzusammenfassung · erstellen · generator · notizen · referat · vortrag\n\n#Shorts #KIFolien #OnePagePPT",
+     "tags": [
+      "zusammenfassung",
+      "erstellen",
+      "generator",
+      "notizen",
+      "referat",
+      "vortrag",
+      "KIFolien",
+      "OnePagePPT",
+      "OnePage PPT"
      ]
     }
    },
@@ -37389,301 +37751,6 @@
    },
    {
     "kind": "clip",
-    "key": "gmoney/en",
-    "locale": "en",
-    "app": "gmoney",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/txsq79.mp4",
-    "hook": "See what's left today",
-    "name": "G+Money: Spending & Budget",
-    "title": "See what's left today | Spending & Budget | G+Money",
-    "tags": [
-     "#SpendingBudget",
-     "#Multicurrency",
-     "#Export",
-     "#Savings",
-     "#Finance",
-     "#GMoney"
-    ],
-    "caption": "See what's left today\nSee where it went, by category\nG+Money: Spending & Budget\nSearch “G+Money” on the App Store\nAlso on Google Play\n\n#SpendingBudget #Multicurrency #Export #Savings #GMoney",
-    "button": "Get it on the App Store",
-    "variant": "c",
-    "alt": "G+Money: Spending & Budget — See what's left today — See where it went, by category",
-    "store": "https://apps.apple.com/us/app/id6755782939?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
-    "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
-    },
-    "keywords": [
-     "multicurrency",
-     "export",
-     "savings",
-     "finance",
-     "wallet",
-     "bookkeeping"
-    ],
-    "keyline": "Spending & Budget",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "987a384c8c1d4d89",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "youtube": {
-     "title": "See what's left today | G+Money #Shorts",
-     "description": "See what's left today\nSee where it went, by category\nSpending & Budget\n\nG+Money: Spending & Budget\nApp Store: https://apps.apple.com/us/app/id6755782939?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney\nAlready using this app? Rate or review it on the App Store\nhttps://apps.apple.com/app/id6755782939?action=write-review\n\nmulticurrency · export · savings · finance · wallet · bookkeeping\n\n#Shorts #SpendingBudget #GMoney",
-     "tags": [
-      "multicurrency",
-      "export",
-      "savings",
-      "finance",
-      "wallet",
-      "bookkeeping",
-      "SpendingBudget",
-      "GMoney",
-      "G+Money"
-     ]
-    }
-   },
-   {
-    "kind": "clip",
-    "key": "gmoney/zh-Hant",
-    "locale": "zh-Hant",
-    "app": "gmoney",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/ve63hr.mp4",
-    "hook": "按分類 看見錢花去哪",
-    "name": "G+Money：日常記帳·預算·匯率",
-    "title": "按分類 看見錢花去哪 | 多幣別・離線記帳・分類報表 | G+Money 記帳",
-    "tags": [
-     "#日常記帳預算匯率",
-     "#多國貨幣",
-     "#本機儲存",
-     "#換匯",
-     "#出差",
-     "#GMoney記帳"
-    ],
-    "caption": "按分類 看見錢花去哪\n換算＋記帳 離線也能用\n多幣別・離線記帳・分類報表\nG+Money：日常記帳·預算·匯率\n在 App Store 搜尋「G+Money 記帳」\nAndroid 版在 Google Play\n\n#日常記帳預算匯率 #多國貨幣 #本機儲存 #換匯 #GMoney記帳",
-    "button": "在 App Store 下載",
-    "variant": "b",
-    "alt": "G+Money：日常記帳·預算·匯率 — 按分類 看見錢花去哪 — 換算＋記帳 離線也能用 — 多幣別・離線記帳・分類報表",
-    "store": "https://apps.apple.com/tw/app/id6755782939?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
-    "review": {
-     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
-     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
-    },
-    "keywords": [
-     "多國貨幣",
-     "本機儲存",
-     "換匯",
-     "出差",
-     "收支",
-     "記帳日記"
-    ],
-    "keyline": "多幣別・離線記帳・分類報表",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "987a384c8c1d4d89",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "youtube": {
-     "title": "按分類 看見錢花去哪 | G+Money 記帳 #Shorts",
-     "description": "按分類 看見錢花去哪\n換算＋記帳 離線也能用\n多幣別・離線記帳・分類報表\n\nG+Money：日常記帳·預算·匯率\nApp Store: https://apps.apple.com/tw/app/id6755782939?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney\n已經在用這款 App？可以到 App Store 評分或撰寫評論\nhttps://apps.apple.com/app/id6755782939?action=write-review\n\n多國貨幣 · 本機儲存 · 換匯 · 出差 · 收支 · 記帳日記\n\n#Shorts #日常記帳預算匯率 #GMoney記帳",
-     "tags": [
-      "多國貨幣",
-      "本機儲存",
-      "換匯",
-      "出差",
-      "收支",
-      "記帳日記",
-      "日常記帳預算匯率",
-      "GMoney記帳",
-      "G+Money 記帳"
-     ]
-    }
-   },
-   {
-    "kind": "clip",
-    "key": "gmoney/ja",
-    "locale": "ja",
-    "app": "gmoney",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/lk7ile.mp4",
-    "hook": "カテゴリ別に 使い道が見える",
-    "name": "G+Money：家計簿・予算・為替",
-    "title": "カテゴリ別に 使い道が見える | 支出管理・お金管理・出費記録 | G+Money 家計簿",
-    "tags": [
-     "#家計簿予算為替",
-     "#お小遣い帳",
-     "#通貨換算",
-     "#貯金",
-     "#支出記録",
-     "#GMoney家計簿"
-    ],
-    "caption": "カテゴリ別に 使い道が見える\n換算も記録も オフラインでOK\n支出管理・お金管理・出費記録\nG+Money：家計簿・予算・為替\nApp Storeで「G+Money 家計簿」を検索\nAndroidはGoogle Playで\n\n#家計簿予算為替 #お小遣い帳 #通貨換算 #貯金 #GMoney家計簿",
-    "button": "App Storeで入手",
-    "variant": "b",
-    "alt": "G+Money：家計簿・予算・為替 — カテゴリ別に 使い道が見える — 換算も記録も オフラインでOK — 支出管理・お金管理・出費記録",
-    "store": "https://apps.apple.com/jp/app/id6755782939?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
-    "review": {
-     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
-     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
-    },
-    "keywords": [
-     "お小遣い帳",
-     "通貨換算",
-     "貯金",
-     "支出記録",
-     "レート計算",
-     "家計管理"
-    ],
-    "keyline": "支出管理・お金管理・出費記録",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "987a384c8c1d4d89",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "youtube": {
-     "title": "カテゴリ別に 使い道が見える | G+Money 家計簿 #Shorts",
-     "description": "カテゴリ別に 使い道が見える\n換算も記録も オフラインでOK\n支出管理・お金管理・出費記録\n\nG+Money：家計簿・予算・為替\nApp Store: https://apps.apple.com/jp/app/id6755782939?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney\nこのアプリをお使いですか？App Store で評価・レビューできます\nhttps://apps.apple.com/app/id6755782939?action=write-review\n\nお小遣い帳 · 通貨換算 · 貯金 · 支出記録 · レート計算 · 家計管理\n\n#Shorts #家計簿予算為替 #GMoney家計簿",
-     "tags": [
-      "お小遣い帳",
-      "通貨換算",
-      "貯金",
-      "支出記録",
-      "レート計算",
-      "家計管理",
-      "家計簿予算為替",
-      "GMoney家計簿",
-      "G+Money 家計簿"
-     ]
-    }
-   },
-   {
-    "kind": "clip",
-    "key": "gmoney/ko",
-    "locale": "ko",
-    "app": "gmoney",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/nck8iy.mp4",
-    "hook": "분류별로 어디에 썼는지 한눈에",
-    "name": "G+Money：가계부·예산·환율",
-    "title": "분류별로 어디에 썼는지 한눈에 | 생활비·소비기록·지출관리 | G+Money 가계부",
-    "tags": [
-     "#가계부예산환율",
-     "#용돈기입장",
-     "#환율계산기",
-     "#통화변환",
-     "#가계부앱",
-     "#GMoney가계부"
-    ],
-    "caption": "분류별로 어디에 썼는지 한눈에\n환율 계산·기록 오프라인에서도\n생활비·소비기록·지출관리\nG+Money：가계부·예산·환율\nApp Store에서 'G+Money 가계부' 검색\nAndroid는 Google Play에서\n\n#가계부예산환율 #용돈기입장 #환율계산기 #통화변환 #GMoney가계부",
-    "button": "App Store에서 받기",
-    "variant": "b",
-    "alt": "G+Money：가계부·예산·환율 — 분류별로 어디에 썼는지 한눈에 — 환율 계산·기록 오프라인에서도 — 생활비·소비기록·지출관리",
-    "store": "https://apps.apple.com/kr/app/id6755782939?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
-    "review": {
-     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
-     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
-    },
-    "keywords": [
-     "용돈기입장",
-     "환율계산기",
-     "통화변환",
-     "가계부앱",
-     "돈관리",
-     "절약"
-    ],
-    "keyline": "생활비·소비기록·지출관리",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "987a384c8c1d4d89",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "youtube": {
-     "title": "분류별로 어디에 썼는지 한눈에 | G+Money 가계부 #Shorts",
-     "description": "분류별로 어디에 썼는지 한눈에\n환율 계산·기록 오프라인에서도\n생활비·소비기록·지출관리\n\nG+Money：가계부·예산·환율\nApp Store: https://apps.apple.com/kr/app/id6755782939?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney\n이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다\nhttps://apps.apple.com/app/id6755782939?action=write-review\n\n용돈기입장 · 환율계산기 · 통화변환 · 가계부앱 · 돈관리 · 절약\n\n#Shorts #가계부예산환율 #GMoney가계부",
-     "tags": [
-      "용돈기입장",
-      "환율계산기",
-      "통화변환",
-      "가계부앱",
-      "돈관리",
-      "절약",
-      "가계부예산환율",
-      "GMoney가계부",
-      "G+Money 가계부"
-     ]
-    }
-   },
-   {
-    "kind": "clip",
-    "key": "gmoney/id",
-    "locale": "id",
-    "app": "gmoney",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/jgixdt.mp4",
-    "hook": "Lihat ke mana uangmu, per kategori",
-    "name": "G+Money: Catat & atur anggaran",
-    "title": "Lihat ke mana uangmu, per kategori | Catat & atur anggaran | G+Money",
-    "tags": [
-     "#CatatAturAnggaran",
-     "#Catatan",
-     "#Keuangan",
-     "#Konverter",
-     "#Mata",
-     "#GMoney"
-    ],
-    "caption": "Lihat ke mana uangmu, per kategori\nKonversi & catat, tanpa sinyal\nG+Money: Catat & atur anggaran\nCari “G+Money” di App Store\nJuga ada di Google Play\n\n#CatatAturAnggaran #Catatan #Keuangan #Konverter #GMoney",
-    "button": "Unduh di App Store",
-    "variant": "b",
-    "alt": "G+Money: Catat & atur anggaran — Lihat ke mana uangmu, per kategori — Konversi & catat, tanpa sinyal",
-    "store": "https://apps.apple.com/id/app/id6755782939?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
-    "review": {
-     "label": "Sudah memakai aplikasi ini? Beri nilai atau ulasan di App Store",
-     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
-    },
-    "keywords": [
-     "catatan",
-     "keuangan",
-     "konverter",
-     "mata",
-     "uang",
-     "pencatat"
-    ],
-    "keyline": "Catat & atur anggaran",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "987a384c8c1d4d89",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "youtube": {
-     "title": "Lihat ke mana uangmu, per kategori | G+Money #Shorts",
-     "description": "Lihat ke mana uangmu, per kategori\nKonversi & catat, tanpa sinyal\nCatat & atur anggaran\n\nG+Money: Catat & atur anggaran\nApp Store: https://apps.apple.com/id/app/id6755782939?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney\nSudah memakai aplikasi ini? Beri nilai atau ulasan di App Store\nhttps://apps.apple.com/app/id6755782939?action=write-review\n\ncatatan · keuangan · konverter · mata · uang · pencatat\n\n#Shorts #CatatAturAnggaran #GMoney",
-     "tags": [
-      "catatan",
-      "keuangan",
-      "konverter",
-      "mata",
-      "uang",
-      "pencatat",
-      "CatatAturAnggaran",
-      "GMoney",
-      "G+Money"
-     ]
-    }
-   },
-   {
-    "kind": "clip",
     "key": "hourstag/en",
     "locale": "en",
     "app": "hourstag",
@@ -43471,251 +43538,6 @@
    },
    {
     "kind": "clip",
-    "key": "onepageppt/en",
-    "locale": "en",
-    "app": "onepageppt",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/ygk4g4.mp4",
-    "hook": "Export editable PPTX",
-    "name": "OnePage PPT: AI Slide Maker",
-    "title": "Export editable PPTX | Presentation & Infographic | OnePage PPT",
-    "tags": [
-     "#AISlideMaker",
-     "#Deck",
-     "#Pitch",
-     "#Chart",
-     "#Graph",
-     "#OnePagePPT"
-    ],
-    "caption": "Export editable PPTX\nPaste notes, PDFs, screenshots\nPresentation & Infographic\nOnePage PPT: AI Slide Maker\nSearch “OnePage PPT” on the App Store\nAlso on Google Play\n\n#AISlideMaker #Deck #Pitch #Chart #OnePagePPT",
-    "button": "Get it on the App Store",
-    "variant": "c",
-    "alt": "OnePage PPT: AI Slide Maker — Export editable PPTX — Paste notes, PDFs, screenshots — Presentation & Infographic",
-    "store": "https://apps.apple.com/us/app/id6798814385?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt",
-    "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6798814385?action=write-review"
-    },
-    "keywords": [
-     "deck",
-     "pitch",
-     "chart",
-     "graph",
-     "diagram",
-     "generator"
-    ],
-    "keyline": "Presentation & Infographic",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "3770a5c2653a56c0",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "pinterest": {
-     "description": "Export editable PPTX\nPaste notes, PDFs, screenshots\nPresentation & Infographic\nOnePage PPT: AI Slide Maker\nSearch “OnePage PPT” on the App Store\nAlso on Google Play\n\n#AISlideMaker #Deck #Pitch #Chart #OnePagePPT\n\nGet it on the App Store: https://apps.apple.com/us/app/id6798814385?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt",
-     "link": "https://apps.apple.com/us/app/id6798814385?pt=118326163&ct=social&mt=8"
-    },
-    "boost_rank": 4
-   },
-   {
-    "kind": "clip",
-    "key": "onepageppt/zh-Hant",
-    "locale": "zh-Hant",
-    "app": "onepageppt",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/2a6roi.mp4",
-    "hook": "貼上筆記、PDF 或截圖",
-    "name": "OnePage PPT: AI 一頁簡報",
-    "title": "貼上筆記、PDF 或截圖 | 簡報製作・筆記截圖秒變投影片 | OnePage PPT 一頁簡報",
-    "tags": [
-     "#AI一頁簡報",
-     "#懶人包",
-     "#重點整理",
-     "#摘要",
-     "#會議紀錄",
-     "#OnePagePPT一頁簡報"
-    ],
-    "caption": "貼上筆記、PDF 或截圖\n一鍵換風格\n簡報製作・筆記截圖秒變投影片\nOnePage PPT: AI 一頁簡報\n在 App Store 搜尋「一頁 摘要」\nAndroid 版在 Google Play\n\n#AI一頁簡報 #懶人包 #重點整理 #摘要 #OnePagePPT一頁簡報",
-    "button": "在 App Store 下載",
-    "variant": "b",
-    "alt": "OnePage PPT: AI 一頁簡報 — 貼上筆記、PDF 或截圖 — 一鍵換風格 — 簡報製作・筆記截圖秒變投影片",
-    "store": "https://apps.apple.com/tw/app/id6798814385?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt",
-    "review": {
-     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
-     "url": "https://apps.apple.com/app/id6798814385?action=write-review"
-    },
-    "keywords": [
-     "懶人包",
-     "重點整理",
-     "摘要",
-     "會議紀錄",
-     "報告",
-     "生成"
-    ],
-    "keyline": "簡報製作・筆記截圖秒變投影片",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "3770a5c2653a56c0",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "pinterest": {
-     "description": "貼上筆記、PDF 或截圖\n一鍵換風格\n簡報製作・筆記截圖秒變投影片\nOnePage PPT: AI 一頁簡報\n在 App Store 搜尋「一頁 摘要」\nAndroid 版在 Google Play\n\n#AI一頁簡報 #懶人包 #重點整理 #摘要 #OnePagePPT一頁簡報\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6798814385?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt",
-     "link": "https://apps.apple.com/tw/app/id6798814385?pt=118326163&ct=social&mt=8"
-    },
-    "boost_rank": 4
-   },
-   {
-    "kind": "clip",
-    "key": "onepageppt/ja",
-    "locale": "ja",
-    "app": "onepageppt",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/eunx79.mp4",
-    "hook": "メモもPDFも スクショも",
-    "name": "OnePage PPT: AI資料作成",
-    "title": "メモもPDFも スクショも | メモからプレゼン資料・スライドへ | OnePage PPT AI資料作成",
-    "tags": [
-     "#AI資料作成",
-     "#要約",
-     "#議事録",
-     "#会議",
-     "#企画書",
-     "#OnePagePPTAI資料作成"
-    ],
-    "caption": "メモもPDFも スクショも\nデザインも ワンタップで一新\nメモからプレゼン資料・スライドへ\nOnePage PPT: AI資料作成\nApp Storeで「OnePage PPT AI資料作成」を検索\nAndroidはGoogle Playで\n\n#AI資料作成 #要約 #議事録 #会議 #OnePagePPTAI資料作成",
-    "button": "App Storeで入手",
-    "variant": "b",
-    "alt": "OnePage PPT: AI資料作成 — メモもPDFも スクショも — デザインも ワンタップで一新 — メモからプレゼン資料・スライドへ",
-    "store": "https://apps.apple.com/jp/app/id6798814385?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt",
-    "review": {
-     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
-     "url": "https://apps.apple.com/app/id6798814385?action=write-review"
-    },
-    "keywords": [
-     "要約",
-     "議事録",
-     "会議",
-     "企画書",
-     "報告書",
-     "レポート"
-    ],
-    "keyline": "メモからプレゼン資料・スライドへ",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "3770a5c2653a56c0",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "pinterest": {
-     "description": "メモもPDFも スクショも\nデザインも ワンタップで一新\nメモからプレゼン資料・スライドへ\nOnePage PPT: AI資料作成\nApp Storeで「OnePage PPT AI資料作成」を検索\nAndroidはGoogle Playで\n\n#AI資料作成 #要約 #議事録 #会議 #OnePagePPTAI資料作成\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6798814385?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt",
-     "link": "https://apps.apple.com/jp/app/id6798814385?pt=118326163&ct=social&mt=8"
-    },
-    "boost_rank": 4
-   },
-   {
-    "kind": "clip",
-    "key": "onepageppt/ko",
-    "locale": "ko",
-    "app": "onepageppt",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/zpx40x.mp4",
-    "hook": "메모·PDF·캡처 그대로 붙여넣기",
-    "name": "OnePage PPT: AI 발표자료",
-    "title": "메모·PDF·캡처 그대로 붙여넣기 | AI 발표자료 | OnePage PPT 발표자료",
-    "tags": [
-     "#AI발표자료",
-     "#프레젠테이션",
-     "#요약",
-     "#회의록",
-     "#보고서",
-     "#OnePagePPT발표자료"
-    ],
-    "caption": "메모·PDF·캡처 그대로 붙여넣기\n디자인도 탭 한 번에 변신\nOnePage PPT: AI 발표자료\nApp Store에서 'OnePage PPT 발표자료' 검색\nAndroid는 Google Play에서\n\n#AI발표자료 #프레젠테이션 #요약 #회의록 #OnePagePPT발표자료",
-    "button": "App Store에서 받기",
-    "variant": "b",
-    "alt": "OnePage PPT: AI 발표자료 — 메모·PDF·캡처 그대로 붙여넣기 — 디자인도 탭 한 번에 변신",
-    "store": "https://apps.apple.com/kr/app/id6798814385?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt",
-    "review": {
-     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
-     "url": "https://apps.apple.com/app/id6798814385?action=write-review"
-    },
-    "keywords": [
-     "프레젠테이션",
-     "요약",
-     "회의록",
-     "보고서",
-     "차트",
-     "그래프"
-    ],
-    "keyline": "AI 발표자료",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "3770a5c2653a56c0",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "pinterest": {
-     "description": "메모·PDF·캡처 그대로 붙여넣기\n디자인도 탭 한 번에 변신\nOnePage PPT: AI 발표자료\nApp Store에서 'OnePage PPT 발표자료' 검색\nAndroid는 Google Play에서\n\n#AI발표자료 #프레젠테이션 #요약 #회의록 #OnePagePPT발표자료\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6798814385?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt",
-     "link": "https://apps.apple.com/kr/app/id6798814385?pt=118326163&ct=social&mt=8"
-    },
-    "boost_rank": 4
-   },
-   {
-    "kind": "clip",
-    "key": "onepageppt/de",
-    "locale": "de",
-    "app": "onepageppt",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/11zznw.mp4",
-    "hook": "Notizen, PDFs, Screenshots einfügen",
-    "name": "OnePage PPT: KI Folien",
-    "title": "Notizen, PDFs, Screenshots einfügen | KI Folien | OnePage PPT",
-    "tags": [
-     "#KIFolien",
-     "#Zusammenfassung",
-     "#Erstellen",
-     "#Generator",
-     "#Notizen",
-     "#OnePagePPT"
-    ],
-    "caption": "Notizen, PDFs, Screenshots einfügen\nSofort neu gestalten\nOnePage PPT: KI Folien\nIm App Store nach „OnePage PPT“ suchen\nAuch bei Google Play\n\n#KIFolien #Zusammenfassung #Erstellen #Generator #OnePagePPT",
-    "button": "Im App Store laden",
-    "variant": "b",
-    "alt": "OnePage PPT: KI Folien — Notizen, PDFs, Screenshots einfügen — Sofort neu gestalten",
-    "store": "https://apps.apple.com/de/app/id6798814385?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt",
-    "review": {
-     "label": "Sie nutzen diese App bereits? Bewerten oder rezensieren Sie sie im App Store",
-     "url": "https://apps.apple.com/app/id6798814385?action=write-review"
-    },
-    "keywords": [
-     "zusammenfassung",
-     "erstellen",
-     "generator",
-     "notizen",
-     "referat",
-     "vortrag"
-    ],
-    "keyline": "KI Folien",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "3770a5c2653a56c0",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "pinterest": {
-     "description": "Notizen, PDFs, Screenshots einfügen\nSofort neu gestalten\nOnePage PPT: KI Folien\nIm App Store nach „OnePage PPT“ suchen\nAuch bei Google Play\n\n#KIFolien #Zusammenfassung #Erstellen #Generator #OnePagePPT\n\nIm App Store laden: https://apps.apple.com/de/app/id6798814385?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt",
-     "link": "https://apps.apple.com/de/app/id6798814385?pt=118326163&ct=social&mt=8"
-    },
-    "boost_rank": 4
-   },
-   {
-    "kind": "clip",
     "key": "duowallpaperstudio/en",
     "locale": "en",
     "app": "duowallpaperstudio",
@@ -43761,7 +43583,7 @@
      "description": "Recolor it, add your own words\nOpen: the whole scene\nfold · folding · flip\nSearch “Foldable Wallpaper Studio” on the App Store\nAlso on Google Play\n\n#Fold #Folding #Flip #Pair #FoldableWallpaperStudio\n\nGet it on the App Store: https://apps.apple.com/us/app/id6824946559?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DuoWallpaperStudio&referrer=utm_source%3Dsocial%26utm_campaign%3Dduowallpaperstudio",
      "link": "https://apps.apple.com/us/app/id6824946559?pt=118326163&ct=social&mt=8"
     },
-    "boost_rank": 5
+    "boost_rank": 4
    },
    {
     "kind": "clip",
@@ -43810,7 +43632,7 @@
      "description": "展開，內螢幕是 整片全景\n5 款小工具 畫上你選的桌布\n適用Duo・高畫質・外螢幕特寫・內螢幕全景・美化小工具\n在 App Store 搜尋「Foldable Wallpaper Studio」\nAndroid 版在 Google Play\n\n#雙螢幕成對桌布 #折疊 #鎖定畫面 #主畫面 #FoldableWallpaperStudio\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6824946559?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DuoWallpaperStudio&referrer=utm_source%3Dsocial%26utm_campaign%3Dduowallpaperstudio",
      "link": "https://apps.apple.com/tw/app/id6824946559?pt=118326163&ct=social&mt=8"
     },
-    "boost_rank": 5
+    "boost_rank": 4
    },
    {
     "kind": "clip",
@@ -43859,7 +43681,7 @@
      "description": "開けば 全景\n選んだ壁紙で描く 5種のウィジェット\nDuo対応・閉じればアップ、開けば全景のペア壁紙\nApp Storeで「Foldable Wallpaper Studio」を検索\nAndroidはGoogle Playで\n\n#外画面と内画面 #スマホ #2画面 #待ち受け #FoldableWallpaperStudio\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6824946559?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DuoWallpaperStudio&referrer=utm_source%3Dsocial%26utm_campaign%3Dduowallpaperstudio",
      "link": "https://apps.apple.com/jp/app/id6824946559?pt=118326163&ct=social&mt=8"
     },
-    "boost_rank": 5
+    "boost_rank": 4
    },
    {
     "kind": "clip",
@@ -43908,7 +43730,7 @@
      "description": "펼치면 같은 장면의 전경\n고른 배경화면으로 그린 위젯 5종\nDuo를 접으면 클로즈업, 펼치면 전경\nApp Store에서 'Foldable Wallpaper Studio' 검색\nAndroid는 Google Play에서\n\n#커버메인세트 #폴더블폰 #커버화면 #메인화면 #FoldableWallpaperStudio\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6824946559?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DuoWallpaperStudio&referrer=utm_source%3Dsocial%26utm_campaign%3Dduowallpaperstudio",
      "link": "https://apps.apple.com/kr/app/id6824946559?pt=118326163&ct=social&mt=8"
     },
-    "boost_rank": 5
+    "boost_rank": 4
    },
    {
     "kind": "clip",
@@ -43957,7 +43779,7 @@
      "description": "Aufgeklappt: die ganze Szene\n5 Widgets mit deinem Hintergrund\nfaltbar · klapphandy · paar\nIm App Store nach „Foldable Wallpaper Studio“ suchen\nAuch bei Google Play\n\n#Faltbar #Klapphandy #Paar #Außendisplay #FoldableWallpaperStudio\n\nIm App Store laden: https://apps.apple.com/de/app/id6824946559?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DuoWallpaperStudio&referrer=utm_source%3Dsocial%26utm_campaign%3Dduowallpaperstudio",
      "link": "https://apps.apple.com/de/app/id6824946559?pt=118326163&ct=social&mt=8"
     },
-    "boost_rank": 5
+    "boost_rank": 4
    },
    {
     "kind": "clip",
@@ -44005,6 +43827,251 @@
     "pinterest": {
      "description": "Aberto: a cena inteira\n5 widgets com o seu papel de parede\nfoldable · celular · fundo\nPesquise “Foldable Wallpaper Studio” na App Store\nTambém no Google Play\n\n#Foldable #Celular #Fundo #TelaDupla #FoldableWallpaperStudio\n\nBaixar na App Store: https://apps.apple.com/br/app/id6824946559?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DuoWallpaperStudio&referrer=utm_source%3Dsocial%26utm_campaign%3Dduowallpaperstudio",
      "link": "https://apps.apple.com/br/app/id6824946559?pt=118326163&ct=social&mt=8"
+    },
+    "boost_rank": 4
+   },
+   {
+    "kind": "clip",
+    "key": "gmoney/en",
+    "locale": "en",
+    "app": "gmoney",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/txsq79.mp4",
+    "hook": "See what's left today",
+    "name": "G+Money: Spending & Budget",
+    "title": "See what's left today | Spending & Budget | G+Money",
+    "tags": [
+     "#SpendingBudget",
+     "#Multicurrency",
+     "#Export",
+     "#Savings",
+     "#Finance",
+     "#GMoney"
+    ],
+    "caption": "See what's left today\nSee where it went, by category\nG+Money: Spending & Budget\nSearch “G+Money” on the App Store\nAlso on Google Play\n\n#SpendingBudget #Multicurrency #Export #Savings #GMoney",
+    "button": "Get it on the App Store",
+    "variant": "c",
+    "alt": "G+Money: Spending & Budget — See what's left today — See where it went, by category",
+    "store": "https://apps.apple.com/us/app/id6755782939?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
+    "review": {
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
+    },
+    "keywords": [
+     "multicurrency",
+     "export",
+     "savings",
+     "finance",
+     "wallet",
+     "bookkeeping"
+    ],
+    "keyline": "Spending & Budget",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "987a384c8c1d4d89",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "See what's left today\nSee where it went, by category\nG+Money: Spending & Budget\nSearch “G+Money” on the App Store\nAlso on Google Play\n\n#SpendingBudget #Multicurrency #Export #Savings #GMoney\n\nGet it on the App Store: https://apps.apple.com/us/app/id6755782939?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
+     "link": "https://apps.apple.com/us/app/id6755782939?pt=118326163&ct=social&mt=8"
+    },
+    "boost_rank": 5
+   },
+   {
+    "kind": "clip",
+    "key": "gmoney/zh-Hant",
+    "locale": "zh-Hant",
+    "app": "gmoney",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/ve63hr.mp4",
+    "hook": "按分類 看見錢花去哪",
+    "name": "G+Money：日常記帳·預算·匯率",
+    "title": "按分類 看見錢花去哪 | 多幣別・離線記帳・分類報表 | G+Money 記帳",
+    "tags": [
+     "#日常記帳預算匯率",
+     "#多國貨幣",
+     "#本機儲存",
+     "#換匯",
+     "#出差",
+     "#GMoney記帳"
+    ],
+    "caption": "按分類 看見錢花去哪\n換算＋記帳 離線也能用\n多幣別・離線記帳・分類報表\nG+Money：日常記帳·預算·匯率\n在 App Store 搜尋「G+Money 記帳」\nAndroid 版在 Google Play\n\n#日常記帳預算匯率 #多國貨幣 #本機儲存 #換匯 #GMoney記帳",
+    "button": "在 App Store 下載",
+    "variant": "b",
+    "alt": "G+Money：日常記帳·預算·匯率 — 按分類 看見錢花去哪 — 換算＋記帳 離線也能用 — 多幣別・離線記帳・分類報表",
+    "store": "https://apps.apple.com/tw/app/id6755782939?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
+    "review": {
+     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
+     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
+    },
+    "keywords": [
+     "多國貨幣",
+     "本機儲存",
+     "換匯",
+     "出差",
+     "收支",
+     "記帳日記"
+    ],
+    "keyline": "多幣別・離線記帳・分類報表",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "987a384c8c1d4d89",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "按分類 看見錢花去哪\n換算＋記帳 離線也能用\n多幣別・離線記帳・分類報表\nG+Money：日常記帳·預算·匯率\n在 App Store 搜尋「G+Money 記帳」\nAndroid 版在 Google Play\n\n#日常記帳預算匯率 #多國貨幣 #本機儲存 #換匯 #GMoney記帳\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6755782939?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
+     "link": "https://apps.apple.com/tw/app/id6755782939?pt=118326163&ct=social&mt=8"
+    },
+    "boost_rank": 5
+   },
+   {
+    "kind": "clip",
+    "key": "gmoney/ja",
+    "locale": "ja",
+    "app": "gmoney",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/lk7ile.mp4",
+    "hook": "カテゴリ別に 使い道が見える",
+    "name": "G+Money：家計簿・予算・為替",
+    "title": "カテゴリ別に 使い道が見える | 支出管理・お金管理・出費記録 | G+Money 家計簿",
+    "tags": [
+     "#家計簿予算為替",
+     "#お小遣い帳",
+     "#通貨換算",
+     "#貯金",
+     "#支出記録",
+     "#GMoney家計簿"
+    ],
+    "caption": "カテゴリ別に 使い道が見える\n換算も記録も オフラインでOK\n支出管理・お金管理・出費記録\nG+Money：家計簿・予算・為替\nApp Storeで「G+Money 家計簿」を検索\nAndroidはGoogle Playで\n\n#家計簿予算為替 #お小遣い帳 #通貨換算 #貯金 #GMoney家計簿",
+    "button": "App Storeで入手",
+    "variant": "b",
+    "alt": "G+Money：家計簿・予算・為替 — カテゴリ別に 使い道が見える — 換算も記録も オフラインでOK — 支出管理・お金管理・出費記録",
+    "store": "https://apps.apple.com/jp/app/id6755782939?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
+    "review": {
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
+    },
+    "keywords": [
+     "お小遣い帳",
+     "通貨換算",
+     "貯金",
+     "支出記録",
+     "レート計算",
+     "家計管理"
+    ],
+    "keyline": "支出管理・お金管理・出費記録",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "987a384c8c1d4d89",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "カテゴリ別に 使い道が見える\n換算も記録も オフラインでOK\n支出管理・お金管理・出費記録\nG+Money：家計簿・予算・為替\nApp Storeで「G+Money 家計簿」を検索\nAndroidはGoogle Playで\n\n#家計簿予算為替 #お小遣い帳 #通貨換算 #貯金 #GMoney家計簿\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6755782939?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
+     "link": "https://apps.apple.com/jp/app/id6755782939?pt=118326163&ct=social&mt=8"
+    },
+    "boost_rank": 5
+   },
+   {
+    "kind": "clip",
+    "key": "gmoney/ko",
+    "locale": "ko",
+    "app": "gmoney",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/nck8iy.mp4",
+    "hook": "분류별로 어디에 썼는지 한눈에",
+    "name": "G+Money：가계부·예산·환율",
+    "title": "분류별로 어디에 썼는지 한눈에 | 생활비·소비기록·지출관리 | G+Money 가계부",
+    "tags": [
+     "#가계부예산환율",
+     "#용돈기입장",
+     "#환율계산기",
+     "#통화변환",
+     "#가계부앱",
+     "#GMoney가계부"
+    ],
+    "caption": "분류별로 어디에 썼는지 한눈에\n환율 계산·기록 오프라인에서도\n생활비·소비기록·지출관리\nG+Money：가계부·예산·환율\nApp Store에서 'G+Money 가계부' 검색\nAndroid는 Google Play에서\n\n#가계부예산환율 #용돈기입장 #환율계산기 #통화변환 #GMoney가계부",
+    "button": "App Store에서 받기",
+    "variant": "b",
+    "alt": "G+Money：가계부·예산·환율 — 분류별로 어디에 썼는지 한눈에 — 환율 계산·기록 오프라인에서도 — 생활비·소비기록·지출관리",
+    "store": "https://apps.apple.com/kr/app/id6755782939?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
+    "review": {
+     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
+     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
+    },
+    "keywords": [
+     "용돈기입장",
+     "환율계산기",
+     "통화변환",
+     "가계부앱",
+     "돈관리",
+     "절약"
+    ],
+    "keyline": "생활비·소비기록·지출관리",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "987a384c8c1d4d89",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "분류별로 어디에 썼는지 한눈에\n환율 계산·기록 오프라인에서도\n생활비·소비기록·지출관리\nG+Money：가계부·예산·환율\nApp Store에서 'G+Money 가계부' 검색\nAndroid는 Google Play에서\n\n#가계부예산환율 #용돈기입장 #환율계산기 #통화변환 #GMoney가계부\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6755782939?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
+     "link": "https://apps.apple.com/kr/app/id6755782939?pt=118326163&ct=social&mt=8"
+    },
+    "boost_rank": 5
+   },
+   {
+    "kind": "clip",
+    "key": "gmoney/id",
+    "locale": "id",
+    "app": "gmoney",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/jgixdt.mp4",
+    "hook": "Lihat ke mana uangmu, per kategori",
+    "name": "G+Money: Catat & atur anggaran",
+    "title": "Lihat ke mana uangmu, per kategori | Catat & atur anggaran | G+Money",
+    "tags": [
+     "#CatatAturAnggaran",
+     "#Catatan",
+     "#Keuangan",
+     "#Konverter",
+     "#Mata",
+     "#GMoney"
+    ],
+    "caption": "Lihat ke mana uangmu, per kategori\nKonversi & catat, tanpa sinyal\nG+Money: Catat & atur anggaran\nCari “G+Money” di App Store\nJuga ada di Google Play\n\n#CatatAturAnggaran #Catatan #Keuangan #Konverter #GMoney",
+    "button": "Unduh di App Store",
+    "variant": "b",
+    "alt": "G+Money: Catat & atur anggaran — Lihat ke mana uangmu, per kategori — Konversi & catat, tanpa sinyal",
+    "store": "https://apps.apple.com/id/app/id6755782939?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
+    "review": {
+     "label": "Sudah memakai aplikasi ini? Beri nilai atau ulasan di App Store",
+     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
+    },
+    "keywords": [
+     "catatan",
+     "keuangan",
+     "konverter",
+     "mata",
+     "uang",
+     "pencatat"
+    ],
+    "keyline": "Catat & atur anggaran",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "987a384c8c1d4d89",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "Lihat ke mana uangmu, per kategori\nKonversi & catat, tanpa sinyal\nG+Money: Catat & atur anggaran\nCari “G+Money” di App Store\nJuga ada di Google Play\n\n#CatatAturAnggaran #Catatan #Keuangan #Konverter #GMoney\n\nUnduh di App Store: https://apps.apple.com/id/app/id6755782939?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
+     "link": "https://apps.apple.com/id/app/id6755782939?pt=118326163&ct=social&mt=8"
     },
     "boost_rank": 5
    },
@@ -49189,6 +49256,246 @@
     "pinterest": {
      "description": "لكل دفتر مظهره الخاص\nالصوت داخل الصفحة\nدفتر ملاحظات بخط اليد وPDF\n100 Notes Studio: Pen & Paper\nابحث عن «100 Notes Studio» في App Store\nمتوفر أيضًا على Google Play\n\n#كراسة #يوميات #مذاكرة #تلخيص #100NotesStudio\n\nحمّله من App Store: https://apps.apple.com/sa/app/id6798813048?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.NotesStudio100&referrer=utm_source%3Dsocial%26utm_campaign%3Dnotesstudio100",
      "link": "https://apps.apple.com/sa/app/id6798813048?pt=118326163&ct=social&mt=8"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "onepageppt/en",
+    "locale": "en",
+    "app": "onepageppt",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/ygk4g4.mp4",
+    "hook": "Export editable PPTX",
+    "name": "OnePage PPT: AI Slide Maker",
+    "title": "Export editable PPTX | Presentation & Infographic | OnePage PPT",
+    "tags": [
+     "#AISlideMaker",
+     "#Deck",
+     "#Pitch",
+     "#Chart",
+     "#Graph",
+     "#OnePagePPT"
+    ],
+    "caption": "Export editable PPTX\nPaste notes, PDFs, screenshots\nPresentation & Infographic\nOnePage PPT: AI Slide Maker\nSearch “OnePage PPT” on the App Store\nAlso on Google Play\n\n#AISlideMaker #Deck #Pitch #Chart #OnePagePPT",
+    "button": "Get it on the App Store",
+    "variant": "c",
+    "alt": "OnePage PPT: AI Slide Maker — Export editable PPTX — Paste notes, PDFs, screenshots — Presentation & Infographic",
+    "store": "https://apps.apple.com/us/app/id6798814385?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt",
+    "review": {
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6798814385?action=write-review"
+    },
+    "keywords": [
+     "deck",
+     "pitch",
+     "chart",
+     "graph",
+     "diagram",
+     "generator"
+    ],
+    "keyline": "Presentation & Infographic",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "3770a5c2653a56c0",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "Export editable PPTX\nPaste notes, PDFs, screenshots\nPresentation & Infographic\nOnePage PPT: AI Slide Maker\nSearch “OnePage PPT” on the App Store\nAlso on Google Play\n\n#AISlideMaker #Deck #Pitch #Chart #OnePagePPT\n\nGet it on the App Store: https://apps.apple.com/us/app/id6798814385?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt",
+     "link": "https://apps.apple.com/us/app/id6798814385?pt=118326163&ct=social&mt=8"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "onepageppt/zh-Hant",
+    "locale": "zh-Hant",
+    "app": "onepageppt",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/2a6roi.mp4",
+    "hook": "貼上筆記、PDF 或截圖",
+    "name": "OnePage PPT: AI 一頁簡報",
+    "title": "貼上筆記、PDF 或截圖 | 簡報製作・筆記截圖秒變投影片 | OnePage PPT 一頁簡報",
+    "tags": [
+     "#AI一頁簡報",
+     "#懶人包",
+     "#重點整理",
+     "#摘要",
+     "#會議紀錄",
+     "#OnePagePPT一頁簡報"
+    ],
+    "caption": "貼上筆記、PDF 或截圖\n一鍵換風格\n簡報製作・筆記截圖秒變投影片\nOnePage PPT: AI 一頁簡報\n在 App Store 搜尋「一頁 摘要」\nAndroid 版在 Google Play\n\n#AI一頁簡報 #懶人包 #重點整理 #摘要 #OnePagePPT一頁簡報",
+    "button": "在 App Store 下載",
+    "variant": "b",
+    "alt": "OnePage PPT: AI 一頁簡報 — 貼上筆記、PDF 或截圖 — 一鍵換風格 — 簡報製作・筆記截圖秒變投影片",
+    "store": "https://apps.apple.com/tw/app/id6798814385?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt",
+    "review": {
+     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
+     "url": "https://apps.apple.com/app/id6798814385?action=write-review"
+    },
+    "keywords": [
+     "懶人包",
+     "重點整理",
+     "摘要",
+     "會議紀錄",
+     "報告",
+     "生成"
+    ],
+    "keyline": "簡報製作・筆記截圖秒變投影片",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "3770a5c2653a56c0",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "貼上筆記、PDF 或截圖\n一鍵換風格\n簡報製作・筆記截圖秒變投影片\nOnePage PPT: AI 一頁簡報\n在 App Store 搜尋「一頁 摘要」\nAndroid 版在 Google Play\n\n#AI一頁簡報 #懶人包 #重點整理 #摘要 #OnePagePPT一頁簡報\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6798814385?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt",
+     "link": "https://apps.apple.com/tw/app/id6798814385?pt=118326163&ct=social&mt=8"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "onepageppt/ja",
+    "locale": "ja",
+    "app": "onepageppt",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/eunx79.mp4",
+    "hook": "メモもPDFも スクショも",
+    "name": "OnePage PPT: AI資料作成",
+    "title": "メモもPDFも スクショも | メモからプレゼン資料・スライドへ | OnePage PPT AI資料作成",
+    "tags": [
+     "#AI資料作成",
+     "#要約",
+     "#議事録",
+     "#会議",
+     "#企画書",
+     "#OnePagePPTAI資料作成"
+    ],
+    "caption": "メモもPDFも スクショも\nデザインも ワンタップで一新\nメモからプレゼン資料・スライドへ\nOnePage PPT: AI資料作成\nApp Storeで「OnePage PPT AI資料作成」を検索\nAndroidはGoogle Playで\n\n#AI資料作成 #要約 #議事録 #会議 #OnePagePPTAI資料作成",
+    "button": "App Storeで入手",
+    "variant": "b",
+    "alt": "OnePage PPT: AI資料作成 — メモもPDFも スクショも — デザインも ワンタップで一新 — メモからプレゼン資料・スライドへ",
+    "store": "https://apps.apple.com/jp/app/id6798814385?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt",
+    "review": {
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6798814385?action=write-review"
+    },
+    "keywords": [
+     "要約",
+     "議事録",
+     "会議",
+     "企画書",
+     "報告書",
+     "レポート"
+    ],
+    "keyline": "メモからプレゼン資料・スライドへ",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "3770a5c2653a56c0",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "メモもPDFも スクショも\nデザインも ワンタップで一新\nメモからプレゼン資料・スライドへ\nOnePage PPT: AI資料作成\nApp Storeで「OnePage PPT AI資料作成」を検索\nAndroidはGoogle Playで\n\n#AI資料作成 #要約 #議事録 #会議 #OnePagePPTAI資料作成\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6798814385?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt",
+     "link": "https://apps.apple.com/jp/app/id6798814385?pt=118326163&ct=social&mt=8"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "onepageppt/ko",
+    "locale": "ko",
+    "app": "onepageppt",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/zpx40x.mp4",
+    "hook": "메모·PDF·캡처 그대로 붙여넣기",
+    "name": "OnePage PPT: AI 발표자료",
+    "title": "메모·PDF·캡처 그대로 붙여넣기 | AI 발표자료 | OnePage PPT 발표자료",
+    "tags": [
+     "#AI발표자료",
+     "#프레젠테이션",
+     "#요약",
+     "#회의록",
+     "#보고서",
+     "#OnePagePPT발표자료"
+    ],
+    "caption": "메모·PDF·캡처 그대로 붙여넣기\n디자인도 탭 한 번에 변신\nOnePage PPT: AI 발표자료\nApp Store에서 'OnePage PPT 발표자료' 검색\nAndroid는 Google Play에서\n\n#AI발표자료 #프레젠테이션 #요약 #회의록 #OnePagePPT발표자료",
+    "button": "App Store에서 받기",
+    "variant": "b",
+    "alt": "OnePage PPT: AI 발표자료 — 메모·PDF·캡처 그대로 붙여넣기 — 디자인도 탭 한 번에 변신",
+    "store": "https://apps.apple.com/kr/app/id6798814385?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt",
+    "review": {
+     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
+     "url": "https://apps.apple.com/app/id6798814385?action=write-review"
+    },
+    "keywords": [
+     "프레젠테이션",
+     "요약",
+     "회의록",
+     "보고서",
+     "차트",
+     "그래프"
+    ],
+    "keyline": "AI 발표자료",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "3770a5c2653a56c0",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "메모·PDF·캡처 그대로 붙여넣기\n디자인도 탭 한 번에 변신\nOnePage PPT: AI 발표자료\nApp Store에서 'OnePage PPT 발표자료' 검색\nAndroid는 Google Play에서\n\n#AI발표자료 #프레젠테이션 #요약 #회의록 #OnePagePPT발표자료\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6798814385?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt",
+     "link": "https://apps.apple.com/kr/app/id6798814385?pt=118326163&ct=social&mt=8"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "onepageppt/de",
+    "locale": "de",
+    "app": "onepageppt",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/11zznw.mp4",
+    "hook": "Notizen, PDFs, Screenshots einfügen",
+    "name": "OnePage PPT: KI Folien",
+    "title": "Notizen, PDFs, Screenshots einfügen | KI Folien | OnePage PPT",
+    "tags": [
+     "#KIFolien",
+     "#Zusammenfassung",
+     "#Erstellen",
+     "#Generator",
+     "#Notizen",
+     "#OnePagePPT"
+    ],
+    "caption": "Notizen, PDFs, Screenshots einfügen\nSofort neu gestalten\nOnePage PPT: KI Folien\nIm App Store nach „OnePage PPT“ suchen\nAuch bei Google Play\n\n#KIFolien #Zusammenfassung #Erstellen #Generator #OnePagePPT",
+    "button": "Im App Store laden",
+    "variant": "b",
+    "alt": "OnePage PPT: KI Folien — Notizen, PDFs, Screenshots einfügen — Sofort neu gestalten",
+    "store": "https://apps.apple.com/de/app/id6798814385?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt",
+    "review": {
+     "label": "Sie nutzen diese App bereits? Bewerten oder rezensieren Sie sie im App Store",
+     "url": "https://apps.apple.com/app/id6798814385?action=write-review"
+    },
+    "keywords": [
+     "zusammenfassung",
+     "erstellen",
+     "generator",
+     "notizen",
+     "referat",
+     "vortrag"
+    ],
+    "keyline": "KI Folien",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "3770a5c2653a56c0",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "Notizen, PDFs, Screenshots einfügen\nSofort neu gestalten\nOnePage PPT: KI Folien\nIm App Store nach „OnePage PPT“ suchen\nAuch bei Google Play\n\n#KIFolien #Zusammenfassung #Erstellen #Generator #OnePagePPT\n\nIm App Store laden: https://apps.apple.com/de/app/id6798814385?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt",
+     "link": "https://apps.apple.com/de/app/id6798814385?pt=118326163&ct=social&mt=8"
     }
    },
    {
@@ -55286,246 +55593,6 @@
    },
    {
     "kind": "clip",
-    "key": "gmoney/en",
-    "locale": "en",
-    "app": "gmoney",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/txsq79.mp4",
-    "hook": "See what's left today",
-    "name": "G+Money: Spending & Budget",
-    "title": "See what's left today | Spending & Budget | G+Money",
-    "tags": [
-     "#SpendingBudget",
-     "#Multicurrency",
-     "#Export",
-     "#Savings",
-     "#Finance",
-     "#GMoney"
-    ],
-    "caption": "See what's left today\nSee where it went, by category\nG+Money: Spending & Budget\nSearch “G+Money” on the App Store\nAlso on Google Play\n\n#SpendingBudget #Multicurrency #Export #Savings #GMoney",
-    "button": "Get it on the App Store",
-    "variant": "c",
-    "alt": "G+Money: Spending & Budget — See what's left today — See where it went, by category",
-    "store": "https://apps.apple.com/us/app/id6755782939?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
-    "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
-    },
-    "keywords": [
-     "multicurrency",
-     "export",
-     "savings",
-     "finance",
-     "wallet",
-     "bookkeeping"
-    ],
-    "keyline": "Spending & Budget",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "987a384c8c1d4d89",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "pinterest": {
-     "description": "See what's left today\nSee where it went, by category\nG+Money: Spending & Budget\nSearch “G+Money” on the App Store\nAlso on Google Play\n\n#SpendingBudget #Multicurrency #Export #Savings #GMoney\n\nGet it on the App Store: https://apps.apple.com/us/app/id6755782939?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
-     "link": "https://apps.apple.com/us/app/id6755782939?pt=118326163&ct=social&mt=8"
-    }
-   },
-   {
-    "kind": "clip",
-    "key": "gmoney/zh-Hant",
-    "locale": "zh-Hant",
-    "app": "gmoney",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/ve63hr.mp4",
-    "hook": "按分類 看見錢花去哪",
-    "name": "G+Money：日常記帳·預算·匯率",
-    "title": "按分類 看見錢花去哪 | 多幣別・離線記帳・分類報表 | G+Money 記帳",
-    "tags": [
-     "#日常記帳預算匯率",
-     "#多國貨幣",
-     "#本機儲存",
-     "#換匯",
-     "#出差",
-     "#GMoney記帳"
-    ],
-    "caption": "按分類 看見錢花去哪\n換算＋記帳 離線也能用\n多幣別・離線記帳・分類報表\nG+Money：日常記帳·預算·匯率\n在 App Store 搜尋「G+Money 記帳」\nAndroid 版在 Google Play\n\n#日常記帳預算匯率 #多國貨幣 #本機儲存 #換匯 #GMoney記帳",
-    "button": "在 App Store 下載",
-    "variant": "b",
-    "alt": "G+Money：日常記帳·預算·匯率 — 按分類 看見錢花去哪 — 換算＋記帳 離線也能用 — 多幣別・離線記帳・分類報表",
-    "store": "https://apps.apple.com/tw/app/id6755782939?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
-    "review": {
-     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
-     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
-    },
-    "keywords": [
-     "多國貨幣",
-     "本機儲存",
-     "換匯",
-     "出差",
-     "收支",
-     "記帳日記"
-    ],
-    "keyline": "多幣別・離線記帳・分類報表",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "987a384c8c1d4d89",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "pinterest": {
-     "description": "按分類 看見錢花去哪\n換算＋記帳 離線也能用\n多幣別・離線記帳・分類報表\nG+Money：日常記帳·預算·匯率\n在 App Store 搜尋「G+Money 記帳」\nAndroid 版在 Google Play\n\n#日常記帳預算匯率 #多國貨幣 #本機儲存 #換匯 #GMoney記帳\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6755782939?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
-     "link": "https://apps.apple.com/tw/app/id6755782939?pt=118326163&ct=social&mt=8"
-    }
-   },
-   {
-    "kind": "clip",
-    "key": "gmoney/ja",
-    "locale": "ja",
-    "app": "gmoney",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/lk7ile.mp4",
-    "hook": "カテゴリ別に 使い道が見える",
-    "name": "G+Money：家計簿・予算・為替",
-    "title": "カテゴリ別に 使い道が見える | 支出管理・お金管理・出費記録 | G+Money 家計簿",
-    "tags": [
-     "#家計簿予算為替",
-     "#お小遣い帳",
-     "#通貨換算",
-     "#貯金",
-     "#支出記録",
-     "#GMoney家計簿"
-    ],
-    "caption": "カテゴリ別に 使い道が見える\n換算も記録も オフラインでOK\n支出管理・お金管理・出費記録\nG+Money：家計簿・予算・為替\nApp Storeで「G+Money 家計簿」を検索\nAndroidはGoogle Playで\n\n#家計簿予算為替 #お小遣い帳 #通貨換算 #貯金 #GMoney家計簿",
-    "button": "App Storeで入手",
-    "variant": "b",
-    "alt": "G+Money：家計簿・予算・為替 — カテゴリ別に 使い道が見える — 換算も記録も オフラインでOK — 支出管理・お金管理・出費記録",
-    "store": "https://apps.apple.com/jp/app/id6755782939?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
-    "review": {
-     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
-     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
-    },
-    "keywords": [
-     "お小遣い帳",
-     "通貨換算",
-     "貯金",
-     "支出記録",
-     "レート計算",
-     "家計管理"
-    ],
-    "keyline": "支出管理・お金管理・出費記録",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "987a384c8c1d4d89",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "pinterest": {
-     "description": "カテゴリ別に 使い道が見える\n換算も記録も オフラインでOK\n支出管理・お金管理・出費記録\nG+Money：家計簿・予算・為替\nApp Storeで「G+Money 家計簿」を検索\nAndroidはGoogle Playで\n\n#家計簿予算為替 #お小遣い帳 #通貨換算 #貯金 #GMoney家計簿\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6755782939?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
-     "link": "https://apps.apple.com/jp/app/id6755782939?pt=118326163&ct=social&mt=8"
-    }
-   },
-   {
-    "kind": "clip",
-    "key": "gmoney/ko",
-    "locale": "ko",
-    "app": "gmoney",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/nck8iy.mp4",
-    "hook": "분류별로 어디에 썼는지 한눈에",
-    "name": "G+Money：가계부·예산·환율",
-    "title": "분류별로 어디에 썼는지 한눈에 | 생활비·소비기록·지출관리 | G+Money 가계부",
-    "tags": [
-     "#가계부예산환율",
-     "#용돈기입장",
-     "#환율계산기",
-     "#통화변환",
-     "#가계부앱",
-     "#GMoney가계부"
-    ],
-    "caption": "분류별로 어디에 썼는지 한눈에\n환율 계산·기록 오프라인에서도\n생활비·소비기록·지출관리\nG+Money：가계부·예산·환율\nApp Store에서 'G+Money 가계부' 검색\nAndroid는 Google Play에서\n\n#가계부예산환율 #용돈기입장 #환율계산기 #통화변환 #GMoney가계부",
-    "button": "App Store에서 받기",
-    "variant": "b",
-    "alt": "G+Money：가계부·예산·환율 — 분류별로 어디에 썼는지 한눈에 — 환율 계산·기록 오프라인에서도 — 생활비·소비기록·지출관리",
-    "store": "https://apps.apple.com/kr/app/id6755782939?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
-    "review": {
-     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
-     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
-    },
-    "keywords": [
-     "용돈기입장",
-     "환율계산기",
-     "통화변환",
-     "가계부앱",
-     "돈관리",
-     "절약"
-    ],
-    "keyline": "생활비·소비기록·지출관리",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "987a384c8c1d4d89",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "pinterest": {
-     "description": "분류별로 어디에 썼는지 한눈에\n환율 계산·기록 오프라인에서도\n생활비·소비기록·지출관리\nG+Money：가계부·예산·환율\nApp Store에서 'G+Money 가계부' 검색\nAndroid는 Google Play에서\n\n#가계부예산환율 #용돈기입장 #환율계산기 #통화변환 #GMoney가계부\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6755782939?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
-     "link": "https://apps.apple.com/kr/app/id6755782939?pt=118326163&ct=social&mt=8"
-    }
-   },
-   {
-    "kind": "clip",
-    "key": "gmoney/id",
-    "locale": "id",
-    "app": "gmoney",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/jgixdt.mp4",
-    "hook": "Lihat ke mana uangmu, per kategori",
-    "name": "G+Money: Catat & atur anggaran",
-    "title": "Lihat ke mana uangmu, per kategori | Catat & atur anggaran | G+Money",
-    "tags": [
-     "#CatatAturAnggaran",
-     "#Catatan",
-     "#Keuangan",
-     "#Konverter",
-     "#Mata",
-     "#GMoney"
-    ],
-    "caption": "Lihat ke mana uangmu, per kategori\nKonversi & catat, tanpa sinyal\nG+Money: Catat & atur anggaran\nCari “G+Money” di App Store\nJuga ada di Google Play\n\n#CatatAturAnggaran #Catatan #Keuangan #Konverter #GMoney",
-    "button": "Unduh di App Store",
-    "variant": "b",
-    "alt": "G+Money: Catat & atur anggaran — Lihat ke mana uangmu, per kategori — Konversi & catat, tanpa sinyal",
-    "store": "https://apps.apple.com/id/app/id6755782939?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
-    "review": {
-     "label": "Sudah memakai aplikasi ini? Beri nilai atau ulasan di App Store",
-     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
-    },
-    "keywords": [
-     "catatan",
-     "keuangan",
-     "konverter",
-     "mata",
-     "uang",
-     "pencatat"
-    ],
-    "keyline": "Catat & atur anggaran",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "987a384c8c1d4d89",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "pinterest": {
-     "description": "Lihat ke mana uangmu, per kategori\nKonversi & catat, tanpa sinyal\nG+Money: Catat & atur anggaran\nCari “G+Money” di App Store\nJuga ada di Google Play\n\n#CatatAturAnggaran #Catatan #Keuangan #Konverter #GMoney\n\nUnduh di App Store: https://apps.apple.com/id/app/id6755782939?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
-     "link": "https://apps.apple.com/id/app/id6755782939?pt=118326163&ct=social&mt=8"
-    }
-   },
-   {
-    "kind": "clip",
     "key": "hourstag/en",
     "locale": "en",
     "app": "hourstag",
@@ -60317,246 +60384,6 @@
    },
    {
     "kind": "clip",
-    "key": "onepageppt/en",
-    "locale": "en",
-    "app": "onepageppt",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/ygk4g4.mp4",
-    "hook": "Export editable PPTX",
-    "name": "OnePage PPT: AI Slide Maker",
-    "title": "Export editable PPTX | Presentation & Infographic | OnePage PPT",
-    "tags": [
-     "#AISlideMaker",
-     "#Deck",
-     "#Pitch",
-     "#Chart",
-     "#Graph",
-     "#OnePagePPT"
-    ],
-    "caption": "Export editable PPTX\nPaste notes, PDFs, screenshots\nPresentation & Infographic\nOnePage PPT: AI Slide Maker\nSearch “OnePage PPT” on the App Store\nAlso on Google Play\n\n#AISlideMaker #Deck #Pitch #Chart #OnePagePPT",
-    "button": "Get it on the App Store",
-    "variant": "c",
-    "alt": "OnePage PPT: AI Slide Maker — Export editable PPTX — Paste notes, PDFs, screenshots — Presentation & Infographic",
-    "store": "https://apps.apple.com/us/app/id6798814385?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt",
-    "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6798814385?action=write-review"
-    },
-    "keywords": [
-     "deck",
-     "pitch",
-     "chart",
-     "graph",
-     "diagram",
-     "generator"
-    ],
-    "keyline": "Presentation & Infographic",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "3770a5c2653a56c0",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "tiktok": {
-     "caption": "Export editable PPTX\nPaste notes, PDFs, screenshots\nPresentation & Infographic\nOnePage PPT: AI Slide Maker\nSearch “OnePage PPT” on the App Store\nAlso on Google Play\n\n#AISlideMaker #Deck #Pitch #Chart #OnePagePPT\n\nGet it on the App Store: https://apps.apple.com/us/app/id6798814385?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt"
-    },
-    "boost_rank": 4
-   },
-   {
-    "kind": "clip",
-    "key": "onepageppt/zh-Hant",
-    "locale": "zh-Hant",
-    "app": "onepageppt",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/2a6roi.mp4",
-    "hook": "貼上筆記、PDF 或截圖",
-    "name": "OnePage PPT: AI 一頁簡報",
-    "title": "貼上筆記、PDF 或截圖 | 簡報製作・筆記截圖秒變投影片 | OnePage PPT 一頁簡報",
-    "tags": [
-     "#AI一頁簡報",
-     "#懶人包",
-     "#重點整理",
-     "#摘要",
-     "#會議紀錄",
-     "#OnePagePPT一頁簡報"
-    ],
-    "caption": "貼上筆記、PDF 或截圖\n一鍵換風格\n簡報製作・筆記截圖秒變投影片\nOnePage PPT: AI 一頁簡報\n在 App Store 搜尋「一頁 摘要」\nAndroid 版在 Google Play\n\n#AI一頁簡報 #懶人包 #重點整理 #摘要 #OnePagePPT一頁簡報",
-    "button": "在 App Store 下載",
-    "variant": "b",
-    "alt": "OnePage PPT: AI 一頁簡報 — 貼上筆記、PDF 或截圖 — 一鍵換風格 — 簡報製作・筆記截圖秒變投影片",
-    "store": "https://apps.apple.com/tw/app/id6798814385?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt",
-    "review": {
-     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
-     "url": "https://apps.apple.com/app/id6798814385?action=write-review"
-    },
-    "keywords": [
-     "懶人包",
-     "重點整理",
-     "摘要",
-     "會議紀錄",
-     "報告",
-     "生成"
-    ],
-    "keyline": "簡報製作・筆記截圖秒變投影片",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "3770a5c2653a56c0",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "tiktok": {
-     "caption": "貼上筆記、PDF 或截圖\n一鍵換風格\n簡報製作・筆記截圖秒變投影片\nOnePage PPT: AI 一頁簡報\n在 App Store 搜尋「一頁 摘要」\nAndroid 版在 Google Play\n\n#AI一頁簡報 #懶人包 #重點整理 #摘要 #OnePagePPT一頁簡報\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6798814385?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt"
-    },
-    "boost_rank": 4
-   },
-   {
-    "kind": "clip",
-    "key": "onepageppt/ja",
-    "locale": "ja",
-    "app": "onepageppt",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/eunx79.mp4",
-    "hook": "メモもPDFも スクショも",
-    "name": "OnePage PPT: AI資料作成",
-    "title": "メモもPDFも スクショも | メモからプレゼン資料・スライドへ | OnePage PPT AI資料作成",
-    "tags": [
-     "#AI資料作成",
-     "#要約",
-     "#議事録",
-     "#会議",
-     "#企画書",
-     "#OnePagePPTAI資料作成"
-    ],
-    "caption": "メモもPDFも スクショも\nデザインも ワンタップで一新\nメモからプレゼン資料・スライドへ\nOnePage PPT: AI資料作成\nApp Storeで「OnePage PPT AI資料作成」を検索\nAndroidはGoogle Playで\n\n#AI資料作成 #要約 #議事録 #会議 #OnePagePPTAI資料作成",
-    "button": "App Storeで入手",
-    "variant": "b",
-    "alt": "OnePage PPT: AI資料作成 — メモもPDFも スクショも — デザインも ワンタップで一新 — メモからプレゼン資料・スライドへ",
-    "store": "https://apps.apple.com/jp/app/id6798814385?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt",
-    "review": {
-     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
-     "url": "https://apps.apple.com/app/id6798814385?action=write-review"
-    },
-    "keywords": [
-     "要約",
-     "議事録",
-     "会議",
-     "企画書",
-     "報告書",
-     "レポート"
-    ],
-    "keyline": "メモからプレゼン資料・スライドへ",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "3770a5c2653a56c0",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "tiktok": {
-     "caption": "メモもPDFも スクショも\nデザインも ワンタップで一新\nメモからプレゼン資料・スライドへ\nOnePage PPT: AI資料作成\nApp Storeで「OnePage PPT AI資料作成」を検索\nAndroidはGoogle Playで\n\n#AI資料作成 #要約 #議事録 #会議 #OnePagePPTAI資料作成\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6798814385?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt"
-    },
-    "boost_rank": 4
-   },
-   {
-    "kind": "clip",
-    "key": "onepageppt/ko",
-    "locale": "ko",
-    "app": "onepageppt",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/zpx40x.mp4",
-    "hook": "메모·PDF·캡처 그대로 붙여넣기",
-    "name": "OnePage PPT: AI 발표자료",
-    "title": "메모·PDF·캡처 그대로 붙여넣기 | AI 발표자료 | OnePage PPT 발표자료",
-    "tags": [
-     "#AI발표자료",
-     "#프레젠테이션",
-     "#요약",
-     "#회의록",
-     "#보고서",
-     "#OnePagePPT발표자료"
-    ],
-    "caption": "메모·PDF·캡처 그대로 붙여넣기\n디자인도 탭 한 번에 변신\nOnePage PPT: AI 발표자료\nApp Store에서 'OnePage PPT 발표자료' 검색\nAndroid는 Google Play에서\n\n#AI발표자료 #프레젠테이션 #요약 #회의록 #OnePagePPT발표자료",
-    "button": "App Store에서 받기",
-    "variant": "b",
-    "alt": "OnePage PPT: AI 발표자료 — 메모·PDF·캡처 그대로 붙여넣기 — 디자인도 탭 한 번에 변신",
-    "store": "https://apps.apple.com/kr/app/id6798814385?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt",
-    "review": {
-     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
-     "url": "https://apps.apple.com/app/id6798814385?action=write-review"
-    },
-    "keywords": [
-     "프레젠테이션",
-     "요약",
-     "회의록",
-     "보고서",
-     "차트",
-     "그래프"
-    ],
-    "keyline": "AI 발표자료",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "3770a5c2653a56c0",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "tiktok": {
-     "caption": "메모·PDF·캡처 그대로 붙여넣기\n디자인도 탭 한 번에 변신\nOnePage PPT: AI 발표자료\nApp Store에서 'OnePage PPT 발표자료' 검색\nAndroid는 Google Play에서\n\n#AI발표자료 #프레젠테이션 #요약 #회의록 #OnePagePPT발표자료\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6798814385?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt"
-    },
-    "boost_rank": 4
-   },
-   {
-    "kind": "clip",
-    "key": "onepageppt/de",
-    "locale": "de",
-    "app": "onepageppt",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/11zznw.mp4",
-    "hook": "Notizen, PDFs, Screenshots einfügen",
-    "name": "OnePage PPT: KI Folien",
-    "title": "Notizen, PDFs, Screenshots einfügen | KI Folien | OnePage PPT",
-    "tags": [
-     "#KIFolien",
-     "#Zusammenfassung",
-     "#Erstellen",
-     "#Generator",
-     "#Notizen",
-     "#OnePagePPT"
-    ],
-    "caption": "Notizen, PDFs, Screenshots einfügen\nSofort neu gestalten\nOnePage PPT: KI Folien\nIm App Store nach „OnePage PPT“ suchen\nAuch bei Google Play\n\n#KIFolien #Zusammenfassung #Erstellen #Generator #OnePagePPT",
-    "button": "Im App Store laden",
-    "variant": "b",
-    "alt": "OnePage PPT: KI Folien — Notizen, PDFs, Screenshots einfügen — Sofort neu gestalten",
-    "store": "https://apps.apple.com/de/app/id6798814385?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt",
-    "review": {
-     "label": "Sie nutzen diese App bereits? Bewerten oder rezensieren Sie sie im App Store",
-     "url": "https://apps.apple.com/app/id6798814385?action=write-review"
-    },
-    "keywords": [
-     "zusammenfassung",
-     "erstellen",
-     "generator",
-     "notizen",
-     "referat",
-     "vortrag"
-    ],
-    "keyline": "KI Folien",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "3770a5c2653a56c0",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "tiktok": {
-     "caption": "Notizen, PDFs, Screenshots einfügen\nSofort neu gestalten\nOnePage PPT: KI Folien\nIm App Store nach „OnePage PPT“ suchen\nAuch bei Google Play\n\n#KIFolien #Zusammenfassung #Erstellen #Generator #OnePagePPT\n\nIm App Store laden: https://apps.apple.com/de/app/id6798814385?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt"
-    },
-    "boost_rank": 4
-   },
-   {
-    "kind": "clip",
     "key": "duowallpaperstudio/en",
     "locale": "en",
     "app": "duowallpaperstudio",
@@ -60601,7 +60428,7 @@
     "tiktok": {
      "caption": "Recolor it, add your own words\nOpen: the whole scene\nfold · folding · flip\nSearch “Foldable Wallpaper Studio” on the App Store\nAlso on Google Play\n\n#Fold #Folding #Flip #Pair #FoldableWallpaperStudio\n\nGet it on the App Store: https://apps.apple.com/us/app/id6824946559?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DuoWallpaperStudio&referrer=utm_source%3Dsocial%26utm_campaign%3Dduowallpaperstudio"
     },
-    "boost_rank": 5
+    "boost_rank": 4
    },
    {
     "kind": "clip",
@@ -60649,7 +60476,7 @@
     "tiktok": {
      "caption": "展開，內螢幕是 整片全景\n5 款小工具 畫上你選的桌布\n適用Duo・高畫質・外螢幕特寫・內螢幕全景・美化小工具\n在 App Store 搜尋「Foldable Wallpaper Studio」\nAndroid 版在 Google Play\n\n#雙螢幕成對桌布 #折疊 #鎖定畫面 #主畫面 #FoldableWallpaperStudio\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6824946559?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DuoWallpaperStudio&referrer=utm_source%3Dsocial%26utm_campaign%3Dduowallpaperstudio"
     },
-    "boost_rank": 5
+    "boost_rank": 4
    },
    {
     "kind": "clip",
@@ -60697,7 +60524,7 @@
     "tiktok": {
      "caption": "開けば 全景\n選んだ壁紙で描く 5種のウィジェット\nDuo対応・閉じればアップ、開けば全景のペア壁紙\nApp Storeで「Foldable Wallpaper Studio」を検索\nAndroidはGoogle Playで\n\n#外画面と内画面 #スマホ #2画面 #待ち受け #FoldableWallpaperStudio\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6824946559?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DuoWallpaperStudio&referrer=utm_source%3Dsocial%26utm_campaign%3Dduowallpaperstudio"
     },
-    "boost_rank": 5
+    "boost_rank": 4
    },
    {
     "kind": "clip",
@@ -60745,7 +60572,7 @@
     "tiktok": {
      "caption": "펼치면 같은 장면의 전경\n고른 배경화면으로 그린 위젯 5종\nDuo를 접으면 클로즈업, 펼치면 전경\nApp Store에서 'Foldable Wallpaper Studio' 검색\nAndroid는 Google Play에서\n\n#커버메인세트 #폴더블폰 #커버화면 #메인화면 #FoldableWallpaperStudio\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6824946559?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DuoWallpaperStudio&referrer=utm_source%3Dsocial%26utm_campaign%3Dduowallpaperstudio"
     },
-    "boost_rank": 5
+    "boost_rank": 4
    },
    {
     "kind": "clip",
@@ -60793,7 +60620,7 @@
     "tiktok": {
      "caption": "Aufgeklappt: die ganze Szene\n5 Widgets mit deinem Hintergrund\nfaltbar · klapphandy · paar\nIm App Store nach „Foldable Wallpaper Studio“ suchen\nAuch bei Google Play\n\n#Faltbar #Klapphandy #Paar #Außendisplay #FoldableWallpaperStudio\n\nIm App Store laden: https://apps.apple.com/de/app/id6824946559?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DuoWallpaperStudio&referrer=utm_source%3Dsocial%26utm_campaign%3Dduowallpaperstudio"
     },
-    "boost_rank": 5
+    "boost_rank": 4
    },
    {
     "kind": "clip",
@@ -60840,6 +60667,246 @@
     },
     "tiktok": {
      "caption": "Aberto: a cena inteira\n5 widgets com o seu papel de parede\nfoldable · celular · fundo\nPesquise “Foldable Wallpaper Studio” na App Store\nTambém no Google Play\n\n#Foldable #Celular #Fundo #TelaDupla #FoldableWallpaperStudio\n\nBaixar na App Store: https://apps.apple.com/br/app/id6824946559?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DuoWallpaperStudio&referrer=utm_source%3Dsocial%26utm_campaign%3Dduowallpaperstudio"
+    },
+    "boost_rank": 4
+   },
+   {
+    "kind": "clip",
+    "key": "gmoney/en",
+    "locale": "en",
+    "app": "gmoney",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/txsq79.mp4",
+    "hook": "See what's left today",
+    "name": "G+Money: Spending & Budget",
+    "title": "See what's left today | Spending & Budget | G+Money",
+    "tags": [
+     "#SpendingBudget",
+     "#Multicurrency",
+     "#Export",
+     "#Savings",
+     "#Finance",
+     "#GMoney"
+    ],
+    "caption": "See what's left today\nSee where it went, by category\nG+Money: Spending & Budget\nSearch “G+Money” on the App Store\nAlso on Google Play\n\n#SpendingBudget #Multicurrency #Export #Savings #GMoney",
+    "button": "Get it on the App Store",
+    "variant": "c",
+    "alt": "G+Money: Spending & Budget — See what's left today — See where it went, by category",
+    "store": "https://apps.apple.com/us/app/id6755782939?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
+    "review": {
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
+    },
+    "keywords": [
+     "multicurrency",
+     "export",
+     "savings",
+     "finance",
+     "wallet",
+     "bookkeeping"
+    ],
+    "keyline": "Spending & Budget",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "987a384c8c1d4d89",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "See what's left today\nSee where it went, by category\nG+Money: Spending & Budget\nSearch “G+Money” on the App Store\nAlso on Google Play\n\n#SpendingBudget #Multicurrency #Export #Savings #GMoney\n\nGet it on the App Store: https://apps.apple.com/us/app/id6755782939?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney"
+    },
+    "boost_rank": 5
+   },
+   {
+    "kind": "clip",
+    "key": "gmoney/zh-Hant",
+    "locale": "zh-Hant",
+    "app": "gmoney",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/ve63hr.mp4",
+    "hook": "按分類 看見錢花去哪",
+    "name": "G+Money：日常記帳·預算·匯率",
+    "title": "按分類 看見錢花去哪 | 多幣別・離線記帳・分類報表 | G+Money 記帳",
+    "tags": [
+     "#日常記帳預算匯率",
+     "#多國貨幣",
+     "#本機儲存",
+     "#換匯",
+     "#出差",
+     "#GMoney記帳"
+    ],
+    "caption": "按分類 看見錢花去哪\n換算＋記帳 離線也能用\n多幣別・離線記帳・分類報表\nG+Money：日常記帳·預算·匯率\n在 App Store 搜尋「G+Money 記帳」\nAndroid 版在 Google Play\n\n#日常記帳預算匯率 #多國貨幣 #本機儲存 #換匯 #GMoney記帳",
+    "button": "在 App Store 下載",
+    "variant": "b",
+    "alt": "G+Money：日常記帳·預算·匯率 — 按分類 看見錢花去哪 — 換算＋記帳 離線也能用 — 多幣別・離線記帳・分類報表",
+    "store": "https://apps.apple.com/tw/app/id6755782939?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
+    "review": {
+     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
+     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
+    },
+    "keywords": [
+     "多國貨幣",
+     "本機儲存",
+     "換匯",
+     "出差",
+     "收支",
+     "記帳日記"
+    ],
+    "keyline": "多幣別・離線記帳・分類報表",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "987a384c8c1d4d89",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "按分類 看見錢花去哪\n換算＋記帳 離線也能用\n多幣別・離線記帳・分類報表\nG+Money：日常記帳·預算·匯率\n在 App Store 搜尋「G+Money 記帳」\nAndroid 版在 Google Play\n\n#日常記帳預算匯率 #多國貨幣 #本機儲存 #換匯 #GMoney記帳\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6755782939?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney"
+    },
+    "boost_rank": 5
+   },
+   {
+    "kind": "clip",
+    "key": "gmoney/ja",
+    "locale": "ja",
+    "app": "gmoney",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/lk7ile.mp4",
+    "hook": "カテゴリ別に 使い道が見える",
+    "name": "G+Money：家計簿・予算・為替",
+    "title": "カテゴリ別に 使い道が見える | 支出管理・お金管理・出費記録 | G+Money 家計簿",
+    "tags": [
+     "#家計簿予算為替",
+     "#お小遣い帳",
+     "#通貨換算",
+     "#貯金",
+     "#支出記録",
+     "#GMoney家計簿"
+    ],
+    "caption": "カテゴリ別に 使い道が見える\n換算も記録も オフラインでOK\n支出管理・お金管理・出費記録\nG+Money：家計簿・予算・為替\nApp Storeで「G+Money 家計簿」を検索\nAndroidはGoogle Playで\n\n#家計簿予算為替 #お小遣い帳 #通貨換算 #貯金 #GMoney家計簿",
+    "button": "App Storeで入手",
+    "variant": "b",
+    "alt": "G+Money：家計簿・予算・為替 — カテゴリ別に 使い道が見える — 換算も記録も オフラインでOK — 支出管理・お金管理・出費記録",
+    "store": "https://apps.apple.com/jp/app/id6755782939?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
+    "review": {
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
+    },
+    "keywords": [
+     "お小遣い帳",
+     "通貨換算",
+     "貯金",
+     "支出記録",
+     "レート計算",
+     "家計管理"
+    ],
+    "keyline": "支出管理・お金管理・出費記録",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "987a384c8c1d4d89",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "カテゴリ別に 使い道が見える\n換算も記録も オフラインでOK\n支出管理・お金管理・出費記録\nG+Money：家計簿・予算・為替\nApp Storeで「G+Money 家計簿」を検索\nAndroidはGoogle Playで\n\n#家計簿予算為替 #お小遣い帳 #通貨換算 #貯金 #GMoney家計簿\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6755782939?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney"
+    },
+    "boost_rank": 5
+   },
+   {
+    "kind": "clip",
+    "key": "gmoney/ko",
+    "locale": "ko",
+    "app": "gmoney",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/nck8iy.mp4",
+    "hook": "분류별로 어디에 썼는지 한눈에",
+    "name": "G+Money：가계부·예산·환율",
+    "title": "분류별로 어디에 썼는지 한눈에 | 생활비·소비기록·지출관리 | G+Money 가계부",
+    "tags": [
+     "#가계부예산환율",
+     "#용돈기입장",
+     "#환율계산기",
+     "#통화변환",
+     "#가계부앱",
+     "#GMoney가계부"
+    ],
+    "caption": "분류별로 어디에 썼는지 한눈에\n환율 계산·기록 오프라인에서도\n생활비·소비기록·지출관리\nG+Money：가계부·예산·환율\nApp Store에서 'G+Money 가계부' 검색\nAndroid는 Google Play에서\n\n#가계부예산환율 #용돈기입장 #환율계산기 #통화변환 #GMoney가계부",
+    "button": "App Store에서 받기",
+    "variant": "b",
+    "alt": "G+Money：가계부·예산·환율 — 분류별로 어디에 썼는지 한눈에 — 환율 계산·기록 오프라인에서도 — 생활비·소비기록·지출관리",
+    "store": "https://apps.apple.com/kr/app/id6755782939?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
+    "review": {
+     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
+     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
+    },
+    "keywords": [
+     "용돈기입장",
+     "환율계산기",
+     "통화변환",
+     "가계부앱",
+     "돈관리",
+     "절약"
+    ],
+    "keyline": "생활비·소비기록·지출관리",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "987a384c8c1d4d89",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "분류별로 어디에 썼는지 한눈에\n환율 계산·기록 오프라인에서도\n생활비·소비기록·지출관리\nG+Money：가계부·예산·환율\nApp Store에서 'G+Money 가계부' 검색\nAndroid는 Google Play에서\n\n#가계부예산환율 #용돈기입장 #환율계산기 #통화변환 #GMoney가계부\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6755782939?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney"
+    },
+    "boost_rank": 5
+   },
+   {
+    "kind": "clip",
+    "key": "gmoney/id",
+    "locale": "id",
+    "app": "gmoney",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/jgixdt.mp4",
+    "hook": "Lihat ke mana uangmu, per kategori",
+    "name": "G+Money: Catat & atur anggaran",
+    "title": "Lihat ke mana uangmu, per kategori | Catat & atur anggaran | G+Money",
+    "tags": [
+     "#CatatAturAnggaran",
+     "#Catatan",
+     "#Keuangan",
+     "#Konverter",
+     "#Mata",
+     "#GMoney"
+    ],
+    "caption": "Lihat ke mana uangmu, per kategori\nKonversi & catat, tanpa sinyal\nG+Money: Catat & atur anggaran\nCari “G+Money” di App Store\nJuga ada di Google Play\n\n#CatatAturAnggaran #Catatan #Keuangan #Konverter #GMoney",
+    "button": "Unduh di App Store",
+    "variant": "b",
+    "alt": "G+Money: Catat & atur anggaran — Lihat ke mana uangmu, per kategori — Konversi & catat, tanpa sinyal",
+    "store": "https://apps.apple.com/id/app/id6755782939?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
+    "review": {
+     "label": "Sudah memakai aplikasi ini? Beri nilai atau ulasan di App Store",
+     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
+    },
+    "keywords": [
+     "catatan",
+     "keuangan",
+     "konverter",
+     "mata",
+     "uang",
+     "pencatat"
+    ],
+    "keyline": "Catat & atur anggaran",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "987a384c8c1d4d89",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "Lihat ke mana uangmu, per kategori\nKonversi & catat, tanpa sinyal\nG+Money: Catat & atur anggaran\nCari “G+Money” di App Store\nJuga ada di Google Play\n\n#CatatAturAnggaran #Catatan #Keuangan #Konverter #GMoney\n\nUnduh di App Store: https://apps.apple.com/id/app/id6755782939?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney"
     },
     "boost_rank": 5
    },
@@ -65916,6 +65983,241 @@
     },
     "tiktok": {
      "caption": "لكل دفتر مظهره الخاص\nالصوت داخل الصفحة\nدفتر ملاحظات بخط اليد وPDF\n100 Notes Studio: Pen & Paper\nابحث عن «100 Notes Studio» في App Store\nمتوفر أيضًا على Google Play\n\n#كراسة #يوميات #مذاكرة #تلخيص #100NotesStudio\n\nحمّله من App Store: https://apps.apple.com/sa/app/id6798813048?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.NotesStudio100&referrer=utm_source%3Dsocial%26utm_campaign%3Dnotesstudio100"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "onepageppt/en",
+    "locale": "en",
+    "app": "onepageppt",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/ygk4g4.mp4",
+    "hook": "Export editable PPTX",
+    "name": "OnePage PPT: AI Slide Maker",
+    "title": "Export editable PPTX | Presentation & Infographic | OnePage PPT",
+    "tags": [
+     "#AISlideMaker",
+     "#Deck",
+     "#Pitch",
+     "#Chart",
+     "#Graph",
+     "#OnePagePPT"
+    ],
+    "caption": "Export editable PPTX\nPaste notes, PDFs, screenshots\nPresentation & Infographic\nOnePage PPT: AI Slide Maker\nSearch “OnePage PPT” on the App Store\nAlso on Google Play\n\n#AISlideMaker #Deck #Pitch #Chart #OnePagePPT",
+    "button": "Get it on the App Store",
+    "variant": "c",
+    "alt": "OnePage PPT: AI Slide Maker — Export editable PPTX — Paste notes, PDFs, screenshots — Presentation & Infographic",
+    "store": "https://apps.apple.com/us/app/id6798814385?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt",
+    "review": {
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6798814385?action=write-review"
+    },
+    "keywords": [
+     "deck",
+     "pitch",
+     "chart",
+     "graph",
+     "diagram",
+     "generator"
+    ],
+    "keyline": "Presentation & Infographic",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "3770a5c2653a56c0",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "Export editable PPTX\nPaste notes, PDFs, screenshots\nPresentation & Infographic\nOnePage PPT: AI Slide Maker\nSearch “OnePage PPT” on the App Store\nAlso on Google Play\n\n#AISlideMaker #Deck #Pitch #Chart #OnePagePPT\n\nGet it on the App Store: https://apps.apple.com/us/app/id6798814385?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "onepageppt/zh-Hant",
+    "locale": "zh-Hant",
+    "app": "onepageppt",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/2a6roi.mp4",
+    "hook": "貼上筆記、PDF 或截圖",
+    "name": "OnePage PPT: AI 一頁簡報",
+    "title": "貼上筆記、PDF 或截圖 | 簡報製作・筆記截圖秒變投影片 | OnePage PPT 一頁簡報",
+    "tags": [
+     "#AI一頁簡報",
+     "#懶人包",
+     "#重點整理",
+     "#摘要",
+     "#會議紀錄",
+     "#OnePagePPT一頁簡報"
+    ],
+    "caption": "貼上筆記、PDF 或截圖\n一鍵換風格\n簡報製作・筆記截圖秒變投影片\nOnePage PPT: AI 一頁簡報\n在 App Store 搜尋「一頁 摘要」\nAndroid 版在 Google Play\n\n#AI一頁簡報 #懶人包 #重點整理 #摘要 #OnePagePPT一頁簡報",
+    "button": "在 App Store 下載",
+    "variant": "b",
+    "alt": "OnePage PPT: AI 一頁簡報 — 貼上筆記、PDF 或截圖 — 一鍵換風格 — 簡報製作・筆記截圖秒變投影片",
+    "store": "https://apps.apple.com/tw/app/id6798814385?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt",
+    "review": {
+     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
+     "url": "https://apps.apple.com/app/id6798814385?action=write-review"
+    },
+    "keywords": [
+     "懶人包",
+     "重點整理",
+     "摘要",
+     "會議紀錄",
+     "報告",
+     "生成"
+    ],
+    "keyline": "簡報製作・筆記截圖秒變投影片",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "3770a5c2653a56c0",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "貼上筆記、PDF 或截圖\n一鍵換風格\n簡報製作・筆記截圖秒變投影片\nOnePage PPT: AI 一頁簡報\n在 App Store 搜尋「一頁 摘要」\nAndroid 版在 Google Play\n\n#AI一頁簡報 #懶人包 #重點整理 #摘要 #OnePagePPT一頁簡報\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6798814385?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "onepageppt/ja",
+    "locale": "ja",
+    "app": "onepageppt",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/eunx79.mp4",
+    "hook": "メモもPDFも スクショも",
+    "name": "OnePage PPT: AI資料作成",
+    "title": "メモもPDFも スクショも | メモからプレゼン資料・スライドへ | OnePage PPT AI資料作成",
+    "tags": [
+     "#AI資料作成",
+     "#要約",
+     "#議事録",
+     "#会議",
+     "#企画書",
+     "#OnePagePPTAI資料作成"
+    ],
+    "caption": "メモもPDFも スクショも\nデザインも ワンタップで一新\nメモからプレゼン資料・スライドへ\nOnePage PPT: AI資料作成\nApp Storeで「OnePage PPT AI資料作成」を検索\nAndroidはGoogle Playで\n\n#AI資料作成 #要約 #議事録 #会議 #OnePagePPTAI資料作成",
+    "button": "App Storeで入手",
+    "variant": "b",
+    "alt": "OnePage PPT: AI資料作成 — メモもPDFも スクショも — デザインも ワンタップで一新 — メモからプレゼン資料・スライドへ",
+    "store": "https://apps.apple.com/jp/app/id6798814385?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt",
+    "review": {
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6798814385?action=write-review"
+    },
+    "keywords": [
+     "要約",
+     "議事録",
+     "会議",
+     "企画書",
+     "報告書",
+     "レポート"
+    ],
+    "keyline": "メモからプレゼン資料・スライドへ",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "3770a5c2653a56c0",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "メモもPDFも スクショも\nデザインも ワンタップで一新\nメモからプレゼン資料・スライドへ\nOnePage PPT: AI資料作成\nApp Storeで「OnePage PPT AI資料作成」を検索\nAndroidはGoogle Playで\n\n#AI資料作成 #要約 #議事録 #会議 #OnePagePPTAI資料作成\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6798814385?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "onepageppt/ko",
+    "locale": "ko",
+    "app": "onepageppt",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/zpx40x.mp4",
+    "hook": "메모·PDF·캡처 그대로 붙여넣기",
+    "name": "OnePage PPT: AI 발표자료",
+    "title": "메모·PDF·캡처 그대로 붙여넣기 | AI 발표자료 | OnePage PPT 발표자료",
+    "tags": [
+     "#AI발표자료",
+     "#프레젠테이션",
+     "#요약",
+     "#회의록",
+     "#보고서",
+     "#OnePagePPT발표자료"
+    ],
+    "caption": "메모·PDF·캡처 그대로 붙여넣기\n디자인도 탭 한 번에 변신\nOnePage PPT: AI 발표자료\nApp Store에서 'OnePage PPT 발표자료' 검색\nAndroid는 Google Play에서\n\n#AI발표자료 #프레젠테이션 #요약 #회의록 #OnePagePPT발표자료",
+    "button": "App Store에서 받기",
+    "variant": "b",
+    "alt": "OnePage PPT: AI 발표자료 — 메모·PDF·캡처 그대로 붙여넣기 — 디자인도 탭 한 번에 변신",
+    "store": "https://apps.apple.com/kr/app/id6798814385?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt",
+    "review": {
+     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
+     "url": "https://apps.apple.com/app/id6798814385?action=write-review"
+    },
+    "keywords": [
+     "프레젠테이션",
+     "요약",
+     "회의록",
+     "보고서",
+     "차트",
+     "그래프"
+    ],
+    "keyline": "AI 발표자료",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "3770a5c2653a56c0",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "메모·PDF·캡처 그대로 붙여넣기\n디자인도 탭 한 번에 변신\nOnePage PPT: AI 발표자료\nApp Store에서 'OnePage PPT 발표자료' 검색\nAndroid는 Google Play에서\n\n#AI발표자료 #프레젠테이션 #요약 #회의록 #OnePagePPT발표자료\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6798814385?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "onepageppt/de",
+    "locale": "de",
+    "app": "onepageppt",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/11zznw.mp4",
+    "hook": "Notizen, PDFs, Screenshots einfügen",
+    "name": "OnePage PPT: KI Folien",
+    "title": "Notizen, PDFs, Screenshots einfügen | KI Folien | OnePage PPT",
+    "tags": [
+     "#KIFolien",
+     "#Zusammenfassung",
+     "#Erstellen",
+     "#Generator",
+     "#Notizen",
+     "#OnePagePPT"
+    ],
+    "caption": "Notizen, PDFs, Screenshots einfügen\nSofort neu gestalten\nOnePage PPT: KI Folien\nIm App Store nach „OnePage PPT“ suchen\nAuch bei Google Play\n\n#KIFolien #Zusammenfassung #Erstellen #Generator #OnePagePPT",
+    "button": "Im App Store laden",
+    "variant": "b",
+    "alt": "OnePage PPT: KI Folien — Notizen, PDFs, Screenshots einfügen — Sofort neu gestalten",
+    "store": "https://apps.apple.com/de/app/id6798814385?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt",
+    "review": {
+     "label": "Sie nutzen diese App bereits? Bewerten oder rezensieren Sie sie im App Store",
+     "url": "https://apps.apple.com/app/id6798814385?action=write-review"
+    },
+    "keywords": [
+     "zusammenfassung",
+     "erstellen",
+     "generator",
+     "notizen",
+     "referat",
+     "vortrag"
+    ],
+    "keyline": "KI Folien",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "3770a5c2653a56c0",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "Notizen, PDFs, Screenshots einfügen\nSofort neu gestalten\nOnePage PPT: KI Folien\nIm App Store nach „OnePage PPT“ suchen\nAuch bei Google Play\n\n#KIFolien #Zusammenfassung #Erstellen #Generator #OnePagePPT\n\nIm App Store laden: https://apps.apple.com/de/app/id6798814385?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT&referrer=utm_source%3Dsocial%26utm_campaign%3Donepageppt"
     }
    },
    {
@@ -71886,241 +72188,6 @@
    },
    {
     "kind": "clip",
-    "key": "gmoney/en",
-    "locale": "en",
-    "app": "gmoney",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/txsq79.mp4",
-    "hook": "See what's left today",
-    "name": "G+Money: Spending & Budget",
-    "title": "See what's left today | Spending & Budget | G+Money",
-    "tags": [
-     "#SpendingBudget",
-     "#Multicurrency",
-     "#Export",
-     "#Savings",
-     "#Finance",
-     "#GMoney"
-    ],
-    "caption": "See what's left today\nSee where it went, by category\nG+Money: Spending & Budget\nSearch “G+Money” on the App Store\nAlso on Google Play\n\n#SpendingBudget #Multicurrency #Export #Savings #GMoney",
-    "button": "Get it on the App Store",
-    "variant": "c",
-    "alt": "G+Money: Spending & Budget — See what's left today — See where it went, by category",
-    "store": "https://apps.apple.com/us/app/id6755782939?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
-    "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
-    },
-    "keywords": [
-     "multicurrency",
-     "export",
-     "savings",
-     "finance",
-     "wallet",
-     "bookkeeping"
-    ],
-    "keyline": "Spending & Budget",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "987a384c8c1d4d89",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "tiktok": {
-     "caption": "See what's left today\nSee where it went, by category\nG+Money: Spending & Budget\nSearch “G+Money” on the App Store\nAlso on Google Play\n\n#SpendingBudget #Multicurrency #Export #Savings #GMoney\n\nGet it on the App Store: https://apps.apple.com/us/app/id6755782939?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney"
-    }
-   },
-   {
-    "kind": "clip",
-    "key": "gmoney/zh-Hant",
-    "locale": "zh-Hant",
-    "app": "gmoney",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/ve63hr.mp4",
-    "hook": "按分類 看見錢花去哪",
-    "name": "G+Money：日常記帳·預算·匯率",
-    "title": "按分類 看見錢花去哪 | 多幣別・離線記帳・分類報表 | G+Money 記帳",
-    "tags": [
-     "#日常記帳預算匯率",
-     "#多國貨幣",
-     "#本機儲存",
-     "#換匯",
-     "#出差",
-     "#GMoney記帳"
-    ],
-    "caption": "按分類 看見錢花去哪\n換算＋記帳 離線也能用\n多幣別・離線記帳・分類報表\nG+Money：日常記帳·預算·匯率\n在 App Store 搜尋「G+Money 記帳」\nAndroid 版在 Google Play\n\n#日常記帳預算匯率 #多國貨幣 #本機儲存 #換匯 #GMoney記帳",
-    "button": "在 App Store 下載",
-    "variant": "b",
-    "alt": "G+Money：日常記帳·預算·匯率 — 按分類 看見錢花去哪 — 換算＋記帳 離線也能用 — 多幣別・離線記帳・分類報表",
-    "store": "https://apps.apple.com/tw/app/id6755782939?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
-    "review": {
-     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
-     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
-    },
-    "keywords": [
-     "多國貨幣",
-     "本機儲存",
-     "換匯",
-     "出差",
-     "收支",
-     "記帳日記"
-    ],
-    "keyline": "多幣別・離線記帳・分類報表",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "987a384c8c1d4d89",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "tiktok": {
-     "caption": "按分類 看見錢花去哪\n換算＋記帳 離線也能用\n多幣別・離線記帳・分類報表\nG+Money：日常記帳·預算·匯率\n在 App Store 搜尋「G+Money 記帳」\nAndroid 版在 Google Play\n\n#日常記帳預算匯率 #多國貨幣 #本機儲存 #換匯 #GMoney記帳\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6755782939?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney"
-    }
-   },
-   {
-    "kind": "clip",
-    "key": "gmoney/ja",
-    "locale": "ja",
-    "app": "gmoney",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/lk7ile.mp4",
-    "hook": "カテゴリ別に 使い道が見える",
-    "name": "G+Money：家計簿・予算・為替",
-    "title": "カテゴリ別に 使い道が見える | 支出管理・お金管理・出費記録 | G+Money 家計簿",
-    "tags": [
-     "#家計簿予算為替",
-     "#お小遣い帳",
-     "#通貨換算",
-     "#貯金",
-     "#支出記録",
-     "#GMoney家計簿"
-    ],
-    "caption": "カテゴリ別に 使い道が見える\n換算も記録も オフラインでOK\n支出管理・お金管理・出費記録\nG+Money：家計簿・予算・為替\nApp Storeで「G+Money 家計簿」を検索\nAndroidはGoogle Playで\n\n#家計簿予算為替 #お小遣い帳 #通貨換算 #貯金 #GMoney家計簿",
-    "button": "App Storeで入手",
-    "variant": "b",
-    "alt": "G+Money：家計簿・予算・為替 — カテゴリ別に 使い道が見える — 換算も記録も オフラインでOK — 支出管理・お金管理・出費記録",
-    "store": "https://apps.apple.com/jp/app/id6755782939?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
-    "review": {
-     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
-     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
-    },
-    "keywords": [
-     "お小遣い帳",
-     "通貨換算",
-     "貯金",
-     "支出記録",
-     "レート計算",
-     "家計管理"
-    ],
-    "keyline": "支出管理・お金管理・出費記録",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "987a384c8c1d4d89",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "tiktok": {
-     "caption": "カテゴリ別に 使い道が見える\n換算も記録も オフラインでOK\n支出管理・お金管理・出費記録\nG+Money：家計簿・予算・為替\nApp Storeで「G+Money 家計簿」を検索\nAndroidはGoogle Playで\n\n#家計簿予算為替 #お小遣い帳 #通貨換算 #貯金 #GMoney家計簿\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6755782939?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney"
-    }
-   },
-   {
-    "kind": "clip",
-    "key": "gmoney/ko",
-    "locale": "ko",
-    "app": "gmoney",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/nck8iy.mp4",
-    "hook": "분류별로 어디에 썼는지 한눈에",
-    "name": "G+Money：가계부·예산·환율",
-    "title": "분류별로 어디에 썼는지 한눈에 | 생활비·소비기록·지출관리 | G+Money 가계부",
-    "tags": [
-     "#가계부예산환율",
-     "#용돈기입장",
-     "#환율계산기",
-     "#통화변환",
-     "#가계부앱",
-     "#GMoney가계부"
-    ],
-    "caption": "분류별로 어디에 썼는지 한눈에\n환율 계산·기록 오프라인에서도\n생활비·소비기록·지출관리\nG+Money：가계부·예산·환율\nApp Store에서 'G+Money 가계부' 검색\nAndroid는 Google Play에서\n\n#가계부예산환율 #용돈기입장 #환율계산기 #통화변환 #GMoney가계부",
-    "button": "App Store에서 받기",
-    "variant": "b",
-    "alt": "G+Money：가계부·예산·환율 — 분류별로 어디에 썼는지 한눈에 — 환율 계산·기록 오프라인에서도 — 생활비·소비기록·지출관리",
-    "store": "https://apps.apple.com/kr/app/id6755782939?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
-    "review": {
-     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
-     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
-    },
-    "keywords": [
-     "용돈기입장",
-     "환율계산기",
-     "통화변환",
-     "가계부앱",
-     "돈관리",
-     "절약"
-    ],
-    "keyline": "생활비·소비기록·지출관리",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "987a384c8c1d4d89",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "tiktok": {
-     "caption": "분류별로 어디에 썼는지 한눈에\n환율 계산·기록 오프라인에서도\n생활비·소비기록·지출관리\nG+Money：가계부·예산·환율\nApp Store에서 'G+Money 가계부' 검색\nAndroid는 Google Play에서\n\n#가계부예산환율 #용돈기입장 #환율계산기 #통화변환 #GMoney가계부\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6755782939?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney"
-    }
-   },
-   {
-    "kind": "clip",
-    "key": "gmoney/id",
-    "locale": "id",
-    "app": "gmoney",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/jgixdt.mp4",
-    "hook": "Lihat ke mana uangmu, per kategori",
-    "name": "G+Money: Catat & atur anggaran",
-    "title": "Lihat ke mana uangmu, per kategori | Catat & atur anggaran | G+Money",
-    "tags": [
-     "#CatatAturAnggaran",
-     "#Catatan",
-     "#Keuangan",
-     "#Konverter",
-     "#Mata",
-     "#GMoney"
-    ],
-    "caption": "Lihat ke mana uangmu, per kategori\nKonversi & catat, tanpa sinyal\nG+Money: Catat & atur anggaran\nCari “G+Money” di App Store\nJuga ada di Google Play\n\n#CatatAturAnggaran #Catatan #Keuangan #Konverter #GMoney",
-    "button": "Unduh di App Store",
-    "variant": "b",
-    "alt": "G+Money: Catat & atur anggaran — Lihat ke mana uangmu, per kategori — Konversi & catat, tanpa sinyal",
-    "store": "https://apps.apple.com/id/app/id6755782939?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
-    "review": {
-     "label": "Sudah memakai aplikasi ini? Beri nilai atau ulasan di App Store",
-     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
-    },
-    "keywords": [
-     "catatan",
-     "keuangan",
-     "konverter",
-     "mata",
-     "uang",
-     "pencatat"
-    ],
-    "keyline": "Catat & atur anggaran",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "987a384c8c1d4d89",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "tiktok": {
-     "caption": "Lihat ke mana uangmu, per kategori\nKonversi & catat, tanpa sinyal\nG+Money: Catat & atur anggaran\nCari “G+Money” di App Store\nJuga ada di Google Play\n\n#CatatAturAnggaran #Catatan #Keuangan #Konverter #GMoney\n\nUnduh di App Store: https://apps.apple.com/id/app/id6755782939?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney"
-    }
-   },
-   {
-    "kind": "clip",
     "key": "hourstag/en",
     "locale": "en",
     "app": "hourstag",
@@ -76251,19 +76318,20 @@
    "cvdesk",
    "mochi_suneung",
    "wifiaidlite",
-   "onepageppt",
-   "duowallpaperstudio"
+   "duowallpaperstudio",
+   "gmoney"
   ],
   "demote": [
+   "lumimission",
    "moneytag",
    "mochidonestamp",
    "wordmatelite",
-   "gmoney",
    "aibriefpack"
   ],
   "hook_winners": {
    "apps": {
     "claudeusagemini/en": "c",
+    "ledmovingtext/de": "b",
     "lumibopomofo/zh-Hant": "c",
     "lumibopomofo_b/zh-Hant": "c",
     "mochi/zh-Hant": "b"
@@ -76276,10 +76344,19 @@
   },
   "best_hours": {
    "instagram": {
+    "de": {
+     "hour": 13,
+     "avg_views": 1.5,
+     "posts": 5,
+     "hours": {
+      "7": 0.0,
+      "13": 1.5
+     }
+    },
     "en": {
      "hour": 18,
      "avg_views": 21.2,
-     "posts": 17,
+     "posts": 18,
      "hours": {
       "5": 0.0,
       "18": 21.2,
@@ -76288,10 +76365,10 @@
     },
     "ja": {
      "hour": 1,
-     "avg_views": 38.3,
+     "avg_views": 44.8,
      "posts": 10,
      "hours": {
-      "1": 38.3,
+      "1": 44.8,
       "5": 12.5
      }
     },
@@ -76316,15 +76393,16 @@
      "hours": {
       "1": 9.3,
       "8": 12.7,
-      "13": 9.5,
+      "13": 10.5,
       "16": 8.0
      }
     },
     "zh-Hant": {
-     "hour": 13,
-     "avg_views": 82.5,
-     "posts": 12,
+     "hour": 3,
+     "avg_views": 256.5,
+     "posts": 13,
      "hours": {
+      "3": 256.5,
       "6": 30.5,
       "13": 82.5,
       "16": 10.0,
@@ -76333,6 +76411,6 @@
     }
    }
   },
-  "updated_at": "2026-11-01T05:50:02Z"
+  "updated_at": "2026-11-02T05:49:23Z"
  }
 }

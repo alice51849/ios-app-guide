@@ -1,7 +1,7 @@
 {
  "schema": "lumi.social-feed/v1",
  "date": "2026-11-02",
- "generated_at": "2026-11-02T08:23:12Z",
+ "generated_at": "2026-11-02T16:01:14Z",
  "items": {
   "bluesky": [
    {
@@ -141,48 +141,69 @@
    },
    {
     "kind": "clip",
-    "key": "notesstudio100/en",
-    "locale": "en",
-    "app": "notesstudio100",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/wrj17p.mp4",
-    "hook": "Review with flashcards",
-    "name": "100 Notes Studio: Pen & Paper",
-    "title": "Review with flashcards | Note Taking, Handwriting & PDF | 100 Notes Studio",
+    "key": "shotinbox/de",
+    "locale": "de",
+    "app": "shotinbox",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/mnphz7.mp4",
+    "hook": "Sogar den Text darin durchsuchen",
+    "name": "ShotInbox AI: Screenshots",
+    "title": "Sogar den Text darin durchsuchen | OCR-Suche & Fotos aufräumen | ShotInbox",
     "tags": [
-     "#PenPaper",
-     "#Notebook",
-     "#Journal",
-     "#Planner",
-     "#Annotate",
-     "#100NotesStudio"
+     "#Screenshots",
+     "#Ordner",
+     "#Organizer",
+     "#Reiniger",
+     "#Duplikate",
+     "#ShotInbox"
     ],
-    "caption": "Review with flashcards\nEvery notebook, its own look\nNote Taking, Handwriting & PDF\n100 Notes Studio: Pen & Paper\nSearch “100 Notes Studio” on the App Store\nAlso on Google Play\n\n#PenPaper #Notebook #100NotesStudio",
-    "button": "Get it on the App Store",
-    "variant": "c",
-    "alt": "100 Notes Studio: Pen & Paper — Review with flashcards — Every notebook, its own look — Note Taking, Handwriting & PDF",
-    "store": "https://apps.apple.com/us/app/id6798813048?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.NotesStudio100&referrer=utm_source%3Dsocial%26utm_campaign%3Dnotesstudio100",
+    "caption": "Sogar den Text darin durchsuchen\nBelege, Tickets …alles sortiert\nOCR-Suche & Fotos aufräumen\nShotInbox AI: Screenshots\nIm App Store nach „ShotInbox“ suchen\nAuch bei Google Play\n\n#Screenshots #Ordner #ShotInbox",
+    "button": "Im App Store laden",
+    "variant": "b",
+    "alt": "ShotInbox AI: Screenshots — Sogar den Text darin durchsuchen — Belege, Tickets …alles sortiert — OCR-Suche & Fotos aufräumen",
+    "store": "https://apps.apple.com/de/app/id6802166527?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ShotInbox&referrer=utm_source%3Dsocial%26utm_campaign%3Dshotinbox",
     "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6798813048?action=write-review"
+     "label": "Sie nutzen diese App bereits? Bewerten oder rezensieren Sie sie im App Store",
+     "url": "https://apps.apple.com/app/id6802166527?action=write-review"
     },
     "keywords": [
-     "notebook",
-     "journal",
-     "planner",
-     "annotate",
-     "stylus",
-     "lecture"
+     "ordner",
+     "organizer",
+     "reiniger",
+     "duplikate",
+     "ähnliche",
+     "bilder"
     ],
-    "keyline": "Note Taking, Handwriting & PDF",
+    "keyline": "OCR-Suche & Fotos aufräumen",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "09d545c91056ba06",
+     "board": "f6c970e3cb08d22c",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "card/suneung2027/2026-11-02",
+    "locale": "ko",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/countdown-cards/card-20261102.jpg",
+    "caption": "2027학년도 수능 D-17\n끝까지 페이스 유지\n\nApp Store · Google Play에서 'CountDaysNow' 검색\n\n#디데이카운터 #디데이 #카운트다운",
+    "title": "2027학년도 수능 D-17",
+    "alt": "CountDaysNow — 2027학년도 수능 D-17 — 끝까지 페이스 유지 — App Store · Google Play에서 'CountDaysNow' 검색 — 디데이 카운터",
+    "name": "CountDaysNow",
+    "hook": "2027학년도 수능 D-17",
+    "tags": [
+     "#디데이카운터",
+     "#디데이",
+     "#카운트다운",
+     "#날짜계산",
+     "#기념일"
+    ],
+    "button": "App Store에서 받기",
+    "store": "https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow"
    },
    {
     "kind": "card",
@@ -1950,48 +1971,69 @@
    },
    {
     "kind": "clip",
-    "key": "notesstudio100/en",
-    "locale": "en",
-    "app": "notesstudio100",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/wrj17p.mp4",
-    "hook": "Review with flashcards",
-    "name": "100 Notes Studio: Pen & Paper",
-    "title": "Review with flashcards | Note Taking, Handwriting & PDF | 100 Notes Studio",
+    "key": "shotinbox/de",
+    "locale": "de",
+    "app": "shotinbox",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/mnphz7.mp4",
+    "hook": "Sogar den Text darin durchsuchen",
+    "name": "ShotInbox AI: Screenshots",
+    "title": "Sogar den Text darin durchsuchen | OCR-Suche & Fotos aufräumen | ShotInbox",
     "tags": [
-     "#PenPaper",
-     "#Notebook",
-     "#Journal",
-     "#Planner",
-     "#Annotate",
-     "#100NotesStudio"
+     "#Screenshots",
+     "#Ordner",
+     "#Organizer",
+     "#Reiniger",
+     "#Duplikate",
+     "#ShotInbox"
     ],
-    "caption": "Review with flashcards\nEvery notebook, its own look\nNote Taking, Handwriting & PDF\n100 Notes Studio: Pen & Paper\nSearch “100 Notes Studio” on the App Store\nAlso on Google Play\n\n#PenPaper #Notebook #Journal #Planner #100NotesStudio",
-    "button": "Get it on the App Store",
-    "variant": "c",
-    "alt": "100 Notes Studio: Pen & Paper — Review with flashcards — Every notebook, its own look — Note Taking, Handwriting & PDF",
-    "store": "https://apps.apple.com/us/app/id6798813048?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.NotesStudio100&referrer=utm_source%3Dsocial%26utm_campaign%3Dnotesstudio100",
+    "caption": "Sogar den Text darin durchsuchen\nBelege, Tickets …alles sortiert\nOCR-Suche & Fotos aufräumen\nShotInbox AI: Screenshots\nIm App Store nach „ShotInbox“ suchen\nAuch bei Google Play\n\n#Screenshots #Ordner #Organizer #Reiniger #ShotInbox",
+    "button": "Im App Store laden",
+    "variant": "b",
+    "alt": "ShotInbox AI: Screenshots — Sogar den Text darin durchsuchen — Belege, Tickets …alles sortiert — OCR-Suche & Fotos aufräumen",
+    "store": "https://apps.apple.com/de/app/id6802166527?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ShotInbox&referrer=utm_source%3Dsocial%26utm_campaign%3Dshotinbox",
     "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6798813048?action=write-review"
+     "label": "Sie nutzen diese App bereits? Bewerten oder rezensieren Sie sie im App Store",
+     "url": "https://apps.apple.com/app/id6802166527?action=write-review"
     },
     "keywords": [
-     "notebook",
-     "journal",
-     "planner",
-     "annotate",
-     "stylus",
-     "lecture"
+     "ordner",
+     "organizer",
+     "reiniger",
+     "duplikate",
+     "ähnliche",
+     "bilder"
     ],
-    "keyline": "Note Taking, Handwriting & PDF",
+    "keyline": "OCR-Suche & Fotos aufräumen",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "09d545c91056ba06",
+     "board": "f6c970e3cb08d22c",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "card/suneung2027/2026-11-02",
+    "locale": "ko",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/countdown-cards/card-20261102.jpg",
+    "caption": "2027학년도 수능 D-17\n끝까지 페이스 유지\n\nApp Store · Google Play에서 'CountDaysNow' 검색\n\n#디데이카운터 #디데이 #카운트다운 #날짜계산 #기념일",
+    "title": "2027학년도 수능 D-17",
+    "alt": "CountDaysNow — 2027학년도 수능 D-17 — 끝까지 페이스 유지 — App Store · Google Play에서 'CountDaysNow' 검색 — 디데이 카운터",
+    "name": "CountDaysNow",
+    "hook": "2027학년도 수능 D-17",
+    "tags": [
+     "#디데이카운터",
+     "#디데이",
+     "#카운트다운",
+     "#날짜계산",
+     "#기념일"
+    ],
+    "button": "App Store에서 받기",
+    "store": "https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow"
    },
    {
     "kind": "card",
@@ -2199,60 +2241,59 @@
    },
    {
     "kind": "clip",
-    "key": "notesstudio100/en",
-    "locale": "en",
-    "app": "notesstudio100",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/wrj17p.mp4",
-    "hook": "Review with flashcards",
-    "name": "100 Notes Studio: Pen & Paper",
-    "title": "Review with flashcards | Note Taking, Handwriting & PDF | 100 Notes Studio",
+    "key": "shotinbox/de",
+    "locale": "de",
+    "app": "shotinbox",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/mnphz7.mp4",
+    "hook": "Sogar den Text darin durchsuchen",
+    "name": "ShotInbox AI: Screenshots",
+    "title": "Sogar den Text darin durchsuchen | OCR-Suche & Fotos aufräumen | ShotInbox",
     "tags": [
-     "#PenPaper",
-     "#Notebook",
-     "#Journal",
-     "#Planner",
-     "#Annotate",
-     "#100NotesStudio"
+     "#Screenshots",
+     "#Ordner",
+     "#Organizer",
+     "#Reiniger",
+     "#Duplikate",
+     "#ShotInbox"
     ],
-    "caption": "Review with flashcards\nEvery notebook, its own look\nNote Taking, Handwriting & PDF\n100 Notes Studio: Pen & Paper\nSearch “100 Notes Studio” on the App Store\nAlso on Google Play\n\n#PenPaper #Notebook #Journal #Planner #100NotesStudio",
-    "button": "Get it on the App Store",
-    "variant": "c",
-    "alt": "100 Notes Studio: Pen & Paper — Review with flashcards — Every notebook, its own look — Note Taking, Handwriting & PDF",
-    "store": "https://apps.apple.com/us/app/id6798813048?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.NotesStudio100&referrer=utm_source%3Dsocial%26utm_campaign%3Dnotesstudio100",
+    "caption": "Sogar den Text darin durchsuchen\nBelege, Tickets …alles sortiert\nOCR-Suche & Fotos aufräumen\nShotInbox AI: Screenshots\nIm App Store nach „ShotInbox“ suchen\nAuch bei Google Play\n\n#Screenshots #Ordner #Organizer #Reiniger #ShotInbox",
+    "button": "Im App Store laden",
+    "variant": "b",
+    "alt": "ShotInbox AI: Screenshots — Sogar den Text darin durchsuchen — Belege, Tickets …alles sortiert — OCR-Suche & Fotos aufräumen",
+    "store": "https://apps.apple.com/de/app/id6802166527?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ShotInbox&referrer=utm_source%3Dsocial%26utm_campaign%3Dshotinbox",
     "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6798813048?action=write-review"
+     "label": "Sie nutzen diese App bereits? Bewerten oder rezensieren Sie sie im App Store",
+     "url": "https://apps.apple.com/app/id6802166527?action=write-review"
     },
     "keywords": [
-     "notebook",
-     "journal",
-     "planner",
-     "annotate",
-     "stylus",
-     "lecture"
+     "ordner",
+     "organizer",
+     "reiniger",
+     "duplikate",
+     "ähnliche",
+     "bilder"
     ],
-    "keyline": "Note Taking, Handwriting & PDF",
+    "keyline": "OCR-Suche & Fotos aufräumen",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "09d545c91056ba06",
+     "board": "f6c970e3cb08d22c",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "youtube": {
-     "title": "Review with flashcards | 100 Notes Studio #Shorts",
-     "description": "Review with flashcards\nEvery notebook, its own look\nNote Taking, Handwriting & PDF\n\n100 Notes Studio: Pen & Paper\nApp Store: https://apps.apple.com/us/app/id6798813048?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.NotesStudio100&referrer=utm_source%3Dsocial%26utm_campaign%3Dnotesstudio100\nAlready using this app? Rate or review it on the App Store\nhttps://apps.apple.com/app/id6798813048?action=write-review\n\nnotebook · journal · planner · annotate · stylus · lecture\n\n#Shorts #PenPaper #100NotesStudio",
+     "title": "Sogar den Text darin durchsuchen | ShotInbox #Shorts",
+     "description": "Sogar den Text darin durchsuchen\nBelege, Tickets …alles sortiert\nOCR-Suche & Fotos aufräumen\n\nShotInbox AI: Screenshots\nApp Store: https://apps.apple.com/de/app/id6802166527?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ShotInbox&referrer=utm_source%3Dsocial%26utm_campaign%3Dshotinbox\nSie nutzen diese App bereits? Bewerten oder rezensieren Sie sie im App Store\nhttps://apps.apple.com/app/id6802166527?action=write-review\n\nordner · organizer · reiniger · duplikate · ähnliche · bilder\n\n#Shorts #Screenshots #ShotInbox",
      "tags": [
-      "notebook",
-      "journal",
-      "planner",
-      "annotate",
-      "stylus",
-      "lecture",
-      "PenPaper",
-      "100NotesStudio",
-      "100 Notes Studio"
+      "ordner",
+      "organizer",
+      "reiniger",
+      "duplikate",
+      "ähnliche",
+      "bilder",
+      "Screenshots",
+      "ShotInbox"
      ]
     },
     "slot": 15
@@ -2408,52 +2449,77 @@
    },
    {
     "kind": "clip",
-    "key": "notesstudio100/en",
-    "locale": "en",
-    "app": "notesstudio100",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/wrj17p.mp4",
-    "hook": "Review with flashcards",
-    "name": "100 Notes Studio: Pen & Paper",
-    "title": "Review with flashcards | Note Taking, Handwriting & PDF | 100 Notes Studio",
+    "key": "shotinbox/de",
+    "locale": "de",
+    "app": "shotinbox",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/mnphz7.mp4",
+    "hook": "Sogar den Text darin durchsuchen",
+    "name": "ShotInbox AI: Screenshots",
+    "title": "Sogar den Text darin durchsuchen | OCR-Suche & Fotos aufräumen | ShotInbox",
     "tags": [
-     "#PenPaper",
-     "#Notebook",
-     "#Journal",
-     "#Planner",
-     "#Annotate",
-     "#100NotesStudio"
+     "#Screenshots",
+     "#Ordner",
+     "#Organizer",
+     "#Reiniger",
+     "#Duplikate",
+     "#ShotInbox"
     ],
-    "caption": "Review with flashcards\nEvery notebook, its own look\nNote Taking, Handwriting & PDF\n100 Notes Studio: Pen & Paper\nSearch “100 Notes Studio” on the App Store\nAlso on Google Play\n\n#PenPaper #Notebook #Journal #Planner #100NotesStudio",
-    "button": "Get it on the App Store",
-    "variant": "c",
-    "alt": "100 Notes Studio: Pen & Paper — Review with flashcards — Every notebook, its own look — Note Taking, Handwriting & PDF",
-    "store": "https://apps.apple.com/us/app/id6798813048?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.NotesStudio100&referrer=utm_source%3Dsocial%26utm_campaign%3Dnotesstudio100",
+    "caption": "Sogar den Text darin durchsuchen\nBelege, Tickets …alles sortiert\nOCR-Suche & Fotos aufräumen\nShotInbox AI: Screenshots\nIm App Store nach „ShotInbox“ suchen\nAuch bei Google Play\n\n#Screenshots #Ordner #Organizer #Reiniger #ShotInbox",
+    "button": "Im App Store laden",
+    "variant": "b",
+    "alt": "ShotInbox AI: Screenshots — Sogar den Text darin durchsuchen — Belege, Tickets …alles sortiert — OCR-Suche & Fotos aufräumen",
+    "store": "https://apps.apple.com/de/app/id6802166527?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ShotInbox&referrer=utm_source%3Dsocial%26utm_campaign%3Dshotinbox",
     "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6798813048?action=write-review"
+     "label": "Sie nutzen diese App bereits? Bewerten oder rezensieren Sie sie im App Store",
+     "url": "https://apps.apple.com/app/id6802166527?action=write-review"
     },
     "keywords": [
-     "notebook",
-     "journal",
-     "planner",
-     "annotate",
-     "stylus",
-     "lecture"
+     "ordner",
+     "organizer",
+     "reiniger",
+     "duplikate",
+     "ähnliche",
+     "bilder"
     ],
-    "keyline": "Note Taking, Handwriting & PDF",
+    "keyline": "OCR-Suche & Fotos aufräumen",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "09d545c91056ba06",
+     "board": "f6c970e3cb08d22c",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "Review with flashcards\nEvery notebook, its own look\nNote Taking, Handwriting & PDF\n100 Notes Studio: Pen & Paper\nSearch “100 Notes Studio” on the App Store\nAlso on Google Play\n\n#PenPaper #Notebook #Journal #Planner #100NotesStudio\n\nGet it on the App Store: https://apps.apple.com/us/app/id6798813048?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.NotesStudio100&referrer=utm_source%3Dsocial%26utm_campaign%3Dnotesstudio100",
-     "link": "https://apps.apple.com/us/app/id6798813048?pt=118326163&ct=social&mt=8"
+     "description": "Sogar den Text darin durchsuchen\nBelege, Tickets …alles sortiert\nOCR-Suche & Fotos aufräumen\nShotInbox AI: Screenshots\nIm App Store nach „ShotInbox“ suchen\nAuch bei Google Play\n\n#Screenshots #Ordner #Organizer #Reiniger #ShotInbox\n\nIm App Store laden: https://apps.apple.com/de/app/id6802166527?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ShotInbox&referrer=utm_source%3Dsocial%26utm_campaign%3Dshotinbox",
+     "link": "https://apps.apple.com/de/app/id6802166527?pt=118326163&ct=social&mt=8"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "card/suneung2027/2026-11-02",
+    "locale": "ko",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/countdown-cards/card-20261102.jpg",
+    "caption": "2027학년도 수능 D-17\n끝까지 페이스 유지\n\nApp Store · Google Play에서 'CountDaysNow' 검색\n\n#디데이카운터 #디데이 #카운트다운 #날짜계산 #기념일",
+    "title": "2027학년도 수능 D-17",
+    "alt": "CountDaysNow — 2027학년도 수능 D-17 — 끝까지 페이스 유지 — App Store · Google Play에서 'CountDaysNow' 검색 — 디데이 카운터",
+    "name": "CountDaysNow",
+    "hook": "2027학년도 수능 D-17",
+    "tags": [
+     "#디데이카운터",
+     "#디데이",
+     "#카운트다운",
+     "#날짜계산",
+     "#기념일"
+    ],
+    "button": "App Store에서 받기",
+    "store": "https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
+    "pinterest": {
+     "description": "2027학년도 수능 D-17\n끝까지 페이스 유지\n\nApp Store · Google Play에서 'CountDaysNow' 검색\n\n#디데이카운터 #디데이 #카운트다운 #날짜계산 #기념일\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
+     "link": "https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8"
+    }
    },
    {
     "kind": "card",
@@ -6687,49 +6753,49 @@
    },
    {
     "kind": "clip",
-    "key": "notesstudio100/en",
-    "locale": "en",
-    "app": "notesstudio100",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/wrj17p.mp4",
-    "hook": "Review with flashcards",
-    "name": "100 Notes Studio: Pen & Paper",
-    "title": "Review with flashcards | Note Taking, Handwriting & PDF | 100 Notes Studio",
+    "key": "shotinbox/de",
+    "locale": "de",
+    "app": "shotinbox",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/mnphz7.mp4",
+    "hook": "Sogar den Text darin durchsuchen",
+    "name": "ShotInbox AI: Screenshots",
+    "title": "Sogar den Text darin durchsuchen | OCR-Suche & Fotos aufräumen | ShotInbox",
     "tags": [
-     "#PenPaper",
-     "#Notebook",
-     "#Journal",
-     "#Planner",
-     "#Annotate",
-     "#100NotesStudio"
+     "#Screenshots",
+     "#Ordner",
+     "#Organizer",
+     "#Reiniger",
+     "#Duplikate",
+     "#ShotInbox"
     ],
-    "caption": "Review with flashcards\nEvery notebook, its own look\nNote Taking, Handwriting & PDF\n100 Notes Studio: Pen & Paper\nSearch “100 Notes Studio” on the App Store\nAlso on Google Play\n\n#PenPaper #Notebook #Journal #Planner #100NotesStudio",
-    "button": "Get it on the App Store",
-    "variant": "c",
-    "alt": "100 Notes Studio: Pen & Paper — Review with flashcards — Every notebook, its own look — Note Taking, Handwriting & PDF",
-    "store": "https://apps.apple.com/us/app/id6798813048?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.NotesStudio100&referrer=utm_source%3Dsocial%26utm_campaign%3Dnotesstudio100",
+    "caption": "Sogar den Text darin durchsuchen\nBelege, Tickets …alles sortiert\nOCR-Suche & Fotos aufräumen\nShotInbox AI: Screenshots\nIm App Store nach „ShotInbox“ suchen\nAuch bei Google Play\n\n#Screenshots #Ordner #Organizer #Reiniger #ShotInbox",
+    "button": "Im App Store laden",
+    "variant": "b",
+    "alt": "ShotInbox AI: Screenshots — Sogar den Text darin durchsuchen — Belege, Tickets …alles sortiert — OCR-Suche & Fotos aufräumen",
+    "store": "https://apps.apple.com/de/app/id6802166527?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ShotInbox&referrer=utm_source%3Dsocial%26utm_campaign%3Dshotinbox",
     "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6798813048?action=write-review"
+     "label": "Sie nutzen diese App bereits? Bewerten oder rezensieren Sie sie im App Store",
+     "url": "https://apps.apple.com/app/id6802166527?action=write-review"
     },
     "keywords": [
-     "notebook",
-     "journal",
-     "planner",
-     "annotate",
-     "stylus",
-     "lecture"
+     "ordner",
+     "organizer",
+     "reiniger",
+     "duplikate",
+     "ähnliche",
+     "bilder"
     ],
-    "keyline": "Note Taking, Handwriting & PDF",
+    "keyline": "OCR-Suche & Fotos aufräumen",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "09d545c91056ba06",
+     "board": "f6c970e3cb08d22c",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "Review with flashcards\nEvery notebook, its own look\nNote Taking, Handwriting & PDF\n100 Notes Studio: Pen & Paper\nSearch “100 Notes Studio” on the App Store\nAlso on Google Play\n\n#PenPaper #Notebook #Journal #Planner #100NotesStudio\n\nGet it on the App Store: https://apps.apple.com/us/app/id6798813048?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.NotesStudio100&referrer=utm_source%3Dsocial%26utm_campaign%3Dnotesstudio100"
+     "caption": "Sogar den Text darin durchsuchen\nBelege, Tickets …alles sortiert\nOCR-Suche & Fotos aufräumen\nShotInbox AI: Screenshots\nIm App Store nach „ShotInbox“ suchen\nAuch bei Google Play\n\n#Screenshots #Ordner #Organizer #Reiniger #ShotInbox\n\nIm App Store laden: https://apps.apple.com/de/app/id6802166527?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ShotInbox&referrer=utm_source%3Dsocial%26utm_campaign%3Dshotinbox"
     },
     "slot": 15
    }

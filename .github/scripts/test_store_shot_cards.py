@@ -221,6 +221,11 @@ class PostTest(unittest.TestCase):
         self.assertEqual(calls, [], "nothing is uploaded, not even the cards")
 
     def test_main_posts_records_and_throttles_on_a_slow_down_answer(self):
+        # The real channel rotation can put Instagram in its holdout week (11-02..11-09 sat it out and main()
+        # returned 0 without posting); this test is about posting and throttling, so isolate it from the calendar.
+        pause = mock.patch.object(S.CR, "paused_notice", return_value=False)
+        pause.start()
+        self.addCleanup(pause.stop)
         with tempfile.TemporaryDirectory() as tmp:
             (Path(tmp) / "plan.json").write_text(json.dumps(self.PLAN))
             argv = ["post", "--dir", tmp, "--base-url", "https://raw.githubusercontent.com/o/r/feed-cards/d"]

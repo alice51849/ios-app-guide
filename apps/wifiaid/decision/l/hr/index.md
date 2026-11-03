@@ -2,7 +2,7 @@
 title: "WiFi Aid: Dijagnostika mreže — Ruter, mesh i DNS dijagnostika | iOS App"
 lang: "hr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/hr/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ Optimizirano za iPhone Duo. Aplikacija je izrađena s najnovijim SDK-om, ispunja
 - Plaćeno preuzimanje
 - Bez računa
 - Apple Watch
-- App Store · 6,99 €
+- App Store · 3,90 €
 
 [Preuzmite WiFi Aid: Dijagnostika mreže u App Storeu](https://apps.apple.com/hr/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)
 

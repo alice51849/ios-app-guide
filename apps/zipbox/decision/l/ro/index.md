@@ -2,7 +2,7 @@
 title: "Zipbox: deschide RAR, ZIP, 7z — Dezarhivare fără reclame | iOS App"
 lang: "ro"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/zipbox/decision/l/ro/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6806776579"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -20,7 +20,7 @@ Optimizată pentru iPhone Duo. Creată cu cel mai recent SDK, aplicația umple t
 - Fără reclame
 - Fără urmărire
 - Privat / pe dispozitiv
-- App Store · 29,99 lei
+- App Store · 17,99 lei
 
 [Descarcă Zipbox: deschide RAR, ZIP, 7z din App Store](https://apps.apple.com/ro/app/id6806776579?pt=118326163&ct=geo_pick&mt=8)
 

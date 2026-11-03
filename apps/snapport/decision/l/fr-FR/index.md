@@ -2,7 +2,7 @@
 title: "meilleure application photo d’identité pour bébés et tout-petits à la maison"
 lang: "fr-FR"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapport/decision/l/fr-FR/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -19,7 +19,7 @@ Pour une photo d’identité de bébé, personne d’autre ne doit apparaître e
 - Sans publicité
 - Sans suivi
 - Privé / sur l’appareil
-- App Store · 6,99 €
+- App Store · 3,90 €
 
 [Téléchargez Snapport sur l’App Store →](https://apps.apple.com/fr/app/id6780575828?pt=118326163&ct=geo_pick&mt=8)
 

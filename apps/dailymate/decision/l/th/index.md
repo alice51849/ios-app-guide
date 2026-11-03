@@ -2,7 +2,7 @@
 title: "แอปวลีภาษาที่ใช้งานได้จริงดีที่สุดสำหรับนักเดินทางที่ใช้แอปเปิลวอทช์"
 lang: "th"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymate/decision/l/th/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6790418321"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - ดาวน์โหลดแบบชำระเงิน
 - วิดเจ็ต
 - Apple Watch
-- App Store · ฿399.00
+- App Store · ฿229.00
 
 [ดาวน์โหลด DailyMate จาก App Store →](https://apps.apple.com/th/app/id6790418321?pt=118326163&ct=geo_pick&mt=8)
 

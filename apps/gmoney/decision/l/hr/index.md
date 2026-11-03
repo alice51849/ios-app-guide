@@ -2,7 +2,7 @@
 title: "najbolja aplikacija za praćenje putnog budžeta bez pretplate za iPhone"
 lang: "hr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gmoney/decision/l/hr/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -20,7 +20,7 @@ Na putovanju vam treba aplikacija za praćenje budžeta koja radi offline u zeml
 - Bez oglasa
 - Bez praćenja
 - Privatno / na uređaju
-- App Store · 5,99 €
+- App Store · 3,00 €
 
 [Preuzmite G+Money u App Storeu →](https://apps.apple.com/hr/app/id6755782939?pt=118326163&ct=geo_pick&mt=8)
 

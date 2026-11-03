@@ -2,7 +2,7 @@
 title: "Zipbox: otevřít RAR, ZIP, 7z — Rozbalte bez reklam | iOS App"
 lang: "cs"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/zipbox/decision/l/cs/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6806776579"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -20,7 +20,7 @@ Optimalizováno s ohledem na iPhone Duo. Aplikace je sestavena s nejnovějším 
 - Bez reklam
 - Bez sledování
 - Soukromé / v zařízení
-- App Store · 129,00 Kč
+- App Store · 69,00 Kč
 
 [Stáhněte si Zipbox: otevřít RAR, ZIP, 7z v App Storu](https://apps.apple.com/cz/app/id6806776579?pt=118326163&ct=geo_pick&mt=8)
 

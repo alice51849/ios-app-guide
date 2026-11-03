@@ -2,7 +2,7 @@
 title: "Zipbox 解压缩：RAR ZIP 7z — 零广告，内容先看再处理 | iOS App"
 lang: "zh-Hans"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/zipbox/decision/l/zh-Hans/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6806776579"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - 无广告
 - 无跟踪
 - 私密 / 设备本地
-- App Store · ¥38.00
+- App Store · ¥22.00
 
 [在 App Store 获取 Zipbox 解压缩：RAR ZIP 7z](https://apps.apple.com/cn/app/id6806776579?pt=118326163&ct=geo_pick&mt=8)
 

@@ -2,7 +2,7 @@
 title: "GBAGo: Simpanan visual — Peta Pemulihan · Syot Kilat | iOS App"
 lang: "ms"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gbago/decision/l/ms/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6804564400"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,7 +16,7 @@ Dioptimumkan untuk iPhone Duo. Dibina dengan SDK terkini, apl ini memenuhi selur
 - Lagi
 - Muat turun berbayar
 - Luar talian
-- App Store · RM39.90
+- App Store · RM22.90
 
 [Dapatkan GBAGo: Simpanan visual di App Store](https://apps.apple.com/my/app/id6804564400?pt=118326163&ct=geo_pick&mt=8)
 

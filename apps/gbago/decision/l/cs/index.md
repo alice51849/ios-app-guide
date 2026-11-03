@@ -2,7 +2,7 @@
 title: "GBAGo: Vizuální uložené — Mapa obnovení · Autosnímky | iOS App"
 lang: "cs"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gbago/decision/l/cs/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6804564400"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,7 +16,7 @@ Optimalizováno s ohledem na iPhone Duo. Aplikace je sestavena s nejnovějším 
 - Více
 - Placené stažení
 - Offline
-- App Store · 249,00 Kč
+- App Store · 129,00 Kč
 
 [Stáhněte si GBAGo: Vizuální uložené v App Storu](https://apps.apple.com/cz/app/id6804564400?pt=118326163&ct=geo_pick&mt=8)
 

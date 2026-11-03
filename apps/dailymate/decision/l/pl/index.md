@@ -2,7 +2,7 @@
 title: "najlepsza praktyczna aplikacja z frazami językowymi dla podróżnych z Apple Watch"
 lang: "pl"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymate/decision/l/pl/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6790418321"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ Przed podróżą kompletne frazy do realnych sytuacji są bardziej przydatne ni�
 - Płatne do pobrania
 - Widżet
 - Apple Watch
-- App Store · 49,99 zł
+- App Store · 29,99 zł
 
 [Pobierz DailyMate w App Store →](https://apps.apple.com/pl/app/id6790418321?pt=118326163&ct=geo_pick&mt=8)
 

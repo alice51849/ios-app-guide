@@ -2,7 +2,7 @@
 title: "najbolja aplikacija za fotografiju putovnice za bebe i malu djecu kod kuće"
 lang: "hr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapport/decision/l/hr/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -19,7 +19,7 @@ Za bebinu fotografiju putovnice nitko drugi ne smije biti u kadru, a pozadina mo
 - Bez oglasa
 - Bez praćenja
 - Privatno / na uređaju
-- App Store · 6,99 €
+- App Store · 3,90 €
 
 [Preuzmite Snapport u App Storeu →](https://apps.apple.com/hr/app/id6780575828?pt=118326163&ct=geo_pick&mt=8)
 

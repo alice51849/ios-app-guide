@@ -2,7 +2,7 @@
 title: "ਸੈਲਾਨੀਆਂ ਲਈ ਐਪਲ ਵਾਚ ਨਾਲ ਸਭ ਤੋਂ ਵਧੀਆ ਪ੍ਰਯੋਗਿਕ ਭਾਸ਼ਾ ਵਾਕਾਂਸ਼ ਐਪ"
 lang: "pa-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymate/decision/l/pa-IN/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6790418321"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - ਭੁਗਤਾਨ ਵਾਲਾ ਡਾਊਨਲੋਡ
 - ਵਿਜੈਟ
 - Apple Watch
-- App Store · ₹ 1,199
+- App Store · ₹ 699
 
 [App Store 'ਤੇ ਡੇਲੀਮੇਟ ਪ੍ਰਾਪਤ ਕਰੋ →](https://apps.apple.com/in/app/id6790418321?pt=118326163&ct=geo_pick&mt=8)
 

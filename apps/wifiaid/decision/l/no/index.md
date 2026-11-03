@@ -2,7 +2,7 @@
 title: "WiFi Aid: Finn nettverksfeil — Ruter-, mesh- og DNS-diagnose | iOS App"
 lang: "no"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/no/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ Optimalisert for iPhone Duo. Appen er bygget med den nyeste SDK-en, fyller hele 
 - Betalt nedlasting
 - Ingen konto
 - Apple Watch
-- App Store · 79,00 kr
+- App Store · 49,00 kr
 
 [Last ned WiFi Aid: Finn nettverksfeil fra App Store](https://apps.apple.com/no/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)
 

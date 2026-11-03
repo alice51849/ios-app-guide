@@ -2,7 +2,7 @@
 title: "ஆப்பிள் வாட்சுடன் பயணிகளுக்கான சிறந்த நடைமுறை மொழி வாக்கிய பயன்பாடு"
 lang: "ta-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymate/decision/l/ta-IN/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6790418321"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - பணம் செலுத்தி பதிவிறக்கவும்
 - விட்ஜெட்
 - Apple Watch
-- App Store · ₹ 1,199
+- App Store · ₹ 699
 
 [App Store இல் இருந்து டெய்லிமேட்டை பெறுக →](https://apps.apple.com/in/app/id6790418321?pt=118326163&ct=geo_pick&mt=8)
 

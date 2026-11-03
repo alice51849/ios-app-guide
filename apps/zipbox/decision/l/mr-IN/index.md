@@ -2,7 +2,7 @@
 title: "Zipbox: ZIP, RAR, 7z अनझिप — जाहिरात नाही, आधी आत पाहा | iOS App"
 lang: "mr-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/zipbox/decision/l/mr-IN/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6806776579"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -20,7 +20,7 @@ iPhone Duo डिव्हाइससाठी ऑप्टिमाइझ क�
 - जाहिराती नाहीत
 - ट्रॅकिंग नाही
 - खाजगी / उपकरणावर
-- App Store · ₹ 499
+- App Store · ₹ 299
 
 [App Store वरून Zipbox: ZIP, RAR, 7z अनझिप मिळवा](https://apps.apple.com/in/app/id6806776579?pt=118326163&ct=geo_pick&mt=8)
 

@@ -2,7 +2,7 @@
 title: "ایپل واچ کے ساتھ مسافروں کے لیے بہترین عملی زبان کے جملوں کی ایپ"
 lang: "ur-PK"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymate/decision/l/ur-PK/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6790418321"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - ادا شدہ ڈاؤن لوڈ
 - وجیٹ
 - Apple Watch
-- App Store · Rs 3,500.00
+- App Store · Rs 1,900.00
 
 [App Store سے DailyMate حاصل کریں →](https://apps.apple.com/pk/app/id6790418321?pt=118326163&ct=geo_pick&mt=8)
 

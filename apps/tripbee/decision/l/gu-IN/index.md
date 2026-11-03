@@ -2,7 +2,7 @@
 title: "iPhone માટે શ્રેષ્ઠ ટ્રિપ ઇટિનરરી પ્લાનર એપ"
 lang: "gu-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbee/decision/l/gu-IN/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - કોઈ જાહેરાત નથી
 - કોઈ ટ્રેકિંગ નથી
 - ખાનગી / ઉપકરણ પર
-- App Store · ₹ 599
+- App Store · ₹ 349
 
 [App Store પર TripBee Pro: ટ્રિપ પ્લાનર મેળવો →](https://apps.apple.com/in/app/id6787754435?pt=118326163&ct=geo_pick&mt=8)
 

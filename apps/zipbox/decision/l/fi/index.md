@@ -2,7 +2,7 @@
 title: "Zipbox: avaa RAR, ZIP, 7z — Pura ilman mainoksia | iOS App"
 lang: "fi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/zipbox/decision/l/fi/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6806776579"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -20,7 +20,7 @@ Optimoitu iPhone Duo -laitteelle. Uusimmalla SDK:lla rakennettu sovellus täytt�
 - Ei mainoksia
 - Ei seurantaa
 - Yksityinen / laitteella
-- App Store · 5,99 €
+- App Store · 3,00 €
 
 [Lataa Zipbox: avaa RAR, ZIP, 7z App Storesta](https://apps.apple.com/fi/app/id6806776579?pt=118326163&ct=geo_pick&mt=8)
 

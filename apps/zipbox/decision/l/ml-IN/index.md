@@ -2,7 +2,7 @@
 title: "Zipbox: ZIP, RAR, 7z തുറക്കുക — പരസ്യമില്ല, ഉള്ളിൽ നോക്കാം | iOS App"
 lang: "ml-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/zipbox/decision/l/ml-IN/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6806776579"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -20,7 +20,7 @@ iPhone Duo ഉപകരണത്തിനായി ഒപ്റ്റിമൈ�
 - വ്യാപനങ്ങൾ ഇല്ല
 - ട്രാക്കിംഗ് ഇല്ല
 - സ്വകാര്യത / ഉപകരണത്തിൽ
-- App Store · ₹ 499
+- App Store · ₹ 299
 
 [App Store-ൽ നിന്ന് Zipbox: ZIP, RAR, 7z തുറക്കുക നേടൂ](https://apps.apple.com/in/app/id6806776579?pt=118326163&ct=geo_pick&mt=8)
 

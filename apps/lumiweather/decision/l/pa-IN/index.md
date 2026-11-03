@@ -2,7 +2,7 @@
 title: "Lumi ਮੌਸਮ: ਅੱਜ ਦੀ ਭਵਿੱਖਬਾਣੀ — ਬਾਹਰ ਜਾਣ ਦਾ ਸਕੋਰ ਤੇ ਕੱਪੜੇ | iOS App"
 lang: "pa-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiweather/decision/l/pa-IN/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6779552704"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -21,6 +21,7 @@ publisher: "Lumi Studio"
 - ਨਿੱਜੀ / ਡਿਵਾਈਸ 'ਤੇ
 - ਵਿਜੈਟ
 - App Store · ਮੁਫ਼ਤ
+- ★ 5.0/5 · 1
 
 [App Store ਤੋਂ Lumi ਮੌਸਮ: ਅੱਜ ਦੀ ਭਵਿੱਖਬਾਣੀ ਪ੍ਰਾਪਤ ਕਰੋ](https://apps.apple.com/in/app/id6779552704?pt=118326163&ct=geo_pick&mt=8)
 

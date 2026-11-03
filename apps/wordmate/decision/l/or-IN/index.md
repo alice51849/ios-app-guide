@@ -2,7 +2,7 @@
 title: "Apple Watch ସହ ବ୍ୟସ୍ତ ଯାତ୍ରୀମାନେ ପାଇଁ ସର୍ବୋତ୍ତମ ଶବ୍ଦକୋଷ ଆପ୍"
 lang: "or-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wordmate/decision/l/or-IN/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - ଗୋପନୀୟ / ଉପକରଣରେ
 - ଉଇଜେଟ
 - Apple Watch
-- App Store · ₹ 999
+- App Store · ₹ 500
 
 [App Store ରେ Wordmate: Learn 44 Languages ପ୍ରାପ୍ତ କରନ୍ତୁ →](https://apps.apple.com/in/app/id6789917808?pt=118326163&ct=geo_pick&mt=8)
 

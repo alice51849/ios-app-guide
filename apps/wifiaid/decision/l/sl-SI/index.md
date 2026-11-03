@@ -2,7 +2,7 @@
 title: "WiFi Aid: Diagnoza omrežja — Usmerjevalnik, mesh in DNS | iOS App"
 lang: "sl-SI"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/sl-SI/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ Optimizirano za iPhone Duo. Aplikacija je izdelana z najnovejšim SDK, zapolni c
 - Plačljiv prenos
 - Brez računa
 - Apple Watch
-- App Store · 6,99 €
+- App Store · 3,90 €
 
 [Prenesite WiFi Aid: Diagnoza omrežja iz trgovine App Store](https://apps.apple.com/si/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)
 

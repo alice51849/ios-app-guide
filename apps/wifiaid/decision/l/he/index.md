@@ -2,7 +2,7 @@
 title: "WiFi Aid: איתור תקלות רשת — אבחון ראוטר, Mesh ו-DNS | iOS App"
 lang: "he"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/he/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - הורדה בתשלום
 - ללא חשבון
 - Apple Watch
-- App Store · ₪19.90
+- App Store · ₪12.90
 
 [הורידו את WiFi Aid: איתור תקלות רשת מה-App Store](https://apps.apple.com/il/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)
 

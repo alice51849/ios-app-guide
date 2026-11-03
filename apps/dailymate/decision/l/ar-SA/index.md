@@ -2,7 +2,7 @@
 title: "أفضل تطبيق لعبارات اللغة العملية للمسافرين مع Apple Watch"
 lang: "ar-SA"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymate/decision/l/ar-SA/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6790418321"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - تحميل مدفوع
 - عنصر واجهة
 - Apple Watch
-- App Store · SAR 49.99
+- App Store · SAR 29.99
 
 [احصل على DailyMate من App Store →](https://apps.apple.com/sa/app/id6790418321?pt=118326163&ct=geo_pick&mt=8)
 

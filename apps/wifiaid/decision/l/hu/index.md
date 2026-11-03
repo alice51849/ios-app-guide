@@ -2,7 +2,7 @@
 title: "WiFi Aid: Hálózati hibák — Router, mesh, DNS diagnosztika | iOS App"
 lang: "hu"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/hu/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ Optimalizálva az iPhone Duo készülékhez. A legújabb SDK-val készült alkal
 - Fizetős letöltés
 - Nincs fiók
 - Apple Watch
-- App Store · HUF2,490.00
+- App Store · HUF1,490.00
 
 [Töltse le a(z) WiFi Aid: Hálózati hibák appot az App Store-ból](https://apps.apple.com/hu/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)
 

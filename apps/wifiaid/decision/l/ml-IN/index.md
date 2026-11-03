@@ -2,7 +2,7 @@
 title: "WiFi Aid: കണക്ഷൻ പ്രശ്നം — റൗട്ടർ, മെഷ്, DNS പരിശോധന | iOS App"
 lang: "ml-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/ml-IN/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ iPhone Duo ഉപകരണത്തിനായി ഒപ്റ്റിമൈ�
 - പണം നൽകേണ്ട ഡൗൺലോഡ്
 - അക്കൗണ്ട് ഇല്ല
 - Apple Watch
-- App Store · ₹ 599
+- App Store · ₹ 349
 
 [App Store-ൽ നിന്ന് WiFi Aid: കണക്ഷൻ പ്രശ്നം നേടൂ](https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)
 

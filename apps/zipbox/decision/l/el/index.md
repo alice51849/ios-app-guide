@@ -2,7 +2,7 @@
 title: "Zipbox: άνοιγμα RAR, ZIP, 7z — Αποσυμπίεση χωρίς διαφημίσεις | iOS App"
 lang: "el"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/zipbox/decision/l/el/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6806776579"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - Χωρίς διαφημίσεις
 - Χωρίς παρακολούθηση
 - Ιδιωτικό / στη συσκευή
-- App Store · 5,99 €
+- App Store · 3,00 €
 
 [Αποκτήστε το Zipbox: άνοιγμα RAR, ZIP, 7z από το App Store](https://apps.apple.com/gr/app/id6806776579?pt=118326163&ct=geo_pick&mt=8)
 

@@ -2,7 +2,7 @@
 title: "GBAGo: بصری سیوز — بازیابی کا نقشہ · اسنیپ شاٹ | iOS App"
 lang: "ur-PK"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gbago/decision/l/ur-PK/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6804564400"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,7 +16,7 @@ iPhone Duo ڈیوائس کے لیے آپٹمائزڈ۔ جدید ترین SDK س�
 - مزید
 - ادا شدہ ڈاؤن لوڈ
 - آف لائن
-- App Store · Rs 2,500.00
+- App Store · Rs 1,300.00
 
 [App Store سے GBAGo: بصری سیوز حاصل کریں](https://apps.apple.com/pk/app/id6804564400?pt=118326163&ct=geo_pick&mt=8)
 

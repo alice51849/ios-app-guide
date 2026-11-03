@@ -2,7 +2,7 @@
 title: "ବାଳକ ଏବଂ ଶିଶୁଙ୍କ ପାଇଁ ସର୍ବୋତ୍ତମ ପାସପୋର୍ଟ ଫଟୋ ଆପ୍ ଘରେ"
 lang: "or-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapport/decision/l/or-IN/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - କୌଣସି ବିଜ୍ଞାପନ ନାହିଁ
 - କୌଣସି ଟ୍ରାକିଂ ନାହିଁ
 - ଗୋପନୀୟ / ଉପକରଣରେ
-- App Store · ₹ 599
+- App Store · ₹ 349
 
 [App Store ରୁ Snapport ଡାଉନଲୋଡ୍ କରନ୍ତୁ →](https://apps.apple.com/in/app/id6780575828?pt=118326163&ct=geo_pick&mt=8)
 

@@ -2,7 +2,7 @@
 title: "GBAGo: Visuelle lagringer — Redningskart · Øyeblikksbilder | iOS App"
 lang: "no"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gbago/decision/l/no/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6804564400"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,7 +16,7 @@ Optimalisert for iPhone Duo. Appen er bygget med den nyeste SDK-en, fyller hele 
 - Mer
 - Betalt nedlasting
 - Frakoblet
-- App Store · 99,00 kr
+- App Store · 59,00 kr
 
 [Last ned GBAGo: Visuelle lagringer fra App Store](https://apps.apple.com/no/app/id6804564400?pt=118326163&ct=geo_pick&mt=8)
 

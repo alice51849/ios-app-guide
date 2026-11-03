@@ -2,7 +2,7 @@
 title: "najlepšia aplikácia na plánovanie itinerára cesty pre iPhone"
 lang: "sk"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbee/decision/l/sk/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -19,7 +19,7 @@ Dobrá aplikácia na itinerár premení chaotickú cestu na jasný denný harmon
 - Bez reklám
 - Bez sledovania
 - Súkromné / v zariadení
-- App Store · 6,99 €
+- App Store · 3,90 €
 
 [Stiahnite si TripBee Pro: Plánovač ciest v App Store →](https://apps.apple.com/sk/app/id6787754435?pt=118326163&ct=geo_pick&mt=8)
 

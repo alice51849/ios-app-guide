@@ -2,7 +2,7 @@
 title: "nejlepší aplikace na pasové fotografie pro miminka a batolata doma"
 lang: "cs"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapport/decision/l/cs/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -19,7 +19,7 @@ Pro pasovou fotografii miminka nesmí být na snímku nikdo jiný a pozadí mus�
 - Bez reklam
 - Bez sledování
 - Soukromé / v zařízení
-- App Store · 149,00 Kč
+- App Store · 79,00 Kč
 
 [Stáhněte Snapport v App Store →](https://apps.apple.com/cz/app/id6780575828?pt=118326163&ct=geo_pick&mt=8)
 

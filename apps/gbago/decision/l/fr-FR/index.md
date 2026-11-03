@@ -2,7 +2,7 @@
 title: "GBAGo: Sauvegardes visuelles — Récupération · Instantanés | iOS App"
 lang: "fr-FR"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gbago/decision/l/fr-FR/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6804564400"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,7 +16,7 @@ Optimisée pour l’iPhone Duo. Conçue avec le SDK le plus récent, l’app rem
 - Plus
 - Téléchargement payant
 - Hors ligne
-- App Store · 9,99 €
+- App Store · 5,99 €
 
 [Obtenir GBAGo: Sauvegardes visuelles sur l'App Store](https://apps.apple.com/fr/app/id6804564400?pt=118326163&ct=geo_pick&mt=8)
 

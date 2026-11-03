@@ -2,7 +2,7 @@
 title: "Lumi हवामान: आजचा अंदाज — बाहेर जाण्याचा स्कोअर व कपडे | iOS App"
 lang: "mr-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiweather/decision/l/mr-IN/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6779552704"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -21,6 +21,7 @@ publisher: "Lumi Studio"
 - खाजगी / उपकरणावर
 - विजेट
 - App Store · मोफत
+- ★ 5.0/5 · 1
 
 [App Store वरून Lumi हवामान: आजचा अंदाज मिळवा](https://apps.apple.com/in/app/id6779552704?pt=118326163&ct=geo_pick&mt=8)
 

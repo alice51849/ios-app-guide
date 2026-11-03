@@ -130,7 +130,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **Sereno** | 最佳無訂閱白噪音助眠App | 睡眠時，每月煩人的訂閱正好相反。如果你也是這種狀況，可以看看 Sereno。 | 免費開始使用 · 一次購買解鎖 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hant/answers/best-white-noise-app-for-falling-asleep-no-subscription.html) | [在 App Store 取得 Sereno →](https://apps.apple.com/tw/app/id6788236641?pt=118326163&ct=geo_pick&mt=8) |
 | **ShotInbox AI** | iPhone 離線整理截圖的最佳 App | 截圖會越積越多，因為每一張都是一件待辦 — 要歸檔的收據、要打開的連結、要導航的地址 — 而相機膠卷沒有任何辦法把它們處理完 — ShotInbox AI 就是為此而生。 | 免費開始使用 · 一次購買解鎖 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hant/answers/best-app-to-sort-screenshots-on-iphone-offline.html) | [到 App Store 下載 ShotInbox AI →](https://apps.apple.com/tw/app/id6802166527?pt=118326163&ct=geo_pick&mt=8) |
 | **Snapport** | 最佳在家拍攝嬰幼兒護照照片App | 嬰兒護照照片中不得有其他人，背景必須純色。Snapport 就是從這個問題開始做的。 | 付費下載 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hant/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html) | [在 App Store 取得 Snapport →](https://apps.apple.com/tw/app/id6780575828?pt=118326163&ct=geo_pick&mt=8) |
-| **Snapport Lite：在家拍證件照** | Snapport Lite：在家拍證件照 — 人像照精準裁成指定尺寸 \| iOS App | 需要特定尺寸的照片嗎？Snapport Lite 直接在你的裝置上，把人像照片精準裁成你選的尺寸。拍一張新照片或從相簿挑選，依導引對齊臉部、整理背景，就能匯出。 | 免費開始使用 · 一次購買解鎖 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hant/snapportlite.html) | [在 App Store 取得 Snapport Lite：在家拍證件照](https://apps.apple.com/tw/app/id6792856304?pt=118326163&ct=geo_pick&mt=8) |
+| **Snapport Lite：在家拍證件照** | Snapport Lite：在家拍證件照 — 人像照精準裁成指定尺寸 \| iOS App | 履歷、證件要用的大頭照，在家用手機就能拍好。Snapport Lite 把人像照精準裁成你選的尺寸：內建 35 種範本，也能自訂公釐、英吋或像素。 | 免費開始使用 · 一次購買解鎖 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hant/snapportlite.html) | [在 App Store 取得 Snapport Lite：在家拍證件照](https://apps.apple.com/tw/app/id6792856304?pt=118326163&ct=geo_pick&mt=8) |
 | **Sono Note** | 在 iPhone 上摘要會議的最佳語音筆記 App | 通話後你不想要原始文字稿——你想要摘要、行動項目與草擬後續——Sono Note 專為此打造。 | 免費開始使用 · 一次購買解鎖 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hant/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [前往 App Store 取得 Sono Note →](https://apps.apple.com/tw/app/id6782139553?pt=118326163&ct=geo_pick&mt=8) |
 | **Stay Clock:翻頁桌鐘** | Stay Clock:翻頁桌鐘 — 全天顯示時間與行事曆 \| iOS App | Stay Clock 把你的 iPhone 或 iPad 變成一座全天候桌鐘，充電時保持恆亮，隔著房間也看得清楚。101 款錶面隨你換，也有翻頁鐘（其中 100 款以一次性 Lifetime 解鎖）；夜裡可改成純黑底柔和紅字，不刺眼。 | 免費開始使用 · 一次購買解鎖 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hant/stayclock.html) | [在 App Store 取得 Stay Clock:翻頁桌鐘](https://apps.apple.com/tw/app/id6814035888?pt=118326163&ct=geo_pick&mt=8) |
 | **Studydown** | 手機螢幕朝下就開始計時的專注計時器 | Studydown — 為專案、一本書或想培養的技能留點時間。免費開始 · 一次買斷解鎖 · 沒有訂閱。 | 免費開始使用 · 一次購買解鎖 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hant/answers/focus-timer-that-starts-when-you-put-your-phone-face-down.html) | [到 App Store 下載 Studydown →](https://apps.apple.com/tw/app/id6807335593?pt=118326163&ct=geo_pick&mt=8) |
@@ -156,6 +156,6 @@ JSON、JSONL 與 CSV 格式皆包含相同的 2,800 筆紀錄。
 
 [首頁](https://open.cait518.cc/ios-app-guide/zh-Hant/index.html) · [開放資料](https://open.cait518.cc/ios-app-guide/zh-Hant/data/lumi-studio-publisher-search-intent-catalog.html) · [授權條款](https://creativecommons.org/licenses/by/4.0/)
 
-更新日期: 2026-11-01
+更新日期: 2026-11-03
 
 CC BY 4.0 適用於原始目錄彙編；App 名稱與 App Store 商標分屬其權利人。

@@ -2,7 +2,7 @@
 title: "WiFi Aid: Εντοπισμός βλαβών — Διάγνωση router, mesh και DNS | iOS App"
 lang: "el"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/el/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - Λήψη με χρέωση
 - Χωρίς λογαριασμό
 - Apple Watch
-- App Store · 6,99 €
+- App Store · 3,90 €
 
 [Αποκτήστε το WiFi Aid: Εντοπισμός βλαβών από το App Store](https://apps.apple.com/gr/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)
 

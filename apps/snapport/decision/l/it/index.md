@@ -2,7 +2,7 @@
 title: "migliore app per foto tessera di neonati e bambini piccoli a casa"
 lang: "it"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapport/decision/l/it/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -19,7 +19,7 @@ Per la foto tessera del bambino, nessun altro deve comparire nella foto e lo sfo
 - Nessuna pubblicità
 - Nessun tracciamento
 - Privato / su dispositivo
-- App Store · 6,99 €
+- App Store · 3,90 €
 
 [Scarica Snapport dall’App Store →](https://apps.apple.com/it/app/id6780575828?pt=118326163&ct=geo_pick&mt=8)
 

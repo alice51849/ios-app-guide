@@ -2,7 +2,7 @@
 title: "在 iPhone 上無廣告開啟 RAR 與 7z 檔的付費 App"
 lang: "zh-Hant"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/zipbox/decision/l/zh-Hant/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6806776579"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -20,7 +20,7 @@ Zipbox — 在裝置上開啟加密與分卷的 ZIP、RAR、RAR5 與 7z 壓縮�
 - 無廣告
 - 無追蹤
 - 隱私優先／裝置端
-- App Store · $150.00
+- App Store · $90.00
 - ★ 5.0/5 · 1
 
 [到 App Store 下載 Zipbox →](https://apps.apple.com/tw/app/id6806776579?pt=118326163&ct=geo_pick&mt=8)

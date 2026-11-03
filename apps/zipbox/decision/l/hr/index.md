@@ -2,7 +2,7 @@
 title: "Zipbox: otvori RAR, ZIP, 7z — Raspakiraj bez reklama | iOS App"
 lang: "hr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/zipbox/decision/l/hr/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6806776579"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -20,7 +20,7 @@ Optimizirano za iPhone Duo. Aplikacija je izrađena s najnovijim SDK-om, ispunja
 - Bez oglasa
 - Bez praćenja
 - Privatno / na uređaju
-- App Store · 5,99 €
+- App Store · 3,00 €
 
 [Preuzmite Zipbox: otvori RAR, ZIP, 7z u App Storeu](https://apps.apple.com/hr/app/id6806776579?pt=118326163&ct=geo_pick&mt=8)
 

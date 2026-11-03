@@ -2,7 +2,7 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-11-03",
-  "content_digest": "433ef92031c0dc2f96940cbc8afea863bbe7454cca18d801a39b0bf21c4ac043",
+  "content_digest": "b9573af86be05286f86d04d6eb55aa8bc997a5721a54511f01d49ed6b86e8214",
   "locale": "ja",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -944,7 +944,8 @@
         "文字盤",
         "横断幕",
         "メッセージ",
-        "テロップ"
+        "テロップ",
+        "お迎え ボード"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1047,9 +1048,7 @@
         "幼稚園",
         "練習",
         "ゲーム",
-        "知育",
-        "注音符号",
-        "注音 学習"
+        "知育"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1369,8 +1368,7 @@
         "声かけ",
         "ご褒美",
         "モチベーション",
-        "年少",
-        "ごほうび シール"
+        "年少"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1628,8 +1626,7 @@
         "オイル交換",
         "消耗品",
         "経過日数",
-        "日数",
-        "最後にしたのは いつ"
+        "日数"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2081,8 +2078,7 @@
         "チケット",
         "自動仕分け",
         "ギャラリー",
-        "レシート",
-        "スクリーンショット 整理"
+        "レシート"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

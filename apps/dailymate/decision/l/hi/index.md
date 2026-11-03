@@ -2,7 +2,7 @@
 title: "ऐप्पल वॉच के साथ यात्रियों के लिए सर्वश्रेष्ठ व्यावहारिक भाषा वाक्यांश ऐप"
 lang: "hi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymate/decision/l/hi/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6790418321"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - भुगतान किया गया डाउनलोड
 - विजेट
 - Apple Watch
-- App Store · ₹ 1,199
+- App Store · ₹ 699
 
 [App Store पर DailyMate प्राप्त करें →](https://apps.apple.com/in/app/id6790418321?pt=118326163&ct=geo_pick&mt=8)
 

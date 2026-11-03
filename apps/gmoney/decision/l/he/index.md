@@ -2,7 +2,7 @@
 title: "האפליקציה הטובה ביותר למעקב תקציב נסיעות ללא מנוי לאייפון"
 lang: "he"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gmoney/decision/l/he/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - ללא פרסומות
 - ללא מעקב
 - פרטי / במכשיר
-- App Store · ₪14.90
+- App Store · ₪7.90
 
 [קבל את G+Money ב-App Store →](https://apps.apple.com/il/app/id6755782939?pt=118326163&ct=geo_pick&mt=8)
 

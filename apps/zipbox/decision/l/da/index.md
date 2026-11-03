@@ -2,7 +2,7 @@
 title: "Zipbox: åbn RAR, ZIP og 7z — Pak ud uden reklamer | iOS App"
 lang: "da"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/zipbox/decision/l/da/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6806776579"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -20,7 +20,7 @@ Optimeret til iPhone Duo. Appen er bygget med den nyeste SDK, fylder hele den in
 - Ingen reklamer
 - Ingen sporing
 - Privat / på enheden
-- App Store · 39,00 kr
+- App Store · 29,00 kr
 
 [Hent Zipbox: åbn RAR, ZIP og 7z i App Store](https://apps.apple.com/dk/app/id6806776579?pt=118326163&ct=geo_pick&mt=8)
 

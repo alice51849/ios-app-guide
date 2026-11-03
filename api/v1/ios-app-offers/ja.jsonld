@@ -6,7 +6,7 @@
   "name": "Lumi Studio 開発元検索意図カタログ",
   "description": "各アプリの対象ユーザー、達成したいタスク、App Store への直接の導線を、開発元が公開するカタログです。",
   "inLanguage": "ja",
-  "dateModified": "2026-11-01",
+  "dateModified": "2026-11-03",
   "numberOfItems": 56,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -2659,7 +2659,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-snapportlite",
         "url": "https://apps.apple.com/jp/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
         "name": "Snapport Lite：自宅で証明写真",
-        "description": "決まったサイズの写真が必要なときに。Snapport Lite は、お使いのデバイス上で顔写真を選んだサイズにぴったりトリミングします。新しく撮影するかライブラリから選び、ガイドに合わせて顔の位置を整え、背景を整えたら書き出すだけです。",
+        "description": "履歴書や各種申請に使う証明写真を、自宅でスマホから。Snapport Lite が顔写真を選んだサイズにぴったりトリミングします。内蔵テンプレートは35種類、mm・インチ・ピクセルでの自由なサイズ指定も可能です。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2689,7 +2689,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6792856304",
           "inLanguage": "ja",
-          "description": "決まったサイズの写真が必要なときに。Snapport Lite は、お使いのデバイス上で顔写真を選んだサイズにぴったりトリミングします。新しく撮影するかライブラリから選び、ガイドに合わせて顔の位置を整え、背景を整えたら書き出すだけです。",
+          "description": "履歴書や各種申請に使う証明写真を、自宅でスマホから。Snapport Lite が顔写真を選んだサイズにぴったりトリミングします。内蔵テンプレートは35種類、mm・インチ・ピクセルでの自由なサイズ指定も可能です。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-snapportlite"
           },

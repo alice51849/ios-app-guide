@@ -2,7 +2,7 @@
 title: "Zipbox: ZIP, RAR, 7z ଖୋଲନ୍ତୁ — ବିଜ୍ଞାପନ ନାହିଁ, ଆଗେ ଦେଖନ୍ତୁ | iOS App"
 lang: "or-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/zipbox/decision/l/or-IN/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6806776579"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -20,7 +20,7 @@ iPhone Duo ଡିଭାଇସ୍ ପାଇଁ ଅପ୍ଟିମାଇଜ୍ କ
 - କୌଣସି ବିଜ୍ଞାପନ ନାହିଁ
 - କୌଣସି ଟ୍ରାକିଂ ନାହିଁ
 - ଗୋପନୀୟ / ଉପକରଣରେ
-- App Store · ₹ 499
+- App Store · ₹ 299
 
 [App Store ରୁ Zipbox: ZIP, RAR, 7z ଖୋଲନ୍ତୁ ପାଆନ୍ତୁ](https://apps.apple.com/in/app/id6806776579?pt=118326163&ct=geo_pick&mt=8)
 

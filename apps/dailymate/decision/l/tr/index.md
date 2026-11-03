@@ -2,7 +2,7 @@
 title: "Apple Watch destekli, gezginler için en iyi pratik dil ifadeleri uygulaması"
 lang: "tr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymate/decision/l/tr/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6790418321"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ Seyahatten önce, gerçek durumlar için tam ifadeler, baskı altında hâlâ bi
 - Ücretli indirme
 - Araç takımı
 - Apple Watch
-- App Store · ₺599,99
+- App Store · ₺349,99
 
 [DailyMate’i App Store’dan edinin →](https://apps.apple.com/tr/app/id6790418321?pt=118326163&ct=geo_pick&mt=8)
 

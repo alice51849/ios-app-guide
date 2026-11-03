@@ -2,7 +2,7 @@
 title: "Zipbox: فك ضغط RAR وZIP و7z — استخراج ومعاينة بلا إعلانات | iOS App"
 lang: "ar-SA"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/zipbox/decision/l/ar-SA/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6806776579"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - بدون إعلانات
 - بدون تتبع
 - خاص / على الجهاز
-- App Store · SAR 19.99
+- App Store · SAR 12.99
 
 [احصل على Zipbox: فك ضغط RAR وZIP و7z من App Store](https://apps.apple.com/sa/app/id6806776579?pt=118326163&ct=geo_pick&mt=8)
 

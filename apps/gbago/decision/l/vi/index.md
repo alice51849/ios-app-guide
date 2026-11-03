@@ -2,7 +2,7 @@
 title: "GBAGo: Bản lưu trực quan — Bản đồ khôi phục · Ảnh chụp | iOS App"
 lang: "vi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gbago/decision/l/vi/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6804564400"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,7 +16,7 @@ Tối ưu cho iPhone Duo. Ứng dụng được xây dựng bằng bộ công c�
 - Khác
 - Tải xuống trả phí
 - Ngoại tuyến
-- App Store · 299.000đ
+- App Store · 150.000đ
 
 [Tải GBAGo: Bản lưu trực quan trên App Store](https://apps.apple.com/vn/app/id6804564400?pt=118326163&ct=geo_pick&mt=8)
 

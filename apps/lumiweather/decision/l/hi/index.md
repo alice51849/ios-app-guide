@@ -2,7 +2,7 @@
 title: "Lumi मौसम: आज का पूर्वानुमान — बाहर जाने का स्कोर व पहनावा | iOS App"
 lang: "hi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiweather/decision/l/hi/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6779552704"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -21,6 +21,7 @@ publisher: "Lumi Studio"
 - निजी / डिवाइस पर
 - विजेट
 - App Store · मुफ़्त
+- ★ 5.0/5 · 1
 
 [App Store पर Lumi मौसम: आज का पूर्वानुमान पाएँ](https://apps.apple.com/in/app/id6779552704?pt=118326163&ct=geo_pick&mt=8)
 

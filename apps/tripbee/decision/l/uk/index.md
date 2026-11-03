@@ -2,7 +2,7 @@
 title: "найкращий додаток для планування маршруту подорожі на iPhone"
 lang: "uk"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbee/decision/l/uk/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - Без реклами
 - Без відстеження
 - Приватно / на пристрої
-- App Store · 6,99 USD
+- App Store · 3,95 USD
 
 [Отримайте TripBee Pro: планувальник подорожей в App Store →](https://apps.apple.com/ua/app/id6787754435?pt=118326163&ct=geo_pick&mt=8)
 

@@ -2,7 +2,7 @@
 title: "Apple Watch کے ساتھ مصروف سفر کرنے والوں کے لیے بہترین وکیبلری ایپ"
 lang: "ur-PK"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wordmate/decision/l/ur-PK/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - نجی / آلہ پر
 - وجیٹ
 - Apple Watch
-- App Store · Rs 2,500.00
+- App Store · Rs 1,300.00
 
 [Wordmate: Learn 44 Languages App Store پر حاصل کریں →](https://apps.apple.com/pk/app/id6789917808?pt=118326163&ct=geo_pick&mt=8)
 

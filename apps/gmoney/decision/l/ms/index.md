@@ -2,7 +2,7 @@
 title: "aplikasi penjejak bajet perjalanan terbaik tanpa langganan iPhone"
 lang: "ms"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gmoney/decision/l/ms/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -20,7 +20,7 @@ Dalam perjalanan anda perlukan penjejak bajet yang berfungsi luar talian di nega
 - Tiada iklan
 - Tiada penjejakan
 - Peribadi / pada peranti
-- App Store · RM22.90
+- App Store · RM13.90
 
 [Dapatkan G+Money di App Store →](https://apps.apple.com/my/app/id6755782939?pt=118326163&ct=geo_pick&mt=8)
 

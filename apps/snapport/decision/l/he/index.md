@@ -2,7 +2,7 @@
 title: "האפליקציה הטובה ביותר לתמונת דרכון לתינוקות ופעוטות בבית"
 lang: "he"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapport/decision/l/he/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - ללא פרסומות
 - ללא מעקב
 - פרטי / במכשיר
-- App Store · ₪19.90
+- App Store · ₪12.90
 
 [קבל את Snapport ב-App Store →](https://apps.apple.com/il/app/id6780575828?pt=118326163&ct=geo_pick&mt=8)
 

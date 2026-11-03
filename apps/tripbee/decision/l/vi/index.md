@@ -2,7 +2,7 @@
 title: "ứng dụng lập lịch trình chuyến đi tốt nhất cho iPhone"
 lang: "vi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbee/decision/l/vi/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -19,7 +19,7 @@ Một ứng dụng lịch trình tốt biến chuyến đi lộn xộn thành d�
 - Không quảng cáo
 - Không theo dõi
 - Riêng tư / trên thiết bị
-- App Store · 199.000đ
+- App Store · 119.000đ
 
 [Tải TripBee Pro: Trình lập kế hoạch chuyến đi trên App Store →](https://apps.apple.com/vn/app/id6787754435?pt=118326163&ct=geo_pick&mt=8)
 

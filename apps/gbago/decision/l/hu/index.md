@@ -2,7 +2,7 @@
 title: "GBAGo: Vizuális mentések — Helyreállítás · Pillanatképek | iOS App"
 lang: "hu"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gbago/decision/l/hu/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6804564400"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,7 +16,7 @@ Optimalizálva az iPhone Duo készülékhez. A legújabb SDK-val készült alkal
 - Továbbiak
 - Fizetős letöltés
 - Offline
-- App Store · HUF3,990.00
+- App Store · HUF1,999.00
 
 [Töltse le a(z) GBAGo: Vizuális mentések appot az App Store-ból](https://apps.apple.com/hu/app/id6804564400?pt=118326163&ct=geo_pick&mt=8)
 

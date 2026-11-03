@@ -2,7 +2,7 @@
 title: "apl perancang itinerari terbaik untuk iPhone"
 lang: "ms"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbee/decision/l/ms/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -19,7 +19,7 @@ Aplikasi jadual perjalanan yang baik mengubah perjalanan yang berselerak menjadi
 - Tiada iklan
 - Tiada penjejakan
 - Peribadi / pada peranti
-- App Store · RM29.90
+- App Store · RM17.90
 
 [Dapatkan TripBee Pro: Perancang Perjalanan di App Store →](https://apps.apple.com/my/app/id6787754435?pt=118326163&ct=geo_pick&mt=8)
 

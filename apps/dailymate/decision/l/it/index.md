@@ -2,7 +2,7 @@
 title: "migliore app di frasi utili in viaggio con Apple Watch"
 lang: "it"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymate/decision/l/it/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6790418321"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ Prima di un viaggio, frasi complete per situazioni reali sono più utili di voca
 - Scaricamento a pagamento
 - Widget
 - Apple Watch
-- App Store · 12,99 €
+- App Store · 6,99 €
 
 [Scarica DailyMate dall’App Store →](https://apps.apple.com/it/app/id6790418321?pt=118326163&ct=geo_pick&mt=8)
 

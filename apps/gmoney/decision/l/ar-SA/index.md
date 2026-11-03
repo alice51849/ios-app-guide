@@ -2,7 +2,7 @@
 title: "أفضل تطبيق تتبع ميزانية السفر بدون اشتراك للآيفون"
 lang: "ar-SA"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gmoney/decision/l/ar-SA/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - بدون إعلانات
 - بدون تتبع
 - خاص / على الجهاز
-- App Store · SAR 19.99
+- App Store · SAR 12.99
 
 [احصل على G+Money من App Store →](https://apps.apple.com/sa/app/id6755782939?pt=118326163&ct=geo_pick&mt=8)
 

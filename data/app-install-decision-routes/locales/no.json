@@ -2,9 +2,9 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "no",
-  "dateModified": "2026-11-02",
-  "content_digest": "fb17c3f3881fa6ed18fa0913f425a62d7bcd93029178a9a8038d67cfe7162ad1",
-  "generation_digest": "0c7245272799cac86c2ac7210da1f5799db202ac0efad0fe40a638eb48581bfa",
+  "dateModified": "2026-11-03",
+  "content_digest": "84e021b0979570c89e5fd7658edb9e81bf9af26f1c80260d40d0dd175d2a7981",
+  "generation_digest": "47073461c885fc08d0cb05b192a5639dc94d2704614b0679bf96dfa34b71cd0f",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -101,7 +101,7 @@
         "Betalt nedlasting",
         "Ingen konto",
         "Apple Watch",
-        "App Store · 79,00 kr"
+        "App Store · 49,00 kr"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/no/wifiaid.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/no/index.html",
@@ -112,9 +112,9 @@
       "app_store_url": "https://apps.apple.com/no/app/id6790467886?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "Last ned WiFi Aid: Finn nettverksfeil fra App Store",
       "storefront_facts": {
-        "price": "79",
+        "price": "49",
         "currency": "NOK",
-        "formatted_price": "79,00 kr"
+        "formatted_price": "49,00 kr"
       },
       "guide_cta_label": "Les hele veiledningen",
       "publisher_disclosure": "Dette er førsteparts materiale publisert av Lumi Studio, utvikleren av hver oppført app.",
@@ -672,7 +672,7 @@
         "Betalt nedlasting",
         "Widget",
         "Apple Watch",
-        "App Store · 149,00 kr"
+        "App Store · 79,00 kr"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/no/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/dailymate/decision/l/no/index.html",
@@ -683,9 +683,9 @@
       "app_store_url": "https://apps.apple.com/no/app/id6790418321?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "Skaff DailyMate i App Store →",
       "storefront_facts": {
-        "price": "149",
+        "price": "79",
         "currency": "NOK",
-        "formatted_price": "149,00 kr"
+        "formatted_price": "79,00 kr"
       },
       "guide_cta_label": "Les hele veiledningen",
       "publisher_disclosure": "Guide skrevet av Lumi Studio, utvikleren av appen. Appnavn er varemerker som tilhører sine eiere og brukes bare til identifikasjon. Når det gjelder dokumenter, helse, skole og produktivitet, bør du sjekke de offisielle kravene der det er relevant.",
@@ -973,7 +973,7 @@
         "Ingen annonser",
         "Ingen sporing",
         "Privat / på enheten",
-        "App Store · 59,00 kr"
+        "App Store · 39,00 kr"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/no/answers/best-travel-budget-tracker-app-no-subscription-iphone.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/gmoney/decision/l/no/index.html",
@@ -984,9 +984,9 @@
       "app_store_url": "https://apps.apple.com/no/app/id6755782939?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "Få G+Money i App Store →",
       "storefront_facts": {
-        "price": "59",
+        "price": "39",
         "currency": "NOK",
-        "formatted_price": "59,00 kr"
+        "formatted_price": "39,00 kr"
       },
       "guide_cta_label": "Les hele veiledningen",
       "publisher_disclosure": "Guide skrevet av Lumi Studio, utvikleren av appen. Appnavn er varemerker som tilhører sine eiere og brukes bare til identifikasjon. Når det gjelder dokumenter, helse, skole og produktivitet, bør du sjekke de offisielle kravene der det er relevant.",
@@ -1090,7 +1090,7 @@
         "Mer",
         "Betalt nedlasting",
         "Frakoblet",
-        "App Store · 99,00 kr"
+        "App Store · 59,00 kr"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/no/gbago.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/gbago/decision/l/no/index.html",
@@ -1101,9 +1101,9 @@
       "app_store_url": "https://apps.apple.com/no/app/id6804564400?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "Last ned GBAGo: Visuelle lagringer fra App Store",
       "storefront_facts": {
-        "price": "99",
+        "price": "59",
         "currency": "NOK",
-        "formatted_price": "99,00 kr"
+        "formatted_price": "59,00 kr"
       },
       "guide_cta_label": "Les hele veiledningen",
       "publisher_disclosure": "Dette er førsteparts materiale publisert av Lumi Studio, utvikleren av hver oppført app.",
@@ -1245,7 +1245,7 @@
       "priority_rank": null,
       "priority_group": "baseline_coverage",
       "publisher_query": "LED Moving Text — Rullende lysskilt på mobilen | iOS App",
-      "decision_context": "Skriv en setning og hold opp iPhonen. Fra bakerste rad, tvers over ankomsthallen eller over en disk kan den leses på ett blikk. Appen åpner rett i et levende lerret. Forhåndsvisningen er redigeringen, så teksten, farten, størrelsen og fargen endrer seg i samme øyeblikk som du tar i dem. Ett trykk tar alt til full skjerm: trykk for å vise eller skjule kontrollene, og bruk den tydelige pauseknappen til å stanse visningen, dra for fart og retning, knip for bokstavstørrelse, og dreid nitti grader får teksten hele skjermhøyden. Den er laget for øyeblikkene der stemmen ikke rekker fram. Heie på en låt uten å skrike deg hes. Holde opp et navn i ankomsthallen så noen finner deg på lang avstand. Vise en hentemelding ved fortauskanten eller i skranken. Be om et roligere bord eller om saktere tale der det er vanskelig å gjøre seg forstått. Legge igjen en kort beskjed på pulten mens du er borte en stund. Det som er gratis, blir værende gratis og uten registrering: så mange meldinger du vil og visning i full skjerm, stillestående og rullende bevegelse, retning mot venstre og høyre, fart og tekststørrelse, alle hundre og åtte tekstfarger, speilvendt tekst til et butikkvindu eller en frontrute, stående modus dreid nitti grader, justerbar blinking, de siste setningene dine ett trykk unna, en puls med lykten, i tillegg én ferdig mal og én LED-ramme å prøve, og ett lagret skilt som er ditt eget. Engangsopplåsingen legger til ubegrenset antall lagrede skilt og egne maler, over hundre skrifttyper, tjue effekter som kontur, skygge, glød, blink, puls, bølge, skrivemaskin og punktmatrise, de øvrige femtini ferdige malene fra seks hverdagssituasjoner, bevegelsene side, innglidning, fram og tilbake, pendel og drift, retning opp og ned, regnbue- og gradienttekst, resten av LED-rammene og fargene deres, bokstavavstand og gjentakelsesavstand, bakgrunn med foto og nordlys, bevegelse i takt med musikken, en nedtelling samt eksport til MP4 og GIF uten vannmerke. Alt kjører på enheten. Ingen konto, ingen sky, ingen reklame, ingen analyse, ingen sporing. Meldingene dine, skiltene dine og ethvert bilde du velger, blir på iPhonen din. Mikrofonen brukes bare mens bevegelse i takt er slått på, og lyd blir aldri tatt opp eller lagret. Femti språk, og malene er skrevet på nytt for hvert av dem i stedet for oversatt ord for ord. For iPhone og iPad, med egen layout stående, liggende og i Split View. Optimalisert for iPhone Duo.",
+      "decision_context": "Optimalisert for iPhone Duo. Appen er bygget med den nyeste SDK-en, fyller hele den indre skjermen og tilpasser oppsettet automatisk, både sammenbrettet og utbrettet. Skriv en setning og hold opp iPhonen. Fra bakerste rad, tvers over ankomsthallen eller over en disk kan den leses på ett blikk. Trenger du mer enn ett skilt? Med «Meldingsrekke» skriver du én melding per linje og bytter live eller med en tidtaker på 2–20 sekunder, gjerne i gjentakelse, uten å forlate fullskjerm. Appen åpner rett i et levende lerret. Forhåndsvisningen er redigeringen, så teksten, farten, størrelsen og fargen endrer seg i samme øyeblikk som du tar i dem. Ett trykk tar alt til full skjerm: trykk for å vise eller skjule kontrollene, og bruk den tydelige pauseknappen til å stanse visningen, dra for fart og retning, knip for bokstavstørrelse, og dreid nitti grader får teksten hele skjermhøyden. Den er laget for øyeblikkene der stemmen ikke rekker fram. Heie på en låt uten å skrike deg hes. Holde opp et navn i ankomsthallen så noen finner deg på lang avstand. Vise en hentemelding ved fortauskanten eller i skranken. Be om et roligere bord eller om saktere tale der det er vanskelig å gjøre seg forstått. Legge igjen en kort beskjed på pulten mens du er borte en stund. Det som er gratis, blir værende gratis og uten registrering: så mange meldinger du vil og visning i full skjerm, stillestående og rullende bevegelse, retning mot venstre og høyre, fart og tekststørrelse, alle hundre og åtte tekstfarger, speilvendt tekst til et butikkvindu eller en frontrute, stående modus dreid nitti grader, justerbar blinking, de siste setningene dine ett trykk unna, en puls med lykten, i tillegg én ferdig mal og én LED-ramme å prøve, og ett lagret skilt som er ditt eget. Engangsopplåsingen legger til ubegrenset antall lagrede skilt og egne maler, over hundre skrifttyper, tjue effekter som kontur, skygge, glød, blink, puls, bølge, skrivemaskin og punktmatrise, de øvrige femtini ferdige malene fra seks hverdagssituasjoner, bevegelsene side, innglidning, fram og tilbake, pendel og drift, retning opp og ned, regnbue- og gradienttekst, resten av LED-rammene og fargene deres, bokstavavstand og gjentakelsesavstand, bakgrunn med foto og nordlys, bevegelse i takt med musikken, en nedtelling samt eksport til MP4 og GIF uten vannmerke. Alt kjører på enheten. Ingen konto, ingen sky, ingen reklame, ingen analyse, ingen sporing. Meldingene dine, skiltene dine og ethvert bilde du velger, blir på iPhonen din. Mikrofonen brukes bare mens bevegelse i takt er slått på, og lyd blir aldri tatt opp eller lagret. Femti språk, og malene er skrevet på nytt for hvert av dem i stedet for oversatt ord for ord. For iPhone og iPad, med egen layout stående, liggende og i Split View. Optimalisert for iPhone Duo.",
       "category": "utility",
       "category_label": "Mer",
       "purchase_model": "free_with_lifetime_unlock",
@@ -2489,7 +2489,7 @@
         "Ingen annonser",
         "Ingen sporing",
         "Privat / på enheten",
-        "App Store · 79,00 kr"
+        "App Store · 49,00 kr"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/no/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/snapport/decision/l/no/index.html",
@@ -2500,9 +2500,9 @@
       "app_store_url": "https://apps.apple.com/no/app/id6780575828?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "Last ned Snapport i App Store →",
       "storefront_facts": {
-        "price": "79",
+        "price": "49",
         "currency": "NOK",
-        "formatted_price": "79,00 kr"
+        "formatted_price": "49,00 kr"
       },
       "guide_cta_label": "Les hele veiledningen",
       "publisher_disclosure": "Guide skrevet av Lumi Studio, utvikleren av appen. Appnavn er varemerker som tilhører sine eiere og brukes bare til identifikasjon. Når det gjelder dokumenter, helse, skole og produktivitet, bør du sjekke de offisielle kravene der det er relevant.",
@@ -2521,7 +2521,7 @@
       "priority_rank": null,
       "priority_group": "baseline_coverage",
       "publisher_query": "Snapport Lite: Passfoto hjemme — Portretter i eksakt størrelse | iOS App",
-      "decision_context": "Trenger du et bilde i en bestemt størrelse? Snapport Lite beskjærer portrettet ditt nøyaktig til størrelsen du velger, rett på enheten din. Ta et nytt bilde eller velg et fra biblioteket, juster ansiktet etter hjelpelinjene, rydd opp i bakgrunnen og eksporter. Snapport Lite redigerer bare bildet ditt. Pass, visum og ID-kort utstedes utelukkende av myndigheten eller organisasjonen du søker hos. Prøv gratis, lås opp én gang - Alle størrelsesmaler og redigeringsverktøy er gratis å bruke. - Den første eksporten er inkludert. - Et engangskjøp låser opp ubegrensede eksporter. Ingen abonnement, ingen reklame, ingen sporing, ingen konto. Velg bildestørrelse - 35 innebygde maler for 28 land og regioner, blant annet 2×2 tommer, 35×45 mm, 33×48 mm og 50×70 mm, for bilder til pass- og visumsøknader, CV-er og mer. - Angi en egen størrelse i mm, tommer eller piksler, med valgfri DPI og bakgrunnsfarge. Juster ansiktet - Ansiktsgjenkjenning rett på enheten med hjelpelinjer for isse, øyelinje og hake. - Knip, dra og roter for å finjustere beskjæringen. Bakgrunn og finpuss - Behold den opprinnelige bakgrunnen eller bytt til hvit, lysegrå, blå, rød eller en valgfri farge, sammenlign før og etter og finjuster kantene. - Skånsomme justeringer av lysstyrke, kontrast, varme og skarphet gir et naturlig uttrykk. Eksporter og skriv ut - Eksporter som JPEG, PNG eller PDF. - Utskriftsark i 4×6 tommer, A4 eller Letter, med flere kopier per side og kuttelinjer. - Lagre i Bilder eller Filer, eller del. Personvern fra start - Bildene behandles på enheten og lastes aldri opp. - Fungerer uten nett. Den valgfrie sjekken av maloppdateringer laster bare ned en offentlig liste over størrelser og sender ingen personopplysninger. Greit å vite Kravene til bilder varierer mellom land, etater og søknadstyper. Snapport Lite tilbyr vanlige størrelser og hjelpelinjer; appen garanterer ikke godkjenning og er ikke tilknyttet noen myndighet. Sjekk de offisielle kravene før du sender inn et bilde. Tilgjengelig på 44 språk. Optimalisert for iPhone Duo.",
+      "decision_context": "Optimalisert for iPhone Duo. Appen er bygget med den nyeste SDK-en, fyller hele den indre skjermen og tilpasser oppsettet automatisk, både sammenbrettet og utbrettet. Trenger du et passfoto, et bilde til CV-en eller til en søknad? Snapport Lite beskjærer portrettet ditt til nøyaktig den størrelsen du velger: 35 innebygde maler eller din egen størrelse i mm, tommer eller piksler. Ansiktsgjenkjenning på enheten legger hjelpelinjer for isse, øyne og hake, og du kan bytte bakgrunn til hvit, lysegrå eller blå. Eksporter som JPEG, PNG eller PDF, eller skriv ut flere kopier på ett ark i 4×6 tommer, A4 eller Letter. Snapport Lite redigerer bare bildet ditt. Pass, visum og ID-kort utstedes utelukkende av myndigheten eller organisasjonen du søker hos. Prøv gratis, lås opp én gang - Alle størrelsesmaler og redigeringsverktøy er gratis å bruke. - Den første eksporten er inkludert. - Et engangskjøp låser opp ubegrensede eksporter. Ingen abonnement, ingen reklame, ingen sporing, ingen konto. Velg bildestørrelse - 35 innebygde maler for 28 land og regioner, blant annet 2×2 tommer, 35×45 mm, 33×48 mm og 50×70 mm, for bilder til pass- og visumsøknader, CV-er og mer. - Angi en egen størrelse i mm, tommer eller piksler, med valgfri DPI og bakgrunnsfarge. Juster ansiktet - Ansiktsgjenkjenning rett på enheten med hjelpelinjer for isse, øyelinje og hake. - Knip, dra og roter for å finjustere beskjæringen. Bakgrunn og finpuss - Behold den opprinnelige bakgrunnen eller bytt til hvit, lysegrå, blå, rød eller en valgfri farge, sammenlign før og etter og finjuster kantene. - Skånsomme justeringer av lysstyrke, kontrast, varme og skarphet gir et naturlig uttrykk. Eksporter og skriv ut - Eksporter som JPEG, PNG eller PDF. - Utskriftsark i 4×6 tommer, A4 eller Letter, med flere kopier per side og kuttelinjer. - Lagre i Bilder eller Filer, eller del. Personvern fra start - Bildene behandles på enheten og lastes aldri opp. - Fungerer uten nett. Den valgfrie sjekken av maloppdateringer laster bare ned en offentlig liste over størrelser og sender ingen personopplysninger. Greit å vite Kravene til bilder varierer mellom land, etater og søknadstyper. Snapport Lite tilbyr vanlige størrelser og hjelpelinjer; appen garanterer ikke godkjenning og er ikke tilknyttet noen myndighet. Sjekk de offisielle kravene før du sender inn et bilde. Tilgjengelig på 44 språk. Optimalisert for iPhone Duo.",
       "category": "photo-utility",
       "category_label": "Foto og verktøy",
       "purchase_model": "free_with_lifetime_unlock",
@@ -2909,7 +2909,7 @@
         "Ingen annonser",
         "Ingen sporing",
         "Privat / på enheten",
-        "App Store · 79,00 kr"
+        "App Store · 49,00 kr"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/no/answers/best-trip-itinerary-planner-app-for-iphone.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/tripbee/decision/l/no/index.html",
@@ -2920,9 +2920,9 @@
       "app_store_url": "https://apps.apple.com/no/app/id6787754435?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "Last ned TripBee Pro: Reiseplanlegger i App Store →",
       "storefront_facts": {
-        "price": "79",
+        "price": "49",
         "currency": "NOK",
-        "formatted_price": "79,00 kr"
+        "formatted_price": "49,00 kr"
       },
       "guide_cta_label": "Les hele veiledningen",
       "publisher_disclosure": "Guide skrevet av Lumi Studio, utvikleren av appen. Appnavn er varemerker som tilhører sine eiere og brukes bare til identifikasjon. Når det gjelder dokumenter, helse, skole og produktivitet, bør du sjekke de offisielle kravene der det er relevant.",
@@ -3202,7 +3202,7 @@
         "Privat / på enheten",
         "Widget",
         "Apple Watch",
-        "App Store · 99,00 kr"
+        "App Store · 59,00 kr"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/no/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/wordmate/decision/l/no/index.html",
@@ -3213,9 +3213,9 @@
       "app_store_url": "https://apps.apple.com/no/app/id6789917808?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "Få Wordmate: Learn 44 Languages på App Store →",
       "storefront_facts": {
-        "price": "99",
+        "price": "59",
         "currency": "NOK",
-        "formatted_price": "99,00 kr"
+        "formatted_price": "59,00 kr"
       },
       "guide_cta_label": "Les hele veiledningen",
       "publisher_disclosure": "Guide skrevet av Lumi Studio, utvikleren av appen. Appnavn er varemerker som tilhører sine eiere og brukes bare til identifikasjon. Når det gjelder dokumenter, helse, skole og produktivitet, bør du sjekke de offisielle kravene der det er relevant.",
@@ -3264,7 +3264,7 @@
         "Ingen annonser",
         "Ingen sporing",
         "Privat / på enheten",
-        "App Store · 59,00 kr"
+        "App Store · 39,00 kr"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/no/zipbox.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/zipbox/decision/l/no/index.html",
@@ -3275,9 +3275,9 @@
       "app_store_url": "https://apps.apple.com/no/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "Last ned Zipbox: åpne RAR, ZIP og 7z fra App Store",
       "storefront_facts": {
-        "price": "59",
+        "price": "39",
         "currency": "NOK",
-        "formatted_price": "59,00 kr"
+        "formatted_price": "39,00 kr"
       },
       "guide_cta_label": "Les hele veiledningen",
       "publisher_disclosure": "Dette er førsteparts materiale publisert av Lumi Studio, utvikleren av hver oppført app.",

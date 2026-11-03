@@ -2,7 +2,7 @@
 title: "beste pasfoto-app voor baby's en peuters thuis"
 lang: "nl-NL"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapport/decision/l/nl-NL/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -19,7 +19,7 @@ Voor een pasfoto van een baby mag er niemand anders op de foto staan en moet de 
 - Geen advertenties
 - Geen tracking
 - Privé / op apparaat
-- App Store · € 6,99
+- App Store · € 3,90
 
 [Download Snapport in de App Store →](https://apps.apple.com/nl/app/id6780575828?pt=118326163&ct=geo_pick&mt=8)
 

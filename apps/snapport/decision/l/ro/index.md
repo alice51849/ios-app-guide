@@ -2,7 +2,7 @@
 title: "cea mai bună aplicație pentru fotografii de pașaport pentru bebeluși și copii mici acasă"
 lang: "ro"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapport/decision/l/ro/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -19,7 +19,7 @@ Pentru fotografia de pașaport a bebelușului, nimeni altcineva nu poate fi în 
 - Fără reclame
 - Fără urmărire
 - Privat / pe dispozitiv
-- App Store · 29,99 lei
+- App Store · 17,99 lei
 
 [Descarcă Snapport din App Store →](https://apps.apple.com/ro/app/id6780575828?pt=118326163&ct=geo_pick&mt=8)
 

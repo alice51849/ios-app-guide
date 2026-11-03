@@ -2,7 +2,7 @@
 title: "GBAGo: ദൃശ്യ സേവുകൾ — റിക്കവറി മാപ്പ് · സ്നാപ്ഷോട്ട് | iOS App"
 lang: "ml-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gbago/decision/l/ml-IN/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6804564400"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,7 +16,7 @@ iPhone Duo ഉപകരണത്തിനായി ഒപ്റ്റിമൈ�
 - കൂടുതൽ
 - പണം നൽകേണ്ട ഡൗൺലോഡ്
 - ഓഫ്‌ലൈൻ
-- App Store · ₹ 999
+- App Store · ₹ 500
 
 [App Store-ൽ നിന്ന് GBAGo: ദൃശ്യ സേവുകൾ നേടൂ](https://apps.apple.com/in/app/id6804564400?pt=118326163&ct=geo_pick&mt=8)
 

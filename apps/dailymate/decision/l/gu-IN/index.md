@@ -2,7 +2,7 @@
 title: "એપલ વોચ સાથે મુસાફરો માટે શ્રેષ્ઠ વ્યવહારુ ભાષા વાક્ય એપ"
 lang: "gu-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymate/decision/l/gu-IN/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6790418321"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - ચુકવેલ ડાઉનલોડ
 - વિજેટ
 - Apple Watch
-- App Store · ₹ 1,199
+- App Store · ₹ 699
 
 [App Store પર ડેઇલીમેટ મેળવો →](https://apps.apple.com/in/app/id6790418321?pt=118326163&ct=geo_pick&mt=8)
 

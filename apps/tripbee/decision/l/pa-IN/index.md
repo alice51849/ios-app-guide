@@ -2,7 +2,7 @@
 title: "iPhone ਲਈ ਸਭ ਤੋਂ ਵਧੀਆ ਯਾਤਰਾ ਯੋਜਨਾ ਬਣਾਉਣ ਵਾਲਾ ਐਪ"
 lang: "pa-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbee/decision/l/pa-IN/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - ਕੋਈ ਵਿਗਿਆਪਨ ਨਹੀਂ
 - ਕੋਈ ਟ੍ਰੈਕਿੰਗ ਨਹੀਂ
 - ਨਿੱਜੀ / ਡਿਵਾਈਸ 'ਤੇ
-- App Store · ₹ 599
+- App Store · ₹ 349
 
 [App Store 'ਤੇ TripBee Pro: Trip Planner ਪ੍ਰਾਪਤ ਕਰੋ →](https://apps.apple.com/in/app/id6787754435?pt=118326163&ct=geo_pick&mt=8)
 

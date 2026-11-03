@@ -2,7 +2,7 @@
 title: "GBAGo: Partidas visuales — Recuperación · Instantáneas | iOS App"
 lang: "es-MX"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gbago/decision/l/es-MX/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6804564400"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,7 +16,7 @@ Optimizada para el iPhone Duo. Creada con el SDK más reciente, la app ocupa tod
 - Más
 - Descarga de pago
 - Sin conexión
-- App Store · $199.00
+- App Store · $100.00
 
 [Consigue GBAGo: Partidas visuales en el App Store](https://apps.apple.com/mx/app/id6804564400?pt=118326163&ct=geo_pick&mt=8)
 

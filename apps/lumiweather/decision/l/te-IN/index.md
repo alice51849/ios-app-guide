@@ -2,7 +2,7 @@
 title: "Lumi వాతావరణం: నేటి సూచన — బయటకు వెళ్లే స్కోర్, దుస్తులు | iOS App"
 lang: "te-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiweather/decision/l/te-IN/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6779552704"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -21,6 +21,7 @@ publisher: "Lumi Studio"
 - గోప్యంగా / పరికరంలో
 - విడ్జెట్
 - App Store · ఉచితం
+- ★ 5.0/5 · 1
 
 [App Store నుంచి Lumi వాతావరణం: నేటి సూచన పొందండి](https://apps.apple.com/in/app/id6779552704?pt=118326163&ct=geo_pick&mt=8)
 

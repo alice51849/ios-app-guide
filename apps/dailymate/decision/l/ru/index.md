@@ -2,7 +2,7 @@
 title: "лучшее практическое приложение с фразами для путешественников с Apple Watch"
 lang: "ru"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymate/decision/l/ru/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6790418321"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - Платное скачивание
 - Виджет
 - Apple Watch
-- App Store · 999,00 ₽
+- App Store · 599,00 ₽
 
 [Скачайте DailyMate в App Store →](https://apps.apple.com/ru/app/id6790418321?pt=118326163&ct=geo_pick&mt=8)
 

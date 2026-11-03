@@ -2,7 +2,7 @@
 title: "Zipbox: RAR, ZIP, 7z کھولیں — اشتہار کے بغیر فائل نکالیں | iOS App"
 lang: "ur-PK"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/zipbox/decision/l/ur-PK/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6806776579"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -20,7 +20,7 @@ iPhone Duo ڈیوائس کے لیے آپٹمائزڈ۔ جدید ترین SDK س�
 - کوئی اشتہار نہیں
 - کوئی نگرانی نہیں
 - نجی / آلہ پر
-- App Store · Rs 1,300.00
+- App Store · Rs 700.00
 
 [App Store سے Zipbox: RAR, ZIP, 7z کھولیں حاصل کریں](https://apps.apple.com/pk/app/id6806776579?pt=118326163&ct=geo_pick&mt=8)
 

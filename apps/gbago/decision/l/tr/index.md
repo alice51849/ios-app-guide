@@ -2,7 +2,7 @@
 title: "GBAGo: Görsel kayıtlar — Kurtarma · Anlık Görüntüler | iOS App"
 lang: "tr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gbago/decision/l/tr/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6804564400"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,7 +16,7 @@ iPhone Duo için optimize edildi. En yeni SDK ile geliştirilen uygulama tüm i�
 - Daha fazla
 - Ücretli indirme
 - Çevrimdışı
-- App Store · ₺499,99
+- App Store · ₺250,00
 
 [GBAGo: Görsel kayıtlar uygulamasını App Store'dan al](https://apps.apple.com/tr/app/id6804564400?pt=118326163&ct=geo_pick&mt=8)
 

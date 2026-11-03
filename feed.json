@@ -1,7 +1,7 @@
 {
  "schema": "lumi.social-feed/v1",
  "date": "2026-11-03",
- "generated_at": "2026-11-03T08:38:32Z",
+ "generated_at": "2026-11-03T16:03:12Z",
  "items": {
   "bluesky": [
    {
@@ -141,48 +141,69 @@
    },
    {
     "kind": "clip",
-    "key": "snapportlite_b/en",
-    "locale": "en",
-    "app": "snapportlite_b",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/gqji55.mp4",
-    "hook": "Works offline",
-    "name": "Snapport Lite: Take ID Photos",
-    "title": "Works offline | Crop Portraits to Exact Size | Snapport Lite",
+    "key": "shotinbox/ja",
+    "locale": "ja",
+    "app": "shotinbox",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/eeajjx.mp4",
+    "hook": "用が済んだら すっきり削除",
+    "name": "ShotInbox AI：スクショ整理",
+    "title": "用が済んだら すっきり削除 | スクショ分類・OCR検索・タイムライン | ShotInbox",
     "tags": [
-     "#Background",
-     "#White",
-     "#Remover",
-     "#Print",
-     "#Pixel",
-     "#SnapportLite"
+     "#スクショ整理",
+     "#スクリーンショット",
+     "#写真",
+     "#整理",
+     "#アルバム",
+     "#ShotInbox"
     ],
-    "caption": "Works offline\n28 countries and regions\nCrop Portraits to Exact Size\nSnapport Lite: Take ID Photos\nSearch “Snapport Lite” on the App Store\nAlso on Google Play\n\n#Background #White #SnapportLite",
-    "button": "Get it on the App Store",
+    "caption": "用が済んだら すっきり削除\nスクショ内の文字で 検索できる\nスクショ分類・OCR検索・タイムライン\nShotInbox AI：スクショ整理\nApp Storeで「ShotInbox」を検索\nAndroidはGoogle Playで\n\n#スクショ整理 #スクリーンショット #ShotInbox",
+    "button": "App Storeで入手",
     "variant": "c",
-    "alt": "Snapport Lite: Take ID Photos — Works offline — 28 countries and regions — Crop Portraits to Exact Size",
-    "store": "https://apps.apple.com/us/app/id6792856304?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.SnapportLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dsnapportlite",
+    "alt": "ShotInbox AI：スクショ整理 — 用が済んだら すっきり削除 — スクショ内の文字で 検索できる — スクショ分類・OCR検索・タイムライン",
+    "store": "https://apps.apple.com/jp/app/id6802166527?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ShotInbox&referrer=utm_source%3Dsocial%26utm_campaign%3Dshotinbox",
     "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6792856304?action=write-review"
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6802166527?action=write-review"
     },
     "keywords": [
-     "passport photo",
-     "visa photo",
-     "headshot",
-     "background",
-     "white",
-     "remover"
+     "スクリーンショット",
+     "写真",
+     "整理",
+     "アルバム",
+     "重複",
+     "類似"
     ],
-    "keyline": "Crop Portraits to Exact Size",
+    "keyline": "スクショ分類・OCR検索・タイムライン",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "ca8589d8487df8b8",
+     "board": "f6c970e3cb08d22c",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "card/gsat2027/2026-11-03",
+    "locale": "zh-Hant",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/countdown-cards/card-20261103.jpg",
+    "caption": "116 學測 倒數 80 天\n一起撐過去\n\nApp Store／Google Play 搜尋「CountDaysNow」\n\n#倒數日 #倒數計時 #紀念日",
+    "title": "116 學測 倒數 80 天",
+    "alt": "CountDaysNow — 116 學測 倒數 80 天 — 一起撐過去 — App Store／Google Play 搜尋「CountDaysNow」 — 倒數日 · 倒數計時 · 紀念日",
+    "name": "CountDaysNow",
+    "hook": "116 學測 倒數 80 天",
+    "tags": [
+     "#倒數日",
+     "#倒數計時",
+     "#紀念日",
+     "#生日",
+     "#還有幾天"
+    ],
+    "button": "在 App Store 下載",
+    "store": "https://apps.apple.com/tw/app/id6807079789?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow"
    },
    {
     "kind": "card",
@@ -2050,48 +2071,69 @@
    },
    {
     "kind": "clip",
-    "key": "snapportlite_b/en",
-    "locale": "en",
-    "app": "snapportlite_b",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/gqji55.mp4",
-    "hook": "Works offline",
-    "name": "Snapport Lite: Take ID Photos",
-    "title": "Works offline | Crop Portraits to Exact Size | Snapport Lite",
+    "key": "shotinbox/ja",
+    "locale": "ja",
+    "app": "shotinbox",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/eeajjx.mp4",
+    "hook": "用が済んだら すっきり削除",
+    "name": "ShotInbox AI：スクショ整理",
+    "title": "用が済んだら すっきり削除 | スクショ分類・OCR検索・タイムライン | ShotInbox",
     "tags": [
-     "#Background",
-     "#White",
-     "#Remover",
-     "#Print",
-     "#Pixel",
-     "#SnapportLite"
+     "#スクショ整理",
+     "#スクリーンショット",
+     "#写真",
+     "#整理",
+     "#アルバム",
+     "#ShotInbox"
     ],
-    "caption": "Works offline\n28 countries and regions\nCrop Portraits to Exact Size\nSnapport Lite: Take ID Photos\nSearch “Snapport Lite” on the App Store\nAlso on Google Play\n\n#Background #White #Remover #Print #SnapportLite",
-    "button": "Get it on the App Store",
+    "caption": "用が済んだら すっきり削除\nスクショ内の文字で 検索できる\nスクショ分類・OCR検索・タイムライン\nShotInbox AI：スクショ整理\nApp Storeで「ShotInbox」を検索\nAndroidはGoogle Playで\n\n#スクショ整理 #スクリーンショット #写真 #整理 #ShotInbox",
+    "button": "App Storeで入手",
     "variant": "c",
-    "alt": "Snapport Lite: Take ID Photos — Works offline — 28 countries and regions — Crop Portraits to Exact Size",
-    "store": "https://apps.apple.com/us/app/id6792856304?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.SnapportLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dsnapportlite",
+    "alt": "ShotInbox AI：スクショ整理 — 用が済んだら すっきり削除 — スクショ内の文字で 検索できる — スクショ分類・OCR検索・タイムライン",
+    "store": "https://apps.apple.com/jp/app/id6802166527?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ShotInbox&referrer=utm_source%3Dsocial%26utm_campaign%3Dshotinbox",
     "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6792856304?action=write-review"
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6802166527?action=write-review"
     },
     "keywords": [
-     "passport photo",
-     "visa photo",
-     "headshot",
-     "background",
-     "white",
-     "remover"
+     "スクリーンショット",
+     "写真",
+     "整理",
+     "アルバム",
+     "重複",
+     "類似"
     ],
-    "keyline": "Crop Portraits to Exact Size",
+    "keyline": "スクショ分類・OCR検索・タイムライン",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "ca8589d8487df8b8",
+     "board": "f6c970e3cb08d22c",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "card/gsat2027/2026-11-03",
+    "locale": "zh-Hant",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/countdown-cards/card-20261103.jpg",
+    "caption": "116 學測 倒數 80 天\n一起撐過去\n\nApp Store／Google Play 搜尋「CountDaysNow」\n\n#倒數日 #倒數計時 #紀念日 #生日 #還有幾天",
+    "title": "116 學測 倒數 80 天",
+    "alt": "CountDaysNow — 116 學測 倒數 80 天 — 一起撐過去 — App Store／Google Play 搜尋「CountDaysNow」 — 倒數日 · 倒數計時 · 紀念日",
+    "name": "CountDaysNow",
+    "hook": "116 學測 倒數 80 天",
+    "tags": [
+     "#倒數日",
+     "#倒數計時",
+     "#紀念日",
+     "#生日",
+     "#還有幾天"
+    ],
+    "button": "在 App Store 下載",
+    "store": "https://apps.apple.com/tw/app/id6807079789?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow"
    },
    {
     "kind": "card",
@@ -2297,61 +2339,59 @@
    },
    {
     "kind": "clip",
-    "key": "snapportlite_b/en",
-    "locale": "en",
-    "app": "snapportlite_b",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/gqji55.mp4",
-    "hook": "Works offline",
-    "name": "Snapport Lite: Take ID Photos",
-    "title": "Works offline | Crop Portraits to Exact Size | Snapport Lite",
+    "key": "shotinbox/ja",
+    "locale": "ja",
+    "app": "shotinbox",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/eeajjx.mp4",
+    "hook": "スクショ内の文字で 検索できる",
+    "name": "ShotInbox AI：スクショ整理",
+    "title": "スクショ内の文字で 検索できる | スクショ分類・OCR検索・タイムライン | ShotInbox",
     "tags": [
-     "#Background",
-     "#White",
-     "#Remover",
-     "#Print",
-     "#Pixel",
-     "#SnapportLite"
+     "#スクショ整理",
+     "#スクリーンショット",
+     "#写真",
+     "#整理",
+     "#アルバム",
+     "#ShotInbox"
     ],
-    "caption": "Works offline\n28 countries and regions\nCrop Portraits to Exact Size\nSnapport Lite: Take ID Photos\nSearch “Snapport Lite” on the App Store\nAlso on Google Play\n\n#Background #White #Remover #Print #SnapportLite",
-    "button": "Get it on the App Store",
-    "variant": "c",
-    "alt": "Snapport Lite: Take ID Photos — Works offline — 28 countries and regions — Crop Portraits to Exact Size",
-    "store": "https://apps.apple.com/us/app/id6792856304?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.SnapportLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dsnapportlite",
+    "caption": "スクショ内の文字で 検索できる\nレシートもチケットも きっちり分類\nスクショ分類・OCR検索・タイムライン\nShotInbox AI：スクショ整理\nApp Storeで「ShotInbox」を検索\nAndroidはGoogle Playで\n\n#スクショ整理 #スクリーンショット #写真 #整理 #ShotInbox",
+    "button": "App Storeで入手",
+    "variant": "b",
+    "alt": "ShotInbox AI：スクショ整理 — スクショ内の文字で 検索できる — レシートもチケットも きっちり分類 — スクショ分類・OCR検索・タイムライン",
+    "store": "https://apps.apple.com/jp/app/id6802166527?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ShotInbox&referrer=utm_source%3Dsocial%26utm_campaign%3Dshotinbox",
     "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6792856304?action=write-review"
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6802166527?action=write-review"
     },
     "keywords": [
-     "passport photo",
-     "visa photo",
-     "headshot",
-     "background",
-     "white",
-     "remover"
+     "スクリーンショット",
+     "写真",
+     "整理",
+     "アルバム",
+     "重複",
+     "類似"
     ],
-    "keyline": "Crop Portraits to Exact Size",
+    "keyline": "スクショ分類・OCR検索・タイムライン",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "ca8589d8487df8b8",
+     "board": "f6c970e3cb08d22c",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "youtube": {
-     "title": "Works offline | Snapport Lite #Shorts",
-     "description": "Works offline\n28 countries and regions\nCrop Portraits to Exact Size\n\nSnapport Lite: Take ID Photos\nApp Store: https://apps.apple.com/us/app/id6792856304?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.SnapportLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dsnapportlite\nAlready using this app? Rate or review it on the App Store\nhttps://apps.apple.com/app/id6792856304?action=write-review\n\npassport photo · visa photo · headshot · background · white · remover\n\n#Shorts #Background #SnapportLite",
+     "title": "スクショ内の文字で 検索できる | ShotInbox #Shorts",
+     "description": "スクショ内の文字で 検索できる\nレシートもチケットも きっちり分類\nスクショ分類・OCR検索・タイムライン\n\nShotInbox AI：スクショ整理\nApp Store: https://apps.apple.com/jp/app/id6802166527?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ShotInbox&referrer=utm_source%3Dsocial%26utm_campaign%3Dshotinbox\nこのアプリをお使いですか？App Store で評価・レビューできます\nhttps://apps.apple.com/app/id6802166527?action=write-review\n\nスクリーンショット · 写真 · 整理 · アルバム · 重複 · 類似\n\n#Shorts #スクショ整理 #ShotInbox",
      "tags": [
-      "passport photo",
-      "visa photo",
-      "headshot",
-      "background",
-      "white",
-      "remover",
-      "Print",
-      "Pixel",
-      "SnapportLite",
-      "Snapport Lite"
+      "スクリーンショット",
+      "写真",
+      "整理",
+      "アルバム",
+      "重複",
+      "類似",
+      "スクショ整理",
+      "ShotInbox"
      ]
     },
     "slot": 15
@@ -2507,52 +2547,77 @@
    },
    {
     "kind": "clip",
-    "key": "snapportlite_b/en",
-    "locale": "en",
-    "app": "snapportlite_b",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/gqji55.mp4",
-    "hook": "Photo in an exact size?",
-    "name": "Snapport Lite: Take ID Photos",
-    "title": "Photo in an exact size? | Crop Portraits to Exact Size | Snapport Lite",
+    "key": "shotinbox/ja",
+    "locale": "ja",
+    "app": "shotinbox",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/eeajjx.mp4",
+    "hook": "あのスクショ、どこいった？",
+    "name": "ShotInbox AI：スクショ整理",
+    "title": "あのスクショ、どこいった？ | スクショ分類・OCR検索・タイムライン | ShotInbox",
     "tags": [
-     "#Background",
-     "#White",
-     "#Remover",
-     "#Print",
-     "#Pixel",
-     "#SnapportLite"
+     "#スクショ整理",
+     "#スクリーンショット",
+     "#写真",
+     "#整理",
+     "#アルバム",
+     "#ShotInbox"
     ],
-    "caption": "Photo in an exact size?\n28 countries and regions\nCrop Portraits to Exact Size\nSnapport Lite: Take ID Photos\nSearch “Snapport Lite” on the App Store\nAlso on Google Play\n\n#Background #White #Remover #Print #SnapportLite",
-    "button": "Get it on the App Store",
+    "caption": "あのスクショ、どこいった？\nスクショ内の文字で 検索できる\nスクショ分類・OCR検索・タイムライン\nShotInbox AI：スクショ整理\nApp Storeで「ShotInbox」を検索\nAndroidはGoogle Playで\n\n#スクショ整理 #スクリーンショット #写真 #整理 #ShotInbox",
+    "button": "App Storeで入手",
     "variant": "a",
-    "alt": "Snapport Lite: Take ID Photos — Photo in an exact size? — 28 countries and regions — Crop Portraits to Exact Size",
-    "store": "https://apps.apple.com/us/app/id6792856304?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.SnapportLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dsnapportlite",
+    "alt": "ShotInbox AI：スクショ整理 — あのスクショ、どこいった？ — スクショ内の文字で 検索できる — スクショ分類・OCR検索・タイムライン",
+    "store": "https://apps.apple.com/jp/app/id6802166527?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ShotInbox&referrer=utm_source%3Dsocial%26utm_campaign%3Dshotinbox",
     "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6792856304?action=write-review"
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6802166527?action=write-review"
     },
     "keywords": [
-     "passport photo",
-     "visa photo",
-     "headshot",
-     "background",
-     "white",
-     "remover"
+     "スクリーンショット",
+     "写真",
+     "整理",
+     "アルバム",
+     "重複",
+     "類似"
     ],
-    "keyline": "Crop Portraits to Exact Size",
+    "keyline": "スクショ分類・OCR検索・タイムライン",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "ca8589d8487df8b8",
+     "board": "f6c970e3cb08d22c",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "Photo in an exact size?\n28 countries and regions\nCrop Portraits to Exact Size\nSnapport Lite: Take ID Photos\nSearch “Snapport Lite” on the App Store\nAlso on Google Play\n\n#Background #White #Remover #Print #SnapportLite\n\nGet it on the App Store: https://apps.apple.com/us/app/id6792856304?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.SnapportLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dsnapportlite",
-     "link": "https://apps.apple.com/us/app/id6792856304?pt=118326163&ct=social&mt=8"
+     "description": "あのスクショ、どこいった？\nスクショ内の文字で 検索できる\nスクショ分類・OCR検索・タイムライン\nShotInbox AI：スクショ整理\nApp Storeで「ShotInbox」を検索\nAndroidはGoogle Playで\n\n#スクショ整理 #スクリーンショット #写真 #整理 #ShotInbox\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6802166527?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ShotInbox&referrer=utm_source%3Dsocial%26utm_campaign%3Dshotinbox",
+     "link": "https://apps.apple.com/jp/app/id6802166527?pt=118326163&ct=social&mt=8"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "card/gsat2027/2026-11-03",
+    "locale": "zh-Hant",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/countdown-cards/card-20261103.jpg",
+    "caption": "116 學測 倒數 80 天\n一起撐過去\n\nApp Store／Google Play 搜尋「CountDaysNow」\n\n#倒數日 #倒數計時 #紀念日 #生日 #還有幾天",
+    "title": "116 學測 倒數 80 天",
+    "alt": "CountDaysNow — 116 學測 倒數 80 天 — 一起撐過去 — App Store／Google Play 搜尋「CountDaysNow」 — 倒數日 · 倒數計時 · 紀念日",
+    "name": "CountDaysNow",
+    "hook": "116 學測 倒數 80 天",
+    "tags": [
+     "#倒數日",
+     "#倒數計時",
+     "#紀念日",
+     "#生日",
+     "#還有幾天"
+    ],
+    "button": "在 App Store 下載",
+    "store": "https://apps.apple.com/tw/app/id6807079789?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
+    "pinterest": {
+     "description": "116 學測 倒數 80 天\n一起撐過去\n\nApp Store／Google Play 搜尋「CountDaysNow」\n\n#倒數日 #倒數計時 #紀念日 #生日 #還有幾天\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6807079789?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
+     "link": "https://apps.apple.com/tw/app/id6807079789?pt=118326163&ct=social&mt=8"
+    }
    },
    {
     "kind": "card",
@@ -7022,49 +7087,49 @@
    },
    {
     "kind": "clip",
-    "key": "snapportlite_b/en",
-    "locale": "en",
-    "app": "snapportlite_b",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/gqji55.mp4",
-    "hook": "Works offline",
-    "name": "Snapport Lite: Take ID Photos",
-    "title": "Works offline | Crop Portraits to Exact Size | Snapport Lite",
+    "key": "shotinbox/ja",
+    "locale": "ja",
+    "app": "shotinbox",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/eeajjx.mp4",
+    "hook": "用が済んだら すっきり削除",
+    "name": "ShotInbox AI：スクショ整理",
+    "title": "用が済んだら すっきり削除 | スクショ分類・OCR検索・タイムライン | ShotInbox",
     "tags": [
-     "#Background",
-     "#White",
-     "#Remover",
-     "#Print",
-     "#Pixel",
-     "#SnapportLite"
+     "#スクショ整理",
+     "#スクリーンショット",
+     "#写真",
+     "#整理",
+     "#アルバム",
+     "#ShotInbox"
     ],
-    "caption": "Works offline\n28 countries and regions\nCrop Portraits to Exact Size\nSnapport Lite: Take ID Photos\nSearch “Snapport Lite” on the App Store\nAlso on Google Play\n\n#Background #White #Remover #Print #SnapportLite",
-    "button": "Get it on the App Store",
+    "caption": "用が済んだら すっきり削除\nスクショ内の文字で 検索できる\nスクショ分類・OCR検索・タイムライン\nShotInbox AI：スクショ整理\nApp Storeで「ShotInbox」を検索\nAndroidはGoogle Playで\n\n#スクショ整理 #スクリーンショット #写真 #整理 #ShotInbox",
+    "button": "App Storeで入手",
     "variant": "c",
-    "alt": "Snapport Lite: Take ID Photos — Works offline — 28 countries and regions — Crop Portraits to Exact Size",
-    "store": "https://apps.apple.com/us/app/id6792856304?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.SnapportLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dsnapportlite",
+    "alt": "ShotInbox AI：スクショ整理 — 用が済んだら すっきり削除 — スクショ内の文字で 検索できる — スクショ分類・OCR検索・タイムライン",
+    "store": "https://apps.apple.com/jp/app/id6802166527?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ShotInbox&referrer=utm_source%3Dsocial%26utm_campaign%3Dshotinbox",
     "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6792856304?action=write-review"
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6802166527?action=write-review"
     },
     "keywords": [
-     "passport photo",
-     "visa photo",
-     "headshot",
-     "background",
-     "white",
-     "remover"
+     "スクリーンショット",
+     "写真",
+     "整理",
+     "アルバム",
+     "重複",
+     "類似"
     ],
-    "keyline": "Crop Portraits to Exact Size",
+    "keyline": "スクショ分類・OCR検索・タイムライン",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "ca8589d8487df8b8",
+     "board": "f6c970e3cb08d22c",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "Works offline\n28 countries and regions\nCrop Portraits to Exact Size\nSnapport Lite: Take ID Photos\nSearch “Snapport Lite” on the App Store\nAlso on Google Play\n\n#Background #White #Remover #Print #SnapportLite\n\nGet it on the App Store: https://apps.apple.com/us/app/id6792856304?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.SnapportLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dsnapportlite"
+     "caption": "用が済んだら すっきり削除\nスクショ内の文字で 検索できる\nスクショ分類・OCR検索・タイムライン\nShotInbox AI：スクショ整理\nApp Storeで「ShotInbox」を検索\nAndroidはGoogle Playで\n\n#スクショ整理 #スクリーンショット #写真 #整理 #ShotInbox\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6802166527?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ShotInbox&referrer=utm_source%3Dsocial%26utm_campaign%3Dshotinbox"
     },
     "slot": 15
    }

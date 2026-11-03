@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T05:49:23Z",
+  "updated_at": "2026-11-03T06:30:45Z",
   "note": "Insights of our own IG / Threads posts by .github/scripts/post_performance.py. score = views + 3*likes + 5*replies + 8*(saves+shares+reposts). boost = best apps, read by 00_GrowthEngine shorts/scripts/schedule_posts.py.",
   "sources": {
     "instagram": "ok: 38 posts",
@@ -8,9 +8,9 @@
   "boost": [
     "cvdesk",
     "mochi_suneung",
+    "gmoney",
     "wifiaidlite",
-    "duowallpaperstudio",
-    "gmoney"
+    "duowallpaperstudio"
   ],
   "demote": [
     "lumimission",
@@ -101,20 +101,21 @@
       "en": {
         "hour": 8,
         "avg_views": 12.7,
-        "posts": 15,
+        "posts": 16,
         "hours": {
           "1": 9.3,
+          "2": 2.0,
           "8": 12.7,
-          "13": 10.5,
+          "13": 11.0,
           "16": 8.0
         }
       },
       "zh-Hant": {
         "hour": 3,
-        "avg_views": 256.5,
+        "avg_views": 280.5,
         "posts": 13,
         "hours": {
-          "3": 256.5,
+          "3": 280.5,
           "6": 30.5,
           "13": 82.5,
           "16": 10.0,
@@ -128,11 +129,11 @@
     "apps": [
       {
         "key": "cvdesk",
-        "posts": 1,
-        "views": 351,
-        "engagement": 2,
-        "score": 359,
-        "avg_score": 359.0
+        "posts": 2,
+        "views": 357,
+        "engagement": 3,
+        "score": 370,
+        "avg_score": 185.0
       },
       {
         "key": "mochi_suneung",
@@ -141,6 +142,14 @@
         "engagement": 0,
         "score": 165,
         "avg_score": 165.0
+      },
+      {
+        "key": "gmoney",
+        "posts": 2,
+        "views": 205,
+        "engagement": 1,
+        "score": 210,
+        "avg_score": 105.0
       },
       {
         "key": "wifiaidlite",
@@ -157,14 +166,6 @@
         "engagement": 2,
         "score": 84,
         "avg_score": 84.0
-      },
-      {
-        "key": "gmoney",
-        "posts": 2,
-        "views": 162,
-        "engagement": 1,
-        "score": 167,
-        "avg_score": 83.5
       },
       {
         "key": "onepageppt",
@@ -207,6 +208,14 @@
         "avg_score": 30.0
       },
       {
+        "key": "mochi_b",
+        "posts": 4,
+        "views": 90,
+        "engagement": 0,
+        "score": 90,
+        "avg_score": 22.5
+      },
+      {
         "key": "notesstudio100",
         "posts": 1,
         "views": 22,
@@ -223,11 +232,11 @@
         "avg_score": 20.7
       },
       {
-        "key": "mochi_b",
-        "posts": 4,
-        "views": 80,
-        "engagement": 0,
-        "score": 80,
+        "key": "countdaysnow",
+        "posts": 1,
+        "views": 15,
+        "engagement": 1,
+        "score": 20,
         "avg_score": 20.0
       },
       {
@@ -237,14 +246,6 @@
         "engagement": 2,
         "score": 77,
         "avg_score": 19.2
-      },
-      {
-        "key": "countdaysnow",
-        "posts": 1,
-        "views": 14,
-        "engagement": 1,
-        "score": 19,
-        "avg_score": 19.0
       },
       {
         "key": "mochi",
@@ -491,18 +492,26 @@
       {
         "key": "zh-Hant",
         "posts": 41,
-        "views": 1098,
+        "views": 1146,
         "engagement": 14,
-        "score": 1162,
-        "avg_score": 28.3
+        "score": 1210,
+        "avg_score": 29.5
       },
       {
         "key": "en",
-        "posts": 33,
-        "views": 321,
-        "engagement": 8,
-        "score": 359,
-        "avg_score": 10.9
+        "posts": 34,
+        "views": 323,
+        "engagement": 9,
+        "score": 366,
+        "avg_score": 10.8
+      },
+      {
+        "key": "de",
+        "posts": 5,
+        "views": 35,
+        "engagement": 1,
+        "score": 38,
+        "avg_score": 7.6
       },
       {
         "key": "cs",
@@ -519,14 +528,6 @@
         "engagement": 0,
         "score": 26,
         "avg_score": 6.5
-      },
-      {
-        "key": "de",
-        "posts": 5,
-        "views": 25,
-        "engagement": 1,
-        "score": 28,
-        "avg_score": 5.6
       }
     ],
     "hooks": [
@@ -535,20 +536,20 @@
         "locale": "zh-Hant",
         "hook": "我是獨立開發者。看過太多人履歷投了幾十家沒回音，問題不在經歷，而是履歷在 ATS（應徵者追蹤系統）那關就被程式讀亂了：兩",
         "posts": 1,
-        "views": 351,
+        "views": 356,
         "engagement": 2,
-        "score": 359,
-        "avg_score": 359.0
+        "score": 364,
+        "avg_score": 364.0
       },
       {
         "app": "gmoney",
         "locale": "zh-Hant",
         "hook": "我是獨立開發者。每次出國回來都被問「這趟花了多少？」，我以前答不出來：日圓付錢、台幣想預算，兩邊從來沒對起來。所以做了 ",
         "posts": 1,
-        "views": 162,
+        "views": 205,
         "engagement": 1,
-        "score": 167,
-        "avg_score": 167.0
+        "score": 210,
+        "avg_score": 210.0
       },
       {
         "app": "mochi_suneung",
@@ -691,6 +692,16 @@
         "avg_score": 34.5
       },
       {
+        "app": "mochi_b",
+        "locale": "de",
+        "hook": "Studium, Arbeit, Einkauf an einem Ort",
+        "posts": 1,
+        "views": 32,
+        "engagement": 0,
+        "score": 32,
+        "avg_score": 32.0
+      },
+      {
         "app": "lumiweather",
         "locale": "zh-Hant",
         "hook": "穿什麼、帶什麼 直接告訴你",
@@ -771,24 +782,14 @@
         "avg_score": 22.0
       },
       {
-        "app": "mochi_b",
-        "locale": "de",
-        "hook": "Studium, Arbeit, Einkauf an einem Ort",
-        "posts": 1,
-        "views": 22,
-        "engagement": 0,
-        "score": 22,
-        "avg_score": 22.0
-      },
-      {
         "app": "countdaysnow",
         "locale": "en",
         "hook": "Plan backwards from the dates that matter.",
         "posts": 1,
-        "views": 14,
+        "views": 15,
         "engagement": 1,
-        "score": 19,
-        "avg_score": 19.0
+        "score": 20,
+        "avg_score": 20.0
       },
       {
         "app": "lumibopomofo_b",
@@ -1057,6 +1058,16 @@
         "posts": 1,
         "views": 6,
         "engagement": 0,
+        "score": 6,
+        "avg_score": 6.0
+      },
+      {
+        "app": "cvdesk",
+        "locale": "en",
+        "hook": "صانع السيرة الذاتية وفحص ATS.",
+        "posts": 1,
+        "views": 1,
+        "engagement": 1,
         "score": 6,
         "avg_score": 6.0
       },
@@ -1475,10 +1486,10 @@
       {
         "key": "b",
         "posts": 23,
-        "views": 651,
+        "views": 661,
         "engagement": 7,
-        "score": 678,
-        "avg_score": 29.5
+        "score": 688,
+        "avg_score": 29.9
       },
       {
         "key": "c",
@@ -1853,12 +1864,12 @@
       "kind": "image",
       "variant": null,
       "metrics": {
-        "views": 14,
+        "views": 15,
         "likes": 0,
         "replies": 1,
         "reposts": 0
       },
-      "score": 19
+      "score": 20
     },
     {
       "channel": "instagram",
@@ -3366,12 +3377,12 @@
       "kind": "image",
       "variant": null,
       "metrics": {
-        "views": 351,
+        "views": 356,
         "likes": 1,
         "replies": 1,
         "reposts": 0
       },
-      "score": 359
+      "score": 364
     },
     {
       "channel": "instagram",
@@ -3490,14 +3501,14 @@
       "kind": "clip",
       "variant": "b",
       "metrics": {
-        "views": 22,
-        "reach": 20,
+        "views": 32,
+        "reach": 29,
         "likes": 0,
         "saves": 0,
         "shares": 0,
         "replies": 0
       },
-      "score": 22
+      "score": 32
     },
     {
       "channel": "instagram",
@@ -3532,12 +3543,31 @@
       "kind": "image",
       "variant": null,
       "metrics": {
-        "views": 162,
+        "views": 205,
         "likes": 0,
         "replies": 1,
         "reposts": 0
       },
-      "score": 167
+      "score": 210
+    },
+    {
+      "channel": "threads",
+      "id": "18134349262667168",
+      "link": "https://www.threads.com/@hourstag.app/post/DfQg0fpEq1D",
+      "posted_at": "2026-11-03T02:23:28",
+      "app": "cvdesk",
+      "locale": "en",
+      "hook": "صانع السيرة الذاتية وفحص ATS.",
+      "clip": null,
+      "kind": "image",
+      "variant": null,
+      "metrics": {
+        "views": 1,
+        "likes": 0,
+        "replies": 1,
+        "reposts": 0
+      },
+      "score": 6
     }
   ]
 }

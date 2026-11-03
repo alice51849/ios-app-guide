@@ -1,12 +1,12 @@
 {
- "generated": "2026-11-03T06:56:04Z",
+ "generated": "2026-11-03T23:29:40Z",
  "mode": "apply",
  "counts": {
-  "ok_reply": 40,
+  "ok_reply": 41,
   "unknown_app": 47,
-  "ok_backfilled_earlier": 27,
+  "ok_backfilled_earlier": 31,
   "backfilled": 2,
-  "ok_store_only": 703,
+  "ok_store_only": 699,
   "ok_bio_link": 68,
   "ok_caption": 4,
   "taken_down": 4,
@@ -24,6 +24,18 @@
    "why": "brand",
    "ios_id": "6781337213",
    "locale": "en"
+  },
+  {
+   "channel": "threads",
+   "id": "17910842442579717",
+   "permalink": "https://www.threads.com/@hourstag.app/post/DfR9V-CHKF1",
+   "date": "2026-11-03",
+   "app": "mochi",
+   "status": "ok_reply",
+   "text": "시험 기간 체크리스트 이렇게 쓰는 중 📚 과목별로 리스트 나누고, 끝낸 건 톡 눌러서 체크. 테마도 바꿀 수 있어서 공부 다이어리 꾸미는 느낌. 알림 설정해두면 과제 마감도 안 놓침. iPhone Duo 쓰시나요? 이제 안쪽 화면을 꽉 채우고, 접든 ",
+   "why": "trial",
+   "ios_id": "6785004775",
+   "locale": "ko"
   },
   {
    "channel": "threads",
@@ -707,16 +719,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdmF9wzH8C5",
    "date": "2026-09-22",
    "app": "hourstaglite",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "See the real price of things. HoursTag Lite - See the real price of things. HoursTag Lite: Price in Hours Here’s the App Store link: https:/",
    "why": "url+brand",
    "ios_id": "6794039979",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "18097378874243438",
-   "at": "2026-11-03T06:53:10Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",
@@ -724,16 +731,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdlUU5QH6D5",
    "date": "2026-09-22",
    "app": "wordmatelite",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "You know 3,000 words and still freeze in the first ten seconds. Our app, not a ranking: Try 10 beginner words free in one language/path; lif",
    "why": "url+brand",
    "ios_id": "6797601720",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "18100395515562025",
-   "at": "2026-11-03T06:53:10Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",
@@ -741,7 +743,7 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdecElMEpX1",
    "date": "2026-09-21",
    "app": "savetag",
-   "status": "ok_store_only",
+   "status": "ok_backfilled_earlier",
    "text": "整天把連結傳給自己，說晚點看，然後就再也沒回去看過。 開發者分享，非獨立評比。SaveTag 不只存連結：裝置端貼標籤、搜尋，再用「重新發現」翻回未讀收藏。免費最多 5 則；一次買斷解鎖無限收藏、備份與匯出。它負責整理，不生成文章。 SaveTag 順手附個連結: https:/",
    "why": "url+brand",
    "ios_id": "6802505528",
@@ -753,11 +755,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdeHzG0Er1r",
    "date": "2026-09-21",
    "app": "sereno",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "眠りと集中のホワイトノイズ。 Serenoは、あなたの電話を睡眠、集中、そして落ち着きのための高級サウンドマシンに変えます。手作業で調整された数十のサウンドがデバイス上でリアルタイムに生成され、1000以上のユニークなサウンドスケープにブレンドされます。 Sereno: スリープ",
    "why": "url+brand",
    "ios_id": "6788236641",
-   "locale": "ja"
+   "locale": "ja",
+   "own_replies": [],
+   "comment_id": "18153794515546913",
+   "at": "2026-11-03T23:26:42Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -765,7 +772,7 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdiAtPDEs61",
    "date": "2026-09-21",
    "app": "lumimissionpro",
-   "status": "ok_store_only",
+   "status": "ok_backfilled_earlier",
    "text": "刷牙、穿鞋、背書包，每一句你都已經講了四遍。 開發者分享，非獨立評比。給每天陪孩子練吃飯、收玩具與睡前流程的家長：視覺任務和獎勵一次備齊。付費下載，完整內容開放。 Lumi Mission Planet Pro 順手附個連結: https://apps.apple.com/tw/",
    "why": "url+brand",
    "ios_id": "6779745474",
@@ -777,11 +784,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdiAsLbEmgn",
    "date": "2026-09-21",
    "app": "caldaily",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "You checked the date three times today and still typed the wrong one. Our app, not a ranking: Name saved calculations. Basic tools free; lif",
    "why": "url+brand",
    "ios_id": "6794178671",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "17919794406264942",
+   "at": "2026-11-03T23:26:42Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",

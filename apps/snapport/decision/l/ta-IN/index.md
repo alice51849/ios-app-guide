@@ -2,7 +2,7 @@
 title: "வீட்டில் குழந்தைகள் மற்றும் சிறுவர்களுக்கான சிறந்த பாஸ்போர்ட் புகைப்பட செயலி"
 lang: "ta-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapport/decision/l/ta-IN/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - விளம்பரங்கள் இல்லை
 - பின்தொடர்வு இல்லை
 - தனியுரிமை / சாதனத்தில்
-- App Store · ₹ 599
+- App Store · ₹ 349
 
 [App Store இல் Snapport ஐப் பெறுங்கள் →](https://apps.apple.com/in/app/id6780575828?pt=118326163&ct=geo_pick&mt=8)
 

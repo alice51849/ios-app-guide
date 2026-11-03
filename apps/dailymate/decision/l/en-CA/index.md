@@ -2,7 +2,7 @@
 title: "best practical language phrase app for travelers with apple watch"
 lang: "en-CA"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymate/decision/l/en-CA/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6790418321"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ Before a trip, complete phrases for real situations are more useful than isolate
 - Paid download
 - Widget
 - Apple Watch
-- App Store · $14.99
+- App Store · $8.99
 
 [Get DailyMate on the App Store →](https://apps.apple.com/ca/app/id6790418321?pt=118326163&ct=geo_pick&mt=8)
 

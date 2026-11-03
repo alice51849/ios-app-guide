@@ -2,7 +2,7 @@
 title: "여행 일정 짜기 추천 앱 (iPhone)"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbee/decision/l/ko/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - 광고 없음
 - 추적 없음
 - 프라이빗 / 기기 내
-- App Store · ￦9,900
+- App Store · ￦5,500
 
 [App Store에서 TripBee Pro: 여행 플래너 받기 →](https://apps.apple.com/kr/app/id6787754435?pt=118326163&ct=geo_pick&mt=8)
 

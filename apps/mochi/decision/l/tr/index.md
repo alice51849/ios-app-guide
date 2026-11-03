@@ -2,7 +2,7 @@
 title: "iPhone için aboneliksiz en iyi basit yapılacaklar listesi uygulaması"
 lang: "tr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochi/decision/l/tr/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -19,6 +19,7 @@ publisher: "Lumi Studio"
 - Reklam yok
 - Apple Watch
 - App Store · Ücretsiz
+- ★ 3.0/5 · 1
 
 [Mochi'yi App Store'dan edinin →](https://apps.apple.com/tr/app/id6785004775?pt=118326163&ct=geo_pick&mt=8)
 

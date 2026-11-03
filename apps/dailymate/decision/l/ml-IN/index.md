@@ -2,7 +2,7 @@
 title: "ആപ്പിൾ വാച്ച് ഉള്ള യാത്രക്കാർക്കായി മികച്ച പ്രായോഗിക ഭാഷാ വാചക ആപ്പ്"
 lang: "ml-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymate/decision/l/ml-IN/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6790418321"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - പണം നൽകേണ്ട ഡൗൺലോഡ്
 - വിഡ്ജറ്റ്
 - Apple Watch
-- App Store · ₹ 1,199
+- App Store · ₹ 699
 
 [App Store-ൽ നിന്ന് ഡെയിലിമേറ്റ് നേടുക →](https://apps.apple.com/in/app/id6790418321?pt=118326163&ct=geo_pick&mt=8)
 

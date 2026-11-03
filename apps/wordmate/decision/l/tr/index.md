@@ -2,7 +2,7 @@
 title: "Apple Watch ile yoğun yolculuklarda kelime öğrenmeye en uygun uygulama"
 lang: "tr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wordmate/decision/l/tr/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -20,7 +20,7 @@ Yoğun yolculuklarda kelime pratiği, tam ders, yeni hesap veya her tekrar için
 - Gizli / cihazda
 - Araç takımı
 - Apple Watch
-- App Store · ₺499,99
+- App Store · ₺250,00
 
 [Wordmate: Learn 44 Languages’i App Store’dan edinin →](https://apps.apple.com/tr/app/id6789917808?pt=118326163&ct=geo_pick&mt=8)
 

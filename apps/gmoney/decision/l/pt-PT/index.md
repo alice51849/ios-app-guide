@@ -2,7 +2,7 @@
 title: "melhor app de controlo de orçamento de viagem sem subscrição para iPhone"
 lang: "pt-PT"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gmoney/decision/l/pt-PT/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -20,7 +20,7 @@ Numa viagem precisa de um controlo de orçamento que funcione offline num país 
 - Sem anúncios
 - Sem rastreamento
 - Privado / no dispositivo
-- App Store · 5,99 €
+- App Store · 3,00 €
 
 [Obtenha o G+Money na App Store →](https://apps.apple.com/pt/app/id6755782939?pt=118326163&ct=geo_pick&mt=8)
 

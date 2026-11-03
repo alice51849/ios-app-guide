@@ -2,7 +2,7 @@
 title: "GBAGo: विज़ुअल सेव — रिकवरी मैप · ऑटो स्नैपशॉट | iOS App"
 lang: "hi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gbago/decision/l/hi/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6804564400"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,7 +16,7 @@ iPhone Duo डिवाइस के लिए ऑप्टिमाइज़ �
 - और अधिक
 - भुगतान किया गया डाउनलोड
 - ऑफ़लाइन
-- App Store · ₹ 999
+- App Store · ₹ 500
 
 [App Store पर GBAGo: विज़ुअल सेव पाएँ](https://apps.apple.com/in/app/id6804564400?pt=118326163&ct=geo_pick&mt=8)
 

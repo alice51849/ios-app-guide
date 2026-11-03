@@ -2,7 +2,7 @@
 title: "iPhone ಗೆ ಉತ್ತಮ ಪ್ರವಾಸ ಯೋಜನಾ ಅಪ್ಲಿಕೇಶನ್"
 lang: "kn-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbee/decision/l/kn-IN/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - ಜಾಹೀರಾತುಗಳಿಲ್ಲ
 - ಹಿಂಡಿಕೆ ಇಲ್ಲ
 - ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ
-- App Store · ₹ 599
+- App Store · ₹ 349
 
 [App Store ನಲ್ಲಿ TripBee Pro: ಪ್ರವಾಸ ಯೋಜಕ ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6787754435?pt=118326163&ct=geo_pick&mt=8)
 

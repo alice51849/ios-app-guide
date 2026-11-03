@@ -2,7 +2,7 @@
 title: "aplikasi frasa bahasa praktikal terbaik untuk pelancong dengan Apple Watch"
 lang: "ms"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymate/decision/l/ms/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6790418321"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ Sebelum perjalanan, frasa lengkap untuk situasi sebenar lebih berguna daripada k
 - Muat turun berbayar
 - Widjet
 - Apple Watch
-- App Store · RM59.90
+- App Store · RM29.99
 
 [Dapatkan DailyMate di App Store →](https://apps.apple.com/my/app/id6790418321?pt=118326163&ct=geo_pick&mt=8)
 

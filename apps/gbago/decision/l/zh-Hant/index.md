@@ -2,7 +2,7 @@
 title: "GBAGo: 視覺存檔 — 復原地圖 · 自動快照 | iOS App"
 lang: "zh-Hant"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gbago/decision/l/zh-Hant/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6804564400"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,7 +16,7 @@ publisher: "Lumi Studio"
 - 更多
 - 付費下載
 - 離線使用
-- App Store · $290.00
+- App Store · $150.00
 
 [在 App Store 取得 GBAGo: 視覺存檔](https://apps.apple.com/tw/app/id6804564400?pt=118326163&ct=geo_pick&mt=8)
 

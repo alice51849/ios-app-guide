@@ -2,7 +2,7 @@
 title: "beste reisbudgettracker-app zonder abonnement iPhone"
 lang: "nl-NL"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gmoney/decision/l/nl-NL/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -20,7 +20,7 @@ Op reis heb je een budgettracker nodig die offline werkt in een land zonder data
 - Geen advertenties
 - Geen tracking
 - Privé / op apparaat
-- App Store · € 5,99
+- App Store · € 3,00
 
 [Download G+Money in de App Store →](https://apps.apple.com/nl/app/id6755782939?pt=118326163&ct=geo_pick&mt=8)
 

@@ -2,7 +2,7 @@
 title: "melhor app de foto para passaporte de bebês e crianças em casa"
 lang: "pt-BR"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapport/decision/l/pt-BR/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -19,7 +19,7 @@ Para foto de passaporte de bebê, ninguém mais pode aparecer na foto e o fundo 
 - Sem anúncios
 - Sem rastreamento
 - Privado / no dispositivo
-- App Store · R$ 39,90
+- App Store · R$ 24,90
 
 [Baixe o Snapport na App Store →](https://apps.apple.com/br/app/id6780575828?pt=118326163&ct=geo_pick&mt=8)
 

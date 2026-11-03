@@ -2,7 +2,7 @@
 title: "適合旅客搭配 Apple Watch 使用的最佳實用語言短句應用程式"
 lang: "zh-Hant"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymate/decision/l/zh-Hant/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6790418321"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,8 @@ publisher: "Lumi Studio"
 - 付費下載
 - 主畫面小工具
 - Apple Watch
-- App Store · $390.00
+- App Store · $220.00
+- ★ 5.0/5 · 1
 
 [前往 App Store 下載 DailyMate →](https://apps.apple.com/tw/app/id6790418321?pt=118326163&ct=geo_pick&mt=8)
 

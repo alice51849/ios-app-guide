@@ -2,7 +2,7 @@
 title: "സബ്സ്ക്രിപ്ഷൻ ഇല്ലാത്ത മികച്ച യാത്ര ബജറ്റ് ട്രാക്കർ ആപ്പ് iPhone"
 lang: "ml-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gmoney/decision/l/ml-IN/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - വ്യാപനങ്ങൾ ഇല്ല
 - ട്രാക്കിംഗ് ഇല്ല
 - സ്വകാര്യത / ഉപകരണത്തിൽ
-- App Store · ₹ 499
+- App Store · ₹ 299
 
 [App Store-ൽ G+Money നേടുക →](https://apps.apple.com/in/app/id6755782939?pt=118326163&ct=geo_pick&mt=8)
 

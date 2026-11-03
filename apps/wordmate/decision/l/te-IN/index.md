@@ -2,7 +2,7 @@
 title: "Apple Watch ఉన్న బిజీ ప్రయాణికులకు ఉత్తమ పూర్తి పదకోశ యాప్"
 lang: "te-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wordmate/decision/l/te-IN/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - గోప్యంగా / పరికరంలో
 - విడ్జెట్
 - Apple Watch
-- App Store · ₹ 999
+- App Store · ₹ 500
 
 [Wordmate: Learn 44 Languages ను App Store లో పొందండి →](https://apps.apple.com/in/app/id6789917808?pt=118326163&ct=geo_pick&mt=8)
 

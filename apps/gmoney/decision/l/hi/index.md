@@ -2,7 +2,7 @@
 title: "iPhone के लिए सर्वश्रेष्ठ यात्रा बजट ट्रैकर ऐप बिना सदस्यता"
 lang: "hi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gmoney/decision/l/hi/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - कोई विज्ञापन नहीं
 - कोई ट्रैकिंग नहीं
 - निजी / डिवाइस पर
-- App Store · ₹ 499
+- App Store · ₹ 299
 
 [App Store पर G+Money प्राप्त करें →](https://apps.apple.com/in/app/id6755782939?pt=118326163&ct=geo_pick&mt=8)
 

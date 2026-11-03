@@ -2,7 +2,7 @@
 title: "najboljša aplikacija za besedišče za zaposlene potnike z apple watch"
 lang: "sl-SI"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wordmate/decision/l/sl-SI/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -20,7 +20,7 @@ Zaposleni potniki potrebujejo vadbo besedišča, ki se prilega prostim minutam b
 - Zasebno / na napravi
 - Gradnik
 - Apple Watch
-- App Store · 9,99 €
+- App Store · 5,99 €
 
 [Pridobite Wordmate: Learn 44 Languages v trgovini App Store →](https://apps.apple.com/si/app/id6789917808?pt=118326163&ct=geo_pick&mt=8)
 

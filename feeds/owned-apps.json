@@ -270,7 +270,7 @@
       "record_count": 56
     },
     "bn-BD": {
-      "date_modified": "2026-11-03T05:00:43Z",
+      "date_modified": "2026-11-03T17:15:56Z",
       "formats": {
         "atom": {
           "accepted_content_types": [
@@ -280,7 +280,7 @@
           ],
           "content_type": "application/atom+xml",
           "path": "bn-BD/feed.xml",
-          "sha256": "d2f1f489cc408e5fc3ca8eaa03906473716edd1f8098bb2ee53abdfe085f50cb",
+          "sha256": "55bfac40d4544bd333a41bdb92fe3775497ad6e68f503e01c5c0bd9f82c39dfb",
           "url": "https://open.cait518.cc/ios-app-guide/bn-BD/feed.xml"
         },
         "json_feed": {
@@ -290,7 +290,7 @@
           ],
           "content_type": "application/feed+json",
           "path": "bn-BD/feed.json",
-          "sha256": "5e01b94ee9774b9dbc8f514d5116f053abb49a472cd0079dcd60535431863a1f",
+          "sha256": "047d4a1f1f0f2721538b53c6ff3272ed4559cf27ca2ec831f441f27cc799e0c1",
           "url": "https://open.cait518.cc/ios-app-guide/bn-BD/feed.json"
         },
         "rss": {
@@ -301,7 +301,7 @@
           ],
           "content_type": "application/rss+xml",
           "path": "bn-BD/rss.xml",
-          "sha256": "ceb6723a486c1d135c8432999db3651d89bda89de2ee4d5b887707cda2da714e",
+          "sha256": "82bf5be0f231fe705247bfafa93dced51a583a18e9d26a91fe2c15406e7826b0",
           "url": "https://open.cait518.cc/ios-app-guide/bn-BD/rss.xml"
         }
       },
@@ -2230,7 +2230,7 @@
       "record_count": 56
     }
   },
-  "generation_digest": "42cfa923f1be9f758ae863bb686c305def61db297a136b03a9b73ba08b7c7067",
+  "generation_digest": "455c6c4de0074f2eddf661b1cffc14aa4ea72bf41a40a2351582cec804bf546d",
   "locale_count": 50,
   "notification_feed_count": 147,
   "purchase_models": {
@@ -2242,7 +2242,7 @@
   "site": "https://open.cait518.cc/ios-app-guide",
   "sitemap_sha256": "e45f65b10582e38118e75606fc082cb12f90270298ced20f6cbc700f0aa09a38",
   "source": {
-    "catalog_content_digest": "433ef92031c0dc2f96940cbc8afea863bbe7454cca18d801a39b0bf21c4ac043",
+    "catalog_content_digest": "b9573af86be05286f86d04d6eb55aa8bc997a5721a54511f01d49ed6b86e8214",
     "roster_digest": "589537afbd619ab8144add3b9c3a344956d29f015950552835f7eeb1a09fdb56",
     "source_files": {
       "../social/videogen/registry.py": "fa574d5e16655040f5d61ddf0ffc8b95e5d578b4fc6a5d66f2bc092159813b66",

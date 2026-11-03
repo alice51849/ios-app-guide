@@ -2,7 +2,7 @@
 title: "WiFi Aid: நெட்வொர்க் சிக்கல் — ரூட்டர், மெஷ், DNS சோதனை | iOS App"
 lang: "ta-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/ta-IN/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ iPhone Duo சாதனத்திற்காக மேம்படுத்�
 - பணம் செலுத்தி பதிவிறக்கவும்
 - கணக்கு இல்லை
 - Apple Watch
-- App Store · ₹ 599
+- App Store · ₹ 349
 
 [App Store-இல் WiFi Aid: நெட்வொர்க் சிக்கல்-ஐப் பெறுங்கள்](https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)
 

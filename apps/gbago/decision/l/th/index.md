@@ -2,7 +2,7 @@
 title: "GBAGo: เซฟแบบเห็นภาพ — แผนผังกู้คืน · สแนปช็อตออโต้ | iOS App"
 lang: "th"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gbago/decision/l/th/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6804564400"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,7 +16,7 @@ publisher: "Lumi Studio"
 - เพิ่มเติม
 - ดาวน์โหลดแบบชำระเงิน
 - ออฟไลน์
-- App Store · ฿299.00
+- App Store · ฿199.00
 
 [ดาวน์โหลด GBAGo: เซฟแบบเห็นภาพ บน App Store](https://apps.apple.com/th/app/id6804564400?pt=118326163&ct=geo_pick&mt=8)
 

@@ -2,7 +2,7 @@
 title: "WiFi Aid: ನೆಟ್ವರ್ಕ್ ಸಮಸ್ಯೆ — ರೌಟರ್, ಮೆಶ್ ಮತ್ತು DNS ಪರಿಶೀಲನೆ | iOS App"
 lang: "kn-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/kn-IN/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ iPhone Duo ಸಾಧನಕ್ಕಾಗಿ ಆಪ್ಟಿಮೈಸ್ ಮಾಡ�
 - ಪಾವತಿಸಿದ ಡೌನ್‌ಲೋಡ್
 - ಖಾತೆ ಇಲ್ಲ
 - Apple Watch
-- App Store · ₹ 599
+- App Store · ₹ 349
 
 [App Store ನಲ್ಲಿ WiFi Aid: ನೆಟ್ವರ್ಕ್ ಸಮಸ್ಯೆ ಪಡೆಯಿರಿ](https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)
 

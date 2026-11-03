@@ -2,7 +2,7 @@
 title: "aplikasi kosakata terbaik untuk komuter sibuk dengan Apple Watch"
 lang: "id"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wordmate/decision/l/id/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -20,7 +20,7 @@ Komuter sibuk butuh latihan kosakata yang bisa masuk di waktu luang tanpa perlu 
 - Privat / di perangkat
 - Widget
 - Apple Watch
-- App Store · Rp 179ribu
+- App Store · Rp 99ribu
 
 [Dapatkan Wordmate: Learn 44 Languages di App Store →](https://apps.apple.com/id/app/id6789917808?pt=118326163&ct=geo_pick&mt=8)
 

@@ -2,7 +2,7 @@
 title: "Lumi കാലാവസ്ഥ: മഴയും വെയിലും — പുറത്തിറങ്ങൽ സ്കോറും വസ്ത്രവും | iOS App"
 lang: "ml-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiweather/decision/l/ml-IN/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6779552704"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -21,6 +21,7 @@ publisher: "Lumi Studio"
 - സ്വകാര്യത / ഉപകരണത്തിൽ
 - വിഡ്ജറ്റ്
 - App Store · സൗജന്യം
+- ★ 5.0/5 · 1
 
 [App Store-ൽ നിന്ന് Lumi കാലാവസ്ഥ: മഴയും വെയിലും നേടൂ](https://apps.apple.com/in/app/id6779552704?pt=118326163&ct=geo_pick&mt=8)
 

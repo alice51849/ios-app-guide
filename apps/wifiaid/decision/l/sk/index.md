@@ -2,7 +2,7 @@
 title: "WiFi Aid: Nájdite chyby siete — Router, mesh, DNS: diagnostika | iOS App"
 lang: "sk"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/sk/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ Optimalizované pre iPhone Duo. Aplikácia je zostavená s najnovším SDK, vypl
 - Platené stiahnutie
 - Bez účtu
 - Apple Watch
-- App Store · 6,99 €
+- App Store · 3,90 €
 
 [Stiahnuť WiFi Aid: Nájdite chyby siete v App Store](https://apps.apple.com/sk/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)
 

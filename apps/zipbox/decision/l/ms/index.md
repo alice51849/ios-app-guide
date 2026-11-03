@@ -2,7 +2,7 @@
 title: "Zipbox: Buka RAR, ZIP, 7z — Nyahzip fail tanpa iklan | iOS App"
 lang: "ms"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/zipbox/decision/l/ms/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6806776579"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -20,7 +20,7 @@ Dioptimumkan untuk iPhone Duo. Dibina dengan SDK terkini, apl ini memenuhi selur
 - Tiada iklan
 - Tiada penjejakan
 - Peribadi / pada peranti
-- App Store · RM22.90
+- App Store · RM14.90
 
 [Dapatkan Zipbox: Buka RAR, ZIP, 7z di App Store](https://apps.apple.com/my/app/id6806776579?pt=118326163&ct=geo_pick&mt=8)
 

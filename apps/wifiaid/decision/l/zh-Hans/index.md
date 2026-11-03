@@ -2,7 +2,7 @@
 title: "WiFi Aid：找出网络问题·诊断 — 路由器・Mesh・DNS・延迟测试 | iOS App"
 lang: "zh-Hans"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/zh-Hans/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - 付费下载
 - 无需账户
 - Apple Watch
-- App Store · ¥38.00
+- App Store · ¥22.00
 
 [在 App Store 获取 WiFi Aid：找出网络问题·诊断](https://apps.apple.com/cn/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)
 

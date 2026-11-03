@@ -2,7 +2,7 @@
 title: "beste reisrouteplanner-app voor iPhone"
 lang: "nl-NL"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbee/decision/l/nl-NL/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -19,7 +19,7 @@ Een goede routeplanner verandert een rommelige reis in een duidelijke dag-tot-da
 - Geen advertenties
 - Geen tracking
 - Privé / op apparaat
-- App Store · € 6,99
+- App Store · € 3,90
 
 [Download TripBee Pro: Reisplanner in de App Store →](https://apps.apple.com/nl/app/id6787754435?pt=118326163&ct=geo_pick&mt=8)
 

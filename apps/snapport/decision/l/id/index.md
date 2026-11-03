@@ -2,7 +2,7 @@
 title: "aplikasi foto paspor terbaik untuk bayi dan balita di rumah"
 lang: "id"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapport/decision/l/id/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -19,7 +19,7 @@ Untuk foto paspor bayi, tidak boleh ada orang lain dalam foto dan latar belakang
 - Tanpa iklan
 - Tanpa pelacakan
 - Privat / di perangkat
-- App Store · Rp 119ribu
+- App Store · Rp 69ribu
 
 [Dapatkan Snapport di App Store →](https://apps.apple.com/id/app/id6780575828?pt=118326163&ct=geo_pick&mt=8)
 

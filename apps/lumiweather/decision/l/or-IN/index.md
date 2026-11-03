@@ -2,7 +2,7 @@
 title: "Lumi ପାଗ: ଆଜିର ପୂର୍ବାନୁମାନ — ବାହାରକୁ ଯିବା ସ୍କୋର ଓ ପୋଷାକ | iOS App"
 lang: "or-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiweather/decision/l/or-IN/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6779552704"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -21,6 +21,7 @@ publisher: "Lumi Studio"
 - ଗୋପନୀୟ / ଉପକରଣରେ
 - ଉଇଜେଟ
 - App Store · ମାଗଣା
+- ★ 5.0/5 · 1
 
 [App Store ରୁ Lumi ପାଗ: ଆଜିର ପୂର୍ବାନୁମାନ ପାଆନ୍ତୁ](https://apps.apple.com/in/app/id6779552704?pt=118326163&ct=geo_pick&mt=8)
 

@@ -2,7 +2,7 @@
 title: "best vocabulary app for busy commuters with apple watch"
 lang: "en-CA"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wordmate/decision/l/en-CA/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -20,7 +20,7 @@ Busy commuters need vocabulary practice that fits into spare minutes without req
 - Private / on-device
 - Widget
 - Apple Watch
-- App Store · $11.99
+- App Store · $6.99
 
 [Get Wordmate: Learn 44 Languages on the App Store →](https://apps.apple.com/ca/app/id6789917808?pt=118326163&ct=geo_pick&mt=8)
 

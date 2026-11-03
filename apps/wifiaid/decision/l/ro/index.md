@@ -2,7 +2,7 @@
 title: "WiFi Aid: Diagnoză de rețea — Diagnoză router, mesh și DNS | iOS App"
 lang: "ro"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/ro/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ Optimizată pentru iPhone Duo. Creată cu cel mai recent SDK, aplicația umple t
 - Descărcare plătită
 - Fără cont
 - Apple Watch
-- App Store · 29,99 lei
+- App Store · 17,99 lei
 
 [Descarcă WiFi Aid: Diagnoză de rețea din App Store](https://apps.apple.com/ro/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)
 

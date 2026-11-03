@@ -2,7 +2,7 @@
 title: "WiFi Aid: Znajdź błędy sieci — Router, mesh i DNS: diagnoza | iOS App"
 lang: "pl"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/pl/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ Zoptymalizowana dla urządzenia iPhone Duo. Zbudowana przy użyciu najnowszego S
 - Płatne do pobrania
 - Bez konta
 - Apple Watch
-- App Store · 29,99 zł
+- App Store · 17,99 zł
 
 [Pobierz WiFi Aid: Znajdź błędy sieci z App Store](https://apps.apple.com/pl/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)
 

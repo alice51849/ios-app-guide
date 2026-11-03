@@ -2,7 +2,7 @@
 title: "Zipbox: RAR, ZIP, 7z Açma — Reklamsız dosya çıkarma | iOS App"
 lang: "tr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/zipbox/decision/l/tr/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6806776579"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -20,7 +20,7 @@ iPhone Duo için optimize edildi. En yeni SDK ile geliştirilen uygulama tüm i�
 - Reklam yok
 - Takip yok
 - Gizli / cihazda
-- App Store · ₺249,99
+- App Store · ₺129,99
 
 [Zipbox: RAR, ZIP, 7z Açma uygulamasını App Store'dan al](https://apps.apple.com/tr/app/id6806776579?pt=118326163&ct=geo_pick&mt=8)
 

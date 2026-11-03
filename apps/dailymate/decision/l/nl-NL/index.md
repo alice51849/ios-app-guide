@@ -2,7 +2,7 @@
 title: "beste praktische taalzinnen-app voor reizigers met Apple Watch"
 lang: "nl-NL"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymate/decision/l/nl-NL/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6790418321"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ Voor een reis zijn complete zinnen voor echte situaties nuttiger dan losse woord
 - Betaalde aanschaf
 - Widget
 - Apple Watch
-- App Store · € 12,99
+- App Store · € 6,99
 
 [Download DailyMate in de App Store →](https://apps.apple.com/nl/app/id6790418321?pt=118326163&ct=geo_pick&mt=8)
 

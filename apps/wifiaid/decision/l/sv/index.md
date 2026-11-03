@@ -2,7 +2,7 @@
 title: "WiFi Aid: Hitta nätverksfel — Router-, mesh- och DNS-diagnos | iOS App"
 lang: "sv"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/sv/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ Optimerad för iPhone Duo. Appen är byggd med den senaste SDK:n, fyller hela de
 - Betald nedladdning
 - Inget konto
 - Apple Watch
-- App Store · 79,00 kr
+- App Store · 49,00 kr
 
 [Hämta WiFi Aid: Hitta nätverksfel i App Store](https://apps.apple.com/se/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)
 

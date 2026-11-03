@@ -2,7 +2,7 @@
 title: "WiFi Aid: Diagnostic réseau — Diagnostic routeur, mesh, DNS | iOS App"
 lang: "fr-CA"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/fr-CA/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ Optimisée pour l’iPhone Duo. Conçue avec le SDK le plus récent, l’app rem
 - Téléchargement payant
 - Aucun compte
 - Apple Watch
-- App Store · $7.99
+- App Store · $4.00
 
 [Obtenir WiFi Aid: Diagnostic réseau sur l'App Store](https://apps.apple.com/ca/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)
 

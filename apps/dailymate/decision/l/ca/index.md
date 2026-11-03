@@ -2,7 +2,7 @@
 title: "millor app de frases útils per viatjar amb Apple Watch"
 lang: "ca"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymate/decision/l/ca/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6790418321"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ Abans d'un viatge, les frases completes per a situacions reals són més útils 
 - Descàrrega de pagament
 - Widget
 - Apple Watch
-- App Store · 12,99 €
+- App Store · 6,99 €
 
 [Descarrega DailyMate a l'App Store →](https://apps.apple.com/es/app/id6790418321?pt=118326163&ct=geo_pick&mt=8)
 

@@ -2,7 +2,7 @@
 title: "app de mejor planificador de itinerarios para iPhone"
 lang: "es-ES"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbee/decision/l/es-ES/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -19,7 +19,7 @@ Una buena app de itinerarios convierte un viaje caótico en una línea de tiempo
 - Sin anuncios
 - Sin seguimiento
 - Privado / en el dispositivo
-- App Store · 6,99 €
+- App Store · 3,90 €
 
 [Consigue TripBee Pro: Planificador de Viajes en la App Store →](https://apps.apple.com/es/app/id6787754435?pt=118326163&ct=geo_pick&mt=8)
 

@@ -2,7 +2,7 @@
 title: "适用于配备 Apple Watch 旅行者的最佳实用语言短语应用"
 lang: "zh-Hans"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymate/decision/l/zh-Hans/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6790418321"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - 付费下载
 - 小组件
 - Apple Watch
-- App Store · ¥88.00
+- App Store · ¥48.00
 
 [在 App Store 获取 DailyMate →](https://apps.apple.com/cn/app/id6790418321?pt=118326163&ct=geo_pick&mt=8)
 

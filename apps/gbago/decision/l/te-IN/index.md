@@ -2,7 +2,7 @@
 title: "GBAGo: దృశ్య సేవ్స్ — రికవరీ మ్యాప్ · స్నాప్‌షాట్‌లు | iOS App"
 lang: "te-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gbago/decision/l/te-IN/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6804564400"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,7 +16,7 @@ iPhone Duo పరికరం కోసం ఆప్టిమైజ్ చేయ
 - ఇంకా
 - చెల్లింపు డౌన్లోడ్
 - ఆఫ్‌లైన్
-- App Store · ₹ 999
+- App Store · ₹ 500
 
 [App Store నుంచి GBAGo: దృశ్య సేవ్స్ పొందండి](https://apps.apple.com/in/app/id6804564400?pt=118326163&ct=geo_pick&mt=8)
 

@@ -2,7 +2,7 @@
 title: "Zipbox : décompresser RAR, ZIP — Ouvrez vos archives, sans pub | iOS App"
 lang: "fr-CA"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/zipbox/decision/l/fr-CA/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6806776579"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -20,7 +20,7 @@ Optimisée pour l’iPhone Duo. Conçue avec le SDK le plus récent, l’app rem
 - Aucune publicité
 - Aucun suivi
 - Privé / sur l'appareil
-- App Store · $6.99
+- App Store · $3.90
 
 [Obtenir Zipbox : décompresser RAR, ZIP sur l'App Store](https://apps.apple.com/ca/app/id6806776579?pt=118326163&ct=geo_pick&mt=8)
 

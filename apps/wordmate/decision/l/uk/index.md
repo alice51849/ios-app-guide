@@ -2,7 +2,7 @@
 title: "найкращий додаток для вивчення слів для зайнятих ком’ютерів з Apple Watch"
 lang: "uk"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wordmate/decision/l/uk/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - Приватно / на пристрої
 - Віджет
 - Apple Watch
-- App Store · 9,99 USD
+- App Store · 5,99 USD
 
 [Отримати Wordmate: Learn 44 Languages в App Store →](https://apps.apple.com/ua/app/id6789917808?pt=118326163&ct=geo_pick&mt=8)
 

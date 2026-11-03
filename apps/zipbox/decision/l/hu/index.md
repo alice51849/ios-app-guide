@@ -2,7 +2,7 @@
 title: "Zipbox: RAR, ZIP, 7z kibontó — Kicsomagolás reklám nélkül | iOS App"
 lang: "hu"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/zipbox/decision/l/hu/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6806776579"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -20,7 +20,7 @@ Optimalizálva az iPhone Duo készülékhez. A legújabb SDK-val készült alkal
 - Nincs reklám
 - Nincs követés
 - Privát / eszközön tárolt
-- App Store · HUF1,990.00
+- App Store · HUF999.00
 
 [Töltse le a(z) Zipbox: RAR, ZIP, 7z kibontó appot az App Store-ból](https://apps.apple.com/hu/app/id6806776579?pt=118326163&ct=geo_pick&mt=8)
 

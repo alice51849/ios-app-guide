@@ -2,7 +2,7 @@
 title: "애플 워치와 함께 여행자에게 가장 실용적인 언어 회화 앱"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymate/decision/l/ko/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6790418321"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - 유료 다운로드
 - 위젯
 - Apple Watch
-- App Store · ￦19,000
+- App Store · ￦9,900
 
 [App Store에서 DailyMate 받기 →](https://apps.apple.com/kr/app/id6790418321?pt=118326163&ct=geo_pick&mt=8)
 

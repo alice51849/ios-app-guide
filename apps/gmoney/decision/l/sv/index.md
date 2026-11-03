@@ -2,7 +2,7 @@
 title: "bästa resebudget-appen utan prenumeration för iPhone"
 lang: "sv"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gmoney/decision/l/sv/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -20,7 +20,7 @@ På en resa behöver du en budgetapp som fungerar offline i ett land utan data, 
 - Inga annonser
 - Ingen spårning
 - Privat / på enheten
-- App Store · 69,00 kr
+- App Store · 39,00 kr
 
 [Hämta G+Money på App Store →](https://apps.apple.com/se/app/id6755782939?pt=118326163&ct=geo_pick&mt=8)
 

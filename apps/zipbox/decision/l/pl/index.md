@@ -2,7 +2,7 @@
 title: "Zipbox: otwórz RAR, ZIP, 7z — Rozpakuj bez reklam | iOS App"
 lang: "pl"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/zipbox/decision/l/pl/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6806776579"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -20,7 +20,7 @@ Zoptymalizowana dla urządzenia iPhone Duo. Zbudowana przy użyciu najnowszego S
 - Bez reklam
 - Bez śledzenia
 - Prywatne / na urządzeniu
-- App Store · 24,99 zł
+- App Store · 14,99 zł
 
 [Pobierz Zipbox: otwórz RAR, ZIP, 7z z App Store](https://apps.apple.com/pl/app/id6806776579?pt=118326163&ct=geo_pick&mt=8)
 

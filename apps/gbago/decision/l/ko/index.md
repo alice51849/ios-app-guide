@@ -2,7 +2,7 @@
 title: "GBAGo: 비주얼 세이브 — 복구 지도 · 자동 스냅샷 | iOS App"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gbago/decision/l/ko/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6804564400"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,7 +16,7 @@ iPhone Duo에 최적화되었습니다. 최신 개발 도구로 빌드되어 안
 - 더 보기
 - 유료 다운로드
 - 오프라인
-- App Store · ￦15,000
+- App Store · ￦7,700
 
 [App Store에서 GBAGo: 비주얼 세이브 받기](https://apps.apple.com/kr/app/id6804564400?pt=118326163&ct=geo_pick&mt=8)
 

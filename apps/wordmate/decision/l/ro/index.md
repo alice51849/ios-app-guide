@@ -2,7 +2,7 @@
 title: "cea mai bună aplicație de vocabular pentru navetiști ocupați cu Apple Watch"
 lang: "ro"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wordmate/decision/l/ro/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -20,7 +20,7 @@ Navetiștii ocupați au nevoie de exersare de vocabular care să se potrivească
 - Privat / pe dispozitiv
 - Widget
 - Apple Watch
-- App Store · 49,99 lei
+- App Store · 29,99 lei
 
 [Descarcă Wordmate: Learn 44 Languages din App Store →](https://apps.apple.com/ro/app/id6789917808?pt=118326163&ct=geo_pick&mt=8)
 

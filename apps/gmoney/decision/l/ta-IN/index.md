@@ -2,7 +2,7 @@
 title: "சந்தா இல்லாத சிறந்த பயண பட்ஜெட் கண்காணிப்பாளர் செயலி iPhone க்கான"
 lang: "ta-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gmoney/decision/l/ta-IN/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - விளம்பரங்கள் இல்லை
 - பின்தொடர்வு இல்லை
 - தனியுரிமை / சாதனத்தில்
-- App Store · ₹ 499
+- App Store · ₹ 299
 
 [App Store இல் G+Money ஐ பெறவும் →](https://apps.apple.com/in/app/id6755782939?pt=118326163&ct=geo_pick&mt=8)
 

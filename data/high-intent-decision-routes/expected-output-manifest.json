@@ -5,7 +5,7 @@
   "creative_count": 56,
   "current_inventory": {
     "app_keys_sha256": "3b8f236a1370422f5e0b445220a681cbd5a2739c29d98ede935c2d38abc2d39e",
-    "copy_sha256": "341554c93a9aa9363f6fc45f4a2b0d3643d3456bb43679c4180a3ad428a92614",
+    "copy_sha256": "b373dcd893e917fe0a4c16d195b1a71805863ecf9e24cae6c5eb22bb0fb2a727",
     "missing_route_app_keys": [],
     "missing_route_app_keys_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
     "public_apps": 56
@@ -24,12 +24,12 @@
       "relative_path": "data/high-intent-decision-routes/conversion-contracts.schema.json"
     },
     {
-      "generated_sha256": "bd5d501df2c1eeb133aa54487a6d1646a2af42c33440a82ab8fc5b9a3868eeb2",
+      "generated_sha256": "7b55925cc92c411390318a433aefbf250cace09d305bed14703038840c67cf36",
       "kind": "coverage_report",
       "relative_path": "data/high-intent-decision-routes/coverage.json"
     },
     {
-      "generated_sha256": "55c21f81c9471c3cb62379c6f1369ba6125c897e24fe40484726ebe7fd6f559f",
+      "generated_sha256": "aa9b1b7f45f892f1919c860d4d86bea4226a8be5f4ffa6ee6f8c1a08e8de0c1b",
       "kind": "json_feed",
       "relative_path": "data/high-intent-decision-routes/feed.json"
     },
@@ -129,7 +129,7 @@
       "relative_path": "en-US/decide/hourstaglite/pause-impulse-buy-with-work-hours.html"
     },
     {
-      "generated_sha256": "c129a65475987f01bcb3c243e4187c5f53ca3396b03b821790ad9a94c368b593",
+      "generated_sha256": "8abe34200564f6807ec0fc5692d459b046017764e885fe8bbf717f524063210b",
       "kind": "route_html",
       "relative_path": "en-US/decide/ledmovingtext/hold-up-a-message-people-can-read-across-a-crowd.html"
     },
@@ -254,7 +254,7 @@
       "relative_path": "en-US/decide/snapport/make-passport-photo-at-home.html"
     },
     {
-      "generated_sha256": "765f2bb4ecf62cc40a36d6c3ad8628aa3674f94ef247df47b1c21ad6e28dee44",
+      "generated_sha256": "94ea767374ce4617c31d4fbc4d8bd9d659c16e9c9b6fff99f765c58933115629",
       "kind": "route_html",
       "relative_path": "en-US/decide/snapportlite/test-passport-photo-layout-free.html"
     },
@@ -407,14 +407,14 @@
   "fallback_records": 0,
   "inventory": {
     "app_keys_sha256": "3b8f236a1370422f5e0b445220a681cbd5a2739c29d98ede935c2d38abc2d39e",
-    "copy_sha256": "341554c93a9aa9363f6fc45f4a2b0d3643d3456bb43679c4180a3ad428a92614",
+    "copy_sha256": "b373dcd893e917fe0a4c16d195b1a71805863ecf9e24cae6c5eb22bb0fb2a727",
     "official_locales_sha256": "e26dabf9370286ad8fd12034270cfcade92b2db4f4a0eecc19324203ce84d5bd",
     "public_apps": 56,
     "relative_path": "data/verified-ios-app-finder-catalog.json"
   },
-  "manifest_digest": "b6a42ca68bc18533eb7692da098ddb3a140d9c24720fa7023016492ac00e7d58",
+  "manifest_digest": "ae7758c68f19296719e661579513b124604dde700c8ee64fdbab7ae672742338",
   "owner": "high_intent_decision_routes",
-  "release_contract_digest": "c27e6c483c5cb7f8df0def560760a61a06e425debf94a544e4b5392bea31957d",
+  "release_contract_digest": "0bef4b39f3a30c12c00569948fc7c9d1c2e38ba68bcaa6344bf234304dfc35af",
   "release_state": "exact",
   "route_count": 73,
   "routes": [
@@ -751,8 +751,8 @@
       "creative_id": "ledmovingtext:hold-up-a-message-people-can-read-across-a-crowd:workflow",
       "intent_type": "workflow",
       "locale": "en-US",
-      "output_sha256": "c129a65475987f01bcb3c243e4187c5f53ca3396b03b821790ad9a94c368b593",
-      "record_digest": "13d332ecca30677d978413d208219c5eaa8fd0e3f6abe52a3de83190c30ae1eb",
+      "output_sha256": "8abe34200564f6807ec0fc5692d459b046017764e885fe8bbf717f524063210b",
+      "record_digest": "5ce995fcaf247e042981967aa3a7120776e95d58036b9f83bcdd2bca48771e87",
       "relative_path": "en-US/decide/ledmovingtext/hold-up-a-message-people-can-read-across-a-crowd.html",
       "route_id": "en-US:ledmovingtext:hold-up-a-message-people-can-read-across-a-crowd",
       "route_slug": "hold-up-a-message-people-can-read-across-a-crowd",
@@ -1176,8 +1176,8 @@
       "creative_id": "snapportlite:test-passport-photo-layout-free:alternative",
       "intent_type": "alternative",
       "locale": "en-US",
-      "output_sha256": "765f2bb4ecf62cc40a36d6c3ad8628aa3674f94ef247df47b1c21ad6e28dee44",
-      "record_digest": "6a8048122595ee0ad39c079440465930d29becd97b0f84a62457172dbbcc8fc2",
+      "output_sha256": "94ea767374ce4617c31d4fbc4d8bd9d659c16e9c9b6fff99f765c58933115629",
+      "record_digest": "775b3e39b3679793ac0adbde2aebe35f239bb12505317edc6312e3d425b76c0d",
       "relative_path": "en-US/decide/snapportlite/test-passport-photo-layout-free.html",
       "route_id": "en-US:snapportlite:test-passport-photo-layout-free",
       "route_slug": "test-passport-photo-layout-free",
@@ -1662,5 +1662,5 @@
   ],
   "schema_version": 2,
   "site": "https://open.cait518.cc/ios-app-guide",
-  "source_contract_digest": "4b67505680bae1e310ef2c81dd7f26b944ce21f9583eb81849290e026e5f5455"
+  "source_contract_digest": "b59cf2d1874464d938035fb69d1e1b5ca415a7286589244976f7889e04f30bf0"
 }

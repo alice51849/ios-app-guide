@@ -2,7 +2,7 @@
 title: "बाळ आणि लहान मुलांसाठी घरच्या घरी सर्वोत्तम पासपोर्ट फोटो अॅप"
 lang: "mr-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapport/decision/l/mr-IN/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - जाहिराती नाहीत
 - ट्रॅकिंग नाही
 - खाजगी / उपकरणावर
-- App Store · ₹ 599
+- App Store · ₹ 349
 
 [App Store वरून Snapport मिळवा →](https://apps.apple.com/in/app/id6780575828?pt=118326163&ct=geo_pick&mt=8)
 

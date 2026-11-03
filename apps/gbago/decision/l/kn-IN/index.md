@@ -2,7 +2,7 @@
 title: "GBAGo: ದೃಶ್ಯ ಸೇವ್‌ಗಳು — ರಿಕವರಿ ಮ್ಯಾಪ್ · ಸ್ನ್ಯಾಪ್‌ಶಾಟ್ | iOS App"
 lang: "kn-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gbago/decision/l/kn-IN/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6804564400"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,7 +16,7 @@ iPhone Duo ಸಾಧನಕ್ಕಾಗಿ ಆಪ್ಟಿಮೈಸ್ ಮಾಡ�
 - ಇನ್ನಷ್ಟು
 - ಪಾವತಿಸಿದ ಡೌನ್‌ಲೋಡ್
 - ಆಫ್‌ಲೈನ್
-- App Store · ₹ 999
+- App Store · ₹ 500
 
 [App Store ನಲ್ಲಿ GBAGo: ದೃಶ್ಯ ಸೇವ್‌ಗಳು ಪಡೆಯಿರಿ](https://apps.apple.com/in/app/id6804564400?pt=118326163&ct=geo_pick&mt=8)
 

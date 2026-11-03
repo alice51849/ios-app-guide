@@ -2,7 +2,7 @@
 title: "GBAGo: Візуальні сейви — Мапа відновлення · Автознімки | iOS App"
 lang: "uk"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gbago/decision/l/uk/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6804564400"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,7 +16,7 @@ publisher: "Lumi Studio"
 - Ще
 - Платне завантаження
 - Офлайн
-- App Store · 9,99 USD
+- App Store · 5,99 USD
 
 [Завантажте GBAGo: Візуальні сейви з App Store](https://apps.apple.com/ua/app/id6804564400?pt=118326163&ct=geo_pick&mt=8)
 

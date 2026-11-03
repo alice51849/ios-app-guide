@@ -2,7 +2,7 @@
 title: "Apple Watch सह प्रवाशांसाठी सर्वोत्तम व्यावहारिक भाषा वाक्यांश अॅप"
 lang: "mr-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymate/decision/l/mr-IN/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6790418321"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - पैसे देऊन डाउनलोड करा
 - विजेट
 - Apple Watch
-- App Store · ₹ 1,199
+- App Store · ₹ 699
 
 [App Store वरून DailyMate मिळवा →](https://apps.apple.com/in/app/id6790418321?pt=118326163&ct=geo_pick&mt=8)
 

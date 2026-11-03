@@ -2,7 +2,7 @@
 title: "GBAGo: Salvataggi visivi — Mappa di recupero · Istantanee | iOS App"
 lang: "it"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gbago/decision/l/it/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6804564400"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,7 +16,7 @@ Ottimizzata per iPhone Duo. Realizzata con l’SDK più recente, l’app riempie
 - Altro
 - Scaricamento a pagamento
 - Offline
-- App Store · 9,99 €
+- App Store · 5,99 €
 
 [Scarica GBAGo: Salvataggi visivi sull'App Store](https://apps.apple.com/it/app/id6804564400?pt=118326163&ct=geo_pick&mt=8)
 

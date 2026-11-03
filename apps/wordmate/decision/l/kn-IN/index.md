@@ -2,7 +2,7 @@
 title: "Apple Watch ಹೊಂದಿರುವ ಬ್ಯುಸಿ ಪ್ರಯಾಣಿಕರಿಗೆ ಅತ್ಯುತ್ತಮ ಪದಕೋಶ ಅಪ್ಲಿಕೇಶನ್"
 lang: "kn-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wordmate/decision/l/kn-IN/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ
 - ವಿಜೆಟ್
 - Apple Watch
-- App Store · ₹ 999
+- App Store · ₹ 500
 
 [Wordmate: 44 ಭಾಷೆ ಕಲಿಯಿರಿ ಅನ್ನು App Store ನಲ್ಲಿ ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6789917808?pt=118326163&ct=geo_pick&mt=8)
 

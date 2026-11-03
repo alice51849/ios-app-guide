@@ -2,7 +2,7 @@
 title: "ứng dụng cụm từ ngôn ngữ thực tế tốt nhất cho khách du lịch có Apple Watch"
 lang: "vi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymate/decision/l/vi/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6790418321"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ Trước chuyến đi, các cụm từ hoàn chỉnh cho tình huống thực t�
 - Tải xuống trả phí
 - Tiện ích
 - Apple Watch
-- App Store · 399.000đ
+- App Store · 200.000đ
 
 [Tải DailyMate trên App Store →](https://apps.apple.com/vn/app/id6790418321?pt=118326163&ct=geo_pick&mt=8)
 

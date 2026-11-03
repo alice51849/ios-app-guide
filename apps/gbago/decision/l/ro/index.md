@@ -2,7 +2,7 @@
 title: "GBAGo: Salvări vizuale — Recuperare · Instantanee | iOS App"
 lang: "ro"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gbago/decision/l/ro/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6804564400"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,7 +16,7 @@ Optimizată pentru iPhone Duo. Creată cu cel mai recent SDK, aplicația umple t
 - Mai mult
 - Descărcare plătită
 - Offline
-- App Store · 49,99 lei
+- App Store · 29,99 lei
 
 [Descarcă GBAGo: Salvări vizuale din App Store](https://apps.apple.com/ro/app/id6804564400?pt=118326163&ct=geo_pick&mt=8)
 

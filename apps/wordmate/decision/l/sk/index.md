@@ -2,7 +2,7 @@
 title: "najlepšia aplikácia na slovnú zásobu pre zaneprázdnených cestujúcich s Apple Watch"
 lang: "sk"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wordmate/decision/l/sk/index.html"
-modified: "2026-11-02"
+modified: "2026-11-03"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -20,7 +20,7 @@ Zaneprázdnení cestujúci potrebujú precvičovanie slovnej zásoby, ktoré sa 
 - Súkromné / v zariadení
 - Widget
 - Apple Watch
-- App Store · 9,99 €
+- App Store · 5,99 €
 
 [Získajte Wordmate: Learn 44 Languages v App Store →](https://apps.apple.com/sk/app/id6789917808?pt=118326163&ct=geo_pick&mt=8)
 

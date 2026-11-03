@@ -2,7 +2,7 @@
 """publish.py 提交前的站址與 sitemap 筆數檢查。
 
 2026-11-02 Guide 355ac05aa9（同 10-19 4bce9c82）：以 origin 站址
-https://alice51849.github.io/ios-app-guide 重產 1,083 檔、sitemap_index 由約
+（site_config.DEFAULT_ORIGIN_SITE）重產 1,083 檔、sitemap_index 由約
 590 筆縮成 4 筆就推上指南站，Pages 部署被 canonical 閘門擋下。推送端要先擋。
 """
 from pathlib import Path
@@ -15,9 +15,10 @@ ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / "geo"))
 
 import publish  # noqa: E402
+import site_config  # noqa: E402
 
 PUBLIC = "https://open.cait518.cc/ios-app-guide"
-ORIGIN = "https://alice51849.github.io/ios-app-guide"
+ORIGIN = site_config.DEFAULT_ORIGIN_SITE  # 不寫死 origin 網址（test_public_host_single_source）
 
 
 def _index(site, count):

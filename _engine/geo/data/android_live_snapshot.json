@@ -1,9 +1,9 @@
 {
  "schema": "lumi.android-live-snapshot/v1",
  "source": "AndroidPlay android_live_scan (Play page HTTP 200 + publish LIVE)",
- "source_generated": "2026-11-03T13:11:42+0800",
+ "source_generated": "2026-11-03T17:37:11+0800",
  "count": 56,
- "content_sha256": "734db4d78c2bc82cff84e2a4910ee7b547751b75c523cf2fae20147795cf8fd1",
+ "content_sha256": "81f4ec669106187a2d3057ea9e78135c59151c7b600bc070d3e7ec80b4a0f309",
  "apps": {
   "aibriefpack": {
    "ios_app_id": "6791658210",
@@ -1176,6 +1176,11 @@
   {
    "folder": "56_MetroTimeHelper",
    "package": "com.alice51849.MetroTimeHelper",
+   "reason": "no_unique_ios_match"
+  },
+  {
+   "folder": "58_MeowParty",
+   "package": "com.alice51849.FoldParty",
    "reason": "no_unique_ios_match"
   },
   {

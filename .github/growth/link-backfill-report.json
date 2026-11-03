@@ -1,18 +1,30 @@
 {
- "generated": "2026-11-02T21:48:13Z",
+ "generated": "2026-11-03T06:56:04Z",
  "mode": "apply",
  "counts": {
-  "ok_reply": 39,
+  "ok_reply": 40,
   "unknown_app": 47,
-  "ok_backfilled_earlier": 25,
+  "ok_backfilled_earlier": 27,
   "backfilled": 2,
-  "ok_store_only": 705,
+  "ok_store_only": 703,
   "ok_bio_link": 68,
   "ok_caption": 4,
   "taken_down": 4,
   "missing": 3
  },
  "rows": [
+  {
+   "channel": "threads",
+   "id": "18134349262667168",
+   "permalink": "https://www.threads.com/@hourstag.app/post/DfQg0fpEq1D",
+   "date": "2026-11-03",
+   "app": "cvdesk",
+   "status": "ok_reply",
+   "text": "صانع السيرة الذاتية وفحص ATS. ثم صدّر ملف PDF بعمود واحد بنص حقيقي قابل للتحديد، أو ملف Word قابلًا للتحرير، جاهزًا للإرسال. CV Desk: سيرة ذ",
+   "why": "brand",
+   "ios_id": "6781337213",
+   "locale": "en"
+  },
   {
    "channel": "threads",
    "id": "18592081078071604",
@@ -647,16 +659,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/Ddn4edkH7UV",
    "date": "2026-09-23",
    "app": "lumiweather",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "\"Does he need a jacket?\" is not a question the forecast actually answers. Our app, not a ranking: Check clothing and outing guidance, not a ",
    "why": "url+brand",
    "ios_id": "6779552704",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "18204161701376787",
-   "at": "2026-11-02T21:44:58Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",
@@ -688,16 +695,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/Ddm5aYtn-aR",
    "date": "2026-09-22",
    "app": "hourstag",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "那筆衝動購物花的不是錢，是你一整天的工時。 開發者分享，非獨立評比。帳單只列金額，也想知道自己用了多少工作時間換？HoursTag 把花費換成工時，留下歷史供回顧。原版付費下載，一次購買，不需訂閱。 HoursTag: Hours to Buy App Store 上找得到: h",
    "why": "url+brand",
    "ios_id": "6754218117",
-   "locale": "zh-Hant",
-   "own_replies": [],
-   "comment_id": "17912688030562994",
-   "at": "2026-11-02T21:44:58Z",
-   "verified": true,
-   "via": "list"
+   "locale": "zh-Hant"
   },
   {
    "channel": "threads",
@@ -705,11 +707,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdmF9wzH8C5",
    "date": "2026-09-22",
    "app": "hourstaglite",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "See the real price of things. HoursTag Lite - See the real price of things. HoursTag Lite: Price in Hours Here’s the App Store link: https:/",
    "why": "url+brand",
    "ios_id": "6794039979",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "18097378874243438",
+   "at": "2026-11-03T06:53:10Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -717,11 +724,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdlUU5QH6D5",
    "date": "2026-09-22",
    "app": "wordmatelite",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "You know 3,000 words and still freeze in the first ten seconds. Our app, not a ranking: Try 10 beginner words free in one language/path; lif",
    "why": "url+brand",
    "ios_id": "6797601720",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "18100395515562025",
+   "at": "2026-11-03T06:53:10Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",

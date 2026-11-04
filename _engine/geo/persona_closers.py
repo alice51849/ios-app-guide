@@ -154,6 +154,7 @@ SITUATIONS: dict[str, str] = {
     "duowallpaperstudio": "creative",
     "easyam": "utility",
     "gbago": "utility",
+    "metrotimehelper": "travel",
 }
 DEFAULT_SITUATION = "utility"
 

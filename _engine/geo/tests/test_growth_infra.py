@@ -22355,6 +22355,13 @@ class GeneratorTests(unittest.TestCase):
         # registry this copy runs against has it.
         if "duowallpaperstudio" in APPS:
             free_with_unlock.add("duowallpaperstudio")
+        # Metro Time Helper: free download (store price 0, released
+        # 2026-11-03) whose en-US description offers every feature for 24
+        # hours, then "a single one-time unlock" with "No subscription, and
+        # nothing renews automatically". Expected only once the registry this
+        # copy runs against has it, like the entry above.
+        if "metrotimehelper" in APPS:
+            free_with_unlock.add("metrotimehelper")
         self.assertEqual(paid_upfront | free_with_unlock, set(APPS))
         for key in paid_upfront:
             self.assertEqual("paid_upfront", APPS[key]["purchase_model"])

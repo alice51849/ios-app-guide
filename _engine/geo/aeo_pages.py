@@ -550,6 +550,27 @@ CURATED_FALLBACK = {
             ["wallive: 4k wallpaper & widget", 0],
         ],
     },
+    "metrotimehelper": {
+        "key": "metrotimehelper",
+        "gap_queries": [
+            "what time do i need to leave to arrive on time on the taipei mrt",
+            "latest time to enter a taipei mrt station including transfers",
+            "taipei mrt first and last train warning before leaving",
+            "xiaobitan branch timetable with a departure reminder",
+            "beitou to xinbeitou branch next train countdown",
+            "taipei mrt trip planner in my own language for visitors",
+        ],
+        # Competitor titles read off the live US App Store search results for
+        # "taipei metro" and "taipei mrt" on 2026-11-04; rank 0 means the
+        # position was not measured, exactly as for the other curated
+        # fallbacks.
+        "top_competitors": [
+            ["taipei metro -taipei mrt guide", 0],
+            ["taipei metro routes map", 0],
+            ["metroman taipei", 0],
+            ["explore taipei", 0],
+        ],
+    },
     "zipbox": {
         "key": "zipbox",
         "gap_queries": [

@@ -3,9 +3,9 @@
   "dataset_name": "Lumi Studio High-Intent Decision Routes",
   "inventory_contract": {
     "relative_path": "data/verified-ios-app-finder-catalog.json",
-    "expected_app_count": 56,
-    "app_keys_sha256": "3b8f236a1370422f5e0b445220a681cbd5a2739c29d98ede935c2d38abc2d39e",
-    "copy_sha256": "b373dcd893e917fe0a4c16d195b1a71805863ecf9e24cae6c5eb22bb0fb2a727",
+    "expected_app_count": 57,
+    "app_keys_sha256": "7f924dfde27d2837584c4acb584b8bcb26751a9b6e00dd332a70c475ef06eb64",
+    "copy_sha256": "b04ddaa7e98009e49c52be2ccc404508fa97157902769e03e520dd0c67c65718",
     "official_locales_sha256": "e26dabf9370286ad8fd12034270cfcade92b2db4f4a0eecc19324203ce84d5bd"
   },
   "publisher": {
@@ -2503,6 +2503,65 @@
           "verify_before_install": [
             "先確認你的 iPhone 或 iPad 是 iOS 17 以上；iPhone Duo 以外的機型由 iOS 縮放畫面。",
             "購買前先看 App Store 頁面上哪些組可直接使用，以及一次性購買會解鎖哪些內容。"
+          ],
+          "evidence_refs": [
+            "summary.zh-Hant",
+            "fact.purchase_model",
+            "fact.one_time_option"
+          ]
+        }
+      }
+    },
+    {
+      "app_key": "metrotimehelper",
+      "route_slug": "what-time-to-enter-a-taipei-mrt-station-to-arrive-on-time",
+      "intent_type": "problem_aware",
+      "primary": true,
+      "keyword_refs": [
+        0,
+        1,
+        2
+      ],
+      "locales": {
+        "en-US": {
+          "language": "en",
+          "market": "United States",
+          "culture_route": "Many travelers from the US riding the Taipei MRT for the first time, and people living in Taiwan on a daily commute, know when they need to arrive for a meeting, a dinner or the last train of the night, but not when they need to walk into the station, especially when the trip includes a transfer.",
+          "query": "What time do I need to enter a Taipei MRT station to arrive on time?",
+          "buyer_problem": "Most transit apps answer when you will arrive if you leave now. Before a meeting or the last train of the night, the question is the reverse: the latest time to enter the station, with every transfer counted. The decision is whether a planner that works backward from your arrival time, using official published headways and travel times between stations, fits how you ride.",
+          "decision_rule": "Favor a leave-by planner when you often ride toward a fixed arrival time, use the Xiaobitan or Xinbeitou branch, or want the planner in a language you know. You can use every feature for 24 hours; after that, a single one-time unlock keeps the full app, with no subscription and nothing that renews automatically.",
+          "workflow_checks": [
+            "Does it show the latest time to enter the station, with a step-by-step timeline for every leg and transfer?",
+            "Does it warn you about first and last trains and remind you when it is time to go?",
+            "Does it cover the branch you ride, such as Xiaobitan or Xinbeitou, with the official fixed timetable?"
+          ],
+          "alternative_lens": "If you need live train arrivals, or you plan to ride the Airport MRT or light rail, a general map or transit app may fit better. The times in a leave-by planner like this are estimates based on official published headways and travel times between stations, not live train arrivals.",
+          "verify_before_install": [
+            "Check that the lines you ride are covered; the Airport MRT and light rail are not included.",
+            "Read the current listing for what the 24-hour trial and the one-time unlock include in your storefront."
+          ],
+          "evidence_refs": [
+            "summary.en",
+            "fact.purchase_model",
+            "fact.one_time_option"
+          ]
+        },
+        "zh-Hant": {
+          "language": "zh-Hant",
+          "market": "台灣",
+          "culture_route": "在台灣，不論是天天搭台北捷運通勤的上班族與學生，還是第一次來台北搭捷運的旅客，常常知道開會、聚餐或趕末班車要幾點到，卻不確定最晚幾點要進站，行程有轉乘時更難抓。",
+          "query": "搭台北捷運要準時抵達，最晚幾點要進站？",
+          "buyer_problem": "一般查詢只告訴你「現在出發幾點到」，但趕開會、聚餐或末班車時，真正要問的是反過來：連轉乘一起算，最晚幾點要進站。要判斷的是：依官方公開的班距與站間行駛時間、從抵達時間往回推算的出門時間工具，是否符合你搭車的方式。",
+          "decision_rule": "如果你常有固定的抵達時間、會搭小碧潭或新北投支線，或希望用自己熟悉的語言規劃，出門時間反推工具比較合適。下載後可先完整試用 24 小時所有功能，之後一次解鎖即可永久使用，沒有訂閱，也不會自動續訂。",
+          "workflow_checks": [
+            "能不能算出最晚進站時間，並用逐段時間軸列出每一段搭乘與轉乘？",
+            "遇到首末班車時段會不會警示，時間到了會不會提醒出發？",
+            "你常搭的小碧潭或新北投支線，是否依官方固定班表顯示下一班？"
+          ],
+          "alternative_lens": "如果你需要的是即時到站資訊，或要搭機場捷運、輕軌，一般地圖或交通 App 可能更合適。這類出門時間工具的時間，是依官方公開班距與站間行駛時間所做的預估，並非即時班次。",
+          "verify_before_install": [
+            "先確認你常搭的路線有涵蓋；不含機場捷運與輕軌。",
+            "購買前先看 App Store 頁面上 24 小時試用與一次解鎖包含哪些內容。"
           ],
           "evidence_refs": [
             "summary.zh-Hant",

@@ -320,6 +320,7 @@ def main():
     require([PY, os.path.join(HERE, "passport_photo_print_sheet.py")], env=env)
     require([PY, os.path.join(HERE, "document_scan_planner.py")], env=env)
     require([PY, os.path.join(HERE, "blurry_photo_diagnostic.py")], env=env)
+    require([PY, os.path.join(HERE, "web_tools_pilot.py")], env=env)
     require([PY, os.path.join(HERE, "daily_checklist_planner.py")], env=env)
     require([PY, os.path.join(HERE, "cycle_privacy_planner.py")], env=env)
     require([PY, os.path.join(HERE, "screen_time_block_planner.py")], env=env)

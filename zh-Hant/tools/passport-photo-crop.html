@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>護照照片裁切工具｜台灣、日本 35x45 公釐、美國 2x2 英吋</title>
+<meta name="description" content="把照片裁成台灣或日本 35x45 公釐、美國 2x2 英吋的護照尺寸，存成 300 DPI 的 JPEG。在瀏覽器裡處理，不會上傳。">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://open.cait518.cc/ios-app-guide/zh-Hant/tools/passport-photo-crop.html">
+<link rel="alternate" hreflang="en" href="https://open.cait518.cc/ios-app-guide/tools/passport-photo-crop.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://open.cait518.cc/ios-app-guide/zh-Hant/tools/passport-photo-crop.html">
+<link rel="alternate" hreflang="ja" href="https://open.cait518.cc/ios-app-guide/ja/tools/passport-photo-crop.html">
+<link rel="alternate" hreflang="x-default" href="https://open.cait518.cc/ios-app-guide/tools/passport-photo-crop.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="護照照片裁切工具">
+<meta property="og:description" content="把照片裁成台灣或日本 35x45 公釐、美國 2x2 英吋的護照尺寸，存成 300 DPI 的 JPEG。在瀏覽器裡處理，不會上傳。">
+<meta property="og:url" content="https://open.cait518.cc/ios-app-guide/zh-Hant/tools/passport-photo-crop.html">
+<meta name="twitter:card" content="summary">
+<style>
+:root{--ink:#171b24;--muted:#5d6574;--line:#dce1eb;--bg:#eef3f8;--navy:#18365f;--blue:#2d6da3;--mint:#dff4ec;--warn:#fff4d8}
+*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang TC","Hiragino Sans","Noto Sans TC","Noto Sans JP",sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+a{color:#18558b}.wrap{width:min(1120px,100% - 32px);margin:auto}.top{background:#fff;border-bottom:1px solid var(--line)}
+.nav{min-height:58px;display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}.nav a{text-decoration:none;font-weight:800}.nav-links{display:flex;gap:14px;flex-wrap:wrap}.nav-links a{color:var(--muted);font-size:14px}
+.hero{padding:36px 0 10px}h1{font-size:clamp(28px,5vw,46px);line-height:1.12;margin:.2em 0}.lead{color:var(--muted);font-size:18px;margin:0}.trust{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}.badge{border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 12px;font-size:13px;font-weight:800;color:var(--navy)}.badge.scope{background:#fff9ea;color:#684c1d}
+.card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:clamp(16px,3vw,28px);margin:18px auto}.card h2{margin:0 0 10px;font-size:clamp(20px,3vw,28px)}
+.grid{display:grid;grid-template-columns:minmax(240px,340px) minmax(0,1fr);gap:22px}.controls{display:grid;gap:12px;align-content:start}.field{border:1px solid var(--line);background:#f8fafc;border-radius:16px;padding:12px}.field label{display:block;color:var(--navy);font-size:13px;font-weight:800;margin-bottom:6px}
+input,select,button{font:inherit}input[type=file],select{width:100%;min-height:44px;border:1px solid #cbd3df;border-radius:12px;background:#fff;padding:8px 10px}input[type=range]{width:100%;accent-color:var(--blue)}
+.help,.status{color:var(--muted);font-size:13px;margin:6px 0 0}.status{min-height:1.5em}.button{border:0;border-radius:999px;background:var(--navy);color:#fff;text-decoration:none;font-weight:800;padding:10px 16px;cursor:pointer;display:inline-flex}.button.secondary{background:#fff;color:var(--navy);border:1px solid var(--line)}.button:disabled{opacity:.45;cursor:not-allowed}.row{display:flex;flex-wrap:wrap;gap:8px}
+.stage{display:flex;flex-wrap:wrap;gap:22px;align-items:flex-end;justify-content:center;padding:18px;border-radius:18px;background:#1d2330;min-height:320px}.device{display:grid;gap:8px;justify-items:center;color:#d8deea;font-size:13px;font-weight:700}.device canvas{display:block;border:8px solid #0b0d12;border-radius:26px;background:#2a3140;box-shadow:0 10px 30px rgba(0,0,0,.35);max-width:100%;height:auto}.device.outer canvas{width:150px}.device.inner canvas{width:min(420px,72vw);border-radius:22px}
+.crop-shell{position:relative;display:inline-block;touch-action:none;cursor:grab;background:repeating-linear-gradient(45deg,#e7ebf0,#e7ebf0 10px,#f3f5f8 10px,#f3f5f8 20px);padding:12px;border-radius:16px}.crop-shell canvas{display:block;max-width:100%;height:auto;box-shadow:0 6px 20px rgba(20,34,52,.2)}#guide{position:absolute;left:12px;top:12px;pointer-events:none}
+.note{background:var(--warn);border-color:#ead49d}.cta{background:linear-gradient(135deg,#f9fbff,#e8f1f8)}ul{padding-left:20px}li{margin:6px 0}
+@media(max-width:780px){.grid{grid-template-columns:1fr}}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "護照照片裁切工具", "description": "把照片裁成台灣或日本 35x45 公釐、美國 2x2 英吋的護照尺寸，存成 300 DPI 的 JPEG。在瀏覽器裡處理，不會上傳。", "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/tools/passport-photo-crop.html", "inLanguage": "zh-Hant", "datePublished": "2026-11-04", "applicationCategory": "MultimediaApplication", "operatingSystem": "Any", "browserRequirements": "JavaScript and local image decoding; no upload is used"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "iOS App Guide", "item": "https://open.cait518.cc/ios-app-guide/zh-Hant/index.html"}, {"@type": "ListItem", "position": 2, "name": "工具", "item": "https://open.cait518.cc/ios-app-guide/zh-Hant/tools/index.html"}, {"@type": "ListItem", "position": 3, "name": "護照照片裁切工具", "item": "https://open.cait518.cc/ios-app-guide/zh-Hant/tools/passport-photo-crop.html"}]}</script>
+<link rel="alternate" type="application/atom+xml" title="iOS App Guide — latest answers &amp; guides (Atom)" href="https://open.cait518.cc/ios-app-guide/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="iOS App Guide — latest answers &amp; guides (RSS 2.0)" href="https://open.cait518.cc/ios-app-guide/rss.xml">
+<link rel="alternate" type="application/feed+json" title="iOS App Guide — latest answers &amp; guides (JSON Feed 1.1)" href="https://open.cait518.cc/ios-app-guide/feed.json">
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a href="https://open.cait518.cc/ios-app-guide/zh-Hant/index.html">iOS App Guide</a><nav class="nav-links"><a href="https://open.cait518.cc/ios-app-guide/zh-Hant/tools/index.html">工具</a><a href="https://open.cait518.cc/ios-app-guide/tools/passport-photo-crop.html" hreflang="en" lang="en">English</a><a href="https://open.cait518.cc/ios-app-guide/ja/tools/passport-photo-crop.html" hreflang="ja" lang="ja">日本語</a></nav></div></header>
+<main>
+<section class="hero wrap"><h1>護照照片裁切工具</h1><p class="lead">依最終列印尺寸裁切，搭配頭部高度參考線，再存成 JPEG。</p><div class="trust"><span class="badge">照片只留在這個分頁，不會上傳</span><span class="badge scope">只準備照片；證件由主管機關核發</span></div></section>
+<section class="card wrap" id="tool"><div class="grid"><div class="controls">
+<div class="field"><label for="photo">照片</label><input id="photo" type="file" accept="image/*"><p class="help">也可以直接在框內拖曳照片。</p></div>
+<div class="field"><label for="preset">尺寸</label><select id="preset"><option value="us">美國：2 x 2 英吋（51 x 51 公釐）</option><option value="tw">台灣：35 x 45 公釐</option><option value="jp">日本：35 x 45 公釐</option></select></div>
+<div class="field"><label for="zoom">縮放</label><input id="zoom" type="range" min="100" max="400" value="100"><label for="pos-x">水平位置</label><input id="pos-x" type="range" min="0" max="100" value="50"><label for="pos-y">垂直位置</label><input id="pos-y" type="range" min="0" max="100" value="50"><label><input id="guides" type="checkbox" checked> 顯示頭部高度參考線</label></div>
+<div class="row"><button class="button" id="download" type="button" disabled>儲存 JPEG</button></div>
+<p class="status" id="status" aria-live="polite">請先選擇照片。</p>
+</div><div><div class="crop-shell" id="shell"><canvas id="crop" width="413" height="531" aria-label="護照照片裁切工具"></canvas><canvas id="guide" width="413" height="531" aria-hidden="true"></canvas></div></div></div></section>
+<section class="card note wrap"><h2>列印之前</h2><ul><li>使用近期拍攝、素色淺底、光線均勻、表情自然的照片。</li><li>參考線只標出所選尺寸的頭部高度範圍，不代表一定會被接受。</li><li>規定可能更新，申請前請到官方網站確認最新規定。</li></ul><p><strong>本工具只協助準備照片；護照等證件由主管機關核發，照片是否合格由主管機關認定。</strong></p><p><a href="https://open.cait518.cc/ios-app-guide/zh-Hant/tools/passport-photo-size-guide.html">護照照片尺寸指南</a></p></section>
+<section class="card cta wrap"><h2>在 iPhone 上準備證件照</h2><p>Snapport 提供多個地區的尺寸範本、臉部對齊參考線、背景工具與可直接列印的排版，全部在 iPhone 上處理。它只準備照片，證件由主管機關核發。</p><p><a class="button" href="https://apps.apple.com/app/id6780575828?pt=118326163&amp;ct=tool_passport_crop_zh_hant&amp;mt=8" rel="noopener">到 App Store 查看 Snapport</a></p>
+  <p class="android-play" data-android-play="com.snapport.app">Android: <a href="https://play.google.com/store/apps/details?id=com.snapport.app&amp;referrer=utm_source%3Dtool_passport_crop_zh_hant%26utm_campaign%3Dsnapport" rel="noopener">Google Play</a></p></section>
+<section class="card wrap"><h2>官方規定</h2><ul><li><a href="https://travel.state.gov/en/passports/apply/help/photos.html" rel="noopener noreferrer">美國國務院：護照照片</a></li><li><a href="https://www.boca.gov.tw/" rel="noopener noreferrer">中華民國外交部領事事務局</a></li><li><a href="https://www.mofa.go.jp/mofaj/toko/passport/" rel="noopener noreferrer">日本外務省：護照</a></li></ul></section>
+</main>
+<script>
+const COPY={"status_empty":"請先選擇照片。","status_ok":"頭頂對齊上方的線，下巴落在下方兩條線之間。","status_bad":"這個檔案無法當成圖片開啟。","status_saved":"JPEG 已存到你的裝置。"};
+const PRESETS={"us":{"w":50.8,"h":50.8,"top":6.0,"head_min":25.4,"head_max":34.9},"tw":{"w":35.0,"h":45.0,"top":4.0,"head_min":32.0,"head_max":36.0},"jp":{"w":35.0,"h":45.0,"top":4.0,"head_min":32.0,"head_max":36.0}};
+const DPI=300,MM_PER_INCH=25.4;
+const $=id=>document.getElementById(id);
+const crop=$("crop"),guide=$("guide"),shell=$("shell"),status=$("status"),download=$("download");
+let image=null,drag=null;
+const px=mm=>Math.round(mm/MM_PER_INCH*DPI);
+function preset(){return PRESETS[$("preset").value];}
+function layout(){const p=preset();const w=px(p.w),h=px(p.h);for(const canvas of [crop,guide]){canvas.width=w;canvas.height=h;}const shown=Math.min(w,420);for(const canvas of [crop,guide]){canvas.style.width=shown+"px";}}
+function geometry(){const scale=Math.max(crop.width/image.naturalWidth,crop.height/image.naturalHeight)*$("zoom").value/100;const w=image.naturalWidth*scale,h=image.naturalHeight*scale;return{w,h,x:(crop.width-w)*$("pos-x").value/100,y:(crop.height-h)*$("pos-y").value/100};}
+function drawGuides(){const ctx=guide.getContext("2d");ctx.clearRect(0,0,guide.width,guide.height);if(!$("guides").checked)return;const p=preset(),k=guide.height/p.h;ctx.setLineDash([8,6]);ctx.lineWidth=2;const line=(mm,color)=>{ctx.strokeStyle=color;ctx.beginPath();ctx.moveTo(0,mm*k);ctx.lineTo(guide.width,mm*k);ctx.stroke();};line(p.top,"#2d6da3");line(p.top+p.head_min,"#c0392b");line(p.top+p.head_max,"#c0392b");ctx.strokeStyle="rgba(45,109,163,.6)";ctx.beginPath();ctx.moveTo(guide.width/2,0);ctx.lineTo(guide.width/2,guide.height);ctx.stroke();}
+function render(){const ctx=crop.getContext("2d");ctx.fillStyle="#fff";ctx.fillRect(0,0,crop.width,crop.height);if(image){const g=geometry();ctx.imageSmoothingQuality="high";ctx.drawImage(image,g.x,g.y,g.w,g.h);}drawGuides();download.disabled=!image;}
+function setDensity(bytes){if(bytes[2]===0xFF&&bytes[3]===0xE0&&String.fromCharCode(...bytes.slice(6,10))==="JFIF"){bytes[13]=1;bytes[14]=DPI>>8;bytes[15]=DPI&255;bytes[16]=DPI>>8;bytes[17]=DPI&255;}return bytes;}
+$("photo").addEventListener("change",async event=>{const file=event.target.files&&event.target.files[0];if(!file)return;const url=URL.createObjectURL(file);const next=new Image();next.onload=()=>{image=next;URL.revokeObjectURL(url);render();status.textContent=COPY.status_ok;};next.onerror=()=>{URL.revokeObjectURL(url);status.textContent=COPY.status_bad;};next.src=url;});
+$("preset").addEventListener("change",()=>{layout();render();});
+["zoom","pos-x","pos-y","guides"].forEach(id=>$(id).addEventListener("input",render));
+shell.addEventListener("pointerdown",event=>{if(!image)return;drag={x:event.clientX,y:event.clientY,px:+$("pos-x").value,py:+$("pos-y").value};shell.setPointerCapture(event.pointerId);});
+shell.addEventListener("pointermove",event=>{if(!drag||!image)return;const g=geometry(),ratio=crop.width/crop.getBoundingClientRect().width;const spanX=crop.width-g.w,spanY=crop.height-g.h;const clamp=v=>Math.max(0,Math.min(100,v));if(spanX)$("pos-x").value=clamp(drag.px+(event.clientX-drag.x)*ratio/spanX*100);if(spanY)$("pos-y").value=clamp(drag.py+(event.clientY-drag.y)*ratio/spanY*100);render();});
+shell.addEventListener("pointerup",()=>{drag=null;});
+download.addEventListener("click",()=>{if(!image)return;crop.toBlob(async blob=>{const bytes=setDensity(new Uint8Array(await blob.arrayBuffer()));const p=preset();const link=document.createElement("a");link.href=URL.createObjectURL(new Blob([bytes],{type:"image/jpeg"}));link.download="passport-photo-"+$("preset").value+"-"+p.w+"x"+p.h+"mm.jpg";document.body.appendChild(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(link.href),1000);status.textContent=COPY.status_saved;},"image/jpeg",0.95);});
+layout();render();
+</script>
+</body>
+</html>

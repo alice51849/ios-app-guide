@@ -202,7 +202,12 @@ class AiCtBlockTests(unittest.TestCase):
             self.assertEqual("ai_referral", ct_codes.channel_for_ct(token))
 
     def test_scope_is_only_the_apps_own_pages(self):
-        self.assertEqual({"duowallpaperstudio": "6824946559"}, cb.AICT_APPS)
+        # 2026-11-05 擴到營收前 10 款(reports/per_app/growth_board.json 30 天 proceeds)。
+        self.assertEqual({
+            "mochi": "6785004775", "lumibopomofo": "6773017109", "lumiweather": "6779552704",
+            "stayclock": "6814035888", "duowallpaperstudio": "6824946559",
+            "snapport": "6780575828", "dailymate": "6790418321", "unblurry": "6782275018",
+            "gmoney": "6755782939", "cyca": "6782251621"}, cb.AICT_APPS)
         for rel in ("ja/duowallpaperstudio.html", "hubs/duowallpaperstudio.html",
                     "apps/duowallpaperstudio/decision/l/ja/index.html",
                     "alternatives/duowallpaperstudio-vs-x.html", "guides/duowallpaperstudio.html"):
@@ -235,6 +240,31 @@ class AiCtBlockTests(unittest.TestCase):
         again = cb.inject_tree(root)
         self.assertEqual(text, duo.read_text())
         self.assertEqual(1, again["ai_ct_pages"])
+
+    def test_each_block_carries_only_its_own_app(self):
+        for key, app_id in cb.AICT_APPS.items():
+            js = cb.ai_ct_block(key)
+            self.assertIn(f'"{app_id}":"{key}"', js)
+            for other, other_id in cb.AICT_APPS.items():
+                if other != key:
+                    self.assertNotIn(other_id, js, (key, other))
+        page = PAGE.replace("id111111111", "id" + cb.AICT_APPS["mochi"])
+        path = _write(self.root, "ja/mochi.html", page)
+        cb.inject_tree(self.root)
+        self.assertIn(cb.ai_ct_block("mochi"), path.read_text())
+
+    def test_csp_page_keeps_counter_only_when_csp_allows_it(self):
+        allow = ('<meta http-equiv="Content-Security-Policy" content="default-src \'none\'; '
+                 "script-src " + cb.click_beacon_script_hash() + "; connect-src "
+                 + cb.CLICK_BEACON_URL + '">')
+        page = PAGE.replace("<title>", allow + "<title>")
+        added, status = cb.inject_html(page)
+        self.assertEqual(cb.ADDED, status)
+        self.assertEqual((added, cb.UNCHANGED), cb.inject_html(added))
+        wider = allow.replace(cb.CLICK_BEACON_URL, cb.CLICK_BEACON_URL + " https://evil.example")
+        self.assertEqual(cb.REMOVED, cb.inject_html(added.replace(allow, wider))[1])
+        no_hash = allow.replace(cb.click_beacon_script_hash(), "'self'")
+        self.assertEqual(cb.REMOVED, cb.inject_html(added.replace(allow, no_hash))[1])
 
     def test_stale_block_is_removed_from_out_of_scope_pages(self):
         stale = PAGE.replace("</head>", cb.ai_ct_block() + "\n</head>")

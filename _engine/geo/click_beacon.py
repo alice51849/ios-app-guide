@@ -32,12 +32,21 @@ utm_source 換成同一碼(utm_campaign 照舊是款 key);沒有人工智慧來�
 repo 裡的頁面與靜態連結不變(只在部署產物執行時改),點擊計數在點擊當下讀 ct,
 所以人工智慧來源的點擊也記成 ai_ 碼。判讀:蘋果活動報表各 ai_ 碼的瀏覽／首次下載,
 11-26 仍 0 下載就收掉(``AICT_APPS`` 清空即全部移除)。
+2026-11-05(二十角度 13-1):擴到營收前 10 款(``reports/per_app/growth_board.json``
+30 天 proceeds 排序);每頁的區塊只帶「該頁那一款」的 id,同頁其他款的連結不改。
+11-26 判讀改看 ``ai_`` 點擊數(本計數)＋蘋果「其他 App 轉介」的 ChatGPT 列。
+
+自帶內容安全政策的頁(網頁工具試點):CSP 的 connect-src 明列 ``CLICK_BEACON_URL``、
+script-src 列出計數腳本的 sha256 時,才當一般頁放／保留計數區塊(``csp_allows_beacon``);
+其餘 CSP 頁照舊不放。
 
 本檔是 00_GrowthEngine geo/ 的正本,Guide ``_engine/geo/`` 是逐 byte 鏡像。
 """
 from __future__ import annotations
 
 import argparse
+import base64
+import hashlib
 import json
 import os
 from pathlib import Path
@@ -72,7 +81,19 @@ _CLICK_JS = (
 
 # ------------------------------------------------------------ 人工智慧來源追蹤碼
 # 款 key → App Store id。只放進這裡的款才會帶這塊(11-26 判讀;0 下載就清空)。
-AICT_APPS = {"duowallpaperstudio": "6824946559"}
+AICT_APPS = {
+    "mochi": "6785004775",
+    "lumibopomofo": "6773017109",
+    "lumiweather": "6779552704",
+    "stayclock": "6814035888",
+    "duowallpaperstudio": "6824946559",
+    "snapport": "6780575828",
+    "dailymate": "6790418321",
+    "unblurry": "6782275018",
+    "gmoney": "6755782939",
+    "cyca": "6782251621",
+}
+AICT_DEFAULT_APP = "duowallpaperstudio"
 # 來源主機(含子網域)→ ct;utm_source 也接受這些主機或第一段名稱(chatgpt、perplexity…)。
 AICT_ENGINES = (
     ("chatgpt.com", "ai_chatgpt"),
@@ -89,11 +110,11 @@ AICT_END = "<!-- ls-aict:end -->"
 AICT_RE = re.compile(re.escape(AICT_START) + r".*?" + re.escape(AICT_END) + r"\n?", re.S)
 
 
-def _aict_js() -> str:
+def _aict_js(app: str = AICT_DEFAULT_APP) -> str:
     engines = json.dumps([list(row) for row in AICT_ENGINES], separators=(",", ":"))
     names = json.dumps(AICT_NAMES, separators=(",", ":"), sort_keys=True)
-    ids = json.dumps({v: k for k, v in AICT_APPS.items()}, separators=(",", ":"), sort_keys=True)
-    keys = json.dumps(sorted(AICT_APPS), separators=(",", ":"))
+    ids = json.dumps({AICT_APPS[app]: app}, separators=(",", ":"), sort_keys=True)
+    keys = json.dumps([app], separators=(",", ":"))
     return (
         "(function(){try{var M=" + engines + ",N=" + names + ",I=" + ids + ",K=" + keys + ";"
         "function m(h){h=String(h||'').toLowerCase().replace(/^\\s+|\\s+$/g,'').replace(/^www\\./,'');"
@@ -117,9 +138,9 @@ def _aict_js() -> str:
     )
 
 
-def ai_ct_block() -> str:
-    """受管的人工智慧來源追蹤碼區塊(只放在 AICT_APPS 那幾款自己的頁面)。"""
-    return f"{AICT_START}\n<script>{_aict_js()}</script>\n{AICT_END}"
+def ai_ct_block(app: str = AICT_DEFAULT_APP) -> str:
+    """受管的人工智慧來源追蹤碼區塊(放在 AICT_APPS 某一款自己的頁面,只改那一款的連結)。"""
+    return f"{AICT_START}\n<script>{_aict_js(app)}</script>\n{AICT_END}"
 
 
 def ai_ct_app(relative: str, source: str) -> str | None:
@@ -132,12 +153,13 @@ def ai_ct_app(relative: str, source: str) -> str | None:
     return None
 
 
-def inject_ai_ct_html(source: str, wanted: bool) -> tuple[str, str]:
+def inject_ai_ct_html(source: str, wanted: bool,
+                      app: str = AICT_DEFAULT_APP) -> tuple[str, str]:
     """與 inject_html 同一套規則放／移除人工智慧來源追蹤碼區塊;wanted=False 只移除。"""
     found = list(AICT_RE.finditer(source))
     if source.count(AICT_START) != len(found) or source.count(AICT_END) != len(found):
         return source, SKIP_MALFORMED
-    block = ai_ct_block()
+    block = ai_ct_block(app)
     stripped = AICT_RE.sub("", source) if found else source
     if not wanted:
         return stripped, (REMOVED if found else UNCHANGED)
@@ -157,6 +179,32 @@ def inject_ai_ct_html(source: str, wanted: bool) -> tuple[str, str]:
 def click_beacon_block() -> str:
     """受管的點擊計數區塊(支援站、help 頁、指南站輸出同一塊,位元組一致)。"""
     return f"{CLICK_START}\n<script>{_CLICK_JS}</script>\n{CLICK_END}"
+
+
+def click_beacon_script_hash() -> str:
+    """計數腳本的 CSP 來源字樣(``'sha256-…'``),給自帶 CSP 的頁放行這一段腳本。"""
+    digest = hashlib.sha256(_CLICK_JS.encode("utf-8")).digest()
+    return "'sha256-" + base64.b64encode(digest).decode("ascii") + "'"
+
+
+_CSP_CONTENT_RE = re.compile(
+    r"<meta\b[^>]*\bhttp-equiv\s*=\s*[\"']?content-security-policy[\"']?[^>]*?"
+    r"\bcontent\s*=\s*\"([^\"]*)\"", re.I)
+
+
+def csp_allows_beacon(source: str) -> bool:
+    """頁上唯一一個 CSP meta 的 connect-src 只放行計數端點、script-src 放行計數腳本。"""
+    metas = _CSP_RE.findall(source)
+    contents = _CSP_CONTENT_RE.findall(source)
+    if len(metas) != 1 or len(contents) != 1:
+        return False
+    directives = {}
+    for part in contents[0].split(";"):
+        words = part.split()
+        if words:
+            directives[words[0].lower()] = words[1:]
+    return (directives.get("connect-src") == [CLICK_BEACON_URL]
+            and click_beacon_script_hash() in directives.get("script-src", []))
 
 
 # ------------------------------------------------------------ 指南站部署前注入
@@ -208,7 +256,7 @@ def inject_html(source: str) -> tuple[str, str]:
         return source, SKIP_MALFORMED
     block = click_beacon_block()
     stripped = CLICK_RE.sub("", source) if found else source
-    if _CSP_RE.search(stripped):
+    if _CSP_RE.search(stripped) and not csp_allows_beacon(stripped):
         return stripped, (REMOVED if found else SKIP_CSP)
     if _AMP_RE.search(stripped):
         return stripped, (REMOVED if found else SKIP_AMP)
@@ -257,7 +305,7 @@ def inject_tree(pages: Path = PAGES) -> dict[str, int]:
         relative = path.relative_to(pages).as_posix()
         app = ai_ct_app(relative, updated)
         if app or AICT_START in updated:
-            updated, ai_status = inject_ai_ct_html(updated, bool(app))
+            updated, ai_status = inject_ai_ct_html(updated, bool(app), app or AICT_DEFAULT_APP)
             if app and ai_status in (ADDED, UNCHANGED):
                 stats["ai_ct_pages"] += 1
             elif app:

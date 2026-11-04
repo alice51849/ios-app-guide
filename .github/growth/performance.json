@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-11-03T06:30:45Z",
+  "updated_at": "2026-11-04T06:01:08Z",
   "note": "Insights of our own IG / Threads posts by .github/scripts/post_performance.py. score = views + 3*likes + 5*replies + 8*(saves+shares+reposts). boost = best apps, read by 00_GrowthEngine shorts/scripts/schedule_posts.py.",
   "sources": {
     "instagram": "ok: 38 posts",
-    "threads": "ok: 11 posts"
+    "threads": "ok: 12 posts"
   },
   "boost": [
     "cvdesk",
     "mochi_suneung",
-    "gmoney",
     "wifiaidlite",
+    "gmoney",
     "duowallpaperstudio"
   ],
   "demote": [
@@ -104,7 +104,7 @@
         "posts": 16,
         "hours": {
           "1": 9.3,
-          "2": 2.0,
+          "2": 4.0,
           "8": 12.7,
           "13": 11.0,
           "16": 8.0
@@ -112,10 +112,10 @@
       },
       "zh-Hant": {
         "hour": 3,
-        "avg_views": 280.5,
-        "posts": 13,
+        "avg_views": 282.5,
+        "posts": 14,
         "hours": {
-          "3": 280.5,
+          "3": 282.5,
           "6": 30.5,
           "13": 82.5,
           "16": 10.0,
@@ -130,10 +130,10 @@
       {
         "key": "cvdesk",
         "posts": 2,
-        "views": 357,
+        "views": 362,
         "engagement": 3,
-        "score": 370,
-        "avg_score": 185.0
+        "score": 375,
+        "avg_score": 187.5
       },
       {
         "key": "mochi_suneung",
@@ -144,20 +144,20 @@
         "avg_score": 165.0
       },
       {
-        "key": "gmoney",
-        "posts": 2,
-        "views": 205,
-        "engagement": 1,
-        "score": 210,
-        "avg_score": 105.0
-      },
-      {
         "key": "wifiaidlite",
         "posts": 3,
         "views": 293,
         "engagement": 0,
         "score": 293,
         "avg_score": 97.7
+      },
+      {
+        "key": "gmoney",
+        "posts": 3,
+        "views": 265,
+        "engagement": 2,
+        "score": 275,
+        "avg_score": 91.7
       },
       {
         "key": "duowallpaperstudio",
@@ -491,19 +491,19 @@
       },
       {
         "key": "zh-Hant",
-        "posts": 41,
-        "views": 1146,
-        "engagement": 14,
-        "score": 1210,
-        "avg_score": 29.5
+        "posts": 42,
+        "views": 1207,
+        "engagement": 15,
+        "score": 1276,
+        "avg_score": 30.4
       },
       {
         "key": "en",
         "posts": 34,
-        "views": 323,
+        "views": 327,
         "engagement": 9,
-        "score": 366,
-        "avg_score": 10.8
+        "score": 370,
+        "avg_score": 10.9
       },
       {
         "key": "de",
@@ -536,20 +536,20 @@
         "locale": "zh-Hant",
         "hook": "我是獨立開發者。看過太多人履歷投了幾十家沒回音，問題不在經歷，而是履歷在 ATS（應徵者追蹤系統）那關就被程式讀亂了：兩",
         "posts": 1,
-        "views": 356,
+        "views": 357,
         "engagement": 2,
-        "score": 364,
-        "avg_score": 364.0
+        "score": 365,
+        "avg_score": 365.0
       },
       {
         "app": "gmoney",
         "locale": "zh-Hant",
         "hook": "我是獨立開發者。每次出國回來都被問「這趟花了多少？」，我以前答不出來：日圓付錢、台幣想預算，兩邊從來沒對起來。所以做了 ",
         "posts": 1,
-        "views": 205,
+        "views": 208,
         "engagement": 1,
-        "score": 210,
-        "avg_score": 210.0
+        "score": 213,
+        "avg_score": 213.0
       },
       {
         "app": "mochi_suneung",
@@ -650,6 +650,16 @@
         "engagement": 0,
         "score": 64,
         "avg_score": 64.0
+      },
+      {
+        "app": "gmoney",
+        "locale": "zh-Hant",
+        "hook": "雙11 加上年底聚餐，錢花得特別快？先設好今天的上限。",
+        "posts": 1,
+        "views": 57,
+        "engagement": 1,
+        "score": 62,
+        "avg_score": 62.0
       },
       {
         "app": "mochi_halloween",
@@ -932,6 +942,16 @@
         "avg_score": 10.0
       },
       {
+        "app": "cvdesk",
+        "locale": "en",
+        "hook": "صانع السيرة الذاتية وفحص ATS.",
+        "posts": 1,
+        "views": 5,
+        "engagement": 1,
+        "score": 10,
+        "avg_score": 10.0
+      },
+      {
         "app": "maskmyfile",
         "locale": "en",
         "hook": "You sent the bank statement. The account number was still on",
@@ -1058,16 +1078,6 @@
         "posts": 1,
         "views": 6,
         "engagement": 0,
-        "score": 6,
-        "avg_score": 6.0
-      },
-      {
-        "app": "cvdesk",
-        "locale": "en",
-        "hook": "صانع السيرة الذاتية وفحص ATS.",
-        "posts": 1,
-        "views": 1,
-        "engagement": 1,
         "score": 6,
         "avg_score": 6.0
       },
@@ -3377,12 +3387,12 @@
       "kind": "image",
       "variant": null,
       "metrics": {
-        "views": 356,
+        "views": 357,
         "likes": 1,
         "replies": 1,
         "reposts": 0
       },
-      "score": 364
+      "score": 365
     },
     {
       "channel": "instagram",
@@ -3543,12 +3553,12 @@
       "kind": "image",
       "variant": null,
       "metrics": {
-        "views": 205,
+        "views": 208,
         "likes": 0,
         "replies": 1,
         "reposts": 0
       },
-      "score": 210
+      "score": 213
     },
     {
       "channel": "threads",
@@ -3562,12 +3572,31 @@
       "kind": "image",
       "variant": null,
       "metrics": {
-        "views": 1,
+        "views": 5,
         "likes": 0,
         "replies": 1,
         "reposts": 0
       },
-      "score": 6
+      "score": 10
+    },
+    {
+      "channel": "threads",
+      "id": "18064172375530876",
+      "link": "https://www.threads.com/@hourstag.app/post/DfTYnrnD0Oa",
+      "posted_at": "2026-11-04T02:36:02",
+      "app": "gmoney",
+      "locale": "zh-Hant",
+      "hook": "雙11 加上年底聚餐，錢花得特別快？先設好今天的上限。",
+      "clip": null,
+      "kind": "image",
+      "variant": null,
+      "metrics": {
+        "views": 57,
+        "likes": 0,
+        "replies": 1,
+        "reposts": 0
+      },
+      "score": 62
     }
   ]
 }

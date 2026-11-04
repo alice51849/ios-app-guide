@@ -1,12 +1,12 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-11-03",
-  "content_digest": "b9573af86be05286f86d04d6eb55aa8bc997a5721a54511f01d49ed6b86e8214",
+  "date_modified": "2026-11-04",
+  "content_digest": "d41bfe7e156aabee8cf16c8afd333da7f2ca1d1367dc4352339ff83f32cded2b",
   "locale": "en-GB",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 56,
+  "record_count": 57,
   "apps": [
     {
       "key": "notesstudio100",
@@ -373,9 +373,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/en-GB/dailymate.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "11.99",
+        "price": "6",
         "currency": "GBP",
-        "formatted_price": "£11.99",
+        "formatted_price": "£6.00",
         "storefront_url": "https://apps.apple.com/gb/app/id6790418321"
       }
     },
@@ -486,9 +486,7 @@
         "digital",
         "wake",
         "up",
-        "cute",
-        "holiday alarm clock",
-        "workday alarm"
+        "cute"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -590,9 +588,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/en-GB/gmoney.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "4.99",
+        "price": "2.9",
         "currency": "GBP",
-        "formatted_price": "£4.99",
+        "formatted_price": "£2.90",
         "storefront_url": "https://apps.apple.com/gb/app/id6755782939"
       }
     },
@@ -673,9 +671,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/en-GB/gbago.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "8.99",
+        "price": "4.99",
         "currency": "GBP",
-        "formatted_price": "£8.99",
+        "formatted_price": "£4.99",
         "storefront_url": "https://apps.apple.com/gb/app/id6804564400"
       }
     },
@@ -869,10 +867,7 @@
         "preschool",
         "writing",
         "stroke",
-        "order",
-        "bopomofo",
-        "learn zhuyin",
-        "zhuyin"
+        "order"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -912,9 +907,7 @@
         "printable",
         "pronunciation",
         "reception",
-        "quiz",
-        "zhuyin",
-        "bopomofo"
+        "quiz"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1272,6 +1265,48 @@
       }
     },
     {
+      "key": "metrotimehelper",
+      "app_store_id": "6819061896",
+      "name": "Metro Time Helper: Taipei MRT",
+      "summary": "Built for the Taipei MRT in Taiwan: tell Metro Time Helper when you need to arrive, and it works out the latest time to walk into the station.",
+      "category": "utility",
+      "search_terms": [
+        "underground",
+        "train",
+        "timetable",
+        "taiwan",
+        "last",
+        "first",
+        "route",
+        "map",
+        "xinbeitou",
+        "xiaobitan",
+        "beitou",
+        "holiday",
+        "station"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/gb/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/en-GB/metrotimehelper.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "GBP",
+        "formatted_price": "Free",
+        "storefront_url": "https://apps.apple.com/gb/app/id6819061896"
+      }
+    },
+    {
       "key": "mochi",
       "app_store_id": "6785004775",
       "name": "Mochi: To-Do List & Checklist",
@@ -1414,8 +1449,7 @@
         "page",
         "pager",
         "pdf",
-        "notes",
-        "one page summary"
+        "notes"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1773,9 +1807,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/en-GB/snapport.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "5.99",
+        "price": "3",
         "currency": "GBP",
-        "formatted_price": "£5.99",
+        "formatted_price": "£3.00",
         "storefront_url": "https://apps.apple.com/gb/app/id6780575828"
       }
     },
@@ -2067,9 +2101,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/en-GB/tripbee.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "5.99",
+        "price": "3",
         "currency": "GBP",
-        "formatted_price": "£5.99",
+        "formatted_price": "£3.00",
         "storefront_url": "https://apps.apple.com/gb/app/id6787754435"
       }
     },
@@ -2132,10 +2166,7 @@
         "llm",
         "agent",
         "allowance",
-        "cli",
-        "copilot usage",
-        "ai usage tracker",
-        "claude usage limit"
+        "cli"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2194,9 +2225,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/en-GB/wifiaid.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "5.99",
+        "price": "3",
         "currency": "GBP",
-        "formatted_price": "£5.99",
+        "formatted_price": "£3.00",
         "storefront_url": "https://apps.apple.com/gb/app/id6790467886"
       }
     },
@@ -2318,9 +2349,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/en-GB/wordmate.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "8.99",
+        "price": "4.99",
         "currency": "GBP",
-        "formatted_price": "£8.99",
+        "formatted_price": "£4.99",
         "storefront_url": "https://apps.apple.com/gb/app/id6789917808"
       }
     },
@@ -2362,9 +2393,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/en-GB/zipbox.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "4.99",
+        "price": "2.9",
         "currency": "GBP",
-        "formatted_price": "£4.99",
+        "formatted_price": "£2.90",
         "storefront_url": "https://apps.apple.com/gb/app/id6806776579"
       }
     }

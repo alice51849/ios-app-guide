@@ -113,12 +113,12 @@
       "additionalProperties": false
     },
     "record_count": {
-      "const": 56
+      "const": 57
     },
     "apps": {
       "type": "array",
-      "minItems": 56,
-      "maxItems": 56,
+      "minItems": 57,
+      "maxItems": 57,
       "uniqueItems": true,
       "items": {
         "type": "object",

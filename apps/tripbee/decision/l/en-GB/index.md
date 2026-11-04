@@ -2,7 +2,7 @@
 title: "best trip itinerary planner app for iphone"
 lang: "en-GB"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbee/decision/l/en-GB/index.html"
-modified: "2026-11-03"
+modified: "2026-11-04"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -19,7 +19,7 @@ A good itinerary app turns a messy trip into a clear day-by-day timeline — fli
 - No adverts
 - No tracking
 - Private / on-device
-- App Store · £5.99
+- App Store · £3.00
 
 [Get TripBee Pro: Trip Planner on the App Store →](https://apps.apple.com/gb/app/id6787754435?pt=118326163&ct=geo_pick&mt=8)
 

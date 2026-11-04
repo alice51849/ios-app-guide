@@ -4,7 +4,7 @@
 
 Un catálogo publicado directamente por el desarrollador que indica para quién está diseñada cada app, la tarea que quiere completar y el acceso directo a App Store.
 
-Intenciones de búsqueda redactadas por el desarrollador para 56 apps iOS verificadas y disponibles en 50 idiomas y regiones de Apple.
+Intenciones de búsqueda redactadas por el desarrollador para 57 apps iOS verificadas y disponibles en 50 idiomas y regiones de Apple.
 
 **Región:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · **es-MX** · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -105,6 +105,7 @@ Orden alfabético por nombre de app — nunca es una posición.
 | **G+Money** | mejor app para seguimiento de presupuesto de viaje sin suscripción para iPhone | En un viaje necesitas un rastreador de presupuesto que funcione offline en un país sin datos, maneje múltiples monedas y no pida cuenta — organizado por viaje para que cada vacación sea separada. Ese es justo el hueco que G+Money busca cubrir. | Descarga de pago | [Guía](https://open.cait518.cc/ios-app-guide/es-MX/answers/best-travel-budget-tracker-app-no-subscription-iphone.html) | [Obtén G+Money en la App Store →](https://apps.apple.com/mx/app/id6755782939?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money Lite: Gastos de viaje** | G+Money Lite: Gastos de viaje — Gasto diario en reloj y widget \| iOS App | Ten claro cuánto te queda por gastar hoy, viajes a donde viajes. Anota cada compra en la moneda local y mírala al instante en tu moneda, ya descontada | Gratis para empezar · desbloqueo con una compra única | [Guía](https://open.cait518.cc/ios-app-guide/es-MX/gmoneylite.html) | [Consigue G+Money Lite: Gastos de viaje en el App Store](https://apps.apple.com/mx/app/id6793436548?pt=118326163&ct=geo_pick&mt=8) |
 | **GBAGo: Partidas visuales** | GBAGo: Partidas visuales — Recuperación · Instantáneas \| iOS App | GBAGo es un emulador de juegos para iPhone y iPad. Importa tus archivos .gba, .gbc y .gb (o un .zip que contenga uno) desde la app Archivos y juega a 60 | Descarga de pago | [Guía](https://open.cait518.cc/ios-app-guide/es-MX/gbago.html) | [Consigue GBAGo: Partidas visuales en el App Store](https://apps.apple.com/mx/app/id6804564400?pt=118326163&ct=geo_pick&mt=8) |
+| **Hora de Metro en Taipei** | Hora de Metro en Taipei — Calcula a qué hora salir \| iOS App | Hora de Metro es la herramienta para saber a qué hora salir en el metro de Taipei, en Taiwán: dinos a qué hora tienes que llegar y te decimos la hora | Gratis para empezar · desbloqueo con una compra única | [Guía](https://open.cait518.cc/ios-app-guide/es-MX/metrotimehelper.html) | [Consigue Hora de Metro en Taipei en el App Store](https://apps.apple.com/mx/app/id6819061896?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag Lite: Precio en horas** | HoursTag Lite: Precio en horas — Compra consciente: precio real \| iOS App | Antes de comprar, ve cuántas horas de trabajo te cuesta en realidad. Ingresa tu sueldo neto por hora y HoursTag Lite convierte cada precio en tiempo de | Gratis para empezar · desbloqueo con una compra única | [Guía](https://open.cait518.cc/ios-app-guide/es-MX/hourstaglite.html) | [Consigue HoursTag Lite: Precio en horas en el App Store](https://apps.apple.com/mx/app/id6794039979?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag: Horas para comprar** | HoursTag: Horas para comprar — Salario por hora y gastos \| iOS App | ¿Cuánto cuesta de verdad? No solo en pesos, sino en horas de tu vida. | Descarga de pago | [Guía](https://open.cait518.cc/ios-app-guide/es-MX/hourstag.html) | [Consigue HoursTag: Horas para comprar en el App Store](https://apps.apple.com/mx/app/id6754218117?pt=118326163&ct=geo_pick&mt=8) |
 | **LED Moving Text** | LED Moving Text — Letrero luminoso animado \| iOS App | Escribe una frase y levanta el iPhone. Desde el fondo de la pista, al otro lado de la sala de llegadas o por encima de un mostrador, se lee de una sola | Gratis para empezar · desbloqueo con una compra única | [Guía](https://open.cait518.cc/ios-app-guide/es-MX/ledmovingtext.html) | [Consigue LED Moving Text en el App Store](https://apps.apple.com/mx/app/id6806639602?pt=118326163&ct=geo_pick&mt=8) |
@@ -148,7 +149,7 @@ Orden alfabético por nombre de app — nunca es una posición.
 
 ## Descargar el conjunto de datos completo
 
-JSON, JSONL y CSV contienen los mismos 2,800 registros.
+JSON, JSONL y CSV contienen los mismos 2,850 registros.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -156,6 +157,6 @@ JSON, JSONL y CSV contienen los mismos 2,800 registros.
 
 [Inicio](https://open.cait518.cc/ios-app-guide/es-MX/index.html) · [Datos abiertos](https://open.cait518.cc/ios-app-guide/es-MX/data/lumi-studio-publisher-search-intent-catalog.html) · [Licencia](https://creativecommons.org/licenses/by/4.0/)
 
-Actualizado: 2026-11-03
+Actualizado: 2026-11-04
 
 CC BY 4.0 aplica a la compilación original del catálogo; los nombres de las apps y las marcas de App Store pertenecen a sus propietarios.

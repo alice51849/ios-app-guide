@@ -1,12 +1,12 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-11-03",
-  "content_digest": "b9573af86be05286f86d04d6eb55aa8bc997a5721a54511f01d49ed6b86e8214",
+  "date_modified": "2026-11-04",
+  "content_digest": "d41bfe7e156aabee8cf16c8afd333da7f2ca1d1367dc4352339ff83f32cded2b",
   "locale": "pt-BR",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 56,
+  "record_count": 57,
   "apps": [
     {
       "key": "notesstudio100",
@@ -26,8 +26,7 @@
         "gravação",
         "aula",
         "desenho",
-        "offline",
-        "notas à mão"
+        "offline"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -386,8 +385,7 @@
         "aeroporto",
         "restaurante",
         "hotel",
-        "offline",
-        "guia de conversação"
+        "offline"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -753,8 +751,7 @@
         "letras",
         "fila",
         "palco",
-        "aviso",
-        "placa aeroporto"
+        "aviso"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -836,10 +833,7 @@
         "símbolos",
         "escrita",
         "pré-escola",
-        "sons",
-        "bopomofo",
-        "zhuyin",
-        "mandarim crianças"
+        "sons"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1230,6 +1224,49 @@
       }
     },
     {
+      "key": "metrotimehelper",
+      "app_store_id": "6819061896",
+      "name": "Hora do Metrô em Taipei",
+      "summary": "Diga que horas você precisa chegar e descubra que horas sair. O Hora do Metrô faz a conta ao contrário no metrô de Taipei, em Taiwan, para você chegar na hora, sem correria.",
+      "category": "utility",
+      "search_terms": [
+        "horário",
+        "mapa",
+        "trem",
+        "baldeação",
+        "estação",
+        "último",
+        "Taiwan",
+        "Taipé",
+        "Beitou",
+        "Xiaobitan",
+        "viagem",
+        "roteiro",
+        "alarme",
+        "MRT"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/br/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/pt-BR/metrotimehelper.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "BRL",
+        "formatted_price": "Grátis",
+        "storefront_url": "https://apps.apple.com/br/app/id6819061896"
+      }
+    },
+    {
       "key": "mochi",
       "app_store_id": "6785004775",
       "name": "Mochi: Lista fofa",
@@ -1247,10 +1284,7 @@
         "calendário",
         "widget",
         "organização",
-        "diária",
-        "lista de tarefas",
-        "checklist",
-        "to do list"
+        "diária"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1331,9 +1365,7 @@
         "fluxo de caixa",
         "vendas",
         "aluguel",
-        "clientes",
-        "despesas do projeto",
-        "receitas e despesas"
+        "clientes"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1745,8 +1777,7 @@
         "colocar",
         "deixar",
         "pdf",
-        "imagem",
-        "foto 3x4"
+        "imagem"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1904,8 +1935,7 @@
         "fotos",
         "hotel",
         "museu",
-        "aeroporto",
-        "jogos para viagem de carro"
+        "aeroporto"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2028,8 +2058,7 @@
         "4k",
         "corrigir",
         "embaçada",
-        "ia",
-        "corrigir foto borrada"
+        "ia"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

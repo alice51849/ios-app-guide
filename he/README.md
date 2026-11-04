@@ -4,7 +4,7 @@
 
 קטלוג רשמי המציג עבור מי מיועדת כל אפליקציה, המשימה שהיא נועדה לבצע, והמסלול הישיר ל-App Store.
 
-כוונות חיפוש שנכתבו על ידי המפרסם עבור 56 אפליקציות iOS מאומתות ו-50 לוקאלים של Apple.
+כוונות חיפוש שנכתבו על ידי המפרסם עבור 57 אפליקציות iOS מאומתות ו-50 לוקאלים של Apple.
 
 **לוקאל:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · **he** · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -145,10 +145,11 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **Wordmate Lite: לומדים שפות** | Wordmate Lite: לומדים שפות — חמש מילים ביום, דקה אחת \| iOS App | לומדים 5 מילים בערך בדקה: אנגלית, יפנית, קוריאנית או כל אחת מ-44 שפות, ומתחילים ממצבים אמיתיים כמו טיול, מסעדה וקניות. | התחלה ללא תשלום · פתיחה ברכישה חד-פעמית | [מדריך](https://open.cait518.cc/ios-app-guide/he/wordmatelite.html) | [הורידו את Wordmate Lite: לומדים שפות מה-App Store](https://apps.apple.com/il/app/id6797601720?pt=118326163&ct=geo_pick&mt=8) |
 | **Wordmate: Learn 44 Languages** | אפליקציית אוצר מילים למשתמשים עסוקים עם Apple Watch | משתמשים עסוקים צריכים תרגול אוצר מילים שמתאים לדקות פנויות בלי לדרוש שיעור מלא, חשבון חדש או טלפון ביד בכל סקירה. Wordmate: Learn 44 Languages התחיל בדיוק מהבעיה הזאת. | הורדה בתשלום | [מדריך](https://open.cait518.cc/ios-app-guide/he/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html) | [קבל את Wordmate: Learn 44 Languages ב-App Store →](https://apps.apple.com/il/app/id6789917808?pt=118326163&ct=geo_pick&mt=8) |
 | **Zipbox: חילוץ RAR, ZIP, 7z** | Zipbox: חילוץ RAR, ZIP, 7z — פתיחת ארכיונים בלי פרסומות \| iOS App | פותחים RAR, 7z, ZIP ועוד 10 פורמטים של ארכיונים ישירות באייפון. מציצים פנימה לפני החילוץ: תצוגה מקדימה של תמונות, וידאו, PDF, טקסט וקוד, ומחלצים רק את | הורדה בתשלום | [מדריך](https://open.cait518.cc/ios-app-guide/he/zipbox.html) | [הורידו את Zipbox: חילוץ RAR, ZIP, 7z מה-App Store](https://apps.apple.com/il/app/id6806776579?pt=118326163&ct=geo_pick&mt=8) |
+| **עוזר זמני המטרו: טאיפיי** | עוזר זמני המטרו: טאיפיי — מתי לצאת כדי להגיע בזמן \| iOS App | נבנה במיוחד עבור המטרו של טאיפיי שבטייוואן: בוחרים מתי צריך להגיע, ועוזר זמני המטרו אומר מה השעה האחרונה להיכנס לתחנה. | התחלה ללא תשלום · פתיחה ברכישה חד-פעמית | [מדריך](https://open.cait518.cc/ios-app-guide/he/metrotimehelper.html) | [הורידו את עוזר זמני המטרו: טאיפיי מה-App Store](https://apps.apple.com/il/app/id6819061896?pt=118326163&ct=geo_pick&mt=8) |
 
 ## הורד את מערך הנתונים המלא
 
-קבצי JSON, JSONL ו-CSV כוללים את אותן 2,800 רשומות.
+קבצי JSON, JSONL ו-CSV כוללים את אותן 2,850 רשומות.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -156,6 +157,6 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 [בית](https://open.cait518.cc/ios-app-guide/he/index.html) · [נתונים פתוחים](https://open.cait518.cc/ios-app-guide/he/data/lumi-studio-publisher-search-intent-catalog.html) · [רישיון](https://creativecommons.org/licenses/by/4.0/)
 
-עודכן: 2026-11-03
+עודכן: 2026-11-04
 
 רישיון CC BY 4.0 חל על הרכב הקטלוג המקורי; שמות האפליקציות וסימני App Store שייכים לבעליהם.

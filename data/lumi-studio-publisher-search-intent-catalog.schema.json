@@ -74,13 +74,13 @@
       "const": "official_locale_order_then_alphabetical_app_name"
     },
     "app_count": {
-      "const": 56
+      "const": 57
     },
     "locale_count": {
       "const": 50
     },
     "record_count": {
-      "const": 2800
+      "const": 2850
     },
     "locales": {
       "type": "array",
@@ -144,8 +144,8 @@
     },
     "records": {
       "type": "array",
-      "minItems": 2800,
-      "maxItems": 2800,
+      "minItems": 2850,
+      "maxItems": 2850,
       "items": {
         "type": "object",
         "additionalProperties": false,
@@ -261,6 +261,7 @@
               "lumimissionpro",
               "lumiweather",
               "maskmyfile",
+              "metrotimehelper",
               "mochi",
               "mochidonestamp",
               "moneytag",

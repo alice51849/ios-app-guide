@@ -4,7 +4,7 @@
 
 Pierwotny katalog określający, dla kogo jest przeznaczona każda aplikacja, jakie zadanie ma wykonać oraz bezpośrednią ścieżkę do App Store.
 
-Zamiary wyszukiwania tworzone przez wydawcę dla 56 zweryfikowanych działających aplikacji iOS oraz 50 lokalizacji Apple.
+Zamiary wyszukiwania tworzone przez wydawcę dla 57 zweryfikowanych działających aplikacji iOS oraz 50 lokalizacji Apple.
 
 **Lokalizacja:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · **pl** · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -135,6 +135,7 @@ Alfabetycznie według nazwy aplikacji — nigdy porządek według popularności.
 | **Sono Note** | najlepsza aplikacja do notatek głosowych podsumowująca spotkania na iPhone | Po rozmowie nie chcesz surowego transkryptu — chcesz podsumowanie, zadania i szkic maila. To właśnie tę lukę ma wypełnić Sono Note. | Darmowe na start · odblokowanie jednorazowym zakupem | [Przewodnik](https://open.cait518.cc/ios-app-guide/pl/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [Pobierz Sono Note w App Store →](https://apps.apple.com/pl/app/id6782139553?pt=118326163&ct=geo_pick&mt=8) |
 | **Stay Clock** | najlepsza aplikacja, by zmienić starego iPhone'a w zegar biurkowy działający bez przerwy | Stay Clock — Stay Clock zmienia iPhone'a lub iPada w zegar biurkowy widoczny bez przerwy, czytelny nawet z drugiego końca pokoju. Darmowy start · Jednorazowe odblokowanie · Bez subskrypcji. | Darmowe na start · odblokowanie jednorazowym zakupem | [Przewodnik](https://open.cait518.cc/ios-app-guide/pl/answers/best-app-to-turn-an-old-iphone-into-an-always-on-desk-clock.html) | [Pobierz Stay Clock w App Store →](https://apps.apple.com/pl/app/id6814035888?pt=118326163&ct=geo_pick&mt=8) |
 | **Studydown: Pomiar czasu** | Studydown: Pomiar czasu — Połóż ekranem w dół \| iOS App | Połóż telefon ekranem w dół, a pomiar ruszy; podnieś go, a się zatrzyma, więc do godzin nauki i pracy liczy się tylko prawdziwe skupienie. | Darmowe na start · odblokowanie jednorazowym zakupem | [Przewodnik](https://open.cait518.cc/ios-app-guide/pl/studydown.html) | [Pobierz Studydown: Pomiar czasu z App Store](https://apps.apple.com/pl/app/id6807335593?pt=118326163&ct=geo_pick&mt=8) |
+| **Tajpej: metro na czas** | Tajpej: metro na czas — Kiedy wyjść, żeby zdążyć \| iOS App | Podaj, na którą musisz być na miejscu, a aplikacja powie ci, kiedy najpóźniej wejść na stację metra w Tajpej na Tajwanie. | Darmowe na start · odblokowanie jednorazowym zakupem | [Przewodnik](https://open.cait518.cc/ios-app-guide/pl/metrotimehelper.html) | [Pobierz Tajpej: metro na czas z App Store](https://apps.apple.com/pl/app/id6819061896?pt=118326163&ct=geo_pick&mt=8) |
 | **Trip Planet: Kids Quest** | najlepsza aplikacja z aktywnościami podróżnymi dla dzieci na rodzinne wyjazdy | Rodzice podróżujący z małymi dziećmi potrzebują aktywności, które zamieniają pakowanie, oczekiwanie i odkrywanie nowego miejsca w część przygody zamiast kolejnego powodu do stresu. Po to właśnie powstał Trip Planet: Kids Quest. | Darmowe na start · odblokowanie jednorazowym zakupem | [Przewodnik](https://open.cait518.cc/ios-app-guide/pl/answers/best-travel-activity-app-for-kids-on-family-trips.html) | [Pobierz Trip Planet: Kids Quest z App Store →](https://apps.apple.com/pl/app/id6787193643?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Lite** | najlepsza prosta aplikacja do planowania jednej nadchodzącej podróży na iPhone | Jeśli planujesz jedną nadchodzącą podróż, spokojna oś czasu dla tej wycieczki jest bardziej przydatna niż zatłoczony archiwum wszystkich podróży, które możesz kiedyś odbyć. Jeśli to brzmi znajomo, zajrzyj do TripBee Lite. | Darmowe na start · odblokowanie jednorazowym zakupem | [Przewodnik](https://open.cait518.cc/ios-app-guide/pl/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html) | [Pobierz TripBee Lite w App Store →](https://apps.apple.com/pl/app/id6791299610?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Pro: Planer podróży** | najlepsza aplikacja do planowania planu podróży na iPhone | Dobra aplikacja do planowania zmienia chaotyczną podróż w jasny plan dzień po dniu — loty, hotele, atrakcje, restauracje i transport — z czytelnymi ikonami, byś mógł szybko odczytać swój dzień. Jeśli to brzmi znajomo, zajrzyj do TripBee Pro: Planer podróży. | Płatne do pobrania | [Przewodnik](https://open.cait518.cc/ios-app-guide/pl/answers/best-trip-itinerary-planner-app-for-iphone.html) | [Pobierz TripBee Pro: Planer podróży w App Store →](https://apps.apple.com/pl/app/id6787754435?pt=118326163&ct=geo_pick&mt=8) |
@@ -148,7 +149,7 @@ Alfabetycznie według nazwy aplikacji — nigdy porządek według popularności.
 
 ## Pobierz kompletny zestaw danych
 
-Formaty JSON, JSONL i CSV zawierają te same 2 800 rekordów.
+Formaty JSON, JSONL i CSV zawierają te same 2 850 rekordów.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -156,6 +157,6 @@ Formaty JSON, JSONL i CSV zawierają te same 2 800 rekordów.
 
 [Strona główna](https://open.cait518.cc/ios-app-guide/pl/index.html) · [Otwarta baza danych](https://open.cait518.cc/ios-app-guide/pl/data/lumi-studio-publisher-search-intent-catalog.html) · [Licencja](https://creativecommons.org/licenses/by/4.0/)
 
-Zaktualizowano: 2026-11-03
+Zaktualizowano: 2026-11-04
 
 Licencja CC BY 4.0 dotyczy oryginalnego zestawu katalogowego; nazwy aplikacji i znaki App Store należą do ich właścicieli.

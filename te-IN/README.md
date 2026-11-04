@@ -4,7 +4,7 @@
 
 ప్రతి యాప్ ఎవరికోసం రూపొందించబడిందో, వారు పూర్తి చేయదలచుకున్న పని ఏమిటో, మరియు ప్రత్యక్ష App Store మార్గం ఏదో ఒక స్వంత సంస్థ క్యాటలాగ్.
 
-56 ధృవీకరించబడిన ప్రత్యక్ష iOS యాప్స్ మరియు 50 Apple స్థానికీకరణలపై ప్రచురకుడు రచించిన శోధన ఉద్దేశ్యాలు.
+57 ధృవీకరించబడిన ప్రత్యక్ష iOS యాప్స్ మరియు 50 Apple స్థానికీకరణలపై ప్రచురకుడు రచించిన శోధన ఉద్దేశ్యాలు.
 
 **స్థానికీకరణ:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · **te-IN** · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -135,6 +135,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **Sono Note** | iPhoneపై సమావేశాలను సారాంశం చేసే ఉత్తమ వాయిస్ నోట్స్ యాప్ | కాల్ తర్వాత మీరు కచ్చితమైన ట్రాన్స్క్రిప్ట్ కాకుండా సారాంశం, చర్య అంశాలు మరియు డ్రాఫ్ట్ ఫాలో-అప్ కావాలి. ఈ ఖాళీనే Sono Note పూరించాలనుకుంటుంది. | ఉచితంగా ప్రారంభించండి · ఒకసారి కొనుగోలుతో అన్‌లాక్ | [గైడ్](https://open.cait518.cc/ios-app-guide/te-IN/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [App Storeలో Sono Note పొందండి →](https://apps.apple.com/in/app/id6782139553?pt=118326163&ct=geo_pick&mt=8) |
 | **Stay Clock: మడత గడియారం** | Stay Clock: మడత గడియారం — ఎప్పుడూ వెలిగే సమయం క్యాలెండర్ \| iOS App | Stay Clock మీ iPhone లేదా iPadని గది అవతలి వైపు నుండి కూడా చదవగలిగే, ఎప్పుడూ వెలిగే డెస్క్ క్లాక్‌గా మారుస్తుంది. మడత గడియారాలతో సహా 101 ముఖాల నుంచి | ఉచితంగా ప్రారంభించండి · ఒకసారి కొనుగోలుతో అన్‌లాక్ | [గైడ్](https://open.cait518.cc/ios-app-guide/te-IN/stayclock.html) | [App Store నుంచి Stay Clock: మడత గడియారం పొందండి](https://apps.apple.com/in/app/id6814035888?pt=118326163&ct=geo_pick&mt=8) |
 | **Studydown: ఫోకస్ టైమర్** | Studydown: ఫోకస్ టైమర్ — స్క్రీన్ కిందికి పెట్టి ఉంచండి \| iOS App | ఫోన్‌ను స్క్రీన్ కిందికి పెట్టగానే టైమర్ మొదలవుతుంది, ఎత్తగానే ఆగుతుంది; కాబట్టి చదువు, పని గంటల్లో నిజమైన ఏకాగ్రత సమయమే లెక్కకు వస్తుంది. | ఉచితంగా ప్రారంభించండి · ఒకసారి కొనుగోలుతో అన్‌లాక్ | [గైడ్](https://open.cait518.cc/ios-app-guide/te-IN/studydown.html) | [App Store నుంచి Studydown: ఫోకస్ టైమర్ పొందండి](https://apps.apple.com/in/app/id6807335593?pt=118326163&ct=geo_pick&mt=8) |
+| **Taipei MRT సమయ సహాయకారి** | Taipei MRT సమయ సహాయకారి — ఎప్పుడు బయలుదేరాలో తెలుసుకోండి \| iOS App | తైవాన్‌లోని తైపీ (Taipei) MRT ప్రయాణాల కోసం రూపొందించిన సమయ సహాయకారి ఇది. మీరు ఎన్ని గంటలకు చేరుకోవాలో చెబితే చాలు; స్టేషన్‌లోకి ఎప్పటిలోగా ప్రవేశించాలో | ఉచితంగా ప్రారంభించండి · ఒకసారి కొనుగోలుతో అన్‌లాక్ | [గైడ్](https://open.cait518.cc/ios-app-guide/te-IN/metrotimehelper.html) | [App Store నుంచి Taipei MRT సమయ సహాయకారి పొందండి](https://apps.apple.com/in/app/id6819061896?pt=118326163&ct=geo_pick&mt=8) |
 | **Trip Planet: Kids Quest** | కుటుంబ ప్రయాణాల్లో పిల్లలకు ఉత్తమ ట్రావెల్ కార్యకలాప యాప్ | యువ పిల్లలతో ప్రయాణించే తల్లిదండ్రులకు ప్యాకింగ్, వేచి ఉండడం మరియు కొత్త ప్రదేశాన్ని అన్వేషించడం అనుభవంలో భాగంగా మారే కార్యకలాపాలు అవసరం, అదనపు ఒత్తిడిగా కాకుండా. అందుకే Trip Planet: Kids Quest తయారైంది. | ఉచితంగా ప్రారంభించండి · ఒకసారి కొనుగోలుతో అన్‌లాక్ | [గైడ్](https://open.cait518.cc/ios-app-guide/te-IN/answers/best-travel-activity-app-for-kids-on-family-trips.html) | [Trip Planet: Kids Quest ను App Store లో పొందండి →](https://apps.apple.com/in/app/id6787193643?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Lite** | ఒక రాబోయే ప్రయాణానికి ఉత్తమ సులభమైన ట్రిప్ ప్లానర్ యాప్ iPhone కోసం | మీరు ఒక రాబోయే ప్రయాణాన్ని ప్లాన్ చేస్తుంటే, ఆ ప్రయాణానికి ఒక శాంతమైన టైమ్‌లైన్ ప్రతి ప్రయాణం యొక్క గందరగోళమైన ఆర్కైవ్ కంటే ఉపయోగకరం. పరిచయమైన సమస్యే అనిపిస్తే TripBee Lite ఒకసారి చూడండి. | ఉచితంగా ప్రారంభించండి · ఒకసారి కొనుగోలుతో అన్‌లాక్ | [గైడ్](https://open.cait518.cc/ios-app-guide/te-IN/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html) | [App Storeలో ట్రిప్‌బీ లైట్ పొందండి →](https://apps.apple.com/in/app/id6791299610?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Pro: ట్రిప్ ప్లానర్** | iPhone కోసం ఉత్తమ ట్రిప్ ఇటికరరీ ప్లానర్ యాప్ | మంచి ఇటికరరీ యాప్ గందరగోళమైన ప్రయాణాన్ని స్పష్టమైన రోజువారీ టైమ్‌లైన్‌గా మార్చుతుంది — ఫ్లైట్స్, హోటల్స్, కార్యకలాపాలు, రెస్టారెంట్లు మరియు రవాణా — స్పష్టమైన టైప్ ఐకాన్లతో మీరు మీ రోజును ఒక చూపులో చదవగలుగుతారు. పరిచయమైన సమస్యే అనిపిస్తే TripBee Pro: ట్రిప్ ప్లానర్ ఒకసారి చూడండి. | చెల్లింపు డౌన్లోడ్ | [గైడ్](https://open.cait518.cc/ios-app-guide/te-IN/answers/best-trip-itinerary-planner-app-for-iphone.html) | [App Storeలో TripBee Pro: ట్రిప్ ప్లానర్ పొందండి →](https://apps.apple.com/in/app/id6787754435?pt=118326163&ct=geo_pick&mt=8) |
@@ -148,7 +149,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## పూర్తి డేటాసెట్‌ను డౌన్లోడ్ చేసుకోండి
 
-JSON, JSONL మరియు CSV లో అదే 2,800 రికార్డులు ఉన్నాయి.
+JSON, JSONL మరియు CSV లో అదే 2,850 రికార్డులు ఉన్నాయి.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -156,6 +157,6 @@ JSON, JSONL మరియు CSV లో అదే 2,800 రికార్డు�
 
 [హోమ్](https://open.cait518.cc/ios-app-guide/te-IN/index.html) · [ఓపెన్ డేటా](https://open.cait518.cc/ios-app-guide/te-IN/data/lumi-studio-publisher-search-intent-catalog.html) · [లైసెన్స్](https://creativecommons.org/licenses/by/4.0/)
 
-నవీకరించబడింది: 2026-11-03
+నవీకరించబడింది: 2026-11-04
 
 CC BY 4.0 అసలు క్యాటలాగ్ సంకలనం పై వర్తిస్తుంది; యాప్ పేర్లు మరియు App Store గుర్తులు వాటి యజమానులకు చెందుతాయి.

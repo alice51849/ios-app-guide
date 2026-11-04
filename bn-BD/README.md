@@ -6,7 +6,7 @@
 Apple App Store এখনো বাংলাদেশে চালু হয়নি, তাই এখান থেকে অ্যাপের সরাসরি ডাউনলোড লিঙ্ক দেওয়া সম্ভব নয়। অ্যাপটির সব তথ্য নিচে বাংলায় দেওয়া আছে।
 market_availability: {"state": "MARKET_UNAVAILABLE_OR_UNVERIFIED", "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES", "evidence": {"source_url": "https://support.apple.com/en-us/118205", "observed_at": "2026-09-12", "country": "BD", "apple_media_services_markets": 174, "country_listed": false, "lookup_app_results": 0, "lookup_control_results": 0, "redirect_market": "US"}, "value": "N/A", "content_retained": true, "publishable": false, "facts_allowed": false, "outbox_count": 0}
 
-৫৬টি যাচাইকৃত লাইভ iOS অ্যাপ এবং ৫০টি Apple লোকালের প্রকাশক-লিখিত অনুসন্ধান উদ্দেশ্য।
+৫৭টি যাচাইকৃত লাইভ iOS অ্যাপ এবং ৫০টি Apple লোকালের প্রকাশক-লিখিত অনুসন্ধান উদ্দেশ্য।
 
 **লোকাল:** [ar-SA](../ar-SA/) · **bn-BD** · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -147,10 +147,11 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **Wordmate Lite: ইংরেজি শেখা** | Wordmate Lite: ইংরেজি শেখা — প্রতিদিন ৫টি নতুন শব্দ \| iOS App | প্রায় এক মিনিটে ৫টি শব্দ শিখুন: ইংরেজি, জাপানি, কোরিয়ান বা ৪৪টি ভাষার যেকোনোটি, শুরু ভ্রমণ, খাওয়াদাওয়া আর কেনাকাটার মতো বাস্তব পরিস্থিতি দিয়ে। | বিনামূল্যে শুরু · এককালীন কেনাকাটায় আনলক | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/wordmatelite.html) | N/A (MARKET_NOT_IN_APPLE_MEDIA_SERVICES) |
 | **Wordmate: শব্দভাণ্ডার শিখুন** | Wordmate: শব্দভাণ্ডার শিখুন — শব্দ, ফ্ল্যাশকার্ড, উইজেট \| iOS App | বিমানবন্দর, হোটেল, পথ জিজ্ঞাসা ইত্যাদি ১৪টি ব্যবহারিক বিষয়ের ৮৪টি ইউনিটে ৪৪টি ভাষার শব্দ শিখুন, তিনটি স্তরে, উচ্চারণ শুনে শুনে। ইংরেজি শব্দের সঙ্গে উদাহরণ | পেইড ডাউনলোড | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/wordmate.html) | N/A (MARKET_NOT_IN_APPLE_MEDIA_SERVICES) |
 | **Zipbox: ZIP, RAR, 7z আনজিপ** | Zipbox: ZIP, RAR, 7z আনজিপ — বিজ্ঞাপন ছাড়া, আগে দেখে নিন \| iOS App | ফোনেই সরাসরি RAR, 7z, ZIP সহ 13 ধরনের আর্কাইভ খুলুন। এক্সট্র্যাক্ট করার আগেই ভেতরে দেখুন: ছবি, ভিডিও, PDF, টেক্সট ও কোড প্রিভিউ করে শুধু দরকারি ফাইলটি | পেইড ডাউনলোড | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/zipbox.html) | N/A (MARKET_NOT_IN_APPLE_MEDIA_SERVICES) |
+| **মেট্রো সময় সহায়ক: Taipei MRT** | মেট্রো সময় সহায়ক: Taipei MRT — কখন বের হবেন, আগেই জানুন \| iOS App | তাইওয়ানের তাইপে মেট্রোর জন্য বের হওয়ার সময়ের সহায়ক: কখন পৌঁছাতে চান বলুন, আর মেট্রো সময় সহায়ক জানিয়ে দেবে স্টেশনে ঢোকার শেষ সময় কখন। | বিনামূল্যে শুরু · এককালীন কেনাকাটায় আনলক | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/metrotimehelper.html) | N/A (MARKET_NOT_IN_APPLE_MEDIA_SERVICES) |
 
 ## সম্পূর্ণ ডেটাসেট ডাউনলোড করুন
 
-JSON, JSONL এবং CSV একই ২,৮০০ রেকর্ড ধারণ করে।
+JSON, JSONL এবং CSV একই ২,৮৫০ রেকর্ড ধারণ করে।
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -158,6 +159,6 @@ JSON, JSONL এবং CSV একই ২,৮০০ রেকর্ড ধার�
 
 [হোম](https://open.cait518.cc/ios-app-guide/bn-BD/index.html) · [খোলা তথ্য](https://open.cait518.cc/ios-app-guide/bn-BD/data/lumi-studio-publisher-search-intent-catalog.html) · [লাইসেন্স](https://creativecommons.org/licenses/by/4.0/)
 
-আপডেট: 2026-11-03
+আপডেট: 2026-11-04
 
 মূল ক্যাটালগ সংকলনের জন্য CC BY 4.0 প্রযোজ্য; অ্যাপ নাম ও App Store চিহ্ন তাদের মালিকদের।

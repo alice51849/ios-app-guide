@@ -4,7 +4,7 @@
 
 ஒவ்வொரு செயலியும் யாருக்காக வடிவமைக்கப்பட்டுள்ளதோ, அவர்கள் நிறைவேற்ற முயற்சிக்கும் பணியோ, நேரடி App Store பாதையோ ஆகியவற்றின் முதல்-பார்ட்டி அட்டவணை.
 
-56 உறுதிப்படுத்தப்பட்ட நேரடி iOS செயலிகள் மற்றும் 50 Apple உள்ளூர் மொழிகளில் வெளியீட்டாளர் எழுதிய தேடல் நோக்கங்கள்.
+57 உறுதிப்படுத்தப்பட்ட நேரடி iOS செயலிகள் மற்றும் 50 Apple உள்ளூர் மொழிகளில் வெளியீட்டாளர் எழுதிய தேடல் நோக்கங்கள்.
 
 **உள்ளூர் மொழி:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · **ta-IN** · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -135,6 +135,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **Sono Note** | iPhone இல் கூட்டங்களைக் குறுக்கமாக சுருக்கும் சிறந்த குரல் குறிப்பு செயலி | ஒரு அழைப்புக்குப் பிறகு நீங்கள் ஒரு மூல உரை வேண்டாம் — சுருக்கம், செயல் பொருட்கள் மற்றும் தொடர்ச்சி வரைவு வேண்டும். இந்த இடைவெளியைத்தான் Sono Note நிரப்ப முயல்கிறது. | இலவசமாக தொடங்கவும் · ஒரே கொள்முதலில் திறப்பு | [வழிகாட்டி](https://open.cait518.cc/ios-app-guide/ta-IN/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [App Store இல் Sono Note ஐப் பெறுங்கள் →](https://apps.apple.com/in/app/id6782139553?pt=118326163&ct=geo_pick&mt=8) |
 | **Stay Clock: மடக்கு கடிகாரம்** | Stay Clock: மடக்கு கடிகாரம் — எப்போதும் நேரம், நாட்காட்டி \| iOS App | Stay Clock உங்கள் iPhone அல்லது iPadஐ, அறையின் மறுமுனையிலிருந்தும் படிக்கக்கூடிய, எப்போதும் ஒளிரும் மேசைக் கடிகாரமாக மாற்றுகிறது. மடக்கு கடிகாரங்கள் | இலவசமாக தொடங்கவும் · ஒரே கொள்முதலில் திறப்பு | [வழிகாட்டி](https://open.cait518.cc/ios-app-guide/ta-IN/stayclock.html) | [App Store-இல் Stay Clock: மடக்கு கடிகாரம்-ஐப் பெறுங்கள்](https://apps.apple.com/in/app/id6814035888?pt=118326163&ct=geo_pick&mt=8) |
 | **Studydown: கவன நேரம்** | Studydown: கவன நேரம் — திரை கீழ்நோக்கி வையுங்கள் \| iOS App | ஃபோனைத் திரை கீழ்நோக்கி வைத்தால் டைமர் தொடங்கும், எடுத்தால் நிற்கும்; அதனால் படிப்பு, வேலை நேரத்தில் உண்மையான கவன நேரம் மட்டுமே சேரும். | இலவசமாக தொடங்கவும் · ஒரே கொள்முதலில் திறப்பு | [வழிகாட்டி](https://open.cait518.cc/ios-app-guide/ta-IN/studydown.html) | [App Store-இல் Studydown: கவன நேரம்-ஐப் பெறுங்கள்](https://apps.apple.com/in/app/id6807335593?pt=118326163&ct=geo_pick&mt=8) |
+| **Taipei MRT நேர உதவியாளர்** | Taipei MRT நேர உதவியாளர் — கிளம்ப வேண்டிய நேரம் அறிக \| iOS App | தைவானின் Taipei MRT பயணத்துக்கான நேர உதவியாளர் இது: எத்தனை மணிக்குச் சேர வேண்டும் என்று சொன்னால், நிலையத்துக்குள் எத்தனை மணிக்குள் நுழைய வேண்டும் என்று | இலவசமாக தொடங்கவும் · ஒரே கொள்முதலில் திறப்பு | [வழிகாட்டி](https://open.cait518.cc/ios-app-guide/ta-IN/metrotimehelper.html) | [App Store-இல் Taipei MRT நேர உதவியாளர்-ஐப் பெறுங்கள்](https://apps.apple.com/in/app/id6819061896?pt=118326163&ct=geo_pick&mt=8) |
 | **Trip Planet: Kids Quest** | குடும்பப் பயணங்களில் குழந்தைகளுக்கான சிறந்த பயண செயலி | இளம் குழந்தைகளுடன் பயணம் செய்யும் பெற்றோருக்கு, பொருட்கள் தொகுப்பு, காத்திருப்பு மற்றும் புதிய இடம் கண்டறிதலை சாகசமாக மாற்றும் செயல்பாடுகள் தேவை. அதற்காகவே Trip Planet: Kids Quest உருவானது. | இலவசமாக தொடங்கவும் · ஒரே கொள்முதலில் திறப்பு | [வழிகாட்டி](https://open.cait518.cc/ios-app-guide/ta-IN/answers/best-travel-activity-app-for-kids-on-family-trips.html) | [Trip Planet: Kids Quest-ஐ App Store-இல் பெறுங்கள் →](https://apps.apple.com/in/app/id6787193643?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Lite** | ஒரு வரவிருக்கும் பயணத்திற்கான சிறந்த எளிய பயண திட்டமிடும் செயலி iPhoneக்கானது | நீங்கள் ஒரு வரவிருக்கும் பயணத்தை திட்டமிடுகிறீர்கள் என்றால், அந்த பயணத்திற்கான அமைதியான காலவரிசை, நீங்கள் ஒருநாள் செல்லக்கூடிய அனைத்து பயணங்களின் கூட்டமான காப்பகத்தைவிட பயனுள்ளதாக இருக்கும். பரிச்சயமாகத் தோன்றினால் TripBee Lite ஒரு முறை பாருங்கள். | இலவசமாக தொடங்கவும் · ஒரே கொள்முதலில் திறப்பு | [வழிகாட்டி](https://open.cait518.cc/ios-app-guide/ta-IN/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html) | [App Storeஇல் TripBee Lite ஐப் பெறுங்கள் →](https://apps.apple.com/in/app/id6791299610?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Pro: பயண திட்டமிடுபவர்** | iPhone க்கான சிறந்த பயண திட்டமிடும் செயலி | ஒரு நல்ல பயண திட்ட செயலி குழப்பமான பயணத்தை தெளிவான நாள் தோறும் காலவரிசையாக மாற்றுகிறது — விமானங்கள், ஹோட்டல்கள், செயல்பாடுகள், உணவகங்கள் மற்றும் போக்குவரத்து — தெளிவான வகை ஐகான்களுடன் உங்கள் நாளை ஒரே பார்வையில் வாசிக்க. பரிச்சயமாகத் தோன்றினால் TripBee Pro: பயண திட்டமிடுபவர் ஒரு முறை பாருங்கள். | பணம் செலுத்தி பதிவிறக்கவும் | [வழிகாட்டி](https://open.cait518.cc/ios-app-guide/ta-IN/answers/best-trip-itinerary-planner-app-for-iphone.html) | [App Store இல் TripBee Pro: பயண திட்டமிடுபவரைப் பெறுங்கள் →](https://apps.apple.com/in/app/id6787754435?pt=118326163&ct=geo_pick&mt=8) |
@@ -148,7 +149,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## முழு தரவுத்தொகுப்பை பதிவிறக்கவும்
 
-JSON, JSONL மற்றும் CSV ஆகியவை ஒரே 2,800 பதிவுகளை கொண்டுள்ளன.
+JSON, JSONL மற்றும் CSV ஆகியவை ஒரே 2,850 பதிவுகளை கொண்டுள்ளன.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -156,6 +157,6 @@ JSON, JSONL மற்றும் CSV ஆகியவை ஒரே 2,800 பத�
 
 [முகப்பு](https://open.cait518.cc/ios-app-guide/ta-IN/index.html) · [திறந்த தரவு](https://open.cait518.cc/ios-app-guide/ta-IN/data/lumi-studio-publisher-search-intent-catalog.html) · [அனுமதி](https://creativecommons.org/licenses/by/4.0/)
 
-புதுப்பிக்கப்பட்டது: 2026-11-03
+புதுப்பிக்கப்பட்டது: 2026-11-04
 
 CC BY 4.0 அசல் அட்டவணை தொகுப்பிற்கு பொருந்தும்; செயலி பெயர்கள் மற்றும் App Store குறியீடுகள் உரிமையாளர்களுக்கு சொந்தமானவை.

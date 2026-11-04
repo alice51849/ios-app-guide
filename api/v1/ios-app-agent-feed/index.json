@@ -8,7 +8,7 @@
   "csv_url": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-agent-feed/feed.csv",
   "schema_url": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-agent-feed/feed.schema.json",
   "license": "https://creativecommons.org/licenses/by/4.0/",
-  "dateModified": "2026-11-03",
+  "dateModified": "2026-11-04",
   "publisher": {
     "name": "Lumi Studio",
     "url": "https://open.cait518.cc/ios-app-guide/about.html"
@@ -18,8 +18,8 @@
   "enable_checkout": false,
   "checkout_note": "Purchase happens on the Apple App Store via app_store_url; this publisher operates no checkout endpoint.",
   "price_source": "Apple App Store public lookup snapshot",
-  "row_count": 2735,
-  "app_count": 56,
+  "row_count": 2784,
+  "app_count": 57,
   "locale_count": 49,
   "official_locale_count": 50,
   "blocked_markets": {
@@ -125,6 +125,7 @@
     "lumimissionpro",
     "lumiweather",
     "maskmyfile",
+    "metrotimehelper",
     "mochi",
     "mochidonestamp",
     "moneytag",
@@ -180,5 +181,5 @@
     "one_time_purchase",
     "subscription"
   ],
-  "content_digest": "sha256:db477c44683cec8d4bd06159fce047fc8bdd31fd4f5c1769f1105769cd0d5de6"
+  "content_digest": "sha256:1419163d39646c6e7bf5bb472d2ae9bd54fb9803f0afa2e35e2750e8296450a2"
 }

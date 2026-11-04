@@ -1,12 +1,12 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-11-03",
-  "content_digest": "b9573af86be05286f86d04d6eb55aa8bc997a5721a54511f01d49ed6b86e8214",
+  "date_modified": "2026-11-04",
+  "content_digest": "d41bfe7e156aabee8cf16c8afd333da7f2ca1d1367dc4352339ff83f32cded2b",
   "locale": "zh-Hant",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 56,
+  "record_count": 57,
   "apps": [
     {
       "key": "notesstudio100",
@@ -153,9 +153,7 @@
         "讀書",
         "求職",
         "畢業門檻",
-        "上班族",
-        "多益",
-        "英文檢定"
+        "上班族"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -193,10 +191,7 @@
         "充電保養",
         "充電區間",
         "充電速率",
-        "匯出資料",
-        "電池檢測",
-        "電池",
-        "電池容量"
+        "匯出資料"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -363,9 +358,7 @@
         "工作經歷",
         "畢業生",
         "打工",
-        "實習",
-        "履歷範本",
-        "履歷製作"
+        "實習"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -418,8 +411,7 @@
         "生理痛",
         "日記",
         "症狀",
-        "心情",
-        "經期 追蹤"
+        "心情"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -648,9 +640,7 @@
         "隔週",
         "外派",
         "台灣",
-        "返工",
-        "上班日 鬧鐘",
-        "輪班 鬧鐘"
+        "返工"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -931,8 +921,7 @@
         "儲蓄",
         "花費",
         "小資族",
-        "節流",
-        "衝動購物"
+        "節流"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1158,8 +1147,7 @@
         "注音發音",
         "寶寶",
         "注音符號遊戲",
-        "學注音符號",
-        "注音"
+        "學注音符號"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1272,8 +1260,7 @@
         "學英文",
         "幼稚園",
         "親子",
-        "幼兒學習",
-        "兒童 字母"
+        "幼兒學習"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1333,8 +1320,7 @@
         "親子",
         "練習",
         "描寫",
-        "小朋友",
-        "兒童 自然發音"
+        "小朋友"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1516,10 +1502,7 @@
         "蓋章",
         "教養",
         "幼兒園",
-        "早睡早起",
-        "兒童 習慣",
-        "獎勵 貼紙",
-        "睡前 習慣"
+        "早睡早起"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1635,9 +1618,7 @@
         "手錶",
         "即時",
         "逐時",
-        "一週",
-        "穿搭 天氣",
-        "天氣"
+        "一週"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1718,6 +1699,62 @@
       }
     },
     {
+      "key": "metrotimehelper",
+      "app_store_id": "6819061896",
+      "name": "捷運時間助手－台北轉乘時刻表",
+      "summary": "專為台灣・台北捷運打造：你只要說幾點要到，捷運時間助手就告訴你最晚幾點要進站。",
+      "category": "utility",
+      "search_terms": [
+        "末班車",
+        "首班車",
+        "路線圖",
+        "地鐵",
+        "MRT",
+        "通勤",
+        "上班",
+        "遲到",
+        "美河市",
+        "發車",
+        "提醒",
+        "行程規劃",
+        "七張",
+        "溫泉",
+        "淡水",
+        "信義線",
+        "板南線",
+        "文湖線",
+        "環狀線",
+        "中和新蘆線",
+        "松山新店線",
+        "新店",
+        "支線",
+        "交通",
+        "大眾運輸",
+        "小工具",
+        "倒數"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/tw/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/metrotimehelper.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "storefront_url": "https://apps.apple.com/tw/app/id6819061896"
+      }
+    },
+    {
       "key": "mochi",
       "app_store_id": "6785004775",
       "name": "Mochi: 可愛待辦清單",
@@ -1751,8 +1788,7 @@
         "行事曆",
         "任務",
         "鎖定畫面",
-        "重複提醒",
-        "代辦事項"
+        "重複提醒"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1810,8 +1846,7 @@
         "打卡",
         "什麼時候",
         "追蹤",
-        "提醒事項",
-        "上次 什麼時候"
+        "提醒事項"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1873,8 +1908,7 @@
         "團購",
         "活動",
         "家庭",
-        "流水帳",
-        "副業 記帳"
+        "流水帳"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1931,8 +1965,7 @@
         "ppt製作",
         "專案",
         "提報",
-        "pdf",
-        "一頁 摘要"
+        "pdf"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2098,8 +2131,7 @@
         "郵件",
         "行事曆",
         "定位",
-        "聯絡人",
-        "qr code 連結 檢查"
+        "聯絡人"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2646,8 +2678,7 @@
         "搭車",
         "週末",
         "海島",
-        "動物園",
-        "小孩 旅行"
+        "動物園"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2922,9 +2953,7 @@
         "無線網路",
         "延遲測試",
         "連線測試",
-        "TCP",
-        "網路 檢查",
-        "wifi 診斷"
+        "TCP"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -3140,9 +3169,7 @@
         "批次解壓",
         "離線",
         "壓縮軟體",
-        "壓縮工具",
-        "密碼保護 zip",
-        "開啟 rar 檔案"
+        "壓縮工具"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,

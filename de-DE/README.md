@@ -4,7 +4,7 @@
 
 Ein direkt vom Entwickler veröffentlichter Katalog, der zeigt, für wen jede App entwickelt wurde, welche Aufgabe die jeweilige Person erledigen möchte und wie sie direkt zum App Store gelangt.
 
-Vom Herausgeber verfasste Suchintentionen für 56 verifizierte, im App Store verfügbare iOS Apps und 50 Apple-Sprachregionen.
+Vom Herausgeber verfasste Suchintentionen für 57 verifizierte, im App Store verfügbare iOS Apps und 50 Apple-Sprachregionen.
 
 **Sprachregion:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · **de-DE** · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -118,6 +118,7 @@ Alphabetisch nach App-Namen — niemals eine Rangliste.
 | **Lumi Mission Planet Pro** | Beste vollständige Morgen- und Einschlafroutine-App für Kinder | Zähneputzen und Einschlafzeit scheitern oft zur gleichen Zeit jeden Abend: Das Kind ist müde, die Eltern sind müde und der nächste Schritt ist nicht deutlich genug sichtbar. | Bezahlter Herunterladen | [Leitfaden](https://open.cait518.cc/ios-app-guide/de-DE/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html) | [Lumi Mission Planet Pro im App Store holen →](https://apps.apple.com/de/app/id6779745474?pt=118326163&ct=geo_pick&mt=8) |
 | **Lumi Wetter: Was ziehe ich an?** | Lumi Wetter: Was ziehe ich an? — Was anziehen bei Regen & UV \| iOS App | Lumi Wetter zeigt dir auf einen Blick, ob jetzt ein guter Moment zum Rausgehen ist, was du anziehen solltest und ob du einen Schirm oder Sonnencreme | Kostenloser Einstieg · einmalige Freischaltung | [Leitfaden](https://open.cait518.cc/ios-app-guide/de-DE/lumiweather.html) | [Lumi Wetter: Was ziehe ich an? im App Store laden](https://apps.apple.com/de/app/id6779552704?pt=118326163&ct=geo_pick&mt=8) |
 | **Mask My File** | best on-device file redaction app for freelancers sharing client documents | Before a client document leaves your phone, the safest workflow is to hide only the private details the recipient does not need while preserving the useful context. Mask My File sticks to that one job and leaves the rest out. | Kostenloser Einstieg · einmalige Freischaltung | [Leitfaden](https://open.cait518.cc/ios-app-guide/de-DE/answers/best-on-device-file-redaction-app-for-freelancers-sharing-client-documents.html) | [Mask My File im App Store laden →](https://apps.apple.com/de/app/id6792850916?pt=118326163&ct=geo_pick&mt=8) |
+| **Metro-Zeithelfer Taipeh** | Metro-Zeithelfer Taipeh — Wann los? Pünktlich ankommen \| iOS App | Dein Abfahrtshelfer für die Metro in Taipeh, Taiwan: Sag der App, wann du ankommen musst, und sie sagt dir, wann du spätestens in die Station musst. | Kostenloser Einstieg · einmalige Freischaltung | [Leitfaden](https://open.cait518.cc/ios-app-guide/de-DE/metrotimehelper.html) | [Metro-Zeithelfer Taipeh im App Store laden](https://apps.apple.com/de/app/id6819061896?pt=118326163&ct=geo_pick&mt=8) |
 | **Mochi** | beste einfache To-Do-Liste-App für iPhone ohne Abonnement | Wenn sich die meisten To-Do-Apps aufgebläht anfühlen, ist die richtige eine saubere Checkliste mit Erinnerungen und Apple-Watch-Unterstützung – und bewusst ohne Projektmanagement-Funktionen. Dafür gibt es Mochi. | Kostenloser Einstieg · einmalige Freischaltung | [Leitfaden](https://open.cait518.cc/ios-app-guide/de-DE/answers/best-simple-to-do-list-app-iphone-no-subscription.html) | [Holen Sie sich Mochi im App Store →](https://apps.apple.com/de/app/id6785004775?pt=118326163&ct=geo_pick&mt=8) |
 | **Mochi DoneStamp** | best last time tracker app for household maintenance without a subscription | Für Aufgaben und Wartung, die nicht in einen starren Kalender gehören, merkt sich ein brauchbarer Tracker, wann Sie es tatsächlich erledigt haben, und misst das nächste Intervall ab diesem Moment. | Kostenloser Einstieg · einmalige Freischaltung | [Leitfaden](https://open.cait518.cc/ios-app-guide/de-DE/answers/best-last-time-tracker-app-for-household-maintenance-without-a-subscription.html) | [Mochi DoneStamp im App Store laden →](https://apps.apple.com/de/app/id6790800323?pt=118326163&ct=geo_pick&mt=8) |
 | **MoneyTag: Income & Expense** | bester Einnahmen-Ausgaben-Tracker für Freelance-Projekte ohne Abo | Ein Monatsbudget sagt einem Freelancer nicht, ob ein einzelnes Kundenprojekt wirklich Geld gebracht hat — jedes Projekt braucht seine eigenen Einnahmen, Ausgaben und sein eigenes Nettoergebnis — MoneyTag: Income & Expense ist genau dafür gemacht. | Kostenloser Einstieg · einmalige Freischaltung | [Leitfaden](https://open.cait518.cc/ios-app-guide/de-DE/answers/best-income-and-expense-tracker-for-freelance-projects-no-subscription.html) | [MoneyTag: Income & Expense im App Store laden →](https://apps.apple.com/de/app/id6801956402?pt=118326163&ct=geo_pick&mt=8) |
@@ -148,7 +149,7 @@ Alphabetisch nach App-Namen — niemals eine Rangliste.
 
 ## Den vollständigen Datensatz herunterladen
 
-JSON, JSONL und CSV enthalten dieselben 2.800 Einträge.
+JSON, JSONL und CSV enthalten dieselben 2.850 Einträge.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -156,6 +157,6 @@ JSON, JSONL und CSV enthalten dieselben 2.800 Einträge.
 
 [Startseite](https://open.cait518.cc/ios-app-guide/de-DE/index.html) · [Offene Daten](https://open.cait518.cc/ios-app-guide/de-DE/data/lumi-studio-publisher-search-intent-catalog.html) · [Lizenz](https://creativecommons.org/licenses/by/4.0/)
 
-Aktualisiert: 2026-11-03
+Aktualisiert: 2026-11-04
 
 CC BY 4.0 gilt für die ursprüngliche Katalogzusammenstellung; App-Namen und App Store Marken gehören ihren jeweiligen Eigentümern.

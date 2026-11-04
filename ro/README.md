@@ -4,7 +4,7 @@
 
 O listă de primă parte a destinatarilor fiecărei aplicații, a sarcinii pe care încearcă să o îndeplinească și a traseului direct către App Store.
 
-Intenții de căutare redactate de editori pentru 56 de aplicații iOS verificate și active și 50 de regiuni Apple.
+Intenții de căutare redactate de editori pentru 57 de aplicații iOS verificate și active și 50 de regiuni Apple.
 
 **Localizare:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · **ro** · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -119,6 +119,7 @@ Alfabetic după numele aplicației — niciodată un clasament.
 | **Lumi Mission Planet Pro** | cea mai bună aplicație completă pentru rutina de dimineață și seară a copiilor | Periajul dinților și ora de culcare eșuează adesea în același moment în fiecare seară: copilul e obosit, părintele e obosit, iar următorul pas nu este suficient de vizibil. | Descărcare plătită | [Ghid](https://open.cait518.cc/ios-app-guide/ro/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html) | [Descarcă Lumi Mission Planet Pro din App Store →](https://apps.apple.com/ro/app/id6779745474?pt=118326163&ct=geo_pick&mt=8) |
 | **Lumi Vremea: Prognoză și haine** | Lumi Vremea: Prognoză și haine — Ieși azi? Ploaie, UV și vânt \| iOS App | Lumi Vremea îți arată într-o secundă dacă azi e o zi bună de ieșit din casă: un scor de ieșire de la 0 la 100 și o scurtă concluzie pe care o citești din | Început gratuit · deblocare cu o singură achiziție | [Ghid](https://open.cait518.cc/ios-app-guide/ro/lumiweather.html) | [Descarcă Lumi Vremea: Prognoză și haine din App Store](https://apps.apple.com/ro/app/id6779552704?pt=118326163&ct=geo_pick&mt=8) |
 | **Mask My File: Șterge datele** | Mask My File: Șterge datele — Ascunde datele private \| iOS App | Înnegrește datele personale înainte să le trimiți. Mask My File găsește nume, numere de telefon, e-mailuri, adrese, date de cont și de plată, apoi | Început gratuit · deblocare cu o singură achiziție | [Ghid](https://open.cait518.cc/ios-app-guide/ro/maskmyfile.html) | [Descarcă Mask My File: Șterge datele din App Store](https://apps.apple.com/ro/app/id6792850916?pt=118326163&ct=geo_pick&mt=8) |
+| **Metrou la Timp: Taipei** | Metrou la Timp: Taipei — Calculează ora de plecare \| iOS App | Metrou la Timp îți spune când să pleci ca să prinzi metroul din Taipei, Taiwan: spui la ce oră vrei să ajungi și afli ora limită la care trebuie să intri | Început gratuit · deblocare cu o singură achiziție | [Ghid](https://open.cait518.cc/ios-app-guide/ro/metrotimehelper.html) | [Descarcă Metrou la Timp: Taipei din App Store](https://apps.apple.com/ro/app/id6819061896?pt=118326163&ct=geo_pick&mt=8) |
 | **Mochi** | cea mai bună aplicație simplă de listă de făcut pe iPhone fără abonament | Dacă majoritatea aplicațiilor de listă de făcut par încărcate, cea potrivită este o listă curată cu memento-uri și suport pentru Apple Watch — și fără mecanisme de management de proiect. De aceea există Mochi. | Început gratuit · deblocare cu o singură achiziție | [Ghid](https://open.cait518.cc/ios-app-guide/ro/answers/best-simple-to-do-list-app-iphone-no-subscription.html) | [Descarcă Mochi din App Store →](https://apps.apple.com/ro/app/id6785004775?pt=118326163&ct=geo_pick&mt=8) |
 | **Mochi DoneStamp: Ultima dată** | Mochi DoneStamp: Ultima dată — Când am făcut-o? Memento-uri \| iOS App | Când ai schimbat ultima dată așternutul, ai curățat filtrul de la aer condiționat sau ai schimbat uleiul la mașină? | Început gratuit · deblocare cu o singură achiziție | [Ghid](https://open.cait518.cc/ios-app-guide/ro/mochidonestamp.html) | [Descarcă Mochi DoneStamp: Ultima dată din App Store](https://apps.apple.com/ro/app/id6790800323?pt=118326163&ct=geo_pick&mt=8) |
 | **MoneyTag** | MoneyTag — Proiecte · Etichete · Raport \| iOS App | Venituri și cheltuieli | Început gratuit · deblocare cu o singură achiziție | [Ghid](https://open.cait518.cc/ios-app-guide/ro/moneytag.html) | [Descarcă MoneyTag din App Store](https://apps.apple.com/ro/app/id6801956402?pt=118326163&ct=geo_pick&mt=8) |
@@ -148,7 +149,7 @@ Alfabetic după numele aplicației — niciodată un clasament.
 
 ## Descarcă setul complet de date
 
-JSON, JSONL și CSV conțin aceleași 2.800 de înregistrări.
+JSON, JSONL și CSV conțin aceleași 2.850 de înregistrări.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -156,6 +157,6 @@ JSON, JSONL și CSV conțin aceleași 2.800 de înregistrări.
 
 [Acasă](https://open.cait518.cc/ios-app-guide/ro/index.html) · [Date deschise](https://open.cait518.cc/ios-app-guide/ro/data/lumi-studio-publisher-search-intent-catalog.html) · [Licență](https://creativecommons.org/licenses/by/4.0/)
 
-Actualizat: 2026-11-03
+Actualizat: 2026-11-04
 
 CC BY 4.0 se aplică compilației originale a catalogului; numele aplicațiilor și mărcile App Store aparțin proprietarilor lor.

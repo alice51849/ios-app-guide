@@ -4,8 +4,8 @@
   "name": "Lumi Studio iOS app catalog",
   "description": "Every verified live Lumi Studio iOS app, with the price and store link Apple publishes for it. Structured form of the agent product feed published alongside it.",
   "url": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-agent-feed/",
-  "numberOfItems": 56,
-  "dateModified": "2026-11-03",
+  "numberOfItems": 57,
+  "dateModified": "2026-11-04",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "provider": {
     "@type": "Organization",
@@ -671,7 +671,7 @@
         },
         "offers": {
           "@type": "Offer",
-          "price": "11.99",
+          "price": "6.49",
           "priceCurrency": "USD",
           "availability": "https://schema.org/InStock",
           "url": "https://apps.apple.com/us/app/id6790418321?pt=118326163&ct=geo_pick&mt=8"
@@ -1041,7 +1041,7 @@
         },
         "offers": {
           "@type": "Offer",
-          "price": "8.99",
+          "price": "4.99",
           "priceCurrency": "USD",
           "availability": "https://schema.org/InStock",
           "url": "https://apps.apple.com/us/app/id6804564400?pt=118326163&ct=geo_pick&mt=8"
@@ -2231,6 +2231,80 @@
       "position": 31,
       "item": {
         "@type": "MobileApplication",
+        "name": "Metro Time Helper: Taipei MRT",
+        "description": "Metro Time Helper: Taipei MRT — Built for the Taipei MRT in Taiwan: tell Metro Time Helper when you need to be there, and it tells you the latest time to walk into the station.",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "iOS",
+        "url": "https://apps.apple.com/us/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
+        "inLanguage": [
+          "ar-SA",
+          "ca",
+          "cs",
+          "da",
+          "de-DE",
+          "el",
+          "en-AU",
+          "en-CA",
+          "en-GB",
+          "en-US",
+          "es-ES",
+          "es-MX",
+          "fi",
+          "fr-CA",
+          "fr-FR",
+          "gu-IN",
+          "he",
+          "hi",
+          "hr",
+          "hu",
+          "id",
+          "it",
+          "ja",
+          "kn-IN",
+          "ko",
+          "ml-IN",
+          "mr-IN",
+          "ms",
+          "nl-NL",
+          "no",
+          "or-IN",
+          "pa-IN",
+          "pl",
+          "pt-BR",
+          "pt-PT",
+          "ro",
+          "ru",
+          "sk",
+          "sl-SI",
+          "sv",
+          "ta-IN",
+          "te-IN",
+          "th",
+          "tr",
+          "uk",
+          "ur-PK",
+          "vi",
+          "zh-Hans",
+          "zh-Hant"
+        ],
+        "author": {
+          "@type": "Organization",
+          "name": "Lumi Studio"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://apps.apple.com/us/app/id6819061896?pt=118326163&ct=geo_pick&mt=8"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 32,
+      "item": {
+        "@type": "MobileApplication",
         "name": "Mochi",
         "description": "If most to-do apps feel bloated, the right one is a clean checklist with reminders and Apple Watch support — and deliberately no project-management machinery. That is why Mochi exists.",
         "applicationCategory": "BusinessApplication",
@@ -2302,7 +2376,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 32,
+      "position": 33,
       "item": {
         "@type": "MobileApplication",
         "name": "Mochi DoneStamp",
@@ -2376,7 +2450,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 33,
+      "position": 34,
       "item": {
         "@type": "MobileApplication",
         "name": "MoneyTag: Income & Expense",
@@ -2450,7 +2524,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 34,
+      "position": 35,
       "item": {
         "@type": "MobileApplication",
         "name": "100 Notes Studio",
@@ -2524,7 +2598,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 35,
+      "position": 36,
       "item": {
         "@type": "MobileApplication",
         "name": "OnePage PPT",
@@ -2598,7 +2672,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 36,
+      "position": 37,
       "item": {
         "@type": "MobileApplication",
         "name": "PhotoCream",
@@ -2672,7 +2746,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 37,
+      "position": 38,
       "item": {
         "@type": "MobileApplication",
         "name": "PicClear",
@@ -2746,7 +2820,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 38,
+      "position": 39,
       "item": {
         "@type": "MobileApplication",
         "name": "QR Code Halo",
@@ -2820,7 +2894,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 39,
+      "position": 40,
       "item": {
         "@type": "MobileApplication",
         "name": "SaveTag",
@@ -2894,7 +2968,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 40,
+      "position": 41,
       "item": {
         "@type": "MobileApplication",
         "name": "ScanTo Pro",
@@ -2968,7 +3042,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 41,
+      "position": 42,
       "item": {
         "@type": "MobileApplication",
         "name": "Sereno",
@@ -3042,7 +3116,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 42,
+      "position": 43,
       "item": {
         "@type": "MobileApplication",
         "name": "ShotInbox AI",
@@ -3116,7 +3190,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 43,
+      "position": 44,
       "item": {
         "@type": "MobileApplication",
         "name": "Snapport",
@@ -3181,7 +3255,7 @@
         },
         "offers": {
           "@type": "Offer",
-          "price": "5.99",
+          "price": "4.99",
           "priceCurrency": "USD",
           "availability": "https://schema.org/InStock",
           "url": "https://apps.apple.com/us/app/id6780575828?pt=118326163&ct=geo_pick&mt=8"
@@ -3190,7 +3264,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 44,
+      "position": 45,
       "item": {
         "@type": "MobileApplication",
         "name": "Snapport Lite",
@@ -3264,7 +3338,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 45,
+      "position": 46,
       "item": {
         "@type": "MobileApplication",
         "name": "Sono Note",
@@ -3338,7 +3412,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 46,
+      "position": 47,
       "item": {
         "@type": "MobileApplication",
         "name": "Stay Clock",
@@ -3412,7 +3486,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 47,
+      "position": 48,
       "item": {
         "@type": "MobileApplication",
         "name": "Studydown",
@@ -3486,7 +3560,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 48,
+      "position": 49,
       "item": {
         "@type": "MobileApplication",
         "name": "TripBee Pro: Trip Planner",
@@ -3551,7 +3625,7 @@
         },
         "offers": {
           "@type": "Offer",
-          "price": "5.99",
+          "price": "4.99",
           "priceCurrency": "USD",
           "availability": "https://schema.org/InStock",
           "url": "https://apps.apple.com/us/app/id6787754435?pt=118326163&ct=geo_pick&mt=8"
@@ -3560,7 +3634,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 49,
+      "position": 50,
       "item": {
         "@type": "MobileApplication",
         "name": "TripBee Lite",
@@ -3634,7 +3708,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 50,
+      "position": 51,
       "item": {
         "@type": "MobileApplication",
         "name": "Trip Planet: Kids Quest",
@@ -3707,7 +3781,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 51,
+      "position": 52,
       "item": {
         "@type": "MobileApplication",
         "name": "Unblurry",
@@ -3781,7 +3855,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 52,
+      "position": 53,
       "item": {
         "@type": "MobileApplication",
         "name": "WiFi Aid",
@@ -3846,7 +3920,7 @@
         },
         "offers": {
           "@type": "Offer",
-          "price": "5.99",
+          "price": "4.99",
           "priceCurrency": "USD",
           "availability": "https://schema.org/InStock",
           "url": "https://apps.apple.com/us/app/id6790467886?pt=118326163&ct=geo_pick&mt=8"
@@ -3855,7 +3929,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 53,
+      "position": 54,
       "item": {
         "@type": "MobileApplication",
         "name": "WiFi Aid Lite",
@@ -3929,7 +4003,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 54,
+      "position": 55,
       "item": {
         "@type": "MobileApplication",
         "name": "Wordmate: Learn 44 Languages",
@@ -3994,7 +4068,7 @@
         },
         "offers": {
           "@type": "Offer",
-          "price": "8.99",
+          "price": "4.99",
           "priceCurrency": "USD",
           "availability": "https://schema.org/InStock",
           "url": "https://apps.apple.com/us/app/id6789917808?pt=118326163&ct=geo_pick&mt=8"
@@ -4003,7 +4077,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 55,
+      "position": 56,
       "item": {
         "@type": "MobileApplication",
         "name": "Wordmate Lite",
@@ -4077,7 +4151,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 56,
+      "position": 57,
       "item": {
         "@type": "MobileApplication",
         "name": "Zipbox",

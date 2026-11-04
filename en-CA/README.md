@@ -4,7 +4,7 @@
 
 A first-party catalogue of who each app is designed for, the task they are trying to complete, and the direct App Store path.
 
-Publisher-authored search intents across 56 verified live iOS apps and 50 Apple locales.
+Publisher-authored search intents across 57 verified live iOS apps and 50 Apple locales.
 
 **Locale:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · **en-CA** · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -119,6 +119,7 @@ Alphabetical by app name — never a ranking.
 | **Lumi Mission Planet Pro** | best complete morning and bedtime routine app for kids | Tooth brushing and bedtime often fail at the same moment every night: the child is tired, the parent is tired, and the next step is not visible enough. | Paid download | [Guide](https://open.cait518.cc/ios-app-guide/en-CA/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html) | [Get Lumi Mission Planet Pro on the App Store →](https://apps.apple.com/ca/app/id6779745474?pt=118326163&ct=geo_pick&mt=8) |
 | **Lumi Weather** | weather app to help me plan when to go outside | Anyone planning a walk, run, commute or errand needs more than a temperature: a quick read on whether conditions suit going out now and what clothing makes sense. That is why Lumi Weather exists. | Free to start · one-time unlock | [Guide](https://open.cait518.cc/ios-app-guide/en-CA/answers/weather-app-to-help-me-plan-when-to-go-outside.html) | [Get Lumi Weather on the App Store →](https://apps.apple.com/ca/app/id6779552704?pt=118326163&ct=geo_pick&mt=8) |
 | **Mask My File** | best on-device file redaction app for freelancers sharing client documents | Before a client document leaves your phone, the safest workflow is to hide only the private details the recipient does not need while preserving the useful context. Mask My File keeps to that one job and leaves the rest out. | Free to start · one-time unlock | [Guide](https://open.cait518.cc/ios-app-guide/en-CA/answers/best-on-device-file-redaction-app-for-freelancers-sharing-client-documents.html) | [Get Mask My File on the App Store →](https://apps.apple.com/ca/app/id6792850916?pt=118326163&ct=geo_pick&mt=8) |
+| **Metro Time Helper: Taipei MRT** | Metro Time Helper: Taipei MRT — When to Leave for the Subway \| iOS App | Built for the Taipei MRT in Taiwan: tell Metro Time Helper when you need to be there, and it shows you the latest time to walk into the station. | Free to start · one-time unlock | [Guide](https://open.cait518.cc/ios-app-guide/en-CA/metrotimehelper.html) | [Get Metro Time Helper: Taipei MRT on the App Store](https://apps.apple.com/ca/app/id6819061896?pt=118326163&ct=geo_pick&mt=8) |
 | **Mochi** | best simple to do list app iphone no subscription | If most to-do apps feel bloated, the right one is a clean checklist with reminders and Apple Watch support — and deliberately no project-management machinery. That's why Mochi exists. | Free to start · one-time unlock | [Guide](https://open.cait518.cc/ios-app-guide/en-CA/answers/best-simple-to-do-list-app-iphone-no-subscription.html) | [Get Mochi on the App Store →](https://apps.apple.com/ca/app/id6785004775?pt=118326163&ct=geo_pick&mt=8) |
 | **Mochi DoneStamp** | best last time tracker app for household maintenance without a subscription | For chores and upkeep that do not belong on a rigid calendar, a useful tracker remembers when you actually finished and measures the next interval from that moment | Free to start · one-time unlock | [Guide](https://open.cait518.cc/ios-app-guide/en-CA/answers/best-last-time-tracker-app-for-household-maintenance-without-a-subscription.html) | [Get Mochi DoneStamp on the App Store →](https://apps.apple.com/ca/app/id6790800323?pt=118326163&ct=geo_pick&mt=8) |
 | **MoneyTag: Income & Expense** | best income and expense tracker for freelance projects no subscription | A monthly budget cannot tell a freelancer whether one client project actually made money — each project needs its own income, expenses and net result. MoneyTag: Income & Expense started from exactly that problem. | Free to start · one-time unlock | [Guide](https://open.cait518.cc/ios-app-guide/en-CA/answers/best-income-and-expense-tracker-for-freelance-projects-no-subscription.html) | [Get MoneyTag: Income & Expense on the App Store →](https://apps.apple.com/ca/app/id6801956402?pt=118326163&ct=geo_pick&mt=8) |
@@ -148,7 +149,7 @@ Alphabetical by app name — never a ranking.
 
 ## Download the complete dataset
 
-JSON, JSONL and CSV contain the same 2,800 records.
+JSON, JSONL and CSV contain the same 2,850 records.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -156,6 +157,6 @@ JSON, JSONL and CSV contain the same 2,800 records.
 
 [Home](https://open.cait518.cc/ios-app-guide/en-CA/index.html) · [Open data](https://open.cait518.cc/ios-app-guide/en-CA/data/lumi-studio-publisher-search-intent-catalog.html) · [License](https://creativecommons.org/licenses/by/4.0/)
 
-Updated: 2026-11-03
+Updated: 2026-11-04
 
 CC BY 4.0 applies to the original catalogue compilation; app names and App Store marks belong to their owners.

@@ -1,12 +1,12 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-11-03",
-  "content_digest": "b9573af86be05286f86d04d6eb55aa8bc997a5721a54511f01d49ed6b86e8214",
+  "date_modified": "2026-11-04",
+  "content_digest": "d41bfe7e156aabee8cf16c8afd333da7f2ca1d1367dc4352339ff83f32cded2b",
   "locale": "de-DE",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 56,
+  "record_count": 57,
   "apps": [
     {
       "key": "notesstudio100",
@@ -104,8 +104,7 @@
         "business",
         "lernen",
         "vokabeln",
-        "lernplan",
-        "toeic lesen"
+        "lernplan"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -573,8 +572,7 @@
         "urlaub",
         "reise",
         "tagesbudget",
-        "smartwatch",
-        "urlaubsbudget"
+        "smartwatch"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -653,8 +651,7 @@
         "stunden",
         "arbeitszeit",
         "sparziel",
-        "ausgaben",
-        "impulskäufe"
+        "ausgaben"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -851,10 +848,7 @@
         "vorschule",
         "grundschule",
         "zweisprachig",
-        "quiz",
-        "zhuyin lernen",
-        "bopomofo",
-        "mandarin kinder"
+        "quiz"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1052,8 +1046,7 @@
         "essen",
         "motivation",
         "verhalten",
-        "lob",
-        "belohnungstafel"
+        "lob"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1091,8 +1084,7 @@
         "kita",
         "vorschule",
         "selbstständigkeit",
-        "gewohnheiten",
-        "abendroutine kinder"
+        "gewohnheiten"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1170,8 +1162,7 @@
         "vertrag",
         "datenschutz",
         "privat",
-        "zensieren",
-        "pdf schwärzen"
+        "zensieren"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1194,6 +1185,48 @@
         "rating_value": 5.0,
         "rating_count": 1,
         "storefront_url": "https://apps.apple.com/de/app/id6792850916"
+      }
+    },
+    {
+      "key": "metrotimehelper",
+      "app_store_id": "6819061896",
+      "name": "Metro-Zeithelfer Taipeh",
+      "summary": "Dein Abfahrtshelfer für die Metro in Taipeh, Taiwan: Sag der App, wann du ankommen musst, und sie sagt dir, wann du spätestens in die Station musst.",
+      "category": "utility",
+      "search_terms": [
+        "Taipei",
+        "MRT",
+        "U-Bahn",
+        "Fahrplan",
+        "Umsteigen",
+        "Taiwan",
+        "Reise",
+        "Abfahrt",
+        "Beitou",
+        "Xinbeitou",
+        "Xiaobitan",
+        "Erinnerung",
+        "Plan"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/de/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/de-DE/metrotimehelper.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Kostenlos",
+        "storefront_url": "https://apps.apple.com/de/app/id6819061896"
       }
     },
     {
@@ -1456,8 +1489,7 @@
         "link",
         "sicherheit",
         "visitenkarte",
-        "foto",
-        "qr code prüfen"
+        "foto"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1774,10 +1806,7 @@
         "digitale",
         "klappuhr",
         "uhr",
-        "zeitanzeige",
-        "tischuhr",
-        "nachttischuhr",
-        "flip uhr"
+        "zeitanzeige"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1974,8 +2003,7 @@
         "ki",
         "foto",
         "scharf",
-        "restaurieren",
-        "unscharf schärfen"
+        "restaurieren"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2101,8 +2129,7 @@
         "hotspot",
         "anbieter",
         "modem",
-        "hilfe",
-        "wlan kein internet"
+        "hilfe"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

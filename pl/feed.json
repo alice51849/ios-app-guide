@@ -1,6 +1,6 @@
 {
   "_owned_feed": {
-    "date_modified": "2026-11-03T05:00:43Z",
+    "date_modified": "2026-11-04T09:01:58Z",
     "notification_eligible": true,
     "schema": "lumi.owned-app-feeds/v2"
   },
@@ -733,6 +733,30 @@
       "summary": "Zoptymalizowana dla urządzenia iPhone Duo. Zbudowana przy użyciu najnowszego SDK aplikacja wypełnia cały wewnętrzny wyświetlacz i automatycznie dopasowuje układ, gdy urządzenie jest złożone lub rozłożone.",
       "title": "Mask My File: Usuń swoje dane",
       "url": "https://open.cait518.cc/ios-app-guide/pl/maskmyfile.html"
+    },
+    {
+      "_owned_app": {
+        "app_key": "metrotimehelper",
+        "app_store_cta_label": "Zobacz w App Store",
+        "app_store_id": "6819061896",
+        "content_digest": "afda01cdda2eb01dc3bac3400ed0253629addf32cd09739adda7d37696902c12",
+        "independent_ranking": false,
+        "one_time_option": true,
+        "publisher_disclosure": "Materiał pierwszorzędny opublikowany przez Lumi Studio, twórcę każdej wymienionej aplikacji.",
+        "purchase_label": "Darmowe na start · odblokowanie jednorazowym zakupem",
+        "purchase_model": "free_with_lifetime_unlock",
+        "source_locale": "pl"
+      },
+      "content_html": "<p>Podaj, na którą musisz być na miejscu, a aplikacja powie ci, kiedy najpóźniej wejść na stację metra w Tajpej na Tajwanie.</p><p>Darmowe na start · odblokowanie jednorazowym zakupem</p><p><a href=\"https://apps.apple.com/pl/app/id6819061896?pt=118326163&amp;ct=geo_pick&amp;mt=8\">Zobacz w App Store</a></p><p>Materiał pierwszorzędny opublikowany przez Lumi Studio, twórcę każdej wymienionej aplikacji.</p>",
+      "content_text": "Podaj, na którą musisz być na miejscu, a aplikacja powie ci, kiedy najpóźniej wejść na stację metra w Tajpej na Tajwanie.\n\nDarmowe na start · odblokowanie jednorazowym zakupem\n\nZobacz w App Store: https://apps.apple.com/pl/app/id6819061896?pt=118326163&ct=geo_pick&mt=8\n\nMateriał pierwszorzędny opublikowany przez Lumi Studio, twórcę każdej wymienionej aplikacji.",
+      "date_modified": "2026-11-04T09:01:58Z",
+      "date_published": "2026-11-04T09:01:58Z",
+      "external_url": "https://apps.apple.com/pl/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
+      "id": "urn:lumi:app-store:6819061896:locale:pl",
+      "language": "pl",
+      "summary": "Podaj, na którą musisz być na miejscu, a aplikacja powie ci, kiedy najpóźniej wejść na stację metra w Tajpej na Tajwanie.",
+      "title": "Tajpej: metro na czas",
+      "url": "https://open.cait518.cc/ios-app-guide/pl/metrotimehelper.html"
     },
     {
       "_owned_app": {

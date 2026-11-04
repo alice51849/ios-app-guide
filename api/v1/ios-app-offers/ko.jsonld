@@ -6,8 +6,8 @@
   "name": "Lumi Studio 개발사 검색 의도 카탈로그",
   "description": "각 앱의 대상 사용자, 완료하려는 작업, App Store로 바로 이동하는 경로를 개발사가 직접 공개한 카탈로그입니다.",
   "inLanguage": "ko",
-  "dateModified": "2026-11-03",
-  "numberOfItems": 56,
+  "dateModified": "2026-11-04",
+  "numberOfItems": 57,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
     {
@@ -3643,6 +3643,72 @@
     {
       "@type": "ListItem",
       "position": 56,
+      "url": "https://apps.apple.com/kr/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-metrotimehelper",
+        "url": "https://apps.apple.com/kr/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
+        "name": "타이베이 지하철 시간 도우미",
+        "description": "대만 타이베이 지하철(MRT)을 위한 출발 시간 도우미입니다. 도착하고 싶은 시각만 정하면, 늦어도 몇 시에 역에 들어가야 하는지 알려 드립니다.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6819061896",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6819061896"
+          },
+          "name": "타이베이 지하철 시간 도우미",
+          "operatingSystem": "iOS",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/kr/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/kr/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/kr/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/kr/app/id6819061896?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ko/metrotimehelper.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6819061896",
+          "inLanguage": "ko",
+          "description": "대만 타이베이 지하철(MRT)을 위한 출발 시간 도우미입니다. 도착하고 싶은 시각만 정하면, 늦어도 몇 시에 역에 들어가야 하는지 알려 드립니다.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-metrotimehelper"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "KRW",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "KR"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 57,
       "url": "https://apps.apple.com/kr/app/id6824946559?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",

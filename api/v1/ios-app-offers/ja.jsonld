@@ -6,8 +6,8 @@
   "name": "Lumi Studio 開発元検索意図カタログ",
   "description": "各アプリの対象ユーザー、達成したいタスク、App Store への直接の導線を、開発元が公開するカタログです。",
   "inLanguage": "ja",
-  "dateModified": "2026-11-03",
-  "numberOfItems": 56,
+  "dateModified": "2026-11-04",
+  "numberOfItems": 57,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
     {
@@ -3643,6 +3643,72 @@
     {
       "@type": "ListItem",
       "position": 56,
+      "url": "https://apps.apple.com/jp/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-metrotimehelper",
+        "url": "https://apps.apple.com/jp/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
+        "name": "台北MRT乗り換え｜捷運時間助手",
+        "description": "台湾・台北のMRT（地下鉄）専用の、出発時刻を逆算するアプリです。何時に着きたいかを入れるだけで、何時までに駅へ入ればいいかがわかります。",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6819061896",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6819061896"
+          },
+          "name": "台北MRT乗り換え｜捷運時間助手",
+          "operatingSystem": "iOS",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/jp/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/jp/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/jp/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/jp/app/id6819061896?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ja/metrotimehelper.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6819061896",
+          "inLanguage": "ja",
+          "description": "台湾・台北のMRT（地下鉄）専用の、出発時刻を逆算するアプリです。何時に着きたいかを入れるだけで、何時までに駅へ入ればいいかがわかります。",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-metrotimehelper"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "JPY",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "JP"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 57,
       "url": "https://apps.apple.com/jp/app/id6824946559?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",

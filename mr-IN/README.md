@@ -4,7 +4,7 @@
 
 प्रत्येक अॅप कोणासाठी डिझाइन केले आहे, ते कोणते कार्य पूर्ण करण्याचा प्रयत्न करत आहेत, आणि थेट App Store मार्ग यांचा प्रथम पक्ष निर्देशिका.
 
-56 प्रमाणित लाइव्ह iOS अॅप्स आणि 50 Apple स्थानिकांसाठी प्रकाशकांनी लिहिलेली शोध हेतू.
+57 प्रमाणित लाइव्ह iOS अॅप्स आणि 50 Apple स्थानिकांसाठी प्रकाशकांनी लिहिलेली शोध हेतू.
 
 **स्थानिक:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · **mr-IN** · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -135,6 +135,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **Sono Note** | iPhone साठी सर्वोत्तम व्हॉइस नोट्स अॅप जे मीटिंग्सचे सारांश तयार करते | कॉल नंतर तुम्हाला केवळ कच्चा ट्रान्सक्रिप्ट नको असतो — तुम्हाला सारांश, कृती आयटम आणि ड्राफ्ट फॉलो-अप हवा असतो। हीच उणीव Sono Note भरून काढू पाहतो. | सुरुवात करण्यासाठी मोफत · एकदाच खरेदी करून अनलॉक | [मार्गदर्शक](https://open.cait518.cc/ios-app-guide/mr-IN/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [App Store वरून Sono Note मिळवा →](https://apps.apple.com/in/app/id6782139553?pt=118326163&ct=geo_pick&mt=8) |
 | **Stay Clock: डेस्क घड्याळ** | Stay Clock: डेस्क घड्याळ — नेहमी सुरू वेळ व कॅलेंडर \| iOS App | Stay Clock तुमच्या iPhone किंवा iPad ला खोलीच्या दुसऱ्या टोकावरूनही स्पष्ट दिसणाऱ्या, नेहमी सुरू असलेल्या डेस्क घड्याळात बदलते. फ्लिप घड्याळांसह 101 | सुरुवात करण्यासाठी मोफत · एकदाच खरेदी करून अनलॉक | [मार्गदर्शक](https://open.cait518.cc/ios-app-guide/mr-IN/stayclock.html) | [App Store वरून Stay Clock: डेस्क घड्याळ मिळवा](https://apps.apple.com/in/app/id6814035888?pt=118326163&ct=geo_pick&mt=8) |
 | **Studydown: फोकस टाइमर** | Studydown: फोकस टाइमर — स्क्रीन खाली करून ठेवा \| iOS App | फोन स्क्रीन खाली करून ठेवला की टाइमर सुरू, उचलला की थांबतो; त्यामुळे अभ्यास आणि कामाच्या तासांत फक्त खऱ्या एकाग्रतेचा वेळच मोजला जातो. | सुरुवात करण्यासाठी मोफत · एकदाच खरेदी करून अनलॉक | [मार्गदर्शक](https://open.cait518.cc/ios-app-guide/mr-IN/studydown.html) | [App Store वरून Studydown: फोकस टाइमर मिळवा](https://apps.apple.com/in/app/id6807335593?pt=118326163&ct=geo_pick&mt=8) |
+| **Taipei MRT वेळ सहाय्यक** | Taipei MRT वेळ सहाय्यक — कधी निघायचे ते लगेच कळेल \| iOS App | तैवानमधील तैपेई मेट्रोसाठी (Taipei MRT) खास बनवलेला वेळ सहाय्यक: किती वाजता पोहोचायचे आहे ते सांगा, स्टेशनमध्ये किती वाजेपर्यंत प्रवेश करायला हवा हे ॲप | सुरुवात करण्यासाठी मोफत · एकदाच खरेदी करून अनलॉक | [मार्गदर्शक](https://open.cait518.cc/ios-app-guide/mr-IN/metrotimehelper.html) | [App Store वरून Taipei MRT वेळ सहाय्यक मिळवा](https://apps.apple.com/in/app/id6819061896?pt=118326163&ct=geo_pick&mt=8) |
 | **Trip Planet: Kids Quest** | कुटुंबासोबत प्रवास करणाऱ्या मुलांसाठी सर्वोत्तम प्रवास कृती अ‍ॅप | लहान मुलांसोबत प्रवास करणाऱ्या पालकांना पॅकिंग, प्रतीक्षा आणि नवीन ठिकाण शोधणे हे साहसाचा भाग बनवणाऱ्या कृतींची गरज असते, तणावाचा स्रोत नव्हे। म्हणूनच Trip Planet: Kids Quest तयार झाला. | सुरुवात करण्यासाठी मोफत · एकदाच खरेदी करून अनलॉक | [मार्गदर्शक](https://open.cait518.cc/ios-app-guide/mr-IN/answers/best-travel-activity-app-for-kids-on-family-trips.html) | [Trip Planet: Kids Quest App Store वर मिळवा →](https://apps.apple.com/in/app/id6787193643?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Lite** | आगामी एका प्रवासासाठी सर्वोत्तम सोपा प्रवास नियोजक अॅप iPhone साठी | जर तुम्ही एक आगामी प्रवास नियोजित करत असाल, तर त्या प्रवासासाठी शांत टाइमलाइन प्रत्येक प्रवासाचा गर्दीने भरलेला संग्रहपेक्षा अधिक उपयुक्त आहे। ओळखीचं वाटत असेल तर TripBee Lite एकदा पाहा. | सुरुवात करण्यासाठी मोफत · एकदाच खरेदी करून अनलॉक | [मार्गदर्शक](https://open.cait518.cc/ios-app-guide/mr-IN/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html) | [App Store वरून TripBee Lite मिळवा →](https://apps.apple.com/in/app/id6791299610?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Pro: प्रवास नियोजक** | iPhone साठी सर्वोत्तम ट्रिप इटिनरेरी प्लॅनर अॅप | एक चांगला इटिनरेरी अॅप गोंधळलेल्या ट्रिपला स्पष्ट दिवसभराच्या टाइमलाइनमध्ये रूपांतरित करतो — फ्लाइट्स, हॉटेल्स, क्रियाकलाप, रेस्टॉरंट्स आणि वाहतूक — स्पष्ट प्रकार चिन्हांसह जेणेकरून तुम्ही तुमचा दिवस एकदाच पाहू शकता। ओळखीचं वाटत असेल तर TripBee Pro: प्रवास नियोजक एकदा पाहा. | पैसे देऊन डाउनलोड करा | [मार्गदर्शक](https://open.cait518.cc/ios-app-guide/mr-IN/answers/best-trip-itinerary-planner-app-for-iphone.html) | [App Store वरून TripBee Pro: Trip Planner मिळवा →](https://apps.apple.com/in/app/id6787754435?pt=118326163&ct=geo_pick&mt=8) |
@@ -148,7 +149,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## पूर्ण डेटासेट डाउनलोड करा
 
-JSON, JSONL आणि CSV मध्ये समान 2,800 नोंदी आहेत.
+JSON, JSONL आणि CSV मध्ये समान 2,850 नोंदी आहेत.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -156,6 +157,6 @@ JSON, JSONL आणि CSV मध्ये समान 2,800 नोंदी आ
 
 [मुख्यपृष्ठ](https://open.cait518.cc/ios-app-guide/mr-IN/index.html) · [मुक्त डेटा](https://open.cait518.cc/ios-app-guide/mr-IN/data/lumi-studio-publisher-search-intent-catalog.html) · [परवाना](https://creativecommons.org/licenses/by/4.0/)
 
-अपडेट केलेले: 2026-11-03
+अपडेट केलेले: 2026-11-04
 
 CC BY 4.0 मूळ निर्देशिका संकलनावर लागू होते; अॅप नावे आणि App Store चिन्हे त्यांच्या मालकांची आहेत.

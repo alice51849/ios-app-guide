@@ -2,7 +2,7 @@
   "name": "Lumi Studio Publisher Intent Visuals",
   "description": "Localized first-party visual buyer-intent cards for every verified live iOS app.",
   "url": "https://open.cait518.cc/ios-app-guide/visuals/",
-  "dateModified": "2026-11-03",
+  "dateModified": "2026-11-04",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "creator": {
     "@type": "Organization",
@@ -10,320 +10,320 @@
     "url": "https://open.cait518.cc/ios-app-guide"
   },
   "source_dataset": "https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json",
-  "source_sha256": "7afb6a20e55b4b53995b6d0befeebfb58a95fbb4a9188eb344ad5d4d325bcab9",
-  "content_digest": "38f547d261a4032c1cc2a146e224aad08c6cfa4840508d5da978f9400bead2df",
-  "generation_digest": "df7b4b2ceb0d403824428618cfee05375cdc57b1f5941649281a916f5cc9cc2a",
+  "source_sha256": "c7346a1a2d7e8bbc7b1710481a485b86f11336ffae8ebe8f4f18f6c386aedb65",
+  "content_digest": "357d8b64fde7316f9d66f44ae6378652f013ad5b9f4158687af644154fc945be",
+  "generation_digest": "086ee34e9647e4688286bb904b07d8c9a8a0c83fd9876d5c7c71a10add668201",
   "ordering": "official_locale_order_then_alphabetical_app_name",
-  "app_count": 56,
+  "app_count": 57,
   "locale_count": 50,
-  "image_count": 2800,
+  "image_count": 2850,
   "gallery_count": 51,
   "galleries": [
     {
       "locale": "en",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/visuals/",
-      "sha256": "0008d25395edaa633af5430e9339a7e0b3ed6b39b09a266694533773c5f16496",
-      "dateModified": "2026-11-03"
+      "sha256": "ed260587a77a82c36437ed6947f04106e3aa243dd85b936e448174c5d04fef27",
+      "dateModified": "2026-11-04"
     },
     {
       "locale": "ar-SA",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ar-SA/visuals/",
-      "sha256": "80292ee263c19d6063f4715807c236357c70cd9e2fac7766431d38c5e99f8b6c",
-      "dateModified": "2026-11-03"
+      "sha256": "c1d854af5a95b05e8a45e68116be700f5610ffd623b2c1e32477b46871fb66fa",
+      "dateModified": "2026-11-04"
     },
     {
       "locale": "bn-BD",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/bn-BD/visuals/",
-      "sha256": "86c07470e6af484a995aba7e93e511f9dd62dee15bff2569ec5dbce6ab7ed13f",
-      "dateModified": "2026-11-03"
+      "sha256": "8edf25e0e3ffb24e630f14da4a743a9cf36780dff39885c9fe380d40d30da313",
+      "dateModified": "2026-11-04"
     },
     {
       "locale": "ca",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ca/visuals/",
-      "sha256": "a492e62fdcf1979c531da3a1a8a7131ebd3eda40cabbef3f632ddaffaa130423",
-      "dateModified": "2026-11-03"
+      "sha256": "13ed05a4e9ddc86ba6f7e97f4dee613dd7ef0ded8953ba309227a3fe462d627f",
+      "dateModified": "2026-11-04"
     },
     {
       "locale": "cs",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/cs/visuals/",
-      "sha256": "aa4ca88507df2b4a312c7744c14df61f122cedd639a06476606d1c2dda2ae318",
-      "dateModified": "2026-11-03"
+      "sha256": "d17657cbaa3b106e684eb67d9d2ce00e3e1237f535a334e5168e007210971ff7",
+      "dateModified": "2026-11-04"
     },
     {
       "locale": "da",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/da/visuals/",
-      "sha256": "f5e742f42b3e69dc701b6baf42f82792cde259308cb33e28307f5366fc5b08e2",
-      "dateModified": "2026-11-03"
+      "sha256": "ce7c1b8a79a29d34100afd0f6b7ea228d039270eab8de463c5872d1ecf61e626",
+      "dateModified": "2026-11-04"
     },
     {
       "locale": "de-DE",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/de-DE/visuals/",
-      "sha256": "9c1ce11b9260319771457625ce0b940080bc38aa141768d56c2639cc856fb4ba",
-      "dateModified": "2026-11-03"
+      "sha256": "1471574bca153bdb47c5219b2e6239f197539c6fc293132b52ac724577aab2b0",
+      "dateModified": "2026-11-04"
     },
     {
       "locale": "el",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/el/visuals/",
-      "sha256": "681955d1077b0251166cc8c522af8326e081283fe7a5ba9d45f0208f3c12f4e7",
-      "dateModified": "2026-11-03"
+      "sha256": "8e11ced27db3ba2b8479db6efb68e6501ede89fcd7cef001c4850e9eb4a18c4d",
+      "dateModified": "2026-11-04"
     },
     {
       "locale": "en-AU",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/en-AU/visuals/",
-      "sha256": "28649b0d8e0faf2430efab3b104d1db8e4f6096e29bcdcc023c8ce8076add291",
-      "dateModified": "2026-11-03"
+      "sha256": "2ec36b825f2ed493b5536f421acab045d7255dae92b589511f29cde0086450ea",
+      "dateModified": "2026-11-04"
     },
     {
       "locale": "en-CA",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/en-CA/visuals/",
-      "sha256": "21bc7d125207094cb9d459509f3901f8704f9bd1d8f46c133d325444055d858c",
-      "dateModified": "2026-11-03"
+      "sha256": "36310c5dc958225f1e622b143d68ed150615b259d8b6f3e51643db7cea8d1a76",
+      "dateModified": "2026-11-04"
     },
     {
       "locale": "en-GB",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/en-GB/visuals/",
-      "sha256": "8f9cd8fce4fe3fac27c2f911102dcd53ab1855daaafa3e8e494fbd49a41fb6fc",
-      "dateModified": "2026-11-03"
+      "sha256": "fbda0983483fa51683141b999ef51835832f32387a56cb95a0c023ef6f2d21d8",
+      "dateModified": "2026-11-04"
     },
     {
       "locale": "en-US",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/en-US/visuals/",
-      "sha256": "b1630cb39c7500dbb53450c0d0bd58d1160ed18f7ce7a20ef3eeb7d7353f07c5",
-      "dateModified": "2026-11-03"
+      "sha256": "46ccaf82cd4b365115da1ea6c69c13f5d18b227281af6cb5c224178e0f1b4b76",
+      "dateModified": "2026-11-04"
     },
     {
       "locale": "es-ES",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/es-ES/visuals/",
-      "sha256": "d2d630eae4a6560075e1824b09758fdc2c4af649b63cd89d83ac272a7b8f6fe5",
-      "dateModified": "2026-11-03"
+      "sha256": "ab988c2fbcaa540721f283458ad21d570cb2c00748ffb5f63bf29c72412df0fa",
+      "dateModified": "2026-11-04"
     },
     {
       "locale": "es-MX",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/es-MX/visuals/",
-      "sha256": "e0fe298971db2c49b4a022679404663eed840dc2f112fcb9669ffa85e4cdfc55",
-      "dateModified": "2026-11-03"
+      "sha256": "4c3506983714df507e4b64f5086346b3caea8d6a657256c068199cbc6b694917",
+      "dateModified": "2026-11-04"
     },
     {
       "locale": "fi",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/fi/visuals/",
-      "sha256": "70283a44a5db8d90b7e1129d58fb41038f1f2f970d371630f3ab0491090fd849",
-      "dateModified": "2026-11-03"
+      "sha256": "685bc58c51ffa315d5836bd13041d8d136a577d1498a543212c257c49c3737d4",
+      "dateModified": "2026-11-04"
     },
     {
       "locale": "fr-CA",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/fr-CA/visuals/",
-      "sha256": "71da0c44a46a39e0134b79279ee536799f7995f1ca56bd89d3547735eb939dad",
-      "dateModified": "2026-11-03"
+      "sha256": "9bb09d0005f154a79d71d4011d9cc94f5e7d0b329bad2bc4fc4c8f0c742b0382",
+      "dateModified": "2026-11-04"
     },
     {
       "locale": "fr-FR",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/fr-FR/visuals/",
-      "sha256": "359de03550feca7a2797606b76ca845675e3cb24aed2a58c350e72d4aa9e96ab",
-      "dateModified": "2026-11-03"
+      "sha256": "36e1f33e7a918c4582ce11ca03ce92f61f58c887908a0222b2ded44981464c55",
+      "dateModified": "2026-11-04"
     },
     {
       "locale": "gu-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/gu-IN/visuals/",
-      "sha256": "a3528576e2b07a40f38481c2da28d3df09f5fe6b58d451c252407c20b35db34b",
-      "dateModified": "2026-11-03"
+      "sha256": "39c7cce91bbbdce313d9f53e59d187c6b13df0d675edcfaf87ea50a885550fb4",
+      "dateModified": "2026-11-04"
     },
     {
       "locale": "he",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/he/visuals/",
-      "sha256": "e9e838e36e2878599f15c40067bfb7aa3f0b68e73d4a8ae7804a14a062723a06",
-      "dateModified": "2026-11-03"
+      "sha256": "b39d65f5250add2d192c3f5fa783c7b739005e559da1c224c57756922cf52061",
+      "dateModified": "2026-11-04"
     },
     {
       "locale": "hi",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/hi/visuals/",
-      "sha256": "8cffec64c73ad0efa2e7949870199ed8b4692f3e90aca3e43b96fa9bb64c124f",
-      "dateModified": "2026-11-03"
+      "sha256": "e8ccb9cab769ada1c8f4f0eb75c916ab68efd87560438eb47bd90c68893fc8a8",
+      "dateModified": "2026-11-04"
     },
     {
       "locale": "hr",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/hr/visuals/",
-      "sha256": "7c5cd54d3ad43740bdf818d5f27a5581d87523cfbcb9b512b8fa3e76f2499ecc",
-      "dateModified": "2026-11-03"
+      "sha256": "c95c07f7b6e0729f38fe8160494fbaf15ecd44ca64dcec2c0b1daf09cfdb5a93",
+      "dateModified": "2026-11-04"
     },
     {
       "locale": "hu",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/hu/visuals/",
-      "sha256": "3c00c389cf1adb71b29d68949bcdf28c88d2aa0952075d754419b2e2e768e998",
-      "dateModified": "2026-11-03"
+      "sha256": "f6b96c851f45613f6bdb05243720055e0de2c6b17e479b825d65c35d52066b58",
+      "dateModified": "2026-11-04"
     },
     {
       "locale": "id",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/id/visuals/",
-      "sha256": "de9c1e50f331ae67b3032d82bfb18cd129c744b22aed0e718aa1871902f2ce97",
-      "dateModified": "2026-11-03"
+      "sha256": "73f5c20ddd8a47ea4c34b8476aee50d1f3aec275ba4d0348a2521568a7339c83",
+      "dateModified": "2026-11-04"
     },
     {
       "locale": "it",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/it/visuals/",
-      "sha256": "ebc7618a1496dadfcaf02bd9bc5fa7c7843c75b5ed1744eb14a7bd3b6d43b2e8",
-      "dateModified": "2026-11-03"
+      "sha256": "0328eb29a5308d4c66fce1ac4bc5b29641ad93d0ee0d5ad3da6af41931461ce6",
+      "dateModified": "2026-11-04"
     },
     {
       "locale": "ja",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ja/visuals/",
-      "sha256": "9f535efdb9d175e77292f8eb68e619db2ab30166aaee1b064212c5f4315133c0",
-      "dateModified": "2026-11-03"
+      "sha256": "27f095785a609c0adaeb478ee3eaa31452f3b702bbc42e1916c25274a6a26718",
+      "dateModified": "2026-11-04"
     },
     {
       "locale": "kn-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/kn-IN/visuals/",
-      "sha256": "be0efbd2a5e3aa99b516dd3f54215daf412bd43f87eabcaed85a799978e2fe72",
-      "dateModified": "2026-11-03"
+      "sha256": "ace5787db22329b61c22123bf3b4f524559ba557968cc110d3733e55ed3474cf",
+      "dateModified": "2026-11-04"
     },
     {
       "locale": "ko",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ko/visuals/",
-      "sha256": "7fc22c2fa5df03186edd06638986216f31546c0ca81357abb7825fcdb22587ff",
-      "dateModified": "2026-11-03"
+      "sha256": "5de076b8b55845823f6ebae728fcb20edcfc5800c7a84d769d3f89434e220fe8",
+      "dateModified": "2026-11-04"
     },
     {
       "locale": "ml-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ml-IN/visuals/",
-      "sha256": "00f28b2a075f602798bfc469a74715b766d9a2758ee86051d5d3448460dd7d03",
-      "dateModified": "2026-11-03"
+      "sha256": "c984729d9d72ac7f0dfe02e3a0dcafcbf8c56c357c7dec7c9d909f5fc0b068ef",
+      "dateModified": "2026-11-04"
     },
     {
       "locale": "mr-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/mr-IN/visuals/",
-      "sha256": "acc5a6150e2c44595909d569559e37d139e1fa4367968a921eb9b458432b34f1",
-      "dateModified": "2026-11-03"
+      "sha256": "0002571716243c1635eeded03505121875cf29420de57e6115f12e30af3107e4",
+      "dateModified": "2026-11-04"
     },
     {
       "locale": "ms",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ms/visuals/",
-      "sha256": "bd07ae051b7e7bdfe6aefb4006c43614c2ea31da78d0711fcf3f161ee35d9223",
-      "dateModified": "2026-11-03"
+      "sha256": "2b7889ede706029761dfe7e7c8815a5bb5c38e424a3d436cccb1bd9d427be232",
+      "dateModified": "2026-11-04"
     },
     {
       "locale": "nl-NL",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/nl-NL/visuals/",
-      "sha256": "45aa68f1f4289f9d8d4cbc7d87ba56f9bd9c878602d6bbf5d996b5df3049e433",
-      "dateModified": "2026-11-03"
+      "sha256": "e018c3ceb0b566a2c2fe83648f266b51340cd99645a7306be3b770b8219c777b",
+      "dateModified": "2026-11-04"
     },
     {
       "locale": "no",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/no/visuals/",
-      "sha256": "820a0470c009094430dc750b1fbe83a90afb79ce868e44a9b784f83224888c75",
-      "dateModified": "2026-11-03"
+      "sha256": "9fb92eab85683eff7b42c82743077a129e8b353e7fc08f88dc3c817b10415a90",
+      "dateModified": "2026-11-04"
     },
     {
       "locale": "or-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/or-IN/visuals/",
-      "sha256": "f4c7a0d6931e82cde3a9e28b438e8e6086e6f57fed3ebc3f85af43ebbabac76e",
-      "dateModified": "2026-11-03"
+      "sha256": "322fbcbf4352eab7bc8d9230af34f92831e64241c0b197ba64833314d3e2590d",
+      "dateModified": "2026-11-04"
     },
     {
       "locale": "pa-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/pa-IN/visuals/",
-      "sha256": "2bf31308bf557e4ee903ca78f746d1ca90f235e68b65d8d3a4fdb41f955544ae",
-      "dateModified": "2026-11-03"
+      "sha256": "c571e61d573a56c0f2fc06aa432b5706755f1a3fdf5ef3d904c04f6be7cd2430",
+      "dateModified": "2026-11-04"
     },
     {
       "locale": "pl",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/pl/visuals/",
-      "sha256": "858fe891c861849199d846e5cae1490816d23a711b55e108f493134fa5efa572",
-      "dateModified": "2026-11-03"
+      "sha256": "e7f0750ab879d036cdf898e00b466701e79322b772c095223b6e1f050c75308c",
+      "dateModified": "2026-11-04"
     },
     {
       "locale": "pt-BR",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/pt-BR/visuals/",
-      "sha256": "043bc5fe5094860ee61041095ee5bf76d97f777f636dce77f78166ac235c4f4e",
-      "dateModified": "2026-11-03"
+      "sha256": "192b932381d9d705dde36618571947666d42e25f43e9e1b2ebf1641976a71395",
+      "dateModified": "2026-11-04"
     },
     {
       "locale": "pt-PT",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/pt-PT/visuals/",
-      "sha256": "93a3d12d5f70a6255750d87edd4938e06be32b3d8b33d1cc7fc5a5c79a0dd7cf",
-      "dateModified": "2026-11-03"
+      "sha256": "d818c901e62d1eaff2b81371d55a15f13fc8c255a0addf2e271de3f7bc2f8651",
+      "dateModified": "2026-11-04"
     },
     {
       "locale": "ro",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ro/visuals/",
-      "sha256": "b0201a90baf245ae409af8eacfadd0745561622b6d49676f0cde972d5dd95417",
-      "dateModified": "2026-11-03"
+      "sha256": "1fb57ef8ceee6f8cad745c3aab83629975c41218a84bfab5280db1683fd25993",
+      "dateModified": "2026-11-04"
     },
     {
       "locale": "ru",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ru/visuals/",
-      "sha256": "e1c4d5a8321befd44a597db909fa2266c4f355eaacec4b3a27e81338b40fa1ef",
-      "dateModified": "2026-11-03"
+      "sha256": "d33f77a263fed5e57240adc064903c945ab288ed31631a7a625f95c30a9d68e7",
+      "dateModified": "2026-11-04"
     },
     {
       "locale": "sk",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/sk/visuals/",
-      "sha256": "6de795ea67f8e6fde40770eae3ecf5f49179f796ea5256afd922d250b360d99f",
-      "dateModified": "2026-11-03"
+      "sha256": "82d04f44cc81de5126e7763c1d30a63f3d0f42ea04658a92fba1cf413a32add0",
+      "dateModified": "2026-11-04"
     },
     {
       "locale": "sl-SI",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/sl-SI/visuals/",
-      "sha256": "1836c6be9ee53776317abac684bebc8a372390d1593458b85786c8f749747997",
-      "dateModified": "2026-11-03"
+      "sha256": "940cd68fe397990dbf195f9d76537638eeb8571074c6985e617ea1103026b236",
+      "dateModified": "2026-11-04"
     },
     {
       "locale": "sv",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/sv/visuals/",
-      "sha256": "eea86163fa0d7d5cc7797451c808938824ba295a8f0bebd62fb8594645f6d5af",
-      "dateModified": "2026-11-03"
+      "sha256": "2d3ef0be265575b94d39464e8bafceeb2f239398c9c5d06134e7c38038983845",
+      "dateModified": "2026-11-04"
     },
     {
       "locale": "ta-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ta-IN/visuals/",
-      "sha256": "172bd9ee8e24208f649ffa406b87f4053a51f8a82f0920e7061bab56086400e5",
-      "dateModified": "2026-11-03"
+      "sha256": "5e8867eab0a6258faef26e59c38291fef5f813c1ceadf248a0fc58a40c82065f",
+      "dateModified": "2026-11-04"
     },
     {
       "locale": "te-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/te-IN/visuals/",
-      "sha256": "fccef9db68416b39df1d1089e8d24a67b96d207696c63e71e5f6de77187ff4a4",
-      "dateModified": "2026-11-03"
+      "sha256": "d85ff6a0fbf76d2b4e597060cc32cce079df999bcba0eac247d3bd7f0125ff51",
+      "dateModified": "2026-11-04"
     },
     {
       "locale": "th",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/th/visuals/",
-      "sha256": "8a613d0ce4d7582d1b764dfd6997a24ed21638dca559eae831b404e1ef164055",
-      "dateModified": "2026-11-03"
+      "sha256": "75085701e8132b5d1f4d93c58abaf7a786a8b67b4c182363b15fce8edbaabaf8",
+      "dateModified": "2026-11-04"
     },
     {
       "locale": "tr",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/tr/visuals/",
-      "sha256": "33183897d940c4e7bee9464f103f4e9053f9f155667ea04decb41100cf18ed5f",
-      "dateModified": "2026-11-03"
+      "sha256": "7ad9359c0438b993a2f23aa9480bfb8dc311be9ad8fac1884d87dcb2c8b1949e",
+      "dateModified": "2026-11-04"
     },
     {
       "locale": "uk",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/uk/visuals/",
-      "sha256": "e37857a5c316143cac7fee61d7236fc6809502262bdbd09f14b772c733e2d211",
-      "dateModified": "2026-11-03"
+      "sha256": "96dca24b5facd32a586b7f93662614ce690c72f76ed8ad22fc30a6f1728a5479",
+      "dateModified": "2026-11-04"
     },
     {
       "locale": "ur-PK",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ur-PK/visuals/",
-      "sha256": "5c18981d2c1797d3415637e969609ebf5fcc8e89dd7d12e2edf280219c2826d3",
-      "dateModified": "2026-11-03"
+      "sha256": "2fe8f9c80e0acffb07e89de2ccc9579c59490d70896d101a10dc2cef88780fb8",
+      "dateModified": "2026-11-04"
     },
     {
       "locale": "vi",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/vi/visuals/",
-      "sha256": "6d376f435efb57b0fdebb364d34469a34390f6103959e35db5bd1377e419146e",
-      "dateModified": "2026-11-03"
+      "sha256": "c3c9ac564625075b76e129f15b9e055529b58f3b86dec95117bff3c673381601",
+      "dateModified": "2026-11-04"
     },
     {
       "locale": "zh-Hans",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/visuals/",
-      "sha256": "7e3e3bfa9ebd8bc428226f936acc7900c76f26dec7a09aa6add376058c08c0d9",
-      "dateModified": "2026-11-03"
+      "sha256": "ec55f749849f72086dcb5e5db52100eb72feb9d76a54a8ff874838a6376978cd",
+      "dateModified": "2026-11-04"
     },
     {
       "locale": "zh-Hant",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/visuals/",
-      "sha256": "f068f84b669ffcea9debb7fffd69e761f1d4b3edbdf5b33aa168e26a72a82288",
-      "dateModified": "2026-11-03"
+      "sha256": "1f8a8246cf5442ab8c76d458278621a6a2d82de36244bd4d211b3be8700ae46a",
+      "dateModified": "2026-11-04"
     }
   ],
   "publisher_authored": true,
@@ -638,6 +638,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ar-SA/answers/best-on-device-file-redaction-app-for-freelancers-sharing-client-documents.html",
       "app_store_url": "https://apps.apple.com/sa/app/id6792850916?pt=118326163&ct=iag_visual_ar_sa&mt=8",
       "sha256": "c3731bee291a695ed0a519045226811624db138ba68c1201ba3608d2c652bbf4"
+    },
+    {
+      "locale": "ar-SA",
+      "app_key": "metrotimehelper",
+      "app_store_id": "6819061896",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ar-SA/metrotimehelper.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ar-SA/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ar-SA/metrotimehelper.html",
+      "app_store_url": "https://apps.apple.com/sa/app/id6819061896?pt=118326163&ct=iag_visual_ar_sa&mt=8",
+      "sha256": "399707755c319c341172596163f8e9818d7c4bf406297af092d08ebc2eb6b8c9"
     },
     {
       "locale": "ar-SA",
@@ -1771,6 +1781,35 @@
     },
     {
       "locale": "bn-BD",
+      "app_key": "metrotimehelper",
+      "app_store_id": "6819061896",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/bn-BD/metrotimehelper.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/bn-BD/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/metrotimehelper.html",
+      "app_store_url": null,
+      "sha256": "5c9a4a94aa9f0e9dd2b0e7757fb21a45cd39f64b431f4da36d139510e642be8e",
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+        "evidence": {
+          "source_url": "https://support.apple.com/en-us/118205",
+          "observed_at": "2026-09-12",
+          "country": "BD",
+          "apple_media_services_markets": 174,
+          "country_listed": false,
+          "lookup_app_results": 0,
+          "lookup_control_results": 0,
+          "redirect_market": "US"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
+    },
+    {
+      "locale": "bn-BD",
       "app_key": "mochi",
       "app_store_id": "6785004775",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/bn-BD/mochi.svg",
@@ -2825,6 +2864,16 @@
     },
     {
       "locale": "ca",
+      "app_key": "metrotimehelper",
+      "app_store_id": "6819061896",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ca/metrotimehelper.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ca/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ca/metrotimehelper.html",
+      "app_store_url": "https://apps.apple.com/es/app/id6819061896?pt=118326163&ct=iag_visual_ca&mt=8",
+      "sha256": "573213010ac24d571481e7988b1cdd8104c2692f4e4606d82de2f889777fc0b6"
+    },
+    {
+      "locale": "ca",
       "app_key": "mochi",
       "app_store_id": "6785004775",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ca/mochi.svg",
@@ -3382,6 +3431,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/cs/maskmyfile.html",
       "app_store_url": "https://apps.apple.com/cz/app/id6792850916?pt=118326163&ct=iag_visual_cs&mt=8",
       "sha256": "7159e36785b1d5af11fa042c3094161a40e6e58169cc9c912f8ca486d3d464e6"
+    },
+    {
+      "locale": "cs",
+      "app_key": "metrotimehelper",
+      "app_store_id": "6819061896",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/cs/metrotimehelper.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/cs/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/cs/metrotimehelper.html",
+      "app_store_url": "https://apps.apple.com/cz/app/id6819061896?pt=118326163&ct=iag_visual_cs&mt=8",
+      "sha256": "0944180c10e19453666c05ee79d5acf1db4d2bd7bb83430186b472332ec0e7d4"
     },
     {
       "locale": "cs",
@@ -3945,6 +4004,16 @@
     },
     {
       "locale": "da",
+      "app_key": "metrotimehelper",
+      "app_store_id": "6819061896",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/da/metrotimehelper.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/da/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/da/metrotimehelper.html",
+      "app_store_url": "https://apps.apple.com/dk/app/id6819061896?pt=118326163&ct=iag_visual_da&mt=8",
+      "sha256": "7abda8221286e5c21cbfeea9f10d22c9e7d32c59bed54f6179a933123a9e9243"
+    },
+    {
+      "locale": "da",
       "app_key": "mochi",
       "app_store_id": "6785004775",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/da/mochi.svg",
@@ -4502,6 +4571,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/de-DE/answers/best-on-device-file-redaction-app-for-freelancers-sharing-client-documents.html",
       "app_store_url": "https://apps.apple.com/de/app/id6792850916?pt=118326163&ct=iag_visual_de_de&mt=8",
       "sha256": "0b9cbd37e72b78a8815595d26ecd5204bc6361d99b67b8b1f1208b38af340612"
+    },
+    {
+      "locale": "de-DE",
+      "app_key": "metrotimehelper",
+      "app_store_id": "6819061896",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/de-DE/metrotimehelper.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/de-DE/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/de-DE/metrotimehelper.html",
+      "app_store_url": "https://apps.apple.com/de/app/id6819061896?pt=118326163&ct=iag_visual_de_de&mt=8",
+      "sha256": "075223d0eccd834d8e3b3f5f7494a9e0919898d53f868ca0cface2f0ce1743ba"
     },
     {
       "locale": "de-DE",
@@ -5065,6 +5144,16 @@
     },
     {
       "locale": "el",
+      "app_key": "metrotimehelper",
+      "app_store_id": "6819061896",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/el/metrotimehelper.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/el/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/el/metrotimehelper.html",
+      "app_store_url": "https://apps.apple.com/gr/app/id6819061896?pt=118326163&ct=iag_visual_el&mt=8",
+      "sha256": "ec7cc137bbc3441041382d81b75adf04dbe2487ada713ce9b9542025340a125f"
+    },
+    {
+      "locale": "el",
       "app_key": "mochi",
       "app_store_id": "6785004775",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/el/mochi.svg",
@@ -5622,6 +5711,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-AU/answers/best-on-device-file-redaction-app-for-freelancers-sharing-client-documents.html",
       "app_store_url": "https://apps.apple.com/au/app/id6792850916?pt=118326163&ct=iag_visual_en_au&mt=8",
       "sha256": "7359e163673d39c3f4b1c77af983ef34f3b72a65aa33f36882be1e677e24c9da"
+    },
+    {
+      "locale": "en-AU",
+      "app_key": "metrotimehelper",
+      "app_store_id": "6819061896",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/en-AU/metrotimehelper.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/en-AU/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-AU/metrotimehelper.html",
+      "app_store_url": "https://apps.apple.com/au/app/id6819061896?pt=118326163&ct=iag_visual_en_au&mt=8",
+      "sha256": "e76ab24219648e6911cb01a8b16be098d356408dc1b0371cf38f3757b8b2d0ee"
     },
     {
       "locale": "en-AU",
@@ -6185,6 +6284,16 @@
     },
     {
       "locale": "en-CA",
+      "app_key": "metrotimehelper",
+      "app_store_id": "6819061896",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/en-CA/metrotimehelper.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/en-CA/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-CA/metrotimehelper.html",
+      "app_store_url": "https://apps.apple.com/ca/app/id6819061896?pt=118326163&ct=iag_visual_en_ca&mt=8",
+      "sha256": "635cfd9da93f1418d0bbd416e589c898ee311308c136e8f8f0a9a6fbccab6a2a"
+    },
+    {
+      "locale": "en-CA",
       "app_key": "mochi",
       "app_store_id": "6785004775",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/en-CA/mochi.svg",
@@ -6742,6 +6851,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-GB/answers/best-on-device-file-redaction-app-for-freelancers-sharing-client-documents.html",
       "app_store_url": "https://apps.apple.com/gb/app/id6792850916?pt=118326163&ct=iag_visual_en_gb&mt=8",
       "sha256": "07609c3860f74e7b0c12604fe16fa5944c0dedfadea58925022ff3e19cfae369"
+    },
+    {
+      "locale": "en-GB",
+      "app_key": "metrotimehelper",
+      "app_store_id": "6819061896",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/en-GB/metrotimehelper.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/en-GB/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-GB/metrotimehelper.html",
+      "app_store_url": "https://apps.apple.com/gb/app/id6819061896?pt=118326163&ct=iag_visual_en_gb&mt=8",
+      "sha256": "21df9f824d9a385d3decb018a7780485d15c3b206712f19c536ce9d8bd725690"
     },
     {
       "locale": "en-GB",
@@ -7305,6 +7424,16 @@
     },
     {
       "locale": "en-US",
+      "app_key": "metrotimehelper",
+      "app_store_id": "6819061896",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/en-US/metrotimehelper.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/en-US/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-US/metrotimehelper.html",
+      "app_store_url": "https://apps.apple.com/us/app/id6819061896?pt=118326163&ct=iag_visual_en_us&mt=8",
+      "sha256": "0cf06a34b2b3933f1c2e3b8c3ece8e1f590224bf4e2a3077961f1fd71864a53e"
+    },
+    {
+      "locale": "en-US",
       "app_key": "mochi",
       "app_store_id": "6785004775",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/en-US/mochi.svg",
@@ -7862,6 +7991,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/es-ES/answers/best-on-device-file-redaction-app-for-freelancers-sharing-client-documents.html",
       "app_store_url": "https://apps.apple.com/es/app/id6792850916?pt=118326163&ct=iag_visual_es_es&mt=8",
       "sha256": "def9bb3466ce73c81c97638b1a49b9fd078f46ab0d5220f46ba0fa6c22f3e176"
+    },
+    {
+      "locale": "es-ES",
+      "app_key": "metrotimehelper",
+      "app_store_id": "6819061896",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/es-ES/metrotimehelper.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/es-ES/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/es-ES/metrotimehelper.html",
+      "app_store_url": "https://apps.apple.com/es/app/id6819061896?pt=118326163&ct=iag_visual_es_es&mt=8",
+      "sha256": "283bd18c1e4ba3af8e16e3b56d82173b4e39577364a5254aff756c079693f8e9"
     },
     {
       "locale": "es-ES",
@@ -8425,6 +8564,16 @@
     },
     {
       "locale": "es-MX",
+      "app_key": "metrotimehelper",
+      "app_store_id": "6819061896",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/es-MX/metrotimehelper.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/es-MX/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/es-MX/metrotimehelper.html",
+      "app_store_url": "https://apps.apple.com/mx/app/id6819061896?pt=118326163&ct=iag_visual_es_mx&mt=8",
+      "sha256": "092e625aaed4c726369fb51cf6174b8e45ab241a8751c8a10b6d1ecadbd1e34d"
+    },
+    {
+      "locale": "es-MX",
       "app_key": "mochi",
       "app_store_id": "6785004775",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/es-MX/mochi.svg",
@@ -8982,6 +9131,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/fi/maskmyfile.html",
       "app_store_url": "https://apps.apple.com/fi/app/id6792850916?pt=118326163&ct=iag_visual_fi&mt=8",
       "sha256": "189a4c2b9fc2b1bd653e1f595e2a861f779886a24ced0a9de3b067137c1cb9ff"
+    },
+    {
+      "locale": "fi",
+      "app_key": "metrotimehelper",
+      "app_store_id": "6819061896",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/fi/metrotimehelper.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/fi/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/fi/metrotimehelper.html",
+      "app_store_url": "https://apps.apple.com/fi/app/id6819061896?pt=118326163&ct=iag_visual_fi&mt=8",
+      "sha256": "d6d4b3416c154fe29ff7074b6547b50d2bcf1b39d7add76bcaeb4a783b3ea359"
     },
     {
       "locale": "fi",
@@ -9545,6 +9704,16 @@
     },
     {
       "locale": "fr-CA",
+      "app_key": "metrotimehelper",
+      "app_store_id": "6819061896",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/fr-CA/metrotimehelper.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/fr-CA/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/fr-CA/metrotimehelper.html",
+      "app_store_url": "https://apps.apple.com/ca/app/id6819061896?pt=118326163&ct=iag_visual_fr_ca&mt=8",
+      "sha256": "6c02752b13cfc2f8f7b98b384df6cabeba785590f206cecf1d9e911ff9ebf8b2"
+    },
+    {
+      "locale": "fr-CA",
       "app_key": "mochi",
       "app_store_id": "6785004775",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/fr-CA/mochi.svg",
@@ -10102,6 +10271,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/fr-FR/answers/best-on-device-file-redaction-app-for-freelancers-sharing-client-documents.html",
       "app_store_url": "https://apps.apple.com/fr/app/id6792850916?pt=118326163&ct=iag_visual_fr_fr&mt=8",
       "sha256": "0fe62154795be5090aca4c8734e945b15d021575434a3bec32c301d61815761a"
+    },
+    {
+      "locale": "fr-FR",
+      "app_key": "metrotimehelper",
+      "app_store_id": "6819061896",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/fr-FR/metrotimehelper.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/fr-FR/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/fr-FR/metrotimehelper.html",
+      "app_store_url": "https://apps.apple.com/fr/app/id6819061896?pt=118326163&ct=iag_visual_fr_fr&mt=8",
+      "sha256": "e4dbe3ad3a8df6b236dcdd9effc135f6b6a9129fe099e85751bcc740c0c4e17a"
     },
     {
       "locale": "fr-FR",
@@ -10665,6 +10844,16 @@
     },
     {
       "locale": "gu-IN",
+      "app_key": "metrotimehelper",
+      "app_store_id": "6819061896",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/gu-IN/metrotimehelper.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/gu-IN/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/gu-IN/metrotimehelper.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6819061896?pt=118326163&ct=iag_visual_gu_in&mt=8",
+      "sha256": "5e0ed5b2c4a90a8aa3f69b13b36511ca9f7c9dadfcbeaa95b4a5a31845e6296f"
+    },
+    {
+      "locale": "gu-IN",
       "app_key": "mochi",
       "app_store_id": "6785004775",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/gu-IN/mochi.svg",
@@ -11222,6 +11411,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/he/maskmyfile.html",
       "app_store_url": "https://apps.apple.com/il/app/id6792850916?pt=118326163&ct=iag_visual_he&mt=8",
       "sha256": "9aebf6d08a52e25b0348146d7072b9c6c5a4cdfd57cc93c633586649c3d41087"
+    },
+    {
+      "locale": "he",
+      "app_key": "metrotimehelper",
+      "app_store_id": "6819061896",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/he/metrotimehelper.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/he/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/he/metrotimehelper.html",
+      "app_store_url": "https://apps.apple.com/il/app/id6819061896?pt=118326163&ct=iag_visual_he&mt=8",
+      "sha256": "d88398b4864e38dcfcee82c92d79aa43166b423e06ef2eb3daa08544ceb52922"
     },
     {
       "locale": "he",
@@ -11785,6 +11984,16 @@
     },
     {
       "locale": "hi",
+      "app_key": "metrotimehelper",
+      "app_store_id": "6819061896",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/hi/metrotimehelper.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/hi/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/hi/metrotimehelper.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6819061896?pt=118326163&ct=iag_visual_hi&mt=8",
+      "sha256": "3a371457c2165bfbe4a9b6d46aa2dd9d4738e1b4a7bcb10cc392a64f9ff8d9d9"
+    },
+    {
+      "locale": "hi",
       "app_key": "mochi",
       "app_store_id": "6785004775",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/hi/mochi.svg",
@@ -12081,7 +12290,7 @@
       "gallery_url": "https://open.cait518.cc/ios-app-guide/hr/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/hr/battai.html",
       "app_store_url": "https://apps.apple.com/hr/app/id6802423998?pt=118326163&ct=iag_visual_hr&mt=8",
-      "sha256": "1b2dda47477997686a8d7d57a6df1f0c83c1c9e22213c1decc11c2c24d9d701a"
+      "sha256": "2973913625a479d6b9a82489109ff4387b8fc2e7b6752270bd7c4a716f3c16e7"
     },
     {
       "locale": "hr",
@@ -12342,6 +12551,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/hr/maskmyfile.html",
       "app_store_url": "https://apps.apple.com/hr/app/id6792850916?pt=118326163&ct=iag_visual_hr&mt=8",
       "sha256": "bb806a4297f13c27c18c52a2e7cff40d446b28e59bdf27fc5037cee4df7c8978"
+    },
+    {
+      "locale": "hr",
+      "app_key": "metrotimehelper",
+      "app_store_id": "6819061896",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/hr/metrotimehelper.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/hr/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/hr/metrotimehelper.html",
+      "app_store_url": "https://apps.apple.com/hr/app/id6819061896?pt=118326163&ct=iag_visual_hr&mt=8",
+      "sha256": "4edb6dcad639bcb1a1e48f2e515d3b3df5575f17ebedc18a36ad213bee9fd201"
     },
     {
       "locale": "hr",
@@ -12905,6 +13124,16 @@
     },
     {
       "locale": "hu",
+      "app_key": "metrotimehelper",
+      "app_store_id": "6819061896",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/hu/metrotimehelper.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/hu/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/hu/metrotimehelper.html",
+      "app_store_url": "https://apps.apple.com/hu/app/id6819061896?pt=118326163&ct=iag_visual_hu&mt=8",
+      "sha256": "dcb1eb88b756f029c8409cf71479bc8110a6c2f92f1c1d560080e92f5781d258"
+    },
+    {
+      "locale": "hu",
       "app_key": "mochi",
       "app_store_id": "6785004775",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/hu/mochi.svg",
@@ -13462,6 +13691,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/id/answers/best-on-device-file-redaction-app-for-freelancers-sharing-client-documents.html",
       "app_store_url": "https://apps.apple.com/id/app/id6792850916?pt=118326163&ct=iag_visual_id&mt=8",
       "sha256": "dd6d53e29422903332db06217170a2dbbd25bb6d2abd42f4f173536368304387"
+    },
+    {
+      "locale": "id",
+      "app_key": "metrotimehelper",
+      "app_store_id": "6819061896",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/id/metrotimehelper.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/id/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/id/metrotimehelper.html",
+      "app_store_url": "https://apps.apple.com/id/app/id6819061896?pt=118326163&ct=iag_visual_id&mt=8",
+      "sha256": "0eaeb731159e0a6d09c0395aed3cf27ea2bfa402d4cecc08bba06391b478eafb"
     },
     {
       "locale": "id",
@@ -14025,6 +14264,16 @@
     },
     {
       "locale": "it",
+      "app_key": "metrotimehelper",
+      "app_store_id": "6819061896",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/it/metrotimehelper.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/it/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/it/metrotimehelper.html",
+      "app_store_url": "https://apps.apple.com/it/app/id6819061896?pt=118326163&ct=iag_visual_it&mt=8",
+      "sha256": "3f9fec9fbfdba964a491862a7611995f479065f33ed5b87af9893277e1abd40f"
+    },
+    {
+      "locale": "it",
       "app_key": "mochi",
       "app_store_id": "6785004775",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/it/mochi.svg",
@@ -14582,6 +14831,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ja/answers/best-on-device-file-redaction-app-for-freelancers-sharing-client-documents.html",
       "app_store_url": "https://apps.apple.com/jp/app/id6792850916?pt=118326163&ct=iag_visual_ja&mt=8",
       "sha256": "36a04bf96c7d1ca9a636fce277c850d899efb24d0e66b36b00fc5abb1f90b7c1"
+    },
+    {
+      "locale": "ja",
+      "app_key": "metrotimehelper",
+      "app_store_id": "6819061896",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ja/metrotimehelper.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ja/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ja/metrotimehelper.html",
+      "app_store_url": "https://apps.apple.com/jp/app/id6819061896?pt=118326163&ct=iag_visual_ja&mt=8",
+      "sha256": "7fddf8f7bc125ef7c880f1a0ecec33ed4f6e4bc0ce9f4668d309bbc34a79b3ef"
     },
     {
       "locale": "ja",
@@ -15145,6 +15404,16 @@
     },
     {
       "locale": "kn-IN",
+      "app_key": "metrotimehelper",
+      "app_store_id": "6819061896",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/kn-IN/metrotimehelper.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/kn-IN/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/kn-IN/metrotimehelper.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6819061896?pt=118326163&ct=iag_visual_kn_in&mt=8",
+      "sha256": "a3126ea33f8a38acda0ba842c5ad7bb1edd4f864ff713ce26052bf115e212ba3"
+    },
+    {
+      "locale": "kn-IN",
       "app_key": "mochi",
       "app_store_id": "6785004775",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/kn-IN/mochi.svg",
@@ -15702,6 +15971,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ko/answers/best-on-device-file-redaction-app-for-freelancers-sharing-client-documents.html",
       "app_store_url": "https://apps.apple.com/kr/app/id6792850916?pt=118326163&ct=iag_visual_ko&mt=8",
       "sha256": "e546f41a53611637fb501c2c86efee4ac6ae3fecb5a91271731d1130474da0dd"
+    },
+    {
+      "locale": "ko",
+      "app_key": "metrotimehelper",
+      "app_store_id": "6819061896",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ko/metrotimehelper.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ko/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ko/metrotimehelper.html",
+      "app_store_url": "https://apps.apple.com/kr/app/id6819061896?pt=118326163&ct=iag_visual_ko&mt=8",
+      "sha256": "0b8e99a6497ff3ae90787a8d45d97b8e97469b9650e7030bb0fcefe17194ea2b"
     },
     {
       "locale": "ko",
@@ -16265,6 +16544,16 @@
     },
     {
       "locale": "ml-IN",
+      "app_key": "metrotimehelper",
+      "app_store_id": "6819061896",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ml-IN/metrotimehelper.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ml-IN/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ml-IN/metrotimehelper.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6819061896?pt=118326163&ct=iag_visual_ml_in&mt=8",
+      "sha256": "f24e7a956c5fd8f9b1147bbb365f9f8192974145bca7336be12b91cad9f038af"
+    },
+    {
+      "locale": "ml-IN",
       "app_key": "mochi",
       "app_store_id": "6785004775",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ml-IN/mochi.svg",
@@ -16822,6 +17111,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/mr-IN/maskmyfile.html",
       "app_store_url": "https://apps.apple.com/in/app/id6792850916?pt=118326163&ct=iag_visual_mr_in&mt=8",
       "sha256": "c2b8edbe246383e842a9bc318ec89856c34e2471e901a0392a128d49af7bb461"
+    },
+    {
+      "locale": "mr-IN",
+      "app_key": "metrotimehelper",
+      "app_store_id": "6819061896",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/mr-IN/metrotimehelper.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/mr-IN/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/mr-IN/metrotimehelper.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6819061896?pt=118326163&ct=iag_visual_mr_in&mt=8",
+      "sha256": "cb9f162807ab4ecd00523d49e240ac3ccc7a6a3d11a0b3d39e66b9eadc104778"
     },
     {
       "locale": "mr-IN",
@@ -17385,6 +17684,16 @@
     },
     {
       "locale": "ms",
+      "app_key": "metrotimehelper",
+      "app_store_id": "6819061896",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ms/metrotimehelper.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ms/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ms/metrotimehelper.html",
+      "app_store_url": "https://apps.apple.com/my/app/id6819061896?pt=118326163&ct=iag_visual_ms&mt=8",
+      "sha256": "aa291e52c41257d3fbcb98332e45558a8ee5029596c8028d4e31e50cafd0d95b"
+    },
+    {
+      "locale": "ms",
       "app_key": "mochi",
       "app_store_id": "6785004775",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ms/mochi.svg",
@@ -17942,6 +18251,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/maskmyfile.html",
       "app_store_url": "https://apps.apple.com/nl/app/id6792850916?pt=118326163&ct=iag_visual_nl_nl&mt=8",
       "sha256": "cf85dfeb9ea538e80469e5ea3b4237e4d7d8b3a94317ce612de145b398e89760"
+    },
+    {
+      "locale": "nl-NL",
+      "app_key": "metrotimehelper",
+      "app_store_id": "6819061896",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/nl-NL/metrotimehelper.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/nl-NL/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/metrotimehelper.html",
+      "app_store_url": "https://apps.apple.com/nl/app/id6819061896?pt=118326163&ct=iag_visual_nl_nl&mt=8",
+      "sha256": "484b8eaac826d0d4e3aef1203fe918d060a6bf0220a741b5a94793005c9bdf5c"
     },
     {
       "locale": "nl-NL",
@@ -18505,6 +18824,16 @@
     },
     {
       "locale": "no",
+      "app_key": "metrotimehelper",
+      "app_store_id": "6819061896",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/no/metrotimehelper.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/no/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/no/metrotimehelper.html",
+      "app_store_url": "https://apps.apple.com/no/app/id6819061896?pt=118326163&ct=iag_visual_no&mt=8",
+      "sha256": "7af5c3c09e20995a6073b7400b776a814e81124d8228d941612e3e198bb3965c"
+    },
+    {
+      "locale": "no",
       "app_key": "mochi",
       "app_store_id": "6785004775",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/no/mochi.svg",
@@ -19062,6 +19391,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/or-IN/maskmyfile.html",
       "app_store_url": "https://apps.apple.com/in/app/id6792850916?pt=118326163&ct=iag_visual_or_in&mt=8",
       "sha256": "c4d7ed8aa518507fd9dfb787bbd752194cc5343817e93a1e724e10c0b7b27839"
+    },
+    {
+      "locale": "or-IN",
+      "app_key": "metrotimehelper",
+      "app_store_id": "6819061896",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/or-IN/metrotimehelper.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/or-IN/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/or-IN/metrotimehelper.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6819061896?pt=118326163&ct=iag_visual_or_in&mt=8",
+      "sha256": "5a3d103eae9011fe2dd72245a02ad3d353ed11a6582d9fec311a00a881eb6302"
     },
     {
       "locale": "or-IN",
@@ -19625,6 +19964,16 @@
     },
     {
       "locale": "pa-IN",
+      "app_key": "metrotimehelper",
+      "app_store_id": "6819061896",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/pa-IN/metrotimehelper.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/pa-IN/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/pa-IN/metrotimehelper.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6819061896?pt=118326163&ct=iag_visual_pa_in&mt=8",
+      "sha256": "0b15e4c9e026d90f3dc3acfcf0a5086275c909ccaf368ff2f1a8ab8486f20b05"
+    },
+    {
+      "locale": "pa-IN",
       "app_key": "mochi",
       "app_store_id": "6785004775",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/pa-IN/mochi.svg",
@@ -20182,6 +20531,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/pl/maskmyfile.html",
       "app_store_url": "https://apps.apple.com/pl/app/id6792850916?pt=118326163&ct=iag_visual_pl&mt=8",
       "sha256": "c6e162cec3afb051bedb83e65937670cc6f610dad8166c845bf781f24fd73ddf"
+    },
+    {
+      "locale": "pl",
+      "app_key": "metrotimehelper",
+      "app_store_id": "6819061896",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/pl/metrotimehelper.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/pl/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/pl/metrotimehelper.html",
+      "app_store_url": "https://apps.apple.com/pl/app/id6819061896?pt=118326163&ct=iag_visual_pl&mt=8",
+      "sha256": "d16b3d71520556a15b15f4ec05a4518e31c5866e96f9ce2eac81eafc890318c5"
     },
     {
       "locale": "pl",
@@ -20745,6 +21104,16 @@
     },
     {
       "locale": "pt-BR",
+      "app_key": "metrotimehelper",
+      "app_store_id": "6819061896",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/pt-BR/metrotimehelper.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/pt-BR/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/pt-BR/metrotimehelper.html",
+      "app_store_url": "https://apps.apple.com/br/app/id6819061896?pt=118326163&ct=iag_visual_pt_br&mt=8",
+      "sha256": "62752086873dacb228276fd5121eaca221a522a334662b9db921ee044d6e3962"
+    },
+    {
+      "locale": "pt-BR",
       "app_key": "mochi",
       "app_store_id": "6785004775",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/pt-BR/mochi.svg",
@@ -21302,6 +21671,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/pt-PT/answers/best-on-device-file-redaction-app-for-freelancers-sharing-client-documents.html",
       "app_store_url": "https://apps.apple.com/pt/app/id6792850916?pt=118326163&ct=iag_visual_pt_pt&mt=8",
       "sha256": "663ecf97a2b4759bbe95a57529c218a96076664260f78bab77a9ff4022b32023"
+    },
+    {
+      "locale": "pt-PT",
+      "app_key": "metrotimehelper",
+      "app_store_id": "6819061896",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/pt-PT/metrotimehelper.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/pt-PT/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/pt-PT/metrotimehelper.html",
+      "app_store_url": "https://apps.apple.com/pt/app/id6819061896?pt=118326163&ct=iag_visual_pt_pt&mt=8",
+      "sha256": "a0480890d1a851b79e7b31436388800d8bfe92f812bfa521701316efd044c43b"
     },
     {
       "locale": "pt-PT",
@@ -21865,6 +22244,16 @@
     },
     {
       "locale": "ro",
+      "app_key": "metrotimehelper",
+      "app_store_id": "6819061896",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ro/metrotimehelper.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ro/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ro/metrotimehelper.html",
+      "app_store_url": "https://apps.apple.com/ro/app/id6819061896?pt=118326163&ct=iag_visual_ro&mt=8",
+      "sha256": "f926aaf1b5fa3aa3db4e2b8a8f8de92fb2faa7f1a4bc0e0bae8f548aa1f81188"
+    },
+    {
+      "locale": "ro",
       "app_key": "mochi",
       "app_store_id": "6785004775",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ro/mochi.svg",
@@ -22422,6 +22811,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ru/maskmyfile.html",
       "app_store_url": "https://apps.apple.com/ru/app/id6792850916?pt=118326163&ct=iag_visual_ru&mt=8",
       "sha256": "0ebf5775bdd9bbf746559cf9aac96e68936c6bfd2418f1cb4a40c675d4084bcc"
+    },
+    {
+      "locale": "ru",
+      "app_key": "metrotimehelper",
+      "app_store_id": "6819061896",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ru/metrotimehelper.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ru/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ru/metrotimehelper.html",
+      "app_store_url": "https://apps.apple.com/ru/app/id6819061896?pt=118326163&ct=iag_visual_ru&mt=8",
+      "sha256": "696ecc048cb4d7f979ad8ed045f430a053e3229555d99c61fa7dca370b7a3816"
     },
     {
       "locale": "ru",
@@ -22985,6 +23384,16 @@
     },
     {
       "locale": "sk",
+      "app_key": "metrotimehelper",
+      "app_store_id": "6819061896",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/sk/metrotimehelper.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/sk/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/sk/metrotimehelper.html",
+      "app_store_url": "https://apps.apple.com/sk/app/id6819061896?pt=118326163&ct=iag_visual_sk&mt=8",
+      "sha256": "b1feae8b5aa214393e5da0c5547aded71d0a45b911b37b3edb73e2eb25e31439"
+    },
+    {
+      "locale": "sk",
       "app_key": "mochi",
       "app_store_id": "6785004775",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/sk/mochi.svg",
@@ -23542,6 +23951,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/sl-SI/maskmyfile.html",
       "app_store_url": "https://apps.apple.com/si/app/id6792850916?pt=118326163&ct=iag_visual_sl_si&mt=8",
       "sha256": "21126f287d73bb04926f140d96e7bb5d0e1fc88d8997cd70692591c120c94140"
+    },
+    {
+      "locale": "sl-SI",
+      "app_key": "metrotimehelper",
+      "app_store_id": "6819061896",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/sl-SI/metrotimehelper.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/sl-SI/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/sl-SI/metrotimehelper.html",
+      "app_store_url": "https://apps.apple.com/si/app/id6819061896?pt=118326163&ct=iag_visual_sl_si&mt=8",
+      "sha256": "9ba746cb480f33ca3106e475a0ba3127462b27b7a31ccd8287eddd87cf07ec55"
     },
     {
       "locale": "sl-SI",
@@ -24105,6 +24524,16 @@
     },
     {
       "locale": "sv",
+      "app_key": "metrotimehelper",
+      "app_store_id": "6819061896",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/sv/metrotimehelper.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/sv/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/sv/metrotimehelper.html",
+      "app_store_url": "https://apps.apple.com/se/app/id6819061896?pt=118326163&ct=iag_visual_sv&mt=8",
+      "sha256": "79d37815f7ea910363ea684174e0c3ac5570df5e9a121ad6480c58c61755da61"
+    },
+    {
+      "locale": "sv",
       "app_key": "mochi",
       "app_store_id": "6785004775",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/sv/mochi.svg",
@@ -24662,6 +25091,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ta-IN/maskmyfile.html",
       "app_store_url": "https://apps.apple.com/in/app/id6792850916?pt=118326163&ct=iag_visual_ta_in&mt=8",
       "sha256": "8b47cd08e1b4c00f05480bf2d03ad970aff19c337b666f9c1076454ab717809f"
+    },
+    {
+      "locale": "ta-IN",
+      "app_key": "metrotimehelper",
+      "app_store_id": "6819061896",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ta-IN/metrotimehelper.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ta-IN/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ta-IN/metrotimehelper.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6819061896?pt=118326163&ct=iag_visual_ta_in&mt=8",
+      "sha256": "89c61076a082ec72831a3bb515eb7e6020addf4e6b3d5e3812953babf061b655"
     },
     {
       "locale": "ta-IN",
@@ -25225,6 +25664,16 @@
     },
     {
       "locale": "te-IN",
+      "app_key": "metrotimehelper",
+      "app_store_id": "6819061896",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/te-IN/metrotimehelper.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/te-IN/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/te-IN/metrotimehelper.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6819061896?pt=118326163&ct=iag_visual_te_in&mt=8",
+      "sha256": "10f95fc3047073ee878f119d3a04dbbc1f91df146b79cb403fac3ebf39be2644"
+    },
+    {
+      "locale": "te-IN",
       "app_key": "mochi",
       "app_store_id": "6785004775",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/te-IN/mochi.svg",
@@ -25782,6 +26231,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/th/answers/best-on-device-file-redaction-app-for-freelancers-sharing-client-documents.html",
       "app_store_url": "https://apps.apple.com/th/app/id6792850916?pt=118326163&ct=iag_visual_th&mt=8",
       "sha256": "25ff1341f36f1280ea000ff24dc670a1a3d6e3ddf1034d18b21f95df668c7fd2"
+    },
+    {
+      "locale": "th",
+      "app_key": "metrotimehelper",
+      "app_store_id": "6819061896",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/th/metrotimehelper.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/th/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/th/metrotimehelper.html",
+      "app_store_url": "https://apps.apple.com/th/app/id6819061896?pt=118326163&ct=iag_visual_th&mt=8",
+      "sha256": "7446773feca18bc204edbff57032e9f3de1b5b187246eed0925049076e4b76c9"
     },
     {
       "locale": "th",
@@ -26345,6 +26804,16 @@
     },
     {
       "locale": "tr",
+      "app_key": "metrotimehelper",
+      "app_store_id": "6819061896",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/tr/metrotimehelper.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/tr/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/tr/metrotimehelper.html",
+      "app_store_url": "https://apps.apple.com/tr/app/id6819061896?pt=118326163&ct=iag_visual_tr&mt=8",
+      "sha256": "8a2a9ba8884e4de05b393a1a68a6e4f4575e0e392bad852d2f428e31c2213c4e"
+    },
+    {
+      "locale": "tr",
       "app_key": "mochi",
       "app_store_id": "6785004775",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/tr/mochi.svg",
@@ -26902,6 +27371,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/uk/maskmyfile.html",
       "app_store_url": "https://apps.apple.com/ua/app/id6792850916?pt=118326163&ct=iag_visual_uk&mt=8",
       "sha256": "f8b0ed12c41039679bffeaf5dd0e90314bac8d4e6767c20959df655f29f57a54"
+    },
+    {
+      "locale": "uk",
+      "app_key": "metrotimehelper",
+      "app_store_id": "6819061896",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/uk/metrotimehelper.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/uk/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/uk/metrotimehelper.html",
+      "app_store_url": "https://apps.apple.com/ua/app/id6819061896?pt=118326163&ct=iag_visual_uk&mt=8",
+      "sha256": "e5b8bef2d63a87283224f5172e21242ccacca8c4f112a9e437bae0f92e26055f"
     },
     {
       "locale": "uk",
@@ -27465,6 +27944,16 @@
     },
     {
       "locale": "ur-PK",
+      "app_key": "metrotimehelper",
+      "app_store_id": "6819061896",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ur-PK/metrotimehelper.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ur-PK/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ur-PK/metrotimehelper.html",
+      "app_store_url": "https://apps.apple.com/pk/app/id6819061896?pt=118326163&ct=iag_visual_ur_pk&mt=8",
+      "sha256": "bfc78225e4e6820d8923fd94ea408d48363bfaf8a3f5c1613752470db8f93f4c"
+    },
+    {
+      "locale": "ur-PK",
       "app_key": "mochi",
       "app_store_id": "6785004775",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ur-PK/mochi.svg",
@@ -28022,6 +28511,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/vi/answers/best-on-device-file-redaction-app-for-freelancers-sharing-client-documents.html",
       "app_store_url": "https://apps.apple.com/vn/app/id6792850916?pt=118326163&ct=iag_visual_vi&mt=8",
       "sha256": "19fff1d7abfcc28aef88aed0851b4bf9a53702c1c4cfa7518ffae4345cfa9cab"
+    },
+    {
+      "locale": "vi",
+      "app_key": "metrotimehelper",
+      "app_store_id": "6819061896",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/vi/metrotimehelper.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/vi/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/vi/metrotimehelper.html",
+      "app_store_url": "https://apps.apple.com/vn/app/id6819061896?pt=118326163&ct=iag_visual_vi&mt=8",
+      "sha256": "4a14584e617e9f56e7d3942652e296044eb770cc7cee581cdbc531843716678b"
     },
     {
       "locale": "vi",
@@ -28642,6 +29141,16 @@
     },
     {
       "locale": "zh-Hans",
+      "app_key": "metrotimehelper",
+      "app_store_id": "6819061896",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/zh-Hans/metrotimehelper.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/metrotimehelper.html",
+      "app_store_url": "https://apps.apple.com/cn/app/id6819061896?pt=118326163&ct=iag_visual_zh_hans&mt=8",
+      "sha256": "6a03593f87925a75dab0147e3363877cca5216d3282b1c60a8beafd1b16f4b0c"
+    },
+    {
+      "locale": "zh-Hans",
       "app_key": "mochi",
       "app_store_id": "6785004775",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/zh-Hans/mochi.svg",
@@ -29218,6 +29727,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/answers/best-on-device-file-redaction-app-for-freelancers-sharing-client-documents.html",
       "app_store_url": "https://apps.apple.com/tw/app/id6792850916?pt=118326163&ct=iag_visual_zh_hant&mt=8",
       "sha256": "041d5da2b0c813d6e015afc2bb34a96aa7078ca753c473117cbf5a33581bff93"
+    },
+    {
+      "locale": "zh-Hant",
+      "app_key": "metrotimehelper",
+      "app_store_id": "6819061896",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/zh-Hant/metrotimehelper.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/metrotimehelper.html",
+      "app_store_url": "https://apps.apple.com/tw/app/id6819061896?pt=118326163&ct=iag_visual_zh_hant&mt=8",
+      "sha256": "1a9c33e9704a189aa5774279e277a562554bf056da42db2dd6d395422ab9cb6b"
     },
     {
       "locale": "zh-Hant",

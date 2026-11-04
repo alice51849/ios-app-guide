@@ -1,12 +1,12 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-11-03",
-  "content_digest": "b9573af86be05286f86d04d6eb55aa8bc997a5721a54511f01d49ed6b86e8214",
+  "date_modified": "2026-11-04",
+  "content_digest": "d41bfe7e156aabee8cf16c8afd333da7f2ca1d1367dc4352339ff83f32cded2b",
   "locale": "th",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 56,
+  "record_count": 57,
   "apps": [
     {
       "key": "notesstudio100",
@@ -27,8 +27,7 @@
         "เลคเชอร์",
         "วาดรูป",
         "ออฟไลน์",
-        "มหาลัย",
-        "จดโน้ตด้วยลายมือ"
+        "มหาลัย"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -68,9 +67,7 @@
         "บริบท",
         "โน้ต",
         "แชท",
-        "สรุปให้",
-        "พรอมต์ ai",
-        "จัดการพรอมต์"
+        "สรุปให้"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -189,8 +186,7 @@
         "วันทำการ",
         "ค่าน้ำมัน",
         "ส่วนลด",
-        "วิศวะ",
-        "เครื่องคิดเลข วิดเจ็ต"
+        "วิศวะ"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -270,8 +266,7 @@
         "ประวัติย่อ",
         "นักศึกษา",
         "ฝึกงาน",
-        "docx",
-        "เรซูเม่ ats"
+        "docx"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -310,8 +305,7 @@
         "ไดอารี่",
         "มีลูก",
         "ปวดประจำเดือน",
-        "คำนวณ",
-        "ติดตามประจำเดือน"
+        "คำนวณ"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -562,8 +556,7 @@
         "การเงิน",
         "จัดการเงิน",
         "กระเป๋าเงิน",
-        "คำนวณเงิน",
-        "บันทึกค่าใช้จ่ายเที่ยว"
+        "คำนวณเงิน"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -966,8 +959,7 @@
         "ปฐมวัย",
         "เกมเด็ก",
         "เด็กเล็ก",
-        "ออกเสียง",
-        "โฟนิกส์เด็ก"
+        "ออกเสียง"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1133,8 +1125,7 @@
         "อนุบาล",
         "ไปโรงเรียน",
         "เข้านอน",
-        "ตื่นนอน",
-        "กิจวัตรก่อนนอน"
+        "ตื่นนอน"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1244,6 +1235,46 @@
       }
     },
     {
+      "key": "metrotimehelper",
+      "app_store_id": "6819061896",
+      "name": "ผู้ช่วยเวลารถไฟฟ้า MRT ไทเป",
+      "summary": "ผู้ช่วยจัดการเวลาออกเดินทางสำหรับรถไฟฟ้า MRT ไทเป ไต้หวัน เพียงบอกว่าต้องไปถึงกี่โมง แอปจะบอกทันทีว่าต้องเข้าสถานีช้าสุดกี่โมง",
+      "category": "utility",
+      "search_terms": [
+        "taipei",
+        "taiwan",
+        "metro",
+        "ไต้หวัน",
+        "รถไฟใต้ดิน",
+        "ตารางเวลา",
+        "เปลี่ยนสาย",
+        "แผนที่",
+        "ออนเซ็น",
+        "เที่ยวสุดท้าย",
+        "แจ้งเตือน"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/th/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/th/metrotimehelper.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "THB",
+        "formatted_price": "ฟรี",
+        "storefront_url": "https://apps.apple.com/th/app/id6819061896"
+      }
+    },
+    {
       "key": "mochi",
       "app_store_id": "6785004775",
       "name": "Mochi: เช็กลิสต์น่ารัก",
@@ -1304,8 +1335,7 @@
         "ช่วงเวลา",
         "ประวัติ",
         "วิดเจ็ต",
-        "ล้างแอร์",
-        "บันทึกงานบ้าน"
+        "ล้างแอร์"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1430,8 +1460,7 @@
         "เกรน",
         "แสงรั่ว",
         "ผิวเนียน",
-        "35mm",
-        "ฟิลเตอร์วินเทจ"
+        "35mm"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1753,8 +1782,7 @@
         "แต่งรูป",
         "ภาพ",
         "พิกเซล",
-        "รูปภาพ",
-        "รูปติดบัตร ฟรี"
+        "รูปภาพ"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1828,8 +1856,7 @@
         "oled",
         "นาฬิกาปลุก",
         "ธีมนาฬิกา",
-        "จอเบิร์น",
-        "นาฬิกาพลิก"
+        "จอเบิร์น"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1951,8 +1978,7 @@
         "ที่พัก",
         "แจ้งเตือน",
         "พยากรณ์อากาศ",
-        "นับถอยหลัง",
-        "แผนเที่ยว"
+        "นับถอยหลัง"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2287,8 +2313,7 @@
         "tar",
         "gz",
         "iso",
-        "aes",
-        "แตกไฟล์ 7z"
+        "aes"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,

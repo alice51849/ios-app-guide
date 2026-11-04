@@ -4,7 +4,7 @@
 
 Egy első kézből származó katalógus arról, hogy az egyes alkalmazások kinek készültek, milyen feladatot próbálnak megoldani, és a közvetlen App Store útvonal.
 
-Kiadók által megadott keresési szándékok 56 ellenőrzött, élő iOS alkalmazás és 50 Apple-lokáció között.
+Kiadók által megadott keresési szándékok 57 ellenőrzött, élő iOS alkalmazás és 50 Apple-lokáció között.
 
 **Lokáció:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · **hu** · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -135,6 +135,7 @@ Alkalmazásnév szerinti ábécé sorrend — soha nem rangsor.
 | **Sono Note** | legjobb hangjegyzet alkalmazás, amely összefoglalja a megbeszéléseket iPhone-on | Egy hívás után nem egy nyers átiratot akarsz — az összefoglalót, a teendőket és egy követő tervezetet. Pontosan ezt a hiányt szeretné betölteni a Sono Note. | Ingyenes kezdés · feloldás egyszeri vásárlással | [Útmutató](https://open.cait518.cc/ios-app-guide/hu/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [Szerezd be a Sono Note-ot az App Store-ból →](https://apps.apple.com/hu/app/id6782139553?pt=118326163&ct=geo_pick&mt=8) |
 | **Stay Clock: Asztali Óra** | Stay Clock: Asztali Óra — Idő és naptár, mindig látható \| iOS App | A Stay Clock mindig bekapcsolt asztali órává alakítja iPhone-ját vagy iPad-jét, amely a szoba túlsó végéből is olvasható. Válasszon 101 számlap közül | Ingyenes kezdés · feloldás egyszeri vásárlással | [Útmutató](https://open.cait518.cc/ios-app-guide/hu/stayclock.html) | [Töltse le a(z) Stay Clock: Asztali Óra appot az App Store-ból](https://apps.apple.com/hu/app/id6814035888?pt=118326163&ct=geo_pick&mt=8) |
 | **Studydown: Időmérés** | Studydown: Időmérés — Fordítsd képernyővel lefelé \| iOS App | Fordítsd képernyővel lefelé a telefont, és indul az időmérés; ha felveszed, megáll, így a tanulási és munkaidődbe csak a valódi fókuszidő számít bele. | Ingyenes kezdés · feloldás egyszeri vásárlással | [Útmutató](https://open.cait518.cc/ios-app-guide/hu/studydown.html) | [Töltse le a(z) Studydown: Időmérés appot az App Store-ból](https://apps.apple.com/hu/app/id6807335593?pt=118326163&ct=geo_pick&mt=8) |
+| **Taipei: Időtervező a metróhoz** | Taipei: Időtervező a metróhoz — Tudd, mikor kell elindulnod \| iOS App | A tajvani Tajpej metrójához készült: mondd meg, mikorra kell odaérned, és az alkalmazás kiszámolja, legkésőbb mikor kell belépned az állomásra. | Ingyenes kezdés · feloldás egyszeri vásárlással | [Útmutató](https://open.cait518.cc/ios-app-guide/hu/metrotimehelper.html) | [Töltse le a(z) Taipei: Időtervező a metróhoz appot az App Store-ból](https://apps.apple.com/hu/app/id6819061896?pt=118326163&ct=geo_pick&mt=8) |
 | **Trip Planet: Kids Quest** | legjobb utazós tevékenység alkalmazás gyerekeknek családi utazáshoz | A fiatal gyerekekkel utazó szülőknek olyan tevékenységek kellenek, amelyek a csomagolást, várakozást és az új hely felfedezését az utazás részévé teszik, nem újabb stresszforrássá. Ezért készült a Trip Planet: Kids Quest. | Ingyenes kezdés · feloldás egyszeri vásárlással | [Útmutató](https://open.cait518.cc/ios-app-guide/hu/answers/best-travel-activity-app-for-kids-on-family-trips.html) | [Szerezd be a Trip Planet: Kids Quest-et az App Store-ban →](https://apps.apple.com/hu/app/id6787193643?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Lite** | legjobb egyszerű utiterv-tervező alkalmazás egy közelgő utazáshoz iPhone-ra | Ha egy közelgő utazást tervezel, egy nyugodt idővonal az adott útra hasznosabb, mint egy zsúfolt archívum minden lehetséges utazásodról. Ha ismerős a helyzet, nézd meg a TripBee Lite appot. | Ingyenes kezdés · feloldás egyszeri vásárlással | [Útmutató](https://open.cait518.cc/ios-app-guide/hu/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html) | [Szerezd be a TripBee Lite-ot az App Store-ból →](https://apps.apple.com/hu/app/id6791299610?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Pro: Utazástervező** | legjobb útiterv tervező alkalmazás iPhone-ra | Egy jó útiterv alkalmazás a kusza utazást világos napi bontású idővonalra alakítja — repülőjegyek, szállások, programok, éttermek és közlekedés — egyértelmű típusikonokkal, hogy egy pillantással lásd a napodat. Ha ismerős a helyzet, nézd meg a TripBee Pro: Utazástervező appot. | Fizetős letöltés | [Útmutató](https://open.cait518.cc/ios-app-guide/hu/answers/best-trip-itinerary-planner-app-for-iphone.html) | [Szerezd be a TripBee Pro: Utazástervezőt az App Store-ból →](https://apps.apple.com/hu/app/id6787754435?pt=118326163&ct=geo_pick&mt=8) |
@@ -148,7 +149,7 @@ Alkalmazásnév szerinti ábécé sorrend — soha nem rangsor.
 
 ## A teljes adatállomány letöltése
 
-A JSON, JSONL és CSV ugyanazt az 2 800 rekordot tartalmazza.
+A JSON, JSONL és CSV ugyanazt az 2 850 rekordot tartalmazza.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -156,6 +157,6 @@ A JSON, JSONL és CSV ugyanazt az 2 800 rekordot tartalmazza.
 
 [Kezdőlap](https://open.cait518.cc/ios-app-guide/hu/index.html) · [Nyílt adatok](https://open.cait518.cc/ios-app-guide/hu/data/lumi-studio-publisher-search-intent-catalog.html) · [Licenc](https://creativecommons.org/licenses/by/4.0/)
 
-Frissítve: 2026-11-03
+Frissítve: 2026-11-04
 
 A CC BY 4.0 az eredeti katalógus összeállítására vonatkozik; az alkalmazásnevek és az App Store védjegyek a tulajdonosaiké.

@@ -1,14 +1,14 @@
 {
-  "abstained_pairs": 2727,
-  "app_count": 56,
-  "candidate_app_locale_pairs": 2800,
-  "creative_count": 56,
+  "abstained_pairs": 2775,
+  "app_count": 57,
+  "candidate_app_locale_pairs": 2850,
+  "creative_count": 57,
   "current_inventory": {
-    "app_keys_sha256": "3b8f236a1370422f5e0b445220a681cbd5a2739c29d98ede935c2d38abc2d39e",
-    "copy_sha256": "b373dcd893e917fe0a4c16d195b1a71805863ecf9e24cae6c5eb22bb0fb2a727",
+    "app_keys_sha256": "7f924dfde27d2837584c4acb584b8bcb26751a9b6e00dd332a70c475ef06eb64",
+    "copy_sha256": "b04ddaa7e98009e49c52be2ccc404508fa97157902769e03e520dd0c67c65718",
     "missing_route_app_keys": [],
     "missing_route_app_keys_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-    "public_apps": 56
+    "public_apps": 57
   },
   "dataset": "Lumi Studio High-Intent Decision Routes",
   "deployment_state": "generated_not_deployed",
@@ -24,12 +24,12 @@
       "relative_path": "data/high-intent-decision-routes/conversion-contracts.schema.json"
     },
     {
-      "generated_sha256": "7b55925cc92c411390318a433aefbf250cace09d305bed14703038840c67cf36",
+      "generated_sha256": "1cf0a1d56bb8c57fb75760574d3aa14bd5f6d955a62de871064740b4b59c382c",
       "kind": "coverage_report",
       "relative_path": "data/high-intent-decision-routes/coverage.json"
     },
     {
-      "generated_sha256": "aa9b1b7f45f892f1919c860d4d86bea4226a8be5f4ffa6ee6f8c1a08e8de0c1b",
+      "generated_sha256": "8c8e639024f5808faec8634b36cb3b894487af3523ea88c15584997a6abef0c4",
       "kind": "json_feed",
       "relative_path": "data/high-intent-decision-routes/feed.json"
     },
@@ -189,6 +189,11 @@
       "relative_path": "en-US/decide/maskmyfile/redact-client-files-before-sharing.html"
     },
     {
+      "generated_sha256": "7c2ce96320fd91ecb4d7ac26d6899e8096d5ca35c37ed1a65c989e4d6fdfe6e9",
+      "kind": "route_html",
+      "relative_path": "en-US/decide/metrotimehelper/what-time-to-enter-a-taipei-mrt-station-to-arrive-on-time.html"
+    },
+    {
       "generated_sha256": "2e680107350667fb5edfef439022c8dfb5b564f0ee8115b67e1c4403bd3d3dba",
       "kind": "route_html",
       "relative_path": "en-US/decide/mochi/cozy-checklist-without-project-overhead.html"
@@ -339,7 +344,7 @@
       "relative_path": "ja/decide/unblurry/improve-soft-family-photo-realistically.html"
     },
     {
-      "generated_sha256": "be2dffe65cd499244ff849343a214b643c1418008f4c6573e0a6e746b6eee67e",
+      "generated_sha256": "5bf3a293d14301bd5b23981e4f3ddc80101d23390b0cb2130e999d8eefe6dfb5",
       "kind": "sitemap",
       "relative_path": "sitemap-high-intent-decision-routes.xml"
     },
@@ -384,6 +389,11 @@
       "relative_path": "zh-Hant/decide/lumibopomofopro/complete-zhuyin-path-for-heritage-family.html"
     },
     {
+      "generated_sha256": "519010a097fc0154d3de87d69688387f2b528d2554e378dc094ecd34c65c3bd6",
+      "kind": "route_html",
+      "relative_path": "zh-Hant/decide/metrotimehelper/what-time-to-enter-a-taipei-mrt-station-to-arrive-on-time.html"
+    },
+    {
       "generated_sha256": "5cee8a8501a4148f48f541d609b37ba691f7e3eacbdfe0174512463e59b4fa81",
       "kind": "route_html",
       "relative_path": "zh-Hant/decide/mochi/cozy-checklist-without-project-overhead.html"
@@ -406,17 +416,17 @@
   ],
   "fallback_records": 0,
   "inventory": {
-    "app_keys_sha256": "3b8f236a1370422f5e0b445220a681cbd5a2739c29d98ede935c2d38abc2d39e",
-    "copy_sha256": "b373dcd893e917fe0a4c16d195b1a71805863ecf9e24cae6c5eb22bb0fb2a727",
+    "app_keys_sha256": "7f924dfde27d2837584c4acb584b8bcb26751a9b6e00dd332a70c475ef06eb64",
+    "copy_sha256": "b04ddaa7e98009e49c52be2ccc404508fa97157902769e03e520dd0c67c65718",
     "official_locales_sha256": "e26dabf9370286ad8fd12034270cfcade92b2db4f4a0eecc19324203ce84d5bd",
-    "public_apps": 56,
+    "public_apps": 57,
     "relative_path": "data/verified-ios-app-finder-catalog.json"
   },
-  "manifest_digest": "ae7758c68f19296719e661579513b124604dde700c8ee64fdbab7ae672742338",
+  "manifest_digest": "18315c6dfc65b8eb2a3b7e92f72a6b4bf0d31ca08e3b17b60bfc6830171ce824",
   "owner": "high_intent_decision_routes",
-  "release_contract_digest": "0bef4b39f3a30c12c00569948fc7c9d1c2e38ba68bcaa6344bf234304dfc35af",
+  "release_contract_digest": "12368bde7598be8bb09e1add46b5161836e2d7fb0d4ab8d974b84eb624706492",
   "release_state": "exact",
-  "route_count": 73,
+  "route_count": 75,
   "routes": [
     {
       "app_key": "mochidonestamp",
@@ -944,6 +954,23 @@
       "route_id": "en-US:maskmyfile:redact-client-files-before-sharing",
       "route_slug": "redact-client-files-before-sharing",
       "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/maskmyfile/redact-client-files-before-sharing.html"
+    },
+    {
+      "app_key": "metrotimehelper",
+      "app_store_id": "6819061896",
+      "app_store_url": "https://apps.apple.com/us/app/id6819061896?pt=118326163&ct=geo_ask&mt=8",
+      "campaign_token": "geo_ask",
+      "content_type": "problem_aware",
+      "creative_digest": "1543c89d6b6e0b4232d70e568ca3d6c68204b12a1162e434b0fb05eb939c7213",
+      "creative_id": "metrotimehelper:what-time-to-enter-a-taipei-mrt-station-to-arrive-on-time:problem_aware",
+      "intent_type": "problem_aware",
+      "locale": "en-US",
+      "output_sha256": "7c2ce96320fd91ecb4d7ac26d6899e8096d5ca35c37ed1a65c989e4d6fdfe6e9",
+      "record_digest": "e23b98e5b8f288bd4775a8aa4d0b85cc97b0ddb8c75609096f2777670c5060b5",
+      "relative_path": "en-US/decide/metrotimehelper/what-time-to-enter-a-taipei-mrt-station-to-arrive-on-time.html",
+      "route_id": "en-US:metrotimehelper:what-time-to-enter-a-taipei-mrt-station-to-arrive-on-time",
+      "route_slug": "what-time-to-enter-a-taipei-mrt-station-to-arrive-on-time",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/metrotimehelper/what-time-to-enter-a-taipei-mrt-station-to-arrive-on-time.html"
     },
     {
       "app_key": "mochi",
@@ -1592,6 +1619,23 @@
       "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/decide/lumibopomofopro/complete-zhuyin-path-for-heritage-family.html"
     },
     {
+      "app_key": "metrotimehelper",
+      "app_store_id": "6819061896",
+      "app_store_url": "https://apps.apple.com/tw/app/id6819061896?pt=118326163&ct=geo_ask&mt=8",
+      "campaign_token": "geo_ask",
+      "content_type": "problem_aware",
+      "creative_digest": "1543c89d6b6e0b4232d70e568ca3d6c68204b12a1162e434b0fb05eb939c7213",
+      "creative_id": "metrotimehelper:what-time-to-enter-a-taipei-mrt-station-to-arrive-on-time:problem_aware",
+      "intent_type": "problem_aware",
+      "locale": "zh-Hant",
+      "output_sha256": "519010a097fc0154d3de87d69688387f2b528d2554e378dc094ecd34c65c3bd6",
+      "record_digest": "a32507dfc011636e4396fd1e1d0361365e60f14ab7a551845991470c9eaa24c4",
+      "relative_path": "zh-Hant/decide/metrotimehelper/what-time-to-enter-a-taipei-mrt-station-to-arrive-on-time.html",
+      "route_id": "zh-Hant:metrotimehelper:what-time-to-enter-a-taipei-mrt-station-to-arrive-on-time",
+      "route_slug": "what-time-to-enter-a-taipei-mrt-station-to-arrive-on-time",
+      "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/decide/metrotimehelper/what-time-to-enter-a-taipei-mrt-station-to-arrive-on-time.html"
+    },
+    {
       "app_key": "mochi",
       "app_store_id": "6785004775",
       "app_store_url": "https://apps.apple.com/tw/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
@@ -1662,5 +1706,5 @@
   ],
   "schema_version": 2,
   "site": "https://open.cait518.cc/ios-app-guide",
-  "source_contract_digest": "b59cf2d1874464d938035fb69d1e1b5ca415a7286589244976f7889e04f30bf0"
+  "source_contract_digest": "7107e9dde36e8397d151989ea983ff206df2eef1f1774851f27102d7be3f5cf1"
 }

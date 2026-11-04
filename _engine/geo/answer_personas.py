@@ -5023,6 +5023,177 @@ PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
             ],
         },
     ],
+    # Metro Time Helper: Taipei MRT (56_MetroTimeHelper, ASC 6819061896,
+    # bundle com.alice51849.MetroTimeHelper) went live on the App Store on
+    # 2026-11-03 and on Google Play on 2026-10-30. Claims here are held to the
+    # live en-US description: it works backward from the time you need to
+    # arrive and gives the latest time to enter the station, transfers
+    # included; a Leave now mode; first and last train warnings; Standard
+    # (half a headway) or Cautious (full headway) estimates and an adjustable
+    # station entry buffer; a zoomable MRT map to pick stations; fixed
+    # official timetables, countdowns and 1-30 minute departure reminders for
+    # the Xiaobitan and Xinbeitou branches; a widget, Live Activities (iPhone
+    # only) and a standalone Apple Watch app; 50 languages switchable in the
+    # app. Lines: Wenhu, Tamsui-Xinyi, Songshan-Xindian, Zhonghe-Xinlu,
+    # Bannan, Circular line phase one and the New Taipei Metro Sanying line;
+    # Airport MRT and light rail are not included. Times are estimates from
+    # official headways and travel times, not live train arrivals. No sign-up,
+    # no ads, no personal data collection; all features free for 24 hours,
+    # then a single one-time unlock, no subscription. Independent app, not
+    # affiliated with Taipei Rapid Transit Corporation.
+    "metrotimehelper": [
+        {
+            "query": "taipei mrt app that tells me what time to leave to arrive on time",
+            "guide_title": "Taipei MRT: working out when to leave, not just when you arrive",
+            "triggers": [
+                "taipei mrt when to leave",
+                "taipei mrt transfer time planner",
+                "taipei metro last train time",
+                "taipei mrt trip time estimate",
+                "taipei mrt app for commuters",
+                "latest time to enter mrt station",
+            ],
+            "persona": "Taipei commuters who have to be somewhere at a fixed time and want to know the latest moment they can walk into the station",
+            "lead": (
+                "Most route planners answer when you will arrive. Before a "
+                "meeting, a dinner reservation or the last train of the night, "
+                "the question you actually have is when you need to leave."
+            ),
+            "paras": [
+                (
+                    "Look for a planner that starts from the time you need to be "
+                    "there and works backward through every leg and transfer, so "
+                    "it can tell you the latest time to enter the station. A "
+                    "step-by-step timeline of each leg and transfer makes it easy "
+                    "to see where the minutes go, and a first and last train "
+                    "warning matters most late at night."
+                ),
+                (
+                    "Check how the times are worked out. Estimates built from "
+                    "official headways and travel times between stations are not "
+                    "live arrivals, so a choice between a standard estimate and a "
+                    "more cautious one, plus an adjustable buffer for getting "
+                    "into the station, lets you decide how much margin you want. "
+                    "A reminder when it is time to go saves you from watching "
+                    "the clock."
+                ),
+            ],
+            "look": [
+                "Planning backward from your arrival time, transfers included.",
+                "The latest time to enter the station and a timeline for every leg.",
+                "First and last train warnings and a reminder when it is time to go.",
+                "Standard or Cautious estimates and an adjustable station entry buffer.",
+                "A zoomable MRT map to pick the start and destination.",
+            ],
+            "steps": [
+                "Choose your starting station and your destination, or tap them on the map.",
+                "Enter the time you need to arrive.",
+                "Read the latest time to enter the station and the timeline for each transfer.",
+                "Pick Standard or Cautious estimates and set your station entry buffer.",
+                "Tap Remind me so you get a notification when it is time to leave.",
+            ],
+            "fits": (
+                "fits people in Taipei and New Taipei who ride the MRT to fixed "
+                "appointments and would rather leave at the right moment than "
+                "guess. It covers the Wenhu, Tamsui-Xinyi, Songshan-Xindian, "
+                "Zhonghe-Xinlu, Bannan and Circular lines and the New Taipei "
+                "Metro Sanying line; Airport MRT and light rail are not "
+                "included. Every feature can be used for 24 hours, then a "
+                "single one-time unlock keeps the full app, with no "
+                "subscription."
+            ),
+            "faq": [
+                {
+                    "q": "Are these live train arrivals?",
+                    "a": "No. Times are estimates based on official published headways and travel times between stations.",
+                },
+                {
+                    "q": "Does it need an account?",
+                    "a": "No. There is no sign-up, no ads and no personal data collection; everything is calculated on your device and notifications are scheduled locally.",
+                },
+                {
+                    "q": "Is there a subscription?",
+                    "a": "No. Every feature can be used for 24 hours from the moment you start, then a single one-time unlock keeps the full app; nothing renews automatically.",
+                },
+                {
+                    "q": "Does it cover the Airport MRT?",
+                    "a": "No. Airport MRT and light rail are not included.",
+                },
+            ],
+        },
+        {
+            "query": "taipei mrt app in english for tourists visiting taiwan",
+            "guide_title": "Riding the Taipei MRT as a visitor: what to check in an app",
+            "triggers": [
+                "taipei mrt app english",
+                "taipei metro app for tourists",
+                "taiwan subway app for travelers",
+                "taipei mrt map app",
+                "xinbeitou hot spring mrt timetable",
+                "xiaobitan branch timetable",
+            ],
+            "persona": "travelers visiting Taipei who want to ride the MRT in their own language and not miss the last train back",
+            "lead": (
+                "On a first trip to Taipei the MRT is easy to ride, but working "
+                "out transfers, the last train and the short branch lines in a "
+                "language you do not read takes time you would rather spend "
+                "seeing the city."
+            ),
+            "paras": [
+                (
+                    "An app that switches between many interface languages lets "
+                    "you plan in the language you know, and a zoomable map of "
+                    "the network makes it simple to pick stations by tapping "
+                    "them. Planning backward from the time you need to be "
+                    "somewhere, with a last train warning, keeps a late dinner "
+                    "from turning into a taxi ride."
+                ),
+                (
+                    "The short branches work differently from the main lines. "
+                    "The line from Beitou to the Xinbeitou hot spring area and "
+                    "the Xiaobitan branch run on fixed timetables, so a "
+                    "countdown to the next train and a departure reminder help "
+                    "you avoid waiting on the platform."
+                ),
+            ],
+            "look": [
+                "50 interface languages you can switch inside the app.",
+                "A zoomable MRT map where you tap a station to plan from it.",
+                "A countdown and full timetables for the Xinbeitou and Xiaobitan branches.",
+                "Last train warnings and a reminder when it is time to go.",
+                "Works on iPhone, iPad and Apple Watch with no sign-up.",
+            ],
+            "steps": [
+                "Pick your language inside the app.",
+                "Tap your starting station and destination on the zoomable map.",
+                "Enter when you need to arrive, or switch to Leave now to see when you will get there.",
+                "For the hot spring trip, open the Beitou to Xinbeitou branch for its countdown and timetable.",
+                "Set Remind me so a notification tells you when to head to the station.",
+            ],
+            "fits": (
+                "fits visitors to Taipei who want to plan MRT trips in their own "
+                "language, including the Xinbeitou hot spring branch. Airport "
+                "MRT and light rail are not included, and times are estimates "
+                "from official data rather than live arrivals. Every feature "
+                "can be used for 24 hours, then a single one-time unlock keeps "
+                "the full app, with no subscription."
+            ),
+            "faq": [
+                {
+                    "q": "Which languages does it support?",
+                    "a": "50 languages, which you can switch inside the app.",
+                },
+                {
+                    "q": "Can it take me to the Xinbeitou hot springs?",
+                    "a": "Yes. The Beitou to Xinbeitou branch has its own countdown, full timetables, departure reminders and the official timetable PDF.",
+                },
+                {
+                    "q": "Is it the official Taipei Metro app?",
+                    "a": "No. It is an independent app that uses publicly available official data such as timetables, travel times and headways, and it is not affiliated with Taipei Rapid Transit Corporation.",
+                },
+            ],
+        },
+    ],
     # Meow Party: 2 Player Cat Games (58_MeowParty, ASC 6829184924, bundle
     # tail "foldparty") is pre-publication. Claims here are held to what build
     # 179f737a ships: 200 original cat minigames in four families of 50 (party,

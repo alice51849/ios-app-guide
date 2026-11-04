@@ -187,7 +187,17 @@ PROTECTED_CAMPAIGNS = frozenset({STORY_CAMPAIGN})
 # only (any other App's link is re-stamped, and the audit rejects it there).
 # app_image_gallery.py: the Foldable Wallpaper Studio preview-image pilot
 # (reports/strategy_debate/2026-10-31_gemini_extended.md, topic 2).
-APP_BOUND_CAMPAIGNS = {"duo_img": "6824946559"}
+# web_tools_pilot.py: the two browser-tool pilot pages (yi_review 2026-11-04,
+# route 3 trimmed to 2 tools x 3 locales); one campaign per tool and locale.
+WEB_TOOL_PILOT_CAMPAIGNS = {
+    f"{tool}_{locale}": app_id
+    for tool, app_id in (
+        ("tool_duo_pair", "6824946559"),
+        ("tool_passport_crop", "6780575828"),
+    )
+    for locale in ("en", "zh_hant", "ja")
+}
+APP_BOUND_CAMPAIGNS = {"duo_img": "6824946559", **WEB_TOOL_PILOT_CAMPAIGNS}
 
 
 def app_bound_campaign(campaign: str | None, app_id: str | None) -> bool:

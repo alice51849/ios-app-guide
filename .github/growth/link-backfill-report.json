@@ -1,12 +1,12 @@
 {
- "generated": "2026-11-04T17:22:20Z",
+ "generated": "2026-11-04T23:46:30Z",
  "mode": "apply",
  "counts": {
   "ok_reply": 44,
   "unknown_app": 47,
-  "ok_backfilled_earlier": 33,
+  "ok_backfilled_earlier": 35,
   "backfilled": 2,
-  "ok_store_only": 697,
+  "ok_store_only": 695,
   "ok_bio_link": 68,
   "ok_caption": 4,
   "taken_down": 4,
@@ -827,16 +827,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdiArWwkr8K",
    "date": "2026-09-21",
    "app": "mochidonestamp",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "前回の日時を、すぐ思い出せる。 Mochi DoneStampは、ToDoリストではなく「暮らしの出来事」を覚えるアプリです。済ませたら一度タップするだけ。正確な日時が、見やすい履歴として残ります。必要なものだけに、ゆるやかな周期または正確な周期を設定できます。次回の予定は、実際",
    "why": "url+brand",
    "ios_id": "6790800323",
-   "locale": "ja",
-   "own_replies": [],
-   "comment_id": "18032706509854820",
-   "at": "2026-11-04T17:19:23Z",
-   "verified": true,
-   "via": "list"
+   "locale": "ja"
   },
   {
    "channel": "threads",
@@ -844,11 +839,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdaYNLgCXZz",
    "date": "2026-09-19",
    "app": "photocream",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "Same view, same phone — theirs looks like a film still and yours doesn't. Our app, not a ranking: Preview film grain and light leaks on your",
    "why": "url+brand",
    "ios_id": "6781808054",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "18119554750791427",
+   "at": "2026-11-04T23:43:41Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -928,11 +928,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdecCjKEtd1",
    "date": "2026-09-19",
    "app": "dailymatelite",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "You know 3,000 words and still freeze in the first ten seconds. Our app, not a ranking: Practice a cue and reply. Traveler/Beginner free; li",
    "why": "url+brand",
    "ios_id": "6794725568",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "18129637795861729",
+   "at": "2026-11-04T23:43:41Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -952,16 +957,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdecDjSEjLD",
    "date": "2026-09-19",
    "app": "tripbee",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "Six confirmation emails, two screenshots, one note — and no actual plan. Our app, not a ranking: Keep flights and hotels in an offline daily",
    "why": "url+brand",
    "ios_id": "6787754435",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "17956146576295922",
-   "at": "2026-11-04T17:19:23Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",

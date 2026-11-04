@@ -1,9 +1,9 @@
 {
  "schema": "lumi.android-live-snapshot/v1",
  "source": "AndroidPlay android_live_scan (Play page HTTP 200 + publish LIVE)",
- "source_generated": "2026-11-03T17:37:11+0800",
- "count": 56,
- "content_sha256": "81f4ec669106187a2d3057ea9e78135c59151c7b600bc070d3e7ec80b4a0f309",
+ "source_generated": "2026-11-04T11:45:24+0800",
+ "count": 57,
+ "content_sha256": "e4279871f0fb7a7f57feb6018c0cc82bbac29d065209736b03b7ae7d82568bec",
  "apps": {
   "aibriefpack": {
    "ios_app_id": "6791658210",
@@ -627,6 +627,27 @@
     }
    }
   },
+  "metrotimehelper": {
+   "ios_app_id": "6819061896",
+   "ios_name": "Metro Time Helper",
+   "android_folder": "56_MetroTimeHelper",
+   "package": "com.alice51849.MetroTimeHelper",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.MetroTimeHelper",
+   "paid": false,
+   "first_seen": "2026-10-30T17:37:06+0800",
+   "launch_wave": "new",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "Metro Time Helper: Taipei MRT",
+     "short_description": "Taipei MRT: set your arrival time, get the latest time to enter the station"
+    },
+    "zh-TW": {
+     "title": "捷運時間助手－台北轉乘時刻表",
+     "short_description": "台北捷運反推出門時間：說幾點到，算出最晚進站時間，含首末班車與小碧潭班表"
+    }
+   }
+  },
   "mochi": {
    "ios_app_id": "6785004775",
    "ios_name": "Mochi",
@@ -1173,11 +1194,6 @@
   }
  },
  "unmapped": [
-  {
-   "folder": "56_MetroTimeHelper",
-   "package": "com.alice51849.MetroTimeHelper",
-   "reason": "no_unique_ios_match"
-  },
   {
    "folder": "58_MeowParty",
    "package": "com.alice51849.FoldParty",

@@ -3,8 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>摺疊手機雙螢幕桌布配對預覽｜外螢幕＋內螢幕</title>
-<meta name="description" content="把兩張圖片同時放到摺疊手機的外螢幕與內螢幕上預覽。在瀏覽器裡處理，圖片不會上傳。">
+<title>外螢幕桌布預覽｜摺疊手機外螢幕＋內螢幕配對</title>
+<meta name="description" content="外螢幕桌布預覽：把兩張圖片同時放到摺疊手機的外螢幕與內螢幕上。在瀏覽器裡處理，圖片不會上傳。">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-GHgKKUCkAYnsPsXSm+ygjVxnlxead3n2ffYXh2EmtYA=' 'sha256-6t9A1NwE4xsAy6RLfKfSjax5eegfwCU+lj+1rihX/H8='; style-src 'unsafe-inline'; img-src 'self' blob: data:; connect-src https://office.cait518.cc/api/click; base-uri 'none'; form-action 'none'">
 <meta name="robots" content="index,follow">
 <link rel="canonical" href="https://open.cait518.cc/ios-app-guide/zh-Hant/tools/foldable-wallpaper-pair-preview.html">
 <link rel="alternate" hreflang="en" href="https://open.cait518.cc/ios-app-guide/tools/foldable-wallpaper-pair-preview.html">
@@ -13,7 +14,7 @@
 <link rel="alternate" hreflang="x-default" href="https://open.cait518.cc/ios-app-guide/tools/foldable-wallpaper-pair-preview.html">
 <meta property="og:type" content="website">
 <meta property="og:title" content="摺疊手機雙螢幕桌布配對預覽">
-<meta property="og:description" content="把兩張圖片同時放到摺疊手機的外螢幕與內螢幕上預覽。在瀏覽器裡處理，圖片不會上傳。">
+<meta property="og:description" content="外螢幕桌布預覽：把兩張圖片同時放到摺疊手機的外螢幕與內螢幕上。在瀏覽器裡處理，圖片不會上傳。">
 <meta property="og:url" content="https://open.cait518.cc/ios-app-guide/zh-Hant/tools/foldable-wallpaper-pair-preview.html">
 <meta name="twitter:card" content="summary">
 <style>
@@ -28,14 +29,18 @@ input,select,button{font:inherit}input[type=file],select{width:100%;min-height:4
 .help,.status{color:var(--muted);font-size:13px;margin:6px 0 0}.status{min-height:1.5em}.button{border:0;border-radius:999px;background:var(--navy);color:#fff;text-decoration:none;font-weight:800;padding:10px 16px;cursor:pointer;display:inline-flex}.button.secondary{background:#fff;color:var(--navy);border:1px solid var(--line)}.button:disabled{opacity:.45;cursor:not-allowed}.row{display:flex;flex-wrap:wrap;gap:8px}
 .stage{display:flex;flex-wrap:wrap;gap:22px;align-items:flex-end;justify-content:center;padding:18px;border-radius:18px;background:#1d2330;min-height:320px}.device{display:grid;gap:8px;justify-items:center;color:#d8deea;font-size:13px;font-weight:700}.device canvas{display:block;border:8px solid #0b0d12;border-radius:26px;background:#2a3140;box-shadow:0 10px 30px rgba(0,0,0,.35);max-width:100%;height:auto}.device.outer canvas{width:150px}.device.inner canvas{width:min(420px,72vw);border-radius:22px}
 .crop-shell{position:relative;display:inline-block;touch-action:none;cursor:grab;background:repeating-linear-gradient(45deg,#e7ebf0,#e7ebf0 10px,#f3f5f8 10px,#f3f5f8 20px);padding:12px;border-radius:16px}.crop-shell canvas{display:block;max-width:100%;height:auto;box-shadow:0 6px 20px rgba(20,34,52,.2)}#guide{position:absolute;left:12px;top:12px;pointer-events:none}
+.tbl{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:15px}th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}th{background:#f3f6fa}
 .note{background:var(--warn);border-color:#ead49d}.cta{background:linear-gradient(135deg,#f9fbff,#e8f1f8)}ul{padding-left:20px}li{margin:6px 0}
 @media(max-width:780px){.grid{grid-template-columns:1fr}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "摺疊手機雙螢幕桌布配對預覽", "description": "把兩張圖片同時放到摺疊手機的外螢幕與內螢幕上預覽。在瀏覽器裡處理，圖片不會上傳。", "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/tools/foldable-wallpaper-pair-preview.html", "inLanguage": "zh-Hant", "datePublished": "2026-11-04", "applicationCategory": "MultimediaApplication", "operatingSystem": "Any", "browserRequirements": "JavaScript and local image decoding; no upload is used"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "摺疊手機雙螢幕桌布配對預覽", "description": "外螢幕桌布預覽：把兩張圖片同時放到摺疊手機的外螢幕與內螢幕上。在瀏覽器裡處理，圖片不會上傳。", "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/tools/foldable-wallpaper-pair-preview.html", "inLanguage": "zh-Hant", "datePublished": "2026-11-04", "applicationCategory": "MultimediaApplication", "operatingSystem": "Any", "browserRequirements": "JavaScript and local image decoding; no upload is used"}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "iOS App Guide", "item": "https://open.cait518.cc/ios-app-guide/zh-Hant/index.html"}, {"@type": "ListItem", "position": 2, "name": "工具", "item": "https://open.cait518.cc/ios-app-guide/zh-Hant/tools/index.html"}, {"@type": "ListItem", "position": 3, "name": "摺疊手機雙螢幕桌布配對預覽", "item": "https://open.cait518.cc/ios-app-guide/zh-Hant/tools/foldable-wallpaper-pair-preview.html"}]}</script>
 <link rel="alternate" type="application/atom+xml" title="iOS App Guide — latest answers &amp; guides (Atom)" href="https://open.cait518.cc/ios-app-guide/feed.xml">
 <link rel="alternate" type="application/rss+xml" title="iOS App Guide — latest answers &amp; guides (RSS 2.0)" href="https://open.cait518.cc/ios-app-guide/rss.xml">
 <link rel="alternate" type="application/feed+json" title="iOS App Guide — latest answers &amp; guides (JSON Feed 1.1)" href="https://open.cait518.cc/ios-app-guide/feed.json">
+<!-- ls-clickbeacon:start -->
+<script>(function(){var E='https://office.cait518.cc/api/click';function h(e){try{var t=e.target,l=t&&t.closest&&t.closest('a[href]');if(!l||!navigator.sendBeacon)return;var u=new URL(l.href,location.href),s,k,c,q=u.searchParams;if(u.hostname==='apps.apple.com'){s='apple';k=(u.pathname.match(/\/id(\d+)/)||[])[1]||'';c=q.get('ct')||''}else if(u.hostname==='play.google.com'){s='play';var r=new URLSearchParams(q.get('referrer')||'');k=r.get('utm_campaign')||q.get('id')||'';c=r.get('utm_source')||''}else return;navigator.sendBeacon(E,JSON.stringify({p:location.pathname.slice(0,200),a:k.slice(0,100),ct:c.slice(0,64),s:s}))}catch(_){}}document.addEventListener('click',h,true);document.addEventListener('auxclick',h,true)})();</script>
+<!-- ls-clickbeacon:end -->
 <link rel="site.standard.publication" href="at://did:plc:kboucnzkxzmqmatvhes4xlt4/site.standard.publication/3mrocqbkyt6mg">
 <script type="application/ld+json" data-first-party-disclosure="publisher">{"@context":"https://schema.org","@type":"WebSite","@id":"https://open.cait518.cc/ios-app-guide/#website","url":"https://open.cait518.cc/ios-app-guide","publisher":{"@type":"Organization","@id":"https://open.cait518.cc/ios-app-guide/#organization","name":"Lumi Studio","url":"https://open.cait518.cc/ios-app-guide/about.html","description":"Developer of the featured apps and operator of this site."}}</script>
 </head>
@@ -43,7 +48,7 @@ input,select,button{font:inherit}input[type=file],select{width:100%;min-height:4
 <header class="top"><div class="wrap nav"><a href="https://open.cait518.cc/ios-app-guide/zh-Hant/index.html">iOS App Guide</a><nav class="nav-links"><a href="https://open.cait518.cc/ios-app-guide/zh-Hant/tools/index.html">工具</a><a href="https://open.cait518.cc/ios-app-guide/tools/foldable-wallpaper-pair-preview.html" hreflang="en" lang="en">English</a><a href="https://open.cait518.cc/ios-app-guide/ja/tools/foldable-wallpaper-pair-preview.html" hreflang="ja" lang="ja">日本語</a></nav></div></header>
 <p class="first-party-disclosure" data-first-party-disclosure="banner" role="note" style="margin:0;padding:8px 16px;background:#f3f4f6;color:#1f2937;border-bottom:1px solid #d1d5db;font-size:13px;line-height:1.5;text-align:center">本站由這些 App 的開發者 Lumi Studio 營運，介紹的是我們自己的 App。</p>
 <main>
-<section class="hero wrap"><h1>摺疊手機雙螢幕桌布配對預覽</h1><p class="lead">設定之前，先看外螢幕和內螢幕兩張桌布放在一起的樣子。</p><div class="trust"><span class="badge">圖片只留在這個分頁，不會上傳</span><span class="badge scope">僅供預覽；比例為近似值</span></div></section>
+<section class="hero wrap"><h1>摺疊手機雙螢幕桌布配對預覽</h1><p class="lead">這個外螢幕桌布預覽把瘦長的外螢幕圖和偏寬的內螢幕圖並排放在瀏覽器裡，設定前兩邊都能先確認。 「摺疊手機桌布 - 雙螢幕成對桌布」的桌布成對製作：合上，外螢幕是特寫；展開，內螢幕是整片全景，兩張出自同一幅原創畫面。</p><div class="trust"><span class="badge">圖片不會上傳；只計算下載鈕點擊次數</span><span class="badge scope">僅供預覽；比例為近似值</span></div></section>
 <section class="card wrap" id="tool"><div class="grid"><div class="controls">
 <div class="field"><label for="outer-file">外螢幕圖片（闔上時）</label><input id="outer-file" type="file" accept="image/*"></div>
 <div class="field"><label for="inner-file">內螢幕圖片（打開時）</label><input id="inner-file" type="file" accept="image/*"><p class="help">只選一張圖片時，兩個螢幕都會用這張。</p></div>
@@ -53,6 +58,7 @@ input,select,button{font:inherit}input[type=file],select{width:100%;min-height:4
 <p class="status" id="status" aria-live="polite">請選擇圖片或範例配對。</p>
 </div><div class="stage" aria-label="摺疊手機雙螢幕桌布配對預覽"><div class="device outer"><canvas id="outer" width="466" height="678"></canvas><span>外螢幕</span></div><div class="device inner"><canvas id="inner" width="951" height="669"></canvas><span>內螢幕</span></div></div></div></section>
 <section class="card wrap"><h2>使用方式</h2><ul><li>外螢幕又高又窄、內螢幕偏寬，同一張照片很難兩邊都剛好。</li><li>外螢幕通常適合放特寫，內螢幕放完整場景。</li><li>分別移動、縮放，讓主角避開時鐘與摺痕。</li></ul><p class="help">範例配對：Foldable Wallpaper Studio 媒體素材包。</p></section>
+<section class="card wrap" id="sizes"><h2>摺疊手機桌布儲存的螢幕尺寸</h2><div class="tbl"><table><tr><th>螢幕</th><th>像素（寬 x 高）</th></tr><tr><td>外螢幕</td><td>1398 x 2034</td></tr><tr><td>內螢幕</td><td>2853 x 2007</td></tr></table></div><p class="help">出處：摺疊手機桌布 App Store 商店說明</p></section>
 <section class="card cta wrap"><h2>為摺疊手機成對設計的桌布</h2><p>「摺疊手機桌布 - 雙螢幕成對桌布」的桌布成對製作：外螢幕放特寫、內螢幕放完整場景，取自同一張原創作品，儲存前可先看闔上與打開的預覽。</p><p><a class="button" href="https://apps.apple.com/tw/app/id6824946559?pt=118326163&amp;ct=tool_duo_pair_zh_hant&amp;mt=8" rel="noopener">到 App Store 查看摺疊手機桌布</a></p>
   <p class="android-play" data-android-play="com.alice51849.DuoWallpaperStudio">Android: <a href="https://play.google.com/store/apps/details?id=com.alice51849.DuoWallpaperStudio&amp;referrer=utm_source%3Dtool_duo_pair_zh_hant%26utm_campaign%3Dduowallpaperstudio" rel="noopener">Google Play</a></p></section>
 <section class="wrap tool-email-capture" style="border:1px solid rgba(120,100,70,.25);border-radius:14px;padding:18px 20px;margin:28px 0;background:rgba(255,250,240,.55)"><h2>新工具上線時通知我</h2><p>這些小工具是一個一個做的,做好就免費放上來。想在有新工具時收到通知,留個信箱就好——只會用在這件事。</p><form action="https://buttondown.com/api/emails/embed-subscribe/hourstag" method="post" target="_blank" style="display:flex;gap:8px;flex-wrap:wrap"><label for="tec-email" class="visually-hidden" style="position:absolute;left:-9999px">電子郵件</label><input id="tec-email" type="email" required name="email" placeholder="you@example.com" style="flex:1 1 220px;padding:10px 12px;border-radius:10px;border:1px solid rgba(120,100,70,.35)"><input type="hidden" name="embed" value="1"><button type="submit" style="padding:10px 18px;border-radius:10px;border:0;background:#7a5c2e;color:#fff;cursor:pointer">通知我</button></form><p><small>只寄新工具上線通知。訂閱由 Buttondown 代為處理;不做 App 行銷、不出售信箱,隨時一鍵取消。</small></p></section>

@@ -1,18 +1,54 @@
 {
- "generated": "2026-11-03T23:29:40Z",
+ "generated": "2026-11-04T17:22:20Z",
  "mode": "apply",
  "counts": {
-  "ok_reply": 41,
+  "ok_reply": 44,
   "unknown_app": 47,
-  "ok_backfilled_earlier": 31,
+  "ok_backfilled_earlier": 33,
   "backfilled": 2,
-  "ok_store_only": 699,
+  "ok_store_only": 697,
   "ok_bio_link": 68,
   "ok_caption": 4,
   "taken_down": 4,
   "missing": 3
  },
  "rows": [
+  {
+   "channel": "threads",
+   "id": "18134346358682828",
+   "permalink": "https://www.threads.com/@hourstag.app/post/DfTUUyZkcFP",
+   "date": "2026-11-04",
+   "app": "mochi",
+   "status": "ok_reply",
+   "text": "Friendsgiving at my place this year, so naturally I made lists. A menu list and a grocery list, both cute enough that I don't dread opening ",
+   "why": "trial",
+   "ios_id": "6785004775",
+   "locale": "en-US"
+  },
+  {
+   "channel": "threads",
+   "id": "18111438470242222",
+   "permalink": "https://www.threads.com/@hourstag.app/post/DfUHjkADypp",
+   "date": "2026-11-04",
+   "app": "wifiaid",
+   "status": "ok_reply",
+   "text": "Router, Mesh & DNS Diagnostics. Check from Apple Watch or a Home Screen widget; your check history stays only on this device. WiFi Aid: Find",
+   "why": "brand",
+   "ios_id": "6790467886",
+   "locale": "en"
+  },
+  {
+   "channel": "threads",
+   "id": "18064172375530876",
+   "permalink": "https://www.threads.com/@hourstag.app/post/DfTYnrnD0Oa",
+   "date": "2026-11-04",
+   "app": "gmoney",
+   "status": "ok_reply",
+   "text": "雙11 加上年底聚餐，錢花得特別快？先設好今天的上限。 出國花外幣,直接用當地貨幣記一筆,立刻換算成本國貨幣,整趟旅程花了多少一眼就知道。 G+Money：日常記帳, 預算, 匯率",
+   "why": "brand",
+   "ios_id": "6755782939",
+   "locale": "zh-Hant"
+  },
   {
    "channel": "threads",
    "id": "18134349262667168",
@@ -755,16 +791,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdeHzG0Er1r",
    "date": "2026-09-21",
    "app": "sereno",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "眠りと集中のホワイトノイズ。 Serenoは、あなたの電話を睡眠、集中、そして落ち着きのための高級サウンドマシンに変えます。手作業で調整された数十のサウンドがデバイス上でリアルタイムに生成され、1000以上のユニークなサウンドスケープにブレンドされます。 Sereno: スリープ",
    "why": "url+brand",
    "ios_id": "6788236641",
-   "locale": "ja",
-   "own_replies": [],
-   "comment_id": "18153794515546913",
-   "at": "2026-11-03T23:26:42Z",
-   "verified": true,
-   "via": "list"
+   "locale": "ja"
   },
   {
    "channel": "threads",
@@ -784,16 +815,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdiAsLbEmgn",
    "date": "2026-09-21",
    "app": "caldaily",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "You checked the date three times today and still typed the wrong one. Our app, not a ranking: Name saved calculations. Basic tools free; lif",
    "why": "url+brand",
    "ios_id": "6794178671",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "17919794406264942",
-   "at": "2026-11-03T23:26:42Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",
@@ -801,11 +827,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdiArWwkr8K",
    "date": "2026-09-21",
    "app": "mochidonestamp",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "前回の日時を、すぐ思い出せる。 Mochi DoneStampは、ToDoリストではなく「暮らしの出来事」を覚えるアプリです。済ませたら一度タップするだけ。正確な日時が、見やすい履歴として残ります。必要なものだけに、ゆるやかな周期または正確な周期を設定できます。次回の予定は、実際",
    "why": "url+brand",
    "ios_id": "6790800323",
-   "locale": "ja"
+   "locale": "ja",
+   "own_replies": [],
+   "comment_id": "18032706509854820",
+   "at": "2026-11-04T17:19:23Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -921,11 +952,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdecDjSEjLD",
    "date": "2026-09-19",
    "app": "tripbee",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "Six confirmation emails, two screenshots, one note — and no actual plan. Our app, not a ranking: Keep flights and hotels in an offline daily",
    "why": "url+brand",
    "ios_id": "6787754435",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "17956146576295922",
+   "at": "2026-11-04T17:19:23Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",

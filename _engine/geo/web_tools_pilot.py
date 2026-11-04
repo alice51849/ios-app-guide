@@ -8,8 +8,12 @@
   35x45 mm or Japan 35x45 mm frame and save a 300 DPI JPEG.
 
 Both run entirely in the tab: images are decoded from the local file picker
-(or same-site sample files) and never sent anywhere; the pages contain no
-fetch/XMLHttpRequest/sendBeacon/form submission, and the tests enforce that.
+(or same-site sample files) and never sent anywhere.  The tool code itself
+makes no network call; the only one on the page is the site-wide anonymous
+download-button click counter (``click_beacon.click_beacon_block``: page path,
+app, ct and store only, no cookie, no IP kept).  A Content-Security-Policy meta
+allows exactly that endpoint (``connect-src``) and exactly the page's own
+inline scripts by hash; the tests enforce both (2026-11-05, 二十角度 13-1).
 App Store CTAs carry one app-bound campaign per tool and locale
 (gen_store_attribution.WEB_TOOL_PILOT_CAMPAIGNS); the Google Play link is
 added through android_play.inject_html, the same pass the deploy runs.
@@ -30,6 +34,9 @@ sys.path.insert(0, str(ROOT / "social"))
 sys.path.insert(0, str(HERE))
 
 import android_play  # noqa: E402
+import base64  # noqa: E402
+import hashlib  # noqa: E402
+from click_beacon import CLICK_BEACON_URL, click_beacon_block  # noqa: E402
 from appstore_live import live_app_keys  # noqa: E402
 from gen_calculator import write_tools_sitemap  # noqa: E402
 from gen_feed import feed_discovery_links  # noqa: E402
@@ -59,21 +66,38 @@ PASSPORT_PRESETS = {
 # (outreach/press/duo_pairs_pack: cover 1398x2034, inner 2853x2007).
 DUO_SCREENS = {"outer": [1398, 2034], "inner": [2853, 2007]}
 
+# Official size table (13-2): photo size and head height (chin to top of head),
+# each row with its official source.  Same numbers as PASSPORT_PRESETS.
+PASSPORT_SIZE_SOURCES = {"us": US_SOURCE, "tw": TW_SOURCE, "jp": JP_SOURCE}
+# Questions with measured search demand only (geo/SEARCH_DEMAND_AUDIT.md §3:
+# "can you wear glasses / smile in a passport photo", "why do passport photos
+# get rejected"); answers restate the U.S. Department of State photo rules.
+FAQ_SOURCE_NOTE_DATE = "2026-10-16"
+
 DUO = {
     "slug": "foldable-wallpaper-pair-preview",
     "app": "duowallpaperstudio",
     "campaign": "tool_duo_pair",
     "copy": {
         "en": {
-            "title": "Foldable Wallpaper Pair Preview | Cover & Inner Screen",
+            "title": "Cover Screen Wallpaper Preview | Foldable Cover & Inner Screen Pair",
             "description": (
-                "Preview two images on a foldable phone's cover screen and inner "
-                "screen side by side. Runs in your browser; images are not uploaded."
+                "Cover screen wallpaper preview: see two images on a foldable phone's cover "
+                "screen and inner screen side by side. Runs in your browser; images are not uploaded."
             ),
             "tools": "Tools",
             "heading": "Foldable wallpaper pair preview",
             "lead": "See a cover-screen image and an inner-screen image together before you set them.",
-            "privacy": "Images stay in this tab; nothing is uploaded",
+            "answer": [
+                "This cover screen wallpaper preview puts a tall cover-screen image and a wide "
+                "inner-screen image side by side in your browser, so you can check both before you set them.",
+                "Foldable Wallpaper Studio makes wallpapers in pairs: a close-up for the cover screen "
+                "and the full scene for the inner screen, cut from the same original artwork.",
+            ],
+            "sizes_title": "Screen sizes Foldable Wallpaper Studio saves",
+            "sizes_head": ["Screen", "Pixels (width x height)"],
+            "sizes_source": "Source: Foldable Wallpaper Studio App Store description",
+            "privacy": "Images are not uploaded; only download-button clicks are counted",
             "scope": "Preview only; proportions are approximate",
             "outer_label": "Cover screen image (closed)",
             "inner_label": "Inner screen image (open)",
@@ -108,12 +132,19 @@ DUO = {
             "index_description": "Preview a cover-screen and inner-screen wallpaper pair in your browser.",
         },
         "zh-Hant": {
-            "title": "摺疊手機雙螢幕桌布配對預覽｜外螢幕＋內螢幕",
-            "description": "把兩張圖片同時放到摺疊手機的外螢幕與內螢幕上預覽。在瀏覽器裡處理，圖片不會上傳。",
+            "title": "外螢幕桌布預覽｜摺疊手機外螢幕＋內螢幕配對",
+            "description": "外螢幕桌布預覽：把兩張圖片同時放到摺疊手機的外螢幕與內螢幕上。在瀏覽器裡處理，圖片不會上傳。",
             "tools": "工具",
             "heading": "摺疊手機雙螢幕桌布配對預覽",
             "lead": "設定之前，先看外螢幕和內螢幕兩張桌布放在一起的樣子。",
-            "privacy": "圖片只留在這個分頁，不會上傳",
+            "answer": [
+                "這個外螢幕桌布預覽把瘦長的外螢幕圖和偏寬的內螢幕圖並排放在瀏覽器裡，設定前兩邊都能先確認。",
+                "「摺疊手機桌布 - 雙螢幕成對桌布」的桌布成對製作：合上，外螢幕是特寫；展開，內螢幕是整片全景，兩張出自同一幅原創畫面。",
+            ],
+            "sizes_title": "摺疊手機桌布儲存的螢幕尺寸",
+            "sizes_head": ["螢幕", "像素（寬 x 高）"],
+            "sizes_source": "出處：摺疊手機桌布 App Store 商店說明",
+            "privacy": "圖片不會上傳；只計算下載鈕點擊次數",
             "scope": "僅供預覽；比例為近似值",
             "outer_label": "外螢幕圖片（闔上時）",
             "inner_label": "內螢幕圖片（打開時）",
@@ -144,12 +175,19 @@ DUO = {
             "index_description": "在瀏覽器裡預覽外螢幕與內螢幕的桌布配對。",
         },
         "ja": {
-            "title": "折りたたみスマホ 壁紙ペアプレビュー｜カバー画面とメイン画面",
-            "description": "2枚の画像を折りたたみスマホのカバー画面とメイン画面に並べてプレビュー。ブラウザ内で処理し、画像はアップロードされません。",
+            "title": "外画面 壁紙プレビュー｜折りたたみスマホのカバー画面とメイン画面",
+            "description": "外画面の壁紙プレビュー：2枚の画像を折りたたみスマホのカバー画面とメイン画面に並べて確認。ブラウザ内で処理し、画像はアップロードされません。",
             "tools": "ツール",
             "heading": "折りたたみスマホ 壁紙ペアプレビュー",
             "lead": "設定する前に、カバー画面とメイン画面の壁紙を並べて確認できます。",
-            "privacy": "画像はこのタブ内だけで扱い、アップロードしません",
+            "answer": [
+                "この外画面の壁紙プレビューでは、縦長のカバー画面の画像と横長のメイン画面の画像をブラウザ内で並べ、設定前に両方を確認できます。",
+                "「折りたたみ壁紙 - 外画面と内画面」の壁紙はペアで作られ、閉じれば外画面にクローズアップ、開けば内画面に全景。2枚は同じオリジナル作品から切り出しています。",
+            ],
+            "sizes_title": "「折りたたみ壁紙」が保存する画面サイズ",
+            "sizes_head": ["画面", "ピクセル（幅 x 高さ）"],
+            "sizes_source": "出典：「折りたたみ壁紙」App Store の説明",
+            "privacy": "画像はアップロードされません。ダウンロードボタンのクリック数だけを数えます",
             "scope": "プレビュー専用・比率は目安です",
             "outer_label": "カバー画面の画像（閉じたとき）",
             "inner_label": "メイン画面の画像（開いたとき）",
@@ -191,12 +229,41 @@ PASSPORT = {
             "title": "Passport Photo Crop Tool | US 2x2 in, Taiwan & Japan 35x45 mm",
             "description": (
                 "Crop a photo to US 2x2 inch or Taiwan / Japan 35x45 mm passport size "
-                "and save a 300 DPI JPEG. Processed in your browser; nothing is uploaded."
+                "and save a 300 DPI JPEG. Processed in your browser; photos are not uploaded."
             ),
             "tools": "Tools",
             "heading": "Passport photo crop tool",
             "lead": "Crop to the final print size with head-height guides, then save a JPEG.",
-            "privacy": "Your photo stays in this tab; nothing is uploaded",
+            "answer": [
+                "This tool crops a photo you already have to U.S. 2 x 2 inch or Taiwan / Japan "
+                "35 x 45 mm passport size with head-height guides and saves a 300 DPI JPEG, all in "
+                "your browser; photos are not uploaded.",
+                "For more countries and documents, Snapport on iPhone gives you photo size templates "
+                "for passport, visa, ID card, student ID, resume, and work-badge photos in many regions.",
+            ],
+            "privacy": "Photos are not uploaded; only download-button clicks are counted",
+            "sizes_title": "Official passport photo sizes",
+            "sizes_head": ["Country", "Photo size", "Head height (chin to top of head)", "Official source"],
+            "size_rows": {
+                "us": ["United States", "2 x 2 in (51 x 51 mm)", "1 to 1 3/8 in (25 to 35 mm)"],
+                "tw": ["Taiwan", "35 x 45 mm", "32 to 36 mm"],
+                "jp": ["Japan", "35 x 45 mm", "32 to 36 mm (34 mm, plus or minus 2 mm)"],
+            },
+            "faq_title": "Common questions",
+            "faq": [
+                ("Can you wear glasses in a passport photo?",
+                 "Not for a U.S. passport: glasses are not allowed unless you cannot remove them "
+                 "for medical reasons, in which case a signed statement from your doctor is needed."),
+                ("Can you smile in a passport photo?",
+                 "Yes, within limits: face the camera directly with both eyes open and a neutral "
+                 "expression or a natural smile."),
+                ("Why do passport photos get rejected?",
+                 "Usually because one rule is broken: the wrong photo or head size, shadows or a "
+                 "patterned background, glasses, a blurry, grainy or out-of-date photo (it must be "
+                 "taken in the last 6 months), a selfie, or any filter or digital edit."),
+            ],
+            "faq_source": "Source: U.S. Department of State, passport photo requirements (rules as recorded on "
+            + FAQ_SOURCE_NOTE_DATE + "). Check the official page before you apply.",
             "scope": "Prepares the photo only; the passport is issued by the authority",
             "photo_label": "Photo",
             "preset_label": "Size",
@@ -240,11 +307,22 @@ PASSPORT = {
         },
         "zh-Hant": {
             "title": "護照照片裁切工具｜台灣、日本 35x45 公釐、美國 2x2 英吋",
-            "description": "把照片裁成台灣或日本 35x45 公釐、美國 2x2 英吋的護照尺寸，存成 300 DPI 的 JPEG。在瀏覽器裡處理，不會上傳。",
+            "description": "把照片裁成台灣或日本 35x45 公釐、美國 2x2 英吋的護照尺寸，存成 300 DPI 的 JPEG。在瀏覽器裡處理，照片不會上傳。",
             "tools": "工具",
             "heading": "護照照片裁切工具",
             "lead": "依最終列印尺寸裁切，搭配頭部高度參考線，再存成 JPEG。",
-            "privacy": "照片只留在這個分頁，不會上傳",
+            "answer": [
+                "這個工具把你手上的照片裁成台灣或日本 35x45 公釐、美國 2x2 英吋的護照尺寸，搭配頭部高度參考線，存成 300 DPI 的 JPEG，全部在瀏覽器裡處理，照片不會上傳。",
+                "需要更多國家與證件時，iPhone 上的 Snapport 提供多地區常用的護照、簽證、證件、學生證、履歷與工作證照片尺寸範本。",
+            ],
+            "privacy": "照片不會上傳；只計算下載鈕點擊次數",
+            "sizes_title": "官方護照照片尺寸",
+            "sizes_head": ["國家", "照片尺寸", "頭部高度（下巴到頭頂）", "官方出處"],
+            "size_rows": {
+                "us": ["美國", "2 x 2 英吋（51 x 51 公釐）", "1 至 1 3/8 英吋（25 至 35 公釐）"],
+                "tw": ["台灣", "35 x 45 公釐", "3.2 至 3.6 公分"],
+                "jp": ["日本", "35 x 45 公釐", "32 至 36 公釐（34 公釐 ±2 公釐）"],
+            },
             "scope": "只準備照片；證件由主管機關核發",
             "photo_label": "照片",
             "preset_label": "尺寸",
@@ -281,11 +359,22 @@ PASSPORT = {
         },
         "ja": {
             "title": "パスポート写真 トリミングツール｜35x45mm・米国 2x2インチ",
-            "description": "写真を日本・台湾の 35x45mm や米国の 2x2 インチのパスポートサイズに切り抜き、300 DPI の JPEG で保存。ブラウザ内で処理し、アップロードしません。",
+            "description": "写真を日本・台湾の 35x45mm や米国の 2x2 インチのパスポートサイズに切り抜き、300 DPI の JPEG で保存。ブラウザ内で処理し、写真はアップロードしません。",
             "tools": "ツール",
             "heading": "パスポート写真 トリミングツール",
             "lead": "仕上がりサイズに合わせて頭の高さのガイド付きで切り抜き、JPEG で保存します。",
-            "privacy": "写真はこのタブ内だけで扱い、アップロードしません",
+            "answer": [
+                "このツールは手元の写真を日本・台湾の 35x45mm や米国の 2x2 インチのパスポートサイズに、頭の高さのガイド付きで切り抜き、300 DPI の JPEG で保存します。すべてブラウザ内で処理し、写真はアップロードされません。",
+                "ほかの国や書類には、iPhone の Snapport が多くの地域に対応したパスポート・ビザ・身分証・学生証・履歴書・社員証用の写真サイズテンプレートを備えています。",
+            ],
+            "privacy": "写真はアップロードされません。ダウンロードボタンのクリック数だけを数えます",
+            "sizes_title": "公式のパスポート写真サイズ",
+            "sizes_head": ["国・地域", "写真のサイズ", "顔の縦の長さ（あごから頭頂）", "公式の出典"],
+            "size_rows": {
+                "jp": ["日本", "縦 45 x 横 35 mm", "34 mm ±2 mm（32〜36 mm）"],
+                "tw": ["台湾", "縦 45 x 横 35 mm", "32〜36 mm"],
+                "us": ["米国", "2 x 2 インチ（51 x 51 mm）", "1〜1 3/8 インチ（25〜35 mm）"],
+            },
             "scope": "写真の準備のみ。旅券は発給機関が交付します",
             "photo_label": "写真",
             "preset_label": "サイズ",
@@ -337,6 +426,7 @@ input,select,button{font:inherit}input[type=file],select{width:100%;min-height:4
 .help,.status{color:var(--muted);font-size:13px;margin:6px 0 0}.status{min-height:1.5em}.button{border:0;border-radius:999px;background:var(--navy);color:#fff;text-decoration:none;font-weight:800;padding:10px 16px;cursor:pointer;display:inline-flex}.button.secondary{background:#fff;color:var(--navy);border:1px solid var(--line)}.button:disabled{opacity:.45;cursor:not-allowed}.row{display:flex;flex-wrap:wrap;gap:8px}
 .stage{display:flex;flex-wrap:wrap;gap:22px;align-items:flex-end;justify-content:center;padding:18px;border-radius:18px;background:#1d2330;min-height:320px}.device{display:grid;gap:8px;justify-items:center;color:#d8deea;font-size:13px;font-weight:700}.device canvas{display:block;border:8px solid #0b0d12;border-radius:26px;background:#2a3140;box-shadow:0 10px 30px rgba(0,0,0,.35);max-width:100%;height:auto}.device.outer canvas{width:150px}.device.inner canvas{width:min(420px,72vw);border-radius:22px}
 .crop-shell{position:relative;display:inline-block;touch-action:none;cursor:grab;background:repeating-linear-gradient(45deg,#e7ebf0,#e7ebf0 10px,#f3f5f8 10px,#f3f5f8 20px);padding:12px;border-radius:16px}.crop-shell canvas{display:block;max-width:100%;height:auto;box-shadow:0 6px 20px rgba(20,34,52,.2)}#guide{position:absolute;left:12px;top:12px;pointer-events:none}
+.tbl{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:15px}th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}th{background:#f3f6fa}
 .note{background:var(--warn);border-color:#ead49d}.cta{background:linear-gradient(135deg,#f9fbff,#e8f1f8)}ul{padding-left:20px}li{margin:6px 0}
 @media(max-width:780px){.grid{grid-template-columns:1fr}}
 """
@@ -417,6 +507,18 @@ def _head(tool: dict, locale: str) -> str:
             {"@type": "ListItem", "position": 3, "name": t["heading"], "item": url},
         ],
     }
+    faq_schema = ""
+    if t.get("faq"):
+        faq_schema = json_script({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {"@type": "Question", "name": q,
+                 "acceptedAnswer": {"@type": "Answer", "text": a}}
+                for q, a in t["faq"]
+            ],
+        }) + "\n"
+    opening = " ".join(t["answer"]) if t.get("answer") else t["lead"]
     return f"""<!DOCTYPE html>
 <html lang="{locale}">
 <head>
@@ -424,6 +526,7 @@ def _head(tool: dict, locale: str) -> str:
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{_e(t["title"])}</title>
 <meta name="description" content="{_e(t["description"])}">
+<meta http-equiv="Content-Security-Policy" content="{{CSP_PLACEHOLDER}}">
 <meta name="robots" content="index,follow">
 <link rel="canonical" href="{url}">
 {alternates}<link rel="alternate" hreflang="x-default" href="{canonical(slug, "en")}">
@@ -436,11 +539,12 @@ def _head(tool: dict, locale: str) -> str:
 {json_script(schema)}
 {json_script(breadcrumb)}
 {feed_discovery_links()}
+{faq_schema}{click_beacon_block()}
 </head>
 <body>
 <header class="top"><div class="wrap nav"><a href="{SITE}/{home_prefix}index.html">iOS App Guide</a><nav class="nav-links"><a href="{SITE}/{home_prefix}tools/index.html">{_e(t["tools"])}</a>{_language_links(slug, locale)}</nav></div></header>
 <main>
-<section class="hero wrap"><h1>{_e(t["heading"])}</h1><p class="lead">{_e(t["lead"])}</p><div class="trust"><span class="badge">{_e(t["privacy"])}</span><span class="badge scope">{_e(t["scope"])}</span></div></section>
+<section class="hero wrap"><h1>{_e(t["heading"])}</h1><p class="lead">{_e(opening)}</p><div class="trust"><span class="badge">{_e(t["privacy"])}</span><span class="badge scope">{_e(t["scope"])}</span></div></section>
 """
 
 
@@ -469,6 +573,46 @@ def _cta(tool: dict, locale: str, show_cta: bool) -> str:
     )
 
 
+def _table(head: list[str], rows: list[list[str]]) -> str:
+    header = "".join(f"<th>{_e(cell)}</th>" for cell in head)
+    body = "".join("<tr>" + "".join(f"<td>{cell}</td>" for cell in row) + "</tr>" for row in rows)
+    return f'<div class="tbl"><table><tr>{header}</tr>{body}</table></div>'
+
+
+def _duo_sizes(locale: str) -> str:
+    t = DUO["copy"][locale]
+    names = (t["outer_title"], t["inner_title"])
+    rows = [[_e(name), f"{w} x {h}"] for name, (w, h) in zip(names, DUO_SCREENS.values(), strict=True)]
+    # Plain text: the page keeps exactly one App Store link (the tracked CTA).
+    source = _e(t["sizes_source"])
+    return (f'<section class="card wrap" id="sizes"><h2>{_e(t["sizes_title"])}</h2>'
+            f'{_table(t["sizes_head"], rows)}<p class="help">{source}</p></section>\n')
+
+
+def _passport_sizes(locale: str) -> str:
+    t = PASSPORT["copy"][locale]
+    rows = []
+    for key, cells in t["size_rows"].items():
+        url = PASSPORT_SIZE_SOURCES[key]
+        rows.append([_e(cell) for cell in cells]
+                    + [f'<a href="{url}" rel="noopener noreferrer">{_e(urlparse_host(url))}</a>'])
+    return (f'<section class="card wrap" id="sizes"><h2>{_e(t["sizes_title"])}</h2>'
+            f'{_table(t["sizes_head"], rows)}</section>\n')
+
+
+def _passport_faq(locale: str) -> str:
+    t = PASSPORT["copy"][locale]
+    if not t.get("faq"):
+        return ""
+    items = "".join(f"<h3>{_e(q)}</h3><p>{_e(a)}</p>" for q, a in t["faq"])
+    return (f'<section class="card wrap" id="faq"><h2>{_e(t["faq_title"])}</h2>{items}'
+            f'<p class="help"><a href="{US_SOURCE}" rel="noopener noreferrer">{_e(t["faq_source"])}</a></p></section>\n')
+
+
+def urlparse_host(url: str) -> str:
+    return url.split("//", 1)[1].split("/", 1)[0]
+
+
 def render_duo(locale: str, show_cta: bool) -> str:
     t = DUO["copy"][locale]
     depth = "../" if locale == "en" else "../../"
@@ -495,7 +639,7 @@ def render_duo(locale: str, show_cta: bool) -> str:
 <p class="status" id="status" aria-live="polite">{_e(t["status_empty"])}</p>
 </div><div class="stage" aria-label="{_e(t["heading"])}"><div class="device outer"><canvas id="outer" width="{DUO_SCREENS["outer"][0] // 3}" height="{DUO_SCREENS["outer"][1] // 3}"></canvas><span>{_e(t["outer_title"])}</span></div><div class="device inner"><canvas id="inner" width="{DUO_SCREENS["inner"][0] // 3}" height="{DUO_SCREENS["inner"][1] // 3}"></canvas><span>{_e(t["inner_title"])}</span></div></div></div></section>
 <section class="card wrap"><h2>{_e(t["how_title"])}</h2><ul>{how}</ul><p class="help">{_e(t["credit"])}</p></section>
-{_cta(DUO, locale, show_cta)}</main>
+{_duo_sizes(locale)}{_cta(DUO, locale, show_cta)}</main>
 <script>
 const COPY={js_value(copy)};
 const SAMPLES={js_value(samples)};
@@ -541,7 +685,7 @@ def render_passport(locale: str, show_cta: bool) -> str:
 <div class="row"><button class="button" id="download" type="button" disabled>{_e(t["download"])}</button></div>
 <p class="status" id="status" aria-live="polite">{_e(t["status_empty"])}</p>
 </div><div><div class="crop-shell" id="shell"><canvas id="crop" width="413" height="531" aria-label="{_e(t["heading"])}"></canvas><canvas id="guide" width="413" height="531" aria-hidden="true"></canvas></div></div></div></section>
-<section class="card note wrap"><h2>{_e(t["rules_title"])}</h2><ul>{rules}</ul><p><strong>{_e(t["disclaimer"])}</strong></p><p><a href="{guide}">{_e(t["related"])}</a></p></section>
+{_passport_sizes(locale)}{_passport_faq(locale)}<section class="card note wrap"><h2>{_e(t["rules_title"])}</h2><ul>{rules}</ul><p><strong>{_e(t["disclaimer"])}</strong></p><p><a href="{guide}">{_e(t["related"])}</a></p></section>
 {_cta(PASSPORT, locale, show_cta)}<section class="card wrap"><h2>{_e(t["sources"])}</h2><ul>{sources}</ul></section>
 </main>
 <script>
@@ -575,11 +719,31 @@ layout();render();
 RENDERERS = {DUO["slug"]: render_duo, PASSPORT["slug"]: render_passport}
 
 
+_INLINE_SCRIPT_RE = re.compile(r"<script>(.*?)</script>", re.S)
+
+
+def content_security_policy(page: str) -> str:
+    """Only the page's own inline scripts (by hash) run; the only network call
+    allowed is the shared download-click counter."""
+    hashes = " ".join(
+        "'sha256-" + base64.b64encode(hashlib.sha256(body.encode("utf-8")).digest()).decode("ascii") + "'"
+        for body in _INLINE_SCRIPT_RE.findall(page)
+    )
+    return (
+        "default-src 'none'; "
+        f"script-src {hashes}; "
+        "style-src 'unsafe-inline'; "
+        "img-src 'self' blob: data:; "
+        f"connect-src {CLICK_BEACON_URL}; "
+        "base-uri 'none'; form-action 'none'"
+    )
+
+
 def render_page(tool: dict, locale: str, show_cta: bool, android_apps: dict | None = None) -> str:
     page = RENDERERS[tool["slug"]](locale, show_cta)
     if android_apps:
         page = android_play.inject_html(page, android_apps)
-    return page
+    return page.replace("{CSP_PLACEHOLDER}", content_security_policy(page), 1)
 
 
 def _index_card(tool: dict, locale: str) -> str:

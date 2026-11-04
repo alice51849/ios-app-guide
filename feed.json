@@ -1,7 +1,7 @@
 {
  "schema": "lumi.social-feed/v1",
  "date": "2026-11-04",
- "generated_at": "2026-11-04T02:01:15Z",
+ "generated_at": "2026-11-04T08:06:09Z",
  "items": {
   "bluesky": [
    {
@@ -141,48 +141,69 @@
    },
    {
     "kind": "clip",
-    "key": "unblurry_b/pt-BR",
-    "locale": "pt-BR",
-    "app": "unblurry_b",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/44jigf.mp4",
-    "hook": "Nitidez salva fotos tremidas",
-    "name": "Unblurry Pro: Foto Nítida",
-    "title": "Nitidez salva fotos tremidas | Restaurar fotos antigas | Unblurry Pro",
+    "key": "lumiletterspro/en",
+    "locale": "en",
+    "app": "lumiletterspro",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/jks7u7.mp4",
+    "hook": "26 letter friends to collect",
+    "name": "Lumi Letters Pro: ABC Phonics",
+    "title": "26 letter friends to collect | Kids Phonics | Lumi Letters Pro",
     "tags": [
-     "#Qualidade",
-     "#Aumentar",
-     "#Imagem",
-     "#Desembaçar",
-     "#Nitidez",
-     "#UnblurryPro"
+     "#KidsPhonics",
+     "#Short",
+     "#Vowel",
+     "#Kids",
+     "#Phonemic",
+     "#LumiLettersPro"
     ],
-    "caption": "Nitidez salva fotos tremidas\nMuito escura? Pouca luz ilumina\nRestaurar fotos antigas\nUnblurry Pro: Foto Nítida\nPesquise “corrigir foto borrada” na App Store\nTambém no Google Play\n\n#Qualidade #Aumentar #UnblurryPro",
-    "button": "Baixar na App Store",
-    "variant": "b",
-    "alt": "Unblurry Pro: Foto Nítida — Nitidez salva fotos tremidas — Muito escura? Pouca luz ilumina — Restaurar fotos antigas",
-    "store": "https://apps.apple.com/br/app/id6782275018?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.unblurry.app&referrer=utm_source%3Dsocial%26utm_campaign%3Dunblurry",
+    "caption": "26 letter friends to collect\nTrace on screen, then print a worksheet\nKids Phonics\nLumi Letters Pro: ABC Phonics\nSearch “Lumi Letters Pro” on the App Store\nAlso on Google Play\n\n#KidsPhonics #Short #LumiLettersPro",
+    "button": "Get it on the App Store",
+    "variant": "c",
+    "alt": "Lumi Letters Pro: ABC Phonics — 26 letter friends to collect — Trace on screen, then print a worksheet — Kids Phonics",
+    "store": "https://apps.apple.com/us/app/id6778491147?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiLetters&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiletterspro",
     "review": {
-     "label": "Já usa este app? Avalie ou escreva uma resenha na App Store",
-     "url": "https://apps.apple.com/app/id6782275018?action=write-review"
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6778491147?action=write-review"
     },
     "keywords": [
-     "borrada",
-     "melhorar",
-     "photo enhancer",
-     "qualidade",
-     "aumentar",
-     "imagem"
+     "short",
+     "vowel",
+     "kids",
+     "phonemic",
+     "awareness",
+     "alphabet"
     ],
-    "keyline": "Restaurar fotos antigas",
+    "keyline": "Kids Phonics",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "79f92fe5ad5fa9d4",
+     "board": "7457ec6403e84c02",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "utility/photo/snapportlite/tw_passport/ja",
+    "locale": "ja",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/utility-cards/card-20261104.jpg",
+    "caption": "今日の証明写真サイズ：台湾のパスポート\n35 × 45 mm\n頭の長さ（あご〜頭頂）32–36 mm\n白い背景\n規定は変わることがあります。申請前に公式情報をご確認ください\n\nSnapport Lite: 自宅で証明写真、35種類のサイズ\nApp Store・Google Playで「Snapport Lite」を検索\n\n#自宅で証明写真 #就活写真 #加工",
+    "title": "今日の証明写真サイズ：台湾のパスポート",
+    "alt": "Snapport Lite — 今日の証明写真サイズ：台湾のパスポート — 35 × 45 mm — 頭の長さ（あご〜頭頂）32–36 mm — 顔写真をぴったりのサイズに",
+    "name": "Snapport Lite",
+    "hook": "今日の証明写真サイズ：台湾のパスポート",
+    "tags": [
+     "#自宅で証明写真",
+     "#就活写真",
+     "#加工",
+     "#パスポート用写真",
+     "#履歴書"
+    ],
+    "button": "App Storeで入手",
+    "store": "https://apps.apple.com/jp/app/id6792856304?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.SnapportLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dsnapportlite"
    },
    {
     "kind": "card",
@@ -2129,48 +2150,69 @@
    },
    {
     "kind": "clip",
-    "key": "unblurry_b/pt-BR",
-    "locale": "pt-BR",
-    "app": "unblurry_b",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/44jigf.mp4",
-    "hook": "Nitidez salva fotos tremidas",
-    "name": "Unblurry Pro: Foto Nítida",
-    "title": "Nitidez salva fotos tremidas | Restaurar fotos antigas | Unblurry Pro",
+    "key": "lumiletterspro/en",
+    "locale": "en",
+    "app": "lumiletterspro",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/jks7u7.mp4",
+    "hook": "26 letter friends to collect",
+    "name": "Lumi Letters Pro: ABC Phonics",
+    "title": "26 letter friends to collect | Kids Phonics | Lumi Letters Pro",
     "tags": [
-     "#Qualidade",
-     "#Aumentar",
-     "#Imagem",
-     "#Desembaçar",
-     "#Nitidez",
-     "#UnblurryPro"
+     "#KidsPhonics",
+     "#Short",
+     "#Vowel",
+     "#Kids",
+     "#Phonemic",
+     "#LumiLettersPro"
     ],
-    "caption": "Nitidez salva fotos tremidas\nMuito escura? Pouca luz ilumina\nRestaurar fotos antigas\nUnblurry Pro: Foto Nítida\nPesquise “corrigir foto borrada” na App Store\nTambém no Google Play\n\n#Qualidade #Aumentar #Imagem #Desembaçar #UnblurryPro",
-    "button": "Baixar na App Store",
-    "variant": "b",
-    "alt": "Unblurry Pro: Foto Nítida — Nitidez salva fotos tremidas — Muito escura? Pouca luz ilumina — Restaurar fotos antigas",
-    "store": "https://apps.apple.com/br/app/id6782275018?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.unblurry.app&referrer=utm_source%3Dsocial%26utm_campaign%3Dunblurry",
+    "caption": "26 letter friends to collect\nTrace on screen, then print a worksheet\nKids Phonics\nLumi Letters Pro: ABC Phonics\nSearch “Lumi Letters Pro” on the App Store\nAlso on Google Play\n\n#KidsPhonics #Short #Vowel #Kids #LumiLettersPro",
+    "button": "Get it on the App Store",
+    "variant": "c",
+    "alt": "Lumi Letters Pro: ABC Phonics — 26 letter friends to collect — Trace on screen, then print a worksheet — Kids Phonics",
+    "store": "https://apps.apple.com/us/app/id6778491147?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiLetters&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiletterspro",
     "review": {
-     "label": "Já usa este app? Avalie ou escreva uma resenha na App Store",
-     "url": "https://apps.apple.com/app/id6782275018?action=write-review"
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6778491147?action=write-review"
     },
     "keywords": [
-     "borrada",
-     "melhorar",
-     "photo enhancer",
-     "qualidade",
-     "aumentar",
-     "imagem"
+     "short",
+     "vowel",
+     "kids",
+     "phonemic",
+     "awareness",
+     "alphabet"
     ],
-    "keyline": "Restaurar fotos antigas",
+    "keyline": "Kids Phonics",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "79f92fe5ad5fa9d4",
+     "board": "7457ec6403e84c02",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "utility/photo/snapportlite/tw_passport/ja",
+    "locale": "ja",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/utility-cards/card-20261104.jpg",
+    "caption": "今日の証明写真サイズ：台湾のパスポート\n35 × 45 mm\n頭の長さ（あご〜頭頂）32–36 mm\n白い背景\n規定は変わることがあります。申請前に公式情報をご確認ください\n\nSnapport Lite: 自宅で証明写真、35種類のサイズ\nApp Store・Google Playで「Snapport Lite」を検索\n\n#自宅で証明写真 #就活写真 #加工 #パスポート用写真 #履歴書",
+    "title": "今日の証明写真サイズ：台湾のパスポート",
+    "alt": "Snapport Lite — 今日の証明写真サイズ：台湾のパスポート — 35 × 45 mm — 頭の長さ（あご〜頭頂）32–36 mm — 顔写真をぴったりのサイズに",
+    "name": "Snapport Lite",
+    "hook": "今日の証明写真サイズ：台湾のパスポート",
+    "tags": [
+     "#自宅で証明写真",
+     "#就活写真",
+     "#加工",
+     "#パスポート用写真",
+     "#履歴書"
+    ],
+    "button": "App Storeで入手",
+    "store": "https://apps.apple.com/jp/app/id6792856304?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.SnapportLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dsnapportlite"
    }
   ],
   "youtube": [
@@ -2360,61 +2402,60 @@
    },
    {
     "kind": "clip",
-    "key": "unblurry_b/pt-BR",
-    "locale": "pt-BR",
-    "app": "unblurry_b",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/44jigf.mp4",
-    "hook": "Nitidez salva fotos tremidas",
-    "name": "Unblurry Pro: Foto Nítida",
-    "title": "Nitidez salva fotos tremidas | Restaurar fotos antigas | Unblurry Pro",
+    "key": "lumiletterspro/en",
+    "locale": "en",
+    "app": "lumiletterspro",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/jks7u7.mp4",
+    "hook": "26 letter friends to collect",
+    "name": "Lumi Letters Pro: ABC Phonics",
+    "title": "26 letter friends to collect | Kids Phonics | Lumi Letters Pro",
     "tags": [
-     "#Qualidade",
-     "#Aumentar",
-     "#Imagem",
-     "#Desembaçar",
-     "#Nitidez",
-     "#UnblurryPro"
+     "#KidsPhonics",
+     "#Short",
+     "#Vowel",
+     "#Kids",
+     "#Phonemic",
+     "#LumiLettersPro"
     ],
-    "caption": "Nitidez salva fotos tremidas\nMuito escura? Pouca luz ilumina\nRestaurar fotos antigas\nUnblurry Pro: Foto Nítida\nPesquise “corrigir foto borrada” na App Store\nTambém no Google Play\n\n#Qualidade #Aumentar #Imagem #Desembaçar #UnblurryPro",
-    "button": "Baixar na App Store",
-    "variant": "b",
-    "alt": "Unblurry Pro: Foto Nítida — Nitidez salva fotos tremidas — Muito escura? Pouca luz ilumina — Restaurar fotos antigas",
-    "store": "https://apps.apple.com/br/app/id6782275018?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.unblurry.app&referrer=utm_source%3Dsocial%26utm_campaign%3Dunblurry",
+    "caption": "26 letter friends to collect\nTrace on screen, then print a worksheet\nKids Phonics\nLumi Letters Pro: ABC Phonics\nSearch “Lumi Letters Pro” on the App Store\nAlso on Google Play\n\n#KidsPhonics #Short #Vowel #Kids #LumiLettersPro",
+    "button": "Get it on the App Store",
+    "variant": "c",
+    "alt": "Lumi Letters Pro: ABC Phonics — 26 letter friends to collect — Trace on screen, then print a worksheet — Kids Phonics",
+    "store": "https://apps.apple.com/us/app/id6778491147?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiLetters&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiletterspro",
     "review": {
-     "label": "Já usa este app? Avalie ou escreva uma resenha na App Store",
-     "url": "https://apps.apple.com/app/id6782275018?action=write-review"
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6778491147?action=write-review"
     },
     "keywords": [
-     "borrada",
-     "melhorar",
-     "photo enhancer",
-     "qualidade",
-     "aumentar",
-     "imagem"
+     "short",
+     "vowel",
+     "kids",
+     "phonemic",
+     "awareness",
+     "alphabet"
     ],
-    "keyline": "Restaurar fotos antigas",
+    "keyline": "Kids Phonics",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "79f92fe5ad5fa9d4",
+     "board": "7457ec6403e84c02",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "youtube": {
-     "title": "Nitidez salva fotos tremidas | Unblurry Pro #Shorts",
-     "description": "Nitidez salva fotos tremidas\nMuito escura? Pouca luz ilumina\nRestaurar fotos antigas\n\nUnblurry Pro: Foto Nítida\nApp Store: https://apps.apple.com/br/app/id6782275018?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.unblurry.app&referrer=utm_source%3Dsocial%26utm_campaign%3Dunblurry\nJá usa este app? Avalie ou escreva uma resenha na App Store\nhttps://apps.apple.com/app/id6782275018?action=write-review\n\nborrada · melhorar · photo enhancer · qualidade · aumentar · imagem\n\n#Shorts #Qualidade #UnblurryPro",
+     "title": "26 letter friends to collect | Lumi Letters Pro #Shorts",
+     "description": "26 letter friends to collect\nTrace on screen, then print a worksheet\nKids Phonics\n\nLumi Letters Pro: ABC Phonics\nApp Store: https://apps.apple.com/us/app/id6778491147?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiLetters&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiletterspro\nAlready using this app? Rate or review it on the App Store\nhttps://apps.apple.com/app/id6778491147?action=write-review\n\nshort · vowel · kids · phonemic · awareness · alphabet\n\n#Shorts #KidsPhonics #LumiLettersPro",
      "tags": [
-      "borrada",
-      "melhorar",
-      "photo enhancer",
-      "qualidade",
-      "aumentar",
-      "imagem",
-      "Desembaçar",
-      "Nitidez",
-      "UnblurryPro",
-      "Unblurry Pro"
+      "short",
+      "vowel",
+      "kids",
+      "phonemic",
+      "awareness",
+      "alphabet",
+      "KidsPhonics",
+      "LumiLettersPro",
+      "Lumi Letters Pro"
      ]
     },
     "slot": 15
@@ -2570,52 +2611,77 @@
    },
    {
     "kind": "clip",
-    "key": "unblurry_b/pt-BR",
-    "locale": "pt-BR",
-    "app": "unblurry_b",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/44jigf.mp4",
-    "hook": "Nitidez salva fotos tremidas",
-    "name": "Unblurry Pro: Foto Nítida",
-    "title": "Nitidez salva fotos tremidas | Restaurar fotos antigas | Unblurry Pro",
+    "key": "lumiletterspro/en",
+    "locale": "en",
+    "app": "lumiletterspro",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/jks7u7.mp4",
+    "hook": "26 letter friends to collect",
+    "name": "Lumi Letters Pro: ABC Phonics",
+    "title": "26 letter friends to collect | Kids Phonics | Lumi Letters Pro",
     "tags": [
-     "#Qualidade",
-     "#Aumentar",
-     "#Imagem",
-     "#Desembaçar",
-     "#Nitidez",
-     "#UnblurryPro"
+     "#KidsPhonics",
+     "#Short",
+     "#Vowel",
+     "#Kids",
+     "#Phonemic",
+     "#LumiLettersPro"
     ],
-    "caption": "Nitidez salva fotos tremidas\nMuito escura? Pouca luz ilumina\nRestaurar fotos antigas\nUnblurry Pro: Foto Nítida\nPesquise “corrigir foto borrada” na App Store\nTambém no Google Play\n\n#Qualidade #Aumentar #Imagem #Desembaçar #UnblurryPro",
-    "button": "Baixar na App Store",
-    "variant": "b",
-    "alt": "Unblurry Pro: Foto Nítida — Nitidez salva fotos tremidas — Muito escura? Pouca luz ilumina — Restaurar fotos antigas",
-    "store": "https://apps.apple.com/br/app/id6782275018?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.unblurry.app&referrer=utm_source%3Dsocial%26utm_campaign%3Dunblurry",
+    "caption": "26 letter friends to collect\nTrace on screen, then print a worksheet\nKids Phonics\nLumi Letters Pro: ABC Phonics\nSearch “Lumi Letters Pro” on the App Store\nAlso on Google Play\n\n#KidsPhonics #Short #Vowel #Kids #LumiLettersPro",
+    "button": "Get it on the App Store",
+    "variant": "c",
+    "alt": "Lumi Letters Pro: ABC Phonics — 26 letter friends to collect — Trace on screen, then print a worksheet — Kids Phonics",
+    "store": "https://apps.apple.com/us/app/id6778491147?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiLetters&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiletterspro",
     "review": {
-     "label": "Já usa este app? Avalie ou escreva uma resenha na App Store",
-     "url": "https://apps.apple.com/app/id6782275018?action=write-review"
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6778491147?action=write-review"
     },
     "keywords": [
-     "borrada",
-     "melhorar",
-     "photo enhancer",
-     "qualidade",
-     "aumentar",
-     "imagem"
+     "short",
+     "vowel",
+     "kids",
+     "phonemic",
+     "awareness",
+     "alphabet"
     ],
-    "keyline": "Restaurar fotos antigas",
+    "keyline": "Kids Phonics",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "79f92fe5ad5fa9d4",
+     "board": "7457ec6403e84c02",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "Nitidez salva fotos tremidas\nMuito escura? Pouca luz ilumina\nRestaurar fotos antigas\nUnblurry Pro: Foto Nítida\nPesquise “corrigir foto borrada” na App Store\nTambém no Google Play\n\n#Qualidade #Aumentar #Imagem #Desembaçar #UnblurryPro\n\nBaixar na App Store: https://apps.apple.com/br/app/id6782275018?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.unblurry.app&referrer=utm_source%3Dsocial%26utm_campaign%3Dunblurry",
-     "link": "https://apps.apple.com/br/app/id6782275018?pt=118326163&ct=social&mt=8"
+     "description": "26 letter friends to collect\nTrace on screen, then print a worksheet\nKids Phonics\nLumi Letters Pro: ABC Phonics\nSearch “Lumi Letters Pro” on the App Store\nAlso on Google Play\n\n#KidsPhonics #Short #Vowel #Kids #LumiLettersPro\n\nGet it on the App Store: https://apps.apple.com/us/app/id6778491147?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiLetters&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiletterspro",
+     "link": "https://apps.apple.com/us/app/id6778491147?pt=118326163&ct=social&mt=8"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "utility/photo/snapportlite/tw_passport/ja",
+    "locale": "ja",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/utility-cards/card-20261104.jpg",
+    "caption": "今日の証明写真サイズ：台湾のパスポート\n35 × 45 mm\n頭の長さ（あご〜頭頂）32–36 mm\n白い背景\n規定は変わることがあります。申請前に公式情報をご確認ください\n\nSnapport Lite: 自宅で証明写真、35種類のサイズ\nApp Store・Google Playで「Snapport Lite」を検索\n\n#自宅で証明写真 #就活写真 #加工 #パスポート用写真 #履歴書",
+    "title": "今日の証明写真サイズ：台湾のパスポート",
+    "alt": "Snapport Lite — 今日の証明写真サイズ：台湾のパスポート — 35 × 45 mm — 頭の長さ（あご〜頭頂）32–36 mm — 顔写真をぴったりのサイズに",
+    "name": "Snapport Lite",
+    "hook": "今日の証明写真サイズ：台湾のパスポート",
+    "tags": [
+     "#自宅で証明写真",
+     "#就活写真",
+     "#加工",
+     "#パスポート用写真",
+     "#履歴書"
+    ],
+    "button": "App Storeで入手",
+    "store": "https://apps.apple.com/jp/app/id6792856304?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.SnapportLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dsnapportlite",
+    "pinterest": {
+     "description": "今日の証明写真サイズ：台湾のパスポート\n35 × 45 mm\n頭の長さ（あご〜頭頂）32–36 mm\n白い背景\n規定は変わることがあります。申請前に公式情報をご確認ください\n\nSnapport Lite: 自宅で証明写真、35種類のサイズ\nApp Store・Google Playで「Snapport Lite」を検索\n\n#自宅で証明写真 #就活写真 #加工 #パスポート用写真 #履歴書\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6792856304?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.SnapportLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dsnapportlite",
+     "link": "https://apps.apple.com/jp/app/id6792856304?pt=118326163&ct=social&mt=8"
+    }
    },
    {
     "kind": "card",
@@ -4562,34 +4628,6 @@
     "pinterest": {
      "description": "When will battery health hit 80%?\n\nA health score, and what shapes it\n✓ Max capacity trend and cycle count\n✓ A clear report for service or resale\n\nSearch “BattAI Battery Health” on the App Store\n\n#BatteryHealthScore #MaximumCapacity #Cycles #ChargeCare #ChargeRange\n\nGet it on the App Store: https://apps.apple.com/us/app/id6802423998?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI&referrer=utm_source%3Dsocial%26utm_campaign%3Dbattai",
      "link": "https://apps.apple.com/us/app/id6802423998?pt=118326163&ct=social&mt=8"
-    }
-   },
-   {
-    "kind": "card",
-    "key": "carousel/battai-ja-pain-20261022",
-    "locale": "ja",
-    "app": "battai",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/battai-ja-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/battai-ja-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/battai-ja-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/battai-ja-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/battai-ja-pain-20261022/04.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/battai-ja-pain-20261022/05.jpg"
-    ],
-    "caption": "バッテリー最大容量 いつ80%を切る？\n\n状態スコアと その要因まで\n✓ 最大容量の推移と サイクル数\n✓ 修理や売却に使える 電池レポート\n\nApp Store で「BattAI」を検索",
-    "title": "バッテリー最大容量 いつ80%を切る？",
-    "alt": "バッテリー最大容量 いつ80%を切る？ | 状態スコアと その要因まで | 最大容量の推移と サイクル数 | 修理や売却に使える 電池レポート | BattAI: バッテリー状態スコア / ルール、情報源、限界を明確に / App Store で「BattAI」を検索",
-    "name": "BattAI: バッテリー状態スコア",
-    "hook": "バッテリー最大容量 いつ80%を切る？",
-    "tags": [],
-    "button": "App Storeで入手",
-    "store": "https://apps.apple.com/jp/app/id6802423998?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.BattAI&referrer=utm_source%3Dsocial%26utm_campaign%3Dbattai",
-    "pinterest": {
-     "description": "バッテリー最大容量 いつ80%を切る？\n\n状態スコアと その要因まで\n✓ 最大容量の推移と サイクル数\n✓ 修理や売却に使える 電池レポート\n\nApp Store で「BattAI」を検索\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6802423998?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI&referrer=utm_source%3Dsocial%26utm_campaign%3Dbattai",
-     "link": "https://apps.apple.com/jp/app/id6802423998?pt=118326163&ct=social&mt=8"
     }
    },
    {
@@ -7296,49 +7334,49 @@
    },
    {
     "kind": "clip",
-    "key": "unblurry_b/pt-BR",
-    "locale": "pt-BR",
-    "app": "unblurry_b",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/44jigf.mp4",
-    "hook": "Nitidez salva fotos tremidas",
-    "name": "Unblurry Pro: Foto Nítida",
-    "title": "Nitidez salva fotos tremidas | Restaurar fotos antigas | Unblurry Pro",
+    "key": "lumiletterspro/en",
+    "locale": "en",
+    "app": "lumiletterspro",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/jks7u7.mp4",
+    "hook": "26 letter friends to collect",
+    "name": "Lumi Letters Pro: ABC Phonics",
+    "title": "26 letter friends to collect | Kids Phonics | Lumi Letters Pro",
     "tags": [
-     "#Qualidade",
-     "#Aumentar",
-     "#Imagem",
-     "#Desembaçar",
-     "#Nitidez",
-     "#UnblurryPro"
+     "#KidsPhonics",
+     "#Short",
+     "#Vowel",
+     "#Kids",
+     "#Phonemic",
+     "#LumiLettersPro"
     ],
-    "caption": "Nitidez salva fotos tremidas\nMuito escura? Pouca luz ilumina\nRestaurar fotos antigas\nUnblurry Pro: Foto Nítida\nPesquise “corrigir foto borrada” na App Store\nTambém no Google Play\n\n#Qualidade #Aumentar #Imagem #Desembaçar #UnblurryPro",
-    "button": "Baixar na App Store",
-    "variant": "b",
-    "alt": "Unblurry Pro: Foto Nítida — Nitidez salva fotos tremidas — Muito escura? Pouca luz ilumina — Restaurar fotos antigas",
-    "store": "https://apps.apple.com/br/app/id6782275018?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.unblurry.app&referrer=utm_source%3Dsocial%26utm_campaign%3Dunblurry",
+    "caption": "26 letter friends to collect\nTrace on screen, then print a worksheet\nKids Phonics\nLumi Letters Pro: ABC Phonics\nSearch “Lumi Letters Pro” on the App Store\nAlso on Google Play\n\n#KidsPhonics #Short #Vowel #Kids #LumiLettersPro",
+    "button": "Get it on the App Store",
+    "variant": "c",
+    "alt": "Lumi Letters Pro: ABC Phonics — 26 letter friends to collect — Trace on screen, then print a worksheet — Kids Phonics",
+    "store": "https://apps.apple.com/us/app/id6778491147?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiLetters&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiletterspro",
     "review": {
-     "label": "Já usa este app? Avalie ou escreva uma resenha na App Store",
-     "url": "https://apps.apple.com/app/id6782275018?action=write-review"
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6778491147?action=write-review"
     },
     "keywords": [
-     "borrada",
-     "melhorar",
-     "photo enhancer",
-     "qualidade",
-     "aumentar",
-     "imagem"
+     "short",
+     "vowel",
+     "kids",
+     "phonemic",
+     "awareness",
+     "alphabet"
     ],
-    "keyline": "Restaurar fotos antigas",
+    "keyline": "Kids Phonics",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "79f92fe5ad5fa9d4",
+     "board": "7457ec6403e84c02",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "Nitidez salva fotos tremidas\nMuito escura? Pouca luz ilumina\nRestaurar fotos antigas\nUnblurry Pro: Foto Nítida\nPesquise “corrigir foto borrada” na App Store\nTambém no Google Play\n\n#Qualidade #Aumentar #Imagem #Desembaçar #UnblurryPro\n\nBaixar na App Store: https://apps.apple.com/br/app/id6782275018?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.unblurry.app&referrer=utm_source%3Dsocial%26utm_campaign%3Dunblurry"
+     "caption": "26 letter friends to collect\nTrace on screen, then print a worksheet\nKids Phonics\nLumi Letters Pro: ABC Phonics\nSearch “Lumi Letters Pro” on the App Store\nAlso on Google Play\n\n#KidsPhonics #Short #Vowel #Kids #LumiLettersPro\n\nGet it on the App Store: https://apps.apple.com/us/app/id6778491147?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiLetters&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiletterspro"
     },
     "slot": 15
    }
@@ -7663,231 +7701,6 @@
    },
    {
     "kind": "clip",
-    "key": "gmoney/en",
-    "locale": "en",
-    "app": "gmoney",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/txsq79.mp4",
-    "hook": "See what's left today",
-    "name": "G+Money: Spending & Budget",
-    "title": "See what's left today | Spending & Budget | G+Money",
-    "tags": [
-     "#SpendingBudget",
-     "#Multicurrency",
-     "#Export",
-     "#Savings",
-     "#Finance",
-     "#GMoney"
-    ],
-    "caption": "See what's left today\nSee where it went, by category\nG+Money: Spending & Budget\nSearch “G+Money” on the App Store\nAlso on Google Play\n\n#SpendingBudget #Multicurrency #GMoney",
-    "button": "Get it on the App Store",
-    "variant": "c",
-    "alt": "G+Money: Spending & Budget — See what's left today — See where it went, by category",
-    "store": "https://apps.apple.com/us/app/id6755782939?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
-    "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
-    },
-    "keywords": [
-     "multicurrency",
-     "export",
-     "savings",
-     "finance",
-     "wallet",
-     "bookkeeping"
-    ],
-    "keyline": "Spending & Budget",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "987a384c8c1d4d89",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "boost_rank": 3
-   },
-   {
-    "kind": "clip",
-    "key": "gmoney/zh-Hant",
-    "locale": "zh-Hant",
-    "app": "gmoney",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/ve63hr.mp4",
-    "hook": "按分類 看見錢花去哪",
-    "name": "G+Money：日常記帳·預算·匯率",
-    "title": "按分類 看見錢花去哪 | 多幣別・離線記帳・分類報表 | G+Money 記帳",
-    "tags": [
-     "#日常記帳預算匯率",
-     "#多國貨幣",
-     "#本機儲存",
-     "#換匯",
-     "#出差",
-     "#GMoney記帳"
-    ],
-    "caption": "按分類 看見錢花去哪\n換算＋記帳 離線也能用\n多幣別・離線記帳・分類報表\nG+Money：日常記帳·預算·匯率\n在 App Store 搜尋「G+Money 記帳」\nAndroid 版在 Google Play\n\n#日常記帳預算匯率 #多國貨幣 #GMoney記帳",
-    "button": "在 App Store 下載",
-    "variant": "b",
-    "alt": "G+Money：日常記帳·預算·匯率 — 按分類 看見錢花去哪 — 換算＋記帳 離線也能用 — 多幣別・離線記帳・分類報表",
-    "store": "https://apps.apple.com/tw/app/id6755782939?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
-    "review": {
-     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
-     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
-    },
-    "keywords": [
-     "多國貨幣",
-     "本機儲存",
-     "換匯",
-     "出差",
-     "收支",
-     "記帳日記"
-    ],
-    "keyline": "多幣別・離線記帳・分類報表",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "987a384c8c1d4d89",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "boost_rank": 3
-   },
-   {
-    "kind": "clip",
-    "key": "gmoney/ja",
-    "locale": "ja",
-    "app": "gmoney",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/lk7ile.mp4",
-    "hook": "カテゴリ別に 使い道が見える",
-    "name": "G+Money：家計簿・予算・為替",
-    "title": "カテゴリ別に 使い道が見える | 支出管理・お金管理・出費記録 | G+Money 家計簿",
-    "tags": [
-     "#家計簿予算為替",
-     "#お小遣い帳",
-     "#通貨換算",
-     "#貯金",
-     "#支出記録",
-     "#GMoney家計簿"
-    ],
-    "caption": "カテゴリ別に 使い道が見える\n換算も記録も オフラインでOK\n支出管理・お金管理・出費記録\nG+Money：家計簿・予算・為替\nApp Storeで「G+Money 家計簿」を検索\nAndroidはGoogle Playで\n\n#家計簿予算為替 #お小遣い帳 #GMoney家計簿",
-    "button": "App Storeで入手",
-    "variant": "b",
-    "alt": "G+Money：家計簿・予算・為替 — カテゴリ別に 使い道が見える — 換算も記録も オフラインでOK — 支出管理・お金管理・出費記録",
-    "store": "https://apps.apple.com/jp/app/id6755782939?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
-    "review": {
-     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
-     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
-    },
-    "keywords": [
-     "お小遣い帳",
-     "通貨換算",
-     "貯金",
-     "支出記録",
-     "レート計算",
-     "家計管理"
-    ],
-    "keyline": "支出管理・お金管理・出費記録",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "987a384c8c1d4d89",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "boost_rank": 3
-   },
-   {
-    "kind": "clip",
-    "key": "gmoney/ko",
-    "locale": "ko",
-    "app": "gmoney",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/nck8iy.mp4",
-    "hook": "분류별로 어디에 썼는지 한눈에",
-    "name": "G+Money：가계부·예산·환율",
-    "title": "분류별로 어디에 썼는지 한눈에 | 생활비·소비기록·지출관리 | G+Money 가계부",
-    "tags": [
-     "#가계부예산환율",
-     "#용돈기입장",
-     "#환율계산기",
-     "#통화변환",
-     "#가계부앱",
-     "#GMoney가계부"
-    ],
-    "caption": "분류별로 어디에 썼는지 한눈에\n환율 계산·기록 오프라인에서도\n생활비·소비기록·지출관리\nG+Money：가계부·예산·환율\nApp Store에서 'G+Money 가계부' 검색\nAndroid는 Google Play에서\n\n#가계부예산환율 #용돈기입장 #GMoney가계부",
-    "button": "App Store에서 받기",
-    "variant": "b",
-    "alt": "G+Money：가계부·예산·환율 — 분류별로 어디에 썼는지 한눈에 — 환율 계산·기록 오프라인에서도 — 생활비·소비기록·지출관리",
-    "store": "https://apps.apple.com/kr/app/id6755782939?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
-    "review": {
-     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
-     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
-    },
-    "keywords": [
-     "용돈기입장",
-     "환율계산기",
-     "통화변환",
-     "가계부앱",
-     "돈관리",
-     "절약"
-    ],
-    "keyline": "생활비·소비기록·지출관리",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "987a384c8c1d4d89",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "boost_rank": 3
-   },
-   {
-    "kind": "clip",
-    "key": "gmoney/id",
-    "locale": "id",
-    "app": "gmoney",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/jgixdt.mp4",
-    "hook": "Lihat ke mana uangmu, per kategori",
-    "name": "G+Money: Catat & atur anggaran",
-    "title": "Lihat ke mana uangmu, per kategori | Catat & atur anggaran | G+Money",
-    "tags": [
-     "#CatatAturAnggaran",
-     "#Catatan",
-     "#Keuangan",
-     "#Konverter",
-     "#Mata",
-     "#GMoney"
-    ],
-    "caption": "Lihat ke mana uangmu, per kategori\nKonversi & catat, tanpa sinyal\nG+Money: Catat & atur anggaran\nCari “G+Money” di App Store\nJuga ada di Google Play\n\n#CatatAturAnggaran #Catatan #GMoney",
-    "button": "Unduh di App Store",
-    "variant": "b",
-    "alt": "G+Money: Catat & atur anggaran — Lihat ke mana uangmu, per kategori — Konversi & catat, tanpa sinyal",
-    "store": "https://apps.apple.com/id/app/id6755782939?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
-    "review": {
-     "label": "Sudah memakai aplikasi ini? Beri nilai atau ulasan di App Store",
-     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
-    },
-    "keywords": [
-     "catatan",
-     "keuangan",
-     "konverter",
-     "mata",
-     "uang",
-     "pencatat"
-    ],
-    "keyline": "Catat & atur anggaran",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "987a384c8c1d4d89",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "boost_rank": 3
-   },
-   {
-    "kind": "clip",
     "key": "wifiaidlite/en",
     "locale": "en",
     "app": "wifiaidlite",
@@ -7929,7 +7742,7 @@
      "real_recording": false,
      "rules": "2026-10-18"
     },
-    "boost_rank": 4
+    "boost_rank": 3
    },
    {
     "kind": "clip",
@@ -7974,7 +7787,7 @@
      "real_recording": false,
      "rules": "2026-10-18"
     },
-    "boost_rank": 4
+    "boost_rank": 3
    },
    {
     "kind": "clip",
@@ -8019,7 +7832,7 @@
      "real_recording": false,
      "rules": "2026-10-18"
     },
-    "boost_rank": 4
+    "boost_rank": 3
    },
    {
     "kind": "clip",
@@ -8064,7 +7877,7 @@
      "real_recording": false,
      "rules": "2026-10-18"
     },
-    "boost_rank": 4
+    "boost_rank": 3
    },
    {
     "kind": "clip",
@@ -8106,6 +7919,231 @@
      "store_claims_ok": true,
      "screen_text_ok": true,
      "board": "fed6529bb6230b02",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "boost_rank": 3
+   },
+   {
+    "kind": "clip",
+    "key": "gmoney/en",
+    "locale": "en",
+    "app": "gmoney",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/txsq79.mp4",
+    "hook": "See what's left today",
+    "name": "G+Money: Spending & Budget",
+    "title": "See what's left today | Spending & Budget | G+Money",
+    "tags": [
+     "#SpendingBudget",
+     "#Multicurrency",
+     "#Export",
+     "#Savings",
+     "#Finance",
+     "#GMoney"
+    ],
+    "caption": "See what's left today\nSee where it went, by category\nG+Money: Spending & Budget\nSearch “G+Money” on the App Store\nAlso on Google Play\n\n#SpendingBudget #Multicurrency #GMoney",
+    "button": "Get it on the App Store",
+    "variant": "c",
+    "alt": "G+Money: Spending & Budget — See what's left today — See where it went, by category",
+    "store": "https://apps.apple.com/us/app/id6755782939?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
+    "review": {
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
+    },
+    "keywords": [
+     "multicurrency",
+     "export",
+     "savings",
+     "finance",
+     "wallet",
+     "bookkeeping"
+    ],
+    "keyline": "Spending & Budget",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "987a384c8c1d4d89",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "boost_rank": 4
+   },
+   {
+    "kind": "clip",
+    "key": "gmoney/zh-Hant",
+    "locale": "zh-Hant",
+    "app": "gmoney",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/ve63hr.mp4",
+    "hook": "按分類 看見錢花去哪",
+    "name": "G+Money：日常記帳·預算·匯率",
+    "title": "按分類 看見錢花去哪 | 多幣別・離線記帳・分類報表 | G+Money 記帳",
+    "tags": [
+     "#日常記帳預算匯率",
+     "#多國貨幣",
+     "#本機儲存",
+     "#換匯",
+     "#出差",
+     "#GMoney記帳"
+    ],
+    "caption": "按分類 看見錢花去哪\n換算＋記帳 離線也能用\n多幣別・離線記帳・分類報表\nG+Money：日常記帳·預算·匯率\n在 App Store 搜尋「G+Money 記帳」\nAndroid 版在 Google Play\n\n#日常記帳預算匯率 #多國貨幣 #GMoney記帳",
+    "button": "在 App Store 下載",
+    "variant": "b",
+    "alt": "G+Money：日常記帳·預算·匯率 — 按分類 看見錢花去哪 — 換算＋記帳 離線也能用 — 多幣別・離線記帳・分類報表",
+    "store": "https://apps.apple.com/tw/app/id6755782939?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
+    "review": {
+     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
+     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
+    },
+    "keywords": [
+     "多國貨幣",
+     "本機儲存",
+     "換匯",
+     "出差",
+     "收支",
+     "記帳日記"
+    ],
+    "keyline": "多幣別・離線記帳・分類報表",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "987a384c8c1d4d89",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "boost_rank": 4
+   },
+   {
+    "kind": "clip",
+    "key": "gmoney/ja",
+    "locale": "ja",
+    "app": "gmoney",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/lk7ile.mp4",
+    "hook": "カテゴリ別に 使い道が見える",
+    "name": "G+Money：家計簿・予算・為替",
+    "title": "カテゴリ別に 使い道が見える | 支出管理・お金管理・出費記録 | G+Money 家計簿",
+    "tags": [
+     "#家計簿予算為替",
+     "#お小遣い帳",
+     "#通貨換算",
+     "#貯金",
+     "#支出記録",
+     "#GMoney家計簿"
+    ],
+    "caption": "カテゴリ別に 使い道が見える\n換算も記録も オフラインでOK\n支出管理・お金管理・出費記録\nG+Money：家計簿・予算・為替\nApp Storeで「G+Money 家計簿」を検索\nAndroidはGoogle Playで\n\n#家計簿予算為替 #お小遣い帳 #GMoney家計簿",
+    "button": "App Storeで入手",
+    "variant": "b",
+    "alt": "G+Money：家計簿・予算・為替 — カテゴリ別に 使い道が見える — 換算も記録も オフラインでOK — 支出管理・お金管理・出費記録",
+    "store": "https://apps.apple.com/jp/app/id6755782939?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
+    "review": {
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
+    },
+    "keywords": [
+     "お小遣い帳",
+     "通貨換算",
+     "貯金",
+     "支出記録",
+     "レート計算",
+     "家計管理"
+    ],
+    "keyline": "支出管理・お金管理・出費記録",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "987a384c8c1d4d89",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "boost_rank": 4
+   },
+   {
+    "kind": "clip",
+    "key": "gmoney/ko",
+    "locale": "ko",
+    "app": "gmoney",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/nck8iy.mp4",
+    "hook": "분류별로 어디에 썼는지 한눈에",
+    "name": "G+Money：가계부·예산·환율",
+    "title": "분류별로 어디에 썼는지 한눈에 | 생활비·소비기록·지출관리 | G+Money 가계부",
+    "tags": [
+     "#가계부예산환율",
+     "#용돈기입장",
+     "#환율계산기",
+     "#통화변환",
+     "#가계부앱",
+     "#GMoney가계부"
+    ],
+    "caption": "분류별로 어디에 썼는지 한눈에\n환율 계산·기록 오프라인에서도\n생활비·소비기록·지출관리\nG+Money：가계부·예산·환율\nApp Store에서 'G+Money 가계부' 검색\nAndroid는 Google Play에서\n\n#가계부예산환율 #용돈기입장 #GMoney가계부",
+    "button": "App Store에서 받기",
+    "variant": "b",
+    "alt": "G+Money：가계부·예산·환율 — 분류별로 어디에 썼는지 한눈에 — 환율 계산·기록 오프라인에서도 — 생활비·소비기록·지출관리",
+    "store": "https://apps.apple.com/kr/app/id6755782939?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
+    "review": {
+     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
+     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
+    },
+    "keywords": [
+     "용돈기입장",
+     "환율계산기",
+     "통화변환",
+     "가계부앱",
+     "돈관리",
+     "절약"
+    ],
+    "keyline": "생활비·소비기록·지출관리",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "987a384c8c1d4d89",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "boost_rank": 4
+   },
+   {
+    "kind": "clip",
+    "key": "gmoney/id",
+    "locale": "id",
+    "app": "gmoney",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/jgixdt.mp4",
+    "hook": "Lihat ke mana uangmu, per kategori",
+    "name": "G+Money: Catat & atur anggaran",
+    "title": "Lihat ke mana uangmu, per kategori | Catat & atur anggaran | G+Money",
+    "tags": [
+     "#CatatAturAnggaran",
+     "#Catatan",
+     "#Keuangan",
+     "#Konverter",
+     "#Mata",
+     "#GMoney"
+    ],
+    "caption": "Lihat ke mana uangmu, per kategori\nKonversi & catat, tanpa sinyal\nG+Money: Catat & atur anggaran\nCari “G+Money” di App Store\nJuga ada di Google Play\n\n#CatatAturAnggaran #Catatan #GMoney",
+    "button": "Unduh di App Store",
+    "variant": "b",
+    "alt": "G+Money: Catat & atur anggaran — Lihat ke mana uangmu, per kategori — Konversi & catat, tanpa sinyal",
+    "store": "https://apps.apple.com/id/app/id6755782939?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
+    "review": {
+     "label": "Sudah memakai aplikasi ini? Beri nilai atau ulasan di App Store",
+     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
+    },
+    "keywords": [
+     "catatan",
+     "keuangan",
+     "konverter",
+     "mata",
+     "uang",
+     "pencatat"
+    ],
+    "keyline": "Catat & atur anggaran",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "987a384c8c1d4d89",
      "real_recording": false,
      "rules": "2026-10-18"
     },
@@ -23222,6 +23260,302 @@
    },
    {
     "kind": "clip",
+    "key": "wifiaidlite/en",
+    "locale": "en",
+    "app": "wifiaidlite",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/hj5ucn.mp4",
+    "hook": "Plus what to do next",
+    "name": "WiFi Aid Lite: Network Check",
+    "title": "Plus what to do next | Internet Down? Find the Cause | WiFi Aid Lite",
+    "tags": [
+     "#NetworkCheck",
+     "#Ping",
+     "#Slow",
+     "#Outage",
+     "#Troubleshoot",
+     "#WiFiAidLite"
+    ],
+    "caption": "Plus what to do next\nWi-Fi, DNS or internet?\nInternet Down? Find the Cause\nWiFi Aid Lite: Network Check\nSearch “WiFi Aid Lite” on the App Store\nAlso on Google Play\n\n#NetworkCheck #Ping #Slow #Outage #WiFiAidLite",
+    "button": "Get it on the App Store",
+    "variant": "c",
+    "alt": "WiFi Aid Lite: Network Check — Plus what to do next — Wi-Fi, DNS or internet? — Internet Down? Find the Cause",
+    "store": "https://apps.apple.com/us/app/id6793414462?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.WiFiAidLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaidlite",
+    "review": {
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6793414462?action=write-review"
+    },
+    "keywords": [
+     "ping",
+     "slow",
+     "outage",
+     "troubleshoot",
+     "connection",
+     "test"
+    ],
+    "keyline": "Internet Down? Find the Cause",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "fed6529bb6230b02",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "Plus what to do next | WiFi Aid Lite #Shorts",
+     "description": "Plus what to do next\nWi-Fi, DNS or internet?\nInternet Down? Find the Cause\n\nWiFi Aid Lite: Network Check\nApp Store: https://apps.apple.com/us/app/id6793414462?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.WiFiAidLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaidlite\nAlready using this app? Rate or review it on the App Store\nhttps://apps.apple.com/app/id6793414462?action=write-review\n\nping · slow · outage · troubleshoot · connection · test\n\n#Shorts #NetworkCheck #WiFiAidLite",
+     "tags": [
+      "ping",
+      "slow",
+      "outage",
+      "troubleshoot",
+      "connection",
+      "test",
+      "NetworkCheck",
+      "WiFiAidLite",
+      "WiFi Aid Lite"
+     ]
+    },
+    "boost_rank": 3
+   },
+   {
+    "kind": "clip",
+    "key": "wifiaidlite/zh-Hant",
+    "locale": "zh-Hant",
+    "app": "wifiaidlite",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/r89l75.mp4",
+    "hook": "Wi-Fi、DNS 還是網際網路？",
+    "name": "WiFi Aid Lite",
+    "title": "Wi-Fi、DNS 還是網際網路？ | 斷線 · 連不上 · 網路慢 | WiFi Aid Lite",
+    "tags": [
+     "#斷線",
+     "#連不上",
+     "#網路慢",
+     "#網路卡卡",
+     "#不穩",
+     "#WiFiAidLite"
+    ],
+    "caption": "Wi-Fi、DNS 還是網際網路？\n還是網站本身？\n斷線 · 連不上 · 網路慢\n在 App Store 搜尋「WiFi Aid Lite」\nAndroid 版在 Google Play\n\n#斷線 #連不上 #網路慢 #網路卡卡 #WiFiAidLite",
+    "button": "在 App Store 下載",
+    "variant": "b",
+    "alt": "WiFi Aid Lite — Wi-Fi、DNS 還是網際網路？ — 還是網站本身？ — 斷線 · 連不上 · 網路慢",
+    "store": "https://apps.apple.com/tw/app/id6793414462?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.WiFiAidLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaidlite",
+    "review": {
+     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
+     "url": "https://apps.apple.com/app/id6793414462?action=write-review"
+    },
+    "keywords": [
+     "斷線",
+     "連不上",
+     "網路慢",
+     "網路卡卡",
+     "不穩",
+     "測試"
+    ],
+    "keyline": "斷線 · 連不上 · 網路慢",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "fed6529bb6230b02",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "Wi-Fi、DNS 還是網際網路？ | WiFi Aid Lite #Shorts",
+     "description": "Wi-Fi、DNS 還是網際網路？\n還是網站本身？\n斷線 · 連不上 · 網路慢\n\nWiFi Aid Lite\nApp Store: https://apps.apple.com/tw/app/id6793414462?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.WiFiAidLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaidlite\n已經在用這款 App？可以到 App Store 評分或撰寫評論\nhttps://apps.apple.com/app/id6793414462?action=write-review\n\n斷線 · 連不上 · 網路慢 · 網路卡卡 · 不穩 · 測試\n\n#Shorts #斷線 #WiFiAidLite",
+     "tags": [
+      "斷線",
+      "連不上",
+      "網路慢",
+      "網路卡卡",
+      "不穩",
+      "測試",
+      "WiFiAidLite",
+      "WiFi Aid Lite"
+     ]
+    },
+    "boost_rank": 3
+   },
+   {
+    "kind": "clip",
+    "key": "wifiaidlite/ja",
+    "locale": "ja",
+    "app": "wifiaidlite",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/isw2y9.mp4",
+    "hook": "Wi-Fi？DNS？それとも回線？",
+    "name": "WiFi Aid Lite",
+    "title": "Wi-Fi？DNS？それとも回線？ | ネットがつながらない原因を特定 | WiFi Aid Lite",
+    "tags": [
+     "#繋がらない",
+     "#インターネット",
+     "#接続",
+     "#遅い",
+     "#重い",
+     "#WiFiAidLite"
+    ],
+    "caption": "Wi-Fi？DNS？それとも回線？\nサイト側の問題？\nネットがつながらない原因を特定\nWiFi Aid Lite\nApp Storeで「wifi つながらない」を検索\nAndroidはGoogle Playで\n\n#繋がらない #インターネット #接続 #遅い #WiFiAidLite",
+    "button": "App Storeで入手",
+    "variant": "b",
+    "alt": "WiFi Aid Lite — Wi-Fi？DNS？それとも回線？ — サイト側の問題？ — ネットがつながらない原因を特定",
+    "store": "https://apps.apple.com/jp/app/id6793414462?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.WiFiAidLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaidlite",
+    "review": {
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6793414462?action=write-review"
+    },
+    "keywords": [
+     "繋がらない",
+     "インターネット",
+     "接続",
+     "遅い",
+     "重い",
+     "不安定"
+    ],
+    "keyline": "ネットがつながらない原因を特定",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "fed6529bb6230b02",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "Wi-Fi？DNS？それとも回線？ | WiFi Aid Lite #Shorts",
+     "description": "Wi-Fi？DNS？それとも回線？\nサイト側の問題？\nネットがつながらない原因を特定\n\nWiFi Aid Lite\nApp Store: https://apps.apple.com/jp/app/id6793414462?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.WiFiAidLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaidlite\nこのアプリをお使いですか？App Store で評価・レビューできます\nhttps://apps.apple.com/app/id6793414462?action=write-review\n\n繋がらない · インターネット · 接続 · 遅い · 重い · 不安定\n\n#Shorts #繋がらない #WiFiAidLite",
+     "tags": [
+      "繋がらない",
+      "インターネット",
+      "接続",
+      "遅い",
+      "重い",
+      "不安定",
+      "WiFiAidLite",
+      "WiFi Aid Lite"
+     ]
+    },
+    "boost_rank": 3
+   },
+   {
+    "kind": "clip",
+    "key": "wifiaidlite/ko",
+    "locale": "ko",
+    "app": "wifiaidlite",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/jypody.mp4",
+    "hook": "와이파이? DNS? 아니면 인터넷?",
+    "name": "WiFi Aid Lite",
+    "title": "와이파이? DNS? 아니면 인터넷? | 인터넷 안될 때 원인 찾기 | WiFi Aid Lite",
+    "tags": [
+     "#와이파이",
+     "#인터넷안됨",
+     "#와이파이안됨",
+     "#인터넷끊김",
+     "#끊김",
+     "#WiFiAidLite"
+    ],
+    "caption": "와이파이? DNS? 아니면 인터넷?\n아니면 그 사이트만?\n인터넷 안될 때 원인 찾기\nWiFi Aid Lite\nApp Store에서 '와이파이 인터넷 안됨' 검색\nAndroid는 Google Play에서\n\n#와이파이 #인터넷안됨 #와이파이안됨 #인터넷끊김 #WiFiAidLite",
+    "button": "App Store에서 받기",
+    "variant": "b",
+    "alt": "WiFi Aid Lite — 와이파이? DNS? 아니면 인터넷? — 아니면 그 사이트만? — 인터넷 안될 때 원인 찾기",
+    "store": "https://apps.apple.com/kr/app/id6793414462?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.WiFiAidLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaidlite",
+    "review": {
+     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
+     "url": "https://apps.apple.com/app/id6793414462?action=write-review"
+    },
+    "keywords": [
+     "와이파이",
+     "인터넷안됨",
+     "와이파이안됨",
+     "인터넷끊김",
+     "끊김",
+     "느림"
+    ],
+    "keyline": "인터넷 안될 때 원인 찾기",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "fed6529bb6230b02",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "와이파이? DNS? 아니면 인터넷? | WiFi Aid Lite #Shorts",
+     "description": "와이파이? DNS? 아니면 인터넷?\n아니면 그 사이트만?\n인터넷 안될 때 원인 찾기\n\nWiFi Aid Lite\nApp Store: https://apps.apple.com/kr/app/id6793414462?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.WiFiAidLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaidlite\n이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다\nhttps://apps.apple.com/app/id6793414462?action=write-review\n\n와이파이 · 인터넷안됨 · 와이파이안됨 · 인터넷끊김 · 끊김 · 느림\n\n#Shorts #와이파이 #WiFiAidLite",
+     "tags": [
+      "와이파이",
+      "인터넷안됨",
+      "와이파이안됨",
+      "인터넷끊김",
+      "끊김",
+      "느림",
+      "WiFiAidLite",
+      "WiFi Aid Lite"
+     ]
+    },
+    "boost_rank": 3
+   },
+   {
+    "kind": "clip",
+    "key": "wifiaidlite/id",
+    "locale": "id",
+    "app": "wifiaidlite",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/llspwc.mp4",
+    "hook": "WiFi, DNS, atau internet?",
+    "name": "WiFi Aid Lite",
+    "title": "WiFi, DNS, atau internet? | Internet mati? Cek penyebab | WiFi Aid Lite",
+    "tags": [
+     "#Jaringan",
+     "#Koneksi",
+     "#Lemot",
+     "#Lambat",
+     "#Gangguan",
+     "#WiFiAidLite"
+    ],
+    "caption": "WiFi, DNS, atau internet?\nAtau cuma satu situs?\nInternet mati? Cek penyebab\nCari “WiFi Aid Lite” di App Store\nJuga ada di Google Play\n\n#Jaringan #Koneksi #Lemot #Lambat #WiFiAidLite",
+    "button": "Unduh di App Store",
+    "variant": "b",
+    "alt": "WiFi Aid Lite — WiFi, DNS, atau internet? — Atau cuma satu situs? — Internet mati? Cek penyebab",
+    "store": "https://apps.apple.com/id/app/id6793414462?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.WiFiAidLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaidlite",
+    "review": {
+     "label": "Sudah memakai aplikasi ini? Beri nilai atau ulasan di App Store",
+     "url": "https://apps.apple.com/app/id6793414462?action=write-review"
+    },
+    "keywords": [
+     "jaringan",
+     "koneksi",
+     "lemot",
+     "lambat",
+     "gangguan",
+     "putus"
+    ],
+    "keyline": "Internet mati? Cek penyebab",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "fed6529bb6230b02",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "WiFi, DNS, atau internet? | WiFi Aid Lite #Shorts",
+     "description": "WiFi, DNS, atau internet?\nAtau cuma satu situs?\nInternet mati? Cek penyebab\n\nWiFi Aid Lite\nApp Store: https://apps.apple.com/id/app/id6793414462?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.WiFiAidLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaidlite\nSudah memakai aplikasi ini? Beri nilai atau ulasan di App Store\nhttps://apps.apple.com/app/id6793414462?action=write-review\n\njaringan · koneksi · lemot · lambat · gangguan · putus\n\n#Shorts #Jaringan #WiFiAidLite",
+     "tags": [
+      "jaringan",
+      "koneksi",
+      "lemot",
+      "lambat",
+      "gangguan",
+      "putus",
+      "WiFiAidLite",
+      "WiFi Aid Lite"
+     ]
+    },
+    "boost_rank": 3
+   },
+   {
+    "kind": "clip",
     "key": "gmoney/en",
     "locale": "en",
     "app": "gmoney",
@@ -23278,7 +23612,7 @@
       "G+Money"
      ]
     },
-    "boost_rank": 3
+    "boost_rank": 4
    },
    {
     "kind": "clip",
@@ -23338,7 +23672,7 @@
       "G+Money 記帳"
      ]
     },
-    "boost_rank": 3
+    "boost_rank": 4
    },
    {
     "kind": "clip",
@@ -23398,7 +23732,7 @@
       "G+Money 家計簿"
      ]
     },
-    "boost_rank": 3
+    "boost_rank": 4
    },
    {
     "kind": "clip",
@@ -23458,7 +23792,7 @@
       "G+Money 가계부"
      ]
     },
-    "boost_rank": 3
+    "boost_rank": 4
    },
    {
     "kind": "clip",
@@ -23516,302 +23850,6 @@
       "CatatAturAnggaran",
       "GMoney",
       "G+Money"
-     ]
-    },
-    "boost_rank": 3
-   },
-   {
-    "kind": "clip",
-    "key": "wifiaidlite/en",
-    "locale": "en",
-    "app": "wifiaidlite",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/hj5ucn.mp4",
-    "hook": "Plus what to do next",
-    "name": "WiFi Aid Lite: Network Check",
-    "title": "Plus what to do next | Internet Down? Find the Cause | WiFi Aid Lite",
-    "tags": [
-     "#NetworkCheck",
-     "#Ping",
-     "#Slow",
-     "#Outage",
-     "#Troubleshoot",
-     "#WiFiAidLite"
-    ],
-    "caption": "Plus what to do next\nWi-Fi, DNS or internet?\nInternet Down? Find the Cause\nWiFi Aid Lite: Network Check\nSearch “WiFi Aid Lite” on the App Store\nAlso on Google Play\n\n#NetworkCheck #Ping #Slow #Outage #WiFiAidLite",
-    "button": "Get it on the App Store",
-    "variant": "c",
-    "alt": "WiFi Aid Lite: Network Check — Plus what to do next — Wi-Fi, DNS or internet? — Internet Down? Find the Cause",
-    "store": "https://apps.apple.com/us/app/id6793414462?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.WiFiAidLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaidlite",
-    "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6793414462?action=write-review"
-    },
-    "keywords": [
-     "ping",
-     "slow",
-     "outage",
-     "troubleshoot",
-     "connection",
-     "test"
-    ],
-    "keyline": "Internet Down? Find the Cause",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "fed6529bb6230b02",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "youtube": {
-     "title": "Plus what to do next | WiFi Aid Lite #Shorts",
-     "description": "Plus what to do next\nWi-Fi, DNS or internet?\nInternet Down? Find the Cause\n\nWiFi Aid Lite: Network Check\nApp Store: https://apps.apple.com/us/app/id6793414462?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.WiFiAidLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaidlite\nAlready using this app? Rate or review it on the App Store\nhttps://apps.apple.com/app/id6793414462?action=write-review\n\nping · slow · outage · troubleshoot · connection · test\n\n#Shorts #NetworkCheck #WiFiAidLite",
-     "tags": [
-      "ping",
-      "slow",
-      "outage",
-      "troubleshoot",
-      "connection",
-      "test",
-      "NetworkCheck",
-      "WiFiAidLite",
-      "WiFi Aid Lite"
-     ]
-    },
-    "boost_rank": 4
-   },
-   {
-    "kind": "clip",
-    "key": "wifiaidlite/zh-Hant",
-    "locale": "zh-Hant",
-    "app": "wifiaidlite",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/r89l75.mp4",
-    "hook": "Wi-Fi、DNS 還是網際網路？",
-    "name": "WiFi Aid Lite",
-    "title": "Wi-Fi、DNS 還是網際網路？ | 斷線 · 連不上 · 網路慢 | WiFi Aid Lite",
-    "tags": [
-     "#斷線",
-     "#連不上",
-     "#網路慢",
-     "#網路卡卡",
-     "#不穩",
-     "#WiFiAidLite"
-    ],
-    "caption": "Wi-Fi、DNS 還是網際網路？\n還是網站本身？\n斷線 · 連不上 · 網路慢\n在 App Store 搜尋「WiFi Aid Lite」\nAndroid 版在 Google Play\n\n#斷線 #連不上 #網路慢 #網路卡卡 #WiFiAidLite",
-    "button": "在 App Store 下載",
-    "variant": "b",
-    "alt": "WiFi Aid Lite — Wi-Fi、DNS 還是網際網路？ — 還是網站本身？ — 斷線 · 連不上 · 網路慢",
-    "store": "https://apps.apple.com/tw/app/id6793414462?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.WiFiAidLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaidlite",
-    "review": {
-     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
-     "url": "https://apps.apple.com/app/id6793414462?action=write-review"
-    },
-    "keywords": [
-     "斷線",
-     "連不上",
-     "網路慢",
-     "網路卡卡",
-     "不穩",
-     "測試"
-    ],
-    "keyline": "斷線 · 連不上 · 網路慢",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "fed6529bb6230b02",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "youtube": {
-     "title": "Wi-Fi、DNS 還是網際網路？ | WiFi Aid Lite #Shorts",
-     "description": "Wi-Fi、DNS 還是網際網路？\n還是網站本身？\n斷線 · 連不上 · 網路慢\n\nWiFi Aid Lite\nApp Store: https://apps.apple.com/tw/app/id6793414462?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.WiFiAidLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaidlite\n已經在用這款 App？可以到 App Store 評分或撰寫評論\nhttps://apps.apple.com/app/id6793414462?action=write-review\n\n斷線 · 連不上 · 網路慢 · 網路卡卡 · 不穩 · 測試\n\n#Shorts #斷線 #WiFiAidLite",
-     "tags": [
-      "斷線",
-      "連不上",
-      "網路慢",
-      "網路卡卡",
-      "不穩",
-      "測試",
-      "WiFiAidLite",
-      "WiFi Aid Lite"
-     ]
-    },
-    "boost_rank": 4
-   },
-   {
-    "kind": "clip",
-    "key": "wifiaidlite/ja",
-    "locale": "ja",
-    "app": "wifiaidlite",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/isw2y9.mp4",
-    "hook": "Wi-Fi？DNS？それとも回線？",
-    "name": "WiFi Aid Lite",
-    "title": "Wi-Fi？DNS？それとも回線？ | ネットがつながらない原因を特定 | WiFi Aid Lite",
-    "tags": [
-     "#繋がらない",
-     "#インターネット",
-     "#接続",
-     "#遅い",
-     "#重い",
-     "#WiFiAidLite"
-    ],
-    "caption": "Wi-Fi？DNS？それとも回線？\nサイト側の問題？\nネットがつながらない原因を特定\nWiFi Aid Lite\nApp Storeで「wifi つながらない」を検索\nAndroidはGoogle Playで\n\n#繋がらない #インターネット #接続 #遅い #WiFiAidLite",
-    "button": "App Storeで入手",
-    "variant": "b",
-    "alt": "WiFi Aid Lite — Wi-Fi？DNS？それとも回線？ — サイト側の問題？ — ネットがつながらない原因を特定",
-    "store": "https://apps.apple.com/jp/app/id6793414462?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.WiFiAidLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaidlite",
-    "review": {
-     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
-     "url": "https://apps.apple.com/app/id6793414462?action=write-review"
-    },
-    "keywords": [
-     "繋がらない",
-     "インターネット",
-     "接続",
-     "遅い",
-     "重い",
-     "不安定"
-    ],
-    "keyline": "ネットがつながらない原因を特定",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "fed6529bb6230b02",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "youtube": {
-     "title": "Wi-Fi？DNS？それとも回線？ | WiFi Aid Lite #Shorts",
-     "description": "Wi-Fi？DNS？それとも回線？\nサイト側の問題？\nネットがつながらない原因を特定\n\nWiFi Aid Lite\nApp Store: https://apps.apple.com/jp/app/id6793414462?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.WiFiAidLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaidlite\nこのアプリをお使いですか？App Store で評価・レビューできます\nhttps://apps.apple.com/app/id6793414462?action=write-review\n\n繋がらない · インターネット · 接続 · 遅い · 重い · 不安定\n\n#Shorts #繋がらない #WiFiAidLite",
-     "tags": [
-      "繋がらない",
-      "インターネット",
-      "接続",
-      "遅い",
-      "重い",
-      "不安定",
-      "WiFiAidLite",
-      "WiFi Aid Lite"
-     ]
-    },
-    "boost_rank": 4
-   },
-   {
-    "kind": "clip",
-    "key": "wifiaidlite/ko",
-    "locale": "ko",
-    "app": "wifiaidlite",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/jypody.mp4",
-    "hook": "와이파이? DNS? 아니면 인터넷?",
-    "name": "WiFi Aid Lite",
-    "title": "와이파이? DNS? 아니면 인터넷? | 인터넷 안될 때 원인 찾기 | WiFi Aid Lite",
-    "tags": [
-     "#와이파이",
-     "#인터넷안됨",
-     "#와이파이안됨",
-     "#인터넷끊김",
-     "#끊김",
-     "#WiFiAidLite"
-    ],
-    "caption": "와이파이? DNS? 아니면 인터넷?\n아니면 그 사이트만?\n인터넷 안될 때 원인 찾기\nWiFi Aid Lite\nApp Store에서 '와이파이 인터넷 안됨' 검색\nAndroid는 Google Play에서\n\n#와이파이 #인터넷안됨 #와이파이안됨 #인터넷끊김 #WiFiAidLite",
-    "button": "App Store에서 받기",
-    "variant": "b",
-    "alt": "WiFi Aid Lite — 와이파이? DNS? 아니면 인터넷? — 아니면 그 사이트만? — 인터넷 안될 때 원인 찾기",
-    "store": "https://apps.apple.com/kr/app/id6793414462?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.WiFiAidLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaidlite",
-    "review": {
-     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
-     "url": "https://apps.apple.com/app/id6793414462?action=write-review"
-    },
-    "keywords": [
-     "와이파이",
-     "인터넷안됨",
-     "와이파이안됨",
-     "인터넷끊김",
-     "끊김",
-     "느림"
-    ],
-    "keyline": "인터넷 안될 때 원인 찾기",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "fed6529bb6230b02",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "youtube": {
-     "title": "와이파이? DNS? 아니면 인터넷? | WiFi Aid Lite #Shorts",
-     "description": "와이파이? DNS? 아니면 인터넷?\n아니면 그 사이트만?\n인터넷 안될 때 원인 찾기\n\nWiFi Aid Lite\nApp Store: https://apps.apple.com/kr/app/id6793414462?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.WiFiAidLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaidlite\n이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다\nhttps://apps.apple.com/app/id6793414462?action=write-review\n\n와이파이 · 인터넷안됨 · 와이파이안됨 · 인터넷끊김 · 끊김 · 느림\n\n#Shorts #와이파이 #WiFiAidLite",
-     "tags": [
-      "와이파이",
-      "인터넷안됨",
-      "와이파이안됨",
-      "인터넷끊김",
-      "끊김",
-      "느림",
-      "WiFiAidLite",
-      "WiFi Aid Lite"
-     ]
-    },
-    "boost_rank": 4
-   },
-   {
-    "kind": "clip",
-    "key": "wifiaidlite/id",
-    "locale": "id",
-    "app": "wifiaidlite",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/llspwc.mp4",
-    "hook": "WiFi, DNS, atau internet?",
-    "name": "WiFi Aid Lite",
-    "title": "WiFi, DNS, atau internet? | Internet mati? Cek penyebab | WiFi Aid Lite",
-    "tags": [
-     "#Jaringan",
-     "#Koneksi",
-     "#Lemot",
-     "#Lambat",
-     "#Gangguan",
-     "#WiFiAidLite"
-    ],
-    "caption": "WiFi, DNS, atau internet?\nAtau cuma satu situs?\nInternet mati? Cek penyebab\nCari “WiFi Aid Lite” di App Store\nJuga ada di Google Play\n\n#Jaringan #Koneksi #Lemot #Lambat #WiFiAidLite",
-    "button": "Unduh di App Store",
-    "variant": "b",
-    "alt": "WiFi Aid Lite — WiFi, DNS, atau internet? — Atau cuma satu situs? — Internet mati? Cek penyebab",
-    "store": "https://apps.apple.com/id/app/id6793414462?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.WiFiAidLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaidlite",
-    "review": {
-     "label": "Sudah memakai aplikasi ini? Beri nilai atau ulasan di App Store",
-     "url": "https://apps.apple.com/app/id6793414462?action=write-review"
-    },
-    "keywords": [
-     "jaringan",
-     "koneksi",
-     "lemot",
-     "lambat",
-     "gangguan",
-     "putus"
-    ],
-    "keyline": "Internet mati? Cek penyebab",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "fed6529bb6230b02",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "youtube": {
-     "title": "WiFi, DNS, atau internet? | WiFi Aid Lite #Shorts",
-     "description": "WiFi, DNS, atau internet?\nAtau cuma satu situs?\nInternet mati? Cek penyebab\n\nWiFi Aid Lite\nApp Store: https://apps.apple.com/id/app/id6793414462?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.WiFiAidLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaidlite\nSudah memakai aplikasi ini? Beri nilai atau ulasan di App Store\nhttps://apps.apple.com/app/id6793414462?action=write-review\n\njaringan · koneksi · lemot · lambat · gangguan · putus\n\n#Shorts #Jaringan #WiFiAidLite",
-     "tags": [
-      "jaringan",
-      "koneksi",
-      "lemot",
-      "lambat",
-      "gangguan",
-      "putus",
-      "WiFiAidLite",
-      "WiFi Aid Lite"
      ]
     },
     "boost_rank": 4
@@ -43902,251 +43940,6 @@
    },
    {
     "kind": "clip",
-    "key": "gmoney/en",
-    "locale": "en",
-    "app": "gmoney",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/txsq79.mp4",
-    "hook": "See what's left today",
-    "name": "G+Money: Spending & Budget",
-    "title": "See what's left today | Spending & Budget | G+Money",
-    "tags": [
-     "#SpendingBudget",
-     "#Multicurrency",
-     "#Export",
-     "#Savings",
-     "#Finance",
-     "#GMoney"
-    ],
-    "caption": "See what's left today\nSee where it went, by category\nG+Money: Spending & Budget\nSearch “G+Money” on the App Store\nAlso on Google Play\n\n#SpendingBudget #Multicurrency #Export #Savings #GMoney",
-    "button": "Get it on the App Store",
-    "variant": "c",
-    "alt": "G+Money: Spending & Budget — See what's left today — See where it went, by category",
-    "store": "https://apps.apple.com/us/app/id6755782939?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
-    "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
-    },
-    "keywords": [
-     "multicurrency",
-     "export",
-     "savings",
-     "finance",
-     "wallet",
-     "bookkeeping"
-    ],
-    "keyline": "Spending & Budget",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "987a384c8c1d4d89",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "pinterest": {
-     "description": "See what's left today\nSee where it went, by category\nG+Money: Spending & Budget\nSearch “G+Money” on the App Store\nAlso on Google Play\n\n#SpendingBudget #Multicurrency #Export #Savings #GMoney\n\nGet it on the App Store: https://apps.apple.com/us/app/id6755782939?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
-     "link": "https://apps.apple.com/us/app/id6755782939?pt=118326163&ct=social&mt=8"
-    },
-    "boost_rank": 3
-   },
-   {
-    "kind": "clip",
-    "key": "gmoney/zh-Hant",
-    "locale": "zh-Hant",
-    "app": "gmoney",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/ve63hr.mp4",
-    "hook": "按分類 看見錢花去哪",
-    "name": "G+Money：日常記帳·預算·匯率",
-    "title": "按分類 看見錢花去哪 | 多幣別・離線記帳・分類報表 | G+Money 記帳",
-    "tags": [
-     "#日常記帳預算匯率",
-     "#多國貨幣",
-     "#本機儲存",
-     "#換匯",
-     "#出差",
-     "#GMoney記帳"
-    ],
-    "caption": "按分類 看見錢花去哪\n換算＋記帳 離線也能用\n多幣別・離線記帳・分類報表\nG+Money：日常記帳·預算·匯率\n在 App Store 搜尋「G+Money 記帳」\nAndroid 版在 Google Play\n\n#日常記帳預算匯率 #多國貨幣 #本機儲存 #換匯 #GMoney記帳",
-    "button": "在 App Store 下載",
-    "variant": "b",
-    "alt": "G+Money：日常記帳·預算·匯率 — 按分類 看見錢花去哪 — 換算＋記帳 離線也能用 — 多幣別・離線記帳・分類報表",
-    "store": "https://apps.apple.com/tw/app/id6755782939?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
-    "review": {
-     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
-     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
-    },
-    "keywords": [
-     "多國貨幣",
-     "本機儲存",
-     "換匯",
-     "出差",
-     "收支",
-     "記帳日記"
-    ],
-    "keyline": "多幣別・離線記帳・分類報表",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "987a384c8c1d4d89",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "pinterest": {
-     "description": "按分類 看見錢花去哪\n換算＋記帳 離線也能用\n多幣別・離線記帳・分類報表\nG+Money：日常記帳·預算·匯率\n在 App Store 搜尋「G+Money 記帳」\nAndroid 版在 Google Play\n\n#日常記帳預算匯率 #多國貨幣 #本機儲存 #換匯 #GMoney記帳\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6755782939?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
-     "link": "https://apps.apple.com/tw/app/id6755782939?pt=118326163&ct=social&mt=8"
-    },
-    "boost_rank": 3
-   },
-   {
-    "kind": "clip",
-    "key": "gmoney/ja",
-    "locale": "ja",
-    "app": "gmoney",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/lk7ile.mp4",
-    "hook": "カテゴリ別に 使い道が見える",
-    "name": "G+Money：家計簿・予算・為替",
-    "title": "カテゴリ別に 使い道が見える | 支出管理・お金管理・出費記録 | G+Money 家計簿",
-    "tags": [
-     "#家計簿予算為替",
-     "#お小遣い帳",
-     "#通貨換算",
-     "#貯金",
-     "#支出記録",
-     "#GMoney家計簿"
-    ],
-    "caption": "カテゴリ別に 使い道が見える\n換算も記録も オフラインでOK\n支出管理・お金管理・出費記録\nG+Money：家計簿・予算・為替\nApp Storeで「G+Money 家計簿」を検索\nAndroidはGoogle Playで\n\n#家計簿予算為替 #お小遣い帳 #通貨換算 #貯金 #GMoney家計簿",
-    "button": "App Storeで入手",
-    "variant": "b",
-    "alt": "G+Money：家計簿・予算・為替 — カテゴリ別に 使い道が見える — 換算も記録も オフラインでOK — 支出管理・お金管理・出費記録",
-    "store": "https://apps.apple.com/jp/app/id6755782939?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
-    "review": {
-     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
-     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
-    },
-    "keywords": [
-     "お小遣い帳",
-     "通貨換算",
-     "貯金",
-     "支出記録",
-     "レート計算",
-     "家計管理"
-    ],
-    "keyline": "支出管理・お金管理・出費記録",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "987a384c8c1d4d89",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "pinterest": {
-     "description": "カテゴリ別に 使い道が見える\n換算も記録も オフラインでOK\n支出管理・お金管理・出費記録\nG+Money：家計簿・予算・為替\nApp Storeで「G+Money 家計簿」を検索\nAndroidはGoogle Playで\n\n#家計簿予算為替 #お小遣い帳 #通貨換算 #貯金 #GMoney家計簿\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6755782939?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
-     "link": "https://apps.apple.com/jp/app/id6755782939?pt=118326163&ct=social&mt=8"
-    },
-    "boost_rank": 3
-   },
-   {
-    "kind": "clip",
-    "key": "gmoney/ko",
-    "locale": "ko",
-    "app": "gmoney",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/nck8iy.mp4",
-    "hook": "분류별로 어디에 썼는지 한눈에",
-    "name": "G+Money：가계부·예산·환율",
-    "title": "분류별로 어디에 썼는지 한눈에 | 생활비·소비기록·지출관리 | G+Money 가계부",
-    "tags": [
-     "#가계부예산환율",
-     "#용돈기입장",
-     "#환율계산기",
-     "#통화변환",
-     "#가계부앱",
-     "#GMoney가계부"
-    ],
-    "caption": "분류별로 어디에 썼는지 한눈에\n환율 계산·기록 오프라인에서도\n생활비·소비기록·지출관리\nG+Money：가계부·예산·환율\nApp Store에서 'G+Money 가계부' 검색\nAndroid는 Google Play에서\n\n#가계부예산환율 #용돈기입장 #환율계산기 #통화변환 #GMoney가계부",
-    "button": "App Store에서 받기",
-    "variant": "b",
-    "alt": "G+Money：가계부·예산·환율 — 분류별로 어디에 썼는지 한눈에 — 환율 계산·기록 오프라인에서도 — 생활비·소비기록·지출관리",
-    "store": "https://apps.apple.com/kr/app/id6755782939?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
-    "review": {
-     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
-     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
-    },
-    "keywords": [
-     "용돈기입장",
-     "환율계산기",
-     "통화변환",
-     "가계부앱",
-     "돈관리",
-     "절약"
-    ],
-    "keyline": "생활비·소비기록·지출관리",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "987a384c8c1d4d89",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "pinterest": {
-     "description": "분류별로 어디에 썼는지 한눈에\n환율 계산·기록 오프라인에서도\n생활비·소비기록·지출관리\nG+Money：가계부·예산·환율\nApp Store에서 'G+Money 가계부' 검색\nAndroid는 Google Play에서\n\n#가계부예산환율 #용돈기입장 #환율계산기 #통화변환 #GMoney가계부\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6755782939?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
-     "link": "https://apps.apple.com/kr/app/id6755782939?pt=118326163&ct=social&mt=8"
-    },
-    "boost_rank": 3
-   },
-   {
-    "kind": "clip",
-    "key": "gmoney/id",
-    "locale": "id",
-    "app": "gmoney",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/jgixdt.mp4",
-    "hook": "Lihat ke mana uangmu, per kategori",
-    "name": "G+Money: Catat & atur anggaran",
-    "title": "Lihat ke mana uangmu, per kategori | Catat & atur anggaran | G+Money",
-    "tags": [
-     "#CatatAturAnggaran",
-     "#Catatan",
-     "#Keuangan",
-     "#Konverter",
-     "#Mata",
-     "#GMoney"
-    ],
-    "caption": "Lihat ke mana uangmu, per kategori\nKonversi & catat, tanpa sinyal\nG+Money: Catat & atur anggaran\nCari “G+Money” di App Store\nJuga ada di Google Play\n\n#CatatAturAnggaran #Catatan #Keuangan #Konverter #GMoney",
-    "button": "Unduh di App Store",
-    "variant": "b",
-    "alt": "G+Money: Catat & atur anggaran — Lihat ke mana uangmu, per kategori — Konversi & catat, tanpa sinyal",
-    "store": "https://apps.apple.com/id/app/id6755782939?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
-    "review": {
-     "label": "Sudah memakai aplikasi ini? Beri nilai atau ulasan di App Store",
-     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
-    },
-    "keywords": [
-     "catatan",
-     "keuangan",
-     "konverter",
-     "mata",
-     "uang",
-     "pencatat"
-    ],
-    "keyline": "Catat & atur anggaran",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "987a384c8c1d4d89",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "pinterest": {
-     "description": "Lihat ke mana uangmu, per kategori\nKonversi & catat, tanpa sinyal\nG+Money: Catat & atur anggaran\nCari “G+Money” di App Store\nJuga ada di Google Play\n\n#CatatAturAnggaran #Catatan #Keuangan #Konverter #GMoney\n\nUnduh di App Store: https://apps.apple.com/id/app/id6755782939?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
-     "link": "https://apps.apple.com/id/app/id6755782939?pt=118326163&ct=social&mt=8"
-    },
-    "boost_rank": 3
-   },
-   {
-    "kind": "clip",
     "key": "wifiaidlite/en",
     "locale": "en",
     "app": "wifiaidlite",
@@ -44192,7 +43985,7 @@
      "description": "Plus what to do next\nWi-Fi, DNS or internet?\nInternet Down? Find the Cause\nWiFi Aid Lite: Network Check\nSearch “WiFi Aid Lite” on the App Store\nAlso on Google Play\n\n#NetworkCheck #Ping #Slow #Outage #WiFiAidLite\n\nGet it on the App Store: https://apps.apple.com/us/app/id6793414462?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.WiFiAidLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaidlite",
      "link": "https://apps.apple.com/us/app/id6793414462?pt=118326163&ct=social&mt=8"
     },
-    "boost_rank": 4
+    "boost_rank": 3
    },
    {
     "kind": "clip",
@@ -44241,7 +44034,7 @@
      "description": "Wi-Fi、DNS 還是網際網路？\n還是網站本身？\n斷線 · 連不上 · 網路慢\n在 App Store 搜尋「WiFi Aid Lite」\nAndroid 版在 Google Play\n\n#斷線 #連不上 #網路慢 #網路卡卡 #WiFiAidLite\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6793414462?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.WiFiAidLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaidlite",
      "link": "https://apps.apple.com/tw/app/id6793414462?pt=118326163&ct=social&mt=8"
     },
-    "boost_rank": 4
+    "boost_rank": 3
    },
    {
     "kind": "clip",
@@ -44290,7 +44083,7 @@
      "description": "Wi-Fi？DNS？それとも回線？\nサイト側の問題？\nネットがつながらない原因を特定\nWiFi Aid Lite\nApp Storeで「wifi つながらない」を検索\nAndroidはGoogle Playで\n\n#繋がらない #インターネット #接続 #遅い #WiFiAidLite\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6793414462?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.WiFiAidLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaidlite",
      "link": "https://apps.apple.com/jp/app/id6793414462?pt=118326163&ct=social&mt=8"
     },
-    "boost_rank": 4
+    "boost_rank": 3
    },
    {
     "kind": "clip",
@@ -44339,7 +44132,7 @@
      "description": "와이파이? DNS? 아니면 인터넷?\n아니면 그 사이트만?\n인터넷 안될 때 원인 찾기\nWiFi Aid Lite\nApp Store에서 '와이파이 인터넷 안됨' 검색\nAndroid는 Google Play에서\n\n#와이파이 #인터넷안됨 #와이파이안됨 #인터넷끊김 #WiFiAidLite\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6793414462?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.WiFiAidLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaidlite",
      "link": "https://apps.apple.com/kr/app/id6793414462?pt=118326163&ct=social&mt=8"
     },
-    "boost_rank": 4
+    "boost_rank": 3
    },
    {
     "kind": "clip",
@@ -44387,6 +44180,251 @@
     "pinterest": {
      "description": "WiFi, DNS, atau internet?\nAtau cuma satu situs?\nInternet mati? Cek penyebab\nCari “WiFi Aid Lite” di App Store\nJuga ada di Google Play\n\n#Jaringan #Koneksi #Lemot #Lambat #WiFiAidLite\n\nUnduh di App Store: https://apps.apple.com/id/app/id6793414462?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.WiFiAidLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaidlite",
      "link": "https://apps.apple.com/id/app/id6793414462?pt=118326163&ct=social&mt=8"
+    },
+    "boost_rank": 3
+   },
+   {
+    "kind": "clip",
+    "key": "gmoney/en",
+    "locale": "en",
+    "app": "gmoney",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/txsq79.mp4",
+    "hook": "See what's left today",
+    "name": "G+Money: Spending & Budget",
+    "title": "See what's left today | Spending & Budget | G+Money",
+    "tags": [
+     "#SpendingBudget",
+     "#Multicurrency",
+     "#Export",
+     "#Savings",
+     "#Finance",
+     "#GMoney"
+    ],
+    "caption": "See what's left today\nSee where it went, by category\nG+Money: Spending & Budget\nSearch “G+Money” on the App Store\nAlso on Google Play\n\n#SpendingBudget #Multicurrency #Export #Savings #GMoney",
+    "button": "Get it on the App Store",
+    "variant": "c",
+    "alt": "G+Money: Spending & Budget — See what's left today — See where it went, by category",
+    "store": "https://apps.apple.com/us/app/id6755782939?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
+    "review": {
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
+    },
+    "keywords": [
+     "multicurrency",
+     "export",
+     "savings",
+     "finance",
+     "wallet",
+     "bookkeeping"
+    ],
+    "keyline": "Spending & Budget",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "987a384c8c1d4d89",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "See what's left today\nSee where it went, by category\nG+Money: Spending & Budget\nSearch “G+Money” on the App Store\nAlso on Google Play\n\n#SpendingBudget #Multicurrency #Export #Savings #GMoney\n\nGet it on the App Store: https://apps.apple.com/us/app/id6755782939?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
+     "link": "https://apps.apple.com/us/app/id6755782939?pt=118326163&ct=social&mt=8"
+    },
+    "boost_rank": 4
+   },
+   {
+    "kind": "clip",
+    "key": "gmoney/zh-Hant",
+    "locale": "zh-Hant",
+    "app": "gmoney",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/ve63hr.mp4",
+    "hook": "按分類 看見錢花去哪",
+    "name": "G+Money：日常記帳·預算·匯率",
+    "title": "按分類 看見錢花去哪 | 多幣別・離線記帳・分類報表 | G+Money 記帳",
+    "tags": [
+     "#日常記帳預算匯率",
+     "#多國貨幣",
+     "#本機儲存",
+     "#換匯",
+     "#出差",
+     "#GMoney記帳"
+    ],
+    "caption": "按分類 看見錢花去哪\n換算＋記帳 離線也能用\n多幣別・離線記帳・分類報表\nG+Money：日常記帳·預算·匯率\n在 App Store 搜尋「G+Money 記帳」\nAndroid 版在 Google Play\n\n#日常記帳預算匯率 #多國貨幣 #本機儲存 #換匯 #GMoney記帳",
+    "button": "在 App Store 下載",
+    "variant": "b",
+    "alt": "G+Money：日常記帳·預算·匯率 — 按分類 看見錢花去哪 — 換算＋記帳 離線也能用 — 多幣別・離線記帳・分類報表",
+    "store": "https://apps.apple.com/tw/app/id6755782939?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
+    "review": {
+     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
+     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
+    },
+    "keywords": [
+     "多國貨幣",
+     "本機儲存",
+     "換匯",
+     "出差",
+     "收支",
+     "記帳日記"
+    ],
+    "keyline": "多幣別・離線記帳・分類報表",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "987a384c8c1d4d89",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "按分類 看見錢花去哪\n換算＋記帳 離線也能用\n多幣別・離線記帳・分類報表\nG+Money：日常記帳·預算·匯率\n在 App Store 搜尋「G+Money 記帳」\nAndroid 版在 Google Play\n\n#日常記帳預算匯率 #多國貨幣 #本機儲存 #換匯 #GMoney記帳\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6755782939?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
+     "link": "https://apps.apple.com/tw/app/id6755782939?pt=118326163&ct=social&mt=8"
+    },
+    "boost_rank": 4
+   },
+   {
+    "kind": "clip",
+    "key": "gmoney/ja",
+    "locale": "ja",
+    "app": "gmoney",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/lk7ile.mp4",
+    "hook": "カテゴリ別に 使い道が見える",
+    "name": "G+Money：家計簿・予算・為替",
+    "title": "カテゴリ別に 使い道が見える | 支出管理・お金管理・出費記録 | G+Money 家計簿",
+    "tags": [
+     "#家計簿予算為替",
+     "#お小遣い帳",
+     "#通貨換算",
+     "#貯金",
+     "#支出記録",
+     "#GMoney家計簿"
+    ],
+    "caption": "カテゴリ別に 使い道が見える\n換算も記録も オフラインでOK\n支出管理・お金管理・出費記録\nG+Money：家計簿・予算・為替\nApp Storeで「G+Money 家計簿」を検索\nAndroidはGoogle Playで\n\n#家計簿予算為替 #お小遣い帳 #通貨換算 #貯金 #GMoney家計簿",
+    "button": "App Storeで入手",
+    "variant": "b",
+    "alt": "G+Money：家計簿・予算・為替 — カテゴリ別に 使い道が見える — 換算も記録も オフラインでOK — 支出管理・お金管理・出費記録",
+    "store": "https://apps.apple.com/jp/app/id6755782939?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
+    "review": {
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
+    },
+    "keywords": [
+     "お小遣い帳",
+     "通貨換算",
+     "貯金",
+     "支出記録",
+     "レート計算",
+     "家計管理"
+    ],
+    "keyline": "支出管理・お金管理・出費記録",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "987a384c8c1d4d89",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "カテゴリ別に 使い道が見える\n換算も記録も オフラインでOK\n支出管理・お金管理・出費記録\nG+Money：家計簿・予算・為替\nApp Storeで「G+Money 家計簿」を検索\nAndroidはGoogle Playで\n\n#家計簿予算為替 #お小遣い帳 #通貨換算 #貯金 #GMoney家計簿\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6755782939?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
+     "link": "https://apps.apple.com/jp/app/id6755782939?pt=118326163&ct=social&mt=8"
+    },
+    "boost_rank": 4
+   },
+   {
+    "kind": "clip",
+    "key": "gmoney/ko",
+    "locale": "ko",
+    "app": "gmoney",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/nck8iy.mp4",
+    "hook": "분류별로 어디에 썼는지 한눈에",
+    "name": "G+Money：가계부·예산·환율",
+    "title": "분류별로 어디에 썼는지 한눈에 | 생활비·소비기록·지출관리 | G+Money 가계부",
+    "tags": [
+     "#가계부예산환율",
+     "#용돈기입장",
+     "#환율계산기",
+     "#통화변환",
+     "#가계부앱",
+     "#GMoney가계부"
+    ],
+    "caption": "분류별로 어디에 썼는지 한눈에\n환율 계산·기록 오프라인에서도\n생활비·소비기록·지출관리\nG+Money：가계부·예산·환율\nApp Store에서 'G+Money 가계부' 검색\nAndroid는 Google Play에서\n\n#가계부예산환율 #용돈기입장 #환율계산기 #통화변환 #GMoney가계부",
+    "button": "App Store에서 받기",
+    "variant": "b",
+    "alt": "G+Money：가계부·예산·환율 — 분류별로 어디에 썼는지 한눈에 — 환율 계산·기록 오프라인에서도 — 생활비·소비기록·지출관리",
+    "store": "https://apps.apple.com/kr/app/id6755782939?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
+    "review": {
+     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
+     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
+    },
+    "keywords": [
+     "용돈기입장",
+     "환율계산기",
+     "통화변환",
+     "가계부앱",
+     "돈관리",
+     "절약"
+    ],
+    "keyline": "생활비·소비기록·지출관리",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "987a384c8c1d4d89",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "분류별로 어디에 썼는지 한눈에\n환율 계산·기록 오프라인에서도\n생활비·소비기록·지출관리\nG+Money：가계부·예산·환율\nApp Store에서 'G+Money 가계부' 검색\nAndroid는 Google Play에서\n\n#가계부예산환율 #용돈기입장 #환율계산기 #통화변환 #GMoney가계부\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6755782939?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
+     "link": "https://apps.apple.com/kr/app/id6755782939?pt=118326163&ct=social&mt=8"
+    },
+    "boost_rank": 4
+   },
+   {
+    "kind": "clip",
+    "key": "gmoney/id",
+    "locale": "id",
+    "app": "gmoney",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/jgixdt.mp4",
+    "hook": "Lihat ke mana uangmu, per kategori",
+    "name": "G+Money: Catat & atur anggaran",
+    "title": "Lihat ke mana uangmu, per kategori | Catat & atur anggaran | G+Money",
+    "tags": [
+     "#CatatAturAnggaran",
+     "#Catatan",
+     "#Keuangan",
+     "#Konverter",
+     "#Mata",
+     "#GMoney"
+    ],
+    "caption": "Lihat ke mana uangmu, per kategori\nKonversi & catat, tanpa sinyal\nG+Money: Catat & atur anggaran\nCari “G+Money” di App Store\nJuga ada di Google Play\n\n#CatatAturAnggaran #Catatan #Keuangan #Konverter #GMoney",
+    "button": "Unduh di App Store",
+    "variant": "b",
+    "alt": "G+Money: Catat & atur anggaran — Lihat ke mana uangmu, per kategori — Konversi & catat, tanpa sinyal",
+    "store": "https://apps.apple.com/id/app/id6755782939?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
+    "review": {
+     "label": "Sudah memakai aplikasi ini? Beri nilai atau ulasan di App Store",
+     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
+    },
+    "keywords": [
+     "catatan",
+     "keuangan",
+     "konverter",
+     "mata",
+     "uang",
+     "pencatat"
+    ],
+    "keyline": "Catat & atur anggaran",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "987a384c8c1d4d89",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "Lihat ke mana uangmu, per kategori\nKonversi & catat, tanpa sinyal\nG+Money: Catat & atur anggaran\nCari “G+Money” di App Store\nJuga ada di Google Play\n\n#CatatAturAnggaran #Catatan #Keuangan #Konverter #GMoney\n\nUnduh di App Store: https://apps.apple.com/id/app/id6755782939?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
+     "link": "https://apps.apple.com/id/app/id6755782939?pt=118326163&ct=social&mt=8"
     },
     "boost_rank": 4
    },
@@ -60753,246 +60791,6 @@
    },
    {
     "kind": "clip",
-    "key": "gmoney/en",
-    "locale": "en",
-    "app": "gmoney",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/txsq79.mp4",
-    "hook": "See what's left today",
-    "name": "G+Money: Spending & Budget",
-    "title": "See what's left today | Spending & Budget | G+Money",
-    "tags": [
-     "#SpendingBudget",
-     "#Multicurrency",
-     "#Export",
-     "#Savings",
-     "#Finance",
-     "#GMoney"
-    ],
-    "caption": "See what's left today\nSee where it went, by category\nG+Money: Spending & Budget\nSearch “G+Money” on the App Store\nAlso on Google Play\n\n#SpendingBudget #Multicurrency #Export #Savings #GMoney",
-    "button": "Get it on the App Store",
-    "variant": "c",
-    "alt": "G+Money: Spending & Budget — See what's left today — See where it went, by category",
-    "store": "https://apps.apple.com/us/app/id6755782939?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
-    "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
-    },
-    "keywords": [
-     "multicurrency",
-     "export",
-     "savings",
-     "finance",
-     "wallet",
-     "bookkeeping"
-    ],
-    "keyline": "Spending & Budget",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "987a384c8c1d4d89",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "tiktok": {
-     "caption": "See what's left today\nSee where it went, by category\nG+Money: Spending & Budget\nSearch “G+Money” on the App Store\nAlso on Google Play\n\n#SpendingBudget #Multicurrency #Export #Savings #GMoney\n\nGet it on the App Store: https://apps.apple.com/us/app/id6755782939?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney"
-    },
-    "boost_rank": 3
-   },
-   {
-    "kind": "clip",
-    "key": "gmoney/zh-Hant",
-    "locale": "zh-Hant",
-    "app": "gmoney",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/ve63hr.mp4",
-    "hook": "按分類 看見錢花去哪",
-    "name": "G+Money：日常記帳·預算·匯率",
-    "title": "按分類 看見錢花去哪 | 多幣別・離線記帳・分類報表 | G+Money 記帳",
-    "tags": [
-     "#日常記帳預算匯率",
-     "#多國貨幣",
-     "#本機儲存",
-     "#換匯",
-     "#出差",
-     "#GMoney記帳"
-    ],
-    "caption": "按分類 看見錢花去哪\n換算＋記帳 離線也能用\n多幣別・離線記帳・分類報表\nG+Money：日常記帳·預算·匯率\n在 App Store 搜尋「G+Money 記帳」\nAndroid 版在 Google Play\n\n#日常記帳預算匯率 #多國貨幣 #本機儲存 #換匯 #GMoney記帳",
-    "button": "在 App Store 下載",
-    "variant": "b",
-    "alt": "G+Money：日常記帳·預算·匯率 — 按分類 看見錢花去哪 — 換算＋記帳 離線也能用 — 多幣別・離線記帳・分類報表",
-    "store": "https://apps.apple.com/tw/app/id6755782939?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
-    "review": {
-     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
-     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
-    },
-    "keywords": [
-     "多國貨幣",
-     "本機儲存",
-     "換匯",
-     "出差",
-     "收支",
-     "記帳日記"
-    ],
-    "keyline": "多幣別・離線記帳・分類報表",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "987a384c8c1d4d89",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "tiktok": {
-     "caption": "按分類 看見錢花去哪\n換算＋記帳 離線也能用\n多幣別・離線記帳・分類報表\nG+Money：日常記帳·預算·匯率\n在 App Store 搜尋「G+Money 記帳」\nAndroid 版在 Google Play\n\n#日常記帳預算匯率 #多國貨幣 #本機儲存 #換匯 #GMoney記帳\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6755782939?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney"
-    },
-    "boost_rank": 3
-   },
-   {
-    "kind": "clip",
-    "key": "gmoney/ja",
-    "locale": "ja",
-    "app": "gmoney",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/lk7ile.mp4",
-    "hook": "カテゴリ別に 使い道が見える",
-    "name": "G+Money：家計簿・予算・為替",
-    "title": "カテゴリ別に 使い道が見える | 支出管理・お金管理・出費記録 | G+Money 家計簿",
-    "tags": [
-     "#家計簿予算為替",
-     "#お小遣い帳",
-     "#通貨換算",
-     "#貯金",
-     "#支出記録",
-     "#GMoney家計簿"
-    ],
-    "caption": "カテゴリ別に 使い道が見える\n換算も記録も オフラインでOK\n支出管理・お金管理・出費記録\nG+Money：家計簿・予算・為替\nApp Storeで「G+Money 家計簿」を検索\nAndroidはGoogle Playで\n\n#家計簿予算為替 #お小遣い帳 #通貨換算 #貯金 #GMoney家計簿",
-    "button": "App Storeで入手",
-    "variant": "b",
-    "alt": "G+Money：家計簿・予算・為替 — カテゴリ別に 使い道が見える — 換算も記録も オフラインでOK — 支出管理・お金管理・出費記録",
-    "store": "https://apps.apple.com/jp/app/id6755782939?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
-    "review": {
-     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
-     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
-    },
-    "keywords": [
-     "お小遣い帳",
-     "通貨換算",
-     "貯金",
-     "支出記録",
-     "レート計算",
-     "家計管理"
-    ],
-    "keyline": "支出管理・お金管理・出費記録",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "987a384c8c1d4d89",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "tiktok": {
-     "caption": "カテゴリ別に 使い道が見える\n換算も記録も オフラインでOK\n支出管理・お金管理・出費記録\nG+Money：家計簿・予算・為替\nApp Storeで「G+Money 家計簿」を検索\nAndroidはGoogle Playで\n\n#家計簿予算為替 #お小遣い帳 #通貨換算 #貯金 #GMoney家計簿\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6755782939?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney"
-    },
-    "boost_rank": 3
-   },
-   {
-    "kind": "clip",
-    "key": "gmoney/ko",
-    "locale": "ko",
-    "app": "gmoney",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/nck8iy.mp4",
-    "hook": "분류별로 어디에 썼는지 한눈에",
-    "name": "G+Money：가계부·예산·환율",
-    "title": "분류별로 어디에 썼는지 한눈에 | 생활비·소비기록·지출관리 | G+Money 가계부",
-    "tags": [
-     "#가계부예산환율",
-     "#용돈기입장",
-     "#환율계산기",
-     "#통화변환",
-     "#가계부앱",
-     "#GMoney가계부"
-    ],
-    "caption": "분류별로 어디에 썼는지 한눈에\n환율 계산·기록 오프라인에서도\n생활비·소비기록·지출관리\nG+Money：가계부·예산·환율\nApp Store에서 'G+Money 가계부' 검색\nAndroid는 Google Play에서\n\n#가계부예산환율 #용돈기입장 #환율계산기 #통화변환 #GMoney가계부",
-    "button": "App Store에서 받기",
-    "variant": "b",
-    "alt": "G+Money：가계부·예산·환율 — 분류별로 어디에 썼는지 한눈에 — 환율 계산·기록 오프라인에서도 — 생활비·소비기록·지출관리",
-    "store": "https://apps.apple.com/kr/app/id6755782939?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
-    "review": {
-     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
-     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
-    },
-    "keywords": [
-     "용돈기입장",
-     "환율계산기",
-     "통화변환",
-     "가계부앱",
-     "돈관리",
-     "절약"
-    ],
-    "keyline": "생활비·소비기록·지출관리",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "987a384c8c1d4d89",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "tiktok": {
-     "caption": "분류별로 어디에 썼는지 한눈에\n환율 계산·기록 오프라인에서도\n생활비·소비기록·지출관리\nG+Money：가계부·예산·환율\nApp Store에서 'G+Money 가계부' 검색\nAndroid는 Google Play에서\n\n#가계부예산환율 #용돈기입장 #환율계산기 #통화변환 #GMoney가계부\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6755782939?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney"
-    },
-    "boost_rank": 3
-   },
-   {
-    "kind": "clip",
-    "key": "gmoney/id",
-    "locale": "id",
-    "app": "gmoney",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/jgixdt.mp4",
-    "hook": "Lihat ke mana uangmu, per kategori",
-    "name": "G+Money: Catat & atur anggaran",
-    "title": "Lihat ke mana uangmu, per kategori | Catat & atur anggaran | G+Money",
-    "tags": [
-     "#CatatAturAnggaran",
-     "#Catatan",
-     "#Keuangan",
-     "#Konverter",
-     "#Mata",
-     "#GMoney"
-    ],
-    "caption": "Lihat ke mana uangmu, per kategori\nKonversi & catat, tanpa sinyal\nG+Money: Catat & atur anggaran\nCari “G+Money” di App Store\nJuga ada di Google Play\n\n#CatatAturAnggaran #Catatan #Keuangan #Konverter #GMoney",
-    "button": "Unduh di App Store",
-    "variant": "b",
-    "alt": "G+Money: Catat & atur anggaran — Lihat ke mana uangmu, per kategori — Konversi & catat, tanpa sinyal",
-    "store": "https://apps.apple.com/id/app/id6755782939?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
-    "review": {
-     "label": "Sudah memakai aplikasi ini? Beri nilai atau ulasan di App Store",
-     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
-    },
-    "keywords": [
-     "catatan",
-     "keuangan",
-     "konverter",
-     "mata",
-     "uang",
-     "pencatat"
-    ],
-    "keyline": "Catat & atur anggaran",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "987a384c8c1d4d89",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "tiktok": {
-     "caption": "Lihat ke mana uangmu, per kategori\nKonversi & catat, tanpa sinyal\nG+Money: Catat & atur anggaran\nCari “G+Money” di App Store\nJuga ada di Google Play\n\n#CatatAturAnggaran #Catatan #Keuangan #Konverter #GMoney\n\nUnduh di App Store: https://apps.apple.com/id/app/id6755782939?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney"
-    },
-    "boost_rank": 3
-   },
-   {
-    "kind": "clip",
     "key": "wifiaidlite/en",
     "locale": "en",
     "app": "wifiaidlite",
@@ -61037,7 +60835,7 @@
     "tiktok": {
      "caption": "Plus what to do next\nWi-Fi, DNS or internet?\nInternet Down? Find the Cause\nWiFi Aid Lite: Network Check\nSearch “WiFi Aid Lite” on the App Store\nAlso on Google Play\n\n#NetworkCheck #Ping #Slow #Outage #WiFiAidLite\n\nGet it on the App Store: https://apps.apple.com/us/app/id6793414462?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.WiFiAidLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaidlite"
     },
-    "boost_rank": 4
+    "boost_rank": 3
    },
    {
     "kind": "clip",
@@ -61085,7 +60883,7 @@
     "tiktok": {
      "caption": "Wi-Fi、DNS 還是網際網路？\n還是網站本身？\n斷線 · 連不上 · 網路慢\n在 App Store 搜尋「WiFi Aid Lite」\nAndroid 版在 Google Play\n\n#斷線 #連不上 #網路慢 #網路卡卡 #WiFiAidLite\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6793414462?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.WiFiAidLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaidlite"
     },
-    "boost_rank": 4
+    "boost_rank": 3
    },
    {
     "kind": "clip",
@@ -61133,7 +60931,7 @@
     "tiktok": {
      "caption": "Wi-Fi？DNS？それとも回線？\nサイト側の問題？\nネットがつながらない原因を特定\nWiFi Aid Lite\nApp Storeで「wifi つながらない」を検索\nAndroidはGoogle Playで\n\n#繋がらない #インターネット #接続 #遅い #WiFiAidLite\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6793414462?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.WiFiAidLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaidlite"
     },
-    "boost_rank": 4
+    "boost_rank": 3
    },
    {
     "kind": "clip",
@@ -61181,7 +60979,7 @@
     "tiktok": {
      "caption": "와이파이? DNS? 아니면 인터넷?\n아니면 그 사이트만?\n인터넷 안될 때 원인 찾기\nWiFi Aid Lite\nApp Store에서 '와이파이 인터넷 안됨' 검색\nAndroid는 Google Play에서\n\n#와이파이 #인터넷안됨 #와이파이안됨 #인터넷끊김 #WiFiAidLite\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6793414462?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.WiFiAidLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaidlite"
     },
-    "boost_rank": 4
+    "boost_rank": 3
    },
    {
     "kind": "clip",
@@ -61228,6 +61026,246 @@
     },
     "tiktok": {
      "caption": "WiFi, DNS, atau internet?\nAtau cuma satu situs?\nInternet mati? Cek penyebab\nCari “WiFi Aid Lite” di App Store\nJuga ada di Google Play\n\n#Jaringan #Koneksi #Lemot #Lambat #WiFiAidLite\n\nUnduh di App Store: https://apps.apple.com/id/app/id6793414462?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.WiFiAidLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaidlite"
+    },
+    "boost_rank": 3
+   },
+   {
+    "kind": "clip",
+    "key": "gmoney/en",
+    "locale": "en",
+    "app": "gmoney",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/txsq79.mp4",
+    "hook": "See what's left today",
+    "name": "G+Money: Spending & Budget",
+    "title": "See what's left today | Spending & Budget | G+Money",
+    "tags": [
+     "#SpendingBudget",
+     "#Multicurrency",
+     "#Export",
+     "#Savings",
+     "#Finance",
+     "#GMoney"
+    ],
+    "caption": "See what's left today\nSee where it went, by category\nG+Money: Spending & Budget\nSearch “G+Money” on the App Store\nAlso on Google Play\n\n#SpendingBudget #Multicurrency #Export #Savings #GMoney",
+    "button": "Get it on the App Store",
+    "variant": "c",
+    "alt": "G+Money: Spending & Budget — See what's left today — See where it went, by category",
+    "store": "https://apps.apple.com/us/app/id6755782939?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
+    "review": {
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
+    },
+    "keywords": [
+     "multicurrency",
+     "export",
+     "savings",
+     "finance",
+     "wallet",
+     "bookkeeping"
+    ],
+    "keyline": "Spending & Budget",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "987a384c8c1d4d89",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "See what's left today\nSee where it went, by category\nG+Money: Spending & Budget\nSearch “G+Money” on the App Store\nAlso on Google Play\n\n#SpendingBudget #Multicurrency #Export #Savings #GMoney\n\nGet it on the App Store: https://apps.apple.com/us/app/id6755782939?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney"
+    },
+    "boost_rank": 4
+   },
+   {
+    "kind": "clip",
+    "key": "gmoney/zh-Hant",
+    "locale": "zh-Hant",
+    "app": "gmoney",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/ve63hr.mp4",
+    "hook": "按分類 看見錢花去哪",
+    "name": "G+Money：日常記帳·預算·匯率",
+    "title": "按分類 看見錢花去哪 | 多幣別・離線記帳・分類報表 | G+Money 記帳",
+    "tags": [
+     "#日常記帳預算匯率",
+     "#多國貨幣",
+     "#本機儲存",
+     "#換匯",
+     "#出差",
+     "#GMoney記帳"
+    ],
+    "caption": "按分類 看見錢花去哪\n換算＋記帳 離線也能用\n多幣別・離線記帳・分類報表\nG+Money：日常記帳·預算·匯率\n在 App Store 搜尋「G+Money 記帳」\nAndroid 版在 Google Play\n\n#日常記帳預算匯率 #多國貨幣 #本機儲存 #換匯 #GMoney記帳",
+    "button": "在 App Store 下載",
+    "variant": "b",
+    "alt": "G+Money：日常記帳·預算·匯率 — 按分類 看見錢花去哪 — 換算＋記帳 離線也能用 — 多幣別・離線記帳・分類報表",
+    "store": "https://apps.apple.com/tw/app/id6755782939?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
+    "review": {
+     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
+     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
+    },
+    "keywords": [
+     "多國貨幣",
+     "本機儲存",
+     "換匯",
+     "出差",
+     "收支",
+     "記帳日記"
+    ],
+    "keyline": "多幣別・離線記帳・分類報表",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "987a384c8c1d4d89",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "按分類 看見錢花去哪\n換算＋記帳 離線也能用\n多幣別・離線記帳・分類報表\nG+Money：日常記帳·預算·匯率\n在 App Store 搜尋「G+Money 記帳」\nAndroid 版在 Google Play\n\n#日常記帳預算匯率 #多國貨幣 #本機儲存 #換匯 #GMoney記帳\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6755782939?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney"
+    },
+    "boost_rank": 4
+   },
+   {
+    "kind": "clip",
+    "key": "gmoney/ja",
+    "locale": "ja",
+    "app": "gmoney",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/lk7ile.mp4",
+    "hook": "カテゴリ別に 使い道が見える",
+    "name": "G+Money：家計簿・予算・為替",
+    "title": "カテゴリ別に 使い道が見える | 支出管理・お金管理・出費記録 | G+Money 家計簿",
+    "tags": [
+     "#家計簿予算為替",
+     "#お小遣い帳",
+     "#通貨換算",
+     "#貯金",
+     "#支出記録",
+     "#GMoney家計簿"
+    ],
+    "caption": "カテゴリ別に 使い道が見える\n換算も記録も オフラインでOK\n支出管理・お金管理・出費記録\nG+Money：家計簿・予算・為替\nApp Storeで「G+Money 家計簿」を検索\nAndroidはGoogle Playで\n\n#家計簿予算為替 #お小遣い帳 #通貨換算 #貯金 #GMoney家計簿",
+    "button": "App Storeで入手",
+    "variant": "b",
+    "alt": "G+Money：家計簿・予算・為替 — カテゴリ別に 使い道が見える — 換算も記録も オフラインでOK — 支出管理・お金管理・出費記録",
+    "store": "https://apps.apple.com/jp/app/id6755782939?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
+    "review": {
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
+    },
+    "keywords": [
+     "お小遣い帳",
+     "通貨換算",
+     "貯金",
+     "支出記録",
+     "レート計算",
+     "家計管理"
+    ],
+    "keyline": "支出管理・お金管理・出費記録",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "987a384c8c1d4d89",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "カテゴリ別に 使い道が見える\n換算も記録も オフラインでOK\n支出管理・お金管理・出費記録\nG+Money：家計簿・予算・為替\nApp Storeで「G+Money 家計簿」を検索\nAndroidはGoogle Playで\n\n#家計簿予算為替 #お小遣い帳 #通貨換算 #貯金 #GMoney家計簿\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6755782939?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney"
+    },
+    "boost_rank": 4
+   },
+   {
+    "kind": "clip",
+    "key": "gmoney/ko",
+    "locale": "ko",
+    "app": "gmoney",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/nck8iy.mp4",
+    "hook": "분류별로 어디에 썼는지 한눈에",
+    "name": "G+Money：가계부·예산·환율",
+    "title": "분류별로 어디에 썼는지 한눈에 | 생활비·소비기록·지출관리 | G+Money 가계부",
+    "tags": [
+     "#가계부예산환율",
+     "#용돈기입장",
+     "#환율계산기",
+     "#통화변환",
+     "#가계부앱",
+     "#GMoney가계부"
+    ],
+    "caption": "분류별로 어디에 썼는지 한눈에\n환율 계산·기록 오프라인에서도\n생활비·소비기록·지출관리\nG+Money：가계부·예산·환율\nApp Store에서 'G+Money 가계부' 검색\nAndroid는 Google Play에서\n\n#가계부예산환율 #용돈기입장 #환율계산기 #통화변환 #GMoney가계부",
+    "button": "App Store에서 받기",
+    "variant": "b",
+    "alt": "G+Money：가계부·예산·환율 — 분류별로 어디에 썼는지 한눈에 — 환율 계산·기록 오프라인에서도 — 생활비·소비기록·지출관리",
+    "store": "https://apps.apple.com/kr/app/id6755782939?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
+    "review": {
+     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
+     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
+    },
+    "keywords": [
+     "용돈기입장",
+     "환율계산기",
+     "통화변환",
+     "가계부앱",
+     "돈관리",
+     "절약"
+    ],
+    "keyline": "생활비·소비기록·지출관리",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "987a384c8c1d4d89",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "분류별로 어디에 썼는지 한눈에\n환율 계산·기록 오프라인에서도\n생활비·소비기록·지출관리\nG+Money：가계부·예산·환율\nApp Store에서 'G+Money 가계부' 검색\nAndroid는 Google Play에서\n\n#가계부예산환율 #용돈기입장 #환율계산기 #통화변환 #GMoney가계부\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6755782939?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney"
+    },
+    "boost_rank": 4
+   },
+   {
+    "kind": "clip",
+    "key": "gmoney/id",
+    "locale": "id",
+    "app": "gmoney",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/jgixdt.mp4",
+    "hook": "Lihat ke mana uangmu, per kategori",
+    "name": "G+Money: Catat & atur anggaran",
+    "title": "Lihat ke mana uangmu, per kategori | Catat & atur anggaran | G+Money",
+    "tags": [
+     "#CatatAturAnggaran",
+     "#Catatan",
+     "#Keuangan",
+     "#Konverter",
+     "#Mata",
+     "#GMoney"
+    ],
+    "caption": "Lihat ke mana uangmu, per kategori\nKonversi & catat, tanpa sinyal\nG+Money: Catat & atur anggaran\nCari “G+Money” di App Store\nJuga ada di Google Play\n\n#CatatAturAnggaran #Catatan #Keuangan #Konverter #GMoney",
+    "button": "Unduh di App Store",
+    "variant": "b",
+    "alt": "G+Money: Catat & atur anggaran — Lihat ke mana uangmu, per kategori — Konversi & catat, tanpa sinyal",
+    "store": "https://apps.apple.com/id/app/id6755782939?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
+    "review": {
+     "label": "Sudah memakai aplikasi ini? Beri nilai atau ulasan di App Store",
+     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
+    },
+    "keywords": [
+     "catatan",
+     "keuangan",
+     "konverter",
+     "mata",
+     "uang",
+     "pencatat"
+    ],
+    "keyline": "Catat & atur anggaran",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "987a384c8c1d4d89",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "Lihat ke mana uangmu, per kategori\nKonversi & catat, tanpa sinyal\nG+Money: Catat & atur anggaran\nCari “G+Money” di App Store\nJuga ada di Google Play\n\n#CatatAturAnggaran #Catatan #Keuangan #Konverter #GMoney\n\nUnduh di App Store: https://apps.apple.com/id/app/id6755782939?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney"
     },
     "boost_rank": 4
    },
@@ -76926,8 +76964,8 @@
   "boost": [
    "cvdesk",
    "mochi_suneung",
-   "gmoney",
    "wifiaidlite",
+   "gmoney",
    "duowallpaperstudio"
   ],
   "demote": [
@@ -77001,7 +77039,7 @@
      "posts": 16,
      "hours": {
       "1": 9.3,
-      "2": 2.0,
+      "2": 4.0,
       "8": 12.7,
       "13": 11.0,
       "16": 8.0
@@ -77009,10 +77047,10 @@
     },
     "zh-Hant": {
      "hour": 3,
-     "avg_views": 280.5,
-     "posts": 13,
+     "avg_views": 282.5,
+     "posts": 14,
      "hours": {
-      "3": 280.5,
+      "3": 282.5,
       "6": 30.5,
       "13": 82.5,
       "16": 10.0,
@@ -77021,6 +77059,6 @@
     }
    }
   },
-  "updated_at": "2026-11-03T06:30:45Z"
+  "updated_at": "2026-11-04T06:01:08Z"
  }
 }

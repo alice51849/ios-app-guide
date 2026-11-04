@@ -6,8 +6,8 @@
   "name": "Catalogue des intentions de recherche de l’éditeur Lumi Studio",
   "description": "Un catalogue publié directement par le développeur qui indique à qui chaque app est destinée, la tâche à accomplir et l’accès direct à l’App Store.",
   "inLanguage": "fr-CA",
-  "dateModified": "2026-11-03",
-  "numberOfItems": 56,
+  "dateModified": "2026-11-04",
+  "numberOfItems": 57,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
     {
@@ -3049,6 +3049,72 @@
     {
       "@type": "ListItem",
       "position": 47,
+      "url": "https://apps.apple.com/ca/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-metrotimehelper",
+        "url": "https://apps.apple.com/ca/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Taipei : l’Assistant Métro",
+        "description": "Pour le métro de Taipei, à Taïwan : vous savez à quelle heure vous devez arriver? L’Assistant Métro vous dit à quelle heure entrer dans la station.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6819061896",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6819061896"
+          },
+          "name": "Taipei : l’Assistant Métro",
+          "operatingSystem": "iOS",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/ca/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ca/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ca/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ca/app/id6819061896?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/fr-CA/metrotimehelper.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6819061896",
+          "inLanguage": "fr-CA",
+          "description": "Pour le métro de Taipei, à Taïwan : vous savez à quelle heure vous devez arriver? L’Assistant Métro vous dit à quelle heure entrer dans la station.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-metrotimehelper"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "CA"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 48,
       "url": "https://apps.apple.com/ca/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3114,7 +3180,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 48,
+      "position": 49,
       "url": "https://apps.apple.com/ca/app/id6791299610?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3180,7 +3246,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 49,
+      "position": 50,
       "url": "https://apps.apple.com/ca/app/id6787754435?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3246,7 +3312,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 50,
+      "position": 51,
       "url": "https://apps.apple.com/ca/app/id6782275018?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3312,7 +3378,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 51,
+      "position": 52,
       "url": "https://apps.apple.com/ca/app/id6818607603?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3378,7 +3444,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 52,
+      "position": 53,
       "url": "https://apps.apple.com/ca/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3444,7 +3510,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 53,
+      "position": 54,
       "url": "https://apps.apple.com/ca/app/id6790467886?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3510,7 +3576,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 54,
+      "position": 55,
       "url": "https://apps.apple.com/ca/app/id6789917808?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3576,7 +3642,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 55,
+      "position": 56,
       "url": "https://apps.apple.com/ca/app/id6797601720?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3642,7 +3708,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 56,
+      "position": 57,
       "url": "https://apps.apple.com/ca/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",

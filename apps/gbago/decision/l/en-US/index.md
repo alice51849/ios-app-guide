@@ -2,7 +2,7 @@
 title: "paid gba emulator for iphone with save states and controller support"
 lang: "en-US"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gbago/decision/l/en-US/index.html"
-modified: "2026-11-03"
+modified: "2026-11-04"
 app_store_id: "6804564400"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,7 +16,7 @@ GBAGo — 除 Lumi Studio 自製的三款原創 demo 卡帶外，GBAGo 不包含
 - More
 - Paid download
 - Offline
-- App Store · $8.99
+- App Store · $4.99
 
 [Get GBAGo on the App Store →](https://apps.apple.com/us/app/id6804564400?pt=118326163&ct=geo_pick&mt=8)
 

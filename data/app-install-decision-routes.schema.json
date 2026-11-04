@@ -74,13 +74,13 @@
       "uniqueItems": true
     },
     "app_count": {
-      "const": 56
+      "const": 57
     },
     "locale_count": {
       "const": 50
     },
     "record_count": {
-      "const": 2800
+      "const": 2850
     },
     "locales": {
       "type": "array",
@@ -223,8 +223,8 @@
     },
     "records": {
       "type": "array",
-      "minItems": 2800,
-      "maxItems": 2800,
+      "minItems": 2850,
+      "maxItems": 2850,
       "items": {
         "$ref": "#/$defs/record"
       }
@@ -384,6 +384,7 @@
             "lumimissionpro",
             "lumiweather",
             "maskmyfile",
+            "metrotimehelper",
             "mochi",
             "mochidonestamp",
             "moneytag",

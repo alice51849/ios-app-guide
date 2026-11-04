@@ -6,8 +6,8 @@
   "name": "Lumi Studio 开发者搜索意图目录",
   "description": "第一方目录，说明每款 App 的适用人群、想完成的任务以及直达 App Store 的下载入口。",
   "inLanguage": "zh-Hans",
-  "dateModified": "2026-11-03",
-  "numberOfItems": 56,
+  "dateModified": "2026-11-04",
+  "numberOfItems": 57,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
     {
@@ -3642,6 +3642,72 @@
           "isAccessibleForFree": false
         },
         "price": "22",
+        "priceCurrency": "CNY",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "CN"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 57,
+      "url": "https://apps.apple.com/cn/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-metrotimehelper",
+        "url": "https://apps.apple.com/cn/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
+        "name": "捷运时间助手：台北地铁换乘",
+        "description": "专为台湾·台北捷运打造：只要说出几点要到，捷运时间助手就告诉你最晚几点必须进站。",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6819061896",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6819061896"
+          },
+          "name": "捷运时间助手：台北地铁换乘",
+          "operatingSystem": "iOS",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/cn/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/cn/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/cn/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/cn/app/id6819061896?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/zh-Hans/metrotimehelper.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6819061896",
+          "inLanguage": "zh-Hans",
+          "description": "专为台湾·台北捷运打造：只要说出几点要到，捷运时间助手就告诉你最晚几点必须进站。",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-metrotimehelper"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
         "priceCurrency": "CNY",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {

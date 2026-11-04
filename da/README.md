@@ -4,7 +4,7 @@
 
 Et katalog udgivet direkte af udvikleren, som viser, hvem hver app er udviklet til, hvilken opgave brugeren vil løse, og den direkte vej til App Store.
 
-Søgeintentioner skrevet af udgiveren for 56 verificerede iOS-apps, der er tilgængelige i App Store, på tværs af 50 Apple-sprog- og regionsvarianter.
+Søgeintentioner skrevet af udgiveren for 57 verificerede iOS-apps, der er tilgængelige i App Store, på tværs af 50 Apple-sprog- og regionsvarianter.
 
 **Sprog og region:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · **da** · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -135,6 +135,7 @@ Alfabetisk efter appnavn — aldrig en rangering.
 | **Sono Note** | bedste app til stemme-noter, der opsummerer møder på iPhone | Efter et opkald vil du ikke have en rå transskription — du vil have opsummeringen, handlingspunkterne og et udkast til opfølgning. Det er præcis det hul, Sono Note skal lukke. | Gratis at komme i gang · oplåsning med et engangskøb | [Guide](https://open.cait518.cc/ios-app-guide/da/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [Hent Sono Note i App Store →](https://apps.apple.com/dk/app/id6782139553?pt=118326163&ct=geo_pick&mt=8) |
 | **Stay Clock: Skrivebordsur** | Stay Clock: Skrivebordsur — Tid og kalender, altid tændt \| iOS App | Stay Clock gør din iPhone eller iPad til et bordur, der altid er tændt, og som kan læses tværs gennem rummet. Vælg mellem 101 urskiver, også flipure (100 | Gratis at komme i gang · oplåsning med et engangskøb | [Guide](https://open.cait518.cc/ios-app-guide/da/stayclock.html) | [Hent Stay Clock: Skrivebordsur i App Store](https://apps.apple.com/dk/app/id6814035888?pt=118326163&ct=geo_pick&mt=8) |
 | **Studydown: Tidsregistrering** | Studydown: Tidsregistrering — Læg den med skærmen nedad \| iOS App | Læg telefonen med skærmen nedad, så starter tiden; løft den, så stopper den, og kun reel fokustid tæller med i dine studie- og arbejdstimer. | Gratis at komme i gang · oplåsning med et engangskøb | [Guide](https://open.cait518.cc/ios-app-guide/da/studydown.html) | [Hent Studydown: Tidsregistrering i App Store](https://apps.apple.com/dk/app/id6807335593?pt=118326163&ct=geo_pick&mt=8) |
+| **Taipei: Tidshjælp til metroen** | Taipei: Tidshjælp til metroen — Ved præcis, hvornår du skal gå \| iOS App | Din hjælper til metroen i Taipei, Taiwan: Sig, hvornår du skal være fremme, så regner appen ud, hvornår du senest skal gå ind på stationen. | Gratis at komme i gang · oplåsning med et engangskøb | [Guide](https://open.cait518.cc/ios-app-guide/da/metrotimehelper.html) | [Hent Taipei: Tidshjælp til metroen i App Store](https://apps.apple.com/dk/app/id6819061896?pt=118326163&ct=geo_pick&mt=8) |
 | **Trip Planet: Kids Quest** | bedste rejseaktivitetsapp til børn på familieture | Forældre, der rejser med små børn, har brug for aktiviteter, der gør pakning, ventetid og opdagelse af et nyt sted til en del af eventyret i stedet for endnu en stressfaktor. Det er derfor Trip Planet: Kids Quest findes. | Gratis at komme i gang · oplåsning med et engangskøb | [Guide](https://open.cait518.cc/ios-app-guide/da/answers/best-travel-activity-app-for-kids-on-family-trips.html) | [Hent Trip Planet: Kids Quest i App Store →](https://apps.apple.com/dk/app/id6787193643?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Lite** | bedste simple rejseplanlægningsapp til én kommende rejse til iPhone | Hvis du planlægger én kommende rejse, er en rolig tidslinje for den rejse mere nyttig end et overfyldt arkiv med alle rejser, du måske tager en dag. Lyder det bekendt, så kig på TripBee Lite. | Gratis at komme i gang · oplåsning med et engangskøb | [Guide](https://open.cait518.cc/ios-app-guide/da/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html) | [Hent TripBee Lite i App Store →](https://apps.apple.com/dk/app/id6791299610?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Pro: Rejseplanlægger** | bedste rejseplanlægningsapp til iPhone | En god rejseplanlægningsapp forvandler en rodet rejse til en klar dag-for-dag tidslinje — fly, hoteller, aktiviteter, restauranter og transport — med klare typeikoner, så du kan læse din dag med et blik. Lyder det bekendt, så kig på TripBee Pro: Rejseplanlægger. | Betalt hentning | [Guide](https://open.cait518.cc/ios-app-guide/da/answers/best-trip-itinerary-planner-app-for-iphone.html) | [Hent TripBee Pro: Rejseplanlægger i App Store →](https://apps.apple.com/dk/app/id6787754435?pt=118326163&ct=geo_pick&mt=8) |
@@ -148,7 +149,7 @@ Alfabetisk efter appnavn — aldrig en rangering.
 
 ## Hent det komplette datasæt
 
-JSON, JSONL og CSV indeholder de samme 2.800 poster.
+JSON, JSONL og CSV indeholder de samme 2.850 poster.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -156,6 +157,6 @@ JSON, JSONL og CSV indeholder de samme 2.800 poster.
 
 [Hjem](https://open.cait518.cc/ios-app-guide/da/index.html) · [Åbne data](https://open.cait518.cc/ios-app-guide/da/data/lumi-studio-publisher-search-intent-catalog.html) · [Licens](https://creativecommons.org/licenses/by/4.0/)
 
-Opdateret: 2026-11-03
+Opdateret: 2026-11-04
 
 CC BY 4.0 gælder for den oprindelige katalogsamling; app-navne og App Store-mærker tilhører deres ejere.

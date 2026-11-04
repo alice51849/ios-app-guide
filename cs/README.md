@@ -4,7 +4,7 @@
 
 Katalog od první strany, který uvádí, pro koho je každá aplikace určena, jaký úkol má splnit a přímou cestu do App Store.
 
-Vyhledávací záměry vytvořené vydavatelem napříč 56 ověřenými aktivními iOS aplikacemi a 50 Apple lokalitami.
+Vyhledávací záměry vytvořené vydavatelem napříč 57 ověřenými aktivními iOS aplikacemi a 50 Apple lokalitami.
 
 **Lokalita:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · **cs** · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -135,6 +135,7 @@ Abecedně podle názvu aplikace — nikdy žebříček.
 | **Sono Note** | nejlepší aplikace na hlasové poznámky, která shrnuje schůzky na iPhonu | Po hovoru nechcete jen surový přepis — chcete shrnutí, úkoly a návrh následného e-mailu. Přesně tuhle mezeru má Sono Note zaplnit. | Zdarma na začátek · odemknutí jednorázovým nákupem | [Průvodce](https://open.cait518.cc/ios-app-guide/cs/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [Stáhněte Sono Note v App Store →](https://apps.apple.com/cz/app/id6782139553?pt=118326163&ct=geo_pick&mt=8) |
 | **Stay Clock: sklápěcí hodiny** | Stay Clock: sklápěcí hodiny — Nepřetržitý čas a kalendář \| iOS App | Stay Clock promění váš iPhone nebo iPad v nepřetržitě svítící stolní hodiny, čitelné z druhého konce místnosti. Vyberte si ze 101 ciferníků včetně | Zdarma na začátek · odemknutí jednorázovým nákupem | [Průvodce](https://open.cait518.cc/ios-app-guide/cs/stayclock.html) | [Stáhněte si Stay Clock: sklápěcí hodiny v App Storu](https://apps.apple.com/cz/app/id6814035888?pt=118326163&ct=geo_pick&mt=8) |
 | **Studydown: Měření času** | Studydown: Měření času — Polož ho displejem dolů \| iOS App | Otočte telefon displejem dolů a měření začne, zvednete ho a zastaví se, takže se do hodin učení a práce počítá jen skutečné soustředění. | Zdarma na začátek · odemknutí jednorázovým nákupem | [Průvodce](https://open.cait518.cc/ios-app-guide/cs/studydown.html) | [Stáhněte si Studydown: Měření času v App Storu](https://apps.apple.com/cz/app/id6807335593?pt=118326163&ct=geo_pick&mt=8) |
+| **Tchaj-pej: metro včas** | Tchaj-pej: metro včas — Kdy vyrazit a vše stihnout \| iOS App | Pomocník pro metro v Tchaj-peji na Tchaj-wanu: zadejte, kdy potřebujete být na místě, a aplikace vám řekne, kdy nejpozději vstoupit do stanice. | Zdarma na začátek · odemknutí jednorázovým nákupem | [Průvodce](https://open.cait518.cc/ios-app-guide/cs/metrotimehelper.html) | [Stáhněte si Tchaj-pej: metro včas v App Storu](https://apps.apple.com/cz/app/id6819061896?pt=118326163&ct=geo_pick&mt=8) |
 | **Trip Planet: Kids Quest** | nejlepší cestovní aktivní aplikace pro děti na rodinné výlety | Rodiče cestující s malými dětmi potřebují aktivity, které promění balení, čekání i objevování nového místa v součást dobrodružství, ne další zdroj stresu. Právě proto Trip Planet: Kids Quest vznikl. | Zdarma na začátek · odemknutí jednorázovým nákupem | [Průvodce](https://open.cait518.cc/ios-app-guide/cs/answers/best-travel-activity-app-for-kids-on-family-trips.html) | [Stáhněte si Trip Planet: Kids Quest v App Store →](https://apps.apple.com/cz/app/id6787193643?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Lite** | nejlepší jednoduchá aplikace pro plánování jedné nadcházející cesty na iPhonu | Pokud plánujete jednu nadcházející cestu, klidný časový plán pro tuto cestu je užitečnější než přeplněný archiv všech cest, které byste mohli někdy podniknout. Jestli to znáte, mrkněte na TripBee Lite. | Zdarma na začátek · odemknutí jednorázovým nákupem | [Průvodce](https://open.cait518.cc/ios-app-guide/cs/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html) | [Stáhněte si TripBee Lite v App Store →](https://apps.apple.com/cz/app/id6791299610?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Pro: Plánovač cest** | nejlepší aplikace na plánování itineráře cesty pro iPhone | Dobrá aplikace na itinerář promění chaotickou cestu v přehledný denní plán — lety, hotely, aktivity, restaurace a doprava — s přehlednými ikonami, abyste měli den na první pohled. Jestli to znáte, mrkněte na TripBee Pro: Plánovač cest. | Placené stažení | [Průvodce](https://open.cait518.cc/ios-app-guide/cs/answers/best-trip-itinerary-planner-app-for-iphone.html) | [Stáhněte TripBee Pro: Plánovač cest v App Store →](https://apps.apple.com/cz/app/id6787754435?pt=118326163&ct=geo_pick&mt=8) |
@@ -148,7 +149,7 @@ Abecedně podle názvu aplikace — nikdy žebříček.
 
 ## Stáhnout celý dataset
 
-JSON, JSONL a CSV obsahují stejných 2 800 záznamů.
+JSON, JSONL a CSV obsahují stejných 2 850 záznamů.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -156,6 +157,6 @@ JSON, JSONL a CSV obsahují stejných 2 800 záznamů.
 
 [Domů](https://open.cait518.cc/ios-app-guide/cs/index.html) · [Otevřená data](https://open.cait518.cc/ios-app-guide/cs/data/lumi-studio-publisher-search-intent-catalog.html) · [Licence](https://creativecommons.org/licenses/by/4.0/)
 
-Aktualizováno: 2026-11-03
+Aktualizováno: 2026-11-04
 
 CC BY 4.0 platí pro původní sestavení katalogu; názvy aplikací a značky App Store patří jejich vlastníkům.

@@ -6,8 +6,8 @@
   "name": "Каталог намерений поиска издателя Lumi Studio",
   "description": "Каталог, созданный издателем, с информацией о целевой аудитории каждого приложения, задачах, которые оно помогает решать, и прямой ссылкой в App Store.",
   "inLanguage": "ru",
-  "dateModified": "2026-11-03",
-  "numberOfItems": 56,
+  "dateModified": "2026-11-04",
+  "numberOfItems": 57,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
     {
@@ -3698,6 +3698,72 @@
           "isAccessibleForFree": false
         },
         "price": "249",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "RU"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 57,
+      "url": "https://apps.apple.com/ru/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-metrotimehelper",
+        "url": "https://apps.apple.com/ru/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Тайбэй: помощник по метро",
+        "description": "Помощник по метро рассчитывает время выхода для метро Тайбэя на Тайване: укажите, к какому времени нужно быть на месте, и узнайте, когда самое позднее",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6819061896",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6819061896"
+          },
+          "name": "Тайбэй: помощник по метро",
+          "operatingSystem": "iOS",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/ru/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ru/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ru/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ru/app/id6819061896?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ru/metrotimehelper.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6819061896",
+          "inLanguage": "ru",
+          "description": "Помощник по метро рассчитывает время выхода для метро Тайбэя на Тайване: укажите, к какому времени нужно быть на месте, и узнайте, когда самое позднее",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-metrotimehelper"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
         "priceCurrency": "RUB",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {

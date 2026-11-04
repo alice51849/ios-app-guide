@@ -4,7 +4,7 @@
 
 ਇੱਕ ਪਹਿਲਾ-ਪੱਖ ਕੈਟਾਲੌਗ ਜਿਸ ਵਿੱਚ ਦਰਸਾਇਆ ਗਿਆ ਹੈ ਕਿ ਹਰ ਐਪ ਕਿਸ ਲਈ ਬਣਾਇਆ ਗਿਆ ਹੈ, ਉਹ ਕਿਹੜਾ ਕੰਮ ਪੂਰਾ ਕਰਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰ ਰਿਹਾ ਹੈ, ਅਤੇ ਸਿੱਧਾ App Store ਪੱਥ।
 
-56 ਪ੍ਰਮਾਣਿਤ ਜੀਵੰਤ iOS ਐਪਸ ਅਤੇ 50 Apple ਸਥਾਨਕ ਭਾਸ਼ਾਵਾਂ ਵਿੱਚ ਪ੍ਰਕਾਸ਼ਕ-ਲਿਖੇ ਖੋਜ ਇਰਾਦੇ।
+57 ਪ੍ਰਮਾਣਿਤ ਜੀਵੰਤ iOS ਐਪਸ ਅਤੇ 50 Apple ਸਥਾਨਕ ਭਾਸ਼ਾਵਾਂ ਵਿੱਚ ਪ੍ਰਕਾਸ਼ਕ-ਲਿਖੇ ਖੋਜ ਇਰਾਦੇ।
 
 **ਸਥਾਨਕ ਭਾਸ਼ਾ:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · **pa-IN** · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -145,10 +145,11 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **Wordmate Lite: ਅੰਗਰੇਜ਼ੀ ਸਿੱਖੋ** | Wordmate Lite: ਅੰਗਰੇਜ਼ੀ ਸਿੱਖੋ — ਰੋਜ਼ 5 ਨਵੇਂ ਸ਼ਬਦ, ਇੱਕ ਮਿੰਟ \| iOS App | ਲਗਭਗ ਇੱਕ ਮਿੰਟ ਵਿੱਚ 5 ਸ਼ਬਦ ਸਿੱਖੋ: ਅੰਗਰੇਜ਼ੀ, ਜਪਾਨੀ, ਕੋਰੀਆਈ ਜਾਂ 44 ਭਾਸ਼ਾਵਾਂ ਵਿੱਚੋਂ ਕੋਈ ਵੀ, ਸਫ਼ਰ, ਬਾਹਰ ਖਾਣਾ ਅਤੇ ਖਰੀਦਦਾਰੀ ਵਰਗੇ ਅਸਲ ਹਾਲਾਤਾਂ ਤੋਂ ਸ਼ੁਰੂ ਕਰਕੇ। | ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਅਨਲੌਕ | [ਗਾਈਡ](https://open.cait518.cc/ios-app-guide/pa-IN/wordmatelite.html) | [App Store ਤੋਂ Wordmate Lite: ਅੰਗਰੇਜ਼ੀ ਸਿੱਖੋ ਪ੍ਰਾਪਤ ਕਰੋ](https://apps.apple.com/in/app/id6797601720?pt=118326163&ct=geo_pick&mt=8) |
 | **Wordmate: Learn 44 Languages** | Apple Watch ਵਾਲੇ ਵਿਆਸਤ ਯਾਤਰੀਆਂ ਲਈ ਸਭ ਤੋਂ ਵਧੀਆ ਸ਼ਬਦਾਵਲੀ ਐਪ | ਵਿਆਸਤ ਯਾਤਰੀਆਂ ਨੂੰ ਐਸਾ ਸ਼ਬਦਾਵਲੀ ਅਭਿਆਸ ਚਾਹੀਦਾ ਜੋ ਖਾਲੀ ਸਮੇਂ ਵਿੱਚ ਫਿੱਟ ਕਰੇ, ਪੂਰੀ ਪਾਠ, ਨਵਾਂ ਖਾਤਾ ਜਾਂ ਹਰ ਸਮੀਖਿਆ ਲਈ ਫੋਨ ਦੀ ਲੋੜ ਨਾ ਹੋਵੇ। Wordmate: Learn 44 Languages ਦੀ ਸ਼ੁਰੂਆਤ ਠੀਕ ਇਸੇ ਦਿੱਕਤ ਤੋਂ ਹੋਈ। | ਭੁਗਤਾਨ ਵਾਲਾ ਡਾਊਨਲੋਡ | [ਗਾਈਡ](https://open.cait518.cc/ios-app-guide/pa-IN/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html) | [Wordmate: Learn 44 Languages App Store 'ਤੇ ਲਵੋ →](https://apps.apple.com/in/app/id6789917808?pt=118326163&ct=geo_pick&mt=8) |
 | **Zipbox: ZIP, RAR, 7z ਅਨਜ਼ਿਪ** | Zipbox: ZIP, RAR, 7z ਅਨਜ਼ਿਪ — ਇਸ਼ਤਿਹਾਰ ਨਹੀਂ, ਪਹਿਲਾਂ ਵੇਖੋ \| iOS App | ਫ਼ੋਨ ਉੱਤੇ ਹੀ ਸਿੱਧੇ RAR, 7z, ZIP ਸਮੇਤ 13 ਕਿਸਮਾਂ ਦੇ ਆਰਕਾਈਵ ਖੋਲ੍ਹੋ। ਕੱਢਣ ਤੋਂ ਪਹਿਲਾਂ ਅੰਦਰ ਵੇਖੋ: ਫ਼ੋਟੋ, ਵੀਡੀਓ, PDF, ਲਿਖਤ ਅਤੇ ਕੋਡ ਦੀ ਝਲਕ ਵੇਖ ਕੇ ਸਿਰਫ਼ ਲੋੜੀਂਦੀ | ਭੁਗਤਾਨ ਵਾਲਾ ਡਾਊਨਲੋਡ | [ਗਾਈਡ](https://open.cait518.cc/ios-app-guide/pa-IN/zipbox.html) | [App Store ਤੋਂ Zipbox: ZIP, RAR, 7z ਅਨਜ਼ਿਪ ਪ੍ਰਾਪਤ ਕਰੋ](https://apps.apple.com/in/app/id6806776579?pt=118326163&ct=geo_pick&mt=8) |
+| **ਮੈਟਰੋ ਸਮਾਂ ਸਹਾਇਕ: Taipei MRT** | ਮੈਟਰੋ ਸਮਾਂ ਸਹਾਇਕ: Taipei MRT — ਕਦੋਂ ਨਿਕਲੋ, ਵੇਲੇ ਸਿਰ ਪਹੁੰਚੋ \| iOS App | ਦੱਸੋ ਤੁਸੀਂ ਕਦੋਂ ਪਹੁੰਚਣਾ ਹੈ, ਤੇ ਮੈਟਰੋ ਸਮਾਂ ਸਹਾਇਕ ਦੱਸੇਗਾ ਕਿ ਤਾਈਵਾਨ ਦੀ ਤਾਈਪੇ ਮੈਟਰੋ (Taipei MRT) ਦੇ ਸਟੇਸ਼ਨ ਵਿੱਚ ਵੜਨ ਦਾ ਆਖ਼ਰੀ ਵੇਲਾ ਕਿਹੜਾ ਹੈ। | ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਅਨਲੌਕ | [ਗਾਈਡ](https://open.cait518.cc/ios-app-guide/pa-IN/metrotimehelper.html) | [App Store ਤੋਂ ਮੈਟਰੋ ਸਮਾਂ ਸਹਾਇਕ: Taipei MRT ਪ੍ਰਾਪਤ ਕਰੋ](https://apps.apple.com/in/app/id6819061896?pt=118326163&ct=geo_pick&mt=8) |
 
 ## ਪੂਰਾ ਡੇਟਾਸੈੱਟ ਡਾਊਨਲੋਡ ਕਰੋ
 
-JSON, JSONL ਅਤੇ CSV ਵਿੱਚ ਉਹੀ 2,800 ਰਿਕਾਰਡ ਹਨ।
+JSON, JSONL ਅਤੇ CSV ਵਿੱਚ ਉਹੀ 2,850 ਰਿਕਾਰਡ ਹਨ।
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -156,6 +157,6 @@ JSON, JSONL ਅਤੇ CSV ਵਿੱਚ ਉਹੀ 2,800 ਰਿਕਾਰਡ ਹਨ
 
 [ਮੁੱਖ ਪੰਨਾ](https://open.cait518.cc/ios-app-guide/pa-IN/index.html) · [ਖੁੱਲਾ ਡੇਟਾ](https://open.cait518.cc/ios-app-guide/pa-IN/data/lumi-studio-publisher-search-intent-catalog.html) · [ਲਾਇਸੈਂਸ](https://creativecommons.org/licenses/by/4.0/)
 
-ਅਪਡੇਟ ਕੀਤਾ ਗਿਆ: 2026-11-03
+ਅਪਡੇਟ ਕੀਤਾ ਗਿਆ: 2026-11-04
 
 CC BY 4.0 ਮੂਲ ਕੈਟਾਲੌਗ ਸੰਕਲਨ 'ਤੇ ਲਾਗੂ ਹੁੰਦਾ ਹੈ; ਐਪ ਨਾਮ ਅਤੇ App Store ਨਿਸ਼ਾਨ ਆਪਣੇ ਮਾਲਕਾਂ ਦੇ ਹਨ।

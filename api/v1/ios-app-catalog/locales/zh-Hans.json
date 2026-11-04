@@ -1,12 +1,12 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-11-03",
-  "content_digest": "b9573af86be05286f86d04d6eb55aa8bc997a5721a54511f01d49ed6b86e8214",
+  "date_modified": "2026-11-04",
+  "content_digest": "d41bfe7e156aabee8cf16c8afd333da7f2ca1d1367dc4352339ff83f32cded2b",
   "locale": "zh-Hans",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 56,
+  "record_count": 57,
   "apps": [
     {
       "key": "notesstudio100",
@@ -98,9 +98,7 @@
         "复制粘贴",
         "工作效率",
         "报告",
-        "阅读",
-        "提示词管理",
-        "ai 提示词"
+        "阅读"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1508,8 +1506,7 @@
         "四岁",
         "五岁",
         "打卡",
-        "游戏",
-        "儿童 习惯"
+        "游戏"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1706,6 +1703,63 @@
       }
     },
     {
+      "key": "metrotimehelper",
+      "app_store_id": "6819061896",
+      "name": "捷运时间助手：台北地铁换乘",
+      "summary": "专为台湾·台北捷运打造：只要说出几点要到，捷运时间助手就告诉你最晚几点必须进站。",
+      "category": "utility",
+      "search_terms": [
+        "时刻表",
+        "末班车",
+        "首班车",
+        "线路图",
+        "台湾",
+        "旅游",
+        "自由行",
+        "攻略",
+        "出行",
+        "MRT",
+        "温泉",
+        "淡水",
+        "通勤",
+        "上班",
+        "迟到",
+        "提醒",
+        "到站",
+        "发车",
+        "行程规划",
+        "七张",
+        "交通",
+        "公共交通",
+        "倒计时",
+        "小组件",
+        "地图",
+        "乘车",
+        "新店",
+        "板南线"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/cn/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/metrotimehelper.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CNY",
+        "formatted_price": "免费",
+        "storefront_url": "https://apps.apple.com/cn/app/id6819061896"
+      }
+    },
+    {
       "key": "mochi",
       "app_store_id": "6785004775",
       "name": "Mochi: 可爱待办清单",
@@ -1856,8 +1910,7 @@
         "团购",
         "活动",
         "家庭",
-        "流水",
-        "项目支出"
+        "流水"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2078,8 +2131,7 @@
         "快递",
         "电话",
         "短信",
-        "邮件",
-        "二维码 安全检测"
+        "邮件"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

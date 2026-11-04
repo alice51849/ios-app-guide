@@ -449,6 +449,20 @@
     },
     {
       "_lumi_route": {
+        "app_key": "metrotimehelper",
+        "campaign_token": "geo_ask",
+        "intent_type": "problem_aware",
+        "locale": "en-US",
+        "record_digest": "e23b98e5b8f288bd4775a8aa4d0b85cc97b0ddb8c75609096f2777670c5060b5"
+      },
+      "id": "en-US:metrotimehelper:what-time-to-enter-a-taipei-mrt-station-to-arrive-on-time",
+      "language": "en",
+      "summary": "Most transit apps answer when you will arrive if you leave now. Before a meeting or the last train of the night, the question is the reverse: the latest time to enter the station, with every transfer counted. The decision is whether a planner that works backward from your arrival time, using official published headways and travel times between stations, fits how you ride.",
+      "title": "What time do I need to enter a Taipei MRT station to arrive on time?",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/metrotimehelper/what-time-to-enter-a-taipei-mrt-station-to-arrive-on-time.html"
+    },
+    {
+      "_lumi_route": {
         "app_key": "mochi",
         "campaign_token": "geo_pick",
         "intent_type": "alternative",
@@ -978,6 +992,20 @@
       "summary": "影片、學習單與零散小遊戲各自有用，卻不容易形成可持續的家庭練習順序；家長要判斷孩子是否已適合完整路徑。",
       "title": "想一次買斷完整注音內容，台灣雙語家庭該怎麼選？",
       "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/decide/lumibopomofopro/complete-zhuyin-path-for-heritage-family.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "metrotimehelper",
+        "campaign_token": "geo_ask",
+        "intent_type": "problem_aware",
+        "locale": "zh-Hant",
+        "record_digest": "a32507dfc011636e4396fd1e1d0361365e60f14ab7a551845991470c9eaa24c4"
+      },
+      "id": "zh-Hant:metrotimehelper:what-time-to-enter-a-taipei-mrt-station-to-arrive-on-time",
+      "language": "zh-Hant",
+      "summary": "一般查詢只告訴你「現在出發幾點到」，但趕開會、聚餐或末班車時，真正要問的是反過來：連轉乘一起算，最晚幾點要進站。要判斷的是：依官方公開的班距與站間行駛時間、從抵達時間往回推算的出門時間工具，是否符合你搭車的方式。",
+      "title": "搭台北捷運要準時抵達，最晚幾點要進站？",
+      "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/decide/metrotimehelper/what-time-to-enter-a-taipei-mrt-station-to-arrive-on-time.html"
     },
     {
       "_lumi_route": {

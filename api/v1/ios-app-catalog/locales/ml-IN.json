@@ -1,12 +1,12 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-11-03",
-  "content_digest": "b9573af86be05286f86d04d6eb55aa8bc997a5721a54511f01d49ed6b86e8214",
+  "date_modified": "2026-11-04",
+  "content_digest": "d41bfe7e156aabee8cf16c8afd333da7f2ca1d1367dc4352339ff83f32cded2b",
   "locale": "ml-IN",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 56,
+  "record_count": 57,
   "apps": [
     {
       "key": "notesstudio100",
@@ -1230,6 +1230,48 @@
         "currency": "INR",
         "formatted_price": "സൗജന്യം",
         "storefront_url": "https://apps.apple.com/in/app/id6792850916"
+      }
+    },
+    {
+      "key": "metrotimehelper",
+      "app_store_id": "6819061896",
+      "name": "Taipei MRT സമയ സഹായി",
+      "summary": "തായ്‌വാനിലെ തായ്പേയ് മെട്രോയ്ക്കായി (Taipei MRT) പ്രത്യേകം ഒരുക്കിയ സമയ സഹായി: എത്ര മണിക്ക് എത്തണമെന്ന് പറഞ്ഞാൽ മതി, എത്ര മണിക്കുള്ളിൽ സ്റ്റേഷനിൽ കയറണമെന്ന് ഇത് ഉടൻ പറയും. 50 ഭാഷകളിൽ ലഭ്യമാണ് എന്നതാണ് ഇതിന്റെ പ്രത്യേകത: ദിവസവും മെട്രോയിൽ യാത്ര ചെയ്യുന്ന തായ്‌വാൻകാർക്കും ആദ്യമായി തായ്പേയ് മെട്രോയിൽ കയറുന്ന ലോകമെമ്പാടുമുള്ള സഞ്ചാരികൾക്കും ഒരുപോലെ എളുപ്പം, മുഴുവനും നിങ്ങൾക്ക് പരിചിതമായ ഭാഷയിൽ. iPhone, iPad, Apple Watch എന്നിവയിലെല്ലാം ഉപയോഗിക്കാം.",
+      "category": "utility",
+      "search_terms": [
+        "metro",
+        "train",
+        "taiwan",
+        "timetable",
+        "route",
+        "map",
+        "transfer",
+        "travel",
+        "xinbeitou",
+        "xiaobitan",
+        "beitou",
+        "മെട്രോ",
+        "തായ്പേയ്"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/in/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/ml-IN/metrotimehelper.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "സൗജന്യം",
+        "storefront_url": "https://apps.apple.com/in/app/id6819061896"
       }
     },
     {

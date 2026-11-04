@@ -4,7 +4,7 @@
 
 Danh mục do chính nhà phát triển công bố, cho biết từng ứng dụng dành cho ai, nhiệm vụ họ muốn hoàn thành và lối truy cập trực tiếp đến App Store.
 
-Ý định tìm kiếm do nhà phát hành biên soạn cho 56 ứng dụng iOS đã xác minh và đang có trên App Store, thuộc 50 ngôn ngữ và khu vực Apple.
+Ý định tìm kiếm do nhà phát hành biên soạn cho 57 ứng dụng iOS đã xác minh và đang có trên App Store, thuộc 50 ngôn ngữ và khu vực Apple.
 
 **Vùng:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · **vi** · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -138,6 +138,7 @@ Sắp xếp theo bảng chữ cái tên ứng dụng — không phải xếp h�
 | **Trip Planet: Kids Quest** | ứng dụng hoạt động du lịch tốt nhất cho trẻ em khi đi cùng gia đình | Phụ huynh đi du lịch cùng trẻ nhỏ cần hoạt động biến việc chuẩn bị hành lý, chờ đợi và khám phá nơi mới thành một phần của chuyến đi thay vì thêm căng thẳng. Trip Planet: Kids Quest ra đời chính vì thế. | Bắt đầu miễn phí · mở khóa bằng một lần mua | [Hướng dẫn](https://open.cait518.cc/ios-app-guide/vi/answers/best-travel-activity-app-for-kids-on-family-trips.html) | [Tải Trip Planet: Kids Quest trên App Store →](https://apps.apple.com/vn/app/id6787193643?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Lite** | ứng dụng lập kế hoạch chuyến đi đơn giản tốt nhất cho một chuyến đi sắp tới trên iPhone | Nếu bạn đang lên kế hoạch cho một hành trình sắp tới, một dòng thời gian yên tĩnh cho chuyến đi đó hữu ích hơn một kho lưu trữ đông đúc của mọi chuyến đi bạn có thể thực hiện một ngày nào đó. Nếu thấy quen, bạn thử xem TripBee Lite. | Bắt đầu miễn phí · mở khóa bằng một lần mua | [Hướng dẫn](https://open.cait518.cc/ios-app-guide/vi/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html) | [Tải TripBee Lite trên App Store →](https://apps.apple.com/vn/app/id6791299610?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Pro: Trip Planner** | ứng dụng lập lịch trình chuyến đi tốt nhất cho iPhone | Một ứng dụng lịch trình tốt biến chuyến đi lộn xộn thành dòng thời gian ngày rõ ràng — chuyến bay, khách sạn, hoạt động, nhà hàng và phương tiện — với biểu tượng loại rõ ràng để bạn có thể xem ngày của mình ngay lập tức — TripBee Pro: Trình lập kế hoạch chuyến đi được thiết kế cho điều này. | Tải xuống trả phí | [Hướng dẫn](https://open.cait518.cc/ios-app-guide/vi/answers/best-trip-itinerary-planner-app-for-iphone.html) | [Tải TripBee Pro: Trình lập kế hoạch chuyến đi trên App Store →](https://apps.apple.com/vn/app/id6787754435?pt=118326163&ct=geo_pick&mt=8) |
+| **Trợ lý giờ MRT Đài Bắc** | Trợ lý giờ MRT Đài Bắc — Hẹn giờ đến, biết giờ phải đi \| iOS App | Trợ lý giờ xuất phát dành cho tàu điện MRT Đài Bắc, Đài Loan. Chỉ cần cho biết bạn muốn đến lúc mấy giờ, ứng dụng sẽ cho biết muộn nhất phải vào ga lúc nào | Bắt đầu miễn phí · mở khóa bằng một lần mua | [Hướng dẫn](https://open.cait518.cc/ios-app-guide/vi/metrotimehelper.html) | [Tải Trợ lý giờ MRT Đài Bắc trên App Store](https://apps.apple.com/vn/app/id6819061896?pt=118326163&ct=geo_pick&mt=8) |
 | **Unblurry** | ứng dụng tốt nhất để sửa ảnh mờ của trẻ em trên iPhone | Trẻ con không bao giờ đứng yên, nên ảnh lấy nét mềm và rung máy là điều không tránh khỏi | Bắt đầu miễn phí · mở khóa bằng một lần mua | [Hướng dẫn](https://open.cait518.cc/ios-app-guide/vi/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html) | [Tải Unblurry trên App Store →](https://apps.apple.com/vn/app/id6782275018?pt=118326163&ct=geo_pick&mt=8) |
 | **UsageNow: Theo dõi dùng AI** | UsageNow: Theo dõi dùng AI — Hạn mức Claude, Codex, Copilot \| iOS App | Chạm giới hạn AI giữa chừng công việc? UsageNow cho bạn thấy mỗi gói AI còn lại bao nhiêu và chính xác khi nào được đặt lại, ngay trên Màn hình chính, và | Bắt đầu miễn phí · mở khóa bằng một lần mua | [Hướng dẫn](https://open.cait518.cc/ios-app-guide/vi/claudeusagemini.html) | [Tải UsageNow: Theo dõi dùng AI trên App Store](https://apps.apple.com/vn/app/id6818607603?pt=118326163&ct=geo_pick&mt=8) |
 | **WiFi Aid** | best wifi troubleshooting app for remote workers with connected but no internet | When Wi-Fi says connected but work still cannot get online, the useful first step is to identify whether the failure is DNS, the wider internet, instability or one destination instead of guessing. WiFi Aid sticks to that one job and leaves the rest out. | Tải xuống trả phí | [Hướng dẫn](https://open.cait518.cc/ios-app-guide/vi/answers/best-wifi-troubleshooting-app-for-remote-workers-with-connected-but-no-internet.html) | [Tải WiFi Aid trên App Store →](https://apps.apple.com/vn/app/id6790467886?pt=118326163&ct=geo_pick&mt=8) |
@@ -148,7 +149,7 @@ Sắp xếp theo bảng chữ cái tên ứng dụng — không phải xếp h�
 
 ## Tải xuống toàn bộ dữ liệu
 
-JSON, JSONL và CSV chứa cùng 2.800 bản ghi.
+JSON, JSONL và CSV chứa cùng 2.850 bản ghi.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -156,6 +157,6 @@ JSON, JSONL và CSV chứa cùng 2.800 bản ghi.
 
 [Trang chủ](https://open.cait518.cc/ios-app-guide/vi/index.html) · [Dữ liệu mở](https://open.cait518.cc/ios-app-guide/vi/data/lumi-studio-publisher-search-intent-catalog.html) · [Giấy phép](https://creativecommons.org/licenses/by/4.0/)
 
-Cập nhật: 2026-11-03
+Cập nhật: 2026-11-04
 
 CC BY 4.0 áp dụng cho bản tổng hợp danh mục gốc; tên ứng dụng và nhãn hiệu App Store thuộc sở hữu của chủ sở hữu tương ứng.

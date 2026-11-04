@@ -4,7 +4,7 @@
 
 En førsteparts katalog over hvem hver app er laget for, oppgaven de prøver å fullføre, og den direkte App Store-stien.
 
-Utgiver-skapte søkeintensjoner på tvers av 56 verifiserte aktive iOS-apper og 50 Apple-lokaler.
+Utgiver-skapte søkeintensjoner på tvers av 57 verifiserte aktive iOS-apper og 50 Apple-lokaler.
 
 **Lokale:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · **no** · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -135,6 +135,7 @@ Alfabetisk etter appnavn — aldri en rangering.
 | **Sono Note** | beste app for taleposter som oppsummerer møter på iPhone | Etter en samtale vil du ikke ha en rå transkripsjon — du vil ha oppsummeringen, handlingspunktene og et utkast til oppfølging. Det er nettopp det hullet Sono Note skal tette. | Gratis å starte · opplåsing med engangskjøp | [Guide](https://open.cait518.cc/ios-app-guide/no/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [Last ned Sono Note i App Store →](https://apps.apple.com/no/app/id6782139553?pt=118326163&ct=geo_pick&mt=8) |
 | **Stay Clock: Skrivebordsklokke** | Stay Clock: Skrivebordsklokke — Tid og kalender, alltid på \| iOS App | Stay Clock gjør iPhone eller iPad om til en bordklokke som alltid er på, og som kan leses tvers over rommet. Velg blant 101 urskiver, også flippklokker | Gratis å starte · opplåsing med engangskjøp | [Guide](https://open.cait518.cc/ios-app-guide/no/stayclock.html) | [Last ned Stay Clock: Skrivebordsklokke fra App Store](https://apps.apple.com/no/app/id6814035888?pt=118326163&ct=geo_pick&mt=8) |
 | **Studydown: Tidsregistrering** | Studydown: Tidsregistrering — Legg den med skjermen ned \| iOS App | Legg telefonen med skjermen ned, så starter tiden; løft den, så stopper den, og bare ekte fokustid teller i studie- og arbeidstimene dine. | Gratis å starte · opplåsing med engangskjøp | [Guide](https://open.cait518.cc/ios-app-guide/no/studydown.html) | [Last ned Studydown: Tidsregistrering fra App Store](https://apps.apple.com/no/app/id6807335593?pt=118326163&ct=geo_pick&mt=8) |
+| **Taipei: Tidshjelp for metroen** | Taipei: Tidshjelp for metroen — Vet når du må dra hjemmefra \| iOS App | Si når du må være fremme, så regner appen ut når du senest må gå inn på stasjonen på T-banen i Taipei, Taiwan. | Gratis å starte · opplåsing med engangskjøp | [Guide](https://open.cait518.cc/ios-app-guide/no/metrotimehelper.html) | [Last ned Taipei: Tidshjelp for metroen fra App Store](https://apps.apple.com/no/app/id6819061896?pt=118326163&ct=geo_pick&mt=8) |
 | **Trip Planet: Kids Quest** | beste reiseaktivitetsapp for barn på familietur | Foreldre som reiser med små barn trenger aktiviteter som gjør pakking, venting og oppdagelse av et nytt sted til en del av eventyret i stedet for enda en kilde til stress. Det er derfor Trip Planet: Kids Quest finnes. | Gratis å starte · opplåsing med engangskjøp | [Guide](https://open.cait518.cc/ios-app-guide/no/answers/best-travel-activity-app-for-kids-on-family-trips.html) | [Få Trip Planet: Kids Quest på App Store →](https://apps.apple.com/no/app/id6787193643?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Lite** | beste enkle reiseplanlegger-app for én kommende tur til iPhone | Hvis du planlegger én kommende reise, er en rolig tidslinje for den turen mer nyttig enn et overfylt arkiv med alle turene du kanskje tar en dag. Kjenner du deg igjen, ta en titt på TripBee Lite. | Gratis å starte · opplåsing med engangskjøp | [Guide](https://open.cait518.cc/ios-app-guide/no/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html) | [Få TripBee Lite i App Store →](https://apps.apple.com/no/app/id6791299610?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Pro: Reiseplanlegger** | beste app for reiseplanlegger på iPhone | En god reiseplan-app gjør en rotete tur om til en klar dag-for-dag tidslinje — fly, hotell, aktiviteter, restauranter og transport — med tydelige typeikoner så du kan lese dagen din på et blikk. Kjenner du deg igjen, ta en titt på TripBee Pro: Reiseplanlegger. | Betalt nedlasting | [Guide](https://open.cait518.cc/ios-app-guide/no/answers/best-trip-itinerary-planner-app-for-iphone.html) | [Last ned TripBee Pro: Reiseplanlegger i App Store →](https://apps.apple.com/no/app/id6787754435?pt=118326163&ct=geo_pick&mt=8) |
@@ -148,7 +149,7 @@ Alfabetisk etter appnavn — aldri en rangering.
 
 ## Last ned hele datasettet
 
-JSON, JSONL og CSV inneholder de samme 2 800 postene.
+JSON, JSONL og CSV inneholder de samme 2 850 postene.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -156,6 +157,6 @@ JSON, JSONL og CSV inneholder de samme 2 800 postene.
 
 [Hjem](https://open.cait518.cc/ios-app-guide/no/index.html) · [Åpne data](https://open.cait518.cc/ios-app-guide/no/data/lumi-studio-publisher-search-intent-catalog.html) · [Lisens](https://creativecommons.org/licenses/by/4.0/)
 
-Oppdatert: 2026-11-03
+Oppdatert: 2026-11-04
 
 CC BY 4.0 gjelder for den opprinnelige katalogsammensetningen; appnavn og App Store-merker tilhører sine eiere.

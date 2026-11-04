@@ -6,8 +6,8 @@
   "name": "Lumi Studio প্রকাশক অনুসন্ধান উদ্দেশ্য ক্যাটালগ",
   "description": "প্রতিটি অ্যাপ কার জন্য তৈরি, তারা কোন কাজ সম্পন্ন করতে চায়, এবং সরাসরি App Store পথের প্রথম পক্ষের ক্যাটালগ।",
   "inLanguage": "bn-BD",
-  "dateModified": "2026-10-23",
-  "numberOfItems": 56,
+  "dateModified": "2026-11-04",
+  "numberOfItems": 57,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
     {
@@ -3329,6 +3329,66 @@
         "url": null,
         "mainEntityOfPage": {
           "@id": "https://open.cait518.cc/ios-app-guide/bn-BD/zipbox.html#webpage"
+        },
+        "market_availability": {
+          "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+          "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+          "evidence": {
+            "source_url": "https://support.apple.com/en-us/118205",
+            "observed_at": "2026-09-12",
+            "country": "BD",
+            "apple_media_services_markets": 174,
+            "country_listed": false,
+            "lookup_app_results": 0,
+            "lookup_control_results": 0,
+            "redirect_market": "US"
+          },
+          "value": "N/A",
+          "content_retained": true,
+          "publishable": false,
+          "facts_allowed": false,
+          "outbox_count": 0
+        }
+      },
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+        "evidence": {
+          "source_url": "https://support.apple.com/en-us/118205",
+          "observed_at": "2026-09-12",
+          "country": "BD",
+          "apple_media_services_markets": 174,
+          "country_listed": false,
+          "lookup_app_results": 0,
+          "lookup_control_results": 0,
+          "redirect_market": "US"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 57,
+      "url": "https://open.cait518.cc/ios-app-guide/bn-BD/metrotimehelper.html",
+      "item": {
+        "@context": "https://schema.org",
+        "@type": "MobileApplication",
+        "@id": "urn:apple:app:id6819061896",
+        "identifier": {
+          "@type": "PropertyValue",
+          "propertyID": "Apple App Store ID",
+          "value": "6819061896"
+        },
+        "name": "মেট্রো সময় সহায়ক: Taipei MRT",
+        "operatingSystem": "iOS",
+        "applicationCategory": "UtilitiesApplication",
+        "url": null,
+        "mainEntityOfPage": {
+          "@id": "https://open.cait518.cc/ios-app-guide/bn-BD/metrotimehelper.html#webpage"
         },
         "market_availability": {
           "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",

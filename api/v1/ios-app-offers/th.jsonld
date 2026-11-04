@@ -6,8 +6,8 @@
   "name": "แคตตาล็อกเจตนาการค้นหาจากผู้พัฒนา Lumi Studio",
   "description": "แคตตาล็อกที่ผู้พัฒนาเผยแพร่โดยตรง ระบุว่าแต่ละแอปเหมาะกับใคร ต้องการทำงานใดให้เสร็จ และเข้าถึง App Store โดยตรงได้อย่างไร",
   "inLanguage": "th",
-  "dateModified": "2026-11-03",
-  "numberOfItems": 56,
+  "dateModified": "2026-11-04",
+  "numberOfItems": 57,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
     {
@@ -3698,6 +3698,72 @@
           "isAccessibleForFree": false
         },
         "price": "129",
+        "priceCurrency": "THB",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "TH"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 57,
+      "url": "https://apps.apple.com/th/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/th.jsonld#offer-metrotimehelper",
+        "url": "https://apps.apple.com/th/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
+        "name": "ผู้ช่วยเวลารถไฟฟ้า MRT ไทเป",
+        "description": "ผู้ช่วยจัดการเวลาออกเดินทางสำหรับรถไฟฟ้า MRT ไทเป ไต้หวัน เพียงบอกว่าต้องไปถึงกี่โมง แอปจะบอกทันทีว่าต้องเข้าสถานีช้าสุดกี่โมง",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6819061896",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6819061896"
+          },
+          "name": "ผู้ช่วยเวลารถไฟฟ้า MRT ไทเป",
+          "operatingSystem": "iOS",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/th/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/th/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/th/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/th/app/id6819061896?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/th/metrotimehelper.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6819061896",
+          "inLanguage": "th",
+          "description": "ผู้ช่วยจัดการเวลาออกเดินทางสำหรับรถไฟฟ้า MRT ไทเป ไต้หวัน เพียงบอกว่าต้องไปถึงกี่โมง แอปจะบอกทันทีว่าต้องเข้าสถานีช้าสุดกี่โมง",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/th.jsonld#offer-metrotimehelper"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
         "priceCurrency": "THB",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {

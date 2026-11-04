@@ -2,7 +2,7 @@
 title: "best period tracker app no account required iphone"
 lang: "en-US"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/cyca/decision/l/en-US/index.html"
-modified: "2026-11-03"
+modified: "2026-11-04"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -21,7 +21,7 @@ In a category where data sensitivity is the whole story, the right period tracke
 - No tracking
 - Private / on-device
 - App Store · Free
-- ★ 5.0/5 · 2
+- ★ 4.7/5 · 3
 
 [Get Cyca on the App Store →](https://apps.apple.com/us/app/id6782251621?pt=118326163&ct=geo_pick&mt=8)
 

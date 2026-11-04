@@ -1,12 +1,12 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-11-03",
-  "content_digest": "b9573af86be05286f86d04d6eb55aa8bc997a5721a54511f01d49ed6b86e8214",
+  "date_modified": "2026-11-04",
+  "content_digest": "d41bfe7e156aabee8cf16c8afd333da7f2ca1d1367dc4352339ff83f32cded2b",
   "locale": "hi",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 56,
+  "record_count": 57,
   "apps": [
     {
       "key": "notesstudio100",
@@ -1277,6 +1277,48 @@
         "currency": "INR",
         "formatted_price": "मुफ़्त",
         "storefront_url": "https://apps.apple.com/in/app/id6792850916"
+      }
+    },
+    {
+      "key": "metrotimehelper",
+      "app_store_id": "6819061896",
+      "name": "मेट्रो समय सहायक: Taipei MRT",
+      "summary": "ताइवान के ताइपे मेट्रो (Taipei MRT) के लिए खास तौर पर बना: बताइए आपको कब पहुँचना है, और मेट्रो समय सहायक बताएगा कि स्टेशन में घुसने का आखिरी वक़्त क्या है।",
+      "category": "utility",
+      "search_terms": [
+        "metro",
+        "train",
+        "timing",
+        "schedule",
+        "route",
+        "map",
+        "station",
+        "taiwan",
+        "interchange",
+        "ताइपे",
+        "टाइमटेबल",
+        "आखिरी",
+        "xinbeitou"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/in/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/hi/metrotimehelper.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "मुफ़्त",
+        "storefront_url": "https://apps.apple.com/in/app/id6819061896"
       }
     },
     {

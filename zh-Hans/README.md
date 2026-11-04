@@ -4,7 +4,7 @@
 
 第一方目录，说明每款 App 的适用人群、想完成的任务以及直达 App Store 的下载入口。
 
-由开发者撰写的搜索意图，涵盖 56 款已验证上架的 iOS App 和 Apple 官方 50 个地区语言。
+由开发者撰写的搜索意图，涵盖 57 款已验证上架的 iOS App 和 Apple 官方 50 个地区语言。
 
 **地区语言:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · **zh-Hans** · [zh-Hant](../zh-Hant/)
 
@@ -145,10 +145,11 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **Wordmate Lite** | 适合成年人每天一分钟、不用整理词卡的最佳免费背单词应用 | Wordmate Lite — 每天五个单词。免费开始 · 一次性解锁 · 无订阅。 | 免费开始使用 · 一次购买解锁 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-free-vocabulary-app-for-adults-one-minute-a-day-no-flashcard-decks.html) | [前往 App Store 获取 Wordmate Lite →](https://apps.apple.com/cn/app/id6797601720?pt=118326163&ct=geo_pick&mt=8) |
 | **Wordmate：学习44种语言** | 适合通勤族和Apple Watch用户的最佳词汇App | 通勤族要的是零碎时间就能背几个词，不必上完整课程、不必注册账号，也不必每次都得把手机拿出来复习。Wordmate：学习44种语言 就是从这个问题开始做的。 | 付费下载 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html) | [在App Store获取Wordmate：学习44种语言 →](https://apps.apple.com/cn/app/id6789917808?pt=118326163&ct=geo_pick&mt=8) |
 | **Zipbox 解压缩：RAR ZIP 7z** | Zipbox 解压缩：RAR ZIP 7z — 零广告，内容先看再处理 \| iOS App | 手机直接打开 RAR、7z、ZIP 等 13 种压缩包。不用先解压就能看里面有什么，照片、视频、PDF、文本和代码都能预览，只取出你要的那一个文件。 | 付费下载 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hans/zipbox.html) | [在 App Store 获取 Zipbox 解压缩：RAR ZIP 7z](https://apps.apple.com/cn/app/id6806776579?pt=118326163&ct=geo_pick&mt=8) |
+| **捷运时间助手：台北地铁换乘** | 捷运时间助手：台北地铁换乘 — 倒推出门时间｜新北投·小碧潭支线 \| iOS App | 专为台湾·台北捷运打造：只要说出几点要到，捷运时间助手就告诉你最晚几点必须进站。 | 免费开始使用 · 一次购买解锁 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hans/metrotimehelper.html) | [在 App Store 获取 捷运时间助手：台北地铁换乘](https://apps.apple.com/cn/app/id6819061896?pt=118326163&ct=geo_pick&mt=8) |
 
 ## 下载完整数据集
 
-JSON、JSONL 和 CSV 格式包含相同的 2,800 条记录。
+JSON、JSONL 和 CSV 格式包含相同的 2,850 条记录。
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -156,6 +157,6 @@ JSON、JSONL 和 CSV 格式包含相同的 2,800 条记录。
 
 [首页](https://open.cait518.cc/ios-app-guide/zh-Hans/index.html) · [开放数据](https://open.cait518.cc/ios-app-guide/zh-Hans/data/lumi-studio-publisher-search-intent-catalog.html) · [许可协议](https://creativecommons.org/licenses/by/4.0/)
 
-更新日期: 2026-11-03
+更新日期: 2026-11-04
 
 CC BY 4.0 适用于原始目录编纂；应用名称和 App Store 标识归其所有者所有。

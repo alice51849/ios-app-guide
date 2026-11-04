@@ -3,7 +3,7 @@
 > প্রতিটি iOS অ্যাপের ফিচার, মূল্য ও সাধারণ প্রশ্নের সাজানো তথ্য।
 
 locale: bn-BD
-apps: 56
+apps: 57
 - অ্যাপ ডিরেক্টরি: https://open.cait518.cc/ios-app-guide/bn-BD/tools/private-pay-once-iphone-app-finder.html
 - অ্যাপ ডিরেক্টরি · PWA: https://open.cait518.cc/ios-app-guide/bn-BD/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/bn-BD.jsonld
@@ -251,5 +251,9 @@ apps: 56
   - iPhone Duo ডিভাইসের জন্য অপ্টিমাইজড: আসল ফুল স্ক্রিন। খোলার আগেই ভেতরে দেখুন, ছবি ও PDF প্রিভিউ করুন, শুধু দরকারি ফাইলটা বের করুন। সব হয় ডিভাইসেই, কোনো বিজ্ঞাপন নেই।
   - মূল্য: একটি নির্দিষ্ট অগ্রিম মূল্যে পেইড ডাউনলোড, কোনো সাবস্ক্রিপশন নেই।
   - App Store: Apple App Store এখনো বাংলাদেশে চালু হয়নি, তাই এখান থেকে Zipbox: ZIP, RAR, 7z আনজিপ-এর সরাসরি ডাউনলোড লিঙ্ক দেওয়া সম্ভব নয়। অ্যাপটির সব তথ্য নিচে বাংলায় দেওয়া আছে।
+- [মেট্রো সময় সহায়ক: Taipei MRT](https://open.cait518.cc/ios-app-guide/bn-BD/metrotimehelper.html) — কখন বের হবেন, আগেই জানুন
+  - তাইওয়ানের তাইপে মেট্রোর জন্য: কখন পৌঁছাবেন বলুন, জেনে নিন স্টেশনে ঢোকার শেষ সময়। 50টি ভাষায়, স্থানীয় ও পর্যটক সবার জন্য; শিয়াওবিতান ও শিনবেইতৌ শাখার সময়সূচিসহ।
+  - মূল্য: বিনামূল্যে ডাউনলোড করুন। একবার কিনলেই সব ফিচার আনলক হবে—কোনো সাবস্ক্রিপশন নেই।
+  - App Store: Apple App Store এখনো বাংলাদেশে চালু হয়নি, তাই এখান থেকে মেট্রো সময় সহায়ক: Taipei MRT-এর সরাসরি ডাউনলোড লিঙ্ক দেওয়া সম্ভব নয়। অ্যাপটির সব তথ্য নিচে বাংলায় দেওয়া আছে।
 
 market_availability: {"state": "MARKET_UNAVAILABLE_OR_UNVERIFIED", "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES", "evidence": {"source_url": "https://support.apple.com/en-us/118205", "observed_at": "2026-09-12", "country": "BD", "apple_media_services_markets": 174, "country_listed": false, "lookup_app_results": 0, "lookup_control_results": 0, "redirect_market": "US"}, "value": "N/A", "content_retained": true, "publishable": false, "facts_allowed": false, "outbox_count": 0}

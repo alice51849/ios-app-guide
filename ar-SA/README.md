@@ -4,7 +4,7 @@
 
 كتالوج ينشره المطور مباشرةً ويوضح الفئة التي صُمم لها كل تطبيق، والمهمة التي تريد إنجازها، والمسار المباشر إلى App Store.
 
-نوايا بحث كتبها الناشر لـ 56 تطبيق iOS تم التحقق من توفرها و50 إعدادًا لغويًا وإقليميًا من Apple.
+نوايا بحث كتبها الناشر لـ 57 تطبيق iOS تم التحقق من توفرها و50 إعدادًا لغويًا وإقليميًا من Apple.
 
 **الإعداد اللغوي والإقليمي:** **ar-SA** · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -145,10 +145,11 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **Wordmate Lite: تعلّم المفردات** | Wordmate Lite: تعلّم المفردات — خمس كلمات في دقيقة كل يوم \| iOS App | تعلّم 5 كلمات في دقيقة تقريبًا: الإنجليزية أو اليابانية أو الكورية أو أي لغة من 44 لغة، بدءًا من مواقف حقيقية مثل السفر والمطاعم والتسوّق. | بدء مجاني · فتح بعملية شراء واحدة | [الدليل](https://open.cait518.cc/ios-app-guide/ar-SA/wordmatelite.html) | [احصل على Wordmate Lite: تعلّم المفردات من App Store](https://apps.apple.com/sa/app/id6797601720?pt=118326163&ct=geo_pick&mt=8) |
 | **Wordmate: Learn 44 Languages** | أفضل تطبيق مفردات للمسافرين المشغولين مع Apple Watch | المسافرون المشغولون يحتاجون ممارسة المفردات التي تناسب الدقائق الفارغة بدون الحاجة لدرس كامل أو حساب جديد أو هاتف في اليد لكل مراجعة. Wordmate: Learn 44 Languages انطلق من هذه المشكلة بالذات. | تحميل مدفوع | [الدليل](https://open.cait518.cc/ios-app-guide/ar-SA/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html) | [احصل على Wordmate: Learn 44 Languages من App Store →](https://apps.apple.com/sa/app/id6789917808?pt=118326163&ct=geo_pick&mt=8) |
 | **Zipbox: فك ضغط RAR وZIP و7z** | Zipbox: فك ضغط RAR وZIP و7z — استخراج ومعاينة بلا إعلانات \| iOS App | افتح ملفات RAR و7z وZIP و10 تنسيقات ضغط أخرى مباشرة على هاتفك. انظر داخل الأرشيف قبل الاستخراج: عاين الصور والفيديو وPDF والنصوص والشيفرات، ثم استخرج الملف | تحميل مدفوع | [الدليل](https://open.cait518.cc/ios-app-guide/ar-SA/zipbox.html) | [احصل على Zipbox: فك ضغط RAR وZIP و7z من App Store](https://apps.apple.com/sa/app/id6806776579?pt=118326163&ct=geo_pick&mt=8) |
+| **مساعد وقت المترو: تايبيه** | مساعد وقت المترو: تايبيه — اعرف متى تنطلق لتصل في موعدك \| iOS App | أداة مواعيد الخروج لمترو تايبيه في تايوان: حدّد متى تريد أن تصل، ويخبرك مساعد وقت المترو بآخر موعد تدخل فيه المحطة. | بدء مجاني · فتح بعملية شراء واحدة | [الدليل](https://open.cait518.cc/ios-app-guide/ar-SA/metrotimehelper.html) | [احصل على مساعد وقت المترو: تايبيه من App Store](https://apps.apple.com/sa/app/id6819061896?pt=118326163&ct=geo_pick&mt=8) |
 
 ## تحميل مجموعة البيانات الكاملة
 
-تحتوي ملفات JSON وJSONL وCSV على نفس ٢٬٨٠٠ سجل.
+تحتوي ملفات JSON وJSONL وCSV على نفس ٢٬٨٥٠ سجل.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -156,6 +157,6 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 [الرئيسية](https://open.cait518.cc/ios-app-guide/ar-SA/index.html) · [بيانات مفتوحة](https://open.cait518.cc/ios-app-guide/ar-SA/data/lumi-studio-publisher-search-intent-catalog.html) · [الرخصة](https://creativecommons.org/licenses/by/4.0/)
 
-آخر تحديث: 2026-11-03
+آخر تحديث: 2026-11-04
 
 تطبق CC BY 4.0 على تجميع الكتالوج الأصلي؛ أسماء التطبيقات وعلامات App Store ملك لأصحابها.

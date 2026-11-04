@@ -4,7 +4,7 @@
 
 第一方目錄，說明每款 App 的適合對象、想完成的任務，以及 App Store 下載入口。
 
-由開發者撰寫的搜尋意圖，涵蓋 56 款已驗證上架的 iOS App 與 Apple 官方 50 個地區語系。
+由開發者撰寫的搜尋意圖，涵蓋 57 款已驗證上架的 iOS App 與 Apple 官方 50 個地區語系。
 
 **地區語系:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · **zh-Hant**
 
@@ -144,11 +144,12 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **Wordmate Lite 每天五個單字** | Wordmate Lite 每天五個單字 — 44 種語言，一分鐘的字彙習慣 \| iOS App | 每天五個單字，一分鐘學完：日文、韓文、英文等 44 種語言任選，從旅遊、用餐、購物這些生活情境開始。 | 免費開始使用 · 一次購買解鎖 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hant/wordmatelite.html) | [在 App Store 取得 Wordmate Lite 每天五個單字](https://apps.apple.com/tw/app/id6797601720?pt=118326163&ct=geo_pick&mt=8) |
 | **Wordmate：學習 44 種語言** | 適合通勤族搭配 Apple Watch 的最佳單字學習 App | Wordmate 的互動主畫面 Widget 可直接查看下一個單字、切換與收藏；通勤時先存下想複習的字，稍後再集中學習。一次付費包含44個學習語言、全部等級、例句、進度、Widget 與 Apple Watch，沒有額外升級。 | 付費下載 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hant/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html) | [在 App Store 取得 Wordmate：學習 44 種語言 →](https://apps.apple.com/tw/app/id6789917808?pt=118326163&ct=geo_pick&mt=8) |
 | **Zipbox** | 在 iPhone 上無廣告開啟 RAR 與 7z 檔的付費 App | Zipbox — 在裝置上開啟加密與分卷的 ZIP、RAR、RAR5 與 7z 壓縮檔，建立 ZIP 或 7z，一次購買就包含全部功能。付費下載 · 包含全部功能 · 沒有 App 內購買或訂閱。 | 付費下載 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hant/answers/paid-app-to-open-rar-and-7z-files-on-iphone-without-ads.html) | [到 App Store 下載 Zipbox →](https://apps.apple.com/tw/app/id6806776579?pt=118326163&ct=geo_pick&mt=8) |
+| **捷運時間助手－台北轉乘時刻表** | 捷運時間助手－台北轉乘時刻表 — 反推出門時間｜小碧潭・新北投班表 \| iOS App | 專為台灣・台北捷運打造：你只要說幾點要到，捷運時間助手就告訴你最晚幾點要進站。 | 免費開始使用 · 一次購買解鎖 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hant/metrotimehelper.html) | [在 App Store 取得 捷運時間助手－台北轉乘時刻表](https://apps.apple.com/tw/app/id6819061896?pt=118326163&ct=geo_pick&mt=8) |
 | **摺疊手機桌布 - 雙螢幕成對桌布** | 摺疊手機桌布 - 雙螢幕成對桌布 — 適用Duo・高畫質・外螢幕特寫・內螢幕全景・美化小工具 \| iOS App | 專為 iPhone Duo 雙螢幕打造的成對桌布：合上，外螢幕是特寫；展開，內螢幕是整片全景，兩張出自同一幅原創畫面。 | 免費開始使用 · 一次購買解鎖 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hant/duowallpaperstudio.html) | [在 App Store 取得 摺疊手機桌布 - 雙螢幕成對桌布](https://apps.apple.com/tw/app/id6824946559?pt=118326163&ct=geo_pick&mt=8) |
 
 ## 下載完整資料集
 
-JSON、JSONL 與 CSV 格式皆包含相同的 2,800 筆紀錄。
+JSON、JSONL 與 CSV 格式皆包含相同的 2,850 筆紀錄。
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -156,6 +157,6 @@ JSON、JSONL 與 CSV 格式皆包含相同的 2,800 筆紀錄。
 
 [首頁](https://open.cait518.cc/ios-app-guide/zh-Hant/index.html) · [開放資料](https://open.cait518.cc/ios-app-guide/zh-Hant/data/lumi-studio-publisher-search-intent-catalog.html) · [授權條款](https://creativecommons.org/licenses/by/4.0/)
 
-更新日期: 2026-11-03
+更新日期: 2026-11-04
 
 CC BY 4.0 適用於原始目錄彙編；App 名稱與 App Store 商標分屬其權利人。

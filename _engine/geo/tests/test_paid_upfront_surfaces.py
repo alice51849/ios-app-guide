@@ -292,8 +292,10 @@ class PaidUpfrontSurfaces(unittest.TestCase):
             before = (PAGES / relative).read_text()
             self.assertEqual(before, repairs.rewrite(before, relative, PAGES, availability={}))
             self.assertNotIn("apps.apple.com", before)
+        # Lumi Bopomofo Pro left the unknown set on 2026-11-05 once the China
+        # storefront verifiably listed it (see test_short_zero_surface_contract).
         for key, locale in (
-            ("lumibopomofo", "zh-Hans"), ("lumibopomofopro", "zh-Hans"),
+            ("lumibopomofo", "zh-Hans"),
             ("lumiletterspro", "zh-Hans"), ("zipbox", "fr-FR"),
         ):
             self.assertNotIn(APPSTORE[key], self.availability.get(stores.LOCALE_STOREFRONTS[locale], ()))

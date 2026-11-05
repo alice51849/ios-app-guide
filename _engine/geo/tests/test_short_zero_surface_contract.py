@@ -56,8 +56,11 @@ ROLES = {
     "guide-qr": ("geo_learn", 1),
     "guide-mobile": ("geo_learn", 1),
 }
+# 2026-11-05: Lumi Bopomofo Pro is now verified live in the China storefront
+# (iTunes Lookup country=cn returns it, storefront state lists it), so it left
+# the unknown set; the other three stay unknown.
 UNKNOWN = {
-    ("lumibopomofo", "zh-Hans"), ("lumibopomofopro", "zh-Hans"),
+    ("lumibopomofo", "zh-Hans"),
     ("lumiletterspro", "zh-Hans"), ("zipbox", "fr-FR"),
 }
 PAGES = Path(os.environ.get("GEO_PAGES", attribution.PAGES))

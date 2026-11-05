@@ -592,6 +592,27 @@ CURATED_FALLBACK = {
             ["tripit: travel planner", 0],
         ],
     },
+    "foldparty": {
+        "key": "foldparty",
+        "gap_queries": [
+            "2 player games for two people on one iphone offline without ads",
+            "cat minigames to play face to face on one phone",
+            "party game collection for couples on one iphone",
+            "short two player minigames with a scoreboard for friends",
+            "offline cat games with no ads and no in app purchases",
+            "solo and two player cat minigame collection",
+        ],
+        # Competitor titles read off the live App Store search results for
+        # "2 player games" (US) and "雙人遊戲" (TW) on 2026-11-05
+        # (aso/search_reality/meowparty.md); rank 0 means the position was not
+        # measured, exactly as for the other curated fallbacks.
+        "top_competitors": [
+            ["2 player games : offline games", 0],
+            ["1 2 3 4 player games", 0],
+            ["雙人遊戲－不用網路", 0],
+            ["2人遊戲合輯", 0],
+        ],
+    },
     "zipbox": {
         "key": "zipbox",
         "gap_queries": [

@@ -24,6 +24,7 @@ LAUNCH_CANDIDATES = {
     "claudeusagemini": ("6818607603", "UsageNow"),
     "duowallpaperstudio": ("6824946559", "Foldable Wallpaper Studio"),
     "foldparty": ("6829184924", "Meow Party"),
+    "kumo": ("6830824515", "Kumo"),
 }
 FIELDS = {"query", "guide_title", "triggers", "persona", "lead", "paras",
           "look", "steps", "fits", "faq"}
@@ -53,6 +54,14 @@ FORBIDDEN = {
     "foldparty": ("online multiplayer", "android", "vibration", "haptic",
                   "free to play", "unlimited free", "subscription required",
                   "1000 games", "iphone duo"),
+    "kumo": ("ozempic", "wegovy", "mounjaro", "zepbound", "saxenda",
+             "rybelsus", "semaglutide", "tirzepatide", "liraglutide",
+             "lifetime", "forever", "trial", "no subscription", "pay once",
+             "iphone duo", "duo", "fold", "android", "offline", "never leaves",
+             "only on your phone", "guarantee", "cure", "treat", "diagnos",
+             "prescri", "burn", "detox", "fat", "best", "$", "doctor recommended",
+             "lbs in", "kg in", "pounds in", "#1", "permanent", "buy once",
+             "weight loss", "completely offline", "not upload"),
 }
 REQUIRED = {
     "dbhalo": ("not a certified",),
@@ -68,6 +77,10 @@ REQUIRED = {
                            "add-only", "does not allow apps to change your wallpaper"),
     "foldparty": ("200", "one phone", "offline", "regular iphone",
                   "no in-app purchases", "all 200 games are included"),
+    "kumo": ("does not provide medical advice", "does not record doses",
+             "your own icloud", "no account", "7-day average",
+             "monthly or yearly", "one-time in-app purchase", "ask your doctor",
+             "pregnant", "eating disorder", "23 hours"),
 }
 
 

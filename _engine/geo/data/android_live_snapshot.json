@@ -1,9 +1,9 @@
 {
  "schema": "lumi.android-live-snapshot/v1",
  "source": "AndroidPlay android_live_scan (Play page HTTP 200 + publish LIVE)",
- "source_generated": "2026-11-04T11:45:24+0800",
+ "source_generated": "2026-11-05T11:55:08+0800",
  "count": 57,
- "content_sha256": "e4279871f0fb7a7f57feb6018c0cc82bbac29d065209736b03b7ae7d82568bec",
+ "content_sha256": "b28153141a23f575bbabb7192d40e2f4b460672e78c59d2444b2bd9a31c1b126",
  "apps": {
   "aibriefpack": {
    "ios_app_id": "6791658210",
@@ -132,8 +132,8 @@
    "package": "com.alice51849.cvdesk",
    "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.cvdesk",
    "paid": false,
-   "first_seen": "2026-10-11T14:26:56+0800",
-   "launch_wave": "baseline",
+   "first_seen": "2026-11-05T11:55:08+0800",
+   "launch_wave": "new",
    "match": "bundle_id_exact",
    "copy": {
     "en-US": {
@@ -258,7 +258,7 @@
    "package": "com.alice51849.Offday",
    "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.Offday",
    "paid": false,
-   "first_seen": "2026-10-20T18:38:01+0800",
+   "first_seen": "2026-11-05T11:55:08+0800",
    "launch_wave": "new",
    "match": "bundle_id_exact",
    "copy": {
@@ -277,7 +277,7 @@
    "package": "com.alice51849.GBAGo",
    "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.GBAGo",
    "paid": true,
-   "first_seen": "2026-10-17T17:34:41+0800",
+   "first_seen": "2026-11-05T11:55:08+0800",
    "launch_wave": "new",
    "match": "bundle_id_exact",
    "copy": {
@@ -508,8 +508,8 @@
    "package": "com.alice51849.LumiMathFree",
    "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.LumiMathFree",
    "paid": false,
-   "first_seen": "2026-10-11T14:26:56+0800",
-   "launch_wave": "baseline",
+   "first_seen": "2026-11-05T11:55:08+0800",
+   "launch_wave": "new",
    "match": "bundle_id_exact",
    "copy": {
     "en-US": {
@@ -760,7 +760,7 @@
    "package": "com.alice51849.photocream",
    "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.photocream",
    "paid": false,
-   "first_seen": "2026-10-13T15:42:19+0800",
+   "first_seen": "2026-11-05T11:55:08+0800",
    "launch_wave": "new",
    "match": "bundle_id_exact",
    "copy": {
@@ -781,7 +781,7 @@
    "package": "com.picclear.app",
    "play_url": "https://play.google.com/store/apps/details?id=com.picclear.app",
    "paid": false,
-   "first_seen": "2026-10-17T09:56:47+0800",
+   "first_seen": "2026-11-05T11:55:08+0800",
    "launch_wave": "new",
    "match": "bundle_id_exact",
    "copy": {
@@ -823,7 +823,7 @@
    "package": "com.alice51849.SaveTag",
    "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.SaveTag",
    "paid": false,
-   "first_seen": "2026-10-13T19:51:47+0800",
+   "first_seen": "2026-11-05T11:55:08+0800",
    "launch_wave": "new",
    "match": "bundle_id_exact",
    "copy": {
@@ -1094,8 +1094,8 @@
    "package": "com.alice51849.WiFiAid",
    "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.WiFiAid",
    "paid": true,
-   "first_seen": "2026-10-11T14:26:56+0800",
-   "launch_wave": "baseline",
+   "first_seen": "2026-11-05T11:55:08+0800",
+   "launch_wave": "new",
    "match": "bundle_id_exact",
    "copy": {
     "en-US": {

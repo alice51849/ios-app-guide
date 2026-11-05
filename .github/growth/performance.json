@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T06:01:08Z",
+  "updated_at": "2026-11-05T06:28:39Z",
   "note": "Insights of our own IG / Threads posts by .github/scripts/post_performance.py. score = views + 3*likes + 5*replies + 8*(saves+shares+reposts). boost = best apps, read by 00_GrowthEngine shorts/scripts/schedule_posts.py.",
   "sources": {
     "instagram": "ok: 38 posts",
@@ -101,21 +101,22 @@
       "en": {
         "hour": 8,
         "avg_views": 12.7,
-        "posts": 16,
+        "posts": 17,
         "hours": {
           "1": 9.3,
-          "2": 4.0,
+          "2": 5.5,
           "8": 12.7,
           "13": 11.0,
+          "15": 4.0,
           "16": 8.0
         }
       },
       "zh-Hant": {
         "hour": 3,
-        "avg_views": 282.5,
+        "avg_views": 283.0,
         "posts": 14,
         "hours": {
-          "3": 282.5,
+          "3": 283.0,
           "6": 30.5,
           "13": 82.5,
           "16": 10.0,
@@ -130,10 +131,10 @@
       {
         "key": "cvdesk",
         "posts": 2,
-        "views": 362,
+        "views": 366,
         "engagement": 3,
-        "score": 375,
-        "avg_score": 187.5
+        "score": 379,
+        "avg_score": 189.5
       },
       {
         "key": "mochi_suneung",
@@ -154,10 +155,10 @@
       {
         "key": "gmoney",
         "posts": 3,
-        "views": 265,
-        "engagement": 2,
-        "score": 275,
-        "avg_score": 91.7
+        "views": 267,
+        "engagement": 3,
+        "score": 280,
+        "avg_score": 93.3
       },
       {
         "key": "duowallpaperstudio",
@@ -170,10 +171,10 @@
       {
         "key": "onepageppt",
         "posts": 4,
-        "views": 186,
+        "views": 187,
         "engagement": 3,
-        "score": 201,
-        "avg_score": 50.2
+        "score": 202,
+        "avg_score": 50.5
       },
       {
         "key": "unblurry",
@@ -186,10 +187,10 @@
       {
         "key": "battai",
         "posts": 4,
-        "views": 142,
+        "views": 145,
         "engagement": 1,
-        "score": 147,
-        "avg_score": 36.8
+        "score": 150,
+        "avg_score": 37.5
       },
       {
         "key": "claudeusagemini",
@@ -316,6 +317,14 @@
         "posts": 1,
         "views": 7,
         "engagement": 0,
+        "score": 7,
+        "avg_score": 7.0
+      },
+      {
+        "key": "wifiaid",
+        "posts": 1,
+        "views": 2,
+        "engagement": 1,
         "score": 7,
         "avg_score": 7.0
       },
@@ -476,33 +485,33 @@
       {
         "key": "ko",
         "posts": 5,
-        "views": 512,
+        "views": 515,
         "engagement": 1,
-        "score": 517,
-        "avg_score": 103.4
+        "score": 520,
+        "avg_score": 104.0
       },
       {
         "key": "ja",
         "posts": 11,
-        "views": 342,
+        "views": 343,
         "engagement": 3,
-        "score": 353,
-        "avg_score": 32.1
+        "score": 354,
+        "avg_score": 32.2
       },
       {
         "key": "zh-Hant",
         "posts": 42,
-        "views": 1207,
-        "engagement": 15,
-        "score": 1276,
-        "avg_score": 30.4
+        "views": 1210,
+        "engagement": 16,
+        "score": 1282,
+        "avg_score": 30.5
       },
       {
         "key": "en",
-        "posts": 34,
-        "views": 327,
-        "engagement": 9,
-        "score": 370,
+        "posts": 35,
+        "views": 332,
+        "engagement": 10,
+        "score": 380,
         "avg_score": 10.9
       },
       {
@@ -536,10 +545,10 @@
         "locale": "zh-Hant",
         "hook": "我是獨立開發者。看過太多人履歷投了幾十家沒回音，問題不在經歷，而是履歷在 ATS（應徵者追蹤系統）那關就被程式讀亂了：兩",
         "posts": 1,
-        "views": 357,
+        "views": 358,
         "engagement": 2,
-        "score": 365,
-        "avg_score": 365.0
+        "score": 366,
+        "avg_score": 366.0
       },
       {
         "app": "gmoney",
@@ -632,6 +641,16 @@
         "avg_score": 80.0
       },
       {
+        "app": "gmoney",
+        "locale": "zh-Hant",
+        "hook": "雙11 加上年底聚餐，錢花得特別快？先設好今天的上限。",
+        "posts": 1,
+        "views": 59,
+        "engagement": 2,
+        "score": 67,
+        "avg_score": 67.0
+      },
+      {
         "app": "mochi",
         "locale": "zh-Hant",
         "hook": "點一下就完成",
@@ -650,16 +669,6 @@
         "engagement": 0,
         "score": 64,
         "avg_score": 64.0
-      },
-      {
-        "app": "gmoney",
-        "locale": "zh-Hant",
-        "hook": "雙11 加上年底聚餐，錢花得特別快？先設好今天的上限。",
-        "posts": 1,
-        "views": 57,
-        "engagement": 1,
-        "score": 62,
-        "avg_score": 62.0
       },
       {
         "app": "mochi_halloween",
@@ -822,6 +831,16 @@
         "avg_score": 16.0
       },
       {
+        "app": "onepageppt",
+        "locale": "ja",
+        "hook": "簡報製作・筆記截圖秒變投影片。",
+        "posts": 1,
+        "views": 11,
+        "engagement": 1,
+        "score": 16,
+        "avg_score": 16.0
+      },
+      {
         "app": "mochi_halloween",
         "locale": "ja",
         "hook": "",
@@ -832,9 +851,9 @@
         "avg_score": 15.0
       },
       {
-        "app": "onepageppt",
-        "locale": "ja",
-        "hook": "簡報製作・筆記截圖秒變投影片。",
+        "app": "battai",
+        "locale": "ko",
+        "hook": "저는 혼자 앱을 만드는 개발자입니다. 요즘 '배터리가 하루를 못 버티는데 기변할까, 배터리만 바꿀까' 고민하",
         "posts": 1,
         "views": 10,
         "engagement": 1,
@@ -882,6 +901,16 @@
         "avg_score": 13.0
       },
       {
+        "app": "cvdesk",
+        "locale": "en",
+        "hook": "صانع السيرة الذاتية وفحص ATS.",
+        "posts": 1,
+        "views": 8,
+        "engagement": 1,
+        "score": 13,
+        "avg_score": 13.0
+      },
+      {
         "app": "zipbox",
         "locale": "zh-Hant",
         "hook": "先看裡面有什麼 只取那一個",
@@ -912,16 +941,6 @@
         "avg_score": 12.0
       },
       {
-        "app": "battai",
-        "locale": "ko",
-        "hook": "저는 혼자 앱을 만드는 개발자입니다. 요즘 '배터리가 하루를 못 버티는데 기변할까, 배터리만 바꿀까' 고민하",
-        "posts": 1,
-        "views": 7,
-        "engagement": 1,
-        "score": 12,
-        "avg_score": 12.0
-      },
-      {
         "app": "onepageppt",
         "locale": "ja",
         "hook": "メモもPDFも スクショも",
@@ -938,16 +957,6 @@
         "posts": 1,
         "views": 10,
         "engagement": 0,
-        "score": 10,
-        "avg_score": 10.0
-      },
-      {
-        "app": "cvdesk",
-        "locale": "en",
-        "hook": "صانع السيرة الذاتية وفحص ATS.",
-        "posts": 1,
-        "views": 5,
-        "engagement": 1,
         "score": 10,
         "avg_score": 10.0
       },
@@ -1055,6 +1064,16 @@
         "app": "maskmyfile",
         "locale": "cs",
         "hook": "Něco chybí? Přidejte to",
+        "posts": 1,
+        "views": 2,
+        "engagement": 1,
+        "score": 7,
+        "avg_score": 7.0
+      },
+      {
+        "app": "wifiaid",
+        "locale": "en",
+        "hook": "Router, Mesh & DNS Diagnostics.",
         "posts": 1,
         "views": 2,
         "engagement": 1,
@@ -2971,12 +2990,12 @@
       "kind": "image",
       "variant": null,
       "metrics": {
-        "views": 7,
+        "views": 10,
         "likes": 0,
         "replies": 1,
         "reposts": 0
       },
-      "score": 12
+      "score": 15
     },
     {
       "channel": "instagram",
@@ -3095,12 +3114,12 @@
       "kind": "image",
       "variant": null,
       "metrics": {
-        "views": 10,
+        "views": 11,
         "likes": 0,
         "replies": 1,
         "reposts": 0
       },
-      "score": 15
+      "score": 16
     },
     {
       "channel": "instagram",
@@ -3387,12 +3406,12 @@
       "kind": "image",
       "variant": null,
       "metrics": {
-        "views": 357,
+        "views": 358,
         "likes": 1,
         "replies": 1,
         "reposts": 0
       },
-      "score": 365
+      "score": 366
     },
     {
       "channel": "instagram",
@@ -3572,12 +3591,12 @@
       "kind": "image",
       "variant": null,
       "metrics": {
-        "views": 5,
+        "views": 8,
         "likes": 0,
         "replies": 1,
         "reposts": 0
       },
-      "score": 10
+      "score": 13
     },
     {
       "channel": "threads",
@@ -3591,12 +3610,31 @@
       "kind": "image",
       "variant": null,
       "metrics": {
-        "views": 57,
+        "views": 59,
+        "likes": 1,
+        "replies": 1,
+        "reposts": 0
+      },
+      "score": 67
+    },
+    {
+      "channel": "threads",
+      "id": "18111438470242222",
+      "link": "https://www.threads.com/@hourstag.app/post/DfUHjkADypp",
+      "posted_at": "2026-11-04T15:03:01",
+      "app": "wifiaid",
+      "locale": "en",
+      "hook": "Router, Mesh & DNS Diagnostics.",
+      "clip": null,
+      "kind": "image",
+      "variant": null,
+      "metrics": {
+        "views": 2,
         "likes": 0,
         "replies": 1,
         "reposts": 0
       },
-      "score": 62
+      "score": 7
     }
   ]
 }

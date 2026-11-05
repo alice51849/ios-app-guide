@@ -5307,7 +5307,236 @@ PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
                 },
             ],
         },
-    ]
+    ],
+    # Kumo (59_Kumo, ASC 6830824515, bundle com.alice51849.Kumo, key "kumo"
+    # from the bundle tail) is not on the App Store yet (1.0.0, first
+    # submission pending); the working en-US store name is "Kumo: Weight &
+    # GLP-1 Tracker". Claims here are held to NEWAPP/59_Kumo/aso_evidence/
+    # app_facts_1106.md (program afa19b6): weight in about ten seconds (opens
+    # on today, carries over the last value, 0.1 steps; kg, lb or stone); a
+    # "didn't weigh in today" check-in that keeps the streak; daily points with
+    # a 7-day average line and this week versus last week; non-scale wins;
+    # optional modules switched on in Settings: body measurements, fasting
+    # timer (12:12, 14:10, 16:8 free; capped at 23 hours; ask-your-doctor
+    # notice), shot card (date, site, own notes, reminders on the user's own
+    # schedule, countdown, recent-site map, how-you-feel check-in; it records
+    # only, with no doses, calculations, interpretation or dose suggestions),
+    # water and protein; a cloud that grows with check-in days, not weight;
+    # Apple Watch logging, widgets, Siri, optional Health app read/write (steps
+    # shown only); a weekly card without the weight number; CSV export free,
+    # PDF monthly report in Kumo Full. No account, no ads, no tracking; data on
+    # the device and in the user's own iCloud. Free to use; Kumo Full is a
+    # monthly or yearly auto-renewing subscription or a one-time in-app
+    # purchase. No drug brand or ingredient names, no medical claims, no price
+    # figures, no trial, no iPhone Duo claim, no weight-loss promises.
+    "kumo": [
+        {
+            "query": "glp-1 tracker app to log weight and shot day on iphone",
+            "guide_title": "Logging weight and shot days on a GLP-1 medication: what to check",
+            "triggers": [
+                "glp-1 tracker",
+                "glp-1 shot tracker",
+                "shot day tracker",
+                "injection site tracker",
+                "weekly injection reminder app",
+                "weight and injection log",
+            ],
+            "persona": (
+                "people in the US on a GLP-1 medication who want one "
+                "place for their weight, their shot day and how they feel, "
+                "without an account"
+            ),
+            "lead": (
+                "Once a GLP-1 medication starts, the shot day, the "
+                "injection site, how the week felt and the number on the scale "
+                "end up spread across notes, calendar alerts and a spreadsheet."
+            ),
+            "paras": [
+                (
+                    "Look for a tracker that only records what you tell it. "
+                    "Kumo's optional shot card logs the date, the injection "
+                    "site and your own notes, reminds you on the schedule you "
+                    "set, counts down to the next shot and shows a map of the "
+                    "sites you used most recently, with a quick check-in of "
+                    "how you feel. It does not record doses and does not "
+                    "calculate, interpret or suggest anything; your doctor's "
+                    "guidance stays the reference for that."
+                ),
+                (
+                    "Then check the weight side. Logging should take about ten "
+                    "seconds: the app opens on today, carries over your last "
+                    "weight and lets you adjust it by 0.1. A 7-day average "
+                    "line smooths out the daily ups and downs, this week's "
+                    "average is compared with last week's, and non-scale wins "
+                    "such as looser jeans count too. Your records stay on your "
+                    "device and in your own iCloud, with no account and no ads."
+                ),
+            ],
+            "look": [
+                "A shot card for the date, injection site and your notes, with reminders on your own schedule.",
+                "A countdown to the next shot and a map of recently used injection sites.",
+                "Weight logged in about ten seconds, with a 7-day average trend line.",
+                "Body measurements such as waist and hips, each with its own trend: one is free, all of them come with Kumo Full.",
+                "No account and no ads, with data on your device and in your own iCloud.",
+            ],
+            "steps": [
+                "Log today's weight; the app starts from your last entry, so a 0.1 adjustment is often enough.",
+                "Switch on the shot card in Settings and set your own reminder schedule.",
+                "After each shot, record the date, the site and a note about how you feel.",
+                "Read the 7-day average and the week-over-week comparison instead of single days.",
+                "Export all records as a CSV file whenever you want your own copy.",
+            ],
+            "fits": (
+                "fits people on a GLP-1 medication who want their weight "
+                "trend and shot days in one simple log. Kumo is for personal "
+                "tracking only and does not provide medical advice; always "
+                "follow your doctor's guidance. The app is free to use with one "
+                "module of your choice, and Kumo Full, available as a monthly or "
+                "yearly auto-renewing subscription or as a one-time in-app "
+                "purchase, adds all modules at once, all body measurements, the "
+                "full history of trends, photo comparisons and a PDF monthly "
+                "report."
+            ),
+            "faq": [
+                {
+                    "q": "Does it calculate or suggest my dose?",
+                    "a": (
+                        "No. The shot card only records the date, the injection "
+                        "site, your notes and how you feel, and reminds you on "
+                        "the schedule you set. It does not record doses and "
+                        "does not calculate, interpret or suggest anything; "
+                        "follow your doctor's guidance."
+                    ),
+                },
+                {
+                    "q": "Do I need an account?",
+                    "a": (
+                        "No. There is no account and no advertising. Your "
+                        "records stay on your device and in your own iCloud, "
+                        "and sync between your iPhone and Apple Watch."
+                    ),
+                },
+                {
+                    "q": "Can I log from my Apple Watch?",
+                    "a": (
+                        "Yes. Turn the Digital Crown and tap once to log your "
+                        "weight, even when your phone is not nearby."
+                    ),
+                },
+                {
+                    "q": "What does it cost?",
+                    "a": (
+                        "Kumo is free to use, and it does not open a purchase "
+                        "screen when you start. Kumo Full is available as a "
+                        "monthly or yearly auto-renewing subscription, or as a "
+                        "one-time in-app purchase; prices vary by country."
+                    ),
+                },
+            ],
+        },
+        {
+            "query": "simple weight tracker app with a 7 day average for daily weigh ins",
+            "guide_title": "A daily weigh-in app with a 7-day average: what to check",
+            "triggers": [
+                "weight tracker 7 day average",
+                "daily weigh in app",
+                "simple weight log app",
+                "weight trend app",
+                "weekly average weight tracker",
+                "weigh in streak app",
+            ],
+            "persona": (
+                "people who step on the scale most mornings and want to see "
+                "the trend rather than the daily number, with or without a "
+                "GLP-1 medication"
+            ),
+            "lead": (
+                "Weighing in every day is useful until one salty dinner moves "
+                "the scale and the whole week starts to feel like a setback."
+            ),
+            "paras": [
+                (
+                    "A trend line tells you more than any single morning. Look "
+                    "for an app that plots each day as a point with a 7-day "
+                    "average line over it, compares this week's average with "
+                    "last week's, and switches between week, month and "
+                    "three-month views. Logging has to be quick enough to keep "
+                    "the habit: Kumo opens on today, carries over your last "
+                    "weight and adjusts in steps of 0.1, in kilograms, pounds "
+                    "or stones."
+                ),
+                (
+                    "Habit support matters on the days the number is not the "
+                    "point. A \"didn't weigh in today\" check-in still counts "
+                    "as showing up, so the streak keeps going, and a cloud "
+                    "grows with the days you check in, not with your weight, "
+                    "so it stays happy either way. A quick-log widget, Siri "
+                    "and an Apple Watch app make logging quick wherever you are."
+                ),
+            ],
+            "look": [
+                "Daily points with a 7-day average line, and this week compared with last week.",
+                "About ten seconds to log, starting from your last weight, in kg, lb or stone.",
+                "A \"didn't weigh in today\" check-in that keeps the streak going.",
+                "A place for non-scale wins such as looser jeans or easier stairs.",
+                "Optional modules for body measurements, a fasting timer, a shot card, and water and protein; one module of your choice is free.",
+            ],
+            "steps": [
+                "Pick kilograms, pounds or stones and log this morning's weight.",
+                "Add the Home Screen or Lock Screen widget to keep the streak and weekly average in view.",
+                "On a day you skip the scale, tap the check-in so the streak continues.",
+                "Read the 7-day average line and the week-over-week comparison rather than single days.",
+                "Write down non-scale wins as they happen, and share the weekly card if you like.",
+            ],
+            "fits": (
+                "fits people who want a calm daily weigh-in habit and a trend "
+                "they can read at a glance, with no account and no ads. Kumo is "
+                "for personal tracking only and does not provide medical "
+                "advice. The weight log with the 7-day average and one module of "
+                "your choice are free to use; Kumo Full, a monthly or yearly "
+                "auto-renewing subscription or a one-time in-app purchase, adds "
+                "every module at once and the full history of trends."
+            ),
+            "faq": [
+                {
+                    "q": "Does the weekly card show my weight?",
+                    "a": (
+                        "No. The weekly comparison card shows only the change "
+                        "and the curve, not your weight, and you can share it "
+                        "with one tap."
+                    ),
+                },
+                {
+                    "q": "Does it work with the Health app?",
+                    "a": (
+                        "If you allow it, Kumo can write weight and waist "
+                        "measurements to the Health app and bring weight "
+                        "records in from it. Steps from the Health app are "
+                        "only displayed, not stored."
+                    ),
+                },
+                {
+                    "q": "Is there a fasting timer?",
+                    "a": (
+                        "Yes, as an optional module: the 12:12, 14:10 and 16:8 "
+                        "plans are free, with more plans in Kumo Full. It does "
+                        "not encourage extended fasts and stops at 23 hours. "
+                        "If you are pregnant or breastfeeding, under 18, or "
+                        "have an eating disorder or a chronic condition, ask "
+                        "your doctor first."
+                    ),
+                },
+                {
+                    "q": "Where is my data kept?",
+                    "a": (
+                        "On your device and in your own iCloud, syncing between "
+                        "iPhone and Apple Watch. There is no account, no "
+                        "advertising and no tracking."
+                    ),
+                },
+            ],
+        },
+    ],
 }
 
 # Zipbox has entered the canonical live roster; its reviewed pre-publication

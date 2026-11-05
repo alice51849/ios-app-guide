@@ -1670,6 +1670,15 @@ class HighIntentRouteInventoryIntegrationTests(unittest.TestCase):
             dir=GEO / "tests",
         ) as scratch:
             pages = Path(scratch)
+            # The scratch tree sits inside the Guide checkout in geo-daily; make
+            # it its own repository so publish.py's sitemap guard reads this
+            # tree's index and HEAD, not the Guide's staged sitemap_index.xml
+            # (geo-daily 11-04..05: "585 驟降為 1" after a remote-first merge).
+            subprocess.run(
+                ["git", "init", "-q", str(pages)],
+                check=True,
+                capture_output=True,
+            )
             inventory_target = pages / "data" / routes.INVENTORY_FILENAME
             inventory_target.parent.mkdir(parents=True)
             shutil.copy2(self.inventory_path, inventory_target)

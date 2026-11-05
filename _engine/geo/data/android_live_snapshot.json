@@ -1,9 +1,9 @@
 {
  "schema": "lumi.android-live-snapshot/v1",
  "source": "AndroidPlay android_live_scan (Play page HTTP 200 + publish LIVE)",
- "source_generated": "2026-11-05T17:57:05+0800",
- "count": 58,
- "content_sha256": "f7cd23b6586039235621ee635f29368c74486c82968360b1f68167c7d1500e28",
+ "source_generated": "2026-11-06T01:01:25+0800",
+ "count": 59,
+ "content_sha256": "56eca06e76b2edea1927a7fa1afb683d275f1d665394f2c56140beef02f06931",
  "apps": {
   "aibriefpack": {
    "ios_app_id": "6791658210",
@@ -267,6 +267,27 @@
     },
     "zh-TW": {
      "title": "EasyAM: 國定假日、連假不響的智慧鬧鐘"
+    }
+   }
+  },
+  "foldparty": {
+   "ios_app_id": "6829184924",
+   "ios_name": "Meow Party",
+   "android_folder": "58_MeowParty",
+   "package": "com.alice51849.FoldParty",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.FoldParty",
+   "paid": true,
+   "first_seen": "2026-11-03T17:37:11+0800",
+   "launch_wave": "new",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "Meow Party: 2 Player Cat Games",
+     "short_description": "200 cute cat minigames for one or two players, more fun on a foldable phone"
+    },
+    "zh-TW": {
+     "title": "喵喵派對：雙人遊戲 貓咪小遊戲",
+     "short_description": "200款可愛貓咪迷你遊戲，一人或兩人同機玩，摺疊手機摺起來更好玩"
     }
    }
   },
@@ -1214,12 +1235,6 @@
    }
   }
  },
- "unmapped": [
-  {
-   "folder": "58_MeowParty",
-   "package": "com.alice51849.FoldParty",
-   "reason": "no_unique_ios_match"
-  }
- ],
+ "unmapped": [],
  "baseline_first_seen": "2026-10-11T14:26:56+0800"
 }

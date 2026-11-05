@@ -26330,5 +26330,2609 @@
     ]
    ]
   }
+ },
+ {
+  "key": "aibriefpack",
+  "locale": "th",
+  "market": "TH",
+  "term": "จัดการพรอมต์",
+  "rank": 14,
+  "slug": "how-to-organize-reusable-ai-prompts-templates-sources-versions",
+  "loc": {
+   "title": "จัดการพรอมต์ AI ยังไงให้ใช้ซ้ำได้ ไม่ต้องพิมพ์ใหม่ทุกครั้ง",
+   "meta": "วิธีจัดการพรอมต์ AI ให้เป็นระบบ: แยกเป้าหมาย ข้อเท็จจริง และแหล่งที่มา เก็บเป็นเทมเพลต มีประวัติเวอร์ชัน และตรวจข้อมูลส่วนตัวก่อนวางลงแชท AI",
+   "h1": "จัดการพรอมต์ AI: เก็บ ใช้ซ้ำ และตรวจก่อนส่ง",
+   "lead": "คนส่วนใหญ่ “จัดการพรอมต์” ด้วยการก๊อปข้อความเก่าจากแชทเดิมแล้วแก้นิดหน่อย พอผ่านไปสักเดือนก็หาไม่เจอ และไม่รู้ว่าฉบับไหนคือฉบับที่ได้ผลดีที่สุด",
+   "answer": "พรอมต์ที่จัดการง่ายควรแยกเป็น 3 ส่วนเสมอ คือ เป้าหมาย (อยากให้ AI ทำอะไร) บริบทและข้อเท็จจริง (พร้อมบอกว่ามาจากไหน) และรูปแบบคำตอบที่ต้องการ เก็บส่วนที่ใช้ซ้ำเป็นเทมเพลตตามประเภทงาน แล้วเปลี่ยนแค่บริบทแต่ละครั้ง เก็บฉบับเก่าไว้เปรียบเทียบ และตรวจข้อมูลส่วนตัวก่อนวางลงแชททุกครั้ง",
+   "paras": [
+    "ปัญหาหลักของพรอมต์ไม่ได้อยู่ที่ถ้อยคำสวยหรือไม่ แต่อยู่ที่บริบทไม่ครบ AI ตอบผิดเพราะไม่รู้ว่าเอกสารฉบับไหนเป็นฉบับล่าสุด หรือตัวเลขไหนยังไม่ยืนยัน การเขียนข้อเท็จจริงแยกเป็นข้อ ๆ และกำกับแหล่งที่มาไว้ทุกข้อ ทำให้ทั้งคุณและ AI เห็นว่าข้อมูลไหนเชื่อถือได้ และข้อไหนยังเป็นคำถามเปิดอยู่",
+    "งานที่ทำซ้ำบ่อย เช่น ขอให้สรุปประชุม เขียนคำขอถึงฝ่ายบริการ หรืออธิบายปัญหาทางเทคนิค ควรมีเทมเพลตของตัวเองแยกกัน เทมเพลตที่ดีกำหนดหัวข้อไว้ล่วงหน้า (เป้าหมาย สิ่งที่รู้แล้ว สิ่งที่ยังไม่รู้ รูปแบบคำตอบ) เวลาใช้จริงก็แค่เติมบริบทใหม่ลงไป ไม่ต้องคิดโครงใหม่ทุกครั้ง",
+    "อย่าเขียนทับพรอมต์เดิม ให้เก็บเป็นเวอร์ชัน เพราะบ่อยครั้งที่แก้แล้วผลลัพธ์แย่ลง ถ้ามีฉบับก่อนหน้าก็ย้อนกลับได้ทันที และสุดท้ายก่อนวางลงแชท AI ใด ๆ ให้ไล่ดูชื่อคน เบอร์โทร อีเมล หรือเลขบัญชีที่ติดมากับภาพหน้าจอหรือ PDF ว่าควรเก็บ แทนที่ หรือลบออก"
+   ],
+   "look": [
+    "แยกเป้าหมาย ข้อเท็จจริง และแหล่งที่มาออกจากกันได้ชัดเจน",
+    "รวมหลายแหล่ง เช่น ภาพหน้าจอ PDF โน้ต และข้อความที่คัดลอก เป็นบรีฟเดียว",
+    "มีเทมเพลตตามประเภทงานให้เริ่มได้เร็ว",
+    "เก็บประวัติเวอร์ชันเพื่อย้อนกลับไปฉบับที่เคยได้ผลดี",
+    "ตรวจหาข้อมูลส่วนตัวก่อนส่งออก และให้คุณเป็นคนเลือกเก็บ แทนที่ หรือลบเอง"
+   ],
+   "steps": [
+    "เขียนเป้าหมายเป็นประโยคเดียว เช่น “สรุปข้อเสนอนี้ให้หัวหน้าอ่านจบใน 1 นาที”",
+    "รวบรวมเอกสารที่เกี่ยวข้องทั้งหมด (ภาพหน้าจอ PDF โน้ต ลิงก์) ไว้ที่เดียว",
+    "ดึงข้อเท็จจริงออกมาเป็นข้อ ๆ กำกับว่ามาจากแหล่งไหน และติดธงข้อที่ยังขัดแย้งหรือไม่แน่ใจ",
+    "เลือกเทมเพลตที่ตรงกับงาน ตรวจข้อมูลส่วนตัว แล้วบันทึกเป็นเวอร์ชันใหม่",
+    "คัดลอกวางลงแชท AI ที่ใช้ ถ้าคำตอบยังไม่ตรง ให้แก้ที่บริบท ไม่ใช่แก้แต่ถ้อยคำ"
+   ],
+   "rows": [
+    [
+     "ใช้พรอมต์ซ้ำ",
+     "มีเทมเพลตแยกตามประเภทงานไหม",
+     "ไม่ต้องคิดโครงใหม่ ผลลัพธ์สม่ำเสมอกว่า"
+    ],
+    [
+     "ความถูกต้อง",
+     "ข้อเท็จจริงแต่ละข้อมีแหล่งที่มากำกับไหม",
+     "ตรวจได้ก่อนว่า AI ได้ข้อมูลผิดมาตั้งแต่ต้นหรือไม่"
+    ],
+    [
+     "ความเป็นส่วนตัว",
+     "ตรวจและเลือกจัดการข้อมูลส่วนตัวได้ก่อนส่งออกไหม",
+     "ภาพหน้าจอและ PDF มักมีชื่อ เบอร์โทร หรือเลขบัญชีติดมาโดยไม่รู้ตัว"
+    ]
+   ],
+   "fits": "AI Brief: ไฟล์เป็นพรอมต์ AI เหมาะกับคนที่ต้องส่งเอกสารจริงให้ AI ช่วยอยู่บ่อย ๆ และอยากได้บรีฟที่เป็นระเบียบแทนการแปะข้อความยาว ๆ แอปเปลี่ยนภาพหน้าจอ PDF ไฟล์ และโน้ตเป็นบรีฟชุดเดียว แยกเป้าหมาย ข้อเท็จจริง และแหล่งที่มา เก็บระดับความมั่นใจของแต่ละข้อ มีเทมเพลตสำหรับปัญหาทางเทคนิค คำขอฝ่ายบริการ การวิเคราะห์เอกสาร สื่อการเรียน และการติดตามผลประชุม มีประวัติเวอร์ชัน และการจดจำข้อความกับการตรวจหาข้อมูลส่วนตัวทำงานบนอุปกรณ์ โดยแอปไม่ลบข้อมูลที่ตรวจพบให้อัตโนมัติ คุณเลือกเองทุกรายการ",
+   "faq": [
+    [
+     "ควรเก็บพรอมต์ไว้ในโน้ตธรรมดาก็พอไหม",
+     "ถ้าใช้ไม่กี่อัน โน้ตก็พอ แต่เมื่อพรอมต์ต้องแนบบริบทจากเอกสารหลายชิ้น การแยกข้อเท็จจริงพร้อมแหล่งที่มา มีเทมเพลต และมีประวัติเวอร์ชัน จะช่วยให้หาและแก้ได้เร็วกว่ามาก"
+    ],
+    [
+     "พรอมต์ยาวขึ้นแล้ว AI ตอบดีขึ้นจริงไหม",
+     "ไม่เสมอไป สิ่งที่ช่วยคือบริบทที่ตรงประเด็นและจัดเป็นหมวด ไม่ใช่ความยาว ข้อมูลซ้ำหรือขัดแย้งกันกลับทำให้คำตอบแย่ลง จึงควรตัดรายการซ้ำและติดธงข้อขัดแย้งก่อนส่ง"
+    ],
+    [
+     "AI Brief ใช้กับแชท AI ตัวไหนได้บ้าง",
+     "ตามคำอธิบายในร้านแอป บรีฟที่เสร็จแล้วคัดลอกได้ในแตะเดียวและวางลงในแชท AI ใดก็ได้ แอปไม่ได้ผูกกับผู้ให้บริการ AI รายใดรายหนึ่ง"
+    ]
+   ]
+  },
+  "en": {
+   "title": "Prompt Management: Organize AI Prompts You Can Reuse",
+   "meta": "Manage AI prompts as a system: separate goal, facts and sources, save templates, keep versions and check personal details before pasting into any AI chat.",
+   "h1": "Prompt management: store, reuse and check before you send",
+   "lead": "Most people manage prompts by copying an old message from a past chat and tweaking it. A month later they cannot find it, or tell which version actually worked best.",
+   "answer": "A manageable prompt always has three parts: the goal (what you want the AI to do), the context and facts (with where each came from), and the answer format. Save the reusable part as a template per type of task and swap only the context each time, keep older versions to compare, and check for personal details before every paste.",
+   "paras": [
+    "The main problem with prompts is rarely wording; it is missing context. The AI answers wrongly because it does not know which document is the latest or which number is still unconfirmed. Writing facts as separate items, each tagged with its source, lets both you and the AI see what is reliable and what is still an open question.",
+    "Repeated tasks such as meeting summaries, support requests or technical problem reports deserve their own templates. A good template fixes the headings in advance (goal, what is known, what is unknown, answer format), so in practice you only add fresh context instead of rebuilding the structure.",
+    "Do not overwrite a prompt; keep versions. Edits often make results worse, and an earlier draft lets you roll back instantly. Finally, before pasting into any AI chat, scan for names, phone numbers, emails or account numbers that came along with screenshots or PDFs and decide whether to keep, replace or remove them."
+   ],
+   "look": [
+    "Goal, facts and sources clearly separated",
+    "Several sources such as screenshots, PDFs, notes and copied text combined into one brief",
+    "Task-based templates to start quickly",
+    "Version history to go back to a draft that worked",
+    "Personal-detail detection before export, with you choosing to keep, replace or remove"
+   ],
+   "steps": [
+    "Write the goal as one sentence, e.g. “Summarize this proposal so my manager can read it in one minute.”",
+    "Collect every related source (screenshots, PDFs, notes, links) in one place.",
+    "Pull facts out as items, tag each with its source and flag any conflicts or uncertain points.",
+    "Pick the matching template, review personal details and save it as a new version.",
+    "Copy and paste into your AI chat; if the answer is off, fix the context rather than the wording."
+   ],
+   "rows": [
+    [
+     "Reuse prompts",
+     "Are there templates per type of task?",
+     "No rebuilding the structure, more consistent results"
+    ],
+    [
+     "Accuracy",
+     "Does every fact carry its source?",
+     "You can tell whether the AI was fed wrong information from the start"
+    ],
+    [
+     "Privacy",
+     "Can you review and handle personal details before export?",
+     "Screenshots and PDFs often contain names, phone or account numbers without you noticing"
+    ]
+   ],
+   "fits": "AI Brief: AI Prompt from Files suits people who regularly hand real documents to an AI and want an organized brief instead of a long pasted blob. It turns screenshots, PDFs, files and notes into one brief with goal, facts and sources separated, keeps a confidence level for each fact, offers templates for technical problems, support requests, document analysis, study materials and meeting follow-ups, keeps version history, and runs text recognition and privacy detection on device. Detected details are never removed automatically; you decide on each one.",
+   "faq": [
+    [
+     "Isn't a plain notes app enough to store prompts?",
+     "For a handful of prompts, yes. Once prompts need context from several documents, separating facts with sources, using templates and keeping version history makes them much faster to find and fix."
+    ],
+    [
+     "Do longer prompts give better AI answers?",
+     "Not necessarily. Relevant, well-sectioned context helps; length does not. Duplicated or conflicting information makes answers worse, so remove duplicates and flag conflicts before sending."
+    ],
+    [
+     "Which AI chats does AI Brief work with?",
+     "According to its store description, a finished brief is copied in one tap and pasted into any AI chat; it is not tied to one AI provider."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "ledmovingtext",
+  "locale": "fr-FR",
+  "market": "FR",
+  "term": "pancarte aéroport",
+  "rank": 14,
+  "slug": "what-to-write-on-an-airport-arrival-sign-name-format-and-privacy",
+  "loc": {
+   "title": "Pancarte aéroport : quoi écrire pour être repéré sans exposer la personne",
+   "meta": "Pancarte d'accueil à l'aéroport : quel nom écrire, quelle taille de lettres, quelle couleur, et ce qu'il vaut mieux éviter (nom complet, hôtel, société).",
+   "h1": "Pancarte aéroport : le bon texte, la bonne taille, sans trop en dire",
+   "lead": "Dans un hall d'arrivée, la personne qui sort cherche son nom pendant deux ou trois secondes au milieu de dizaines de panneaux. Ce que vous écrivez compte autant que la taille.",
+   "answer": "Écrivez ce que la personne reconnaîtra instantanément : son nom de famille en majuscules, ou un prénom suivi de l'initiale (« MARIE D. »), éventuellement un mot de code convenu à l'avance. Évitez le nom complet associé à l'hôtel ou à l'entreprise. Visez des lettres d'au moins 8 à 10 cm de haut, un fort contraste (jaune ou blanc sur noir) et pas plus de deux lignes.",
+   "paras": [
+    "Le nom de famille seul est la convention des chauffeurs professionnels : court, lisible de loin, et la personne le repère même fatiguée. Pour un proche ou un invité qui ne vous connaît pas, « Prénom + initiale » suffit. Un nom complet accompagné du nom de l'hôtel ou de la société, en revanche, donne à n'importe quel inconnu de quoi se présenter à votre place : c'est la raison pour laquelle de nombreuses agences recommandent un mot de code ou une version abrégée.",
+    "La lisibilité dépend surtout de la hauteur des lettres et du contraste. À une dizaine de mètres, des lettres de quelques centimètres sont illisibles ; il faut des caractères épais qui occupent toute la largeur. Un texte fixe se lit plus vite qu'un texte qui défile ; le défilement est utile seulement si le nom est trop long pour tenir en grand. Une couleur peu courante dans le hall aide aussi à se distinguer des autres panneaux blancs.",
+    "Si vous attendez plusieurs voyageurs ou si le vol est retardé, prévoyez de quoi alterner : le nom, puis une info pratique comme « SORTIE B » ou « TAXI ». Tenez le panneau à hauteur de poitrine, face aux portes de sortie, et restez au même endroit que celui communiqué par message."
+   ],
+   "look": [
+    "Lettres assez grandes pour être lues à plusieurs mètres",
+    "Affichage fixe pour un nom court, défilant pour un texte plus long",
+    "Couleur de texte contrastée et différente des autres pancartes",
+    "Possibilité de tourner le texte pour occuper toute la hauteur de l'écran",
+    "Enchaîner plusieurs messages sans quitter le plein écran"
+   ],
+   "steps": [
+    "Convenez à l'avance du texte avec la personne : nom de famille, prénom + initiale ou mot de code.",
+    "Écrivez-le en majuscules, une seule ligne si possible, sans nom d'hôtel ni de société.",
+    "Choisissez une couleur vive sur fond sombre et réglez la taille au maximum lisible.",
+    "Vérifiez la lisibilité en posant l'écran à dix pas et en le regardant vous-même.",
+    "Placez-vous face aux portes, panneau à hauteur de poitrine, et envoyez votre position exacte par message."
+   ],
+   "rows": [
+    [
+     "Texte",
+     "Nom de famille, prénom + initiale ou mot de code",
+     "Reconnu en un coup d'œil sans révéler trop d'informations"
+    ],
+    [
+     "Taille et contraste",
+     "Lettres de 8 à 10 cm minimum, clair sur foncé",
+     "La personne vous cherche à plusieurs mètres, souvent fatiguée"
+    ],
+    [
+     "Plusieurs voyageurs",
+     "Pouvoir alterner les noms ou ajouter une consigne",
+     "Évite de multiplier les feuilles et les confusions"
+    ]
+   ],
+   "fits": "LED Moving Text convient quand vous voulez transformer votre iPhone en pancarte d'accueil sans imprimer de feuille : on tape une phrase, on passe en plein écran, et elle se lit à travers le hall d'arrivée. L'aperçu sert d'éditeur pour régler texte, vitesse, taille et couleur ; le texte peut être fixe ou défilant, tourné de quatre-vingt-dix degrés pour occuper toute la hauteur, et la « Séquence de messages » fait défiler un message par ligne en direct ou avec une minuterie de 2 à 20 secondes. Pas de compte : vos messages restent sur l'iPhone.",
+   "faq": [
+    [
+     "Faut-il écrire le nom complet sur la pancarte ?",
+     "Ce n'est pas nécessaire et c'est souvent déconseillé. Le nom de famille seul ou « Prénom + initiale » suffit pour être reconnu, et un mot de code convenu évite qu'un inconnu se présente à la place de la personne."
+    ],
+    [
+     "Un écran de téléphone est-il assez grand pour une pancarte ?",
+     "Pour un nom court, oui, à condition que les lettres remplissent l'écran : en tournant le texte pour utiliser toute la hauteur et en gardant un affichage fixe, un nom de cinq à huit lettres se lit de loin. Pour un nom long, le défilement aide."
+    ],
+    [
+     "Quelle couleur se voit le mieux dans un hall d'arrivée ?",
+     "Un texte clair et saturé (jaune, blanc, vert vif) sur fond noir offre le meilleur contraste. Choisir une couleur que les autres panneaux n'utilisent pas aide aussi à se démarquer."
+    ]
+   ]
+  },
+  "en": {
+   "title": "Airport Arrival Sign: What to Write Without Oversharing",
+   "meta": "Airport pickup sign tips: which name to write, letter size and colour, and what to avoid (full name plus hotel or company) so the right person spots you fast.",
+   "h1": "Airport arrival sign: the right text, the right size, no oversharing",
+   "lead": "In an arrivals hall, the person coming out scans dozens of signs for two or three seconds. What you write matters as much as how big it is.",
+   "answer": "Write what the person will recognize instantly: their surname in capitals, or a first name plus initial (“MARIE D.”), or a code word agreed in advance. Avoid pairing the full name with the hotel or company. Aim for letters at least 8–10 cm tall, strong contrast (yellow or white on black) and no more than two lines.",
+   "paras": [
+    "Surname only is the professional drivers' convention: short, readable from afar, and easy to spot even when tired. For a relative or a guest who has never met you, first name plus initial is enough. A full name with a hotel or company name, however, gives any stranger enough to introduce themselves in your place, which is why many agencies suggest a code word or a shortened form.",
+    "Readability depends mainly on letter height and contrast. From about ten metres, letters a few centimetres tall are unreadable; you need bold characters filling the full width. Static text reads faster than scrolling text; scrolling only helps when the name is too long to fit large. An unusual colour also helps you stand out from rows of white signs.",
+    "If you are meeting several travellers or the flight is delayed, plan to alternate: the name, then a practical note such as “EXIT B” or “TAXI”. Hold the sign at chest height facing the exit doors and stay at the exact spot you shared by message."
+   ],
+   "look": [
+    "Letters large enough to read from several metres",
+    "Static display for a short name, scrolling for longer text",
+    "A contrasting text colour that differs from other signs",
+    "Rotating the text to use the full height of the screen",
+    "Moving through several messages without leaving full screen"
+   ],
+   "steps": [
+    "Agree on the text in advance: surname, first name plus initial, or a code word.",
+    "Write it in capitals, one line if possible, with no hotel or company name.",
+    "Pick a bright colour on a dark background and set the largest readable size.",
+    "Check readability by placing the screen ten steps away and looking yourself.",
+    "Stand facing the doors with the sign at chest height and message your exact position."
+   ],
+   "rows": [
+    [
+     "Text",
+     "Surname, first name plus initial, or code word",
+     "Recognized at a glance without revealing too much"
+    ],
+    [
+     "Size and contrast",
+     "Letters 8–10 cm minimum, light on dark",
+     "The traveller is looking from several metres, often tired"
+    ],
+    [
+     "Several travellers",
+     "Ability to alternate names or add an instruction",
+     "Avoids juggling sheets of paper and mix-ups"
+    ]
+   ],
+   "fits": "LED Moving Text fits when you want your iPhone to act as an arrival sign without printing anything: type a phrase, go full screen, and it reads across the arrivals hall. The preview is the editor for text, speed, size and colour; text can be static or scrolling, rotated ninety degrees to fill the full height, and Message Sequence shows one message per line, advanced live or on a 2–20 second timer. No account needed, and your messages stay on your iPhone.",
+   "faq": [
+    [
+     "Should I write the full name on the sign?",
+     "It is not necessary and often discouraged. Surname only or first name plus initial is enough to be recognized, and an agreed code word stops a stranger from stepping in as the traveller."
+    ],
+    [
+     "Is a phone screen big enough for a pickup sign?",
+     "For a short name, yes, as long as the letters fill the screen: rotating the text to use the full height and keeping it static makes a five-to-eight-letter name readable from a distance. For a long name, scrolling helps."
+    ],
+    [
+     "Which colour stands out best in an arrivals hall?",
+     "Light, saturated text (yellow, white, bright green) on black gives the best contrast. Choosing a colour other signs are not using also helps you stand out."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "lumiweather",
+  "locale": "vi",
+  "market": "VN",
+  "term": "thời tiết trẻ em",
+  "rank": 7,
+  "slug": "when-to-take-kids-outside-in-tropical-heat-uv-and-afternoon-showers",
+  "loc": {
+   "title": "Thời tiết cho trẻ em: giờ nào nên cho bé ra ngoài khi nắng nóng và mưa rào",
+   "meta": "Cho bé ra ngoài lúc nào khi trời nóng ẩm: xem nhiệt độ cảm nhận, UV, khả năng mưa theo giờ; nên đi trước 9 giờ sáng hoặc sau 4 giờ chiều, mang ô.",
+   "h1": "Thời tiết cho trẻ em: chọn khung giờ ra ngoài an toàn trong ngày nóng và mưa",
+   "lead": "Ở Việt Nam, câu hỏi của phụ huynh thường không phải là “hôm nay bao nhiêu độ” mà là “mấy giờ thì đưa con ra công viên được, có kịp về trước cơn mưa chiều không”.",
+   "answer": "Với trẻ nhỏ, hãy xem ba chỉ số theo từng giờ thay vì chỉ nhìn nhiệt độ: nhiệt độ cảm nhận, chỉ số UV và khả năng mưa. Ngày nắng nóng, khung giờ hợp lý thường là trước 9 giờ sáng hoặc sau 4 giờ chiều, khi UV đã giảm. Khi UV từ 6 trở lên, cho bé đội mũ rộng vành, mặc áo mỏng dài tay và bôi kem chống nắng; mùa mưa thì kiểm tra khả năng mưa theo giờ và luôn mang ô hoặc áo mưa.",
+   "paras": [
+    "Trẻ em nóng lên nhanh hơn người lớn và khó tự nói ra khi bị mệt vì nóng. Trong không khí ẩm, nhiệt độ cảm nhận có thể cao hơn nhiệt độ thực vài độ, nên một ngày 33°C có thể “cảm giác như” gần 40°C. Đó là con số nên dùng để quyết định thời gian chơi ngoài trời, chứ không phải nhiệt độ hiển thị lớn trên màn hình.",
+    "Chỉ số UV thường cao nhất trong khoảng 10 giờ sáng đến 3 giờ chiều, kể cả khi trời có mây. Theo khuyến nghị chung, từ mức UV 3 đã nên che chắn, từ mức 8 nên hạn chế ra ngoài giữa trưa. Trẻ dưới 6 tháng tuổi nên tránh nắng trực tiếp và dùng quần áo, bóng râm thay cho kem chống nắng; hãy hỏi bác sĩ nhi nếu bạn không chắc.",
+    "Mùa mưa ở nhiều nơi có kiểu mưa rào buổi chiều: sáng nắng gắt, chiều đổ mưa nhanh. Xem khả năng mưa theo từng giờ giúp bạn chọn đi chơi buổi sáng sớm và về nhà trước giờ mưa. Sau cơn mưa, không khí mát hơn nhưng đường trơn và có thể có sấm sét, nên chờ trời ổn định rồi mới ra lại."
+   ],
+   "look": [
+    "Có nhiệt độ cảm nhận, không chỉ nhiệt độ thực",
+    "Có chỉ số UV và gợi ý khi nào cần kem chống nắng, mũ, kính râm",
+    "Có khả năng mưa và chi tiết theo từng giờ trong ngày",
+    "Gợi ý khung giờ phù hợp để ra ngoài",
+    "Báo trước khi trời sắp mưa hoặc khi ngày mai có thể mưa"
+   ],
+   "steps": [
+    "Buổi tối, xem dự báo ngày mai để biết có mưa hay không và nhiệt độ ra sao.",
+    "Buổi sáng, mở biểu đồ theo giờ và tìm khung giờ có nhiệt độ cảm nhận thấp, UV thấp và ít khả năng mưa.",
+    "Chuẩn bị theo chỉ số: mũ rộng vành và kem chống nắng khi UV cao, ô hoặc áo mưa khi khả năng mưa tăng, thêm nước uống.",
+    "Cho bé chơi ở nơi có bóng râm, nghỉ uống nước sau mỗi 15–20 phút khi trời nóng.",
+    "Theo dõi dấu hiệu mệt vì nóng (mặt đỏ, lừ đừ, ít đi tiểu) và đưa bé vào chỗ mát ngay nếu thấy."
+   ],
+   "rows": [
+    [
+     "Nắng nóng",
+     "Nhiệt độ cảm nhận theo giờ",
+     "Độ ẩm làm cơ thể bé nóng hơn con số nhiệt độ thực"
+    ],
+    [
+     "Tia UV",
+     "Chỉ số UV và giờ UV cao nhất",
+     "Da trẻ mỏng, dễ bị bỏng nắng kể cả khi trời có mây"
+    ],
+    [
+     "Mưa rào chiều",
+     "Khả năng mưa theo từng giờ",
+     "Giúp đi và về trước cơn mưa, tránh sấm sét và đường trơn"
+    ]
+   ],
+   "fits": "Lumi Thời tiết: Dự báo mưa phù hợp với phụ huynh muốn biết nhanh hôm nay có nên đưa con ra ngoài không. Ứng dụng cho chỉ số ra ngoài từ 0 đến 100 tính từ nhiệt độ cảm nhận, khả năng mưa, chỉ số UV, gió và tình trạng bầu trời, chạm vào để xem từng yếu tố; gợi ý nên mặc gì, có cần mang ô, khi nào cần kem chống nắng, mũ hay kính râm, kèm danh sách đồ cần mang có thể chia sẻ. Có khung giờ lý tưởng để ra ngoài, biểu đồ nhiệt độ 24 giờ, dự báo 7 ngày và cảnh báo khi sắp mưa. Lưu ý: chỉ số dành cho việc ra ngoài nói chung, không phải tư vấn y tế riêng cho trẻ.",
+   "faq": [
+    [
+     "Bao nhiêu độ thì không nên cho bé ra ngoài?",
+     "Không có một con số cố định, nhưng khi nhiệt độ cảm nhận vượt khoảng 35°C hoặc UV từ 8 trở lên, nên tránh cho bé chơi ngoài trời giữa trưa và chuyển sang sáng sớm hoặc chiều muộn, ở nơi có bóng râm và nhiều nước uống."
+    ],
+    [
+     "Trời nhiều mây có cần bôi kem chống nắng cho bé không?",
+     "Có. Tia UV vẫn xuyên qua mây, nên hãy xem chỉ số UV chứ không dựa vào việc trời có nắng hay không. Với trẻ dưới 6 tháng, ưu tiên bóng râm và quần áo che chắn, hỏi bác sĩ trước khi dùng kem chống nắng."
+    ],
+    [
+     "Lumi Thời tiết có báo trước khi sắp mưa không?",
+     "Có. Theo mô tả trên App Store, Lumi báo trước khi trời sắp mưa hoặc khi ngày mai có thể mưa, và có tiện ích trên Màn hình chính, Màn hình khóa cùng lời nhắc hằng ngày vào giờ bạn chọn."
+    ]
+   ]
+  },
+  "en": {
+   "title": "Weather for Kids: When to Go Out in Tropical Heat and Showers",
+   "meta": "When to take kids out in hot, humid weather: check feels-like temperature, UV and hourly rain chance; go before 9am or after 4pm, pack umbrella and sunscreen.",
+   "h1": "Weather for kids: picking safe outdoor hours on hot, showery days",
+   "lead": "In Vietnam, parents rarely ask “how hot is it today”. They ask “what time can I take my child to the park, and will we be home before the afternoon rain?”",
+   "answer": "For young children, check three hourly numbers rather than temperature alone: feels-like temperature, UV index and chance of rain. On hot days the sensible windows are usually before 9am or after 4pm, once UV drops. At UV 6 or higher, use a wide-brimmed hat, thin long sleeves and sunscreen; in rainy season check the hourly rain chance and always carry an umbrella or raincoat.",
+   "paras": [
+    "Children heat up faster than adults and rarely say when they are overheating. In humid air the feels-like temperature can run several degrees above the actual reading, so a 33°C day can feel close to 40°C. That is the number to use when deciding on outdoor play, not the big temperature on the screen.",
+    "UV is usually highest from about 10am to 3pm, even under cloud. General guidance is to start protecting skin from UV 3 and to limit midday time outdoors from UV 8. Babies under six months should stay out of direct sun, using clothing and shade rather than sunscreen; ask a paediatrician if unsure.",
+    "In many places the rainy season brings afternoon showers: harsh sun in the morning, a quick downpour later. Checking the hourly rain chance lets you go out early and get home before it hits. After rain the air is cooler, but paths are slippery and thunder may linger, so wait for conditions to settle."
+   ],
+   "look": [
+    "Feels-like temperature, not just actual temperature",
+    "UV index with hints on when to use sunscreen, a hat or sunglasses",
+    "Chance of rain with hour-by-hour detail",
+    "A suggested best time window to go out",
+    "Alerts before rain or when tomorrow may be rainy"
+   ],
+   "steps": [
+    "In the evening, check tomorrow's forecast for rain and temperature.",
+    "In the morning, open the hourly chart and find a window with low feels-like temperature, low UV and low rain chance.",
+    "Pack by the numbers: hat and sunscreen for high UV, umbrella or raincoat when rain chance rises, plus water.",
+    "Keep play in the shade and take a drink break every 15–20 minutes in the heat.",
+    "Watch for heat strain (flushed face, sluggishness, peeing less) and move to a cool place right away if you see it."
+   ],
+   "rows": [
+    [
+     "Heat",
+     "Hourly feels-like temperature",
+     "Humidity makes a child's body hotter than the actual reading"
+    ],
+    [
+     "UV",
+     "UV index and its peak hours",
+     "Young skin burns easily, even on cloudy days"
+    ],
+    [
+     "Afternoon showers",
+     "Hour-by-hour rain chance",
+     "Lets you go and return before the rain, avoiding thunder and slippery paths"
+    ]
+   ],
+   "fits": "Lumi Weather: What to Wear suits parents who want a quick answer to whether today is a good day to take the kids out. It gives a 0–100 outing score built from feels-like temperature, rain chance, UV, wind and sky conditions, with a tap to see each factor; suggests what to wear, whether to take an umbrella and when sunscreen, a hat or sunglasses are needed, plus a shareable packing list. It shows the best time window to go out, a 24-hour temperature chart, a 7-day forecast and alerts before rain. Note that the score is for going out in general, not child-specific medical advice.",
+   "faq": [
+    [
+     "At what temperature should kids stay inside?",
+     "There is no single cut-off, but when the feels-like temperature passes about 35°C or UV reaches 8 or more, avoid midday outdoor play and move it to early morning or late afternoon, in shade with plenty of water."
+    ],
+    [
+     "Do kids need sunscreen on cloudy days?",
+     "Yes. UV passes through cloud, so go by the UV index rather than whether it looks sunny. For babies under six months, prefer shade and covering clothing and ask a doctor before using sunscreen."
+    ],
+    [
+     "Does Lumi Weather warn before rain?",
+     "Yes. According to its App Store description, Lumi alerts you before rain and when tomorrow may be rainy, with Home Screen and Lock Screen widgets and a daily reminder at a time you choose."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "photocream",
+  "locale": "th",
+  "market": "TH",
+  "term": "ฟิลเตอร์วินเทจ",
+  "rank": 13,
+  "slug": "vintage-filter-styles-by-era-and-how-to-keep-photos-natural",
+  "loc": {
+   "title": "ฟิลเตอร์วินเทจแบบไหนเข้ากับรูปเรา: แยกตามยุค และวิธีไม่ให้รูปหม่นเกิน",
+   "meta": "เลือกฟิลเตอร์วินเทจให้ถูกยุค: โทนอุ่นยุค 70 สีจางยุค 80 ตราวันที่ยุค 90 พร้อมวิธีปรับเกรน ขอบมืด และสีผิวไม่ให้รูปดูหม่นหรือผิวเป็นสีเทา",
+   "h1": "ฟิลเตอร์วินเทจ: เลือกลุคตามยุค แล้วปรับให้ดูเป็นธรรมชาติ",
+   "lead": "ฟิลเตอร์วินเทจที่ดูดีไม่ได้แปลว่าใส่ทุกเอฟเฟกต์ให้เต็มที่ รูปส่วนใหญ่ที่ดู “ปลอม” เกิดจากเกรนหนาเกิน ขอบมืดเข้มเกิน และผิวคนกลายเป็นสีส้มหรือเทา",
+   "answer": "เริ่มจากเลือกยุคก่อน: โทนอุ่นเหลืองทองแบบยุค 70 สีจางคอนทราสต์ต่ำแบบยุค 80 หรือแฟลชแรงพร้อมตราวันที่แบบยุค 90 จากนั้นลดความแรงของฟิลเตอร์ลงจนผิวยังเป็นสีผิว ใส่เกรนแค่พอเห็นเมื่อซูม ขอบมืดบาง ๆ และยกเงาดำให้เป็นเทาเล็กน้อย รูปจะดูเป็นฟิล์มจริงโดยไม่หม่น",
+   "paras": [
+    "ลุควินเทจแต่ละยุคมีลายเซ็นต่างกัน ยุค 70 สีอุ่น ไฮไลต์ออกเหลือง เงาออกน้ำตาล เหมาะกับแดดเย็นและคาเฟ่ไม้ ยุค 80 สีซีดจาง ความอิ่มสีต่ำ เงาไม่ดำสนิท เหมาะกับรูปท้องฟ้าและทะเล ส่วนยุค 90 คือกล้องคอมแพกต์ใช้แฟลช สีสด คอนทราสต์สูง มักมาพร้อมตราวันที่สีส้มที่มุมรูป เหมาะกับรูปกลางคืนและรูปกับเพื่อน",
+    "จุดที่ทำให้รูปวินเทจพังบ่อยที่สุดคือสีผิว ฟิลเตอร์อุ่นจัดทำให้ผิวส้ม ฟิลเตอร์จางจัดทำให้ผิวเทา วิธีแก้คือปรับเฉพาะช่วงสีส้มด้วย HSL ให้ความอิ่มสีลดลงนิดและความสว่างเพิ่มขึ้นหน่อย แทนการลดความแรงของฟิลเตอร์ทั้งรูป ส่วนสปลิตโทนช่วยให้ไฮไลต์อุ่นและเงาเย็นได้โดยไม่ต้องเปลี่ยนสีทั้งภาพ",
+    "เอฟเฟกต์เสริมอย่างเกรน แสงรั่ว ฮาเลชัน และฝุ่น ควรใช้ทีละอย่างสองอย่าง ไม่ใช่ทั้งหมดพร้อมกัน แสงรั่วเหมาะกับรูปที่มีพื้นที่ว่างตรงขอบ ฮาเลชันเห็นชัดรอบจุดแสงตอนกลางคืน ถ้าดูเอฟเฟกต์แบบสดก่อนกดชัตเตอร์ได้ จะจัดองค์ประกอบให้รับกับลุคได้ตั้งแต่ตอนถ่าย"
+   ],
+   "look": [
+    "มีลุคฟิล์มให้เลือกหลายแบบ ครอบคลุมโทนอุ่น โทนจาง และโทนสด",
+    "ปรับเกรน ฮาเลชัน แสงรั่ว และขอบมืดแยกกันได้",
+    "มีเคิร์ฟ HSL และสปลิตโทนสำหรับแก้สีผิว",
+    "ดูลุคแบบสดก่อนกดชัตเตอร์ได้",
+    "ประมวลผลในเครื่อง รูปไม่ถูกอัปโหลดออกไป"
+   ],
+   "steps": [
+    "ดูแสงและสถานที่ก่อน แล้วเลือกยุค: แดดเย็นใช้โทนอุ่น ทะเลหรือฟ้าใช้โทนจาง กลางคืนใช้ลุคแฟลชยุค 90",
+    "ใส่ฟิลเตอร์แล้วลดความแรงลงจนผิวคนกลับมาเป็นสีผิว",
+    "แก้ช่วงสีส้มด้วย HSL ถ้าผิวยังส้มหรือเทาเกินไป",
+    "เพิ่มเกรนบาง ๆ และขอบมืดเล็กน้อย เลือกแสงรั่วหรือฮาเลชันแค่อย่างเดียว",
+    "ถ้าอยากได้อารมณ์รูปฟิล์มสมัยก่อน ปิดท้ายด้วยตราวันที่หรือกรอบ"
+   ],
+   "rows": [
+    [
+     "โทนยุค 70",
+     "ไฮไลต์อุ่น เงาออกน้ำตาล",
+     "เข้ากับแดดเย็นและไม้ แต่ทำให้ผิวส้มได้ง่าย"
+    ],
+    [
+     "โทนยุค 80",
+     "สีจาง เงาไม่ดำสนิท",
+     "ให้อารมณ์ความทรงจำ แต่ถ้าจางเกินผิวจะดูเทา"
+    ],
+    [
+     "ลุคแฟลชยุค 90",
+     "คอนทราสต์สูง ตราวันที่",
+     "เหมาะกับกลางคืนและรูปเพื่อน ต้องคุมแสงแฟลชไม่ให้หน้าขาวเกิน"
+    ]
+   ],
+   "fits": "PhotoCream Pro: ฟิลเตอร์ฟิล์ม เหมาะกับคนที่อยากได้ลุควินเทจแบบปรับละเอียดได้ ไม่ใช่กดฟิลเตอร์แล้วจบ แอปมีลุคฟิล์มกว่า 100 แบบ พร้อมเกรน ฮาเลชัน แสงรั่ว และขอบมืด ดูแบบสดได้ก่อนกดชัตเตอร์ มีเคิร์ฟ HSL และสปลิตโทน ทำผิวเนียนโดยดวงตาและเส้นผมยังคมชัด เพิ่มข้อความ กรอบ เกรน ฝุ่น หรือตราวันที่แบบรูปฟิล์มยุคก่อนได้ และมีฟีเจอร์ขโมยลุคที่วิเคราะห์โทนสีจากรูปที่คุณชอบในเครื่อง แล้วแปลงเป็นโทนสีฟิล์มที่ปรับแต่งได้ ทุกอย่างประมวลผลในเครื่อง",
+   "faq": [
+    [
+     "ฟิลเตอร์วินเทจกับฟิลเตอร์ฟิล์มต่างกันไหม",
+     "ใช้แทนกันได้บ่อย แต่ฟิลเตอร์ฟิล์มมักเลียนแบบฟิล์มรุ่นใดรุ่นหนึ่ง ส่วนวินเทจกว้างกว่า รวมถึงเอฟเฟกต์ของกล้องยุคก่อนอย่างแสงรั่ว ฝุ่น และตราวันที่ด้วย"
+    ],
+    [
+     "ทำไมใส่ฟิลเตอร์วินเทจแล้วหน้าดูหมองคล้ำ",
+     "ส่วนใหญ่เป็นเพราะฟิลเตอร์ลดความอิ่มสีและยกเงาทั้งรูป ผิวจึงจางเป็นเทา ให้ลดความแรงฟิลเตอร์ลง หรือแก้เฉพาะช่วงสีส้มให้สว่างขึ้นด้วย HSL แทน"
+    ],
+    [
+     "อยากได้โทนสีเหมือนรูปที่ชอบในอินเทอร์เน็ต ทำได้ไหม",
+     "ใน PhotoCream Pro มีฟีเจอร์ขโมยลุค เลือกรูปที่ชอบแล้วแอปจะวิเคราะห์โทนสีในเครื่อง และแปลงเป็นโทนสีฟิล์มที่ปรับแต่งได้เพื่อใช้กับรูปของคุณเอง"
+    ]
+   ]
+  },
+  "en": {
+   "title": "Vintage Filters by Era: Pick the Look, Keep Photos Natural",
+   "meta": "Pick a vintage filter by era: warm 70s, faded 80s, 90s flash with date stamp, plus how to tune grain, vignette and skin tones so photos don't look muddy.",
+   "h1": "Vintage filters: choose a look by era, then tune it to stay natural",
+   "lead": "A good vintage filter does not mean every effect at full strength. Most photos that look “fake” have too much grain, too dark a vignette and skin that has turned orange or grey.",
+   "answer": "Pick the era first: warm golden 70s tones, faded low-contrast 80s colour, or hard-flash 90s looks with a date stamp. Then lower the filter strength until skin looks like skin, add grain only visible when zoomed, a light vignette, and lift the blacks slightly to grey. The photo reads as real film without looking muddy.",
+   "paras": [
+    "Each vintage era has its own signature. The 70s are warm, with yellow highlights and brown shadows, great for late sun and wooden cafés. The 80s are faded and low in saturation, with shadows that never go fully black, suiting sky and sea shots. The 90s are the compact flash camera: punchy colour, high contrast, often an orange date stamp in the corner, ideal at night and with friends.",
+    "The most common failure is skin tone. Strong warm filters turn skin orange; strong faded ones turn it grey. Rather than weakening the whole filter, adjust only the orange range with HSL, lowering saturation a little and raising brightness a touch. Split toning gives warm highlights and cool shadows without shifting the whole image.",
+    "Extras such as grain, light leaks, halation and dust work best one or two at a time, not all together. Light leaks suit frames with empty edges; halation shows around light sources at night. If you can preview effects live before pressing the shutter, you can compose for the look while shooting."
+   ],
+   "look": [
+    "A wide range of film looks across warm, faded and punchy tones",
+    "Separate control of grain, halation, light leaks and vignette",
+    "HSL curves and split toning to fix skin tones",
+    "Live preview of the look before pressing the shutter",
+    "On-device processing with no photo uploads"
+   ],
+   "steps": [
+    "Read the light and setting, then pick an era: warm for late sun, faded for sea or sky, 90s flash for night.",
+    "Apply the filter and lower its strength until skin returns to a natural colour.",
+    "Fix the orange range with HSL if skin is still too orange or grey.",
+    "Add light grain and a slight vignette; choose either a light leak or halation, not both.",
+    "For an old film-print feel, finish with a date stamp or frame."
+   ],
+   "rows": [
+    [
+     "70s tone",
+     "Warm highlights, brown shadows",
+     "Matches late sun and wood, but easily turns skin orange"
+    ],
+    [
+     "80s tone",
+     "Faded colour, shadows not fully black",
+     "Nostalgic mood, but too faded makes skin look grey"
+    ],
+    [
+     "90s flash look",
+     "High contrast, date stamp",
+     "Great for night and friends; keep flash from washing faces out"
+    ]
+   ],
+   "fits": "PhotoCream Pro: Film Filters suits people who want a vintage look they can fine-tune, not a one-tap filter. It has more than 100 film looks with grain, halation, light leaks and vignette previewed live before the shutter, HSL curves and split toning, skin smoothing that keeps eyes and hair sharp, and text, frames, grain, dust or a date stamp in the style of old film prints. Its Steal the Look feature analyses the colours of a photo you like on device and turns them into an adjustable film tone. Everything is processed on your device.",
+   "faq": [
+    [
+     "Is a vintage filter the same as a film filter?",
+     "The terms overlap, but film filters usually imitate a specific film stock, while vintage is broader and includes old-camera effects such as light leaks, dust and date stamps."
+    ],
+    [
+     "Why does my face look dull with a vintage filter?",
+     "Usually the filter lowers saturation and lifts shadows across the whole image, so skin fades to grey. Lower the filter strength, or brighten just the orange range with HSL instead."
+    ],
+    [
+     "Can I match the colours of a photo I saw online?",
+     "PhotoCream Pro has a Steal the Look feature: pick a photo you like and the app analyses its colours on device and turns them into an adjustable film tone for your own photos."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "tripbeelite",
+  "locale": "th",
+  "market": "TH",
+  "term": "แผนเที่ยว",
+  "rank": 5,
+  "slug": "how-to-make-a-realistic-day-by-day-travel-plan-with-buffer-time",
+  "loc": {
+   "title": "ทำแผนเที่ยวรายวันยังไงให้เที่ยวได้จริง ไม่วิ่งรอกทั้งทริป",
+   "meta": "วิธีทำแผนเที่ยวรายวันให้ใช้ได้จริง: วันละ 3–4 จุด เผื่อเวลาเดินทาง 30% วางจุดใกล้กันไว้วันเดียวกัน และเก็บเที่ยวบิน โรงแรม ตั๋ว ไว้ในวันที่ต้องใช้",
+   "h1": "แผนเที่ยวรายวัน: สูตรจัดเวลาให้ทริปไม่แน่นจนเหนื่อย",
+   "lead": "แผนเที่ยวส่วนใหญ่พังตั้งแต่วันแรก ไม่ใช่เพราะเลือกที่เที่ยวผิด แต่เพราะคิดเวลาเดินทาง เวลากิน และเวลารอคิวน้อยเกินไป",
+   "answer": "แผนเที่ยวที่ใช้ได้จริงควรมีวันละ 3–4 จุดหลัก จัดจุดที่อยู่ใกล้กันไว้วันเดียวกัน เผื่อเวลาเดินทางเพิ่มจากที่แผนที่บอกราว 30% และเว้นช่องว่างอย่างน้อย 30–60 นาทีระหว่างจุด วันแรกที่บินถึงและวันสุดท้ายที่ต้องเช็กเอาต์ให้วางแผนเบาที่สุด แล้วเก็บข้อมูลเที่ยวบิน โรงแรม และตั๋วไว้ในวันที่ต้องใช้จริง",
+   "paras": [
+    "เริ่มจากเวลาที่ล็อกแน่นอนก่อน คือเวลาเครื่องลง เวลาเช็กอินและเช็กเอาต์โรงแรม และรอบตั๋วที่จองไว้ แล้วค่อยเติมสถานที่เที่ยวลงในช่องว่างที่เหลือ วิธีนี้ทำให้เห็นทันทีว่าวันไหนมีเวลาว่างจริงกี่ชั่วโมง ไม่ใช่นับแค่ 9 โมงเช้าถึง 6 โมงเย็นแล้วยัดสถานที่ลงไป",
+    "เวลาที่แผนที่บอกคือเวลาขับหรือเดินโดยไม่มีอะไรมาขวาง แต่ทริปจริงมีรถติด หาที่จอด รอรถไฟ และเดินออกจากสถานี การเผื่อเพิ่มราว 30% และจัดสถานที่ตามโซน เช่น วันนี้เมืองเก่า พรุ่งนี้ริมทะเล ช่วยลดเวลานั่งรถไปมาได้มากกว่าการตัดสถานที่ออก",
+    "อย่าลืมเวลากินและพัก มื้อกลางวันที่ร้านดังอาจใช้เวลารอคิวเป็นชั่วโมง ถ้ามีเด็กหรือผู้สูงอายุ ช่วงบ่ายควรมีจุดที่ได้นั่งพัก และเช็กสภาพอากาศปลายทางก่อนออกเดินทาง ถ้ามีแนวโน้มฝนตก ให้สลับวันที่เที่ยวในร่มกับกลางแจ้งไว้ล่วงหน้า"
+   ],
+   "look": [
+    "จัดทุกวันของทริปเป็นไทม์ไลน์เรียงตามเวลา",
+    "เห็นเวลาว่างระหว่างแต่ละจุดชัดเจน",
+    "เก็บเที่ยวบิน โรงแรม ตั๋ว และโน้ตไว้ในวันที่เกี่ยวข้อง",
+    "ดูสภาพอากาศที่ปลายทางก่อนออกเดินทางได้",
+    "ดูจุดหมายถัดไประหว่างเที่ยวได้เร็ว โดยไม่ต้องเปิดหลายแอป"
+   ],
+   "steps": [
+    "ใส่เวลาที่ล็อกแล้วก่อน: เที่ยวบิน เช็กอิน เช็กเอาต์ และรอบตั๋วที่จอง",
+    "แบ่งสถานที่ตามโซน แล้วจัดโซนละหนึ่งวัน ไม่เกิน 3–4 จุดหลัก",
+    "เผื่อเวลาเดินทางเพิ่ม 30% และเว้นช่องว่าง 30–60 นาทีระหว่างจุด",
+    "ใส่มื้ออาหารและเวลาพักลงในตารางเหมือนเป็นจุดหนึ่ง",
+    "ก่อนออกเดินทางเช็กสภาพอากาศปลายทาง แล้วสลับวันในร่มกับกลางแจ้งถ้าจำเป็น"
+   ],
+   "rows": [
+    [
+     "จำนวนจุดต่อวัน",
+     "วันละ 3–4 จุดหลัก วันเดินทางให้น้อยกว่านั้น",
+     "แผนแน่นเกินทำให้ต้องตัดสถานที่ทิ้งหน้างานและเหนื่อยทั้งทริป"
+    ],
+    [
+     "เวลาเดินทาง",
+     "เผื่อเพิ่มจากแผนที่ราว 30%",
+     "รถติด รอรถ และเดินจากสถานีกินเวลามากกว่าที่คิด"
+    ],
+    [
+     "เอกสารการเดินทาง",
+     "เที่ยวบิน โรงแรม ตั๋ว อยู่ในวันที่ต้องใช้",
+     "ไม่ต้องไล่หาอีเมลยืนยันตอนอยู่หน้าเคาน์เตอร์"
+    ]
+   ],
+   "fits": "TripBee Lite: แผนเที่ยว เหมาะกับคนที่อยากเห็นแผนเที่ยวเป็นรายวันชัด ๆ แทนการจดกระจายในแชทและอีเมล แอปจัดทุกวันของทริปลงในไทม์ไลน์เดียว ตั้งแต่เที่ยวบิน การเดินทาง สถานที่เที่ยว เช็กอินโรงแรม ไปจนถึงมื้อค่ำ เรียงตามเวลาและคำนวณเวลาว่างระหว่างแต่ละจุดให้อัตโนมัติ เก็บข้อมูลเที่ยวบิน โรงแรม ตั๋ว และโน้ตไว้ในวันที่เกี่ยวข้อง มีนับถอยหลังและสภาพอากาศที่ปลายทาง และดูจุดหมายถัดไปได้บน Apple Watch ไม่ต้องมีบัญชี ไม่มีโฆษณา",
+   "faq": [
+    [
+     "ทริป 3 วัน 2 คืนควรเที่ยวกี่ที่",
+     "โดยทั่วไปราว 8–10 จุดหลักทั้งทริป วันแรกและวันสุดท้ายที่ต้องเดินทางให้ 2–3 จุด วันกลางให้ 3–4 จุด ถ้าเป็นเมืองที่รถติดหรือต้องนั่งเรือข้ามฝั่ง ให้ลดลงอีก"
+    ],
+    [
+     "ควรวางแผนละเอียดเป็นรายชั่วโมงไหม",
+     "วางเวลาที่ล็อกแน่นอนเป็นรายชั่วโมงก็พอ เช่น เที่ยวบินและรอบตั๋ว ส่วนสถานที่อื่นจัดเป็นลำดับพร้อมเวลาโดยประมาณ แล้วดูเวลาว่างระหว่างจุดว่าพอหรือไม่ จะยืดหยุ่นกว่าการล็อกทุกนาที"
+    ],
+    [
+     "TripBee Lite แชร์แผนให้เพื่อนได้ไหม",
+     "ตามคำอธิบายในร้านแอป การแชร์และการชวนเพื่อนเข้าร่วมทริปเพื่อแก้ไขด้วยกันผ่าน iCloud อยู่ในส่วน Premium ที่ซื้อครั้งเดียวในแอป"
+    ]
+   ]
+  },
+  "en": {
+   "title": "Travel Plan by Day: How to Build One You Can Actually Follow",
+   "meta": "A day-by-day travel plan that works: 3–4 main stops a day, 30% extra travel time, nearby places together, and bookings stored on the day you need them.",
+   "h1": "Day-by-day travel plan: a timing formula that keeps trips from feeling rushed",
+   "lead": "Most travel plans fall apart on day one, not because of the wrong places, but because travel, meal and queue times were underestimated.",
+   "answer": "A workable plan has 3–4 main stops a day, groups nearby places on the same day, adds about 30% to the travel time the map shows and leaves at least 30–60 minutes between stops. Keep arrival day and checkout day as light as possible, and store flight, hotel and ticket details on the day you actually need them.",
+   "paras": [
+    "Start with the fixed times: landing, hotel check-in and checkout, and any booked ticket slots. Then fill the remaining gaps with places. This shows how many free hours each day really has, instead of assuming 9am to 6pm and cramming places in.",
+    "Map times assume nothing gets in the way, but real trips have traffic, parking, waiting for trains and walking out of stations. Adding about 30% and grouping places by area, say the old town one day and the coast the next, cuts more back-and-forth than dropping places does.",
+    "Remember meals and rest. Lunch at a popular spot can mean an hour in the queue. With children or older travellers, plan somewhere to sit in the afternoon, and check the destination weather before you leave; if rain looks likely, swap indoor and outdoor days ahead of time."
+   ],
+   "look": [
+    "Every day of the trip on one timeline, in time order",
+    "Clear free time between stops",
+    "Flights, hotels, tickets and notes stored on the relevant day",
+    "Destination weather before you leave",
+    "A quick view of the next stop during the trip without juggling apps"
+   ],
+   "steps": [
+    "Enter the fixed times first: flights, check-in, checkout and booked ticket slots.",
+    "Group places by area and give each area one day, with no more than 3–4 main stops.",
+    "Add 30% to travel times and leave 30–60 minutes between stops.",
+    "Put meals and rest breaks into the schedule as stops of their own.",
+    "Before leaving, check the destination weather and swap indoor and outdoor days if needed."
+   ],
+   "rows": [
+    [
+     "Stops per day",
+     "3–4 main stops, fewer on travel days",
+     "An overpacked plan forces cuts on the spot and tires everyone out"
+    ],
+    [
+     "Travel time",
+     "About 30% more than the map says",
+     "Traffic, waiting and station walks take longer than expected"
+    ],
+    [
+     "Travel documents",
+     "Flights, hotels and tickets on the day you use them",
+     "No digging through confirmation emails at the counter"
+    ]
+   ],
+   "fits": "TripBee Lite: Trip Planner suits people who want a clear day-by-day plan instead of notes scattered across chats and email. It puts every day of the trip on one timeline, from morning flights and transport to sights, hotel check-in and dinner, sorted by time with the free time between stops calculated automatically. Flight, hotel, ticket and note details sit on the relevant day, there is a countdown and destination weather before you leave, and the next stop shows on Apple Watch. No account and no ads.",
+   "faq": [
+    [
+     "How many places should a 3-day, 2-night trip cover?",
+     "Typically around 8–10 main stops in total: 2–3 on the arrival and departure days and 3–4 on the middle day. In cities with heavy traffic or ferry crossings, plan fewer."
+    ],
+    [
+     "Should I plan every hour?",
+     "Schedule fixed items such as flights and ticket slots by the hour, and list other places in order with rough times, checking that the free time between stops is enough. That stays more flexible than locking every minute."
+    ],
+    [
+     "Can I share a TripBee Lite plan with friends?",
+     "According to its store description, sharing and inviting friends to edit a trip together via iCloud are part of the one-time Premium purchase in the app."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "aim990",
+  "locale": "fr-FR",
+  "market": "FR",
+  "term": "toeic lecture",
+  "rank": 7,
+  "slug": "toeic-reading-how-to-split-75-minutes-across-parts-5-6-7",
+  "loc": {
+   "title": "TOEIC lecture : comment répartir les 75 minutes entre les parties 5, 6 et 7",
+   "meta": "TOEIC Reading : 100 questions en 75 minutes. Environ 10 min pour la partie 5, 8 pour la 6, 55 pour la 7, et un diagnostic pour savoir où vous perdez des points.",
+   "h1": "TOEIC lecture : un plan de temps pour finir les 100 questions",
+   "lead": "La plupart des candidats ne perdent pas leurs points de lecture sur des questions trop difficiles, mais sur les dix ou quinze dernières questions de la partie 7, cochées au hasard faute de temps.",
+   "answer": "La section Reading compte 100 questions en 75 minutes : 30 phrases à compléter (partie 5), 16 questions de textes à trous (partie 6) et 54 questions de compréhension (partie 7). Visez environ 10 minutes pour la partie 5, 8 minutes pour la partie 6 et gardez au moins 55 minutes pour la partie 7, soit à peu près une minute par question sur les textes longs. Si vous ne finissez pas, entraînez d'abord la vitesse de la partie 5, pas la lecture.",
+   "paras": [
+    "La partie 5 est la réserve de temps de toute la section. Une question de grammaire ou de vocabulaire se tranche souvent en 15 à 20 secondes si l'on repère le type (forme du mot, temps, préposition, connecteur) avant de lire les quatre choix. Chaque minute gagnée ici est une minute de plus pour les doubles et triples textes de la partie 7, qui sont les plus longs à traiter.",
+    "La partie 6 ressemble à la partie 5, mais une des quatre questions par texte demande d'insérer une phrase entière, ce qui oblige à comprendre le contexte. Lisez le passage d'un trait plutôt que phrase par phrase autour du trou : on répond plus vite et on fait moins d'erreurs de connecteur. Huit minutes pour les quatre textes est un repère réaliste.",
+    "En partie 7, lisez d'abord la question, puis cherchez l'information dans le texte au lieu de tout lire en détail. Sur les ensembles à plusieurs documents, une question au moins croise deux textes (une date dans un e-mail, un tarif dans un tableau). Si une question vous bloque plus d'une minute et demie, cochez une réponse, notez-la et passez : il n'y a pas de pénalité pour une mauvaise réponse."
+   ],
+   "look": [
+    "Savoir combien de temps vous mettez réellement par question en partie 5, chronomètre en main",
+    "Identifier quelle compétence vous coûte le plus de points : grammaire, vocabulaire ou lecture de textes longs",
+    "S'entraîner sur des textes longs avec une contrainte de temps, pas seulement sur la justesse",
+    "Revoir le vocabulaire des e-mails, factures et annonces, très fréquent en partie 7",
+    "Mesurer à nouveau après quelques semaines pour vérifier que le rythme s'est amélioré"
+   ],
+   "steps": [
+    "Faites un essai chronométré de la section complète et notez l'heure à la fin de chaque partie",
+    "Comparez avec le repère 10 / 8 / 55 minutes pour voir où le temps déborde",
+    "Si la partie 5 dépasse 12 minutes, travaillez des séries courtes de grammaire chronométrée chaque jour",
+    "Si la partie 7 reste inachevée, entraînez la lecture « question d'abord » sur un texte long par jour",
+    "Refaites un essai chronométré au bout de trois ou quatre semaines et comparez les temps et la précision"
+   ],
+   "rows": [
+    [
+     "Finir à temps",
+     "Le temps passé par partie",
+     "Les questions cochées au hasard à la fin pèsent souvent plus que les erreurs de grammaire"
+    ],
+    [
+     "Partie 5 plus rapide",
+     "Le type de question repéré avant de lire les choix",
+     "C'est la seule partie où l'on peut gagner plusieurs minutes sans perdre en précision"
+    ],
+    [
+     "Partie 7 plus fiable",
+     "La capacité à retrouver une information sur deux documents",
+     "Les ensembles multi-documents représentent une grande part des 54 questions"
+    ]
+   ],
+   "fits": "Aim990 convient si vous préparez la partie lecture du TOEIC et voulez savoir où partent vos points avant de multiplier les exercices. Un diagnostic de 8 minutes désigne vos trois compétences les plus faibles, puis l'application propose chaque jour une seule compétence à travailler, avec de la grammaire chronométrée avec indices de 15 secondes, un entraînement à la gestion du temps sur les textes longs et un journal qui enregistre précision et rythme. L'entraînement quotidien fonctionne hors ligne, sans compte. Les exercices sont originaux et non officiels, et le palier affiché est une estimation, pas un score garanti.",
+   "faq": [
+    [
+     "Faut-il commencer la lecture par la partie 7 ?",
+     "Certains le font pour sécuriser les textes longs, mais on risque de perdre ensuite des points faciles en partie 5. Pour la plupart des candidats, suivre l'ordre avec un temps limite par partie fonctionne mieux."
+    ],
+    [
+     "Combien de temps par question en partie 7 ?",
+     "Environ une minute en moyenne, un peu moins sur les textes simples et un peu plus sur les ensembles de deux ou trois documents."
+    ],
+    [
+     "Deviner une réponse fait-il perdre des points ?",
+     "Non, une mauvaise réponse ne retire pas de points. Mieux vaut cocher une réponse à chaque question que laisser des cases vides."
+    ]
+   ]
+  },
+  "en": {
+   "title": "TOEIC Reading: how to split 75 minutes across Parts 5, 6 and 7",
+   "meta": "TOEIC Reading has 100 questions in 75 minutes. Aim for about 10 minutes on Part 5, 8 on Part 6, 55 on Part 7, and diagnose where your points actually go.",
+   "h1": "TOEIC Reading: a time plan to finish all 100 questions",
+   "lead": "Most test takers do not lose their reading points on hard questions. They lose them on the last ten or fifteen Part 7 questions, guessed in a rush because time ran out.",
+   "answer": "The Reading section has 100 questions in 75 minutes: 30 incomplete sentences (Part 5), 16 text-completion questions (Part 6) and 54 reading-comprehension questions (Part 7). Aim for about 10 minutes on Part 5 and 8 minutes on Part 6, and keep at least 55 minutes for Part 7, roughly one minute per question on the long passages. If you do not finish, train Part 5 speed first, not reading.",
+   "paras": [
+    "Part 5 is the time bank for the whole section. A grammar or vocabulary question can often be settled in 15 to 20 seconds if you spot its type (word form, tense, preposition, connector) before reading the four options. Every minute saved here is an extra minute for the double and triple passages in Part 7, which take the longest.",
+    "Part 6 looks like Part 5, but one of the four questions per text asks you to insert a whole sentence, which requires understanding the context. Read the passage in one go instead of sentence by sentence around each gap: it is faster and you make fewer connector mistakes. Eight minutes for the four texts is a realistic target.",
+    "In Part 7, read the question first, then scan the text for the answer instead of reading every line. In multi-document sets at least one question links two texts, such as a date in an email and a rate in a table. If a question holds you for more than a minute and a half, mark an answer, note it and move on: a wrong answer carries no penalty."
+   ],
+   "look": [
+    "How long you really spend per Part 5 question, measured with a timer",
+    "Which skill costs you the most points: grammar, vocabulary or long-passage reading",
+    "Long-passage practice under time pressure, not only for accuracy",
+    "Vocabulary from emails, invoices and notices, which appears often in Part 7",
+    "A second measurement after a few weeks to confirm your pace has improved"
+   ],
+   "steps": [
+    "Take one timed run of the full section and write down the time at the end of each part",
+    "Compare it with the 10 / 8 / 55 minute guide to see where time overflows",
+    "If Part 5 takes more than 12 minutes, do short timed grammar sets every day",
+    "If Part 7 stays unfinished, practise question-first reading on one long passage a day",
+    "Repeat a timed run after three or four weeks and compare time and accuracy"
+   ],
+   "rows": [
+    [
+     "Finishing on time",
+     "Time spent per part",
+     "Questions guessed at the end often cost more than grammar mistakes"
+    ],
+    [
+     "Faster Part 5",
+     "Spotting the question type before reading the options",
+     "It is the one part where you can gain minutes without losing accuracy"
+    ],
+    [
+     "More reliable Part 7",
+     "Finding information across two documents",
+     "Multi-document sets make up a large share of the 54 questions"
+    ]
+   ],
+   "fits": "Aim990 suits you if you are preparing for TOEIC Reading and want to know where your points go before piling up more exercises. An 8-minute diagnostic names your three weakest skills, then the app prescribes one skill a day, with timed grammar with 15-second hints, time-management practice on long passages and a log that records accuracy and pace. Daily practice works offline with no account. Exercises are original and unofficial, and the level shown is an estimate, not a guaranteed score.",
+   "faq": [
+    [
+     "Should I start Reading with Part 7?",
+     "Some people do to secure the long passages, but they then risk losing easy points in Part 5. For most test takers, going in order with a time limit per part works better."
+    ],
+    [
+     "How long per question in Part 7?",
+     "About one minute on average, a little less on single short texts and a little more on two- and three-document sets."
+    ],
+    [
+     "Does guessing lose points?",
+     "No, a wrong answer does not subtract points. It is better to mark an answer for every question than to leave blanks."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "dbhalo",
+  "locale": "de-DE",
+  "market": "DE",
+  "term": "spektrumanalysator",
+  "rank": 10,
+  "slug": "spectrum-analyzer-on-iphone-fft-rta-or-spectrogram-for-a-humming-noise",
+  "loc": {
+   "title": "Spektrumanalysator auf dem iPhone: FFT, RTA oder Spektrogramm für ein Brummen?",
+   "meta": "Brummt die Wärmepumpe oder der Kühlschrank? Was FFT, RTA und Spektrogramm zeigen, warum Z-Bewertung bei tiefen Tönen hilft und wo das iPhone-Mikro aufhört.",
+   "h1": "Spektrumanalysator auf dem iPhone: welche Ansicht für welches Geräusch",
+   "lead": "Ein einzelner dB-Wert sagt, wie laut es ist, aber nicht, was da brummt. Genau dafür ist ein Spektrumanalysator da: Er zerlegt das Geräusch in Frequenzen und zeigt, ob ein tiefer Ton, ein Pfeifen oder breites Rauschen dahintersteckt.",
+   "answer": "Für ein gleichmäßiges Brummen nimmst du die FFT-Ansicht: Ein schmaler, hoher Ausschlag zeigt die genaue Frequenz, etwa 50 oder 100 Hz bei Netzbrummen. Die RTA-Ansicht fasst das Signal in Oktavbändern zusammen und passt besser zum Höreindruck. Das Spektrogramm zeigt den zeitlichen Verlauf und verrät Geräusche, die nur zeitweise auftreten, etwa ein Kompressor, der anspringt. Stelle für tiefe Töne die Z- oder C-Bewertung ein, denn die A-Bewertung blendet tiefe Frequenzen stark aus.",
+   "paras": [
+    "FFT, RTA und Spektrogramm messen dasselbe Signal, zeigen es aber unterschiedlich. Die FFT hat eine feine Frequenzauflösung und eignet sich, um einen einzelnen Ton genau zu benennen. Die RTA teilt das Spektrum in Oktavbänder mit logarithmischer Breite, so wie das Ohr Tonhöhen wahrnimmt, und macht Vergleiche zwischen zwei Messungen übersichtlicher. Das Spektrogramm färbt Frequenz und Pegel über die Zeit ein und ist das richtige Werkzeug, wenn das Geräusch kommt und geht.",
+    "Die Bewertung ist der häufigste Fehler. Die A-Bewertung bildet die geringere Empfindlichkeit des Ohrs bei tiefen Tönen nach; ein lästiges Brummen um 40 bis 80 Hz erscheint damit deutlich leiser, als es sich anfühlt. Für die Frage „welche Frequenz ist das?“ ist die unbewertete Z-Bewertung die bessere Wahl, die C-Bewertung liegt dazwischen.",
+    "Ein eingebautes Smartphone-Mikrofon ist auf Sprache ausgelegt und wird zu sehr tiefen Frequenzen hin unempfindlicher. Für die Suche nach der Ursache, etwa Wärmepumpe, Umwälzpumpe oder Lüftung, reicht das meist aus, weil es um die Lage des Ausschlags geht, nicht um den exakten Pegel. Für belastbare Pegelangaben helfen ein externes Mikrofon und eine Kalibrierung; eine amtliche Beurteilung tieffrequenter Geräusche ersetzt das nicht."
+   ],
+   "look": [
+    "Ob FFT, RTA mit Oktavbändern und Spektrogramm gleichzeitig verfügbar sind",
+    "Ob du zwischen A-, C- und Z-Bewertung umschalten kannst",
+    "Ob ein externes Mikrofon und eigene Kalibrierungsprofile unterstützt werden",
+    "Ob sich Messungen speichern und als PDF oder CSV exportieren lassen",
+    "Ob die Analyse auf dem Gerät bleibt, ohne Konto und ohne Upload"
+   ],
+   "steps": [
+    "Miss zuerst nachts oder wenn es ruhig ist, damit Verkehr und Stimmen das Bild nicht überdecken",
+    "Stelle die Z-Bewertung ein und lege das iPhone ruhig hin, nicht in die Hand",
+    "Suche in der FFT-Ansicht den höchsten schmalen Ausschlag und notiere die Frequenz",
+    "Beobachte im Spektrogramm, ob der Ton dauerhaft ist oder mit einem Gerät an- und ausgeht",
+    "Schalte vermutete Geräte nacheinander aus und vergleiche die gespeicherten Messungen"
+   ],
+   "rows": [
+    [
+     "Genaue Frequenz eines Tons",
+     "FFT-Ansicht, Z-Bewertung",
+     "Zeigt, ob es z. B. Netzbrummen oder eine Pumpe ist"
+    ],
+    [
+     "Gesamteindruck vergleichen",
+     "RTA mit Oktavbändern",
+     "Zwei Messungen lassen sich übersichtlich nebeneinanderlegen"
+    ],
+    [
+     "Zeitweises Geräusch",
+     "Spektrogramm über mehrere Minuten",
+     "Zeigt, wann das Geräusch einsetzt und wie lange es anhält"
+    ]
+   ],
+   "fits": "dB Halo passt, wenn du nicht nur wissen willst, wie laut es ist, sondern woher ein Geräusch kommt. FFT-Spektrum, Echtzeitanalysator mit Oktavbändern und Spektrogramm laufen auf derselben synchronisierten Zeitachse, ohne die Messung zu unterbrechen. Du kannst A-, C- oder Z-Bewertung wählen, ein externes Mikrofon nutzen, mehrere Kalibrierungsprofile speichern und Ergebnisse als PDF-Bericht oder CSV exportieren. Die Verarbeitung bleibt auf iPhone und iPad, ohne Konto und ohne Tracking.",
+   "faq": [
+    [
+     "Kann das iPhone 20 Hz zuverlässig messen?",
+     "Nur eingeschränkt. Eingebaute Mikrofone werden zu sehr tiefen Frequenzen hin unempfindlicher. Die Frequenz eines Brummens lässt sich oft trotzdem erkennen, der Pegel ist dort aber nur ein Anhaltspunkt."
+    ],
+    [
+     "Warum zeigt die A-Bewertung so wenig, obwohl es deutlich brummt?",
+     "Weil die A-Bewertung tiefe Frequenzen stark abschwächt. Für die Analyse tiefer Töne nimm die Z- oder C-Bewertung."
+    ],
+    [
+     "Reicht eine Handymessung für eine Beschwerde?",
+     "Als Dokumentation von Zeitpunkt, Frequenz und Verlauf ist sie hilfreich. Für eine rechtlich belastbare Beurteilung ist in der Regel eine Messung mit geeichtem Gerät nötig."
+    ]
+   ]
+  },
+  "en": {
+   "title": "Spectrum analyzer on iPhone: FFT, RTA or spectrogram for a humming noise?",
+   "meta": "Heat pump or fridge humming? What FFT, RTA and spectrogram views show, why Z weighting helps with low tones, and where an iPhone mic reaches its limits.",
+   "h1": "Spectrum analyzer on iPhone: which view for which noise",
+   "lead": "A single dB reading tells you how loud it is, not what is humming. That is what a spectrum analyzer is for: it splits a sound into frequencies and shows whether a low tone, a whistle or broad noise is behind it.",
+   "answer": "For a steady hum, use the FFT view: a narrow, tall peak shows the exact frequency, such as 50 or 100 Hz for mains hum. The RTA view groups the signal into octave bands and is closer to what you hear. The spectrogram shows the sound over time and reveals noises that only occur now and then, such as a compressor switching on. For low tones choose Z or C weighting, because A weighting strongly suppresses low frequencies.",
+   "paras": [
+    "FFT, RTA and spectrogram measure the same signal but show it differently. FFT has fine frequency resolution and is good for naming a single tone. RTA splits the spectrum into octave bands of logarithmic width, the way the ear perceives pitch, which makes two measurements easier to compare. The spectrogram colours frequency and level over time and is the right tool when the noise comes and goes.",
+    "Weighting is the most common mistake. A weighting models the ear's lower sensitivity to low tones, so an annoying hum around 40 to 80 Hz looks much quieter than it feels. To answer \"which frequency is this?\", unweighted Z weighting is the better choice, with C weighting in between.",
+    "A built-in phone microphone is designed for speech and becomes less sensitive towards very low frequencies. For tracking down a cause, such as a heat pump, circulation pump or ventilation, that is usually enough, because what matters is where the peak sits, not its exact level. For reliable level figures, an external microphone and calibration help; they do not replace an official assessment of low-frequency noise."
+   ],
+   "look": [
+    "Whether FFT, RTA with octave bands and a spectrogram are available together",
+    "Whether you can switch between A, C and Z weighting",
+    "Whether an external microphone and your own calibration profiles are supported",
+    "Whether measurements can be saved and exported as PDF or CSV",
+    "Whether analysis stays on the device, with no account and no upload"
+   ],
+   "steps": [
+    "Measure at night or when it is quiet so traffic and voices do not mask the picture",
+    "Set Z weighting and place the iPhone down still, not in your hand",
+    "In the FFT view, find the tallest narrow peak and note its frequency",
+    "In the spectrogram, see whether the tone is constant or switches on and off with a device",
+    "Turn suspected devices off one at a time and compare the saved measurements"
+   ],
+   "rows": [
+    [
+     "Exact frequency of a tone",
+     "FFT view, Z weighting",
+     "Shows whether it is mains hum or a pump, for example"
+    ],
+    [
+     "Comparing the overall sound",
+     "RTA with octave bands",
+     "Two measurements can be laid side by side clearly"
+    ],
+    [
+     "Intermittent noise",
+     "Spectrogram over several minutes",
+     "Shows when the noise starts and how long it lasts"
+    ]
+   ],
+   "fits": "dB Halo suits you if you want to know not only how loud it is but where a noise comes from. FFT spectrum, a real-time analyzer with octave bands and a spectrogram run on the same synchronised timeline without interrupting the measurement. You can choose A, C or Z weighting, use an external microphone, save several calibration profiles and export results as a PDF report or CSV. Processing stays on iPhone and iPad, with no account and no tracking.",
+   "faq": [
+    [
+     "Can an iPhone measure 20 Hz reliably?",
+     "Only to a limited extent. Built-in microphones lose sensitivity at very low frequencies. The frequency of a hum can often still be identified, but the level there is only a rough guide."
+    ],
+    [
+     "Why does A weighting show so little when the hum is obvious?",
+     "Because A weighting strongly attenuates low frequencies. For analysing low tones, use Z or C weighting."
+    ],
+    [
+     "Is a phone measurement enough for a complaint?",
+     "It is useful as a record of time, frequency and pattern. A legally robust assessment usually requires a measurement with a calibrated instrument."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "lumibopomofo",
+  "locale": "pt-BR",
+  "market": "BR",
+  "term": "bopomofo",
+  "rank": 4,
+  "slug": "bopomofo-in-brazil-37-symbols-four-tones-for-heritage-families",
+  "loc": {
+   "title": "Bopomofo no Brasil: os 37 símbolos e os tons para famílias que ensinam mandarim",
+   "meta": "O que é bopomofo (zhuyin), quando escolher em vez do pinyin e como ensinar os 37 símbolos e os tons em casa, em sessões curtas, mesmo morando no Brasil.",
+   "h1": "Bopomofo para crianças no Brasil: por onde começar em casa",
+   "lead": "Muitas famílias de origem taiwanesa em São Paulo e em outras cidades querem que os filhos leiam como as crianças de Taiwan. O primeiro passo lá não é o pinyin nem os caracteres: é o bopomofo.",
+   "answer": "Bopomofo, também chamado zhuyin, é o sistema de 37 símbolos fonéticos usado em Taiwan para ensinar a pronúncia do mandarim antes dos caracteres. São 21 iniciais, 3 mediais e 13 finais, mais as marcas dos quatro tons e do tom neutro. Se a família tem vínculo com Taiwan ou a criança vai usar livros e materiais de lá, comece pelo bopomofo; se o foco é a China continental, o pinyin é o padrão. Em casa, 10 minutos por dia, ouvindo antes de escrever, são suficientes para começar.",
+   "paras": [
+    "A grande vantagem do bopomofo para uma criança brasileira é que os símbolos não se parecem com letras latinas. Com o pinyin, a criança tende a ler \"x\", \"q\" ou \"zh\" como em português e a pronúncia sai errada. Com o bopomofo, cada símbolo é um som novo, sem interferência do alfabeto que ela já está aprendendo na escola.",
+    "Os tons são o ponto mais difícil para quem cresce falando português, porque em português a entonação muda a emoção da frase, não o significado da palavra. Em mandarim, mā, má, mǎ e mà são palavras diferentes. Por isso vale treinar o ouvido para os tons desde o começo, com gestos ou imagens que subam, desçam ou façam uma curva, em vez de deixar para depois.",
+    "Depois que a criança reconhece os símbolos isolados, o passo seguinte é juntar inicial, medial e final para formar uma sílaba, por exemplo ㄍ + ㄨ + ㄚ. É nessa etapa que a leitura começa de verdade. Revisar todo dia os símbolos que ainda confundem é mais eficiente do que passar rápido por todos os 37."
+   ],
+   "look": [
+    "Se a criança ouve o som de cada símbolo, e não só vê o desenho",
+    "Se a escrita segue a ordem correta dos traços",
+    "Se os tons são treinados pelo ouvido desde o início",
+    "Se há uma etapa de juntar símbolos para formar sílabas",
+    "Se a revisão traz de volta os símbolos que a criança ainda erra"
+   ],
+   "steps": [
+    "Escolha um horário fixo de 10 minutos, por exemplo depois do jantar",
+    "Comece por poucos símbolos de sons bem diferentes e só ouça e aponte",
+    "Quando a criança reconhecer pelo som, passe a contornar o símbolo na ordem dos traços",
+    "Treine os quatro tons com uma sílaba só, usando gestos para cima, para baixo e em curva",
+    "Junte inicial, medial e final em sílabas simples e revise no dia seguinte o que errou"
+   ],
+   "rows": [
+    [
+     "Família ligada a Taiwan",
+     "Se a criança vai usar livros e escola em zhuyin",
+     "Em Taiwan o bopomofo vem antes do pinyin e dos caracteres"
+    ],
+    [
+     "Criança já alfabetizada em português",
+     "Se ela troca sons do pinyin pelos do português",
+     "Símbolos que não lembram letras evitam essa confusão"
+    ],
+    [
+     "Pouco tempo em casa",
+     "Se dá para manter 10 minutos por dia",
+     "Sessões curtas e regulares fixam mais do que uma aula longa por semana"
+    ]
+   ],
+   "fits": "Lumi Bopomofo serve para famílias que querem começar o bopomofo em casa, na pré-escola ou numa rotina bilíngue, com crianças pequenas. A criança aprende os 37 símbolos de ouvido: ouve um som, escolhe o símbolo certo e dá de comer a um amiguinho. Ela contorna cada símbolo na ordem correta dos traços, anda na montanha-russa dos tons para ouvi-los e junta inicial, medial e final no trem dos sons para formar sílabas. A revisão diária traz de volta os símbolos que ainda não domina. Funciona offline, sem anúncios e sem cadastro.",
+   "faq": [
+    [
+     "Bopomofo ou pinyin: qual ensinar primeiro?",
+     "Depende do destino da criança. Para quem tem vínculo com Taiwan ou usa materiais de lá, bopomofo primeiro. Para a China continental, o pinyin é o padrão. Muitas crianças aprendem os dois mais tarde."
+    ],
+    [
+     "Com que idade dá para começar?",
+     "Muitas famílias começam por volta dos 4 ou 5 anos, com jogos curtos de ouvir e apontar. A escrita dos símbolos pode vir um pouco depois."
+    ],
+    [
+     "Os pais precisam falar mandarim?",
+     "Ajuda, mas não é obrigatório para os primeiros passos, desde que a criança ouça a pronúncia correta de cada símbolo e de cada tom."
+    ]
+   ]
+  },
+  "en": {
+   "title": "Bopomofo in Brazil: the 37 symbols and tones for families teaching Mandarin",
+   "meta": "What bopomofo (zhuyin) is, when to choose it over pinyin, and how to teach the 37 symbols and the tones at home in short sessions, even while living in Brazil.",
+   "h1": "Bopomofo for children in Brazil: where to start at home",
+   "lead": "Many families of Taiwanese origin in São Paulo and other cities want their children to read the way children in Taiwan do. The first step there is neither pinyin nor characters: it is bopomofo.",
+   "answer": "Bopomofo, also called zhuyin, is the system of 37 phonetic symbols used in Taiwan to teach Mandarin pronunciation before characters. There are 21 initials, 3 medials and 13 finals, plus marks for the four tones and the neutral tone. If your family has ties to Taiwan or your child will use books and materials from there, start with bopomofo; if the focus is mainland China, pinyin is the standard. At home, ten minutes a day, listening before writing, is enough to begin.",
+   "paras": [
+    "The big advantage of bopomofo for a Brazilian child is that the symbols do not look like Latin letters. With pinyin, a child tends to read \"x\", \"q\" or \"zh\" the Portuguese way and the pronunciation comes out wrong. With bopomofo, each symbol is a new sound, with no interference from the alphabet they are learning at school.",
+    "Tones are the hardest part for children growing up with Portuguese, because in Portuguese intonation changes the emotion of a sentence, not the meaning of a word. In Mandarin, mā, má, mǎ and mà are different words. That is why it pays to train the ear for tones from the start, with gestures or pictures that rise, fall or curve, rather than leaving them for later.",
+    "Once the child recognises single symbols, the next step is combining an initial, a medial and a final into a syllable, for example ㄍ + ㄨ + ㄚ. That is where reading really begins. Reviewing every day the symbols that still cause confusion works better than racing through all 37."
+   ],
+   "look": [
+    "Whether the child hears the sound of each symbol, not just sees its shape",
+    "Whether writing follows the correct stroke order",
+    "Whether tones are trained by ear from the beginning",
+    "Whether there is a stage for combining symbols into syllables",
+    "Whether review brings back the symbols the child still gets wrong"
+   ],
+   "steps": [
+    "Pick a fixed ten-minute slot, for example after dinner",
+    "Start with a few symbols with clearly different sounds and only listen and point",
+    "Once the child recognises them by sound, move on to tracing each symbol in stroke order",
+    "Practise the four tones on a single syllable, with up, down and curved gestures",
+    "Combine initial, medial and final into simple syllables and review mistakes the next day"
+   ],
+   "rows": [
+    [
+     "Family with ties to Taiwan",
+     "Whether the child will use books and school materials in zhuyin",
+     "In Taiwan bopomofo comes before pinyin and characters"
+    ],
+    [
+     "Child already reading Portuguese",
+     "Whether they swap pinyin sounds for Portuguese ones",
+     "Symbols that do not resemble letters avoid that confusion"
+    ],
+    [
+     "Little time at home",
+     "Whether ten minutes a day is sustainable",
+     "Short, regular sessions stick better than one long weekly lesson"
+    ]
+   ],
+   "fits": "Lumi Bopomofo suits families who want to start bopomofo with young children at home, in preschool or in a bilingual routine. The child learns the 37 symbols by ear: they hear a sound, pick the right symbol and feed a little friend. They trace each symbol in the correct stroke order, ride the tone roller coaster to hear the tones, and join initial, medial and final on the sound train to build syllables. Daily review brings back the symbols they have not mastered yet. It works offline, with no ads and no sign-up.",
+   "faq": [
+    [
+     "Bopomofo or pinyin: which first?",
+     "It depends on where the child is headed. For ties to Taiwan or materials from there, bopomofo first. For mainland China, pinyin is the standard. Many children learn both later on."
+    ],
+    [
+     "At what age can we start?",
+     "Many families start around four or five with short listen-and-point games. Writing the symbols can come a little later."
+    ],
+    [
+     "Do parents need to speak Mandarin?",
+     "It helps but is not required for the first steps, as long as the child hears the correct pronunciation of each symbol and tone."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "mochidonestamp",
+  "locale": "ko",
+  "market": "KR",
+  "term": "마지막으로 한 날",
+  "rank": 6,
+  "slug": "last-done-date-korea-bedding-ac-filter-engine-oil-count-days-since",
+  "loc": {
+   "title": "마지막으로 한 날 기억 안 날 때: 침구·에어컨 필터·엔진오일 날짜 기록법",
+   "meta": "이불 빨래, 에어컨 필터 청소, 엔진오일 교체를 마지막으로 한 날이 기억나지 않는다면. 한 날을 바로 기록하고 며칠 지났는지 보는 방법과 주기 정하는 요령.",
+   "h1": "마지막으로 한 날, 기억 대신 기록으로 남기는 법",
+   "lead": "\"이불 빨래 언제 했더라?\" 하고 사진첩을 뒤지거나 카톡 대화를 검색해 본 적이 있다면, 문제는 기억력이 아니라 기록할 곳이 없다는 데 있습니다.",
+   "answer": "마지막으로 한 날을 확실히 알고 싶다면, 일을 끝낸 그 자리에서 날짜를 한 번 기록하고 \"며칠 지났는지\"로 확인하는 방식이 가장 확실합니다. 미리 날짜를 정해 두는 알림과 달리, 실제로 한 날을 기준으로 다음 시점을 다시 계산하기 때문에 하루이틀 늦어져도 주기가 어긋나지 않습니다. 침구, 에어컨 필터, 엔진오일처럼 \"할 때가 됐나?\"가 헷갈리는 일부터 시작하세요.",
+   "paras": [
+    "달력 알림은 \"매월 1일 필터 청소\"처럼 날짜를 미리 박아 둡니다. 그런데 실제로는 10일에 했다면 다음 알림은 3주 만에 울리고, 깜빡 넘긴 달에는 언제 했는지 기록조차 남지 않습니다. 마지막으로 한 날을 기록해 두면 \"23일 지났음\"처럼 지금 상태가 바로 보이고, 다음 시점도 실제로 끝낸 날부터 다시 셉니다.",
+    "주기는 일마다 다릅니다. 침구는 보통 1~2주에 한 번 세탁을 권하고, 에어컨 필터는 많이 쓰는 여름철에 2주 정도마다 청소하라는 안내가 흔합니다. 엔진오일은 차종과 운전 습관에 따라 크게 달라서, 차량 설명서의 주행거리와 기간 기준을 확인하고 그중 먼저 오는 쪽으로 정하는 것이 안전합니다. 처음에는 넉넉하게 잡고, 몇 번 기록이 쌓이면 실제 간격을 보고 조정하세요.",
+    "기록할 대상은 많을수록 좋은 게 아닙니다. 매일 하는 일은 기록하지 않아도 기억나고, 1년에 한 번 하는 일은 일정표에 넣는 편이 낫습니다. 가장 효과가 큰 것은 2주에서 6개월 사이 간격으로 돌아오는 일입니다. 정수기 필터, 화분 분갈이, 반려동물 구충제처럼 \"분명 했는데 언제였지?\"가 반복되는 항목이 여기에 해당합니다."
+   ],
+   "look": [
+    "끝낸 자리에서 한 번에 기록할 수 있는지, 잘못 누르면 바로 취소되는지",
+    "깜빡하고 안 적은 과거 날짜를 나중에 추가하거나 고칠 수 있는지",
+    "주기를 일, 주, 월, 년 단위로 자유롭게 정할 수 있는지",
+    "앱을 열지 않아도 홈 화면이나 잠금 화면에서 며칠 지났는지 보이는지",
+    "기록이 기기에 남고 백업이나 내보내기가 가능한지"
+   ],
+   "steps": [
+    "\"언제 했더라?\"가 자주 떠오르는 일을 3개만 고릅니다",
+    "오늘 하지 않았더라도 기억나는 마지막 날짜를 과거 기록으로 입력합니다",
+    "일마다 대략적인 주기를 정합니다. 엔진오일은 설명서를 기준으로 합니다",
+    "일을 끝낼 때마다 그 자리에서 바로 기록합니다",
+    "몇 번 기록이 쌓이면 실제 간격을 보고 주기를 조정합니다"
+   ],
+   "rows": [
+    [
+     "침구 세탁",
+     "마지막 세탁 후 며칠 지났는지",
+     "주기가 짧아 기억이 섞이기 쉽고 위생과 직결됩니다"
+    ],
+    [
+     "에어컨 필터",
+     "사용 시즌 중 마지막 청소 날짜",
+     "먼지가 쌓이면 냉방 효율과 공기 질에 영향을 줍니다"
+    ],
+    [
+     "엔진오일",
+     "교체 날짜와 설명서 기준 주기",
+     "놓치면 정비 비용이 커지고 주행거리만으로는 기간을 놓치기 쉽습니다"
+    ]
+   ],
+   "fits": "Mochi DoneStamp는 \"마지막으로 한 날\"을 기억이 아니라 기록으로 확인하고 싶은 분께 맞습니다. 다 했으면 한 번 탭해 정확한 시간을 남기고, 마지막으로 한 지 며칠 지났는지 언제든 보여 줍니다. 잘못 누르면 바로 실행 취소할 수 있고, 과거 기록도 추가, 수정, 삭제할 수 있습니다. 분부터 년까지 주기를 정해 두면 때가 됐을 때 알려 주고, 다음 날짜는 실제로 끝낸 날부터 다시 계산됩니다. 대화형 홈 화면 및 잠금 화면 위젯, Siri와 단축어, Apple Watch에서도 마지막 시간을 확인하고 바로 기록할 수 있습니다. 계정과 광고 없이 핵심 데이터는 기기에 보관됩니다.",
+   "faq": [
+    [
+     "캘린더 반복 알림과 뭐가 다른가요?",
+     "반복 알림은 정해 둔 날짜에 울릴 뿐 실제로 한 날을 남기지 않습니다. 마지막으로 한 날을 기록하면 며칠 지났는지가 보이고, 다음 시점도 실제로 한 날부터 다시 계산됩니다."
+    ],
+    [
+     "엔진오일 교체 주기는 몇 km로 잡아야 하나요?",
+     "차종, 오일 종류, 운전 습관에 따라 다릅니다. 차량 설명서의 주행거리와 기간 기준을 확인하고 먼저 도달하는 쪽에 맞추는 것이 안전합니다."
+    ],
+    [
+     "예전에 한 날짜도 입력할 수 있나요?",
+     "네. 과거 기록을 추가하고 수정할 수 있어서, 처음 시작할 때 기억나는 마지막 날짜부터 넣어 두면 됩니다."
+    ]
+   ]
+  },
+  "en": {
+   "title": "Can't remember the last time you did it? Logging bedding, AC filter and engine oil dates",
+   "meta": "When did you last wash the bedding, clean the AC filter or change the oil? Log the day you did it, see days since at a glance and set sensible intervals.",
+   "h1": "The last time you did it: keep a record instead of relying on memory",
+   "lead": "If you have ever scrolled through your photos or searched old chats to work out when you last washed the duvet, the problem is not your memory. It is that there was nowhere to write it down.",
+   "answer": "If you want to know for sure when you last did something, log the date once, right when you finish, and check it as \"days since\". Unlike reminders set to fixed dates, this recalculates the next due point from the day you actually did it, so being a day or two late does not throw the cycle off. Start with tasks like bedding, the air-conditioner filter and engine oil, where \"is it time yet?\" is always unclear.",
+   "paras": [
+    "A calendar reminder fixes the date in advance, such as \"clean the filter on the 1st\". If you actually did it on the 10th, the next reminder comes after only three weeks, and in a month you skip there is no record at all. Logging the last done date shows your current state straight away, like \"23 days ago\", and counts the next interval from when you really finished.",
+    "Intervals vary by task. Bedding is commonly washed every one to two weeks, and AC filters are often recommended to be cleaned about every two weeks during heavy summer use. Engine oil depends a lot on the car and driving habits, so check the mileage and time limits in your owner's manual and go with whichever comes first. Start generous, then adjust once a few entries show your real spacing.",
+    "More items is not better. Daily tasks you will remember anyway, and once-a-year tasks belong in a calendar. The biggest payoff is for things that come round every two weeks to six months: water purifier filters, repotting plants, pet deworming, anything where you keep thinking \"I did that, but when?\""
+   ],
+   "look": [
+    "Whether you can log in one tap where you finish, and undo a mistaken tap right away",
+    "Whether you can add or fix past dates you forgot to record",
+    "Whether intervals can be set freely in days, weeks, months or years",
+    "Whether days since shows on the home or lock screen without opening the app",
+    "Whether records stay on the device and can be backed up or exported"
+   ],
+   "steps": [
+    "Pick just three tasks where you often wonder when you last did them",
+    "Enter the last date you remember as a past entry, even if it was not today",
+    "Set a rough interval for each; for engine oil, follow the manual",
+    "Log each task right where you finish it, every time",
+    "After a few entries, look at the real spacing and adjust the intervals"
+   ],
+   "rows": [
+    [
+     "Washing bedding",
+     "Days since the last wash",
+     "The interval is short so memories blur, and it affects hygiene"
+    ],
+    [
+     "AC filter",
+     "Last cleaning date during the season",
+     "Dust build-up affects cooling efficiency and air quality"
+    ],
+    [
+     "Engine oil",
+     "Change date and the interval in the manual",
+     "Missing it raises repair costs, and mileage alone hides the time limit"
+    ]
+   ],
+   "fits": "Mochi DoneStamp suits you if you want to check the last time you did something from a record rather than memory. Tap once when you are done to save the exact time, and it shows how many days have passed whenever you look. You can undo a tap immediately and add, edit or delete past entries. Set an interval from minutes to years and it reminds you when it is due, recalculating the next date from the day you actually finished. Interactive home and lock screen widgets, Siri and Shortcuts, and Apple Watch let you check the last time and log it straight away. No account and no ads; core data stays on your device.",
+   "faq": [
+    [
+     "How is this different from a repeating calendar reminder?",
+     "A repeating reminder just fires on set dates and does not record when you actually did it. Logging the last done date shows days since and recalculates the next point from the real date."
+    ],
+    [
+     "What mileage should I use for engine oil changes?",
+     "It depends on the car, the oil and how you drive. Check the mileage and time limits in your owner's manual and follow whichever you reach first."
+    ],
+    [
+     "Can I enter dates from before I started?",
+     "Yes. You can add and edit past entries, so begin by entering the last date you remember for each task."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "sereno",
+  "locale": "th",
+  "market": "TH",
+  "term": "บราวน์นอยส์",
+  "rank": 17,
+  "slug": "brown-noise-vs-white-and-pink-which-to-pick-for-street-noise-or-focus",
+  "loc": {
+   "title": "บราวน์นอยส์ ไวท์นอยส์ พิงก์นอยส์ ต่างกันยังไง เลือกแบบไหนดี",
+   "meta": "บราวน์นอยส์ทุ้มกว่าไวท์นอยส์และพิงก์นอยส์ เหมาะกลบเสียงรถหรือเสียงเพื่อนบ้านในคอนโด วิธีเลือกตามสถานการณ์ ตั้งความดังให้พอดี และใช้ตัวตั้งเวลาก่อนนอน",
+   "h1": "บราวน์นอยส์: ฟังตอนไหน ต่างจากไวท์นอยส์อย่างไร",
+   "lead": "ถ้าเคยเปิดไวท์นอยส์แล้วรู้สึกว่าเสียงซ่าแหลมเกินไปจนนอนไม่หลับ ลองเปลี่ยนเป็นบราวน์นอยส์ เสียงจะทุ้มและนุ่มกว่า คล้ายเสียงน้ำตกไกลๆ หรือฟ้าร้องต่ำๆ ที่ไม่หยุด",
+   "answer": "บราวน์นอยส์คือเสียงรบกวนที่ความถี่ต่ำดังกว่าความถี่สูง เลยฟังทุ้มและหนักกว่าไวท์นอยส์ (ซ่าเท่ากันทุกความถี่ ฟังแหลม) และพิงก์นอยส์ (อยู่ตรงกลาง คล้ายฝนตกสม่ำเสมอ) บราวน์นอยส์เหมาะกับการกลบเสียงทุ้มอย่างรถวิ่ง มอเตอร์ไซค์ หรือเสียงทีวีห้องข้างๆ และใช้เป็นเสียงพื้นหลังตอนทำงาน ส่วนเรื่องช่วยให้หลับลึกขึ้นนั้นงานวิจัยยังมีจำกัด ให้ลองเองสักหนึ่งสัปดาห์ เปิดเบาที่สุดเท่าที่ยังกลบเสียงรบกวนได้ และตั้งเวลาให้เสียงค่อยๆ เบาลง",
+   "paras": [
+    "ทั้งสามสีต่างกันที่การกระจายพลังงานเสียง ไวท์นอยส์มีพลังงานเท่ากันทุกความถี่ หูคนเราไวต่อเสียงสูงจึงได้ยินเป็นเสียงซ่าแหลม พิงก์นอยส์ลดเสียงสูงลงบางส่วนจนฟังสมดุลขึ้น บราวน์นอยส์ลดเสียงสูงลงมากกว่าอีก จึงเหลือแต่เสียงทุ้มหนา หลายคนบอกว่าฟังได้นานกว่าโดยไม่ล้าหู",
+    "การเลือกควรดูจากเสียงที่อยากกลบ เสียงรถบนถนนใหญ่ เสียงคอมเพรสเซอร์แอร์ หรือเสียงเบสจากห้องข้างๆ เป็นเสียงทุ้ม บราวน์นอยส์กลบได้ดีกว่า ส่วนเสียงคนคุยหรือเสียงแหลมเป็นช่วงๆ พิงก์นอยส์หรือการผสมเสียงฝนเข้าไปอาจช่วยได้มากกว่า หลายคนในเมืองไทยที่เปิดพัดลมนอนอยู่แล้ว อาจลองผสมบราวน์นอยส์เบาๆ เข้ากับเสียงพัดลมแทนการเปิดดัง",
+    "ความดังสำคัญกว่าสีของเสียง เปิดให้เบาพอที่ยังได้ยินเสียงรอบตัวบ้าง ไม่ควรดังกว่าเสียงฝักบัวเบาๆ และวางลำโพงห่างจากหัวนอน ถ้าใช้กับทารก คำแนะนำทั่วไปคือให้ต่ำกว่าประมาณ 50 เดซิเบลและวางให้ห่างเตียง การให้เสียงค่อยๆ เบาลงหลังหลับแทนการเปิดทั้งคืนก็ช่วยลดการได้ยินเสียงต่อเนื่องนานเกินไป"
+   ],
+   "look": [
+    "มีไวท์นอยส์ พิงก์นอยส์ และบราวน์นอยส์ให้เทียบกันในแอปเดียว",
+    "ผสมบราวน์นอยส์กับเสียงอื่นอย่างฝนหรือพัดลมและปรับระดับแต่ละชั้นได้",
+    "ตัวตั้งเวลาค่อยๆ ลดเสียงลง ไม่ตัดเสียงทันทีจนสะดุ้งตื่น",
+    "เล่นต่อได้ตอนล็อกหน้าจอและไม่ต้องต่ออินเทอร์เน็ต",
+    "บันทึกมิกซ์ที่ชอบไว้เปิดซ้ำได้ทุกคืน"
+   ],
+   "steps": [
+    "ฟังไวท์นอยส์ พิงก์นอยส์ และบราวน์นอยส์อย่างละหนึ่งนาทีในห้องนอนจริง",
+    "เลือกสีที่กลบเสียงรบกวนหลักของห้องคุณได้ดีที่สุด",
+    "ลดความดังลงจนเกือบได้ยินเสียงรบกวน แล้วเพิ่มขึ้นทีละนิดจนพอกลบ",
+    "ตั้งเวลาให้เสียงค่อยๆ เบาลงหลังเข้านอน 30–60 นาที",
+    "ใช้มิกซ์เดิมติดต่อกันหนึ่งสัปดาห์ แล้วค่อยตัดสินว่าช่วยหรือไม่"
+   ],
+   "rows": [
+    [
+     "กลบเสียงรถหรือแอร์",
+     "เลือกบราวน์นอยส์ ปรับเสียงทุ้มให้พอ",
+     "เสียงทุ้มกลบเสียงทุ้มได้ดีกว่าเสียงแหลม"
+    ],
+    [
+     "นอนกับพัดลม",
+     "ผสมบราวน์นอยส์เบาๆ กับเสียงพัดลม",
+     "ได้เสียงพื้นหลังที่หนาขึ้นโดยไม่ต้องเปิดดัง"
+    ],
+    [
+     "ทำงานหรืออ่านหนังสือ",
+     "ความดังต่ำ เปิดต่อเนื่อง ไม่มีจังหวะ",
+     "เสียงสม่ำเสมอช่วยลดการสะดุดจากเสียงรอบข้าง"
+    ]
+   ],
+   "fits": "Sereno เหมาะกับคนที่อยากลองบราวน์นอยส์เทียบกับไวท์นอยส์และพิงก์นอยส์ แล้วผสมกับเสียงฝน คลื่นทะเล กองไฟ หรือพัดลม ปรับระดับเสียงแต่ละชั้น สมดุล และ EQ เป็นมิกซ์ของตัวเอง เสียงสีสร้างขึ้นแบบเรียลไทม์บนอุปกรณ์ ส่วนเสียงธรรมชาติเป็นเสียงบันทึกจริงที่สลับลำดับแบบสุ่ม มีฉากพร้อมใช้สำหรับโฟกัสและหลับลึก ตัวตั้งเวลานอนค่อยๆ ลดเสียงลง เล่นในพื้นหลัง ควบคุมจากหน้าจอล็อก และใช้งานแบบออฟไลน์ได้ ไม่มีโฆษณาและไม่ต้องมีบัญชี",
+   "faq": [
+    [
+     "บราวน์นอยส์ช่วยให้หลับลึกจริงไหม",
+     "งานวิจัยเรื่องนี้ยังมีไม่มาก ที่ชัดเจนกว่าคือเสียงสม่ำเสมอช่วยกลบเสียงรบกวนที่ทำให้ตื่น ลองใช้ติดต่อกันหนึ่งสัปดาห์แล้วสังเกตตัวเอง"
+    ],
+    [
+     "เปิดทั้งคืนได้ไหม",
+     "ได้ถ้าเปิดเบา แต่หลายคนเลือกตั้งเวลาให้เสียงค่อยๆ เบาลงหลังหลับ เพื่อไม่ต้องฟังเสียงต่อเนื่องทั้งคืน"
+    ],
+    [
+     "ใช้กับลูกเล็กได้ไหม",
+     "ใช้ได้ แต่ควรเปิดเบา ต่ำกว่าประมาณ 50 เดซิเบล และวางอุปกรณ์ให้ห่างจากเตียงเด็ก"
+    ]
+   ]
+  },
+  "en": {
+   "title": "Brown noise vs white and pink noise: which one should you pick?",
+   "meta": "Brown noise is deeper than white or pink noise and suits masking traffic or condo neighbours. How to choose, set a sensible volume and use a fade-out timer.",
+   "h1": "Brown noise: when to use it and how it differs from white noise",
+   "lead": "If white noise has ever felt too hissy to fall asleep to, try brown noise. It is deeper and softer, like a distant waterfall or a low, unbroken rumble of thunder.",
+   "answer": "Brown noise is noise where low frequencies are louder than high ones, so it sounds deeper and heavier than white noise (equal energy at every frequency, heard as a sharp hiss) and pink noise (in between, like steady rain). Brown noise is good for masking low sounds such as traffic, motorbikes or a neighbour's TV, and as background sound for work. Evidence that it deepens sleep is still limited, so try it yourself for a week, play it as quietly as still masks the disturbance, and set a timer that fades it out.",
+   "paras": [
+    "The three colours differ in how sound energy is spread. White noise has equal energy at every frequency, and because our ears are sensitive to highs, it sounds like a sharp hiss. Pink noise reduces the highs somewhat so it sounds more balanced. Brown noise reduces them further, leaving a thick, low sound that many people find they can listen to longer without ear fatigue.",
+    "Choose by the sound you want to cover. Traffic on a main road, an air-conditioner compressor or bass from next door are low sounds that brown noise masks better. For voices or intermittent high sounds, pink noise or mixing in rain may work better. Many people in Thailand who already sleep with a fan on can try adding quiet brown noise to the fan sound instead of turning anything up.",
+    "Volume matters more than colour. Keep it low enough that you can still hear your surroundings a little, no louder than a gentle shower, and place the speaker away from your pillow. For babies, common guidance is to stay below about 50 decibels and keep the device away from the cot. Letting the sound fade after you fall asleep, rather than playing it all night, also limits continuous exposure."
+   ],
+   "look": [
+    "White, pink and brown noise available side by side in one app",
+    "Mixing brown noise with rain or a fan and setting each layer's level",
+    "A sleep timer that fades out instead of cutting off suddenly",
+    "Playback that continues with the screen locked and without internet",
+    "Saving a favourite mix to replay every night"
+   ],
+   "steps": [
+    "Listen to white, pink and brown noise for a minute each in your actual bedroom",
+    "Pick the colour that best masks your room's main disturbance",
+    "Lower the volume until you can almost hear the disturbance, then raise it a little until it is covered",
+    "Set the timer to fade out 30 to 60 minutes after you go to bed",
+    "Use the same mix for a week before deciding whether it helps"
+   ],
+   "rows": [
+    [
+     "Masking traffic or AC",
+     "Choose brown noise with enough low end",
+     "Low sounds mask low sounds better than high ones"
+    ],
+    [
+     "Sleeping with a fan",
+     "Add quiet brown noise to the fan",
+     "A fuller background without turning the volume up"
+    ],
+    [
+     "Working or reading",
+     "Low volume, continuous, no rhythm",
+     "A steady sound reduces distraction from sudden noises"
+    ]
+   ],
+   "fits": "Sereno suits you if you want to compare brown noise with white and pink noise, then mix it with rain, ocean waves, a campfire or a fan, adjusting each layer's volume, balance and EQ into your own mix. Colour noises are generated in real time on the device, while nature sounds are real field recordings reordered at random. There are ready-made scenes for focus and deep sleep, and a sleep timer that gradually lowers the volume. It plays in the background, can be controlled from the lock screen and works offline, with no ads and no account.",
+   "faq": [
+    [
+     "Does brown noise really deepen sleep?",
+     "Research on this is still limited. What is clearer is that a steady sound helps mask noises that wake you. Try it for a week in a row and observe how you sleep."
+    ],
+    [
+     "Can I play it all night?",
+     "Yes, if it is quiet, but many people set a timer to fade out after they fall asleep so they are not exposed to continuous sound all night."
+    ],
+    [
+     "Is it OK for a young child?",
+     "Yes, but keep it quiet, below about 50 decibels, and place the device away from the child's bed."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "unblurry",
+  "locale": "pt-BR",
+  "market": "BR",
+  "term": "corrigir foto borrada",
+  "rank": 4,
+  "slug": "fix-blurry-photo-from-whatsapp-or-camera-shake-pick-the-right-mode",
+  "loc": {
+   "title": "Corrigir foto borrada: tremida, fora de foco ou comprimida pelo WhatsApp?",
+   "meta": "Antes de corrigir uma foto borrada, descubra o tipo de borrão: tremida, fora de foco, ruído de pouca luz ou compressão do WhatsApp. Cada um pede outro ajuste.",
+   "h1": "Corrigir foto borrada no celular: identifique o borrão antes de editar",
+   "lead": "Nem toda foto borrada é igual. Uma foto tremida, uma desfocada e uma que chegou embaçada pelo WhatsApp parecem parecidas na tela, mas cada uma tem uma causa e uma correção diferentes.",
+   "answer": "Primeiro veja de onde veio a foto. Se ela chegou pelo WhatsApp, peça o arquivo original (enviado como documento ou em HD), porque a compressão apaga detalhes que nenhuma edição devolve por completo. Depois identifique o borrão: rastros na mesma direção indicam tremida, contornos macios por igual indicam foco errado, e granulação colorida indica ruído de pouca luz. Borrões leves e moderados costumam melhorar bem com nitidez, redução de ruído ou super-resolução; um rosto que está só alguns pixels numa foto muito tremida não volta a ser exato, e a ferramenta reconstrói detalhes em vez de recuperar os originais.",
+   "paras": [
+    "O WhatsApp reduz a resolução e comprime as fotos para enviar mais rápido. Em fotos de família, festas e formaturas, que circulam muito por grupos, isso é a causa mais comum de \"foto embaçada\". O ideal é corrigir a partir da maior versão disponível: o original no celular de quem tirou, ou o arquivo reenviado como documento. Corrigir uma cópia de uma cópia multiplica os artefatos.",
+    "Tremida e desfoque pedem tratamentos diferentes. Na foto tremida, os contornos aparecem duplicados ou arrastados numa direção, e a nitidez focada nesse tipo de borrão ajuda mais. Na foto fora de foco, o fundo pode estar nítido e o rosto macio; aí o ganho é menor e depende de quanto detalhe ainda existe. Em fotos noturnas, o problema geralmente é ruído, e aplicar só nitidez deixa a granulação mais forte: reduza o ruído primeiro.",
+    "Ferramentas com IA de super-resolução geram detalhes plausíveis a partir do que existe na imagem. Isso é ótimo para deixar uma foto apresentável, mas não serve como prova de quem está na imagem nem para ler uma placa ilegível. Compare sempre antes e depois em tamanho real e desconfie de resultados com pele lisa demais ou texto que \"aparece\" onde antes não havia nada."
+   ],
+   "look": [
+    "Se há modos separados para tremida, ruído, pouca luz e documento",
+    "Se a foto é processada no próprio aparelho, sem subir para a nuvem",
+    "Se dá para comparar antes e depois rapidamente",
+    "Se o resultado mantém as cores reais, sem pele de plástico",
+    "Se é possível ampliar sem virar uma massa borrada"
+   ],
+   "steps": [
+    "Consiga a maior versão da foto: o original ou o arquivo enviado como documento",
+    "Amplie e veja o tipo de borrão: rastro numa direção, contorno macio ou granulação",
+    "Escolha o modo de acordo: nitidez para tremida, remover ruído ou pouca luz para fotos escuras",
+    "Compare com o original em tamanho real e reduza a intensidade se aparecerem artefatos",
+    "Salve como uma nova cópia e mantenha o arquivo original intacto"
+   ],
+   "rows": [
+    [
+     "Foto recebida pelo WhatsApp",
+     "Se existe uma versão original ou em HD",
+     "A compressão remove detalhes que a edição não recupera totalmente"
+    ],
+    [
+     "Foto tremida",
+     "Rastros na mesma direção",
+     "Indica qual correção usar e se ainda há detalhe suficiente"
+    ],
+    [
+     "Foto noturna granulada",
+     "Se o problema é ruído e não foco",
+     "Aumentar nitidez sem tirar o ruído piora a imagem"
+    ]
+   ],
+   "fits": "Unblurry serve para quem quer corrigir fotos tremidas, suaves ou fora de foco direto no iPhone, sem enviar nada para a nuvem e sem conta. Ele tem oito modos: Auto Clear para borrões do dia a dia, Nitidez para foco suave e tremidas, Remover ruído para granulação de ISO alto, Pouca luz para fotos escuras, Documento para textos e quadros, Super-resolução com IA, Ampliação 4× e Retrato e restauração para rostos e fotos antigas. Pressionar a imagem mostra o original para comparar antes e depois. Sem anúncios e sem rastreamento.",
+   "faq": [
+    [
+     "Dá para recuperar uma foto muito tremida?",
+     "Borrões leves e moderados melhoram bastante. Em fotos muito tremidas, a imagem fica mais apresentável, mas detalhes finos como letras pequenas ou feições exatas podem não voltar."
+    ],
+    [
+     "Por que a foto ficou borrada depois que mandei pelo WhatsApp?",
+     "O WhatsApp comprime as fotos e reduz a resolução. Para manter a qualidade, envie como documento ou use a opção de qualidade HD."
+    ],
+    [
+     "A minha foto é enviada para algum servidor?",
+     "No Unblurry, o processamento acontece no próprio aparelho e as fotos não saem do celular."
+    ]
+   ]
+  },
+  "en": {
+   "title": "Fix a blurry photo: camera shake, missed focus or WhatsApp compression?",
+   "meta": "Before fixing a blurry photo, work out the type of blur: shake, missed focus, low-light noise or WhatsApp compression. Each one needs a different fix.",
+   "h1": "Fix a blurry photo on your phone: identify the blur before you edit",
+   "lead": "Not every blurry photo is the same. A shaky shot, an out-of-focus one and one that arrived soft via WhatsApp look alike on screen, but each has a different cause and a different fix.",
+   "answer": "First check where the photo came from. If it arrived via WhatsApp, ask for the original file (sent as a document or in HD), because compression removes detail no edit fully brings back. Then identify the blur: streaks in one direction mean camera shake, evenly soft edges mean missed focus, and coloured grain means low-light noise. Mild and moderate blur usually improves well with sharpening, noise removal or super-resolution; a face that is only a few pixels in a badly shaken photo will not become exact again, and the tool reconstructs detail rather than recovering the original.",
+   "paras": [
+    "WhatsApp reduces resolution and compresses photos to send them faster. For family, party and graduation photos that circulate through group chats, this is the most common cause of a \"blurry photo\". It is best to fix the largest version available: the original on the phone of whoever took it, or the file resent as a document. Fixing a copy of a copy multiplies the artefacts.",
+    "Shake and missed focus need different treatment. In a shaky photo, edges look doubled or dragged in one direction, and sharpening aimed at that kind of blur helps most. In an out-of-focus photo the background may be sharp while the face is soft; the gain is smaller there and depends on how much detail still exists. In night shots the problem is usually noise, and sharpening alone makes the grain worse: reduce noise first.",
+    "AI super-resolution tools generate plausible detail from what is in the image. That is great for making a photo presentable, but not as proof of who is in it or for reading an illegible number plate. Always compare before and after at full size, and be suspicious of overly smooth skin or text that \"appears\" where there was nothing before."
+   ],
+   "look": [
+    "Whether there are separate modes for shake, noise, low light and documents",
+    "Whether the photo is processed on the device, without uploading to the cloud",
+    "Whether you can compare before and after quickly",
+    "Whether results keep true colours, without plastic-looking skin",
+    "Whether you can enlarge without turning the photo into a blurry mess"
+   ],
+   "steps": [
+    "Get the largest version of the photo: the original or the file sent as a document",
+    "Zoom in and look at the type of blur: one-direction streaks, soft edges or grain",
+    "Choose the matching mode: sharpening for shake, noise removal or low light for dark photos",
+    "Compare with the original at full size and reduce the strength if artefacts appear",
+    "Save as a new copy and keep the original file untouched"
+   ],
+   "rows": [
+    [
+     "Photo received via WhatsApp",
+     "Whether an original or HD version exists",
+     "Compression removes detail that editing cannot fully recover"
+    ],
+    [
+     "Shaky photo",
+     "Streaks in the same direction",
+     "Shows which fix to use and whether enough detail remains"
+    ],
+    [
+     "Grainy night photo",
+     "Whether the problem is noise rather than focus",
+     "Sharpening without removing noise makes the image worse"
+    ]
+   ],
+   "fits": "Unblurry suits you if you want to fix shaky, soft or out-of-focus photos right on your iPhone, without uploading anything to the cloud and with no account. It has eight modes: Auto Clear for everyday blur, Sharpen for soft focus and shake, Denoise for high-ISO grain, Low Light for dark photos, Document for text and whiteboards, AI Super-Resolution, 4x Upscale, and Portrait and Restore for faces and old photos. Pressing the image shows the original for a before-and-after comparison. No ads and no tracking.",
+   "faq": [
+    [
+     "Can a very shaky photo be recovered?",
+     "Mild and moderate blur improves a lot. In very shaky photos the image becomes more presentable, but fine details like small text or exact facial features may not come back."
+    ],
+    [
+     "Why did my photo get blurry after sending it on WhatsApp?",
+     "WhatsApp compresses photos and lowers the resolution. To keep quality, send it as a document or use the HD quality option."
+    ],
+    [
+     "Is my photo sent to a server?",
+     "With Unblurry, processing happens on the device and photos never leave your phone."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "battai",
+  "locale": "zh-Hant",
+  "market": "TW",
+  "term": "電池檢測",
+  "rank": 4,
+  "slug": "iphone-battery-check-before-buying-used-or-replacing",
+  "loc": {
+   "title": "iPhone 電池檢測怎麼做？最大容量、循環次數與換電池時機",
+   "meta": "iPhone 電池檢測先看「設定 › 電池」的最大容量，再看循環次數與發燙、掉電速度。低於 80% 或出現維修提示再考慮換。買賣二手機也照這套看。",
+   "h1": "iPhone 電池檢測：三個數字看懂電池還能不能用",
+   "lead": "很多人搜電池檢測，其實想知道的是「該不該換電池」或「這台二手機電池好不好」。只看一個百分比不夠，最大容量、循環次數和平常的耗電、發燙要一起看。",
+   "answer": "到「設定 › 電池 › 電池健康度與充電」看最大容量：80% 以上通常還堪用；低於 80%，或頁面出現「維修」提示，就是考慮更換的時機。iPhone 15 以後的機型可在「設定 › 一般 › 關於本機」看到循環次數。接著觀察一週的每小時耗電與發燙時段，若容量還高卻掉電很快，問題多半在使用習慣或某個 App，不一定是電池老化。",
+   "paras": [
+    "最大容量是電池現在能存的電量和全新時相比的比例。蘋果的說法是：一般 iPhone 電池在正常狀況下約 500 次完整充電循環後仍保有約 80% 原始容量，iPhone 15 系列起提高到約 1,000 次。所以兩年的手機掉到 85% 很常見，不代表壞了；真正要注意的是低於 80%，或系統顯示效能管理已啟用、出現維修建議。",
+    "單看百分比會漏掉兩件事。第一是趨勢：同樣 86%，一台半年掉 1%、另一台一個月掉 2%，狀況完全不同，要隔一段時間記錄才看得出來。第二是熱：長時間高溫是電池老化最快的原因之一，邊充電邊玩遊戲、放在車上曝曬，都比充電次數更傷。系統只告訴你整台手機的熱狀態，不是電池本身溫度，所以要看的是「常在什麼時段發燙」。",
+    "買賣二手 iPhone 時，電池是最常被問、也最容易說不清楚的一項。賣方截一張最大容量的圖，買方不知道是不是這台、什麼時候截的。比較好的做法是當面打開設定核對，再附上一份寫明數值來源、測量日期的整理，雙方都安心。"
+   ],
+   "look": [
+    "最大容量：80% 是大多數人決定換電池的分界線，不是唯一標準",
+    "循環次數：iPhone 15 以後可直接在設定看到，舊機型要從系統分析資料取得",
+    "趨勢比單一數字重要：同一個百分比，掉得快和掉得慢意義不同",
+    "發燙時段：常在充電或某些時段發熱，比充電次數更值得改",
+    "數值來源要寫清楚：哪些是系統顯示、哪些是自己輸入或推估"
+   ],
+   "steps": [
+    "打開「設定 › 電池 › 電池健康度與充電」，記下最大容量與有沒有維修提示",
+    "iPhone 15 以後到「設定 › 一般 › 關於本機」記下循環次數；舊機型可從「分析資料」檔取得",
+    "連續一週觀察每小時耗電與發燙時段，找出掉電最快的情境",
+    "調整充電習慣：避免邊充邊重度使用，合適時把上限設在 80–90%",
+    "隔 30 天以上再看一次最大容量，用變化幅度判斷是否該換電池"
+   ],
+   "rows": [
+    [
+     "決定要不要換電池",
+     "最大容量是否低於 80%、有無維修提示",
+     "這是蘋果與多數維修建議的實際分界"
+    ],
+    [
+     "手機突然很不耐用",
+     "每小時耗電與發燙時段",
+     "容量還高卻掉很快，多半是使用情境或 App 造成"
+    ],
+    [
+     "賣或買二手機",
+     "當面核對設定中的最大容量，附數值來源與日期",
+     "一張截圖無法證明是哪台、什麼時候的狀態"
+    ]
+   ],
+   "fits": "BattAI 適合想把電池檢測整理成看得懂結果的人：它把你在「設定 › 電池」看到的最大容量轉成 0–100 的健康分數，逐項列出容量、循環次數、使用年限、熱暴露、充電習慣的扣分原因；平常持續記錄每小時耗電、近 7 天熱狀態和每次充電的保養分數，讀值相隔 30 天後顯示每月容量變化。要賣舊機時，可匯出一頁二手轉讓報告（PDF 或 PNG），逐項標示數值來源。要注意的是，BattAI 讀不到最大容量，需要你自己輸入或從分析資料檔匯入；分數是參考值，不是原廠數據。",
+   "faq": [
+    [
+     "電池最大容量 85% 需要換嗎？",
+     "通常不需要。80% 以上多半還能正常使用一天；比起數字本身，更該看它掉得快不快、手機是否常發燙，以及設定裡有沒有出現維修提示。"
+    ],
+    [
+     "有沒有 App 能直接讀出 iPhone 的最大容量？",
+     "系統沒有開放這個數值給第三方 App。檢測類 App 能自己記錄的是電量、充電狀態與整台手機的熱狀態，最大容量與循環次數要由你從設定輸入，或從系統分析資料檔匯入。"
+    ],
+    [
+     "充電充到 100% 會比較傷電池嗎？",
+     "長時間停在 100% 加上高溫，會加快老化。若生活作息允許，把充電上限設在 80–90%、避免邊充電邊玩遊戲，是最簡單的保養方式。"
+    ]
+   ]
+  },
+  "en": {
+   "title": "How to check iPhone battery health: capacity, cycles, and when to replace",
+   "meta": "Start with Maximum Capacity in Settings > Battery, then check cycle count, drain per hour and heat. Below 80% or a service notice means it is time to replace.",
+   "h1": "iPhone battery check: three numbers that tell you if the battery is still fine",
+   "lead": "Most people checking their battery really want to know one thing: replace it or not, or whether a used iPhone is a good buy. One percentage is not enough. Capacity, cycles and everyday drain and heat belong together.",
+   "answer": "Open Settings > Battery > Battery Health & Charging and read Maximum Capacity. Above 80% is usually still fine; below 80%, or a Service message, is the point to consider a replacement. On iPhone 15 and later the cycle count is in Settings > General > About. Then watch a week of hourly drain and heat: if capacity is high but the phone still dies fast, the cause is usually usage or an app, not battery wear.",
+   "paras": [
+    "Maximum Capacity compares what the battery can hold now with when it was new. Apple says a typical iPhone battery keeps about 80% of its original capacity after around 500 full cycles under normal conditions, and iPhone 15 models raise that to about 1,000. So a two-year-old phone at 85% is normal. What matters is dropping below 80%, performance management being applied, or a service recommendation.",
+    "A single percentage hides two things. One is the trend: two phones at 86% are very different if one lost 1% in six months and the other lost 2% in a month, and you only see that by recording over time. The other is heat: long periods of high temperature age a battery faster than charge count, such as gaming while charging or leaving the phone in a hot car. The system only reports the thermal state of the whole phone, not the battery temperature, so the useful question is when it tends to run hot.",
+    "When buying or selling a used iPhone, the battery is the most asked and least clearly answered item. A screenshot of the capacity screen does not prove which phone it came from or when. Checking Settings together in person, plus a summary that states each value's source and date, is fairer to both sides."
+   ],
+   "look": [
+    "Maximum Capacity: 80% is the line most people use to decide on a replacement, not the only signal",
+    "Cycle count: shown in Settings on iPhone 15 and later; older models need the system analytics data",
+    "Trend over a single number: the same percentage means different things if it falls fast or slowly",
+    "Heat periods: running hot while charging or at certain times is worth fixing before anything else",
+    "Clear sources: know which values come from the system and which were typed in or estimated"
+   ],
+   "steps": [
+    "Open Settings > Battery > Battery Health & Charging and note Maximum Capacity and any service message",
+    "On iPhone 15 and later note the cycle count in Settings > General > About; older models can get it from an analytics file",
+    "Watch hourly drain and heat for a week to find when the battery falls fastest",
+    "Adjust charging habits: avoid heavy use while charging and cap charging at 80–90% when it suits you",
+    "Check Maximum Capacity again after 30 days or more and judge by how much it changed"
+   ],
+   "rows": [
+    [
+     "Deciding on a new battery",
+     "Is Maximum Capacity below 80%, is there a service message",
+     "That is the practical line Apple and most repair advice use"
+    ],
+    [
+     "Phone suddenly drains fast",
+     "Hourly drain and heat periods",
+     "High capacity with fast drain usually points to usage or an app"
+    ],
+    [
+     "Buying or selling used",
+     "Check capacity in Settings in person, with sources and a date",
+     "A screenshot cannot show which phone it is or when it was taken"
+    ]
+   ],
+   "fits": "BattAI fits people who want a battery check they can actually read. It turns the Maximum Capacity you see in Settings > Battery into a 0–100 health score and lists what lowers it: capacity, cycle count, device age, heat exposure and charging habits. It keeps recording hourly drain, the last 7 days of thermal state and a care score for each charge, and once readings are at least 30 days apart it shows monthly capacity change. Before selling, you can export a one-page resale report as PDF or PNG with the source of each value. Note that BattAI cannot read Maximum Capacity itself; you type it in or import it from an analytics file, and scores are estimates, not official values.",
+   "faq": [
+    [
+     "Should I replace a battery at 85% capacity?",
+     "Usually not. Above 80% most phones still last a normal day. More important than the number is how fast it falls, whether the phone often runs hot, and whether Settings shows a service message."
+    ],
+    [
+     "Can an app read my iPhone's Maximum Capacity directly?",
+     "No. iOS does not expose that value to third-party apps. Battery apps can record charge level, charging state and the phone's thermal state; capacity and cycle count come from your input or an imported analytics file."
+    ],
+    [
+     "Is charging to 100% bad for the battery?",
+     "Sitting at 100% for long periods, especially when warm, speeds up aging. If your routine allows, capping charging at 80–90% and not gaming while charging are the easiest habits to change."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "lumimath",
+  "locale": "ko",
+  "market": "KR",
+  "term": "수학 놀이",
+  "rank": 15,
+  "slug": "math-play-for-young-kids-number-sense-before-worksheets",
+  "loc": {
+   "title": "유아 수학 놀이, 문제집보다 먼저 해야 할 수 감각 놀이 방법",
+   "meta": "유아 수학 놀이는 하루 10분, 세기·모으기·비교부터. 손가락·주사위·수직선처럼 눈에 보이는 그림으로 시작하고, 틀려도 혼내지 않는 것이 핵심입니다.",
+   "h1": "유아 수학 놀이: 연산 문제집 전에 집에서 하는 수 감각 놀이",
+   "lead": "\"우리 아이 수학, 언제부터 뭘 해야 하지?\" 하고 수학 놀이를 찾는 부모님이 많습니다. 정답은 계산 속도가 아니라 수 감각입니다. 숫자를 보고 양을 떠올릴 수 있어야 덧셈도 구구단도 무너지지 않습니다.",
+   "answer": "만 3~5세는 하루 10분이면 충분합니다. 순서는 ① 하나씩 짚으며 세기 ② 두 묶음을 모으기·가르기 ③ 많다·적다 비교하기 ④ 규칙 찾기입니다. 주사위 눈, 손가락, 십틀(10칸 판)처럼 양이 눈에 보이는 도구를 쓰고, 틀렸을 때 바로 정답을 말해 주기보다 \"다시 세어 볼까?\"로 아이가 스스로 찾게 하세요. 받아올림이나 구구단은 이 감각이 생긴 뒤에 들어가야 오래갑니다.",
+   "paras": [
+    "수학 놀이에서 가장 흔한 실수는 숫자 읽기와 세기를 같은 것으로 보는 것입니다. 1부터 20까지 줄줄 외우는 아이도 사탕 7개를 하나씩 짚어 세라고 하면 중간에 건너뛰거나 두 번 세곤 합니다. 하나에 한 번씩 짚기, 마지막에 센 수가 전체 개수라는 것, 이 두 가지가 먼저입니다. 계단 오를 때, 장난감 정리할 때처럼 생활 속에서 세는 기회를 자주 만드는 것이 문제집보다 효과적입니다.",
+    "다음 단계는 \"5와 3을 모으면 8\"처럼 수를 쪼개고 합치는 감각입니다. 십틀이나 주사위 눈처럼 칸과 점으로 보면, 아이는 8을 하나씩 세지 않고 \"5하고 3\"으로 한눈에 봅니다. 이것이 나중에 받아올림 있는 덧셈(8+5를 8+2+3으로 바꾸기)의 바탕이 됩니다. 우리나라 교육과정에서도 1학년에 모으기·가르기와 받아올림을, 2학년에 곱셈구구를 배우니, 유아기에는 앞부분을 놀이로 충분히 다지는 게 좋습니다.",
+    "마지막으로 분위기입니다. 틀릴 때마다 지적을 받으면 아이는 수학을 \"틀리면 혼나는 것\"으로 기억합니다. 짧게 끝내고, 맞힌 순간을 함께 기뻐해 주고, 아이가 \"한 번 더\"를 말할 때 멈추는 편이 다음 날도 하고 싶게 만듭니다. 글을 아직 못 읽는 아이라면 문제를 소리 내어 읽어 주고 그림으로 보여 주는 방식이어야 혼자서도 참여할 수 있습니다."
+   ],
+   "look": [
+    "양이 눈에 보이는가: 주사위 눈, 십틀, 수직선처럼 그림으로 수를 보여 주는지",
+    "글을 몰라도 되는가: 문제를 읽어 주고 그림만으로 이해할 수 있는지",
+    "틀렸을 때 반응: 날카로운 소리나 벌점 대신 다시 시도하게 하는지",
+    "단계가 이어지는가: 세기에서 덧셈·뺄셈, 시계·돈까지 순서대로 오르는지",
+    "부모가 확인할 수 있는가: 어느 영역이 약한지 보고 그 부분만 연습시킬 수 있는지"
+   ],
+   "steps": [
+    "생활 속 세기: 계단, 블록, 과일을 하나씩 짚으며 세고 \"모두 몇 개?\"를 물어보기",
+    "모으기·가르기: 손가락이나 십틀로 5를 기준 삼아 \"5하고 몇\"으로 보기",
+    "비교와 규칙: 많다·적다, 빨강-파랑-빨강 다음은? 같은 놀이 섞기",
+    "하루 10분 고정: 같은 시간에 짧게 하고 아이가 즐거울 때 끝내기",
+    "약한 부분 확인: 일주일에 한 번 어떤 유형에서 자주 막히는지 보고 그 부분만 다시 놀기"
+   ],
+   "rows": [
+    [
+     "만 3~4세 시작",
+     "하나씩 짚어 세고 마지막 수가 전체임을 아는지",
+     "외워서 세는 것과 양을 아는 것은 다르고, 이후 모든 계산의 바탕입니다"
+    ],
+    [
+     "초등 입학 준비",
+     "10 모으기·가르기를 그림 없이도 떠올리는지",
+     "1학년 받아올림 덧셈은 10을 만드는 감각으로 풉니다"
+    ],
+    [
+     "수학을 싫어하는 아이",
+     "틀렸을 때 혼나는 느낌을 받는지",
+     "부정적 기억이 쌓이면 실력보다 자신감이 먼저 무너집니다"
+    ]
+   ],
+   "fits": "Lumi 수학 행성은 글을 아직 못 읽는 유아부터 초등 저학년까지, 그림으로 수학 놀이를 하고 싶은 가정에 맞습니다. 46가지 문제를 한 문제씩 읽어 주고 주사위, 십틀, 수직선, 막대그래프 같은 그림으로 보여 주며, 수 세기와 덧셈·뺄셈부터 구구단, 시계, 돈, 규칙과 논리까지 자동으로 단계가 오릅니다. 맞히면 작은 행성에 불이 켜지고, 틀려도 삐 소리 없이 응원만 합니다. 보호자는 5가지 영역의 학습 현황을 보고 약점을 집중 연습시킬 수 있고, 정답지가 있는 학습지를 인쇄하거나 PDF로 저장할 수 있습니다. 광고가 없고 계정도 필요 없습니다.",
+   "faq": [
+    [
+     "수학 놀이는 몇 살부터 시작하나요?",
+     "만 3세 전후로 생활 속 세기부터 시작하면 됩니다. 연산 문제집은 하나씩 정확히 세고, 5와 10을 기준으로 수를 모으고 가를 수 있게 된 뒤가 좋습니다."
+    ],
+    [
+     "앱으로 하는 수학 놀이, 화면 시간이 걱정돼요.",
+     "하루 10분 정도로 정해 두고, 앱에서 한 놀이를 블록이나 손가락으로 다시 해 보게 하면 화면 밖 경험과 연결됩니다. 짧게 끝내는 것이 습관 만들기에도 유리합니다."
+    ],
+    [
+     "구구단은 언제 외우게 해야 하나요?",
+     "교육과정상 곱셈구구는 2학년에서 배웁니다. 그 전에 \"2씩, 5씩 뛰어 세기\"를 놀이로 해 두면 외우는 부담이 크게 줄어듭니다."
+    ]
+   ]
+  },
+  "en": {
+   "title": "Math play for young kids: number-sense games before worksheets",
+   "meta": "Math play for ages 3–5 works best at 10 minutes a day: counting, combining, comparing and patterns, with dice, fingers and ten-frames, and no scolding.",
+   "h1": "Math play for preschoolers: number-sense games to do before drill books",
+   "lead": "Parents searching for math play usually want to know where to start. The answer is number sense, not speed. A child who can picture the quantity behind a number keeps up later with addition and times tables.",
+   "answer": "For ages 3 to 5, ten minutes a day is enough. Go in this order: count objects one by one, combine and split two groups, compare more and fewer, then find patterns. Use tools that show quantity, such as dice, fingers and a ten-frame, and when a child gets it wrong, ask them to count again rather than giving the answer. Carrying and times tables stick better once this sense is in place.",
+   "paras": [
+    "The most common mistake is treating reciting numbers as counting. A child who can say 1 to 20 may still skip or double-count when touching seven sweets. Touching each item once, and knowing the last number said is the total, come first. Everyday chances to count, such as stairs or tidying toys, do more than a workbook.",
+    "Next comes splitting and combining: 5 and 3 make 8. On a ten-frame or dice, a child sees 8 as 5 and 3 at a glance instead of counting one by one. That is the base for addition with carrying later, turning 8 + 5 into 8 + 2 + 3. In the Korean curriculum, combining and splitting and carrying come in grade 1 and multiplication tables in grade 2, so the preschool years are best spent on the early part through play.",
+    "Finally, mood. If every mistake gets corrected sharply, children remember math as the thing they get told off for. Keep sessions short, celebrate the right answers together, and stop while they still want one more. For children who cannot read yet, problems need to be read aloud and shown as pictures so they can take part on their own."
+   ],
+   "look": [
+    "Visible quantity: dice, ten-frames and number lines that show numbers as pictures",
+    "No reading needed: problems are read aloud and understandable from pictures alone",
+    "Reaction to mistakes: encourages another try instead of harsh sounds or penalties",
+    "A clear progression: from counting to addition and subtraction, then clocks and money",
+    "Parent view: shows which area is weak so you can practise just that"
+   ],
+   "steps": [
+    "Count in daily life: stairs, blocks or fruit, touching each one, then ask how many in total",
+    "Combine and split: use fingers or a ten-frame and see numbers as five and some more",
+    "Mix in comparing and patterns: more or fewer, and what comes after red, blue, red",
+    "Fix ten minutes a day at the same time and stop while it is still fun",
+    "Once a week, check which problem types keep stopping your child and play those again"
+   ],
+   "rows": [
+    [
+     "Starting at 3–4",
+     "Counts one by one and knows the last number is the total",
+     "Reciting is not the same as understanding quantity, which every later skill needs"
+    ],
+    [
+     "Getting ready for school",
+     "Can picture combining and splitting 10 without objects",
+     "Grade 1 addition with carrying relies on making ten"
+    ],
+    [
+     "A child who dislikes math",
+     "Whether mistakes feel like being told off",
+     "Negative memories wear down confidence before ability"
+    ]
+   ],
+   "fits": "Lumi Math Planet suits families who want picture-based math play for children who cannot read yet through the early school years. It reads each of its 46 problem types aloud and shows them with dice, ten-frames, number lines and bar graphs, stepping up automatically from counting, addition and subtraction to times tables, clocks, money, patterns and logic. A right answer lights up a small planet, and a wrong one gets encouragement with no harsh beep. Parents see progress across five areas, can focus practice on weak spots, and can print worksheets with answer keys or save them as PDF. There are no ads and no account.",
+   "faq": [
+    [
+     "What age should math play start?",
+     "Around age 3, with counting in daily life. Drill books fit better once a child counts accurately and can combine and split numbers around 5 and 10."
+    ],
+    [
+     "I worry about screen time with math apps.",
+     "Set about ten minutes a day and have your child redo what they played with blocks or fingers afterwards. Short sessions also help the habit last."
+    ],
+    [
+     "When should kids memorise times tables?",
+     "In the Korean curriculum multiplication tables come in grade 2. Skip-counting by 2s and 5s as a game beforehand makes memorising much easier."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "moneytag",
+  "locale": "zh-Hant",
+  "market": "TW",
+  "term": "副業 記帳",
+  "rank": 20,
+  "slug": "side-hustle-bookkeeping-one-ledger-per-gig-real-profit",
+  "loc": {
+   "title": "副業記帳怎麼記？每個案子分開算，才看得出哪個真的有賺",
+   "meta": "副業記帳的重點是和生活開銷分開、每個案子各算淨額。收入記實收與扣繳，支出記設備、材料、平台抽成，年底報稅與二代健保補充保費才對得上。",
+   "h1": "副業記帳：一個案子一本帳，收入減支出才是真的賺多少",
+   "lead": "接了接案、團購、市集和家教，月底存款好像變多了，卻說不出哪一個副業真的有賺。問題通常不是記得不夠多，而是全部混在同一本帳裡。",
+   "answer": "副業記帳只要做到三件事：①副業和日常開銷分開記；②每個副業或每個案子各自一本帳，收入減掉專屬支出就是它的淨額；③收入記「實際入帳」並另記被扣掉的稅與二代健保補充保費，支出記設備、材料、平台抽成與交通。這樣每個月一眼看出哪個案子值得做，年底報稅時也對得上扣繳憑單。",
+   "paras": [
+    "很多人副業記帳記到一半放棄，是因為把它當成生活記帳的延伸，結果午餐、房租和買給客戶的材料混在一起，最後算出來的「副業收入」根本沒扣成本。先切開：副業的錢只記副業相關的收支。如果同時有兩三個副業，再各自切開，因為接案設計和週末市集的成本結構完全不同，混在一起就看不出哪一個在拖後腿。",
+    "收入要記清楚「入帳金額」和「被扣掉的部分」。在台灣，單次給付達一定金額時，給付方常會先扣繳所得稅，部分所得類別還會扣二代健保補充保費（費率 2.11%），實際入帳比報價少。把報價、扣繳和實收分開記，年初收到扣繳憑單時才能核對，也不會高估自己的收入。實際扣繳門檻與所得類別以國稅局、健保署公告為準。",
+    "支出則要記「為這個副業才花的錢」：設備、軟體、材料、運費、平台手續費、交通。有些成本是跨案子共用的，例如同一台相機拍了好幾個案子，這時用標籤標出設備或客戶，再跨案子加總，就能知道一台設備總共撐起多少收入。月底只看兩個數字：每個副業的淨額，以及每小時大概賺多少。"
+   ],
+   "look": [
+    "能不能分開記：每個副業或案子有自己的帳本與淨額",
+    "能不能跨案子看：同一個客戶、同一台設備在不同案子的收支合計",
+    "幣別：接海外案子時，每個案子能不能用自己的幣別與匯率",
+    "記帳要快：在手機、手錶或小工具上隨手記一筆，才不會月底補記",
+    "能不能匯出：報稅、對帳或給會計時能匯出 CSV、PDF"
+   ],
+   "steps": [
+    "列出所有副業，每一個建一本帳，不和日常生活開銷混記",
+    "每筆收入記報價、被扣的稅與補充保費、實際入帳三個數字",
+    "每筆支出只記為這個副業花的錢，並用標籤標出客戶或設備",
+    "每個月底看每個副業的淨額，搭配大概花的時數估每小時收入",
+    "年初收到扣繳憑單時，用帳本的扣繳紀錄逐筆核對，再匯出備份"
+   ],
+   "rows": [
+    [
+     "同時有好幾個副業",
+     "每個副業是否各自算淨額",
+     "混在一起看不出哪個在賺、哪個在賠"
+    ],
+    [
+     "接海外或外幣案子",
+     "每個案子的幣別與當時匯率",
+     "匯率變動會讓實際收入和報價差很多"
+    ],
+    [
+     "年底報稅",
+     "扣繳金額與實收是否分開記",
+     "才能核對扣繳憑單，避免漏報或高估收入"
+    ]
+   ],
+   "fits": "MoneyTag 適合同時經營好幾個副業或案子、想各自算清楚的人：每個專案就是一本獨立的帳，有自己的交易與幣別，收入減支出直接顯示這個專案的淨額。任何一筆收支都能貼標籤，標籤頁把同一個標籤在所有專案裡的收入、支出與淨額合計起來，適合用來追蹤客戶或設備。外幣案子可用約每 6 小時更新的公開匯率或手動匯率換算。iPhone 與 iPad 同一本帳，也能在 Apple Watch 或主畫面、鎖定畫面小工具上看狀態、隨手記一筆，並匯出 CSV、PDF 或相片、備份與還原。",
+   "faq": [
+    [
+     "副業記帳和生活記帳可以放在同一個 App 嗎？",
+     "可以，但要分成不同的帳本或專案。重點是副業的收支不能和午餐、房租混在一起，否則算不出副業的真實淨額。"
+    ],
+    [
+     "副業收入被扣了稅和二代健保，要記多少？",
+     "建議三個數字都記：報價、被扣繳的金額、實際入帳。這樣年初對扣繳憑單最快。哪些所得會被扣、門檻多少，以國稅局與健保署公告為準。"
+    ],
+    [
+     "設備是好幾個案子共用的，成本要記在哪裡？",
+     "可以記在主要使用的那個案子，再用同一個設備標籤標出相關收支，跨案子加總就能看出這台設備總共帶來多少收入。"
+    ]
+   ]
+  },
+  "en": {
+   "title": "Side hustle bookkeeping: one ledger per gig to see what really pays",
+   "meta": "Keep side hustle money apart from daily spending and give each gig its own ledger. Record payouts with withholding, and costs like gear, materials and fees.",
+   "h1": "Side hustle bookkeeping: one ledger per gig, income minus costs",
+   "lead": "Freelance jobs, group buys, weekend markets and tutoring can make your balance grow while you still cannot say which one actually makes money. The usual problem is not tracking too little, it is tracking everything in one place.",
+   "answer": "Side hustle bookkeeping needs three things: keep it separate from everyday spending; give each side hustle or project its own ledger so income minus its own costs is its net; and record income as the amount actually received, with any withheld tax or health insurance premium noted, and costs as gear, materials, platform fees and travel. Each month you see which gig is worth it, and tax time matches your withholding statements.",
+   "paras": [
+    "Many people give up because they treat side income as part of personal budgeting, so lunch, rent and client materials end up mixed and the side income never has its costs taken out. Split it first: side hustle money only records side hustle income and costs. With two or three side hustles, split again, because design freelancing and a weekend market stall have completely different costs.",
+    "Record both the payout and what was taken out of it. In Taiwan, payers often withhold income tax on larger single payments, and some income types also have the NHI supplementary premium (2.11%) deducted, so what arrives is less than the quote. Recording quote, withholding and amount received separately lets you check withholding statements later and keeps you from overstating income. Exact thresholds and income types follow the tax bureau and NHI announcements.",
+    "For costs, record only what you spent for that side hustle: equipment, software, materials, shipping, platform fees, travel. Some costs are shared, such as one camera used for several jobs; tag the gear or client and total across projects to see how much income that equipment supports. At month end, look at two numbers: each side hustle's net, and roughly what it earns per hour."
+   ],
+   "look": [
+    "Separate books: each side hustle or project has its own ledger and net",
+    "Cross-project view: totals for the same client or the same equipment across jobs",
+    "Currency: each project can use its own currency and exchange rate for overseas work",
+    "Fast entry: log on the phone, watch or widget so nothing waits until month end",
+    "Export: CSV or PDF for taxes, reconciliation or your accountant"
+   ],
+   "steps": [
+    "List every side hustle and give each its own ledger, separate from daily spending",
+    "For each payment, record the quote, withheld tax and premium, and the amount received",
+    "Record only costs spent for that side hustle, tagged by client or equipment",
+    "At month end, check each side hustle's net and estimate income per hour",
+    "When withholding statements arrive, check them line by line against your ledger, then export a backup"
+   ],
+   "rows": [
+    [
+     "Several side hustles at once",
+     "Does each one show its own net",
+     "Mixed together you cannot tell which earns and which loses"
+    ],
+    [
+     "Overseas or foreign-currency work",
+     "Each project's currency and the rate at the time",
+     "Exchange rates can move income far from the quote"
+    ],
+    [
+     "Filing taxes",
+     "Withholding and amount received recorded separately",
+     "Lets you match statements and avoid under- or over-reporting"
+    ]
+   ],
+   "fits": "MoneyTag fits people running several side hustles or projects who want each one counted on its own. Every project is a separate ledger with its own transactions and currency, and income minus expenses shows that project's net. Any entry can carry tags, and the Tags view totals income, expenses and net for one tag across all projects, which works well for clients or equipment. Foreign-currency work can use public rates refreshed about every 6 hours or a manual rate. iPhone and iPad share one book, Apple Watch and Home and Lock Screen widgets show status and take quick entries, and you can export CSV, PDF or photos and back up and restore.",
+   "faq": [
+    [
+     "Can side hustle and personal budgeting share one app?",
+     "Yes, as long as they are separate ledgers or projects. Side income and costs must not mix with lunch and rent, or the real net disappears."
+    ],
+    [
+     "Tax and the NHI premium were deducted. What should I record?",
+     "All three numbers: the quote, the amount withheld and the amount received. That makes checking withholding statements quick. Which income is withheld and the thresholds follow official announcements."
+    ],
+    [
+     "Where do I put equipment shared by several jobs?",
+     "Record it under the project that uses it most, and tag related entries with the same equipment tag; totals across projects show how much income that equipment brings in."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "snapportlite",
+  "locale": "th",
+  "market": "TH",
+  "term": "รูปติดบัตร ฟรี",
+  "rank": 19,
+  "slug": "make-id-photo-at-home-right-size-background-and-print",
+  "loc": {
+   "title": "ทำรูปติดบัตรเองที่บ้าน ถ่ายยังไง ขนาดไหน พิมพ์ที่ไหนให้ประหยัด",
+   "meta": "ทำรูปติดบัตรเองได้ด้วยมือถือ ถ่ายหน้าตรงชิดผนังสีเรียบ ใช้แสงธรรมชาติ ครอปให้ตรงขนาดที่หน่วยงานกำหนด แล้วจัดหลายรูปลงกระดาษ 4×6 นิ้วแผ่นเดียวไปพิมพ์",
+   "h1": "รูปติดบัตรทำเองได้: ถ่าย ครอป และพิมพ์ให้ตรงขนาดที่ต้องใช้",
+   "lead": "คนที่ค้นหารูปติดบัตรฟรีส่วนใหญ่ต้องการรูปด่วนสำหรับสมัครงาน สมัครเรียน หรือยื่นเอกสาร และไม่อยากเสียเวลาไปร้านถ่ายรูป ข่าวดีคือทำเองได้ ถ้ารู้ว่าต้องเช็กอะไรบ้าง",
+   "answer": "ทำเองได้ใน 3 ขั้น: ① ถ่ายหน้าตรงด้วยมือถือ ยืนห่างผนังสีพื้นเรียบราวครึ่งเมตร หันหน้าเข้าหาหน้าต่างให้แสงเท่ากันทั้งหน้า ② ครอปให้ตรงขนาดที่หน่วยงานกำหนด เช่น 1 นิ้ว หรือ 1.5 นิ้ว และให้ศีรษะกับคางอยู่ในกรอบ ③ จัดหลายรูปลงกระดาษ 4×6 นิ้วแผ่นเดียวแล้วไปพิมพ์ที่ร้านหรือตู้พิมพ์รูป ประหยัดกว่าพิมพ์ทีละใบ ส่วนหนังสือเดินทางไทยถ่ายรูปที่สำนักงานตอนยื่นคำร้อง ไม่ต้องเตรียมรูปไปเอง",
+   "paras": [
+    "รูปติดบัตรที่โดนตีกลับส่วนใหญ่ไม่ใช่เพราะกล้องไม่ดี แต่เพราะเงาและสัดส่วน แสงจากเพดานด้านบนทำให้เกิดเงาใต้ตาและคาง แสงจากข้างเดียวทำให้หน้าครึ่งหนึ่งมืด ทางที่ง่ายที่สุดคือหันหน้าเข้าหาหน้าต่างตอนกลางวัน ให้คนอื่นถ่ายในระดับสายตา ไม่ใช้เลนส์มุมกว้างเซลฟี่ใกล้ ๆ เพราะจมูกจะดูใหญ่ผิดสัดส่วน และอย่าใช้ฟิลเตอร์ปรับหน้า",
+    "เรื่องขนาด คำว่า 1 นิ้ว หรือ 1.5 นิ้ว ในไทยเป็นชื่อเรียกที่ใช้กันทั่วไป (ราว 2.5×3 ซม. และ 3×4 ซม.) แต่แต่ละหน่วยงานอาจระบุต่างกันเล็กน้อย ส่วนวีซ่าต่างประเทศมักใช้ขนาดเฉพาะ เช่น 35×45 มม. หรือ 2×2 นิ้ว และมักกำหนดสัดส่วนความสูงของศีรษะในรูปด้วย ก่อนครอปให้เปิดประกาศของหน่วยงานที่จะยื่นดูขนาด สีพื้นหลัง และอายุของรูป (เช่น ถ่ายไม่เกิน 6 เดือน) ทุกครั้ง",
+    "การพิมพ์คือจุดที่ประหยัดได้มากที่สุด แทนที่จะพิมพ์รูปทีละใบ ให้จัดรูปติดบัตรหลายใบลงกระดาษขนาด 4×6 นิ้วแผ่นเดียว แล้วสั่งพิมพ์เป็นรูปขนาด 4×6 ธรรมดา ได้รูปหลายใบในครั้งเดียว เวลาพิมพ์ต้องเลือกพิมพ์ขนาดจริง ไม่ให้ร้านหรือเครื่องย่อ-ขยายให้พอดีหน้า ไม่อย่างนั้นขนาดจะเพี้ยน"
+   ],
+   "look": [
+    "ขนาดตรงตามประกาศ: เลือกขนาดสำเร็จรูปหรือกำหนดเองเป็นมม. นิ้ว หรือพิกเซลได้",
+    "ตำแหน่งใบหน้า: มีเส้นนำยอดศีรษะ แนวตา และคาง ให้สัดส่วนถูกต้อง",
+    "พื้นหลัง: เปลี่ยนเป็นสีขาว ฟ้า หรือสีที่หน่วยงานกำหนดได้โดยไม่ต้องหาผนังใหม่",
+    "จัดหน้าพิมพ์: วางหลายรูปลงกระดาษ 4×6 นิ้วหรือ A4 พร้อมเส้นตัด",
+    "ความเป็นส่วนตัว: รูปหน้าประมวลผลในเครื่อง ไม่ต้องอัปโหลดขึ้นเว็บที่ไม่รู้จัก"
+   ],
+   "steps": [
+    "เช็กประกาศของหน่วยงาน: ขนาด สีพื้นหลัง และเงื่อนไขอื่น เช่น ห้ามใส่แว่น",
+    "ถ่ายหน้าตรงตอนกลางวัน หันหน้าเข้าหาหน้าต่าง ให้คนอื่นถ่ายในระดับสายตา",
+    "ครอปให้ตรงขนาด จัดยอดศีรษะ ตา และคางให้อยู่ในแนวที่กำหนด",
+    "เปลี่ยนพื้นหลังเป็นสีตามประกาศ ปรับแสงเล็กน้อยให้เป็นธรรมชาติ",
+    "จัดหลายรูปลงกระดาษ 4×6 นิ้วแผ่นเดียว แล้วสั่งพิมพ์แบบขนาดจริงไม่ย่อขยาย"
+   ],
+   "rows": [
+    [
+     "สมัครงานหรือสมัครเรียน",
+     "ขนาด 1 นิ้ว หรือ 1.5 นิ้ว ตามที่ระบุ และใบหน้าชัดไม่มีเงา",
+     "รูปไม่ตรงขนาดทำให้ต้องพิมพ์ใหม่หรือเอกสารดูไม่เรียบร้อย"
+    ],
+    [
+     "ยื่นวีซ่าต่างประเทศ",
+     "ขนาดเฉพาะ เช่น 35×45 มม. สัดส่วนศีรษะ และสีพื้นหลัง",
+     "สถานทูตหลายแห่งตีกลับรูปที่สัดส่วนหรือพื้นหลังไม่ตรง"
+    ],
+    [
+     "ต้องใช้หลายใบ",
+     "จัดหลายรูปบนกระดาษ 4×6 นิ้วแผ่นเดียวและพิมพ์ขนาดจริง",
+     "ประหยัดกว่าพิมพ์ทีละใบ และได้ขนาดตรงทุกใบ"
+    ]
+   ],
+   "fits": "Snapport Lite เหมาะกับคนที่อยากทำรูปติดบัตรเองด้วย iPhone: มีเทมเพลตขนาดในตัว 35 แบบ สำหรับ 28 ประเทศและภูมิภาค หรือกำหนดขนาดเองเป็นมม. นิ้ว หรือพิกเซล พร้อมเลือก DPI ตรวจจับใบหน้าบนอุปกรณ์และมีเส้นนำยอดศีรษะ แนวตา และคาง เปลี่ยนพื้นหลังเป็นสีขาว เทาอ่อน น้ำเงิน แดง หรือสีที่กำหนดเอง ส่งออกเป็น JPEG, PNG หรือ PDF และจัดหลายรูปลงกระดาษ 4×6 นิ้ว, A4 หรือ Letter พร้อมเส้นตัด เทมเพลตและเครื่องมือแก้ไขใช้ได้ทั้งหมด ส่งออกครั้งแรกได้ฟรี รูปประมวลผลในเครื่องและไม่ถูกอัปโหลด แอปไม่รับประกันว่ารูปจะผ่านการพิจารณา ควรตรวจข้อกำหนดของหน่วยงานก่อนยื่นเสมอ",
+   "faq": [
+    [
+     "ถ่ายรูปติดบัตรด้วยมือถือใช้ได้จริงไหม",
+     "ใช้ได้กับเอกสารส่วนใหญ่ ถ้าแสงเท่ากันทั้งหน้า ไม่มีเงา พื้นหลังสีเรียบ และขนาดตรงประกาศ แต่บางหน่วยงานกำหนดให้ถ่ายที่สำนักงาน เช่น หนังสือเดินทางและบัตรประชาชน"
+    ],
+    [
+     "รูปติดบัตร 1 นิ้ว กับ 1.5 นิ้ว ต่างกันยังไง",
+     "เป็นชื่อเรียกขนาดที่ใช้ในไทย 1 นิ้วราว 2.5×3 ซม. ส่วน 1.5 นิ้วราว 3×4 ซม. ควรดูขนาดที่หน่วยงานระบุจริงทุกครั้ง เพราะอาจต่างกันเล็กน้อย"
+    ],
+    [
+     "พิมพ์รูปติดบัตรยังไงให้ประหยัด",
+     "จัดหลายรูปลงกระดาษ 4×6 นิ้วแผ่นเดียว แล้วสั่งพิมพ์เป็นรูป 4×6 ธรรมดาแบบขนาดจริง จะได้รูปหลายใบจากการพิมพ์ครั้งเดียว"
+    ]
+   ]
+  },
+  "en": {
+   "title": "Make an ID photo at home: how to shoot, which size, and how to print cheaply",
+   "meta": "Shoot face-on against a plain wall in daylight, crop to the exact size the office asks for, then fit several photos onto one 4×6 inch sheet to print.",
+   "h1": "DIY ID photos: shoot, crop and print to the exact size you need",
+   "lead": "People searching for a free ID photo usually need one quickly for a job, school or paperwork and would rather not visit a studio. You can make one yourself if you know what to check.",
+   "answer": "Three steps: shoot face-on with your phone about half a metre from a plain wall, facing a window so light is even; crop to the exact size required, such as Thailand's common 1-inch or 1.5-inch sizes, with head and chin inside the frame; then place several photos on one 4×6 inch sheet and print it at a photo shop or kiosk, which costs less than printing one by one. Thai passports are photographed at the office when you apply, so you do not bring a photo.",
+   "paras": [
+    "Most rejected ID photos fail on shadows and proportions, not camera quality. Ceiling light casts shadows under the eyes and chin, and light from one side darkens half the face. The easiest fix is to face a window in daytime, have someone else shoot at eye level, avoid close wide-angle selfies that enlarge the nose, and skip beauty filters.",
+    "On size, 1 inch and 1.5 inch are common Thai names (about 2.5×3 cm and 3×4 cm), but offices may specify slightly different dimensions. Foreign visas often use specific sizes such as 35×45 mm or 2×2 inches and may also set how tall the head must be. Before cropping, always check the office's notice for size, background colour and how recent the photo must be, for example taken within 6 months.",
+    "Printing is where you save most. Instead of printing photos one at a time, put several ID photos on one 4×6 inch layout and print it as a normal 4×6 photo. Make sure it prints at actual size, without the shop or machine scaling it to fit, or the dimensions will drift."
+   ],
+   "look": [
+    "Exact size: ready-made templates or custom sizes in mm, inches or pixels",
+    "Face position: guides for top of head, eye line and chin",
+    "Background: switch to white, blue or the required colour without finding a new wall",
+    "Print layout: several photos on a 4×6 inch or A4 sheet with cut lines",
+    "Privacy: face photos processed on the device, not uploaded to an unknown website"
+   ],
+   "steps": [
+    "Check the office's notice: size, background colour and rules such as no glasses",
+    "Shoot face-on in daylight facing a window, with someone else at eye level",
+    "Crop to the exact size and line up top of head, eyes and chin",
+    "Change the background to the required colour and adjust light slightly to look natural",
+    "Place several photos on one 4×6 inch sheet and print at actual size with no scaling"
+   ],
+   "rows": [
+    [
+     "Job or school applications",
+     "The stated 1-inch or 1.5-inch size and a clear face with no shadows",
+     "Wrong sizes mean reprinting or untidy documents"
+    ],
+    [
+     "Foreign visa applications",
+     "Specific sizes such as 35×45 mm, head proportion and background",
+     "Many embassies reject photos with wrong proportions or backgrounds"
+    ],
+    [
+     "Needing many copies",
+     "Several photos on one 4×6 inch sheet printed at actual size",
+     "Cheaper than single prints and every copy stays the right size"
+    ]
+   ],
+   "fits": "Snapport Lite suits people who want to make ID photos themselves on iPhone. It has 35 built-in size templates for 28 countries and regions, or custom sizes in mm, inches or pixels with a chosen DPI. On-device face detection adds guides for top of head, eye line and chin, and the background can switch to white, light grey, blue, red or a custom colour. Export to JPEG, PNG or PDF, or lay out several photos on 4×6 inch, A4 or Letter sheets with cut lines. All templates and editing tools are available and the first export is free. Photos are processed on the device and never uploaded. The app does not guarantee acceptance, so always check the official requirements before submitting.",
+   "faq": [
+    [
+     "Do phone ID photos actually work?",
+     "For most documents, yes, if the light is even, there are no shadows, the background is plain and the size matches. Some documents, such as Thai passports and ID cards, are photographed at the office."
+    ],
+    [
+     "What is the difference between 1-inch and 1.5-inch photos?",
+     "They are common Thai size names: 1 inch is about 2.5×3 cm and 1.5 inch about 3×4 cm. Always use the exact size the office states, since it can vary slightly."
+    ],
+    [
+     "How do I print ID photos cheaply?",
+     "Put several photos on one 4×6 inch layout and print it as a normal 4×6 photo at actual size; one print gives you many copies."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "zipbox",
+  "locale": "ja",
+  "market": "JP",
+  "term": "7zを解凍",
+  "rank": 26,
+  "slug": "how-to-extract-7z-on-iphone-split-parts-and-passwords",
+  "loc": {
+   "title": "iPhoneで7zを解凍する方法｜開けない原因と分割・パスワード付きの対処",
+   "meta": "iPhoneのファイルAppはZIPなら展開できますが、7zは開けません。7z対応アプリで開き、分割ファイル（.7z.001）は全部同じフォルダに置いて先頭から。",
+   "h1": "7zを解凍したい：iPhoneで開けないときの原因と手順",
+   "lead": "メールやダウンロードで届いた「.7z」をタップしても、iPhoneでは中身が見えない。故障でもファイルの破損でもなく、多くの場合は形式の問題です。",
+   "answer": "iPhone標準のファイルAppが展開できるのは基本的にZIPで、7zには対応していません。7z対応の解凍アプリで開けば中身を確認できます。「.7z.001」「.7z.002」のような分割ファイルは、全部を同じフォルダに保存してから先頭の.001を開きます。パスワード付きの場合は送り主にパスワードを確認し、7zではファイル名自体が暗号化されていることもあるので、入力するまで一覧が見えなくても異常ではありません。",
+   "paras": [
+    "7zは高い圧縮率で知られる形式で、大きな写真フォルダや資料をまとめて送るときによく使われます。一方で、iPhoneやiPadのファイルAppはZIPの展開には対応していても、7zは対象外です。そのため「タップしてもプレビューが出ない」「共有メニューに開くアプリがない」という状態になります。ファイルが壊れているわけではないので、まずは7zに対応したアプリで開いてみるのが近道です。",
+    "開けないときに多いのが分割ファイルです。容量の大きい7zは「〜.7z.001」「〜.7z.002」…と分かれていて、1つでも欠けると最後まで展開できません。メールの添付やクラウドから個別に保存すると、別々の場所に保存されがちです。すべてを同じフォルダにまとめ、ファイル名の番号が連続しているか確認してから、先頭のファイルを開きます。",
+    "パスワード付きの7zは、AES-256で暗号化されているのが一般的です。パスワードを忘れた場合、解析して開く方法は現実的ではないので、送り主に確認するしかありません。また、iPhoneの容量にも注意が必要です。展開すると元のファイルより大きくなるため、必要なファイルが1つだけなら全部を展開せず、中身を確認してそのファイルだけ取り出すほうが容量を節約できます。"
+   ],
+   "look": [
+    "対応形式：7zだけでなくRAR、ZIP、TAR、ISOなどもまとめて開けるか",
+    "分割ファイル：.7z.001のような分割形式に対応しているか",
+    "パスワード：パスワード付きの圧縮ファイルを開けるか",
+    "展開前の確認：中身を一覧・プレビューして必要なファイルだけ取り出せるか",
+    "端末内処理：ファイルを外部サーバーにアップロードせずに処理できるか"
+   ],
+   "steps": [
+    "届いた.7zをファイルAppの「このiPhone内」かiCloud Driveに保存する",
+    "分割ファイルなら、.001から最後の番号まで全部を同じフォルダに揃える",
+    "7z対応アプリで、ファイルAppや共有シートから先頭のファイルを開く",
+    "パスワードを求められたら入力し、展開前に中身の一覧を確認する",
+    "必要なファイルだけを選んで取り出し、写真AppやファイルAppに保存する"
+   ],
+   "rows": [
+    [
+     "タップしても開けない",
+     "ファイルの拡張子が.7zか、.zipか",
+     "ファイルAppはZIPには対応、7zには非対応のため"
+    ],
+    [
+     "途中でエラーになる",
+     "分割ファイルが全部同じフォルダに揃っているか",
+     "1つ欠けるだけで最後まで展開できません"
+    ],
+    [
+     "一覧が表示されない",
+     "パスワード付き・ファイル名の暗号化がされていないか",
+     "7zはファイル名ごと暗号化でき、入力するまで中身が見えません"
+    ]
+   ],
+   "fits": "Zipboxは、iPhoneで7zを含む圧縮ファイルを開きたい人に向いています。ZIP・RAR/RAR5・7z・TAR・GZIP・XZ・ISOなど13形式を展開でき、ZIP・RAR・7zは分割ファイルとパスワード付きにも対応しています。展開せずに中身を確認し、写真・動画・PDF・テキスト・コードをプレビューして、1ファイルだけ、選んだ複数だけ、またはまとめて取り出せます。ファイルApp、Safariのダウンロード、メール、共有シートから直接開け、複数の圧縮ファイルを順番に展開して1件失敗しても残りを続行します。AES-256暗号化と分割出力に対応したZIP・7zの作成もでき、処理はすべて端末内で完結し、アカウントも不要です。",
+   "faq": [
+    [
+     "iPhoneのファイルAppだけで7zは解凍できますか？",
+     "できません。ファイルAppが展開できるのは基本的にZIPで、7zは対応アプリが必要です。"
+    ],
+    [
+     "分割された7zの1つだけ開いても中身は見られますか？",
+     "形式上、全部が揃わないと最後まで展開できません。.001から最後までを同じフォルダに保存してから、先頭のファイルを開いてください。"
+    ],
+    [
+     "7zのパスワードを忘れた場合はどうすればいいですか？",
+     "送り主に確認してください。AES-256で暗号化された7zは、パスワードなしで開く現実的な方法はありません。"
+    ]
+   ]
+  },
+  "en": {
+   "title": "How to extract 7z files on iPhone, including split and password-protected ones",
+   "meta": "The iPhone Files app can unzip ZIP but not 7z. Open it in a 7z-capable app, and for split files (.7z.001) keep every part in one folder and open the first.",
+   "h1": "Extracting 7z on iPhone: why it will not open and what to do",
+   "lead": "You tap a .7z from an email or download and the iPhone shows nothing. The phone is fine and the file is usually fine too; the issue is the format.",
+   "answer": "The built-in Files app on iPhone handles ZIP, not 7z. Open the file in an app that supports 7z and you can see what is inside. For split files named .7z.001, .7z.002 and so on, save every part in the same folder and open .001. For password-protected files, get the password from the sender; 7z can also encrypt file names, so an empty list before you enter it is normal.",
+   "paras": [
+    "7z is known for strong compression and is often used to send large photo folders or document sets. The Files app on iPhone and iPad extracts ZIP but not 7z, so you get no preview and no app to open it in. The file is not broken; opening it in an app that supports 7z is the quickest fix.",
+    "Split archives are a common cause of failure. Large 7z files come as name.7z.001, name.7z.002 and onwards, and if one is missing extraction cannot finish. Saving attachments or cloud files one by one often scatters them across folders. Put them all in one folder, check the numbers run without gaps, then open the first part.",
+    "Password-protected 7z files usually use AES-256 encryption. If the password is lost, there is no practical way to crack it, so ask the sender. Also watch storage: extracted files take more space than the archive, so if you only need one file, check the contents and take out just that file instead of extracting everything."
+   ],
+   "look": [
+    "Formats: opens 7z as well as RAR, ZIP, TAR, ISO and others",
+    "Split archives: supports parts such as .7z.001",
+    "Passwords: opens password-protected archives",
+    "Look before extracting: list and preview contents, take out only what you need",
+    "On-device processing: no uploading your files to an outside server"
+   ],
+   "steps": [
+    "Save the .7z to On My iPhone or iCloud Drive in the Files app",
+    "For split files, gather every part from .001 to the last number in one folder",
+    "Open the first file in a 7z-capable app from Files or the share sheet",
+    "Enter the password if asked and check the contents list before extracting",
+    "Pick only the files you need and save them to Photos or Files"
+   ],
+   "rows": [
+    [
+     "Nothing happens when tapped",
+     "Is the extension .7z or .zip",
+     "The Files app supports ZIP but not 7z"
+    ],
+    [
+     "Error partway through",
+     "Are all split parts in the same folder",
+     "One missing part stops extraction"
+    ],
+    [
+     "No file list shown",
+     "Is it password-protected with encrypted file names",
+     "7z can hide file names until the password is entered"
+    ]
+   ],
+   "fits": "Zipbox suits people who need to open 7z and other archives on iPhone. It extracts 13 formats including ZIP, RAR/RAR5, 7z, TAR, GZIP, XZ and ISO, with split and password-protected ZIP, RAR and 7z supported. You can check contents without extracting, preview photos, videos, PDFs, text and code, and take out one file, a chosen few, or everything. Open archives straight from Files, Safari downloads, Mail or the share sheet; batches extract in order and keep going if one fails. It can also create ZIP and 7z with AES-256 encryption and split output, and everything is processed on the device with no account.",
+   "faq": [
+    [
+     "Can the iPhone Files app extract 7z on its own?",
+     "No. The Files app handles ZIP; 7z needs a supporting app."
+    ],
+    [
+     "Can I open just one part of a split 7z?",
+     "Extraction needs every part. Save .001 through the last part in one folder, then open the first file."
+    ],
+    [
+     "What if I forgot the 7z password?",
+     "Ask the sender. There is no practical way to open an AES-256 encrypted 7z without the password."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "claudeusagemini",
+  "locale": "ja",
+  "market": "JP",
+  "term": "ai 使用量 管理",
+  "rank": 4,
+  "slug": "manage-ai-usage-limits-check-reset-times-before-heavy-work",
+  "loc": {
+   "title": "AIの使用量管理：上限とリセット時刻を先に見て作業を組む方法",
+   "meta": "Claude・Codex・Copilot・Geminiの使用量管理は「残り％」より「次のリセット時刻」が要。5時間枠と週間上限の考え方、アラートの置き方、複数アカウントの使い分けを整理。",
+   "h1": "AIの使用量管理：残量より先に「リセット時刻」を見る",
+   "lead": "長い作業の途中でAIが上限に達して止まる。原因の多くは使いすぎではなく、どの枠がいつ戻るかを知らないまま重い作業を始めたことにあります。",
+   "answer": "AIの使用量管理で見るべきものは3つです。①今使っている枠の残り（5時間枠・週間枠・1日の回数など、サービスごとに別）②その枠が次にリセットされる正確な時刻 ③上限に届く手前で知らせる通知。重い作業はリセット直後に始め、残りが少ない枠では軽い作業に回すだけで、途中停止はかなり減らせます。",
+   "paras": [
+    "AIサービスの上限は1種類ではありません。Claudeには5時間のセッション上限と週間上限があり、モデル別の週間上限が加わることもあります。ChatGPTのCodexにも5時間枠と週間枠があり、GitHub Copilotはプレミアムリクエストやチャット、コード補完ごとに、Geminiはモデルごとの1日あたりのリクエスト数で区切られます。「まだ余裕がある」と感じても、止まるのは一番先に尽きる枠です。管理の第一歩は、自分が使うサービスの枠を全部書き出すことです。",
+    "次に大事なのはリセット時刻です。残り30％でも10分後に戻るなら気にする必要はなく、残り50％でも週間枠のリセットが4日後なら、大きなリファクタリングや長文の生成は控えたほうが安全です。おすすめは、長い作業を始める前に「どの枠が・何時に戻るか」を確認し、重い作業をリセット直後に寄せる習慣です。通知は90％前後に1本、さらに直前の98％前後にもう1本置くと、作業の区切りをつける時間が取れます。",
+    "UsageNowは、Claude・ChatGPT Codex・GitHub Copilot・Geminiの残りと、リセットまでのカウントダウンおよび正確なリセット時刻を表示するアプリです。5時間上限・週間上限・すべての上限を選んで、90や98などのパーセンテージでアラートを作れ、アラートは上限ごと・サイクルごとに1回だけ届きます。リセットアラートで上限が戻った瞬間も分かります。サインインは各サービスの公式ログインページで行い、情報はデバイスのキーチェーンに保存され、アカウント登録やトラッキングはありません。"
+   ],
+   "look": [
+    "使っているサービスの枠（5時間・週間・1日・リクエスト種別）を全部表示できるか",
+    "残り％だけでなく、正確なリセット時刻が自分の地域の表記で出るか",
+    "通知を上限ごとに好きな％で設定でき、同じ通知が何度も鳴らないか",
+    "仕事用と個人用など複数アカウントを並べて比べられるか",
+    "サインイン情報をどこに保存し、どこと通信するのかが明記されているか"
+   ],
+   "steps": [
+    "使っているAIサービスと、それぞれの上限の種類（5時間枠・週間枠・1日の回数）を書き出す",
+    "各枠の次のリセット時刻を確認し、ホーム画面やロック画面で見える場所に置く",
+    "90％前後と98％前後の2段階で、上限ごとにアラートを設定する",
+    "長い作業や大量生成は、リセット直後の枠で始めるよう予定を組む",
+    "週の途中で週間枠の残りを見直し、足りなければ軽い作業や別アカウントに振り分ける"
+   ],
+   "rows": [
+    [
+     "途中で止まりたくない",
+     "一番先に尽きる枠とそのリセット時刻",
+     "止まるのは残量が最も少ない枠で、全体の平均ではないから"
+    ],
+    [
+     "週の後半に余力を残したい",
+     "週間上限とモデル別の週間上限の残り",
+     "5時間枠が戻っても、週間枠が尽きると数日使えなくなるから"
+    ],
+    [
+     "複数のAIを併用している",
+     "Claude・Codex・Copilot・Geminiの残りを一か所で見られるか",
+     "サービスごとにサイトを開いて確認すると、確認自体を忘れやすいから"
+    ]
+   ],
+   "fits": "UsageNowは、ClaudeやCodex、Copilot、Geminiを日常的に使い、作業の途中で上限に達して手が止まるのを避けたい人に向いています。ホーム画面とロック画面のウィジェット、Apple Watchのコンプリケーションで残りとリセット時刻を確認でき、仕事用と個人用のアカウントを、リセットが近い順や使用量順に並べて見られます。iPhone、iPad、Apple Watchで使えます。",
+   "faq": [
+    [
+     "5時間枠と週間上限はどちらを優先して見るべき？",
+     "長い作業の前は両方です。5時間枠は数時間で戻りますが、週間上限が尽きるとリセットまで数日待つことになります。週の後半ほど週間枠の残りを重視してください。"
+    ],
+    [
+     "アラートは何％に設定するのがよい？",
+     "作業の区切りをつける余裕を考えると、90％前後と98％前後の2段階が使いやすい設定です。UsageNowでは上限ごとに好きな％を入力して、いくつでも追加できます。"
+    ],
+    [
+     "AIサービスのログイン情報を渡して大丈夫？",
+     "UsageNowでは各サービス公式のログインページでサインインし、情報はデバイスのキーチェーンに保存されます。UsageNowのサーバはなく、通信先は各サービスだけです。"
+    ]
+   ]
+  },
+  "en": {
+   "title": "Managing AI usage: check limits and reset times before you start",
+   "meta": "Managing Claude, Codex, Copilot and Gemini usage is about the next reset time more than percent left. How 5-hour and weekly limits work, where to set alerts.",
+   "h1": "Managing AI usage: look at the reset time before the percentage",
+   "lead": "An AI stopping halfway through a long task is rarely about using too much. Usually the heavy work started without knowing which limit would run out first, or when it comes back.",
+   "answer": "Managing AI usage comes down to three things: what is left in each limit you use (5-hour window, weekly cap, daily requests, which differ per service), the exact time each one resets, and an alert just before you hit it. Start heavy work right after a reset and keep light tasks for a nearly spent window, and mid-task stops drop sharply.",
+   "paras": [
+    "AI services do not have one limit. Claude has a 5-hour session limit and a weekly limit, sometimes with per-model weekly caps. ChatGPT Codex has a 5-hour window and a weekly window, GitHub Copilot splits premium requests, chat and code completions, and Gemini counts daily requests per model. Whatever feels like plenty, the one that stops you is the limit that runs out first, so the first step is to list every limit you actually depend on.",
+    "Then look at reset times. Thirty percent left does not matter if the window resets in ten minutes, while fifty percent left on a weekly cap that resets in four days is a reason to hold off a large refactor or long generation. Check which limit resets when before a long task, and move heavy work to just after a reset. One alert around 90 percent and another around 98 percent gives you time to wrap up cleanly.",
+    "UsageNow shows what is left for Claude, ChatGPT Codex, GitHub Copilot and Gemini, with a countdown and the exact reset time. You can build alerts for the 5-hour limit, the weekly limit or all limits at a percentage you choose, such as 90 or 98, and each alert arrives once per limit per cycle. A reset alert tells you the moment a limit is back. Sign-in happens on each service's official login page, credentials stay in the device keychain, and there is no account and no tracking."
+   ],
+   "look": [
+    "Whether it shows every limit you use: 5-hour, weekly, daily and per request type",
+    "Whether you see the exact reset time in your local format, not only a percentage",
+    "Whether alerts can be set per limit at your own percentage without repeating",
+    "Whether work and personal accounts can be compared side by side",
+    "Whether it states where credentials are stored and what it connects to"
+   ],
+   "steps": [
+    "List the AI services you use and the type of each limit: 5-hour, weekly, daily",
+    "Check the next reset time for each and keep it visible on your Home or Lock Screen",
+    "Set two alerts per limit, around 90 percent and around 98 percent",
+    "Schedule long tasks and bulk generation to start right after a reset",
+    "Midweek, recheck the weekly limit and shift work to lighter tasks or another account"
+   ],
+   "rows": [
+    [
+     "Not getting cut off mid-task",
+     "The limit that runs out first and its reset time",
+     "You are stopped by the lowest limit, not by an average"
+    ],
+    [
+     "Keeping capacity for the end of the week",
+     "Weekly and per-model weekly caps",
+     "A 5-hour window comes back, but a spent weekly cap can mean days of waiting"
+    ],
+    [
+     "Using several AI tools",
+     "Whether Claude, Codex, Copilot and Gemini show in one place",
+     "Checking each site separately is the step people forget"
+    ]
+   ],
+   "fits": "UsageNow suits people who use Claude, Codex, Copilot or Gemini every day and want to avoid hitting a limit in the middle of work. Remaining usage and reset times appear in Home Screen and Lock Screen widgets and Apple Watch complications, and work and personal accounts can be sorted by soonest reset or by usage. It runs on iPhone, iPad and Apple Watch.",
+   "faq": [
+    [
+     "Should I watch the 5-hour window or the weekly limit?",
+     "Both before a long task. The 5-hour window returns within hours, but a spent weekly limit means waiting days for the reset, so give it more weight later in the week."
+    ],
+    [
+     "What percentage should alerts be set at?",
+     "Two levels, around 90 and around 98 percent, leave time to wrap up. In UsageNow you type any percentage per limit and can add as many alerts as you like."
+    ],
+    [
+     "Is it safe to sign in to my AI services?",
+     "UsageNow uses each service's official login page and stores sign-in data in the device keychain. There is no UsageNow server; it only talks to the services themselves."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "hourstaglite",
+  "locale": "vi",
+  "market": "VN",
+  "term": "mua sắm bốc đồng",
+  "rank": 13,
+  "slug": "stop-impulse-shopping-label-need-want-impulse-before-checkout",
+  "loc": {
+   "title": "Mua sắm bốc đồng: cách dừng lại trước khi bấm chốt đơn",
+   "meta": "Mua sắm bốc đồng hay đến từ sale chớp nhoáng, livestream và giỏ hàng đầy sẵn. Quy giá ra giờ làm việc, gắn nhãn Cần, Muốn, Bốc đồng và chờ trước khi thanh toán.",
+   "h1": "Mua sắm bốc đồng: ba bước dừng lại trước khi chốt đơn",
+   "lead": "Phần lớn món đồ mua bốc đồng không đắt. Chúng nhỏ, đến nhanh và cộng dồn lại mỗi tháng, đến lúc nhìn sao kê mới thấy hối hận.",
+   "answer": "Muốn bớt mua sắm bốc đồng, hãy chèn một khoảng dừng giữa lúc muốn và lúc trả tiền: quy giá ra số giờ làm việc theo lương thực nhận, tự hỏi món này là Cần, Muốn hay Bốc đồng, và với món không cần gấp thì để trong giỏ ít nhất 24 giờ. Sau vài tuần ghi lại, bạn sẽ thấy rõ danh mục nào đang ngốn nhiều giờ làm việc nhất.",
+   "paras": [
+    "Mua bốc đồng hiếm khi là do thiếu kỷ luật. Nó đến từ những tình huống được thiết kế để bạn quyết nhanh: đồng hồ đếm ngược của sale chớp nhoáng, ngày sale lớn như 11.11 hay 12.12, livestream có người chốt đơn liên tục, mã giảm giá sắp hết hạn, hay thẻ đã lưu sẵn chỉ cần một chạm. Trong vài giây đó, bạn so giá với giá gốc chứ không so với số tiền mình phải làm ra, nên mọi món đều trông như hời.",
+    "Cách hiệu quả là đổi đơn vị so sánh. Lấy lương thực nhận một tháng chia cho số giờ làm thực tế để ra lương theo giờ, rồi quy giá món đồ ra giờ. Một chiếc áo 450.000 đồng nghe nhẹ nhàng, nhưng nếu bạn kiếm 50.000 đồng một giờ thì đó là chín giờ làm việc, hơn một ngày công. Sau đó gắn nhãn thật lòng: Cần (thiếu thì ảnh hưởng sinh hoạt), Muốn (thích nhưng chờ được) hay Bốc đồng (vừa thấy là muốn). Món Muốn để 24 giờ, món Bốc đồng để ít nhất ba ngày rồi mới quyết.",
+    "HoursTag Lite làm đúng phần quy đổi và ghi nhận này. Bạn nhập lương thực nhận theo giờ, ứng dụng quy mọi mức giá ra thời gian làm việc, cho gắn nhãn Cần, Muốn hay Bốc đồng cho từng lần mua và cho xem mỗi danh mục đã ngốn bao nhiêu giờ làm việc. Nếu đang tiết kiệm cho một mục tiêu, bạn xem được cần làm bao nhiêu giờ cho nó và theo dõi tiến độ. Mọi dữ liệu nằm trên thiết bị, không cần tài khoản, không theo dõi."
+   ],
+   "look": [
+    "Có quy giá ra giờ làm việc dựa trên lương thực nhận, không phải lương gộp",
+    "Có cho gắn nhãn Cần, Muốn, Bốc đồng để nhìn lại sau vài tuần",
+    "Có thống kê số giờ làm việc theo từng danh mục chi tiêu",
+    "Có mục tiêu tiết kiệm để so món muốn mua với điều quan trọng hơn",
+    "Dữ liệu chi tiêu có nằm trên máy, không bắt tạo tài khoản"
+   ],
+   "steps": [
+    "Tính lương theo giờ: lương thực nhận một tháng chia cho số giờ làm thực tế",
+    "Trước khi chốt đơn, quy giá món đồ ra số giờ làm việc",
+    "Gắn nhãn thật lòng: Cần, Muốn hay Bốc đồng",
+    "Món Muốn để trong giỏ 24 giờ, món Bốc đồng để ít nhất ba ngày",
+    "Cuối tuần xem lại danh mục nào ngốn nhiều giờ nhất và đặt giới hạn cho nó"
+   ],
+   "rows": [
+    [
+     "Hay mua trong livestream hoặc sale chớp nhoáng",
+     "Món này tốn bao nhiêu giờ làm việc",
+     "Đồng hồ đếm ngược khiến bạn so với giá gốc, không so với công sức của mình"
+    ],
+    [
+     "Cuối tháng không biết tiền đi đâu",
+     "Danh mục nào chiếm nhiều giờ làm việc nhất",
+     "Những món nhỏ lặp lại thường tốn hơn một món lớn"
+    ],
+    [
+     "Đang để dành cho một mục tiêu",
+     "Món định mua lấy đi bao nhiêu giờ của mục tiêu",
+     "Thấy hai con số cạnh nhau giúp từ chối dễ hơn"
+    ]
+   ],
+   "fits": "HoursTag Lite hợp với người hay chốt đơn trong sale lớn hoặc livestream rồi hối hận, người muốn biết tiền đang chảy vào danh mục nào, và người đang tiết kiệm cho một mục tiêu cụ thể. Ứng dụng có widget Màn hình chính và Apple Watch, có sao lưu và khôi phục thu nhập, chi tiêu, mục tiêu và cài đặt. Ba lần quy đổi đầu tiên không cần mua; một lần mua trong ứng dụng tùy chọn mở khóa quy đổi và ghi chép không giới hạn.",
+   "faq": [
+    [
+     "Làm sao biết mình đang mua sắm bốc đồng?",
+     "Dấu hiệu thường gặp: mua vì đồng hồ đếm ngược hay mã sắp hết hạn, không định mua trước khi mở ứng dụng, và vài ngày sau ít dùng đến. Gắn nhãn mỗi lần mua trong vài tuần sẽ cho bạn câu trả lời rõ hơn cảm giác."
+    ],
+    [
+     "Quy giá ra giờ làm việc thì dùng lương nào?",
+     "Dùng lương thực nhận, tức số tiền về tài khoản sau thuế và bảo hiểm, chia cho số giờ làm thực tế. Dùng lương gộp sẽ làm mọi món trông rẻ hơn thực tế."
+    ],
+    [
+     "Quy tắc chờ 24 giờ có thật sự hiệu quả?",
+     "Nó tách lúc hứng khởi khỏi lúc trả tiền. Nhiều món sau một ngày không còn hấp dẫn; món vẫn muốn sau khi chờ thường là món bạn sẽ dùng thật."
+    ]
+   ]
+  },
+  "en": {
+   "title": "Impulse shopping: how to pause before you hit checkout",
+   "meta": "Impulse buys come from flash sales, livestreams and a full cart. Convert the price into work hours, label it need, want or impulse, and wait before you pay.",
+   "h1": "Impulse shopping: three steps to pause before checkout",
+   "lead": "Most impulse buys are not expensive. They are small, fast and add up every month, and the regret shows up only when you read the statement.",
+   "answer": "To cut impulse shopping, put a pause between wanting and paying: convert the price into hours of work at your take-home rate, ask whether it is a need, a want or an impulse, and leave anything non-urgent in the cart for at least 24 hours. After a few weeks of labels you will see which category eats the most work hours.",
+   "paras": [
+    "Impulse buying is rarely a lack of discipline. It comes from moments built for quick decisions: flash-sale countdowns, big sale days such as 11.11 and 12.12, livestreams where someone keeps closing orders, a voucher about to expire, a saved card that needs one tap. In those seconds you compare the price with the original price, not with the money you have to earn, so everything looks like a bargain.",
+    "The fix is to change the unit. Divide monthly take-home pay by the hours you actually work to get an hourly rate, then convert the price into hours. A 450,000-dong shirt sounds light, but at 50,000 dong an hour it is nine hours of work, more than a full day. Then label it honestly: need (life is harder without it), want (nice, but can wait) or impulse (wanted it the moment you saw it). Give wants 24 hours and impulses at least three days.",
+    "HoursTag Lite handles this conversion and labeling. You enter your take-home hourly pay, it converts any price into work time, lets you tag each purchase as need, want or impulse, and shows how many work hours each category has used. If you are saving for something, you see the hours behind the goal and track progress. Everything stays on the device, with no account and no tracking."
+   ],
+   "look": [
+    "Whether it converts prices into work hours from take-home pay, not gross pay",
+    "Whether you can tag purchases need, want or impulse and review them later",
+    "Whether it shows work hours per spending category",
+    "Whether savings goals let you weigh a purchase against something bigger",
+    "Whether spending data stays on the phone without an account"
+   ],
+   "steps": [
+    "Work out an hourly rate: monthly take-home pay divided by hours actually worked",
+    "Before checkout, convert the item's price into work hours",
+    "Label it honestly: need, want or impulse",
+    "Leave wants in the cart for 24 hours and impulses for at least three days",
+    "At the weekend, check which category used the most hours and set a limit for it"
+   ],
+   "rows": [
+    [
+     "Buying during livestreams or flash sales",
+     "How many work hours the item costs",
+     "Countdowns make you compare with the list price, not with your effort"
+    ],
+    [
+     "Not knowing where money went by month end",
+     "Which category takes the most work hours",
+     "Small repeated buys often cost more than one big one"
+    ],
+    [
+     "Saving for a goal",
+     "How many goal hours this purchase takes away",
+     "Seeing both numbers together makes saying no easier"
+    ]
+   ],
+   "fits": "HoursTag Lite suits people who buy during big sales or livestreams and regret it, people who want to see which category their money flows into, and anyone saving for a specific goal. It has a Home Screen widget and Apple Watch support, plus backup and restore for income, spending, goals and settings. The first three conversions need no purchase; an optional one-time in-app purchase unlocks unlimited conversions and logging.",
+   "faq": [
+    [
+     "How do I know I am impulse shopping?",
+     "Common signs: buying because of a countdown or expiring voucher, not planning to buy before opening the app, and barely using it days later. Labeling every purchase for a few weeks gives a clearer answer than a feeling."
+    ],
+    [
+     "Which pay should I use to convert prices into hours?",
+     "Take-home pay, the amount that lands after tax and insurance, divided by hours actually worked. Gross pay makes everything look cheaper than it really is."
+    ],
+    [
+     "Does the 24-hour rule really work?",
+     "It separates the moment of excitement from the moment of paying. Many items lose their pull after a day; what you still want after waiting is usually something you will use."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "lumimission",
+  "locale": "zh-Hans",
+  "market": "CN",
+  "term": "儿童 习惯",
+  "rank": 15,
+  "slug": "build-kids-daily-habits-ages-3-to-7-one-routine-at-a-time",
+  "loc": {
+   "title": "儿童习惯怎么养成：3–7 岁一次只练一个日常任务",
+   "meta": "3–7 岁儿童好习惯怎么养：一次只练一个日常任务，拆成两三个小步骤，做完马上具体表扬，固定时间每天重复。附吃饭、刷牙、收玩具、睡前的练习顺序。",
+   "h1": "3–7 岁儿童习惯养成：一次一个任务，做完马上鼓励",
+   "lead": "孩子不肯刷牙、吃饭磨蹭、玩具不收，很多家长的第一反应是多讲几遍。可是对三到七岁的孩子来说，唠叨越多，越像是大人的事，不是自己的事。",
+   "answer": "3–7 岁儿童养成习惯，关键是“少、短、快”：一次只练一个日常任务，把它拆成两三个看得见的小步骤，孩子每完成一步就马上给具体的鼓励，并且每天在同一个时间做。等这个任务连续几周不用提醒也能完成，再加下一个。",
+   "paras": [
+    "这个年龄的孩子还很难为“以后会怎样”而坚持，他们在意的是当下有没有回应。所以周末才兑现的奖励，对三四岁的孩子往往太远。更有效的是在动作刚完成时，就说出具体的事：“你自己把牙刷放回杯子里了”，比一句“真棒”更能让孩子知道下次该做什么。奖励可以小，但要及时、要和行为对得上。",
+    "习惯是练出来的顺序，而不是一次讲清楚的道理。建议从最容易成功的任务开始，例如收玩具或睡前刷牙，固定在每天同一个时间点，把步骤拆成“挤牙膏、刷两分钟、漱口”这样的小块。前一两周家长陪着做，之后慢慢只提醒第一步。同时开始三四个新习惯，孩子和大人都容易放弃；一个稳定了再加一个，进度反而更快。",
+    "Lumi 任务星球就是围绕这种即时反馈设计的亲子工具。吃饭、刷牙、睡觉、收玩具、上学准备都是每日任务，孩子每完成一小步点一下屏幕，兔兔伙伴会立刻欢呼，整个任务完成时全星球一起庆祝。伙伴会用孩子的小名打招呼并一天天长大，还有一百个成就贴纸可以收集。家长后台能看今日总览、七天日历和完整完成记录。"
+   ],
+   "look": [
+    "反馈是否在孩子完成那一刻就出现，而不是要等到周末",
+    "任务能否拆成小步骤，让孩子一步一步完成",
+    "能否按自家情况自定义任务，而不只是固定清单",
+    "家长能否看到每天和最近一周的完成记录",
+    "有没有广告、是否需要注册账号、数据存在哪里"
+   ],
+   "steps": [
+    "挑一个最容易成功的日常任务，例如收玩具或睡前刷牙",
+    "把它拆成两三个孩子看得懂的小步骤",
+    "固定在每天同一个时间做，前一两周家长陪着完成",
+    "孩子每完成一步就马上说出具体做到了什么",
+    "连续几周不用提醒也能完成后，再加下一个任务"
+   ],
+   "rows": [
+    [
+     "孩子三四岁，注意力很短",
+     "每一步完成时有没有立刻的回应",
+     "这个年龄的动力来自当下，远期奖励很难起作用"
+    ],
+    [
+     "想同时改吃饭、刷牙、睡觉",
+     "是否一次只主练一个任务",
+     "同时开始太多，孩子和家长都容易中途放弃"
+    ],
+    [
+     "想知道到底有没有进步",
+     "能否查看每天和七天的完成记录",
+     "凭印象容易只记得没做到的那几天"
+    ]
+   ],
+   "fits": "Lumi 任务星球适合三到七岁、正在练吃饭、刷牙、睡前准备和收玩具的家庭，尤其是孩子需要马上看到回应才愿意继续的情况。可以自定义专属任务、挑选孩子喜欢的场景背景，设置每日提醒，还能导出 CSV 记录、备份导入。无账号、无广告、无第三方分析，所有数据只保存在设备上。吃饭、刷牙、睡觉、收玩具四个任务无需购买即可使用。",
+   "faq": [
+    [
+     "一个儿童习惯大概要多久才能养成？",
+     "因孩子和任务而异，通常需要几周的每天重复。比天数更重要的是固定时间和及时鼓励；看到孩子不用提醒也会主动开始，就可以加下一个任务了。"
+    ],
+    [
+     "用奖励会不会让孩子只为了奖励才做？",
+     "关键在于奖励是否及时、是否和具体行为挂钩，并且搭配具体的表扬。随着动作变成习惯，可以慢慢减少提醒，让完成本身成为孩子的成就感。"
+    ],
+    [
+     "几岁开始用习惯任务比较合适？",
+     "三岁左右孩子已能理解“做完一步就点一下”的规则。Lumi 任务星球是给家长的工具，设计成亲子一起使用，适合三到七岁的孩子。"
+    ]
+   ]
+  },
+  "en": {
+   "title": "Building habits in kids aged 3 to 7: one routine at a time",
+   "meta": "How to build good habits in children aged three to seven: one routine at a time, split into two or three steps, specific praise right away, same time every day.",
+   "h1": "Habits for kids aged 3 to 7: one task at a time, praise right after",
+   "lead": "When a child won't brush, dawdles over dinner or leaves toys out, most parents explain it again. For a three- to seven-year-old, more talking makes it the adult's job, not theirs.",
+   "answer": "Habits at three to seven come from keeping it small, short and immediate: practise one daily task at a time, split it into two or three visible steps, give specific encouragement the moment each step is done, and do it at the same time every day. Add the next task only once this one happens for a few weeks without reminders.",
+   "paras": [
+    "Children this age struggle to persist for something later; what matters is a response now. A reward that arrives at the weekend is often too far away for a three- or four-year-old. It works better to name the action right as it is finished: \"You put your toothbrush back in the cup yourself\" tells a child what to repeat far better than \"good job\". Rewards can be small, but they should be quick and tied to the behaviour.",
+    "A habit is a practised sequence, not an explanation given once. Start with the task most likely to succeed, such as tidying toys or brushing before bed, fix it to the same moment each day, and break it into pieces like \"toothpaste, brush for two minutes, rinse\". Do it together for the first week or two, then only prompt the first step. Starting three or four new habits at once tends to make both child and parent give up; stabilise one, then add the next.",
+    "Lumi Mission Planet is a parent tool built around this kind of instant feedback. Eating, brushing, bedtime, tidying toys and getting ready for school are daily missions; each time the child finishes a small step they tap the screen and the bunny companion cheers at once, and the whole planet celebrates when the mission is done. Companions greet the child by nickname and grow day by day, and there are a hundred achievement stickers to collect. The parent dashboard shows today's overview, a seven-day calendar and the full completion history."
+   ],
+   "look": [
+    "Whether feedback appears the moment the child finishes, not at the end of the week",
+    "Whether a task can be split into small steps the child completes one by one",
+    "Whether you can create custom tasks for your own family",
+    "Whether parents can see daily and recent weekly completion records",
+    "Whether there are ads, whether an account is needed, and where data is stored"
+   ],
+   "steps": [
+    "Pick the daily task most likely to succeed, such as tidying toys or brushing before bed",
+    "Split it into two or three steps your child understands",
+    "Do it at the same time every day, together for the first week or two",
+    "Name exactly what your child did the moment each step is finished",
+    "Once it happens for a few weeks without reminders, add the next task"
+   ],
+   "rows": [
+    [
+     "Child is three or four with a short attention span",
+     "Whether each finished step gets an immediate response",
+     "Motivation at this age comes from the moment, not distant rewards"
+    ],
+    [
+     "Wanting to fix meals, brushing and bedtime together",
+     "Whether you are focusing on one task at a time",
+     "Starting too many at once makes child and parent give up midway"
+    ],
+    [
+     "Wanting to know if it is working",
+     "Whether daily and seven-day records are available",
+     "Memory tends to keep only the days that went badly"
+    ]
+   ],
+   "fits": "Lumi Mission Planet suits families with children aged three to seven who are working on meals, brushing, bedtime and tidying toys, especially when a child needs to see a response right away to keep going. You can create custom missions, pick a favourite scene background, set a daily reminder, export records as CSV and back up or import progress. No account, no ads, no third-party analytics; all data stays on the device. Eating, brushing, bedtime and tidying toys can be used without any purchase.",
+   "faq": [
+    [
+     "How long does it take a child to form a habit?",
+     "It varies by child and task, usually a few weeks of daily repetition. Fixed timing and prompt encouragement matter more than a day count; when your child starts without a reminder, add the next task."
+    ],
+    [
+     "Will rewards make my child do it only for the reward?",
+     "What matters is that rewards are prompt, tied to a specific action and paired with specific praise. As the action becomes routine you can reduce prompts so finishing becomes the achievement itself."
+    ],
+    [
+     "What age is right to start habit missions?",
+     "Around three, children can follow the rule \"finish a step, tap once\". Lumi Mission Planet is a tool for parents, designed to be used together with children aged three to seven."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "onepageppt",
+  "locale": "zh-Hant",
+  "market": "TW",
+  "term": "一頁 摘要",
+  "rank": 4,
+  "slug": "how-to-write-a-one-page-summary-conclusion-first-three-points",
+  "loc": {
+   "title": "一頁摘要怎麼寫：結論先講、三個重點、一個下一步",
+   "meta": "一頁摘要不是把資料縮小，而是先寫結論，再用三個重點和數字撐住，最後寫要對方做的決定。附會議紀錄、報告、課程重點濃縮成一頁的步驟。",
+   "h1": "一頁摘要的寫法：結論在最上面，讀的人 30 秒看完",
+   "lead": "多數一頁摘要寫不好，不是字太多，而是照時間順序把資料縮小。讀的人看到最後才知道你要說什麼，而主管通常不會看到最後。",
+   "answer": "一頁摘要用「結論 → 三個重點 → 下一步」的順序寫：標題直接寫成一句結論，下面放三個支撐重點，每個重點盡量配一個數字或事實，最後一行寫需要對方決定或配合的事。寫不進這個框架的內容，放附件，不硬塞進這一頁。",
+   "paras": [
+    "先寫結論，是因為讀一頁摘要的人通常只有幾十秒。「第三季營收報告」是主題，不是結論；「第三季營收成長 12%，主要來自新客，但回購率下滑需要處理」才是結論。標題寫成一句完整的話，讀者只看標題也知道重點，後面的內容只是在證明這句話。",
+    "重點以三個為上限。超過三個，讀者記不住，你也會開始放「順便一提」的資訊。每個重點要能回答「所以呢」：數字放在句子裡，而不是只貼一張表；有趨勢就用折線，有比較就用對照，有步驟就用流程。最後一定要有下一步，例如「請在週五前決定是否加碼預算」，否則一頁摘要只是一份讀完就忘的報告。",
+    "OnePage PPT 適合把手上的素材直接整理成這樣的一頁。打字、貼上段落、螢幕截圖、照片、PDF 或 CSV 表格都可以放進去，點「產生投影片」，內容會被整理成標題重點，排成一頁 16:9 投影片；數字會變成直條圖、折線圖等圖表，步驟變成流程圖，日期變成時間軸，而且只有在資料撐得住時才畫圖，不會自行編造數字。"
+   ],
+   "look": [
+    "標題是不是一句完整的結論，而不只是主題名稱",
+    "支撐重點有沒有控制在三個以內",
+    "每個重點有沒有數字或事實，而不是形容詞",
+    "圖表形式是否符合資料：趨勢、比較、步驟、時間各用對的圖",
+    "最後有沒有寫清楚要對方做的決定或下一步"
+   ],
+   "steps": [
+    "先用一句話寫出結論，當作這一頁的標題",
+    "從資料裡挑出最能證明結論的三個重點",
+    "每個重點配一個數字、日期或具體事實",
+    "依資料性質選呈現方式：趨勢用折線、比較用對照、步驟用流程",
+    "最後一行寫下需要對方決定或配合的下一步，其餘放附件"
+   ],
+   "rows": [
+    [
+     "週會或給主管的報告",
+     "標題是否就是結論",
+     "主管常只看標題和第一行就決定要不要往下讀"
+    ],
+    [
+     "一小時會議紀錄",
+     "決議、負責人、期限是否列清楚",
+     "會議摘要的價值在於之後有人照著做"
+    ],
+    [
+     "整理課程或讀書重點",
+     "重點是否壓在三個以內並有例子",
+     "超過三點不容易記住，複習時也找不到主軸"
+    ]
+   ],
+   "fits": "OnePage PPT 適合要把會議紀錄、季度資料、訪談筆記或課程重點收成一頁的顧問、學生、老師與專案經理。不用挑範本，六種一鍵改版可換成更簡潔、更視覺、更專業等不同排版，喜歡的元素可以鎖定保留；點任何元素就能改文字、換圖片，還有完整版本紀錄。可匯出能編輯的 .pptx、PDF 和高解析 PNG，處理都在裝置上完成，沒有網路也能用。",
+   "faq": [
+    [
+     "一頁摘要和懶人包有什麼不同？",
+     "懶人包通常把資訊整理得好讀，一頁摘要則多了立場：先下結論，再用重點證明，最後要對方做決定。寫的時候問自己「讀完之後我希望對方做什麼」。"
+    ],
+    [
+     "資料太多塞不進一頁怎麼辦？",
+     "不要縮字或縮圖。先確定結論，只留下能直接支撐它的三個重點，其他細節放附件或備註，需要時再拿出來。"
+    ],
+    [
+     "一頁摘要一定要有圖表嗎？",
+     "不一定。只有在數字真的能說明趨勢或差異時才放圖表；資料撐不住時，三句清楚的重點比一張勉強的圖更好讀。"
+    ]
+   ]
+  },
+  "en": {
+   "title": "How to write a one-page summary: conclusion first, three points",
+   "meta": "A one-page summary is not shrunken material: lead with the conclusion, back it with three points and numbers, end with the decision you need from the reader.",
+   "h1": "Writing a one-page summary: conclusion on top, read in 30 seconds",
+   "lead": "Most one-page summaries fail not because of length but because they shrink the material in chronological order. The reader finds the point only at the end, and a busy manager rarely gets there.",
+   "answer": "Write a one-page summary as conclusion, three points, next step: make the title a one-sentence conclusion, add three supporting points each with a number or fact where possible, and close with the one decision or action you need from the reader. Anything that does not fit that frame goes in an appendix, not onto the page.",
+   "paras": [
+    "The conclusion goes first because a one-page reader often has only a few seconds. \"Q3 revenue report\" is a topic, not a conclusion; \"Q3 revenue grew 12 percent, mostly from new customers, but repeat purchases fell and need attention\" is a conclusion. Make the title a full sentence so a reader who only sees the title still gets the point, and let the rest of the page prove it.",
+    "Cap the supporting points at three. Beyond that readers stop remembering and you start adding by-the-way details. Each point should answer \"so what\": put the number inside the sentence instead of pasting a table, use a line for trends, a side-by-side for comparisons and a flow for steps. Always end with a next step, such as \"please decide by Friday whether to raise the budget\", or the page becomes a report people forget.",
+    "OnePage PPT is built to turn raw material into that kind of single page. Typed text, pasted paragraphs, screenshots, photos, PDFs and CSV tables can all go in; tap Generate Slide and the content is organized into headline points on one 16:9 slide. Numbers become bar or line charts, steps become flowcharts and dates become timelines, and a chart is drawn only when the data supports it, never with invented numbers."
+   ],
+   "look": [
+    "Whether the title is a full-sentence conclusion, not just a topic",
+    "Whether supporting points are kept to three or fewer",
+    "Whether each point carries a number or fact instead of adjectives",
+    "Whether each chart type matches the data: trend, comparison, steps, dates",
+    "Whether the final line states the decision or next step you need"
+   ],
+   "steps": [
+    "Write the conclusion as one sentence and use it as the title",
+    "Pick the three points from your material that best prove it",
+    "Give each point a number, date or concrete fact",
+    "Choose the visual by data type: line for trends, side-by-side for comparisons, flow for steps",
+    "End with the decision or action you need, and move the rest to an appendix"
+   ],
+   "rows": [
+    [
+     "Weekly report or update to a manager",
+     "Whether the title is the conclusion",
+     "Managers often decide from the title and first line whether to read on"
+    ],
+    [
+     "Notes from an hour-long meeting",
+     "Whether decisions, owners and deadlines are listed",
+     "A meeting summary is worth something only if someone acts on it"
+    ],
+    [
+     "Condensing course or study notes",
+     "Whether points are limited to three with examples",
+     "Beyond three, points are hard to recall and review loses its thread"
+    ]
+   ],
+   "fits": "OnePage PPT suits consultants, students, teachers and project managers who need to turn meeting notes, quarterly data, interview notes or lesson points into one page. There are no templates to pick; six one-tap restyles such as cleaner, more visual and more professional rearrange the page, and elements you like can be locked. Tap any element to rewrite text or swap an image, with full version history. Export editable .pptx, PDF and high-resolution PNG; processing happens on the device and works offline.",
+   "faq": [
+    [
+     "How is a one-page summary different from a digest?",
+     "A digest makes information easy to read; a one-page summary takes a position: conclusion first, points as proof, a decision at the end. Ask yourself what you want the reader to do after reading."
+    ],
+    [
+     "What if the material will not fit on one page?",
+     "Do not shrink fonts or charts. Fix the conclusion, keep only the three points that directly support it, and move the remaining detail to an appendix or notes."
+    ],
+    [
+     "Does a one-page summary need a chart?",
+     "No. Use a chart only when numbers really show a trend or difference; when the data cannot carry one, three clear sentences read better than a forced graphic."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "stayclock",
+  "locale": "fr-FR",
+  "market": "FR",
+  "term": "horloge flip",
+  "rank": 18,
+  "slug": "flip-clock-on-iphone-or-ipad-for-desk-or-bedside-without-burn-in",
+  "loc": {
+   "title": "Horloge flip sur iPhone ou iPad : bureau, chevet et écran OLED",
+   "meta": "Un iPhone ou un vieil iPad en horloge flip : écran allumé pendant la charge, cadran rouge tamisé la nuit, dalle OLED protégée. Les réglages qui comptent.",
+   "h1": "Horloge flip sur iPhone ou iPad : les réglages qui comptent vraiment",
+   "lead": "Une horloge flip plein écran sur un téléphone en charge, c’est joli le premier soir. Le deuxième, l’écran s’éteint tout seul, éclaire trop la chambre ou laisse craindre un marquage de la dalle.",
+   "answer": "Pour utiliser un iPhone ou un iPad comme horloge flip, réglez trois choses : l’écran doit rester allumé (au moins pendant la charge, sinon le verrouillage automatique l’éteint), la nuit il faut un cadran sombre, idéalement rouge tamisé sur fond noir, et sur un écran OLED il faut éviter une image totalement fixe pendant des heures, avec un léger déplacement des pixels.",
+   "paras": [
+    "L’horloge flip reprend l’affichage à palettes des vieux réveils et des panneaux de gare : de grands chiffres lisibles de loin, qui basculent à chaque minute. Sur iPhone, le mode StandBy affiche déjà une horloge quand le téléphone est en charge, posé à l’horizontale et verrouillé, mais selon le modèle l’écran peut s’éteindre au bout d’un moment. Pour un affichage permanent au bureau ou sur une étagère, il faut une app capable de garder l’écran allumé sans que vous désactiviez le verrouillage automatique pour tout le téléphone.",
+    "Dans la chambre, la luminosité compte plus que le style. Un cadran blanc sur fond clair éclaire la pièce ; un cadran rouge tamisé sur fond noir pur reste lisible et gêne beaucoup moins. Sur les écrans OLED, le noir pur éteint réellement les pixels, mais un chiffre immobile affiché toute la nuit, chaque nuit, augmente le risque de rémanence : un déplacement discret des pixels et des détails adoucis limitent ce risque. Pensez aussi à la batterie : un seuil au-dessus duquel l’écran reste allumé évite de vider un téléphone mal branché.",
+    "Stay Clock transforme un iPhone ou un iPad en horloge toujours allumée, lisible depuis l’autre bout de la pièce, avec 101 cadrans dont des horloges flip. L’écran peut rester allumé pendant la charge, au-dessus d’un seuil de batterie, ou suivre le réglage système. La nuit, un cadran rouge sombre sur fond noir pur et un déplacement discret des pixels protègent les dalles OLED. Le même cadran apparaît sur StandBy, l’écran verrouillé, les widgets de l’écran d’accueil et l’Apple Watch."
+   ],
+   "look": [
+    "L’écran peut-il rester allumé pendant la charge sans toucher au verrouillage automatique ?",
+    "Existe-t-il un cadran de nuit sombre, rouge tamisé sur fond noir pur ?",
+    "Y a-t-il une protection OLED, comme un déplacement discret des pixels ?",
+    "Les chiffres restent-ils lisibles de loin, en portrait comme en paysage ?",
+    "Le format 12 ou 24 heures, la langue et le fuseau horaire se règlent-ils ?"
+   ],
+   "steps": [
+    "Choisissez l’appareil : un iPhone en charge sur un dock ou un vieil iPad sur une étagère",
+    "Réglez le maintien de l’écran : pendant la charge ou au-dessus d’un seuil de batterie",
+    "Choisissez un cadran flip lisible depuis l’endroit où vous serez assis ou couché",
+    "Programmez le passage au cadran rouge tamisé sur fond noir pour la nuit",
+    "Ajoutez si besoin la date, un carillon horaire ou une alarme simple"
+   ],
+   "rows": [
+    [
+     "Horloge de chevet",
+     "Cadran de nuit sombre et rouge sur fond noir",
+     "Un écran clair éclaire la chambre et gêne le sommeil"
+    ],
+    [
+     "Horloge de bureau sur un dock",
+     "Écran maintenu allumé pendant la charge",
+     "Sinon le verrouillage automatique éteint l’écran au bout de quelques minutes"
+    ],
+    [
+     "Écran OLED allumé tous les jours",
+     "Déplacement discret des pixels",
+     "Une image identique pendant des heures augmente le risque de rémanence"
+    ]
+   ],
+   "fits": "Stay Clock convient à qui veut une horloge flip lisible de loin sur le bureau, l’étagère ou la table de chevet, et à qui veut redonner une utilité à un vieil iPad. Un calendrier Désactivé, Simple ou Mois se règle pour chaque cadran, avec carillon toutes les heures et alarme simple. La langue, la ville ou le fuseau horaire et l’affichage 12 ou 24 heures se choisissent dans l’app. Aucun compte, aucune publicité, aucun pistage, aucun réseau : tout reste sur l’appareil.",
+   "faq": [
+    [
+     "Le mode StandBy suffit-il comme horloge flip ?",
+     "StandBy affiche une horloge quand l’iPhone est en charge, à l’horizontale et verrouillé, mais selon le modèle l’écran peut s’éteindre après un moment. Pour un affichage permanent ou un iPad, une app d’horloge qui garde l’écran allumé est plus fiable."
+    ],
+    [
+     "Laisser l’horloge allumée toute la nuit abîme-t-il l’écran OLED ?",
+     "Une image strictement fixe pendant des heures, nuit après nuit, augmente le risque de rémanence. Un fond noir pur, une luminosité basse et un léger déplacement des pixels réduisent fortement ce risque."
+    ],
+    [
+     "Peut-on utiliser un vieil iPad comme horloge flip ?",
+     "Oui, c’est un bon usage : posé sur une étagère et branché, il affiche l’heure en grand. Stay Clock est conçu pour iPhone et iPad."
+    ]
+   ]
+  },
+  "en": {
+   "title": "Flip clock on iPhone or iPad: desk, bedside and OLED screens",
+   "meta": "Turn an iPhone or old iPad into a flip clock: screen on while charging, a dim red face at night and a protected OLED panel. The settings that matter.",
+   "h1": "Flip clock on iPhone or iPad: the settings that actually matter",
+   "lead": "A full-screen flip clock on a charging phone looks great the first night. By the second, the screen has switched itself off, lights up the bedroom, or you start worrying about burn-in.",
+   "answer": "To use an iPhone or iPad as a flip clock, get three things right: the screen has to stay on (at least while charging, or Auto-Lock turns it off), at night you need a dark face, ideally dim red on pure black, and on an OLED screen you should avoid a completely static image for hours, using a slight pixel shift.",
+   "paras": [
+    "A flip clock borrows the split-flap look of old alarm clocks and station boards: big digits readable from across the room that flip over each minute. On iPhone, StandBy already shows a clock when the phone is charging, on its side and locked, but depending on the model the screen may turn off after a while. For a permanent display on a desk or shelf you need an app that keeps the screen on without switching off Auto-Lock for the whole phone.",
+    "In the bedroom, brightness matters more than style. A white face on a light background lights the room; a dim red face on pure black stays readable and disturbs far less. On OLED screens pure black really turns pixels off, but a motionless digit shown all night, every night, raises the risk of burn-in; a subtle pixel shift and softened details reduce it. Think about the battery too: a threshold above which the screen stays on avoids draining a phone that is not properly plugged in.",
+    "Stay Clock turns an iPhone or iPad into an always-on clock readable from across the room, with 101 faces including flip clocks. The screen can stay on while charging, above a battery threshold, or follow the system setting. At night a dim red face on pure black and a subtle pixel shift protect OLED panels. The same face appears in StandBy, on the Lock Screen, in Home Screen widgets and on Apple Watch."
+   ],
+   "look": [
+    "Can the screen stay on while charging without changing Auto-Lock?",
+    "Is there a dark night face, dim red on pure black?",
+    "Is there OLED protection such as a subtle pixel shift?",
+    "Are the digits readable from a distance in portrait and landscape?",
+    "Can you set 12- or 24-hour format, language and time zone?"
+   ],
+   "steps": [
+    "Pick the device: an iPhone charging on a dock or an old iPad on a shelf",
+    "Set screen keep-on: while charging or above a battery threshold",
+    "Choose a flip face readable from where you will sit or lie",
+    "Schedule the switch to the dim red face on black for the night",
+    "Add the date, an hourly chime or a simple alarm if you want them"
+   ],
+   "rows": [
+    [
+     "Bedside clock",
+     "A dark red night face on black",
+     "A bright screen lights the bedroom and disturbs sleep"
+    ],
+    [
+     "Desk clock on a dock",
+     "Screen kept on while charging",
+     "Otherwise Auto-Lock turns the screen off after a few minutes"
+    ],
+    [
+     "OLED screen on every day",
+     "A subtle pixel shift",
+     "The same image for hours raises the risk of burn-in"
+    ]
+   ],
+   "fits": "Stay Clock suits anyone who wants a flip clock readable from a distance on a desk, shelf or nightstand, and anyone looking for a use for an old iPad. A calendar set to Off, Simple or Month is saved per face, with an hourly chime and a simple alarm. App language, city or time zone and 12- or 24-hour display are chosen inside the app. No account, no ads, no tracking, no network: everything stays on the device.",
+   "faq": [
+    [
+     "Is StandBy enough as a flip clock?",
+     "StandBy shows a clock while the iPhone is charging, on its side and locked, but depending on the model the screen may turn off after a while. For a permanent display or an iPad, a clock app that keeps the screen on is more reliable."
+    ],
+    [
+     "Does leaving the clock on all night damage an OLED screen?",
+     "A strictly static image for hours, night after night, raises the risk of burn-in. A pure black background, low brightness and a slight pixel shift reduce that risk a lot."
+    ],
+    [
+     "Can an old iPad be used as a flip clock?",
+     "Yes, it is a good use: plugged in on a shelf it shows the time in large digits. Stay Clock is built for iPhone and iPad."
+    ]
+   ]
+  }
  }
 ]

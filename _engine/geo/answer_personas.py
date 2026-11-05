@@ -3976,7 +3976,7 @@ PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
     # Claims here are held to UsageNow 1.0's live en-US listing: the four
     # services and limit types it names, custom percentage alerts, widgets
     # and Watch complications, Keychain sign-in with no UsageNow server, a
-    # free 24-hour trial, then a one-time Pro unlock. It is independent of
+    # free view of one account (1.0.5), then a one-time Pro unlock. It is independent of
     # every service it reads, so that disclaimer is part of the copy.
     "claudeusagemini": [
         {
@@ -4032,9 +4032,9 @@ PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
                 "Set an alert at 90 percent on the 5-hour or weekly limit you hit most often and check that it arrives only once in that cycle.",
                 "Add a Home Screen widget, tap its refresh button, and flip through your accounts on it.",
                 "Sort your accounts by 5-hour or weekly reset to see which plan frees up first.",
-                "Use the free 24-hour trial to test every feature, widgets included, before paying for anything.",
+                "View one account free in the app and check its numbers before paying for Pro's extra accounts, alerts, widgets or Apple Watch.",
             ],
-            "fits": "fits developers who juggle Claude, Codex, Copilot or Gemini plans and want to see what is left, and when it resets, from the Home Screen, Lock Screen or Apple Watch without creating another account. You can start a free 24-hour trial of every feature in the app; after that, a one-time purchase unlocks UsageNow Pro, with no subscription.",
+            "fits": "fits developers who juggle Claude, Codex, Copilot or Gemini plans and want to see what is left, and when it resets, from the Home Screen, Lock Screen or Apple Watch without creating another account. You can view one account free in the app; a one-time purchase unlocks UsageNow Pro for more accounts, usage alerts, widgets and Apple Watch, with no subscription.",
             "faq": [
                 {
                     "q": "Is UsageNow made by Anthropic, OpenAI, GitHub, Microsoft or Google?",
@@ -4057,10 +4057,10 @@ PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
                 {
                     "q": "Is there a subscription?",
                     "a": (
-                        "No. Every feature, widgets included, is free during "
-                        "a 24-hour trial started in the app. To keep using "
-                        "UsageNow and its widgets after that, you unlock "
-                        "UsageNow Pro with a single one-time purchase."
+                        "No. You can view one account free in the app. "
+                        "More accounts, usage alerts, widgets and Apple "
+                        "Watch come with UsageNow Pro, a single one-time "
+                        "purchase."
                     ),
                 },
                 {
@@ -4127,9 +4127,9 @@ PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
                 "Set an alert at 90 percent on the limit you hit most often and check that it arrives once in that cycle.",
                 "Add a Lock Screen or Home Screen widget so the remaining share is visible without opening anything.",
                 "If you use more than one Claude account, sort them by 5-hour or weekly reset to see which frees up first.",
-                "Use the free 24-hour trial to test every feature, widgets included, before paying for anything.",
+                "View one account free in the app and check its numbers before paying for Pro's extra accounts, alerts, widgets or Apple Watch.",
             ],
-            "fits": "fits Claude Pro and Max subscribers who want the 5-hour and weekly limits, per-model weekly caps and every reset time on the Home Screen, Lock Screen or Apple Watch, alongside any Codex, Copilot or Gemini plans they also use. You can start a free 24-hour trial of every feature in the app; after that, a one-time purchase unlocks UsageNow Pro, with no subscription.",
+            "fits": "fits Claude Pro and Max subscribers who want the 5-hour and weekly limits, per-model weekly caps and every reset time on the Home Screen, Lock Screen or Apple Watch, alongside any Codex, Copilot or Gemini plans they also use. You can view one account free in the app; a one-time purchase unlocks UsageNow Pro for more accounts, usage alerts, widgets and Apple Watch, with no subscription.",
             "faq": [
                 {
                     "q": "Is UsageNow made by Anthropic?",
@@ -4160,9 +4160,10 @@ PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
                 {
                     "q": "Is there a subscription?",
                     "a": (
-                        "No. Every feature is free during a 24-hour trial "
-                        "started in the app; after that, UsageNow Pro is a "
-                        "single one-time purchase."
+                        "No. You can view one account free in the app; "
+                        "UsageNow Pro, which adds more accounts, alerts, "
+                        "widgets and Apple Watch, is a single one-time "
+                        "purchase."
                     ),
                 },
             ],
@@ -4216,9 +4217,9 @@ PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
                 "Set an alert at 90 percent on the 5-hour limit so you can wrap up a step before the window closes.",
                 "Turn on the reset alert and queue the next big task for the moment the limit is back.",
                 "If you also use Codex or Copilot, keep them in the same view and switch to the plan with room left.",
-                "Use the free 24-hour trial to try every feature before paying for anything.",
+                "View one account free in the app and check its numbers before paying for Pro's extra accounts, alerts, widgets or Apple Watch.",
             ],
-            "fits": "fits developers who run Claude Code on a Pro or Max plan and want the 5-hour and weekly limits, per-model weekly caps and reset times on the Lock Screen, Home Screen or Apple Watch, next to any Codex, Copilot or Gemini plans. You can start a free 24-hour trial of every feature in the app; after that, a one-time purchase unlocks UsageNow Pro, with no subscription.",
+            "fits": "fits developers who run Claude Code on a Pro or Max plan and want the 5-hour and weekly limits, per-model weekly caps and reset times on the Lock Screen, Home Screen or Apple Watch, next to any Codex, Copilot or Gemini plans. You can view one account free in the app; a one-time purchase unlocks UsageNow Pro for more accounts, usage alerts, widgets and Apple Watch, with no subscription.",
             "faq": [
                 {
                     "q": "Does Claude Code share limits with Claude?",
@@ -4247,9 +4248,10 @@ PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
                 {
                     "q": "Is there a subscription?",
                     "a": (
-                        "No. Every feature is free during a 24-hour trial "
-                        "started in the app; after that, UsageNow Pro is a "
-                        "single one-time purchase."
+                        "No. You can view one account free in the app; "
+                        "UsageNow Pro, which adds more accounts, alerts, "
+                        "widgets and Apple Watch, is a single one-time "
+                        "purchase."
                     ),
                 },
             ],
@@ -4301,9 +4303,9 @@ PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
                 "Set an alert at 90 percent on the window you hit most often.",
                 "Add a Home Screen widget, tap its refresh button, and flip through your accounts on it.",
                 "Sort accounts by weekly reset to see which one frees up first.",
-                "Use the free 24-hour trial to test every feature before paying for anything.",
+                "View one account free in the app and check its numbers before paying for Pro's extra accounts, alerts, widgets or Apple Watch.",
             ],
-            "fits": "fits developers who use ChatGPT Codex, often next to Claude, Copilot or Gemini, and want both Codex windows and every reset time on the Home Screen, Lock Screen or Apple Watch without another account. You can start a free 24-hour trial of every feature in the app; after that, a one-time purchase unlocks UsageNow Pro, with no subscription.",
+            "fits": "fits developers who use ChatGPT Codex, often next to Claude, Copilot or Gemini, and want both Codex windows and every reset time on the Home Screen, Lock Screen or Apple Watch without another account. You can view one account free in the app; a one-time purchase unlocks UsageNow Pro for more accounts, usage alerts, widgets and Apple Watch, with no subscription.",
             "faq": [
                 {
                     "q": "Is UsageNow made by OpenAI?",
@@ -4323,9 +4325,10 @@ PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
                 {
                     "q": "Is there a subscription?",
                     "a": (
-                        "No. Every feature is free during a 24-hour trial "
-                        "started in the app; after that, UsageNow Pro is a "
-                        "single one-time purchase."
+                        "No. You can view one account free in the app; "
+                        "UsageNow Pro, which adds more accounts, alerts, "
+                        "widgets and Apple Watch, is a single one-time "
+                        "purchase."
                     ),
                 },
             ],
@@ -4375,9 +4378,9 @@ PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
                 "Add the same account to a tracker and check that both show the same time.",
                 "Turn on the reset alert so you know when the weekly limit is back.",
                 "Set an alert at 75 or 90 percent of the weekly limit to pace the rest of the week.",
-                "Use the free 24-hour trial to test every feature before paying for anything.",
+                "View one account free in the app and check its numbers before paying for Pro's extra accounts, alerts, widgets or Apple Watch.",
             ],
-            "fits": "fits Claude Pro and Max subscribers who want the exact weekly reset time, per-model weekly caps and a reset alert on the Home Screen, Lock Screen or Apple Watch. You can start a free 24-hour trial of every feature in the app; after that, a one-time purchase unlocks UsageNow Pro, with no subscription.",
+            "fits": "fits Claude Pro and Max subscribers who want the exact weekly reset time, per-model weekly caps and a reset alert on the Home Screen, Lock Screen or Apple Watch. You can view one account free in the app; a one-time purchase unlocks UsageNow Pro for more accounts, usage alerts, widgets and Apple Watch, with no subscription.",
             "faq": [
                 {
                     "q": "Does the Claude weekly limit reset on the same day for everyone?",
@@ -4455,7 +4458,7 @@ PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
                 "Turn on reset alerts so you know when a limit is back.",
                 "Come back to this page after a plan change; it is updated when the services change their rules.",
             ],
-            "fits": "fits developers who juggle Claude, Codex, Copilot or Gemini plans and want every reset time, with a live countdown and the exact time in their local format, on the Home Screen, Lock Screen or Apple Watch. You can start a free 24-hour trial of every feature in the app; after that, a one-time purchase unlocks UsageNow Pro, with no subscription.",
+            "fits": "fits developers who juggle Claude, Codex, Copilot or Gemini plans and want every reset time, with a live countdown and the exact time in their local format, on the Home Screen, Lock Screen or Apple Watch. You can view one account free in the app; a one-time purchase unlocks UsageNow Pro for more accounts, usage alerts, widgets and Apple Watch, with no subscription.",
             "faq": [
                 {
                     "q": "When does the Claude 5-hour limit reset?",
@@ -4537,16 +4540,16 @@ PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
                 "Whether the app works on its own or needs a Mac running alongside it.",
                 "Separate 5-hour and weekly limits, with the exact reset time, not only a percentage.",
                 "Alerts at a percentage you choose, widgets, and Apple Watch support if you use a watch.",
-                "How you pay: free, paid upfront, a subscription, or a free trial followed by a one-time unlock.",
+                "How you pay: free, paid upfront, a subscription, or free for one account with a one-time unlock.",
             ],
             "steps": [
                 "List the AI plans you actually hit limits on, and drop any tracker that does not cover them.",
                 "Check the minimum iOS version on each listing against your iPhone.",
                 "Decide whether you want a stand-alone iPhone app or a companion to a Mac menu bar tool.",
                 "Compare how each app handles your sign-in and whether it uses its own server.",
-                "Try before paying: use a free download or free trial to compare the numbers with each service's own usage page.",
+                "Try before paying: use a free download or free tier to compare the numbers with each service's own usage page.",
             ],
-            "fits": "fits developers who want Claude, ChatGPT Codex, GitHub Copilot and Gemini limits in one stand-alone iPhone, iPad and Apple Watch app, with custom percentage alerts, widgets in every size, iOS 17 or later and 50 languages. You can start a free 24-hour trial of every feature in the app; after that, a one-time purchase unlocks UsageNow Pro, with no subscription.",
+            "fits": "fits developers who want Claude, ChatGPT Codex, GitHub Copilot and Gemini limits in one stand-alone iPhone, iPad and Apple Watch app, with custom percentage alerts, widgets in every size, iOS 17 or later and 50 languages. You can view one account free in the app; a one-time purchase unlocks UsageNow Pro for more accounts, usage alerts, widgets and Apple Watch, with no subscription.",
             "faq": [
                 {
                     "q": "Which of these apps need a Mac?",
@@ -4578,9 +4581,10 @@ PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
                 {
                     "q": "Is there a subscription for UsageNow?",
                     "a": (
-                        "No. Every feature is free during a 24-hour trial "
-                        "started in the app; after that, UsageNow Pro is a "
-                        "single one-time purchase."
+                        "No. You can view one account free in the app; "
+                        "UsageNow Pro, which adds more accounts, alerts, "
+                        "widgets and Apple Watch, is a single one-time "
+                        "purchase."
                     ),
                 },
             ],

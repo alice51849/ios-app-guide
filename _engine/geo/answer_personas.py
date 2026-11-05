@@ -5201,9 +5201,9 @@ PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
     # Meow Party: 2 Player Cat Games (58_MeowParty, ASC 6829184924, bundle
     # tail "foldparty", the registry key every line uses) went live on the App
     # Store on 2026-11-05 (1.0.0, paid upfront) and is also live on Google Play
-    # (package com.alice51849.FoldParty, same folder, paid). It stays staged
-    # here only until the automatic catch-up adds "foldparty" to
-    # registry_auto.json, which promotes it. Claims here are held to what build
+    # (package com.alice51849.FoldParty, same folder, paid). The automatic
+    # catch-up (31b1c9c6) added "foldparty" to registry_auto.json, so
+    # promote_registered_personas promotes it at import. Claims here are held to what build
     # 179f737a ships: 200 original cat minigames in four families of 50 (party,
     # fold puzzles, arcade and rhythm, cozy creations); 146 are solo and 54
     # can be played by two people face to face on one phone (51 of those also

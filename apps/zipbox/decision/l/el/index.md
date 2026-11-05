@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - Χωρίς διαφημίσεις
 - Χωρίς παρακολούθηση
 - Ιδιωτικό / στη συσκευή
-- App Store · 3,00 €
+- App Store · 5,99 €
 
 [Αποκτήστε το Zipbox: άνοιγμα RAR, ZIP, 7z από το App Store](https://apps.apple.com/gr/app/id6806776579?pt=118326163&ct=geo_pick&mt=8)
 

@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - Reklam yok
 - Takip yok
 - Gizli / cihazda
-- App Store · ₺179,99
+- App Store · ₺299,99
 
 [TripBee Pro: Seyahat Planlayıcı’yı App Store’dan edinin →](https://apps.apple.com/tr/app/id6787754435?pt=118326163&ct=geo_pick&mt=8)
 

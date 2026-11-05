@@ -20,7 +20,7 @@ iPhone Duo ഉപകരണത്തിനായി ഒപ്റ്റിമൈ�
 - വ്യാപനങ്ങൾ ഇല്ല
 - ട്രാക്കിംഗ് ഇല്ല
 - സ്വകാര്യത / ഉപകരണത്തിൽ
-- App Store · ₹ 299
+- App Store · ₹ 499
 
 [App Store-ൽ നിന്ന് Zipbox: ZIP, RAR, 7z തുറക്കുക നേടൂ](https://apps.apple.com/in/app/id6806776579?pt=118326163&ct=geo_pick&mt=8)
 

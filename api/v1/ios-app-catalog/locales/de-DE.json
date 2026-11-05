@@ -1,12 +1,12 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-11-04",
-  "content_digest": "d41bfe7e156aabee8cf16c8afd333da7f2ca1d1367dc4352339ff83f32cded2b",
+  "date_modified": "2026-11-05",
+  "content_digest": "cfd8097e2d160bb22da9f0415e9bc3c45e093acb6a1c2a6fc701a91301d98006",
   "locale": "de-DE",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 57,
+  "record_count": 59,
   "apps": [
     {
       "key": "notesstudio100",
@@ -865,9 +865,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/de-DE/lumibopomofopro.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "9.99",
+        "price": "0",
         "currency": "EUR",
-        "formatted_price": "9,99 €",
+        "formatted_price": "Kostenlos",
         "storefront_url": "https://apps.apple.com/de/app/id6775773117"
       }
     },
@@ -1188,6 +1188,50 @@
       }
     },
     {
+      "key": "foldparty",
+      "app_store_id": "6829184924",
+      "name": "Meow Party: Mini-Katzenspiele",
+      "summary": "Die meisten Handyspiele kennen nur einen Spieler und einen flachen Bildschirm, doch Meow Party macht aus deinem Foldable eine Katzenparty mit 200 niedlichen Minispielen: Die meisten gehen allein, 54 davon zu zweit an einem Handy. Das Spiel ist für das faltbare iPhone Duo optimiert und macht gefaltet noch mehr Spaß. Auf jedem anderen iPhone ist alles voll spielbar.",
+      "category": "other",
+      "search_terms": [
+        "katzen",
+        "zwei",
+        "zweit",
+        "offline",
+        "handy",
+        "ohne",
+        "wlan",
+        "internet",
+        "duell",
+        "personen",
+        "rätsel",
+        "kätzchen",
+        "2",
+        "spieler",
+        "spiele"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/de/app/id6829184924?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/de-DE/foldparty.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "6.99",
+        "currency": "EUR",
+        "formatted_price": "6,99 €",
+        "storefront_url": "https://apps.apple.com/de/app/id6829184924"
+      }
+    },
+    {
       "key": "metrotimehelper",
       "app_store_id": "6819061896",
       "name": "Metro-Zeithelfer Taipeh",
@@ -1223,9 +1267,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/de-DE/metrotimehelper.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "0",
+        "price": "2.99",
         "currency": "EUR",
-        "formatted_price": "Kostenlos",
+        "formatted_price": "2,99 €",
         "storefront_url": "https://apps.apple.com/de/app/id6819061896"
       }
     },
@@ -1904,6 +1948,46 @@
         "currency": "EUR",
         "formatted_price": "Kostenlos",
         "storefront_url": "https://apps.apple.com/de/app/id6787193643"
+      }
+    },
+    {
+      "key": "tripbeecute",
+      "app_store_id": "6826987407",
+      "name": "TripBee Cute: Reisetagebuch",
+      "summary": "Schluss mit Reiseplänen, die über Buchungsmails, Screenshots und Notizzettel verstreut sind: TripBee Cute macht aus jeder Reise ein süßes, illustriertes Reiseheft mit Countdown, Flügen, Tagesplänen und Packliste auf einer Seite.",
+      "category": "travel",
+      "search_terms": [
+        "Packliste",
+        "Reiseplaner",
+        "Urlaubscountdown",
+        "Urlaubs",
+        "Urlaub",
+        "Reise",
+        "Widget",
+        "Reiseroute",
+        "teilen",
+        "Freunde",
+        "Familie"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/de/app/id6826987407?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/de-DE/tripbeecute.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Kostenlos",
+        "storefront_url": "https://apps.apple.com/de/app/id6826987407"
       }
     },
     {

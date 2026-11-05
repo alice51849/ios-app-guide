@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - نجی / آلہ پر
 - وجیٹ
 - Apple Watch
-- App Store · Rs 1,300.00
+- App Store · Rs 2,500.00
 
 [Wordmate: Learn 44 Languages App Store پر حاصل کریں →](https://apps.apple.com/pk/app/id6789917808?pt=118326163&ct=geo_pick&mt=8)
 

@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - 계정 없음
 - 광고 없음
 - 프라이빗 / 기기 내
-- App Store · ￦15,000
+- App Store · 무료
 
 [App Store에서 Lumi Bopomofo Pro 다운로드 →](https://apps.apple.com/kr/app/id6775773117?pt=118326163&ct=geo_pick&mt=8)
 

@@ -1,12 +1,12 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-11-04",
-  "content_digest": "d41bfe7e156aabee8cf16c8afd333da7f2ca1d1367dc4352339ff83f32cded2b",
+  "date_modified": "2026-11-05",
+  "content_digest": "cfd8097e2d160bb22da9f0415e9bc3c45e093acb6a1c2a6fc701a91301d98006",
   "locale": "bn-BD",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 57,
+  "record_count": 59,
   "apps": [
     {
       "key": "notesstudio100",
@@ -1689,6 +1689,65 @@
       }
     },
     {
+      "key": "foldparty",
+      "app_store_id": "6829184924",
+      "name": "Meow Party: 200 বিড়াল গেম",
+      "summary": "বন্ধুর সাথে এক ফোনে খেলার জন্য আর প্রতিবার নতুন গেম খুঁজতে হবে না: Meow Party-তে একসাথে আছে ২০০টি কিউট বিড়ালের মিনি গেম, যা iPhone Duo-র ফোল্ডেবল স্ক্রিনের জন্য অপটিমাইজ করা, তাই ভাঁজ করে খেললে মজা আরও বাড়ে। সাধারণ যেকোনো iPhone-এও প্রতিটি গেম পুরোপুরি খেলা যায়। অনেক গেমে ভাঁজ করা আর খোলাই খেলার চাল, আর প্রতিটি রাউন্ড প্রায় ৩০ থেকে ১২০ সেকেন্ডের।",
+      "category": "other",
+      "search_terms": [
+        "বিড়ালের",
+        "পার্টি",
+        "মিনি",
+        "অফলাইন",
+        "ইন্টারনেট",
+        "নেট",
+        "ছাড়া",
+        "ধাঁধা",
+        "পাজল",
+        "ফোল্ড",
+        "কিউট",
+        "বন্ধু",
+        "২",
+        "প্লেয়ার",
+        "দুজনের",
+        "দুই"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": null,
+      "guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/foldparty.html",
+      "verified_live": true,
+      "locale": "bn-BD",
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+        "evidence": {
+          "source_url": "https://support.apple.com/en-us/118205",
+          "observed_at": "2026-09-12",
+          "country": "BD",
+          "apple_media_services_markets": 174,
+          "country_listed": false,
+          "lookup_app_results": 0,
+          "lookup_control_results": 0,
+          "redirect_market": "US"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
+    },
+    {
       "key": "metrotimehelper",
       "app_store_id": "6819061896",
       "name": "মেট্রো সময় সহায়ক: Taipei MRT",
@@ -2665,6 +2724,64 @@
       },
       "app_store_url": null,
       "guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/tripplanet.html",
+      "verified_live": true,
+      "locale": "bn-BD",
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+        "evidence": {
+          "source_url": "https://support.apple.com/en-us/118205",
+          "observed_at": "2026-09-12",
+          "country": "BD",
+          "apple_media_services_markets": 174,
+          "country_listed": false,
+          "lookup_app_results": 0,
+          "lookup_control_results": 0,
+          "redirect_market": "US"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
+    },
+    {
+      "key": "tripbeecute",
+      "app_store_id": "6826987407",
+      "name": "TripBee Cute: ভ্রমণ ডায়েরি",
+      "summary": "চ্যাট, স্ক্রিনশট আর নোটে ছড়িয়ে থাকা ট্যুরের সব তথ্য TripBee Cute গুছিয়ে দেয় একটি মিষ্টি, ছবিওয়ালা ভ্রমণ বুকলেটে, যা চাইলে বন্ধুদের সাথে মিলে বানাতে পারেন।",
+      "category": "travel",
+      "search_terms": [
+        "ট্রাভেল",
+        "ট্যুর",
+        "সফর",
+        "ছুটি",
+        "হলিডে",
+        "প্ল্যানার",
+        "কাউন্টডাউন",
+        "প্যাকিং",
+        "লিস্ট",
+        "তালিকা",
+        "লাগেজ",
+        "ফ্লাইট",
+        "উইজেট",
+        "বন্ধু",
+        "নোট"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": null,
+      "guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/tripbeecute.html",
       "verified_live": true,
       "locale": "bn-BD",
       "market_availability": {

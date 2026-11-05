@@ -20,7 +20,7 @@ Drukke forenzen hebben vocabulaire-oefening nodig die in vrije minuten past zond
 - Privé / op apparaat
 - Widget
 - Apple Watch
-- App Store · € 5,99
+- App Store · € 9,99
 
 [Wordmate: Leer 44 Talen downloaden in de App Store →](https://apps.apple.com/nl/app/id6789917808?pt=118326163&ct=geo_pick&mt=8)
 

@@ -16,7 +16,7 @@ publisher: "Lumi Studio"
 - เพิ่มเติม
 - ดาวน์โหลดแบบชำระเงิน
 - ออฟไลน์
-- App Store · ฿199.00
+- App Store · ฿299.00
 
 [ดาวน์โหลด GBAGo: เซฟแบบเห็นภาพ บน App Store](https://apps.apple.com/th/app/id6804564400?pt=118326163&ct=geo_pick&mt=8)
 

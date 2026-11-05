@@ -19,7 +19,7 @@ Dobra aplikacija za itinerar spremeni zmedeno potovanje v jasen dnevni časovni 
 - Brez oglasov
 - Brez sledenja
 - Zasebno / na napravi
-- App Store · 3,90 €
+- App Store · 6,99 €
 
 [Prenesite TripBee Pro: načrtovalec potovanja iz App Store →](https://apps.apple.com/si/app/id6787754435?pt=118326163&ct=geo_pick&mt=8)
 

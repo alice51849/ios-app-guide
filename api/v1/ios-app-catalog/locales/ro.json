@@ -1,12 +1,12 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-11-04",
-  "content_digest": "d41bfe7e156aabee8cf16c8afd333da7f2ca1d1367dc4352339ff83f32cded2b",
+  "date_modified": "2026-11-05",
+  "content_digest": "cfd8097e2d160bb22da9f0415e9bc3c45e093acb6a1c2a6fc701a91301d98006",
   "locale": "ro",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 57,
+  "record_count": 59,
   "apps": [
     {
       "key": "notesstudio100",
@@ -364,9 +364,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/ro/dailymate.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "35",
+        "price": "69.99",
         "currency": "RON",
-        "formatted_price": "35,00 lei",
+        "formatted_price": "69,99 lei",
         "storefront_url": "https://apps.apple.com/ro/app/id6790418321"
       }
     },
@@ -575,9 +575,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/ro/gmoney.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "17.99",
+        "price": "29.99",
         "currency": "RON",
-        "formatted_price": "17,99 lei",
+        "formatted_price": "29,99 lei",
         "storefront_url": "https://apps.apple.com/ro/app/id6755782939"
       }
     },
@@ -653,9 +653,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/ro/gbago.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "29.99",
+        "price": "49.99",
         "currency": "RON",
-        "formatted_price": "29,99 lei",
+        "formatted_price": "49,99 lei",
         "storefront_url": "https://apps.apple.com/ro/app/id6804564400"
       }
     },
@@ -895,9 +895,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/ro/lumibopomofopro.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "49.99",
+        "price": "0",
         "currency": "RON",
-        "formatted_price": "49,99 lei",
+        "formatted_price": "Gratuit",
         "storefront_url": "https://apps.apple.com/ro/app/id6775773117"
       }
     },
@@ -1224,6 +1224,48 @@
       }
     },
     {
+      "key": "foldparty",
+      "app_store_id": "6829184924",
+      "name": "Meow Party: Jocuri cu pisici",
+      "summary": "Dacă te-ai săturat de jocuri mobile care seamănă toate între ele, Meow Party aduce 200 de minijocuri originale cu pisici drăguțe, iar pe un ecran pliabil chiar și plierea devine parte din joc. Este optimizat pentru ecranul pliabil al iPhone Duo: când îl pliezi, e și mai distractiv, dar se joacă complet și pe orice iPhone obișnuit.",
+      "category": "other",
+      "search_terms": [
+        "minijocuri",
+        "doi",
+        "offline",
+        "fără",
+        "internet",
+        "pisicuțe",
+        "petrecere",
+        "puzzle",
+        "logică",
+        "gătit",
+        "îndemânare",
+        "2",
+        "jucători"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/ro/app/id6829184924?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/ro/foldparty.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "29.99",
+        "currency": "RON",
+        "formatted_price": "29,99 lei",
+        "storefront_url": "https://apps.apple.com/ro/app/id6829184924"
+      }
+    },
+    {
       "key": "metrotimehelper",
       "app_store_id": "6819061896",
       "name": "Metrou la Timp: Taipei",
@@ -1259,9 +1301,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/ro/metrotimehelper.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "0",
+        "price": "14.99",
         "currency": "RON",
-        "formatted_price": "Gratuit",
+        "formatted_price": "14,99 lei",
         "storefront_url": "https://apps.apple.com/ro/app/id6819061896"
       }
     },
@@ -1751,9 +1793,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/ro/snapport.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "17.99",
+        "price": "29.99",
         "currency": "RON",
-        "formatted_price": "17,99 lei",
+        "formatted_price": "29,99 lei",
         "storefront_url": "https://apps.apple.com/ro/app/id6780575828"
       }
     },
@@ -1958,6 +2000,47 @@
       }
     },
     {
+      "key": "tripbeecute",
+      "app_store_id": "6826987407",
+      "name": "TripBee Cute: Jurnal călătorie",
+      "summary": "Gata cu căutatul prin capturi de ecran, e-mailuri și conversații: TripBee Cute adună fiecare călătorie într-un singur carnet drăguț și ilustrat, pe care îl poți completa împreună cu prietenii. Ecranul principal este un raft pe care fiecare călătorie este un carnețel cu propria copertă. Când îl deschizi, toată excursia încape pe o singură pagină: copertă, numărătoare inversă, zboruri, programul zilelor, bagaje și notițe.",
+      "category": "travel",
+      "search_terms": [
+        "planificator",
+        "itinerariu",
+        "vacanță",
+        "excursie",
+        "numărătoare",
+        "inversă",
+        "bagaj",
+        "zbor",
+        "prieteni",
+        "widget",
+        "agendă",
+        "listă"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/ro/app/id6826987407?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/ro/tripbeecute.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "RON",
+        "formatted_price": "Gratuit",
+        "storefront_url": "https://apps.apple.com/ro/app/id6826987407"
+      }
+    },
+    {
       "key": "tripbeelite",
       "app_store_id": "6791299610",
       "name": "TripBee Lite: Plan călătorie",
@@ -2033,9 +2116,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/ro/tripbee.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "17.99",
+        "price": "29.99",
         "currency": "RON",
-        "formatted_price": "17,99 lei",
+        "formatted_price": "29,99 lei",
         "storefront_url": "https://apps.apple.com/ro/app/id6787754435"
       }
     },
@@ -2163,9 +2246,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/ro/wifiaid.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "17.99",
+        "price": "29.99",
         "currency": "RON",
-        "formatted_price": "17,99 lei",
+        "formatted_price": "29,99 lei",
         "storefront_url": "https://apps.apple.com/ro/app/id6790467886"
       }
     },
@@ -2284,9 +2367,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/ro/wordmate.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "29.99",
+        "price": "49.99",
         "currency": "RON",
-        "formatted_price": "29,99 lei",
+        "formatted_price": "49,99 lei",
         "storefront_url": "https://apps.apple.com/ro/app/id6789917808"
       }
     },
@@ -2328,9 +2411,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/ro/zipbox.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "17.99",
+        "price": "29.99",
         "currency": "RON",
-        "formatted_price": "17,99 lei",
+        "formatted_price": "29,99 lei",
         "storefront_url": "https://apps.apple.com/ro/app/id6806776579"
       }
     }

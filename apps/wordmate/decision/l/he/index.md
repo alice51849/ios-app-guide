@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - פרטי / במכשיר
 - וידג'ט
 - Apple Watch
-- App Store · ₪15.00
+- App Store · ₪29.90
 
 [קבל את Wordmate: Learn 44 Languages ב-App Store →](https://apps.apple.com/il/app/id6789917808?pt=118326163&ct=geo_pick&mt=8)
 

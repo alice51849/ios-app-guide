@@ -20,7 +20,7 @@ Optimalizováno s ohledem na iPhone Duo. Aplikace je sestavena s nejnovějším 
 - Bez reklam
 - Bez sledování
 - Soukromé / v zařízení
-- App Store · 69,00 Kč
+- App Store · 129,00 Kč
 
 [Stáhněte si Zipbox: otevřít RAR, ZIP, 7z v App Storu](https://apps.apple.com/cz/app/id6806776579?pt=118326163&ct=geo_pick&mt=8)
 

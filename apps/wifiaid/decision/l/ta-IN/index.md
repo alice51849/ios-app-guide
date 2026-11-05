@@ -17,7 +17,7 @@ iPhone Duo சாதனத்திற்காக மேம்படுத்�
 - பணம் செலுத்தி பதிவிறக்கவும்
 - கணக்கு இல்லை
 - Apple Watch
-- App Store · ₹ 349
+- App Store · ₹ 599
 
 [App Store-இல் WiFi Aid: நெட்வொர்க் சிக்கல்-ஐப் பெறுங்கள்](https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)
 

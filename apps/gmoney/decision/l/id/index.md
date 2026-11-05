@@ -20,7 +20,7 @@ Saat bepergian Anda butuh pelacak anggaran yang bekerja offline di negara tanpa 
 - Tanpa iklan
 - Tanpa pelacakan
 - Privat / di perangkat
-- App Store · Rp 59ribu
+- App Store · Rp 99ribu
 
 [Dapatkan G+Money di App Store →](https://apps.apple.com/id/app/id6755782939?pt=118326163&ct=geo_pick&mt=8)
 

@@ -19,7 +19,7 @@ O aplicație bună de itinerar transformă o călătorie dezordonată într-un c
 - Fără reclame
 - Fără urmărire
 - Privat / pe dispozitiv
-- App Store · 17,99 lei
+- App Store · 29,99 lei
 
 [Descarcă TripBee Pro: Planificator de călătorii din App Store →](https://apps.apple.com/ro/app/id6787754435?pt=118326163&ct=geo_pick&mt=8)
 

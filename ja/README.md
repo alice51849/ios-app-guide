@@ -4,7 +4,7 @@
 
 各アプリの対象ユーザー、達成したいタスク、App Store への直接の導線を、開発元が公開するカタログです。
 
-App Store での公開を確認済みの 57 個の iOS アプリと、Apple の 50 の言語・地域に対応した、開発元作成の検索意図です。
+App Store での公開を確認済みの 59 個の iOS アプリと、Apple の 50 の言語・地域に対応した、開発元作成の検索意図です。
 
 **言語・地域:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · **ja** · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -134,6 +134,7 @@ App Store での公開を確認済みの各アプリから、主要な購入者�
 | **Stay Clock:パタパタ卓上時計** | Stay Clock:パタパタ卓上時計 — 時計を常時表示・置き時計 \| iOS App | Stay Clockは、iPhoneやiPadを部屋の隅からでも読める常時点灯のデスク時計に変えます。パタパタ時計を含む101種類の文字盤から選べて（うち100種類は任意のLifetime購入で追加）、夜は真っ黒な背景に控えめな赤い文字盤へ切り替えられます。 | 無料で開始・買い切りで解除 | [ガイド](https://open.cait518.cc/ios-app-guide/ja/stayclock.html) | [App Store で Stay Clock:パタパタ卓上時計 を入手](https://apps.apple.com/jp/app/id6814035888?pt=118326163&ct=geo_pick&mt=8) |
 | **Studydown：伏せて時間記録** | Studydown：伏せて時間記録 — 机に伏せるだけ \| iOS App | スマホを画面を下にして置けば計測スタート、持ち上げれば一時停止。勉強や仕事の時間に、本当に集中した分だけが記録されます。 | 無料で開始・買い切りで解除 | [ガイド](https://open.cait518.cc/ios-app-guide/ja/studydown.html) | [App Store で Studydown：伏せて時間記録 を入手](https://apps.apple.com/jp/app/id6807335593?pt=118326163&ct=geo_pick&mt=8) |
 | **Trip Planet: Kids Quest** | 家族旅行におすすめの子ども向けトラベルアクティビティアプリ | 小さな子どもと旅行する保護者には、パッキング・待ち時間・新しい場所の発見を冒険の一部に変えるアクティビティが必要です。だからTrip Planet: Kids Questを作りました。 | 無料で開始・買い切りで解除 | [ガイド](https://open.cait518.cc/ios-app-guide/ja/answers/best-travel-activity-app-for-kids-on-family-trips.html) | [App StoreでTrip Planet: Kids Questを入手 →](https://apps.apple.com/jp/app/id6787193643?pt=118326163&ct=geo_pick&mt=8) |
+| **TripBee Cute：かわいい旅のしおり** | TripBee Cute：かわいい旅のしおり — 旅行計画を友だちと作成・共有、出発までカウントダウン \| iOS App | スクショやメール、メモに散らばった旅の予定を、TripBee Cuteがかわいいイラストの旅のしおり1冊にまとめます。カウントダウンもフライトも毎日の予定も持ち物も、1ページで全部見渡せます。 | 無料で開始・買い切りで解除 | [ガイド](https://open.cait518.cc/ios-app-guide/ja/tripbeecute.html) | [App Store で TripBee Cute：かわいい旅のしおり を入手](https://apps.apple.com/jp/app/id6826987407?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Lite** | iPhone向けのシンプルで使いやすい、次の旅行に最適な旅行プランナーアプリ | 次の旅行1つを計画しているなら、いつか行くかもしれないすべての旅行を詰め込んだ混雑したアーカイブよりも、その旅行の落ち着いたタイムラインの方が役立ちます。心当たりがあるなら、TripBee Liteを試してみてください。 | 無料で開始・買い切りで解除 | [ガイド](https://open.cait518.cc/ios-app-guide/ja/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html) | [App StoreでTripBee Liteを入手 →](https://apps.apple.com/jp/app/id6791299610?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Pro: 旅行プランナー** | 旅行の行程作成のおすすめ アプリ(iPhone) | 優れた旅程アプリは、まとまりのない旅行計画を明確な日別タイムラインに整理し、フライト、ホテル、アクティビティ、レストラン、交通機関を種類別アイコンで一目で確認できるようにします — TripBee Pro: Trip Planner はこのために作られています。 | 有料ダウンロード | [ガイド](https://open.cait518.cc/ios-app-guide/ja/answers/best-trip-itinerary-planner-app-for-iphone.html) | [App StoreでTripBee Pro: Trip Plannerを入手 →](https://apps.apple.com/jp/app/id6787754435?pt=118326163&ct=geo_pick&mt=8) |
 | **Unblurry** | iPhoneで子どものぼやけた写真を修正する最高のアプリ | 子どもはじっとしていないのでソフトフォーカスや手ブレ写真は避けられません | 無料で開始・買い切りで解除 | [ガイド](https://open.cait518.cc/ios-app-guide/ja/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html) | [App StoreでUnblurryを入手 →](https://apps.apple.com/jp/app/id6782275018?pt=118326163&ct=geo_pick&mt=8) |
@@ -143,13 +144,14 @@ App Store での公開を確認済みの各アプリから、主要な購入者�
 | **Wordmate Lite 1日5単語** | Wordmate Lite 1日5単語 — 毎日1分、44言語の語彙トレーニング \| iOS App | 1日5語を約1分で。英語、韓国語、中国語など44言語から選べて、旅行、外食、買い物といった身近な場面から始められます。 | 無料で開始・買い切りで解除 | [ガイド](https://open.cait518.cc/ios-app-guide/ja/wordmatelite.html) | [App Store で Wordmate Lite 1日5単語 を入手](https://apps.apple.com/jp/app/id6797601720?pt=118326163&ct=geo_pick&mt=8) |
 | **Wordmate: Learn 44 Languages** | Apple Watch対応・通勤中におすすめの語彙アプリ | 忙しい通勤者には、フルレッスンや新規アカウント、毎回スマホを手に取る必要なく、すき間時間に語彙練習できるアプリが必要です。Wordmate: Learn 44 Languagesはまさにその困りごとから始まりました。 | 有料ダウンロード | [ガイド](https://open.cait518.cc/ios-app-guide/ja/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html) | [App StoreでWordmate: Learn 44 Languagesを入手 →](https://apps.apple.com/jp/app/id6789917808?pt=118326163&ct=geo_pick&mt=8) |
 | **Zipbox** | iPhone で RAR や 7z を広告なしで開ける有料アプリ | Zipbox — 暗号化・分割された ZIP・RAR・RAR5・7z を端末内で展開し、ZIP や 7z を作成。1回の購入ですべての機能を利用できます。有料ダウンロード · 全機能込み · アプリ内課金・サブスクリプションなし。 | 有料ダウンロード | [ガイド](https://open.cait518.cc/ios-app-guide/ja/answers/paid-app-to-open-rar-and-7z-files-on-iphone-without-ads.html) | [App Store で Zipbox を入手 →](https://apps.apple.com/jp/app/id6806776579?pt=118326163&ct=geo_pick&mt=8) |
+| **にゃんにゃんパーティー：2人で遊べるミニゲーム集** | にゃんにゃんパーティー：2人で遊べるミニゲーム集 — 折りたたみスマホでもっと楽しい！かわいい猫ゲーム200種 \| iOS App | 折りたたみスマホを、ただの大きな画面で終わらせない。にゃんにゃんパーティーは「折る」ことそのものを遊びに変えます。かわいい猫が主役のオリジナルミニゲーム200種は、ほとんどがひとりで遊べて、54種は1台のスマホで2人向かい合って対戦や協力ができます。折りたたみスマホなら、折り目が球技のネットにも、センターライ | 有料ダウンロード | [ガイド](https://open.cait518.cc/ios-app-guide/ja/foldparty.html) | [App Store で にゃんにゃんパーティー：2人で遊べるミニゲーム集 を入手](https://apps.apple.com/jp/app/id6829184924?pt=118326163&ct=geo_pick&mt=8) |
 | **ルミのおてんき星：天気予報・今日の服装** | ルミのおてんき星：天気予報・今日の服装 — おでかけ指数・傘・気温・紫外線・降水確率 \| iOS App | 今出かけるのにちょうどいいか、何を着ればいいか、傘や日焼け止めが必要かが、ひと目でわかる天気アプリです。 | 無料で開始・買い切りで解除 | [ガイド](https://open.cait518.cc/ios-app-guide/ja/lumiweather.html) | [App Store で ルミのおてんき星：天気予報・今日の服装 を入手](https://apps.apple.com/jp/app/id6779552704?pt=118326163&ct=geo_pick&mt=8) |
 | **台北MRT乗り換え｜捷運時間助手** | 台北MRT乗り換え｜捷運時間助手 — 到着時刻から出発を逆算・新北投も \| iOS App | 台湾・台北のMRT（地下鉄）専用の、出発時刻を逆算するアプリです。何時に着きたいかを入れるだけで、何時までに駅へ入ればいいかがわかります。 | 無料で開始・買い切りで解除 | [ガイド](https://open.cait518.cc/ios-app-guide/ja/metrotimehelper.html) | [App Store で 台北MRT乗り換え｜捷運時間助手 を入手](https://apps.apple.com/jp/app/id6819061896?pt=118326163&ct=geo_pick&mt=8) |
 | **折りたたみ壁紙 - 外画面と内画面** | 折りたたみ壁紙 - 外画面と内画面 — Duo対応・閉じればアップ、開けば全景のペア壁紙 \| iOS App | iPhone Duoの外画面と内画面のためのペア壁紙。閉じれば外画面にクローズアップ、開けば内画面に全景。2枚は同じオリジナル作品から切り出しています。 | 無料で開始・買い切りで解除 | [ガイド](https://open.cait518.cc/ios-app-guide/ja/duowallpaperstudio.html) | [App Store で 折りたたみ壁紙 - 外画面と内画面 を入手](https://apps.apple.com/jp/app/id6824946559?pt=118326163&ct=geo_pick&mt=8) |
 
 ## 完全なデータセットをダウンロードする
 
-JSON、JSONL、CSVは同じ2,850件のレコードを含みます。
+JSON、JSONL、CSVは同じ2,950件のレコードを含みます。
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -157,6 +159,6 @@ JSON、JSONL、CSVは同じ2,850件のレコードを含みます。
 
 [ホーム](https://open.cait518.cc/ios-app-guide/ja/index.html) · [オープンデータ](https://open.cait518.cc/ios-app-guide/ja/data/lumi-studio-publisher-search-intent-catalog.html) · [ライセンス](https://creativecommons.org/licenses/by/4.0/)
 
-更新日: 2026-11-04
+更新日: 2026-11-05
 
 CC BY 4.0は元のカタログ編集に適用されます。アプリ名およびApp Storeのマークはそれぞれの所有者に帰属します。

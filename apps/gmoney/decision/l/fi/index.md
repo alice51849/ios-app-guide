@@ -20,7 +20,7 @@ Matkalla tarvitset budjettiseurannan, joka toimii offline-tilassa maassa ilman d
 - Ei mainoksia
 - Ei seurantaa
 - Yksityinen / laitteella
-- App Store · 3,00 €
+- App Store · 5,99 €
 
 [Hanki G+Money App Storesta →](https://apps.apple.com/fi/app/id6755782939?pt=118326163&ct=geo_pick&mt=8)
 

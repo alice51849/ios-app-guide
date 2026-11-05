@@ -17,7 +17,7 @@ Optimerad för iPhone Duo. Appen är byggd med den senaste SDK:n, fyller hela de
 - Betald nedladdning
 - Inget konto
 - Apple Watch
-- App Store · 49,00 kr
+- App Store · 79,00 kr
 
 [Hämta WiFi Aid: Hitta nätverksfel i App Store](https://apps.apple.com/se/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)
 

@@ -17,7 +17,7 @@ When Wi-Fi says connected but work still cannot get online, the useful first ste
 - Muat turun berbayar
 - Tiada akaun
 - Apple Watch
-- App Store · RM17.90
+- App Store · RM29.90
 
 [Dapatkan WiFi Aid di App Store →](https://apps.apple.com/my/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)
 

@@ -17,7 +17,7 @@ Før en rejse er komplette sætninger til virkelige situationer mere nyttige end
 - Betalt download
 - Widget
 - Apple Watch
-- App Store · 59,00 kr
+- App Store · 99,00 kr
 
 [Hent DailyMate i App Store →](https://apps.apple.com/dk/app/id6790418321?pt=118326163&ct=geo_pick&mt=8)
 

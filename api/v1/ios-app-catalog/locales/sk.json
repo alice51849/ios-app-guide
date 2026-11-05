@@ -1,12 +1,12 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-11-04",
-  "content_digest": "d41bfe7e156aabee8cf16c8afd333da7f2ca1d1367dc4352339ff83f32cded2b",
+  "date_modified": "2026-11-05",
+  "content_digest": "cfd8097e2d160bb22da9f0415e9bc3c45e093acb6a1c2a6fc701a91301d98006",
   "locale": "sk",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 57,
+  "record_count": 59,
   "apps": [
     {
       "key": "notesstudio100",
@@ -361,9 +361,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/sk/dailymate.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "6.99",
+        "price": "12.99",
         "currency": "EUR",
-        "formatted_price": "6,99 €",
+        "formatted_price": "12,99 €",
         "storefront_url": "https://apps.apple.com/sk/app/id6790418321"
       }
     },
@@ -567,9 +567,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/sk/gmoney.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "3",
+        "price": "5.99",
         "currency": "EUR",
-        "formatted_price": "3,00 €",
+        "formatted_price": "5,99 €",
         "storefront_url": "https://apps.apple.com/sk/app/id6755782939"
       }
     },
@@ -647,9 +647,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/sk/gbago.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "5.99",
+        "price": "9.99",
         "currency": "EUR",
-        "formatted_price": "5,99 €",
+        "formatted_price": "9,99 €",
         "storefront_url": "https://apps.apple.com/sk/app/id6804564400"
       }
     },
@@ -892,9 +892,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/sk/lumibopomofopro.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "9.99",
+        "price": "0",
         "currency": "EUR",
-        "formatted_price": "9,99 €",
+        "formatted_price": "Zadarmo",
         "storefront_url": "https://apps.apple.com/sk/app/id6775773117"
       }
     },
@@ -1223,6 +1223,48 @@
       }
     },
     {
+      "key": "foldparty",
+      "app_store_id": "6829184924",
+      "name": "Meow Party: Mačacie hry pre 2",
+      "summary": "Jeden mobil stačí pre dvoch: ohyb displeja ho rozdelí napoly a každý hráč dostane svoju polovicu, bez druhého telefónu aj bez internetu. 200 roztomilých mačacích minihier v Meow Party je optimalizovaných pre skladací displej iPhone Duo, takže po zložení je hranie ešte zábavnejšie. Na bežnom iPhone sú všetky hry tiež plne hrateľné.",
+      "category": "other",
+      "search_terms": [
+        "dvoch",
+        "hráčov",
+        "hra",
+        "mačka",
+        "mačky",
+        "mačkami",
+        "offline",
+        "bez",
+        "internetu",
+        "logické",
+        "spoločenské",
+        "roztomilé",
+        "minihry"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/sk/app/id6829184924?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/sk/foldparty.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "6.99",
+        "currency": "EUR",
+        "formatted_price": "6,99 €",
+        "storefront_url": "https://apps.apple.com/sk/app/id6829184924"
+      }
+    },
+    {
       "key": "metrotimehelper",
       "app_store_id": "6819061896",
       "name": "Tchaj-pej: metro načas",
@@ -1258,9 +1300,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/sk/metrotimehelper.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "0",
+        "price": "2.99",
         "currency": "EUR",
-        "formatted_price": "Zadarmo",
+        "formatted_price": "2,99 €",
         "storefront_url": "https://apps.apple.com/sk/app/id6819061896"
       }
     },
@@ -1749,9 +1791,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/sk/snapport.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "3.9",
+        "price": "6.99",
         "currency": "EUR",
-        "formatted_price": "3,90 €",
+        "formatted_price": "6,99 €",
         "storefront_url": "https://apps.apple.com/sk/app/id6780575828"
       }
     },
@@ -1954,6 +1996,47 @@
       }
     },
     {
+      "key": "tripbeecute",
+      "app_store_id": "6826987407",
+      "name": "TripBee Cute: Cestovný denník",
+      "summary": "Keď sa rezervácie strácajú v e-mailoch a program v poznámkach, TripBee Cute poskladá celú cestu do jedného roztomilého ilustrovaného denníčka. Každá cesta je vo vašej knižničke malý denníček s ilustrovanou obálkou. Otvorte ho a celý výlet sa rozvinie na jednej stránke: obálka, odpočítavanie do odchodu, lety, program na každý deň a nakoniec príprava, teda zoznam vecí a poznámky.",
+      "category": "travel",
+      "search_terms": [
+        "dovolenka",
+        "výlet",
+        "cestovanie",
+        "itinerár",
+        "prázdniny",
+        "balenie",
+        "zápisník",
+        "widget",
+        "plánovač",
+        "ciest",
+        "denníček",
+        "dní"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/sk/app/id6826987407?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/sk/tripbeecute.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Zadarmo",
+        "storefront_url": "https://apps.apple.com/sk/app/id6826987407"
+      }
+    },
+    {
       "key": "tripbeelite",
       "app_store_id": "6791299610",
       "name": "TripBee Lite: Plán cesty",
@@ -2029,9 +2112,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/sk/tripbee.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "3.9",
+        "price": "6.99",
         "currency": "EUR",
-        "formatted_price": "3,90 €",
+        "formatted_price": "6,99 €",
         "storefront_url": "https://apps.apple.com/sk/app/id6787754435"
       }
     },
@@ -2152,9 +2235,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/sk/wifiaid.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "3.9",
+        "price": "6.99",
         "currency": "EUR",
-        "formatted_price": "3,90 €",
+        "formatted_price": "6,99 €",
         "storefront_url": "https://apps.apple.com/sk/app/id6790467886"
       }
     },
@@ -2272,9 +2355,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/sk/wordmate.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "5.99",
+        "price": "9.99",
         "currency": "EUR",
-        "formatted_price": "5,99 €",
+        "formatted_price": "9,99 €",
         "storefront_url": "https://apps.apple.com/sk/app/id6789917808"
       }
     },
@@ -2316,9 +2399,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/sk/zipbox.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "3",
+        "price": "5.99",
         "currency": "EUR",
-        "formatted_price": "3,00 €",
+        "formatted_price": "5,99 €",
         "storefront_url": "https://apps.apple.com/sk/app/id6806776579"
       }
     }

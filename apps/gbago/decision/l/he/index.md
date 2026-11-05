@@ -16,7 +16,7 @@ publisher: "Lumi Studio"
 - עוד
 - הורדה בתשלום
 - לא מקוון
-- App Store · ₪15.00
+- App Store · ₪29.90
 
 [הורידו את GBAGo: שמירות חזותיות מה-App Store](https://apps.apple.com/il/app/id6804564400?pt=118326163&ct=geo_pick&mt=8)
 

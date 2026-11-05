@@ -1,12 +1,12 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-11-04",
-  "content_digest": "d41bfe7e156aabee8cf16c8afd333da7f2ca1d1367dc4352339ff83f32cded2b",
+  "date_modified": "2026-11-05",
+  "content_digest": "cfd8097e2d160bb22da9f0415e9bc3c45e093acb6a1c2a6fc701a91301d98006",
   "locale": "ml-IN",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 57,
+  "record_count": 59,
   "apps": [
     {
       "key": "notesstudio100",
@@ -361,9 +361,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/ml-IN/dailymate.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "699",
+        "price": "1199",
         "currency": "INR",
-        "formatted_price": "₹ 699",
+        "formatted_price": "₹ 1,199",
         "storefront_url": "https://apps.apple.com/in/app/id6790418321"
       }
     },
@@ -568,9 +568,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/ml-IN/gmoney.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "299",
+        "price": "499",
         "currency": "INR",
-        "formatted_price": "₹ 299",
+        "formatted_price": "₹ 499",
         "storefront_url": "https://apps.apple.com/in/app/id6755782939"
       }
     },
@@ -648,9 +648,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/ml-IN/gbago.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "500",
+        "price": "999",
         "currency": "INR",
-        "formatted_price": "₹ 500",
+        "formatted_price": "₹ 999",
         "storefront_url": "https://apps.apple.com/in/app/id6804564400"
       }
     },
@@ -898,9 +898,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/ml-IN/lumibopomofopro.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "999",
+        "price": "0",
         "currency": "INR",
-        "formatted_price": "₹ 999",
+        "formatted_price": "സൗജന്യം",
         "storefront_url": "https://apps.apple.com/in/app/id6775773117"
       }
     },
@@ -1233,6 +1233,49 @@
       }
     },
     {
+      "key": "foldparty",
+      "app_store_id": "6829184924",
+      "name": "Meow Party: 200 പൂച്ച ഗെയിം",
+      "summary": "ഒരേ ഫോണിൽ ഒന്നിച്ച് കളിക്കാൻ നല്ലൊരു ഗെയിം തേടി മടുത്തെങ്കിൽ, Meow Party ഒറ്റ ആപ്പിൽ 200 ക്യൂട്ട് പൂച്ച മിനി ഗെയിമുകൾ തരുന്നു. iPhone Duo-യുടെ ഫോൾഡബിൾ സ്ക്രീനിനായി ഒപ്റ്റിമൈസ് ചെയ്തതാണ്, മടക്കുമ്പോൾ കൂടുതൽ രസം; സാധാരണ iPhone-ലും എല്ലാ ഗെയിമുകളും മുഴുവനായി കളിക്കാം.",
+      "category": "other",
+      "search_terms": [
+        "മടക്കാവുന്ന",
+        "ഫോൺ",
+        "രണ്ട്",
+        "പേർക്ക്",
+        "മിനി",
+        "പാർട്ടി",
+        "മ്യാവൂ",
+        "പസിൽ",
+        "ക്യാറ്റ്",
+        "ടൈംപാസ്",
+        "ക്യൂട്ട്",
+        "ഗെയിംസ്",
+        "പ്ലെയർ",
+        "2"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/in/app/id6829184924?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/ml-IN/foldparty.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "599",
+        "currency": "INR",
+        "formatted_price": "₹ 599",
+        "storefront_url": "https://apps.apple.com/in/app/id6829184924"
+      }
+    },
+    {
       "key": "metrotimehelper",
       "app_store_id": "6819061896",
       "name": "Taipei MRT സമയ സഹായി",
@@ -1268,9 +1311,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/ml-IN/metrotimehelper.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "0",
+        "price": "299",
         "currency": "INR",
-        "formatted_price": "സൗജന്യം",
+        "formatted_price": "₹ 299",
         "storefront_url": "https://apps.apple.com/in/app/id6819061896"
       }
     },
@@ -1759,9 +1802,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/ml-IN/snapport.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "349",
+        "price": "599",
         "currency": "INR",
-        "formatted_price": "₹ 349",
+        "formatted_price": "₹ 599",
         "storefront_url": "https://apps.apple.com/in/app/id6780575828"
       }
     },
@@ -1968,6 +2011,47 @@
       }
     },
     {
+      "key": "tripbeecute",
+      "app_store_id": "6826987407",
+      "name": "TripBee Cute: യാത്രാ ഡയറി",
+      "summary": "ചാറ്റുകളിലും സ്ക്രീൻഷോട്ടുകളിലും ചിതറിക്കിടക്കുന്ന യാത്രാ വിവരങ്ങളെ TripBee Cute ക്യൂട്ട് ചിത്രങ്ങളുള്ള ഒരു ചെറിയ ബുക്ക്ലെറ്റാക്കി മാറ്റുന്നു: കവർ, കൗണ്ട്ഡൗൺ, ഫ്ലൈറ്റുകൾ, ദിവസ പ്ലാനുകൾ, പാക്കിംഗ് എല്ലാം ഒരൊറ്റ പേജിൽ.",
+      "category": "travel",
+      "search_terms": [
+        "യാത്ര",
+        "ട്രിപ്പ്",
+        "ട്രാവൽ",
+        "അവധി",
+        "വെക്കേഷൻ",
+        "കൗണ്ട്ഡൗൺ",
+        "ഫ്ലൈറ്റ്",
+        "പാക്കിംഗ്",
+        "ലിസ്റ്റ്",
+        "ഹണിമൂൺ",
+        "കൂട്ടുകാർ",
+        "വിജറ്റ്"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/in/app/id6826987407?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/ml-IN/tripbeecute.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "സൗജന്യം",
+        "storefront_url": "https://apps.apple.com/in/app/id6826987407"
+      }
+    },
+    {
       "key": "tripbeelite",
       "app_store_id": "6791299610",
       "name": "TripBee Lite: യാത്രാപദ്ധതി",
@@ -2043,9 +2127,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/ml-IN/tripbee.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "349",
+        "price": "599",
         "currency": "INR",
-        "formatted_price": "₹ 349",
+        "formatted_price": "₹ 599",
         "storefront_url": "https://apps.apple.com/in/app/id6787754435"
       }
     },
@@ -2165,9 +2249,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/ml-IN/wifiaid.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "349",
+        "price": "599",
         "currency": "INR",
-        "formatted_price": "₹ 349",
+        "formatted_price": "₹ 599",
         "storefront_url": "https://apps.apple.com/in/app/id6790467886"
       }
     },
@@ -2290,9 +2374,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/ml-IN/wordmate.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "500",
+        "price": "999",
         "currency": "INR",
-        "formatted_price": "₹ 500",
+        "formatted_price": "₹ 999",
         "storefront_url": "https://apps.apple.com/in/app/id6789917808"
       }
     },
@@ -2335,9 +2419,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/ml-IN/zipbox.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "299",
+        "price": "499",
         "currency": "INR",
-        "formatted_price": "₹ 299",
+        "formatted_price": "₹ 499",
         "storefront_url": "https://apps.apple.com/in/app/id6806776579"
       }
     }

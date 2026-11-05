@@ -3,7 +3,7 @@
 > Strukturert informasjon om funksjoner, priser og vanlige spørsmål for hver iOS-app.
 
 locale: no
-apps: 57
+apps: 59
 - Appkatalog: https://open.cait518.cc/ios-app-guide/no/tools/private-pay-once-iphone-app-finder.html
 - Appkatalog · PWA: https://open.cait518.cc/ios-app-guide/no/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/no.jsonld
@@ -28,7 +28,7 @@ apps: 57
 - Appkatalog · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 
 - [100 Notes Studio: Pen & Paper](https://open.cait518.cc/ios-app-guide/no/notesstudio100.html) — Notatbok, håndskrift og PDF
-  - Vinter og eksamensperiode: skriv notater for hånd, marker PDF-lysbilder, legg opptaket av forelesningen på siden og øv med kort. Helt offline, uten konto.
+  - Optimalisert for iPhone Duo: ekte fullskjerm. Skriv for hånd eller på tastatur, marker PDF-er og ta opp forelesningen på samme side, helt offline. Øv med kort.
   - Pris: Last ned gratis. Ett engangskjøp låser opp alle funksjoner—uten abonnement.
   - App Store: https://apps.apple.com/no/app/id6798813048?pt=118326163&ct=geo_pick&mt=8
 - [AI Brief: Filer til AI-prompt](https://open.cait518.cc/ios-app-guide/no/aibriefpack.html) — Prompts fra filer og PDF
@@ -60,7 +60,7 @@ apps: 57
   - Pris: Last ned gratis. Ett engangskjøp låser opp alle funksjoner—uten abonnement.
   - App Store: https://apps.apple.com/no/app/id6782251621?pt=118326163&ct=geo_pick&mt=8
 - [DailyMate Lite: Snakk i dag](https://open.cait518.cc/ios-app-guide/no/dailymatelite.html) — Parlør for reisen, 50 språk
-  - Optimalisert for iPhone Duo: ekte fullskjerm. Forstå hva folk sier på flyplassen, hotellet eller restauranten, og lær det naturlige svaret.
+  - Optimalisert for iPhone Duo. Lær hvilket som helst av 50 språk. Øv på replikker på flyplassen, hotellet og kafeen, og repeter neste setning hver dag i widgeten.
   - Pris: Last ned gratis. Ett engangskjøp låser opp alle funksjoner—uten abonnement.
   - App Store: https://apps.apple.com/no/app/id6794725568?pt=118326163&ct=geo_pick&mt=8
 - [DailyMate: Setninger for livet](https://open.cait518.cc/ios-app-guide/no/dailymate.html) — Lær engelsk, fransk og spansk
@@ -68,7 +68,7 @@ apps: 57
   - Pris: Betalt nedlasting til én fast pris uten abonnement.
   - App Store: https://apps.apple.com/no/app/id6790418321?pt=118326163&ct=geo_pick&mt=8
 - [dB Halo: Lydnivåmåler](https://open.cait518.cc/ios-app-guide/no/dbhalo.html) — Spekter, støydose og søvn
-  - Optimalisert for iPhone Duo: ekte fullskjerm. Se dB i sanntid på Halo-ringen, anslå den daglige støydosen og logg snorking om natten.
+  - Optimalisert for iPhone Duo: ekte fullskjerm. Se desibel med ett blikk, hele spekteret, anslått daglig støydose og snorking i søvndagboken.
   - Pris: Last ned gratis. Ett engangskjøp låser opp alle funksjoner—uten abonnement.
   - App Store: https://apps.apple.com/no/app/id6806826699?pt=118326163&ct=geo_pick&mt=8
 - [EasyAM: Vekkerklokke & alarm](https://open.cait518.cc/ios-app-guide/no/easyam.html) — Stille på helligdager og ferie
@@ -80,7 +80,7 @@ apps: 57
   - Pris: Last ned gratis. Ett engangskjøp låser opp alle funksjoner—uten abonnement.
   - App Store: https://apps.apple.com/no/app/id6824946559?pt=118326163&ct=geo_pick&mt=8
 - [G+Money Lite: Reiseutgifter](https://open.cait518.cc/ios-app-guide/no/gmoneylite.html) — Dagsbudsjett, klokke og widget
-  - Optimalisert for iPhone Duo: ekte fullskjerm. Jul eller nyttår i utlandet? Før kjøp i lokal valuta og se dem straks i din egen, sett en daglig grense.
+  - Optimalisert for iPhone Duo: ekte fullskjerm. Sett et dagsbudsjett og se hva som er igjen i dag på widgeten og Apple Watch.
   - Pris: Last ned gratis. Ett engangskjøp låser opp alle funksjoner—uten abonnement.
   - App Store: https://apps.apple.com/no/app/id6793436548?pt=118326163&ct=geo_pick&mt=8
 - [G+Money: Utgifter og budsjett](https://open.cait518.cc/ios-app-guide/no/gmoney.html) — Reiseutgifter og valuta
@@ -88,11 +88,11 @@ apps: 57
   - Pris: Betalt nedlasting til én fast pris uten abonnement.
   - App Store: https://apps.apple.com/no/app/id6755782939?pt=118326163&ct=geo_pick&mt=8
 - [GBAGo: Visuelle lagringer](https://open.cait518.cc/ios-app-guide/no/gbago.html) — Redningskart · Øyeblikksbilder
-  - Gjenopprettingskart · Visuelle lagringer · Automatiske øyeblikksbilder · Eksporter sikkerhetskopi · .sav
+  - Optimalisert for iPhone Duo: ekte fullskjerm. Emulatoren som beskytter fremgangen din.
   - Pris: Betalt nedlasting til én fast pris uten abonnement.
   - App Store: https://apps.apple.com/no/app/id6804564400?pt=118326163&ct=geo_pick&mt=8
 - [HoursTag Lite: Pris i timer](https://open.cait518.cc/ios-app-guide/no/hourstaglite.html) — Bevisste kjøp: reell pris
-  - Handelen ved årsskiftet: før du kjøper, se prisen i egne arbeidstimer, merk den som behov, ønske eller impuls, og se arbeidet bak et mål for det nye året.
+  - Optimalisert for iPhone Duo: ekte fullskjerm. Før du kjøper, se prisen i egne arbeidstimer og merk den som behov, ønske eller impuls. Widget og Apple Watch er med.
   - Pris: Last ned gratis. Ett engangskjøp låser opp alle funksjoner—uten abonnement.
   - App Store: https://apps.apple.com/no/app/id6794039979?pt=118326163&ct=geo_pick&mt=8
 - [HoursTag: Timer å kjøpe](https://open.cait518.cc/ios-app-guide/no/hourstag.html) — Timelønn og forbruk
@@ -147,6 +147,10 @@ apps: 57
   - Optimalisert for iPhone Duo: ekte fullskjerm. Finn private opplysninger, sladd bare det du velger for godt, og fjern metadata. Alt på enheten.
   - Pris: Last ned gratis. Ett engangskjøp låser opp alle funksjoner—uten abonnement.
   - App Store: https://apps.apple.com/no/app/id6792850916?pt=118326163&ct=geo_pick&mt=8
+- [Meow Party: Kattespill for 2](https://open.cait518.cc/ios-app-guide/no/foldparty.html) — 200 spill på foldbar mobil
+  - For brettbare mobiler: morsommere når du bretter, fullt spillbar på en vanlig iPhone. 200 søte katteminispill, de fleste for én og 54 for to på samme mobil, helt offline.
+  - Pris: Betalt nedlasting til én fast pris uten abonnement.
+  - App Store: https://apps.apple.com/no/app/id6829184924?pt=118326163&ct=geo_pick&mt=8
 - [Mochi DoneStamp: Sist](https://open.cait518.cc/ios-app-guide/no/mochidonestamp.html) — Når var det? Påminnelser
   - Optimalisert for iPhone Duo: ekte fullskjerm. Slutt å lure på når du sist gjorde det. Stemple det som gjort, Mochi husker og minner deg på når det er tid igjen.
   - Pris: Last ned gratis. Ett engangskjøp låser opp alle funksjoner—uten abonnement.
@@ -176,7 +180,7 @@ apps: 57
   - Pris: Last ned gratis. Ett engangskjøp låser opp alle funksjoner—uten abonnement.
   - App Store: https://apps.apple.com/no/app/id6806779853?pt=118326163&ct=geo_pick&mt=8
 - [SaveTag: AI-bokmerker](https://open.cait518.cc/ios-app-guide/no/savetag.html) — Lagre lenker, les dem senere
-  - Optimalisert for iPhone Duo: ekte fullskjerm. Del lenken fra hvilken som helst app: den tagges automatisk på enheten, og du finner den etter betydning.
+  - Optimalisert for iPhone Duo: ekte fullskjerm. Lagre lenker fra alle apper med ett trykk.
   - Pris: Last ned gratis. Ett engangskjøp låser opp alle funksjoner—uten abonnement.
   - App Store: https://apps.apple.com/no/app/id6802505528?pt=118326163&ct=geo_pick&mt=8
 - [ScanTo Pro: PDF og OCR](https://open.cait518.cc/ios-app-guide/no/scanto.html) — Privat dokumentskanner offline
@@ -188,7 +192,7 @@ apps: 57
   - Pris: Last ned gratis. Ett engangskjøp låser opp alle funksjoner—uten abonnement.
   - App Store: https://apps.apple.com/no/app/id6788236641?pt=118326163&ct=geo_pick&mt=8
 - [ShotInbox AI: Sort Screenshots](https://open.cait518.cc/ios-app-guide/no/shotinbox.html) — Finn og organiser skjermbilder
-  - Optimalisert for iPhone Duo: ekte fullskjerm. Julegaver og vinterturer gir kvitteringer, billetter og bestillinger som skjermbilder.
+  - Optimalisert for iPhone Duo: ekte fullskjerm. Skjermbildene dine sorterer seg selv: kvitteringer, billetter, reiser og chatter, med all tekst søkbar.
   - Pris: Last ned gratis. Ett engangskjøp låser opp alle funksjoner—uten abonnement.
   - App Store: https://apps.apple.com/no/app/id6802166527?pt=118326163&ct=geo_pick&mt=8
 - [Snapport Lite: Passfoto hjemme](https://open.cait518.cc/ios-app-guide/no/snapportlite.html) — Portretter i eksakt størrelse
@@ -204,11 +208,11 @@ apps: 57
   - Pris: Last ned gratis. Ett engangskjøp låser opp alle funksjoner—uten abonnement.
   - App Store: https://apps.apple.com/no/app/id6782139553?pt=118326163&ct=geo_pick&mt=8
 - [Stay Clock: Skrivebordsklokke](https://open.cait518.cc/ios-app-guide/no/stayclock.html) — Tid og kalender, alltid på
-  - Optimalisert for iPhone Duo: ekte fullskjerm. Mørke kvelder frem mot jul: mens telefonen lader, blir den en stor klokke du kan lese fra andre siden av rommet.
+  - Optimalisert for iPhone Duo: ekte fullskjerm. En vakker skrivebordsklokke som alltid er på og kan leses fra andre siden av rommet.
   - Pris: Last ned gratis. Ett engangskjøp låser opp alle funksjoner—uten abonnement.
   - App Store: https://apps.apple.com/no/app/id6814035888?pt=118326163&ct=geo_pick&mt=8
 - [Studydown: Tidsregistrering](https://open.cait518.cc/ios-app-guide/no/studydown.html) — Legg den med skjermen ned
-  - Optimalisert for iPhone Duo: ekte fullskjerm. Velg en aktivitet, legg telefonen med skjermen ned, og tiden teller; løfter du den, pauser den.
+  - Optimalisert for iPhone Duo: ekte fullskjerm. Snu telefonen og logg ekte fokus. Se løft, uavbrutte perioder og dagsfarten mot hver frist. Privat.
   - Pris: Last ned gratis. Ett engangskjøp låser opp alle funksjoner—uten abonnement.
   - App Store: https://apps.apple.com/no/app/id6807335593?pt=118326163&ct=geo_pick&mt=8
 - [Taipei: Tidshjelp for metroen](https://open.cait518.cc/ios-app-guide/no/metrotimehelper.html) — Vet når du må dra hjemmefra
@@ -219,8 +223,12 @@ apps: 57
   - Optimalisert for iPhone Duo: ekte fullskjerm. Fly, lange bilturer og nye steder blir oppdrag: fest beltet, takk mannskapet, smak en bit.
   - Pris: Last ned gratis. Ett engangskjøp låser opp alle funksjoner—uten abonnement.
   - App Store: https://apps.apple.com/no/app/id6787193643?pt=118326163&ct=geo_pick&mt=8
+- [TripBee Cute: Reisedagbok](https://open.cait518.cc/ios-app-guide/no/tripbeecute.html) — Søtt reisehefte og nedtelling
+  - Gjør reisen om til et søtt, illustrert hefte: nedtelling, fly, dagsplaner og pakkeliste på én side. Planlegg sammen med venner og del et netthefte som åpnes overalt.
+  - Pris: Last ned gratis. Ett engangskjøp låser opp alle funksjoner—uten abonnement.
+  - App Store: https://apps.apple.com/no/app/id6826987407?pt=118326163&ct=geo_pick&mt=8
 - [TripBee Lite: Reiseplan](https://open.cait518.cc/ios-app-guide/no/tripbeelite.html) — Ferie planlagt dag for dag
-  - Optimalisert for iPhone Duo: ekte fullskjerm. Samle turen på én tidslinje dag for dag, med fly, overnatting, notater, påminnelser og billettinfo samlet.
+  - Optimalisert for iPhone Duo: ekte fullskjerm. Din neste reise, dag for dag: tider, steder, påminnelser, billetter og lokalt vær i én rolig tidslinje.
   - Pris: Last ned gratis. Ett engangskjøp låser opp alle funksjoner—uten abonnement.
   - App Store: https://apps.apple.com/no/app/id6791299610?pt=118326163&ct=geo_pick&mt=8
 - [TripBee: Reiseplanlegger](https://open.cait518.cc/ios-app-guide/no/tripbee.html) — Gruppetur og smart pakkeliste
@@ -248,10 +256,10 @@ apps: 57
   - Pris: Last ned gratis. Ett engangskjøp låser opp alle funksjoner—uten abonnement.
   - App Store: https://apps.apple.com/no/app/id6797601720?pt=118326163&ct=geo_pick&mt=8
 - [Wordmate: Lær 44 språk](https://open.cait518.cc/ios-app-guide/no/wordmate.html) — Gloser, widget og klokke
-  - Optimalisert for iPhone Duo: ekte fullskjerm. Lær ord på 44 språk i små pauser: 14 praktiske emner, eksempelsetninger og uttale du kan høre. Fortsett rett fra widgeten.
+  - Optimalisert for iPhone Duo: ekte fullskjerm. Lær ord på 44 språk med naturlige eksempelsetninger, 14 emner og 3 nivåer. Øv rett fra widgeten eller Apple Watch.
   - Pris: Betalt nedlasting til én fast pris uten abonnement.
   - App Store: https://apps.apple.com/no/app/id6789917808?pt=118326163&ct=geo_pick&mt=8
 - [Zipbox: åpne RAR, ZIP og 7z](https://open.cait518.cc/ios-app-guide/no/zipbox.html) — Pakk ut uten reklame
-  - Optimalisert for iPhone Duo: ekte fullskjerm. Se hva som ligger der, forhåndsvis bilder og PDF og pakk ut bare det du trenger, rett på enheten.
+  - Optimalisert for iPhone Duo: ekte fullskjerm. Åpne ZIP, RAR, 7z, TAR, ISO og mer, også arkiver med passord eller delt i flere deler.
   - Pris: Betalt nedlasting til én fast pris uten abonnement.
   - App Store: https://apps.apple.com/no/app/id6806776579?pt=118326163&ct=geo_pick&mt=8

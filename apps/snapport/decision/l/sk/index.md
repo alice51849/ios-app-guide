@@ -19,7 +19,7 @@ Pre pasovú fotografiu bábätka nesmie byť v zábere nikto iný a pozadie mus�
 - Bez reklám
 - Bez sledovania
 - Súkromné / v zariadení
-- App Store · 3,90 €
+- App Store · 6,99 €
 
 [Stiahnite si Snapport v App Store →](https://apps.apple.com/sk/app/id6780575828?pt=118326163&ct=geo_pick&mt=8)
 

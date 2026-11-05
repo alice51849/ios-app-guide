@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - 프라이빗 / 기기 내
 - 위젯
 - Apple Watch
-- App Store · ￦7,700
+- App Store · ￦15,000
 
 [App Store에서 Wordmate: 44개 언어 학습 받기 →](https://apps.apple.com/kr/app/id6789917808?pt=118326163&ct=geo_pick&mt=8)
 

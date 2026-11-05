@@ -20,7 +20,7 @@ Dioptimumkan untuk iPhone Duo. Dibina dengan SDK terkini, apl ini memenuhi selur
 - Tiada iklan
 - Tiada penjejakan
 - Peribadi / pada peranti
-- App Store · RM14.90
+- App Store · RM22.90
 
 [Dapatkan Zipbox: Buka RAR, ZIP, 7z di App Store](https://apps.apple.com/my/app/id6806776579?pt=118326163&ct=geo_pick&mt=8)
 

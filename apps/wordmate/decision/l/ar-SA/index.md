@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - خاص / على الجهاز
 - عنصر واجهة
 - Apple Watch
-- App Store · SAR 20.00
+- App Store · SAR 39.99
 
 [احصل على Wordmate: Learn 44 Languages من App Store →](https://apps.apple.com/sa/app/id6789917808?pt=118326163&ct=geo_pick&mt=8)
 

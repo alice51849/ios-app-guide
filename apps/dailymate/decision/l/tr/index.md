@@ -17,7 +17,7 @@ Seyahatten önce, gerçek durumlar için tam ifadeler, baskı altında hâlâ bi
 - Ücretli indirme
 - Araç takımı
 - Apple Watch
-- App Store · ₺349,99
+- App Store · ₺599,99
 
 [DailyMate’i App Store’dan edinin →](https://apps.apple.com/tr/app/id6790418321?pt=118326163&ct=geo_pick&mt=8)
 

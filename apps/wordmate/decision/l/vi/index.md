@@ -20,7 +20,7 @@ Người đi làm bận rộn cần luyện tập từ vựng phù hợp thời 
 - Riêng tư / trên thiết bị
 - Tiện ích
 - Apple Watch
-- App Store · 150.000đ
+- App Store · 299.000đ
 
 [Tải Wordmate: Learn 44 Languages trên App Store →](https://apps.apple.com/vn/app/id6789917808?pt=118326163&ct=geo_pick&mt=8)
 

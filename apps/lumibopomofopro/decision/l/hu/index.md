@@ -18,7 +18,7 @@ A kétnyelvű gyerekeknek, akik otthon tanulják a Zhuyint, teljes út kell hang
 - Nincs fiók
 - Nincs reklám
 - Privát / eszközön tárolt
-- App Store · HUF3,990.00
+- App Store · Ingyenes
 
 [Szerezd be a Lumi Bopomofo Pro-t az App Store-ban →](https://apps.apple.com/hu/app/id6775773117?pt=118326163&ct=geo_pick&mt=8)
 

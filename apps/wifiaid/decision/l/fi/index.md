@@ -17,7 +17,7 @@ Optimoitu iPhone Duo -laitteelle. Uusimmalla SDK:lla rakennettu sovellus täytt�
 - Maksullinen lataus
 - Ei tiliä
 - Apple Watch
-- App Store · 3,90 €
+- App Store · 6,99 €
 
 [Lataa WiFi Aid: Löydä verkon viat App Storesta](https://apps.apple.com/fi/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)
 

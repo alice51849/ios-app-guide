@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - വ്യാപനങ്ങൾ ഇല്ല
 - ട്രാക്കിംഗ് ഇല്ല
 - സ്വകാര്യത / ഉപകരണത്തിൽ
-- App Store · ₹ 299
+- App Store · ₹ 499
 
 [App Store-ൽ G+Money നേടുക →](https://apps.apple.com/in/app/id6755782939?pt=118326163&ct=geo_pick&mt=8)
 

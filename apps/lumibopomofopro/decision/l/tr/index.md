@@ -18,7 +18,7 @@ Evde Zhuyin öğrenen iki dilli çocuklar, sesler, semboller, tonlar ve harmanla
 - Hesap yok
 - Reklam yok
 - Gizli / cihazda
-- App Store · ₺499,99
+- App Store · Ücretsiz
 
 [Lumi Bopomofo Pro’yu App Store’dan edinin →](https://apps.apple.com/tr/app/id6775773117?pt=118326163&ct=geo_pick&mt=8)
 

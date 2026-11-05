@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - Платне завантаження
 - Без облікового запису
 - Apple Watch
-- App Store · 3,95 USD
+- App Store · 6,99 USD
 
 [Завантажте WiFi Aid: Пошук проблем мережі з App Store](https://apps.apple.com/ua/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)
 

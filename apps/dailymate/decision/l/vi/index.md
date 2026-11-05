@@ -17,7 +17,7 @@ Trước chuyến đi, các cụm từ hoàn chỉnh cho tình huống thực t�
 - Tải xuống trả phí
 - Tiện ích
 - Apple Watch
-- App Store · 200.000đ
+- App Store · 399.000đ
 
 [Tải DailyMate trên App Store →](https://apps.apple.com/vn/app/id6790418321?pt=118326163&ct=geo_pick&mt=8)
 

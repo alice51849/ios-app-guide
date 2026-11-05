@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - بدون حساب
 - بدون إعلانات
 - خاص / على الجهاز
-- App Store · SAR 39.99
+- App Store · مجاني
 
 [احصل على Lumi Bopomofo Pro من App Store →](https://apps.apple.com/sa/app/id6775773117?pt=118326163&ct=geo_pick&mt=8)
 

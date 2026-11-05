@@ -20,7 +20,7 @@ Travle pendlere har brug for ordforrådsøvelser, der passer ind i ledige minutt
 - Privat / på enheden
 - Widget
 - Apple Watch
-- App Store · 40,00 kr
+- App Store · 79,00 kr
 
 [Hent Wordmate: Learn 44 Languages i App Store →](https://apps.apple.com/dk/app/id6789917808?pt=118326163&ct=geo_pick&mt=8)
 

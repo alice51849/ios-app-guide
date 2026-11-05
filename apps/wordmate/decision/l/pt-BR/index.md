@@ -20,7 +20,7 @@ Quem usa transporte precisa de prática de vocabulário que caiba em minutos liv
 - Privado / no dispositivo
 - Widget
 - Apple Watch
-- App Store · R$ 29,99
+- App Store · R$ 59,90
 
 [Baixe Wordmate: Aprenda 44 Idiomas na App Store →](https://apps.apple.com/br/app/id6789917808?pt=118326163&ct=geo_pick&mt=8)
 

@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - ไม่มีบัญชี
 - ไม่มีโฆษณา
 - ส่วนตัว / บนอุปกรณ์
-- App Store · ฿299.00
+- App Store · ฟรี
 
 [ดาวน์โหลด Lumi Bopomofo Pro ใน App Store →](https://apps.apple.com/th/app/id6775773117?pt=118326163&ct=geo_pick&mt=8)
 

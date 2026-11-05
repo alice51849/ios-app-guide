@@ -3,7 +3,7 @@
 > Información estructurada de cada app iOS — funciones, precio y FAQ.
 
 locale: es-MX
-apps: 57
+apps: 59
 - Directorio de apps: https://open.cait518.cc/ios-app-guide/es-MX/tools/private-pay-once-iphone-app-finder.html
 - Directorio de apps · PWA: https://open.cait518.cc/ios-app-guide/es-MX/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/es-MX.jsonld
@@ -28,7 +28,7 @@ apps: 57
 - Directorio de apps · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 
 - [100 Notes Studio: Pen & Paper](https://open.cait518.cc/ios-app-guide/es-MX/notesstudio100.html) — Notas a mano y anotación PDF
-  - Fin de semestre y exámenes finales: toma apuntes a mano, subraya los PDF, guarda la grabación de la clase en la página y repasa con tarjetas. Sin internet y sin cuenta.
+  - Optimizada para el iPhone Duo: pantalla completa real. Escribe a mano, teclea, anota PDF y graba la clase en la misma página, sin internet. Repasa con tarjetas.
   - Precio: Descarga gratis, con una compra única desbloqueas todo. Sin suscripciones.
   - App Store: https://apps.apple.com/mx/app/id6798813048?pt=118326163&ct=geo_pick&mt=8
 - [AI Brief: Archivos a prompt IA](https://open.cait518.cc/ios-app-guide/es-MX/aibriefpack.html) — Crea prompts desde archivos
@@ -60,7 +60,7 @@ apps: 57
   - Precio: Descarga gratis, con una compra única desbloqueas todo. Sin suscripciones.
   - App Store: https://apps.apple.com/mx/app/id6782251621?pt=118326163&ct=geo_pick&mt=8
 - [DailyMate Lite: Habla hoy](https://open.cait518.cc/ios-app-guide/es-MX/dailymatelite.html) — Frases para viajar: 50 idiomas
-  - Optimizada para el iPhone Duo: pantalla completa real. Entiende lo que te dicen en el aeropuerto, el hotel o el restaurante y aprende qué contestar.
+  - Optimizada para el iPhone Duo. Elige entre 50 idiomas, no solo uno. Practica diálogos de aeropuerto, hotel y café, y repasa cada día tu siguiente frase en el widget.
   - Precio: Descarga gratis, con una compra única desbloqueas todo. Sin suscripciones.
   - App Store: https://apps.apple.com/mx/app/id6794725568?pt=118326163&ct=geo_pick&mt=8
 - [DailyMate: habla en contexto](https://open.cait518.cc/ios-app-guide/es-MX/dailymate.html) — Inglés y más con frases reales
@@ -80,7 +80,7 @@ apps: 57
   - Precio: Descarga gratis, con una compra única desbloqueas todo. Sin suscripciones.
   - App Store: https://apps.apple.com/mx/app/id6824946559?pt=118326163&ct=geo_pick&mt=8
 - [G+Money Lite: Gastos de viaje](https://open.cait518.cc/ios-app-guide/es-MX/gmoneylite.html) — Gasto diario en reloj y widget
-  - Optimizada para el iPhone Duo: pantalla completa real. Anota compras en la moneda local y velas al instante en la tuya, fija un límite diario y convierte sin conexión.
+  - Optimizada para el iPhone Duo: pantalla completa real. Define un presupuesto diario y ve cuánto te queda hoy en el widget y el Apple Watch.
   - Precio: Descarga gratis, con una compra única desbloqueas todo. Sin suscripciones.
   - App Store: https://apps.apple.com/mx/app/id6793436548?pt=118326163&ct=geo_pick&mt=8
 - [G+Money: Gastos y presupuesto](https://open.cait518.cc/ios-app-guide/es-MX/gmoney.html) — Gastos de viaje y divisas
@@ -88,7 +88,7 @@ apps: 57
   - Precio: Descarga de pago con un único precio inicial y sin suscripción.
   - App Store: https://apps.apple.com/mx/app/id6755782939?pt=118326163&ct=geo_pick&mt=8
 - [GBAGo: Partidas visuales](https://open.cait518.cc/ios-app-guide/es-MX/gbago.html) — Recuperación · Instantáneas
-  - Mapa de recuperación · Partidas visuales · Instantáneas automáticas · Exportar respaldo · .sav
+  - Optimizada para el iPhone Duo: pantalla completa real. Emulador para tus archivos .gba, .gbc, .gb y .zip, sin conexión y a 60 fps.
   - Precio: Descarga de pago con un único precio inicial y sin suscripción.
   - App Store: https://apps.apple.com/mx/app/id6804564400?pt=118326163&ct=geo_pick&mt=8
 - [Hora de Metro en Taipei](https://open.cait518.cc/ios-app-guide/es-MX/metrotimehelper.html) — Calcula a qué hora salir
@@ -96,7 +96,7 @@ apps: 57
   - Precio: Descarga gratis, con una compra única desbloqueas todo. Sin suscripciones.
   - App Store: https://apps.apple.com/mx/app/id6819061896?pt=118326163&ct=geo_pick&mt=8
 - [HoursTag Lite: Precio en horas](https://open.cait518.cc/ios-app-guide/es-MX/hourstaglite.html) — Compra consciente: precio real
-  - Compras de fin de año: antes de comprar, ve el precio en horas de tu trabajo, márcalo como necesidad, deseo o impulso y ve cuánto trabajo cuesta tu meta de Año Nuevo.
+  - Optimizada para el iPhone Duo: pantalla completa real. Antes de comprar, ve el precio en horas de tu trabajo y márcalo como necesidad, deseo o impulso.
   - Precio: Descarga gratis, con una compra única desbloqueas todo. Sin suscripciones.
   - App Store: https://apps.apple.com/mx/app/id6794039979?pt=118326163&ct=geo_pick&mt=8
 - [HoursTag: Horas para comprar](https://open.cait518.cc/ios-app-guide/es-MX/hourstag.html) — Salario por hora y gastos
@@ -151,6 +151,10 @@ apps: 57
   - Optimizada para el iPhone Duo: pantalla completa real. Detecta datos privados, tapa solo lo que elijas y quita metadatos.
   - Precio: Descarga gratis, con una compra única desbloqueas todo. Sin suscripciones.
   - App Store: https://apps.apple.com/mx/app/id6792850916?pt=118326163&ct=geo_pick&mt=8
+- [Meow Party: Juegos de Gatos](https://open.cait518.cc/ios-app-guide/es-MX/foldparty.html) — 200 minijuegos en tu plegable
+  - Para celulares plegables: más divertido al plegar, completo en cualquier iPhone. 200 minijuegos de michis, 54 para dos en el mismo celular. ¡Sin internet ni anuncios!
+  - Precio: Descarga de pago con un único precio inicial y sin suscripción.
+  - App Store: https://apps.apple.com/mx/app/id6829184924?pt=118326163&ct=geo_pick&mt=8
 - [Mochi DoneStamp: Última vez](https://open.cait518.cc/ios-app-guide/es-MX/mochidonestamp.html) — ¿Cuándo fue? Avisos del hogar
   - Optimizada para el iPhone Duo: pantalla completa real. ¿Cuándo lo hiciste por última vez? Márcalo: Mochi lo recuerda y te avisa cuando toca de nuevo.
   - Precio: Descarga gratis, con una compra única desbloqueas todo. Sin suscripciones.
@@ -180,7 +184,7 @@ apps: 57
   - Precio: Descarga gratis, con una compra única desbloqueas todo. Sin suscripciones.
   - App Store: https://apps.apple.com/mx/app/id6806779853?pt=118326163&ct=geo_pick&mt=8
 - [SaveTag: guarda links con IA](https://open.cait518.cc/ios-app-guide/es-MX/savetag.html) — Lista para leer y ver después
-  - ¿Ideas de regalos, recetas navideñas y lugares para viajar perdidos en tus chats? Compártelos desde cualquier app: se etiquetan solos y los encuentras por su sentido.
+  - Optimizada para el iPhone Duo: pantalla completa real. Guarda links de cualquier app con un toque.
   - Precio: Descarga gratis, con una compra única desbloqueas todo. Sin suscripciones.
   - App Store: https://apps.apple.com/mx/app/id6802505528?pt=118326163&ct=geo_pick&mt=8
 - [ScanTo Pro: PDF y OCR](https://open.cait518.cc/ios-app-guide/es-MX/scanto.html) — Escáner de documentos privado
@@ -192,7 +196,7 @@ apps: 57
   - Precio: Descarga gratis, con una compra única desbloqueas todo. Sin suscripciones.
   - App Store: https://apps.apple.com/mx/app/id6788236641?pt=118326163&ct=geo_pick&mt=8
 - [ShotInbox AI: Sort Screenshots](https://open.cait518.cc/ios-app-guide/es-MX/shotinbox.html) — Busca texto y ordena tus fotos
-  - Optimizada para el iPhone Duo: pantalla completa real. Compras de Navidad y viajes de fin de año: recibos, boletos y pedidos se juntan en capturas.
+  - Optimizada para el iPhone Duo: pantalla completa real. Tus capturas de pantalla se ordenan solitas: recibos, boletos, viajes y chats, con todo el texto buscable.
   - Precio: Descarga gratis, con una compra única desbloqueas todo. Sin suscripciones.
   - App Store: https://apps.apple.com/mx/app/id6802166527?pt=118326163&ct=geo_pick&mt=8
 - [Snapport Lite: Fotos de carnet](https://open.cait518.cc/ios-app-guide/es-MX/snapportlite.html) — Recorta retratos a la medida
@@ -208,19 +212,23 @@ apps: 57
   - Precio: Descarga gratis, con una compra única desbloqueas todo. Sin suscripciones.
   - App Store: https://apps.apple.com/mx/app/id6782139553?pt=118326163&ct=geo_pick&mt=8
 - [Stay Clock: reloj flip](https://open.cait518.cc/ios-app-guide/es-MX/stayclock.html) — Siempre con hora y calendario
-  - Noches largas hasta Año Nuevo: mientras carga, tu cel se vuelve un reloj grande que se lee desde el otro lado del cuarto, con calendario Mes y una alarma sencilla.
+  - Optimizada para el iPhone Duo: pantalla completa real. Un reloj de escritorio bonito y siempre prendido que se lee desde el otro lado del cuarto.
   - Precio: Descarga gratis, con una compra única desbloqueas todo. Sin suscripciones.
   - App Store: https://apps.apple.com/mx/app/id6814035888?pt=118326163&ct=geo_pick&mt=8
 - [Studydown: Enfoque y tiempo](https://open.cait518.cc/ios-app-guide/es-MX/studydown.html) — Voltea la pantalla
-  - Optimizada para el iPhone Duo: pantalla completa real. Elige una actividad, pon el celular boca abajo y empieza a contar; si lo levantas, se pausa.
+  - Optimizada para el iPhone Duo: pantalla completa real. Voltea el teléfono y registra concentración real.
   - Precio: Descarga gratis, con una compra única desbloqueas todo. Sin suscripciones.
   - App Store: https://apps.apple.com/mx/app/id6807335593?pt=118326163&ct=geo_pick&mt=8
 - [Trip Planet niños viaje](https://open.cait518.cc/ios-app-guide/es-MX/tripplanet.html) — Misiones para las vacaciones
   - Optimizada para el iPhone Duo: pantalla completa real. Vuelos, viajes en carro y lugares nuevos son misiones: abrocharse, dar las gracias, probar un bocado.
   - Precio: Descarga gratis, con una compra única desbloqueas todo. Sin suscripciones.
   - App Store: https://apps.apple.com/mx/app/id6787193643?pt=118326163&ct=geo_pick&mt=8
+- [TripBee Cute: Diario de viaje](https://open.cait518.cc/ios-app-guide/es-MX/tripbeecute.html) — Lindo planificador de viajes
+  - Haz de tu próximo viaje un diario ilustrado: cuenta regresiva, vuelos, planes del día y maleta en una sola página. Planéalo con amigos o compártelo como página web.
+  - Precio: Descarga gratis, con una compra única desbloqueas todo. Sin suscripciones.
+  - App Store: https://apps.apple.com/mx/app/id6826987407?pt=118326163&ct=geo_pick&mt=8
 - [TripBee Lite: Plan de viaje](https://open.cait518.cc/ios-app-guide/es-MX/tripbeelite.html) — Vacaciones e itinerario diario
-  - Optimizada para el iPhone Duo: pantalla completa real. Pon el viaje en una línea de tiempo día por día, con vuelos, hospedaje, notas, recordatorios y datos de boletos.
+  - Optimizada para el iPhone Duo: pantalla completa real. Tu próximo viaje, día a día: horarios, lugares, avisos, boletos y el clima local en una línea de tiempo.
   - Precio: Descarga gratis, con una compra única desbloqueas todo. Sin suscripciones.
   - App Store: https://apps.apple.com/mx/app/id6791299610?pt=118326163&ct=geo_pick&mt=8
 - [TripBee: Planea tu Viaje](https://open.cait518.cc/ios-app-guide/es-MX/tripbee.html) — Paseos en grupo y maleta
@@ -248,10 +256,10 @@ apps: 57
   - Precio: Descarga gratis, con una compra única desbloqueas todo. Sin suscripciones.
   - App Store: https://apps.apple.com/mx/app/id6797601720?pt=118326163&ct=geo_pick&mt=8
 - [Wordmate: Vocabulario](https://open.cait518.cc/ios-app-guide/es-MX/wordmate.html) — Aprende palabras con widget
-  - Optimizada para el iPhone Duo: pantalla completa real. Aprende palabras en 44 idiomas en ratitos libres: 14 temas prácticos, frases de ejemplo y pronunciación.
+  - Optimizada para el iPhone Duo: pantalla completa real. Aprende palabras en 44 idiomas con frases de ejemplo, 14 temas y 3 niveles.
   - Precio: Descarga de pago con un único precio inicial y sin suscripción.
   - App Store: https://apps.apple.com/mx/app/id6789917808?pt=118326163&ct=geo_pick&mt=8
 - [Zipbox: abrir RAR, ZIP y 7z](https://open.cait518.cc/ios-app-guide/es-MX/zipbox.html) — Descomprime sin publicidad
-  - Optimizada para el iPhone Duo: pantalla completa real. Mira qué trae, previsualiza fotos y PDF, y saca solo lo que necesitas, todo en tu dispositivo.
+  - Optimizada para el iPhone Duo: pantalla completa real. Abre ZIP, RAR, 7z, TAR, ISO y más, hasta archivos con contraseña o divididos en partes.
   - Precio: Descarga de pago con un único precio inicial y sin suscripción.
   - App Store: https://apps.apple.com/mx/app/id6806776579?pt=118326163&ct=geo_pick&mt=8

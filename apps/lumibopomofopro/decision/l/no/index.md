@@ -18,7 +18,7 @@ Tospråklige barn som lærer Zhuyin hjemme trenger en komplett vei gjennom lyder
 - Ingen konto
 - Ingen annonser
 - Privat / på enheten
-- App Store · 99,00 kr
+- App Store · Gratis
 
 [Få Lumi Bopomofo Pro på App Store →](https://apps.apple.com/no/app/id6775773117?pt=118326163&ct=geo_pick&mt=8)
 

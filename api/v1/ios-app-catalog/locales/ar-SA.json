@@ -1,12 +1,12 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-11-04",
-  "content_digest": "d41bfe7e156aabee8cf16c8afd333da7f2ca1d1367dc4352339ff83f32cded2b",
+  "date_modified": "2026-11-05",
+  "content_digest": "cfd8097e2d160bb22da9f0415e9bc3c45e093acb6a1c2a6fc701a91301d98006",
   "locale": "ar-SA",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 57,
+  "record_count": 59,
   "apps": [
     {
       "key": "notesstudio100",
@@ -396,9 +396,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/ar-SA/dailymate.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "29.99",
+        "price": "49.99",
         "currency": "SAR",
-        "formatted_price": "SAR 29.99",
+        "formatted_price": "SAR 49.99",
         "storefront_url": "https://apps.apple.com/sa/app/id6790418321"
       }
     },
@@ -626,9 +626,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/ar-SA/gmoney.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "12.99",
+        "price": "19.99",
         "currency": "SAR",
-        "formatted_price": "SAR 12.99",
+        "formatted_price": "SAR 19.99",
         "storefront_url": "https://apps.apple.com/sa/app/id6755782939"
       }
     },
@@ -707,9 +707,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/ar-SA/gbago.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "20",
+        "price": "39.99",
         "currency": "SAR",
-        "formatted_price": "SAR 20.00",
+        "formatted_price": "SAR 39.99",
         "storefront_url": "https://apps.apple.com/sa/app/id6804564400"
       }
     },
@@ -975,9 +975,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/ar-SA/lumibopomofopro.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "39.99",
+        "price": "0",
         "currency": "SAR",
-        "formatted_price": "SAR 39.99",
+        "formatted_price": "مجاني",
         "storefront_url": "https://apps.apple.com/sa/app/id6775773117"
       }
     },
@@ -1330,6 +1330,53 @@
       }
     },
     {
+      "key": "foldparty",
+      "app_store_id": "6829184924",
+      "name": "Meow Party: العاب شخصين",
+      "summary": "تبحث عن لعبة سريعة تلعبها مع صديق على جوال واحد، حتى بدون نت؟ Meow Party يجمع 200 لعبة قطط صغيرة ولطيفة، وعلى الشاشة القابلة للطي يصبح الطي نفسه جزءا من اللعب. تم تحسين اللعبة لشاشة iPhone Duo القابلة للطي لتكون أمتع عند الطي، ويمكن لعبها بالكامل على أي iPhone عادي أيضا.",
+      "category": "other",
+      "search_terms": [
+        "بدون",
+        "نت",
+        "انترنت",
+        "اوفلاين",
+        "لشخصين",
+        "اثنين",
+        "ثنائية",
+        "لاعبين",
+        "قطة",
+        "كيوت",
+        "ذكاء",
+        "الغاز",
+        "تحدي",
+        "طبخ",
+        "تلبيس",
+        "مسلية",
+        "جوال",
+        "طي"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/sa/app/id6829184924?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/ar-SA/foldparty.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "24.99",
+        "currency": "SAR",
+        "formatted_price": "SAR 24.99",
+        "storefront_url": "https://apps.apple.com/sa/app/id6829184924"
+      }
+    },
+    {
       "key": "metrotimehelper",
       "app_store_id": "6819061896",
       "name": "مساعد وقت المترو: تايبيه",
@@ -1369,9 +1416,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/ar-SA/metrotimehelper.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "0",
+        "price": "12.99",
         "currency": "SAR",
-        "formatted_price": "مجاني",
+        "formatted_price": "SAR 12.99",
         "storefront_url": "https://apps.apple.com/sa/app/id6819061896"
       }
     },
@@ -1902,9 +1949,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/ar-SA/snapport.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "12.99",
+        "price": "24.99",
         "currency": "SAR",
-        "formatted_price": "SAR 12.99",
+        "formatted_price": "SAR 24.99",
         "storefront_url": "https://apps.apple.com/sa/app/id6780575828"
       }
     },
@@ -2121,6 +2168,53 @@
       }
     },
     {
+      "key": "tripbeecute",
+      "app_store_id": "6826987407",
+      "name": "TripBee Cute: يوميات سفر",
+      "summary": "تذاكر في لقطات الشاشة، ومواعيد ضائعة في المحادثات، وقائمة أمتعة على ورقة صغيرة: يجمع TripBee Cute كل ذلك في كتيب مصور لطيف، كتيب خاص لكل رحلة. على رفّك، لكل رحلة غلافها المصور. افتحه لتجد الرحلة كلها في صفحة واحدة: الغلاف، والعد التنازلي للمغادرة، والرحلات الجوية، وبرنامج كل يوم، والتجهيزات. ورق بلون الكريم وخطوط واضحة ورسومات لطيفة.",
+      "category": "travel",
+      "search_terms": [
+        "مخطط",
+        "تخطيط",
+        "رحلة",
+        "سياحة",
+        "اجازة",
+        "عطلة",
+        "عد",
+        "تنازلي",
+        "جدول",
+        "شنطة",
+        "امتعة",
+        "قائمة",
+        "مفكرة",
+        "ذكريات",
+        "دفتر",
+        "تنظيم",
+        "ويدجت",
+        "كيوت"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/sa/app/id6826987407?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/ar-SA/tripbeecute.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "SAR",
+        "formatted_price": "مجاني",
+        "storefront_url": "https://apps.apple.com/sa/app/id6826987407"
+      }
+    },
+    {
       "key": "tripbeelite",
       "app_store_id": "6791299610",
       "name": "TripBee Lite: مخطط رحلة",
@@ -2203,9 +2297,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/ar-SA/tripbee.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "12.99",
+        "price": "24.99",
         "currency": "SAR",
-        "formatted_price": "SAR 12.99",
+        "formatted_price": "SAR 24.99",
         "storefront_url": "https://apps.apple.com/sa/app/id6787754435"
       }
     },
@@ -2333,9 +2427,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/ar-SA/wifiaid.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "12.99",
+        "price": "24.99",
         "currency": "SAR",
-        "formatted_price": "SAR 12.99",
+        "formatted_price": "SAR 24.99",
         "storefront_url": "https://apps.apple.com/sa/app/id6790467886"
       }
     },
@@ -2468,9 +2562,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/ar-SA/wordmate.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "20",
+        "price": "39.99",
         "currency": "SAR",
-        "formatted_price": "SAR 20.00",
+        "formatted_price": "SAR 39.99",
         "storefront_url": "https://apps.apple.com/sa/app/id6789917808"
       }
     },
@@ -2514,9 +2608,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/ar-SA/zipbox.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "12.99",
+        "price": "19.99",
         "currency": "SAR",
-        "formatted_price": "SAR 12.99",
+        "formatted_price": "SAR 19.99",
         "storefront_url": "https://apps.apple.com/sa/app/id6806776579"
       }
     }

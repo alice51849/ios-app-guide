@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - କୌଣସି ବିଜ୍ଞାପନ ନାହିଁ
 - କୌଣସି ଟ୍ରାକିଂ ନାହିଁ
 - ଗୋପନୀୟ / ଉପକରଣରେ
-- App Store · ₹ 349
+- App Store · ₹ 599
 
 [App Store ରୁ TripBee Pro: Trip Planner ଡାଉନଲୋଡ୍ କରନ୍ତୁ →](https://apps.apple.com/in/app/id6787754435?pt=118326163&ct=geo_pick&mt=8)
 

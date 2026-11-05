@@ -1,12 +1,12 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-11-04",
-  "content_digest": "d41bfe7e156aabee8cf16c8afd333da7f2ca1d1367dc4352339ff83f32cded2b",
+  "date_modified": "2026-11-05",
+  "content_digest": "cfd8097e2d160bb22da9f0415e9bc3c45e093acb6a1c2a6fc701a91301d98006",
   "locale": "th",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 57,
+  "record_count": 59,
   "apps": [
     {
       "key": "notesstudio100",
@@ -362,9 +362,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/th/dailymate.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "229",
+        "price": "399",
         "currency": "THB",
-        "formatted_price": "฿229.00",
+        "formatted_price": "฿399.00",
         "storefront_url": "https://apps.apple.com/th/app/id6790418321"
       }
     },
@@ -573,9 +573,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/th/gmoney.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "119",
+        "price": "199",
         "currency": "THB",
-        "formatted_price": "฿119.00",
+        "formatted_price": "฿199.00",
         "storefront_url": "https://apps.apple.com/th/app/id6755782939"
       }
     },
@@ -651,9 +651,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/th/gbago.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "199",
+        "price": "299",
         "currency": "THB",
-        "formatted_price": "฿199.00",
+        "formatted_price": "฿299.00",
         "storefront_url": "https://apps.apple.com/th/app/id6804564400"
       }
     },
@@ -896,9 +896,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/th/lumibopomofopro.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "299",
+        "price": "0",
         "currency": "THB",
-        "formatted_price": "฿299.00",
+        "formatted_price": "ฟรี",
         "storefront_url": "https://apps.apple.com/th/app/id6775773117"
       }
     },
@@ -1235,6 +1235,50 @@
       }
     },
     {
+      "key": "foldparty",
+      "app_store_id": "6829184924",
+      "name": "ปาร์ตี้เหมียว: เกมแมว 2 คน",
+      "summary": "เบื่อเกมที่ต้องต่อเน็ตและต้องใช้มือถือสองเครื่องใช่ไหม ปาร์ตี้เหมียวรวม 200 มินิเกมแมวน่ารักที่ปรับให้เหมาะกับจอพับของ iPhone Duo การพับจอคือส่วนหนึ่งของการเล่น พับแล้วยิ่งสนุก และยังเล่นได้ครบทุกเกมบน iPhone ทั่วไป เกมส่วนใหญ่เล่นคนเดียวได้ และมี 54 เกมให้สองคนเล่นบนเครื่องเดียว",
+      "category": "other",
+      "search_terms": [
+        "สอง",
+        "เล่น",
+        "เพื่อน",
+        "แฟน",
+        "คู่",
+        "ออฟไลน์",
+        "ไม่ใช้เน็ต",
+        "น่ารัก",
+        "ทำอาหาร",
+        "แต่งตัว",
+        "ปริศนา",
+        "ฝึกสมอง",
+        "ผ่อนคลาย",
+        "จังหวะ",
+        "สวน"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/th/app/id6829184924?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/th/foldparty.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "199",
+        "currency": "THB",
+        "formatted_price": "฿199.00",
+        "storefront_url": "https://apps.apple.com/th/app/id6829184924"
+      }
+    },
+    {
       "key": "metrotimehelper",
       "app_store_id": "6819061896",
       "name": "ผู้ช่วยเวลารถไฟฟ้า MRT ไทเป",
@@ -1268,9 +1312,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/th/metrotimehelper.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "0",
+        "price": "99",
         "currency": "THB",
-        "formatted_price": "ฟรี",
+        "formatted_price": "฿99.00",
         "storefront_url": "https://apps.apple.com/th/app/id6819061896"
       }
     },
@@ -1315,7 +1359,7 @@
         "currency": "THB",
         "formatted_price": "ฟรี",
         "rating_value": 5.0,
-        "rating_count": 2,
+        "rating_count": 3,
         "storefront_url": "https://apps.apple.com/th/app/id6785004775"
       }
     },
@@ -1759,9 +1803,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/th/snapport.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "129",
+        "price": "199",
         "currency": "THB",
-        "formatted_price": "฿129.00",
+        "formatted_price": "฿199.00",
         "storefront_url": "https://apps.apple.com/th/app/id6780575828"
       }
     },
@@ -1963,6 +2007,46 @@
       }
     },
     {
+      "key": "tripbeecute",
+      "app_store_id": "6826987407",
+      "name": "TripBee Cute: สมุดทริปน่ารัก",
+      "summary": "ไม่ต้องไล่หาแผนทริปที่กระจัดกระจายอยู่ในแชต โน้ต และภาพแคปหน้าจออีกต่อไป TripBee Cute รวมทั้งทริปไว้ในสมุดเล่มเล็กที่มีปกภาพประกอบน่ารัก เปิดมาหน้าเดียวก็เห็นครบ ตั้งแต่นับถอยหลังจนถึงของที่ต้องพก",
+      "category": "travel",
+      "search_terms": [
+        "วางแผน",
+        "ท่องเที่ยว",
+        "นับถอยหลัง",
+        "จัดกระเป๋า",
+        "ไดอารี่",
+        "ญี่ปุ่น",
+        "เดินทาง",
+        "บันทึก",
+        "แพลนเนอร์",
+        "วิดเจ็ต",
+        "เช็คลิสต์"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/th/app/id6826987407?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/th/tripbeecute.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "THB",
+        "formatted_price": "ฟรี",
+        "storefront_url": "https://apps.apple.com/th/app/id6826987407"
+      }
+    },
+    {
       "key": "tripbeelite",
       "app_store_id": "6791299610",
       "name": "TripBee Lite: แผนเที่ยว",
@@ -2037,9 +2121,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/th/tripbee.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "129",
+        "price": "199",
         "currency": "THB",
-        "formatted_price": "฿129.00",
+        "formatted_price": "฿199.00",
         "storefront_url": "https://apps.apple.com/th/app/id6787754435"
       }
     },
@@ -2164,9 +2248,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/th/wifiaid.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "129",
+        "price": "199",
         "currency": "THB",
-        "formatted_price": "฿129.00",
+        "formatted_price": "฿199.00",
         "storefront_url": "https://apps.apple.com/th/app/id6790467886"
       }
     },
@@ -2287,9 +2371,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/th/wordmate.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "199",
+        "price": "299",
         "currency": "THB",
-        "formatted_price": "฿199.00",
+        "formatted_price": "฿299.00",
         "storefront_url": "https://apps.apple.com/th/app/id6789917808"
       }
     },
@@ -2330,9 +2414,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/th/zipbox.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "129",
+        "price": "199",
         "currency": "THB",
-        "formatted_price": "฿129.00",
+        "formatted_price": "฿199.00",
         "storefront_url": "https://apps.apple.com/th/app/id6806776579"
       }
     }

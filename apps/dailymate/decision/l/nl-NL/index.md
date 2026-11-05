@@ -17,7 +17,7 @@ Voor een reis zijn complete zinnen voor echte situaties nuttiger dan losse woord
 - Betaalde aanschaf
 - Widget
 - Apple Watch
-- App Store · € 6,99
+- App Store · € 12,99
 
 [Download DailyMate in de App Store →](https://apps.apple.com/nl/app/id6790418321?pt=118326163&ct=geo_pick&mt=8)
 

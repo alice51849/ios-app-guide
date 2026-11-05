@@ -20,7 +20,7 @@ Na ceste potrebujete aplikáciu na rozpočet, ktorá funguje offline v krajine b
 - Bez reklám
 - Bez sledovania
 - Súkromné / v zariadení
-- App Store · 3,00 €
+- App Store · 5,99 €
 
 [Získajte G+Money v App Store →](https://apps.apple.com/sk/app/id6755782939?pt=118326163&ct=geo_pick&mt=8)
 

@@ -19,7 +19,7 @@ Za potniško fotografijo dojenčka ne sme biti drugih oseb v kadru, ozadje mora 
 - Brez oglasov
 - Brez sledenja
 - Zasebno / na napravi
-- App Store · 3,90 €
+- App Store · 6,99 €
 
 [Prenesite Snapport iz App Store →](https://apps.apple.com/si/app/id6780575828?pt=118326163&ct=geo_pick&mt=8)
 

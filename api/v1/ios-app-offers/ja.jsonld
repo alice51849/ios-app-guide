@@ -6,8 +6,8 @@
   "name": "Lumi Studio 開発元検索意図カタログ",
   "description": "各アプリの対象ユーザー、達成したいタスク、App Store への直接の導線を、開発元が公開するカタログです。",
   "inLanguage": "ja",
-  "dateModified": "2026-11-04",
-  "numberOfItems": 57,
+  "dateModified": "2026-11-05",
+  "numberOfItems": 59,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
     {
@@ -1385,9 +1385,9 @@
               "value": true
             }
           ],
-          "isAccessibleForFree": false
+          "isAccessibleForFree": true
         },
-        "price": "1500",
+        "price": "0",
         "priceCurrency": "JPY",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {
@@ -2983,6 +2983,72 @@
     {
       "@type": "ListItem",
       "position": 46,
+      "url": "https://apps.apple.com/jp/app/id6826987407?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-tripbeecute",
+        "url": "https://apps.apple.com/jp/app/id6826987407?pt=118326163&ct=geo_pick&mt=8",
+        "name": "TripBee Cute：かわいい旅のしおり",
+        "description": "スクショやメール、メモに散らばった旅の予定を、TripBee Cuteがかわいいイラストの旅のしおり1冊にまとめます。カウントダウンもフライトも毎日の予定も持ち物も、1ページで全部見渡せます。",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6826987407",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6826987407"
+          },
+          "name": "TripBee Cute：かわいい旅のしおり",
+          "operatingSystem": "iOS",
+          "applicationCategory": "TravelApplication",
+          "url": "https://apps.apple.com/jp/app/id6826987407?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/jp/app/id6826987407?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/jp/app/id6826987407?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/jp/app/id6826987407?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ja/tripbeecute.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6826987407",
+          "inLanguage": "ja",
+          "description": "スクショやメール、メモに散らばった旅の予定を、TripBee Cuteがかわいいイラストの旅のしおり1冊にまとめます。カウントダウンもフライトも毎日の予定も持ち物も、1ページで全部見渡せます。",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-tripbeecute"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "JPY",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "JP"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 47,
       "url": "https://apps.apple.com/jp/app/id6791299610?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3048,7 +3114,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 47,
+      "position": 48,
       "url": "https://apps.apple.com/jp/app/id6787754435?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3114,7 +3180,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 48,
+      "position": 49,
       "url": "https://apps.apple.com/jp/app/id6782275018?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3180,7 +3246,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 49,
+      "position": 50,
       "url": "https://apps.apple.com/jp/app/id6818607603?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3246,7 +3312,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 50,
+      "position": 51,
       "url": "https://apps.apple.com/jp/app/id6790467886?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3312,7 +3378,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 51,
+      "position": 52,
       "url": "https://apps.apple.com/jp/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3378,7 +3444,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 52,
+      "position": 53,
       "url": "https://apps.apple.com/jp/app/id6797601720?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3444,7 +3510,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 53,
+      "position": 54,
       "url": "https://apps.apple.com/jp/app/id6789917808?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3510,7 +3576,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 54,
+      "position": 55,
       "url": "https://apps.apple.com/jp/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3576,7 +3642,73 @@
     },
     {
       "@type": "ListItem",
-      "position": 55,
+      "position": 56,
+      "url": "https://apps.apple.com/jp/app/id6829184924?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-foldparty",
+        "url": "https://apps.apple.com/jp/app/id6829184924?pt=118326163&ct=geo_pick&mt=8",
+        "name": "にゃんにゃんパーティー：2人で遊べるミニゲーム集",
+        "description": "折りたたみスマホを、ただの大きな画面で終わらせない。にゃんにゃんパーティーは「折る」ことそのものを遊びに変えます。かわいい猫が主役のオリジナルミニゲーム200種は、ほとんどがひとりで遊べて、54種は1台のスマホで2人向かい合って対戦や協力ができます。折りたたみスマホなら、折り目が球技のネットにも、センターライ",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6829184924",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6829184924"
+          },
+          "name": "にゃんにゃんパーティー：2人で遊べるミニゲーム集",
+          "operatingSystem": "iOS",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/jp/app/id6829184924?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/jp/app/id6829184924?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/jp/app/id6829184924?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/jp/app/id6829184924?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ja/foldparty.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6829184924",
+          "inLanguage": "ja",
+          "description": "折りたたみスマホを、ただの大きな画面で終わらせない。にゃんにゃんパーティーは「折る」ことそのものを遊びに変えます。かわいい猫が主役のオリジナルミニゲーム200種は、ほとんどがひとりで遊べて、54種は1台のスマホで2人向かい合って対戦や協力ができます。折りたたみスマホなら、折り目が球技のネットにも、センターライ",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-foldparty"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "1000",
+        "priceCurrency": "JPY",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "JP"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 57,
       "url": "https://apps.apple.com/jp/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3642,7 +3774,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 56,
+      "position": 58,
       "url": "https://apps.apple.com/jp/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3695,9 +3827,9 @@
               "value": true
             }
           ],
-          "isAccessibleForFree": true
+          "isAccessibleForFree": false
         },
-        "price": "0",
+        "price": "500",
         "priceCurrency": "JPY",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {
@@ -3708,7 +3840,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 57,
+      "position": 59,
       "url": "https://apps.apple.com/jp/app/id6824946559?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",

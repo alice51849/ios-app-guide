@@ -6,8 +6,8 @@
   "name": "Lumi Studio 開發者搜尋意圖目錄",
   "description": "第一方目錄，說明每款 App 的適合對象、想完成的任務，以及 App Store 下載入口。",
   "inLanguage": "zh-Hant",
-  "dateModified": "2026-11-04",
-  "numberOfItems": 57,
+  "dateModified": "2026-11-05",
+  "numberOfItems": 59,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
     {
@@ -595,7 +595,7 @@
           ],
           "isAccessibleForFree": false
         },
-        "price": "220",
+        "price": "390",
         "priceCurrency": "TWD",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {
@@ -859,7 +859,7 @@
           ],
           "isAccessibleForFree": false
         },
-        "price": "90",
+        "price": "150",
         "priceCurrency": "TWD",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {
@@ -991,7 +991,7 @@
           ],
           "isAccessibleForFree": false
         },
-        "price": "150",
+        "price": "290",
         "priceCurrency": "TWD",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {
@@ -1385,9 +1385,9 @@
               "value": true
             }
           ],
-          "isAccessibleForFree": false
+          "isAccessibleForFree": true
         },
-        "price": "290",
+        "price": "0",
         "priceCurrency": "TWD",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {
@@ -2707,7 +2707,7 @@
           ],
           "isAccessibleForFree": false
         },
-        "price": "120",
+        "price": "190",
         "priceCurrency": "TWD",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {
@@ -3049,6 +3049,72 @@
     {
       "@type": "ListItem",
       "position": 47,
+      "url": "https://apps.apple.com/tw/app/id6826987407?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hant.jsonld#offer-tripbeecute",
+        "url": "https://apps.apple.com/tw/app/id6826987407?pt=118326163&ct=geo_pick&mt=8",
+        "name": "TripBee Cute：可愛旅行手帳",
+        "description": "不用再翻截圖、訂位信和備忘錄找資料：TripBee Cute 把整趟旅行收進一本可愛的插畫手冊，出國倒數、航班、每日行程和行李清單都在同一頁。",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6826987407",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6826987407"
+          },
+          "name": "TripBee Cute：可愛旅行手帳",
+          "operatingSystem": "iOS",
+          "applicationCategory": "TravelApplication",
+          "url": "https://apps.apple.com/tw/app/id6826987407?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/tw/app/id6826987407?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/tw/app/id6826987407?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/tw/app/id6826987407?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/zh-Hant/tripbeecute.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6826987407",
+          "inLanguage": "zh-Hant",
+          "description": "不用再翻截圖、訂位信和備忘錄找資料：TripBee Cute 把整趟旅行收進一本可愛的插畫手冊，出國倒數、航班、每日行程和行李清單都在同一頁。",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hant.jsonld#offer-tripbeecute"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "TWD",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "TW"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 48,
       "url": "https://apps.apple.com/tw/app/id6791299610?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3114,7 +3180,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 48,
+      "position": 49,
       "url": "https://apps.apple.com/tw/app/id6787754435?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3169,7 +3235,7 @@
           ],
           "isAccessibleForFree": false
         },
-        "price": "120",
+        "price": "190",
         "priceCurrency": "TWD",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {
@@ -3180,7 +3246,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 49,
+      "position": 50,
       "url": "https://apps.apple.com/tw/app/id6782275018?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3246,7 +3312,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 50,
+      "position": 51,
       "url": "https://apps.apple.com/tw/app/id6818607603?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3312,7 +3378,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 51,
+      "position": 52,
       "url": "https://apps.apple.com/tw/app/id6790467886?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3367,7 +3433,7 @@
           ],
           "isAccessibleForFree": false
         },
-        "price": "120",
+        "price": "190",
         "priceCurrency": "TWD",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {
@@ -3378,7 +3444,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 52,
+      "position": 53,
       "url": "https://apps.apple.com/tw/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3444,7 +3510,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 53,
+      "position": 54,
       "url": "https://apps.apple.com/tw/app/id6797601720?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3510,7 +3576,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 54,
+      "position": 55,
       "url": "https://apps.apple.com/tw/app/id6789917808?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3565,7 +3631,7 @@
           ],
           "isAccessibleForFree": false
         },
-        "price": "150",
+        "price": "290",
         "priceCurrency": "TWD",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {
@@ -3576,7 +3642,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 55,
+      "position": 56,
       "url": "https://apps.apple.com/tw/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3631,7 +3697,7 @@
           ],
           "isAccessibleForFree": false
         },
-        "price": "90",
+        "price": "150",
         "priceCurrency": "TWD",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {
@@ -3642,7 +3708,73 @@
     },
     {
       "@type": "ListItem",
-      "position": 56,
+      "position": 57,
+      "url": "https://apps.apple.com/tw/app/id6829184924?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hant.jsonld#offer-foldparty",
+        "url": "https://apps.apple.com/tw/app/id6829184924?pt=118326163&ct=geo_pick&mt=8",
+        "name": "喵喵派對：雙人遊戲 貓咪小遊戲",
+        "description": "摺疊手機只當成大一點的螢幕太可惜了，喵喵派對直接把「摺」變成玩法。200 款原創可愛貓咪小遊戲，大多數一個人就能挑戰，其中 54 款支援兩人用同一支手機面對面對戰或合作；在摺疊手機上，摺痕會變成球網、中線或鏡子。為 iPhone Duo 摺疊螢幕最佳化，摺起來更好玩；一般 iPhone 也能完整遊玩。",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6829184924",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6829184924"
+          },
+          "name": "喵喵派對：雙人遊戲 貓咪小遊戲",
+          "operatingSystem": "iOS",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/tw/app/id6829184924?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/tw/app/id6829184924?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/tw/app/id6829184924?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/tw/app/id6829184924?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/zh-Hant/foldparty.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6829184924",
+          "inLanguage": "zh-Hant",
+          "description": "摺疊手機只當成大一點的螢幕太可惜了，喵喵派對直接把「摺」變成玩法。200 款原創可愛貓咪小遊戲，大多數一個人就能挑戰，其中 54 款支援兩人用同一支手機面對面對戰或合作；在摺疊手機上，摺痕會變成球網、中線或鏡子。為 iPhone Duo 摺疊螢幕最佳化，摺起來更好玩；一般 iPhone 也能完整遊玩。",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hant.jsonld#offer-foldparty"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "190",
+        "priceCurrency": "TWD",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "TW"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 58,
       "url": "https://apps.apple.com/tw/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3695,9 +3827,9 @@
               "value": true
             }
           ],
-          "isAccessibleForFree": true
+          "isAccessibleForFree": false
         },
-        "price": "0",
+        "price": "90",
         "priceCurrency": "TWD",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {
@@ -3708,7 +3840,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 57,
+      "position": 59,
       "url": "https://apps.apple.com/tw/app/id6824946559?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",

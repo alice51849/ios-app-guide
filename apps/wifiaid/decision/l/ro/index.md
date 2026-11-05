@@ -17,7 +17,7 @@ Optimizată pentru iPhone Duo. Creată cu cel mai recent SDK, aplicația umple t
 - Descărcare plătită
 - Fără cont
 - Apple Watch
-- App Store · 17,99 lei
+- App Store · 29,99 lei
 
 [Descarcă WiFi Aid: Diagnoză de rețea din App Store](https://apps.apple.com/ro/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)
 

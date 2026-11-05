@@ -19,7 +19,7 @@ Dobrá aplikace na itinerář promění chaotickou cestu v přehledný denní pl
 - Bez reklam
 - Bez sledování
 - Soukromé / v zařízení
-- App Store · 79,00 Kč
+- App Store · 149,00 Kč
 
 [Stáhněte TripBee Pro: Plánovač cest v App Store →](https://apps.apple.com/cz/app/id6787754435?pt=118326163&ct=geo_pick&mt=8)
 

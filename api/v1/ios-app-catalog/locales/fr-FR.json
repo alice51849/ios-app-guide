@@ -1,12 +1,12 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-11-04",
-  "content_digest": "d41bfe7e156aabee8cf16c8afd333da7f2ca1d1367dc4352339ff83f32cded2b",
+  "date_modified": "2026-11-05",
+  "content_digest": "cfd8097e2d160bb22da9f0415e9bc3c45e093acb6a1c2a6fc701a91301d98006",
   "locale": "fr-FR",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 57,
+  "record_count": 59,
   "apps": [
     {
       "key": "notesstudio100",
@@ -364,9 +364,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/fr-FR/dailymate.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "6.99",
+        "price": "12.99",
         "currency": "EUR",
-        "formatted_price": "6,99 €",
+        "formatted_price": "12,99 €",
         "storefront_url": "https://apps.apple.com/fr/app/id6790418321"
       }
     },
@@ -568,9 +568,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/fr-FR/gmoney.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "3",
+        "price": "5.99",
         "currency": "EUR",
-        "formatted_price": "3,00 €",
+        "formatted_price": "5,99 €",
         "storefront_url": "https://apps.apple.com/fr/app/id6755782939"
       }
     },
@@ -648,9 +648,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/fr-FR/gbago.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "5.99",
+        "price": "9.99",
         "currency": "EUR",
-        "formatted_price": "5,99 €",
+        "formatted_price": "9,99 €",
         "storefront_url": "https://apps.apple.com/fr/app/id6804564400"
       }
     },
@@ -889,9 +889,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/fr-FR/lumibopomofopro.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "9.99",
+        "price": "0",
         "currency": "EUR",
-        "formatted_price": "9,99 €",
+        "formatted_price": "Gratuit",
         "storefront_url": "https://apps.apple.com/fr/app/id6775773117"
       }
     },
@@ -1221,6 +1221,49 @@
       }
     },
     {
+      "key": "foldparty",
+      "app_store_id": "6829184924",
+      "name": "Meow Party: Mini-jeux de chat",
+      "summary": "La plupart des jeux mobiles se jouent en solo, sur un écran plat, mais Meow Party transforme ton téléphone pliable en fête de chats avec 200 mini-jeux adorables, la plupart à jouer seul, dont 54 à deux sur un seul appareil. Le jeu est optimisé pour l'iPhone Duo pliable : il est encore plus fun quand on le plie. Et sur n'importe quel autre iPhone, tout reste entièrement jouable.",
+      "category": "other",
+      "search_terms": [
+        "2",
+        "joueurs",
+        "téléphone",
+        "même",
+        "sans",
+        "wifi",
+        "connexion",
+        "internet",
+        "chaton",
+        "mignon",
+        "puzzle",
+        "réflexion",
+        "amis",
+        "deux"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/fr/app/id6829184924?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/fr-FR/foldparty.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "6.99",
+        "currency": "EUR",
+        "formatted_price": "6,99 €",
+        "storefront_url": "https://apps.apple.com/fr/app/id6829184924"
+      }
+    },
+    {
       "key": "metrotimehelper",
       "app_store_id": "6819061896",
       "name": "Taipei · Assistant Métro",
@@ -1255,9 +1298,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/fr-FR/metrotimehelper.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "0",
+        "price": "2.99",
         "currency": "EUR",
-        "formatted_price": "Gratuit",
+        "formatted_price": "2,99 €",
         "storefront_url": "https://apps.apple.com/fr/app/id6819061896"
       }
     },
@@ -1745,9 +1788,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/fr-FR/snapport.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "3.9",
+        "price": "6.99",
         "currency": "EUR",
-        "formatted_price": "3,90 €",
+        "formatted_price": "6,99 €",
         "storefront_url": "https://apps.apple.com/fr/app/id6780575828"
       }
     },
@@ -1954,6 +1997,47 @@
       }
     },
     {
+      "key": "tripbeecute",
+      "app_store_id": "6826987407",
+      "name": "TripBee Cute: Carnet de voyage",
+      "summary": "Fini les réservations éparpillées entre e-mails, captures d'écran et notes : TripBee Cute transforme chaque voyage en un joli carnet illustré où compte à rebours, vols, journées et valise tiennent sur une seule page.",
+      "category": "travel",
+      "search_terms": [
+        "journal",
+        "compte",
+        "rebours",
+        "itinéraire",
+        "organisateur",
+        "valise",
+        "bagages",
+        "liste",
+        "vacances",
+        "widget",
+        "partage",
+        "planning"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/fr/app/id6826987407?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/fr-FR/tripbeecute.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratuit",
+        "storefront_url": "https://apps.apple.com/fr/app/id6826987407"
+      }
+    },
+    {
       "key": "tripbeelite",
       "app_store_id": "6791299610",
       "name": "TripBee Lite : Plan de voyage",
@@ -2030,9 +2114,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/fr-FR/tripbee.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "3.9",
+        "price": "6.99",
         "currency": "EUR",
-        "formatted_price": "3,90 €",
+        "formatted_price": "6,99 €",
         "storefront_url": "https://apps.apple.com/fr/app/id6787754435"
       }
     },
@@ -2154,9 +2238,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/fr-FR/wifiaid.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "3.9",
+        "price": "6.99",
         "currency": "EUR",
-        "formatted_price": "3,90 €",
+        "formatted_price": "6,99 €",
         "storefront_url": "https://apps.apple.com/fr/app/id6790467886"
       }
     },
@@ -2278,9 +2362,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/fr-FR/wordmate.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "5.99",
+        "price": "9.99",
         "currency": "EUR",
-        "formatted_price": "5,99 €",
+        "formatted_price": "9,99 €",
         "storefront_url": "https://apps.apple.com/fr/app/id6789917808"
       }
     },

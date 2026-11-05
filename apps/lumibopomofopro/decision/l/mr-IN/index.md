@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - खाते नाही
 - जाहिराती नाहीत
 - खाजगी / उपकरणावर
-- App Store · ₹ 999
+- App Store · मोफत
 
 [Lumi Bopomofo Pro App Store वर मिळवा →](https://apps.apple.com/in/app/id6775773117?pt=118326163&ct=geo_pick&mt=8)
 

@@ -20,7 +20,7 @@ En un viaje necesitas un rastreador de presupuesto que funcione offline en un pa
 - Sin anuncios
 - Sin rastreo
 - Privado / en el dispositivo
-- App Store · $59.00
+- App Store · $99.00
 
 [Obtén G+Money en la App Store →](https://apps.apple.com/mx/app/id6755782939?pt=118326163&ct=geo_pick&mt=8)
 

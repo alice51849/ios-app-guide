@@ -1,12 +1,12 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-11-04",
-  "content_digest": "d41bfe7e156aabee8cf16c8afd333da7f2ca1d1367dc4352339ff83f32cded2b",
+  "date_modified": "2026-11-05",
+  "content_digest": "cfd8097e2d160bb22da9f0415e9bc3c45e093acb6a1c2a6fc701a91301d98006",
   "locale": "el",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 57,
+  "record_count": 59,
   "apps": [
     {
       "key": "notesstudio100",
@@ -357,9 +357,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/el/dailymate.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "6.99",
+        "price": "12.99",
         "currency": "EUR",
-        "formatted_price": "6,99 €",
+        "formatted_price": "12,99 €",
         "storefront_url": "https://apps.apple.com/gr/app/id6790418321"
       }
     },
@@ -561,9 +561,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/el/gmoney.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "3",
+        "price": "5.99",
         "currency": "EUR",
-        "formatted_price": "3,00 €",
+        "formatted_price": "5,99 €",
         "storefront_url": "https://apps.apple.com/gr/app/id6755782939"
       }
     },
@@ -639,9 +639,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/el/gbago.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "5.99",
+        "price": "9.99",
         "currency": "EUR",
-        "formatted_price": "5,99 €",
+        "formatted_price": "9,99 €",
         "storefront_url": "https://apps.apple.com/gr/app/id6804564400"
       }
     },
@@ -879,9 +879,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/el/lumibopomofopro.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "9.99",
+        "price": "0",
         "currency": "EUR",
-        "formatted_price": "9,99 €",
+        "formatted_price": "Δωρεάν",
         "storefront_url": "https://apps.apple.com/gr/app/id6775773117"
       }
     },
@@ -1206,6 +1206,49 @@
       }
     },
     {
+      "key": "foldparty",
+      "app_store_id": "6829184924",
+      "name": "Meow Party: Παιχνίδια για 2",
+      "summary": "Ένα σύντομο και πραγματικά διασκεδαστικό παιχνίδι για το κινητό δύσκολα βρίσκεται, γι' αυτό το Meow Party φέρνει 200 μίνι παιχνίδια με χαριτωμένες γάτες και κάνει ακόμη και το δίπλωμα της οθόνης μέρος του παιχνιδιού. Είναι βελτιστοποιημένο για αναδιπλούμενες οθόνες όπως το iPhone Duo, όπου το δίπλωμα κάνει τα πάντα πιο διασκεδαστικά. Σε κάθε κανονικό iPhone παίζεται επίσης πλήρως.",
+      "category": "other",
+      "search_terms": [
+        "δύο",
+        "άτομα",
+        "παικτών",
+        "μίνι",
+        "πάρτι",
+        "γατάκια",
+        "χωρίς",
+        "ίντερνετ",
+        "offline",
+        "λογικής",
+        "κινητό",
+        "αναδιπλούμενο",
+        "παζλ",
+        "γάτες"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/gr/app/id6829184924?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/el/foldparty.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "6.99",
+        "currency": "EUR",
+        "formatted_price": "6,99 €",
+        "storefront_url": "https://apps.apple.com/gr/app/id6829184924"
+      }
+    },
+    {
       "key": "metrotimehelper",
       "app_store_id": "6819061896",
       "name": "Μετρό στην Ώρα – Ταϊπέι",
@@ -1240,9 +1283,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/el/metrotimehelper.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "0",
+        "price": "2.99",
         "currency": "EUR",
-        "formatted_price": "Δωρεάν",
+        "formatted_price": "2,99 €",
         "storefront_url": "https://apps.apple.com/gr/app/id6819061896"
       }
     },
@@ -1721,9 +1764,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/el/snapport.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "3.9",
+        "price": "6.99",
         "currency": "EUR",
-        "formatted_price": "3,90 €",
+        "formatted_price": "6,99 €",
         "storefront_url": "https://apps.apple.com/gr/app/id6780575828"
       }
     },
@@ -1922,6 +1965,47 @@
       }
     },
     {
+      "key": "tripbeecute",
+      "app_store_id": "6826987407",
+      "name": "TripBee Cute: Ταξίδι με Φίλους",
+      "summary": "Αντί για ένα πρόγραμμα ταξιδιού σκορπισμένο σε μηνύματα, στιγμιότυπα οθόνης και σημειώσεις, το TripBee Cute φτιάχνει για κάθε ταξίδι ένα χαριτωμένο εικονογραφημένο βιβλιαράκι, που μπορείτε να ετοιμάσετε και μαζί με φίλους.",
+      "category": "travel",
+      "search_terms": [
+        "πρόγραμμα",
+        "διακοπές",
+        "αντίστροφη",
+        "μέτρηση",
+        "βαλίτσα",
+        "λίστα",
+        "πτήση",
+        "εκδρομή",
+        "widget",
+        "ταξιδιωτικό",
+        "εισιτήρια",
+        "csv"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/gr/app/id6826987407?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/el/tripbeecute.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Δωρεάν",
+        "storefront_url": "https://apps.apple.com/gr/app/id6826987407"
+      }
+    },
+    {
       "key": "tripbeelite",
       "app_store_id": "6791299610",
       "name": "TripBee Lite: Πλάνο ταξιδιού",
@@ -1996,9 +2080,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/el/tripbee.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "3.9",
+        "price": "6.99",
         "currency": "EUR",
-        "formatted_price": "3,90 €",
+        "formatted_price": "6,99 €",
         "storefront_url": "https://apps.apple.com/gr/app/id6787754435"
       }
     },
@@ -2120,9 +2204,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/el/wifiaid.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "3.9",
+        "price": "6.99",
         "currency": "EUR",
-        "formatted_price": "3,90 €",
+        "formatted_price": "6,99 €",
         "storefront_url": "https://apps.apple.com/gr/app/id6790467886"
       }
     },
@@ -2241,9 +2325,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/el/wordmate.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "5.99",
+        "price": "9.99",
         "currency": "EUR",
-        "formatted_price": "5,99 €",
+        "formatted_price": "9,99 €",
         "storefront_url": "https://apps.apple.com/gr/app/id6789917808"
       }
     },
@@ -2283,9 +2367,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/el/zipbox.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "3",
+        "price": "5.99",
         "currency": "EUR",
-        "formatted_price": "3,00 €",
+        "formatted_price": "5,99 €",
         "storefront_url": "https://apps.apple.com/gr/app/id6806776579"
       }
     }

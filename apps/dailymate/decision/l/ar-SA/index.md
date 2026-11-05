@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - تحميل مدفوع
 - عنصر واجهة
 - Apple Watch
-- App Store · SAR 29.99
+- App Store · SAR 49.99
 
 [احصل على DailyMate من App Store →](https://apps.apple.com/sa/app/id6790418321?pt=118326163&ct=geo_pick&mt=8)
 

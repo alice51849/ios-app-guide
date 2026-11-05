@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - 无广告
 - 无跟踪
 - 私密 / 设备本地
-- App Store · ¥22.00
+- App Store · ¥38.00
 
 [在App Store获取Snapport →](https://apps.apple.com/cn/app/id6780575828?pt=118326163&ct=geo_pick&mt=8)
 

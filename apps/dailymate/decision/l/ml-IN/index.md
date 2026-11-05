@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - പണം നൽകേണ്ട ഡൗൺലോഡ്
 - വിഡ്ജറ്റ്
 - Apple Watch
-- App Store · ₹ 699
+- App Store · ₹ 1,199
 
 [App Store-ൽ നിന്ന് ഡെയിലിമേറ്റ് നേടുക →](https://apps.apple.com/in/app/id6790418321?pt=118326163&ct=geo_pick&mt=8)
 

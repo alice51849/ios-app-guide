@@ -3,7 +3,7 @@
 > Informació estructurada sobre les funcions, el preu i les preguntes freqüents de cada app per a iOS.
 
 locale: ca
-apps: 57
+apps: 59
 - Directori d’apps: https://open.cait518.cc/ios-app-guide/ca/tools/private-pay-once-iphone-app-finder.html
 - Directori d’apps · PWA: https://open.cait518.cc/ios-app-guide/ca/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ca.jsonld
@@ -28,7 +28,7 @@ apps: 57
 - Directori d’apps · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 
 - [100 Notes Studio: Pen & Paper](https://open.cait518.cc/ios-app-guide/ca/notesstudio100.html) — Quadern a mà, PDF i estudi
-  - De l’hivern als exàmens de gener: apunts a mà, PDF del temari subratllats, la gravació de la classe a la mateixa pàgina i repàs amb fitxes. Sense connexió i sense compte.
+  - Optimitzada per a l’iPhone Duo: pantalla completa real. Escriu a mà, tecleja, anota PDF i grava la classe a la mateixa pàgina, sense connexió. Repassa amb fitxes.
   - Preu: Descàrrega gratuïta. Amb una compra única desbloqueges totes les funcions, sense subscripció.
   - App Store: https://apps.apple.com/es/app/id6798813048?pt=118326163&ct=geo_pick&mt=8
 - [AI Brief: Fitxers a prompt IA](https://open.cait518.cc/ios-app-guide/ca/aibriefpack.html) — Crea prompts des de fitxers
@@ -60,7 +60,7 @@ apps: 57
   - Preu: Descàrrega gratuïta. Amb una compra única desbloqueges totes les funcions, sense subscripció.
   - App Store: https://apps.apple.com/es/app/id6782251621?pt=118326163&ct=geo_pick&mt=8
 - [DailyMate Lite: Parla avui](https://open.cait518.cc/ios-app-guide/ca/dailymatelite.html) — Guia de conversa per viatjar
-  - Optimitzada per a l’iPhone Duo: pantalla completa real. Entén què et diuen a l'aeroport, a l'hotel o al restaurant i aprèn la resposta natural.
+  - Optimitzada per a l’iPhone Duo. Aprèn qualsevol de 50 idiomes, no només un. Practica converses d'aeroport, hotel i cafè, i repassa cada dia la frase següent al giny.
   - Preu: Descàrrega gratuïta. Amb una compra única desbloqueges totes les funcions, sense subscripció.
   - App Store: https://apps.apple.com/es/app/id6794725568?pt=118326163&ct=geo_pick&mt=8
 - [DailyMate: frases quotidianes](https://open.cait518.cc/ios-app-guide/ca/dailymate.html) — Aprèn anglès, francès, alemany
@@ -80,7 +80,7 @@ apps: 57
   - Preu: Descàrrega gratuïta. Amb una compra única desbloqueges totes les funcions, sense subscripció.
   - App Store: https://apps.apple.com/es/app/id6824946559?pt=118326163&ct=geo_pick&mt=8
 - [G+Money Lite: Diners de viatge](https://open.cait518.cc/ios-app-guide/ca/gmoneylite.html) — Límit diari, rellotge i widget
-  - Nadal o Cap d'Any a l'estranger? Apunta les compres en moneda local i veu-les al moment en la teva, fixa un límit diari i converteix amb tipus en directe o manuals.
+  - Optimitzada per a l’iPhone Duo: pantalla completa real. Fixa un pressupost diari i mira què et queda avui al widget i a l'Apple Watch.
   - Preu: Descàrrega gratuïta. Amb una compra única desbloqueges totes les funcions, sense subscripció.
   - App Store: https://apps.apple.com/es/app/id6793436548?pt=118326163&ct=geo_pick&mt=8
 - [G+Money: Despeses i pressupost](https://open.cait518.cc/ios-app-guide/ca/gmoney.html) — Despeses de viatge i divises
@@ -88,11 +88,11 @@ apps: 57
   - Preu: Descàrrega de pagament amb un únic preu inicial i sense subscripció.
   - App Store: https://apps.apple.com/es/app/id6755782939?pt=118326163&ct=geo_pick&mt=8
 - [GBAGo: Partides visuals](https://open.cait518.cc/ios-app-guide/ca/gbago.html) — Mapa de rescat · Instantànies
-  - Mapa de recuperació · Partides visuals · Instantànies automàtiques · Exporta còpia de seguretat · .sav
+  - Optimitzada per a l’iPhone Duo: pantalla completa real. L'emulador que protegeix el teu progrés.
   - Preu: Descàrrega de pagament amb un únic preu inicial i sense subscripció.
   - App Store: https://apps.apple.com/es/app/id6804564400?pt=118326163&ct=geo_pick&mt=8
 - [HoursTag Lite: Preu en hores](https://open.cait518.cc/ios-app-guide/ca/hourstaglite.html) — Compra conscient: preu real
-  - Compres de final d'any: abans de comprar, mira el preu en hores de la teva feina, marca'l com a necessitat, desig o impuls i veu la feina darrere d'un objectiu.
+  - Optimitzada per a l’iPhone Duo: pantalla completa real. Abans de comprar, mira el preu en hores de la teva feina i etiqueta'l com a necessitat, desig o impuls.
   - Preu: Descàrrega gratuïta. Amb una compra única desbloqueges totes les funcions, sense subscripció.
   - App Store: https://apps.apple.com/es/app/id6794039979?pt=118326163&ct=geo_pick&mt=8
 - [HoursTag: Hores per comprar](https://open.cait518.cc/ios-app-guide/ca/hourstag.html) — Salari per hora i despeses
@@ -147,6 +147,10 @@ apps: 57
   - Optimitzada per a l’iPhone Duo: pantalla completa real. Detecta dades privades, tapa per sempre només el que triïs i elimina les metadades. Tot al dispositiu.
   - Preu: Descàrrega gratuïta. Amb una compra única desbloqueges totes les funcions, sense subscripció.
   - App Store: https://apps.apple.com/es/app/id6792850916?pt=118326163&ct=geo_pick&mt=8
+- [Meow Party: Jocs per a Dos](https://open.cait518.cc/ios-app-guide/ca/foldparty.html) — 200 minijocs al mòbil plegable
+  - Per a mòbils plegables: plega'l i diverteix-te més. A qualsevol iPhone es pot jugar tot. 200 minijocs de gatets, 54 per a dos en un sol mòbil, sense internet ni anuncis.
+  - Preu: Descàrrega de pagament amb un únic preu inicial i sense subscripció.
+  - App Store: https://apps.apple.com/es/app/id6829184924?pt=118326163&ct=geo_pick&mt=8
 - [Mochi DoneStamp: Última vegada](https://open.cait518.cc/ios-app-guide/ca/mochidonestamp.html) — Quan va ser? Avisos de casa
   - Optimitzada per a l’iPhone Duo: pantalla completa real. Prou de dubtar quan ho vas fer. Segella-ho: Mochi ho recorda i t'avisa quan torna a tocar.
   - Preu: Descàrrega gratuïta. Amb una compra única desbloqueges totes les funcions, sense subscripció.
@@ -176,7 +180,7 @@ apps: 57
   - Preu: Descàrrega gratuïta. Amb una compra única desbloqueges totes les funcions, sense subscripció.
   - App Store: https://apps.apple.com/es/app/id6806779853?pt=118326163&ct=geo_pick&mt=8
 - [SaveTag: marcadors amb IA](https://open.cait518.cc/ios-app-guide/ca/savetag.html) — Enllaços per llegir més tard
-  - Optimitzada per a l’iPhone Duo: pantalla completa real. Comparteix l'enllaç des de qualsevol app: s'etiqueta sol al dispositiu i el trobes pel sentit.
+  - Optimitzada per a l’iPhone Duo: pantalla completa real. Desa un enllaç de qualsevol app amb un toc.
   - Preu: Descàrrega gratuïta. Amb una compra única desbloqueges totes les funcions, sense subscripció.
   - App Store: https://apps.apple.com/es/app/id6802505528?pt=118326163&ct=geo_pick&mt=8
 - [ScanTo Pro: PDF i OCR](https://open.cait518.cc/ios-app-guide/ca/scanto.html) — Escàner de documents privat
@@ -188,7 +192,7 @@ apps: 57
   - Preu: Descàrrega gratuïta. Amb una compra única desbloqueges totes les funcions, sense subscripció.
   - App Store: https://apps.apple.com/es/app/id6788236641?pt=118326163&ct=geo_pick&mt=8
 - [ShotInbox AI: Sort Screenshots](https://open.cait518.cc/ios-app-guide/ca/shotinbox.html) — Ordena captures i cerca text
-  - Optimitzada per a l’iPhone Duo: pantalla completa real. Compres de Nadal i viatges d'hivern: rebuts, entrades i comandes s'acumulen en captures.
+  - Optimitzada per a l’iPhone Duo: pantalla completa real. Les captures de pantalla s'ordenen soles: rebuts, entrades, viatges i xats separats, i cada paraula es pot cercar.
   - Preu: Descàrrega gratuïta. Amb una compra única desbloqueges totes les funcions, sense subscripció.
   - App Store: https://apps.apple.com/es/app/id6802166527?pt=118326163&ct=geo_pick&mt=8
 - [Snapport Lite: Fotos de carnet](https://open.cait518.cc/ios-app-guide/ca/snapportlite.html) — Retrats a la mida exacta
@@ -204,11 +208,11 @@ apps: 57
   - Preu: Descàrrega gratuïta. Amb una compra única desbloqueges totes les funcions, sense subscripció.
   - App Store: https://apps.apple.com/es/app/id6782139553?pt=118326163&ct=geo_pick&mt=8
 - [Stay Clock: Rellotge de Taula](https://open.cait518.cc/ios-app-guide/ca/stayclock.html) — Hora i calendari sempre actius
-  - Nits llargues fins a Nadal: mentre carrega, el mòbil es torna un rellotge gran que es llegeix des de l'altra punta de l'habitació, amb calendari Mes i alarma.
+  - Optimitzada per a l’iPhone Duo: pantalla completa real. Un rellotge de taula bonic, sempre encès, que es llegeix des de l'altra punta de l'habitació.
   - Preu: Descàrrega gratuïta. Amb una compra única desbloqueges totes les funcions, sense subscripció.
   - App Store: https://apps.apple.com/es/app/id6814035888?pt=118326163&ct=geo_pick&mt=8
 - [Studydown: Cronòmetre](https://open.cait518.cc/ios-app-guide/ca/studydown.html) — Deixa’l de cara avall
-  - Optimitzada per a l’iPhone Duo: pantalla completa real. Tria una activitat, posa el mòbil cap per avall i comença a comptar; si l’aixeques, es pausa.
+  - Optimitzada per a l’iPhone Duo: pantalla completa real. Gira el mòbil i registra focus real. Consulta trams amb aixecades i el ritme diari de cada termini. Privat.
   - Preu: Descàrrega gratuïta. Amb una compra única desbloqueges totes les funcions, sense subscripció.
   - App Store: https://apps.apple.com/es/app/id6807335593?pt=118326163&ct=geo_pick&mt=8
 - [Taipei · Assistent del Metro](https://open.cait518.cc/ios-app-guide/ca/metrotimehelper.html) — Sàpigues quan has de sortir
@@ -219,8 +223,12 @@ apps: 57
   - Optimitzada per a l’iPhone Duo: pantalla completa real. Vols, viatges llargs en cotxe i llocs nous es tornen missions: cordar-se, donar les gràcies, tastar una mica.
   - Preu: Descàrrega gratuïta. Amb una compra única desbloqueges totes les funcions, sense subscripció.
   - App Store: https://apps.apple.com/es/app/id6787193643?pt=118326163&ct=geo_pick&mt=8
+- [TripBee Cute: Diari de viatge](https://open.cait518.cc/ios-app-guide/ca/tripbeecute.html) — Quadern bufó, fet amb amics
+  - Fes del pròxim viatge un diari il·lustrat: compte enrere, vols, plans del dia i maleta en una sola pàgina. Planifica'l amb amics o comparteix-lo com a pàgina web.
+  - Preu: Descàrrega gratuïta. Amb una compra única desbloqueges totes les funcions, sense subscripció.
+  - App Store: https://apps.apple.com/es/app/id6826987407?pt=118326163&ct=geo_pick&mt=8
 - [TripBee Lite: Pla de viatge](https://open.cait518.cc/ios-app-guide/ca/tripbeelite.html) — Vacances: itinerari diari
-  - Optimitzada per a l’iPhone Duo: pantalla completa real. Posa el viatge en una línia de temps dia a dia, amb vols, allotjament, notes, recordatoris i dades dels bitllets.
+  - Optimitzada per a l’iPhone Duo: pantalla completa real. El proper viatge, dia a dia: horaris, llocs, recordatoris, bitllets i el temps local en una cronologia.
   - Preu: Descàrrega gratuïta. Amb una compra única desbloqueges totes les funcions, sense subscripció.
   - App Store: https://apps.apple.com/es/app/id6791299610?pt=118326163&ct=geo_pick&mt=8
 - [TripBee: Planifica Viatges](https://open.cait518.cc/ios-app-guide/ca/tripbee.html) — Escapades en grup i equipatge
@@ -248,10 +256,10 @@ apps: 57
   - Preu: Descàrrega gratuïta. Amb una compra única desbloqueges totes les funcions, sense subscripció.
   - App Store: https://apps.apple.com/es/app/id6797601720?pt=118326163&ct=geo_pick&mt=8
 - [Wordmate: Aprèn vocabulari](https://open.cait518.cc/ios-app-guide/ca/wordmate.html) — Paraules, targetes i widget
-  - Optimitzada per a l’iPhone Duo: pantalla completa real. Aprèn paraules en 44 idiomes en estones lliures: 14 temes pràctics, frases d'exemple i pronunciació.
+  - Optimitzada per a l’iPhone Duo: pantalla completa real. Aprèn paraules en 44 idiomes amb frases d'exemple naturals, 14 temes i 3 nivells.
   - Preu: Descàrrega de pagament amb un únic preu inicial i sense subscripció.
   - App Store: https://apps.apple.com/es/app/id6789917808?pt=118326163&ct=geo_pick&mt=8
 - [Zipbox: obrir RAR, ZIP i 7z](https://open.cait518.cc/ios-app-guide/ca/zipbox.html) — Descomprimeix-ho sense anuncis
-  - Optimitzada per a l’iPhone Duo: pantalla completa real. Mira què hi ha a dins, previsualitza fotos i PDF i extreu només el que necessites, tot al dispositiu. Cap anunci.
+  - Optimitzada per a l’iPhone Duo: pantalla completa real. Obre ZIP, RAR, 7z, TAR, ISO i més, fins i tot arxius amb contrasenya o dividits.
   - Preu: Descàrrega de pagament amb un únic preu inicial i sense subscripció.
   - App Store: https://apps.apple.com/es/app/id6806776579?pt=118326163&ct=geo_pick&mt=8

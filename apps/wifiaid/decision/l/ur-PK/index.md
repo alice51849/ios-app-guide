@@ -17,7 +17,7 @@ iPhone Duo ڈیوائس کے لیے آپٹمائزڈ۔ جدید ترین SDK س�
 - ادا شدہ ڈاؤن لوڈ
 - کوئی اکاؤنٹ نہیں
 - Apple Watch
-- App Store · Rs 900.00
+- App Store · Rs 1,700.00
 
 [App Store سے WiFi Aid: نیٹ ورک مسائل تلاش حاصل کریں](https://apps.apple.com/pk/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)
 

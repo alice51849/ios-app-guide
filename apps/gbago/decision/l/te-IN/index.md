@@ -16,7 +16,7 @@ iPhone Duo పరికరం కోసం ఆప్టిమైజ్ చేయ
 - ఇంకా
 - చెల్లింపు డౌన్లోడ్
 - ఆఫ్‌లైన్
-- App Store · ₹ 500
+- App Store · ₹ 999
 
 [App Store నుంచి GBAGo: దృశ్య సేవ్స్ పొందండి](https://apps.apple.com/in/app/id6804564400?pt=118326163&ct=geo_pick&mt=8)
 

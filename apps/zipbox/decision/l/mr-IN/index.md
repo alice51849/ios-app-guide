@@ -20,7 +20,7 @@ iPhone Duo डिव्हाइससाठी ऑप्टिमाइझ क�
 - जाहिराती नाहीत
 - ट्रॅकिंग नाही
 - खाजगी / उपकरणावर
-- App Store · ₹ 299
+- App Store · ₹ 499
 
 [App Store वरून Zipbox: ZIP, RAR, 7z अनझिप मिळवा](https://apps.apple.com/in/app/id6806776579?pt=118326163&ct=geo_pick&mt=8)
 

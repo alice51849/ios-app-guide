@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - पैसे देऊन डाउनलोड करा
 - विजेट
 - Apple Watch
-- App Store · ₹ 699
+- App Store · ₹ 1,199
 
 [App Store वरून DailyMate मिळवा →](https://apps.apple.com/in/app/id6790418321?pt=118326163&ct=geo_pick&mt=8)
 

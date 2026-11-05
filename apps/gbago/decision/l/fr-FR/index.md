@@ -16,7 +16,7 @@ Optimisée pour l’iPhone Duo. Conçue avec le SDK le plus récent, l’app rem
 - Plus
 - Téléchargement payant
 - Hors ligne
-- App Store · 5,99 €
+- App Store · 9,99 €
 
 [Obtenir GBAGo: Sauvegardes visuelles sur l'App Store](https://apps.apple.com/fr/app/id6804564400?pt=118326163&ct=geo_pick&mt=8)
 

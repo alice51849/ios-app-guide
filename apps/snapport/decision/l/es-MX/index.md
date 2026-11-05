@@ -19,7 +19,7 @@ Para la foto de pasaporte de un bebé, nadie más puede aparecer y el fondo debe
 - Sin anuncios
 - Sin rastreo
 - Privado / en el dispositivo
-- App Store · $69.00
+- App Store · $129.00
 
 [Obtén Snapport en la App Store →](https://apps.apple.com/mx/app/id6780575828?pt=118326163&ct=geo_pick&mt=8)
 

@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - بدون إعلانات
 - بدون تتبع
 - خاص / على الجهاز
-- App Store · SAR 12.99
+- App Store · SAR 19.99
 
 [احصل على G+Money من App Store →](https://apps.apple.com/sa/app/id6755782939?pt=118326163&ct=geo_pick&mt=8)
 

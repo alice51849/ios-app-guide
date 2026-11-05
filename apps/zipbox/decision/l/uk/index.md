@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - Без реклами
 - Без відстеження
 - Приватно / на пристрої
-- App Store · 3,95 USD
+- App Store · 5,99 USD
 
 [Завантажте Zipbox: відкрити RAR, ZIP, 7z з App Store](https://apps.apple.com/ua/app/id6806776579?pt=118326163&ct=geo_pick&mt=8)
 

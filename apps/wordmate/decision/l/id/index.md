@@ -20,7 +20,7 @@ Komuter sibuk butuh latihan kosakata yang bisa masuk di waktu luang tanpa perlu 
 - Privat / di perangkat
 - Widget
 - Apple Watch
-- App Store · Rp 99ribu
+- App Store · Rp 179ribu
 
 [Dapatkan Wordmate: Learn 44 Languages di App Store →](https://apps.apple.com/id/app/id6789917808?pt=118326163&ct=geo_pick&mt=8)
 

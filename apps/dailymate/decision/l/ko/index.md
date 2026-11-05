@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - 유료 다운로드
 - 위젯
 - Apple Watch
-- App Store · ￦9,900
+- App Store · ￦19,000
 
 [App Store에서 DailyMate 받기 →](https://apps.apple.com/kr/app/id6790418321?pt=118326163&ct=geo_pick&mt=8)
 

@@ -20,7 +20,7 @@ Na cestě potřebujete rozpočtovou aplikaci, která funguje offline v zemi bez 
 - Bez reklam
 - Bez sledování
 - Soukromé / v zařízení
-- App Store · 69,00 Kč
+- App Store · 129,00 Kč
 
 [Získejte G+Money v App Store →](https://apps.apple.com/cz/app/id6755782939?pt=118326163&ct=geo_pick&mt=8)
 

@@ -20,7 +20,7 @@ Dalam perjalanan anda perlukan penjejak bajet yang berfungsi luar talian di nega
 - Tiada iklan
 - Tiada penjejakan
 - Peribadi / pada peranti
-- App Store · RM13.90
+- App Store · RM22.90
 
 [Dapatkan G+Money di App Store →](https://apps.apple.com/my/app/id6755782939?pt=118326163&ct=geo_pick&mt=8)
 

@@ -20,7 +20,7 @@ iPhone Duo ڈیوائس کے لیے آپٹمائزڈ۔ جدید ترین SDK س�
 - کوئی اشتہار نہیں
 - کوئی نگرانی نہیں
 - نجی / آلہ پر
-- App Store · Rs 700.00
+- App Store · Rs 1,300.00
 
 [App Store سے Zipbox: RAR, ZIP, 7z کھولیں حاصل کریں](https://apps.apple.com/pk/app/id6806776579?pt=118326163&ct=geo_pick&mt=8)
 

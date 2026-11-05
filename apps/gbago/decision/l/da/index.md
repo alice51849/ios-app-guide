@@ -16,7 +16,7 @@ Optimeret til iPhone Duo. Appen er bygget med den nyeste SDK, fylder hele den in
 - Mere
 - Betalt download
 - Offline
-- App Store · 40,00 kr
+- App Store · 79,00 kr
 
 [Hent GBAGo: Visuelle gemte i App Store](https://apps.apple.com/dk/app/id6804564400?pt=118326163&ct=geo_pick&mt=8)
 

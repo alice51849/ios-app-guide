@@ -17,7 +17,7 @@ iPhone Duo ଡିଭାଇସ୍ ପାଇଁ ଅପ୍ଟିମାଇଜ୍ କ
 - ପୈସା ଦେଇ ଡାଉନଲୋଡ୍
 - କୌଣସି ଖାତା ନାହିଁ
 - Apple Watch
-- App Store · ₹ 349
+- App Store · ₹ 599
 
 [App Store ରୁ WiFi Aid: ନେଟୱର୍କ ସମସ୍ୟା ପାଆନ୍ତୁ](https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)
 

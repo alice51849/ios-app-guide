@@ -20,7 +20,7 @@ Optimisée pour l’iPhone Duo. Conçue avec le SDK le plus récent, l’app rem
 - Aucune publicité
 - Aucun suivi
 - Privé / sur l'appareil
-- App Store · $3.90
+- App Store · $6.99
 
 [Obtenir Zipbox : décompresser RAR, ZIP sur l'App Store](https://apps.apple.com/ca/app/id6806776579?pt=118326163&ct=geo_pick&mt=8)
 

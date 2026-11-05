@@ -20,7 +20,7 @@ In viaggio serve un tracker di budget che funzioni offline in un paese senza dat
 - Nessuna pubblicità
 - Nessun tracciamento
 - Privato / su dispositivo
-- App Store · 3,00 €
+- App Store · 5,99 €
 
 [Scarica G+Money dall'App Store →](https://apps.apple.com/it/app/id6755782939?pt=118326163&ct=geo_pick&mt=8)
 

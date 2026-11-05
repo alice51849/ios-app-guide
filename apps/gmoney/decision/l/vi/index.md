@@ -20,7 +20,7 @@ Khi đi du lịch, bạn cần ứng dụng theo dõi ngân sách hoạt động
 - Không quảng cáo
 - Không theo dõi
 - Riêng tư / trên thiết bị
-- App Store · 79.000đ
+- App Store · 149.000đ
 
 [Tải G+Money trên App Store →](https://apps.apple.com/vn/app/id6755782939?pt=118326163&ct=geo_pick&mt=8)
 

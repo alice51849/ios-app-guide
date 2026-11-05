@@ -16,7 +16,7 @@ iPhone Duo ಸಾಧನಕ್ಕಾಗಿ ಆಪ್ಟಿಮೈಸ್ ಮಾಡ�
 - ಇನ್ನಷ್ಟು
 - ಪಾವತಿಸಿದ ಡೌನ್‌ಲೋಡ್
 - ಆಫ್‌ಲೈನ್
-- App Store · ₹ 500
+- App Store · ₹ 999
 
 [App Store ನಲ್ಲಿ GBAGo: ದೃಶ್ಯ ಸೇವ್‌ಗಳು ಪಡೆಯಿರಿ](https://apps.apple.com/in/app/id6804564400?pt=118326163&ct=geo_pick&mt=8)
 

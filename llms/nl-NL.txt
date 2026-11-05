@@ -3,7 +3,7 @@
 > Gestructureerde info over elke iOS-app — functies, prijs en FAQ.
 
 locale: nl-NL
-apps: 57
+apps: 59
 - App-overzicht: https://open.cait518.cc/ios-app-guide/nl-NL/tools/private-pay-once-iphone-app-finder.html
 - App-overzicht · PWA: https://open.cait518.cc/ios-app-guide/nl-NL/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/nl-NL.jsonld
@@ -28,7 +28,7 @@ apps: 57
 - App-overzicht · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 
 - [100 Notes Studio: Pen & Paper](https://open.cait518.cc/ios-app-guide/nl-NL/notesstudio100.html) — Handschrift, notities en pdf
-  - Winter en tentamens in januari: aantekeningen met de hand, pdf-sheets markeren, de opname van het college op de pagina en leren met leerkaarten. Offline, geen account.
+  - Geoptimaliseerd voor iPhone Duo: echt schermvullend. Schrijf met de hand, typ, markeer pdf's en neem het college op dezelfde pagina op, offline. Leer met leerkaarten.
   - Prijs: Gratis download, met een eenmalige aankoop ontgrendel je alles. Geen abonnement.
   - App Store: https://apps.apple.com/nl/app/id6798813048?pt=118326163&ct=geo_pick&mt=8
 - [AI Brief: Bestand naar prompt](https://open.cait518.cc/ios-app-guide/nl-NL/aibriefpack.html) — Prompts maken van bestanden
@@ -60,7 +60,7 @@ apps: 57
   - Prijs: Gratis download, met een eenmalige aankoop ontgrendel je alles. Geen abonnement.
   - App Store: https://apps.apple.com/nl/app/id6782251621?pt=118326163&ct=geo_pick&mt=8
 - [DailyMate Lite: Spreek nu](https://open.cait518.cc/ios-app-guide/nl-NL/dailymatelite.html) — Taalgids op reis in 50 talen
-  - Geoptimaliseerd voor iPhone Duo: echt schermvullend. Begrijp wat mensen zeggen op het vliegveld, in het hotel of restaurant en leer het natuurlijke antwoord.
+  - Geoptimaliseerd voor iPhone Duo. Kies uit 50 talen, niet slechts één. Oefen gesprekjes voor vliegveld, hotel en café, en herhaal elke dag je volgende zin in de widget.
   - Prijs: Gratis download, met een eenmalige aankoop ontgrendel je alles. Geen abonnement.
   - App Store: https://apps.apple.com/nl/app/id6794725568?pt=118326163&ct=geo_pick&mt=8
 - [DailyMate: talen in context](https://open.cait518.cc/ios-app-guide/nl-NL/dailymate.html) — Leer Engels, Spaans en meer
@@ -80,7 +80,7 @@ apps: 57
   - Prijs: Gratis download, met een eenmalige aankoop ontgrendel je alles. Geen abonnement.
   - App Store: https://apps.apple.com/nl/app/id6824946559?pt=118326163&ct=geo_pick&mt=8
 - [G+Money Lite: Reisuitgaven](https://open.cait518.cc/ios-app-guide/nl-NL/gmoneylite.html) — Dagbudget op horloge en widget
-  - Geoptimaliseerd voor iPhone Duo: echt schermvullend. Noteer aankopen in lokale valuta, zie ze direct in je eigen munt, stel een daglimiet in en reken offline om.
+  - Geoptimaliseerd voor iPhone Duo: echt schermvullend. Stel een dagbudget in en zie op je widget en Apple Watch wat er vandaag over is.
   - Prijs: Gratis download, met een eenmalige aankoop ontgrendel je alles. Geen abonnement.
   - App Store: https://apps.apple.com/nl/app/id6793436548?pt=118326163&ct=geo_pick&mt=8
 - [G+Money: Uitgaven en budget](https://open.cait518.cc/ios-app-guide/nl-NL/gmoney.html) — Reisuitgaven en valuta
@@ -88,11 +88,11 @@ apps: 57
   - Prijs: Betaalde download voor één vaste prijs, zonder abonnement.
   - App Store: https://apps.apple.com/nl/app/id6755782939?pt=118326163&ct=geo_pick&mt=8
 - [GBAGo: Visuele saves](https://open.cait518.cc/ios-app-guide/nl-NL/gbago.html) — Herstelkaart · Momentopnames
-  - Herstelkaart · Visuele saves · Automatische momentopnames · Backup exporteren · .sav
+  - Geoptimaliseerd voor iPhone Duo: echt schermvullend. Emulator voor je eigen bestanden (.gba, .gbc, .gb, .zip), offline op 60 fps.
   - Prijs: Betaalde download voor één vaste prijs, zonder abonnement.
   - App Store: https://apps.apple.com/nl/app/id6804564400?pt=118326163&ct=geo_pick&mt=8
 - [HoursTag Lite: Prijs in uren](https://open.cait518.cc/ios-app-guide/nl-NL/hourstaglite.html) — Bewust kopen: echte prijs
-  - De feestdageninkopen beginnen: zie vóór je koopt de prijs in je eigen werkuren, label hem als nodig, wens of impuls, en zie het werk achter een doel voor het nieuwe jaar.
+  - Geoptimaliseerd voor iPhone Duo: echt schermvullend. Zie vóór je koopt de prijs in je eigen werkuren en label hem als nodig, wens of impuls. Met widget en Apple Watch.
   - Prijs: Gratis download, met een eenmalige aankoop ontgrendel je alles. Geen abonnement.
   - App Store: https://apps.apple.com/nl/app/id6794039979?pt=118326163&ct=geo_pick&mt=8
 - [HoursTag: Uren om te kopen](https://open.cait518.cc/ios-app-guide/nl-NL/hourstag.html) — Uurloon en uitgaven inzicht
@@ -147,6 +147,10 @@ apps: 57
   - Geoptimaliseerd voor iPhone Duo: echt schermvullend. Vind privégegevens, maak alleen wat je kiest blijvend zwart en wis metadata.
   - Prijs: Gratis download, met een eenmalige aankoop ontgrendel je alles. Geen abonnement.
   - App Store: https://apps.apple.com/nl/app/id6792850916?pt=118326163&ct=geo_pick&mt=8
+- [Meow Party: Katten Spelletjes](https://open.cait518.cc/ios-app-guide/nl-NL/foldparty.html) — 200 minigames voor foldables
+  - Gemaakt voor vouwtelefoons: nog leuker als je vouwt, volledig speelbaar op elke iPhone. 200 schattige kattenminigames: de meeste solo, 54 met z'n tweeën op één telefoon.
+  - Prijs: Betaalde download voor één vaste prijs, zonder abonnement.
+  - App Store: https://apps.apple.com/nl/app/id6829184924?pt=118326163&ct=geo_pick&mt=8
 - [Metro Tijdhelper Taipei](https://open.cait518.cc/ios-app-guide/nl-NL/metrotimehelper.html) — Weet wanneer je weg moet
   - Metro van Taipei, Taiwan: zeg hoe laat je er moet zijn en zie wanneer je uiterlijk het station in moet. 50 talen, voor bewoners en reizigers. Met Xiaobitan en Xinbeitou.
   - Prijs: Gratis download, met een eenmalige aankoop ontgrendel je alles. Geen abonnement.
@@ -180,7 +184,7 @@ apps: 57
   - Prijs: Gratis download, met een eenmalige aankoop ontgrendel je alles. Geen abonnement.
   - App Store: https://apps.apple.com/nl/app/id6806779853?pt=118326163&ct=geo_pick&mt=8
 - [SaveTag: AI-bladwijzers](https://open.cait518.cc/ios-app-guide/nl-NL/savetag.html) — Links bewaren, later lezen
-  - Geoptimaliseerd voor iPhone Duo: echt schermvullend. Deel de link vanuit elke app: hij krijgt vanzelf tags op je toestel en je vindt hem op betekenis.
+  - Geoptimaliseerd voor iPhone Duo: echt schermvullend. Bewaar een link uit elke app met één tik.
   - Prijs: Gratis download, met een eenmalige aankoop ontgrendel je alles. Geen abonnement.
   - App Store: https://apps.apple.com/nl/app/id6802505528?pt=118326163&ct=geo_pick&mt=8
 - [ScanTo Pro: PDF & OCR](https://open.cait518.cc/ios-app-guide/nl-NL/scanto.html) — Privé documentscanner offline
@@ -208,19 +212,23 @@ apps: 57
   - Prijs: Gratis download, met een eenmalige aankoop ontgrendel je alles. Geen abonnement.
   - App Store: https://apps.apple.com/nl/app/id6782139553?pt=118326163&ct=geo_pick&mt=8
 - [Stay Clock: Bureauklok](https://open.cait518.cc/ios-app-guide/nl-NL/stayclock.html) — Tijd en kalender, altijd aan
-  - Donkere avonden tot kerst: tijdens het opladen wordt je telefoon een grote klok die je vanaf de andere kant van de kamer leest, met maandkalender, uurslag en wekker.
+  - Geoptimaliseerd voor iPhone Duo: echt schermvullend. Een mooie bureauklok die altijd aan staat en vanaf de andere kant van de kamer leesbaar is.
   - Prijs: Gratis download, met een eenmalige aankoop ontgrendel je alles. Geen abonnement.
   - App Store: https://apps.apple.com/nl/app/id6814035888?pt=118326163&ct=geo_pick&mt=8
 - [Studydown: Urenregistratie](https://open.cait518.cc/ios-app-guide/nl-NL/studydown.html) — Leg hem omgekeerd neer
-  - Geoptimaliseerd voor iPhone Duo: echt schermvullend. Kies een activiteit, leg je telefoon met het scherm omlaag en de tijd loopt; oppakken pauzeert.
+  - Geoptimaliseerd voor iPhone Duo: echt schermvullend. Draai je telefoon om en leg echte focus vast. Bekijk oppakmomenten, ononderbroken tijd en het dagtempo per deadline.
   - Prijs: Gratis download, met een eenmalige aankoop ontgrendel je alles. Geen abonnement.
   - App Store: https://apps.apple.com/nl/app/id6807335593?pt=118326163&ct=geo_pick&mt=8
 - [Trip Planet reizen kids](https://open.cait518.cc/ios-app-guide/nl-NL/tripplanet.html) — Gezinsvakantie als missie
   - Geoptimaliseerd voor iPhone Duo: echt schermvullend. Vluchten, autoritten en nieuwe plekken worden missies: gordel om, de crew bedanken, een hapje proeven.
   - Prijs: Gratis download, met een eenmalige aankoop ontgrendel je alles. Geen abonnement.
   - App Store: https://apps.apple.com/nl/app/id6787193643?pt=118326163&ct=geo_pick&mt=8
+- [TripBee Cute: Reisdagboek](https://open.cait518.cc/ios-app-guide/nl-NL/tripbeecute.html) — Schattig reisboekje & aftellen
+  - Maak van je reis een schattig, geïllustreerd boekje: aftellen, vluchten, dagplannen en paklijst op één pagina. Plan met vrienden en deel een webboekje dat overal opent.
+  - Prijs: Gratis download, met een eenmalige aankoop ontgrendel je alles. Geen abonnement.
+  - App Store: https://apps.apple.com/nl/app/id6826987407?pt=118326163&ct=geo_pick&mt=8
 - [TripBee Lite: Reisplanner](https://open.cait518.cc/ios-app-guide/nl-NL/tripbeelite.html) — Vakantie & reisschema per dag
-  - Geoptimaliseerd voor iPhone Duo: echt schermvullend. Zet de reis op één tijdlijn per dag, met vluchten, verblijf, notities, herinneringen en ticketinfo bij elkaar.
+  - Geoptimaliseerd voor iPhone Duo: echt schermvullend. Je volgende reis, dag voor dag: tijden, plekken, herinneringen, tickets en lokaal weer in één rustige tijdlijn.
   - Prijs: Gratis download, met een eenmalige aankoop ontgrendel je alles. Geen abonnement.
   - App Store: https://apps.apple.com/nl/app/id6791299610?pt=118326163&ct=geo_pick&mt=8
 - [TripBee: Reisplanner](https://open.cait518.cc/ios-app-guide/nl-NL/tripbee.html) — Groepsreis en slimme paklijst
@@ -248,10 +256,10 @@ apps: 57
   - Prijs: Gratis download, met een eenmalige aankoop ontgrendel je alles. Geen abonnement.
   - App Store: https://apps.apple.com/nl/app/id6797601720?pt=118326163&ct=geo_pick&mt=8
 - [Wordmate: Woordenschat](https://open.cait518.cc/ios-app-guide/nl-NL/wordmate.html) — Woordjes leren, widget & watch
-  - Geoptimaliseerd voor iPhone Duo: echt schermvullend. Leer woorden in 44 talen in korte pauzes: 14 praktische thema's, voorbeeldzinnen en uitspraak om te beluisteren.
+  - Geoptimaliseerd voor iPhone Duo: echt schermvullend. Leer woorden in 44 talen met natuurlijke voorbeeldzinnen, 14 onderwerpen en 3 niveaus.
   - Prijs: Betaalde download voor één vaste prijs, zonder abonnement.
   - App Store: https://apps.apple.com/nl/app/id6789917808?pt=118326163&ct=geo_pick&mt=8
 - [Zipbox: RAR, ZIP en 7z openen](https://open.cait518.cc/ios-app-guide/nl-NL/zipbox.html) — Uitpakken zonder reclame
-  - Geoptimaliseerd voor iPhone Duo: echt schermvullend. Kijk eerst wat erin zit, bekijk foto's en PDF's en pak alleen uit wat je nodig hebt. Zonder reclame.
+  - Geoptimaliseerd voor iPhone Duo: echt schermvullend. Open ZIP, RAR, 7z, TAR, ISO en meer, ook archieven met wachtwoord of in delen.
   - Prijs: Betaalde download voor één vaste prijs, zonder abonnement.
   - App Store: https://apps.apple.com/nl/app/id6806776579?pt=118326163&ct=geo_pick&mt=8

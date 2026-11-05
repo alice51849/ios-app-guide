@@ -19,7 +19,7 @@ Una buena app de itinerarios convierte un viaje desordenado en una línea de tie
 - Sin anuncios
 - Sin rastreo
 - Privado / en el dispositivo
-- App Store · $69.00
+- App Store · $129.00
 
 [Consigue TripBee Pro: Trip Planner en el App Store →](https://apps.apple.com/mx/app/id6787754435?pt=118326163&ct=geo_pick&mt=8)
 

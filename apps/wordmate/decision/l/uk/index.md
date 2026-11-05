@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - Приватно / на пристрої
 - Віджет
 - Apple Watch
-- App Store · 5,99 USD
+- App Store · 9,99 USD
 
 [Отримати Wordmate: Learn 44 Languages в App Store →](https://apps.apple.com/ua/app/id6789917808?pt=118326163&ct=geo_pick&mt=8)
 

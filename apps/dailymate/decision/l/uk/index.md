@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - Платне завантаження
 - Віджет
 - Apple Watch
-- App Store · 7,99 USD
+- App Store · 14,99 USD
 
 [Отримайте DailyMate в App Store →](https://apps.apple.com/ua/app/id6790418321?pt=118326163&ct=geo_pick&mt=8)
 

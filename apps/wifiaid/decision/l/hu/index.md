@@ -17,7 +17,7 @@ Optimalizálva az iPhone Duo készülékhez. A legújabb SDK-val készült alkal
 - Fizetős letöltés
 - Nincs fiók
 - Apple Watch
-- App Store · HUF1,490.00
+- App Store · HUF2,490.00
 
 [Töltse le a(z) WiFi Aid: Hálózati hibák appot az App Store-ból](https://apps.apple.com/hu/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)
 

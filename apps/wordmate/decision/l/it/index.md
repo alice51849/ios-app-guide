@@ -20,7 +20,7 @@ I pendolari hanno bisogno di pratica vocabolario che si adatti ai minuti liberi 
 - Privato / su dispositivo
 - Widget
 - Apple Watch
-- App Store · 5,99 €
+- App Store · 9,99 €
 
 [Scarica Wordmate: Learn 44 Languages su App Store →](https://apps.apple.com/it/app/id6789917808?pt=118326163&ct=geo_pick&mt=8)
 

@@ -6,8 +6,8 @@
   "name": "Catàleg d'intencions de cerca de Lumi Studio Editor",
   "description": "Catàleg de primera mà que mostra per a qui està dissenyada cada app, la tasca que volen completar i el camí directe a l'App Store.",
   "inLanguage": "ca",
-  "dateModified": "2026-11-04",
-  "numberOfItems": 57,
+  "dateModified": "2026-11-05",
+  "numberOfItems": 59,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
     {
@@ -595,7 +595,7 @@
           ],
           "isAccessibleForFree": false
         },
-        "price": "6.99",
+        "price": "12.99",
         "priceCurrency": "EUR",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {
@@ -925,7 +925,7 @@
           ],
           "isAccessibleForFree": false
         },
-        "price": "3",
+        "price": "5.99",
         "priceCurrency": "EUR",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {
@@ -1057,7 +1057,7 @@
           ],
           "isAccessibleForFree": false
         },
-        "price": "5.99",
+        "price": "9.99",
         "priceCurrency": "EUR",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {
@@ -1451,9 +1451,9 @@
               "value": true
             }
           ],
-          "isAccessibleForFree": false
+          "isAccessibleForFree": true
         },
-        "price": "9.99",
+        "price": "0",
         "priceCurrency": "EUR",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {
@@ -1993,6 +1993,72 @@
     {
       "@type": "ListItem",
       "position": 31,
+      "url": "https://apps.apple.com/es/app/id6829184924?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-foldparty",
+        "url": "https://apps.apple.com/es/app/id6829184924?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Meow Party: Jocs per a Dos",
+        "description": "Prou de jocs que ignoren el plec de la pantalla: Meow Party et porta 200 minijocs originals amb gats adorables, optimitzats per a la pantalla plegable de",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6829184924",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6829184924"
+          },
+          "name": "Meow Party: Jocs per a Dos",
+          "operatingSystem": "iOS",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/es/app/id6829184924?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/es/app/id6829184924?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/es/app/id6829184924?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/es/app/id6829184924?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ca/foldparty.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6829184924",
+          "inLanguage": "ca",
+          "description": "Prou de jocs que ignoren el plec de la pantalla: Meow Party et porta 200 minijocs originals amb gats adorables, optimitzats per a la pantalla plegable de",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-foldparty"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "6.99",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "ES"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 32,
       "url": "https://apps.apple.com/es/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2058,7 +2124,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 32,
+      "position": 33,
       "url": "https://apps.apple.com/es/app/id6790800323?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2124,7 +2190,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 33,
+      "position": 34,
       "url": "https://apps.apple.com/es/app/id6801956402?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2190,7 +2256,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 34,
+      "position": 35,
       "url": "https://apps.apple.com/es/app/id6798814385?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2256,7 +2322,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 35,
+      "position": 36,
       "url": "https://apps.apple.com/es/app/id6781808054?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2322,7 +2388,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 36,
+      "position": 37,
       "url": "https://apps.apple.com/es/app/id6780223070?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2388,7 +2454,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 37,
+      "position": 38,
       "url": "https://apps.apple.com/es/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2454,7 +2520,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 38,
+      "position": 39,
       "url": "https://apps.apple.com/es/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2520,7 +2586,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 39,
+      "position": 40,
       "url": "https://apps.apple.com/es/app/id6779977651?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2586,7 +2652,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 40,
+      "position": 41,
       "url": "https://apps.apple.com/es/app/id6788236641?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2652,7 +2718,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 41,
+      "position": 42,
       "url": "https://apps.apple.com/es/app/id6802166527?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2718,7 +2784,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 42,
+      "position": 43,
       "url": "https://apps.apple.com/es/app/id6780575828?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2773,7 +2839,7 @@
           ],
           "isAccessibleForFree": false
         },
-        "price": "3.9",
+        "price": "6.99",
         "priceCurrency": "EUR",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {
@@ -2784,7 +2850,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 43,
+      "position": 44,
       "url": "https://apps.apple.com/es/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2850,7 +2916,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 44,
+      "position": 45,
       "url": "https://apps.apple.com/es/app/id6782139553?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2916,7 +2982,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 45,
+      "position": 46,
       "url": "https://apps.apple.com/es/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2982,7 +3048,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 46,
+      "position": 47,
       "url": "https://apps.apple.com/es/app/id6807335593?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3048,7 +3114,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 47,
+      "position": 48,
       "url": "https://apps.apple.com/es/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3101,9 +3167,9 @@
               "value": true
             }
           ],
-          "isAccessibleForFree": true
+          "isAccessibleForFree": false
         },
-        "price": "0",
+        "price": "2.99",
         "priceCurrency": "EUR",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {
@@ -3114,7 +3180,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 48,
+      "position": 49,
       "url": "https://apps.apple.com/es/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3180,7 +3246,73 @@
     },
     {
       "@type": "ListItem",
-      "position": 49,
+      "position": 50,
+      "url": "https://apps.apple.com/es/app/id6826987407?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-tripbeecute",
+        "url": "https://apps.apple.com/es/app/id6826987407?pt=118326163&ct=geo_pick&mt=8",
+        "name": "TripBee Cute: Diari de viatge",
+        "description": "Deixa de buscar el viatge entre xats, captures de pantalla i notes: TripBee Cute converteix cada viatge en un diari il·lustrat i bufó, amb portada",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6826987407",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6826987407"
+          },
+          "name": "TripBee Cute: Diari de viatge",
+          "operatingSystem": "iOS",
+          "applicationCategory": "TravelApplication",
+          "url": "https://apps.apple.com/es/app/id6826987407?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/es/app/id6826987407?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/es/app/id6826987407?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/es/app/id6826987407?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ca/tripbeecute.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6826987407",
+          "inLanguage": "ca",
+          "description": "Deixa de buscar el viatge entre xats, captures de pantalla i notes: TripBee Cute converteix cada viatge en un diari il·lustrat i bufó, amb portada",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-tripbeecute"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "ES"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 51,
       "url": "https://apps.apple.com/es/app/id6791299610?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3246,7 +3378,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 50,
+      "position": 52,
       "url": "https://apps.apple.com/es/app/id6787754435?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3301,7 +3433,7 @@
           ],
           "isAccessibleForFree": false
         },
-        "price": "3.9",
+        "price": "6.99",
         "priceCurrency": "EUR",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {
@@ -3312,7 +3444,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 51,
+      "position": 53,
       "url": "https://apps.apple.com/es/app/id6782275018?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3378,7 +3510,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 52,
+      "position": 54,
       "url": "https://apps.apple.com/es/app/id6818607603?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3444,7 +3576,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 53,
+      "position": 55,
       "url": "https://apps.apple.com/es/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3510,7 +3642,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 54,
+      "position": 56,
       "url": "https://apps.apple.com/es/app/id6790467886?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3565,7 +3697,7 @@
           ],
           "isAccessibleForFree": false
         },
-        "price": "3.9",
+        "price": "6.99",
         "priceCurrency": "EUR",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {
@@ -3576,7 +3708,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 55,
+      "position": 57,
       "url": "https://apps.apple.com/es/app/id6797601720?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3642,7 +3774,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 56,
+      "position": 58,
       "url": "https://apps.apple.com/es/app/id6789917808?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3697,7 +3829,7 @@
           ],
           "isAccessibleForFree": false
         },
-        "price": "5.99",
+        "price": "9.99",
         "priceCurrency": "EUR",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {
@@ -3708,7 +3840,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 57,
+      "position": 59,
       "url": "https://apps.apple.com/es/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3763,7 +3895,7 @@
           ],
           "isAccessibleForFree": false
         },
-        "price": "3",
+        "price": "5.99",
         "priceCurrency": "EUR",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {

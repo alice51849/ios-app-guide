@@ -20,7 +20,7 @@ iPhone Duo için optimize edildi. En yeni SDK ile geliştirilen uygulama tüm i�
 - Reklam yok
 - Takip yok
 - Gizli / cihazda
-- App Store · ₺129,99
+- App Store · ₺249,99
 
 [Zipbox: RAR, ZIP, 7z Açma uygulamasını App Store'dan al](https://apps.apple.com/tr/app/id6806776579?pt=118326163&ct=geo_pick&mt=8)
 

@@ -1,12 +1,12 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-11-04",
-  "content_digest": "d41bfe7e156aabee8cf16c8afd333da7f2ca1d1367dc4352339ff83f32cded2b",
+  "date_modified": "2026-11-05",
+  "content_digest": "cfd8097e2d160bb22da9f0415e9bc3c45e093acb6a1c2a6fc701a91301d98006",
   "locale": "fr-CA",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 57,
+  "record_count": 59,
   "apps": [
     {
       "key": "notesstudio100",
@@ -362,9 +362,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/fr-CA/dailymate.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "8.99",
+        "price": "14.99",
         "currency": "CAD",
-        "formatted_price": "$8.99",
+        "formatted_price": "$14.99",
         "storefront_url": "https://apps.apple.com/ca/app/id6790418321"
       }
     },
@@ -567,9 +567,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/fr-CA/gmoney.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "3.9",
+        "price": "6.99",
         "currency": "CAD",
-        "formatted_price": "$3.90",
+        "formatted_price": "$6.99",
         "storefront_url": "https://apps.apple.com/ca/app/id6755782939"
       }
     },
@@ -646,9 +646,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/fr-CA/gbago.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "6.99",
+        "price": "11.99",
         "currency": "CAD",
-        "formatted_price": "$6.99",
+        "formatted_price": "$11.99",
         "storefront_url": "https://apps.apple.com/ca/app/id6804564400"
       }
     },
@@ -886,9 +886,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/fr-CA/lumibopomofopro.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "11.99",
+        "price": "0",
         "currency": "CAD",
-        "formatted_price": "$11.99",
+        "formatted_price": "Gratuit",
         "storefront_url": "https://apps.apple.com/ca/app/id6775773117"
       }
     },
@@ -1217,6 +1217,49 @@
       }
     },
     {
+      "key": "foldparty",
+      "app_store_id": "6829184924",
+      "name": "Meow Party : Mini-jeux de chat",
+      "summary": "La plupart des jeux ignorent le pli de l'écran, mais dans Meow Party, il fait partie du jeu : 200 mini-jeux de chats mignons, dont 54 à jouer à deux face à face sur le même cellulaire, le tout sans connexion, sans pub et sans compte. Optimisé pour l'écran pliable de l'iPhone Duo, Meow Party est encore plus amusant quand on plie l'écran, et chaque jeu se joue entièrement sur n'importe quel iPhone.",
+      "category": "other",
+      "search_terms": [
+        "2",
+        "joueurs",
+        "chaton",
+        "mignon",
+        "hors",
+        "ligne",
+        "sans",
+        "connexion",
+        "internet",
+        "famille",
+        "réflexion",
+        "téléphone",
+        "même",
+        "deux"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/ca/app/id6829184924?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/fr-CA/foldparty.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "7.99",
+        "currency": "CAD",
+        "formatted_price": "$7.99",
+        "storefront_url": "https://apps.apple.com/ca/app/id6829184924"
+      }
+    },
+    {
       "key": "metrotimehelper",
       "app_store_id": "6819061896",
       "name": "Taipei : l’Assistant Métro",
@@ -1251,9 +1294,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/fr-CA/metrotimehelper.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "0",
+        "price": "3.99",
         "currency": "CAD",
-        "formatted_price": "Gratuit",
+        "formatted_price": "$3.99",
         "storefront_url": "https://apps.apple.com/ca/app/id6819061896"
       }
     },
@@ -1742,9 +1785,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/fr-CA/snapport.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "4",
+        "price": "7.99",
         "currency": "CAD",
-        "formatted_price": "$4.00",
+        "formatted_price": "$7.99",
         "storefront_url": "https://apps.apple.com/ca/app/id6780575828"
       }
     },
@@ -1951,6 +1994,47 @@
       }
     },
     {
+      "key": "tripbeecute",
+      "app_store_id": "6826987407",
+      "name": "TripBee Cute: Carnet de voyage",
+      "summary": "Fini de fouiller dans vos courriels, captures d'écran et conversations de groupe : TripBee Cute transforme chaque voyage en un joli carnet illustré, avec le décompte, les vols, le programme de chaque jour et la liste de bagages sur une seule page.",
+      "category": "travel",
+      "search_terms": [
+        "itinéraire",
+        "compte",
+        "rebours",
+        "bagages",
+        "liste",
+        "valise",
+        "widget",
+        "amis",
+        "famille",
+        "agenda",
+        "planificateur",
+        "croisière"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/ca/app/id6826987407?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/fr-CA/tripbeecute.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CAD",
+        "formatted_price": "Gratuit",
+        "storefront_url": "https://apps.apple.com/ca/app/id6826987407"
+      }
+    },
+    {
       "key": "tripbeelite",
       "app_store_id": "6791299610",
       "name": "TripBee Lite : Plan de voyage",
@@ -2027,9 +2111,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/fr-CA/tripbee.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "4",
+        "price": "7.99",
         "currency": "CAD",
-        "formatted_price": "$4.00",
+        "formatted_price": "$7.99",
         "storefront_url": "https://apps.apple.com/ca/app/id6787754435"
       }
     },
@@ -2152,9 +2236,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/fr-CA/wifiaid.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "4",
+        "price": "7.99",
         "currency": "CAD",
-        "formatted_price": "$4.00",
+        "formatted_price": "$7.99",
         "storefront_url": "https://apps.apple.com/ca/app/id6790467886"
       }
     },
@@ -2274,9 +2358,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/fr-CA/wordmate.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "6.99",
+        "price": "11.99",
         "currency": "CAD",
-        "formatted_price": "$6.99",
+        "formatted_price": "$11.99",
         "storefront_url": "https://apps.apple.com/ca/app/id6789917808"
       }
     },
@@ -2320,9 +2404,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/fr-CA/zipbox.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "3.9",
+        "price": "6.99",
         "currency": "CAD",
-        "formatted_price": "$3.90",
+        "formatted_price": "$6.99",
         "storefront_url": "https://apps.apple.com/ca/app/id6806776579"
       }
     }

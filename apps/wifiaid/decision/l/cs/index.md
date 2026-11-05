@@ -17,7 +17,7 @@ Optimalizováno s ohledem na iPhone Duo. Aplikace je sestavena s nejnovějším 
 - Placené stažení
 - Bez účtu
 - Apple Watch
-- App Store · 79,00 Kč
+- App Store · 149,00 Kč
 
 [Stáhněte si WiFi Aid: Najděte chyby sítě v App Storu](https://apps.apple.com/cz/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)
 

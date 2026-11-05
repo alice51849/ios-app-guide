@@ -16,7 +16,7 @@ publisher: "Lumi Studio"
 - Ще
 - Платне завантаження
 - Офлайн
-- App Store · 5,99 USD
+- App Store · 9,99 USD
 
 [Завантажте GBAGo: Візуальні сейви з App Store](https://apps.apple.com/ua/app/id6804564400?pt=118326163&ct=geo_pick&mt=8)
 

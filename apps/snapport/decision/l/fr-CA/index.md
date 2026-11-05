@@ -19,7 +19,7 @@ Pour une photo passeport de bébé, personne d’autre ne doit apparaître et l�
 - Aucune publicité
 - Aucun suivi
 - Privé / sur l'appareil
-- App Store · $4.00
+- App Store · $7.99
 
 [Obtenez Snapport sur l’App Store →](https://apps.apple.com/ca/app/id6780575828?pt=118326163&ct=geo_pick&mt=8)
 

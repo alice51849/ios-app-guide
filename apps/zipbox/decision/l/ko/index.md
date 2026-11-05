@@ -20,7 +20,7 @@ iPhone Duo에 최적화되었습니다. 최신 개발 도구로 빌드되어 안
 - 광고 없음
 - 추적 없음
 - 프라이빗 / 기기 내
-- App Store · ￦4,400
+- App Store · ￦7,700
 
 [App Store에서 Zipbox 압축풀기: ZIP RAR 7z 받기](https://apps.apple.com/kr/app/id6806776579?pt=118326163&ct=geo_pick&mt=8)
 

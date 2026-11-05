@@ -19,7 +19,7 @@ Untuk foto paspor bayi, tidak boleh ada orang lain dalam foto dan latar belakang
 - Tanpa iklan
 - Tanpa pelacakan
 - Privat / di perangkat
-- App Store · Rp 69ribu
+- App Store · Rp 119ribu
 
 [Dapatkan Snapport di App Store →](https://apps.apple.com/id/app/id6780575828?pt=118326163&ct=geo_pick&mt=8)
 

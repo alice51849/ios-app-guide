@@ -18,7 +18,6 @@ publisher: "Lumi Studio"
 - Без рекламы
 - Apple Watch
 - App Store · Бесплатно
-- ★ 1.0/5 · 1
 
 [Установить BattAI: Состояние батареи в App Store](https://apps.apple.com/ru/app/id6802423998?pt=118326163&ct=geo_pick&mt=8)
 

@@ -17,7 +17,7 @@ Optimizada para el iPhone Duo. Creada con el SDK más reciente, la app ocupa tod
 - Descarga de pago
 - Sin cuenta
 - Apple Watch
-- App Store · $69.00
+- App Store · $129.00
 
 [Consigue WiFi Aid: Diagnóstico de red en el App Store](https://apps.apple.com/mx/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)
 

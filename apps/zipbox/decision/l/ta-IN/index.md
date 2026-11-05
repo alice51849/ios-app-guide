@@ -20,7 +20,7 @@ iPhone Duo சாதனத்திற்காக மேம்படுத்�
 - விளம்பரங்கள் இல்லை
 - பின்தொடர்வு இல்லை
 - தனியுரிமை / சாதனத்தில்
-- App Store · ₹ 299
+- App Store · ₹ 499
 
 [App Store-இல் Zipbox: ZIP, RAR, 7z திறக்க-ஐப் பெறுங்கள்](https://apps.apple.com/in/app/id6806776579?pt=118326163&ct=geo_pick&mt=8)
 

@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - بدون إعلانات
 - بدون تتبع
 - خاص / على الجهاز
-- App Store · SAR 12.99
+- App Store · SAR 24.99
 
 [احصل على TripBee Pro: مخطط الرحلات من متجر التطبيقات ←](https://apps.apple.com/sa/app/id6787754435?pt=118326163&ct=geo_pick&mt=8)
 

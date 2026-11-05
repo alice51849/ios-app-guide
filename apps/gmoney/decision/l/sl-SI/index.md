@@ -20,7 +20,7 @@ Na potovanju potrebujete proračunsko aplikacijo, ki deluje brez povezave v drž
 - Brez oglasov
 - Brez sledenja
 - Zasebno / na napravi
-- App Store · 3,00 €
+- App Store · 5,99 €
 
 [Prenesite G+Money v App Store →](https://apps.apple.com/si/app/id6755782939?pt=118326163&ct=geo_pick&mt=8)
 

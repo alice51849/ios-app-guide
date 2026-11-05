@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - Χωρίς λογαριασμό
 - Χωρίς διαφημίσεις
 - Ιδιωτικό / στη συσκευή
-- App Store · 9,99 €
+- App Store · Δωρεάν
 
 [Αποκτήστε το Lumi Bopomofo Pro στο App Store →](https://apps.apple.com/gr/app/id6775773117?pt=118326163&ct=geo_pick&mt=8)
 

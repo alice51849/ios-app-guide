@@ -20,7 +20,7 @@ Zaneprázdnení cestujúci potrebujú precvičovanie slovnej zásoby, ktoré sa 
 - Súkromné / v zariadení
 - Widget
 - Apple Watch
-- App Store · 5,99 €
+- App Store · 9,99 €
 
 [Získajte Wordmate: Learn 44 Languages v App Store →](https://apps.apple.com/sk/app/id6789917808?pt=118326163&ct=geo_pick&mt=8)
 

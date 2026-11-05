@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - Χωρίς διαφημίσεις
 - Χωρίς παρακολούθηση
 - Ιδιωτικό / στη συσκευή
-- App Store · 3,90 €
+- App Store · 6,99 €
 
 [Κατεβάστε το Snapport από το App Store →](https://apps.apple.com/gr/app/id6780575828?pt=118326163&ct=geo_pick&mt=8)
 

@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - ไม่มีโฆษณา
 - ไม่มีการติดตาม
 - ส่วนตัว / บนอุปกรณ์
-- App Store · ฿119.00
+- App Store · ฿199.00
 
 [รับ G+Money ใน App Store →](https://apps.apple.com/th/app/id6755782939?pt=118326163&ct=geo_pick&mt=8)
 

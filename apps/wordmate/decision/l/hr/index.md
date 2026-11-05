@@ -20,7 +20,7 @@ Zaposlenim putnicima treba vježba vokabulara koja stane u slobodne minute bez p
 - Privatno / na uređaju
 - Widget
 - Apple Watch
-- App Store · 5,99 €
+- App Store · 9,99 €
 
 [Preuzmite Wordmate: Learn 44 Languages na App Storeu →](https://apps.apple.com/hr/app/id6789917808?pt=118326163&ct=geo_pick&mt=8)
 

@@ -20,7 +20,7 @@ Optimoitu iPhone Duo -laitteelle. Uusimmalla SDK:lla rakennettu sovellus täytt�
 - Ei mainoksia
 - Ei seurantaa
 - Yksityinen / laitteella
-- App Store · 3,00 €
+- App Store · 5,99 €
 
 [Lataa Zipbox: avaa RAR, ZIP, 7z App Storesta](https://apps.apple.com/fi/app/id6806776579?pt=118326163&ct=geo_pick&mt=8)
 

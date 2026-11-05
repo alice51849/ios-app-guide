@@ -16,7 +16,7 @@ publisher: "Lumi Studio"
 - المزيد
 - تحميل مدفوع
 - دون اتصال
-- App Store · SAR 20.00
+- App Store · SAR 39.99
 
 [احصل على GBAGo: حفظ مرئي من App Store](https://apps.apple.com/sa/app/id6804564400?pt=118326163&ct=geo_pick&mt=8)
 

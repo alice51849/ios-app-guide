@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - Без рекламы
 - Без отслеживания
 - Лично / на устройстве
-- App Store · 299,00 ₽
+- App Store · 499,00 ₽
 
 [Скачайте TripBee Pro: Планировщик путешествий в App Store →](https://apps.apple.com/ru/app/id6787754435?pt=118326163&ct=geo_pick&mt=8)
 

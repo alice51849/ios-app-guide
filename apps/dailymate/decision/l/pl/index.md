@@ -17,7 +17,7 @@ Przed podróżą kompletne frazy do realnych sytuacji są bardziej przydatne ni�
 - Płatne do pobrania
 - Widżet
 - Apple Watch
-- App Store · 29,99 zł
+- App Store · 49,99 zł
 
 [Pobierz DailyMate w App Store →](https://apps.apple.com/pl/app/id6790418321?pt=118326163&ct=geo_pick&mt=8)
 

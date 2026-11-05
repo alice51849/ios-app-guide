@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - Без реклами
 - Без відстеження
 - Приватно / на пристрої
-- App Store · 3,95 USD
+- App Store · 6,99 USD
 
 [Отримайте Snapport в App Store →](https://apps.apple.com/ua/app/id6780575828?pt=118326163&ct=geo_pick&mt=8)
 

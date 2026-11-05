@@ -20,7 +20,7 @@ On a trip you need a budget tracker that works offline in a country with no data
 - No ads
 - No tracking
 - Private / on-device
-- App Store · $4.90
+- App Store · $7.99
 
 [Get G+Money on the App Store →](https://apps.apple.com/au/app/id6755782939?pt=118326163&ct=geo_pick&mt=8)
 

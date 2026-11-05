@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - സ്വകാര്യത / ഉപകരണത്തിൽ
 - വിഡ്ജറ്റ്
 - Apple Watch
-- App Store · ₹ 500
+- App Store · ₹ 999
 
 [Wordmate: 44 ഭാഷകൾ പഠിക്കുക App Store-ൽ ലഭ്യമാക്കുക →](https://apps.apple.com/in/app/id6789917808?pt=118326163&ct=geo_pick&mt=8)
 

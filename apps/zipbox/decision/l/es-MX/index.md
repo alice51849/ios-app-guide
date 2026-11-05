@@ -20,7 +20,7 @@ Optimizada para el iPhone Duo. Creada con el SDK más reciente, la app ocupa tod
 - Sin anuncios
 - Sin rastreo
 - Privado / en el dispositivo
-- App Store · $59.00
+- App Store · $99.00
 
 [Consigue Zipbox: abrir RAR, ZIP y 7z en el App Store](https://apps.apple.com/mx/app/id6806776579?pt=118326163&ct=geo_pick&mt=8)
 

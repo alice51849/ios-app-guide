@@ -20,7 +20,7 @@ En voyage, vous avez besoin d’un suivi de budget qui fonctionne hors ligne dan
 - Aucune publicité
 - Aucun suivi
 - Privé / sur l'appareil
-- App Store · $3.90
+- App Store · $6.99
 
 [Obtenez G+Money sur l’App Store →](https://apps.apple.com/ca/app/id6755782939?pt=118326163&ct=geo_pick&mt=8)
 

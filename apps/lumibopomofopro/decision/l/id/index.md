@@ -18,7 +18,7 @@ Anak dwibahasa yang belajar Zhuyin di rumah butuh jalur lengkap melalui suara, s
 - Tanpa akun
 - Tanpa iklan
 - Privat / di perangkat
-- App Store · Rp 179ribu
+- App Store · Gratis
 
 [Dapatkan Lumi Bopomofo Pro di App Store →](https://apps.apple.com/id/app/id6775773117?pt=118326163&ct=geo_pick&mt=8)
 

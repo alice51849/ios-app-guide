@@ -19,7 +19,7 @@ Um bom app de roteiro transforma uma viagem confusa em uma linha do tempo clara 
 - Sem anúncios
 - Sem rastreamento
 - Privado / no dispositivo
-- App Store · R$ 24,90
+- App Store · R$ 39,90
 
 [Baixe o TripBee Pro: Planejador de Viagens na App Store →](https://apps.apple.com/br/app/id6787754435?pt=118326163&ct=geo_pick&mt=8)
 

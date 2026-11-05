@@ -6,8 +6,8 @@
   "name": "Lumi Studio 开发者搜索意图目录",
   "description": "第一方目录，说明每款 App 的适用人群、想完成的任务以及直达 App Store 的下载入口。",
   "inLanguage": "zh-Hans",
-  "dateModified": "2026-11-04",
-  "numberOfItems": 57,
+  "dateModified": "2026-11-05",
+  "numberOfItems": 59,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
     {
@@ -595,7 +595,7 @@
           ],
           "isAccessibleForFree": false
         },
-        "price": "48",
+        "price": "88",
         "priceCurrency": "CNY",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {
@@ -805,72 +805,6 @@
     {
       "@type": "ListItem",
       "position": 13,
-      "url": "https://apps.apple.com/cn/app/id6824946559?pt=118326163&ct=geo_pick&mt=8",
-      "item": {
-        "@type": "Offer",
-        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-duowallpaperstudio",
-        "url": "https://apps.apple.com/cn/app/id6824946559?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Foldable Wallpaper Studio",
-        "description": "专为 iPhone Duo 双屏打造的成对壁纸：合上，外屏是特写；展开，内屏是整片全景，两张出自同一幅原创画面。",
-        "seller": {
-          "@type": "Organization",
-          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
-          "name": "Lumi Studio",
-          "url": "https://open.cait518.cc/ios-app-guide/about.html"
-        },
-        "itemOffered": {
-          "@type": "MobileApplication",
-          "@id": "https://apps.apple.com/app/id6824946559",
-          "identifier": {
-            "@type": "PropertyValue",
-            "propertyID": "Apple App Store ID",
-            "value": "6824946559"
-          },
-          "name": "Foldable Wallpaper Studio",
-          "operatingSystem": "iOS",
-          "applicationCategory": "PhotographyApplication",
-          "url": "https://apps.apple.com/cn/app/id6824946559?pt=118326163&ct=geo_pick&mt=8",
-          "installUrl": "https://apps.apple.com/cn/app/id6824946559?pt=118326163&ct=geo_pick&mt=8",
-          "downloadUrl": "https://apps.apple.com/cn/app/id6824946559?pt=118326163&ct=geo_pick&mt=8",
-          "potentialAction": {
-            "@type": "InstallAction",
-            "target": "https://apps.apple.com/cn/app/id6824946559?pt=118326163&ct=geo_pick&mt=8"
-          },
-          "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/zh-Hans/duowallpaperstudio.html#webpage"
-          },
-          "sameAs": "https://apps.apple.com/app/id6824946559",
-          "inLanguage": "zh-Hans",
-          "description": "专为 iPhone Duo 双屏打造的成对壁纸：合上，外屏是特写；展开，内屏是整片全景，两张出自同一幅原创画面。",
-          "offers": {
-            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-duowallpaperstudio"
-          },
-          "additionalProperty": [
-            {
-              "@type": "PropertyValue",
-              "name": "purchase_model",
-              "value": "free_with_lifetime_unlock"
-            },
-            {
-              "@type": "PropertyValue",
-              "name": "one_time_option",
-              "value": true
-            }
-          ],
-          "isAccessibleForFree": true
-        },
-        "price": "0",
-        "priceCurrency": "CNY",
-        "availability": "https://schema.org/InStock",
-        "eligibleRegion": {
-          "@type": "Country",
-          "identifier": "CN"
-        }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 14,
       "url": "https://apps.apple.com/cn/app/id6755782939?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -925,7 +859,7 @@
           ],
           "isAccessibleForFree": false
         },
-        "price": "22",
+        "price": "38",
         "priceCurrency": "CNY",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {
@@ -936,7 +870,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 15,
+      "position": 14,
       "url": "https://apps.apple.com/cn/app/id6793436548?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1002,7 +936,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 16,
+      "position": 15,
       "url": "https://apps.apple.com/cn/app/id6804564400?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1057,7 +991,7 @@
           ],
           "isAccessibleForFree": false
         },
-        "price": "38",
+        "price": "58",
         "priceCurrency": "CNY",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {
@@ -1068,7 +1002,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 17,
+      "position": 16,
       "url": "https://apps.apple.com/cn/app/id6794039979?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1134,7 +1068,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 18,
+      "position": 17,
       "url": "https://apps.apple.com/cn/app/id6754218117?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1200,7 +1134,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 19,
+      "position": 18,
       "url": "https://apps.apple.com/cn/app/id6806639602?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1266,7 +1200,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 20,
+      "position": 19,
       "url": "https://apps.apple.com/cn/app/id6780107485?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1332,7 +1266,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 21,
+      "position": 20,
       "url": "https://apps.apple.com/app/id6773017109?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1390,12 +1324,12 @@
     },
     {
       "@type": "ListItem",
-      "position": 22,
-      "url": "https://apps.apple.com/app/id6775773117?pt=118326163&ct=geo_pick&mt=8",
+      "position": 21,
+      "url": "https://apps.apple.com/cn/app/id6775773117?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-lumibopomofopro",
-        "url": "https://apps.apple.com/app/id6775773117?pt=118326163&ct=geo_pick&mt=8",
+        "url": "https://apps.apple.com/cn/app/id6775773117?pt=118326163&ct=geo_pick&mt=8",
         "name": "Lumi Bopomofo Pro",
         "description": "双语儿童在家学习注音需要一条完整路径，涵盖发音、符号、声调和拼读，并有足够趣味重复让系统变得熟悉。这个缺口，正是 Lumi Bopomofo Pro 想补上的。",
         "seller": {
@@ -1415,12 +1349,12 @@
           "name": "Lumi Bopomofo Pro",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
-          "url": "https://apps.apple.com/app/id6775773117?pt=118326163&ct=geo_pick&mt=8",
-          "installUrl": "https://apps.apple.com/app/id6775773117?pt=118326163&ct=geo_pick&mt=8",
-          "downloadUrl": "https://apps.apple.com/app/id6775773117?pt=118326163&ct=geo_pick&mt=8",
+          "url": "https://apps.apple.com/cn/app/id6775773117?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/cn/app/id6775773117?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/cn/app/id6775773117?pt=118326163&ct=geo_pick&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/app/id6775773117?pt=118326163&ct=geo_pick&mt=8"
+            "target": "https://apps.apple.com/cn/app/id6775773117?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-complete-zhuyin-app-for-bilingual-children.html#webpage"
@@ -1442,13 +1376,21 @@
               "name": "one_time_option",
               "value": true
             }
-          ]
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "CNY",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "CN"
         }
       }
     },
     {
       "@type": "ListItem",
-      "position": 23,
+      "position": 22,
       "url": "https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-educational-game-app-for-kids-no-ads-iphone.html",
       "item": {
         "@context": "https://schema.org",
@@ -1508,7 +1450,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 24,
+      "position": 23,
       "url": "https://apps.apple.com/app/id6778491147?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1566,7 +1508,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 25,
+      "position": 24,
       "url": "https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html",
       "item": {
         "@context": "https://schema.org",
@@ -1626,7 +1568,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 26,
+      "position": 25,
       "url": "https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html",
       "item": {
         "@context": "https://schema.org",
@@ -1686,7 +1628,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 27,
+      "position": 26,
       "url": "https://apps.apple.com/cn/app/id6779750237?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1752,7 +1694,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 28,
+      "position": 27,
       "url": "https://apps.apple.com/cn/app/id6779745474?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1818,7 +1760,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 29,
+      "position": 28,
       "url": "https://apps.apple.com/cn/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1884,7 +1826,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 30,
+      "position": 29,
       "url": "https://apps.apple.com/cn/app/id6792850916?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1950,7 +1892,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 31,
+      "position": 30,
       "url": "https://apps.apple.com/cn/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2016,7 +1958,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 32,
+      "position": 31,
       "url": "https://apps.apple.com/cn/app/id6790800323?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2082,7 +2024,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 33,
+      "position": 32,
       "url": "https://apps.apple.com/cn/app/id6801956402?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2148,7 +2090,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 34,
+      "position": 33,
       "url": "https://apps.apple.com/cn/app/id6798814385?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2214,7 +2156,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 35,
+      "position": 34,
       "url": "https://apps.apple.com/cn/app/id6781808054?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2280,7 +2222,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 36,
+      "position": 35,
       "url": "https://apps.apple.com/cn/app/id6780223070?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2346,7 +2288,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 37,
+      "position": 36,
       "url": "https://apps.apple.com/cn/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2412,7 +2354,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 38,
+      "position": 37,
       "url": "https://apps.apple.com/cn/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2478,7 +2420,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 39,
+      "position": 38,
       "url": "https://apps.apple.com/cn/app/id6779977651?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2544,7 +2486,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 40,
+      "position": 39,
       "url": "https://apps.apple.com/cn/app/id6788236641?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2610,7 +2552,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 41,
+      "position": 40,
       "url": "https://apps.apple.com/cn/app/id6802166527?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2676,7 +2618,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 42,
+      "position": 41,
       "url": "https://apps.apple.com/cn/app/id6780575828?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2731,7 +2673,7 @@
           ],
           "isAccessibleForFree": false
         },
-        "price": "22",
+        "price": "38",
         "priceCurrency": "CNY",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {
@@ -2742,7 +2684,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 43,
+      "position": 42,
       "url": "https://apps.apple.com/cn/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2808,7 +2750,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 44,
+      "position": 43,
       "url": "https://apps.apple.com/cn/app/id6782139553?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2874,7 +2816,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 45,
+      "position": 44,
       "url": "https://apps.apple.com/cn/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2940,7 +2882,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 46,
+      "position": 45,
       "url": "https://apps.apple.com/cn/app/id6807335593?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3006,7 +2948,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 47,
+      "position": 46,
       "url": "https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-travel-activity-app-for-kids-on-family-trips.html",
       "item": {
         "@context": "https://schema.org",
@@ -3062,6 +3004,72 @@
         "publishable": false,
         "facts_allowed": false,
         "outbox_count": 0
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 47,
+      "url": "https://apps.apple.com/cn/app/id6826987407?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-tripbeecute",
+        "url": "https://apps.apple.com/cn/app/id6826987407?pt=118326163&ct=geo_pick&mt=8",
+        "name": "TripBee Cute：旅行计划手账本",
+        "description": "别再让行程散在聊天记录、截图和备忘录里：TripBee Cute 把每一趟旅行做成一本可爱的插画手账，封面、出发倒计时、航班、每日行程和行李清单都在同一页，往下一滑就全看完。",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6826987407",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6826987407"
+          },
+          "name": "TripBee Cute：旅行计划手账本",
+          "operatingSystem": "iOS",
+          "applicationCategory": "TravelApplication",
+          "url": "https://apps.apple.com/cn/app/id6826987407?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/cn/app/id6826987407?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/cn/app/id6826987407?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/cn/app/id6826987407?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/zh-Hans/tripbeecute.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6826987407",
+          "inLanguage": "zh-Hans",
+          "description": "别再让行程散在聊天记录、截图和备忘录里：TripBee Cute 把每一趟旅行做成一本可爱的插画手账，封面、出发倒计时、航班、每日行程和行李清单都在同一页，往下一滑就全看完。",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-tripbeecute"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "CNY",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "CN"
+        }
       }
     },
     {
@@ -3187,7 +3195,7 @@
           ],
           "isAccessibleForFree": false
         },
-        "price": "22",
+        "price": "38",
         "priceCurrency": "CNY",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {
@@ -3443,7 +3451,7 @@
           ],
           "isAccessibleForFree": false
         },
-        "price": "22",
+        "price": "38",
         "priceCurrency": "CNY",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {
@@ -3575,7 +3583,7 @@
           ],
           "isAccessibleForFree": false
         },
-        "price": "38",
+        "price": "58",
         "priceCurrency": "CNY",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {
@@ -3641,7 +3649,7 @@
           ],
           "isAccessibleForFree": false
         },
-        "price": "22",
+        "price": "38",
         "priceCurrency": "CNY",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {
@@ -3653,6 +3661,130 @@
     {
       "@type": "ListItem",
       "position": 57,
+      "url": "https://apps.apple.com/app/id6829184924?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-foldparty",
+        "url": "https://apps.apple.com/app/id6829184924?pt=118326163&ct=geo_pick&mt=8",
+        "name": "喵喵派对：双人游戏·猫咪小游戏",
+        "description": "告别满屏广告和必须联网的小游戏：喵喵派对把 200 款原创可爱的猫咪小游戏装进一部手机，针对 iPhone Duo 折叠屏优化，折起来更好玩；普通 iPhone 也能完整畅玩。大多数一个人随时就能来一局，其中 54 款可以两个人共用一部手机，面对面对战或合作，每局大约 30 到 120 秒。",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6829184924",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6829184924"
+          },
+          "name": "喵喵派对：双人游戏·猫咪小游戏",
+          "operatingSystem": "iOS",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/app/id6829184924?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/app/id6829184924?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/app/id6829184924?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/app/id6829184924?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/zh-Hans/foldparty.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6829184924",
+          "inLanguage": "zh-Hans",
+          "description": "告别满屏广告和必须联网的小游戏：喵喵派对把 200 款原创可爱的猫咪小游戏装进一部手机，针对 iPhone Duo 折叠屏优化，折起来更好玩；普通 iPhone 也能完整畅玩。大多数一个人随时就能来一局，其中 54 款可以两个人共用一部手机，面对面对战或合作，每局大约 30 到 120 秒。",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-foldparty"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 58,
+      "url": "https://apps.apple.com/cn/app/id6824946559?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-duowallpaperstudio",
+        "url": "https://apps.apple.com/cn/app/id6824946559?pt=118326163&ct=geo_pick&mt=8",
+        "name": "折叠屏壁纸 - Foldable Wallpaper",
+        "description": "专为 iPhone Duo 双屏打造的成对壁纸：合上，外屏是特写；展开，内屏是整片全景，两张出自同一幅原创画面。",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6824946559",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6824946559"
+          },
+          "name": "折叠屏壁纸 - Foldable Wallpaper",
+          "operatingSystem": "iOS",
+          "applicationCategory": "PhotographyApplication",
+          "url": "https://apps.apple.com/cn/app/id6824946559?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/cn/app/id6824946559?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/cn/app/id6824946559?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/cn/app/id6824946559?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/zh-Hans/duowallpaperstudio.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6824946559",
+          "inLanguage": "zh-Hans",
+          "description": "专为 iPhone Duo 双屏打造的成对壁纸：合上，外屏是特写；展开，内屏是整片全景，两张出自同一幅原创画面。",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-duowallpaperstudio"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "CNY",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "CN"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 59,
       "url": "https://apps.apple.com/cn/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3705,9 +3837,9 @@
               "value": true
             }
           ],
-          "isAccessibleForFree": true
+          "isAccessibleForFree": false
         },
-        "price": "0",
+        "price": "22",
         "priceCurrency": "CNY",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {

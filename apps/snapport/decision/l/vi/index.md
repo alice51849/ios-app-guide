@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - Không quảng cáo
 - Không theo dõi
 - Riêng tư / trên thiết bị
-- App Store · 119.000đ
+- App Store · 199.000đ
 
 [Tải Snapport trên App Store →](https://apps.apple.com/vn/app/id6780575828?pt=118326163&ct=geo_pick&mt=8)
 

@@ -3,14 +3,14 @@
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "ja",
   "dateModified": "2026-11-05",
-  "content_digest": "61910e5ddeb3079cf11341403307271e15e738eaa3005f21f7f273a56f3f336c",
-  "generation_digest": "3da0f9ae2ce0f51d800df7a4a59fb253ee0568c354f64ac524213da681baa232",
+  "content_digest": "9eea37578a033e66085ccb7d7af51f34884bbfebb02b4e76d477923ddaef3075",
+  "generation_digest": "4056e422ef801744519783d240f235da549d26966182acdfe9ac69b4c173675b",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 57,
+  "record_count": 59,
   "syndication": {
     "atom": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/ja.atom.xml",
     "rss": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/ja.rss.xml",
@@ -1399,7 +1399,7 @@
         "アカウント不要",
         "広告なし",
         "プライベート／端末内",
-        "App Store · ¥1,500",
+        "App Store · 無料",
         "★ 5.0/5 · 1"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ja/answers/best-complete-zhuyin-app-for-bilingual-children.html",
@@ -1411,9 +1411,9 @@
       "app_store_url": "https://apps.apple.com/jp/app/id6775773117?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "App StoreでLumi Bopomofo Proを入手 →",
       "storefront_facts": {
-        "price": "1500",
+        "price": "0",
         "currency": "JPY",
-        "formatted_price": "¥1,500",
+        "formatted_price": "無料",
         "rating_value": 5.0,
         "rating_count": 1
       },
@@ -2720,6 +2720,51 @@
       "verified_live": true
     },
     {
+      "record_id": "ja:tripbeecute",
+      "locale": "ja",
+      "app_key": "tripbeecute",
+      "app_name": "TripBee Cute：かわいい旅のしおり",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "TripBee Cute：かわいい旅のしおり — 旅行計画を友だちと作成・共有、出発までカウントダウン | iOS App",
+      "decision_context": "スクショやメール、メモに散らばった旅の予定を、TripBee Cuteがかわいいイラストの旅のしおり1冊にまとめます。カウントダウンもフライトも毎日の予定も持ち物も、1ページで全部見渡せます。 旅はそれぞれ、本棚に並ぶ1冊のしおりに。イラストの表紙を開いたら、そのまま下へスクロールするだけで、出発までのカウントダウン、フライト、毎日の予定、持ち物リストとメモまで続きます。 ここがうれしい 旅の全体が1ページで見渡せて、アプリを行ったり来たりしなくていい。 日ごとに色が分かれて一目でわかり、日付で絞り込めばその日の予定だけを表示できる。 出発までのカウントダウンで旅の前からわくわく。Apple Watchでも確認できる。 写真やチケット、メモを、その予定のすぐそばに保存できる。 iCloudで友だちを招待して、同じしおりを一緒に編集できる。 Webしおりで共有すれば、どのブラウザやチャットアプリでも開けて、オフラインでも見られる。 こんな旅に 週末の街歩き、家族旅行、女子旅、卒業旅行、新婚旅行、ライブ遠征、はじめての海外旅行にも。旅に名前をつけて表紙を選び、フライトを入れて毎日の予定を埋めるだけ。雨が降ったら雨の日プランに切り替えられます。表計算で予定を立てる派なら、CSVテンプレートを書き出して自分で記入するか、ふだん使っているAIアシスタントに記入してもらい、読み込めばしおりが完成します。 主な機能 イラスト表紙57種類：街、名所、季節、旅の気分（6種類を収録、Cute Passでさらに51種類） 出発までのカウントダウン、行き先の天気と現地時刻 搭乗券風のフライトカード：時刻、ターミナル、予約番号 毎日の予定：日ごとの名前、ステッカー、完了チェック、並べ替え すき間時間と、メインの予定からコピーできる雨の日プラン 日ごとの色分けと、日付での絞り込み 予定ごとに写真・チケット・メモを添付、マップアプリで道順も確認 持ち物リストと、同行者・季節・日数から作るスマート持ち物リスト 旅のメモとやさしいリマインダー 友だちと一緒に計画：iCloudで招待して同じしおりを共同編集し、変更はお互いの端末に同期（相手にもTripBee Cuteが必要です） 自分の複数の端末間でのiCloud同期 CSVの読み込み：記入したテンプレートがそのまましおりに バックアップの書き出しと読み込み：すべて置き換えるか、新しいものだけを追加して何も消さない統合を選べます Webしおり：1つのWebファイルでどのブラウザでも開け、カウントダウンも進み続けます 写真やチケット入りの旅行ファイルを共有でき、TripBeeとTripBee Liteの旅行ファイルも開けます 表紙イラストで次の旅を表示するホーム画面・ロック画面ウィジェット カウントダウンと次の予定がわかるApple Watchアプリ ダークモード、iPad、50言語に対応（端末の言語に合わせるほか、アプリ内でも切り替え可能） プライバシー アカウント登録なし、広告なし、トラッキングなし。しおりは端末に保存され、同期をオンにしたときだけ、あなた自身のプライベートなiCloudに保存されます。天気はOpen-Meteoから、行き先の情報だけを使って取得します。 Cute Passについて 購入しなくても、しおりを一度に1冊保存でき、表紙6種類、CSVの読み込み、Webしおり、フライト、毎日の予定、持ち物リスト、ウィジェット、Apple Watchアプリが使えます。一部の機能は1回限りのApp内課金（Cute Pass）で利用できるようになります：しおりの冊数無制限、表紙51種類の追加、スマート持ち物リスト、iCloud同期とバックアップ、写真やチケット入りの旅行ファイルの共有、友だちとの共同編集。 お問い合わせ ご質問やご要望は、このページのAppサポートのリンクからお寄せください。",
+      "category": "travel",
+      "category_label": "旅行",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "無料で開始・一度の購入でアンロック",
+      "one_time_option": true,
+      "privacy_facts": [],
+      "privacy_labels": [],
+      "device_surfaces": [],
+      "device_labels": [],
+      "badge_labels": [
+        "旅行",
+        "無料で開始・一度の購入でアンロック",
+        "App Store · 無料"
+      ],
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ja/tripbeecute.html",
+      "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/tripbeecute/decision/l/ja/index.html",
+      "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/ja/tripbeecute.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Ftripbeecute%2Fdecision%2Fl%2Fja%2Findex.html&format=json",
+      "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/ja.json",
+      "app_store_id": "6826987407",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6826987407",
+      "app_store_url": "https://apps.apple.com/jp/app/id6826987407?pt=118326163&ct=geo_pick&mt=8",
+      "app_store_cta_label": "App Store で TripBee Cute：かわいい旅のしおり を入手",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "JPY",
+        "formatted_price": "無料"
+      },
+      "guide_cta_label": "完全ガイドを読む",
+      "publisher_disclosure": "これは、掲載するすべてのアプリの開発元である Lumi Studio が公開する一次資料です。",
+      "source_persona_query": "cute travel itinerary app to share a trip plan with friends on iphone",
+      "source_surface": "app_guide_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
       "record_id": "ja:tripbeelite",
       "locale": "ja",
       "app_key": "tripbeelite",
@@ -3187,6 +3232,51 @@
       "verified_live": true
     },
     {
+      "record_id": "ja:foldparty",
+      "locale": "ja",
+      "app_key": "foldparty",
+      "app_name": "にゃんにゃんパーティー：2人で遊べるミニゲーム集",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "にゃんにゃんパーティー：2人で遊べるミニゲーム集 — 折りたたみスマホでもっと楽しい！かわいい猫ゲーム200種 | iOS App",
+      "decision_context": "折りたたみスマホを、ただの大きな画面で終わらせない。にゃんにゃんパーティーは「折る」ことそのものを遊びに変えます。かわいい猫が主役のオリジナルミニゲーム200種は、ほとんどがひとりで遊べて、54種は1台のスマホで2人向かい合って対戦や協力ができます。折りたたみスマホなら、折り目が球技のネットにも、センターラインにも、鏡にもなります。iPhone Duoの折りたたみ画面に最適化され、折りたたむともっと楽しく、普通のiPhoneでもすべてのゲームを遊べます。 かわいい猫たちのチーム「Meow Squad」が主役の、オリジナルミニゲーム200種。 ほとんどのゲームはひとりで遊べて、54種は1台のスマホで2人向かい合って対戦や協力ができます。 1回約30秒から120秒。難易度は少しずつ上がり、ステージのあるゲームもたくさんあります。 パーティー、折りたたみ謎解き、アーケード・リズム、のんびりクリエイトの4ジャンルを各50種収録。 折る操作は折りたたみスマホでいちばん気持ちよく、普通のiPhoneでも画面上の代わりの操作で遊べます。 2人用ゲームの多くは、かわいいCPUを相手にひとりでも練習できます。 オフラインで遊べて、広告なし、アカウント登録も不要。 カフェの待ち時間、ソファでくつろぐ夜、長い移動中、ちょっとしたすき間時間にぴったり。友達や恋人、家族と向かい合ってスマホを間に置けば、折り目が画面を左右に分けて、すぐに勝負が始まります。ひとりのときは、CPUを相手にウォーミングアップしたり、料理や着せ替え、ガーデニングを自分のペースで楽しんだり。 収録内容 パーティー：にぎやかなパーティーゲーム50種。折り目が球技のネットやライン、鏡になります。 折りたたみ謎解き：折ったり開いたりして解く50種のパズル。 アーケード・リズム：反射神経、タイミング、片手の親指ワザを競う50種。 のんびりクリエイト：料理、着せ替え、ガーデニング、ちょっとした経営、文字のないパズルの50種。 折りたたみならではの仕掛け：閉じたまま外側の画面で秘密をのぞいてから、開いて勝負。閉じる動作そのものがゲームの操作になり、開くと小さな世界が広いフィールドへ一気に広がります。 普通のiPhoneでも：すべての折る操作に、画面上の「長押しで閉じる」ボタンか、2本指のピンチ操作が用意されています。 Meow Squad：あなたが操作するのはいつもかわいい猫。2人プレイでは、ふたりとも猫になります。うさぎ、くま、ひよこ、ペンギン、きつね、かえる、おもちたちが、仲間やお客さん、ライバル、アイテムとして登場します。 表示は50言語に対応し、端末の言語設定に自動で合わせます。 プライバシーと購入について にゃんにゃんパーティーにはネットワーク機能がなく、完全にオフラインで動作します。アカウントは不要で、データを一切収集せず、カメラ、位置情報、連絡先、写真も使いません。進行状況はお使いの端末内に保存されます。 広告なし。App内課金なし。200種のゲームがすべて含まれています。 サポート ご質問やMeow Squadへのアイデアは、このページのサポートリンクからお気軽にお寄せください。",
+      "category": "other",
+      "category_label": "その他",
+      "purchase_model": "paid_upfront",
+      "purchase_label": "有料ダウンロード",
+      "one_time_option": true,
+      "privacy_facts": [],
+      "privacy_labels": [],
+      "device_surfaces": [],
+      "device_labels": [],
+      "badge_labels": [
+        "その他",
+        "有料ダウンロード",
+        "App Store · ¥1,000"
+      ],
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ja/foldparty.html",
+      "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/foldparty/decision/l/ja/index.html",
+      "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/ja/foldparty.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Ffoldparty%2Fdecision%2Fl%2Fja%2Findex.html&format=json",
+      "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/ja.json",
+      "app_store_id": "6829184924",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6829184924",
+      "app_store_url": "https://apps.apple.com/jp/app/id6829184924?pt=118326163&ct=geo_pick&mt=8",
+      "app_store_cta_label": "App Store で にゃんにゃんパーティー：2人で遊べるミニゲーム集 を入手",
+      "storefront_facts": {
+        "price": "1000",
+        "currency": "JPY",
+        "formatted_price": "¥1,000"
+      },
+      "guide_cta_label": "完全ガイドを読む",
+      "publisher_disclosure": "これは、掲載するすべてのアプリの開発元である Lumi Studio が公開する一次資料です。",
+      "source_persona_query": "2 player games for two people on one iphone offline without ads",
+      "source_surface": "app_guide_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
       "record_id": "ja:lumiweather",
       "locale": "ja",
       "app_key": "lumiweather",
@@ -3261,7 +3351,7 @@
       "priority_rank": null,
       "priority_group": "baseline_coverage",
       "publisher_query": "台北MRT乗り換え｜捷運時間助手 — 到着時刻から出発を逆算・新北投も | iOS App",
-      "decision_context": "台湾・台北のMRT（地下鉄）専用の、出発時刻を逆算するアプリです。何時に着きたいかを入れるだけで、何時までに駅へ入ればいいかがわかります。 いちばんの特長は50言語対応。毎日MRTで通勤・通学する台湾の人にも、初めて台北MRTに乗る世界中の旅行者にも、最初から最後まで自分の慣れた言語で使っていただけます。iPhone、iPad、Apple Watchに対応しています。 初めての台北旅行で、ホテルを何時に出れば待ち合わせに間に合うのか。夜市のあと、終電にまだ乗れるのか。よくある経路検索は「今出発したら何時に着くか」を教えてくれますが、このアプリは逆から考えます。今いる駅、行きたい駅、到着したい時刻を選ぶと、乗り換えも含めて「何時までに改札を通ればいいか」を計算します。 3つのモードをワンタップで切り替え 左上のガラスボタンで3つのモードを切り替えられます。起動時はMRT経路検索モード。設定でよく使う画面に変更することもできます。 MRT経路検索モード：到着時刻から出発時刻を逆算 出発駅、到着駅、到着時刻を選ぶだけで、遅くとも何時に駅へ入ればいいかがすぐにわかります。乗車と乗り換えを区間ごとのタイムラインで表示し、始発や終電の時間帯には注意を表示。出発時刻になると「そろそろ出発」と通知します。「今すぐ出発」に切り替えれば到着時刻も確認できます。拡大縮小できる路線図を内蔵し、駅をタップして出発駅や到着駅に設定可能。ルートは路線図の上に描かれます。待ち時間は「標準」（運転間隔の半分）と「余裕重視」（運転間隔いっぱい）から選べ、駅に入るまでの余裕時間も調整できます。 小碧潭支線：本数の少ない支線に特化 七張と小碧潭を結ぶ支線は12〜16分に1本ほど。一本逃すと待ち時間が長いのに、一般的な経路アプリでは見落とされがちです。公式の固定ダイヤで次の電車までをカウントダウンし、今日・平日・休日の時刻表をまとめて表示。発車の1〜30分前に通知でき、公式の時刻表PDFもそのまま確認できます。MRT経路検索モードで経路を調べるときも、小碧潭支線は公式ダイヤで正確に逆算します。新店の美河市は小碧潭駅のすぐそば。発車通知を設定しておけば、ホームで長く待たずに済みます。 北投・新北投支線：温泉街へ待たずに 新北投温泉へ向かう北投と新北投を結ぶ支線も、公式の固定ダイヤに対応。次の電車のカウントダウン、時刻表、発車前の通知まで揃っています。 ウィジェットとライブアクティビティ ウィジェットはスマートタイプのひとつだけ。アプリで今使っているモードに合わせて表示が変わり、ウィジェット上の切り替えボタンでそのままモードを変更できます。最終更新時刻も表示します。通知を設定すると、出発すべき時刻や発車までの残り時間を、ロック画面とDynamic Islandでリアルタイムにカウントダウン（iPhoneのみ）。 Apple Watch 単独で動くApple Watchアプリ。3つのモード、駅の選択、カウントダウン、文字盤のコンプリケーションに対応しています。 対応路線 文湖線、淡水信義線（新北投支線を含む）、松山新店線（小碧潭支線を含む）、中和新蘆線、板南線、環状線（第一期区間）、新北捷運の三鶯線（頂埔〜鶯歌、頂埔で板南線に乗り換え可能）。空港MRTとライトレールには対応していません。台北MRTの公式路線図もアプリ内で見られます（拡大できるベクター形式、中国語版と英語版、インターネット接続が必要）。 こんな方に 台北旅行で乗り換えに慣れていない方。待ち合わせや観光の予定を時間どおりに進めたい方。夜遅くに終電へ間に合うか確かめたい方。台北で暮らし、毎日通勤や通学で地下鉄を使う方。 美しく、シンプルに、プライバシーを大切に iOSネイティブのガラス調デザインで、計画はひとつの画面で完結します。50言語に対応し、システム設定に合わせるか、アプリ内で言語を選べます。配色も好みに変更可能。登録不要、個人データの収集なし、広告なし、第三者の分析ツールもなし。計算はすべて端末内で行い、通知も端末内でのみ予約されます。 お試しと購入について ダウンロード後、24時間はすべての機能をお試しいただけます。その後は一度の購入でずっと使えます。サブスクリプションではなく、自動更新もありません。価格はApp Storeでご確認ください。 ご注意 表示される時刻は、公式に公開されている運転間隔と駅間の所要時間にもとづく目安で、リアルタイムの運行情報ではありません。実際の運行は駅の案内をご確認ください。 本アプリは独立して開発されたもので、台北大衆捷運股份有限公司とは関係がなく、同社の承認も受けていません。同社が公開している公式データを利用しています。お問い合わせ：hourstag.app@gmail.com",
+      "decision_context": "台湾・台北のMRT（地下鉄）専用の、出発時刻を逆算するアプリです。何時に着きたいかを入れるだけで、何時までに駅へ入ればいいかがわかります。 いちばんの特長は50言語対応。毎日MRTで通勤・通学する台湾の人にも、初めて台北MRTに乗る世界中の旅行者にも、最初から最後まで自分の慣れた言語で使っていただけます。iPhone、iPad、Apple Watchに対応しています。 初めての台北旅行で、ホテルを何時に出れば待ち合わせに間に合うのか。夜市のあと、終電にまだ乗れるのか。よくある経路検索は「今出発したら何時に着くか」を教えてくれますが、このアプリは逆から考えます。今いる駅、行きたい駅、到着したい時刻を選ぶと、乗り換えも含めて「何時までに改札を通ればいいか」を計算します。 3つのモードをワンタップで切り替え 左上のガラスボタンで3つのモードを切り替えられます。起動時はMRT経路検索モード。設定でよく使う画面に変更することもできます。 MRT経路検索モード：到着時刻から出発時刻を逆算 出発駅、到着駅、到着時刻を選ぶだけで、遅くとも何時に駅へ入ればいいかがすぐにわかります。乗車と乗り換えを区間ごとのタイムラインで表示し、始発や終電の時間帯には注意を表示。出発時刻になると「そろそろ出発」と通知します。「今すぐ出発」に切り替えれば到着時刻も確認できます。拡大縮小できる路線図を内蔵し、駅をタップして出発駅や到着駅に設定可能。ルートは路線図の上に描かれます。待ち時間は「標準」（運転間隔の半分）と「余裕重視」（運転間隔いっぱい）から選べ、駅に入るまでの余裕時間も調整できます。 小碧潭支線：本数の少ない支線に特化 七張と小碧潭を結ぶ支線は12〜16分に1本ほど。一本逃すと待ち時間が長いのに、一般的な経路アプリでは見落とされがちです。公式の固定ダイヤで次の電車までをカウントダウンし、今日・平日・休日の時刻表をまとめて表示。発車の1〜30分前に通知でき、公式の時刻表PDFもそのまま確認できます。MRT経路検索モードで経路を調べるときも、小碧潭支線は公式ダイヤで正確に逆算します。新店の美河市は小碧潭駅のすぐそば。発車通知を設定しておけば、ホームで長く待たずに済みます。 北投・新北投支線：温泉街へ待たずに 新北投温泉へ向かう北投と新北投を結ぶ支線も、公式の固定ダイヤに対応。次の電車のカウントダウン、時刻表、発車前の通知まで揃っています。 ウィジェットとライブアクティビティ ウィジェットはスマートタイプのひとつだけ。アプリで今使っているモードに合わせて表示が変わり、ウィジェット上の切り替えボタンでそのままモードを変更できます。最終更新時刻も表示します。通知を設定すると、出発すべき時刻や発車までの残り時間を、ロック画面とDynamic Islandでリアルタイムにカウントダウン（iPhoneのみ）。 Apple Watch 単独で動くApple Watchアプリ。3つのモード、駅の選択、カウントダウン、文字盤のコンプリケーションに対応しています。 対応路線 文湖線、淡水信義線（新北投支線を含む）、松山新店線（小碧潭支線を含む）、中和新蘆線、板南線、環状線（第一期区間）、新北捷運の三鶯線（頂埔〜鶯歌、頂埔で板南線に乗り換え可能）。空港MRTとライトレールには対応していません。台北MRTの公式路線図もアプリ内で見られます（拡大できるベクター形式、中国語版と英語版、インターネット接続が必要）。 こんな方に 台北旅行で乗り換えに慣れていない方。待ち合わせや観光の予定を時間どおりに進めたい方。夜遅くに終電へ間に合うか確かめたい方。台北で暮らし、毎日通勤や通学で地下鉄を使う方。 美しく、シンプルに、プライバシーを大切に iOSネイティブのガラス調デザインで、計画はひとつの画面で完結します。50言語に対応し、システム設定に合わせるか、アプリ内で言語を選べます。配色も好みに変更可能。登録不要、個人データの収集なし、広告なし、第三者の分析ツールもなし。計算はすべて端末内で行い、通知も端末内でのみ予約されます。 一度の購入ですべて使えます 最初の起動からすべての機能をお使いいただけます。サブスクリプション、アプリ内課金、広告、自動更新は一切ありません。 ご注意 表示される時刻は、公式に公開されている運転間隔と駅間の所要時間にもとづく目安で、リアルタイムの運行情報ではありません。実際の運行は駅の案内をご確認ください。 本アプリは独立して開発されたもので、台北大衆捷運股份有限公司とは関係がなく、同社の承認も受けていません。同社が公開している公式データを利用しています。お問い合わせ：hourstag.app@gmail.com",
       "category": "utility",
       "category_label": "その他",
       "purchase_model": "free_with_lifetime_unlock",
@@ -3274,7 +3364,7 @@
       "badge_labels": [
         "その他",
         "無料で開始・一度の購入でアンロック",
-        "App Store · 無料"
+        "App Store · ¥500"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ja/metrotimehelper.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/metrotimehelper/decision/l/ja/index.html",
@@ -3285,9 +3375,9 @@
       "app_store_url": "https://apps.apple.com/jp/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "App Store で 台北MRT乗り換え｜捷運時間助手 を入手",
       "storefront_facts": {
-        "price": "0",
+        "price": "500",
         "currency": "JPY",
-        "formatted_price": "無料"
+        "formatted_price": "¥500"
       },
       "guide_cta_label": "完全ガイドを読む",
       "publisher_disclosure": "これは、掲載するすべてのアプリの開発元である Lumi Studio が公開する一次資料です。",

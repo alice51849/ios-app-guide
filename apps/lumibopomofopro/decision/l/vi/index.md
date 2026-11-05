@@ -18,7 +18,7 @@ Trẻ song ngữ học Zhuyin tại nhà cần lộ trình đầy đủ qua âm,
 - Không tài khoản
 - Không quảng cáo
 - Riêng tư / trên thiết bị
-- App Store · 299.000đ
+- App Store · Miễn phí
 
 [Tải Lumi Bopomofo Pro trên App Store →](https://apps.apple.com/vn/app/id6775773117?pt=118326163&ct=geo_pick&mt=8)
 

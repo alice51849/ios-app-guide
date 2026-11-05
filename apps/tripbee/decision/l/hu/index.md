@@ -19,7 +19,7 @@ Egy jó útiterv alkalmazás a kusza utazást világos napi bontású idővonalr
 - Nincs reklám
 - Nincs követés
 - Privát / eszközön tárolt
-- App Store · HUF1,490.00
+- App Store · HUF2,490.00
 
 [Szerezd be a TripBee Pro: Utazástervezőt az App Store-ból →](https://apps.apple.com/hu/app/id6787754435?pt=118326163&ct=geo_pick&mt=8)
 

@@ -17,7 +17,7 @@ Optimalizované pre iPhone Duo. Aplikácia je zostavená s najnovším SDK, vypl
 - Platené stiahnutie
 - Bez účtu
 - Apple Watch
-- App Store · 3,90 €
+- App Store · 6,99 €
 
 [Stiahnuť WiFi Aid: Nájdite chyby siete v App Store](https://apps.apple.com/sk/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)
 

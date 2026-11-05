@@ -1,12 +1,12 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-11-04",
-  "content_digest": "d41bfe7e156aabee8cf16c8afd333da7f2ca1d1367dc4352339ff83f32cded2b",
+  "date_modified": "2026-11-05",
+  "content_digest": "cfd8097e2d160bb22da9f0415e9bc3c45e093acb6a1c2a6fc701a91301d98006",
   "locale": "ko",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 57,
+  "record_count": 59,
   "apps": [
     {
       "key": "notesstudio100",
@@ -466,9 +466,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/ko/dailymate.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "9900",
+        "price": "19000",
         "currency": "KRW",
-        "formatted_price": "￦9,900",
+        "formatted_price": "￦19,000",
         "storefront_url": "https://apps.apple.com/kr/app/id6790418321"
       }
     },
@@ -735,9 +735,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/ko/gmoney.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "4400",
+        "price": "7700",
         "currency": "KRW",
-        "formatted_price": "￦4,400",
+        "formatted_price": "￦7,700",
         "storefront_url": "https://apps.apple.com/kr/app/id6755782939"
       }
     },
@@ -835,9 +835,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/ko/gbago.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "7700",
+        "price": "15000",
         "currency": "KRW",
-        "formatted_price": "￦7,700",
+        "formatted_price": "￦15,000",
         "storefront_url": "https://apps.apple.com/kr/app/id6804564400"
       }
     },
@@ -1161,9 +1161,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/ko/lumibopomofopro.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "15000",
+        "price": "0",
         "currency": "KRW",
-        "formatted_price": "￦15,000",
+        "formatted_price": "무료",
         "storefront_url": "https://apps.apple.com/kr/app/id6775773117"
       }
     },
@@ -1598,6 +1598,62 @@
       }
     },
     {
+      "key": "foldparty",
+      "app_store_id": "6829184924",
+      "name": "냥냥 파티: 고양이 2인용 게임",
+      "summary": "폴더블 폰을 그냥 큰 화면으로만 쓰기엔 아까우니까, 냥냥 파티는 '접기' 자체를 놀이로 바꿨어요. 귀여운 고양이가 주인공인 오리지널 미니게임 200개는 대부분 혼자 할 수 있고, 그중 54개는 한 폰으로 둘이 마주 보고 대결하거나 협동할 수 있어요. 폴더블에서는 접힌 선이 네트도 되고 중앙선도 되고 거울도 돼요. iPhone Duo 폴더블 화면에 최적화되어 접으면 더 재밌고, 일반 iPhone에서도 모든 게임을 온전히 즐길 수 있어요.",
+      "category": "other",
+      "search_terms": [
+        "오프라인",
+        "데이터",
+        "인터넷",
+        "필요없는",
+        "둘이서",
+        "두명",
+        "같이",
+        "함께",
+        "대결",
+        "1대1",
+        "협동",
+        "혼자",
+        "커플",
+        "친구",
+        "가족",
+        "냥이",
+        "모음",
+        "퍼즐",
+        "아케이드",
+        "리듬",
+        "반응속도",
+        "힐링",
+        "요리",
+        "옷입히기",
+        "경영",
+        "심심할때",
+        "시간때우기"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/kr/app/id6829184924?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/ko/foldparty.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "9900",
+        "currency": "KRW",
+        "formatted_price": "￦9,900",
+        "storefront_url": "https://apps.apple.com/kr/app/id6829184924"
+      }
+    },
+    {
       "key": "metrotimehelper",
       "app_store_id": "6819061896",
       "name": "타이베이 지하철 시간 도우미",
@@ -1647,9 +1703,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/ko/metrotimehelper.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "0",
+        "price": "4400",
         "currency": "KRW",
-        "formatted_price": "무료",
+        "formatted_price": "￦4,400",
         "storefront_url": "https://apps.apple.com/kr/app/id6819061896"
       }
     },
@@ -2277,9 +2333,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/ko/snapport.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "5500",
+        "price": "9900",
         "currency": "KRW",
-        "formatted_price": "￦5,500",
+        "formatted_price": "￦9,900",
         "storefront_url": "https://apps.apple.com/kr/app/id6780575828"
       }
     },
@@ -2545,6 +2601,62 @@
       }
     },
     {
+      "key": "tripbeecute",
+      "app_store_id": "6826987407",
+      "name": "TripBee Cute: 여행 일정 다이어리",
+      "summary": "캡처, 메일, 메모에 흩어진 여행 정보를 TripBee Cute가 귀여운 일러스트 여행 책자 한 권으로 모아 줘요. 디데이, 항공편, 하루 일정, 준비물까지 한 페이지에서 끝나요.",
+      "category": "travel",
+      "search_terms": [
+        "여행일정",
+        "여행계획",
+        "일정표",
+        "플래너",
+        "위젯",
+        "준비물",
+        "체크리스트",
+        "공유",
+        "친구",
+        "커플",
+        "기록",
+        "일기",
+        "꾸미기",
+        "다꾸",
+        "스티커",
+        "감성",
+        "아기자기",
+        "추억",
+        "일본",
+        "제주",
+        "해외여행",
+        "국내여행",
+        "신혼",
+        "가족",
+        "짐",
+        "리스트",
+        "우정"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/kr/app/id6826987407?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/ko/tripbeecute.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "KRW",
+        "formatted_price": "무료",
+        "storefront_url": "https://apps.apple.com/kr/app/id6826987407"
+      }
+    },
+    {
       "key": "tripbeelite",
       "app_store_id": "6791299610",
       "name": "TripBee Lite: 여행 플래너",
@@ -2648,9 +2760,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/ko/tripbee.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "5500",
+        "price": "9900",
         "currency": "KRW",
-        "formatted_price": "￦5,500",
+        "formatted_price": "￦9,900",
         "storefront_url": "https://apps.apple.com/kr/app/id6787754435"
       }
     },
@@ -2800,9 +2912,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/ko/wifiaid.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "5500",
+        "price": "9900",
         "currency": "KRW",
-        "formatted_price": "￦5,500",
+        "formatted_price": "￦9,900",
         "storefront_url": "https://apps.apple.com/kr/app/id6790467886"
       }
     },
@@ -2956,9 +3068,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/ko/wordmate.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "7700",
+        "price": "15000",
         "currency": "KRW",
-        "formatted_price": "￦7,700",
+        "formatted_price": "￦15,000",
         "storefront_url": "https://apps.apple.com/kr/app/id6789917808"
       }
     },
@@ -3007,9 +3119,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/ko/zipbox.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "4400",
+        "price": "7700",
         "currency": "KRW",
-        "formatted_price": "￦4,400",
+        "formatted_price": "￦7,700",
         "storefront_url": "https://apps.apple.com/kr/app/id6806776579"
       }
     }

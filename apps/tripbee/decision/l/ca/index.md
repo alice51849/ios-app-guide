@@ -19,7 +19,7 @@ Una bona app d’itineraris converteix un viatge desordenat en una línia de tem
 - Sense anuncis
 - Sense seguiment
 - Privat / en el dispositiu
-- App Store · 3,90 €
+- App Store · 6,99 €
 
 [Descarrega TripBee Pro: Planificador de Viatges a l’App Store →](https://apps.apple.com/es/app/id6787754435?pt=118326163&ct=geo_pick&mt=8)
 

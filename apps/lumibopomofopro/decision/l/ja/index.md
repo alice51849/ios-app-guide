@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - アカウント不要
 - 広告なし
 - プライベート／端末内
-- App Store · ¥1,500
+- App Store · 無料
 - ★ 5.0/5 · 1
 
 [App StoreでLumi Bopomofo Proを入手 →](https://apps.apple.com/jp/app/id6775773117?pt=118326163&ct=geo_pick&mt=8)

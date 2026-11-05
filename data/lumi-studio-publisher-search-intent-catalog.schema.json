@@ -74,13 +74,13 @@
       "const": "official_locale_order_then_alphabetical_app_name"
     },
     "app_count": {
-      "const": 57
+      "const": 59
     },
     "locale_count": {
       "const": 50
     },
     "record_count": {
-      "const": 2850
+      "const": 2950
     },
     "locales": {
       "type": "array",
@@ -144,8 +144,8 @@
     },
     "records": {
       "type": "array",
-      "minItems": 2850,
-      "maxItems": 2850,
+      "minItems": 2950,
+      "maxItems": 2950,
       "items": {
         "type": "object",
         "additionalProperties": false,
@@ -244,6 +244,7 @@
               "dbhalo",
               "duowallpaperstudio",
               "easyam",
+              "foldparty",
               "gbago",
               "gmoney",
               "gmoneylite",
@@ -280,6 +281,7 @@
               "stayclock",
               "studydown",
               "tripbee",
+              "tripbeecute",
               "tripbeelite",
               "tripplanet",
               "unblurry",

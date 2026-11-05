@@ -1,12 +1,12 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-11-04",
-  "content_digest": "d41bfe7e156aabee8cf16c8afd333da7f2ca1d1367dc4352339ff83f32cded2b",
+  "date_modified": "2026-11-05",
+  "content_digest": "cfd8097e2d160bb22da9f0415e9bc3c45e093acb6a1c2a6fc701a91301d98006",
   "locale": "ja",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 57,
+  "record_count": 59,
   "apps": [
     {
       "key": "notesstudio100",
@@ -1117,9 +1117,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/ja/lumibopomofopro.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "1500",
+        "price": "0",
         "currency": "JPY",
-        "formatted_price": "¥1,500",
+        "formatted_price": "無料",
         "rating_value": 5.0,
         "rating_count": 1,
         "storefront_url": "https://apps.apple.com/jp/app/id6775773117"
@@ -1544,6 +1544,60 @@
       }
     },
     {
+      "key": "foldparty",
+      "app_store_id": "6829184924",
+      "name": "にゃんにゃんパーティー：2人で遊べるミニゲーム集",
+      "summary": "折りたたみスマホを、ただの大きな画面で終わらせない。にゃんにゃんパーティーは「折る」ことそのものを遊びに変えます。かわいい猫が主役のオリジナルミニゲーム200種は、ほとんどがひとりで遊べて、54種は1台のスマホで2人向かい合って対戦や協力ができます。折りたたみスマホなら、折り目が球技のネットにも、センターラインにも、鏡にもなります。iPhone Duoの折りたたみ画面に最適化され、折りたたむともっと楽しく、普通のiPhoneでもすべてのゲームを遊べます。",
+      "category": "other",
+      "search_terms": [
+        "対戦",
+        "二人",
+        "ふたり",
+        "1台",
+        "協力",
+        "オフライン",
+        "暇つぶし",
+        "ねこ",
+        "ネコ",
+        "にゃんこ",
+        "子猫",
+        "可愛い",
+        "パズル",
+        "謎解き",
+        "リズム",
+        "反射神経",
+        "料理",
+        "着せ替え",
+        "経営",
+        "癒し",
+        "カップル",
+        "友達",
+        "家族",
+        "折り畳み",
+        "フォルダブル"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/jp/app/id6829184924?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/ja/foldparty.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "1000",
+        "currency": "JPY",
+        "formatted_price": "¥1,000",
+        "storefront_url": "https://apps.apple.com/jp/app/id6829184924"
+      }
+    },
+    {
       "key": "metrotimehelper",
       "app_store_id": "6819061896",
       "name": "台北MRT乗り換え｜捷運時間助手",
@@ -1592,9 +1646,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/ja/metrotimehelper.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "0",
+        "price": "500",
         "currency": "JPY",
-        "formatted_price": "無料",
+        "formatted_price": "¥500",
         "storefront_url": "https://apps.apple.com/jp/app/id6819061896"
       }
     },
@@ -2447,6 +2501,60 @@
         "currency": "JPY",
         "formatted_price": "無料",
         "storefront_url": "https://apps.apple.com/jp/app/id6787193643"
+      }
+    },
+    {
+      "key": "tripbeecute",
+      "app_store_id": "6826987407",
+      "name": "TripBee Cute：かわいい旅のしおり",
+      "summary": "スクショやメール、メモに散らばった旅の予定を、TripBee Cuteがかわいいイラストの旅のしおり1冊にまとめます。カウントダウンもフライトも毎日の予定も持ち物も、1ページで全部見渡せます。",
+      "category": "travel",
+      "search_terms": [
+        "旅程表",
+        "持ち物リスト",
+        "プラン",
+        "共同編集",
+        "スケジュール",
+        "ウィジェット",
+        "あと何日",
+        "ロック画面",
+        "海外",
+        "国内",
+        "日記",
+        "記録",
+        "可愛い",
+        "友達",
+        "女子旅",
+        "韓国",
+        "台湾",
+        "準備",
+        "家族",
+        "遠征",
+        "手帳",
+        "日程",
+        "栞",
+        "おしゃれ",
+        "卒業"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/jp/app/id6826987407?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/ja/tripbeecute.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "JPY",
+        "formatted_price": "無料",
+        "storefront_url": "https://apps.apple.com/jp/app/id6826987407"
       }
     },
     {

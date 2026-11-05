@@ -1,14 +1,14 @@
 {
-  "abstained_pairs": 2775,
-  "app_count": 57,
-  "candidate_app_locale_pairs": 2850,
-  "creative_count": 57,
+  "abstained_pairs": 2871,
+  "app_count": 59,
+  "candidate_app_locale_pairs": 2950,
+  "creative_count": 59,
   "current_inventory": {
-    "app_keys_sha256": "7f924dfde27d2837584c4acb584b8bcb26751a9b6e00dd332a70c475ef06eb64",
-    "copy_sha256": "b04ddaa7e98009e49c52be2ccc404508fa97157902769e03e520dd0c67c65718",
+    "app_keys_sha256": "91a8c5ad6ebdc42c5291d585318ecd9658acde15edc650c00d50b6c6b555420d",
+    "copy_sha256": "123b54e948dea6f8025bc396a85cad7f76ff5ba3e6dd8d105ac7cc85f205490f",
     "missing_route_app_keys": [],
     "missing_route_app_keys_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-    "public_apps": 57
+    "public_apps": 59
   },
   "dataset": "Lumi Studio High-Intent Decision Routes",
   "deployment_state": "generated_not_deployed",
@@ -24,12 +24,12 @@
       "relative_path": "data/high-intent-decision-routes/conversion-contracts.schema.json"
     },
     {
-      "generated_sha256": "1cf0a1d56bb8c57fb75760574d3aa14bd5f6d955a62de871064740b4b59c382c",
+      "generated_sha256": "198c97819faf1edab4da49f842e1bea59df06c40218497885dd476f7d7486e59",
       "kind": "coverage_report",
       "relative_path": "data/high-intent-decision-routes/coverage.json"
     },
     {
-      "generated_sha256": "8c8e639024f5808faec8634b36cb3b894487af3523ea88c15584997a6abef0c4",
+      "generated_sha256": "498afe4220d33d2b047d98345801fb6ba7e0585a4ced5b0ef0e5e17f16e2300d",
       "kind": "json_feed",
       "relative_path": "data/high-intent-decision-routes/feed.json"
     },
@@ -59,7 +59,7 @@
       "relative_path": "en-US/decide/caldaily/save-name-search-calculation-history.html"
     },
     {
-      "generated_sha256": "e726100cc9ddd49a77c49b667b4cff02f4c96c3d984575ae29e273f714ce38c2",
+      "generated_sha256": "3eac38dd55819e771ae8f9e7b0170354c8b795f3ae2e2db3b07ed431c3c68eaf",
       "kind": "route_html",
       "relative_path": "en-US/decide/claudeusagemini/see-claude-and-codex-limits-before-they-run-out.html"
     },
@@ -102,6 +102,11 @@
       "generated_sha256": "18bb1b323b2d554729643252e5b9ce681e14bcf9a25ca6984876c2963037072c",
       "kind": "route_html",
       "relative_path": "en-US/decide/easyam/stop-your-alarm-ringing-on-public-holidays-and-days-off.html"
+    },
+    {
+      "generated_sha256": "e9868374ca86b24f52173bf68fe6b357b43642999418551398ba4f7a336d3060",
+      "kind": "route_html",
+      "relative_path": "en-US/decide/foldparty/two-player-games-face-to-face-on-one-iphone.html"
     },
     {
       "generated_sha256": "38690875cf498207323b51beaf0086b9365b5423254b4f1c775485c379bec393",
@@ -284,6 +289,11 @@
       "relative_path": "en-US/decide/tripbee/private-offline-family-trip-plan.html"
     },
     {
+      "generated_sha256": "781b5f25d00dcb340794c6edbfbddfc2ec137c00ea315ce0ec6bae5dad36f641",
+      "kind": "route_html",
+      "relative_path": "en-US/decide/tripbeecute/cute-trip-planner-that-keeps-the-whole-trip-on-one-page.html"
+    },
+    {
       "generated_sha256": "c3d4887a0bfe89d36d585252f0f9337a31a89878ae44bed49cdd6234314d1719",
       "kind": "route_html",
       "relative_path": "en-US/decide/tripbeelite/plan-one-upcoming-trip-without-clutter.html"
@@ -344,7 +354,7 @@
       "relative_path": "ja/decide/unblurry/improve-soft-family-photo-realistically.html"
     },
     {
-      "generated_sha256": "5bf3a293d14301bd5b23981e4f3ddc80101d23390b0cb2130e999d8eefe6dfb5",
+      "generated_sha256": "ac972a64941a8018b26f820453f7c86d197512d4dd48d77c63fd89152b631d3f",
       "kind": "sitemap",
       "relative_path": "sitemap-high-intent-decision-routes.xml"
     },
@@ -354,7 +364,7 @@
       "relative_path": "zh-Hant/decide/battai/decide-when-an-iphone-battery-needs-service.html"
     },
     {
-      "generated_sha256": "b27f6c7774d2c7b0a2356ec944e5dbe3f6e6093c97362fb19666a0503f9d5245",
+      "generated_sha256": "d0c7cf2b3b140558e85257029bfc63d539d535e3421dc00f67fa9107564b1196",
       "kind": "route_html",
       "relative_path": "zh-Hant/decide/claudeusagemini/see-claude-and-codex-limits-before-they-run-out.html"
     },
@@ -372,6 +382,11 @@
       "generated_sha256": "1b4d1a083a02ac06b311513f658d9bdabaa54a007538aa7ea8814f38920ab1e8",
       "kind": "route_html",
       "relative_path": "zh-Hant/decide/easyam/stop-your-alarm-ringing-on-public-holidays-and-days-off.html"
+    },
+    {
+      "generated_sha256": "219d8d479dc12c198c7a022376d117bd38c927edcace26a9182d49add34b4c3e",
+      "kind": "route_html",
+      "relative_path": "zh-Hant/decide/foldparty/two-player-games-face-to-face-on-one-iphone.html"
     },
     {
       "generated_sha256": "b2f265693e1f28bc6a41eccab35570f5962a3d03f9a87340c2c428d2729a9a53",
@@ -412,21 +427,26 @@
       "generated_sha256": "920bbe28c3a217c0df1f80df45a01ff40bf2dbfbdf61e556c683b6c766f732e4",
       "kind": "route_html",
       "relative_path": "zh-Hant/decide/shotinbox/sort-search-and-finish-screenshot-backlog.html"
+    },
+    {
+      "generated_sha256": "90cb5ad230a8dd42b668f6fe6e9942913849ac7915789d1cb30415d27f6fc9c3",
+      "kind": "route_html",
+      "relative_path": "zh-Hant/decide/tripbeecute/cute-trip-planner-that-keeps-the-whole-trip-on-one-page.html"
     }
   ],
   "fallback_records": 0,
   "inventory": {
-    "app_keys_sha256": "7f924dfde27d2837584c4acb584b8bcb26751a9b6e00dd332a70c475ef06eb64",
-    "copy_sha256": "b04ddaa7e98009e49c52be2ccc404508fa97157902769e03e520dd0c67c65718",
+    "app_keys_sha256": "91a8c5ad6ebdc42c5291d585318ecd9658acde15edc650c00d50b6c6b555420d",
+    "copy_sha256": "123b54e948dea6f8025bc396a85cad7f76ff5ba3e6dd8d105ac7cc85f205490f",
     "official_locales_sha256": "e26dabf9370286ad8fd12034270cfcade92b2db4f4a0eecc19324203ce84d5bd",
-    "public_apps": 57,
+    "public_apps": 59,
     "relative_path": "data/verified-ios-app-finder-catalog.json"
   },
-  "manifest_digest": "18315c6dfc65b8eb2a3b7e92f72a6b4bf0d31ca08e3b17b60bfc6830171ce824",
+  "manifest_digest": "ec11fba5fac706d78300659df0dfa4b7ba2e56c04c3250f81e0b921e1f92e9ba",
   "owner": "high_intent_decision_routes",
-  "release_contract_digest": "12368bde7598be8bb09e1add46b5161836e2d7fb0d4ab8d974b84eb624706492",
+  "release_contract_digest": "082b9797a43e8a2561c86cd34bf3d7e9a02fbe650dc106d86a0b72c9057a622a",
   "release_state": "exact",
-  "route_count": 75,
+  "route_count": 79,
   "routes": [
     {
       "app_key": "mochidonestamp",
@@ -523,8 +543,8 @@
       "creative_id": "claudeusagemini:see-claude-and-codex-limits-before-they-run-out:problem_aware",
       "intent_type": "problem_aware",
       "locale": "en-US",
-      "output_sha256": "e726100cc9ddd49a77c49b667b4cff02f4c96c3d984575ae29e273f714ce38c2",
-      "record_digest": "f403cd2023bea1ef3304be7ea9490acdc24add41acac8972739b372cb340d4e1",
+      "output_sha256": "3eac38dd55819e771ae8f9e7b0170354c8b795f3ae2e2db3b07ed431c3c68eaf",
+      "record_digest": "35ca666271eccfbba971d48d8393f3bcfdaea67314400d8afa996fe64e1d6544",
       "relative_path": "en-US/decide/claudeusagemini/see-claude-and-codex-limits-before-they-run-out.html",
       "route_id": "en-US:claudeusagemini:see-claude-and-codex-limits-before-they-run-out",
       "route_slug": "see-claude-and-codex-limits-before-they-run-out",
@@ -665,6 +685,23 @@
       "route_id": "en-US:easyam:stop-your-alarm-ringing-on-public-holidays-and-days-off",
       "route_slug": "stop-your-alarm-ringing-on-public-holidays-and-days-off",
       "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/easyam/stop-your-alarm-ringing-on-public-holidays-and-days-off.html"
+    },
+    {
+      "app_key": "foldparty",
+      "app_store_id": "6829184924",
+      "app_store_url": "https://apps.apple.com/us/app/id6829184924?pt=118326163&ct=geo_ask&mt=8",
+      "campaign_token": "geo_ask",
+      "content_type": "problem_aware",
+      "creative_digest": "99c6ffe9a9d0701db941578e24f229f71c95475eb54c07db9c85cab797030e7e",
+      "creative_id": "foldparty:two-player-games-face-to-face-on-one-iphone:problem_aware",
+      "intent_type": "problem_aware",
+      "locale": "en-US",
+      "output_sha256": "e9868374ca86b24f52173bf68fe6b357b43642999418551398ba4f7a336d3060",
+      "record_digest": "9f856bca7e08054bf6a539f2c5951424e9e4a43385769b726c2ebaa675ccd2ed",
+      "relative_path": "en-US/decide/foldparty/two-player-games-face-to-face-on-one-iphone.html",
+      "route_id": "en-US:foldparty:two-player-games-face-to-face-on-one-iphone",
+      "route_slug": "two-player-games-face-to-face-on-one-iphone",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/foldparty/two-player-games-face-to-face-on-one-iphone.html"
     },
     {
       "app_key": "gbago",
@@ -1279,6 +1316,23 @@
       "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/tripbee/private-offline-family-trip-plan.html"
     },
     {
+      "app_key": "tripbeecute",
+      "app_store_id": "6826987407",
+      "app_store_url": "https://apps.apple.com/us/app/id6826987407?pt=118326163&ct=geo_ask&mt=8",
+      "campaign_token": "geo_ask",
+      "content_type": "problem_aware",
+      "creative_digest": "77f2db279052db2ace122a3e68c32052ce58d0db379e90f210147d9e5f6af219",
+      "creative_id": "tripbeecute:cute-trip-planner-that-keeps-the-whole-trip-on-one-page:problem_aware",
+      "intent_type": "problem_aware",
+      "locale": "en-US",
+      "output_sha256": "781b5f25d00dcb340794c6edbfbddfc2ec137c00ea315ce0ec6bae5dad36f641",
+      "record_digest": "741d1ecc09ccbcc0caa520de26b13d778281b5302bbee11322adbff85eea4d7f",
+      "relative_path": "en-US/decide/tripbeecute/cute-trip-planner-that-keeps-the-whole-trip-on-one-page.html",
+      "route_id": "en-US:tripbeecute:cute-trip-planner-that-keeps-the-whole-trip-on-one-page",
+      "route_slug": "cute-trip-planner-that-keeps-the-whole-trip-on-one-page",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/tripbeecute/cute-trip-planner-that-keeps-the-whole-trip-on-one-page.html"
+    },
+    {
       "app_key": "tripbeelite",
       "app_store_id": "6791299610",
       "app_store_url": "https://apps.apple.com/us/app/id6791299610?pt=118326163&ct=geo_pick&mt=8",
@@ -1509,8 +1563,8 @@
       "creative_id": "claudeusagemini:see-claude-and-codex-limits-before-they-run-out:problem_aware",
       "intent_type": "problem_aware",
       "locale": "zh-Hant",
-      "output_sha256": "b27f6c7774d2c7b0a2356ec944e5dbe3f6e6093c97362fb19666a0503f9d5245",
-      "record_digest": "472151fd2e301aa7e64890c32554391654a9fffef61b98a1cf87cdfa6cfe892e",
+      "output_sha256": "d0c7cf2b3b140558e85257029bfc63d539d535e3421dc00f67fa9107564b1196",
+      "record_digest": "d7357ac52fc0332b85bce1ca599b9b399eb723c6d0ee195a553a893d9b64e112",
       "relative_path": "zh-Hant/decide/claudeusagemini/see-claude-and-codex-limits-before-they-run-out.html",
       "route_id": "zh-Hant:claudeusagemini:see-claude-and-codex-limits-before-they-run-out",
       "route_slug": "see-claude-and-codex-limits-before-they-run-out",
@@ -1566,6 +1620,23 @@
       "route_id": "zh-Hant:easyam:stop-your-alarm-ringing-on-public-holidays-and-days-off",
       "route_slug": "stop-your-alarm-ringing-on-public-holidays-and-days-off",
       "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/decide/easyam/stop-your-alarm-ringing-on-public-holidays-and-days-off.html"
+    },
+    {
+      "app_key": "foldparty",
+      "app_store_id": "6829184924",
+      "app_store_url": "https://apps.apple.com/tw/app/id6829184924?pt=118326163&ct=geo_ask&mt=8",
+      "campaign_token": "geo_ask",
+      "content_type": "problem_aware",
+      "creative_digest": "99c6ffe9a9d0701db941578e24f229f71c95475eb54c07db9c85cab797030e7e",
+      "creative_id": "foldparty:two-player-games-face-to-face-on-one-iphone:problem_aware",
+      "intent_type": "problem_aware",
+      "locale": "zh-Hant",
+      "output_sha256": "219d8d479dc12c198c7a022376d117bd38c927edcace26a9182d49add34b4c3e",
+      "record_digest": "241faeb95cdbb8f369d91b9e7c5d08a0727d68fb3741a72f46633e34252f5eaa",
+      "relative_path": "zh-Hant/decide/foldparty/two-player-games-face-to-face-on-one-iphone.html",
+      "route_id": "zh-Hant:foldparty:two-player-games-face-to-face-on-one-iphone",
+      "route_slug": "two-player-games-face-to-face-on-one-iphone",
+      "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/decide/foldparty/two-player-games-face-to-face-on-one-iphone.html"
     },
     {
       "app_key": "gbago",
@@ -1702,9 +1773,26 @@
       "route_id": "zh-Hant:shotinbox:sort-search-and-finish-screenshot-backlog",
       "route_slug": "sort-search-and-finish-screenshot-backlog",
       "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/decide/shotinbox/sort-search-and-finish-screenshot-backlog.html"
+    },
+    {
+      "app_key": "tripbeecute",
+      "app_store_id": "6826987407",
+      "app_store_url": "https://apps.apple.com/tw/app/id6826987407?pt=118326163&ct=geo_ask&mt=8",
+      "campaign_token": "geo_ask",
+      "content_type": "problem_aware",
+      "creative_digest": "77f2db279052db2ace122a3e68c32052ce58d0db379e90f210147d9e5f6af219",
+      "creative_id": "tripbeecute:cute-trip-planner-that-keeps-the-whole-trip-on-one-page:problem_aware",
+      "intent_type": "problem_aware",
+      "locale": "zh-Hant",
+      "output_sha256": "90cb5ad230a8dd42b668f6fe6e9942913849ac7915789d1cb30415d27f6fc9c3",
+      "record_digest": "b0fb1237d0645a5f3fe175a29e7fa76773173aa509c9e4216b6b9f0382961463",
+      "relative_path": "zh-Hant/decide/tripbeecute/cute-trip-planner-that-keeps-the-whole-trip-on-one-page.html",
+      "route_id": "zh-Hant:tripbeecute:cute-trip-planner-that-keeps-the-whole-trip-on-one-page",
+      "route_slug": "cute-trip-planner-that-keeps-the-whole-trip-on-one-page",
+      "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/decide/tripbeecute/cute-trip-planner-that-keeps-the-whole-trip-on-one-page.html"
     }
   ],
   "schema_version": 2,
   "site": "https://open.cait518.cc/ios-app-guide",
-  "source_contract_digest": "7107e9dde36e8397d151989ea983ff206df2eef1f1774851f27102d7be3f5cf1"
+  "source_contract_digest": "66e91499973ad7fc416726c248a0869cbac96e79d179076c72e6533df866d9b9"
 }

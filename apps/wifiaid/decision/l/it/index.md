@@ -17,7 +17,7 @@ Ottimizzata per iPhone Duo. Realizzata con l’SDK più recente, l’app riempie
 - Scaricamento a pagamento
 - Nessun account
 - Apple Watch
-- App Store · 3,90 €
+- App Store · 6,99 €
 
 [Scarica WiFi Aid: Trova guasti di rete sull'App Store](https://apps.apple.com/it/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)
 

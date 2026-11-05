@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - Λήψη με χρέωση
 - Χωρίς λογαριασμό
 - Apple Watch
-- App Store · 3,90 €
+- App Store · 6,99 €
 
 [Αποκτήστε το WiFi Aid: Εντοπισμός βλαβών από το App Store](https://apps.apple.com/gr/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)
 

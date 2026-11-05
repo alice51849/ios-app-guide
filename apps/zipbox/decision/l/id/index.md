@@ -20,7 +20,7 @@ Dioptimalkan untuk iPhone Duo. Dibangun dengan SDK terbaru, aplikasi ini memenuh
 - Tanpa iklan
 - Tanpa pelacakan
 - Privat / di perangkat
-- App Store · Rp 59ribu
+- App Store · Rp 99ribu
 
 [Dapatkan Zipbox: Ekstrak RAR, ZIP, 7z di App Store](https://apps.apple.com/id/app/id6806776579?pt=118326163&ct=geo_pick&mt=8)
 

@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - ส่วนตัว / บนอุปกรณ์
 - วิดเจ็ต
 - Apple Watch
-- App Store · ฿199.00
+- App Store · ฿299.00
 
 [ดาวน์โหลด Wordmate: Learn 44 Languages ใน App Store →](https://apps.apple.com/th/app/id6789917808?pt=118326163&ct=geo_pick&mt=8)
 

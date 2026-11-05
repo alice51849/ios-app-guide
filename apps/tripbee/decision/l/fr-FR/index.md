@@ -19,7 +19,7 @@ Une bonne application d’itinéraire transforme un voyage désordonné en une c
 - Sans publicité
 - Sans suivi
 - Privé / sur l’appareil
-- App Store · 3,90 €
+- App Store · 6,99 €
 
 [Téléchargez TripBee Pro : Planificateur de voyage sur l’App Store →](https://apps.apple.com/fr/app/id6787754435?pt=118326163&ct=geo_pick&mt=8)
 

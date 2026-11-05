@@ -19,7 +19,7 @@ Pentru fotografia de pașaport a bebelușului, nimeni altcineva nu poate fi în 
 - Fără reclame
 - Fără urmărire
 - Privat / pe dispozitiv
-- App Store · 17,99 lei
+- App Store · 29,99 lei
 
 [Descarcă Snapport din App Store →](https://apps.apple.com/ro/app/id6780575828?pt=118326163&ct=geo_pick&mt=8)
 

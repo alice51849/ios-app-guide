@@ -20,7 +20,7 @@ iPhone Duo ਡਿਵਾਈਸ ਲਈ ਅਨੁਕੂਲਿਤ। ਨਵੀਨਤ
 - ਕੋਈ ਵਿਗਿਆਪਨ ਨਹੀਂ
 - ਕੋਈ ਟ੍ਰੈਕਿੰਗ ਨਹੀਂ
 - ਨਿੱਜੀ / ਡਿਵਾਈਸ 'ਤੇ
-- App Store · ₹ 299
+- App Store · ₹ 499
 
 [App Store ਤੋਂ Zipbox: ZIP, RAR, 7z ਅਨਜ਼ਿਪ ਪ੍ਰਾਪਤ ਕਰੋ](https://apps.apple.com/in/app/id6806776579?pt=118326163&ct=geo_pick&mt=8)
 

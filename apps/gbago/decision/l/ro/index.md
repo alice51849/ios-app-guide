@@ -16,7 +16,7 @@ Optimizată pentru iPhone Duo. Creată cu cel mai recent SDK, aplicația umple t
 - Mai mult
 - Descărcare plătită
 - Offline
-- App Store · 29,99 lei
+- App Store · 49,99 lei
 
 [Descarcă GBAGo: Salvări vizuale din App Store](https://apps.apple.com/ro/app/id6804564400?pt=118326163&ct=geo_pick&mt=8)
 

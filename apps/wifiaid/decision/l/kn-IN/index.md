@@ -17,7 +17,7 @@ iPhone Duo ಸಾಧನಕ್ಕಾಗಿ ಆಪ್ಟಿಮೈಸ್ ಮಾಡ�
 - ಪಾವತಿಸಿದ ಡೌನ್‌ಲೋಡ್
 - ಖಾತೆ ಇಲ್ಲ
 - Apple Watch
-- App Store · ₹ 349
+- App Store · ₹ 599
 
 [App Store ನಲ್ಲಿ WiFi Aid: ನೆಟ್ವರ್ಕ್ ಸಮಸ್ಯೆ ಪಡೆಯಿರಿ](https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)
 

@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - 無廣告
 - 無追蹤
 - 隱私優先／裝置端
-- App Store · $120.00
+- App Store · $190.00
 - ★ 4.7/5 · 3
 
 [在 App Store 取得 TripBee Pro：旅遊規劃師 →](https://apps.apple.com/tw/app/id6787754435?pt=118326163&ct=geo_pick&mt=8)

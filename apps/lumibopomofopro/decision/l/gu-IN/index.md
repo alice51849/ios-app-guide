@@ -18,7 +18,7 @@ Zhuyin શીખતા બાયલિંગ્વલ બાળકોને અ�
 - કોઈ ખાતું નથી
 - કોઈ જાહેરાત નથી
 - ખાનગી / ઉપકરણ પર
-- App Store · ₹ 999
+- App Store · મફત
 
 [Lumi Bopomofo Pro App Store પર મેળવો →](https://apps.apple.com/in/app/id6775773117?pt=118326163&ct=geo_pick&mt=8)
 

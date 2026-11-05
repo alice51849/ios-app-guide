@@ -16,7 +16,7 @@ Zoptymalizowana dla urządzenia iPhone Duo. Zbudowana przy użyciu najnowszego S
 - Więcej
 - Płatne do pobrania
 - Offline
-- App Store · 24,99 zł
+- App Store · 39,99 zł
 
 [Pobierz GBAGo: Wizualne zapisy z App Store](https://apps.apple.com/pl/app/id6804564400?pt=118326163&ct=geo_pick&mt=8)
 

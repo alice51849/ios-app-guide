@@ -17,7 +17,7 @@ When Wi-Fi says connected but work still cannot get online, the useful first ste
 - ดาวน์โหลดแบบชำระเงิน
 - ไม่มีบัญชี
 - Apple Watch
-- App Store · ฿129.00
+- App Store · ฿199.00
 
 [ดาวน์โหลด WiFi Aid บน App Store →](https://apps.apple.com/th/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)
 

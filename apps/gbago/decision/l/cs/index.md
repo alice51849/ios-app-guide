@@ -16,7 +16,7 @@ Optimalizováno s ohledem na iPhone Duo. Aplikace je sestavena s nejnovějším 
 - Více
 - Placené stažení
 - Offline
-- App Store · 129,00 Kč
+- App Store · 249,00 Kč
 
 [Stáhněte si GBAGo: Vizuální uložené v App Storu](https://apps.apple.com/cz/app/id6804564400?pt=118326163&ct=geo_pick&mt=8)
 

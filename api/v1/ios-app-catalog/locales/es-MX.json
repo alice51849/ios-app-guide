@@ -1,12 +1,12 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-11-04",
-  "content_digest": "d41bfe7e156aabee8cf16c8afd333da7f2ca1d1367dc4352339ff83f32cded2b",
+  "date_modified": "2026-11-05",
+  "content_digest": "cfd8097e2d160bb22da9f0415e9bc3c45e093acb6a1c2a6fc701a91301d98006",
   "locale": "es-MX",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 57,
+  "record_count": 59,
   "apps": [
     {
       "key": "notesstudio100",
@@ -361,9 +361,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/es-MX/dailymate.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "149",
+        "price": "249",
         "currency": "MXN",
-        "formatted_price": "$149.00",
+        "formatted_price": "$249.00",
         "storefront_url": "https://apps.apple.com/mx/app/id6790418321"
       }
     },
@@ -564,9 +564,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/es-MX/gmoney.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "59",
+        "price": "99",
         "currency": "MXN",
-        "formatted_price": "$59.00",
+        "formatted_price": "$99.00",
         "storefront_url": "https://apps.apple.com/mx/app/id6755782939"
       }
     },
@@ -643,9 +643,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/es-MX/gbago.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "100",
+        "price": "199",
         "currency": "MXN",
-        "formatted_price": "$100.00",
+        "formatted_price": "$199.00",
         "storefront_url": "https://apps.apple.com/mx/app/id6804564400"
       }
     },
@@ -885,9 +885,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/es-MX/lumibopomofopro.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "199",
+        "price": "0",
         "currency": "MXN",
-        "formatted_price": "$199.00",
+        "formatted_price": "Gratis",
         "storefront_url": "https://apps.apple.com/mx/app/id6775773117"
       }
     },
@@ -1220,6 +1220,51 @@
       }
     },
     {
+      "key": "foldparty",
+      "app_store_id": "6829184924",
+      "name": "Meow Party: Juegos de Gatos",
+      "summary": "Olvídate de minijuegos llenos de anuncios y que te piden internet: Meow Party reúne 200 minijuegos originales y tiernos protagonizados por gatitos, optimizados para la pantalla plegable del iPhone Duo, donde son aún más divertidos al plegarlo, y totalmente jugables en cualquier iPhone. La mayoría se puede jugar en solitario, y 54 de ellos se pueden jugar entre dos, cara a cara, en el mismo celular. Cada partida dura unos 30 a 120 segundos.",
+      "category": "other",
+      "search_terms": [
+        "dos",
+        "2",
+        "jugadores",
+        "sin",
+        "internet",
+        "wifi",
+        "offline",
+        "fiesta",
+        "michi",
+        "gatitos",
+        "lindos",
+        "amigos",
+        "cocina",
+        "vestir",
+        "ritmo",
+        "1v1"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/mx/app/id6829184924?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/es-MX/foldparty.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "129",
+        "currency": "MXN",
+        "formatted_price": "$129.00",
+        "storefront_url": "https://apps.apple.com/mx/app/id6829184924"
+      }
+    },
+    {
       "key": "metrotimehelper",
       "app_store_id": "6819061896",
       "name": "Hora de Metro en Taipei",
@@ -1256,9 +1301,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/es-MX/metrotimehelper.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "0",
+        "price": "69",
         "currency": "MXN",
-        "formatted_price": "Gratis",
+        "formatted_price": "$69.00",
         "storefront_url": "https://apps.apple.com/mx/app/id6819061896"
       }
     },
@@ -1746,9 +1791,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/es-MX/snapport.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "69",
+        "price": "129",
         "currency": "MXN",
-        "formatted_price": "$69.00",
+        "formatted_price": "$129.00",
         "storefront_url": "https://apps.apple.com/mx/app/id6780575828"
       }
     },
@@ -1954,6 +1999,47 @@
       }
     },
     {
+      "key": "tripbeecute",
+      "app_store_id": "6826987407",
+      "name": "TripBee Cute: Diario de viaje",
+      "summary": "Deja de buscar tu viaje entre chats, capturas y notas: TripBee Cute convierte cada viaje en un diario ilustrado y lindo, con portada, cuenta regresiva, vuelos, planes de cada día y maleta en una sola página.",
+      "category": "travel",
+      "search_terms": [
+        "itinerario",
+        "cuaderno",
+        "vacaciones",
+        "planeador",
+        "amigos",
+        "cuenta",
+        "regresiva",
+        "maleta",
+        "equipaje",
+        "lista",
+        "widget",
+        "kawaii"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/mx/app/id6826987407?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/es-MX/tripbeecute.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "MXN",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/mx/app/id6826987407"
+      }
+    },
+    {
       "key": "tripbeelite",
       "app_store_id": "6791299610",
       "name": "TripBee Lite: Plan de viaje",
@@ -2029,9 +2115,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/es-MX/tripbee.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "69",
+        "price": "129",
         "currency": "MXN",
-        "formatted_price": "$69.00",
+        "formatted_price": "$129.00",
         "storefront_url": "https://apps.apple.com/mx/app/id6787754435"
       }
     },
@@ -2153,9 +2239,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/es-MX/wifiaid.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "69",
+        "price": "129",
         "currency": "MXN",
-        "formatted_price": "$69.00",
+        "formatted_price": "$129.00",
         "storefront_url": "https://apps.apple.com/mx/app/id6790467886"
       }
     },
@@ -2277,9 +2363,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/es-MX/wordmate.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "100",
+        "price": "199",
         "currency": "MXN",
-        "formatted_price": "$100.00",
+        "formatted_price": "$199.00",
         "storefront_url": "https://apps.apple.com/mx/app/id6789917808"
       }
     },
@@ -2320,9 +2406,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/es-MX/zipbox.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "59",
+        "price": "99",
         "currency": "MXN",
-        "formatted_price": "$59.00",
+        "formatted_price": "$99.00",
         "storefront_url": "https://apps.apple.com/mx/app/id6806776579"
       }
     }

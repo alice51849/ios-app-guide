@@ -3,7 +3,7 @@
 > Informazioni strutturate su ogni app iOS — funzioni, prezzo e FAQ.
 
 locale: it
-apps: 57
+apps: 59
 - Elenco app: https://open.cait518.cc/ios-app-guide/it/tools/private-pay-once-iphone-app-finder.html
 - Elenco app · PWA: https://open.cait518.cc/ios-app-guide/it/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/it.jsonld
@@ -28,7 +28,7 @@ apps: 57
 - Elenco app · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 
 - [100 Notes Studio: Pen & Paper](https://open.cait518.cc/ios-app-guide/it/notesstudio100.html) — Quaderno a mano, PDF e studio
-  - Dall’inverno alla sessione di gennaio: appunti a mano, PDF delle slide sottolineati, la lezione registrata sulla pagina e ripasso con flashcard. Offline, senza account.
+  - Ottimizzata per iPhone Duo: vero schermo intero. Scrivi a mano, digita, annota i PDF e registra la lezione sulla stessa pagina, offline. Ripassa con le flashcard.
   - Prezzo: Download gratuito, con un acquisto singolo sblocchi tutto. Niente abbonamenti.
   - App Store: https://apps.apple.com/it/app/id6798813048?pt=118326163&ct=geo_pick&mt=8
 - [AI Brief: Da file a prompt IA](https://open.cait518.cc/ios-app-guide/it/aibriefpack.html) — Crea prompt da file e PDF
@@ -60,7 +60,7 @@ apps: 57
   - Prezzo: Download gratuito, con un acquisto singolo sblocchi tutto. Niente abbonamenti.
   - App Store: https://apps.apple.com/it/app/id6782251621?pt=118326163&ct=geo_pick&mt=8
 - [DailyMate Lite: Parla ora](https://open.cait518.cc/ios-app-guide/it/dailymatelite.html) — Frasario di viaggio, 50 lingue
-  - Ottimizzata per iPhone Duo: vero schermo intero. Capisci cosa ti dicono in aeroporto, in hotel o al ristorante e impara la risposta naturale.
+  - Ottimizzata per iPhone Duo. Scegli tra 50 lingue. Esercitati con i dialoghi in aeroporto, in hotel e al bar, e ripassa ogni giorno la prossima frase nel widget.
   - Prezzo: Download gratuito, con un acquisto singolo sblocchi tutto. Niente abbonamenti.
   - App Store: https://apps.apple.com/it/app/id6794725568?pt=118326163&ct=geo_pick&mt=8
 - [DailyMate: lingue in contesto](https://open.cait518.cc/ios-app-guide/it/dailymate.html) — Impara inglese con frasi reali
@@ -80,7 +80,7 @@ apps: 57
   - Prezzo: Download gratuito, con un acquisto singolo sblocchi tutto. Niente abbonamenti.
   - App Store: https://apps.apple.com/it/app/id6824946559?pt=118326163&ct=geo_pick&mt=8
 - [G+Money Lite: Spese di viaggio](https://open.cait518.cc/ios-app-guide/it/gmoneylite.html) — Budget giornaliero su orologio
-  - Ottimizzata per iPhone Duo: vero schermo intero. Segna gli acquisti in valuta locale, vedili subito nella tua, imposta un limite giornaliero e converti anche offline.
+  - Ottimizzata per iPhone Duo: vero schermo intero. Imposta un budget giornaliero e vedi quanto resta oggi sul widget e sull'Apple Watch.
   - Prezzo: Download gratuito, con un acquisto singolo sblocchi tutto. Niente abbonamenti.
   - App Store: https://apps.apple.com/it/app/id6793436548?pt=118326163&ct=geo_pick&mt=8
 - [G+Money: Spese e budget](https://open.cait518.cc/ios-app-guide/it/gmoney.html) — Spese di viaggio e valute
@@ -88,11 +88,11 @@ apps: 57
   - Prezzo: Download a pagamento con prezzo unico e senza abbonamento.
   - App Store: https://apps.apple.com/it/app/id6755782939?pt=118326163&ct=geo_pick&mt=8
 - [GBAGo: Salvataggi visivi](https://open.cait518.cc/ios-app-guide/it/gbago.html) — Mappa di recupero · Istantanee
-  - Mappa di recupero · Salvataggi visivi · Istantanee automatiche · Esporta backup · .sav
+  - Ottimizzata per iPhone Duo: vero schermo intero. Non perdere mai più i progressi: l'emulatore a 60 fps per i tuoi file .gba, .gbc e .gb, con autosalvataggio.
   - Prezzo: Download a pagamento con prezzo unico e senza abbonamento.
   - App Store: https://apps.apple.com/it/app/id6804564400?pt=118326163&ct=geo_pick&mt=8
 - [HoursTag Lite: Prezzo in ore](https://open.cait518.cc/ios-app-guide/it/hourstaglite.html) — Acquisto consapevole: valore
-  - Acquisti di fine anno: prima di comprare, vedi il prezzo in ore del tuo lavoro, segnalo come necessità, desiderio o impulso e scopri il lavoro dietro un obiettivo.
+  - Ottimizzata per iPhone Duo: vero schermo intero. Prima di comprare, vedi il prezzo in ore del tuo lavoro e segnalo come bisogno, desiderio o impulso.
   - Prezzo: Download gratuito, con un acquisto singolo sblocchi tutto. Niente abbonamenti.
   - App Store: https://apps.apple.com/it/app/id6794039979?pt=118326163&ct=geo_pick&mt=8
 - [HoursTag: Ore per comprare](https://open.cait518.cc/ios-app-guide/it/hourstag.html) — Paga oraria e spese
@@ -147,6 +147,10 @@ apps: 57
   - Ottimizzata per iPhone Duo: vero schermo intero. Trova i dati privati, oscura per sempre solo ciò che scegli e rimuovi i metadati.
   - Prezzo: Download gratuito, con un acquisto singolo sblocchi tutto. Niente abbonamenti.
   - App Store: https://apps.apple.com/it/app/id6792850916?pt=118326163&ct=geo_pick&mt=8
+- [Meow Party: Giochi di gatti](https://open.cait518.cc/ios-app-guide/it/foldparty.html) — 200 minigiochi per pieghevoli
+  - Per telefoni pieghevoli: più divertente se lo pieghi, giocabile al completo su ogni iPhone. 200 minigiochi di gattini: quasi tutti da soli, 54 in due su un telefono.
+  - Prezzo: Download a pagamento con prezzo unico e senza abbonamento.
+  - App Store: https://apps.apple.com/it/app/id6829184924?pt=118326163&ct=geo_pick&mt=8
 - [Mochi DoneStamp: Ultima volta](https://open.cait518.cc/ios-app-guide/it/mochidonestamp.html) — Quando l'ho fatto? Promemoria
   - Ottimizzata per iPhone Duo: vero schermo intero. Quando l'hai fatto l'ultima volta? Timbralo: Mochi lo ricorda e ti avvisa quando tocca di nuovo.
   - Prezzo: Download gratuito, con un acquisto singolo sblocchi tutto. Niente abbonamenti.
@@ -176,7 +180,7 @@ apps: 57
   - Prezzo: Download gratuito, con un acquisto singolo sblocchi tutto. Niente abbonamenti.
   - App Store: https://apps.apple.com/it/app/id6806779853?pt=118326163&ct=geo_pick&mt=8
 - [SaveTag: segnalibri con IA](https://open.cait518.cc/ios-app-guide/it/savetag.html) — Salva link e leggi più tardi
-  - Ottimizzata per iPhone Duo: vero schermo intero. Condividi il link da qualsiasi app: viene etichettato sul dispositivo e lo ritrovi cercando il senso.
+  - Ottimizzata per iPhone Duo: vero schermo intero. Salva un link da qualsiasi app con un tocco.
   - Prezzo: Download gratuito, con un acquisto singolo sblocchi tutto. Niente abbonamenti.
   - App Store: https://apps.apple.com/it/app/id6802505528?pt=118326163&ct=geo_pick&mt=8
 - [ScanTo Pro: Scanner PDF e OCR](https://open.cait518.cc/ios-app-guide/it/scanto.html) — Scansiona documenti offline
@@ -188,7 +192,7 @@ apps: 57
   - Prezzo: Download gratuito, con un acquisto singolo sblocchi tutto. Niente abbonamenti.
   - App Store: https://apps.apple.com/it/app/id6788236641?pt=118326163&ct=geo_pick&mt=8
 - [ShotInbox AI: Sort Screenshots](https://open.cait518.cc/ios-app-guide/it/shotinbox.html) — Cerca testo e pulisci le foto
-  - Ottimizzata per iPhone Duo: vero schermo intero. Regali di Natale e viaggi d'inverno: scontrini, biglietti e ordini si accumulano negli screenshot.
+  - Ottimizzata per iPhone Duo: vero schermo intero. Un organizzatore di screenshot che lavora per te: scontrini, biglietti, viaggi e chat separati, ogni parola ricercabile.
   - Prezzo: Download gratuito, con un acquisto singolo sblocchi tutto. Niente abbonamenti.
   - App Store: https://apps.apple.com/it/app/id6802166527?pt=118326163&ct=geo_pick&mt=8
 - [Snapport Lite: Fai fototessere](https://open.cait518.cc/ios-app-guide/it/snapportlite.html) — Ritratti nel formato esatto
@@ -204,11 +208,11 @@ apps: 57
   - Prezzo: Download gratuito, con un acquisto singolo sblocchi tutto. Niente abbonamenti.
   - App Store: https://apps.apple.com/it/app/id6782139553?pt=118326163&ct=geo_pick&mt=8
 - [Stay Clock: orologio flip](https://open.cait518.cc/ios-app-guide/it/stayclock.html) — Ora e calendario permanenti
-  - Serate lunghe fino a Natale: mentre si ricarica, il telefono diventa un orologio grande, leggibile dall’altro lato della stanza, con calendario Mese e sveglia.
+  - Ottimizzata per iPhone Duo: vero schermo intero. Un bell'orologio da scrivania sempre acceso, leggibile dall'altro lato della stanza.
   - Prezzo: Download gratuito, con un acquisto singolo sblocchi tutto. Niente abbonamenti.
   - App Store: https://apps.apple.com/it/app/id6814035888?pt=118326163&ct=geo_pick&mt=8
 - [Studydown: Timer focus](https://open.cait518.cc/ios-app-guide/it/studydown.html) — Mettilo a faccia in giù
-  - Ottimizzata per iPhone Duo: vero schermo intero. Scegli un’attività, metti il telefono a faccia in giù e il tempo parte; se lo sollevi, va in pausa.
+  - Ottimizzata per iPhone Duo: vero schermo intero. Capovolgi il telefono e registra il vero focus.
   - Prezzo: Download gratuito, con un acquisto singolo sblocchi tutto. Niente abbonamenti.
   - App Store: https://apps.apple.com/it/app/id6807335593?pt=118326163&ct=geo_pick&mt=8
 - [Taipei: Assistente Orari Metro](https://open.cait518.cc/ios-app-guide/it/metrotimehelper.html) — Parti all'ora giusta, sempre
@@ -219,8 +223,12 @@ apps: 57
   - Ottimizzata per iPhone Duo: vero schermo intero. Voli, viaggi in auto e posti nuovi diventano missioni: cintura allacciata, grazie all'equipaggio, un assaggio.
   - Prezzo: Download gratuito, con un acquisto singolo sblocchi tutto. Niente abbonamenti.
   - App Store: https://apps.apple.com/it/app/id6787193643?pt=118326163&ct=geo_pick&mt=8
+- [TripBee Cute Diario di viaggio](https://open.cait518.cc/ios-app-guide/it/tripbeecute.html) — Pianificatore viaggi con amici
+  - Il tuo prossimo viaggio diventa un libretto illustrato: conto alla rovescia, voli, giornate a colori e valigia in una pagina. Pianificalo insieme agli amici.
+  - Prezzo: Download gratuito, con un acquisto singolo sblocchi tutto. Niente abbonamenti.
+  - App Store: https://apps.apple.com/it/app/id6826987407?pt=118326163&ct=geo_pick&mt=8
 - [TripBee Lite: Piano viaggio](https://open.cait518.cc/ios-app-guide/it/tripbeelite.html) — Itinerario giorno per giorno
-  - Ottimizzata per iPhone Duo: vero schermo intero. Metti il viaggio su una linea del tempo giorno per giorno, con voli, alloggio, note, promemoria e dati dei biglietti.
+  - Ottimizzata per iPhone Duo: vero schermo intero. Il prossimo viaggio, giorno per giorno: orari, luoghi, promemoria, biglietti e meteo in un'unica timeline.
   - Prezzo: Download gratuito, con un acquisto singolo sblocchi tutto. Niente abbonamenti.
   - App Store: https://apps.apple.com/it/app/id6791299610?pt=118326163&ct=geo_pick&mt=8
 - [TripBee: Pianifica Viaggi](https://open.cait518.cc/ios-app-guide/it/tripbee.html) — Viaggi di gruppo e valigia
@@ -248,10 +256,10 @@ apps: 57
   - Prezzo: Download gratuito, con un acquisto singolo sblocchi tutto. Niente abbonamenti.
   - App Store: https://apps.apple.com/it/app/id6797601720?pt=118326163&ct=geo_pick&mt=8
 - [Wordmate: Vocabolario](https://open.cait518.cc/ios-app-guide/it/wordmate.html) — Flashcard, widget e orologio
-  - Ottimizzata per iPhone Duo: vero schermo intero. Impara parole in 44 lingue nei momenti liberi: 14 argomenti pratici, frasi d'esempio e pronuncia da ascoltare.
+  - Ottimizzata per iPhone Duo: vero schermo intero. Impara parole in 44 lingue con frasi d'esempio naturali, 14 temi e 3 livelli. Ripassa dal widget o da Apple Watch.
   - Prezzo: Download a pagamento con prezzo unico e senza abbonamento.
   - App Store: https://apps.apple.com/it/app/id6789917808?pt=118326163&ct=geo_pick&mt=8
 - [Zipbox: aprire RAR, ZIP e 7z](https://open.cait518.cc/ios-app-guide/it/zipbox.html) — Decomprimi senza pubblicità
-  - Ottimizzata per iPhone Duo: vero schermo intero. Guarda dentro, vedi in anteprima foto e PDF ed estrai solo ciò che ti serve.
+  - Ottimizzata per iPhone Duo: vero schermo intero. Apri ZIP, RAR, 7z, TAR, ISO e altro, anche archivi protetti da password o divisi.
   - Prezzo: Download a pagamento con prezzo unico e senza abbonamento.
   - App Store: https://apps.apple.com/it/app/id6806776579?pt=118326163&ct=geo_pick&mt=8

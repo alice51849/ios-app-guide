@@ -20,7 +20,7 @@ Zaposleni potniki potrebujejo vadbo besedišča, ki se prilega prostim minutam b
 - Zasebno / na napravi
 - Gradnik
 - Apple Watch
-- App Store · 5,99 €
+- App Store · 9,99 €
 
 [Pridobite Wordmate: Learn 44 Languages v trgovini App Store →](https://apps.apple.com/si/app/id6789917808?pt=118326163&ct=geo_pick&mt=8)
 

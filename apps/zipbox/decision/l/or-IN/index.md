@@ -20,7 +20,7 @@ iPhone Duo ଡିଭାଇସ୍ ପାଇଁ ଅପ୍ଟିମାଇଜ୍ କ
 - କୌଣସି ବିଜ୍ଞାପନ ନାହିଁ
 - କୌଣସି ଟ୍ରାକିଂ ନାହିଁ
 - ଗୋପନୀୟ / ଉପକରଣରେ
-- App Store · ₹ 299
+- App Store · ₹ 499
 
 [App Store ରୁ Zipbox: ZIP, RAR, 7z ଖୋଲନ୍ତୁ ପାଆନ୍ତୁ](https://apps.apple.com/in/app/id6806776579?pt=118326163&ct=geo_pick&mt=8)
 

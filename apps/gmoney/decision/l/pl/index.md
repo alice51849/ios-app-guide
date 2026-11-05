@@ -20,7 +20,7 @@ W podróży potrzebujesz trackera budżetu, który działa offline w kraju bez d
 - Bez reklam
 - Bez śledzenia
 - Prywatne / na urządzeniu
-- App Store · 14,99 zł
+- App Store · 24,99 zł
 
 [Pobierz G+Money z App Store →](https://apps.apple.com/pl/app/id6755782939?pt=118326163&ct=geo_pick&mt=8)
 

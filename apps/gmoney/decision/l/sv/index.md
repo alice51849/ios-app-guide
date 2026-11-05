@@ -20,7 +20,7 @@ På en resa behöver du en budgetapp som fungerar offline i ett land utan data, 
 - Inga annonser
 - Ingen spårning
 - Privat / på enheten
-- App Store · 39,00 kr
+- App Store · 69,00 kr
 
 [Hämta G+Money på App Store →](https://apps.apple.com/se/app/id6755782939?pt=118326163&ct=geo_pick&mt=8)
 

@@ -6,8 +6,8 @@
   "name": "Каталог намерений поиска издателя Lumi Studio",
   "description": "Каталог, созданный издателем, с информацией о целевой аудитории каждого приложения, задачах, которые оно помогает решать, и прямой ссылкой в App Store.",
   "inLanguage": "ru",
-  "dateModified": "2026-11-04",
-  "numberOfItems": 57,
+  "dateModified": "2026-11-05",
+  "numberOfItems": 59,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
     {
@@ -595,7 +595,7 @@
           ],
           "isAccessibleForFree": false
         },
-        "price": "599",
+        "price": "999",
         "priceCurrency": "RUB",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {
@@ -925,7 +925,7 @@
           ],
           "isAccessibleForFree": false
         },
-        "price": "249",
+        "price": "449",
         "priceCurrency": "RUB",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {
@@ -1057,7 +1057,7 @@
           ],
           "isAccessibleForFree": false
         },
-        "price": "449",
+        "price": "799",
         "priceCurrency": "RUB",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {
@@ -1451,9 +1451,9 @@
               "value": true
             }
           ],
-          "isAccessibleForFree": false
+          "isAccessibleForFree": true
         },
-        "price": "799",
+        "price": "0",
         "priceCurrency": "RUB",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {
@@ -2773,7 +2773,7 @@
           ],
           "isAccessibleForFree": false
         },
-        "price": "299",
+        "price": "499",
         "priceCurrency": "RUB",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {
@@ -3115,6 +3115,72 @@
     {
       "@type": "ListItem",
       "position": 48,
+      "url": "https://apps.apple.com/ru/app/id6826987407?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-tripbeecute",
+        "url": "https://apps.apple.com/ru/app/id6826987407?pt=118326163&ct=geo_pick&mt=8",
+        "name": "TripBee Cute: Путешествия",
+        "description": "Билеты в скриншотах, время в чатах, список вещей на листочке: TripBee Cute собирает всё в милую иллюстрированную книжечку, отдельную для каждой поездки. На",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6826987407",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6826987407"
+          },
+          "name": "TripBee Cute: Путешествия",
+          "operatingSystem": "iOS",
+          "applicationCategory": "TravelApplication",
+          "url": "https://apps.apple.com/ru/app/id6826987407?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ru/app/id6826987407?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ru/app/id6826987407?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ru/app/id6826987407?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ru/tripbeecute.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6826987407",
+          "inLanguage": "ru",
+          "description": "Билеты в скриншотах, время в чатах, список вещей на листочке: TripBee Cute собирает всё в милую иллюстрированную книжечку, отдельную для каждой поездки. На",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-tripbeecute"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "RU"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 49,
       "url": "https://apps.apple.com/ru/app/id6791299610?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3180,7 +3246,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 49,
+      "position": 50,
       "url": "https://apps.apple.com/ru/app/id6787754435?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3235,7 +3301,7 @@
           ],
           "isAccessibleForFree": false
         },
-        "price": "299",
+        "price": "499",
         "priceCurrency": "RUB",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {
@@ -3246,7 +3312,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 50,
+      "position": 51,
       "url": "https://apps.apple.com/ru/app/id6782275018?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3312,7 +3378,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 51,
+      "position": 52,
       "url": "https://apps.apple.com/ru/app/id6818607603?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3378,7 +3444,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 52,
+      "position": 53,
       "url": "https://apps.apple.com/ru/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3444,7 +3510,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 53,
+      "position": 54,
       "url": "https://apps.apple.com/ru/app/id6790467886?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3499,7 +3565,7 @@
           ],
           "isAccessibleForFree": false
         },
-        "price": "299",
+        "price": "499",
         "priceCurrency": "RUB",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {
@@ -3510,7 +3576,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 54,
+      "position": 55,
       "url": "https://apps.apple.com/ru/app/id6797601720?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3576,7 +3642,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 55,
+      "position": 56,
       "url": "https://apps.apple.com/ru/app/id6789917808?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3631,7 +3697,7 @@
           ],
           "isAccessibleForFree": false
         },
-        "price": "449",
+        "price": "799",
         "priceCurrency": "RUB",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {
@@ -3642,7 +3708,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 56,
+      "position": 57,
       "url": "https://apps.apple.com/ru/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3697,7 +3763,7 @@
           ],
           "isAccessibleForFree": false
         },
-        "price": "249",
+        "price": "449",
         "priceCurrency": "RUB",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {
@@ -3708,7 +3774,73 @@
     },
     {
       "@type": "ListItem",
-      "position": 57,
+      "position": 58,
+      "url": "https://apps.apple.com/ru/app/id6829184924?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-foldparty",
+        "url": "https://apps.apple.com/ru/app/id6829184924?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Мяу-вечеринка: игры на двоих",
+        "description": "Забудьте о мини-играх с рекламой и обязательным интернетом: «Мяу-вечеринка» собрала 200 оригинальных милых мини-игр с котиками, оптимизированных для",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6829184924",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6829184924"
+          },
+          "name": "Мяу-вечеринка: игры на двоих",
+          "operatingSystem": "iOS",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/ru/app/id6829184924?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ru/app/id6829184924?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ru/app/id6829184924?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ru/app/id6829184924?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ru/foldparty.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6829184924",
+          "inLanguage": "ru",
+          "description": "Забудьте о мини-играх с рекламой и обязательным интернетом: «Мяу-вечеринка» собрала 200 оригинальных милых мини-игр с котиками, оптимизированных для",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-foldparty"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "499",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "RU"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 59,
       "url": "https://apps.apple.com/ru/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3761,9 +3893,9 @@
               "value": true
             }
           ],
-          "isAccessibleForFree": true
+          "isAccessibleForFree": false
         },
-        "price": "0",
+        "price": "249",
         "priceCurrency": "RUB",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {

@@ -19,7 +19,7 @@ För bebisens passfoto får ingen annan synas och bakgrunden måste vara enfärg
 - Inga annonser
 - Ingen spårning
 - Privat / på enheten
-- App Store · 49,00 kr
+- App Store · 79,00 kr
 
 [Skaffa Snapport i App Store →](https://apps.apple.com/se/app/id6780575828?pt=118326163&ct=geo_pick&mt=8)
 

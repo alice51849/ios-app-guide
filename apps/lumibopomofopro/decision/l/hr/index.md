@@ -18,7 +18,7 @@ Dvojezičnoj djeci koja uče Zhuyin kod kuće treba potpuni put kroz zvukove, si
 - Bez računa
 - Bez oglasa
 - Privatno / na uređaju
-- App Store · 9,99 €
+- App Store · Besplatno
 
 [Preuzmite Lumi Bopomofo Pro na App Storeu →](https://apps.apple.com/hr/app/id6775773117?pt=118326163&ct=geo_pick&mt=8)
 

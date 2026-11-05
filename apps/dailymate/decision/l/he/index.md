@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - הורדה בתשלום
 - וידג'ט
 - Apple Watch
-- App Store · ₪20.00
+- App Store · ₪39.90
 
 [הורידו את DailyMate מה-App Store →](https://apps.apple.com/il/app/id6790418321?pt=118326163&ct=geo_pick&mt=8)
 

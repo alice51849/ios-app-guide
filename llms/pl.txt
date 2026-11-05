@@ -3,7 +3,7 @@
 > Uporządkowane informacje o każdej aplikacji iOS — funkcje, cena i FAQ.
 
 locale: pl
-apps: 57
+apps: 59
 - Katalog aplikacji: https://open.cait518.cc/ios-app-guide/pl/tools/private-pay-once-iphone-app-finder.html
 - Katalog aplikacji · PWA: https://open.cait518.cc/ios-app-guide/pl/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/pl.jsonld
@@ -28,11 +28,11 @@ apps: 57
 - Katalog aplikacji · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 
 - [100 Notes Studio: Pen & Paper](https://open.cait518.cc/ios-app-guide/pl/notesstudio100.html) — Notatnik odręczny, PDF, nauka
-  - Zima i sesja w styczniu: notatki odręczne, zaznaczone PDF-y z wykładów, nagranie zajęć na tej samej stronie i powtórki z fiszkami. Offline, bez konta.
+  - Zoptymalizowana pod iPhone Duo: prawdziwy pełny ekran. Pisz odręcznie lub na klawiaturze, zaznaczaj PDF-y i nagraj wykład na tej samej stronie, offline.
   - Cena: Darmowe pobranie, jednorazowy zakup odblokowuje wszystko. Bez subskrypcji.
   - App Store: https://apps.apple.com/pl/app/id6798813048?pt=118326163&ct=geo_pick&mt=8
 - [AI Brief: Pliki na prompt AI](https://open.cait518.cc/ios-app-guide/pl/aibriefpack.html) — Prompty z plików i PDF
-  - Raporty na koniec roku i plany na święta? Dodaj zrzuty ekranu, PDF-y, notatki i linki: czytane na urządzeniu, dane osobowe oznaczone, jeden jasny brief dla AI.
+  - Zoptymalizowana pod iPhone Duo: prawdziwy pełny ekran. Lepszy kontekst, lepsze odpowiedzi AI.
   - Cena: Darmowe pobranie, jednorazowy zakup odblokowuje wszystko. Bez subskrypcji.
   - App Store: https://apps.apple.com/pl/app/id6791658210?pt=118326163&ct=geo_pick&mt=8
 - [Aim990: trener angielskiego](https://open.cait518.cc/ios-app-guide/pl/aim990.html) — Diagnoza TOEIC w 8 minut
@@ -60,7 +60,7 @@ apps: 57
   - Cena: Darmowe pobranie, jednorazowy zakup odblokowuje wszystko. Bez subskrypcji.
   - App Store: https://apps.apple.com/pl/app/id6782251621?pt=118326163&ct=geo_pick&mt=8
 - [DailyMate Lite: Nauka mówienia](https://open.cait518.cc/ios-app-guide/pl/dailymatelite.html) — Rozmówki w podróży: 50 języków
-  - Zoptymalizowana pod iPhone Duo: prawdziwy pełny ekran. Zrozum, co mówią ludzie na lotnisku, w hotelu czy restauracji, i naucz się naturalnej odpowiedzi.
+  - Zoptymalizowana pod iPhone Duo: prawdziwy pełny ekran. Zoptymalizowana pod kątem iPhone'a Duo. Ucz się dowolnego z 50 języków.
   - Cena: Darmowe pobranie, jednorazowy zakup odblokowuje wszystko. Bez subskrypcji.
   - App Store: https://apps.apple.com/pl/app/id6794725568?pt=118326163&ct=geo_pick&mt=8
 - [DailyMate: Zdania z życia](https://open.cait518.cc/ios-app-guide/pl/dailymate.html) — Nauka angielskiego na co dzień
@@ -68,7 +68,7 @@ apps: 57
   - Cena: Płatne pobranie za jedną cenę z góry, bez subskrypcji.
   - App Store: https://apps.apple.com/pl/app/id6790418321?pt=118326163&ct=geo_pick&mt=8
 - [dB Halo: Miernik hałasu](https://open.cait518.cc/ios-app-guide/pl/dbhalo.html) — Dawka i bezpieczny czas
-  - Zoptymalizowana pod iPhone Duo: prawdziwy pełny ekran. Zobacz dB na żywo na pierścieniu Halo, oszacuj dzienną dawkę hałasu i zapisuj chrapanie.
+  - Zoptymalizowana pod iPhone Duo: prawdziwy pełny ekran. Decybele w mgnieniu oka, pełne spektrum, szacowana dzienna dawka hałasu i chrapanie w dzienniku snu.
   - Cena: Darmowe pobranie, jednorazowy zakup odblokowuje wszystko. Bez subskrypcji.
   - App Store: https://apps.apple.com/pl/app/id6806826699?pt=118326163&ct=geo_pick&mt=8
 - [EasyAM: Budzik na dni robocze](https://open.cait518.cc/ios-app-guide/pl/easyam.html) — Pomija święta, urlop i wolne
@@ -80,7 +80,7 @@ apps: 57
   - Cena: Darmowe pobranie, jednorazowy zakup odblokowuje wszystko. Bez subskrypcji.
   - App Store: https://apps.apple.com/pl/app/id6824946559?pt=118326163&ct=geo_pick&mt=8
 - [G+Money Lite: Koszty podróży](https://open.cait518.cc/ios-app-guide/pl/gmoneylite.html) — Dzienny budżet na zegarku
-  - Zoptymalizowana pod iPhone Duo: prawdziwy pełny ekran. Zapisuj zakupy w lokalnej walucie i od razu zobacz je w swojej, ustaw dzienny limit. Kursy działają też offline.
+  - Zoptymalizowana pod iPhone Duo: prawdziwy pełny ekran. Ustaw dzienny budżet i sprawdzaj na widżecie i Apple Watch, ile zostało na dziś.
   - Cena: Darmowe pobranie, jednorazowy zakup odblokowuje wszystko. Bez subskrypcji.
   - App Store: https://apps.apple.com/pl/app/id6793436548?pt=118326163&ct=geo_pick&mt=8
 - [G+Money: Wydatki i budżet](https://open.cait518.cc/ios-app-guide/pl/gmoney.html) — Wydatki w podróży i waluty
@@ -88,11 +88,11 @@ apps: 57
   - Cena: Płatne pobranie za jedną cenę z góry, bez subskrypcji.
   - App Store: https://apps.apple.com/pl/app/id6755782939?pt=118326163&ct=geo_pick&mt=8
 - [GBAGo: Wizualne zapisy](https://open.cait518.cc/ios-app-guide/pl/gbago.html) — Mapa odzyskiwania · Migawki
-  - Mapa odzyskiwania · Wizualne zapisy · Automatyczne migawki · Eksportuj kopię zapasową · .sav
+  - Zoptymalizowana pod iPhone Duo: prawdziwy pełny ekran. Emulator, w którym nie stracisz postępów: graj we własne gry .gba, .gbc i .gb w 60 fps z autozapisem.
   - Cena: Płatne pobranie za jedną cenę z góry, bez subskrypcji.
   - App Store: https://apps.apple.com/pl/app/id6804564400?pt=118326163&ct=geo_pick&mt=8
 - [HoursTag Lite: Cena to godziny](https://open.cait518.cc/ios-app-guide/pl/hourstaglite.html) — Świadome zakupy: realna cena
-  - Zakupy na koniec roku: zanim kupisz, zobacz cenę w godzinach własnej pracy, oznacz ją jako potrzebę, zachciankę lub impuls i zobacz pracę za celem na nowy rok.
+  - Zoptymalizowana pod iPhone Duo: prawdziwy pełny ekran. Zanim kupisz, zobacz cenę w godzinach własnej pracy i oznacz ją jako potrzebę, zachciankę lub impuls.
   - Cena: Darmowe pobranie, jednorazowy zakup odblokowuje wszystko. Bez subskrypcji.
   - App Store: https://apps.apple.com/pl/app/id6794039979?pt=118326163&ct=geo_pick&mt=8
 - [HoursTag: Godziny zakupu](https://open.cait518.cc/ios-app-guide/pl/hourstag.html) — Stawka godzinowa i wydatki
@@ -147,6 +147,10 @@ apps: 57
   - Zoptymalizowana pod iPhone Duo: prawdziwy pełny ekran. Znajdź dane prywatne, zamaż na stałe tylko to, co wybierzesz, i usuń metadane. Wszystko na urządzeniu.
   - Cena: Darmowe pobranie, jednorazowy zakup odblokowuje wszystko. Bez subskrypcji.
   - App Store: https://apps.apple.com/pl/app/id6792850916?pt=118326163&ct=geo_pick&mt=8
+- [Meow Party: Gry dla dwóch osób](https://open.cait518.cc/ios-app-guide/pl/foldparty.html) — 200 gier na składany telefon
+  - Dla składanych telefonów: po złożeniu więcej frajdy, a na zwykłym iPhonie działa w pełni. 200 kocich minigier: większość solo, 54 we dwoje na jednym ekranie. Bez reklam.
+  - Cena: Płatne pobranie za jedną cenę z góry, bez subskrypcji.
+  - App Store: https://apps.apple.com/pl/app/id6829184924?pt=118326163&ct=geo_pick&mt=8
 - [Mochi DoneStamp: Ostatni raz](https://open.cait518.cc/ios-app-guide/pl/mochidonestamp.html) — Kiedy to było? Przypomnienia
   - Zoptymalizowana pod iPhone Duo: prawdziwy pełny ekran. Koniec z zastanawianiem się, kiedy to było. Ostempluj jako zrobione, Mochi zapamięta i przypomni, gdy znów pora.
   - Cena: Darmowe pobranie, jednorazowy zakup odblokowuje wszystko. Bez subskrypcji.
@@ -176,7 +180,7 @@ apps: 57
   - Cena: Darmowe pobranie, jednorazowy zakup odblokowuje wszystko. Bez subskrypcji.
   - App Store: https://apps.apple.com/pl/app/id6806779853?pt=118326163&ct=geo_pick&mt=8
 - [SaveTag: zakładki z AI](https://open.cait518.cc/ios-app-guide/pl/savetag.html) — Zapisz linki, przeczytaj potem
-  - Zoptymalizowana pod iPhone Duo: prawdziwy pełny ekran. Udostępnij link z dowolnej aplikacji: sam dostanie tagi na urządzeniu, a znajdziesz go po znaczeniu.
+  - Zoptymalizowana pod iPhone Duo: prawdziwy pełny ekran. Zapisz link z dowolnej aplikacji jednym dotknięciem.
   - Cena: Darmowe pobranie, jednorazowy zakup odblokowuje wszystko. Bez subskrypcji.
   - App Store: https://apps.apple.com/pl/app/id6802505528?pt=118326163&ct=geo_pick&mt=8
 - [ScanTo Pro: PDF i OCR](https://open.cait518.cc/ios-app-guide/pl/scanto.html) — Prywatny skaner dokumentów
@@ -188,7 +192,7 @@ apps: 57
   - Cena: Darmowe pobranie, jednorazowy zakup odblokowuje wszystko. Bez subskrypcji.
   - App Store: https://apps.apple.com/pl/app/id6788236641?pt=118326163&ct=geo_pick&mt=8
 - [ShotInbox AI: Sort Screenshots](https://open.cait518.cc/ios-app-guide/pl/shotinbox.html) — Organizator zrzutów ekranu
-  - Zoptymalizowana pod iPhone Duo: prawdziwy pełny ekran. Prezenty na święta i zimowe wyjazdy to stos paragonów, biletów i zamówień na zrzutach.
+  - Zoptymalizowana pod iPhone Duo: prawdziwy pełny ekran. Zrzuty ekranu same się porządkują: paragony, bilety, podróże i czaty osobno, a każde słowo da się wyszukać.
   - Cena: Darmowe pobranie, jednorazowy zakup odblokowuje wszystko. Bez subskrypcji.
   - App Store: https://apps.apple.com/pl/app/id6802166527?pt=118326163&ct=geo_pick&mt=8
 - [Snapport Lite: Foto do dowodu](https://open.cait518.cc/ios-app-guide/pl/snapportlite.html) — Portrety w dokładnym rozmiarze
@@ -204,11 +208,11 @@ apps: 57
   - Cena: Darmowe pobranie, jednorazowy zakup odblokowuje wszystko. Bez subskrypcji.
   - App Store: https://apps.apple.com/pl/app/id6782139553?pt=118326163&ct=geo_pick&mt=8
 - [Stay Clock: zegar z klapkami](https://open.cait518.cc/ios-app-guide/pl/stayclock.html) — Czas i kalendarz bez przerwy
-  - Długie wieczory aż do świąt: podczas ładowania telefon staje się dużym zegarem widocznym z drugiego końca pokoju, z kalendarzem Miesiąc i prostym alarmem.
+  - Zoptymalizowana pod iPhone Duo: prawdziwy pełny ekran. Piękny zegar na biurko, który zawsze świeci i widać go z drugiego końca pokoju.
   - Cena: Darmowe pobranie, jednorazowy zakup odblokowuje wszystko. Bez subskrypcji.
   - App Store: https://apps.apple.com/pl/app/id6814035888?pt=118326163&ct=geo_pick&mt=8
 - [Studydown: Pomiar czasu](https://open.cait518.cc/ios-app-guide/pl/studydown.html) — Połóż ekranem w dół
-  - Zoptymalizowana pod iPhone Duo: prawdziwy pełny ekran. Sesja zimowa i terminy? Wybierz aktywność, połóż telefon ekranem w dół i czas leci; podniesiesz go – pauza.
+  - Zoptymalizowana pod iPhone Duo: prawdziwy pełny ekran. Odwróć telefon i zapisuj prawdziwe skupienie.
   - Cena: Darmowe pobranie, jednorazowy zakup odblokowuje wszystko. Bez subskrypcji.
   - App Store: https://apps.apple.com/pl/app/id6807335593?pt=118326163&ct=geo_pick&mt=8
 - [Tajpej: metro na czas](https://open.cait518.cc/ios-app-guide/pl/metrotimehelper.html) — Kiedy wyjść, żeby zdążyć
@@ -219,8 +223,12 @@ apps: 57
   - Zoptymalizowana pod iPhone Duo: prawdziwy pełny ekran. Loty, podróże autem i nowe miejsca stają się misjami: zapiąć pasy, podziękować załodze, spróbować kęsa.
   - Cena: Darmowe pobranie, jednorazowy zakup odblokowuje wszystko. Bez subskrypcji.
   - App Store: https://apps.apple.com/pl/app/id6787193643?pt=118326163&ct=geo_pick&mt=8
+- [TripBee Cute: Dziennik podróży](https://open.cait518.cc/ios-app-guide/pl/tripbeecute.html) — Urocze ilustracje i odliczanie
+  - Zamień kolejny wyjazd w uroczą, ilustrowaną książeczkę: odliczanie, loty, plan każdego dnia i lista rzeczy na jednej stronie. Planuj ze znajomymi i ruszaj w drogę!
+  - Cena: Darmowe pobranie, jednorazowy zakup odblokowuje wszystko. Bez subskrypcji.
+  - App Store: https://apps.apple.com/pl/app/id6826987407?pt=118326163&ct=geo_pick&mt=8
 - [TripBee Lite: Plan podróży](https://open.cait518.cc/ios-app-guide/pl/tripbeelite.html) — Wakacje dzień po dniu
-  - Do domu na święta czy w podróż na sylwestra? Ułóż wyjazd na jednej osi czasu dzień po dniu: loty, nocleg, notatki, przypomnienia i dane biletów w jednym miejscu.
+  - Zoptymalizowana pod iPhone Duo: prawdziwy pełny ekran. Następna podróż dzień po dniu: godziny, miejsca, przypomnienia, bilety i lokalna pogoda na jednej osi czasu.
   - Cena: Darmowe pobranie, jednorazowy zakup odblokowuje wszystko. Bez subskrypcji.
   - App Store: https://apps.apple.com/pl/app/id6791299610?pt=118326163&ct=geo_pick&mt=8
 - [TripBee: Planer Podróży](https://open.cait518.cc/ios-app-guide/pl/tripbee.html) — Wyjazd grupowy i lista rzeczy
@@ -248,10 +256,10 @@ apps: 57
   - Cena: Darmowe pobranie, jednorazowy zakup odblokowuje wszystko. Bez subskrypcji.
   - App Store: https://apps.apple.com/pl/app/id6797601720?pt=118326163&ct=geo_pick&mt=8
 - [Wordmate: Nauka słówek](https://open.cait518.cc/ios-app-guide/pl/wordmate.html) — Fiszki, widżet i zegarek
-  - Wyjazd na święta czy noworoczne postanowienie? Ucz się słówek w 44 językach w wolnych chwilach: 14 praktycznych tematów, przykładowe zdania i wymowa do odsłuchania.
+  - Zoptymalizowana pod iPhone Duo: prawdziwy pełny ekran. Ucz się słówek w 44 językach z naturalnymi przykładami zdań, 14 tematami i 3 poziomami.
   - Cena: Płatne pobranie za jedną cenę z góry, bez subskrypcji.
   - App Store: https://apps.apple.com/pl/app/id6789917808?pt=118326163&ct=geo_pick&mt=8
 - [Zipbox: otwórz RAR, ZIP, 7z](https://open.cait518.cc/ios-app-guide/pl/zipbox.html) — Rozpakuj bez reklam
-  - Zoptymalizowana pod iPhone Duo: prawdziwy pełny ekran. Zajrzyj do środka, podejrzyj zdjęcia i PDF i rozpakuj tylko to, czego potrzebujesz. Bez reklam.
+  - Zoptymalizowana pod iPhone Duo: prawdziwy pełny ekran. Otwieraj ZIP, RAR, 7z, TAR, ISO i inne, także archiwa z hasłem lub podzielone na części.
   - Cena: Płatne pobranie za jedną cenę z góry, bez subskrypcji.
   - App Store: https://apps.apple.com/pl/app/id6806776579?pt=118326163&ct=geo_pick&mt=8

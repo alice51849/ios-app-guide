@@ -19,7 +19,7 @@ Baba útlevélfotónál senki más nem lehet a képen, és az háttérnek egysz�
 - Nincs reklám
 - Nincs követés
 - Privát / eszközön tárolt
-- App Store · HUF1,490.00
+- App Store · HUF2,490.00
 
 [Szerezd be a Snapportot az App Store-ból →](https://apps.apple.com/hu/app/id6780575828?pt=118326163&ct=geo_pick&mt=8)
 

@@ -20,7 +20,7 @@ Egy utazáson olyan költségvetés követőre van szükséged, ami offline műk
 - Nincs reklám
 - Nincs követés
 - Privát / eszközön tárolt
-- App Store · HUF999.00
+- App Store · HUF1,990.00
 
 [Szerezd be a G+Money-t az App Store-ból →](https://apps.apple.com/hu/app/id6755782939?pt=118326163&ct=geo_pick&mt=8)
 

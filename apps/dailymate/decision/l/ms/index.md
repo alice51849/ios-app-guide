@@ -17,7 +17,7 @@ Sebelum perjalanan, frasa lengkap untuk situasi sebenar lebih berguna daripada k
 - Muat turun berbayar
 - Widjet
 - Apple Watch
-- App Store · RM29.99
+- App Store · RM59.90
 
 [Dapatkan DailyMate di App Store →](https://apps.apple.com/my/app/id6790418321?pt=118326163&ct=geo_pick&mt=8)
 

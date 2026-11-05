@@ -16,7 +16,7 @@ Dioptimalkan untuk iPhone Duo. Dibangun dengan SDK terbaru, aplikasi ini memenuh
 - Lainnya
 - Unduhan berbayar
 - Offline
-- App Store · Rp 99ribu
+- App Store · Rp 179ribu
 
 [Dapatkan GBAGo: Simpanan visual di App Store](https://apps.apple.com/id/app/id6804564400?pt=118326163&ct=geo_pick&mt=8)
 

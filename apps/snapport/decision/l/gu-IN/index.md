@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - કોઈ જાહેરાત નથી
 - કોઈ ટ્રેકિંગ નથી
 - ખાનગી / ઉપકરણ પર
-- App Store · ₹ 349
+- App Store · ₹ 599
 
 [App Store પર Snapport મેળવો →](https://apps.apple.com/in/app/id6780575828?pt=118326163&ct=geo_pick&mt=8)
 

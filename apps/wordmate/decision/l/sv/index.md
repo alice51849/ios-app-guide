@@ -20,7 +20,7 @@ Upptagna pendlare behöver vokabulärträning som passar in i lediga minuter uta
 - Privat / på enheten
 - Widget
 - Apple Watch
-- App Store · 69,00 kr
+- App Store · 119,00 kr
 
 [Hämta Wordmate: Learn 44 Languages på App Store →](https://apps.apple.com/se/app/id6789917808?pt=118326163&ct=geo_pick&mt=8)
 

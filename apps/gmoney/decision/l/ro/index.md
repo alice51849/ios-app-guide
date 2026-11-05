@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - Fără reclame
 - Fără urmărire
 - Privat / pe dispozitiv
-- App Store · 17,99 lei
+- App Store · 29,99 lei
 
 [Obține G+Money din App Store →](https://apps.apple.com/ro/app/id6755782939?pt=118326163&ct=geo_pick&mt=8)
 

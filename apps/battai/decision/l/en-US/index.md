@@ -18,7 +18,6 @@ A battery score is only useful when the app separates what iOS measured, what it
 - No ads
 - Apple Watch
 - App Store · Free
-- ★ 5.0/5 · 1
 
 [Get BattAI on the App Store →](https://apps.apple.com/us/app/id6802423998?pt=118326163&ct=geo_pick&mt=8)
 

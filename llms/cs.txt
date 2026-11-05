@@ -3,7 +3,7 @@
 > Přehledné informace o funkcích, cenách a častých dotazech ke každé aplikaci pro iOS.
 
 locale: cs
-apps: 57
+apps: 59
 - Katalog aplikací: https://open.cait518.cc/ios-app-guide/cs/tools/private-pay-once-iphone-app-finder.html
 - Katalog aplikací · PWA: https://open.cait518.cc/ios-app-guide/cs/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/cs.jsonld
@@ -28,7 +28,7 @@ apps: 57
 - Katalog aplikací · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 
 - [100 Notes Studio: Pen & Paper](https://open.cait518.cc/ios-app-guide/cs/notesstudio100.html) — Rukopis, poznámky a PDF
-  - Přizpůsobeno zařízení iPhone Duo: opravdu celý displej. Zkouškové za dveřmi? Z poznámek z přednášek udělejte kartičky a opakujte s plánováním FSRS.
+  - Přizpůsobeno zařízení iPhone Duo: opravdu celý displej. Pište rukou i na klávesnici, komentujte PDF a nahrajte přednášku přímo na stránku, vše offline.
   - Cena: Stáhněte zdarma. Jednorázovým nákupem odemknete všechny funkce—bez předplatného.
   - App Store: https://apps.apple.com/cz/app/id6798813048?pt=118326163&ct=geo_pick&mt=8
 - [AI Brief: Ze souborů AI prompt](https://open.cait518.cc/ios-app-guide/cs/aibriefpack.html) — Prompty ze souborů a PDF
@@ -60,7 +60,7 @@ apps: 57
   - Cena: Stáhněte zdarma. Jednorázovým nákupem odemknete všechny funkce—bez předplatného.
   - App Store: https://apps.apple.com/cz/app/id6782251621?pt=118326163&ct=geo_pick&mt=8
 - [DailyMate Lite: Mluvte jistě](https://open.cait518.cc/ios-app-guide/cs/dailymatelite.html) — Konverzace na cesty: 50 jazyků
-  - Přizpůsobeno zařízení iPhone Duo: opravdu celý displej. Pochopte, co vám lidé říkají na letišti, v hotelu nebo restauraci, a naučte se přirozenou odpověď.
+  - Optimalizováno pro iPhone Duo. Učte se kterýkoli z 50 jazyků, nejen jeden. Procvičte rozhovory na letišti, v hotelu i kavárně a denně si ve widgetu zopakujte další větu.
   - Cena: Stáhněte zdarma. Jednorázovým nákupem odemknete všechny funkce—bez předplatného.
   - App Store: https://apps.apple.com/cz/app/id6794725568?pt=118326163&ct=geo_pick&mt=8
 - [DailyMate: Věty pro život](https://open.cait518.cc/ios-app-guide/cs/dailymate.html) — Angličtina a němčina v praxi
@@ -68,7 +68,7 @@ apps: 57
   - Cena: Placené stažení za jednu pevnou cenu, bez předplatného.
   - App Store: https://apps.apple.com/cz/app/id6790418321?pt=118326163&ct=geo_pick&mt=8
 - [dB Halo: Hlukoměr](https://open.cait518.cc/ios-app-guide/cs/dbhalo.html) — Decibely a zvukové spektrum
-  - Přizpůsobeno zařízení iPhone Duo: opravdu celý displej. Sledujte dB živě na prstenci Halo, odhadněte denní dávku hluku a zaznamenejte chrápání.
+  - Přizpůsobeno zařízení iPhone Duo: opravdu celý displej. Decibely na první pohled, celé spektrum, odhad denní dávky hluku a zachycení chrápání ve spánkovém deníku.
   - Cena: Stáhněte zdarma. Jednorázovým nákupem odemknete všechny funkce—bez předplatného.
   - App Store: https://apps.apple.com/cz/app/id6806826699?pt=118326163&ct=geo_pick&mt=8
 - [EasyAM: Budík na pracovní dny](https://open.cait518.cc/ios-app-guide/cs/easyam.html) — Přeskočí státní svátky i volno
@@ -80,7 +80,7 @@ apps: 57
   - Cena: Stáhněte zdarma. Jednorázovým nákupem odemknete všechny funkce—bez předplatného.
   - App Store: https://apps.apple.com/cz/app/id6824946559?pt=118326163&ct=geo_pick&mt=8
 - [G+Money Lite: Výdaje na cesty](https://open.cait518.cc/ios-app-guide/cs/gmoneylite.html) — Denní limit: hodinky a widget
-  - Přizpůsobeno zařízení iPhone Duo: opravdu celý displej. Vánoce či silvestr v zahraničí? Zapište nákup v místní měně a hned ho uvidíte ve své, nastavte denní limit.
+  - Přizpůsobeno zařízení iPhone Duo: opravdu celý displej. Nastav si denní rozpočet a sleduj, kolik ti dnes zbývá, na widgetu i Apple Watch.
   - Cena: Stáhněte zdarma. Jednorázovým nákupem odemknete všechny funkce—bez předplatného.
   - App Store: https://apps.apple.com/cz/app/id6793436548?pt=118326163&ct=geo_pick&mt=8
 - [G+Money: Výdaje a rozpočet](https://open.cait518.cc/ios-app-guide/cs/gmoney.html) — Výdaje na cesty a měny
@@ -88,11 +88,11 @@ apps: 57
   - Cena: Placené stažení za jednu pevnou cenu, bez předplatného.
   - App Store: https://apps.apple.com/cz/app/id6755782939?pt=118326163&ct=geo_pick&mt=8
 - [GBAGo: Vizuální uložené](https://open.cait518.cc/ios-app-guide/cs/gbago.html) — Mapa obnovení · Autosnímky
-  - Mapa obnovení · Vizuální uložené · Automatické snímky · Exportovat zálohu · .sav
+  - Přizpůsobeno zařízení iPhone Duo: opravdu celý displej. Emulátor, ve kterém už nepřijdeš o postup: hraj vlastní hry .gba, .gbc a .gb v 60 fps s automatickým ukládáním.
   - Cena: Placené stažení za jednu pevnou cenu, bez předplatného.
   - App Store: https://apps.apple.com/cz/app/id6804564400?pt=118326163&ct=geo_pick&mt=8
 - [HoursTag Lite: Cena v hodinách](https://open.cait518.cc/ios-app-guide/cs/hourstaglite.html) — Vědomý nákup: skutečná cena
-  - Nákupy na konci roku: než koupíte, uvidíte cenu v hodinách vlastní práce, označíte ji jako potřebu, chci nebo impuls a zjistíte, kolik práce stojí cíl na nový rok.
+  - Přizpůsobeno zařízení iPhone Duo: opravdu celý displej. Než koupíte, uvidíte cenu v hodinách vlastní práce a označíte ji jako potřebu, přání nebo impulz.
   - Cena: Stáhněte zdarma. Jednorázovým nákupem odemknete všechny funkce—bez předplatného.
   - App Store: https://apps.apple.com/cz/app/id6794039979?pt=118326163&ct=geo_pick&mt=8
 - [HoursTag: Hodiny na nákup](https://open.cait518.cc/ios-app-guide/cs/hourstag.html) — Hodinová mzda a výdaje
@@ -147,6 +147,10 @@ apps: 57
   - Přizpůsobeno zařízení iPhone Duo: opravdu celý displej. Najděte soukromé údaje, natrvalo začerněte jen to, co zvolíte, a odstraňte metadata. Vše v zařízení.
   - Cena: Stáhněte zdarma. Jednorázovým nákupem odemknete všechny funkce—bez předplatného.
   - App Store: https://apps.apple.com/cz/app/id6792850916?pt=118326163&ct=geo_pick&mt=8
+- [Meow Party: Kočičí hry pro dva](https://open.cait518.cc/ios-app-guide/cs/foldparty.html) — 200 miniher na skládací mobil
+  - Hra pro skládací telefony: po složení ještě víc zábavy, na běžném iPhonu se dá hrát naplno. 200 kočičích miniher, většinou sólo, 54 ve dvou na jednom mobilu, bez reklam.
+  - Cena: Placené stažení za jednu pevnou cenu, bez předplatného.
+  - App Store: https://apps.apple.com/cz/app/id6829184924?pt=118326163&ct=geo_pick&mt=8
 - [Mochi DoneStamp: Naposledy](https://open.cait518.cc/ios-app-guide/cs/mochidonestamp.html) — Kdy to bylo? Péče o domácnost
   - Přizpůsobeno zařízení iPhone Duo: opravdu celý displej. Už žádné dohady, kdy jste to dělali naposledy.
   - Cena: Stáhněte zdarma. Jednorázovým nákupem odemknete všechny funkce—bez předplatného.
@@ -176,7 +180,7 @@ apps: 57
   - Cena: Stáhněte zdarma. Jednorázovým nákupem odemknete všechny funkce—bez předplatného.
   - App Store: https://apps.apple.com/cz/app/id6806779853?pt=118326163&ct=geo_pick&mt=8
 - [SaveTag: záložky s AI](https://open.cait518.cc/ios-app-guide/cs/savetag.html) — Uložit odkazy, číst později
-  - Přizpůsobeno zařízení iPhone Duo: opravdu celý displej. Sdílejte odkaz z jakékoli aplikace, štítky se přidají samy v zařízení a najdete ho podle smyslu.
+  - Přizpůsobeno zařízení iPhone Duo: opravdu celý displej. Uložte odkaz z jakékoli aplikace jedním klepnutím.
   - Cena: Stáhněte zdarma. Jednorázovým nákupem odemknete všechny funkce—bez předplatného.
   - App Store: https://apps.apple.com/cz/app/id6802505528?pt=118326163&ct=geo_pick&mt=8
 - [ScanTo Pro: PDF a OCR](https://open.cait518.cc/ios-app-guide/cs/scanto.html) — Soukromý skener dokumentů
@@ -188,7 +192,7 @@ apps: 57
   - Cena: Stáhněte zdarma. Jednorázovým nákupem odemknete všechny funkce—bez předplatného.
   - App Store: https://apps.apple.com/cz/app/id6788236641?pt=118326163&ct=geo_pick&mt=8
 - [ShotInbox AI: Sort Screenshots](https://open.cait518.cc/ios-app-guide/cs/shotinbox.html) — Organizátor snímků obrazovky
-  - Přizpůsobeno zařízení iPhone Duo: opravdu celý displej. Vánoční nákupy a zimní cesty nechávají účtenky, vstupenky a objednávky na snímcích.
+  - Přizpůsobeno zařízení iPhone Duo: opravdu celý displej. Snímky obrazovky se roztřídí samy: účtenky, vstupenky, cestování i chaty zvlášť a každé slovo jde vyhledat.
   - Cena: Stáhněte zdarma. Jednorázovým nákupem odemknete všechny funkce—bez předplatného.
   - App Store: https://apps.apple.com/cz/app/id6802166527?pt=118326163&ct=geo_pick&mt=8
 - [Snapport Lite: Foto na doklady](https://open.cait518.cc/ios-app-guide/cs/snapportlite.html) — Portréty v přesném rozměru
@@ -204,11 +208,11 @@ apps: 57
   - Cena: Stáhněte zdarma. Jednorázovým nákupem odemknete všechny funkce—bez předplatného.
   - App Store: https://apps.apple.com/cz/app/id6782139553?pt=118326163&ct=geo_pick&mt=8
 - [Stay Clock: sklápěcí hodiny](https://open.cait518.cc/ios-app-guide/cs/stayclock.html) — Nepřetržitý čas a kalendář
-  - Přizpůsobeno zařízení iPhone Duo: opravdu celý displej. Dlouhé večery až do Vánoc: telefon se při nabíjení změní ve velké hodiny čitelné přes celou místnost.
+  - Přizpůsobeno zařízení iPhone Duo: opravdu celý displej. Krásné stolní hodiny, které svítí pořád a přečtete je i přes celou místnost.
   - Cena: Stáhněte zdarma. Jednorázovým nákupem odemknete všechny funkce—bez předplatného.
   - App Store: https://apps.apple.com/cz/app/id6814035888?pt=118326163&ct=geo_pick&mt=8
 - [Studydown: Měření času](https://open.cait518.cc/ios-app-guide/cs/studydown.html) — Polož ho displejem dolů
-  - Přizpůsobeno zařízení iPhone Duo: opravdu celý displej. Vyberte činnost, položte telefon displejem dolů a čas běží; zvednete-li ho, pozastaví se.
+  - Přizpůsobeno zařízení iPhone Duo: opravdu celý displej. Otočte telefon a zaznamenejte skutečné soustředění.
   - Cena: Stáhněte zdarma. Jednorázovým nákupem odemknete všechny funkce—bez předplatného.
   - App Store: https://apps.apple.com/cz/app/id6807335593?pt=118326163&ct=geo_pick&mt=8
 - [Tchaj-pej: metro včas](https://open.cait518.cc/ios-app-guide/cs/metrotimehelper.html) — Kdy vyrazit a vše stihnout
@@ -219,8 +223,12 @@ apps: 57
   - Přizpůsobeno zařízení iPhone Duo: opravdu celý displej. Lety, dlouhé cesty autem a nová místa se mění v mise: připoutat se, poděkovat posádce, ochutnat sousto.
   - Cena: Stáhněte zdarma. Jednorázovým nákupem odemknete všechny funkce—bez předplatného.
   - App Store: https://apps.apple.com/cz/app/id6787193643?pt=118326163&ct=geo_pick&mt=8
+- [TripBee Cute: Cestovní deník](https://open.cait518.cc/ios-app-guide/cs/tripbeecute.html) — Roztomilé ilustrace a odpočet
+  - Proměňte další cestu v roztomilý ilustrovaný deníček: odpočet, lety, program na každý den a seznam věcí na jedné stránce. Plánujte s přáteli a vyrazte!
+  - Cena: Stáhněte zdarma. Jednorázovým nákupem odemknete všechny funkce—bez předplatného.
+  - App Store: https://apps.apple.com/cz/app/id6826987407?pt=118326163&ct=geo_pick&mt=8
 - [TripBee Lite: Plán cesty](https://open.cait518.cc/ios-app-guide/cs/tripbeelite.html) — Itinerář dovolené den po dni
-  - Přizpůsobeno zařízení iPhone Duo: opravdu celý displej. Dejte cestu na jednu denní časovou osu: lety, ubytování, poznámky, připomínky i údaje o vstupenkách pohromadě.
+  - Přizpůsobeno zařízení iPhone Duo: opravdu celý displej. Vaše další cesta den po dni: časy, místa, připomínky, vstupenky a místní počasí na jedné časové ose.
   - Cena: Stáhněte zdarma. Jednorázovým nákupem odemknete všechny funkce—bez předplatného.
   - App Store: https://apps.apple.com/cz/app/id6791299610?pt=118326163&ct=geo_pick&mt=8
 - [TripBee: Plánovač cest](https://open.cait518.cc/ios-app-guide/cs/tripbee.html) — Výlet s partou a seznam věcí
@@ -248,10 +256,10 @@ apps: 57
   - Cena: Stáhněte zdarma. Jednorázovým nákupem odemknete všechny funkce—bez předplatného.
   - App Store: https://apps.apple.com/cz/app/id6797601720?pt=118326163&ct=geo_pick&mt=8
 - [Wordmate: Slovní zásoba](https://open.cait518.cc/ios-app-guide/cs/wordmate.html) — Slovíčka, kartičky a widget
-  - Přizpůsobeno zařízení iPhone Duo: opravdu celý displej. Učte se slovíčka ze 44 jazyků ve volných chvílích: 14 praktických témat, příkladové věty a výslovnost.
+  - Přizpůsobeno zařízení iPhone Duo: opravdu celý displej. Učte se slovíčka ve 44 jazycích s přirozenými příkladovými větami, 14 tématy a 3 úrovněmi.
   - Cena: Placené stažení za jednu pevnou cenu, bez předplatného.
   - App Store: https://apps.apple.com/cz/app/id6789917808?pt=118326163&ct=geo_pick&mt=8
 - [Zipbox: otevřít RAR, ZIP, 7z](https://open.cait518.cc/ios-app-guide/cs/zipbox.html) — Rozbalte bez reklam
-  - Přizpůsobeno zařízení iPhone Duo: opravdu celý displej. Podívejte se dovnitř, prohlédněte si fotky a PDF a rozbalte jen to, co potřebujete. Žádné reklamy.
+  - Přizpůsobeno zařízení iPhone Duo: opravdu celý displej. Otevřete ZIP, RAR, 7z, TAR, ISO a další, i archivy s heslem nebo rozdělené na části.
   - Cena: Placené stažení za jednu pevnou cenu, bez předplatného.
   - App Store: https://apps.apple.com/cz/app/id6806776579?pt=118326163&ct=geo_pick&mt=8

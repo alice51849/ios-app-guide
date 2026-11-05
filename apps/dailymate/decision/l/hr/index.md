@@ -17,7 +17,7 @@ Prije putovanja, kompletne fraze za stvarne situacije korisnije su od izoliranih
 - Plaćeno preuzimanje
 - Widget
 - Apple Watch
-- App Store · 6,99 €
+- App Store · 12,99 €
 
 [Preuzmite DailyMate u App Storeu →](https://apps.apple.com/hr/app/id6790418321?pt=118326163&ct=geo_pick&mt=8)
 

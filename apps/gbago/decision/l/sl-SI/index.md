@@ -16,7 +16,7 @@ Optimizirano za iPhone Duo. Aplikacija je izdelana z najnovejšim SDK, zapolni c
 - Več
 - Plačljiv prenos
 - Brez povezave
-- App Store · 5,99 €
+- App Store · 9,99 €
 
 [Prenesite GBAGo: Vizualne shranitve iz trgovine App Store](https://apps.apple.com/si/app/id6804564400?pt=118326163&ct=geo_pick&mt=8)
 

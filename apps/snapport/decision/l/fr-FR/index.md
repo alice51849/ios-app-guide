@@ -19,7 +19,7 @@ Pour une photo d’identité de bébé, personne d’autre ne doit apparaître e
 - Sans publicité
 - Sans suivi
 - Privé / sur l’appareil
-- App Store · 3,90 €
+- App Store · 6,99 €
 
 [Téléchargez Snapport sur l’App Store →](https://apps.apple.com/fr/app/id6780575828?pt=118326163&ct=geo_pick&mt=8)
 

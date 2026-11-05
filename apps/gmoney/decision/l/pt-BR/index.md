@@ -20,7 +20,7 @@ Em uma viagem, você precisa de um controle de orçamento que funcione offline e
 - Sem anúncios
 - Sem rastreamento
 - Privado / no dispositivo
-- App Store · R$ 17,90
+- App Store · R$ 29,90
 
 [Baixe G+Money na App Store →](https://apps.apple.com/br/app/id6755782939?pt=118326163&ct=geo_pick&mt=8)
 

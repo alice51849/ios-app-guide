@@ -19,7 +19,7 @@ A good itinerary app turns a messy trip into a clear day-by-day timeline — fli
 - No ads
 - No tracking
 - Private / on-device
-- App Store · $4.99
+- App Store · $5.99
 
 [Get TripBee Pro: Trip Planner on the App Store →](https://apps.apple.com/us/app/id6787754435?pt=118326163&ct=geo_pick&mt=8)
 

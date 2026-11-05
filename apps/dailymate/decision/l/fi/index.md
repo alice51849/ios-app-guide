@@ -17,7 +17,7 @@ Ennen matkaa täydelliset lauseet todellisiin tilanteisiin ovat hyödyllisempiä
 - Maksullinen lataus
 - Widget
 - Apple Watch
-- App Store · 6,99 €
+- App Store · 12,99 €
 
 [Hanki DailyMate App Storesta →](https://apps.apple.com/fi/app/id6790418321?pt=118326163&ct=geo_pick&mt=8)
 

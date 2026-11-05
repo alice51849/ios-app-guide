@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - Descărcare plătită
 - Widget
 - Apple Watch
-- App Store · 35,00 lei
+- App Store · 69,99 lei
 
 [Obține DailyMate din App Store →](https://apps.apple.com/ro/app/id6790418321?pt=118326163&ct=geo_pick&mt=8)
 

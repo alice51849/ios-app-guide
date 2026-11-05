@@ -3,7 +3,7 @@
 > 每個 iOS App 的結構化資訊 — 功能、價格與常見問題。
 
 locale: zh-Hant
-apps: 57
+apps: 59
 - App 目錄: https://open.cait518.cc/ios-app-guide/zh-Hant/tools/private-pay-once-iphone-app-finder.html
 - App 目錄 · PWA: https://open.cait518.cc/ios-app-guide/zh-Hant/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hant.jsonld
@@ -28,11 +28,11 @@ apps: 57
 - App 目錄 · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 
 - [100 Notes Studio: Pen & Paper](https://open.cait518.cc/ios-app-guide/zh-Hant/notesstudio100.html) — 手寫筆記本、PDF標註、錄音與複習
-  - 已針對 iPhone Duo 最佳化，真正滿版。入冬到期末考：手寫筆記、標註講義 PDF，把上課錄音留在同一頁，再用抽認卡複習。全程離線、免註冊，筆記只存在裝置裡。
+  - 已針對 iPhone Duo 最佳化，真正滿版。手寫、打字、標註 PDF，還能把課堂錄音留在同一頁，全程離線。用抽認卡複習。免註冊，筆記只存在裝置裡。
   - 價格: 免費下載,一次性購買即可解鎖全部功能,沒有訂閱陷阱。
   - App Store: https://apps.apple.com/tw/app/id6798813048?pt=118326163&ct=geo_pick&mt=8
 - [AI Brief：檔案轉 AI 提示詞](https://open.cait518.cc/ios-app-guide/zh-Hant/aibriefpack.html) — 檔案、PDF 轉提示詞與摘要
-  - 已針對 iPhone Duo 最佳化，真正滿版。年終報告、年底提案、跨年行程，資料散在截圖、PDF、筆記和連結裡？全部放進來，在裝置上讀取、標出個人資料，每項事實保留來源，整理成一份給 AI 的清楚簡報。
+  - 已針對 iPhone Duo 最佳化，真正滿版。脈絡越清楚，AI 回答越好。把截圖、PDF 和筆記丟進 AI Brief，在裝置上讀取、標出個資，整理成可直接貼進任何 AI 聊天的乾淨簡報。
   - 價格: 免費下載,一次性購買即可解鎖全部功能,沒有訂閱陷阱。
   - App Store: https://apps.apple.com/tw/app/id6791658210?pt=118326163&ct=geo_pick&mt=8
 - [Aim990：英文聽力・閱讀・文法診斷](https://open.cait518.cc/ios-app-guide/zh-Hant/aim990.html) — 多益聽讀診斷與30天計畫
@@ -44,7 +44,7 @@ apps: 57
   - 價格: 免費下載,一次性購買即可解鎖全部功能,沒有訂閱陷阱。
   - App Store: https://apps.apple.com/tw/app/id6802423998?pt=118326163&ct=geo_pick&mt=8
 - [CalDaily 計算機與主題](https://open.cait518.cc/ios-app-guide/zh-Hant/caldaily.html) — 桌面小工具，貸款折扣小費都能算
-  - 已針對 iPhone Duo 最佳化，真正滿版。換了新手機、想把主畫面重新排一遍？桌面小工具不用開啟 App 就能計算，還會跟著你目前的主題一起變化，App 內建一百款主題。
+  - 已針對 iPhone Duo 最佳化，真正滿版。直接在主畫面算：小工具本身就是完整計算機。小費、折扣、貸款等 8 種工具全都內建。無廣告、不需帳號。
   - 價格: 免費下載,一次性購買即可解鎖全部功能,沒有訂閱陷阱。
   - App Store: https://apps.apple.com/tw/app/id6794178671?pt=118326163&ct=geo_pick&mt=8
 - [CountDaysNow: Event Counter](https://open.cait518.cc/ios-app-guide/zh-Hant/countdaysnow.html) — 每日焦點
@@ -60,15 +60,15 @@ apps: 57
   - 價格: 免費下載,一次性購買即可解鎖全部功能,沒有訂閱陷阱。
   - App Store: https://apps.apple.com/tw/app/id6782251621?pt=118326163&ct=geo_pick&mt=8
 - [DailyMate Lite：開口練習](https://open.cait518.cc/ios-app-guide/zh-Hant/dailymatelite.html) — 出國旅遊・點餐問路・50種語言
-  - 已針對 iPhone Duo 最佳化，真正滿版。聽懂機場、飯店、餐廳裡當地人說的話，學會最自然的回答。旅行入門支援全部 50 種語言，離線也能練。
+  - 已針對 iPhone Duo 最佳化。50 種語言任你選，不只學一種！機場、飯店、餐廳的對話一來一往練；主畫面小工具每天陪你複習下一句，學會就換下一句。
   - 價格: 免費下載,一次性購買即可解鎖全部功能,沒有訂閱陷阱。
   - App Store: https://apps.apple.com/tw/app/id6794725568?pt=118326163&ct=geo_pick&mt=8
 - [DailyMate：學英文・日文・韓文會話](https://open.cait518.cc/ios-app-guide/zh-Hant/dailymate.html) — 每日一句・旅遊與生活實用短句
-  - 已針對 iPhone Duo 最佳化，真正滿版。連假出國玩，想開口卻卡住？DailyMate 用完整句子教，每句都附上對方自然的回應；點餐、購物、交通、旅遊等 84 個生活情境，主畫面小工具和 Apple Watch 隨時練。
+  - 已針對 iPhone Duo 最佳化，真正滿版。會背單字卻開不了口？用完整句子學，每句都附自然回應。47 種語言、8,400 句生活短句、84 個真實情境，主畫面小工具與 Apple Watch 隨時複習，離線也能用，沒有訂閱。
   - 價格: 付費下載，一次付清，無需訂閱。
   - App Store: https://apps.apple.com/tw/app/id6790418321?pt=118326163&ct=geo_pick&mt=8
 - [dB Halo：分貝計](https://open.cait518.cc/ios-app-guide/zh-Hant/dbhalo.html) — 噪音測量、頻譜與睡眠日誌
-  - 已針對 iPhone Duo 最佳化，真正滿版。冬天關窗睡，夜裡的鼾聲到底多大？只留在裝置上的睡眠日誌，辨識並分類打鼾聲、呼吸聲、說話聲，依發生時間整理聲級與統計。
+  - 已針對 iPhone Duo 最佳化，真正滿版。一眼看清現在幾分貝，完整頻譜一覽無遺；估算每天的噪音暴露量，睡眠日誌還能記錄鼾聲。全部在裝置上完成，免註冊。
   - 價格: 免費下載,一次性購買即可解鎖全部功能,沒有訂閱陷阱。
   - App Store: https://apps.apple.com/tw/app/id6806826699?pt=118326163&ct=geo_pick&mt=8
 - [EasyAM: 國定假日、連假不響的智慧鬧鐘](https://open.cait518.cc/ios-app-guide/zh-Hant/easyam.html) — 明早要不要響？上班日、補班日照響，請假、特休自動跳過
@@ -76,7 +76,7 @@ apps: 57
   - 價格: 免費下載,一次性購買即可解鎖全部功能,沒有訂閱陷阱。
   - App Store: https://apps.apple.com/tw/app/id6821790092?pt=118326163&ct=geo_pick&mt=8
 - [G+Money Lite：旅行記帳·匯率換算](https://open.cait518.cc/ios-app-guide/zh-Hant/gmoneylite.html) — 出國預算・自由行花費・每日預算
-  - 已針對 iPhone Duo 最佳化，真正滿版。出國玩一不小心就超支？每筆花費用當地幣別記，立刻換算成你的本國幣，離線也能用。設好每日預算，桌面小工具一眼看今天還剩多少。免註冊帳號。
+  - 已針對 iPhone Duo 最佳化，真正滿版。設好每日預算，今天還剩多少，桌面小工具和 Apple Watch 一眼就知道。任何幣別都能記，即時換算，離線也行。不用註冊帳號。
   - 價格: 免費下載,一次性購買即可解鎖全部功能,沒有訂閱陷阱。
   - App Store: https://apps.apple.com/tw/app/id6793436548?pt=118326163&ct=geo_pick&mt=8
 - [G+Money：日常記帳·預算·匯率](https://open.cait518.cc/ios-app-guide/zh-Hant/gmoney.html) — 多幣別・離線記帳・分類報表
@@ -84,11 +84,11 @@ apps: 57
   - 價格: 付費下載，一次付清，無需訂閱。
   - App Store: https://apps.apple.com/tw/app/id6755782939?pt=118326163&ct=geo_pick&mt=8
 - [GBAGo: 視覺存檔](https://open.cait518.cc/ios-app-guide/zh-Hant/gbago.html) — 復原地圖 · 自動快照
-  - 即時存檔四格起跳、最多十二格，每格都有縮圖；約每兩分鐘自動快照，保留最近 15 張，失手就退回幾分鐘前接著玩。無帳號、無廣告。
+  - 已針對 iPhone Duo 最佳化，真正滿版。專為 .gba、.gbc、.gb 檔打造的遊戲模擬器，匯入你自己的遊戲就能以 60 fps 離線暢玩，觸控或手把都順手。即時存檔附畫面縮圖，一眼看出存到哪；每兩分鐘還會自動快照，辛苦打的進度不怕不見。快轉最高 32 倍，金手指隨時開關。無廣告、不需帳號。
   - 價格: 付費下載，一次付清，無需訂閱。
   - App Store: https://apps.apple.com/tw/app/id6804564400?pt=118326163&ct=geo_pick&mt=8
 - [HoursTag Lite：買前先算工時](https://open.cait518.cc/ios-app-guide/zh-Hant/hourstaglite.html) — 衝動購物前，先換算成工時
-  - 已針對 iPhone Duo 最佳化，真正滿版。年底購物季又想衝動下單？結帳前先看這個價格等於你幾小時的工作，再標記成需要、想要或衝動。還能算出目標要工作多久。免帳號，資料只存在手機裡。
+  - 已針對 iPhone Duo 最佳化，真正滿版。買之前先看這個價格等於你幾小時的工作，再標記成需要、想要或衝動。支援主畫面小工具和 Apple Watch。不用帳號，資料只存在手機裡。
   - 價格: 免費下載,一次性購買即可解鎖全部功能,沒有訂閱陷阱。
   - App Store: https://apps.apple.com/tw/app/id6794039979?pt=118326163&ct=geo_pick&mt=8
 - [HoursTag：價格換工時](https://open.cait518.cc/ios-app-guide/zh-Hant/hourstag.html) — 月薪時薪計算・花費記帳本
@@ -140,11 +140,11 @@ apps: 57
   - 價格: 付費下載，一次付清，無需訂閱。
   - App Store: https://apps.apple.com/tw/app/id6775773117?pt=118326163&ct=geo_pick&mt=8
 - [Mask My File：分享前移除個資](https://open.cait518.cc/ios-app-guide/zh-Hant/maskmyfile.html) — 分享前遮蔽個資與私密資訊
-  - 已針對 iPhone Duo 最佳化，真正滿版。要把客戶檔案交給同事的時候？先找出私密資訊，再決定遮蔽或移除；批次一次最多 100 個檔案，所有處理都在你的裝置上完成，不上傳。
+  - 已針對 iPhone Duo 最佳化，真正滿版。傳送 PDF、照片或截圖前，自動找出姓名、電話、Email、卡號與人臉，永久塗黑並清除中繼資料。全程在裝置上處理，不需帳號。
   - 價格: 免費下載,一次性購買即可解鎖全部功能,沒有訂閱陷阱。
   - App Store: https://apps.apple.com/tw/app/id6792850916?pt=118326163&ct=geo_pick&mt=8
 - [Mochi DoneStamp：上次何時](https://open.cait518.cc/ios-app-guide/zh-Hant/mochidonestamp.html) — 家事保養紀錄・到期循環提醒
-  - 已針對 iPhone Duo 最佳化，真正滿版。上次換床單、換濾網是什麼時候？做完點一下，Mochi 記下準確時間，到期再提醒你，週期從你真正完成那天重新算。支援主畫面與鎖定畫面小工具，免帳號、無廣告。
+  - 已針對 iPhone Duo 最佳化，真正滿版。再也不用猜「上次是什麼時候做的」。完成就蓋章，Mochi 幫你記住，時間到了再提醒你。床單、濾網、澆花、打電話回家，還能和家人共享。
   - 價格: 免費下載,一次性購買即可解鎖全部功能,沒有訂閱陷阱。
   - App Store: https://apps.apple.com/tw/app/id6790800323?pt=118326163&ct=geo_pick&mt=8
 - [Mochi: 可愛待辦清單](https://open.cait518.cc/ios-app-guide/zh-Hant/mochi.html) — 療癒手帳・購物清單小工具
@@ -156,7 +156,7 @@ apps: 57
   - 價格: 免費下載,一次性購買即可解鎖全部功能,沒有訂閱陷阱。
   - App Store: https://apps.apple.com/tw/app/id6801956402?pt=118326163&ct=geo_pick&mt=8
 - [OnePage PPT: AI 一頁簡報](https://open.cait518.cc/ios-app-guide/zh-Hant/onepageppt.html) — 簡報製作・筆記截圖秒變投影片
-  - 已針對 iPhone Duo 最佳化，真正滿版。年底要交年終檢討、只想講一頁？貼上筆記、PDF 或 CSV 表格，點「產生投影片」：數字變成直條圖或折線圖，日期變成時間軸。
+  - 已針對 iPhone Duo 最佳化，真正滿版。貼上筆記、PDF、截圖或表格，馬上排成一張清楚的 16:9 投影片：重點變標題，數字變成真的圖表。可匯出能編輯的 pptx、PDF、PNG，全程離線。
   - 價格: 免費下載,一次性購買即可解鎖全部功能,沒有訂閱陷阱。
   - App Store: https://apps.apple.com/tw/app/id6798814385?pt=118326163&ct=geo_pick&mt=8
 - [PhotoCream Pro：底片濾鏡·復古修圖](https://open.cait518.cc/ios-app-guide/zh-Hant/photocream.html) — 底片相機・復古濾鏡・美顏修圖
@@ -172,7 +172,7 @@ apps: 57
   - 價格: 免費下載,一次性購買即可解鎖全部功能,沒有訂閱陷阱。
   - App Store: https://apps.apple.com/tw/app/id6806779853?pt=118326163&ct=geo_pick&mt=8
 - [SaveTag:AI 連結收藏](https://open.cait518.cc/ios-app-guide/zh-Hant/savetag.html) — 書籤與稍後閱讀・購物願望清單・自動分類
-  - 已針對 iPhone Duo 最佳化，真正滿版。傳給自己的連結，後來都找不到？從任何 App 分享到 SaveTag，在裝置上自動貼主題標籤，記得大概意思就搜得到，每天再挑幾則沒讀的提醒你。免註冊、不上雲。
+  - 已針對 iPhone Duo 最佳化，真正滿版。從任何 App 一鍵存下連結。SaveTag 在裝置上依主題自動分類，用意思就搜得到，每天把還沒讀的翻出來。不用註冊、沒有廣告，也不上雲。
   - 價格: 免費下載,一次性購買即可解鎖全部功能,沒有訂閱陷阱。
   - App Store: https://apps.apple.com/tw/app/id6802505528?pt=118326163&ct=geo_pick&mt=8
 - [ScanTo Pro: 離線PDF掃描](https://open.cait518.cc/ios-app-guide/zh-Hant/scanto.html) — OCR文字辨識・文件證件收據
@@ -180,11 +180,11 @@ apps: 57
   - 價格: 免費下載,一次性購買即可解鎖全部功能,沒有訂閱陷阱。
   - App Store: https://apps.apple.com/tw/app/id6779977651?pt=118326163&ct=geo_pick&mt=8
 - [Sereno：白噪音・睡眠音效](https://open.cait518.cc/ios-app-guide/zh-Hant/sereno.html) — 雨聲白噪音・助眠專注神器
-  - 已針對 iPhone Duo 最佳化，真正滿版。躺了很久還是睡不著？真實錄製的雨聲、海浪、柴火，加上白噪音、粉紅噪音、棕噪音，能混出上千種聲景，不會重複循環，定時後慢慢淡出。完全離線、免註冊。
+  - 已針對 iPhone Duo 最佳化，真正滿版。雨聲、海浪、火焰等 140 多種舒緩聲音，適合睡眠與專注時聆聽。自由混音，入睡時音量漸弱，早晨用鳥鳴輕柔喚醒。100% 離線，免註冊。
   - 價格: 免費下載,一次性購買即可解鎖全部功能,沒有訂閱陷阱。
   - App Store: https://apps.apple.com/tw/app/id6788236641?pt=118326163&ct=geo_pick&mt=8
 - [ShotInbox AI：截圖整理](https://open.cait518.cc/ios-app-guide/zh-Hant/shotinbox.html) — OCR搜尋・自動分類・時間軸
-  - 已針對 iPhone Duo 最佳化，真正滿版。年底購物、出遊，收據、車票、訂單截圖越存越多？自動分成購物、收據、旅遊、票券，圖裡的字都搜得到，追蹤包裹、加提醒，不要的截圖一次清掉。全在本機處理。
+  - 已針對 iPhone Duo 最佳化，真正滿版。截圖分類交給它:收據、票券、旅遊、對話自動歸類,裡面的文字都搜得到。開連結、加提醒、追蹤包裹,想刪除的截圖一次清掉。全在本機整理,不上傳任何內容。
   - 價格: 免費下載,一次性購買即可解鎖全部功能,沒有訂閱陷阱。
   - App Store: https://apps.apple.com/tw/app/id6802166527?pt=118326163&ct=geo_pick&mt=8
 - [Snapport Lite：在家拍證件照](https://open.cait518.cc/ios-app-guide/zh-Hant/snapportlite.html) — 人像照精準裁成指定尺寸
@@ -200,7 +200,7 @@ apps: 57
   - 價格: 免費下載,一次性購買即可解鎖全部功能,沒有訂閱陷阱。
   - App Store: https://apps.apple.com/tw/app/id6782139553?pt=118326163&ct=geo_pick&mt=8
 - [Stay Clock:翻頁桌鐘](https://open.cait518.cc/ios-app-guide/zh-Hant/stayclock.html) — 全天顯示時間與行事曆
-  - 已針對 iPhone Duo 最佳化，真正滿版。連假熬夜追劇，看時間不用一直拿手機：充電時放床頭或書桌，就是隔著房間也看得清楚的恆亮大時鐘；整月行事曆、整點報時、簡易鬧鐘都有。不用帳號、沒有廣告。
+  - 已針對 iPhone Duo 最佳化，真正滿版。一款好看的全天候桌鐘，隔著房間也看得清楚。翻頁、LED、指針多種錶面，真正的月曆、鬧鐘與柔和夜間模式，全在裝置本機運作。
   - 價格: 免費下載,一次性購買即可解鎖全部功能,沒有訂閱陷阱。
   - App Store: https://apps.apple.com/tw/app/id6814035888?pt=118326163&ct=geo_pick&mt=8
 - [Studydown：翻面專注計時](https://open.cait518.cc/ios-app-guide/zh-Hant/studydown.html) — 螢幕朝下蓋著放
@@ -211,12 +211,16 @@ apps: 57
   - 已針對 iPhone Duo 最佳化，真正滿版。年底帶小孩搭飛機，怕他坐不住？把等待變成任務：在機場勇敢一點、說謝謝、嚐嚐新食物。完成就拿獎勵、在旅行護照蓋章，旅程結束還有故事卡。適合 3–10 歲，無廣告。
   - 價格: 免費下載,一次性購買即可解鎖全部功能,沒有訂閱陷阱。
   - App Store: https://apps.apple.com/tw/app/id6787193643?pt=118326163&ct=geo_pick&mt=8
+- [TripBee Cute：可愛旅行手帳](https://open.cait518.cc/ios-app-guide/zh-Hant/tripbeecute.html) — 插畫旅遊規劃手冊・出國倒數日・和朋友一起排行程
+  - 把下一趟旅行做成一本可愛的插畫手冊：出國倒數、航班、每天分色的行程、行李清單，通通在同一頁。邀朋友一起編同一本，或分享成網頁手冊，旅伴手機上的倒數也會跟著跳。
+  - 價格: 免費下載,一次性購買即可解鎖全部功能,沒有訂閱陷阱。
+  - App Store: https://apps.apple.com/tw/app/id6826987407?pt=118326163&ct=geo_pick&mt=8
 - [TripBee Lite：旅程規劃](https://open.cait518.cc/ios-app-guide/zh-Hant/tripbeelite.html) — 出國自由行・每日行程表
-  - 已針對 iPhone Duo 最佳化，真正滿版。機票在信箱、飯店在訊息、票券在截圖裡？TripBee Lite 把下一趟旅程排成一條每日時間軸，航班、住宿、筆記、提醒和票券資訊都在一起。免註冊、無廣告。
+  - 已針對 iPhone Duo 最佳化，真正滿版。把下一趟旅程一天一天排清楚：時間、地點、提醒、票券與當地天氣，都在同一條時間軸。下一站在 Apple Watch 上也看得到，免註冊。
   - 價格: 免費下載,一次性購買即可解鎖全部功能,沒有訂閱陷阱。
   - App Store: https://apps.apple.com/tw/app/id6791299610?pt=118326163&ct=geo_pick&mt=8
 - [TripBee: 旅遊行程規劃](https://open.cait518.cc/ios-app-guide/zh-Hant/tripbee.html) — 揪團出遊共編・行李打包清單
-  - 已針對 iPhone Duo 最佳化，真正滿版。揪團出遊，行程別再傳來傳去：邀家人朋友一起編同一份行程，雨天有備案，打包清單依每位旅伴與孩子年齡自動產生，離線也能規劃。想先試試？搜尋「TripBee Lite」
+  - 已針對 iPhone Duo 最佳化，真正滿版。揪團出遊不用再傳來傳去：邀請家人朋友共同編輯同一趟行程，每天可加雨天備案，提醒依當地時間準時響起，打包清單還會依每位旅伴與孩子年齡自動產生。
   - 價格: 付費下載，一次付清，無需訂閱。
   - App Store: https://apps.apple.com/tw/app/id6787754435?pt=118326163&ct=geo_pick&mt=8
 - [Unblurry Pro：照片變清晰](https://open.cait518.cc/ios-app-guide/zh-Hant/unblurry.html) — 老照片修復・翻新舊相片
@@ -224,7 +228,7 @@ apps: 57
   - 價格: 免費下載,一次性購買即可解鎖全部功能,沒有訂閱陷阱。
   - App Store: https://apps.apple.com/tw/app/id6782275018?pt=118326163&ct=geo_pick&mt=8
 - [UsageNow：AI 用量與額度追蹤](https://open.cait518.cc/ios-app-guide/zh-Hant/claudeusagemini.html) — Claude、Codex、Copilot 重置倒數
-  - 已針對 iPhone Duo 最佳化，真正滿版。連假想把個人專案一口氣做完，最怕 AI 額度做到一半用完。UsageNow 在主畫面顯示每個 AI 方案還剩多少與重置倒數，還能自訂提醒門檻，用完之前先通知你。
+  - 已針對 iPhone Duo 最佳化，真正滿版。年底趕專案，最怕 AI 額度做到一半用完。UsageNow 在主畫面顯示每個 AI 方案還剩多少與重置倒數，還能自訂任何百分比的提醒，用完之前先通知你。
   - 價格: 免費下載,一次性購買即可解鎖全部功能,沒有訂閱陷阱。
   - App Store: https://apps.apple.com/tw/app/id6818607603?pt=118326163&ct=geo_pick&mt=8
 - [WiFi Aid Lite](https://open.cait518.cc/ios-app-guide/zh-Hant/wifiaidlite.html) — 無法上網？一鍵找出原因
@@ -232,7 +236,7 @@ apps: 57
   - 價格: 免費下載,一次性購買即可解鎖全部功能,沒有訂閱陷阱。
   - App Store: https://apps.apple.com/tw/app/id6793414462?pt=118326163&ct=geo_pick&mt=8
 - [WiFi Aid：找出網路問題·診斷](https://open.cait518.cc/ios-app-guide/zh-Hant/wifiaid.html) — 分享器・路由器・Mesh・DNS
-  - 已針對 iPhone Duo 最佳化，真正滿版。網路時好時壞，到底是 Wi-Fi、DNS 還是網站本身？WiFi Aid 一鍵做 DNS、TCP、TLS、延遲與穩定度檢測，找出最可能的原因，也能單獨檢查某個網站。支援小工具與手錶。
+  - 已針對 iPhone Duo 最佳化，真正滿版。一次查清是 DNS、電信業者、Wi-Fi 登入頁還是單一網站出問題，看得到目前連的是哪個 Mesh 節點，還能匯出 PDF 報告給客服。支援小工具與手錶。
   - 價格: 付費下載，一次付清，無需訂閱。
   - App Store: https://apps.apple.com/tw/app/id6790467886?pt=118326163&ct=geo_pick&mt=8
 - [Wordmate Lite 每天五個單字](https://open.cait518.cc/ios-app-guide/zh-Hant/wordmatelite.html) — 44 種語言，一分鐘的字彙習慣
@@ -240,13 +244,17 @@ apps: 57
   - 價格: 免費下載,一次性購買即可解鎖全部功能,沒有訂閱陷阱。
   - App Store: https://apps.apple.com/tw/app/id6797601720?pt=118326163&ct=geo_pick&mt=8
 - [Wordmate：44 種語言背單字](https://open.cait518.cc/ios-app-guide/zh-Hant/wordmate.html) — 單字卡・複習・單字小工具
-  - 已針對 iPhone Duo 最佳化，真正滿版。背了又忘、單字書翻不完？Wordmate 把 44 種語言的單字分成 14 個實用主題、84 個小單元，每個英文單字都有例句與發音。主畫面小工具和 Apple Watch 也能直接背。
+  - 已針對 iPhone Duo 最佳化，真正滿版。通勤、排隊的零碎時間，也能背單字：44 種語言、14 個主題、初中高 3 個級別。主畫面小工具與 Apple Watch 都能直接背，離線可用、免註冊、無訂閱。
   - 價格: 付費下載，一次付清，無需訂閱。
   - App Store: https://apps.apple.com/tw/app/id6789917808?pt=118326163&ct=geo_pick&mt=8
 - [Zipbox 解壓縮：RAR ZIP 7z](https://open.cait518.cc/ios-app-guide/zh-Hant/zipbox.html) — 開啟壓縮檔・預覽・加密壓縮
-  - 已針對 iPhone Duo 最佳化，真正滿版。公司寄來有密碼的 ZIP，在捷運上只想要那份 PDF？ZIP、RAR、7z 的分卷與密碼保護壓縮檔都能開，先看再解壓，只取出真正需要的那一個檔案。
+  - 已針對 iPhone Duo 最佳化，真正滿版。ZIP、RAR、7z、TAR、ISO 都能開，連有密碼、分卷的壓縮檔也行。全在裝置本機處理，沒有廣告。
   - 價格: 付費下載，一次付清，無需訂閱。
   - App Store: https://apps.apple.com/tw/app/id6806776579?pt=118326163&ct=geo_pick&mt=8
+- [喵喵派對：雙人遊戲 貓咪小遊戲](https://open.cait518.cc/ios-app-guide/zh-Hant/foldparty.html) — 摺疊手機更好玩！200款可愛遊戲，兩人一台就能對戰
+  - 為摺疊手機最佳化，摺起來更好玩，一般 iPhone 也能完整遊玩！摺痕變球網，闔上偷看秘密再展開一決勝負。200 款可愛貓咪小遊戲，大多數一個人就能玩，其中 54 款支援兩人用同一支手機面對面對戰或合作。離線就能玩，沒有廣告。
+  - 價格: 付費下載，一次付清，無需訂閱。
+  - App Store: https://apps.apple.com/tw/app/id6829184924?pt=118326163&ct=geo_pick&mt=8
 - [捷運時間助手－台北轉乘時刻表](https://open.cait518.cc/ios-app-guide/zh-Hant/metrotimehelper.html) — 反推出門時間｜小碧潭・新北投班表
   - 專為台灣台北捷運設計：說出幾點要到，就告訴你最晚幾點進站，轉乘、首末班車一起算好。支援 50 種語言，在地通勤族與各國旅客都好用；小碧潭、新北投支線另有官方班表與發車提醒。
   - 價格: 免費下載,一次性購買即可解鎖全部功能,沒有訂閱陷阱。

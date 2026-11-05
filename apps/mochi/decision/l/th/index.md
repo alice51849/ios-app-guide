@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - ไม่มีโฆษณา
 - Apple Watch
 - App Store · ฟรี
-- ★ 5.0/5 · 2
+- ★ 5.0/5 · 3
 
 [ดาวน์โหลด Mochi ใน App Store →](https://apps.apple.com/th/app/id6785004775?pt=118326163&ct=geo_pick&mt=8)
 

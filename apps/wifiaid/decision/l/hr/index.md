@@ -17,7 +17,7 @@ Optimizirano za iPhone Duo. Aplikacija je izrađena s najnovijim SDK-om, ispunja
 - Plaćeno preuzimanje
 - Bez računa
 - Apple Watch
-- App Store · 3,90 €
+- App Store · 6,99 €
 
 [Preuzmite WiFi Aid: Dijagnostika mreže u App Storeu](https://apps.apple.com/hr/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)
 

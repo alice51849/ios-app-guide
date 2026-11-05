@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - 私密 / 设备本地
 - 小组件
 - Apple Watch
-- App Store · ¥38.00
+- App Store · ¥58.00
 
 [在App Store获取Wordmate：学习44种语言 →](https://apps.apple.com/cn/app/id6789917808?pt=118326163&ct=geo_pick&mt=8)
 

@@ -20,7 +20,7 @@ Tối ưu cho iPhone Duo. Ứng dụng được xây dựng bằng bộ công c�
 - Không quảng cáo
 - Không theo dõi
 - Riêng tư / trên thiết bị
-- App Store · 89.000đ
+- App Store · 149.000đ
 
 [Tải Zipbox: Giải nén RAR, ZIP, 7z trên App Store](https://apps.apple.com/vn/app/id6806776579?pt=118326163&ct=geo_pick&mt=8)
 

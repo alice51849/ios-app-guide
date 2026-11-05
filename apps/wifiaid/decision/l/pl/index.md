@@ -17,7 +17,7 @@ Zoptymalizowana dla urządzenia iPhone Duo. Zbudowana przy użyciu najnowszego S
 - Płatne do pobrania
 - Bez konta
 - Apple Watch
-- App Store · 17,99 zł
+- App Store · 29,99 zł
 
 [Pobierz WiFi Aid: Znajdź błędy sieci z App Store](https://apps.apple.com/pl/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)
 

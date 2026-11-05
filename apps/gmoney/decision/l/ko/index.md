@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - 광고 없음
 - 추적 없음
 - 프라이빗 / 기기 내
-- App Store · ￦4,400
+- App Store · ￦7,700
 
 [앱 스토어에서 G+Money 받기 →](https://apps.apple.com/kr/app/id6755782939?pt=118326163&ct=geo_pick&mt=8)
 

@@ -19,7 +19,7 @@ Uma boa app de itinerário transforma uma viagem confusa numa linha temporal cla
 - Sem anúncios
 - Sem rastreamento
 - Privado / no dispositivo
-- App Store · 3,90 €
+- App Store · 6,99 €
 
 [Obtenha o TripBee Pro: Planeador de Viagens na App Store →](https://apps.apple.com/pt/app/id6787754435?pt=118326163&ct=geo_pick&mt=8)
 

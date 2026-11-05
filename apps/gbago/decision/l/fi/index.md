@@ -16,7 +16,7 @@ Optimoitu iPhone Duo -laitteelle. Uusimmalla SDK:lla rakennettu sovellus täytt�
 - Lisää
 - Maksullinen lataus
 - Offline
-- App Store · 5,99 €
+- App Store · 9,99 €
 
 [Lataa GBAGo: Kuvalliset tallenteet App Storesta](https://apps.apple.com/fi/app/id6804564400?pt=118326163&ct=geo_pick&mt=8)
 

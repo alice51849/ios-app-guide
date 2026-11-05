@@ -17,7 +17,7 @@ Geoptimaliseerd voor iPhone Duo. De app is gebouwd met de nieuwste SDK, vult het
 - Betaalde aanschaf
 - Geen account
 - Apple Watch
-- App Store · € 3,90
+- App Store · € 6,99
 
 [Download WiFi Aid: Vind netwerkfouten in de App Store](https://apps.apple.com/nl/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)
 

@@ -16,7 +16,7 @@ Dioptimumkan untuk iPhone Duo. Dibina dengan SDK terkini, apl ini memenuhi selur
 - Lagi
 - Muat turun berbayar
 - Luar talian
-- App Store · RM22.90
+- App Store · RM39.90
 
 [Dapatkan GBAGo: Simpanan visual di App Store](https://apps.apple.com/my/app/id6804564400?pt=118326163&ct=geo_pick&mt=8)
 

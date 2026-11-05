@@ -16,7 +16,7 @@ Geoptimaliseerd voor iPhone Duo. De app is gebouwd met de nieuwste SDK, vult het
 - Meer
 - Betaalde aanschaf
 - Offline
-- App Store · € 5,99
+- App Store · € 9,99
 
 [Download GBAGo: Visuele saves in de App Store](https://apps.apple.com/nl/app/id6804564400?pt=118326163&ct=geo_pick&mt=8)
 

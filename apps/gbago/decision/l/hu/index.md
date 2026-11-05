@@ -16,7 +16,7 @@ Optimalizálva az iPhone Duo készülékhez. A legújabb SDK-val készült alkal
 - Továbbiak
 - Fizetős letöltés
 - Offline
-- App Store · HUF1,999.00
+- App Store · HUF3,990.00
 
 [Töltse le a(z) GBAGo: Vizuális mentések appot az App Store-ból](https://apps.apple.com/hu/app/id6804564400?pt=118326163&ct=geo_pick&mt=8)
 

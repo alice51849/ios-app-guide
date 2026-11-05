@@ -20,7 +20,7 @@ Utilizadores em deslocação precisam de prática de vocabulário que encaixe em
 - Privado / no dispositivo
 - Widget
 - Apple Watch
-- App Store · 5,99 €
+- App Store · 9,99 €
 
 [Obtenha Wordmate: Learn 44 Languages na App Store →](https://apps.apple.com/pt/app/id6789917808?pt=118326163&ct=geo_pick&mt=8)
 

@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - 광고 없음
 - 추적 없음
 - 프라이빗 / 기기 내
-- App Store · ￦5,500
+- App Store · ￦9,900
 
 [App Store에서 Snapport 받기 →](https://apps.apple.com/kr/app/id6780575828?pt=118326163&ct=geo_pick&mt=8)
 

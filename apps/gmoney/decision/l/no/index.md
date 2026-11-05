@@ -20,7 +20,7 @@ På en tur trenger du en budsjettsporer som fungerer offline i et land uten data
 - Ingen annonser
 - Ingen sporing
 - Privat / på enheten
-- App Store · 39,00 kr
+- App Store · 59,00 kr
 
 [Få G+Money i App Store →](https://apps.apple.com/no/app/id6755782939?pt=118326163&ct=geo_pick&mt=8)
 

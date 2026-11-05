@@ -19,7 +19,7 @@ Dobra aplikacija za planiranje pretvara kaotično putovanje u jasan dnevni raspo
 - Bez oglasa
 - Bez praćenja
 - Privatno / na uređaju
-- App Store · 3,90 €
+- App Store · 6,99 €
 
 [Preuzmite TripBee Pro: Planer putovanja u App Storeu →](https://apps.apple.com/hr/app/id6787754435?pt=118326163&ct=geo_pick&mt=8)
 

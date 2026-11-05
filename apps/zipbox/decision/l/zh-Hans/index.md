@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - 无广告
 - 无跟踪
 - 私密 / 设备本地
-- App Store · ¥22.00
+- App Store · ¥38.00
 
 [在 App Store 获取 Zipbox 解压缩：RAR ZIP 7z](https://apps.apple.com/cn/app/id6806776579?pt=118326163&ct=geo_pick&mt=8)
 

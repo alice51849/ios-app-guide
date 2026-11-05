@@ -16,7 +16,7 @@ iPhone Duo ڈیوائس کے لیے آپٹمائزڈ۔ جدید ترین SDK س�
 - مزید
 - ادا شدہ ڈاؤن لوڈ
 - آف لائن
-- App Store · Rs 1,300.00
+- App Store · Rs 2,500.00
 
 [App Store سے GBAGo: بصری سیوز حاصل کریں](https://apps.apple.com/pk/app/id6804564400?pt=118326163&ct=geo_pick&mt=8)
 

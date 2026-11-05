@@ -1,12 +1,12 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-11-04",
-  "content_digest": "d41bfe7e156aabee8cf16c8afd333da7f2ca1d1367dc4352339ff83f32cded2b",
+  "date_modified": "2026-11-05",
+  "content_digest": "cfd8097e2d160bb22da9f0415e9bc3c45e093acb6a1c2a6fc701a91301d98006",
   "locale": "fi",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 57,
+  "record_count": 59,
   "apps": [
     {
       "key": "notesstudio100",
@@ -355,9 +355,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/fi/dailymate.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "6.99",
+        "price": "12.99",
         "currency": "EUR",
-        "formatted_price": "6,99 €",
+        "formatted_price": "12,99 €",
         "storefront_url": "https://apps.apple.com/fi/app/id6790418321"
       }
     },
@@ -556,9 +556,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/fi/gmoney.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "3",
+        "price": "5.99",
         "currency": "EUR",
-        "formatted_price": "3,00 €",
+        "formatted_price": "5,99 €",
         "storefront_url": "https://apps.apple.com/fi/app/id6755782939"
       }
     },
@@ -638,9 +638,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/fi/gbago.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "5.99",
+        "price": "9.99",
         "currency": "EUR",
-        "formatted_price": "5,99 €",
+        "formatted_price": "9,99 €",
         "storefront_url": "https://apps.apple.com/fi/app/id6804564400"
       }
     },
@@ -878,9 +878,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/fi/lumibopomofopro.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "9.99",
+        "price": "0",
         "currency": "EUR",
-        "formatted_price": "9,99 €",
+        "formatted_price": "Ilmainen",
         "storefront_url": "https://apps.apple.com/fi/app/id6775773117"
       }
     },
@@ -1197,6 +1197,49 @@
       }
     },
     {
+      "key": "foldparty",
+      "app_store_id": "6829184924",
+      "name": "Meow Party: Kaksinpelit",
+      "summary": "Yksi puhelin riittää kahdelle: näytön taite jakaa sen kahtia, ja kumpikin pelaaja saa oman puoliskonsa ilman toista puhelinta tai nettiyhteyttä. Meow Partyn 200 söpöä kissa-aiheista minipeliä on optimoitu iPhone Duon taittuvalle näytölle, joten taitettuna pelaaminen on vielä hauskempaa. Myös tavallisella iPhonella kaikki pelit ovat täysin pelattavissa.",
+      "category": "other",
+      "search_terms": [
+        "minipeli",
+        "pelit",
+        "2",
+        "pelaajan",
+        "kahden",
+        "offline",
+        "ilman",
+        "nettiä",
+        "seurapeli",
+        "kissa",
+        "söpö",
+        "taittuva",
+        "pulma",
+        "kissapelit"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/fi/app/id6829184924?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/fi/foldparty.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "6.99",
+        "currency": "EUR",
+        "formatted_price": "6,99 €",
+        "storefront_url": "https://apps.apple.com/fi/app/id6829184924"
+      }
+    },
+    {
       "key": "metrotimehelper",
       "app_store_id": "6819061896",
       "name": "Taipei: Metron aika-apuri",
@@ -1231,9 +1274,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/fi/metrotimehelper.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "0",
+        "price": "2.99",
         "currency": "EUR",
-        "formatted_price": "Ilmainen",
+        "formatted_price": "2,99 €",
         "storefront_url": "https://apps.apple.com/fi/app/id6819061896"
       }
     },
@@ -1703,9 +1746,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/fi/snapport.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "3.9",
+        "price": "6.99",
         "currency": "EUR",
-        "formatted_price": "3,90 €",
+        "formatted_price": "6,99 €",
         "storefront_url": "https://apps.apple.com/fi/app/id6780575828"
       }
     },
@@ -1909,6 +1952,45 @@
       }
     },
     {
+      "key": "tripbeecute",
+      "app_store_id": "6826987407",
+      "name": "TripBee Cute: Matkapäiväkirja",
+      "summary": "Kun varaukset ovat sähköposteissa ja ohjelma hajallaan muistiinpanoissa, TripBee Cute kokoaa koko matkan yhteen söpöön, kuvitettuun matkavihkoon. Jokainen matka on kirjahyllyssäsi oma pieni vihko kuvitetulla kannella. Avaa vihko, niin koko matka etenee yhdellä sivulla: kansikuva, lähtölaskenta, lennot, päivien ohjelma ja lopuksi valmistelut, kuten pakkauslista ja muistiinpanot.",
+      "category": "travel",
+      "search_terms": [
+        "matkasuunnitelma",
+        "pakkauslista",
+        "matkaohjelma",
+        "päivälaskuri",
+        "loma",
+        "reissu",
+        "lomamatka",
+        "kesäloma",
+        "widget",
+        "lento"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/fi/app/id6826987407?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/fi/tripbeecute.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Ilmainen",
+        "storefront_url": "https://apps.apple.com/fi/app/id6826987407"
+      }
+    },
+    {
       "key": "tripbeelite",
       "app_store_id": "6791299610",
       "name": "TripBee Lite: Matkasuunnitelma",
@@ -1984,9 +2066,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/fi/tripbee.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "3.9",
+        "price": "6.99",
         "currency": "EUR",
-        "formatted_price": "3,90 €",
+        "formatted_price": "6,99 €",
         "storefront_url": "https://apps.apple.com/fi/app/id6787754435"
       }
     },
@@ -2109,9 +2191,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/fi/wifiaid.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "3.9",
+        "price": "6.99",
         "currency": "EUR",
-        "formatted_price": "3,90 €",
+        "formatted_price": "6,99 €",
         "storefront_url": "https://apps.apple.com/fi/app/id6790467886"
       }
     },
@@ -2234,9 +2316,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/fi/wordmate.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "5.99",
+        "price": "9.99",
         "currency": "EUR",
-        "formatted_price": "5,99 €",
+        "formatted_price": "9,99 €",
         "storefront_url": "https://apps.apple.com/fi/app/id6789917808"
       }
     },
@@ -2276,9 +2358,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/fi/zipbox.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "3",
+        "price": "5.99",
         "currency": "EUR",
-        "formatted_price": "3,00 €",
+        "formatted_price": "5,99 €",
         "storefront_url": "https://apps.apple.com/fi/app/id6806776579"
       }
     }

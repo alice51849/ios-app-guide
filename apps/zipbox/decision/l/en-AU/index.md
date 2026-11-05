@@ -20,7 +20,7 @@ Zipbox — Open encrypted and split ZIP, RAR, RAR5 and 7z archives on-device, cr
 - No ads
 - No tracking
 - Private / on-device
-- App Store · $4.90
+- App Store · $7.99
 
 [Get Zipbox on the App Store →](https://apps.apple.com/au/app/id6806776579?pt=118326163&ct=geo_pick&mt=8)
 

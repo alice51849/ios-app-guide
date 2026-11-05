@@ -20,7 +20,7 @@ Op reis heb je een budgettracker nodig die offline werkt in een land zonder data
 - Geen advertenties
 - Geen tracking
 - Privé / op apparaat
-- App Store · € 3,00
+- App Store · € 5,99
 
 [Download G+Money in de App Store →](https://apps.apple.com/nl/app/id6755782939?pt=118326163&ct=geo_pick&mt=8)
 

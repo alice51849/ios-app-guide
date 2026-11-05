@@ -19,7 +19,7 @@ Snapport is a paid download with JPEG, PNG and PDF export included. For a U.S. p
 - No ads
 - No tracking
 - Private / on-device
-- App Store · $4.99
+- App Store · $5.99
 
 [Get Snapport on the App Store →](https://apps.apple.com/us/app/id6780575828?pt=118326163&ct=geo_pick&mt=8)
 

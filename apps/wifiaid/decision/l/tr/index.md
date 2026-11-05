@@ -17,7 +17,7 @@ When Wi-Fi says connected but work still cannot get online, the useful first ste
 - Ücretli indirme
 - Hesap yok
 - Apple Watch
-- App Store · ₺179,99
+- App Store · ₺299,99
 
 [WiFi Aid uygulamasını App Store'dan edinin →](https://apps.apple.com/tr/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)
 

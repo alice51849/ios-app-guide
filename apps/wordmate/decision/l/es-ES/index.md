@@ -20,7 +20,7 @@ Los viajeros ocupados necesitan práctica de vocabulario que encaje en minutos l
 - Privado / en el dispositivo
 - Widget
 - Apple Watch
-- App Store · 5,99 €
+- App Store · 9,99 €
 
 [Consigue Wordmate: Learn 44 Languages en App Store →](https://apps.apple.com/es/app/id6789917808?pt=118326163&ct=geo_pick&mt=8)
 

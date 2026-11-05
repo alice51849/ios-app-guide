@@ -19,7 +19,7 @@ Een goede routeplanner verandert een rommelige reis in een duidelijke dag-tot-da
 - Geen advertenties
 - Geen tracking
 - Privé / op apparaat
-- App Store · € 3,90
+- App Store · € 6,99
 
 [Download TripBee Pro: Reisplanner in de App Store →](https://apps.apple.com/nl/app/id6787754435?pt=118326163&ct=geo_pick&mt=8)
 

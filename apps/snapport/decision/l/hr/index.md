@@ -19,7 +19,7 @@ Za bebinu fotografiju putovnice nitko drugi ne smije biti u kadru, a pozadina mo
 - Bez oglasa
 - Bez praćenja
 - Privatno / na uređaju
-- App Store · 3,90 €
+- App Store · 6,99 €
 
 [Preuzmite Snapport u App Storeu →](https://apps.apple.com/hr/app/id6780575828?pt=118326163&ct=geo_pick&mt=8)
 

@@ -3,7 +3,7 @@
 > Infos structurées sur chaque app iOS — fonctions, prix et FAQ.
 
 locale: fr-CA
-apps: 57
+apps: 59
 - Répertoire d'apps: https://open.cait518.cc/ios-app-guide/fr-CA/tools/private-pay-once-iphone-app-finder.html
 - Répertoire d'apps · PWA: https://open.cait518.cc/ios-app-guide/fr-CA/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld
@@ -28,7 +28,7 @@ apps: 57
 - Répertoire d'apps · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 
 - [100 Notes Studio: Pen & Paper](https://open.cait518.cc/ios-app-guide/fr-CA/notesstudio100.html) — Carnet manuscrit et PDF
-  - Fin de session et examens de décembre : notes manuscrites, PDF annotés, enregistrement du cours sur la page et révision avec des cartes mémoire. Hors ligne, sans compte.
+  - Optimisé pour l’iPhone Duo : un vrai plein écran. Écrivez à la main ou au clavier, annotez vos PDF et enregistrez le cours sur la page, hors ligne.
   - Tarif: Téléchargement gratuit, achat unique pour tout débloquer. Sans abonnement.
   - App Store: https://apps.apple.com/ca/app/id6798813048?pt=118326163&ct=geo_pick&mt=8
 - [AI Brief: Fichiers en prompt](https://open.cait518.cc/ios-app-guide/fr-CA/aibriefpack.html) — Prompts depuis PDF et fichiers
@@ -64,7 +64,7 @@ apps: 57
   - Tarif: Téléchargement payant à prix unique, sans abonnement.
   - App Store: https://apps.apple.com/ca/app/id6790418321?pt=118326163&ct=geo_pick&mt=8
 - [DailyMate Lite](https://open.cait518.cc/ios-app-guide/fr-CA/dailymatelite.html) — Conversation pour voyager
-  - Optimisé pour l’iPhone Duo : un vrai plein écran. Comprenez ce qu'on vous dit à l'aéroport, à l'hôtel ou au restaurant et apprenez quoi répondre.
+  - Optimisée pour iPhone Duo. Choisissez parmi 50 langues. Pratiquez vos échanges à l’aéroport, à l’hôtel, au café, et révisez chaque jour la phrase suivante dans le widget.
   - Tarif: Téléchargement gratuit, achat unique pour tout débloquer. Sans abonnement.
   - App Store: https://apps.apple.com/ca/app/id6794725568?pt=118326163&ct=geo_pick&mt=8
 - [dB Halo: Sonomètre](https://open.cait518.cc/ios-app-guide/fr-CA/dbhalo.html) — Niveau sonore, dose et sommeil
@@ -80,7 +80,7 @@ apps: 57
   - Tarif: Téléchargement gratuit, achat unique pour tout débloquer. Sans abonnement.
   - App Store: https://apps.apple.com/ca/app/id6824946559?pt=118326163&ct=geo_pick&mt=8
 - [G+Money Lite: Frais de voyage](https://open.cait518.cc/ios-app-guide/fr-CA/gmoneylite.html) — Budget à l'étranger & devises
-  - Temps des Fêtes dans le Sud? Notez vos achats en devise locale, voyez-les aussitôt dans la vôtre, fixez une limite quotidienne et convertissez même hors ligne.
+  - Optimisé pour l’iPhone Duo : un vrai plein écran. Fixez un budget quotidien et voyez le reste du jour sur le widget et l'Apple Watch.
   - Tarif: Téléchargement gratuit, achat unique pour tout débloquer. Sans abonnement.
   - App Store: https://apps.apple.com/ca/app/id6793436548?pt=118326163&ct=geo_pick&mt=8
 - [G+Money: Dépenses et budget](https://open.cait518.cc/ios-app-guide/fr-CA/gmoney.html) — Argent et budget de voyage
@@ -88,7 +88,7 @@ apps: 57
   - Tarif: Téléchargement payant à prix unique, sans abonnement.
   - App Store: https://apps.apple.com/ca/app/id6755782939?pt=118326163&ct=geo_pick&mt=8
 - [GBAGo: Sauvegardes visuelles](https://open.cait518.cc/ios-app-guide/fr-CA/gbago.html) — Récupération · Instantanés
-  - Carte de récupération · Sauvegardes visuelles · Instantanés automatiques · Exportation locale · .sav
+  - Optimisé pour l’iPhone Duo : un vrai plein écran. L'émulateur qui protège votre progression.
   - Tarif: Téléchargement payant à prix unique, sans abonnement.
   - App Store: https://apps.apple.com/ca/app/id6804564400?pt=118326163&ct=geo_pick&mt=8
 - [HoursTag : Heures d’achat](https://open.cait518.cc/ios-app-guide/fr-CA/hourstag.html) — Salaire horaire & dépenses
@@ -96,7 +96,7 @@ apps: 57
   - Tarif: Téléchargement payant à prix unique, sans abonnement.
   - App Store: https://apps.apple.com/ca/app/id6754218117?pt=118326163&ct=geo_pick&mt=8
 - [HoursTag Lite: Prix en heures](https://open.cait518.cc/ios-app-guide/fr-CA/hourstaglite.html) — Achat conscient: vraie valeur
-  - Magasinage des Fêtes : avant d'acheter, voyez le prix en heures de travail, classez-le en besoin, envie ou impulsion, et voyez le travail derrière un objectif.
+  - Optimisé pour l’iPhone Duo : un vrai plein écran. Avant d'acheter, voyez le prix en heures de travail, puis classez-le en besoin, envie ou impulsion.
   - Tarif: Téléchargement gratuit, achat unique pour tout débloquer. Sans abonnement.
   - App Store: https://apps.apple.com/ca/app/id6794039979?pt=118326163&ct=geo_pick&mt=8
 - [LED Moving Text](https://open.cait518.cc/ios-app-guide/fr-CA/ledmovingtext.html) — Bandeau lumineux défilant
@@ -147,6 +147,10 @@ apps: 57
   - Optimisé pour l’iPhone Duo : un vrai plein écran. Repérez les infos privées, masquez pour de bon votre sélection et retirez les métadonnées.
   - Tarif: Téléchargement gratuit, achat unique pour tout débloquer. Sans abonnement.
   - App Store: https://apps.apple.com/ca/app/id6792850916?pt=118326163&ct=geo_pick&mt=8
+- [Meow Party : Mini-jeux de chat](https://open.cait518.cc/ios-app-guide/fr-CA/foldparty.html) — 200 jeux sur écran pliable
+  - Optimisé pour cellulaires pliables : plus amusant en pliant, 100 % jouable sur tout iPhone. 200 mini-jeux de chats mignons, dont 54 à deux. Hors ligne, sans pub.
+  - Tarif: Téléchargement payant à prix unique, sans abonnement.
+  - App Store: https://apps.apple.com/ca/app/id6829184924?pt=118326163&ct=geo_pick&mt=8
 - [Mochi DoneStamp : Mémo](https://open.cait518.cc/ios-app-guide/fr-CA/mochidonestamp.html) — C'était quand ? Rappels ménage
   - Optimisé pour l’iPhone Duo : un vrai plein écran. Fini de te demander quand tu l'as fait. Tamponne-le : Mochi s'en souvient et te prévient quand c'est à refaire.
   - Tarif: Téléchargement gratuit, achat unique pour tout débloquer. Sans abonnement.
@@ -176,7 +180,7 @@ apps: 57
   - Tarif: Téléchargement gratuit, achat unique pour tout débloquer. Sans abonnement.
   - App Store: https://apps.apple.com/ca/app/id6806779853?pt=118326163&ct=geo_pick&mt=8
 - [SaveTag : signets par IA](https://open.cait518.cc/ios-app-guide/fr-CA/savetag.html) — À lire ou à voir plus tard
-  - Optimisé pour l’iPhone Duo : un vrai plein écran. Partagez le lien de n'importe quelle app : il est classé sur l'appareil et retrouvé par le sens.
+  - Optimisé pour l’iPhone Duo : un vrai plein écran. Un geste pour garder un lien de n'importe quelle app.
   - Tarif: Téléchargement gratuit, achat unique pour tout débloquer. Sans abonnement.
   - App Store: https://apps.apple.com/ca/app/id6802505528?pt=118326163&ct=geo_pick&mt=8
 - [ScanTo Pro : PDF et OCR](https://open.cait518.cc/ios-app-guide/fr-CA/scanto.html) — Numériseur de documents privé
@@ -188,7 +192,7 @@ apps: 57
   - Tarif: Téléchargement gratuit, achat unique pour tout débloquer. Sans abonnement.
   - App Store: https://apps.apple.com/ca/app/id6788236641?pt=118326163&ct=geo_pick&mt=8
 - [ShotInbox AI: Sort Screenshots](https://open.cait518.cc/ios-app-guide/fr-CA/shotinbox.html) — OCR: recherchez vos captures
-  - Optimisé pour l’iPhone Duo : un vrai plein écran. Magasinage des Fêtes et voyages d'hiver : reçus, billets et commandes s'empilent en captures.
+  - Optimisé pour l’iPhone Duo : un vrai plein écran. Faites le ménage dans vos captures d'écran : reçus, billets, voyages et clavardages classés, chaque mot cherchable.
   - Tarif: Téléchargement gratuit, achat unique pour tout débloquer. Sans abonnement.
   - App Store: https://apps.apple.com/ca/app/id6802166527?pt=118326163&ct=geo_pick&mt=8
 - [Snapport : Photos passeport](https://open.cait518.cc/ios-app-guide/fr-CA/snapport.html) — 35x45, planche à imprimer
@@ -204,11 +208,11 @@ apps: 57
   - Tarif: Téléchargement gratuit, achat unique pour tout débloquer. Sans abonnement.
   - App Store: https://apps.apple.com/ca/app/id6782139553?pt=118326163&ct=geo_pick&mt=8
 - [Stay Clock : horloge flip](https://open.cait518.cc/ios-app-guide/fr-CA/stayclock.html) — Heure et calendrier permanents
-  - Longues soirées jusqu’aux Fêtes : pendant la charge, votre téléphone devient une grande horloge lisible de l’autre bout de la pièce, avec calendrier et alarme.
+  - Optimisé pour l’iPhone Duo : un vrai plein écran. Une belle horloge de bureau toujours allumée, lisible de l'autre bout de la pièce.
   - Tarif: Téléchargement gratuit, achat unique pour tout débloquer. Sans abonnement.
   - App Store: https://apps.apple.com/ca/app/id6814035888?pt=118326163&ct=geo_pick&mt=8
 - [Studydown : Suivi du temps](https://open.cait518.cc/ios-app-guide/fr-CA/studydown.html) — Écran contre la table
-  - Optimisé pour l’iPhone Duo : un vrai plein écran. Choisissez une activité, posez le cellulaire face cachée : le temps compte; reprenez-le, il se met en pause.
+  - Optimisé pour l’iPhone Duo : un vrai plein écran. Retournez le téléphone et mesurez votre vrai focus. Voyez les interruptions et le rythme quotidien de chaque échéance.
   - Tarif: Téléchargement gratuit, achat unique pour tout débloquer. Sans abonnement.
   - App Store: https://apps.apple.com/ca/app/id6807335593?pt=118326163&ct=geo_pick&mt=8
 - [Taipei : l’Assistant Métro](https://open.cait518.cc/ios-app-guide/fr-CA/metrotimehelper.html) — Quand partir? On s’en occupe
@@ -219,8 +223,12 @@ apps: 57
   - Optimisé pour l’iPhone Duo : un vrai plein écran. Vols, trajets, nouveaux lieux : autant de missions. S'attacher, remercier l'équipage, goûter un nouveau plat.
   - Tarif: Téléchargement gratuit, achat unique pour tout débloquer. Sans abonnement.
   - App Store: https://apps.apple.com/ca/app/id6787193643?pt=118326163&ct=geo_pick&mt=8
+- [TripBee Cute: Carnet de voyage](https://open.cait518.cc/ios-app-guide/fr-CA/tripbeecute.html) — Vacances : décompte et journal
+  - Faites de vos prochaines vacances un joli carnet illustré : décompte, vols, journées et bagages sur une seule page. Préparez-le entre amis et partagez-le en carnet web.
+  - Tarif: Téléchargement gratuit, achat unique pour tout débloquer. Sans abonnement.
+  - App Store: https://apps.apple.com/ca/app/id6826987407?pt=118326163&ct=geo_pick&mt=8
 - [TripBee Lite : Plan de voyage](https://open.cait518.cc/ios-app-guide/fr-CA/tripbeelite.html) — Itinéraire jour par jour
-  - Optimisé pour l’iPhone Duo : un vrai plein écran. Une ligne du temps jour par jour : vols, hébergement, notes, rappels et billets réunis. Sans compte.
+  - Optimisé pour l’iPhone Duo : un vrai plein écran. Votre prochain voyage, jour par jour : horaires, lieux, rappels, billets et météo locale sur une chronologie.
   - Tarif: Téléchargement gratuit, achat unique pour tout débloquer. Sans abonnement.
   - App Store: https://apps.apple.com/ca/app/id6791299610?pt=118326163&ct=geo_pick&mt=8
 - [TripBee: Planificateur](https://open.cait518.cc/ios-app-guide/fr-CA/tripbee.html) — Voyage de groupe et valise
@@ -244,7 +252,7 @@ apps: 57
   - Tarif: Téléchargement payant à prix unique, sans abonnement.
   - App Store: https://apps.apple.com/ca/app/id6790467886?pt=118326163&ct=geo_pick&mt=8
 - [Wordmate : vocabulaire](https://open.cait518.cc/ios-app-guide/fr-CA/wordmate.html) — 44 langues, widget et montre
-  - Optimisé pour l’iPhone Duo : un vrai plein écran. Apprenez du vocabulaire dans 44 langues dans vos temps libres : 14 thèmes pratiques, phrases d'exemple et prononciation.
+  - Optimisé pour l’iPhone Duo : un vrai plein écran. Apprenez du vocabulaire dans 44 langues avec des exemples naturels, 14 thèmes et 3 niveaux.
   - Tarif: Téléchargement payant à prix unique, sans abonnement.
   - App Store: https://apps.apple.com/ca/app/id6789917808?pt=118326163&ct=geo_pick&mt=8
 - [Wordmate Lite: 5 mots par jour](https://open.cait518.cc/ios-app-guide/fr-CA/wordmatelite.html) — Ton vocabulaire, une minute
@@ -252,6 +260,6 @@ apps: 57
   - Tarif: Téléchargement gratuit, achat unique pour tout débloquer. Sans abonnement.
   - App Store: https://apps.apple.com/ca/app/id6797601720?pt=118326163&ct=geo_pick&mt=8
 - [Zipbox : décompresser RAR, ZIP](https://open.cait518.cc/ios-app-guide/fr-CA/zipbox.html) — Ouvrez vos archives, sans pub
-  - Optimisé pour l’iPhone Duo : un vrai plein écran. Regardez le contenu, prévisualisez photos et PDF, puis extrayez seulement le nécessaire, sur l’appareil. Sans pub.
+  - Optimisé pour l’iPhone Duo : un vrai plein écran. Ouvrez ZIP, RAR, 7z, TAR, ISO et plus, même protégés par mot de passe ou en plusieurs parties.
   - Tarif: Téléchargement payant à prix unique, sans abonnement.
   - App Store: https://apps.apple.com/ca/app/id6806776579?pt=118326163&ct=geo_pick&mt=8

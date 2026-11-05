@@ -19,7 +19,7 @@ Dobrá aplikácia na itinerár premení chaotickú cestu na jasný denný harmon
 - Bez reklám
 - Bez sledovania
 - Súkromné / v zariadení
-- App Store · 3,90 €
+- App Store · 6,99 €
 
 [Stiahnite si TripBee Pro: Plánovač ciest v App Store →](https://apps.apple.com/sk/app/id6787754435?pt=118326163&ct=geo_pick&mt=8)
 

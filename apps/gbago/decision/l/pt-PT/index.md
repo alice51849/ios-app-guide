@@ -16,7 +16,7 @@ Otimizada para iPhone Duo. Criada com o SDK mais recente, a app ocupa todo o ecr
 - Mais
 - Descarregamento pago
 - Offline
-- App Store · 5,99 €
+- App Store · 9,99 €
 
 [Baixe GBAGo: Saves visuais na App Store](https://apps.apple.com/pt/app/id6804564400?pt=118326163&ct=geo_pick&mt=8)
 

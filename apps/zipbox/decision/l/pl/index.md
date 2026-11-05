@@ -20,7 +20,7 @@ Zoptymalizowana dla urządzenia iPhone Duo. Zbudowana przy użyciu najnowszego S
 - Bez reklam
 - Bez śledzenia
 - Prywatne / na urządzeniu
-- App Store · 14,99 zł
+- App Store · 24,99 zł
 
 [Pobierz Zipbox: otwórz RAR, ZIP, 7z z App Store](https://apps.apple.com/pl/app/id6806776579?pt=118326163&ct=geo_pick&mt=8)
 

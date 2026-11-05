@@ -17,7 +17,7 @@ Před cestou jsou kompletní fráze pro reálné situace užitečnější než i
 - Placené stažení
 - Widget
 - Apple Watch
-- App Store · 179,00 Kč
+- App Store · 299,00 Kč
 
 [Stáhněte si DailyMate v App Store →](https://apps.apple.com/cz/app/id6790418321?pt=118326163&ct=geo_pick&mt=8)
 

@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - کوئی اشتہار نہیں
 - کوئی نگرانی نہیں
 - نجی / آلہ پر
-- App Store · Rs 700.00
+- App Store · Rs 1,300.00
 
 [G+Money ایپ اسٹور سے حاصل کریں →](https://apps.apple.com/pk/app/id6755782939?pt=118326163&ct=geo_pick&mt=8)
 

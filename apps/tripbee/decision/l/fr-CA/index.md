@@ -19,7 +19,7 @@ Une bonne application d'itinéraire transforme un voyage désordonné en une chr
 - Aucune publicité
 - Aucun suivi
 - Privé / sur l'appareil
-- App Store · $4.00
+- App Store · $7.99
 
 [Obtenez TripBee Pro: Trip Planner dans l'App Store →](https://apps.apple.com/ca/app/id6787754435?pt=118326163&ct=geo_pick&mt=8)
 

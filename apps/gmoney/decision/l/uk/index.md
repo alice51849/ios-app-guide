@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - Без реклами
 - Без відстеження
 - Приватно / на пристрої
-- App Store · 3,95 USD
+- App Store · 5,99 USD
 
 [Отримайте G+Money в App Store →](https://apps.apple.com/ua/app/id6755782939?pt=118326163&ct=geo_pick&mt=8)
 

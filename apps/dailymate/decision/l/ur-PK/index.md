@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - ادا شدہ ڈاؤن لوڈ
 - وجیٹ
 - Apple Watch
-- App Store · Rs 1,900.00
+- App Store · Rs 3,500.00
 
 [App Store سے DailyMate حاصل کریں →](https://apps.apple.com/pk/app/id6790418321?pt=118326163&ct=geo_pick&mt=8)
 

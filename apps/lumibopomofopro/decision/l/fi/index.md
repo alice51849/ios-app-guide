@@ -18,7 +18,7 @@ Kaksikieliset lapset, jotka opettelevat Zhuyinia kotona, tarvitsevat kokonaisen 
 - Ei tiliä
 - Ei mainoksia
 - Yksityinen / laitteella
-- App Store · 9,99 €
+- App Store · Ilmainen
 
 [Hanki Lumi Bopomofo Pro App Storesta →](https://apps.apple.com/fi/app/id6775773117?pt=118326163&ct=geo_pick&mt=8)
 

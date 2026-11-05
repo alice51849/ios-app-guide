@@ -17,7 +17,7 @@ Pred potovanjem so celovite fraze za resnične situacije bolj uporabne kot posam
 - Plačljiv prenos
 - Gradnik
 - Apple Watch
-- App Store · 6,99 €
+- App Store · 12,99 €
 
 [Prenesite DailyMate v App Store →](https://apps.apple.com/si/app/id6790418321?pt=118326163&ct=geo_pick&mt=8)
 

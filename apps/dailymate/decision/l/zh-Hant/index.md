@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - 付費下載
 - 主畫面小工具
 - Apple Watch
-- App Store · $220.00
+- App Store · $390.00
 - ★ 5.0/5 · 1
 
 [前往 App Store 下載 DailyMate →](https://apps.apple.com/tw/app/id6790418321?pt=118326163&ct=geo_pick&mt=8)

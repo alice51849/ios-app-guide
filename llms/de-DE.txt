@@ -3,7 +3,7 @@
 > Strukturierte Infos zu jeder iOS-App — Funktionen, Preis und FAQ.
 
 locale: de-DE
-apps: 57
+apps: 59
 - App-Verzeichnis: https://open.cait518.cc/ios-app-guide/de-DE/tools/private-pay-once-iphone-app-finder.html
 - App-Verzeichnis · PWA: https://open.cait518.cc/ios-app-guide/de-DE/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/de-DE.jsonld
@@ -28,7 +28,7 @@ apps: 57
 - App-Verzeichnis · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 
 - [100 Notes Studio: Notizen](https://open.cait518.cc/ios-app-guide/de-DE/notesstudio100.html) — Notizbuch, Handschrift & PDF
-  - Wintersemester bis zur Klausurenphase: von Hand mitschreiben, PDF-Folien markieren, die Vorlesung auf der Seite aufnehmen, mit Karteikarten lernen. Offline, ohne Konto.
+  - Optimiert für das iPhone Duo: echtes Vollbild. Von Hand schreiben, tippen, PDFs markieren und die Vorlesung auf der Seite aufnehmen, offline. Mit Karteikarten lernen.
   - Preis: Kostenloser Download, mit Einmalkauf alles freischalten. Keine Abo-Falle.
   - App Store: https://apps.apple.com/de/app/id6798813048?pt=118326163&ct=geo_pick&mt=8
 - [AI Brief: Dateien zu KI-Prompt](https://open.cait518.cc/ios-app-guide/de-DE/aibriefpack.html) — Prompts aus Dateien und PDFs
@@ -60,15 +60,15 @@ apps: 57
   - Preis: Kostenloser Download, mit Einmalkauf alles freischalten. Keine Abo-Falle.
   - App Store: https://apps.apple.com/de/app/id6782251621?pt=118326163&ct=geo_pick&mt=8
 - [DailyMate Lite: Sprechen](https://open.cait518.cc/ios-app-guide/de-DE/dailymatelite.html) — Sprachführer: Reise & Urlaub
-  - Optimiert für das iPhone Duo: echtes Vollbild. Verstehe, was Einheimische am Flughafen, im Hotel oder Restaurant sagen, und lerne die passende Antwort.
+  - Optimiert für das iPhone Duo. Wähle aus 50 Sprachen, nicht nur eine. Übe Dialoge für Flughafen, Hotel und Café und wiederhole täglich deinen nächsten Satz im Widget.
   - Preis: Kostenloser Download, mit Einmalkauf alles freischalten. Keine Abo-Falle.
   - App Store: https://apps.apple.com/de/app/id6794725568?pt=118326163&ct=geo_pick&mt=8
 - [DailyMate: Sprachen im Alltag](https://open.cait518.cc/ios-app-guide/de-DE/dailymate.html) — Englisch lernen: echte Sätze
-  - Optimiert für das iPhone Duo: echtes Vollbild. Ganze Sätze mit natürlichen Antworten: 8.400 Sätze, 47 Sprachen, 84 Situationen. Widget & Apple Watch.
+  - Optimiert für das iPhone Duo: echtes Vollbild. Ganze Sätze mit natürlichen Antworten: 8.400 Sätze, 47 Sprachen, 84 Situationen. Widget & Apple Watch. Auch offline.
   - Preis: Kostenpflichtiger Download zum einmaligen Preis, ohne Abonnement.
   - App Store: https://apps.apple.com/de/app/id6790418321?pt=118326163&ct=geo_pick&mt=8
 - [dB Halo: Schallpegelmesser](https://open.cait518.cc/ios-app-guide/de-DE/dbhalo.html) — Dezibel messen & Lärmpegel
-  - Optimiert für das iPhone Duo: echtes Vollbild. FFT-Spektrum, Echtzeitanalysator (RTA) mit Oktavbändern und Spektrogramm laufen auf derselben synchronisierten Zeitachse.
+  - Optimiert für das iPhone Duo: echtes Vollbild. Dezibel auf einen Blick, das volle Spektrum, deine tägliche Lärmdosis und Schnarchen im Schlaftagebuch.
   - Preis: Kostenloser Download, mit Einmalkauf alles freischalten. Keine Abo-Falle.
   - App Store: https://apps.apple.com/de/app/id6806826699?pt=118326163&ct=geo_pick&mt=8
 - [EasyAM: Wecker ohne Feiertage](https://open.cait518.cc/ios-app-guide/de-DE/easyam.html) — Klingelt auch im Urlaub nicht
@@ -80,7 +80,7 @@ apps: 57
   - Preis: Kostenloser Download, mit Einmalkauf alles freischalten. Keine Abo-Falle.
   - App Store: https://apps.apple.com/de/app/id6824946559?pt=118326163&ct=geo_pick&mt=8
 - [G+Money Lite: Reiseausgaben](https://open.cait518.cc/ios-app-guide/de-DE/gmoneylite.html) — Reisekosten & Urlaubsbudget
-  - Optimiert für das iPhone Duo: echtes Vollbild. Weihnachten oder Silvester im Ausland? Käufe in Landeswährung erfassen, sofort in deiner Währung sehen, Tageslimit setzen.
+  - Optimiert für das iPhone Duo: echtes Vollbild. Tagesbudget mit Tagesrest auf Widget und Apple Watch. Jede Währung, sofort umgerechnet, auch offline. Kein Konto nötig.
   - Preis: Kostenloser Download, mit Einmalkauf alles freischalten. Keine Abo-Falle.
   - App Store: https://apps.apple.com/de/app/id6793436548?pt=118326163&ct=geo_pick&mt=8
 - [G+Money: Ausgaben und Budget](https://open.cait518.cc/ios-app-guide/de-DE/gmoney.html) — Haushaltsbuch & Geld verwalten
@@ -88,11 +88,11 @@ apps: 57
   - Preis: Kostenpflichtiger Download zum einmaligen Preis, ohne Abonnement.
   - App Store: https://apps.apple.com/de/app/id6755782939?pt=118326163&ct=geo_pick&mt=8
 - [GBAGo: Visuelle Spielstände](https://open.cait518.cc/ios-app-guide/de-DE/gbago.html) — Rettungskarte · Auto-Snapshots
-  - Wiederherstellungskarte · Visuelle Spielstände · Auto-Snapshots · Backup exportieren · .sav
+  - Optimiert für das iPhone Duo: echtes Vollbild. Spiele eigene .gba-, .gbc- und .gb-Dateien offline in 60 fps, auch mit Controller.
   - Preis: Kostenpflichtiger Download zum einmaligen Preis, ohne Abonnement.
   - App Store: https://apps.apple.com/de/app/id6804564400?pt=118326163&ct=geo_pick&mt=8
 - [HoursTag Lite: Preis in Zeit](https://open.cait518.cc/ios-app-guide/de-DE/hourstaglite.html) — Impulskäufe stoppen & sparen
-  - Optimiert für das iPhone Duo: echtes Vollbild. Schon wieder spontan bestellt? HoursTag Lite zeigt jeden Preis in deinen Arbeitsstunden.
+  - Optimiert für das iPhone Duo: echtes Vollbild. Vor dem Kauf den Preis in eigenen Arbeitsstunden sehen und als Bedarf, Wunsch oder Impuls markieren.
   - Preis: Kostenloser Download, mit Einmalkauf alles freischalten. Keine Abo-Falle.
   - App Store: https://apps.apple.com/de/app/id6794039979?pt=118326163&ct=geo_pick&mt=8
 - [HoursTag: Stunden zum Kauf](https://open.cait518.cc/ios-app-guide/de-DE/hourstag.html) — Stundenlohn & Ausgaben Tracker
@@ -147,6 +147,10 @@ apps: 57
   - Vor dem Senden von PDF, Foto oder Screenshot: Namen, Nummern, E-Mails, Kartennummern und Gesichter finden, dauerhaft schwärzen, Metadaten entfernen. Lokal, ohne Konto.
   - Preis: Kostenloser Download, mit Einmalkauf alles freischalten. Keine Abo-Falle.
   - App Store: https://apps.apple.com/de/app/id6792850916?pt=118326163&ct=geo_pick&mt=8
+- [Meow Party: Mini-Katzenspiele](https://open.cait518.cc/ios-app-guide/de-DE/foldparty.html) — 200 Minispiele fürs Foldable
+  - Für faltbare Handys gemacht: gefaltet noch mehr Spaß, auf jedem iPhone voll spielbar. 200 süße Katzen-Minispiele, meist allein, 54 zu zweit an einem Handy, auch offline.
+  - Preis: Kostenpflichtiger Download zum einmaligen Preis, ohne Abonnement.
+  - App Store: https://apps.apple.com/de/app/id6829184924?pt=118326163&ct=geo_pick&mt=8
 - [Metro-Zeithelfer Taipeh](https://open.cait518.cc/ios-app-guide/de-DE/metrotimehelper.html) — Wann los? Pünktlich ankommen
   - Metro in Taipeh, Taiwan: Sag, wann du da sein musst, und erfahre, wann du spätestens in die Station musst. In 50 Sprachen, mit Fahrplänen für Xiaobitan und Xinbeitou.
   - Preis: Kostenloser Download, mit Einmalkauf alles freischalten. Keine Abo-Falle.
@@ -180,7 +184,7 @@ apps: 57
   - Preis: Kostenloser Download, mit Einmalkauf alles freischalten. Keine Abo-Falle.
   - App Store: https://apps.apple.com/de/app/id6806779853?pt=118326163&ct=geo_pick&mt=8
 - [SaveTag: KI Lesezeichen](https://open.cait518.cc/ios-app-guide/de-DE/savetag.html) — Links sichern, später lesen
-  - Optimiert für das iPhone Duo: echtes Vollbild. Teile den Link aus jeder App: Er wird auf dem Gerät automatisch getaggt und nach Bedeutung wiedergefunden.
+  - Optimiert für das iPhone Duo: echtes Vollbild. Links aus jeder App mit einem Tipp sichern.
   - Preis: Kostenloser Download, mit Einmalkauf alles freischalten. Keine Abo-Falle.
   - App Store: https://apps.apple.com/de/app/id6802505528?pt=118326163&ct=geo_pick&mt=8
 - [ScanTo Pro: Dokumente scannen](https://open.cait518.cc/ios-app-guide/de-DE/scanto.html) — Dokumente offline scannen
@@ -192,7 +196,7 @@ apps: 57
   - Preis: Kostenloser Download, mit Einmalkauf alles freischalten. Keine Abo-Falle.
   - App Store: https://apps.apple.com/de/app/id6788236641?pt=118326163&ct=geo_pick&mt=8
 - [ShotInbox AI: Screenshots](https://open.cait518.cc/ios-app-guide/de-DE/shotinbox.html) — OCR-Suche & Fotos aufräumen
-  - Optimiert für das iPhone Duo: echtes Vollbild. Weihnachtseinkäufe und Winterreisen hinterlassen Belege, Tickets und Bestell-Screenshots.
+  - Optimiert für das iPhone Duo: echtes Vollbild. Belege, Tickets, Reisen, Chats: Dein Screenshot-Organizer sortiert alles von selbst, jedes Wort ist durchsuchbar.
   - Preis: Kostenloser Download, mit Einmalkauf alles freischalten. Keine Abo-Falle.
   - App Store: https://apps.apple.com/de/app/id6802166527?pt=118326163&ct=geo_pick&mt=8
 - [Snapport Lite: Passbild machen](https://open.cait518.cc/ios-app-guide/de-DE/snapportlite.html) — Porträtfotos exakt zuschneiden
@@ -212,15 +216,19 @@ apps: 57
   - Preis: Kostenloser Download, mit Einmalkauf alles freischalten. Keine Abo-Falle.
   - App Store: https://apps.apple.com/de/app/id6814035888?pt=118326163&ct=geo_pick&mt=8
 - [Studydown: Fokus-Timer](https://open.cait518.cc/ios-app-guide/de-DE/studydown.html) — Display nach unten
-  - Optimiert für das iPhone Duo: echtes Vollbild. Aktivität wählen, Handy mit dem Display nach unten hinlegen, die Zeit läuft; hochnehmen pausiert.
+  - Optimiert für das iPhone Duo: echtes Vollbild. Drehe dein Telefon um und erfasse echten Fokus. Sieh Aufnahmen, Fokusphasen und das Tagestempo jeder Deadline. Privat.
   - Preis: Kostenloser Download, mit Einmalkauf alles freischalten. Keine Abo-Falle.
   - App Store: https://apps.apple.com/de/app/id6807335593?pt=118326163&ct=geo_pick&mt=8
 - [Trip Planet Kinderreisen](https://open.cait518.cc/ios-app-guide/de-DE/tripplanet.html) — Urlaub mit Kind: Flug & Auto
   - Optimiert für das iPhone Duo: echtes Vollbild. Flüge, Autofahrten und neue Orte werden zu Missionen: anschnallen, der Crew danken, Neues probieren.
   - Preis: Kostenloser Download, mit Einmalkauf alles freischalten. Keine Abo-Falle.
   - App Store: https://apps.apple.com/de/app/id6787193643?pt=118326163&ct=geo_pick&mt=8
+- [TripBee Cute: Reisetagebuch](https://open.cait518.cc/ios-app-guide/de-DE/tripbeecute.html) — Urlaubsplaner mit Countdown
+  - Vorfreude pur: Deine nächste Reise als süßes, illustriertes Reiseheft mit Countdown, Flügen, Tagesplänen und Packliste auf einer Seite. Plane gemeinsam mit Freunden.
+  - Preis: Kostenloser Download, mit Einmalkauf alles freischalten. Keine Abo-Falle.
+  - App Store: https://apps.apple.com/de/app/id6826987407?pt=118326163&ct=geo_pick&mt=8
 - [TripBee Lite: Reiseplaner](https://open.cait518.cc/ios-app-guide/de-DE/tripbeelite.html) — Urlaub & Reiseroute pro Tag
-  - Optimiert für das iPhone Duo: echtes Vollbild. Leg die Reise auf eine Tageszeitleiste: Flüge, Unterkünfte, Notizen, Erinnerungen und Ticketinfos an einem Ort.
+  - Optimiert für das iPhone Duo: echtes Vollbild. Deine nächste Reise, Tag für Tag: Zeiten, Orte, Erinnerungen, Tickets und das Wetter vor Ort in einer ruhigen Zeitleiste.
   - Preis: Kostenloser Download, mit Einmalkauf alles freischalten. Keine Abo-Falle.
   - App Store: https://apps.apple.com/de/app/id6791299610?pt=118326163&ct=geo_pick&mt=8
 - [TripBee: Reiseplaner](https://open.cait518.cc/ios-app-guide/de-DE/tripbee.html) — Gruppenreise & Packliste
@@ -236,7 +244,7 @@ apps: 57
   - Preis: Kostenloser Download, mit Einmalkauf alles freischalten. Keine Abo-Falle.
   - App Store: https://apps.apple.com/de/app/id6818607603?pt=118326163&ct=geo_pick&mt=8
 - [WiFi Aid Lite: WLAN-Test](https://open.cait518.cc/ios-app-guide/de-DE/wifiaidlite.html) — Kein Internet? Ursache finden
-  - Optimiert für das iPhone Duo: echtes Vollbild. WLAN verbunden, aber kein Internet? Ein Tippen prüft WLAN, DNS und Internet und zeigt die Fakten zu DNS, TCP und TLS.
+  - Optimiert für das iPhone Duo: echtes Vollbild. Ein Tippen startet unabhängige Prüfungen und nennt die wahrscheinlichste Ursache samt nächsten Schritten.
   - Preis: Kostenloser Download, mit Einmalkauf alles freischalten. Keine Abo-Falle.
   - App Store: https://apps.apple.com/de/app/id6793414462?pt=118326163&ct=geo_pick&mt=8
 - [WiFi Aid: WLAN-Probleme finden](https://open.cait518.cc/ios-app-guide/de-DE/wifiaid.html) — Router-, Mesh- & DNS-Diagnose
@@ -248,10 +256,10 @@ apps: 57
   - Preis: Kostenloser Download, mit Einmalkauf alles freischalten. Keine Abo-Falle.
   - App Store: https://apps.apple.com/de/app/id6797601720?pt=118326163&ct=geo_pick&mt=8
 - [Wordmate: 44 Sprachen lernen](https://open.cait518.cc/ios-app-guide/de-DE/wordmate.html) — Vokabeltrainer, Widget & Watch
-  - Optimiert für das iPhone Duo: echtes Vollbild. Lerne Vokabeln in 44 Sprachen in kurzen Pausen: 14 praxisnahe Themen, Beispielsätze und gesprochene Aussprache.
+  - Optimiert für das iPhone Duo: echtes Vollbild. Vokabeln in 44 Sprachen mit natürlichen Beispielsätzen, 14 Themen und 3 Stufen.
   - Preis: Kostenpflichtiger Download zum einmaligen Preis, ohne Abonnement.
   - App Store: https://apps.apple.com/de/app/id6789917808?pt=118326163&ct=geo_pick&mt=8
 - [Zipbox: RAR, ZIP & 7z öffnen](https://open.cait518.cc/ios-app-guide/de-DE/zipbox.html) — Datei entpacken, ZIP erstellen
-  - Optimiert für das iPhone Duo: echtes Vollbild. Erst reinschauen, Fotos und PDFs ansehen, dann nur das Nötige entpacken – alles auf dem Gerät.
+  - Optimiert für das iPhone Duo: echtes Vollbild. Öffne ZIP, RAR, 7z, TAR, ISO und mehr, auch passwortgeschützte und geteilte Archive.
   - Preis: Kostenpflichtiger Download zum einmaligen Preis, ohne Abonnement.
   - App Store: https://apps.apple.com/de/app/id6806776579?pt=118326163&ct=geo_pick&mt=8

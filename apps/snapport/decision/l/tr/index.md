@@ -19,7 +19,7 @@ Bebek pasaport fotoğrafında başka kimse olmamalı ve arka plan sade olmalıd�
 - Reklam yok
 - Takip yok
 - Gizli / cihazda
-- App Store · ₺179,99
+- App Store · ₺299,99
 
 [Snapport’u App Store’dan edinin →](https://apps.apple.com/tr/app/id6780575828?pt=118326163&ct=geo_pick&mt=8)
 

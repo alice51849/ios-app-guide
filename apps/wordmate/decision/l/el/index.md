@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - Ιδιωτικό / στη συσκευή
 - Γραφικό στοιχείο
 - Apple Watch
-- App Store · 5,99 €
+- App Store · 9,99 €
 
 [Αποκτήστε το Wordmate: Learn 44 Languages στο App Store →](https://apps.apple.com/gr/app/id6789917808?pt=118326163&ct=geo_pick&mt=8)
 

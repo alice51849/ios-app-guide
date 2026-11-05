@@ -20,7 +20,7 @@ Optimalizované pre iPhone Duo. Aplikácia je zostavená s najnovším SDK, vypl
 - Bez reklám
 - Bez sledovania
 - Súkromné / v zariadení
-- App Store · 3,00 €
+- App Store · 5,99 €
 
 [Stiahnuť Zipbox: otvoriť RAR, ZIP, 7z v App Store](https://apps.apple.com/sk/app/id6806776579?pt=118326163&ct=geo_pick&mt=8)
 

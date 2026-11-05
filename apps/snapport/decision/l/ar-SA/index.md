@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - بدون إعلانات
 - بدون تتبع
 - خاص / على الجهاز
-- App Store · SAR 12.99
+- App Store · SAR 24.99
 
 [احصل على Snapport من متجر التطبيقات →](https://apps.apple.com/sa/app/id6780575828?pt=118326163&ct=geo_pick&mt=8)
 

@@ -19,7 +19,7 @@ For a baby's passport photo, no one else can be in the shot and the background m
 - No ads
 - No tracking
 - Private / on-device
-- App Store · $4.00
+- App Store · $7.99
 
 [Get Snapport on the App Store →](https://apps.apple.com/ca/app/id6780575828?pt=118326163&ct=geo_pick&mt=8)
 

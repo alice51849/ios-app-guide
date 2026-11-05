@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - Без рекламы
 - Без отслеживания
 - Лично / на устройстве
-- App Store · 249,00 ₽
+- App Store · 449,00 ₽
 
 [Скачать G+Money в App Store →](https://apps.apple.com/ru/app/id6755782939?pt=118326163&ct=geo_pick&mt=8)
 

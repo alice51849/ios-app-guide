@@ -1,12 +1,12 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-11-04",
-  "content_digest": "d41bfe7e156aabee8cf16c8afd333da7f2ca1d1367dc4352339ff83f32cded2b",
+  "date_modified": "2026-11-05",
+  "content_digest": "cfd8097e2d160bb22da9f0415e9bc3c45e093acb6a1c2a6fc701a91301d98006",
   "locale": "zh-Hans",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 57,
+  "record_count": 59,
   "apps": [
     {
       "key": "notesstudio100",
@@ -482,9 +482,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/dailymate.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "48",
+        "price": "88",
         "currency": "CNY",
-        "formatted_price": "¥48.00",
+        "formatted_price": "¥88.00",
         "storefront_url": "https://apps.apple.com/cn/app/id6790418321"
       }
     },
@@ -667,7 +667,7 @@
     {
       "key": "duowallpaperstudio",
       "app_store_id": "6824946559",
-      "name": "Foldable Wallpaper Studio",
+      "name": "折叠屏壁纸 - Foldable Wallpaper",
       "summary": "专为 iPhone Duo 双屏打造的成对壁纸：合上，外屏是特写；展开，内屏是整片全景，两张出自同一幅原创画面。 300+ 组原创成对壁纸・14 种风格・5 款小组件直接用你选的壁纸绘制・无广告、不收集数据。",
       "category": "photo-utility",
       "search_terms": [
@@ -772,9 +772,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/gmoney.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "22",
+        "price": "38",
         "currency": "CNY",
-        "formatted_price": "¥22.00",
+        "formatted_price": "¥38.00",
         "storefront_url": "https://apps.apple.com/cn/app/id6755782939"
       }
     },
@@ -877,9 +877,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/gbago.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "38",
+        "price": "58",
         "currency": "CNY",
-        "formatted_price": "¥38.00",
+        "formatted_price": "¥58.00",
         "storefront_url": "https://apps.apple.com/cn/app/id6804564400"
       }
     },
@@ -1206,9 +1206,15 @@
         "widget": false,
         "apple_watch": false
       },
-      "app_store_url": "https://apps.apple.com/app/id6775773117?pt=118326163&ct=geo_pick&mt=8",
+      "app_store_url": "https://apps.apple.com/cn/app/id6775773117?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/lumibopomofopro.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CNY",
+        "formatted_price": "免费",
+        "storefront_url": "https://apps.apple.com/cn/app/id6775773117"
+      }
     },
     {
       "key": "lumiletters",
@@ -1526,6 +1532,8 @@
         "price": "0",
         "currency": "CNY",
         "formatted_price": "免费",
+        "rating_value": 5.0,
+        "rating_count": 1,
         "storefront_url": "https://apps.apple.com/cn/app/id6779750237"
       }
     },
@@ -1703,6 +1711,61 @@
       }
     },
     {
+      "key": "foldparty",
+      "app_store_id": "6829184924",
+      "name": "喵喵派对：双人游戏·猫咪小游戏",
+      "summary": "告别满屏广告和必须联网的小游戏：喵喵派对把 200 款原创可爱的猫咪小游戏装进一部手机，针对 iPhone Duo 折叠屏优化，折起来更好玩；普通 iPhone 也能完整畅玩。大多数一个人随时就能来一局，其中 54 款可以两个人共用一部手机，面对面对战或合作，每局大约 30 到 120 秒。",
+      "category": "other",
+      "search_terms": [
+        "两人",
+        "2人",
+        "大全",
+        "不用网络",
+        "无网",
+        "不联网",
+        "聚会",
+        "休闲",
+        "益智",
+        "解谜",
+        "闯关",
+        "街机",
+        "节奏",
+        "反应",
+        "换装",
+        "料理",
+        "经营",
+        "园艺",
+        "可爱",
+        "小猫",
+        "猫猫",
+        "动物",
+        "朋友",
+        "合作",
+        "竞技",
+        "同桌",
+        "解压",
+        "打发时间",
+        "闺蜜",
+        "家庭",
+        "俩人",
+        "迷你"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/app/id6829184924?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/foldparty.html",
+      "verified_live": true
+    },
+    {
       "key": "metrotimehelper",
       "app_store_id": "6819061896",
       "name": "捷运时间助手：台北地铁换乘",
@@ -1753,9 +1816,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/metrotimehelper.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "0",
+        "price": "22",
         "currency": "CNY",
-        "formatted_price": "免费",
+        "formatted_price": "¥22.00",
         "storefront_url": "https://apps.apple.com/cn/app/id6819061896"
       }
     },
@@ -2427,9 +2490,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/snapport.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "22",
+        "price": "38",
         "currency": "CNY",
-        "formatted_price": "¥22.00",
+        "formatted_price": "¥38.00",
         "storefront_url": "https://apps.apple.com/cn/app/id6780575828"
       }
     },
@@ -2715,6 +2778,68 @@
       }
     },
     {
+      "key": "tripbeecute",
+      "app_store_id": "6826987407",
+      "name": "TripBee Cute：旅行计划手账本",
+      "summary": "别再让行程散在聊天记录、截图和备忘录里：TripBee Cute 把每一趟旅行做成一本可爱的插画手账，封面、出发倒计时、航班、每日行程和行李清单都在同一页，往下一滑就全看完。",
+      "category": "travel",
+      "search_terms": [
+        "手帐",
+        "日记",
+        "游记",
+        "记录",
+        "攻略",
+        "制作",
+        "旅游",
+        "规划",
+        "日程",
+        "安排",
+        "表",
+        "倒数",
+        "自由行",
+        "行李",
+        "清单",
+        "打包",
+        "小组件",
+        "贴纸",
+        "登机牌",
+        "航班",
+        "天气",
+        "分享",
+        "共享",
+        "出游",
+        "度假",
+        "出国",
+        "假期",
+        "周末",
+        "闺蜜",
+        "情侣",
+        "朋友",
+        "家人",
+        "笔记"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/cn/app/id6826987407?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/tripbeecute.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CNY",
+        "formatted_price": "免费",
+        "storefront_url": "https://apps.apple.com/cn/app/id6826987407"
+      }
+    },
+    {
       "key": "tripbeelite",
       "app_store_id": "6791299610",
       "name": "TripBee Lite：旅行规划",
@@ -2825,9 +2950,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/tripbee.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "22",
+        "price": "38",
         "currency": "CNY",
-        "formatted_price": "¥22.00",
+        "formatted_price": "¥38.00",
         "storefront_url": "https://apps.apple.com/cn/app/id6787754435"
       }
     },
@@ -2971,9 +3096,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/wifiaid.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "22",
+        "price": "38",
         "currency": "CNY",
-        "formatted_price": "¥22.00",
+        "formatted_price": "¥38.00",
         "storefront_url": "https://apps.apple.com/cn/app/id6790467886"
       }
     },
@@ -3133,9 +3258,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/wordmate.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "38",
+        "price": "58",
         "currency": "CNY",
-        "formatted_price": "¥38.00",
+        "formatted_price": "¥58.00",
         "storefront_url": "https://apps.apple.com/cn/app/id6789917808"
       }
     },
@@ -3187,9 +3312,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/zipbox.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "22",
+        "price": "38",
         "currency": "CNY",
-        "formatted_price": "¥22.00",
+        "formatted_price": "¥38.00",
         "storefront_url": "https://apps.apple.com/cn/app/id6806776579"
       }
     }

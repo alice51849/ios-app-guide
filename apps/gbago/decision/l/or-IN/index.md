@@ -16,7 +16,7 @@ iPhone Duo ଡିଭାଇସ୍ ପାଇଁ ଅପ୍ଟିମାଇଜ୍ କ
 - ଅଧିକ
 - ପୈସା ଦେଇ ଡାଉନଲୋଡ୍
 - ଅଫଲାଇନ
-- App Store · ₹ 500
+- App Store · ₹ 999
 
 [App Store ରୁ GBAGo: ଦୃଶ୍ୟ ସେଭ୍ ପାଆନ୍ତୁ](https://apps.apple.com/in/app/id6804564400?pt=118326163&ct=geo_pick&mt=8)
 

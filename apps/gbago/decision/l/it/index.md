@@ -16,7 +16,7 @@ Ottimizzata per iPhone Duo. Realizzata con l’SDK più recente, l’app riempie
 - Altro
 - Scaricamento a pagamento
 - Offline
-- App Store · 5,99 €
+- App Store · 9,99 €
 
 [Scarica GBAGo: Salvataggi visivi sull'App Store](https://apps.apple.com/it/app/id6804564400?pt=118326163&ct=geo_pick&mt=8)
 

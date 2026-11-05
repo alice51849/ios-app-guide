@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - הורדה בתשלום
 - ללא חשבון
 - Apple Watch
-- App Store · ₪12.90
+- App Store · ₪19.90
 
 [הורידו את WiFi Aid: איתור תקלות רשת מה-App Store](https://apps.apple.com/il/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)
 

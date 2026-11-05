@@ -16,7 +16,7 @@ iPhone Duo에 최적화되었습니다. 최신 개발 도구로 빌드되어 안
 - 더 보기
 - 유료 다운로드
 - 오프라인
-- App Store · ￦7,700
+- App Store · ￦15,000
 
 [App Store에서 GBAGo: 비주얼 세이브 받기](https://apps.apple.com/kr/app/id6804564400?pt=118326163&ct=geo_pick&mt=8)
 

@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - Платное скачивание
 - Виджет
 - Apple Watch
-- App Store · 599,00 ₽
+- App Store · 999,00 ₽
 
 [Скачайте DailyMate в App Store →](https://apps.apple.com/ru/app/id6790418321?pt=118326163&ct=geo_pick&mt=8)
 

@@ -19,7 +19,7 @@ Untuk foto pasport bayi, tiada orang lain boleh berada dalam gambar dan latar be
 - Tiada iklan
 - Tiada penjejakan
 - Peribadi / pada peranti
-- App Store · RM17.90
+- App Store · RM29.90
 
 [Dapatkan Snapport di App Store →](https://apps.apple.com/my/app/id6780575828?pt=118326163&ct=geo_pick&mt=8)
 

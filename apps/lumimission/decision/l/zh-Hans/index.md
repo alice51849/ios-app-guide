@@ -20,6 +20,7 @@ publisher: "Lumi Studio"
 - 无跟踪
 - 私密 / 设备本地
 - App Store · 免费
+- ★ 5.0/5 · 1
 
 [在App Store获取Lumi Mission Planet →](https://apps.apple.com/cn/app/id6779750237?pt=118326163&ct=geo_pick&mt=8)
 

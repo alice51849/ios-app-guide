@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - ללא פרסומות
 - ללא מעקב
 - פרטי / במכשיר
-- App Store · ₪12.90
+- App Store · ₪19.90
 
 [קבל את TripBee Pro: מתכנן טיולים ב-App Store →](https://apps.apple.com/il/app/id6787754435?pt=118326163&ct=geo_pick&mt=8)
 

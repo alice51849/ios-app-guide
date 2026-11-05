@@ -20,7 +20,7 @@ Les navetteurs occupés ont besoin de pratique vocabulaire qui s’insère dans 
 - Privé / sur l'appareil
 - Widget
 - Apple Watch
-- App Store · $6.99
+- App Store · $11.99
 
 [Obtenez Wordmate : Apprendre 44 langues sur l’App Store →](https://apps.apple.com/ca/app/id6789917808?pt=118326163&ct=geo_pick&mt=8)
 

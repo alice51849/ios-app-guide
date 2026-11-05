@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - 付费下载
 - 无需账户
 - Apple Watch
-- App Store · ¥22.00
+- App Store · ¥38.00
 
 [在 App Store 获取 WiFi Aid：找出网络问题·诊断](https://apps.apple.com/cn/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)
 

@@ -20,7 +20,7 @@ Zapracowani potrzebują ćwiczeń słownictwa, które mieszczą się w wolnych c
 - Prywatne / na urządzeniu
 - Widżet
 - Apple Watch
-- App Store · 24,99 zł
+- App Store · 39,99 zł
 
 [Pobierz Wordmate: Learn 44 Languages z App Store →](https://apps.apple.com/pl/app/id6789917808?pt=118326163&ct=geo_pick&mt=8)
 

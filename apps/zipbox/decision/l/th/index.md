@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - ไม่มีโฆษณา
 - ไม่มีการติดตาม
 - ส่วนตัว / บนอุปกรณ์
-- App Store · ฿129.00
+- App Store · ฿199.00
 
 [ดาวน์โหลด Zipbox: แตกไฟล์ RAR ZIP 7z บน App Store](https://apps.apple.com/th/app/id6806776579?pt=118326163&ct=geo_pick&mt=8)
 

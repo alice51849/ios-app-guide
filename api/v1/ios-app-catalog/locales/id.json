@@ -1,12 +1,12 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-11-04",
-  "content_digest": "d41bfe7e156aabee8cf16c8afd333da7f2ca1d1367dc4352339ff83f32cded2b",
+  "date_modified": "2026-11-05",
+  "content_digest": "cfd8097e2d160bb22da9f0415e9bc3c45e093acb6a1c2a6fc701a91301d98006",
   "locale": "id",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 57,
+  "record_count": 59,
   "apps": [
     {
       "key": "notesstudio100",
@@ -372,9 +372,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/id/dailymate.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "129000",
+        "price": "229000",
         "currency": "IDR",
-        "formatted_price": "Rp 129ribu",
+        "formatted_price": "Rp 229ribu",
         "storefront_url": "https://apps.apple.com/id/app/id6790418321"
       }
     },
@@ -585,9 +585,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/id/gmoney.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "59000",
+        "price": "99000",
         "currency": "IDR",
-        "formatted_price": "Rp 59ribu",
+        "formatted_price": "Rp 99ribu",
         "storefront_url": "https://apps.apple.com/id/app/id6755782939"
       }
     },
@@ -665,9 +665,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/id/gbago.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "99000",
+        "price": "179000",
         "currency": "IDR",
-        "formatted_price": "Rp 99ribu",
+        "formatted_price": "Rp 179ribu",
         "storefront_url": "https://apps.apple.com/id/app/id6804564400"
       }
     },
@@ -915,9 +915,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/id/lumibopomofopro.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "179000",
+        "price": "0",
         "currency": "IDR",
-        "formatted_price": "Rp 179ribu",
+        "formatted_price": "Gratis",
         "storefront_url": "https://apps.apple.com/id/app/id6775773117"
       }
     },
@@ -1257,6 +1257,51 @@
       }
     },
     {
+      "key": "foldparty",
+      "app_store_id": "6829184924",
+      "name": "Meow Party: Game Kucing Berdua",
+      "summary": "Main bareng tak perlu internet atau ponsel kedua: Meow Party menghadirkan 200 mini game kucing lucu yang dioptimalkan untuk layar lipat iPhone Duo, dengan gerakan melipat sebagai bagian dari permainan, makin seru saat dilipat, dan semua game tetap bisa dimainkan penuh di iPhone biasa. Sebagian besar game bisa dimainkan sendiri, dan 54 game bisa dimainkan berdua di satu ponsel.",
+      "category": "other",
+      "search_terms": [
+        "2",
+        "pemain",
+        "orang",
+        "offline",
+        "tanpa",
+        "internet",
+        "kuota",
+        "lucu",
+        "masak",
+        "dandan",
+        "puzzle",
+        "asah",
+        "otak",
+        "santai",
+        "teman",
+        "bareng"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/id/app/id6829184924?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/id/foldparty.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "119000",
+        "currency": "IDR",
+        "formatted_price": "Rp 119ribu",
+        "storefront_url": "https://apps.apple.com/id/app/id6829184924"
+      }
+    },
+    {
       "key": "metrotimehelper",
       "app_store_id": "6819061896",
       "name": "Metro Time Helper: MRT Taipei",
@@ -1292,9 +1337,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/id/metrotimehelper.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "0",
+        "price": "59000",
         "currency": "IDR",
-        "formatted_price": "Gratis",
+        "formatted_price": "Rp 59ribu",
         "storefront_url": "https://apps.apple.com/id/app/id6819061896"
       }
     },
@@ -1792,9 +1837,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/id/snapport.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "69000",
+        "price": "119000",
         "currency": "IDR",
-        "formatted_price": "Rp 69ribu",
+        "formatted_price": "Rp 119ribu",
         "storefront_url": "https://apps.apple.com/id/app/id6780575828"
       }
     },
@@ -2007,6 +2052,47 @@
       }
     },
     {
+      "key": "tripbeecute",
+      "app_store_id": "6826987407",
+      "name": "TripBee Cute: Buku Perjalanan",
+      "summary": "Tak perlu lagi mencari info perjalanan di chat, catatan, dan email: TripBee Cute merangkum seluruh perjalanan jadi satu buku lucu bersampul ilustrasi, cukup gulir satu halaman untuk melihat semuanya. Setiap perjalanan jadi buku kecil di rak bukumu. Buka lalu gulir ke bawah: sampul, hitung mundur keberangkatan, penerbangan, jadwal tiap hari, dan persiapan berupa daftar bawaan serta catatan.",
+      "category": "travel",
+      "search_terms": [
+        "itinerary",
+        "rencana",
+        "hitung mundur",
+        "catatan",
+        "planner",
+        "aesthetic",
+        "travel",
+        "packing",
+        "wisata",
+        "harian",
+        "teman",
+        "widget"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/id/app/id6826987407?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/id/tripbeecute.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "IDR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/id/app/id6826987407"
+      }
+    },
+    {
       "key": "tripbeelite",
       "app_store_id": "6791299610",
       "name": "TripBee Lite: Rencana Trip",
@@ -2082,9 +2168,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/id/tripbee.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "69000",
+        "price": "119000",
         "currency": "IDR",
-        "formatted_price": "Rp 69ribu",
+        "formatted_price": "Rp 119ribu",
         "storefront_url": "https://apps.apple.com/id/app/id6787754435"
       }
     },
@@ -2213,9 +2299,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/id/wifiaid.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "69000",
+        "price": "119000",
         "currency": "IDR",
-        "formatted_price": "Rp 69ribu",
+        "formatted_price": "Rp 119ribu",
         "storefront_url": "https://apps.apple.com/id/app/id6790467886"
       }
     },
@@ -2340,9 +2426,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/id/wordmate.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "99000",
+        "price": "179000",
         "currency": "IDR",
-        "formatted_price": "Rp 99ribu",
+        "formatted_price": "Rp 179ribu",
         "storefront_url": "https://apps.apple.com/id/app/id6789917808"
       }
     },
@@ -2383,9 +2469,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/id/zipbox.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "59000",
+        "price": "99000",
         "currency": "IDR",
-        "formatted_price": "Rp 59ribu",
+        "formatted_price": "Rp 99ribu",
         "storefront_url": "https://apps.apple.com/id/app/id6806776579"
       }
     }

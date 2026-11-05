@@ -20,7 +20,7 @@ Optimalisert for iPhone Duo. Appen er bygget med den nyeste SDK-en, fyller hele 
 - Ingen annonser
 - Ingen sporing
 - Privat / på enheten
-- App Store · 39,00 kr
+- App Store · 59,00 kr
 
 [Last ned Zipbox: åpne RAR, ZIP og 7z fra App Store](https://apps.apple.com/no/app/id6806776579?pt=118326163&ct=geo_pick&mt=8)
 

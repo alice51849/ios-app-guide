@@ -20,7 +20,7 @@ En un viatge necessites un control de pressupost que funcioni offline en un paí
 - Sense anuncis
 - Sense seguiment
 - Privat / en el dispositiu
-- App Store · 3,00 €
+- App Store · 5,99 €
 
 [Descarrega G+Money a l'App Store →](https://apps.apple.com/es/app/id6755782939?pt=118326163&ct=geo_pick&mt=8)
 

@@ -17,7 +17,7 @@ Antes de un viaje, las frases completas para situaciones reales son más útiles
 - Descarga de pago
 - Widget
 - Apple Watch
-- App Store · $149.00
+- App Store · $249.00
 
 [Consigue DailyMate en el App Store →](https://apps.apple.com/mx/app/id6790418321?pt=118326163&ct=geo_pick&mt=8)
 

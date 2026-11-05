@@ -19,7 +19,7 @@ Aplikasi rencana perjalanan yang baik mengubah perjalanan yang berantakan menjad
 - Tanpa iklan
 - Tanpa pelacakan
 - Privat / di perangkat
-- App Store · Rp 69ribu
+- App Store · Rp 119ribu
 
 [Dapatkan TripBee Pro: Trip Planner di App Store →](https://apps.apple.com/id/app/id6787754435?pt=118326163&ct=geo_pick&mt=8)
 

@@ -17,7 +17,7 @@ When Wi-Fi says connected but work still cannot get online, the useful first ste
 - Download pago
 - Sem conta
 - Apple Watch
-- App Store · R$ 24,90
+- App Store · R$ 39,90
 
 [Baixar o WiFi Aid na App Store →](https://apps.apple.com/br/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)
 

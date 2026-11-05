@@ -17,7 +17,7 @@ Prima di un viaggio, frasi complete per situazioni reali sono più utili di voca
 - Scaricamento a pagamento
 - Widget
 - Apple Watch
-- App Store · 6,99 €
+- App Store · 12,99 €
 
 [Scarica DailyMate dall’App Store →](https://apps.apple.com/it/app/id6790418321?pt=118326163&ct=geo_pick&mt=8)
 

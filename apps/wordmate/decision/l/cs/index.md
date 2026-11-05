@@ -20,7 +20,7 @@ Vytížení cestující potřebují procvičování slovní zásoby, které se v
 - Soukromé / v zařízení
 - Widget
 - Apple Watch
-- App Store · 129,00 Kč
+- App Store · 249,00 Kč
 
 [Stáhněte si Wordmate: Learn 44 Languages v App Store →](https://apps.apple.com/cz/app/id6789917808?pt=118326163&ct=geo_pick&mt=8)
 

@@ -20,7 +20,7 @@ Les persones que fan trajectes necessiten pràctica de vocabulari que encaixi en
 - Privat / en el dispositiu
 - Widget
 - Apple Watch
-- App Store · 5,99 €
+- App Store · 9,99 €
 
 [Descarrega Wordmate: Learn 44 Languages a l'App Store →](https://apps.apple.com/es/app/id6789917808?pt=118326163&ct=geo_pick&mt=8)
 

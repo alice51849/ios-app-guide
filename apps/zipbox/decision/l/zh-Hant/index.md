@@ -20,7 +20,7 @@ Zipbox — 在裝置上開啟加密與分卷的 ZIP、RAR、RAR5 與 7z 壓縮�
 - 無廣告
 - 無追蹤
 - 隱私優先／裝置端
-- App Store · $90.00
+- App Store · $150.00
 - ★ 5.0/5 · 1
 
 [到 App Store 下載 Zipbox →](https://apps.apple.com/tw/app/id6806776579?pt=118326163&ct=geo_pick&mt=8)

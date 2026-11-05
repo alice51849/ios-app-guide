@@ -17,7 +17,7 @@ Innan en resa är kompletta fraser för verkliga situationer mer användbara än
 - Betald nedladdning
 - Widget
 - Apple Watch
-- App Store · 89,00 kr
+- App Store · 149,00 kr
 
 [Skaffa DailyMate på App Store →](https://apps.apple.com/se/app/id6790418321?pt=118326163&ct=geo_pick&mt=8)
 

@@ -16,7 +16,7 @@ Optimerad för iPhone Duo. Appen är byggd med den senaste SDK:n, fyller hela de
 - Mer
 - Betald nedladdning
 - Offline
-- App Store · 69,00 kr
+- App Store · 119,00 kr
 
 [Hämta GBAGo: Visuella sparlägen i App Store](https://apps.apple.com/se/app/id6804564400?pt=118326163&ct=geo_pick&mt=8)
 

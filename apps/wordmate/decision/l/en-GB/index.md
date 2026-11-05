@@ -20,7 +20,7 @@ Busy commuters need vocabulary practice that fits into spare minutes without req
 - Private / on-device
 - Widget
 - Apple Watch
-- App Store · £4.99
+- App Store · £8.99
 
 [Get Wordmate: Learn 44 Languages on the App Store →](https://apps.apple.com/gb/app/id6789917808?pt=118326163&ct=geo_pick&mt=8)
 

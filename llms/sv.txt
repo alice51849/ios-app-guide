@@ -3,7 +3,7 @@
 > Strukturerad info om varje iOS-app — funktioner, pris och FAQ.
 
 locale: sv
-apps: 57
+apps: 59
 - Appkatalog: https://open.cait518.cc/ios-app-guide/sv/tools/private-pay-once-iphone-app-finder.html
 - Appkatalog · PWA: https://open.cait518.cc/ios-app-guide/sv/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/sv.jsonld
@@ -28,7 +28,7 @@ apps: 57
 - Appkatalog · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 
 - [100 Notes Studio: Pen & Paper](https://open.cait518.cc/ios-app-guide/sv/notesstudio100.html) — Skrivbok, handskrift och PDF
-  - Optimerad för iPhone Duo: äkta helskärm. Vinter och tentaperiod: skriv anteckningar för hand, markera PDF:er, lägg föreläsningens inspelning på sidan och plugga med kort.
+  - Optimerad för iPhone Duo: äkta helskärm. Skriv för hand eller på tangentbord, markera PDF:er och spela in föreläsningen på samma sida, offline. Plugga med ordkort.
   - Pris: Gratis nedladdning, ett engångsköp låser upp allt. Inga prenumerationsfällor.
   - App Store: https://apps.apple.com/se/app/id6798813048?pt=118326163&ct=geo_pick&mt=8
 - [AI Brief: Filer till AI-prompt](https://open.cait518.cc/ios-app-guide/sv/aibriefpack.html) — Prompts från filer och PDF
@@ -60,7 +60,7 @@ apps: 57
   - Pris: Gratis nedladdning, ett engångsköp låser upp allt. Inga prenumerationsfällor.
   - App Store: https://apps.apple.com/se/app/id6782251621?pt=118326163&ct=geo_pick&mt=8
 - [DailyMate Lite: Tala idag](https://open.cait518.cc/ios-app-guide/sv/dailymatelite.html) — Parlör för resan, 50 språk
-  - Optimerad för iPhone Duo: äkta helskärm. Förstå vad folk säger på flygplatsen, hotellet eller restaurangen och lär dig det naturliga svaret.
+  - Optimerad för iPhone Duo. Lär dig vilket som helst av 50 språk. Öva repliker på flygplatsen, hotellet och kaféet, och repetera nästa fras varje dag i widgeten.
   - Pris: Gratis nedladdning, ett engångsköp låser upp allt. Inga prenumerationsfällor.
   - App Store: https://apps.apple.com/se/app/id6794725568?pt=118326163&ct=geo_pick&mt=8
 - [DailyMate: Meningar för livet](https://open.cait518.cc/ios-app-guide/sv/dailymate.html) — Lär dig engelska och spanska
@@ -68,7 +68,7 @@ apps: 57
   - Pris: Betald nedladdning till ett engångspris, utan prenumeration.
   - App Store: https://apps.apple.com/se/app/id6790418321?pt=118326163&ct=geo_pick&mt=8
 - [dB Halo: Ljudnivåmätare](https://open.cait518.cc/ios-app-guide/sv/dbhalo.html) — Decibel, spektrum och dos
-  - Optimerad för iPhone Duo: äkta helskärm. Se dB live på Halo-ringen, uppskatta din dagliga bullerdos och logga snarkning.
+  - Optimerad för iPhone Duo: äkta helskärm. Se decibel med en blick, hela spektrumet, din dagliga bullerdos och snarkning i sömndagboken. Allt sker på enheten, utan konto.
   - Pris: Gratis nedladdning, ett engångsköp låser upp allt. Inga prenumerationsfällor.
   - App Store: https://apps.apple.com/se/app/id6806826699?pt=118326163&ct=geo_pick&mt=8
 - [EasyAM: Väckarklocka & alarm](https://open.cait518.cc/ios-app-guide/sv/easyam.html) — Tyst på helgdagar och semester
@@ -80,7 +80,7 @@ apps: 57
   - Pris: Gratis nedladdning, ett engångsköp låser upp allt. Inga prenumerationsfällor.
   - App Store: https://apps.apple.com/se/app/id6824946559?pt=118326163&ct=geo_pick&mt=8
 - [G+Money Lite: Reseutgifter](https://open.cait518.cc/ios-app-guide/sv/gmoneylite.html) — Dagsbudget på klockan & widget
-  - Optimerad för iPhone Duo: äkta helskärm. Jul eller nyår utomlands? Logga köp i lokal valuta och se dem direkt i din egen, sätt en daglig gräns.
+  - Optimerad för iPhone Duo: äkta helskärm. Sätt en dagsbudget och se vad som finns kvar i dag i widgeten och på Apple Watch.
   - Pris: Gratis nedladdning, ett engångsköp låser upp allt. Inga prenumerationsfällor.
   - App Store: https://apps.apple.com/se/app/id6793436548?pt=118326163&ct=geo_pick&mt=8
 - [G+Money: Utgifter och budget](https://open.cait518.cc/ios-app-guide/sv/gmoney.html) — Reseutgifter och valuta
@@ -88,11 +88,11 @@ apps: 57
   - Pris: Betald nedladdning till ett engångspris, utan prenumeration.
   - App Store: https://apps.apple.com/se/app/id6755782939?pt=118326163&ct=geo_pick&mt=8
 - [GBAGo: Visuella sparlägen](https://open.cait518.cc/ios-app-guide/sv/gbago.html) — Räddningskarta · Snapshots
-  - Återställningskarta · Visuella sparlägen · Automatiska ögonblicksbilder · Exportera säkerhetskopia · .sav
+  - Optimerad för iPhone Duo: äkta helskärm. Emulatorn som skyddar dina framsteg.
   - Pris: Betald nedladdning till ett engångspris, utan prenumeration.
   - App Store: https://apps.apple.com/se/app/id6804564400?pt=118326163&ct=geo_pick&mt=8
 - [HoursTag Lite: Pris i timmar](https://open.cait518.cc/ios-app-guide/sv/hourstaglite.html) — Medvetna köp: verkligt pris
-  - Handeln vid årsskiftet: innan du köper, se priset i egna arbetstimmar, märk det som behov, önskan eller impuls, och se arbetet bakom ett mål för det nya året.
+  - Optimerad för iPhone Duo: äkta helskärm. Innan du köper, se priset i egna arbetstimmar och märk det som behov, önskan eller impuls. Med widget och Apple Watch.
   - Pris: Gratis nedladdning, ett engångsköp låser upp allt. Inga prenumerationsfällor.
   - App Store: https://apps.apple.com/se/app/id6794039979?pt=118326163&ct=geo_pick&mt=8
 - [HoursTag: Timmar att köpa](https://open.cait518.cc/ios-app-guide/sv/hourstag.html) — Timlön och utgifter
@@ -147,6 +147,10 @@ apps: 57
   - Optimerad för iPhone Duo: äkta helskärm. Hitta privata uppgifter, svärta permanent bara det du väljer och ta bort metadata.
   - Pris: Gratis nedladdning, ett engångsköp låser upp allt. Inga prenumerationsfällor.
   - App Store: https://apps.apple.com/se/app/id6792850916?pt=118326163&ct=geo_pick&mt=8
+- [Meow Party: Kattspel för två](https://open.cait518.cc/ios-app-guide/sv/foldparty.html) — 200 spel för din vikbara mobil
+  - För vikbara mobiler: roligare när du viker, och fullt spelbar på en vanlig iPhone. 200 söta kattminispel, de flesta för en och 54 för två på samma mobil, helt offline.
+  - Pris: Betald nedladdning till ett engångspris, utan prenumeration.
+  - App Store: https://apps.apple.com/se/app/id6829184924?pt=118326163&ct=geo_pick&mt=8
 - [Mochi DoneStamp: Senast](https://open.cait518.cc/ios-app-guide/sv/mochidonestamp.html) — När gjorde jag det? Hushåll
   - Optimerad för iPhone Duo: äkta helskärm. Sluta gissa när du gjorde det senast. Stämpla det som klart, Mochi minns och påminner dig när det är dags igen.
   - Pris: Gratis nedladdning, ett engångsköp låser upp allt. Inga prenumerationsfällor.
@@ -176,7 +180,7 @@ apps: 57
   - Pris: Gratis nedladdning, ett engångsköp låser upp allt. Inga prenumerationsfällor.
   - App Store: https://apps.apple.com/se/app/id6806779853?pt=118326163&ct=geo_pick&mt=8
 - [SaveTag: AI-bokmärken](https://open.cait518.cc/ios-app-guide/sv/savetag.html) — Spara länkar och läs senare
-  - Optimerad för iPhone Duo: äkta helskärm. Dela länken från vilken app som helst: den taggas automatiskt på enheten och hittas efter betydelse.
+  - Optimerad för iPhone Duo: äkta helskärm. Spara en länk från valfri app med ett tryck.
   - Pris: Gratis nedladdning, ett engångsköp låser upp allt. Inga prenumerationsfällor.
   - App Store: https://apps.apple.com/se/app/id6802505528?pt=118326163&ct=geo_pick&mt=8
 - [ScanTo Pro: PDF och OCR](https://open.cait518.cc/ios-app-guide/sv/scanto.html) — Privat dokumentskanner offline
@@ -188,7 +192,7 @@ apps: 57
   - Pris: Gratis nedladdning, ett engångsköp låser upp allt. Inga prenumerationsfällor.
   - App Store: https://apps.apple.com/se/app/id6788236641?pt=118326163&ct=geo_pick&mt=8
 - [ShotInbox AI: Sort Screenshots](https://open.cait518.cc/ios-app-guide/sv/shotinbox.html) — Hitta och ordna skärmavbilder
-  - Optimerad för iPhone Duo: äkta helskärm. Julklappar och vinterresor ger kvitton, biljetter och beställningar som skärmbilder.
+  - Optimerad för iPhone Duo: äkta helskärm. Dina skärmdumpar sorterar sig själva: kvitton, biljetter, resor och chattar, med all text sökbar.
   - Pris: Gratis nedladdning, ett engångsköp låser upp allt. Inga prenumerationsfällor.
   - App Store: https://apps.apple.com/se/app/id6802166527?pt=118326163&ct=geo_pick&mt=8
 - [Snapport Lite: Passfoto hemma](https://open.cait518.cc/ios-app-guide/sv/snapportlite.html) — Porträtt i exakt fotostorlek
@@ -204,11 +208,11 @@ apps: 57
   - Pris: Gratis nedladdning, ett engångsköp låser upp allt. Inga prenumerationsfällor.
   - App Store: https://apps.apple.com/se/app/id6782139553?pt=118326163&ct=geo_pick&mt=8
 - [Stay Clock: Bordsklocka](https://open.cait518.cc/ios-app-guide/sv/stayclock.html) — Tid och kalender, alltid på
-  - Mörka kvällar fram till jul: medan telefonen laddar blir den en stor klocka som syns från andra sidan rummet, med månadskalender, timslag och ett enkelt alarm.
+  - Optimerad för iPhone Duo: äkta helskärm. En vacker bordsklocka som alltid är på och syns från andra sidan rummet.
   - Pris: Gratis nedladdning, ett engångsköp låser upp allt. Inga prenumerationsfällor.
   - App Store: https://apps.apple.com/se/app/id6814035888?pt=118326163&ct=geo_pick&mt=8
 - [Studydown: Tidtagning](https://open.cait518.cc/ios-app-guide/sv/studydown.html) — Lägg den med skärmen nedåt
-  - Optimerad för iPhone Duo: äkta helskärm. Tentor och inlämningar i år? Välj en aktivitet, lägg mobilen med skärmen nedåt så räknas tiden; lyfter du den pausas den.
+  - Optimerad för iPhone Duo: äkta helskärm. Vänd telefonen och logga verkligt fokus. Se lyft, obrutna perioder och dagstempot fram till varje deadline. Privat.
   - Pris: Gratis nedladdning, ett engångsköp låser upp allt. Inga prenumerationsfällor.
   - App Store: https://apps.apple.com/se/app/id6807335593?pt=118326163&ct=geo_pick&mt=8
 - [Taipei: Tidshjälp för metron](https://open.cait518.cc/ios-app-guide/sv/metrotimehelper.html) — Vet när du ska ge dig av
@@ -219,8 +223,12 @@ apps: 57
   - Optimerad för iPhone Duo: äkta helskärm. Flyg, långa bilresor och nya platser blir uppdrag: spänn fast bältet, tacka besättningen, smaka en tugga.
   - Pris: Gratis nedladdning, ett engångsköp låser upp allt. Inga prenumerationsfällor.
   - App Store: https://apps.apple.com/se/app/id6787193643?pt=118326163&ct=geo_pick&mt=8
+- [TripBee Cute: Resedagbok](https://open.cait518.cc/ios-app-guide/sv/tripbeecute.html) — Gulligt resehäfte & nedräkning
+  - Gör resan till ett gulligt, illustrerat häfte: nedräkning, flyg, dagsplaner och packlista på en sida. Planera ihop med vänner och dela ett webbhäfte som öppnas överallt.
+  - Pris: Gratis nedladdning, ett engångsköp låser upp allt. Inga prenumerationsfällor.
+  - App Store: https://apps.apple.com/se/app/id6826987407?pt=118326163&ct=geo_pick&mt=8
 - [TripBee Lite: Reseplan](https://open.cait518.cc/ios-app-guide/sv/tripbeelite.html) — Semester och resschema per dag
-  - Optimerad för iPhone Duo: äkta helskärm. Samla resan på en tidslinje dag för dag, med flyg, boende, anteckningar, påminnelser och biljettinfo på ett ställe.
+  - Optimerad för iPhone Duo: äkta helskärm. Din nästa resa, dag för dag: tider, platser, påminnelser, biljetter och lokalt väder i en lugn tidslinje.
   - Pris: Gratis nedladdning, ett engångsköp låser upp allt. Inga prenumerationsfällor.
   - App Store: https://apps.apple.com/se/app/id6791299610?pt=118326163&ct=geo_pick&mt=8
 - [TripBee: Reseplanerare](https://open.cait518.cc/ios-app-guide/sv/tripbee.html) — Gruppresa & smart packlista
@@ -248,10 +256,10 @@ apps: 57
   - Pris: Gratis nedladdning, ett engångsköp låser upp allt. Inga prenumerationsfällor.
   - App Store: https://apps.apple.com/se/app/id6797601720?pt=118326163&ct=geo_pick&mt=8
 - [Wordmate: Lär dig 44 språk](https://open.cait518.cc/ios-app-guide/sv/wordmate.html) — Glosor, widget och klocka
-  - Optimerad för iPhone Duo: äkta helskärm. Lär dig ord på 44 språk i korta pauser: 14 praktiska ämnen, exempelmeningar och uttal du kan lyssna på. Fortsätt i widgeten.
+  - Optimerad för iPhone Duo: äkta helskärm. Lär dig ord på 44 språk med naturliga exempelmeningar, 14 ämnen och 3 nivåer. Plugga direkt i widgeten eller på Apple Watch.
   - Pris: Betald nedladdning till ett engångspris, utan prenumeration.
   - App Store: https://apps.apple.com/se/app/id6789917808?pt=118326163&ct=geo_pick&mt=8
 - [Zipbox: öppna RAR, ZIP, 7z](https://open.cait518.cc/ios-app-guide/sv/zipbox.html) — Packa upp utan reklam
-  - Optimerad för iPhone Duo: äkta helskärm. Titta vad som finns i, förhandsgranska foton och PDF och packa bara upp det du behöver. Ingen reklam.
+  - Optimerad för iPhone Duo: äkta helskärm. Öppna ZIP, RAR, 7z, TAR, ISO och mer, även arkiv med lösenord eller i flera delar. Allt bearbetas på enheten, utan reklam.
   - Pris: Betald nedladdning till ett engångspris, utan prenumeration.
   - App Store: https://apps.apple.com/se/app/id6806776579?pt=118326163&ct=geo_pick&mt=8

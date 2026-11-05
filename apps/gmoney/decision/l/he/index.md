@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - ללא פרסומות
 - ללא מעקב
 - פרטי / במכשיר
-- App Store · ₪7.90
+- App Store · ₪14.90
 
 [קבל את G+Money ב-App Store →](https://apps.apple.com/il/app/id6755782939?pt=118326163&ct=geo_pick&mt=8)
 

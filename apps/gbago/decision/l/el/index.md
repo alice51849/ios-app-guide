@@ -16,7 +16,7 @@ publisher: "Lumi Studio"
 - Περισσότερα
 - Λήψη με χρέωση
 - Εκτός σύνδεσης
-- App Store · 5,99 €
+- App Store · 9,99 €
 
 [Αποκτήστε το GBAGo: Οπτικές αποθηκεύσεις από το App Store](https://apps.apple.com/gr/app/id6804564400?pt=118326163&ct=geo_pick&mt=8)
 

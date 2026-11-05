@@ -17,7 +17,7 @@ When Wi-Fi says connected but work still cannot get online, the useful first ste
 - Tải xuống trả phí
 - Không tài khoản
 - Apple Watch
-- App Store · 119.000đ
+- App Store · 199.000đ
 
 [Tải WiFi Aid trên App Store →](https://apps.apple.com/vn/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)
 

@@ -19,7 +19,7 @@ For babyens passfoto kan ingen andre være med i bildet, og bakgrunnen må være
 - Ingen annonser
 - Ingen sporing
 - Privat / på enheten
-- App Store · 49,00 kr
+- App Store · 79,00 kr
 
 [Last ned Snapport i App Store →](https://apps.apple.com/no/app/id6780575828?pt=118326163&ct=geo_pick&mt=8)
 

@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - कोई खाता नहीं
 - कोई विज्ञापन नहीं
 - निजी / डिवाइस पर
-- App Store · ₹ 999
+- App Store · मुफ़्त
 
 [App Store पर Lumi Bopomofo Pro प्राप्त करें →](https://apps.apple.com/in/app/id6775773117?pt=118326163&ct=geo_pick&mt=8)
 

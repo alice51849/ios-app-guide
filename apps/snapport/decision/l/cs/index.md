@@ -19,7 +19,7 @@ Pro pasovou fotografii miminka nesmí být na snímku nikdo jiný a pozadí mus�
 - Bez reklam
 - Bez sledování
 - Soukromé / v zařízení
-- App Store · 79,00 Kč
+- App Store · 149,00 Kč
 
 [Stáhněte Snapport v App Store →](https://apps.apple.com/cz/app/id6780575828?pt=118326163&ct=geo_pick&mt=8)
 

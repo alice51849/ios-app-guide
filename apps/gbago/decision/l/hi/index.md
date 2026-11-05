@@ -16,7 +16,7 @@ iPhone Duo डिवाइस के लिए ऑप्टिमाइज़ �
 - और अधिक
 - भुगतान किया गया डाउनलोड
 - ऑफ़लाइन
-- App Store · ₹ 500
+- App Store · ₹ 999
 
 [App Store पर GBAGo: विज़ुअल सेव पाएँ](https://apps.apple.com/in/app/id6804564400?pt=118326163&ct=geo_pick&mt=8)
 

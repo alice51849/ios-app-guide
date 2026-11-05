@@ -20,7 +20,7 @@ Sinyal olmayan bir ülkede çevrimdışı çalışan, birden fazla para birimini
 - Reklam yok
 - Takip yok
 - Gizli / cihazda
-- App Store · ₺129,99
+- App Store · ₺249,99
 
 [G+Money'i App Store'dan edinin →](https://apps.apple.com/tr/app/id6755782939?pt=118326163&ct=geo_pick&mt=8)
 

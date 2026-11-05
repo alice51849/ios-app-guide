@@ -16,7 +16,7 @@ Otimizado para iPhone Duo. Criado com o SDK mais recente, o app ocupa toda a tel
 - Mais
 - Download pago
 - Offline
-- App Store · R$ 29,99
+- App Store · R$ 59,90
 
 [Baixe GBAGo: Saves visuais na App Store](https://apps.apple.com/br/app/id6804564400?pt=118326163&ct=geo_pick&mt=8)
 

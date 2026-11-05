@@ -16,7 +16,7 @@ Optimizada para el iPhone Duo. Creada con el SDK más reciente, la app ocupa tod
 - Más
 - Descarga de pago
 - Sin conexión
-- App Store · 5,99 €
+- App Store · 9,99 €
 
 [Consigue GBAGo: Partidas visuales en el App Store](https://apps.apple.com/es/app/id6804564400?pt=118326163&ct=geo_pick&mt=8)
 

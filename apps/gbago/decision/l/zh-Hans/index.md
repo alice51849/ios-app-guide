@@ -16,7 +16,7 @@ publisher: "Lumi Studio"
 - 更多
 - 付费下载
 - 离线
-- App Store · ¥38.00
+- App Store · ¥58.00
 
 [在 App Store 获取 GBAGo: 可视化存档](https://apps.apple.com/cn/app/id6804564400?pt=118326163&ct=geo_pick&mt=8)
 

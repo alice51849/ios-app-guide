@@ -1,12 +1,12 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-11-04",
-  "content_digest": "d41bfe7e156aabee8cf16c8afd333da7f2ca1d1367dc4352339ff83f32cded2b",
+  "date_modified": "2026-11-05",
+  "content_digest": "cfd8097e2d160bb22da9f0415e9bc3c45e093acb6a1c2a6fc701a91301d98006",
   "locale": "sv",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 57,
+  "record_count": 59,
   "apps": [
     {
       "key": "notesstudio100",
@@ -365,9 +365,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/sv/dailymate.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "89",
+        "price": "149",
         "currency": "SEK",
-        "formatted_price": "89,00 kr",
+        "formatted_price": "149,00 kr",
         "storefront_url": "https://apps.apple.com/se/app/id6790418321"
       }
     },
@@ -566,9 +566,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/sv/gmoney.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "39",
+        "price": "69",
         "currency": "SEK",
-        "formatted_price": "39,00 kr",
+        "formatted_price": "69,00 kr",
         "storefront_url": "https://apps.apple.com/se/app/id6755782939"
       }
     },
@@ -649,9 +649,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/sv/gbago.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "69",
+        "price": "119",
         "currency": "SEK",
-        "formatted_price": "69,00 kr",
+        "formatted_price": "119,00 kr",
         "storefront_url": "https://apps.apple.com/se/app/id6804564400"
       }
     },
@@ -897,9 +897,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/sv/lumibopomofopro.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "119",
+        "price": "0",
         "currency": "SEK",
-        "formatted_price": "119,00 kr",
+        "formatted_price": "Gratis",
         "storefront_url": "https://apps.apple.com/se/app/id6775773117"
       }
     },
@@ -1229,6 +1229,50 @@
       }
     },
     {
+      "key": "foldparty",
+      "app_store_id": "6829184924",
+      "name": "Meow Party: Kattspel för två",
+      "summary": "Här är vikningen en del av spelet: Meow Party ger dig 200 söta minispel med katter i huvudrollen, som blir ännu roligare när du viker, och för att spela tillsammans behöver ni varken wifi eller en extra mobil. Appen är optimerad för den vikbara skärmen på iPhone Duo, där vecket blir mittlinje, nät eller spegel. På en vanlig iPhone går allt att spela fullt ut, eftersom varje vikrörelse har en knapp eller en nypning som alternativ.",
+      "category": "other",
+      "search_terms": [
+        "minispel",
+        "2",
+        "spelare",
+        "roliga",
+        "söta",
+        "katt",
+        "vänner",
+        "offline",
+        "utan",
+        "internet",
+        "wifi",
+        "partyspel",
+        "parspel",
+        "par",
+        "pussel"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/se/app/id6829184924?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/sv/foldparty.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "79",
+        "currency": "SEK",
+        "formatted_price": "79,00 kr",
+        "storefront_url": "https://apps.apple.com/se/app/id6829184924"
+      }
+    },
+    {
       "key": "metrotimehelper",
       "app_store_id": "6819061896",
       "name": "Taipei: Tidshjälp för metron",
@@ -1264,9 +1308,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/sv/metrotimehelper.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "0",
+        "price": "39",
         "currency": "SEK",
-        "formatted_price": "Gratis",
+        "formatted_price": "39,00 kr",
         "storefront_url": "https://apps.apple.com/se/app/id6819061896"
       }
     },
@@ -1756,9 +1800,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/sv/snapport.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "49",
+        "price": "79",
         "currency": "SEK",
-        "formatted_price": "49,00 kr",
+        "formatted_price": "79,00 kr",
         "storefront_url": "https://apps.apple.com/se/app/id6780575828"
       }
     },
@@ -1964,6 +2008,47 @@
       }
     },
     {
+      "key": "tripbeecute",
+      "app_store_id": "6826987407",
+      "name": "TripBee Cute: Resedagbok",
+      "summary": "Inga fler utspridda skärmdumpar, mejl och anteckningar: TripBee Cute gör varje resa till ett gulligt, illustrerat resehäfte med allt på en sida. Varje resa står som ett häfte med eget omslag i din bokhylla. Öppna det och skrolla genom hela resan: nedräkning till avresan, flyg, varje dag i planen och allt som ska packas.",
+      "category": "travel",
+      "search_terms": [
+        "resa",
+        "semester",
+        "packlista",
+        "planera",
+        "resplan",
+        "dagbok",
+        "countdown",
+        "widget",
+        "roadtrip",
+        "vänner",
+        "planner",
+        "checklista"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/se/app/id6826987407?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/sv/tripbeecute.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "SEK",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/se/app/id6826987407"
+      }
+    },
+    {
       "key": "tripbeelite",
       "app_store_id": "6791299610",
       "name": "TripBee Lite: Reseplan",
@@ -2039,9 +2124,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/sv/tripbee.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "49",
+        "price": "79",
         "currency": "SEK",
-        "formatted_price": "49,00 kr",
+        "formatted_price": "79,00 kr",
         "storefront_url": "https://apps.apple.com/se/app/id6787754435"
       }
     },
@@ -2172,9 +2257,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/sv/wifiaid.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "49",
+        "price": "79",
         "currency": "SEK",
-        "formatted_price": "49,00 kr",
+        "formatted_price": "79,00 kr",
         "storefront_url": "https://apps.apple.com/se/app/id6790467886"
       }
     },
@@ -2295,9 +2380,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/sv/wordmate.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "69",
+        "price": "119",
         "currency": "SEK",
-        "formatted_price": "69,00 kr",
+        "formatted_price": "119,00 kr",
         "storefront_url": "https://apps.apple.com/se/app/id6789917808"
       }
     },
@@ -2338,9 +2423,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/sv/zipbox.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "39",
+        "price": "69",
         "currency": "SEK",
-        "formatted_price": "39,00 kr",
+        "formatted_price": "69,00 kr",
         "storefront_url": "https://apps.apple.com/se/app/id6806776579"
       }
     }

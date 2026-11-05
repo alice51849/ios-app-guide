@@ -20,7 +20,7 @@ Navetiștii ocupați au nevoie de exersare de vocabular care să se potrivească
 - Privat / pe dispozitiv
 - Widget
 - Apple Watch
-- App Store · 29,99 lei
+- App Store · 49,99 lei
 
 [Descarcă Wordmate: Learn 44 Languages din App Store →](https://apps.apple.com/ro/app/id6789917808?pt=118326163&ct=geo_pick&mt=8)
 

@@ -17,7 +17,7 @@ iPhone Duo ਡਿਵਾਈਸ ਲਈ ਅਨੁਕੂਲਿਤ। ਨਵੀਨਤ
 - ਭੁਗਤਾਨ ਵਾਲਾ ਡਾਊਨਲੋਡ
 - ਕੋਈ ਖਾਤਾ ਨਹੀਂ
 - Apple Watch
-- App Store · ₹ 349
+- App Store · ₹ 599
 
 [App Store ਤੋਂ WiFi Aid: ਨੈੱਟਵਰਕ ਸਮੱਸਿਆ ਲੱਭੋ ਪ੍ਰਾਪਤ ਕਰੋ](https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)
 

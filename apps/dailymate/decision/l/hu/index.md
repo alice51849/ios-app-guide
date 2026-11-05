@@ -17,7 +17,7 @@ Utazás előtt a valós helyzetekhez illő teljes kifejezések hasznosabbak, min
 - Fizetős letöltés
 - Widget
 - Apple Watch
-- App Store · HUF2,990.00
+- App Store · HUF4,990.00
 
 [Szerezd be a DailyMate-et az App Store-ból →](https://apps.apple.com/hu/app/id6790418321?pt=118326163&ct=geo_pick&mt=8)
 

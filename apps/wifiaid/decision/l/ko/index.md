@@ -17,7 +17,7 @@ When Wi-Fi says connected but work still cannot get online, the useful first ste
 - 유료 다운로드
 - 계정 없음
 - Apple Watch
-- App Store · ￦5,500
+- App Store · ￦9,900
 
 [App Store에서 WiFi Aid 받기 →](https://apps.apple.com/kr/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)
 

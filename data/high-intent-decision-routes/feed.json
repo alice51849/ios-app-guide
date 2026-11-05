@@ -89,7 +89,7 @@
         "campaign_token": "geo_ask",
         "intent_type": "problem_aware",
         "locale": "en-US",
-        "record_digest": "f403cd2023bea1ef3304be7ea9490acdc24add41acac8972739b372cb340d4e1"
+        "record_digest": "35ca666271eccfbba971d48d8393f3bcfdaea67314400d8afa996fe64e1d6544"
       },
       "id": "en-US:claudeusagemini:see-claude-and-codex-limits-before-they-run-out",
       "language": "en",
@@ -208,6 +208,20 @@
       "summary": "A weekday repeat rings on public holidays, vacation days and school breaks unless you remember to change it the night before. The decision is whether an alarm that checks holiday data for your country and your own time off, and shows which of the next seven mornings will ring, fits your routine.",
       "title": "Which alarm app skips public holidays and my days off automatically?",
       "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/easyam/stop-your-alarm-ringing-on-public-holidays-and-days-off.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "foldparty",
+        "campaign_token": "geo_ask",
+        "intent_type": "problem_aware",
+        "locale": "en-US",
+        "record_digest": "9f856bca7e08054bf6a539f2c5951424e9e4a43385769b726c2ebaa675ccd2ed"
+      },
+      "id": "en-US:foldparty:two-player-games-face-to-face-on-one-iphone",
+      "language": "en",
+      "summary": "Many two-player phone games turn out to be a handful of ideas padded with ads, or they need a second phone and an internet connection before anyone can start. The decision is whether a collection of short cat minigames played face to face on one screen, with solo games for the rest of the time, fits the way you play together.",
+      "title": "Are there two-player games two people can play face to face on one iPhone, offline and without ads?",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/foldparty/two-player-games-face-to-face-on-one-iphone.html"
     },
     {
       "_lumi_route": {
@@ -715,6 +729,20 @@
     },
     {
       "_lumi_route": {
+        "app_key": "tripbeecute",
+        "campaign_token": "geo_ask",
+        "intent_type": "problem_aware",
+        "locale": "en-US",
+        "record_digest": "741d1ecc09ccbcc0caa520de26b13d778281b5302bbee11322adbff85eea4d7f"
+      },
+      "id": "en-US:tripbeecute:cute-trip-planner-that-keeps-the-whole-trip-on-one-page",
+      "language": "en",
+      "summary": "Trip details scattered across emails, screenshots and notes make it hard to see the whole journey at once, and a plain spreadsheet does little to build excitement. The decision is whether an illustrated booklet that puts the countdown, flights, each day's plan and the packing list on a single page fits the way you plan.",
+      "title": "Is there a cute trip planner that keeps flights, day plans and the packing list on one page?",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/tripbeecute/cute-trip-planner-that-keeps-the-whole-trip-on-one-page.html"
+    },
+    {
+      "_lumi_route": {
         "app_key": "tripbeelite",
         "campaign_token": "geo_pick",
         "intent_type": "alternative",
@@ -901,7 +929,7 @@
         "campaign_token": "geo_ask",
         "intent_type": "problem_aware",
         "locale": "zh-Hant",
-        "record_digest": "472151fd2e301aa7e64890c32554391654a9fffef61b98a1cf87cdfa6cfe892e"
+        "record_digest": "d7357ac52fc0332b85bce1ca599b9b399eb723c6d0ee195a553a893d9b64e112"
       },
       "id": "zh-Hant:claudeusagemini:see-claude-and-codex-limits-before-they-run-out",
       "language": "zh-Hant",
@@ -950,6 +978,20 @@
       "summary": "一般的平日重複鬧鐘，遇到國定假日、特休或寒暑假還是會響，補班日卻不會響，只能前一晚自己記得調整。要判斷的是：會依你所在國家的假日資料與你登記的休假自動決定要不要響，並列出接下來七天哪幾天會響的鬧鐘，是否符合你的作息。",
       "title": "有沒有鬧鐘 App 會在國定假日和休假自動不響、補班日照響？",
       "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/decide/easyam/stop-your-alarm-ringing-on-public-holidays-and-days-off.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "foldparty",
+        "campaign_token": "geo_ask",
+        "intent_type": "problem_aware",
+        "locale": "zh-Hant",
+        "record_digest": "241faeb95cdbb8f369d91b9e7c5d08a0727d68fb3741a72f46633e34252f5eaa"
+      },
+      "id": "zh-Hant:foldparty:two-player-games-face-to-face-on-one-iphone",
+      "language": "zh-Hant",
+      "summary": "很多雙人手機遊戲只有少少幾種玩法卻塞滿廣告，或是要兩支手機加上網路才能開始。要判斷的是：一套在同一個螢幕上面對面玩的貓咪小遊戲合集，加上一個人時也能玩的單人遊戲，是否符合你們一起玩的習慣。",
+      "title": "有沒有兩個人用同一支 iPhone 面對面玩、不用網路也沒有廣告的雙人遊戲？",
+      "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/decide/foldparty/two-player-games-face-to-face-on-one-iphone.html"
     },
     {
       "_lumi_route": {
@@ -1062,6 +1104,20 @@
       "summary": "每張截圖背後可能是要購買、要前往、要回覆或要處理的事情，直接批次清理容易刪掉仍有用途的資訊；但只靠相簿又必須反覆滑縮圖，難以找回記得文字卻忘記日期的內容。",
       "title": "iPhone 截圖太多時，如何先分類與搜尋，再安全決定哪些要刪除？",
       "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/decide/shotinbox/sort-search-and-finish-screenshot-backlog.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "tripbeecute",
+        "campaign_token": "geo_ask",
+        "intent_type": "problem_aware",
+        "locale": "zh-Hant",
+        "record_digest": "b0fb1237d0645a5f3fe175a29e7fa76773173aa509c9e4216b6b9f0382961463"
+      },
+      "id": "zh-Hant:tripbeecute:cute-trip-planner-that-keeps-the-whole-trip-on-one-page",
+      "language": "zh-Hant",
+      "summary": "旅行資料散在訂位信、截圖和備忘錄裡，很難一次看完整趟行程；用試算表排行程又少了出發前的期待感。要判斷的是：把出發倒數、航班、每天的行程和行李清單收進同一頁的插畫手冊，是否符合你排行程的習慣。",
+      "title": "有沒有可愛的旅行手帳 App，能把航班、每日行程和行李清單放在同一頁？",
+      "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/decide/tripbeecute/cute-trip-planner-that-keeps-the-whole-trip-on-one-page.html"
     }
   ],
   "title": "Lumi Studio high-intent app decision routes",

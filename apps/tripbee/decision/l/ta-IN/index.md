@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - விளம்பரங்கள் இல்லை
 - பின்தொடர்வு இல்லை
 - தனியுரிமை / சாதனத்தில்
-- App Store · ₹ 349
+- App Store · ₹ 599
 
 [App Store இல் TripBee Pro: பயண திட்டமிடுபவரைப் பெறுங்கள் →](https://apps.apple.com/in/app/id6787754435?pt=118326163&ct=geo_pick&mt=8)
 

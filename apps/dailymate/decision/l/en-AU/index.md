@@ -17,7 +17,7 @@ Before a trip, complete phrases for real situations are more useful than isolate
 - Paid download
 - Widget
 - Apple Watch
-- App Store · $10.00
+- App Store · $19.99
 
 [Get DailyMate on the App Store →](https://apps.apple.com/au/app/id6790418321?pt=118326163&ct=geo_pick&mt=8)
 

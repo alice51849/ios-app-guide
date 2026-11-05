@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - ಜಾಹೀರಾತುಗಳಿಲ್ಲ
 - ಹಿಂಡಿಕೆ ಇಲ್ಲ
 - ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ
-- App Store · ₹ 349
+- App Store · ₹ 599
 
 [App Store ನಲ್ಲಿ Snapport ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6780575828?pt=118326163&ct=geo_pick&mt=8)
 

@@ -16,7 +16,7 @@ GBAGo — 除 Lumi Studio 自製的三款原創 demo 卡帶外，GBAGo 不包含
 - More
 - Paid download
 - Offline
-- App Store · $7.99
+- App Store · $14.99
 
 [Get GBAGo on the App Store →](https://apps.apple.com/au/app/id6804564400?pt=118326163&ct=geo_pick&mt=8)
 

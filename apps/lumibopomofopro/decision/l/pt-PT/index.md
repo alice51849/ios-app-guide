@@ -18,7 +18,7 @@ Crianças bilingues a aprender Zhuyin em casa precisam de um caminho completo po
 - Sem conta
 - Sem anúncios
 - Privado / no dispositivo
-- App Store · 9,99 €
+- App Store · Grátis
 
 [Obtenha Lumi Bopomofo Pro na App Store →](https://apps.apple.com/pt/app/id6775773117?pt=118326163&ct=geo_pick&mt=8)
 

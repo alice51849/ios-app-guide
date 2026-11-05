@@ -19,7 +19,7 @@ En god reiseplan-app gjør en rotete tur om til en klar dag-for-dag tidslinje �
 - Ingen annonser
 - Ingen sporing
 - Privat / på enheten
-- App Store · 49,00 kr
+- App Store · 79,00 kr
 
 [Last ned TripBee Pro: Reiseplanlegger i App Store →](https://apps.apple.com/no/app/id6787754435?pt=118326163&ct=geo_pick&mt=8)
 

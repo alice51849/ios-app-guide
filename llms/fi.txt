@@ -3,7 +3,7 @@
 > Jäsennellyt tiedot jokaisen iOS-sovelluksen ominaisuuksista, hinnasta ja usein kysytyistä kysymyksistä.
 
 locale: fi
-apps: 57
+apps: 59
 - Sovellushakemisto: https://open.cait518.cc/ios-app-guide/fi/tools/private-pay-once-iphone-app-finder.html
 - Sovellushakemisto · PWA: https://open.cait518.cc/ios-app-guide/fi/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fi.jsonld
@@ -28,7 +28,7 @@ apps: 57
 - Sovellushakemisto · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 
 - [100 Notes Studio: Pen & Paper](https://open.cait518.cc/ios-app-guide/fi/notesstudio100.html) — Muistikirja, käsiala ja PDF
-  - Talvi ja tenttikausi: kirjoita muistiinpanot käsin, merkitse luentojen PDF:t, liitä luennon äänitys sivulle ja kertaa korteilla. Täysin offline, ilman tiliä.
+  - Optimoitu iPhone Duo -laitteelle: aito koko näyttö. Kirjoita käsin tai näppäimistöllä, merkitse PDF:iä ja äänitä luento samalle sivulle, offline. Kertaa sanakorteilla.
   - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6798813048?pt=118326163&ct=geo_pick&mt=8
 - [AI Brief: Tiedostot promptiksi](https://open.cait518.cc/ios-app-guide/fi/aibriefpack.html) — Tee prompteja tiedostoista
@@ -60,7 +60,7 @@ apps: 57
   - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6782251621?pt=118326163&ct=geo_pick&mt=8
 - [DailyMate Lite: Puhu tänään](https://open.cait518.cc/ios-app-guide/fi/dailymatelite.html) — Matkafraasit 50 kielellä
-  - Optimoitu iPhone Duo -laitteelle: aito koko näyttö. Ymmärrä, mitä ihmiset sanovat lentokentällä, hotellissa tai ravintolassa, ja opi luonteva vastaus.
+  - Optimoitu iPhone Duo -laitteelle. Mikä tahansa 50 kielestä. Harjoittele lentokenttä-, hotelli- ja kahvilakeskusteluja ja kertaa seuraava fraasi päivittäin widgetissä.
   - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6794725568?pt=118326163&ct=geo_pick&mt=8
 - [DailyMate: Lauseita elämään](https://open.cait518.cc/ios-app-guide/fi/dailymate.html) — Opi englantia ja espanjaa
@@ -68,7 +68,7 @@ apps: 57
   - Hinta: Maksullinen lataus yhdellä kiinteällä hinnalla, ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6790418321?pt=118326163&ct=geo_pick&mt=8
 - [dB Halo: Äänitasomittari](https://open.cait518.cc/ios-app-guide/fi/dbhalo.html) — Spektri, meluannos ja uni
-  - Optimoitu iPhone Duo -laitteelle: aito koko näyttö. Näe desibelit livenä Halo-renkaassa, arvioi päivittäinen melualtistus ja kirjaa kuorsaus.
+  - Optimoitu iPhone Duo -laitteelle: aito koko näyttö. Näe desibelit yhdellä silmäyksellä, koko spektri, päivittäinen melualtistus ja kuorsaus unipäiväkirjassa.
   - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6806826699?pt=118326163&ct=geo_pick&mt=8
 - [EasyAM: Herätyskello arkeen](https://open.cait518.cc/ios-app-guide/fi/easyam.html) — Herätys ohittaa pyhät ja lomat
@@ -80,7 +80,7 @@ apps: 57
   - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6824946559?pt=118326163&ct=geo_pick&mt=8
 - [G+Money Lite: Matkakulut](https://open.cait518.cc/ios-app-guide/fi/gmoneylite.html) — Päiväbudjetti kellossa
-  - Optimoitu iPhone Duo -laitteelle: aito koko näyttö. Joulumatka tai uusivuosi ulkomailla? Kirjaa ostot paikallisessa valuutassa ja näe ne heti omassasi, aseta päiväraja.
+  - Optimoitu iPhone Duo -laitteelle: aito koko näyttö. Aseta päiväbudjetti ja näe widgetistä ja Apple Watchista, paljonko tänään on jäljellä.
   - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6793436548?pt=118326163&ct=geo_pick&mt=8
 - [G+Money: Menot ja budjetti](https://open.cait518.cc/ios-app-guide/fi/gmoney.html) — Matkakulut ja valuutta
@@ -88,11 +88,11 @@ apps: 57
   - Hinta: Maksullinen lataus yhdellä kiinteällä hinnalla, ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6755782939?pt=118326163&ct=geo_pick&mt=8
 - [GBAGo: Kuvalliset tallenteet](https://open.cait518.cc/ios-app-guide/fi/gbago.html) — Palautuskartta · Tilannekuvat
-  - Palautuskartta · Kuvalliset tallenteet · Automaattiset tilannekuvat · Vie varmuuskopio · .sav
+  - Optimoitu iPhone Duo -laitteelle: aito koko näyttö. Emulaattori, jossa mikään ei katoa: kuvalliset tallennuspaikat, automaattiset tilannekuvat ja automaattitallennus.
   - Hinta: Maksullinen lataus yhdellä kiinteällä hinnalla, ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6804564400?pt=118326163&ct=geo_pick&mt=8
 - [HoursTag Lite: Hinta tunteina](https://open.cait518.cc/ios-app-guide/fi/hourstaglite.html) — Tietoinen osto: oikea hinta
-  - Vuoden lopun ostoskausi: ennen ostoa näet hinnan omina työtunteina, merkitset sen tarpeeksi, haluksi tai heräteostokseksi ja näet työn uuden vuoden tavoitteen takana.
+  - Optimoitu iPhone Duo -laitteelle: aito koko näyttö. Ennen ostoa näet hinnan omina työtunteina ja merkitset sen tarpeeksi, haluksi tai heräteostokseksi.
   - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6794039979?pt=118326163&ct=geo_pick&mt=8
 - [HoursTag: Ostotunnit](https://open.cait518.cc/ios-app-guide/fi/hourstag.html) — Tuntipalkka ja menot
@@ -147,6 +147,10 @@ apps: 57
   - Optimoitu iPhone Duo -laitteelle: aito koko näyttö. Löydä yksityiset tiedot, peitä pysyvästi vain valitsemasi ja poista metatiedot. Kaikki laitteella.
   - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6792850916?pt=118326163&ct=geo_pick&mt=8
+- [Meow Party: Kaksinpelit](https://open.cait518.cc/ios-app-guide/fi/foldparty.html) — 200 peliä taittopuhelimille
+  - Taittopuhelimille: taitettuna vielä hauskempi, tavallisella iPhonella täysin pelattava. 200 söpöä kissapeliä, useimmat yksin, 54 kaksin samalla luurilla. Ei mainoksia.
+  - Hinta: Maksullinen lataus yhdellä kiinteällä hinnalla, ei tilausta.
+  - App Store: https://apps.apple.com/fi/app/id6829184924?pt=118326163&ct=geo_pick&mt=8
 - [Mochi DoneStamp: Viimeksi](https://open.cait518.cc/ios-app-guide/fi/mochidonestamp.html) — Milloin tein sen? Muistutukset
   - Optimoitu iPhone Duo -laitteelle: aito koko näyttö. Ei enää arvailua, milloin teit sen viimeksi. Leimaa tehdyksi, Mochi muistaa ja muistuttaa, kun on taas aika.
   - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
@@ -176,7 +180,7 @@ apps: 57
   - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6806779853?pt=118326163&ct=geo_pick&mt=8
 - [SaveTag: tekoälykirjanmerkit](https://open.cait518.cc/ios-app-guide/fi/savetag.html) — Tallenna linkit, lue myöhemmin
-  - Optimoitu iPhone Duo -laitteelle: aito koko näyttö. Jaa linkki mistä tahansa apista: se tagataan laitteellasi ja löytyy merkityksen perusteella.
+  - Optimoitu iPhone Duo -laitteelle: aito koko näyttö. Tallenna linkki mistä tahansa sovelluksesta napautuksella.
   - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6802505528?pt=118326163&ct=geo_pick&mt=8
 - [ScanTo Pro: PDF ja OCR](https://open.cait518.cc/ios-app-guide/fi/scanto.html) — Yksityinen asiakirjaskanneri
@@ -204,11 +208,11 @@ apps: 57
   - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6782139553?pt=118326163&ct=geo_pick&mt=8
 - [Stay Clock: Pöytäkello](https://open.cait518.cc/ios-app-guide/fi/stayclock.html) — Aika ja kalenteri, aina päällä
-  - Optimoitu iPhone Duo -laitteelle: aito koko näyttö. Pimeät illat jouluun asti: latautuessaan puhelin muuttuu suureksi kelloksi, joka näkyy huoneen toiselle puolelle.
+  - Optimoitu iPhone Duo -laitteelle: aito koko näyttö. Kaunis pöytäkello, joka on aina päällä ja näkyy huoneen toiselle puolelle.
   - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6814035888?pt=118326163&ct=geo_pick&mt=8
 - [Studydown: Ajastin](https://open.cait518.cc/ios-app-guide/fi/studydown.html) — Käännä se näyttö alaspäin
-  - Optimoitu iPhone Duo -laitteelle: aito koko näyttö. Valitse aktiviteetti, aseta puhelin näyttö alaspäin, ja aika kulkee; kun nostat sen, laskenta tauottuu.
+  - Optimoitu iPhone Duo -laitteelle: aito koko näyttö. Käännä puhelin ja kirjaa aito keskittyminen. Näe nostot, yhtenäiset jaksot ja jokaisen määräajan päivätahti.
   - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6807335593?pt=118326163&ct=geo_pick&mt=8
 - [Taipei: Metron aika-apuri](https://open.cait518.cc/ios-app-guide/fi/metrotimehelper.html) — Tiedä, milloin pitää lähteä
@@ -219,8 +223,12 @@ apps: 57
   - Optimoitu iPhone Duo -laitteelle: aito koko näyttö. Lennot, automatkat ja uudet paikat muuttuvat tehtäviksi: turvavyö kiinni, kiitos miehistölle, maista palanen.
   - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6787193643?pt=118326163&ct=geo_pick&mt=8
+- [TripBee Cute: Matkapäiväkirja](https://open.cait518.cc/ios-app-guide/fi/tripbeecute.html) — Söpö matkavihko, lähtölaskenta
+  - Tee seuraavasta reissusta söpö, kuvitettu matkavihko: lähtölaskenta, lennot, päivien ohjelma ja pakkauslista yhdellä sivulla. Suunnittele ja jaa se kavereiden kanssa.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
+  - App Store: https://apps.apple.com/fi/app/id6826987407?pt=118326163&ct=geo_pick&mt=8
 - [TripBee Lite: Matkasuunnitelma](https://open.cait518.cc/ios-app-guide/fi/tripbeelite.html) — Lomaohjelma päivä kerrallaan
-  - Optimoitu iPhone Duo -laitteelle: aito koko näyttö. Kokoa matka yhdelle päivittäiselle aikajanalle: lennot, majoitus, muistiinpanot, muistutukset ja lipputiedot yhdessä.
+  - Optimoitu iPhone Duo -laitteelle: aito koko näyttö. Seuraava matkasi päivä kerrallaan: ajat, paikat, muistutukset, liput ja paikallinen sää yhdellä aikajanalla.
   - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6791299610?pt=118326163&ct=geo_pick&mt=8
 - [TripBee: Matkasuunnittelu](https://open.cait518.cc/ios-app-guide/fi/tripbee.html) — Ryhmämatka ja pakkauslista
@@ -248,10 +256,10 @@ apps: 57
   - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6797601720?pt=118326163&ct=geo_pick&mt=8
 - [Wordmate: Opi 44 kieltä](https://open.cait518.cc/ios-app-guide/fi/wordmate.html) — Sanasto, sanakortit ja widget
-  - Optimoitu iPhone Duo -laitteelle: aito koko näyttö. Opi sanoja 44 kielellä pienissä tauoissa: 14 käytännön aihetta, esimerkkilauseet ja kuunneltava ääntäminen.
+  - Optimoitu iPhone Duo -laitteelle: aito koko näyttö. Opi sanoja 44 kielellä luontevien esimerkkilauseiden, 14 aiheen ja 3 tason avulla.
   - Hinta: Maksullinen lataus yhdellä kiinteällä hinnalla, ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6789917808?pt=118326163&ct=geo_pick&mt=8
 - [Zipbox: avaa RAR, ZIP, 7z](https://open.cait518.cc/ios-app-guide/fi/zipbox.html) — Pura ilman mainoksia
-  - Optimoitu iPhone Duo -laitteelle: aito koko näyttö. Kurkista sisään, esikatsele kuvat ja PDF:t ja pura vain tarvitsemasi. Ei mainoksia.
+  - Optimoitu iPhone Duo -laitteelle: aito koko näyttö. Avaa ZIP, RAR, 7z, TAR, ISO ja muita, myös salasanalla suojatut ja jaetut arkistot.
   - Hinta: Maksullinen lataus yhdellä kiinteällä hinnalla, ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6806776579?pt=118326163&ct=geo_pick&mt=8

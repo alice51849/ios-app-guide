@@ -17,7 +17,7 @@ Sebelum perjalanan, frasa lengkap untuk situasi nyata lebih berguna daripada kos
 - Unduhan berbayar
 - Widget
 - Apple Watch
-- App Store · Rp 129ribu
+- App Store · Rp 229ribu
 
 [Dapatkan DailyMate di App Store →](https://apps.apple.com/id/app/id6790418321?pt=118326163&ct=geo_pick&mt=8)
 

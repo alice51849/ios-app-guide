@@ -3,7 +3,7 @@
 > Thông tin có cấu trúc cho từng ứng dụng iOS — tính năng, giá và FAQ.
 
 locale: vi
-apps: 57
+apps: 59
 - Danh mục ứng dụng: https://open.cait518.cc/ios-app-guide/vi/tools/private-pay-once-iphone-app-finder.html
 - Danh mục ứng dụng · PWA: https://open.cait518.cc/ios-app-guide/vi/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld
@@ -28,11 +28,11 @@ apps: 57
 - Danh mục ứng dụng · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 
 - [100 Notes Studio: Pen & Paper](https://open.cait518.cc/ios-app-guide/vi/notesstudio100.html) — Ghi chú viết tay và PDF
-  - Tối ưu cho iPhone Duo: toàn màn hình thật sự. Mùa đông và thi cuối kỳ: viết tay, chú thích PDF bài giảng, gắn bản ghi âm ngay trên trang và ôn bằng thẻ ghi nhớ.
+  - Tối ưu cho iPhone Duo: toàn màn hình thật sự. Viết tay, gõ phím, chú thích PDF và ghi âm bài giảng ngay trên trang, hoàn toàn ngoại tuyến. Ôn tập bằng thẻ ghi nhớ.
   - Giá: Tải miễn phí, mua một lần để mở khóa tất cả. Không bẫy đăng ký.
   - App Store: https://apps.apple.com/vn/app/id6798813048?pt=118326163&ct=geo_pick&mt=8
 - [AI Brief: Tệp thành prompt AI](https://open.cait518.cc/ios-app-guide/vi/aibriefpack.html) — Tạo prompt từ tệp và PDF
-  - Báo cáo cuối năm và kế hoạch nghỉ lễ? Thêm ảnh chụp màn hình, PDF, ghi chú và liên kết; đọc ngay trên máy, đánh dấu thông tin cá nhân, gom thành bản tóm tắt cho AI.
+  - Tối ưu cho iPhone Duo: toàn màn hình thật sự. Ngữ cảnh tốt, câu trả lời AI tốt.
   - Giá: Tải miễn phí, mua một lần để mở khóa tất cả. Không bẫy đăng ký.
   - App Store: https://apps.apple.com/vn/app/id6791658210?pt=118326163&ct=geo_pick&mt=8
 - [Aim990: Gia sư tiếng Anh](https://open.cait518.cc/ios-app-guide/vi/aim990.html) — Chẩn đoán TOEIC trong 8 phút
@@ -44,7 +44,7 @@ apps: 57
   - Giá: Tải miễn phí, mua một lần để mở khóa tất cả. Không bẫy đăng ký.
   - App Store: https://apps.apple.com/vn/app/id6802423998?pt=118326163&ct=geo_pick&mt=8
 - [CalDaily: máy tính và chủ đề](https://open.cait518.cc/ios-app-guide/vi/caldaily.html) — Widget, giảm giá, chia hóa đơn
-  - Tối ưu cho iPhone Duo: toàn màn hình thật sự. Tiệc tất niên cả nhóm cần chia tiền? Dùng tiền boa và chia hóa đơn, đặt tên cho kết quả để tìm lại bữa tối đã chia đều.
+  - Tối ưu cho iPhone Duo: toàn màn hình thật sự. Máy tính ngay trên màn hình chính: widget tính luôn không cần mở app, 100 chủ đề đẹp, có tiền boa và chia hóa đơn.
   - Giá: Tải miễn phí, mua một lần để mở khóa tất cả. Không bẫy đăng ký.
   - App Store: https://apps.apple.com/vn/app/id6794178671?pt=118326163&ct=geo_pick&mt=8
 - [CountDaysNow: Event Counter](https://open.cait518.cc/ios-app-guide/vi/countdaysnow.html) — Trọng tâm hôm nay
@@ -60,7 +60,7 @@ apps: 57
   - Giá: Tải miễn phí, mua một lần để mở khóa tất cả. Không bẫy đăng ký.
   - App Store: https://apps.apple.com/vn/app/id6782251621?pt=118326163&ct=geo_pick&mt=8
 - [DailyMate Lite: Luyện nói](https://open.cait518.cc/ios-app-guide/vi/dailymatelite.html) — Hội thoại du lịch, 50 ngôn ngữ
-  - Tối ưu cho iPhone Duo: toàn màn hình thật sự. Sắp đi du lịch mà sợ không nghe kịp người bản xứ? Luyện câu họ nói kèm câu đáp tự nhiên ở sân bay, khách sạn, nhà hàng.
+  - Tối ưu cho iPhone Duo. Học bất kỳ ngôn ngữ nào trong 50 ngôn ngữ. Luyện hội thoại ở sân bay, khách sạn, quán cà phê và ôn câu tiếp theo mỗi ngày trên tiện ích.
   - Giá: Tải miễn phí, mua một lần để mở khóa tất cả. Không bẫy đăng ký.
   - App Store: https://apps.apple.com/vn/app/id6794725568?pt=118326163&ct=geo_pick&mt=8
 - [DailyMate: Câu nói đời thường](https://open.cait518.cc/ios-app-guide/vi/dailymate.html) — Tiếng Anh giao tiếp hằng ngày
@@ -68,7 +68,7 @@ apps: 57
   - Giá: Tải xuống trả phí với một mức giá trả trước, không đăng ký.
   - App Store: https://apps.apple.com/vn/app/id6790418321?pt=118326163&ct=geo_pick&mt=8
 - [dB Halo: Máy đo mức âm thanh](https://open.cait518.cc/ios-app-guide/vi/dbhalo.html) — Phổ tần số và liều tiếng ồn
-  - Tối ưu cho iPhone Duo: toàn màn hình thật sự. Xem dB trực tiếp trên vòng Halo, ước tính liều tiếng ồn mỗi ngày và ghi lại tiếng ngáy trong nhật ký giấc ngủ.
+  - Tối ưu cho iPhone Duo: toàn màn hình thật sự. Xem decibel trong nháy mắt, toàn bộ phổ tần, ước tính liều tiếng ồn mỗi ngày và bắt tiếng ngáy trong nhật ký giấc ngủ.
   - Giá: Tải miễn phí, mua một lần để mở khóa tất cả. Không bẫy đăng ký.
   - App Store: https://apps.apple.com/vn/app/id6806826699?pt=118326163&ct=geo_pick&mt=8
 - [EasyAM: Báo thức thông minh](https://open.cait518.cc/ios-app-guide/vi/easyam.html) — Nghỉ lễ tự tắt, đi làm tự reo
@@ -80,7 +80,7 @@ apps: 57
   - Giá: Tải miễn phí, mua một lần để mở khóa tất cả. Không bẫy đăng ký.
   - App Store: https://apps.apple.com/vn/app/id6824946559?pt=118326163&ct=geo_pick&mt=8
 - [G+Money Lite: Chi tiêu du lịch](https://open.cait518.cc/ios-app-guide/vi/gmoneylite.html) — Hạn mức ngày trên đồng hồ
-  - Tối ưu cho iPhone Duo: toàn màn hình thật sự. Ghi khoản mua bằng tiền địa phương, xem ngay bằng tiền của bạn, đặt hạn mức mỗi ngày. Tỷ giá dùng được cả khi ngoại tuyến.
+  - Tối ưu cho iPhone Duo: toàn màn hình thật sự. Đặt ngân sách mỗi ngày và xem số còn lại hôm nay trên widget và Apple Watch.
   - Giá: Tải miễn phí, mua một lần để mở khóa tất cả. Không bẫy đăng ký.
   - App Store: https://apps.apple.com/vn/app/id6793436548?pt=118326163&ct=geo_pick&mt=8
 - [G+Money: Chi tiêu và ngân sách](https://open.cait518.cc/ios-app-guide/vi/gmoney.html) — Ngân sách và chi tiêu du lịch
@@ -88,11 +88,11 @@ apps: 57
   - Giá: Tải xuống trả phí với một mức giá trả trước, không đăng ký.
   - App Store: https://apps.apple.com/vn/app/id6755782939?pt=118326163&ct=geo_pick&mt=8
 - [GBAGo: Bản lưu trực quan](https://open.cait518.cc/ios-app-guide/vi/gbago.html) — Bản đồ khôi phục · Ảnh chụp
-  - Bản đồ khôi phục · Bản lưu trực quan · Ảnh chụp tự động · Xuất bản sao lưu · .sav
+  - Tối ưu cho iPhone Duo: toàn màn hình thật sự. Trình giả lập chạy tệp .gba, .gbc, .gb, .zip của bạn, chơi offline mượt 60 fps.
   - Giá: Tải xuống trả phí với một mức giá trả trước, không đăng ký.
   - App Store: https://apps.apple.com/vn/app/id6804564400?pt=118326163&ct=geo_pick&mt=8
 - [HoursTag Lite: Giá quy ra giờ](https://open.cait518.cc/ios-app-guide/vi/hourstaglite.html) — Mua sắm tỉnh táo: giá thật
-  - Mùa mua sắm cuối năm: trước khi mua, xem giá bằng số giờ làm việc của chính bạn, gắn nhãn Cần, Muốn hoặc Bốc đồng, và xem công sức phía sau mục tiêu cho năm mới.
+  - Tối ưu cho iPhone Duo: toàn màn hình thật sự. Trước khi mua, xem giá bằng số giờ làm việc của chính bạn, rồi gắn nhãn cần, muốn hay bốc đồng. Có widget và Apple Watch.
   - Giá: Tải miễn phí, mua một lần để mở khóa tất cả. Không bẫy đăng ký.
   - App Store: https://apps.apple.com/vn/app/id6794039979?pt=118326163&ct=geo_pick&mt=8
 - [HoursTag: Giờ để mua](https://open.cait518.cc/ios-app-guide/vi/hourstag.html) — Lương giờ & chi tiêu
@@ -147,8 +147,12 @@ apps: 57
   - Trước khi gửi PDF, ảnh hay ảnh chụp màn hình, tìm tên, số điện thoại, email, số thẻ và khuôn mặt, che vĩnh viễn và xóa siêu dữ liệu. Xử lý trên máy, không cần tài khoản.
   - Giá: Tải miễn phí, mua một lần để mở khóa tất cả. Không bẫy đăng ký.
   - App Store: https://apps.apple.com/vn/app/id6792850916?pt=118326163&ct=geo_pick&mt=8
+- [Meow Party: Game Mèo 2 Người](https://open.cait518.cc/ios-app-guide/vi/foldparty.html) — 200 trò chơi, gập máy càng vui
+  - Dành cho điện thoại gập: gập máy càng vui, vẫn chơi trọn vẹn trên iPhone thường. 200 mini game mèo dễ thương, đa số chơi đơn, 54 trò chơi đôi, offline, không quảng cáo.
+  - Giá: Tải xuống trả phí với một mức giá trả trước, không đăng ký.
+  - App Store: https://apps.apple.com/vn/app/id6829184924?pt=118326163&ct=geo_pick&mt=8
 - [Mochi DoneStamp: Lần cuối](https://open.cait518.cc/ios-app-guide/vi/mochidonestamp.html) — Làm khi nào? Nhắc việc nhà
-  - Tối ưu cho iPhone Duo: toàn màn hình thật sự. Xong việc chạm một lần, Mochi ghi lại thời điểm và nhắc khi đến hạn, tính từ lúc bạn thật sự làm. Có widget tiện xem.
+  - Tối ưu cho iPhone Duo: toàn màn hình thật sự. Đừng phải cố nhớ lần cuối mình làm là khi nào. Đóng dấu đã xong, Mochi ghi nhớ và nhắc khi đến hạn.
   - Giá: Tải miễn phí, mua một lần để mở khóa tất cả. Không bẫy đăng ký.
   - App Store: https://apps.apple.com/vn/app/id6790800323?pt=118326163&ct=geo_pick&mt=8
 - [Mochi: Checklist dễ thương](https://open.cait518.cc/ios-app-guide/vi/mochi.html) — Việc cần làm dễ thương
@@ -176,7 +180,7 @@ apps: 57
   - Giá: Tải miễn phí, mua một lần để mở khóa tất cả. Không bẫy đăng ký.
   - App Store: https://apps.apple.com/vn/app/id6806779853?pt=118326163&ct=geo_pick&mt=8
 - [SaveTag: dấu trang bằng AI](https://open.cait518.cc/ios-app-guide/vi/savetag.html) — Lưu link, bài viết để đọc sau
-  - Tối ưu cho iPhone Duo: toàn màn hình thật sự. Link tự gửi cho mình rồi quên mất? Chia sẻ vào SaveTag từ bất kỳ ứng dụng nào.
+  - Tối ưu cho iPhone Duo: toàn màn hình thật sự. Lưu link từ mọi ứng dụng chỉ với một chạm.
   - Giá: Tải miễn phí, mua một lần để mở khóa tất cả. Không bẫy đăng ký.
   - App Store: https://apps.apple.com/vn/app/id6802505528?pt=118326163&ct=geo_pick&mt=8
 - [ScanTo Pro: PDF & OCR](https://open.cait518.cc/ios-app-guide/vi/scanto.html) — Máy quét tài liệu ngoại tuyến
@@ -184,11 +188,11 @@ apps: 57
   - Giá: Tải miễn phí, mua một lần để mở khóa tất cả. Không bẫy đăng ký.
   - App Store: https://apps.apple.com/vn/app/id6779977651?pt=118326163&ct=geo_pick&mt=8
 - [Sereno: Âm Thanh Ngủ Ngon](https://open.cait518.cc/ios-app-guide/vi/sereno.html) — Tiếng ồn trắng, mưa, sóng biển
-  - Tối ưu cho iPhone Duo: toàn màn hình thật sự. Tiếng mưa, sóng biển, lửa thu âm thật cùng tiếng ồn trắng, hồng, nâu, phối thành hơn 1000 không gian âm thanh không lặp lại.
+  - Tối ưu cho iPhone Duo: toàn màn hình thật sự. Mưa, biển, lửa và hơn thế nữa: 140+ âm thanh êm dịu để ngủ và tập trung.
   - Giá: Tải miễn phí, mua một lần để mở khóa tất cả. Không bẫy đăng ký.
   - App Store: https://apps.apple.com/vn/app/id6788236641?pt=118326163&ct=geo_pick&mt=8
 - [ShotInbox AI: Sắp xếp ảnh](https://open.cait518.cc/ios-app-guide/vi/shotinbox.html) — Hình chụp màn hình và OCR
-  - Tối ưu cho iPhone Duo: toàn màn hình thật sự. ShotInbox tự xếp vào hóa đơn, vé, du lịch, tin nhắn, tìm được cả chữ bên trong và dọn tấm không cần. Xử lý trên máy.
+  - Tối ưu cho iPhone Duo: toàn màn hình thật sự. Sắp xếp ảnh chụp màn hình tự động: hóa đơn, vé, du lịch, tin nhắn mỗi thứ một nơi, tìm được từng chữ bên trong.
   - Giá: Tải miễn phí, mua một lần để mở khóa tất cả. Không bẫy đăng ký.
   - App Store: https://apps.apple.com/vn/app/id6802166527?pt=118326163&ct=geo_pick&mt=8
 - [Snapport Lite: Ảnh thẻ tại nhà](https://open.cait518.cc/ios-app-guide/vi/snapportlite.html) — Cắt chân dung đúng kích cỡ
@@ -204,19 +208,23 @@ apps: 57
   - Giá: Tải miễn phí, mua một lần để mở khóa tất cả. Không bẫy đăng ký.
   - App Store: https://apps.apple.com/vn/app/id6782139553?pt=118326163&ct=geo_pick&mt=8
 - [Stay Clock: Đồng hồ lật để bàn](https://open.cait518.cc/ios-app-guide/vi/stayclock.html) — Đồng hồ và lịch luôn sáng
-  - Từ mùa đông đến Tết Dương lịch: khi sạc, điện thoại thành đồng hồ lớn đọc được từ góc bên kia phòng, kèm lịch Tháng, chuông báo giờ và báo thức đơn giản.
+  - Tối ưu cho iPhone Duo: toàn màn hình thật sự. Chiếc đồng hồ để bàn đẹp, luôn sáng và đọc được từ góc bên kia căn phòng.
   - Giá: Tải miễn phí, mua một lần để mở khóa tất cả. Không bẫy đăng ký.
   - App Store: https://apps.apple.com/vn/app/id6814035888?pt=118326163&ct=geo_pick&mt=8
 - [Studydown: Đếm giờ tập trung](https://open.cait518.cc/ios-app-guide/vi/studydown.html) — Úp màn hình xuống
-  - Tối ưu cho iPhone Duo: toàn màn hình thật sự. Mùa thi cuối kỳ và dự án cuối năm? Chọn một hoạt động, úp điện thoại xuống là bắt đầu tính giờ; nhấc lên là tạm dừng.
+  - Tối ưu cho iPhone Duo: toàn màn hình thật sự. Úp điện thoại để ghi lại sự tập trung thật. Xem lần nhấc máy, quãng liền mạch và nhịp mỗi ngày cho từng hạn chót. Riêng tư.
   - Giá: Tải miễn phí, mua một lần để mở khóa tất cả. Không bẫy đăng ký.
   - App Store: https://apps.apple.com/vn/app/id6807335593?pt=118326163&ct=geo_pick&mt=8
 - [Trip Planet Trẻ Du Lịch](https://open.cait518.cc/ios-app-guide/vi/tripplanet.html) — Game nhiệm vụ cho bé đi chơi
   - Tối ưu cho iPhone Duo: toàn màn hình thật sự. Biến lúc chờ thành nhiệm vụ: dũng cảm ở sân bay, nói cảm ơn, thử món mới. Có quà và dấu hộ chiếu. Bé 3–10 tuổi.
   - Giá: Tải miễn phí, mua một lần để mở khóa tất cả. Không bẫy đăng ký.
   - App Store: https://apps.apple.com/vn/app/id6787193643?pt=118326163&ct=geo_pick&mt=8
+- [TripBee Cute: Sổ tay du lịch](https://open.cait518.cc/ios-app-guide/vi/tripbeecute.html) — Đếm ngược, lên lịch với bạn bè
+  - Biến chuyến đi sắp tới thành cuốn sổ tay dễ thương: đếm ngược, chuyến bay, lịch mỗi ngày một màu, đồ cần mang. Rủ bạn bè cùng lên kế hoạch hay chia sẻ sổ tay web.
+  - Giá: Tải miễn phí, mua một lần để mở khóa tất cả. Không bẫy đăng ký.
+  - App Store: https://apps.apple.com/vn/app/id6826987407?pt=118326163&ct=geo_pick&mt=8
 - [TripBee Lite: Lịch trình](https://open.cait518.cc/ios-app-guide/vi/tripbeelite.html) — Kỳ nghỉ sắp xếp từng ngày
-  - Tối ưu cho iPhone Duo: toàn màn hình thật sự. Gom chuyến đi vào một dòng thời gian theo từng ngày: chuyến bay, khách sạn, ghi chú, lời nhắc và thông tin vé ở một chỗ.
+  - Tối ưu cho iPhone Duo: toàn màn hình thật sự. Chuyến đi tới, sắp xếp từng ngày: giờ, địa điểm, nhắc nhở, vé và thời tiết tại nơi đến trên một dòng thời gian.
   - Giá: Tải miễn phí, mua một lần để mở khóa tất cả. Không bẫy đăng ký.
   - App Store: https://apps.apple.com/vn/app/id6791299610?pt=118326163&ct=geo_pick&mt=8
 - [TripBee: Kế Hoạch Du Lịch](https://open.cait518.cc/ios-app-guide/vi/tripbee.html) — Đi chơi nhóm & danh sách đồ
@@ -236,7 +244,7 @@ apps: 57
   - Giá: Tải miễn phí, mua một lần để mở khóa tất cả. Không bẫy đăng ký.
   - App Store: https://apps.apple.com/vn/app/id6818607603?pt=118326163&ct=geo_pick&mt=8
 - [WiFi Aid Lite: Kiểm tra mạng](https://open.cait518.cc/ios-app-guide/vi/wifiaidlite.html) — Mất kết nối? Tìm nguyên nhân
-  - Tối ưu cho iPhone Duo: toàn màn hình thật sự. Một chạm kiểm tra Wi-Fi, DNS và internet, chỉ ra nguyên nhân khả dĩ nhất trước khi bạn gọi tổng đài.
+  - Tối ưu cho iPhone Duo: toàn màn hình thật sự. Một chạm chạy các kiểm tra độc lập và cho biết nguyên nhân khả dĩ nhất cùng cách xử lý tiếp theo.
   - Giá: Tải miễn phí, mua một lần để mở khóa tất cả. Không bẫy đăng ký.
   - App Store: https://apps.apple.com/vn/app/id6793414462?pt=118326163&ct=geo_pick&mt=8
 - [WiFi Aid: Tìm lỗi mạng WiFi](https://open.cait518.cc/ios-app-guide/vi/wifiaid.html) — Chẩn đoán router, mesh, DNS
@@ -252,6 +260,6 @@ apps: 57
   - Giá: Tải xuống trả phí với một mức giá trả trước, không đăng ký.
   - App Store: https://apps.apple.com/vn/app/id6789917808?pt=118326163&ct=geo_pick&mt=8
 - [Zipbox: Giải nén RAR, ZIP, 7z](https://open.cait518.cc/ios-app-guide/vi/zipbox.html) — Mở file nén, không quảng cáo
-  - Tối ưu cho iPhone Duo: toàn màn hình thật sự. Đồng nghiệp gửi file nén có mật khẩu? ZIP, RAR, 7z chia nhiều phần hoặc đặt mật khẩu đều mở được.
+  - Tối ưu cho iPhone Duo: toàn màn hình thật sự. Mở ZIP, RAR, 7z, TAR, ISO và nhiều định dạng khác, cả file có mật khẩu hay chia nhiều phần.
   - Giá: Tải xuống trả phí với một mức giá trả trước, không đăng ký.
   - App Store: https://apps.apple.com/vn/app/id6806776579?pt=118326163&ct=geo_pick&mt=8

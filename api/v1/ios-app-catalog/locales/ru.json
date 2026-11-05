@@ -1,12 +1,12 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-11-04",
-  "content_digest": "d41bfe7e156aabee8cf16c8afd333da7f2ca1d1367dc4352339ff83f32cded2b",
+  "date_modified": "2026-11-05",
+  "content_digest": "cfd8097e2d160bb22da9f0415e9bc3c45e093acb6a1c2a6fc701a91301d98006",
   "locale": "ru",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 57,
+  "record_count": 59,
   "apps": [
     {
       "key": "notesstudio100",
@@ -162,8 +162,6 @@
         "price": "0",
         "currency": "RUB",
         "formatted_price": "Бесплатно",
-        "rating_value": 1.0,
-        "rating_count": 1,
         "storefront_url": "https://apps.apple.com/ru/app/id6802423998"
       }
     },
@@ -363,9 +361,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/ru/dailymate.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "599",
+        "price": "999",
         "currency": "RUB",
-        "formatted_price": "599,00 ₽",
+        "formatted_price": "999,00 ₽",
         "storefront_url": "https://apps.apple.com/ru/app/id6790418321"
       }
     },
@@ -571,9 +569,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/ru/gmoney.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "249",
+        "price": "449",
         "currency": "RUB",
-        "formatted_price": "249,00 ₽",
+        "formatted_price": "449,00 ₽",
         "storefront_url": "https://apps.apple.com/ru/app/id6755782939"
       }
     },
@@ -651,9 +649,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/ru/gbago.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "449",
+        "price": "799",
         "currency": "RUB",
-        "formatted_price": "449,00 ₽",
+        "formatted_price": "799,00 ₽",
         "storefront_url": "https://apps.apple.com/ru/app/id6804564400"
       }
     },
@@ -893,9 +891,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/ru/lumibopomofopro.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "799",
+        "price": "0",
         "currency": "RUB",
-        "formatted_price": "799,00 ₽",
+        "formatted_price": "Бесплатно",
         "storefront_url": "https://apps.apple.com/ru/app/id6775773117"
       }
     },
@@ -1227,6 +1225,50 @@
       }
     },
     {
+      "key": "foldparty",
+      "app_store_id": "6829184924",
+      "name": "Мяу-вечеринка: игры на двоих",
+      "summary": "Забудьте о мини-играх с рекламой и обязательным интернетом: «Мяу-вечеринка» собрала 200 оригинальных милых мини-игр с котиками, оптимизированных для складного экрана iPhone Duo, где играть ещё веселее, если сложить устройство, а на любом iPhone всё работает полностью. Большинство игр рассчитано на одного, а в 54 можно играть и вдвоём, лицом к лицу на одном телефоне. Раунд длится примерно от 30 до 120 секунд.",
+      "category": "other",
+      "search_terms": [
+        "мини",
+        "2",
+        "игрок",
+        "один",
+        "телефон",
+        "без",
+        "интернет",
+        "офлайн",
+        "кошка",
+        "ритм",
+        "вдвоем",
+        "милый",
+        "головоломка",
+        "реакция",
+        "котиками"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/ru/app/id6829184924?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/ru/foldparty.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "499",
+        "currency": "RUB",
+        "formatted_price": "499,00 ₽",
+        "storefront_url": "https://apps.apple.com/ru/app/id6829184924"
+      }
+    },
+    {
       "key": "metrotimehelper",
       "app_store_id": "6819061896",
       "name": "Тайбэй: помощник по метро",
@@ -1261,9 +1303,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/ru/metrotimehelper.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "0",
+        "price": "249",
         "currency": "RUB",
-        "formatted_price": "Бесплатно",
+        "formatted_price": "249,00 ₽",
         "storefront_url": "https://apps.apple.com/ru/app/id6819061896"
       }
     },
@@ -1742,9 +1784,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/ru/snapport.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "299",
+        "price": "499",
         "currency": "RUB",
-        "formatted_price": "299,00 ₽",
+        "formatted_price": "499,00 ₽",
         "storefront_url": "https://apps.apple.com/ru/app/id6780575828"
       }
     },
@@ -1952,6 +1994,48 @@
       }
     },
     {
+      "key": "tripbeecute",
+      "app_store_id": "6826987407",
+      "name": "TripBee Cute: Путешествия",
+      "summary": "Билеты в скриншотах, время в чатах, список вещей на листочке: TripBee Cute собирает всё в милую иллюстрированную книжечку, отдельную для каждой поездки. На вашей полке у каждой поездки своя обложка с иллюстрацией. Откройте её, и вся поездка разворачивается на одной странице: обложка, отсчёт до отъезда, рейсы, план на каждый день и всё, что нужно взять с собой. Бумага цвета сливок, чёткие линии и милые иллюстрации.",
+      "category": "travel",
+      "search_terms": [
+        "планировщик",
+        "маршрут",
+        "отпуск",
+        "отдых",
+        "обратный",
+        "отсчет",
+        "дней",
+        "список",
+        "вещей",
+        "чемодан",
+        "поездки",
+        "виджет",
+        "тревелбук"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/ru/app/id6826987407?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/ru/tripbeecute.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "RUB",
+        "formatted_price": "Бесплатно",
+        "storefront_url": "https://apps.apple.com/ru/app/id6826987407"
+      }
+    },
+    {
       "key": "tripbeelite",
       "app_store_id": "6791299610",
       "name": "TripBee Lite: План поездки",
@@ -2029,9 +2113,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/ru/tripbee.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "299",
+        "price": "499",
         "currency": "RUB",
-        "formatted_price": "299,00 ₽",
+        "formatted_price": "499,00 ₽",
         "storefront_url": "https://apps.apple.com/ru/app/id6787754435"
       }
     },
@@ -2158,9 +2242,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/ru/wifiaid.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "299",
+        "price": "499",
         "currency": "RUB",
-        "formatted_price": "299,00 ₽",
+        "formatted_price": "499,00 ₽",
         "storefront_url": "https://apps.apple.com/ru/app/id6790467886"
       }
     },
@@ -2278,9 +2362,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/ru/wordmate.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "449",
+        "price": "799",
         "currency": "RUB",
-        "formatted_price": "449,00 ₽",
+        "formatted_price": "799,00 ₽",
         "storefront_url": "https://apps.apple.com/ru/app/id6789917808"
       }
     },
@@ -2321,9 +2405,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/ru/zipbox.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "249",
+        "price": "449",
         "currency": "RUB",
-        "formatted_price": "249,00 ₽",
+        "formatted_price": "449,00 ₽",
         "storefront_url": "https://apps.apple.com/ru/app/id6806776579"
       }
     }

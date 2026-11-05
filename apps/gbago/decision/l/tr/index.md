@@ -16,7 +16,7 @@ iPhone Duo için optimize edildi. En yeni SDK ile geliştirilen uygulama tüm i�
 - Daha fazla
 - Ücretli indirme
 - Çevrimdışı
-- App Store · ₺250,00
+- App Store · ₺499,99
 
 [GBAGo: Görsel kayıtlar uygulamasını App Store'dan al](https://apps.apple.com/tr/app/id6804564400?pt=118326163&ct=geo_pick&mt=8)
 

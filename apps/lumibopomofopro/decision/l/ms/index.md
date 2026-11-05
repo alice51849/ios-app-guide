@@ -18,7 +18,7 @@ Kanak-kanak dwibahasa yang belajar Zhuyin di rumah perlukan laluan lengkap melal
 - Tiada akaun
 - Tiada iklan
 - Peribadi / pada peranti
-- App Store · RM39.90
+- App Store · Percuma
 
 [Dapatkan Lumi Bopomofo Pro di App Store →](https://apps.apple.com/my/app/id6775773117?pt=118326163&ct=geo_pick&mt=8)
 

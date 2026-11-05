@@ -19,7 +19,7 @@ Per la foto tessera del bambino, nessun altro deve comparire nella foto e lo sfo
 - Nessuna pubblicità
 - Nessun tracciamento
 - Privato / su dispositivo
-- App Store · 3,90 €
+- App Store · 6,99 €
 
 [Scarica Snapport dall’App Store →](https://apps.apple.com/it/app/id6780575828?pt=118326163&ct=geo_pick&mt=8)
 

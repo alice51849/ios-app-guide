@@ -16,7 +16,7 @@ iPhone Duo சாதனத்திற்காக மேம்படுத்�
 - மேலும்
 - பணம் செலுத்தி பதிவிறக்கவும்
 - ஆஃப்லைன்
-- App Store · ₹ 500
+- App Store · ₹ 999
 
 [App Store-இல் GBAGo: காட்சி சேமிப்புகள்-ஐப் பெறுங்கள்](https://apps.apple.com/in/app/id6804564400?pt=118326163&ct=geo_pick&mt=8)
 

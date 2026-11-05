@@ -3,7 +3,7 @@
 > Maklumat berstruktur setiap aplikasi iOS — ciri, harga dan FAQ.
 
 locale: ms
-apps: 57
+apps: 59
 - Direktori aplikasi: https://open.cait518.cc/ios-app-guide/ms/tools/private-pay-once-iphone-app-finder.html
 - Direktori aplikasi · PWA: https://open.cait518.cc/ios-app-guide/ms/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ms.jsonld
@@ -28,11 +28,11 @@ apps: 57
 - Direktori aplikasi · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 
 - [100 Notes Studio: Pen & Paper](https://open.cait518.cc/ios-app-guide/ms/notesstudio100.html) — Nota tulisan tangan & PDF
-  - Hujung tahun, musim peperiksaan akhir: tulis nota tangan, tanda PDF kuliah, simpan rakaman pada halaman sama dan ulang kaji dengan kad imbas. Tanpa internet, tanpa akaun.
+  - Dioptimumkan untuk iPhone Duo: skrin penuh sebenar. Tulis tangan, taip, anotasi PDF dan rakam kuliah pada halaman yang sama, tanpa internet. Ulang kaji dengan kad imbas.
   - Harga: Muat turun percuma, beli sekali untuk buka semua. Tiada langganan.
   - App Store: https://apps.apple.com/my/app/id6798813048?pt=118326163&ct=geo_pick&mt=8
 - [AI Brief: Fail jadi prompt AI](https://open.cait518.cc/ios-app-guide/ms/aibriefpack.html) — Prompt daripada fail & PDF
-  - Dioptimumkan untuk iPhone Duo: skrin penuh sebenar. Tambah tangkapan skrin, PDF, nota dan pautan; dibaca dalam peranti, butiran peribadi ditanda, jadi ringkasan jelas.
+  - Dioptimumkan untuk iPhone Duo: skrin penuh sebenar. Konteks lebih baik, jawapan AI lebih baik.
   - Harga: Muat turun percuma, beli sekali untuk buka semua. Tiada langganan.
   - App Store: https://apps.apple.com/my/app/id6791658210?pt=118326163&ct=geo_pick&mt=8
 - [Aim990: jurulatih Inggeris](https://open.cait518.cc/ios-app-guide/ms/aim990.html) — Diagnosis TOEIC 8 minit
@@ -60,7 +60,7 @@ apps: 57
   - Harga: Muat turun percuma, beli sekali untuk buka semua. Tiada langganan.
   - App Store: https://apps.apple.com/my/app/id6782251621?pt=118326163&ct=geo_pick&mt=8
 - [DailyMate Lite: Cakap Hari Ini](https://open.cait518.cc/ios-app-guide/ms/dailymatelite.html) — Perbualan melancong, 50 bahasa
-  - Dioptimumkan untuk iPhone Duo: skrin penuh sebenar. Fahami apa yang orang kata di lapangan terbang, hotel atau restoran, dan belajar membalas dengan semula jadi.
+  - Dioptimumkan untuk iPhone Duo. Pilih antara 50 bahasa. Latih perbualan di lapangan terbang, hotel dan kafe, dan ulang kaji ayat seterusnya setiap hari di widget.
   - Harga: Muat turun percuma, beli sekali untuk buka semua. Tiada langganan.
   - App Store: https://apps.apple.com/my/app/id6794725568?pt=118326163&ct=geo_pick&mt=8
 - [DailyMate: Ayat Harian](https://open.cait518.cc/ios-app-guide/ms/dailymate.html) — Belajar bahasa Inggeris, Jepun
@@ -68,7 +68,7 @@ apps: 57
   - Harga: Muat turun berbayar dengan satu harga pendahuluan tanpa langganan.
   - App Store: https://apps.apple.com/my/app/id6790418321?pt=118326163&ct=geo_pick&mt=8
 - [dB Halo: Meter aras bunyi](https://open.cait518.cc/ios-app-guide/ms/dbhalo.html) — Dos hingar dan jurnal tidur
-  - Dioptimumkan untuk iPhone Duo: skrin penuh sebenar. Lihat dB secara langsung pada cincin Halo, anggarkan dos bunyi harian dan rekod dengkuran.
+  - Dioptimumkan untuk iPhone Duo: skrin penuh sebenar. Lihat desibel sekali pandang, spektrum penuh, anggaran dos hingar harian dan dengkuran dalam jurnal tidur.
   - Harga: Muat turun percuma, beli sekali untuk buka semua. Tiada langganan.
   - App Store: https://apps.apple.com/my/app/id6806826699?pt=118326163&ct=geo_pick&mt=8
 - [EasyAM: Jam Loceng Hari Kerja](https://open.cait518.cc/ios-app-guide/ms/easyam.html) — Penggera senyap pada cuti umum
@@ -80,7 +80,7 @@ apps: 57
   - Harga: Muat turun percuma, beli sekali untuk buka semua. Tiada langganan.
   - App Store: https://apps.apple.com/my/app/id6824946559?pt=118326163&ct=geo_pick&mt=8
 - [G+Money Lite: Kos perjalanan](https://open.cait518.cc/ios-app-guide/ms/gmoneylite.html) — Bajet harian di jam & widget
-  - Dioptimumkan untuk iPhone Duo: skrin penuh sebenar. Catat setiap belanja dalam mata wang tempatan dan terus lihat nilainya dalam mata wang anda, walaupun luar talian.
+  - Dioptimumkan untuk iPhone Duo: skrin penuh sebenar. Tetapkan bajet harian dan lihat baki hari ini pada widget dan Apple Watch.
   - Harga: Muat turun percuma, beli sekali untuk buka semua. Tiada langganan.
   - App Store: https://apps.apple.com/my/app/id6793436548?pt=118326163&ct=geo_pick&mt=8
 - [G+Money: Perbelanjaan & bajet](https://open.cait518.cc/ios-app-guide/ms/gmoney.html) — Belanja jalan dan mata wang
@@ -88,11 +88,11 @@ apps: 57
   - Harga: Muat turun berbayar dengan satu harga pendahuluan tanpa langganan.
   - App Store: https://apps.apple.com/my/app/id6755782939?pt=118326163&ct=geo_pick&mt=8
 - [GBAGo: Simpanan visual](https://open.cait518.cc/ios-app-guide/ms/gbago.html) — Peta Pemulihan · Syot Kilat
-  - Peta Pemulihan · Simpanan visual · Syot kilat automatik · Eksport Sandaran · .sav
+  - Dioptimumkan untuk iPhone Duo: skrin penuh sebenar. Emulator lancar 60 fps untuk permainan .gba, .gbc dan .gb anda.
   - Harga: Muat turun berbayar dengan satu harga pendahuluan tanpa langganan.
   - App Store: https://apps.apple.com/my/app/id6804564400?pt=118326163&ct=geo_pick&mt=8
 - [HoursTag Lite: Harga dalam jam](https://open.cait518.cc/ios-app-guide/ms/hourstaglite.html) — Beli sedar: harga sebenar
-  - Musim beli-belah hujung tahun: sebelum membeli, lihat harga dalam jam kerja anda, tandakan Perlu, Mahu atau Desakan, dan lihat kerja di sebalik matlamat tahun baharu.
+  - Dioptimumkan untuk iPhone Duo: skrin penuh sebenar. Sebelum membeli, lihat harga dalam jam kerja anda, kemudian tandakan sebagai keperluan, kehendak atau ikut hati.
   - Harga: Muat turun percuma, beli sekali untuk buka semua. Tiada langganan.
   - App Store: https://apps.apple.com/my/app/id6794039979?pt=118326163&ct=geo_pick&mt=8
 - [HoursTag: Jam untuk Beli](https://open.cait518.cc/ios-app-guide/ms/hourstag.html) — Gaji sejam & perbelanjaan
@@ -147,6 +147,10 @@ apps: 57
   - Dioptimumkan untuk iPhone Duo: skrin penuh sebenar. Cari maklumat peribadi, hitamkan kekal bahagian dipilih sahaja dan buang metadata.
   - Harga: Muat turun percuma, beli sekali untuk buka semua. Tiada langganan.
   - App Store: https://apps.apple.com/my/app/id6792850916?pt=118326163&ct=geo_pick&mt=8
+- [Meow Party: Game Kucing Berdua](https://open.cait518.cc/ios-app-guide/ms/foldparty.html) — 200 Game Meriah di Skrin Lipat
+  - Untuk fon lipat: lebih meriah bila dilipat, boleh dimainkan penuh pada iPhone biasa. 200 game kucing comel, kebanyakan solo, 54 berdua di 1 telefon, offline tanpa iklan.
+  - Harga: Muat turun berbayar dengan satu harga pendahuluan tanpa langganan.
+  - App Store: https://apps.apple.com/my/app/id6829184924?pt=118326163&ct=geo_pick&mt=8
 - [Metro Time Helper: MRT Taipei](https://open.cait518.cc/ios-app-guide/ms/metrotimehelper.html) — Tahu Bila Patut Bertolak
   - MRT Taipei, Taiwan: masukkan masa perlu tiba, terus tahu masa paling lewat masuk stesen. 50 bahasa untuk penduduk dan pelancong. Jadual cawangan Xiaobitan dan Xinbeitou.
   - Harga: Muat turun percuma, beli sekali untuk buka semua. Tiada langganan.
@@ -180,7 +184,7 @@ apps: 57
   - Harga: Muat turun percuma, beli sekali untuk buka semua. Tiada langganan.
   - App Store: https://apps.apple.com/my/app/id6806779853?pt=118326163&ct=geo_pick&mt=8
 - [SaveTag: penanda buku AI](https://open.cait518.cc/ios-app-guide/ms/savetag.html) — Simpan pautan, baca kemudian
-  - Dioptimumkan untuk iPhone Duo: skrin penuh sebenar. Kongsi pautan dari mana-mana apl, ia ditag sendiri pada peranti dan boleh dicari ikut maksud.
+  - Dioptimumkan untuk iPhone Duo: skrin penuh sebenar. Simpan pautan dari apl mana-mana dengan satu ketikan.
   - Harga: Muat turun percuma, beli sekali untuk buka semua. Tiada langganan.
   - App Store: https://apps.apple.com/my/app/id6802505528?pt=118326163&ct=geo_pick&mt=8
 - [ScanTo Pro: PDF & OCR](https://open.cait518.cc/ios-app-guide/ms/scanto.html) — Pengimbas Dokumen Luar Talian
@@ -192,7 +196,7 @@ apps: 57
   - Harga: Muat turun percuma, beli sekali untuk buka semua. Tiada langganan.
   - App Store: https://apps.apple.com/my/app/id6788236641?pt=118326163&ct=geo_pick&mt=8
 - [ShotInbox AI: Sort Screenshots](https://open.cait518.cc/ios-app-guide/ms/shotinbox.html) — Tangkapan skrin mudah dicari
-  - Dioptimumkan untuk iPhone Duo: skrin penuh sebenar. Beli-belah hujung tahun dan cuti sekolah buat resit, tiket dan pesanan menimbun dalam tangkapan skrin.
+  - Dioptimumkan untuk iPhone Duo: skrin penuh sebenar. Tangkapan skrin tersusun sendiri: resit, tiket, perjalanan dan chat diasingkan, semua teksnya boleh dicari.
   - Harga: Muat turun percuma, beli sekali untuk buka semua. Tiada langganan.
   - App Store: https://apps.apple.com/my/app/id6802166527?pt=118326163&ct=geo_pick&mt=8
 - [Snapport Lite: Ambil foto ID](https://open.cait518.cc/ios-app-guide/ms/snapportlite.html) — Potret tepat mengikut saiz
@@ -208,19 +212,23 @@ apps: 57
   - Harga: Muat turun percuma, beli sekali untuk buka semua. Tiada langganan.
   - App Store: https://apps.apple.com/my/app/id6782139553?pt=118326163&ct=geo_pick&mt=8
 - [Stay Clock: Jam Meja Flip](https://open.cait518.cc/ios-app-guide/ms/stayclock.html) — Jam, kalendar sentiasa aktif
-  - Malam panjang hingga cuti hujung tahun: semasa dicas, telefon jadi jam besar yang boleh dibaca dari hujung bilik, dengan kalendar Bulan dan penggera ringkas.
+  - Dioptimumkan untuk iPhone Duo: skrin penuh sebenar. Jam meja cantik yang sentiasa menyala dan boleh dibaca dari hujung bilik.
   - Harga: Muat turun percuma, beli sekali untuk buka semua. Tiada langganan.
   - App Store: https://apps.apple.com/my/app/id6814035888?pt=118326163&ct=geo_pick&mt=8
 - [Studydown: Pemasa Fokus](https://open.cait518.cc/ios-app-guide/ms/studydown.html) — Tiarapkan telefon
-  - Dioptimumkan untuk iPhone Duo: skrin penuh sebenar. Pilih aktiviti, letakkan telefon menghadap ke bawah dan masa mula dikira; angkat, ia dijeda.
+  - Dioptimumkan untuk iPhone Duo: skrin penuh sebenar. Terbalikkan telefon untuk merekod fokus sebenar.
   - Harga: Muat turun percuma, beli sekali untuk buka semua. Tiada langganan.
   - App Store: https://apps.apple.com/my/app/id6807335593?pt=118326163&ct=geo_pick&mt=8
 - [Trip Planet Cuti Keluarga](https://open.cait518.cc/ios-app-guide/ms/tripplanet.html) — Misi perjalanan untuk anak
   - Dioptimumkan untuk iPhone Duo: skrin penuh sebenar. Penerbangan, perjalanan jauh dan tempat baharu jadi misi: pakai tali pinggang, ucap terima kasih, rasa sesuap.
   - Harga: Muat turun percuma, beli sekali untuk buka semua. Tiada langganan.
   - App Store: https://apps.apple.com/my/app/id6787193643?pt=118326163&ct=geo_pick&mt=8
+- [TripBee Cute: Buku Perjalanan](https://open.cait518.cc/ios-app-guide/ms/tripbeecute.html) — Jurnal percutian comel & kemas
+  - Jadikan percutian anda buku perjalanan comel: kira detik, penerbangan, jadual harian berwarna dan senarai barang. Ajak kawan merancang bersama atau kongsi buku web.
+  - Harga: Muat turun percuma, beli sekali untuk buka semua. Tiada langganan.
+  - App Store: https://apps.apple.com/my/app/id6826987407?pt=118326163&ct=geo_pick&mt=8
 - [TripBee Lite: Pelan Perjalanan](https://open.cait518.cc/ios-app-guide/ms/tripbeelite.html) — Jadual percutian ikut hari
-  - Balik kampung atau bercuti hujung tahun? Susun perjalanan dalam satu garis masa harian, dengan butiran penerbangan dan hotel, nota, peringatan serta maklumat tiket.
+  - Dioptimumkan untuk iPhone Duo: skrin penuh sebenar. Perjalanan seterusnya, hari demi hari: masa, tempat, peringatan, tiket dan cuaca dalam satu garis masa.
   - Harga: Muat turun percuma, beli sekali untuk buka semua. Tiada langganan.
   - App Store: https://apps.apple.com/my/app/id6791299610?pt=118326163&ct=geo_pick&mt=8
 - [TripBee: Rancang Perjalanan](https://open.cait518.cc/ios-app-guide/ms/tripbee.html) — Trip bersama & senarai barang
@@ -248,10 +256,10 @@ apps: 57
   - Harga: Muat turun percuma, beli sekali untuk buka semua. Tiada langganan.
   - App Store: https://apps.apple.com/my/app/id6797601720?pt=118326163&ct=geo_pick&mt=8
 - [Wordmate: Belajar 44 Bahasa](https://open.cait518.cc/ios-app-guide/ms/wordmate.html) — Hafal kosa kata, widget & jam
-  - Dioptimumkan untuk iPhone Duo: skrin penuh sebenar. Belajar perkataan 44 bahasa pada masa lapang: 14 topik praktikal, ayat contoh dan dengar sebutan.
+  - Dioptimumkan untuk iPhone Duo: skrin penuh sebenar. Belajar perkataan 44 bahasa dengan ayat contoh semula jadi, 14 topik dan 3 tahap.
   - Harga: Muat turun berbayar dengan satu harga pendahuluan tanpa langganan.
   - App Store: https://apps.apple.com/my/app/id6789917808?pt=118326163&ct=geo_pick&mt=8
 - [Zipbox: Buka RAR, ZIP, 7z](https://open.cait518.cc/ios-app-guide/ms/zipbox.html) — Nyahzip fail tanpa iklan
-  - Dioptimumkan untuk iPhone Duo: skrin penuh sebenar. Intai isinya dahulu, pratonton foto dan PDF, kemudian keluarkan fail yang anda perlukan sahaja. Tanpa iklan.
+  - Dioptimumkan untuk iPhone Duo: skrin penuh sebenar. Buka ZIP, RAR, 7z, TAR, ISO dan lagi, termasuk arkib berkata laluan dan berbelah bahagi.
   - Harga: Muat turun berbayar dengan satu harga pendahuluan tanpa langganan.
   - App Store: https://apps.apple.com/my/app/id6806776579?pt=118326163&ct=geo_pick&mt=8

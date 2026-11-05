@@ -1,9 +1,9 @@
 {
  "schema": "lumi.android-live-snapshot/v1",
  "source": "AndroidPlay android_live_scan (Play page HTTP 200 + publish LIVE)",
- "source_generated": "2026-11-05T11:55:08+0800",
- "count": 57,
- "content_sha256": "b28153141a23f575bbabb7192d40e2f4b460672e78c59d2444b2bd9a31c1b126",
+ "source_generated": "2026-11-05T17:57:05+0800",
+ "count": 58,
+ "content_sha256": "f7cd23b6586039235621ee635f29368c74486c82968360b1f68167c7d1500e28",
  "apps": {
   "aibriefpack": {
    "ios_app_id": "6791658210",
@@ -1024,6 +1024,27 @@
     }
    }
   },
+  "tripbeecute": {
+   "ios_app_id": "6826987407",
+   "ios_name": "TripBee Cute：可愛旅行手帳",
+   "android_folder": "60_TripBeeCute",
+   "package": "com.alice51849.TripBeeCute",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.TripBeeCute",
+   "paid": false,
+   "first_seen": "2026-10-31T10:46:26+0800",
+   "launch_wave": "new",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "TripBee Cute: Travel Journal",
+     "short_description": "Vacation countdown, trip planner, itinerary and packing list in a cute booklet"
+    },
+    "zh-TW": {
+     "title": "TripBee Cute：可愛旅行手帳",
+     "short_description": "可愛旅行手帳：出國倒數、行程表、每日行程與行李清單一次收好"
+    }
+   }
+  },
   "tripbeelite": {
    "ios_app_id": "6791299610",
    "ios_name": "TripBee Lite",
@@ -1197,11 +1218,6 @@
   {
    "folder": "58_MeowParty",
    "package": "com.alice51849.FoldParty",
-   "reason": "no_unique_ios_match"
-  },
-  {
-   "folder": "60_TripBeeCute",
-   "package": "com.alice51849.TripBeeCute",
    "reason": "no_unique_ios_match"
   }
  ],

@@ -1,7 +1,7 @@
 {
  "schema": "lumi.social-feed/v1",
  "date": "2026-11-05",
- "generated_at": "2026-11-05T02:04:23Z",
+ "generated_at": "2026-11-05T08:36:12Z",
  "items": {
   "bluesky": [
    {
@@ -141,48 +141,69 @@
    },
    {
     "kind": "clip",
-    "key": "sereno/en",
-    "locale": "en",
-    "app": "sereno",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/y8erow.mp4",
-    "hook": "100% offline",
-    "name": "Sereno: Sleep Sounds",
-    "title": "100% offline | White & Brown Noise, Rain, Fan | Sereno Sleep Sounds",
+    "key": "tripbee/ja",
+    "locale": "ja",
+    "app": "tripbee",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/ry36ln.mp4",
+    "hook": "Appleマップを ワンタップで",
+    "name": "TripBee: 旅行プランナー",
+    "title": "Appleマップを ワンタップで | 旅行プランナー | TripBee 旅行プランナー",
     "tags": [
-     "#SleepSoundMachine",
-     "#Machine",
-     "#Pink",
-     "#Ocean",
-     "#Insomnia",
-     "#SerenoSleepSounds"
+     "#旅行プランナー",
+     "#グループ",
+     "#仲間",
+     "#共有",
+     "#同期",
+     "#TripBee旅行プランナー"
     ],
-    "caption": "100% offline\nDozens of sounds to pick from\nWhite & Brown Noise, Rain, Fan\nSereno: Sleep Sounds\nSearch “Sereno Sleep Sounds” on the App Store\nAlso on Google Play\n\n#SleepSoundMachine #Machine #SerenoSleepSounds",
-    "button": "Get it on the App Store",
-    "variant": "c",
-    "alt": "Sereno: Sleep Sounds — 100% offline — Dozens of sounds to pick from — White & Brown Noise, Rain, Fan",
-    "store": "https://apps.apple.com/us/app/id6788236641?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Sereno&referrer=utm_source%3Dsocial%26utm_campaign%3Dsereno",
+    "caption": "Appleマップを ワンタップで\nオフラインでも 旅の計画ができる\nTripBee: 旅行プランナー\nApp Storeで「TripBee 旅行プランナー」を検索\nAndroidはGoogle Playで\n\n#旅行プランナー #グループ #TripBee旅行プランナー",
+    "button": "App Storeで入手",
+    "variant": "b",
+    "alt": "TripBee: 旅行プランナー — Appleマップを ワンタップで — オフラインでも 旅の計画ができる",
+    "store": "https://apps.apple.com/jp/app/id6787754435?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Tripbee&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripbee",
     "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6788236641?action=write-review"
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6787754435?action=write-review"
     },
     "keywords": [
-     "machine",
-     "pink",
-     "ocean",
-     "insomnia",
-     "baby",
-     "tinnitus"
+     "グループ",
+     "仲間",
+     "共有",
+     "同期",
+     "子連れ",
+     "赤ちゃん"
     ],
-    "keyline": "White & Brown Noise, Rain, Fan",
+    "keyline": "旅行プランナー",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "83756bb24fed75d5",
+     "board": "38bc7066dde7ee61",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "utility/letter/lumiletters/letter_c/ja",
+    "locale": "ja",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/utility-cards/card-20261105.jpg",
+    "caption": "今日のアルファベット：C c\nC — cat\nねこ\nゆびで空中に大文字と小文字を書こう\n\nLumi レター Lite: 3〜7歳。文字の音を聞いて、大文字・小文字をなぞり書き\nApp Store・Google Playで「Lumi レター Lite」を検索\n\n#アルファベット #幼児英語 #子供英語",
+    "title": "今日のアルファベット：C c",
+    "alt": "Lumi Letters Lite — 今日のアルファベット：C c — C — cat — ねこ — アルファベットなぞり書き・フォニックス",
+    "name": "Lumi Letters Lite",
+    "hook": "今日のアルファベット：C c",
+    "tags": [
+     "#アルファベット",
+     "#幼児英語",
+     "#子供英語",
+     "#abcなぞり",
+     "#知育"
+    ],
+    "button": "App Storeで入手",
+    "store": "https://apps.apple.com/jp/app/id6778748533?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiLettersLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiletters"
    },
    {
     "kind": "card",
@@ -2256,48 +2277,69 @@
    },
    {
     "kind": "clip",
-    "key": "sereno/en",
-    "locale": "en",
-    "app": "sereno",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/y8erow.mp4",
-    "hook": "100% offline",
-    "name": "Sereno: Sleep Sounds",
-    "title": "100% offline | White & Brown Noise, Rain, Fan | Sereno Sleep Sounds",
+    "key": "tripbee/ja",
+    "locale": "ja",
+    "app": "tripbee",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/ry36ln.mp4",
+    "hook": "Appleマップを ワンタップで",
+    "name": "TripBee: 旅行プランナー",
+    "title": "Appleマップを ワンタップで | 旅行プランナー | TripBee 旅行プランナー",
     "tags": [
-     "#SleepSoundMachine",
-     "#Machine",
-     "#Pink",
-     "#Ocean",
-     "#Insomnia",
-     "#SerenoSleepSounds"
+     "#旅行プランナー",
+     "#グループ",
+     "#仲間",
+     "#共有",
+     "#同期",
+     "#TripBee旅行プランナー"
     ],
-    "caption": "100% offline\nDozens of sounds to pick from\nWhite & Brown Noise, Rain, Fan\nSereno: Sleep Sounds\nSearch “Sereno Sleep Sounds” on the App Store\nAlso on Google Play\n\n#SleepSoundMachine #Machine #Pink #Ocean #SerenoSleepSounds",
-    "button": "Get it on the App Store",
-    "variant": "c",
-    "alt": "Sereno: Sleep Sounds — 100% offline — Dozens of sounds to pick from — White & Brown Noise, Rain, Fan",
-    "store": "https://apps.apple.com/us/app/id6788236641?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Sereno&referrer=utm_source%3Dsocial%26utm_campaign%3Dsereno",
+    "caption": "Appleマップを ワンタップで\nオフラインでも 旅の計画ができる\nTripBee: 旅行プランナー\nApp Storeで「TripBee 旅行プランナー」を検索\nAndroidはGoogle Playで\n\n#旅行プランナー #グループ #仲間 #共有 #TripBee旅行プランナー",
+    "button": "App Storeで入手",
+    "variant": "b",
+    "alt": "TripBee: 旅行プランナー — Appleマップを ワンタップで — オフラインでも 旅の計画ができる",
+    "store": "https://apps.apple.com/jp/app/id6787754435?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Tripbee&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripbee",
     "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6788236641?action=write-review"
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6787754435?action=write-review"
     },
     "keywords": [
-     "machine",
-     "pink",
-     "ocean",
-     "insomnia",
-     "baby",
-     "tinnitus"
+     "グループ",
+     "仲間",
+     "共有",
+     "同期",
+     "子連れ",
+     "赤ちゃん"
     ],
-    "keyline": "White & Brown Noise, Rain, Fan",
+    "keyline": "旅行プランナー",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "83756bb24fed75d5",
+     "board": "38bc7066dde7ee61",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "utility/letter/lumiletters/letter_c/ja",
+    "locale": "ja",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/utility-cards/card-20261105.jpg",
+    "caption": "今日のアルファベット：C c\nC — cat\nねこ\nゆびで空中に大文字と小文字を書こう\n\nLumi レター Lite: 3〜7歳。文字の音を聞いて、大文字・小文字をなぞり書き\nApp Store・Google Playで「Lumi レター Lite」を検索\n\n#アルファベット #幼児英語 #子供英語 #abcなぞり #知育",
+    "title": "今日のアルファベット：C c",
+    "alt": "Lumi Letters Lite — 今日のアルファベット：C c — C — cat — ねこ — アルファベットなぞり書き・フォニックス",
+    "name": "Lumi Letters Lite",
+    "hook": "今日のアルファベット：C c",
+    "tags": [
+     "#アルファベット",
+     "#幼児英語",
+     "#子供英語",
+     "#abcなぞり",
+     "#知育"
+    ],
+    "button": "App Storeで入手",
+    "store": "https://apps.apple.com/jp/app/id6778748533?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiLettersLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiletters"
    }
   ],
   "youtube": [
@@ -2483,60 +2525,60 @@
    },
    {
     "kind": "clip",
-    "key": "sereno/en",
-    "locale": "en",
-    "app": "sereno",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/y8erow.mp4",
-    "hook": "100% offline",
-    "name": "Sereno: Sleep Sounds",
-    "title": "100% offline | White & Brown Noise, Rain, Fan | Sereno Sleep Sounds",
+    "key": "tripbee/ja",
+    "locale": "ja",
+    "app": "tripbee",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/ry36ln.mp4",
+    "hook": "Appleマップを ワンタップで",
+    "name": "TripBee: 旅行プランナー",
+    "title": "Appleマップを ワンタップで | 旅行プランナー | TripBee 旅行プランナー",
     "tags": [
-     "#SleepSoundMachine",
-     "#Machine",
-     "#Pink",
-     "#Ocean",
-     "#Insomnia",
-     "#SerenoSleepSounds"
+     "#旅行プランナー",
+     "#グループ",
+     "#仲間",
+     "#共有",
+     "#同期",
+     "#TripBee旅行プランナー"
     ],
-    "caption": "100% offline\nDozens of sounds to pick from\nWhite & Brown Noise, Rain, Fan\nSereno: Sleep Sounds\nSearch “Sereno Sleep Sounds” on the App Store\nAlso on Google Play\n\n#SleepSoundMachine #Machine #Pink #Ocean #SerenoSleepSounds",
-    "button": "Get it on the App Store",
-    "variant": "c",
-    "alt": "Sereno: Sleep Sounds — 100% offline — Dozens of sounds to pick from — White & Brown Noise, Rain, Fan",
-    "store": "https://apps.apple.com/us/app/id6788236641?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Sereno&referrer=utm_source%3Dsocial%26utm_campaign%3Dsereno",
+    "caption": "Appleマップを ワンタップで\nオフラインでも 旅の計画ができる\nTripBee: 旅行プランナー\nApp Storeで「TripBee 旅行プランナー」を検索\nAndroidはGoogle Playで\n\n#旅行プランナー #グループ #仲間 #共有 #TripBee旅行プランナー",
+    "button": "App Storeで入手",
+    "variant": "b",
+    "alt": "TripBee: 旅行プランナー — Appleマップを ワンタップで — オフラインでも 旅の計画ができる",
+    "store": "https://apps.apple.com/jp/app/id6787754435?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Tripbee&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripbee",
     "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6788236641?action=write-review"
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6787754435?action=write-review"
     },
     "keywords": [
-     "machine",
-     "pink",
-     "ocean",
-     "insomnia",
-     "baby",
-     "tinnitus"
+     "グループ",
+     "仲間",
+     "共有",
+     "同期",
+     "子連れ",
+     "赤ちゃん"
     ],
-    "keyline": "White & Brown Noise, Rain, Fan",
+    "keyline": "旅行プランナー",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "83756bb24fed75d5",
+     "board": "38bc7066dde7ee61",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "youtube": {
-     "title": "100% offline | Sereno Sleep Sounds #Shorts",
-     "description": "100% offline\nDozens of sounds to pick from\nWhite & Brown Noise, Rain, Fan\n\nSereno: Sleep Sounds\nApp Store: https://apps.apple.com/us/app/id6788236641?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Sereno&referrer=utm_source%3Dsocial%26utm_campaign%3Dsereno\nAlready using this app? Rate or review it on the App Store\nhttps://apps.apple.com/app/id6788236641?action=write-review\n\nmachine · pink · ocean · insomnia · baby · tinnitus\n\n#Shorts #SleepSoundMachine #SerenoSleepSounds",
+     "title": "Appleマップを ワンタップで | TripBee 旅行プランナー #Shorts",
+     "description": "Appleマップを ワンタップで\nオフラインでも 旅の計画ができる\n旅行プランナー\n\nTripBee: 旅行プランナー\nApp Store: https://apps.apple.com/jp/app/id6787754435?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Tripbee&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripbee\nこのアプリをお使いですか？App Store で評価・レビューできます\nhttps://apps.apple.com/app/id6787754435?action=write-review\n\nグループ · 仲間 · 共有 · 同期 · 子連れ · 赤ちゃん\n\n#Shorts #旅行プランナー #TripBee旅行プランナー",
      "tags": [
-      "machine",
-      "pink",
-      "ocean",
-      "insomnia",
-      "baby",
-      "tinnitus",
-      "SleepSoundMachine",
-      "SerenoSleepSounds",
-      "Sereno Sleep Sounds"
+      "グループ",
+      "仲間",
+      "共有",
+      "同期",
+      "子連れ",
+      "赤ちゃん",
+      "旅行プランナー",
+      "TripBee旅行プランナー",
+      "TripBee 旅行プランナー"
      ]
     },
     "slot": 15
@@ -2692,52 +2734,77 @@
    },
    {
     "kind": "clip",
-    "key": "sereno/en",
-    "locale": "en",
-    "app": "sereno",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/y8erow.mp4",
-    "hook": "100% offline",
-    "name": "Sereno: Sleep Sounds",
-    "title": "100% offline | White & Brown Noise, Rain, Fan | Sereno Sleep Sounds",
+    "key": "tripbee/ja",
+    "locale": "ja",
+    "app": "tripbee",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/ry36ln.mp4",
+    "hook": "Appleマップを ワンタップで",
+    "name": "TripBee: 旅行プランナー",
+    "title": "Appleマップを ワンタップで | 旅行プランナー | TripBee 旅行プランナー",
     "tags": [
-     "#SleepSoundMachine",
-     "#Machine",
-     "#Pink",
-     "#Ocean",
-     "#Insomnia",
-     "#SerenoSleepSounds"
+     "#旅行プランナー",
+     "#グループ",
+     "#仲間",
+     "#共有",
+     "#同期",
+     "#TripBee旅行プランナー"
     ],
-    "caption": "100% offline\nDozens of sounds to pick from\nWhite & Brown Noise, Rain, Fan\nSereno: Sleep Sounds\nSearch “Sereno Sleep Sounds” on the App Store\nAlso on Google Play\n\n#SleepSoundMachine #Machine #Pink #Ocean #SerenoSleepSounds",
-    "button": "Get it on the App Store",
-    "variant": "c",
-    "alt": "Sereno: Sleep Sounds — 100% offline — Dozens of sounds to pick from — White & Brown Noise, Rain, Fan",
-    "store": "https://apps.apple.com/us/app/id6788236641?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Sereno&referrer=utm_source%3Dsocial%26utm_campaign%3Dsereno",
+    "caption": "Appleマップを ワンタップで\nオフラインでも 旅の計画ができる\nTripBee: 旅行プランナー\nApp Storeで「TripBee 旅行プランナー」を検索\nAndroidはGoogle Playで\n\n#旅行プランナー #グループ #仲間 #共有 #TripBee旅行プランナー",
+    "button": "App Storeで入手",
+    "variant": "b",
+    "alt": "TripBee: 旅行プランナー — Appleマップを ワンタップで — オフラインでも 旅の計画ができる",
+    "store": "https://apps.apple.com/jp/app/id6787754435?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Tripbee&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripbee",
     "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6788236641?action=write-review"
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6787754435?action=write-review"
     },
     "keywords": [
-     "machine",
-     "pink",
-     "ocean",
-     "insomnia",
-     "baby",
-     "tinnitus"
+     "グループ",
+     "仲間",
+     "共有",
+     "同期",
+     "子連れ",
+     "赤ちゃん"
     ],
-    "keyline": "White & Brown Noise, Rain, Fan",
+    "keyline": "旅行プランナー",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "83756bb24fed75d5",
+     "board": "38bc7066dde7ee61",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "100% offline\nDozens of sounds to pick from\nWhite & Brown Noise, Rain, Fan\nSereno: Sleep Sounds\nSearch “Sereno Sleep Sounds” on the App Store\nAlso on Google Play\n\n#SleepSoundMachine #Machine #Pink #Ocean #SerenoSleepSounds\n\nGet it on the App Store: https://apps.apple.com/us/app/id6788236641?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Sereno&referrer=utm_source%3Dsocial%26utm_campaign%3Dsereno",
-     "link": "https://apps.apple.com/us/app/id6788236641?pt=118326163&ct=social&mt=8"
+     "description": "Appleマップを ワンタップで\nオフラインでも 旅の計画ができる\nTripBee: 旅行プランナー\nApp Storeで「TripBee 旅行プランナー」を検索\nAndroidはGoogle Playで\n\n#旅行プランナー #グループ #仲間 #共有 #TripBee旅行プランナー\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6787754435?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Tripbee&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripbee",
+     "link": "https://apps.apple.com/jp/app/id6787754435?pt=118326163&ct=social&mt=8"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "utility/letter/lumiletters/letter_c/ja",
+    "locale": "ja",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/utility-cards/card-20261105.jpg",
+    "caption": "今日のアルファベット：C c\nC — cat\nねこ\nゆびで空中に大文字と小文字を書こう\n\nLumi レター Lite: 3〜7歳。文字の音を聞いて、大文字・小文字をなぞり書き\nApp Store・Google Playで「Lumi レター Lite」を検索\n\n#アルファベット #幼児英語 #子供英語 #abcなぞり #知育",
+    "title": "今日のアルファベット：C c",
+    "alt": "Lumi Letters Lite — 今日のアルファベット：C c — C — cat — ねこ — アルファベットなぞり書き・フォニックス",
+    "name": "Lumi Letters Lite",
+    "hook": "今日のアルファベット：C c",
+    "tags": [
+     "#アルファベット",
+     "#幼児英語",
+     "#子供英語",
+     "#abcなぞり",
+     "#知育"
+    ],
+    "button": "App Storeで入手",
+    "store": "https://apps.apple.com/jp/app/id6778748533?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiLettersLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiletters",
+    "pinterest": {
+     "description": "今日のアルファベット：C c\nC — cat\nねこ\nゆびで空中に大文字と小文字を書こう\n\nLumi レター Lite: 3〜7歳。文字の音を聞いて、大文字・小文字をなぞり書き\nApp Store・Google Playで「Lumi レター Lite」を検索\n\n#アルファベット #幼児英語 #子供英語 #abcなぞり #知育\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6778748533?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiLettersLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiletters",
+     "link": "https://apps.apple.com/jp/app/id6778748533?pt=118326163&ct=social&mt=8"
+    }
    },
    {
     "kind": "card",
@@ -4678,6 +4745,34 @@
     "pinterest": {
      "description": "When will battery health hit 80%?\n\nA health score, and what shapes it\n✓ Max capacity trend and cycle count\n✓ A clear report for service or resale\n\nSearch “BattAI Battery Health” on the App Store\n\n#BatteryHealthScore #MaximumCapacity #Cycles #ChargeCare #ChargeRange\n\nGet it on the App Store: https://apps.apple.com/us/app/id6802423998?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI&referrer=utm_source%3Dsocial%26utm_campaign%3Dbattai",
      "link": "https://apps.apple.com/us/app/id6802423998?pt=118326163&ct=social&mt=8"
+    }
+   },
+   {
+    "kind": "card",
+    "key": "carousel/battai-ja-pain-20261022",
+    "locale": "ja",
+    "app": "battai",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/battai-ja-pain-20261022/01.jpg",
+    "images": [
+     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/battai-ja-pain-20261022/01.jpg",
+     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/battai-ja-pain-20261022/02.jpg",
+     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/battai-ja-pain-20261022/03.jpg",
+     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/battai-ja-pain-20261022/04.jpg",
+     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/battai-ja-pain-20261022/05.jpg"
+    ],
+    "caption": "バッテリー最大容量 いつ80%を切る？\n\n状態スコアと その要因まで\n✓ 最大容量の推移と サイクル数\n✓ 修理や売却に使える 電池レポート\n\nApp Store で「BattAI」を検索",
+    "title": "バッテリー最大容量 いつ80%を切る？",
+    "alt": "バッテリー最大容量 いつ80%を切る？ | 状態スコアと その要因まで | 最大容量の推移と サイクル数 | 修理や売却に使える 電池レポート | BattAI: バッテリー状態スコア / ルール、情報源、限界を明確に / App Store で「BattAI」を検索",
+    "name": "BattAI: バッテリー状態スコア",
+    "hook": "バッテリー最大容量 いつ80%を切る？",
+    "tags": [],
+    "button": "App Storeで入手",
+    "store": "https://apps.apple.com/jp/app/id6802423998?pt=118326163&ct=social&mt=8",
+    "format": "pain",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.BattAI&referrer=utm_source%3Dsocial%26utm_campaign%3Dbattai",
+    "pinterest": {
+     "description": "バッテリー最大容量 いつ80%を切る？\n\n状態スコアと その要因まで\n✓ 最大容量の推移と サイクル数\n✓ 修理や売却に使える 電池レポート\n\nApp Store で「BattAI」を検索\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6802423998?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI&referrer=utm_source%3Dsocial%26utm_campaign%3Dbattai",
+     "link": "https://apps.apple.com/jp/app/id6802423998?pt=118326163&ct=social&mt=8"
     }
    },
    {
@@ -7689,49 +7784,49 @@
    },
    {
     "kind": "clip",
-    "key": "sereno/en",
-    "locale": "en",
-    "app": "sereno",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/y8erow.mp4",
-    "hook": "100% offline",
-    "name": "Sereno: Sleep Sounds",
-    "title": "100% offline | White & Brown Noise, Rain, Fan | Sereno Sleep Sounds",
+    "key": "tripbee/ja",
+    "locale": "ja",
+    "app": "tripbee",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/ry36ln.mp4",
+    "hook": "Appleマップを ワンタップで",
+    "name": "TripBee: 旅行プランナー",
+    "title": "Appleマップを ワンタップで | 旅行プランナー | TripBee 旅行プランナー",
     "tags": [
-     "#SleepSoundMachine",
-     "#Machine",
-     "#Pink",
-     "#Ocean",
-     "#Insomnia",
-     "#SerenoSleepSounds"
+     "#旅行プランナー",
+     "#グループ",
+     "#仲間",
+     "#共有",
+     "#同期",
+     "#TripBee旅行プランナー"
     ],
-    "caption": "100% offline\nDozens of sounds to pick from\nWhite & Brown Noise, Rain, Fan\nSereno: Sleep Sounds\nSearch “Sereno Sleep Sounds” on the App Store\nAlso on Google Play\n\n#SleepSoundMachine #Machine #Pink #Ocean #SerenoSleepSounds",
-    "button": "Get it on the App Store",
-    "variant": "c",
-    "alt": "Sereno: Sleep Sounds — 100% offline — Dozens of sounds to pick from — White & Brown Noise, Rain, Fan",
-    "store": "https://apps.apple.com/us/app/id6788236641?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Sereno&referrer=utm_source%3Dsocial%26utm_campaign%3Dsereno",
+    "caption": "Appleマップを ワンタップで\nオフラインでも 旅の計画ができる\nTripBee: 旅行プランナー\nApp Storeで「TripBee 旅行プランナー」を検索\nAndroidはGoogle Playで\n\n#旅行プランナー #グループ #仲間 #共有 #TripBee旅行プランナー",
+    "button": "App Storeで入手",
+    "variant": "b",
+    "alt": "TripBee: 旅行プランナー — Appleマップを ワンタップで — オフラインでも 旅の計画ができる",
+    "store": "https://apps.apple.com/jp/app/id6787754435?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Tripbee&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripbee",
     "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6788236641?action=write-review"
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6787754435?action=write-review"
     },
     "keywords": [
-     "machine",
-     "pink",
-     "ocean",
-     "insomnia",
-     "baby",
-     "tinnitus"
+     "グループ",
+     "仲間",
+     "共有",
+     "同期",
+     "子連れ",
+     "赤ちゃん"
     ],
-    "keyline": "White & Brown Noise, Rain, Fan",
+    "keyline": "旅行プランナー",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "83756bb24fed75d5",
+     "board": "38bc7066dde7ee61",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "100% offline\nDozens of sounds to pick from\nWhite & Brown Noise, Rain, Fan\nSereno: Sleep Sounds\nSearch “Sereno Sleep Sounds” on the App Store\nAlso on Google Play\n\n#SleepSoundMachine #Machine #Pink #Ocean #SerenoSleepSounds\n\nGet it on the App Store: https://apps.apple.com/us/app/id6788236641?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Sereno&referrer=utm_source%3Dsocial%26utm_campaign%3Dsereno"
+     "caption": "Appleマップを ワンタップで\nオフラインでも 旅の計画ができる\nTripBee: 旅行プランナー\nApp Storeで「TripBee 旅行プランナー」を検索\nAndroidはGoogle Playで\n\n#旅行プランナー #グループ #仲間 #共有 #TripBee旅行プランナー\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6787754435?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Tripbee&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripbee"
     },
     "slot": 15
    }
@@ -77391,21 +77486,22 @@
     "en": {
      "hour": 8,
      "avg_views": 12.7,
-     "posts": 16,
+     "posts": 17,
      "hours": {
       "1": 9.3,
-      "2": 4.0,
+      "2": 5.5,
       "8": 12.7,
       "13": 11.0,
+      "15": 4.0,
       "16": 8.0
      }
     },
     "zh-Hant": {
      "hour": 3,
-     "avg_views": 282.5,
+     "avg_views": 283.0,
      "posts": 14,
      "hours": {
-      "3": 282.5,
+      "3": 283.0,
       "6": 30.5,
       "13": 82.5,
       "16": 10.0,
@@ -77414,6 +77510,6 @@
     }
    }
   },
-  "updated_at": "2026-11-04T06:01:08Z"
+  "updated_at": "2026-11-05T06:28:39Z"
  }
 }

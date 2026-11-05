@@ -423,9 +423,21 @@ SCHEMA_APP_CATEGORY = {
 }
 
 
+# Registry entries whose own category is the catch-all "other": the value is
+# the App Store primary genre read off the live listing instead, so no
+# category is invented. Meow Party (foldparty) is primary genre "Games"
+# (iTunes lookup, us storefront, 2026-11-06).
+SCHEMA_APP_CATEGORY_BY_STORE_GENRE = {
+    "foldparty": "GameApplication",
+}
+
+
 def _schema_category(key):
     from videogen.registry import APPS as _APPS
-    return SCHEMA_APP_CATEGORY.get(str(_APPS.get(key, {}).get("category") or ""), "")
+    category = str(_APPS.get(key, {}).get("category") or "")
+    if category == "other" and key in SCHEMA_APP_CATEGORY_BY_STORE_GENRE:
+        return SCHEMA_APP_CATEGORY_BY_STORE_GENRE[key]
+    return SCHEMA_APP_CATEGORY.get(category, "")
 
 
 def _apps_in_base_locale(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:

@@ -22368,6 +22368,11 @@ class GeneratorTests(unittest.TestCase):
         # registry this copy runs against has it, like the entries above.
         if "tripbeecute" in APPS:
             free_with_unlock.add("tripbeecute")
+        # Meow Party (foldparty): USD 5.99 paid download; ASC shows 0 in-app
+        # purchases and 0 subscription groups (read-only check 2026-11-06).
+        # Expected only once the registry this copy runs against has it.
+        if "foldparty" in APPS:
+            paid_upfront.add("foldparty")
         self.assertEqual(paid_upfront | free_with_unlock, set(APPS))
         for key in paid_upfront:
             self.assertEqual("paid_upfront", APPS[key]["purchase_model"])

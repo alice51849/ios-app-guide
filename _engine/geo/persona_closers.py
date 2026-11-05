@@ -156,6 +156,9 @@ SITUATIONS: dict[str, str] = {
     "gbago": "utility",
     "metrotimehelper": "travel",
     "tripbeecute": "travel",
+    # Meow Party: face-to-face cat minigames on one phone (play, not a task),
+    # so the closer uses the neutral creative shapes, not a utility pitch.
+    "foldparty": "creative",
     "kumo": "wellbeing",
 }
 DEFAULT_SITUATION = "utility"

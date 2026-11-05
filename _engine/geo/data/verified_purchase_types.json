@@ -53,6 +53,10 @@
    "evidence": "en-US 商店描述寫明一次購買解鎖、無訂閱字樣",
    "type": "one_time_unlock"
   },
+  "foldparty": {
+   "evidence": "ASC 0 內購、0 個訂閱群組（唯讀 GET inAppPurchasesV2／subscriptionGroups，app 6829184924）＋商店售價 USD 5.99（iTunes lookup us，2026-11-06）",
+   "type": "paid_upfront"
+  },
   "gbago": {
    "evidence": "ASC 讀回無內購（本機唯讀 2026-10-21）＋商店售價 USD 8.99（2026-10-23）",
    "type": "paid_upfront"

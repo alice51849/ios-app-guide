@@ -613,6 +613,28 @@ CURATED_FALLBACK = {
             ["2人遊戲合輯", 0],
         ],
     },
+    "kumo": {
+        "key": "kumo",
+        "gap_queries": [
+            "glp-1 tracker app to log weight and shot day on iphone",
+            "shot day tracker with injection site rotation",
+            "weekly injection reminder app on my own schedule",
+            "simple weight tracker app with a 7 day average",
+            "weight log that counts check in days not pounds",
+            "weight tracker with apple watch and no account",
+        ],
+        # Pending first release (59_Kumo, ASC 6830824515); listed ahead so the
+        # roster check passes the day it goes live. Competitor titles read off
+        # the live US App Store search results for "glp-1 tracker" and
+        # "weight tracker" on 2026-11-06; rank 0 means the position was not
+        # measured, exactly as for the other curated fallbacks.
+        "top_competitors": [
+            ["shotsy glp-1 tracker", 0],
+            ["meagain: glp-1 tracker app", 0],
+            ["happy scale", 0],
+            ["weigh in: weight tracker", 0],
+        ],
+    },
     "zipbox": {
         "key": "zipbox",
         "gap_queries": [

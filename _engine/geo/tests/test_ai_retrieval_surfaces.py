@@ -41,6 +41,14 @@ ALLOWED_SENTENCE_NUMBERS = {"100", "44", "990", "3", "8"}
 # ("best resume builder app ... 2026"). A calendar year says nothing about how
 # the app is selling, so it is allowed; every other number still is not.
 CALENDAR_YEAR_RE = re.compile(r"^20\d\d$")
+# A game's player count inside the buyer's own search phrase ("2 player games
+# for two people on one iphone", Meow Party's persona query) describes how the
+# game is played, not how the app is selling, so "<digit> player" is removed
+# before the scan; any other number in the sentence is still checked.
+PLAYER_COUNT_RE = re.compile(r"\b[1-4][ -]players?\b", re.I)
+# "GLP-1" is the name of a medication class inside a buyer's search phrase
+# (Kumo's persona query "glp-1 tracker app ..."), not a business number.
+DRUG_CLASS_NAME_RE = re.compile(r"\bglp-1\b", re.I)
 
 # Words that would turn a first-party table into a performance claim.
 FORBIDDEN_WORDS = (
@@ -193,7 +201,8 @@ class DecisionMatrixTests(unittest.TestCase):
                 for word in FORBIDDEN_WORDS:
                     with self.subTest(app=row["app_key"], word=word):
                         self.assertNotIn(word, lowered)
-                for number in re.findall(r"\b[0-9][0-9,.]*\b", text):
+                scanned = DRUG_CLASS_NAME_RE.sub(" ", PLAYER_COUNT_RE.sub(" ", text))
+                for number in re.findall(r"\b[0-9][0-9,.]*\b", scanned):
                     if CALENDAR_YEAR_RE.fullmatch(number):
                         continue
                     with self.subTest(app=row["app_key"], number=number):

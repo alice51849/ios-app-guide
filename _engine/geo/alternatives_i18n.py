@@ -164,6 +164,44 @@ def _expected_selected_pairs(
     return selected
 
 
+def repin_authority(path: Path = DEFAULT_MANIFEST) -> bool:
+    """Re-pin ``authority`` to the current live roster; return True when it changed.
+
+    New-app catch-up adds an App to live_app_manifest.json; until the three
+    authority fields follow, load_manifest() raises "Alternatives live authority
+    digest differs" and the Guide Deploy preflight holds every paired release
+    (2026-11-05, Meow Party).  Only sha256, roster_digest and roster_count move:
+    routes, evidence and selection stay as reviewed, and load_manifest() still
+    validates everything else afterwards.
+    """
+    path = Path(path)
+    document = _read_json(path)
+    authority_meta = document.get("authority")
+    if not isinstance(authority_meta, dict):
+        raise ValueError("Alternatives manifest sections are incomplete")
+    authority_path = _resolve_manifest_source(
+        path, authority_meta.get("relative_path"), "authority.relative_path"
+    )
+    authority = _read_json(authority_path)
+    apps = authority.get("apps")
+    if not isinstance(apps, dict):
+        raise ValueError("Alternatives live authority has no apps")
+    pinned = {
+        "sha256": _file_digest(authority_path),
+        "roster_digest": authority.get("roster_digest"),
+        "roster_count": len(apps),
+    }
+    if all(authority_meta.get(key) == value for key, value in pinned.items()):
+        return False
+    authority_meta.update(pinned)
+    temporary = path.with_name(f".{path.name}.tmp")
+    temporary.write_text(
+        json.dumps(document, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+    )
+    os.replace(temporary, path)
+    return True
+
+
 def load_manifest(path: Path = DEFAULT_MANIFEST) -> dict[str, Any]:
     document = _read_json(path)
     if document.get("schema") != MANIFEST_SCHEMA or document.get("version") != 1:

@@ -523,5 +523,48 @@ class AlternativesExact50Tests(unittest.TestCase):
         self.assertNotRegex(document, r"[$€£¥₹]\s*\d|\d+[.,]\d{2}\s*[$€£¥₹]")
 
 
+class AlternativesAuthorityRepinTests(unittest.TestCase):
+    """New-app catch-up adds an App to the roster; the authority pin must follow."""
+
+    def test_repin_after_a_new_roster_app_lets_the_manifest_load_again(self) -> None:
+        with tempfile.TemporaryDirectory() as scratch:
+            root = Path(scratch)
+            manifest_path = root / alternatives.DEFAULT_MANIFEST.name
+            manifest_path.write_bytes(alternatives.DEFAULT_MANIFEST.read_bytes())
+            (root / "reports").mkdir()
+            (root / "reports" / "aeo_sov.json").write_bytes(
+                (GEO / "reports" / "aeo_sov.json").read_bytes()
+            )
+            (root / "live_app_manifest.json").write_bytes(
+                (GEO / "live_app_manifest.json").read_bytes()
+            )
+            roster = json.loads((GEO / "live_app_manifest.json").read_text(encoding="utf-8"))
+            self.assertFalse(alternatives.repin_authority(manifest_path))
+            alternatives.load_manifest(manifest_path)
+            reviewed = {key: value for key, value in json.loads(
+                manifest_path.read_text(encoding="utf-8")).items() if key != "authority"}
+
+            roster["apps"]["zzzcatchupprobe"] = {"app_id": "1", "name": "Catch-up Probe"}
+            import live_app_manifest
+
+            roster["roster_digest"] = live_app_manifest.roster_digest(roster["apps"])
+            (root / "live_app_manifest.json").write_text(
+                json.dumps(roster, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+            )
+            with self.assertRaisesRegex(ValueError, "live authority digest differs"):
+                alternatives.load_manifest(manifest_path)
+
+            self.assertTrue(alternatives.repin_authority(manifest_path))
+            alternatives.load_manifest(manifest_path)
+            repinned = json.loads(manifest_path.read_text(encoding="utf-8"))
+            self.assertEqual(len(roster["apps"]), repinned["authority"]["roster_count"])
+            self.assertEqual(roster["roster_digest"], repinned["authority"]["roster_digest"])
+            self.assertEqual(
+                reviewed,
+                {key: value for key, value in repinned.items() if key != "authority"},
+            )
+            self.assertFalse(alternatives.repin_authority(manifest_path))
+
+
 if __name__ == "__main__":
     unittest.main()

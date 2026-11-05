@@ -22362,6 +22362,12 @@ class GeneratorTests(unittest.TestCase):
         # copy runs against has it, like the entry above.
         if "metrotimehelper" in APPS:
             free_with_unlock.add("metrotimehelper")
+        # TripBee Cute: free download (store price 0) whose en-US description
+        # unlocks unlimited booklets and more "with a one-time in-app purchase
+        # (Cute Pass)", with no subscription wording. Expected only once the
+        # registry this copy runs against has it, like the entries above.
+        if "tripbeecute" in APPS:
+            free_with_unlock.add("tripbeecute")
         self.assertEqual(paid_upfront | free_with_unlock, set(APPS))
         for key in paid_upfront:
             self.assertEqual("paid_upfront", APPS[key]["purchase_model"])

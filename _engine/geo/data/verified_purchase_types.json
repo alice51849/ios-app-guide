@@ -197,6 +197,10 @@
    "evidence": "ASC 0 內購＋商店售價 USD 5.99（2026-09-06）",
    "type": "paid_upfront"
   },
+  "tripbeecute": {
+   "evidence": "商店售價 0＋en-US 商店描述原句「Some features are unlocked with a one-time in-app purchase (Cute Pass): unlimited booklets, 51 more covers, smart packing lists, iCloud sync and backup, sharing trip files with photos and tickets, and planning with friends.」（data/tripbeecute_full.json，2026-11-05；未取 ASC 內購資料）",
+   "type": "one_time_unlock"
+  },
   "tripbeelite": {
    "evidence": "ASC 核准 NON_CONSUMABLE（com.alice51849.TripbeeLite.premium）、0 個訂閱群組（2026-09-06）",
    "type": "one_time_unlock"

@@ -571,6 +571,27 @@ CURATED_FALLBACK = {
             ["explore taipei", 0],
         ],
     },
+    "tripbeecute": {
+        "key": "tripbeecute",
+        "gap_queries": [
+            "cute trip planner that keeps flights day plans and packing list on one page",
+            "illustrated travel itinerary booklet app for iphone",
+            "vacation countdown app with apple watch and widgets",
+            "plan a trip together with friends in one shared itinerary",
+            "share a trip itinerary as a web page friends can open offline",
+            "color coded day by day travel planner",
+        ],
+        # Competitor titles read off the live US App Store search results for
+        # "cute travel planner" and "trip planner itinerary" on 2026-11-05;
+        # rank 0 means the position was not measured, exactly as for the
+        # other curated fallbacks.
+        "top_competitors": [
+            ["tripsy: travel planner", 0],
+            ["wanderjoy - itinerary planner", 0],
+            ["polarsteps", 0],
+            ["tripit: travel planner", 0],
+        ],
+    },
     "zipbox": {
         "key": "zipbox",
         "gap_queries": [

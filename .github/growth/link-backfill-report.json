@@ -1,11 +1,11 @@
 {
- "generated": "2026-11-05T06:56:08Z",
+ "generated": "2026-11-05T17:30:14Z",
  "mode": "apply",
  "counts": {
-  "ok_reply": 45,
+  "ok_reply": 46,
   "unknown_app": 47,
-  "ok_backfilled_earlier": 37,
-  "ok_store_only": 693,
+  "ok_backfilled_earlier": 39,
+  "ok_store_only": 691,
   "backfilled": 2,
   "ok_bio_link": 68,
   "ok_caption": 4,
@@ -13,6 +13,18 @@
   "missing": 3
  },
  "rows": [
+  {
+   "channel": "threads",
+   "id": "18131934139788401",
+   "permalink": "https://www.threads.com/@hourstag.app/post/DfXG_IcFXEh",
+   "date": "2026-11-05",
+   "app": "lumibopomofo",
+   "status": "ok_reply",
+   "text": "小一注音課進到拼音以後，很多孩子卡在同一件事：ㄅ、ㄚ都認得，合起來卻唸不出ㄅㄚ。 認符號和拼讀是兩種能力。拼讀要先聽得出聲母、介音、韻母，再把它們接成一個音，靠的是每天聽、每天拼一點點，不是一次練很久。 Lumi注音星球 的「拼音小火車」就是練這一步：把聲母、介音、韻母串成一個完",
+   "why": "brand",
+   "ios_id": "6773017109",
+   "locale": "zh-Hant"
+  },
   {
    "channel": "threads",
    "id": "18040381412896622",
@@ -875,16 +887,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DddljnDEtPY",
    "date": "2026-09-19",
    "app": "notesstudio100",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "Заметки от руки и PDF. Соберите рукописные страницы, набранный текст, разметку PDF и инструменты для учёбы в понятном рабочем пространстве. ",
    "why": "url+brand",
    "ios_id": "6798813048",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "18109158923348185",
-   "at": "2026-11-05T06:53:30Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",
@@ -892,11 +899,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DddliqAkqLr",
    "date": "2026-09-19",
    "app": "maskmyfile",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "You sent the bank statement. The account number was still on it. Our app, not a ranking: Review private details and export a cleaned copy. R",
    "why": "url+brand",
    "ios_id": "6792850916",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "18249565339313789",
+   "at": "2026-11-05T17:27:18Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -904,11 +916,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DddKgLnAQyv",
    "date": "2026-09-19",
    "app": "lumiletters",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "難得聽到孩子說「再玩五分鐘」,而那是在學東西。 開發者分享，非獨立評比。家長可先陪孩子聽音、描寫 A。免費只開放 A，其餘字母由家長以一次性內購永久解鎖。 Lumi Letters 順手附個連結: https://apps.apple.com/tw/app/id677874853",
    "why": "url",
    "ios_id": "6778748533",
-   "locale": "zh-Hant"
+   "locale": "zh-Hant",
+   "own_replies": [],
+   "comment_id": "18130418884851132",
+   "at": "2026-11-05T17:27:18Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -928,16 +945,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DddlkrgEvVu",
    "date": "2026-09-19",
    "app": "onepageppt",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "沒有人會讀完整份報告，大家只看那一頁簡報。 開發者分享，非獨立評比。OnePage PPT 把筆記或 PDF 整理成一張 16:9 投影片。核對內容後可免費匯出 PNG；要交付能編輯的 PowerPoint，或匯出 PDF，需一次買斷解鎖。適合一頁摘要，不是整份多頁簡報。 One",
    "why": "url+brand",
    "ios_id": "6798814385",
-   "locale": "zh-Hant",
-   "own_replies": [],
-   "comment_id": "18247166944312622",
-   "at": "2026-11-05T06:53:30Z",
-   "verified": true,
-   "via": "list"
+   "locale": "zh-Hant"
   },
   {
    "channel": "threads",

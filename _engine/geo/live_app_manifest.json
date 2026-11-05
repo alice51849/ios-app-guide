@@ -1,8 +1,8 @@
 {
   "schema": "lumi.live-app-roster/v1",
   "version": 1,
-  "revision": 16,
-  "roster_digest": "27ea537bc429ab65e931348ba7a4f3c9403d9282ab1de226bff50f395bf26b43",
+  "revision": 17,
+  "roster_digest": "3024900a207bf5c6e7b0dcbb8099cc4bac2ec8ca00c1349f4a1fd4b5c57fcf26",
   "apps": {
     "aibriefpack": {
       "app_id": "6791658210",
@@ -55,6 +55,10 @@
     "easyam": {
       "app_id": "6821790092",
       "name": "EasyAM"
+    },
+    "foldparty": {
+      "app_id": "6829184924",
+      "name": "Meow Party"
     },
     "gbago": {
       "app_id": "6804564400",

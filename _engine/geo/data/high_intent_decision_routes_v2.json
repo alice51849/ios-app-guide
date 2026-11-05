@@ -3,9 +3,9 @@
   "dataset_name": "Lumi Studio High-Intent Decision Routes",
   "inventory_contract": {
     "relative_path": "data/verified-ios-app-finder-catalog.json",
-    "expected_app_count": 57,
-    "app_keys_sha256": "7f924dfde27d2837584c4acb584b8bcb26751a9b6e00dd332a70c475ef06eb64",
-    "copy_sha256": "b04ddaa7e98009e49c52be2ccc404508fa97157902769e03e520dd0c67c65718",
+    "expected_app_count": 58,
+    "app_keys_sha256": "a8541000e83b233f472e34efd57d9a7f981502cf6d2d833643eb40dadd7ae615",
+    "copy_sha256": "fcfeef27a5768ce328047b6917092dab7b5496d1e1628fe862f7b4754987e60c",
     "official_locales_sha256": "e26dabf9370286ad8fd12034270cfcade92b2db4f4a0eecc19324203ce84d5bd"
   },
   "publisher": {
@@ -2562,6 +2562,65 @@
           "verify_before_install": [
             "先確認你常搭的路線有涵蓋；不含機場捷運與輕軌。",
             "購買前先看 App Store 頁面上 24 小時試用與一次解鎖包含哪些內容。"
+          ],
+          "evidence_refs": [
+            "summary.zh-Hant",
+            "fact.purchase_model",
+            "fact.one_time_option"
+          ]
+        }
+      }
+    },
+    {
+      "app_key": "tripbeecute",
+      "route_slug": "cute-trip-planner-that-keeps-the-whole-trip-on-one-page",
+      "intent_type": "problem_aware",
+      "primary": true,
+      "keyword_refs": [
+        0,
+        1,
+        2
+      ],
+      "locales": {
+        "en-US": {
+          "language": "en",
+          "market": "United States",
+          "culture_route": "Many US travelers planning a weekend getaway, a family vacation, a road trip or a honeymoon end up with flights in email, plans in notes and screenshots in the camera roll, and want one place that also feels fun to open while the trip gets closer.",
+          "query": "Is there a cute trip planner that keeps flights, day plans and the packing list on one page?",
+          "buyer_problem": "Trip details scattered across emails, screenshots and notes make it hard to see the whole journey at once, and a plain spreadsheet does little to build excitement. The decision is whether an illustrated booklet that puts the countdown, flights, each day's plan and the packing list on a single page fits the way you plan.",
+          "decision_rule": "Favor an illustrated trip booklet when you plan one or two leisure trips at a time, want each day color-coded, and like a countdown on your iPhone and Apple Watch. The download is free and keeps one booklet at a time; a one-time Cute Pass purchase adds unlimited booklets, more covers, iCloud sync and planning with friends, with no subscription.",
+          "workflow_checks": [
+            "Can you see the countdown, flights, every day's plan and the packing list without switching apps?",
+            "Can each day get its own color, with a filter to show one day or the whole trip?",
+            "Can friends open a shared web booklet in a browser, or edit the same booklet with you through iCloud?"
+          ],
+          "alternative_lens": "If you need bookings, fare alerts or business expense records, a full travel platform may fit better. If you want a shared spreadsheet anyone can edit without installing an app, a document tool may be simpler; editing the same booklet together requires friends to have the app too.",
+          "verify_before_install": [
+            "Check what the free version includes in your storefront: one booklet at a time and 6 covers.",
+            "Read the current listing for what the one-time Cute Pass purchase unlocks, such as iCloud sync and planning with friends."
+          ],
+          "evidence_refs": [
+            "summary.en",
+            "fact.purchase_model",
+            "fact.one_time_option"
+          ]
+        },
+        "zh-Hant": {
+          "language": "zh-Hant",
+          "market": "台灣",
+          "culture_route": "在台灣，不論是週末小旅行、畢業旅行、環島、蜜月，還是第一次出國自由行，常常航班在訂位信、行程在備忘錄、資料在截圖裡，大家想要一個能一次看完整趟旅行、打開又覺得可愛的地方，讓出發前的期待一天天加溫。",
+          "query": "有沒有可愛的旅行手帳 App，能把航班、每日行程和行李清單放在同一頁？",
+          "buyer_problem": "旅行資料散在訂位信、截圖和備忘錄裡，很難一次看完整趟行程；用試算表排行程又少了出發前的期待感。要判斷的是：把出發倒數、航班、每天的行程和行李清單收進同一頁的插畫手冊，是否符合你排行程的習慣。",
+          "decision_rule": "如果你一次規劃一兩趟休閒旅行、希望每天用不同顏色分清楚，也喜歡在 iPhone 和 Apple Watch 上看出發倒數，插畫旅行手冊比較合適。免費下載就能一次保存 1 本手冊；一次性購買 Cute Pass 可解鎖不限手冊數量、更多封面、iCloud 同步和與朋友一起規劃，不是訂閱。",
+          "workflow_checks": [
+            "能不能不切換 App，就在同一頁看到出發倒數、航班、每天的行程和行李清單？",
+            "每一天能不能有自己的顏色，並依日期篩選只看某一天或整趟旅行？",
+            "朋友能不能用瀏覽器打開分享的網頁手冊，或透過 iCloud 和你一起編輯同一本手冊？"
+          ],
+          "alternative_lens": "如果你需要訂房訂票、機票比價或出差報帳紀錄，完整的旅遊平台可能更合適；如果只想要一份大家不用裝 App 就能編輯的共用表格，文件工具可能更簡單。要一起編輯同一本手冊，朋友也需要安裝這個 App。",
+          "verify_before_install": [
+            "先看你所在地區的免費版包含哪些內容：一次保存 1 本手冊與 6 款封面。",
+            "購買前先看 App Store 頁面上一次性購買 Cute Pass 會解鎖哪些功能，例如 iCloud 同步與和朋友一起規劃。"
           ],
           "evidence_refs": [
             "summary.zh-Hant",

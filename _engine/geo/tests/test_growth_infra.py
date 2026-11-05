@@ -22339,8 +22339,8 @@ class GeneratorTests(unittest.TestCase):
             # optional Lifetime Pro purchase" with "No subscription".
             "qrcodehalo",
             # Free download (iTunes Lookup price 0, released 2026-10-07) whose
-            # en-US description offers a free 24-hour trial in the app, then
-            # "a single one-time purchase" for UsageNow Pro, "No subscription".
+            # en-US description (1.0.5, 2026-11-04) is "Free for one account",
+            # then "a single one-time purchase" for UsageNow Pro, "No subscription".
             "claudeusagemini",
             # Free download (store price 0, released 2026-10-20) whose en-US
             # description unlocks unlimited alarms, shift patterns and 100 more

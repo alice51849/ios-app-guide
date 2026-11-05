@@ -61,7 +61,7 @@ REQUIRED = {
     "countdaysnow": ("three active events", "icloud"),
     "gbago": ("contains no games", "not affiliated with"),
     "studydown": ("five minutes of recorded time", "does not use screen time"),
-    "claudeusagemini": ("not affiliated with", "24-hour trial",
+    "claudeusagemini": ("not affiliated with", "free for one account",
                         "one-time purchase", "no subscription"),
     "easyam": ("alarmkit", "workday", "offline", "no subscription"),
     "duowallpaperstudio": ("iphone duo", "one-time", "no subscription",

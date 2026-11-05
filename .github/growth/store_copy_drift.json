@@ -87,13 +87,13 @@
     "Aim990"
    ],
    "live_updated": "2026-11-03",
-   "live_version": "2.0.2",
+   "live_version": "2.1.0",
    "locales": {
     "de-DE": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-29",
-     "live_version": "2.0.2",
+     "live_updated": "2026-11-03",
+     "live_version": "2.1.0",
      "same": true
     },
     "en-GB": {
@@ -106,8 +106,8 @@
     "en-US": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-29",
-     "live_version": "2.0.2",
+     "live_updated": "2026-11-03",
+     "live_version": "2.1.0",
      "same": true
     },
     "es-ES": {
@@ -127,15 +127,15 @@
     "ja": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-29",
-     "live_version": "2.0.2",
+     "live_updated": "2026-11-03",
+     "live_version": "2.1.0",
      "same": true
     },
     "ko": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-29",
-     "live_version": "2.0.2",
+     "live_updated": "2026-11-03",
+     "live_version": "2.1.0",
      "same": true
     },
     "pt-BR": {
@@ -155,82 +155,27 @@
     "zh-Hant": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-29",
-     "live_version": "2.0.2",
+     "live_updated": "2026-11-03",
+     "live_version": "2.1.0",
      "same": true
     }
    },
    "status": "green"
   },
   "battai": {
-   "blocked_terms": [
-    "【價格怎麼算】",
-    "【料金のしくみ】",
-    "サイクル",
-    "前幾天報告會標示「預覽」,隨讀值累積逐步完整",
-    "満充電・低残量・発熱をアラートでお知らせ。"
-   ],
+   "blocked_terms": [],
    "brands": [
     "BattAI"
    ],
    "live_updated": "2026-11-03",
-   "live_version": "1.1.9",
+   "live_version": "1.1.10",
    "locales": {
     "de-DE": {
-     "added": [
-      "Schätze, wann die Maximalkapazität auf 80% fällt.",
-      "Die Einstellungen zeigen nur die heutige Maximalkapazität, nicht ihren Verlauf. BattAI ist ein laufender Akku-Check: Die App erfasst Ladestand und Ladevorgänge im Alltag und macht daraus Score, Verlauf, 80%-Schätzung und Berichte. Ideal vor dem Handywechsel, vor dem Verkauf oder beim Gebrauchtkauf.",
-      "KAPAZITÄTSVERLAUF UND ZEIT BIS 80%",
-      "Die monatliche Kapazitätsänderung zeigt, wie schnell der Akku altert",
-      "Geschätzte Zeit bis 80% als Spanne in Monaten, um Akkutausch oder neues Handy zu planen, wenn dir die Lebensdauer wichtig ist",
-      "Jeder Ladevorgang bekommt 0–100 Punkte, u. a. nach Start- und Endladestand, Laderate und Zeit bei 100%",
-      "Ladebereich (z. B. 30% → 88%), Dauer und Laderate: Langsam, Typisch, Schnell oder Sehr schnell",
-      "Ladegewohnheiten einzeln bewertet (Entladetiefe, Ladegrenze, Laden über Nacht, Wärme beim Laden, Häufigkeit), mit Tipps wie 80–90%, wenn es passt",
-      "BATTERIE-HINWEISE",
-      "Ladealarm bei 80%, 90% oder 100%, damit du weißt, wann du abstecken kannst",
-      "Hitzehinweis, wenn das Handy heiß wird",
-      "Hinweis in der App auf ungewöhnlichen Verbrauch, wenn der Akku schneller leer wird als sonst",
-      "Verbrauch in Prozent je Stunde, nächtlicher Standby-Verbrauch und Gerätewärme der letzten 7 Tage",
-      "Verkaufsbericht: eine Seite für Käufer, mit der Quelle jedes Werts und Schritten, die Maximalkapazität in den Einstellungen zu prüfen",
-      "Vollständiger Bericht (3 Seiten) oder kompakter Bericht (1 Seite mit Planungsbereich bis 80%) als PDF oder PNG; Messwerte als CSV oder JSON",
-      "Beim Handywechsel Daten auf ein anderes Gerät übertragen",
-      "Widgets für Home- und Sperrbildschirm zeigen Score, Maximalkapazität und heutigen Verbrauch",
-      "Uhr-App und Komplikationen zeigen Score und 80%-Schätzung am Handgelenk",
-      "Kein Konto, keine Analyse, kein Tracking, keine Drittanbieter-SDKs, keine Netzwerkanfragen. Daten bleiben auf diesem Handy, nur ein minimaler Snapshot geht an die gekoppelte Uhr. Alle Daten jederzeit löschbar.",
-      "Einige Funktionen erfordern einen Kauf: unbegrenzter Verlauf, Planungsbereich bis 80%, PDF-Bericht, CSV- und JSON-Export, Hinweise auf ungewöhnlichen Verbrauch, Belastung durch Laderate, alle Widgets, Wochenübersicht und Datenübertragung auf ein anderes Gerät.",
-      "Öffentliche System-Schnittstellen liefern nur Ladestand, Ladezustand, Stromsparmodus, Wärmezustand des Geräts und Uhrzeit; Maximalkapazität und Ladezyklen stammen von dir oder aus einer importierten Datei. Wärme bezieht sich auf das ganze Gerät, nicht auf die Akkutemperatur. Score und Schätzungen sind berechnete Spannen, keine offiziellen Herstellerwerte und kein Versprechen, wie lange der Akku hält. Der erste Bericht vor einem Kauf braucht 14 Tage Messwerte, die 80%-Schätzung mindestens 3 Kapazitätswerte über 30 Tage oder mehr. Wann Hintergrundprüfungen laufen, entscheidet das System; Hinweise können sich daher verschieben."
-     ],
-     "dropped": [
-      "Lass dich warnen, wenn der Akku voll, leer oder heiß ist.",
-      "Die Einstellungen zeigen nur die heutige Maximalkapazität, nicht ihren Verlauf. BattAI ist ein laufender Akku-Check: Die App erfasst Ladestand, Laden und Wärme im Alltag und macht daraus Score, Ladeeinblicke, Verlauf und Berichte.",
-      "SO FUNKTIONIERT DER PREIS",
-      "Alle Funktionen sind 24 Stunden lang kostenlos.",
-      "Danach bleiben die Akku-Karte (Stand und Ladezustand) sowie die Hinweise bei vollem und niedrigem Akku und Hitze kostenlos.",
-      "Score, Laden, Verlauf, Berichte, Widgets und Apple-Watch-Analyse schaltest du mit einem Kauf frei. Kein Abo, keine automatischen Abbuchungen.",
-      "Gib die Maximalkapazität aus Einstellungen › Akku ein und du erhältst sofort deinen Score. BattAI kann sie nicht selbst lesen.",
-      "MAXIMALKAPAZITÄT IM VERLAUF",
-      "Monatliche Änderung, wenn deine Werte mindestens 30 Tage auseinanderliegen",
-      "Jeder Ladevorgang bekommt 0–100 Punkte nach Start- und Endstand, Laderate, Zeit bei 100% u. a.",
-      "Ladebereich (z. B. 30% → 88%), Dauer und Laderate: Langsam, Typisch, Schnell, Sehr schnell",
-      "Ladegewohnheiten einzeln bewertet (Entladetiefe, Ladegrenze, Laden über Nacht, Wärme beim Laden, Häufigkeit), mit Tipps wie 80–90%",
-      "BATTERIE-HINWEISE (KOSTENLOS)",
-      "Ladealarm bei 80%, 90% oder 100%",
-      "Hitzehinweis bei heißem Handy",
-      "Verbrauch je Stunde, um schnellen Verbrauch zu erkennen",
-      "Gerätewärme der letzten 7 Tage",
-      "Verkaufsbericht: eine Seite für Käufer, mit Quelle jedes Werts und Schritten zur Prüfung der Maximalkapazität",
-      "Vollständiger Bericht als PDF oder PNG; Messwerte als CSV oder JSON",
-      "In den ersten Tagen ist der Bericht als Vorschau markiert und füllt sich mit mehr Messwerten",
-      "Widgets für Home- und Sperrbildschirm: Score, Akkustand, heutiger Verbrauch",
-      "Uhr-App und Komplikationen: Akkustand und Score deines iPhones am Handgelenk",
-      "IPAD",
-      "Auf dem iPad funktionieren Akkustand, Laden, Verbrauch, Wärme, Hinweise, Berichte und Widgets wie auf dem iPhone. Die meisten iPads zeigen die Maximalkapazität nicht in den Einstellungen, daher braucht der Score hier einen Wert, den du eingibst.",
-      "Kein Konto, keine Analyse, kein Tracking, keine Drittanbieter-SDKs, keine Netzwerkanfragen. Daten bleiben auf diesem Gerät, nur ein minimaler Snapshot geht an die Uhr. Alle Daten jederzeit löschbar.",
-      "Öffentliche System-APIs liefern nur Ladestand, Ladezustand, Stromsparmodus, Wärmezustand des Geräts und Uhrzeit; Maximalkapazität und Ladezyklen stammen von dir oder aus einer importierten Datei. Wärme meint das ganze Gerät, nicht die Akkutemperatur. Scores sind berechnet, keine offiziellen Herstellerwerte und kein Versprechen zur Akkulaufzeit. Verbrauch und Wärme erscheinen nach den ersten Messwerten, Ladeeinblicke nach der ersten vollen Ladung, der Verlauf füllt sich in den ersten Tagen. Das System plant Hintergrundprüfungen, daher können Hinweise variieren."
-     ],
-     "live_updated": "2026-10-27",
-     "live_version": "1.1.9",
-     "same": false
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-11-03",
+     "live_version": "1.1.10",
+     "same": true
     },
     "en-GB": {
      "added": [],
@@ -240,49 +185,11 @@
      "same": true
     },
     "en-US": {
-     "added": [
-      "Estimate when maximum capacity drops to 80%.",
-      "Settings shows today's maximum capacity, not how it changes. BattAI works as an ongoing battery health check and battery monitor: it records battery level and charging as you use your phone and turns them into a score, a trend, an 80% estimate and reports. Upgrading, selling or buying a used phone? Show the battery's condition with a score and a report.",
-      "CAPACITY TREND AND 80% ESTIMATE",
-      "Maximum capacity readings on a chart with a 95% confidence range",
-      "Monthly capacity change shows how fast battery wear builds up",
-      "An estimated range of months until 80%, to plan a battery replacement or a new phone when battery life starts to matter",
-      "BATTERY ALERTS",
-      "Unusual drain notice inside the app when drain rises above this device's usual level",
-      "Drain per hour and overnight standby drain, so fast drain is easy to spot",
-      "Full report (3 pages) or concise report (1 page with the 80% planning range) as PDF or PNG; raw readings as CSV or JSON",
-      "Move your history to another device when you switch phones",
-      "Home Screen and Lock Screen widgets show your score, maximum capacity and today's drain",
-      "Watch app and complications put your score and 80% estimate on your wrist",
-      "No account, analytics, tracking, third-party SDKs or network requests. Data stays on this phone; only a minimal snapshot goes to your paired watch. Delete all data anytime.",
-      "Some features require a purchase: unlimited history, the 80% planning range, PDF battery reports, CSV and JSON export, unusual drain alerts, charging-rate exposure, all widgets, the weekly battery care summary and moving data to another device.",
-      "Public system APIs provide only battery level, charge state, Low Power Mode, whole-device thermal state and time; maximum capacity and cycle count come from you or a file you import. Heat refers to the whole device, not battery temperature. Scores and estimates are calculated ranges, not official or manufacturer values, and not a promise of how long your battery will last. The first report before a purchase needs 14 days of readings; the 80% estimate needs at least 3 maximum capacity readings spanning 30 days or more. Alert timing can vary because the system schedules background checks."
-     ],
-     "dropped": [
-      "Get alerts when your battery is full, low or hot.",
-      "Settings shows today's maximum capacity, not how it changes. BattAI works as an ongoing battery health check and battery monitor: it records battery level, charging and heat as you use your phone and turns them into a score, charging insights, trends and reports.",
-      "HOW PRICING WORKS",
-      "Every feature is free for 24 hours.",
-      "After 24 hours, the battery card (live level and charging state) and the full, low battery and heat alerts stay free.",
-      "The health score, charging, trends, reports, widgets and Apple Watch analysis unlock with one purchase. Not a subscription, no automatic charges.",
-      "Enter the maximum capacity shown in Settings › Battery and you get your score right away. BattAI can't read it by itself.",
-      "MAXIMUM CAPACITY OVER TIME",
-      "Your maximum capacity readings on a chart with a 95% confidence range",
-      "Monthly capacity change once your readings are at least 30 days apart",
-      "BATTERY ALERTS (FREE)",
-      "Drain per hour, so fast drain is easy to spot",
-      "Full report as PDF or PNG; raw readings as CSV or JSON",
-      "In the first days a report is marked as a preview, and it fills in as readings build up",
-      "Home Screen and Lock Screen widgets show your score, battery level and today's drain",
-      "The Watch app and complications show your iPhone's battery and score on your wrist",
-      "IPAD",
-      "On iPad, battery level, charging, drain, heat, alerts, reports and widgets work as on iPhone. Most iPads don't show maximum capacity in Settings, so the health score on iPad needs a value you enter.",
-      "No account, analytics, tracking, third-party SDKs or network requests. Data stays on this device; only a minimal snapshot goes to your paired watch. Delete all data anytime.",
-      "Public system APIs provide only battery level, charge state, Low Power Mode, whole-device thermal state and time; maximum capacity and cycle count come from you or a file you import. Heat refers to the whole device, not battery temperature. Scores and estimates are calculated, not official or manufacturer values, and not a promise of how long your battery will last. Drain and heat appear after the first readings, charging insights after your first full charge session, and trends fill in over the first days. Alert timing can vary because the system schedules background checks."
-     ],
-     "live_updated": "2026-10-27",
-     "live_version": "1.1.9",
-     "same": false
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-11-03",
+     "live_version": "1.1.10",
+     "same": true
     },
     "es-ES": {
      "added": [],
@@ -299,90 +206,18 @@
      "same": true
     },
     "ja": {
-     "added": [
-      "最大容量の推移と、80%までの期間を推定。",
-      "設定でわかるのは今の最大容量だけで、どう変わってきたかは見えません。BattAIは、ふだん使っているあいだの電池残量と充電を記録し、スコア・推移・80%までの推定・レポートにまとめるバッテリーチェックアプリです。機種変更、中古での売却や下取りの前、中古スマホを買うときにも、バッテリーの状態をはっきり伝えられます。最大容量や充放電回数はいつでも追加でき、追加するほど結果が詳しくなります。",
-      "【最大容量の推移と80%までの推定】",
-      "月ごとの容量変化で、劣化・消耗のペースを確認",
-      "容量が80%に下がるまでの期間を「約○〜○か月」の範囲で推定。バッテリー寿命が気になるとき、電池交換や機種変更の時期を考える目安に",
-      "【バッテリー通知】",
-      "消費がふだんより多いときは、アプリ内で通常と異なる消費をお知らせ",
-      "1時間あたりの消費と夜間の待機消費で、減りの速さをチェック",
-      "詳細レポート(3ページ)と簡潔レポート(1ページ、80%までの計画範囲つき)",
-      "機種変更のときは、別のデバイスへデータ移行",
-      "ホーム画面とロック画面のウィジェットで、スコア・最大容量・今日の消費をすぐ確認",
-      "時計アプリとコンプリケーションで、スコアと80%までの推定を手首でチェック",
-      "一部の機能は購入後に使えます:無制限の履歴、80%までの計画範囲、PDFバッテリーレポート、CSV・JSONデータ書き出し、通常と異なる消費の通知、充電速度への曝露、すべてのウィジェット、週次バッテリーケアまとめ、別のデバイスへデータ移行。",
-      "システムの公開APIで得られるのは、電池残量、充電状態、低電力モード、デバイス全体の熱状態、時刻だけです。最大容量と充放電回数は、あなたの入力または取り込んだファイルから得ます。バッテリーの温度・電圧・電流はアプリから読み取れず、熱はデバイス全体の状態です。スコアと推定は記録から計算した目安の範囲で、公式・メーカーの数値ではなく、バッテリーがあと何年使えるかを約束するものでもありません。購入前の最初のレポートには14日分の記録、80%までの推定には30日以上にわたる3件以上の最大容量の記録が必要です。バックグラウンドで確認するタイミングはシステムが決めるため、通知の時刻は前後することがあります。"
-     ],
-     "dropped": [
-      "満充電・低残量・発熱をアラートでお知らせ。",
-      "設定でわかるのは今の最大容量だけで、どう変わってきたかは見えません。BattAIは、ふだん使っているあいだの電池残量・充電・発熱を記録し、スコア・充電の分析・推移・レポートにまとめるバッテリーチェックアプリです。",
-      "【料金のしくみ】",
-      "すべての機能を24時間無料でお使いいただけます。",
-      "24時間後も、バッテリーカード(リアルタイムの残量と充電状態)と、満充電・低残量・発熱の通知は無料のままです。",
-      "バッテリー状態スコア、充電、推移、レポート、ウィジェット、Apple Watchでの分析は、1回の購入で使えるようになります。サブスクリプションではなく、自動課金もありません。",
-      "設定の「バッテリー」に表示される最大容量を入力すると、すぐにスコアが出ます。BattAI自体では読み取れません",
-      "【最大容量の推移】",
-      "記録の間隔が30日以上あれば、月ごとの容量変化も表示",
-      "【バッテリー通知(無料)】",
-      "1時間あたりの消費で、減りの速さをチェック",
-      "最初の数日間、レポートには「プレビュー」と表示され、記録がたまるほど内容が充実します",
-      "ホーム画面とロック画面のウィジェットで、スコア・電池残量・今日の消費をすぐ確認",
-      "時計アプリとコンプリケーションで、iPhoneの電池残量とスコアを手首でチェック",
-      "【iPad】",
-      "iPadでも、電池残量・充電・消費・発熱・通知・レポート・ウィジェットはiPhoneと同じように使えます。ただしiPadの多くは設定に最大容量が表示されないため、iPadでバッテリー状態スコアを出すには、ご自身で値を入力する必要があります",
-      "システムの公開APIで得られるのは、電池残量、充電状態、低電力モード、デバイス全体の熱状態、時刻だけです。最大容量と充放電回数は、あなたの入力または取り込んだファイルから得ます。バッテリーの温度・電圧・電流はアプリから読み取れず、熱はデバイス全体の状態です。スコアと推定は記録から計算した目安の範囲で、公式・メーカーの数値ではなく、バッテリーがあと何年使えるかを約束するものでもありません。消費と発熱は最初の記録のあと、充電の分析は最初の充電を終えたあとに表示され、推移は最初の数日で充実していきます。バックグラウンドで確認するタイミングはシステムが決めるため、通知の時刻は前後することがあります。"
-     ],
-     "live_updated": "2026-10-27",
-     "live_version": "1.1.9",
-     "same": false
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-11-03",
+     "live_version": "1.1.10",
+     "same": true
     },
     "ko": {
-     "added": [
-      "성능 최대치 80% 도달 시점 예측",
-      "설정에서는 지금의 배터리 성능 최대치만 보이고, 어떻게 변해 왔는지는 알 수 없어요. BattAI는 평소처럼 쓰는 동안 배터리 잔량과 충전을 기록해 점수, 추세, 80% 예상, 리포트로 정리해 주는 배터리 체크 앱이에요. 폰을 바꾸거나 중고폰을 팔고 살 때 배터리 상태를 분명하게 보여 줄 수 있어요. 성능 최대치나 사이클 수를 언제든 추가하면 결과가 더 자세해져요.",
-      "0~100점을 매우 좋음·좋음·보통·관리가 필요함·서비스 확인 5단계로 표시",
-      "■ 성능 최대치 추세와 80% 예상",
-      "월별 용량 변화로 배터리 노화·열화 속도 확인",
-      "80%까지 남은 기간을 '약 ○–○개월' 범위로 예상해요. 배터리 수명이 걱정될 때 배터리 교체나 기기 변경 시기를 정하는 참고가 돼요",
-      "충전할 때마다 0~100점 충전 관리 점수(시작·종료 잔량, 충전 속도, 100% 유지 시간 등 반영)",
-      "■ 배터리 알림",
-      "소모가 평소보다 많으면 앱 안에서 평소와 다른 소모를 안내",
-      "시간당 소모량과 밤사이 대기 소모로 배터리 광탈 원인 확인",
-      "전체 리포트(3페이지)와 간단 리포트(1페이지, 80% 계획 범위 포함)",
-      "PDF 또는 PNG 이미지로 저장해 구매자나 수리점에 전달, 기록 데이터는 CSV·JSON으로 내보내기",
-      "폰을 바꿀 때 다른 기기로 데이터 이동",
-      "홈 화면·잠금 화면 위젯으로 점수, 성능 최대치, 오늘 소모를 바로 확인",
-      "워치 앱과 컴플리케이션으로 점수와 80% 예상을 손목에서 확인",
-      "일부 기능은 구매 후 이용할 수 있어요: 무제한 기록, 80% 계획 범위, PDF 배터리 리포트, CSV·JSON 데이터 내보내기, 평소와 다른 소모 알림, 충전 속도 노출, 모든 위젯, 주간 배터리 관리 요약, 다른 기기로 데이터 이동.",
-      "시스템 공개 API로 얻을 수 있는 것은 배터리 잔량, 충전 상태, 저전력 모드, 기기 전체의 열 상태, 시간뿐이에요. 성능 최대치와 사이클 수는 직접 입력하거나 가져온 파일에서 와요. 배터리 온도, 전압, 전류는 앱이 읽을 수 없고, 발열은 기기 전체 상태예요. 점수와 예상은 기록으로 계산한 참고 범위이며, 공식·제조사 수치가 아니고 배터리를 얼마나 더 쓸 수 있는지 약속하지도 않아요. 구매 전 첫 리포트에는 14일 기록이, 80% 예상에는 30일 이상에 걸친 성능 최대치 기록 3개 이상이 필요해요. 백그라운드 확인 시점은 시스템이 정하기 때문에 알림 시간이 달라질 수 있어요."
-     ],
-     "dropped": [
-      "완충·저전력·발열을 알림으로 받기",
-      "설정에서는 지금의 배터리 성능 최대치만 보이고, 어떻게 변해 왔는지는 알 수 없어요. BattAI는 평소처럼 쓰는 동안 배터리 잔량과 충전, 발열을 기록해 점수, 충전 분석, 추세, 리포트로 정리해 주는 배터리 체크 앱이에요.",
-      "■ 요금 방식",
-      "모든 기능을 24시간 동안 무료로 쓸 수 있어요.",
-      "24시간 뒤에도 배터리 카드(실시간 잔량과 충전 상태)와 완충·저전력·발열 알림은 계속 무료예요.",
-      "건강 점수, 충전, 추세, 리포트, 위젯, Apple Watch 분석은 한 번의 구매로 열려요. 구독이 아니며 자동 결제도 없어요.",
-      "0‌100점을 매우 좋음·좋음·보통·관리가 필요함·서비스 확인 5단계로 표시",
-      "설정 > 배터리에 보이는 성능 최대치를 입력하면 바로 점수가 나와요. BattAI는 이 값을 직접 읽을 수 없어요",
-      "■ 성능 최대치 추세",
-      "기록 간격이 30일 이상 벌어지면 월별 용량 변화도 표시",
-      "충전할 때마다 0‌100점 충전 관리 점수(시작·종료 잔량, 충전 속도, 100% 유지 시간 등 반영)",
-      "■ 배터리 알림 (무료)",
-      "시간당 소모량으로 배터리가 빨리 닳는지 확인",
-      "전체 리포트를 PDF 또는 PNG 이미지로 저장, 기록 데이터는 CSV·JSON으로 내보내기",
-      "처음 며칠 동안 리포트에는 '미리보기'로 표시되고, 기록이 쌓일수록 채워져요",
-      "홈 화면·잠금 화면 위젯으로 점수, 배터리 잔량, 오늘 소모를 바로 확인",
-      "워치 앱과 컴플리케이션으로 iPhone의 배터리 잔량과 점수를 손목에서 확인",
-      "■ iPad",
-      "iPad에서도 배터리 잔량, 충전, 소모, 발열, 알림, 리포트, 위젯은 iPhone과 같이 써요. 다만 대부분의 iPad는 설정에 성능 최대치가 보이지 않아, iPad의 건강 점수는 직접 입력한 값이 있어야 나와요",
-      "시스템 공개 API로 얻을 수 있는 것은 배터리 잔량, 충전 상태, 저전력 모드, 기기 전체의 열 상태, 시간뿐이에요. 성능 최대치와 사이클 수는 직접 입력하거나 가져온 파일에서 와요. 배터리 온도, 전압, 전류는 앱이 읽을 수 없고, 발열은 기기 전체 상태예요. 점수와 예상은 기록으로 계산한 참고 범위이며, 공식·제조사 수치가 아니고 배터리를 얼마나 더 쓸 수 있는지 약속하지도 않아요. 소모와 발열은 첫 기록 이후에, 충전 분석은 첫 충전을 마친 뒤에 나타나고, 추세는 처음 며칠 동안 채워져요. 백그라운드 확인 시점은 시스템이 정하기 때문에 알림 시간이 달라질 수 있어요."
-     ],
-     "live_updated": "2026-10-27",
-     "live_version": "1.1.9",
-     "same": false
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-11-03",
+     "live_version": "1.1.10",
+     "same": true
     },
     "pt-BR": {
      "added": [],
@@ -399,65 +234,14 @@
      "same": true
     },
     "zh-Hant": {
-     "added": [
-      "預估最大容量何時降到 80%。",
-      "設定只告訴你現在的最大容量,看不到它怎麼變。BattAI 在你平常用手機時持續記錄電量與充電,把電池檢測整理成看得懂的分數、趨勢、預估和報告;換新機、賣舊手機或買二手機驗機時,都能把電池狀態說清楚。想要更完整,隨時補上最大容量或循環次數。",
-      "【最大容量趨勢與 80% 預估】",
-      "每月容量變化,看出電池損耗、老化得快不快",
-      "預估還要約幾個月降到 80%,以區間呈現;在意電池壽命時,方便規劃何時更換電池或換機",
-      "記錄充電區間(例如 30% → 88%)、時長與充電速度(較慢、一般、較快、很快),快充多不多一看就知道",
-      "充電習慣分五項評分:放電深度、充電上限、過夜充電、充電時發熱、充電頻率,並依你的紀錄給建議,例如合適時使用 80–90%",
-      "【電池提醒】",
-      "充到 80%、90% 或滿電時提醒你拔掉充電線",
-      "電量剩 10%、20% 或 30% 時提醒你充電",
-      "App 內異常耗電提示:耗電高於這台手機平常水準時,在 App 內告訴你",
-      "【耗電與熱狀態】",
-      "每小時耗電百分比與夜間待機耗電,掉電快不用再猜",
-      "二手轉讓報告:一頁給買家,逐項標示數值來源,附在設定中核對最大容量的步驟,驗機有依據",
-      "完整報告(3 頁)與精簡報告(1 頁,含 80% 規劃區間)",
-      "存成 PDF 或 PNG 圖片傳給買家或維修門市;原始讀值可匯出 CSV、JSON",
-      "換新機時,把紀錄移到另一台裝置",
-      "主畫面與鎖定畫面小工具,不開 App 也能看健康分數、最大容量與今日耗電",
-      "手錶 App 與錶面複雜功能,抬手就能看分數與 80% 預估",
-      "捷徑:查詢目前分數,或在接上、拔掉充電器時自動加一筆讀值",
-      "從系統「分析資料」的 log-aggregated 檔匯入最大容量與循環次數,也可以手動輸入;只讀取循環次數、標稱充電容量與設計容量,其他內容立即捨棄",
-      "部分功能需在 App 內購買後使用:無限記錄、80% 規劃區間、PDF 電池報告、CSV/JSON 資料匯出、異常耗電提醒、充電速率暴露、所有小工具、每週電池保養摘要、將資料移到另一台裝置。",
-      "系統公開 API 只提供電量、充電狀態、低耗電模式、整部手機的熱狀態與時間;最大容量與循環次數來自你的輸入或匯入的檔案。App 讀不到電池溫度、電壓或電流,熱狀態指整部手機。分數與預估是依讀值算出的參考區間,不是官方或原廠數值,也不代表電池還能用多久的承諾。未購買者的首份體驗報告需累積 14 天讀值;80% 預估需要至少 3 筆、首末相隔 30 天以上的最大容量記錄。提醒時間由系統背景排程決定,可能有落差。"
-     ],
-     "dropped": [
-      "電池充飽、低電量或過熱時提醒你。",
-      "設定只告訴你現在的最大容量,看不到它怎麼變。BattAI 在你平常用手機時持續記錄電量、充電與發熱,把電池檢測整理成看得懂的分數、充電洞察、趨勢和報告;換新機、賣舊手機或買二手機驗機時,都能把電池狀態說清楚。",
-      "【價格怎麼算】",
-      "所有功能前 24 小時免費使用",
-      "24 小時後,電量卡片(即時電量與充電狀態)以及充飽、低電量、過熱提醒依然免費",
-      "健康分數、充電、趨勢、報告、小工具和 Apple Watch 分析,一次買斷即可解鎖;非訂閱,不會自動扣款",
-      "在「設定 › 電池」查看最大容量並輸入,立刻就有分數;BattAI 自己讀不到這個數值",
-      "【最大容量變化】",
-      "讀值相隔至少 30 天後,顯示每月容量變化",
-      "記錄充電區間(例如 30% → 88%)、時長與充電速度(較慢、一般、較快、很快)",
-      "充電習慣分五項評分:放電深度、充電上限、過夜充電、充電時發熱、充電頻率,並給建議,例如合適時使用 80–90%",
-      "【電池提醒(免費)】",
-      "充飽提醒:電量到你選的 80%、90% 或 100% 時通知",
-      "低電量提醒:電量剩 10%、20% 或 30% 時通知",
-      "【耗電與發熱】",
-      "每小時耗電百分比,掉電快不用再猜",
-      "二手轉讓報告:一頁給買家,逐項標示數值來源,附在設定中核對最大容量的步驟",
-      "完整報告存成 PDF 或 PNG 圖片;原始讀值可匯出 CSV、JSON",
-      "前幾天報告會標示「預覽」,隨讀值累積逐步完整",
-      "主畫面與鎖定畫面小工具,不開 App 也能看健康分數、電量與今日耗電",
-      "手錶 App 與錶面複雜功能,抬手就能看 iPhone 電量與分數",
-      "捷徑:查詢目前分數,或在接上、拔掉充電器時新增一筆讀值",
-      "【iPad】",
-      "iPad 上的電量、充電、耗電、發熱、提醒、報告與小工具和 iPhone 一樣可用。多數 iPad 在設定中不顯示最大容量,因此 iPad 上的健康分數需要你自己輸入數值",
-      "從系統「分析資料」檔匯入最大容量與循環次數,也可以手動輸入;只讀取循環次數、標稱充電容量與設計容量,其他內容立即捨棄",
-      "系統公開 API 只提供電量、充電狀態、低耗電模式、整部手機的熱狀態與時間;最大容量與循環次數來自你的輸入或匯入的檔案。熱狀態指整部手機,而非電池溫度。分數與預估是算出的參考值,不是官方或原廠數值,也不代表電池還能用多久的承諾。耗電與發熱在首批讀值後出現,充電洞察在首次完整充電後出現,趨勢會在最初幾天逐步補齊。提醒時間由系統背景排程決定,可能有落差。"
-     ],
-     "live_updated": "2026-10-27",
-     "live_version": "1.1.9",
-     "same": false
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-11-03",
+     "live_version": "1.1.10",
+     "same": true
     }
    },
-   "status": "red"
+   "status": "green"
   },
   "caldaily": {
    "blocked_terms": [],
@@ -558,69 +342,69 @@
     "UsageNow"
    ],
    "live_updated": "2026-11-04",
-   "live_version": "1.0.3",
+   "live_version": "1.0.5",
    "locales": {
     "de-DE": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-27",
-     "live_version": "1.0.3",
+     "live_updated": "2026-11-04",
+     "live_version": "1.0.5",
      "same": true
     },
     "en-GB": {
      "added": [],
      "dropped": [],
      "live_updated": "2026-11-04",
-     "live_version": "1.0.4",
+     "live_version": "1.0.5",
      "same": true
     },
     "en-US": {
      "added": [],
      "dropped": [],
      "live_updated": "2026-11-04",
-     "live_version": "1.0.4",
+     "live_version": "1.0.5",
      "same": true
     },
     "es-ES": {
      "added": [],
      "dropped": [],
      "live_updated": "2026-11-04",
-     "live_version": "1.0.4",
+     "live_version": "1.0.5",
      "same": true
     },
     "fr-FR": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-27",
-     "live_version": "1.0.3",
+     "live_updated": "2026-11-04",
+     "live_version": "1.0.5",
      "same": true
     },
     "ja": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-27",
-     "live_version": "1.0.3",
+     "live_updated": "2026-11-04",
+     "live_version": "1.0.5",
      "same": true
     },
     "ko": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-27",
-     "live_version": "1.0.3",
+     "live_updated": "2026-11-04",
+     "live_version": "1.0.5",
      "same": true
     },
     "pt-BR": {
      "added": [],
      "dropped": [],
      "live_updated": "2026-11-04",
-     "live_version": "1.0.4",
+     "live_version": "1.0.5",
      "same": true
     },
     "zh-Hant": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-27",
-     "live_version": "1.0.3",
+     "live_updated": "2026-11-04",
+     "live_version": "1.0.5",
      "same": true
     }
    },
@@ -1041,77 +825,77 @@
    "brands": [
     "dB Halo"
    ],
-   "live_updated": "2026-10-26",
-   "live_version": "1.0.6",
+   "live_updated": "2026-11-04",
+   "live_version": "1.0.7",
    "locales": {
     "de-DE": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-26",
-     "live_version": "1.0.6",
+     "live_updated": "2026-11-04",
+     "live_version": "1.0.7",
      "same": true
     },
     "en-GB": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-26",
-     "live_version": "1.0.6",
+     "live_updated": "2026-11-04",
+     "live_version": "1.0.7",
      "same": true
     },
     "en-US": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-26",
-     "live_version": "1.0.6",
+     "live_updated": "2026-11-04",
+     "live_version": "1.0.7",
      "same": true
     },
     "es-ES": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-26",
-     "live_version": "1.0.6",
+     "live_updated": "2026-11-04",
+     "live_version": "1.0.7",
      "same": true
     },
     "fr-FR": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-26",
-     "live_version": "1.0.6",
+     "live_updated": "2026-11-04",
+     "live_version": "1.0.7",
      "same": true
     },
     "ja": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-26",
-     "live_version": "1.0.6",
+     "live_updated": "2026-11-04",
+     "live_version": "1.0.7",
      "same": true
     },
     "ko": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-26",
-     "live_version": "1.0.6",
+     "live_updated": "2026-11-04",
+     "live_version": "1.0.7",
      "same": true
     },
     "pt-BR": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-26",
-     "live_version": "1.0.6",
+     "live_updated": "2026-11-04",
+     "live_version": "1.0.7",
      "same": true
     },
     "zh-Hans": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-26",
-     "live_version": "1.0.6",
+     "live_updated": "2026-11-04",
+     "live_version": "1.0.7",
      "same": true
     },
     "zh-Hant": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-26",
-     "live_version": "1.0.6",
+     "live_updated": "2026-11-04",
+     "live_version": "1.0.7",
      "same": true
     }
    },
@@ -1126,7 +910,8 @@
     "Fond d'écran pliable",
     "폴더블 배경화면",
     "折りたたみ壁紙",
-    "摺疊手機桌布"
+    "摺疊手機桌布",
+    "折叠屏壁纸"
    ],
    "live_updated": "2026-10-31",
    "live_version": "1.0.2",
@@ -2109,13 +1894,13 @@
     "Lumi 레터 Pro"
    ],
    "live_updated": "2026-11-03",
-   "live_version": "1.3.7",
+   "live_version": "1.3.8",
    "locales": {
     "de-DE": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-27",
-     "live_version": "1.3.7",
+     "live_updated": "2026-11-03",
+     "live_version": "1.3.8",
      "same": true
     },
     "en-GB": {
@@ -2128,8 +1913,8 @@
     "en-US": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-27",
-     "live_version": "1.3.7",
+     "live_updated": "2026-11-03",
+     "live_version": "1.3.8",
      "same": true
     },
     "es-ES": {
@@ -2149,15 +1934,15 @@
     "ja": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-27",
-     "live_version": "1.3.7",
+     "live_updated": "2026-11-03",
+     "live_version": "1.3.8",
      "same": true
     },
     "ko": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-27",
-     "live_version": "1.3.7",
+     "live_updated": "2026-11-03",
+     "live_version": "1.3.8",
      "same": true
     },
     "pt-BR": {
@@ -2170,8 +1955,8 @@
     "zh-Hant": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-27",
-     "live_version": "1.3.7",
+     "live_updated": "2026-11-03",
+     "live_version": "1.3.8",
      "same": true
     }
    },
@@ -2190,70 +1975,70 @@
     "Lumi 수학 행성",
     "Lumi數學星球"
    ],
-   "live_updated": "2026-10-27",
-   "live_version": "1.0.22",
+   "live_updated": "2026-11-04",
+   "live_version": "1.0.23",
    "locales": {
     "de-DE": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-27",
-     "live_version": "1.0.22",
+     "live_updated": "2026-11-04",
+     "live_version": "1.0.23",
      "same": true
     },
     "en-GB": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-27",
-     "live_version": "1.0.22",
+     "live_updated": "2026-11-04",
+     "live_version": "1.0.23",
      "same": true
     },
     "en-US": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-27",
-     "live_version": "1.0.22",
+     "live_updated": "2026-11-04",
+     "live_version": "1.0.23",
      "same": true
     },
     "es-ES": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-27",
-     "live_version": "1.0.22",
+     "live_updated": "2026-11-04",
+     "live_version": "1.0.23",
      "same": true
     },
     "fr-FR": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-27",
-     "live_version": "1.0.22",
+     "live_updated": "2026-11-04",
+     "live_version": "1.0.23",
      "same": true
     },
     "ja": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-27",
-     "live_version": "1.0.22",
+     "live_updated": "2026-11-04",
+     "live_version": "1.0.23",
      "same": true
     },
     "ko": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-27",
-     "live_version": "1.0.22",
+     "live_updated": "2026-11-04",
+     "live_version": "1.0.23",
      "same": true
     },
     "pt-BR": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-27",
-     "live_version": "1.0.22",
+     "live_updated": "2026-11-04",
+     "live_version": "1.0.23",
      "same": true
     },
     "zh-Hant": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-27",
-     "live_version": "1.0.22",
+     "live_updated": "2026-11-04",
+     "live_version": "1.0.23",
      "same": true
     }
    },
@@ -2453,77 +2238,77 @@
     "Lumi 任務星球 Pro",
     "Lumi 미션 별 Pro"
    ],
-   "live_updated": "2026-10-27",
-   "live_version": "1.0.14",
+   "live_updated": "2026-11-04",
+   "live_version": "1.0.15",
    "locales": {
     "de-DE": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-27",
-     "live_version": "1.0.14",
+     "live_updated": "2026-11-04",
+     "live_version": "1.0.15",
      "same": true
     },
     "en-GB": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-27",
-     "live_version": "1.0.14",
+     "live_updated": "2026-11-04",
+     "live_version": "1.0.15",
      "same": true
     },
     "en-US": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-27",
-     "live_version": "1.0.14",
+     "live_updated": "2026-11-04",
+     "live_version": "1.0.15",
      "same": true
     },
     "es-ES": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-27",
-     "live_version": "1.0.14",
+     "live_updated": "2026-11-04",
+     "live_version": "1.0.15",
      "same": true
     },
     "fr-FR": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-27",
-     "live_version": "1.0.14",
+     "live_updated": "2026-11-04",
+     "live_version": "1.0.15",
      "same": true
     },
     "ja": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-27",
-     "live_version": "1.0.14",
+     "live_updated": "2026-11-04",
+     "live_version": "1.0.15",
      "same": true
     },
     "ko": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-27",
-     "live_version": "1.0.14",
+     "live_updated": "2026-11-04",
+     "live_version": "1.0.15",
      "same": true
     },
     "pt-BR": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-27",
-     "live_version": "1.0.14",
+     "live_updated": "2026-11-04",
+     "live_version": "1.0.15",
      "same": true
     },
     "zh-Hans": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-27",
-     "live_version": "1.0.14",
+     "live_updated": "2026-11-04",
+     "live_version": "1.0.15",
      "same": true
     },
     "zh-Hant": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-27",
-     "live_version": "1.0.14",
+     "live_updated": "2026-11-04",
+     "live_version": "1.0.15",
      "same": true
     }
    },
@@ -2727,6 +2512,122 @@
      "dropped": [],
      "live_updated": "2026-10-27",
      "live_version": "1.0.9",
+     "same": true
+    }
+   },
+   "status": "green"
+  },
+  "metrotimehelper": {
+   "blocked_terms": [],
+   "brands": [
+    "Taipei · Assistent del Metro",
+    "ผู้ช่วยเวลารถไฟฟ้า MRT ไทเป",
+    "Taipei MRT நேர உதவியாளர்",
+    "Taipei · Assistant Métro",
+    "Hora de Metro en Taipei",
+    "Hora do Metrô em Taipei",
+    "Metro Tijdhelper Taipei",
+    "Metro-Zeithelfer Taipeh",
+    "Taipei MRT సమయ సహాయకారి",
+    "Metro a Horas em Taipé",
+    "Taipei MRT वेळ सहाय्यक",
+    "Trợ lý giờ MRT Đài Bắc",
+    "Metro Saat Yardımcısı",
+    "Taipei MRT સમય સહાયક",
+    "Taipei MRT ସମୟ ସହାୟକ",
+    "Taipei MRT ಸಮಯ ಸಹಾಯಕ",
+    "Taipei MRT സമയ സഹായി",
+    "মেট্রো সময় সহায়ক",
+    "Metro Time Helper",
+    "مساعد وقت المترو",
+    "میٹرو وقت مددگار",
+    "मेट्रो समय सहायक",
+    "ਮੈਟਰੋ ਸਮਾਂ ਸਹਾਇਕ",
+    "עוזר זמני המטרו",
+    "타이베이 지하철 시간 도우미",
+    "Metro a Tiempo",
+    "Metrou la Timp",
+    "Μετρό στην Ώρα",
+    "捷運時間助手-台北轉乘時刻表",
+    "Tchaj-pej",
+    "台北MRT乗り換え",
+    "Taipei",
+    "Tajpej",
+    "Тайбей",
+    "Тайбэй",
+    "捷运时间助手"
+   ],
+   "live_updated": "2026-11-04",
+   "live_version": "1.1",
+   "locales": {
+    "de-DE": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-11-04",
+     "live_version": "1.1",
+     "same": true
+    },
+    "en-GB": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-11-04",
+     "live_version": "1.1",
+     "same": true
+    },
+    "en-US": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-11-04",
+     "live_version": "1.1",
+     "same": true
+    },
+    "es-ES": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-11-04",
+     "live_version": "1.1",
+     "same": true
+    },
+    "fr-FR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-11-04",
+     "live_version": "1.1",
+     "same": true
+    },
+    "ja": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-11-04",
+     "live_version": "1.1",
+     "same": true
+    },
+    "ko": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-11-04",
+     "live_version": "1.1",
+     "same": true
+    },
+    "pt-BR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-11-04",
+     "live_version": "1.1",
+     "same": true
+    },
+    "zh-Hans": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-11-04",
+     "live_version": "1.1",
+     "same": true
+    },
+    "zh-Hant": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-11-04",
+     "live_version": "1.1",
      "same": true
     }
    },
@@ -3793,13 +3694,13 @@
     "Snapport Lite"
    ],
    "live_updated": "2026-11-03",
-   "live_version": "1.0.7",
+   "live_version": "1.0.8",
    "locales": {
     "de-DE": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-01",
-     "live_version": "1.0.7",
+     "live_updated": "2026-11-03",
+     "live_version": "1.0.8",
      "same": true
     },
     "en-GB": {
@@ -3812,8 +3713,8 @@
     "en-US": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-01",
-     "live_version": "1.0.7",
+     "live_updated": "2026-11-03",
+     "live_version": "1.0.8",
      "same": true
     },
     "es-ES": {
@@ -3833,15 +3734,15 @@
     "ja": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-01",
-     "live_version": "1.0.7",
+     "live_updated": "2026-11-03",
+     "live_version": "1.0.8",
      "same": true
     },
     "ko": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-01",
-     "live_version": "1.0.7",
+     "live_updated": "2026-11-03",
+     "live_version": "1.0.8",
      "same": true
     },
     "pt-BR": {
@@ -3861,8 +3762,8 @@
     "zh-Hant": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-01",
-     "live_version": "1.0.7",
+     "live_updated": "2026-11-03",
+     "live_version": "1.0.8",
      "same": true
     }
    },
@@ -4393,13 +4294,13 @@
     "Unblurry Pro"
    ],
    "live_updated": "2026-11-03",
-   "live_version": "1.0.16",
+   "live_version": "1.0.17",
    "locales": {
     "de-DE": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-30",
-     "live_version": "1.0.16",
+     "live_updated": "2026-11-03",
+     "live_version": "1.0.17",
      "same": true
     },
     "en-GB": {
@@ -4412,8 +4313,8 @@
     "en-US": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-30",
-     "live_version": "1.0.16",
+     "live_updated": "2026-11-03",
+     "live_version": "1.0.17",
      "same": true
     },
     "es-ES": {
@@ -4433,15 +4334,15 @@
     "ja": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-30",
-     "live_version": "1.0.16",
+     "live_updated": "2026-11-03",
+     "live_version": "1.0.17",
      "same": true
     },
     "ko": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-30",
-     "live_version": "1.0.16",
+     "live_updated": "2026-11-03",
+     "live_version": "1.0.17",
      "same": true
     },
     "pt-BR": {
@@ -4461,8 +4362,8 @@
     "zh-Hant": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-30",
-     "live_version": "1.0.16",
+     "live_updated": "2026-11-03",
+     "live_version": "1.0.17",
      "same": true
     }
    },
@@ -4892,11 +4793,11 @@
   "gb"
  ],
  "counts": {
-  "green": 55,
-  "red": 1,
+  "green": 57,
+  "red": 0,
   "unknown": 0
  },
  "errors": [],
- "generated_at": "2026-11-04T03:23:22Z",
+ "generated_at": "2026-11-05T03:57:41Z",
  "schema": "growth.store-copy-drift/v1"
 }

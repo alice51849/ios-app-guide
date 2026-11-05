@@ -17,10 +17,21 @@ for directory in (ROOT, ROOT / "geo", ROOT / "social"):
 import live_app_manifest as manifest
 import outreach_scorecard
 import publish
-import new_app_catchup
+try:
+    import new_app_catchup
+except ModuleNotFoundError as error:
+    # new_app_catchup.py lives at the GrowthEngine repo root, which the
+    # Guide's _engine mirror does not carry; since this file was mirrored
+    # byte for byte (dbbcb9f0, 2026-11-05) geo-daily reported an import
+    # error there. Only the module itself may be absent: a missing
+    # dependency inside GrowthEngine still fails loudly.
+    if error.name != "new_app_catchup":
+        raise
+    new_app_catchup = None
 from videogen.registry import APPS, APPSTORE
 
 
+@unittest.skipIf(new_app_catchup is None, "new_app_catchup.py is GrowthEngine-only")
 class AvailabilityFollowupTests(unittest.TestCase):
     def setUp(self):
         self.stack = ExitStack()

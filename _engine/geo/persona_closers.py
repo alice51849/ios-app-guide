@@ -156,6 +156,7 @@ SITUATIONS: dict[str, str] = {
     "gbago": "utility",
     "metrotimehelper": "travel",
     "tripbeecute": "travel",
+    "kumo": "wellbeing",
 }
 DEFAULT_SITUATION = "utility"
 

@@ -5199,7 +5199,11 @@ PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
         },
     ],
     # Meow Party: 2 Player Cat Games (58_MeowParty, ASC 6829184924, bundle
-    # tail "foldparty") is pre-publication. Claims here are held to what build
+    # tail "foldparty", the registry key every line uses) went live on the App
+    # Store on 2026-11-05 (1.0.0, paid upfront) and is also live on Google Play
+    # (package com.alice51849.FoldParty, same folder, paid). It stays staged
+    # here only until the automatic catch-up adds "foldparty" to
+    # registry_auto.json, which promotes it. Claims here are held to what build
     # 179f737a ships: 200 original cat minigames in four families of 50 (party,
     # fold puzzles, arcade and rhythm, cozy creations); 146 are solo and 54
     # can be played by two people face to face on one phone (51 of those also
@@ -5209,7 +5213,12 @@ PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
     # button or two-finger pinch) so every game is playable on a regular
     # iPhone. Paid upfront, no in-app purchases, no ads, no account, no
     # network features, no data collected, 50 interface languages. It has no
-    # online multiplayer, no vibration and no Android version.
+    # online multiplayer and no vibration. The copy names iPhone only; Google
+    # Play links come from the download-link guards, not from this persona.
+    # The copy is held to two people face to face on one phone, playable on
+    # any regular iPhone: the app is not in ops/company/duo_verified.json, so
+    # no foldable-optimized or iPhone Duo claim (ops/company/duo_claim_rules.md);
+    # the earlier foldable-phone entry was withdrawn for that reason.
     "foldparty": [
         {
             "query": "2 player games for two people on one iphone offline without ads",
@@ -5247,9 +5256,9 @@ PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
                     "Then check what happens when the other person is not "
                     "there and what it costs. A computer rival lets you "
                     "practice most of the two-player games on your own, 146 "
-                    "games are solo to begin with, and a single upfront price "
-                    "with no in-app purchases, no ads and no account means the "
-                    "whole collection plays offline on a plane or abroad."
+                    "games are solo to begin with, and with no in-app "
+                    "purchases, no ads and no account, all 200 games are "
+                    "included and play offline on a plane or abroad."
                 ),
             ],
             "look": [
@@ -5269,8 +5278,8 @@ PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
             "fits": (
                 "fits friends, couples and families who want quick face-to-face "
                 "games on one phone, plus plenty of solo games for the rest of "
-                "the time, for one upfront price with no in-app purchases, no "
-                "ads and no account."
+                "the time, fully playable on any regular iPhone, with no "
+                "in-app purchases, no ads and no account."
             ),
             "faq": [
                 {
@@ -5290,97 +5299,10 @@ PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
                     ),
                 },
                 {
-                    "q": "Is there a subscription or in-app purchase?",
+                    "q": "Are there in-app purchases or ads?",
                     "a": (
-                        "No. Meow Party is a one-time paid download that "
-                        "includes all 200 games, with no in-app purchases, "
-                        "subscription, ads or account."
-                    ),
-                },
-            ],
-        },
-        {
-            "query": "fun games that use the fold on a foldable iphone and still work on a regular iphone",
-            "guide_title": "Games that make use of a foldable phone: what to check",
-            "triggers": [
-                "foldable phone games",
-                "games for foldable iphone",
-                "fold and unfold puzzle games",
-                "cute cat minigames collection",
-                "cozy cat mini games offline",
-                "minigame collection paid no ads",
-            ],
-            "persona": (
-                "people with a foldable iPhone, or a household where some phones "
-                "fold and some do not, who want small games that use the fold "
-                "for something instead of just stretching the picture"
-            ),
-            "lead": (
-                "Most games treat a foldable like any other big screen, so "
-                "folding and unfolding the phone never changes anything in "
-                "the game."
-            ),
-            "paras": [
-                (
-                    "A game that makes use of the fold gives the crease a job: "
-                    "a net, a center line or a mirror between two players, a "
-                    "secret you peek at on the outer screen before opening the "
-                    "phone, or a puzzle you solve by folding two halves "
-                    "together. Meow Party is built around ideas like these, "
-                    "across four families of 50 games: party, fold puzzles, "
-                    "arcade and rhythm, and cozy creations."
-                ),
-                (
-                    "Just as important is what happens on a phone that does "
-                    "not fold. Check that every fold move has an on-screen "
-                    "alternative; in Meow Party it is a hold-to-close or "
-                    "hold-to-peek button or, in solo games, a two-finger pinch, so every game stays fully playable "
-                    "on a regular iPhone and a family can share the same "
-                    "games whatever phones they carry."
-                ),
-            ],
-            "look": [
-                "Games where folding or the crease is part of the play, not just a bigger picture.",
-                "An on-screen alternative for every fold move on a regular iPhone.",
-                "Four families of 50 games: party, fold puzzles, arcade and rhythm, cozy creations.",
-                "A sticker book that collects a sticker for each game's first star and three stars.",
-                "The interface in 50 languages, following the system language.",
-            ],
-            "steps": [
-                "Browse by family, or use the Folding filter to see the games that react to the fold.",
-                "On a foldable, follow the title-screen hint to fold, close or open the phone at the right moment.",
-                "On a regular iPhone, use the on-screen hold-to-close or hold-to-peek button instead, or a two-finger pinch in solo games.",
-                "Earn stars across the levels and fill in the sticker book.",
-                "Hand the phone across the table for one of the two-player games.",
-            ],
-            "fits": (
-                "fits people who want a large collection of short, cute games "
-                "that use a foldable phone's fold and still play fully on a "
-                "regular iPhone, offline, for one upfront price with no in-app "
-                "purchases or ads."
-            ),
-            "faq": [
-                {
-                    "q": "Do I need a foldable phone?",
-                    "a": (
-                        "No. Every game is fully playable on a regular iPhone: "
-                        "each fold move has an on-screen hold-to-close or "
-                        "hold-to-peek button, or a two-finger pinch in solo games. On a foldable the fold itself "
-                        "becomes part of many games."
-                    ),
-                },
-                {
-                    "q": "Are the games original?",
-                    "a": (
-                        "Yes. All 200 minigames are original, and in every game "
-                        "you play as a cat from the Meow Squad."
-                    ),
-                },
-                {
-                    "q": "Does Meow Party collect any data?",
-                    "a": (
-                        "No. It has no network features, needs no account and "
-                        "collects no data; progress stays on your device."
+                        "No. There are no in-app purchases and no ads: all "
+                        "200 games are included, and no account is needed."
                     ),
                 },
             ],

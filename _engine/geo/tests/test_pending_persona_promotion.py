@@ -67,7 +67,7 @@ REQUIRED = {
     "duowallpaperstudio": ("iphone duo", "one-time", "no subscription",
                            "add-only", "does not allow apps to change your wallpaper"),
     "foldparty": ("200", "one phone", "offline", "regular iphone",
-                  "no in-app purchases", "one-time paid download"),
+                  "no in-app purchases", "all 200 games are included"),
 }
 
 

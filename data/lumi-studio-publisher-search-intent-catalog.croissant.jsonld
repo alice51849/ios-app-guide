@@ -180,7 +180,7 @@
     "@id": "https://open.cait518.cc/ios-app-guide/#organization"
   },
   "datePublished": "2026-07-19",
-  "dateModified": "2026-11-05",
+  "dateModified": "2026-11-06",
   "version": "1.0.0",
   "sdVersion": "1.0.0",
   "isLiveDataset": false,
@@ -261,9 +261,9 @@
       "name": "lumi-studio-publisher-search-intent-catalog.csv",
       "description": "Canonical UTF-8 table loaded by the publisher_intents RecordSet.",
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv",
-      "contentSize": "3145289 B",
+      "contentSize": "3146360 B",
       "encodingFormat": "text/csv",
-      "sha256": "4fe11e7901dfc92a392e18949224c1f88864a9568d566f21c907a8de1fdb9ee9"
+      "sha256": "a6538082b9548cf61d077b2015734568bd704060f42692fdff07659eda9fa5c4"
     },
     {
       "@type": "cr:FileObject",
@@ -271,9 +271,9 @@
       "name": "lumi-studio-publisher-search-intent-catalog.jsonl",
       "description": "The same 2,950 records serialized as newline-delimited JSON.",
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl",
-      "contentSize": "4373416 B",
+      "contentSize": "4374455 B",
       "encodingFormat": "application/x-ndjson",
-      "sha256": "ebd96766fabae77cf3ed33ecf700b93477dad39001f1eba04afbc8293d2ff8c5"
+      "sha256": "e6cc5f111cadce68356ad5b6b926264abdbdcba6d24a149c1d1589e54010ec20"
     },
     {
       "@type": "cr:FileObject",
@@ -281,9 +281,9 @@
       "name": "lumi-studio-publisher-search-intent-catalog.json",
       "description": "Dataset envelope with provenance, coverage and all 2,950 records.",
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json",
-      "contentSize": "4866045 B",
+      "contentSize": "4867084 B",
       "encodingFormat": "application/json",
-      "sha256": "29e077801e95f14e3f01c432eab8550a0a04cdd08f40d0a0624e8271ede718a1"
+      "sha256": "7f45d5458224b14be950df9824935c0f2e504eaebaa776382de969f874fa5f00"
     }
   ],
   "recordSet": [

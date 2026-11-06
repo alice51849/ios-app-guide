@@ -159,6 +159,6 @@ JSON, JSONL og CSV inneholder de samme 2 950 postene.
 
 [Hjem](https://open.cait518.cc/ios-app-guide/no/index.html) · [Åpne data](https://open.cait518.cc/ios-app-guide/no/data/lumi-studio-publisher-search-intent-catalog.html) · [Lisens](https://creativecommons.org/licenses/by/4.0/)
 
-Oppdatert: 2026-11-05
+Oppdatert: 2026-11-06
 
 CC BY 4.0 gjelder for den opprinnelige katalogsammensetningen; appnavn og App Store-merker tilhører sine eiere.

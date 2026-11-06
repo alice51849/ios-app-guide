@@ -6,7 +6,7 @@
   "name": "Lumi Studio Publisher Search Intent Catalog",
   "description": "A first-party catalog of who each app is designed for, the task they are trying to complete, and the direct App Store path.",
   "inLanguage": "en-US",
-  "dateModified": "2026-11-05",
+  "dateModified": "2026-11-06",
   "numberOfItems": 59,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -2064,8 +2064,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/en-US.jsonld#offer-metrotimehelper",
         "url": "https://apps.apple.com/us/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Metro Time Helper: Taipei MRT",
-        "description": "Built for the Taipei MRT in Taiwan: tell Metro Time Helper when you need to be there, and it tells you the latest time to walk into the station.",
+        "name": "Metro Time Helper",
+        "description": "Metro Time Helper — Built for the Taipei MRT in Taiwan: tell Metro Time Helper when you need to be there, and it tells you the latest time to walk into the station. Free to start · One-time unlock · No subscription.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2080,7 +2080,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6819061896"
           },
-          "name": "Metro Time Helper: Taipei MRT",
+          "name": "Metro Time Helper",
           "operatingSystem": "iOS",
           "applicationCategory": "UtilitiesApplication",
           "url": "https://apps.apple.com/us/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
@@ -2091,11 +2091,11 @@
             "target": "https://apps.apple.com/us/app/id6819061896?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/en-US/metrotimehelper.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/en-US/answers/taipei-mrt-app-that-tells-me-what-time-to-leave-to-arrive-on-time.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6819061896",
           "inLanguage": "en-US",
-          "description": "Built for the Taipei MRT in Taiwan: tell Metro Time Helper when you need to be there, and it tells you the latest time to walk into the station.",
+          "description": "Metro Time Helper — Built for the Taipei MRT in Taiwan: tell Metro Time Helper when you need to be there, and it tells you the latest time to walk into the station. Free to start · One-time unlock · No subscription.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/en-US.jsonld#offer-metrotimehelper"
           },

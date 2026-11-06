@@ -2,7 +2,7 @@
 title: "Meow Party: Game Mèo 2 Người — 200 trò chơi, gập máy càng vui | iOS App"
 lang: "vi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/foldparty/decision/l/vi/index.html"
-modified: "2026-11-05"
+modified: "2026-11-06"
 app_store_id: "6829184924"
 verified_live: true
 purchase_model: "paid_upfront"

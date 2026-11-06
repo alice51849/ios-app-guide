@@ -2,7 +2,7 @@
 title: "TripBee Cute: ଯାତ୍ରା ଡାଏରୀ — ସୁନ୍ଦର ଚିତ୍ରିତ ଭ୍ରମଣ ପୁସ୍ତିକା | iOS App"
 lang: "or-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbeecute/decision/l/or-IN/index.html"
-modified: "2026-11-05"
+modified: "2026-11-06"
 app_store_id: "6826987407"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

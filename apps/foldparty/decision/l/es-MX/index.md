@@ -2,7 +2,7 @@
 title: "Meow Party: Juegos de Gatos — 200 minijuegos en tu plegable | iOS App"
 lang: "es-MX"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/foldparty/decision/l/es-MX/index.html"
-modified: "2026-11-05"
+modified: "2026-11-06"
 app_store_id: "6829184924"
 verified_live: true
 purchase_model: "paid_upfront"

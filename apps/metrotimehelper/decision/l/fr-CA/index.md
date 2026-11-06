@@ -2,7 +2,7 @@
 title: "Taipei : l’Assistant Métro — Quand partir? On s’en occupe | iOS App"
 lang: "fr-CA"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/metrotimehelper/decision/l/fr-CA/index.html"
-modified: "2026-11-05"
+modified: "2026-11-06"
 app_store_id: "6819061896"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

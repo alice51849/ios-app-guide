@@ -2,7 +2,7 @@
 title: "אפליקציית מתמטיקה מלאה לגיל הגן וכיתות ראשונות"
 lang: "he"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimathpro/decision/l/he/index.html"
-modified: "2026-11-05"
+modified: "2026-11-06"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"

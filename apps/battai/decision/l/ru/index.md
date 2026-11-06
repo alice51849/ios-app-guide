@@ -2,7 +2,7 @@
 title: "BattAI: Состояние батареи — Проверка и заряд аккумулятора | iOS App"
 lang: "ru"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/battai/decision/l/ru/index.html"
-modified: "2026-11-05"
+modified: "2026-11-06"
 app_store_id: "6802423998"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

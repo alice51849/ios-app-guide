@@ -2,7 +2,7 @@
 title: "bästa vokabulärappen för upptagna pendlare med Apple Watch"
 lang: "sv"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wordmate/decision/l/sv/index.html"
-modified: "2026-11-05"
+modified: "2026-11-06"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"

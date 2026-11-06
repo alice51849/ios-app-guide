@@ -2,7 +2,7 @@
 title: "타이베이 지하철 시간 도우미 — 도착 시각으로 출발 시각 역산 | iOS App"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/metrotimehelper/decision/l/ko/index.html"
-modified: "2026-11-05"
+modified: "2026-11-06"
 app_store_id: "6819061896"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

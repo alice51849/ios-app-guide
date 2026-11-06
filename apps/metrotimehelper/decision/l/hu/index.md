@@ -2,7 +2,7 @@
 title: "Taipei: Időtervező a metróhoz — Tudd, mikor kell elindulnod | iOS App"
 lang: "hu"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/metrotimehelper/decision/l/hu/index.html"
-modified: "2026-11-05"
+modified: "2026-11-06"
 app_store_id: "6819061896"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

@@ -2,7 +2,7 @@
 title: "Meow Party: Παιχνίδια για 2 — 200 παιχνίδια για πτυσσόμενα | iOS App"
 lang: "el"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/foldparty/decision/l/el/index.html"
-modified: "2026-11-05"
+modified: "2026-11-06"
 app_store_id: "6829184924"
 verified_live: true
 purchase_model: "paid_upfront"

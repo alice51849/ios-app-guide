@@ -694,7 +694,7 @@ def main():
     ap.add_argument("--slot", type=int, required=True)
     ap.add_argument("--date", help="YYYY-MM-DD, default today (UTC)")
     args = ap.parse_args()
-    day = dt.date.fromisoformat(args.date) if args.date else dt.datetime.now(dt.timezone.utc).date()
+    day = dt.date.fromisoformat(args.date) if args.date else CR.today_utc()
     if not CLIPS.exists():
         print("clip: no clips.json yet, nothing to post")
         return 0

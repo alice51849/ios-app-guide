@@ -366,6 +366,9 @@ _CAMPAIGN_PREFIXES = (
 # audience-segment links ln_mochi_<seg>_<cc>_<ch>_<MMDD> (segment_ct.py; 00_GrowthEngine ops/company/audience/mochi.md), and
 # any token not listed above (00_GrowthEngine's inventory test names those).
 _CAMPAIGN_KEEP = ("gx_reach_", "yt_longform", "th_mochi_", "ln_mochi_")
+# A-2 creator promo-code line (reports/yi30/a2_creators/kit_2026-11-07.md): exactly h_<app>_kol keeps its own
+# row so the line is told apart from the app's other outreach; h_<app>_<cc>_kol and other hero kits still merge.
+_KEEP_EXACT_RE = re.compile(r"^h_[a-z0-9]+_kol$")
 _CT_PARAM = re.compile(r"(?<=[?&;])ct=([A-Za-z0-9_-]+)")
 # Per app, the channel rows are merged further until they can pass Apple's threshold (owner 2026-10-18: every app
 # earns on its own, so each app gets its own split; merging only ever happens inside one app). Tier from
@@ -388,7 +391,7 @@ def coarse_campaign(token):
         return t or raw
     if _companion_base(t):  # a companion line's <campaign>_lite (COMPANION_APPS) is sent as it is
         return raw
-    if t.startswith(_CAMPAIGN_KEEP):
+    if t.startswith(_CAMPAIGN_KEEP) or _KEEP_EXACT_RE.match(t):
         return raw
     if t in _CAMPAIGN_EXACT:
         return _CAMPAIGN_EXACT[t]

@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-11-05",
-  "content_digest": "cfd8097e2d160bb22da9f0415e9bc3c45e093acb6a1c2a6fc701a91301d98006",
+  "date_modified": "2026-11-06",
+  "content_digest": "968c0df0fe30c8c52446d25461186dcfc43d3968da1ac72ba9b47208089b56ff",
   "locale": "ko",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -182,7 +182,8 @@
         "충전 관리",
         "충전 구간",
         "충전 속도",
-        "데이터 내보내기"
+        "데이터 내보내기",
+        "배터리"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1300,7 +1301,8 @@
         "5세",
         "연산",
         "숫자",
-        "사칙연산"
+        "사칙연산",
+        "수학 놀이"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1794,7 +1796,9 @@
         "교체주기",
         "화분",
         "빨래",
-        "기한"
+        "기한",
+        "마지막으로 한 날",
+        "마지막 기록"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2895,7 +2899,9 @@
         "레이턴시",
         "응답시간",
         "연결상태",
-        "사이트확인"
+        "사이트확인",
+        "인터넷 연결 확인",
+        "와이파이 진단"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,

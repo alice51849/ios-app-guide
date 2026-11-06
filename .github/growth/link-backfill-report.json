@@ -1,12 +1,12 @@
 {
- "generated": "2026-11-06T06:55:50Z",
+ "generated": "2026-11-06T16:51:45Z",
  "mode": "apply",
  "counts": {
-  "ok_reply": 47,
+  "ok_reply": 49,
   "unknown_app": 47,
-  "ok_backfilled_earlier": 41,
+  "ok_backfilled_earlier": 43,
   "backfilled": 2,
-  "ok_store_only": 689,
+  "ok_store_only": 687,
   "ok_bio_link": 68,
   "ok_caption": 4,
   "taken_down": 4,
@@ -23,6 +23,30 @@
    "text": "Vacation Countdown & Planner. Each trip sits on your bookshelf as a little booklet with its own illustrated cover. TripBee Cute: Travel Jour",
    "why": "brand",
    "ios_id": "6826987407",
+   "locale": "en"
+  },
+  {
+   "channel": "threads",
+   "id": "18002721347816704",
+   "permalink": "https://www.threads.com/@hourstag.app/post/DfZ5tMSlFId",
+   "date": "2026-11-06",
+   "app": "lumibopomofo",
+   "status": "ok_reply",
+   "text": "大班的暑假只剩幾週,ㄅㄆㄇ還沒開始。 開發者分享，非獨立評比。家長可陪孩子先聽音、描寫注音。免費版可體驗核心玩法；一次性購買解鎖全部 37 個注音與所有關卡。 Lumi Bopomofo",
+   "why": "brand",
+   "ios_id": "6773017109",
+   "locale": "zh-Hant"
+  },
+  {
+   "channel": "threads",
+   "id": "17940226470406618",
+   "permalink": "https://www.threads.com/@hourstag.app/post/DfZPFOLE8-h",
+   "date": "2026-11-06",
+   "app": "gmoneylite",
+   "status": "ok_reply",
+   "text": "Travel Budget & Currency. Know how much you can still spend today, wherever you travel. G+Money Lite: Trip Spending",
+   "why": "brand",
+   "ios_id": "6793436548",
    "locale": "en"
   },
   {
@@ -887,16 +911,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DddKfLVgTAn",
    "date": "2026-09-19",
    "app": "cyca",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "Ovulation, règles & SPM. Découvrez Cyca — la façon douce et privée de comprendre votre cycle. Cyca : Suivi de Règles Si vous voulez l’essaye",
    "why": "url+brand",
    "ios_id": "6782251621",
-   "locale": "other",
-   "own_replies": [],
-   "comment_id": "18108051152211760",
-   "at": "2026-11-06T06:53:08Z",
-   "verified": true,
-   "via": "list"
+   "locale": "other"
   },
   {
    "channel": "threads",
@@ -940,16 +959,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/Ddc3QW0gYUw",
    "date": "2026-09-19",
    "app": "zipbox",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "Nyahzip fail tanpa iklan. Lihat kandungan arkib tanpa perlu mengekstraknya. Zipbox: Buka RAR, ZIP, 7z Pautan App Store ada di sini: https://",
    "why": "url+brand",
    "ios_id": "6806776579",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "18111298646245775",
-   "at": "2026-11-06T06:53:08Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",
@@ -981,11 +995,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdalFdUiT6M",
    "date": "2026-09-19",
    "app": "mochidonestamp",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "一份你不想打開的待辦清單，只是一份讓你有罪惡感的清單。 開發者分享，非獨立評比。Mochi DoneStamp 先設提醒間隔，換完濾芯再點完成，下次從真正做完時起算。免費含 1 個進行中事件與歷史；一次買斷開啟不限事件。晚記可補日期，點錯能復原。 Mochi DoneStamp ",
    "why": "url+brand",
    "ios_id": "6790800323",
-   "locale": "zh-Hant"
+   "locale": "zh-Hant",
+   "own_replies": [],
+   "comment_id": "18099701849423281",
+   "at": "2026-11-06T16:48:59Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -1029,11 +1048,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdcpBN2gR0M",
    "date": "2026-09-18",
    "app": "lumibopomofo",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "Zhuyin: fonik mandarin. Permulaan yang mesra untuk bunyi Mandarin Cina. Lumi Bopomofo Kalau nak cuba, ini pautannya: https://apps.apple.com/",
    "why": "url+brand",
    "ios_id": "6773017109",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "18148313713592946",
+   "at": "2026-11-06T16:48:59Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",

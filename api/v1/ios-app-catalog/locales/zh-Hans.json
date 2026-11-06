@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-11-05",
-  "content_digest": "cfd8097e2d160bb22da9f0415e9bc3c45e093acb6a1c2a6fc701a91301d98006",
+  "date_modified": "2026-11-06",
+  "content_digest": "968c0df0fe30c8c52446d25461186dcfc43d3968da1ac72ba9b47208089b56ff",
   "locale": "zh-Hans",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -1512,7 +1512,8 @@
         "四岁",
         "五岁",
         "打卡",
-        "游戏"
+        "游戏",
+        "儿童 习惯"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1973,7 +1974,8 @@
         "团购",
         "活动",
         "家庭",
-        "流水"
+        "流水",
+        "项目支出"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2194,7 +2196,8 @@
         "快递",
         "电话",
         "短信",
-        "邮件"
+        "邮件",
+        "二维码 安全检测"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

@@ -29979,5 +29979,129 @@
     ]
    ]
   }
+ },
+ {
+  "key": "claudeusagemini",
+  "locale": "de-DE",
+  "market": "DE",
+  "term": "codex limit",
+  "rank": 13,
+  "slug": "codex-limit-5-hour-and-weekly-window-check-before-a-long-agent-run",
+  "loc": {
+   "title": "Codex Limit: 5-Stunden- und Wochenfenster vor einem langen Lauf prüfen",
+   "meta": "Das Codex Limit besteht aus zwei Fenstern: 5 Stunden und eine Woche. So siehst du vor einem langen Agentenlauf, was in beiden übrig ist und wann genau sie zurückgesetzt werden.",
+   "h1": "Codex Limit: vor dem langen Lauf beide Fenster prüfen",
+   "lead": "Ein Agent, der eine Stunde lang refaktoriert, bricht nicht an der schwierigen Stelle ab, sondern dort, wo das Limit endet. Meist hätte ein kurzer Blick vorher gereicht.",
+   "answer": "Das Codex Limit von ChatGPT läuft in zwei Fenstern: einem 5-Stunden-Fenster und einem Wochenfenster. Bevor du einen langen Lauf startest, prüfe beide; ist eines fast leer, warte auf die Zurücksetzung oder teile die Aufgabe in kleinere Schritte.",
+   "paras": [
+    "Wer nach „Codex Limit“ sucht, ist oft gerade mitten in einer Aufgabe gestoppt worden. ChatGPT Codex zählt die Nutzung in einem 5-Stunden-Fenster und in einem Wochenfenster. Das 5-Stunden-Fenster ist nach wenigen Stunden wieder frei, das Wochenfenster nicht. Ein langer Agentenlauf, der beide stark belastet, kann deshalb an einem Dienstag die halbe Woche kosten.",
+    "Die wichtigste Gewohnheit: vor jedem großen Lauf beide Zahlen ansehen, nicht erst danach. UsageNow zeigt das 5-Stunden- und das Wochenfenster von ChatGPT Codex in Widgets für Home-Bildschirm und Sperrbildschirm und als Komplikation auf der Apple Watch, mit Live-Countdown bis zur Zurücksetzung und genauer Uhrzeit im Format deiner Region. Auf dem Widget tippst du, um die neuesten Werte zu laden.",
+    "Wer mehrere Konten nutzt, etwa beruflich und privat, sortiert in UsageNow nach Zurücksetzung des 5-Stunden-Limits oder des Wochenlimits und sieht sofort, auf welchem Konto der nächste Lauf noch Platz hat. Eigene Warnungen bei einem Prozentwert wie 90 oder 98 kommen nur einmal pro Limit und Zyklus, und eine Warnung zum Zurücksetzen meldet, wann wieder Kapazität da ist."
+   ],
+   "look": [
+    "Werden 5-Stunden- und Wochenfenster von Codex getrennt angezeigt?",
+    "Siehst du die genaue Uhrzeit der nächsten Zurücksetzung, nicht nur einen Balken?",
+    "Lässt sich eine Warnung bei deinem eigenen Prozentwert einstellen?",
+    "Kannst du mehrere Konten nach Zurücksetzung sortieren?",
+    "Bleibt die Anmeldung im Schlüsselbund deines Geräts?"
+   ],
+   "steps": [
+    "Melde dich auf der offiziellen Anmeldeseite von ChatGPT an.",
+    "Lege ein Widget mit beiden Codex-Fenstern auf den Home-Bildschirm.",
+    "Prüfe vor einem langen Lauf, wie viel im 5-Stunden- und im Wochenfenster übrig ist.",
+    "Ist eines fast aufgebraucht: Aufgabe teilen oder bis zur Zurücksetzung warten.",
+    "Lege Warnungen bei 90 und eine Warnung zum Zurücksetzen an."
+   ],
+   "rows": [
+    [
+     "5-Stunden-Fenster",
+     "Restmenge und Uhrzeit der Zurücksetzung",
+     "Bestimmt, ob der nächste Lauf heute noch durchläuft"
+    ],
+    [
+     "Wochenfenster",
+     "Restmenge und Tag der Zurücksetzung",
+     "Ist es leer, wartest du Tage statt Stunden"
+    ],
+    [
+     "Zwei Konten",
+     "Sortierung nach Zurücksetzung",
+     "Zeigt, auf welchem Konto der Lauf noch Platz hat"
+    ]
+   ],
+   "fits": "UsageNow passt zu Entwicklerinnen und Entwicklern, die täglich mit ChatGPT Codex, Claude, GitHub Copilot und Gemini arbeiten und vor einem langen Lauf wissen wollen, was noch übrig ist. Die App läuft auf iPhone, iPad und Apple Watch, ist in 50 Sprachen übersetzt und hat keinen eigenen Server, kein Konto zum Anlegen und kein Tracking. UsageNow ist eine unabhängige App und steht in keiner Verbindung zu OpenAI.",
+   "faq": [
+    [
+     "Wie viele Fenster hat das Codex Limit?",
+     "Zwei: ein 5-Stunden-Fenster und ein Wochenfenster. Beide werden getrennt gezählt und getrennt zurückgesetzt."
+    ],
+    [
+     "Was tun, wenn das Wochenfenster fast leer ist?",
+     "Große Läufe auf die Zeit nach der Zurücksetzung legen, Aufgaben in kleinere Schritte teilen oder auf ein anderes Konto wechseln, das noch Platz hat."
+    ],
+    [
+     "Muss ich mein Passwort an UsageNow geben?",
+     "Nein. Du meldest dich auf der Anmeldeseite des Dienstes selbst an, die Anmeldung bleibt im Schlüsselbund deines Geräts, und UsageNow spricht nur mit dem Dienst."
+    ]
+   ]
+  },
+  "en": {
+   "title": "Codex limit: check the 5-hour and weekly windows before a long run",
+   "meta": "The Codex limit has two windows: 5 hours and one week. See what is left in both, and exactly when each resets, before you start a long agent run.",
+   "h1": "Codex limit: check both windows before the long run",
+   "lead": "An agent refactoring for an hour does not stop at the hard part. It stops where the limit runs out, and a quick look beforehand would usually have been enough.",
+   "answer": "ChatGPT Codex usage is counted in two windows: a 5-hour window and a weekly window. Before a long run, check both; if one is nearly empty, wait for the reset or split the task into smaller steps.",
+   "paras": [
+    "People searching for the Codex limit have often just been stopped mid-task. ChatGPT Codex counts usage in a 5-hour window and a weekly window. The 5-hour window frees up within hours; the weekly one does not. A long agent run that leans hard on both can cost half the week on a Tuesday.",
+    "The habit that matters is checking both numbers before each big run, not after. UsageNow shows the ChatGPT Codex 5-hour and weekly windows on Home Screen and Lock Screen widgets and as Apple Watch complications, with a live countdown to each reset and the exact time in your local format. Tap the widget to load the latest numbers.",
+    "With several accounts, such as work and personal, sort by 5-hour reset or weekly reset in UsageNow and you see right away which account still has room for the next run. Your own alerts at a percentage like 90 or 98 arrive once per limit and cycle, and a reset alert tells you when capacity is back."
+   ],
+   "look": [
+    "Are the Codex 5-hour and weekly windows shown separately?",
+    "Do you see the exact time of the next reset, not just a bar?",
+    "Can you set an alert at your own percentage?",
+    "Can you sort several accounts by reset?",
+    "Does the sign-in stay in your device's Keychain?"
+   ],
+   "steps": [
+    "Sign in on ChatGPT's official login page.",
+    "Put a widget with both Codex windows on your Home Screen.",
+    "Before a long run, check what is left in the 5-hour and weekly windows.",
+    "If one is nearly used up, split the task or wait for the reset.",
+    "Create alerts at 90 and turn on a reset alert."
+   ],
+   "rows": [
+    [
+     "5-hour window",
+     "What is left and the reset time",
+     "Decides whether the next run finishes today"
+    ],
+    [
+     "Weekly window",
+     "What is left and the reset day",
+     "When it is empty, you wait days instead of hours"
+    ],
+    [
+     "Two accounts",
+     "Sorting by reset",
+     "Shows which account still has room for the run"
+    ]
+   ],
+   "fits": "UsageNow fits developers who work with ChatGPT Codex, Claude, GitHub Copilot and Gemini every day and want to know what is left before a long run. It runs on iPhone, iPad and Apple Watch, is translated into 50 languages, and has no UsageNow server, no account to create and no tracking. UsageNow is an independent app and is not affiliated with OpenAI.",
+   "faq": [
+    [
+     "How many windows does the Codex limit have?",
+     "Two: a 5-hour window and a weekly window. They are counted and reset separately."
+    ],
+    [
+     "What if the weekly window is almost empty?",
+     "Move big runs to after the reset, split tasks into smaller steps, or switch to another account that still has room."
+    ],
+    [
+     "Do I give UsageNow my password?",
+     "No. You sign in on the service's own login page, the sign-in stays in your device's Keychain, and UsageNow talks only to the service itself."
+    ]
+   ]
+  }
  }
 ]

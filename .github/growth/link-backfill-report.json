@@ -1,18 +1,30 @@
 {
- "generated": "2026-11-05T17:30:14Z",
+ "generated": "2026-11-06T06:55:50Z",
  "mode": "apply",
  "counts": {
-  "ok_reply": 46,
+  "ok_reply": 47,
   "unknown_app": 47,
-  "ok_backfilled_earlier": 39,
-  "ok_store_only": 691,
+  "ok_backfilled_earlier": 41,
   "backfilled": 2,
+  "ok_store_only": 689,
   "ok_bio_link": 68,
   "ok_caption": 4,
   "taken_down": 4,
   "missing": 3
  },
  "rows": [
+  {
+   "channel": "threads",
+   "id": "18159555385515328",
+   "permalink": "https://www.threads.com/@hourstag.app/post/DfYbSh4E-4r",
+   "date": "2026-11-06",
+   "app": "tripbeecute",
+   "status": "ok_reply",
+   "text": "Vacation Countdown & Planner. Each trip sits on your bookshelf as a little booklet with its own illustrated cover. TripBee Cute: Travel Jour",
+   "why": "brand",
+   "ios_id": "6826987407",
+   "locale": "en"
+  },
   {
    "channel": "threads",
    "id": "18131934139788401",
@@ -875,11 +887,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DddKfLVgTAn",
    "date": "2026-09-19",
    "app": "cyca",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "Ovulation, règles & SPM. Découvrez Cyca — la façon douce et privée de comprendre votre cycle. Cyca : Suivi de Règles Si vous voulez l’essaye",
    "why": "url+brand",
    "ios_id": "6782251621",
-   "locale": "other"
+   "locale": "other",
+   "own_replies": [],
+   "comment_id": "18108051152211760",
+   "at": "2026-11-06T06:53:08Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -899,16 +916,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DddliqAkqLr",
    "date": "2026-09-19",
    "app": "maskmyfile",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "You sent the bank statement. The account number was still on it. Our app, not a ranking: Review private details and export a cleaned copy. R",
    "why": "url+brand",
    "ios_id": "6792850916",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "18249565339313789",
-   "at": "2026-11-05T17:27:18Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",
@@ -916,16 +928,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DddKgLnAQyv",
    "date": "2026-09-19",
    "app": "lumiletters",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "難得聽到孩子說「再玩五分鐘」,而那是在學東西。 開發者分享，非獨立評比。家長可先陪孩子聽音、描寫 A。免費只開放 A，其餘字母由家長以一次性內購永久解鎖。 Lumi Letters 順手附個連結: https://apps.apple.com/tw/app/id677874853",
    "why": "url",
    "ios_id": "6778748533",
-   "locale": "zh-Hant",
-   "own_replies": [],
-   "comment_id": "18130418884851132",
-   "at": "2026-11-05T17:27:18Z",
-   "verified": true,
-   "via": "list"
+   "locale": "zh-Hant"
   },
   {
    "channel": "threads",
@@ -933,11 +940,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/Ddc3QW0gYUw",
    "date": "2026-09-19",
    "app": "zipbox",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "Nyahzip fail tanpa iklan. Lihat kandungan arkib tanpa perlu mengekstraknya. Zipbox: Buka RAR, ZIP, 7z Pautan App Store ada di sini: https://",
    "why": "url+brand",
    "ios_id": "6806776579",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "18111298646245775",
+   "at": "2026-11-06T06:53:08Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",

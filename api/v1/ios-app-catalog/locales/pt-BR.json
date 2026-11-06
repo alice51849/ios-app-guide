@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-11-05",
-  "content_digest": "cfd8097e2d160bb22da9f0415e9bc3c45e093acb6a1c2a6fc701a91301d98006",
+  "date_modified": "2026-11-06",
+  "content_digest": "968c0df0fe30c8c52446d25461186dcfc43d3968da1ac72ba9b47208089b56ff",
   "locale": "pt-BR",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -385,7 +385,8 @@
         "aeroporto",
         "restaurante",
         "hotel",
-        "offline"
+        "offline",
+        "guia de conversação"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -468,7 +469,8 @@
         "widget",
         "flip",
         "analógico",
-        "fofo"
+        "fofo",
+        "despertador dia útil"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -751,7 +753,8 @@
         "letras",
         "fila",
         "palco",
-        "aviso"
+        "aviso",
+        "placa aeroporto"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1200,7 +1203,8 @@
         "anonimizar",
         "lgpd",
         "exif",
-        "senha"
+        "senha",
+        "tarjar pdf"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1328,7 +1332,10 @@
         "calendário",
         "widget",
         "organização",
-        "diária"
+        "diária",
+        "lista de tarefas",
+        "checklist",
+        "to do list"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1821,7 +1828,8 @@
         "colocar",
         "deixar",
         "pdf",
-        "imagem"
+        "imagem",
+        "foto 3x4"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1979,7 +1987,8 @@
         "fotos",
         "hotel",
         "museu",
-        "aeroporto"
+        "aeroporto",
+        "jogos para viagem de carro"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2144,7 +2153,8 @@
         "4k",
         "corrigir",
         "embaçada",
-        "ia"
+        "ia",
+        "corrigir foto borrada"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

@@ -12,8 +12,8 @@
   ],
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
-    "dateModified": "2026-11-05",
-    "contentDigest": "cfd8097e2d160bb22da9f0415e9bc3c45e093acb6a1c2a6fc701a91301d98006",
+    "dateModified": "2026-11-06",
+    "contentDigest": "968c0df0fe30c8c52446d25461186dcfc43d3968da1ac72ba9b47208089b56ff",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
     "recordCount": 59
@@ -630,10 +630,11 @@
         "文字盤",
         "横断幕",
         "メッセージ",
-        "テロップ"
+        "テロップ",
+        "お迎え ボード"
       ],
       "language": "ja",
-      "date_modified": "2026-11-04T10:05:32Z"
+      "date_modified": "2026-11-06T15:15:46Z"
     },
     {
       "id": "https://apps.apple.com/app/id6780107485",
@@ -1003,10 +1004,11 @@
         "プライバシー",
         "保険証",
         "ファイル",
-        "診断書"
+        "診断書",
+        "個人情報 マスク"
       ],
       "language": "ja",
-      "date_modified": "2026-11-04T10:05:32Z"
+      "date_modified": "2026-11-06T15:15:46Z"
     },
     {
       "id": "https://apps.apple.com/app/id6829184924",
@@ -1141,10 +1143,11 @@
         "オイル交換",
         "消耗品",
         "経過日数",
-        "日数"
+        "日数",
+        "最後にしたのは いつ"
       ],
       "language": "ja",
-      "date_modified": "2026-11-03T16:50:53Z"
+      "date_modified": "2026-11-06T15:15:46Z"
     },
     {
       "id": "https://apps.apple.com/app/id6801956402",
@@ -1212,10 +1215,11 @@
         "学生",
         "授業",
         "作り方",
-        "pdf"
+        "pdf",
+        "プレゼン 作成"
       ],
       "language": "ja",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-06T15:15:46Z"
     },
     {
       "id": "https://apps.apple.com/app/id6781808054",
@@ -1545,10 +1549,11 @@
         "大きい文字",
         "カレンダー",
         "フリップ時計",
-        "全画面時計"
+        "全画面時計",
+        "置き時計"
       ],
       "language": "ja",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-06T15:15:46Z"
     },
     {
       "id": "https://apps.apple.com/app/id6807335593",
@@ -1690,10 +1695,11 @@
         "メモ",
         "計画",
         "行程",
-        "旅行"
+        "旅行",
+        "旅程"
       ],
       "language": "ja",
-      "date_modified": "2026-11-04T10:05:32Z"
+      "date_modified": "2026-11-06T15:15:46Z"
     },
     {
       "id": "https://apps.apple.com/app/id6787754435",
@@ -1753,10 +1759,11 @@
         "鮮明に",
         "解像度",
         "超解像",
-        "シャープ補正"
+        "シャープ補正",
+        "ぼやけた 写真 修正"
       ],
       "language": "ja",
-      "date_modified": "2026-11-01T05:54:58Z"
+      "date_modified": "2026-11-06T15:15:46Z"
     },
     {
       "id": "https://apps.apple.com/app/id6818607603",
@@ -1784,10 +1791,13 @@
         "カウントダウン",
         "生成ai",
         "週間",
-        "管理"
+        "管理",
+        "ai 使用量 管理",
+        "codex 使用制限",
+        "claude 使用制限"
       ],
       "language": "ja",
-      "date_modified": "2026-10-25T07:47:08Z"
+      "date_modified": "2026-11-06T15:15:46Z"
     },
     {
       "id": "https://apps.apple.com/app/id6790467886",
@@ -1847,10 +1857,11 @@
         "プロバイダ",
         "モデム",
         "対処",
-        "直し方"
+        "直し方",
+        "wifi つながらない"
       ],
       "language": "ja",
-      "date_modified": "2026-11-04T10:05:32Z"
+      "date_modified": "2026-11-06T15:15:46Z"
     },
     {
       "id": "https://apps.apple.com/app/id6797601720",
@@ -1947,10 +1958,12 @@
         "aes",
         "bz2",
         "xz",
-        "フォルダ"
+        "フォルダ",
+        "パスワード付きzip",
+        "7zを解凍"
       ],
       "language": "ja",
-      "date_modified": "2026-11-04T10:05:32Z"
+      "date_modified": "2026-11-06T15:15:46Z"
     }
   ]
 }

@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-11-05",
-  "content_digest": "cfd8097e2d160bb22da9f0415e9bc3c45e093acb6a1c2a6fc701a91301d98006",
+  "date_modified": "2026-11-06",
+  "content_digest": "968c0df0fe30c8c52446d25461186dcfc43d3968da1ac72ba9b47208089b56ff",
   "locale": "ja",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -943,7 +943,8 @@
         "文字盤",
         "横断幕",
         "メッセージ",
-        "テロップ"
+        "テロップ",
+        "お迎え ボード"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1520,7 +1521,8 @@
         "プライバシー",
         "保険証",
         "ファイル",
-        "診断書"
+        "診断書",
+        "個人情報 マスク"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1732,7 +1734,8 @@
         "オイル交換",
         "消耗品",
         "経過日数",
-        "日数"
+        "日数",
+        "最後にしたのは いつ"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1839,7 +1842,8 @@
         "学生",
         "授業",
         "作り方",
-        "pdf"
+        "pdf",
+        "プレゼン 作成"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2372,7 +2376,8 @@
         "大きい文字",
         "カレンダー",
         "フリップ時計",
-        "全画面時計"
+        "全画面時計",
+        "置き時計"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2589,7 +2594,8 @@
         "メモ",
         "計画",
         "行程",
-        "旅行"
+        "旅行",
+        "旅程"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2688,7 +2694,8 @@
         "鮮明に",
         "解像度",
         "超解像",
-        "シャープ補正"
+        "シャープ補正",
+        "ぼやけた 写真 修正"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2737,7 +2744,10 @@
         "カウントダウン",
         "生成ai",
         "週間",
-        "管理"
+        "管理",
+        "ai 使用量 管理",
+        "codex 使用制限",
+        "claude 使用制限"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2836,7 +2846,8 @@
         "プロバイダ",
         "モデム",
         "対処",
-        "直し方"
+        "直し方",
+        "wifi つながらない"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2990,7 +3001,9 @@
         "aes",
         "bz2",
         "xz",
-        "フォルダ"
+        "フォルダ",
+        "パスワード付きzip",
+        "7zを解凍"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,

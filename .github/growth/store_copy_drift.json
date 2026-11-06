@@ -1070,6 +1070,87 @@
    },
    "status": "green"
   },
+  "foldparty": {
+   "blocked_terms": [],
+   "brands": [
+    "Мяу-вечеринка",
+    "ปาร์ตี้เหมียว",
+    "Мяу-вечірка",
+    "にゃんにゃんパーティー",
+    "Meow Party",
+    "냥냥 파티",
+    "喵喵派对",
+    "喵喵派對"
+   ],
+   "live_updated": "2026-11-05",
+   "live_version": "1.0.0",
+   "locales": {
+    "de-DE": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-11-05",
+     "live_version": "1.0.0",
+     "same": true
+    },
+    "en-GB": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-11-05",
+     "live_version": "1.0.0",
+     "same": true
+    },
+    "en-US": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-11-05",
+     "live_version": "1.0.0",
+     "same": true
+    },
+    "es-ES": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-11-05",
+     "live_version": "1.0.0",
+     "same": true
+    },
+    "fr-FR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-11-05",
+     "live_version": "1.0.0",
+     "same": true
+    },
+    "ja": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-11-05",
+     "live_version": "1.0.0",
+     "same": true
+    },
+    "ko": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-11-05",
+     "live_version": "1.0.0",
+     "same": true
+    },
+    "pt-BR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-11-05",
+     "live_version": "1.0.0",
+     "same": true
+    },
+    "zh-Hant": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-11-05",
+     "live_version": "1.0.0",
+     "same": true
+    }
+   },
+   "status": "green"
+  },
   "gbago": {
    "blocked_terms": [],
    "brands": [
@@ -4094,6 +4175,88 @@
    },
    "status": "green"
   },
+  "tripbeecute": {
+   "blocked_terms": [],
+   "brands": [
+    "TripBee Cute Diario di viaggio",
+    "TripBee Cute"
+   ],
+   "live_updated": "2026-11-05",
+   "live_version": "1.0.0",
+   "locales": {
+    "de-DE": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-11-05",
+     "live_version": "1.0.0",
+     "same": true
+    },
+    "en-GB": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-11-05",
+     "live_version": "1.0.0",
+     "same": true
+    },
+    "en-US": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-11-05",
+     "live_version": "1.0.0",
+     "same": true
+    },
+    "es-ES": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-11-05",
+     "live_version": "1.0.0",
+     "same": true
+    },
+    "fr-FR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-11-05",
+     "live_version": "1.0.0",
+     "same": true
+    },
+    "ja": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-11-05",
+     "live_version": "1.0.0",
+     "same": true
+    },
+    "ko": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-11-05",
+     "live_version": "1.0.0",
+     "same": true
+    },
+    "pt-BR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-11-05",
+     "live_version": "1.0.0",
+     "same": true
+    },
+    "zh-Hans": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-11-05",
+     "live_version": "1.0.0",
+     "same": true
+    },
+    "zh-Hant": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-11-05",
+     "live_version": "1.0.0",
+     "same": true
+    }
+   },
+   "status": "green"
+  },
   "tripbeelite": {
    "blocked_terms": [],
    "brands": [
@@ -4793,11 +4956,11 @@
   "gb"
  ],
  "counts": {
-  "green": 57,
+  "green": 59,
   "red": 0,
   "unknown": 0
  },
  "errors": [],
- "generated_at": "2026-11-05T03:57:41Z",
+ "generated_at": "2026-11-06T03:50:14Z",
  "schema": "growth.store-copy-drift/v1"
 }

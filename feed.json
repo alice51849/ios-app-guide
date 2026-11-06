@@ -1,7 +1,7 @@
 {
  "schema": "lumi.social-feed/v1",
  "date": "2026-11-06",
- "generated_at": "2026-11-06T08:32:51Z",
+ "generated_at": "2026-11-06T16:03:00Z",
  "items": {
   "bluesky": [
    {
@@ -141,48 +141,69 @@
    },
    {
     "kind": "clip",
-    "key": "picclear/en",
-    "locale": "en",
-    "app": "picclear",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/2xw3da.mp4",
-    "hook": "Nothing's deleted until you confirm",
-    "name": "PicClear Pro: Photo Cleaner",
-    "title": "Nothing's deleted until you confirm | Clean Up Photos & Storage | PicClear Pro",
+    "key": "wordmatelite/id",
+    "locale": "id",
+    "app": "wordmatelite",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/5w4rpr.mp4",
+    "hook": "Pilih dari 44 bahasa",
+    "name": "Wordmate Lite 5 Kata Sehari",
+    "title": "Pilih dari 44 bahasa | 44 bahasa, satu menit per hari | Wordmate Lite",
     "tags": [
-     "#PhotoCleaner",
-     "#Duplicate",
-     "#Blurry",
-     "#Large",
-     "#Videos",
-     "#PicClearPro"
+     "#Kosakata",
+     "#Inggris",
+     "#Belajar",
+     "#Jepang",
+     "#Korea",
+     "#WordmateLite"
     ],
-    "caption": "Nothing's deleted until you confirm\nDuplicates, grouped for review\nClean Up Photos & Storage\nPicClear Pro: Photo Cleaner\nSearch “PicClear Pro” on the App Store\nAlso on Google Play\n\n#PhotoCleaner #Duplicate #PicClearPro",
-    "button": "Get it on the App Store",
+    "caption": "Pilih dari 44 bahasa\nSelesai dalam 1 menit\n44 bahasa, satu menit per hari\nWordmate Lite 5 Kata Sehari\nCari “Wordmate Lite” di App Store\nJuga ada di Google Play\n\n#Kosakata #Inggris #WordmateLite",
+    "button": "Unduh di App Store",
     "variant": "c",
-    "alt": "PicClear Pro: Photo Cleaner — Nothing's deleted until you confirm — Duplicates, grouped for review — Clean Up Photos & Storage",
-    "store": "https://apps.apple.com/us/app/id6780223070?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.picclear.app&referrer=utm_source%3Dsocial%26utm_campaign%3Dpicclear",
+    "alt": "Wordmate Lite 5 Kata Sehari — Pilih dari 44 bahasa — Selesai dalam 1 menit — 44 bahasa, satu menit per hari",
+    "store": "https://apps.apple.com/id/app/id6797601720?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.WordmateLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwordmatelite",
     "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6780223070?action=write-review"
+     "label": "Sudah memakai aplikasi ini? Beri nilai atau ulasan di App Store",
+     "url": "https://apps.apple.com/app/id6797601720?action=write-review"
     },
     "keywords": [
-     "duplicate",
-     "blurry",
-     "large",
-     "videos",
-     "delete",
-     "screenshots"
+     "kosakata",
+     "inggris",
+     "belajar",
+     "jepang",
+     "korea",
+     "arab"
     ],
-    "keyline": "Clean Up Photos & Storage",
+    "keyline": "44 bahasa, satu menit per hari",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "562edfd587f5f970",
+     "board": "3a4669867efb8aeb",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "card/suneung2027/2026-11-06",
+    "locale": "ko",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/countdown-cards/card-20261106.jpg",
+    "caption": "2027학년도 수능 D-13\n끝까지 페이스 유지\n\nApp Store · Google Play에서 'CountDaysNow' 검색\n\n#디데이카운터 #디데이 #카운트다운",
+    "title": "2027학년도 수능 D-13",
+    "alt": "CountDaysNow — 2027학년도 수능 D-13 — 끝까지 페이스 유지 — App Store · Google Play에서 'CountDaysNow' 검색 — 디데이 카운터",
+    "name": "CountDaysNow",
+    "hook": "2027학년도 수능 D-13",
+    "tags": [
+     "#디데이카운터",
+     "#디데이",
+     "#카운트다운",
+     "#날짜계산",
+     "#기념일"
+    ],
+    "button": "App Store에서 받기",
+    "store": "https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow"
    },
    {
     "kind": "card",
@@ -1791,48 +1812,69 @@
    },
    {
     "kind": "clip",
-    "key": "picclear/en",
-    "locale": "en",
-    "app": "picclear",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/2xw3da.mp4",
-    "hook": "Nothing's deleted until you confirm",
-    "name": "PicClear Pro: Photo Cleaner",
-    "title": "Nothing's deleted until you confirm | Clean Up Photos & Storage | PicClear Pro",
+    "key": "wordmatelite/id",
+    "locale": "id",
+    "app": "wordmatelite",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/5w4rpr.mp4",
+    "hook": "Pilih dari 44 bahasa",
+    "name": "Wordmate Lite 5 Kata Sehari",
+    "title": "Pilih dari 44 bahasa | 44 bahasa, satu menit per hari | Wordmate Lite",
     "tags": [
-     "#PhotoCleaner",
-     "#Duplicate",
-     "#Blurry",
-     "#Large",
-     "#Videos",
-     "#PicClearPro"
+     "#Kosakata",
+     "#Inggris",
+     "#Belajar",
+     "#Jepang",
+     "#Korea",
+     "#WordmateLite"
     ],
-    "caption": "Nothing's deleted until you confirm\nDuplicates, grouped for review\nClean Up Photos & Storage\nPicClear Pro: Photo Cleaner\nSearch “PicClear Pro” on the App Store\nAlso on Google Play\n\n#PhotoCleaner #Duplicate #Blurry #Large #PicClearPro",
-    "button": "Get it on the App Store",
+    "caption": "Pilih dari 44 bahasa\nSelesai dalam 1 menit\n44 bahasa, satu menit per hari\nWordmate Lite 5 Kata Sehari\nCari “Wordmate Lite” di App Store\nJuga ada di Google Play\n\n#Kosakata #Inggris #Belajar #Jepang #WordmateLite",
+    "button": "Unduh di App Store",
     "variant": "c",
-    "alt": "PicClear Pro: Photo Cleaner — Nothing's deleted until you confirm — Duplicates, grouped for review — Clean Up Photos & Storage",
-    "store": "https://apps.apple.com/us/app/id6780223070?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.picclear.app&referrer=utm_source%3Dsocial%26utm_campaign%3Dpicclear",
+    "alt": "Wordmate Lite 5 Kata Sehari — Pilih dari 44 bahasa — Selesai dalam 1 menit — 44 bahasa, satu menit per hari",
+    "store": "https://apps.apple.com/id/app/id6797601720?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.WordmateLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwordmatelite",
     "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6780223070?action=write-review"
+     "label": "Sudah memakai aplikasi ini? Beri nilai atau ulasan di App Store",
+     "url": "https://apps.apple.com/app/id6797601720?action=write-review"
     },
     "keywords": [
-     "duplicate",
-     "blurry",
-     "large",
-     "videos",
-     "delete",
-     "screenshots"
+     "kosakata",
+     "inggris",
+     "belajar",
+     "jepang",
+     "korea",
+     "arab"
     ],
-    "keyline": "Clean Up Photos & Storage",
+    "keyline": "44 bahasa, satu menit per hari",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "562edfd587f5f970",
+     "board": "3a4669867efb8aeb",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "card/suneung2027/2026-11-06",
+    "locale": "ko",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/countdown-cards/card-20261106.jpg",
+    "caption": "2027학년도 수능 D-13\n끝까지 페이스 유지\n\nApp Store · Google Play에서 'CountDaysNow' 검색\n\n#디데이카운터 #디데이 #카운트다운 #날짜계산 #기념일",
+    "title": "2027학년도 수능 D-13",
+    "alt": "CountDaysNow — 2027학년도 수능 D-13 — 끝까지 페이스 유지 — App Store · Google Play에서 'CountDaysNow' 검색 — 디데이 카운터",
+    "name": "CountDaysNow",
+    "hook": "2027학년도 수능 D-13",
+    "tags": [
+     "#디데이카운터",
+     "#디데이",
+     "#카운트다운",
+     "#날짜계산",
+     "#기념일"
+    ],
+    "button": "App Store에서 받기",
+    "store": "https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow"
    },
    {
     "kind": "card",
@@ -2040,60 +2082,59 @@
    },
    {
     "kind": "clip",
-    "key": "picclear/en",
-    "locale": "en",
-    "app": "picclear",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/2xw3da.mp4",
-    "hook": "Nothing's deleted until you confirm",
-    "name": "PicClear Pro: Photo Cleaner",
-    "title": "Nothing's deleted until you confirm | Clean Up Photos & Storage | PicClear Pro",
+    "key": "wordmatelite/id",
+    "locale": "id",
+    "app": "wordmatelite",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/5w4rpr.mp4",
+    "hook": "Selesai dalam 1 menit",
+    "name": "Wordmate Lite 5 Kata Sehari",
+    "title": "Selesai dalam 1 menit | 44 bahasa, satu menit per hari | Wordmate Lite",
     "tags": [
-     "#PhotoCleaner",
-     "#Duplicate",
-     "#Blurry",
-     "#Large",
-     "#Videos",
-     "#PicClearPro"
+     "#Kosakata",
+     "#Inggris",
+     "#Belajar",
+     "#Jepang",
+     "#Korea",
+     "#WordmateLite"
     ],
-    "caption": "Nothing's deleted until you confirm\nDuplicates, grouped for review\nClean Up Photos & Storage\nPicClear Pro: Photo Cleaner\nSearch “PicClear Pro” on the App Store\nAlso on Google Play\n\n#PhotoCleaner #Duplicate #Blurry #Large #PicClearPro",
-    "button": "Get it on the App Store",
-    "variant": "c",
-    "alt": "PicClear Pro: Photo Cleaner — Nothing's deleted until you confirm — Duplicates, grouped for review — Clean Up Photos & Storage",
-    "store": "https://apps.apple.com/us/app/id6780223070?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.picclear.app&referrer=utm_source%3Dsocial%26utm_campaign%3Dpicclear",
+    "caption": "Selesai dalam 1 menit\nStreak-mu terus naik\n44 bahasa, satu menit per hari\nWordmate Lite 5 Kata Sehari\nCari “Wordmate Lite” di App Store\nJuga ada di Google Play\n\n#Kosakata #Inggris #Belajar #Jepang #WordmateLite",
+    "button": "Unduh di App Store",
+    "variant": "b",
+    "alt": "Wordmate Lite 5 Kata Sehari — Selesai dalam 1 menit — Streak-mu terus naik — 44 bahasa, satu menit per hari",
+    "store": "https://apps.apple.com/id/app/id6797601720?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.WordmateLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwordmatelite",
     "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6780223070?action=write-review"
+     "label": "Sudah memakai aplikasi ini? Beri nilai atau ulasan di App Store",
+     "url": "https://apps.apple.com/app/id6797601720?action=write-review"
     },
     "keywords": [
-     "duplicate",
-     "blurry",
-     "large",
-     "videos",
-     "delete",
-     "screenshots"
+     "kosakata",
+     "inggris",
+     "belajar",
+     "jepang",
+     "korea",
+     "arab"
     ],
-    "keyline": "Clean Up Photos & Storage",
+    "keyline": "44 bahasa, satu menit per hari",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "562edfd587f5f970",
+     "board": "3a4669867efb8aeb",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "youtube": {
-     "title": "Nothing's deleted until you confirm | PicClear Pro #Shorts",
-     "description": "Nothing's deleted until you confirm\nDuplicates, grouped for review\nClean Up Photos & Storage\n\nPicClear Pro: Photo Cleaner\nApp Store: https://apps.apple.com/us/app/id6780223070?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.picclear.app&referrer=utm_source%3Dsocial%26utm_campaign%3Dpicclear\nAlready using this app? Rate or review it on the App Store\nhttps://apps.apple.com/app/id6780223070?action=write-review\n\nduplicate · blurry · large · videos · delete · screenshots\n\n#Shorts #PhotoCleaner #PicClearPro",
+     "title": "Selesai dalam 1 menit | Wordmate Lite #Shorts",
+     "description": "Selesai dalam 1 menit\nStreak-mu terus naik\n44 bahasa, satu menit per hari\n\nWordmate Lite 5 Kata Sehari\nApp Store: https://apps.apple.com/id/app/id6797601720?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.WordmateLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwordmatelite\nSudah memakai aplikasi ini? Beri nilai atau ulasan di App Store\nhttps://apps.apple.com/app/id6797601720?action=write-review\n\nkosakata · inggris · belajar · jepang · korea · arab\n\n#Shorts #Kosakata #WordmateLite",
      "tags": [
-      "duplicate",
-      "blurry",
-      "large",
-      "videos",
-      "delete",
-      "screenshots",
-      "PhotoCleaner",
-      "PicClearPro",
-      "PicClear Pro"
+      "kosakata",
+      "inggris",
+      "belajar",
+      "jepang",
+      "korea",
+      "arab",
+      "WordmateLite",
+      "Wordmate Lite"
      ]
     },
     "slot": 15
@@ -2249,52 +2290,77 @@
    },
    {
     "kind": "clip",
-    "key": "picclear/en",
-    "locale": "en",
-    "app": "picclear",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/2xw3da.mp4",
-    "hook": "iPhone storage full again?",
-    "name": "PicClear Pro: Photo Cleaner",
-    "title": "iPhone storage full again? | Clean Up Photos & Storage | PicClear Pro",
+    "key": "wordmatelite/id",
+    "locale": "id",
+    "app": "wordmatelite",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/5w4rpr.mp4",
+    "hook": "Sehari cuma 5 kata",
+    "name": "Wordmate Lite 5 Kata Sehari",
+    "title": "Sehari cuma 5 kata | 44 bahasa, satu menit per hari | Wordmate Lite",
     "tags": [
-     "#PhotoCleaner",
-     "#Duplicate",
-     "#Blurry",
-     "#Large",
-     "#Videos",
-     "#PicClearPro"
+     "#Kosakata",
+     "#Inggris",
+     "#Belajar",
+     "#Jepang",
+     "#Korea",
+     "#WordmateLite"
     ],
-    "caption": "iPhone storage full again?\nDuplicates, grouped for review\nClean Up Photos & Storage\nPicClear Pro: Photo Cleaner\nSearch “PicClear Pro” on the App Store\nAlso on Google Play\n\n#PhotoCleaner #Duplicate #Blurry #Large #PicClearPro",
-    "button": "Get it on the App Store",
+    "caption": "Sehari cuma 5 kata\nSelesai dalam 1 menit\n44 bahasa, satu menit per hari\nWordmate Lite 5 Kata Sehari\nCari “Wordmate Lite” di App Store\nJuga ada di Google Play\n\n#Kosakata #Inggris #Belajar #Jepang #WordmateLite",
+    "button": "Unduh di App Store",
     "variant": "a",
-    "alt": "PicClear Pro: Photo Cleaner — iPhone storage full again? — Duplicates, grouped for review — Clean Up Photos & Storage",
-    "store": "https://apps.apple.com/us/app/id6780223070?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.picclear.app&referrer=utm_source%3Dsocial%26utm_campaign%3Dpicclear",
+    "alt": "Wordmate Lite 5 Kata Sehari — Sehari cuma 5 kata — Selesai dalam 1 menit — 44 bahasa, satu menit per hari",
+    "store": "https://apps.apple.com/id/app/id6797601720?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.WordmateLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwordmatelite",
     "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6780223070?action=write-review"
+     "label": "Sudah memakai aplikasi ini? Beri nilai atau ulasan di App Store",
+     "url": "https://apps.apple.com/app/id6797601720?action=write-review"
     },
     "keywords": [
-     "duplicate",
-     "blurry",
-     "large",
-     "videos",
-     "delete",
-     "screenshots"
+     "kosakata",
+     "inggris",
+     "belajar",
+     "jepang",
+     "korea",
+     "arab"
     ],
-    "keyline": "Clean Up Photos & Storage",
+    "keyline": "44 bahasa, satu menit per hari",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "562edfd587f5f970",
+     "board": "3a4669867efb8aeb",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "iPhone storage full again?\nDuplicates, grouped for review\nClean Up Photos & Storage\nPicClear Pro: Photo Cleaner\nSearch “PicClear Pro” on the App Store\nAlso on Google Play\n\n#PhotoCleaner #Duplicate #Blurry #Large #PicClearPro\n\nGet it on the App Store: https://apps.apple.com/us/app/id6780223070?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.picclear.app&referrer=utm_source%3Dsocial%26utm_campaign%3Dpicclear",
-     "link": "https://apps.apple.com/us/app/id6780223070?pt=118326163&ct=social&mt=8"
+     "description": "Sehari cuma 5 kata\nSelesai dalam 1 menit\n44 bahasa, satu menit per hari\nWordmate Lite 5 Kata Sehari\nCari “Wordmate Lite” di App Store\nJuga ada di Google Play\n\n#Kosakata #Inggris #Belajar #Jepang #WordmateLite\n\nUnduh di App Store: https://apps.apple.com/id/app/id6797601720?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.WordmateLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwordmatelite",
+     "link": "https://apps.apple.com/id/app/id6797601720?pt=118326163&ct=social&mt=8"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "card/suneung2027/2026-11-06",
+    "locale": "ko",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/countdown-cards/card-20261106.jpg",
+    "caption": "2027학년도 수능 D-13\n끝까지 페이스 유지\n\nApp Store · Google Play에서 'CountDaysNow' 검색\n\n#디데이카운터 #디데이 #카운트다운 #날짜계산 #기념일",
+    "title": "2027학년도 수능 D-13",
+    "alt": "CountDaysNow — 2027학년도 수능 D-13 — 끝까지 페이스 유지 — App Store · Google Play에서 'CountDaysNow' 검색 — 디데이 카운터",
+    "name": "CountDaysNow",
+    "hook": "2027학년도 수능 D-13",
+    "tags": [
+     "#디데이카운터",
+     "#디데이",
+     "#카운트다운",
+     "#날짜계산",
+     "#기념일"
+    ],
+    "button": "App Store에서 받기",
+    "store": "https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
+    "pinterest": {
+     "description": "2027학년도 수능 D-13\n끝까지 페이스 유지\n\nApp Store · Google Play에서 'CountDaysNow' 검색\n\n#디데이카운터 #디데이 #카운트다운 #날짜계산 #기념일\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
+     "link": "https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8"
+    }
    },
    {
     "kind": "card",
@@ -6069,49 +6135,49 @@
    },
    {
     "kind": "clip",
-    "key": "picclear/en",
-    "locale": "en",
-    "app": "picclear",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/2xw3da.mp4",
-    "hook": "Nothing's deleted until you confirm",
-    "name": "PicClear Pro: Photo Cleaner",
-    "title": "Nothing's deleted until you confirm | Clean Up Photos & Storage | PicClear Pro",
+    "key": "wordmatelite/id",
+    "locale": "id",
+    "app": "wordmatelite",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/5w4rpr.mp4",
+    "hook": "Pilih dari 44 bahasa",
+    "name": "Wordmate Lite 5 Kata Sehari",
+    "title": "Pilih dari 44 bahasa | 44 bahasa, satu menit per hari | Wordmate Lite",
     "tags": [
-     "#PhotoCleaner",
-     "#Duplicate",
-     "#Blurry",
-     "#Large",
-     "#Videos",
-     "#PicClearPro"
+     "#Kosakata",
+     "#Inggris",
+     "#Belajar",
+     "#Jepang",
+     "#Korea",
+     "#WordmateLite"
     ],
-    "caption": "Nothing's deleted until you confirm\nDuplicates, grouped for review\nClean Up Photos & Storage\nPicClear Pro: Photo Cleaner\nSearch “PicClear Pro” on the App Store\nAlso on Google Play\n\n#PhotoCleaner #Duplicate #Blurry #Large #PicClearPro",
-    "button": "Get it on the App Store",
+    "caption": "Pilih dari 44 bahasa\nSelesai dalam 1 menit\n44 bahasa, satu menit per hari\nWordmate Lite 5 Kata Sehari\nCari “Wordmate Lite” di App Store\nJuga ada di Google Play\n\n#Kosakata #Inggris #Belajar #Jepang #WordmateLite",
+    "button": "Unduh di App Store",
     "variant": "c",
-    "alt": "PicClear Pro: Photo Cleaner — Nothing's deleted until you confirm — Duplicates, grouped for review — Clean Up Photos & Storage",
-    "store": "https://apps.apple.com/us/app/id6780223070?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.picclear.app&referrer=utm_source%3Dsocial%26utm_campaign%3Dpicclear",
+    "alt": "Wordmate Lite 5 Kata Sehari — Pilih dari 44 bahasa — Selesai dalam 1 menit — 44 bahasa, satu menit per hari",
+    "store": "https://apps.apple.com/id/app/id6797601720?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.WordmateLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwordmatelite",
     "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6780223070?action=write-review"
+     "label": "Sudah memakai aplikasi ini? Beri nilai atau ulasan di App Store",
+     "url": "https://apps.apple.com/app/id6797601720?action=write-review"
     },
     "keywords": [
-     "duplicate",
-     "blurry",
-     "large",
-     "videos",
-     "delete",
-     "screenshots"
+     "kosakata",
+     "inggris",
+     "belajar",
+     "jepang",
+     "korea",
+     "arab"
     ],
-    "keyline": "Clean Up Photos & Storage",
+    "keyline": "44 bahasa, satu menit per hari",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "562edfd587f5f970",
+     "board": "3a4669867efb8aeb",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "Nothing's deleted until you confirm\nDuplicates, grouped for review\nClean Up Photos & Storage\nPicClear Pro: Photo Cleaner\nSearch “PicClear Pro” on the App Store\nAlso on Google Play\n\n#PhotoCleaner #Duplicate #Blurry #Large #PicClearPro\n\nGet it on the App Store: https://apps.apple.com/us/app/id6780223070?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.picclear.app&referrer=utm_source%3Dsocial%26utm_campaign%3Dpicclear"
+     "caption": "Pilih dari 44 bahasa\nSelesai dalam 1 menit\n44 bahasa, satu menit per hari\nWordmate Lite 5 Kata Sehari\nCari “Wordmate Lite” di App Store\nJuga ada di Google Play\n\n#Kosakata #Inggris #Belajar #Jepang #WordmateLite\n\nUnduh di App Store: https://apps.apple.com/id/app/id6797601720?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.WordmateLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwordmatelite"
     },
     "slot": 15
    }

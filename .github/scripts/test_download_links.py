@@ -408,5 +408,18 @@ class CompanionLiteTest(unittest.TestCase):
         self.assertNotIn("apps.apple.com", out)
 
 
+class CreatorCodeLineKeptTest(unittest.TestCase):
+    """A-2 creator promo-code line: exactly h_<app>_kol keeps its own row; other hero kits still merge."""
+
+    def test_kept_and_merged(self):
+        for t in ("h_mochi_kol", "h_stayclock_kol", "h_lumibopomofo_kol", "h_duowallpaperstudio_kol"):
+            self.assertEqual(t, D.coarse_campaign(t))
+            self.assertEqual(t, D.app_campaign(t, "6814035888"))
+        self.assertEqual("outreach", D.coarse_campaign("h_mochi_jp_kol"))
+        self.assertEqual("youtube", D.coarse_campaign("h_cvdesk_th_yt"))
+        url = "https://apps.apple.com/app/id6814035888?pt=118326163&ct=h_stayclock_kol&mt=8"
+        self.assertEqual(url, D.coarse_campaign_url(url))
+
+
 if __name__ == "__main__":
     unittest.main()

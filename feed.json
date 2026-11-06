@@ -1,7 +1,7 @@
 {
  "schema": "lumi.social-feed/v1",
  "date": "2026-11-06",
- "generated_at": "2026-11-06T02:04:29Z",
+ "generated_at": "2026-11-06T08:32:51Z",
  "items": {
   "bluesky": [
    {
@@ -141,48 +141,69 @@
    },
    {
     "kind": "clip",
-    "key": "wordmatelite/id",
-    "locale": "id",
-    "app": "wordmatelite",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/5w4rpr.mp4",
-    "hook": "Pilih dari 44 bahasa",
-    "name": "Wordmate Lite 5 Kata Sehari",
-    "title": "Pilih dari 44 bahasa | 44 bahasa, satu menit per hari | Wordmate Lite",
+    "key": "picclear/en",
+    "locale": "en",
+    "app": "picclear",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/2xw3da.mp4",
+    "hook": "Nothing's deleted until you confirm",
+    "name": "PicClear Pro: Photo Cleaner",
+    "title": "Nothing's deleted until you confirm | Clean Up Photos & Storage | PicClear Pro",
     "tags": [
-     "#Kosakata",
-     "#Inggris",
-     "#Belajar",
-     "#Jepang",
-     "#Korea",
-     "#WordmateLite"
+     "#PhotoCleaner",
+     "#Duplicate",
+     "#Blurry",
+     "#Large",
+     "#Videos",
+     "#PicClearPro"
     ],
-    "caption": "Pilih dari 44 bahasa\nSelesai dalam 1 menit\n44 bahasa, satu menit per hari\nWordmate Lite 5 Kata Sehari\nCari “Wordmate Lite” di App Store\nJuga ada di Google Play\n\n#Kosakata #Inggris #WordmateLite",
-    "button": "Unduh di App Store",
+    "caption": "Nothing's deleted until you confirm\nDuplicates, grouped for review\nClean Up Photos & Storage\nPicClear Pro: Photo Cleaner\nSearch “PicClear Pro” on the App Store\nAlso on Google Play\n\n#PhotoCleaner #Duplicate #PicClearPro",
+    "button": "Get it on the App Store",
     "variant": "c",
-    "alt": "Wordmate Lite 5 Kata Sehari — Pilih dari 44 bahasa — Selesai dalam 1 menit — 44 bahasa, satu menit per hari",
-    "store": "https://apps.apple.com/id/app/id6797601720?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.WordmateLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwordmatelite",
+    "alt": "PicClear Pro: Photo Cleaner — Nothing's deleted until you confirm — Duplicates, grouped for review — Clean Up Photos & Storage",
+    "store": "https://apps.apple.com/us/app/id6780223070?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.picclear.app&referrer=utm_source%3Dsocial%26utm_campaign%3Dpicclear",
     "review": {
-     "label": "Sudah memakai aplikasi ini? Beri nilai atau ulasan di App Store",
-     "url": "https://apps.apple.com/app/id6797601720?action=write-review"
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6780223070?action=write-review"
     },
     "keywords": [
-     "kosakata",
-     "inggris",
-     "belajar",
-     "jepang",
-     "korea",
-     "arab"
+     "duplicate",
+     "blurry",
+     "large",
+     "videos",
+     "delete",
+     "screenshots"
     ],
-    "keyline": "44 bahasa, satu menit per hari",
+    "keyline": "Clean Up Photos & Storage",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "3a4669867efb8aeb",
+     "board": "562edfd587f5f970",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "utility/count/lumimath/count_3/ja",
+    "locale": "ja",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/utility-cards/card-20261106.jpg",
+    "caption": "今日のかぞえてみよう：3\nふうせんが 3こ\nゆびを 3本 たてよう\n\nLumi算数プラネット: 1問解くたびに、小さな星がひとつ灯ります\nApp Store・Google Playで「Lumi算数プラネット」を検索\n\n#体験版 #たしざん #ひきざん",
+    "title": "今日のかぞえてみよう：3",
+    "alt": "Lumi Math Planet — 今日のかぞえてみよう：3 — ふうせんが 3こ — ゆびを 3本 たてよう — 体験版",
+    "name": "Lumi Math Planet",
+    "hook": "今日のかぞえてみよう：3",
+    "tags": [
+     "#体験版",
+     "#たしざん",
+     "#ひきざん",
+     "#かけざん",
+     "#わりざん"
+    ],
+    "button": "App Storeで入手",
+    "store": "https://apps.apple.com/jp/app/id6778269699?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiMathFree&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumimath"
    },
    {
     "kind": "card",
@@ -1770,48 +1791,69 @@
    },
    {
     "kind": "clip",
-    "key": "wordmatelite/id",
-    "locale": "id",
-    "app": "wordmatelite",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/5w4rpr.mp4",
-    "hook": "Pilih dari 44 bahasa",
-    "name": "Wordmate Lite 5 Kata Sehari",
-    "title": "Pilih dari 44 bahasa | 44 bahasa, satu menit per hari | Wordmate Lite",
+    "key": "picclear/en",
+    "locale": "en",
+    "app": "picclear",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/2xw3da.mp4",
+    "hook": "Nothing's deleted until you confirm",
+    "name": "PicClear Pro: Photo Cleaner",
+    "title": "Nothing's deleted until you confirm | Clean Up Photos & Storage | PicClear Pro",
     "tags": [
-     "#Kosakata",
-     "#Inggris",
-     "#Belajar",
-     "#Jepang",
-     "#Korea",
-     "#WordmateLite"
+     "#PhotoCleaner",
+     "#Duplicate",
+     "#Blurry",
+     "#Large",
+     "#Videos",
+     "#PicClearPro"
     ],
-    "caption": "Pilih dari 44 bahasa\nSelesai dalam 1 menit\n44 bahasa, satu menit per hari\nWordmate Lite 5 Kata Sehari\nCari “Wordmate Lite” di App Store\nJuga ada di Google Play\n\n#Kosakata #Inggris #Belajar #Jepang #WordmateLite",
-    "button": "Unduh di App Store",
+    "caption": "Nothing's deleted until you confirm\nDuplicates, grouped for review\nClean Up Photos & Storage\nPicClear Pro: Photo Cleaner\nSearch “PicClear Pro” on the App Store\nAlso on Google Play\n\n#PhotoCleaner #Duplicate #Blurry #Large #PicClearPro",
+    "button": "Get it on the App Store",
     "variant": "c",
-    "alt": "Wordmate Lite 5 Kata Sehari — Pilih dari 44 bahasa — Selesai dalam 1 menit — 44 bahasa, satu menit per hari",
-    "store": "https://apps.apple.com/id/app/id6797601720?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.WordmateLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwordmatelite",
+    "alt": "PicClear Pro: Photo Cleaner — Nothing's deleted until you confirm — Duplicates, grouped for review — Clean Up Photos & Storage",
+    "store": "https://apps.apple.com/us/app/id6780223070?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.picclear.app&referrer=utm_source%3Dsocial%26utm_campaign%3Dpicclear",
     "review": {
-     "label": "Sudah memakai aplikasi ini? Beri nilai atau ulasan di App Store",
-     "url": "https://apps.apple.com/app/id6797601720?action=write-review"
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6780223070?action=write-review"
     },
     "keywords": [
-     "kosakata",
-     "inggris",
-     "belajar",
-     "jepang",
-     "korea",
-     "arab"
+     "duplicate",
+     "blurry",
+     "large",
+     "videos",
+     "delete",
+     "screenshots"
     ],
-    "keyline": "44 bahasa, satu menit per hari",
+    "keyline": "Clean Up Photos & Storage",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "3a4669867efb8aeb",
+     "board": "562edfd587f5f970",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "utility/count/lumimath/count_3/ja",
+    "locale": "ja",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/utility-cards/card-20261106.jpg",
+    "caption": "今日のかぞえてみよう：3\nふうせんが 3こ\nゆびを 3本 たてよう\n\nLumi算数プラネット: 1問解くたびに、小さな星がひとつ灯ります\nApp Store・Google Playで「Lumi算数プラネット」を検索\n\n#体験版 #たしざん #ひきざん #かけざん #わりざん",
+    "title": "今日のかぞえてみよう：3",
+    "alt": "Lumi Math Planet — 今日のかぞえてみよう：3 — ふうせんが 3こ — ゆびを 3本 たてよう — 体験版",
+    "name": "Lumi Math Planet",
+    "hook": "今日のかぞえてみよう：3",
+    "tags": [
+     "#体験版",
+     "#たしざん",
+     "#ひきざん",
+     "#かけざん",
+     "#わりざん"
+    ],
+    "button": "App Storeで入手",
+    "store": "https://apps.apple.com/jp/app/id6778269699?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiMathFree&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumimath"
    }
   ],
   "youtube": [
@@ -1998,59 +2040,60 @@
    },
    {
     "kind": "clip",
-    "key": "wordmatelite/id",
-    "locale": "id",
-    "app": "wordmatelite",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/5w4rpr.mp4",
-    "hook": "Selesai dalam 1 menit",
-    "name": "Wordmate Lite 5 Kata Sehari",
-    "title": "Selesai dalam 1 menit | 44 bahasa, satu menit per hari | Wordmate Lite",
+    "key": "picclear/en",
+    "locale": "en",
+    "app": "picclear",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/2xw3da.mp4",
+    "hook": "Nothing's deleted until you confirm",
+    "name": "PicClear Pro: Photo Cleaner",
+    "title": "Nothing's deleted until you confirm | Clean Up Photos & Storage | PicClear Pro",
     "tags": [
-     "#Kosakata",
-     "#Inggris",
-     "#Belajar",
-     "#Jepang",
-     "#Korea",
-     "#WordmateLite"
+     "#PhotoCleaner",
+     "#Duplicate",
+     "#Blurry",
+     "#Large",
+     "#Videos",
+     "#PicClearPro"
     ],
-    "caption": "Selesai dalam 1 menit\nStreak-mu terus naik\n44 bahasa, satu menit per hari\nWordmate Lite 5 Kata Sehari\nCari “Wordmate Lite” di App Store\nJuga ada di Google Play\n\n#Kosakata #Inggris #Belajar #Jepang #WordmateLite",
-    "button": "Unduh di App Store",
-    "variant": "b",
-    "alt": "Wordmate Lite 5 Kata Sehari — Selesai dalam 1 menit — Streak-mu terus naik — 44 bahasa, satu menit per hari",
-    "store": "https://apps.apple.com/id/app/id6797601720?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.WordmateLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwordmatelite",
+    "caption": "Nothing's deleted until you confirm\nDuplicates, grouped for review\nClean Up Photos & Storage\nPicClear Pro: Photo Cleaner\nSearch “PicClear Pro” on the App Store\nAlso on Google Play\n\n#PhotoCleaner #Duplicate #Blurry #Large #PicClearPro",
+    "button": "Get it on the App Store",
+    "variant": "c",
+    "alt": "PicClear Pro: Photo Cleaner — Nothing's deleted until you confirm — Duplicates, grouped for review — Clean Up Photos & Storage",
+    "store": "https://apps.apple.com/us/app/id6780223070?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.picclear.app&referrer=utm_source%3Dsocial%26utm_campaign%3Dpicclear",
     "review": {
-     "label": "Sudah memakai aplikasi ini? Beri nilai atau ulasan di App Store",
-     "url": "https://apps.apple.com/app/id6797601720?action=write-review"
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6780223070?action=write-review"
     },
     "keywords": [
-     "kosakata",
-     "inggris",
-     "belajar",
-     "jepang",
-     "korea",
-     "arab"
+     "duplicate",
+     "blurry",
+     "large",
+     "videos",
+     "delete",
+     "screenshots"
     ],
-    "keyline": "44 bahasa, satu menit per hari",
+    "keyline": "Clean Up Photos & Storage",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "3a4669867efb8aeb",
+     "board": "562edfd587f5f970",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "youtube": {
-     "title": "Selesai dalam 1 menit | Wordmate Lite #Shorts",
-     "description": "Selesai dalam 1 menit\nStreak-mu terus naik\n44 bahasa, satu menit per hari\n\nWordmate Lite 5 Kata Sehari\nApp Store: https://apps.apple.com/id/app/id6797601720?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.WordmateLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwordmatelite\nSudah memakai aplikasi ini? Beri nilai atau ulasan di App Store\nhttps://apps.apple.com/app/id6797601720?action=write-review\n\nkosakata · inggris · belajar · jepang · korea · arab\n\n#Shorts #Kosakata #WordmateLite",
+     "title": "Nothing's deleted until you confirm | PicClear Pro #Shorts",
+     "description": "Nothing's deleted until you confirm\nDuplicates, grouped for review\nClean Up Photos & Storage\n\nPicClear Pro: Photo Cleaner\nApp Store: https://apps.apple.com/us/app/id6780223070?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.picclear.app&referrer=utm_source%3Dsocial%26utm_campaign%3Dpicclear\nAlready using this app? Rate or review it on the App Store\nhttps://apps.apple.com/app/id6780223070?action=write-review\n\nduplicate · blurry · large · videos · delete · screenshots\n\n#Shorts #PhotoCleaner #PicClearPro",
      "tags": [
-      "kosakata",
-      "inggris",
-      "belajar",
-      "jepang",
-      "korea",
-      "arab",
-      "WordmateLite",
-      "Wordmate Lite"
+      "duplicate",
+      "blurry",
+      "large",
+      "videos",
+      "delete",
+      "screenshots",
+      "PhotoCleaner",
+      "PicClearPro",
+      "PicClear Pro"
      ]
     },
     "slot": 15
@@ -2206,52 +2249,77 @@
    },
    {
     "kind": "clip",
-    "key": "wordmatelite/id",
-    "locale": "id",
-    "app": "wordmatelite",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/5w4rpr.mp4",
-    "hook": "Sehari cuma 5 kata",
-    "name": "Wordmate Lite 5 Kata Sehari",
-    "title": "Sehari cuma 5 kata | 44 bahasa, satu menit per hari | Wordmate Lite",
+    "key": "picclear/en",
+    "locale": "en",
+    "app": "picclear",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/2xw3da.mp4",
+    "hook": "iPhone storage full again?",
+    "name": "PicClear Pro: Photo Cleaner",
+    "title": "iPhone storage full again? | Clean Up Photos & Storage | PicClear Pro",
     "tags": [
-     "#Kosakata",
-     "#Inggris",
-     "#Belajar",
-     "#Jepang",
-     "#Korea",
-     "#WordmateLite"
+     "#PhotoCleaner",
+     "#Duplicate",
+     "#Blurry",
+     "#Large",
+     "#Videos",
+     "#PicClearPro"
     ],
-    "caption": "Sehari cuma 5 kata\nSelesai dalam 1 menit\n44 bahasa, satu menit per hari\nWordmate Lite 5 Kata Sehari\nCari “Wordmate Lite” di App Store\nJuga ada di Google Play\n\n#Kosakata #Inggris #Belajar #Jepang #WordmateLite",
-    "button": "Unduh di App Store",
+    "caption": "iPhone storage full again?\nDuplicates, grouped for review\nClean Up Photos & Storage\nPicClear Pro: Photo Cleaner\nSearch “PicClear Pro” on the App Store\nAlso on Google Play\n\n#PhotoCleaner #Duplicate #Blurry #Large #PicClearPro",
+    "button": "Get it on the App Store",
     "variant": "a",
-    "alt": "Wordmate Lite 5 Kata Sehari — Sehari cuma 5 kata — Selesai dalam 1 menit — 44 bahasa, satu menit per hari",
-    "store": "https://apps.apple.com/id/app/id6797601720?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.WordmateLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwordmatelite",
+    "alt": "PicClear Pro: Photo Cleaner — iPhone storage full again? — Duplicates, grouped for review — Clean Up Photos & Storage",
+    "store": "https://apps.apple.com/us/app/id6780223070?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.picclear.app&referrer=utm_source%3Dsocial%26utm_campaign%3Dpicclear",
     "review": {
-     "label": "Sudah memakai aplikasi ini? Beri nilai atau ulasan di App Store",
-     "url": "https://apps.apple.com/app/id6797601720?action=write-review"
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6780223070?action=write-review"
     },
     "keywords": [
-     "kosakata",
-     "inggris",
-     "belajar",
-     "jepang",
-     "korea",
-     "arab"
+     "duplicate",
+     "blurry",
+     "large",
+     "videos",
+     "delete",
+     "screenshots"
     ],
-    "keyline": "44 bahasa, satu menit per hari",
+    "keyline": "Clean Up Photos & Storage",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "3a4669867efb8aeb",
+     "board": "562edfd587f5f970",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "Sehari cuma 5 kata\nSelesai dalam 1 menit\n44 bahasa, satu menit per hari\nWordmate Lite 5 Kata Sehari\nCari “Wordmate Lite” di App Store\nJuga ada di Google Play\n\n#Kosakata #Inggris #Belajar #Jepang #WordmateLite\n\nUnduh di App Store: https://apps.apple.com/id/app/id6797601720?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.WordmateLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwordmatelite",
-     "link": "https://apps.apple.com/id/app/id6797601720?pt=118326163&ct=social&mt=8"
+     "description": "iPhone storage full again?\nDuplicates, grouped for review\nClean Up Photos & Storage\nPicClear Pro: Photo Cleaner\nSearch “PicClear Pro” on the App Store\nAlso on Google Play\n\n#PhotoCleaner #Duplicate #Blurry #Large #PicClearPro\n\nGet it on the App Store: https://apps.apple.com/us/app/id6780223070?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.picclear.app&referrer=utm_source%3Dsocial%26utm_campaign%3Dpicclear",
+     "link": "https://apps.apple.com/us/app/id6780223070?pt=118326163&ct=social&mt=8"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "utility/count/lumimath/count_3/ja",
+    "locale": "ja",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/utility-cards/card-20261106.jpg",
+    "caption": "今日のかぞえてみよう：3\nふうせんが 3こ\nゆびを 3本 たてよう\n\nLumi算数プラネット: 1問解くたびに、小さな星がひとつ灯ります\nApp Store・Google Playで「Lumi算数プラネット」を検索\n\n#体験版 #たしざん #ひきざん #かけざん #わりざん",
+    "title": "今日のかぞえてみよう：3",
+    "alt": "Lumi Math Planet — 今日のかぞえてみよう：3 — ふうせんが 3こ — ゆびを 3本 たてよう — 体験版",
+    "name": "Lumi Math Planet",
+    "hook": "今日のかぞえてみよう：3",
+    "tags": [
+     "#体験版",
+     "#たしざん",
+     "#ひきざん",
+     "#かけざん",
+     "#わりざん"
+    ],
+    "button": "App Storeで入手",
+    "store": "https://apps.apple.com/jp/app/id6778269699?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiMathFree&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumimath",
+    "pinterest": {
+     "description": "今日のかぞえてみよう：3\nふうせんが 3こ\nゆびを 3本 たてよう\n\nLumi算数プラネット: 1問解くたびに、小さな星がひとつ灯ります\nApp Store・Google Playで「Lumi算数プラネット」を検索\n\n#体験版 #たしざん #ひきざん #かけざん #わりざん\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6778269699?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiMathFree&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumimath",
+     "link": "https://apps.apple.com/jp/app/id6778269699?pt=118326163&ct=social&mt=8"
+    }
    },
    {
     "kind": "card",
@@ -6001,49 +6069,49 @@
    },
    {
     "kind": "clip",
-    "key": "wordmatelite/id",
-    "locale": "id",
-    "app": "wordmatelite",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/5w4rpr.mp4",
-    "hook": "Pilih dari 44 bahasa",
-    "name": "Wordmate Lite 5 Kata Sehari",
-    "title": "Pilih dari 44 bahasa | 44 bahasa, satu menit per hari | Wordmate Lite",
+    "key": "picclear/en",
+    "locale": "en",
+    "app": "picclear",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/2xw3da.mp4",
+    "hook": "Nothing's deleted until you confirm",
+    "name": "PicClear Pro: Photo Cleaner",
+    "title": "Nothing's deleted until you confirm | Clean Up Photos & Storage | PicClear Pro",
     "tags": [
-     "#Kosakata",
-     "#Inggris",
-     "#Belajar",
-     "#Jepang",
-     "#Korea",
-     "#WordmateLite"
+     "#PhotoCleaner",
+     "#Duplicate",
+     "#Blurry",
+     "#Large",
+     "#Videos",
+     "#PicClearPro"
     ],
-    "caption": "Pilih dari 44 bahasa\nSelesai dalam 1 menit\n44 bahasa, satu menit per hari\nWordmate Lite 5 Kata Sehari\nCari “Wordmate Lite” di App Store\nJuga ada di Google Play\n\n#Kosakata #Inggris #Belajar #Jepang #WordmateLite",
-    "button": "Unduh di App Store",
+    "caption": "Nothing's deleted until you confirm\nDuplicates, grouped for review\nClean Up Photos & Storage\nPicClear Pro: Photo Cleaner\nSearch “PicClear Pro” on the App Store\nAlso on Google Play\n\n#PhotoCleaner #Duplicate #Blurry #Large #PicClearPro",
+    "button": "Get it on the App Store",
     "variant": "c",
-    "alt": "Wordmate Lite 5 Kata Sehari — Pilih dari 44 bahasa — Selesai dalam 1 menit — 44 bahasa, satu menit per hari",
-    "store": "https://apps.apple.com/id/app/id6797601720?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.WordmateLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwordmatelite",
+    "alt": "PicClear Pro: Photo Cleaner — Nothing's deleted until you confirm — Duplicates, grouped for review — Clean Up Photos & Storage",
+    "store": "https://apps.apple.com/us/app/id6780223070?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.picclear.app&referrer=utm_source%3Dsocial%26utm_campaign%3Dpicclear",
     "review": {
-     "label": "Sudah memakai aplikasi ini? Beri nilai atau ulasan di App Store",
-     "url": "https://apps.apple.com/app/id6797601720?action=write-review"
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6780223070?action=write-review"
     },
     "keywords": [
-     "kosakata",
-     "inggris",
-     "belajar",
-     "jepang",
-     "korea",
-     "arab"
+     "duplicate",
+     "blurry",
+     "large",
+     "videos",
+     "delete",
+     "screenshots"
     ],
-    "keyline": "44 bahasa, satu menit per hari",
+    "keyline": "Clean Up Photos & Storage",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "3a4669867efb8aeb",
+     "board": "562edfd587f5f970",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "Pilih dari 44 bahasa\nSelesai dalam 1 menit\n44 bahasa, satu menit per hari\nWordmate Lite 5 Kata Sehari\nCari “Wordmate Lite” di App Store\nJuga ada di Google Play\n\n#Kosakata #Inggris #Belajar #Jepang #WordmateLite\n\nUnduh di App Store: https://apps.apple.com/id/app/id6797601720?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.WordmateLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwordmatelite"
+     "caption": "Nothing's deleted until you confirm\nDuplicates, grouped for review\nClean Up Photos & Storage\nPicClear Pro: Photo Cleaner\nSearch “PicClear Pro” on the App Store\nAlso on Google Play\n\n#PhotoCleaner #Duplicate #Blurry #Large #PicClearPro\n\nGet it on the App Store: https://apps.apple.com/us/app/id6780223070?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.picclear.app&referrer=utm_source%3Dsocial%26utm_campaign%3Dpicclear"
     },
     "slot": 15
    }
@@ -21499,6 +21567,270 @@
      "store_claims_ok": true,
      "screen_text_ok": true,
      "board": "41645584543378d1",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "foldparty/en",
+    "locale": "en",
+    "app": "foldparty",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/06b50078d8.mp4",
+    "hook": "200 cute cat minigames",
+    "name": "Meow Party: 200 Cat Mini Games",
+    "title": "200 cute cat minigames | 2 Player Games: Fold & Play | Meow Party",
+    "tags": [
+     "#200CatMiniGames",
+     "#Foldable",
+     "#Couple",
+     "#Device",
+     "#Phone",
+     "#MeowParty"
+    ],
+    "caption": "200 cute cat minigames\nFully playable on any iPhone with a button or pinch\n2 Player Games: Fold & Play\nMeow Party: 200 Cat Mini Games\nSearch “Meow Party” on the App Store\nAlso on Google Play\n\n#200CatMiniGames #Foldable #MeowParty",
+    "button": "Get it on the App Store",
+    "variant": "b",
+    "alt": "Meow Party: 200 Cat Mini Games — 200 cute cat minigames — Fully playable on any iPhone with a button or pinch — 2 Player Games: Fold & Play",
+    "store": "https://apps.apple.com/us/app/id6829184924?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.FoldParty&referrer=utm_source%3Dsocial%26utm_campaign%3Dfoldparty",
+    "review": {
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6829184924?action=write-review"
+    },
+    "keywords": [
+     "foldable",
+     "couple",
+     "device",
+     "phone",
+     "split",
+     "screen"
+    ],
+    "keyline": "2 Player Games: Fold & Play",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "ab531da7b99e178e",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "foldparty/zh-Hant",
+    "locale": "zh-Hant",
+    "app": "foldparty",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/1751a82e04.mp4",
+    "hook": "一支手機 兩人面對面對戰",
+    "name": "喵喵派對：雙人遊戲 貓咪小遊戲",
+    "title": "一支手機 兩人面對面對戰 | 摺疊手機更好玩！200款可愛遊戲，兩人一台就能對戰 | 喵喵派對",
+    "tags": [
+     "#雙人遊戲貓咪小遊戲",
+     "#離線",
+     "#不用網路",
+     "#無網路",
+     "#單機",
+     "#喵喵派對"
+    ],
+    "caption": "一支手機 兩人面對面對戰\n200 款可愛貓咪 小遊戲\n摺疊手機更好玩！200款可愛遊戲，兩人一台就能對戰\n喵喵派對：雙人遊戲 貓咪小遊戲\n在 App Store 搜尋「喵喵派對」\nAndroid 版在 Google Play\n\n#雙人遊戲貓咪小遊戲 #離線 #喵喵派對",
+    "button": "在 App Store 下載",
+    "variant": "a",
+    "alt": "喵喵派對：雙人遊戲 貓咪小遊戲 — 一支手機 兩人面對面對戰 — 200 款可愛貓咪 小遊戲 — 摺疊手機更好玩！200款可愛遊戲，兩人一台就能對戰",
+    "store": "https://apps.apple.com/tw/app/id6829184924?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.FoldParty&referrer=utm_source%3Dsocial%26utm_campaign%3Dfoldparty",
+    "review": {
+     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
+     "url": "https://apps.apple.com/app/id6829184924?action=write-review"
+    },
+    "keywords": [
+     "離線",
+     "不用網路",
+     "無網路",
+     "單機",
+     "折疊",
+     "螢幕"
+    ],
+    "keyline": "摺疊手機更好玩！200款可愛遊戲，兩人一台就能對戰",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "ab531da7b99e178e",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "foldparty/ja",
+    "locale": "ja",
+    "app": "foldparty",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/660002f2e3.mp4",
+    "hook": "オフラインで 広告なし",
+    "name": "にゃんにゃんパーティー：2人で遊べるミニゲーム集",
+    "title": "オフラインで 広告なし | 折りたたみスマホでもっと楽しい！かわいい猫ゲーム200種 | にゃんにゃんパーティー",
+    "tags": [
+     "#2人で遊べるミニゲーム集",
+     "#対戦",
+     "#二人",
+     "#ふたり",
+     "#協力",
+     "#にゃんにゃんパーティー"
+    ],
+    "caption": "オフラインで 広告なし\nかわいい猫の ミニゲーム200種\n折りたたみスマホでもっと楽しい！かわいい猫ゲーム200種\nにゃんにゃんパーティー：2人で遊べるミニゲーム集\nApp Storeで「にゃんにゃんパーティー」を検索\nAndroidはGoogle Playで\n\n#2人で遊べるミニゲーム集 #対戦 #にゃんにゃんパーティー",
+    "button": "App Storeで入手",
+    "variant": "c",
+    "alt": "にゃんにゃんパーティー：2人で遊べるミニゲーム集 — オフラインで 広告なし — かわいい猫の ミニゲーム200種 — 折りたたみスマホでもっと楽しい！かわいい猫ゲーム200種",
+    "store": "https://apps.apple.com/jp/app/id6829184924?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.FoldParty&referrer=utm_source%3Dsocial%26utm_campaign%3Dfoldparty",
+    "review": {
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6829184924?action=write-review"
+    },
+    "keywords": [
+     "対戦",
+     "二人",
+     "ふたり",
+     "協力",
+     "オフライン",
+     "暇つぶし"
+    ],
+    "keyline": "折りたたみスマホでもっと楽しい！かわいい猫ゲーム200種",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "ab531da7b99e178e",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "foldparty/ko",
+    "locale": "ko",
+    "app": "foldparty",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/915b95726c.mp4",
+    "hook": "오프라인으로 광고 없이",
+    "name": "냥냥 파티: 고양이 2인용 게임",
+    "title": "오프라인으로 광고 없이 | 폴더블 폰에서 더 재밌는 귀여운 미니게임 200개 | 냥냥 파티",
+    "tags": [
+     "#고양이2인용게임",
+     "#오프라인",
+     "#데이터",
+     "#인터넷",
+     "#필요없는",
+     "#냥냥파티"
+    ],
+    "caption": "오프라인으로 광고 없이\n귀여운 고양이 미니게임 200개\n폴더블 폰에서 더 재밌는 귀여운 미니게임 200개\n냥냥 파티: 고양이 2인용 게임\nApp Store에서 '냥냥 파티' 검색\nAndroid는 Google Play에서\n\n#고양이2인용게임 #오프라인 #냥냥파티",
+    "button": "App Store에서 받기",
+    "variant": "c",
+    "alt": "냥냥 파티: 고양이 2인용 게임 — 오프라인으로 광고 없이 — 귀여운 고양이 미니게임 200개 — 폴더블 폰에서 더 재밌는 귀여운 미니게임 200개",
+    "store": "https://apps.apple.com/kr/app/id6829184924?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.FoldParty&referrer=utm_source%3Dsocial%26utm_campaign%3Dfoldparty",
+    "review": {
+     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
+     "url": "https://apps.apple.com/app/id6829184924?action=write-review"
+    },
+    "keywords": [
+     "오프라인",
+     "데이터",
+     "인터넷",
+     "필요없는",
+     "둘이서",
+     "두명"
+    ],
+    "keyline": "폴더블 폰에서 더 재밌는 귀여운 미니게임 200개",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "ab531da7b99e178e",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "foldparty/de",
+    "locale": "de",
+    "app": "foldparty",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/6f15c998a5.mp4",
+    "hook": "Ein Handy, zu zweit gegenüber",
+    "name": "Meow Party: Mini-Katzenspiele",
+    "title": "Ein Handy, zu zweit gegenüber | 200 Minispiele fürs Foldable | Meow Party",
+    "tags": [
+     "#MiniKatzenspiele",
+     "#Katzen",
+     "#Zwei",
+     "#Zweit",
+     "#Handy",
+     "#MeowParty"
+    ],
+    "caption": "Ein Handy, zu zweit gegenüber\n200 niedliche Katzen-Minispiele\n200 Minispiele fürs Foldable\nMeow Party: Mini-Katzenspiele\nIm App Store nach „Meow Party“ suchen\nAuch bei Google Play\n\n#MiniKatzenspiele #Katzen #MeowParty",
+    "button": "Im App Store laden",
+    "variant": "a",
+    "alt": "Meow Party: Mini-Katzenspiele — Ein Handy, zu zweit gegenüber — 200 niedliche Katzen-Minispiele — 200 Minispiele fürs Foldable",
+    "store": "https://apps.apple.com/de/app/id6829184924?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.FoldParty&referrer=utm_source%3Dsocial%26utm_campaign%3Dfoldparty",
+    "review": {
+     "label": "Sie nutzen diese App bereits? Bewerten oder rezensieren Sie sie im App Store",
+     "url": "https://apps.apple.com/app/id6829184924?action=write-review"
+    },
+    "keywords": [
+     "katzen",
+     "zwei",
+     "zweit",
+     "handy",
+     "ohne",
+     "wlan"
+    ],
+    "keyline": "200 Minispiele fürs Foldable",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "ab531da7b99e178e",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "foldparty/es",
+    "locale": "es",
+    "app": "foldparty",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/c32bbce781.mp4",
+    "hook": "Dos jugadores, un solo móvil",
+    "name": "Meow Party: Juegos para dos",
+    "title": "Dos jugadores, un solo móvil | 200 minijuegos en tu plegable | Meow Party",
+    "tags": [
+     "#JuegosParaDos",
+     "#Jugadores",
+     "#Personas",
+     "#Mismo",
+     "#Móvil",
+     "#MeowParty"
+    ],
+    "caption": "Dos jugadores, un solo móvil\n200 minijuegos de gatos adorables\n200 minijuegos en tu plegable\nMeow Party: Juegos para dos\nBusca «Meow Party» en el App Store\nTambién en Google Play\n\n#JuegosParaDos #Jugadores #MeowParty",
+    "button": "Descargar en el App Store",
+    "variant": "a",
+    "alt": "Meow Party: Juegos para dos — Dos jugadores, un solo móvil — 200 minijuegos de gatos adorables — 200 minijuegos en tu plegable",
+    "store": "https://apps.apple.com/es/app/id6829184924?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.FoldParty&referrer=utm_source%3Dsocial%26utm_campaign%3Dfoldparty",
+    "review": {
+     "label": "¿Ya usas esta app? Valórala o escribe una reseña en el App Store",
+     "url": "https://apps.apple.com/app/id6829184924?action=write-review"
+    },
+    "keywords": [
+     "jugadores",
+     "personas",
+     "mismo",
+     "móvil",
+     "internet",
+     "conexión"
+    ],
+    "keyline": "200 minijuegos en tu plegable",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "ab531da7b99e178e",
      "real_recording": false,
      "rules": "2026-10-18"
     }
@@ -42526,6 +42858,358 @@
    },
    {
     "kind": "clip",
+    "key": "foldparty/en",
+    "locale": "en",
+    "app": "foldparty",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/06b50078d8.mp4",
+    "hook": "Offline, no ads, no account",
+    "name": "Meow Party: 200 Cat Mini Games",
+    "title": "Offline, no ads, no account | 2 Player Games: Fold & Play | Meow Party",
+    "tags": [
+     "#200CatMiniGames",
+     "#Foldable",
+     "#Couple",
+     "#Device",
+     "#Phone",
+     "#MeowParty"
+    ],
+    "caption": "Offline, no ads, no account\n200 cute cat minigames\n2 Player Games: Fold & Play\nMeow Party: 200 Cat Mini Games\nSearch “Meow Party” on the App Store\nAlso on Google Play\n\n#200CatMiniGames #Foldable #Couple #Device #MeowParty",
+    "button": "Get it on the App Store",
+    "variant": "c",
+    "alt": "Meow Party: 200 Cat Mini Games — Offline, no ads, no account — 200 cute cat minigames — 2 Player Games: Fold & Play",
+    "store": "https://apps.apple.com/us/app/id6829184924?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.FoldParty&referrer=utm_source%3Dsocial%26utm_campaign%3Dfoldparty",
+    "review": {
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6829184924?action=write-review"
+    },
+    "keywords": [
+     "foldable",
+     "couple",
+     "device",
+     "phone",
+     "split",
+     "screen"
+    ],
+    "keyline": "2 Player Games: Fold & Play",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "ab531da7b99e178e",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "Offline, no ads, no account | Meow Party #Shorts",
+     "description": "Offline, no ads, no account\n200 cute cat minigames\n2 Player Games: Fold & Play\n\nMeow Party: 200 Cat Mini Games\nApp Store: https://apps.apple.com/us/app/id6829184924?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.FoldParty&referrer=utm_source%3Dsocial%26utm_campaign%3Dfoldparty\nAlready using this app? Rate or review it on the App Store\nhttps://apps.apple.com/app/id6829184924?action=write-review\n\nfoldable · couple · device · phone · split · screen\n\n#Shorts #200CatMiniGames #MeowParty",
+     "tags": [
+      "foldable",
+      "couple",
+      "device",
+      "phone",
+      "split",
+      "screen",
+      "200CatMiniGames",
+      "MeowParty",
+      "Meow Party"
+     ]
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "foldparty/zh-Hant",
+    "locale": "zh-Hant",
+    "app": "foldparty",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/1751a82e04.mp4",
+    "hook": "200 款可愛貓咪 小遊戲",
+    "name": "喵喵派對：雙人遊戲 貓咪小遊戲",
+    "title": "200 款可愛貓咪 小遊戲 | 摺疊手機更好玩！200款可愛遊戲，兩人一台就能對戰 | 喵喵派對",
+    "tags": [
+     "#雙人遊戲貓咪小遊戲",
+     "#離線",
+     "#不用網路",
+     "#無網路",
+     "#單機",
+     "#喵喵派對"
+    ],
+    "caption": "200 款可愛貓咪 小遊戲\n一般 iPhone 也能完整玩 畫面按鈕或雙指捏合\n摺疊手機更好玩！200款可愛遊戲，兩人一台就能對戰\n喵喵派對：雙人遊戲 貓咪小遊戲\n在 App Store 搜尋「喵喵派對」\nAndroid 版在 Google Play\n\n#雙人遊戲貓咪小遊戲 #離線 #不用網路 #無網路 #喵喵派對",
+    "button": "在 App Store 下載",
+    "variant": "b",
+    "alt": "喵喵派對：雙人遊戲 貓咪小遊戲 — 200 款可愛貓咪 小遊戲 — 一般 iPhone 也能完整玩 畫面按鈕或雙指捏合 — 摺疊手機更好玩！200款可愛遊戲，兩人一台就能對戰",
+    "store": "https://apps.apple.com/tw/app/id6829184924?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.FoldParty&referrer=utm_source%3Dsocial%26utm_campaign%3Dfoldparty",
+    "review": {
+     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
+     "url": "https://apps.apple.com/app/id6829184924?action=write-review"
+    },
+    "keywords": [
+     "離線",
+     "不用網路",
+     "無網路",
+     "單機",
+     "折疊",
+     "螢幕"
+    ],
+    "keyline": "摺疊手機更好玩！200款可愛遊戲，兩人一台就能對戰",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "ab531da7b99e178e",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "200 款可愛貓咪 小遊戲 | 喵喵派對 #Shorts",
+     "description": "200 款可愛貓咪 小遊戲\n一般 iPhone 也能完整玩 畫面按鈕或雙指捏合\n摺疊手機更好玩！200款可愛遊戲，兩人一台就能對戰\n\n喵喵派對：雙人遊戲 貓咪小遊戲\nApp Store: https://apps.apple.com/tw/app/id6829184924?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.FoldParty&referrer=utm_source%3Dsocial%26utm_campaign%3Dfoldparty\n已經在用這款 App？可以到 App Store 評分或撰寫評論\nhttps://apps.apple.com/app/id6829184924?action=write-review\n\n離線 · 不用網路 · 無網路 · 單機 · 折疊 · 螢幕\n\n#Shorts #雙人遊戲貓咪小遊戲 #喵喵派對",
+     "tags": [
+      "離線",
+      "不用網路",
+      "無網路",
+      "單機",
+      "折疊",
+      "螢幕",
+      "雙人遊戲貓咪小遊戲",
+      "喵喵派對"
+     ]
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "foldparty/ja",
+    "locale": "ja",
+    "app": "foldparty",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/660002f2e3.mp4",
+    "hook": "かわいい猫の ミニゲーム200種",
+    "name": "にゃんにゃんパーティー：2人で遊べるミニゲーム集",
+    "title": "かわいい猫の ミニゲーム200種 | 折りたたみスマホでもっと楽しい！かわいい猫ゲーム200種 | にゃんにゃんパーティー",
+    "tags": [
+     "#2人で遊べるミニゲーム集",
+     "#対戦",
+     "#二人",
+     "#ふたり",
+     "#協力",
+     "#にゃんにゃんパーティー"
+    ],
+    "caption": "かわいい猫の ミニゲーム200種\n普通のiPhoneでも全部遊べる 画面上の代わりの操作\n折りたたみスマホでもっと楽しい！かわいい猫ゲーム200種\nにゃんにゃんパーティー：2人で遊べるミニゲーム集\nApp Storeで「にゃんにゃんパーティー」を検索\nAndroidはGoogle Playで\n\n#2人で遊べるミニゲーム集 #対戦 #二人 #ふたり #にゃんにゃんパーティー",
+    "button": "App Storeで入手",
+    "variant": "b",
+    "alt": "にゃんにゃんパーティー：2人で遊べるミニゲーム集 — かわいい猫の ミニゲーム200種 — 普通のiPhoneでも全部遊べる 画面上の代わりの操作 — 折りたたみスマホでもっと楽しい！かわいい猫ゲーム200種",
+    "store": "https://apps.apple.com/jp/app/id6829184924?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.FoldParty&referrer=utm_source%3Dsocial%26utm_campaign%3Dfoldparty",
+    "review": {
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6829184924?action=write-review"
+    },
+    "keywords": [
+     "対戦",
+     "二人",
+     "ふたり",
+     "協力",
+     "オフライン",
+     "暇つぶし"
+    ],
+    "keyline": "折りたたみスマホでもっと楽しい！かわいい猫ゲーム200種",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "ab531da7b99e178e",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "かわいい猫の ミニゲーム200種 | にゃんにゃんパーティー #Shorts",
+     "description": "かわいい猫の ミニゲーム200種\n普通のiPhoneでも全部遊べる 画面上の代わりの操作\n折りたたみスマホでもっと楽しい！かわいい猫ゲーム200種\n\nにゃんにゃんパーティー：2人で遊べるミニゲーム集\nApp Store: https://apps.apple.com/jp/app/id6829184924?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.FoldParty&referrer=utm_source%3Dsocial%26utm_campaign%3Dfoldparty\nこのアプリをお使いですか？App Store で評価・レビューできます\nhttps://apps.apple.com/app/id6829184924?action=write-review\n\n対戦 · 二人 · ふたり · 協力 · オフライン · 暇つぶし\n\n#Shorts #2人で遊べるミニゲーム集 #にゃんにゃんパーティー",
+     "tags": [
+      "対戦",
+      "二人",
+      "ふたり",
+      "協力",
+      "オフライン",
+      "暇つぶし",
+      "2人で遊べるミニゲーム集",
+      "にゃんにゃんパーティー"
+     ]
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "foldparty/ko",
+    "locale": "ko",
+    "app": "foldparty",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/915b95726c.mp4",
+    "hook": "귀여운 고양이 미니게임 200개",
+    "name": "냥냥 파티: 고양이 2인용 게임",
+    "title": "귀여운 고양이 미니게임 200개 | 폴더블 폰에서 더 재밌는 귀여운 미니게임 200개 | 냥냥 파티",
+    "tags": [
+     "#고양이2인용게임",
+     "#오프라인",
+     "#데이터",
+     "#인터넷",
+     "#필요없는",
+     "#냥냥파티"
+    ],
+    "caption": "귀여운 고양이 미니게임 200개\n일반 iPhone에서도 모두 플레이 화면 속 대체 조작\n폴더블 폰에서 더 재밌는 귀여운 미니게임 200개\n냥냥 파티: 고양이 2인용 게임\nApp Store에서 '냥냥 파티' 검색\nAndroid는 Google Play에서\n\n#고양이2인용게임 #오프라인 #데이터 #인터넷 #냥냥파티",
+    "button": "App Store에서 받기",
+    "variant": "b",
+    "alt": "냥냥 파티: 고양이 2인용 게임 — 귀여운 고양이 미니게임 200개 — 일반 iPhone에서도 모두 플레이 화면 속 대체 조작 — 폴더블 폰에서 더 재밌는 귀여운 미니게임 200개",
+    "store": "https://apps.apple.com/kr/app/id6829184924?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.FoldParty&referrer=utm_source%3Dsocial%26utm_campaign%3Dfoldparty",
+    "review": {
+     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
+     "url": "https://apps.apple.com/app/id6829184924?action=write-review"
+    },
+    "keywords": [
+     "오프라인",
+     "데이터",
+     "인터넷",
+     "필요없는",
+     "둘이서",
+     "두명"
+    ],
+    "keyline": "폴더블 폰에서 더 재밌는 귀여운 미니게임 200개",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "ab531da7b99e178e",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "귀여운 고양이 미니게임 200개 | 냥냥 파티 #Shorts",
+     "description": "귀여운 고양이 미니게임 200개\n일반 iPhone에서도 모두 플레이 화면 속 대체 조작\n폴더블 폰에서 더 재밌는 귀여운 미니게임 200개\n\n냥냥 파티: 고양이 2인용 게임\nApp Store: https://apps.apple.com/kr/app/id6829184924?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.FoldParty&referrer=utm_source%3Dsocial%26utm_campaign%3Dfoldparty\n이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다\nhttps://apps.apple.com/app/id6829184924?action=write-review\n\n오프라인 · 데이터 · 인터넷 · 필요없는 · 둘이서 · 두명\n\n#Shorts #고양이2인용게임 #냥냥파티",
+     "tags": [
+      "오프라인",
+      "데이터",
+      "인터넷",
+      "필요없는",
+      "둘이서",
+      "두명",
+      "고양이2인용게임",
+      "냥냥파티",
+      "냥냥 파티"
+     ]
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "foldparty/de",
+    "locale": "de",
+    "app": "foldparty",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/6f15c998a5.mp4",
+    "hook": "200 niedliche Katzen-Minispiele",
+    "name": "Meow Party: Mini-Katzenspiele",
+    "title": "200 niedliche Katzen-Minispiele | 200 Minispiele fürs Foldable | Meow Party",
+    "tags": [
+     "#MiniKatzenspiele",
+     "#Katzen",
+     "#Zwei",
+     "#Zweit",
+     "#Handy",
+     "#MeowParty"
+    ],
+    "caption": "200 niedliche Katzen-Minispiele\nAuf jedem iPhone voll spielbar mit Button oder Geste\n200 Minispiele fürs Foldable\nMeow Party: Mini-Katzenspiele\nIm App Store nach „Meow Party“ suchen\nAuch bei Google Play\n\n#MiniKatzenspiele #Katzen #Zwei #Zweit #MeowParty",
+    "button": "Im App Store laden",
+    "variant": "b",
+    "alt": "Meow Party: Mini-Katzenspiele — 200 niedliche Katzen-Minispiele — Auf jedem iPhone voll spielbar mit Button oder Geste — 200 Minispiele fürs Foldable",
+    "store": "https://apps.apple.com/de/app/id6829184924?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.FoldParty&referrer=utm_source%3Dsocial%26utm_campaign%3Dfoldparty",
+    "review": {
+     "label": "Sie nutzen diese App bereits? Bewerten oder rezensieren Sie sie im App Store",
+     "url": "https://apps.apple.com/app/id6829184924?action=write-review"
+    },
+    "keywords": [
+     "katzen",
+     "zwei",
+     "zweit",
+     "handy",
+     "ohne",
+     "wlan"
+    ],
+    "keyline": "200 Minispiele fürs Foldable",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "ab531da7b99e178e",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "200 niedliche Katzen-Minispiele | Meow Party #Shorts",
+     "description": "200 niedliche Katzen-Minispiele\nAuf jedem iPhone voll spielbar mit Button oder Geste\n200 Minispiele fürs Foldable\n\nMeow Party: Mini-Katzenspiele\nApp Store: https://apps.apple.com/de/app/id6829184924?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.FoldParty&referrer=utm_source%3Dsocial%26utm_campaign%3Dfoldparty\nSie nutzen diese App bereits? Bewerten oder rezensieren Sie sie im App Store\nhttps://apps.apple.com/app/id6829184924?action=write-review\n\nkatzen · zwei · zweit · handy · ohne · wlan\n\n#Shorts #MiniKatzenspiele #MeowParty",
+     "tags": [
+      "katzen",
+      "zwei",
+      "zweit",
+      "handy",
+      "ohne",
+      "wlan",
+      "MiniKatzenspiele",
+      "MeowParty",
+      "Meow Party"
+     ]
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "foldparty/es",
+    "locale": "es",
+    "app": "foldparty",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/c32bbce781.mp4",
+    "hook": "200 minijuegos de gatos adorables",
+    "name": "Meow Party: Juegos para dos",
+    "title": "200 minijuegos de gatos adorables | 200 minijuegos en tu plegable | Meow Party",
+    "tags": [
+     "#JuegosParaDos",
+     "#Jugadores",
+     "#Personas",
+     "#Mismo",
+     "#Móvil",
+     "#MeowParty"
+    ],
+    "caption": "200 minijuegos de gatos adorables\nCompleto en cualquier iPhone con botón o pellizco\n200 minijuegos en tu plegable\nMeow Party: Juegos para dos\nBusca «Meow Party» en el App Store\nTambién en Google Play\n\n#JuegosParaDos #Jugadores #Personas #Mismo #MeowParty",
+    "button": "Descargar en el App Store",
+    "variant": "b",
+    "alt": "Meow Party: Juegos para dos — 200 minijuegos de gatos adorables — Completo en cualquier iPhone con botón o pellizco — 200 minijuegos en tu plegable",
+    "store": "https://apps.apple.com/es/app/id6829184924?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.FoldParty&referrer=utm_source%3Dsocial%26utm_campaign%3Dfoldparty",
+    "review": {
+     "label": "¿Ya usas esta app? Valórala o escribe una reseña en el App Store",
+     "url": "https://apps.apple.com/app/id6829184924?action=write-review"
+    },
+    "keywords": [
+     "jugadores",
+     "personas",
+     "mismo",
+     "móvil",
+     "internet",
+     "conexión"
+    ],
+    "keyline": "200 minijuegos en tu plegable",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "ab531da7b99e178e",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "200 minijuegos de gatos adorables | Meow Party #Shorts",
+     "description": "200 minijuegos de gatos adorables\nCompleto en cualquier iPhone con botón o pellizco\n200 minijuegos en tu plegable\n\nMeow Party: Juegos para dos\nApp Store: https://apps.apple.com/es/app/id6829184924?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.FoldParty&referrer=utm_source%3Dsocial%26utm_campaign%3Dfoldparty\n¿Ya usas esta app? Valórala o escribe una reseña en el App Store\nhttps://apps.apple.com/app/id6829184924?action=write-review\n\njugadores · personas · mismo · móvil · internet · conexión\n\n#Shorts #JuegosParaDos #MeowParty",
+     "tags": [
+      "jugadores",
+      "personas",
+      "mismo",
+      "móvil",
+      "internet",
+      "conexión",
+      "JuegosParaDos",
+      "MeowParty",
+      "Meow Party"
+     ]
+    }
+   },
+   {
+    "kind": "clip",
     "key": "tripbeecute/en",
     "locale": "en",
     "app": "tripbeecute",
@@ -59738,6 +60422,294 @@
    },
    {
     "kind": "clip",
+    "key": "foldparty/en",
+    "locale": "en",
+    "app": "foldparty",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/06b50078d8.mp4",
+    "hook": "Offline, no ads, no account",
+    "name": "Meow Party: 200 Cat Mini Games",
+    "title": "Offline, no ads, no account | 2 Player Games: Fold & Play | Meow Party",
+    "tags": [
+     "#200CatMiniGames",
+     "#Foldable",
+     "#Couple",
+     "#Device",
+     "#Phone",
+     "#MeowParty"
+    ],
+    "caption": "Offline, no ads, no account\n200 cute cat minigames\n2 Player Games: Fold & Play\nMeow Party: 200 Cat Mini Games\nSearch “Meow Party” on the App Store\nAlso on Google Play\n\n#200CatMiniGames #Foldable #Couple #Device #MeowParty",
+    "button": "Get it on the App Store",
+    "variant": "c",
+    "alt": "Meow Party: 200 Cat Mini Games — Offline, no ads, no account — 200 cute cat minigames — 2 Player Games: Fold & Play",
+    "store": "https://apps.apple.com/us/app/id6829184924?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.FoldParty&referrer=utm_source%3Dsocial%26utm_campaign%3Dfoldparty",
+    "review": {
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6829184924?action=write-review"
+    },
+    "keywords": [
+     "foldable",
+     "couple",
+     "device",
+     "phone",
+     "split",
+     "screen"
+    ],
+    "keyline": "2 Player Games: Fold & Play",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "ab531da7b99e178e",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "Offline, no ads, no account\n200 cute cat minigames\n2 Player Games: Fold & Play\nMeow Party: 200 Cat Mini Games\nSearch “Meow Party” on the App Store\nAlso on Google Play\n\n#200CatMiniGames #Foldable #Couple #Device #MeowParty\n\nGet it on the App Store: https://apps.apple.com/us/app/id6829184924?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.FoldParty&referrer=utm_source%3Dsocial%26utm_campaign%3Dfoldparty",
+     "link": "https://apps.apple.com/us/app/id6829184924?pt=118326163&ct=social&mt=8"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "foldparty/zh-Hant",
+    "locale": "zh-Hant",
+    "app": "foldparty",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/1751a82e04.mp4",
+    "hook": "200 款可愛貓咪 小遊戲",
+    "name": "喵喵派對：雙人遊戲 貓咪小遊戲",
+    "title": "200 款可愛貓咪 小遊戲 | 摺疊手機更好玩！200款可愛遊戲，兩人一台就能對戰 | 喵喵派對",
+    "tags": [
+     "#雙人遊戲貓咪小遊戲",
+     "#離線",
+     "#不用網路",
+     "#無網路",
+     "#單機",
+     "#喵喵派對"
+    ],
+    "caption": "200 款可愛貓咪 小遊戲\n一般 iPhone 也能完整玩 畫面按鈕或雙指捏合\n摺疊手機更好玩！200款可愛遊戲，兩人一台就能對戰\n喵喵派對：雙人遊戲 貓咪小遊戲\n在 App Store 搜尋「喵喵派對」\nAndroid 版在 Google Play\n\n#雙人遊戲貓咪小遊戲 #離線 #不用網路 #無網路 #喵喵派對",
+    "button": "在 App Store 下載",
+    "variant": "b",
+    "alt": "喵喵派對：雙人遊戲 貓咪小遊戲 — 200 款可愛貓咪 小遊戲 — 一般 iPhone 也能完整玩 畫面按鈕或雙指捏合 — 摺疊手機更好玩！200款可愛遊戲，兩人一台就能對戰",
+    "store": "https://apps.apple.com/tw/app/id6829184924?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.FoldParty&referrer=utm_source%3Dsocial%26utm_campaign%3Dfoldparty",
+    "review": {
+     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
+     "url": "https://apps.apple.com/app/id6829184924?action=write-review"
+    },
+    "keywords": [
+     "離線",
+     "不用網路",
+     "無網路",
+     "單機",
+     "折疊",
+     "螢幕"
+    ],
+    "keyline": "摺疊手機更好玩！200款可愛遊戲，兩人一台就能對戰",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "ab531da7b99e178e",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "200 款可愛貓咪 小遊戲\n一般 iPhone 也能完整玩 畫面按鈕或雙指捏合\n摺疊手機更好玩！200款可愛遊戲，兩人一台就能對戰\n喵喵派對：雙人遊戲 貓咪小遊戲\n在 App Store 搜尋「喵喵派對」\nAndroid 版在 Google Play\n\n#雙人遊戲貓咪小遊戲 #離線 #不用網路 #無網路 #喵喵派對\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6829184924?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.FoldParty&referrer=utm_source%3Dsocial%26utm_campaign%3Dfoldparty",
+     "link": "https://apps.apple.com/tw/app/id6829184924?pt=118326163&ct=social&mt=8"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "foldparty/ja",
+    "locale": "ja",
+    "app": "foldparty",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/660002f2e3.mp4",
+    "hook": "1台のスマホで 2人向かい合って対戦",
+    "name": "にゃんにゃんパーティー：2人で遊べるミニゲーム集",
+    "title": "1台のスマホで 2人向かい合って対戦 | 折りたたみスマホでもっと楽しい！かわいい猫ゲーム200種 | にゃんにゃんパーティー",
+    "tags": [
+     "#2人で遊べるミニゲーム集",
+     "#対戦",
+     "#二人",
+     "#ふたり",
+     "#協力",
+     "#にゃんにゃんパーティー"
+    ],
+    "caption": "1台のスマホで 2人向かい合って対戦\nかわいい猫の ミニゲーム200種\n折りたたみスマホでもっと楽しい！かわいい猫ゲーム200種\nにゃんにゃんパーティー：2人で遊べるミニゲーム集\nApp Storeで「にゃんにゃんパーティー」を検索\nAndroidはGoogle Playで\n\n#2人で遊べるミニゲーム集 #対戦 #二人 #ふたり #にゃんにゃんパーティー",
+    "button": "App Storeで入手",
+    "variant": "a",
+    "alt": "にゃんにゃんパーティー：2人で遊べるミニゲーム集 — 1台のスマホで 2人向かい合って対戦 — かわいい猫の ミニゲーム200種 — 折りたたみスマホでもっと楽しい！かわいい猫ゲーム200種",
+    "store": "https://apps.apple.com/jp/app/id6829184924?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.FoldParty&referrer=utm_source%3Dsocial%26utm_campaign%3Dfoldparty",
+    "review": {
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6829184924?action=write-review"
+    },
+    "keywords": [
+     "対戦",
+     "二人",
+     "ふたり",
+     "協力",
+     "オフライン",
+     "暇つぶし"
+    ],
+    "keyline": "折りたたみスマホでもっと楽しい！かわいい猫ゲーム200種",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "ab531da7b99e178e",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "1台のスマホで 2人向かい合って対戦\nかわいい猫の ミニゲーム200種\n折りたたみスマホでもっと楽しい！かわいい猫ゲーム200種\nにゃんにゃんパーティー：2人で遊べるミニゲーム集\nApp Storeで「にゃんにゃんパーティー」を検索\nAndroidはGoogle Playで\n\n#2人で遊べるミニゲーム集 #対戦 #二人 #ふたり #にゃんにゃんパーティー\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6829184924?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.FoldParty&referrer=utm_source%3Dsocial%26utm_campaign%3Dfoldparty",
+     "link": "https://apps.apple.com/jp/app/id6829184924?pt=118326163&ct=social&mt=8"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "foldparty/ko",
+    "locale": "ko",
+    "app": "foldparty",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/915b95726c.mp4",
+    "hook": "한 폰으로 둘이 마주 보고 대결",
+    "name": "냥냥 파티: 고양이 2인용 게임",
+    "title": "한 폰으로 둘이 마주 보고 대결 | 폴더블 폰에서 더 재밌는 귀여운 미니게임 200개 | 냥냥 파티",
+    "tags": [
+     "#고양이2인용게임",
+     "#오프라인",
+     "#데이터",
+     "#인터넷",
+     "#필요없는",
+     "#냥냥파티"
+    ],
+    "caption": "한 폰으로 둘이 마주 보고 대결\n귀여운 고양이 미니게임 200개\n폴더블 폰에서 더 재밌는 귀여운 미니게임 200개\n냥냥 파티: 고양이 2인용 게임\nApp Store에서 '냥냥 파티' 검색\nAndroid는 Google Play에서\n\n#고양이2인용게임 #오프라인 #데이터 #인터넷 #냥냥파티",
+    "button": "App Store에서 받기",
+    "variant": "a",
+    "alt": "냥냥 파티: 고양이 2인용 게임 — 한 폰으로 둘이 마주 보고 대결 — 귀여운 고양이 미니게임 200개 — 폴더블 폰에서 더 재밌는 귀여운 미니게임 200개",
+    "store": "https://apps.apple.com/kr/app/id6829184924?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.FoldParty&referrer=utm_source%3Dsocial%26utm_campaign%3Dfoldparty",
+    "review": {
+     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
+     "url": "https://apps.apple.com/app/id6829184924?action=write-review"
+    },
+    "keywords": [
+     "오프라인",
+     "데이터",
+     "인터넷",
+     "필요없는",
+     "둘이서",
+     "두명"
+    ],
+    "keyline": "폴더블 폰에서 더 재밌는 귀여운 미니게임 200개",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "ab531da7b99e178e",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "한 폰으로 둘이 마주 보고 대결\n귀여운 고양이 미니게임 200개\n폴더블 폰에서 더 재밌는 귀여운 미니게임 200개\n냥냥 파티: 고양이 2인용 게임\nApp Store에서 '냥냥 파티' 검색\nAndroid는 Google Play에서\n\n#고양이2인용게임 #오프라인 #데이터 #인터넷 #냥냥파티\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6829184924?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.FoldParty&referrer=utm_source%3Dsocial%26utm_campaign%3Dfoldparty",
+     "link": "https://apps.apple.com/kr/app/id6829184924?pt=118326163&ct=social&mt=8"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "foldparty/de",
+    "locale": "de",
+    "app": "foldparty",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/6f15c998a5.mp4",
+    "hook": "200 niedliche Katzen-Minispiele",
+    "name": "Meow Party: Mini-Katzenspiele",
+    "title": "200 niedliche Katzen-Minispiele | 200 Minispiele fürs Foldable | Meow Party",
+    "tags": [
+     "#MiniKatzenspiele",
+     "#Katzen",
+     "#Zwei",
+     "#Zweit",
+     "#Handy",
+     "#MeowParty"
+    ],
+    "caption": "200 niedliche Katzen-Minispiele\nAuf jedem iPhone voll spielbar mit Button oder Geste\n200 Minispiele fürs Foldable\nMeow Party: Mini-Katzenspiele\nIm App Store nach „Meow Party“ suchen\nAuch bei Google Play\n\n#MiniKatzenspiele #Katzen #Zwei #Zweit #MeowParty",
+    "button": "Im App Store laden",
+    "variant": "b",
+    "alt": "Meow Party: Mini-Katzenspiele — 200 niedliche Katzen-Minispiele — Auf jedem iPhone voll spielbar mit Button oder Geste — 200 Minispiele fürs Foldable",
+    "store": "https://apps.apple.com/de/app/id6829184924?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.FoldParty&referrer=utm_source%3Dsocial%26utm_campaign%3Dfoldparty",
+    "review": {
+     "label": "Sie nutzen diese App bereits? Bewerten oder rezensieren Sie sie im App Store",
+     "url": "https://apps.apple.com/app/id6829184924?action=write-review"
+    },
+    "keywords": [
+     "katzen",
+     "zwei",
+     "zweit",
+     "handy",
+     "ohne",
+     "wlan"
+    ],
+    "keyline": "200 Minispiele fürs Foldable",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "ab531da7b99e178e",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "200 niedliche Katzen-Minispiele\nAuf jedem iPhone voll spielbar mit Button oder Geste\n200 Minispiele fürs Foldable\nMeow Party: Mini-Katzenspiele\nIm App Store nach „Meow Party“ suchen\nAuch bei Google Play\n\n#MiniKatzenspiele #Katzen #Zwei #Zweit #MeowParty\n\nIm App Store laden: https://apps.apple.com/de/app/id6829184924?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.FoldParty&referrer=utm_source%3Dsocial%26utm_campaign%3Dfoldparty",
+     "link": "https://apps.apple.com/de/app/id6829184924?pt=118326163&ct=social&mt=8"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "foldparty/es",
+    "locale": "es",
+    "app": "foldparty",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/c32bbce781.mp4",
+    "hook": "200 minijuegos de gatos adorables",
+    "name": "Meow Party: Juegos para dos",
+    "title": "200 minijuegos de gatos adorables | 200 minijuegos en tu plegable | Meow Party",
+    "tags": [
+     "#JuegosParaDos",
+     "#Jugadores",
+     "#Personas",
+     "#Mismo",
+     "#Móvil",
+     "#MeowParty"
+    ],
+    "caption": "200 minijuegos de gatos adorables\nCompleto en cualquier iPhone con botón o pellizco\n200 minijuegos en tu plegable\nMeow Party: Juegos para dos\nBusca «Meow Party» en el App Store\nTambién en Google Play\n\n#JuegosParaDos #Jugadores #Personas #Mismo #MeowParty",
+    "button": "Descargar en el App Store",
+    "variant": "b",
+    "alt": "Meow Party: Juegos para dos — 200 minijuegos de gatos adorables — Completo en cualquier iPhone con botón o pellizco — 200 minijuegos en tu plegable",
+    "store": "https://apps.apple.com/es/app/id6829184924?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.FoldParty&referrer=utm_source%3Dsocial%26utm_campaign%3Dfoldparty",
+    "review": {
+     "label": "¿Ya usas esta app? Valórala o escribe una reseña en el App Store",
+     "url": "https://apps.apple.com/app/id6829184924?action=write-review"
+    },
+    "keywords": [
+     "jugadores",
+     "personas",
+     "mismo",
+     "móvil",
+     "internet",
+     "conexión"
+    ],
+    "keyline": "200 minijuegos en tu plegable",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "ab531da7b99e178e",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "200 minijuegos de gatos adorables\nCompleto en cualquier iPhone con botón o pellizco\n200 minijuegos en tu plegable\nMeow Party: Juegos para dos\nBusca «Meow Party» en el App Store\nTambién en Google Play\n\n#JuegosParaDos #Jugadores #Personas #Mismo #MeowParty\n\nDescargar en el App Store: https://apps.apple.com/es/app/id6829184924?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.FoldParty&referrer=utm_source%3Dsocial%26utm_campaign%3Dfoldparty",
+     "link": "https://apps.apple.com/es/app/id6829184924?pt=118326163&ct=social&mt=8"
+    }
+   },
+   {
+    "kind": "clip",
     "key": "tripbeecute/en",
     "locale": "en",
     "app": "tripbeecute",
@@ -76533,6 +77505,288 @@
    },
    {
     "kind": "clip",
+    "key": "foldparty/en",
+    "locale": "en",
+    "app": "foldparty",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/06b50078d8.mp4",
+    "hook": "200 cute cat minigames",
+    "name": "Meow Party: 200 Cat Mini Games",
+    "title": "200 cute cat minigames | 2 Player Games: Fold & Play | Meow Party",
+    "tags": [
+     "#200CatMiniGames",
+     "#Foldable",
+     "#Couple",
+     "#Device",
+     "#Phone",
+     "#MeowParty"
+    ],
+    "caption": "200 cute cat minigames\nFully playable on any iPhone with a button or pinch\n2 Player Games: Fold & Play\nMeow Party: 200 Cat Mini Games\nSearch “Meow Party” on the App Store\nAlso on Google Play\n\n#200CatMiniGames #Foldable #Couple #Device #MeowParty",
+    "button": "Get it on the App Store",
+    "variant": "b",
+    "alt": "Meow Party: 200 Cat Mini Games — 200 cute cat minigames — Fully playable on any iPhone with a button or pinch — 2 Player Games: Fold & Play",
+    "store": "https://apps.apple.com/us/app/id6829184924?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.FoldParty&referrer=utm_source%3Dsocial%26utm_campaign%3Dfoldparty",
+    "review": {
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6829184924?action=write-review"
+    },
+    "keywords": [
+     "foldable",
+     "couple",
+     "device",
+     "phone",
+     "split",
+     "screen"
+    ],
+    "keyline": "2 Player Games: Fold & Play",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "ab531da7b99e178e",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "200 cute cat minigames\nFully playable on any iPhone with a button or pinch\n2 Player Games: Fold & Play\nMeow Party: 200 Cat Mini Games\nSearch “Meow Party” on the App Store\nAlso on Google Play\n\n#200CatMiniGames #Foldable #Couple #Device #MeowParty\n\nGet it on the App Store: https://apps.apple.com/us/app/id6829184924?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.FoldParty&referrer=utm_source%3Dsocial%26utm_campaign%3Dfoldparty"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "foldparty/zh-Hant",
+    "locale": "zh-Hant",
+    "app": "foldparty",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/1751a82e04.mp4",
+    "hook": "一支手機 兩人面對面對戰",
+    "name": "喵喵派對：雙人遊戲 貓咪小遊戲",
+    "title": "一支手機 兩人面對面對戰 | 摺疊手機更好玩！200款可愛遊戲，兩人一台就能對戰 | 喵喵派對",
+    "tags": [
+     "#雙人遊戲貓咪小遊戲",
+     "#離線",
+     "#不用網路",
+     "#無網路",
+     "#單機",
+     "#喵喵派對"
+    ],
+    "caption": "一支手機 兩人面對面對戰\n200 款可愛貓咪 小遊戲\n摺疊手機更好玩！200款可愛遊戲，兩人一台就能對戰\n喵喵派對：雙人遊戲 貓咪小遊戲\n在 App Store 搜尋「喵喵派對」\nAndroid 版在 Google Play\n\n#雙人遊戲貓咪小遊戲 #離線 #不用網路 #無網路 #喵喵派對",
+    "button": "在 App Store 下載",
+    "variant": "a",
+    "alt": "喵喵派對：雙人遊戲 貓咪小遊戲 — 一支手機 兩人面對面對戰 — 200 款可愛貓咪 小遊戲 — 摺疊手機更好玩！200款可愛遊戲，兩人一台就能對戰",
+    "store": "https://apps.apple.com/tw/app/id6829184924?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.FoldParty&referrer=utm_source%3Dsocial%26utm_campaign%3Dfoldparty",
+    "review": {
+     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
+     "url": "https://apps.apple.com/app/id6829184924?action=write-review"
+    },
+    "keywords": [
+     "離線",
+     "不用網路",
+     "無網路",
+     "單機",
+     "折疊",
+     "螢幕"
+    ],
+    "keyline": "摺疊手機更好玩！200款可愛遊戲，兩人一台就能對戰",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "ab531da7b99e178e",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "一支手機 兩人面對面對戰\n200 款可愛貓咪 小遊戲\n摺疊手機更好玩！200款可愛遊戲，兩人一台就能對戰\n喵喵派對：雙人遊戲 貓咪小遊戲\n在 App Store 搜尋「喵喵派對」\nAndroid 版在 Google Play\n\n#雙人遊戲貓咪小遊戲 #離線 #不用網路 #無網路 #喵喵派對\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6829184924?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.FoldParty&referrer=utm_source%3Dsocial%26utm_campaign%3Dfoldparty"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "foldparty/ja",
+    "locale": "ja",
+    "app": "foldparty",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/660002f2e3.mp4",
+    "hook": "オフラインで 広告なし",
+    "name": "にゃんにゃんパーティー：2人で遊べるミニゲーム集",
+    "title": "オフラインで 広告なし | 折りたたみスマホでもっと楽しい！かわいい猫ゲーム200種 | にゃんにゃんパーティー",
+    "tags": [
+     "#2人で遊べるミニゲーム集",
+     "#対戦",
+     "#二人",
+     "#ふたり",
+     "#協力",
+     "#にゃんにゃんパーティー"
+    ],
+    "caption": "オフラインで 広告なし\nかわいい猫の ミニゲーム200種\n折りたたみスマホでもっと楽しい！かわいい猫ゲーム200種\nにゃんにゃんパーティー：2人で遊べるミニゲーム集\nApp Storeで「にゃんにゃんパーティー」を検索\nAndroidはGoogle Playで\n\n#2人で遊べるミニゲーム集 #対戦 #二人 #ふたり #にゃんにゃんパーティー",
+    "button": "App Storeで入手",
+    "variant": "c",
+    "alt": "にゃんにゃんパーティー：2人で遊べるミニゲーム集 — オフラインで 広告なし — かわいい猫の ミニゲーム200種 — 折りたたみスマホでもっと楽しい！かわいい猫ゲーム200種",
+    "store": "https://apps.apple.com/jp/app/id6829184924?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.FoldParty&referrer=utm_source%3Dsocial%26utm_campaign%3Dfoldparty",
+    "review": {
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6829184924?action=write-review"
+    },
+    "keywords": [
+     "対戦",
+     "二人",
+     "ふたり",
+     "協力",
+     "オフライン",
+     "暇つぶし"
+    ],
+    "keyline": "折りたたみスマホでもっと楽しい！かわいい猫ゲーム200種",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "ab531da7b99e178e",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "オフラインで 広告なし\nかわいい猫の ミニゲーム200種\n折りたたみスマホでもっと楽しい！かわいい猫ゲーム200種\nにゃんにゃんパーティー：2人で遊べるミニゲーム集\nApp Storeで「にゃんにゃんパーティー」を検索\nAndroidはGoogle Playで\n\n#2人で遊べるミニゲーム集 #対戦 #二人 #ふたり #にゃんにゃんパーティー\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6829184924?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.FoldParty&referrer=utm_source%3Dsocial%26utm_campaign%3Dfoldparty"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "foldparty/ko",
+    "locale": "ko",
+    "app": "foldparty",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/915b95726c.mp4",
+    "hook": "오프라인으로 광고 없이",
+    "name": "냥냥 파티: 고양이 2인용 게임",
+    "title": "오프라인으로 광고 없이 | 폴더블 폰에서 더 재밌는 귀여운 미니게임 200개 | 냥냥 파티",
+    "tags": [
+     "#고양이2인용게임",
+     "#오프라인",
+     "#데이터",
+     "#인터넷",
+     "#필요없는",
+     "#냥냥파티"
+    ],
+    "caption": "오프라인으로 광고 없이\n귀여운 고양이 미니게임 200개\n폴더블 폰에서 더 재밌는 귀여운 미니게임 200개\n냥냥 파티: 고양이 2인용 게임\nApp Store에서 '냥냥 파티' 검색\nAndroid는 Google Play에서\n\n#고양이2인용게임 #오프라인 #데이터 #인터넷 #냥냥파티",
+    "button": "App Store에서 받기",
+    "variant": "c",
+    "alt": "냥냥 파티: 고양이 2인용 게임 — 오프라인으로 광고 없이 — 귀여운 고양이 미니게임 200개 — 폴더블 폰에서 더 재밌는 귀여운 미니게임 200개",
+    "store": "https://apps.apple.com/kr/app/id6829184924?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.FoldParty&referrer=utm_source%3Dsocial%26utm_campaign%3Dfoldparty",
+    "review": {
+     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
+     "url": "https://apps.apple.com/app/id6829184924?action=write-review"
+    },
+    "keywords": [
+     "오프라인",
+     "데이터",
+     "인터넷",
+     "필요없는",
+     "둘이서",
+     "두명"
+    ],
+    "keyline": "폴더블 폰에서 더 재밌는 귀여운 미니게임 200개",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "ab531da7b99e178e",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "오프라인으로 광고 없이\n귀여운 고양이 미니게임 200개\n폴더블 폰에서 더 재밌는 귀여운 미니게임 200개\n냥냥 파티: 고양이 2인용 게임\nApp Store에서 '냥냥 파티' 검색\nAndroid는 Google Play에서\n\n#고양이2인용게임 #오프라인 #데이터 #인터넷 #냥냥파티\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6829184924?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.FoldParty&referrer=utm_source%3Dsocial%26utm_campaign%3Dfoldparty"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "foldparty/de",
+    "locale": "de",
+    "app": "foldparty",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/6f15c998a5.mp4",
+    "hook": "Ein Handy, zu zweit gegenüber",
+    "name": "Meow Party: Mini-Katzenspiele",
+    "title": "Ein Handy, zu zweit gegenüber | 200 Minispiele fürs Foldable | Meow Party",
+    "tags": [
+     "#MiniKatzenspiele",
+     "#Katzen",
+     "#Zwei",
+     "#Zweit",
+     "#Handy",
+     "#MeowParty"
+    ],
+    "caption": "Ein Handy, zu zweit gegenüber\n200 niedliche Katzen-Minispiele\n200 Minispiele fürs Foldable\nMeow Party: Mini-Katzenspiele\nIm App Store nach „Meow Party“ suchen\nAuch bei Google Play\n\n#MiniKatzenspiele #Katzen #Zwei #Zweit #MeowParty",
+    "button": "Im App Store laden",
+    "variant": "a",
+    "alt": "Meow Party: Mini-Katzenspiele — Ein Handy, zu zweit gegenüber — 200 niedliche Katzen-Minispiele — 200 Minispiele fürs Foldable",
+    "store": "https://apps.apple.com/de/app/id6829184924?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.FoldParty&referrer=utm_source%3Dsocial%26utm_campaign%3Dfoldparty",
+    "review": {
+     "label": "Sie nutzen diese App bereits? Bewerten oder rezensieren Sie sie im App Store",
+     "url": "https://apps.apple.com/app/id6829184924?action=write-review"
+    },
+    "keywords": [
+     "katzen",
+     "zwei",
+     "zweit",
+     "handy",
+     "ohne",
+     "wlan"
+    ],
+    "keyline": "200 Minispiele fürs Foldable",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "ab531da7b99e178e",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "Ein Handy, zu zweit gegenüber\n200 niedliche Katzen-Minispiele\n200 Minispiele fürs Foldable\nMeow Party: Mini-Katzenspiele\nIm App Store nach „Meow Party“ suchen\nAuch bei Google Play\n\n#MiniKatzenspiele #Katzen #Zwei #Zweit #MeowParty\n\nIm App Store laden: https://apps.apple.com/de/app/id6829184924?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.FoldParty&referrer=utm_source%3Dsocial%26utm_campaign%3Dfoldparty"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "foldparty/es",
+    "locale": "es",
+    "app": "foldparty",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/c32bbce781.mp4",
+    "hook": "Dos jugadores, un solo móvil",
+    "name": "Meow Party: Juegos para dos",
+    "title": "Dos jugadores, un solo móvil | 200 minijuegos en tu plegable | Meow Party",
+    "tags": [
+     "#JuegosParaDos",
+     "#Jugadores",
+     "#Personas",
+     "#Mismo",
+     "#Móvil",
+     "#MeowParty"
+    ],
+    "caption": "Dos jugadores, un solo móvil\n200 minijuegos de gatos adorables\n200 minijuegos en tu plegable\nMeow Party: Juegos para dos\nBusca «Meow Party» en el App Store\nTambién en Google Play\n\n#JuegosParaDos #Jugadores #Personas #Mismo #MeowParty",
+    "button": "Descargar en el App Store",
+    "variant": "a",
+    "alt": "Meow Party: Juegos para dos — Dos jugadores, un solo móvil — 200 minijuegos de gatos adorables — 200 minijuegos en tu plegable",
+    "store": "https://apps.apple.com/es/app/id6829184924?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.FoldParty&referrer=utm_source%3Dsocial%26utm_campaign%3Dfoldparty",
+    "review": {
+     "label": "¿Ya usas esta app? Valórala o escribe una reseña en el App Store",
+     "url": "https://apps.apple.com/app/id6829184924?action=write-review"
+    },
+    "keywords": [
+     "jugadores",
+     "personas",
+     "mismo",
+     "móvil",
+     "internet",
+     "conexión"
+    ],
+    "keyline": "200 minijuegos en tu plegable",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "ab531da7b99e178e",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "Dos jugadores, un solo móvil\n200 minijuegos de gatos adorables\n200 minijuegos en tu plegable\nMeow Party: Juegos para dos\nBusca «Meow Party» en el App Store\nTambién en Google Play\n\n#JuegosParaDos #Jugadores #Personas #Mismo #MeowParty\n\nDescargar en el App Store: https://apps.apple.com/es/app/id6829184924?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.FoldParty&referrer=utm_source%3Dsocial%26utm_campaign%3Dfoldparty"
+    }
+   },
+   {
+    "kind": "clip",
     "key": "tripbeecute/en",
     "locale": "en",
     "app": "tripbeecute",
@@ -76894,19 +78148,19 @@
      "posts": 17,
      "hours": {
       "1": 9.3,
-      "2": 5.5,
+      "2": 6.0,
       "8": 12.7,
       "13": 11.0,
-      "15": 4.0,
+      "15": 4.5,
       "16": 8.0
      }
     },
     "zh-Hant": {
      "hour": 3,
-     "avg_views": 283.0,
+     "avg_views": 283.5,
      "posts": 14,
      "hours": {
-      "3": 283.0,
+      "3": 283.5,
       "6": 30.5,
       "13": 82.5,
       "16": 10.0,
@@ -76915,6 +78169,6 @@
     }
    }
   },
-  "updated_at": "2026-11-05T06:28:39Z"
+  "updated_at": "2026-11-06T06:23:29Z"
  }
 }

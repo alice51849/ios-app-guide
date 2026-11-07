@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T06:23:29Z",
+  "updated_at": "2026-11-07T05:46:39Z",
   "note": "Insights of our own IG / Threads posts by .github/scripts/post_performance.py. score = views + 3*likes + 5*replies + 8*(saves+shares+reposts). boost = best apps, read by 00_GrowthEngine shorts/scripts/schedule_posts.py.",
   "sources": {
     "instagram": "ok: 38 posts",
@@ -101,7 +101,7 @@
       "en": {
         "hour": 8,
         "avg_views": 12.7,
-        "posts": 17,
+        "posts": 18,
         "hours": {
           "1": 9.3,
           "2": 6.0,
@@ -321,6 +321,14 @@
         "avg_score": 8.0
       },
       {
+        "key": "gmoneylite",
+        "posts": 1,
+        "views": 3,
+        "engagement": 1,
+        "score": 8,
+        "avg_score": 8.0
+      },
+      {
         "key": "tripplanet",
         "posts": 1,
         "views": 7,
@@ -508,11 +516,11 @@
       },
       {
         "key": "en",
-        "posts": 35,
-        "views": 334,
-        "engagement": 10,
-        "score": 382,
-        "avg_score": 10.9
+        "posts": 36,
+        "views": 337,
+        "engagement": 11,
+        "score": 390,
+        "avg_score": 10.8
       },
       {
         "key": "de",
@@ -1004,6 +1012,16 @@
         "app": "wifiaid",
         "locale": "en",
         "hook": "Router, Mesh & DNS Diagnostics.",
+        "posts": 1,
+        "views": 3,
+        "engagement": 1,
+        "score": 8,
+        "avg_score": 8.0
+      },
+      {
+        "app": "gmoneylite",
+        "locale": "en",
+        "hook": "Travel Budget & Currency.",
         "posts": 1,
         "views": 3,
         "engagement": 1,
@@ -3625,6 +3643,25 @@
       "app": "wifiaid",
       "locale": "en",
       "hook": "Router, Mesh & DNS Diagnostics.",
+      "clip": null,
+      "kind": "image",
+      "variant": null,
+      "metrics": {
+        "views": 3,
+        "likes": 0,
+        "replies": 1,
+        "reposts": 0
+      },
+      "score": 8
+    },
+    {
+      "channel": "threads",
+      "id": "17940226470406618",
+      "link": "https://www.threads.com/@hourstag.app/post/DfZPFOLE8-h",
+      "posted_at": "2026-11-06T09:07:12",
+      "app": "gmoneylite",
+      "locale": "en",
+      "hook": "Travel Budget & Currency.",
       "clip": null,
       "kind": "image",
       "variant": null,

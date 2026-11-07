@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-11-06",
-  "content_digest": "b6acd1260b0544fdb35dafcd6ce6f62c5c825df34bd03991134a6c209dc19765",
+  "date_modified": "2026-11-07",
+  "content_digest": "c4a02c10685666d44cdbf9e671cb5ab756215ae7704b60749e5ca130d07a665e",
   "locale": "en-GB",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -488,7 +488,6 @@
         "wake",
         "up",
         "cute",
-        "holiday alarm clock",
         "workday alarm",
         "alarm skip holidays"
       ],
@@ -872,8 +871,8 @@
         "writing",
         "stroke",
         "order",
-        "learn zhuyin",
         "bopomofo",
+        "learn zhuyin",
         "zhuyin"
       ],
       "purchase_model": "free_with_lifetime_unlock",
@@ -2263,8 +2262,8 @@
         "allowance",
         "cli",
         "copilot usage",
-        "ai usage tracker",
-        "claude usage limit"
+        "codex usage limit",
+        "ai usage tracker"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

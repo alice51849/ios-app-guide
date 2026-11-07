@@ -27,6 +27,7 @@ import json
 import os
 import re
 import sys
+import urllib.parse
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
@@ -39,7 +40,7 @@ import android_play  # noqa: E402
 import gw_campaign  # noqa: E402
 import store_copy_drift  # noqa: E402
 import first_party_disclosure  # noqa: E402
-from app_store_storefronts import validated_app_store_url  # noqa: E402
+from app_store_storefronts import APP_STORE_PATH_RE, validated_app_store_url  # noqa: E402
 from site_config import PUBLIC_SITE  # noqa: E402
 
 PAGES = Path(os.environ.get("GEO_PAGES", HERE / "pages")).resolve()
@@ -780,11 +781,32 @@ def campaign(key: str, cc: str) -> str:
     return token
 
 
-def store_url(key: str, lang: str) -> str:
+# 同語系、但不在 locale_storefronts.json 的商店國家（頁面 spec 用 "cc" 指定，例如香港繁中頁 → hk）。
+EXTRA_STOREFRONTS = frozenset({"hk"})
+
+
+def extra_storefront_url(url: str, app_id: str | None, cc: str) -> str:
+    """spec["cc"] 指定的額外商店國家直連：路徑國家、App ID、pt、gw ct、mt 都要對。"""
+    parsed = urllib.parse.urlsplit(url)
+    path = APP_STORE_PATH_RE.fullmatch(parsed.path)
+    query = urllib.parse.parse_qs(parsed.query)
+    if (cc not in EXTRA_STOREFRONTS or parsed.scheme != "https" or parsed.netloc != "apps.apple.com"
+            or path is None or path.group("country") != cc or parsed.fragment
+            or (app_id is not None and path.group("app_id") != app_id)
+            or query.get("pt") != [PROVIDER_TOKEN] or query.get("mt") != ["8"]
+            or len(query.get("ct", [])) != 1 or not gw_campaign.is_gw(query["ct"][0])):
+        raise GenerationError(f"Invalid {cc} App Store URL: {url!r}")
+    return url
+
+
+def store_url(key: str, lang: str, cc: str | None = None) -> str:
     info = LANGS[lang]
     app_id = APP_IDS[key]
-    url = (f"https://apps.apple.com/{info['cc']}/app/id{app_id}"
-           f"?pt={PROVIDER_TOKEN}&ct={campaign(key, info['cc'])}&mt=8")
+    country = cc or info["cc"]
+    url = (f"https://apps.apple.com/{country}/app/id{app_id}"
+           f"?pt={PROVIDER_TOKEN}&ct={campaign(key, country)}&mt=8")
+    if country != info["cc"]:
+        return extra_storefront_url(url, app_id, country)
     return validated_app_store_url(url, app_id, expected_locale=info["store"], require_campaign=True,
                                    provider_token=PROVIDER_TOKEN)
 
@@ -805,10 +827,10 @@ def store_names(data_dir: Path = ROOT / "data") -> dict[tuple[str, str], str]:
     return out
 
 
-def _card(key: str, text: str, lang: str, names: dict) -> str:
+def _card(key: str, text: str, lang: str, names: dict, cc: str | None = None) -> str:
     info = LANGS[lang]
     name = names[(key, lang)]
-    cta = f'<a class="dl" href="{esc(store_url(key, lang))}" rel="noopener">{esc(info["cta"])}</a>'
+    cta = f'<a class="dl" href="{esc(store_url(key, lang, cc))}" rel="noopener">{esc(info["cta"])}</a>'
     cta += f' <a class="more" href="{esc(url_for(f"{info["dir"]}/{key}.html"))}">{esc(info["more"])}</a>'
     return "\n".join([f'<article class="app" id="app-{esc(key)}">', f"<h3>{esc(name)}</h3>",
                       f"<p>{esc(text)}</p>", f'<p class="cta">{cta}</p>', "</article>"])
@@ -831,7 +853,7 @@ def render(spec: dict, names: dict) -> str:
     steps = "".join(f"<li>{esc(step)}</li>" for step in spec["steps"])
     blocks.append(f'<section id="steps"><h2>{esc(spec["steps_title"])}</h2><ol class="steps">{steps}</ol></section>')
     toc.append(f'<a href="#steps">{esc(spec["steps_title"])}</a>')
-    cards = "\n".join(_card(key, text, lang, names) for key, text in spec["cards"])
+    cards = "\n".join(_card(key, text, lang, names, spec.get("cc")) for key, text in spec["cards"])
     blocks.append(f'<section id="apps"><div class="cards">\n{cards}\n</div></section>')
     faqs = "".join(f'<details class="faq"><summary>{esc(q)}</summary><p>{esc(a)}</p></details>'
                    for q, a in spec["faqs"])
@@ -918,17 +940,21 @@ def page_problems(spec: dict, source: str, pages: Path | None = None) -> list[st
     for found in BANNED.finditer(html.unescape(text + head_text)):
         problems.append(f"{relative}: banned price/free/pro wording {found.group(0)!r}")
     info = LANGS[spec["lang"]]
+    cc = spec.get("cc") or info["cc"]
     for href in re.findall(r'href="(https://apps\.apple\.com/[^"]+)"', source):
         url = html.unescape(href)
         try:
-            validated_app_store_url(url, expected_locale=info["store"], require_campaign=True)
-        except ValueError as error:
+            if cc != info["cc"]:
+                extra_storefront_url(url, None, cc)
+            else:
+                validated_app_store_url(url, expected_locale=info["store"], require_campaign=True)
+        except (ValueError, GenerationError) as error:
             problems.append(f"{relative}: {error}")
     cards = re.findall(r'<article class="app"[^>]*>.*?</article>', source, re.S)
     if not cards:
         problems.append(f"{relative}: no app cards")
     for card in cards:
-        if f"https://apps.apple.com/{info['cc']}/app/id" not in card:
+        if f"https://apps.apple.com/{cc}/app/id" not in card:
             problems.append(f"{relative}: card without a direct App Store link")
     if pages is not None:
         for href in set(re.findall(r'href="(' + re.escape(SITE) + r'/[^"#]+)"', source)):

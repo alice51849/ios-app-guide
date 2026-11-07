@@ -256,6 +256,31 @@ class ClipPostsTest(unittest.TestCase):
         button = json.loads(sent["reply_markup"])["inline_keyboard"][0][0]
         self.assertIn("ct=" + D.app_campaign("telegram", "1") + "&", button["url"])
 
+    def test_gap_slot_links_carry_the_window_token(self):
+        # 2026-11-07: Telegram's 12:30 slot moved to 08:30 (Taipei 14-18 gap); its App Store links carry
+        # ct=au_<app>_hook, every other slot keeps the channel token, and download_links sends it unchanged.
+        self.assertEqual(C.window_ct(clip("mochi", "en")), "au_mochi_hook")
+        self.assertIs(C.with_window(clip("a", "en"), "telegram", 18).get("window_ct"), None)
+        self.assertIs(C.with_window(clip("a", "en"), "instagram", 8).get("window_ct"), None)
+        for tier_app in ("1", "6785004775"):
+            self.assertEqual(D.app_campaign("au_mochi_hook", tier_app), "au_mochi_hook")
+        self.assertEqual(D.coarse_campaign_url("https://apps.apple.com/us/app/id1?ct=au_a_hook&mt=8"),
+                         "https://apps.apple.com/us/app/id1?ct=au_a_hook&mt=8")
+        sent = {}
+
+        def fake_post(url, fields, timeout=60):
+            sent.update(fields)
+            return {"ok": True, "result": {"message_id": 8}}
+
+        gap = C.with_window(clip("a", "en"), "telegram", 8)
+        with mock.patch.dict(os.environ, {"TELEGRAM_BOT_TOKEN": "t", "TELEGRAM_CHAT_ID": "c"}), \
+                mock.patch.object(C, "_post", side_effect=fake_post):
+            C.post_telegram(gap)
+        button = json.loads(sent["reply_markup"])["inline_keyboard"][0][0]
+        self.assertIn("ct=au_a_hook&", button["url"])
+        self.assertIn("ct=au_a_hook", sent["caption"])
+        self.assertNotIn("ct=" + D.app_campaign("telegram", "1") + "&", sent["caption"])
+
     def test_public_channel_post_gets_a_link(self):
         reply = {"ok": True, "result": {"message_id": 9, "chat": {"username": "lumiapps"}}}
         with mock.patch.dict(os.environ, {"TELEGRAM_BOT_TOKEN": "t", "TELEGRAM_CHAT_ID": "c"}), \

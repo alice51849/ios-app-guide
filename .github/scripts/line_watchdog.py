@@ -126,7 +126,7 @@ SLOT_WORKFLOWS: dict[str, dict[str, dict]] = {
         # Telegram clips outside telegram-daily's 01:00 / 09:00 / 15:00 (volume-ramp.json stages). A slot
         # the ramp has not switched on yet runs green and posts nothing; clip-backup.yml refills a miss.
         "telegram-clips.yml": {
-            "slots": {12: 30, 18: 30, 22: 30},
+            "slots": {8: 30, 18: 30, 22: 30},  # 8 replaced 12 on 2026-11-07 (Taipei 14-18 exposure gap)
             "max_age_hours": SLOT_MAX_AGE_HOURS,
             "heal": "monitor",
             "reason": "dispatch bypasses the slot gate; clip-backup.yml backs up every slot",

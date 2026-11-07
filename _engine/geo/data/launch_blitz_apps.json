@@ -1,0 +1,29 @@
+{
+  "說明": "新款上架爆推名單（排程 launch_blitz 每天兩波）。上架滿 28 天或 L14 判讀完由負責部門移出；新款上線當天加入。",
+  "apps": [
+    {
+      "key": "meowparty",
+      "名冊key": "foldparty",
+      "說明key": "key 只用於報告資料夾 reports/meowparty 與 ops/aso/meowparty；名冊、人設、互推、營收名冊、短片、買家意圖一律用 foldparty（bundle 尾段，自動跟上產生的 key）",
+      "名稱": "喵喵派對（Meow Party）",
+      "appId": "6829184924",
+      "上架": "2026-11-05",
+      "負責部門": "15 雲端｜喵喵派對新上架全線接線＋衝刺",
+      "主攻": "付費買斷（台灣 NT$190／美國 US$5.99）遊戲類；摺疊手機空白賽道＋雙人遊戲詞；集中國由負責部門依 reports/meowparty/rank_live.md 選 1～3 國"
+    },
+    {
+      "key": "tripbeecute",
+      "名稱": "TripBee Cute",
+      "上架": "2026-11-05",
+      "負責部門": "14 雲端｜TripBee Cute 新上架全線接線＋衝刺",
+      "主攻": "晚波集中澳門、香港、台灣（reports/tripbeecute/rank_focus.json）；早波依 rank_live.md 自選"
+    },
+    {
+      "key": "metrotimehelper",
+      "名稱": "捷運時間助手",
+      "上架": "2026-11-04",
+      "負責部門": "12 雲端｜捷運時間助手新上架全線接線",
+      "主攻": "台灣（台北通勤尖峰）"
+    }
+  ]
+}

@@ -2,7 +2,7 @@
 title: "Metro Time Helper: MRT Taipei — Tahu Bila Patut Bertolak | iOS App"
 lang: "ms"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/metrotimehelper/decision/l/ms/index.html"
-modified: "2026-11-06"
+modified: "2026-11-07"
 app_store_id: "6819061896"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

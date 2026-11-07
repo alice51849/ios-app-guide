@@ -1,4 +1,4 @@
-"""千萬作戰小組 D 搜尋實況母語意圖頁（德／日／泰 8 頁）：下載連結、追蹤碼、禁用字、內容長度（離線）。"""
+"""千萬作戰小組 D 搜尋實況母語意圖頁（第一批德／日／泰 8 頁＋第二批日／英 10 頁）：下載連結、追蹤碼、禁用字、內容長度（離線）。"""
 
 from __future__ import annotations
 
@@ -26,6 +26,17 @@ EXPECTED = {
     ("photocream", "th"): "ฟิลเตอร์ฟิล์ม",
     ("moneytag", "de-DE"): "nebenjob einnahmen",
     ("onepageppt", "th"): "สรุปหน้าเดียว",
+    # 第二批：每款第二個市場
+    ("mochi", "ja"): "todoリスト",
+    ("metrotimehelper", "en"): "taipei mrt",
+    ("maskmyfile", "ja"): "pdf 黒塗り",
+    ("picclear", "en"): "photo cleaner",
+    ("qrcodehalo", "en"): "safe qr scanner",
+    ("mochidonestamp", "ja"): "いつやった",
+    ("moneytag", "en"): "side hustle tracker",
+    ("notesstudio100", "ja"): "手書きノート",
+    ("onepageppt", "en"): "one page summary",
+    ("photocream", "ja"): "フィルムカメラ 加工",
 }
 
 
@@ -41,14 +52,16 @@ class SquadDPageTests(unittest.TestCase):
         for name, value in cls.saved.items():  # 不污染同一行程裡其他產生器的測試
             setattr(g3, name, value)
 
-    def test_eight_native_pages_with_measured_terms(self):
+    def test_native_pages_with_measured_terms(self):
         got = {(spec["key"], spec["lang"]): spec["terms"][0] for spec in gen.PAGE_SPECS}
         self.assertEqual(got, EXPECTED)
-        self.assertEqual(len(self.pages), 8)
+        self.assertEqual(len(self.pages), 18)
 
     def test_no_duplicate_of_g3_pages(self):
         g3_pairs = {(spec["key"], spec["lang"]) for spec in self.saved["PAGE_SPECS"]}
         self.assertFalse(g3_pairs & set(EXPECTED))
+        import gen_search_reality_metrotimehelper as metro  # 部門 12 的捷運頁不重做
+        self.assertFalse({(spec["key"], spec["lang"]) for spec in metro.PAGE_SPECS} & set(EXPECTED))
 
     def test_card_links_storefront_with_campaign(self):
         for spec in gen.PAGE_SPECS:
@@ -66,7 +79,8 @@ class SquadDPageTests(unittest.TestCase):
             text = html.unescape(re.sub(r"<script\b.*?</script>", "", g3.visible_text(source)
                                         + source.split("</head>", 1)[0], flags=re.S))
             self.assertIsNone(gen.BANNED.search(text), relative)
-            for word in ("Testversion", "Abo", "Preis", "お試し", "サブスク", "価格", "ทดลอง", "ราคา", "สมาชิก"):
+            for word in ("Testversion", "Abo", "Preis", "お試し", "サブスク", "価格", "購入", "買い切り", "ทดลอง", "ราคา", "สมาชิก",
+                         "trial", "subscription", "price", "purchase", "Lifetime"):
                 self.assertNotIn(word, text, relative)
             self.assertIsNone(re.search(r"折りたた|พับ|klapp|\bDuo\b", text, re.I), relative)
 

@@ -2,7 +2,7 @@
 title: "Meow Party: 200 मांजर गेम — फोल्डेबल फोनसाठी 200 मस्त खेळ | iOS App"
 lang: "mr-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/foldparty/decision/l/mr-IN/index.html"
-modified: "2026-11-06"
+modified: "2026-11-07"
 app_store_id: "6829184924"
 verified_live: true
 purchase_model: "paid_upfront"

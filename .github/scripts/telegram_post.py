@@ -1125,6 +1125,71 @@ def paid_market_first(eligible, zone, day):
     ]
 
 
+# New-listing priority (coordinator ruling 2026-11-07): Apps listed in 00_GrowthEngine ops/company/
+# launch_blitz_apps.json (mirrored byte for byte to _engine/geo/data/launch_blitz_apps.json) for at most
+# LAUNCH_PRIORITY_DAYS after their 上架 date lead the slot, but they take at most half of the day's slots
+# (floor(len(SLOT_HOURS) / 2), at least 1), so the other Apps keep their rotation. Same daily cap, no new copy.
+# An unreadable or malformed list means no priority (the plain rotation), never a blocked post.
+LAUNCH_LIST_PATH = GEO_ENGINE / "data" / "launch_blitz_apps.json"
+LAUNCH_PRIORITY_DAYS = 28
+LAUNCH_DAILY_SLOTS = max(1, len(SLOT_HOURS) // 2)
+
+
+def launch_apps(day, path=None):
+    """{App Store id or app key: 上架 date} of the Apps listed at most LAUNCH_PRIORITY_DAYS before `day`;
+    {} when the list is missing or malformed (fail-safe: the plain rotation)."""
+    try:
+        with open(LAUNCH_LIST_PATH if path is None else path, encoding="utf-8") as list_file:
+            entries = json.load(list_file)["apps"]
+        if not isinstance(entries, list):
+            raise ValueError("apps is not a list")
+        out = {}
+        for entry in entries:
+            launched = _dt.date.fromisoformat(str(entry["上架"])[:10])
+            if not 0 <= (day - launched).days <= LAUNCH_PRIORITY_DAYS:
+                continue
+            for field in ("appId", "名冊key", "key"):
+                value = entry.get(field)
+                if isinstance(value, str) and value:
+                    out[value] = launched
+        return out
+    except Exception as error:  # noqa: BLE001
+        print(f"Telegram: new-listing priority off ({error.__class__.__name__})", file=sys.stderr)
+        return {}
+
+
+def _launch_date(item, launched):
+    return launched.get(str(item.get("app") or "")) or launched.get(str(item.get("app_key") or ""))
+
+
+def launch_first(eligible, pool, ledger, day, launched_today, launched=None):
+    """(ordered eligible, whether a new-listing App leads). While today's launch share is open (fewer launch
+    Apps posted or reserved today than LAUNCH_DAILY_SLOTS) the new-listing Apps come first; once it is used up
+    they are dropped (unless nothing else is eligible). Among new Apps: the one whose last Telegram receipt is
+    oldest (never posted first), then the older listing, then the rotation order. `launched_today`: App ids
+    already posted or reserved today."""
+    launched = launch_apps(day) if launched is None else launched
+    launch_ids = {str(item.get("app")) for item in pool if _launch_date(item, launched)}
+    fresh = [item for item in eligible if str(item.get("app")) in launch_ids]
+    rest = [item for item in eligible if str(item.get("app")) not in launch_ids]
+    if not fresh:
+        return list(eligible), False
+    if len(set(launched_today) & launch_ids) >= LAUNCH_DAILY_SLOTS:
+        return (rest, False) if rest else (fresh, True)
+    last = {}
+    for receipt in ledger["receipts"].values():
+        app_id = receipt["app_store_id"]
+        if app_id in launch_ids:
+            stamp = _timestamp(receipt["timestamp"])
+            last[app_id] = max(last.get(app_id, stamp), stamp)
+    floor = _dt.datetime.min.replace(tzinfo=_dt.timezone.utc)
+    order = {app_id: i for i, app_id in enumerate(dict.fromkeys(str(item.get("app")) for item in fresh))}
+    fresh.sort(key=lambda item: (
+        last.get(str(item.get("app")), floor), _launch_date(item, launched), order[str(item.get("app"))],
+    ))
+    return fresh + rest, True
+
+
 def choose_unpublished(pool, ledger, now, slot=None, skip_apps=frozenset()):
     from social_slot_gate import slot_start
 
@@ -1165,6 +1230,14 @@ def choose_unpublished(pool, ledger, now, slot=None, skip_apps=frozenset()):
         and not _sent_digests(item) & used
     ]
     eligible = paid_market_first(eligible, zone, scheduled.date())
+    launched_today = today_apps | {
+        intent["app_store_id"] for intent in ledger["intents"].values()
+        if intent["status"] in {"reserved", "unknown", "confirmed"}
+        and _timestamp(intent["slot"]).date() == scheduled.date()
+    }
+    eligible, launch_leads = launch_first(eligible, pool, ledger, scheduled.date(), launched_today)
+    if launch_leads:
+        return eligible[0]
     # Native gaps get the next eligible existing slot, never additional sends.
     return next(
         (item for item in eligible if str(item["app"]) not in covered),
@@ -1794,6 +1867,116 @@ def self_test():
             self.intent["official_locale"] = wrong
             with self.assertRaises(ValueError):
                 validate_ledger(self.ledger)
+
+        def _launch_list(self, entries):
+            import tempfile
+            handle = tempfile.NamedTemporaryFile("w", suffix=".json", delete=False, encoding="utf-8")
+            with handle:
+                handle.write(entries if isinstance(entries, str) else json.dumps({"apps": entries}))
+            self.addCleanup(os.unlink, handle.name)
+            return mock.patch.object(module, "LAUNCH_LIST_PATH", Path(handle.name))
+
+        def _slot_now(self, hour):
+            return self.now.replace(hour=hour, minute=5, second=0)
+
+        def _launch_targets(self, now, count):
+            pool = self.pool()
+            channel = f"telegram:{_zone(now.hour)}"
+            other = {
+                str(channel_candidates(pool, name, now)[0]["app"])
+                for name in CHANNEL_ORDER if name != channel
+            }
+            with self._launch_list([]):
+                plain = choose_unpublished(pool, self.ledger, now)["app"]
+            picks = [a for a in sorted(EXACT47_APP_IDS) if a not in other and a != plain][-count:]
+            return pool, plain, picks
+
+        def _post(self, app_id, stamp, mid):
+            base = next(iter(self.ledger["receipts"].values()))
+            self.ledger["receipts"][f"fixture-{mid}"] = {
+                **base, "app_store_id": app_id, "timestamp": stamp.isoformat(),
+            }
+
+        def _entry(self, app_id, days_ago):
+            return {"appId": app_id, "上架": (self.now.date() - _dt.timedelta(days=days_ago)).isoformat()}
+
+        def test_new_listing_app_leads_the_slot_within_28_days(self):
+            now = self._slot_now(SLOT_HOURS[0])
+            pool, plain, (new_app,) = self._launch_targets(now, 1)
+            with self._launch_list([self._entry(new_app, 2)]):
+                self.assertEqual(new_app, choose_unpublished(pool, self.ledger, now)["app"])
+            with self._launch_list([self._entry(new_app, LAUNCH_PRIORITY_DAYS + 1)]):
+                self.assertEqual(plain, choose_unpublished(pool, self.ledger, now)["app"])
+            with self._launch_list([self._entry(new_app, -1)]):
+                self.assertEqual(plain, choose_unpublished(pool, self.ledger, now)["app"])
+
+        def test_new_listing_apps_take_at_most_half_the_daily_slots(self):
+            self.assertEqual(1, LAUNCH_DAILY_SLOTS)
+            now = self._slot_now(SLOT_HOURS[0])
+            pool, _plain, new_apps = self._launch_targets(now, 2)
+            with self._launch_list([self._entry(app, 3) for app in new_apps]):
+                picks = []
+                for index, hour in enumerate(SLOT_HOURS):
+                    at = self._slot_now(hour)
+                    item = choose_unpublished(pool, self.ledger, at)
+                    picks.append(item["app"])
+                    self._post(item["app"], at, index)
+            self.assertEqual(LAUNCH_DAILY_SLOTS, len(set(picks) & set(new_apps)), picks)
+            self.assertIn(picks[0], new_apps)
+            self.assertEqual(len(SLOT_HOURS) - LAUNCH_DAILY_SLOTS, len(set(picks) - set(new_apps)))
+
+        def test_reserved_launch_intent_today_uses_the_share(self):
+            now = self._slot_now(SLOT_HOURS[0])
+            pool, _plain, new_apps = self._launch_targets(now, 2)
+            with self._launch_list([self._entry(app, 3) for app in new_apps]):
+                first = choose_unpublished(pool, self.ledger, now)
+                self.assertIn(first["app"], new_apps)
+                context = {**self.context, "slot": slot_start(now, SLOT_HOURS).isoformat()}
+                self.ledger["intents"][context["slot"]] = make_intent(first, context)
+                self.ledger["intents"][context["slot"]]["status"] = "unknown"
+                later = choose_unpublished(pool, self.ledger, self._slot_now(SLOT_HOURS[1]))
+            self.assertNotIn(later["app"], new_apps)
+
+        def test_new_listing_apps_share_fairly_never_posted_first(self):
+            now = self._slot_now(SLOT_HOURS[0])
+            pool, _plain, (posted, never) = self._launch_targets(now, 2)
+            self._post(posted, now - _dt.timedelta(days=1), 900)
+            with self._launch_list([self._entry(posted, 5), self._entry(never, 1)]):
+                self.assertEqual(never, choose_unpublished(pool, self.ledger, now)["app"])
+            self._post(never, now - _dt.timedelta(days=1), 901)
+            self._post(posted, now - _dt.timedelta(hours=30), 902)
+            with self._launch_list([self._entry(posted, 5), self._entry(never, 1)]):
+                self.assertEqual(posted, choose_unpublished(pool, self.ledger, now)["app"])
+
+        def test_broken_or_missing_launch_list_falls_back_to_the_plain_rotation(self):
+            now = self._slot_now(SLOT_HOURS[0])
+            pool, plain, _picks = self._launch_targets(now, 1)
+            for broken in ("{not json", json.dumps({"apps": "x"}), json.dumps({"apps": [{"appId": "1"}]}),
+                           json.dumps([1, 2])):
+                with self._launch_list(broken):
+                    self.assertEqual(plain, choose_unpublished(pool, self.ledger, now)["app"])
+                    self.assertEqual({}, launch_apps(now.date()))
+            with mock.patch.object(module, "LAUNCH_LIST_PATH", Path("/nonexistent/launch.json")):
+                self.assertEqual(plain, choose_unpublished(pool, self.ledger, now)["app"])
+
+        def test_launch_list_matches_app_id_or_roster_key(self):
+            today = self.now.date()
+            entries = [
+                {"key": "meowparty", "名冊key": "foldparty", "appId": "6829184924", "上架": today.isoformat()},
+                {"key": "tripbeecute", "上架": today.isoformat()},
+            ]
+            with self._launch_list(entries):
+                launched = launch_apps(today)
+            self.assertEqual({"meowparty", "foldparty", "6829184924", "tripbeecute"}, set(launched))
+            self.assertTrue(_launch_date({"app": "6826987407", "app_key": "tripbeecute"}, launched))
+            self.assertTrue(_launch_date({"app": "6829184924", "app_key": "foldparty"}, launched))
+            self.assertIsNone(_launch_date({"app": "6792483140", "app_key": "other"}, launched))
+
+        def test_shipped_launch_list_is_readable(self):
+            raw = json.loads(LAUNCH_LIST_PATH.read_text(encoding="utf-8"))
+            self.assertIsInstance(raw["apps"], list)
+            for entry in raw["apps"]:
+                _dt.date.fromisoformat(entry["上架"][:10])
 
         def test_confirmed_payload_and_unknown_app_are_excluded_even_after_source_change(self):
             pool = self.pool()

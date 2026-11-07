@@ -2,7 +2,7 @@
 title: "폴더블 배경화면 - 커버·메인 세트 — Duo를 접으면 클로즈업, 펼치면 전경 | iOS App"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/duowallpaperstudio/decision/l/ko/index.html"
-modified: "2026-11-06"
+modified: "2026-11-07"
 app_store_id: "6824946559"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

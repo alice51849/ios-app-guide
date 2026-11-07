@@ -2,7 +2,7 @@
 title: "BattAI: Điểm tình trạng pin — Báo sạc đầy và pin nóng | iOS App"
 lang: "vi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/battai/decision/l/vi/index.html"
-modified: "2026-11-06"
+modified: "2026-11-07"
 app_store_id: "6802423998"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

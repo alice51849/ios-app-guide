@@ -31,19 +31,21 @@ class TripBeeCutePageTests(unittest.TestCase):
         for name, value in cls.saved.items():  # 不污染同一行程裡其他產生器的測試
             setattr(g3, name, value)
 
-    def test_one_native_taiwan_page(self):
-        self.assertEqual([spec["lang"] for spec in gen.PAGE_SPECS], ["zh-Hant"])
+    def test_taiwan_and_korea_native_pages(self):
+        self.assertEqual([spec["lang"] for spec in gen.PAGE_SPECS], ["zh-Hant", "ko"])
         self.assertEqual({spec["key"] for spec in gen.PAGE_SPECS}, {"tripbeecute"})
         self.assertIn("可愛 旅行手帳", gen.PAGE_SPECS[0]["terms"])
-        self.assertEqual(len(self.pages), 1)
+        self.assertIn("다꾸 여행", gen.PAGE_SPECS[1]["terms"])
+        self.assertEqual(len(self.pages), 2)
 
-    def test_card_links_taiwan_storefront_with_campaign(self):
+    def test_card_links_storefront_with_campaign(self):
         for spec in gen.PAGE_SPECS:
+            cc = gen.LANGS[spec["lang"]]["cc"]
             source = self.pages[g3.page_relative(spec)]
             href = html.unescape(re.search(r'class="dl" href="([^"]+)"', source).group(1))
-            self.assertTrue(href.startswith("https://apps.apple.com/tw/app/id6826987407?"), href)
+            self.assertTrue(href.startswith(f"https://apps.apple.com/{cc}/app/id6826987407?"), href)
             query = urllib.parse.parse_qs(urllib.parse.urlsplit(href).query)
-            self.assertEqual(query["ct"], [gw_campaign.campaign("tripbeecute", "sr", "tw")])
+            self.assertEqual(query["ct"], [gw_campaign.campaign("tripbeecute", "sr", cc)])
             self.assertEqual(query["pt"], ["118326163"])
             self.assertIn(gw_campaign.meta_tag("sr"), source)
 
@@ -52,7 +54,8 @@ class TripBeeCutePageTests(unittest.TestCase):
             text = html.unescape(re.sub(r"<script\b.*?</script>", "", g3.visible_text(source)
                                         + source.split("</head>", 1)[0], flags=re.S))
             self.assertIsNone(gen.BANNED.search(text), relative)
-            for word in ("解鎖", "試用", "訂閱", "價格", "Cute Pass", "內購"):
+            for word in ("解鎖", "試用", "訂閱", "價格", "Cute Pass", "內購",
+                         "체험", "구독", "가격", "잠금 해제", "앱 내 구입", "AI 기능", "내장 AI"):
                 self.assertNotIn(word, text, relative)
 
     def test_dedicated_text_floor(self):

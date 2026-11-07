@@ -2,7 +2,7 @@
 title: "Meow Party: 200 બિલાડી ગેમ — ફોલ્ડેબલ ફોન પર 200 મજેદાર રમત | iOS App"
 lang: "gu-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/foldparty/decision/l/gu-IN/index.html"
-modified: "2026-11-06"
+modified: "2026-11-07"
 app_store_id: "6829184924"
 verified_live: true
 purchase_model: "paid_upfront"

@@ -2,7 +2,7 @@
 title: "TripBee Cute：旅行计划手账本 — 可爱插画行程·出发倒计时·好友共同编辑 | iOS App"
 lang: "zh-Hans"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbeecute/decision/l/zh-Hans/index.html"
-modified: "2026-11-06"
+modified: "2026-11-07"
 app_store_id: "6826987407"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

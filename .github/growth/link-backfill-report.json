@@ -1,18 +1,30 @@
 {
- "generated": "2026-11-06T23:16:01Z",
+ "generated": "2026-11-07T13:11:54Z",
  "mode": "apply",
  "counts": {
-  "ok_reply": 49,
+  "ok_reply": 50,
   "unknown_app": 47,
-  "ok_backfilled_earlier": 45,
+  "ok_backfilled_earlier": 47,
   "backfilled": 2,
-  "ok_store_only": 685,
+  "ok_store_only": 683,
   "ok_bio_link": 68,
   "ok_caption": 4,
   "taken_down": 4,
   "missing": 3
  },
  "rows": [
+  {
+   "channel": "threads",
+   "id": "18387235468239990",
+   "permalink": "https://www.threads.com/@hourstag.app/post/DfbCiJoEeyt",
+   "date": "2026-11-07",
+   "app": "mochi",
+   "status": "ok_reply",
+   "text": "First time hosting Thanksgiving and my brain is just a pile of tiny jobs. So it all went into a cute checklist: menu, groceries, who's bring",
+   "why": "trial",
+   "ios_id": "6785004775",
+   "locale": "en-US"
+  },
   {
    "channel": "threads",
    "id": "18159555385515328",
@@ -1019,16 +1031,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdcpAJzAXhm",
    "date": "2026-09-18",
    "app": "lockhour",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "You sat down to work at 9. It is 11 and the first task is still open. Our app, not a ranking: Block distracting apps. Strict mode has no ear",
    "why": "url+brand",
    "ios_id": "6780107485",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "18020786897957109",
-   "at": "2026-11-06T23:13:13Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",
@@ -1036,11 +1043,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdbD5megYy-",
    "date": "2026-09-18",
    "app": "mochi",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "一份你不想打開的待辦清單，只是一份讓你有罪惡感的清單。 開發者分享，非獨立評比。倒垃圾、澆花、明天的跑腿小事，放進 Mochi 清單就好。提醒、重複規則，做完勾掉；沒有廣告。可免費開始，再依需要一次買斷解鎖。 Mochi 連結留這邊，想試再點: https://apps.appl",
    "why": "url+brand",
    "ios_id": "6785004775",
-   "locale": "zh-Hant"
+   "locale": "zh-Hant",
+   "own_replies": [],
+   "comment_id": "18122325985757564",
+   "at": "2026-11-07T13:09:15Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -1084,16 +1096,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdbD6jLARkI",
    "date": "2026-09-18",
    "app": "lumibopomofo",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "Zhuyin: Chinesisch-Laute. Ein sanfter Einstieg in Mandarin-Laute für kleine Entdecker. Lumi Bopomofo Der App-Store-Link ist hier: https://ap",
    "why": "url+brand",
    "ios_id": "6773017109",
-   "locale": "other",
-   "own_replies": [],
-   "comment_id": "17975728925947702",
-   "at": "2026-11-06T23:13:13Z",
-   "verified": true,
-   "via": "list"
+   "locale": "other"
   },
   {
    "channel": "threads",
@@ -1101,11 +1108,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdalEo5iZvZ",
    "date": "2026-09-18",
    "app": "battai",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "才剛過中午，iPhone 電量就低到讓人不敢離開充電器旁。 開發者分享，非獨立評比。用 BattAI 看懂充電習慣：iOS 讀值、估算與自行補充的資料分開標示。估算不是硬體校正，也不會修復電池。可免費開始，較深歷史與報告需一次性解鎖 Pro。 BattAI 連結留這邊，想試再點:",
    "why": "url+brand",
    "ios_id": "6802423998",
-   "locale": "zh-Hant"
+   "locale": "zh-Hant",
+   "own_replies": [],
+   "comment_id": "17887387137625315",
+   "at": "2026-11-07T13:09:15Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",

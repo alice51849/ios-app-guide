@@ -37,6 +37,7 @@ EXPECTED = {
     ("notesstudio100", "ja"): "手書きノート",
     ("onepageppt", "en"): "one page summary",
     ("photocream", "ja"): "フィルムカメラ 加工",
+    ("metrotimehelper", "ko"): "타이베이 지하철",
 }
 
 
@@ -55,7 +56,7 @@ class SquadDPageTests(unittest.TestCase):
     def test_native_pages_with_measured_terms(self):
         got = {(spec["key"], spec["lang"]): spec["terms"][0] for spec in gen.PAGE_SPECS}
         self.assertEqual(got, EXPECTED)
-        self.assertEqual(len(self.pages), 18)
+        self.assertEqual(len(self.pages), 19)
 
     def test_no_duplicate_of_g3_pages(self):
         g3_pairs = {(spec["key"], spec["lang"]) for spec in self.saved["PAGE_SPECS"]}

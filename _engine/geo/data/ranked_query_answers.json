@@ -34126,5 +34126,1122 @@
     ]
    ]
   }
+ },
+ {
+  "key": "aibriefpack",
+  "locale": "ko",
+  "market": "KR",
+  "term": "프롬프트 만들기",
+  "rank": 8,
+  "slug": "prompt-making-korea-context-first-goal-facts-sources",
+  "loc": {
+   "title": "프롬프트 만들기: 질문 문장보다 맥락을 먼저 정리하는 법",
+   "meta": "AI 답이 엉뚱할 때 문제는 대개 질문 문장이 아니라 빠진 맥락입니다. 목표, 사실, 출처를 먼저 정리하고 붙여넣는 순서. AI Brief는 파일과 PDF에서 그 맥락을 만들어 줍니다.",
+   "h1": "프롬프트 만들기: 맥락부터 정리하세요",
+   "lead": "프롬프트 예시를 아무리 따라 해도 결과가 들쭉날쭉하다면, 빠진 것은 문장 기술이 아니라 AI가 모르는 배경 정보일 가능성이 큽니다.",
+   "answer": "좋은 프롬프트는 세 부분으로 나뉩니다. 무엇을 원하는지(목표), AI가 근거로 삼아야 할 내용(사실), 그 내용이 어디서 왔는지(출처). 이 셋을 먼저 정리한 뒤 질문을 붙이면 같은 AI라도 답이 훨씬 안정적입니다.",
+   "paras": [
+    "AI는 대화창에 붙여넣은 내용만 압니다. 회의록, 견적서 PDF, 오류 화면 스크린샷을 보고 있는 것은 나뿐이라서, '이거 정리해 줘'라고만 쓰면 AI는 빈칸을 추측으로 채웁니다. 그래서 프롬프트 만들기의 첫 단계는 문장을 다듬는 일이 아니라 자료에서 필요한 사실을 골라내는 일입니다.",
+    "두 번째는 출처를 함께 남기는 것입니다. 어떤 숫자가 어느 문서의 어느 부분에서 왔는지 적어 두면, AI가 답을 지어냈는지 바로 대조할 수 있습니다. 자료끼리 서로 맞지 않는 부분과 아직 답이 없는 질문도 따로 적어 두면 AI가 그 부분을 단정하지 않습니다.",
+    "마지막으로 개인정보를 확인합니다. 이름, 전화번호, 계좌번호가 섞인 자료를 그대로 붙여넣는 일이 많습니다. AI Brief는 스크린샷, PDF, 파일, 메모, 링크를 목표·사실·출처가 정리된 하나의 브리프로 만들고, 사실마다 출처와 신뢰도를 표시합니다. 텍스트 인식과 개인정보 감지는 기기 안에서 처리되며, 감지된 항목을 유지·교체·삭제할지는 직접 정합니다."
+   ],
+   "look": [
+    "목표가 한 문장으로 적혀 있는지",
+    "AI가 근거로 쓸 사실만 골라냈는지",
+    "사실마다 어느 자료에서 왔는지 표시했는지",
+    "자료끼리 충돌하는 부분을 따로 적었는지",
+    "이름이나 번호 같은 개인정보를 확인했는지"
+   ],
+   "steps": [
+    "원하는 결과를 한 문장으로 적습니다. 예: '다음 주 회의용 세 줄 요약'.",
+    "관련 스크린샷, PDF, 메모를 한곳에 모읍니다.",
+    "그중 AI가 꼭 알아야 할 사실만 남기고 출처를 붙입니다.",
+    "충돌하는 내용과 아직 답이 없는 질문을 따로 적습니다.",
+    "개인정보를 정리한 뒤 질문을 붙여 AI 채팅에 붙여넣습니다."
+   ],
+   "rows": [
+    [
+     "목표",
+     "원하는 결과가 적혀 있는가",
+     "목표가 없으면 AI는 길이와 형식을 추측합니다"
+    ],
+    [
+     "사실과 출처",
+     "근거와 출처가 함께 있는가",
+     "출처가 있어야 지어낸 답을 바로 대조할 수 있습니다"
+    ],
+    [
+     "개인정보",
+     "붙여넣기 전에 확인했는가",
+     "한 번 보낸 내용은 되돌리기 어렵습니다"
+    ]
+   ],
+   "fits": "AI Brief는 자료는 많은데 매번 맥락을 다시 설명하기 번거로운 분께 맞습니다. 스크린샷, PDF, 파일, 메모를 목표·사실·출처가 정리된 브리프로 만들고, 한 번에 복사해 어떤 AI 채팅에든 붙여넣을 수 있습니다. 템플릿과 버전 기록도 있습니다.",
+   "faq": [
+    [
+     "프롬프트 템플릿만 있으면 충분하지 않나요?",
+     "템플릿은 형식을 잡아 주지만 내용은 채워 주지 않습니다. 답의 품질은 대개 붙여넣은 사실과 출처에서 갈립니다."
+    ],
+    [
+     "어떤 AI에서 쓸 수 있나요?",
+     "AI Brief가 만든 브리프는 텍스트라서 복사해 어떤 AI 채팅에든 붙여넣을 수 있습니다."
+    ],
+    [
+     "자료가 외부로 전송되나요?",
+     "텍스트 인식, PDF 읽기, 개인정보 감지는 기기 안에서 처리됩니다. AI 서비스로 보내기 전에 브리프를 직접 검토할 수 있습니다."
+    ]
+   ]
+  },
+  "en": {
+   "title": "Making a prompt: sort out the context before the question",
+   "meta": "When an AI answer goes off track, the missing piece is usually context, not wording. Write the goal, the facts and their sources first, then paste. AI Brief builds that context from your files and PDFs.",
+   "h1": "Making a prompt: start with the context",
+   "lead": "If copying prompt examples still gives you uneven results, what is missing is probably the background the AI cannot see, not a better sentence.",
+   "answer": "A good prompt has three parts: what you want (the goal), what the AI should base its answer on (the facts) and where those facts came from (the sources). Put those down first and add the question last, and the same AI gives far steadier answers.",
+   "paras": [
+    "The AI only knows what you paste into the chat. You are the one looking at the meeting notes, the quote PDF and the screenshot of the error, so a bare 'summarise this' leaves the AI filling gaps by guessing. The first step in making a prompt is therefore picking the facts out of your material, not polishing the wording.",
+    "The second step is keeping sources next to those facts. If you note which document each number came from, you can check at once whether the AI made something up. Listing where your materials disagree and which questions are still open also stops the AI from stating those parts as settled.",
+    "Finally, check personal data. It is common to paste material that still contains names, phone numbers or account numbers. AI Brief turns screenshots, PDFs, files, notes and links into one brief with the goal, facts and sources laid out, and shows a source and confidence for every fact. Text recognition and privacy detection run on the device, and you decide whether each detected item is kept, replaced or removed."
+   ],
+   "look": [
+    "Whether the goal is written as one sentence",
+    "Whether only the facts the AI needs are included",
+    "Whether each fact shows which material it came from",
+    "Whether conflicts between materials are listed separately",
+    "Whether names, numbers and other personal data were checked"
+   ],
+   "steps": [
+    "Write the result you want in one sentence, for example 'a three-line summary for next week's meeting'.",
+    "Gather the related screenshots, PDFs and notes in one place.",
+    "Keep only the facts the AI must know and attach their sources.",
+    "Note conflicting information and questions that are still open.",
+    "Clean up personal data, add your question and paste it into the AI chat."
+   ],
+   "rows": [
+    [
+     "Goal",
+     "Is the wanted result written down",
+     "Without a goal the AI guesses length and format"
+    ],
+    [
+     "Facts and sources",
+     "Are evidence and source together",
+     "Sources let you check a made-up answer at once"
+    ],
+    [
+     "Personal data",
+     "Was it checked before pasting",
+     "Once sent, it is hard to take back"
+    ]
+   ],
+   "fits": "AI Brief suits people with plenty of material who are tired of re-explaining the context every time. It turns screenshots, PDFs, files and notes into a brief with the goal, facts and sources laid out, which you copy in one tap and paste into any AI chat. Templates and version history are included.",
+   "faq": [
+    [
+     "Isn't a prompt template enough?",
+     "A template gives you the format but not the content. Answer quality usually depends on the facts and sources you paste."
+    ],
+    [
+     "Which AI can I use it with?",
+     "The brief AI Brief creates is plain text, so you can copy it into any AI chat."
+    ],
+    [
+     "Is my material sent anywhere?",
+     "Text recognition, PDF reading and privacy detection run on the device. You can review the brief yourself before sending it to an AI service."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "aim990",
+  "locale": "ko",
+  "market": "KR",
+  "term": "토익 900",
+  "rank": 15,
+  "slug": "toeic-900-korea-find-the-three-skills-holding-you-in-the-800s",
+  "loc": {
+   "title": "토익 900: 800점대에서 멈췄을 때 먼저 찾을 약점 세 가지",
+   "meta": "토익 900을 목표로 하는데 800점대에서 점수가 움직이지 않는다면, 문제집을 한 권 더 풀기 전에 점수를 잃는 스킬부터 찾으세요. Aim990은 8분 진단으로 가장 약한 스킬 3개를 보여 줍니다.",
+   "h1": "토익 900: 문제를 더 풀기 전에 약점부터",
+   "lead": "취업이나 이직 기준으로 900을 정해 둔 분이 많습니다. 그런데 850 전후에서 몇 달째 같은 점수가 나온다면 공부량보다 공부 순서를 바꿔야 할 때입니다.",
+   "answer": "800점대에서 900으로 가는 구간은 모든 파트를 고르게 올리는 것보다, 점수를 가장 많이 잃는 스킬 두세 개를 찾아 집중하는 편이 빠릅니다. 대표적으로 Part 5 어법 속도, RC 후반 시간 부족, LC의 들은 내용을 붙잡지 못하는 부분이 많이 걸립니다.",
+   "paras": [
+    "총점만 보면 무엇을 고쳐야 할지 보이지 않습니다. 같은 850점이라도 어떤 사람은 RC를 다 못 풀어서, 어떤 사람은 LC Part 3·4에서 정보를 놓쳐서 점수를 잃습니다. 원인이 다르면 처방도 달라야 하는데, 모의고사를 계속 풀기만 하면 이 차이가 드러나지 않습니다.",
+    "그래서 먼저 스킬별로 정답률과 속도를 나눠 봅니다. Part 5에서 문항당 시간이 길다면 어법 속도 훈련이, RC 마지막 지문을 찍고 있다면 독해 시간 관리가, LC에서 들은 문장을 다시 떠올리지 못한다면 받아쓰기와 섀도잉이 우선입니다. 세 가지를 동시에 하지 말고 가장 약한 것부터 하나씩 다룹니다.",
+    "Aim990은 문법·듣기·독해 약 20문항의 8분 진단으로 가장 약한 스킬 3개를 찾고, 매일 처방된 스킬 하나를 진단 → 교정 → 확인 순서로 학습하게 합니다. 15초 힌트가 붙는 어법 속도 훈련, 독해 시간 트레이너, 기기 음성으로 하는 받아쓰기와 섀도잉이 있고, 30일째 같은 스킬을 다시 측정해 첫날과 비교합니다. 표시되는 밴드는 비공식 추정치이며 점수를 보장하지 않습니다."
+   ],
+   "look": [
+    "스킬별 정답률과 문항당 시간이 따로 보이는지",
+    "가장 약한 스킬부터 순서가 정해지는지",
+    "Part 5 어법을 시간 제한으로 연습할 수 있는지",
+    "LC를 받아쓰기·섀도잉으로 다시 들을 수 있는지",
+    "일정 기간 뒤 같은 스킬을 다시 측정하는지"
+   ],
+   "steps": [
+    "최근 모의고사나 진단으로 스킬별 정답률과 시간을 확인합니다.",
+    "점수를 가장 많이 잃는 스킬 세 개를 적습니다.",
+    "그중 첫 번째 하나만 2주 동안 매일 다룹니다.",
+    "시험 2주 전부터는 실전 시간대로 한 회분씩 풀어 봅니다.",
+    "30일 뒤 같은 스킬을 다시 재서 실제로 줄었는지 확인합니다."
+   ],
+   "rows": [
+    [
+     "Part 5 속도",
+     "문항당 20초 안에 끝나는가",
+     "여기서 시간을 쓰면 RC 후반을 찍게 됩니다"
+    ],
+    [
+     "RC 시간 관리",
+     "마지막 지문까지 읽는가",
+     "후반 정답률은 실력보다 남은 시간에 좌우됩니다"
+    ],
+    [
+     "LC 정보 유지",
+     "들은 문장을 다시 말할 수 있는가",
+     "Part 3·4는 들은 내용을 붙잡는 힘이 관건입니다"
+    ]
+   ],
+   "fits": "Aim990은 900을 목표로 매일 짧게 이어 가려는 분께 맞습니다. 8분 진단으로 약한 스킬 3개를 찾고, 하루 하나씩 교정하며, 시험 1·3·7·14일 전을 위한 패닉 모드와 Apple Watch 복습도 있습니다. 계정과 광고 없이 오프라인에서 동작합니다.",
+   "faq": [
+    [
+     "900을 넘으려면 하루에 얼마나 해야 하나요?",
+     "사람마다 다르지만, 주말에 몰아서 하기보다 매일 약한 스킬 하나를 짧게라도 다루는 편이 이 구간에서는 꾸준히 효과가 있습니다."
+    ],
+    [
+     "Aim990의 문제는 기출 문제인가요?",
+     "아닙니다. 토익 LC·RC 스타일 대비를 위해 직접 만든 비공식 콘텐츠이며, Aim990은 ETS와 제휴 관계가 없습니다."
+    ],
+    [
+     "Aim990이 점수를 보장하나요?",
+     "아닙니다. 연습 밴드는 비공식 추정치입니다. 어디서 점수를 잃는지 찾고 그 부분을 매일 다루도록 돕는 도구입니다."
+    ]
+   ]
+  },
+  "en": {
+   "title": "TOEIC 900: three weak skills to find when you stall in the 800s",
+   "meta": "Aiming for 900 but stuck in the 800s? Before another workbook, find the skills that cost you the most points. Aim990's 8-minute diagnostic shows your three weakest skills.",
+   "h1": "TOEIC 900: find the weak skills before more practice",
+   "lead": "Many people set 900 as the bar for a job application or a move. If the score has sat around 850 for months, it is time to change the order you study in, not the amount.",
+   "answer": "Moving from the 800s to 900 is usually faster when you find the two or three skills that cost the most points and focus there, rather than raising every part evenly. Common blockers are Part 5 grammar speed, running out of time late in Reading, and losing what you just heard in Listening.",
+   "paras": [
+    "A total score does not tell you what to fix. Two people at 850 may lose points for different reasons: one never finishes Reading, the other misses details in Listening Parts 3 and 4. Different causes need different fixes, and doing one practice test after another hides that difference.",
+    "So split your results by skill, looking at accuracy and time. If Part 5 takes too long per question, start with grammar speed. If you are guessing on the last Reading passages, work on reading time. If you cannot recall a sentence you just heard, dictation and shadowing come first. Do not tackle all three at once; take the weakest one first.",
+    "Aim990 runs an 8-minute diagnostic of about 20 grammar, listening and reading items to find your three weakest skills, then has you study one prescribed skill a day in a diagnose, correct and confirm sequence. It includes grammar speed drills with 15-second hints, a reading time trainer, and dictation and shadowing with on-device voices, and on day 30 it re-measures the same skills against day one. The band shown is an unofficial estimate and does not guarantee a score."
+   ],
+   "look": [
+    "Whether accuracy and time per question are shown per skill",
+    "Whether it orders your work starting from the weakest skill",
+    "Whether Part 5 grammar can be practised against the clock",
+    "Whether Listening can be replayed as dictation or shadowing",
+    "Whether the same skills are re-measured after a set period"
+   ],
+   "steps": [
+    "Check accuracy and time per skill from a recent practice test or diagnostic.",
+    "Write down the three skills that cost you the most points.",
+    "Work on only the first of them every day for two weeks.",
+    "From two weeks before the test, do one full set under real timing.",
+    "After 30 days, re-measure the same skills to see whether they improved."
+   ],
+   "rows": [
+    [
+     "Part 5 speed",
+     "Under 20 seconds per question",
+     "Time spent here forces guessing late in Reading"
+    ],
+    [
+     "Reading time",
+     "Do you reach the last passage",
+     "Late accuracy depends on time left more than ability"
+    ],
+    [
+     "Listening recall",
+     "Can you repeat what you heard",
+     "Parts 3 and 4 depend on holding on to what was said"
+    ]
+   ],
+   "fits": "Aim990 suits people aiming for 900 who want a short daily routine. The 8-minute diagnostic finds three weak skills, you fix one a day, and there is a panic mode for 1, 3, 7 and 14 days before the test plus Apple Watch review. It works offline with no account and no ads.",
+   "faq": [
+    [
+     "How much should I study a day to pass 900?",
+     "It varies, but in this range working on one weak skill a little every day tends to work better than cramming at the weekend."
+    ],
+    [
+     "Are Aim990's questions from past tests?",
+     "No. They are original, unofficial items written for TOEIC Listening and Reading style practice, and Aim990 is not affiliated with ETS."
+    ],
+    [
+     "Does Aim990 guarantee a score?",
+     "No. The practice band is an unofficial estimate. The app helps you find where you lose points and work on that every day."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "battai",
+  "locale": "ko",
+  "market": "KR",
+  "term": "배터리",
+  "rank": 6,
+  "slug": "iphone-battery-korea-drain-heat-or-wear-tell-them-apart",
+  "loc": {
+   "title": "아이폰 배터리가 빨리 닳을 때: 소모, 발열, 노화를 구분하는 법",
+   "meta": "배터리가 빨리 닳는다고 바로 교체를 생각하기 전에, 오늘의 소모인지, 발열 때문인지, 배터리 자체가 노화된 것인지부터 나눠 보세요. BattAI는 이 셋을 기록으로 보여 줍니다.",
+   "h1": "아이폰 배터리: 무엇 때문에 빨리 닳는지 먼저 나누기",
+   "lead": "'배터리가 금방 닳는다'는 느낌에는 원인이 여러 가지 섞여 있습니다. 원인을 나누면 충전 습관을 바꿀지, 교체를 알아볼지가 분명해집니다.",
+   "answer": "배터리 문제는 세 가지로 나눠 볼 수 있습니다. 특정 시간대에 소모가 몰리는 경우, 휴대폰이 뜨거워지는 시간이 긴 경우, 그리고 설정 > 배터리의 성능 최대치가 꾸준히 떨어지는 노화입니다. 앞의 둘은 사용 습관으로 줄일 수 있고, 노화는 추세를 보고 교체 시점을 판단합니다.",
+   "paras": [
+    "먼저 시간당 소모량을 봅니다. 출퇴근길 내비게이션이나 영상 시청처럼 특정 시간대에만 소모가 크다면 배터리보다 사용 패턴의 문제입니다. 반대로 비슷하게 써도 매일 소모가 늘어난다면 다른 원인을 의심해 볼 만합니다.",
+    "두 번째는 발열입니다. 휴대폰이 뜨거운 상태가 길면 체감 소모도 커지고 배터리에도 부담이 됩니다. 충전하면서 게임을 하거나 뜨거운 차 안에 두는 시간대가 있는지 7일 정도의 기록으로 확인하면 패턴이 보입니다.",
+    "세 번째는 노화입니다. 설정에 보이는 성능 최대치는 그날의 숫자일 뿐이라, 몇 주에 걸쳐 어떻게 변하는지 기록해야 교체 시점을 판단할 수 있습니다. BattAI는 배터리 잔량과 충전, 발열을 기록해 시간당 소모량, 7일간 발열 시간대, 성능 최대치 추세를 보여 줍니다. 성능 최대치와 사이클 수는 직접 입력하거나 시스템 분석 파일에서 가져오며, 배터리 온도와 전압은 앱이 읽을 수 없습니다."
+   ],
+   "look": [
+    "소모가 특정 시간대에 몰리는지",
+    "휴대폰이 뜨거운 시간이 하루 중 얼마나 되는지",
+    "충전하면서 무거운 작업을 하는지",
+    "성능 최대치가 몇 주 동안 어떻게 변했는지",
+    "100%에 오래 머무는 충전 습관이 있는지"
+   ],
+   "steps": [
+    "설정 > 배터리에서 오늘의 성능 최대치를 적어 둡니다.",
+    "일주일 동안 평소처럼 쓰면서 시간대별 소모와 발열을 기록합니다.",
+    "소모가 몰리는 시간대의 앱이나 사용 습관을 확인합니다.",
+    "충전 중 발열이 잦다면 충전하면서 쓰는 작업을 줄여 봅니다.",
+    "몇 주 뒤 성능 최대치를 다시 적어 추세로 교체 여부를 판단합니다."
+   ],
+   "rows": [
+    [
+     "소모",
+     "시간대별로 몰리는가",
+     "특정 시간대라면 배터리보다 사용 패턴 문제입니다"
+    ],
+    [
+     "발열",
+     "뜨거운 시간이 긴가",
+     "열은 체감 소모와 배터리 부담을 함께 키웁니다"
+    ],
+    [
+     "노화",
+     "성능 최대치가 계속 떨어지는가",
+     "하루 숫자보다 몇 주의 추세가 교체 판단에 정확합니다"
+    ]
+   ],
+   "fits": "BattAI는 배터리가 왜 빨리 닳는지 기록으로 확인하고 싶은 분께 맞습니다. 배터리 상태 점수, 충전 관리 점수, 시간당 소모와 발열, 성능 최대치 추세, 80·90·100% 완충 알림, 중고 판매 리포트가 있고 홈 화면·잠금 화면 위젯과 Apple Watch로도 볼 수 있습니다.",
+   "faq": [
+    [
+     "성능 최대치가 몇 %면 교체해야 하나요?",
+     "일반적으로 80% 근처를 기준으로 많이 이야기하지만, 하루 숫자보다 떨어지는 속도와 실제 사용 시간이 더 중요합니다. 추세를 몇 주 기록해 보고 판단하세요."
+    ],
+    [
+     "BattAI가 배터리 온도를 직접 읽나요?",
+     "아닙니다. 공개 API로는 기기 전체의 열 상태만 알 수 있어, 발열은 기기 전체 상태로 표시합니다."
+    ],
+    [
+     "데이터가 서버로 전송되나요?",
+     "아닙니다. 계정, 추적, 네트워크 요청이 없고 데이터는 휴대폰에만 저장됩니다."
+    ]
+   ]
+  },
+  "en": {
+   "title": "When your iPhone battery drains fast: tell drain, heat and wear apart",
+   "meta": "Before you think about a replacement, work out whether it is today's usage, heat, or the battery itself wearing out. BattAI shows all three from your own records.",
+   "h1": "iPhone battery: first find out why it drains",
+   "lead": "The feeling that your battery 'runs out fast' mixes several causes. Separating them makes it clear whether to change charging habits or look into a replacement.",
+   "answer": "Battery trouble splits into three parts: drain that piles up at certain times of day, long stretches when the phone runs hot, and wear, where Maximum Capacity in Settings > Battery keeps falling. The first two can be reduced with habits; for wear you judge the replacement point from the trend.",
+   "paras": [
+    "Start with drain per hour. If it is heavy only at certain times, such as navigation on the commute or watching video, the issue is the usage pattern rather than the battery. If drain keeps rising day after day with similar use, another cause is worth suspecting.",
+    "Second, heat. When the phone stays hot for long, drain feels worse and the battery is under more strain. About seven days of records will show whether there are times when you game while charging or leave the phone in a hot car.",
+    "Third, wear. The Maximum Capacity in Settings is only that day's number; you need to record how it changes over weeks to judge when to replace. BattAI records charge level, charging and heat, and shows hourly drain, the hottest times over seven days and the Maximum Capacity trend. Maximum Capacity and cycle count are entered by you or imported from a system analytics file, and the app cannot read battery temperature or voltage."
+   ],
+   "look": [
+    "Whether drain piles up at certain times of day",
+    "How much of the day the phone runs hot",
+    "Whether you do heavy tasks while charging",
+    "How Maximum Capacity has changed over several weeks",
+    "Whether the phone often sits at 100% for long"
+   ],
+   "steps": [
+    "Note today's Maximum Capacity from Settings > Battery.",
+    "Use the phone as usual for a week while recording drain and heat by time of day.",
+    "Check which apps or habits match the heavy-drain times.",
+    "If it often heats up while charging, cut back on using it heavily while plugged in.",
+    "A few weeks later, note Maximum Capacity again and judge replacement from the trend."
+   ],
+   "rows": [
+    [
+     "Drain",
+     "Does it pile up at certain times",
+     "If so, it is a usage pattern more than the battery"
+    ],
+    [
+     "Heat",
+     "Is the phone hot for long",
+     "Heat raises both felt drain and battery strain"
+    ],
+    [
+     "Wear",
+     "Does Maximum Capacity keep falling",
+     "A trend over weeks is a better replacement guide than one day"
+    ]
+   ],
+   "fits": "BattAI suits people who want records showing why the battery drains fast. It has a battery health score, a charging care score, hourly drain and heat, the Maximum Capacity trend, 80, 90 and 100% charge alerts and a resale report, with Home Screen and Lock Screen widgets and Apple Watch.",
+   "faq": [
+    [
+     "At what Maximum Capacity should I replace the battery?",
+     "Around 80% is often mentioned, but how fast it falls and your real usage time matter more than one number. Record the trend for a few weeks before deciding."
+    ],
+    [
+     "Does BattAI read the battery temperature?",
+     "No. Public APIs only expose the device's overall thermal state, so heat is shown for the whole device."
+    ],
+    [
+     "Is my data sent to a server?",
+     "No. There is no account, no tracking and no network request; the data stays on the phone."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "caldaily",
+  "locale": "ja",
+  "market": "JP",
+  "term": "電卓 テーマ",
+  "rank": 15,
+  "slug": "calculator-theme-japan-readable-keys-widget-and-named-history",
+  "loc": {
+   "title": "電卓のテーマを選ぶとき：見た目と読みやすさを両立させるコツ",
+   "meta": "電卓アプリのテーマは見た目だけで選ぶと、数字やキーが読みにくくなることがあります。数字の大きさ、キーのコントラスト、ウィジェットでの見え方を確認しましょう。CalDaily は 100 種類のテーマを内蔵しています。",
+   "h1": "電卓のテーマ：好きな見た目で、読みやすく",
+   "lead": "毎日開く電卓だからこそ、好きなデザインにしたい。ただ、おしゃれなテーマほど数字が背景に溶けてしまうこともあります。",
+   "answer": "電卓のテーマは、表示部の数字がはっきり読めるか、キーと文字のコントラストが十分か、ホーム画面のウィジェットでも同じように読めるか、の三点で選ぶと失敗しません。見た目が気に入っても、暗い場所や屋外で数字が読みにくいなら毎日のストレスになります。",
+   "paras": [
+    "まず表示部です。計算結果が大きく、背景との差がはっきりしているテーマを選びます。淡い色同士の組み合わせや、光沢の強いデザインは、明るい屋外や夜の暗い部屋で読みにくくなりがちです。",
+    "次にキーです。数字キーと演算キーの色が分かれていると、押し間違いが減ります。キーの形や素材感が凝ったテーマでも、文字との差がしっかりあるかを実際に何度か計算して確かめましょう。",
+    "最後にウィジェットです。ホーム画面で使う場合、アプリ内とは大きさが違うので、そこでも読めるかを見ておきます。CalDaily は落ち着いたセラミックから深みのあるプリズムまで、キーの形・素材・光が異なる 100 種類のテーマを内蔵し、ホーム画面のウィジェットからアプリを開かずに計算できます。結果に名前を付けて保存しておけば、あとで検索して見返せます。"
+   ],
+   "look": [
+    "計算結果の数字が背景からはっきり浮いているか",
+    "数字キーと演算キーの色が分かれているか",
+    "明るい屋外と暗い部屋の両方で読めるか",
+    "ホーム画面のウィジェットでも読みやすいか",
+    "長く使っても目が疲れない配色か"
+   ],
+   "steps": [
+    "気になるテーマをいくつか選び、同じ計算を数回してみます。",
+    "結果の数字が一目で読めるかを確認します。",
+    "屋外や暗い部屋など、普段使う場所で見え方を確かめます。",
+    "ホーム画面にウィジェットを置いて、そこでも読めるか見ます。",
+    "迷ったら、読みやすさで二つに絞ってから見た目で決めます。"
+   ],
+   "rows": [
+    [
+     "表示部",
+     "数字が大きく背景と差があるか",
+     "結果が読みにくいと確認の手間が増えます"
+    ],
+    [
+     "キー",
+     "数字と演算の色が分かれているか",
+     "押し間違いが減ります"
+    ],
+    [
+     "ウィジェット",
+     "小さいサイズでも読めるか",
+     "ホーム画面で計算するなら一番よく見る場所です"
+    ]
+   ],
+   "fits": "CalDaily は、好きな見た目の電卓を毎日使いたい方に向いています。100 種類のテーマ、ホーム画面ウィジェットでの計算、名前を付けて検索できる履歴、チップと割り勘・割引と税・ローン・単位換算など 8 つのツールを備え、アカウントも広告もなく端末内で動作します。",
+   "faq": [
+    [
+     "テーマを変えると計算結果や履歴は消えますか？",
+     "テーマは見た目だけを切り替えるものなので、計算の仕組みは変わりません。履歴は日付ごとにまとまり、CSV で書き出すこともできます。"
+    ],
+    [
+     "ウィジェットだけで計算できますか？",
+     "はい。CalDaily はホーム画面のウィジェットからアプリを開かずに計算できます。"
+    ],
+    [
+     "日常の計算以外にも使えますか？",
+     "チップと割り勘、割引と税、ローン返済額、単位換算、日付の差と営業日、旅行の燃料費、メモリーと関数電卓の 8 つのツールがあります。"
+    ]
+   ]
+  },
+  "en": {
+   "title": "Choosing a calculator theme: keep the look and the readability",
+   "meta": "Pick a calculator theme on looks alone and the numbers or keys can become hard to read. Check digit size, key contrast and how it looks in the widget. CalDaily includes 100 themes.",
+   "h1": "Calculator themes: a look you like that still reads clearly",
+   "lead": "A calculator you open every day deserves a design you enjoy. But the more stylish a theme is, the more easily the digits can blend into the background.",
+   "answer": "Choose a calculator theme on three points: whether the display digits are clearly readable, whether keys and labels have enough contrast, and whether the Home Screen widget reads just as well. A theme you love that is hard to read outdoors or in a dark room becomes a daily annoyance.",
+   "paras": [
+    "Start with the display. Choose a theme where the result is large and clearly set off from the background. Pairs of pale colours and very glossy designs tend to be hard to read outdoors in bright light or in a dark room at night.",
+    "Next, the keys. When number keys and operator keys are different colours, you mistype less. Even with themes that have elaborate key shapes and materials, do a few real calculations to check the labels stand out.",
+    "Finally, the widget. If you calculate from the Home Screen, the size differs from inside the app, so check it reads there too. CalDaily includes 100 themes, from calm ceramic to deep prism, each with its own key shape, material and light, and its Home Screen widget lets you calculate without opening the app. Name a result to save it and you can search for it later."
+   ],
+   "look": [
+    "Whether the result digits stand out from the background",
+    "Whether number and operator keys are different colours",
+    "Whether it reads both outdoors and in a dark room",
+    "Whether the Home Screen widget is easy to read",
+    "Whether the colours are comfortable over long use"
+   ],
+   "steps": [
+    "Pick a few themes you like and run the same calculation a few times.",
+    "Check that the result can be read at a glance.",
+    "Look at it where you usually use it, such as outdoors or in a dark room.",
+    "Put the widget on the Home Screen and check it reads there too.",
+    "If unsure, narrow to two on readability, then choose on looks."
+   ],
+   "rows": [
+    [
+     "Display",
+     "Large digits with clear contrast",
+     "A hard-to-read result means more checking"
+    ],
+    [
+     "Keys",
+     "Numbers and operators in different colours",
+     "Fewer mistaken taps"
+    ],
+    [
+     "Widget",
+     "Readable at a small size",
+     "If you calculate on the Home Screen, it is what you see most"
+    ]
+   ],
+   "fits": "CalDaily suits people who want a calculator they enjoy looking at every day. It has 100 themes, calculation right in the Home Screen widget, a history you can name and search, and eight tools including tip and split, discount and tax, loan and unit conversion. It runs on the device with no account and no ads.",
+   "faq": [
+    [
+     "Will changing the theme erase my results or history?",
+     "A theme only changes the look; the calculator works the same. History is grouped by date and can be exported as CSV."
+    ],
+    [
+     "Can I calculate from the widget alone?",
+     "Yes. CalDaily's Home Screen widget lets you calculate without opening the app."
+    ],
+    [
+     "Can it do more than everyday sums?",
+     "It has eight tools: tip and split, discount and tax, loan payments, unit conversion, date difference and business days, trip fuel cost, and memory with a scientific calculator."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "claudeusagemini",
+  "locale": "de-DE",
+  "market": "DE",
+  "term": "copilot nutzung",
+  "rank": 1,
+  "slug": "github-copilot-usage-premium-requests-check-before-month-end",
+  "loc": {
+   "title": "Copilot-Nutzung prüfen: Premium-Anfragen im Blick, bevor der Monat knapp wird",
+   "meta": "Wer GitHub Copilot intensiv nutzt, stößt beim Kontingent für Premium-Anfragen schnell an Grenzen. So siehst du, wie viel noch übrig ist und wann es zurückgesetzt wird. UsageNow zeigt es auf dem Home-Bildschirm.",
+   "h1": "Copilot-Nutzung: Premium-Anfragen, Chat und Vervollständigungen",
+   "lead": "Mitten in einer Aufgabe merkt man oft erst, dass das Kontingent fast aufgebraucht ist. Wer den Stand vorher kennt, kann umplanen statt abzubrechen.",
+   "answer": "Bei GitHub Copilot lohnt es sich, drei Dinge getrennt im Blick zu behalten: das Kontingent an Premium-Anfragen, die Chat-Nutzung und die Code-Vervollständigungen. Am wichtigsten ist der Stand der Premium-Anfragen samt dem Zeitpunkt der nächsten Zurücksetzung, denn je nach Modell zählt eine Anfrage unterschiedlich stark.",
+   "paras": [
+    "Premium-Anfragen sind der Teil, der am schnellsten knapp wird, vor allem wenn du stärkere Modelle oder lange Agent-Läufe nutzt. Wer erst am Fehler merkt, dass nichts mehr übrig ist, verliert Zeit. Besser ist es, vor einer größeren Aufgabe kurz zu prüfen, wie viel noch da ist und wann das Kontingent zurückgesetzt wird.",
+    "Hilfreich ist eine feste Warnschwelle. Wer bei 90 Prozent eine Meldung bekommt, kann rechtzeitig auf ein sparsameres Modell wechseln oder die Aufgabe auf nach die Zurücksetzung legen. Wer mehrere Konten nutzt, etwa beruflich und privat, sollte alle nebeneinander sehen, um das richtige für die nächste Aufgabe zu wählen.",
+    "UsageNow zeigt bei GitHub Copilot Premium-Anfragen, Chat und Code-Vervollständigungen, dazu einen Live-Countdown bis zur Zurücksetzung mit der genauen Uhrzeit im Format deiner Region. Du legst eigene Warnungen per Prozentwert an, blätterst im Widget durch alle Konten und siehst den Stand auch auf Sperrbildschirm und Apple Watch. Claude, ChatGPT Codex und Gemini lassen sich daneben verfolgen."
+   ],
+   "look": [
+    "Wie viele Premium-Anfragen noch übrig sind",
+    "Wann das Kontingent genau zurückgesetzt wird",
+    "Ob du vor dem Limit eine Warnung bekommst",
+    "Ob mehrere Konten nebeneinander sichtbar sind",
+    "Ob du den Stand ohne Browser auf dem Home-Bildschirm siehst"
+   ],
+   "steps": [
+    "Prüfe vor einer größeren Aufgabe den Stand der Premium-Anfragen.",
+    "Sieh nach, wann das Kontingent zurückgesetzt wird.",
+    "Lege eine Warnung bei einem Prozentwert fest, etwa 90.",
+    "Wechsle bei knappem Kontingent auf ein sparsameres Modell oder ein anderes Konto.",
+    "Schalte eine Meldung zur Zurücksetzung ein, um zu wissen, wann es wieder geht."
+   ],
+   "rows": [
+    [
+     "Premium-Anfragen",
+     "Rest und Zurücksetzung",
+     "Je nach Modell zählt eine Anfrage unterschiedlich stark"
+    ],
+    [
+     "Warnschwelle",
+     "Meldung vor dem Limit",
+     "So kannst du umplanen statt abzubrechen"
+    ],
+    [
+     "Mehrere Konten",
+     "Alle nebeneinander",
+     "Du wählst das Konto mit dem meisten Spielraum"
+    ]
+   ],
+   "fits": "UsageNow passt, wenn du Copilot und andere KI-Tools im Arbeitsalltag nutzt und nicht mitten in der Aufgabe ans Limit stoßen willst. Es zeigt Premium-Anfragen, Chat und Vervollständigungen, warnt bei deinem Prozentwert und läuft auf iPhone, iPad und Apple Watch, ohne eigenen Server, ohne Konto und ohne Tracking.",
+   "faq": [
+    [
+     "Zeigt UsageNow nur Copilot an?",
+     "Nein. Neben GitHub Copilot zeigt es Claude, ChatGPT Codex und Gemini, jeweils mit eigenen Limits und Zurücksetzungen."
+    ],
+    [
+     "Wie oft bekomme ich eine Warnung?",
+     "Jede Warnung kommt nur einmal pro Limit und Zyklus, damit dein Sperrbildschirm ruhig bleibt."
+    ],
+    [
+     "Wo bleiben meine Anmeldedaten?",
+     "Du meldest dich auf der Anmeldeseite des Dienstes an, die Anmeldung bleibt im Schlüsselbund deines Geräts. UsageNow spricht nur mit den Diensten selbst."
+    ]
+   ]
+  },
+  "en": {
+   "title": "Checking Copilot usage: watch premium requests before the month runs short",
+   "meta": "Heavy GitHub Copilot users hit the premium request allowance quickly. Here is how to see what is left and when it resets. UsageNow shows it on your Home Screen.",
+   "h1": "Copilot usage: premium requests, chat and completions",
+   "lead": "You often only notice the allowance is nearly gone in the middle of a task. Knowing the state beforehand lets you re-plan instead of stopping.",
+   "answer": "With GitHub Copilot it pays to track three things separately: the premium request allowance, chat usage and code completions. The most important is how many premium requests are left and when they next reset, because a request counts differently depending on the model.",
+   "paras": [
+    "Premium requests are the part that runs short fastest, especially with stronger models or long agent runs. Finding out from an error that nothing is left costs time. It is better to check, before a bigger task, how much remains and when the allowance resets.",
+    "A fixed warning threshold helps. With an alert at 90 percent you can switch to a lighter model in time or move the task to after the reset. If you use several accounts, such as work and personal, see them side by side so you pick the right one for the next task.",
+    "For GitHub Copilot, UsageNow shows premium requests, chat and code completions, with a live countdown to the reset and the exact time in your region's format. You set your own alerts by percentage, flip through all accounts in the widget and see the state on the Lock Screen and Apple Watch. Claude, ChatGPT Codex and Gemini can be tracked alongside."
+   ],
+   "look": [
+    "How many premium requests are left",
+    "Exactly when the allowance resets",
+    "Whether you get a warning before the limit",
+    "Whether several accounts are visible side by side",
+    "Whether you can see the state on the Home Screen without a browser"
+   ],
+   "steps": [
+    "Check premium requests before starting a bigger task.",
+    "Look up when the allowance resets.",
+    "Set an alert at a percentage such as 90.",
+    "When it runs low, switch to a lighter model or another account.",
+    "Turn on a reset alert so you know when it is available again."
+   ],
+   "rows": [
+    [
+     "Premium requests",
+     "Remaining and reset time",
+     "A request counts differently depending on the model"
+    ],
+    [
+     "Warning threshold",
+     "Alert before the limit",
+     "You can re-plan instead of stopping"
+    ],
+    [
+     "Several accounts",
+     "All side by side",
+     "You pick the account with the most room"
+    ]
+   ],
+   "fits": "UsageNow suits people who use Copilot and other AI tools at work and do not want to hit a limit mid-task. It shows premium requests, chat and completions, alerts at your percentage and runs on iPhone, iPad and Apple Watch, with no server of its own, no account and no tracking.",
+   "faq": [
+    [
+     "Does UsageNow only show Copilot?",
+     "No. Alongside GitHub Copilot it shows Claude, ChatGPT Codex and Gemini, each with their own limits and resets."
+    ],
+    [
+     "How often will I be warned?",
+     "Each alert fires only once per limit and cycle, so your Lock Screen stays quiet."
+    ],
+    [
+     "Where are my sign-in details kept?",
+     "You sign in on the service's own page and the sign-in stays in your device's keychain. UsageNow only talks to the services themselves."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "cvdesk",
+  "locale": "zh-Hant",
+  "market": "TW",
+  "term": "ats履歷",
+  "rank": 1,
+  "slug": "ats-resume-taiwan-bank-form-versus-uploaded-file",
+  "loc": {
+   "title": "ATS 履歷：在台灣什麼時候真的會被系統讀，投遞前要改哪裡",
+   "meta": "在人力銀行填線上履歷時，版面不影響系統讀取；到外商或企業官網上傳檔案時，系統會先解析你的 PDF。單欄、標準標題、文字可選取最關鍵。CV Desk 投遞前先給 ATS 分數。",
+   "h1": "ATS 履歷：上傳檔案時，系統先讀什麼",
+   "lead": "不是每一次投遞都會經過 ATS。差別在於你是在平台上填欄位，還是把履歷檔案上傳出去。",
+   "answer": "當你上傳履歷檔案時，企業的招募系統會先把它拆成文字再交給人看。單欄排版、「工作經歷」「學歷」「技能」這類標準標題、一致的日期格式，以及文字可以選取的 PDF，決定系統能不能正確讀到你的經歷和關鍵字。",
+   "paras": [
+    "先分清楚投遞方式。在人力銀行平台上一格一格填寫的線上履歷，本身就是結構化資料，版面設計不影響讀取。真正要擔心的是上傳檔案的情況：外商、科技公司或企業官網的應徵頁面，常常請你上傳 PDF 或 Word，再由系統解析。",
+    "最常見的問題是雙欄設計。系統由上而下、由左至右讀，側欄的語言能力和技能會跟工作經歷混在一起。第二是自創標題，例如把工作經歷寫成「我的旅程」，系統可能認不出來。第三是用圖片做成的 PDF，送出去等於一份沒有文字的檔案。",
+    "投遞前，把職缺描述裡真正符合你經驗的用詞放進履歷，每個職缺各存一份。CV Desk 會即時算出 0–100 的 ATS 分數並列出可點的修正建議，匯出單欄、文字可選取的 PDF 或可編輯的 Word，每個職缺各存一份履歷。分數是裝置端估算，實際結果依各企業系統而異。"
+   ],
+   "look": [
+    "這次是填平台欄位，還是上傳檔案",
+    "履歷是不是單欄、沒有側欄",
+    "標題是否用工作經歷、學歷、技能這類標準寫法",
+    "日期格式是否全部一致",
+    "PDF 裡的文字能不能選取"
+   ],
+   "steps": [
+    "看應徵頁面是要你填欄位，還是上傳檔案。",
+    "要上傳的話，把履歷改成單欄：日期、職稱、公司由上往下排。",
+    "把自創標題換成標準標題。",
+    "只在真正做過的地方放進職缺描述的關鍵字。",
+    "匯出 PDF 後選取一行文字，確認是真的文字而不是圖片。"
+   ],
+   "rows": [
+    [
+     "投遞方式",
+     "平台欄位或上傳檔案",
+     "填欄位時，版面不影響系統讀取"
+    ],
+    [
+     "欄數",
+     "單欄或雙欄",
+     "雙欄時側欄內容會混進工作經歷"
+    ],
+    [
+     "匯出",
+     "可選取文字或圖片",
+     "圖片 PDF 對系統來說是一份空白檔案"
+    ]
+   ],
+   "fits": "CV Desk 適合想在上傳前先知道系統會怎麼讀履歷的人：0–100 ATS 分數與可點的修正建議、單欄 PDF 或可編輯 Word、每個職缺各存一份。全部在 iPhone 上完成，不用註冊帳號，飛航模式也能用。",
+   "faq": [
+    [
+     "在人力銀行投遞也需要 ATS 履歷嗎？",
+     "在平台上填寫的線上履歷是結構化欄位，版面不影響讀取。上傳 PDF 或 Word 檔案到企業官網時，ATS 友善的版面才特別重要。"
+    ],
+    [
+     "ATS 履歷可以放大頭照嗎？",
+     "可以，但不要因此改成雙欄版面。CV Desk 的大頭照是選用的，預設關閉。"
+    ],
+    [
+     "我的履歷會上傳到哪裡？",
+     "不會上傳。CV Desk 的履歷留在你的 iPhone，不用帳號，飛航模式也能用。"
+    ]
+   ]
+  },
+  "en": {
+   "title": "An ATS resume in Taiwan: when a system really reads it and what to fix first",
+   "meta": "When you fill in an online resume on a job bank, layout does not affect how it is read. When you upload a file to a company's careers page, a system parses your PDF first. One column, standard headings and selectable text matter most. CV Desk gives you an ATS score before you apply.",
+   "h1": "An ATS resume: what the system reads when you upload a file",
+   "lead": "Not every application goes through an ATS. The difference is whether you fill in fields on a platform or upload your resume as a file.",
+   "answer": "When you upload a resume file, the employer's applicant tracking system breaks it into text before a person sees it. A single column, standard headings such as experience, education and skills, one date format and a PDF with selectable text decide whether your experience and keywords are read correctly.",
+   "paras": [
+    "First, tell the application types apart. An online resume filled in field by field on a job bank is already structured data, so layout does not affect how it is read. The case to worry about is uploading a file: foreign companies, tech firms and corporate careers pages often ask for a PDF or Word file that a system then parses.",
+    "The most common problem is a two-column design. The parser reads top to bottom and left to right, so a sidebar with languages and skills gets mixed into your work history. The second is creative headings, such as calling work experience 'my journey', which the system may not recognise. The third is a PDF made of images, which arrives as a file with no text.",
+    "Before you apply, add the words from the job description that genuinely match your experience, and keep a separate copy for each job. CV Desk calculates a 0–100 ATS score with tappable fixes, exports a single-column PDF with selectable text or an editable Word file, and keeps one resume per job. The score is an on-device estimate; results vary by employer system."
+   ],
+   "look": [
+    "Whether this application uses platform fields or a file upload",
+    "Whether the resume is one column with no sidebar",
+    "Whether headings use standard names such as experience, education and skills",
+    "Whether all dates use the same format",
+    "Whether the text in the PDF can be selected"
+   ],
+   "steps": [
+    "Check whether the application page asks you to fill in fields or upload a file.",
+    "If uploading, switch to one column: date, title and company stacked top to bottom.",
+    "Replace creative headings with standard ones.",
+    "Add keywords from the job description only where you really did the work.",
+    "In the exported PDF, select a line to confirm it is real text, not an image."
+   ],
+   "rows": [
+    [
+     "Application type",
+     "Platform fields or file upload",
+     "With fields, layout does not affect reading"
+    ],
+    [
+     "Columns",
+     "One or two",
+     "With two, the sidebar mixes into your experience"
+    ],
+    [
+     "Export",
+     "Selectable text or image",
+     "An image PDF reads as an empty file to the system"
+    ]
+   ],
+   "fits": "CV Desk suits people who want to know how a system will read their resume before uploading: a 0–100 ATS score with tappable fixes, a single-column PDF or editable Word file, and one resume per job. Everything happens on your iPhone with no account, and it works in airplane mode.",
+   "faq": [
+    [
+     "Do I need an ATS resume for job banks too?",
+     "An online resume filled in on a platform is structured fields, so layout does not affect reading. An ATS-friendly layout matters most when you upload a PDF or Word file to a company's site."
+    ],
+    [
+     "Can an ATS resume include a photo?",
+     "Yes, but do not let it push you into a two-column layout. In CV Desk the photo is optional and off by default."
+    ],
+    [
+     "Where is my resume uploaded?",
+     "It is not uploaded. CV Desk keeps your resume on your iPhone, needs no account and works in airplane mode."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "cyca",
+  "locale": "ja",
+  "market": "JP",
+  "term": "排卵日 トラッカー",
+  "rank": 10,
+  "slug": "ovulation-day-tracker-japan-what-the-prediction-is-based-on",
+  "loc": {
+   "title": "排卵日トラッカーの予測は何をもとにしている？精度を上げる記録のしかた",
+   "meta": "排卵日トラッカーの多くは、これまでの生理開始日から周期を割り出して排卵日を推定します。予測の仕組みと限界、記録を続けると何が変わるかを整理しました。Cyca は記録するたびに予測を調整します。",
+   "h1": "排卵日トラッカー：予測の仕組みと、記録で変わること",
+   "lead": "アプリに表示される排卵日は「その日に必ず排卵する」という意味ではありません。何をもとにした予測なのかを知っておくと、上手に付き合えます。",
+   "answer": "排卵日トラッカーの予測は、主に過去の生理開始日と周期の長さから計算されます。一般に排卵は次の生理のおよそ 14 日前とされるため、周期が安定している人ほど予測は近くなり、周期がばらつく人ほど幅が広がります。記録を続けるほど、自分のリズムに合った予測になります。",
+   "paras": [
+    "多くのアプリは、記録された生理開始日の間隔から平均的な周期の長さを求め、次の生理の予定日から逆算して排卵日と妊娠しやすい時期を推定します。そのため、最初の数周期は一般的な周期をもとにした大まかな予測になり、記録が増えるにつれて自分の周期に近づいていきます。",
+    "周期は体調、睡眠、ストレス、旅行などでも前後します。予測と実際がずれたときは、生理開始日を正確に記録し直すことが一番の調整になります。経血量や生理痛、気分のメモも合わせて残しておくと、自分の体の傾向が見えやすくなり、婦人科で相談するときにも役立ちます。",
+    "Cyca は生理を記録すると、次の生理・妊娠しやすい時期・排卵日を予測し、記録するたびに調整します。周期全体がカレンダーでひと目でわかり、経血量・生理痛・気分・メモの記録は数秒で終わります。アカウント不要でデータは iPhone の中だけに保存されます。Cyca は健康と計画のための目安を提供するもので、医療機器でも避妊手段でもありません。"
+   ],
+   "look": [
+    "予測が自分の記録をもとに調整されるか",
+    "生理・妊娠しやすい時期・排卵日がカレンダーで見分けやすいか",
+    "経血量や生理痛、気分も一緒に記録できるか",
+    "データがどこに保存されるか",
+    "予測が目安であることがはっきり示されているか"
+   ],
+   "steps": [
+    "直近の生理開始日を、わかる範囲でさかのぼって記録します。",
+    "毎回の生理開始日を当日に記録します。",
+    "経血量や生理痛、気分を短くメモしておきます。",
+    "予測とずれたら、開始日の記録を見直します。",
+    "妊活や体調の相談では、記録をもとに医師に伝えます。"
+   ],
+   "rows": [
+    [
+     "予測のもと",
+     "過去の生理開始日と周期",
+     "記録が少ないうちは一般的な周期で推定されます"
+    ],
+    [
+     "周期のばらつき",
+     "毎回の長さが近いか",
+     "ばらつくほど排卵日の幅が広がります"
+    ],
+    [
+     "保存場所",
+     "端末内かクラウドか",
+     "体のデータは扱いに注意したい情報です"
+    ]
+   ],
+   "fits": "Cyca は、自分の周期を落ち着いて把握したい方に向いています。次の生理・妊娠しやすい時期・排卵日の予測、やわらかな色のカレンダー、数秒で終わる記録、今日の体調予報があり、アカウントもサーバーもなくオフラインで使えます。",
+   "faq": [
+    [
+     "排卵日トラッカーの予測はどのくらい正確ですか？",
+     "周期が安定しているほど近くなりますが、あくまで目安です。体調やストレスで周期は前後するため、確実な判断が必要なときは医師に相談してください。"
+    ],
+    [
+     "避妊に使えますか？",
+     "使えません。Cyca は健康と計画のための目安を示すもので、医療機器でも避妊手段でもありません。"
+    ],
+    [
+     "記録したデータは外部に送られますか？",
+     "送られません。Cyca にはサーバーもアカウントもなく、データは iPhone の中だけに保存されます。"
+    ]
+   ]
+  },
+  "en": {
+   "title": "What does an ovulation tracker base its prediction on, and how records improve it",
+   "meta": "Most ovulation trackers estimate ovulation from past period start dates and cycle length. Here is how the prediction works, its limits, and what changes as you keep logging. Cyca adjusts its predictions every time you log.",
+   "h1": "Ovulation trackers: how predictions work and what logging changes",
+   "lead": "The ovulation day an app shows does not mean you will definitely ovulate that day. Knowing what the prediction is based on helps you use it well.",
+   "answer": "An ovulation tracker's prediction is mainly calculated from past period start dates and cycle length. Ovulation is generally said to happen about 14 days before the next period, so the more regular your cycle, the closer the prediction, and the more it varies, the wider the range. The longer you log, the more the prediction fits your own rhythm.",
+   "paras": [
+    "Many apps take the average cycle length from the gaps between logged period start dates, then count back from the expected next period to estimate ovulation and the fertile window. The first few cycles are therefore rough predictions based on a typical cycle, getting closer to yours as records build up.",
+    "Cycles also shift with health, sleep, stress and travel. When a prediction and reality differ, logging the period start date accurately is the best correction. Keeping notes on flow, cramps and mood helps you see your body's patterns and is useful when you talk to a gynaecologist.",
+    "When you log your period, Cyca predicts your next period, fertile window and ovulation day, adjusting each time you log. The whole cycle is clear at a glance on a calendar, and logging flow, cramps, mood and notes takes seconds. There is no account and data stays on your iPhone. Cyca offers guidance for health and planning and is neither a medical device nor a method of contraception."
+   ],
+   "look": [
+    "Whether predictions adjust to your own records",
+    "Whether period, fertile window and ovulation are easy to tell apart on the calendar",
+    "Whether you can log flow, cramps and mood too",
+    "Where the data is stored",
+    "Whether it is clear that predictions are guidance only"
+   ],
+   "steps": [
+    "Log recent period start dates as far back as you know them.",
+    "Log each period start on the day it begins.",
+    "Add short notes on flow, cramps and mood.",
+    "If the prediction is off, review the start dates you logged.",
+    "When trying to conceive or discussing symptoms, share your records with a doctor."
+   ],
+   "rows": [
+    [
+     "Basis",
+     "Past period starts and cycle length",
+     "With few records it estimates from a typical cycle"
+    ],
+    [
+     "Cycle variation",
+     "Are your cycles similar in length",
+     "The more they vary, the wider the ovulation range"
+    ],
+    [
+     "Storage",
+     "On the device or in the cloud",
+     "Body data is information to handle with care"
+    ]
+   ],
+   "fits": "Cyca suits people who want a calm view of their own cycle. It predicts the next period, fertile window and ovulation, has a soft-coloured calendar, logging that takes seconds and a daily body forecast, and works offline with no account and no server.",
+   "faq": [
+    [
+     "How accurate are ovulation tracker predictions?",
+     "They get closer the more regular your cycle is, but they are only guidance. Cycles shift with health and stress, so see a doctor when you need a firm answer."
+    ],
+    [
+     "Can I use it for contraception?",
+     "No. Cyca offers guidance for health and planning and is neither a medical device nor a method of contraception."
+    ],
+    [
+     "Is my data sent anywhere?",
+     "No. Cyca has no server and no account, and data stays on your iPhone."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "dailymate",
+  "locale": "id",
+  "market": "ID",
+  "term": "kalimat sehari-hari",
+  "rank": 1,
+  "paid_context": "pay_once",
+  "slug": "everyday-sentences-indonesia-learn-each-line-with-its-reply",
+  "loc": {
+   "title": "Kalimat sehari-hari: pelajari sekalian dengan balasannya",
+   "meta": "Daftar kalimat sehari-hari membantu sampai lawan bicara menjawab. Cara belajar kalimat utuh beserta balasan yang biasa muncul, per situasi nyata dan per level. DailyMate punya 8.400 kalimat dalam 47 bahasa.",
+   "h1": "Kalimat sehari-hari: jangan berhenti di satu baris",
+   "lead": "Banyak orang hafal kalimat untuk memesan makanan atau bertanya arah, tapi kaku begitu lawan bicara membalas dengan kalimat yang tidak terduga.",
+   "answer": "Kalimat sehari-hari paling cepat terpakai kalau dipelajari berpasangan: kalimat yang kamu ucapkan dan balasan yang biasanya kamu dengar. Kelompokkan per situasi nyata seperti belanja, makan, kerja dan perjalanan, lalu naikkan level setelah pasangan dasarnya lancar.",
+   "paras": [
+    "Masalah daftar kalimat biasa adalah hanya berisi satu sisi percakapan. Kamu tahu cara bertanya 'Berapa harganya?', tapi tidak siap ketika penjual menjawab dengan angka cepat atau balik bertanya ukuran. Belajar balasan yang umum membuat kamu bisa melanjutkan percakapan, bukan berhenti setelah satu kalimat.",
+    "Kedua, belajar per situasi, bukan per daftar kosakata. Satu situasi seperti check-in hotel punya pola tanya-jawab yang selalu mirip. Kalau pola itu sudah dikenal, kata-kata baru di dalamnya jauh lebih mudah ditangkap. Dengarkan pengucapannya, lalu ulangi sampai bisa mengucapkannya tanpa membaca.",
+    "DailyMate mengajarkan kalimat utuh beserta balasan alaminya: 8.400 kalimat praktis dalam 47 bahasa belajar, dikelompokkan ke 14 topik sehari-hari dan 84 situasi nyata, dengan 200 kalimat pemula, 200 menengah dan 200 mahir per topik. Setiap kalimat bisa didengarkan dengan suara sistem, disimpan sebagai favorit, dan kemajuan tiap bahasa dicatat terpisah."
+   ],
+   "look": [
+    "Apakah setiap kalimat disertai balasan yang biasa muncul",
+    "Apakah kalimat dikelompokkan per situasi nyata",
+    "Apakah ada level pemula sampai mahir",
+    "Apakah pengucapannya bisa didengarkan",
+    "Apakah bisa diulang di sela kegiatan, misalnya lewat widget"
+   ],
+   "steps": [
+    "Pilih satu situasi yang paling sering kamu hadapi, misalnya makan di luar.",
+    "Pelajari kalimat yang kamu ucapkan bersama balasan yang biasa kamu dengar.",
+    "Dengarkan pengucapannya dan ulangi tanpa membaca.",
+    "Simpan kalimat yang sulit sebagai favorit dan ulangi besok.",
+    "Setelah lancar, pindah ke situasi berikutnya atau naik level."
+   ],
+   "rows": [
+    [
+     "Isi",
+     "Satu sisi atau berpasangan",
+     "Balasan membuat percakapan bisa berlanjut"
+    ],
+    [
+     "Pengelompokan",
+     "Per situasi atau per daftar kata",
+     "Pola tanya-jawab per situasi lebih mudah diingat"
+    ],
+    [
+     "Pengulangan",
+     "Hanya di aplikasi atau di sela kegiatan",
+     "Kalimat yang sering terlihat lebih cepat menempel"
+    ]
+   ],
+   "fits": "DailyMate cocok untuk kamu yang tahu banyak kata tapi kaku saat harus bicara, entah untuk perjalanan, pindah ke luar negeri, atau bahasa kerja. Ada 47 bahasa belajar dengan kemajuan terpisah, widget interaktif di Layar Utama dan Apple Watch. Sekali beli, seluruh aplikasi terbuka, tanpa langganan.",
+   "faq": [
+    [
+     "Berapa kalimat yang perlu dihafal untuk mulai bicara?",
+     "Tidak perlu banyak. Mulai dari pasangan tanya-jawab di dua atau tiga situasi yang paling sering kamu hadapi, lalu tambah sedikit demi sedikit."
+    ],
+    [
+     "Bisa belajar lebih dari satu bahasa?",
+     "Bisa. DailyMate mencakup 47 bahasa belajar dan mencatat favorit serta kemajuan tiap bahasa secara terpisah."
+    ],
+    [
+     "Bisa belajar tanpa membuka aplikasi?",
+     "Widget interaktif menampilkan kalimat di Layar Utama dan memungkinkan kamu membuka kalimat berikutnya atau menyimpannya tanpa masuk ke aplikasi."
+    ]
+   ]
+  },
+  "en": {
+   "title": "Everyday sentences: learn each one together with its reply",
+   "meta": "A list of everyday sentences helps until the other person answers. How to learn full sentences with the replies that usually follow, by real situation and level. DailyMate has 8,400 sentences in 47 languages.",
+   "h1": "Everyday sentences: do not stop at one line",
+   "lead": "Many people memorise lines for ordering food or asking the way, then freeze when the other person answers with something unexpected.",
+   "answer": "Everyday sentences become usable fastest when you learn them in pairs: the line you say and the reply you usually hear. Group them by real situation such as shopping, eating, work and travel, and move up a level once the basic pairs come easily.",
+   "paras": [
+    "The problem with ordinary phrase lists is that they hold only one side of the conversation. You know how to ask 'How much is it?', but you are not ready when the seller answers with a quick number or asks you a size. Learning the common replies lets you keep the conversation going instead of stopping after one sentence.",
+    "Second, learn by situation, not by vocabulary list. A situation such as checking in at a hotel has a question-and-answer pattern that is almost always the same. Once you know the pattern, new words inside it are far easier to catch. Listen to the pronunciation and repeat until you can say it without reading.",
+    "DailyMate teaches full sentences with their natural replies: 8,400 practical sentences in 47 learning languages, grouped into 14 everyday topics and 84 real situations, with 200 beginner, 200 intermediate and 200 advanced sentences per topic. Every sentence can be heard with a system voice and saved as a favourite, and progress is kept separately for each language."
+   ],
+   "look": [
+    "Whether each sentence comes with the reply you usually hear",
+    "Whether sentences are grouped by real situation",
+    "Whether levels run from beginner to advanced",
+    "Whether you can hear the pronunciation",
+    "Whether you can review between other things, for example from a widget"
+   ],
+   "steps": [
+    "Pick the one situation you face most often, such as eating out.",
+    "Learn the line you say together with the reply you usually hear.",
+    "Listen to the pronunciation and repeat it without reading.",
+    "Save difficult sentences as favourites and go over them tomorrow.",
+    "Once comfortable, move to the next situation or level."
+   ],
+   "rows": [
+    [
+     "Content",
+     "One side or in pairs",
+     "Replies let the conversation continue"
+    ],
+    [
+     "Grouping",
+     "By situation or by word list",
+     "Situation patterns are easier to remember"
+    ],
+    [
+     "Review",
+     "Only in the app or between other things",
+     "Sentences you see often stick faster"
+    ]
+   ],
+   "fits": "DailyMate suits people who know plenty of words but freeze when they have to speak, whether for a trip, a move abroad or a working language. It covers 47 learning languages with separate progress, an interactive Home Screen widget and Apple Watch. One purchase opens the whole app, with no subscription.",
+   "faq": [
+    [
+     "How many sentences do I need before I can start speaking?",
+     "Not many. Start with question-and-answer pairs in the two or three situations you face most, then add a few at a time."
+    ],
+    [
+     "Can I learn more than one language?",
+     "Yes. DailyMate covers 47 learning languages and keeps favourites and progress separately for each one."
+    ],
+    [
+     "Can I study without opening the app?",
+     "The interactive widget shows a sentence on the Home Screen and lets you open the next one or save it without entering the app."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "dailymatelite",
+  "locale": "th",
+  "market": "TH",
+  "term": "บทสนทนาเที่ยว",
+  "rank": 11,
+  "slug": "travel-conversation-thailand-practice-what-staff-say-and-your-reply",
+  "loc": {
+   "title": "บทสนทนาเที่ยวต่างประเทศ: ซ้อมสิ่งที่พนักงานจะพูด และคำตอบของคุณ",
+   "meta": "ท่องประโยคไปเที่ยวมาแล้ว แต่พอพนักงานถามกลับก็ตอบไม่ทัน วิธีซ้อมบทสนทนาเที่ยวแบบเป็นคู่ ตั้งแต่สนามบิน โรงแรม ถามทาง ไปจนถึงสั่งอาหาร DailyMate Lite มี 84 สถานการณ์จริงใน 50 ภาษา",
+   "h1": "บทสนทนาเที่ยว: ซ้อมให้ครบทั้งสองฝั่ง",
+   "lead": "ส่วนที่ยากที่สุดของการคุยตอนเที่ยวไม่ใช่ประโยคที่เราพูด แต่เป็นคำถามที่อีกฝ่ายถามกลับมา",
+   "answer": "บทสนทนาเที่ยวควรซ้อมเป็นคู่: ประโยคที่คุณจะได้ยินจากพนักงาน และคำตอบสั้น ๆ ที่คุณใช้ได้ทันที เริ่มจากสถานการณ์ที่ต้องเจอแน่ ๆ เช่น ตรวจความปลอดภัยที่สนามบิน เช็กอินโรงแรม ถามทาง และสั่งอาหาร แล้วฟังการออกเสียงจนพูดได้โดยไม่ต้องอ่าน",
+   "paras": [
+    "หนังสือวลีท่องเที่ยวส่วนใหญ่สอนแค่ประโยคที่เราเป็นฝ่ายพูด แต่ในสนามบินหรือโรงแรม พนักงานมักเป็นฝ่ายถามก่อน เช่น ถามจำนวนคืนที่พัก ขอดูหนังสือเดินทาง หรือถามว่าจะทานที่ร้านหรือกลับบ้าน ถ้าไม่เคยได้ยินคำถามเหล่านี้มาก่อน ก็จะตอบไม่ทันแม้จะจำประโยคของตัวเองได้",
+    "วิธีที่ได้ผลคือซ้อมทีละสถานการณ์ ฟังประโยคที่พนักงานพูดพร้อมคำตอบที่เป็นธรรมชาติ แล้วพูดตามจนคล่อง ช่วงแรกฟังแบบช้าลงก่อน แล้วค่อยเพิ่มความเร็วให้ใกล้เคียงของจริง ซ้อมสถานการณ์ที่จะเจอในวันแรกของทริปก่อน เพราะเป็นช่วงที่ยังไม่คุ้นกับสำเนียงท้องถิ่น",
+    "DailyMate Lite รวม 84 สถานการณ์จริง ตั้งแต่ตรวจความปลอดภัยที่สนามบิน เช็กอินโรงแรม ถามทาง ไปจนถึงสั่งอาหาร แต่ละการ์ดมีประโยคที่คุณจะได้ยินคู่กับคำตอบที่เป็นธรรมชาติ รวม 8,400 คู่ใน 50 ภาษา ฟังการออกเสียงด้วยเสียงในเครื่องและปรับความเร็วได้ และวิดเจ็ตบนหน้าจอโฮมจะแสดงประโยคถัดไปให้ทบทวนทุกวัน"
+   ],
+   "look": [
+    "มีประโยคที่พนักงานจะพูดคู่กับคำตอบหรือไม่",
+    "จัดตามสถานการณ์จริงของการเดินทางหรือไม่",
+    "ฟังการออกเสียงและปรับความเร็วได้หรือไม่",
+    "มีภาษาของประเทศที่คุณจะไปหรือไม่",
+    "ทบทวนได้ระหว่างวันโดยไม่ต้องเปิดแอปหรือไม่"
+   ],
+   "steps": [
+    "เลือกภาษาของประเทศที่จะไป",
+    "เริ่มจากสนามบินและโรงแรม เพราะต้องเจอในวันแรก",
+    "ฟังประโยคของพนักงานแบบช้า แล้วพูดคำตอบตาม",
+    "เพิ่มความเร็วจนใกล้เคียงการพูดจริง",
+    "สัปดาห์ก่อนเดินทาง ทบทวนวันละไม่กี่การ์ดจากวิดเจ็ต"
+   ],
+   "rows": [
+    [
+     "เนื้อหา",
+     "มีคำถามของพนักงานหรือไม่",
+     "ส่วนใหญ่อีกฝ่ายเป็นคนถามก่อน"
+    ],
+    [
+     "การฟัง",
+     "ปรับความเร็วได้หรือไม่",
+     "เริ่มช้าแล้วค่อยเร่ง ช่วยให้ตามทันของจริง"
+    ],
+    [
+     "การทบทวน",
+     "ทบทวนจากหน้าจอโฮมได้หรือไม่",
+     "ซ้อมสั้น ๆ ทุกวันจำได้ดีกว่าซ้อมรวดเดียว"
+    ]
+   ],
+   "fits": "DailyMate Lite เหมาะกับคนที่กำลังจะไปเที่ยวต่างประเทศและอยากพูดตอบได้จริง ฝึกบทสนทนาเที่ยวได้ 50 ภาษา 84 สถานการณ์ 3 ระดับ มีวิดเจ็ตแบบโต้ตอบและแอป Apple Watch ไม่ต้องมีบัญชี ไม่มีโฆษณา",
+   "faq": [
+    [
+     "ควรเริ่มซ้อมก่อนเดินทางกี่วัน",
+     "ราวหนึ่งถึงสองสัปดาห์ก็พอ ซ้อมวันละไม่กี่สถานการณ์ โดยเริ่มจากสนามบินและโรงแรมที่ต้องเจอในวันแรก"
+    ],
+    [
+     "เรียนได้หลายภาษาไหม",
+     "ได้ DailyMate Lite มี 50 ภาษา สลับภาษาได้ทุกเมื่อ และแต่ละภาษาเก็บความคืบหน้าแยกกัน"
+    ],
+    [
+     "ต้องใช้อินเทอร์เน็ตตอนฟังเสียงไหม",
+     "การออกเสียงใช้เสียงของระบบที่ติดตั้งไว้ในเครื่อง และข้อมูลการเรียนหลักอยู่บนอุปกรณ์"
+    ]
+   ]
+  },
+  "en": {
+   "title": "Travel conversation abroad: practise what staff will say, and your reply",
+   "meta": "You memorised travel phrases, but when staff ask back you cannot answer in time. How to practise travel conversation in pairs, from the airport and hotel to asking directions and ordering food. DailyMate Lite has 84 real situations in 50 languages.",
+   "h1": "Travel conversation: practise both sides",
+   "lead": "The hardest part of talking on a trip is not the line you say, but the question the other person asks back.",
+   "answer": "Practise travel conversation in pairs: the line you will hear from staff and a short reply you can use straight away. Start with situations you are sure to meet, such as airport security, hotel check-in, asking directions and ordering food, and listen to the pronunciation until you can speak without reading.",
+   "paras": [
+    "Most travel phrasebooks only teach the lines you say. But at the airport or hotel, staff usually ask first: how many nights, may they see your passport, eat in or take away. If you have never heard those questions before, you cannot answer in time even if you remember your own lines.",
+    "What works is practising one situation at a time: hear the staff line with its natural reply, then repeat until it flows. Listen slowed down at first, then raise the speed towards real speech. Practise the situations of the first day first, since that is when the local accent is least familiar.",
+    "DailyMate Lite covers 84 real situations, from airport security and hotel check-in to asking directions and ordering food. Each card pairs a line you will hear with a natural reply, 8,400 pairs in 50 languages. You hear the pronunciation with on-device voices at adjustable speed, and the Home Screen widget shows the next sentence to review every day."
+   ],
+   "look": [
+    "Whether staff lines are paired with replies",
+    "Whether it is organised by real travel situations",
+    "Whether you can hear the pronunciation and change its speed",
+    "Whether the language of your destination is included",
+    "Whether you can review during the day without opening the app"
+   ],
+   "steps": [
+    "Choose the language of the country you are visiting.",
+    "Start with the airport and hotel, since you meet them on day one.",
+    "Hear the staff line slowly, then say the reply.",
+    "Raise the speed until it is close to real speech.",
+    "In the week before you leave, review a few cards a day from the widget."
+   ],
+   "rows": [
+    [
+     "Content",
+     "Are staff questions included",
+     "The other side usually asks first"
+    ],
+    [
+     "Listening",
+     "Can you change the speed",
+     "Starting slow and speeding up helps you keep up for real"
+    ],
+    [
+     "Review",
+     "Can you review from the Home Screen",
+     "Short daily practice sticks better than one long session"
+    ]
+   ],
+   "fits": "DailyMate Lite suits people heading abroad who want to actually answer back. It trains travel conversation in 50 languages, 84 situations and 3 levels, with an interactive widget and an Apple Watch app, no account and no ads.",
+   "faq": [
+    [
+     "How many days before the trip should I start?",
+     "About one to two weeks is enough. Practise a few situations a day, starting with the airport and hotel you meet on day one."
+    ],
+    [
+     "Can I learn several languages?",
+     "Yes. DailyMate Lite has 50 languages, you can switch at any time, and each language keeps its own progress."
+    ],
+    [
+     "Do I need the internet to hear the audio?",
+     "Pronunciation uses the system voices installed on your device, and the main learning data stays on the device."
+    ]
+   ]
+  }
  }
 ]

@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-11-05T06:28:39Z",
+  "updated_at": "2026-11-07T05:46:39Z",
   "note": "Insights of our own IG / Threads posts by .github/scripts/post_performance.py. score = views + 3*likes + 5*replies + 8*(saves+shares+reposts). boost = best apps, read by 00_GrowthEngine shorts/scripts/schedule_posts.py.",
   "sources": {
     "instagram": "ok: 38 posts",
-    "threads": "ok: 12 posts"
+    "threads": "ok: 10 posts"
   },
   "boost": [
     "cvdesk",
@@ -101,22 +101,22 @@
       "en": {
         "hour": 8,
         "avg_views": 12.7,
-        "posts": 17,
+        "posts": 18,
         "hours": {
           "1": 9.3,
-          "2": 5.5,
+          "2": 6.0,
           "8": 12.7,
           "13": 11.0,
-          "15": 4.0,
+          "15": 4.5,
           "16": 8.0
         }
       },
       "zh-Hant": {
         "hour": 3,
-        "avg_views": 283.0,
+        "avg_views": 283.5,
         "posts": 14,
         "hours": {
-          "3": 283.0,
+          "3": 283.5,
           "6": 30.5,
           "13": 82.5,
           "16": 10.0,
@@ -131,10 +131,10 @@
       {
         "key": "cvdesk",
         "posts": 2,
-        "views": 366,
+        "views": 367,
         "engagement": 3,
-        "score": 379,
-        "avg_score": 189.5
+        "score": 380,
+        "avg_score": 190.0
       },
       {
         "key": "mochi_suneung",
@@ -155,10 +155,10 @@
       {
         "key": "gmoney",
         "posts": 3,
-        "views": 267,
+        "views": 268,
         "engagement": 3,
-        "score": 280,
-        "avg_score": 93.3
+        "score": 281,
+        "avg_score": 93.7
       },
       {
         "key": "duowallpaperstudio",
@@ -313,18 +313,26 @@
         "avg_score": 8.0
       },
       {
+        "key": "wifiaid",
+        "posts": 1,
+        "views": 3,
+        "engagement": 1,
+        "score": 8,
+        "avg_score": 8.0
+      },
+      {
+        "key": "gmoneylite",
+        "posts": 1,
+        "views": 3,
+        "engagement": 1,
+        "score": 8,
+        "avg_score": 8.0
+      },
+      {
         "key": "tripplanet",
         "posts": 1,
         "views": 7,
         "engagement": 0,
-        "score": 7,
-        "avg_score": 7.0
-      },
-      {
-        "key": "wifiaid",
-        "posts": 1,
-        "views": 2,
-        "engagement": 1,
         "score": 7,
         "avg_score": 7.0
       },
@@ -501,18 +509,18 @@
       {
         "key": "zh-Hant",
         "posts": 42,
-        "views": 1210,
+        "views": 1211,
         "engagement": 16,
-        "score": 1282,
+        "score": 1283,
         "avg_score": 30.5
       },
       {
         "key": "en",
-        "posts": 35,
-        "views": 332,
-        "engagement": 10,
-        "score": 380,
-        "avg_score": 10.9
+        "posts": 36,
+        "views": 337,
+        "engagement": 11,
+        "score": 390,
+        "avg_score": 10.8
       },
       {
         "key": "de",
@@ -555,10 +563,10 @@
         "locale": "zh-Hant",
         "hook": "我是獨立開發者。每次出國回來都被問「這趟花了多少？」，我以前答不出來：日圓付錢、台幣想預算，兩邊從來沒對起來。所以做了 ",
         "posts": 1,
-        "views": 208,
+        "views": 209,
         "engagement": 1,
-        "score": 213,
-        "avg_score": 213.0
+        "score": 214,
+        "avg_score": 214.0
       },
       {
         "app": "mochi_suneung",
@@ -881,6 +889,16 @@
         "avg_score": 14.0
       },
       {
+        "app": "cvdesk",
+        "locale": "en",
+        "hook": "صانع السيرة الذاتية وفحص ATS.",
+        "posts": 1,
+        "views": 9,
+        "engagement": 1,
+        "score": 14,
+        "avg_score": 14.0
+      },
+      {
         "app": "mochi_b",
         "locale": "en",
         "hook": "So much to do, so easy to forget?",
@@ -894,16 +912,6 @@
         "app": "zipbox",
         "locale": "en",
         "hook": "Raspakiraj bez reklama.",
-        "posts": 1,
-        "views": 8,
-        "engagement": 1,
-        "score": 13,
-        "avg_score": 13.0
-      },
-      {
-        "app": "cvdesk",
-        "locale": "en",
-        "hook": "صانع السيرة الذاتية وفحص ATS.",
         "posts": 1,
         "views": 8,
         "engagement": 1,
@@ -1001,6 +1009,26 @@
         "avg_score": 8.0
       },
       {
+        "app": "wifiaid",
+        "locale": "en",
+        "hook": "Router, Mesh & DNS Diagnostics.",
+        "posts": 1,
+        "views": 3,
+        "engagement": 1,
+        "score": 8,
+        "avg_score": 8.0
+      },
+      {
+        "app": "gmoneylite",
+        "locale": "en",
+        "hook": "Travel Budget & Currency.",
+        "posts": 1,
+        "views": 3,
+        "engagement": 1,
+        "score": 8,
+        "avg_score": 8.0
+      },
+      {
         "app": "lumibopomofo",
         "locale": "zh-Hant",
         "hook": "37 個注音小夥伴 等你收集",
@@ -1064,16 +1092,6 @@
         "app": "maskmyfile",
         "locale": "cs",
         "hook": "Něco chybí? Přidejte to",
-        "posts": 1,
-        "views": 2,
-        "engagement": 1,
-        "score": 7,
-        "avg_score": 7.0
-      },
-      {
-        "app": "wifiaid",
-        "locale": "en",
-        "hook": "Router, Mesh & DNS Diagnostics.",
         "posts": 1,
         "views": 2,
         "engagement": 1,
@@ -3572,12 +3590,12 @@
       "kind": "image",
       "variant": null,
       "metrics": {
-        "views": 208,
+        "views": 209,
         "likes": 0,
         "replies": 1,
         "reposts": 0
       },
-      "score": 213
+      "score": 214
     },
     {
       "channel": "threads",
@@ -3591,12 +3609,12 @@
       "kind": "image",
       "variant": null,
       "metrics": {
-        "views": 8,
+        "views": 9,
         "likes": 0,
         "replies": 1,
         "reposts": 0
       },
-      "score": 13
+      "score": 14
     },
     {
       "channel": "threads",
@@ -3629,12 +3647,31 @@
       "kind": "image",
       "variant": null,
       "metrics": {
-        "views": 2,
+        "views": 3,
         "likes": 0,
         "replies": 1,
         "reposts": 0
       },
-      "score": 7
+      "score": 8
+    },
+    {
+      "channel": "threads",
+      "id": "17940226470406618",
+      "link": "https://www.threads.com/@hourstag.app/post/DfZPFOLE8-h",
+      "posted_at": "2026-11-06T09:07:12",
+      "app": "gmoneylite",
+      "locale": "en",
+      "hook": "Travel Budget & Currency.",
+      "clip": null,
+      "kind": "image",
+      "variant": null,
+      "metrics": {
+        "views": 3,
+        "likes": 0,
+        "replies": 1,
+        "reposts": 0
+      },
+      "score": 8
     }
   ]
 }

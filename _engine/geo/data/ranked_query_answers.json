@@ -30103,5 +30103,1387 @@
     ]
    ]
   }
+ },
+ {
+  "key": "lockhour",
+  "locale": "ko",
+  "market": "KR",
+  "term": "스마트폰 중독",
+  "rank": null,
+  "slug": "smartphone-overuse-self-check-and-reduce-by-time-of-day-korea",
+  "loc": {
+   "title": "스마트폰 중독일까? 사용 습관 자가 점검과 시간대별로 줄이는 법",
+   "meta": "폰을 내려놓기 어렵다면 먼저 언제, 어떤 앱에서 시간이 새는지 점검하세요. 잠들기 전·공부·아침처럼 시간대를 정해 방해 앱을 잠그고 사용 시간을 줄이는 방법을 정리했습니다.",
+   "h1": "스마트폰 중독이 걱정될 때: 점검하고, 시간대별로 줄이기",
+   "lead": "\"5분만\" 하고 열었는데 한 시간이 지나 있다면, 의지가 약해서가 아니라 폰을 여는 순간이 습관처럼 굳어 있기 때문인 경우가 많습니다. 사용 시간을 줄이려면 막연히 참기보다, 시간이 새는 시간대를 찾아 그때만 확실히 막는 편이 현실적입니다.",
+   "answer": "스마트폰 사용이 지나치다고 느껴지면, 먼저 하루 중 가장 오래 쓰는 시간대와 앱을 적어 보세요. 그다음 그 시간대 하나(예: 잠들기 전 30분)만 정해 방해 앱을 타이머로 잠그고, 끝나면 자동으로 풀리게 합니다. 한 시간대가 익숙해지면 공부·아침 시간으로 넓혀 가는 방식이 오래갑니다. 일상생활이 크게 어려울 정도라면 전문가 상담도 함께 고려하세요.",
+   "paras": [
+    "'중독'이라는 말이 무겁게 느껴지지만, 많은 사람이 겪는 문제는 대부분 특정 순간에 반복되는 습관입니다. 침대에 누웠을 때, 공부를 시작하기 직전, 아침에 눈뜨자마자처럼 폰을 여는 계기가 정해져 있습니다. 하루 전체를 줄이려 하면 금방 지치지만, 계기가 되는 시간대 하나를 막으면 체감되는 변화가 큽니다.",
+    "시간대를 정했다면 그 시간에는 선택이 필요 없게 만드는 것이 핵심입니다. LockHour Pro는 모드를 고르고 한 번 탭하면 선택한 앱과 웹사이트를 타이머가 끝날 때까지 잠그고, 시간이 되면 자동으로 풀어 줍니다. 잠들기 전 모드는 밤에 폰을 내려놓도록, 아침 리셋은 스크롤보다 하루를 먼저 시작하도록, 공부 모드는 뽀모도로식 집중과 휴식을 반복하도록 돕습니다.",
+    "중간에 풀고 싶은 충동이 문제라면 하드 모드를 켜 보세요. 멈추려면 60초를 기다린 뒤 확인 문구를 직접 입력해야 해서, 충동이 아니라 결정으로 멈추게 됩니다. 오늘 집중한 시간, 주간 차트, 연속 기록, 되찾은 총 시간을 보면 줄인 시간이 눈에 보여 다음 날도 이어 가기 쉽습니다."
+   ],
+   "look": [
+    "하루 중 폰을 가장 오래 쓰는 시간대가 언제인지 알고 있나요?",
+    "그 시간대에 방해 앱을 자동으로 잠그고 풀어 주나요?",
+    "중간에 충동적으로 해제하기 어렵게 만드는 장치가 있나요?",
+    "줄인 시간이 숫자와 연속 기록으로 보이나요?",
+    "계정·광고·추적 없이 데이터가 기기 안에만 남나요?"
+   ],
+   "steps": [
+    "사흘 동안 폰을 오래 쓴 시간대와 앱을 메모해 가장 큰 시간대 하나를 고릅니다.",
+    "그 시간대에 맞는 모드(잠들기 전, 공부, 아침 리셋 등)를 정합니다.",
+    "그 시간에 주로 여는 앱과 웹사이트만 차단 목록에 넣습니다.",
+    "한 번 탭해 세션을 시작하고, 자꾸 풀게 된다면 하드 모드를 켭니다.",
+    "일주일 동안 연속 기록이 이어지면 다음 시간대로 하나씩 넓힙니다."
+   ],
+   "rows": [
+    [
+     "잠들기 전 스크롤",
+     "침대에서 여는 앱이 잠기나요?",
+     "수면 시간을 직접 갉아먹는 시간대"
+    ],
+    [
+     "공부·일 중간 확인",
+     "타이머와 차단이 함께 켜지나요?",
+     "잠깐 확인이 긴 이탈로 이어지기 쉬움"
+    ],
+    [
+     "중간에 풀어 버림",
+     "해제 전에 대기와 확인이 있나요?",
+     "충동을 결정으로 바꿔 주는 한 박자"
+    ]
+   ],
+   "fits": "LockHour Pro는 폰 사용 시간을 스스로 줄이고 관리하고 싶은 사람, 특히 잠들기 전이나 공부 시간처럼 시간이 새는 순간이 정해져 있는 사람에게 맞습니다. 치료나 진단 도구가 아니라, 정한 시간 동안 방해 앱을 잠그고 끝나면 자동으로 풀어 주는 앱입니다. 위젯과 잠금 화면, 다이내믹 아일랜드에서 남은 시간을 보여 주고, 한 번 결제로 모든 기능이 열리며 구독과 광고가 없습니다.",
+   "faq": [
+    [
+     "제가 스마트폰 중독인지 앱으로 알 수 있나요?",
+     "이 앱은 진단 도구가 아닙니다. 다만 집중한 시간과 되찾은 시간을 기록해 사용 습관을 돌아보는 데 도움이 됩니다. 생활에 큰 지장이 있다면 전문가와 상담하세요."
+    ],
+    [
+     "앱을 아예 지우는 게 낫지 않나요?",
+     "필요한 앱까지 지우면 다시 설치하게 되는 경우가 많습니다. 시간대를 정해 그때만 잠그면 필요한 때는 쓰고, 새는 시간만 줄일 수 있습니다."
+    ],
+    [
+     "잠금을 자꾸 중간에 풀게 돼요.",
+     "하드 모드를 켜면 멈추기 전에 60초를 기다리고 확인 문구를 입력해야 합니다. 그 사이에 정말 멈출지 다시 생각하게 됩니다."
+    ]
+   ]
+  },
+  "en": {
+   "title": "Smartphone addiction? Check your habits and cut back by time of day",
+   "meta": "If putting your phone down is hard, first check when and in which apps your time leaks. How to pick time slots such as bedtime, study or morning, lock distracting apps then, and reduce your screen time.",
+   "h1": "Worried about smartphone addiction: check, then cut back by time of day",
+   "lead": "If \"just five minutes\" keeps turning into an hour, it is often not weak willpower but a habit fixed to certain moments. To reduce screen time, finding the time slot where it leaks and blocking only that slot works better than simply trying to resist.",
+   "answer": "If your phone use feels excessive, first write down the time of day and the apps where you spend the most time. Then pick one slot (for example the 30 minutes before sleep), lock distracting apps with a timer and let them unlock automatically when it ends. Once that slot feels normal, extend to study or morning time. If daily life is seriously affected, consider talking to a professional as well.",
+   "paras": [
+    "The word \"addiction\" sounds heavy, but what most people struggle with is a habit repeated at specific moments: lying in bed, right before studying, the moment they wake up. Trying to cut the whole day at once is exhausting, while blocking one trigger slot brings a change you can feel.",
+    "Once the slot is chosen, the key is to remove the choice during it. In LockHour Pro you pick a mode and tap once, and the apps and websites you selected stay locked until the timer ends, then unlock automatically. Before Sleep helps you put the phone down at night, Morning Reset starts the day before the scroll, and Study Mode repeats Pomodoro-style focus and breaks.",
+    "If the urge to quit midway is the problem, turn on Hard Mode. Stopping early means waiting 60 seconds and typing a confirmation phrase, so you stop by decision rather than impulse. Today's focus time, a weekly chart, streaks and total time reclaimed make the reduction visible, which makes the next day easier."
+   ],
+   "look": [
+    "Do you know the time of day when you use your phone the longest?",
+    "Are distracting apps locked and unlocked automatically for that slot?",
+    "Is there something that makes impulsive unlocking harder?",
+    "Is the time you cut shown as numbers and streaks?",
+    "Does it work with no account, ads or tracking, with data kept on the device?"
+   ],
+   "steps": [
+    "For three days, note the time slots and apps where you used your phone the longest, and pick the biggest slot.",
+    "Choose the mode that fits it (Before Sleep, Study, Morning Reset and so on).",
+    "Add only the apps and websites you usually open at that time to the block list.",
+    "Start the session with one tap, and turn on Hard Mode if you keep unlocking.",
+    "When the streak holds for a week, extend to the next slot, one at a time."
+   ],
+   "rows": [
+    [
+     "Scrolling before sleep",
+     "Are the apps you open in bed locked?",
+     "This slot eats directly into sleep"
+    ],
+    [
+     "Checking during study or work",
+     "Do the timer and block start together?",
+     "A quick check easily becomes a long detour"
+    ],
+    [
+     "Unlocking midway",
+     "Is there a wait and confirmation first?",
+     "A pause that turns impulse into decision"
+    ]
+   ],
+   "fits": "LockHour Pro suits people who want to reduce and manage their phone time themselves, especially when the leaks happen at fixed moments such as bedtime or study time. It is not a treatment or diagnostic tool; it locks distracting apps for the time you set and unlocks them automatically when it ends. Widgets, the Lock Screen and the Dynamic Island show the time left. One purchase unlocks everything, with no subscription and no ads.",
+   "faq": [
+    [
+     "Can an app tell me whether I am addicted to my smartphone?",
+     "This app is not a diagnostic tool. It records focus time and time reclaimed, which helps you look back on your habits. If daily life is seriously affected, talk to a professional."
+    ],
+    [
+     "Isn't deleting the apps better?",
+     "Deleting apps you need often ends with reinstalling them. Locking them only in chosen slots lets you use them when needed and cut just the leaking time."
+    ],
+    [
+     "I keep unlocking midway.",
+     "With Hard Mode on, you wait 60 seconds and type a confirmation phrase before stopping. That gap gives you a moment to decide whether you really want to stop."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "lumibopomofopro",
+  "locale": "zh-Hant",
+  "market": "TW",
+  "term": "幼兒 注音",
+  "rank": null,
+  "paid_context": "pay_once",
+  "slug": "toddler-zhuyin-what-age-to-start-listening-first-pay-once",
+  "loc": {
+   "title": "幼兒幾歲可以學注音？先聽音、再描寫的起步法，與一次買斷 App 怎麼選",
+   "meta": "幼兒學注音不必急著寫字。從聽音配對開始，再到筆順描寫、拼讀與聲調，每次幾分鐘就好。也整理給幼兒用的注音 App 該注意的無廣告、無內購與離線條件。",
+   "h1": "幼兒注音：先玩聽音，再慢慢拼讀與描寫",
+   "lead": "孩子三、四歲就對注音有興趣，爸媽常擔心太早學會不會有壓力。其實幼兒階段的重點不是寫對，而是先聽得出、認得出；只要順序對、時間短，學注音可以像玩遊戲一樣自然。",
+   "answer": "幼兒學注音，建議從「聽音認符號」開始，而不是從寫字開始：先讓孩子聽到發音、找到對的注音，熟了再跟著筆順描寫，之後才用拼讀把聲母、介音、韻母拼成一個音，聲調放最後。每次幾分鐘、每天一點，比一次練很久更適合幼兒。",
+   "paras": [
+    "幼兒的手部肌肉還在發展，一開始就要求寫得工整，容易讓孩子對注音產生排斥。先從耳朵和眼睛下手：聽到「ㄇ」能指出ㄇ，看到ㄚ能說出音。在 Lumi注音星球 Pro 裡，配對餵食讓孩子餵小夥伴吃對的注音，注音釣魚則是聽到發音後釣出正確的魚，都是用聽和認來記符號。",
+    "認得的注音多了，再加上描寫。魔法描寫讓孩子用手指跟著筆順描，先熟悉字形和筆順就好，不必要求一次寫漂亮。家長專區可以把學過或最近答錯的注音一鍵印成描寫與測驗學習單，想讓孩子拿筆練的時候，就在紙上再練一次。",
+    "拼讀和聲調是下一步。拼音小火車把聲母、介音、韻母拼成一個音，聲調雲霄飛車再練一聲到輕聲的分辨。「今日複習」會自動挑出還不熟的注音，幼兒忘得快，這種小份量的重複正好合適。給幼兒用的 App 也要看干擾：Pro 版一次購買全部內容，沒有廣告、沒有內購彈窗、不需登入和網路。"
+   ],
+   "look": [
+    "是不是先從聽音、認符號開始，而不是一開始就要求寫？",
+    "有沒有跟著筆順的描寫，讓孩子先熟悉字形？",
+    "拼讀與聲調是不是分開、循序練習？",
+    "會不會自動挑出不熟的注音重複練？",
+    "有沒有廣告、內購彈窗或需要登入？給幼兒用最好都沒有"
+   ],
+   "steps": [
+    "先陪孩子玩聽音配對，聽到發音就找出對的注音。",
+    "每天只練幾分鐘，孩子想停就停，維持「好玩」的感覺。",
+    "認得的符號變多後，用手指跟著筆順描寫。",
+    "想用紙筆練時，把學過或答錯的注音印成學習單。",
+    "符號熟了再進拼讀，最後才練聲調。"
+   ],
+   "rows": [
+    [
+     "三、四歲剛有興趣",
+     "是否從聽音、配對開始？",
+     "幼兒先建立音和符號的連結"
+    ],
+    [
+     "手還握不穩筆",
+     "是否能先用手指描寫？",
+     "先熟悉筆順，不急著寫工整"
+    ],
+    [
+     "給幼兒自己玩",
+     "有沒有廣告、內購、外部連結？",
+     "避免孩子被干擾或誤觸"
+    ]
+   ],
+   "fits": "Lumi注音星球 Pro 適合想讓學齡前孩子用玩的方式開始接觸注音的家庭：從配對餵食、注音釣魚的聽音認符號，到魔法描寫、拼音小火車與聲調雲霄飛車，循序練完 37 個注音，家長專區可看進度並列印學習單。一次購買全部內容，無廣告、無內購、不需登入與網路，支援 iPhone 與 iPad，適合家庭共用。",
+   "faq": [
+    [
+     "幼兒幾歲開始學注音比較好？",
+     "每個孩子不同。只要孩子有興趣、願意玩聽音遊戲，就可以從認符號開始；寫字和拼讀可以等熟了再加。"
+    ],
+    [
+     "幼兒學注音要先學寫嗎？",
+     "不用。先聽得出、認得出，再用手指描寫熟悉筆順，用紙筆寫可以放在後面。"
+    ],
+    [
+     "給幼兒用的注音 App 要注意什麼？",
+     "看有沒有廣告、內購彈窗、外部連結或需要登入。幼兒常會自己點，這些干擾越少越好。"
+    ]
+   ]
+  },
+  "en": {
+   "title": "What age can toddlers start zhuyin? Listen first, trace later, and choosing a pay-once app",
+   "meta": "Young children do not need to start zhuyin by writing. Begin with listening and matching, then stroke-order tracing, blending and tones, a few minutes at a time, plus what to check in a zhuyin app for little kids: no ads, no in-app purchases, offline.",
+   "h1": "Zhuyin for young children: play with sounds first, then blend and trace",
+   "lead": "When a three- or four-year-old shows interest in zhuyin, parents often worry that starting early adds pressure. At this age the goal is not writing correctly but hearing and recognising the symbols; with the right order and short sessions, learning zhuyin can feel like play.",
+   "answer": "For young children, start zhuyin with listening and recognising symbols rather than writing: let your child hear a sound and find the right symbol, then trace it in stroke order once it is familiar, and only after that blend initial, medial and final into one syllable, leaving tones for last. A few minutes every day suits little children better than one long session.",
+   "paras": [
+    "Young children's hand muscles are still developing, and demanding neat writing from the start can make them resist zhuyin. Begin with ears and eyes: hearing \"m\" and pointing to ㄇ, seeing ㄚ and saying the sound. In Lumi Bopomofo Pro, the feeding match game has your child feed a cute buddy the right symbol, and zhuyin fishing asks them to catch the right fish after hearing a sound, so symbols are remembered through listening and recognising.",
+    "Once more symbols are familiar, add tracing. Magic tracing lets your child follow the stroke order with a finger; getting used to the shape and order is enough, without expecting neat results right away. In the parent area you can print learned or recently missed symbols as tracing and quiz worksheets in one tap, for when your child wants to practise with a pencil.",
+    "Blending and tones come next. The sound train joins initial, medial and final into one syllable, and the tone roller coaster practises telling the four tones and the neutral tone apart. Today's Review automatically picks symbols that are still shaky; young children forget quickly, so small repeated doses fit well. Distractions matter in an app for little kids: the Pro version unlocks everything with one purchase, with no ads, no in-app purchase pop-ups, and no sign-in or internet needed."
+   ],
+   "look": [
+    "Does it start with listening and recognising symbols rather than writing?",
+    "Is there stroke-order tracing so the child gets used to the shapes first?",
+    "Are blending and tones practised separately and in order?",
+    "Does it automatically bring back symbols that are not yet solid?",
+    "Are there ads, in-app purchase pop-ups or a sign-in? For little kids, ideally none"
+   ],
+   "steps": [
+    "Play listening and matching with your child: hear a sound, find the right symbol.",
+    "Practise only a few minutes a day and stop when your child wants to, so it stays fun.",
+    "Once more symbols are familiar, trace them with a finger in stroke order.",
+    "For pencil practice, print learned or missed symbols as worksheets.",
+    "Move to blending once the symbols are solid, and practise tones last."
+   ],
+   "rows": [
+    [
+     "Age 3–4, newly interested",
+     "Does it start with listening and matching?",
+     "Young children first link sounds to symbols"
+    ],
+    [
+     "Cannot hold a pencil steadily yet",
+     "Can they trace with a finger first?",
+     "Learn stroke order before neat writing"
+    ],
+    [
+     "Child plays alone",
+     "Any ads, in-app purchases or external links?",
+     "Avoid distractions and accidental taps"
+    ]
+   ],
+   "fits": "Lumi Bopomofo Pro suits families who want a preschooler to start zhuyin through play: from listening and recognising symbols in the feeding match and zhuyin fishing games to magic tracing, the sound train and the tone roller coaster, covering all 37 symbols in order, with a parent area for progress and printable worksheets. One purchase unlocks all content, with no ads, no in-app purchases, no sign-in and no internet needed; it supports iPhone and iPad and works for the whole family.",
+   "faq": [
+    [
+     "What age is best for starting zhuyin?",
+     "Every child is different. If your child is interested and enjoys listening games, you can start with recognising symbols and add writing and blending later."
+    ],
+    [
+     "Should toddlers learn to write zhuyin first?",
+     "No. Hearing and recognising come first, then finger tracing for stroke order; pencil writing can wait."
+    ],
+    [
+     "What should I check in a zhuyin app for young children?",
+     "Look for ads, in-app purchase pop-ups, external links or sign-in. Little children often tap on their own, so the fewer distractions the better."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "lumiletters",
+  "locale": "ja",
+  "market": "JP",
+  "term": "アルファベット 書き方 子供",
+  "rank": null,
+  "slug": "kids-alphabet-writing-japan-capitals-or-lowercase-first-stroke-order",
+  "loc": {
+   "title": "子どものアルファベットの書き方：大文字と小文字どちらから？書き順と練習の進め方",
+   "meta": "アルファベットを書く練習は、なぞる前に文字の名前と音を聞くと定着しやすくなります。大文字と小文字の順番、書き順の考え方、画面と紙の練習の組み合わせ方をまとめました。",
+   "h1": "子どものアルファベットの書き方：聞いて、なぞって、紙で書く",
+   "lead": "「アルファベットを書かせたいけれど、大文字からか小文字からか、書き順もよく分からない」という保護者は少なくありません。書き方の練習は、いきなりノートに書くより、文字を聞いて知り、ガイドに沿ってなぞる段階を挟むとスムーズです。",
+   "answer": "子どもにアルファベットの書き方を教えるときは、まず文字の名前と音を聞かせ、次に大文字、慣れたら同じ文字の小文字を、書き始めの位置と書き順に沿ってなぞらせます。画面で指なぞりに慣れたら、練習した文字を紙に印刷して鉛筆でもう一度書くと、形が定着しやすくなります。1回数分、1日数文字で十分です。",
+   "paras": [
+    "大文字は直線が多く形が安定しているので、最初の数文字は大文字から入る家庭が多いです。小文字は b と d、p と q のように向きがまぎらわしい文字があるので、同じ文字の大文字に慣れてから、ペアで練習すると混乱しにくくなります。Lumi レター Lite では、文字の名前と音を聞いてから、大文字と小文字を書き順ガイドに沿ってなぞります。",
+    "書き方で大事なのは、どこから書き始めて、どちらへ線を引くかです。十字のガイド線があると、小さな子どもでも文字の高さや中心をつかみやすくなります。きれいに書けなくても、書き始めの位置と線の順番が合っていれば十分。形はくり返すうちに整っていきます。",
+    "画面で慣れたら紙へ移します。Lumi レター Lite では、購入しなくても文字 A のすべての遊びと最初の星の冒険が遊べます。一回の購入で 26 文字すべての大文字と小文字に加えて、その日に練習した文字となぞり書きのマスが入った PDF 学習プリントのワンタップ書き出しが解放され、印刷して鉛筆で書く練習につなげられます。"
+   ],
+   "look": [
+    "なぞる前に、文字の名前と音を聞けるか",
+    "大文字と小文字の両方を書き順ガイドに沿ってなぞれるか",
+    "十字のガイド線など、文字の位置をつかむ手がかりがあるか",
+    "画面の練習を紙のプリントにつなげられるか",
+    "広告がなく、子どもが一人で触っても安心か"
+   ],
+   "steps": [
+    "文字の名前と音を聞いて、どの文字を書くか知ります。",
+    "大文字を書き始めの位置から書き順どおりに指でなぞります。",
+    "慣れたら同じ文字の小文字をなぞり、大文字とペアで覚えます。",
+    "b と d のようにまぎらわしい文字は、書き始めの位置だけを確認します。",
+    "購入後の機能として、練習した文字をプリントに書き出し、紙に鉛筆で書きます。"
+   ],
+   "rows": [
+    [
+     "はじめての書き方",
+     "大文字から入れるか",
+     "直線が多く形が安定している"
+    ],
+    [
+     "b と d、p と q",
+     "書き始めの位置を確認できるか",
+     "向きの混乱は起筆で防ぎやすい"
+    ],
+    [
+     "鉛筆で書きたい",
+     "練習した文字を印刷できるか",
+     "画面と紙をつなげると定着しやすい"
+    ]
+   ],
+   "fits": "Lumi レター Lite は、3〜7歳くらいの子どもにアルファベットの書き方を家で教えたい保護者に向いています。文字の名前と音を聞いてから、大文字と小文字を書き順ガイドと十字のガイド線に沿ってなぞり、音を聞いて文字を選ぶ遊びで音と形をつなげます。広告なし、オフラインで遊べ、購入の入り口は保護者ゲートの奥にあります。",
+   "faq": [
+    [
+     "アルファベットは大文字と小文字、どちらから書かせるべき？",
+     "最初の数文字は形が安定した大文字からが入りやすいです。慣れたら同じ文字の小文字をペアで練習しましょう。"
+    ],
+    [
+     "書き順は気にしたほうがいい？",
+     "書き始めの位置と線の順番が合っていると、b と d のような向きの混乱を防ぎやすくなります。きれいさは後から整います。"
+    ],
+    [
+     "何歳から書く練習を始められる？",
+     "子どもによって違います。鉛筆がまだ難しければ、指でなぞる練習から始めて、慣れてから紙に移ると無理がありません。"
+    ]
+   ]
+  },
+  "en": {
+   "title": "How kids learn to write the alphabet: capitals or lowercase first, and stroke order",
+   "meta": "Alphabet writing sticks better when children hear each letter's name and sound before tracing. Which comes first, capitals or lowercase, how to think about stroke order, and how to combine screen and paper practice.",
+   "h1": "How kids learn to write the alphabet: hear it, trace it, write it on paper",
+   "lead": "Many parents want their child to start writing the alphabet but are unsure whether to begin with capitals or lowercase, or what the stroke order is. Writing goes more smoothly when there is a step between knowing the letter by sound and tracing it along a guide, rather than jumping straight into a notebook.",
+   "answer": "When teaching a child to write the alphabet, first let them hear the letter's name and sound, then trace the capital, and once that is familiar the lowercase of the same letter, following the starting point and stroke order. After finger tracing on screen feels easy, print the letters practised and write them again with a pencil so the shapes stick. A few minutes and a few letters a day are enough.",
+   "paras": [
+    "Capitals have more straight lines and stable shapes, so many families start the first few letters with capitals. Lowercase has confusable pairs such as b and d or p and q, so practising each lowercase letter after its capital, as a pair, reduces mix-ups. In Lumi Letters Lite, children hear the letter's name and sound, then trace capitals and lowercase along a stroke-order guide.",
+    "What matters in writing is where to start and which way to draw. A cross-shaped guide line helps small children find the height and centre of a letter. Neatness is not the goal yet; if the starting point and stroke order are right, the shape improves with repetition.",
+    "Once screen tracing is comfortable, move to paper. Lumi Letters can export a PDF worksheet in one tap with the letters practised that day and tracing boxes, so you can print it and continue with a pencil. Without a purchase, all the games for the letter A and the first star adventure are playable; one purchase opens all 26 letters in capitals and lowercase."
+   ],
+   "look": [
+    "Can the child hear the letter's name and sound before tracing?",
+    "Can both capitals and lowercase be traced along a stroke-order guide?",
+    "Is there a cue, such as a cross guide line, for placing the letter?",
+    "Can screen practice be carried over to a paper worksheet?",
+    "Is it ad-free and safe for a child to use alone?"
+   ],
+   "steps": [
+    "Hear the letter's name and sound to know which letter to write.",
+    "Trace the capital with a finger from its starting point in stroke order.",
+    "Once familiar, trace the lowercase of the same letter and learn them as a pair.",
+    "For confusable letters such as b and d, check only the starting point.",
+    "Export the practised letters to a worksheet and write them on paper with a pencil."
+   ],
+   "rows": [
+    [
+     "First writing practice",
+     "Can you start with capitals?",
+     "Straight lines and stable shapes"
+    ],
+    [
+     "b and d, p and q",
+     "Can the starting point be checked?",
+     "Starting points prevent direction mix-ups"
+    ],
+    [
+     "Wants to use a pencil",
+     "Can practised letters be printed?",
+     "Linking screen and paper helps it stick"
+    ]
+   ],
+   "fits": "Lumi Letters Lite suits parents who want to teach children aged about 3 to 7 how to write the alphabet at home. Children hear each letter's name and sound, trace capitals and lowercase along a stroke-order guide and cross guide lines, and link sounds to shapes in a listen-and-tap game. It is ad-free, playable offline, and purchases sit behind a parental gate.",
+   "faq": [
+    [
+     "Should kids write capitals or lowercase first?",
+     "Capitals, with their stable shapes, are an easy start for the first few letters. Once familiar, practise the lowercase of the same letter as a pair."
+    ],
+    [
+     "Does stroke order matter?",
+     "When the starting point and order are right, direction mix-ups such as b and d are easier to avoid. Neatness comes later."
+    ],
+    [
+     "At what age can writing practice start?",
+     "It depends on the child. If a pencil is still hard, start with finger tracing and move to paper once it feels easy."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "lumiletterspro",
+  "locale": "zh-Hant",
+  "market": "TW",
+  "term": "自然發音",
+  "rank": null,
+  "paid_context": "pay_once",
+  "slug": "what-is-phonics-vs-memorizing-abc-four-step-home-order-pay-once",
+  "loc": {
+   "title": "自然發音是什麼？和背 ABC 差在哪，在家照四個步驟練，一次買斷 App 怎麼選",
+   "meta": "自然發音（Phonics）是學字母代表的「音」，不是只背字母名。整理在家從字母音、開頭音、結尾音到中間音的練習順序，以及挑選無訂閱、無廣告自然發音 App 的重點。",
+   "h1": "自然發音：從「背字母名」走到「聽得出字母音」",
+   "lead": "孩子 ABC 唱得很熟，看到 cat 卻念不出來，這是很多家長開始找自然發音的原因。字母名是「A 叫 ei」，自然發音學的是「a 在 cat 裡發什麼音」；兩件事不一樣，順序也有講究。",
+   "answer": "自然發音（Phonics）是讓孩子把字母和它代表的音連起來，進而聽音拼讀單字。在家可以照四步走：先分清每個字母的「字母名」與「字母音」，再練聽出單字的開頭音，接著是結尾音，最後才是最難的中間音，熟了之後看圖拼讀。每天一小段，比一次練很久有效。",
+   "paras": [
+    "背 ABC 只學到字母的名字，但讀單字需要的是字母的音。所以自然發音的第一步，是讓孩子同時聽到「字母名」和「字母音」，知道 b 叫 bee、發 /b/。Lumi 字母星球 Pro 會先讓孩子聽字母名與字母音，再進到開頭音、結尾音、中間音，最後看圖拼讀，這也是英語系幼兒園常見的自然發音教學順序。",
+    "為什麼中間音放最後？因為開頭和結尾的音最容易聽出來，夾在中間的母音最難。孩子能從 cat、cup、car 聽出相同的開頭 /k/，再從 cat、hat 聽出相同結尾，最後才分辨 cat 和 cut 中間不同的音。App 裡 14 顆星球、12 種題型循序漸進，包括聽音選字母、看圖找開頭與結尾音、大小寫配對、補字母等。",
+    "聽音之外，也要讓「音」和「形」連起來。字母挑戰是聽聲音選字母，ABC 字母樂園則跟著真實筆順與十字格輔助線描寫大小寫。家長專區把表現分成字母認讀、字母順序、語音覺識、看圖拼讀四項能力，也能一鍵匯出 PDF 今日學習單在紙上再練。Pro 版一次買斷，沒有訂閱、沒有自動續扣、完全無廣告。"
+   ],
+   "look": [
+    "是否同時教「字母名」與「字母音」，不只唱 ABC？",
+    "是否依開頭音、結尾音、中間音的難度循序練習？",
+    "有沒有看圖拼讀，把音組成單字？",
+    "家長能不能看到語音覺識等能力的進步？",
+    "是不是一次買斷、沒有訂閱與廣告？"
+   ],
+   "steps": [
+    "讓孩子聽每個字母的字母名和字母音，分清兩者。",
+    "用同一個開頭音的單字（cat、cup、car）練聽開頭音。",
+    "開頭音熟了，再練聽相同的結尾音。",
+    "最後練最難的中間音，分辨像 cat 和 cut 的差別。",
+    "看圖拼讀，並用學習單把練過的字母寫在紙上。"
+   ],
+   "rows": [
+    [
+     "ABC 會唱、單字不會念",
+     "有沒有教字母音？",
+     "讀單字靠的是音，不是字母名"
+    ],
+    [
+     "分不出中間音",
+     "是否把中間音放到最後？",
+     "母音夾在中間最難聽出"
+    ],
+    [
+     "想看孩子進步在哪",
+     "有沒有分項能力紀錄？",
+     "知道卡在哪一步才好調整"
+    ]
+   ],
+   "fits": "Lumi 字母星球 Pro 適合想在家帶孩子從 ABC 走到自然發音的家長：先聽字母名與字母音，再練開頭、結尾、中間音與看圖拼讀，14 顆星球、12 種題型循序漸進，還能描寫大小寫並列印每日學習單。一次買斷，沒有訂閱、沒有自動續扣、無廣告、無誘導內購，不收集個人資料、可離線使用，一次購買全家通用。",
+   "faq": [
+    [
+     "自然發音和 KK 音標有什麼不同？",
+     "自然發音是直接從字母聽出音、拼出單字；音標是另外一套標音符號。幼兒階段多半先從自然發音開始。"
+    ],
+    [
+     "幾歲可以開始學自然發音？",
+     "因孩子而異。會唱 ABC、認得一些字母後，就可以從字母音和開頭音慢慢開始。"
+    ],
+    [
+     "為什麼孩子聽不出中間的音？",
+     "中間的母音本來就最難聽出。先把開頭音和結尾音練熟，中間音會比較容易。"
+    ]
+   ]
+  },
+  "en": {
+   "title": "What is phonics? How it differs from memorising ABC, a four-step home order, and choosing a pay-once app",
+   "meta": "Phonics is learning the sounds letters stand for, not just their names. A home practice order from letter sounds to first, last and middle sounds, plus what to look for in a phonics app with no subscription and no ads.",
+   "h1": "Phonics: from memorising letter names to hearing letter sounds",
+   "lead": "A child can sing the ABC song perfectly yet cannot read cat, which is why many parents start looking into phonics. A letter's name is \"A is ay\"; phonics is \"what sound a makes in cat\". They are different things, and the order matters.",
+   "answer": "Phonics helps children connect letters with the sounds they stand for so they can hear and blend words. At home, go in four steps: first tell each letter's name from its sound, then practise hearing the first sound of a word, then the last sound, and finally the hardest one, the middle sound, followed by reading words from pictures. A short session every day works better than one long one.",
+   "paras": [
+    "Memorising ABC teaches only letter names, but reading words needs letter sounds. So the first step of phonics is hearing both the letter name and the letter sound, knowing that b is called bee and says /b/. Lumi Letters Pro starts with letter names and sounds, then moves to first, last and middle sounds and finally reading from pictures, the order commonly used in English-speaking preschools.",
+    "Why do middle sounds come last? First and last sounds are easiest to hear; the vowel in the middle is hardest. A child can hear the shared first sound /k/ in cat, cup and car, then the shared ending in cat and hat, and only later tell the different middle sounds of cat and cut. The app's 14 planets and 12 question types build up step by step, including listening and choosing letters, finding first and last sounds from pictures, matching capitals and lowercase, and filling missing letters.",
+    "Beyond listening, sound and shape need to connect. The letter challenge asks children to pick a letter after hearing a sound, and the ABC letter park traces capitals and lowercase with real stroke order and cross guide lines. The parent area splits progress into four skills, letter recognition, letter order, phonemic awareness and picture reading, and can export a daily PDF worksheet for paper practice. The Pro version is a one-time purchase with no subscription, no auto-renewal and no ads."
+   ],
+   "look": [
+    "Does it teach both letter names and letter sounds, not just the ABC song?",
+    "Does it build from first to last to middle sounds by difficulty?",
+    "Is there picture reading that blends sounds into words?",
+    "Can parents see progress in skills such as phonemic awareness?",
+    "Is it a one-time purchase with no subscription and no ads?"
+   ],
+   "steps": [
+    "Let your child hear each letter's name and sound and tell them apart.",
+    "Practise first sounds with words that share one (cat, cup, car).",
+    "Once first sounds are solid, practise hearing shared last sounds.",
+    "Practise the hardest, middle sounds last, such as the difference between cat and cut.",
+    "Read words from pictures, and write practised letters on paper with a worksheet."
+   ],
+   "rows": [
+    [
+     "Sings ABC, cannot read words",
+     "Does it teach letter sounds?",
+     "Reading relies on sounds, not letter names"
+    ],
+    [
+     "Cannot hear middle sounds",
+     "Are middle sounds saved for last?",
+     "A vowel in the middle is hardest to hear"
+    ],
+    [
+     "Wants to see where progress is",
+     "Are skills tracked separately?",
+     "Knowing the stuck step helps you adjust"
+    ]
+   ],
+   "fits": "Lumi Letters Pro suits parents who want to take a child from ABC to phonics at home: letter names and sounds first, then first, last and middle sounds and picture reading across 14 planets and 12 question types, plus tracing capitals and lowercase and printing a daily worksheet. It is a one-time purchase with no subscription, no auto-renewal, no ads and no pushy in-app purchases; it collects no personal data, works offline, and one purchase covers the whole family.",
+   "faq": [
+    [
+     "How is phonics different from phonetic symbols such as KK?",
+     "Phonics reads sounds straight from letters to blend words; phonetic symbols are a separate notation. Young children usually start with phonics."
+    ],
+    [
+     "At what age can phonics start?",
+     "It depends on the child. Once they can sing ABC and recognise some letters, you can start slowly with letter sounds and first sounds."
+    ],
+    [
+     "Why can't my child hear the middle sound?",
+     "The vowel in the middle is naturally the hardest to hear. Get first and last sounds solid first, and middle sounds become easier."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "lumimath",
+  "locale": "vi",
+  "market": "VN",
+  "term": "toán lớp 1",
+  "rank": null,
+  "slug": "grade-1-math-vietnam-readiness-check-what-the-year-covers",
+  "loc": {
+   "title": "Toán lớp 1: bé đã sẵn sàng chưa? Bài kiểm tra 5 phút tại nhà trước ngày khai giảng",
+   "meta": "Toán lớp 1 cả năm học những gì, và bé cần vững nền tảng nào trước khi vào lớp. Sáu câu hỏi bố mẹ tự kiểm tra trong 5 phút, kèm cách bù phần bé còn hổng.",
+   "h1": "Toán lớp 1: kiểm tra nhanh xem bé đã sẵn sàng chưa",
+   "lead": "Nhiều bố mẹ lo bé vào lớp 1 sẽ theo không kịp môn toán, rồi cho bé làm thật nhiều phiếu bài tập. Thật ra điều quan trọng hơn là biết bé đang hổng ở đâu. Một bài kiểm tra ngắn tại nhà cho bạn câu trả lời rõ ràng hơn mười trang bài tập.",
+   "answer": "Toán lớp 1 xoay quanh số đến 100, cộng và trừ, so sánh số, nhận biết hình và xem giờ. Trước khi vào lớp, bé chỉ cần vững ba nền tảng: đếm đúng số lượng đồ vật, biết số nào lớn hơn, và hiểu một số có thể tách thành hai phần (5 gồm 2 và 3). Nếu bé làm được ba việc này, phần còn lại sẽ học trên lớp.",
+   "paras": [
+    "Lớp 1 không đòi hỏi bé tính nhanh. Điều cô giáo cần là bé hiểu con số đại diện cho bao nhiêu đồ vật. Một bé đọc thuộc 1 đến 100 nhưng đếm năm cái kẹo lại ra sáu thì vẫn chưa sẵn sàng; ngược lại, một bé đếm chậm nhưng chính xác sẽ theo kịp rất nhanh.",
+    "Nền tảng thứ hai là so sánh: nhìn hai nhóm đồ vật và nói được nhóm nào nhiều hơn, rồi chuyển sang so sánh hai con số. Nền tảng thứ ba là tách – gộp: biết 5 có thể là 1 và 4, 2 và 3. Đây chính là cơ sở của phép cộng, trừ ở lớp 1, nên bé hiểu được phần này thì không cần học thuộc lòng bảng cộng.",
+    "Kiểm tra bằng đồ vật thật trong nhà, không cần giấy bút: thìa, hạt, đồ chơi. Mỗi câu chỉ hỏi một lần, không gợi ý, ghi lại câu nào bé lúng túng. Phần lúng túng đó là nơi bạn luyện trong vài tuần còn lại trước khai giảng.",
+    "Lumi Math Planet dùng câu hỏi bằng hình và đọc to từng câu, nên bé chưa biết đọc vẫn tự làm được. Bố mẹ xem tiến bộ ở năm nhóm kỹ năng để thấy ngay phần nào còn yếu, cho bé luyện riêng phần đó, và in phiếu bài tập kèm đáp án để bé làm trên giấy. Bé bắt đầu mà không cần mua với hành tinh đầu tiên và thử thách hằng ngày; một lần mua trong ứng dụng duy nhất mở khóa toàn bộ, không thuê bao."
+   ],
+   "look": [
+    "Câu hỏi có hình ảnh và được đọc to cho bé chưa biết đọc không?",
+    "Bố mẹ có thấy rõ bé yếu ở nhóm kỹ năng nào không?",
+    "Có thể cho bé luyện riêng phần còn yếu không?",
+    "Có in được phiếu bài tập kèm đáp án để làm trên giấy không?",
+    "Không quảng cáo, không cần tài khoản, dùng được khi ngoại tuyến?"
+   ],
+   "steps": [
+    "Đặt 7 hạt đậu lên bàn, nhờ bé đếm và chỉ từng hạt.",
+    "Xếp 4 thìa và 6 thìa thành hai nhóm, hỏi bé nhóm nào nhiều hơn.",
+    "Viết hai số 8 và 5, hỏi bé số nào lớn hơn.",
+    "Cho bé 5 đồ chơi, hỏi bé có mấy cách chia vào hai tay.",
+    "Đọc một số bất kỳ đến 20, nhờ bé lấy đúng chừng ấy đồ vật.",
+    "Hỏi bé bây giờ là mấy giờ trên đồng hồ kim lúc giờ đúng.",
+    "Ghi lại câu bé lúng túng và luyện riêng phần đó mỗi ngày một chút."
+   ],
+   "rows": [
+    [
+     "Đếm số lượng",
+     "Bé đếm 7 hạt có ra đúng 7 không?",
+     "Đọc thuộc số khác với hiểu số"
+    ],
+    [
+     "So sánh",
+     "Bé có biết nhóm nào nhiều hơn, số nào lớn hơn?",
+     "Là bước đệm cho dấu lớn, bé, bằng"
+    ],
+    [
+     "Tách – gộp",
+     "5 gồm mấy và mấy?",
+     "Nền tảng của cộng, trừ ở lớp 1"
+    ],
+    [
+     "Xem giờ",
+     "Bé đọc được giờ đúng trên đồng hồ kim?",
+     "Lớp 1 bắt đầu làm quen với đồng hồ"
+    ],
+    [
+     "Nhận biết hình",
+     "Bé gọi đúng tên hình vuông, tròn, tam giác?",
+     "Thường gặp ngay từ học kỳ đầu"
+    ]
+   ],
+   "fits": "Lumi Math Planet hợp với gia đình có bé sắp vào lớp 1 muốn biết bé đang vững và hổng ở đâu: 46 dạng câu hỏi bằng hình, câu nào cũng được đọc to, từ đếm số, cộng, trừ đến xem đồng hồ và tiền. Bố mẹ theo dõi năm nhóm kỹ năng, cho bé luyện phần còn yếu và in phiếu bài tập kèm đáp án. Không quảng cáo, không cần tài khoản, dùng được khi ngoại tuyến; bé bắt đầu mà không cần mua với hành tinh đầu tiên và thử thách hằng ngày.",
+   "faq": [
+    [
+     "Bé chưa thuộc bảng cộng có sao không?",
+     "Không sao. Lớp 1 học cộng, trừ dựa trên tách – gộp; bé hiểu 5 gồm 2 và 3 quan trọng hơn thuộc lòng."
+    ],
+    [
+     "Có nên cho bé học trước chương trình lớp 1?",
+     "Không cần học trước cả chương trình. Hãy kiểm tra và bù ba nền tảng: đếm, so sánh, tách – gộp."
+    ],
+    [
+     "Bé chưa biết đọc thì luyện toán thế nào?",
+     "Dùng đồ vật thật và câu hỏi bằng hình được đọc to, để bé tập trung vào con số chứ không bị chữ cản trở."
+    ],
+    [
+     "Bao lâu thì bé sẵn sàng?",
+     "Mỗi bé mỗi khác. Luyện ngắn mỗi ngày phần bé còn lúng túng, rồi kiểm tra lại sau vài tuần."
+    ]
+   ]
+  },
+  "en": {
+   "title": "Grade 1 math: is your child ready? A five-minute home check before school starts",
+   "meta": "What grade 1 math covers over the year, and which foundations your child needs before starting. Six questions parents can check at home in five minutes, plus how to fill the gaps.",
+   "h1": "Grade 1 math: a quick check of whether your child is ready",
+   "lead": "Many parents worry their child will fall behind in grade 1 math and hand over stacks of worksheets. What matters more is knowing where the gaps are. A short check at home gives a clearer answer than ten pages of exercises.",
+   "answer": "Grade 1 math centres on numbers to 100, addition and subtraction, comparing numbers, recognising shapes and telling the time. Before starting, a child only needs three solid foundations: counting objects correctly, knowing which number is bigger, and understanding that a number splits into two parts (5 is 2 and 3). If your child can do these three things, the rest is learned in class.",
+   "paras": [
+    "Grade 1 does not require fast calculation. What the teacher needs is a child who understands how many objects a number stands for. A child who recites 1 to 100 but counts five sweets as six is not ready yet; a child who counts slowly but accurately catches up quickly.",
+    "The second foundation is comparing: looking at two groups and saying which has more, then moving on to comparing two numbers. The third is splitting and combining: knowing that 5 can be 1 and 4, or 2 and 3. This is the basis of grade 1 addition and subtraction, so a child who understands it does not need to memorise addition tables.",
+    "Check with real objects at home, no pen or paper needed: spoons, beans, toys. Ask each question once, without hints, and note where your child hesitates. Those hesitations are what to practise in the weeks before school starts.",
+    "Lumi Math Planet uses picture questions and reads every question aloud, so children who cannot read yet can work on their own. Parents see progress across five skill groups to spot weak areas at once, let the child practise just those, and print worksheets with answers for paper practice."
+   ],
+   "look": [
+    "Are questions shown with pictures and read aloud for pre-readers?",
+    "Can parents clearly see which skill group is weak?",
+    "Can the child practise just the weak areas?",
+    "Can you print worksheets with answers for paper practice?",
+    "No ads, no account, and usable offline?"
+   ],
+   "steps": [
+    "Put 7 beans on the table and ask your child to count them, pointing at each.",
+    "Make two groups of 4 and 6 spoons and ask which group has more.",
+    "Write 8 and 5 and ask which number is bigger.",
+    "Give your child 5 toys and ask how many ways they can split them between two hands.",
+    "Say any number up to 20 and ask your child to take exactly that many objects.",
+    "Ask what time it is on an analogue clock showing a full hour.",
+    "Note where your child hesitates and practise that a little every day."
+   ],
+   "rows": [
+    [
+     "Counting objects",
+     "Does counting 7 beans give exactly 7?",
+     "Reciting numbers is not understanding them"
+    ],
+    [
+     "Comparing",
+     "Which group has more, which number is bigger?",
+     "A stepping stone to greater than, less than, equal"
+    ],
+    [
+     "Splitting and combining",
+     "5 is how many and how many?",
+     "The basis of grade 1 addition and subtraction"
+    ],
+    [
+     "Telling the time",
+     "Can your child read a full hour on an analogue clock?",
+     "Grade 1 starts working with clocks"
+    ],
+    [
+     "Shapes",
+     "Can your child name square, circle and triangle?",
+     "Usually met early in the first term"
+    ]
+   ],
+   "fits": "Lumi Math Planet suits families whose child is about to start grade 1 and who want to know where the child is solid and where the gaps are: 46 picture question types, each read aloud, from counting, addition and subtraction to clocks and money. Parents track five skill groups, let the child practise weak areas and print worksheets with answers. No ads, no account, usable offline; your child can start without buying anything, with the first planet and the daily challenge.",
+   "faq": [
+    [
+     "Is it a problem if my child has not memorised addition facts?",
+     "No. Grade 1 builds addition and subtraction on splitting and combining; understanding that 5 is 2 and 3 matters more than memorising."
+    ],
+    [
+     "Should my child learn the grade 1 curriculum in advance?",
+     "There is no need to learn the whole curriculum ahead. Check and fill three foundations: counting, comparing, splitting and combining."
+    ],
+    [
+     "How can a child who cannot read practise math?",
+     "Use real objects and picture questions read aloud, so the child focuses on numbers rather than being held back by words."
+    ],
+    [
+     "How long until my child is ready?",
+     "Every child differs. Practise the hesitant areas briefly each day, then check again after a few weeks."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "lumimathpro",
+  "locale": "zh-Hant",
+  "market": "TW",
+  "term": "一年級 數學 練習",
+  "rank": null,
+  "slug": "grade-1-math-practice-taiwan-weekly-plan-printable-weak-spots-pay-once",
+  "paid_context": "pay_once",
+  "loc": {
+   "title": "一年級數學練習怎麼排？一週 5 天、每天 15 分鐘的家庭練習表（附可列印學習單）",
+   "meta": "一年級數學回家要練什麼、練多久？照「計算、思考題、弱項、紙筆」四種練習輪流排的一週練習表，以及挑選一次買斷、無廣告練習 App 時要看的重點。",
+   "h1": "一年級數學練習：一週練習表與每天 15 分鐘的排法",
+   "lead": "孩子上一年級後，很多家長的做法是買一本評量、每天寫兩頁。寫了一個月，孩子越寫越慢、錯的總是同一種題，家長也不知道該從哪裡補。練習不在多，而在每天練對的那一塊。",
+   "answer": "一年級數學每天練 15 分鐘就夠，重點是輪流練四種東西：計算（加減與位值）、思考題（找規律、比大小、應用題）、孩子最常錯的題型，以及每週一次離開螢幕的紙筆練習。每天只練一種，週末看一次哪一類分數最低，下週多排一天給它。",
+   "paras": [
+    "一年級常見的單元包括 100 以內的數與位值、加減法（含進位與退位）、比長短、認識形狀，以及看時鐘。家長最容易只盯計算，但卡住孩子的常常是應用題：題目一長、字一多，孩子就不知道要加還是要減。所以練習表裡一定要有思考題的日子。",
+    "每天 15 分鐘比週末一次寫一小時有效。一年級孩子專注的時間短，寫太久反而把錯誤練熟。固定時段（例如晚餐後）、固定長度，孩子比較不會討價還價。",
+    "補弱項時，不是把錯的那一題重寫一次，而是同一種題型換新數字再練幾題。例如孩子退位減法常錯，就連續幾天各練幾題不同數字的退位減法，直到正確率穩定。",
+    "Lumi 數學星球的「弱項練習」會自動把孩子最常錯的題型集中起來，換上新數字再練；五大能力分數讓你一眼看出強項與待加強。家長專區可依孩子目前程度一鍵產生 20 題練習卷（附解答），列印或存成 PDF，正好當每週的紙筆日。題目看圖就懂、全程語音念題，還不太識字的孩子也能自己練。"
+   ],
+   "look": [
+    "能不能自動找出孩子最常錯的題型，換新數字再練？",
+    "除了計算，有沒有找規律、邏輯推理、應用題這類思考題？",
+    "能不能依孩子程度產生附解答的練習卷並列印？",
+    "有沒有看得懂的能力分數或學習報告，知道下週該補哪裡？",
+    "一次購買就全部開放，沒有廣告、沒有內購、沒有訂閱？"
+   ],
+   "steps": [
+    "週一：計算日，練加減與位值，15 分鐘。",
+    "週二：思考題日，練找規律、比大小或應用題。",
+    "週三：弱項日，只練孩子最常錯的那一種題型。",
+    "週四：計算日，換成進位或退位的題目。",
+    "週五：紙筆日，列印一份 20 題練習卷，寫完對答案。",
+    "週末：看一次各項能力分數，把下週多一天排給分數最低的那一類。"
+   ],
+   "rows": [
+    [
+     "計算",
+     "加減、位值、進退位",
+     "最常考，但不是唯一"
+    ],
+    [
+     "思考題",
+     "找規律、比大小、應用題",
+     "題目一長最容易卡住"
+    ],
+    [
+     "弱項",
+     "最常錯的同一種題型",
+     "換新數字再練，不是重寫原題"
+    ],
+    [
+     "紙筆",
+     "每週一次練習卷",
+     "學校考試還是寫在紙上"
+    ],
+    [
+     "檢查",
+     "每週看一次能力分數",
+     "決定下週多練哪一類"
+    ]
+   ],
+   "fits": "Lumi 數學星球完整版適合一年級前後、想每天在家短時間練數學的家庭：46 種題型涵蓋加減乘除、位值與進退位，以及找規律、邏輯推理、應用題、幾何空間；「弱項練習」自動集中最常錯的題型，五大能力分數與學習報告 PDF 讓你知道下週補哪裡，家長專區一鍵產生 20 題附解答練習卷可列印。所有內容都已包含，無訂閱、無廣告、無內購，不蒐集個人資料。",
+   "faq": [
+    [
+     "一年級數學每天要練多久？",
+     "15 分鐘左右就夠。固定時段、固定長度，比週末一次寫很久有效。"
+    ],
+    [
+     "孩子計算很快，應用題卻常錯怎麼辦？",
+     "把思考題排進每週練習表，先讓孩子說出題目在問什麼，再決定用加法還是減法。"
+    ],
+    [
+     "要不要每天寫評量？",
+     "不一定。每週一天紙筆練習就夠，其他天輪流練計算、思考題與弱項。"
+    ],
+    [
+     "Lumi 數學星球完整版要訂閱嗎？",
+     "不用。所有內容都已包含，沒有訂閱、沒有廣告、也沒有內購。"
+    ]
+   ]
+  },
+  "en": {
+   "title": "How to plan grade 1 math practice: a five-day, 15-minutes-a-day home schedule (with printable worksheets)",
+   "meta": "What should grade 1 children practise in math at home, and for how long? A weekly plan rotating calculation, thinking problems, weak spots and paper practice, plus what to check in a one-time-purchase, ad-free practice app.",
+   "h1": "Grade 1 math practice: a weekly plan and how to use 15 minutes a day",
+   "lead": "Once children start grade 1, many parents buy a workbook and set two pages a day. A month later the child is slower, keeps getting the same kind of question wrong, and parents do not know where to start. Practice is not about volume; it is about practising the right part each day.",
+   "answer": "Fifteen minutes a day is enough for grade 1 math, as long as you rotate four things: calculation (addition, subtraction and place value), thinking problems (patterns, comparing, word problems), the question types your child gets wrong most, and a weekly paper session away from the screen. Practise one kind per day, check at the weekend which area scores lowest, and give it an extra day next week.",
+   "paras": [
+    "Common grade 1 topics include numbers to 100 and place value, addition and subtraction (including carrying and borrowing), comparing lengths, recognising shapes and reading clocks. Parents tend to watch only calculation, but what often stops children is word problems: once a question gets long and wordy, the child does not know whether to add or subtract. So the plan needs thinking-problem days.",
+    "Fifteen minutes a day works better than an hour at the weekend. Grade 1 children have short attention spans, and long sessions only make mistakes stick. A fixed time (after dinner, say) and a fixed length mean less bargaining.",
+    "Fixing a weak spot does not mean redoing the wrong question; it means practising the same question type with new numbers. If subtraction with borrowing keeps going wrong, practise a few borrowing questions with different numbers on several days until accuracy is steady.",
+    "Lumi Math Pro's weak-spot practice gathers the question types your child gets wrong most and serves them again with new numbers; five skill scores show strengths and areas to work on at a glance. In the parent area, one tap creates a 20-question worksheet (with answers) at your child's current level, to print or save as PDF, which fits the weekly paper day. Questions are picture-based and read aloud, so children who are still learning to read can practise on their own."
+   ],
+   "look": [
+    "Does it automatically find the question types your child gets wrong most and retry them with new numbers?",
+    "Besides calculation, does it include thinking problems such as patterns, logic and word problems?",
+    "Can it generate printable worksheets with answers at your child's level?",
+    "Are there clear skill scores or a learning report showing what to work on next week?",
+    "Does one purchase unlock everything, with no ads, no in-app purchases and no subscription?"
+   ],
+   "steps": [
+    "Monday: calculation day, addition, subtraction and place value, 15 minutes.",
+    "Tuesday: thinking-problem day, patterns, comparing or word problems.",
+    "Wednesday: weak-spot day, only the question type your child gets wrong most.",
+    "Thursday: calculation day, switching to carrying or borrowing questions.",
+    "Friday: paper day, print a 20-question worksheet and check the answers together.",
+    "Weekend: check the skill scores once and give next week's extra day to the lowest area."
+   ],
+   "rows": [
+    [
+     "Calculation",
+     "Addition, subtraction, place value, carrying and borrowing",
+     "Tested most, but not the only skill"
+    ],
+    [
+     "Thinking problems",
+     "Patterns, comparing, word problems",
+     "Long questions are where children get stuck"
+    ],
+    [
+     "Weak spots",
+     "The question type missed most",
+     "Practise with new numbers, not the same question"
+    ],
+    [
+     "Paper",
+     "One worksheet a week",
+     "School tests are still on paper"
+    ],
+    [
+     "Review",
+     "Skill scores once a week",
+     "Decides what to practise more next week"
+    ]
+   ],
+   "fits": "Lumi Math Pro suits families with children around grade 1 who want short daily math practice at home: 46 question types cover the four operations, place value, carrying and borrowing, plus patterns, logic, word problems and geometry; weak-spot practice gathers the most-missed types, five skill scores and a learning report PDF show what to work on next, and the parent area creates printable 20-question worksheets with answers. Everything is included, with no subscription, no ads, no in-app purchases and no personal data collected.",
+   "faq": [
+    [
+     "How long should grade 1 children practise math each day?",
+     "About 15 minutes is enough. A fixed time and length works better than one long weekend session."
+    ],
+    [
+     "My child calculates quickly but gets word problems wrong. What helps?",
+     "Put thinking problems into the weekly plan, and have your child say what the question is asking before choosing addition or subtraction."
+    ],
+    [
+     "Should my child do a workbook every day?",
+     "Not necessarily. One paper day a week is enough; rotate calculation, thinking problems and weak spots on the other days."
+    ],
+    [
+     "Is Lumi Math Pro a subscription?",
+     "No. Everything is included, with no subscription, no ads and no in-app purchases."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "lumimissionpro",
+  "locale": "de-DE",
+  "market": "DE",
+  "term": "abendroutine kinder",
+  "rank": 20,
+  "slug": "abendroutine-kinder-after-kita-fixed-order-questions-pay-once",
+  "paid_context": "pay_once",
+  "loc": {
+   "title": "Abendroutine für Kinder nach der Kita: die richtige Reihenfolge und was beim Trödeln hilft",
+   "meta": "Die häufigsten Fragen zur Abendroutine bei Kindern von drei bis sieben Jahren: welche Reihenfolge, wie lange, was bei Trödeln und Diskussionen hilft, und worauf Sie bei einer werbefreien Routine-App mit Einmalkauf achten.",
+   "h1": "Abendroutine für Kinder: Reihenfolge, Dauer und was beim Trödeln hilft",
+   "lead": "Nach einem langen Kita-Tag sind Kinder müde, und genau dann sollen Abendessen, Aufräumen, Zähneputzen und Schlafanzug klappen. Viele Eltern erklären jeden Abend neu, was als Nächstes kommt. Eine feste Abendroutine nimmt diese Verhandlungen aus dem Abend.",
+   "answer": "Eine Abendroutine für Kinder funktioniert am besten mit vier bis fünf Schritten in immer derselben Reihenfolge, zum Beispiel Abendessen, Aufräumen, Zähneputzen, Schlafanzug, Licht aus. Das Kind sollte jeden Schritt selbst abhaken können und sofort merken, dass er geschafft ist. Fangen Sie früh genug an, damit niemand hetzen muss.",
+   "paras": [
+    "Kinder zwischen drei und sieben Jahren können sich eine lange Liste nicht merken, eine feste Reihenfolge dagegen schon. Wenn jeden Abend dasselbe nach demselben kommt, muss das Kind nicht mehr fragen, was jetzt dran ist, und Sie müssen es nicht mehr ansagen.",
+    "Trödeln ist am Abend selten Trotz, sondern meist Müdigkeit. Hilfreich ist, die Schritte klein und sichtbar zu machen: nicht „mach dich bettfertig“, sondern „Zähne putzen“ als eigener Schritt. Jeder abgehakte Schritt ist ein kleiner Erfolg, und das Kind sieht, wie weit es schon ist.",
+    "Diskussionen entstehen oft, weil die Routine jeden Abend ein bisschen anders ist. Halten Sie Reihenfolge und Start möglichst konstant, auch am Wochenende. Änderungen besprechen Sie tagsüber, nicht mitten in der Routine.",
+    "In Lumi Mission Planet Pro sind Schlafenszeit, Zähneputzen, Aufräumen und Mahlzeiten bereits als Missionen enthalten, und eigene Missionen mit eigenem Symbol lassen sich unbegrenzt ergänzen. Ihr Kind tippt bei jedem geschafften Schritt, und der gewählte Begleiter jubelt sofort. Im Eltern-Dashboard sehen Sie jede Erledigung mit Uhrzeit und einen 7-Tage-Kalender; eine optionale tägliche Erinnerung hilft, rechtzeitig zu starten."
+   ],
+   "look": [
+    "Lassen sich die Schritte an Ihren echten Abend anpassen, mit eigenen Missionen?",
+    "Bekommt das Kind sofort eine Rückmeldung, wenn ein Schritt geschafft ist?",
+    "Sehen Eltern, wann was erledigt wurde, auch über eine Woche?",
+    "Gibt es eine Erinnerung, damit die Routine rechtzeitig beginnt?",
+    "Ein einziger Kauf, ohne Werbung, ohne In-App-Käufe, ohne Abo?"
+   ],
+   "steps": [
+    "Legen Sie vier bis fünf Abendschritte in einer festen Reihenfolge fest.",
+    "Benennen Sie jeden Schritt so, dass das Kind sieht, wann er fertig ist.",
+    "Starten Sie jeden Abend zur gleichen Zeit, mit einer Erinnerung.",
+    "Lassen Sie das Kind jeden Schritt selbst abhaken.",
+    "Loben Sie den geschafften Schritt sofort, nicht erst am Ende des Abends.",
+    "Schauen Sie nach einer Woche, welcher Schritt am häufigsten hängen bleibt."
+   ],
+   "rows": [
+    [
+     "Anzahl der Schritte",
+     "Vier bis fünf",
+     "Mehr Schritte verlängern den Abend"
+    ],
+    [
+     "Reihenfolge",
+     "Jeden Abend gleich",
+     "Das Kind muss nicht mehr fragen"
+    ],
+    [
+     "Rückmeldung",
+     "Sofort nach jedem Schritt",
+     "Müde Kinder brauchen schnelle Erfolge"
+    ],
+    [
+     "Startzeit",
+     "Fest, mit Erinnerung",
+     "Wer spät beginnt, muss hetzen"
+    ],
+    [
+     "Änderungen",
+     "Tagsüber besprechen",
+     "Nicht mitten in der Routine verhandeln"
+    ]
+   ],
+   "fits": "Lumi Mission Planet Pro passt zu Familien mit Kindern von etwa drei bis sieben Jahren, die den Abend nach Kita oder Schule ruhiger gestalten möchten: Schlafenszeit, Zähneputzen, Aufräumen und Mahlzeiten sind als Missionen enthalten, eigene Missionen lassen sich unbegrenzt ergänzen, sechs Begleiter jubeln bei jedem Schritt, und das Eltern-Dashboard zeigt jede Erledigung mit Uhrzeit im 7-Tage-Kalender. Ein einziger Kauf schaltet alles frei, mit Familienfreigabe; keine Werbung, keine In-App-Käufe, kein Abo, kein Konto.",
+   "faq": [
+    [
+     "Wie lange sollte eine Abendroutine dauern?",
+     "So lange, dass niemand hetzen muss. Wichtiger als die Minuten ist, dass Start und Reihenfolge jeden Abend gleich sind."
+    ],
+    [
+     "Was hilft, wenn mein Kind abends trödelt?",
+     "Kleine, sichtbare Schritte und sofortiges Lob für jeden geschafften Schritt. Trödeln am Abend ist meist Müdigkeit."
+    ],
+    [
+     "Ab welchem Alter funktioniert eine Abendroutine?",
+     "Schon mit etwa drei Jahren, wenn die Schritte wenige und klar sind. Lumi Mission Planet Pro ist für Kinder von etwa drei bis sieben Jahren gedacht."
+    ],
+    [
+     "Ist Lumi Mission Planet Pro ein Abo?",
+     "Nein. Ein einziger Kauf schaltet alles frei, mit Familienfreigabe, ohne Werbung und ohne In-App-Käufe."
+    ],
+    [
+     "Werden Daten meines Kindes hochgeladen?",
+     "Nein. Alles bleibt auf Ihrem Gerät; der optionale Spitzname verlässt niemals das Telefon."
+    ]
+   ]
+  },
+  "en": {
+   "title": "An evening routine for kids after daycare: the right order and what helps with dawdling",
+   "meta": "The most common questions about evening routines for children aged three to seven: which order, how long, what helps with dawdling and arguments, and what to look for in an ad-free, one-time-purchase routine app.",
+   "h1": "Evening routine for kids: order, length and what helps with dawdling",
+   "lead": "After a long day at daycare, children are tired, and that is exactly when dinner, tidying, tooth brushing and pyjamas are supposed to happen. Many parents explain what comes next anew every evening. A fixed evening routine takes the negotiating out of the night.",
+   "answer": "An evening routine for kids works best with four to five steps in the same order every night, for example dinner, tidy-up, tooth brushing, pyjamas, lights out. The child should be able to tick off each step and see straight away that it is done. Start early enough that nobody has to rush.",
+   "paras": [
+    "Children aged three to seven cannot remember a long list, but they can remember a fixed order. When the same thing follows the same thing every evening, the child no longer has to ask what is next, and you no longer have to announce it.",
+    "Dawdling in the evening is rarely defiance; it is usually tiredness. It helps to make the steps small and visible: not get ready for bed, but brush teeth as a step of its own. Each ticked step is a small success, and the child sees how far they have come.",
+    "Arguments often start because the routine is a little different each night. Keep the order and the start time as constant as possible, weekends included. Discuss changes during the day, not in the middle of the routine.",
+    "In Lumi Mission Planet Pro, sleep, tooth brushing, tidy-up and meals are already included as missions, and you can add unlimited custom missions with their own icons. Your child taps each finished step, and the chosen buddy cheers at once. The parent dashboard shows every completion with its time and a seven-day calendar; an optional daily reminder helps you start on time."
+   ],
+   "look": [
+    "Can the steps be fitted to your real evening, with custom missions?",
+    "Does the child get instant feedback when a step is done?",
+    "Can parents see what was done when, across a week?",
+    "Is there a reminder so the routine starts on time?",
+    "One purchase, with no ads, no in-app purchases and no subscription?"
+   ],
+   "steps": [
+    "Choose four to five evening steps in a fixed order.",
+    "Name each step so the child can see when it is finished.",
+    "Start at the same time every evening, with a reminder.",
+    "Let the child tick off each step themselves.",
+    "Praise each finished step straight away, not only at the end of the evening.",
+    "After a week, check which step most often gets stuck."
+   ],
+   "rows": [
+    [
+     "Number of steps",
+     "Four to five",
+     "More steps make the evening longer"
+    ],
+    [
+     "Order",
+     "The same every evening",
+     "The child no longer has to ask"
+    ],
+    [
+     "Feedback",
+     "Right after each step",
+     "Tired children need quick wins"
+    ],
+    [
+     "Start time",
+     "Fixed, with a reminder",
+     "Starting late means rushing"
+    ],
+    [
+     "Changes",
+     "Discuss during the day",
+     "Do not negotiate mid-routine"
+    ]
+   ],
+   "fits": "Lumi Mission Planet Pro suits families with children aged about three to seven who want calmer evenings after daycare or school: sleep, tooth brushing, tidy-up and meals are included as missions, unlimited custom missions can be added, six buddies cheer at every step, and the parent dashboard shows each completion with its time in a seven-day calendar. One purchase unlocks everything, with Family Sharing; no ads, no in-app purchases, no subscription, no account.",
+   "faq": [
+    [
+     "How long should an evening routine take?",
+     "Long enough that nobody has to rush. More important than the minutes is that the start and the order are the same every evening."
+    ],
+    [
+     "What helps when my child dawdles in the evening?",
+     "Small, visible steps and instant praise for each finished one. Evening dawdling is usually tiredness."
+    ],
+    [
+     "From what age does an evening routine work?",
+     "From about three, if the steps are few and clear. Lumi Mission Planet Pro is designed for children aged about three to seven."
+    ],
+    [
+     "Is Lumi Mission Planet Pro a subscription?",
+     "No. One purchase unlocks everything, with Family Sharing, no ads and no in-app purchases."
+    ],
+    [
+     "Is my child's data uploaded?",
+     "No. Everything stays on your device; the optional nickname never leaves the phone."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "lumiweather",
+  "locale": "vi",
+  "market": "VN",
+  "term": "thời tiết gia đình",
+  "rank": 5,
+  "slug": "family-weather-weekend-outing-plan-best-time-window-vietnam",
+  "loc": {
+   "title": "Thời tiết cho cả gia đình: lên kế hoạch đi chơi cuối tuần sao cho không bị mưa và nắng gắt",
+   "meta": "Cả nhà định đi chơi cuối tuần nhưng sợ mưa bất chợt hay nắng gắt? Cách xem dự báo 7 ngày, chọn khung giờ ra ngoài và chuẩn bị đồ cho cả gia đình, theo thứ tự từ giữa tuần đến sáng hôm đi.",
+   "h1": "Thời tiết gia đình: lên kế hoạch đi chơi cuối tuần theo dự báo",
+   "lead": "Đi chơi cả nhà khác với một người ra ngoài: có người lớn tuổi, có trẻ nhỏ, có xe chở nhiều đồ, và chỉ cần một cơn mưa chiều là cả chuyến đi đổ bể. Việc xem thời tiết vì thế nên bắt đầu từ giữa tuần, không phải sáng hôm đi.",
+   "answer": "Hãy xem thời tiết theo ba mốc: giữa tuần xem dự báo 7 ngày để chọn ngày đi, tối hôm trước xem dự báo ngày mai để biết có mưa, lạnh hơn hay nóng hơn không, và sáng hôm đi xem biểu đồ theo giờ để chọn khung giờ ít mưa, UV thấp. Chuẩn bị đồ theo dự báo và chia sẻ danh sách cho cả nhà để không ai quên.",
+   "paras": [
+    "Dự báo càng xa càng ít chắc chắn, nên giữa tuần chỉ dùng để chọn giữa thứ Bảy và Chủ nhật, hoặc quyết định đi chơi trong nhà hay ngoài trời. Đừng chốt giờ giấc lúc này.",
+    "Tối hôm trước là lúc chốt kế hoạch. Nếu ngày mai có khả năng mưa vào buổi chiều, dời phần ngoài trời lên buổi sáng; nếu trời nóng hơn, chuẩn bị thêm nước, mũ và kem chống nắng cho cả nhà.",
+    "Sáng hôm đi, nhìn biểu đồ nhiệt độ 24 giờ và chi tiết theo từng giờ để chọn khung giờ ra ngoài. Ở nhiều nơi tại Việt Nam, mùa mưa thường có mưa rào vào buổi chiều, nên đi sớm và về trước giờ mưa thường là lựa chọn an toàn.",
+    "Lumi Thời tiết gom các yếu tố này thành chỉ số ra ngoài từ 0 đến 100, tính từ nhiệt độ cảm nhận, khả năng mưa, UV, gió và bầu trời; chạm vào điểm số để xem từng yếu tố. Ứng dụng cho biết khung giờ lý tưởng để ra ngoài, gợi ý nên mặc gì, có cần ô hay kem chống nắng không, và có danh sách đồ cần mang có thể chia sẻ cho cả nhà. Bạn còn lưu được những nơi hay đến, như nhà ông bà hay công viên, để xem thời tiết ở đó."
+   ],
+   "look": [
+    "Có dự báo 7 ngày để chọn ngày đi chơi không?",
+    "Có biểu đồ theo giờ và gợi ý khung giờ ra ngoài không?",
+    "Có báo trước khi trời sắp mưa hoặc ngày mai lạnh hơn, nóng hơn không?",
+    "Có danh sách đồ cần mang chia sẻ được cho cả nhà không?",
+    "Có lưu được nhiều địa điểm, không cần tài khoản, không quảng cáo?"
+   ],
+   "steps": [
+    "Thứ Tư hoặc thứ Năm: xem dự báo 7 ngày, chọn ngày ít mưa hơn trong cuối tuần.",
+    "Lưu địa điểm định đến để xem thời tiết đúng nơi đó, không chỉ nơi bạn ở.",
+    "Tối hôm trước: xem dự báo ngày mai, chốt đi buổi sáng hay buổi chiều.",
+    "Chuẩn bị đồ theo dự báo: ô hoặc áo mưa, mũ, kem chống nắng, nước uống.",
+    "Chia sẻ danh sách đồ cần mang cho cả nhà để mỗi người tự chuẩn bị.",
+    "Sáng hôm đi: xem biểu đồ theo giờ và chọn khung giờ lý tưởng mà ứng dụng gợi ý."
+   ],
+   "rows": [
+    [
+     "Giữa tuần",
+     "Dự báo 7 ngày",
+     "Chọn ngày, chưa chốt giờ"
+    ],
+    [
+     "Tối hôm trước",
+     "Ngày mai mưa, lạnh hay nóng hơn?",
+     "Chốt buổi sáng hay buổi chiều"
+    ],
+    [
+     "Sáng hôm đi",
+     "Biểu đồ theo giờ, khung giờ lý tưởng",
+     "Tránh mưa chiều và nắng gắt"
+    ],
+    [
+     "Đồ cần mang",
+     "Danh sách chia sẻ cho cả nhà",
+     "Không ai quên ô hay kem chống nắng"
+    ],
+    [
+     "Nơi định đến",
+     "Địa điểm đã lưu",
+     "Thời tiết ở đó có thể khác nhà bạn"
+    ]
+   ],
+   "fits": "Lumi Thời tiết hợp với gia đình hay lên kế hoạch đi chơi cuối tuần, về quê hay ra công viên cùng con: chỉ số ra ngoài từ 0 đến 100 với lý do rõ ràng, khung giờ lý tưởng để ra ngoài, dự báo theo giờ và 7 ngày, báo trước khi sắp mưa, gợi ý nên mặc gì và danh sách đồ cần mang chia sẻ được. Lưu nhiều địa điểm, có tiện ích Màn hình chính và Apple Watch. Không cần tài khoản, không quảng cáo; mở khóa một lần trong ứng dụng để dùng toàn bộ tính năng, không có gói đăng ký.",
+   "faq": [
+    [
+     "Nên xem thời tiết trước chuyến đi bao lâu?",
+     "Xem dự báo 7 ngày từ giữa tuần để chọn ngày, rồi chốt kế hoạch vào tối hôm trước khi dự báo đã chắc hơn."
+    ],
+    [
+     "Mùa mưa có nên đi chơi cuối tuần không?",
+     "Vẫn được, nếu chọn đúng khung giờ. Mưa rào thường đến vào buổi chiều, nên đi sớm và theo dõi báo mưa theo giờ."
+    ],
+    [
+     "Làm sao để cả nhà không quên đồ?",
+     "Chia sẻ danh sách đồ cần mang theo dự báo cho mọi người từ tối hôm trước."
+    ],
+    [
+     "Dự báo có luôn chính xác không?",
+     "Không. Dự báo và gợi ý chỉ mang tính tham khảo; hãy xem lại vào sáng hôm đi."
+    ]
+   ]
+  },
+  "en": {
+   "title": "Weather for the whole family: planning a weekend outing that avoids rain and harsh sun",
+   "meta": "Planning a family weekend outing but worried about sudden rain or harsh sun? How to read the 7-day forecast, pick a time window and pack for everyone, step by step from midweek to the morning you leave.",
+   "h1": "Family weather: planning a weekend outing around the forecast",
+   "lead": "A family outing is different from going out alone: there are grandparents, small children, a car full of bags, and one afternoon shower can ruin the whole trip. So checking the weather should start midweek, not on the morning you leave.",
+   "answer": "Check the weather at three points: midweek, look at the 7-day forecast to choose the day; the evening before, check tomorrow's forecast for rain or a colder or hotter day; and on the morning you leave, use the hourly chart to pick a window with little rain and low UV. Pack to the forecast and share the list with the whole family so nobody forgets anything.",
+   "paras": [
+    "The further ahead a forecast looks, the less certain it is, so midweek is only for choosing between Saturday and Sunday, or deciding between an indoor or outdoor outing. Do not fix times yet.",
+    "The evening before is when you lock the plan. If rain is likely tomorrow afternoon, move the outdoor part to the morning; if it will be hotter, pack extra water, hats and sunscreen for everyone.",
+    "On the morning you leave, look at the 24-hour temperature chart and hourly details to choose when to be outside. In many parts of Vietnam, the rainy season brings afternoon showers, so leaving early and heading back before the rain is often the safe choice.",
+    "Lumi Weather turns these factors into an outdoor score from 0 to 100, based on feels-like temperature, chance of rain, UV, wind and sky conditions; tap the score to see each factor. The app shows the best time window to go out, suggests what to wear and whether you need an umbrella or sunscreen, and offers a shareable packing list for the family. You can also save places you visit often, such as the grandparents' home or a park, to check the weather there."
+   ],
+   "look": [
+    "Is there a 7-day forecast to choose the day of the outing?",
+    "Is there an hourly chart and a suggested time window to go out?",
+    "Does it warn before rain or when tomorrow will be colder or hotter?",
+    "Is there a packing list you can share with the family?",
+    "Can you save several places, with no account and no ads?"
+   ],
+   "steps": [
+    "Wednesday or Thursday: check the 7-day forecast and choose the less rainy weekend day.",
+    "Save the place you plan to visit so you see the weather there, not just at home.",
+    "The evening before: check tomorrow's forecast and decide on morning or afternoon.",
+    "Pack to the forecast: umbrella or raincoat, hats, sunscreen, drinking water.",
+    "Share the packing list with the family so everyone prepares their own things.",
+    "On the morning you leave: check the hourly chart and pick the window with the highest outdoor score."
+   ],
+   "rows": [
+    [
+     "Midweek",
+     "7-day forecast",
+     "Choose the day, not the time yet"
+    ],
+    [
+     "Evening before",
+     "Rain, colder or hotter tomorrow?",
+     "Decide morning or afternoon"
+    ],
+    [
+     "Morning of the trip",
+     "Hourly chart, best time window",
+     "Avoid afternoon rain and harsh sun"
+    ],
+    [
+     "Packing",
+     "List shared with the family",
+     "Nobody forgets the umbrella or sunscreen"
+    ],
+    [
+     "Destination",
+     "Saved place",
+     "The weather there can differ from home"
+    ]
+   ],
+   "fits": "Lumi Weather suits families who often plan weekend outings, trips to the grandparents' or park visits with the kids: an outdoor score from 0 to 100 with clear reasons, the best time window to go out, hourly and 7-day forecasts, alerts before rain, what-to-wear suggestions and a shareable packing list. Save several places, with Home Screen widgets and Apple Watch. No account, no ads; a one-time in-app unlock opens every feature, with no subscription.",
+   "faq": [
+    [
+     "How far ahead should I check the weather before a trip?",
+     "Check the 7-day forecast midweek to choose the day, then lock the plan the evening before, when the forecast is more certain."
+    ],
+    [
+     "Is a weekend outing a good idea in the rainy season?",
+     "Yes, if you pick the right window. Showers often come in the afternoon, so leave early and follow the hourly rain forecast."
+    ],
+    [
+     "How do we make sure nobody forgets anything?",
+     "Share a packing list based on the forecast with everyone the evening before."
+    ],
+    [
+     "Is the forecast always accurate?",
+     "No. Forecasts and suggestions are for reference only; check again on the morning you leave."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "snapportlite",
+  "locale": "de-DE",
+  "market": "DE",
+  "term": "passbild",
+  "rank": 28,
+  "slug": "passbild-biometric-checklist-head-size-expression-background-before-submitting",
+  "loc": {
+   "title": "Passbild: Die biometrischen Regeln vor dem Einreichen prüfen",
+   "meta": "Ein Passbild scheitert meist an Kleinigkeiten: Kopf zu klein, Schatten im Hintergrund, Lächeln, Brillenreflexe. So prüfen Sie Größe, Ausdruck und Licht, bevor Sie das Foto abgeben.",
+   "h1": "Passbild prüfen: Größe, Gesicht, Hintergrund und Licht",
+   "lead": "Ein biometrisches Passbild wird nicht nach Schönheit beurteilt, sondern danach, ob eine Software das Gesicht zuverlässig vermessen kann. Deshalb sind die Regeln so genau, und deshalb lohnt sich ein kurzer Check vor dem Einreichen.",
+   "answer": "Ein Passbild im Format 35×45 mm zeigt das Gesicht frontal, mit neutralem Ausdruck, geschlossenem Mund und offenen Augen, vor einem einfarbig hellen Hintergrund ohne Schatten; das Gesicht nimmt den Großteil der Bildhöhe ein. Für Reisepass und Personalausweis in Deutschland gilt zusätzlich: Das Foto muss digital übermittelt werden.",
+   "paras": [
+    "Die häufigsten Fehler sind Proportionen. Das Format 35×45 mm allein reicht nicht; entscheidend ist, wie groß der Kopf darin ist. Von Kinn bis Scheitel sollte das Gesicht ungefähr 32 bis 36 mm hoch sein, mittig sitzen und gerade in die Kamera schauen. Ein zu weit entfernt aufgenommenes Foto, das nachträglich zugeschnitten wird, wirkt schnell unscharf.",
+    "Danach kommen Licht und Hintergrund. Der Hintergrund soll einfarbig und hell sein, meist ein neutrales Hellgrau, ohne Muster und ohne Schatten hinter dem Kopf. Am besten stellen Sie sich mit etwas Abstand vor eine helle Wand und fotografieren gegenüber einem Fenster mit gleichmäßigem Tageslicht. Brillen dürfen keine Reflexe zeigen und die Augen nicht verdecken; Kopfbedeckungen sind in der Regel nur aus religiösen Gründen erlaubt.",
+    "Wichtig für Deutschland: Seit dem 1. Mai 2025 nimmt das Bürgeramt für Reisepass und Personalausweis nur noch digital übermittelte Fotos an, etwa vom zertifizierten Fotografen oder vom Terminal in der Behörde. Ein selbst gemachtes Passbild brauchen Sie daher vor allem für Visa anderer Länder, Bewerbungen oder andere Anträge. Snapport Lite schneidet Ihr Porträt dafür exakt zu, zum Beispiel auf 35×45 mm, mit Hilfslinien für Scheitel, Augenlinie und Kinn und einem weißen oder hellgrauen Hintergrund. Ob ein Foto angenommen wird, entscheidet immer die Stelle, bei der Sie es einreichen."
+   ],
+   "look": [
+    "Format 35×45 mm, Gesicht etwa 32 bis 36 mm hoch",
+    "Frontal, neutraler Ausdruck, Mund geschlossen, Augen offen",
+    "Einfarbig heller Hintergrund ohne Schatten",
+    "Keine Reflexe in der Brille, Augen frei sichtbar",
+    "Aktuelles Foto, das Ihrem heutigen Aussehen entspricht"
+   ],
+   "steps": [
+    "Stellen Sie sich mit etwa einem halben Meter Abstand vor eine helle, einfarbige Wand.",
+    "Fotografieren Sie gegenüber einem Fenster bei gleichmäßigem Tageslicht, ohne Blitz.",
+    "Lassen Sie das Foto auf Augenhöhe und aus etwas Abstand aufnehmen, nicht aus nächster Nähe, damit das Gesicht nicht verzerrt wirkt.",
+    "Schneiden Sie es auf 35×45 mm zu und prüfen Sie die Kopfhöhe an Kinn und Scheitel.",
+    "Vergleichen Sie das Ergebnis mit den offiziellen Vorgaben der Stelle, bei der Sie es einreichen."
+   ],
+   "rows": [
+    [
+     "Kopfgröße",
+     "Gesicht von Kinn bis Scheitel etwa 32 bis 36 mm",
+     "Zu kleine oder zu große Köpfe sind der häufigste Ablehnungsgrund"
+    ],
+    [
+     "Hintergrund",
+     "Einfarbig hell, ohne Schatten und Muster",
+     "Schatten stören die automatische Gesichtserkennung"
+    ],
+    [
+     "Gesichtsausdruck",
+     "Neutral, Mund zu, Blick in die Kamera",
+     "Ein Lächeln verändert die vermessenen Gesichtsmerkmale"
+    ]
+   ],
+   "fits": "Snapport Lite passt, wenn Sie ein Passbild für ein Visum, eine Bewerbung oder einen anderen Antrag selbst erstellen möchten: 35 Größenvorlagen, darunter 35×45 mm, Gesichtserkennung auf dem Gerät mit Hilfslinien, Hintergrund in Weiß oder Hellgrau, Export als JPEG, PNG oder PDF und Druckbögen mit Schnittmarken. Die Annahme garantiert die App nicht. Der erste Export ist enthalten; unbegrenzte Exporte schaltet ein einmaliger Kauf frei, ohne Abo.",
+   "faq": [
+    [
+     "Darf man auf dem Passbild lächeln?",
+     "Nein, verlangt wird ein neutraler Gesichtsausdruck mit geschlossenem Mund. Ein leichtes, natürliches Gesicht ist in Ordnung, ein Lächeln mit Zähnen nicht."
+    ],
+    [
+     "Kann ich für den Personalausweis noch ein ausgedrucktes Foto abgeben?",
+     "Seit dem 1. Mai 2025 nicht mehr: Für Personalausweis und Reisepass werden nur digital übermittelte Fotos angenommen, etwa vom zertifizierten Fotografen oder vom Terminal im Bürgeramt."
+    ],
+    [
+     "Garantiert Snapport Lite, dass mein Passbild angenommen wird?",
+     "Nein. Snapport Lite bearbeitet nur Ihr Foto und bietet gängige Größen und Hilfslinien; die Entscheidung trifft die zuständige Stelle. Prüfen Sie vorher die offiziellen Anforderungen."
+    ]
+   ]
+  },
+  "en": {
+   "title": "Passport photo: check the biometric rules before you submit",
+   "meta": "A passport photo usually fails on small things: head too small, a shadow on the background, a smile, glare in glasses. How to check size, expression and light before you hand it in.",
+   "h1": "Checking a passport photo: size, face, background and light",
+   "lead": "A biometric passport photo is judged not on looks but on whether software can measure the face reliably. That is why the rules are so precise, and why a quick check before submitting pays off.",
+   "answer": "A 35×45 mm photo shows the face straight on with a neutral expression, mouth closed and eyes open, against a plain light background with no shadows, with the face filling most of the frame height. In Germany, passport and ID card photos must also be submitted digitally.",
+   "paras": [
+    "The commonest mistakes are proportions. The 35×45 mm format is not enough on its own; what matters is how large the head is inside it. From chin to crown the face should be roughly 32 to 36 mm tall, centred and looking straight at the camera. A photo taken from too far away and cropped afterwards quickly looks soft.",
+    "Next come light and background. The background should be plain and light, usually a neutral light grey, with no pattern and no shadow behind the head. Stand a little away from a light wall and shoot facing a window with even daylight. Glasses must not show glare or cover the eyes, and head coverings are generally allowed only for religious reasons.",
+    "Important for Germany: since 1 May 2025 citizens' offices accept only digitally transmitted photos for passports and ID cards, for example from a certified photographer or the terminal at the office. A home-made photo is therefore mainly for other countries' visas, job applications or other forms. Snapport Lite crops your portrait to the exact size, for example 35×45 mm, with head-top, eye-line and chin guides and a white or light grey background. Acceptance is always decided by the office you submit to."
+   ],
+   "look": [
+    "35×45 mm with a face about 32 to 36 mm tall",
+    "Straight on, neutral expression, mouth closed, eyes open",
+    "Plain light background with no shadows",
+    "No glare in glasses, eyes clearly visible",
+    "A recent photo that matches how you look today"
+   ],
+   "steps": [
+    "Stand about half a metre in front of a light, plain wall.",
+    "Face a window with even daylight and do not use flash.",
+    "Have the photo taken at eye level from a little distance, not from very close, so the face is not distorted.",
+    "Crop to 35×45 mm and check head height at chin and crown.",
+    "Compare the result with the official rules of the office you are submitting to."
+   ],
+   "rows": [
+    [
+     "Head size",
+     "Chin to crown about 32 to 36 mm",
+     "Heads too small or too large are the most common rejection"
+    ],
+    [
+     "Background",
+     "Plain and light, no shadow or pattern",
+     "Shadows interfere with automatic face measurement"
+    ],
+    [
+     "Expression",
+     "Neutral, mouth closed, eyes on the camera",
+     "A smile changes the measured facial features"
+    ]
+   ],
+   "fits": "Snapport Lite suits anyone making a photo for a visa, job application or other form at home: 35 size presets including 35×45 mm, on-device face detection with guides, white or light grey backgrounds, JPEG, PNG or PDF export and print sheets with cut guides. It does not guarantee acceptance. The first export is included; unlimited exports are unlocked with a one-time purchase, no subscription.",
+   "faq": [
+    [
+     "Can I smile in a passport photo?",
+     "No. A neutral expression with the mouth closed is required; a relaxed natural face is fine, a toothy smile is not."
+    ],
+    [
+     "Can I still hand in a printed photo for a German ID card?",
+     "Not since 1 May 2025: for ID cards and passports only digitally transmitted photos are accepted, for example from a certified photographer or the terminal at the citizens' office."
+    ],
+    [
+     "Does Snapport Lite guarantee my photo will be accepted?",
+     "No. Snapport Lite only edits your photo and provides common sizes and guides; the responsible office decides. Check the official requirements first."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "stayclock",
+  "locale": "ja",
+  "market": "JP",
+  "term": "置き時計",
+  "rank": 25,
+  "slug": "turn-iphone-or-ipad-into-a-table-clock-for-desk-shelf-or-bedside",
+  "loc": {
+   "title": "iPhone・iPad を置き時計にするには？机・棚・枕元の置き方と設定",
+   "meta": "使っていない iPhone や iPad は置き時計になります。置き場所に合わせて向きと充電経路を決め、画面が消えない設定、夜の暗い表示、遠くから読める文字盤を選べば、机でも棚でも枕元でも使えます。",
+   "h1": "iPhone・iPad を置き時計にする方法：机・棚・枕元それぞれの置き方",
+   "lead": "引き出しに眠っている iPad や機種変更前の iPhone は、置き時計としてもう一度働けます。ただ、そのまま立てるだけでは画面が消えたり、夜に眩しかったりします。",
+   "answer": "置き場所を先に決め、充電ケーブルが届く向き（机なら横向き、棚や枕元なら縦向きも可）でスタンドに立て、充電中は画面が消えない設定にします。枕元では夜だけ暗い表示に切り替え、離れた場所から読める大きな数字の文字盤を選びます。",
+   "paras": [
+    "置き時計にするときに最初に決めるのは「どこに置くか」です。机の上なら目線より少し下に置けるので横向きで大きく表示すると読みやすく、棚の上なら部屋のどこからでも見えるよう全画面の数字が向いています。枕元は寝たまま見る角度になるため、低めのスタンドで画面を少し上向きにすると見やすくなります。",
+    "次に考えるのは電源と明るさです。iPhone や iPad は操作しないと画面が消えるので、時計にするなら充電ケーブルをつないだまま置ける場所が前提になります。寝室では、白い画面は思った以上に眩しく感じます。夜だけ黒い背景に控えめな色で時刻を出せると、明かりを消した部屋でも邪魔になりません。",
+    "Stay Clock は iPhone と iPad を常時点灯の置き時計にするアプリです。充電中だけ点灯、バッテリー残量の下限を保ちながら点灯、システム設定に従う、の三つから選べ、夜は真っ黒な背景に赤い文字盤へ切り替えられます。縦向き・横向きのどちらにも対応し、有機 EL 画面向けにピクセルを少しずつずらすパネル保護もあります。アカウント、広告、追跡、通信はありません。"
+   ],
+   "look": [
+    "縦向き・横向きのどちらでも全画面で大きく表示できるか",
+    "充電中は画面が消えない設定があるか",
+    "寝室で眩しくない夜用の暗い表示があるか",
+    "有機 EL の iPhone なら焼き付き対策があるか",
+    "日付やカレンダーの表示を置き場所に合わせて選べるか"
+   ],
+   "steps": [
+    "机・棚・枕元のどこに置くかを決め、コンセントから充電ケーブルが届くか確かめます。",
+    "机なら横向き、棚や枕元なら縦向きも含めて、スタンドに立てたときに読みやすい向きを選びます。",
+    "充電中は画面が消えないように点灯の設定をします。",
+    "枕元に置くなら、夜の時間帯だけ暗い表示になるよう設定します。",
+    "置き場所から一歩離れて、数字と日付が読めるか確かめ、読みにくければ文字盤を変えます。"
+   ],
+   "rows": [
+    [
+     "机の上",
+     "横向きで大きな数字、カレンダー表示",
+     "作業中に視線を少し動かすだけで時刻と日付がわかる"
+    ],
+    [
+     "棚の上",
+     "全画面の時刻、シンプルな表示",
+     "部屋の離れた場所からでも読める"
+    ],
+    [
+     "枕元",
+     "夜の暗い赤の表示、低めのスタンド",
+     "寝る前や夜中に見ても眩しくない"
+    ]
+   ],
+   "fits": "Stay Clock は、使っていない iPhone や iPad を机・棚・枕元の置き時計にしたい人に向いています。101 種類の文字盤のうち、最初から使えるのは手書き風の 1 種類で、残りの 100 種類は一回限りの購入で追加されます。サブスクリプションではありません。",
+   "faq": [
+    [
+     "古い iPad でも置き時計になりますか？",
+     "充電ケーブルをつないで立てておける場所があれば、置き時計として使えます。使うアプリが手持ちの iPadOS に対応しているかは、App Store のページで確認してください。"
+    ],
+    [
+     "縦向きと横向き、どちらがいいですか？",
+     "机の上なら横向きのほうが数字を大きく表示でき、棚や枕元のように置く幅が限られる場所では縦向きも便利です。置き場所で決めるのがいちばんです。"
+    ],
+    [
+     "Stay Clock は寝室でも使えますか？",
+     "はい。夜のスケジュールで真っ黒な背景に赤い文字盤へ切り替わり、充電中は画面が点いたままになります。有機 EL の iPhone 向けにピクセルをずらすパネル保護もあります。"
+    ]
+   ]
+  },
+  "en": {
+   "title": "How to turn an iPhone or iPad into a table clock for the desk, shelf or bedside",
+   "meta": "A spare iPhone or iPad makes a good table clock. Pick the spot, set the orientation and charging path, keep the screen awake, dim it at night and choose a face readable from across the room.",
+   "h1": "How to use an iPhone or iPad as a table clock: desk, shelf and bedside",
+   "lead": "The iPad in a drawer or the iPhone you replaced can work again as a table clock. Just propping it up is not enough, though: the screen goes dark, or glows too bright at night.",
+   "answer": "Decide where it will sit first, stand it in the orientation that lets the charging cable reach (landscape on a desk, portrait is fine on a shelf or nightstand), and keep the screen on while charging. At the bedside, switch to a dim display at night and choose a face with large digits you can read from across the room.",
+   "paras": [
+    "The first decision is where the clock will live. On a desk it sits a little below eye level, so a large landscape display reads best; on a shelf, full screen digits let you see it from anywhere in the room. At the bedside you look at it lying down, so a low stand that tilts the screen slightly upward helps.",
+    "Next come power and brightness. An iPhone or iPad turns its screen off when idle, so a clock needs a spot where it can stay plugged in. In a bedroom, a white screen feels brighter than you expect; showing the time in a quiet color on black at night keeps it out of the way with the lights off.",
+    "Stay Clock turns an iPhone or iPad into an always-on table clock. You can keep it awake while charging, always on with a battery floor, or follow the system, and switch to a dim red face on true black at night. It works in portrait and landscape, and includes Panel Care with gentle pixel shifting for OLED screens. No account, no ads, no tracking and no network."
+   ],
+   "look": [
+    "Full screen, large time in both portrait and landscape",
+    "A setting that keeps the screen on while charging",
+    "A dim night display that won't glare in the bedroom",
+    "Burn-in care if your iPhone has an OLED screen",
+    "Date or calendar display you can match to the spot"
+   ],
+   "steps": [
+    "Choose desk, shelf or bedside, and check that a charging cable reaches the outlet.",
+    "Pick the orientation that reads best on the stand: landscape for a desk, portrait is fine on a shelf or nightstand.",
+    "Set the screen to stay on while charging.",
+    "At the bedside, schedule a dim display for night hours.",
+    "Step back from the spot, check the digits and date are readable, and change the face if they are not."
+   ],
+   "rows": [
+    [
+     "Desk",
+     "Large landscape digits, calendar",
+     "Time and date at a glance while you work"
+    ],
+    [
+     "Shelf",
+     "Full screen time, simple layout",
+     "Readable from across the room"
+    ],
+    [
+     "Bedside",
+     "Dim red night face, low stand",
+     "No glare before sleep or in the night"
+    ]
+   ],
+   "fits": "Stay Clock suits anyone who wants to turn a spare iPhone or iPad into a desk, shelf or bedside clock. Of its 101 faces, one handwritten-style face is included from the start; the other 100 are added with a one-time purchase, not a subscription.",
+   "faq": [
+    [
+     "Can an old iPad work as a table clock?",
+     "If you have a spot where it can stand plugged in, yes. Check the App Store page to confirm the app supports the iPadOS version on your device."
+    ],
+    [
+     "Portrait or landscape?",
+     "On a desk, landscape shows bigger digits; on a shelf or nightstand with limited width, portrait works well too. Let the spot decide."
+    ],
+    [
+     "Can I use Stay Clock in the bedroom?",
+     "Yes. A night schedule switches to a dim red face on true black, the screen stays on while charging, and Panel Care shifts pixels gently on OLED iPhones."
+    ]
+   ]
+  }
  }
 ]

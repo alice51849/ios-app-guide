@@ -2,7 +2,7 @@
 title: "Meow Party: Mini-Katzenspiele — 200 Minispiele fürs Foldable | iOS App"
 lang: "de-DE"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/foldparty/decision/l/de-DE/index.html"
-modified: "2026-11-06"
+modified: "2026-11-07"
 app_store_id: "6829184924"
 verified_live: true
 purchase_model: "paid_upfront"

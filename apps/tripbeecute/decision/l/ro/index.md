@@ -2,7 +2,7 @@
 title: "TripBee Cute: Jurnal călătorie — Carnet drăguț de concediu | iOS App"
 lang: "ro"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbeecute/decision/l/ro/index.html"
-modified: "2026-11-06"
+modified: "2026-11-07"
 app_store_id: "6826987407"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

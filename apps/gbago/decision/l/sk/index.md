@@ -2,7 +2,7 @@
 title: "GBAGo: Vizuálne uložené — Mapa obnovenia · Autosnímky | iOS App"
 lang: "sk"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gbago/decision/l/sk/index.html"
-modified: "2026-11-06"
+modified: "2026-11-07"
 app_store_id: "6804564400"
 verified_live: true
 purchase_model: "paid_upfront"

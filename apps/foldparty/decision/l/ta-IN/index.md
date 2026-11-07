@@ -2,7 +2,7 @@
 title: "Meow Party: பூனை விளையாட்டு — மடிக்கும் போனில் 200 கேம்கள் | iOS App"
 lang: "ta-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/foldparty/decision/l/ta-IN/index.html"
-modified: "2026-11-06"
+modified: "2026-11-07"
 app_store_id: "6829184924"
 verified_live: true
 purchase_model: "paid_upfront"

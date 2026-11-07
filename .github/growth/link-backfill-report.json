@@ -1,12 +1,12 @@
 {
- "generated": "2026-11-07T13:11:54Z",
+ "generated": "2026-11-07T19:30:32Z",
  "mode": "apply",
  "counts": {
-  "ok_reply": 50,
+  "ok_reply": 51,
   "unknown_app": 47,
-  "ok_backfilled_earlier": 47,
+  "ok_backfilled_earlier": 49,
   "backfilled": 2,
-  "ok_store_only": 683,
+  "ok_store_only": 681,
   "ok_bio_link": 68,
   "ok_caption": 4,
   "taken_down": 4,
@@ -24,6 +24,18 @@
    "why": "trial",
    "ios_id": "6785004775",
    "locale": "en-US"
+  },
+  {
+   "channel": "threads",
+   "id": "18133826899750088",
+   "permalink": "https://www.threads.com/@hourstag.app/post/DfcQeuwFteD",
+   "date": "2026-11-07",
+   "app": "mochi",
+   "status": "ok_reply",
+   "text": "下班前腦袋還在轉：明天要交的簡報、要回的訊息、要買的衛生紙……記在不同地方，最後一件都想不起來。 Mochi 是可愛又療癒的待辦清單 App：工作和生活各開一個清單，每件事配一個表情，有時間的事設提醒，桌面小工具一解鎖就看得到。 完成時輕點小圓圈打勾，看著清單一行一行劃掉，心情會",
+   "why": "brand",
+   "ios_id": "6785004775",
+   "locale": "zh-Hant"
   },
   {
    "channel": "threads",
@@ -1043,16 +1055,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdbD5megYy-",
    "date": "2026-09-18",
    "app": "mochi",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "一份你不想打開的待辦清單，只是一份讓你有罪惡感的清單。 開發者分享，非獨立評比。倒垃圾、澆花、明天的跑腿小事，放進 Mochi 清單就好。提醒、重複規則，做完勾掉；沒有廣告。可免費開始，再依需要一次買斷解鎖。 Mochi 連結留這邊，想試再點: https://apps.appl",
    "why": "url+brand",
    "ios_id": "6785004775",
-   "locale": "zh-Hant",
-   "own_replies": [],
-   "comment_id": "18122325985757564",
-   "at": "2026-11-07T13:09:15Z",
-   "verified": true,
-   "via": "list"
+   "locale": "zh-Hant"
   },
   {
    "channel": "threads",
@@ -1072,11 +1079,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdalD1EibAp",
    "date": "2026-09-18",
    "app": "mochi",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "Planeje o dia com leveza. Mochi deixa sua lista de tarefas mais fofa, calma e gostosa de usar. Mochi: Lista fofa Se quiser testar, é por aqu",
    "why": "url+brand",
    "ios_id": "6785004775",
-   "locale": "other"
+   "locale": "other",
+   "own_replies": [],
+   "comment_id": "18138959092632330",
+   "at": "2026-11-07T19:27:53Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -1108,16 +1120,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdalEo5iZvZ",
    "date": "2026-09-18",
    "app": "battai",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "才剛過中午，iPhone 電量就低到讓人不敢離開充電器旁。 開發者分享，非獨立評比。用 BattAI 看懂充電習慣：iOS 讀值、估算與自行補充的資料分開標示。估算不是硬體校正，也不會修復電池。可免費開始，較深歷史與報告需一次性解鎖 Pro。 BattAI 連結留這邊，想試再點:",
    "why": "url+brand",
    "ios_id": "6802423998",
-   "locale": "zh-Hant",
-   "own_replies": [],
-   "comment_id": "17887387137625315",
-   "at": "2026-11-07T13:09:15Z",
-   "verified": true,
-   "via": "list"
+   "locale": "zh-Hant"
   },
   {
    "channel": "threads",
@@ -1125,11 +1132,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdaYMbzCV_r",
    "date": "2026-09-18",
    "app": "lumiweather",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "週末想帶孩子出門，查了三個天氣 APP,還是不知道能不能去。 開發者分享，非獨立評比。家長出門前可看年齡相關的出遊指數與穿搭建議。免費版先體驗，更多功能需一次性內購永久解鎖；天氣參考不等於安全保證。 Lumi Weather App Store 上找得到: https://app",
    "why": "url+brand",
    "ios_id": "6779552704",
-   "locale": "zh-Hant"
+   "locale": "zh-Hant",
+   "own_replies": [],
+   "comment_id": "18111082634620269",
+   "at": "2026-11-07T19:27:53Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",

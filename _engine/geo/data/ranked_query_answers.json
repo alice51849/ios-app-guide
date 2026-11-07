@@ -33630,5 +33630,501 @@
     ]
    ]
   }
+ },
+ {
+  "key": "cyca",
+  "locale": "zh-Hant",
+  "market": "TW",
+  "term": "月經",
+  "rank": 15,
+  "slug": "how-to-count-menstrual-cycle-length-and-read-your-own-range",
+  "loc": {
+   "title": "月經週期怎麼算？從哪一天算起、自己的區間怎麼看",
+   "meta": "月經週期是從這次月經第一天算到下次月經第一天的前一天，不是從結束那天算。記三到四次就能看出自己的區間。Cyca 依你的紀錄預估下次經期，資料只存在 iPhone、不需要帳號。",
+   "h1": "月經週期怎麼算：從第一天算到下次第一天",
+   "lead": "很多人把月經「結束那天」當起點，算出來的週期每次都差好幾天。起點只有一個：出血的第一天。",
+   "answer": "月經週期＝這次月經第一天到下次月經第一天之間的天數；起點是出血第一天，不是結束日。連記三到四個週期，看最短與最長，那個區間比任何一次的天數都有參考價值。",
+   "paras": [
+    "最常見的算錯，是從月經結束那天開始數。經期本身每次可能三天也可能七天，從結束日算起，週期長度就跟著經期長短亂跳。正確的算法是兩次「第一天」之間的天數：例如十月三日來、十月三十一日又來，這次週期就是二十八天。",
+    "一次的天數說明不了什麼。相鄰兩個週期差兩、三天很常見，壓力、作息、旅行都會讓它移動。真正有用的是連續三到四次之後的最短與最長，也就是自己的區間；下次月經大概落在區間裡的哪幾天，比一個固定日期實際。",
+    "如果週期一直比以往短很多或長很多、突然連續幾個月沒來，或經痛、出血量和平常明顯不同，那是該看醫師的訊號，不是 App 能判斷的。Cyca 依你記下的經期預估下次經期、易孕期與排卵日，每記一次就重新調整；資料只存在 iPhone、不需要帳號、離線也能用。它提供的是估算，不是醫療器材，也不能當避孕方法。"
+   ],
+   "look": [
+    "記錄起點是不是出血第一天，能不能事後補記",
+    "預估是依自己的紀錄，還是套固定二十八天",
+    "能不能看到每次週期的天數，而不只是一個平均",
+    "資料存在手機上還是雲端、需不需要帳號",
+    "經痛、經血量能不能一起記，方便看醫師時對照"
+   ],
+   "steps": [
+    "下次出血第一天就記下來，不要等結束再補。",
+    "連續記三到四個週期，每次只看「第一天到下次第一天」。",
+    "寫下最短與最長的天數，那就是你目前的區間。",
+    "用區間抓下次月經大概落在哪幾天，提前準備用品。",
+    "區間突然變寬很多、或連續幾個月沒來，帶著紀錄去看醫師。"
+   ],
+   "rows": [
+    [
+     "起算日",
+     "出血第一天還是結束日",
+     "從結束日算，週期長度會跟著經期天數亂跳"
+    ],
+    [
+     "看的數字",
+     "單次天數還是區間",
+     "相鄰週期差兩、三天很常見，區間才看得出規律"
+    ],
+    [
+     "預估依據",
+     "自己的紀錄還是固定天數",
+     "套固定二十八天，對週期比較長或比較短的人偏差很大"
+    ]
+   ],
+   "fits": "Cyca 適合想用自己的紀錄抓下次月經的人：記下經期後在日曆上看到下次經期、易孕期與排卵日的預估，每次記錄後調整；經痛、經血量、心情幾秒就記好。資料只存在 iPhone、不需要帳號。它是估算，不是醫療器材，也不能當避孕方法。",
+   "faq": [
+    [
+     "月經週期是從哪一天開始算？",
+     "從出血的第一天開始算，到下次出血第一天的前一天為止。月經結束那天不是起點。"
+    ],
+    [
+     "這次跟上次差了三天，正常嗎？",
+     "相鄰週期差幾天很常見。比起單次差多少，更值得看的是連續幾次的區間有沒有突然變寬，或一直偏離以往的長度。"
+    ],
+    [
+     "Cyca 的資料會上傳嗎？",
+     "不會。Cyca 不需要帳號、沒有雲端，資料只存在你的 iPhone，離線也能使用。"
+    ]
+   ]
+  },
+  "en": {
+   "title": "How to count your menstrual cycle length, and read your own range",
+   "meta": "A cycle runs from the first day of one period to the day before the next one starts — not from the day bleeding ends. Three or four logged cycles show your own range. Cyca estimates your next period from your logs; data stays on your iPhone, no account.",
+   "h1": "Counting your cycle: from day one to the next day one",
+   "lead": "Many people count from the day their period ends, so every cycle comes out a different length. There is only one starting point: the first day of bleeding.",
+   "answer": "Cycle length is the number of days from the first day of one period to the first day of the next. Start from the first day of bleeding, not the last. After three or four cycles, the shortest and longest lengths — your range — say more than any single number.",
+   "paras": [
+    "The most common mistake is counting from the day a period ends. A period can last three days one month and seven the next, so counting from the end makes cycle length jump around with it. The correct count is the days between two first days: a period that starts on 3 October and again on 31 October is a 28-day cycle.",
+    "One cycle on its own says little. Neighbouring cycles commonly differ by two or three days, and stress, sleep and travel all move them. What is useful is the shortest and longest after three or four consecutive cycles — your own range. Knowing which few days the next period is likely to fall on is more practical than a single fixed date.",
+    "If cycles become much shorter or longer than usual, stop for several months, or pain and flow change noticeably, that is a reason to see a clinician, not something an app can judge. Cyca estimates your next period, fertile window and ovulation day from the periods you log, and adjusts each time you log; data stays on your iPhone, no account, works offline. It provides estimates, is not a medical device and is not a method of contraception."
+   ],
+   "look": [
+    "Whether logging starts from the first day of bleeding, and whether past days can be added later",
+    "Whether estimates use your own records or assume a fixed 28 days",
+    "Whether you can see each cycle's length, not just an average",
+    "Whether data stays on the phone or goes to a cloud account",
+    "Whether cramps and flow can be logged too, for a doctor's visit"
+   ],
+   "steps": [
+    "Log the first day of bleeding on the day it happens, not afterwards.",
+    "Log three or four consecutive cycles, counting only first day to next first day.",
+    "Write down the shortest and longest lengths — that is your current range.",
+    "Use the range to see which days the next period is likely to start, and prepare.",
+    "If the range suddenly widens or periods stop for months, take your records to a clinician."
+   ],
+   "rows": [
+    [
+     "Start day",
+     "First day of bleeding or last day",
+     "Counting from the last day makes cycle length follow period length"
+    ],
+    [
+     "Number to watch",
+     "Single cycle or range",
+     "A difference of a few days between cycles is common; the range shows the pattern"
+    ],
+    [
+     "Estimate basis",
+     "Your records or a fixed length",
+     "A fixed 28 days is far off for anyone with longer or shorter cycles"
+    ]
+   ],
+   "fits": "Cyca suits someone who wants their own records to anticipate the next period: log a period and the calendar shows estimates for the next period, fertile window and ovulation day, adjusting each time; cramps, flow and mood take seconds to log. Data stays on your iPhone with no account. It provides estimates, is not a medical device and is not contraception.",
+   "faq": [
+    [
+     "Which day does a cycle start on?",
+     "The first day of bleeding. It runs until the day before the next period starts; the day bleeding ends is not the start."
+    ],
+    [
+     "My cycle was three days different from last time. Is that normal?",
+     "A few days of difference between cycles is common. More telling than one difference is whether the range over several cycles suddenly widens, or keeps drifting from what is usual for you."
+    ],
+    [
+     "Does Cyca upload my data?",
+     "No. Cyca needs no account and has no cloud; data stays on your iPhone and works offline."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "cyca",
+  "locale": "uk",
+  "market": "UA",
+  "term": "календар менструацій",
+  "rank": 13,
+  "slug": "period-calendar-what-it-can-predict-and-what-it-cannot",
+  "loc": {
+   "title": "Календар менструацій: що він може передбачити, а що ні",
+   "meta": "Календар менструацій рахує наступні місячні, фертильні дні й овуляцію за вашими відмітками. Точність залежить від кількості записаних циклів і їхньої регулярності. Cyca працює без акаунта, дані лишаються на iPhone.",
+   "h1": "Календар менструацій: що він передбачає і де його межі",
+   "lead": "Календар не знає вашого тіла — він знає лише те, що ви відмітили. Тому перші місяці прогноз грубий, а з кожним циклом точніший.",
+   "answer": "Календар менструацій оцінює дату наступних місячних, фертильні дні та день овуляції на основі ваших попередніх циклів. Це розрахунок, а не діагноз: при нерегулярному циклі похибка більша, і такий календар не є контрацепцією.",
+   "paras": [
+    "Прогноз будується на одному: довжині ваших попередніх циклів, тобто днях від першого дня одних місячних до першого дня наступних. Після одного-двох записаних циклів у календаря замало даних, тому він спирається на загальні середні. Після трьох-чотирьох циклів прогноз уже враховує ваш власний ритм.",
+    "Фертильні дні й овуляція рахуються від очікуваної дати наступних місячних, тому будь-яка похибка в цій даті переходить і на них. Якщо цикли щоразу різняться на тиждень, календар покаже ширше вікно, ніж у людини з рівним циклом. Стрес, перельоти, хвороба зсувають цикл, і жоден календар цього не передбачить заздалегідь.",
+    "Тому від календаря варто чекати підготовки, а не гарантій: знати, коли взяти засоби гігієни, коли може посилитися біль чи змінитися настрій. Cyca рахує наступні місячні, фертильні дні та день овуляції й оновлює прогноз з кожною відміткою; менструальний біль, рясність і настрій відмічаються за секунди. Без акаунта й хмари, дані лишаються на пристрої. Це не медичний виріб і не контрацепція."
+   ],
+   "look": [
+    "Чи прогноз будується на ваших записах, а не на фіксованих 28 днях",
+    "Чи оновлюється прогноз після кожної відмітки",
+    "Чи можна відмічати біль, рясність і настрій поруч із датами",
+    "Чи є нагадування перед наступними місячними",
+    "Чи потрібен акаунт і де зберігаються дані"
+   ],
+   "steps": [
+    "Відмічайте перший день місячних саме того дня, коли вони почалися.",
+    "Перші три-чотири цикли сприймайте прогноз як орієнтир, а не дату.",
+    "Поруч із датою відмічайте біль і рясність — так видно власні закономірності.",
+    "Увімкніть нагадування перед очікуваними місячними, щоб підготуватися заздалегідь.",
+    "Якщо цикл різко змінився або місячних немає кілька місяців, зверніться до лікаря."
+   ],
+   "rows": [
+    [
+     "Основа прогнозу",
+     "Ваші цикли чи середнє",
+     "До трьох-чотирьох записаних циклів прогноз спирається на загальні середні"
+    ],
+    [
+     "Фертильні дні",
+     "Як рахуються",
+     "Від очікуваної дати місячних, тому похибка дати переходить і на них"
+    ],
+    [
+     "Призначення",
+     "Підготовка чи контрацепція",
+     "Календар допомагає підготуватися, але не захищає від вагітності"
+    ]
+   ],
+   "fits": "Cyca підходить тим, хто хоче спокійний календар без акаунта: прогноз наступних місячних, фертильних днів і овуляції, щоденний прогноз тіла за фазою циклу, нагадування перед місячними. Дані лишаються на пристрої, застосунок працює офлайн. Не є медичним виробом або контрацепцією.",
+   "faq": [
+    [
+     "Скільки циклів треба відмітити, щоб прогноз був точнішим?",
+     "Щонайменше три-чотири. До того календар спирається більше на загальні середні, ніж на ваш ритм."
+    ],
+    [
+     "Чи можна використовувати календар для запобігання вагітності?",
+     "Ні. Прогноз фертильних днів — це розрахунок з похибкою, а не метод контрацепції."
+    ],
+    [
+     "Чи потрібен акаунт у Cyca?",
+     "Ні. Без акаунта, хмари й відстеження: дані лишаються на пристрої, застосунок працює офлайн."
+    ]
+   ]
+  },
+  "en": {
+   "title": "A period calendar: what it can predict, and what it cannot",
+   "meta": "A period calendar estimates your next period, fertile days and ovulation from what you log. Accuracy depends on how many cycles are recorded and how regular they are. Cyca works without an account; data stays on your iPhone.",
+   "h1": "A period calendar: what it predicts and where its limits are",
+   "lead": "A calendar does not know your body — it only knows what you have logged. That is why the first months are rough and each cycle makes it closer.",
+   "answer": "A period calendar estimates your next period, fertile days and ovulation day from your previous cycles. It is a calculation, not a diagnosis: the error is larger with irregular cycles, and it is not contraception.",
+   "paras": [
+    "The estimate rests on one thing: the length of your past cycles, counted from the first day of one period to the first day of the next. After one or two logged cycles there is too little data, so the calendar leans on general averages. After three or four, the estimate reflects your own rhythm.",
+    "Fertile days and ovulation are counted back from the expected next period, so any error in that date carries over to them. If your cycles vary by a week, the calendar will show a wider window than for someone with even cycles. Stress, flights and illness shift a cycle, and no calendar can foresee that.",
+    "So expect preparation from a calendar, not guarantees: knowing when to carry supplies, when cramps or mood may change. Cyca estimates your next period, fertile window and ovulation day and updates the estimate every time you log; cramps, flow and mood take seconds to record. No account, no cloud, data stays on the device. It is not a medical device and not contraception."
+   ],
+   "look": [
+    "Whether estimates come from your own records, not a fixed 28 days",
+    "Whether the estimate updates after every log",
+    "Whether cramps, flow and mood can be logged alongside the dates",
+    "Whether there is a reminder before the next period",
+    "Whether an account is required and where data is stored"
+   ],
+   "steps": [
+    "Log the first day of your period on the day it starts.",
+    "Treat the estimate as a guide, not a date, for the first three or four cycles.",
+    "Log cramps and flow next to the dates — that is how your own patterns show up.",
+    "Turn on the reminder before the expected period so you can prepare.",
+    "If your cycle changes sharply or periods stop for several months, see a clinician."
+   ],
+   "rows": [
+    [
+     "Estimate basis",
+     "Your cycles or an average",
+     "Until three or four cycles are logged, the estimate leans on general averages"
+    ],
+    [
+     "Fertile days",
+     "How they are counted",
+     "From the expected period date, so any error in that date carries over"
+    ],
+    [
+     "Purpose",
+     "Preparation or contraception",
+     "A calendar helps you prepare; it does not prevent pregnancy"
+    ]
+   ],
+   "fits": "Cyca suits someone who wants a calm calendar with no account: estimates for the next period, fertile window and ovulation, a daily body forecast by cycle phase, and a reminder before your period. Data stays on the device and works offline. It is not a medical device and not contraception.",
+   "faq": [
+    [
+     "How many cycles before the estimate gets closer?",
+     "At least three or four. Before that, the calendar relies more on general averages than on your rhythm."
+    ],
+    [
+     "Can a period calendar be used to avoid pregnancy?",
+     "No. A fertile-day estimate is a calculation with error, not a method of contraception."
+    ],
+    [
+     "Does Cyca need an account?",
+     "No. No account, no cloud, no tracking: data stays on the device and the app works offline."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "cvdesk",
+  "locale": "de-DE",
+  "market": "DE",
+  "term": "ats lebenslauf",
+  "rank": 2,
+  "slug": "ats-cv-germany-photo-columns-and-headings-that-parse",
+  "loc": {
+   "title": "ATS-Lebenslauf: Foto, Spalten und Überschriften, die das System liest",
+   "meta": "Beim Upload über ein Bewerberportal liest zuerst ein System Ihren Lebenslauf. Einspaltig, Standardüberschriften, markierbarer PDF-Text und ein Foto, das kein Seitenlayout erzwingt. CV Desk zeigt vorher einen ATS-Score.",
+   "h1": "ATS-Lebenslauf: was das System liest, bevor ein Mensch es tut",
+   "lead": "Der klassische deutsche Lebenslauf mit Foto in der Seitenleiste sieht ordentlich aus — und wird von Bewerbermanagementsystemen oft in falscher Reihenfolge gelesen.",
+   "answer": "Ein ATS-tauglicher Lebenslauf ist einspaltig, nutzt Standardüberschriften wie Berufserfahrung, Ausbildung und Kenntnisse, hat Datumsangaben im gleichen Format und kommt als PDF mit echtem, markierbarem Text.",
+   "paras": [
+    "Wer sich über ein Bewerberportal bewirbt und eine Datei hochlädt, wird zuerst von einem Parser gelesen. Er liest von oben nach unten und von links nach rechts. Eine Seitenleiste mit Foto, Kontaktdaten und Kenntnissen schiebt sich dabei zwischen die Stationen der Berufserfahrung, und aus einer sauberen Tabelle werden zerrissene Zeilen.",
+    "Der tabellarische Aufbau selbst ist kein Problem — die Spaltenoptik ist es. Schreiben Sie Zeitraum, Position und Arbeitgeber in eine Zeile untereinander statt in zwei Spalten. Verwenden Sie gängige Überschriften: Ein Abschnitt namens „Mein Weg“ wird als Berufserfahrung oft gar nicht erkannt. Und halten Sie ein Datumsformat durch, etwa 03/2022 – 08/2025.",
+    "Das Foto ist in Deutschland üblich, aber nicht Pflicht. Wenn Sie eines verwenden, sollte es das Layout nicht in zwei Spalten zwingen. CV Desk gibt vor dem Versand einen ATS-Score von 0–100 mit Korrekturen zum Antippen, exportiert ein einspaltiges PDF mit markierbarem Text oder eine bearbeitbare Word-Datei, und das Bewerbungsfoto ist optional und standardmäßig aus. Der Score ist eine Schätzung am Gerät; Ergebnisse variieren je nach System des Arbeitgebers."
+   ],
+   "look": [
+    "Ob der Lebenslauf einspaltig ist, ohne Seitenleiste",
+    "Ob die Überschriften Standardbegriffe wie Berufserfahrung und Ausbildung sind",
+    "Ob alle Datumsangaben dasselbe Format haben",
+    "Ob der PDF-Text markierbar ist und nicht als Bild exportiert wurde",
+    "Ob Kontaktdaten im Text stehen statt in Kopfzeile oder Textfeld"
+   ],
+   "steps": [
+    "Prüfen Sie zuerst, ob Sie eine Datei hochladen oder ein Formular ausfüllen — nur beim Upload zählt das Layout.",
+    "Bringen Sie alle Stationen in eine Spalte: Zeitraum, Position, Arbeitgeber untereinander.",
+    "Benennen Sie die Abschnitte mit Standardüberschriften.",
+    "Übernehmen Sie Begriffe aus der Stellenanzeige dort, wo sie wirklich auf Sie zutreffen.",
+    "Markieren Sie im exportierten PDF eine Zeile, um zu prüfen, dass echter Text vorliegt."
+   ],
+   "rows": [
+    [
+     "Aufbau",
+     "Einspaltig oder Seitenleiste",
+     "Seitenleisten werden zwischen die Berufsstationen gelesen"
+    ],
+    [
+     "Foto",
+     "Im Text oder als Layoutelement",
+     "Ein Foto, das zwei Spalten erzwingt, schadet mehr als das Foto selbst"
+    ],
+    [
+     "Export",
+     "Markierbarer Text oder Bild",
+     "Ein Bild-PDF kommt im System als leeres Dokument an"
+    ]
+   ],
+   "fits": "CV Desk passt, wenn Sie vor dem Hochladen sehen wollen, wie gut ein System Ihren Lebenslauf liest: ATS-Score von 0–100 mit Korrekturen, einspaltiges PDF oder bearbeitbares Word, ein angepasster Lebenslauf pro Stelle. Alles auf dem iPhone, ohne Konto.",
+   "faq": [
+    [
+     "Muss ein Lebenslauf in Deutschland ein Foto haben?",
+     "Nein, Pflicht ist es nicht. Viele legen trotzdem eines bei. Wichtig für das System ist, dass das Foto kein zweispaltiges Layout erzwingt."
+    ],
+    [
+     "Ist ein tabellarischer Lebenslauf ATS-tauglich?",
+     "Ja, solange Zeitraum, Position und Arbeitgeber untereinander in einer Spalte stehen und nicht in nebeneinanderliegenden Spalten oder Tabellenzellen."
+    ],
+    [
+     "Wo werden meine Daten bei CV Desk gespeichert?",
+     "Auf Ihrem iPhone. Ein Konto ist nicht nötig, und die App funktioniert auch im Flugmodus."
+    ]
+   ]
+  },
+  "en": {
+   "title": "An ATS CV in Germany: photo, columns and headings the system can read",
+   "meta": "When you upload through an applicant portal, a system reads your CV first. One column, standard headings, selectable PDF text, and a photo that does not force a sidebar layout. CV Desk shows an ATS score before you send.",
+   "h1": "An ATS CV in Germany: what the system reads before a person does",
+   "lead": "The classic German CV with a photo in the sidebar looks tidy — and applicant tracking systems often read it in the wrong order.",
+   "answer": "An ATS-friendly CV is one column, uses standard headings such as work experience, education and skills, keeps one date format, and is exported as a PDF with real, selectable text.",
+   "paras": [
+    "When you apply through a portal and upload a file, a parser reads it first, top to bottom and left to right. A sidebar with photo, contact details and skills gets read in between your job entries, and a tidy table turns into broken lines.",
+    "The tabular CV itself is not the problem — the column look is. Put period, position and employer on lines one under another rather than side by side. Use common headings: a section called \"My journey\" is often not recognised as work experience at all. And keep one date format, for example 03/2022 – 08/2025.",
+    "A photo is common in Germany but not required. If you include one, it should not force the layout into two columns. CV Desk gives a 0–100 ATS score with tappable fixes before you send, exports a single-column PDF with selectable text or an editable Word file, and the header photo is optional and off by default. The score is an on-device estimate; results vary by employer system."
+   ],
+   "look": [
+    "Whether the CV is one column, with no sidebar",
+    "Whether headings are standard terms such as work experience and education",
+    "Whether all dates use the same format",
+    "Whether PDF text is selectable rather than exported as an image",
+    "Whether contact details are in the body rather than a header or text box"
+   ],
+   "steps": [
+    "Check first whether you are uploading a file or filling in a form — layout only matters for uploads.",
+    "Put every entry in one column: period, position, employer, one under another.",
+    "Name sections with standard headings.",
+    "Use terms from the job ad where they genuinely apply to you.",
+    "Select a line in the exported PDF to confirm it is real text."
+   ],
+   "rows": [
+    [
+     "Layout",
+     "One column or sidebar",
+     "Sidebars get read in between your job entries"
+    ],
+    [
+     "Photo",
+     "In the flow or as a layout element",
+     "A photo that forces two columns does more harm than the photo itself"
+    ],
+    [
+     "Export",
+     "Selectable text or image",
+     "An image PDF arrives in the system as an empty document"
+    ]
+   ],
+   "fits": "CV Desk fits when you want to see how well a system reads your CV before uploading: a 0–100 ATS score with fixes, a single-column PDF or editable Word file, and a tailored CV for each job. Everything on your iPhone, no account.",
+   "faq": [
+    [
+     "Does a CV in Germany need a photo?",
+     "No, it is not required. Many people still include one. What matters to the system is that the photo does not force a two-column layout."
+    ],
+    [
+     "Is a tabular CV ATS-friendly?",
+     "Yes, as long as period, position and employer sit one under another in a single column, not in side-by-side columns or table cells."
+    ],
+    [
+     "Where does CV Desk store my data?",
+     "On your iPhone. No account is needed, and the app works in airplane mode."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "cvdesk",
+  "locale": "es-ES",
+  "market": "ES",
+  "term": "currículum ats",
+  "rank": 1,
+  "slug": "ats-cv-spain-upload-versus-form-and-what-to-fix",
+  "loc": {
+   "title": "Currículum ATS: cuándo importa en España y qué corregir antes de enviarlo",
+   "meta": "Si rellenas el formulario de un portal, el diseño da igual. Si subes un archivo, un sistema lo lee primero: una columna, encabezados estándar y un PDF con texto seleccionable. CV Desk te da antes una puntuación ATS.",
+   "h1": "Currículum ATS: qué lee el sistema cuando subes tu CV",
+   "lead": "No todas las candidaturas pasan por el mismo filtro. La diferencia está en si escribes en un formulario o adjuntas un archivo.",
+   "answer": "Cuando adjuntas un CV, un sistema de selección lo lee antes que una persona. Una sola columna, encabezados como Experiencia profesional, Formación e Idiomas, fechas con el mismo formato y un PDF con texto real seleccionable deciden si se lee bien.",
+   "paras": [
+    "Primero, distingue el tipo de candidatura. Si el portal te pide rellenar campos uno a uno, el diseño de tu CV no influye en esa lectura. Si en cambio adjuntas el archivo —en la web de una empresa, en una candidatura internacional o al responder a una oferta por correo con formulario de subida—, el sistema analiza el documento tal cual.",
+    "El fallo más habitual es el diseño a dos columnas. El analizador lee de arriba abajo y de izquierda a derecha, así que la columna lateral con idiomas y competencias se mezcla con los puestos de trabajo. El segundo fallo son los encabezados creativos: «Mi trayectoria» puede no reconocerse como experiencia profesional. El tercero, el PDF hecho como imagen, que llega sin texto.",
+    "Antes de enviarlo, adapta el CV a cada oferta usando los términos del anuncio que de verdad describan lo que has hecho. CV Desk te da una puntuación ATS de 0 a 100 con correcciones que aplicas con un toque, exporta un PDF de una columna con texto seleccionable o un Word editable, y guarda un currículum adaptado para cada oferta. La puntuación es una estimación en el dispositivo; los resultados varían según el sistema del empleador."
+   ],
+   "look": [
+    "Si la candidatura es por formulario o por archivo adjunto",
+    "Si el CV tiene una sola columna, sin barra lateral",
+    "Si los encabezados son estándar: Experiencia profesional, Formación, Idiomas",
+    "Si todas las fechas usan el mismo formato",
+    "Si el texto del PDF se puede seleccionar"
+   ],
+   "steps": [
+    "Mira si el portal te pide rellenar campos o adjuntar un archivo.",
+    "Si adjuntas, pasa todo a una columna: fechas, puesto y empresa uno debajo de otro.",
+    "Usa encabezados estándar en lugar de títulos creativos.",
+    "Incorpora términos de la oferta solo donde describan lo que realmente hiciste.",
+    "En el PDF exportado, selecciona una línea para comprobar que es texto real."
+   ],
+   "rows": [
+    [
+     "Tipo de candidatura",
+     "Formulario o archivo",
+     "En un formulario, el diseño del CV no influye en la lectura"
+    ],
+    [
+     "Columnas",
+     "Una o dos",
+     "Con dos columnas, la barra lateral se mezcla con la experiencia"
+    ],
+    [
+     "Exportación",
+     "Texto seleccionable o imagen",
+     "Un PDF en imagen llega al sistema como un documento vacío"
+    ]
+   ],
+   "fits": "CV Desk encaja si quieres saber cómo leerá un sistema tu CV antes de adjuntarlo: puntuación ATS de 0 a 100 con correcciones, PDF de una columna o Word editable, y un currículum adaptado por oferta. Todo en tu iPhone, sin cuenta.",
+   "faq": [
+    [
+     "¿Todas las empresas en España usan ATS?",
+     "No todas, pero cuando adjuntas el archivo en un portal de candidaturas es habitual que un sistema lo lea primero. Si solo rellenas un formulario, el diseño no influye en esa lectura."
+    ],
+    [
+     "¿Puedo poner foto en un currículum ATS?",
+     "Puedes, pero que no te obligue a un diseño de dos columnas. En CV Desk la foto es opcional y viene desactivada por defecto."
+    ],
+    [
+     "¿Dónde se guarda mi currículum en CV Desk?",
+     "En tu iPhone. No necesitas cuenta y la app funciona en modo avión."
+    ]
+   ]
+  },
+  "en": {
+   "title": "An ATS CV in Spain: when it matters and what to fix before you send it",
+   "meta": "If you fill in a portal's form, layout does not matter. If you upload a file, a system reads it first: one column, standard headings and a PDF with selectable text. CV Desk gives you an ATS score beforehand.",
+   "h1": "An ATS CV in Spain: what the system reads when you upload",
+   "lead": "Not every application goes through the same filter. The difference is whether you type into a form or attach a file.",
+   "answer": "When you attach a CV, an applicant tracking system reads it before a person does. One column, headings such as work experience, education and languages, one date format and a PDF with real, selectable text decide whether it reads correctly.",
+   "paras": [
+    "First, tell the application types apart. If the portal asks you to fill in fields one by one, your CV's layout does not affect that reading. If instead you attach the file — on a company's careers site, in an international application, or through an upload form — the system parses the document as it is.",
+    "The most common failure is a two-column layout. The parser reads top to bottom and left to right, so a sidebar with languages and skills gets mixed into your job entries. The second is creative headings: \"My path\" may not be recognised as work experience. The third is a PDF made as an image, which arrives with no text.",
+    "Before sending, tailor the CV to each offer using terms from the ad that genuinely describe what you have done. CV Desk gives a 0–100 ATS score with tappable fixes, exports a single-column PDF with selectable text or an editable Word file, and keeps a tailored resume for every offer. The score is an on-device estimate; results vary by employer system."
+   ],
+   "look": [
+    "Whether the application uses a form or a file upload",
+    "Whether the CV is one column, with no sidebar",
+    "Whether headings are standard: work experience, education, languages",
+    "Whether all dates use the same format",
+    "Whether the PDF text can be selected"
+   ],
+   "steps": [
+    "Check whether the portal asks you to fill in fields or attach a file.",
+    "If attaching, move everything into one column: dates, role and company one under another.",
+    "Use standard headings instead of creative titles.",
+    "Add terms from the offer only where they describe what you actually did.",
+    "Select a line in the exported PDF to confirm it is real text."
+   ],
+   "rows": [
+    [
+     "Application type",
+     "Form or file",
+     "With a form, your CV layout does not affect the reading"
+    ],
+    [
+     "Columns",
+     "One or two",
+     "With two columns, the sidebar gets mixed into your experience"
+    ],
+    [
+     "Export",
+     "Selectable text or image",
+     "An image PDF arrives in the system as an empty document"
+    ]
+   ],
+   "fits": "CV Desk fits if you want to know how a system will read your CV before attaching it: a 0–100 ATS score with fixes, a single-column PDF or editable Word file, and a tailored resume per offer. Everything on your iPhone, no account.",
+   "faq": [
+    [
+     "Do all companies in Spain use an ATS?",
+     "Not all, but when you attach a file on an application portal a system commonly reads it first. If you only fill in a form, layout does not affect that reading."
+    ],
+    [
+     "Can I include a photo in an ATS CV?",
+     "You can, as long as it does not force a two-column layout. In CV Desk the photo is optional and off by default."
+    ],
+    [
+     "Where does CV Desk store my resume?",
+     "On your iPhone. No account is needed and the app works in airplane mode."
+    ]
+   ]
+  }
  }
 ]

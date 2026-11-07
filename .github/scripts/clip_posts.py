@@ -210,10 +210,34 @@ def play_label(clip):
     return PLAY_LINE.get(clip["locale"]) or PLAY_LINE.get(clip["locale"].split("-")[0]) or PLAY_LINE["en"]
 
 
+# Slots moved into the Taipei 14-18 exposure gap (UTC 06-10; 2026-11-07, 00_GrowthEngine
+# reports/yi30/window_shift_card_2026-11-07.md): their App Store links carry ct=au_<app>_hook (agent/ct_codes.py
+# "window_hook") so the 7-day read can tell the gap apart; every other slot keeps its own token.
+WINDOW_SLOTS = {"telegram": (8,)}
+
+
+def window_ct(clip):
+    """The gap slots' App Store ct: au_<app>_hook (download_links leaves an unknown token as it is)."""
+    app = re.sub(r"[^a-z0-9]", "", str(clip.get("app") or "").lower()) or "app"
+    return f"au_{app}"[:35] + "_hook"
+
+
+def with_window(clip, channel, slot):
+    """The clip marked with window_ct when `slot` is one of the channel's gap slots, else the clip unchanged."""
+    return dict(clip, window_ct=window_ct(clip)) if slot in WINDOW_SLOTS.get(channel, ()) else clip
+
+
 def download_urls(clip, channel, tag=None):
-    """(App Store URL, Google Play URL or None) with the channel's own ct token (tag: another surface's suffix)."""
+    """(App Store URL, Google Play URL or None) with the channel's own ct token (tag: another surface's suffix);
+    a clip marked by with_window carries window_ct on its App Store link instead (Google Play unchanged)."""
     tag = tag or CHANNEL_CT.get(channel, channel)
-    return with_campaign(clip["store_url"], tag), play_url(clip, tag)
+    store = with_campaign(clip["store_url"], tag)
+    if clip.get("window_ct"):
+        parts = urllib.parse.urlsplit(store)
+        query = dict(urllib.parse.parse_qsl(parts.query))
+        query["ct"] = DL.app_campaign(clip["window_ct"], DL.app_store_id(store))
+        store = urllib.parse.urlunsplit(parts._replace(query=urllib.parse.urlencode(query)))
+    return store, play_url(clip, tag)
 
 
 def link_lines(clip, channel, tag=None):
@@ -368,12 +392,11 @@ def post_telegram(clip, variant=None):
     if not token or not chat:
         print("clip: Telegram secrets missing, skipped")
         return None
-    row = [{"text": text_for(clip["locale"])["button"], "url": with_campaign(clip["store_url"], "tg")}]
-    play = play_url(clip, "tg")
-    if play:
-        row.append({"text": "Google Play", "url": play})
+    store, play_link = download_urls(clip, "telegram")   # a gap slot's clip: ct=au_<app>_hook (with_window)
+    row = [{"text": text_for(clip["locale"])["button"], "url": store}]
+    if play_link:
+        row.append({"text": "Google Play", "url": play_link})
     button = {"inline_keyboard": [row]}
-    store, play_link = download_urls(clip, "telegram")
     text = DL.ensure_download_link(caption(clip, "telegram", variant), store, play_link,
                                    max_len=post_qa.LIMITS["telegram"], app_store_label=text_for(clip["locale"])["button"],
                                    play_label=play_label(clip), label=f"{clip.get('app')}/{clip.get('locale')} telegram")
@@ -705,6 +728,7 @@ def main():
     if not clip:
         print(f"clip: nothing scheduled for {channel} on {day} slot {args.slot}")
         return 0
+    clip = with_window(clip, channel, args.slot)
     queued = yields_to_evening(channel, args.slot, day)
     if queued and args.channel != "preview":
         print(f"clip: Threads slot {args.slot} gives way to tonight's conversion post "

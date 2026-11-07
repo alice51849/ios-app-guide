@@ -19,7 +19,8 @@ name: Hook clip backup posts
 # are filled, so a backup never takes tomorrow's room.
 #
 # Slots follow .github/growth/volume-ramp.json (reels-daily.yml / telegram-clips.yml
-# crons): 1, 9, 12, 15, 18 and 22 UTC; a backup for a slot clips.json does not
+# crons): 1, 9, 12, 15, 18 and 22 UTC (Telegram 8 instead of 12 since 2026-11-07;
+# a dropped 08:30 run is caught up by the Mac cron dispatcher or a manual slot=8 backup); a backup for a slot clips.json does not
 # plan (an earlier ramp stage) finds nothing and posts nothing. The 00:47 run
 # backs up the previous day's 22:xx slot.
 # run-name records the slot's cron (also on a catch-up the Mac's cron dispatcher,
@@ -41,7 +42,7 @@ on:
   workflow_dispatch:
     inputs:
       slot:
-        description: "Clip slot to back up on Telegram/Instagram (1, 9, 12, 15, 18 or 22; empty = Threads check only)"
+        description: "Clip slot to back up on Telegram/Instagram (1, 8, 9, 12, 15, 18 or 22; empty = Threads check only)"
         required: false
         default: ""
       date:
@@ -97,7 +98,7 @@ jobs:
             d=$(date -u -d "-$back day" +%F)
             if [ "$(date -u +%H:%M)" \< "$fired" ]; then d=$(date -u -d "$d -1 day" +%F); fi
           else
-            case "$MANUAL_SLOT" in 1|9|12|15|18|22) s=$MANUAL_SLOT ;; "") s= ;; *) echo "::error::slot must be 1, 9, 12, 15, 18 or 22"; exit 1 ;; esac
+            case "$MANUAL_SLOT" in 1|8|9|12|15|18|22) s=$MANUAL_SLOT ;; "") s= ;; *) echo "::error::slot must be 1, 8, 9, 12, 15, 18 or 22"; exit 1 ;; esac
             d=${MANUAL_DATE:-$(date -u +%F)}
             case "$d" in [0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]) ;; *) echo "::error::date must be YYYY-MM-DD"; exit 1 ;; esac
             date -u -d "$d" +%F >/dev/null 2>&1 || { echo "::error::bad date $d"; exit 1; }

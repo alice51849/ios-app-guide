@@ -32994,5 +32994,641 @@
     ]
    ]
   }
+ },
+ {
+  "key": "easyam",
+  "locale": "en",
+  "market": "NZ",
+  "term": "workday alarm",
+  "rank": 1,
+  "slug": "workday-alarm-new-zealand-public-holidays-annual-leave-and-sleep-ins",
+  "loc": {
+   "title": "Workday alarm in New Zealand: quiet on public holidays, ringing on work days",
+   "meta": "A workday alarm should ring Monday to Friday and stay quiet on Waitangi Day, Matariki and your annual leave without you touching it. Here is what to check and how to set one up in New Zealand.",
+   "h1": "Workday alarm: ring on work days, stay quiet on the rest",
+   "lead": "A weekday repeat alarm cannot tell a Tuesday at work from a Tuesday public holiday, so it rings anyway and you end up switching it off and on again.",
+   "answer": "A workday alarm is one alarm that knows your calendar: it rings on work days, skips public holidays for your country and your own days off, and still rings on the first work day back. Choose your country or region, confirm in the calendar which public holidays it will skip, add annual leave as days off, and check the next seven days before bed.",
+   "paras": [
+    "People searching for a workday alarm in New Zealand usually have the same problem: the alarm repeats Monday to Friday, but the year does not. Waitangi Day, Anzac Day, Matariki and the Christmas and New Year break fall on different weekdays each year, and every one of them means remembering to turn the alarm off the night before and back on the night after.",
+    "EasyAM skips public holidays for your country or region automatically, using built-in holiday data for 67 countries and regions that works offline and can be updated. Add annual leave, a trip or a sick day as a single day or a date range and those mornings stay quiet; the first work day back rings as usual. The app opens on your next seven days, so you can see which mornings will ring and when.",
+    "It uses real iOS system alarms and only shows Alarms Ready after iOS has confirmed the schedule. If holiday data is missing or out of date, that day counts as a work day, so the alarm rings rather than leaving you asleep. Check the Calendar tab month view: if a holiday you observe, such as your regional anniversary day, is not listed, add it yourself as a day off."
+   ],
+   "look": [
+    "Does it skip public holidays for your country or region without you editing anything?",
+    "Can you add annual leave or a trip as a date range, not one day at a time?",
+    "Does it still ring on the first work day after a long weekend?",
+    "Can you see the coming week's mornings at a glance before bed?",
+    "What happens if the holiday data is missing: does it ring or stay silent?"
+   ],
+   "steps": [
+    "Choose your country or region, then open the Calendar tab to see which public holidays it will skip.",
+    "Create one alarm with a weekly repeat for your work days and your usual wake-up time.",
+    "Add your annual leave, and any holiday you observe that the calendar does not list, as days off.",
+    "Give an early shift or a flight day its own ring time; the other days stay the same.",
+    "Before bed, check the next seven days and tap Sleep in if you only want to silence tomorrow."
+   ],
+   "rows": [
+    [
+     "Public holidays",
+     "Automatic skipping for your country",
+     "No more switching the alarm off the night before a public holiday"
+    ],
+    [
+     "Annual leave",
+     "Days off as date ranges",
+     "A two-week break stays quiet without daily changes"
+    ],
+    [
+     "First day back",
+     "Rings as usual after a day off",
+     "You do not oversleep after the long weekend"
+    ]
+   ],
+   "fits": "EasyAM fits office workers, teachers and shift workers in New Zealand who want one alarm that follows their real week: public holidays skipped, leave kept quiet, and the next seven mornings shown at a glance. It has Home Screen and Lock Screen widgets and an Apple Watch app, with no account, no ads and no tracking.",
+   "faq": [
+    [
+     "Will it ring on Waitangi Day or Matariki?",
+     "Public holidays for the country or region you choose are skipped automatically. Check the Calendar tab month view to confirm which days are listed, and add any that are missing as days off."
+    ],
+    [
+     "What if I just want one extra hour tomorrow?",
+     "From the day before, tap Sleep in to silence only the next ring; your routine stays as it is."
+    ],
+    [
+     "Does it need the internet?",
+     "Holiday data is built in and works offline. The app only goes online to download public holiday data updates."
+    ],
+    [
+     "Is it a real alarm?",
+     "Yes. EasyAM schedules real iOS system alarms and shows Alarms Ready only after iOS has confirmed them."
+    ]
+   ]
+  },
+  "en": {
+   "title": "Workday alarm in New Zealand: quiet on public holidays, ringing on work days",
+   "meta": "A workday alarm should ring Monday to Friday and stay quiet on Waitangi Day, Matariki and your annual leave without you touching it. Here is what to check and how to set one up in New Zealand.",
+   "h1": "Workday alarm: ring on work days, stay quiet on the rest",
+   "lead": "A weekday repeat alarm cannot tell a Tuesday at work from a Tuesday public holiday, so it rings anyway and you end up switching it off and on again.",
+   "answer": "A workday alarm is one alarm that knows your calendar: it rings on work days, skips public holidays for your country and your own days off, and still rings on the first work day back. Choose your country or region, confirm in the calendar which public holidays it will skip, add annual leave as days off, and check the next seven days before bed.",
+   "paras": [
+    "People searching for a workday alarm in New Zealand usually have the same problem: the alarm repeats Monday to Friday, but the year does not. Waitangi Day, Anzac Day, Matariki and the Christmas and New Year break fall on different weekdays each year, and every one of them means remembering to turn the alarm off the night before and back on the night after.",
+    "EasyAM skips public holidays for your country or region automatically, using built-in holiday data for 67 countries and regions that works offline and can be updated. Add annual leave, a trip or a sick day as a single day or a date range and those mornings stay quiet; the first work day back rings as usual. The app opens on your next seven days, so you can see which mornings will ring and when.",
+    "It uses real iOS system alarms and only shows Alarms Ready after iOS has confirmed the schedule. If holiday data is missing or out of date, that day counts as a work day, so the alarm rings rather than leaving you asleep. Check the Calendar tab month view: if a holiday you observe, such as your regional anniversary day, is not listed, add it yourself as a day off."
+   ],
+   "look": [
+    "Does it skip public holidays for your country or region without you editing anything?",
+    "Can you add annual leave or a trip as a date range, not one day at a time?",
+    "Does it still ring on the first work day after a long weekend?",
+    "Can you see the coming week's mornings at a glance before bed?",
+    "What happens if the holiday data is missing: does it ring or stay silent?"
+   ],
+   "steps": [
+    "Choose your country or region, then open the Calendar tab to see which public holidays it will skip.",
+    "Create one alarm with a weekly repeat for your work days and your usual wake-up time.",
+    "Add your annual leave, and any holiday you observe that the calendar does not list, as days off.",
+    "Give an early shift or a flight day its own ring time; the other days stay the same.",
+    "Before bed, check the next seven days and tap Sleep in if you only want to silence tomorrow."
+   ],
+   "rows": [
+    [
+     "Public holidays",
+     "Automatic skipping for your country",
+     "No more switching the alarm off the night before a public holiday"
+    ],
+    [
+     "Annual leave",
+     "Days off as date ranges",
+     "A two-week break stays quiet without daily changes"
+    ],
+    [
+     "First day back",
+     "Rings as usual after a day off",
+     "You do not oversleep after the long weekend"
+    ]
+   ],
+   "fits": "EasyAM fits office workers, teachers and shift workers in New Zealand who want one alarm that follows their real week: public holidays skipped, leave kept quiet, and the next seven mornings shown at a glance. It has Home Screen and Lock Screen widgets and an Apple Watch app, with no account, no ads and no tracking.",
+   "faq": [
+    [
+     "Will it ring on Waitangi Day or Matariki?",
+     "Public holidays for the country or region you choose are skipped automatically. Check the Calendar tab month view to confirm which days are listed, and add any that are missing as days off."
+    ],
+    [
+     "What if I just want one extra hour tomorrow?",
+     "From the day before, tap Sleep in to silence only the next ring; your routine stays as it is."
+    ],
+    [
+     "Does it need the internet?",
+     "Holiday data is built in and works offline. The app only goes online to download public holiday data updates."
+    ],
+    [
+     "Is it a real alarm?",
+     "Yes. EasyAM schedules real iOS system alarms and shows Alarms Ready only after iOS has confirmed them."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "lumibopomofo",
+  "locale": "en",
+  "market": "AU",
+  "term": "bopomofo",
+  "rank": 5,
+  "slug": "bopomofo-for-kids-in-australia-hear-the-sound-then-find-the-symbol",
+  "loc": {
+   "title": "Bopomofo for kids in Australia: hear the sound, then find the symbol",
+   "meta": "Bopomofo (Zhuyin) is 37 sound symbols plus tone marks used to teach Mandarin pronunciation in Taiwan. For families in Australia, start by ear, add tracing, then blend syllables, in a few minutes a day.",
+   "h1": "Bopomofo for kids: start by ear, then trace and blend",
+   "lead": "Your child hears Mandarin at home or on weekends, but in an English-speaking school day the Bopomofo symbols fade fast between lessons.",
+   "answer": "Bopomofo, also called Zhuyin, is a set of 37 symbols that each stand for a Mandarin sound, plus tone marks. Children learn it best by ear first: hear a sound and pick the matching symbol, then trace it in stroke order, then join initial, medial and final into a syllable with the right tone.",
+   "paras": [
+    "Parents in Australia searching for bopomofo are often Taiwanese-Australian families, or families who want a child to read the Traditional Chinese materials used in Taiwan. The symbols are not letters with English sounds, so a child who reads English can be thrown by them. Linking each symbol to a sound they hear, rather than to an English letter, avoids that mix-up.",
+    "Lumi Bopomofo teaches all 37 symbols by ear: your child hears a sound, picks the matching symbol and feeds it to a space friend. They trace each symbol in stroke order, ride the Tone Coaster to hear the tones, and link initial, medial and final on the Sound Train to blend a syllable. Today's Review brings back the symbols your child has not mastered yet.",
+    "Short, regular sessions matter more than long ones, especially when Mandarin only comes up at home or at a weekend class. The app plays offline with no ads and no sign-up, so it can be the same few minutes after school each day. The first symbol can be tried in the app, and all 37 symbols and every level unlock with a one-time in-app purchase."
+   ],
+   "look": [
+    "Does it teach the sound before the shape, not via English letters?",
+    "Can your child trace each symbol in the correct stroke order?",
+    "Are the tones practised by listening, not only shown as marks?",
+    "Does it move on to blending initial, medial and final into syllables?",
+    "Does it bring back the symbols your child keeps missing?"
+   ],
+   "steps": [
+    "Spend the first week on listening only: hear a sound, find the symbol.",
+    "Add tracing in stroke order for the symbols your child already recognises.",
+    "Play the tones by ear each day so the marks have a sound attached.",
+    "Start blending two- and three-part syllables once most symbols feel easy.",
+    "Finish each session with Today's Review so weak symbols come back the next day."
+   ],
+   "rows": [
+    [
+     "Recognising symbols",
+     "Sound-first matching",
+     "Avoids reading the symbols as English letters"
+    ],
+    [
+     "Writing",
+     "Stroke-order tracing",
+     "Builds correct writing habits from the start"
+    ],
+    [
+     "Reading syllables",
+     "Blending with tones",
+     "Turns single symbols into words your child can say"
+    ]
+   ],
+   "fits": "Lumi Bopomofo fits families in Australia who want a gentle, regular start to Chinese phonics at home: all 37 symbols by ear, stroke-order tracing, tones and syllable blending, with cute space friends and calm feedback. It plays offline with no ads and no sign-up.",
+   "faq": [
+    [
+     "What is the difference between Bopomofo and Zhuyin?",
+     "They are two names for the same system: 37 sound symbols and tone marks used to teach Mandarin pronunciation in Taiwan."
+    ],
+    [
+     "My child reads English. Will that get in the way?",
+     "It can if the symbols are taught as letters. Starting with the sound, then the symbol, keeps the two systems apart."
+    ],
+    [
+     "How long should a session be?",
+     "A few minutes a day works better than one long session a week; Today's Review then picks up what was missed."
+    ]
+   ]
+  },
+  "en": {
+   "title": "Bopomofo for kids in Australia: hear the sound, then find the symbol",
+   "meta": "Bopomofo (Zhuyin) is 37 sound symbols plus tone marks used to teach Mandarin pronunciation in Taiwan. For families in Australia, start by ear, add tracing, then blend syllables, in a few minutes a day.",
+   "h1": "Bopomofo for kids: start by ear, then trace and blend",
+   "lead": "Your child hears Mandarin at home or on weekends, but in an English-speaking school day the Bopomofo symbols fade fast between lessons.",
+   "answer": "Bopomofo, also called Zhuyin, is a set of 37 symbols that each stand for a Mandarin sound, plus tone marks. Children learn it best by ear first: hear a sound and pick the matching symbol, then trace it in stroke order, then join initial, medial and final into a syllable with the right tone.",
+   "paras": [
+    "Parents in Australia searching for bopomofo are often Taiwanese-Australian families, or families who want a child to read the Traditional Chinese materials used in Taiwan. The symbols are not letters with English sounds, so a child who reads English can be thrown by them. Linking each symbol to a sound they hear, rather than to an English letter, avoids that mix-up.",
+    "Lumi Bopomofo teaches all 37 symbols by ear: your child hears a sound, picks the matching symbol and feeds it to a space friend. They trace each symbol in stroke order, ride the Tone Coaster to hear the tones, and link initial, medial and final on the Sound Train to blend a syllable. Today's Review brings back the symbols your child has not mastered yet.",
+    "Short, regular sessions matter more than long ones, especially when Mandarin only comes up at home or at a weekend class. The app plays offline with no ads and no sign-up, so it can be the same few minutes after school each day. The first symbol can be tried in the app, and all 37 symbols and every level unlock with a one-time in-app purchase."
+   ],
+   "look": [
+    "Does it teach the sound before the shape, not via English letters?",
+    "Can your child trace each symbol in the correct stroke order?",
+    "Are the tones practised by listening, not only shown as marks?",
+    "Does it move on to blending initial, medial and final into syllables?",
+    "Does it bring back the symbols your child keeps missing?"
+   ],
+   "steps": [
+    "Spend the first week on listening only: hear a sound, find the symbol.",
+    "Add tracing in stroke order for the symbols your child already recognises.",
+    "Play the tones by ear each day so the marks have a sound attached.",
+    "Start blending two- and three-part syllables once most symbols feel easy.",
+    "Finish each session with Today's Review so weak symbols come back the next day."
+   ],
+   "rows": [
+    [
+     "Recognising symbols",
+     "Sound-first matching",
+     "Avoids reading the symbols as English letters"
+    ],
+    [
+     "Writing",
+     "Stroke-order tracing",
+     "Builds correct writing habits from the start"
+    ],
+    [
+     "Reading syllables",
+     "Blending with tones",
+     "Turns single symbols into words your child can say"
+    ]
+   ],
+   "fits": "Lumi Bopomofo fits families in Australia who want a gentle, regular start to Chinese phonics at home: all 37 symbols by ear, stroke-order tracing, tones and syllable blending, with cute space friends and calm feedback. It plays offline with no ads and no sign-up.",
+   "faq": [
+    [
+     "What is the difference between Bopomofo and Zhuyin?",
+     "They are two names for the same system: 37 sound symbols and tone marks used to teach Mandarin pronunciation in Taiwan."
+    ],
+    [
+     "My child reads English. Will that get in the way?",
+     "It can if the symbols are taught as letters. Starting with the sound, then the symbol, keeps the two systems apart."
+    ],
+    [
+     "How long should a session be?",
+     "A few minutes a day works better than one long session a week; Today's Review then picks up what was missed."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "claudeusagemini",
+  "locale": "en",
+  "market": "NZ",
+  "term": "ai usage tracker",
+  "rank": 12,
+  "slug": "ai-usage-tracker-new-zealand-reset-times-in-local-time-for-every-account",
+  "loc": {
+   "title": "AI usage tracker in New Zealand: every reset time in your local time",
+   "meta": "From New Zealand, AI limit resets often land at odd local hours. An AI usage tracker should show what is left on each plan and the exact reset time in your own time zone, across work and personal accounts.",
+   "h1": "AI usage tracker: see what is left and when it resets, in NZ time",
+   "lead": "Your Claude session limit runs out mid-afternoon in Auckland, and working out when it comes back means converting a time that was not written for you.",
+   "answer": "Use a tracker that puts every AI plan on one screen with a live countdown and the exact reset time in your local format, and that alerts you at a percentage you choose. Then plan long tasks around the next reset instead of discovering the wall halfway through.",
+   "paras": [
+    "Developers in New Zealand often work hours ahead of the teams and services they use, so a reset that is morning somewhere else can fall late at night or mid-afternoon here. Each tool also counts differently: Claude has a 5-hour session limit and weekly limits including per-model weekly caps, ChatGPT Codex has 5-hour and weekly windows, GitHub Copilot counts premium requests, chat and code completions, and Gemini has daily request quotas for each model.",
+    "UsageNow shows how much of each plan is left with a live countdown to every reset and the exact reset time written the way your region writes dates and times. Work and personal accounts sit side by side, and you can sort by 5-hour reset, weekly reset, highest or lowest usage, name or service, or drag them into your own order. Widgets on the Home Screen and Lock Screen flip through accounts and refresh with a tap.",
+    "Custom alerts let you choose the 5-hour limit, the weekly limit or all limits and type the percentage that matters to you, such as 90 or 98; each alert comes once per limit and cycle, and a reset alert tells you the moment a limit is back. You sign in on each service's own login page, the sign-in stays in your device's Keychain, and there is no UsageNow server, no account to create and no tracking. UsageNow is an independent app and is not affiliated with Anthropic, OpenAI, GitHub, Microsoft or Google."
+   ],
+   "look": [
+    "Are reset times shown in your local time and format, not only as a countdown?",
+    "Does it cover every tool you use, such as Claude, Codex, Copilot and Gemini?",
+    "Can work and personal accounts be compared side by side?",
+    "Can you set an alert at your own percentage before you hit the limit?",
+    "Where does your sign-in go: does it stay on the device?"
+   ],
+   "steps": [
+    "Add each AI account you use for work and personal projects.",
+    "Sort accounts by 5-hour reset so the one coming back soonest is on top.",
+    "Set an alert at 90 percent on the limit you hit most often.",
+    "Turn on a reset alert for the account you rely on for long agent runs.",
+    "Put a widget on your Home Screen and check it before you start a big task."
+   ],
+   "rows": [
+    [
+     "Planning a long task",
+     "Exact local reset time",
+     "You know whether it will finish before the cut-off"
+    ],
+    [
+     "Several accounts",
+     "Side-by-side sorting",
+     "You pick the account with the most left"
+    ],
+    [
+     "Avoiding surprises",
+     "Alerts at your own percentage",
+     "You switch tools before work stops"
+    ]
+   ],
+   "fits": "UsageNow fits developers in New Zealand who code with AI agents every day across several services and accounts: limits and reset times on one screen in local time, alerts before you run out, and widgets on iPhone and iPad plus Apple Watch complications. More accounts, usage alerts, widgets and Apple Watch come with a single one-time purchase, not a subscription.",
+   "faq": [
+    [
+     "Will the reset time be in New Zealand time?",
+     "Yes. UsageNow shows the exact reset time in your local format alongside a live countdown."
+    ],
+    [
+     "Can I track Claude and Codex together?",
+     "Yes. Claude, ChatGPT Codex, GitHub Copilot and Gemini limits sit together, each with its own countdown."
+    ],
+    [
+     "Is UsageNow made by Anthropic or OpenAI?",
+     "No. UsageNow is an independent app and is not affiliated with Anthropic, OpenAI, GitHub, Microsoft or Google."
+    ]
+   ]
+  },
+  "en": {
+   "title": "AI usage tracker in New Zealand: every reset time in your local time",
+   "meta": "From New Zealand, AI limit resets often land at odd local hours. An AI usage tracker should show what is left on each plan and the exact reset time in your own time zone, across work and personal accounts.",
+   "h1": "AI usage tracker: see what is left and when it resets, in NZ time",
+   "lead": "Your Claude session limit runs out mid-afternoon in Auckland, and working out when it comes back means converting a time that was not written for you.",
+   "answer": "Use a tracker that puts every AI plan on one screen with a live countdown and the exact reset time in your local format, and that alerts you at a percentage you choose. Then plan long tasks around the next reset instead of discovering the wall halfway through.",
+   "paras": [
+    "Developers in New Zealand often work hours ahead of the teams and services they use, so a reset that is morning somewhere else can fall late at night or mid-afternoon here. Each tool also counts differently: Claude has a 5-hour session limit and weekly limits including per-model weekly caps, ChatGPT Codex has 5-hour and weekly windows, GitHub Copilot counts premium requests, chat and code completions, and Gemini has daily request quotas for each model.",
+    "UsageNow shows how much of each plan is left with a live countdown to every reset and the exact reset time written the way your region writes dates and times. Work and personal accounts sit side by side, and you can sort by 5-hour reset, weekly reset, highest or lowest usage, name or service, or drag them into your own order. Widgets on the Home Screen and Lock Screen flip through accounts and refresh with a tap.",
+    "Custom alerts let you choose the 5-hour limit, the weekly limit or all limits and type the percentage that matters to you, such as 90 or 98; each alert comes once per limit and cycle, and a reset alert tells you the moment a limit is back. You sign in on each service's own login page, the sign-in stays in your device's Keychain, and there is no UsageNow server, no account to create and no tracking. UsageNow is an independent app and is not affiliated with Anthropic, OpenAI, GitHub, Microsoft or Google."
+   ],
+   "look": [
+    "Are reset times shown in your local time and format, not only as a countdown?",
+    "Does it cover every tool you use, such as Claude, Codex, Copilot and Gemini?",
+    "Can work and personal accounts be compared side by side?",
+    "Can you set an alert at your own percentage before you hit the limit?",
+    "Where does your sign-in go: does it stay on the device?"
+   ],
+   "steps": [
+    "Add each AI account you use for work and personal projects.",
+    "Sort accounts by 5-hour reset so the one coming back soonest is on top.",
+    "Set an alert at 90 percent on the limit you hit most often.",
+    "Turn on a reset alert for the account you rely on for long agent runs.",
+    "Put a widget on your Home Screen and check it before you start a big task."
+   ],
+   "rows": [
+    [
+     "Planning a long task",
+     "Exact local reset time",
+     "You know whether it will finish before the cut-off"
+    ],
+    [
+     "Several accounts",
+     "Side-by-side sorting",
+     "You pick the account with the most left"
+    ],
+    [
+     "Avoiding surprises",
+     "Alerts at your own percentage",
+     "You switch tools before work stops"
+    ]
+   ],
+   "fits": "UsageNow fits developers in New Zealand who code with AI agents every day across several services and accounts: limits and reset times on one screen in local time, alerts before you run out, and widgets on iPhone and iPad plus Apple Watch complications. More accounts, usage alerts, widgets and Apple Watch come with a single one-time purchase, not a subscription.",
+   "faq": [
+    [
+     "Will the reset time be in New Zealand time?",
+     "Yes. UsageNow shows the exact reset time in your local format alongside a live countdown."
+    ],
+    [
+     "Can I track Claude and Codex together?",
+     "Yes. Claude, ChatGPT Codex, GitHub Copilot and Gemini limits sit together, each with its own countdown."
+    ],
+    [
+     "Is UsageNow made by Anthropic or OpenAI?",
+     "No. UsageNow is an independent app and is not affiliated with Anthropic, OpenAI, GitHub, Microsoft or Google."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "onepageppt",
+  "locale": "en",
+  "market": "AU",
+  "term": "one page summary",
+  "rank": 12,
+  "slug": "one-page-summary-australia-uni-and-work-briefs-on-a-single-slide",
+  "loc": {
+   "title": "One page summary: from uni readings or a work report to a single slide",
+   "meta": "A one page summary works when the key points come first and the evidence fits on one page. Here is how to cut a long report, PDF or set of notes down to one 16:9 slide for a tutorial or a team meeting in Australia.",
+   "h1": "One page summary: key points first, everything on one slide",
+   "lead": "You have a 30-page PDF, a page of meeting notes and ten minutes before the tutorial or stand-up where you need to present it.",
+   "answer": "Write the one-line takeaway first, keep three to five supporting points as short headlines, and show any numbers as one honest chart. Everything else stays in the source document. If the summary has to be presented, put it on a single 16:9 slide rather than a dense page of text.",
+   "paras": [
+    "People searching for a one page summary in Australia are usually students condensing readings for a uni assignment or tutorial, or staff turning a report into a brief for a manager. The hard part is not shortening; it is deciding what the reader must take away and dropping the rest. A summary that keeps every section heading is just a smaller version of the original.",
+    "OnePage PPT reads typed notes, pasted text, screenshots, photos, PDFs and CSV tables, finds the key points and organises them into a single, presentation-ready 16:9 slide. Your content is summarised into headlines and turned into the right visual: numbers become column, bar, line, donut or funnel charts, steps a process flow, dates a timeline, two options a comparison. It only draws a chart the data can honestly support and never invents figures.",
+    "From there, six one-tap redesigns, from Cleaner to More Editorial, rebuild the slide with different chart forms, typography and layout, and you can lock any element and redesign around it. Tap any element to rewrite it, and use version history to go back to an earlier draft. Export an editable .pptx for PowerPoint, Keynote and Google Slides, a PDF, or a high-resolution PNG. Everything runs on your device, with no account and no network needed."
+   ],
+   "look": [
+    "Is the main conclusion stated in the first line?",
+    "Are there no more than five supporting points?",
+    "Is each number shown once, in a chart the data supports?",
+    "Can the summary be edited after it is made?",
+    "Can you export it in the format your tutor or manager uses?"
+   ],
+   "steps": [
+    "Add the source: paste the text, import the PDF or snap a photo of the notes.",
+    "Make the slide and read the headlines it picked out.",
+    "Rewrite the top line so it states your conclusion in one sentence.",
+    "Remove any point the reader does not need, then try a redesign until it reads cleanly.",
+    "Export a .pptx for the meeting or a PDF to attach to your submission."
+   ],
+   "rows": [
+    [
+     "Uni tutorial",
+     "Conclusion first, three points",
+     "You can present it in under two minutes"
+    ],
+    [
+     "Work brief",
+     "Numbers as one honest chart",
+     "The manager sees the trend without the spreadsheet"
+    ],
+    [
+     "Sharing afterwards",
+     "Editable .pptx or PDF export",
+     "Others can reuse or print it"
+    ]
+   ],
+   "fits": "OnePage PPT fits students and office workers who need to turn long material into one clear slide quickly: notes, PDFs, screenshots or CSV tables in, a 16:9 slide with headlines and a fitting chart out, editable and exportable as .pptx, PDF or PNG. Everything stays on your iPhone or iPad. Lifetime access is a single purchase, not a subscription.",
+   "faq": [
+    [
+     "How long should a one page summary be?",
+     "One page or one slide: a one-line takeaway and three to five supporting points. Detail stays in the source."
+    ],
+    [
+     "Can I make one from a PDF?",
+     "Yes. OnePage PPT imports PDFs, as well as typed notes, pasted text, screenshots, photos and CSV tables."
+    ],
+    [
+     "Will it make up numbers for the chart?",
+     "No. It only draws a chart the data can honestly support and never invents figures."
+    ],
+    [
+     "Can I edit it in PowerPoint afterwards?",
+     "Yes. Export an editable .pptx that opens in PowerPoint, Keynote and Google Slides."
+    ]
+   ]
+  },
+  "en": {
+   "title": "One page summary: from uni readings or a work report to a single slide",
+   "meta": "A one page summary works when the key points come first and the evidence fits on one page. Here is how to cut a long report, PDF or set of notes down to one 16:9 slide for a tutorial or a team meeting in Australia.",
+   "h1": "One page summary: key points first, everything on one slide",
+   "lead": "You have a 30-page PDF, a page of meeting notes and ten minutes before the tutorial or stand-up where you need to present it.",
+   "answer": "Write the one-line takeaway first, keep three to five supporting points as short headlines, and show any numbers as one honest chart. Everything else stays in the source document. If the summary has to be presented, put it on a single 16:9 slide rather than a dense page of text.",
+   "paras": [
+    "People searching for a one page summary in Australia are usually students condensing readings for a uni assignment or tutorial, or staff turning a report into a brief for a manager. The hard part is not shortening; it is deciding what the reader must take away and dropping the rest. A summary that keeps every section heading is just a smaller version of the original.",
+    "OnePage PPT reads typed notes, pasted text, screenshots, photos, PDFs and CSV tables, finds the key points and organises them into a single, presentation-ready 16:9 slide. Your content is summarised into headlines and turned into the right visual: numbers become column, bar, line, donut or funnel charts, steps a process flow, dates a timeline, two options a comparison. It only draws a chart the data can honestly support and never invents figures.",
+    "From there, six one-tap redesigns, from Cleaner to More Editorial, rebuild the slide with different chart forms, typography and layout, and you can lock any element and redesign around it. Tap any element to rewrite it, and use version history to go back to an earlier draft. Export an editable .pptx for PowerPoint, Keynote and Google Slides, a PDF, or a high-resolution PNG. Everything runs on your device, with no account and no network needed."
+   ],
+   "look": [
+    "Is the main conclusion stated in the first line?",
+    "Are there no more than five supporting points?",
+    "Is each number shown once, in a chart the data supports?",
+    "Can the summary be edited after it is made?",
+    "Can you export it in the format your tutor or manager uses?"
+   ],
+   "steps": [
+    "Add the source: paste the text, import the PDF or snap a photo of the notes.",
+    "Make the slide and read the headlines it picked out.",
+    "Rewrite the top line so it states your conclusion in one sentence.",
+    "Remove any point the reader does not need, then try a redesign until it reads cleanly.",
+    "Export a .pptx for the meeting or a PDF to attach to your submission."
+   ],
+   "rows": [
+    [
+     "Uni tutorial",
+     "Conclusion first, three points",
+     "You can present it in under two minutes"
+    ],
+    [
+     "Work brief",
+     "Numbers as one honest chart",
+     "The manager sees the trend without the spreadsheet"
+    ],
+    [
+     "Sharing afterwards",
+     "Editable .pptx or PDF export",
+     "Others can reuse or print it"
+    ]
+   ],
+   "fits": "OnePage PPT fits students and office workers who need to turn long material into one clear slide quickly: notes, PDFs, screenshots or CSV tables in, a 16:9 slide with headlines and a fitting chart out, editable and exportable as .pptx, PDF or PNG. Everything stays on your iPhone or iPad. Lifetime access is a single purchase, not a subscription.",
+   "faq": [
+    [
+     "How long should a one page summary be?",
+     "One page or one slide: a one-line takeaway and three to five supporting points. Detail stays in the source."
+    ],
+    [
+     "Can I make one from a PDF?",
+     "Yes. OnePage PPT imports PDFs, as well as typed notes, pasted text, screenshots, photos and CSV tables."
+    ],
+    [
+     "Will it make up numbers for the chart?",
+     "No. It only draws a chart the data can honestly support and never invents figures."
+    ],
+    [
+     "Can I edit it in PowerPoint afterwards?",
+     "Yes. Export an editable .pptx that opens in PowerPoint, Keynote and Google Slides."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "mochi",
+  "locale": "en",
+  "market": "AU",
+  "term": "checklist",
+  "rank": 16,
+  "slug": "checklist-app-australia-christmas-prep-errands-and-chores-before-summer-holidays",
+  "loc": {
+   "title": "Checklist for Christmas prep, errands and chores before the summer holidays",
+   "meta": "In Australia, December stacks Christmas prep, end-of-year errands and summer holiday chores into a few weeks. A checklist works when it is short, split by today and later, and visible on your Home Screen.",
+   "h1": "Checklist: keep December's errands and chores short and visible",
+   "lead": "End of school, work break-ups, Christmas shopping and getting ready for a summer trip all land in the same few weeks, and one long list stops being useful by the second week.",
+   "answer": "Split the season into a short list for today and a list for the rest of the week, give each task a small emoji so you can scan it, and keep today's list on your Home Screen or Apple Watch. Tick tasks off as you go and move one task from the week list when a slot opens up.",
+   "paras": [
+    "People looking for a checklist in late spring in Australia usually have more than one kind of task: gifts and food for Christmas, errands before shops close for the holidays, and chores before a summer trip. Putting all of it on one long list hides what matters today. Two short lists, one for today and one for later, keep the next step obvious.",
+    "Mochi is a cute, cosy to-do list where every task can get its own little emoji; tap the circle when you're done. Plan study, work, shopping lists, habits and daily routines in one place, with reminders that help you stay on track. Keep your list on a Home Screen widget and Apple Watch so you can see it without opening the app.",
+    "Switch between 101 themes, and use each task's emoji to tell gifts, groceries and chores apart at a glance. Premium, an in-app purchase, unlocks unlimited lists and tasks, all 101 themes and all 11 emoji sets."
+   ],
+   "look": [
+    "Can you keep today's tasks separate from the rest of the week?",
+    "Can you see the list on your Home Screen or watch without opening the app?",
+    "Is ticking a task off quick enough to do in a shop aisle?",
+    "Can tasks be told apart at a glance, for example with emoji?",
+    "Do reminders help you stay on track on busy days?"
+   ],
+   "steps": [
+    "Make a Today list and a This week list for December.",
+    "Write each task as one action, such as Buy wrapping paper, not Christmas.",
+    "Give each task an emoji for its type: gifts, groceries, chores.",
+    "Add the widget to your Home Screen and tick tasks off as you finish them.",
+    "Each evening, move one or two tasks from This week into Today."
+   ],
+   "rows": [
+    [
+     "Christmas shopping",
+     "Short list with emoji",
+     "You can scan it in the shop"
+    ],
+    [
+     "Errands before the break",
+     "Reminders",
+     "Nothing slips past the last day shops are open"
+    ],
+    [
+     "Chores before a trip",
+     "Home Screen widget and Apple Watch",
+     "Today's tasks are visible without opening the app"
+    ]
+   ],
+   "fits": "Mochi fits people who want a checklist that feels light rather than another productivity system: cute emoji tasks, a satisfying tap to finish, reminders, a Home Screen widget and Apple Watch, and 101 themes. It covers study, work, shopping lists, chores, habits and routines in one place.",
+   "faq": [
+    [
+     "How many tasks should a daily checklist have?",
+     "Few enough to finish. A short Today list with the rest on a week list works better than one long list."
+    ],
+    [
+     "Can I see my checklist without opening the app?",
+     "Yes. Mochi keeps your list on a Home Screen widget and on Apple Watch."
+    ],
+    [
+     "Can I use it for groceries as well as chores?",
+     "Yes. Mochi covers tasks, errands, grocery lists, chores, habits and daily routines."
+    ]
+   ]
+  },
+  "en": {
+   "title": "Checklist for Christmas prep, errands and chores before the summer holidays",
+   "meta": "In Australia, December stacks Christmas prep, end-of-year errands and summer holiday chores into a few weeks. A checklist works when it is short, split by today and later, and visible on your Home Screen.",
+   "h1": "Checklist: keep December's errands and chores short and visible",
+   "lead": "End of school, work break-ups, Christmas shopping and getting ready for a summer trip all land in the same few weeks, and one long list stops being useful by the second week.",
+   "answer": "Split the season into a short list for today and a list for the rest of the week, give each task a small emoji so you can scan it, and keep today's list on your Home Screen or Apple Watch. Tick tasks off as you go and move one task from the week list when a slot opens up.",
+   "paras": [
+    "People looking for a checklist in late spring in Australia usually have more than one kind of task: gifts and food for Christmas, errands before shops close for the holidays, and chores before a summer trip. Putting all of it on one long list hides what matters today. Two short lists, one for today and one for later, keep the next step obvious.",
+    "Mochi is a cute, cosy to-do list where every task can get its own little emoji; tap the circle when you're done. Plan study, work, shopping lists, habits and daily routines in one place, with reminders that help you stay on track. Keep your list on a Home Screen widget and Apple Watch so you can see it without opening the app.",
+    "Switch between 101 themes, and use each task's emoji to tell gifts, groceries and chores apart at a glance. Premium, an in-app purchase, unlocks unlimited lists and tasks, all 101 themes and all 11 emoji sets."
+   ],
+   "look": [
+    "Can you keep today's tasks separate from the rest of the week?",
+    "Can you see the list on your Home Screen or watch without opening the app?",
+    "Is ticking a task off quick enough to do in a shop aisle?",
+    "Can tasks be told apart at a glance, for example with emoji?",
+    "Do reminders help you stay on track on busy days?"
+   ],
+   "steps": [
+    "Make a Today list and a This week list for December.",
+    "Write each task as one action, such as Buy wrapping paper, not Christmas.",
+    "Give each task an emoji for its type: gifts, groceries, chores.",
+    "Add the widget to your Home Screen and tick tasks off as you finish them.",
+    "Each evening, move one or two tasks from This week into Today."
+   ],
+   "rows": [
+    [
+     "Christmas shopping",
+     "Short list with emoji",
+     "You can scan it in the shop"
+    ],
+    [
+     "Errands before the break",
+     "Reminders",
+     "Nothing slips past the last day shops are open"
+    ],
+    [
+     "Chores before a trip",
+     "Home Screen widget and Apple Watch",
+     "Today's tasks are visible without opening the app"
+    ]
+   ],
+   "fits": "Mochi fits people who want a checklist that feels light rather than another productivity system: cute emoji tasks, a satisfying tap to finish, reminders, a Home Screen widget and Apple Watch, and 101 themes. It covers study, work, shopping lists, chores, habits and routines in one place.",
+   "faq": [
+    [
+     "How many tasks should a daily checklist have?",
+     "Few enough to finish. A short Today list with the rest on a week list works better than one long list."
+    ],
+    [
+     "Can I see my checklist without opening the app?",
+     "Yes. Mochi keeps your list on a Home Screen widget and on Apple Watch."
+    ],
+    [
+     "Can I use it for groceries as well as chores?",
+     "Yes. Mochi covers tasks, errands, grocery lists, chores, habits and daily routines."
+    ]
+   ]
+  }
  }
 ]

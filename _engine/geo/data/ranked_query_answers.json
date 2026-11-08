@@ -35243,5 +35243,129 @@
     ]
    ]
   }
+ },
+ {
+  "key": "battai",
+  "locale": "ja",
+  "market": "JP",
+  "term": "バッテリー 最大容量",
+  "rank": 2,
+  "slug": "iphone-maximum-capacity-japan-read-the-trend-not-one-number",
+  "loc": {
+   "title": "iPhoneの「最大容量」の見方：今の数字より、下がるペースを記録する｜BattAI",
+   "meta": "設定の「バッテリー」に出る最大容量は、その日の数字だけ。速く下がっているのか、交換を急ぐべきかを、記録した推移で判断する方法をまとめました。BattAIは入力した最大容量をスコアとグラフにします。",
+   "h1": "iPhoneの最大容量：1回の数字ではなく推移で読む",
+   "lead": "「最大容量 87%」と表示されても、それが速く下がっているのか、ゆっくりなのかは設定ではわかりません。数週間ぶんの記録があれば、充電習慣を見直すべきか、交換を考えるべきかが見えてきます。",
+   "answer": "最大容量は、新品のときと比べて今どれだけ電気をためられるかを示す数字で、iPhoneの設定の「バッテリー」で確認できます。設定に出るのはその時点の値だけなので、日付と一緒に記録し、月ごとにどれだけ下がったかを見るのが実用的です。80%前後が交換検討の目安とよく言われますが、1回の数字より、下がるペースと実際の持ちのほうが判断材料になります。",
+   "paras": [
+    "1回の値だけでは、最大容量が速く下がっているのかどうかは判断できません。2〜4週間おきに同じように確認して記録し、傾向で見るほうが確かです。記録の間隔が1か月以上あれば、月あたりの下がり幅として比べられます。",
+    "下がるペースを振り返るときは、熱と充電のしかたも一緒に見ておくと役立ちます。充電中に本体が熱くなることが多いか、100%のまま長く置いているか、夜間充電が続いているかなど、習慣の記録があれば、数字が下がったときに理由を考えやすくなります。",
+    "BattAIでは、設定に表示される最大容量を入力するとすぐに0〜100点のバッテリー状態スコアが出て、記録した最大容量をグラフにし、95%信頼区間も表示します。記録の間隔が30日以上あれば、月ごとの容量変化も表示されます。最大容量はBattAI自体では読み取れないため、ご自身で入力するか、システムの解析データ（log-aggregatedファイル）から取り込みます。"
+   ],
+   "look": [
+    "今の最大容量と、それを確認した日付",
+    "前回の記録から何%下がったか",
+    "記録の間隔が30日以上あいているか",
+    "充電中に本体が熱くなることが多いか",
+    "100%のまま長く置く充電習慣があるか"
+   ],
+   "steps": [
+    "設定の「バッテリー」で今の最大容量を確認し、日付と一緒に記録します。",
+    "ふだんどおり使いながら、充電と発熱のくせも記録しておきます。",
+    "2〜4週間後、もう一度最大容量を確認して記録します。",
+    "30日以上の記録がたまったら、月ごとの下がり幅を確認します。",
+    "下がるペースと実際の持ちを見て、充電習慣を見直すか交換を検討するかを決めます。"
+   ],
+   "rows": [
+    [
+     "今の数字",
+     "設定の最大容量",
+     "その日の値だけで、下がる速さはわかりません"
+    ],
+    [
+     "推移",
+     "月ごとの下がり幅",
+     "速く下がっていれば交換時期の判断材料になります"
+    ],
+    [
+     "振り返り",
+     "発熱と充電習慣",
+     "下がったときに理由を考える手がかりになります"
+    ]
+   ],
+   "fits": "BattAIは、最大容量を一度見て終わりにせず、記録して推移で判断したい方に向いています。最大容量の入力で出るバッテリー状態スコア、最大容量の推移グラフと月ごとの変化、充電ケアスコア、80%・90%・100%の充電通知と発熱の通知、売却用レポートがあり、ホーム画面・ロック画面のウィジェットとApple Watchでも確認できます。",
+   "faq": [
+    [
+     "最大容量が何%になったら交換ですか？",
+     "80%前後がよく目安とされますが、1回の数字より、下がるペースと実際の持ちのほうが大切です。数週間ぶん記録してから判断しましょう。"
+    ],
+    [
+     "BattAIは最大容量を自動で読み取りますか？",
+     "いいえ。設定に表示される値を入力するか、システムの解析データ（log-aggregatedファイル）から取り込みます。"
+    ],
+    [
+     "データはサーバーに送られますか？",
+     "いいえ。アカウント、追跡、通信はなく、データはこの端末に保存されます。"
+    ]
+   ]
+  },
+  "en": {
+   "title": "How to read iPhone Maximum Capacity: track how fast it falls, not one number",
+   "meta": "Maximum Capacity in Settings > Battery is only that day's number. Here is how to judge from a recorded trend whether it is falling fast and whether a replacement is near. BattAI turns the capacity you enter into a score and a chart.",
+   "h1": "iPhone Maximum Capacity: read the trend, not one number",
+   "lead": "Seeing 'Maximum Capacity 87%' does not tell you whether it is falling fast or slowly. A few weeks of records show whether to change charging habits or start thinking about a replacement.",
+   "answer": "Maximum Capacity shows how much charge the battery can hold compared with when it was new, and you can check it under Battery in iPhone Settings. Settings only shows the current value, so the practical approach is to note it with the date and look at how much it drops per month. Around 80% is often cited as the point to consider a replacement, but how fast it falls and how long the phone really lasts matter more than one number.",
+   "paras": [
+    "One reading cannot tell you whether Maximum Capacity is falling quickly. Checking and recording it every two to four weeks and looking at the trend is more reliable. With a month or more between records you can compare the drop per month.",
+    "When you look back at the pace, it helps to record heat and charging habits too: whether the phone often gets hot while charging, sits at 100% for long, or charges overnight. With those habits on record, it is easier to find a reason when the number drops.",
+    "In BattAI, entering the Maximum Capacity shown in Settings gives a 0 to 100 battery health score right away, and the recorded capacity is charted with a 95% confidence band. With 30 days or more between records, the monthly capacity change is shown too. BattAI cannot read Maximum Capacity by itself, so you enter it or import it from a system analytics file (log-aggregated)."
+   ],
+   "look": [
+    "Today's Maximum Capacity and the date you checked it",
+    "How many points it dropped since the last record",
+    "Whether 30 days or more separate your records",
+    "Whether the phone often gets hot while charging",
+    "Whether it often sits at 100% for long"
+   ],
+   "steps": [
+    "Check today's Maximum Capacity under Battery in Settings and note it with the date.",
+    "Use the phone as usual while recording charging and heat habits.",
+    "Two to four weeks later, check Maximum Capacity again and note it.",
+    "Once records span 30 days or more, check the drop per month.",
+    "Look at the pace and real battery life to decide between changing habits and considering a replacement."
+   ],
+   "rows": [
+    [
+     "Current number",
+     "Maximum Capacity in Settings",
+     "One day's value does not show how fast it falls"
+    ],
+    [
+     "Trend",
+     "Drop per month",
+     "A fast drop helps you judge when to replace"
+    ],
+    [
+     "Look back",
+     "Heat and charging habits",
+     "They give clues when the number drops"
+    ]
+   ],
+   "fits": "BattAI suits people who want to record Maximum Capacity and judge from the trend rather than look once. It has a battery health score from the capacity you enter, a Maximum Capacity trend chart with monthly change, a charging care score, 80, 90 and 100% charge alerts and heat alerts, and a resale report, with Home Screen and Lock Screen widgets and Apple Watch.",
+   "faq": [
+    [
+     "At what Maximum Capacity should I replace the battery?",
+     "Around 80% is often cited, but how fast it falls and your real battery life matter more than one number. Record a few weeks before deciding."
+    ],
+    [
+     "Does BattAI read Maximum Capacity automatically?",
+     "No. You enter the value shown in Settings or import it from a system analytics file (log-aggregated)."
+    ],
+    [
+     "Is my data sent to a server?",
+     "No. There is no account, no tracking and no network traffic; the data stays on this device."
+    ]
+   ]
+  }
  }
 ]

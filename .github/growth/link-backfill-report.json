@@ -1,18 +1,42 @@
 {
- "generated": "2026-11-08T00:44:22Z",
+ "generated": "2026-11-08T18:00:28Z",
  "mode": "apply",
  "counts": {
-  "ok_reply": 52,
+  "ok_reply": 54,
   "unknown_app": 47,
-  "ok_backfilled_earlier": 51,
+  "ok_backfilled_earlier": 53,
   "backfilled": 2,
-  "ok_store_only": 679,
+  "ok_store_only": 677,
   "ok_bio_link": 68,
   "ok_caption": 4,
   "taken_down": 4,
   "missing": 3
  },
  "rows": [
+  {
+   "channel": "threads",
+   "id": "18156550522534193",
+   "permalink": "https://www.threads.com/@hourstag.app/post/Dfe1YVnEb1m",
+   "date": "2026-11-08",
+   "app": "lumiweather",
+   "status": "ok_reply",
+   "text": "明天（11/9 週一）穿什麼？ 台北 17–24°C 台中 17–26°C 高雄 21–28°C 以台北來說，舒服：短袖或薄長袖，進冷氣房帶一件薄外套。 高雄明天可能下雨，記得帶傘。 #明天穿什麼 #天氣 預報：MET Norway，僅供參考，出門前以實際天氣為準。 我做的 Lu",
+   "why": "brand",
+   "ios_id": "6779552704",
+   "locale": "zh-Hant"
+  },
+  {
+   "channel": "threads",
+   "id": "17897902926611225",
+   "permalink": "https://www.threads.com/@hourstag.app/post/Dfdnd2QDqZs",
+   "date": "2026-11-08",
+   "app": "mochi",
+   "status": "ok_reply",
+   "text": "Starting my reset now instead of waiting for January. One small checklist for the rest of the year: drink water, a short walk, read before b",
+   "why": "trial",
+   "ios_id": "6785004775",
+   "locale": "en-US"
+  },
   {
    "channel": "threads",
    "id": "18387235468239990",
@@ -1103,16 +1127,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdaFuVEH5nM",
    "date": "2026-09-18",
    "app": "snapport",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "Passbild für Ausweis Visum. Erstelle Passbilder sowie Visum- und Ausweisfotos bequem zu Hause – ruhig und privat. Snapport: Passbild & Auswe",
    "why": "url+brand",
    "ios_id": "6780575828",
-   "locale": "other",
-   "own_replies": [],
-   "comment_id": "18116017180844542",
-   "at": "2026-11-08T00:41:47Z",
-   "verified": true,
-   "via": "list"
+   "locale": "other"
   },
   {
    "channel": "threads",
@@ -1156,16 +1175,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdaYLrHCYSh",
    "date": "2026-09-18",
    "app": "hourstag",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "That impulse buy did not cost you money. It cost you a whole workday. Our app, not a ranking: Review spending as work hours, with a saved hi",
    "why": "url+brand",
    "ios_id": "6754218117",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "18109211429340130",
-   "at": "2026-11-08T00:41:47Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",
@@ -1173,11 +1187,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdYF9EEmBeS",
    "date": "2026-09-18",
    "app": "scanto",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "A document scanner that keeps everything on your device — even OCR. ScanTo Pro turns paper into crisp, tidy PDFs in seconds: receipts, contr",
    "why": "url+brand",
    "ios_id": "6779977651",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "17925084303224672",
+   "at": "2026-11-08T17:57:47Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -1185,11 +1204,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdY8VA4iXue",
    "date": "2026-09-17",
    "app": "lumibopomofo",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "注音・中国語フォニックス。 Lumi ボポモフォは、小さなお子さまが中国語の注音(ボポモフォ/Zhuyin)を、やさしく楽しく学べるアプリです。 Lumi ボポモフォ App Store で見つかります: https://apps.apple.com/jp/app/id67730",
    "why": "url+brand",
    "ios_id": "6773017109",
-   "locale": "ja"
+   "locale": "ja",
+   "own_replies": [],
+   "comment_id": "18118404116102527",
+   "at": "2026-11-08T17:57:47Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",

@@ -1,12 +1,12 @@
 {
- "generated": "2026-11-07T19:30:32Z",
+ "generated": "2026-11-08T00:44:22Z",
  "mode": "apply",
  "counts": {
-  "ok_reply": 51,
+  "ok_reply": 52,
   "unknown_app": 47,
-  "ok_backfilled_earlier": 49,
+  "ok_backfilled_earlier": 51,
   "backfilled": 2,
-  "ok_store_only": 681,
+  "ok_store_only": 679,
   "ok_bio_link": 68,
   "ok_caption": 4,
   "taken_down": 4,
@@ -36,6 +36,18 @@
    "why": "brand",
    "ios_id": "6785004775",
    "locale": "zh-Hant"
+  },
+  {
+   "channel": "threads",
+   "id": "17980945976915217",
+   "permalink": "https://www.threads.com/@hourstag.app/post/DfayWiAE7gB",
+   "date": "2026-11-07",
+   "app": "lumimission",
+   "status": "ok_reply",
+   "text": "集星星任务・家务计划・电子宠物。 要三到七岁的孩子乖乖刷牙、吃完饭、收玩具,不该每天都像打仗。 Lumi Mission Planet：儿童习惯奖励贴纸",
+   "why": "brand",
+   "ios_id": "6779750237",
+   "locale": "ja"
   },
   {
    "channel": "threads",
@@ -1079,16 +1091,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdalD1EibAp",
    "date": "2026-09-18",
    "app": "mochi",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "Planeje o dia com leveza. Mochi deixa sua lista de tarefas mais fofa, calma e gostosa de usar. Mochi: Lista fofa Se quiser testar, é por aqu",
    "why": "url+brand",
    "ios_id": "6785004775",
-   "locale": "other",
-   "own_replies": [],
-   "comment_id": "18138959092632330",
-   "at": "2026-11-07T19:27:53Z",
-   "verified": true,
-   "via": "list"
+   "locale": "other"
   },
   {
    "channel": "threads",
@@ -1096,11 +1103,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdaFuVEH5nM",
    "date": "2026-09-18",
    "app": "snapport",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "Passbild für Ausweis Visum. Erstelle Passbilder sowie Visum- und Ausweisfotos bequem zu Hause – ruhig und privat. Snapport: Passbild & Auswe",
    "why": "url+brand",
    "ios_id": "6780575828",
-   "locale": "other"
+   "locale": "other",
+   "own_replies": [],
+   "comment_id": "18116017180844542",
+   "at": "2026-11-08T00:41:47Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -1132,16 +1144,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdaYMbzCV_r",
    "date": "2026-09-18",
    "app": "lumiweather",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "週末想帶孩子出門，查了三個天氣 APP,還是不知道能不能去。 開發者分享，非獨立評比。家長出門前可看年齡相關的出遊指數與穿搭建議。免費版先體驗，更多功能需一次性內購永久解鎖；天氣參考不等於安全保證。 Lumi Weather App Store 上找得到: https://app",
    "why": "url+brand",
    "ios_id": "6779552704",
-   "locale": "zh-Hant",
-   "own_replies": [],
-   "comment_id": "18111082634620269",
-   "at": "2026-11-07T19:27:53Z",
-   "verified": true,
-   "via": "list"
+   "locale": "zh-Hant"
   },
   {
    "channel": "threads",
@@ -1149,11 +1156,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdaYLrHCYSh",
    "date": "2026-09-18",
    "app": "hourstag",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "That impulse buy did not cost you money. It cost you a whole workday. Our app, not a ranking: Review spending as work hours, with a saved hi",
    "why": "url+brand",
    "ios_id": "6754218117",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "18109211429340130",
+   "at": "2026-11-08T00:41:47Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",

@@ -21,6 +21,8 @@
 第三批（2026-11-08，審核員門檻：只做名次 ≤20 的詞）：
 - Metro Time Helper 韓國「타이베이 지하철」第 6（aso/search_reality/metrotimehelper.json；韓國遊客）。
   只產生這一頁（ops 單頁執行把 g3.PAGE_SPECS 換成本頁），不重寫前兩批已被補智慧橫幅的頁。
+- Mochi 韓國「귀여운 투두리스트」第 5（「할 일 목록」第 7）；Mochi DoneStamp 美國「last done」第 7（aso/search_reality/<key>.json）。
+  同樣只單頁產生這兩頁。
 - 100 Notes Studio 日本「手書きノート」（建議第 1、名稱已含；美國 digital notebook 同在 12 名外，日文較近）。
 - OnePage PPT 美國「one page summary」（推論，無量測；同類實測詞 presentation maker 第 90）。
 - PhotoCream 日本「フィルムカメラ 加工」（「フィルムカメラ」建議第 4，副標已命中）。
@@ -1047,6 +1049,110 @@ PAGE_SPECS: list[dict] = [
         ],
         "related": [("ko/hubs/metrotimehelper.html", "타이베이 지하철 시간 도우미 자주 묻는 질문")],
         "legal": "이 페이지에서 소개하는 앱은 독립적으로 개발되었으며 타이베이 대중교통공사(台北大眾捷運股份有限公司)와 관련이 없습니다. App Store 검색 결과는 2026년에 직접 검색한 것으로, 순서는 바뀔 수 있습니다.",
+    },
+    # 20 Mochi × 韓國「귀여운 투두리스트」（第 5；「할 일 목록」第 7；名稱詞照品牌描述，不談改名）
+    {
+        "key": "mochi", "lang": "ko",
+        "slug": "gwiyeoun-todolist-app-hal-il-mokrok-kkujunhi",
+        "terms": ["귀여운 투두리스트", "할 일 목록", "할일 체크리스트"],
+        "title": "귀여운 투두리스트 앱 고르는 법: 할 일 목록을 매일 열고 싶게 만드는 다섯 가지",
+        "desc": "할 일 목록을 만들어도 사흘이면 안 열게 되나요? 계속 쓰게 되는 귀여운 투두리스트를 고르는 기준과, 이모지와 테마로 매일 열고 싶어지는 Mochi 사용법을 한국어로 정리했습니다. 한국 App Store 링크 포함.",
+        "h1": "귀여운 투두리스트: 할 일 목록을 계속 쓰게 만드는 고르는 법",
+        "lead": "App Store에서 ‘귀여운 투두리스트’나 ‘할 일 목록’을 검색하는 사람은 대부분 머릿속에 할 일이 넘쳐서 일단 적어 두고 싶은 상태입니다. 공부, 업무, 장보기, 집안일까지 적을 것은 많은데, 지금까지 쓴 앱은 며칠 지나면 손이 가지 않았던 경험이 있을 거예요.",
+        "intro": [
+            "투두리스트가 오래가지 않는 이유는 기능이 부족해서가 아닌 경우가 많습니다. 열 때마다 숙제처럼 느껴지거나, 화면이 딱딱해서 기분이 나지 않거나, 어디에 무엇을 적었는지 헷갈리기 때문입니다. 매일 쓰는 도구일수록 보기 좋은 화면과 체크할 때의 작은 성취감이 중요합니다.",
+            "2026년에 한국 App Store에서 ‘귀여운 투두리스트’와 ‘할 일 목록’을 직접 검색해 보았습니다. 아래에서는 계속 쓰게 되는 투두리스트를 고를 때 확인할 점과, Mochi를 실제로 어떻게 쓰는지 App Store 소개 내용 그대로 정리했습니다.",
+        ],
+        "sections": [
+            ("계속 쓰게 되는 투두리스트, 이 다섯 가지를 확인하세요", [], [
+                "체크하는 순간이 기분 좋은가: Mochi에서는 할 일을 끝내면 작은 동그라미를 탭합니다. 체크할 때마다 하루가 조금씩 가벼워지는 걸 느낄 수 있어요.",
+                "한눈에 알아볼 수 있는가: 할 일마다 작은 이모지를 붙일 수 있어서 글자를 다 읽지 않아도 무슨 일인지 바로 알 수 있습니다.",
+                "기분에 맞게 바꿀 수 있는가: 여러 가지 테마로 바꿔 가며 쓸 수 있어 매일 여는 일이 즐거워집니다.",
+                "앱을 열지 않아도 보이는가: 홈 화면 위젯과 Apple Watch에서 할 일을 바로 확인할 수 있습니다.",
+                "잊지 않게 도와주는가: 중요한 일을 위한 알림으로 놓치기 쉬운 일을 챙겨 줍니다.",
+            ]),
+            ("이런 때 쓰기 좋아요", [
+                "시험 공부: 과목별로 남은 범위와 과제를 적고, 끝낸 단원부터 작은 동그라미를 탭하세요. 남은 공부가 눈에 보이니 다음에 무엇을 할지 고민하는 시간이 줄어듭니다. 홈 화면 위젯과 알림으로 오늘 할 공부도 챙길 수 있어요.",
+                "업무: 그날 할 일을 데일리 플래너처럼 나열하고 일정 관리에도 활용하세요. 위젯에 띄워 두면 컴퓨터를 켜기 전에 오늘 할 일을 확인할 수 있습니다.",
+                "장보기와 집안일: 쇼핑 리스트, 습관, 하루 루틴까지 한 곳에서 귀엽게 정리할 수 있습니다. 연말 대청소처럼 할 일이 한꺼번에 늘어나는 시기에도 편리해요.",
+            ], []),
+            ("귀엽기만 한 게 아니라 매일 쓰는 도구로", [
+                "간단하고 직관적인 체크리스트라서 처음 써도 헤매지 않습니다. 습관과 루틴 트래킹, 메모도 함께 쓸 수 있어 수첩이나 포스트잇을 여러 장 들고 다닐 필요가 없습니다.",
+                "Mochi는 할 일마다 작은 이모지를 붙일 수 있는 귀엽고 포근한 투두리스트예요. 정리를 더 귀엽고 편안하게 시작하고 싶은 사람을 위해 만들어졌습니다.",
+            ], []),
+        ],
+        "steps_title": "첫 할 일 목록, 다섯 단계로 시작하기",
+        "steps": [
+            "Mochi를 열고 새 목록을 만듭니다.",
+            "할 일을 적고 할 일마다 이모지를 붙입니다.",
+            "마음에 드는 테마를 골라 바꿉니다.",
+            "홈 화면에 위젯을 놓아 언제든 확인할 수 있게 합니다.",
+            "끝낸 일은 작은 동그라미를 탭해 체크합니다.",
+        ],
+        "cards": [
+            ("mochi", "Mochi는 할 일마다 작은 이모지를 붙일 수 있는 귀엽고 포근한 투두리스트예요. 끝나면 작은 동그라미를 탭하고, 여러 가지 테마로 바꿔 가며 쓰세요. 홈 화면 위젯과 Apple Watch에서 할 일을 바로 확인할 수 있고, 공부, 업무, 장보기, 습관, 하루 루틴까지 한 곳에서 귀엽게 정리할 수 있습니다. 중요한 일을 위한 알림도 있어요."),
+        ],
+        "faqs": [
+            ("홈 화면에서 할 일을 확인할 수 있나요?", "네. 홈 화면 위젯과 Apple Watch에서 할 일을 바로 확인할 수 있습니다."),
+            ("장보기 목록으로도 쓸 수 있나요?", "네. 공부, 업무, 장보기, 습관, 하루 루틴까지 한 곳에서 정리할 수 있습니다."),
+            ("알림 기능이 있나요?", "있습니다. 중요한 일을 위한 알림으로 놓치기 쉬운 일을 챙겨 줍니다."),
+            ("화면 분위기를 바꿀 수 있나요?", "여러 가지 테마로 바꿔 가며 쓸 수 있고, 할 일마다 작은 이모지도 붙일 수 있습니다."),
+        ],
+        "related": [("ko/hubs/mochi.html", "Mochi 자주 묻는 질문"),
+                    ("ko/answers/cute-to-do-list-for-exam-season-that-you-keep-using.html", "시험 기간에도 쓰는 귀여운 투두리스트 만드는 법")],
+        "legal": "이 페이지에서 소개하는 앱은 독립적으로 개발되었습니다. App Store 검색 결과는 2026년에 직접 검색한 것으로, 순서는 바뀔 수 있습니다.",
+    },
+    # 21 Mochi DoneStamp × 美國「last done」（第 7；前 10 有 8 個弱對手）
+    {
+        "key": "mochidonestamp", "lang": "en",
+        "slug": "last-done-app-see-how-long-since-chores",
+        "terms": ["last done", "last time tracker", "days since"],
+        "title": "Last Done Apps: How to Always Know When You Last Did a Chore (and When It's Due)",
+        "desc": "When did you last change the sheets, replace the AC filter, or change the car's oil? What to look for in a last done app, and how Mochi DoneStamp logs it with one tap and counts the next date from the day you actually did it. With a link to the US App Store.",
+        "h1": "Last done: stop guessing when you last changed the filter",
+        "lead": "People who search the App Store for “last done” usually have one nagging question in their head: when did I actually do this the last time? The bedsheets, the water filter, the car’s oil, the dog’s flea treatment, watering the fern on the windowsill.",
+        "intro": [
+            "A normal to-do list is built for things you do once. Household upkeep is different: the same jobs come back again and again, and what you need to know is not “is it done?” but “how long has it been?”. A reminder that fires every first of the month also drifts away from reality the moment you do the job a week late. What helps is a log of the real date, plus a reminder that counts forward from that day.",
+            "In 2026 we searched the US App Store for “last done” ourselves. Most of the top results are small apps with only a handful of ratings, so it is hard to tell them apart from the listing alone. Below is what a last done app should handle, and exactly how Mochi DoneStamp does it, using only what its App Store page describes.",
+        ],
+        "sections": [
+            ("Five things a last done app should get right", [], [
+                "One tap to log: tap once when a chore is done and Mochi DoneStamp records the exact time, so you always see how long it’s been. Tapped by mistake? There is Undo.",
+                "Fix the past: you can backdate, edit, or delete any occurrence, which matters on day one, when you want to enter the last time you remember doing something.",
+                "Rhythms that fit real life: set flexible or exact rhythms from minutes to years, and the next date always counts from the day you actually did it.",
+                "Reminders you can act on: local reminders come with Done and Snooze actions, so you can log the chore straight from the notification.",
+                "See it without opening the app: interactive Home and Lock Screen widgets show the days since, and on Apple Watch you can see the last time and log it from your wrist.",
+            ]),
+            ("What people track with it", [
+                "Around the home: changing the sheets, replacing the AC or water filter, descaling the kettle, cleaning the dishwasher filter, watering plants that only need it every ten days.",
+                "The car and the bike: oil changes, tire pressure checks, chain lubrication. Add an optional note or a compressed photo, for example of the odometer or the receipt, so the details are there next time.",
+                "Family and pets: the last flea treatment, the last haircut, the last time someone called grandma. Interval insights show how regular you really are.",
+            ], []),
+            ("Private by design", [
+                "No account, no ads, no analytics, no tracking. Your core data stays on your device. When you want a copy, there is a complete backup and JSON export.",
+                "It also works with Siri and Shortcuts, supports Light and Dark Mode, iPad, VoiceOver, and Dynamic Type.",
+            ], []),
+        ],
+        "steps_title": "Set up your first last done log in five steps",
+        "steps": [
+            "Open Mochi DoneStamp and add an event, for example “Change the sheets”.",
+            "Backdate the last time you remember doing it.",
+            "Set a rhythm, such as every two weeks, to get a reminder when it is due.",
+            "Put a widget on your Home or Lock Screen to see the days since at a glance.",
+            "Next time, tap Done in the app, the widget, the reminder, or on your Apple Watch.",
+        ],
+        "cards": [
+            ("mochidonestamp", "When did you last change the sheets, replace the AC filter, or change the car’s oil? Tap once when a chore is done and Mochi DoneStamp records the exact time, so you always see how long it’s been. Set a rhythm to get a reminder when it’s due; the next date always counts from the day you actually did it. Interactive Home and Lock Screen widgets, Siri and Shortcuts, Apple Watch. No account, no ads, no tracking."),
+        ],
+        "faqs": [
+            ("Can I enter a date from before I installed the app?", "Yes. You can backdate, edit, or delete any occurrence."),
+            ("Does the reminder move if I do the chore late?", "Yes. The next date always counts from the day you actually did it."),
+            ("Can I log a chore without opening the app?", "Yes. Use the interactive Home and Lock Screen widgets, the Done action on a reminder, Siri and Shortcuts, or Apple Watch."),
+            ("Do I need an account?", "No. There is no account, no ads, no analytics, and no tracking; your core data stays on your device."),
+        ],
+        "related": [("en-US/hubs/mochidonestamp.html", "Mochi DoneStamp: common questions"),
+                    ("answers/how-to-choose-a-last-time-tracker-app.html", "How to choose a last time tracker app")],
+        "legal": "The app featured on this page is independently developed. App Store search results come from our own search in 2026; the order can change.",
     },
 ]
 

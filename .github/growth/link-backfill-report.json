@@ -1,12 +1,12 @@
 {
- "generated": "2026-11-08T18:00:28Z",
+ "generated": "2026-11-08T22:13:51Z",
  "mode": "apply",
  "counts": {
   "ok_reply": 54,
   "unknown_app": 47,
-  "ok_backfilled_earlier": 53,
+  "ok_backfilled_earlier": 55,
   "backfilled": 2,
-  "ok_store_only": 677,
+  "ok_store_only": 675,
   "ok_bio_link": 68,
   "ok_caption": 4,
   "taken_down": 4,
@@ -1187,16 +1187,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdYF9EEmBeS",
    "date": "2026-09-18",
    "app": "scanto",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "A document scanner that keeps everything on your device — even OCR. ScanTo Pro turns paper into crisp, tidy PDFs in seconds: receipts, contr",
    "why": "url+brand",
    "ios_id": "6779977651",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "17925084303224672",
-   "at": "2026-11-08T17:57:47Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",
@@ -1204,16 +1199,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdY8VA4iXue",
    "date": "2026-09-17",
    "app": "lumibopomofo",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "注音・中国語フォニックス。 Lumi ボポモフォは、小さなお子さまが中国語の注音(ボポモフォ/Zhuyin)を、やさしく楽しく学べるアプリです。 Lumi ボポモフォ App Store で見つかります: https://apps.apple.com/jp/app/id67730",
    "why": "url+brand",
    "ios_id": "6773017109",
-   "locale": "ja",
-   "own_replies": [],
-   "comment_id": "18118404116102527",
-   "at": "2026-11-08T17:57:47Z",
-   "verified": true,
-   "via": "list"
+   "locale": "ja"
   },
   {
    "channel": "threads",
@@ -1221,11 +1211,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdY8UbwiSpN",
    "date": "2026-09-17",
    "app": "mochi",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "Eine To-do-Liste, die man nicht öffnet, ist nur eine Liste schlechter Gefühle. Die To-do-Liste, die du wirklich gern nutzt. Mochi Wer es aus",
    "why": "url+brand",
    "ios_id": "6785004775",
-   "locale": "other"
+   "locale": "other",
+   "own_replies": [],
+   "comment_id": "18132848155874429",
+   "at": "2026-11-08T22:10:50Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -1257,11 +1252,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdYF8gBGF63",
    "date": "2026-09-17",
    "app": "lumimissionpro",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "Brush, shoes, bag — and you have said each one four times already. Our app, not a ranking: Follow visual meal, tidy-up and bedtime tasks. Pa",
    "why": "url+brand",
    "ios_id": "6779745474",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "18130249730479806",
+   "at": "2026-11-08T22:10:50Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",

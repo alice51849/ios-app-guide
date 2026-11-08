@@ -230,15 +230,28 @@ class WebToolsPilotTest(unittest.TestCase):
             app_id = attribution.APP_BOUND_CAMPAIGNS[token]
             self.assertTrue(attribution.app_bound_campaign(token, app_id))
             links = re.findall(r'href="(https://apps\.apple\.com/[^"]+)"', page)
-            self.assertEqual(1, len(links))
-            link = html.unescape(links[0])
-            self.assertIn(f"/id{app_id}?", link)
-            self.assertIn(f"ct={token}", link)
-            again = attribution.final_store_url(
-                link, "geo_learn", PROVIDER, locale=pilot.STAMP_LOCALE[locale], app_id=app_id
-            )
-            self.assertIn(f"ct={token}", again)
+            # DUO: page-top button (<token>_top) first, result CTA (<token>) last.
+            tokens = [f"{token}_top", token] if tool is pilot.DUO else [token]
+            self.assertEqual(len(tokens), len(links))
+            for expected, raw in zip(tokens, links, strict=True):
+                self.assertTrue(attribution.app_bound_campaign(expected, app_id))
+                link = html.unescape(raw)
+                self.assertIn(f"/id{app_id}?", link)
+                self.assertIn(f"ct={expected}&", link)
+                again = attribution.final_store_url(
+                    link, "geo_learn", PROVIDER, locale=pilot.STAMP_LOCALE[locale], app_id=app_id
+                )
+                self.assertIn(f"ct={expected}&", again)
         self.assertFalse(attribution.app_bound_campaign("tool_duo_pair_en", "6780575828"))
+
+    def test_duo_top_cta_only_on_duo_and_before_tool(self):
+        root, _ = self.build()
+        for tool, _locale, page in self.pages(root):
+            if tool is pilot.DUO:
+                self.assertEqual(1, page.count(f"<!-- {pilot.TOP_CTA_BLOCK}:start -->"))
+                self.assertLess(page.index(pilot.TOP_CTA_BLOCK), page.index('id="tool"'))
+            else:
+                self.assertNotIn(pilot.TOP_CTA_BLOCK, page)
 
     def test_cta_hidden_when_app_not_live(self):
         root, _ = self.build(live=())
@@ -255,7 +268,14 @@ class WebToolsPilotTest(unittest.TestCase):
                 continue
             token = f'{tool["campaign"]}_{locale.replace("-", "_").lower()}'
             self.assertIn(android[tool["app"]]["package"], page)
-            self.assertIn(f"utm_source%3D{token}", page)
+            self.assertIn(f"utm_source%3D{token}%26", page)
+            if tool is pilot.DUO:
+                # Top block carries its own _top referrer; the result CTA keeps
+                # the injected Play link, and a second pass changes nothing.
+                top = page.split(f"<!-- {pilot.TOP_CTA_BLOCK}:end -->")[0]
+                self.assertIn(f"utm_source%3D{token}_top%26", top)
+                self.assertNotIn(f"utm_source%3D{token}%26", top)
+                self.assertEqual(page, android_play.inject_html(page, android))
 
     def test_tools_index_cards_are_idempotent(self):
         root, _ = self.build()

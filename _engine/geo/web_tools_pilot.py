@@ -441,16 +441,16 @@ def canonical(slug: str, locale: str) -> str:
     return f"{SITE}/{page_path(slug, locale).as_posix()}"
 
 
-def campaign(tool: dict, locale: str) -> str:
-    token = f"{tool['campaign']}_{locale.replace('-', '_').lower()}"
+def campaign(tool: dict, locale: str, suffix: str = "") -> str:
+    token = f"{tool['campaign']}_{locale.replace('-', '_').lower()}{suffix}"
     if token not in APP_BOUND_CAMPAIGNS:
         raise ValueError(f"campaign {token} is not app-bound in gen_store_attribution")
     return token
 
 
-def store_link(tool: dict, locale: str) -> str:
+def store_link(tool: dict, locale: str, suffix: str = "") -> str:
     """The final App Store CTA: storefront aligned, app-bound campaign kept."""
-    token = campaign(tool, locale)
+    token = campaign(tool, locale, suffix)
     raw = appstore_url(tool["app"], token)
     provider = os.environ.get("APP_STORE_PROVIDER_TOKEN", "").strip()
     if not provider:
@@ -573,6 +573,37 @@ def _cta(tool: dict, locale: str, show_cta: bool) -> str:
     )
 
 
+# Page-top download button (DUO only).  It sits in its own managed block so
+# android_play.inject_html (here and in the deploy pass) keeps adding its Play
+# link to the result CTA below, exactly as before; the block carries its own
+# Play link with the _top referrer.
+TOP_CTA_SUFFIX = "_top"
+TOP_CTA_BLOCK = "tool-top-cta"
+
+
+def _top_cta(tool: dict, locale: str, show_cta: bool, android_apps: dict | None) -> str:
+    if not show_cta:
+        return ""
+    link = store_link(tool, locale, TOP_CTA_SUFFIX)
+    if not link:
+        return ""
+    t = tool["copy"][locale]
+    play = ""
+    entry = (android_apps or {}).get(tool["app"])
+    if entry:
+        url = android_play.tracked_play_url(
+            entry["play_url"], campaign(tool, locale, TOP_CTA_SUFFIX), tool["app"]
+        )
+        label = (f"Get {android_play.display_name(tool['app'], entry)} on Google Play"
+                 if locale == "en" else "Google Play")
+        play = f'<p class="help">Android: <a href="{_e(url)}" rel="noopener">{_e(label)}</a></p>'
+    return (
+        f'<!-- {TOP_CTA_BLOCK}:start --><section class="card cta wrap" id="get-app">'
+        f'<p><a class="button" href="{_e(link)}" rel="noopener">{_e(t["app_cta"])}</a></p>'
+        f'{play}</section><!-- {TOP_CTA_BLOCK}:end -->\n'
+    )
+
+
 def _table(head: list[str], rows: list[list[str]]) -> str:
     header = "".join(f"<th>{_e(cell)}</th>" for cell in head)
     body = "".join("<tr>" + "".join(f"<td>{cell}</td>" for cell in row) + "</tr>" for row in rows)
@@ -583,7 +614,7 @@ def _duo_sizes(locale: str) -> str:
     t = DUO["copy"][locale]
     names = (t["outer_title"], t["inner_title"])
     rows = [[_e(name), f"{w} x {h}"] for name, (w, h) in zip(names, DUO_SCREENS.values(), strict=True)]
-    # Plain text: the page keeps exactly one App Store link (the tracked CTA).
+    # Plain text: the page keeps only its tracked App Store CTAs.
     source = _e(t["sizes_source"])
     return (f'<section class="card wrap" id="sizes"><h2>{_e(t["sizes_title"])}</h2>'
             f'{_table(t["sizes_head"], rows)}<p class="help">{source}</p></section>\n')
@@ -613,7 +644,7 @@ def urlparse_host(url: str) -> str:
     return url.split("//", 1)[1].split("/", 1)[0]
 
 
-def render_duo(locale: str, show_cta: bool) -> str:
+def render_duo(locale: str, show_cta: bool, android_apps: dict | None = None) -> str:
     t = DUO["copy"][locale]
     depth = "../" if locale == "en" else "../../"
     samples = [
@@ -630,7 +661,7 @@ def render_duo(locale: str, show_cta: bool) -> str:
     )
     how = "".join(f"<li>{_e(item)}</li>" for item in t["how"])
     copy = {key: t[key] for key in ("status_empty", "status_ok", "status_bad")}
-    return _head(DUO, locale) + f"""<section class="card wrap" id="tool"><div class="grid"><div class="controls">
+    return _head(DUO, locale) + _top_cta(DUO, locale, show_cta, android_apps) + f"""<section class="card wrap" id="tool"><div class="grid"><div class="controls">
 <div class="field"><label for="outer-file">{_e(t["outer_label"])}</label><input id="outer-file" type="file" accept="image/*"></div>
 <div class="field"><label for="inner-file">{_e(t["inner_label"])}</label><input id="inner-file" type="file" accept="image/*"><p class="help">{_e(t["one_help"])}</p></div>
 <div class="field"><label>{_e(t["samples"])}</label><div class="row">{sample_buttons}</div></div>
@@ -740,7 +771,8 @@ def content_security_policy(page: str) -> str:
 
 
 def render_page(tool: dict, locale: str, show_cta: bool, android_apps: dict | None = None) -> str:
-    page = RENDERERS[tool["slug"]](locale, show_cta)
+    renderer = RENDERERS[tool["slug"]]
+    page = renderer(locale, show_cta, android_apps) if tool is DUO else renderer(locale, show_cta)
     if android_apps:
         page = android_play.inject_html(page, android_apps)
     return page.replace("{CSP_PLACEHOLDER}", content_security_policy(page), 1)

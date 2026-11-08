@@ -189,13 +189,16 @@ PROTECTED_CAMPAIGNS = frozenset({STORY_CAMPAIGN})
 # (reports/strategy_debate/2026-10-31_gemini_extended.md, topic 2).
 # web_tools_pilot.py: the two browser-tool pilot pages (yi_review 2026-11-04,
 # route 3 trimmed to 2 tools x 3 locales); one campaign per tool and locale.
+# The Foldable Wallpaper Studio tool also has a page-top button (<campaign>_top)
+# beside the result CTA, so the two placements report separately.
 WEB_TOOL_PILOT_CAMPAIGNS = {
-    f"{tool}_{locale}": app_id
-    for tool, app_id in (
-        ("tool_duo_pair", "6824946559"),
-        ("tool_passport_crop", "6780575828"),
+    f"{tool}_{locale}{suffix}": app_id
+    for tool, app_id, suffixes in (
+        ("tool_duo_pair", "6824946559", ("", "_top")),
+        ("tool_passport_crop", "6780575828", ("",)),
     )
     for locale in ("en", "zh_hant", "ja")
+    for suffix in suffixes
 }
 APP_BOUND_CAMPAIGNS = {"duo_img": "6824946559", **WEB_TOOL_PILOT_CAMPAIGNS}
 

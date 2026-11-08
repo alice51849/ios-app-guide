@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-11-07T05:46:39Z",
+  "updated_at": "2026-11-08T05:50:59Z",
   "note": "Insights of our own IG / Threads posts by .github/scripts/post_performance.py. score = views + 3*likes + 5*replies + 8*(saves+shares+reposts). boost = best apps, read by 00_GrowthEngine shorts/scripts/schedule_posts.py.",
   "sources": {
-    "instagram": "ok: 38 posts",
-    "threads": "ok: 10 posts"
+    "instagram": "ok: 37 posts",
+    "threads": "ok: 9 posts"
   },
   "boost": [
     "cvdesk",
@@ -171,10 +171,10 @@
       {
         "key": "onepageppt",
         "posts": 4,
-        "views": 187,
+        "views": 188,
         "engagement": 3,
-        "score": 202,
-        "avg_score": 50.5
+        "score": 203,
+        "avg_score": 50.8
       },
       {
         "key": "unblurry",
@@ -501,10 +501,10 @@
       {
         "key": "ja",
         "posts": 11,
-        "views": 343,
+        "views": 344,
         "engagement": 3,
-        "score": 354,
-        "avg_score": 32.2
+        "score": 355,
+        "avg_score": 32.3
       },
       {
         "key": "zh-Hant",
@@ -659,16 +659,6 @@
         "avg_score": 67.0
       },
       {
-        "app": "mochi",
-        "locale": "zh-Hant",
-        "hook": "點一下就完成",
-        "posts": 1,
-        "views": 66,
-        "engagement": 0,
-        "score": 66,
-        "avg_score": 66.0
-      },
-      {
         "app": "lumibopomofo",
         "locale": "ko",
         "hook": "소리를 듣고 알맞은 기호 고르기",
@@ -719,6 +709,16 @@
         "avg_score": 34.5
       },
       {
+        "app": "mochi",
+        "locale": "zh-Hant",
+        "hook": "",
+        "posts": 2,
+        "views": 66,
+        "engagement": 0,
+        "score": 66,
+        "avg_score": 33.0
+      },
+      {
         "app": "mochi_b",
         "locale": "de",
         "hook": "Studium, Arbeit, Einkauf an einem Ort",
@@ -759,16 +759,6 @@
         "avg_score": 28.0
       },
       {
-        "app": "mochi",
-        "locale": "en",
-        "hook": "Right on your Home Screen",
-        "posts": 2,
-        "views": 49,
-        "engagement": 1,
-        "score": 54,
-        "avg_score": 27.0
-      },
-      {
         "app": "battai",
         "locale": "ja",
         "hook": "",
@@ -797,6 +787,16 @@
         "engagement": 0,
         "score": 23,
         "avg_score": 23.0
+      },
+      {
+        "app": "mochi",
+        "locale": "en",
+        "hook": "",
+        "posts": 2,
+        "views": 44,
+        "engagement": 0,
+        "score": 44,
+        "avg_score": 22.0
       },
       {
         "app": "notesstudio100",
@@ -829,22 +829,22 @@
         "avg_score": 17.0
       },
       {
+        "app": "onepageppt",
+        "locale": "ja",
+        "hook": "簡報製作・筆記截圖秒變投影片。",
+        "posts": 1,
+        "views": 12,
+        "engagement": 1,
+        "score": 17,
+        "avg_score": 17.0
+      },
+      {
         "app": "mochi_b",
         "locale": "pt-BR",
         "hook": "Tanta coisa pra fazer e você esquece?",
         "posts": 1,
         "views": 16,
         "engagement": 0,
-        "score": 16,
-        "avg_score": 16.0
-      },
-      {
-        "app": "onepageppt",
-        "locale": "ja",
-        "hook": "簡報製作・筆記截圖秒變投影片。",
-        "posts": 1,
-        "views": 11,
-        "engagement": 1,
         "score": 16,
         "avg_score": 16.0
       },
@@ -969,6 +969,16 @@
         "avg_score": 10.0
       },
       {
+        "app": "mochi",
+        "locale": "en",
+        "hook": "Right on your Home Screen",
+        "posts": 1,
+        "views": 5,
+        "engagement": 1,
+        "score": 10,
+        "avg_score": 10.0
+      },
+      {
         "app": "maskmyfile",
         "locale": "en",
         "hook": "You sent the bank statement. The account number was still on",
@@ -1081,7 +1091,7 @@
       {
         "app": "mochi",
         "locale": "pt-BR",
-        "hook": "Um toque e pronto",
+        "hook": "",
         "posts": 1,
         "views": 7,
         "engagement": 0,
@@ -1359,16 +1369,6 @@
         "avg_score": 0.0
       },
       {
-        "app": "mochi",
-        "locale": "zh-Hant",
-        "hook": "",
-        "posts": 1,
-        "views": 0,
-        "engagement": 0,
-        "score": 0,
-        "avg_score": 0.0
-      },
-      {
         "app": "wordmatelite",
         "locale": "ja",
         "hook": "",
@@ -1490,16 +1490,6 @@
       },
       {
         "app": "mochidonestamp",
-        "locale": "en",
-        "hook": "",
-        "posts": 1,
-        "views": 0,
-        "engagement": 0,
-        "score": 0,
-        "avg_score": 0.0
-      },
-      {
-        "app": "mochi",
         "locale": "en",
         "hook": "",
         "posts": 1,
@@ -2730,7 +2720,7 @@
       "posted_at": "2026-10-23T12:35:13",
       "app": "mochi",
       "locale": "zh-Hant",
-      "hook": "點一下就完成",
+      "hook": "",
       "clip": "mochi/zh-Hant",
       "kind": "clip",
       "variant": "b",
@@ -3132,12 +3122,12 @@
       "kind": "image",
       "variant": null,
       "metrics": {
-        "views": 11,
+        "views": 12,
         "likes": 0,
         "replies": 1,
         "reposts": 0
       },
-      "score": 16
+      "score": 17
     },
     {
       "channel": "instagram",
@@ -3146,7 +3136,7 @@
       "posted_at": "2026-10-28T18:34:47",
       "app": "mochi",
       "locale": "en",
-      "hook": "Right on your Home Screen",
+      "hook": "",
       "clip": "mochi/en",
       "kind": "clip",
       "variant": "c",
@@ -3356,7 +3346,7 @@
       "posted_at": "2026-10-30T18:31:06",
       "app": "mochi",
       "locale": "pt-BR",
-      "hook": "Um toque e pronto",
+      "hook": "",
       "clip": "mochi/pt-BR",
       "kind": "clip",
       "variant": "b",

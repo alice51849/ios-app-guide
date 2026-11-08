@@ -1,7 +1,7 @@
 {
  "schema": "lumi.social-feed/v1",
  "date": "2026-11-08",
- "generated_at": "2026-11-08T02:02:39Z",
+ "generated_at": "2026-11-08T08:02:11Z",
  "items": {
   "bluesky": [
    {
@@ -141,48 +141,69 @@
    },
    {
     "kind": "clip",
-    "key": "wordmatelite/ja",
+    "key": "tripbeelite/ja",
     "locale": "ja",
-    "app": "wordmatelite",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/9z2xc9.mp4",
-    "hook": "1分で完了",
-    "name": "Wordmate Lite 1日5単語",
-    "title": "1分で完了 | 毎日1分、44言語の語彙トレーニング | Wordmate Lite 単語",
+    "app": "tripbeelite",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/07ee6w.mp4",
+    "hook": "旅のしおりが タイムラインに",
+    "name": "TripBee Lite：旅程プラン",
+    "title": "旅のしおりが タイムラインに | 旅のしおり・日ごとのスケジュール | TripBee Lite 旅程プラン",
     "tags": [
-     "#英単語",
-     "#ボキャブラリー",
-     "#韓国語",
-     "#中国語",
-     "#スペイン語",
-     "#WordmateLite単語"
+     "#旅程プラン",
+     "#旅先",
+     "#観光",
+     "#休暇",
+     "#連休",
+     "#TripBeeLite旅程プラン"
     ],
-    "caption": "1分で完了\n連続記録が伸びる\n毎日1分、44言語の語彙トレーニング\nWordmate Lite 1日5単語\nApp Storeで「Wordmate Lite 単語」を検索\nAndroidはGoogle Playで\n\n#英単語 #ボキャブラリー #WordmateLite単語",
+    "caption": "旅のしおりが タイムラインに\nリマインダーは 現地時間で\n旅のしおり・日ごとのスケジュール\nTripBee Lite：旅程プラン\nApp Storeで「旅程」を検索\nAndroidはGoogle Playで\n\n#旅程プラン #旅先 #TripBeeLite旅程プラン",
     "button": "App Storeで入手",
     "variant": "b",
-    "alt": "Wordmate Lite 1日5単語 — 1分で完了 — 連続記録が伸びる — 毎日1分、44言語の語彙トレーニング",
-    "store": "https://apps.apple.com/jp/app/id6797601720?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.WordmateLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwordmatelite",
+    "alt": "TripBee Lite：旅程プラン — 旅のしおりが タイムラインに — リマインダーは 現地時間で — 旅のしおり・日ごとのスケジュール",
+    "store": "https://apps.apple.com/jp/app/id6791299610?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.TripbeeLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripbeelite",
     "review": {
      "label": "このアプリをお使いですか？App Store で評価・レビューできます",
-     "url": "https://apps.apple.com/app/id6797601720?action=write-review"
+     "url": "https://apps.apple.com/app/id6791299610?action=write-review"
     },
     "keywords": [
-     "英単語",
-     "ボキャブラリー",
-     "韓国語",
-     "中国語",
-     "スペイン語",
-     "フランス語"
+     "旅先",
+     "観光",
+     "休暇",
+     "連休",
+     "旅程表",
+     "日帰り"
     ],
-    "keyline": "毎日1分、44言語の語彙トレーニング",
+    "keyline": "旅のしおり・日ごとのスケジュール",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "3a4669867efb8aeb",
+     "board": "f46624e3a45ba48f",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "utility/ledger/moneytag/tutoring/ja",
+    "locale": "ja",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/utility-cards/card-20261108.jpg",
+    "caption": "プロジェクト収支の計算例：家庭教師\n+ 授業料 6,400\n− 交通費 480\n− プリント代 320\n= 純額 5,600\n数字は計算の例です\n\nMoneyTag: プロジェクトごとの純額とタグ集計\nApp Store・Google Playで「MoneyTag」を検索\n\n#収入と支出 #収支 #損益",
+    "title": "プロジェクト収支の計算例：家庭教師",
+    "alt": "MoneyTag — プロジェクト収支の計算例：家庭教師 — + 授業料 6,400 — − 交通費 480 — プロジェクト · タグ · レポート",
+    "name": "MoneyTag",
+    "hook": "プロジェクト収支の計算例：家庭教師",
+    "tags": [
+     "#収入と支出",
+     "#収支",
+     "#損益",
+     "#利益",
+     "#売上"
+    ],
+    "button": "App Storeで入手",
+    "store": "https://apps.apple.com/jp/app/id6801956402?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MoneyTag&referrer=utm_source%3Dsocial%26utm_campaign%3Dmoneytag"
    },
    {
     "kind": "card",
@@ -1813,48 +1834,69 @@
    },
    {
     "kind": "clip",
-    "key": "wordmatelite/ja",
+    "key": "tripbeelite/ja",
     "locale": "ja",
-    "app": "wordmatelite",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/9z2xc9.mp4",
-    "hook": "1分で完了",
-    "name": "Wordmate Lite 1日5単語",
-    "title": "1分で完了 | 毎日1分、44言語の語彙トレーニング | Wordmate Lite 単語",
+    "app": "tripbeelite",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/07ee6w.mp4",
+    "hook": "旅のしおりが タイムラインに",
+    "name": "TripBee Lite：旅程プラン",
+    "title": "旅のしおりが タイムラインに | 旅のしおり・日ごとのスケジュール | TripBee Lite 旅程プラン",
     "tags": [
-     "#英単語",
-     "#ボキャブラリー",
-     "#韓国語",
-     "#中国語",
-     "#スペイン語",
-     "#WordmateLite単語"
+     "#旅程プラン",
+     "#旅先",
+     "#観光",
+     "#休暇",
+     "#連休",
+     "#TripBeeLite旅程プラン"
     ],
-    "caption": "1分で完了\n連続記録が伸びる\n毎日1分、44言語の語彙トレーニング\nWordmate Lite 1日5単語\nApp Storeで「Wordmate Lite 単語」を検索\nAndroidはGoogle Playで\n\n#英単語 #ボキャブラリー #韓国語 #中国語 #WordmateLite単語",
+    "caption": "旅のしおりが タイムラインに\nリマインダーは 現地時間で\n旅のしおり・日ごとのスケジュール\nTripBee Lite：旅程プラン\nApp Storeで「旅程」を検索\nAndroidはGoogle Playで\n\n#旅程プラン #旅先 #観光 #休暇 #TripBeeLite旅程プラン",
     "button": "App Storeで入手",
     "variant": "b",
-    "alt": "Wordmate Lite 1日5単語 — 1分で完了 — 連続記録が伸びる — 毎日1分、44言語の語彙トレーニング",
-    "store": "https://apps.apple.com/jp/app/id6797601720?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.WordmateLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwordmatelite",
+    "alt": "TripBee Lite：旅程プラン — 旅のしおりが タイムラインに — リマインダーは 現地時間で — 旅のしおり・日ごとのスケジュール",
+    "store": "https://apps.apple.com/jp/app/id6791299610?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.TripbeeLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripbeelite",
     "review": {
      "label": "このアプリをお使いですか？App Store で評価・レビューできます",
-     "url": "https://apps.apple.com/app/id6797601720?action=write-review"
+     "url": "https://apps.apple.com/app/id6791299610?action=write-review"
     },
     "keywords": [
-     "英単語",
-     "ボキャブラリー",
-     "韓国語",
-     "中国語",
-     "スペイン語",
-     "フランス語"
+     "旅先",
+     "観光",
+     "休暇",
+     "連休",
+     "旅程表",
+     "日帰り"
     ],
-    "keyline": "毎日1分、44言語の語彙トレーニング",
+    "keyline": "旅のしおり・日ごとのスケジュール",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "3a4669867efb8aeb",
+     "board": "f46624e3a45ba48f",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "utility/ledger/moneytag/tutoring/ja",
+    "locale": "ja",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/utility-cards/card-20261108.jpg",
+    "caption": "プロジェクト収支の計算例：家庭教師\n+ 授業料 6,400\n− 交通費 480\n− プリント代 320\n= 純額 5,600\n数字は計算の例です\n\nMoneyTag: プロジェクトごとの純額とタグ集計\nApp Store・Google Playで「MoneyTag」を検索\n\n#収入と支出 #収支 #損益 #利益 #売上",
+    "title": "プロジェクト収支の計算例：家庭教師",
+    "alt": "MoneyTag — プロジェクト収支の計算例：家庭教師 — + 授業料 6,400 — − 交通費 480 — プロジェクト · タグ · レポート",
+    "name": "MoneyTag",
+    "hook": "プロジェクト収支の計算例：家庭教師",
+    "tags": [
+     "#収入と支出",
+     "#収支",
+     "#損益",
+     "#利益",
+     "#売上"
+    ],
+    "button": "App Storeで入手",
+    "store": "https://apps.apple.com/jp/app/id6801956402?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MoneyTag&referrer=utm_source%3Dsocial%26utm_campaign%3Dmoneytag"
    }
   ],
   "youtube": [
@@ -2041,59 +2083,60 @@
    },
    {
     "kind": "clip",
-    "key": "wordmatelite/ja",
+    "key": "tripbeelite/ja",
     "locale": "ja",
-    "app": "wordmatelite",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/9z2xc9.mp4",
-    "hook": "1分で完了",
-    "name": "Wordmate Lite 1日5単語",
-    "title": "1分で完了 | 毎日1分、44言語の語彙トレーニング | Wordmate Lite 単語",
+    "app": "tripbeelite",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/07ee6w.mp4",
+    "hook": "旅のしおりが タイムラインに",
+    "name": "TripBee Lite：旅程プラン",
+    "title": "旅のしおりが タイムラインに | 旅のしおり・日ごとのスケジュール | TripBee Lite 旅程プラン",
     "tags": [
-     "#英単語",
-     "#ボキャブラリー",
-     "#韓国語",
-     "#中国語",
-     "#スペイン語",
-     "#WordmateLite単語"
+     "#旅程プラン",
+     "#旅先",
+     "#観光",
+     "#休暇",
+     "#連休",
+     "#TripBeeLite旅程プラン"
     ],
-    "caption": "1分で完了\n連続記録が伸びる\n毎日1分、44言語の語彙トレーニング\nWordmate Lite 1日5単語\nApp Storeで「Wordmate Lite 単語」を検索\nAndroidはGoogle Playで\n\n#英単語 #ボキャブラリー #韓国語 #中国語 #WordmateLite単語",
+    "caption": "旅のしおりが タイムラインに\nリマインダーは 現地時間で\n旅のしおり・日ごとのスケジュール\nTripBee Lite：旅程プラン\nApp Storeで「旅程」を検索\nAndroidはGoogle Playで\n\n#旅程プラン #旅先 #観光 #休暇 #TripBeeLite旅程プラン",
     "button": "App Storeで入手",
     "variant": "b",
-    "alt": "Wordmate Lite 1日5単語 — 1分で完了 — 連続記録が伸びる — 毎日1分、44言語の語彙トレーニング",
-    "store": "https://apps.apple.com/jp/app/id6797601720?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.WordmateLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwordmatelite",
+    "alt": "TripBee Lite：旅程プラン — 旅のしおりが タイムラインに — リマインダーは 現地時間で — 旅のしおり・日ごとのスケジュール",
+    "store": "https://apps.apple.com/jp/app/id6791299610?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.TripbeeLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripbeelite",
     "review": {
      "label": "このアプリをお使いですか？App Store で評価・レビューできます",
-     "url": "https://apps.apple.com/app/id6797601720?action=write-review"
+     "url": "https://apps.apple.com/app/id6791299610?action=write-review"
     },
     "keywords": [
-     "英単語",
-     "ボキャブラリー",
-     "韓国語",
-     "中国語",
-     "スペイン語",
-     "フランス語"
+     "旅先",
+     "観光",
+     "休暇",
+     "連休",
+     "旅程表",
+     "日帰り"
     ],
-    "keyline": "毎日1分、44言語の語彙トレーニング",
+    "keyline": "旅のしおり・日ごとのスケジュール",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "3a4669867efb8aeb",
+     "board": "f46624e3a45ba48f",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "youtube": {
-     "title": "1分で完了 | Wordmate Lite 単語 #Shorts",
-     "description": "1分で完了\n連続記録が伸びる\n毎日1分、44言語の語彙トレーニング\n\nWordmate Lite 1日5単語\nApp Store: https://apps.apple.com/jp/app/id6797601720?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.WordmateLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwordmatelite\nこのアプリをお使いですか？App Store で評価・レビューできます\nhttps://apps.apple.com/app/id6797601720?action=write-review\n\n英単語 · ボキャブラリー · 韓国語 · 中国語 · スペイン語 · フランス語\n\n#Shorts #英単語 #WordmateLite単語",
+     "title": "旅のしおりが タイムラインに | TripBee Lite 旅程プラン #Shorts",
+     "description": "旅のしおりが タイムラインに\nリマインダーは 現地時間で\n旅のしおり・日ごとのスケジュール\n\nTripBee Lite：旅程プラン\nApp Store: https://apps.apple.com/jp/app/id6791299610?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.TripbeeLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripbeelite\nこのアプリをお使いですか？App Store で評価・レビューできます\nhttps://apps.apple.com/app/id6791299610?action=write-review\n\n旅先 · 観光 · 休暇 · 連休 · 旅程表 · 日帰り\n\n#Shorts #旅程プラン #TripBeeLite旅程プラン",
      "tags": [
-      "英単語",
-      "ボキャブラリー",
-      "韓国語",
-      "中国語",
-      "スペイン語",
-      "フランス語",
-      "WordmateLite単語",
-      "Wordmate Lite 単語"
+      "旅先",
+      "観光",
+      "休暇",
+      "連休",
+      "旅程表",
+      "日帰り",
+      "旅程プラン",
+      "TripBeeLite旅程プラン",
+      "TripBee Lite 旅程プラン"
      ]
     },
     "slot": 15
@@ -2249,52 +2292,77 @@
    },
    {
     "kind": "clip",
-    "key": "wordmatelite/ja",
+    "key": "tripbeelite/ja",
     "locale": "ja",
-    "app": "wordmatelite",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/9z2xc9.mp4",
-    "hook": "1分で完了",
-    "name": "Wordmate Lite 1日5単語",
-    "title": "1分で完了 | 毎日1分、44言語の語彙トレーニング | Wordmate Lite 単語",
+    "app": "tripbeelite",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/07ee6w.mp4",
+    "hook": "旅のしおりが タイムラインに",
+    "name": "TripBee Lite：旅程プラン",
+    "title": "旅のしおりが タイムラインに | 旅のしおり・日ごとのスケジュール | TripBee Lite 旅程プラン",
     "tags": [
-     "#英単語",
-     "#ボキャブラリー",
-     "#韓国語",
-     "#中国語",
-     "#スペイン語",
-     "#WordmateLite単語"
+     "#旅程プラン",
+     "#旅先",
+     "#観光",
+     "#休暇",
+     "#連休",
+     "#TripBeeLite旅程プラン"
     ],
-    "caption": "1分で完了\n連続記録が伸びる\n毎日1分、44言語の語彙トレーニング\nWordmate Lite 1日5単語\nApp Storeで「Wordmate Lite 単語」を検索\nAndroidはGoogle Playで\n\n#英単語 #ボキャブラリー #韓国語 #中国語 #WordmateLite単語",
+    "caption": "旅のしおりが タイムラインに\nリマインダーは 現地時間で\n旅のしおり・日ごとのスケジュール\nTripBee Lite：旅程プラン\nApp Storeで「旅程」を検索\nAndroidはGoogle Playで\n\n#旅程プラン #旅先 #観光 #休暇 #TripBeeLite旅程プラン",
     "button": "App Storeで入手",
     "variant": "b",
-    "alt": "Wordmate Lite 1日5単語 — 1分で完了 — 連続記録が伸びる — 毎日1分、44言語の語彙トレーニング",
-    "store": "https://apps.apple.com/jp/app/id6797601720?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.WordmateLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwordmatelite",
+    "alt": "TripBee Lite：旅程プラン — 旅のしおりが タイムラインに — リマインダーは 現地時間で — 旅のしおり・日ごとのスケジュール",
+    "store": "https://apps.apple.com/jp/app/id6791299610?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.TripbeeLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripbeelite",
     "review": {
      "label": "このアプリをお使いですか？App Store で評価・レビューできます",
-     "url": "https://apps.apple.com/app/id6797601720?action=write-review"
+     "url": "https://apps.apple.com/app/id6791299610?action=write-review"
     },
     "keywords": [
-     "英単語",
-     "ボキャブラリー",
-     "韓国語",
-     "中国語",
-     "スペイン語",
-     "フランス語"
+     "旅先",
+     "観光",
+     "休暇",
+     "連休",
+     "旅程表",
+     "日帰り"
     ],
-    "keyline": "毎日1分、44言語の語彙トレーニング",
+    "keyline": "旅のしおり・日ごとのスケジュール",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "3a4669867efb8aeb",
+     "board": "f46624e3a45ba48f",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "1分で完了\n連続記録が伸びる\n毎日1分、44言語の語彙トレーニング\nWordmate Lite 1日5単語\nApp Storeで「Wordmate Lite 単語」を検索\nAndroidはGoogle Playで\n\n#英単語 #ボキャブラリー #韓国語 #中国語 #WordmateLite単語\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6797601720?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.WordmateLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwordmatelite",
-     "link": "https://apps.apple.com/jp/app/id6797601720?pt=118326163&ct=social&mt=8"
+     "description": "旅のしおりが タイムラインに\nリマインダーは 現地時間で\n旅のしおり・日ごとのスケジュール\nTripBee Lite：旅程プラン\nApp Storeで「旅程」を検索\nAndroidはGoogle Playで\n\n#旅程プラン #旅先 #観光 #休暇 #TripBeeLite旅程プラン\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6791299610?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.TripbeeLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripbeelite",
+     "link": "https://apps.apple.com/jp/app/id6791299610?pt=118326163&ct=social&mt=8"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "utility/ledger/moneytag/tutoring/ja",
+    "locale": "ja",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/utility-cards/card-20261108.jpg",
+    "caption": "プロジェクト収支の計算例：家庭教師\n+ 授業料 6,400\n− 交通費 480\n− プリント代 320\n= 純額 5,600\n数字は計算の例です\n\nMoneyTag: プロジェクトごとの純額とタグ集計\nApp Store・Google Playで「MoneyTag」を検索\n\n#収入と支出 #収支 #損益 #利益 #売上",
+    "title": "プロジェクト収支の計算例：家庭教師",
+    "alt": "MoneyTag — プロジェクト収支の計算例：家庭教師 — + 授業料 6,400 — − 交通費 480 — プロジェクト · タグ · レポート",
+    "name": "MoneyTag",
+    "hook": "プロジェクト収支の計算例：家庭教師",
+    "tags": [
+     "#収入と支出",
+     "#収支",
+     "#損益",
+     "#利益",
+     "#売上"
+    ],
+    "button": "App Storeで入手",
+    "store": "https://apps.apple.com/jp/app/id6801956402?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MoneyTag&referrer=utm_source%3Dsocial%26utm_campaign%3Dmoneytag",
+    "pinterest": {
+     "description": "プロジェクト収支の計算例：家庭教師\n+ 授業料 6,400\n− 交通費 480\n− プリント代 320\n= 純額 5,600\n数字は計算の例です\n\nMoneyTag: プロジェクトごとの純額とタグ集計\nApp Store・Google Playで「MoneyTag」を検索\n\n#収入と支出 #収支 #損益 #利益 #売上\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6801956402?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MoneyTag&referrer=utm_source%3Dsocial%26utm_campaign%3Dmoneytag",
+     "link": "https://apps.apple.com/jp/app/id6801956402?pt=118326163&ct=social&mt=8"
+    }
    },
    {
     "kind": "card",
@@ -6119,49 +6187,49 @@
    },
    {
     "kind": "clip",
-    "key": "wordmatelite/ja",
+    "key": "tripbeelite/ja",
     "locale": "ja",
-    "app": "wordmatelite",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/9z2xc9.mp4",
-    "hook": "1分で完了",
-    "name": "Wordmate Lite 1日5単語",
-    "title": "1分で完了 | 毎日1分、44言語の語彙トレーニング | Wordmate Lite 単語",
+    "app": "tripbeelite",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/07ee6w.mp4",
+    "hook": "旅のしおりが タイムラインに",
+    "name": "TripBee Lite：旅程プラン",
+    "title": "旅のしおりが タイムラインに | 旅のしおり・日ごとのスケジュール | TripBee Lite 旅程プラン",
     "tags": [
-     "#英単語",
-     "#ボキャブラリー",
-     "#韓国語",
-     "#中国語",
-     "#スペイン語",
-     "#WordmateLite単語"
+     "#旅程プラン",
+     "#旅先",
+     "#観光",
+     "#休暇",
+     "#連休",
+     "#TripBeeLite旅程プラン"
     ],
-    "caption": "1分で完了\n連続記録が伸びる\n毎日1分、44言語の語彙トレーニング\nWordmate Lite 1日5単語\nApp Storeで「Wordmate Lite 単語」を検索\nAndroidはGoogle Playで\n\n#英単語 #ボキャブラリー #韓国語 #中国語 #WordmateLite単語",
+    "caption": "旅のしおりが タイムラインに\nリマインダーは 現地時間で\n旅のしおり・日ごとのスケジュール\nTripBee Lite：旅程プラン\nApp Storeで「旅程」を検索\nAndroidはGoogle Playで\n\n#旅程プラン #旅先 #観光 #休暇 #TripBeeLite旅程プラン",
     "button": "App Storeで入手",
     "variant": "b",
-    "alt": "Wordmate Lite 1日5単語 — 1分で完了 — 連続記録が伸びる — 毎日1分、44言語の語彙トレーニング",
-    "store": "https://apps.apple.com/jp/app/id6797601720?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.WordmateLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwordmatelite",
+    "alt": "TripBee Lite：旅程プラン — 旅のしおりが タイムラインに — リマインダーは 現地時間で — 旅のしおり・日ごとのスケジュール",
+    "store": "https://apps.apple.com/jp/app/id6791299610?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.TripbeeLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripbeelite",
     "review": {
      "label": "このアプリをお使いですか？App Store で評価・レビューできます",
-     "url": "https://apps.apple.com/app/id6797601720?action=write-review"
+     "url": "https://apps.apple.com/app/id6791299610?action=write-review"
     },
     "keywords": [
-     "英単語",
-     "ボキャブラリー",
-     "韓国語",
-     "中国語",
-     "スペイン語",
-     "フランス語"
+     "旅先",
+     "観光",
+     "休暇",
+     "連休",
+     "旅程表",
+     "日帰り"
     ],
-    "keyline": "毎日1分、44言語の語彙トレーニング",
+    "keyline": "旅のしおり・日ごとのスケジュール",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "3a4669867efb8aeb",
+     "board": "f46624e3a45ba48f",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "1分で完了\n連続記録が伸びる\n毎日1分、44言語の語彙トレーニング\nWordmate Lite 1日5単語\nApp Storeで「Wordmate Lite 単語」を検索\nAndroidはGoogle Playで\n\n#英単語 #ボキャブラリー #韓国語 #中国語 #WordmateLite単語\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6797601720?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.WordmateLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwordmatelite"
+     "caption": "旅のしおりが タイムラインに\nリマインダーは 現地時間で\n旅のしおり・日ごとのスケジュール\nTripBee Lite：旅程プラン\nApp Storeで「旅程」を検索\nAndroidはGoogle Playで\n\n#旅程プラン #旅先 #観光 #休暇 #TripBeeLite旅程プラン\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6791299610?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.TripbeeLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripbeelite"
     },
     "slot": 15
    }
@@ -76833,6 +76901,6 @@
     }
    }
   },
-  "updated_at": "2026-11-07T05:46:39Z"
+  "updated_at": "2026-11-08T05:50:59Z"
  }
 }

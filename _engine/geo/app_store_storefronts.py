@@ -105,6 +105,16 @@ if any(
     for country in LOCALE_STOREFRONTS.values()
 ):
     raise RuntimeError("App Store storefront countries must be two-letter codes")
+# Real Apple storefronts with no official guide locale of their own. A page may
+# link one directly (e.g. the Hong Kong zh-Hant search-reality page links the
+# hk store, gen_search_reality_g3.EXTRA_STOREFRONTS), so the locale-agnostic
+# validation used by the whole-site normalizer must accept it. Locale-bound
+# validation (expected_locale) and availability checks stay strict: an extra
+# storefront never equals a locale's mapped storefront and is never in the
+# availability snapshot, so those calls still reject it.
+EXTRA_STOREFRONTS = frozenset({"hk"})
+if EXTRA_STOREFRONTS & set(LOCALE_STOREFRONTS.values()):
+    raise RuntimeError("EXTRA_STOREFRONTS must stay outside the locale storefront map")
 if set(FREE_LABELS) != OFFICIAL_LOCALE_SET:
     raise RuntimeError("Free labels must cover 50 official locales")
 
@@ -203,6 +213,7 @@ def validated_app_store_url(
         or (
             country is not None
             and country not in set(LOCALE_STOREFRONTS.values())
+            and not (expected_locale is None and country in EXTRA_STOREFRONTS)
         )
         or (
             expected_app_id is not None

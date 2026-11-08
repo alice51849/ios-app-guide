@@ -55,6 +55,23 @@ class StorefrontValidityTest(unittest.TestCase):
                 expected_locale="hi", availability={},
             )
 
+    def test_extra_storefront_is_locale_agnostic_only(self):
+        # geo-daily run 42479724633: the hk search-reality page broke the
+        # whole-site normalizer. Locale-free validation accepts hk; any
+        # locale-bound or availability-bound check still rejects it.
+        url = "https://apps.apple.com/hk/app/id6826987407"
+        self.assertEqual(storefronts.validated_app_store_url(url), url)
+        campaign = url + "?pt=118326163&ct=x&mt=8"
+        self.assertEqual(storefronts.normalize_app_store_campaign_url(campaign), campaign)
+        with self.assertRaises(ValueError):
+            storefronts.validated_app_store_url(url, expected_locale="zh-Hant")
+        with self.assertRaises(ValueError):
+            storefronts.validated_app_store_url(
+                url, availability={"tw": frozenset({"6826987407"})}
+            )
+        with self.assertRaises(ValueError):
+            storefronts.validated_app_store_url("https://apps.apple.com/xx/app/id6826987407")
+
     def test_bare_indic_locales_are_not_product_locales(self):
         for locale in ("gu", "kn", "ml"):
             with self.subTest(locale=locale), self.assertRaises(ValueError):

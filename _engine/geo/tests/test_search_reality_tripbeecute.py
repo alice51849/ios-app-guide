@@ -32,13 +32,15 @@ class TripBeeCutePageTests(unittest.TestCase):
             setattr(g3, name, value)
 
     def test_taiwan_korea_and_hong_kong_native_pages(self):
-        self.assertEqual([spec["lang"] for spec in gen.PAGE_SPECS], ["zh-Hant", "ko", "zh-Hant"])
+        self.assertEqual([spec["lang"] for spec in gen.PAGE_SPECS], ["zh-Hant", "ko", "zh-Hant", "zh-Hant"])
         self.assertEqual({spec["key"] for spec in gen.PAGE_SPECS}, {"tripbeecute"})
         self.assertIn("可愛 旅行手帳", gen.PAGE_SPECS[0]["terms"])
         self.assertIn("다꾸 여행", gen.PAGE_SPECS[1]["terms"])
         self.assertIn("旅行手帳", gen.PAGE_SPECS[2]["terms"])
         self.assertIn("旅行 手帳", gen.PAGE_SPECS[2]["terms"])
-        self.assertEqual(len(self.pages), 3)
+        self.assertIn("旅遊手帳", gen.PAGE_SPECS[3]["terms"])
+        self.assertIn("旅行 清單", gen.PAGE_SPECS[3]["terms"])
+        self.assertEqual(len(self.pages), 4)
 
     def test_card_links_storefront_with_campaign(self):
         for spec in gen.PAGE_SPECS:
@@ -79,6 +81,23 @@ class TripBeeCutePageTests(unittest.TestCase):
         no_ct = "https://apps.apple.com/hk/app/id6826987407?pt=118326163&mt=8"
         with self.assertRaises(g3.GenerationError):
             g3.extra_storefront_url(no_ct, "6826987407", "hk")
+
+    def test_taiwan_list_page_own_slug_storefront_and_angle(self):
+        page = gen.PAGE_SPECS[3]
+        self.assertNotIn("cc", page)  # 預設台灣店
+        slugs = [spec["slug"] for spec in gen.PAGE_SPECS]
+        self.assertEqual(len(slugs), len(set(slugs)))
+        source = self.pages[g3.page_relative(page)]
+        self.assertIn("apps.apple.com/tw/app/id6826987407", source)
+        self.assertTrue(page["h1"].startswith("旅遊手帳"))
+        self.assertIn("旅行清單", page["title"])
+        text = g3.visible_text(source)
+        for word in ("行李清單", "打包", "旅伴", "不是記帳或分帳工具"):
+            self.assertIn(word, text)
+        # 與既有台灣頁、香港頁的標題與開頭不同
+        for other in gen.PAGE_SPECS[:3]:
+            self.assertNotEqual(page["title"], other["title"])
+            self.assertNotEqual(page["lead"], other["lead"])
 
     def test_dedicated_text_floor(self):
         for spec in gen.PAGE_SPECS:

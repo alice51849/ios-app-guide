@@ -1,12 +1,12 @@
 {
- "generated": "2026-11-09T06:44:13Z",
+ "generated": "2026-11-09T19:55:28Z",
  "mode": "apply",
  "counts": {
-  "ok_reply": 56,
+  "ok_reply": 57,
   "unknown_app": 47,
-  "ok_backfilled_earlier": 57,
-  "ok_store_only": 673,
+  "ok_backfilled_earlier": 59,
   "backfilled": 2,
+  "ok_store_only": 671,
   "ok_bio_link": 68,
   "ok_caption": 4,
   "taken_down": 4,
@@ -24,6 +24,18 @@
    "why": "trial",
    "ios_id": "6785004775",
    "locale": "pt-BR"
+  },
+  {
+   "channel": "threads",
+   "id": "18035015273905337",
+   "permalink": "https://www.threads.com/@hourstag.app/post/DfhaQSKm6pv",
+   "date": "2026-11-09",
+   "app": "lumiweather",
+   "status": "ok_reply",
+   "text": "明天（11/10 週二）穿什麼？ 台北 15–20°C 台中 14–23°C 高雄 19–24°C 以台北來說，早晚涼：長袖＋薄外套，洋蔥式穿法方便調整。 #明天穿什麼 #天氣 預報：MET Norway，僅供參考，出門前以實際天氣為準。 我做的 Lumi天氣星球 會把體感溫度、",
+   "why": "brand",
+   "ios_id": "6779552704",
+   "locale": "zh-Hant"
   },
   {
    "channel": "threads",
@@ -1247,11 +1259,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdXpzr_j7Jf",
    "date": "2026-09-17",
    "app": "sononote",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "The best idea of the week happened while you were driving. Our app, not a ranking: Record a recap, review action items and an email draft. C",
    "why": "url+brand",
    "ios_id": "6782139553",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "18204113104383795",
+   "at": "2026-11-09T19:52:36Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -1259,16 +1276,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdYF7y5GBiP",
    "date": "2026-09-17",
    "app": "tripbeelite",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "Six confirmation emails, two screenshots, one note — and no actual plan. Our app, not a ranking: Put a weekend trip on a clear timeline. One",
    "why": "url+brand",
    "ios_id": "6791299610",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "18126382240992438",
-   "at": "2026-11-09T06:41:31Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",
@@ -1288,16 +1300,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdXp0WeD8QQ",
    "date": "2026-09-17",
    "app": "mochidonestamp",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "My to-do app stresses me out more than the actual tasks do. Our app, not a ranking: Tap Done; reminders restart from completion. One active ",
    "why": "url+brand",
    "ios_id": "6790800323",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "17892923172460334",
-   "at": "2026-11-09T06:41:31Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",
@@ -1329,11 +1336,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdXcK8gkiLd",
    "date": "2026-09-16",
    "app": "lumiletterspro",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "\"Five more minutes\" — about a learning game, for once. Our app, not a ranking: Link letter sounds, tracing and words. Paid download includes",
    "why": "url+brand",
    "ios_id": "6778491147",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "18002275920019680",
+   "at": "2026-11-09T19:52:36Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",

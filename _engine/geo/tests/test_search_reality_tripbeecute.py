@@ -120,6 +120,22 @@ class TripBeeCutePageTests(unittest.TestCase):
             self.assertNotEqual(page["title"], other["title"])
             self.assertNotEqual(page["lead"], other["lead"])
 
+    def test_taiwan_main_page_adds_cute_itinerary_term_keeping_existing(self):
+        page = gen.PAGE_SPECS[0]
+        # 只增詞、不拿詞：主詞與既有詞全部保留，新增「可愛 行程」
+        self.assertEqual(page["terms"], ["可愛 旅行手帳", "旅行手帳", "出國 行程表", "出國倒數", "可愛 行程"])
+        self.assertEqual(page["title"], "可愛旅行手帳怎麼做？把整趟行程排成一本插畫手冊的 5 個重點")
+        self.assertEqual(page["h1"], "可愛旅行手帳：出國倒數、航班、每日行程和行李清單收進同一本")
+        source = self.pages[g3.page_relative(page)]
+        self.assertIn('"keywords": "可愛 旅行手帳, 旅行手帳, 出國 行程表, 出國倒數, 可愛 行程"', source)
+        text = g3.visible_text(source)
+        for word in ("想要一份可愛的行程表？", "可愛 行程", "逐日分色", "插畫封面", "CSV 範本", "匯入"):
+            self.assertIn(word, text)
+        # 其他頁不出現新段落
+        for other in gen.PAGE_SPECS[1:]:
+            self.assertNotIn("想要一份可愛的行程表？", self.pages[g3.page_relative(other)])
+            self.assertNotIn("可愛 行程", other["terms"])
+
     def test_dedicated_text_floor(self):
         for spec in gen.PAGE_SPECS:
             size = g3.dedicated_size(spec["lang"], g3.visible_text(self.pages[g3.page_relative(spec)]))

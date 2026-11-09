@@ -32,7 +32,7 @@ class TripBeeCutePageTests(unittest.TestCase):
             setattr(g3, name, value)
 
     def test_taiwan_korea_and_hong_kong_native_pages(self):
-        self.assertEqual([spec["lang"] for spec in gen.PAGE_SPECS], ["zh-Hant", "ko", "zh-Hant", "zh-Hant"])
+        self.assertEqual([spec["lang"] for spec in gen.PAGE_SPECS], ["zh-Hant", "ko", "zh-Hant", "zh-Hant", "zh-Hant"])
         self.assertEqual({spec["key"] for spec in gen.PAGE_SPECS}, {"tripbeecute"})
         self.assertIn("可愛 旅行手帳", gen.PAGE_SPECS[0]["terms"])
         self.assertIn("다꾸 여행", gen.PAGE_SPECS[1]["terms"])
@@ -40,7 +40,9 @@ class TripBeeCutePageTests(unittest.TestCase):
         self.assertIn("旅行 手帳", gen.PAGE_SPECS[2]["terms"])
         self.assertIn("旅遊手帳", gen.PAGE_SPECS[3]["terms"])
         self.assertIn("旅行 清單", gen.PAGE_SPECS[3]["terms"])
-        self.assertEqual(len(self.pages), 4)
+        self.assertIn("旅行手帳", gen.PAGE_SPECS[4]["terms"])
+        self.assertIn("旅行 手賬", gen.PAGE_SPECS[4]["terms"])
+        self.assertEqual(len(self.pages), 5)
 
     def test_card_links_storefront_with_campaign(self):
         for spec in gen.PAGE_SPECS:
@@ -75,12 +77,31 @@ class TripBeeCutePageTests(unittest.TestCase):
         self.assertIn("apps.apple.com/tw/app/id6826987407", self.pages[g3.page_relative(gen.PAGE_SPECS[0])])
 
     def test_hong_kong_link_rejected_without_extra_storefront(self):
-        bad = "https://apps.apple.com/mo/app/id6826987407?pt=118326163&ct=ln_tripbeecute_all_ww_gw&mt=8"
+        bad = "https://apps.apple.com/sg/app/id6826987407?pt=118326163&ct=ln_tripbeecute_all_ww_gw&mt=8"
         with self.assertRaises(g3.GenerationError):
-            g3.extra_storefront_url(bad, "6826987407", "mo")
+            g3.extra_storefront_url(bad, "6826987407", "sg")
         no_ct = "https://apps.apple.com/hk/app/id6826987407?pt=118326163&mt=8"
         with self.assertRaises(g3.GenerationError):
             g3.extra_storefront_url(no_ct, "6826987407", "hk")
+
+    def test_macau_page_uses_mo_storefront_own_slug_and_angle(self):
+        mo = gen.PAGE_SPECS[4]
+        self.assertEqual(mo["cc"], "mo")
+        self.assertTrue(mo["slug"].endswith("-mo"))
+        self.assertIn("mo", g3.EXTRA_STOREFRONTS)
+        source = self.pages[g3.page_relative(mo)]
+        self.assertIn("https://apps.apple.com/mo/app/id6826987407?", html.unescape(source))
+        for other in ("tw", "hk"):
+            self.assertNotIn(f"apps.apple.com/{other}/", source)
+        self.assertTrue(mo["h1"].startswith("旅行手帳"))
+        text = g3.visible_text(source)
+        for word in ("澳門 App Store", "港珠澳大橋", "澳門國際機場", "家人"):
+            self.assertIn(word, text)
+        for other in gen.PAGE_SPECS[:4]:
+            self.assertNotEqual(mo["slug"], other["slug"])
+            self.assertNotEqual(mo["title"], other["title"])
+            self.assertNotEqual(mo["lead"], other["lead"])
+            self.assertNotEqual(mo["intro"], other["intro"])
 
     def test_taiwan_list_page_own_slug_storefront_and_angle(self):
         page = gen.PAGE_SPECS[3]

@@ -781,8 +781,8 @@ def campaign(key: str, cc: str) -> str:
     return token
 
 
-# 同語系、但不在 locale_storefronts.json 的商店國家（頁面 spec 用 "cc" 指定，例如香港繁中頁 → hk）。
-EXTRA_STOREFRONTS = frozenset({"hk"})
+# 同語系、但不在 locale_storefronts.json 的商店國家（頁面 spec 用 "cc" 指定，例如香港繁中頁 → hk、澳門繁中頁 → mo）。
+EXTRA_STOREFRONTS = frozenset({"hk", "mo"})
 
 
 def extra_storefront_url(url: str, app_id: str | None, cc: str) -> str:

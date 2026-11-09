@@ -1,18 +1,42 @@
 {
- "generated": "2026-11-08T22:13:51Z",
+ "generated": "2026-11-09T06:44:13Z",
  "mode": "apply",
  "counts": {
-  "ok_reply": 54,
+  "ok_reply": 56,
   "unknown_app": 47,
-  "ok_backfilled_earlier": 55,
+  "ok_backfilled_earlier": 57,
+  "ok_store_only": 673,
   "backfilled": 2,
-  "ok_store_only": 675,
   "ok_bio_link": 68,
   "ok_caption": 4,
   "taken_down": 4,
   "missing": 3
  },
  "rows": [
+  {
+   "channel": "threads",
+   "id": "18120915892967567",
+   "permalink": "https://www.threads.com/@hourstag.app/post/DfgVw0zlr2q",
+   "date": "2026-11-09",
+   "app": "mochi",
+   "status": "ok_reply",
+   "text": "ENEM chegando e meu cronograma de estudos era um caos. Agora cada matéria virou uma lista fofa no iPhone: redação, matemática, revisão de na",
+   "why": "trial",
+   "ios_id": "6785004775",
+   "locale": "pt-BR"
+  },
+  {
+   "channel": "threads",
+   "id": "18647210074022704",
+   "permalink": "https://www.threads.com/@hourstag.app/post/DfeAGCTkRVV",
+   "date": "2026-11-08",
+   "app": "tripbeecute",
+   "status": "ok_reply",
+   "text": "Planejador fofo com amigos. Cada viagem vira um livretinho na sua estante, com capa própria. TripBee Cute: Diário de Viagem",
+   "why": "brand",
+   "ios_id": "6826987407",
+   "locale": "other"
+  },
   {
    "channel": "threads",
    "id": "18156550522534193",
@@ -1211,16 +1235,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdY8UbwiSpN",
    "date": "2026-09-17",
    "app": "mochi",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "Eine To-do-Liste, die man nicht öffnet, ist nur eine Liste schlechter Gefühle. Die To-do-Liste, die du wirklich gern nutzt. Mochi Wer es aus",
    "why": "url+brand",
    "ios_id": "6785004775",
-   "locale": "other",
-   "own_replies": [],
-   "comment_id": "18132848155874429",
-   "at": "2026-11-08T22:10:50Z",
-   "verified": true,
-   "via": "list"
+   "locale": "other"
   },
   {
    "channel": "threads",
@@ -1240,11 +1259,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdYF7y5GBiP",
    "date": "2026-09-17",
    "app": "tripbeelite",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "Six confirmation emails, two screenshots, one note — and no actual plan. Our app, not a ranking: Put a weekend trip on a clear timeline. One",
    "why": "url+brand",
    "ios_id": "6791299610",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "18126382240992438",
+   "at": "2026-11-09T06:41:31Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -1252,16 +1276,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdYF8gBGF63",
    "date": "2026-09-17",
    "app": "lumimissionpro",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "Brush, shoes, bag — and you have said each one four times already. Our app, not a ranking: Follow visual meal, tidy-up and bedtime tasks. Pa",
    "why": "url+brand",
    "ios_id": "6779745474",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "18130249730479806",
-   "at": "2026-11-08T22:10:50Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",
@@ -1269,11 +1288,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdXp0WeD8QQ",
    "date": "2026-09-17",
    "app": "mochidonestamp",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "My to-do app stresses me out more than the actual tasks do. Our app, not a ranking: Tap Done; reminders restart from completion. One active ",
    "why": "url+brand",
    "ios_id": "6790800323",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "17892923172460334",
+   "at": "2026-11-09T06:41:31Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",

@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-11-08T05:50:59Z",
+  "updated_at": "2026-11-09T06:00:48Z",
   "note": "Insights of our own IG / Threads posts by .github/scripts/post_performance.py. score = views + 3*likes + 5*replies + 8*(saves+shares+reposts). boost = best apps, read by 00_GrowthEngine shorts/scripts/schedule_posts.py.",
   "sources": {
     "instagram": "ok: 37 posts",
-    "threads": "ok: 9 posts"
+    "threads": "ok: 8 posts"
   },
   "boost": [
     "cvdesk",
@@ -39,8 +39,8 @@
     "channels": {
       "instagram": {
         "posts": 14,
-        "median_views": 7.0,
-        "keep_slot": 1,
+        "median_views": 9.0,
+        "keep_slot": 15,
         "daily": 2
       },
       "threads": {
@@ -78,10 +78,10 @@
       "ja": {
         "hour": 1,
         "avg_views": 44.8,
-        "posts": 10,
+        "posts": 11,
         "hours": {
           "1": 44.8,
-          "5": 12.5
+          "5": 8.3
         }
       },
       "zh-Hant": {
@@ -155,10 +155,10 @@
       {
         "key": "gmoney",
         "posts": 3,
-        "views": 268,
+        "views": 272,
         "engagement": 3,
-        "score": 281,
-        "avg_score": 93.7
+        "score": 285,
+        "avg_score": 95.0
       },
       {
         "key": "duowallpaperstudio",
@@ -187,10 +187,10 @@
       {
         "key": "battai",
         "posts": 4,
-        "views": 145,
+        "views": 146,
         "engagement": 1,
-        "score": 150,
-        "avg_score": 37.5
+        "score": 151,
+        "avg_score": 37.8
       },
       {
         "key": "claudeusagemini",
@@ -295,6 +295,14 @@
         "engagement": 1,
         "score": 12,
         "avg_score": 12.0
+      },
+      {
+        "key": "cyca",
+        "posts": 1,
+        "views": 11,
+        "engagement": 0,
+        "score": 11,
+        "avg_score": 11.0
       },
       {
         "key": "zipbox",
@@ -466,7 +474,7 @@
       },
       {
         "key": "mochidonestamp",
-        "posts": 2,
+        "posts": 3,
         "views": 0,
         "engagement": 0,
         "score": 0,
@@ -492,27 +500,27 @@
     "locales": [
       {
         "key": "ko",
-        "posts": 5,
-        "views": 515,
+        "posts": 6,
+        "views": 527,
         "engagement": 1,
-        "score": 520,
-        "avg_score": 104.0
-      },
-      {
-        "key": "ja",
-        "posts": 11,
-        "views": 344,
-        "engagement": 3,
-        "score": 355,
-        "avg_score": 32.3
+        "score": 532,
+        "avg_score": 88.7
       },
       {
         "key": "zh-Hant",
         "posts": 42,
-        "views": 1211,
+        "views": 1215,
         "engagement": 16,
-        "score": 1283,
-        "avg_score": 30.5
+        "score": 1287,
+        "avg_score": 30.6
+      },
+      {
+        "key": "ja",
+        "posts": 12,
+        "views": 344,
+        "engagement": 3,
+        "score": 355,
+        "avg_score": 29.6
       },
       {
         "key": "en",
@@ -653,10 +661,10 @@
         "locale": "zh-Hant",
         "hook": "雙11 加上年底聚餐，錢花得特別快？先設好今天的上限。",
         "posts": 1,
-        "views": 59,
+        "views": 63,
         "engagement": 2,
-        "score": 67,
-        "avg_score": 67.0
+        "score": 71,
+        "avg_score": 71.0
       },
       {
         "app": "lumibopomofo",
@@ -849,22 +857,22 @@
         "avg_score": 16.0
       },
       {
+        "app": "battai",
+        "locale": "ko",
+        "hook": "저는 혼자 앱을 만드는 개발자입니다. 요즘 '배터리가 하루를 못 버티는데 기변할까, 배터리만 바꿀까' 고민하",
+        "posts": 1,
+        "views": 11,
+        "engagement": 1,
+        "score": 16,
+        "avg_score": 16.0
+      },
+      {
         "app": "mochi_halloween",
         "locale": "ja",
         "hook": "",
         "posts": 1,
         "views": 15,
         "engagement": 0,
-        "score": 15,
-        "avg_score": 15.0
-      },
-      {
-        "app": "battai",
-        "locale": "ko",
-        "hook": "저는 혼자 앱을 만드는 개발자입니다. 요즘 '배터리가 하루를 못 버티는데 기변할까, 배터리만 바꿀까' 고민하",
-        "posts": 1,
-        "views": 10,
-        "engagement": 1,
         "score": 15,
         "avg_score": 15.0
       },
@@ -952,6 +960,16 @@
         "app": "onepageppt",
         "locale": "ja",
         "hook": "メモもPDFも スクショも",
+        "posts": 1,
+        "views": 11,
+        "engagement": 0,
+        "score": 11,
+        "avg_score": 11.0
+      },
+      {
+        "app": "cyca",
+        "locale": "ko",
+        "hook": "오늘의 바디 예보",
         "posts": 1,
         "views": 11,
         "engagement": 0,
@@ -1517,6 +1535,16 @@
         "engagement": 0,
         "score": 0,
         "avg_score": 0.0
+      },
+      {
+        "app": "mochidonestamp",
+        "locale": "ja",
+        "hook": "",
+        "posts": 1,
+        "views": 0,
+        "engagement": 0,
+        "score": 0,
+        "avg_score": 0.0
       }
     ],
     "variants": [
@@ -1530,11 +1558,11 @@
       },
       {
         "key": "c",
-        "posts": 15,
-        "views": 396,
+        "posts": 16,
+        "views": 407,
         "engagement": 4,
-        "score": 416,
-        "avg_score": 27.7
+        "score": 427,
+        "avg_score": 26.7
       },
       {
         "key": "a",
@@ -2998,12 +3026,12 @@
       "kind": "image",
       "variant": null,
       "metrics": {
-        "views": 10,
+        "views": 11,
         "likes": 0,
         "replies": 1,
         "reposts": 0
       },
-      "score": 15
+      "score": 16
     },
     {
       "channel": "instagram",
@@ -3618,12 +3646,12 @@
       "kind": "image",
       "variant": null,
       "metrics": {
-        "views": 59,
+        "views": 63,
         "likes": 1,
         "replies": 1,
         "reposts": 0
       },
-      "score": 67
+      "score": 71
     },
     {
       "channel": "threads",
@@ -3662,6 +3690,48 @@
         "reposts": 0
       },
       "score": 8
+    },
+    {
+      "channel": "instagram",
+      "id": "17978326190934480",
+      "link": "https://www.instagram.com/reel/DfgKX4sgGH1/",
+      "posted_at": "2026-11-09T01:34:38",
+      "app": "cyca",
+      "locale": "ko",
+      "hook": "오늘의 바디 예보",
+      "clip": "cyca/ko",
+      "kind": "clip",
+      "variant": "c",
+      "metrics": {
+        "views": 11,
+        "reach": 9,
+        "likes": 0,
+        "saves": 0,
+        "shares": 0,
+        "replies": 0
+      },
+      "score": 11
+    },
+    {
+      "channel": "instagram",
+      "id": "18017690279982443",
+      "link": "https://www.instagram.com/p/DfgkwTWFFNm/",
+      "posted_at": "2026-11-09T05:25:01",
+      "app": "mochidonestamp",
+      "locale": "ja",
+      "hook": "",
+      "clip": "utility/chore/mochidonestamp/sheets/ja",
+      "kind": "utility",
+      "variant": null,
+      "metrics": {
+        "views": 0,
+        "reach": 0,
+        "likes": 0,
+        "saves": 0,
+        "shares": 0,
+        "replies": 0
+      },
+      "score": 0
     }
   ]
 }

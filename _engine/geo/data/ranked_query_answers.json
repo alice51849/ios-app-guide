@@ -36393,5 +36393,501 @@
     ]
    ]
   }
+ },
+ {
+  "key": "battai",
+  "locale": "th",
+  "market": "TH",
+  "term": "ความจุแบต",
+  "rank": 3,
+  "slug": "iphone-battery-capacity-thailand-maximum-capacity-trend-before-replacing",
+  "loc": {
+   "title": "ความจุแบต iPhone: ดูความจุสูงสุดเป็นแนวโน้ม ก่อนตัดสินใจเปลี่ยนแบต｜BattAI",
+   "meta": "ความจุสูงสุดในการตั้งค่าบอกแค่ตัวเลขของวันนี้ ไม่บอกว่าลดลงเร็วแค่ไหน วิธีอ่านความจุแบต iPhone ให้ถูก เกณฑ์ 80% หมายถึงอะไร และเมื่อไรควรส่งเช็คแบต BattAI บันทึกค่าเป็นกราฟพร้อมช่วงความเชื่อมั่น ซื้อครั้งเดียว ไม่ใช่การสมัครสมาชิก",
+   "h1": "ความจุแบต iPhone: ตัวเลขเดียวไม่พอ ต้องดูว่ามันลดลงอย่างไร",
+   "lead": "เปิดการตั้งค่า › แบตเตอรี่ แล้วเห็นความจุสูงสุด 86% หลายคนไม่แน่ใจว่าดีหรือแย่ ควรเปลี่ยนแบตหรือยัง คำตอบอยู่ที่ว่าตัวเลขนี้ลดลงเร็วแค่ไหน ไม่ใช่ตัวเลขของวันนี้วันเดียว",
+   "answer": "ความจุแบตของ iPhone (ความจุสูงสุด) คือความจุที่แบตเก็บได้ตอนนี้เมื่อเทียบกับตอนใหม่ ดูได้ที่การตั้งค่า › แบตเตอรี่ Apple ใช้ 80% เป็นเกณฑ์อ้างอิงสำหรับบริการ แต่การตัดสินใจเปลี่ยนแบตควรดูแนวโน้มว่าลดลงเดือนละเท่าไร ร่วมกับจำนวนรอบชาร์จและอาการที่เจอจริง เช่น แบตหมดเร็วหรือเครื่องร้อน",
+   "paras": [
+    "ในการตั้งค่าเห็นได้แค่ความจุสูงสุดของวันนี้ ถ้าเครื่องหนึ่งอยู่ที่ 86% มาครึ่งปี กับอีกเครื่องที่ลดจาก 92% เหลือ 86% ในสามเดือน สองเครื่องนี้ต่างกันมาก ทั้งที่ตัวเลขวันนี้เท่ากัน การจดตัวเลขเป็นระยะจึงบอกได้มากกว่าการดูครั้งเดียว",
+    "แอป iPhone ของบุคคลที่สามอ่านความจุสูงสุดหรือจำนวนรอบชาร์จเองไม่ได้ iOS ให้แอปอ่านได้เฉพาะระดับแบต สถานะการชาร์จ โหมดพลังงานต่ำ สถานะความร้อนของทั้งเครื่อง และเวลา แอปที่บอกว่าอ่านความจุให้อัตโนมัติจึงควรระวัง ค่าความจุต้องมาจากที่คุณกรอกจากการตั้งค่า หรือจากไฟล์ Analytics ของระบบ",
+    "BattAI ให้คุณกรอกความจุสูงสุดจากการตั้งค่า › แบตเตอรี่ แล้วได้คะแนนสุขภาพแบต 0–100 ทันที ค่าที่กรอกแต่ละครั้งแสดงเป็นกราฟพร้อมช่วงความเชื่อมั่น 95% และเมื่อค่าห่างกันอย่างน้อย 30 วันจะคำนวณการเปลี่ยนแปลงต่อเดือนให้ ส่วนการ์ดแบตเตอรี่และการแจ้งเตือนแบตเต็ม แบตต่ำ และเครื่องร้อนใช้ฟรี คะแนนสุขภาพ แนวโน้ม รายงาน และวิดเจ็ตปลดล็อกด้วยการซื้อครั้งเดียว ไม่ใช่การสมัครสมาชิก คะแนนเป็นค่าที่คำนวณ ไม่ใช่การวินิจฉัยของ Apple"
+   ],
+   "look": [
+    "แอปบอกตรง ๆ ว่าความจุสูงสุดต้องกรอกเอง ไม่ได้อ่านจากเซ็นเซอร์",
+    "ค่าที่กรอกแต่ละครั้งเก็บเป็นกราฟ ไม่ใช่ทับตัวเลขเดิม",
+    "แยกให้เห็นว่าค่าไหนวัดได้ ค่าไหนประมาณ และค่าไหนคุณกรอก",
+    "ไม่มีบัญชี และข้อมูลแบตอยู่ในเครื่อง",
+    "ราคาชัดเจน ไม่มีการเรียกเก็บเงินอัตโนมัติ"
+   ],
+   "steps": [
+    "เปิดการตั้งค่า › แบตเตอรี่ แล้วจดความจุสูงสุดของวันนี้",
+    "กรอกค่านี้ใน BattAI เพื่อดูคะแนนและปัจจัยหลักที่มีผล",
+    "กรอกซ้ำทุกสองถึงสี่สัปดาห์ เมื่อค่าห่างกัน 30 วันจะเห็นการลดลงต่อเดือน",
+    "เปิดการแจ้งเตือนแบตเต็มที่ 80% หรือ 90% ถ้าเหมาะกับการใช้งาน",
+    "ถ้าตัวเลขเข้าใกล้ 80% หรือแบตหมดเร็วผิดปกติ ส่งเช็คกับ Apple หรือศูนย์บริการ"
+   ],
+   "rows": [
+    [
+     "ความจุสูงสุด",
+     "ตัวเลขวันนี้ในการตั้งค่า",
+     "บอกสถานะตอนนี้ แต่ไม่บอกความเร็วที่ลดลง"
+    ],
+    [
+     "แนวโน้ม",
+     "ลดลงเดือนละเท่าไร",
+     "ใช้คาดว่าจะถึง 80% เมื่อไร ก่อนตัดสินใจเปลี่ยนแบต"
+    ],
+    [
+     "ความร้อน",
+     "เครื่องร้อนบ่อยแค่ไหนตอนชาร์จ",
+     "ความร้อนเป็นปัจจัยที่ทำให้แบตเสื่อมเร็วขึ้น"
+    ]
+   ],
+   "fits": "BattAI เหมาะกับคนที่อยากรู้ว่าความจุแบตลดลงเร็วแค่ไหน ก่อนตัดสินใจใช้ต่อ เปลี่ยนแบต หรือขายเครื่อง: กรอกความจุจากการตั้งค่าแล้วได้คะแนน 0–100 กราฟความจุพร้อมช่วงความเชื่อมั่น และรายงานสำหรับขายต่อ การ์ดแบตเตอรี่และการแจ้งเตือนแบตเต็ม แบตต่ำ เครื่องร้อนใช้ฟรี ส่วนคะแนน แนวโน้ม และรายงานปลดล็อกด้วยการซื้อครั้งเดียว ไม่มีบัญชี ไม่มีโฆษณา",
+   "faq": [
+    [
+     "ความจุแบต iPhone เหลือเท่าไรถึงควรเปลี่ยน",
+     "Apple ใช้ 80% เป็นเกณฑ์อ้างอิงสำหรับบริการ แต่ถ้าความจุยังสูงกว่านั้นและแบตหมดเร็วผิดปกติ หรือลดลงเร็วในเวลาไม่กี่เดือน ก็ควรส่งเช็คได้ คะแนนใน BattAI เป็นค่าที่คำนวณ ไม่ใช่การวินิจฉัยของ Apple"
+    ],
+    [
+     "BattAI อ่านความจุแบตให้อัตโนมัติไหม",
+     "ไม่ได้ iOS ไม่ให้แอปอ่านความจุสูงสุด คุณกรอกค่าจากการตั้งค่า › แบตเตอรี่ หรือนำเข้าจากไฟล์ Analytics ของระบบ"
+    ],
+    [
+     "ต้องจ่ายรายเดือนไหม",
+     "ไม่ต้อง การ์ดแบตเตอรี่และการแจ้งเตือนใช้ฟรี ส่วนคะแนนสุขภาพ แนวโน้ม รายงาน และวิดเจ็ตปลดล็อกด้วยการซื้อครั้งเดียว ไม่ใช่การสมัครสมาชิก"
+    ]
+   ]
+  },
+  "en": {
+   "title": "iPhone battery capacity: read maximum capacity as a trend before you replace the battery",
+   "meta": "Settings shows today's maximum capacity, not how fast it is falling. How to read iPhone battery capacity, what the 80% benchmark means and when to get the battery checked. BattAI charts the values you enter with a confidence range. One purchase, not a subscription.",
+   "h1": "iPhone battery capacity: one number is not enough, watch how it falls",
+   "lead": "You open Settings › Battery, see a maximum capacity of 86%, and are not sure whether that is good or bad or whether it is time to replace the battery. The answer is how fast that number is dropping, not today's number on its own.",
+   "answer": "An iPhone's battery capacity (maximum capacity) is how much charge the battery can hold now compared with when it was new, shown in Settings › Battery. Apple uses 80% as a service benchmark, but a replacement decision should look at how much it drops per month, together with cycle count and the symptoms you actually see, such as fast drain or heat.",
+   "paras": [
+    "Settings only shows today's maximum capacity. A phone that has sat at 86% for half a year and one that fell from 92% to 86% in three months are very different, even though today's number is the same. Writing the number down every so often tells you more than one look.",
+    "A third-party iPhone app cannot read maximum capacity or cycle count by itself. iOS lets apps read only battery level, charge state, Low Power Mode, whole-device thermal state and time, so be wary of an app that claims to read capacity automatically. The capacity value has to come from what you enter from Settings or from the system's Analytics file.",
+    "BattAI lets you enter the maximum capacity from Settings › Battery and gives you a 0–100 battery health score right away. Each value you enter is charted with a 95% confidence range, and once readings are at least 30 days apart it calculates the monthly change. The battery card and the full, low battery and heat alerts are free; the health score, trends, reports and widgets unlock with one purchase, not a subscription. Scores are calculated, not an Apple diagnosis."
+   ],
+   "look": [
+    "The app says plainly that maximum capacity is entered by you, not read from a sensor",
+    "Each value you enter is kept on a chart, not overwritten",
+    "Measured, estimated and user-entered values are kept apart",
+    "No account, and battery data stays on the device",
+    "Clear pricing with no automatic charges"
+   ],
+   "steps": [
+    "Open Settings › Battery and note today's maximum capacity.",
+    "Enter it in BattAI to see the score and the main factor behind it.",
+    "Enter it again every two to four weeks; once readings are 30 days apart you see the monthly drop.",
+    "Turn on the full charge alert at 80% or 90% if that suits how you use the phone.",
+    "If the number nears 80% or the battery drains unusually fast, get it checked by Apple or a service provider."
+   ],
+   "rows": [
+    [
+     "Maximum capacity",
+     "Today's number in Settings",
+     "Shows where you are now, not how fast it is falling"
+    ],
+    [
+     "Trend",
+     "How much it drops per month",
+     "Lets you estimate when it will reach 80% before deciding on a replacement"
+    ],
+    [
+     "Heat",
+     "How often the phone runs hot while charging",
+     "Heat is a factor that makes batteries age faster"
+    ]
+   ],
+   "fits": "BattAI suits people who want to know how fast their battery capacity is falling before deciding to keep, replace the battery or sell: enter the capacity from Settings for a 0–100 score, a capacity chart with a confidence range and a resale report. The battery card and the full, low battery and heat alerts are free; the score, trends and reports unlock with one purchase. No account, no ads.",
+   "faq": [
+    [
+     "At what battery capacity should I replace an iPhone battery?",
+     "Apple uses 80% as a service benchmark. If capacity is still above that but the battery drains unusually fast, or it dropped quickly within a few months, it is still worth getting checked. BattAI's score is calculated, not an Apple diagnosis."
+    ],
+    [
+     "Does BattAI read battery capacity automatically?",
+     "No. iOS does not let apps read maximum capacity. You enter the value from Settings › Battery or import it from the system's Analytics file."
+    ],
+    [
+     "Is there a monthly fee?",
+     "No. The battery card and alerts are free, and the health score, trends, reports and widgets unlock with one purchase, not a subscription."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "caldaily",
+  "locale": "th",
+  "market": "TH",
+  "term": "เครื่องคิดเลข วิดเจ็ต",
+  "rank": 11,
+  "slug": "iphone-calculator-widget-thailand-calculate-on-the-home-screen-and-keep-named-history",
+  "loc": {
+   "title": "เครื่องคิดเลขวิดเจ็ต iPhone: คิดเลขบนหน้าจอโฮมได้เลย และหาผลลัพธ์เก่าเจอ｜CalDaily",
+   "meta": "อยากกดคิดเลขจากหน้าจอโฮมโดยไม่ต้องเปิดแอป? วิธีเลือกเครื่องคิดเลขวิดเจ็ตบน iPhone ที่คิดได้จริงในวิดเจ็ต เก็บประวัติแบบตั้งชื่อได้ และดูชัดในทุกธีม CalDaily มีธีมฟรีหนึ่งแบบ ปลดล็อกครั้งเดียว ไม่มีการสมัครสมาชิก",
+   "h1": "เครื่องคิดเลขวิดเจ็ต: กดคิดจากหน้าจอโฮม แล้วหาผลลัพธ์เจออีกครั้ง",
+   "lead": "หารค่าข้าวกับเพื่อน เช็คราคาลดในห้าง หรือคิดค่าน้ำมันก่อนออกเดินทาง ส่วนใหญ่เป็นการคิดเลขสั้น ๆ ที่ต้องปลดล็อกเครื่อง หาแอป แล้วก็ลืมตัวเลขไปในวันถัดมา",
+   "answer": "เครื่องคิดเลขวิดเจ็ตที่ดีควรกดคิดเลขได้ในวิดเจ็ตบนหน้าจอโฮมโดยไม่ต้องเปิดแอป ปุ่มอ่านง่ายในทุกธีม และผลลัพธ์ต้องถูกเก็บไว้ในประวัติที่ตั้งชื่อและค้นหาได้ ไม่ใช่วิดเจ็ตที่แค่เป็นทางลัดไปเปิดแอปหรือโชว์ตัวเลขล่าสุดอย่างเดียว",
+   "paras": [
+    "วิดเจ็ตเครื่องคิดเลขหลายแบบเป็นแค่ปุ่มทางลัด แตะแล้วก็พาไปเปิดแอปอยู่ดี อีกแบบโชว์ได้แค่ผลลัพธ์ล่าสุด ก่อนเลือกให้ลองดูว่ากดตัวเลขในวิดเจ็ตได้จริงไหม และตัวเลขที่คิดในวิดเจ็ตไปอยู่ในประวัติหรือเปล่า",
+    "เรื่องที่สองคือความชัด ธีมสวยแต่ปุ่มกลืนกับพื้นหลังทำให้กดผิดง่ายบนวิดเจ็ตขนาดเล็ก ลองตั้งวิดเจ็ตบนวอลเปเปอร์ที่ใช้จริงก่อนตัดสินใจ",
+    "CalDaily มีวิดเจ็ตบนหน้าจอโฮมที่คิดเลขได้โดยไม่ต้องเปิดแอป และใช้ธีมเดียวกับที่เลือกในแอป ผลลัพธ์แต่ละครั้งบันทึกพร้อมชื่อและประเภท จัดกลุ่มตามวัน กรองตามเครื่องมือ และส่งออกเป็น CSV ได้ มีเครื่องมือ 8 แบบ เช่น ทิปและหารบิล ส่วนลดและภาษี และค่าน้ำมันเดินทาง ธีมในตัว 100 แบบใช้ฟรีได้หนึ่งแบบ การซื้อครั้งเดียวปลดล็อกธีมที่เหลือและการใช้เครื่องมือขั้นสูงทุกตัวแบบไม่จำกัด ไม่มีการสมัครสมาชิก"
+   ],
+   "look": [
+    "กดคิดเลขในวิดเจ็ตได้จริง ไม่ใช่แค่ปุ่มเปิดแอป",
+    "ปุ่มอ่านชัดบนวอลเปเปอร์ที่ใช้จริง",
+    "ผลลัพธ์ถูกเก็บในประวัติที่ตั้งชื่อและค้นหาได้",
+    "ข้อมูลอยู่ในเครื่อง ไม่ต้องมีบัญชี",
+    "ราคาชัดเจน ไม่มีค่ารายเดือน"
+   ],
+   "steps": [
+    "กดค้างบนหน้าจอโฮม แตะเพิ่มวิดเจ็ต แล้วเลือก CalDaily",
+    "ลองคิดเลขสั้น ๆ ในวิดเจ็ต เช่น ค่าข้าวหารสามคน",
+    "เปิดแอปแล้วตั้งชื่อผลลัพธ์ที่อยากเก็บไว้ดูทีหลัง",
+    "เลือกธีมที่ปุ่มอ่านชัดบนวอลเปเปอร์ของคุณ",
+    "ใช้เครื่องมือหารบิลหรือส่วนลด และตั้งค่าเริ่มต้นไว้ครั้งเดียว"
+   ],
+   "rows": [
+    [
+     "วิดเจ็ต",
+     "กดคิดในวิดเจ็ตได้ไหม",
+     "ถ้าต้องเปิดแอปทุกครั้ง วิดเจ็ตก็ไม่ได้ช่วยประหยัดเวลา"
+    ],
+    [
+     "ประวัติ",
+     "ตั้งชื่อและค้นหาได้ไหม",
+     "หาตัวเลขเมื่อสัปดาห์ก่อนเจอโดยไม่ต้องคิดใหม่"
+    ],
+    [
+     "ธีม",
+     "ปุ่มชัดบนพื้นหลังจริงไหม",
+     "วิดเจ็ตขนาดเล็ก ปุ่มที่กลืนกับพื้นทำให้กดผิดง่าย"
+    ]
+   ],
+   "fits": "CalDaily เหมาะกับคนที่คิดเลขสั้น ๆ บ่อย ๆ ระหว่างวันและอยากกดจากหน้าจอโฮมได้เลย: วิดเจ็ตที่คิดเลขได้โดยไม่ต้องเปิดแอป ประวัติที่ตั้งชื่อ ค้นหา และส่งออก CSV ได้ และเครื่องมือ 8 แบบที่จำค่าเริ่มต้นไว้ ธีมฟรีหนึ่งแบบให้ลองก่อน ปลดล็อกครั้งเดียว ไม่มีบัญชี ไม่มีโฆษณา ไม่มีการเก็บสถิติการใช้งาน",
+   "faq": [
+    [
+     "วิดเจ็ตของ CalDaily คิดเลขได้โดยไม่ต้องเปิดแอปไหม",
+     "ได้ วิดเจ็ตบนหน้าจอโฮมคิดเลขได้โดยไม่ต้องเปิด CalDaily และใช้ธีมเดียวกับที่เลือกไว้ในแอป"
+    ],
+    [
+     "ประวัติการคำนวณออกไปนอกเครื่องไหม",
+     "ไม่ ประวัติเก็บไว้ในเครื่องและแชร์เฉพาะกับวิดเจ็ตของแอปเอง ไม่มีบัญชีและไม่มีการซิงก์ผ่านคลาวด์"
+    ],
+    [
+     "ต้องจ่ายรายเดือนไหม",
+     "ไม่ต้อง แป้นคิดเลข ประวัติ และธีมหนึ่งแบบใช้ฟรี การซื้อครั้งเดียวปลดล็อกธีมที่เหลือและเครื่องมือขั้นสูงแบบไม่จำกัด"
+    ]
+   ]
+  },
+  "en": {
+   "title": "iPhone calculator widget: calculate right on the Home Screen and find old results again",
+   "meta": "Want to do quick sums from the Home Screen without opening an app? How to pick an iPhone calculator widget that really calculates in the widget, keeps named history and stays readable in every theme. CalDaily has one free theme and a one-time unlock, no subscription.",
+   "h1": "Calculator widget: tap the sum on the Home Screen, then find the result again",
+   "lead": "Splitting dinner with friends, checking a sale price at the mall or working out fuel before a trip are mostly quick sums that mean unlocking the phone, finding an app and then forgetting the number by the next day.",
+   "answer": "A good calculator widget lets you tap a calculation in the Home Screen widget without opening the app, keeps the keys readable in every theme, and saves the result in history you can name and search, rather than being a shortcut that opens the app or shows only the last number.",
+   "paras": [
+    "Many calculator widgets are just shortcut buttons that open the app anyway; others only show the latest result. Before choosing, check whether you can really type numbers in the widget and whether what you calculate there ends up in history.",
+    "The second thing is readability. A pretty theme whose keys blend into the background makes mistakes easy on a small widget. Try the widget on the wallpaper you actually use before you decide.",
+    "CalDaily has a Home Screen widget that calculates without opening the app and follows the theme you chose in the app. Each result is saved with a name and a type, grouped by day, filtered by tool and exportable to CSV. Eight tools include tip and bill split, discount and tax, and trip fuel cost. One of the 100 built-in themes is free; a single one-time purchase unlocks the remaining themes and unlimited use of every advanced tool, with no subscription."
+   ],
+   "look": [
+    "You can really calculate in the widget, not just open the app",
+    "Keys stay readable on the wallpaper you use",
+    "Results go into history you can name and search",
+    "Data stays on the device with no account",
+    "Clear pricing with no monthly fee"
+   ],
+   "steps": [
+    "Touch and hold the Home Screen, tap add widget and choose CalDaily.",
+    "Try a quick sum in the widget, such as dinner split three ways.",
+    "Open the app and name the results you want to keep for later.",
+    "Pick a theme whose keys read clearly on your wallpaper.",
+    "Use the bill split or discount tool and set its defaults once."
+   ],
+   "rows": [
+    [
+     "Widget",
+     "Can you calculate inside it",
+     "If it opens the app every time, the widget saves no time"
+    ],
+    [
+     "History",
+     "Can you name and search it",
+     "Find last week's number without working it out again"
+    ],
+    [
+     "Theme",
+     "Are the keys clear on your real background",
+     "On a small widget, keys that blend in cause mis-taps"
+    ]
+   ],
+   "fits": "CalDaily suits people who do quick sums often during the day and want to tap them straight from the Home Screen: a widget that calculates without opening the app, history you can name, search and export to CSV, and eight tools that remember your defaults. One free theme to try first and a one-time unlock. No account, no ads, no analytics.",
+   "faq": [
+    [
+     "Does the CalDaily widget calculate without opening the app?",
+     "Yes. The Home Screen widget calculates without opening CalDaily and follows the theme you chose in the app."
+    ],
+    [
+     "Does my calculation history leave the device?",
+     "No. History is stored on the device and shared only with the app's own widget; there is no account and no cloud sync."
+    ],
+    [
+     "Is there a monthly fee?",
+     "No. The keypad, history and one theme are free; a single one-time purchase unlocks the other themes and unlimited advanced tools."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "claudeusagemini",
+  "locale": "vi",
+  "market": "VN",
+  "term": "mức dùng copilot",
+  "rank": 1,
+  "slug": "copilot-usage-vietnam-check-premium-requests-on-iphone-without-a-browser",
+  "loc": {
+   "title": "Mức dùng Copilot: xem yêu cầu cao cấp còn lại trên iPhone, không cần mở trình duyệt｜UsageNow",
+   "meta": "Đang code thì Copilot báo hết yêu cầu cao cấp? Cách xem mức dùng Copilot còn lại, khi nào được đặt lại, và tách tài khoản công việc với cá nhân. UsageNow xem miễn phí một tài khoản trong ứng dụng; Pro mua một lần, không đăng ký.",
+   "h1": "Mức dùng Copilot: biết còn bao nhiêu trước khi bắt đầu việc lớn",
+   "lead": "Nhiều người chỉ biết đã dùng gần hết yêu cầu cao cấp của GitHub Copilot khi đang làm dở một tác vụ dài. Mở trình duyệt, đăng nhập, tìm trang cài đặt chỉ để xem một con số thì mất nhịp làm việc.",
+   "answer": "Mức dùng GitHub Copilot nên xem theo ba phần riêng: yêu cầu cao cấp, trò chuyện và hoàn thành mã. Phần quan trọng nhất là còn bao nhiêu yêu cầu cao cấp và chính xác khi nào được đặt lại, vì mỗi yêu cầu được tính khác nhau tùy mô hình bạn chọn.",
+   "paras": [
+    "Yêu cầu cao cấp là phần hết nhanh nhất, nhất là khi dùng mô hình mạnh hoặc chạy tác vụ dài. Nếu bạn vừa có tài khoản công ty vừa có tài khoản cá nhân, mỗi tài khoản có hạn mức và thời điểm đặt lại riêng, nên rất dễ nhầm tài khoản nào còn nhiều.",
+    "Cách đơn giản là xem mức dùng trước khi bắt đầu việc lớn, và đặt sẵn một ngưỡng cảnh báo như 90%. Khi gần chạm ngưỡng, bạn có thể đổi sang mô hình nhẹ hơn, chuyển sang tài khoản khác, hoặc dời phần việc nặng đến sau lần đặt lại.",
+    "UsageNow hiển thị yêu cầu cao cấp, trò chuyện và hoàn thành mã của GitHub Copilot, kèm bộ đếm ngược đến lần đặt lại và thời điểm chính xác theo định dạng khu vực của bạn. Claude, ChatGPT Codex và Gemini xem được cùng chỗ. Bạn xem miễn phí mức dùng hiện tại của một tài khoản trong ứng dụng; UsageNow Pro mở khóa thêm tài khoản, cảnh báo mức dùng, tiện ích và Apple Watch chỉ với một lần mua, không đăng ký."
+   ],
+   "look": [
+    "Thấy được số yêu cầu cao cấp còn lại",
+    "Biết chính xác thời điểm đặt lại theo giờ địa phương",
+    "Có cảnh báo trước khi chạm giới hạn",
+    "Xem nhiều tài khoản cạnh nhau",
+    "Đăng nhập trên trang của chính dịch vụ, không qua máy chủ trung gian"
+   ],
+   "steps": [
+    "Đăng nhập GitHub trong UsageNow bằng trang đăng nhập của GitHub.",
+    "Xem yêu cầu cao cấp còn lại và thời điểm đặt lại trước khi bắt đầu việc lớn.",
+    "Nếu dùng Pro, tạo cảnh báo ở mức phần trăm bạn quan tâm, như 90.",
+    "Khi sắp hết, đổi mô hình nhẹ hơn hoặc chuyển sang tài khoản còn nhiều hạn mức.",
+    "Bật cảnh báo đặt lại để biết ngay lúc hạn mức có lại."
+   ],
+   "rows": [
+    [
+     "Yêu cầu cao cấp",
+     "Còn lại bao nhiêu và khi nào đặt lại",
+     "Mỗi yêu cầu được tính khác nhau tùy mô hình"
+    ],
+    [
+     "Nhiều tài khoản",
+     "Công việc và cá nhân đặt cạnh nhau",
+     "Chọn đúng tài khoản còn nhiều chỗ cho việc tiếp theo"
+    ],
+    [
+     "Cảnh báo",
+     "Báo trước ở mức phần trăm bạn chọn",
+     "Lên kế hoạch lại thay vì bị dừng giữa chừng"
+    ]
+   ],
+   "fits": "UsageNow phù hợp với người dùng Copilot và các công cụ AI khác cho công việc, không muốn chạm giới hạn giữa chừng: yêu cầu cao cấp, trò chuyện và hoàn thành mã cùng thời điểm đặt lại, trên iPhone, iPad và Apple Watch. Xem miễn phí một tài khoản trong ứng dụng; Pro mua một lần để thêm tài khoản, cảnh báo, tiện ích và Apple Watch. Không có máy chủ riêng, không cần tạo tài khoản, không theo dõi.",
+   "faq": [
+    [
+     "UsageNow chỉ xem được Copilot thôi à?",
+     "Không. Ngoài GitHub Copilot, ứng dụng còn hiển thị Claude, ChatGPT Codex và Gemini, mỗi dịch vụ với giới hạn và thời điểm đặt lại riêng."
+    ],
+    [
+     "Thông tin đăng nhập của tôi lưu ở đâu?",
+     "Bạn đăng nhập trên chính trang của dịch vụ, thông tin nằm trong Chuỗi khóa trên thiết bị. UsageNow chỉ kết nối với chính các dịch vụ đó."
+    ],
+    [
+     "Có phải trả phí hằng tháng không?",
+     "Không. Xem một tài khoản miễn phí trong ứng dụng; UsageNow Pro là một lần mua, không đăng ký."
+    ]
+   ]
+  },
+  "en": {
+   "title": "Copilot usage: see premium requests left on your iPhone without opening a browser",
+   "meta": "Copilot says you are out of premium requests mid-task? How to check how much Copilot usage is left, when it resets, and keep work and personal accounts apart. UsageNow shows one account free in the app; Pro is one purchase, no subscription.",
+   "h1": "Copilot usage: know what is left before a big task",
+   "lead": "Many people only find out they have used up most of their GitHub Copilot premium requests in the middle of a long task. Opening a browser, signing in and hunting for the settings page just to read one number breaks your flow.",
+   "answer": "GitHub Copilot usage is best tracked in three parts: premium requests, chat and code completions. The most important is how many premium requests are left and exactly when they reset, because a request counts differently depending on the model you pick.",
+   "paras": [
+    "Premium requests run out fastest, especially with stronger models or long-running tasks. If you have both a company account and a personal one, each has its own allowance and reset time, so it is easy to lose track of which one has room left.",
+    "A simple habit is to check usage before a big task and set a warning threshold such as 90%. When you get close, you can switch to a lighter model, move to another account, or push the heavy part until after the reset.",
+    "UsageNow shows GitHub Copilot premium requests, chat and code completions, with a countdown to the reset and the exact time in your region's format. Claude, ChatGPT Codex and Gemini sit in the same place. You can view one account's current usage free in the app; UsageNow Pro unlocks more accounts, usage alerts, widgets and Apple Watch with one purchase, no subscription."
+   ],
+   "look": [
+    "You can see how many premium requests are left",
+    "You know the exact reset time in local time",
+    "You get a warning before the limit",
+    "Several accounts sit side by side",
+    "You sign in on the service's own page, with no server in between"
+   ],
+   "steps": [
+    "Sign in to GitHub in UsageNow through GitHub's own sign-in page.",
+    "Check premium requests left and the reset time before starting a big task.",
+    "With Pro, create an alert at the percentage you care about, such as 90.",
+    "When it runs low, switch to a lighter model or an account with more room.",
+    "Turn on a reset alert so you know the moment the allowance is back."
+   ],
+   "rows": [
+    [
+     "Premium requests",
+     "How many are left and when they reset",
+     "A request counts differently depending on the model"
+    ],
+    [
+     "Several accounts",
+     "Work and personal side by side",
+     "Pick the account with room for the next task"
+    ],
+    [
+     "Alerts",
+     "A warning at the percentage you choose",
+     "Re-plan instead of being stopped mid-task"
+    ]
+   ],
+   "fits": "UsageNow suits people who use Copilot and other AI tools for work and do not want to hit a limit mid-task: premium requests, chat and code completions with their reset times, on iPhone, iPad and Apple Watch. One account is free to view in the app; Pro is one purchase that adds more accounts, alerts, widgets and Apple Watch. No server of its own, no account to create, no tracking.",
+   "faq": [
+    [
+     "Does UsageNow only show Copilot?",
+     "No. Alongside GitHub Copilot it shows Claude, ChatGPT Codex and Gemini, each with their own limits and reset times."
+    ],
+    [
+     "Where are my sign-in details kept?",
+     "You sign in on the service's own page and the details stay in your device's keychain. UsageNow only talks to the services themselves."
+    ],
+    [
+     "Is there a monthly fee?",
+     "No. One account is free to view in the app; UsageNow Pro is a single purchase, not a subscription."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "aibriefpack",
+  "locale": "ru",
+  "market": "RU",
+  "term": "краткое содержание pdf",
+  "rank": 8,
+  "slug": "summarize-pdf-russia-pull-facts-and-sources-before-asking-ai",
+  "loc": {
+   "title": "Краткое содержание PDF: сначала факты и источники, потом вопрос ИИ｜AI Brief",
+   "meta": "Хотите краткое содержание PDF через ИИ, но не уверены, что он ничего не выдумает? Как подготовить PDF перед вопросом: цель, факты с источниками, скрытие личных данных. AI Brief собирает это на iPhone. Бесплатно для начала, разовая покупка, без подписки.",
+   "h1": "Краткое содержание PDF: подготовьте факты до того, как спросить ИИ",
+   "lead": "Вы загружаете в чат с ИИ длинный PDF — договор, методичку или отчёт — и просите краткое содержание. Ответ звучит уверенно, но непонятно, из какой страницы взят каждый пункт и не потерялось ли главное.",
+   "answer": "Надёжное краткое содержание PDF начинается до вопроса ИИ: сформулируйте цель, вынесите ключевые факты с указанием, откуда каждый взят, уберите или замените личные данные и только потом отправьте всё одной аккуратной сводкой. Так ответ ИИ можно сверить с источником, а не принимать на веру.",
+   "paras": [
+    "Когда в чат уходит весь PDF целиком, ИИ сам решает, что важно. Если документ длинный или в нём есть таблицы и сканы, часть смысла теряется, а проверить пересказ трудно: в ответе нет ссылок на страницы и фрагменты.",
+    "Лучше сначала решить, зачем вам краткое содержание: подготовиться к встрече, сравнить условия договора или повторить материал к экзамену. От цели зависит, какие факты нужны. Отдельно стоит проверить документ на телефоны, адреса и номера договоров, которые не нужно отправлять в сторонний сервис.",
+    "AI Brief собирает PDF, скриншоты, файлы, заметки и ссылки в одну сводку для ИИ, где цель, факты и источники разложены по местам. Распознавание текста, чтение PDF, извлечение фактов и поиск персональных данных выполняются на iPhone; что оставить, заменить или удалить, решаете вы. У каждого факта сохраняются источник и уровень достоверности. Готовую сводку можно скопировать одним касанием и вставить в любой ИИ-чат. Без покупки в сводке может быть до 5 источников, а скопировать, отправить и сохранить можно одну сводку; разовая покупка в приложении снимает эти ограничения, без подписки."
+   ],
+   "look": [
+    "У каждого факта виден источник, а не только итоговый текст",
+    "Текст из PDF и сканов распознаётся на устройстве",
+    "Личные данные находятся, но удаляются только по вашему решению",
+    "Сводку можно вставить в любой ИИ-чат, а не только в один сервис",
+    "Понятно, что доступно бесплатно и что даёт разовая покупка"
+   ],
+   "steps": [
+    "Запишите одной фразой, зачем вам краткое содержание этого PDF.",
+    "Добавьте PDF в AI Brief, при необходимости вместе со скриншотами и заметками.",
+    "Просмотрите извлечённые факты и их источники, исправьте неточное.",
+    "Решите, какие найденные личные данные оставить, заменить или удалить.",
+    "Скопируйте сводку и вставьте её в ИИ-чат вместе с вашим вопросом."
+   ],
+   "rows": [
+    [
+     "Цель",
+     "Ясно ли, что нужно от пересказа",
+     "От цели зависит, какие факты важны"
+    ],
+    [
+     "Источники",
+     "Можно ли найти, откуда взят каждый пункт",
+     "Ответ ИИ можно сверить, а не принимать на веру"
+    ],
+    [
+     "Личные данные",
+     "Что уходит в сторонний сервис",
+     "Номера и адреса лучше заменить до отправки"
+    ]
+   ],
+   "fits": "AI Brief подходит тем, кто часто просит ИИ пересказать PDF и хочет контролировать, что именно уходит в чат: факты с источниками и уровнем достоверности, распознавание текста и поиск личных данных на устройстве, шаблоны для анализа документов и учебных материалов. Бесплатно — до 5 источников в сводке; разовая покупка в приложении — до 50 источников и полная история версий. Без подписки, без рекламы третьих лиц и без отслеживания.",
+   "faq": [
+    [
+     "AI Brief сам пишет краткое содержание PDF?",
+     "AI Brief готовит сводку для ИИ: цель, извлечённые факты и их источники. Сам пересказ вы получаете в любом ИИ-чате, куда вставляете эту сводку."
+    ],
+    [
+     "Мой PDF отправляется на сервер?",
+     "Распознавание текста, чтение PDF и поиск персональных данных выполняются на iPhone. В сервис ИИ уходит только та сводка, которую вы сами скопируете."
+    ],
+    [
+     "Нужна ли подписка?",
+     "Нет. Без покупки доступно до 5 источников в сводке; разовая покупка в приложении расширяет лимиты. Подписки нет."
+    ]
+   ]
+  },
+  "en": {
+   "title": "PDF summary: facts and sources first, then the question to the AI",
+   "meta": "Want an AI summary of a PDF but not sure it will not make things up? How to prepare a PDF before you ask: a goal, facts with sources, personal data handled. AI Brief builds this on iPhone. Free to start, one-time purchase, no subscription.",
+   "h1": "PDF summary: prepare the facts before you ask the AI",
+   "lead": "You drop a long PDF, such as a contract, course notes or a report, into an AI chat and ask for a summary. The answer sounds confident, but you cannot tell which page each point came from or whether the key part was lost.",
+   "answer": "A reliable PDF summary starts before the question to the AI: state the goal, pull out the key facts with where each one came from, remove or replace personal data, and only then send it all as one tidy brief. That way the AI's answer can be checked against the source instead of taken on trust.",
+   "paras": [
+    "When the whole PDF goes into the chat, the AI decides on its own what matters. With a long document, or one with tables and scans, part of the meaning gets lost, and the summary is hard to check because it does not point back to pages or passages.",
+    "It is better to decide first why you need the summary: preparing for a meeting, comparing contract terms or revising for an exam. The goal decides which facts you need. It is also worth checking the document for phone numbers, addresses and contract numbers that should not go to a third-party service.",
+    "AI Brief gathers PDFs, screenshots, files, notes and links into one brief for AI, with the goal, facts and sources each in their place. Text recognition, PDF reading, fact extraction and personal-data detection run on the iPhone, and you decide what to keep, replace or remove. Every fact keeps its source and confidence level. Copy the finished brief with one tap and paste it into any AI chat. Without a purchase, a brief can hold up to 5 sources and you can copy, send and save one brief; a one-time in-app purchase lifts those limits, with no subscription."
+   ],
+   "look": [
+    "Each fact shows its source, not just the final text",
+    "Text from PDFs and scans is recognised on the device",
+    "Personal data is found but removed only when you decide",
+    "The brief pastes into any AI chat, not just one service",
+    "It is clear what is free and what the one-time purchase adds"
+   ],
+   "steps": [
+    "Write in one sentence why you need a summary of this PDF.",
+    "Add the PDF to AI Brief, together with screenshots and notes if needed.",
+    "Review the extracted facts and their sources, and fix anything inaccurate.",
+    "Decide which detected personal data to keep, replace or remove.",
+    "Copy the brief and paste it into an AI chat along with your question."
+   ],
+   "rows": [
+    [
+     "Goal",
+     "Is it clear what you need from the summary",
+     "The goal decides which facts matter"
+    ],
+    [
+     "Sources",
+     "Can you find where each point came from",
+     "The AI's answer can be checked instead of trusted blindly"
+    ],
+    [
+     "Personal data",
+     "What goes to a third-party service",
+     "Numbers and addresses are better replaced before sending"
+    ]
+   ],
+   "fits": "AI Brief suits people who often ask an AI to summarise PDFs and want control over what goes into the chat: facts with sources and confidence levels, on-device text recognition and personal-data detection, and templates for document analysis and study materials. Free for up to 5 sources per brief; a one-time in-app purchase raises that to 50 sources and adds full version history. No subscription, no third-party ads and no tracking.",
+   "faq": [
+    [
+     "Does AI Brief write the PDF summary itself?",
+     "AI Brief prepares the brief for the AI: the goal, the extracted facts and their sources. You get the summary itself in whichever AI chat you paste that brief into."
+    ],
+    [
+     "Is my PDF sent to a server?",
+     "Text recognition, PDF reading and personal-data detection run on the iPhone. Only the brief you copy yourself goes to an AI service."
+    ],
+    [
+     "Do I need a subscription?",
+     "No. Without a purchase a brief can hold up to 5 sources; a one-time in-app purchase raises the limits. There is no subscription."
+    ]
+   ]
+  }
  }
 ]

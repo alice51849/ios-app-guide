@@ -259,6 +259,7 @@ jobs:
           python3 document_scan_planner.py
           python3 blurry_photo_diagnostic.py
           python3 web_tools_pilot.py
+          python3 web_hook_pages.py
           python3 daily_checklist_planner.py
           python3 cycle_privacy_planner.py
           python3 screen_time_block_planner.py

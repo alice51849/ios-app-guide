@@ -204,7 +204,10 @@ class PlanTest(unittest.TestCase):
         self.assertIsNone(S.clip_item("a/en", clip("a", "en"), "bluesky")["play"])  # id1 is iOS only
 
     def test_missing_secrets_log_not_configured_and_post_nothing(self):
+        # The live channel-rotation plan may have a channel on its off week today; pin it off so the
+        # "not configured" count does not depend on the real date.
         with mock.patch.dict(os.environ, {}, clear=True), mock.patch.object(S, "http") as h, \
+                mock.patch.object(S.CR, "paused_notice", return_value=False), \
                 mock.patch("sys.stdout", new_callable=io.StringIO) as out:
             # Telegraph needs no secret (it opens its own account), so it is the one channel left out here.
             chans = tuple(c for c in S.CHANNELS if c != "telegraph")
@@ -242,7 +245,9 @@ class PlanTest(unittest.TestCase):
 
 class ServedElsewhereTest(unittest.TestCase):
     def test_bluesky_is_left_to_threads_autopilot_unless_forced(self):
+        # Independent of the real date: the rotation plan's Bluesky off week would print its own notice first.
         with mock.patch.dict(os.environ, ENV_ALL, clear=True), mock.patch.object(S, "http") as h, \
+                mock.patch.object(S.CR, "paused_notice", return_value=False), \
                 mock.patch.object(P, "record_post") as rec, mock.patch("sys.stdout", new_callable=io.StringIO) as out:
             self.assertFalse(S.configured("bluesky"))
             S.run(("bluesky",), DAY, 1, data=DATA)

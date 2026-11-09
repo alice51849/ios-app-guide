@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>線上翻頁時鐘｜全螢幕、12/24 小時、顯示秒數</title>
+<meta name="description" content="在瀏覽器裡執行的全螢幕翻頁時鐘：12 或 24 小時制、秒數開關，深色、淺色與柔和紅色夜間主題，不用安裝。">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-GHgKKUCkAYnsPsXSm+ygjVxnlxead3n2ffYXh2EmtYA=' 'sha256-0KW1jE7pN11rAlZ9FMftqIB4ZvYIF+IsO89+7KTLsQk='; style-src 'unsafe-inline'; img-src 'self' blob: data:; connect-src https://office.cait518.cc/api/click; base-uri 'none'; form-action 'none'">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://open.cait518.cc/ios-app-guide/zh-Hant/tools/flip-clock.html">
+<link rel="alternate" hreflang="en" href="https://open.cait518.cc/ios-app-guide/tools/flip-clock.html">
+<link rel="alternate" hreflang="ja" href="https://open.cait518.cc/ios-app-guide/ja/tools/flip-clock.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://open.cait518.cc/ios-app-guide/zh-Hant/tools/flip-clock.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://open.cait518.cc/ios-app-guide/zh-Hans/tools/flip-clock.html">
+<link rel="alternate" hreflang="x-default" href="https://open.cait518.cc/ios-app-guide/tools/flip-clock.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="全螢幕翻頁時鐘">
+<meta property="og:description" content="在瀏覽器裡執行的全螢幕翻頁時鐘：12 或 24 小時制、秒數開關，深色、淺色與柔和紅色夜間主題，不用安裝。">
+<meta property="og:url" content="https://open.cait518.cc/ios-app-guide/zh-Hant/tools/flip-clock.html">
+<meta name="twitter:card" content="summary">
+<style>
+:root{--ink:#171b24;--muted:#5d6574;--line:#dce1eb;--bg:#eef3f8;--navy:#18365f}
+*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang TC","PingFang SC","Hiragino Sans","Noto Sans TC","Noto Sans SC","Noto Sans JP",sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+a{color:#18558b}.wrap{width:min(1120px,100% - 32px);margin:auto}.top{background:#fff;border-bottom:1px solid var(--line)}
+.nav{min-height:58px;display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}.nav a{text-decoration:none;font-weight:800}.nav-links{display:flex;gap:14px;flex-wrap:wrap}.nav-links a{color:var(--muted);font-size:14px}
+.hero{padding:30px 0 6px}h1{font-size:clamp(28px,5vw,44px);line-height:1.12;margin:.2em 0}.lead{color:var(--muted);font-size:17px;margin:0}.trust{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}.badge{border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 12px;font-size:13px;font-weight:800;color:var(--navy)}
+.card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:clamp(16px,3vw,28px);margin:18px auto}.card h2{margin:0 0 10px;font-size:clamp(20px,3vw,26px)}
+.button{border:0;border-radius:999px;background:var(--navy);color:#fff;text-decoration:none;font-weight:800;padding:10px 18px;cursor:pointer;display:inline-flex;font:inherit;font-weight:800}.row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.help{color:var(--muted);font-size:13px;margin:6px 0 0}select{font:inherit;min-height:40px;border:1px solid #cbd3df;border-radius:10px;padding:4px 8px;background:#fff}label{font-weight:700;font-size:14px}
+.stage{--face:#1b1d22;--digit:#f2f2ee;--seam:#0b0c0f;--back:#0f1013;background:var(--back);border-radius:18px;padding:clamp(14px,4vw,40px);display:flex;align-items:center;justify-content:center;min-height:280px;user-select:none}
+.stage[data-theme=light]{--face:#fbfaf6;--digit:#20232a;--seam:#c9ccd3;--back:#e3e6ec}.stage[data-theme=night]{--face:#000;--digit:#a3241b;--seam:#160604;--back:#000}
+.clock{display:flex;align-items:center;gap:clamp(4px,1.2vw,14px);font-variant-numeric:tabular-nums;font-weight:700;line-height:1}
+.group{display:flex;gap:clamp(3px,.6vw,8px)}.digit{position:relative;width:.78em;height:1.18em;display:flex;align-items:center;justify-content:center;background:var(--face);color:var(--digit);border-radius:.09em;font-size:clamp(48px,13vw,190px);perspective:4em;box-shadow:0 .03em .06em rgba(0,0,0,.35)}
+.digit::after{content:"";position:absolute;left:0;right:0;top:50%;height:max(2px,.02em);background:var(--seam)}.digit span{display:block;transform-origin:50% 50%}.digit.turn span{animation:turn .42s ease-out}
+.small .digit{font-size:clamp(28px,7vw,100px)}.sep{color:var(--digit);font-size:clamp(36px,9vw,130px);opacity:.75}.ampm{color:var(--digit);font-size:clamp(14px,2.4vw,34px);align-self:flex-end;opacity:.85}
+@keyframes turn{0%{transform:rotateX(85deg);opacity:.25}100%{transform:rotateX(0);opacity:1}}
+@media(prefers-reduced-motion:reduce){.digit.turn span{animation:none}}
+.stage:fullscreen{border-radius:0;width:100vw;height:100vh}.stage:fullscreen .digit{font-size:min(20vw,36vh)}.stage:fullscreen .small .digit{font-size:min(11vw,20vh)}.stage:fullscreen .sep{font-size:min(14vw,26vh)}
+.stage:-webkit-full-screen{border-radius:0;width:100vw;height:100vh}
+.cta{background:linear-gradient(135deg,#f9fbff,#e8f1f8)}ul{padding-left:20px}li{margin:6px 0}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "全螢幕翻頁時鐘", "description": "在瀏覽器裡執行的全螢幕翻頁時鐘：12 或 24 小時制、秒數開關，深色、淺色與柔和紅色夜間主題，不用安裝。", "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/tools/flip-clock.html", "inLanguage": "zh-Hant", "datePublished": "2026-11-09", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "browserRequirements": "JavaScript; no download or account is used"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "iOS App Guide", "item": "https://open.cait518.cc/ios-app-guide/zh-Hant/index.html"}, {"@type": "ListItem", "position": 2, "name": "工具", "item": "https://open.cait518.cc/ios-app-guide/zh-Hant/tools/index.html"}, {"@type": "ListItem", "position": 3, "name": "全螢幕翻頁時鐘", "item": "https://open.cait518.cc/ios-app-guide/zh-Hant/tools/flip-clock.html"}]}</script>
+<link rel="alternate" type="application/atom+xml" title="iOS App Guide — latest answers &amp; guides (Atom)" href="https://open.cait518.cc/ios-app-guide/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="iOS App Guide — latest answers &amp; guides (RSS 2.0)" href="https://open.cait518.cc/ios-app-guide/rss.xml">
+<link rel="alternate" type="application/feed+json" title="iOS App Guide — latest answers &amp; guides (JSON Feed 1.1)" href="https://open.cait518.cc/ios-app-guide/feed.json">
+<!-- ls-clickbeacon:start -->
+<script>(function(){var E='https://office.cait518.cc/api/click';function h(e){try{var t=e.target,l=t&&t.closest&&t.closest('a[href]');if(!l||!navigator.sendBeacon)return;var u=new URL(l.href,location.href),s,k,c,q=u.searchParams;if(u.hostname==='apps.apple.com'){s='apple';k=(u.pathname.match(/\/id(\d+)/)||[])[1]||'';c=q.get('ct')||''}else if(u.hostname==='play.google.com'){s='play';var r=new URLSearchParams(q.get('referrer')||'');k=r.get('utm_campaign')||q.get('id')||'';c=r.get('utm_source')||''}else return;navigator.sendBeacon(E,JSON.stringify({p:location.pathname.slice(0,200),a:k.slice(0,100),ct:c.slice(0,64),s:s}))}catch(_){}}document.addEventListener('click',h,true);document.addEventListener('auxclick',h,true)})();</script>
+<!-- ls-clickbeacon:end -->
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a href="https://open.cait518.cc/ios-app-guide/zh-Hant/index.html">iOS App Guide</a><nav class="nav-links"><a href="https://open.cait518.cc/ios-app-guide/zh-Hant/tools/index.html">工具</a><a href="https://open.cait518.cc/ios-app-guide/tools/flip-clock.html" hreflang="en" lang="en">English</a><a href="https://open.cait518.cc/ios-app-guide/ja/tools/flip-clock.html" hreflang="ja" lang="ja">日本語</a><a href="https://open.cait518.cc/ios-app-guide/zh-Hans/tools/flip-clock.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></nav></div></header>
+<main>
+<section class="hero wrap"><h1>全螢幕翻頁時鐘</h1><p class="lead">這個翻頁時鐘直接在瀏覽器分頁裡執行：按下「全螢幕」，整個畫面就變成隔著房間也看得清楚的大時鐘。 可選 12 或 24 小時制、顯示或隱藏秒數，並在深色、淺色與柔和紅色夜間主題之間切換；不用安裝，也不用帳號。</p><div class="trust"><span class="badge">在瀏覽器裡執行；只計算下載鈕點擊次數</span><span class="badge">顯示你裝置上的當地時間</span></div></section>
+<section class="card wrap" id="tool">
+<div class="stage" id="stage" data-theme="dark" role="timer" aria-label="全螢幕翻頁時鐘"><div class="clock" id="clock"></div></div>
+<div class="row" style="margin-top:14px"><button class="button" id="fs" type="button">全螢幕</button>
+<label><input id="h24" type="checkbox"> 24 小時制</label>
+<label><input id="sec" type="checkbox" checked> 顯示秒數</label>
+<label for="theme">主題</label><select id="theme"><option value="dark">深色</option><option value="light">淺色</option><option value="night">柔和紅色夜間</option></select></div>
+<p class="help" id="nofs" hidden>這個瀏覽器無法把網頁切成全螢幕；把手機轉成橫向，時鐘會變大。</p>
+<p class="help">快速鍵：按 F 進入全螢幕，按 Esc 離開。 全螢幕期間，網頁會請瀏覽器保持螢幕不休眠。</p>
+<p class="help" id="app-fs">用 iPhone 或 iPad？「Stay Clock:翻頁桌鐘」是充電時保持恆亮的全螢幕時鐘，夜裡可改成純黑底柔和紅字，並有為 OLED 螢幕設計的像素偏移。 <a href="https://apps.apple.com/app/id6814035888?pt=118326163&amp;ct=web_flipclock_zh_hant_fs&amp;mt=8" rel="noopener">到 App Store 查看翻頁桌鐘</a></p>
+  <p class="android-play" data-android-play="com.alice51849.StayClock">Android: <a href="https://play.google.com/store/apps/details?id=com.alice51849.StayClock&amp;referrer=utm_source%3Dweb_flipclock_zh_hant_fs%26utm_campaign%3Dstayclock" rel="noopener">Google Play</a></p>
+</section>
+<section class="card wrap"><h2>使用方式</h2><ul><li>在電腦或平板打開這一頁，按「全螢幕」。</li><li>選擇 12 或 24 小時制與是否顯示秒數；設定會記在這個瀏覽器裡。</li><li>夜裡改用柔和紅色主題，暗暗的房間也不刺眼。</li></ul></section>
+<!-- web-hook-bottom-cta:start --><section class="card cta wrap" id="get-app"><p>想把同樣的翻頁鐘放到床頭？「Stay Clock:翻頁桌鐘」把 iPhone 或 iPad 變成隔著房間也看得清楚的全天候桌鐘，你選的錶面也會出現在 StandBy、鎖定畫面與 Apple Watch。</p><p><a class="button" href="https://apps.apple.com/app/id6814035888?pt=118326163&amp;ct=web_flipclock_zh_hant_bottom&amp;mt=8" rel="noopener">到 App Store 下載翻頁桌鐘</a></p><p class="help">Android: <a href="https://play.google.com/store/apps/details?id=com.alice51849.StayClock&amp;referrer=utm_source%3Dweb_flipclock_zh_hant_bottom%26utm_campaign%3Dstayclock" rel="noopener">Google Play</a></p></section><!-- web-hook-bottom-cta:end -->
+</main>
+<script>
+const COPY={"fullscreen":"全螢幕","exit":"離開全螢幕","am":"上午","pm":"下午"};
+const $=id=>document.getElementById(id);
+const stage=$("stage"),clock=$("clock"),fsButton=$("fs");
+const store={get(k){try{return localStorage.getItem("flipclock."+k);}catch(e){return null;}},set(k,v){try{localStorage.setItem("flipclock."+k,v);}catch(e){}}};
+const saved={h24:store.get("h24"),sec:store.get("sec"),theme:store.get("theme")};
+$("h24").checked=saved.h24===null?true:saved.h24==="1";
+if(saved.sec!==null)$("sec").checked=saved.sec==="1";
+if(saved.theme&&["dark","light","night"].includes(saved.theme))$("theme").value=saved.theme;
+stage.dataset.theme=$("theme").value;
+let shown="",lock=null;
+function pad(n){return String(n).padStart(2,"0");}
+function build(text,suffix){clock.textContent="";const parts=text.split(":");parts.forEach((part,i)=>{if(i){const s=document.createElement("span");s.className="sep";s.textContent=":";clock.appendChild(s);}const g=document.createElement("div");g.className="group"+(i===2?" small":"");for(const ch of part){const d=document.createElement("div");d.className="digit";const v=document.createElement("span");v.textContent=ch;d.appendChild(v);g.appendChild(d);}clock.appendChild(g);});if(suffix){const a=document.createElement("span");a.className="ampm";a.textContent=suffix;clock.appendChild(a);}}
+function tick(){const now=new Date();let h=now.getHours(),suffix="";if(!$("h24").checked){suffix=h<12?COPY.am:COPY.pm;h=h%12||12;}let text=pad(h)+":"+pad(now.getMinutes());if($("sec").checked)text+=":"+pad(now.getSeconds());const key=text+suffix;if(key.length!==shown.length||!clock.querySelector(".digit")){build(text,suffix);}else{const cells=clock.querySelectorAll(".digit span");let n=0;for(const ch of text.replace(/:/g,"")){const cell=cells[n++];if(cell&&cell.textContent!==ch){cell.textContent=ch;const d=cell.parentNode;d.classList.remove("turn");void d.offsetWidth;d.classList.add("turn");}}const a=clock.querySelector(".ampm");if(a)a.textContent=suffix;}shown=key;setTimeout(tick,1000-now.getMilliseconds()+5);}
+const canFull=!!(document.fullscreenEnabled||document.webkitFullscreenEnabled);
+if(!canFull){fsButton.hidden=true;$("nofs").hidden=false;}
+function isFull(){return !!(document.fullscreenElement||document.webkitFullscreenElement);}
+async function keepAwake(on){try{if(on&&"wakeLock" in navigator){lock=await navigator.wakeLock.request("screen");}else if(lock){await lock.release();lock=null;}}catch(e){lock=null;}}
+function toggle(){if(!canFull)return;if(isFull()){(document.exitFullscreen||document.webkitExitFullscreen).call(document);}else{(stage.requestFullscreen||stage.webkitRequestFullscreen).call(stage);}}
+function onFull(){const on=isFull();fsButton.textContent=on?COPY.exit:COPY.fullscreen;keepAwake(on);}
+document.addEventListener("fullscreenchange",onFull);document.addEventListener("webkitfullscreenchange",onFull);
+document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="visible"&&isFull())keepAwake(true);});
+fsButton.addEventListener("click",toggle);stage.addEventListener("dblclick",toggle);
+document.addEventListener("keydown",e=>{if((e.key==="f"||e.key==="F")&&!e.metaKey&&!e.ctrlKey&&!e.altKey&&e.target.tagName!=="SELECT"&&e.target.tagName!=="INPUT")toggle();});
+$("h24").addEventListener("change",()=>{store.set("h24",$("h24").checked?"1":"0");shown="";});
+$("sec").addEventListener("change",()=>{store.set("sec",$("sec").checked?"1":"0");shown="";});
+$("theme").addEventListener("change",()=>{stage.dataset.theme=$("theme").value;store.set("theme",$("theme").value);});
+tick();
+</script>
+</body>
+</html>

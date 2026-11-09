@@ -200,7 +200,18 @@ WEB_TOOL_PILOT_CAMPAIGNS = {
     for locale in ("en", "zh_hant", "ja")
     for suffix in suffixes
 }
-APP_BOUND_CAMPAIGNS = {"duo_img": "6824946559", **WEB_TOOL_PILOT_CAMPAIGNS}
+# web_hook_pages.py: browser-only "web hook" pages (yi30 route 47, yi_review
+# 2026-11-08); one campaign per page, locale and placement (<campaign>_<locale>
+# _fs beside the full screen button, _bottom at the end of the page).
+WEB_HOOK_CAMPAIGNS = {
+    f"{hook}_{locale}_{position}": app_id
+    for hook, app_id, locales in (
+        ("web_flipclock", "6814035888", ("en", "ja", "zh_hant", "zh_hans")),
+    )
+    for locale in locales
+    for position in ("fs", "bottom")
+}
+APP_BOUND_CAMPAIGNS = {"duo_img": "6824946559", **WEB_TOOL_PILOT_CAMPAIGNS, **WEB_HOOK_CAMPAIGNS}
 
 
 def app_bound_campaign(campaign: str | None, app_id: str | None) -> bool:

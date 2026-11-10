@@ -1,12 +1,12 @@
 {
- "generated": "2026-11-10T03:40:08Z",
+ "generated": "2026-11-10T15:00:12Z",
  "mode": "apply",
  "counts": {
-  "ok_reply": 58,
+  "ok_reply": 59,
   "unknown_app": 47,
-  "ok_backfilled_earlier": 61,
+  "ok_backfilled_earlier": 63,
+  "ok_store_only": 667,
   "backfilled": 2,
-  "ok_store_only": 669,
   "ok_bio_link": 68,
   "ok_caption": 4,
   "taken_down": 4,
@@ -24,6 +24,18 @@
    "why": "trial",
    "ios_id": "6785004775",
    "locale": "en-US"
+  },
+  {
+   "channel": "threads",
+   "id": "18029268767864627",
+   "permalink": "https://www.threads.com/@hourstag.app/post/Dfj-9UZlanW",
+   "date": "2026-11-10",
+   "app": "lumiweather",
+   "status": "ok_reply",
+   "text": "明天（11/11 週三）穿什麼？ 台北 18–24°C 台中 17–27°C 高雄 22–27°C 以台北來說，舒服：短袖或薄長袖，進冷氣房帶一件薄外套。 #明天穿什麼 #天氣 預報：MET Norway，僅供參考，出門前以實際天氣為準。 我做的 Lumi天氣星球 會把體感溫度、",
+   "why": "brand",
+   "ios_id": "6779552704",
+   "locale": "zh-Hant"
   },
   {
    "channel": "threads",
@@ -1319,16 +1331,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdXcKW1kpng",
    "date": "2026-09-16",
    "app": "lumimathpro",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "\"Five more minutes\" — about a learning game, for once. Our app, not a ranking: Count, then try early addition. Paid download includes the fu",
    "why": "url+brand",
    "ios_id": "6776958488",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "18121592872970263",
-   "at": "2026-11-10T03:37:17Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",
@@ -1336,16 +1343,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdWqfl5mTvi",
    "date": "2026-09-16",
    "app": "cyca",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "這次晚了五天——該開始擔心，還是它本來就這樣? 開發者分享，非獨立評比。經期、心情、症狀，別等要回想時才猜。用 Cyca 留下裝置上的個人紀錄；僅供參考，不是診斷或避孕工具。可免費開始，再依需要一次買斷解鎖。 Cyca 有興趣的話，App Store 連結放這: https://",
    "why": "url+brand",
    "ios_id": "6782251621",
-   "locale": "zh-Hant",
-   "own_replies": [],
-   "comment_id": "18093851270240650",
-   "at": "2026-11-10T03:37:17Z",
-   "verified": true,
-   "via": "list"
+   "locale": "zh-Hant"
   },
   {
    "channel": "threads",
@@ -1389,11 +1391,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdU5ff0E8GH",
    "date": "2026-09-15",
    "app": "wifiaidlite",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "Diagnóstico de rede confiável. Cada ferramenta inclui um uso gratuito. WiFi Aid Lite Dá para achar na App Store: https://apps.apple.com/br/a",
    "why": "url+brand",
    "ios_id": "6793414462",
-   "locale": "other"
+   "locale": "other",
+   "own_replies": [],
+   "comment_id": "17907269349354800",
+   "at": "2026-11-10T14:57:37Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -1401,11 +1408,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdUAJ3oj1_O",
    "date": "2026-09-15",
    "app": "lumibopomofo",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "Teaching ㄅㄆㄇ at home is harder than it looks — the tones come first. Our app, not a ranking: Hear and trace ㄅ free, plus 3 train plays; life",
    "why": "url+brand",
    "ios_id": "6773017109",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "18124953865942871",
+   "at": "2026-11-10T14:57:37Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",

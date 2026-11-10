@@ -221,6 +221,10 @@ def _clean_copy(value: object) -> str | None:
     return text
 
 
+# 對照證據由強到弱；兩個資料夾對到同一款時，證據較強的勝出（見 build_snapshot）。
+MATCH_STRENGTH = ("bundle_id_exact", "bundle_id_casefold", "store_title_exact")
+
+
 def build_snapshot(
     android_live: dict,
     manifest_apps: dict[str, dict],
@@ -283,14 +287,29 @@ def build_snapshot(
                              "reason": "no_unique_ios_match"})
             continue
         if key in mapped:
-            other = mapped.pop(key)
-            unmapped += [
-                {"folder": other["android_folder"], "package": other["package"],
-                 "reason": f"duplicate_ios_key:{key}"},
-                {"folder": folder, "package": package,
-                 "reason": f"duplicate_ios_key:{key}"},
-            ]
-            continue
+            other = mapped[key]
+            rank = MATCH_STRENGTH.index
+            if rank(method) != rank(other["match"]):
+                # 一邊是 bundle id 完全相同、另一邊只是商店名稱相同（例如同一款的 Android 付費版）：
+                # 採用證據較強的那一個；較弱的列為已知 key 的衝突列（conflict_with），不算沒人認領的新套件。
+                if rank(method) < rank(other["match"]):
+                    loser = {"folder": other["android_folder"], "package": other["package"]}
+                    mapped.pop(key)
+                else:
+                    unmapped.append({"folder": folder, "package": package,
+                                     "reason": f"duplicate_ios_key:{key}",
+                                     "conflict_with": other["android_folder"]})
+                    continue
+                unmapped.append({**loser, "reason": f"duplicate_ios_key:{key}", "conflict_with": folder})
+            else:
+                mapped.pop(key)
+                unmapped += [
+                    {"folder": other["android_folder"], "package": other["package"],
+                     "reason": f"duplicate_ios_key:{key}"},
+                    {"folder": folder, "package": package,
+                     "reason": f"duplicate_ios_key:{key}"},
+                ]
+                continue
         copy = {}
         for locale in COPY_LOCALES:
             row = listing.get(locale) or {}

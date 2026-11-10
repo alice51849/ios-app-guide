@@ -1,18 +1,30 @@
 {
- "generated": "2026-11-10T15:00:12Z",
+ "generated": "2026-11-10T21:22:56Z",
  "mode": "apply",
  "counts": {
-  "ok_reply": 59,
+  "ok_reply": 60,
   "unknown_app": 47,
-  "ok_backfilled_earlier": 63,
-  "ok_store_only": 667,
+  "ok_backfilled_earlier": 65,
   "backfilled": 2,
+  "ok_store_only": 665,
   "ok_bio_link": 68,
   "ok_caption": 4,
   "taken_down": 4,
   "missing": 3
  },
  "rows": [
+  {
+   "channel": "threads",
+   "id": "18135092653676798",
+   "permalink": "https://www.threads.com/@hourstag.app/post/DfkLSYmGv2I",
+   "date": "2026-11-10",
+   "app": "mochi",
+   "status": "ok_reply",
+   "text": "療癒手帳・購物清單小工具。 Mochi 是可愛又暖心的待辦清單:寫下任務,每一項都能配上小表情,完成時輕點小圓圈打勾,每次完成都有小小的成就感。 Mochi: 可愛待辦清單",
+   "why": "brand",
+   "ios_id": "6785004775",
+   "locale": "ja"
+  },
   {
    "channel": "threads",
    "id": "18128780882475834",
@@ -1367,11 +1379,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdSllwyHYiu",
    "date": "2026-09-15",
    "app": "zipbox",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "Preview and extract, no ads. Look inside an archive without extracting it. Zipbox: Unzip RAR, ZIP & 7z Leaving the link here: https://apps.a",
    "why": "url+brand",
    "ios_id": "6806776579",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "17979083754153800",
+   "at": "2026-11-10T21:20:09Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -1379,11 +1396,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdTR7MunQF6",
    "date": "2026-09-15",
    "app": "mochi",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "Plan your day with cozy calm. Mochi is the cute, cozy to-do list that makes getting organized feel good. Mochi: Cute Checklist Link’s here, ",
    "why": "url+brand",
    "ios_id": "6785004775",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "18155354953522828",
+   "at": "2026-11-10T21:20:09Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -1391,16 +1413,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdU5ff0E8GH",
    "date": "2026-09-15",
    "app": "wifiaidlite",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "Diagnóstico de rede confiável. Cada ferramenta inclui um uso gratuito. WiFi Aid Lite Dá para achar na App Store: https://apps.apple.com/br/a",
    "why": "url+brand",
    "ios_id": "6793414462",
-   "locale": "other",
-   "own_replies": [],
-   "comment_id": "17907269349354800",
-   "at": "2026-11-10T14:57:37Z",
-   "verified": true,
-   "via": "list"
+   "locale": "other"
   },
   {
    "channel": "threads",
@@ -1408,16 +1425,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdUAJ3oj1_O",
    "date": "2026-09-15",
    "app": "lumibopomofo",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "Teaching ㄅㄆㄇ at home is harder than it looks — the tones come first. Our app, not a ranking: Hear and trace ㄅ free, plus 3 train plays; life",
    "why": "url+brand",
    "ios_id": "6773017109",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "18124953865942871",
-   "at": "2026-11-10T14:57:37Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",

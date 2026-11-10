@@ -475,7 +475,7 @@
           "market": "United States",
           "culture_route": "US vacationers planning one international trip may want to test a local-currency ledger before paying, then glance at totals from a widget or watch.",
           "query": "Which free-to-start iPhone travel expense tracker converts local currency and works offline?",
-          "buyer_problem": "Receipts arrive in local currency while the travel budget exists in dollars, and waiting until home hides overspending. The decision is whether a small free trial proves the logging habit before a one-time unlock.",
+          "buyer_problem": "Receipts arrive in local currency while the travel budget exists in dollars, and waiting until home hides overspending. The decision is whether the free version (one trip, up to three saved expenses) proves the logging habit before a one-time unlock.",
           "decision_rule": "Test the complete input-to-total loop with a real trip budget. Prefer manual privacy and offline continuity when bank imports would add complexity or fail abroad.",
           "workflow_checks": [
             "Can a traveler log the amount in the currency shown on the receipt?",
@@ -1631,7 +1631,7 @@
           "market": "United States",
           "culture_route": "US applicants comparing a home photo with a pharmacy visit may want to test the complete preparation flow before buying an unlimited tool.",
           "query": "What free-to-start iPhone alternative can prepare and print passport photos at home?",
-          "buyer_problem": "A free web cropper may not make its privacy, offline behavior, or print layout clear. The decision is whether a free app trial provides enough evidence before a one-time unlock.",
+          "buyer_problem": "A free web cropper may not make its privacy, offline behavior, or print layout clear. The decision is whether the free size presets and editing tools provide enough evidence before a one-time unlock.",
           "decision_rule": "Test one non-urgent photo against official dimensions and the intended print or upload path. Choose in-person service when fast professional lighting, printing, and retakes are worth more than home convenience.",
           "workflow_checks": [
             "Can the user complete one representative photo before paying?",
@@ -2311,7 +2311,7 @@
           "culture_route": "日本でも、仕事ではチームのAIプラン、夜は個人アカウントで自分の開発を進める開発者が増えています。ClaudeやCodexの5時間・週間の上限、Copilotのプレミアムリクエストにいつ当たるか分からないまま作業していると、AIエージェントが変更の途中で止まってしまいます。",
           "query": "ClaudeやCodexの使用制限に当たる前に知らせてくれるアプリはありますか？",
           "buyer_problem": "使用量は各サービスのページにばらばらに表示されるため、上限に気づくのはAIエージェントが作業の途中で止まったときになりがちです。Claude、Codex、Copilot、Geminiの上限を同じ画面に並べ、リセットまでのカウントダウンと自分で決めたパーセンテージのアラートを出してくれる専用アプリが、自分の働き方に合うかどうかを判断します。",
-          "decision_rule": "5時間や週間の上限によく当たる人、複数のアカウントを切り替えて使う人には、専用のトラッカーが向いています。アプリ内で24時間のトライアルを始めれば、ウィジェットを含むすべての機能を使えます。その後も使い続けるには1回限りのPro購入が必要で、サブスクリプションはありません。",
+          "decision_rule": "5時間や週間の上限によく当たる人、複数のアカウントを切り替えて使う人には、専用のトラッカーが向いています。1アカウントの現在の使用量は無料で見られます。複数アカウント、使用量アラート、ウィジェット、Apple Watchは1回限りのPro購入で使えるようになり、サブスクリプションはありません。",
           "workflow_checks": [
             "Claudeの5時間・週間の上限やCopilotのプレミアムリクエストなど、実際に当たる上限をカバーしていますか？",
             "自分で決めたパーセンテージでアラートを作れて、上限ごと・サイクルごとに1回だけ届きますか？",
@@ -2320,7 +2320,7 @@
           "alternative_lens": "使うサービスがひとつだけで上限にもめったに当たらないなら、そのサービス自身の使用量ページで十分かもしれません。この種のアプリは表示しているサービスの情報を読むだけで、Anthropic、OpenAI、GitHub、Microsoft、Googleとは提携しておらず、上限を増やしたりリセットしたりはできません。",
           "verify_before_install": [
             "使う前に、App Storeのページで対応しているサービスと上限の種類を確認してください。",
-            "アプリ内で24時間のトライアルを始め、各アカウントがそのサービス公式のログインページでサインインすることを確認してください。"
+            "まず無料で1アカウントを追加し、そのサービス公式のログインページでサインインすることを確認してください。"
           ],
           "evidence_refs": [
             "fact.purchase_model",

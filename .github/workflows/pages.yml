@@ -333,6 +333,10 @@ jobs:
         if: steps.release_policy.outputs.allow_upload == 'true'
         id: deployment
         uses: actions/deploy-pages@v4
+        # 2026-11-10：19:08Z、21:04Z 兩次配對發版都卡在 Pages 端 syncing_files，預設 10 分鐘逾時被取消
+        # （打包大小與 04:31Z 成功那次相同）。只放寬等待到 20 分鐘，仍只部署一次、不重試。
+        with:
+          timeout: 1200000
         continue-on-error: ${{ env.NOTIFICATION_RELEASE_HOLD != 'true' }}
       - name: Wait before retry
         if: steps.deployment.outcome == 'failure' && env.NOTIFICATION_RELEASE_HOLD != 'true'

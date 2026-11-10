@@ -2716,6 +2716,13 @@ class GeneratorTests(unittest.TestCase):
             self.assertIn(
                 "window.scrollY >= threshold", gen_mobile_store_ctas.SCRIPT
             )
+            # 安卓才換 Google Play（帶 referrer 的直連），iPhone／iPad／桌面不變。
+            self.assertIn(
+                "/Android/.test(navigator.userAgent", gen_mobile_store_ctas.SCRIPT
+            )
+            self.assertIn('[href*="referrer="]', gen_mobile_store_ctas.SCRIPT)
+            self.assertNotIn("location.href", gen_mobile_store_ctas.SCRIPT)
+            self.assertNotIn("location.replace", gen_mobile_store_ctas.SCRIPT)
             self.assertNotIn("fetch(", gen_mobile_store_ctas.SCRIPT)
             self.assertNotIn("sendBeacon", gen_mobile_store_ctas.SCRIPT)
             self.assertLess(

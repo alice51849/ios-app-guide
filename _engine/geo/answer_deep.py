@@ -189,7 +189,7 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
     "a": "Not necessarily — the app plays accurate audio for every symbol, so children hear correct pronunciation directly. The English-Chinese dual interface means English-dominant parents can follow along. That said, a little learning together typically makes sessions more interactive and engaging."
    },
    {
-    "q": "Is there a free trial before committing to the full purchase?",
+    "q": "Is there a free version before committing to the full purchase?",
     "a": "{name} is free to download, and the free version lets your child try the core games. A one-time in-app purchase unlocks all 37 symbol friends and every level with no ongoing subscription."
    }
   ]

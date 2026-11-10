@@ -1,18 +1,30 @@
 {
- "generated": "2026-11-09T19:55:28Z",
+ "generated": "2026-11-10T03:40:08Z",
  "mode": "apply",
  "counts": {
-  "ok_reply": 57,
+  "ok_reply": 58,
   "unknown_app": 47,
-  "ok_backfilled_earlier": 59,
+  "ok_backfilled_earlier": 61,
   "backfilled": 2,
-  "ok_store_only": 671,
+  "ok_store_only": 669,
   "ok_bio_link": 68,
   "ok_caption": 4,
   "taken_down": 4,
   "missing": 3
  },
  "rows": [
+  {
+   "channel": "threads",
+   "id": "18128780882475834",
+   "permalink": "https://www.threads.com/@hourstag.app/post/DfixIfIFXRq",
+   "date": "2026-11-10",
+   "app": "mochi",
+   "status": "ok_reply",
+   "text": "Holiday travel packing used to mean remembering the charger at the airport. Now there's a cute packing checklist on my phone: chargers, meds",
+   "why": "trial",
+   "ios_id": "6785004775",
+   "locale": "en-US"
+  },
   {
    "channel": "threads",
    "id": "18120915892967567",
@@ -1259,16 +1271,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdXpzr_j7Jf",
    "date": "2026-09-17",
    "app": "sononote",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "The best idea of the week happened while you were driving. Our app, not a ranking: Record a recap, review action items and an email draft. C",
    "why": "url+brand",
    "ios_id": "6782139553",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "18204113104383795",
-   "at": "2026-11-09T19:52:36Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",
@@ -1312,11 +1319,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdXcKW1kpng",
    "date": "2026-09-16",
    "app": "lumimathpro",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "\"Five more minutes\" — about a learning game, for once. Our app, not a ranking: Count, then try early addition. Paid download includes the fu",
    "why": "url+brand",
    "ios_id": "6776958488",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "18121592872970263",
+   "at": "2026-11-10T03:37:17Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -1324,11 +1336,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdWqfl5mTvi",
    "date": "2026-09-16",
    "app": "cyca",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "這次晚了五天——該開始擔心，還是它本來就這樣? 開發者分享，非獨立評比。經期、心情、症狀，別等要回想時才猜。用 Cyca 留下裝置上的個人紀錄；僅供參考，不是診斷或避孕工具。可免費開始，再依需要一次買斷解鎖。 Cyca 有興趣的話，App Store 連結放這: https://",
    "why": "url+brand",
    "ios_id": "6782251621",
-   "locale": "zh-Hant"
+   "locale": "zh-Hant",
+   "own_replies": [],
+   "comment_id": "18093851270240650",
+   "at": "2026-11-10T03:37:17Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -1336,16 +1353,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdXcK8gkiLd",
    "date": "2026-09-16",
    "app": "lumiletterspro",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "\"Five more minutes\" — about a learning game, for once. Our app, not a ranking: Link letter sounds, tracing and words. Paid download includes",
    "why": "url+brand",
    "ios_id": "6778491147",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "18002275920019680",
-   "at": "2026-11-09T19:52:36Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",

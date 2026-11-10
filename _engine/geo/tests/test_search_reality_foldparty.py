@@ -32,13 +32,20 @@ class FoldPartyPageTests(unittest.TestCase):
             setattr(g3, name, value)
 
     def test_taiwan_korea_and_macau_native_pages(self):
-        self.assertEqual([spec["lang"] for spec in gen.PAGE_SPECS], ["zh-Hant", "ko", "zh-Hant"])
+        self.assertEqual([spec["lang"] for spec in gen.PAGE_SPECS], ["zh-Hant", "ko", "zh-Hant", "zh-Hant"])
         self.assertEqual(gen.PAGE_SPECS[2].get("cc"), "mo")
         self.assertIn("貓咪派對", gen.PAGE_SPECS[2]["terms"])
         self.assertEqual({spec["key"] for spec in gen.PAGE_SPECS}, {"foldparty"})
         self.assertIn("雙人遊戲", gen.PAGE_SPECS[0]["terms"])
         self.assertIn("2인용 게임", gen.PAGE_SPECS[1]["terms"])
-        self.assertEqual(len(self.pages), 3)
+        self.assertIsNone(gen.PAGE_SPECS[3].get("cc"))  # 台灣店
+        self.assertTrue(gen.PAGE_SPECS[3]["slug"].startswith("maomi-paidui-taiwan"))
+        self.assertIn("貓咪派對", gen.PAGE_SPECS[3]["terms"])
+        self.assertEqual(len(self.pages), 4)
+
+    def test_taiwan_two_player_page_links_taiwan_cat_page(self):
+        source = self.pages[g3.page_relative(gen.PAGE_SPECS[0])]
+        self.assertIn(gen.PAGE_SPECS[3]["slug"] + ".html", source)
 
     def test_card_links_storefront_with_campaign(self):
         for spec in gen.PAGE_SPECS:

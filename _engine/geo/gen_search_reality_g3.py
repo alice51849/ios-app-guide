@@ -927,7 +927,7 @@ def dedicated_size(lang: str, text: str) -> int:
     return len(CJK.findall(text)) if lang in ("zh-Hant", "zh-Hans", "ja") else len(WORD.findall(text))
 
 
-def page_problems(spec: dict, source: str, pages: Path | None = None) -> list[str]:
+def page_problems(spec: dict, source: str, pages: Path | None = None, batch: frozenset = frozenset()) -> list[str]:
     relative = page_relative(spec)
     problems = []
     text = visible_text(source)
@@ -959,7 +959,7 @@ def page_problems(spec: dict, source: str, pages: Path | None = None) -> list[st
     if pages is not None:
         for href in set(re.findall(r'href="(' + re.escape(SITE) + r'/[^"#]+)"', source)):
             target = href[len(SITE) + 1:]
-            if target == relative:
+            if target == relative or target in batch:  # 同一批產生的頁互連（新頁還沒寫到磁碟）
                 continue
             path = pages / target
             if not path.is_file():
@@ -979,13 +979,14 @@ def finalize(source: str, relative: str, android_apps: dict) -> str:
 def build(android_apps: dict, *, pages: Path | None = None, names: dict | None = None) -> dict[str, str]:
     names = names if names is not None else store_names()
     out, problems, slugs = {}, [], set()
+    batch = frozenset(page_relative(spec) for spec in PAGE_SPECS)
     for spec in PAGE_SPECS:
         relative = page_relative(spec)
         if relative in slugs:
             problems.append(f"duplicate page {relative}")
         slugs.add(relative)
         out[relative] = finalize(render(spec, names), relative, android_apps)
-        problems += page_problems(spec, out[relative], pages)
+        problems += page_problems(spec, out[relative], pages, batch)
     if problems:
         raise GenerationError("\n".join(problems))
     return out

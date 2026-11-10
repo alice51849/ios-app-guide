@@ -1,9 +1,9 @@
 {
  "schema": "lumi.android-live-snapshot/v1",
  "source": "AndroidPlay android_live_scan (Play page HTTP 200 + publish LIVE)",
- "source_generated": "2026-11-10T01:58:15+0800",
+ "source_generated": "2026-11-11T02:13:13+0800",
  "count": 59,
- "content_sha256": "47d5bb40b694a8ed87a19b1e2a7a9b53390d27c53acf875c7144953381e4bdb2",
+ "content_sha256": "96ad2de1cf4728da34d6d9238c9e1090434e71870798922a6f67809385291b02",
  "apps": {
   "aibriefpack": {
    "ios_app_id": "6791658210",
@@ -12,7 +12,7 @@
    "package": "com.alice51849.AIBriefPack",
    "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.AIBriefPack",
    "paid": false,
-   "first_seen": "2026-11-09T23:56:50+0800",
+   "first_seen": "2026-11-11T02:13:13+0800",
    "launch_wave": "new",
    "match": "bundle_id_exact",
    "copy": {
@@ -75,7 +75,7 @@
    "package": "com.alice51849.CalDaily",
    "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
    "paid": false,
-   "first_seen": "2026-10-14T15:15:47+0800",
+   "first_seen": "2026-11-11T02:13:13+0800",
    "launch_wave": "new",
    "match": "bundle_id_exact",
    "copy": {
@@ -132,7 +132,7 @@
    "package": "com.alice51849.cvdesk",
    "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.cvdesk",
    "paid": false,
-   "first_seen": "2026-11-05T11:55:08+0800",
+   "first_seen": "2026-11-11T02:13:13+0800",
    "launch_wave": "new",
    "match": "bundle_id_exact",
    "copy": {
@@ -258,7 +258,7 @@
    "package": "com.alice51849.Offday",
    "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.Offday",
    "paid": false,
-   "first_seen": "2026-11-05T11:55:08+0800",
+   "first_seen": "2026-11-11T02:13:13+0800",
    "launch_wave": "new",
    "match": "bundle_id_exact",
    "copy": {
@@ -277,7 +277,7 @@
    "package": "com.alice51849.FoldParty",
    "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.FoldParty",
    "paid": true,
-   "first_seen": "2026-11-03T17:37:11+0800",
+   "first_seen": "2026-11-11T02:13:13+0800",
    "launch_wave": "new",
    "match": "bundle_id_exact",
    "copy": {
@@ -298,7 +298,7 @@
    "package": "com.alice51849.GBAGo",
    "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.GBAGo",
    "paid": true,
-   "first_seen": "2026-11-09T23:56:50+0800",
+   "first_seen": "2026-11-11T02:13:13+0800",
    "launch_wave": "new",
    "match": "bundle_id_exact",
    "copy": {
@@ -319,8 +319,8 @@
    "package": "com.caitlai.globi",
    "play_url": "https://play.google.com/store/apps/details?id=com.caitlai.globi",
    "paid": true,
-   "first_seen": "2026-10-11T14:26:56+0800",
-   "launch_wave": "baseline",
+   "first_seen": "2026-11-11T02:13:13+0800",
+   "launch_wave": "new",
    "match": "bundle_id_exact",
    "copy": {
     "en-US": {
@@ -361,8 +361,8 @@
    "package": "com.caitlyn.hourstag",
    "play_url": "https://play.google.com/store/apps/details?id=com.caitlyn.hourstag",
    "paid": true,
-   "first_seen": "2026-10-11T14:26:56+0800",
-   "launch_wave": "baseline",
+   "first_seen": "2026-11-11T02:13:13+0800",
+   "launch_wave": "new",
    "match": "bundle_id_exact",
    "copy": {
     "en-US": {
@@ -403,7 +403,7 @@
    "package": "com.alice51849.LEDMovingText",
    "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.LEDMovingText",
    "paid": false,
-   "first_seen": "2026-11-09T23:56:50+0800",
+   "first_seen": "2026-11-11T02:13:13+0800",
    "launch_wave": "new",
    "match": "bundle_id_exact",
    "copy": {
@@ -424,7 +424,7 @@
    "package": "com.focuslockpro.app",
    "play_url": "https://play.google.com/store/apps/details?id=com.focuslockpro.app",
    "paid": false,
-   "first_seen": "2026-11-09T23:56:50+0800",
+   "first_seen": "2026-11-11T02:13:13+0800",
    "launch_wave": "new",
    "match": "bundle_id_exact",
    "copy": {
@@ -571,8 +571,8 @@
    "package": "com.alice51849.lumimissionlite",
    "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.lumimissionlite",
    "paid": false,
-   "first_seen": "2026-10-11T14:26:56+0800",
-   "launch_wave": "baseline",
+   "first_seen": "2026-11-11T02:13:13+0800",
+   "launch_wave": "new",
    "match": "bundle_id_casefold",
    "copy": {
     "en-US": {
@@ -592,8 +592,8 @@
    "package": "com.lumi.mochimissionplanet",
    "play_url": "https://play.google.com/store/apps/details?id=com.lumi.mochimissionplanet",
    "paid": true,
-   "first_seen": "2026-10-11T14:26:56+0800",
-   "launch_wave": "baseline",
+   "first_seen": "2026-11-11T02:13:13+0800",
+   "launch_wave": "new",
    "match": "store_title_exact",
    "copy": {
     "en-US": {
@@ -718,7 +718,7 @@
    "package": "com.alice51849.MoneyTag",
    "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.MoneyTag",
    "paid": false,
-   "first_seen": "2026-11-09T23:56:50+0800",
+   "first_seen": "2026-11-11T02:13:13+0800",
    "launch_wave": "new",
    "match": "bundle_id_exact",
    "copy": {
@@ -760,7 +760,7 @@
    "package": "com.alice51849.OnePagePPT",
    "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT",
    "paid": false,
-   "first_seen": "2026-10-14T12:11:14+0800",
+   "first_seen": "2026-11-11T02:13:13+0800",
    "launch_wave": "new",
    "match": "bundle_id_exact",
    "copy": {
@@ -781,7 +781,7 @@
    "package": "com.alice51849.photocream",
    "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.photocream",
    "paid": false,
-   "first_seen": "2026-11-09T23:56:50+0800",
+   "first_seen": "2026-11-11T02:13:13+0800",
    "launch_wave": "new",
    "match": "bundle_id_exact",
    "copy": {
@@ -844,7 +844,7 @@
    "package": "com.alice51849.SaveTag",
    "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.SaveTag",
    "paid": false,
-   "first_seen": "2026-11-05T11:55:08+0800",
+   "first_seen": "2026-11-11T02:13:13+0800",
    "launch_wave": "new",
    "match": "bundle_id_exact",
    "copy": {
@@ -928,7 +928,7 @@
    "package": "com.snapport.app",
    "play_url": "https://play.google.com/store/apps/details?id=com.snapport.app",
    "paid": true,
-   "first_seen": "2026-11-09T23:56:50+0800",
+   "first_seen": "2026-11-11T02:13:13+0800",
    "launch_wave": "new",
    "match": "bundle_id_exact",
    "copy": {
@@ -991,7 +991,7 @@
    "package": "com.alice51849.StayClock",
    "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.StayClock",
    "paid": false,
-   "first_seen": "2026-11-09T23:56:50+0800",
+   "first_seen": "2026-11-11T02:13:13+0800",
    "launch_wave": "new",
    "match": "bundle_id_exact",
    "copy": {
@@ -1010,7 +1010,7 @@
    "package": "com.alice51849.Studydown",
    "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.Studydown",
    "paid": false,
-   "first_seen": "2026-11-09T23:56:50+0800",
+   "first_seen": "2026-11-11T02:13:13+0800",
    "launch_wave": "new",
    "match": "bundle_id_exact",
    "copy": {
@@ -1073,7 +1073,7 @@
    "package": "com.alice51849.TripbeeLite",
    "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.TripbeeLite",
    "paid": false,
-   "first_seen": "2026-11-09T23:56:50+0800",
+   "first_seen": "2026-11-11T02:13:13+0800",
    "launch_wave": "new",
    "match": "bundle_id_exact",
    "copy": {
@@ -1094,7 +1094,7 @@
    "package": "com.alice51849.TripPlanet",
    "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.TripPlanet",
    "paid": false,
-   "first_seen": "2026-10-15T17:02:19+0800",
+   "first_seen": "2026-11-11T02:13:13+0800",
    "launch_wave": "new",
    "match": "bundle_id_exact",
    "copy": {
@@ -1115,7 +1115,7 @@
    "package": "com.unblurry.app",
    "play_url": "https://play.google.com/store/apps/details?id=com.unblurry.app",
    "paid": false,
-   "first_seen": "2026-11-09T23:56:50+0800",
+   "first_seen": "2026-11-11T02:13:13+0800",
    "launch_wave": "new",
    "match": "bundle_id_exact",
    "copy": {
@@ -1178,7 +1178,7 @@
    "package": "com.caitlyn.flashdot",
    "play_url": "https://play.google.com/store/apps/details?id=com.caitlyn.flashdot",
    "paid": true,
-   "first_seen": "2026-11-09T23:56:50+0800",
+   "first_seen": "2026-11-11T02:13:13+0800",
    "launch_wave": "new",
    "match": "bundle_id_exact",
    "copy": {
@@ -1220,7 +1220,7 @@
    "package": "com.alice51849.Zipbox",
    "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.Zipbox",
    "paid": true,
-   "first_seen": "2026-11-09T23:56:50+0800",
+   "first_seen": "2026-11-11T02:13:13+0800",
    "launch_wave": "new",
    "match": "bundle_id_exact",
    "copy": {
@@ -1235,6 +1235,13 @@
    }
   }
  },
- "unmapped": [],
+ "unmapped": [
+  {
+   "folder": "56_MetroTimeHelperPaid",
+   "package": "com.alice51849.metrotimehelper.paid",
+   "reason": "duplicate_ios_key:metrotimehelper",
+   "conflict_with": "56_MetroTimeHelper"
+  }
+ ],
  "baseline_first_seen": "2026-10-11T14:26:56+0800"
 }

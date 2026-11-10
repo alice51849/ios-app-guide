@@ -160,9 +160,29 @@ class EveningQueueTest(unittest.TestCase):
         self.assertIn(chosen["series"], ("BM-17", "BM-22"))
 
     def test_usagenow_event_and_weather_alert_still_win(self):
-        self.assertEqual("BM-11", T.plan(DAY, live_event(self.data), MILD, queue=[QUEUED])["series"])
-        self.assertEqual("BM-22", T.plan(DAY, self.data, COLD, queue=[QUEUED])["series"])
-        self.assertIsNone(T.plan(DAY, self.data, MILD, clip="claudeusagemini/en", queue=[QUEUED]))
+        self.assertEqual("BM-11", T.plan(DAY, live_event(self.data), MILD, queue=[QUEUED], launched={})["series"])
+        self.assertEqual("BM-22", T.plan(DAY, self.data, COLD, queue=[QUEUED], launched={})["series"])
+        self.assertIsNone(T.plan(DAY, self.data, MILD, clip="claudeusagemini/en", queue=[QUEUED], launched={}))
+
+    def test_new_listing_post_beats_the_weather_alert_for_14_days(self):
+        # 11-10: TripBee Cute's dated post lost the slot to the weather alert; a new App's post now wins it.
+        for age in (0, 13):
+            launched = {"cyca": (DAY - dt.timedelta(days=age)).isoformat()}
+            self.assertEqual("CONV", T.plan(DAY, self.data, COLD, queue=[QUEUED], launched=launched)["series"], age)
+        # UsageNow still wins over the new App; from day 14 (or an unknown App) the weather wins again.
+        new = {"cyca": DAY.isoformat()}
+        self.assertEqual("BM-11", T.plan(DAY, live_event(self.data), COLD, queue=[QUEUED], launched=new)["series"])
+        for launched in ({"cyca": (DAY - dt.timedelta(days=14)).isoformat()}, {"mochi": DAY.isoformat()},
+                         {"cyca": "not-a-date"}, {"cyca": (DAY + dt.timedelta(days=1)).isoformat()}):
+            self.assertEqual("BM-22", T.plan(DAY, self.data, COLD, queue=[QUEUED], launched=launched)["series"], launched)
+        # A bad entry never posts, new App or not.
+        bad = dict(QUEUED, text="the best tracker")
+        self.assertNotEqual("CONV", (T.plan(DAY, self.data, COLD, queue=[bad], launched=new) or {}).get("series"))
+
+    def test_launch_dates_come_from_the_carousel_queue(self):
+        self.assertEqual({}, T.load_launched("/nonexistent/carousels.json"))
+        launched = T.load_launched()
+        self.assertTrue(all(isinstance(v, str) for v in launched.values()))
 
     def test_bad_entries_are_reported_and_never_posted(self):
         bad = [dict(QUEUED, ct="un_tw_threads_1"), dict(QUEUED, text="x" * 501),

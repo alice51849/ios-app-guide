@@ -194,13 +194,41 @@ def post(series, text, image_url=None):
             "ct": series["ct"], "locale": series["locale"], "text": text, "image_url": image_url}
 
 
-def plan(day, data=None, weather=None, clip=None, queue=None):
+# New-listing floor (coordinator 2026-11-10): TripBee Cute's dated post lost 11-10's slot to the weather
+# alert and was only carried to 11-11 by hand. A dated post for an App that went live less than
+# LAUNCH_FLOOR_DAYS ago (growth/carousels.json "app_launched", the same list social_extra.py's floor
+# reads) now takes the slot ahead of the weather alert; UsageNow still wins, older Apps' posts still
+# yield to the weather. Order only: still one post in this slot, no gate changed.
+CAROUSELS = HERE.parent / "growth" / "carousels.json"
+LAUNCH_FLOOR_DAYS = 14
+
+
+def load_launched(path=None):
+    try:
+        data = json.loads(Path(path or CAROUSELS).read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return {}
+    launched = data.get("app_launched") if isinstance(data, dict) else None
+    return {k: v for k, v in launched.items() if isinstance(v, str)} if isinstance(launched, dict) else {}
+
+
+def new_listing(app, day, launched):
+    try:
+        live = dt.date.fromisoformat(str(launched.get(app) or "")[:10])
+    except ValueError:
+        return False
+    return 0 <= (day - live).days < LAUNCH_FLOOR_DAYS
+
+
+def plan(day, data=None, weather=None, clip=None, queue=None, launched=None):
     """What the evening slot posts on `day`: a series post dict, or None for
     the planned hook clip. `weather` is tomorrow_weather() (None = unknown).
-    Order: UsageNow event > UsageNow clip > weather alert > dated conversion
-    post (`queue`, growth/threads-evening-queue.json) > rotation > clip."""
+    Order: UsageNow event > UsageNow clip > dated post of an App live < 14 days >
+    weather alert > other dated conversion post (`queue`,
+    growth/threads-evening-queue.json) > rotation > clip."""
     data = data or load()
     queue = load_evening_queue(EVENING_QUEUE) if queue is None else queue  # the module path, so tests can point it elsewhere
+    launched = load_launched() if launched is None else launched
     s = data["series"]
     event = usagenow_event(s["usagenow_policy"], day)
     if event:
@@ -208,12 +236,15 @@ def plan(day, data=None, weather=None, clip=None, queue=None):
         return post(s["usagenow_policy"], s["usagenow_policy"]["template"].format(**fields), event.get("image_url"))
     if clip and clip.split("/")[0] in data.get("priority_clip_apps", []):
         return None
+    queued = evening_queued(day, queue)
+    queued_ok = bool(queued) and not evening_queue_problems([queued])
+    if queued_ok and new_listing(queued.get("app"), day, launched):
+        return queue_post(queued)
     wx = s["lumiweather_tomorrow"]
     weather_ok = wx.get("status") == "live" and weather is not None
     if weather_ok and weather_triggered(wx, weather):
         return post(wx, compose_weather(wx, weather, day))
-    queued = evening_queued(day, queue)
-    if queued and not evening_queue_problems([queued]):
+    if queued_ok:
         return queue_post(queued)
     rotation = [k for k in data["rotation"] if s[k].get("status") == "live"]
     if rotation:

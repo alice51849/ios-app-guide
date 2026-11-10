@@ -17,6 +17,7 @@
   所以本檔與產出頁只在指南站收錄本款後才併入主線（判準見 reports/tripbeecute/action_cards.md）。
 - 2026-11-08 加香港繁中頁：香港主詞「旅行手帳」「旅行 手帳」#72；語言目錄沿用 zh-Hant，spec "cc": "hk" 改連香港店。
 - 2026-11-08 加台灣第二頁：「旅遊手帳」#21、「旅行 清單」#85；寫出發前打包清單與每日行程並排（預設台灣店，不需 cc）。
+- 2026-11-10 加日文頁（「旅行 手帳」#17）與澳洲英文頁（「cute travel journal」#4，en-AU 目錄連澳洲店，sitemap 用既有 sitemap_seasonal_en_AU.xml）。
 - 專屬內容：中文 ≥450 字、韓文 ≥450 個韓文字。只寫這兩頁與各語系 sitemap_seasonal_<lang>.xml 的這幾列；不做 git 操作。
 
     GEO_PAGES=<Guide 工作樹> python3 geo/gen_search_reality_tripbeecute.py           # 產生
@@ -36,6 +37,8 @@ import gen_search_reality_g3 as g3  # noqa: E402
 
 LANGS = dict(g3.LANGS)
 LANGS["ko"] = easyam.LANGS["ko"]
+# 澳洲英文：沿用英文介面字串，目錄 en-AU、連澳洲店（en-AU 是官方語系，商店國家 au 由 locale_storefronts.json 對應）。
+LANGS["en-AU"] = dict(g3.LANGS["en"], store="en-AU", dir="en-AU", cc="au", og="en_AU", html="en-AU")
 APP_IDS = {"tripbeecute": "6826987407"}
 BANNED = easyam.BANNED
 dedicated_size = easyam.dedicated_size
@@ -302,7 +305,121 @@ PAGE_SPECS: list[dict] = [
         "related": [("zh-Hant/tripbeecute.html", "TripBee Cute 完整介紹")],
         "legal": "本頁介紹的 App 為獨立開發；天氣資料來自 Open-Meteo，只會用到目的地。App Store 搜尋結果為 2026 年 11 月澳門 App Store 實際查詢，名次會變動。",
     },
+    # 日本：2026-11-10 查日本 App Store（iTunes 搜尋 country=jp）：「旅行 手帳」本款 #17（170 款）、「旅行手帳」#35，
+    # 第 1 名評分僅 2 則；日本沒有本款意圖頁（姊妹款 TripBee Lite 的日文頁打「旅のしおり」，本頁改打「手帳」族群，不搶同詞）。
+    # 功能句只取日文商店文案中購買前就能用的部分（不寫共同編集、スマート持ち物リスト、iCloud 同期、表紙總數）。
+    {
+        "key": "tripbeecute", "lang": "ja",
+        "slug": "ryoko-techo-app-kawaii-ensei-joshitabi",
+        "terms": ["旅行 手帳", "旅行手帳", "かわいい 旅行 手帳", "旅行 カウントダウン"],
+        "title": "旅行手帳アプリの選び方｜女子旅・ライブ遠征の予定をかわいいイラストの1冊にまとめる5つのポイント",
+        "desc": "紙の旅行手帳は好きだけど、予約メールやスクショを書き写すのが大変…という人へ。旅行手帳アプリを選ぶときのポイントと、出発までのカウントダウン、フライト、毎日の予定、持ち物を1ページにまとめる手順、日本のApp Storeへの直リンクをまとめました。",
+        "h1": "旅行手帳をアプリで：カウントダウン、フライト、毎日の予定、持ち物をかわいい1冊に",
+        "lead": "App Storeで「旅行 手帳」と検索する人の多くは、もう次の旅の予定が決まっています。航空券は予約メール、ホテルは予約サイト、行きたいお店はスクショ。情報がばらばらで、手帳に書き写す前に疲れてしまうことも。",
+        "intro": [
+            "マスキングテープやシールで飾る紙の旅行手帳はかわいいけれど、フライトの時間を書き写したり、予定が変わるたびに書き直したりするのは意外と手間がかかります。かといってカレンダーアプリだと表のようで、開いてもわくわくしません。ほしいのはその間、スマホのようにさっと作れて、手帳のようにめくって楽しい1冊です。",
+            "2026年11月に日本のApp Storeで「旅行 手帳」を実際に検索してみると、上位には一般的な手帳アプリや日記アプリ、旅の記録アプリが並び、フライト、カウントダウン、毎日の予定、持ち物を旅ごとに1冊にまとめる旅行専用のアプリは多くありませんでした。選ぶときに見ておきたいポイントと、実際の作り方をまとめます。",
+        ],
+        "sections": [
+            ("旅行手帳アプリは、この5つをチェック", [], [
+                "旅の全体が1ページで見渡せるか：イラストの表紙を開いて下へスクロールするだけで、出発までのカウントダウン、フライト、毎日の予定、持ち物リストとメモまで続きます。アプリを行ったり来たりしなくていいのが一番の違いです。",
+                "手帳らしく飾れるか：街や名所、季節のイラスト表紙を選び、日ごとの予定に名前をつけてステッカーを付けられます。",
+                "日ごとに見分けられるか：日ごとに色が分かれて一目でわかり、日付で絞り込めばその日の予定だけを表示できます。",
+                "記録を予定のそばに置けるか：写真やチケット、メモをその予定のすぐそばに保存でき、マップアプリで道順も確認できます。",
+                "スマホを開かなくても見られるか：ホーム画面・ロック画面ウィジェットに表紙と次の予定、Apple Watchにカウントダウンと次の予定が表示されます。",
+            ]),
+            ("女子旅、ライブ遠征、はじめての海外旅行に", [
+                "女子旅や韓国・台湾への週末旅行なら、旅に名前をつけて表紙を選び、時刻・ターミナル・予約番号が入った搭乗券風のフライトカードを入れるだけで、出発までのカウントダウンが始まります。行き先の天気と現地時刻も一緒に表示されるので、時差のある旅でも迷いません。",
+                "ライブ遠征なら、会場入りの時間や物販、移動の予定を日ごとに並べ、終わったものから完了チェック。すき間時間も予定として入れておけます。雨が降ったら、メインの予定からコピーして作っておいた雨の日プランに切り替えられます。",
+                "同行する友だちや家族に予定を見せたいときは、Webしおりで共有できます。1つのWebファイルなのでどのブラウザやチャットアプリでも開けて、オフラインでも見られ、カウントダウンも進み続けます。",
+            ], []),
+            ("紙の手帳派にもうれしいところ", [
+                "表計算で予定を立てる派なら、CSVテンプレートを書き出して自分で記入するか、ふだん使っているAIアシスタントに記入してもらい、読み込めばしおりが1冊できあがります。書き写す手間がいらないので、飾ることに時間を使えます。",
+                "アカウント登録なし、広告なし、トラッキングなし。しおりは端末に保存されます。天気はOpen-Meteoから行き先の情報だけを使って取得します。ダークモード、iPad、50言語にも対応しています。",
+            ], []),
+        ],
+        "steps_title": "5分でつくる、はじめての旅行手帳",
+        "steps": [
+            "TripBee Cuteを開いて新しい旅を追加し、名前をつけます。",
+            "街や名所、季節のイラストから表紙を1枚選びます。",
+            "フライトカードを入れると、出発までのカウントダウンが始まります。",
+            "毎日の予定を入れて日ごとに名前とステッカーを付け、写真やチケットは予定のそばに添付します。",
+            "持ち物リストを作って、出発前にひとつずつチェックします。",
+        ],
+        "cards": [
+            ("tripbeecute", "スクショやメール、メモに散らばった旅の予定を、かわいいイラストのしおり1冊にまとめます。出発までのカウントダウン、行き先の天気と現地時刻、搭乗券風のフライトカード、日ごとに色分けされた毎日の予定、持ち物リストまで1ページで見渡せます。写真やチケット、メモは予定のすぐそばに保存でき、雨の日プランへの切り替えも。Webしおりで共有すれば、どのブラウザでもオフラインでも開けます。ホーム画面・ロック画面ウィジェット、Apple Watch、iPad、ダークモード、50言語に対応。アカウント登録なし、広告なし、トラッキングなし。"),
+        ],
+        "faqs": [
+            ("アプリを持っていない友だちにも予定を見せられますか？", "Webしおりで共有できます。1つのWebファイルでどのブラウザやチャットアプリでも開けて、オフラインでも見られ、カウントダウンも進み続けます。"),
+            ("海外旅行で現地の時間や天気はわかりますか？", "行き先の天気と現地時刻がしおりに表示されます。天気はOpen-Meteoから行き先の情報だけを使って取得します。"),
+            ("表計算で作った予定を移せますか？", "CSVテンプレートを書き出して記入し、読み込めばしおりができあがります。AIアシスタントに記入してもらうこともできます。"),
+            ("アカウント登録は必要ですか？", "いいえ。アカウント登録なし、広告なし、トラッキングなしで、しおりは端末に保存されます。"),
+        ],
+        "related": [("ja/tripbeecute.html", "TripBee Cute の詳しい紹介")],
+        "legal": "このページで紹介しているアプリは個人開発です。天気はOpen-Meteoから行き先の情報だけを使って取得します。App Storeの検索結果は2026年11月の日本のApp Storeでの実際の検索に基づくもので、順位は変わることがあります。",
+    },
+    # 澳洲：2026-11-10 查澳洲 App Store：「cute travel journal」本款 #4（162 款），鄰國紐西蘭 #3、愛爾蘭 #3、加拿大 #6、
+    # 英國 #14；第 1 名 Journi 1,772 則評分。美國不在前 40，所以不用 en（美國店）頁，改用 en-AU 語系目錄連澳洲店。
+    # 用澳洲英文（holiday、colour、mates）；功能句只取 en-AU 商店文案中購買前就能用的部分。
+    {
+        "key": "tripbeecute", "lang": "en-AU",
+        "slug": "cute-travel-journal-app-holiday-countdown-en-au",
+        "terms": ["cute travel journal", "travel journal", "holiday countdown", "cute trip planner"],
+        "title": "Cute Travel Journal App: 5 Things to Check Before Your Next Holiday (Countdown, Flights, Day Plans, Packing)",
+        "desc": "Looking for a cute travel journal on your iPhone? What to check before you pick one, how to turn booking emails and screenshots into one illustrated booklet with a holiday countdown, flights, day plans and a packing list, plus a direct Australian App Store link.",
+        "h1": "Cute travel journal: your holiday countdown, flights, day plans and packing list in one illustrated booklet",
+        "lead": "Most people who search the App Store for a cute travel journal already have a trip booked. The flights are in one email, the accommodation is in another, the cafe you want to try is a screenshot, and the group chat has the rest.",
+        "intro": [
+            "A paper travel journal with washi tape and stickers looks lovely, but copying flight times into it and rewriting a page every time the plan changes takes a lot of evenings. A calendar app is quicker, yet it looks like a spreadsheet and does nothing for the excitement of the trip. What most people want sits in the middle: something as quick as a phone and as nice to flip through as a journal.",
+            "We searched the Australian App Store for cute travel journal in November 2026. The top results were mostly general journals, diaries and trip trackers that log where you have been. Very few put the flights, the countdown, each day's plans and the packing list for one trip together in one place. Below is what to look for, and how to build your first booklet in a few minutes.",
+        ],
+        "sections": [
+            ("Five things to check in a cute travel journal app", [], [
+                "The whole trip on one page: open the illustrated cover and scroll down through the countdown to departure, your flights, each day's plans, then the packing list and notes. No jumping between apps.",
+                "Room to decorate: pick an illustrated cover of a city, landmark or season, give each day a name and add stickers to your plans.",
+                "Days you can tell apart: each day has its own colour, and a date filter shows a single day when you only need today.",
+                "Keepsakes next to the plan: keep photos, tickets and notes right beside each plan, and get directions in your maps app.",
+                "A glance without opening it: Home Screen and Lock Screen widgets show your cover art and next plan, and the Apple Watch app shows the countdown and your next plan.",
+            ]),
+            ("Three common holidays, three ways to use it", [
+                "A long weekend away or a road trip up the coast: name the trip, choose a cover and add your plans for each day, with gaps for downtime. If the weather turns, switch to the rainy-day plan you made as a copy of the main plan.",
+                "A week in Bali or a first big trip overseas: add a flight card styled like a boarding pass, with times, terminals and booking references, and the countdown starts. The weather and local time at your destination sit right there too, which helps when the time zone changes.",
+                "A family holiday or a trip with your mates: share a web booklet. It is a single web file that opens in any browser or chat app, works offline, and its countdown keeps running, so everyone can see the plan without installing anything.",
+            ], []),
+            ("Handy for planners who like a spreadsheet", [
+                "Already have the plan in a spreadsheet? Export the CSV template, fill it in yourself or ask any AI assistant you like to do it, then import the file and the booklet appears. Less copying means more time for the fun part.",
+                "No account, no ads and no tracking. Your booklet stays on your device, and the weather comes from Open-Meteo using only your destination. Dark Mode, iPad and 50 languages are supported.",
+            ], []),
+        ],
+        "steps_title": "Make your first travel booklet in five minutes",
+        "steps": [
+            "Open TripBee Cute, add a new trip and give it a name.",
+            "Choose an illustrated cover of a city, landmark or season.",
+            "Add a flight card and the countdown to departure begins.",
+            "Fill in each day, name the days, add stickers, and attach photos and tickets next to the plans.",
+            "Build your packing list and tick things off before you leave.",
+        ],
+        "cards": [
+            ("tripbeecute", "Turns booking emails, screenshots and group chats into one cute illustrated booklet: the countdown to departure, the weather and local time at your destination, flight cards styled like boarding passes, colour-coded day plans and your packing list, all on one page. Keep photos, tickets and notes beside each plan, switch to a rainy-day plan when the weather turns, and share a web booklet that opens in any browser, even offline. Home Screen and Lock Screen widgets, Apple Watch, iPad, Dark Mode and 50 languages. No account, no ads and no tracking."),
+        ],
+        "faqs": [
+            ("Can friends see the plan without the app?", "Yes. Share a web booklet: a single web file that opens in any browser or chat app, works offline, and keeps the countdown running."),
+            ("Does it show the time and weather where I am going?", "Yes. The booklet shows the weather and local time at your destination. Weather comes from Open-Meteo using only your destination."),
+            ("Can I bring in a plan from a spreadsheet?", "Yes. Export the CSV template, fill it in or ask an AI assistant to, then import it and the booklet is made for you."),
+            ("Do I need to sign up?", "No. There is no account, no ads and no tracking, and your booklet stays on your device."),
+        ],
+        "related": [("en-AU/tripbeecute.html", "TripBee Cute: full app overview")],
+        "legal": "The app on this page is made by an independent developer. Weather comes from Open-Meteo using only your destination. App Store search results are from a real search of the Australian App Store in November 2026, and rankings change.",
+    },
 ]
+
+
+_G3_SITEMAP_NAME = g3.sitemap_name
+
+
+def sitemap_name(lang: str) -> str:
+    """指南站澳洲英文的 seasonal sitemap 檔名用底線（sitemap_seasonal_en_AU.xml，已列在 sitemap_index.xml）。"""
+    return f"sitemap_{g3.SECTION}_en_AU.xml" if lang == "en-AU" else _G3_SITEMAP_NAME(lang)
 
 
 def _install() -> None:
@@ -312,6 +429,7 @@ def _install() -> None:
     g3.PAGE_SPECS = PAGE_SPECS
     g3.BANNED = BANNED
     g3.dedicated_size = dedicated_size
+    g3.sitemap_name = sitemap_name
 
 
 def main(argv=None) -> int:

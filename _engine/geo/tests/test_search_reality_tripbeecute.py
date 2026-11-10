@@ -16,7 +16,7 @@ import gen_search_reality_tripbeecute as gen  # noqa: E402
 import gen_search_reality_g3 as g3  # noqa: E402
 import gw_campaign  # noqa: E402
 
-PATCHED = ("LANGS", "APP_IDS", "PAGE_SPECS", "BANNED", "dedicated_size")
+PATCHED = ("LANGS", "APP_IDS", "PAGE_SPECS", "BANNED", "dedicated_size", "sitemap_name")
 
 
 class TripBeeCutePageTests(unittest.TestCase):
@@ -32,7 +32,7 @@ class TripBeeCutePageTests(unittest.TestCase):
             setattr(g3, name, value)
 
     def test_taiwan_korea_and_hong_kong_native_pages(self):
-        self.assertEqual([spec["lang"] for spec in gen.PAGE_SPECS], ["zh-Hant", "ko", "zh-Hant", "zh-Hant", "zh-Hant"])
+        self.assertEqual([spec["lang"] for spec in gen.PAGE_SPECS], ["zh-Hant", "ko", "zh-Hant", "zh-Hant", "zh-Hant", "ja", "en-AU"])
         self.assertEqual({spec["key"] for spec in gen.PAGE_SPECS}, {"tripbeecute"})
         self.assertIn("可愛 旅行手帳", gen.PAGE_SPECS[0]["terms"])
         self.assertIn("다꾸 여행", gen.PAGE_SPECS[1]["terms"])
@@ -42,7 +42,9 @@ class TripBeeCutePageTests(unittest.TestCase):
         self.assertIn("旅行 清單", gen.PAGE_SPECS[3]["terms"])
         self.assertIn("旅行手帳", gen.PAGE_SPECS[4]["terms"])
         self.assertIn("旅行 手賬", gen.PAGE_SPECS[4]["terms"])
-        self.assertEqual(len(self.pages), 5)
+        self.assertIn("旅行 手帳", gen.PAGE_SPECS[5]["terms"])
+        self.assertIn("cute travel journal", gen.PAGE_SPECS[6]["terms"])
+        self.assertEqual(len(self.pages), 7)
 
     def test_card_links_storefront_with_campaign(self):
         for spec in gen.PAGE_SPECS:
@@ -60,7 +62,8 @@ class TripBeeCutePageTests(unittest.TestCase):
             text = html.unescape(re.sub(r"<script\b.*?</script>", "", g3.visible_text(source)
                                         + source.split("</head>", 1)[0], flags=re.S))
             self.assertIsNone(gen.BANNED.search(text), relative)
-            for word in ("解鎖", "試用", "訂閱", "價格", "Cute Pass", "內購",
+            for word in ("解鎖", "試用", "訂閱", "價格", "Cute Pass", "內購", "課金", "体験", "サブスク",
+                         "unlock", "trial", "subscription", "in-app purchase",
                          "체험", "구독", "가격", "잠금 해제", "앱 내 구입", "AI 기능", "내장 AI"):
                 self.assertNotIn(word, text, relative)
 
@@ -135,6 +138,28 @@ class TripBeeCutePageTests(unittest.TestCase):
         for other in gen.PAGE_SPECS[1:]:
             self.assertNotIn("想要一份可愛的行程表？", self.pages[g3.page_relative(other)])
             self.assertNotIn("可愛 行程", other["terms"])
+
+    def test_japan_page_uses_jp_store_and_techo_angle(self):
+        ja = gen.PAGE_SPECS[5]
+        self.assertNotIn("cc", ja)
+        self.assertTrue(ja["h1"].startswith("旅行手帳"))
+        self.assertNotIn("旅のしおり", ja["terms"])  # 姊妹款 TripBee Lite 的日文頁打這個詞，不搶
+        source = html.unescape(self.pages[g3.page_relative(ja)])
+        self.assertIn("https://apps.apple.com/jp/app/id6826987407?", source)
+        self.assertTrue(g3.page_relative(ja).startswith("ja/seasonal/"))
+
+    def test_australia_page_uses_au_store_and_existing_sitemap(self):
+        au = gen.PAGE_SPECS[6]
+        self.assertEqual(gen.LANGS["en-AU"]["cc"], "au")
+        self.assertEqual(gen.LANGS["en-AU"]["dir"], "en-AU")
+        self.assertTrue(g3.page_relative(au).startswith("en-AU/seasonal/"))
+        source = html.unescape(self.pages[g3.page_relative(au)])
+        self.assertIn("https://apps.apple.com/au/app/id6826987407?", source)
+        self.assertIn('lang="en-AU"', source)
+        self.assertEqual(g3.sitemap_name("en-AU"), "sitemap_seasonal_en_AU.xml")
+        self.assertEqual(g3.sitemap_name("ja"), "sitemap_seasonal_ja.xml")
+        for word in ("together through iCloud", "smart packing", "backup", "57"):
+            self.assertNotIn(word, source)
 
     def test_dedicated_text_floor(self):
         for spec in gen.PAGE_SPECS:

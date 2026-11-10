@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T06:00:48Z",
+  "updated_at": "2026-11-10T07:04:45Z",
   "note": "Insights of our own IG / Threads posts by .github/scripts/post_performance.py. score = views + 3*likes + 5*replies + 8*(saves+shares+reposts). boost = best apps, read by 00_GrowthEngine shorts/scripts/schedule_posts.py.",
   "sources": {
     "instagram": "ok: 37 posts",
@@ -10,7 +10,7 @@
     "mochi_suneung",
     "wifiaidlite",
     "gmoney",
-    "duowallpaperstudio"
+    "cyca"
   ],
   "demote": [
     "lumimission",
@@ -31,7 +31,7 @@
       "en": "c",
       "zh-Hant": "b"
     },
-    "global": "b"
+    "global": "c"
   },
   "allocation": {
     "threshold": 20.0,
@@ -39,8 +39,8 @@
     "channels": {
       "instagram": {
         "posts": 14,
-        "median_views": 9.0,
-        "keep_slot": 15,
+        "median_views": 5.0,
+        "keep_slot": 1,
         "daily": 2
       },
       "threads": {
@@ -67,33 +67,35 @@
       },
       "en": {
         "hour": 18,
-        "avg_views": 21.2,
-        "posts": 18,
+        "avg_views": 19.5,
+        "posts": 21,
         "hours": {
           "5": 0.0,
-          "18": 21.2,
-          "19": 0.0
+          "15": 2.0,
+          "18": 19.5,
+          "19": 0.0,
+          "22": 0.5
         }
       },
       "ja": {
         "hour": 1,
         "avg_views": 44.8,
-        "posts": 11,
+        "posts": 12,
         "hours": {
           "1": 44.8,
-          "5": 8.3
+          "5": 6.2
         }
       },
       "zh-Hant": {
         "hour": 12,
-        "avg_views": 31.7,
-        "posts": 28,
+        "avg_views": 24.2,
+        "posts": 29,
         "hours": {
           "1": 19.5,
           "5": 1.1,
           "7": 0.2,
           "9": 0.3,
-          "12": 31.7
+          "12": 24.2
         }
       }
     },
@@ -161,20 +163,28 @@
         "avg_score": 95.0
       },
       {
+        "key": "cyca",
+        "posts": 2,
+        "views": 86,
+        "engagement": 0,
+        "score": 86,
+        "avg_score": 43.0
+      },
+      {
         "key": "duowallpaperstudio",
-        "posts": 1,
-        "views": 78,
+        "posts": 2,
+        "views": 80,
         "engagement": 2,
-        "score": 84,
-        "avg_score": 84.0
+        "score": 86,
+        "avg_score": 43.0
       },
       {
         "key": "onepageppt",
-        "posts": 4,
-        "views": 188,
+        "posts": 5,
+        "views": 199,
         "engagement": 3,
-        "score": 203,
-        "avg_score": 50.8
+        "score": 214,
+        "avg_score": 42.8
       },
       {
         "key": "unblurry",
@@ -249,20 +259,20 @@
         "avg_score": 19.2
       },
       {
-        "key": "mochi",
-        "posts": 8,
-        "views": 123,
-        "engagement": 1,
-        "score": 128,
-        "avg_score": 16.0
-      },
-      {
         "key": "lumibopomofo",
         "posts": 9,
         "views": 120,
         "engagement": 3,
         "score": 133,
         "avg_score": 14.8
+      },
+      {
+        "key": "mochi",
+        "posts": 9,
+        "views": 123,
+        "engagement": 1,
+        "score": 128,
+        "avg_score": 14.2
       },
       {
         "key": "sononote",
@@ -297,20 +307,20 @@
         "avg_score": 12.0
       },
       {
-        "key": "cyca",
-        "posts": 1,
-        "views": 11,
-        "engagement": 0,
-        "score": 11,
-        "avg_score": 11.0
-      },
-      {
         "key": "zipbox",
         "posts": 3,
         "views": 27,
         "engagement": 1,
         "score": 32,
         "avg_score": 10.7
+      },
+      {
+        "key": "gmoneylite",
+        "posts": 1,
+        "views": 4,
+        "engagement": 1,
+        "score": 9,
+        "avg_score": 9.0
       },
       {
         "key": "qrcodehalo",
@@ -322,14 +332,6 @@
       },
       {
         "key": "wifiaid",
-        "posts": 1,
-        "views": 3,
-        "engagement": 1,
-        "score": 8,
-        "avg_score": 8.0
-      },
-      {
-        "key": "gmoneylite",
         "posts": 1,
         "views": 3,
         "engagement": 1,
@@ -386,11 +388,11 @@
       },
       {
         "key": "tripbee",
-        "posts": 2,
-        "views": 8,
+        "posts": 3,
+        "views": 11,
         "engagement": 0,
-        "score": 8,
-        "avg_score": 4.0
+        "score": 11,
+        "avg_score": 3.7
       },
       {
         "key": "caldaily",
@@ -423,6 +425,14 @@
         "engagement": 0,
         "score": 3,
         "avg_score": 1.5
+      },
+      {
+        "key": "tripbeelite",
+        "posts": 1,
+        "views": 1,
+        "engagement": 0,
+        "score": 1,
+        "avg_score": 1.0
       },
       {
         "key": "ledmovingtext",
@@ -501,34 +511,34 @@
       {
         "key": "ko",
         "posts": 6,
-        "views": 527,
+        "views": 601,
         "engagement": 1,
-        "score": 532,
-        "avg_score": 88.7
+        "score": 606,
+        "avg_score": 101.0
       },
       {
         "key": "zh-Hant",
-        "posts": 42,
-        "views": 1215,
+        "posts": 43,
+        "views": 1217,
         "engagement": 16,
-        "score": 1287,
-        "avg_score": 30.6
+        "score": 1289,
+        "avg_score": 30.0
       },
       {
         "key": "ja",
-        "posts": 12,
+        "posts": 13,
         "views": 344,
         "engagement": 3,
         "score": 355,
-        "avg_score": 29.6
+        "avg_score": 27.3
       },
       {
         "key": "en",
-        "posts": 36,
-        "views": 337,
+        "posts": 39,
+        "views": 353,
         "engagement": 11,
-        "score": 390,
-        "avg_score": 10.8
+        "score": 406,
+        "avg_score": 10.4
       },
       {
         "key": "de",
@@ -553,6 +563,14 @@
         "engagement": 0,
         "score": 26,
         "avg_score": 6.5
+      },
+      {
+        "key": "id",
+        "posts": 1,
+        "views": 1,
+        "engagement": 0,
+        "score": 1,
+        "avg_score": 1.0
       }
     ],
     "hooks": [
@@ -635,6 +653,16 @@
         "engagement": 0,
         "score": 110,
         "avg_score": 110.0
+      },
+      {
+        "app": "cyca",
+        "locale": "ko",
+        "hook": "오늘의 바디 예보",
+        "posts": 1,
+        "views": 85,
+        "engagement": 0,
+        "score": 85,
+        "avg_score": 85.0
       },
       {
         "app": "duowallpaperstudio",
@@ -967,9 +995,9 @@
         "avg_score": 11.0
       },
       {
-        "app": "cyca",
-        "locale": "ko",
-        "hook": "오늘의 바디 예보",
+        "app": "onepageppt",
+        "locale": "en",
+        "hook": "Wall of text? Make it one slide",
         "posts": 1,
         "views": 11,
         "engagement": 0,
@@ -1007,6 +1035,16 @@
         "avg_score": 9.0
       },
       {
+        "app": "gmoneylite",
+        "locale": "en",
+        "hook": "Travel Budget & Currency.",
+        "posts": 1,
+        "views": 4,
+        "engagement": 1,
+        "score": 9,
+        "avg_score": 9.0
+      },
+      {
         "app": "tripbee",
         "locale": "en",
         "hook": "Six confirmation emails, two screenshots, one note — and no ",
@@ -1040,16 +1078,6 @@
         "app": "wifiaid",
         "locale": "en",
         "hook": "Router, Mesh & DNS Diagnostics.",
-        "posts": 1,
-        "views": 3,
-        "engagement": 1,
-        "score": 8,
-        "avg_score": 8.0
-      },
-      {
-        "app": "gmoneylite",
-        "locale": "en",
-        "hook": "Travel Budget & Currency.",
         "posts": 1,
         "views": 3,
         "engagement": 1,
@@ -1227,6 +1255,16 @@
         "avg_score": 3.0
       },
       {
+        "app": "tripbee",
+        "locale": "en",
+        "hook": "Open in Maps in one tap",
+        "posts": 1,
+        "views": 3,
+        "engagement": 0,
+        "score": 3,
+        "avg_score": 3.0
+      },
+      {
         "app": "lumibopomofo",
         "locale": "zh-Hant",
         "hook": "",
@@ -1245,6 +1283,16 @@
         "engagement": 1,
         "score": 3,
         "avg_score": 3.0
+      },
+      {
+        "app": "duowallpaperstudio",
+        "locale": "zh-Hant",
+        "hook": "換色 再加一行字",
+        "posts": 1,
+        "views": 2,
+        "engagement": 0,
+        "score": 2,
+        "avg_score": 2.0
       },
       {
         "app": "lumibopomofo",
@@ -1270,6 +1318,26 @@
         "app": "mochi",
         "locale": "zh-Hant",
         "hook": "待辦清單 也可以這麼可愛",
+        "posts": 1,
+        "views": 1,
+        "engagement": 0,
+        "score": 1,
+        "avg_score": 1.0
+      },
+      {
+        "app": "tripbeelite",
+        "locale": "en",
+        "hook": "Every day on one timeline",
+        "posts": 1,
+        "views": 1,
+        "engagement": 0,
+        "score": 1,
+        "avg_score": 1.0
+      },
+      {
+        "app": "cyca",
+        "locale": "id",
+        "hook": "Tanpa akun, data tetap di HP-mu",
         "posts": 1,
         "views": 1,
         "engagement": 0,
@@ -1545,31 +1613,41 @@
         "engagement": 0,
         "score": 0,
         "avg_score": 0.0
+      },
+      {
+        "app": "mochi",
+        "locale": "ja",
+        "hook": "",
+        "posts": 1,
+        "views": 0,
+        "engagement": 0,
+        "score": 0,
+        "avg_score": 0.0
       }
     ],
     "variants": [
       {
-        "key": "b",
-        "posts": 23,
-        "views": 661,
-        "engagement": 7,
-        "score": 688,
-        "avg_score": 29.9
+        "key": "c",
+        "posts": 17,
+        "views": 483,
+        "engagement": 4,
+        "score": 503,
+        "avg_score": 29.6
       },
       {
-        "key": "c",
-        "posts": 16,
-        "views": 407,
-        "engagement": 4,
-        "score": 427,
+        "key": "b",
+        "posts": 26,
+        "views": 666,
+        "engagement": 7,
+        "score": 693,
         "avg_score": 26.7
       },
       {
         "key": "a",
-        "posts": 18,
-        "views": 221,
+        "posts": 19,
+        "views": 232,
         "engagement": 1,
-        "score": 224,
+        "score": 235,
         "avg_score": 12.4
       }
     ]
@@ -3684,12 +3762,12 @@
       "kind": "image",
       "variant": null,
       "metrics": {
-        "views": 3,
+        "views": 4,
         "likes": 0,
         "replies": 1,
         "reposts": 0
       },
-      "score": 8
+      "score": 9
     },
     {
       "channel": "instagram",
@@ -3703,14 +3781,14 @@
       "kind": "clip",
       "variant": "c",
       "metrics": {
-        "views": 11,
-        "reach": 9,
+        "views": 85,
+        "reach": 75,
         "likes": 0,
         "saves": 0,
         "shares": 0,
         "replies": 0
       },
-      "score": 11
+      "score": 85
     },
     {
       "channel": "instagram",
@@ -3721,6 +3799,132 @@
       "locale": "ja",
       "hook": "",
       "clip": "utility/chore/mochidonestamp/sheets/ja",
+      "kind": "utility",
+      "variant": null,
+      "metrics": {
+        "views": 0,
+        "reach": 0,
+        "likes": 0,
+        "saves": 0,
+        "shares": 0,
+        "replies": 0
+      },
+      "score": 0
+    },
+    {
+      "channel": "instagram",
+      "id": "17925464223450217",
+      "link": "https://www.instagram.com/reel/DfhVl3agXTJ/",
+      "posted_at": "2026-11-09T12:31:54",
+      "app": "duowallpaperstudio",
+      "locale": "zh-Hant",
+      "hook": "換色 再加一行字",
+      "clip": "duowallpaperstudio/zh-Hant",
+      "kind": "clip",
+      "variant": "c",
+      "metrics": {
+        "views": 2,
+        "reach": 2,
+        "likes": 0,
+        "saves": 0,
+        "shares": 0,
+        "replies": 0
+      },
+      "score": 2
+    },
+    {
+      "channel": "instagram",
+      "id": "18286365163294377",
+      "link": "https://www.instagram.com/reel/DfhqhXGirKg/",
+      "posted_at": "2026-11-09T15:34:53",
+      "app": "tripbee",
+      "locale": "en",
+      "hook": "Open in Maps in one tap",
+      "clip": "tripbee/en",
+      "kind": "clip",
+      "variant": "b",
+      "metrics": {
+        "views": 3,
+        "reach": 2,
+        "likes": 0,
+        "saves": 0,
+        "shares": 0,
+        "replies": 0
+      },
+      "score": 3
+    },
+    {
+      "channel": "instagram",
+      "id": "18104690312047531",
+      "link": "https://www.instagram.com/reel/Dfh_HCODWuC/",
+      "posted_at": "2026-11-09T18:34:45",
+      "app": "onepageppt",
+      "locale": "en",
+      "hook": "Wall of text? Make it one slide",
+      "clip": "onepageppt/en",
+      "kind": "clip",
+      "variant": "a",
+      "metrics": {
+        "views": 11,
+        "reach": 10,
+        "likes": 0,
+        "saves": 0,
+        "shares": 0,
+        "replies": 0
+      },
+      "score": 11
+    },
+    {
+      "channel": "instagram",
+      "id": "17995769241113432",
+      "link": "https://www.instagram.com/reel/DfiaL3EFHIe/",
+      "posted_at": "2026-11-09T22:31:11",
+      "app": "tripbeelite",
+      "locale": "en",
+      "hook": "Every day on one timeline",
+      "clip": "tripbeelite/en",
+      "kind": "clip",
+      "variant": "b",
+      "metrics": {
+        "views": 1,
+        "reach": 1,
+        "likes": 0,
+        "saves": 0,
+        "shares": 0,
+        "replies": 0
+      },
+      "score": 1
+    },
+    {
+      "channel": "instagram",
+      "id": "17940826707392708",
+      "link": "https://www.instagram.com/reel/DfiuskZjNZV/",
+      "posted_at": "2026-11-10T01:30:32",
+      "app": "cyca",
+      "locale": "id",
+      "hook": "Tanpa akun, data tetap di HP-mu",
+      "clip": "cyca/id",
+      "kind": "clip",
+      "variant": "b",
+      "metrics": {
+        "views": 1,
+        "reach": 1,
+        "likes": 0,
+        "saves": 0,
+        "shares": 0,
+        "replies": 0
+      },
+      "score": 1
+    },
+    {
+      "channel": "instagram",
+      "id": "18132791558503052",
+      "link": "https://www.instagram.com/p/DfjJdRtG9RF/",
+      "posted_at": "2026-11-10T05:24:12",
+      "app": "mochi",
+      "locale": "ja",
+      "hook": "",
+      "clip": "utility/checklist/mochi/study-session/ja",
       "kind": "utility",
       "variant": null,
       "metrics": {

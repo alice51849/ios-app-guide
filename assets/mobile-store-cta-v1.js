@@ -13,6 +13,25 @@
     );
   if (!link || !source) return;
 
+  // 安卓訪客：固定鈕改用同頁帶 referrer 的 Google Play 直連（不跳轉、不隱藏 App Store）。
+  if (/Android/.test(navigator.userAgent || "")) {
+    const play = document.querySelector(
+      'main a[href^="https://play.google.com/store/apps/details"][href*="referrer="]'
+    ) || document.querySelector(
+      'a[href^="https://play.google.com/store/apps/details"][href*="referrer="]'
+    );
+    if (play) {
+      link.href = play.href;
+      const label = link.querySelector(".mobile-store-cta__label");
+      if (label) label.textContent = "Google Play";
+      const name = (play.textContent || "").trim();
+      if (name) {
+        link.setAttribute("aria-label", name);
+        link.setAttribute("title", name);
+      }
+    }
+  }
+
   if (!document.getElementById("mobile-store-cta-style")) {
     const style = document.createElement("style");
     style.id = "mobile-store-cta-style";

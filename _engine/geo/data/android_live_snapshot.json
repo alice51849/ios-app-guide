@@ -1,9 +1,9 @@
 {
  "schema": "lumi.android-live-snapshot/v1",
  "source": "AndroidPlay android_live_scan (Play page HTTP 200 + publish LIVE)",
- "source_generated": "2026-11-11T02:13:13+0800",
+ "source_generated": "2026-11-11T11:40:24+0800",
  "count": 59,
- "content_sha256": "96ad2de1cf4728da34d6d9238c9e1090434e71870798922a6f67809385291b02",
+ "content_sha256": "6549f577e93512518ac3176cf592859a3cff9859a24db6b77996e82bf61394ca",
  "apps": {
   "aibriefpack": {
    "ios_app_id": "6791658210",
@@ -1241,6 +1241,11 @@
    "package": "com.alice51849.metrotimehelper.paid",
    "reason": "duplicate_ios_key:metrotimehelper",
    "conflict_with": "56_MetroTimeHelper"
+  },
+  {
+   "folder": "59_Kumo",
+   "package": "com.alice51849.Kumo",
+   "reason": "no_unique_ios_match"
   }
  ],
  "baseline_first_seen": "2026-10-11T14:26:56+0800"

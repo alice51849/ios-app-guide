@@ -109,13 +109,19 @@ if any(
 # link one directly (e.g. the Hong Kong zh-Hant search-reality page links the
 # hk store, the Macau one the mo store; gen_search_reality_g3.EXTRA_STOREFRONTS),
 # so the locale-agnostic validation used by the whole-site normalizer must
-# accept it. Locale-bound
-# validation (expected_locale) and availability checks stay strict: an extra
-# storefront never equals a locale's mapped storefront and is never in the
-# availability snapshot, so those calls still reject it.
-EXTRA_STOREFRONTS = frozenset({"hk", "mo"})
+# accept it. Each extra storefront belongs to exactly one guide locale (the
+# directory its pages live in). Locale-bound validation accepts it only for
+# that locale AND only when the Apple lookup snapshot verifies that exact app
+# in that exact storefront; any other locale, a missing snapshot or an app the
+# snapshot does not list keeps failing closed.
+EXTRA_STOREFRONT_LOCALES = {"hk": "zh-Hant", "mo": "zh-Hant"}
+EXTRA_STOREFRONTS = frozenset(EXTRA_STOREFRONT_LOCALES)
 if EXTRA_STOREFRONTS & set(LOCALE_STOREFRONTS.values()):
     raise RuntimeError("EXTRA_STOREFRONTS must stay outside the locale storefront map")
+if not set(EXTRA_STOREFRONT_LOCALES.values()) <= set(LOCALE_STOREFRONTS):
+    raise RuntimeError("EXTRA_STOREFRONT_LOCALES must name official guide locales")
+# Every storefront the Apple lookup snapshot records availability for.
+AVAILABILITY_STOREFRONTS = frozenset(LOCALE_STOREFRONTS.values()) | EXTRA_STOREFRONTS
 if set(FREE_LABELS) != OFFICIAL_LOCALE_SET:
     raise RuntimeError("Free labels must cover 50 official locales")
 
@@ -214,7 +220,10 @@ def validated_app_store_url(
         or (
             country is not None
             and country not in set(LOCALE_STOREFRONTS.values())
-            and not (expected_locale is None and country in EXTRA_STOREFRONTS)
+            and not (
+                country in EXTRA_STOREFRONTS
+                and expected_locale in (None, EXTRA_STOREFRONT_LOCALES[country])
+            )
         )
         or (
             expected_app_id is not None
@@ -237,7 +246,21 @@ def validated_app_store_url(
             f"App Store storefront mismatch for {expected_locale}: {value!r}"
         )
     if country is not None:
-        if expected_locale is not None and country != LOCALE_STOREFRONTS[expected_locale]:
+        if (
+            expected_locale is not None
+            and country in EXTRA_STOREFRONTS
+            and (
+                availability is None
+                or path.group("app_id") not in availability.get(country, frozenset())
+            )
+        ):
+            # A locale-bound extra storefront is only ever kept on evidence.
+            raise ValueError(f"Unverified App Store storefront: {value!r}")
+        if (
+            expected_locale is not None
+            and country != LOCALE_STOREFRONTS[expected_locale]
+            and country not in EXTRA_STOREFRONTS
+        ):
             raise ValueError(
                 f"App Store storefront mismatch for {expected_locale}: {value!r}"
             )
@@ -514,7 +537,7 @@ def load_storefront_availability(pages_dir) -> dict[str, frozenset[str]]:
             if str(app_id).isdigit()
         )
         for country, app_ids in countries.items()
-        if country in set(LOCALE_STOREFRONTS.values())
+        if country in AVAILABILITY_STOREFRONTS
         and isinstance(app_ids, list)
     }
 

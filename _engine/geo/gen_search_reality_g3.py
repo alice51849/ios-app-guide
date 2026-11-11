@@ -937,7 +937,7 @@ def page_problems(spec: dict, source: str, pages: Path | None = None, batch: fro
         problems.append(f"{relative}: dedicated text {size} under {floor}")
     head = source.split("</head>", 1)[0]
     head_text = re.sub(r"<script\b.*?</script>", "", head, flags=re.S)
-    for found in BANNED.finditer(html.unescape(text + head_text)):
+    for found in spec.get("banned", BANNED).finditer(html.unescape(text + head_text)):  # 頁面可帶自己的禁用字（只能更窄放行）
         problems.append(f"{relative}: banned price/free/pro wording {found.group(0)!r}")
     info = LANGS[spec["lang"]]
     cc = spec.get("cc") or info["cc"]

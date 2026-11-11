@@ -61,11 +61,41 @@ class TripBeeCutePageTests(unittest.TestCase):
         for relative, source in self.pages.items():
             text = html.unescape(re.sub(r"<script\b.*?</script>", "", g3.visible_text(source)
                                         + source.split("</head>", 1)[0], flags=re.S))
-            self.assertIsNone(gen.BANNED.search(text), relative)
+            spec = next(s for s in gen.PAGE_SPECS if g3.page_relative(s) == relative)
+            self.assertIsNone(spec.get("banned", gen.BANNED).search(text), relative)
+            # 照 2026-11-11 文案修正寫 Cute Pass 的兩頁：只放行說明一次性購買所需的字，試用、價格照擋
+            allowed = {"解鎖", "訂閱", "Cute Pass", "內購", "구독", "앱 내 구입"} if spec.get("pass_wording") else set()
             for word in ("解鎖", "試用", "訂閱", "價格", "Cute Pass", "內購", "課金", "体験", "サブスク",
                          "unlock", "trial", "subscription", "in-app purchase",
                          "체험", "구독", "가격", "잠금 해제", "앱 내 구입", "AI 기능", "내장 AI"):
-                self.assertNotIn(word, text, relative)
+                if word not in allowed:
+                    self.assertNotIn(word, text, relative)
+
+    def test_pass_wording_pages_follow_copy_fix_spec(self):
+        self.assertEqual([s["slug"] for s in gen.PAGE_SPECS if s.get("pass_wording")],
+                         ["keai-lvxing-shouzhang-chuguo-xingchengbiao-daoshu-zhhant",
+                          "dakku-yeohaeng-diary-sticker-illust-pyoji"])
+        self.assertIsNotNone(gen.BANNED.search("무료"))
+        self.assertIsNone(gen.PASS_BANNED.search("무료"))
+        for bad in ("免費", "Free", "NT$90", "3,300원"):
+            self.assertIsNotNone(gen.PASS_BANNED.search(bad), bad)
+        tw, ko = gen.PAGE_SPECS[0], gen.PAGE_SPECS[1]
+        self.assertEqual(tw["faqs"][0][0], "下載前想知道：不購買能做什麼？")
+        self.assertEqual(ko["faqs"][0][0], "구매 전에: 무료로 무엇을 할 수 있나요?")
+        self.assertIn("不是訂閱", tw["faqs"][0][1])
+        self.assertIn("구독이 아니에요", ko["faqs"][0][1])
+        self.assertIn("跨年、寒假、春節出國怎麼排", [s[0] for s in tw["sections"]])
+        self.assertEqual(len(ko["sections"]), 3)
+        for spec, words in ((tw, ("自己的照片當封面", "智慧行李清單", "iCloud 同步與備份", "和朋友一起規劃")),
+                            (ko, ("내 사진 표지", "스마트 준비물 리스트", "iCloud 동기화와 백업", "친구와 함께 계획하기"))):
+            source = self.pages[g3.page_relative(spec)]
+            text = g3.visible_text(source)
+            self.assertIn("Cute Pass", text)
+            for word in words:
+                self.assertIn(word, spec["faqs"][0][1])
+            for word in ("免費試用", "57 款", "57종", "分帳", "정산"):
+                self.assertNotIn(word, text)
+            self.assertIn("id6826987407", source)
 
     def test_hong_kong_page_uses_hk_storefront_and_own_slug(self):
         hk = gen.PAGE_SPECS[2]

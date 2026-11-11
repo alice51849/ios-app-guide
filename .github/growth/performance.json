@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T07:04:45Z",
+  "updated_at": "2026-11-11T05:57:05Z",
   "note": "Insights of our own IG / Threads posts by .github/scripts/post_performance.py. score = views + 3*likes + 5*replies + 8*(saves+shares+reposts). boost = best apps, read by 00_GrowthEngine shorts/scripts/schedule_posts.py.",
   "sources": {
     "instagram": "ok: 37 posts",
@@ -8,16 +8,16 @@
   "boost": [
     "cvdesk",
     "mochi_suneung",
-    "wifiaidlite",
     "gmoney",
-    "cyca"
+    "wifiaidlite",
+    "duowallpaperstudio"
   ],
   "demote": [
-    "lumimission",
     "moneytag",
     "mochidonestamp",
     "wordmatelite",
-    "aibriefpack"
+    "aibriefpack",
+    "easyam"
   ],
   "hook_winners": {
     "apps": {
@@ -39,8 +39,8 @@
     "channels": {
       "instagram": {
         "posts": 14,
-        "median_views": 5.0,
-        "keep_slot": 1,
+        "median_views": 8.5,
+        "keep_slot": 9,
         "daily": 2
       },
       "threads": {
@@ -67,22 +67,22 @@
       },
       "en": {
         "hour": 18,
-        "avg_views": 19.5,
-        "posts": 21,
+        "avg_views": 17.7,
+        "posts": 24,
         "hours": {
           "5": 0.0,
-          "15": 2.0,
-          "18": 19.5,
+          "15": 5.5,
+          "18": 17.7,
           "19": 0.0,
-          "22": 0.5
+          "22": 8.0
         }
       },
       "ja": {
         "hour": 1,
-        "avg_views": 44.8,
-        "posts": 12,
+        "avg_views": 45.5,
+        "posts": 13,
         "hours": {
-          "1": 44.8,
+          "1": 45.5,
           "5": 6.2
         }
       },
@@ -147,14 +147,6 @@
         "avg_score": 165.0
       },
       {
-        "key": "wifiaidlite",
-        "posts": 3,
-        "views": 293,
-        "engagement": 0,
-        "score": 293,
-        "avg_score": 97.7
-      },
-      {
         "key": "gmoney",
         "posts": 3,
         "views": 272,
@@ -163,20 +155,20 @@
         "avg_score": 95.0
       },
       {
-        "key": "cyca",
-        "posts": 2,
-        "views": 86,
+        "key": "wifiaidlite",
+        "posts": 4,
+        "views": 314,
         "engagement": 0,
-        "score": 86,
-        "avg_score": 43.0
+        "score": 314,
+        "avg_score": 78.5
       },
       {
         "key": "duowallpaperstudio",
         "posts": 2,
-        "views": 80,
+        "views": 84,
         "engagement": 2,
-        "score": 86,
-        "avg_score": 43.0
+        "score": 90,
+        "avg_score": 45.0
       },
       {
         "key": "onepageppt",
@@ -195,12 +187,20 @@
         "avg_score": 40.0
       },
       {
+        "key": "gmoneylite",
+        "posts": 2,
+        "views": 74,
+        "engagement": 1,
+        "score": 79,
+        "avg_score": 39.5
+      },
+      {
         "key": "battai",
         "posts": 4,
-        "views": 146,
+        "views": 147,
         "engagement": 1,
-        "score": 151,
-        "avg_score": 37.8
+        "score": 152,
+        "avg_score": 38.0
       },
       {
         "key": "claudeusagemini",
@@ -209,6 +209,14 @@
         "engagement": 2,
         "score": 226,
         "avg_score": 32.3
+      },
+      {
+        "key": "cyca",
+        "posts": 3,
+        "views": 93,
+        "engagement": 0,
+        "score": 93,
+        "avg_score": 31.0
       },
       {
         "key": "lumiweather",
@@ -257,6 +265,14 @@
         "engagement": 2,
         "score": 77,
         "avg_score": 19.2
+      },
+      {
+        "key": "lumimission",
+        "posts": 3,
+        "views": 46,
+        "engagement": 0,
+        "score": 46,
+        "avg_score": 15.3
       },
       {
         "key": "lumibopomofo",
@@ -315,14 +331,6 @@
         "avg_score": 10.7
       },
       {
-        "key": "gmoneylite",
-        "posts": 1,
-        "views": 4,
-        "engagement": 1,
-        "score": 9,
-        "avg_score": 9.0
-      },
-      {
         "key": "qrcodehalo",
         "posts": 1,
         "views": 3,
@@ -347,6 +355,30 @@
         "avg_score": 7.0
       },
       {
+        "key": "claudeusagemini_b",
+        "posts": 1,
+        "views": 7,
+        "engagement": 0,
+        "score": 7,
+        "avg_score": 7.0
+      },
+      {
+        "key": "maskmyfile",
+        "posts": 5,
+        "views": 25,
+        "engagement": 1,
+        "score": 30,
+        "avg_score": 6.0
+      },
+      {
+        "key": "tripbee",
+        "posts": 3,
+        "views": 18,
+        "engagement": 0,
+        "score": 18,
+        "avg_score": 6.0
+      },
+      {
         "key": "shotinbox",
         "posts": 1,
         "views": 6,
@@ -361,14 +393,6 @@
         "engagement": 0,
         "score": 11,
         "avg_score": 5.5
-      },
-      {
-        "key": "maskmyfile",
-        "posts": 4,
-        "views": 15,
-        "engagement": 1,
-        "score": 20,
-        "avg_score": 5.0
       },
       {
         "key": "scanto",
@@ -387,14 +411,6 @@
         "avg_score": 5.0
       },
       {
-        "key": "tripbee",
-        "posts": 3,
-        "views": 11,
-        "engagement": 0,
-        "score": 11,
-        "avg_score": 3.7
-      },
-      {
         "key": "caldaily",
         "posts": 2,
         "views": 7,
@@ -408,6 +424,14 @@
         "views": 6,
         "engagement": 0,
         "score": 6,
+        "avg_score": 3.0
+      },
+      {
+        "key": "tripbeelite",
+        "posts": 1,
+        "views": 3,
+        "engagement": 0,
+        "score": 3,
         "avg_score": 3.0
       },
       {
@@ -425,14 +449,6 @@
         "engagement": 0,
         "score": 3,
         "avg_score": 1.5
-      },
-      {
-        "key": "tripbeelite",
-        "posts": 1,
-        "views": 1,
-        "engagement": 0,
-        "score": 1,
-        "avg_score": 1.0
       },
       {
         "key": "ledmovingtext",
@@ -467,14 +483,6 @@
         "avg_score": 0.0
       },
       {
-        "key": "lumimission",
-        "posts": 2,
-        "views": 0,
-        "engagement": 0,
-        "score": 0,
-        "avg_score": 0.0
-      },
-      {
         "key": "moneytag",
         "posts": 2,
         "views": 0,
@@ -492,7 +500,7 @@
       },
       {
         "key": "wordmatelite",
-        "posts": 1,
+        "posts": 2,
         "views": 0,
         "engagement": 0,
         "score": 0,
@@ -505,16 +513,24 @@
         "engagement": 0,
         "score": 0,
         "avg_score": 0.0
+      },
+      {
+        "key": "easyam",
+        "posts": 1,
+        "views": 0,
+        "engagement": 0,
+        "score": 0,
+        "avg_score": 0.0
       }
     ],
     "locales": [
       {
         "key": "ko",
-        "posts": 6,
-        "views": 601,
+        "posts": 7,
+        "views": 671,
         "engagement": 1,
-        "score": 606,
-        "avg_score": 101.0
+        "score": 676,
+        "avg_score": 96.6
       },
       {
         "key": "zh-Hant",
@@ -525,20 +541,28 @@
         "avg_score": 30.0
       },
       {
+        "key": "el",
+        "posts": 2,
+        "views": 56,
+        "engagement": 0,
+        "score": 56,
+        "avg_score": 28.0
+      },
+      {
         "key": "ja",
-        "posts": 13,
-        "views": 344,
+        "posts": 14,
+        "views": 348,
         "engagement": 3,
-        "score": 355,
-        "avg_score": 27.3
+        "score": 359,
+        "avg_score": 25.6
       },
       {
         "key": "en",
-        "posts": 39,
-        "views": 353,
+        "posts": 42,
+        "views": 391,
         "engagement": 11,
-        "score": 406,
-        "avg_score": 10.4
+        "score": 444,
+        "avg_score": 10.6
       },
       {
         "key": "de",
@@ -565,12 +589,20 @@
         "avg_score": 6.5
       },
       {
+        "key": "vi",
+        "posts": 1,
+        "views": 5,
+        "engagement": 0,
+        "score": 5,
+        "avg_score": 5.0
+      },
+      {
         "key": "id",
         "posts": 1,
-        "views": 1,
+        "views": 3,
         "engagement": 0,
-        "score": 1,
-        "avg_score": 1.0
+        "score": 3,
+        "avg_score": 3.0
       }
     ],
     "hooks": [
@@ -655,6 +687,16 @@
         "avg_score": 110.0
       },
       {
+        "app": "duowallpaperstudio",
+        "locale": "ja",
+        "hook": "開けば 全景",
+        "posts": 1,
+        "views": 82,
+        "engagement": 2,
+        "score": 88,
+        "avg_score": 88.0
+      },
+      {
         "app": "cyca",
         "locale": "ko",
         "hook": "오늘의 바디 예보",
@@ -663,16 +705,6 @@
         "engagement": 0,
         "score": 85,
         "avg_score": 85.0
-      },
-      {
-        "app": "duowallpaperstudio",
-        "locale": "ja",
-        "hook": "開けば 全景",
-        "posts": 1,
-        "views": 78,
-        "engagement": 2,
-        "score": 84,
-        "avg_score": 84.0
       },
       {
         "app": "unblurry",
@@ -695,6 +727,16 @@
         "avg_score": 71.0
       },
       {
+        "app": "gmoneylite",
+        "locale": "ko",
+        "hook": "오늘 남은 돈 바로 확인",
+        "posts": 1,
+        "views": 69,
+        "engagement": 0,
+        "score": 69,
+        "avg_score": 69.0
+      },
+      {
         "app": "lumibopomofo",
         "locale": "ko",
         "hook": "소리를 듣고 알맞은 기호 고르기",
@@ -703,6 +745,16 @@
         "engagement": 0,
         "score": 64,
         "avg_score": 64.0
+      },
+      {
+        "app": "lumimission",
+        "locale": "el",
+        "hook": "Μαζέψτε αυτοκόλλητα επιβράβευσης",
+        "posts": 1,
+        "views": 46,
+        "engagement": 0,
+        "score": 46,
+        "avg_score": 46.0
       },
       {
         "app": "mochi_halloween",
@@ -845,6 +897,16 @@
         "avg_score": 22.0
       },
       {
+        "app": "wifiaidlite",
+        "locale": "en",
+        "hook": "Plus what to do next",
+        "posts": 1,
+        "views": 21,
+        "engagement": 0,
+        "score": 21,
+        "avg_score": 21.0
+      },
+      {
         "app": "countdaysnow",
         "locale": "en",
         "hook": "Plan backwards from the dates that matter.",
@@ -865,6 +927,16 @@
         "avg_score": 17.0
       },
       {
+        "app": "battai",
+        "locale": "ko",
+        "hook": "저는 혼자 앱을 만드는 개발자입니다. 요즘 '배터리가 하루를 못 버티는데 기변할까, 배터리만 바꿀까' 고민하",
+        "posts": 1,
+        "views": 12,
+        "engagement": 1,
+        "score": 17,
+        "avg_score": 17.0
+      },
+      {
         "app": "onepageppt",
         "locale": "ja",
         "hook": "簡報製作・筆記截圖秒變投影片。",
@@ -881,16 +953,6 @@
         "posts": 1,
         "views": 16,
         "engagement": 0,
-        "score": 16,
-        "avg_score": 16.0
-      },
-      {
-        "app": "battai",
-        "locale": "ko",
-        "hook": "저는 혼자 앱을 만드는 개발자입니다. 요즘 '배터리가 하루를 못 버티는데 기변할까, 배터리만 바꿀까' 고민하",
-        "posts": 1,
-        "views": 11,
-        "engagement": 1,
         "score": 16,
         "avg_score": 16.0
       },
@@ -1015,9 +1077,39 @@
         "avg_score": 10.0
       },
       {
+        "app": "tripbee",
+        "locale": "en",
+        "hook": "Open in Maps in one tap",
+        "posts": 1,
+        "views": 10,
+        "engagement": 0,
+        "score": 10,
+        "avg_score": 10.0
+      },
+      {
+        "app": "maskmyfile",
+        "locale": "el",
+        "hook": "Όλα στη συσκευή σας",
+        "posts": 1,
+        "views": 10,
+        "engagement": 0,
+        "score": 10,
+        "avg_score": 10.0
+      },
+      {
         "app": "mochi",
         "locale": "en",
         "hook": "Right on your Home Screen",
+        "posts": 1,
+        "views": 5,
+        "engagement": 1,
+        "score": 10,
+        "avg_score": 10.0
+      },
+      {
+        "app": "gmoneylite",
+        "locale": "en",
+        "hook": "Travel Budget & Currency.",
         "posts": 1,
         "views": 5,
         "engagement": 1,
@@ -1031,16 +1123,6 @@
         "posts": 1,
         "views": 9,
         "engagement": 0,
-        "score": 9,
-        "avg_score": 9.0
-      },
-      {
-        "app": "gmoneylite",
-        "locale": "en",
-        "hook": "Travel Budget & Currency.",
-        "posts": 1,
-        "views": 4,
-        "engagement": 1,
         "score": 9,
         "avg_score": 9.0
       },
@@ -1145,6 +1227,16 @@
         "avg_score": 7.0
       },
       {
+        "app": "claudeusagemini_b",
+        "locale": "en",
+        "hook": "Now you know when it resets",
+        "posts": 1,
+        "views": 7,
+        "engagement": 0,
+        "score": 7,
+        "avg_score": 7.0
+      },
+      {
         "app": "maskmyfile",
         "locale": "cs",
         "hook": "Něco chybí? Přidejte to",
@@ -1178,6 +1270,16 @@
         "app": "scanto",
         "locale": "en",
         "hook": "A document scanner that keeps everything on your device — ev",
+        "posts": 1,
+        "views": 5,
+        "engagement": 0,
+        "score": 5,
+        "avg_score": 5.0
+      },
+      {
+        "app": "cyca",
+        "locale": "vi",
+        "hook": "Dự báo cơ thể mỗi ngày",
         "posts": 1,
         "views": 5,
         "engagement": 0,
@@ -1255,9 +1357,19 @@
         "avg_score": 3.0
       },
       {
-        "app": "tripbee",
+        "app": "tripbeelite",
         "locale": "en",
-        "hook": "Open in Maps in one tap",
+        "hook": "Every day on one timeline",
+        "posts": 1,
+        "views": 3,
+        "engagement": 0,
+        "score": 3,
+        "avg_score": 3.0
+      },
+      {
+        "app": "cyca",
+        "locale": "id",
+        "hook": "Tanpa akun, data tetap di HP-mu",
         "posts": 1,
         "views": 3,
         "engagement": 0,
@@ -1318,26 +1430,6 @@
         "app": "mochi",
         "locale": "zh-Hant",
         "hook": "待辦清單 也可以這麼可愛",
-        "posts": 1,
-        "views": 1,
-        "engagement": 0,
-        "score": 1,
-        "avg_score": 1.0
-      },
-      {
-        "app": "tripbeelite",
-        "locale": "en",
-        "hook": "Every day on one timeline",
-        "posts": 1,
-        "views": 1,
-        "engagement": 0,
-        "score": 1,
-        "avg_score": 1.0
-      },
-      {
-        "app": "cyca",
-        "locale": "id",
-        "hook": "Tanpa akun, data tetap di HP-mu",
         "posts": 1,
         "views": 1,
         "engagement": 0,
@@ -1623,32 +1715,52 @@
         "engagement": 0,
         "score": 0,
         "avg_score": 0.0
+      },
+      {
+        "app": "easyam",
+        "locale": "ja",
+        "hook": "祝日の朝は 目覚まし鳴らない",
+        "posts": 1,
+        "views": 0,
+        "engagement": 0,
+        "score": 0,
+        "avg_score": 0.0
+      },
+      {
+        "app": "wordmatelite",
+        "locale": "en",
+        "hook": "",
+        "posts": 1,
+        "views": 0,
+        "engagement": 0,
+        "score": 0,
+        "avg_score": 0.0
       }
     ],
     "variants": [
       {
         "key": "c",
-        "posts": 17,
-        "views": 483,
+        "posts": 23,
+        "views": 641,
         "engagement": 4,
-        "score": 503,
-        "avg_score": 29.6
+        "score": 661,
+        "avg_score": 28.7
       },
       {
         "key": "b",
         "posts": 26,
-        "views": 666,
+        "views": 681,
         "engagement": 7,
-        "score": 693,
-        "avg_score": 26.7
+        "score": 708,
+        "avg_score": 27.2
       },
       {
         "key": "a",
-        "posts": 19,
+        "posts": 20,
         "views": 232,
         "engagement": 1,
         "score": 235,
-        "avg_score": 12.4
+        "avg_score": 11.8
       }
     ]
   },
@@ -3104,12 +3216,12 @@
       "kind": "image",
       "variant": null,
       "metrics": {
-        "views": 11,
+        "views": 12,
         "likes": 0,
         "replies": 1,
         "reposts": 0
       },
-      "score": 16
+      "score": 17
     },
     {
       "channel": "instagram",
@@ -3581,14 +3693,14 @@
       "kind": "clip",
       "variant": "b",
       "metrics": {
-        "views": 78,
+        "views": 82,
         "reach": 73,
         "likes": 2,
         "saves": 0,
         "shares": 0,
         "replies": 0
       },
-      "score": 84
+      "score": 88
     },
     {
       "channel": "instagram",
@@ -3762,12 +3874,12 @@
       "kind": "image",
       "variant": null,
       "metrics": {
-        "views": 4,
+        "views": 5,
         "likes": 0,
         "replies": 1,
         "reposts": 0
       },
-      "score": 9
+      "score": 10
     },
     {
       "channel": "instagram",
@@ -3844,14 +3956,14 @@
       "kind": "clip",
       "variant": "b",
       "metrics": {
-        "views": 3,
-        "reach": 2,
+        "views": 10,
+        "reach": 9,
         "likes": 0,
         "saves": 0,
         "shares": 0,
         "replies": 0
       },
-      "score": 3
+      "score": 10
     },
     {
       "channel": "instagram",
@@ -3866,7 +3978,7 @@
       "variant": "a",
       "metrics": {
         "views": 11,
-        "reach": 10,
+        "reach": 11,
         "likes": 0,
         "saves": 0,
         "shares": 0,
@@ -3886,14 +3998,14 @@
       "kind": "clip",
       "variant": "b",
       "metrics": {
-        "views": 1,
-        "reach": 1,
+        "views": 3,
+        "reach": 3,
         "likes": 0,
         "saves": 0,
         "shares": 0,
         "replies": 0
       },
-      "score": 1
+      "score": 3
     },
     {
       "channel": "instagram",
@@ -3907,14 +4019,14 @@
       "kind": "clip",
       "variant": "b",
       "metrics": {
-        "views": 1,
-        "reach": 1,
+        "views": 3,
+        "reach": 2,
         "likes": 0,
         "saves": 0,
         "shares": 0,
         "replies": 0
       },
-      "score": 1
+      "score": 3
     },
     {
       "channel": "instagram",
@@ -3925,6 +4037,174 @@
       "locale": "ja",
       "hook": "",
       "clip": "utility/checklist/mochi/study-session/ja",
+      "kind": "utility",
+      "variant": null,
+      "metrics": {
+        "views": 0,
+        "reach": 0,
+        "likes": 0,
+        "saves": 0,
+        "shares": 0,
+        "replies": 0
+      },
+      "score": 0
+    },
+    {
+      "channel": "instagram",
+      "id": "17873784429648108",
+      "link": "https://www.instagram.com/p/DfjYOClkW8u/",
+      "posted_at": "2026-11-10T07:33:01",
+      "app": "easyam",
+      "locale": "ja",
+      "hook": "祝日の朝は 目覚まし鳴らない",
+      "clip": "easyam/ja",
+      "kind": "clip",
+      "variant": "a",
+      "metrics": {
+        "views": 0,
+        "reach": 0,
+        "likes": 0,
+        "saves": 0,
+        "shares": 0,
+        "replies": 0
+      },
+      "score": 0
+    },
+    {
+      "channel": "instagram",
+      "id": "18132045706801670",
+      "link": "https://www.instagram.com/reel/DfjmLRcjo8b/",
+      "posted_at": "2026-11-10T09:35:19",
+      "app": "lumimission",
+      "locale": "el",
+      "hook": "Μαζέψτε αυτοκόλλητα επιβράβευσης",
+      "clip": "lumimission/el",
+      "kind": "clip",
+      "variant": "c",
+      "metrics": {
+        "views": 46,
+        "reach": 37,
+        "likes": 0,
+        "saves": 0,
+        "shares": 0,
+        "replies": 0
+      },
+      "score": 46
+    },
+    {
+      "channel": "instagram",
+      "id": "18083591696354976",
+      "link": "https://www.instagram.com/reel/Dfj6QqUgOQB/",
+      "posted_at": "2026-11-10T12:30:52",
+      "app": "gmoneylite",
+      "locale": "ko",
+      "hook": "오늘 남은 돈 바로 확인",
+      "clip": "gmoneylite/ko",
+      "kind": "clip",
+      "variant": "c",
+      "metrics": {
+        "views": 69,
+        "reach": 62,
+        "likes": 0,
+        "saves": 0,
+        "shares": 0,
+        "replies": 0
+      },
+      "score": 69
+    },
+    {
+      "channel": "instagram",
+      "id": "18173428225461706",
+      "link": "https://www.instagram.com/reel/DfkPCULDNF0/",
+      "posted_at": "2026-11-10T15:32:21",
+      "app": "maskmyfile",
+      "locale": "el",
+      "hook": "Όλα στη συσκευή σας",
+      "clip": "maskmyfile/el",
+      "kind": "clip",
+      "variant": "c",
+      "metrics": {
+        "views": 10,
+        "reach": 8,
+        "likes": 0,
+        "saves": 0,
+        "shares": 0,
+        "replies": 0
+      },
+      "score": 10
+    },
+    {
+      "channel": "instagram",
+      "id": "17907413571350582",
+      "link": "https://www.instagram.com/reel/DfkjZObkxSn/",
+      "posted_at": "2026-11-10T18:30:15",
+      "app": "claudeusagemini_b",
+      "locale": "en",
+      "hook": "Now you know when it resets",
+      "clip": "claudeusagemini_b/en",
+      "kind": "clip",
+      "variant": "c",
+      "metrics": {
+        "views": 7,
+        "reach": 7,
+        "likes": 0,
+        "saves": 0,
+        "shares": 0,
+        "replies": 0
+      },
+      "score": 7
+    },
+    {
+      "channel": "instagram",
+      "id": "17958385368294528",
+      "link": "https://www.instagram.com/reel/Dfk_Qz0AHF9/",
+      "posted_at": "2026-11-10T22:33:39",
+      "app": "wifiaidlite",
+      "locale": "en",
+      "hook": "Plus what to do next",
+      "clip": "wifiaidlite/en",
+      "kind": "clip",
+      "variant": "c",
+      "metrics": {
+        "views": 21,
+        "reach": 19,
+        "likes": 0,
+        "saves": 0,
+        "shares": 0,
+        "replies": 0
+      },
+      "score": 21
+    },
+    {
+      "channel": "instagram",
+      "id": "18130724308873953",
+      "link": "https://www.instagram.com/reel/DflTnhlAUcH/",
+      "posted_at": "2026-11-11T01:31:34",
+      "app": "cyca",
+      "locale": "vi",
+      "hook": "Dự báo cơ thể mỗi ngày",
+      "clip": "cyca/vi",
+      "kind": "clip",
+      "variant": "c",
+      "metrics": {
+        "views": 5,
+        "reach": 5,
+        "likes": 0,
+        "saves": 0,
+        "shares": 0,
+        "replies": 0
+      },
+      "score": 5
+    },
+    {
+      "channel": "instagram",
+      "id": "18397054975201507",
+      "link": "https://www.instagram.com/p/Dflt4lHFDTT/",
+      "posted_at": "2026-11-11T05:20:58",
+      "app": "wordmatelite",
+      "locale": "en",
+      "hook": "",
+      "clip": "utility/word/wordmatelite/postpone/en",
       "kind": "utility",
       "variant": null,
       "metrics": {

@@ -276,6 +276,25 @@
                 "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
                 "reason": "MARKET_APP_NOT_SOLD",
                 "evidence": {
+                  "source_url": "https://itunes.apple.com/lookup?id=6791658210,6778748533,6778269699,6776958488,6787193643,6775773117&country=cn&entity=software",
+                  "observed_at": "2026-11-11",
+                  "country": "CN",
+                  "lookup_app_results": 0,
+                  "lookup_control_app_id": "6791658210",
+                  "lookup_control_results": 1,
+                  "response_sha256": "b7b0e4b47a45c55db79c96a129e9f4b38b99b1214afde2078f894f4c41a9fb3f",
+                  "app_store_id": "6775773117"
+                },
+                "value": "N/A",
+                "content_retained": true,
+                "publishable": false,
+                "facts_allowed": false,
+                "outbox_count": 0
+              },
+              {
+                "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+                "reason": "MARKET_APP_NOT_SOLD",
+                "evidence": {
                   "source_url": "https://itunes.apple.com/lookup?id=6791658210,6778748533,6778269699,6776958488,6787193643&country=cn&entity=software",
                   "observed_at": "2026-09-12",
                   "country": "CN",
@@ -362,6 +381,7 @@
                     },
                     "id": {
                       "enum": [
+                        "https://apps.apple.com/app/id6775773117",
                         "https://apps.apple.com/app/id6776958488",
                         "https://apps.apple.com/app/id6778269699",
                         "https://apps.apple.com/app/id6778748533",

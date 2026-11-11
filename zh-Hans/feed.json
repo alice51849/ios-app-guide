@@ -1,6 +1,6 @@
 {
   "_owned_feed": {
-    "date_modified": "2026-11-05T21:32:02Z",
+    "date_modified": "2026-11-11T02:00:36Z",
     "notification_eligible": true,
     "schema": "lumi.owned-app-feeds/v2"
   },
@@ -545,21 +545,39 @@
     {
       "_owned_app": {
         "app_key": "lumibopomofopro",
-        "app_store_cta_label": "在App Store查看",
         "app_store_id": "6775773117",
-        "content_digest": "28a03b3ec6b7a891374171b4da44782b6beb083d2718309c32ac0175b6a964c5",
+        "availability_note": "Apple 中国大陆商店的公开查询未返回此 App，暂时无法确认可下载状态。这里保留产品介绍，不提供跨区下载链接。",
+        "content_digest": "849bbefaa01b83c55eb5ae2776c998eaade70207b9bb14251dbaa6674d0b3056",
         "independent_ranking": false,
+        "market_availability": {
+          "content_retained": true,
+          "evidence": {
+            "app_store_id": "6775773117",
+            "country": "CN",
+            "lookup_app_results": 0,
+            "lookup_control_app_id": "6791658210",
+            "lookup_control_results": 1,
+            "observed_at": "2026-11-11",
+            "response_sha256": "b7b0e4b47a45c55db79c96a129e9f4b38b99b1214afde2078f894f4c41a9fb3f",
+            "source_url": "https://itunes.apple.com/lookup?id=6791658210,6778748533,6778269699,6776958488,6787193643,6775773117&country=cn&entity=software"
+          },
+          "facts_allowed": false,
+          "outbox_count": 0,
+          "publishable": false,
+          "reason": "MARKET_APP_NOT_SOLD",
+          "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+          "value": "N/A"
+        },
         "one_time_option": true,
         "publisher_disclosure": "这是由 Lumi Studio 发布的第一方资料；Lumi Studio 是每款列出 App 的开发者。",
         "purchase_label": "付费下载",
         "purchase_model": "paid_upfront",
         "source_locale": "zh-Hans"
       },
-      "content_html": "<p>让孩子爱上注音，从一场可爱的星球冒险开始。</p><p>付费下载</p><p><a href=\"https://apps.apple.com/cn/app/id6775773117?pt=118326163&amp;ct=geo_pick&amp;mt=8\">在App Store查看</a></p><p>这是由 Lumi Studio 发布的第一方资料；Lumi Studio 是每款列出 App 的开发者。</p>",
-      "content_text": "让孩子爱上注音，从一场可爱的星球冒险开始。\n\n付费下载\n\n在App Store查看: https://apps.apple.com/cn/app/id6775773117?pt=118326163&ct=geo_pick&mt=8\n\n这是由 Lumi Studio 发布的第一方资料；Lumi Studio 是每款列出 App 的开发者。",
-      "date_modified": "2026-11-05T21:32:02Z",
+      "content_html": "<p>让孩子爱上注音，从一场可爱的星球冒险开始。</p><p>付费下载</p><p>Apple 中国大陆商店的公开查询未返回此 App，暂时无法确认可下载状态。这里保留产品介绍，不提供跨区下载链接。</p><p>这是由 Lumi Studio 发布的第一方资料；Lumi Studio 是每款列出 App 的开发者。</p>",
+      "content_text": "让孩子爱上注音，从一场可爱的星球冒险开始。\n\n付费下载\n\nApple 中国大陆商店的公开查询未返回此 App，暂时无法确认可下载状态。这里保留产品介绍，不提供跨区下载链接。\n\n这是由 Lumi Studio 发布的第一方资料；Lumi Studio 是每款列出 App 的开发者。",
+      "date_modified": "2026-11-11T02:00:36Z",
       "date_published": "2026-09-12T04:40:18Z",
-      "external_url": "https://apps.apple.com/cn/app/id6775773117?pt=118326163&ct=geo_pick&mt=8",
       "id": "urn:lumi:app-store:6775773117:locale:zh-Hans",
       "language": "zh-Hans",
       "summary": "让孩子爱上注音，从一场可爱的星球冒险开始。",

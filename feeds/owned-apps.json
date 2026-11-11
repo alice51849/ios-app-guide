@@ -2162,7 +2162,7 @@
       "record_count": 59
     },
     "zh-Hans": {
-      "date_modified": "2026-11-05T21:32:02Z",
+      "date_modified": "2026-11-11T02:00:36Z",
       "formats": {
         "atom": {
           "accepted_content_types": [
@@ -2172,7 +2172,7 @@
           ],
           "content_type": "application/atom+xml",
           "path": "zh-Hans/feed.xml",
-          "sha256": "ef952cc66ef71449d56078281bb6d4531ac507bbc91b5302ec33f0b05c9a4605",
+          "sha256": "c3dd9e6e02ec77b03f00c9b248beeeac5724149292ab31b0bbbfe2412ec2e691",
           "url": "https://open.cait518.cc/ios-app-guide/zh-Hans/feed.xml"
         },
         "json_feed": {
@@ -2182,7 +2182,7 @@
           ],
           "content_type": "application/feed+json",
           "path": "zh-Hans/feed.json",
-          "sha256": "9b951c0e0543b6262f848db4c4c90aa1dd24f104c62dd6d39ef9313a542646a0",
+          "sha256": "9daae08f44f34aa3936a411f4c354a3f02f4aa1ee960f2878800aec51a1a78f6",
           "url": "https://open.cait518.cc/ios-app-guide/zh-Hans/feed.json"
         },
         "rss": {
@@ -2193,7 +2193,7 @@
           ],
           "content_type": "application/rss+xml",
           "path": "zh-Hans/rss.xml",
-          "sha256": "82025ecfba84a325e94b1956297b49affe0a138b3e8c7f8f634bda3dedc0d5dc",
+          "sha256": "dde7e847364eed945598416cf8a87163ecc3c894dee2e972dfc8cf2d23a5fffa",
           "url": "https://open.cait518.cc/ios-app-guide/zh-Hans/rss.xml"
         }
       },
@@ -2242,7 +2242,7 @@
       "record_count": 59
     }
   },
-  "generation_digest": "4087f0fa3468ad7976277301172fb671c7e5201a6f19c7c9be4dfcd3477a4150",
+  "generation_digest": "871534ef32bf9284a538a134b4169d37e05d91f7953515ccbeb0eb76a12551f9",
   "locale_count": 50,
   "notification_feed_count": 147,
   "purchase_models": {
@@ -2252,9 +2252,9 @@
   "record_count": 2950,
   "schema": "lumi.owned-app-feeds/v2",
   "site": "https://open.cait518.cc/ios-app-guide",
-  "sitemap_sha256": "311dc77ad3e27bbbe7c57669e51bcfef0870197a2592fc95a0190a37ba1d04eb",
+  "sitemap_sha256": "eb9e00053c5fe9db0283c2d60bb8eedc8062193094f1b6e0ea91d076901e7c9d",
   "source": {
-    "catalog_content_digest": "c4a02c10685666d44cdbf9e671cb5ab756215ae7704b60749e5ca130d07a665e",
+    "catalog_content_digest": "dbb9b38a59afbe268df7011425f71093d9f9ab4c8ecd9710793f76cc977f85f8",
     "roster_digest": "3024900a207bf5c6e7b0dcbb8099cc4bac2ec8ca00c1349f4a1fd4b5c57fcf26",
     "source_files": {
       "../social/videogen/registry.py": "fa574d5e16655040f5d61ddf0ffc8b95e5d578b4fc6a5d66f2bc092159813b66",
@@ -2268,7 +2268,7 @@
       "indexnow_submit.py": "7093732431554588484d89c90679931d340cb29dcc8ea5e87c8d76aa9fbd54ef",
       "live_app_manifest.json": "686c5af41ddb19659bd9b2009768b61ad66d7112fcf54580b2d1afaee634bddd",
       "locale_storefronts.json": "1b9d27a304b0b2031fbdbb26e816e0bc416d0a8df8d9cf5a1593d72fdaaab5de",
-      "market_availability.py": "e165cb3db1ef397ce5e594e23760e63ff54538742e9a9529862ed03008b12182",
+      "market_availability.py": "e4ad7d8db822b2809ea3adb4e9698ded3506931486388cedb7f33cbafd386b0c",
       "notification_policy.json": "25ca6e5de0c561b369589892426bbbc396d0a54ddf7f24a3def9b3a21852bd0c",
       "notification_release.py": "9515cfb8acbf24fd60e1bc676ad6b0b7eaf57e90eb28cb510962155351c6ce83",
       "notify_rsscloud.py": "38a644424c666ca9aaf10b9b6dffdb9800829fa6adc8cb3295522c5adc8b599c",

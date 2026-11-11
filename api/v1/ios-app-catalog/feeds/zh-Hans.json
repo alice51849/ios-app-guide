@@ -12,8 +12,8 @@
   ],
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
-    "dateModified": "2026-11-07",
-    "contentDigest": "c4a02c10685666d44cdbf9e671cb5ab756215ae7704b60749e5ca130d07a665e",
+    "dateModified": "2026-11-11",
+    "contentDigest": "dbb9b38a59afbe268df7011425f71093d9f9ab4c8ecd9710793f76cc977f85f8",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
     "recordCount": 59
@@ -798,11 +798,10 @@
       "date_modified": "2026-10-17T16:15:13Z"
     },
     {
-      "id": "https://apps.apple.com/app/id6775773117",
+      "id": "urn:apple:app:id6775773117",
       "url": "https://open.cait518.cc/ios-app-guide/zh-Hans/lumibopomofopro.html",
-      "external_url": "https://apps.apple.com/cn/app/id6775773117?pt=118326163&ct=geo_pick&mt=8",
       "title": "Lumi Bopomofo Pro: Zhuyin",
-      "content_text": "让孩子爱上注音，从一场可爱的星球冒险开始。",
+      "content_text": "让孩子爱上注音，从一场可爱的星球冒险开始。 Apple 中国大陆商店的公开查询未返回此 App，暂时无法确认可下载状态。这里保留产品介绍，不提供跨区下载链接。",
       "tags": [
         "繁体",
         "国语",
@@ -836,7 +835,26 @@
         "轻声"
       ],
       "language": "zh-Hans",
-      "date_modified": "2026-11-05T21:32:02Z"
+      "_market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_APP_NOT_SOLD",
+        "evidence": {
+          "source_url": "https://itunes.apple.com/lookup?id=6791658210,6778748533,6778269699,6776958488,6787193643,6775773117&country=cn&entity=software",
+          "observed_at": "2026-11-11",
+          "country": "CN",
+          "lookup_app_results": 0,
+          "lookup_control_app_id": "6791658210",
+          "lookup_control_results": 1,
+          "response_sha256": "b7b0e4b47a45c55db79c96a129e9f4b38b99b1214afde2078f894f4c41a9fb3f",
+          "app_store_id": "6775773117"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      },
+      "date_modified": "2026-11-11T02:00:36Z"
     },
     {
       "id": "urn:apple:app:id6778748533",

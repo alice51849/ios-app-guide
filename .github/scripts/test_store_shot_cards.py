@@ -355,10 +355,13 @@ class QueuedCarouselTest(unittest.TestCase):
         e.update(kw)
         return e
 
-    def make(self, entries, day=dt.date(2026, 10, 23), slot=7, posts=()):
+    def make(self, entries, day=dt.date(2026, 10, 23), slot=7, posts=(), launched=None):
         tmp = tempfile.mkdtemp()
         q = Path(tmp) / "carousels.json"
-        q.write_text(json.dumps({"items": entries}, ensure_ascii=False), encoding="utf-8")
+        body = {"items": entries}
+        if launched is not None:
+            body["app_launched"] = launched
+        q.write_text(json.dumps(body, ensure_ascii=False), encoding="utf-8")
         got = []
         plan = S.make_queued(Path(tmp) / "out", day, slot, list(posts), fetcher=lambda u: got.append(u) or b"x" * 20000,
                              path=q)
@@ -390,6 +393,25 @@ class QueuedCarouselTest(unittest.TestCase):
         de = self.entry(id="mochi-de-pain-20261023", locale="de", country="DE", text="Deine To-do-Liste, nur viel süßer")
         with mock.patch("sys.stdout"):
             self.assertEqual(self.make([bad, de])[0]["key"], "feed/mochi/de/carousel/mochi-de-pain-20261023")
+
+    def test_new_listing_leads_the_queue_for_its_first_14_days(self):
+        old = self.entry()
+        new = self.entry(id="tripbeecute-zh-Hant-pain-20261106", app="tripbeecute", app_id="6826987407",
+                         name="TripBee Cute", text="旅行計畫散在截圖和訂位信裡？\n\n整理成一本可愛的旅行手帳",
+                         tags=["#TripBeeCute"])
+        launched = {"tripbeecute": "2026-11-05"}
+        day = dt.date(2026, 11, 11)
+        self.assertEqual(self.make([old, new], day=day, launched=launched)[0]["app"], "tripbeecute")
+        # no launch date, or past the 14-day floor: queue order is kept
+        self.assertEqual(self.make([old, new], day=day)[0]["app"], "mochi")
+        self.assertEqual(self.make([old, new], day=dt.date(2026, 11, 19), launched=launched)[0]["app"], "mochi")
+        # once a new-listing carousel went out today, the rest of the day keeps queue order
+        today = [{"channel": S.CHANNEL, "clip": "feed/tripbeecute/zh-Hant/carousel/tripbeecute-zh-Hant-pain-20261106",
+                  "posted_at": "2026-11-11T07:21:00Z"}]
+        self.assertEqual(S.launch_ordered([old, new], launched, today, day), [old, new])
+        # the floor never bypasses the weekly cooldown: the new app featured this week falls back to the queue
+        week = [{"channel": S.CHANNEL, "clip": "feed/tripbeecute/en", "posted_at": "2026-11-09T19:21:00Z"}]
+        self.assertEqual(self.make([old, new], day=day, posts=week, launched=launched)[0]["app"], "mochi")
 
     def test_make_takes_the_queue_after_the_list_and_before_the_screenshot_carousel(self):
         d = data(("mochi", "zh-Hant"))

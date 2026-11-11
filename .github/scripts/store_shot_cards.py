@@ -411,7 +411,8 @@ def make_queued(out_dir, day, slot, posts, fetcher=fetch, path=None):
     week_apps, _ = recent(posts, day, APP_COOLDOWN_DAYS)
     done = {p.get("clip") for p in posts or [] if p.get("channel") == CHANNEL}
     locales = QUEUE_SLOT_LOCALES.get(slot) or QUEUE_SLOT_LOCALES[19]
-    for e in queue.get("items") or []:
+    launched = queue.get("app_launched") if isinstance(queue.get("app_launched"), dict) else {}
+    for e in launch_ordered(queue.get("items") or [], launched, posts, day):
         key = f"{KEY_PREFIX}{e.get('app')}/{e.get('locale')}/carousel/{e.get('id')}"
         if ("instagram" not in (e.get("channels") or []) or e.get("locale") not in locales or key in done
                 or str(e.get("start") or "9999") > day.isoformat() or e.get("app") in week_apps):
@@ -446,6 +447,33 @@ def make_queued(out_dir, day, slot, posts, fetcher=fetch, path=None):
         (out / "plan.json").write_text(json.dumps(plan, ensure_ascii=False, indent=1), encoding="utf-8")
         return plan
     return None
+
+
+LAUNCH_FLOOR_DAYS = 14  # same floor as social_extra.launch_first and the Bluesky card line
+
+
+def _queue_key(e):
+    return f"{KEY_PREFIX}{e.get('app')}/{e.get('locale')}/carousel/{e.get('id')}"
+
+
+def launch_ordered(items, launched, posts, day):
+    """New-listing floor (2026-11-11, as social_extra.launch_first): for LAUNCH_FLOOR_DAYS after an App's go-live
+    (the queue's "app_launched"), its queued carousels lead the queue until one of them went out today; queue order
+    is kept otherwise. Cooldown, slot locales and the pre-post gate still decide whether one goes out."""
+    def is_new(e):
+        try:
+            live = dt.date.fromisoformat(str(launched.get(e.get("app")) or "")[:10])
+        except ValueError:
+            return False
+        return 0 <= (day - live).days < LAUNCH_FLOOR_DAYS
+    news = [e for e in items if is_new(e)]
+    if not news:
+        return items
+    keys = {_queue_key(e) for e in news}
+    if any(p.get("channel") == CHANNEL and p.get("clip") in keys
+           and str(p.get("posted_at") or "").startswith(day.isoformat()) for p in posts or []):
+        return items
+    return news + [e for e in items if not is_new(e)]
 
 
 def feed_ct_token(app, app_id):  # the carousel family token h7_<app>_igc, sent at the app's level

@@ -22,6 +22,7 @@ if str(GEO) not in sys.path:
 
 import app_store_storefronts
 import gen_sitemap_lastmod
+import market_availability as market
 from official_locales import OFFICIAL_LOCALES
 import portfolio_app_finder
 import portfolio_offer_catalog
@@ -170,8 +171,13 @@ class PortfolioOfferCatalogTests(unittest.TestCase):
         expected_locale_count = len(OFFICIAL_LOCALES)
         self.assertEqual(expected_locale_count, self.index["locale_count"])
         self.assertEqual(expected_app_count, self.index["app_count"])
+        # Per-app market exceptions (zh-Hans: apps Apple does not sell in China) carry no offer.
+        unavailable_app_pairs = sum(
+            len(ids) for ids in market.UNAVAILABLE_APP_MARKETS.values()
+        )
+        self.assertEqual(5, unavailable_app_pairs)
         self.assertEqual(
-            expected_app_count * (expected_locale_count - 1) - 4,
+            expected_app_count * (expected_locale_count - 1) - unavailable_app_pairs,
             self.index["offer_count"],
         )
         self.assertEqual(set(OFFICIAL_LOCALES), set(self.catalogs))

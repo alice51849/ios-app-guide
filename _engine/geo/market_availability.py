@@ -97,7 +97,9 @@ UNAVAILABLE_MARKETS: Final[dict[str, dict[str, str]]] = {
 }
 
 UNAVAILABLE_APP_MARKETS: Final = {
-    "zh-Hans": frozenset({"6778748533", "6778269699", "6776958488", "6787193643"}),
+    "zh-Hans": frozenset({
+        "6778748533", "6778269699", "6776958488", "6787193643", "6775773117",
+    }),
 }
 APP_MARKET_LOOKUP_EVIDENCE: Final = {
     "source_url": (
@@ -112,6 +114,29 @@ APP_MARKET_LOOKUP_EVIDENCE: Final = {
     "lookup_control_results": 1,
     "response_sha256": "2ce68ecb1c48c973a91f0308994315ac779c5a76d8c97d281eb20e7e97a035db",
 }
+#: 之後才觀察到的例外各自保留自己的一手證據；舊四款的證據不改，避免既有頁面 churn。
+APP_MARKET_LOOKUP_EVIDENCE_BY_APP: Final = {
+    # Lumi注音星球 Pro:2026-11-11 同批查詢(含舊四款與控制商品)只回控制商品 1 筆。
+    "6775773117": {
+        "source_url": (
+            "https://itunes.apple.com/lookup?"
+            "id=6791658210,6778748533,6778269699,6776958488,6787193643,6775773117"
+            "&country=cn&entity=software"
+        ),
+        "observed_at": "2026-11-11",
+        "country": "CN",
+        "lookup_app_results": 0,
+        "lookup_control_app_id": "6791658210",
+        "lookup_control_results": 1,
+        "response_sha256": "b7b0e4b47a45c55db79c96a129e9f4b38b99b1214afde2078f894f4c41a9fb3f",
+    },
+}
+
+
+def app_market_evidence(app_id) -> dict[str, object]:
+    """App 層級例外的證據;未另列者沿用 2026-09-12 的共同查詢。"""
+    base = APP_MARKET_LOOKUP_EVIDENCE_BY_APP.get(str(app_id), APP_MARKET_LOOKUP_EVIDENCE)
+    return {**base, "app_store_id": str(app_id)}
 
 #: 這些形式永遠不得用來代替缺少的市場連結。
 FORBIDDEN_SUBSTITUTIONS: Final = ("us", "in", "countryless")
@@ -209,7 +234,7 @@ def record_fields(locale: str, app_id: str | None = None) -> dict[str, object]:
             "market_availability": {
                 "state": MARKET_UNAVAILABLE_OR_UNVERIFIED,
                 "reason": REASON_APP_NOT_SOLD,
-                "evidence": {**APP_MARKET_LOOKUP_EVIDENCE, "app_store_id": str(app_id)},
+                "evidence": app_market_evidence(app_id),
                 "value": "N/A",
                 "content_retained": True,
                 "publishable": False,

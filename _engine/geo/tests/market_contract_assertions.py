@@ -1,5 +1,11 @@
 import re
 
+#: app id -> (observed_at, response sha256);None 是 2026-09-12 舊四款共同查詢。
+CN_LOOKUP_EVIDENCE = {
+    None: ("2026-09-12", "2ce68ecb1c48c973a91f0308994315ac779c5a76d8c97d281eb20e7e97a035db"),
+    "6775773117": ("2026-11-11", "b7b0e4b47a45c55db79c96a129e9f4b38b99b1214afde2078f894f4c41a9fb3f"),
+}
+
 
 def assert_blocked_record(test, record, url_fields=("canonical_app_store_url", "app_store_url")):
     for field in url_fields:
@@ -15,14 +21,15 @@ def assert_blocked_record(test, record, url_fields=("canonical_app_store_url", "
     evidence = state["evidence"]
     if evidence["country"] == "CN":
         test.assertEqual(state["reason"], "MARKET_APP_NOT_SOLD")
-        test.assertIn(evidence["app_store_id"], {"6778748533", "6778269699", "6776958488", "6787193643"})
+        test.assertIn(evidence["app_store_id"], {"6778748533", "6778269699", "6776958488", "6787193643", "6775773117"})
         test.assertEqual(evidence["app_store_id"], record.get("app_store_id", record.get("_lumi_app_store_id")))
         test.assertTrue(evidence["source_url"].startswith("https://itunes.apple.com/lookup?"))
         test.assertIn("country=cn", evidence["source_url"])
-        test.assertEqual(evidence["observed_at"], "2026-09-12")
+        observed_at, response_sha256 = CN_LOOKUP_EVIDENCE.get(evidence["app_store_id"], CN_LOOKUP_EVIDENCE[None])
+        test.assertEqual(evidence["observed_at"], observed_at)
         test.assertEqual(evidence["lookup_app_results"], 0)
         test.assertEqual(evidence["lookup_control_results"], 1)
-        test.assertEqual(evidence["response_sha256"], "2ce68ecb1c48c973a91f0308994315ac779c5a76d8c97d281eb20e7e97a035db")
+        test.assertEqual(evidence["response_sha256"], response_sha256)
         return
     test.assertEqual(state["reason"], "MARKET_NOT_IN_APPLE_MEDIA_SERVICES")
     test.assertEqual(evidence["source_url"], "https://support.apple.com/en-us/118205")

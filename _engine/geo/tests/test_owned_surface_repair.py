@@ -23,13 +23,19 @@ import app_install_decision_feeds as install_feeds
 import queries
 from official_locales import OFFICIAL_LOCALES
 
-TARGET_IDS = {"6778748533", "6778269699", "6776958488", "6787193643"}
+TARGET_IDS = {"6778748533", "6778269699", "6776958488", "6787193643", "6775773117"}
 CONTROL_ID = "6791658210"
 
 
 class AppMarketContract(unittest.TestCase):
     def test_cn_exceptions_are_exactly_the_four_observed_apps(self):
         self.assertEqual(TARGET_IDS, market.UNAVAILABLE_APP_MARKETS["zh-Hans"])
+        self.assertEqual({"6775773117"}, set(market.APP_MARKET_LOOKUP_EVIDENCE_BY_APP))
+        for app_id in TARGET_IDS:
+            evidence = market.record_fields("zh-Hans", app_id)["market_availability"]["evidence"]
+            self.assertIn(f"{app_id}", evidence["source_url"])
+            self.assertIn(CONTROL_ID, evidence["source_url"])
+            self.assertEqual(CONTROL_ID, evidence["lookup_control_app_id"])
         self.assertFalse(market.is_unavailable("zh-Hans"))
         self.assertFalse(market.is_unavailable("zh-Hans", CONTROL_ID))
         self.assertEqual(50, len(OFFICIAL_LOCALES))

@@ -16,7 +16,7 @@ ROOT = HERE.parent
 sys.path.insert(0, str(ROOT / "social"))
 
 from app_store_storefronts import (  # noqa: E402
-    LOCALE_STOREFRONTS,
+    AVAILABILITY_STOREFRONTS,
     STATE_FILE,
     load_storefront_availability,
     load_storefront_details,
@@ -59,6 +59,9 @@ def _is_fresh(
             for app_id in cached_app_ids
         )
         or set(cached_app_ids) != expected_app_ids
+        # A snapshot taken over a different storefront list (e.g. before the
+        # hk/mo extra storefronts were queried) is stale, not "fresh".
+        or payload.get("storefronts") != sorted(AVAILABILITY_STOREFRONTS)
     ):
         return False
     value = payload.get("checked_at")
@@ -128,7 +131,7 @@ def refresh(pages=PAGES, *, force=False) -> dict[str, frozenset[str]]:
     countries: dict[str, list[str]] = {}
     details: dict[str, dict[str, dict[str, object]]] = {}
     refreshed = 0
-    for country in sorted(set(LOCALE_STOREFRONTS.values())):
+    for country in sorted(AVAILABILITY_STOREFRONTS):
         try:
             records = _lookup_country_records(app_ids, country)
         except Exception as error:
@@ -166,6 +169,7 @@ def refresh(pages=PAGES, *, force=False) -> dict[str, frozenset[str]]:
         "checked_at": now.isoformat().replace("+00:00", "Z"),
         "app_count": len(app_ids),
         "app_ids": sorted(app_ids),
+        "storefronts": sorted(AVAILABILITY_STOREFRONTS),
         "countries": countries,
         "details": details,
     }

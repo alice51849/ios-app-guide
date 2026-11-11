@@ -26004,8 +26004,16 @@ class GeneratorTests(unittest.TestCase):
                 app_store_storefronts.load_storefront_details(directory)
             )
         self.assertEqual(
-            set(app_store_storefronts.LOCALE_STOREFRONTS.values()),
+            set(app_store_storefronts.LOCALE_STOREFRONTS.values())
+            | app_store_storefronts.EXTRA_STOREFRONTS,
             set(snapshot),
+        )
+        # The hk/mo extra storefronts are queried and recorded like any other.
+        self.assertEqual(frozenset({app_id}), snapshot["hk"])
+        self.assertEqual(frozenset({app_id}), snapshot["mo"])
+        self.assertEqual(
+            sorted(app_store_storefronts.AVAILABILITY_STOREFRONTS),
+            payload["storefronts"],
         )
         self.assertEqual(frozenset(), snapshot["cn"])
         self.assertEqual(frozenset({app_id}), snapshot["tw"])
@@ -26063,8 +26071,8 @@ class GeneratorTests(unittest.TestCase):
             with (
                 mock.patch.object(
                     refresh_storefront_availability,
-                    "LOCALE_STOREFRONTS",
-                    {"en-US": "us"},
+                    "AVAILABILITY_STOREFRONTS",
+                    frozenset({"us"}),
                 ),
                 mock.patch.object(
                     refresh_storefront_availability,
@@ -26087,6 +26095,28 @@ class GeneratorTests(unittest.TestCase):
         )
         self.assertEqual(2, payload["app_count"])
         self.assertEqual(sorted((existing_id, launched_id)), payload["app_ids"])
+
+    def test_storefront_snapshot_without_extra_storefronts_is_stale(self):
+        app_id = str(APPSTORE["lumibopomofo"])
+        now = dt.datetime.now(dt.timezone.utc).replace(microsecond=0)
+        payload = {
+            "version": 2,
+            "checked_at": now.isoformat().replace("+00:00", "Z"),
+            "app_count": 1,
+            "app_ids": [app_id],
+            "countries": {"tw": [app_id]},
+            "details": {"tw": {}},
+        }
+        # Taken before hk/mo were queried: must be re-fetched, not trusted.
+        self.assertFalse(
+            refresh_storefront_availability._is_fresh(payload, now, {app_id})
+        )
+        payload["storefronts"] = sorted(
+            app_store_storefronts.AVAILABILITY_STOREFRONTS
+        )
+        self.assertTrue(
+            refresh_storefront_availability._is_fresh(payload, now, {app_id})
+        )
 
     def test_external_catalog_copy_is_native_for_every_live_app(self):
         pages = Path(GEO) / "pages"

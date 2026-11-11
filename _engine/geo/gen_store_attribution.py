@@ -52,6 +52,8 @@ sys.path.insert(0, str(HERE))
 
 from app_store_storefronts import (  # noqa: E402
     APP_STORE_PATH_RE,
+    EXTRA_STOREFRONT_LOCALES,
+    EXTRA_STOREFRONTS,
     LOCALE_STOREFRONTS,
     REQUIRED_LOCALE_STOREFRONTS,
     PROVIDER_TOKEN_ENV,
@@ -394,8 +396,21 @@ def align_storefront(url: str, locale: str | None, availability=None) -> str:
         and (availability is None or match["app_id"] not in availability.get(target, frozenset()))
     ):
         return url
+    if (
+        match["country"] in EXTRA_STOREFRONTS
+        and EXTRA_STOREFRONT_LOCALES[match["country"]] == locale
+        and availability is not None
+        and match["app_id"] in availability.get(match["country"], frozenset())
+    ):
+        # A page spec may deliberately link its own extra storefront (the
+        # Hong Kong / Macau zh-Hant pages); keep it only when Apple's lookup
+        # snapshot verifies this exact app there. Otherwise it is re-homed
+        # below exactly like any other known foreign storefront.
+        return url
     if match["country"] == target or (
-        match["country"] is not None and match["country"] not in LOCALE_STOREFRONTS.values()
+        match["country"] is not None
+        and match["country"] not in LOCALE_STOREFRONTS.values()
+        and match["country"] not in EXTRA_STOREFRONTS
     ):
         # Only a *known* foreign storefront is re-homed; an unknown country code
         # is corrupt input and must keep failing closed downstream.

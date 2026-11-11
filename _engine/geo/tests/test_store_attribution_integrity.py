@@ -400,6 +400,90 @@ class AttributionIntegrityTests(unittest.TestCase):
         self.audit(root_page, "answers/compare.html")
         self.assertEqual(foreign, attribution.align_storefront(foreign, "aa", AVAILABILITY))
 
+    def test_declared_hk_and_mo_storefronts_survive_attribution_on_evidence(self):
+        # The Hong Kong / Macau zh-Hant pages deliberately link their own
+        # storefront (gen_search_reality_g3.EXTRA_STOREFRONTS). Synthetic
+        # availability below, never a new Apple availability claim.
+        verified = {
+            **AVAILABILITY,
+            "hk": frozenset({APP_ID}),
+            "mo": frozenset({APP_ID}),
+        }
+        for country in ("hk", "mo"):
+            with self.subTest(country=country):
+                url = f"https://apps.apple.com/{country}/app/id{APP_ID}?pt={PROVIDER}&mt=8"
+                final = attribution.final_store_url(
+                    url, "geo_pick", PROVIDER, locale="zh-Hant",
+                    availability=verified, app_id=APP_ID,
+                )
+                self.assertEqual(
+                    f"https://apps.apple.com/{country}/app/id{APP_ID}"
+                    f"?pt={PROVIDER}&ct=geo_pick&mt=8",
+                    final,
+                )
+                self.assertEqual(final, stores.validated_app_store_url(
+                    final, APP_ID, expected_locale="zh-Hant",
+                    require_campaign=True, provider_token=PROVIDER,
+                    availability=verified,
+                ))
+                # An ordinary zh-Hant link still lands on the tw storefront.
+                self.assertEqual(
+                    f"https://apps.apple.com/tw/app/id{APP_ID}?pt={PROVIDER}&ct=geo_pick&mt=8",
+                    attribution.final_store_url(
+                        f"https://apps.apple.com/jp/app/id{APP_ID}", "geo_pick",
+                        PROVIDER, locale="zh-Hant", availability=verified,
+                        app_id=APP_ID,
+                    ),
+                )
+
+    def test_unverified_or_foreign_locale_extra_storefront_fails_closed(self):
+        hk = f"https://apps.apple.com/hk/app/id{APP_ID}?pt={PROVIDER}&ct=geo_pick&mt=8"
+        verified = {**AVAILABILITY, "hk": frozenset({APP_ID})}
+        # The validator never keeps an extra storefront without evidence.
+        for availability in (None, AVAILABILITY, {**AVAILABILITY, "hk": frozenset({"1"})}):
+            with self.subTest(availability=availability is not None), \
+                    self.assertRaisesRegex(ValueError, "Unverified App Store storefront"):
+                stores.validated_app_store_url(
+                    hk, APP_ID, expected_locale="zh-Hant", availability=availability,
+                )
+        # An extra storefront only belongs to its own guide locale.
+        for locale in ("en-US", "ja", "zh-Hans"):
+            with self.subTest(locale=locale), self.assertRaises(ValueError):
+                stores.validated_app_store_url(
+                    hk, APP_ID, expected_locale=locale, availability=verified,
+                )
+        # Unknown storefronts stay invalid everywhere.
+        with self.assertRaisesRegex(ValueError, "Invalid direct App Store URL"):
+            stores.validated_app_store_url(
+                hk.replace("/hk/", "/sg/"), APP_ID, expected_locale="zh-Hant",
+                availability={**verified, "sg": frozenset({APP_ID})},
+            )
+        # The stamper never keeps an unverified hk link: it is re-homed like
+        # any known foreign storefront (tw when verified, else global).
+        clean = f"https://apps.apple.com/hk/app/id{APP_ID}"
+        self.assertEqual(
+            f"https://apps.apple.com/tw/app/id{APP_ID}",
+            attribution.align_storefront(clean, "zh-Hant", AVAILABILITY),
+        )
+        self.assertEqual(
+            f"https://apps.apple.com/app/id{APP_ID}",
+            attribution.align_storefront(clean, "zh-Hant", {"us": frozenset({APP_ID})}),
+        )
+        self.assertEqual(
+            f"https://apps.apple.com/us/app/id{APP_ID}",
+            attribution.align_storefront(clean, "en-US", verified),
+        )
+        self.assertEqual(clean, attribution.align_storefront(clean, "zh-Hant", verified))
+
+    def test_storefront_snapshot_loader_keeps_only_known_storefronts(self):
+        with tempfile.TemporaryDirectory() as directory:
+            (Path(directory) / stores.STATE_FILE).write_text(json.dumps({
+                "countries": {"tw": [APP_ID], "hk": [APP_ID], "mo": [APP_ID], "sg": [APP_ID]},
+                "details": {},
+            }), encoding="utf-8")
+            loaded = stores.load_storefront_availability(directory)
+        self.assertEqual({"tw", "hk", "mo"}, set(loaded))
+
     def test_embedded_app_language_does_not_override_the_page_storefront(self):
         url = store_url(locale="en-US")
         schema = {

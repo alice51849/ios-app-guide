@@ -1,18 +1,30 @@
 {
- "generated": "2026-11-10T21:22:56Z",
+ "generated": "2026-11-11T06:34:45Z",
  "mode": "apply",
  "counts": {
-  "ok_reply": 60,
+  "ok_reply": 61,
   "unknown_app": 47,
-  "ok_backfilled_earlier": 65,
+  "ok_backfilled_earlier": 67,
   "backfilled": 2,
-  "ok_store_only": 665,
+  "ok_store_only": 663,
   "ok_bio_link": 68,
   "ok_caption": 4,
   "taken_down": 4,
   "missing": 3
  },
  "rows": [
+  {
+   "channel": "threads",
+   "id": "18118683830015700",
+   "permalink": "https://www.threads.com/@hourstag.app/post/DflxggDmqMs",
+   "date": "2026-11-11",
+   "app": "tripbeecute",
+   "status": "ok_reply",
+   "text": "旅行計画を友だちと作成・共有、出発までカウントダウン。 イラストの表紙を開いたら、そのまま下へスクロールするだけで、出発までのカウントダウン、フライト、毎日の予定、持ち物リストとメモまで続きます。 TripBee Cute：かわいい旅のしおり",
+   "why": "brand",
+   "ios_id": "6826987407",
+   "locale": "ja"
+  },
   {
    "channel": "threads",
    "id": "18135092653676798",
@@ -1379,16 +1391,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdSllwyHYiu",
    "date": "2026-09-15",
    "app": "zipbox",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "Preview and extract, no ads. Look inside an archive without extracting it. Zipbox: Unzip RAR, ZIP & 7z Leaving the link here: https://apps.a",
    "why": "url+brand",
    "ios_id": "6806776579",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "17979083754153800",
-   "at": "2026-11-10T21:20:09Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",
@@ -1396,16 +1403,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdTR7MunQF6",
    "date": "2026-09-15",
    "app": "mochi",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "Plan your day with cozy calm. Mochi is the cute, cozy to-do list that makes getting organized feel good. Mochi: Cute Checklist Link’s here, ",
    "why": "url+brand",
    "ios_id": "6785004775",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "18155354953522828",
-   "at": "2026-11-10T21:20:09Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",
@@ -1437,11 +1439,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdRNnP-AYI5",
    "date": "2026-09-14",
    "app": "cyca",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "Ovulation, Calendar & PMS. Meet Cyca — the warm, private way to understand your cycle. Cyca: Period & Cycle Tracker Link: https://apps.apple",
    "why": "url+brand",
    "ios_id": "6782251621",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "18134270416667193",
+   "at": "2026-11-11T06:31:46Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -1473,11 +1480,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdPuMrsAXb-",
    "date": "2026-09-13",
    "app": "dailymate",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "You know 3,000 words and still freeze in the first ten seconds. Our app, not a ranking: Save complete travel phrases; review on Watch or wid",
    "why": "url+brand",
    "ios_id": "6790418321",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "18107697020346690",
+   "at": "2026-11-11T06:31:46Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",

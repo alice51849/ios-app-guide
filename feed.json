@@ -1,7 +1,7 @@
 {
  "schema": "lumi.social-feed/v1",
  "date": "2026-11-11",
- "generated_at": "2026-11-11T08:27:41Z",
+ "generated_at": "2026-11-11T16:03:44Z",
  "items": {
   "bluesky": [
    {
@@ -231,48 +231,69 @@
    },
    {
     "kind": "clip",
-    "key": "lumiletters/ar",
-    "locale": "ar",
-    "app": "lumiletters",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/futyg4.mp4",
-    "hook": "رحلة حروف هادئة",
-    "name": "Lumi حروف Lite",
-    "title": "رحلة حروف هادئة | تعلم كتابة الحروف الإنجليزية | Lumi حروف Lite",
+    "key": "dailymate/ja",
+    "locale": "ja",
+    "app": "dailymate",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/2oq7mt.mp4",
+    "hook": "音声で聞いて 自然な返しまで",
+    "name": "DailyMate：文で身につく語学",
+    "title": "音声で聞いて 自然な返しまで | 英会話・旅行フレーズを毎日一文 | DailyMate 文で身につく語学",
     "tags": [
-     "#الفونيكس",
-     "#انجليزي",
-     "#للاطفال",
-     "#تعليم",
-     "#العاب",
-     "#LumiحروفLite"
+     "#文で身につく語学",
+     "#実用フレーズ",
+     "#フレーズ集",
+     "#英会話",
+     "#英語学習",
+     "#DailyMate文で身につく語学"
     ],
-    "caption": "رحلة حروف هادئة\nتتبّع كل خط\nتعلم كتابة الحروف الإنجليزية\nابحث عن «Lumi حروف Lite» في App Store\nمتوفر أيضًا على Google Play\n\n#الفونيكس #انجليزي #LumiحروفLite",
-    "button": "حمّله من App Store",
+    "caption": "音声で聞いて 自然な返しまで\nどのテーマも 3レベル\n英会話・旅行フレーズを毎日一文\nDailyMate：文で身につく語学\nApp Storeで「DailyMate 文で身につく語学」を検索\nAndroidはGoogle Playで\n\n#文で身につく語学 #実用フレーズ #DailyMate文で身につく語学",
+    "button": "App Storeで入手",
     "variant": "c",
-    "alt": "Lumi حروف Lite — رحلة حروف هادئة — تتبّع كل خط — تعلم كتابة الحروف الإنجليزية",
-    "store": "https://apps.apple.com/sa/app/id6778748533?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiLettersLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiletters",
+    "alt": "DailyMate：文で身につく語学 — 音声で聞いて 自然な返しまで — どのテーマも 3レベル — 英会話・旅行フレーズを毎日一文",
+    "store": "https://apps.apple.com/jp/app/id6790418321?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate",
     "review": {
-     "label": "هل تستخدم هذا التطبيق بالفعل؟ قيّمه أو اكتب مراجعة عنه في App Store",
-     "url": "https://apps.apple.com/app/id6778748533?action=write-review"
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6790418321?action=write-review"
     },
     "keywords": [
-     "الفونيكس",
-     "انجليزي",
-     "للاطفال",
-     "تعليم",
-     "العاب",
-     "تعليمية"
+     "実用フレーズ",
+     "フレーズ集",
+     "英会話",
+     "英語学習",
+     "日常会話",
+     "発音"
     ],
-    "keyline": "تعلم كتابة الحروف الإنجليزية",
+    "keyline": "英会話・旅行フレーズを毎日一文",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "4ec0196ef01258b0",
+     "board": "06a3d61baa456520",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "card/suneung2027/2026-11-11",
+    "locale": "ko",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/countdown-cards/card-20261111.jpg",
+    "caption": "2027학년도 수능 D-8\n할 수 있어요\n\nApp Store · Google Play에서 'CountDaysNow' 검색\n\n#디데이카운터 #디데이 #카운트다운",
+    "title": "2027학년도 수능 D-8",
+    "alt": "CountDaysNow — 2027학년도 수능 D-8 — 할 수 있어요 — App Store · Google Play에서 'CountDaysNow' 검색 — 디데이 카운터",
+    "name": "CountDaysNow",
+    "hook": "2027학년도 수능 D-8",
+    "tags": [
+     "#디데이카운터",
+     "#디데이",
+     "#카운트다운",
+     "#날짜계산",
+     "#기념일"
+    ],
+    "button": "App Store에서 받기",
+    "store": "https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow"
    },
    {
     "kind": "card",
@@ -2068,48 +2089,69 @@
    },
    {
     "kind": "clip",
-    "key": "lumiletters/ar",
-    "locale": "ar",
-    "app": "lumiletters",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/futyg4.mp4",
-    "hook": "رحلة حروف هادئة",
-    "name": "Lumi حروف Lite",
-    "title": "رحلة حروف هادئة | تعلم كتابة الحروف الإنجليزية | Lumi حروف Lite",
+    "key": "dailymate/ja",
+    "locale": "ja",
+    "app": "dailymate",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/2oq7mt.mp4",
+    "hook": "音声で聞いて 自然な返しまで",
+    "name": "DailyMate：文で身につく語学",
+    "title": "音声で聞いて 自然な返しまで | 英会話・旅行フレーズを毎日一文 | DailyMate 文で身につく語学",
     "tags": [
-     "#الفونيكس",
-     "#انجليزي",
-     "#للاطفال",
-     "#تعليم",
-     "#العاب",
-     "#LumiحروفLite"
+     "#文で身につく語学",
+     "#実用フレーズ",
+     "#フレーズ集",
+     "#英会話",
+     "#英語学習",
+     "#DailyMate文で身につく語学"
     ],
-    "caption": "رحلة حروف هادئة\nتتبّع كل خط\nتعلم كتابة الحروف الإنجليزية\nابحث عن «Lumi حروف Lite» في App Store\nمتوفر أيضًا على Google Play\n\n#الفونيكس #انجليزي #للاطفال #تعليم #LumiحروفLite",
-    "button": "حمّله من App Store",
+    "caption": "音声で聞いて 自然な返しまで\nどのテーマも 3レベル\n英会話・旅行フレーズを毎日一文\nDailyMate：文で身につく語学\nApp Storeで「DailyMate 文で身につく語学」を検索\nAndroidはGoogle Playで\n\n#文で身につく語学 #実用フレーズ #フレーズ集 #英会話 #DailyMate文で身につく語学",
+    "button": "App Storeで入手",
     "variant": "c",
-    "alt": "Lumi حروف Lite — رحلة حروف هادئة — تتبّع كل خط — تعلم كتابة الحروف الإنجليزية",
-    "store": "https://apps.apple.com/sa/app/id6778748533?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiLettersLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiletters",
+    "alt": "DailyMate：文で身につく語学 — 音声で聞いて 自然な返しまで — どのテーマも 3レベル — 英会話・旅行フレーズを毎日一文",
+    "store": "https://apps.apple.com/jp/app/id6790418321?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate",
     "review": {
-     "label": "هل تستخدم هذا التطبيق بالفعل؟ قيّمه أو اكتب مراجعة عنه في App Store",
-     "url": "https://apps.apple.com/app/id6778748533?action=write-review"
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6790418321?action=write-review"
     },
     "keywords": [
-     "الفونيكس",
-     "انجليزي",
-     "للاطفال",
-     "تعليم",
-     "العاب",
-     "تعليمية"
+     "実用フレーズ",
+     "フレーズ集",
+     "英会話",
+     "英語学習",
+     "日常会話",
+     "発音"
     ],
-    "keyline": "تعلم كتابة الحروف الإنجليزية",
+    "keyline": "英会話・旅行フレーズを毎日一文",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "4ec0196ef01258b0",
+     "board": "06a3d61baa456520",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "card/suneung2027/2026-11-11",
+    "locale": "ko",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/countdown-cards/card-20261111.jpg",
+    "caption": "2027학년도 수능 D-8\n할 수 있어요\n\nApp Store · Google Play에서 'CountDaysNow' 검색\n\n#디데이카운터 #디데이 #카운트다운 #날짜계산 #기념일",
+    "title": "2027학년도 수능 D-8",
+    "alt": "CountDaysNow — 2027학년도 수능 D-8 — 할 수 있어요 — App Store · Google Play에서 'CountDaysNow' 검색 — 디데이 카운터",
+    "name": "CountDaysNow",
+    "hook": "2027학년도 수능 D-8",
+    "tags": [
+     "#디데이카운터",
+     "#디데이",
+     "#카운트다운",
+     "#날짜계산",
+     "#기념일"
+    ],
+    "button": "App Store에서 받기",
+    "store": "https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow"
    },
    {
     "kind": "card",
@@ -2439,59 +2481,60 @@
    },
    {
     "kind": "clip",
-    "key": "lumiletters/ar",
-    "locale": "ar",
-    "app": "lumiletters",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/futyg4.mp4",
-    "hook": "رحلة حروف هادئة",
-    "name": "Lumi حروف Lite",
-    "title": "رحلة حروف هادئة | تعلم كتابة الحروف الإنجليزية | Lumi حروف Lite",
+    "key": "dailymate/ja",
+    "locale": "ja",
+    "app": "dailymate",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/2oq7mt.mp4",
+    "hook": "音声で聞いて 自然な返しまで",
+    "name": "DailyMate：文で身につく語学",
+    "title": "音声で聞いて 自然な返しまで | 英会話・旅行フレーズを毎日一文 | DailyMate 文で身につく語学",
     "tags": [
-     "#الفونيكس",
-     "#انجليزي",
-     "#للاطفال",
-     "#تعليم",
-     "#العاب",
-     "#LumiحروفLite"
+     "#文で身につく語学",
+     "#実用フレーズ",
+     "#フレーズ集",
+     "#英会話",
+     "#英語学習",
+     "#DailyMate文で身につく語学"
     ],
-    "caption": "رحلة حروف هادئة\nتتبّع كل خط\nتعلم كتابة الحروف الإنجليزية\nابحث عن «Lumi حروف Lite» في App Store\nمتوفر أيضًا على Google Play\n\n#الفونيكس #انجليزي #للاطفال #تعليم #LumiحروفLite",
-    "button": "حمّله من App Store",
+    "caption": "音声で聞いて 自然な返しまで\nどのテーマも 3レベル\n英会話・旅行フレーズを毎日一文\nDailyMate：文で身につく語学\nApp Storeで「DailyMate 文で身につく語学」を検索\nAndroidはGoogle Playで\n\n#文で身につく語学 #実用フレーズ #フレーズ集 #英会話 #DailyMate文で身につく語学",
+    "button": "App Storeで入手",
     "variant": "c",
-    "alt": "Lumi حروف Lite — رحلة حروف هادئة — تتبّع كل خط — تعلم كتابة الحروف الإنجليزية",
-    "store": "https://apps.apple.com/sa/app/id6778748533?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiLettersLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiletters",
+    "alt": "DailyMate：文で身につく語学 — 音声で聞いて 自然な返しまで — どのテーマも 3レベル — 英会話・旅行フレーズを毎日一文",
+    "store": "https://apps.apple.com/jp/app/id6790418321?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate",
     "review": {
-     "label": "هل تستخدم هذا التطبيق بالفعل؟ قيّمه أو اكتب مراجعة عنه في App Store",
-     "url": "https://apps.apple.com/app/id6778748533?action=write-review"
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6790418321?action=write-review"
     },
     "keywords": [
-     "الفونيكس",
-     "انجليزي",
-     "للاطفال",
-     "تعليم",
-     "العاب",
-     "تعليمية"
+     "実用フレーズ",
+     "フレーズ集",
+     "英会話",
+     "英語学習",
+     "日常会話",
+     "発音"
     ],
-    "keyline": "تعلم كتابة الحروف الإنجليزية",
+    "keyline": "英会話・旅行フレーズを毎日一文",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "4ec0196ef01258b0",
+     "board": "06a3d61baa456520",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "youtube": {
-     "title": "رحلة حروف هادئة | Lumi حروف Lite #Shorts",
-     "description": "رحلة حروف هادئة\nتتبّع كل خط\nتعلم كتابة الحروف الإنجليزية\n\nLumi حروف Lite\nApp Store: https://apps.apple.com/sa/app/id6778748533?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiLettersLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiletters\nهل تستخدم هذا التطبيق بالفعل؟ قيّمه أو اكتب مراجعة عنه في App Store\nhttps://apps.apple.com/app/id6778748533?action=write-review\n\nالفونيكس · انجليزي · للاطفال · تعليم · العاب · تعليمية\n\n#Shorts #الفونيكس #LumiحروفLite",
+     "title": "音声で聞いて 自然な返しまで | DailyMate 文で身につく語学 #Shorts",
+     "description": "音声で聞いて 自然な返しまで\nどのテーマも 3レベル\n英会話・旅行フレーズを毎日一文\n\nDailyMate：文で身につく語学\nApp Store: https://apps.apple.com/jp/app/id6790418321?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate\nこのアプリをお使いですか？App Store で評価・レビューできます\nhttps://apps.apple.com/app/id6790418321?action=write-review\n\n実用フレーズ · フレーズ集 · 英会話 · 英語学習 · 日常会話 · 発音\n\n#Shorts #文で身につく語学 #DailyMate文で身につく語学",
      "tags": [
-      "الفونيكس",
-      "انجليزي",
-      "للاطفال",
-      "تعليم",
-      "العاب",
-      "تعليمية",
-      "LumiحروفLite",
-      "Lumi حروف Lite"
+      "実用フレーズ",
+      "フレーズ集",
+      "英会話",
+      "英語学習",
+      "日常会話",
+      "発音",
+      "文で身につく語学",
+      "DailyMate文で身につく語学",
+      "DailyMate 文で身につく語学"
      ]
     },
     "slot": 15
@@ -2745,52 +2788,77 @@
    },
    {
     "kind": "clip",
-    "key": "lumiletters/ar",
-    "locale": "ar",
-    "app": "lumiletters",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/futyg4.mp4",
-    "hook": "رحلة حروف هادئة",
-    "name": "Lumi حروف Lite",
-    "title": "رحلة حروف هادئة | تعلم كتابة الحروف الإنجليزية | Lumi حروف Lite",
+    "key": "dailymate/ja",
+    "locale": "ja",
+    "app": "dailymate",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/2oq7mt.mp4",
+    "hook": "音声で聞いて 自然な返しまで",
+    "name": "DailyMate：文で身につく語学",
+    "title": "音声で聞いて 自然な返しまで | 英会話・旅行フレーズを毎日一文 | DailyMate 文で身につく語学",
     "tags": [
-     "#الفونيكس",
-     "#انجليزي",
-     "#للاطفال",
-     "#تعليم",
-     "#العاب",
-     "#LumiحروفLite"
+     "#文で身につく語学",
+     "#実用フレーズ",
+     "#フレーズ集",
+     "#英会話",
+     "#英語学習",
+     "#DailyMate文で身につく語学"
     ],
-    "caption": "رحلة حروف هادئة\nتتبّع كل خط\nتعلم كتابة الحروف الإنجليزية\nابحث عن «Lumi حروف Lite» في App Store\nمتوفر أيضًا على Google Play\n\n#الفونيكس #انجليزي #للاطفال #تعليم #LumiحروفLite",
-    "button": "حمّله من App Store",
+    "caption": "音声で聞いて 自然な返しまで\nどのテーマも 3レベル\n英会話・旅行フレーズを毎日一文\nDailyMate：文で身につく語学\nApp Storeで「DailyMate 文で身につく語学」を検索\nAndroidはGoogle Playで\n\n#文で身につく語学 #実用フレーズ #フレーズ集 #英会話 #DailyMate文で身につく語学",
+    "button": "App Storeで入手",
     "variant": "c",
-    "alt": "Lumi حروف Lite — رحلة حروف هادئة — تتبّع كل خط — تعلم كتابة الحروف الإنجليزية",
-    "store": "https://apps.apple.com/sa/app/id6778748533?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiLettersLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiletters",
+    "alt": "DailyMate：文で身につく語学 — 音声で聞いて 自然な返しまで — どのテーマも 3レベル — 英会話・旅行フレーズを毎日一文",
+    "store": "https://apps.apple.com/jp/app/id6790418321?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate",
     "review": {
-     "label": "هل تستخدم هذا التطبيق بالفعل؟ قيّمه أو اكتب مراجعة عنه في App Store",
-     "url": "https://apps.apple.com/app/id6778748533?action=write-review"
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6790418321?action=write-review"
     },
     "keywords": [
-     "الفونيكس",
-     "انجليزي",
-     "للاطفال",
-     "تعليم",
-     "العاب",
-     "تعليمية"
+     "実用フレーズ",
+     "フレーズ集",
+     "英会話",
+     "英語学習",
+     "日常会話",
+     "発音"
     ],
-    "keyline": "تعلم كتابة الحروف الإنجليزية",
+    "keyline": "英会話・旅行フレーズを毎日一文",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "4ec0196ef01258b0",
+     "board": "06a3d61baa456520",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "رحلة حروف هادئة\nتتبّع كل خط\nتعلم كتابة الحروف الإنجليزية\nابحث عن «Lumi حروف Lite» في App Store\nمتوفر أيضًا على Google Play\n\n#الفونيكس #انجليزي #للاطفال #تعليم #LumiحروفLite\n\nحمّله من App Store: https://apps.apple.com/sa/app/id6778748533?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiLettersLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiletters",
-     "link": "https://apps.apple.com/sa/app/id6778748533?pt=118326163&ct=social&mt=8"
+     "description": "音声で聞いて 自然な返しまで\nどのテーマも 3レベル\n英会話・旅行フレーズを毎日一文\nDailyMate：文で身につく語学\nApp Storeで「DailyMate 文で身につく語学」を検索\nAndroidはGoogle Playで\n\n#文で身につく語学 #実用フレーズ #フレーズ集 #英会話 #DailyMate文で身につく語学\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6790418321?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate\nLite: https://apps.apple.com/app/id6794725568?ct=social_lite\nLite Google Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite&referrer=utm_source%3Dsocial_lite%26utm_campaign%3Ddailymatelite",
+     "link": "https://apps.apple.com/jp/app/id6790418321?pt=118326163&ct=social&mt=8"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "card/suneung2027/2026-11-11",
+    "locale": "ko",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/countdown-cards/card-20261111.jpg",
+    "caption": "2027학년도 수능 D-8\n할 수 있어요\n\nApp Store · Google Play에서 'CountDaysNow' 검색\n\n#디데이카운터 #디데이 #카운트다운 #날짜계산 #기념일",
+    "title": "2027학년도 수능 D-8",
+    "alt": "CountDaysNow — 2027학년도 수능 D-8 — 할 수 있어요 — App Store · Google Play에서 'CountDaysNow' 검색 — 디데이 카운터",
+    "name": "CountDaysNow",
+    "hook": "2027학년도 수능 D-8",
+    "tags": [
+     "#디데이카운터",
+     "#디데이",
+     "#카운트다운",
+     "#날짜계산",
+     "#기념일"
+    ],
+    "button": "App Store에서 받기",
+    "store": "https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
+    "pinterest": {
+     "description": "2027학년도 수능 D-8\n할 수 있어요\n\nApp Store · Google Play에서 'CountDaysNow' 검색\n\n#디데이카운터 #디데이 #카운트다운 #날짜계산 #기념일\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
+     "link": "https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8"
+    }
    },
    {
     "kind": "card",
@@ -6724,49 +6792,49 @@
    },
    {
     "kind": "clip",
-    "key": "lumiletters/ar",
-    "locale": "ar",
-    "app": "lumiletters",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/futyg4.mp4",
-    "hook": "رحلة حروف هادئة",
-    "name": "Lumi حروف Lite",
-    "title": "رحلة حروف هادئة | تعلم كتابة الحروف الإنجليزية | Lumi حروف Lite",
+    "key": "dailymate/ja",
+    "locale": "ja",
+    "app": "dailymate",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/2oq7mt.mp4",
+    "hook": "音声で聞いて 自然な返しまで",
+    "name": "DailyMate：文で身につく語学",
+    "title": "音声で聞いて 自然な返しまで | 英会話・旅行フレーズを毎日一文 | DailyMate 文で身につく語学",
     "tags": [
-     "#الفونيكس",
-     "#انجليزي",
-     "#للاطفال",
-     "#تعليم",
-     "#العاب",
-     "#LumiحروفLite"
+     "#文で身につく語学",
+     "#実用フレーズ",
+     "#フレーズ集",
+     "#英会話",
+     "#英語学習",
+     "#DailyMate文で身につく語学"
     ],
-    "caption": "رحلة حروف هادئة\nتتبّع كل خط\nتعلم كتابة الحروف الإنجليزية\nابحث عن «Lumi حروف Lite» في App Store\nمتوفر أيضًا على Google Play\n\n#الفونيكس #انجليزي #للاطفال #تعليم #LumiحروفLite",
-    "button": "حمّله من App Store",
+    "caption": "音声で聞いて 自然な返しまで\nどのテーマも 3レベル\n英会話・旅行フレーズを毎日一文\nDailyMate：文で身につく語学\nApp Storeで「DailyMate 文で身につく語学」を検索\nAndroidはGoogle Playで\n\n#文で身につく語学 #実用フレーズ #フレーズ集 #英会話 #DailyMate文で身につく語学",
+    "button": "App Storeで入手",
     "variant": "c",
-    "alt": "Lumi حروف Lite — رحلة حروف هادئة — تتبّع كل خط — تعلم كتابة الحروف الإنجليزية",
-    "store": "https://apps.apple.com/sa/app/id6778748533?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiLettersLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiletters",
+    "alt": "DailyMate：文で身につく語学 — 音声で聞いて 自然な返しまで — どのテーマも 3レベル — 英会話・旅行フレーズを毎日一文",
+    "store": "https://apps.apple.com/jp/app/id6790418321?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate",
     "review": {
-     "label": "هل تستخدم هذا التطبيق بالفعل؟ قيّمه أو اكتب مراجعة عنه في App Store",
-     "url": "https://apps.apple.com/app/id6778748533?action=write-review"
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6790418321?action=write-review"
     },
     "keywords": [
-     "الفونيكس",
-     "انجليزي",
-     "للاطفال",
-     "تعليم",
-     "العاب",
-     "تعليمية"
+     "実用フレーズ",
+     "フレーズ集",
+     "英会話",
+     "英語学習",
+     "日常会話",
+     "発音"
     ],
-    "keyline": "تعلم كتابة الحروف الإنجليزية",
+    "keyline": "英会話・旅行フレーズを毎日一文",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "4ec0196ef01258b0",
+     "board": "06a3d61baa456520",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "رحلة حروف هادئة\nتتبّع كل خط\nتعلم كتابة الحروف الإنجليزية\nابحث عن «Lumi حروف Lite» في App Store\nمتوفر أيضًا على Google Play\n\n#الفونيكس #انجليزي #للاطفال #تعليم #LumiحروفLite\n\nحمّله من App Store: https://apps.apple.com/sa/app/id6778748533?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiLettersLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiletters"
+     "caption": "音声で聞いて 自然な返しまで\nどのテーマも 3レベル\n英会話・旅行フレーズを毎日一文\nDailyMate：文で身につく語学\nApp Storeで「DailyMate 文で身につく語学」を検索\nAndroidはGoogle Playで\n\n#文で身につく語学 #実用フレーズ #フレーズ集 #英会話 #DailyMate文で身につく語学\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6790418321?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate\nLite: https://apps.apple.com/app/id6794725568?ct=social_lite\nLite Google Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite&referrer=utm_source%3Dsocial_lite%26utm_campaign%3Ddailymatelite"
     },
     "slot": 15
    }

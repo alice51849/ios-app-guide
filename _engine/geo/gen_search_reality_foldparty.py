@@ -12,6 +12,7 @@
 - 不寫摺疊、Duo 相關宣稱（尚未實機驗證），只寫同一支手機兩人面對面玩、電腦對手、離線、沒有廣告。
 - 2026-11-09 加澳門繁中頁「貓咪派對」（澳門 #20，見 PAGE_SPECS 第 3 頁註解）：語言目錄沿用 zh-Hant，spec "cc"＝mo 連澳門店。
 - 2026-11-11 加台灣繁中頁「貓咪派對」（第 4 頁，專屬爆推第一波）：照心情挑四大類、貓咪小隊角度，與澳門頁、雙人遊戲頁不重複；第 1 頁 related 內鏈指向它。
+- 2026-11-12 專屬爆推第二波：第 3 頁（澳門）related 加一條指向第 4 頁（台灣店）的內鏈，給在台灣搜到澳門頁的讀者。
 - 每頁一張主卡，附該國 App Store 直連（pt＋ct＋mt）；ct＝gw 階梯碼（gw_campaign.py，款 × 國家 × 詞群 sr）。
   Google Play 連結由 android_play.inject_html 依已發布快照補上。
 - 專屬內容：中文 ≥450 字、韓文 ≥450 個韓文字。只寫這幾頁與各語系 sitemap_seasonal_<lang>.xml 的這幾列；不做 git 操作。
@@ -191,7 +192,9 @@ PAGE_SPECS: list[dict] = [
             ("沒有網路也能玩嗎？會跳廣告嗎？", "可以離線玩，喵喵派對沒有任何網路功能，也沒有廣告；不用註冊帳號，遊戲進度只存在你的裝置上。"),
         ],
         "related": [("zh-Hant/foldparty.html", "喵喵派對完整介紹"),
-                    ("zh-Hant/seasonal/shuangren-youxi-tong-yizhi-shouji-mianduimian-zhhant.html", "雙人遊戲怎麼挑")],
+                    ("zh-Hant/seasonal/shuangren-youxi-tong-yizhi-shouji-mianduimian-zhhant.html", "雙人遊戲怎麼挑"),
+                    ("zh-Hant/seasonal/maomi-paidui-taiwan-keai-maomi-xiaoyouxi-zhhant.html",
+                     "在台灣？照今天的心情挑一款貓咪派對小遊戲（台灣店）")],
         "legal": "本頁介紹的 App 為獨立開發；App Store 連結為澳門店，其他地區請在當地 App Store 搜尋「喵喵派對」。",
     },
     # 4 台灣（2026-11-11 專屬爆推第一波）：「貓咪派對」台灣 #39 → 目標 #40 內穩住並往前；寫給在台灣搜

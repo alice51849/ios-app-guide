@@ -619,8 +619,11 @@ def trial_state(token, day, slot, trial, find=None):
 
 
 def run_trial(tok, uid, slot, day, trial=None):
-    """(took, rc): took is True when the trial entry takes this slot (posted, held by the cap, refused by the QA,
-    or a rerun of its own slot); the slot then posts nothing else. rc 0 green, 1 red."""
+    """(took, rc): took is True when the trial entry takes this slot (posted, a rerun of its own slot, or a failure
+    that may have left it up); the slot then posts nothing else. rc 0 green, 1 red.
+    2026-11-11 (run 43026565129: held by the cap, the trial still took the 21:00 slot and it stayed empty): an entry
+    that surely did not go out (held by the account cap or an unknown count, refused by the QA, a paused channel)
+    does not take the slot; the slot's usual content runs, through the same account cap."""
     trial = load_trial() if trial is None else trial
     try:
         state, entry = trial_state(tok, day, slot, trial)
@@ -635,7 +638,7 @@ def run_trial(tok, uid, slot, day, trial=None):
     if entry.get("date") != day.isoformat():
         print(f"Threads Mochi trial {entry.get('ct')} ({entry.get('date')}) was not posted on its day; made up now")
     try:
-        return True, post_trial(tok, uid, trial, entry, day)
+        return post_trial(tok, uid, trial, entry, day)
     except (HTTPStatusError, RequestError, ValueError, KeyError) as error:
         print(f"Threads Mochi trial post failed: {error}", file=sys.stderr)
         return True, 1
@@ -758,12 +761,13 @@ def merge_trial_status(src, path=None):
 
 def post_trial(tok, uid, trial, post, day):
     """Publish one trial entry: main text without a link, then the reply with the link (publish_linked: the
-    account cap, the rerun lookups and the reply check all apply). 0 when green, 1 when red."""
+    account cap, the rerun lookups and the reply check all apply). (up, rc): up is False only when nothing went
+    out (QA refusal, account cap, paused channel); rc 0 when green, 1 when red."""
     import post_qa
 
     label = f"Threads Mochi trial {post.get('ct')} {post.get('date')}"
     if not post_qa.gate(trial_problems(trial, post), label):
-        return 1
+        return False, 1
     store, play = trial_link_urls(trial, post)
     result = publish_linked(tok, uid, with_duo(post["text"], store, post.get("lang")), trial_reply(trial, post),
                             store, play, day=day, label=label,
@@ -771,7 +775,9 @@ def post_trial(tok, uid, trial, post, day):
     if result.post_id:
         print("threads Mochi trial post ok, id:", result.post_id, "| ct:", post.get("ct"))
         record_trial_status(post, day, result)
-    return 0 if result.link_ok else 1
+    else:
+        print(f"{label}: nothing went out; the slot's usual content runs (same account cap)")
+    return result.post_id is not None, 0 if result.link_ok else 1
 
 
 def main(argv=None):
@@ -807,6 +813,11 @@ def main(argv=None):
         return rc
     if took:
         return rc
+    return max(rc, usual_slot(tok, uid, slot))
+
+
+def usual_slot(tok, uid, slot):
+    """The 11:00 slot's usual content: queued post, else the countdown card's day, else a picture post."""
     post = queued_today(slot.astimezone(TW).date() if slot else None)
     if post:
         try:

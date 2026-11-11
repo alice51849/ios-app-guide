@@ -138,13 +138,28 @@ jobs:
           python3 .github/scripts/test_social_posting.py -q -b
           python3 .github/scripts/test_threads_mochi_trial.py -q -b
           python3 .github/scripts/threads_post.py
+      - name: Does a floor post own tonight's slot (21:00)
+        # threads_series.py floor: Foldable Wallpaper Studio > TripBee Cute > other Apps live < 14 days (a missed one
+        # carried up to 3 days) come before the Mochi trial make-up in the 21:00 slot. floor=true: the trial step
+        # yields and the series step posts it. Order only: same slot, same cap, no gate changed. A failed check
+        # leaves floor unset, so the trial runs as before.
+        id: floor
+        if: steps.room.outputs.ok == 'true' && steps.slot.outputs.hour == '13'
+        continue-on-error: true
+        env:
+          THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
+          THREADS_SLOT: ${{ steps.slot.outputs.slot }}
+          SLOT_DATE: ${{ steps.slot.outputs.date }}
+        run: python3 .github/scripts/threads_series.py floor --date "$SLOT_DATE"
       - name: Mochi trial entry first (01:40 / 21:00 slots)
         # threads_mochi_trial.json: the trial entry takes the day's first slot with room (01:40 UTC), not the
         # leftover of the 11:00 slot; a missed entry is made up once by the next slot with room, same ct.
         # took=true: the slot is taken (same slot, same cap, no extra post). The 11:00 slot runs it inside
         # threads_post.py. A red trial ends the job red at the end, after the slot's usual content.
         id: trial
-        if: steps.room.outputs.ok == 'true' && (steps.slot.outputs.hour == '1' || steps.slot.outputs.hour == '13')
+        if: >-
+          steps.room.outputs.ok == 'true' && (steps.slot.outputs.hour == '1'
+          || (steps.slot.outputs.hour == '13' && steps.floor.outputs.floor != 'true'))
         env:
           THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
           THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}

@@ -142,6 +142,134 @@ QUEUED = {"date": DAY.isoformat(), "app": "cyca", "app_id": "6782251621", "ct": 
           "text": "Irregular cycle, PCOS or trying to conceive: Cyca keeps the log on your phone. Link in the reply."}
 
 
+def _dated(app, day, ct=None, text=None):
+    return dict(QUEUED, app=app, date=day.isoformat(), ct=ct or f"bm_{app}_tw_th",
+                text=text or f"{app} post for {day.isoformat()}: a long enough pain line, link in the reply.")
+
+
+class CarryOverTest(unittest.TestCase):
+    """2026-11-11 (run 43026565129): a missed floor post (Foldable Wallpaper Studio, TripBee Cute, Apps live < 14 days)
+    is carried to the next evening slot for at most 3 days, never posted twice; owner order duo > TripBee > others;
+    still one post a slot."""
+
+    LAUNCHED = {"cyca": (DAY - dt.timedelta(days=5)).isoformat(), "tripbeecute": (DAY - dt.timedelta(days=6)).isoformat()}
+
+    def setUp(self):
+        self.data = T.load()
+        out = mock.patch("sys.stdout", new_callable=io.StringIO)
+        self.out = out.start()
+        self.addCleanup(out.stop)
+
+    def account(self, rows):
+        def fake(url, timeout=30):
+            self.url = url
+            return io.BytesIO(json.dumps({"data": rows}).encode())
+        return fake
+
+    def owed(self, queue, rows=(), day=DAY):
+        return T.owed_carries("tok", day, queue, self.LAUNCHED, self.account(list(rows)))
+
+    def test_a_missed_post_is_carried_one_to_three_days_then_dropped_with_a_log_line(self):
+        for age in (1, 2, 3):
+            missed = _dated("tripbeecute", DAY - dt.timedelta(days=age))
+            owed = self.owed([missed])
+            self.assertEqual([missed], owed, age)
+            chosen = T.plan(DAY, self.data, COLD, queue=[missed], launched=self.LAUNCHED, carried=owed)
+            self.assertEqual("bm_tripbeecute_tw_th", chosen["ct"], age)   # ahead of the weather alert
+        late = _dated("tripbeecute", DAY - dt.timedelta(days=4))
+        self.assertEqual([], self.owed([late]))
+        self.assertIn("dropped", self.out.getvalue())
+        self.assertEqual("BM-22", T.plan(DAY, self.data, COLD, queue=[late], launched=self.LAUNCHED,
+                                         carried=[late])["series"])  # plan never takes one past the window
+
+    def test_a_post_that_went_out_is_never_carried(self):
+        missed = _dated("tripbeecute", DAY - dt.timedelta(days=2))
+        up = {"id": "9", "text": missed["text"], "timestamp": f"{(DAY - dt.timedelta(days=1)).isoformat()}T13:01:00+0800"}
+        self.assertEqual([], self.owed([missed], [up]))
+        # A copy stamped tonight is this slot's own post (a rerun): it stays the pick, publish_linked adds only the reply.
+        rerun = dict(up, timestamp=f"{DAY.isoformat()}T21:01:00+0800")
+        self.assertEqual([missed], self.owed([missed], [rerun]))
+
+    def test_a_failed_look_carries_nothing(self):
+        missed = _dated("tripbeecute", DAY - dt.timedelta(days=1))
+        def boom(url, timeout=30):
+            raise OSError("down")
+        with self.assertRaises(T.LookupFailed):
+            T.owed_carries("tok", DAY, [missed], self.LAUNCHED, boom)
+        bad = {"id": "9", "text": missed["text"], "timestamp": "??"}
+        with self.assertRaises(T.LookupFailed):
+            self.owed([missed], [bad])
+
+    def test_old_apps_are_not_carried(self):
+        old = _dated("mochi", DAY - dt.timedelta(days=1))
+        self.assertEqual([], self.owed([old]))
+        self.assertEqual([], T.carry_candidates(DAY, [old], self.LAUNCHED))
+
+    def test_owner_order_duo_then_tripbee_then_other_new_apps(self):
+        duo = _dated("duowallpaperstudio", DAY - dt.timedelta(days=1))
+        trip = _dated("tripbeecute", DAY - dt.timedelta(days=2))
+        tonight = _dated("cyca", DAY)
+        queue = [duo, trip, tonight]
+        chosen = T.plan(DAY, self.data, COLD, queue=queue, launched=self.LAUNCHED, carried=[trip, duo])
+        self.assertEqual("bm_duowallpaperstudio_tw_th", chosen["ct"])
+        chosen = T.plan(DAY, self.data, MILD, queue=queue, launched=self.LAUNCHED, carried=[trip])
+        self.assertEqual("bm_tripbeecute_tw_th", chosen["ct"])          # TripBee carried beats tonight's new App
+        self.assertEqual("bm_cyca_tw_th",
+                         T.plan(DAY, self.data, COLD, queue=queue, launched=self.LAUNCHED)["ct"])
+        # Same App: tonight's own post first, the carried one waits (still inside its window).
+        trip_tonight = _dated("tripbeecute", DAY, text="TripBee tonight: plan the whole trip in one cute map, link below.")
+        chosen = T.plan(DAY, self.data, MILD, queue=[trip, trip_tonight], launched=self.LAUNCHED, carried=[trip])
+        self.assertEqual(trip_tonight["text"], chosen["text"])
+
+    def test_usagenow_keeps_its_place(self):
+        trip = _dated("tripbeecute", DAY - dt.timedelta(days=1))
+        self.assertEqual("BM-11", T.plan(DAY, live_event(self.data), COLD, queue=[trip], launched=self.LAUNCHED,
+                                         carried=[trip])["series"])
+        self.assertIsNone(T.floor_due(DAY, live_event(self.data), [trip], queue=[trip], launched=self.LAUNCHED))
+
+    def floor_out(self, carried, queue, data=None, state=("post", {})):
+        handle, out = tempfile.mkstemp()
+        os.close(handle)
+        self.addCleanup(os.unlink, out)
+        with mock.patch.dict(os.environ, {"GITHUB_OUTPUT": out}), \
+                mock.patch.object(T, "load_evening_queue", return_value=queue), \
+                mock.patch.object(T, "load_launched", return_value=self.LAUNCHED), \
+                mock.patch.object(T, "planned_clip", return_value=None):
+            self.assertEqual(0, T.floor_command("tok", DAY, data or self.data, carried,
+                                                trial_state=lambda *a: state))
+        return Path(out).read_text()
+
+    def test_the_mochi_trial_yields_the_evening_slot_to_a_floor_post(self):
+        trip = _dated("tripbeecute", DAY - dt.timedelta(days=1))
+        self.assertIn("floor=true", self.floor_out([trip], [trip]))
+        self.assertIn("floor=true", self.floor_out([], [_dated("tripbeecute", DAY)]))
+        self.assertIn("floor=false", self.floor_out([], [_dated("mochi", DAY)]))   # nothing owed: trial as before
+        self.assertIn("floor=false", self.floor_out([trip], [trip], live_event(self.data)))  # UsageNow unchanged
+        # The trial already posted in this very slot (a rerun): it keeps the slot, never two posts.
+        self.assertIn("floor=false", self.floor_out([trip], [trip], state=("rerun", {})))
+
+    def test_one_post_a_slot_and_a_full_account_posts_nothing(self):
+        trip = _dated("tripbeecute", DAY - dt.timedelta(days=1))
+        chosen = T.plan(DAY, self.data, MILD, queue=[trip], launched=self.LAUNCHED, carried=[trip, trip])
+        self.assertIsInstance(chosen, dict)
+        with mock.patch.dict(os.environ, {"THREADS_TOKEN": "tok", "THREADS_USER_ID": "uid"}), \
+                mock.patch.object(T, "owed_carries", return_value=[trip]), \
+                mock.patch.object(T, "has_room", return_value=False), \
+                mock.patch("threads_post.publish_linked") as publish:
+            self.assertEqual(0, T.main(["evening", "--date", DAY.isoformat(), "--offline"]))
+        publish.assert_not_called()
+        self.assertIn("fallback=none", self.out.getvalue())
+
+    def test_room_takes_the_stricter_of_the_two_counts(self):
+        now = dt.datetime(2026, 10, 20, 13, 1, tzinfo=dt.timezone.utc)
+        one = self.account([{"id": "1", "timestamp": "2026-10-20T01:41:00+0000"}])
+        with mock.patch.object(threads_cap, "quota_usage", return_value=3):
+            self.assertEqual("full", T.room_status("tok", 3, now, one))   # 1 today, 3 in 24 hours: held
+        with mock.patch.object(threads_cap, "quota_usage", side_effect=threads_cap.QuotaUnknown("down")):
+            self.assertEqual("unknown", T.room_status("tok", 3, now, one))
+        self.assertEqual("room", T.room_status("tok", 3, now, one))         # module setup: 0 in 24 hours
+
+
 class EveningQueueTest(unittest.TestCase):
     """Dated conversion posts (growth/threads-evening-queue.json) for audiences awake at 13:00 UTC."""
 
@@ -382,6 +510,15 @@ class WorkflowTest(unittest.TestCase):
         self.assertIn("--slots 1,3,13", text)
         self.assertIn("threads_series.py evening", text)
         self.assertIn("steps.series.outputs.fallback == 'clip'", text)
+
+    def test_the_trial_yields_the_evening_slot_to_a_floor_post(self):
+        text = (WORKFLOWS / "threads-post.yml").read_text(encoding="utf-8")
+        floor = text.split("- name: Does a floor post own tonight's slot", 1)[1].split("- name:", 1)[0]
+        self.assertIn("threads_series.py floor", floor)
+        self.assertNotIn("THREADS_USER_ID", floor)   # it never posts
+        trial = text.split("- name: Mochi trial entry first", 1)[1].split("- name:", 1)[0]
+        self.assertIn("steps.floor.outputs.floor != 'true'", trial)
+        self.assertLess(text.index("id: floor"), text.index("id: trial"))
 
     def test_threads_post_slot_comes_from_the_schedule_and_dispatch_can_fill_it(self):
         text = (WORKFLOWS / "threads-post.yml").read_text(encoding="utf-8")

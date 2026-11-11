@@ -11,8 +11,10 @@ Americas hook clip used to take, so the account stays at 3 posts a day:
   from the MET Norway forecast.
 - BM-17 Mochi: "Today's #MochiChecklist", a 4-task list.
 
-Order: UsageNow event > a UsageNow hook clip planned for the slot > weather on
-a cold, hot, rainy or big-swing day > the daily rotation > the planned clip.
+Order: UsageNow event > a UsageNow hook clip planned for the slot > a floor post
+(Foldable Wallpaper Studio > TripBee Cute > other Apps live < 14 days; a missed one
+is carried up to 3 days) > weather on a cold, hot, rainy or big-swing day > other
+dated posts > the daily rotation > the planned clip.
 Everything comes from .github/growth/threads-series.json; the store link with
 the series ct (and the Google Play link when the app is on Android) goes in the first reply, which is
 checked before the post goes out, retried, and fails the step when it still does not post.
@@ -20,6 +22,7 @@ checked before the post goes out, retried, and fails the step when it still does
     python3 threads_series.py preview [--date YYYY-MM-DD] [--offline]
     python3 threads_series.py evening        # post, or print fallback=clip
     python3 threads_series.py room           # exit 0 under the daily cap, 1 at the cap, 2 count unknown
+    python3 threads_series.py floor          # floor=true: a floor post owns tonight's slot (the trial yields)
 """
 import argparse
 import datetime as dt
@@ -220,11 +223,121 @@ def new_listing(app, day, launched):
     return 0 <= (day - live).days < LAUNCH_FLOOR_DAYS
 
 
-def plan(day, data=None, weather=None, clip=None, queue=None, launched=None):
+# Carry-over and owner order (coordinator 2026-11-11, run 43026565129: the account was at its 3-post cap at 21:00, so
+# TripBee Cute's 11-11 post was lost; the queue only matched its own date). A floor post - a dated post of the two
+# Apps the owner named (FLOOR_ORDER) or of an App live < LAUNCH_FLOOR_DAYS on the post's date - that did not go out
+# is carried to the next evening slot, for at most CARRY_DAYS days, then dropped with one log line. Whether it went
+# out is read from the account (owed_carries), never guessed: a copy stamped before today means it is up (never a
+# second copy), a copy stamped today means this slot already posted it (a rerun), and a failed look carries nothing.
+# Among floor posts: Foldable Wallpaper Studio > TripBee Cute > other new Apps; same App: tonight's own post first,
+# then the oldest carried one. Order only: still one post in this slot, the cap and every gate unchanged.
+FLOOR_ORDER = ("duowallpaperstudio", "tripbeecute")
+CARRY_DAYS = 3
+
+
+def _post_date(p):
+    try:
+        return dt.date.fromisoformat(str(p.get("date") or ""))
+    except ValueError:
+        return None
+
+
+def floor_post(p, launched):
+    """True for a dated post that takes the new-listing floor (ahead of the weather alert)."""
+    d = _post_date(p)
+    return d is not None and (p.get("app") in FLOOR_ORDER or new_listing(p.get("app"), d, launched))
+
+
+def floor_rank(p):
+    app = p.get("app")
+    return FLOOR_ORDER.index(app) if app in FLOOR_ORDER else len(FLOOR_ORDER)
+
+
+def carry_candidates(day, queue, launched, days=CARRY_DAYS):
+    """Valid floor posts dated 1..`days` days before `day` (oldest first)."""
+    out = []
+    for p in queue:
+        d = _post_date(p)
+        if d is None or not 1 <= (day - d).days <= days:
+            continue
+        if evening_queue_problems([p]) or not floor_post(p, launched):
+            continue
+        out.append(p)
+    return sorted(out, key=lambda p: p["date"])
+
+
+class LookupFailed(Exception):
+    """The account could not tell whether a carried post is up: nothing is carried on a guess."""
+
+
+def _norm(text):
+    return " ".join(str(text or "").split())
+
+
+def owed_carries(token, day, queue=None, launched=None, opener=urllib.request.urlopen):
+    """Floor posts of the last CARRY_DAYS days that are not up on the account (or that this slot already
+    posted today: a rerun, publish_linked then only adds a missing link reply). Prints one line for each
+    floor post whose carry window just ended without it going out. Raises LookupFailed."""
+    queue = load_evening_queue(EVENING_QUEUE) if queue is None else queue
+    launched = load_launched() if launched is None else launched
+    cands = carry_candidates(day, queue, launched, CARRY_DAYS + 1)
+    if not cands:
+        return []
+    today = dt.datetime.combine(day, dt.time(), TW)
+    since = dt.datetime.combine(_post_date(cands[0]), dt.time(), TW)
+    query = urllib.parse.urlencode({"fields": "id,text,timestamp", "since": int(since.timestamp()),
+                                    "limit": 50, "access_token": token})
+    try:
+        with opener(f"https://graph.threads.net/v1.0/me/threads?{query}", timeout=30) as r:
+            rows = json.loads(r.read()).get("data", [])
+    except Exception as error:  # the class name only: the message can carry the token
+        raise LookupFailed(error.__class__.__name__) from None
+    owed = []
+    for p in cands:
+        start = dt.datetime.combine(_post_date(p), dt.time(), TW)
+        want, before, tonight = _norm(p["text"]), False, False
+        for row in rows:
+            if not (isinstance(row, dict) and row.get("id")):
+                continue
+            got = _norm(row.get("text"))
+            if not (got == want or (len(want) >= 40 and len(got) >= 40 and got[:80] == want[:80])):
+                continue
+            try:
+                when = dt.datetime.strptime(str(row.get("timestamp") or ""), "%Y-%m-%dT%H:%M:%S%z")
+            except ValueError:
+                raise LookupFailed("no readable timestamp") from None
+            before = before or start <= when < today
+            tonight = tonight or when >= today
+        if before:
+            continue
+        if (day - _post_date(p)).days > CARRY_DAYS:
+            if not tonight:
+                print(f"series: {p['date']} {p['app']} {p['ct']} was not posted in {CARRY_DAYS} days; dropped")
+            continue
+        owed.append(p)
+    return owed
+
+
+def floor_pick(day, queue, launched, carried=()):
+    """The floor post this slot owes (tonight's own one or a carried one), or None."""
+    pool = []
+    queued = evening_queued(day, queue)
+    if queued and not evening_queue_problems([queued]) and floor_post(queued, launched):
+        pool.append((floor_rank(queued), 0, queued["date"], queued))
+    for p in carried:
+        if p is not queued and _post_date(p) and 1 <= (day - _post_date(p)).days <= CARRY_DAYS \
+                and not evening_queue_problems([p]) and floor_post(p, launched):
+            pool.append((floor_rank(p), 1, p["date"], p))
+    if not pool:
+        return None
+    return min(pool, key=lambda t: t[:3])[3]
+
+
+def plan(day, data=None, weather=None, clip=None, queue=None, launched=None, carried=()):
     """What the evening slot posts on `day`: a series post dict, or None for
     the planned hook clip. `weather` is tomorrow_weather() (None = unknown).
-    Order: UsageNow event > UsageNow clip > dated post of an App live < 14 days >
-    weather alert > other dated conversion post (`queue`,
+    Order: UsageNow event > UsageNow clip > floor post (`carried`: owed_carries(); FLOOR_ORDER Apps, then Apps
+    live < 14 days) > weather alert > other dated conversion post (`queue`,
     growth/threads-evening-queue.json) > rotation > clip."""
     data = data or load()
     queue = load_evening_queue(EVENING_QUEUE) if queue is None else queue  # the module path, so tests can point it elsewhere
@@ -236,10 +349,13 @@ def plan(day, data=None, weather=None, clip=None, queue=None, launched=None):
         return post(s["usagenow_policy"], s["usagenow_policy"]["template"].format(**fields), event.get("image_url"))
     if clip and clip.split("/")[0] in data.get("priority_clip_apps", []):
         return None
+    floor = floor_pick(day, queue, launched, carried)
+    if floor:
+        if floor.get("date") != day.isoformat():
+            print(f"series: {floor['date']} {floor['app']} {floor['ct']} missed its evening; carried to {day}")
+        return queue_post(floor)
     queued = evening_queued(day, queue)
     queued_ok = bool(queued) and not evening_queue_problems([queued])
-    if queued_ok and new_listing(queued.get("app"), day, launched):
-        return queue_post(queued)
     wx = s["lumiweather_tomorrow"]
     weather_ok = wx.get("status") == "live" and weather is not None
     if weather_ok and weather_triggered(wx, weather):
@@ -352,7 +468,14 @@ def room_status(token, cap, now=None, opener=urllib.request.urlopen):
         print(f"series: could not count today's Threads posts ({error.__class__.__name__}); holding", file=sys.stderr)
         return "unknown"
     print(f"series: {n} Threads posts today (cap {cap})")
-    return "room" if n < cap else "full"
+    if n >= cap:
+        return "full"
+    # 2026-11-11 (run 43026565129): this check counted 1 post since Taiwan midnight while threads_cap.py, which every
+    # top-level post passes right before it goes out, counted 3 in the last 24 hours and held the post. Both counts
+    # now apply here (the stricter one wins, never a looser cap), so a slot the post would be held in is skipped.
+    import threads_cap
+    status = threads_cap.account_status(token, label="Threads daily cap check", opener=opener)
+    return {threads_cap.ROOM: "room", threads_cap.FULL: "full"}.get(status, "unknown")
 
 
 def has_room(token, cap, now=None, opener=urllib.request.urlopen):
@@ -361,6 +484,39 @@ def has_room(token, cap, now=None, opener=urllib.request.urlopen):
 
 
 # ---- CLI ------------------------------------------------------------------
+
+def floor_due(day, data, carried, clip=None, queue=None, launched=None):
+    """The floor post tonight's plan posts (so the Mochi trial make-up yields the 21:00 slot to it), or None.
+    UsageNow keeps its place: when its event or clip wins the plan, nothing is reported and the trial runs as before."""
+    queue = load_evening_queue(EVENING_QUEUE) if queue is None else queue
+    launched = load_launched() if launched is None else launched
+    floor = floor_pick(day, queue, launched, carried)
+    if not floor:
+        return None
+    chosen = plan(day, data, None, clip, queue, launched, carried)
+    return floor if chosen and chosen.get("ct") == floor["ct"] and chosen.get("text") == floor["text"] else None
+
+
+def floor_command(token, day, data, carried, trial_state=None):
+    """floor=true when a floor post owns tonight's slot and the Mochi trial has not already posted in this slot
+    (a rerun keeps the trial's slot: never two posts in one slot)."""
+    due = floor_due(day, data, carried, planned_clip(day))
+    if due and token:
+        import threads_post
+        try:
+            slot = threads_post.slot_time(os.environ.get("THREADS_SLOT", ""))
+            state, _entry = (trial_state or threads_post.trial_state)(token, day, slot, threads_post.load_trial())
+        except Exception as error:  # the trial step then decides on its own lookup, as before
+            print(f"series: could not read the Mochi trial state ({error.__class__.__name__})", file=sys.stderr)
+            state = None
+        if state == "rerun":
+            print("series: the Mochi trial already posted in this slot (a rerun); it keeps the slot")
+            due = None
+    if due:
+        print(f"series: tonight's slot goes to {due['app']} {due['ct']} ({due['date']}); the Mochi trial make-up yields")
+    _output("floor", "true" if due else "false")
+    return 0
+
 
 def _output(key, value):
     path = os.environ.get("GITHUB_OUTPUT")
@@ -372,7 +528,7 @@ def _output(key, value):
 
 def main(argv=None):
     ap = argparse.ArgumentParser()
-    ap.add_argument("command", choices=["preview", "evening", "room", "validate"])
+    ap.add_argument("command", choices=["preview", "evening", "room", "validate", "floor"])
     ap.add_argument("--date", help="Taiwan date YYYY-MM-DD, default today")
     ap.add_argument("--offline", action="store_true", help="preview without the forecast")
     args = ap.parse_args(argv)
@@ -389,8 +545,16 @@ def main(argv=None):
         if not token:
             return 2
         return {"room": 0, "full": 1}.get(room_status(token, data["daily_cap"]), 2)
+    carried = []
+    if token and args.command in ("evening", "floor", "preview"):
+        try:
+            carried = owed_carries(token, day)
+        except LookupFailed as error:
+            print(f"::warning::series: could not tell whether a missed floor post is up ({error}); nothing carried")
+    if args.command == "floor":
+        return floor_command(token, day, data, carried)
     weather = None if args.offline else tomorrow_weather(data["series"]["lumiweather_tomorrow"], day)
-    chosen = plan(day, data, weather, planned_clip(day))
+    chosen = plan(day, data, weather, planned_clip(day), carried=carried)
     if args.command == "preview":
         print(json.dumps(chosen, ensure_ascii=False, indent=1) if chosen else "fallback: planned hook clip")
         return 0

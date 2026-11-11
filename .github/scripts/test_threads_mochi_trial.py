@@ -219,9 +219,9 @@ class TrialMainTests(MainHarness):
 
     def test_the_trial_is_held_by_the_account_cap(self):
         rc, posted, queue = self.run_main("2026-10-20", used=threads_cap.ACCOUNT_DAILY_CAP)
-        self.assertEqual(0, rc)          # full: a skip, green, nothing posted, nothing else posted instead
-        posted.assert_not_called()
-        queue.assert_not_called()
+        self.assertEqual(0, rc)          # full: a skip, green, nothing posted
+        posted.assert_not_called()       # the usual content tries next, held by the same account cap
+        queue.assert_called_once()
         self.assertIn("⏸", self.out.getvalue())
         rc, posted, _ = self.run_main("2026-10-20", used=threads_cap.QuotaUnknown("down"))
         self.assertEqual(1, rc)          # count unknown: nothing posted, red
@@ -240,9 +240,11 @@ class TrialMainTests(MainHarness):
         bad = dict(TRIAL, posts=[dict(POSTS[0], text="The best free checklist app.")])
         with mock.patch.object(threads_post, "load_trial", return_value=bad):
             rc, posted, queue = self.run_main(POSTS[0]["date"])
-        self.assertEqual(1, rc)
-        posted.assert_not_called()
-        queue.assert_not_called()
+        self.assertEqual(1, rc)          # still red for the refused entry
+        # 2026-11-11: nothing of the trial went out, so the slot's usual content takes it (one post, same cap).
+        queue.assert_called_once()
+        self.assertEqual(self.QUEUED["text"], posted.call_args_list[0].args[2])
+        self.assertTrue(all("best free checklist" not in str(c.args[2]) for c in posted.call_args_list))
         self.assertIn("::error::", self.out.getvalue())
 
     def test_a_reply_that_keeps_failing_ends_red_without_reposting(self):
@@ -289,8 +291,10 @@ class TrialSlotTests(MainHarness):
         self.addCleanup(legacy.stop)
         rc, posted, _q, out = self.run_trial("2026-10-20", "01:40", used=threads_cap.ACCOUNT_DAILY_CAP)
         self.assertEqual(0, rc)
-        posted.assert_not_called()   # held by the account cap: nothing goes out, nothing else instead
-        self.assertIn("took=true", out)
+        posted.assert_not_called()   # held by the account cap: nothing goes out
+        # 2026-11-11 (run 43026565129): an entry that did not go out does not take the slot; the slot's usual
+        # content runs next and meets the same account cap, so the account never goes past it.
+        self.assertIn("took=false", out)
         for day, hour in (("2026-10-20", "13:00"), ("2026-10-21", "01:40")):
             with self.subTest(day=day, hour=hour):
                 rc, posted, _q, out = self.run_trial(day, hour, used=1)

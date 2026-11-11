@@ -2,7 +2,7 @@
 title: "UsageNow: Penjejak Guna AI — Had Claude, Codex, Copilot | iOS App"
 lang: "ms"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/claudeusagemini/decision/l/ms/index.html"
-modified: "2026-11-07"
+modified: "2026-11-11"
 app_store_id: "6818607603"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -20,6 +20,7 @@ Tersekat pada had AI di tengah-tengah kerja? UsageNow menunjukkan baki setiap pe
 - Widjet
 - Apple Watch
 - App Store · Percuma
+- ★ 5.0/5 · 1
 
 [Dapatkan UsageNow: Penjejak Guna AI di App Store](https://apps.apple.com/my/app/id6818607603?pt=118326163&ct=geo_pick&mt=8)
 

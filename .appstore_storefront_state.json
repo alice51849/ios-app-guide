@@ -1,7 +1,7 @@
 {
   "version": 2,
   "source": "Apple iTunes Lookup API",
-  "checked_at": "2026-11-06T18:00:16Z",
+  "checked_at": "2026-11-11T09:23:47Z",
   "app_count": 59,
   "app_ids": [
     "6754218117",
@@ -63,6 +63,50 @@
     "6824946559",
     "6826987407",
     "6829184924"
+  ],
+  "storefronts": [
+    "au",
+    "bd",
+    "br",
+    "ca",
+    "cn",
+    "cz",
+    "de",
+    "dk",
+    "es",
+    "fi",
+    "fr",
+    "gb",
+    "gr",
+    "hk",
+    "hr",
+    "hu",
+    "id",
+    "il",
+    "in",
+    "it",
+    "jp",
+    "kr",
+    "mo",
+    "mx",
+    "my",
+    "nl",
+    "no",
+    "pk",
+    "pl",
+    "pt",
+    "ro",
+    "ru",
+    "sa",
+    "se",
+    "si",
+    "sk",
+    "th",
+    "tr",
+    "tw",
+    "ua",
+    "us",
+    "vn"
   ],
   "countries": {
     "au": [
@@ -252,7 +296,6 @@
     "cn": [
       "6754218117",
       "6755782939",
-      "6775773117",
       "6779552704",
       "6779745474",
       "6779750237",
@@ -789,6 +832,67 @@
       "6826987407",
       "6829184924"
     ],
+    "hk": [
+      "6754218117",
+      "6755782939",
+      "6773017109",
+      "6775773117",
+      "6776958488",
+      "6778269699",
+      "6778491147",
+      "6778748533",
+      "6779552704",
+      "6779745474",
+      "6779750237",
+      "6779977651",
+      "6780107485",
+      "6780223070",
+      "6780575828",
+      "6781337213",
+      "6781808054",
+      "6782139553",
+      "6782251621",
+      "6782275018",
+      "6784974530",
+      "6785004775",
+      "6787193643",
+      "6787754435",
+      "6788236641",
+      "6789917808",
+      "6790418321",
+      "6790467886",
+      "6790800323",
+      "6791299610",
+      "6791658210",
+      "6792850916",
+      "6792856304",
+      "6793414462",
+      "6793436548",
+      "6794039979",
+      "6794178671",
+      "6794725568",
+      "6797601720",
+      "6798813048",
+      "6798814385",
+      "6801956402",
+      "6802166527",
+      "6802423998",
+      "6802505528",
+      "6804564400",
+      "6806639602",
+      "6806776579",
+      "6806779853",
+      "6806826699",
+      "6807079789",
+      "6807335593",
+      "6814035888",
+      "6818607603",
+      "6819061896",
+      "6821790092",
+      "6824946559",
+      "6826987407",
+      "6829184924"
+    ],
     "hr": [
       "6754218117",
       "6755782939",
@@ -1217,6 +1321,67 @@
       "6829184924"
     ],
     "kr": [
+      "6754218117",
+      "6755782939",
+      "6773017109",
+      "6775773117",
+      "6776958488",
+      "6778269699",
+      "6778491147",
+      "6778748533",
+      "6779552704",
+      "6779745474",
+      "6779750237",
+      "6779977651",
+      "6780107485",
+      "6780223070",
+      "6780575828",
+      "6781337213",
+      "6781808054",
+      "6782139553",
+      "6782251621",
+      "6782275018",
+      "6784974530",
+      "6785004775",
+      "6787193643",
+      "6787754435",
+      "6788236641",
+      "6789917808",
+      "6790418321",
+      "6790467886",
+      "6790800323",
+      "6791299610",
+      "6791658210",
+      "6792850916",
+      "6792856304",
+      "6793414462",
+      "6793436548",
+      "6794039979",
+      "6794178671",
+      "6794725568",
+      "6797601720",
+      "6798813048",
+      "6798814385",
+      "6801956402",
+      "6802166527",
+      "6802423998",
+      "6802505528",
+      "6804564400",
+      "6806639602",
+      "6806776579",
+      "6806779853",
+      "6806826699",
+      "6807079789",
+      "6807335593",
+      "6814035888",
+      "6818607603",
+      "6819061896",
+      "6821790092",
+      "6824946559",
+      "6826987407",
+      "6829184924"
+    ],
+    "mo": [
       "6754218117",
       "6755782939",
       "6773017109",
@@ -2455,9 +2620,9 @@
         "formatted_price": "Free"
       },
       "6775773117": {
-        "price": "0",
+        "price": "14.99",
         "currency": "AUD",
-        "formatted_price": "Free"
+        "formatted_price": "$14.99"
       },
       "6776958488": {
         "price": "14.99",
@@ -2755,9 +2920,9 @@
         "formatted_price": "Grátis"
       },
       "6775773117": {
-        "price": "0",
+        "price": "59.9",
         "currency": "BRL",
-        "formatted_price": "Grátis"
+        "formatted_price": "R$ 59,90"
       },
       "6776958488": {
         "price": "59.9",
@@ -3056,9 +3221,9 @@
         "formatted_price": "Free"
       },
       "6775773117": {
-        "price": "0",
+        "price": "11.99",
         "currency": "CAD",
-        "formatted_price": "Free"
+        "formatted_price": "$11.99"
       },
       "6776958488": {
         "price": "11.99",
@@ -3349,11 +3514,6 @@
         "currency": "CNY",
         "formatted_price": "¥38.00"
       },
-      "6775773117": {
-        "price": "0",
-        "currency": "CNY",
-        "formatted_price": "免费"
-      },
       "6779552704": {
         "price": "0",
         "currency": "CNY",
@@ -3591,7 +3751,9 @@
       "6824946559": {
         "price": "0",
         "currency": "CNY",
-        "formatted_price": "免费"
+        "formatted_price": "免费",
+        "rating_value": 5.0,
+        "rating_count": 1
       },
       "6826987407": {
         "price": "0",
@@ -3616,9 +3778,9 @@
         "formatted_price": "Free"
       },
       "6775773117": {
-        "price": "0",
+        "price": "249",
         "currency": "CZK",
-        "formatted_price": "Free"
+        "formatted_price": "249,00 Kč"
       },
       "6776958488": {
         "price": "249",
@@ -3913,9 +4075,9 @@
         "formatted_price": "Gratis"
       },
       "6775773117": {
-        "price": "0",
+        "price": "9.99",
         "currency": "EUR",
-        "formatted_price": "Gratis"
+        "formatted_price": "9,99 €"
       },
       "6776958488": {
         "price": "9.99",
@@ -4218,9 +4380,9 @@
         "formatted_price": "Free"
       },
       "6775773117": {
-        "price": "0",
+        "price": "79",
         "currency": "DKK",
-        "formatted_price": "Free"
+        "formatted_price": "79,00 kr"
       },
       "6776958488": {
         "price": "79",
@@ -4515,9 +4677,9 @@
         "formatted_price": "Gratis"
       },
       "6775773117": {
-        "price": "0",
+        "price": "9.99",
         "currency": "EUR",
-        "formatted_price": "Gratis"
+        "formatted_price": "9,99 €"
       },
       "6776958488": {
         "price": "9.99",
@@ -4812,9 +4974,9 @@
         "formatted_price": "Free"
       },
       "6775773117": {
-        "price": "0",
+        "price": "9.99",
         "currency": "EUR",
-        "formatted_price": "Free"
+        "formatted_price": "9,99 €"
       },
       "6776958488": {
         "price": "9.99",
@@ -5109,9 +5271,9 @@
         "formatted_price": "Gratuit"
       },
       "6775773117": {
-        "price": "0",
+        "price": "9.99",
         "currency": "EUR",
-        "formatted_price": "Gratuit"
+        "formatted_price": "9,99 €"
       },
       "6776958488": {
         "price": "9.99",
@@ -5405,9 +5567,9 @@
         "formatted_price": "Free"
       },
       "6775773117": {
-        "price": "0",
+        "price": "8.99",
         "currency": "GBP",
-        "formatted_price": "Free"
+        "formatted_price": "£8.99"
       },
       "6776958488": {
         "price": "8.99",
@@ -5704,9 +5866,9 @@
         "formatted_price": "Free"
       },
       "6775773117": {
-        "price": "0",
+        "price": "9.99",
         "currency": "EUR",
-        "formatted_price": "Free"
+        "formatted_price": "9,99 €"
       },
       "6776958488": {
         "price": "9.99",
@@ -5988,6 +6150,305 @@
         "formatted_price": "6,99 €"
       }
     },
+    "hk": {
+      "6754218117": {
+        "price": "38",
+        "currency": "HKD",
+        "formatted_price": "HK$ 38.00"
+      },
+      "6755782939": {
+        "price": "38",
+        "currency": "HKD",
+        "formatted_price": "HK$ 38.00"
+      },
+      "6773017109": {
+        "price": "0",
+        "currency": "HKD",
+        "formatted_price": "免費"
+      },
+      "6775773117": {
+        "price": "68",
+        "currency": "HKD",
+        "formatted_price": "HK$ 68.00"
+      },
+      "6776958488": {
+        "price": "68",
+        "currency": "HKD",
+        "formatted_price": "HK$ 68.00"
+      },
+      "6778269699": {
+        "price": "0",
+        "currency": "HKD",
+        "formatted_price": "免費"
+      },
+      "6778491147": {
+        "price": "68",
+        "currency": "HKD",
+        "formatted_price": "HK$ 68.00"
+      },
+      "6778748533": {
+        "price": "0",
+        "currency": "HKD",
+        "formatted_price": "免費"
+      },
+      "6779552704": {
+        "price": "0",
+        "currency": "HKD",
+        "formatted_price": "免費"
+      },
+      "6779745474": {
+        "price": "48",
+        "currency": "HKD",
+        "formatted_price": "HK$ 48.00"
+      },
+      "6779750237": {
+        "price": "0",
+        "currency": "HKD",
+        "formatted_price": "免費"
+      },
+      "6779977651": {
+        "price": "0",
+        "currency": "HKD",
+        "formatted_price": "免費"
+      },
+      "6780107485": {
+        "price": "0",
+        "currency": "HKD",
+        "formatted_price": "免費"
+      },
+      "6780223070": {
+        "price": "0",
+        "currency": "HKD",
+        "formatted_price": "免費"
+      },
+      "6780575828": {
+        "price": "48",
+        "currency": "HKD",
+        "formatted_price": "HK$ 48.00"
+      },
+      "6781337213": {
+        "price": "0",
+        "currency": "HKD",
+        "formatted_price": "免費"
+      },
+      "6781808054": {
+        "price": "0",
+        "currency": "HKD",
+        "formatted_price": "免費"
+      },
+      "6782139553": {
+        "price": "0",
+        "currency": "HKD",
+        "formatted_price": "免費"
+      },
+      "6782251621": {
+        "price": "0",
+        "currency": "HKD",
+        "formatted_price": "免費"
+      },
+      "6782275018": {
+        "price": "0",
+        "currency": "HKD",
+        "formatted_price": "免費"
+      },
+      "6784974530": {
+        "price": "0",
+        "currency": "HKD",
+        "formatted_price": "免費"
+      },
+      "6785004775": {
+        "price": "0",
+        "currency": "HKD",
+        "formatted_price": "免費",
+        "rating_value": 4.0,
+        "rating_count": 1
+      },
+      "6787193643": {
+        "price": "0",
+        "currency": "HKD",
+        "formatted_price": "免費"
+      },
+      "6787754435": {
+        "price": "48",
+        "currency": "HKD",
+        "formatted_price": "HK$ 48.00"
+      },
+      "6788236641": {
+        "price": "0",
+        "currency": "HKD",
+        "formatted_price": "免費"
+      },
+      "6789917808": {
+        "price": "68",
+        "currency": "HKD",
+        "formatted_price": "HK$ 68.00"
+      },
+      "6790418321": {
+        "price": "88",
+        "currency": "HKD",
+        "formatted_price": "HK$ 88.00"
+      },
+      "6790467886": {
+        "price": "48",
+        "currency": "HKD",
+        "formatted_price": "HK$ 48.00"
+      },
+      "6790800323": {
+        "price": "0",
+        "currency": "HKD",
+        "formatted_price": "免費"
+      },
+      "6791299610": {
+        "price": "0",
+        "currency": "HKD",
+        "formatted_price": "免費"
+      },
+      "6791658210": {
+        "price": "0",
+        "currency": "HKD",
+        "formatted_price": "免費"
+      },
+      "6792850916": {
+        "price": "0",
+        "currency": "HKD",
+        "formatted_price": "免費"
+      },
+      "6792856304": {
+        "price": "0",
+        "currency": "HKD",
+        "formatted_price": "免費"
+      },
+      "6793414462": {
+        "price": "0",
+        "currency": "HKD",
+        "formatted_price": "免費"
+      },
+      "6793436548": {
+        "price": "0",
+        "currency": "HKD",
+        "formatted_price": "免費"
+      },
+      "6794039979": {
+        "price": "0",
+        "currency": "HKD",
+        "formatted_price": "免費"
+      },
+      "6794178671": {
+        "price": "0",
+        "currency": "HKD",
+        "formatted_price": "免費"
+      },
+      "6794725568": {
+        "price": "0",
+        "currency": "HKD",
+        "formatted_price": "免費"
+      },
+      "6797601720": {
+        "price": "0",
+        "currency": "HKD",
+        "formatted_price": "免費"
+      },
+      "6798813048": {
+        "price": "0",
+        "currency": "HKD",
+        "formatted_price": "免費"
+      },
+      "6798814385": {
+        "price": "0",
+        "currency": "HKD",
+        "formatted_price": "免費"
+      },
+      "6801956402": {
+        "price": "0",
+        "currency": "HKD",
+        "formatted_price": "免費"
+      },
+      "6802166527": {
+        "price": "0",
+        "currency": "HKD",
+        "formatted_price": "免費"
+      },
+      "6802423998": {
+        "price": "0",
+        "currency": "HKD",
+        "formatted_price": "免費"
+      },
+      "6802505528": {
+        "price": "0",
+        "currency": "HKD",
+        "formatted_price": "免費"
+      },
+      "6804564400": {
+        "price": "68",
+        "currency": "HKD",
+        "formatted_price": "HK$ 68.00"
+      },
+      "6806639602": {
+        "price": "0",
+        "currency": "HKD",
+        "formatted_price": "免費"
+      },
+      "6806776579": {
+        "price": "38",
+        "currency": "HKD",
+        "formatted_price": "HK$ 38.00"
+      },
+      "6806779853": {
+        "price": "0",
+        "currency": "HKD",
+        "formatted_price": "免費"
+      },
+      "6806826699": {
+        "price": "0",
+        "currency": "HKD",
+        "formatted_price": "免費"
+      },
+      "6807079789": {
+        "price": "0",
+        "currency": "HKD",
+        "formatted_price": "免費"
+      },
+      "6807335593": {
+        "price": "0",
+        "currency": "HKD",
+        "formatted_price": "免費"
+      },
+      "6814035888": {
+        "price": "0",
+        "currency": "HKD",
+        "formatted_price": "免費"
+      },
+      "6818607603": {
+        "price": "0",
+        "currency": "HKD",
+        "formatted_price": "免費"
+      },
+      "6819061896": {
+        "price": "22",
+        "currency": "HKD",
+        "formatted_price": "HK$ 22.00"
+      },
+      "6821790092": {
+        "price": "0",
+        "currency": "HKD",
+        "formatted_price": "免費"
+      },
+      "6824946559": {
+        "price": "0",
+        "currency": "HKD",
+        "formatted_price": "免費"
+      },
+      "6826987407": {
+        "price": "0",
+        "currency": "HKD",
+        "formatted_price": "免費"
+      },
+      "6829184924": {
+        "price": "48",
+        "currency": "HKD",
+        "formatted_price": "HK$ 48.00"
+      }
+    },
     "hr": {
       "6754218117": {
         "price": "5.99",
@@ -6005,9 +6466,9 @@
         "formatted_price": "Free"
       },
       "6775773117": {
-        "price": "0",
+        "price": "9.99",
         "currency": "EUR",
-        "formatted_price": "Free"
+        "formatted_price": "9,99 €"
       },
       "6776958488": {
         "price": "9.99",
@@ -6302,9 +6763,9 @@
         "formatted_price": "Free"
       },
       "6775773117": {
-        "price": "0",
+        "price": "3990",
         "currency": "HUF",
-        "formatted_price": "Free"
+        "formatted_price": "HUF3,990.00"
       },
       "6776958488": {
         "price": "3990",
@@ -6599,9 +7060,9 @@
         "formatted_price": "Free"
       },
       "6775773117": {
-        "price": "0",
+        "price": "179000",
         "currency": "IDR",
-        "formatted_price": "Free"
+        "formatted_price": "Rp 179ribu"
       },
       "6776958488": {
         "price": "149000",
@@ -6793,7 +7254,7 @@
         "currency": "IDR",
         "formatted_price": "Free",
         "rating_value": 5.0,
-        "rating_count": 1
+        "rating_count": 2
       },
       "6802166527": {
         "price": "0",
@@ -6898,9 +7359,9 @@
         "formatted_price": "Free"
       },
       "6775773117": {
-        "price": "0",
+        "price": "29.9",
         "currency": "ILS",
-        "formatted_price": "Free"
+        "formatted_price": "₪29.90"
       },
       "6776958488": {
         "price": "29.9",
@@ -7195,9 +7656,9 @@
         "formatted_price": "Free"
       },
       "6775773117": {
-        "price": "0",
+        "price": "999",
         "currency": "INR",
-        "formatted_price": "Free"
+        "formatted_price": "₹ 999"
       },
       "6776958488": {
         "price": "999",
@@ -7496,9 +7957,9 @@
         "formatted_price": "Gratis"
       },
       "6775773117": {
-        "price": "0",
+        "price": "9.99",
         "currency": "EUR",
-        "formatted_price": "Gratis"
+        "formatted_price": "9,99 €"
       },
       "6776958488": {
         "price": "9.99",
@@ -7799,9 +8260,9 @@
         "rating_count": 2
       },
       "6775773117": {
-        "price": "0",
+        "price": "1500",
         "currency": "JPY",
-        "formatted_price": "無料",
+        "formatted_price": "¥1,500",
         "rating_value": 5.0,
         "rating_count": 1
       },
@@ -8104,9 +8565,9 @@
         "formatted_price": "무료"
       },
       "6775773117": {
-        "price": "0",
+        "price": "15000",
         "currency": "KRW",
-        "formatted_price": "무료"
+        "formatted_price": "￦15,000"
       },
       "6776958488": {
         "price": "15000",
@@ -8384,6 +8845,303 @@
         "formatted_price": "￦9,900"
       }
     },
+    "mo": {
+      "6754218117": {
+        "price": "4.99",
+        "currency": "USD",
+        "formatted_price": "USD 4.99"
+      },
+      "6755782939": {
+        "price": "4.99",
+        "currency": "USD",
+        "formatted_price": "USD 4.99"
+      },
+      "6773017109": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "免費"
+      },
+      "6775773117": {
+        "price": "8.99",
+        "currency": "USD",
+        "formatted_price": "USD 8.99"
+      },
+      "6776958488": {
+        "price": "8.99",
+        "currency": "USD",
+        "formatted_price": "USD 8.99"
+      },
+      "6778269699": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "免費"
+      },
+      "6778491147": {
+        "price": "8.99",
+        "currency": "USD",
+        "formatted_price": "USD 8.99"
+      },
+      "6778748533": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "免費"
+      },
+      "6779552704": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "免費"
+      },
+      "6779745474": {
+        "price": "5.99",
+        "currency": "USD",
+        "formatted_price": "USD 5.99"
+      },
+      "6779750237": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "免費"
+      },
+      "6779977651": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "免費"
+      },
+      "6780107485": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "免費"
+      },
+      "6780223070": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "免費"
+      },
+      "6780575828": {
+        "price": "5.99",
+        "currency": "USD",
+        "formatted_price": "USD 5.99"
+      },
+      "6781337213": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "免費"
+      },
+      "6781808054": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "免費"
+      },
+      "6782139553": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "免費"
+      },
+      "6782251621": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "免費"
+      },
+      "6782275018": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "免費"
+      },
+      "6784974530": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "免費"
+      },
+      "6785004775": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "免費"
+      },
+      "6787193643": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "免費"
+      },
+      "6787754435": {
+        "price": "5.99",
+        "currency": "USD",
+        "formatted_price": "USD 5.99"
+      },
+      "6788236641": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "免費"
+      },
+      "6789917808": {
+        "price": "8.99",
+        "currency": "USD",
+        "formatted_price": "USD 8.99"
+      },
+      "6790418321": {
+        "price": "11.99",
+        "currency": "USD",
+        "formatted_price": "USD 11.99"
+      },
+      "6790467886": {
+        "price": "5.99",
+        "currency": "USD",
+        "formatted_price": "USD 5.99"
+      },
+      "6790800323": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "免費"
+      },
+      "6791299610": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "免費"
+      },
+      "6791658210": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "免費"
+      },
+      "6792850916": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "免費"
+      },
+      "6792856304": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "免費"
+      },
+      "6793414462": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "免費"
+      },
+      "6793436548": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "免費"
+      },
+      "6794039979": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "免費"
+      },
+      "6794178671": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "免費"
+      },
+      "6794725568": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "免費"
+      },
+      "6797601720": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "免費"
+      },
+      "6798813048": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "免費"
+      },
+      "6798814385": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "免費"
+      },
+      "6801956402": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "免費"
+      },
+      "6802166527": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "免費"
+      },
+      "6802423998": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "免費"
+      },
+      "6802505528": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "免費"
+      },
+      "6804564400": {
+        "price": "8.99",
+        "currency": "USD",
+        "formatted_price": "USD 8.99"
+      },
+      "6806639602": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "免費"
+      },
+      "6806776579": {
+        "price": "4.99",
+        "currency": "USD",
+        "formatted_price": "USD 4.99"
+      },
+      "6806779853": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "免費"
+      },
+      "6806826699": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "免費"
+      },
+      "6807079789": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "免費"
+      },
+      "6807335593": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "免費"
+      },
+      "6814035888": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "免費"
+      },
+      "6818607603": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "免費"
+      },
+      "6819061896": {
+        "price": "2.99",
+        "currency": "USD",
+        "formatted_price": "USD 2.99"
+      },
+      "6821790092": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "免費"
+      },
+      "6824946559": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "免費"
+      },
+      "6826987407": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "免費"
+      },
+      "6829184924": {
+        "price": "5.99",
+        "currency": "USD",
+        "formatted_price": "USD 5.99"
+      }
+    },
     "mx": {
       "6754218117": {
         "price": "99",
@@ -8401,9 +9159,9 @@
         "formatted_price": "Gratis"
       },
       "6775773117": {
-        "price": "0",
+        "price": "199",
         "currency": "MXN",
-        "formatted_price": "Gratis"
+        "formatted_price": "$199.00"
       },
       "6776958488": {
         "price": "199",
@@ -8702,9 +9460,9 @@
         "formatted_price": "Free"
       },
       "6775773117": {
-        "price": "0",
+        "price": "39.9",
         "currency": "MYR",
-        "formatted_price": "Free"
+        "formatted_price": "RM39.90"
       },
       "6776958488": {
         "price": "39.9",
@@ -8954,7 +9712,9 @@
       "6818607603": {
         "price": "0",
         "currency": "MYR",
-        "formatted_price": "Free"
+        "formatted_price": "Free",
+        "rating_value": 5.0,
+        "rating_count": 1
       },
       "6819061896": {
         "price": "14.9",
@@ -8999,9 +9759,9 @@
         "formatted_price": "Gratis"
       },
       "6775773117": {
-        "price": "0",
+        "price": "9.99",
         "currency": "EUR",
-        "formatted_price": "Gratis"
+        "formatted_price": "€ 9,99"
       },
       "6776958488": {
         "price": "9.99",
@@ -9296,9 +10056,9 @@
         "formatted_price": "Free"
       },
       "6775773117": {
-        "price": "0",
+        "price": "99",
         "currency": "NOK",
-        "formatted_price": "Free"
+        "formatted_price": "99,00 kr"
       },
       "6776958488": {
         "price": "99",
@@ -9593,9 +10353,9 @@
         "formatted_price": "Free"
       },
       "6775773117": {
-        "price": "0",
+        "price": "2500",
         "currency": "PKR",
-        "formatted_price": "Free"
+        "formatted_price": "Rs 2,500.00"
       },
       "6776958488": {
         "price": "2500",
@@ -9890,9 +10650,9 @@
         "formatted_price": "Free"
       },
       "6775773117": {
-        "price": "0",
+        "price": "39.99",
         "currency": "PLN",
-        "formatted_price": "Free"
+        "formatted_price": "39,99 zł"
       },
       "6776958488": {
         "price": "39.99",
@@ -10187,9 +10947,9 @@
         "formatted_price": "Gratuito"
       },
       "6775773117": {
-        "price": "0",
+        "price": "9.99",
         "currency": "EUR",
-        "formatted_price": "Gratuito"
+        "formatted_price": "9,99 €"
       },
       "6776958488": {
         "price": "9.99",
@@ -10484,9 +11244,9 @@
         "formatted_price": "Free"
       },
       "6775773117": {
-        "price": "0",
+        "price": "49.99",
         "currency": "RON",
-        "formatted_price": "Free"
+        "formatted_price": "49,99 lei"
       },
       "6776958488": {
         "price": "49.99",
@@ -10783,9 +11543,9 @@
         "formatted_price": "Бесплатно"
       },
       "6775773117": {
-        "price": "0",
+        "price": "799",
         "currency": "RUB",
-        "formatted_price": "Бесплатно"
+        "formatted_price": "799,00 ₽"
       },
       "6776958488": {
         "price": "799",
@@ -11080,9 +11840,9 @@
         "formatted_price": "Free"
       },
       "6775773117": {
-        "price": "0",
+        "price": "39.99",
         "currency": "SAR",
-        "formatted_price": "Free"
+        "formatted_price": "SAR 39.99"
       },
       "6776958488": {
         "price": "39.99",
@@ -11680,9 +12440,9 @@
         "formatted_price": "Free"
       },
       "6775773117": {
-        "price": "0",
+        "price": "9.99",
         "currency": "EUR",
-        "formatted_price": "Free"
+        "formatted_price": "9,99 €"
       },
       "6776958488": {
         "price": "9.99",
@@ -11977,9 +12737,9 @@
         "formatted_price": "Free"
       },
       "6775773117": {
-        "price": "0",
+        "price": "9.99",
         "currency": "EUR",
-        "formatted_price": "Free"
+        "formatted_price": "9,99 €"
       },
       "6776958488": {
         "price": "9.99",
@@ -12274,9 +13034,9 @@
         "formatted_price": "Free"
       },
       "6775773117": {
-        "price": "0",
+        "price": "299",
         "currency": "THB",
-        "formatted_price": "Free"
+        "formatted_price": "฿299.00"
       },
       "6776958488": {
         "price": "299",
@@ -12575,9 +13335,9 @@
         "formatted_price": "Free"
       },
       "6775773117": {
-        "price": "0",
+        "price": "499.99",
         "currency": "TRY",
-        "formatted_price": "Free"
+        "formatted_price": "₺499,99"
       },
       "6776958488": {
         "price": "499.99",
@@ -12880,11 +13640,11 @@
         "rating_count": 8
       },
       "6775773117": {
-        "price": "0",
+        "price": "290",
         "currency": "TWD",
-        "formatted_price": "免費",
-        "rating_value": 4.0,
-        "rating_count": 2
+        "formatted_price": "$290.00",
+        "rating_value": 4.3,
+        "rating_count": 3
       },
       "6776958488": {
         "price": "290",
@@ -12916,8 +13676,8 @@
         "price": "0",
         "currency": "TWD",
         "formatted_price": "免費",
-        "rating_value": 5.0,
-        "rating_count": 2
+        "rating_value": 4.3,
+        "rating_count": 3
       },
       "6779745474": {
         "price": "190",
@@ -13001,8 +13761,8 @@
         "price": "0",
         "currency": "TWD",
         "formatted_price": "免費",
-        "rating_value": 4.4,
-        "rating_count": 5
+        "rating_value": 4.5,
+        "rating_count": 6
       },
       "6787193643": {
         "price": "0",
@@ -13193,7 +13953,9 @@
       "6819061896": {
         "price": "90",
         "currency": "TWD",
-        "formatted_price": "$90.00"
+        "formatted_price": "$90.00",
+        "rating_value": 5.0,
+        "rating_count": 4
       },
       "6821790092": {
         "price": "0",
@@ -13237,9 +13999,9 @@
         "formatted_price": "Free"
       },
       "6775773117": {
-        "price": "0",
+        "price": "9.99",
         "currency": "USD",
-        "formatted_price": "Free"
+        "formatted_price": "9,99 USD"
       },
       "6776958488": {
         "price": "9.99",
@@ -13536,9 +14298,9 @@
         "formatted_price": "Free"
       },
       "6775773117": {
-        "price": "0",
+        "price": "8.99",
         "currency": "USD",
-        "formatted_price": "Free"
+        "formatted_price": "$8.99"
       },
       "6776958488": {
         "price": "8.99",
@@ -13618,8 +14380,8 @@
         "price": "0",
         "currency": "USD",
         "formatted_price": "Free",
-        "rating_value": 4.7,
-        "rating_count": 3
+        "rating_value": 4.8,
+        "rating_count": 4
       },
       "6782275018": {
         "price": "0",
@@ -13637,8 +14399,8 @@
         "price": "0",
         "currency": "USD",
         "formatted_price": "Free",
-        "rating_value": 4.2,
-        "rating_count": 43
+        "rating_value": 4.3,
+        "rating_count": 47
       },
       "6787193643": {
         "price": "0",
@@ -13780,7 +14542,9 @@
       "6806826699": {
         "price": "0",
         "currency": "USD",
-        "formatted_price": "Free"
+        "formatted_price": "Free",
+        "rating_value": 5.0,
+        "rating_count": 1
       },
       "6807079789": {
         "price": "0",
@@ -13845,9 +14609,9 @@
         "formatted_price": "Free"
       },
       "6775773117": {
-        "price": "0",
+        "price": "299000",
         "currency": "VND",
-        "formatted_price": "Free"
+        "formatted_price": "299.000đ"
       },
       "6776958488": {
         "price": "299000",

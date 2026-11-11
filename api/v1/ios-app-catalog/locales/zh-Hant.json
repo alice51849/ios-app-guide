@@ -2,7 +2,7 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-11-11",
-  "content_digest": "dbb9b38a59afbe268df7011425f71093d9f9ab4c8ecd9710793f76cc977f85f8",
+  "content_digest": "55b7da80e6100894e605308387eab211f7ed4d47ab1105b184de38ef3003b0eb",
   "locale": "zh-Hant",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -96,7 +96,10 @@
         "懶人包",
         "複製貼上",
         "工作效率",
-        "掃描"
+        "掃描",
+        "提示詞管理",
+        "pdf 總結",
+        "ai 提示詞"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -154,8 +157,8 @@
         "求職",
         "畢業門檻",
         "上班族",
-        "多益",
-        "英文檢定"
+        "英文檢定",
+        "多益"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -195,7 +198,8 @@
         "充電速率",
         "匯出資料",
         "電池檢測",
-        "電池"
+        "電池",
+        "電池健康度"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -416,7 +420,8 @@
         "日記",
         "症狀",
         "心情",
-        "經期 追蹤"
+        "經期 追蹤",
+        "月經 app"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1230,11 +1235,11 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/lumibopomofopro.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "0",
+        "price": "290",
         "currency": "TWD",
-        "formatted_price": "免費",
-        "rating_value": 4.0,
-        "rating_count": 2,
+        "formatted_price": "$290.00",
+        "rating_value": 4.3,
+        "rating_count": 3,
         "storefront_url": "https://apps.apple.com/tw/app/id6775773117"
       }
     },
@@ -1513,8 +1518,8 @@
         "幼兒園",
         "早睡早起",
         "兒童 習慣",
-        "獎勵 貼紙",
-        "睡前 習慣"
+        "睡前 習慣",
+        "獎勵 貼紙"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1632,7 +1637,7 @@
         "逐時",
         "一週",
         "穿搭 天氣",
-        "天氣"
+        "天氣 穿搭"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1652,8 +1657,8 @@
         "price": "0",
         "currency": "TWD",
         "formatted_price": "免費",
-        "rating_value": 5.0,
-        "rating_count": 2,
+        "rating_value": 4.3,
+        "rating_count": 3,
         "storefront_url": "https://apps.apple.com/tw/app/id6779552704"
       }
     },
@@ -1825,6 +1830,8 @@
         "price": "90",
         "currency": "TWD",
         "formatted_price": "$90.00",
+        "rating_value": 5.0,
+        "rating_count": 4,
         "storefront_url": "https://apps.apple.com/tw/app/id6819061896"
       }
     },
@@ -1862,8 +1869,7 @@
         "行事曆",
         "任務",
         "鎖定畫面",
-        "重複提醒",
-        "代辦事項"
+        "重複提醒"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1883,8 +1889,8 @@
         "price": "0",
         "currency": "TWD",
         "formatted_price": "免費",
-        "rating_value": 4.4,
-        "rating_count": 5,
+        "rating_value": 4.5,
+        "rating_count": 6,
         "storefront_url": "https://apps.apple.com/tw/app/id6785004775"
       }
     },
@@ -1983,8 +1989,7 @@
         "團購",
         "活動",
         "家庭",
-        "流水帳",
-        "副業 記帳"
+        "流水帳"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2268,8 +2273,7 @@
         "網頁書籤",
         "管理",
         "整理",
-        "收藏 連結",
-        "連結 整理"
+        "收藏 連結"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2938,7 +2942,8 @@
         "備份",
         "手錶",
         "行程安排",
-        "共同編輯"
+        "共同編輯",
+        "旅遊 行程"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -2989,7 +2994,8 @@
         "低光源修復",
         "人臉增強",
         "手震模糊",
-        "文件清晰"
+        "文件清晰",
+        "照片 變清晰"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

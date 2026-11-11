@@ -6,7 +6,7 @@
   "name": "Lumi Studio 开发者搜索意图目录",
   "description": "第一方目录，说明每款 App 的适用人群、想完成的任务以及直达 App Store 的下载入口。",
   "inLanguage": "zh-Hans",
-  "dateModified": "2026-11-05",
+  "dateModified": "2026-11-11",
   "numberOfItems": 59,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -1325,67 +1325,61 @@
     {
       "@type": "ListItem",
       "position": 21,
-      "url": "https://apps.apple.com/cn/app/id6775773117?pt=118326163&ct=geo_pick&mt=8",
+      "url": "https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-complete-zhuyin-app-for-bilingual-children.html",
       "item": {
-        "@type": "Offer",
-        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-lumibopomofopro",
-        "url": "https://apps.apple.com/cn/app/id6775773117?pt=118326163&ct=geo_pick&mt=8",
+        "@context": "https://schema.org",
+        "@type": "MobileApplication",
+        "@id": "urn:apple:app:id6775773117",
+        "identifier": {
+          "@type": "PropertyValue",
+          "propertyID": "Apple App Store ID",
+          "value": "6775773117"
+        },
         "name": "Lumi Bopomofo Pro",
-        "description": "双语儿童在家学习注音需要一条完整路径，涵盖发音、符号、声调和拼读，并有足够趣味重复让系统变得熟悉。这个缺口，正是 Lumi Bopomofo Pro 想补上的。",
-        "seller": {
-          "@type": "Organization",
-          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
-          "name": "Lumi Studio",
-          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        "operatingSystem": "iOS",
+        "applicationCategory": "EducationalApplication",
+        "url": null,
+        "mainEntityOfPage": {
+          "@id": "https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-complete-zhuyin-app-for-bilingual-children.html#webpage"
         },
-        "itemOffered": {
-          "@type": "MobileApplication",
-          "@id": "https://apps.apple.com/app/id6775773117",
-          "identifier": {
-            "@type": "PropertyValue",
-            "propertyID": "Apple App Store ID",
-            "value": "6775773117"
+        "market_availability": {
+          "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+          "reason": "MARKET_APP_NOT_SOLD",
+          "evidence": {
+            "source_url": "https://itunes.apple.com/lookup?id=6791658210,6778748533,6778269699,6776958488,6787193643,6775773117&country=cn&entity=software",
+            "observed_at": "2026-11-11",
+            "country": "CN",
+            "lookup_app_results": 0,
+            "lookup_control_app_id": "6791658210",
+            "lookup_control_results": 1,
+            "response_sha256": "b7b0e4b47a45c55db79c96a129e9f4b38b99b1214afde2078f894f4c41a9fb3f",
+            "app_store_id": "6775773117"
           },
-          "name": "Lumi Bopomofo Pro",
-          "operatingSystem": "iOS",
-          "applicationCategory": "EducationalApplication",
-          "url": "https://apps.apple.com/cn/app/id6775773117?pt=118326163&ct=geo_pick&mt=8",
-          "installUrl": "https://apps.apple.com/cn/app/id6775773117?pt=118326163&ct=geo_pick&mt=8",
-          "downloadUrl": "https://apps.apple.com/cn/app/id6775773117?pt=118326163&ct=geo_pick&mt=8",
-          "potentialAction": {
-            "@type": "InstallAction",
-            "target": "https://apps.apple.com/cn/app/id6775773117?pt=118326163&ct=geo_pick&mt=8"
-          },
-          "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-complete-zhuyin-app-for-bilingual-children.html#webpage"
-          },
-          "sameAs": "https://apps.apple.com/app/id6775773117",
-          "inLanguage": "zh-Hans",
-          "description": "双语儿童在家学习注音需要一条完整路径，涵盖发音、符号、声调和拼读，并有足够趣味重复让系统变得熟悉。这个缺口，正是 Lumi Bopomofo Pro 想补上的。",
-          "offers": {
-            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-lumibopomofopro"
-          },
-          "additionalProperty": [
-            {
-              "@type": "PropertyValue",
-              "name": "purchase_model",
-              "value": "paid_upfront"
-            },
-            {
-              "@type": "PropertyValue",
-              "name": "one_time_option",
-              "value": true
-            }
-          ],
-          "isAccessibleForFree": true
-        },
-        "price": "0",
-        "priceCurrency": "CNY",
-        "availability": "https://schema.org/InStock",
-        "eligibleRegion": {
-          "@type": "Country",
-          "identifier": "CN"
+          "value": "N/A",
+          "content_retained": true,
+          "publishable": false,
+          "facts_allowed": false,
+          "outbox_count": 0
         }
+      },
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_APP_NOT_SOLD",
+        "evidence": {
+          "source_url": "https://itunes.apple.com/lookup?id=6791658210,6778748533,6778269699,6776958488,6787193643,6775773117&country=cn&entity=software",
+          "observed_at": "2026-11-11",
+          "country": "CN",
+          "lookup_app_results": 0,
+          "lookup_control_app_id": "6791658210",
+          "lookup_control_results": 1,
+          "response_sha256": "b7b0e4b47a45c55db79c96a129e9f4b38b99b1214afde2078f894f4c41a9fb3f",
+          "app_store_id": "6775773117"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
       }
     },
     {

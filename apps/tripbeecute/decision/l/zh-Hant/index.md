@@ -2,7 +2,7 @@
 title: "TripBee Cute：可愛旅行手帳 — 插畫旅遊規劃手冊・出國倒數日・和朋友一起排行程 | iOS App"
 lang: "zh-Hant"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbeecute/decision/l/zh-Hant/index.html"
-modified: "2026-11-07"
+modified: "2026-11-11"
 app_store_id: "6826987407"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

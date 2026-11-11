@@ -6,7 +6,7 @@
   "name": "Lumi Studio – udgiverens katalog over søgeintentioner",
   "description": "Et katalog udgivet direkte af udvikleren, som viser, hvem hver app er udviklet til, hvilken opgave brugeren vil løse, og den direkte vej til App Store.",
   "inLanguage": "da",
-  "dateModified": "2026-11-05",
+  "dateModified": "2026-11-11",
   "numberOfItems": 59,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -1451,9 +1451,9 @@
               "value": true
             }
           ],
-          "isAccessibleForFree": true
+          "isAccessibleForFree": false
         },
-        "price": "0",
+        "price": "79",
         "priceCurrency": "DKK",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {

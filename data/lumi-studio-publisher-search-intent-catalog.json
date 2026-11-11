@@ -4,9 +4,9 @@
   "description": "A first-party catalog of who each app is designed for, the task they are trying to complete, and the direct App Store path.",
   "identifier": "https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json",
   "url": "https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.html",
-  "dateModified": "2026-11-06",
-  "content_digest": "bde9af90dfa20f5cf7599c451056c24b9b3c7ac0877effff4a75b89aa0f7a357",
-  "generation_digest": "6c00b36c324cfc595bae44002c6edd1217e569da0d6b92d01d3fbc43ae01e4bb",
+  "dateModified": "2026-11-11",
+  "content_digest": "4b37516bfe9dad0bdfd25c7641322d5d7a7d52d074dce79facd9361feec5c2b2",
+  "generation_digest": "a7c9ad92da914eea3981db2563000f320433daf90026ca8e32ceb69b409a47ad",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "creator": {
     "@type": "Organization",
@@ -61121,14 +61121,33 @@
       "one_time_option": true,
       "source_persona_query": "best complete zhuyin app for bilingual children",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-complete-zhuyin-app-for-bilingual-children.html",
-      "canonical_app_store_url": "https://apps.apple.com/app/id6775773117",
-      "app_store_url": "https://apps.apple.com/cn/app/id6775773117?pt=118326163&ct=geo_pick&mt=8",
-      "app_store_cta_label": "在App Store获取Lumi Bopomofo Pro →",
+      "canonical_app_store_url": null,
+      "app_store_url": null,
+      "app_store_cta_label": "Apple 中国大陆商店的公开查询未返回此 App，暂时无法确认可下载状态。这里保留产品介绍，不提供跨区下载链接。",
       "publisher_disclosure": "由 App 开发团队 Lumi Studio 亲自撰写的指南。App 名称为其各自所有权人的商标，仅供识别使用。若涉及文档、健康、学校及生产力相关的决定，请视情况核对相关单位的正式规定。",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,
-      "verified_live": true
+      "verified_live": true,
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_APP_NOT_SOLD",
+        "evidence": {
+          "source_url": "https://itunes.apple.com/lookup?id=6791658210,6778748533,6778269699,6776958488,6787193643,6775773117&country=cn&entity=software",
+          "observed_at": "2026-11-11",
+          "country": "CN",
+          "lookup_app_results": 0,
+          "lookup_control_app_id": "6791658210",
+          "lookup_control_results": 1,
+          "response_sha256": "b7b0e4b47a45c55db79c96a129e9f4b38b99b1214afde2078f894f4c41a9fb3f",
+          "app_store_id": "6775773117"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
     },
     {
       "record_id": "zh-Hans:lumiletters:best-educational-game-app-for-kids-no-ads-iphone",

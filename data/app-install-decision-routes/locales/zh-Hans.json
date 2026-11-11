@@ -2,9 +2,9 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "zh-Hans",
-  "dateModified": "2026-11-07",
-  "content_digest": "e42212130e7fcd8b0128cd30204ecaf06fa1c2b926b13b175dd4c25efa8ae60b",
-  "generation_digest": "8d00df5618f6dfacdb4a1ffdfae74334f335ba6ff2260eab7f44d505170d28d2",
+  "dateModified": "2026-11-11",
+  "content_digest": "616af6e28abc8980eb1bdc6a73ca756f4456f4d3be67170694ac5aad1d9b34d6",
+  "generation_digest": "655e1f50f18c3754f1b98e1bac10e558943ce7f52816a139e5195ef72daa0251",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -759,7 +759,7 @@
       "priority_rank": null,
       "priority_group": "baseline_coverage",
       "publisher_query": "dB Halo：声级计 — 噪声检测、频谱与睡眠日志 | iOS App",
-      "decision_context": "已针对 iPhone Duo 优化。本应用使用最新开发工具包构建，铺满整块内屏，无论折叠还是展开都会自动调整布局。 打开就知道现在多少分贝：大字实时读数，附最低、平均、最高与峰值，吵不吵一眼看懂。楼上脚步、装修施工、邻居噪音都能测，声音事件自动带时间戳记录，还能导出 PDF 报告或 CSV。 选 NIOSH 或 OSHA 标准，估算今天的噪声暴露量和还能待多久；另有 FFT 频谱、RTA 与声谱图，以及记录打鼾等夜间声音的睡眠日志。所有处理都在设备上完成，支持 iPhone、iPad 和 Apple Watch。 实时声级，清晰易读 • 大号 dB 读数搭配 Halo 安全区，直观显示当前声音状态 • 当前、最低、平均、最高和峰值 • 带时间戳的声音事件记录 • A/C/Z 计权、外置麦克风与多套校准配置 一次测量，三种分析 FFT 频谱、实时分析仪（RTA）的倍频程频带和声谱图共享同一条实时测量时间轴。切换视图不会中断测量，也不会割裂记录。主导频率、LAeq、声压级、动态范围、峰值因数、采样率等详细数据一并呈现，并附有简明说明。不同外置麦克风可分别保存校准值，便于按场所或设备整理测量条件。 噪声剂量与安全时长 选择 NIOSH 或 OSHA 标准，查看估算的当前剂量、每日暴露与剩余时间。结果用于了解趋势，不替代专业判断。 设备端睡眠日志 识别并分类鼾声、呼吸声、说话声、咳嗽等事件，按发生时间整理声级与统计。睡眠日志不会保存原始麦克风音频；只有主动开始录音时，才会创建 AAC 文件。 历史记录与导出 从历史记录中选择测量，生成带图表的 PDF 报告或导出 CSV 数据。还可导出主动录制的 AAC，并将 dB 信息叠加到照片和视频。 融入 Apple 生态 将选定的 A 计权环境音量写入“健康” App；通过主屏幕和锁定屏幕小组件查看状态，用 App Intents 或快捷指令快速打开功能。Apple Watch 可脱离 iPhone 独立开始、停止测量，并查看实时 dB、峰值和暴露状态。 隐私从设计开始 无需注册账号，没有广告、使用情况分析或跟踪。测量、声音识别与数据处理全部在设备端完成。 一般功能各可成功使用 3 次；频谱、噪声剂量和睡眠日志各可成功使用 1 次。仅在成功生成结果后计次，取消、拒绝权限或失败均不计次；已有结果可随时查看。Lifetime Pro 通过一次购买永久移除使用次数限制，包含全部现有功能和后续更新，不含订阅。 重要提示：测量结果仅为估算值。dB Halo 并非经认证的专业声级计，不能替代医疗建议或职业安全判定。 针对 iPhone Duo 优化。",
+      "decision_context": "已针对 iPhone Duo 优化。本应用使用最新开发工具包构建，铺满整块内屏，无论折叠还是展开都会自动调整布局。 打开就知道现在多少分贝：大字实时读数，附最低、平均、最高与峰值，吵不吵一眼看懂。楼上脚步、装修施工、邻居噪音都能测，声音事件自动带时间戳记录，还能导出 PDF 报告或 CSV。 选 NIOSH 或 OSHA 标准，估算今天的噪声暴露量和还能待多久；另有 FFT 频谱、RTA 与声谱图，以及记录打鼾等夜间声音的睡眠日志。所有处理都在设备上完成，支持 iPhone、iPad 和 Apple Watch。 实时声级，清晰易读 • 大号 dB 读数搭配 Halo 安全区，直观显示当前声音状态 • 当前、最低、平均、最高和峰值 • 带时间戳的声音事件记录 • A/C/Z 计权、外置麦克风与多套校准配置 一次测量，三种分析 FFT 频谱、实时分析仪（RTA）的倍频程频带和声谱图共享同一条实时测量时间轴。切换视图不会中断测量，也不会割裂记录。主导频率、LAeq、声压级、动态范围、峰值因数、采样率等详细数据一并呈现，并附有简明说明。不同外置麦克风可分别保存校准值，便于按场所或设备整理测量条件。 噪声剂量与安全时长 选择 NIOSH 或 OSHA 标准，查看估算的当前剂量、每日暴露与剩余时间。结果用于了解趋势，不替代专业判断。 设备端睡眠日志 识别并分类鼾声、呼吸声、说话声、咳嗽等事件，按发生时间整理声级与统计。睡眠日志不会保存原始麦克风音频；只有主动开始录音时，才会创建 AAC 文件。 历史记录与导出 从历史记录中选择测量，生成带图表的 PDF 报告或导出 CSV 数据。还可导出主动录制的 AAC，并将 dB 信息叠加到照片和视频。 融入 Apple 生态 将选定的 A 计权环境音量写入“健康” App；通过主屏幕和锁定屏幕小组件查看状态，用 App Intents 或快捷指令快速打开功能。Apple Watch 可脱离 iPhone 独立开始、停止测量，并查看实时 dB、峰值和暴露状态。 隐私从设计开始 无需注册账号，没有广告、使用情况分析或跟踪。测量、声音识别与数据处理全部在设备端完成。 声级测量始终免费、不限次数，包括小组件、外接麦克风与 Apple Watch；写入“健康” App 同样免费。导出与校准配置文件各可免费成功使用 3 次；频谱、噪声剂量和睡眠日志各可免费成功使用 1 次。录制 AAC 音频同样始终免费、不限次数，且不计入导出次数。仅在成功生成结果后计次，取消、拒绝权限或失败均不计次；已有结果可随时查看。Lifetime Pro 通过一次购买永久移除使用次数限制，包含全部现有功能和后续更新，不含订阅。 重要提示：测量结果仅为估算值。dB Halo 并非经认证的专业声级计，不能替代医疗建议或职业安全判定。 针对 iPhone Duo 优化。",
       "category": "utility",
       "category_label": "更多",
       "purchase_model": "free_with_lifetime_unlock",
@@ -1393,22 +1393,17 @@
         "付费下载",
         "无需账户",
         "无广告",
-        "私密 / 设备本地",
-        "App Store · 免费"
+        "私密 / 设备本地"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-complete-zhuyin-app-for-bilingual-children.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/lumibopomofopro/decision/l/zh-Hans/index.html",
       "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/zh-Hans/lumibopomofopro.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Flumibopomofopro%2Fdecision%2Fl%2Fzh-Hans%2Findex.html&format=json",
       "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/zh-Hans.json",
       "app_store_id": "6775773117",
-      "canonical_app_store_url": "https://apps.apple.com/app/id6775773117",
-      "app_store_url": "https://apps.apple.com/cn/app/id6775773117?pt=118326163&ct=geo_pick&mt=8",
-      "app_store_cta_label": "在App Store获取Lumi Bopomofo Pro →",
-      "storefront_facts": {
-        "price": "0",
-        "currency": "CNY",
-        "formatted_price": "免费"
-      },
+      "canonical_app_store_url": null,
+      "app_store_url": null,
+      "app_store_cta_label": "Apple 中国大陆商店的公开查询未返回此 App，暂时无法确认可下载状态。这里保留产品介绍，不提供跨区下载链接。",
+      "storefront_facts": null,
       "guide_cta_label": "阅读完整指南",
       "publisher_disclosure": "由 App 开发团队 Lumi Studio 亲自撰写的指南。App 名称为其各自所有权人的商标，仅供识别使用。若涉及文档、健康、学校及生产力相关的决定，请视情况核对相关单位的正式规定。",
       "source_persona_query": "best complete zhuyin app for bilingual children",
@@ -1416,7 +1411,26 @@
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,
-      "verified_live": true
+      "verified_live": true,
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_APP_NOT_SOLD",
+        "evidence": {
+          "source_url": "https://itunes.apple.com/lookup?id=6791658210,6778748533,6778269699,6776958488,6787193643,6775773117&country=cn&entity=software",
+          "observed_at": "2026-11-11",
+          "country": "CN",
+          "lookup_app_results": 0,
+          "lookup_control_app_id": "6791658210",
+          "lookup_control_results": 1,
+          "response_sha256": "b7b0e4b47a45c55db79c96a129e9f4b38b99b1214afde2078f894f4c41a9fb3f",
+          "app_store_id": "6775773117"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
     },
     {
       "record_id": "zh-Hans:lumiletters",
@@ -2162,7 +2176,7 @@
       "priority_rank": null,
       "priority_group": "baseline_coverage",
       "publisher_query": "QR Code Halo：安全扫码与制作 — 扫完直接打开，稍后本机查风险 | iOS App",
-      "decision_context": "已针对 iPhone Duo 优化。本应用使用最新开发工具包构建，铺满整块内屏，无论折叠还是展开都会自动调整布局。 扫二维码和条形码，一扫就执行：网址直接打开、Wi-Fi 弹出加入提示，相机或相册照片都能识别，支持 20 种码制。 担心扫到诈骗链接？在历史记录里点开任一条、点“安全检查”，在手机上把网址拆开逐项检查，标出可疑网址、非 HTTPS 链接和混用不同文字的域名；javascript:、data:、file: 这类危险码一律不打开。想每次先检查再打开，可在设置中关闭“扫描后自动执行”。 还能制作网址、Wi-Fi、联系人、日程等 9 种二维码。 历史记录里的安全检查 除非开启“不保存到历史记录”，批量扫描以外的每次扫描都会保存在这台设备上。在历史记录里点开任一条、点“安全检查”，就能用下面两个本地工具重新查看。 本地安全检查 在设备上解析完整内容，逐项列出协议、域名、路径、查询参数与片段，标为“安全”“注意”或“已阻止”，并附上看得懂的检查结果与建议操作。判定规则固定、可复现，不查询网络信誉，也不给模糊的分数；解析有疑问时一律不执行外部操作。 二维码验证 把一条结果保存为本地参照，之后再扫到时，按完整 SHA-256 指纹、码制、内容类型、网址组成、安全级别与建议操作逐项比对。 批量审计 把整批结果按完全相同的内容与域名分组，在明确范围内比对容易混淆的相似域名，并同时显示整体风险、每一条的风险与完整内容。完整审计免费开放阅读。 QR Code Halo 能做什么 用相机扫描，或识别照片中的码，同一画面可含多个码 20 种条码格式：QR、Micro QR、Aztec、Data Matrix、PDF417、Micro PDF417、EAN-8、EAN-13、UPC-A、UPC-E、Code 39、Code 93、Code 128、Interleaved 2 of 5、ITF-14、Codabar、GS1 DataBar 与 MSI Plessey 批量扫描自动去重，支持变焦与手电筒 生成文本、链接、Wi-Fi、联系人、邮件、电话、短信、位置与日历事件二维码 历史记录不限条数：收藏、搜索，可按类型、日期、格式、标签或分类筛选与排序 在设备本地自动归类，也可以自己改，并能把历史导出成 CSV 备份与恢复都会先预览真实的条数、大小与日期范围，再由你决定 隐私模式自动清空历史，支持存入相册、打印、分享扩展与 Siri 快捷指令 QR Code Halo 在 App Store 免费下载：免费 3 次扫描、9 种二维码全部可用、历史记录不限条数，收藏、搜索与筛选都在其中，无广告、无账号。可选的 Lifetime Pro 一次买断即永久拥有，增加无限次扫描、批量保存与打开结果、CSV 批量生成与批量导出、备份与恢复、高分辨率导出与自定义 Aurora 样式。绝无订阅。 遇到扫不出的码，或希望增加的功能：hourstag.app@gmail.com 它不是文档扫描器：不扫描纸张，不做 OCR，也不管理 PDF 文档库。PDF 只导出 QR 图稿。分享扩展只能把网址或纯文本制成二维码。 针对 iPhone Duo 优化。",
+      "decision_context": "已针对 iPhone Duo 优化。本应用使用最新开发工具包构建，铺满整块内屏，无论折叠还是展开都会自动调整布局。 扫二维码和条形码，一扫就执行：网址直接打开、Wi-Fi 弹出加入提示，相机或相册照片都能识别，支持 20 种码制。 担心扫到诈骗链接？在历史记录里点开任一条、点“安全检查”，在手机上把网址拆开逐项检查，标出可疑网址、非 HTTPS 链接和混用不同文字的域名；javascript:、data:、file: 这类危险码一律不打开。想每次先检查再打开，可在设置中关闭“扫描后自动执行”。 还能制作网址、Wi-Fi、联系人、日程等 9 种二维码。 历史记录里的安全检查 除非开启“不保存到历史记录”，批量扫描以外的每次扫描都会保存在这台设备上。在历史记录里点开任一条、点“安全检查”，就能用下面两个本地工具重新查看。 本地安全检查 在设备上解析完整内容，逐项列出协议、域名、路径、查询参数与片段，标为“安全”“注意”或“已阻止”，并附上看得懂的检查结果与建议操作。判定规则固定、可复现，不查询网络信誉，也不给模糊的分数；解析有疑问时一律不执行外部操作。 二维码验证 把一条结果保存为本地参照，之后再扫到时，按完整 SHA-256 指纹、码制、内容类型、网址组成、安全级别与建议操作逐项比对。 批量审计 把整批结果按完全相同的内容与域名分组，在明确范围内比对容易混淆的相似域名，并同时显示整体风险、每一条的风险与完整内容。完整审计免费开放阅读。 QR Code Halo 能做什么 用相机扫描，或识别照片中的码，同一画面可含多个码 20 种条码格式：QR、Micro QR、Aztec、Data Matrix、PDF417、Micro PDF417、EAN-8、EAN-13、UPC-A、UPC-E、Code 39、Code 93、Code 128、Interleaved 2 of 5、ITF-14、Codabar、GS1 DataBar 与 MSI Plessey 批量扫描自动去重，支持变焦与手电筒 生成文本、链接、Wi-Fi、联系人、邮件、电话、短信、位置与日历事件二维码 历史记录不限条数：收藏、搜索，可按类型、日期、格式、标签或分类筛选与排序 在设备本地自动归类，也可以自己改，并能把历史导出成 CSV 备份与恢复都会先预览真实的条数、大小与日期范围，再由你决定 隐私模式自动清空历史，支持存入相册、打印、分享扩展与 Siri 快捷指令 QR Code Halo 在 App Store 免费下载：相机与照片扫描不限次数、9 种二维码全部可用、历史记录不限条数，收藏、搜索与筛选都在其中，无广告、无账号。可选的 Lifetime Pro 一次买断即永久拥有，增加批量保存与打开结果、CSV 批量生成与批量导出、备份与恢复、高分辨率导出与自定义 Aurora 样式。绝无订阅。 遇到扫不出的码，或希望增加的功能：hourstag.app@gmail.com 它不是文档扫描器：不扫描纸张，不做 OCR，也不管理 PDF 文档库。PDF 只导出 QR 图稿。分享扩展只能把网址或纯文本制成二维码。 针对 iPhone Duo 优化。",
       "category": "utility",
       "category_label": "更多",
       "purchase_model": "free_with_lifetime_unlock",
@@ -3396,7 +3410,8 @@
         "照片与工具",
         "免费开始使用 · 一次性解锁",
         "无广告",
-        "App Store · 免费"
+        "App Store · 免费",
+        "★ 5.0/5 · 1"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/duowallpaperstudio.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/duowallpaperstudio/decision/l/zh-Hans/index.html",
@@ -3409,7 +3424,9 @@
       "storefront_facts": {
         "price": "0",
         "currency": "CNY",
-        "formatted_price": "免费"
+        "formatted_price": "免费",
+        "rating_value": 5.0,
+        "rating_count": 1
       },
       "guide_cta_label": "阅读完整指南",
       "publisher_disclosure": "这是由 Lumi Studio 发布的第一方资料；Lumi Studio 是每款列出 App 的开发者。",

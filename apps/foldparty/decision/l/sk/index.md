@@ -2,7 +2,7 @@
 title: "Meow Party: Mačacie hry pre 2 — 200 minihier na skladací mobil | iOS App"
 lang: "sk"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/foldparty/decision/l/sk/index.html"
-modified: "2026-11-07"
+modified: "2026-11-11"
 app_store_id: "6829184924"
 verified_live: true
 purchase_model: "paid_upfront"

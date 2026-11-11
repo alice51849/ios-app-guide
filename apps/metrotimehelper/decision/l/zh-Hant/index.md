@@ -2,7 +2,7 @@
 title: "捷運時間助手－台北轉乘時刻表 — 反推出門時間｜小碧潭・新北投班表 | iOS App"
 lang: "zh-Hant"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/metrotimehelper/decision/l/zh-Hant/index.html"
-modified: "2026-11-07"
+modified: "2026-11-11"
 app_store_id: "6819061896"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,6 +16,7 @@ publisher: "Lumi Studio"
 - 更多
 - 免費開始 · 一次性解鎖
 - App Store · $90.00
+- ★ 5.0/5 · 4
 
 [在 App Store 取得 捷運時間助手－台北轉乘時刻表](https://apps.apple.com/tw/app/id6819061896?pt=118326163&ct=geo_pick&mt=8)
 

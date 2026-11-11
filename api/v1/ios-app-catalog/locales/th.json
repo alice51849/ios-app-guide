@@ -2,7 +2,7 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-11-11",
-  "content_digest": "dbb9b38a59afbe268df7011425f71093d9f9ab4c8ecd9710793f76cc977f85f8",
+  "content_digest": "55b7da80e6100894e605308387eab211f7ed4d47ab1105b184de38ef3003b0eb",
   "locale": "th",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -311,7 +311,9 @@
         "มีลูก",
         "ปวดประจำเดือน",
         "คำนวณ",
-        "ติดตามประจำเดือน"
+        "ติดตามประจำเดือน",
+        "รอบเดือน",
+        "วันตกไข่"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -903,9 +905,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/th/lumibopomofopro.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "0",
+        "price": "299",
         "currency": "THB",
-        "formatted_price": "ฟรี",
+        "formatted_price": "฿299.00",
         "storefront_url": "https://apps.apple.com/th/app/id6775773117"
       }
     },
@@ -1347,7 +1349,8 @@
         "ปฏิทิน",
         "เรียน",
         "งานบ้าน",
-        "เช็คลิสต์"
+        "เช็คลิสต์",
+        "แพลนเนอร์น่ารัก"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1516,7 +1519,7 @@
         "แสงรั่ว",
         "ผิวเนียน",
         "35mm",
-        "ฟิลเตอร์วินเทจ"
+        "ฟิลเตอร์ฟิล์ม"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1637,7 +1640,8 @@
         "ของที่อยากได้",
         "โน้ต",
         "ค้นหา",
-        "บุ๊กมาร์ก"
+        "บุ๊กมาร์ก",
+        "อ่านทีหลัง"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1915,7 +1919,7 @@
         "นาฬิกาปลุก",
         "ธีมนาฬิกา",
         "จอเบิร์น",
-        "นาฬิกาพลิก"
+        "นาฬิกาตั้งโต๊ะ"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

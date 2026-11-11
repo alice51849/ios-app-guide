@@ -2,9 +2,9 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "zh-Hant",
-  "dateModified": "2026-11-07",
-  "content_digest": "e42212130e7fcd8b0128cd30204ecaf06fa1c2b926b13b175dd4c25efa8ae60b",
-  "generation_digest": "8d00df5618f6dfacdb4a1ffdfae74334f335ba6ff2260eab7f44d505170d28d2",
+  "dateModified": "2026-11-11",
+  "content_digest": "616af6e28abc8980eb1bdc6a73ca756f4456f4d3be67170694ac5aad1d9b34d6",
+  "generation_digest": "655e1f50f18c3754f1b98e1bac10e558943ce7f52816a139e5195ef72daa0251",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -1432,8 +1432,8 @@
         "免帳號",
         "無廣告",
         "隱私優先／裝置端",
-        "App Store · 免費",
-        "★ 4.0/5 · 2"
+        "App Store · $290.00",
+        "★ 4.3/5 · 3"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/answers/best-complete-zhuyin-app-for-bilingual-children.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/lumibopomofopro/decision/l/zh-Hant/index.html",
@@ -1444,11 +1444,11 @@
       "app_store_url": "https://apps.apple.com/tw/app/id6775773117?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "在 App Store 取得 Lumi Bopomofo Pro →",
       "storefront_facts": {
-        "price": "0",
+        "price": "290",
         "currency": "TWD",
-        "formatted_price": "免費",
-        "rating_value": 4.0,
-        "rating_count": 2
+        "formatted_price": "$290.00",
+        "rating_value": 4.3,
+        "rating_count": 3
       },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "由 App 開發團隊 Lumi Studio 親自撰寫的指南。App 名稱為其各自所有權人的商標，僅供識別使用。若涉及文件、健康、學校及生產力相關的決定，請視情況核對相關單位的正式規定。",
@@ -1842,7 +1842,7 @@
         "隱私優先／裝置端",
         "主畫面小工具",
         "App Store · 免費",
-        "★ 5.0/5 · 2"
+        "★ 4.3/5 · 3"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/lumiweather.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/lumiweather/decision/l/zh-Hant/index.html",
@@ -1856,8 +1856,8 @@
         "price": "0",
         "currency": "TWD",
         "formatted_price": "免費",
-        "rating_value": 5.0,
-        "rating_count": 2
+        "rating_value": 4.3,
+        "rating_count": 3
       },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "這是由 Lumi Studio 發布的第一方資料；Lumi Studio 是每款列出 App 的開發者。",
@@ -1903,7 +1903,7 @@
         "無廣告",
         "Apple Watch",
         "App Store · 免費",
-        "★ 4.4/5 · 5"
+        "★ 4.5/5 · 6"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/answers/best-simple-to-do-list-app-iphone-no-subscription.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/mochi/decision/l/zh-Hant/index.html",
@@ -1917,8 +1917,8 @@
         "price": "0",
         "currency": "TWD",
         "formatted_price": "免費",
-        "rating_value": 4.4,
-        "rating_count": 5
+        "rating_value": 4.5,
+        "rating_count": 6
       },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "由 App 開發團隊 Lumi Studio 親自撰寫的指南。App 名稱為其各自所有權人的商標，僅供識別使用。若涉及文件、健康、學校及生產力相關的決定，請視情況核對相關單位的正式規定。",
@@ -3445,7 +3445,8 @@
       "badge_labels": [
         "更多",
         "免費開始 · 一次性解鎖",
-        "App Store · $90.00"
+        "App Store · $90.00",
+        "★ 5.0/5 · 4"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/metrotimehelper.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/metrotimehelper/decision/l/zh-Hant/index.html",
@@ -3458,7 +3459,9 @@
       "storefront_facts": {
         "price": "90",
         "currency": "TWD",
-        "formatted_price": "$90.00"
+        "formatted_price": "$90.00",
+        "rating_value": 5.0,
+        "rating_count": 4
       },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "這是由 Lumi Studio 發布的第一方資料；Lumi Studio 是每款列出 App 的開發者。",

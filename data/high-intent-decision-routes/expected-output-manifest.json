@@ -29,7 +29,7 @@
       "relative_path": "data/high-intent-decision-routes/coverage.json"
     },
     {
-      "generated_sha256": "498afe4220d33d2b047d98345801fb6ba7e0585a4ced5b0ef0e5e17f16e2300d",
+      "generated_sha256": "b25492e99e951a758eda9ccdbf9f76ffb8a892d1f8c4c88ec484984b9d52dcd0",
       "kind": "json_feed",
       "relative_path": "data/high-intent-decision-routes/feed.json"
     },
@@ -119,7 +119,7 @@
       "relative_path": "en-US/decide/gmoney/convert-and-log-travel-spending-offline.html"
     },
     {
-      "generated_sha256": "b2fc236abcd4b376d1d8bc9c01f377c2dfe83757604abb28d8c9339e2e8d2ab4",
+      "generated_sha256": "6fc227c1e062bb4bb222ad747cd7e86a1e9323b6c86430257e5b223c181f54a9",
       "kind": "route_html",
       "relative_path": "en-US/decide/gmoneylite/test-multi-currency-trip-budget-free.html"
     },
@@ -264,7 +264,7 @@
       "relative_path": "en-US/decide/snapport/make-passport-photo-at-home.html"
     },
     {
-      "generated_sha256": "94ea767374ce4617c31d4fbc4d8bd9d659c16e9c9b6fff99f765c58933115629",
+      "generated_sha256": "9a246ebc6aae56c6dc41a918287ef0dd8bef15d2c7cdb9ed5ff9f2a7b7f784c8",
       "kind": "route_html",
       "relative_path": "en-US/decide/snapportlite/test-passport-photo-layout-free.html"
     },
@@ -339,17 +339,17 @@
       "relative_path": "fr-FR/decide/aim990/toeic-part-five-time-pressure.html"
     },
     {
-      "generated_sha256": "b3bd153fb36e616f16b4f52350a5180d1c815c538a2eefc4304cd59da1a53ecc",
+      "generated_sha256": "a33efeb277406869884f63afd4951e8ab78967895f60a8545bebc190853be9d7",
       "kind": "route_html",
       "relative_path": "ja/decide/claudeusagemini/see-claude-and-codex-limits-before-they-run-out.html"
     },
     {
-      "generated_sha256": "5b9c7a57768b16954be9d22d594c58bcf1915a4098cd3ac137848f2491c93403",
+      "generated_sha256": "7741a60bf71693bc331fa202312c484a1037da0c7a6eb9b0ddd786c87a21f30f",
       "kind": "route_html",
       "relative_path": "ja/decide/lumiweather/decide-what-child-wears-outside.html"
     },
     {
-      "generated_sha256": "1b57e010cb7511b55e0dfc4c58dda910360236db250479584e611325985db883",
+      "generated_sha256": "1e9d3421a806f3171e97ac46f6ed1b6ea4047e9072111d3e30fd42220f4cca30",
       "kind": "route_html",
       "relative_path": "ja/decide/unblurry/improve-soft-family-photo-realistically.html"
     },
@@ -442,7 +442,7 @@
     "public_apps": 59,
     "relative_path": "data/verified-ios-app-finder-catalog.json"
   },
-  "manifest_digest": "ec11fba5fac706d78300659df0dfa4b7ba2e56c04c3250f81e0b921e1f92e9ba",
+  "manifest_digest": "983f427c5697bd18d090704dcefc7313622c7171bdd17f747b4412396a69ec87",
   "owner": "high_intent_decision_routes",
   "release_contract_digest": "082b9797a43e8a2561c86cd34bf3d7e9a02fbe650dc106d86a0b72c9057a622a",
   "release_state": "exact",
@@ -747,8 +747,8 @@
       "creative_id": "gmoneylite:test-multi-currency-trip-budget-free:workflow",
       "intent_type": "workflow",
       "locale": "en-US",
-      "output_sha256": "b2fc236abcd4b376d1d8bc9c01f377c2dfe83757604abb28d8c9339e2e8d2ab4",
-      "record_digest": "178a46edec3a41efc077fb26951f11f7f689178ed420d370165670873f5f9e65",
+      "output_sha256": "6fc227c1e062bb4bb222ad747cd7e86a1e9323b6c86430257e5b223c181f54a9",
+      "record_digest": "f5a5558528d33cde812d4d9dca3701a0ddfe1dff57a9f71f164c8473dd1f31f6",
       "relative_path": "en-US/decide/gmoneylite/test-multi-currency-trip-budget-free.html",
       "route_id": "en-US:gmoneylite:test-multi-currency-trip-budget-free",
       "route_slug": "test-multi-currency-trip-budget-free",
@@ -1240,8 +1240,8 @@
       "creative_id": "snapportlite:test-passport-photo-layout-free:alternative",
       "intent_type": "alternative",
       "locale": "en-US",
-      "output_sha256": "94ea767374ce4617c31d4fbc4d8bd9d659c16e9c9b6fff99f765c58933115629",
-      "record_digest": "775b3e39b3679793ac0adbde2aebe35f239bb12505317edc6312e3d425b76c0d",
+      "output_sha256": "9a246ebc6aae56c6dc41a918287ef0dd8bef15d2c7cdb9ed5ff9f2a7b7f784c8",
+      "record_digest": "71079fbf761d7c61f9d58cba889ebe7442f04a645115c5430c84d21fc646fdf5",
       "relative_path": "en-US/decide/snapportlite/test-passport-photo-layout-free.html",
       "route_id": "en-US:snapportlite:test-passport-photo-layout-free",
       "route_slug": "test-passport-photo-layout-free",
@@ -1495,8 +1495,8 @@
       "creative_id": "claudeusagemini:see-claude-and-codex-limits-before-they-run-out:problem_aware",
       "intent_type": "problem_aware",
       "locale": "ja",
-      "output_sha256": "b3bd153fb36e616f16b4f52350a5180d1c815c538a2eefc4304cd59da1a53ecc",
-      "record_digest": "6bc96bac1cd4caa65b037491fbfa2686a92d83779d8002f7c431cbf07799920a",
+      "output_sha256": "a33efeb277406869884f63afd4951e8ab78967895f60a8545bebc190853be9d7",
+      "record_digest": "1b8e9e436811a05a5eeccd7a6de112204e27bb673dc30ef87ebe4f7a86e261f1",
       "relative_path": "ja/decide/claudeusagemini/see-claude-and-codex-limits-before-they-run-out.html",
       "route_id": "ja:claudeusagemini:see-claude-and-codex-limits-before-they-run-out",
       "route_slug": "see-claude-and-codex-limits-before-they-run-out",
@@ -1512,7 +1512,7 @@
       "creative_id": "lumiweather:decide-what-child-wears-outside:problem_aware",
       "intent_type": "problem_aware",
       "locale": "ja",
-      "output_sha256": "5b9c7a57768b16954be9d22d594c58bcf1915a4098cd3ac137848f2491c93403",
+      "output_sha256": "7741a60bf71693bc331fa202312c484a1037da0c7a6eb9b0ddd786c87a21f30f",
       "record_digest": "51ad47fb75143bab7ede4745e51fc4bf446be22d8ca6d46a6cf0551b21a42082",
       "relative_path": "ja/decide/lumiweather/decide-what-child-wears-outside.html",
       "route_id": "ja:lumiweather:decide-what-child-wears-outside",
@@ -1529,7 +1529,7 @@
       "creative_id": "unblurry:improve-soft-family-photo-realistically:problem_aware",
       "intent_type": "problem_aware",
       "locale": "ja",
-      "output_sha256": "1b57e010cb7511b55e0dfc4c58dda910360236db250479584e611325985db883",
+      "output_sha256": "1e9d3421a806f3171e97ac46f6ed1b6ea4047e9072111d3e30fd42220f4cca30",
       "record_digest": "8e61c6332b9a70765e82c5d0328264f188bebbda98a6c1f34cb5eb12f2a64eb3",
       "relative_path": "ja/decide/unblurry/improve-soft-family-photo-realistically.html",
       "route_id": "ja:unblurry:improve-soft-family-photo-realistically",
@@ -1794,5 +1794,5 @@
   ],
   "schema_version": 2,
   "site": "https://open.cait518.cc/ios-app-guide",
-  "source_contract_digest": "66e91499973ad7fc416726c248a0869cbac96e79d179076c72e6533df866d9b9"
+  "source_contract_digest": "54ea5dc9bad4ee0a8ccf8c5f486ff72671272f5852e7b0511b8ca70205f064c2"
 }

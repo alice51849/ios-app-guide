@@ -2,7 +2,7 @@
 title: "Meow Party: Jocuri cu pisici — 200 de jocuri pe ecran pliabil | iOS App"
 lang: "ro"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/foldparty/decision/l/ro/index.html"
-modified: "2026-11-07"
+modified: "2026-11-11"
 app_store_id: "6829184924"
 verified_live: true
 purchase_model: "paid_upfront"

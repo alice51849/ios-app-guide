@@ -2,7 +2,7 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-11-11",
-  "content_digest": "dbb9b38a59afbe268df7011425f71093d9f9ab4c8ecd9710793f76cc977f85f8",
+  "content_digest": "55b7da80e6100894e605308387eab211f7ed4d47ab1105b184de38ef3003b0eb",
   "locale": "en-US",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -339,8 +339,8 @@
         "price": "0",
         "currency": "USD",
         "formatted_price": "Free",
-        "rating_value": 4.7,
-        "rating_count": 3,
+        "rating_value": 4.8,
+        "rating_count": 4,
         "storefront_url": "https://apps.apple.com/us/app/id6782251621"
       }
     },
@@ -467,6 +467,8 @@
         "price": "0",
         "currency": "USD",
         "formatted_price": "Free",
+        "rating_value": 5.0,
+        "rating_count": 1,
         "storefront_url": "https://apps.apple.com/us/app/id6806826699"
       }
     },
@@ -491,7 +493,7 @@
         "wake",
         "theme",
         "digital",
-        "holiday alarm clock"
+        "alarm skip holidays"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -870,9 +872,7 @@
         "preschool",
         "writing",
         "stroke",
-        "order",
-        "bopomofo",
-        "zhuyin"
+        "order"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -912,7 +912,9 @@
         "homeschool",
         "quiz",
         "first",
-        "grade"
+        "grade",
+        "zhuyin",
+        "bopomofo"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -929,9 +931,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/lumibopomofopro.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "0",
+        "price": "8.99",
         "currency": "USD",
-        "formatted_price": "Free",
+        "formatted_price": "$8.99",
         "storefront_url": "https://apps.apple.com/us/app/id6775773117"
       }
     },
@@ -1396,8 +1398,8 @@
         "price": "0",
         "currency": "USD",
         "formatted_price": "Free",
-        "rating_value": 4.2,
-        "rating_count": 43,
+        "rating_value": 4.3,
+        "rating_count": 47,
         "storefront_url": "https://apps.apple.com/us/app/id6785004775"
       }
     },
@@ -1975,8 +1977,7 @@
         "retro",
         "calendar",
         "display",
-        "always on",
-        "desk clock"
+        "always on"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

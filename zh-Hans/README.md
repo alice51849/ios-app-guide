@@ -109,7 +109,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **LED Moving Text** | LED Moving Text — 手机立刻变成应援灯牌 \| iOS App | 打上一句话，手机就变成一块会发光、会滚动的大字牌，隔着整个场馆、站台或人群都看得清楚。 | 免费开始使用 · 一次购买解锁 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hans/ledmovingtext.html) | [在 App Store 获取 LED Moving Text](https://apps.apple.com/cn/app/id6806639602?pt=118326163&ct=geo_pick&mt=8) |
 | **LockHour Pro** | 学习时屏蔽社交媒体的最佳 iPhone App | 考试期间，意志力不是工具——硬性定时屏蔽才是——LockHour Pro专为此设计。 | 免费开始使用 · 一次购买解锁 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-app-to-block-social-media-while-studying-iphone.html) | [在 App Store 获取 LockHour Pro →](https://apps.apple.com/cn/app/id6780107485?pt=118326163&ct=geo_pick&mt=8) |
 | **Lumi Bopomofo** | 让孩子在 iPhone 上学注音的最佳注音 App | 对第一次学注音的孩子,App 应通过描摹与游戏涵盖全部 37 个符号 —— 专为 4 到 7 岁初学阶段设计、无广告、不搜集数据。这个缺口，正是 Lumi Bopomofo 想补上的。 | 免费开始使用 · 一次购买解锁 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html) | [在 App Store 取得 Lumi Bopomofo →](https://apps.apple.com/app/id6773017109?pt=118326163&ct=geo_pick&mt=8) |
-| **Lumi Bopomofo Pro** | 适合双语儿童的最佳完整注音App | 双语儿童在家学习注音需要一条完整路径，涵盖发音、符号、声调和拼读，并有足够趣味重复让系统变得熟悉。这个缺口，正是 Lumi Bopomofo Pro 想补上的。 | 付费下载 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-complete-zhuyin-app-for-bilingual-children.html) | [在App Store获取Lumi Bopomofo Pro →](https://apps.apple.com/cn/app/id6775773117?pt=118326163&ct=geo_pick&mt=8) |
+| **Lumi Bopomofo Pro** | 适合双语儿童的最佳完整注音App | 双语儿童在家学习注音需要一条完整路径，涵盖发音、符号、声调和拼读，并有足够趣味重复让系统变得熟悉。这个缺口，正是 Lumi Bopomofo Pro 想补上的。 | 付费下载 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-complete-zhuyin-app-for-bilingual-children.html) | N/A (MARKET_APP_NOT_SOLD) |
 | **Lumi Letters** | iPhone 上最佳无广告儿童教育游戏应用 | 对幼儿来说，关键是无广告和不收集数据——学习应用应在无广告、无数据收集且家长可信赖的一次解锁中教学。所以才有了 Lumi Letters。 | 免费开始使用 · 一次购买解锁 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-educational-game-app-for-kids-no-ads-iphone.html) | N/A (MARKET_APP_NOT_SOLD) |
 | **Lumi Letters Pro** | 适合家庭学前启蒙的完整拼读应用推荐 | 准备入园的家庭需要一条完整的早期阅读路径，将字母发音、书写和单词构建有机结合，而不是一组无关联的字母游戏。这个缺口，正是 Lumi Letters Pro 想补上的。 | 付费下载 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html) | [在App Store获取Lumi Letters Pro →](https://apps.apple.com/app/id6778491147?pt=118326163&ct=geo_pick&mt=8) |
 | **Lumi Math Planet** | iPhone 上最佳儿童数学游戏应用，培养逻辑思维能力 | 最佳儿童数学应用训练推理——模式、序列、空间思维——而非单纯算术训练，并将其隐藏在孩子愿意玩的游戏中。所以才有了 Lumi Math Planet。 | 免费开始使用 · 一次购买解锁 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html) | N/A (MARKET_APP_NOT_SOLD) |
@@ -159,6 +159,6 @@ JSON、JSONL 和 CSV 格式包含相同的 2,950 条记录。
 
 [首页](https://open.cait518.cc/ios-app-guide/zh-Hans/index.html) · [开放数据](https://open.cait518.cc/ios-app-guide/zh-Hans/data/lumi-studio-publisher-search-intent-catalog.html) · [许可协议](https://creativecommons.org/licenses/by/4.0/)
 
-更新日期: 2026-11-06
+更新日期: 2026-11-11
 
 CC BY 4.0 适用于原始目录编纂；应用名称和 App Store 标识归其所有者所有。

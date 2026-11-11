@@ -2,7 +2,7 @@
 title: "TripBee Cute: ਯਾਤਰਾ ਡਾਇਰੀ — ਪਿਆਰੀ ਸਚਿੱਤਰ ਟੂਰ ਪਲਾਨ ਕਿਤਾਬ | iOS App"
 lang: "pa-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbeecute/decision/l/pa-IN/index.html"
-modified: "2026-11-07"
+modified: "2026-11-11"
 app_store_id: "6826987407"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

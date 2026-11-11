@@ -2,7 +2,7 @@
 title: "אפליקציית Zhuyin מלאה לילדים דו-לשוניים"
 lang: "he"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumibopomofopro/decision/l/he/index.html"
-modified: "2026-11-07"
+modified: "2026-11-11"
 app_store_id: "6775773117"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - ללא חשבון
 - ללא פרסומות
 - פרטי / במכשיר
-- App Store · בחינם
+- App Store · ₪29.90
 
 [קבל את Lumi Bopomofo Pro ב-App Store →](https://apps.apple.com/il/app/id6775773117?pt=118326163&ct=geo_pick&mt=8)
 

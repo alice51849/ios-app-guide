@@ -2,7 +2,7 @@
 title: "Metrou la Timp: Taipei — Calculează ora de plecare | iOS App"
 lang: "ro"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/metrotimehelper/decision/l/ro/index.html"
-modified: "2026-11-07"
+modified: "2026-11-11"
 app_store_id: "6819061896"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

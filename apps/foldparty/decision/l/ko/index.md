@@ -2,7 +2,7 @@
 title: "냥냥 파티: 고양이 2인용 게임 — 폴더블 폰에서 더 재밌는 귀여운 미니게임 200개 | iOS App"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/foldparty/decision/l/ko/index.html"
-modified: "2026-11-07"
+modified: "2026-11-11"
 app_store_id: "6829184924"
 verified_live: true
 purchase_model: "paid_upfront"

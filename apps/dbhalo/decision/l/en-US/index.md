@@ -2,7 +2,7 @@
 title: "sound meter app for iphone with frequency spectrum and noise dose"
 lang: "en-US"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dbhalo/decision/l/en-US/index.html"
-modified: "2026-11-07"
+modified: "2026-11-11"
 app_store_id: "6806826699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -22,6 +22,7 @@ dB Halo — From a home workshop and HVAC rumble to a gym floor or concert venue
 - Widget
 - Apple Watch
 - App Store · Free
+- ★ 5.0/5 · 1
 
 [Get dB Halo on the App Store →](https://apps.apple.com/us/app/id6806826699?pt=118326163&ct=geo_pick&mt=8)
 

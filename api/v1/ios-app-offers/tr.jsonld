@@ -6,7 +6,7 @@
   "name": "Lumi Studio Yayıncı Arama Niyeti Kataloğu",
   "description": "Her uygulamanın kimler için tasarlandığını, tamamlamaya çalıştıkları görevi ve doğrudan App Store yolunu gösteren bir birinci taraf katalog.",
   "inLanguage": "tr",
-  "dateModified": "2026-11-05",
+  "dateModified": "2026-11-11",
   "numberOfItems": 59,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -1451,9 +1451,9 @@
               "value": true
             }
           ],
-          "isAccessibleForFree": true
+          "isAccessibleForFree": false
         },
-        "price": "0",
+        "price": "499.99",
         "priceCurrency": "TRY",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {

@@ -2,7 +2,7 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-11-11",
-  "content_digest": "dbb9b38a59afbe268df7011425f71093d9f9ab4c8ecd9710793f76cc977f85f8",
+  "content_digest": "55b7da80e6100894e605308387eab211f7ed4d47ab1105b184de38ef3003b0eb",
   "locale": "de-DE",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -652,8 +652,7 @@
         "stunden",
         "arbeitszeit",
         "sparziel",
-        "ausgaben",
-        "impulskäufe"
+        "ausgaben"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -731,7 +730,9 @@
         "Flughafen",
         "Neon",
         "Banner",
-        "Fan"
+        "Fan",
+        "abholschild flughafen",
+        "konzert schild"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -867,9 +868,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/de-DE/lumibopomofopro.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "0",
+        "price": "9.99",
         "currency": "EUR",
-        "formatted_price": "Kostenlos",
+        "formatted_price": "9,99 €",
         "storefront_url": "https://apps.apple.com/de/app/id6775773117"
       }
     },
@@ -1048,8 +1049,7 @@
         "essen",
         "motivation",
         "verhalten",
-        "lob",
-        "belohnungstafel"
+        "lob"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1127,8 +1127,7 @@
         "widget",
         "index",
         "jacke",
-        "outfit",
-        "was anziehen wetter"
+        "outfit"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1775,8 +1774,7 @@
         "10x15",
         "pixel",
         "dpi",
-        "entfernen",
-        "passbild"
+        "entfernen"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2138,9 +2136,7 @@
         "reset",
         "countdown",
         "llm",
-        "api",
-        "codex limit",
-        "claude limit"
+        "api"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

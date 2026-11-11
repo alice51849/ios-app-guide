@@ -2,7 +2,7 @@
 title: "Meow Party: Jogos de Gato — 200 minigames no dobrável | iOS App"
 lang: "pt-BR"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/foldparty/decision/l/pt-BR/index.html"
-modified: "2026-11-07"
+modified: "2026-11-11"
 app_store_id: "6829184924"
 verified_live: true
 purchase_model: "paid_upfront"

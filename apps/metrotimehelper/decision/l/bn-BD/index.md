@@ -2,7 +2,7 @@
 title: "মেট্রো সময় সহায়ক: Taipei MRT — কখন বের হবেন, আগেই জানুন | iOS App"
 lang: "bn-BD"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/metrotimehelper/decision/l/bn-BD/index.html"
-modified: "2026-11-07"
+modified: "2026-11-11"
 app_store_id: "6819061896"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

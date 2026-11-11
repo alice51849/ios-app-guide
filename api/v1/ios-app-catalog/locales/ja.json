@@ -2,7 +2,7 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-11-11",
-  "content_digest": "dbb9b38a59afbe268df7011425f71093d9f9ab4c8ecd9710793f76cc977f85f8",
+  "content_digest": "55b7da80e6100894e605308387eab211f7ed4d47ab1105b184de38ef3003b0eb",
   "locale": "ja",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -590,7 +590,9 @@
         "休み",
         "ロック画面",
         "海外",
-        "めざまし"
+        "めざまし",
+        "平日 目覚まし",
+        "祝日 目覚まし"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1118,9 +1120,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/ja/lumibopomofopro.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "0",
+        "price": "1500",
         "currency": "JPY",
-        "formatted_price": "無料",
+        "formatted_price": "¥1,500",
         "rating_value": 5.0,
         "rating_count": 1,
         "storefront_url": "https://apps.apple.com/jp/app/id6775773117"
@@ -1367,7 +1369,8 @@
         "声かけ",
         "ご褒美",
         "モチベーション",
-        "年少"
+        "年少",
+        "ごほうび シール"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1470,7 +1473,8 @@
         "台風",
         "UV",
         "おしゃれ",
-        "コーディネート"
+        "コーディネート",
+        "服装 天気"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1734,8 +1738,7 @@
         "オイル交換",
         "消耗品",
         "経過日数",
-        "日数",
-        "最後にしたのは いつ"
+        "日数"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1842,8 +1845,7 @@
         "学生",
         "授業",
         "作り方",
-        "pdf",
-        "プレゼン 作成"
+        "pdf"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2745,8 +2747,8 @@
         "週間",
         "管理",
         "ai 使用量 管理",
-        "codex 使用制限",
-        "claude 使用制限"
+        "claude 使用制限",
+        "トークン 使用量"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

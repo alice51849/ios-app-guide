@@ -2,7 +2,7 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-11-11",
-  "content_digest": "dbb9b38a59afbe268df7011425f71093d9f9ab4c8ecd9710793f76cc977f85f8",
+  "content_digest": "55b7da80e6100894e605308387eab211f7ed4d47ab1105b184de38ef3003b0eb",
   "locale": "ru",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -65,9 +65,7 @@
         "OCR",
         "контекст",
         "чат",
-        "документы",
-        "краткое содержание pdf",
-        "промпт ии"
+        "документы"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -596,7 +594,8 @@
         "путешествия",
         "кошелек",
         "смартчасы",
-        "расходы в путешествии"
+        "расходы в путешествии",
+        "бюджет путешествия"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -676,7 +675,8 @@
         "транжира",
         "привычки",
         "сожаление",
-        "минимализм"
+        "минимализм",
+        "импульсивные покупки"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -896,9 +896,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/ru/lumibopomofopro.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "0",
+        "price": "799",
         "currency": "RUB",
-        "formatted_price": "Бесплатно",
+        "formatted_price": "799,00 ₽",
         "storefront_url": "https://apps.apple.com/ru/app/id6775773117"
       }
     },
@@ -1413,7 +1413,8 @@
         "выручка",
         "клиенты",
         "аренда",
-        "заказы"
+        "заказы",
+        "подработка доход"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

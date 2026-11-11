@@ -8,7 +8,7 @@
   "csv_url": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-agent-feed/feed.csv",
   "schema_url": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-agent-feed/feed.schema.json",
   "license": "https://creativecommons.org/licenses/by/4.0/",
-  "dateModified": "2026-11-06",
+  "dateModified": "2026-11-11",
   "publisher": {
     "name": "Lumi Studio",
     "url": "https://open.cait518.cc/ios-app-guide/about.html"
@@ -18,7 +18,7 @@
   "enable_checkout": false,
   "checkout_note": "Purchase happens on the Apple App Store via app_store_url; this publisher operates no checkout endpoint.",
   "price_source": "Apple App Store public lookup snapshot",
-  "row_count": 2882,
+  "row_count": 2881,
   "app_count": 59,
   "locale_count": 49,
   "official_locale_count": 50,
@@ -183,5 +183,5 @@
     "one_time_purchase",
     "subscription"
   ],
-  "content_digest": "sha256:c1767d452caf33067dd00acee0b21e7e455dd84d27be7a85f038d2a7ac8c5e48"
+  "content_digest": "sha256:0b9a90df44fd985457f2a15b15672a384eb912b5654731b78d65f6561f280a07"
 }

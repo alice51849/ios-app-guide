@@ -2,7 +2,7 @@
 title: "ਦੋਭਾਸ਼ੀ ਬੱਚਿਆਂ ਲਈ ਪੂਰੀ Zhuyin ਐਪ"
 lang: "pa-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumibopomofopro/decision/l/pa-IN/index.html"
-modified: "2026-11-07"
+modified: "2026-11-11"
 app_store_id: "6775773117"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - ਕੋਈ ਖਾਤਾ ਨਹੀਂ
 - ਕੋਈ ਵਿਗਿਆਪਨ ਨਹੀਂ
 - ਨਿੱਜੀ / ਡਿਵਾਈਸ 'ਤੇ
-- App Store · ਮੁਫ਼ਤ
+- App Store · ₹ 999
 
 [Lumi Bopomofo Pro App Store 'ਤੇ ਲਵੋ →](https://apps.apple.com/in/app/id6775773117?pt=118326163&ct=geo_pick&mt=8)
 

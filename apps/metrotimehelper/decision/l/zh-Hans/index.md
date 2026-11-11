@@ -2,7 +2,7 @@
 title: "捷运时间助手：台北地铁换乘 — 倒推出门时间｜新北投·小碧潭支线 | iOS App"
 lang: "zh-Hans"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/metrotimehelper/decision/l/zh-Hans/index.html"
-modified: "2026-11-07"
+modified: "2026-11-11"
 app_store_id: "6819061896"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

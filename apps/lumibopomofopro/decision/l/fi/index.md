@@ -2,7 +2,7 @@
 title: "paras kattava zhuyin-sovellus kaksikielisille lapsille"
 lang: "fi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumibopomofopro/decision/l/fi/index.html"
-modified: "2026-11-07"
+modified: "2026-11-11"
 app_store_id: "6775773117"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ Kaksikieliset lapset, jotka opettelevat Zhuyinia kotona, tarvitsevat kokonaisen 
 - Ei tiliä
 - Ei mainoksia
 - Yksityinen / laitteella
-- App Store · Ilmainen
+- App Store · 9,99 €
 
 [Hanki Lumi Bopomofo Pro App Storesta →](https://apps.apple.com/fi/app/id6775773117?pt=118326163&ct=geo_pick&mt=8)
 

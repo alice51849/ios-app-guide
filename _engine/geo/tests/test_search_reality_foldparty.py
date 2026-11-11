@@ -47,6 +47,10 @@ class FoldPartyPageTests(unittest.TestCase):
         source = self.pages[g3.page_relative(gen.PAGE_SPECS[0])]
         self.assertIn(gen.PAGE_SPECS[3]["slug"] + ".html", source)
 
+    def test_macau_cat_page_links_taiwan_cat_page(self):
+        source = self.pages[g3.page_relative(gen.PAGE_SPECS[2])]
+        self.assertIn(gen.PAGE_SPECS[3]["slug"] + ".html", source)
+
     def test_card_links_storefront_with_campaign(self):
         for spec in gen.PAGE_SPECS:
             cc = spec.get("cc") or gen.LANGS[spec["lang"]]["cc"]

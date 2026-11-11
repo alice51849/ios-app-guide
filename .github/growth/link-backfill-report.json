@@ -1,18 +1,30 @@
 {
- "generated": "2026-11-11T06:34:45Z",
+ "generated": "2026-11-11T17:15:30Z",
  "mode": "apply",
  "counts": {
-  "ok_reply": 61,
+  "ok_reply": 62,
   "unknown_app": 47,
-  "ok_backfilled_earlier": 67,
+  "ok_backfilled_earlier": 69,
   "backfilled": 2,
-  "ok_store_only": 663,
+  "ok_store_only": 661,
   "ok_bio_link": 68,
   "ok_caption": 4,
   "taken_down": 4,
   "missing": 3
  },
  "rows": [
+  {
+   "channel": "threads",
+   "id": "18419251945083477",
+   "permalink": "https://www.threads.com/@hourstag.app/post/Dfms8hfj6Zp",
+   "date": "2026-11-11",
+   "app": "mochi",
+   "status": "ok_reply",
+   "text": "一份你不想打開的待辦清單，只是一份讓你有罪惡感的清單。 開發者分享，非獨立評比。倒垃圾、澆花、明天的跑腿小事，放進 Mochi 清單就好。設好提醒，做完勾掉；沒有廣告。免費版可用 2 個清單，進階版為 App 內購買。 Mochi",
+   "why": "brand",
+   "ios_id": "6785004775",
+   "locale": "zh-Hant"
+  },
   {
    "channel": "threads",
    "id": "18118683830015700",
@@ -1439,16 +1451,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdRNnP-AYI5",
    "date": "2026-09-14",
    "app": "cyca",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "Ovulation, Calendar & PMS. Meet Cyca — the warm, private way to understand your cycle. Cyca: Period & Cycle Tracker Link: https://apps.apple",
    "why": "url+brand",
    "ios_id": "6782251621",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "18134270416667193",
-   "at": "2026-11-11T06:31:46Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",
@@ -1456,11 +1463,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdOJciXD0X8",
    "date": "2026-09-13",
    "app": "battai",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "Clear rules, sources, and limits. Other results are calculated from those readings or added by you. BattAI: Battery health score It’s on the",
    "why": "url+brand",
    "ios_id": "6802423998",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "18122057629751240",
+   "at": "2026-11-11T17:12:58Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -1468,11 +1480,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdO346TgdLk",
    "date": "2026-09-13",
    "app": "lumibopomofo",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "Lumi 注音星球 是一款專為學齡前與低年級孩子(約 4–7 歲)設計的注音符號學習遊戲。 餵食小夥伴:聽聲音、選出正確的注音。 Lumi注音星球 連結: https://apps.apple.com/tw/app/id6773017109?pt=118326163&ct=thr",
    "why": "url+brand",
    "ios_id": "6773017109",
-   "locale": "zh-Hant"
+   "locale": "zh-Hant",
+   "own_replies": [],
+   "comment_id": "18176325742454127",
+   "at": "2026-11-11T17:12:58Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -1480,16 +1497,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdPuMrsAXb-",
    "date": "2026-09-13",
    "app": "dailymate",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "You know 3,000 words and still freeze in the first ten seconds. Our app, not a ranking: Save complete travel phrases; review on Watch or wid",
    "why": "url+brand",
    "ios_id": "6790418321",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "18107697020346690",
-   "at": "2026-11-11T06:31:46Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",

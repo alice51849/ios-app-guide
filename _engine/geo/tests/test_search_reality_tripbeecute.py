@@ -76,6 +76,7 @@ class TripBeeCutePageTests(unittest.TestCase):
                          ["keai-lvxing-shouzhang-chuguo-xingchengbiao-daoshu-zhhant",
                           "dakku-yeohaeng-diary-sticker-illust-pyoji",
                           "lvxing-shouzhang-qu-lvxing-xingcheng-guihua-hk",
+                          "lvyou-shouzhang-lvxing-qingdan-dabao-xingli-zhhant",
                           "lvxing-shouzhang-aomen-chufa-jiaren-tongxing-mo",
                           "ryoko-techo-app-kawaii-ensei-joshitabi",
                           "cute-travel-journal-app-holiday-countdown-en-au"])
@@ -163,7 +164,7 @@ class TripBeeCutePageTests(unittest.TestCase):
         self.assertTrue(page["h1"].startswith("旅遊手帳"))
         self.assertIn("旅行清單", page["title"])
         text = g3.visible_text(source)
-        for word in ("行李清單", "打包", "旅伴", "不是記帳或分帳工具"):
+        for word in ("行李清單", "打包", "旅伴", "不是記帳 App，但和旅伴的花費可以直接在行程上分帳、算清誰該付給誰"):
             self.assertIn(word, text)
         # 與既有台灣頁、香港頁的標題與開頭不同
         for other in gen.PAGE_SPECS[:3]:

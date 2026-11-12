@@ -2,7 +2,7 @@
 title: "TripBee Cute: ಪ್ರವಾಸ ಡೈರಿ — ಒಟ್ಟಿಗೆ ಮುದ್ದಾದ ಟ್ರಿಪ್ ಪ್ಲಾನ್ | iOS App"
 lang: "kn-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbeecute/decision/l/kn-IN/index.html"
-modified: "2026-11-11"
+modified: "2026-11-12"
 app_store_id: "6826987407"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

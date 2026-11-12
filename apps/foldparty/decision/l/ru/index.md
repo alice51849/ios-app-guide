@@ -2,7 +2,7 @@
 title: "Мяу-вечеринка: игры на двоих — 200 игр на складном смартфоне | iOS App"
 lang: "ru"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/foldparty/decision/l/ru/index.html"
-modified: "2026-11-11"
+modified: "2026-11-12"
 app_store_id: "6829184924"
 verified_live: true
 purchase_model: "paid_upfront"

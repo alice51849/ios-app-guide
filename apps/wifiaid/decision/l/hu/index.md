@@ -2,7 +2,7 @@
 title: "WiFi Aid: Hálózati hibák — Router, mesh, DNS diagnosztika | iOS App"
 lang: "hu"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/hu/index.html"
-modified: "2026-11-11"
+modified: "2026-11-12"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"

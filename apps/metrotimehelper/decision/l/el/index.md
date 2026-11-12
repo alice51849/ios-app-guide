@@ -2,7 +2,7 @@
 title: "Μετρό στην Ώρα – Ταϊπέι — Υπολογίζει πότε να φύγεις | iOS App"
 lang: "el"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/metrotimehelper/decision/l/el/index.html"
-modified: "2026-11-11"
+modified: "2026-11-12"
 app_store_id: "6819061896"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

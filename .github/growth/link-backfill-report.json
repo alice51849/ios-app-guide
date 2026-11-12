@@ -1,12 +1,12 @@
 {
- "generated": "2026-11-11T17:15:30Z",
+ "generated": "2026-11-12T00:50:29Z",
  "mode": "apply",
  "counts": {
-  "ok_reply": 62,
+  "ok_reply": 63,
   "unknown_app": 47,
-  "ok_backfilled_earlier": 69,
+  "ok_backfilled_earlier": 71,
   "backfilled": 2,
-  "ok_store_only": 661,
+  "ok_store_only": 659,
   "ok_bio_link": 68,
   "ok_caption": 4,
   "taken_down": 4,
@@ -36,6 +36,18 @@
    "why": "brand",
    "ios_id": "6826987407",
    "locale": "ja"
+  },
+  {
+   "channel": "threads",
+   "id": "18100183112549817",
+   "permalink": "https://www.threads.com/@hourstag.app/post/DfnriXHE3Bj",
+   "date": "2026-11-11",
+   "app": "tripbeecute",
+   "status": "ok_reply",
+   "text": "كتيب رحلات مصور مع الأصدقاء. على رفّك، لكل رحلة غلافها المصور. TripBee Cute: يوميات سفر",
+   "why": "brand",
+   "ios_id": "6826987407",
+   "locale": "en"
   },
   {
    "channel": "threads",
@@ -1463,16 +1475,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdOJciXD0X8",
    "date": "2026-09-13",
    "app": "battai",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "Clear rules, sources, and limits. Other results are calculated from those readings or added by you. BattAI: Battery health score It’s on the",
    "why": "url+brand",
    "ios_id": "6802423998",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "18122057629751240",
-   "at": "2026-11-11T17:12:58Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",
@@ -1480,16 +1487,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdO346TgdLk",
    "date": "2026-09-13",
    "app": "lumibopomofo",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "Lumi 注音星球 是一款專為學齡前與低年級孩子(約 4–7 歲)設計的注音符號學習遊戲。 餵食小夥伴:聽聲音、選出正確的注音。 Lumi注音星球 連結: https://apps.apple.com/tw/app/id6773017109?pt=118326163&ct=thr",
    "why": "url+brand",
    "ios_id": "6773017109",
-   "locale": "zh-Hant",
-   "own_replies": [],
-   "comment_id": "18176325742454127",
-   "at": "2026-11-11T17:12:58Z",
-   "verified": true,
-   "via": "list"
+   "locale": "zh-Hant"
   },
   {
    "channel": "threads",
@@ -1509,11 +1511,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdNJzbFE23x",
    "date": "2026-09-12",
    "app": "lumiletters",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "\"Five more minutes\" — about a learning game, for once. Our app, not a ranking: Hear and trace A free; other letters need a lifetime unlock. ",
    "why": "url",
    "ios_id": "6778748533",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "18119524774790812",
+   "at": "2026-11-12T00:47:47Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -1521,11 +1528,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdISbIrGJP2",
    "date": "2026-09-11",
    "app": "zipbox",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "零廣告,內容先看再處理。 不用解壓，也能先查看壓縮檔裡的內容。 Zipbox 解壓縮：RAR ZIP 7z 順手附個連結: https://apps.apple.com/tw/app/id6806776579?pt=118326163&ct=threads&mt=8",
    "why": "url+brand",
    "ios_id": "6806776579",
-   "locale": "zh-Hant"
+   "locale": "zh-Hant",
+   "own_replies": [],
+   "comment_id": "18417101122084978",
+   "at": "2026-11-12T00:47:47Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",

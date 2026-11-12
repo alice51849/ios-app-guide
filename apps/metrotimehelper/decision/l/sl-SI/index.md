@@ -2,7 +2,7 @@
 title: "Tajpej: metro pravočasno — Kdaj na pot, da ne zamudite | iOS App"
 lang: "sl-SI"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/metrotimehelper/decision/l/sl-SI/index.html"
-modified: "2026-11-11"
+modified: "2026-11-12"
 app_store_id: "6819061896"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

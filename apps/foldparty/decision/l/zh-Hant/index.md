@@ -2,7 +2,7 @@
 title: "喵喵派對：雙人遊戲 貓咪小遊戲 — 摺疊手機更好玩！200款可愛遊戲，兩人一台就能對戰 | iOS App"
 lang: "zh-Hant"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/foldparty/decision/l/zh-Hant/index.html"
-modified: "2026-11-11"
+modified: "2026-11-12"
 app_store_id: "6829184924"
 verified_live: true
 purchase_model: "paid_upfront"

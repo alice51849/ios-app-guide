@@ -2,7 +2,7 @@
 title: "TripBee Cute: ప్రయాణ డైరీ — స్నేహితులతో టూర్ ప్లాన్ చేయండి | iOS App"
 lang: "te-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbeecute/decision/l/te-IN/index.html"
-modified: "2026-11-11"
+modified: "2026-11-12"
 app_store_id: "6826987407"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

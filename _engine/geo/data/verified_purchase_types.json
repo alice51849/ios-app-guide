@@ -77,6 +77,10 @@
    "evidence": "ASC 核准 NON_CONSUMABLE（com.alice51849.HoursTagLite.lifetime）、0 個訂閱群組（2026-09-06）",
    "type": "one_time_unlock"
   },
+  "kumo": {
+   "evidence": "en-US 商店描述原句「Kumo Full is available as a monthly or yearly auto-renewing subscription, or as a one-time in-app purchase.」（ops/aso/kumo/final_50locales.json，ASC 1.0.0 逐字讀回 0 不符；2026-11-12）；有自動續訂，不可寫買斷字樣",
+   "type": "subscription"
+  },
   "ledmovingtext": {
    "evidence": "en-US 商店描述寫明一次購買解鎖、無訂閱字樣",
    "type": "one_time_unlock"

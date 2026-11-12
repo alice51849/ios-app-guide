@@ -58,7 +58,12 @@ DISCLOSURE = (
 PURCHASE_LABELS = {
     "paid_upfront": "Paid download",
     "free_with_lifetime_unlock": "Free to start · one-time unlock",
+    # 有訂閱（例如同時有自動續訂與一次性買斷）的款：不寫一次解鎖、價格或試用，
+    # 只請讀者看目前上架頁；沿用目錄既有的 neutral 文案。
+    "neutral": "Check current listing",
 }
+# 只有這兩種購買類型在目錄裡記為「有一次性購買選項」。
+ONE_TIME_MODELS = frozenset({"paid_upfront", "free_with_lifetime_unlock"})
 SOURCE_FILES = (
     "owned_app_feeds.py", "owned_feed_locale_gate.py", "owned_feed_delivery.py",
     "owned_feed_receipts.py", "owned_feed_receipt.schema.json",
@@ -197,12 +202,26 @@ def load_sources(pages: Path, source: Path) -> tuple[dict, dict, dict]:
     if read_json(source / "live_app_manifest.json") != roster:
         raise ValueError("Feed source roster differs from the loaded canonical roster")
     keys = set(roster["apps"])
+    # 未知購買類型：只略過那一款、明確報錯，其餘款照常產出。
+    skipped = {
+        key: f"unsupported purchase model: {APPS.get(key, {}).get('purchase_model')!r}"
+        for key in sorted(keys)
+        if APPS.get(key, {}).get("purchase_model") not in PURCHASE_LABELS
+    }
+    for key, reason in skipped.items():
+        print(f"::error::Owned feeds skipped {key}: {reason}", file=sys.stderr)
+    included = keys - set(skipped)
+    if not included:
+        raise ValueError("No roster App has a supported purchase model")
     copies = load_copy(source)
     index = read_json(pages / CATALOG / "index.json")
     require_official_locale_coverage(
         "catalog inputs", {p.stem for p in (pages / CATALOG / "locales").glob("*.json")}
     )
-    if index.get("record_count") != len(keys) or index.get("locale_count") != 50:
+    if (
+        not len(included) <= (index.get("record_count") or 0) <= len(keys)
+        or index.get("locale_count") != 50
+    ):
         raise ValueError("Catalog inventory differs from canonical roster")
     localized, channels = {}, {}
     for locale in OFFICIAL_LOCALES:
@@ -211,20 +230,23 @@ def load_sources(pages: Path, source: Path) -> tuple[dict, dict, dict]:
         apps = catalog.get("apps")
         if (
             catalog.get("locale") != locale
-            or catalog.get("record_count") != len(keys)
+            or catalog.get("record_count") != index.get("record_count")
             or catalog.get("content_digest") != index.get("content_digest")
-            or not isinstance(apps, list) or len(apps) != len(keys)
+            or not isinstance(apps, list) or len(apps) != index.get("record_count")
             or source_feed.get("language") != locale
             or source_feed.get("_lumi_catalog", {}).get("contentDigest") != index.get("content_digest")
         ):
             raise ValueError(f"Mixed catalog generation: {locale}")
         localized[locale] = apps
-        records = {}
+        records, seen = {}, set()
         copy = copies[locale]
         for app in apps:
             key = app.get("key")
-            if key not in keys or key in records:
+            if key not in keys or key in records or key in seen:
                 raise ValueError(f"Duplicate/non-roster App: {locale}/{key}")
+            seen.add(key)
+            if key in skipped:
+                continue
             app_id = roster["apps"][key]["app_id"]
             model = app.get("purchase_model")
             if (
@@ -232,7 +254,7 @@ def load_sources(pages: Path, source: Path) -> tuple[dict, dict, dict]:
                 or str(APPSTORE.get(key)) != app_id
                 or model not in PURCHASE_LABELS
                 or model != APPS[key].get("purchase_model")
-                or app.get("one_time_option") is not True
+                or app.get("one_time_option") is not (model in ONE_TIME_MODELS)
                 or app.get("verified_live") is not True
             ):
                 raise ValueError(f"App identity/purchase drift: {locale}/{key}")
@@ -255,7 +277,7 @@ def load_sources(pages: Path, source: Path) -> tuple[dict, dict, dict]:
             metadata = {
                 "app_key": key, "app_store_id": app_id,
                 "purchase_model": model, "purchase_label": copy[model],
-                "one_time_option": True, "independent_ranking": False,
+                "one_time_option": model in ONE_TIME_MODELS, "independent_ranking": False,
                 "publisher_disclosure": copy["disclosure"],
                 "source_locale": locale,
             }
@@ -293,13 +315,13 @@ def load_sources(pages: Path, source: Path) -> tuple[dict, dict, dict]:
             record["content_text"] = "\n\n".join(parts)
             record["content_html"] = "".join(markup)
             records[key] = record
-        if set(records) != keys:
+        if set(records) != included:
             raise ValueError(f"Incomplete owned-feed roster: {locale}")
         title = source_feed.get("title")
         validate_text(locale, title, "channel title")
         channels[locale] = {
             "title": title, "disclosure": copy["disclosure"],
-            "items": [records[key] for key in sorted(keys)],
+            "items": [records[key] for key in sorted(included)],
         }
     actual_digest = digest({"api_version": index["api_version"], "localized": localized})
     if actual_digest != index.get("content_digest"):
@@ -315,6 +337,9 @@ def load_sources(pages: Path, source: Path) -> tuple[dict, dict, dict]:
         "roster_digest": roster["roster_digest"],
         "source_files": source_hashes(source),
     }
+    if skipped:
+        source_state["skipped_apps"] = skipped
+    roster = {**roster, "apps": {k: v for k, v in roster["apps"].items() if k in included}}
     return roster, channels, source_state
 
 

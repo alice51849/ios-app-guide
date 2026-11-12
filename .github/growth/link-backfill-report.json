@@ -1,12 +1,12 @@
 {
- "generated": "2026-11-12T11:23:51Z",
+ "generated": "2026-11-12T20:01:26Z",
  "mode": "apply",
  "counts": {
   "unknown_app": 48,
   "ok_reply": 63,
-  "ok_backfilled_earlier": 73,
+  "ok_backfilled_earlier": 75,
   "backfilled": 2,
-  "ok_store_only": 657,
+  "ok_store_only": 655,
   "ok_bio_link": 68,
   "ok_caption": 4,
   "taken_down": 4,
@@ -1545,16 +1545,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdG8MTWmCmH",
    "date": "2026-09-10",
    "app": "moneytag",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "โปรเจกต์, แท็ก, รายงาน. ทุกโปรเจกต์มีบัญชีของตัวเอง: รายรับลบรายจ่ายคือยอดสุทธิของโปรเจกต์นั้น นี่คือคําถามที่พบบ่อยที่สุด หากไม่มีคําตอบที่",
    "why": "url+brand",
    "ios_id": "6801956402",
-   "locale": "th",
-   "own_replies": [],
-   "comment_id": "18115199177580658",
-   "at": "2026-11-12T11:21:14Z",
-   "verified": true,
-   "via": "list"
+   "locale": "th"
   },
   {
    "channel": "threads",
@@ -1562,16 +1557,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdBOzOuDwCo",
    "date": "2026-09-08",
    "app": "dailymate",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "Frases completas, não palavras. Idioma de verdade se aprende com frases completas, não decorando palavras soltas. DailyMate: idiomas em cont",
    "why": "url+brand",
    "ios_id": "6790418321",
-   "locale": "other",
-   "own_replies": [],
-   "comment_id": "17874823191640451",
-   "at": "2026-11-12T11:21:14Z",
-   "verified": true,
-   "via": "list"
+   "locale": "other"
   },
   {
    "channel": "threads",
@@ -1579,11 +1569,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdAWAaOD1Xm",
    "date": "2026-09-08",
    "app": "hourstag",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "Budsjett, utgifter & sparing. HoursTag gjør hver pris om til arbeidstimene du trenger for å tjene den. HoursTag: Timer å kjøpe Legger igjen ",
    "why": "url+brand",
    "ios_id": "6754218117",
-   "locale": "other"
+   "locale": "other",
+   "own_replies": [],
+   "comment_id": "17880760863563391",
+   "at": "2026-11-12T19:58:52Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -1603,11 +1598,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/Dc_NTNqD2k8",
    "date": "2026-09-07",
    "app": "dailymate",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "Des phrases, pas des mots. Une langue se retient dans des phrases entières, pas dans des listes de mots isolés. DailyMate : parler en contex",
    "why": "url+brand",
    "ios_id": "6790418321",
-   "locale": "other"
+   "locale": "other",
+   "own_replies": [],
+   "comment_id": "18116784215122472",
+   "at": "2026-11-12T19:58:52Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",

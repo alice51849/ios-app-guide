@@ -3,7 +3,8 @@ name: Threads posts
 # Replaces threads-daily.yml (disabled after the old account was limited for
 # posting 30-48 linked posts a day). Now at most 3 posts a day, links only in
 # the first reply:
-# - 1 hook-clip video from .github/growth/clips.json (Asia 01:40 UTC)
+# - 1 hook-clip video from .github/growth/clips.json (Asia 01:40 UTC); since 2026-11-12 this slot posts
+#   nothing on Threads: it is left to threads-autopilot's 15 UTC slot, so at most 2 posts come before 21:00
 # - 1 picture post (Taiwan 11:00)
 # - 1 evening series post (13:00 UTC = Taiwan 21:00 = US Eastern 9:00) from
 #   .github/growth/threads-series.json via threads_series.py: Lumi Weather
@@ -110,11 +111,19 @@ jobs:
           --schedule "$SLOT_SCHEDULE"
           --slot-hour "$SLOT_HOUR"
           --slot-date "$SLOT_DATE"
+      - name: Leave the 01:40 slot to threads-autopilot (shared account)
+        # Coordinator 2026-11-12: the 3-in-24-hours cap stays; the Taiwan 21:00 (13 UTC) slot is kept for this
+        # workflow's evening post, and before it the two pipelines post at most 2 together: this workflow's
+        # 03:00 UTC slot and threads-autopilot's 15 UTC (Taiwan 23:00) slot (its guardrails
+        # THREADS_SHARED_ACCOUNT_SLOT_HOURS_UTC). So the 01:40 slot posts nothing on Threads (green). 11-11 and
+        # 11-12 the 21:00 slot was skipped: the account already had 3 posts in the last 24 hours.
+        if: steps.slot.outputs.should_post == 'true' && steps.slot.outputs.hour == '1'
+        run: echo "::notice::Threads 01:40 這格讓給 threads-autopilot 的 15 UTC（台北 23:00）那格，本次不發主貼文。"
       - name: Check the account's daily cap (3 posts, Taiwan date)
         # Shared with every Threads post path (threads-autopilot included).
         # Full: the slot is done. Count unknown: fail, so a backfill can retry.
         id: room
-        if: steps.slot.outputs.should_post == 'true'
+        if: steps.slot.outputs.should_post == 'true' && steps.slot.outputs.hour != '1'
         env:
           THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
         run: |

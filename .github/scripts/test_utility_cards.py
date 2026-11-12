@@ -114,9 +114,14 @@ class ThreadsCapTest(unittest.TestCase):
         self.assertFalse(U.threads_has_room(day, self.schedule(2)))
         # The 21:00 evening slot (threads_series.py or the slot-15 clip) always takes one post.
         self.assertFalse(U.threads_has_room(day, self.schedule(1)))
-        self.assertEqual(U.threads_planned(day, self.schedule(0)), 2)
-        self.assertTrue(U.threads_has_room(day, self.schedule(0)))
-        self.assertTrue(U.threads_has_room(day, Path("/nonexistent.json")))
+        # Since 2026-11-12 the 01:40 slot posts nothing on Threads and threads-autopilot's 23:00 slot takes
+        # its place: 11:00 + 23:00 + 21:00 fill the day even with no hook clip planned, so the card never takes
+        # a fourth (it would push the 21:00 slot over the 3-in-24-hours cap).
+        self.assertEqual(U.threads_planned(day, self.schedule(0)), 3)
+        self.assertFalse(U.threads_has_room(day, self.schedule(0)))
+        self.assertFalse(U.threads_has_room(day, Path("/nonexistent.json")))
+        # A hook clip planned for another Threads slot would still count on top.
+        self.assertEqual(U.threads_planned(day, self.schedule(3)), 4)
 
     def test_full_threads_day_posts_nothing_there(self):
         with mock.patch.object(U, "threads_has_room", return_value=False), \

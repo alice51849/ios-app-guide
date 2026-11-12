@@ -74,7 +74,12 @@ class TripBeeCutePageTests(unittest.TestCase):
     def test_pass_wording_pages_follow_copy_fix_spec(self):
         self.assertEqual([s["slug"] for s in gen.PAGE_SPECS if s.get("pass_wording")],
                          ["keai-lvxing-shouzhang-chuguo-xingchengbiao-daoshu-zhhant",
-                          "dakku-yeohaeng-diary-sticker-illust-pyoji"])
+                          "dakku-yeohaeng-diary-sticker-illust-pyoji",
+                          "lvxing-shouzhang-qu-lvxing-xingcheng-guihua-hk",
+                          "lvyou-shouzhang-lvxing-qingdan-dabao-xingli-zhhant",
+                          "lvxing-shouzhang-aomen-chufa-jiaren-tongxing-mo",
+                          "ryoko-techo-app-kawaii-ensei-joshitabi",
+                          "cute-travel-journal-app-holiday-countdown-en-au"])
         self.assertIsNotNone(gen.BANNED.search("무료"))
         self.assertIsNone(gen.PASS_BANNED.search("무료"))
         for bad in ("免費", "Free", "NT$90", "3,300원"):
@@ -93,9 +98,22 @@ class TripBeeCutePageTests(unittest.TestCase):
             self.assertIn("Cute Pass", text)
             for word in words:
                 self.assertIn(word, spec["faqs"][0][1])
-            for word in ("免費試用", "57 款", "57종", "分帳", "정산"):
+            for word in ("免費試用", "57 款", "57종"):
                 self.assertNotIn(word, text)
             self.assertIn("id6826987407", source)
+        # 付費口徑：分帳不購買就能用，列在台韓兩頁「不購買能做什麼」清單
+        self.assertIn("分帳（和旅伴記花費、算清誰該付給誰）", tw["faqs"][0][1])
+        self.assertIn("여행 경비 정산", ko["faqs"][0][1])
+        # 港澳日澳四頁：共同編輯、同步、智慧行李清單、加購封面標 Cute Pass，不新增 FAQ 題目
+        for spec in gen.PAGE_SPECS[2:]:
+            if not spec.get("pass_wording"):
+                continue
+            text = g3.visible_text(self.pages[g3.page_relative(spec)])
+            self.assertIn("Cute Pass", text, spec["slug"])
+            self.assertIn("51", text, spec["slug"])
+            for word in ("免費試用", "57 款", "57"):
+                self.assertNotIn(word, text, spec["slug"])
+            self.assertEqual(len(spec["faqs"]), 4, spec["slug"])
 
     def test_hong_kong_page_uses_hk_storefront_and_own_slug(self):
         hk = gen.PAGE_SPECS[2]
@@ -146,7 +164,7 @@ class TripBeeCutePageTests(unittest.TestCase):
         self.assertTrue(page["h1"].startswith("旅遊手帳"))
         self.assertIn("旅行清單", page["title"])
         text = g3.visible_text(source)
-        for word in ("行李清單", "打包", "旅伴", "不是記帳或分帳工具"):
+        for word in ("行李清單", "打包", "旅伴", "不是記帳 App，但和旅伴的花費可以直接在行程上分帳、算清誰該付給誰"):
             self.assertIn(word, text)
         # 與既有台灣頁、香港頁的標題與開頭不同
         for other in gen.PAGE_SPECS[:3]:

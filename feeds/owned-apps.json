@@ -282,7 +282,7 @@
       "record_count": 59
     },
     "bn-BD": {
-      "date_modified": "2026-11-12T17:42:18Z",
+      "date_modified": "2026-11-12T21:34:49Z",
       "formats": {
         "atom": {
           "accepted_content_types": [
@@ -292,7 +292,7 @@
           ],
           "content_type": "application/atom+xml",
           "path": "bn-BD/feed.xml",
-          "sha256": "676c3d01e9c9dd74acf8b6fc18207d81145f55c3d1f3f76a0ae2dd7de06bc81c",
+          "sha256": "f48c32a3b57cee78cf6265da4c98be37e5cf0b4041d37216aac4de72d6f58af6",
           "url": "https://open.cait518.cc/ios-app-guide/bn-BD/feed.xml"
         },
         "json_feed": {
@@ -302,7 +302,7 @@
           ],
           "content_type": "application/feed+json",
           "path": "bn-BD/feed.json",
-          "sha256": "fe1d9b3fcd2fb17e7a041f88bff4aaef9d8e56ade914b836dc821192d243e3cf",
+          "sha256": "e12b34787d3272aeca23cdc117fd299b750a429a4b1f61ea9b200a3bacd2f935",
           "url": "https://open.cait518.cc/ios-app-guide/bn-BD/feed.json"
         },
         "rss": {
@@ -313,7 +313,7 @@
           ],
           "content_type": "application/rss+xml",
           "path": "bn-BD/rss.xml",
-          "sha256": "f936677637e5dfd81f02e3fad82007b92ec933ff5935ce456bf047f9f2c659ac",
+          "sha256": "f53f318646d61d4a15fcd1bb27dbadbb11ffc0f09518b68fb5762d8774b06ddb",
           "url": "https://open.cait518.cc/ios-app-guide/bn-BD/rss.xml"
         }
       },
@@ -2242,7 +2242,7 @@
       "record_count": 59
     }
   },
-  "generation_digest": "3abae080247d21b09714c807be330be131d6a74f248745f166c0b2020e4eefeb",
+  "generation_digest": "5266823794bb919378ddfb97df71aa2b9b7db73db56925648fc73da54e059c8b",
   "locale_count": 50,
   "notification_feed_count": 147,
   "purchase_models": {
@@ -2274,7 +2274,7 @@
       "notify_rsscloud.py": "38a644424c666ca9aaf10b9b6dffdb9800829fa6adc8cb3295522c5adc8b599c",
       "notify_websub.py": "1b0abe01f176d0b3ed56be3f12616ddac395dc38abd497e923718e7c925735f6",
       "official_locales.py": "576457e2c5b19b9b6e78f644397b27e177f3b195ce7ecc3ac83ef3a39b8d498a",
-      "owned_app_feeds.py": "d0338bd915af458caa61e3c4e72673fd89122324388641f1714ee2df699109f1",
+      "owned_app_feeds.py": "b318d3a8251d193429dd9b866e8880731fdf5d4eb4ab815d65b602e43082e2d0",
       "owned_feed_delivery.py": "621d8ad56bade69dc183a77d9a20561e2b1cd51bba3b920b9201a86f7304dae9",
       "owned_feed_locale_gate.py": "5a6474d0af445110da41074c48f06b99464fa1c5d53bc21f4602ef1dff3c65d7",
       "owned_feed_public_capture.py": "14fa3142d58097b5f2e548b075131ecc7d7280c82494b01adcb271a0fa4d57c6",

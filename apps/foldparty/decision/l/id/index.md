@@ -2,7 +2,7 @@
 title: "Meow Party: Game Kucing Berdua — 200 Game Seru di Layar Lipat | iOS App"
 lang: "id"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/foldparty/decision/l/id/index.html"
-modified: "2026-11-11"
+modified: "2026-11-12"
 app_store_id: "6829184924"
 verified_live: true
 purchase_model: "paid_upfront"

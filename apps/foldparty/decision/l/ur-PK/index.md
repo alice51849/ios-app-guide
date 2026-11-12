@@ -2,7 +2,7 @@
 title: "Meow Party: پیاری بلی گیمز — فولڈ ایبل فون پر 200 کھیل | iOS App"
 lang: "ur-PK"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/foldparty/decision/l/ur-PK/index.html"
-modified: "2026-11-11"
+modified: "2026-11-12"
 app_store_id: "6829184924"
 verified_live: true
 purchase_model: "paid_upfront"

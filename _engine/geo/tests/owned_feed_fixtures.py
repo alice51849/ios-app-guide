@@ -76,7 +76,8 @@ def make_catalog(pages: Path) -> None:
             apps.append({
                 "key": key, "app_store_id": app["app_id"],
                 "name": build_pages_i18n._single_line(values["name"]), "summary": summary,
-                "purchase_model": APPS[key]["purchase_model"], "one_time_option": True,
+                "purchase_model": APPS[key]["purchase_model"],
+                "one_time_option": APPS[key]["purchase_model"] in feeds.ONE_TIME_MODELS,
                 "app_store_url": direct, "verified_live": True,
                 "guide_url": feeds.url(f"{locale}/{key}.html"),
                 **market.record_fields(locale, app["app_id"]),

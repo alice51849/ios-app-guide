@@ -661,6 +661,19 @@ def localized_summary(key: str, locale: str, pages: Path) -> str:
     return summary
 
 
+# 本輪因未知購買類型而略過的款（款 key → 原因），供呼叫端與報表讀取。
+SKIPPED_APPS: dict[str, str] = {}
+
+
+def report_skipped_app(key: str, reason: str) -> None:
+    if SKIPPED_APPS.get(key) != reason:
+        print(
+            f"::error::Portfolio finder skipped {key}: {reason}",
+            file=sys.stderr,
+        )
+    SKIPPED_APPS[key] = reason
+
+
 def catalog_records(
     live_keys: set[str] | list[str],
     pages: Path = PAGES,
@@ -674,14 +687,16 @@ def catalog_records(
     if unknown:
         raise ValueError(f"Unknown verified app keys: {sorted(unknown)}")
     records = []
-    for key in live:
+    for key in sorted(live):
         app = APPS[key]
         app_id = APPSTORE.get(key)
         if not app_id:
             raise ValueError(f"Verified app is missing an App Store ID: {key}")
         model = app.get("purchase_model", "neutral")
         if model not in VALID_PURCHASE_MODELS:
-            raise ValueError(f"Invalid purchase model for {key}: {model}")
+            # 未知購買類型：只略過這一款並明確報錯，不讓整份目錄重產失敗。
+            report_skipped_app(key, f"unknown purchase model: {model!r}")
+            continue
         bullets = [
             str(value).strip()
             for value in app.get("cta_bullets", [])
@@ -732,6 +747,11 @@ def catalog_records(
                 ),
                 "verified_live": True,
             }
+        )
+    if not records:
+        raise ValueError(
+            "Portfolio finder has no app with a known purchase model: "
+            f"{sorted(SKIPPED_APPS)}"
         )
     return sorted(
         records,
@@ -883,7 +903,7 @@ def dataset_payload(
         if key not in roster or key in indexed:
             raise contract.ContractError("finder_producer_roster_invalid")
         indexed[key] = dict(record)
-    missing = set(roster) - set(indexed)
+    missing = set(roster) - set(indexed) - set(SKIPPED_APPS)
     if missing:
         indexed.update({row["key"]: row for row in catalog_records(missing, pages, allow_unknown_summaries=True)})
     availability = availability or {
@@ -901,6 +921,8 @@ def dataset_payload(
     verified_by_id = availability.get("verified_at_by_id") or {}
     output = []
     for key, expected in roster.items():
+        if key not in indexed and key in SKIPPED_APPS:
+            continue
         record = indexed[key]
         identity_matches = record.get("app_store_id") == expected["track_id"]
         app_verified = verified_by_id.get(expected["track_id"])
@@ -1028,7 +1050,7 @@ def legacy_apps_json(
 
 
 def dataset_schema() -> str:
-    live_app_count = len(contract.live_roster())
+    live_app_count = len(set(contract.live_roster()) - set(SKIPPED_APPS))
     app_required = [
         "key",
         "app_store_id",

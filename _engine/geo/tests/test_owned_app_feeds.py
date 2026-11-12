@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import copy
+import io
 import json
 import os
 from pathlib import Path
@@ -12,7 +13,7 @@ import xml.etree.ElementTree as ET
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from owned_feed_fixtures import (
-    FeedFixture, GEO, OLD, NEW, build_pages_i18n, feeds, market,
+    APPS, FeedFixture, GEO, OLD, NEW, build_pages_i18n, feeds, market,
     OFFICIAL_LOCALES, reseal_catalog, write_json,
 )
 import owned_feed_locale_gate as locale_gate
@@ -200,6 +201,91 @@ class OwnedFeedTests(FeedFixture):
         write_json(path, doc)
         with self.assertRaises(ValueError):
             feeds.build(self.pages, now=NEW)
+
+    def set_catalog_model(self, key, model, *, drop=False):
+        for locale in OFFICIAL_LOCALES:
+            path = self.pages / feeds.CATALOG / "locales" / f"{locale}.json"
+            doc = feeds.read_json(path)
+            if drop:
+                doc["apps"] = [a for a in doc["apps"] if a["key"] != key]
+                doc["record_count"] = len(doc["apps"])
+            else:
+                app = next(a for a in doc["apps"] if a["key"] == key)
+                app["purchase_model"] = model
+                app["one_time_option"] = model in feeds.ONE_TIME_MODELS
+            write_json(path, doc)
+        reseal_catalog(self.pages)
+        if drop:
+            index_path = self.pages / feeds.CATALOG / "index.json"
+            index = feeds.read_json(index_path)
+            index["record_count"] -= 1
+            write_json(index_path, index)
+
+    def owned_item(self, key, locale="en-US"):
+        document = feeds.read_json(self.pages / feeds.feed_path(locale, "json_feed"))
+        return next(
+            (i for i in document["items"] if i["_owned_app"]["app_key"] == key), None
+        )
+
+    def test_neutral_subscription_app_is_published_without_one_time_claim(self):
+        self.set_catalog_model("lumimathpro", "neutral")
+        with patch.dict(APPS["lumimathpro"], {"purchase_model": "neutral"}):
+            manifest_result = feeds.build(self.pages, now=NEW)
+            feeds.build(self.pages, now=NEW, check=True)
+        self.assertEqual(ROSTER_APP_COUNT * 50, manifest_result["record_count"])
+        copies = feeds.load_copy(GEO)
+        for locale in ("en-US", "ja", "zh-Hant", "ar-SA"):
+            with self.subTest(locale=locale):
+                facts = self.owned_item("lumimathpro", locale)["_owned_app"]
+                self.assertEqual("neutral", facts["purchase_model"])
+                self.assertIs(False, facts["one_time_option"])
+                self.assertEqual(copies[locale]["neutral"], facts["purchase_label"])
+        text = self.owned_item("lumimathpro")["content_text"]
+        self.assertIn("Check current listing", text)
+        self.assertNotIn("one-time unlock", text)
+        self.assertNotIn("Paid download", text)
+        manifest = feeds.read_manifest(self.pages)
+        self.assertEqual(1, manifest["purchase_models"]["neutral"])
+        self.assertNotIn("skipped_apps", manifest["source"])
+
+    def test_neutral_app_cannot_claim_a_one_time_option(self):
+        self.set_catalog_model("lumimathpro", "neutral")
+        path, doc, app = self.catalog_app()
+        app["one_time_option"] = True
+        write_json(path, doc)
+        reseal_catalog(self.pages)
+        with patch.dict(APPS["lumimathpro"], {"purchase_model": "neutral"}):
+            with self.assertRaisesRegex(ValueError, "App identity/purchase drift"):
+                feeds.build(self.pages, now=NEW)
+
+    def test_unknown_purchase_model_skips_only_that_app_with_an_error(self):
+        for drop in (True, False):
+            with self.subTest(dropped_from_catalog=drop):
+                self.tearDown()
+                self.setUp()
+                self.set_catalog_model("lumimathpro", "free", drop=drop)
+                with patch.dict(APPS["lumimathpro"], {"purchase_model": "mystery"}), \
+                        patch("sys.stderr", new_callable=io.StringIO) as err:
+                    result = feeds.build(self.pages, now=NEW)
+                self.assertIn("::error::Owned feeds skipped lumimathpro", err.getvalue())
+                self.assertIn("mystery", err.getvalue())
+                self.assertEqual((ROSTER_APP_COUNT - 1) * 50, result["record_count"])
+                manifest = feeds.read_manifest(self.pages)
+                self.assertNotIn("lumimathpro", manifest["apps"])
+                self.assertIn("lumimathpro", manifest["source"]["skipped_apps"])
+                self.assertIsNone(self.owned_item("lumimathpro"))
+                self.assertIsNotNone(self.owned_item("snapport"))
+
+    def test_existing_purchase_models_keep_their_one_time_option(self):
+        feeds.build(self.pages, now=NEW)
+        document = feeds.read_json(self.pages / feeds.feed_path("en-US", "json_feed"))
+        copies = feeds.load_copy(GEO)
+        for item in document["items"]:
+            facts = item["_owned_app"]
+            with self.subTest(app=facts["app_key"]):
+                self.assertIn(facts["purchase_model"], feeds.ONE_TIME_MODELS)
+                self.assertIs(True, facts["one_time_option"])
+                self.assertEqual(copies["en-US"][facts["purchase_model"]], facts["purchase_label"])
 
     def test_foreign_script_is_rejected_even_when_declared_catalog_digest_is_resealed(self):
         path, doc, app = self.catalog_app("kn-IN")

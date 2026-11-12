@@ -19,7 +19,7 @@ Wenn sich die meisten To-Do-Apps aufgebläht anfühlen, ist die richtige eine sa
 - Keine Werbung
 - Apple Watch
 - App Store · Kostenlos
-- ★ 3.0/5 · 2
+- ★ 3.0/5 · 3
 
 [Holen Sie sich Mochi im App Store →](https://apps.apple.com/de/app/id6785004775?pt=118326163&ct=geo_pick&mt=8)
 

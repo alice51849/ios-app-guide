@@ -542,6 +542,16 @@ class WorkflowTest(unittest.TestCase):
             self.assertIn("steps.room.outputs.ok == 'true'", step)
         self.assertIn("threads_series.py room", post)
 
+    def test_the_0140_slot_is_left_to_threads_autopilot(self):
+        # Coordinator 2026-11-12: before the 21:00 slot the two pipelines post at most 2 (03:00 here, 15 UTC in
+        # threads-autopilot); the 01:40 run stays (gate, backfill and watchdog unchanged) but posts nothing.
+        text = (WORKFLOWS / "threads-post.yml").read_text(encoding="utf-8")
+        room = text.split("- name: Check the account's daily cap", 1)[1].split("- name:", 1)[0]
+        self.assertIn("if: steps.slot.outputs.should_post == 'true' && steps.slot.outputs.hour != '1'", room)
+        notice = text.split("- name: Leave the 01:40 slot to threads-autopilot", 1)[1].split("- name:", 1)[0]
+        self.assertNotIn("THREADS_TOKEN", notice)   # it never posts
+        self.assertLess(text.index("Leave the 01:40 slot"), text.index("id: room"))
+
     def test_clip_backup_never_refills_the_evening_threads_slot_after_taiwan_midnight(self):
         text = (WORKFLOWS / "clip-backup.yml").read_text(encoding="utf-8")
         threads = text.split("- name: Threads", 1)[1].split("- name:", 1)[0]

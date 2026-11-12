@@ -342,13 +342,15 @@ def threads_planned(day, clips_path=CLIPS):
     """Threads posts already planned for the day: the 11:00 picture slot (a
     queued post, the countdown card or a picture post, always one), the 21:00
     evening slot (a threads_series.py post or the slot-15 hook clip, always
-    one) plus the other hook clips scheduled for Threads."""
+    one), threads-autopilot's 23:00 slot (always one; since 2026-11-12 the
+    01:40 hook-clip slot posts nothing on Threads and is left to it) plus any
+    other hook clips scheduled for Threads."""
     try:
         schedule = json.loads(clips_path.read_text(encoding="utf-8")).get("schedule", [])
     except (OSError, ValueError):
         schedule = []
-    return 2 + sum(1 for e in schedule if e.get("channel") == "threads" and e.get("date") == day.isoformat()
-                   and e.get("slot") != 15)
+    return 3 + sum(1 for e in schedule if e.get("channel") == "threads" and e.get("date") == day.isoformat()
+                   and e.get("slot") not in (1, 15))
 
 
 def threads_has_room(day, clips_path=CLIPS):

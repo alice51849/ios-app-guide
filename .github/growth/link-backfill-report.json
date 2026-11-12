@@ -1,18 +1,28 @@
 {
- "generated": "2026-11-12T00:50:29Z",
+ "generated": "2026-11-12T11:23:51Z",
  "mode": "apply",
  "counts": {
+  "unknown_app": 48,
   "ok_reply": 63,
-  "unknown_app": 47,
-  "ok_backfilled_earlier": 71,
+  "ok_backfilled_earlier": 73,
   "backfilled": 2,
-  "ok_store_only": 659,
+  "ok_store_only": 657,
   "ok_bio_link": 68,
   "ok_caption": 4,
   "taken_down": 4,
   "missing": 3
  },
  "rows": [
+  {
+   "channel": "threads",
+   "id": "18121456858956328",
+   "permalink": "https://www.threads.com/@hourstag.app/post/DfoWgugEcEp",
+   "date": "2026-11-12",
+   "app": "",
+   "status": "unknown_app",
+   "text": "倒推出门时间 — 新北投, 小碧潭支线。 普通查询只能告诉你“现在出发几点到”，我们把问题倒过来算：输入所在车站、目的车站和想到达的时间，连换乘一起算进去，直接给出最晚的进站时间。 捷运时间助手：台北地铁换乘",
+   "why": ""
+  },
   {
    "channel": "threads",
    "id": "18419251945083477",
@@ -1511,16 +1521,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdNJzbFE23x",
    "date": "2026-09-12",
    "app": "lumiletters",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "\"Five more minutes\" — about a learning game, for once. Our app, not a ranking: Hear and trace A free; other letters need a lifetime unlock. ",
    "why": "url",
    "ios_id": "6778748533",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "18119524774790812",
-   "at": "2026-11-12T00:47:47Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",
@@ -1528,16 +1533,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdISbIrGJP2",
    "date": "2026-09-11",
    "app": "zipbox",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "零廣告,內容先看再處理。 不用解壓，也能先查看壓縮檔裡的內容。 Zipbox 解壓縮：RAR ZIP 7z 順手附個連結: https://apps.apple.com/tw/app/id6806776579?pt=118326163&ct=threads&mt=8",
    "why": "url+brand",
    "ios_id": "6806776579",
-   "locale": "zh-Hant",
-   "own_replies": [],
-   "comment_id": "18417101122084978",
-   "at": "2026-11-12T00:47:47Z",
-   "verified": true,
-   "via": "list"
+   "locale": "zh-Hant"
   },
   {
    "channel": "threads",
@@ -1545,11 +1545,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdG8MTWmCmH",
    "date": "2026-09-10",
    "app": "moneytag",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "โปรเจกต์, แท็ก, รายงาน. ทุกโปรเจกต์มีบัญชีของตัวเอง: รายรับลบรายจ่ายคือยอดสุทธิของโปรเจกต์นั้น นี่คือคําถามที่พบบ่อยที่สุด หากไม่มีคําตอบที่",
    "why": "url+brand",
    "ios_id": "6801956402",
-   "locale": "th"
+   "locale": "th",
+   "own_replies": [],
+   "comment_id": "18115199177580658",
+   "at": "2026-11-12T11:21:14Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -1557,11 +1562,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdBOzOuDwCo",
    "date": "2026-09-08",
    "app": "dailymate",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "Frases completas, não palavras. Idioma de verdade se aprende com frases completas, não decorando palavras soltas. DailyMate: idiomas em cont",
    "why": "url+brand",
    "ios_id": "6790418321",
-   "locale": "other"
+   "locale": "other",
+   "own_replies": [],
+   "comment_id": "17874823191640451",
+   "at": "2026-11-12T11:21:14Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",

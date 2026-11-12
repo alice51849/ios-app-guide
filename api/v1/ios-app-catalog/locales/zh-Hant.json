@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-11-11",
-  "content_digest": "55b7da80e6100894e605308387eab211f7ed4d47ab1105b184de38ef3003b0eb",
+  "date_modified": "2026-11-12",
+  "content_digest": "3fb46fdf7ac4bd913296849cd9449ddfd99af8ae2d3f3823028980425fe17b9d",
   "locale": "zh-Hant",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -96,10 +96,7 @@
         "懶人包",
         "複製貼上",
         "工作效率",
-        "掃描",
-        "提示詞管理",
-        "pdf 總結",
-        "ai 提示詞"
+        "掃描"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -156,9 +153,7 @@
         "讀書",
         "求職",
         "畢業門檻",
-        "上班族",
-        "英文檢定",
-        "多益"
+        "上班族"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -196,10 +191,7 @@
         "充電保養",
         "充電區間",
         "充電速率",
-        "匯出資料",
-        "電池檢測",
-        "電池",
-        "電池健康度"
+        "匯出資料"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -364,9 +356,7 @@
         "工作經歷",
         "畢業生",
         "打工",
-        "實習",
-        "履歷範本",
-        "履歷製作"
+        "實習"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -419,9 +409,7 @@
         "生理痛",
         "日記",
         "症狀",
-        "心情",
-        "經期 追蹤",
-        "月經 app"
+        "心情"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -931,8 +919,7 @@
         "儲蓄",
         "花費",
         "小資族",
-        "節流",
-        "衝動購物"
+        "節流"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1158,8 +1145,7 @@
         "注音發音",
         "寶寶",
         "注音符號遊戲",
-        "學注音符號",
-        "注音"
+        "學注音符號"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1272,8 +1258,7 @@
         "學英文",
         "幼稚園",
         "親子",
-        "幼兒學習",
-        "兒童 字母"
+        "幼兒學習"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1333,8 +1318,7 @@
         "親子",
         "練習",
         "描寫",
-        "小朋友",
-        "兒童 自然發音"
+        "小朋友"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1516,10 +1500,7 @@
         "蓋章",
         "教養",
         "幼兒園",
-        "早睡早起",
-        "兒童 習慣",
-        "睡前 習慣",
-        "獎勵 貼紙"
+        "早睡早起"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1635,9 +1616,7 @@
         "手錶",
         "即時",
         "逐時",
-        "一週",
-        "穿搭 天氣",
-        "天氣 穿搭"
+        "一週"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2046,8 +2025,7 @@
         "ppt製作",
         "專案",
         "提報",
-        "pdf",
-        "一頁 摘要"
+        "pdf"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2213,8 +2191,7 @@
         "郵件",
         "行事曆",
         "定位",
-        "聯絡人",
-        "qr code 連結 檢查"
+        "聯絡人"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2272,8 +2249,7 @@
         "社群收藏",
         "網頁書籤",
         "管理",
-        "整理",
-        "收藏 連結"
+        "整理"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2762,8 +2738,7 @@
         "搭車",
         "週末",
         "海島",
-        "動物園",
-        "小孩 旅行"
+        "動物園"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2942,8 +2917,7 @@
         "備份",
         "手錶",
         "行程安排",
-        "共同編輯",
-        "旅遊 行程"
+        "共同編輯"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -2994,8 +2968,7 @@
         "低光源修復",
         "人臉增強",
         "手震模糊",
-        "文件清晰",
-        "照片 變清晰"
+        "文件清晰"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -3101,9 +3074,7 @@
         "無線網路",
         "延遲測試",
         "連線測試",
-        "TCP",
-        "網路 檢查",
-        "wifi 診斷"
+        "TCP"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -3319,9 +3290,7 @@
         "批次解壓",
         "離線",
         "壓縮軟體",
-        "壓縮工具",
-        "密碼保護 zip",
-        "開啟 rar 檔案"
+        "壓縮工具"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,

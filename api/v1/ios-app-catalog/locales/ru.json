@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-11-11",
-  "content_digest": "55b7da80e6100894e605308387eab211f7ed4d47ab1105b184de38ef3003b0eb",
+  "date_modified": "2026-11-12",
+  "content_digest": "3fb46fdf7ac4bd913296849cd9449ddfd99af8ae2d3f3823028980425fe17b9d",
   "locale": "ru",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -552,9 +552,7 @@
         "поездки",
         "траты",
         "за",
-        "день",
-        "расходы в путешествии",
-        "деньги в путешествии"
+        "день"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -593,9 +591,7 @@
         "валюта",
         "путешествия",
         "кошелек",
-        "смартчасы",
-        "расходы в путешествии",
-        "бюджет путешествия"
+        "смартчасы"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -675,8 +671,7 @@
         "транжира",
         "привычки",
         "сожаление",
-        "минимализм",
-        "импульсивные покупки"
+        "минимализм"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -962,8 +957,7 @@
         "прописи",
         "чтение",
         "задания",
-        "слова",
-        "фонетика для детей"
+        "слова"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1413,8 +1407,7 @@
         "выручка",
         "клиенты",
         "аренда",
-        "заказы",
-        "подработка доход"
+        "заказы"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1615,8 +1608,7 @@
         "подборка",
         "теги",
         "рецепты",
-        "желаний",
-        "сохранить статьи"
+        "желаний"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1937,8 +1929,7 @@
         "егэ",
         "часы",
         "секундомер",
-        "прогресс",
-        "учет времени учебы"
+        "прогресс"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2397,8 +2388,7 @@
         "gz",
         "iso",
         "папка",
-        "aes",
-        "распаковать 7z"
+        "aes"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,

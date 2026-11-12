@@ -8,7 +8,7 @@
 <!-- guide-design:end -->
 <title>BattAI: 電池健康度・檢測分數 — 電池壽命檢測・電池分析・充電提醒 | iOS App</title>
 <meta name="description" content="幫電池健康度打分數，看最大容量趨勢。">
-<meta name="keywords" content="電池健康分數, 最大容量, 循環次數, 充電保養, 充電區間, 充電速率, 匯出資料, 電池檢測, 電池, 電池健康度">
+<meta name="keywords" content="電池健康分數, 最大容量, 循環次數, 充電保養, 充電區間, 充電速率, 匯出資料">
 <link rel="canonical" href="https://open.cait518.cc/ios-app-guide/zh-Hant/battai.html">
 <!-- smart-app-banner:start -->
 <meta name="apple-itunes-app" content="app-id=6802423998, affiliate-data=pt=118326163&amp;ct=geo_pick&amp;mt=8">
@@ -128,12 +128,9 @@
 <link rel="alternate" hreflang="zh-Hant" href="https://open.cait518.cc/ios-app-guide/zh-Hant/battai.html">
 <link rel="alternate" hreflang="x-default" href="https://open.cait518.cc/ios-app-guide/en-US/battai.html">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"MobileApplication","name":"BattAI: 電池健康度・檢測分數","operatingSystem":"iOS","applicationCategory":"UtilitiesApplication","description":"已針對 iPhone Duo 最佳化。本 App 以最新開發套件建置，填滿整個內螢幕，無論摺起或打開都會自動調整版面。\n\n幫電池健康度打分數，看最大容量趨勢。\n電池充飽、低電量或過熱時提醒你。\n賣舊機前，匯出二手轉讓電池報告。\n\n設定只告訴你現在的最大容量，看不到它怎麼變。BattAI 在你平常用手機時持續記錄電量、充電與發熱，把電池檢測整理成看得懂的分數、充電洞察、趨勢和報告；換新機、賣舊手機或買二手機驗機時，都能把電池狀態說清楚。\n\n【價格怎麼算】\n• 所有功能前 24 小時免費使用\n• 24 小時後，電量卡片（即時電量與充電狀態）以及充飽、低電量、過熱提醒依然免費\n• 健康分數、充電、趨勢、報告、小工具和 Apple Watch 分析，一次買斷即可解鎖；非訂閱，不會自動扣款\n\n【電池健康分數】\n• 0–100 分，分成優異、良好、普通、需要保養、檢查維修五級\n• 評分依據逐項列出：容量 40%、循環次數 25%、裝置使用年限 10%、熱暴露 10%、充電習慣 15%，主要扣分原因一看就懂\n• 在「設定 › 電池」查看最大容量並輸入，立刻就有分數；BattAI 自己讀不到這個數值\n\n【最大容量變化】\n• 最大容量記錄畫成趨勢圖，附 95% 信賴區間\n• 讀值相隔至少 30 天後，顯示每月容量變化\n\n【充電保養】\n• 每次充電都有 0–100 分的充電保養分數，依起始與結束電量、充電速度、100% 停留時間等計分\n• 記錄充電區間（例如 30% → 88%）、時長與充電速度（較慢、一般、較快、很快）\n• 充電習慣分五項評分：放電深度、充電上限、過夜充電、充電時發熱、充電頻率，並給建議，例如合適時使用 80–90%\n\n【電池提醒（免費）】\n• 充飽提醒：電量到你選的 80%、90% 或 100% 時通知\n• 低電量提醒：電量剩 10%、20% 或 30% 時通知\n• 手機過熱發燙時提醒你降溫\n\n【耗電與發熱】\n• 每小時耗電百分比，掉電快不用再猜\n• 近 7 天裝置熱狀態，看出哪些時段手機容易發燙\n\n【報告與匯出】\n• 二手轉讓報告：一頁給買家，逐項標示數值來源，附在設定中核對最大容量的步驟\n• 完整報告存成 PDF 或 PNG 圖片；原始讀值可匯出 CSV、JSON\n• 前幾天報告會標示「預覽」，隨讀值累積逐步完整\n\n【小工具、Apple Watch 與捷徑】\n• 主畫面與鎖定畫面小工具，不開 App 也能看健康分數、電量與今日耗電\n• 手錶 App 與錶面複雜功能，抬手就能看 iPhone 電量與分數\n• 捷徑：查詢目前分數，或在接上、拔掉充電器時新增一筆讀值\n\n【iPad】\n• iPad 上的電量、充電、耗電、發熱、提醒、報告與小工具和 iPhone 一樣可用。多數 iPad 在設定中不顯示最大容量，因此 iPad 上的健康分數需要你自己輸入數值\n\n【匯入與隱私】\n• 從系統「分析資料」檔匯入最大容量與循環次數，也可以手動輸入；只讀取循環次數、標稱充電容量與設計容量，其他內容立即捨棄\n• 不用帳號，沒有分析、追蹤、第三方 SDK 或網路請求；資料只存在這台手機，只把最小快照傳給配對的手錶，隨時可刪除所有資料\n\n資料來源與限制\n系統公開 API 只提供電量、充電狀態、低耗電模式、整部手機的熱狀態與時間；最大容量與循環次數來自你的輸入或匯入的檔案。熱狀態指整部手機，而非電池溫度。分數與預估是算出的參考值，不是官方或原廠數值，也不代表電池還能用多久的承諾。耗電與發熱在首批讀值後出現，充電洞察在首次完整充電後出現，趨勢會在最初幾天逐步補齊。提醒時間由系統背景排程決定，可能有落差。","url":"https://apps.apple.com/tw/app/id6802423998?pt=118326163&ct=geo_pick&mt=8","installUrl":"https://apps.apple.com/tw/app/id6802423998?pt=118326163&ct=geo_pick&mt=8","featureList":["電池健康分數","最大容量","循環次數","充電保養","充電區間","充電速率","匯出資料"],"keywords":"電池健康分數, 最大容量, 循環次數, 充電保養, 充電區間, 充電速率, 匯出資料","@id":"https://apps.apple.com/app/id6802423998","identifier":{"@type":"PropertyValue","propertyID":"Apple App Store ID","value":"6802423998"},"downloadUrl":"https://apps.apple.com/tw/app/id6802423998?pt=118326163&ct=geo_pick&mt=8","potentialAction":{"@type":"InstallAction","target":"https://apps.apple.com/tw/app/id6802423998?pt=118326163&ct=geo_pick&mt=8"},"mainEntityOfPage":{"@id":"https://open.cait518.cc/ios-app-guide/zh-Hant/battai.html#webpage"},"offers":{"@type":"Offer","price":"0","priceCurrency":"TWD","url":"https://apps.apple.com/tw/app/id6802423998?pt=118326163&ct=geo_pick&mt=8","availability":"https://schema.org/InStock"}}</script>
-<style>.searched-as{margin:1.2em 0;font-size:.95em;line-height:1.6}.searched-as-label{font-weight:600;margin-right:.35em}</style>
 <!-- app-store-facts-style:start -->
 <link rel="stylesheet" href="https://open.cait518.cc/ios-app-guide/assets/app-store-facts-v1.css">
 <!-- app-store-facts-style:end -->
-<link rel="site.standard.publication" href="at://did:plc:kboucnzkxzmqmatvhes4xlt4/site.standard.publication/3mrocqbkyt6mg">
-<script type="application/ld+json" data-first-party-disclosure="publisher">{"@context":"https://schema.org","@type":"WebSite","@id":"https://open.cait518.cc/ios-app-guide/#website","url":"https://open.cait518.cc/ios-app-guide","publisher":{"@type":"Organization","@id":"https://open.cait518.cc/ios-app-guide/#organization","name":"Lumi Studio","url":"https://open.cait518.cc/ios-app-guide/about.html","description":"Developer of the featured apps and operator of this site."}}</script>
 <!-- app-store-qr-style:start -->
 <link rel="stylesheet" href="/ios-app-guide/assets/app-store-qr-v1.css">
 <!-- app-store-qr-style:end -->
@@ -143,6 +140,8 @@
 <link rel="alternate" type="application/atom+xml" title="iOS App Guide — latest answers &amp; guides (Atom)" href="https://open.cait518.cc/ios-app-guide/feed.xml">
 <link rel="alternate" type="application/rss+xml" title="iOS App Guide — latest answers &amp; guides (RSS 2.0)" href="https://open.cait518.cc/ios-app-guide/rss.xml">
 <link rel="alternate" type="application/feed+json" title="iOS App Guide — latest answers &amp; guides (JSON Feed 1.1)" href="https://open.cait518.cc/ios-app-guide/feed.json">
+<link rel="site.standard.publication" href="at://did:plc:kboucnzkxzmqmatvhes4xlt4/site.standard.publication/3mrocqbkyt6mg">
+<script type="application/ld+json" data-first-party-disclosure="publisher">{"@context":"https://schema.org","@type":"WebSite","@id":"https://open.cait518.cc/ios-app-guide/#website","url":"https://open.cait518.cc/ios-app-guide","publisher":{"@type":"Organization","@id":"https://open.cait518.cc/ios-app-guide/#organization","name":"Lumi Studio","url":"https://open.cait518.cc/ios-app-guide/about.html","description":"Developer of the featured apps and operator of this site."}}</script>
 </head>
 <body>
 <p class="first-party-disclosure" data-first-party-disclosure="banner" role="note" style="margin:0;padding:8px 16px;background:#f3f4f6;color:#1f2937;border-bottom:1px solid #d1d5db;font-size:13px;line-height:1.5;text-align:center">本站由這些 App 的開發者 Lumi Studio 營運，介紹的是我們自己的 App。</p>
@@ -229,8 +228,6 @@
     <li>匯出資料</li>
   </ul>
 
-  <p class="searched-as"><span class="searched-as-label">大家這樣搜尋這款 App：</span>電池檢測、電池、電池健康度</p>
-
   <h2>價格</h2>
   <p>免費下載,一次性購買即可解鎖全部功能,沒有訂閱陷阱。</p>
 
@@ -246,22 +243,6 @@
 </aside>
 <!-- app-store-facts:end -->
 </main>
-<!--iag-app-related-->
-<section class="wrap app-related">
-<h2>關於這款 App 的問答</h2>
-<ul>
-  <li><a href="https://open.cait518.cc/ios-app-guide/zh-Hant/answers/best-battery-health-app-app.html">最好的電池健康 App</a></li>
-  <li><a href="https://open.cait518.cc/ios-app-guide/zh-Hant/answers/how-to-choose-a-battery-health-app-app.html">如何挑選電池健康 App</a></li>
-  <li><a href="https://open.cait518.cc/ios-app-guide/zh-Hant/answers/best-battery-health-report-app.html">最好的電池健康報告 App</a></li>
-  <li><a href="https://open.cait518.cc/ios-app-guide/zh-Hant/answers/how-to-choose-a-battery-health-report-app.html">如何挑選電池健康報告 App</a></li>
-  <li><a href="https://open.cait518.cc/ios-app-guide/zh-Hant/answers/battery-health-app-app-for-iphone.html">iPhone 電池健康 App</a></li>
-  <li><a href="https://open.cait518.cc/ios-app-guide/zh-Hant/answers/replace-iphone-battery-app-for-iphone.html">iPhone 換電池評估 App</a></li>
-  <li><a href="https://open.cait518.cc/ios-app-guide/zh-Hant/answers/battery-health-report-app-for-iphone.html">iPhone 電池健康報告 App</a></li>
-  <li><a href="https://open.cait518.cc/ios-app-guide/zh-Hant/answers/battery-health-app-app-for-iphone-free.html">iPhone 免費電池健康 App</a></li>
-</ul>
-</section>
-<!--/iag-app-related-->
-
 <!-- webmcp-install-tool:start -->
 <script type="application/json" id="iag-webmcp-install-data">{"app_store_id":"6802423998","app_name":"BattAI","page_language":"zh-Hant","page_url":"https://open.cait518.cc/ios-app-guide/zh-Hant/battai.html","app_store_url":"https://apps.apple.com/tw/app/id6802423998?pt=118326163&ct=geo_pick&mt=8","localized_description":"幫電池健康度打分數，看最大容量趨勢。","storefront_facts":{"price":"0","currency":"TWD","formatted_price":"免費"}}</script>
 <script src="https://open.cait518.cc/ios-app-guide/assets/webmcp-install-tool-v2.js" data-webmcp-install="iag-webmcp-install-data" defer></script>

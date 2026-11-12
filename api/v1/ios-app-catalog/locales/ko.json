@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-11-11",
-  "content_digest": "55b7da80e6100894e605308387eab211f7ed4d47ab1105b184de38ef3003b0eb",
+  "date_modified": "2026-11-12",
+  "content_digest": "3fb46fdf7ac4bd913296849cd9449ddfd99af8ae2d3f3823028980425fe17b9d",
   "locale": "ko",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -182,8 +182,7 @@
         "충전 관리",
         "충전 구간",
         "충전 속도",
-        "데이터 내보내기",
-        "배터리"
+        "데이터 내보내기"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1301,8 +1300,7 @@
         "5세",
         "연산",
         "숫자",
-        "사칙연산",
-        "수학 놀이"
+        "사칙연산"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1796,9 +1794,7 @@
         "교체주기",
         "화분",
         "빨래",
-        "기한",
-        "마지막으로 한 날",
-        "마지막 기록"
+        "기한"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1910,8 +1906,7 @@
         "수업",
         "강의",
         "공부",
-        "프로젝트",
-        "발표 자료"
+        "프로젝트"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2850,10 +2845,7 @@
         "코딩",
         "에이전트",
         "llm",
-        "모니터",
-        "ai 사용량 추적",
-        "claude 사용량 제한",
-        "codex 사용량 제한"
+        "모니터"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2903,9 +2895,7 @@
         "레이턴시",
         "응답시간",
         "연결상태",
-        "사이트확인",
-        "인터넷 연결 확인",
-        "와이파이 진단"
+        "사이트확인"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,

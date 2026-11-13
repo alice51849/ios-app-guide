@@ -1206,8 +1206,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/en-CA.jsonld#offer-kumo",
         "url": "https://apps.apple.com/ca/app/id6830824515?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Kumo: Weight & GLP-1 Tracker",
-        "description": "The scale jumps around every day, so Kumo turns a 10-second weigh-in into a calm 7-day average, with or without GLP-1 shots. A cute cloud grows every day",
+        "name": "Kumo",
+        "description": "Once a GLP-1 medication starts, the shot day, the injection site, how the week felt and the number on the scale end up spread across notes, calendar alerts and a spreadsheet Kumo — The scale jumps around every day, so Kumo turns a 10-second weigh-in into a calm 7-day average, with or without GLP-1 shots.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1222,7 +1222,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6830824515"
           },
-          "name": "Kumo: Weight & GLP-1 Tracker",
+          "name": "Kumo",
           "operatingSystem": "iOS",
           "applicationCategory": "HealthApplication",
           "url": "https://apps.apple.com/ca/app/id6830824515?pt=118326163&ct=geo_pick&mt=8",
@@ -1233,11 +1233,11 @@
             "target": "https://apps.apple.com/ca/app/id6830824515?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/en-CA/kumo.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/en-CA/answers/glp-1-tracker-app-to-log-weight-and-shot-day-on-iphone.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6830824515",
           "inLanguage": "en-CA",
-          "description": "The scale jumps around every day, so Kumo turns a 10-second weigh-in into a calm 7-day average, with or without GLP-1 shots. A cute cloud grows every day",
+          "description": "Once a GLP-1 medication starts, the shot day, the injection site, how the week felt and the number on the scale end up spread across notes, calendar alerts and a spreadsheet Kumo — The scale jumps around every day, so Kumo turns a 10-second weigh-in into a calm 7-day average, with or without GLP-1 shots.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/en-CA.jsonld#offer-kumo"
           },

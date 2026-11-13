@@ -11,6 +11,8 @@ app may never be made to sound like it promises a score.
 
 from __future__ import annotations
 
+import functools
+import json
 import os
 from pathlib import Path
 import re
@@ -28,6 +30,22 @@ import gen_llms  # noqa: E402
 from videogen.registry import APPS, appstore_url  # noqa: E402
 
 PAGES = Path(os.environ.get("GEO_PAGES", GEO / "pages"))
+STORE_DATA = GEO.parent / "data"
+_NUMBER_RE = re.compile(r"\b[0-9][0-9,.]*\b")
+_LISTING_FIELDS = ("name", "subtitle", "promotionalText", "description")
+
+
+@functools.lru_cache(maxsize=None)
+def _listing_numbers(key):
+    """Numbers the app's own en-US App Store listing copy states."""
+    path = STORE_DATA / f"{key}_full.json"
+    try:
+        listing = json.loads(path.read_text(encoding="utf-8")).get("en-US") or {}
+    except (OSError, ValueError, AttributeError):
+        return frozenset()
+    text = " ".join(str(listing.get(field) or "") for field in _LISTING_FIELDS)
+    text = re.sub(r"https?://\S+", "", text)
+    return frozenset(_NUMBER_RE.findall(text))
 FAKE_PROVIDER_TOKEN = "1234567"
 
 
@@ -272,9 +290,23 @@ class PublishedAnswerSectionTests(unittest.TestCase):
                         or line.startswith("  - Answer: ")):
                     continue
                 stripped = re.sub(r"https?://\S+", "", line)
-                for number in re.findall(r"\b[0-9][0-9,.]*\b", stripped):
+                # Listing copy (neutral purchase model only; every other app
+                # keeps the fixed allowlist): a number is also allowed when the en-US App
+                # Store listing (data/<key>_full.json: name, subtitle,
+                # promotional text, description) of an app named in this
+                # answer carries it, e.g. Kumo's "Log your weight in 10
+                # seconds, see your 7-day average ... on GLP-1 or not".
+                listed = set().union(*(
+                    _listing_numbers(key)
+                    for key, app in APPS.items()
+                    if app.get("purchase_model") == "neutral"
+                    and app.get("name") and re.search(
+                        rf"(?<!\w){re.escape(app['name'])}(?!\w)", stripped
+                    )
+                ))
+                for number in _NUMBER_RE.findall(stripped):
                     with self.subTest(number=number):
-                        self.assertIn(number, allowed)
+                        self.assertIn(number, allowed | listed)
 
 
 if __name__ == "__main__":

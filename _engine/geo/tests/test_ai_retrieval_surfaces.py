@@ -106,11 +106,27 @@ class DecisionMatrixTests(unittest.TestCase):
     def test_no_row_claims_a_subscription_or_an_unmapped_model(self):
         for row in self.rows:
             with self.subTest(app=row["app_key"]):
-                self.assertIs(row["subscription"], False)
                 self.assertIn(
                     row["purchase_model"],
                     app_decision_matrix.PURCHASE_MODEL_LABELS,
                 )
+                if row["purchase_model"] == "neutral":
+                    # 有訂閱的款（例如 Kumo）：表裡不下結論，也不可寫一次解鎖、
+                    # 無訂閱、價格或試用字樣。
+                    self.assertIsNone(row["subscription"])
+                    self.assertIs(row["one_time_option"], False)
+                    for field in (
+                        "purchase_model_label",
+                        "choose_when",
+                        "consider_instead_when",
+                    ):
+                        self.assertNotRegex(
+                            row[field],
+                            r"(?i)subscription|one[- ]time|pay once|"
+                            r"lifetime|free trial|\$|\bfree\b",
+                        )
+                    continue
+                self.assertIs(row["subscription"], False)
                 self.assertIn(
                     "no subscription", row["purchase_model_label"]
                 )

@@ -38,6 +38,7 @@ import json
 import os
 from pathlib import Path
 import re
+import sys
 from typing import Any
 
 from app_store_storefronts import (
@@ -92,7 +93,12 @@ EDITION_SUFFIXES = ("lite", "pro", "plus")
 PURCHASE_MODEL_LABELS = {
     "paid_upfront": "pay once, no subscription",
     "free_with_lifetime_unlock": "free to start, one-time unlock, no subscription",
+    # 有訂閱的款（例如 Kumo）：不寫一次解鎖、價格或試用，只請讀者看目前上架頁；
+    # 沿用目錄既有的 neutral 文案。
+    "neutral": "the purchase options shown on the current App Store listing",
 }
+# 只有這兩種購買類型在表裡記為「沒有訂閱」；neutral 不在表裡下結論。
+NO_SUBSCRIPTION_MODELS = frozenset({"paid_upfront", "free_with_lifetime_unlock"})
 
 # The single honest reason not to pick an app, given only its purchase model.
 CONSIDER_INSTEAD = {
@@ -103,6 +109,11 @@ CONSIDER_INSTEAD = {
     "free_with_lifetime_unlock": (
         "you want every feature without an in-app purchase — the free "
         "download needs a one-time unlock to be complete"
+    ),
+    "neutral": (
+        "you need to know how the app is sold before installing — this table "
+        "does not state its purchase terms, so check the current App Store "
+        "listing"
     ),
 }
 
@@ -157,7 +168,7 @@ COLUMNS: tuple[dict[str, str], ...] = (
     {
         "name": "purchase_model",
         "type": "string",
-        "description": "paid_upfront or free_with_lifetime_unlock.",
+        "description": "paid_upfront, free_with_lifetime_unlock or neutral.",
         "source": "publisher registry",
     },
     {
@@ -184,7 +195,10 @@ COLUMNS: tuple[dict[str, str], ...] = (
     {
         "name": "subscription",
         "type": "boolean",
-        "description": "Always false; no app in this table sells a subscription.",
+        "description": (
+            "False for paid_upfront and free_with_lifetime_unlock apps; null "
+            "for neutral apps, whose purchase terms this table does not state."
+        ),
         "source": "publisher registry",
     },
     {
@@ -322,8 +336,13 @@ def _consider_instead(record: dict[str, Any], siblings: list[str]) -> str:
     return f"Consider a different app when {reason}."
 
 
+# 本輪因未知購買類型而略過的款（款 key → 原因）。
+SKIPPED_APPS: dict[str, str] = {}
+
+
 def build_rows(pages: Path = PAGES) -> tuple[list[dict[str, Any]], str]:
     """One comparable row per verified live app, alphabetical, never ranked."""
+    SKIPPED_APPS.clear()
     records, apps = publisher_intent_catalog.build_records(pages)
     details = load_storefront_details(pages)
     modified = _snapshot_date(pages)
@@ -341,9 +360,14 @@ def build_rows(pages: Path = PAGES) -> tuple[list[dict[str, Any]], str]:
         category = str(app["category"])
         purchase_model = str(record["purchase_model"])
         if purchase_model not in PURCHASE_MODEL_LABELS:
-            raise ValueError(
-                f"{app_key}: unmapped purchase model {purchase_model!r}"
+            # 未知購買類型：只略過那一款並明確報錯，其餘款照常產出。
+            reason = f"unmapped purchase model {purchase_model!r}"
+            SKIPPED_APPS[app_key] = reason
+            print(
+                f"::error::Decision matrix skipped {app_key}: {reason}",
+                file=sys.stderr,
             )
+            continue
         us_detail = details.get(BASE_COUNTRY, {}).get(app_id)
         verified_storefronts = sum(
             app_id in country_details for country_details in details.values()
@@ -368,7 +392,9 @@ def build_rows(pages: Path = PAGES) -> tuple[list[dict[str, Any]], str]:
                     if us_detail is None
                     else str(us_detail.get("price")) == "0"
                 ),
-                "subscription": False,
+                "subscription": (
+                    False if purchase_model in NO_SUBSCRIPTION_MODELS else None
+                ),
                 "us_price": (
                     None if us_detail is None else str(us_detail.get("price"))
                 ),
@@ -388,6 +414,8 @@ def build_rows(pages: Path = PAGES) -> tuple[list[dict[str, Any]], str]:
                 ),
             }
         )
+    if published and not rows:
+        raise ValueError("No verified app has a mapped purchase model")
     return rows, modified
 
 
@@ -505,7 +533,7 @@ def schema_payload() -> dict[str, Any]:
                             "enum": sorted(PURCHASE_MODEL_LABELS)
                         },
                         "one_time_option": {"type": "boolean"},
-                        "subscription": {"const": False},
+                        "subscription": {"enum": [False, None]},
                         "free_to_download": {"type": ["boolean", "null"]},
                         "us_price": {"type": ["string", "null"]},
                         "us_price_currency": {"type": ["string", "null"]},
@@ -542,7 +570,7 @@ def jsonld_payload(rows: list[dict[str, Any]], modified: str) -> dict[str, Any]:
             {
                 "@type": "PropertyValue",
                 "name": "subscription",
-                "value": False,
+                "value": row.get("subscription", False),
             },
             {
                 "@type": "PropertyValue",

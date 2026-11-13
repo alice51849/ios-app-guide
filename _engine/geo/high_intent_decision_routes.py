@@ -21,6 +21,7 @@ import market_surface_policy
 import os
 from pathlib import Path, PurePosixPath
 import re
+import sys
 from typing import Any, Iterable
 from urllib.parse import parse_qsl, unquote, urlsplit
 import xml.etree.ElementTree as ET
@@ -1219,6 +1220,15 @@ def build(
         apps,
         allow_new_live_apps=allow_new_live_app_gaps,
     )
+    if inventory_gaps:
+        # 備案：新上線、還沒有複審過路線文案的款只略過那幾款並明確警告，
+        # 不讓整輪失敗；有文案的款照舊嚴格檢查。正式部署（prepare_pages_
+        # deployment）仍走嚴格模式。
+        print(
+            "::warning::High-intent routes skipped apps without reviewed "
+            f"native route copy: {inventory_gaps}",
+            file=sys.stderr,
+        )
     covered_apps = {
         key: apps[key]
         for key in expectations["app_keys"]

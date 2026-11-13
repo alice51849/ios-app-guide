@@ -211,6 +211,7 @@ import portfolio_app_finder
 import portfolio_cost_calculator
 import portfolio_offer_catalog
 import publisher_intent_catalog
+import purchase_types
 import prioritize_trip_planet_resources
 import queries
 import reconcile_answer_semantics
@@ -22380,7 +22381,20 @@ class GeneratorTests(unittest.TestCase):
         # Expected only once the registry this copy runs against has it.
         if "foldparty" in APPS:
             paid_upfront.add("foldparty")
-        self.assertEqual(paid_upfront | free_with_unlock, set(APPS))
+        # Kumo: en-US description sells Kumo Full as "a monthly or yearly
+        # auto-renewing subscription, or as a one-time in-app purchase"
+        # (ASC 1.0.0 read back 2026-11-12), so the registry records it as
+        # neutral and no surface may claim pay-once or no-subscription.
+        # Expected only once the registry this copy runs against has it.
+        neutral = set()
+        if "kumo" in APPS:
+            neutral.add("kumo")
+        self.assertEqual(paid_upfront | free_with_unlock | neutral, set(APPS))
+        for key in neutral:
+            self.assertEqual("neutral", APPS[key]["purchase_model"])
+            self.assertEqual(
+                purchase_types.SUBSCRIPTION, purchase_types.purchase_type(key)
+            )
         for key in paid_upfront:
             self.assertEqual("paid_upfront", APPS[key]["purchase_model"])
         for key in free_with_unlock:

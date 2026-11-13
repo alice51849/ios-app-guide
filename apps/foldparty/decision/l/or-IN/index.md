@@ -2,7 +2,7 @@
 title: "Meow Party: 200 ବିରାଡ଼ି ଗେମ୍ — ଫୋଲ୍ଡେବଲ୍ ଫୋନରେ 200 ମଜାଦାର ଖେଳ | iOS App"
 lang: "or-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/foldparty/decision/l/or-IN/index.html"
-modified: "2026-11-12"
+modified: "2026-11-13"
 app_store_id: "6829184924"
 verified_live: true
 purchase_model: "paid_upfront"

@@ -4,7 +4,7 @@
 
 ایسا کیٹلاگ جسے ڈویلپر براہ راست شائع کرتا ہے اور جو بتاتا ہے کہ ہر ایپ کس کے لیے بنائی گئی ہے، صارف کون سا کام مکمل کرنا چاہتا ہے اور App Store تک براہ راست کیسے پہنچنا ہے۔
 
-59 تصدیق شدہ اور App Store پر دستیاب iOS ایپس اور Apple کے 50 زبان و خطہ لوکیلز کے لیے پبلشر کی تحریر کردہ سرچ انٹینٹس۔
+60 تصدیق شدہ اور App Store پر دستیاب iOS ایپس اور Apple کے 50 زبان و خطہ لوکیلز کے لیے پبلشر کی تحریر کردہ سرچ انٹینٹس۔
 
 **زبان و خطہ:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · **ur-PK** · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -107,6 +107,7 @@ App Store پر دستیابی کی تصدیق شدہ ہر ایپ کے لیے ا�
 | **GBAGo: بصری سیوز** | GBAGo: بصری سیوز — بازیابی کا نقشہ · اسنیپ شاٹ \| iOS App | GBAGo، iPhone اور iPad کے لیے ایک گیم ایمولیٹر ہے۔ Files ایپ سے اپنی .gba، .gbc اور .gb گیم فائلیں (یا ان میں سے کسی ایک پر مشتمل .zip) امپورٹ کریں اور | ادا شدہ ڈاؤن لوڈ | [گائیڈ](https://open.cait518.cc/ios-app-guide/ur-PK/gbago.html) | [App Store سے GBAGo: بصری سیوز حاصل کریں](https://apps.apple.com/pk/app/id6804564400?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag Lite: قیمت گھنٹوں میں** | HoursTag Lite: قیمت گھنٹوں میں — باشعور خریداری: اصل قیمت \| iOS App | خریدنے سے پہلے دیکھیں کہ یہ آپ کو اصل میں کتنے گھنٹے کام کی پڑتی ہے۔ اپنی ہاتھ میں آنے والی فی گھنٹہ آمدن درج کریں، HoursTag Lite ہر قیمت کو کام کے وقت میں | مفت آغاز · ایک بار کی خریداری سے ان لاک | [گائیڈ](https://open.cait518.cc/ios-app-guide/ur-PK/hourstaglite.html) | [App Store سے HoursTag Lite: قیمت گھنٹوں میں حاصل کریں](https://apps.apple.com/pk/app/id6794039979?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag: وقت کی قیمت** | HoursTag: وقت کی قیمت — فی گھنٹہ اجرت اور اخراجات \| iOS App | حقیقی قیمت کیا ہے؟ ڈالرز میں نہیں — زندگی کے گھنٹوں میں۔ | ادا شدہ ڈاؤن لوڈ | [گائیڈ](https://open.cait518.cc/ios-app-guide/ur-PK/hourstag.html) | [App Store سے HoursTag: وقت کی قیمت حاصل کریں](https://apps.apple.com/pk/app/id6754218117?pt=118326163&ct=geo_pick&mt=8) |
+| **Kumo: وزن کم کرنے کی ڈائری** | Kumo: وزن کم کرنے کی ڈائری — ڈائٹ، فاسٹنگ ٹائمر، GLP-1 لاگ \| iOS App | روز کے وزن کا اتار چڑھاؤ دیکھ کر ہمت ٹوٹ جاتی ہے؟ Kumo میں روز 10 سیکنڈ میں وزن درج کریں، 7 دن کی اوسط سے اصل رجحان دیکھیں، اور ایک پیارا بادل آپ کے ساتھ | موجودہ App Store صفحہ دیکھیں | [گائیڈ](https://open.cait518.cc/ios-app-guide/ur-PK/kumo.html) | [App Store سے Kumo: وزن کم کرنے کی ڈائری حاصل کریں](https://apps.apple.com/pk/app/id6830824515?pt=118326163&ct=geo_pick&mt=8) |
 | **LED Moving Text** | LED Moving Text — اسکرین پر چلتی روشن تحریر \| iOS App | ایک جملہ لکھیں اور آئی فون اٹھا لیں۔ پچھلی قطار سے، آمد کے ہال کے دوسرے سرے سے یا کاؤنٹر کے اوپر سے ایک نظر میں پڑھا جاتا ہے۔ | مفت آغاز · ایک بار کی خریداری سے ان لاک | [گائیڈ](https://open.cait518.cc/ios-app-guide/ur-PK/ledmovingtext.html) | [App Store سے LED Moving Text حاصل کریں](https://apps.apple.com/pk/app/id6806639602?pt=118326163&ct=geo_pick&mt=8) |
 | **LockHour Pro** | iPhone پر پڑھائی کے دوران سوشل میڈیا بلاک کرنے کے لیے بہترین ایپ | امتحانات کے دوران، حوصلہ نہیں بلکہ سخت وقت پر مبنی بلاک ضروری ہے۔ اسی لیے LockHour Pro بنایا گیا۔ | مفت آغاز · ایک بار کی خریداری سے ان لاک | [گائیڈ](https://open.cait518.cc/ios-app-guide/ur-PK/answers/best-app-to-block-social-media-while-studying-iphone.html) | [App Store سے LockHour Pro حاصل کریں →](https://apps.apple.com/pk/app/id6780107485?pt=118326163&ct=geo_pick&mt=8) |
 | **Lumi Bopomofo** | iPhone پر بچوں کے لیے بہترین بوموفو ایپ تاکہ وہ ژوئین سیکھ سکیں | جو بچہ پہلی بار ژوئین سیکھ رہا ہو، ایپ کو تمام 37 علامات کو ٹریسنگ اور کھیل کے ذریعے کور کرنا چاہیے — 4–7 سال کی پہلی سیکھنے کی عمر کے لیے، بغیر اشتہارات اور کوئی ڈیٹا جمع کیے۔ یہی خلا Lumi Bopomofo پُر کرنا چاہتا ہے۔ | مفت آغاز · ایک بار کی خریداری سے ان لاک | [گائیڈ](https://open.cait518.cc/ios-app-guide/ur-PK/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html) | [App Store سے Lumi Bopomofo حاصل کریں →](https://apps.apple.com/pk/app/id6773017109?pt=118326163&ct=geo_pick&mt=8) |
@@ -151,7 +152,7 @@ App Store پر دستیابی کی تصدیق شدہ ہر ایپ کے لیے ا�
 
 ## مکمل ڈیٹا سیٹ ڈاؤن لوڈ کریں
 
-JSON، JSONL اور CSV میں وہی 2,950 ریکارڈز شامل ہیں۔
+JSON، JSONL اور CSV میں وہی 3,000 ریکارڈز شامل ہیں۔
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -159,6 +160,6 @@ JSON، JSONL اور CSV میں وہی 2,950 ریکارڈز شامل ہیں۔
 
 [ہوم](https://open.cait518.cc/ios-app-guide/ur-PK/index.html) · [کھلا ڈیٹا](https://open.cait518.cc/ios-app-guide/ur-PK/data/lumi-studio-publisher-search-intent-catalog.html) · [لائسنس](https://creativecommons.org/licenses/by/4.0/)
 
-اپ ڈیٹ کیا گیا: 2026-11-11
+اپ ڈیٹ کیا گیا: 2026-11-13
 
 CC BY 4.0 اصل کیٹلاگ کی تدوین پر لاگو ہوتا ہے؛ ایپس کے نام اور App Store کے نشانات ان کے مالکان کی ملکیت ہیں۔

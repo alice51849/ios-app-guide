@@ -1,14 +1,14 @@
 {
-  "abstained_pairs": 2871,
-  "app_count": 59,
-  "candidate_app_locale_pairs": 2950,
-  "creative_count": 59,
+  "abstained_pairs": 2919,
+  "app_count": 60,
+  "candidate_app_locale_pairs": 3000,
+  "creative_count": 60,
   "current_inventory": {
-    "app_keys_sha256": "91a8c5ad6ebdc42c5291d585318ecd9658acde15edc650c00d50b6c6b555420d",
-    "copy_sha256": "123b54e948dea6f8025bc396a85cad7f76ff5ba3e6dd8d105ac7cc85f205490f",
+    "app_keys_sha256": "fb6805f542ce9f363d0fb17a1aca312cc4ae4331e68a9154e43717909646f1c1",
+    "copy_sha256": "4ab8574be4d9c34f5b814ab917cc7dc563bad177029b46cbcb9105be9923e3fa",
     "missing_route_app_keys": [],
     "missing_route_app_keys_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-    "public_apps": 59
+    "public_apps": 60
   },
   "dataset": "Lumi Studio High-Intent Decision Routes",
   "deployment_state": "generated_not_deployed",
@@ -24,12 +24,12 @@
       "relative_path": "data/high-intent-decision-routes/conversion-contracts.schema.json"
     },
     {
-      "generated_sha256": "198c97819faf1edab4da49f842e1bea59df06c40218497885dd476f7d7486e59",
+      "generated_sha256": "f89ef7a164ba41c1c6966ec9c2549bbf0d94a782d7e072e2b40ae2ee5e21f6bf",
       "kind": "coverage_report",
       "relative_path": "data/high-intent-decision-routes/coverage.json"
     },
     {
-      "generated_sha256": "b25492e99e951a758eda9ccdbf9f76ffb8a892d1f8c4c88ec484984b9d52dcd0",
+      "generated_sha256": "efc2ab809ac38f005d14dcc8a580a35b703f200d61e5a66d51b9b49781e42c67",
       "kind": "json_feed",
       "relative_path": "data/high-intent-decision-routes/feed.json"
     },
@@ -132,6 +132,11 @@
       "generated_sha256": "f7c74c7b202c50b6f99b2279750beabc720c295772960b2de0528deb7feb17a6",
       "kind": "route_html",
       "relative_path": "en-US/decide/hourstaglite/pause-impulse-buy-with-work-hours.html"
+    },
+    {
+      "generated_sha256": "e95f9194ea817a2de82fa0b106b9f110efc4220f6ce27c8850fee0b4c6be70e0",
+      "kind": "route_html",
+      "relative_path": "en-US/decide/kumo/weight-trend-log-with-optional-glp-1-shot-records.html"
     },
     {
       "generated_sha256": "8abe34200564f6807ec0fc5692d459b046017764e885fe8bbf717f524063210b",
@@ -354,7 +359,7 @@
       "relative_path": "ja/decide/unblurry/improve-soft-family-photo-realistically.html"
     },
     {
-      "generated_sha256": "ac972a64941a8018b26f820453f7c86d197512d4dd48d77c63fd89152b631d3f",
+      "generated_sha256": "ba77d7f6cd54b4392bd48050b33bd711dabb942050959788fe9594765cf6222e",
       "kind": "sitemap",
       "relative_path": "sitemap-high-intent-decision-routes.xml"
     },
@@ -392,6 +397,11 @@
       "generated_sha256": "b2f265693e1f28bc6a41eccab35570f5962a3d03f9a87340c2c428d2729a9a53",
       "kind": "route_html",
       "relative_path": "zh-Hant/decide/gbago/keep-emulator-save-progress-safe-and-recoverable-on-iphone.html"
+    },
+    {
+      "generated_sha256": "5dc5461f393078591fc8892491f89033f158f38cbce7a38e5ad85aa56740fc93",
+      "kind": "route_html",
+      "relative_path": "zh-Hant/decide/kumo/weight-trend-log-with-optional-glp-1-shot-records.html"
     },
     {
       "generated_sha256": "7f4a5f4fa9388eef082901a2d57c23f727f49e0da3a321154de55a65a7f6deae",
@@ -436,17 +446,17 @@
   ],
   "fallback_records": 0,
   "inventory": {
-    "app_keys_sha256": "91a8c5ad6ebdc42c5291d585318ecd9658acde15edc650c00d50b6c6b555420d",
-    "copy_sha256": "123b54e948dea6f8025bc396a85cad7f76ff5ba3e6dd8d105ac7cc85f205490f",
+    "app_keys_sha256": "fb6805f542ce9f363d0fb17a1aca312cc4ae4331e68a9154e43717909646f1c1",
+    "copy_sha256": "4ab8574be4d9c34f5b814ab917cc7dc563bad177029b46cbcb9105be9923e3fa",
     "official_locales_sha256": "e26dabf9370286ad8fd12034270cfcade92b2db4f4a0eecc19324203ce84d5bd",
-    "public_apps": 59,
+    "public_apps": 60,
     "relative_path": "data/verified-ios-app-finder-catalog.json"
   },
-  "manifest_digest": "983f427c5697bd18d090704dcefc7313622c7171bdd17f747b4412396a69ec87",
+  "manifest_digest": "f5486b01906b271af15235015fd622bb7cde56e3e31a00fe6a8c603686126584",
   "owner": "high_intent_decision_routes",
-  "release_contract_digest": "082b9797a43e8a2561c86cd34bf3d7e9a02fbe650dc106d86a0b72c9057a622a",
+  "release_contract_digest": "70c6b195583d57af83f711e8c352684a6b1e09aa7ad514e2198ee2badbc2f6e6",
   "release_state": "exact",
-  "route_count": 79,
+  "route_count": 81,
   "routes": [
     {
       "app_key": "mochidonestamp",
@@ -787,6 +797,23 @@
       "route_id": "en-US:hourstaglite:pause-impulse-buy-with-work-hours",
       "route_slug": "pause-impulse-buy-with-work-hours",
       "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/hourstaglite/pause-impulse-buy-with-work-hours.html"
+    },
+    {
+      "app_key": "kumo",
+      "app_store_id": "6830824515",
+      "app_store_url": "https://apps.apple.com/us/app/id6830824515?pt=118326163&ct=geo_ask&mt=8",
+      "campaign_token": "geo_ask",
+      "content_type": "problem_aware",
+      "creative_digest": "5c3aa9ebf58178bc52572c7938ba1a997520b9b2f22a1085dd1a9858245b2363",
+      "creative_id": "kumo:weight-trend-log-with-optional-glp-1-shot-records:problem_aware",
+      "intent_type": "problem_aware",
+      "locale": "en-US",
+      "output_sha256": "e95f9194ea817a2de82fa0b106b9f110efc4220f6ce27c8850fee0b4c6be70e0",
+      "record_digest": "444558560fbfea404408a272f121a6d21bf6df034bfeac142c0c8f3260c10f67",
+      "relative_path": "en-US/decide/kumo/weight-trend-log-with-optional-glp-1-shot-records.html",
+      "route_id": "en-US:kumo:weight-trend-log-with-optional-glp-1-shot-records",
+      "route_slug": "weight-trend-log-with-optional-glp-1-shot-records",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/kumo/weight-trend-log-with-optional-glp-1-shot-records.html"
     },
     {
       "app_key": "ledmovingtext",
@@ -1656,6 +1683,23 @@
       "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/decide/gbago/keep-emulator-save-progress-safe-and-recoverable-on-iphone.html"
     },
     {
+      "app_key": "kumo",
+      "app_store_id": "6830824515",
+      "app_store_url": "https://apps.apple.com/tw/app/id6830824515?pt=118326163&ct=geo_ask&mt=8",
+      "campaign_token": "geo_ask",
+      "content_type": "problem_aware",
+      "creative_digest": "5c3aa9ebf58178bc52572c7938ba1a997520b9b2f22a1085dd1a9858245b2363",
+      "creative_id": "kumo:weight-trend-log-with-optional-glp-1-shot-records:problem_aware",
+      "intent_type": "problem_aware",
+      "locale": "zh-Hant",
+      "output_sha256": "5dc5461f393078591fc8892491f89033f158f38cbce7a38e5ad85aa56740fc93",
+      "record_digest": "3b7538f4b3adb5e8248bd865cad32fba0706eeac1b70069618a09712352c56f3",
+      "relative_path": "zh-Hant/decide/kumo/weight-trend-log-with-optional-glp-1-shot-records.html",
+      "route_id": "zh-Hant:kumo:weight-trend-log-with-optional-glp-1-shot-records",
+      "route_slug": "weight-trend-log-with-optional-glp-1-shot-records",
+      "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/decide/kumo/weight-trend-log-with-optional-glp-1-shot-records.html"
+    },
+    {
       "app_key": "lumibopomofo",
       "app_store_id": "6773017109",
       "app_store_url": "https://apps.apple.com/tw/app/id6773017109?pt=118326163&ct=geo_pick&mt=8",
@@ -1794,5 +1838,5 @@
   ],
   "schema_version": 2,
   "site": "https://open.cait518.cc/ios-app-guide",
-  "source_contract_digest": "54ea5dc9bad4ee0a8ccf8c5f486ff72671272f5852e7b0511b8ca70205f064c2"
+  "source_contract_digest": "b66974a79eaecfe4544711075cbdfebb31058317c15ed5134c19fd9e011e4041"
 }

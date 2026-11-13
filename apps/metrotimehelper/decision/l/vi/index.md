@@ -2,7 +2,7 @@
 title: "Trợ lý giờ MRT Đài Bắc — Hẹn giờ đến, biết giờ phải đi | iOS App"
 lang: "vi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/metrotimehelper/decision/l/vi/index.html"
-modified: "2026-11-12"
+modified: "2026-11-13"
 app_store_id: "6819061896"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

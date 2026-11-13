@@ -2,7 +2,7 @@
 title: "折叠屏壁纸 - Foldable Wallpaper — 适配Duo・双屏壁纸・外屏内屏成对・锁屏小组件 | iOS App"
 lang: "zh-Hans"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/duowallpaperstudio/decision/l/zh-Hans/index.html"
-modified: "2026-11-12"
+modified: "2026-11-13"
 app_store_id: "6824946559"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

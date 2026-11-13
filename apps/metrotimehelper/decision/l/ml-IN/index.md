@@ -2,7 +2,7 @@
 title: "Taipei MRT സമയ സഹായി — എപ്പോൾ പുറപ്പെടണമെന്ന് അറിയാം | iOS App"
 lang: "ml-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/metrotimehelper/decision/l/ml-IN/index.html"
-modified: "2026-11-12"
+modified: "2026-11-13"
 app_store_id: "6819061896"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

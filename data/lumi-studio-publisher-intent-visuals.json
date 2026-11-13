@@ -2,7 +2,7 @@
   "name": "Lumi Studio Publisher Intent Visuals",
   "description": "Localized first-party visual buyer-intent cards for every verified live iOS app.",
   "url": "https://open.cait518.cc/ios-app-guide/visuals/",
-  "dateModified": "2026-11-12",
+  "dateModified": "2026-11-13",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "creator": {
     "@type": "Organization",
@@ -10,320 +10,320 @@
     "url": "https://open.cait518.cc/ios-app-guide"
   },
   "source_dataset": "https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json",
-  "source_sha256": "577cd91f7f27da3481d67f89ad94d55069722b6ca0d4d07391aa94c3a292b067",
-  "content_digest": "adb31cb270380a5146a94848d7e91a0f8e1a58f099e6bf0ee51e15ccc054635c",
-  "generation_digest": "9b378e062b34658da3c182f272cc0c70d648cc6bbb863ef6a191404442637645",
+  "source_sha256": "381635e8c3401d50804afbcdc344cf8af80968d696cf86e9029c64eb1f22f799",
+  "content_digest": "234558a23cb543d67a2b491af80b4e07e022d85d9f8ead27a10268489a8dd366",
+  "generation_digest": "16e7825d75bd8b62de6ea8936cf935c272c9ebde069cdea5a823d479683c8806",
   "ordering": "official_locale_order_then_alphabetical_app_name",
-  "app_count": 59,
+  "app_count": 60,
   "locale_count": 50,
-  "image_count": 2950,
+  "image_count": 3000,
   "gallery_count": 51,
   "galleries": [
     {
       "locale": "en",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/visuals/",
-      "sha256": "b37b378f8a9f5496a2b26148e3f4b32bd1cf2644421f09b805fa4ab164b35cbc",
-      "dateModified": "2026-11-12"
+      "sha256": "e02127b3eb8a79b960625ae8203d36954ce6bf2f09a25faf48ad9b62ed2e8b4b",
+      "dateModified": "2026-11-13"
     },
     {
       "locale": "ar-SA",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ar-SA/visuals/",
-      "sha256": "bbace4ab99a8bc4e4f9a15a5bc09ca6571ce9e87ea2dc3722467b8097991dd6f",
-      "dateModified": "2026-11-12"
+      "sha256": "6a0ab1c6be0b97cc316452d10722de762cdd002ea951bb1ee907691d38aa8e47",
+      "dateModified": "2026-11-13"
     },
     {
       "locale": "bn-BD",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/bn-BD/visuals/",
-      "sha256": "9b58220959c4938354839965fb0f92c9aaf0cbba1ce25c75808a7566e8dfe6c0",
-      "dateModified": "2026-11-05"
+      "sha256": "a82844cc0e3a7e829b199b53ca1dc786507e67406e2c0b66a5e132983d9e20ab",
+      "dateModified": "2026-11-13"
     },
     {
       "locale": "ca",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ca/visuals/",
-      "sha256": "7aad10140406d094a0736fa9845e1db2da61b969f8d389b5b75d49e6e5e7a9e8",
-      "dateModified": "2026-11-12"
+      "sha256": "e42277cadd72b7c28b0954f209903e6059a4ec4b747e65c0a6e3b4ff71271195",
+      "dateModified": "2026-11-13"
     },
     {
       "locale": "cs",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/cs/visuals/",
-      "sha256": "e079af2de371487c3f47efc46bc0adfefb89b11a7f8e39554f19fecc05148e1d",
-      "dateModified": "2026-11-12"
+      "sha256": "470b8ebfcf9059285b5620141153be8eb4d66ef074a4ec47ac8852beadd157c8",
+      "dateModified": "2026-11-13"
     },
     {
       "locale": "da",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/da/visuals/",
-      "sha256": "1775c779619c200d549542b716150e34c4cbad79d5803dd0c2f1862ca9b0a8bb",
-      "dateModified": "2026-11-12"
+      "sha256": "adb8ea67a924378868a3b0c0f63ed8f5f29494efe28c9b4214dafb97c7ef7307",
+      "dateModified": "2026-11-13"
     },
     {
       "locale": "de-DE",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/de-DE/visuals/",
-      "sha256": "b245428c7292e1cb00a6c365e06ff8f487f16037768e10c6788af3bfbcbcf4d4",
-      "dateModified": "2026-11-12"
+      "sha256": "0b264eb4b40879fa84b11f70240f4155171c052d0e474cf5e935c1b8993a4f09",
+      "dateModified": "2026-11-13"
     },
     {
       "locale": "el",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/el/visuals/",
-      "sha256": "25db6d0237198a6d2ef26ef5d52076d53906c133cec9d3cfd1daed2c3f61e711",
-      "dateModified": "2026-11-12"
+      "sha256": "3c493425fe98bdfcfe371c0a81ac1762ea4a75ccf44a6eea60b132afc36c7319",
+      "dateModified": "2026-11-13"
     },
     {
       "locale": "en-AU",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/en-AU/visuals/",
-      "sha256": "be8347fab6a4984b79fbe65e42e4a2133afcdf5b94876d759e0570783dd16f3e",
-      "dateModified": "2026-11-12"
+      "sha256": "a40628b43c1a9009f61446e7e35c66377a00d1d24c933726ad1d5123e5724e5e",
+      "dateModified": "2026-11-13"
     },
     {
       "locale": "en-CA",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/en-CA/visuals/",
-      "sha256": "c191f0ed7a28ac756faf64199465e562edcc13fac0f53db58d67274ef05c11c3",
-      "dateModified": "2026-11-12"
+      "sha256": "f7639f031aee058b2ab32140de4e9b7f7a6969ce53f17df778aa6f772a33a186",
+      "dateModified": "2026-11-13"
     },
     {
       "locale": "en-GB",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/en-GB/visuals/",
-      "sha256": "99a1bf2245f43a2bb0f727e86b709c9fd1c1706a231df9c3ad1ca2bdc5c32f08",
-      "dateModified": "2026-11-12"
+      "sha256": "17e1f96278ebdd72f56cc395967fc03f52e35e29c82abd930b41fcd765e7e754",
+      "dateModified": "2026-11-13"
     },
     {
       "locale": "en-US",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/en-US/visuals/",
-      "sha256": "70dd8f17b2b2473c437aba82c39a8346dd7d635c3a0dc04fff4676219c323cd3",
-      "dateModified": "2026-11-12"
+      "sha256": "c13428cd01fab9052464c01eb1a26e23d29d24ed8a2e9013d20b3c3ba977c2a0",
+      "dateModified": "2026-11-13"
     },
     {
       "locale": "es-ES",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/es-ES/visuals/",
-      "sha256": "de3d36f69f39fff4e9efd49c841ec9352dfedbd9be5ac0fbb2fae5f4b2cb2544",
-      "dateModified": "2026-11-12"
+      "sha256": "cbbeaeba5a6d0737d45395930907120fdc23a51d16bfb44c32654c7130763b68",
+      "dateModified": "2026-11-13"
     },
     {
       "locale": "es-MX",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/es-MX/visuals/",
-      "sha256": "973f861be3c54166d6421d5939734e1dd5965f2db982922f02b4eb39eba1f3c1",
-      "dateModified": "2026-11-12"
+      "sha256": "26ac5ec5a8443fd2f049c9ab7ddb2021c4ea8129f99359a69f6b460623230518",
+      "dateModified": "2026-11-13"
     },
     {
       "locale": "fi",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/fi/visuals/",
-      "sha256": "9fd52844fb231f3d142591afbe774f6608a9f752d8d3e5dd5bda81a8c9f8b6ac",
-      "dateModified": "2026-11-12"
+      "sha256": "540d684baa9c1510a4b5a1ea4de744325d1d3aabc6986b5871f84cf4616350d2",
+      "dateModified": "2026-11-13"
     },
     {
       "locale": "fr-CA",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/fr-CA/visuals/",
-      "sha256": "0a31ee737f8cfc50033dcec8359706028999c46eed4d85c6c65ae91cc08f71c4",
-      "dateModified": "2026-11-12"
+      "sha256": "ee4a26a45b6600dbd9d17c50fb1039674eab186498a478548f36ee10a9b52766",
+      "dateModified": "2026-11-13"
     },
     {
       "locale": "fr-FR",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/fr-FR/visuals/",
-      "sha256": "8f1989265096a9e6738309bb328aa525ceda3b74b8bf1bf08fa7f4f0f93a320e",
-      "dateModified": "2026-11-12"
+      "sha256": "8c8e1ce693e928545a062d64adc4c7d69ad6a6cc46348d38c7692b7485ce4940",
+      "dateModified": "2026-11-13"
     },
     {
       "locale": "gu-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/gu-IN/visuals/",
-      "sha256": "09bf0ba31ac90c49d800b2b39da11be03e28242c43c97dea49582a5d8e5eecc1",
-      "dateModified": "2026-11-12"
+      "sha256": "7e200278492070d0b546947dc8ba54c506d854ea740e8730502637dfb8c8b2b5",
+      "dateModified": "2026-11-13"
     },
     {
       "locale": "he",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/he/visuals/",
-      "sha256": "27ae6153ad17662df271ad814ee87227b4dcf8b720f58a0af8d1b5967aba5598",
-      "dateModified": "2026-11-12"
+      "sha256": "39756f5bdd6d353427f5094ab755ce565b19ec90bcd35a1fe0fc4d2ff7d70073",
+      "dateModified": "2026-11-13"
     },
     {
       "locale": "hi",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/hi/visuals/",
-      "sha256": "ab5881ab9aceb220adea9825fa684feb4436fb72407c4ce9bf440a0803076d97",
-      "dateModified": "2026-11-12"
+      "sha256": "48141860b2c275710a09fcc580d018df2eccffaadb7d3d99ed3af176b471871c",
+      "dateModified": "2026-11-13"
     },
     {
       "locale": "hr",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/hr/visuals/",
-      "sha256": "8187ea65d74bfd2070365771bd45877b63fa3122ed4f41ab4a95cf0103c9d4d0",
-      "dateModified": "2026-11-12"
+      "sha256": "127d4fcfacb434055ad492d9ed7b8f8f229c114f07073e71bcfcac17fc6c6dd9",
+      "dateModified": "2026-11-13"
     },
     {
       "locale": "hu",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/hu/visuals/",
-      "sha256": "c86768d318e6f48325e1f52ba9e4d1d2b50c49ea92ff3ed7c7970eaac48fe0bb",
-      "dateModified": "2026-11-12"
+      "sha256": "1022e3084e7330eaf97eef1dc6d595962a5f2e41f02c09b73ac9ee543d4fa361",
+      "dateModified": "2026-11-13"
     },
     {
       "locale": "id",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/id/visuals/",
-      "sha256": "75c9ec4156bf5afee8609d1fa6b4464724822dc27a51ed1c478981857f301da7",
-      "dateModified": "2026-11-12"
+      "sha256": "bfdd911bff21b1d6411c7d28914fe312929c42a953c2da5c47eff230f57d622c",
+      "dateModified": "2026-11-13"
     },
     {
       "locale": "it",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/it/visuals/",
-      "sha256": "b74dfd2f4ab7060d7bd5f051885f25e3ff637a64d8099538002ce999d72b25ce",
-      "dateModified": "2026-11-12"
+      "sha256": "79d9daffc6843f873c6cbd149ca0b94c0f9537ae47ed4a5076c0200af0848244",
+      "dateModified": "2026-11-13"
     },
     {
       "locale": "ja",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ja/visuals/",
-      "sha256": "d5a2844367d04ca276bb1ccebd4d864de379ae9243dbaf2450555abaff138b39",
-      "dateModified": "2026-11-12"
+      "sha256": "a27557e079d4d0ad202a9a93a07c66b43b917e6d8c81237a10aec4e66abbcc54",
+      "dateModified": "2026-11-13"
     },
     {
       "locale": "kn-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/kn-IN/visuals/",
-      "sha256": "7c3a6e7ad1ce7e3346466b2ff134253d01a1eba2575579a0d1340d44f2c1b721",
-      "dateModified": "2026-11-12"
+      "sha256": "85ae5c399f672281a275746f417b59a0a97b97482cf82d5ccfcf78d89df3093a",
+      "dateModified": "2026-11-13"
     },
     {
       "locale": "ko",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ko/visuals/",
-      "sha256": "c48b5947512948957bc3008b046ef2929cee0d03d45f7be6d3e52491a7681a78",
-      "dateModified": "2026-11-12"
+      "sha256": "93190ad39cbfeb2a2548911c7bcbb347283b60dc8e427896933e0af66c798d1a",
+      "dateModified": "2026-11-13"
     },
     {
       "locale": "ml-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ml-IN/visuals/",
-      "sha256": "bd6a9635eff5fa40f85eddfb7f2b3a86df91c54bd2e91ca3386a0f4e5ef859d1",
-      "dateModified": "2026-11-12"
+      "sha256": "f40ea980ee854f5ef9bf1e554e3ea1ca739aa34e4bff07b65a51e600c28fbcbb",
+      "dateModified": "2026-11-13"
     },
     {
       "locale": "mr-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/mr-IN/visuals/",
-      "sha256": "724954eb11a2c20d52f84ba47a13a2015cd9d14610a36021fe976700312f00d2",
-      "dateModified": "2026-11-12"
+      "sha256": "97bfb5c954f9299c275faf6364f8196cee4cf9cab55e8574d5830b3cd3bb33a8",
+      "dateModified": "2026-11-13"
     },
     {
       "locale": "ms",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ms/visuals/",
-      "sha256": "ecf1aa89ed257453ab7ddf0528e0dca21f454a9cb577f1b87483e60137ac9034",
-      "dateModified": "2026-11-12"
+      "sha256": "0f2c70a5d7c88a30f367032d390dfdcca3bece5fce9ffe927a1da32d18c50a0f",
+      "dateModified": "2026-11-13"
     },
     {
       "locale": "nl-NL",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/nl-NL/visuals/",
-      "sha256": "129afcbadf24465f6580a80567d876d5ed2ce3c4bf897d4c9c1660fc2bd8f7b2",
-      "dateModified": "2026-11-12"
+      "sha256": "f945a281836fbd143604b7c9dda5125d11a31a61eefe45afc27248f857a15074",
+      "dateModified": "2026-11-13"
     },
     {
       "locale": "no",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/no/visuals/",
-      "sha256": "8018fa73fdfed2c64007c694379093df49ef7194edc2cc1862595fa0e33e2595",
-      "dateModified": "2026-11-12"
+      "sha256": "970aa10e71158dc5af231f7eaf79de3bc215344a1c4f94b379d7575eab6eba3b",
+      "dateModified": "2026-11-13"
     },
     {
       "locale": "or-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/or-IN/visuals/",
-      "sha256": "dc70c1e21c18a378fad8173455291cd8a662a367d2306b84bf3c66f4996db770",
-      "dateModified": "2026-11-12"
+      "sha256": "77047f4567589baeae69c33c1b5fa6a5ef303e569736a8be67cf0368adefcbd1",
+      "dateModified": "2026-11-13"
     },
     {
       "locale": "pa-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/pa-IN/visuals/",
-      "sha256": "f5f6d4b6f1a8dce9cddc4d649d33e70583e7cc148dfabb7e12ac1015472ff045",
-      "dateModified": "2026-11-12"
+      "sha256": "e06d9b2b8d023a8b82cf81445f67be4903b8ae89429e002833339fd29a5c7638",
+      "dateModified": "2026-11-13"
     },
     {
       "locale": "pl",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/pl/visuals/",
-      "sha256": "34cadace7b8736a9a2ea7cd7c953e221f67fdadedba8bd0a9c9ca332d21edcb4",
-      "dateModified": "2026-11-12"
+      "sha256": "bda8c4531104a29264bc7be99b819539362d3df163ce44c23a748216ecb55ada",
+      "dateModified": "2026-11-13"
     },
     {
       "locale": "pt-BR",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/pt-BR/visuals/",
-      "sha256": "7fe66091fc4f515baa0b054ac715c43a7dbd1ab14511ae9652b4a4b2208be380",
-      "dateModified": "2026-11-12"
+      "sha256": "11608ab937e2868af1887e46084c12c8e6cb922670d2cf34ebcbe0cbd7c1529c",
+      "dateModified": "2026-11-13"
     },
     {
       "locale": "pt-PT",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/pt-PT/visuals/",
-      "sha256": "4068b2bb3fc839eb73fdc4217fb7c620ec7cc8c5640a8e64fe79caaeaf43b821",
-      "dateModified": "2026-11-12"
+      "sha256": "5addec5f785c5bda7fe5da84208d62e96b1cec20b3fd07873bed9c4955c9e42b",
+      "dateModified": "2026-11-13"
     },
     {
       "locale": "ro",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ro/visuals/",
-      "sha256": "93d28a4f6bb6b6d28edd04c9d3c2e168a702a649486004ca1f0af00a0a7ffdfc",
-      "dateModified": "2026-11-12"
+      "sha256": "41dc333d88b1da6c38d905fd5c24dd57968e68f39c5d0e80bd91ef511b42be3d",
+      "dateModified": "2026-11-13"
     },
     {
       "locale": "ru",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ru/visuals/",
-      "sha256": "f286ff7a162f83aa054b314d96ab3c5c549483ca6a329ebfc1bf56615d8befcd",
-      "dateModified": "2026-11-12"
+      "sha256": "eff7bfdac789e7a42f2140724d6b47a97fc197a28691d834410a11fe3e8c3244",
+      "dateModified": "2026-11-13"
     },
     {
       "locale": "sk",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/sk/visuals/",
-      "sha256": "6471c283551951201aa4b2af82142cd762996ae05d9681c1c78b2c40be00efce",
-      "dateModified": "2026-11-12"
+      "sha256": "8141267cc2c3fc4f9b2cfb6300e09f3f9420aaea245a422d321db0d9a69a5a69",
+      "dateModified": "2026-11-13"
     },
     {
       "locale": "sl-SI",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/sl-SI/visuals/",
-      "sha256": "71af0f867d7711761e765e1d466f6ffcda05b3ef2381c4d8ce269945ed152710",
-      "dateModified": "2026-11-12"
+      "sha256": "836975873e0dcbd5286907f68ed958237e55e005738d0e98547326c64d16e6a7",
+      "dateModified": "2026-11-13"
     },
     {
       "locale": "sv",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/sv/visuals/",
-      "sha256": "2f40dcb4e29f55174596e91da41027d746bb4ee17c1c551ba4e0ae4e00a32f3f",
-      "dateModified": "2026-11-12"
+      "sha256": "56d7c38212c39e0c7bd528d265dca2abba06177be33308190fe0f88f9e1b6ca4",
+      "dateModified": "2026-11-13"
     },
     {
       "locale": "ta-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ta-IN/visuals/",
-      "sha256": "cea99187b82b8179180a5c393a9e1b4e4cfd2722779e74350217a08646928da8",
-      "dateModified": "2026-11-12"
+      "sha256": "a333b1e8b9a572ba91db5423bbb3292503e599fada4009a2eb1db4b4558efd64",
+      "dateModified": "2026-11-13"
     },
     {
       "locale": "te-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/te-IN/visuals/",
-      "sha256": "0deace0b30c9087dd2366db0131e113694fe7321ff431d577f7f25faf7ebacba",
-      "dateModified": "2026-11-12"
+      "sha256": "ca4fda0f299b1aea2c46a5f47c5b7a6f2cf308f10942a892f6b3a4e072a22f75",
+      "dateModified": "2026-11-13"
     },
     {
       "locale": "th",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/th/visuals/",
-      "sha256": "5840a5417f66198d327ad425d8c18f51f515c8bf21b5b51d028bd8f6541deda3",
-      "dateModified": "2026-11-12"
+      "sha256": "0a5b821dede6ca20b760b444e48582d1fcf370e1aa645bba4e12a3830599277f",
+      "dateModified": "2026-11-13"
     },
     {
       "locale": "tr",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/tr/visuals/",
-      "sha256": "013a8aaff752232bb053af07fc346cf780299f968b4aa466598f6f84024c2d16",
-      "dateModified": "2026-11-12"
+      "sha256": "ef1c630ac615751a8ea1e933a0edd67dd649175a05ece38782abeb67962a4758",
+      "dateModified": "2026-11-13"
     },
     {
       "locale": "uk",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/uk/visuals/",
-      "sha256": "00ced2bcdd832d0c015e351329054faade25a04b397587d37d4ba24bcb876759",
-      "dateModified": "2026-11-12"
+      "sha256": "ddf1eafc6941a4bd7126574e833ec173d5ada2590ad290b84fcff578a2c6fe4d",
+      "dateModified": "2026-11-13"
     },
     {
       "locale": "ur-PK",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ur-PK/visuals/",
-      "sha256": "a2a12eba00c4dcea928b10b0d14b69a527515d87e6afc3a4d5908d9f36e94c4c",
-      "dateModified": "2026-11-12"
+      "sha256": "a519655bf661bd5d261261b2edc83284d793420613be1de63e8f53b7db6cedba",
+      "dateModified": "2026-11-13"
     },
     {
       "locale": "vi",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/vi/visuals/",
-      "sha256": "415a318d25857c52eefe074396671cc59dbde22e832c03b2df3d767f98717e0d",
-      "dateModified": "2026-11-12"
+      "sha256": "0e2983aba2d873d453734f9e0e64100d6e9db046d44b5a684f7f96b590d1a11b",
+      "dateModified": "2026-11-13"
     },
     {
       "locale": "zh-Hans",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/visuals/",
-      "sha256": "e1670300a3bc7943c9cd4138ed95d2ba4af73613902b8b3784f259e929038b66",
-      "dateModified": "2026-11-12"
+      "sha256": "829cbd0a5ca8f8d6b082ebb5d31e4bd9f37dbd74f9b05ed6ceb5e050dcdf17f3",
+      "dateModified": "2026-11-13"
     },
     {
       "locale": "zh-Hant",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/visuals/",
-      "sha256": "872f2048b003aca0127cb76bdacde9e0bfea3e758d8c01e50e3c80e00a9c5072",
-      "dateModified": "2026-11-12"
+      "sha256": "0aba225eefa9df69fddcb5adc64f816cb5c14706f549ea80b3c0761861971d5c",
+      "dateModified": "2026-11-13"
     }
   ],
   "publisher_authored": true,
@@ -518,6 +518,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ar-SA/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
       "app_store_url": "https://apps.apple.com/sa/app/id6754218117?pt=118326163&ct=iag_visual_ar_sa&mt=8",
       "sha256": "5e405336242d16f2e11169f3744117a38110f4d09338e9e2a5d1f82849d94f13"
+    },
+    {
+      "locale": "ar-SA",
+      "app_key": "kumo",
+      "app_store_id": "6830824515",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ar-SA/kumo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ar-SA/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ar-SA/kumo.html",
+      "app_store_url": "https://apps.apple.com/sa/app/id6830824515?pt=118326163&ct=iag_visual_ar_sa&mt=8",
+      "sha256": "086a5e108609c4465902707e02d5cc69f83fa931eb5cfbc94652ed591a216d52"
     },
     {
       "locale": "ar-SA",
@@ -837,7 +847,7 @@
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ar-SA/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ar-SA/tripbeecute.html",
       "app_store_url": "https://apps.apple.com/sa/app/id6826987407?pt=118326163&ct=iag_visual_ar_sa&mt=8",
-      "sha256": "8974074f7c3ee319cb0af9a769628bfbb5d616029ec1444f9333ba179afd670f"
+      "sha256": "de7f44cdbdf078862ee26077375f2b4ec563d05e93632135552a77870215b18f"
     },
     {
       "locale": "ar-SA",
@@ -1431,6 +1441,35 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/hourstag.html",
       "app_store_url": null,
       "sha256": "0dc6fb72c51adbf883f04f07caea2873e93e3a588df5e266f10231c884e2f319",
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+        "evidence": {
+          "source_url": "https://support.apple.com/en-us/118205",
+          "observed_at": "2026-09-12",
+          "country": "BD",
+          "apple_media_services_markets": 174,
+          "country_listed": false,
+          "lookup_app_results": 0,
+          "lookup_control_results": 0,
+          "redirect_market": "US"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
+    },
+    {
+      "locale": "bn-BD",
+      "app_key": "kumo",
+      "app_store_id": "6830824515",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/bn-BD/kumo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/bn-BD/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/kumo.html",
+      "app_store_url": null,
+      "sha256": "725afc9d300e02d63fdf59b787bbad53774d2154affe5f1096c64548d7554e6c",
       "market_availability": {
         "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
         "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
@@ -2822,6 +2861,16 @@
     },
     {
       "locale": "ca",
+      "app_key": "kumo",
+      "app_store_id": "6830824515",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ca/kumo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ca/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ca/kumo.html",
+      "app_store_url": "https://apps.apple.com/es/app/id6830824515?pt=118326163&ct=iag_visual_ca&mt=8",
+      "sha256": "5270fc68aee1d423daf8ac9a82ea8b2bb06222596863ebe0817b78bdcec1cb1c"
+    },
+    {
+      "locale": "ca",
       "app_key": "ledmovingtext",
       "app_store_id": "6806639602",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ca/ledmovingtext.svg",
@@ -3138,7 +3187,7 @@
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ca/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ca/tripbeecute.html",
       "app_store_url": "https://apps.apple.com/es/app/id6826987407?pt=118326163&ct=iag_visual_ca&mt=8",
-      "sha256": "3ec5d2a1416817f1585c3d3030d7cd619cd27c3f6b3bb8a263770934924b7473"
+      "sha256": "2b7d7a62262cf0f0c95c187a3bfdac28d0d4753ec10ea3d4a75f1521117194fe"
     },
     {
       "locale": "ca",
@@ -3409,6 +3458,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/cs/hourstag.html",
       "app_store_url": "https://apps.apple.com/cz/app/id6754218117?pt=118326163&ct=iag_visual_cs&mt=8",
       "sha256": "dd43dc833750f3caf2c8572986d72307f46c22fffa080efa8e0e90f039c6c3f6"
+    },
+    {
+      "locale": "cs",
+      "app_key": "kumo",
+      "app_store_id": "6830824515",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/cs/kumo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/cs/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/cs/kumo.html",
+      "app_store_url": "https://apps.apple.com/cz/app/id6830824515?pt=118326163&ct=iag_visual_cs&mt=8",
+      "sha256": "53d4390ffdc64502ba113707b7f4deb525c664025c56df8fd32748af9c16753b"
     },
     {
       "locale": "cs",
@@ -3728,7 +3787,7 @@
       "gallery_url": "https://open.cait518.cc/ios-app-guide/cs/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/cs/tripbeecute.html",
       "app_store_url": "https://apps.apple.com/cz/app/id6826987407?pt=118326163&ct=iag_visual_cs&mt=8",
-      "sha256": "78391fefa9a00eb5861cc9ad39fd92f20d6ccaee27d69726e3f990c446c5e98a"
+      "sha256": "cb32f9204d4f3fae0005713302a196e62e7b7b23d0dfabf3aa94907307094f63"
     },
     {
       "locale": "cs",
@@ -3999,6 +4058,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/da/hourstag.html",
       "app_store_url": "https://apps.apple.com/dk/app/id6754218117?pt=118326163&ct=iag_visual_da&mt=8",
       "sha256": "a0332d59e55e091cf51c5957dc43ef0a7736b697fdfb3e257e1e059cf0b34a7d"
+    },
+    {
+      "locale": "da",
+      "app_key": "kumo",
+      "app_store_id": "6830824515",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/da/kumo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/da/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/da/kumo.html",
+      "app_store_url": "https://apps.apple.com/dk/app/id6830824515?pt=118326163&ct=iag_visual_da&mt=8",
+      "sha256": "e82eb1b813a21e1de690d527a9c0fc07ae291983b08a53347e27c05cc623f7fe"
     },
     {
       "locale": "da",
@@ -4318,7 +4387,7 @@
       "gallery_url": "https://open.cait518.cc/ios-app-guide/da/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/da/tripbeecute.html",
       "app_store_url": "https://apps.apple.com/dk/app/id6826987407?pt=118326163&ct=iag_visual_da&mt=8",
-      "sha256": "2ff18c28ef4e916f04233ea1cc5f5c090e5fd2a4bae8ea71124d2b6d9c1dd306"
+      "sha256": "cb1a9b580d95939953dad7a74647d7ec39046553e7ede68d9c8a74ab096b13d7"
     },
     {
       "locale": "da",
@@ -4448,7 +4517,7 @@
       "gallery_url": "https://open.cait518.cc/ios-app-guide/de-DE/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/de-DE/battai.html",
       "app_store_url": "https://apps.apple.com/de/app/id6802423998?pt=118326163&ct=iag_visual_de_de&mt=8",
-      "sha256": "9a074c1cc8e859d2ed9e44aeffc129dfe7abbce70d300141616a08a17d2a30f6"
+      "sha256": "50183cb10b01329cd295236167b3a76f2d4acff5aab6e9b6bb541d776a88dc8c"
     },
     {
       "locale": "de-DE",
@@ -4589,6 +4658,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/de-DE/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
       "app_store_url": "https://apps.apple.com/de/app/id6754218117?pt=118326163&ct=iag_visual_de_de&mt=8",
       "sha256": "399f6c257eabaa7e61db6cb68d81c7e77cb52cef2f3d4fd75b6c8af93cdeb9bf"
+    },
+    {
+      "locale": "de-DE",
+      "app_key": "kumo",
+      "app_store_id": "6830824515",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/de-DE/kumo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/de-DE/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/de-DE/kumo.html",
+      "app_store_url": "https://apps.apple.com/de/app/id6830824515?pt=118326163&ct=iag_visual_de_de&mt=8",
+      "sha256": "23dbb3f367bce7df3614f7472e70b51da113bb8cf00b96a0dc6f3a5c014c1d83"
     },
     {
       "locale": "de-DE",
@@ -4908,7 +4987,7 @@
       "gallery_url": "https://open.cait518.cc/ios-app-guide/de-DE/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/de-DE/tripbeecute.html",
       "app_store_url": "https://apps.apple.com/de/app/id6826987407?pt=118326163&ct=iag_visual_de_de&mt=8",
-      "sha256": "c84ea579041f8e8d5863695cc1adf5bcc4e7ab7f4e2a822c8215d553b1f2d2fd"
+      "sha256": "6a7dc8e34fb9ab30685cedba85746574e54bdb3da4a7bba625b0ce4435f73661"
     },
     {
       "locale": "de-DE",
@@ -5179,6 +5258,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/el/hourstag.html",
       "app_store_url": "https://apps.apple.com/gr/app/id6754218117?pt=118326163&ct=iag_visual_el&mt=8",
       "sha256": "6fe70fe16d89a47018ca382b0e3e2647d913bcd15dc210a5f43920a9e2a2fc47"
+    },
+    {
+      "locale": "el",
+      "app_key": "kumo",
+      "app_store_id": "6830824515",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/el/kumo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/el/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/el/kumo.html",
+      "app_store_url": "https://apps.apple.com/gr/app/id6830824515?pt=118326163&ct=iag_visual_el&mt=8",
+      "sha256": "daa75e8cee436c65b75c33638ddd9fe47c33fae0f9781c2c3bee5fcf3377d101"
     },
     {
       "locale": "el",
@@ -5498,7 +5587,7 @@
       "gallery_url": "https://open.cait518.cc/ios-app-guide/el/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/el/tripbeecute.html",
       "app_store_url": "https://apps.apple.com/gr/app/id6826987407?pt=118326163&ct=iag_visual_el&mt=8",
-      "sha256": "868dd55fbd5ca1d9024cd40b8736a4998a9fb34a7e13faaac060fe260e7e1b3b"
+      "sha256": "38079bae5761ff5f04d5e6d2673c64eebe1cba02e7d3649e10778388f8bca6b9"
     },
     {
       "locale": "el",
@@ -5769,6 +5858,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-AU/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
       "app_store_url": "https://apps.apple.com/au/app/id6754218117?pt=118326163&ct=iag_visual_en_au&mt=8",
       "sha256": "964acd40949ef9cc9edda595c74c6b8eefb14b2332ada0b5b01dbee4a9390713"
+    },
+    {
+      "locale": "en-AU",
+      "app_key": "kumo",
+      "app_store_id": "6830824515",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/en-AU/kumo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/en-AU/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-AU/kumo.html",
+      "app_store_url": "https://apps.apple.com/au/app/id6830824515?pt=118326163&ct=iag_visual_en_au&mt=8",
+      "sha256": "89b8dfd04d361202e53f5aa8145d9259391cdcc6e4c0b8394e7296de4c81c44f"
     },
     {
       "locale": "en-AU",
@@ -6362,6 +6461,16 @@
     },
     {
       "locale": "en-CA",
+      "app_key": "kumo",
+      "app_store_id": "6830824515",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/en-CA/kumo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/en-CA/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-CA/kumo.html",
+      "app_store_url": "https://apps.apple.com/ca/app/id6830824515?pt=118326163&ct=iag_visual_en_ca&mt=8",
+      "sha256": "dc45ae9e9d6c84cc1daca2fd30210626261b894e63481aea620798f34a8892ac"
+    },
+    {
+      "locale": "en-CA",
       "app_key": "ledmovingtext",
       "app_store_id": "6806639602",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/en-CA/ledmovingtext.svg",
@@ -6949,6 +7058,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-GB/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
       "app_store_url": "https://apps.apple.com/gb/app/id6754218117?pt=118326163&ct=iag_visual_en_gb&mt=8",
       "sha256": "712c1d3c9890b4c167220d6450284d6b523c86c6386ea0fcc14d7ac2dc906d90"
+    },
+    {
+      "locale": "en-GB",
+      "app_key": "kumo",
+      "app_store_id": "6830824515",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/en-GB/kumo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/en-GB/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-GB/kumo.html",
+      "app_store_url": "https://apps.apple.com/gb/app/id6830824515?pt=118326163&ct=iag_visual_en_gb&mt=8",
+      "sha256": "772af3d96721d23d1a401ad104e942faeb707f9bd530bfcdf88c8011f81f182a"
     },
     {
       "locale": "en-GB",
@@ -7542,6 +7661,16 @@
     },
     {
       "locale": "en-US",
+      "app_key": "kumo",
+      "app_store_id": "6830824515",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/en-US/kumo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/en-US/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-US/kumo.html",
+      "app_store_url": "https://apps.apple.com/us/app/id6830824515?pt=118326163&ct=iag_visual_en_us&mt=8",
+      "sha256": "7fdf5c4b298521276a8d7d3d1414669e36f63a610448e85bcf4b0abbc8216997"
+    },
+    {
+      "locale": "en-US",
       "app_key": "ledmovingtext",
       "app_store_id": "6806639602",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/en-US/ledmovingtext.svg",
@@ -8132,6 +8261,16 @@
     },
     {
       "locale": "es-ES",
+      "app_key": "kumo",
+      "app_store_id": "6830824515",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/es-ES/kumo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/es-ES/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/es-ES/kumo.html",
+      "app_store_url": "https://apps.apple.com/es/app/id6830824515?pt=118326163&ct=iag_visual_es_es&mt=8",
+      "sha256": "2d4ed9955e16c2bfbfa38848fcc128f2e0a79aa131708946d67c27c570d493fd"
+    },
+    {
+      "locale": "es-ES",
       "app_key": "ledmovingtext",
       "app_store_id": "6806639602",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/es-ES/ledmovingtext.svg",
@@ -8448,7 +8587,7 @@
       "gallery_url": "https://open.cait518.cc/ios-app-guide/es-ES/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/es-ES/tripbeecute.html",
       "app_store_url": "https://apps.apple.com/es/app/id6826987407?pt=118326163&ct=iag_visual_es_es&mt=8",
-      "sha256": "2d836fc47470be1213351b15e22678e36fa547a4190ec52f8ef70def7d9e4b12"
+      "sha256": "21fce99acb141f33eed70b9ae09346e057c3b09c08aa8c9961fc144e92a91593"
     },
     {
       "locale": "es-ES",
@@ -8719,6 +8858,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/es-MX/hourstag.html",
       "app_store_url": "https://apps.apple.com/mx/app/id6754218117?pt=118326163&ct=iag_visual_es_mx&mt=8",
       "sha256": "f2b7ba85645f8256b55a1f7288bf685ca2fc9be61a208e9e6e2dd0ec68f268d8"
+    },
+    {
+      "locale": "es-MX",
+      "app_key": "kumo",
+      "app_store_id": "6830824515",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/es-MX/kumo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/es-MX/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/es-MX/kumo.html",
+      "app_store_url": "https://apps.apple.com/mx/app/id6830824515?pt=118326163&ct=iag_visual_es_mx&mt=8",
+      "sha256": "a87d7c5f197aae029ebc59485f719d411d6249c12b4bb68d55656ab4758f4dcd"
     },
     {
       "locale": "es-MX",
@@ -9038,7 +9187,7 @@
       "gallery_url": "https://open.cait518.cc/ios-app-guide/es-MX/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/es-MX/tripbeecute.html",
       "app_store_url": "https://apps.apple.com/mx/app/id6826987407?pt=118326163&ct=iag_visual_es_mx&mt=8",
-      "sha256": "a49ce19070b297dc66d059224b7833f69e73fa504bc34a067fceb3ef86444718"
+      "sha256": "a897f52c844dc410ad720a3f7e4db21fdd8cc91ceadd648f74fb58c5f4834e58"
     },
     {
       "locale": "es-MX",
@@ -9309,6 +9458,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/fi/hourstag.html",
       "app_store_url": "https://apps.apple.com/fi/app/id6754218117?pt=118326163&ct=iag_visual_fi&mt=8",
       "sha256": "7ac74da650dded24802bcb2c949a3796e287d74ecb6ab61e33086b98ba69cc03"
+    },
+    {
+      "locale": "fi",
+      "app_key": "kumo",
+      "app_store_id": "6830824515",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/fi/kumo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/fi/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/fi/kumo.html",
+      "app_store_url": "https://apps.apple.com/fi/app/id6830824515?pt=118326163&ct=iag_visual_fi&mt=8",
+      "sha256": "bf8799fdcedaeafcabcd075b6e0c32f93531bdac1bdd4edb808c74f083665322"
     },
     {
       "locale": "fi",
@@ -9628,7 +9787,7 @@
       "gallery_url": "https://open.cait518.cc/ios-app-guide/fi/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/fi/tripbeecute.html",
       "app_store_url": "https://apps.apple.com/fi/app/id6826987407?pt=118326163&ct=iag_visual_fi&mt=8",
-      "sha256": "ad0f7b9ad3c426a53c1b490f091423788f405b8ddb36dd30f7b1f3fa975d5bad"
+      "sha256": "4c25f60aad07e00aff71d411c1cada3888b325f257383b1d14cd7ac46858ddb8"
     },
     {
       "locale": "fi",
@@ -9899,6 +10058,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/fr-CA/hourstag.html",
       "app_store_url": "https://apps.apple.com/ca/app/id6754218117?pt=118326163&ct=iag_visual_fr_ca&mt=8",
       "sha256": "815990577a9f8f5e4c2783d63024977ad688454f15e4e3e4bd9943742dd9ff97"
+    },
+    {
+      "locale": "fr-CA",
+      "app_key": "kumo",
+      "app_store_id": "6830824515",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/fr-CA/kumo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/fr-CA/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/fr-CA/kumo.html",
+      "app_store_url": "https://apps.apple.com/ca/app/id6830824515?pt=118326163&ct=iag_visual_fr_ca&mt=8",
+      "sha256": "0acedca1cacaea6c82e91e0a2a6c9a72a8fb107db26c7b337b200e70048be654"
     },
     {
       "locale": "fr-CA",
@@ -10218,7 +10387,7 @@
       "gallery_url": "https://open.cait518.cc/ios-app-guide/fr-CA/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/fr-CA/tripbeecute.html",
       "app_store_url": "https://apps.apple.com/ca/app/id6826987407?pt=118326163&ct=iag_visual_fr_ca&mt=8",
-      "sha256": "4d4d58d8f632a9fa2fd8820f580da5217295c0836a87978a3a07d5fc136d837d"
+      "sha256": "d733cd23878799a5062d96c3d5e7034521cbb2a5717e544868ab8ab78834f7a4"
     },
     {
       "locale": "fr-CA",
@@ -10489,6 +10658,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/fr-FR/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
       "app_store_url": "https://apps.apple.com/fr/app/id6754218117?pt=118326163&ct=iag_visual_fr_fr&mt=8",
       "sha256": "1679a2e624bb51b9327e394e789fddcec014d90c25b9b8b13c0256393f6aef59"
+    },
+    {
+      "locale": "fr-FR",
+      "app_key": "kumo",
+      "app_store_id": "6830824515",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/fr-FR/kumo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/fr-FR/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/fr-FR/kumo.html",
+      "app_store_url": "https://apps.apple.com/fr/app/id6830824515?pt=118326163&ct=iag_visual_fr_fr&mt=8",
+      "sha256": "04beab9113ecc5f2ae628886d9b14cb05f390ab47cc5cbf09e4d70d8a30e2e8b"
     },
     {
       "locale": "fr-FR",
@@ -10808,7 +10987,7 @@
       "gallery_url": "https://open.cait518.cc/ios-app-guide/fr-FR/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/fr-FR/tripbeecute.html",
       "app_store_url": "https://apps.apple.com/fr/app/id6826987407?pt=118326163&ct=iag_visual_fr_fr&mt=8",
-      "sha256": "b569f99347c959bc9e0560cc95f4ed87a0a36b80b27f5f171eeb8b2061e567de"
+      "sha256": "e084ec7013f1684ce3018e01c8598afe00e284c15ba3d636124ff54ff44999a2"
     },
     {
       "locale": "fr-FR",
@@ -11079,6 +11258,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/gu-IN/hourstag.html",
       "app_store_url": "https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=iag_visual_gu_in&mt=8",
       "sha256": "6478befc79991ed06b5ec262378e6b6a09895e39e7091b949ac657c4a69597b9"
+    },
+    {
+      "locale": "gu-IN",
+      "app_key": "kumo",
+      "app_store_id": "6830824515",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/gu-IN/kumo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/gu-IN/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/gu-IN/kumo.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6830824515?pt=118326163&ct=iag_visual_gu_in&mt=8",
+      "sha256": "a86bad737465f37754b25f5f0f4bf240b5896ec2377b4c522ed5189465083508"
     },
     {
       "locale": "gu-IN",
@@ -11672,6 +11861,16 @@
     },
     {
       "locale": "he",
+      "app_key": "kumo",
+      "app_store_id": "6830824515",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/he/kumo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/he/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/he/kumo.html",
+      "app_store_url": "https://apps.apple.com/il/app/id6830824515?pt=118326163&ct=iag_visual_he&mt=8",
+      "sha256": "bcc8e8be9c5ba0a6bc372f1c1b48cbd535739d738333536e97473e5097f0cdfa"
+    },
+    {
+      "locale": "he",
       "app_key": "ledmovingtext",
       "app_store_id": "6806639602",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/he/ledmovingtext.svg",
@@ -11988,7 +12187,7 @@
       "gallery_url": "https://open.cait518.cc/ios-app-guide/he/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/he/tripbeecute.html",
       "app_store_url": "https://apps.apple.com/il/app/id6826987407?pt=118326163&ct=iag_visual_he&mt=8",
-      "sha256": "090cef33374a341443611de55d2a1b1f93d26f133dddb32d5ffbf484c1c71377"
+      "sha256": "d1dc20cda46e9436fe779a952b7fef51f9486a35641df7531d6253735603aba6"
     },
     {
       "locale": "he",
@@ -12259,6 +12458,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/hi/hourstag.html",
       "app_store_url": "https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=iag_visual_hi&mt=8",
       "sha256": "3f776fd236ae4facd03d728d843e8cee518852ab986138d225723f2f0b64787f"
+    },
+    {
+      "locale": "hi",
+      "app_key": "kumo",
+      "app_store_id": "6830824515",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/hi/kumo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/hi/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/hi/kumo.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6830824515?pt=118326163&ct=iag_visual_hi&mt=8",
+      "sha256": "2b356c358ae06da0962e9d36f66c5dd864b5259120dd2dc277659c4e37179ab9"
     },
     {
       "locale": "hi",
@@ -12852,6 +13061,16 @@
     },
     {
       "locale": "hr",
+      "app_key": "kumo",
+      "app_store_id": "6830824515",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/hr/kumo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/hr/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/hr/kumo.html",
+      "app_store_url": "https://apps.apple.com/hr/app/id6830824515?pt=118326163&ct=iag_visual_hr&mt=8",
+      "sha256": "f5d9b8f212993627fc38f59fd88312970f84c78b66f6e633439bfeb8354d70c2"
+    },
+    {
+      "locale": "hr",
       "app_key": "ledmovingtext",
       "app_store_id": "6806639602",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/hr/ledmovingtext.svg",
@@ -13168,7 +13387,7 @@
       "gallery_url": "https://open.cait518.cc/ios-app-guide/hr/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/hr/tripbeecute.html",
       "app_store_url": "https://apps.apple.com/hr/app/id6826987407?pt=118326163&ct=iag_visual_hr&mt=8",
-      "sha256": "cdda3eae95255b916600ec803ec80e6d4d83d839ead4850e773fb66823c66af8"
+      "sha256": "39ea372a5672ccf3ca8d2393d280b234264d32b38586792e5b2419714ba53e22"
     },
     {
       "locale": "hr",
@@ -13439,6 +13658,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/hu/hourstag.html",
       "app_store_url": "https://apps.apple.com/hu/app/id6754218117?pt=118326163&ct=iag_visual_hu&mt=8",
       "sha256": "349e901f5e4307e36839f5127a12bbe99af7b2f39da6ec62f912e6ce0518f200"
+    },
+    {
+      "locale": "hu",
+      "app_key": "kumo",
+      "app_store_id": "6830824515",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/hu/kumo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/hu/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/hu/kumo.html",
+      "app_store_url": "https://apps.apple.com/hu/app/id6830824515?pt=118326163&ct=iag_visual_hu&mt=8",
+      "sha256": "1aed8971ae2093a103cf5eb6d99e58516e9b83635775ee698028837ebd35b59f"
     },
     {
       "locale": "hu",
@@ -13758,7 +13987,7 @@
       "gallery_url": "https://open.cait518.cc/ios-app-guide/hu/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/hu/tripbeecute.html",
       "app_store_url": "https://apps.apple.com/hu/app/id6826987407?pt=118326163&ct=iag_visual_hu&mt=8",
-      "sha256": "08c5b0586db104a2e280c22777b1786613da6f867fab73887a87485ac6518c9a"
+      "sha256": "62b8b90acbc4bbb1d12eb14b64749a27a1940151aa8ca4cae24e820a19791eb3"
     },
     {
       "locale": "hu",
@@ -14029,6 +14258,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/id/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
       "app_store_url": "https://apps.apple.com/id/app/id6754218117?pt=118326163&ct=iag_visual_id&mt=8",
       "sha256": "f21c6633c2c13db81770ae86750c64cff85fbfa2413710f2ad0e6ddde102023c"
+    },
+    {
+      "locale": "id",
+      "app_key": "kumo",
+      "app_store_id": "6830824515",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/id/kumo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/id/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/id/kumo.html",
+      "app_store_url": "https://apps.apple.com/id/app/id6830824515?pt=118326163&ct=iag_visual_id&mt=8",
+      "sha256": "22580bedb3eed601289e8a3741a9cb13c33018778d40469ca67da520f97bef2e"
     },
     {
       "locale": "id",
@@ -14348,7 +14587,7 @@
       "gallery_url": "https://open.cait518.cc/ios-app-guide/id/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/id/tripbeecute.html",
       "app_store_url": "https://apps.apple.com/id/app/id6826987407?pt=118326163&ct=iag_visual_id&mt=8",
-      "sha256": "b0b476d87d377a9009b0c456627ad5f084f4a7e6980ff0211efc16dffb6f05e9"
+      "sha256": "856f248a132f8dc8f3d628e720c911149ed11d7ee19b9059630596f541fc078e"
     },
     {
       "locale": "id",
@@ -14619,6 +14858,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/it/hourstag.html",
       "app_store_url": "https://apps.apple.com/it/app/id6754218117?pt=118326163&ct=iag_visual_it&mt=8",
       "sha256": "9d39724362e5418902cec0fb63eae2e494aa22971159a771c9414b34a451f755"
+    },
+    {
+      "locale": "it",
+      "app_key": "kumo",
+      "app_store_id": "6830824515",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/it/kumo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/it/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/it/kumo.html",
+      "app_store_url": "https://apps.apple.com/it/app/id6830824515?pt=118326163&ct=iag_visual_it&mt=8",
+      "sha256": "12ef342cd5e184ff2756d7ad7ffb4922bc750cd254fa254cf93dd16b6bb8fa74"
     },
     {
       "locale": "it",
@@ -14938,7 +15187,7 @@
       "gallery_url": "https://open.cait518.cc/ios-app-guide/it/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/it/tripbeecute.html",
       "app_store_url": "https://apps.apple.com/it/app/id6826987407?pt=118326163&ct=iag_visual_it&mt=8",
-      "sha256": "a31d9b4cd1ae2dcd5c3f983fe3af6dcc70887f74fa442db7370d35eb9d356d9e"
+      "sha256": "727117ef1216964d9ad0c3c6d30f9c6bc0dd25586af7dd075e535ceb25cbeb2d"
     },
     {
       "locale": "it",
@@ -15209,6 +15458,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ja/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
       "app_store_url": "https://apps.apple.com/jp/app/id6754218117?pt=118326163&ct=iag_visual_ja&mt=8",
       "sha256": "cba55dbdb33441fcef11e0c662f9e7fe96a8191bf0e680500969ff7ae469c7fc"
+    },
+    {
+      "locale": "ja",
+      "app_key": "kumo",
+      "app_store_id": "6830824515",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ja/kumo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ja/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ja/kumo.html",
+      "app_store_url": "https://apps.apple.com/jp/app/id6830824515?pt=118326163&ct=iag_visual_ja&mt=8",
+      "sha256": "54e0da4f4181ff796b77290e986b11fbfbf9340ea5f9a6c8ced0166c785dca1d"
     },
     {
       "locale": "ja",
@@ -15528,7 +15787,7 @@
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ja/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ja/tripbeecute.html",
       "app_store_url": "https://apps.apple.com/jp/app/id6826987407?pt=118326163&ct=iag_visual_ja&mt=8",
-      "sha256": "9015443dcfc27917dff899ceb62e41e725aba6087234835dccc967045cca7ea4"
+      "sha256": "ada9bbca793e435e20b368e1cbe95a68a0cff4cf5a40ca2b8dc0d6bd95caf48d"
     },
     {
       "locale": "ja",
@@ -15799,6 +16058,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/kn-IN/hourstag.html",
       "app_store_url": "https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=iag_visual_kn_in&mt=8",
       "sha256": "74dac9c0c20fcd3b56635b4b5bd7f37ffbe4e4e6b1c1c6ef086a1b2dbdecf7f5"
+    },
+    {
+      "locale": "kn-IN",
+      "app_key": "kumo",
+      "app_store_id": "6830824515",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/kn-IN/kumo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/kn-IN/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/kn-IN/kumo.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6830824515?pt=118326163&ct=iag_visual_kn_in&mt=8",
+      "sha256": "050730bea5c8c86c3c8938fcb8d031d9f0e9c4dce5c782285bfc3c3206f75684"
     },
     {
       "locale": "kn-IN",
@@ -16392,6 +16661,16 @@
     },
     {
       "locale": "ko",
+      "app_key": "kumo",
+      "app_store_id": "6830824515",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ko/kumo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ko/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ko/kumo.html",
+      "app_store_url": "https://apps.apple.com/kr/app/id6830824515?pt=118326163&ct=iag_visual_ko&mt=8",
+      "sha256": "6d9c888006fd30e625ad5d29008bccda5d42fc80dadb1192affa311edbad5263"
+    },
+    {
+      "locale": "ko",
       "app_key": "ledmovingtext",
       "app_store_id": "6806639602",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ko/ledmovingtext.svg",
@@ -16708,7 +16987,7 @@
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ko/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ko/tripbeecute.html",
       "app_store_url": "https://apps.apple.com/kr/app/id6826987407?pt=118326163&ct=iag_visual_ko&mt=8",
-      "sha256": "dadbd3f49d64ddd79847bc8e853157d78341a54630aa11c5fc4709ae2aacf028"
+      "sha256": "686905cb93cb45172f7b48bcd18ed2b07a64f65db487523f30d4a574a9dc7830"
     },
     {
       "locale": "ko",
@@ -16979,6 +17258,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ml-IN/hourstag.html",
       "app_store_url": "https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=iag_visual_ml_in&mt=8",
       "sha256": "7d209011cb655e3c3cf709b38bee7f45bd24469d17abf0c36865b3e4d3953a26"
+    },
+    {
+      "locale": "ml-IN",
+      "app_key": "kumo",
+      "app_store_id": "6830824515",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ml-IN/kumo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ml-IN/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ml-IN/kumo.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6830824515?pt=118326163&ct=iag_visual_ml_in&mt=8",
+      "sha256": "b93e74b3d55c1af66557ef18e607d65451594d4897cc1379517b6cf4042c3dbe"
     },
     {
       "locale": "ml-IN",
@@ -17572,6 +17861,16 @@
     },
     {
       "locale": "mr-IN",
+      "app_key": "kumo",
+      "app_store_id": "6830824515",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/mr-IN/kumo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/mr-IN/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/mr-IN/kumo.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6830824515?pt=118326163&ct=iag_visual_mr_in&mt=8",
+      "sha256": "7c77ab584b7c1c073bb18ccb96836c1ea2d701e9cd6ecc485bd0905d17dcdf48"
+    },
+    {
+      "locale": "mr-IN",
       "app_key": "ledmovingtext",
       "app_store_id": "6806639602",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/mr-IN/ledmovingtext.svg",
@@ -18162,6 +18461,16 @@
     },
     {
       "locale": "ms",
+      "app_key": "kumo",
+      "app_store_id": "6830824515",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ms/kumo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ms/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ms/kumo.html",
+      "app_store_url": "https://apps.apple.com/my/app/id6830824515?pt=118326163&ct=iag_visual_ms&mt=8",
+      "sha256": "cf059315db4e768c2fafd0cd86432c73d0acc361e4a5a4f5a57443e624437ab3"
+    },
+    {
+      "locale": "ms",
       "app_key": "ledmovingtext",
       "app_store_id": "6806639602",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ms/ledmovingtext.svg",
@@ -18478,7 +18787,7 @@
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ms/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ms/tripbeecute.html",
       "app_store_url": "https://apps.apple.com/my/app/id6826987407?pt=118326163&ct=iag_visual_ms&mt=8",
-      "sha256": "bcf4c22d04150f979ac9fb2f43bc040ab840564f06871d72001b7653f562176d"
+      "sha256": "683874cdc9810781d17eeb7782892ccfcaac629b8164842d0a32f27a32038acd"
     },
     {
       "locale": "ms",
@@ -18749,6 +19058,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/hourstag.html",
       "app_store_url": "https://apps.apple.com/nl/app/id6754218117?pt=118326163&ct=iag_visual_nl_nl&mt=8",
       "sha256": "ca6d1eb340d24faa61fe8798921006d85343daba0ac29d3a1b1d58ae7f1f0b8d"
+    },
+    {
+      "locale": "nl-NL",
+      "app_key": "kumo",
+      "app_store_id": "6830824515",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/nl-NL/kumo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/nl-NL/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/kumo.html",
+      "app_store_url": "https://apps.apple.com/nl/app/id6830824515?pt=118326163&ct=iag_visual_nl_nl&mt=8",
+      "sha256": "9376e94000d6140bab4987821627cfbc8f438b4199393e6cff427a0a8a758bd4"
     },
     {
       "locale": "nl-NL",
@@ -19068,7 +19387,7 @@
       "gallery_url": "https://open.cait518.cc/ios-app-guide/nl-NL/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/tripbeecute.html",
       "app_store_url": "https://apps.apple.com/nl/app/id6826987407?pt=118326163&ct=iag_visual_nl_nl&mt=8",
-      "sha256": "8a203e40261d977e3f334eb822f01d6f5a3f70816cd053044f78b0897afd8739"
+      "sha256": "e207b2bb755f2d2bb497dd23375a586a125922ecbd0996ce9d9a9d93631008a1"
     },
     {
       "locale": "nl-NL",
@@ -19339,6 +19658,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/no/hourstag.html",
       "app_store_url": "https://apps.apple.com/no/app/id6754218117?pt=118326163&ct=iag_visual_no&mt=8",
       "sha256": "091e99f24405833e9d30c44ffa5c425b9ae16cb0c6c380750c58c7d7b9d8d10f"
+    },
+    {
+      "locale": "no",
+      "app_key": "kumo",
+      "app_store_id": "6830824515",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/no/kumo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/no/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/no/kumo.html",
+      "app_store_url": "https://apps.apple.com/no/app/id6830824515?pt=118326163&ct=iag_visual_no&mt=8",
+      "sha256": "1fced849d4f98d691aeb4891659994fedf64f4622a1c9759fcc3965113a2457e"
     },
     {
       "locale": "no",
@@ -19658,7 +19987,7 @@
       "gallery_url": "https://open.cait518.cc/ios-app-guide/no/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/no/tripbeecute.html",
       "app_store_url": "https://apps.apple.com/no/app/id6826987407?pt=118326163&ct=iag_visual_no&mt=8",
-      "sha256": "813df14c7e4b7ed2d6cdcffff7deb3fd1f14b1cdf42bbb7f39f8af3d062836d4"
+      "sha256": "fab027842372cce40c5e5c00f1c4a4ea08118e15518f0dac3faf39de1e403d35"
     },
     {
       "locale": "no",
@@ -19929,6 +20258,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/or-IN/hourstag.html",
       "app_store_url": "https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=iag_visual_or_in&mt=8",
       "sha256": "5cd0a00c508ca95c0862533667d89f8239c0cf00513cd0479c0ceaa08aed54db"
+    },
+    {
+      "locale": "or-IN",
+      "app_key": "kumo",
+      "app_store_id": "6830824515",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/or-IN/kumo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/or-IN/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/or-IN/kumo.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6830824515?pt=118326163&ct=iag_visual_or_in&mt=8",
+      "sha256": "e2c82ac245d0c6ca41b8bbe9a7f181df0682abd6525475bee1c4c86693479603"
     },
     {
       "locale": "or-IN",
@@ -20522,6 +20861,16 @@
     },
     {
       "locale": "pa-IN",
+      "app_key": "kumo",
+      "app_store_id": "6830824515",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/pa-IN/kumo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/pa-IN/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/pa-IN/kumo.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6830824515?pt=118326163&ct=iag_visual_pa_in&mt=8",
+      "sha256": "43309c6081decbfacae4558678aec62926444e41bc8b59c7f4ee783c86a64e1f"
+    },
+    {
+      "locale": "pa-IN",
       "app_key": "ledmovingtext",
       "app_store_id": "6806639602",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/pa-IN/ledmovingtext.svg",
@@ -21112,6 +21461,16 @@
     },
     {
       "locale": "pl",
+      "app_key": "kumo",
+      "app_store_id": "6830824515",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/pl/kumo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/pl/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/pl/kumo.html",
+      "app_store_url": "https://apps.apple.com/pl/app/id6830824515?pt=118326163&ct=iag_visual_pl&mt=8",
+      "sha256": "0e68b09df43f0ce81b67b4ad9c7ced099c8f9884213144d6ecca13cbbb3e4b53"
+    },
+    {
+      "locale": "pl",
       "app_key": "ledmovingtext",
       "app_store_id": "6806639602",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/pl/ledmovingtext.svg",
@@ -21428,7 +21787,7 @@
       "gallery_url": "https://open.cait518.cc/ios-app-guide/pl/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/pl/tripbeecute.html",
       "app_store_url": "https://apps.apple.com/pl/app/id6826987407?pt=118326163&ct=iag_visual_pl&mt=8",
-      "sha256": "1faf2a2319aa55a1ecb0f9cfbe49e55f1093dd7a8f7e9c5033d6e7dffdf7ab89"
+      "sha256": "dc37f01946914caa899b9d93e7f194de43cb97ad29173f6833717587fe58e28f"
     },
     {
       "locale": "pl",
@@ -21699,6 +22058,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/pt-BR/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
       "app_store_url": "https://apps.apple.com/br/app/id6754218117?pt=118326163&ct=iag_visual_pt_br&mt=8",
       "sha256": "b98ef179338170eb4ae35ed1f6b32652237ebfaa6f929ef483a4769ff7618904"
+    },
+    {
+      "locale": "pt-BR",
+      "app_key": "kumo",
+      "app_store_id": "6830824515",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/pt-BR/kumo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/pt-BR/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/pt-BR/kumo.html",
+      "app_store_url": "https://apps.apple.com/br/app/id6830824515?pt=118326163&ct=iag_visual_pt_br&mt=8",
+      "sha256": "8a6ef010b8eede3e89cc9f18e38790e7bf8eba8304facce2ccb2a9b35aba19bc"
     },
     {
       "locale": "pt-BR",
@@ -22292,6 +22661,16 @@
     },
     {
       "locale": "pt-PT",
+      "app_key": "kumo",
+      "app_store_id": "6830824515",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/pt-PT/kumo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/pt-PT/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/pt-PT/kumo.html",
+      "app_store_url": "https://apps.apple.com/pt/app/id6830824515?pt=118326163&ct=iag_visual_pt_pt&mt=8",
+      "sha256": "311779e3768d3c10ff53a723f585620e1466f0baf3e8ac7f1e0532ec7b532950"
+    },
+    {
+      "locale": "pt-PT",
       "app_key": "ledmovingtext",
       "app_store_id": "6806639602",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/pt-PT/ledmovingtext.svg",
@@ -22608,7 +22987,7 @@
       "gallery_url": "https://open.cait518.cc/ios-app-guide/pt-PT/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/pt-PT/tripbeecute.html",
       "app_store_url": "https://apps.apple.com/pt/app/id6826987407?pt=118326163&ct=iag_visual_pt_pt&mt=8",
-      "sha256": "e44f6bcf4b9900f2ce6daf4a55e19e4b709253b6910f8f898e9d2fe2fa99af08"
+      "sha256": "30940a8ba71f7b03eef68c28a6bff9e87a0ee8f28707d6e0aa98940601e14c19"
     },
     {
       "locale": "pt-PT",
@@ -22879,6 +23258,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ro/hourstag.html",
       "app_store_url": "https://apps.apple.com/ro/app/id6754218117?pt=118326163&ct=iag_visual_ro&mt=8",
       "sha256": "c21f58d26cec6d9c5a04d210db1639268131ee1a54e393b35613012716740013"
+    },
+    {
+      "locale": "ro",
+      "app_key": "kumo",
+      "app_store_id": "6830824515",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ro/kumo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ro/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ro/kumo.html",
+      "app_store_url": "https://apps.apple.com/ro/app/id6830824515?pt=118326163&ct=iag_visual_ro&mt=8",
+      "sha256": "aab1b603189e1cd3f64a505a20ec349d84f084acba7585444598147cbbb2abc8"
     },
     {
       "locale": "ro",
@@ -23198,7 +23587,7 @@
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ro/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ro/tripbeecute.html",
       "app_store_url": "https://apps.apple.com/ro/app/id6826987407?pt=118326163&ct=iag_visual_ro&mt=8",
-      "sha256": "6d48f7ff591ffc5254f6d52341aebf6fda122015fa89424e7ab3e789004934d0"
+      "sha256": "d7c8963a56562234d3d6e623b95cffc1b66dd7dd45f736d98d79ea6a69e622d2"
     },
     {
       "locale": "ro",
@@ -23469,6 +23858,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ru/hourstag.html",
       "app_store_url": "https://apps.apple.com/ru/app/id6754218117?pt=118326163&ct=iag_visual_ru&mt=8",
       "sha256": "a50b292370517b9d50b369ae93584c83926cb60ae0718782667ec8cd35efc10c"
+    },
+    {
+      "locale": "ru",
+      "app_key": "kumo",
+      "app_store_id": "6830824515",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ru/kumo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ru/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ru/kumo.html",
+      "app_store_url": "https://apps.apple.com/ru/app/id6830824515?pt=118326163&ct=iag_visual_ru&mt=8",
+      "sha256": "5fa7d6e7227d3d70eb965324d744fd687f48ee5285b7e67a4ab5a276fe4c33fb"
     },
     {
       "locale": "ru",
@@ -23788,7 +24187,7 @@
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ru/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ru/tripbeecute.html",
       "app_store_url": "https://apps.apple.com/ru/app/id6826987407?pt=118326163&ct=iag_visual_ru&mt=8",
-      "sha256": "6f80ef8724111cdb1f58020c140b58a8079d8546aec77d3341ba836054b94f8a"
+      "sha256": "e395a1fe46808c0ee076ea3036375dfcd3e4941bceb15392b3f1d77094b71992"
     },
     {
       "locale": "ru",
@@ -24059,6 +24458,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/sk/hourstag.html",
       "app_store_url": "https://apps.apple.com/sk/app/id6754218117?pt=118326163&ct=iag_visual_sk&mt=8",
       "sha256": "49189817d625c9c175fddd8a612ed9a1a302e380f9eddd04f21952424c4423ed"
+    },
+    {
+      "locale": "sk",
+      "app_key": "kumo",
+      "app_store_id": "6830824515",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/sk/kumo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/sk/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/sk/kumo.html",
+      "app_store_url": "https://apps.apple.com/sk/app/id6830824515?pt=118326163&ct=iag_visual_sk&mt=8",
+      "sha256": "48b40202af1a48bc399df485e798ccded45c6fa3a715b04d3ea7bf04222e73ae"
     },
     {
       "locale": "sk",
@@ -24378,7 +24787,7 @@
       "gallery_url": "https://open.cait518.cc/ios-app-guide/sk/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/sk/tripbeecute.html",
       "app_store_url": "https://apps.apple.com/sk/app/id6826987407?pt=118326163&ct=iag_visual_sk&mt=8",
-      "sha256": "7ef823fe599e76a4291420f331b5c756302d80aea81a1d249666a3a36aae5112"
+      "sha256": "84c9022df4ff350c48f5d6bea3b2b72dcaaf2b5ae974742686226205229e59c0"
     },
     {
       "locale": "sk",
@@ -24649,6 +25058,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/sl-SI/hourstag.html",
       "app_store_url": "https://apps.apple.com/si/app/id6754218117?pt=118326163&ct=iag_visual_sl_si&mt=8",
       "sha256": "0686581abde89057c9c8c71d620770a6cd516608bc39e943c5c56f0ce0502cab"
+    },
+    {
+      "locale": "sl-SI",
+      "app_key": "kumo",
+      "app_store_id": "6830824515",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/sl-SI/kumo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/sl-SI/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/sl-SI/kumo.html",
+      "app_store_url": "https://apps.apple.com/si/app/id6830824515?pt=118326163&ct=iag_visual_sl_si&mt=8",
+      "sha256": "541b0b6a2fb51c684df2da71a7a3dc1e32c3341256fa00ce2c05e0920f27bb29"
     },
     {
       "locale": "sl-SI",
@@ -25242,6 +25661,16 @@
     },
     {
       "locale": "sv",
+      "app_key": "kumo",
+      "app_store_id": "6830824515",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/sv/kumo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/sv/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/sv/kumo.html",
+      "app_store_url": "https://apps.apple.com/se/app/id6830824515?pt=118326163&ct=iag_visual_sv&mt=8",
+      "sha256": "14cf99cd700486f1b875cfbff3734f3bc3160559bc6700c481b99cbd9d70aa71"
+    },
+    {
+      "locale": "sv",
       "app_key": "ledmovingtext",
       "app_store_id": "6806639602",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/sv/ledmovingtext.svg",
@@ -25558,7 +25987,7 @@
       "gallery_url": "https://open.cait518.cc/ios-app-guide/sv/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/sv/tripbeecute.html",
       "app_store_url": "https://apps.apple.com/se/app/id6826987407?pt=118326163&ct=iag_visual_sv&mt=8",
-      "sha256": "fb487c01e4d5b021be1f5ea3721aeb0b4bbc6475e98398992c996f1fc5c1131e"
+      "sha256": "a48bc7195d467e9da2da84a20fa173ea498b7f2908f3db945889aaec1a9603e8"
     },
     {
       "locale": "sv",
@@ -25829,6 +26258,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ta-IN/hourstag.html",
       "app_store_url": "https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=iag_visual_ta_in&mt=8",
       "sha256": "386a8fdf6583e258aefd658cfe632c89f453fc8df66b5563153d926cba632ef2"
+    },
+    {
+      "locale": "ta-IN",
+      "app_key": "kumo",
+      "app_store_id": "6830824515",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ta-IN/kumo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ta-IN/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ta-IN/kumo.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6830824515?pt=118326163&ct=iag_visual_ta_in&mt=8",
+      "sha256": "073bf9c16da180e92a7874e52f0bd1bcac4c14b934cfc3d9c346b8f72efd7293"
     },
     {
       "locale": "ta-IN",
@@ -26422,6 +26861,16 @@
     },
     {
       "locale": "te-IN",
+      "app_key": "kumo",
+      "app_store_id": "6830824515",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/te-IN/kumo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/te-IN/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/te-IN/kumo.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6830824515?pt=118326163&ct=iag_visual_te_in&mt=8",
+      "sha256": "cc331144214d5e00a937b126379a148e5674fb8cd40c45831cb6016b33a2af31"
+    },
+    {
+      "locale": "te-IN",
       "app_key": "ledmovingtext",
       "app_store_id": "6806639602",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/te-IN/ledmovingtext.svg",
@@ -27012,6 +27461,16 @@
     },
     {
       "locale": "th",
+      "app_key": "kumo",
+      "app_store_id": "6830824515",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/th/kumo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/th/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/th/kumo.html",
+      "app_store_url": "https://apps.apple.com/th/app/id6830824515?pt=118326163&ct=iag_visual_th&mt=8",
+      "sha256": "0883488c3a2fc00fd3eb4bfbf1ac0bcfc5e6b8cc029353c922ce6dfc4b66dfd6"
+    },
+    {
+      "locale": "th",
       "app_key": "ledmovingtext",
       "app_store_id": "6806639602",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/th/ledmovingtext.svg",
@@ -27328,7 +27787,7 @@
       "gallery_url": "https://open.cait518.cc/ios-app-guide/th/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/th/tripbeecute.html",
       "app_store_url": "https://apps.apple.com/th/app/id6826987407?pt=118326163&ct=iag_visual_th&mt=8",
-      "sha256": "4218147762dd0237a2589b69b3d9957709f1ff269d849dfc26ff5ba222237ee5"
+      "sha256": "81a946147900c83d3b0db7f5815e27feb30086050593e6dc89efcc3352758493"
     },
     {
       "locale": "th",
@@ -27599,6 +28058,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/tr/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
       "app_store_url": "https://apps.apple.com/tr/app/id6754218117?pt=118326163&ct=iag_visual_tr&mt=8",
       "sha256": "f71b5b91491f9a6b987d98e86ff4f805dff11c0852ce15e4273d73ce9078563b"
+    },
+    {
+      "locale": "tr",
+      "app_key": "kumo",
+      "app_store_id": "6830824515",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/tr/kumo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/tr/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/tr/kumo.html",
+      "app_store_url": "https://apps.apple.com/tr/app/id6830824515?pt=118326163&ct=iag_visual_tr&mt=8",
+      "sha256": "14c76a150529c450188920499c2235dfa93b2406f1eef16f18582be03015f3ab"
     },
     {
       "locale": "tr",
@@ -27918,7 +28387,7 @@
       "gallery_url": "https://open.cait518.cc/ios-app-guide/tr/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/tr/tripbeecute.html",
       "app_store_url": "https://apps.apple.com/tr/app/id6826987407?pt=118326163&ct=iag_visual_tr&mt=8",
-      "sha256": "00728fb9dbfc8bbc7b9a81a355e942b10a9ad57aebba18711393bef88dbc46c7"
+      "sha256": "1ec63b521d62d9df160214f502a25c47f847fcf80ebd55bd5ecb2db08ea16b6c"
     },
     {
       "locale": "tr",
@@ -28189,6 +28658,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/uk/hourstag.html",
       "app_store_url": "https://apps.apple.com/ua/app/id6754218117?pt=118326163&ct=iag_visual_uk&mt=8",
       "sha256": "2d6d154896a54237e2a0e594a0fd99c837cbd76e59ee88950a24b2aca3df8cd1"
+    },
+    {
+      "locale": "uk",
+      "app_key": "kumo",
+      "app_store_id": "6830824515",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/uk/kumo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/uk/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/uk/kumo.html",
+      "app_store_url": "https://apps.apple.com/ua/app/id6830824515?pt=118326163&ct=iag_visual_uk&mt=8",
+      "sha256": "501c45c6eef88f6f1792763d01713ec9ddb2441f4e6916d88ee87a19ee0faa32"
     },
     {
       "locale": "uk",
@@ -28508,7 +28987,7 @@
       "gallery_url": "https://open.cait518.cc/ios-app-guide/uk/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/uk/tripbeecute.html",
       "app_store_url": "https://apps.apple.com/ua/app/id6826987407?pt=118326163&ct=iag_visual_uk&mt=8",
-      "sha256": "9adc74c88c70abfe6286366ba3daa8b85d8017429709eec0e666d19b078dad99"
+      "sha256": "95f4d1d9f42c56f9b22f74f2cb25687318c104c362350dff9da77586b1d369c8"
     },
     {
       "locale": "uk",
@@ -28779,6 +29258,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ur-PK/hourstag.html",
       "app_store_url": "https://apps.apple.com/pk/app/id6754218117?pt=118326163&ct=iag_visual_ur_pk&mt=8",
       "sha256": "059e894f2e05eae92c75d44861f618dc47ecd3a3a27fb1e13b5085f0e2250241"
+    },
+    {
+      "locale": "ur-PK",
+      "app_key": "kumo",
+      "app_store_id": "6830824515",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ur-PK/kumo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ur-PK/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ur-PK/kumo.html",
+      "app_store_url": "https://apps.apple.com/pk/app/id6830824515?pt=118326163&ct=iag_visual_ur_pk&mt=8",
+      "sha256": "3fef161c87cb26c40a678e8797f959372f9c60cb8c25659d8ac095deedda6ddf"
     },
     {
       "locale": "ur-PK",
@@ -29372,6 +29861,16 @@
     },
     {
       "locale": "vi",
+      "app_key": "kumo",
+      "app_store_id": "6830824515",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/vi/kumo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/vi/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/vi/kumo.html",
+      "app_store_url": "https://apps.apple.com/vn/app/id6830824515?pt=118326163&ct=iag_visual_vi&mt=8",
+      "sha256": "e67d30e97316883ce627a4b0d821807ce89884997b9f4590b621aa124d0074ab"
+    },
+    {
+      "locale": "vi",
       "app_key": "ledmovingtext",
       "app_store_id": "6806639602",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/vi/ledmovingtext.svg",
@@ -29688,7 +30187,7 @@
       "gallery_url": "https://open.cait518.cc/ios-app-guide/vi/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/vi/tripbeecute.html",
       "app_store_url": "https://apps.apple.com/vn/app/id6826987407?pt=118326163&ct=iag_visual_vi&mt=8",
-      "sha256": "d87bb864f0fbf5cf8a328dae5dad609eecc03ae15a7248c3d8b64934b21c467b"
+      "sha256": "4c3b6401bfec6cfa40a7585f27bce54eb2b539ccc4ccefe13b66138a4c17001b"
     },
     {
       "locale": "vi",
@@ -29959,6 +30458,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/hourstag.html",
       "app_store_url": "https://apps.apple.com/cn/app/id6754218117?pt=118326163&ct=iag_visual_zh_hans&mt=8",
       "sha256": "6ef4ab40f1c22b13348a330b9a9cbf6388369cb976f5b536f010d69f84a20946"
+    },
+    {
+      "locale": "zh-Hans",
+      "app_key": "kumo",
+      "app_store_id": "6830824515",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/zh-Hans/kumo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/kumo.html",
+      "app_store_url": "https://apps.apple.com/cn/app/id6830824515?pt=118326163&ct=iag_visual_zh_hans&mt=8",
+      "sha256": "3c08e25ade3946d43a631ccdaffbb78939164a8bfc41bc5a3d1749ec97699af3"
     },
     {
       "locale": "zh-Hans",
@@ -30373,7 +30882,7 @@
       "gallery_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/tripbeecute.html",
       "app_store_url": "https://apps.apple.com/cn/app/id6826987407?pt=118326163&ct=iag_visual_zh_hans&mt=8",
-      "sha256": "1c1c087f7607039f55bd769990caecfc6a835aaa1d209277db8fdf3361d23f7f"
+      "sha256": "bde3e87e6617c9ecbd0f6110a9970cff7a09bc3a03f5765dc8c1eccb5aceb705"
     },
     {
       "locale": "zh-Hans",
@@ -30644,6 +31153,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
       "app_store_url": "https://apps.apple.com/tw/app/id6754218117?pt=118326163&ct=iag_visual_zh_hant&mt=8",
       "sha256": "921a5e52617b74e1d62a09d0e4a1055ac2f245b4bcd48547c2f440e99e52624a"
+    },
+    {
+      "locale": "zh-Hant",
+      "app_key": "kumo",
+      "app_store_id": "6830824515",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/zh-Hant/kumo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/kumo.html",
+      "app_store_url": "https://apps.apple.com/tw/app/id6830824515?pt=118326163&ct=iag_visual_zh_hant&mt=8",
+      "sha256": "2029662ea735c5e76941139cd5889f85158a98c58ce8d59cb777a93aa5116def"
     },
     {
       "locale": "zh-Hant",

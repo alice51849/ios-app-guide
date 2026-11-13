@@ -74,13 +74,13 @@
       "uniqueItems": true
     },
     "app_count": {
-      "const": 59
+      "const": 60
     },
     "locale_count": {
       "const": 50
     },
     "record_count": {
-      "const": 2950
+      "const": 3000
     },
     "locales": {
       "type": "array",
@@ -223,8 +223,8 @@
     },
     "records": {
       "type": "array",
-      "minItems": 2950,
-      "maxItems": 2950,
+      "minItems": 3000,
+      "maxItems": 3000,
       "items": {
         "$ref": "#/$defs/record"
       }
@@ -373,6 +373,7 @@
             "gmoneylite",
             "hourstag",
             "hourstaglite",
+            "kumo",
             "ledmovingtext",
             "lockhour",
             "lumibopomofo",

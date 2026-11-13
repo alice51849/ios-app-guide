@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "de-DE",
-  "dateModified": "2026-11-12",
-  "content_digest": "7de1d37867a442524f0f71b12bc9215167c94decafe68fe7795797e73ca1646a",
-  "generation_digest": "4dbd71535e18ea34767ec4fa1071e32a770d503fca2637533a63df4a1fcbb11d",
+  "dateModified": "2026-11-13",
+  "content_digest": "d9c773c2562d52039903cf822e8ef7778090b22f1afda56ded04af6f7e8d4ca6",
+  "generation_digest": "f5f987bd60677ddb93fca5761c3080eab8bd40202e8756edcc2f8e99e8103264",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 59,
+  "record_count": 60,
   "syndication": {
     "atom": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/de-DE.atom.xml",
     "rss": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/de-DE.rss.xml",
@@ -361,10 +361,10 @@
       "record_id": "de-DE:battai",
       "locale": "de-DE",
       "app_key": "battai",
-      "app_name": "BattAI: Batteriezustandswert",
+      "app_name": "BattAI: Akku- & Batterie-Check",
       "priority_rank": null,
       "priority_group": "baseline_coverage",
-      "publisher_query": "BattAI: Batteriezustandswert — Gesundheit, Widget & Ladealarm | iOS App",
+      "publisher_query": "BattAI: Akku- & Batterie-Check — Gesundheit, Widget & Ladealarm | iOS App",
       "decision_context": "Optimiert für das iPhone Duo. Die mit dem neuesten SDK entwickelte App füllt das gesamte innere Display und passt das Layout automatisch an, egal ob zugeklappt oder aufgeklappt. Bewerte deinen Akkuzustand mit einem Score und sieh den Verlauf. Lass dich warnen, wenn der Akku voll, leer oder heiß ist. Exportiere einen Verkaufsbericht, bevor du dein Handy verkaufst. Die Einstellungen zeigen nur die heutige Maximalkapazität, nicht ihren Verlauf. BattAI ist ein laufender Akku-Check: Die App erfasst Ladestand, Laden und Wärme im Alltag und macht daraus Score, Ladeeinblicke, Verlauf und Berichte. SO FUNKTIONIERT DER PREIS • Alle Funktionen sind 24 Stunden lang kostenlos. • Danach bleiben die Akku-Karte (Stand und Ladezustand) sowie die Hinweise bei vollem und niedrigem Akku und Hitze kostenlos. • Score, Laden, Verlauf, Berichte, Widgets und Apple-Watch-Analyse schaltest du mit einem Kauf frei. Kein Abo, keine automatischen Abbuchungen. AKKUZUSTAND-SCORE • Score von 0–100 in fünf Stufen: Ausgezeichnet, Gut, Ordentlich, Braucht Pflege, Service prüfen • Was den Wert prägt: Kapazität 40%, Ladezyklen 25%, Gerätealter 10%, Wärme 10%, Ladegewohnheiten 15%; der wichtigste Faktor wird hervorgehoben • Gib die Maximalkapazität aus Einstellungen › Akku ein und du erhältst sofort deinen Score. BattAI kann sie nicht selbst lesen. MAXIMALKAPAZITÄT IM VERLAUF • Werte zur Maximalkapazität als Diagramm mit 95%-Konfidenzbereich • Monatliche Änderung, wenn deine Werte mindestens 30 Tage auseinanderliegen LADESCHONUNG • Jeder Ladevorgang bekommt 0–100 Punkte nach Start- und Endstand, Laderate, Zeit bei 100% u. a. • Ladebereich (z. B. 30% → 88%), Dauer und Laderate: Langsam, Typisch, Schnell, Sehr schnell • Ladegewohnheiten einzeln bewertet (Entladetiefe, Ladegrenze, Laden über Nacht, Wärme beim Laden, Häufigkeit), mit Tipps wie 80–90% BATTERIE-HINWEISE (KOSTENLOS) • Ladealarm bei 80%, 90% oder 100% • Hinweis bei wenig Akku: 10%, 20% oder 30% • Hitzehinweis bei heißem Handy VERBRAUCH UND WÄRME • Verbrauch je Stunde, um schnellen Verbrauch zu erkennen • Gerätewärme der letzten 7 Tage BERICHTE UND EXPORT • Verkaufsbericht: eine Seite für Käufer, mit Quelle jedes Werts und Schritten zur Prüfung der Maximalkapazität • Vollständiger Bericht als PDF oder PNG; Messwerte als CSV oder JSON • In den ersten Tagen ist der Bericht als Vorschau markiert und füllt sich mit mehr Messwerten WIDGETS, APPLE WATCH UND KURZBEFEHLE • Widgets für Home- und Sperrbildschirm: Score, Akkustand, heutiger Verbrauch • Uhr-App und Komplikationen: Akkustand und Score deines iPhones am Handgelenk • Kurzbefehle: Score abfragen oder beim Ein- und Ausstecken einen Messwert hinzufügen IPAD • Auf dem iPad funktionieren Akkustand, Laden, Verbrauch, Wärme, Hinweise, Berichte und Widgets wie auf dem iPhone. Die meisten iPads zeigen die Maximalkapazität nicht in den Einstellungen, daher braucht der Score hier einen Wert, den du eingibst. IMPORT UND DATENSCHUTZ • Maximalkapazität und Ladezyklen aus den Analysedaten des Systems importieren oder selbst eingeben. Gelesen werden nur Ladezyklen, Nennladekapazität und Designkapazität. • Kein Konto, keine Analyse, kein Tracking, keine Drittanbieter-SDKs, keine Netzwerkanfragen. Daten bleiben auf diesem Gerät, nur ein minimaler Snapshot geht an die Uhr. Alle Daten jederzeit löschbar. QUELLEN UND GRENZEN Öffentliche System-APIs liefern nur Ladestand, Ladezustand, Stromsparmodus, Wärmezustand des Geräts und Uhrzeit; Maximalkapazität und Ladezyklen stammen von dir oder aus einer importierten Datei. Wärme meint das ganze Gerät, nicht die Akkutemperatur. Scores sind berechnet, keine offiziellen Herstellerwerte und kein Versprechen zur Akkulaufzeit. Verbrauch und Wärme erscheinen nach den ersten Messwerten, Ladeeinblicke nach der ersten vollen Ladung, der Verlauf füllt sich in den ersten Tagen. Das System plant Hintergrundprüfungen, daher können Hinweise variieren.",
       "category": "utility",
       "category_label": "Mehr",
@@ -397,7 +397,7 @@
       "app_store_id": "6802423998",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802423998",
       "app_store_url": "https://apps.apple.com/de/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
-      "app_store_cta_label": "BattAI: Batteriezustandswert im App Store laden",
+      "app_store_cta_label": "BattAI: Akku- & Batterie-Check im App Store laden",
       "storefront_facts": {
         "price": "0",
         "currency": "EUR",
@@ -1179,6 +1179,67 @@
       "publisher_disclosure": "Ein vom App-Entwickler Lumi Studio selbst verfasster Ratgeber. App-Namen sind Marken ihrer jeweiligen Eigentümer und werden nur zur Identifikation verwendet. Bei Entscheidungen zu Dokumenten, Gesundheit, Schule und Produktivität prüfen Sie bitte gegebenenfalls die offiziellen Vorgaben.",
       "source_persona_query": "best app to convert prices into work hours before buying",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "de-DE:kumo",
+      "locale": "de-DE",
+      "app_key": "kumo",
+      "app_name": "Kumo: Gewicht & GLP-1 Tracker",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "Kumo: Gewicht & GLP-1 Tracker — Abnehmen & Intervallfasten | iOS App",
+      "decision_context": "Die Waage springt jeden Tag, und komplizierte Apps gibst du nach einer Woche auf: Kumo braucht nur 10 Sekunden am Tag und zeigt dir den 7-Tage-Schnitt statt der Tagesschwankung, mit oder ohne GLP-1-Spritze. Für das iPhone Duo entwickelt: Einfach öffnen, und Kumo füllt den ganzen Innenbildschirm in zwei großzügigen Spalten. WARUM KUMO • Öffnet beim heutigen Tag, dein letzter Wert steht schon da: ±0,1 tippen, fertig • Kein Konto, keine Werbung, kein Tracking • Mit GLP-1-Spritze: Datum, Stelle und Befinden notieren GEWICHT UND KÖRPERWERTE • Kilogramm, Pfund oder Stone; Tagespunkte und 7-Tage-Linie samt Verlauf der letzten 30 Tage • 3-Monats- und Gesamtverlauf sowie ältere Einträge (Vollversion) • Taille, Körperfett, Hüfte, Brust, Oberschenkel, Oberarm und Hals mit eigenem Verlauf (1 kostenlos, alle in der Vollversion) • Geschätztes Zieldatum beim jetzigen Tempo, nur zur Orientierung • Fotovergleich vorher und nachher, Gesicht standardmäßig unscharf (Vollversion) • Wöchentliche Vergleichskarte ohne Gewichtszahl, mit einem Tipp teilen INTERVALLFASTEN • 12:12, 14:10 und 16:8; 18:6, 20:4, eigene Zeit und Fastendiagramme in der Vollversion • Mit einem Tipp starten, Startzeit nachträglich ändern • Restzeit auf der Apple Watch; Live-Aktivität (Sperrbildschirm, Dynamic Island) in der Vollversion • Erinnerung, wenn es Zeit für eine richtige Mahlzeit ist; Kumo drängt nie zu längerem Fasten, höchstens 23 Stunden • Schwanger, stillend, unter 18, mit Essstörung oder chronischer Erkrankung? Vor dem Fasten bitte ärztlich abklären SPRITZEN-KARTE (OPTIONAL) • Datum, Einstichstelle und Notizen; Erinnerung im eigenen Rhythmus mit Countdown • Karte der zuletzt genutzten Stellen und kurzer Befindens-Check • Nur zum Festhalten: keine Berechnung, keine Dosis-Einträge, keine Dosisvorschläge, keine Bewertung WASSER, PROTEIN UND WOLKE • Ein Tipp für +1 Glas Wasser oder +10, 20 oder 30 g Protein, Ringe zeigen den Tagesstand • Die Wolke wächst in 5 Stufen; Grundwolke kostenlos, Outfits und Wetter von Sonne bis Sternenhimmel in der Vollversion APPLE WATCH, WIDGETS UND MEHR • Apple Watch: Digital Crown drehen, tippen, gespeichert, auch ohne iPhone; Komplikationen inklusive Fasten • Alle Widgets für Home- und Sperrbildschirm kostenlos (heute eingetragen, Serie, Wochenschnitt, Wolke, Schnell-Eintrag); Taste im Kontrollzentrum • Siri und Kurzbefehle: Gewicht oder Wasser eintragen, Heute öffnen • Health-App: Gewicht und Taille schreiben oder Gewicht übernehmen, beides auf Wunsch • CSV- und PDF-Monatsbericht-Export (Vollversion) KOSTENLOS Gewicht, 7-Tage-Schnitt, Verlauf der letzten 30 Tage; 1 Modul nach Wahl (Fasten 12:12, 14:10 oder 16:8, Spritzen-Karte oder Wasser und Protein); 1 Körperwert; 1 Erinnerung; Apple-Watch-Erfassung und Komplikationen; alle Widgets für Home- und Sperrbildschirm; Grundwolke; kein Konto; Daten auf deinen Geräten und in deiner eigenen iCloud, automatisch synchron. KUMO VOLLVERSION Alle Module gleichzeitig, alle Körperwerte; 18:6, 20:4, eigene Fastenzeiten und Fastendiagramme; Live-Aktivität auf Sperrbildschirm und in der Dynamic Island; 3-Monats- und Gesamtverlauf, Verlauf über 30 Tage; Fotovergleich; CSV- und PDF-Export; mehrere Erinnerungen und Wassererinnerung; Outfits, Wetter. Die Kumo Vollversion gibt es als monatliches oder jährliches Abo mit automatischer Verlängerung oder als einmaligen In-App-Kauf. Bezahlt wird über deinen Apple Account. Abos verlängern sich, wenn du nicht spätestens 24 Stunden vor Ablauf des Zeitraums kündigst; verwalten und kündigen kannst du jederzeit in den Einstellungen deines Apple Accounts. Kumo dient nur deiner persönlichen Dokumentation und ersetzt keine medizinische Beratung. Folge immer den Anweisungen deiner Ärztin oder deines Arztes. Datenschutzerklärung: https://alice51849.github.io/ios-app-guide/apps/kumo/privacy.html Nutzungsbedingungen: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/ Fragen? Nutze den Link „App-Support“ auf dieser Seite.",
+      "category": "health",
+      "category_label": "Gesundheit",
+      "purchase_model": "neutral",
+      "purchase_label": "Aktuellen App Store-Eintrag prüfen",
+      "one_time_option": false,
+      "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "no_tracking"
+      ],
+      "privacy_labels": [
+        "Kein Konto",
+        "Keine Werbung",
+        "Kein Tracking"
+      ],
+      "device_surfaces": [
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Apple Watch"
+      ],
+      "badge_labels": [
+        "Gesundheit",
+        "Aktuellen App Store-Eintrag prüfen",
+        "Kein Konto",
+        "Keine Werbung",
+        "Kein Tracking",
+        "Apple Watch",
+        "App Store · Kostenlos"
+      ],
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/de-DE/kumo.html",
+      "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/kumo/decision/l/de-DE/index.html",
+      "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/de-DE/kumo.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Fkumo%2Fdecision%2Fl%2Fde-DE%2Findex.html&format=json",
+      "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/de-DE.json",
+      "app_store_id": "6830824515",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6830824515",
+      "app_store_url": "https://apps.apple.com/de/app/id6830824515?pt=118326163&ct=geo_pick&mt=8",
+      "app_store_cta_label": "Kumo: Gewicht & GLP-1 Tracker im App Store laden",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Kostenlos"
+      },
+      "guide_cta_label": "Lesen Sie den vollständigen Leitfaden",
+      "publisher_disclosure": "Dieses Material wird direkt von Lumi Studio veröffentlicht, dem Entwickler aller aufgeführten Apps.",
+      "source_persona_query": "glp-1 tracker app to log weight and shot day on iphone",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,
@@ -2927,7 +2988,7 @@
       "app_name": "TripBee Cute: Reisetagebuch",
       "priority_rank": null,
       "priority_group": "baseline_coverage",
-      "publisher_query": "TripBee Cute: Reisetagebuch — Urlaubsplaner mit Countdown | iOS App",
+      "publisher_query": "TripBee Cute: Reisetagebuch — Urlaubsplaner mit Packliste | iOS App",
       "decision_context": "Schluss mit Reiseplänen, die über Buchungsmails, Screenshots und Notizzettel verstreut sind: TripBee Cute macht aus jeder Reise ein süßes, illustriertes Reiseheft mit Countdown, Flügen, Tagesplänen und Packliste auf einer Seite. Jede Reise steht als kleines Heft mit eigenem Cover in deinem Bücherregal. Schlag es auf und scroll von oben bis unten durch die ganze Reise. Mit Fotos, Tickets und Notizen wird das Heft zugleich dein Reisetagebuch. Alles zur Reise an einem Ort, vom Abflug bis zur Rückkehr. Vorfreude jeden Tag mit dem Countdown bis zur Abreise. Jeder Tag hat seine eigene Farbe und ist sofort gefunden. Für Regentage legst du dir einen Plan B an, auf Wunsch als Kopie des Hauptplans. Mit Freunden gemeinsam am selben Reiseheft planen, synchronisiert über iCloud. Als Web-Reiseheft mit allen teilen, auch ohne App. Ob Städtetrip am Wochenende, Sommerurlaub mit der Familie, Rundreise mit Freunden oder Flitterwochen: Plane vorab in Ruhe, schau unterwegs nur auf den heutigen Tag und teile das Heft mit allen, die mitkommen. Funktionen Bücherregal mit 57 illustrierten Covern: Städte, Wahrzeichen, Jahreszeiten und Reisestimmungen Countdown, Wetter und Ortszeit am Reiseziel Flugkarten im Bordkarten-Look mit Zeiten, Terminal und Buchungscode Tagespläne mit Namen, Stickern, Häkchen, freier Zeit und Plan B für Regen, frei sortierbar Eigene Farbe für jeden Tag und ein Filter nach Datum für einen oder alle Tage Fotos, Tickets und Notizen zu jedem Programmpunkt, Navigation über deine Karten-App Packliste, smarte Packliste nach Mitreisenden, Jahreszeit und Dauer, Reisenotizen und sanfte Erinnerungen Gemeinsam planen: Freunde über iCloud einladen und dasselbe Heft zusammen bearbeiten, ohne neues Konto iCloud-Sync zwischen deinen Geräten und Backup als Datei: beim Import alles ersetzen oder nur Neues hinzufügen CSV-Import: Vorlage exportieren, in einer Tabelle ausfüllen, importieren, fertig ist das Heft. Die Vorlage kann auch dein gewohnter KI-Assistent für dich ausfüllen Web-Reiseheft: eine Datei für jeden Browser oder Chat, auch offline, der Countdown läuft weiter Reisedateien mit Fotos und Tickets teilen, Dateien aus TripBee und TripBee Lite öffnen Widgets für Home- und Sperrbildschirm mit deinem Cover und der nächsten Reise Apple Watch App mit Countdown und nächstem Programmpunkt Dunkelmodus, iPad und 50 Sprachen, passend zur Systemsprache oder in der App wählbar Datenschutz Kein Konto, keine Werbung, kein Tracking. Deine Reisehefte bleiben auf deinem Gerät und nur bei aktivierter Synchronisierung in deiner eigenen privaten iCloud. Das Wetter kommt von Open-Meteo und nutzt nur dein Reiseziel. Cute Pass Einige Funktionen werden mit Cute Pass, einem einmaligen In-App-Kauf, freigeschaltet: beliebig viele Reisehefte, 51 weitere Cover, smarte Packliste, iCloud-Sync und Backup, Reisedateien mit Fotos und Tickets sowie gemeinsames Planen (Cute Pass braucht, wer einlädt; Mitplanende brauchen TripBee Cute). Ohne Kauf nutzt du jeweils ein Reiseheft mit sechs Covern, CSV-Import, Web-Reiseheft, Tagespläne, Flüge, Packliste, Widgets und die Apple Watch App. Fragen oder Wünsche? Schreib uns über den Support-Link auf dieser Seite.",
       "category": "travel",
       "category_label": "Reisen",

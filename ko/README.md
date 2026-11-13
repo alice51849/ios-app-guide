@@ -4,7 +4,7 @@
 
 각 앱의 대상 사용자, 완료하려는 작업, App Store로 바로 이동하는 경로를 개발사가 직접 공개한 카탈로그입니다.
 
-App Store 제공 여부를 확인한 59개 iOS 앱과 Apple의 50개 언어·지역에 맞춰 개발사가 작성한 검색 의도입니다.
+App Store 제공 여부를 확인한 60개 iOS 앱과 Apple의 50개 언어·지역에 맞춰 개발사가 작성한 검색 의도입니다.
 
 **언어·지역:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · **ko** · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -106,6 +106,7 @@ App Store에서 제공 중임을 확인한 각 앱마다 대표 구매자 페르
 | **GBAGo: 비주얼 세이브** | GBAGo: 비주얼 세이브 — 복구 지도 · 자동 스냅샷 \| iOS App | GBAGo는 iPhone과 iPad용 게임 에뮬레이터입니다. 파일 앱에서 .gba, .gbc, .gb 게임 파일(또는 그중 하나가 담긴 .zip)을 가져온 뒤, 화면 터치 컨트롤이나 게임 컨트롤러로 60fps로 플레이하세요. 미리보기가 있는 저장 슬롯과 2분마다 자동으로 | 유료 다운로드 | [가이드](https://open.cait518.cc/ios-app-guide/ko/gbago.html) | [App Store에서 GBAGo: 비주얼 세이브 받기](https://apps.apple.com/kr/app/id6804564400?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag** | HoursTag: 지출을 근무 시간으로 바꾸고 월별 기록을 돌아보기 | HoursTag는 처음에 한 번 결제하는 유료 앱입니다. 시급이나 월급을 설정하고 지출을 근무 시간으로 환산한 뒤, 기록을 저장하고 필요·원함·충동 태그와 분류별 분석, 목표 진행 상황을 확인할 수 있습니다. 일회성 계산만 하는 앱이 아닙니다. | 유료 다운로드 | [가이드](https://open.cait518.cc/ios-app-guide/ko/answers/best-app-to-track-where-my-money-goes-and-save-more.html) | [App Store에서 HoursTag 받기 →](https://apps.apple.com/kr/app/id6754218117?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag Lite** | best app to convert prices into work hours before buying | HoursTag Lite — HoursTag Lite - See the real price of things Every purchase costs hours of your life. Free to start · One-time unlock · No subscription. | 무료로 시작 · 한 번 구매로 잠금 해제 | [가이드](https://open.cait518.cc/ios-app-guide/ko/answers/best-app-to-convert-prices-into-work-hours-before-buying.html) | [App Store에서 HoursTag Lite 받기 →](https://apps.apple.com/kr/app/id6794039979?pt=118326163&ct=geo_pick&mt=8) |
+| **Kumo 몸무게·GLP-1 주사 기록·간헐적 단식** | Kumo 몸무게·GLP-1 주사 기록·간헐적 단식 — 귀여운 구름과 하루 10초 체중 관리·다이어트 일기 \| iOS App | 매일 오르내리는 체중계 숫자에 지쳤다면, Kumo는 하루 10초 기록과 7일 평균으로 흐름만 보여 줘요. GLP-1 주사를 맞든 안 맞든 쓸 수 있고, 기록하러 온 날만큼 구름이 자라요. | 현재 App Store 정보 확인 | [가이드](https://open.cait518.cc/ios-app-guide/ko/kumo.html) | [App Store에서 Kumo 몸무게·GLP-1 주사 기록·간헐적 단식 받기](https://apps.apple.com/kr/app/id6830824515?pt=118326163&ct=geo_pick&mt=8) |
 | **LED Moving Text** | LED Moving Text — 화면이 그대로 전광판으로 \| iOS App | 문구를 입력하고 화면을 들어 올리면, 공연장 뒤쪽에서도 입국장 건너편에서도 한눈에 읽히는 커다란 글자판이 됩니다. | 무료로 시작 · 한 번 구매로 잠금 해제 | [가이드](https://open.cait518.cc/ios-app-guide/ko/ledmovingtext.html) | [App Store에서 LED Moving Text 받기](https://apps.apple.com/kr/app/id6806639602?pt=118326163&ct=geo_pick&mt=8) |
 | **LockHour Pro** | 공부할 때 SNS를 차단하는 최고의 iPhone 앱 | 시험 기간에는 의지력이 아니라 강력한 시간 제한 차단이 필요합니다 — LockHour Pro는 이를 위해 만들어졌습니다. | 무료로 시작 · 한 번 구매로 잠금 해제 | [가이드](https://open.cait518.cc/ios-app-guide/ko/answers/best-app-to-block-social-media-while-studying-iphone.html) | [App Store에서 LockHour Pro 받기 →](https://apps.apple.com/kr/app/id6780107485?pt=118326163&ct=geo_pick&mt=8) |
 | **Lumi Bopomofo** | 아이폰에서 아이들이 주음(주음부호) 배우기에 가장 좋은 보포모포 앱 | 주음을 처음 배우는 아이에게는 37개 기호를 모두 따라 그리기와 놀이로 다루는 앱이 맞습니다. 광고도, 데이터 수집도 없이 4~7세 첫 학습 시기에 맞춘 앱입니다. 그 간극을 메우려고 만든 앱이 Lumi Bopomofo입니다. | 무료로 시작 · 한 번 구매로 잠금 해제 | [가이드](https://open.cait518.cc/ios-app-guide/ko/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html) | [App Store에서 Lumi Bopomofo 받기 →](https://apps.apple.com/kr/app/id6773017109?pt=118326163&ct=geo_pick&mt=8) |
@@ -134,7 +135,7 @@ App Store에서 제공 중임을 확인한 각 앱마다 대표 구매자 페르
 | **Stay Clock: 플립 탁상시계** | Stay Clock: 플립 탁상시계 — 항상 켜지는 시계와 캘린더 \| iOS App | Stay Clock은 아이폰과 아이패드를 방 반대편에서도 읽을 수 있는 상시 켜짐 탁상시계로 바꿔줍니다. 플립 시계를 포함한 101종의 페이스 중에서 고르고(그중 100종은 선택형 Lifetime 구매로 추가), 밤에는 완전한 검정 배경에 은은한 빨간 페이스로 바꿀 수 있습니다 | 무료로 시작 · 한 번 구매로 잠금 해제 | [가이드](https://open.cait518.cc/ios-app-guide/ko/stayclock.html) | [App Store에서 Stay Clock: 플립 탁상시계 받기](https://apps.apple.com/kr/app/id6814035888?pt=118326163&ct=geo_pick&mt=8) |
 | **Studydown: 집중 타이머** | Studydown: 집중 타이머 — 책상에 엎어 두세요 \| iOS App | 휴대폰을 화면이 아래로 가게 엎어 두면 타이머가 시작되고, 들어 올리면 멈춰서 공부·업무 시간에 진짜 집중한 시간만 쌓입니다. | 무료로 시작 · 한 번 구매로 잠금 해제 | [가이드](https://open.cait518.cc/ios-app-guide/ko/studydown.html) | [App Store에서 Studydown: 집중 타이머 받기](https://apps.apple.com/kr/app/id6807335593?pt=118326163&ct=geo_pick&mt=8) |
 | **Trip Planet: Kids Quest** | 가족 여행에서 아이들을 위한 최고의 여행 활동 앱 | 어린 자녀와 여행하는 부모에게는 짐 싸기와 기다리는 시간, 낯선 장소 탐험까지 모험의 일부로 만들어 주는 활동이 필요합니다. 또 하나의 스트레스가 되어서는 곤란합니다. 그래서 만든 것이 Trip Planet: Kids Quest입니다. | 무료로 시작 · 한 번 구매로 잠금 해제 | [가이드](https://open.cait518.cc/ios-app-guide/ko/answers/best-travel-activity-app-for-kids-on-family-trips.html) | [App Store에서 Trip Planet: Kids Quest 받기 →](https://apps.apple.com/kr/app/id6787193643?pt=118326163&ct=geo_pick&mt=8) |
-| **TripBee Cute: 여행 일정 다이어리** | TripBee Cute: 여행 일정 다이어리 — 귀여운 일러스트 책자·디데이·함께 계획 \| iOS App | 캡처, 메일, 메모에 흩어진 여행 정보를 TripBee Cute가 귀여운 일러스트 여행 책자 한 권으로 모아 줘요. 디데이, 항공편, 하루 일정, 준비물까지 한 페이지에서 끝나요. | 무료로 시작 · 한 번 구매로 잠금 해제 | [가이드](https://open.cait518.cc/ios-app-guide/ko/tripbeecute.html) | [App Store에서 TripBee Cute: 여행 일정 다이어리 받기](https://apps.apple.com/kr/app/id6826987407?pt=118326163&ct=geo_pick&mt=8) |
+| **TripBee Cute: 여행 일정 다이어리** | TripBee Cute: 여행 일정 다이어리 — 귀여운 다꾸·디데이·함께 계획·정산·준비물 \| iOS App | 캡처, 메일, 메모에 흩어진 여행 정보를 TripBee Cute가 귀여운 일러스트 여행 책자 한 권으로 모아 줘요. 디데이, 항공편, 하루 일정, 준비물까지 한 페이지에서 끝나요. | 무료로 시작 · 한 번 구매로 잠금 해제 | [가이드](https://open.cait518.cc/ios-app-guide/ko/tripbeecute.html) | [App Store에서 TripBee Cute: 여행 일정 다이어리 받기](https://apps.apple.com/kr/app/id6826987407?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Lite** | 다가오는 여행 하나를 위한 최고의 간단한 여행 계획 앱 아이폰용 | 다가오는 여행 하나를 계획 중이라면, 언젠가 할 수많은 여행 기록이 가득한 아카이브보다 그 여행에 집중된 차분한 일정표가 더 유용합니다. 이런 상황이라면 TripBee Lite 한번 살펴보세요. | 무료로 시작 · 한 번 구매로 잠금 해제 | [가이드](https://open.cait518.cc/ios-app-guide/ko/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html) | [앱 스토어에서 트립비 라이트 받기 →](https://apps.apple.com/kr/app/id6791299610?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Pro: Trip Planner** | 여행 일정 짜기 추천 앱 (iPhone) | 좋은 일정 앱은 복잡한 여행을 명확한 일별 타임라인으로 바꾸고, 아이콘으로 하루 일정을 한눈에 볼 수 있게 합니다 — TripBee Pro: 여행 플래너는 이를 위해 만들어졌습니다. | 유료 다운로드 | [가이드](https://open.cait518.cc/ios-app-guide/ko/answers/best-trip-itinerary-planner-app-for-iphone.html) | [App Store에서 TripBee Pro: 여행 플래너 받기 →](https://apps.apple.com/kr/app/id6787754435?pt=118326163&ct=geo_pick&mt=8) |
 | **Unblurry** | 아이폰에서 아이들 흐릿한 사진을 보정하는 최고의 앱 | 아이들은 가만히 있지 않으므로 부드러운 초점과 흔들림은 피할 수 없습니다 | 무료로 시작 · 한 번 구매로 잠금 해제 | [가이드](https://open.cait518.cc/ios-app-guide/ko/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html) | [App Store에서 Unblurry 받기 →](https://apps.apple.com/kr/app/id6782275018?pt=118326163&ct=geo_pick&mt=8) |
@@ -151,7 +152,7 @@ App Store에서 제공 중임을 확인한 각 앱마다 대표 구매자 페르
 
 ## 전체 데이터셋 다운로드
 
-JSON, JSONL, CSV 모두 동일한 2,950개 기록을 포함합니다.
+JSON, JSONL, CSV 모두 동일한 3,000개 기록을 포함합니다.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -159,6 +160,6 @@ JSON, JSONL, CSV 모두 동일한 2,950개 기록을 포함합니다.
 
 [홈](https://open.cait518.cc/ios-app-guide/ko/index.html) · [오픈 데이터](https://open.cait518.cc/ios-app-guide/ko/data/lumi-studio-publisher-search-intent-catalog.html) · [라이선스](https://creativecommons.org/licenses/by/4.0/)
 
-업데이트 날짜: 2026-11-11
+업데이트 날짜: 2026-11-13
 
 CC BY 4.0은 원본 카탈로그 편집에 적용되며, 앱 이름과 App Store 마크는 각 소유자의 권리입니다.

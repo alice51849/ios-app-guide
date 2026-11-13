@@ -4,8 +4,8 @@
   "name": "Lumi Studio iOS app catalog",
   "description": "Every verified live Lumi Studio iOS app, with the price and store link Apple publishes for it. Structured form of the agent product feed published alongside it.",
   "url": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-agent-feed/",
-  "numberOfItems": 59,
-  "dateModified": "2026-11-12",
+  "numberOfItems": 60,
+  "dateModified": "2026-11-13",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "provider": {
     "@type": "Organization",
@@ -1422,6 +1422,80 @@
       "position": 20,
       "item": {
         "@type": "MobileApplication",
+        "name": "Kumo: Weight & GLP-1 Tracker",
+        "description": "Kumo: Weight & GLP-1 Tracker — The scale jumps around every day, so Kumo turns a 10-second weigh-in into a calm 7-day average, with or without GLP-1 shots. A cute cloud grows every day",
+        "applicationCategory": "HealthApplication",
+        "operatingSystem": "iOS",
+        "url": "https://apps.apple.com/us/app/id6830824515?pt=118326163&ct=geo_pick&mt=8",
+        "inLanguage": [
+          "ar-SA",
+          "ca",
+          "cs",
+          "da",
+          "de-DE",
+          "el",
+          "en-AU",
+          "en-CA",
+          "en-GB",
+          "en-US",
+          "es-ES",
+          "es-MX",
+          "fi",
+          "fr-CA",
+          "fr-FR",
+          "gu-IN",
+          "he",
+          "hi",
+          "hr",
+          "hu",
+          "id",
+          "it",
+          "ja",
+          "kn-IN",
+          "ko",
+          "ml-IN",
+          "mr-IN",
+          "ms",
+          "nl-NL",
+          "no",
+          "or-IN",
+          "pa-IN",
+          "pl",
+          "pt-BR",
+          "pt-PT",
+          "ro",
+          "ru",
+          "sk",
+          "sl-SI",
+          "sv",
+          "ta-IN",
+          "te-IN",
+          "th",
+          "tr",
+          "uk",
+          "ur-PK",
+          "vi",
+          "zh-Hans",
+          "zh-Hant"
+        ],
+        "author": {
+          "@type": "Organization",
+          "name": "Lumi Studio"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://apps.apple.com/us/app/id6830824515?pt=118326163&ct=geo_pick&mt=8"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 21,
+      "item": {
+        "@type": "MobileApplication",
         "name": "LED Moving Text",
         "description": "LED Moving Text — Cue Flow handles moments that need more than one sign. Free to start · One-time unlock · No subscription.",
         "applicationCategory": "UtilitiesApplication",
@@ -1493,7 +1567,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 21,
+      "position": 22,
       "item": {
         "@type": "MobileApplication",
         "name": "LockHour Pro",
@@ -1567,7 +1641,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 22,
+      "position": 23,
       "item": {
         "@type": "MobileApplication",
         "name": "Lumi Bopomofo",
@@ -1640,7 +1714,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 23,
+      "position": 24,
       "item": {
         "@type": "MobileApplication",
         "name": "Lumi Bopomofo Pro",
@@ -1713,7 +1787,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 24,
+      "position": 25,
       "item": {
         "@type": "MobileApplication",
         "name": "Lumi Letters",
@@ -1786,7 +1860,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 25,
+      "position": 26,
       "item": {
         "@type": "MobileApplication",
         "name": "Lumi Letters Pro",
@@ -1859,7 +1933,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 26,
+      "position": 27,
       "item": {
         "@type": "MobileApplication",
         "name": "Lumi Math Planet",
@@ -1932,7 +2006,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 27,
+      "position": 28,
       "item": {
         "@type": "MobileApplication",
         "name": "Lumi Math Pro",
@@ -2005,7 +2079,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 28,
+      "position": 29,
       "item": {
         "@type": "MobileApplication",
         "name": "Lumi Mission Planet",
@@ -2079,7 +2153,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 29,
+      "position": 30,
       "item": {
         "@type": "MobileApplication",
         "name": "Lumi Mission Planet Pro",
@@ -2153,7 +2227,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 30,
+      "position": 31,
       "item": {
         "@type": "MobileApplication",
         "name": "Lumi Weather",
@@ -2227,7 +2301,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 31,
+      "position": 32,
       "item": {
         "@type": "MobileApplication",
         "name": "Mask My File",
@@ -2301,7 +2375,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 32,
+      "position": 33,
       "item": {
         "@type": "MobileApplication",
         "name": "Metro Time Helper",
@@ -2375,7 +2449,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 33,
+      "position": 34,
       "item": {
         "@type": "MobileApplication",
         "name": "Mochi",
@@ -2449,7 +2523,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 34,
+      "position": 35,
       "item": {
         "@type": "MobileApplication",
         "name": "Mochi DoneStamp",
@@ -2523,7 +2597,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 35,
+      "position": 36,
       "item": {
         "@type": "MobileApplication",
         "name": "MoneyTag: Income & Expense",
@@ -2597,7 +2671,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 36,
+      "position": 37,
       "item": {
         "@type": "MobileApplication",
         "name": "100 Notes Studio",
@@ -2671,7 +2745,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 37,
+      "position": 38,
       "item": {
         "@type": "MobileApplication",
         "name": "OnePage PPT",
@@ -2745,7 +2819,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 38,
+      "position": 39,
       "item": {
         "@type": "MobileApplication",
         "name": "PhotoCream",
@@ -2819,7 +2893,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 39,
+      "position": 40,
       "item": {
         "@type": "MobileApplication",
         "name": "PicClear",
@@ -2893,7 +2967,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 40,
+      "position": 41,
       "item": {
         "@type": "MobileApplication",
         "name": "QR Code Halo",
@@ -2967,7 +3041,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 41,
+      "position": 42,
       "item": {
         "@type": "MobileApplication",
         "name": "SaveTag",
@@ -3041,7 +3115,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 42,
+      "position": 43,
       "item": {
         "@type": "MobileApplication",
         "name": "ScanTo Pro",
@@ -3115,7 +3189,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 43,
+      "position": 44,
       "item": {
         "@type": "MobileApplication",
         "name": "Sereno",
@@ -3189,7 +3263,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 44,
+      "position": 45,
       "item": {
         "@type": "MobileApplication",
         "name": "ShotInbox AI",
@@ -3263,7 +3337,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 45,
+      "position": 46,
       "item": {
         "@type": "MobileApplication",
         "name": "Snapport",
@@ -3337,7 +3411,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 46,
+      "position": 47,
       "item": {
         "@type": "MobileApplication",
         "name": "Snapport Lite",
@@ -3411,7 +3485,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 47,
+      "position": 48,
       "item": {
         "@type": "MobileApplication",
         "name": "Sono Note",
@@ -3485,7 +3559,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 48,
+      "position": 49,
       "item": {
         "@type": "MobileApplication",
         "name": "Stay Clock",
@@ -3559,7 +3633,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 49,
+      "position": 50,
       "item": {
         "@type": "MobileApplication",
         "name": "Studydown",
@@ -3633,7 +3707,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 50,
+      "position": 51,
       "item": {
         "@type": "MobileApplication",
         "name": "TripBee Pro: Trip Planner",
@@ -3707,7 +3781,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 51,
+      "position": 52,
       "item": {
         "@type": "MobileApplication",
         "name": "TripBee Cute：可愛旅行手帳",
@@ -3781,7 +3855,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 52,
+      "position": 53,
       "item": {
         "@type": "MobileApplication",
         "name": "TripBee Lite",
@@ -3855,7 +3929,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 53,
+      "position": 54,
       "item": {
         "@type": "MobileApplication",
         "name": "Trip Planet: Kids Quest",
@@ -3928,7 +4002,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 54,
+      "position": 55,
       "item": {
         "@type": "MobileApplication",
         "name": "Unblurry",
@@ -4002,7 +4076,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 55,
+      "position": 56,
       "item": {
         "@type": "MobileApplication",
         "name": "WiFi Aid",
@@ -4076,7 +4150,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 56,
+      "position": 57,
       "item": {
         "@type": "MobileApplication",
         "name": "WiFi Aid Lite",
@@ -4150,7 +4224,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 57,
+      "position": 58,
       "item": {
         "@type": "MobileApplication",
         "name": "Wordmate: Learn 44 Languages",
@@ -4224,7 +4298,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 58,
+      "position": 59,
       "item": {
         "@type": "MobileApplication",
         "name": "Wordmate Lite",
@@ -4298,7 +4372,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 59,
+      "position": 60,
       "item": {
         "@type": "MobileApplication",
         "name": "Zipbox",

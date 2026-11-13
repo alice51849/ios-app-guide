@@ -162,7 +162,8 @@ EXACT47_APP_IDS = frozenset(LEGACY_APP_MESSAGES) | {
 # Helper (6819061896) went live and is in the catalog (57 × 50 = 2,850 records). 2026-11-05: TripBee Cute
 # (6826987407) went live and is in the catalog (58 × 50 = 2,900 records). 2026-11-06: Meow Party (foldparty,
 # 6829184924) was already in the live catalog (59 × 50 = 2,950 records); added so the roster equals the
-# catalog. Versus exact47: Aim990 Plus (6792483140) retired; 9 Apps added. EXACT47 stays the proof roster of the protected ledger snapshot.
+# catalog. 2026-11-13: Kumo (6830824515, live 11-11) went live and is in the catalog (60 × 50 = 3,000 records).
+# Versus exact47: Aim990 Plus (6792483140) retired; 9 Apps added. EXACT47 stays the proof roster of the protected ledger snapshot.
 CURRENT_ROSTER_APP_IDS = frozenset({
     "6754218117", "6755782939", "6773017109", "6775773117", "6776958488",
     "6778269699", "6778491147", "6778748533", "6779552704", "6779745474",
@@ -175,9 +176,9 @@ CURRENT_ROSTER_APP_IDS = frozenset({
     "6798814385", "6801956402", "6802166527", "6802423998", "6802505528",
     "6806639602", "6806776579", "6806779853", "6806826699", "6807079789",
     "6807335593", "6814035888", "6818607603", "6821790092", "6804564400",
-    "6824946559", "6819061896", "6826987407", "6829184924",
+    "6824946559", "6819061896", "6826987407", "6829184924", "6830824515",
 })
-CURRENT_ROSTER_LOCALE_RECORDS = 2950
+CURRENT_ROSTER_LOCALE_RECORDS = 3000
 # Ledger intents may name a historical roster App or a current one.
 LEDGER_APP_IDS = EXACT47_APP_IDS | CURRENT_ROSTER_APP_IDS
 

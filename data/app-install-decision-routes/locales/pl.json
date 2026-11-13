@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "pl",
-  "dateModified": "2026-11-12",
-  "content_digest": "7de1d37867a442524f0f71b12bc9215167c94decafe68fe7795797e73ca1646a",
-  "generation_digest": "4dbd71535e18ea34767ec4fa1071e32a770d503fca2637533a63df4a1fcbb11d",
+  "dateModified": "2026-11-13",
+  "content_digest": "d9c773c2562d52039903cf822e8ef7778090b22f1afda56ded04af6f7e8d4ca6",
+  "generation_digest": "f5f987bd60677ddb93fca5761c3080eab8bd40202e8756edcc2f8e99e8103264",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 59,
+  "record_count": 60,
   "syndication": {
     "atom": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/pl.atom.xml",
     "rss": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/pl.rss.xml",
@@ -1231,6 +1231,67 @@
       "guide_cta_label": "Przeczytaj pełny przewodnik",
       "publisher_disclosure": "Materiał pierwszorzędny opublikowany przez Lumi Studio, twórcę każdej wymienionej aplikacji.",
       "source_persona_query": "best app to track where my money goes and save more",
+      "source_surface": "app_guide_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "pl:kumo",
+      "locale": "pl",
+      "app_key": "kumo",
+      "app_name": "Kumo: Odchudzanie i waga ciała",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "Kumo: Odchudzanie i waga ciała — Tracker GLP-1, post przerywany | iOS App",
+      "decision_context": "Waga skacze z dnia na dzień i łatwo się zniechęcić, ale z Kumo zapiszesz ją w 10 sekund, a średnia z 7 dni pokaże prawdziwy kierunek zamiast wahań. Chmurka rośnie za każdy dzień z zapisem, nie za wynik na wadze. Działa z zastrzykami i bez nich. Stworzone dla iPhone Duo: otwórz go, a Kumo wypełni cały wewnętrzny ekran w dwóch przestronnych kolumnach. • Dzień bez ważenia też się liczy, seria trwa dalej • Post, zastrzyki, wodę i białko włączasz, kiedy chcesz WAGA I TREND • Jednostki kg, lb lub st; punkty dzienne i linia średniej z 7 dni, z trendem i historią z ostatnich 30 dni • Trend z 3 miesięcy i z całego okresu oraz starsza historia (pełna wersja) WYMIARY CIAŁA • Talia, % tkanki tłuszczowej, biodra, klatka, udo, ramię i szyja, każdy wymiar z trendem (1 za darmo, wszystkie w pełnej wersji) • Szacowana data celu przy obecnym tempie, tylko orientacyjnie • Zdjęcia przed i po, twarz domyślnie rozmyta (pełna wersja) MINUTNIK POSTU • 12:12, 14:10, 16:8; w pełnej wersji także 18:6, 20:4, własny plan i wykresy postu • Start jednym dotknięciem, godzinę startu można poprawić • Pozostały czas na Apple Watch; odliczanie na żywo na ekranie blokady i w Dynamic Island w pełnej wersji • Przypomnienie o porządnym posiłku; Kumo nie zachęca do dłuższego postu, limit to 23 godziny • Jeśli jesteś w ciąży lub karmisz piersią, masz mniej niż 18 lat, problemy z odżywianiem lub chorobę przewlekłą, przed postem porozmawiaj z lekarzem KARTA ZASTRZYKÓW (OPCJONALNA) • Data, miejsce, samopoczucie i notatki; mapa ostatnich miejsc • Tylko zapis: bez obliczeń, bez zapisywania i sugerowania dawek, bez interpretacji WODA I BIAŁKO • +1 szklanka wody lub +10/20/30 g białka, pierścienie pokazują dzień CHMURKA, KTÓRA ROŚNIE • 5 etapów wzrostu za dni z zapisem, nie za wagę; waga w górę czy w dół, chmurka zawsze się cieszy • Podstawowa chmurka jest darmowa; stroje i motywy pogody: słońce, tęcza, deszcz, śnieg, gwiaździste niebo (pełna wersja) APPLE WATCH, WIDŻETY I SIRI • Apple Watch: przekręć Digital Crown i stuknij, także bez telefonu obok; komplikacje na tarczy, także z postem • Wszystkie widżety ekranu początkowego i blokady są darmowe: zapis na dziś, seria, średnia tygodnia, chmurka i szybki zapis; przycisk w Centrum sterowania • Siri i Skróty: zapisz wagę, dodaj wodę, otwórz ekran Dziś KARTA TYGODNIA I DANE • Co tydzień karta ze zmianą i krzywą, bez liczb wagi, do udostępnienia • Eksport CSV i miesięczny raport PDF (pełna wersja) DARMOWE Zapis wagi ze średnią z 7 dni oraz trendem i historią z ostatnich 30 dni; 1 moduł do wyboru (post 12:12, 14:10 lub 16:8, karta zastrzyków albo woda i białko); 1 wymiar ciała; 1 przypomnienie; zapis na Apple Watch i komplikacje na tarczy; wszystkie widżety ekranu początkowego i blokady; podstawowa chmurka; bez konta; dane na Twoich urządzeniach i w Twoim iCloud. PEŁNA WERSJA KUMO Pełna wersja Kumo dodaje: kilka modułów naraz i wszystkie wymiary; posty 18:6, 20:4, własny plan i wykresy postu; odliczanie na żywo na ekranie blokady i w Dynamic Island; trendy z 3 miesięcy i z całego okresu oraz historię sięgającą dalej niż 30 dni; zdjęcia przed i po; eksport CSV i PDF; więcej przypomnień i przypomnienia o wodzie; stroje i pogodę. Pełna wersja Kumo jest dostępna jako miesięczna lub roczna subskrypcja odnawiana automatycznie albo jako jednorazowy zakup w aplikacji. Płatność zostanie pobrana z Twojego Konta Apple. Subskrypcja odnawia się automatycznie, chyba że anulujesz ją co najmniej 24 godziny przed końcem bieżącego okresu. Możesz nią zarządzać i ją anulować w każdej chwili w ustawieniach Konta Apple. Polityka prywatności: https://alice51849.github.io/ios-app-guide/apps/kumo/privacy.html Warunki korzystania: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/ Pytania? Użyj linku pomocy na tej stronie App Store. Kumo służy wyłącznie do osobistego prowadzenia zapisów i nie udziela porad medycznych. Zawsze stosuj się do zaleceń lekarza.",
+      "category": "health",
+      "category_label": "Zdrowie",
+      "purchase_model": "neutral",
+      "purchase_label": "Sprawdź aktualną ofertę",
+      "one_time_option": false,
+      "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "no_tracking"
+      ],
+      "privacy_labels": [
+        "Bez konta",
+        "Bez reklam",
+        "Bez śledzenia"
+      ],
+      "device_surfaces": [
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Apple Watch"
+      ],
+      "badge_labels": [
+        "Zdrowie",
+        "Sprawdź aktualną ofertę",
+        "Bez konta",
+        "Bez reklam",
+        "Bez śledzenia",
+        "Apple Watch",
+        "App Store · Bezpłatnie"
+      ],
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/pl/kumo.html",
+      "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/kumo/decision/l/pl/index.html",
+      "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/pl/kumo.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Fkumo%2Fdecision%2Fl%2Fpl%2Findex.html&format=json",
+      "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/pl.json",
+      "app_store_id": "6830824515",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6830824515",
+      "app_store_url": "https://apps.apple.com/pl/app/id6830824515?pt=118326163&ct=geo_pick&mt=8",
+      "app_store_cta_label": "Pobierz Kumo: Odchudzanie i waga ciała z App Store",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "PLN",
+        "formatted_price": "Bezpłatnie"
+      },
+      "guide_cta_label": "Przeczytaj pełny przewodnik",
+      "publisher_disclosure": "Materiał pierwszorzędny opublikowany przez Lumi Studio, twórcę każdej wymienionej aplikacji.",
+      "source_persona_query": "glp-1 tracker app to log weight and shot day on iphone",
       "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
@@ -2918,7 +2979,7 @@
       "app_name": "TripBee Cute: Dziennik podróży",
       "priority_rank": null,
       "priority_group": "baseline_coverage",
-      "publisher_query": "TripBee Cute: Dziennik podróży — Urocze ilustracje i odliczanie | iOS App",
+      "publisher_query": "TripBee Cute: Dziennik podróży — Planer, pakowanie i odliczanie | iOS App",
       "decision_context": "Gdy rezerwacje giną w mailach, a plan w notatkach, TripBee Cute zbiera całą podróż w jedną uroczą, ilustrowaną książeczkę. Każda podróż stoi na twojej półce jako mała książeczka z ilustrowaną okładką. Otwórz ją, a cała wyprawa ułoży się na jednej stronie: okładka, odliczanie do wyjazdu, loty, plan każdego dnia, a na końcu przygotowania, czyli lista rzeczy i notatki. Cała podróż na jednej stronie, wystarczy przewijać w dół. Każdy dzień ma własny kolor, a filtr po dacie pokazuje tylko wybrany dzień. Loty wyglądają jak karty pokładowe: godziny, terminal i kod rezerwacji. Plan na deszczowy dzień i czas wolny wpiszesz prosto w rozkład dnia. Znajomi mogą planować tę samą książeczkę razem z tobą przez iCloud. Książeczka online otworzy się każdemu w przeglądarce lub komunikatorze, nawet offline. Gotowy plan z arkusza: zaimportuj plik CSV, a książeczka powstanie sama. Sprawdzi się na weekendowy wypad, city break, wspólny wyjazd z przyjaciółmi i rodzinne wakacje. Odliczanie podkręca radość z wyjazdu na długo przed startem, a po powrocie książeczka zostaje na półce jako dziennik podróży ze zdjęciami i notatkami. Funkcje 57 uroczych ilustrowanych okładek: miasta, zabytki, pory roku i podróżne nastroje Odliczanie do wyjazdu, pogoda w miejscu docelowym i czas lokalny Karty lotów: godziny, terminale i kody rezerwacji Plan dnia: własne nazwy dni, naklejki, odhaczanie, czas wolny, plan na deszcz z opcją skopiowania planu głównego i zmiana kolejności Osobny kolor dla każdego dnia i filtrowanie po dacie Zdjęcia, bilety i notatki przy każdym punkcie planu oraz nawigacja w aplikacji mapowej Lista rzeczy do spakowania i inteligentna lista dopasowana do towarzyszy podróży, pory roku i liczby dni Notatki z podróży i delikatne przypomnienia Wspólne planowanie: zaproś znajomych przez iCloud, a zmiany zsynchronizują się na ich urządzeniach (znajomi też potrzebują TripBee Cute) Import CSV: wyeksportuj szablon, wypełnij go w arkuszu kalkulacyjnym albo poproś o to swojego ulubionego asystenta AI, a potem zaimportuj plik Kopia zapasowa wszystkich książeczek i zdjęć w jednym pliku: przy imporcie zastąp wszystko albo scal dane, a scalanie tylko dodaje nowe i niczego nie usuwa Książeczka online, plik podróży ze zdjęciami i biletami oraz otwieranie plików z TripBee i TripBee Lite Widżety na ekran początkowy i ekran blokady z ilustracją okładki i najbliższym punktem planu Aplikacja na Apple Watch z odliczaniem i kolejnym punktem planu Synchronizacja przez iCloud między twoimi urządzeniami Tryb ciemny, iPad i 50 języków: zgodnie z językiem systemu lub do wyboru w aplikacji Bez konta, bez reklam i bez śledzenia. Książeczki są zapisywane na urządzeniu, a w twoim prywatnym iCloud tylko wtedy, gdy włączysz synchronizację. Pogodę dostarcza Open-Meteo wyłącznie na podstawie miejsca docelowego. Bez zakupu możesz mieć jedną książeczkę naraz i korzystać z 6 okładek, importu CSV, książeczki online, planu dnia, kart lotów, listy rzeczy, widżetów i aplikacji na Apple Watch. Część funkcji odblokowuje jednorazowy zakup w aplikacji (Cute Pass): dowolna liczba książeczek, 51 dodatkowych okładek, inteligentna lista rzeczy, synchronizacja i kopie zapasowe w iCloud, udostępnianie plików podróży ze zdjęciami i biletami oraz wspólne planowanie ze znajomymi. Masz pytanie albo pomysł? Napisz do nas przez link pomocy na tej stronie.",
       "category": "travel",
       "category_label": "Podróże",

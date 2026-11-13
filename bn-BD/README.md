@@ -6,7 +6,7 @@
 Apple App Store এখনো বাংলাদেশে চালু হয়নি, তাই এখান থেকে অ্যাপের সরাসরি ডাউনলোড লিঙ্ক দেওয়া সম্ভব নয়। অ্যাপটির সব তথ্য নিচে বাংলায় দেওয়া আছে।
 market_availability: {"state": "MARKET_UNAVAILABLE_OR_UNVERIFIED", "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES", "evidence": {"source_url": "https://support.apple.com/en-us/118205", "observed_at": "2026-09-12", "country": "BD", "apple_media_services_markets": 174, "country_listed": false, "lookup_app_results": 0, "lookup_control_results": 0, "redirect_market": "US"}, "value": "N/A", "content_retained": true, "publishable": false, "facts_allowed": false, "outbox_count": 0}
 
-৫৯টি যাচাইকৃত লাইভ iOS অ্যাপ এবং ৫০টি Apple লোকালের প্রকাশক-লিখিত অনুসন্ধান উদ্দেশ্য।
+৬০টি যাচাইকৃত লাইভ iOS অ্যাপ এবং ৫০টি Apple লোকালের প্রকাশক-লিখিত অনুসন্ধান উদ্দেশ্য।
 
 **লোকাল:** [ar-SA](../ar-SA/) · **bn-BD** · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -109,6 +109,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **GBAGo: ভিজ্যুয়াল সেভ** | GBAGo: ভিজ্যুয়াল সেভ — রিকভারি ম্যাপ · অটো স্ন্যাপশট \| iOS App | GBAGo হলো iPhone ও iPad-এর জন্য একটি গেম ইমুলেটর। Files অ্যাপ থেকে আপনার .gba, .gbc ও .gb গেম ফাইল (অথবা এগুলোর যেকোনো একটি সহ .zip) ইমপোর্ট করুন, তারপর | পেইড ডাউনলোড | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/gbago.html) | N/A (MARKET_NOT_IN_APPLE_MEDIA_SERVICES) |
 | **HoursTag Lite: দাম কর্মঘণ্টায়** | HoursTag Lite: দাম কর্মঘণ্টায় — সচেতন কেনাকাটা: আসল দাম \| iOS App | কেনার আগে দেখে নিন, জিনিসটার দাম আসলে কত ঘণ্টার কাজ। আপনার হাতে পাওয়া ঘণ্টাপ্রতি আয় লিখুন, HoursTag Lite প্রতিটি দামকে কাজের সময়ে বদলে দেবে। | বিনামূল্যে শুরু · এককালীন কেনাকাটায় আনলক | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/hourstaglite.html) | N/A (MARKET_NOT_IN_APPLE_MEDIA_SERVICES) |
 | **HoursTag: সময়ে কেনাকাটা** | HoursTag: সময়ে কেনাকাটা — ঘণ্টাপ্রতি মজুরি ও খরচ \| iOS App | আসল খরচ কত? ডলারে নয় — আপনার জীবনের ঘন্টায়। | পেইড ডাউনলোড | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/hourstag.html) | N/A (MARKET_NOT_IN_APPLE_MEDIA_SERVICES) |
+| **Kumo: ওজন কমানো ও ডায়েট** | Kumo: ওজন কমানো ও ডায়েট — ফাস্টিং টাইমার, GLP-1 লগ, পানি \| iOS App | রোজকার ওজনের ওঠানামা দেখে হাল ছেড়ে দিতে ইচ্ছে করে? Kumo-তে দিনে 10 সেকেন্ডে ওজন লিখুন, 7 দিনের গড়ে আসল ট্রেন্ড দেখুন, আর সাথে বড় হয় একটা কিউট মেঘ। | বর্তমান তালিকা দেখুন | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/kumo.html) | N/A (MARKET_NOT_IN_APPLE_MEDIA_SERVICES) |
 | **LED Moving Text** | LED Moving Text — পর্দায় চলন্ত আলোর বোর্ড \| iOS App | একটি লাইন লিখুন আর আইফোনটা তুলে ধরুন। ভিড়ের পেছন থেকে, আগমনী হলের অন্য প্রান্ত থেকে বা কাউন্টারের ওপর দিয়ে এক নজরেই পড়া যায়। | বিনামূল্যে শুরু · এককালীন কেনাকাটায় আনলক | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/ledmovingtext.html) | N/A (MARKET_NOT_IN_APPLE_MEDIA_SERVICES) |
 | **LockHour Pro: অ্যাপ ব্লকার** | LockHour Pro: অ্যাপ ব্লকার — স্ক্রিন টাইম ও অ্যাপ লক \| iOS App | মনোযোগ নষ্ট করা অ্যাপ ও ওয়েবসাইট টাইমার শেষ না হওয়া পর্যন্ত লক থাকে, সময় শেষ হলেই নিজে থেকে আবার খুলে যায়। | বিনামূল্যে শুরু · এককালীন কেনাকাটায় আনলক | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/lockhour.html) | N/A (MARKET_NOT_IN_APPLE_MEDIA_SERVICES) |
 | **Lumi Bopomofo** | Lumi Bopomofo — Zhuyin: শিশুদের চীনা ভাষা \| iOS App | Lumi Bopomofo আপনার শিশুর জন্য ঝুয়িন ফোনেটিক সিস্টেম শিখতে এক মজার ও স্নেহময় উপায়। | বিনামূল্যে শুরু · এককালীন কেনাকাটায় আনলক | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/lumibopomofo.html) | N/A (MARKET_NOT_IN_APPLE_MEDIA_SERVICES) |
@@ -153,7 +154,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## সম্পূর্ণ ডেটাসেট ডাউনলোড করুন
 
-JSON, JSONL এবং CSV একই ২,৯৫০ রেকর্ড ধারণ করে।
+JSON, JSONL এবং CSV একই ৩,০০০ রেকর্ড ধারণ করে।
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -161,6 +162,6 @@ JSON, JSONL এবং CSV একই ২,৯৫০ রেকর্ড ধার�
 
 [হোম](https://open.cait518.cc/ios-app-guide/bn-BD/index.html) · [খোলা তথ্য](https://open.cait518.cc/ios-app-guide/bn-BD/data/lumi-studio-publisher-search-intent-catalog.html) · [লাইসেন্স](https://creativecommons.org/licenses/by/4.0/)
 
-আপডেট: 2026-11-11
+আপডেট: 2026-11-13
 
 মূল ক্যাটালগ সংকলনের জন্য CC BY 4.0 প্রযোজ্য; অ্যাপ নাম ও App Store চিহ্ন তাদের মালিকদের।

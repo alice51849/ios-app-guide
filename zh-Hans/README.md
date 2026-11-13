@@ -4,7 +4,7 @@
 
 第一方目录，说明每款 App 的适用人群、想完成的任务以及直达 App Store 的下载入口。
 
-由开发者撰写的搜索意图，涵盖 59 款已验证上架的 iOS App 和 Apple 官方 50 个地区语言。
+由开发者撰写的搜索意图，涵盖 60 款已验证上架的 iOS App 和 Apple 官方 50 个地区语言。
 
 **地区语言:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · **zh-Hans** · [zh-Hant](../zh-Hant/)
 
@@ -106,6 +106,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **GBAGo: 可视化存档** | GBAGo: 可视化存档 — 恢复地图 · 自动快照 \| iOS App | GBAGo 是一款适用于 iPhone 和 iPad 的游戏模拟器。从“文件”App 导入你自己的 .gba、.gbc 和 .gb 游戏文件（或包含其中之一的 .zip），即可使用屏幕触控按键或游戏手柄以 60 fps 畅玩。带预览图的存档位和每 2 | 付费下载 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hans/gbago.html) | [在 App Store 获取 GBAGo: 可视化存档](https://apps.apple.com/cn/app/id6804564400?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag Lite：买前先算工时** | HoursTag Lite：买前先算工时 — 冲动消费前，先换算成工时 \| iOS App | 结账前，先看这笔要工作几小时。输入你的实际到手时薪，HoursTag Lite 就把每个价格换算成工作时数。 | 免费开始使用 · 一次购买解锁 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hans/hourstaglite.html) | [在 App Store 获取 HoursTag Lite：买前先算工时](https://apps.apple.com/cn/app/id6794039979?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag：价格换工时** | HoursTag：价格换工时 — 月薪时薪计算・花费记账本 \| iOS App | 这真正要花你多少？不是多少钱——是你生命中的几个小时。 | 付费下载 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hans/hourstag.html) | [在 App Store 获取 HoursTag：价格换工时](https://apps.apple.com/cn/app/id6754218117?pt=118326163&ct=geo_pick&mt=8) |
+| **Kumo 体重记录・减重打卡・轻断食计时器** | Kumo 体重记录・减重打卡・轻断食计时器 — 减脂日记・喝水蛋白质・腰围体脂・习惯养成・可爱云朵 \| iOS App | 体重一天一个样，很多人还没看到进步就先放弃了；Kumo 每天只要 10 秒记好体重，用 7 日平均看清真正的趋势，不被单日波动影响心情。 | 查看当前 App Store 页面 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hans/kumo.html) | [在 App Store 获取 Kumo 体重记录・减重打卡・轻断食计时器](https://apps.apple.com/cn/app/id6830824515?pt=118326163&ct=geo_pick&mt=8) |
 | **LED Moving Text** | LED Moving Text — 手机立刻变成应援灯牌 \| iOS App | 打上一句话，手机就变成一块会发光、会滚动的大字牌，隔着整个场馆、站台或人群都看得清楚。 | 免费开始使用 · 一次购买解锁 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hans/ledmovingtext.html) | [在 App Store 获取 LED Moving Text](https://apps.apple.com/cn/app/id6806639602?pt=118326163&ct=geo_pick&mt=8) |
 | **LockHour Pro** | 学习时屏蔽社交媒体的最佳 iPhone App | 考试期间，意志力不是工具——硬性定时屏蔽才是——LockHour Pro专为此设计。 | 免费开始使用 · 一次购买解锁 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-app-to-block-social-media-while-studying-iphone.html) | [在 App Store 获取 LockHour Pro →](https://apps.apple.com/cn/app/id6780107485?pt=118326163&ct=geo_pick&mt=8) |
 | **Lumi Bopomofo** | 让孩子在 iPhone 上学注音的最佳注音 App | 对第一次学注音的孩子,App 应通过描摹与游戏涵盖全部 37 个符号 —— 专为 4 到 7 岁初学阶段设计、无广告、不搜集数据。这个缺口，正是 Lumi Bopomofo 想补上的。 | 免费开始使用 · 一次购买解锁 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html) | [在 App Store 取得 Lumi Bopomofo →](https://apps.apple.com/app/id6773017109?pt=118326163&ct=geo_pick&mt=8) |
@@ -135,7 +136,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **Stay Clock:翻页桌面时钟** | Stay Clock:翻页桌面时钟 — 常亮时间与日历显示 \| iOS App | Stay Clock 将你的 iPhone 或 iPad 变成一款充电时保持常亮的桌面时钟，隔着房间也能看清时间。101 款表盘随心换，也有翻页时钟（其中 100 款通过一次性 Lifetime 解锁）；夜里可切换为纯黑底柔和红字，不刺眼。 | 免费开始使用 · 一次购买解锁 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hans/stayclock.html) | [在 App Store 获取 Stay Clock:翻页桌面时钟](https://apps.apple.com/cn/app/id6814035888?pt=118326163&ct=geo_pick&mt=8) |
 | **Studydown：翻面专注计时** | Studydown：翻面专注计时 — 屏幕朝下扣着放 \| iOS App | 手机屏幕朝下扣在桌上就开始计时，拿起来就暂停，只记下真正专注的学习和工作时长。 | 免费开始使用 · 一次购买解锁 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hans/studydown.html) | [在 App Store 获取 Studydown：翻面专注计时](https://apps.apple.com/cn/app/id6807335593?pt=118326163&ct=geo_pick&mt=8) |
 | **Trip Planet: Kids Quest** | 适合家庭出行儿童的最佳旅行活动App | 带幼儿旅行的家长需要能将收拾、等待和探索新地点变成冒险的一部分，而不是新的压力来源。所以才有了 Trip Planet: Kids Quest。 | 免费开始使用 · 一次购买解锁 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-travel-activity-app-for-kids-on-family-trips.html) | N/A (MARKET_APP_NOT_SOLD) |
-| **TripBee Cute：旅行计划手账本** | TripBee Cute：旅行计划手账本 — 可爱插画行程·出发倒计时·好友共同编辑 \| iOS App | 别再让行程散在聊天记录、截图和备忘录里：TripBee Cute 把每一趟旅行做成一本可爱的插画手账，封面、出发倒计时、航班、每日行程和行李清单都在同一页，往下一滑就全看完。 | 免费开始使用 · 一次购买解锁 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hans/tripbeecute.html) | [在 App Store 获取 TripBee Cute：旅行计划手账本](https://apps.apple.com/cn/app/id6826987407?pt=118326163&ct=geo_pick&mt=8) |
+| **TripBee Cute：旅行计划手账本** | TripBee Cute：旅行计划手账本 — 可爱插画手帐·出发倒计时·行李清单·AA分账 \| iOS App | 别再让行程散在聊天记录、截图和备忘录里：TripBee Cute 把每一趟旅行做成一本可爱的插画手账，封面、出发倒计时、航班、每日行程和行李清单都在同一页，往下一滑就全看完。 | 免费开始使用 · 一次购买解锁 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hans/tripbeecute.html) | [在 App Store 获取 TripBee Cute：旅行计划手账本](https://apps.apple.com/cn/app/id6826987407?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Lite** | 适用于即将出行的iPhone最佳简易行程规划应用 | 如果您只规划一个即将到来的行程，专注清晰的时间线比杂乱的所有未来可能行程档案更实用。如果你也是这种情况，可以看看 TripBee Lite。 | 免费开始使用 · 一次购买解锁 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html) | [在App Store获取TripBee Lite →](https://apps.apple.com/cn/app/id6791299610?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Pro：旅行规划师** | 最佳iPhone旅行行程规划应用 | 好的行程 App 会把零散的行程整理成一天一页的时间轴，航班、酒店、活动、餐厅、交通各有清楚的图示，一眼就看得出今天要做什么。如果你也是这种情况，可以看看 TripBee Pro：旅行规划师。 | 付费下载 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-trip-itinerary-planner-app-for-iphone.html) | [在App Store获取TripBee Pro：旅行规划师 →](https://apps.apple.com/cn/app/id6787754435?pt=118326163&ct=geo_pick&mt=8) |
 | **Unblurry** | 最佳iPhone儿童模糊照片修复应用 | 孩子总是不安分，轻微虚焦和抖动照片不可避免 | 免费开始使用 · 一次购买解锁 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html) | [在App Store获取Unblurry →](https://apps.apple.com/cn/app/id6782275018?pt=118326163&ct=geo_pick&mt=8) |
@@ -151,7 +152,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## 下载完整数据集
 
-JSON、JSONL 和 CSV 格式包含相同的 2,950 条记录。
+JSON、JSONL 和 CSV 格式包含相同的 3,000 条记录。
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -159,6 +160,6 @@ JSON、JSONL 和 CSV 格式包含相同的 2,950 条记录。
 
 [首页](https://open.cait518.cc/ios-app-guide/zh-Hans/index.html) · [开放数据](https://open.cait518.cc/ios-app-guide/zh-Hans/data/lumi-studio-publisher-search-intent-catalog.html) · [许可协议](https://creativecommons.org/licenses/by/4.0/)
 
-更新日期: 2026-11-11
+更新日期: 2026-11-13
 
 CC BY 4.0 适用于原始目录编纂；应用名称和 App Store 标识归其所有者所有。

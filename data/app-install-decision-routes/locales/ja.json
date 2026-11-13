@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "ja",
-  "dateModified": "2026-11-12",
-  "content_digest": "7de1d37867a442524f0f71b12bc9215167c94decafe68fe7795797e73ca1646a",
-  "generation_digest": "4dbd71535e18ea34767ec4fa1071e32a770d503fca2637533a63df4a1fcbb11d",
+  "dateModified": "2026-11-13",
+  "content_digest": "d9c773c2562d52039903cf822e8ef7778090b22f1afda56ded04af6f7e8d4ca6",
+  "generation_digest": "f5f987bd60677ddb93fca5761c3080eab8bd40202e8756edcc2f8e99e8103264",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 59,
+  "record_count": 60,
   "syndication": {
     "atom": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/ja.atom.xml",
     "rss": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/ja.rss.xml",
@@ -1182,6 +1182,67 @@
       "publisher_disclosure": "アプリ開発者であるLumi Studioが自ら作成したガイドです。アプリ名は各所有者の商標であり、識別目的でのみ使用されています。文書、健康、学校、生産性に関する決定を下す際は、必要に応じて関連機関の正式な要件をご確認ください。",
       "source_persona_query": "best app to convert prices into work hours before buying",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "ja:kumo",
+      "locale": "ja",
+      "app_key": "kumo",
+      "app_name": "Kumo 体重記録・GLP-1 注射記録・断食タイマー",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "Kumo 体重記録・GLP-1 注射記録・断食タイマー — かわいい雲と1日10秒、ダイエット管理を習慣に | iOS App",
+      "decision_context": "毎日の増減に一喜一憂しなくていいように、Kumoは1日10秒の記録と7日平均で体重の「流れ」を見せます。GLP-1注射をしていてもいなくても使えて、記録しに来た日数で雲が育ちます。 iPhone Duo向けに設計：開くとKumoが内側の画面いっぱいに、ゆったりした2列で表示されます。 Kumoの特長 • 開くと今日の画面。前回の数値が入っていて、±0.1をタップするだけ • 7日平均と先週との比較で、日々の増減に振り回されない • 「今日は測らなかった」も記録にカウント。連続日数が途切れません • 断食、注射、水分とたんぱく質は、使いたいものだけオンに • 雲が育つのは体重ではなく、記録しに来た日数しだい • Apple Watch、ウィジェット、Siri、「ヘルスケア」Appに対応 • アカウント不要、広告なし、トラッキングなし こんなときに • 朝、体重計に乗ったら数値を確かめてタップするだけ • GLP-1注射の日付や部位、体調をメモして、自分の周期でリマインド • 16時間断食の残り時間を、Apple Watchでチェック 体重とからだの数字 • 単位はkg、ポンド、ストーンから選べます • 毎日の点と7日平均線、直近30日の推移と履歴 • 3か月・全期間の推移と、それ以前の履歴（完全版） • パンツがゆるくなった、階段がラクになったなど、体重以外の小さな成功も記録 • ウエスト、体脂肪率、ヒップ、バスト、太もも、二の腕、首まわりをそれぞれグラフに（1項目は無料、すべて完全版） • 今のペースで目標に届く日を予測（あくまで目安）。データが少ないうちは、あと数日の記録をお願いします • 写真のビフォーアフター比較。顔は最初からぼかし（完全版） • 毎週の比較カードは変化と曲線だけを表示し、体重の数値は出しません。ワンタップでシェア 断食タイマー • 12:12、14:10、16:8。18:6、20:4、カスタム、断食グラフは完全版 • ワンタップで開始、開始時刻はあとから直せます • Apple Watchで残り時間を表示。ロック画面とDynamic Islandのライブカウントダウンは完全版 • 時間になったら、しっかり食事をとるようお知らせ。長い断食はすすめず、上限は23時間です • 妊娠中・授乳中の方、18歳未満の方、拒食や過食の経験がある方、持病のある方は、断食を始める前に医師に相談してください 注射カード（使う人だけ表示） • 日付、部位、自分用のメモを記録 • 自分で決めた周期でリマインドし、次回までをカウントダウン • 最近使った部位のマップと体調チェック • 記録するだけのカードです。計算、用量の記録や提案、判断は行いません 水分・たんぱく質・育つ雲 • ワンタップで水+1杯、たんぱく質+10／20／30g。リングで今日の進み具合がひと目でわかります • 「ヘルスケア」Appとつなぐと今日の歩数を表示（表示のみで保存しません） • 雲は5段階に成長。体重が上がっても下がっても、雲はうれしそう • 基本の雲は無料。着せ替えと、晴れ・虹・雨・雪・星空の天気テーマは完全版 Apple Watch・ウィジェット・Siri • Apple WatchではDigital Crownを回してタップするだけ。iPhoneが手元になくても記録でき、コンプリケーションで断食も確認 • ホーム画面とロック画面のウィジェットはすべて無料（今日の記録、連続日数、今週の平均、雲、クイック記録）、コントロールセンターのボタン • Siriやショートカットで体重や水分を記録、今日の画面を開く • 体重とウエストを「ヘルスケア」Appに書き込んだり、体重の記録を読み込んだりできます（どちらも任意） • CSVとPDF月次レポートの書き出し（完全版） • アプリの表示は50言語に対応 プライバシー データはあなたの端末と、あなた自身のiCloudに保存され、iPhoneとApple Watchで自動同期されます。アカウント登録は不要で、広告やトラッキングもありません。 無料 体重記録と7日平均、直近30日の推移と履歴、好きなモジュール1つ（12:12・14:10・16:8の断食、注射カード、水分・たんぱく質から選択）、からだの数字1項目、リマインダー1つ、Apple Watchでの記録とコンプリケーション、ホーム画面とロック画面のすべてのウィジェット、雲の基本の姿、アカウント不要、iCloud同期。 Kumo 完全版 複数モジュールの同時利用、からだの数字の全項目、18:6・20:4・カスタムの断食と断食グラフ、ロック画面とDynamic Islandのライブカウントダウン、3か月・全期間の推移と30日より前の履歴、写真のビフォーアフター、CSVとPDFの書き出し、複数のリマインダーと水分リマインダー、着せ替え・天気。 Kumo 完全版は、月額または年額の自動更新サブスクリプション、または1回のアプリ内購入でご利用いただけます。お支払いはApple アカウントに請求されます。サブスクリプションは、現在の期間が終わる24時間以上前に解約しない限り自動で更新されます。管理や解約は、Apple アカウントの設定からいつでも行えます。 Kumoは個人の記録用アプリで、医療アドバイスは行いません。必ず医師の指示に従ってください。 プライバシーポリシー：https://alice51849.github.io/ios-app-guide/apps/kumo/privacy.html 利用規約：https://www.apple.com/legal/internet-services/itunes/dev/stdeula/ ご質問やご要望は、このページの「Appサポート」リンクからお寄せください。",
+      "category": "health",
+      "category_label": "健康",
+      "purchase_model": "neutral",
+      "purchase_label": "現在の App Store 情報を確認",
+      "one_time_option": false,
+      "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "no_tracking"
+      ],
+      "privacy_labels": [
+        "アカウント不要",
+        "広告なし",
+        "追跡なし"
+      ],
+      "device_surfaces": [
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Apple Watch"
+      ],
+      "badge_labels": [
+        "健康",
+        "現在の App Store 情報を確認",
+        "アカウント不要",
+        "広告なし",
+        "追跡なし",
+        "Apple Watch",
+        "App Store · 無料"
+      ],
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ja/kumo.html",
+      "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/kumo/decision/l/ja/index.html",
+      "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/ja/kumo.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Fkumo%2Fdecision%2Fl%2Fja%2Findex.html&format=json",
+      "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/ja.json",
+      "app_store_id": "6830824515",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6830824515",
+      "app_store_url": "https://apps.apple.com/jp/app/id6830824515?pt=118326163&ct=geo_pick&mt=8",
+      "app_store_cta_label": "App Store で Kumo 体重記録・GLP-1 注射記録・断食タイマー を入手",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "JPY",
+        "formatted_price": "無料"
+      },
+      "guide_cta_label": "完全ガイドを読む",
+      "publisher_disclosure": "これは、掲載するすべてのアプリの開発元である Lumi Studio が公開する一次資料です。",
+      "source_persona_query": "glp-1 tracker app to log weight and shot day on iphone",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,
@@ -2726,7 +2787,7 @@
       "app_name": "TripBee Cute：かわいい旅のしおり",
       "priority_rank": null,
       "priority_group": "baseline_coverage",
-      "publisher_query": "TripBee Cute：かわいい旅のしおり — 旅行計画を友だちと作成・共有、出発までカウントダウン | iOS App",
+      "publisher_query": "TripBee Cute：かわいい旅のしおり — 友達と旅行計画・旅程表を共有、割り勘も。出発カウントダウン | iOS App",
       "decision_context": "スクショやメール、メモに散らばった旅の予定を、TripBee Cuteがかわいいイラストの旅のしおり1冊にまとめます。カウントダウンもフライトも毎日の予定も持ち物も、1ページで全部見渡せます。 旅はそれぞれ、本棚に並ぶ1冊のしおりに。イラストの表紙を開いたら、そのまま下へスクロールするだけで、出発までのカウントダウン、フライト、毎日の予定、持ち物リストとメモまで続きます。 ここがうれしい 旅の全体が1ページで見渡せて、アプリを行ったり来たりしなくていい。 日ごとに色が分かれて一目でわかり、日付で絞り込めばその日の予定だけを表示できる。 出発までのカウントダウンで旅の前からわくわく。Apple Watchでも確認できる。 写真やチケット、メモを、その予定のすぐそばに保存できる。 iCloudで友だちを招待して、同じしおりを一緒に編集できる。 Webしおりで共有すれば、どのブラウザやチャットアプリでも開けて、オフラインでも見られる。 こんな旅に 週末の街歩き、家族旅行、女子旅、卒業旅行、新婚旅行、ライブ遠征、はじめての海外旅行にも。旅に名前をつけて表紙を選び、フライトを入れて毎日の予定を埋めるだけ。雨が降ったら雨の日プランに切り替えられます。表計算で予定を立てる派なら、CSVテンプレートを書き出して自分で記入するか、ふだん使っているAIアシスタントに記入してもらい、読み込めばしおりが完成します。 主な機能 イラスト表紙57種類：街、名所、季節、旅の気分（6種類を収録、Cute Passでさらに51種類） 出発までのカウントダウン、行き先の天気と現地時刻 搭乗券風のフライトカード：時刻、ターミナル、予約番号 毎日の予定：日ごとの名前、ステッカー、完了チェック、並べ替え すき間時間と、メインの予定からコピーできる雨の日プラン 日ごとの色分けと、日付での絞り込み 予定ごとに写真・チケット・メモを添付、マップアプリで道順も確認 持ち物リストと、同行者・季節・日数から作るスマート持ち物リスト 旅のメモとやさしいリマインダー 友だちと一緒に計画：iCloudで招待して同じしおりを共同編集し、変更はお互いの端末に同期（相手にもTripBee Cuteが必要です） 自分の複数の端末間でのiCloud同期 CSVの読み込み：記入したテンプレートがそのまましおりに バックアップの書き出しと読み込み：すべて置き換えるか、新しいものだけを追加して何も消さない統合を選べます Webしおり：1つのWebファイルでどのブラウザでも開け、カウントダウンも進み続けます 写真やチケット入りの旅行ファイルを共有でき、TripBeeとTripBee Liteの旅行ファイルも開けます 表紙イラストで次の旅を表示するホーム画面・ロック画面ウィジェット カウントダウンと次の予定がわかるApple Watchアプリ ダークモード、iPad、50言語に対応（端末の言語に合わせるほか、アプリ内でも切り替え可能） プライバシー アカウント登録なし、広告なし、トラッキングなし。しおりは端末に保存され、同期をオンにしたときだけ、あなた自身のプライベートなiCloudに保存されます。天気はOpen-Meteoから、行き先の情報だけを使って取得します。 Cute Passについて 購入しなくても、しおりを一度に1冊保存でき、表紙6種類、CSVの読み込み、Webしおり、フライト、毎日の予定、持ち物リスト、ウィジェット、Apple Watchアプリが使えます。一部の機能は1回限りのApp内課金（Cute Pass）で利用できるようになります：しおりの冊数無制限、表紙51種類の追加、スマート持ち物リスト、iCloud同期とバックアップ、写真やチケット入りの旅行ファイルの共有、友だちとの共同編集。 お問い合わせ ご質問やご要望は、このページのAppサポートのリンクからお寄せください。",
       "category": "travel",
       "category_label": "旅行",

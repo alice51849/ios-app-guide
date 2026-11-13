@@ -4,7 +4,7 @@
 
 ഓരോ ആപ്പും ആരെ ലക്ഷ്യമിട്ട് രൂപകൽപ്പന ചെയ്തതാണെന്ന്, അവർ പൂർത്തിയാക്കാൻ ശ്രമിക്കുന്ന ജോലി, നേരിട്ട് App Store വഴി എത്താനുള്ള വഴി എന്നിവയുടെ ആദ്യകക്ഷി കാറ്റലോഗ്
 
-59 സ്ഥിരീകരിച്ച സജീവ iOS ആപ്പുകളിലും 50 Apple ലൊക്കലുകളിലും പ്രസാധകർ എഴുതിയ തിരയൽ ഉദ്ദേശ്യങ്ങൾ
+60 സ്ഥിരീകരിച്ച സജീവ iOS ആപ്പുകളിലും 50 Apple ലൊക്കലുകളിലും പ്രസാധകർ എഴുതിയ തിരയൽ ഉദ്ദേശ്യങ്ങൾ
 
 **ലൊക്കൽ:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · **ml-IN** · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -107,6 +107,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **GBAGo: ദൃശ്യ സേവുകൾ** | GBAGo: ദൃശ്യ സേവുകൾ — റിക്കവറി മാപ്പ് · സ്നാപ്ഷോട്ട് \| iOS App | iPhone-നും iPad-നുമുള്ള ഗെയിം എമുലേറ്ററാണ് GBAGo. Files ആപ്പിൽ നിന്ന് .gba, .gbc, .gb ഫയലുകൾ (അല്ലെങ്കിൽ അവയിലൊന്ന് അടങ്ങിയ .zip) ഇംപോർട്ട് ചെയ്ത്, ടച്ച് | പണം നൽകേണ്ട ഡൗൺലോഡ് | [ഗൈഡ്](https://open.cait518.cc/ios-app-guide/ml-IN/gbago.html) | [App Store-ൽ നിന്ന് GBAGo: ദൃശ്യ സേവുകൾ നേടൂ](https://apps.apple.com/in/app/id6804564400?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag Lite: വില മണിക്കൂറിൽ** | HoursTag Lite: വില മണിക്കൂറിൽ — ബോധപൂർവ വാങ്ങൽ: യഥാർഥ വില \| iOS App | വാങ്ങുന്നതിന് മുമ്പ്, അതിന് യഥാർഥത്തിൽ എത്ര മണിക്കൂർ ജോലി വേണമെന്ന് നോക്കൂ. കൈയിൽ കിട്ടുന്ന മണിക്കൂർ വേതനം നൽകിയാൽ HoursTag Lite ഓരോ വിലയും ജോലിസമയമാക്കി | സൗജന്യമായി ആരംഭിക്കുക · ഒറ്റത്തവണ വാങ്ങലിലൂടെ അൺലോക്ക് | [ഗൈഡ്](https://open.cait518.cc/ios-app-guide/ml-IN/hourstaglite.html) | [App Store-ൽ നിന്ന് HoursTag Lite: വില മണിക്കൂറിൽ നേടൂ](https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag: സമയം വാങ്ങുക** | HoursTag: സമയം വാങ്ങുക — മണിക്കൂർ വേതനവും ചെലവും \| iOS App | വില എത്രയെന്ന് അറിയാമോ? ഡോളറുകളിൽ അല്ല, നിങ്ങളുടെ ജീവിതത്തിലെ മണിക്കൂറുകളിൽ. | പണം നൽകേണ്ട ഡൗൺലോഡ് | [ഗൈഡ്](https://open.cait518.cc/ios-app-guide/ml-IN/hourstag.html) | [App Store-ൽ നിന്ന് HoursTag: സമയം വാങ്ങുക നേടൂ](https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=geo_pick&mt=8) |
+| **Kumo: ഭാരം കുറയ്ക്കൽ ട്രാക്കർ** | Kumo: ഭാരം കുറയ്ക്കൽ ട്രാക്കർ — ഉപവാസം, GLP-1 ഇൻജക്ഷൻ ലോഗ് \| iOS App | ദിവസേനയുള്ള ഏറ്റക്കുറച്ചിലല്ല, യഥാർത്ഥ ട്രെൻഡ് കാണൂ: Kumo ദിവസം 10 സെക്കൻഡിൽ ഭാരം കുറിച്ച് 7 ദിവസ ശരാശരി കാണിക്കും, ഒപ്പം കൂടെ വളരുന്ന ക്യൂട്ട് മേഘവും | നിലവിലെ ലിസ്റ്റിംഗ് പരിശോധിക്കുക | [ഗൈഡ്](https://open.cait518.cc/ios-app-guide/ml-IN/kumo.html) | [App Store-ൽ നിന്ന് Kumo: ഭാരം കുറയ്ക്കൽ ട്രാക്കർ നേടൂ](https://apps.apple.com/in/app/id6830824515?pt=118326163&ct=geo_pick&mt=8) |
 | **LED Moving Text** | LED Moving Text — സ്ക്രീനിൽ ഓടുന്ന ബോർഡ് \| iOS App | ഒരു വരി ടൈപ്പ് ചെയ്ത് ഐഫോൺ ഉയർത്തിപ്പിടിക്കൂ. ആൾക്കൂട്ടത്തിന്റെ പിന്നിൽ നിന്നും, എത്തിച്ചേരൽ ഹാളിന്റെ മറുവശത്തു നിന്നും, കൗണ്ടറിനു മുകളിലൂടെയും | സൗജന്യമായി ആരംഭിക്കുക · ഒറ്റത്തവണ വാങ്ങലിലൂടെ അൺലോക്ക് | [ഗൈഡ്](https://open.cait518.cc/ios-app-guide/ml-IN/ledmovingtext.html) | [App Store-ൽ നിന്ന് LED Moving Text നേടൂ](https://apps.apple.com/in/app/id6806639602?pt=118326163&ct=geo_pick&mt=8) |
 | **LockHour Pro** | പഠന സമയത്ത് സോഷ്യൽ മീഡിയ ബ്ലോക്ക് ചെയ്യാൻ മികച്ച ആപ്പ് iPhone | പരീക്ഷകളിൽ, മനോശക്തി ഉപകരണം അല്ല — കർശനമായ സമയപരിധിയുള്ള തടസ്സമാണ്. അതിനുവേണ്ടിയാണ് LockHour Pro ഉണ്ടാക്കിയത്. | സൗജന്യമായി ആരംഭിക്കുക · ഒറ്റത്തവണ വാങ്ങലിലൂടെ അൺലോക്ക് | [ഗൈഡ്](https://open.cait518.cc/ios-app-guide/ml-IN/answers/best-app-to-block-social-media-while-studying-iphone.html) | [App Store-ൽ നിന്ന് LockHour Pro നേടുക →](https://apps.apple.com/in/app/id6780107485?pt=118326163&ct=geo_pick&mt=8) |
 | **Lumi Bopomofo** | പഠിക്കാൻ കുട്ടികൾക്ക് മികച്ച ബൊപ്പോമോഫോ ആപ്പ് iPhone-ൽ | ആദ്യമായി ചൈനീസ് ഉച്ചാരണചിഹ്നങ്ങൾ പഠിക്കുന്ന കുട്ടിക്ക്, 37 ചിഹ്നങ്ങളും ട്രേസിംഗിലൂടെയും കളിയിലൂടെയും പരിചയപ്പെടുത്തുന്ന ആപ്പാണ് വേണ്ടത്. 4–7 വയസ്സിലെ ആദ്യ പഠനഘട്ടത്തിന്, പരസ്യമില്ലാതെ, ഡാറ്റ ശേഖരിക്കാതെ. ഈ വിടവാണ് Lumi Bopomofo നികത്താൻ ശ്രമിക്കുന്നത്. | സൗജന്യമായി ആരംഭിക്കുക · ഒറ്റത്തവണ വാങ്ങലിലൂടെ അൺലോക്ക് | [ഗൈഡ്](https://open.cait518.cc/ios-app-guide/ml-IN/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html) | [App Store-ൽ നിന്ന് Lumi Bopomofo നേടുക →](https://apps.apple.com/in/app/id6773017109?pt=118326163&ct=geo_pick&mt=8) |
@@ -151,7 +152,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## പൂർണ്ണ ഡാറ്റാസെറ്റ് ഡൗൺലോഡ് ചെയ്യുക
 
-JSON, JSONL, CSV എന്നിവയിൽ ഒരേ 2,950 രേഖകൾ ഉൾക്കൊള്ളുന്നു
+JSON, JSONL, CSV എന്നിവയിൽ ഒരേ 3,000 രേഖകൾ ഉൾക്കൊള്ളുന്നു
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -159,6 +160,6 @@ JSON, JSONL, CSV എന്നിവയിൽ ഒരേ 2,950 രേഖകൾ ഉ
 
 [ഹോം](https://open.cait518.cc/ios-app-guide/ml-IN/index.html) · [തുറന്ന ഡാറ്റ](https://open.cait518.cc/ios-app-guide/ml-IN/data/lumi-studio-publisher-search-intent-catalog.html) · [ലൈസൻസ്](https://creativecommons.org/licenses/by/4.0/)
 
-അപ്ഡേറ്റ് ചെയ്തത്: 2026-11-11
+അപ്ഡേറ്റ് ചെയ്തത്: 2026-11-13
 
 CC BY 4.0 യഥാർത്ഥ കാറ്റലോഗ് സംയോജനത്തിന് ബാധകമാണ്; ആപ്പ് നാമങ്ങളും App Store മാർക്കുകളും അവയുടെ ഉടമകളുടെതാണ്

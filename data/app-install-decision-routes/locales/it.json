@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "it",
-  "dateModified": "2026-11-12",
-  "content_digest": "7de1d37867a442524f0f71b12bc9215167c94decafe68fe7795797e73ca1646a",
-  "generation_digest": "4dbd71535e18ea34767ec4fa1071e32a770d503fca2637533a63df4a1fcbb11d",
+  "dateModified": "2026-11-13",
+  "content_digest": "d9c773c2562d52039903cf822e8ef7778090b22f1afda56ded04af6f7e8d4ca6",
+  "generation_digest": "f5f987bd60677ddb93fca5761c3080eab8bd40202e8756edcc2f8e99e8103264",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 59,
+  "record_count": 60,
   "syndication": {
     "atom": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/it.atom.xml",
     "rss": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/it.rss.xml",
@@ -1234,6 +1234,67 @@
       "guide_cta_label": "Leggi la guida completa",
       "publisher_disclosure": "Questo contenuto è pubblicato direttamente da Lumi Studio, lo sviluppatore di tutte le app elencate.",
       "source_persona_query": "best app to track where my money goes and save more",
+      "source_surface": "app_guide_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "it:kumo",
+      "locale": "it",
+      "app_key": "kumo",
+      "app_name": "Kumo: Diario Peso e Digiuno",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "Kumo: Diario Peso e Digiuno — Dimagrire, tracker GLP-1 | iOS App",
+      "decision_context": "Il peso sale e scende ogni giorno: con Kumo lo segni in 10 secondi e la media a 7 giorni ti mostra la tendenza, non gli sbalzi. Digiuno, iniezioni, acqua e proteine si attivano solo se ti servono, con o senza GLP-1, e una nuvola tenera cresce ogni volta che torni. Pensato per iPhone Duo: aprilo e Kumo riempie tutto lo schermo interno con due colonne spaziose. PERCHÉ KUMO • Anche «Oggi niente bilancia» conta e la serie continua • Nessun account, nessuna pubblicità, nessun tracciamento PESO E MISURE • Chilogrammi, libbre o stone; media a 7 giorni con tendenza e storico degli ultimi 30 giorni e confronto con la settimana scorsa • Tendenze a 3 mesi e su tutto il periodo e storico precedente (Kumo Completo) • Girovita, percentuale di massa grassa, fianchi, petto, coscia, braccio e collo, ognuna con il suo andamento (1 gratis, tutte con Kumo Completo) • Data stimata per l'obiettivo al ritmo attuale, solo indicativa DIGIUNO INTERMITTENTE • 12:12, 14:10 e 16:8; 18:6, 20:4, personalizzato e grafici del digiuno con Kumo Completo; avvio con un tocco e ora di inizio modificabile • Tempo rimanente su Apple Watch; conto alla rovescia su schermata di blocco e Dynamic Island con Kumo Completo • Promemoria per un buon pasto; Kumo non spinge mai a digiunare più a lungo e il limite è 23 ore • Se sei in gravidanza o allatti, hai meno di 18 anni, problemi alimentari o una malattia cronica, chiedi al medico prima di digiunare INIEZIONI (FACOLTATIVO) • Data, zona, note tue e come ti senti, con mappa delle zone recenti • Promemoria con la frequenza che scegli tu e conto alla rovescia alla prossima • Solo registrazione: Kumo non calcola, non suggerisce né registra dosi e non interpreta i dati ACQUA, PROTEINE E NUVOLA • +1 bicchiere d'acqua o +10/20/30 g di proteine con un tocco, con gli anelli del giorno • Passi di oggi dall'app Salute, solo mostrati e mai salvati • La nuvola cresce in 5 fasi; nuvola base gratis, vestiti e temi (sole, arcobaleno, pioggia, neve, cielo stellato) con Kumo Completo APPLE WATCH, WIDGET E SIRI • Apple Watch con Digital Crown e complicazioni, anche per il digiuno • Tutti i widget per Home e schermata di blocco sono gratis: registrato oggi, serie, media settimanale, nuvola e registrazione rapida • Pulsante nel Centro di Controllo, Siri e Comandi Rapidi • App Salute: se vuoi, scrivi peso e girovita o importa le pesate precedenti • Scheda settimanale da condividere senza mostrare il peso • Esportazione CSV e report mensile PDF (Kumo Completo) GRATIS Peso con media a 7 giorni, tendenza e storico degli ultimi 30 giorni; 1 modulo a scelta (digiuno 12:12, 14:10 o 16:8, iniezioni, o acqua e proteine); 1 misura; 1 promemoria; registrazione su Apple Watch e complicazioni; tutti i widget per Home e schermata di blocco; nuvola base; nessun account; dati sui tuoi dispositivi e nel tuo iCloud, nessun tracciamento; sincronizzazione iCloud. KUMO COMPLETO Più moduli insieme e tutte le misure; digiuno 18:6, 20:4, personalizzato e grafici; conto alla rovescia su schermata di blocco e Dynamic Island; tendenze a 3 mesi e su tutto il periodo e storico oltre 30 giorni; foto prima e dopo; esportazione CSV e PDF; più promemoria e promemoria acqua; vestiti e meteo. Kumo Completo è disponibile come abbonamento mensile o annuale a rinnovo automatico, oppure come acquisto in-app una tantum. Il pagamento viene addebitato sul tuo Account Apple. Gli abbonamenti si rinnovano automaticamente se non vengono disdetti almeno 24 ore prima della fine del periodo in corso; puoi gestirli o disdirli quando vuoi nelle impostazioni dell'Account Apple. Informativa sulla privacy: https://alice51849.github.io/ios-app-guide/apps/kumo/privacy.html Termini di utilizzo: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/ Domande o idee? Usa il link di supporto in questa pagina. Kumo serve solo per il monitoraggio personale e non fornisce consigli medici. Segui sempre le indicazioni del tuo medico.",
+      "category": "health",
+      "category_label": "Salute",
+      "purchase_model": "neutral",
+      "purchase_label": "Controlla la scheda attuale su App Store",
+      "one_time_option": false,
+      "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "no_tracking"
+      ],
+      "privacy_labels": [
+        "Nessun account",
+        "Nessuna pubblicità",
+        "Nessun tracciamento"
+      ],
+      "device_surfaces": [
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Apple Watch"
+      ],
+      "badge_labels": [
+        "Salute",
+        "Controlla la scheda attuale su App Store",
+        "Nessun account",
+        "Nessuna pubblicità",
+        "Nessun tracciamento",
+        "Apple Watch",
+        "App Store · Gratis"
+      ],
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/it/kumo.html",
+      "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/kumo/decision/l/it/index.html",
+      "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/it/kumo.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Fkumo%2Fdecision%2Fl%2Fit%2Findex.html&format=json",
+      "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/it.json",
+      "app_store_id": "6830824515",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6830824515",
+      "app_store_url": "https://apps.apple.com/it/app/id6830824515?pt=118326163&ct=geo_pick&mt=8",
+      "app_store_cta_label": "Scarica Kumo: Diario Peso e Digiuno sull'App Store",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis"
+      },
+      "guide_cta_label": "Leggi la guida completa",
+      "publisher_disclosure": "Questo contenuto è pubblicato direttamente da Lumi Studio, lo sviluppatore di tutte le app elencate.",
+      "source_persona_query": "glp-1 tracker app to log weight and shot day on iphone",
       "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
@@ -2924,7 +2985,7 @@
       "app_name": "TripBee Cute Diario di viaggio",
       "priority_rank": null,
       "priority_group": "baseline_coverage",
-      "publisher_query": "TripBee Cute Diario di viaggio — Pianificatore viaggi con amici | iOS App",
+      "publisher_query": "TripBee Cute Diario di viaggio — Pianificatore, amici e valigia | iOS App",
       "decision_context": "Biglietti negli screenshot, orari sparsi nelle chat, la lista della valigia su un foglietto: TripBee Cute raccoglie tutto in un libretto illustrato e carino, uno per ogni viaggio. Sulla tua mensola ogni viaggio ha la sua copertina illustrata. Aprila e il viaggio intero scorre in una sola pagina: copertina, conto alla rovescia per la partenza, voli, programma di ogni giorno e preparativi, su carta color crema con linee decise e illustrazioni tenere. Perché ti piacerà Sai sempre quanto manca alla partenza, con meteo e ora locale della destinazione. Ogni giorno ha il suo colore e, con il filtro per data, vedi solo la giornata che ti serve. I voli diventano carte d'imbarco con orari, terminal e codice di prenotazione. Foto, biglietti e note restano legati alla tappa giusta, e il percorso si apre nella tua app di mappe. Prepari la valigia spuntando una lista, anche intelligente in base a compagni di viaggio, stagione e durata. Gli amici modificano con te lo stesso libretto, ognuno dal proprio dispositivo. Per ogni tipo di viaggio Un weekend in città, le vacanze al mare, il viaggio di nozze o un tour con gli amici. Prima di partire controlli il programma, durante il viaggio spunti ciò che hai fatto e tieni a portata di mano il piano B per la pioggia, al ritorno ti resta un libretto da sfogliare di nuovo. Hai già tutto in un foglio di calcolo? Esporta il modello CSV, compilalo (se vuoi, chiedi al tuo assistente AI preferito di riempirlo con il tuo programma) e importalo: diventa subito un libretto. Funzioni 57 copertine illustrate: città, monumenti, stagioni e atmosfere di viaggio Conto alla rovescia, meteo della destinazione e ora locale Voli in stile carta d'imbarco Giornate con nome, sticker, spunte, tempo libero e piano B per la pioggia, da riordinare come vuoi Un colore per ogni giorno e filtro per data Foto, biglietti e note per ogni tappa, con indicazioni nell'app di mappe Lista bagagli, lista intelligente, note di viaggio e promemoria discreti Pianificazione con gli amici tramite iCloud, senza creare account Sincronizzazione iCloud tra i tuoi dispositivi Importazione da CSV e backup in un unico file: esporta, importa o unisci Libretto web da aprire in qualsiasi browser o chat, anche offline, con il conto alla rovescia che continua a scorrere Condivisione del viaggio con foto e biglietti, e apertura dei file di TripBee e TripBee Lite Widget per la schermata Home e di blocco con la tua copertina App per Apple Watch con conto alla rovescia e prossima tappa Modalità scura, iPad e 50 lingue Privacy e Cute Pass Nessun account, nessuna pubblicità, nessun tracciamento. I libretti restano sul tuo dispositivo e vengono salvati nel tuo iCloud privato solo se attivi la sincronizzazione. Il meteo arriva da Open-Meteo e usa soltanto la destinazione. Alcune funzioni si sbloccano con un acquisto in-app una tantum, Cute Pass: libretti senza limiti, altre 51 copertine, liste intelligenti, sincronizzazione iCloud, backup in un unico file, condivisione del viaggio con foto e biglietti e pianificazione con gli amici. Senza Cute Pass puoi conservare un libretto alla volta con 6 copertine e usare importazione CSV, libretto web, voli, programma, lista bagagli, widget e Apple Watch. Per pianificare insieme serve Cute Pass a chi invita, mentre gli amici devono avere TripBee Cute. Assistenza Per domande o suggerimenti usa il link di supporto in questa pagina.",
       "category": "travel",
       "category_label": "Viaggi",

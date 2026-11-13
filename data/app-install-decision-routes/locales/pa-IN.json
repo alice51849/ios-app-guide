@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "pa-IN",
-  "dateModified": "2026-11-12",
-  "content_digest": "7de1d37867a442524f0f71b12bc9215167c94decafe68fe7795797e73ca1646a",
-  "generation_digest": "4dbd71535e18ea34767ec4fa1071e32a770d503fca2637533a63df4a1fcbb11d",
+  "dateModified": "2026-11-13",
+  "content_digest": "d9c773c2562d52039903cf822e8ef7778090b22f1afda56ded04af6f7e8d4ca6",
+  "generation_digest": "f5f987bd60677ddb93fca5761c3080eab8bd40202e8756edcc2f8e99e8103264",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 59,
+  "record_count": 60,
   "syndication": {
     "atom": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/pa-IN.atom.xml",
     "rss": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/pa-IN.rss.xml",
@@ -1231,6 +1231,67 @@
       "guide_cta_label": "ਪੂਰਾ ਮਾਰਗਦਰਸ਼ਨ ਪੜ੍ਹੋ",
       "publisher_disclosure": "ਇਹ Lumi Studio ਵੱਲੋਂ ਪ੍ਰਕਾਸ਼ਿਤ ਪਹਿਲਾ-ਪੱਖ ਸਮੱਗਰੀ ਹੈ, ਜੋ ਹਰ ਦਰਜ ਕੀਤੇ ਐਪ ਦਾ ਡਿਵੈਲਪਰ ਹੈ।",
       "source_persona_query": "best app to track where my money goes and save more",
+      "source_surface": "app_guide_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "pa-IN:kumo",
+      "locale": "pa-IN",
+      "app_key": "kumo",
+      "app_name": "Kumo: ਭਾਰ ਘਟਾਉਣ ਦਾ ਟਰੈਕਰ",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "Kumo: ਭਾਰ ਘਟਾਉਣ ਦਾ ਟਰੈਕਰ — ਫਾਸਟਿੰਗ ਟਾਈਮਰ ਅਤੇ GLP-1 ਡਾਇਰੀ | iOS App",
+      "decision_context": "ਹਰ ਰੋਜ਼ ਭਾਰ ਉੱਪਰ-ਥੱਲੇ ਹੋਵੇ ਤਾਂ ਹੌਸਲਾ ਟੁੱਟਦਾ ਹੈ? Kumo ਨਾਲ ਰੋਜ਼ 10 ਸਕਿੰਟ ਵਿੱਚ ਭਾਰ ਦਰਜ ਕਰੋ ਅਤੇ 7 ਦਿਨਾਂ ਦੀ ਔਸਤ ਨਾਲ ਅਸਲ ਰੁਝਾਨ ਦੇਖੋ। GLP-1 ਇੰਜੈਕਸ਼ਨ ਲੈਂਦੇ ਹੋ ਜਾਂ ਨਹੀਂ, ਦੋਵਾਂ ਲਈ ਬਣਿਆ। iPhone Duo ਲਈ ਬਣਾਇਆ: ਖੋਲ੍ਹਦੇ ਹੀ Kumo ਦੋ ਖੁੱਲ੍ਹੇ ਕਾਲਮਾਂ ਵਿੱਚ ਪੂਰੀ ਅੰਦਰਲੀ ਸਕ੍ਰੀਨ ਭਰ ਦਿੰਦਾ ਹੈ। • ਖੋਲ੍ਹਦੇ ਹੀ ਅੱਜ ਦਾ ਦਿਨ ਅਤੇ ਪਿਛਲਾ ਭਾਰ ਤਿਆਰ, ±0.1 ਟੈਪ ਕਰੋ, ਹੋ ਗਿਆ • 7 ਦਿਨਾਂ ਦੀ ਔਸਤ, ਇਹ ਹਫ਼ਤਾ ਬਨਾਮ ਪਿਛਲਾ ਹਫ਼ਤਾ • “ਅੱਜ ਭਾਰ ਨਹੀਂ ਤੋਲਿਆ” ਵੀ ਗਿਣਿਆ ਜਾਂਦਾ ਹੈ, ਸਟ੍ਰੀਕ ਚੱਲਦੀ ਰਹਿੰਦੀ ਹੈ • ਸਿਰਫ਼ ਲੋੜੀਂਦੇ ਮੋਡੀਊਲ ਚਾਲੂ ਕਰੋ: ਫਾਸਟਿੰਗ, ਇੰਜੈਕਸ਼ਨ, ਪਾਣੀ ਅਤੇ ਪ੍ਰੋਟੀਨ • ਬੱਦਲ ਭਾਰ ਨਾਲ ਨਹੀਂ, ਤੁਹਾਡੇ ਦਰਜ ਕੀਤੇ ਦਿਨਾਂ ਨਾਲ ਵੱਡਾ ਹੁੰਦਾ ਹੈ • ਨਾ ਖਾਤਾ, ਨਾ ਇਸ਼ਤਿਹਾਰ, ਨਾ ਟ੍ਰੈਕਿੰਗ ਸਵੇਰੇ ਭਾਰ ਦਰਜ ਕਰੋ, ਇੰਜੈਕਸ਼ਨ ਵਾਲੇ ਦਿਨ ਤਾਰੀਖ ਅਤੇ ਥਾਂ ਲਿਖੋ। ਸੁਵਿਧਾਵਾਂ • ਭਾਰ ਦਾ ਰੁਝਾਨ: ਰੋਜ਼ਾਨਾ ਬਿੰਦੂ ਅਤੇ 7 ਦਿਨਾਂ ਦੀ ਔਸਤ ਰੇਖਾ, ਪਿਛਲੇ 30 ਦਿਨਾਂ ਦਾ ਰੁਝਾਨ ਅਤੇ ਇਤਿਹਾਸ; 3 ਮਹੀਨੇ ਅਤੇ ਸਾਰੇ ਸਮੇਂ ਦਾ ਰੁਝਾਨ, ਪੁਰਾਣਾ ਇਤਿਹਾਸ (Kumo Full) • ਸਰੀਰ ਦੇ ਮਾਪ: ਕਮਰ, ਬਾਡੀ ਫੈਟ %, ਹਿਪਸ, ਛਾਤੀ, ਪੱਟ, ਬਾਂਹ, ਗਰਦਨ, ਹਰ ਇੱਕ ਦਾ ਆਪਣਾ ਰੁਝਾਨ (1 ਮੁਫ਼ਤ, ਸਾਰੇ Kumo Full ਵਿੱਚ); ਟੀਚੇ ਦੀ ਅੰਦਾਜ਼ਨ ਤਾਰੀਖ ਸਿਰਫ਼ ਹਵਾਲੇ ਲਈ • ਫਾਸਟਿੰਗ ਟਾਈਮਰ: 12:12, 14:10, 16:8; Kumo Full ਵਿੱਚ 18:6, 20:4, ਆਪਣਾ ਅਤੇ ਫਾਸਟਿੰਗ ਚਾਰਟ; Apple Watch ਉੱਤੇ ਬਾਕੀ ਸਮਾਂ; ਲੌਕ ਸਕ੍ਰੀਨ ਅਤੇ Dynamic Island ਉੱਤੇ ਲਾਈਵ ਕਾਊਂਟਡਾਊਨ (Kumo Full); ਵੱਧ ਤੋਂ ਵੱਧ 23 ਘੰਟੇ • ਗਰਭਵਤੀ ਹੋ ਜਾਂ ਦੁੱਧ ਪਿਲਾ ਰਹੇ ਹੋ, ਉਮਰ 18 ਤੋਂ ਘੱਟ ਹੈ, ਖਾਣ ਦਾ ਵਿਕਾਰ ਜਾਂ ਪੁਰਾਣੀ ਬਿਮਾਰੀ ਹੈ ਤਾਂ ਫਾਸਟਿੰਗ ਤੋਂ ਪਹਿਲਾਂ ਡਾਕਟਰ ਨੂੰ ਪੁੱਛੋ • ਇੰਜੈਕਸ਼ਨ ਕਾਰਡ: ਤਾਰੀਖ, ਥਾਂ, ਨੋਟ, ਤੁਹਾਡੇ ਤੈਅ ਸਮੇਂ ਤੇ ਰਿਮਾਈਂਡਰ; ਸਿਰਫ਼ ਰਿਕਾਰਡ, ਕੋਈ ਹਿਸਾਬ ਜਾਂ ਡੋਜ਼ ਸੁਝਾਅ ਨਹੀਂ • ਪਾਣੀ ਅਤੇ ਪ੍ਰੋਟੀਨ: +1 ਗਲਾਸ, +10/20/30 g, ਅੱਜ ਦੀ ਰਿੰਗ; Health ਐਪ ਤੋਂ ਅੱਜ ਦੇ ਕਦਮ ਸਿਰਫ਼ ਦਿਖਦੇ ਹਨ, ਸੇਵ ਨਹੀਂ ਹੁੰਦੇ • ਬੱਦਲ 5 ਪੜਾਵਾਂ ਵਿੱਚ ਵੱਡਾ ਹੁੰਦਾ ਹੈ, ਮੁੱਢਲਾ ਬੱਦਲ ਮੁਫ਼ਤ; ਕੱਪੜੇ ਅਤੇ ਮੌਸਮ ਥੀਮ (Kumo Full): ਧੁੱਪ, ਸਤਰੰਗੀ ਪੀਂਘ, ਮੀਂਹ, ਬਰਫ਼, ਤਾਰਿਆਂ ਭਰਿਆ ਅਸਮਾਨ • ਹਫ਼ਤਾਵਾਰੀ ਪ੍ਰਗਤੀ ਕਾਰਡ: ਸਿਰਫ਼ ਬਦਲਾਅ ਅਤੇ ਕਰਵ, ਭਾਰ ਦਾ ਅੰਕੜਾ ਨਹੀਂ; ਇੱਕ ਟੈਪ ਨਾਲ ਸਾਂਝਾ ਕਰੋ • Apple Watch ਤੋਂ ਦਰਜ ਅਤੇ ਵਾਚ ਫੇਸ ਕੰਪਲੀਕੇਸ਼ਨ, ਫਾਸਟਿੰਗ ਸਮੇਤ • ਹੋਮ ਅਤੇ ਲੌਕ ਸਕ੍ਰੀਨ ਦੇ ਸਾਰੇ ਵਿਜੇਟ ਮੁਫ਼ਤ: ਅੱਜ ਦਰਜ ਕੀਤਾ ਜਾਂ ਨਹੀਂ, ਸਟ੍ਰੀਕ, ਹਫ਼ਤਾਵਾਰੀ ਔਸਤ, ਬੱਦਲ, ਅਤੇ ਤੇਜ਼ ਦਰਜ ਵਿਜੇਟ • Siri, Health ਐਪ • CSV ਅਤੇ ਮਹੀਨਾਵਾਰ PDF ਰਿਪੋਰਟ ਐਕਸਪੋਰਟ (Kumo Full) ਡਾਟਾ ਤੁਹਾਡੇ ਡਿਵਾਈਸ ਅਤੇ ਤੁਹਾਡੇ ਆਪਣੇ iCloud ਵਿੱਚ ਰਹਿੰਦਾ ਹੈ। ਮੁਫ਼ਤ ਭਾਰ ਦਰਜ, 7 ਦਿਨਾਂ ਦੀ ਔਸਤ ਅਤੇ ਪਿਛਲੇ 30 ਦਿਨਾਂ ਦਾ ਰੁਝਾਨ ਤੇ ਇਤਿਹਾਸ; ਤੁਹਾਡੀ ਪਸੰਦ ਦਾ 1 ਮੋਡੀਊਲ (ਫਾਸਟਿੰਗ 12:12, 14:10 ਜਾਂ 16:8, ਇੰਜੈਕਸ਼ਨ ਕਾਰਡ, ਜਾਂ ਪਾਣੀ ਅਤੇ ਪ੍ਰੋਟੀਨ); 1 ਸਰੀਰ ਦਾ ਮਾਪ; 1 ਰਿਮਾਈਂਡਰ; Apple Watch ਤੋਂ ਦਰਜ ਅਤੇ ਵਾਚ ਫੇਸ ਕੰਪਲੀਕੇਸ਼ਨ; ਹੋਮ ਅਤੇ ਲੌਕ ਸਕ੍ਰੀਨ ਦੇ ਸਾਰੇ ਵਿਜੇਟ; ਮੁੱਢਲਾ ਬੱਦਲ; ਖਾਤੇ ਦੀ ਲੋੜ ਨਹੀਂ; iCloud ਸਿੰਕ। Kumo Full ਇੱਕ ਵਾਰ ਵਿੱਚ ਕਈ ਮੋਡੀਊਲ ਅਤੇ ਸਾਰੇ ਸਰੀਰ ਦੇ ਮਾਪ; 18:6, 20:4, ਆਪਣਾ ਫਾਸਟਿੰਗ ਅਤੇ ਫਾਸਟਿੰਗ ਚਾਰਟ; ਲੌਕ ਸਕ੍ਰੀਨ ਅਤੇ Dynamic Island ਉੱਤੇ ਲਾਈਵ ਕਾਊਂਟਡਾਊਨ; 3 ਮਹੀਨੇ ਅਤੇ ਸਾਰੇ ਸਮੇਂ ਦਾ ਰੁਝਾਨ ਅਤੇ 30 ਦਿਨਾਂ ਤੋਂ ਪੁਰਾਣਾ ਇਤਿਹਾਸ; ਪਹਿਲਾਂ ਤੇ ਬਾਅਦ ਦੀਆਂ ਫੋਟੋਆਂ; CSV ਅਤੇ PDF ਐਕਸਪੋਰਟ; ਕਈ ਰਿਮਾਈਂਡਰ ਅਤੇ ਪਾਣੀ ਦੇ ਰਿਮਾਈਂਡਰ; ਕੱਪੜੇ ਅਤੇ ਮੌਸਮ। ਕੁਝ ਸੁਵਿਧਾਵਾਂ ਲਈ Kumo Full ਚਾਹੀਦਾ ਹੈ। Kumo Full ਮਹੀਨਾਵਾਰ ਜਾਂ ਸਾਲਾਨਾ ਆਪਣੇ ਆਪ ਰੀਨਿਊ ਹੋਣ ਵਾਲੀ ਸਬਸਕ੍ਰਿਪਸ਼ਨ, ਜਾਂ ਇੱਕ ਵਾਰ ਦੀ ਇਨ-ਐਪ ਖਰੀਦ ਵਜੋਂ ਉਪਲਬਧ ਹੈ। ਭੁਗਤਾਨ ਤੁਹਾਡੇ Apple Account ਤੋਂ ਹੁੰਦਾ ਹੈ। ਜੇ ਮੌਜੂਦਾ ਮਿਆਦ ਖਤਮ ਹੋਣ ਤੋਂ ਘੱਟੋ-ਘੱਟ 24 ਘੰਟੇ ਪਹਿਲਾਂ ਰੱਦ ਨਾ ਕਰੋ, ਤਾਂ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਆਪਣੇ ਆਪ ਰੀਨਿਊ ਹੁੰਦੀ ਹੈ; Apple Account ਸੈਟਿੰਗਾਂ ਵਿੱਚ ਕਦੇ ਵੀ ਪ੍ਰਬੰਧ ਜਾਂ ਰੱਦ ਕਰੋ। ਪਰਦੇਦਾਰੀ ਨੀਤੀ: https://alice51849.github.io/ios-app-guide/apps/kumo/privacy.html ਵਰਤੋਂ ਦੀਆਂ ਸ਼ਰਤਾਂ: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/ ਸਹਾਇਤਾ ਲਈ App Store ਪੰਨੇ ਦਾ ਸਹਾਇਤਾ ਲਿੰਕ ਵਰਤੋ। Kumo ਸਿਰਫ਼ ਨਿੱਜੀ ਰਿਕਾਰਡ ਲਈ ਹੈ ਅਤੇ ਡਾਕਟਰੀ ਸਲਾਹ ਨਹੀਂ ਦਿੰਦਾ। ਹਮੇਸ਼ਾ ਆਪਣੇ ਡਾਕਟਰ ਦੀਆਂ ਹਦਾਇਤਾਂ ਮੰਨੋ।",
+      "category": "health",
+      "category_label": "ਸਿਹਤ",
+      "purchase_model": "neutral",
+      "purchase_label": "ਮੌਜੂਦਾ ਸੂਚੀ ਦੀ ਜਾਂਚ ਕਰੋ",
+      "one_time_option": false,
+      "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "no_tracking"
+      ],
+      "privacy_labels": [
+        "ਕੋਈ ਖਾਤਾ ਨਹੀਂ",
+        "ਕੋਈ ਵਿਗਿਆਪਨ ਨਹੀਂ",
+        "ਕੋਈ ਟ੍ਰੈਕਿੰਗ ਨਹੀਂ"
+      ],
+      "device_surfaces": [
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Apple Watch"
+      ],
+      "badge_labels": [
+        "ਸਿਹਤ",
+        "ਮੌਜੂਦਾ ਸੂਚੀ ਦੀ ਜਾਂਚ ਕਰੋ",
+        "ਕੋਈ ਖਾਤਾ ਨਹੀਂ",
+        "ਕੋਈ ਵਿਗਿਆਪਨ ਨਹੀਂ",
+        "ਕੋਈ ਟ੍ਰੈਕਿੰਗ ਨਹੀਂ",
+        "Apple Watch",
+        "App Store · ਮੁਫ਼ਤ"
+      ],
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/pa-IN/kumo.html",
+      "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/kumo/decision/l/pa-IN/index.html",
+      "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/pa-IN/kumo.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Fkumo%2Fdecision%2Fl%2Fpa-IN%2Findex.html&format=json",
+      "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/pa-IN.json",
+      "app_store_id": "6830824515",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6830824515",
+      "app_store_url": "https://apps.apple.com/in/app/id6830824515?pt=118326163&ct=geo_pick&mt=8",
+      "app_store_cta_label": "App Store ਤੋਂ Kumo: ਭਾਰ ਘਟਾਉਣ ਦਾ ਟਰੈਕਰ ਪ੍ਰਾਪਤ ਕਰੋ",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "ਮੁਫ਼ਤ"
+      },
+      "guide_cta_label": "ਪੂਰਾ ਮਾਰਗਦਰਸ਼ਨ ਪੜ੍ਹੋ",
+      "publisher_disclosure": "ਇਹ Lumi Studio ਵੱਲੋਂ ਪ੍ਰਕਾਸ਼ਿਤ ਪਹਿਲਾ-ਪੱਖ ਸਮੱਗਰੀ ਹੈ, ਜੋ ਹਰ ਦਰਜ ਕੀਤੇ ਐਪ ਦਾ ਡਿਵੈਲਪਰ ਹੈ।",
+      "source_persona_query": "glp-1 tracker app to log weight and shot day on iphone",
       "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,

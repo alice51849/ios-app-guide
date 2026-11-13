@@ -4,7 +4,7 @@
 
 各アプリの対象ユーザー、達成したいタスク、App Store への直接の導線を、開発元が公開するカタログです。
 
-App Store での公開を確認済みの 59 個の iOS アプリと、Apple の 50 の言語・地域に対応した、開発元作成の検索意図です。
+App Store での公開を確認済みの 60 個の iOS アプリと、Apple の 50 の言語・地域に対応した、開発元作成の検索意図です。
 
 **言語・地域:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · **ja** · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -106,6 +106,7 @@ App Store での公開を確認済みの各アプリから、主要な購入者�
 | **GBAGo: 見えるセーブ** | GBAGo: 見えるセーブ — リカバリーマップ · 自動スナップショット \| iOS App | GBAGoは、iPhone・iPad向けのゲームエミュレーターです。「ファイル」アプリから、お手持ちの.gba、.gbc、.gbのゲームファイル（またはそのいずれかを含む.zip）をインポートし、画面上のタッチ操作やゲームコントローラーを使って60fpsでプレイできます。プレビュー付きのセーブスロットと2分ご | 有料ダウンロード | [ガイド](https://open.cait518.cc/ios-app-guide/ja/gbago.html) | [App Store で GBAGo: 見えるセーブ を入手](https://apps.apple.com/jp/app/id6804564400?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag** | best app to track where my money goes and save more | If saving feels abstract, tracking goals in hours-worked instead of dollars makes progress feel earned — you're not saving $500, you're saving 20 hours of your life toward something. If that is your situation, HoursTag is worth a look. | 有料ダウンロード | [ガイド](https://open.cait518.cc/ios-app-guide/ja/answers/best-app-to-track-where-my-money-goes-and-save-more.html) | [App StoreでHoursTagを入手 →](https://apps.apple.com/jp/app/id6754218117?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag Lite** | best app to convert prices into work hours before buying | HoursTag Lite — HoursTag Lite - See the real price of things Every purchase costs hours of your life. Free to start · One-time unlock · No subscription. | 無料で開始・買い切りで解除 | [ガイド](https://open.cait518.cc/ios-app-guide/ja/answers/best-app-to-convert-prices-into-work-hours-before-buying.html) | [App StoreでHoursTag Liteを入手 →](https://apps.apple.com/jp/app/id6794039979?pt=118326163&ct=geo_pick&mt=8) |
+| **Kumo 体重記録・GLP-1 注射記録・断食タイマー** | Kumo 体重記録・GLP-1 注射記録・断食タイマー — かわいい雲と1日10秒、ダイエット管理を習慣に \| iOS App | 毎日の増減に一喜一憂しなくていいように、Kumoは1日10秒の記録と7日平均で体重の「流れ」を見せます。GLP-1注射をしていてもいなくても使えて、記録しに来た日数で雲が育ちます。 | 現在の App Store 情報を確認 | [ガイド](https://open.cait518.cc/ios-app-guide/ja/kumo.html) | [App Store で Kumo 体重記録・GLP-1 注射記録・断食タイマー を入手](https://apps.apple.com/jp/app/id6830824515?pt=118326163&ct=geo_pick&mt=8) |
 | **LED Moving Text** | LED Moving Text — 画面がそのまま電光掲示板に \| iOS App | 文字を打つだけで、iPhone が明るく流れる大きな掲示板になります。ホールの後方でも、到着ロビーの向こうからでも、ひと目で読めます。 | 無料で開始・買い切りで解除 | [ガイド](https://open.cait518.cc/ios-app-guide/ja/ledmovingtext.html) | [App Store で LED Moving Text を入手](https://apps.apple.com/jp/app/id6806639602?pt=118326163&ct=geo_pick&mt=8) |
 | **LockHour Pro** | 勉強中にSNSをブロックする最高のiPhoneアプリ | 試験中は意志力ではなく、強制的な時間制限ブロックが必要です。— LockHour Proはそれを実現します。 | 無料で開始・買い切りで解除 | [ガイド](https://open.cait518.cc/ios-app-guide/ja/answers/best-app-to-block-social-media-while-studying-iphone.html) | [App StoreでLockHour Proを入手 →](https://apps.apple.com/jp/app/id6780107485?pt=118326163&ct=geo_pick&mt=8) |
 | **Lumi Bopomofo** | iPhoneで子供が注音符号（ボポモフォ）を学ぶためのおすすめアプリ | 注音符号を初めて学ぶ子供向けに、37の記号すべてをトレースと遊びでカバーし、4〜7歳の初学期に合わせて広告なし。その隙間を埋めるためにLumi Bopomofoを作りました。 | 無料で開始・買い切りで解除 | [ガイド](https://open.cait518.cc/ios-app-guide/ja/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html) | [App StoreでLumi Bopomofoを入手 →](https://apps.apple.com/jp/app/id6773017109?pt=118326163&ct=geo_pick&mt=8) |
@@ -134,7 +135,7 @@ App Store での公開を確認済みの各アプリから、主要な購入者�
 | **Stay Clock:パタパタ卓上時計** | Stay Clock:パタパタ卓上時計 — 時計を常時表示・置き時計 \| iOS App | Stay Clockは、iPhoneやiPadを部屋の隅からでも読める常時点灯のデスク時計に変えます。パタパタ時計を含む101種類の文字盤から選べて（うち100種類は任意のLifetime購入で追加）、夜は真っ黒な背景に控えめな赤い文字盤へ切り替えられます。 | 無料で開始・買い切りで解除 | [ガイド](https://open.cait518.cc/ios-app-guide/ja/stayclock.html) | [App Store で Stay Clock:パタパタ卓上時計 を入手](https://apps.apple.com/jp/app/id6814035888?pt=118326163&ct=geo_pick&mt=8) |
 | **Studydown：伏せて時間記録** | Studydown：伏せて時間記録 — 机に伏せるだけ \| iOS App | スマホを画面を下にして置けば計測スタート、持ち上げれば一時停止。勉強や仕事の時間に、本当に集中した分だけが記録されます。 | 無料で開始・買い切りで解除 | [ガイド](https://open.cait518.cc/ios-app-guide/ja/studydown.html) | [App Store で Studydown：伏せて時間記録 を入手](https://apps.apple.com/jp/app/id6807335593?pt=118326163&ct=geo_pick&mt=8) |
 | **Trip Planet: Kids Quest** | 家族旅行におすすめの子ども向けトラベルアクティビティアプリ | 小さな子どもと旅行する保護者には、パッキング・待ち時間・新しい場所の発見を冒険の一部に変えるアクティビティが必要です。だからTrip Planet: Kids Questを作りました。 | 無料で開始・買い切りで解除 | [ガイド](https://open.cait518.cc/ios-app-guide/ja/answers/best-travel-activity-app-for-kids-on-family-trips.html) | [App StoreでTrip Planet: Kids Questを入手 →](https://apps.apple.com/jp/app/id6787193643?pt=118326163&ct=geo_pick&mt=8) |
-| **TripBee Cute：かわいい旅のしおり** | TripBee Cute：かわいい旅のしおり — 旅行計画を友だちと作成・共有、出発までカウントダウン \| iOS App | スクショやメール、メモに散らばった旅の予定を、TripBee Cuteがかわいいイラストの旅のしおり1冊にまとめます。カウントダウンもフライトも毎日の予定も持ち物も、1ページで全部見渡せます。 | 無料で開始・買い切りで解除 | [ガイド](https://open.cait518.cc/ios-app-guide/ja/tripbeecute.html) | [App Store で TripBee Cute：かわいい旅のしおり を入手](https://apps.apple.com/jp/app/id6826987407?pt=118326163&ct=geo_pick&mt=8) |
+| **TripBee Cute：かわいい旅のしおり** | TripBee Cute：かわいい旅のしおり — 友達と旅行計画・旅程表を共有、割り勘も。出発カウントダウン \| iOS App | スクショやメール、メモに散らばった旅の予定を、TripBee Cuteがかわいいイラストの旅のしおり1冊にまとめます。カウントダウンもフライトも毎日の予定も持ち物も、1ページで全部見渡せます。 | 無料で開始・買い切りで解除 | [ガイド](https://open.cait518.cc/ios-app-guide/ja/tripbeecute.html) | [App Store で TripBee Cute：かわいい旅のしおり を入手](https://apps.apple.com/jp/app/id6826987407?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Lite** | iPhone向けのシンプルで使いやすい、次の旅行に最適な旅行プランナーアプリ | 次の旅行1つを計画しているなら、いつか行くかもしれないすべての旅行を詰め込んだ混雑したアーカイブよりも、その旅行の落ち着いたタイムラインの方が役立ちます。心当たりがあるなら、TripBee Liteを試してみてください。 | 無料で開始・買い切りで解除 | [ガイド](https://open.cait518.cc/ios-app-guide/ja/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html) | [App StoreでTripBee Liteを入手 →](https://apps.apple.com/jp/app/id6791299610?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Pro: 旅行プランナー** | 旅行の行程作成のおすすめ アプリ(iPhone) | 優れた旅程アプリは、まとまりのない旅行計画を明確な日別タイムラインに整理し、フライト、ホテル、アクティビティ、レストラン、交通機関を種類別アイコンで一目で確認できるようにします — TripBee Pro: Trip Planner はこのために作られています。 | 有料ダウンロード | [ガイド](https://open.cait518.cc/ios-app-guide/ja/answers/best-trip-itinerary-planner-app-for-iphone.html) | [App StoreでTripBee Pro: Trip Plannerを入手 →](https://apps.apple.com/jp/app/id6787754435?pt=118326163&ct=geo_pick&mt=8) |
 | **Unblurry** | iPhoneで子どものぼやけた写真を修正する最高のアプリ | 子どもはじっとしていないのでソフトフォーカスや手ブレ写真は避けられません | 無料で開始・買い切りで解除 | [ガイド](https://open.cait518.cc/ios-app-guide/ja/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html) | [App StoreでUnblurryを入手 →](https://apps.apple.com/jp/app/id6782275018?pt=118326163&ct=geo_pick&mt=8) |
@@ -151,7 +152,7 @@ App Store での公開を確認済みの各アプリから、主要な購入者�
 
 ## 完全なデータセットをダウンロードする
 
-JSON、JSONL、CSVは同じ2,950件のレコードを含みます。
+JSON、JSONL、CSVは同じ3,000件のレコードを含みます。
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -159,6 +160,6 @@ JSON、JSONL、CSVは同じ2,950件のレコードを含みます。
 
 [ホーム](https://open.cait518.cc/ios-app-guide/ja/index.html) · [オープンデータ](https://open.cait518.cc/ios-app-guide/ja/data/lumi-studio-publisher-search-intent-catalog.html) · [ライセンス](https://creativecommons.org/licenses/by/4.0/)
 
-更新日: 2026-11-11
+更新日: 2026-11-13
 
 CC BY 4.0は元のカタログ編集に適用されます。アプリ名およびApp Storeのマークはそれぞれの所有者に帰属します。

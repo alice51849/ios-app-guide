@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "hu",
-  "dateModified": "2026-11-12",
-  "content_digest": "7de1d37867a442524f0f71b12bc9215167c94decafe68fe7795797e73ca1646a",
-  "generation_digest": "4dbd71535e18ea34767ec4fa1071e32a770d503fca2637533a63df4a1fcbb11d",
+  "dateModified": "2026-11-13",
+  "content_digest": "d9c773c2562d52039903cf822e8ef7778090b22f1afda56ded04af6f7e8d4ca6",
+  "generation_digest": "f5f987bd60677ddb93fca5761c3080eab8bd40202e8756edcc2f8e99e8103264",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 59,
+  "record_count": 60,
   "syndication": {
     "atom": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/hu.atom.xml",
     "rss": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/hu.rss.xml",
@@ -1231,6 +1231,67 @@
       "guide_cta_label": "Olvasd el a teljes útmutatót",
       "publisher_disclosure": "Ez első kézből származó anyag, amelyet a Lumi Studio tett közzé, az összes felsorolt alkalmazás fejlesztője.",
       "source_persona_query": "best app to track where my money goes and save more",
+      "source_surface": "app_guide_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "hu:kumo",
+      "locale": "hu",
+      "app_key": "kumo",
+      "app_name": "Kumo: Fogyás és súlykövető",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "Kumo: Fogyás és súlykövető — Időszakos böjt, GLP-1 napló | iOS App",
+      "decision_context": "A mérleg napról napra ugrál, de a Kumo 10 másodperc alatt rögzíti a súlyodat, és a 7 napos átlaggal a valódi irányt mutatja. Injekcióval vagy anélkül, böjttel vagy anélkül, egy aranyos felhővel, ami veled nő. Az iPhone Duo-ra tervezve: nyisd ki, és a Kumo két tágas oszlopban kitölti a teljes belső kijelzőt. • A mai napon nyílik, a legutóbbi értékkel: ±0,1 és kész • A „Ma nem mértem” is számít, a sorozat nem szakad meg • A felhőd a rögzített napokkal nő, nem a súlyoddal MIKOR SEGÍT Ha GLP-1 injekciót használsz, a Kumo a saját ütemezésed szerint emlékeztet. TESTSÚLY ÉS TREND • Napi pontok és 7 napos átlagvonal, az elmúlt 30 nap trendjével és előzményeivel • 3 hónapos és teljes időszaki trend, régebbi előzmények (Kumo teljes verzió) • E heti átlag a múlt hetihez képest • Mérlegen kívüli sikerek: lazább nadrág TESTMÉRETEK • Derék, testzsír %, csípő, mell, comb, felkar, nyak, mind saját trenddel (1 ingyenes, mind a Kumo teljes verzióval) • Becsült céldátum a mostani tempóból, csak tájékoztatásul • Előtte-utána fotók, az arc alapból elmosva (Kumo teljes verzió) BÖJTIDŐZÍTŐ • 12:12, 14:10 és 16:8; 18:6, 20:4, egyéni és böjtgrafikonok a Kumo teljes verzióval • Egy koppintással indul, a kezdés utólag javítható; hátralévő idő az Apple Watchon • Élő visszaszámlálás a zárolási képernyőn és a Dynamic Islandben (Kumo teljes verzió) • Emlékeztető egy rendes étkezésre; a Kumo nem ösztönöz hosszabb böjtre, max. 23 óra • Ha várandós vagy szoptatsz, 18 év alatti vagy, evészavarod vagy krónikus betegséged van, böjt előtt kérdezd meg az orvosodat INJEKCIÓS KÁRTYA • Dátum, beadási hely, saját jegyzet és közérzet; emlékeztető a saját ütemezésed szerint, visszaszámlálás, térkép a legutóbbi helyekről • Csak nyilvántartás: nem számol, nem javasol és nem rögzít adagot, nem értelmez VÍZ ÉS FEHÉRJE • +1 pohár víz vagy +10/20/30 g fehérje egy koppintással, napi gyűrűkkel • Az Egészség appból a mai lépésszám (csak megjelenik, nem tároljuk) A FELHŐD • 5 szakasz; az alap felhő ingyenes, ruhák és témák (napsütés, szivárvány, eső, hó, csillagos ég) a Kumo teljes verzióval APPLE WATCH, WIDGETEK, SIRI • Apple Watch: tekerd a Digital Crownt, koppints egyet, kész, a telefonod nélkül is; számlap-komplikációk, a böjt is • Widgetek a fő- és a zárolási képernyőn, mind ingyenes: mai rögzítés, sorozat, heti átlag, felhő és gyorsrögzítő • Vezérlőközpont-gomb; Siri és Parancsok: súly vagy víz rögzítése HETI KÁRTYA ÉS EXPORT • Heti kártya: változás és görbe, súlyszám nélkül, egy koppintással megosztható • Súly és derékbőség írható az Egészség appba, a súlyadatok onnan behozhatók • CSV-export és havi PDF-jelentés (Kumo teljes verzió) INGYENES Súlynapló 7 napos átlaggal, 30 napos trenddel és előzményekkel; 1 választott modul (12:12, 14:10 vagy 16:8 böjt, injekciós kártya, víz és fehérje); 1 testméret; 1 emlékeztető; Apple Watch-rögzítés és számlap-komplikációk; minden fő- és zárolási képernyős widget; alap felhő; fiók nélkül; az adataid az eszközeiden és a saját iCloudodban, szinkronizálva. KUMO TELJES VERZIÓ Több modul egyszerre, minden testméret; 18:6, 20:4, egyéni böjt, böjtgrafikonok; élő visszaszámlálás a zárolási képernyőn és a Dynamic Islandben; 3 hónapos és teljes időszaki trend, 30 napnál régebbi előzmények; előtte-utána fotók; CSV/PDF-export; több és vízemlékeztető; ruhák, időjárás. A Kumo teljes verzió havi vagy éves, automatikusan megújuló előfizetésként, vagy egyszeri, alkalmazáson belüli vásárlásként érhető el. A fizetés az Apple-fiókodon keresztül történik. Az előfizetés automatikusan megújul, hacsak legalább 24 órával az aktuális időszak vége előtt le nem mondod; bármikor kezelheted vagy lemondhatod az Apple-fiókod beállításaiban. Adatvédelmi szabályzat: https://alice51849.github.io/ios-app-guide/apps/kumo/privacy.html Felhasználási feltételek: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/ A Kumo kizárólag személyes nyilvántartásra szolgál, és nem ad orvosi tanácsot. Mindig kövesd az orvosod útmutatását.",
+      "category": "health",
+      "category_label": "Egészség",
+      "purchase_model": "neutral",
+      "purchase_label": "Ellenőrizd a jelenlegi listát",
+      "one_time_option": false,
+      "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "no_tracking"
+      ],
+      "privacy_labels": [
+        "Nincs fiók",
+        "Nincs reklám",
+        "Nincs követés"
+      ],
+      "device_surfaces": [
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Apple Watch"
+      ],
+      "badge_labels": [
+        "Egészség",
+        "Ellenőrizd a jelenlegi listát",
+        "Nincs fiók",
+        "Nincs reklám",
+        "Nincs követés",
+        "Apple Watch",
+        "App Store · Ingyenes"
+      ],
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/hu/kumo.html",
+      "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/kumo/decision/l/hu/index.html",
+      "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/hu/kumo.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Fkumo%2Fdecision%2Fl%2Fhu%2Findex.html&format=json",
+      "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/hu.json",
+      "app_store_id": "6830824515",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6830824515",
+      "app_store_url": "https://apps.apple.com/hu/app/id6830824515?pt=118326163&ct=geo_pick&mt=8",
+      "app_store_cta_label": "Töltse le a(z) Kumo: Fogyás és súlykövető appot az App Store-ból",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "HUF",
+        "formatted_price": "Ingyenes"
+      },
+      "guide_cta_label": "Olvasd el a teljes útmutatót",
+      "publisher_disclosure": "Ez első kézből származó anyag, amelyet a Lumi Studio tett közzé, az összes felsorolt alkalmazás fejlesztője.",
+      "source_persona_query": "glp-1 tracker app to log weight and shot day on iphone",
       "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
@@ -2918,7 +2979,7 @@
       "app_name": "TripBee Cute: Utazási napló",
       "priority_rank": null,
       "priority_group": "baseline_coverage",
-      "publisher_query": "TripBee Cute: Utazási napló — Cuki úti füzet, visszaszámláló | iOS App",
+      "publisher_query": "TripBee Cute: Utazási napló — Csomaglista és visszaszámláló | iOS App",
       "decision_context": "Elég a keresgélésből a képernyőképek, e-mailek és csetek között: a TripBee Cute minden utazásod részleteit egy-egy cuki, illusztrált füzetbe gyűjti, amelyet a barátaiddal közösen is szerkeszthetsz. A kezdőképernyő egy könyvespolc, ahol minden út egy kis füzet saját borítóval. Kinyitva az egész út egyetlen oldalon görgethető végig: borító, visszaszámlálás, járatok, napi programok, csomaglista és jegyzetek. Egy pillantással látod, hány nap van még hátra, és milyen idő vár az úti célon. Minden nap saját színt kap, így azonnal tudod, melyik napnál jársz. A dátumszűrővel csak egy nap programját nézed, vagy egyszerre az összeset. Esős napra is van terv: a fő programot lemásolod, és átírod. A barátaiddal ugyanazt a füzetet szerkesztitek, a változások iCloudon keresztül érkeznek meg. A webes füzet bármilyen böngészőben vagy csetalkalmazásban megnyílik, akár offline is, és a visszaszámlálás ott is megy tovább. Táblázatból is elkészítheted: kitöltöd a CSV-sablont, importálod, és kész a füzet. Hétvégi városnézés, tengerparti nyaralás, baráti kirándulás, nászút vagy céges út: indulás előtt minden egy helyen van, útközben pedig kéznél van a következő programpont, a járat adatai és a csomaglista. Funkciók Könyvespolc 57 illusztrált borítóval: városok, nevezetességek, évszakok és utazási hangulatok. Visszaszámlálás az indulásig, időjárás az úti célon és helyi idő. Beszállókártya-stílusú járatkártyák időponttal, terminállal és foglalási kóddal. Napi programok névvel, matricákkal, pipálással, szabadidővel és esős napi tervvel, szabadon átrendezhető sorrendben. Fotók, jegyek és jegyzetek minden programponthoz, navigáció a térképalkalmazásban. Csomaglista, valamint okos csomaglista az útitársak, az évszak és az út hossza alapján. Úti jegyzetek és diszkrét emlékeztetők. Közös tervezés a barátokkal iCloudon keresztül, regisztráció nélkül, a saját Apple-fiókoddal. A meghíváshoz Cute Pass kell, a meghívottaknak pedig a TripBee Cute. iCloud-szinkronizálás a saját készülékeid között. CSV-import: exportáld a sablont, töltsd ki táblázatkezelőben, vagy kérd meg a kedvenc AI-asszisztensedet, hogy írja bele a programot, majd importáld. Maga az alkalmazás nem tartalmaz AI-funkciót. Biztonsági mentés: az összes füzet és fotó egyetlen fájlba exportálható. Importáláskor választhatsz teljes cserét vagy egyesítést, amely csak az újakat adja hozzá, és semmit sem töröl. Megosztás webes füzetként, vagy fotókkal és jegyekkel együtt útfájlként. A TripBee és a TripBee Lite útfájljait is megnyitja. Főképernyő- és zárolásiképernyő-widgetek a borítóillusztrációval és a következő programponttal. Apple Watch-app a visszaszámlálással és a következő programponttal. Sötét mód, iPad-támogatás és 50 nyelv: alapból a rendszer nyelvét követi, de az alkalmazásban is átállíthatod. Adatvédelem és vásárlás Nincs fiók, nincs reklám, nincs követés. A füzetek a készülékeden maradnak, és csak akkor kerülnek a saját privát iCloud-tárhelyedre, ha bekapcsolod a szinkronizálást. Az időjárásadatokat az Open-Meteo szolgáltatja, kizárólag az úti cél alapján. Az alapverzióban egyszerre egy füzetet tárolhatsz hat borítóval, és elérhető a CSV-import, a webes füzet, a programok, a járatok, a csomaglista, a widgetek és az Apple Watch-app. Néhány funkció egyszeri, alkalmazáson belüli vásárlással, a Cute Pass révén érhető el: korlátlan számú füzet, további 51 illusztrált borító, okos csomaglista, iCloud-szinkronizálás és biztonsági mentés (exportálás, importálás, egyesítés), fotós és jegyes útfájlok megosztása, valamint közös tervezés a barátokkal. Kérdésed vagy ötleted van? Írj nekünk az App Store-adatlapon található támogatási oldalon keresztül.",
       "category": "travel",
       "category_label": "Utazás",

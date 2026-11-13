@@ -4,7 +4,7 @@
 
 A first-party catalog of who each app is designed for, the task they are trying to complete, and the direct App Store path.
 
-Publisher-authored search intents across 59 verified live iOS apps and 50 Apple locales.
+Publisher-authored search intents across 60 verified live iOS apps and 50 Apple locales.
 
 **Locale:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · **en-US** · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -107,6 +107,7 @@ Alphabetical by app name — never a ranking.
 | **GBAGo** | paid gba emulator for iphone with save states and controller support | GBAGo — 除 Lumi Studio 自製的三款原創 demo 卡帶外，GBAGo 不包含遊戲或內容目錄。請僅從「檔案」匯入由你自行創作，或依適用法律獲授權使用的檔案。. Paid download · Pay once · No subscription. | Paid download | [Guide](https://open.cait518.cc/ios-app-guide/en-US/answers/paid-gba-emulator-for-iphone-with-save-states-and-controller-support.html) | [Get GBAGo on the App Store →](https://apps.apple.com/us/app/id6804564400?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag** | best app to track where my money goes and save more | If saving feels abstract, tracking goals in hours-worked instead of dollars makes progress feel earned — you're not saving $500, you're saving 20 hours of your life toward something. If that is your situation, HoursTag is worth a look. | Paid download | [Guide](https://open.cait518.cc/ios-app-guide/en-US/answers/best-app-to-track-where-my-money-goes-and-save-more.html) | [Get HoursTag on the App Store →](https://apps.apple.com/us/app/id6754218117?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag Lite** | best app to convert prices into work hours before buying | HoursTag Lite — HoursTag Lite - See the real price of things Every purchase costs hours of your life. Free to start · One-time unlock · No subscription. | Free to start · one-time unlock | [Guide](https://open.cait518.cc/ios-app-guide/en-US/answers/best-app-to-convert-prices-into-work-hours-before-buying.html) | [Get HoursTag Lite on the App Store →](https://apps.apple.com/us/app/id6794039979?pt=118326163&ct=geo_pick&mt=8) |
+| **Kumo: Weight & GLP-1 Tracker** | Kumo: Weight & GLP-1 Tracker — Shot Log, Fasting & Cute Cloud \| iOS App | The scale jumps around every day, so Kumo turns a 10-second weigh-in into a calm 7-day average, with or without GLP-1 shots. A cute cloud grows every day | Check current listing | [Guide](https://open.cait518.cc/ios-app-guide/en-US/kumo.html) | [Get Kumo: Weight & GLP-1 Tracker on the App Store](https://apps.apple.com/us/app/id6830824515?pt=118326163&ct=geo_pick&mt=8) |
 | **LED Moving Text** | led scrolling text app for concerts and airport pickups | LED Moving Text — Cue Flow handles moments that need more than one sign. Free to start · One-time unlock · No subscription. | Free to start · one-time unlock | [Guide](https://open.cait518.cc/ios-app-guide/en-US/answers/led-scrolling-text-app-for-concerts-and-airport-pickups.html) | [Get LED Moving Text on the App Store →](https://apps.apple.com/us/app/id6806639602?pt=118326163&ct=geo_pick&mt=8) |
 | **LockHour Pro** | best app to block social media while studying iphone | During exams, willpower isn't the tool — a hard timed block is — LockHour Pro is built for this. | Free to start · one-time unlock | [Guide](https://open.cait518.cc/ios-app-guide/en-US/answers/best-app-to-block-social-media-while-studying-iphone.html) | [Get LockHour Pro on the App Store →](https://apps.apple.com/us/app/id6780107485?pt=118326163&ct=geo_pick&mt=8) |
 | **Lumi Bopomofo** | best bopomofo app for kids to learn zhuyin on iphone | For a child first learning Zhuyin, the app should cover all 37 symbols through tracing and play — designed for the 4–7 first-learning window, ad-free, with no data collected. That is the gap Lumi Bopomofo was built to close. | Free to start · one-time unlock | [Guide](https://open.cait518.cc/ios-app-guide/en-US/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html) | [Get Lumi Bopomofo on the App Store →](https://apps.apple.com/us/app/id6773017109?pt=118326163&ct=geo_pick&mt=8) |
@@ -151,7 +152,7 @@ Alphabetical by app name — never a ranking.
 
 ## Download the complete dataset
 
-JSON, JSONL and CSV contain the same 2,950 records.
+JSON, JSONL and CSV contain the same 3,000 records.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -159,6 +160,6 @@ JSON, JSONL and CSV contain the same 2,950 records.
 
 [Home](https://open.cait518.cc/ios-app-guide/en-US/index.html) · [Open data](https://open.cait518.cc/ios-app-guide/en-US/data/lumi-studio-publisher-search-intent-catalog.html) · [License](https://creativecommons.org/licenses/by/4.0/)
 
-Updated: 2026-11-11
+Updated: 2026-11-13
 
 CC BY 4.0 applies to the original catalog compilation; app names and App Store marks belong to their owners.

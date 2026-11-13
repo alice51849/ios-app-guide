@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "no",
-  "dateModified": "2026-11-12",
-  "content_digest": "7de1d37867a442524f0f71b12bc9215167c94decafe68fe7795797e73ca1646a",
-  "generation_digest": "4dbd71535e18ea34767ec4fa1071e32a770d503fca2637533a63df4a1fcbb11d",
+  "dateModified": "2026-11-13",
+  "content_digest": "d9c773c2562d52039903cf822e8ef7778090b22f1afda56ded04af6f7e8d4ca6",
+  "generation_digest": "f5f987bd60677ddb93fca5761c3080eab8bd40202e8756edcc2f8e99e8103264",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 59,
+  "record_count": 60,
   "syndication": {
     "atom": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/no.atom.xml",
     "rss": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/no.rss.xml",
@@ -1231,6 +1231,67 @@
       "guide_cta_label": "Les hele veiledningen",
       "publisher_disclosure": "Dette er førsteparts materiale publisert av Lumi Studio, utvikleren av hver oppført app.",
       "source_persona_query": "best app to track where my money goes and save more",
+      "source_surface": "app_guide_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "no:kumo",
+      "locale": "no",
+      "app_key": "kumo",
+      "app_name": "Kumo: Vektnedgang & vektdagbok",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "Kumo: Vektnedgang & vektdagbok — Vekt, periodisk faste og GLP-1 | iOS App",
+      "decision_context": "Ett dårlig tall på vekten skal ikke ta motet fra deg: med Kumo logger du på 10 sekunder og ser 7-dagerssnittet, altså den egentlige retningen. Det fungerer like godt med som uten GLP-1-sprøyter, og en søt sky vokser for hver dag du logger. Laget for iPhone Duo: Åpne den, og Kumo fyller hele den indre skjermen med to romslige kolonner. • Åpner på i dag med forrige vekt klar: juster ±0,1, ferdig • Daglige punkter og 7-dagerssnitt, med trend og historikk for de siste 30 dagene, pluss ukesnitt mot forrige uke • Trend for 3 måneder og hele perioden og eldre historikk (Kumo Full) • «Veide meg ikke i dag» teller også, så rekken fortsetter • Skyen vokser med dagene du logger, ikke med vekten • Slå på bare det du trenger: faste, sprøytekort, vann og protein eller kroppsmål • Ingen konto, ingen reklame, ingen sporing VEKT OG KROPPSMÅL • Kilo, pund eller stone • Midje, fettprosent, hofte, bryst, lår, overarm og hals, hver med egen kurve (1 gratis, alle med Kumo Full) • Anslått måldato etter ditt tempo, kun som pekepinn FASTE • 12:12, 14:10 og 16:8; med Kumo Full også 18:6, 20:4, egen plan og fastegrafer • Start med ett trykk og endre starttiden • Gjenstående tid på Apple Watch; direkte nedtelling på låseskjermen og i Dynamic Island med Kumo Full • Påminnelse om et skikkelig måltid når tiden er ute; Kumo oppfordrer ikke til lengre faste, og grensen er 23 timer • Er du gravid eller ammer, under 18 år, har en spiseforstyrrelse eller en kronisk sykdom, snakk med legen før du faster SPRØYTEKORT (VALGFRITT) • Dato, stikksted og egne notater, påminnelser etter din egen rytme og nedtelling til neste gang • Kart over nylig brukte stikksteder og avkrysning for hvordan du har det • Kun logging: ingen beregning, doseforslag, doseregistrering, tolkning eller anslag av legemiddelnivå VANN, PROTEIN OG SKYEN • Ett trykk for +1 glass vann eller +10, 20 eller 30 g protein, med ringer for dagen • Dagens skritt fra Helse-appen, bare vist og aldri lagret • Skyen vokser i 5 trinn; grunnskyen er gratis, antrekk og vær som sol, regnbue, regn, snø og stjernehimmel hører til Kumo Full APPLE WATCH, WIDGETER OG MER • Apple Watch: logg med Digital Crown, også uten telefonen i nærheten; urskivekomplikasjoner, også for faste • Alle widgeter for Hjem- og låseskjerm er gratis: logget i dag, rekke, ukesnitt, skyen og hurtiglogg; knapp i Kontrollsenter og Siri-snarveier • Skriv vekt og midjemål til Helse-appen, eller hent vekten derfra • Ukekort med endring og kurve, uten vekttall, og deling med ett trykk • Eksport av CSV og PDF-månedsrapport (Kumo Full) PERSONVERN Ingen konto, ingen reklame, ingen sporing. Dataene ligger på enhetene dine og i din egen iCloud, og iPhone og Apple Watch synkroniseres automatisk. GRATIS Vektlogg med 7-dagerssnitt og trend og historikk for de siste 30 dagene; 1 valgfri modul (faste 12:12, 14:10 eller 16:8, sprøytekort, eller vann og protein); 1 kroppsmål; 1 påminnelse; Apple Watch-logging og urskivekomplikasjoner; alle widgeter for Hjem- og låseskjerm; grunnskyen; ingen konto; iCloud-synk. KUMO FULL Flere moduler samtidig og alle kroppsmål; faste 18:6, 20:4, egen plan og fastegrafer; direkte nedtelling på låseskjermen og i Dynamic Island; trend for 3 måneder og hele perioden og historikk utover 30 dager; før/etter-bilder med ansiktet uskarpt som standard; CSV- og PDF-eksport; flere påminnelser og vannpåminnelser; antrekk og vær. Kumo Full er tilgjengelig som månedlig eller årlig abonnement som fornyes automatisk, eller som et engangskjøp i appen. Betalingen belastes Apple-kontoen din. Abonnementet fornyes automatisk med mindre det sies opp minst 24 timer før perioden er over; administrer eller si opp når som helst i innstillingene for Apple-kontoen din. Personvernerklæring: https://alice51849.github.io/ios-app-guide/apps/kumo/privacy.html Bruksvilkår: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/ Kumo er kun for personlig loggføring og gir ikke medisinske råd. Følg alltid legens anvisninger.",
+      "category": "health",
+      "category_label": "Helse",
+      "purchase_model": "neutral",
+      "purchase_label": "Sjekk gjeldende oppføring",
+      "one_time_option": false,
+      "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "no_tracking"
+      ],
+      "privacy_labels": [
+        "Ingen konto",
+        "Ingen annonser",
+        "Ingen sporing"
+      ],
+      "device_surfaces": [
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Apple Watch"
+      ],
+      "badge_labels": [
+        "Helse",
+        "Sjekk gjeldende oppføring",
+        "Ingen konto",
+        "Ingen annonser",
+        "Ingen sporing",
+        "Apple Watch",
+        "App Store · Gratis"
+      ],
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/no/kumo.html",
+      "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/kumo/decision/l/no/index.html",
+      "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/no/kumo.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Fkumo%2Fdecision%2Fl%2Fno%2Findex.html&format=json",
+      "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/no.json",
+      "app_store_id": "6830824515",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6830824515",
+      "app_store_url": "https://apps.apple.com/no/app/id6830824515?pt=118326163&ct=geo_pick&mt=8",
+      "app_store_cta_label": "Last ned Kumo: Vektnedgang & vektdagbok fra App Store",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "NOK",
+        "formatted_price": "Gratis"
+      },
+      "guide_cta_label": "Les hele veiledningen",
+      "publisher_disclosure": "Dette er førsteparts materiale publisert av Lumi Studio, utvikleren av hver oppført app.",
+      "source_persona_query": "glp-1 tracker app to log weight and shot day on iphone",
       "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
@@ -2918,7 +2979,7 @@
       "app_name": "TripBee Cute: Reisedagbok",
       "priority_rank": null,
       "priority_group": "baseline_coverage",
-      "publisher_query": "TripBee Cute: Reisedagbok — Søtt reisehefte og nedtelling | iOS App",
+      "publisher_query": "TripBee Cute: Reisedagbok — Ferie: pakkeliste, nedtelling | iOS App",
       "decision_context": "Ingen flere spredte skjermbilder, e-poster og notater: TripBee Cute gjør hver reise om til et søtt, illustrert reisehefte med alt på én side. Hver reise står som et hefte med eget omslag i bokhyllen din. Åpne det og rull gjennom hele reisen: nedtelling til avreise, fly, hver dag i planen og alt som skal pakkes. Hele reisen på én side, fra nedtelling til pakkeliste Hver dag har sin egen farge, og med datofilteret ser du bare planene for den dagen En regnværsplan i bakhånd for hver dag Planlegg sammen med venner i det samme heftet Importer hele reisen på én gang fra en CSV-fil Del et netthefte som åpnes i alle nettlesere, også uten nett Neste reise på Hjem-skjermen, Låst skjerm og Apple Watch Perfekt for en byferie, en roadtrip, en jentetur, en bryllupsreise eller den store sommerferien med hele familien. Planlegg hjemme i sofaen, sjekk raskt flyet og billettene underveis, og bla i reisedagboken med bilder og notater når du er hjemme igjen. Dette får du Bokhylle med 57 illustrerte omslag: byer, landemerker, årstider og reisestemninger Nedtelling til avreise, været på reisemålet og lokal tid Flykort i boardingkortstil med tider, terminal og bestillingskode Dagsplaner med navn per dag, klistremerker, avkrysning, fritid og en regnværsplan som kan kopieres fra hovedplanen; alt kan sorteres om En farge per dag og filtrering på dato, eller alle dager samlet Bilder, billetter og notater til hver plan, pluss veibeskrivelse i kartappen din En pakkeliste du fyller ut selv, pluss en smart pakkeliste basert på reisefølge, årstid og antall dager Reisenotater og vennlige påminnelser Planlegg sammen: inviter venner via iCloud og rediger det samme heftet. Endringer synkroniseres via iCloud mellom enhetene deres. Vennene dine trenger også TripBee Cute, men ingen trenger å opprette en ny konto. iCloud-synkronisering mellom dine egne enheter Import fra CSV: eksporter malen, fyll den ut i et regneark eller la en AI-assistent du liker gjøre det, og importer den som et nytt hefte Sikkerhetskopi av alle hefter og bilder i én fil. Ved import velger du å erstatte alt eller slå sammen; sammenslåing legger bare til nytt og sletter ingenting. Netthefte til deling: én fil venner åpner i hvilken som helst nettleser eller chatteapp, også uten nett, og nedtellingen fortsetter å gå Del reisefiler med bilder og billetter, og åpne reisefiler fra TripBee og TripBee Lite Widgeter for Hjem-skjermen og Låst skjerm med omslaget til neste reise Apple Watch-app med nedtelling og neste plan Mørk modus, iPad og 50 språk: følger systemspråket, eller velg språk i appen Personvern Ingen konto, ingen reklame, ingen sporing. Heftene blir på enheten din og lagres bare i din egen private iCloud hvis du slår på synkronisering. Været kommer fra Open-Meteo og bruker bare reisemålet ditt. Cute Pass Noen funksjoner låses opp med et engangskjøp i appen (Cute Pass): ubegrenset antall hefter, 51 ekstra omslag, smarte pakkelister, iCloud-synkronisering mellom enhetene dine, sikkerhetskopi med eksport, import og sammenslåing, deling av reisefiler med bilder og billetter, og planlegging sammen med venner (den som inviterer, trenger Cute Pass). Uten Cute Pass lagrer du ett hefte om gangen, med 6 omslag, og bruker CSV-import, netthefte, dagsplaner, fly, pakkeliste, widgeter og Apple Watch-appen. Har du spørsmål, ideer eller trenger du hjelp? Bruk støttelenken på denne siden. Vi hører gjerne fra deg.",
       "category": "travel",
       "category_label": "Reise",

@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "hr",
-  "dateModified": "2026-11-12",
-  "content_digest": "7de1d37867a442524f0f71b12bc9215167c94decafe68fe7795797e73ca1646a",
-  "generation_digest": "4dbd71535e18ea34767ec4fa1071e32a770d503fca2637533a63df4a1fcbb11d",
+  "dateModified": "2026-11-13",
+  "content_digest": "d9c773c2562d52039903cf822e8ef7778090b22f1afda56ded04af6f7e8d4ca6",
+  "generation_digest": "f5f987bd60677ddb93fca5761c3080eab8bd40202e8756edcc2f8e99e8103264",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 59,
+  "record_count": 60,
   "syndication": {
     "atom": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/hr.atom.xml",
     "rss": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/hr.rss.xml",
@@ -1231,6 +1231,67 @@
       "guide_cta_label": "Pročitajte cijeli vodič",
       "publisher_disclosure": "Ovo je materijal iz prve ruke koji je objavio Lumi Studio, razvojni tim svake navedene aplikacije.",
       "source_persona_query": "best app to track where my money goes and save more",
+      "source_surface": "app_guide_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "hr:kumo",
+      "locale": "hr",
+      "app_key": "kumo",
+      "app_name": "Kumo: Težina i mršavljenje",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "Kumo: Težina i mršavljenje — Intermitentni post, GLP-1 | iOS App",
+      "decision_context": "Vaga svaki dan pokazuje nešto drugo, ali Kumo bilježi težinu za 10 sekundi, a prosjek od 7 dana otkriva pravi smjer. S injekcijama ili bez, s postom ili bez, uz slatki oblačić koji raste s tobom. Izrađeno za iPhone Duo: otvori ga i Kumo ispunjava cijeli unutarnji zaslon u dva prostrana stupca. • Otvara se na današnjem danu sa zadnjom vrijednošću: ±0,1 i gotovo • I „Danas se nisam vagao/la“ se računa, niz se ne prekida KADA POMAŽE Ako koristiš GLP-1 injekcije, Kumo te podsjeća prema rasporedu koji sam postaviš. TEŽINA I TREND • Dnevne točke i linija prosjeka od 7 dana, s trendom i poviješću zadnjih 30 dana • Trendovi za 3 mjeseca i cijelo razdoblje i starija povijest (Kumo puna verzija) • Prosjek ovog tjedna u odnosu na prošli • Pobjede izvan vage: labavije hlače TJELESNE MJERE • Struk, % tjelesne masti, bokovi, prsa, bedro, nadlaktica, vrat, svaki sa svojim trendom (1 besplatna, sve uz Kumo punu verziju) • Procijenjeni datum cilja po trenutnom tempu, samo okvirno • Fotografije prije i poslije, lice je zadano zamućeno (Kumo puna verzija) TAJMER ZA POST • 12:12, 14:10 i 16:8; 18:6, 20:4, po želji i grafikoni posta uz Kumo punu verziju • Pokretanje jednim dodirom, vrijeme početka može se ispraviti; preostalo vrijeme na Apple Watchu • Živo odbrojavanje na zaključanom zaslonu i u Dynamic Islandu (Kumo puna verzija) • Podsjetnik za pravi obrok; Kumo ne potiče duži post, najviše 23 sata • Ako si trudna ili dojiš, imaš manje od 18 godina, probleme s prehranom ili kroničnu bolest, prije posta pitaj doktora KARTICA ZA INJEKCIJE • Datum, mjesto, vlastite bilješke, kako se osjećaš i karta nedavnih mjesta; podsjetnici prema tvom rasporedu i odbrojavanje do sljedeće • Samo evidencija: ne računa, ne predlaže i ne bilježi doze, ne tumači VODA I PROTEINI • +1 čaša vode ili +10/20/30 g proteina jednim dodirom, s dnevnim prstenovima • Današnji koraci iz aplikacije Zdravlje (samo prikaz, ne spremaju se) TVOJ OBLAČIĆ • 5 faza; osnovni oblačić je besplatan, odjeća i teme (sunce, duga, kiša, snijeg, zvjezdano nebo) uz Kumo punu verziju APPLE WATCH, WIDGETI, SIRI • Apple Watch: okreni Digital Crown, dodirni jednom i gotovo, i bez telefona u blizini; komplikacije za brojčanik, uključujući post • Widgeti za početni i zaključani zaslon, svi besplatni: zabilježeno danas, niz, tjedni prosjek, tvoj oblačić i brzi unos • Gumb u Kontrolnom centru; Siri i Prečaci: zabilježi težinu ili vodu TJEDNA KARTICA I IZVOZ • Svaki tjedan: promjena i krivulja, bez prikaza težine; dijeli se jednim dodirom • Težina i struk u aplikaciju Zdravlje; težina iz nje • CSV izvoz i mjesečno PDF izvješće (Kumo puna verzija) BESPLATNO Dnevnik težine s prosjekom od 7 dana, trendom i poviješću od 30 dana; 1 modul po izboru (post 12:12, 14:10 ili 16:8, kartica za injekcije, ili voda i proteini); 1 tjelesna mjera; 1 podsjetnik; bilježenje na Apple Watchu i komplikacije za brojčanik; svi widgeti za početni i zaključani zaslon; osnovni oblačić; bez računa; podaci na tvojim uređajima i u tvom iCloudu, sinkronizirani. KUMO PUNA VERZIJA Više modula odjednom i sve tjelesne mjere; 18:6, 20:4, post po želji i grafikoni posta; živo odbrojavanje na zaključanom zaslonu i u Dynamic Islandu; trendovi za 3 mjeseca i cijelo razdoblje i povijest preko 30 dana; fotografije prije i poslije; CSV i PDF izvoz; više podsjetnika i za vodu; odjeća i vrijeme. Kumo puna verzija dostupna je kao mjesečna ili godišnja pretplata s automatskom obnovom ili kao jednokratna kupnja unutar aplikacije. Iznos se naplaćuje putem tvog Apple računa. Pretplate se automatski obnavljaju ako se ne otkažu najmanje 24 sata prije kraja tekućeg razdoblja; njima možeš upravljati ili ih otkazati bilo kada u postavkama Apple računa. Pravila o privatnosti: https://alice51849.github.io/ios-app-guide/apps/kumo/privacy.html Uvjeti korištenja: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/ Kumo služi samo za osobnu evidenciju i ne daje medicinske savjete. Uvijek slijedi upute svog doktora.",
+      "category": "health",
+      "category_label": "Zdravlje",
+      "purchase_model": "neutral",
+      "purchase_label": "Provjerite trenutni popis",
+      "one_time_option": false,
+      "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "no_tracking"
+      ],
+      "privacy_labels": [
+        "Bez računa",
+        "Bez oglasa",
+        "Bez praćenja"
+      ],
+      "device_surfaces": [
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Apple Watch"
+      ],
+      "badge_labels": [
+        "Zdravlje",
+        "Provjerite trenutni popis",
+        "Bez računa",
+        "Bez oglasa",
+        "Bez praćenja",
+        "Apple Watch",
+        "App Store · Besplatno"
+      ],
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/hr/kumo.html",
+      "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/kumo/decision/l/hr/index.html",
+      "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/hr/kumo.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Fkumo%2Fdecision%2Fl%2Fhr%2Findex.html&format=json",
+      "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/hr.json",
+      "app_store_id": "6830824515",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6830824515",
+      "app_store_url": "https://apps.apple.com/hr/app/id6830824515?pt=118326163&ct=geo_pick&mt=8",
+      "app_store_cta_label": "Preuzmite Kumo: Težina i mršavljenje u App Storeu",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Besplatno"
+      },
+      "guide_cta_label": "Pročitajte cijeli vodič",
+      "publisher_disclosure": "Ovo je materijal iz prve ruke koji je objavio Lumi Studio, razvojni tim svake navedene aplikacije.",
+      "source_persona_query": "glp-1 tracker app to log weight and shot day on iphone",
       "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
@@ -2918,7 +2979,7 @@
       "app_name": "TripBee Cute: Putni dnevnik",
       "priority_rank": null,
       "priority_group": "baseline_coverage",
-      "publisher_query": "TripBee Cute: Putni dnevnik — Slatka knjižica za putovanje | iOS App",
+      "publisher_query": "TripBee Cute: Putni dnevnik — Pakiranje i troškovi putovanja | iOS App",
       "decision_context": "Dosta je bilo traženja po snimkama zaslona, e-mailovima i porukama: TripBee Cute svako putovanje skuplja u jednu slatku ilustriranu knjižicu koju možete uređivati zajedno s prijateljima. Početni zaslon je polica na kojoj je svako putovanje mala knjižica s vlastitom naslovnicom. Kad je otvorite, cijelo putovanje stane na jednu stranicu: naslovnica, odbrojavanje, letovi, plan po danima, popis stvari i bilješke. Na prvi pogled vidite koliko je dana ostalo do polaska i kakvo vas vrijeme čeka na odredištu. Svaki dan ima svoju boju, pa odmah znate koji je dan na redu. Filtrom po datumu gledate samo jedan dan ili sve dane odjednom. Imate i plan za kišni dan: kopirajte glavni plan i prilagodite ga. Vi i prijatelji uređujete istu knjižicu, a promjene svima stižu putem iClouda. Web-knjižica otvara se u bilo kojem pregledniku ili aplikaciji za dopisivanje, čak i bez interneta, a odbrojavanje i dalje teče. Knjižicu možete složiti i iz tablice: ispunite CSV predložak, uvezite ga i gotovo. Vikend u gradu, ljetovanje na moru, izlet s prijateljima, medeni mjesec ili poslovni put: prije polaska sve je na jednom mjestu, a na putu vam je pri ruci sljedeća stavka plana, podaci o letu i popis stvari. Značajke Polica s 57 ilustriranih naslovnica: gradovi, znamenitosti, godišnja doba i putnička raspoloženja. Odbrojavanje do polaska, vremenska prognoza za odredište i lokalno vrijeme. Kartice letova u stilu ukrcajne karte, s vremenima, terminalom i šifrom rezervacije. Dnevni planovi s naslovom za svaki dan, naljepnicama, kvačicama, slobodnim vremenom i planom za kišu, poredani kako želite. Fotografije, ulaznice i bilješke uz svaku stavku plana te navigacija u aplikaciji za karte. Popis stvari i pametni popis prema suputnicima, godišnjem dobu i trajanju putovanja. Putne bilješke i nenametljivi podsjetnici. Zajedničko planiranje s prijateljima putem iClouda, bez registracije, s vašim Apple računom. Za pozivanje treba Cute Pass, a pozvani prijatelji trebaju TripBee Cute. Sinkronizacija putem iClouda između vaših uređaja. CSV uvoz: izvezite predložak, ispunite ga u tablici ili zamolite svog omiljenog AI asistenta da upiše program, a zatim ga uvezite. Sama aplikacija nema AI funkcija. Sigurnosna kopija: sve knjižice i fotografije u jednoj datoteci. Pri uvozu birate potpunu zamjenu ili spajanje, koje dodaje samo novo i ništa ne briše. Dijeljenje kao web-knjižica ili kao datoteka putovanja s fotografijama i ulaznicama. Otvara i datoteke putovanja iz aplikacija TripBee i TripBee Lite. Widgeti za početni i zaključani zaslon s ilustracijom naslovnice i sljedećom stavkom plana. Aplikacija za Apple Watch s odbrojavanjem i sljedećom stavkom plana. Tamni način, iPad i 50 jezika: jezik prati postavke sustava ili ga promijenite u aplikaciji. Privatnost i kupnje Bez korisničkog računa, bez oglasa, bez praćenja. Knjižice ostaju na vašem uređaju, a u vaš privatni iCloud spremaju se samo ako uključite sinkronizaciju. Vremensku prognozu daje Open-Meteo, samo prema odredištu. Osnovna verzija čuva jednu knjižicu odjednom sa šest naslovnica i uključuje CSV uvoz, web-knjižicu, planove, letove, popis stvari, widgete i aplikaciju za Apple Watch. Neke se značajke otključavaju jednokratnom kupnjom unutar aplikacije, Cute Pass: neograničen broj knjižica, još 51 ilustrirana naslovnica, pametni popisi stvari, iCloud sinkronizacija i sigurnosne kopije (izvoz, uvoz, spajanje), dijeljenje datoteka putovanja s fotografijama i ulaznicama te zajedničko planiranje s prijateljima. Imate pitanje ili ideju? Pišite nam putem poveznice za podršku na stranici aplikacije u App Storeu.",
       "category": "travel",
       "category_label": "Putovanja",

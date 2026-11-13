@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "bn-BD",
-  "dateModified": "2026-11-12",
-  "content_digest": "7de1d37867a442524f0f71b12bc9215167c94decafe68fe7795797e73ca1646a",
-  "generation_digest": "4dbd71535e18ea34767ec4fa1071e32a770d503fca2637533a63df4a1fcbb11d",
+  "dateModified": "2026-11-13",
+  "content_digest": "d9c773c2562d52039903cf822e8ef7778090b22f1afda56ded04af6f7e8d4ca6",
+  "generation_digest": "f5f987bd60677ddb93fca5761c3080eab8bd40202e8756edcc2f8e99e8103264",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 59,
+  "record_count": 60,
   "syndication": {
     "atom": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/bn-BD.atom.xml",
     "rss": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/bn-BD.rss.xml",
@@ -1506,6 +1506,81 @@
       "guide_cta_label": "সম্পূর্ণ গাইড পড়ুন",
       "publisher_disclosure": "এটি Lumi Studio দ্বারা প্রকাশিত প্রথম পক্ষের উপাদান, যিনি প্রতিটি তালিকাভুক্ত অ্যাপের ডেভেলপার।",
       "source_persona_query": "best app to track where my money goes and save more",
+      "source_surface": "app_guide_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true,
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+        "evidence": {
+          "source_url": "https://support.apple.com/en-us/118205",
+          "observed_at": "2026-09-12",
+          "country": "BD",
+          "apple_media_services_markets": 174,
+          "country_listed": false,
+          "lookup_app_results": 0,
+          "lookup_control_results": 0,
+          "redirect_market": "US"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
+    },
+    {
+      "record_id": "bn-BD:kumo",
+      "locale": "bn-BD",
+      "app_key": "kumo",
+      "app_name": "Kumo: ওজন কমানো ও ডায়েট",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "Kumo: ওজন কমানো ও ডায়েট — ফাস্টিং টাইমার, GLP-1 লগ, পানি | iOS App",
+      "decision_context": "রোজকার ওজনের ওঠানামা দেখে হাল ছেড়ে দিতে ইচ্ছে করে? Kumo-তে দিনে 10 সেকেন্ডে ওজন লিখুন, 7 দিনের গড়ে আসল ট্রেন্ড দেখুন, আর সাথে বড় হয় একটা কিউট মেঘ। GLP-1 ইনজেকশন নিন বা না নিন, Kumo দুই ক্ষেত্রেই কাজে লাগে। iPhone Duo-এর জন্য তৈরি: খুললেই Kumo দুটি প্রশস্ত কলামে পুরো ভেতরের স্ক্রিন ভরে দেয়। • খুললেই আজকের দিন, শেষ ওজন আগে থেকেই বসানো; ±0.1 চাপলেই শেষ • “আজ মাপিনি” দিলেও দিন গোনা হয়, তাই স্ট্রিক ভাঙে না • 7 দিনের গড় রেখা আর এই সপ্তাহ বনাম গত সপ্তাহ, তাই এক দিনের ওঠানামায় দুশ্চিন্তা নেই • ওজনের বাইরের ছোট জয়ও লিখুন: প্যান্ট ঢিলে হয়েছে, সিঁড়ি সহজ লাগছে • শুধু দরকারি মডিউল চালু করুন: ফাস্টিং, ইনজেকশন কার্ড বা পানি ও প্রোটিন • মেঘ ওজন দেখে নয়, আপনার আসার দিন দেখে বড় হয় • অ্যাকাউন্ট নেই, বিজ্ঞাপন নেই, ট্র্যাকিং নেই প্রতি সপ্তাহে নিজে থেকে তৈরি কার্ড শেয়ার করুন; তাতে শুধু পরিবর্তন আর কার্ভ থাকে, ওজনের সংখ্যা নয়। ফিচার • ওজনের ট্রেন্ড: প্রতিদিনের বিন্দু ও 7 দিনের গড় রেখা, সঙ্গে শেষ 30 দিনের ট্রেন্ড ও ইতিহাস; 3 মাস ও পুরো সময়ের ট্রেন্ড এবং আরও পুরোনো ইতিহাস (Kumo Full) • শরীরের মাপ: কোমর, বডি ফ্যাট শতাংশ, হিপ, বুক, উরু, বাহু ও ঘাড়, প্রতিটির আলাদা ট্রেন্ড (1টি বিনামূল্যে, সবগুলো Kumo Full-এ); লক্ষ্যে পৌঁছানোর আনুমানিক তারিখ, শুধু রেফারেন্সের জন্য; আগে-পরের ছবি, মুখ আগে থেকেই ঝাপসা (Kumo Full) • ফাস্টিং টাইমার: 12:12, 14:10, 16:8; Kumo Full-এ 18:6, 20:4, নিজের মতো প্ল্যান ও ফাস্টিং চার্ট; ঘড়িতে বাকি সময়; লক স্ক্রিন ও Dynamic Island-এ লাইভ কাউন্টডাউন (Kumo Full); শুরুর সময় পরে বদলানো যায়; সর্বোচ্চ 23 ঘণ্টা, শেষে ভালো করে খাওয়ার রিমাইন্ডার। অন্তঃসত্ত্বা হলে বা বুকের দুধ খাওয়ালে, বয়স 18-এর কম হলে, খাওয়ার ব্যাধি বা দীর্ঘমেয়াদি অসুখ থাকলে ফাস্টিংয়ের আগে ডাক্তারের সাথে কথা বলুন • ইনজেকশন কার্ড: তারিখ, জায়গা ও নিজের নোট; আপনার ঠিক করা সময়সূচিতে রিমাইন্ডার; পরের বার পর্যন্ত কাউন্টডাউন, সম্প্রতি ব্যবহার করা জায়গার ম্যাপ, শরীর কেমন লাগছে তার টিক। শুধু রেকর্ড: কোনো হিসাব, ব্যাখ্যা বা ডোজের পরামর্শ নেই, ডোজও লেখা হয় না • পানি ও প্রোটিন: এক ট্যাপে +1 গ্লাস পানি বা +10/20/30 গ্রাম প্রোটিন, রিংয়ে আজকের অগ্রগতি; হেলথ অ্যাপ যুক্ত করলে আজকের স্টেপ সংখ্যা দেখায় (শুধু দেখায়, সেভ হয় না) • বড় হওয়া মেঘ: 5 ধাপে বড় হয়; বেসিক মেঘ বিনামূল্যে, জামা আর আবহাওয়ার থিম (রোদ, রংধনু, বৃষ্টি, তুষার, তারাভরা আকাশ) Kumo Full-এ • Apple Watch: Digital Crown ঘুরিয়ে এক ট্যাপে লিখুন, পাশে ফোন না থাকলেও চলে; ঘড়ির ফেসে কমপ্লিকেশন, ফাস্টিংসহ • হোম ও লক স্ক্রিনের সব উইজেট বিনামূল্যে: আজ লেখা হয়েছে কি না, স্ট্রিক, সাপ্তাহিক গড়, মেঘ, আর কুইক-লগ উইজেট; কন্ট্রোল সেন্টার বোতাম; Siri দিয়ে ওজন ও পানি লেখা; চাইলে ওজন ও কোমরের মাপ হেলথ অ্যাপে লিখুন বা সেখান থেকে ওজন আনুন • কেজি, পাউন্ড বা স্টোন; CSV ও মাসিক PDF রিপোর্ট এক্সপোর্ট (Kumo Full) গোপনীয়তা: আপনার ডেটা থাকে আপনার ডিভাইস ও আপনার নিজের iCloud-এ, ফোন আর Apple Watch-এর মধ্যে নিজে থেকেই সিঙ্ক হয়। বিনামূল্যে ওজনের রেকর্ড, 7 দিনের গড় রেখা ও শেষ 30 দিনের ট্রেন্ড ও ইতিহাস; পছন্দের 1টি মডিউল (ফাস্টিং 12:12, 14:10 বা 16:8, ইনজেকশন কার্ড, অথবা পানি ও প্রোটিন); শরীরের 1টি মাপ; 1টি রিমাইন্ডার; Apple Watch-এ রেকর্ড ও ঘড়ির ফেসের কমপ্লিকেশন; হোম ও লক স্ক্রিনের সব উইজেট; মেঘের বেসিক রূপ; অ্যাকাউন্ট ছাড়া; iCloud সিঙ্ক। Kumo Full একসাথে একাধিক মডিউল ও শরীরের সব মাপ; 18:6, 20:4, নিজের মতো ফাস্টিং ও ফাস্টিং চার্ট; লক স্ক্রিন ও Dynamic Island-এ লাইভ কাউন্টডাউন; 3 মাস ও পুরো সময়ের ট্রেন্ড এবং 30 দিনের বেশি পুরোনো ইতিহাস; আগে-পরের ছবি; CSV ও PDF এক্সপোর্ট; একাধিক ও পানির রিমাইন্ডার; জামা ও আবহাওয়া। Kumo Full মাসিক বা বার্ষিক স্বয়ংক্রিয় নবায়নযোগ্য সাবস্ক্রিপশন, অথবা একবারের ইন-অ্যাপ কেনাকাটা হিসেবে পাওয়া যায়। পেমেন্ট আপনার Apple অ্যাকাউন্ট থেকে নেওয়া হয়। বর্তমান মেয়াদ শেষ হওয়ার অন্তত 24 ঘণ্টা আগে বাতিল না করলে সাবস্ক্রিপশন নিজে থেকে নবায়ন হয়; Apple অ্যাকাউন্ট সেটিংসে যেকোনো সময় পরিচালনা বা বাতিল করুন। প্রাইভেসি পলিসি: https://alice51849.github.io/ios-app-guide/apps/kumo/privacy.html ব্যবহারের শর্তাবলি: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/ প্রশ্ন বা মতামত থাকলে এই পাতার অ্যাপ সাপোর্ট লিংক ব্যবহার করুন। Kumo শুধু ব্যক্তিগত রেকর্ড রাখার জন্য, এটি কোনো ডাক্তারি পরামর্শ দেয় না। সবসময় আপনার ডাক্তারের নির্দেশনা মেনে চলুন।",
+      "category": "health",
+      "category_label": "স্বাস্থ্য",
+      "purchase_model": "neutral",
+      "purchase_label": "বর্তমান তালিকা দেখুন",
+      "one_time_option": false,
+      "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "no_tracking"
+      ],
+      "privacy_labels": [
+        "কোনও অ্যাকাউন্ট নেই",
+        "কোনও বিজ্ঞাপন নেই",
+        "কোনও ট্র্যাকিং নেই"
+      ],
+      "device_surfaces": [
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Apple Watch"
+      ],
+      "badge_labels": [
+        "স্বাস্থ্য",
+        "বর্তমান তালিকা দেখুন",
+        "কোনও অ্যাকাউন্ট নেই",
+        "কোনও বিজ্ঞাপন নেই",
+        "কোনও ট্র্যাকিং নেই",
+        "Apple Watch"
+      ],
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/kumo.html",
+      "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/kumo/decision/l/bn-BD/index.html",
+      "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/bn-BD/kumo.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Fkumo%2Fdecision%2Fl%2Fbn-BD%2Findex.html&format=json",
+      "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/bn-BD.json",
+      "app_store_id": "6830824515",
+      "canonical_app_store_url": null,
+      "app_store_url": null,
+      "app_store_cta_label": "Apple App Store এখনো বাংলাদেশে চালু হয়নি, তাই এখান থেকে অ্যাপের সরাসরি ডাউনলোড লিঙ্ক দেওয়া সম্ভব নয়। অ্যাপটির সব তথ্য নিচে বাংলায় দেওয়া আছে।",
+      "storefront_facts": null,
+      "guide_cta_label": "সম্পূর্ণ গাইড পড়ুন",
+      "publisher_disclosure": "এটি Lumi Studio দ্বারা প্রকাশিত প্রথম পক্ষের উপাদান, যিনি প্রতিটি তালিকাভুক্ত অ্যাপের ডেভেলপার।",
+      "source_persona_query": "glp-1 tracker app to log weight and shot day on iphone",
       "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,

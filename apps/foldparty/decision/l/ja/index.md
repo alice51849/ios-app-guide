@@ -2,7 +2,7 @@
 title: "にゃんにゃんパーティー：2人で遊べるミニゲーム集 — 折りたたみスマホでもっと楽しい！かわいい猫ゲーム200種 | iOS App"
 lang: "ja"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/foldparty/decision/l/ja/index.html"
-modified: "2026-11-12"
+modified: "2026-11-13"
 app_store_id: "6829184924"
 verified_live: true
 purchase_model: "paid_upfront"

@@ -2,7 +2,7 @@
 title: "ผู้ช่วยเวลารถไฟฟ้า MRT ไทเป — ถึงกี่โมง บอกเวลาที่ต้องออก | iOS App"
 lang: "th"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/metrotimehelper/decision/l/th/index.html"
-modified: "2026-11-12"
+modified: "2026-11-13"
 app_store_id: "6819061896"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

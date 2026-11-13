@@ -2,7 +2,7 @@
 title: "Meow Party: Katten Spelletjes — 200 minigames voor foldables | iOS App"
 lang: "nl-NL"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/foldparty/decision/l/nl-NL/index.html"
-modified: "2026-11-12"
+modified: "2026-11-13"
 app_store_id: "6829184924"
 verified_live: true
 purchase_model: "paid_upfront"

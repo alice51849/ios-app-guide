@@ -2,7 +2,7 @@
 title: "Meow Party : Mini-jeux de chat — 200 jeux sur écran pliable | iOS App"
 lang: "fr-CA"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/foldparty/decision/l/fr-CA/index.html"
-modified: "2026-11-12"
+modified: "2026-11-13"
 app_store_id: "6829184924"
 verified_live: true
 purchase_model: "paid_upfront"

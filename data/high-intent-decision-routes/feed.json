@@ -295,6 +295,20 @@
     },
     {
       "_lumi_route": {
+        "app_key": "kumo",
+        "campaign_token": "geo_ask",
+        "intent_type": "problem_aware",
+        "locale": "en-US",
+        "record_digest": "444558560fbfea404408a272f121a6d21bf6df034bfeac142c0c8f3260c10f67"
+      },
+      "id": "en-US:kumo:weight-trend-log-with-optional-glp-1-shot-records",
+      "language": "en",
+      "summary": "The number on the scale moves up and down from one day to the next, so a single high reading can feel like a setback even when the overall direction has not changed. The decision is whether a quick daily weight log that leads with a rolling average, with an optional records-only shot log beside it, fits the way you already track.",
+      "title": "Is there a simple weight tracker that shows a 7-day average and can also keep a log of my GLP-1 shots?",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/kumo/weight-trend-log-with-optional-glp-1-shot-records.html"
+    },
+    {
+      "_lumi_route": {
         "app_key": "ledmovingtext",
         "campaign_token": "geo_learn",
         "intent_type": "workflow",
@@ -1006,6 +1020,20 @@
       "summary": "一個被覆蓋的即時存檔，就可能讓好幾小時的遊玩進度消失；不少模擬器的存檔欄位只有編號，看不出哪一格存的是哪個時間點。要判斷的是：即時存檔附畫面縮圖、每兩分鐘自動留一張快照、關掉 App 也會自動存檔接續的模擬器，是否符合你的玩法。",
       "title": "有沒有 iPhone 模擬器能把存檔進度保護好、壞了也救得回來？",
       "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/decide/gbago/keep-emulator-save-progress-safe-and-recoverable-on-iphone.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "kumo",
+        "campaign_token": "geo_ask",
+        "intent_type": "problem_aware",
+        "locale": "zh-Hant",
+        "record_digest": "3b7538f4b3adb5e8248bd865cad32fba0706eeac1b70069618a09712352c56f3"
+      },
+      "id": "zh-Hant:kumo:weight-trend-log-with-optional-glp-1-shot-records",
+      "language": "zh-Hant",
+      "summary": "體重每天高高低低，量到一次比較高的數字就容易覺得白努力，即使整體方向其實沒變。要判斷的是：一個每天幾秒就記好、以 7 日平均為主的體重紀錄，旁邊再加上只做紀錄的注射卡，是否符合你現在的記錄習慣。",
+      "title": "有沒有簡單的體重紀錄 App，可以看 7 日平均，也能順便記錄 GLP-1 注射？",
+      "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/decide/kumo/weight-trend-log-with-optional-glp-1-shot-records.html"
     },
     {
       "_lumi_route": {

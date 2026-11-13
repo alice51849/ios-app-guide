@@ -1,12 +1,12 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-11-12",
-  "content_digest": "3fb46fdf7ac4bd913296849cd9449ddfd99af8ae2d3f3823028980425fe17b9d",
+  "date_modified": "2026-11-13",
+  "content_digest": "a4c4fd3b581828512385d2b2b6fe3368132f26b46e82b72346393f701fcb46bf",
   "locale": "es-ES",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 59,
+  "record_count": 60,
   "apps": [
     {
       "key": "notesstudio100",
@@ -731,6 +731,48 @@
         "currency": "EUR",
         "formatted_price": "5,99 €",
         "storefront_url": "https://apps.apple.com/es/app/id6754218117"
+      }
+    },
+    {
+      "key": "kumo",
+      "app_store_id": "6830824515",
+      "name": "Kumo: Control de peso y GLP-1",
+      "summary": "Tu peso sube y baja cada día: Kumo lo anota en 10 segundos y te muestra la tendencia real gracias a la media de 7 días, con o sin inyecciones GLP-1. Una nube adorable crece en 5 etapas con cada día que vienes a registrar.",
+      "category": "health",
+      "search_terms": [
+        "adelgazar",
+        "perder",
+        "bajar",
+        "pérdida",
+        "registro",
+        "diario",
+        "dieta",
+        "medidas",
+        "agua",
+        "proteínas",
+        "glp1",
+        "seguimiento",
+        "kilos"
+      ],
+      "purchase_model": "neutral",
+      "one_time_option": false,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/es/app/id6830824515?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/es-ES/kumo.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/es/app/id6830824515"
       }
     },
     {

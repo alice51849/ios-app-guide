@@ -3,7 +3,7 @@
   <atom:id>https://open.cait518.cc/ios-app-guide/hu/feed.xml</atom:id>
   <atom:title>Alkalmazáskatalógus | iOS</atom:title>
   <atom:subtitle>Ez első kézből származó anyag, amelyet a Lumi Studio tett közzé, az összes felsorolt alkalmazás fejlesztője.</atom:subtitle>
-  <atom:updated>2026-11-05T21:32:02Z</atom:updated>
+  <atom:updated>2026-11-13T00:45:27Z</atom:updated>
   <atom:author>
     <atom:name>Lumi Studio</atom:name>
   </atom:author>
@@ -200,6 +200,16 @@
     <atom:link rel="alternate" href="https://open.cait518.cc/ios-app-guide/hu/hourstaglite.html" />
     <atom:content type="html">&lt;p&gt;Optimalizálva az iPhone Duo készülékhez. A legújabb SDK-val készült alkalmazás kitölti a teljes belső kijelzőt, és automatikusan igazítja az elrendezést, akár össze van hajtva a készülék, akár ki van nyitva.&lt;/p&gt;&lt;p&gt;Ingyenes kezdés · feloldás egyszeri vásárlással&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/hu/app/id6794039979?pt=118326163&amp;amp;ct=geo_pick&amp;amp;mt=8"&gt;Megtekintés az App Store-ban&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Ez első kézből származó anyag, amelyet a Lumi Studio tett közzé, az összes felsorolt alkalmazás fejlesztője.&lt;/p&gt;</atom:content>
     <lumi:record>{"app_key":"hourstaglite","app_store_cta_label":"Megtekintés az App Store-ban","app_store_id":"6794039979","content_digest":"03283c4c63dadc2b9f82863a2eab5171fe9535a44b524574c5d6a16ef889acdd","independent_ranking":false,"one_time_option":true,"publisher_disclosure":"Ez első kézből származó anyag, amelyet a Lumi Studio tett közzé, az összes felsorolt alkalmazás fejlesztője.","purchase_label":"Ingyenes kezdés · feloldás egyszeri vásárlással","purchase_model":"free_with_lifetime_unlock","source_locale":"hu"}</lumi:record>
+  </atom:entry>
+  <atom:entry>
+    <atom:id>urn:lumi:app-store:6830824515:locale:hu</atom:id>
+    <atom:title>Kumo: Fogyás és súlykövető</atom:title>
+    <atom:summary>A mérleg napról napra ugrál, de a Kumo 10 másodperc alatt rögzíti a súlyodat, és a 7 napos átlaggal a valódi irányt mutatja. Injekcióval vagy anélkül, böjttel vagy anélkül, egy aranyos felhővel, ami veled nő.</atom:summary>
+    <atom:published>2026-11-13T00:45:27Z</atom:published>
+    <atom:updated>2026-11-13T00:45:27Z</atom:updated>
+    <atom:link rel="alternate" href="https://open.cait518.cc/ios-app-guide/hu/kumo.html" />
+    <atom:content type="html">&lt;p&gt;A mérleg napról napra ugrál, de a Kumo 10 másodperc alatt rögzíti a súlyodat, és a 7 napos átlaggal a valódi irányt mutatja. Injekcióval vagy anélkül, böjttel vagy anélkül, egy aranyos felhővel, ami veled nő.&lt;/p&gt;&lt;p&gt;Ellenőrizd a jelenlegi listát&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/hu/app/id6830824515?pt=118326163&amp;amp;ct=geo_pick&amp;amp;mt=8"&gt;Megtekintés az App Store-ban&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Ez első kézből származó anyag, amelyet a Lumi Studio tett közzé, az összes felsorolt alkalmazás fejlesztője.&lt;/p&gt;</atom:content>
+    <lumi:record>{"app_key":"kumo","app_store_cta_label":"Megtekintés az App Store-ban","app_store_id":"6830824515","content_digest":"3f40d0ba0675e3eb8add175346bf5b7eb10d919f2cb85a182bf31d2addcc9a6c","independent_ranking":false,"one_time_option":false,"publisher_disclosure":"Ez első kézből származó anyag, amelyet a Lumi Studio tett közzé, az összes felsorolt alkalmazás fejlesztője.","purchase_label":"Ellenőrizd a jelenlegi listát","purchase_model":"neutral","source_locale":"hu"}</lumi:record>
   </atom:entry>
   <atom:entry>
     <atom:id>urn:lumi:app-store:6806639602:locale:hu</atom:id>

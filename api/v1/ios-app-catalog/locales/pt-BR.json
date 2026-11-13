@@ -1,12 +1,12 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-11-12",
-  "content_digest": "3fb46fdf7ac4bd913296849cd9449ddfd99af8ae2d3f3823028980425fe17b9d",
+  "date_modified": "2026-11-13",
+  "content_digest": "a4c4fd3b581828512385d2b2b6fe3368132f26b46e82b72346393f701fcb46bf",
   "locale": "pt-BR",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 59,
+  "record_count": 60,
   "apps": [
     {
       "key": "notesstudio100",
@@ -728,6 +728,47 @@
         "currency": "BRL",
         "formatted_price": "R$ 29,90",
         "storefront_url": "https://apps.apple.com/br/app/id6754218117"
+      }
+    },
+    {
+      "key": "kumo",
+      "app_store_id": "6830824515",
+      "name": "Kumo: Controle de Peso e GLP-1",
+      "summary": "Se a balança te desanima com tanto sobe e desce, o Kumo registra seu peso em 10 segundos e mostra a tendência real com a média de 7 dias, com ou sem injeções de GLP-1. Uma nuvem fofa cresce a cada dia que você vem anotar.",
+      "category": "health",
+      "search_terms": [
+        "caneta",
+        "emagrecedora",
+        "intermitente",
+        "injeção",
+        "perder",
+        "perda",
+        "registro",
+        "proteína",
+        "medidas",
+        "168",
+        "tracker",
+        "glp1"
+      ],
+      "purchase_model": "neutral",
+      "one_time_option": false,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/br/app/id6830824515?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/pt-BR/kumo.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "BRL",
+        "formatted_price": "Grátis",
+        "storefront_url": "https://apps.apple.com/br/app/id6830824515"
       }
     },
     {

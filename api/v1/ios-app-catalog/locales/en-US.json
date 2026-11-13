@@ -1,12 +1,12 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-11-12",
-  "content_digest": "3fb46fdf7ac4bd913296849cd9449ddfd99af8ae2d3f3823028980425fe17b9d",
+  "date_modified": "2026-11-13",
+  "content_digest": "a4c4fd3b581828512385d2b2b6fe3368132f26b46e82b72346393f701fcb46bf",
   "locale": "en-US",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 59,
+  "record_count": 60,
   "apps": [
     {
       "key": "notesstudio100",
@@ -138,7 +138,7 @@
     {
       "key": "battai",
       "app_store_id": "6802423998",
-      "name": "BattAI: Battery Health & Life",
+      "name": "BattAI: Battery Health Score",
       "summary": "Optimized for iPhone Duo. Built with the latest SDK, the app fills the entire inner display and automatically adjusts its layout whether the device is folded or open.",
       "category": "utility",
       "search_terms": [
@@ -602,7 +602,7 @@
     {
       "key": "gmoneylite",
       "app_store_id": "6793436548",
-      "name": "G+Money Lite: Trip Spending",
+      "name": "G+Money Lite: Travel Budget",
       "summary": "Optimized for iPhone Duo. Built with the latest SDK, the app fills the entire inner display and automatically adjusts its layout whether the device is folded or open.",
       "category": "finance",
       "search_terms": [
@@ -764,6 +764,49 @@
         "currency": "USD",
         "formatted_price": "$4.99",
         "storefront_url": "https://apps.apple.com/us/app/id6754218117"
+      }
+    },
+    {
+      "key": "kumo",
+      "app_store_id": "6830824515",
+      "name": "Kumo: Weight & GLP-1 Tracker",
+      "summary": "The scale jumps around every day, so Kumo turns a 10-second weigh-in into a calm 7-day average, with or without GLP-1 shots. A cute cloud grows every day you show up.",
+      "category": "health",
+      "search_terms": [
+        "loss",
+        "injection",
+        "glp1",
+        "daily",
+        "diary",
+        "body",
+        "measurement",
+        "intermittent",
+        "timer",
+        "reminder",
+        "protein",
+        "water",
+        "diet",
+        "jab"
+      ],
+      "purchase_model": "neutral",
+      "one_time_option": false,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/us/app/id6830824515?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/kumo.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "Free",
+        "storefront_url": "https://apps.apple.com/us/app/id6830824515"
       }
     },
     {
@@ -1392,7 +1435,7 @@
         "currency": "USD",
         "formatted_price": "Free",
         "rating_value": 4.2,
-        "rating_count": 48,
+        "rating_count": 49,
         "storefront_url": "https://apps.apple.com/us/app/id6785004775"
       }
     },
@@ -1613,7 +1656,7 @@
     {
       "key": "qrcodehalo",
       "app_store_id": "6806779853",
-      "name": "QR Code Halo: Scan & Create",
+      "name": "QR Code Halo: Safe QR Scanner",
       "summary": "Optimized for iPhone Duo. Built with the latest SDK, the app fills the entire inner display and automatically adjusts its layout whether the device is folded or open.",
       "category": "utility",
       "search_terms": [
@@ -2079,7 +2122,7 @@
     {
       "key": "tripbeecute",
       "app_store_id": "6826987407",
-      "name": "TripBee Cute: Travel Journal",
+      "name": "TripBee Cute: Itinerary Maker",
       "summary": "Stop digging through emails, screenshots and notes: TripBee Cute turns your whole trip into one cute illustrated booklet, with the countdown, flights, day plans and packing list on a single page.",
       "category": "travel",
       "search_terms": [

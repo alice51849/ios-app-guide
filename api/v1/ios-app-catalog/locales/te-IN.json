@@ -1,12 +1,12 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-11-12",
-  "content_digest": "3fb46fdf7ac4bd913296849cd9449ddfd99af8ae2d3f3823028980425fe17b9d",
+  "date_modified": "2026-11-13",
+  "content_digest": "a4c4fd3b581828512385d2b2b6fe3368132f26b46e82b72346393f701fcb46bf",
   "locale": "te-IN",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 59,
+  "record_count": 60,
   "apps": [
     {
       "key": "notesstudio100",
@@ -745,6 +745,49 @@
         "currency": "INR",
         "formatted_price": "₹ 499",
         "storefront_url": "https://apps.apple.com/in/app/id6754218117"
+      }
+    },
+    {
+      "key": "kumo",
+      "app_store_id": "6830824515",
+      "name": "Kumo: బరువు తగ్గడం ట్రాకర్",
+      "summary": "రోజూ పైకీ కిందికీ మారే బరువు సంఖ్య చూసి నిరుత్సాహపడకండి: Kumo లో 10 సెకన్లలో బరువు నమోదు చేసి, 7 రోజుల సగటుతో అసలు ట్రెండ్ చూడండి. ఇంజెక్షన్ తీసుకున్నా తీసుకోకపోయినా సరిపోతుంది. మీరు వచ్చే ప్రతి రోజుతో ఒక ముద్దైన మేఘం పెరుగుతుంది.",
+      "category": "health",
+      "search_terms": [
+        "ఉపవాసం",
+        "ఇంజెక్షన్",
+        "ఇంటర్మిటెంట్",
+        "వెయిట్",
+        "లాస్",
+        "డైట్",
+        "ప్రోటీన్",
+        "నీళ్లు",
+        "రిమైండర్",
+        "నడుము",
+        "కొలతలు",
+        "శరీర",
+        "16:8",
+        "తూకం"
+      ],
+      "purchase_model": "neutral",
+      "one_time_option": false,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/in/app/id6830824515?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/te-IN/kumo.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "ఉచితం",
+        "storefront_url": "https://apps.apple.com/in/app/id6830824515"
       }
     },
     {

@@ -1,8 +1,8 @@
 {
   "schema": "lumi.live-app-roster/v1",
   "version": 1,
-  "revision": 17,
-  "roster_digest": "3024900a207bf5c6e7b0dcbb8099cc4bac2ec8ca00c1349f4a1fd4b5c57fcf26",
+  "revision": 18,
+  "roster_digest": "151b01fd2464a3f08cccb53f5250e72f9f2e0412099cee732d39496fa3f97637",
   "apps": {
     "aibriefpack": {
       "app_id": "6791658210",
@@ -79,6 +79,10 @@
     "hourstaglite": {
       "app_id": "6794039979",
       "name": "HoursTag Lite"
+    },
+    "kumo": {
+      "app_id": "6830824515",
+      "name": "Kumo"
     },
     "ledmovingtext": {
       "app_id": "6806639602",

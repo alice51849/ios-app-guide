@@ -1,12 +1,12 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-11-12",
-  "content_digest": "3fb46fdf7ac4bd913296849cd9449ddfd99af8ae2d3f3823028980425fe17b9d",
+  "date_modified": "2026-11-13",
+  "content_digest": "a4c4fd3b581828512385d2b2b6fe3368132f26b46e82b72346393f701fcb46bf",
   "locale": "bn-BD",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 59,
+  "record_count": 60,
   "apps": [
     {
       "key": "notesstudio100",
@@ -988,6 +988,62 @@
       },
       "app_store_url": null,
       "guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/hourstag.html",
+      "verified_live": true,
+      "locale": "bn-BD",
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+        "evidence": {
+          "source_url": "https://support.apple.com/en-us/118205",
+          "observed_at": "2026-09-12",
+          "country": "BD",
+          "apple_media_services_markets": 174,
+          "country_listed": false,
+          "lookup_app_results": 0,
+          "lookup_control_results": 0,
+          "redirect_market": "US"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
+    },
+    {
+      "key": "kumo",
+      "app_store_id": "6830824515",
+      "name": "Kumo: ওজন কমানো ও ডায়েট",
+      "summary": "রোজকার ওজনের ওঠানামা দেখে হাল ছেড়ে দিতে ইচ্ছে করে? Kumo-তে দিনে 10 সেকেন্ডে ওজন লিখুন, 7 দিনের গড়ে আসল ট্রেন্ড দেখুন, আর সাথে বড় হয় একটা কিউট মেঘ। GLP-1 ইনজেকশন নিন বা না নিন, Kumo দুই ক্ষেত্রেই কাজে লাগে।",
+      "category": "health",
+      "search_terms": [
+        "কমানোর",
+        "ট্র্যাকার",
+        "ইনজেকশন",
+        "রেকর্ড",
+        "ডায়েরি",
+        "উপবাস",
+        "ইন্টারমিটেন্ট",
+        "প্রোটিন",
+        "কোমর",
+        "মাপ",
+        "শরীর",
+        "অভ্যাস",
+        "লক্ষ্য"
+      ],
+      "purchase_model": "neutral",
+      "one_time_option": false,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": null,
+      "guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/kumo.html",
       "verified_live": true,
       "locale": "bn-BD",
       "market_availability": {

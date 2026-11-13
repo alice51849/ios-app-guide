@@ -1,12 +1,12 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-11-12",
-  "content_digest": "3fb46fdf7ac4bd913296849cd9449ddfd99af8ae2d3f3823028980425fe17b9d",
+  "date_modified": "2026-11-13",
+  "content_digest": "a4c4fd3b581828512385d2b2b6fe3368132f26b46e82b72346393f701fcb46bf",
   "locale": "ko",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 59,
+  "record_count": 60,
   "apps": [
     {
       "key": "notesstudio100",
@@ -947,6 +947,62 @@
         "currency": "KRW",
         "formatted_price": "￦7,700",
         "storefront_url": "https://apps.apple.com/kr/app/id6754218117"
+      }
+    },
+    {
+      "key": "kumo",
+      "app_store_id": "6830824515",
+      "name": "Kumo 몸무게·GLP-1 주사 기록·간헐적 단식",
+      "summary": "매일 오르내리는 체중계 숫자에 지쳤다면, Kumo는 하루 10초 기록과 7일 평균으로 흐름만 보여 줘요. GLP-1 주사를 맞든 안 맞든 쓸 수 있고, 기록하러 온 날만큼 구름이 자라요.",
+      "category": "health",
+      "search_terms": [
+        "공복",
+        "타이머",
+        "금식",
+        "168",
+        "16시간",
+        "물",
+        "마시기",
+        "수분",
+        "단백질",
+        "허리둘레",
+        "체지방",
+        "감량",
+        "살빼기",
+        "눈바디",
+        "비포애프터",
+        "그래프",
+        "습관",
+        "알림",
+        "목표",
+        "체형",
+        "일지",
+        "다이어리",
+        "트래커",
+        "추적기",
+        "어플",
+        "기록장",
+        "부위"
+      ],
+      "purchase_model": "neutral",
+      "one_time_option": false,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/kr/app/id6830824515?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/ko/kumo.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "KRW",
+        "formatted_price": "무료",
+        "storefront_url": "https://apps.apple.com/kr/app/id6830824515"
       }
     },
     {

@@ -1,18 +1,54 @@
 {
- "generated": "2026-11-13T01:54:40Z",
+ "generated": "2026-11-13T19:49:39Z",
  "mode": "apply",
  "counts": {
+  "ok_reply": 66,
   "unknown_app": 48,
-  "ok_reply": 63,
-  "ok_backfilled_earlier": 77,
+  "ok_backfilled_earlier": 79,
   "backfilled": 2,
-  "ok_store_only": 653,
+  "ok_store_only": 651,
   "ok_bio_link": 68,
   "ok_caption": 4,
   "taken_down": 4,
   "missing": 3
  },
  "rows": [
+  {
+   "channel": "threads",
+   "id": "18103798019379867",
+   "permalink": "https://www.threads.com/@hourstag.app/post/DfqozIgDiH5",
+   "date": "2026-11-13",
+   "app": "mochi",
+   "status": "ok_reply",
+   "text": "Friendsgiving at my place this year, so naturally I made lists. A menu list and a grocery list, both cute enough that I don't dread opening ",
+   "why": "trial",
+   "ios_id": "6785004775",
+   "locale": "en-US"
+  },
+  {
+   "channel": "threads",
+   "id": "18038181740851182",
+   "permalink": "https://www.threads.com/@hourstag.app/post/DfsSn_JErLj",
+   "date": "2026-11-13",
+   "app": "tripbeecute",
+   "status": "ok_reply",
+   "text": "귀여운 일러스트 책자, 디데이, 함께 계획. 여러 앱을 오갈 필요 없이 여행 전체를 한 페이지에서 확인해요. TripBee Cute: 여행 일정 다이어리",
+   "why": "brand",
+   "ios_id": "6826987407",
+   "locale": "ko"
+  },
+  {
+   "channel": "threads",
+   "id": "17922736974240786",
+   "permalink": "https://www.threads.com/@hourstag.app/post/DfrtSmNkey1",
+   "date": "2026-11-13",
+   "app": "tripbeecute",
+   "status": "ok_reply",
+   "text": "年底、寒假要出國的人，行程是不是又散在截圖、訂位信、聊天群組和備忘錄裡？ TripBee Cute 把整趟旅行收進一本可愛的旅行手帳：每趟旅行一本插畫封面的小手冊，翻開就是出發倒數、登機證風格的航班卡（時間、航廈、訂位代號）、每天分色的行程，最後是行李清單。 習慣用試算表排行程？",
+   "why": "brand",
+   "ios_id": "6826987407",
+   "locale": "zh-Hant"
+  },
   {
    "channel": "threads",
    "id": "18121456858956328",
@@ -1581,16 +1617,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/Dc9-4tViafq",
    "date": "2026-09-07",
    "app": "snapportlite",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "Lag ID-foto hjemme. Lag pass, visum og dokumentbilder med veiledet størrelse, bakgrunnsverktøy og klar til utskrift eksport. Snapport Lite: ",
    "why": "url+brand",
    "ios_id": "6792856304",
-   "locale": "other",
-   "own_replies": [],
-   "comment_id": "18360546061216781",
-   "at": "2026-11-13T01:52:01Z",
-   "verified": true,
-   "via": "list"
+   "locale": "other"
   },
   {
    "channel": "threads",
@@ -1610,16 +1641,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/Dc7t29rk9fn",
    "date": "2026-09-06",
    "app": "tripbee",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "מסלול ורשימת אריזה. תכננו כל טיול באפליקציה אחת יפה, פרטית ושעובדת גם ללא אינטרנט. TripBee: מתכנן טיולים אם בא לכם לנסות, זה כאן: https://ap",
    "why": "url",
    "ios_id": "6787754435",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "18114055634605478",
-   "at": "2026-11-13T01:52:01Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",
@@ -1627,11 +1653,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/Dc6EOFkk78-",
    "date": "2026-09-05",
    "app": "unblurry",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "写真のぼやけをHD補正。 Unblurry は、ピントの甘い写真、手ブレした写真、ぼやけた写真を、わずか数秒でシャープで鮮やかな一枚に変えます。処理はすべてあなたの iPhone 上で完結。クラウド不要、アカウント不要、待ち時間もありません。 Unblurry Pro：ぼやけ補正",
    "why": "url+brand",
    "ios_id": "6782275018",
-   "locale": "ja"
+   "locale": "ja",
+   "own_replies": [],
+   "comment_id": "18119713517022803",
+   "at": "2026-11-13T19:47:04Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -1639,11 +1670,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/Dc5L8E1k7Ek",
    "date": "2026-09-05",
    "app": "dailymate",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "不背單字,直接學生活會話。 每句都是能理解使用時機的完整表達,不把語言拆成孤立單字。 DailyMate：用句子學語言 有興趣的話，App Store 連結放這: https://apps.apple.com/tw/app/id6790418321?pt=118326163&ct",
    "why": "url+brand",
    "ios_id": "6790418321",
-   "locale": "zh-Hant"
+   "locale": "zh-Hant",
+   "own_replies": [],
+   "comment_id": "18034147589911783",
+   "at": "2026-11-13T19:47:04Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",

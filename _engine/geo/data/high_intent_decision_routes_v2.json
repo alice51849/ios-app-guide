@@ -3,9 +3,9 @@
   "dataset_name": "Lumi Studio High-Intent Decision Routes",
   "inventory_contract": {
     "relative_path": "data/verified-ios-app-finder-catalog.json",
-    "expected_app_count": 59,
-    "app_keys_sha256": "91a8c5ad6ebdc42c5291d585318ecd9658acde15edc650c00d50b6c6b555420d",
-    "copy_sha256": "123b54e948dea6f8025bc396a85cad7f76ff5ba3e6dd8d105ac7cc85f205490f",
+    "expected_app_count": 60,
+    "app_keys_sha256": "fb6805f542ce9f363d0fb17a1aca312cc4ae4331e68a9154e43717909646f1c1",
+    "copy_sha256": "4ab8574be4d9c34f5b814ab917cc7dc563bad177029b46cbcb9105be9923e3fa",
     "official_locales_sha256": "e26dabf9370286ad8fd12034270cfcade92b2db4f4a0eecc19324203ce84d5bd"
   },
   "publisher": {
@@ -2685,6 +2685,65 @@
             "summary.zh-Hant",
             "fact.purchase_model",
             "fact.one_time_option"
+          ]
+        }
+      }
+    },
+    {
+      "app_key": "kumo",
+      "route_slug": "weight-trend-log-with-optional-glp-1-shot-records",
+      "intent_type": "problem_aware",
+      "primary": true,
+      "keyword_refs": [
+        0,
+        1,
+        5
+      ],
+      "locales": {
+        "en-US": {
+          "language": "en",
+          "market": "United States",
+          "culture_route": "Many people in the United States weigh themselves at home each morning, and some of them are also on GLP-1 shots, often juggling a notes app, a calendar and a separate scale app to see everything together.",
+          "query": "Is there a simple weight tracker that shows a 7-day average and can also keep a log of my GLP-1 shots?",
+          "buyer_problem": "The number on the scale moves up and down from one day to the next, so a single high reading can feel like a setback even when the overall direction has not changed. The decision is whether a quick daily weight log that leads with a rolling average, with an optional records-only shot log beside it, fits the way you already track.",
+          "decision_rule": "Favor a weight log built around a 7-day average when daily swings discourage you and you want logging to take seconds on iPhone or Apple Watch. If you are on shots, choose one whose shot card only records what you enter, with no dose tracking, suggestions or interpretation, and keep following your health professional's guidance.",
+          "workflow_checks": [
+            "Does it open to today with the last weight filled in so a weigh-in takes only a few seconds?",
+            "Does it show a 7-day average line next to the daily readings instead of only the latest number?",
+            "If you log shots, does the shot card only record date, site and notes, without dose tracking or suggestions?"
+          ],
+          "alternative_lens": "If you want meal-by-meal calorie counting, coaching or medical guidance, a nutrition app or your clinician fits better, since this log is for personal tracking only and does not give health advice. If you only need a number with no trend, the Health app on its own may be enough.",
+          "verify_before_install": [
+            "Read the listing in your storefront to see which features are included and what the optional full upgrade adds.",
+            "Check that the shot card is optional and records only, so it matches how you want to keep notes."
+          ],
+          "evidence_refs": [
+            "summary.en",
+            "capability.no_account",
+            "capability.apple_watch"
+          ]
+        },
+        "zh-Hant": {
+          "language": "zh-Hant",
+          "market": "台灣",
+          "culture_route": "在台灣，很多人每天早上在家量體重，也有人照醫師安排在打 GLP-1，常常要同時用記事本、行事曆和另一個體重 App，才能把紀錄湊在一起看。",
+          "query": "有沒有簡單的體重紀錄 App，可以看 7 日平均，也能順便記錄 GLP-1 注射？",
+          "buyer_problem": "體重每天高高低低，量到一次比較高的數字就容易覺得白努力，即使整體方向其實沒變。要判斷的是：一個每天幾秒就記好、以 7 日平均為主的體重紀錄，旁邊再加上只做紀錄的注射卡，是否符合你現在的記錄習慣。",
+          "decision_rule": "如果每天的起伏讓你洩氣，又希望在 iPhone 或 Apple Watch 上幾秒就記好，選以 7 日平均為主的體重紀錄比較合適。如果有在打針，選注射卡只記錄你輸入的內容、不追蹤劑量、不給建議也不做解讀的，並且繼續照你的醫療專業人員指示。",
+          "workflow_checks": [
+            "打開是否就停在今天、帶好上次的體重，幾秒就能記完？",
+            "是否在每天的數字旁邊顯示 7 日平均線，而不是只看最新一筆？",
+            "如果要記打針，注射卡是否只記日期、部位和備註，不追蹤劑量也不給建議？"
+          ],
+          "alternative_lens": "如果你要逐餐算熱量、找教練，或需要專業意見，營養 App 或你的醫師更合適，這個紀錄只供個人追蹤、不提供健康建議；如果只需要一個數字、不看趨勢，單用健康 App 可能就夠了。",
+          "verify_before_install": [
+            "先看你所在地區 App Store 頁面，確認各功能包含哪些內容，以及選用的完整版多提供什麼。",
+            "確認注射卡是選用、只做紀錄，符合你想要的紀錄方式。"
+          ],
+          "evidence_refs": [
+            "summary.zh-Hant",
+            "capability.no_ads",
+            "capability.no_tracking"
           ]
         }
       }

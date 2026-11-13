@@ -1,9 +1,9 @@
 {
  "schema": "lumi.android-live-snapshot/v1",
  "source": "AndroidPlay android_live_scan (Play page HTTP 200 + publish LIVE)",
- "source_generated": "2026-11-11T11:40:24+0800",
- "count": 59,
- "content_sha256": "6549f577e93512518ac3176cf592859a3cff9859a24db6b77996e82bf61394ca",
+ "source_generated": "2026-11-13T09:03:08+0800",
+ "count": 60,
+ "content_sha256": "dc53df66b73c8f794bb8440ad417bc2a5a893a844005d9c77c4ca0fbaca1ea89",
  "apps": {
   "aibriefpack": {
    "ios_app_id": "6791658210",
@@ -393,6 +393,27 @@
     "zh-TW": {
      "title": "HoursTag Lite",
      "short_description": "買東西前先換算要工作幾小時，標記必要、想要或衝動，花得清楚，存錢也更有方向"
+    }
+   }
+  },
+  "kumo": {
+   "ios_app_id": "6830824515",
+   "ios_name": "Kumo",
+   "android_folder": "59_Kumo",
+   "package": "com.alice51849.Kumo",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.Kumo",
+   "paid": false,
+   "first_seen": "2026-11-11T11:40:24+0800",
+   "launch_wave": "new",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "Kumo: Weight & GLP-1 Tracker",
+     "short_description": "Weight loss, fasting & shot logs in one app, plus a cloud that grows."
+    },
+    "zh-TW": {
+     "title": "Kumo 體重紀錄・GLP-1 注射日記",
+     "short_description": "減重、斷食、打針紀錄一次搞定，還有會長大的雲朵；免帳號。"
     }
    }
   },
@@ -1241,11 +1262,6 @@
    "package": "com.alice51849.metrotimehelper.paid",
    "reason": "duplicate_ios_key:metrotimehelper",
    "conflict_with": "56_MetroTimeHelper"
-  },
-  {
-   "folder": "59_Kumo",
-   "package": "com.alice51849.Kumo",
-   "reason": "no_unique_ios_match"
   }
  ],
  "baseline_first_seen": "2026-10-11T14:26:56+0800"

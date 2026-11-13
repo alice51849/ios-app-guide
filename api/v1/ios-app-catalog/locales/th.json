@@ -1,12 +1,12 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-11-12",
-  "content_digest": "3fb46fdf7ac4bd913296849cd9449ddfd99af8ae2d3f3823028980425fe17b9d",
+  "date_modified": "2026-11-13",
+  "content_digest": "a4c4fd3b581828512385d2b2b6fe3368132f26b46e82b72346393f701fcb46bf",
   "locale": "th",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 59,
+  "record_count": 60,
   "apps": [
     {
       "key": "notesstudio100",
@@ -733,6 +733,50 @@
         "currency": "THB",
         "formatted_price": "฿199.00",
         "storefront_url": "https://apps.apple.com/th/app/id6754218117"
+      }
+    },
+    {
+      "key": "kumo",
+      "app_store_id": "6830824515",
+      "name": "Kumo: บันทึกน้ำหนัก ลดน้ำหนัก",
+      "summary": "น้ำหนักขึ้นลงทุกวันจนท้อ และแอปที่ซับซ้อนก็ทำให้เลิกจดในไม่กี่วัน แต่ Kumo ทำให้การจดน้ำหนักเหลือแค่วันละ 10 วินาที พร้อมค่าเฉลี่ย 7 วันที่ให้เห็นแนวโน้มจริงแทนตัวเลขที่แกว่งรายวัน ใช้ได้ทั้งคนที่ฉีด GLP-1 และคนที่ไม่ได้ฉีด พร้อมก้อนเมฆน่ารักที่โตขึ้นทุกวันที่คุณมาจด",
+      "category": "health",
+      "search_terms": [
+        "คุม",
+        "ไดเอท",
+        "เป็นช่วง",
+        "ดื่มน้ำ",
+        "เตือน",
+        "โปรตีน",
+        "สัดส่วน",
+        "รอบเอว",
+        "ไดอารี่",
+        "กราฟ",
+        "ชั่ง",
+        "จับเวลา",
+        "16:8",
+        "น่ารัก",
+        "ติดตาม"
+      ],
+      "purchase_model": "neutral",
+      "one_time_option": false,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/th/app/id6830824515?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/th/kumo.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "THB",
+        "formatted_price": "ฟรี",
+        "storefront_url": "https://apps.apple.com/th/app/id6830824515"
       }
     },
     {

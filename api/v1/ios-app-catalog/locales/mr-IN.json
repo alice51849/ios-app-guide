@@ -1,12 +1,12 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-11-12",
-  "content_digest": "3fb46fdf7ac4bd913296849cd9449ddfd99af8ae2d3f3823028980425fe17b9d",
+  "date_modified": "2026-11-13",
+  "content_digest": "a4c4fd3b581828512385d2b2b6fe3368132f26b46e82b72346393f701fcb46bf",
   "locale": "mr-IN",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 59,
+  "record_count": 60,
   "apps": [
     {
       "key": "notesstudio100",
@@ -763,6 +763,51 @@
         "currency": "INR",
         "formatted_price": "₹ 499",
         "storefront_url": "https://apps.apple.com/in/app/id6754218117"
+      }
+    },
+    {
+      "key": "kumo",
+      "app_store_id": "6830824515",
+      "name": "Kumo: वजन कमी, डाएट ट्रॅकर",
+      "summary": "रोजच्या चढउतारात न अडकता खरा ट्रेंड पाहा: Kumo रोज 10 सेकंदात वजन नोंदवते आणि 7 दिवसांची सरासरी दाखवते, सोबत तुमच्याबरोबर वाढणारा गोड ढग. इंजेक्शन घ्या वा न घ्या, दोन्हीसाठी तितकेच उपयोगी.",
+      "category": "health",
+      "search_terms": [
+        "करण्यासाठी",
+        "करणे",
+        "उपवास",
+        "इंटरमिटंट",
+        "डायट",
+        "वेट",
+        "लॉस",
+        "डायरी",
+        "पाणी",
+        "प्रोटीन",
+        "कंबर",
+        "माप",
+        "टायमर",
+        "सवय",
+        "आरोग्य",
+        "फिटनेस"
+      ],
+      "purchase_model": "neutral",
+      "one_time_option": false,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/in/app/id6830824515?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/mr-IN/kumo.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "मोफत",
+        "storefront_url": "https://apps.apple.com/in/app/id6830824515"
       }
     },
     {

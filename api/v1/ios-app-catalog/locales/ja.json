@@ -1,12 +1,12 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-11-12",
-  "content_digest": "3fb46fdf7ac4bd913296849cd9449ddfd99af8ae2d3f3823028980425fe17b9d",
+  "date_modified": "2026-11-13",
+  "content_digest": "a4c4fd3b581828512385d2b2b6fe3368132f26b46e82b72346393f701fcb46bf",
   "locale": "ja",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 59,
+  "record_count": 60,
   "apps": [
     {
       "key": "notesstudio100",
@@ -911,6 +911,55 @@
         "currency": "JPY",
         "formatted_price": "¥800",
         "storefront_url": "https://apps.apple.com/jp/app/id6754218117"
+      }
+    },
+    {
+      "key": "kumo",
+      "app_store_id": "6830824515",
+      "name": "Kumo 体重記録・GLP-1 注射記録・断食タイマー",
+      "summary": "毎日の増減に一喜一憂しなくていいように、Kumoは1日10秒の記録と7日平均で体重の「流れ」を見せます。GLP-1注射をしていてもいなくても使えて、記録しに来た日数で雲が育ちます。",
+      "category": "health",
+      "search_terms": [
+        "ダイエット注射",
+        "ファスティング",
+        "16時間",
+        "減量",
+        "水分補給",
+        "体脂肪率",
+        "ウエスト",
+        "レコーディング",
+        "グラフ",
+        "可愛い",
+        "写真",
+        "ビフォーアフター",
+        "たんぱく質",
+        "プロテイン",
+        "日記",
+        "手帳",
+        "シンプル",
+        "推移",
+        "体型",
+        "目標"
+      ],
+      "purchase_model": "neutral",
+      "one_time_option": false,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/jp/app/id6830824515?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/ja/kumo.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "JPY",
+        "formatted_price": "無料",
+        "storefront_url": "https://apps.apple.com/jp/app/id6830824515"
       }
     },
     {

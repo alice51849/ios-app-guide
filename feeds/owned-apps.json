@@ -1,5 +1,5 @@
 {
-  "app_count": 59,
+  "app_count": 60,
   "apps": {
     "aibriefpack": {
       "app_id": "6791658210",
@@ -76,6 +76,10 @@
     "hourstaglite": {
       "app_id": "6794039979",
       "name": "HoursTag Lite"
+    },
+    "kumo": {
+      "app_id": "6830824515",
+      "name": "Kumo"
     },
     "ledmovingtext": {
       "app_id": "6806639602",
@@ -242,7 +246,7 @@
   "feed_count": 150,
   "feeds": {
     "ar-SA": {
-      "date_modified": "2026-11-05T21:32:02Z",
+      "date_modified": "2026-11-13T00:45:27Z",
       "formats": {
         "atom": {
           "accepted_content_types": [
@@ -252,7 +256,7 @@
           ],
           "content_type": "application/atom+xml",
           "path": "ar-SA/feed.xml",
-          "sha256": "331fa6529636055380ba708341e7522eaf0dd48cfd71725ce3f91c4405497283",
+          "sha256": "8fac2504f105d9c6b699080ea7bfebc541b00d59df99915104e47258d6829974",
           "url": "https://open.cait518.cc/ios-app-guide/ar-SA/feed.xml"
         },
         "json_feed": {
@@ -262,7 +266,7 @@
           ],
           "content_type": "application/feed+json",
           "path": "ar-SA/feed.json",
-          "sha256": "16839eac9b36c1779b45a27d733e2803b0c5d24a987ad5098c543842d4890e20",
+          "sha256": "8023bab7b66d544523ab7b30d9ec0c54319ea8918587b65f4f91ef81c95a607a",
           "url": "https://open.cait518.cc/ios-app-guide/ar-SA/feed.json"
         },
         "rss": {
@@ -273,16 +277,16 @@
           ],
           "content_type": "application/rss+xml",
           "path": "ar-SA/rss.xml",
-          "sha256": "5d9a606c3c7c213b64194ce669791b85e6cd46bdf7daa7bb793f24ad03dd9beb",
+          "sha256": "c6153e8f10f1c5cb64c38094fa64b39baa01d0ee429e20ad36afa22f639fd139",
           "url": "https://open.cait518.cc/ios-app-guide/ar-SA/rss.xml"
         }
       },
       "language": "ar-SA",
       "notification_eligible": true,
-      "record_count": 59
+      "record_count": 60
     },
     "bn-BD": {
-      "date_modified": "2026-11-12T22:35:42Z",
+      "date_modified": "2026-11-13T00:45:27Z",
       "formats": {
         "atom": {
           "accepted_content_types": [
@@ -292,7 +296,7 @@
           ],
           "content_type": "application/atom+xml",
           "path": "bn-BD/feed.xml",
-          "sha256": "40edcbe723273a28ce2b8cb78c14344de8c1656b3dcf6f41341937e9abfecc5f",
+          "sha256": "aac2f306a47381b43bc727335285050efedc57520c522942292deb485668cda5",
           "url": "https://open.cait518.cc/ios-app-guide/bn-BD/feed.xml"
         },
         "json_feed": {
@@ -302,7 +306,7 @@
           ],
           "content_type": "application/feed+json",
           "path": "bn-BD/feed.json",
-          "sha256": "f043e964c56b681d0057bdda458e0a2d4efd63e7d268c959af2739830408bd0d",
+          "sha256": "e51ddf6acc4e51639a9ea9c4d367a80cd7e388dfc0c979c62a880233b5f5a831",
           "url": "https://open.cait518.cc/ios-app-guide/bn-BD/feed.json"
         },
         "rss": {
@@ -313,16 +317,16 @@
           ],
           "content_type": "application/rss+xml",
           "path": "bn-BD/rss.xml",
-          "sha256": "9df3f92fe862fb09831e000dc4bb4cb1c506721693a08d3059a7b83a9afb1970",
+          "sha256": "b3812beb8b9c33480910a9027d8b466d1d46db3da5a695c222881cc3efdf39db",
           "url": "https://open.cait518.cc/ios-app-guide/bn-BD/rss.xml"
         }
       },
       "language": "bn-BD",
       "notification_eligible": false,
-      "record_count": 59
+      "record_count": 60
     },
     "ca": {
-      "date_modified": "2026-11-05T21:32:02Z",
+      "date_modified": "2026-11-13T00:45:27Z",
       "formats": {
         "atom": {
           "accepted_content_types": [
@@ -332,7 +336,7 @@
           ],
           "content_type": "application/atom+xml",
           "path": "ca/feed.xml",
-          "sha256": "c9123496dcd76728c980825ced6d197f3cbfe9e630085dc514f71bf2f138538f",
+          "sha256": "0df6dd4fadc9ae49db047cad3d49009c23c2c6290f15f5b724550917a4c19592",
           "url": "https://open.cait518.cc/ios-app-guide/ca/feed.xml"
         },
         "json_feed": {
@@ -342,7 +346,7 @@
           ],
           "content_type": "application/feed+json",
           "path": "ca/feed.json",
-          "sha256": "0024e2633d33106e946f3f22a5e11a9586dca545dc3e39c1c8a9d31f0e8e8330",
+          "sha256": "477d6f3019688d3ae228ca1a9a1567cddbc020a7640a739e4bb376c0401eb58b",
           "url": "https://open.cait518.cc/ios-app-guide/ca/feed.json"
         },
         "rss": {
@@ -353,16 +357,16 @@
           ],
           "content_type": "application/rss+xml",
           "path": "ca/rss.xml",
-          "sha256": "ccf0ee25b4a61572ba1bcb765d52595c7568978efce57f5a2e6c136ef12e263e",
+          "sha256": "d9b7a5cdc0e71f7983294b20aba99e8c495ac9a65b88a1ed6b8bb0d984e2b78f",
           "url": "https://open.cait518.cc/ios-app-guide/ca/rss.xml"
         }
       },
       "language": "ca",
       "notification_eligible": true,
-      "record_count": 59
+      "record_count": 60
     },
     "cs": {
-      "date_modified": "2026-11-05T21:32:02Z",
+      "date_modified": "2026-11-13T00:45:27Z",
       "formats": {
         "atom": {
           "accepted_content_types": [
@@ -372,7 +376,7 @@
           ],
           "content_type": "application/atom+xml",
           "path": "cs/feed.xml",
-          "sha256": "f5dce4f3fe37bd316a9639b02ca80fc0e38b94c98f974bfef34fec055e889b68",
+          "sha256": "7ebd865b4977318acd1480eb064c96f7c69e3298f06ae64cffc78d27c0689561",
           "url": "https://open.cait518.cc/ios-app-guide/cs/feed.xml"
         },
         "json_feed": {
@@ -382,7 +386,7 @@
           ],
           "content_type": "application/feed+json",
           "path": "cs/feed.json",
-          "sha256": "c63496647e697b94646a4e8aa372fcf680049c3f1a06cd2f931f9316b2f453de",
+          "sha256": "37e04e33fcd00b823916bb6c6488fbef893daaed2f7d0ce00c0d9e8a578eeacb",
           "url": "https://open.cait518.cc/ios-app-guide/cs/feed.json"
         },
         "rss": {
@@ -393,16 +397,16 @@
           ],
           "content_type": "application/rss+xml",
           "path": "cs/rss.xml",
-          "sha256": "b9f5e7c1389b626c7406e3aa6d58cfa47eafcbb9c83f25bf1f8b5f6a0b2e9daa",
+          "sha256": "2b92beb49fc57d07ac88be9e20863960a13691cc320305c09634be215d50ce53",
           "url": "https://open.cait518.cc/ios-app-guide/cs/rss.xml"
         }
       },
       "language": "cs",
       "notification_eligible": true,
-      "record_count": 59
+      "record_count": 60
     },
     "da": {
-      "date_modified": "2026-11-05T21:32:02Z",
+      "date_modified": "2026-11-13T00:45:27Z",
       "formats": {
         "atom": {
           "accepted_content_types": [
@@ -412,7 +416,7 @@
           ],
           "content_type": "application/atom+xml",
           "path": "da/feed.xml",
-          "sha256": "1ce980cf043b6da16a360f1ab5c1d66c4dd26400c8fdd29adeb5427d94be08ea",
+          "sha256": "0f88ed9ec13acaae292857fec5678dbf61fb595a5b27b61d85edbaba7ce1b22e",
           "url": "https://open.cait518.cc/ios-app-guide/da/feed.xml"
         },
         "json_feed": {
@@ -422,7 +426,7 @@
           ],
           "content_type": "application/feed+json",
           "path": "da/feed.json",
-          "sha256": "385813ac12b70dcf2dcaa2a962480d2a62a8371e4aa9a3bd38392aa6284ce297",
+          "sha256": "3b65fcec3daafbe4f8f38ef5469b990787f23baf131a4fa964913d450e372ffb",
           "url": "https://open.cait518.cc/ios-app-guide/da/feed.json"
         },
         "rss": {
@@ -433,16 +437,16 @@
           ],
           "content_type": "application/rss+xml",
           "path": "da/rss.xml",
-          "sha256": "3372c1f53efa73b8a910b0cba18ff59cad423e1e499b07f041fd3d0fdf274aee",
+          "sha256": "9998d738b9907212731b2b833d84303bc4722eafc715d802944239269cc9c12b",
           "url": "https://open.cait518.cc/ios-app-guide/da/rss.xml"
         }
       },
       "language": "da",
       "notification_eligible": true,
-      "record_count": 59
+      "record_count": 60
     },
     "de-DE": {
-      "date_modified": "2026-11-05T21:32:02Z",
+      "date_modified": "2026-11-13T00:45:27Z",
       "formats": {
         "atom": {
           "accepted_content_types": [
@@ -452,7 +456,7 @@
           ],
           "content_type": "application/atom+xml",
           "path": "de-DE/feed.xml",
-          "sha256": "d2307d4ac674ac595aff1e69337f0af51206a72a7e8d0bc2414086450aa2f614",
+          "sha256": "077495fddf835b5f877de7fc24fbe8f5d218a509118505e2b57667badf790149",
           "url": "https://open.cait518.cc/ios-app-guide/de-DE/feed.xml"
         },
         "json_feed": {
@@ -462,7 +466,7 @@
           ],
           "content_type": "application/feed+json",
           "path": "de-DE/feed.json",
-          "sha256": "2493edc413bd2122c57c6095ab50e0d705af72732d9335b1fd4305902f140e19",
+          "sha256": "71eb8873b8178d86eaf41fda6557a6919707b0a5e5ead6fcfe477f7c98113ed4",
           "url": "https://open.cait518.cc/ios-app-guide/de-DE/feed.json"
         },
         "rss": {
@@ -473,16 +477,16 @@
           ],
           "content_type": "application/rss+xml",
           "path": "de-DE/rss.xml",
-          "sha256": "b5e0acf785593f94e8872ec1502866345344875d0c0c54af70b526b8fe7f980f",
+          "sha256": "f210b546660f48d6d090fc0428d41df432214946273439425dfb4643bf108efa",
           "url": "https://open.cait518.cc/ios-app-guide/de-DE/rss.xml"
         }
       },
       "language": "de-DE",
       "notification_eligible": true,
-      "record_count": 59
+      "record_count": 60
     },
     "el": {
-      "date_modified": "2026-11-05T21:32:02Z",
+      "date_modified": "2026-11-13T00:45:27Z",
       "formats": {
         "atom": {
           "accepted_content_types": [
@@ -492,7 +496,7 @@
           ],
           "content_type": "application/atom+xml",
           "path": "el/feed.xml",
-          "sha256": "f9fda34fc5384521a7a9e8071680df0bb51461275fcacaa72b7118a8ed230af9",
+          "sha256": "9920f49748003fb4cf1e28c077a294e53176acefc3b2ad314bdcbf1811a1e392",
           "url": "https://open.cait518.cc/ios-app-guide/el/feed.xml"
         },
         "json_feed": {
@@ -502,7 +506,7 @@
           ],
           "content_type": "application/feed+json",
           "path": "el/feed.json",
-          "sha256": "e39c1a4f72f75d5cdb14a21043d134000362a8192ae40c35d72a079ebf02a7af",
+          "sha256": "dcba5607dcd305e135f8e483d282d6ce2571ef54b80edfcc2298896645126670",
           "url": "https://open.cait518.cc/ios-app-guide/el/feed.json"
         },
         "rss": {
@@ -513,16 +517,16 @@
           ],
           "content_type": "application/rss+xml",
           "path": "el/rss.xml",
-          "sha256": "be78fbc62b45c5d6ad923cf8375acd3b0abdd6574d2d8c1086aa6bca43f744b4",
+          "sha256": "d17651dcda1b7429bea6280b2cc69a63ce62731db3b4b2f3bdca8f2216250834",
           "url": "https://open.cait518.cc/ios-app-guide/el/rss.xml"
         }
       },
       "language": "el",
       "notification_eligible": true,
-      "record_count": 59
+      "record_count": 60
     },
     "en-AU": {
-      "date_modified": "2026-11-05T21:32:02Z",
+      "date_modified": "2026-11-13T00:45:27Z",
       "formats": {
         "atom": {
           "accepted_content_types": [
@@ -532,7 +536,7 @@
           ],
           "content_type": "application/atom+xml",
           "path": "en-AU/feed.xml",
-          "sha256": "3e0a50575d9a69e34f23a2da49e4eff8ffde973fcf947cebf6ece9baf7da37d7",
+          "sha256": "48bd88b5f55157c2292c5c12ad1358784156a43a264fb51b47d69a6f2a6107e7",
           "url": "https://open.cait518.cc/ios-app-guide/en-AU/feed.xml"
         },
         "json_feed": {
@@ -542,7 +546,7 @@
           ],
           "content_type": "application/feed+json",
           "path": "en-AU/feed.json",
-          "sha256": "e17ac1c8e081c13da9d928cc262d97dc5efbc452767bdc08b2bc8d197829a2c2",
+          "sha256": "6b529137ad8f076cb90b5959db313878af289542499cca1c18699ec0ccb096de",
           "url": "https://open.cait518.cc/ios-app-guide/en-AU/feed.json"
         },
         "rss": {
@@ -553,16 +557,16 @@
           ],
           "content_type": "application/rss+xml",
           "path": "en-AU/rss.xml",
-          "sha256": "8917288af0965e9d5e8e38b6ac158de0ea08b7a2e40d727f7c04cdd186b1535f",
+          "sha256": "5a62c85352f8da13a2bb3b04ae80d33034d9f63fff7db057deb4c04a5fb52a1b",
           "url": "https://open.cait518.cc/ios-app-guide/en-AU/rss.xml"
         }
       },
       "language": "en-AU",
       "notification_eligible": true,
-      "record_count": 59
+      "record_count": 60
     },
     "en-CA": {
-      "date_modified": "2026-11-05T21:32:02Z",
+      "date_modified": "2026-11-13T00:45:27Z",
       "formats": {
         "atom": {
           "accepted_content_types": [
@@ -572,7 +576,7 @@
           ],
           "content_type": "application/atom+xml",
           "path": "en-CA/feed.xml",
-          "sha256": "cd9e4337e0f5908f8128f1626ec228af28a61dc9807f5cc2a7c1a791ec123bc8",
+          "sha256": "7ba81f6eb5baa9995773fb7f5d57f26ba3f7c3773dec10eef02b8e84e77008c9",
           "url": "https://open.cait518.cc/ios-app-guide/en-CA/feed.xml"
         },
         "json_feed": {
@@ -582,7 +586,7 @@
           ],
           "content_type": "application/feed+json",
           "path": "en-CA/feed.json",
-          "sha256": "a2ae0ed39eeddba9b318b461606e46c3532ace0cf2b1c9fdfa68e60d6ce46a4c",
+          "sha256": "542114648db44db25c1c5adb421e478e24242eadfe00dac6e6cfd9890e0599ab",
           "url": "https://open.cait518.cc/ios-app-guide/en-CA/feed.json"
         },
         "rss": {
@@ -593,16 +597,16 @@
           ],
           "content_type": "application/rss+xml",
           "path": "en-CA/rss.xml",
-          "sha256": "f4ab3157a6a8c053cb10c2f5ffa123dd34649395fa9f092fc51103975433da10",
+          "sha256": "9cb757372640ba9a4afce9f43fc8d1787535102ab529f285aa9f016f80a2079b",
           "url": "https://open.cait518.cc/ios-app-guide/en-CA/rss.xml"
         }
       },
       "language": "en-CA",
       "notification_eligible": true,
-      "record_count": 59
+      "record_count": 60
     },
     "en-GB": {
-      "date_modified": "2026-11-05T21:32:02Z",
+      "date_modified": "2026-11-13T00:45:27Z",
       "formats": {
         "atom": {
           "accepted_content_types": [
@@ -612,7 +616,7 @@
           ],
           "content_type": "application/atom+xml",
           "path": "en-GB/feed.xml",
-          "sha256": "2564d6bfcc8649d8d98a8a5e76ba14f53ec678c57d84ee5393ac17e4c181fdae",
+          "sha256": "88e60d6ade1cc87e37624b13fb368c52180cc31d0622d713a938c2b760a3ae68",
           "url": "https://open.cait518.cc/ios-app-guide/en-GB/feed.xml"
         },
         "json_feed": {
@@ -622,7 +626,7 @@
           ],
           "content_type": "application/feed+json",
           "path": "en-GB/feed.json",
-          "sha256": "2d91c77b3046b58ce83a7d7de14e26685e632325b3f3b3c2614d0ef530990006",
+          "sha256": "54ad00a2a3bf26e9da2ea984e2eb5daef0c8739ebb611014be487f022b837d43",
           "url": "https://open.cait518.cc/ios-app-guide/en-GB/feed.json"
         },
         "rss": {
@@ -633,16 +637,16 @@
           ],
           "content_type": "application/rss+xml",
           "path": "en-GB/rss.xml",
-          "sha256": "43ecd35cfa138e544d8eb0e37aae9b23a630ca3c7f4ed67fb333da124120aba0",
+          "sha256": "61b7bc0d4b5fa98786f41b32106cea16cc9a8599b993b2e22f53903e591aa0a9",
           "url": "https://open.cait518.cc/ios-app-guide/en-GB/rss.xml"
         }
       },
       "language": "en-GB",
       "notification_eligible": true,
-      "record_count": 59
+      "record_count": 60
     },
     "en-US": {
-      "date_modified": "2026-11-05T21:32:02Z",
+      "date_modified": "2026-11-13T00:45:27Z",
       "formats": {
         "atom": {
           "accepted_content_types": [
@@ -652,7 +656,7 @@
           ],
           "content_type": "application/atom+xml",
           "path": "en-US/feed.xml",
-          "sha256": "454e33abeaeb5abfe86999ad6daa8215d850558f378bc4fe006a59754d2467f3",
+          "sha256": "5f548b8c2f35a2227d54777d7f967d1036b59a24bcf7a12c58e338c4eff954e6",
           "url": "https://open.cait518.cc/ios-app-guide/en-US/feed.xml"
         },
         "json_feed": {
@@ -662,7 +666,7 @@
           ],
           "content_type": "application/feed+json",
           "path": "en-US/feed.json",
-          "sha256": "fb8e0663f481ca29348d33a0ec1ebc4172d9e0ca77135b55f2bd198fe00cdb41",
+          "sha256": "2e01ee3a2f48fbd281033ac79e047b2d0118dcd3d9a6f63714b3d1317980c26a",
           "url": "https://open.cait518.cc/ios-app-guide/en-US/feed.json"
         },
         "rss": {
@@ -673,16 +677,16 @@
           ],
           "content_type": "application/rss+xml",
           "path": "en-US/rss.xml",
-          "sha256": "de183a34b1e89dbceec38a1e59bca160abc85be20cd638ef78b31760407a68e8",
+          "sha256": "10f56c16b397775ef8221891e4ad335710786658e5a0c2d51de2c5276be424ff",
           "url": "https://open.cait518.cc/ios-app-guide/en-US/rss.xml"
         }
       },
       "language": "en-US",
       "notification_eligible": true,
-      "record_count": 59
+      "record_count": 60
     },
     "es-ES": {
-      "date_modified": "2026-11-05T21:32:02Z",
+      "date_modified": "2026-11-13T00:45:27Z",
       "formats": {
         "atom": {
           "accepted_content_types": [
@@ -692,7 +696,7 @@
           ],
           "content_type": "application/atom+xml",
           "path": "es-ES/feed.xml",
-          "sha256": "b366aa3fa01f048633f83dfe6a39a3c90292be01f38cfe9ba17fa5e6507d6fb2",
+          "sha256": "26a8b50e9842ea3e005aab1a504d1571f63eb3656ff1422a19a9e435dd416289",
           "url": "https://open.cait518.cc/ios-app-guide/es-ES/feed.xml"
         },
         "json_feed": {
@@ -702,7 +706,7 @@
           ],
           "content_type": "application/feed+json",
           "path": "es-ES/feed.json",
-          "sha256": "602f70eda1bd39ac377005e8c64dc7e84b8a3bfab71266a51b8ef859befee0bb",
+          "sha256": "9e2a66612f434757c131c18a256e354d9f3e4fad3751f7d7729f8810e9883b04",
           "url": "https://open.cait518.cc/ios-app-guide/es-ES/feed.json"
         },
         "rss": {
@@ -713,16 +717,16 @@
           ],
           "content_type": "application/rss+xml",
           "path": "es-ES/rss.xml",
-          "sha256": "afa117c58c7d6e1fd869c5ba216f712f16eb882edcd44f28625d69c8713b69c0",
+          "sha256": "f67b84a60af8d9ce8122ab8dd77c2e238ff47981ac95c0af7f22eb6de7d69bce",
           "url": "https://open.cait518.cc/ios-app-guide/es-ES/rss.xml"
         }
       },
       "language": "es-ES",
       "notification_eligible": true,
-      "record_count": 59
+      "record_count": 60
     },
     "es-MX": {
-      "date_modified": "2026-11-05T21:32:02Z",
+      "date_modified": "2026-11-13T00:45:27Z",
       "formats": {
         "atom": {
           "accepted_content_types": [
@@ -732,7 +736,7 @@
           ],
           "content_type": "application/atom+xml",
           "path": "es-MX/feed.xml",
-          "sha256": "65988793291f20d93d5c7ba30844f6a787575b3c4228e4bfdbd0488f326abbef",
+          "sha256": "4e19f4a7bc581987ca5d628cb9466adb0b1db7caaad8d77dab210acc12618e4c",
           "url": "https://open.cait518.cc/ios-app-guide/es-MX/feed.xml"
         },
         "json_feed": {
@@ -742,7 +746,7 @@
           ],
           "content_type": "application/feed+json",
           "path": "es-MX/feed.json",
-          "sha256": "a893686e869f1e414f7cb5ea54b6dbefe8e9e75d757645a061972ac87094e2af",
+          "sha256": "d754f7bba4d7c780377213a06324a9b90915a98bb9bff65e3149661b9edcc1d8",
           "url": "https://open.cait518.cc/ios-app-guide/es-MX/feed.json"
         },
         "rss": {
@@ -753,16 +757,16 @@
           ],
           "content_type": "application/rss+xml",
           "path": "es-MX/rss.xml",
-          "sha256": "084105edc215d2fafa7aa89032d3c4500d228dc3624af60e9d3028171fec934a",
+          "sha256": "93de92c4009f27ac13d4d69d579b163c85f7d7e5c7fd102a049edbe7f1c2b622",
           "url": "https://open.cait518.cc/ios-app-guide/es-MX/rss.xml"
         }
       },
       "language": "es-MX",
       "notification_eligible": true,
-      "record_count": 59
+      "record_count": 60
     },
     "fi": {
-      "date_modified": "2026-11-05T21:32:02Z",
+      "date_modified": "2026-11-13T00:45:27Z",
       "formats": {
         "atom": {
           "accepted_content_types": [
@@ -772,7 +776,7 @@
           ],
           "content_type": "application/atom+xml",
           "path": "fi/feed.xml",
-          "sha256": "71544f799728b7e5cda00ad59f14e33fb885be576a9a2e8682dcc19243fde8ce",
+          "sha256": "1edb74e4ec801f452af8f3d038c623e07968e5fb4f49b4b87461e39fb922c013",
           "url": "https://open.cait518.cc/ios-app-guide/fi/feed.xml"
         },
         "json_feed": {
@@ -782,7 +786,7 @@
           ],
           "content_type": "application/feed+json",
           "path": "fi/feed.json",
-          "sha256": "629d88f835842b7f17ac903c081a9b1c395733d91dd85a831165fcd9ceeb5820",
+          "sha256": "faa8d4765e12331c4913d9016e302498b7b83bed3f9862053843314e83da24fd",
           "url": "https://open.cait518.cc/ios-app-guide/fi/feed.json"
         },
         "rss": {
@@ -793,16 +797,16 @@
           ],
           "content_type": "application/rss+xml",
           "path": "fi/rss.xml",
-          "sha256": "843a4b9c2573fd6eb952368dbf3201433ec4a44ae630027d5a4fc652c8ad4add",
+          "sha256": "e1ec2dd0ee047137e47807dd05be69cc38c559c8806f64747777274cdbee65c6",
           "url": "https://open.cait518.cc/ios-app-guide/fi/rss.xml"
         }
       },
       "language": "fi",
       "notification_eligible": true,
-      "record_count": 59
+      "record_count": 60
     },
     "fr-CA": {
-      "date_modified": "2026-11-05T21:32:02Z",
+      "date_modified": "2026-11-13T00:45:27Z",
       "formats": {
         "atom": {
           "accepted_content_types": [
@@ -812,7 +816,7 @@
           ],
           "content_type": "application/atom+xml",
           "path": "fr-CA/feed.xml",
-          "sha256": "6b075a6c50234413233495aae549291e6dc375c2ecf9e71ad7300ebfc056da59",
+          "sha256": "0d0d60ac334973b740b1e4a4b283066c3265577ac624e6e233a3af35e5cf47f5",
           "url": "https://open.cait518.cc/ios-app-guide/fr-CA/feed.xml"
         },
         "json_feed": {
@@ -822,7 +826,7 @@
           ],
           "content_type": "application/feed+json",
           "path": "fr-CA/feed.json",
-          "sha256": "0c25826676bfde1448c3670367424b33faf0771128c44a6f6c4feaff33df206f",
+          "sha256": "d35ed859c4999393bf4845b5d9f0eea03224aeec262997cc139506cd74fdc0a9",
           "url": "https://open.cait518.cc/ios-app-guide/fr-CA/feed.json"
         },
         "rss": {
@@ -833,16 +837,16 @@
           ],
           "content_type": "application/rss+xml",
           "path": "fr-CA/rss.xml",
-          "sha256": "27618d152c05f668cb493840dd750e1547f869355072e2ee0197e68068930e27",
+          "sha256": "13a643cd8ab4011d9c5f896d94cbc82849934268bb1db21d58fef0338ba16127",
           "url": "https://open.cait518.cc/ios-app-guide/fr-CA/rss.xml"
         }
       },
       "language": "fr-CA",
       "notification_eligible": true,
-      "record_count": 59
+      "record_count": 60
     },
     "fr-FR": {
-      "date_modified": "2026-11-05T21:32:02Z",
+      "date_modified": "2026-11-13T00:45:27Z",
       "formats": {
         "atom": {
           "accepted_content_types": [
@@ -852,7 +856,7 @@
           ],
           "content_type": "application/atom+xml",
           "path": "fr-FR/feed.xml",
-          "sha256": "4064271dd6d16535ef39566fc3a2b3a44b4094fb19914736c2fa27fb2a2f2741",
+          "sha256": "5e7da2d2a472b0684412d7a932ec4eb4b14ff5c17deb2dad706c4791f7f6efde",
           "url": "https://open.cait518.cc/ios-app-guide/fr-FR/feed.xml"
         },
         "json_feed": {
@@ -862,7 +866,7 @@
           ],
           "content_type": "application/feed+json",
           "path": "fr-FR/feed.json",
-          "sha256": "5833bf869ef0d1922632d0161edf00ea09e0f992da543ead20c2b92fc9cf6a77",
+          "sha256": "3fada8156ec07796c7184cf718dbf4ec438f5c800c500ade1fbeb66631178340",
           "url": "https://open.cait518.cc/ios-app-guide/fr-FR/feed.json"
         },
         "rss": {
@@ -873,16 +877,16 @@
           ],
           "content_type": "application/rss+xml",
           "path": "fr-FR/rss.xml",
-          "sha256": "ed44505cec0a24cae5c309a409f3d33665f48054bff7a78dd1d4c084c08f118e",
+          "sha256": "eee3a3e9b5d0bd947195ffbf4b51919d71ff9a8d7e0c9ab6a99b1ecf23ad8d2d",
           "url": "https://open.cait518.cc/ios-app-guide/fr-FR/rss.xml"
         }
       },
       "language": "fr-FR",
       "notification_eligible": true,
-      "record_count": 59
+      "record_count": 60
     },
     "gu-IN": {
-      "date_modified": "2026-11-05T21:32:02Z",
+      "date_modified": "2026-11-13T00:45:27Z",
       "formats": {
         "atom": {
           "accepted_content_types": [
@@ -892,7 +896,7 @@
           ],
           "content_type": "application/atom+xml",
           "path": "gu-IN/feed.xml",
-          "sha256": "679a69f4220ae1e38a6f3f25335ad77388439f33e60f033738e2fc5434aacd0f",
+          "sha256": "88ed619852a393eee58c33af20776c09e28bd1024295bb740f245f190d8fe260",
           "url": "https://open.cait518.cc/ios-app-guide/gu-IN/feed.xml"
         },
         "json_feed": {
@@ -902,7 +906,7 @@
           ],
           "content_type": "application/feed+json",
           "path": "gu-IN/feed.json",
-          "sha256": "52d0999fa0cc0a3a48049f5e4ead6454589ef20ce1596cc6291ecd809efb7d81",
+          "sha256": "0c0fe20caf120488a9cd3091a13242bc4361c6210ee9860469d4213f943d2b1c",
           "url": "https://open.cait518.cc/ios-app-guide/gu-IN/feed.json"
         },
         "rss": {
@@ -913,16 +917,16 @@
           ],
           "content_type": "application/rss+xml",
           "path": "gu-IN/rss.xml",
-          "sha256": "7090101ccd930565389a40a2bf64b2a91da2e5902366b2fd3902f34d7faf817d",
+          "sha256": "f576e94be191d83f0ef8defbaba6d5e1d756adb0b44273f40c8dfd2eeba590cb",
           "url": "https://open.cait518.cc/ios-app-guide/gu-IN/rss.xml"
         }
       },
       "language": "gu-IN",
       "notification_eligible": true,
-      "record_count": 59
+      "record_count": 60
     },
     "he": {
-      "date_modified": "2026-11-05T21:32:02Z",
+      "date_modified": "2026-11-13T00:45:27Z",
       "formats": {
         "atom": {
           "accepted_content_types": [
@@ -932,7 +936,7 @@
           ],
           "content_type": "application/atom+xml",
           "path": "he/feed.xml",
-          "sha256": "ac033e1a828774ee69bbb7c3ea62722c3bc47bc77bde7547bb714283dd4357b6",
+          "sha256": "6649e0d38316304b048ee67af343f2b2f0128c84dde4b16b756bfdaaff20f9b6",
           "url": "https://open.cait518.cc/ios-app-guide/he/feed.xml"
         },
         "json_feed": {
@@ -942,7 +946,7 @@
           ],
           "content_type": "application/feed+json",
           "path": "he/feed.json",
-          "sha256": "c67bd56af8963d113ce93a1e85b3a2197de375c345a5e1827f549e903cccbb47",
+          "sha256": "0ce4176610b87ed1fd5cea2dc8a5d297725378dc27141e016cf526a097528aac",
           "url": "https://open.cait518.cc/ios-app-guide/he/feed.json"
         },
         "rss": {
@@ -953,16 +957,16 @@
           ],
           "content_type": "application/rss+xml",
           "path": "he/rss.xml",
-          "sha256": "536ed42796f830758ef8759adc5c6ade305767392ba9436a77a5629c22722d7a",
+          "sha256": "da8addadd5e28df7a5b6749ecc9409e50d69003063fa0c1cbfbb5825b54153d6",
           "url": "https://open.cait518.cc/ios-app-guide/he/rss.xml"
         }
       },
       "language": "he",
       "notification_eligible": true,
-      "record_count": 59
+      "record_count": 60
     },
     "hi": {
-      "date_modified": "2026-11-05T21:32:02Z",
+      "date_modified": "2026-11-13T00:45:27Z",
       "formats": {
         "atom": {
           "accepted_content_types": [
@@ -972,7 +976,7 @@
           ],
           "content_type": "application/atom+xml",
           "path": "hi/feed.xml",
-          "sha256": "f58b1a304aae8e6e8112672ce60cca52ce8cc69d1b0df14b98ec75bed2ecea5a",
+          "sha256": "111aa3212ccfa10adbd20099e2440cc9557aee398e283accaa642b7033201542",
           "url": "https://open.cait518.cc/ios-app-guide/hi/feed.xml"
         },
         "json_feed": {
@@ -982,7 +986,7 @@
           ],
           "content_type": "application/feed+json",
           "path": "hi/feed.json",
-          "sha256": "26e2b71ce934b26f652aa43698b892ab68a67db9421efd2f99aa2670a623f127",
+          "sha256": "141c19cc7f05c7c8518c241e06eae8986f312268647941ce35cce34e4b822a9d",
           "url": "https://open.cait518.cc/ios-app-guide/hi/feed.json"
         },
         "rss": {
@@ -993,16 +997,16 @@
           ],
           "content_type": "application/rss+xml",
           "path": "hi/rss.xml",
-          "sha256": "ca10c4e7081ddcf7ba01205bc0a7cc33d5c023a995a5a55149953d109c1f3d13",
+          "sha256": "61c126df638874a3f8d1b4e42b18aa4a943de52daf9a79695157c082099d1b7d",
           "url": "https://open.cait518.cc/ios-app-guide/hi/rss.xml"
         }
       },
       "language": "hi",
       "notification_eligible": true,
-      "record_count": 59
+      "record_count": 60
     },
     "hr": {
-      "date_modified": "2026-11-05T21:32:02Z",
+      "date_modified": "2026-11-13T00:45:27Z",
       "formats": {
         "atom": {
           "accepted_content_types": [
@@ -1012,7 +1016,7 @@
           ],
           "content_type": "application/atom+xml",
           "path": "hr/feed.xml",
-          "sha256": "844389a8f0044003a1886a5b7dc578d174ed5c0944a336a4a73885423d5f0809",
+          "sha256": "8bfe3f556993c8a167ee43ad7cd3b6a29fd9d8bb59043eaea0898f0a0c8672db",
           "url": "https://open.cait518.cc/ios-app-guide/hr/feed.xml"
         },
         "json_feed": {
@@ -1022,7 +1026,7 @@
           ],
           "content_type": "application/feed+json",
           "path": "hr/feed.json",
-          "sha256": "bb7cdf40ee61cf085f79ad37f365d897335485fd267e810c328ef8492f19da76",
+          "sha256": "fa5864406c0babbbfdc0e336f494619b19ac66b8993bf3547da5fe299841c29b",
           "url": "https://open.cait518.cc/ios-app-guide/hr/feed.json"
         },
         "rss": {
@@ -1033,16 +1037,16 @@
           ],
           "content_type": "application/rss+xml",
           "path": "hr/rss.xml",
-          "sha256": "ec531c983996b1dc34b649aaa83c6e6e1ed67f5d4ba924c76844fb651cf19d05",
+          "sha256": "2bfe3d4d23cb2069beb8d8be14fd159dece8a99f018a1f711bfaf2b6d7a5e1cf",
           "url": "https://open.cait518.cc/ios-app-guide/hr/rss.xml"
         }
       },
       "language": "hr",
       "notification_eligible": true,
-      "record_count": 59
+      "record_count": 60
     },
     "hu": {
-      "date_modified": "2026-11-05T21:32:02Z",
+      "date_modified": "2026-11-13T00:45:27Z",
       "formats": {
         "atom": {
           "accepted_content_types": [
@@ -1052,7 +1056,7 @@
           ],
           "content_type": "application/atom+xml",
           "path": "hu/feed.xml",
-          "sha256": "fe98b5931287393132c4260ce406e287272f2298e5e46b45d337d5dc50ecdb56",
+          "sha256": "92daf4acb4b069d775b7f53dc307d72668d329735104d3ba2758fb8056c31578",
           "url": "https://open.cait518.cc/ios-app-guide/hu/feed.xml"
         },
         "json_feed": {
@@ -1062,7 +1066,7 @@
           ],
           "content_type": "application/feed+json",
           "path": "hu/feed.json",
-          "sha256": "d1f98eb49124ca53477a502660a94894a0f2f9e395cb8d66e9bfd8aed5e85727",
+          "sha256": "7e6cf55464163e59e883f7e9204ae83fd5f217f1e23cb4b58f346648d0658b1e",
           "url": "https://open.cait518.cc/ios-app-guide/hu/feed.json"
         },
         "rss": {
@@ -1073,16 +1077,16 @@
           ],
           "content_type": "application/rss+xml",
           "path": "hu/rss.xml",
-          "sha256": "1dc6f9c5bdc71c90ee05de9d489209ada7540f99c24edd8b5a41e684f6eaa2c8",
+          "sha256": "e8a6ff376dd8a08bd9ac8586eab8687c3f337ea772e259512b4e8cbb640511cf",
           "url": "https://open.cait518.cc/ios-app-guide/hu/rss.xml"
         }
       },
       "language": "hu",
       "notification_eligible": true,
-      "record_count": 59
+      "record_count": 60
     },
     "id": {
-      "date_modified": "2026-11-05T21:32:02Z",
+      "date_modified": "2026-11-13T00:45:27Z",
       "formats": {
         "atom": {
           "accepted_content_types": [
@@ -1092,7 +1096,7 @@
           ],
           "content_type": "application/atom+xml",
           "path": "id/feed.xml",
-          "sha256": "1b4f2572a2f412d4bbd82630629eccc5b0c077a628cf855adce467ea0543668e",
+          "sha256": "d058df76eee4313a5be3fb837680c1023ef769e8f70ae4c971ad9fabcb007cd7",
           "url": "https://open.cait518.cc/ios-app-guide/id/feed.xml"
         },
         "json_feed": {
@@ -1102,7 +1106,7 @@
           ],
           "content_type": "application/feed+json",
           "path": "id/feed.json",
-          "sha256": "5da87d4a2386e437047bc7ee77ab54ae2cd251f02910e7160315e0a628eb664c",
+          "sha256": "750105f2e9d7166d0775200aa5b86a8a6cefb47313e95a0156d979277fd796e7",
           "url": "https://open.cait518.cc/ios-app-guide/id/feed.json"
         },
         "rss": {
@@ -1113,16 +1117,16 @@
           ],
           "content_type": "application/rss+xml",
           "path": "id/rss.xml",
-          "sha256": "13aa3fbd5807222fd52e6f0696e59797d77376e4257e7266bcec6598f067f71a",
+          "sha256": "809de5173ce35e65f67b83aca36276708e2d5e0132329d2efccb460caed614b1",
           "url": "https://open.cait518.cc/ios-app-guide/id/rss.xml"
         }
       },
       "language": "id",
       "notification_eligible": true,
-      "record_count": 59
+      "record_count": 60
     },
     "it": {
-      "date_modified": "2026-11-05T21:32:02Z",
+      "date_modified": "2026-11-13T00:45:27Z",
       "formats": {
         "atom": {
           "accepted_content_types": [
@@ -1132,7 +1136,7 @@
           ],
           "content_type": "application/atom+xml",
           "path": "it/feed.xml",
-          "sha256": "ab1d3d6e9f8554f30ef4ca4e0d3c49650bb760665b655a4f6b547979492c7051",
+          "sha256": "d76a5ad39a6e2aa0e4e0a8a768999599413870c41008c01eae5ed9441210bd3d",
           "url": "https://open.cait518.cc/ios-app-guide/it/feed.xml"
         },
         "json_feed": {
@@ -1142,7 +1146,7 @@
           ],
           "content_type": "application/feed+json",
           "path": "it/feed.json",
-          "sha256": "7e9c39ab1d70cf3f5fef579e8885f59371e789651d66ee4d438f937a15862fdb",
+          "sha256": "27e9220af96b48154402212b08e68311dce79a34d83b1340612839d647d7f0a5",
           "url": "https://open.cait518.cc/ios-app-guide/it/feed.json"
         },
         "rss": {
@@ -1153,16 +1157,16 @@
           ],
           "content_type": "application/rss+xml",
           "path": "it/rss.xml",
-          "sha256": "710fbae14b1932d659614c2454a5b34c87c958a7bfa4f9b2d813fb0e0ba5b603",
+          "sha256": "d2bd42565d5714a8cd80483502b8b989f38aac2ea592d4ccc9f6cb9814946d17",
           "url": "https://open.cait518.cc/ios-app-guide/it/rss.xml"
         }
       },
       "language": "it",
       "notification_eligible": true,
-      "record_count": 59
+      "record_count": 60
     },
     "ja": {
-      "date_modified": "2026-11-05T21:32:02Z",
+      "date_modified": "2026-11-13T00:45:27Z",
       "formats": {
         "atom": {
           "accepted_content_types": [
@@ -1172,7 +1176,7 @@
           ],
           "content_type": "application/atom+xml",
           "path": "ja/feed.xml",
-          "sha256": "01f41174d66abe2dcdd698aefe2d32974fe970150f788ebe61d4d45f16ea243c",
+          "sha256": "dbfc08aa3387a1a72cf0f6fb1e71db641edf4ce244a98589ac74587ff3f1bd49",
           "url": "https://open.cait518.cc/ios-app-guide/ja/feed.xml"
         },
         "json_feed": {
@@ -1182,7 +1186,7 @@
           ],
           "content_type": "application/feed+json",
           "path": "ja/feed.json",
-          "sha256": "78a2b95220acbe838084f80da5da8bfb1765d0de47271fbb477a289a99185273",
+          "sha256": "a6ae6eb20492b16a894ee4443d38a7d4601b6c16ec80180e94164808335326d9",
           "url": "https://open.cait518.cc/ios-app-guide/ja/feed.json"
         },
         "rss": {
@@ -1193,16 +1197,16 @@
           ],
           "content_type": "application/rss+xml",
           "path": "ja/rss.xml",
-          "sha256": "1d7c0ccd87006c457425884f6f4163e0b436a6a07c0d09cc41c02ddbe2364e44",
+          "sha256": "9139ef467e5475abb3c950b7ef3fd87191e2fdef48841dd6799cdb1bcfb6f969",
           "url": "https://open.cait518.cc/ios-app-guide/ja/rss.xml"
         }
       },
       "language": "ja",
       "notification_eligible": true,
-      "record_count": 59
+      "record_count": 60
     },
     "kn-IN": {
-      "date_modified": "2026-11-05T21:32:02Z",
+      "date_modified": "2026-11-13T00:45:27Z",
       "formats": {
         "atom": {
           "accepted_content_types": [
@@ -1212,7 +1216,7 @@
           ],
           "content_type": "application/atom+xml",
           "path": "kn-IN/feed.xml",
-          "sha256": "9432af8cb5099e79aad39595dafd878b3e6e7888765d98e45897db244cce9d02",
+          "sha256": "b4c5da8d329b54abf067a3949a6ed5f063d06b933b546ee5117c2f80a9a1e81a",
           "url": "https://open.cait518.cc/ios-app-guide/kn-IN/feed.xml"
         },
         "json_feed": {
@@ -1222,7 +1226,7 @@
           ],
           "content_type": "application/feed+json",
           "path": "kn-IN/feed.json",
-          "sha256": "27fc7a4aaf07af320f5ad868ba31a2ce6658b4830d2a2ff1cd21aaf7871bd2cc",
+          "sha256": "df6ef9bf72e2bd4f50587348aac213d33442dc7a778361ab642009118264f9b9",
           "url": "https://open.cait518.cc/ios-app-guide/kn-IN/feed.json"
         },
         "rss": {
@@ -1233,16 +1237,16 @@
           ],
           "content_type": "application/rss+xml",
           "path": "kn-IN/rss.xml",
-          "sha256": "0013a4bb009465734405829c5cf41520619225eddad4169b61e31a0cf6cb4d29",
+          "sha256": "08f85b802abf386c325a14f12e15400155d807366ee878e2361501f9d39f9696",
           "url": "https://open.cait518.cc/ios-app-guide/kn-IN/rss.xml"
         }
       },
       "language": "kn-IN",
       "notification_eligible": true,
-      "record_count": 59
+      "record_count": 60
     },
     "ko": {
-      "date_modified": "2026-11-05T21:32:02Z",
+      "date_modified": "2026-11-13T00:45:27Z",
       "formats": {
         "atom": {
           "accepted_content_types": [
@@ -1252,7 +1256,7 @@
           ],
           "content_type": "application/atom+xml",
           "path": "ko/feed.xml",
-          "sha256": "309ef495a846cc00071f6de0ba78e40acfd5c7f268207c9364dc5475c8dfd148",
+          "sha256": "7ef6b43193020b1758fcc8547804a1c60f0f179af2920b4c991376fde7dda824",
           "url": "https://open.cait518.cc/ios-app-guide/ko/feed.xml"
         },
         "json_feed": {
@@ -1262,7 +1266,7 @@
           ],
           "content_type": "application/feed+json",
           "path": "ko/feed.json",
-          "sha256": "0d398b9e04a00f89490297db88b0c2c798ea57a76fd7a3d7809f69f7059951d9",
+          "sha256": "5b6273a4dfd529aafd6e50f04b2e85e8639083fc68fcb7118dd3a67434cba49f",
           "url": "https://open.cait518.cc/ios-app-guide/ko/feed.json"
         },
         "rss": {
@@ -1273,16 +1277,16 @@
           ],
           "content_type": "application/rss+xml",
           "path": "ko/rss.xml",
-          "sha256": "84bdfac5efa3bba73a235b8d112d701cd29507b53808216cca8365f3203fe27d",
+          "sha256": "20b8e8619daba7a012e546e5b8a5c2b2c66ee0029f1ee7c6b1f3402922cc3435",
           "url": "https://open.cait518.cc/ios-app-guide/ko/rss.xml"
         }
       },
       "language": "ko",
       "notification_eligible": true,
-      "record_count": 59
+      "record_count": 60
     },
     "ml-IN": {
-      "date_modified": "2026-11-05T21:32:02Z",
+      "date_modified": "2026-11-13T00:45:27Z",
       "formats": {
         "atom": {
           "accepted_content_types": [
@@ -1292,7 +1296,7 @@
           ],
           "content_type": "application/atom+xml",
           "path": "ml-IN/feed.xml",
-          "sha256": "df6d2eee10e64e976069696739cc93e864d64d471a3e2319b87d109c0b5eaa01",
+          "sha256": "f001a3d42621b5cd36f79d4c350d390eae121937057db160bee65d225cd3352e",
           "url": "https://open.cait518.cc/ios-app-guide/ml-IN/feed.xml"
         },
         "json_feed": {
@@ -1302,7 +1306,7 @@
           ],
           "content_type": "application/feed+json",
           "path": "ml-IN/feed.json",
-          "sha256": "44460b5af57e91d9f2d7304b66fb7eef89731ad1e051074f75a103ab7d59a158",
+          "sha256": "4e623e9df5e6ddb4e2b95107ab13460188911fe4eaa6ae33a4dd8c7a7b4dd079",
           "url": "https://open.cait518.cc/ios-app-guide/ml-IN/feed.json"
         },
         "rss": {
@@ -1313,16 +1317,16 @@
           ],
           "content_type": "application/rss+xml",
           "path": "ml-IN/rss.xml",
-          "sha256": "5235901523627130c7163eb0c65147799383c560e23cf9c82260ac064074fab3",
+          "sha256": "2609529c3ef8bfc1765da91c67f715a6f9b22741b5aaa62e810322910aa1a890",
           "url": "https://open.cait518.cc/ios-app-guide/ml-IN/rss.xml"
         }
       },
       "language": "ml-IN",
       "notification_eligible": true,
-      "record_count": 59
+      "record_count": 60
     },
     "mr-IN": {
-      "date_modified": "2026-11-05T21:32:02Z",
+      "date_modified": "2026-11-13T00:45:27Z",
       "formats": {
         "atom": {
           "accepted_content_types": [
@@ -1332,7 +1336,7 @@
           ],
           "content_type": "application/atom+xml",
           "path": "mr-IN/feed.xml",
-          "sha256": "1c21dc5dbde34cec3ba2960a5919125bb7443941d1cc5e78667228e4c10ffd6d",
+          "sha256": "aeff502054f33d10eedf2f56e308b4fb70d39c89f94c45af9c971e7fdf4661c9",
           "url": "https://open.cait518.cc/ios-app-guide/mr-IN/feed.xml"
         },
         "json_feed": {
@@ -1342,7 +1346,7 @@
           ],
           "content_type": "application/feed+json",
           "path": "mr-IN/feed.json",
-          "sha256": "1628d349fe96e70af478cb2804d73a40d0107111fff3a7d7041aed8df1225f24",
+          "sha256": "334f59b194b9460c32d5ca2180d83045c642622d57e9cf6e853bce6a48c14385",
           "url": "https://open.cait518.cc/ios-app-guide/mr-IN/feed.json"
         },
         "rss": {
@@ -1353,16 +1357,16 @@
           ],
           "content_type": "application/rss+xml",
           "path": "mr-IN/rss.xml",
-          "sha256": "d84c435fa229095dcf20d4954d4250d04be609eed4aa10321acd715858e055e3",
+          "sha256": "2515f87c7036292619eca3c816b0875dc204c9be55d1011f431b69e59022f44c",
           "url": "https://open.cait518.cc/ios-app-guide/mr-IN/rss.xml"
         }
       },
       "language": "mr-IN",
       "notification_eligible": true,
-      "record_count": 59
+      "record_count": 60
     },
     "ms": {
-      "date_modified": "2026-11-05T21:32:02Z",
+      "date_modified": "2026-11-13T00:45:27Z",
       "formats": {
         "atom": {
           "accepted_content_types": [
@@ -1372,7 +1376,7 @@
           ],
           "content_type": "application/atom+xml",
           "path": "ms/feed.xml",
-          "sha256": "1ce42f22931f6891298cfc5fc2475c520c56ea0a995ba58ffea10f631b829ea9",
+          "sha256": "b387c3666a795f914094dc3105ae65fa20698f0752e5044ea2b29ea79482eed0",
           "url": "https://open.cait518.cc/ios-app-guide/ms/feed.xml"
         },
         "json_feed": {
@@ -1382,7 +1386,7 @@
           ],
           "content_type": "application/feed+json",
           "path": "ms/feed.json",
-          "sha256": "9810e4cad8e926ad5513a91630c03d3196ffcf594fcec6d258ff43464d2e1d47",
+          "sha256": "ca9efd27c9e1580eca85fac83a29860c8b5279b88a2fc56ede1a924701750c04",
           "url": "https://open.cait518.cc/ios-app-guide/ms/feed.json"
         },
         "rss": {
@@ -1393,16 +1397,16 @@
           ],
           "content_type": "application/rss+xml",
           "path": "ms/rss.xml",
-          "sha256": "85bfebc8ec17af60b08aec02acb2b65025c82a773a03a1dad33dd6a749119967",
+          "sha256": "d9f1d295559c413c15fe88cd64355bd0cdcdc4f069bfb965c71f44e081c951fc",
           "url": "https://open.cait518.cc/ios-app-guide/ms/rss.xml"
         }
       },
       "language": "ms",
       "notification_eligible": true,
-      "record_count": 59
+      "record_count": 60
     },
     "nl-NL": {
-      "date_modified": "2026-11-05T21:32:02Z",
+      "date_modified": "2026-11-13T00:45:27Z",
       "formats": {
         "atom": {
           "accepted_content_types": [
@@ -1412,7 +1416,7 @@
           ],
           "content_type": "application/atom+xml",
           "path": "nl-NL/feed.xml",
-          "sha256": "3ecb9c3984df1a0998b160949bfdc3b73ce657273df7666d7c1a5acdde65ecb3",
+          "sha256": "7fcfa6d83f74fa183d9406f76b1b197aa9d7ab661b11957aa08af0ee2006dd9c",
           "url": "https://open.cait518.cc/ios-app-guide/nl-NL/feed.xml"
         },
         "json_feed": {
@@ -1422,7 +1426,7 @@
           ],
           "content_type": "application/feed+json",
           "path": "nl-NL/feed.json",
-          "sha256": "c37b8a2f573fb7fb871968bd57078e120e096885f72581c08d45736aa2d3ebe5",
+          "sha256": "ee102b863f5c8dd482d00bdee8bf4a4f5d9843ef82ca03518ce91e0d527c333f",
           "url": "https://open.cait518.cc/ios-app-guide/nl-NL/feed.json"
         },
         "rss": {
@@ -1433,16 +1437,16 @@
           ],
           "content_type": "application/rss+xml",
           "path": "nl-NL/rss.xml",
-          "sha256": "cc3fcf5a2c783ab3a713fdcb47afda21fa9c87d1703adc077bd219f95bc4c431",
+          "sha256": "21713c74ef4484706fcbd485cc903d230ccfc63d6f54cfd5166acdd18bd14b79",
           "url": "https://open.cait518.cc/ios-app-guide/nl-NL/rss.xml"
         }
       },
       "language": "nl-NL",
       "notification_eligible": true,
-      "record_count": 59
+      "record_count": 60
     },
     "no": {
-      "date_modified": "2026-11-05T21:32:02Z",
+      "date_modified": "2026-11-13T00:45:27Z",
       "formats": {
         "atom": {
           "accepted_content_types": [
@@ -1452,7 +1456,7 @@
           ],
           "content_type": "application/atom+xml",
           "path": "no/feed.xml",
-          "sha256": "a64ee7d7c0fd896e558a8ef091b1ea1c808246ff534a3b75b99c6eae418f9a40",
+          "sha256": "ea56444d1a58762641bf572d8ebef880f54bf3d89b8971a292a7de16c3af9cb8",
           "url": "https://open.cait518.cc/ios-app-guide/no/feed.xml"
         },
         "json_feed": {
@@ -1462,7 +1466,7 @@
           ],
           "content_type": "application/feed+json",
           "path": "no/feed.json",
-          "sha256": "526215a71d9504038d17617d32b8fc5b7fa744b32ed9ac50fff5f8c6287c1961",
+          "sha256": "cd340dd5dd078c1e91e9224b27043dcdf16c34522a4c35aa4ea855ab696ee3d3",
           "url": "https://open.cait518.cc/ios-app-guide/no/feed.json"
         },
         "rss": {
@@ -1473,16 +1477,16 @@
           ],
           "content_type": "application/rss+xml",
           "path": "no/rss.xml",
-          "sha256": "d2cfc65177c396a1aeac2fd210ad53c2673048dcf8a75b58a85406ca4346bee0",
+          "sha256": "3ec1301243f8dc4c96bf34e4d356c2e06010a860b1671724ed22d05ad1ff5489",
           "url": "https://open.cait518.cc/ios-app-guide/no/rss.xml"
         }
       },
       "language": "no",
       "notification_eligible": true,
-      "record_count": 59
+      "record_count": 60
     },
     "or-IN": {
-      "date_modified": "2026-11-05T21:32:02Z",
+      "date_modified": "2026-11-13T00:45:27Z",
       "formats": {
         "atom": {
           "accepted_content_types": [
@@ -1492,7 +1496,7 @@
           ],
           "content_type": "application/atom+xml",
           "path": "or-IN/feed.xml",
-          "sha256": "c17b4172b49b9234d1d9aa963d5e8ddeac8ae221ea388d4f395fd2f79afa029f",
+          "sha256": "7de2fbc1585e583b82f551116ed42d6bf908d9e783510390bd8f9adb787dbe1b",
           "url": "https://open.cait518.cc/ios-app-guide/or-IN/feed.xml"
         },
         "json_feed": {
@@ -1502,7 +1506,7 @@
           ],
           "content_type": "application/feed+json",
           "path": "or-IN/feed.json",
-          "sha256": "99f71fcdbe13d5aac45112f380d1b9f2abd2829a56a00709c6fe449a969f36ae",
+          "sha256": "072e7694fc4148225fc2847d870e56eed601a3a9e2ded904803240486011cd23",
           "url": "https://open.cait518.cc/ios-app-guide/or-IN/feed.json"
         },
         "rss": {
@@ -1513,16 +1517,16 @@
           ],
           "content_type": "application/rss+xml",
           "path": "or-IN/rss.xml",
-          "sha256": "d7d1123d44a3fd236963f328de208b2e899072cfbf4ac8042592337c2db16dac",
+          "sha256": "7837f6e8b6672ce8a76a867a2f5944ed4b4c5488168e6af98b9e7510d7b0d2d6",
           "url": "https://open.cait518.cc/ios-app-guide/or-IN/rss.xml"
         }
       },
       "language": "or-IN",
       "notification_eligible": true,
-      "record_count": 59
+      "record_count": 60
     },
     "pa-IN": {
-      "date_modified": "2026-11-05T21:32:02Z",
+      "date_modified": "2026-11-13T00:45:27Z",
       "formats": {
         "atom": {
           "accepted_content_types": [
@@ -1532,7 +1536,7 @@
           ],
           "content_type": "application/atom+xml",
           "path": "pa-IN/feed.xml",
-          "sha256": "85c7c3dffff1036348785f183392f86ea51cbb05c5c0e44bf1769278c6cb4da6",
+          "sha256": "eb7cd2d0778a2dd2fb3229adb1bf72712a22976474ab7df97de7cb0196bc4840",
           "url": "https://open.cait518.cc/ios-app-guide/pa-IN/feed.xml"
         },
         "json_feed": {
@@ -1542,7 +1546,7 @@
           ],
           "content_type": "application/feed+json",
           "path": "pa-IN/feed.json",
-          "sha256": "f8fd255bf7edaf380ba968ac630a53a0e09c1306c0202526e51a150210a74e13",
+          "sha256": "57ff39102fe1d3bd8d1f422445d266acce48986cad52558e184e888745cbe75b",
           "url": "https://open.cait518.cc/ios-app-guide/pa-IN/feed.json"
         },
         "rss": {
@@ -1553,16 +1557,16 @@
           ],
           "content_type": "application/rss+xml",
           "path": "pa-IN/rss.xml",
-          "sha256": "c258035ab3ee9516a9cef02fe309e97498489971bc5db693fe5d145c40d1730f",
+          "sha256": "8a01ccb9ba2a1760f6a9ba56445611c4af3a4b5567f49f80818a17998f22355f",
           "url": "https://open.cait518.cc/ios-app-guide/pa-IN/rss.xml"
         }
       },
       "language": "pa-IN",
       "notification_eligible": true,
-      "record_count": 59
+      "record_count": 60
     },
     "pl": {
-      "date_modified": "2026-11-05T21:32:02Z",
+      "date_modified": "2026-11-13T00:45:27Z",
       "formats": {
         "atom": {
           "accepted_content_types": [
@@ -1572,7 +1576,7 @@
           ],
           "content_type": "application/atom+xml",
           "path": "pl/feed.xml",
-          "sha256": "920317c4fa5c630c8ff76b3c4372cfe8f2710dc5bb5b6effc543d6c20f912bce",
+          "sha256": "f07aa422b8920b7aa400fc1e3f41c5123a60b12187272d2e647623c340cd11e9",
           "url": "https://open.cait518.cc/ios-app-guide/pl/feed.xml"
         },
         "json_feed": {
@@ -1582,7 +1586,7 @@
           ],
           "content_type": "application/feed+json",
           "path": "pl/feed.json",
-          "sha256": "f03497cd44850b012a094a425230b90153a16a596c7cd4e2129e19207577cb75",
+          "sha256": "0e24df714e662f7baae71f4ddc0ade83d991efc6a2f14ac60d663a0376c85c89",
           "url": "https://open.cait518.cc/ios-app-guide/pl/feed.json"
         },
         "rss": {
@@ -1593,16 +1597,16 @@
           ],
           "content_type": "application/rss+xml",
           "path": "pl/rss.xml",
-          "sha256": "49340b78d543b66402213a7d82d660350cac71908d553f670f98c64960cfe72e",
+          "sha256": "997888acfe198eb5a7efcc85d1e6d7bb831a0b57f7d64311958a8db3872d3d55",
           "url": "https://open.cait518.cc/ios-app-guide/pl/rss.xml"
         }
       },
       "language": "pl",
       "notification_eligible": true,
-      "record_count": 59
+      "record_count": 60
     },
     "pt-BR": {
-      "date_modified": "2026-11-05T21:32:02Z",
+      "date_modified": "2026-11-13T00:45:27Z",
       "formats": {
         "atom": {
           "accepted_content_types": [
@@ -1612,7 +1616,7 @@
           ],
           "content_type": "application/atom+xml",
           "path": "pt-BR/feed.xml",
-          "sha256": "52ce30d56662e96e6e6544d21f168f46ff54fa8bce766869791823b1bd3358f8",
+          "sha256": "1e59e60874f9fb15f3aedda83483b30a8034eade22e45345e2a7ae5c5b7bdf33",
           "url": "https://open.cait518.cc/ios-app-guide/pt-BR/feed.xml"
         },
         "json_feed": {
@@ -1622,7 +1626,7 @@
           ],
           "content_type": "application/feed+json",
           "path": "pt-BR/feed.json",
-          "sha256": "a4654ea71d730c5a179b34e52ae04ad2d1158f9051bd6edf56a74424d81a414b",
+          "sha256": "843446f9687e42457d7a2d9ede66dedf558a849f6f42a193918b90cb167a3a8a",
           "url": "https://open.cait518.cc/ios-app-guide/pt-BR/feed.json"
         },
         "rss": {
@@ -1633,16 +1637,16 @@
           ],
           "content_type": "application/rss+xml",
           "path": "pt-BR/rss.xml",
-          "sha256": "06805de4ad02ed17b157f06f9d33edb3adad7a4f32d51ca2e8cedf30ddbb5b37",
+          "sha256": "b0b628201d413d718abb6a2566192e4611c1d01450e4137af13f7ff36b0a6e03",
           "url": "https://open.cait518.cc/ios-app-guide/pt-BR/rss.xml"
         }
       },
       "language": "pt-BR",
       "notification_eligible": true,
-      "record_count": 59
+      "record_count": 60
     },
     "pt-PT": {
-      "date_modified": "2026-11-05T21:32:02Z",
+      "date_modified": "2026-11-13T00:45:27Z",
       "formats": {
         "atom": {
           "accepted_content_types": [
@@ -1652,7 +1656,7 @@
           ],
           "content_type": "application/atom+xml",
           "path": "pt-PT/feed.xml",
-          "sha256": "bdffb9d79b6395a1d734b9dd204fe0907197171b546b6e0a6f3ad492fae6b388",
+          "sha256": "4e35a7acbb928ebf587031ac103f67576e34bb148a669ea74dd7917325c999dc",
           "url": "https://open.cait518.cc/ios-app-guide/pt-PT/feed.xml"
         },
         "json_feed": {
@@ -1662,7 +1666,7 @@
           ],
           "content_type": "application/feed+json",
           "path": "pt-PT/feed.json",
-          "sha256": "01accdaa83b7b128fa03da2aecb4a01c8453d0b8000830c14b2547aeeff8c1d4",
+          "sha256": "de8898fbbc1035eea76dab30e5d23f9a3dc6f9c2fb5ed31338b6c1c835061e51",
           "url": "https://open.cait518.cc/ios-app-guide/pt-PT/feed.json"
         },
         "rss": {
@@ -1673,16 +1677,16 @@
           ],
           "content_type": "application/rss+xml",
           "path": "pt-PT/rss.xml",
-          "sha256": "c5182f44e889a8b81398b1d127a9e0c493db5e83fa16d27a596c6356b94d2054",
+          "sha256": "2b069e3dd7b64cc951f44c912ed418e45dab7a03346f7b050ac2a6a4b2d8ac25",
           "url": "https://open.cait518.cc/ios-app-guide/pt-PT/rss.xml"
         }
       },
       "language": "pt-PT",
       "notification_eligible": true,
-      "record_count": 59
+      "record_count": 60
     },
     "ro": {
-      "date_modified": "2026-11-05T21:32:02Z",
+      "date_modified": "2026-11-13T00:45:27Z",
       "formats": {
         "atom": {
           "accepted_content_types": [
@@ -1692,7 +1696,7 @@
           ],
           "content_type": "application/atom+xml",
           "path": "ro/feed.xml",
-          "sha256": "4d3b2592d5b2953678c7d0dc2920d0ef82f7c1691a163706a196a6961c010db0",
+          "sha256": "fcd809213373a5d84c7a7c73e076b394d29a246dc04b5699718e3bd027becc9b",
           "url": "https://open.cait518.cc/ios-app-guide/ro/feed.xml"
         },
         "json_feed": {
@@ -1702,7 +1706,7 @@
           ],
           "content_type": "application/feed+json",
           "path": "ro/feed.json",
-          "sha256": "b5e348303a3eba82c4b1b4b70cea6056211d1d3ead17a08459821f4ec72cefe0",
+          "sha256": "57390101c95be267f84b4540acac585c492c45c318101646f74eb26784672e3a",
           "url": "https://open.cait518.cc/ios-app-guide/ro/feed.json"
         },
         "rss": {
@@ -1713,16 +1717,16 @@
           ],
           "content_type": "application/rss+xml",
           "path": "ro/rss.xml",
-          "sha256": "5560e03514df81794d0d9dbd10b5835db8ab257a6f539bcc8c146daa29b31585",
+          "sha256": "89ca3684a880fe428aa5c4a8c748bc247104cc7adbc84a79e66bc12bcfb3472f",
           "url": "https://open.cait518.cc/ios-app-guide/ro/rss.xml"
         }
       },
       "language": "ro",
       "notification_eligible": true,
-      "record_count": 59
+      "record_count": 60
     },
     "ru": {
-      "date_modified": "2026-11-05T21:32:02Z",
+      "date_modified": "2026-11-13T00:45:27Z",
       "formats": {
         "atom": {
           "accepted_content_types": [
@@ -1732,7 +1736,7 @@
           ],
           "content_type": "application/atom+xml",
           "path": "ru/feed.xml",
-          "sha256": "6fde9ca9d6f2673b2ca9a54264aa36373998f9d1af320497d642492ee8895901",
+          "sha256": "16961b1924ba7c6887a97da5d451b03119be0294be8719f421513cf65fb1b249",
           "url": "https://open.cait518.cc/ios-app-guide/ru/feed.xml"
         },
         "json_feed": {
@@ -1742,7 +1746,7 @@
           ],
           "content_type": "application/feed+json",
           "path": "ru/feed.json",
-          "sha256": "ab660f9ede13500eb21252eadfd64960e7e1df0a2e5f096d84a03cc1edef55f4",
+          "sha256": "e2f6760954cfcee697cb903b04544f285411e581421692fe0ac2db79fb4b9b03",
           "url": "https://open.cait518.cc/ios-app-guide/ru/feed.json"
         },
         "rss": {
@@ -1753,16 +1757,16 @@
           ],
           "content_type": "application/rss+xml",
           "path": "ru/rss.xml",
-          "sha256": "8bf5fb083f774ee6f6096a487c59f08e5c0cb47c082597d2f6d8cb594e4d5e57",
+          "sha256": "4a6991f5a3dd2daab7ef7f56073645df0287743a50aac95f5faf1ef25b63a480",
           "url": "https://open.cait518.cc/ios-app-guide/ru/rss.xml"
         }
       },
       "language": "ru",
       "notification_eligible": true,
-      "record_count": 59
+      "record_count": 60
     },
     "sk": {
-      "date_modified": "2026-11-05T21:32:02Z",
+      "date_modified": "2026-11-13T00:45:27Z",
       "formats": {
         "atom": {
           "accepted_content_types": [
@@ -1772,7 +1776,7 @@
           ],
           "content_type": "application/atom+xml",
           "path": "sk/feed.xml",
-          "sha256": "dbc5cdb438c803ab14de36bc4e3ed348dbcc7c71aa395f959743e55721e41576",
+          "sha256": "4d042d9cab2e0838138b70e950edde2645d9f718822c29a945067dbf1c88beed",
           "url": "https://open.cait518.cc/ios-app-guide/sk/feed.xml"
         },
         "json_feed": {
@@ -1782,7 +1786,7 @@
           ],
           "content_type": "application/feed+json",
           "path": "sk/feed.json",
-          "sha256": "5bd6acc99c097568d2b6bf2e44c02b7f73e7cf25d89c09c66a81e44a8bfa43fa",
+          "sha256": "4c7ff0e6e451f7561cb9908a565b403b7a4239ccac2e7bd664fd60e7c979de22",
           "url": "https://open.cait518.cc/ios-app-guide/sk/feed.json"
         },
         "rss": {
@@ -1793,16 +1797,16 @@
           ],
           "content_type": "application/rss+xml",
           "path": "sk/rss.xml",
-          "sha256": "0840ee93483b97dbfa64a6039ba938961007a76656165605b5260993f72b77fa",
+          "sha256": "08775a2713f7b4db956e99f6b9a7a91c17d5ea08d6a04839d9dcb77044367679",
           "url": "https://open.cait518.cc/ios-app-guide/sk/rss.xml"
         }
       },
       "language": "sk",
       "notification_eligible": true,
-      "record_count": 59
+      "record_count": 60
     },
     "sl-SI": {
-      "date_modified": "2026-11-05T21:32:02Z",
+      "date_modified": "2026-11-13T00:45:27Z",
       "formats": {
         "atom": {
           "accepted_content_types": [
@@ -1812,7 +1816,7 @@
           ],
           "content_type": "application/atom+xml",
           "path": "sl-SI/feed.xml",
-          "sha256": "aeeee04193de6963bb51835910c3afd9c8b38219523a4fc48ddbc96b1e728d4d",
+          "sha256": "7854647e63e5ba1890fd37162d0fad79dd82429ff95d3a023c3053192d213918",
           "url": "https://open.cait518.cc/ios-app-guide/sl-SI/feed.xml"
         },
         "json_feed": {
@@ -1822,7 +1826,7 @@
           ],
           "content_type": "application/feed+json",
           "path": "sl-SI/feed.json",
-          "sha256": "d02c5303b229002ae904c04f5609879740b3dd99b1b75f57ea0185b2e42b1650",
+          "sha256": "e5c95a5ef97938d5e18370f4dfc358718dfdc6b15eb5b3c401d16754452f9fab",
           "url": "https://open.cait518.cc/ios-app-guide/sl-SI/feed.json"
         },
         "rss": {
@@ -1833,16 +1837,16 @@
           ],
           "content_type": "application/rss+xml",
           "path": "sl-SI/rss.xml",
-          "sha256": "a91785d4e34399f805d43fc9e767d1c2e6c7384d0fd385c19f2cc7cb56ba0378",
+          "sha256": "167b6edf066cd28df56112b18a124e1138d4cf29f7f63246904a3b7380dc19ba",
           "url": "https://open.cait518.cc/ios-app-guide/sl-SI/rss.xml"
         }
       },
       "language": "sl-SI",
       "notification_eligible": true,
-      "record_count": 59
+      "record_count": 60
     },
     "sv": {
-      "date_modified": "2026-11-05T21:32:02Z",
+      "date_modified": "2026-11-13T00:45:27Z",
       "formats": {
         "atom": {
           "accepted_content_types": [
@@ -1852,7 +1856,7 @@
           ],
           "content_type": "application/atom+xml",
           "path": "sv/feed.xml",
-          "sha256": "b49e94071decc62e896e8ff97e1a9a14f4d2e49f12a7c4f0803dff0d5c3b054e",
+          "sha256": "23a198a84a005c9c6a3dc7004b30206bd3ef7e8734f56103e349dbf4809787d9",
           "url": "https://open.cait518.cc/ios-app-guide/sv/feed.xml"
         },
         "json_feed": {
@@ -1862,7 +1866,7 @@
           ],
           "content_type": "application/feed+json",
           "path": "sv/feed.json",
-          "sha256": "30624be4be76d6f2940861203a7c57b01946b4d3517e273a79201d24002c0064",
+          "sha256": "3e82b0c288691e1d49daa8851e163bbb8c3f17799a63cafff924b9807e749222",
           "url": "https://open.cait518.cc/ios-app-guide/sv/feed.json"
         },
         "rss": {
@@ -1873,16 +1877,16 @@
           ],
           "content_type": "application/rss+xml",
           "path": "sv/rss.xml",
-          "sha256": "cfb9d6adee46c6b3fe87eee70f95764693a36d05b6d03190821e8ea5fc34550c",
+          "sha256": "34643000ccd283aa7784bb3246f6e59b42b1162488794dd714b3af65a0150e96",
           "url": "https://open.cait518.cc/ios-app-guide/sv/rss.xml"
         }
       },
       "language": "sv",
       "notification_eligible": true,
-      "record_count": 59
+      "record_count": 60
     },
     "ta-IN": {
-      "date_modified": "2026-11-05T21:32:02Z",
+      "date_modified": "2026-11-13T00:45:27Z",
       "formats": {
         "atom": {
           "accepted_content_types": [
@@ -1892,7 +1896,7 @@
           ],
           "content_type": "application/atom+xml",
           "path": "ta-IN/feed.xml",
-          "sha256": "750c66e557dbeb637b1afead954872aa5ed465dbd16071801de4d198dd82db55",
+          "sha256": "771d62c475006a5d15ef7fd2f5ae6d934fc716f7595e41d5ca85d9de9a58ed71",
           "url": "https://open.cait518.cc/ios-app-guide/ta-IN/feed.xml"
         },
         "json_feed": {
@@ -1902,7 +1906,7 @@
           ],
           "content_type": "application/feed+json",
           "path": "ta-IN/feed.json",
-          "sha256": "3c63d350f2a3bb3d64de75023e804054b85ce10cc850670ed81d83dbf521c583",
+          "sha256": "f3de833889855a2851c48f5237cd4582c6269f0d0ee4c58759f7eae20bbe6d17",
           "url": "https://open.cait518.cc/ios-app-guide/ta-IN/feed.json"
         },
         "rss": {
@@ -1913,16 +1917,16 @@
           ],
           "content_type": "application/rss+xml",
           "path": "ta-IN/rss.xml",
-          "sha256": "b31774db861a71ef045ab0a876b6fedec68104ecfe37b41e49bc3251faf31225",
+          "sha256": "7f6b793da82b591e925bf41d7983fb09c30dc1d8a05286aaa4cca894f305c039",
           "url": "https://open.cait518.cc/ios-app-guide/ta-IN/rss.xml"
         }
       },
       "language": "ta-IN",
       "notification_eligible": true,
-      "record_count": 59
+      "record_count": 60
     },
     "te-IN": {
-      "date_modified": "2026-11-05T21:32:02Z",
+      "date_modified": "2026-11-13T00:45:27Z",
       "formats": {
         "atom": {
           "accepted_content_types": [
@@ -1932,7 +1936,7 @@
           ],
           "content_type": "application/atom+xml",
           "path": "te-IN/feed.xml",
-          "sha256": "c2042fe28de854fc76cd29be1d2781495a9e0a42f5e696293bdd844c9b6c9897",
+          "sha256": "b0fb322c7e14a53d1e209f5141c419c0c4d3c40e41120a862f80edacba78055c",
           "url": "https://open.cait518.cc/ios-app-guide/te-IN/feed.xml"
         },
         "json_feed": {
@@ -1942,7 +1946,7 @@
           ],
           "content_type": "application/feed+json",
           "path": "te-IN/feed.json",
-          "sha256": "8bcff01dd37da1c3da08cf78adf3a6ae1617fd8d8b57a5f9e7111b17d47c5cb4",
+          "sha256": "600cc390538a13bd8fd8f7fc450a3820d3d019cea656e91c84bf5d6eed0dc3af",
           "url": "https://open.cait518.cc/ios-app-guide/te-IN/feed.json"
         },
         "rss": {
@@ -1953,16 +1957,16 @@
           ],
           "content_type": "application/rss+xml",
           "path": "te-IN/rss.xml",
-          "sha256": "8cc5f4c07f7ee6e44a44e067c84b5e26c8444cfdd89ac013ce991a0503523ae2",
+          "sha256": "98e801be01f4c99234f41f84aae97f1ca9b527b708e0ef48e8b02d55dc62f4b5",
           "url": "https://open.cait518.cc/ios-app-guide/te-IN/rss.xml"
         }
       },
       "language": "te-IN",
       "notification_eligible": true,
-      "record_count": 59
+      "record_count": 60
     },
     "th": {
-      "date_modified": "2026-11-05T21:32:02Z",
+      "date_modified": "2026-11-13T00:45:27Z",
       "formats": {
         "atom": {
           "accepted_content_types": [
@@ -1972,7 +1976,7 @@
           ],
           "content_type": "application/atom+xml",
           "path": "th/feed.xml",
-          "sha256": "a09ff91ff811d959e6efdc8f0888e01b376e9c7ced081cfcade169a87a4e2502",
+          "sha256": "da790c5173c9de8771922d4fba55a21510b715a130480fa7ef3a83db9b6635a9",
           "url": "https://open.cait518.cc/ios-app-guide/th/feed.xml"
         },
         "json_feed": {
@@ -1982,7 +1986,7 @@
           ],
           "content_type": "application/feed+json",
           "path": "th/feed.json",
-          "sha256": "69161f56c55017e0a4af65ab32d2ba180d6fcf3efca2d36aa5eec00f1742bb00",
+          "sha256": "3f0d2054ab031a1ba9c50e6bbb13b9fabf04e4dfdd1717752ca64cec2887dad6",
           "url": "https://open.cait518.cc/ios-app-guide/th/feed.json"
         },
         "rss": {
@@ -1993,16 +1997,16 @@
           ],
           "content_type": "application/rss+xml",
           "path": "th/rss.xml",
-          "sha256": "5c655bae82eb09a7b6d9479fb39be38e588e5f3f576ab65ca76e979a2c1a21b4",
+          "sha256": "d446b7feb92d4cbac291d9dd3eae1ad95e40b3a473a7ace1661cc34a5a2cd0aa",
           "url": "https://open.cait518.cc/ios-app-guide/th/rss.xml"
         }
       },
       "language": "th",
       "notification_eligible": true,
-      "record_count": 59
+      "record_count": 60
     },
     "tr": {
-      "date_modified": "2026-11-05T21:32:02Z",
+      "date_modified": "2026-11-13T00:45:27Z",
       "formats": {
         "atom": {
           "accepted_content_types": [
@@ -2012,7 +2016,7 @@
           ],
           "content_type": "application/atom+xml",
           "path": "tr/feed.xml",
-          "sha256": "080491b29166b072d3f05ac2aa4061953455b72b2ed89a1fdffd64d370f09818",
+          "sha256": "336d79d2f09f52c32e00d31ec94246a66869d91127b185cd114b47bea0b38646",
           "url": "https://open.cait518.cc/ios-app-guide/tr/feed.xml"
         },
         "json_feed": {
@@ -2022,7 +2026,7 @@
           ],
           "content_type": "application/feed+json",
           "path": "tr/feed.json",
-          "sha256": "631d1ca7ce1904dd7eb3566ad7bb2b0f841bc44be03c27e094753c32e9249db5",
+          "sha256": "fb6992d0a0f8e501acf2bd4a785f10074e5f46237a16543263f9f2cf4d119f07",
           "url": "https://open.cait518.cc/ios-app-guide/tr/feed.json"
         },
         "rss": {
@@ -2033,16 +2037,16 @@
           ],
           "content_type": "application/rss+xml",
           "path": "tr/rss.xml",
-          "sha256": "04c836756713db29c43d2a29b73de81d15dc6551092bf906f378cc2d352cf652",
+          "sha256": "fac5e005ebce0d925f70c00288d8b2c0a1c317fb7f424d56288379efbc7721db",
           "url": "https://open.cait518.cc/ios-app-guide/tr/rss.xml"
         }
       },
       "language": "tr",
       "notification_eligible": true,
-      "record_count": 59
+      "record_count": 60
     },
     "uk": {
-      "date_modified": "2026-11-05T21:32:02Z",
+      "date_modified": "2026-11-13T00:45:27Z",
       "formats": {
         "atom": {
           "accepted_content_types": [
@@ -2052,7 +2056,7 @@
           ],
           "content_type": "application/atom+xml",
           "path": "uk/feed.xml",
-          "sha256": "d35840bff513e97a4418f90cd276ff77e3a567d1ef77ebbe802ffb2b19e6aac4",
+          "sha256": "09db560863f52929e57ddf3166a73c323a729bc8dbd4f6d9d1ffba1501c51856",
           "url": "https://open.cait518.cc/ios-app-guide/uk/feed.xml"
         },
         "json_feed": {
@@ -2062,7 +2066,7 @@
           ],
           "content_type": "application/feed+json",
           "path": "uk/feed.json",
-          "sha256": "2277bf57e84e1321f53a3c844bf3be7c85fada5f5d242afdd0ed7e3d60a05e33",
+          "sha256": "b9479c92c77e43263687dfb97f689b687511c6c342599f4da4a14f2d366b5a8e",
           "url": "https://open.cait518.cc/ios-app-guide/uk/feed.json"
         },
         "rss": {
@@ -2073,16 +2077,16 @@
           ],
           "content_type": "application/rss+xml",
           "path": "uk/rss.xml",
-          "sha256": "6a64cf3378608f879ecb3253159e2d7a3efc392df0e4be7f8430bdc05d749854",
+          "sha256": "eca68859b820d040f2679b2175b2c876ff54c53cc199a76a651cab9a2de12c59",
           "url": "https://open.cait518.cc/ios-app-guide/uk/rss.xml"
         }
       },
       "language": "uk",
       "notification_eligible": true,
-      "record_count": 59
+      "record_count": 60
     },
     "ur-PK": {
-      "date_modified": "2026-11-05T21:32:02Z",
+      "date_modified": "2026-11-13T00:45:27Z",
       "formats": {
         "atom": {
           "accepted_content_types": [
@@ -2092,7 +2096,7 @@
           ],
           "content_type": "application/atom+xml",
           "path": "ur-PK/feed.xml",
-          "sha256": "042427e6a7041f7fbc7ee9432592043e2ebfc2b34480d51fcc8635b0a1f515df",
+          "sha256": "92f5426921d6aaaf007b8cdba05e9c57270acc5f581ef358e2055e3393956d83",
           "url": "https://open.cait518.cc/ios-app-guide/ur-PK/feed.xml"
         },
         "json_feed": {
@@ -2102,7 +2106,7 @@
           ],
           "content_type": "application/feed+json",
           "path": "ur-PK/feed.json",
-          "sha256": "9baf54f7728e254a4756e8db40bc9c0f183d014fb0e4f53e2981b009426eeab3",
+          "sha256": "c9ca8cb07c19d5b11c8cbbef543b3b237c576e71d7d6ddeb997c1c41271d76d0",
           "url": "https://open.cait518.cc/ios-app-guide/ur-PK/feed.json"
         },
         "rss": {
@@ -2113,16 +2117,16 @@
           ],
           "content_type": "application/rss+xml",
           "path": "ur-PK/rss.xml",
-          "sha256": "f994d9b5412877db5fae5824bf91d1cda02f8086b178d3b3170681551b41fb64",
+          "sha256": "8d81cc75521de3692927c5ac12142026cceede078873242bf1473f98400f4bbf",
           "url": "https://open.cait518.cc/ios-app-guide/ur-PK/rss.xml"
         }
       },
       "language": "ur-PK",
       "notification_eligible": true,
-      "record_count": 59
+      "record_count": 60
     },
     "vi": {
-      "date_modified": "2026-11-05T21:32:02Z",
+      "date_modified": "2026-11-13T00:45:27Z",
       "formats": {
         "atom": {
           "accepted_content_types": [
@@ -2132,7 +2136,7 @@
           ],
           "content_type": "application/atom+xml",
           "path": "vi/feed.xml",
-          "sha256": "4630ee9900c58a9b192452fcfa226f7919f0afeb975bd6a2405dae7a50a4bf30",
+          "sha256": "b76cbf34f92513b46828927f848f56d50acb2c075e1fcc8baae06c574c5c6c57",
           "url": "https://open.cait518.cc/ios-app-guide/vi/feed.xml"
         },
         "json_feed": {
@@ -2142,7 +2146,7 @@
           ],
           "content_type": "application/feed+json",
           "path": "vi/feed.json",
-          "sha256": "13c5de7a6e256b7df0edfdc4afb953ce76b6bc692ada1d55d14b4b6d0b6a4f41",
+          "sha256": "983995e41caf1ab82dce98527ddca74689c82dc55f004e5b7e40a2cd9be23bac",
           "url": "https://open.cait518.cc/ios-app-guide/vi/feed.json"
         },
         "rss": {
@@ -2153,16 +2157,16 @@
           ],
           "content_type": "application/rss+xml",
           "path": "vi/rss.xml",
-          "sha256": "c93444039994c6afc262915c958342a326b3d151d192b55b440c6a5552abf725",
+          "sha256": "cc682d597235dd06f4ef576d73f30411e677aac05aae28f76a2f1fa00e8b0fa6",
           "url": "https://open.cait518.cc/ios-app-guide/vi/rss.xml"
         }
       },
       "language": "vi",
       "notification_eligible": true,
-      "record_count": 59
+      "record_count": 60
     },
     "zh-Hans": {
-      "date_modified": "2026-11-11T02:00:36Z",
+      "date_modified": "2026-11-13T00:45:27Z",
       "formats": {
         "atom": {
           "accepted_content_types": [
@@ -2172,7 +2176,7 @@
           ],
           "content_type": "application/atom+xml",
           "path": "zh-Hans/feed.xml",
-          "sha256": "c3dd9e6e02ec77b03f00c9b248beeeac5724149292ab31b0bbbfe2412ec2e691",
+          "sha256": "87d82c3d93c1112820bc8705eb5317318a3c174fbfc35fd913bb83cc3e1c0da9",
           "url": "https://open.cait518.cc/ios-app-guide/zh-Hans/feed.xml"
         },
         "json_feed": {
@@ -2182,7 +2186,7 @@
           ],
           "content_type": "application/feed+json",
           "path": "zh-Hans/feed.json",
-          "sha256": "9daae08f44f34aa3936a411f4c354a3f02f4aa1ee960f2878800aec51a1a78f6",
+          "sha256": "f8751601539717382163a0c96594ae9fd07ce2c741c44047a368589b7c23d6f8",
           "url": "https://open.cait518.cc/ios-app-guide/zh-Hans/feed.json"
         },
         "rss": {
@@ -2193,16 +2197,16 @@
           ],
           "content_type": "application/rss+xml",
           "path": "zh-Hans/rss.xml",
-          "sha256": "dde7e847364eed945598416cf8a87163ecc3c894dee2e972dfc8cf2d23a5fffa",
+          "sha256": "43dc103094ea9266baf6c10a1376c02ab6fa956119b7c08c1e51d7f91b7d159e",
           "url": "https://open.cait518.cc/ios-app-guide/zh-Hans/rss.xml"
         }
       },
       "language": "zh-Hans",
       "notification_eligible": true,
-      "record_count": 59
+      "record_count": 60
     },
     "zh-Hant": {
-      "date_modified": "2026-11-05T21:32:02Z",
+      "date_modified": "2026-11-13T00:45:27Z",
       "formats": {
         "atom": {
           "accepted_content_types": [
@@ -2212,7 +2216,7 @@
           ],
           "content_type": "application/atom+xml",
           "path": "zh-Hant/feed.xml",
-          "sha256": "83bb4fe8cfdd1113249633b5455cfe60d1c92769cf344759867dda56552436b7",
+          "sha256": "306a52045b25b27eb9e1365dac3b22e4c0a07e823a1a896816376ad8195aa1e0",
           "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/feed.xml"
         },
         "json_feed": {
@@ -2222,7 +2226,7 @@
           ],
           "content_type": "application/feed+json",
           "path": "zh-Hant/feed.json",
-          "sha256": "0a6703b3220f45d0a7099a17b577d050c3018f6bc116ede6a754b5a4a348e288",
+          "sha256": "fb5159f686ee2a9ff9f9e38d2913fb121fae9926cd62be49b997cf056562c949",
           "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/feed.json"
         },
         "rss": {
@@ -2233,29 +2237,30 @@
           ],
           "content_type": "application/rss+xml",
           "path": "zh-Hant/rss.xml",
-          "sha256": "6d419926cfe763f13ba09f7eebfc8ce3ba01ea67a793b1c2a33b20d6611075df",
+          "sha256": "00c801f42f1d07b1e3621a9da30484bdf41d890d2f65290ea521d093e4a7836e",
           "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/rss.xml"
         }
       },
       "language": "zh-Hant",
       "notification_eligible": true,
-      "record_count": 59
+      "record_count": 60
     }
   },
-  "generation_digest": "337371e88d00c739fe24b5193d690bc833da6351192bef640a0e754f00494bb3",
+  "generation_digest": "38e48fed865a3b0cdf14e9ea5c4415214b16ca3d7bd28f74ff5e0c41d6e71925",
   "locale_count": 50,
   "notification_feed_count": 147,
   "purchase_models": {
     "free_with_lifetime_unlock": 45,
+    "neutral": 1,
     "paid_upfront": 14
   },
-  "record_count": 2950,
+  "record_count": 3000,
   "schema": "lumi.owned-app-feeds/v2",
   "site": "https://open.cait518.cc/ios-app-guide",
-  "sitemap_sha256": "a6521ff437d51f763679052e6a8b13d6fa57e5749c1c4e45e8bca63613c72917",
+  "sitemap_sha256": "7fb616daa51bd1277ae8f9ca2430f1954b46fe5b0d4cdda68eac945e9b879c10",
   "source": {
-    "catalog_content_digest": "3fb46fdf7ac4bd913296849cd9449ddfd99af8ae2d3f3823028980425fe17b9d",
-    "roster_digest": "3024900a207bf5c6e7b0dcbb8099cc4bac2ec8ca00c1349f4a1fd4b5c57fcf26",
+    "catalog_content_digest": "a4c4fd3b581828512385d2b2b6fe3368132f26b46e82b72346393f701fcb46bf",
+    "roster_digest": "151b01fd2464a3f08cccb53f5250e72f9f2e0412099cee732d39496fa3f97637",
     "source_files": {
       "../social/videogen/registry.py": "fa574d5e16655040f5d61ddf0ffc8b95e5d578b4fc6a5d66f2bc092159813b66",
       "app_store_storefronts.py": "c33428d2775f0a2bf19212736f3bd083bc8a32166a0891b7efa139626dfac4f0",
@@ -2266,7 +2271,7 @@
       "gen_publisher_disclosures.py": "0e5c124806e6d8e2e419561e63d82c9a1d8afb99eb8912fa5ca49ba4c8a90677",
       "gen_sitemap_lastmod.py": "f16f1f1780e916874129bbf50dd2b556b44527b6f2fdad46280304b0366f37ad",
       "indexnow_submit.py": "7093732431554588484d89c90679931d340cb29dcc8ea5e87c8d76aa9fbd54ef",
-      "live_app_manifest.json": "686c5af41ddb19659bd9b2009768b61ad66d7112fcf54580b2d1afaee634bddd",
+      "live_app_manifest.json": "acee3e39041df1464fb506b0d03475a11f2c72fad9dc117e00c254e87cad7239",
       "locale_storefronts.json": "1b9d27a304b0b2031fbdbb26e816e0bc416d0a8df8d9cf5a1593d72fdaaab5de",
       "market_availability.py": "e4ad7d8db822b2809ea3adb4e9698ded3506931486388cedb7f33cbafd386b0c",
       "notification_policy.json": "25ca6e5de0c561b369589892426bbbc396d0a54ddf7f24a3def9b3a21852bd0c",

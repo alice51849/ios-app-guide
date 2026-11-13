@@ -1,12 +1,12 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-11-12",
-  "content_digest": "3fb46fdf7ac4bd913296849cd9449ddfd99af8ae2d3f3823028980425fe17b9d",
+  "date_modified": "2026-11-13",
+  "content_digest": "a4c4fd3b581828512385d2b2b6fe3368132f26b46e82b72346393f701fcb46bf",
   "locale": "ml-IN",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 59,
+  "record_count": 60,
   "apps": [
     {
       "key": "notesstudio100",
@@ -735,6 +735,47 @@
         "currency": "INR",
         "formatted_price": "₹ 499",
         "storefront_url": "https://apps.apple.com/in/app/id6754218117"
+      }
+    },
+    {
+      "key": "kumo",
+      "app_store_id": "6830824515",
+      "name": "Kumo: ഭാരം കുറയ്ക്കൽ ട്രാക്കർ",
+      "summary": "ദിവസേനയുള്ള ഏറ്റക്കുറച്ചിലല്ല, യഥാർത്ഥ ട്രെൻഡ് കാണൂ: Kumo ദിവസം 10 സെക്കൻഡിൽ ഭാരം കുറിച്ച് 7 ദിവസ ശരാശരി കാണിക്കും, ഒപ്പം കൂടെ വളരുന്ന ക്യൂട്ട് മേഘവും. ഇൻജക്ഷൻ എടുത്താലും ഇല്ലെങ്കിലും ഒരുപോലെ ഉപകാരപ്പെടും.",
+      "category": "health",
+      "search_terms": [
+        "കുറയ്ക്കാൻ",
+        "തൂക്കം",
+        "ശരീരഭാരം",
+        "ഡയറ്റ്",
+        "വെയിറ്റ്",
+        "ലോസ്",
+        "ഫാസ്റ്റിംഗ്",
+        "ഇടവിട്ടുള്ള",
+        "വെള്ളം",
+        "പ്രോട്ടീൻ",
+        "ടൈമർ",
+        "ഡയറി"
+      ],
+      "purchase_model": "neutral",
+      "one_time_option": false,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/in/app/id6830824515?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/ml-IN/kumo.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "സൗജന്യം",
+        "storefront_url": "https://apps.apple.com/in/app/id6830824515"
       }
     },
     {

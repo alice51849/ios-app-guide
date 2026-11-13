@@ -2,7 +2,7 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-11-13",
-  "content_digest": "a4c4fd3b581828512385d2b2b6fe3368132f26b46e82b72346393f701fcb46bf",
+  "content_digest": "db5be9afbc555859ee07c654d6bcf05c158d9116b286d091b7885baf1fb31340",
   "locale": "bn-BD",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -1035,12 +1035,12 @@
       "one_time_option": false,
       "capabilities": {
         "offline": false,
-        "no_account": false,
-        "no_ads": false,
-        "no_tracking": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
         "private_or_on_device": false,
         "widget": false,
-        "apple_watch": false
+        "apple_watch": true
       },
       "app_store_url": null,
       "guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/kumo.html",

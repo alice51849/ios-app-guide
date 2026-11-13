@@ -421,5 +421,78 @@ class CreatorCodeLineKeptTest(unittest.TestCase):
         self.assertEqual(url, D.coarse_campaign_url(url))
 
 
+KUMO = "https://apps.apple.com/app/id6830824515?ct=threads"
+KUMO_OK = "Kumo: log your weight, fasting windows and GLP-1 injection days. 7-day average trend.\n" + KUMO
+
+
+class RestrictedCopyTest(unittest.TestCase):
+    """Kumo (health / medicine copy): drug brands, result promises, medical advice, prices and free trials are refused."""
+    BANNED = {
+        "drug brand": ("Pairs well with Ozempic", "Wegovy day log", "MOUNJARO shots", "zepbound", "semaglutide notes",
+                       "オゼンピックの記録", "マンジャロ", "위고비 주사", "마운자로", "猛健樂紀錄", "胰妥讚", "Оземпик"),
+        "result claim": ("Guaranteed weight loss", "lose 10 lbs in 2 weeks", "drop 5 kg", "保證瘦", "瘦10公斤",
+                         "瘦十公斤", "一定會瘦", "確実に痩せる", "必ず痩せる", "5kg痩せた", "무조건 빠져요",
+                         "pérdida de peso garantizada", "burn belly fat"),
+        "medical advice": ("dose recommendation", "recommended dosage for week 4", "劑量建議", "建議劑量",
+                           "用量を調整", "투여량 안내", "doctor-recommended"),
+        "price": ("only $4.99/month", "NT$90", "¥500", "4,99 €", "₩3,900", "月付 90 元"),
+        "free trial": ("Start your free trial", "7-day trial", "免費試用", "免费试用", "無料トライアル", "무료 체험",
+                       "prueba gratis"),
+    }
+    ALLOWED = ("Track GLP-1 injections", "GLP-1 注射追蹤", "GLP-1注射の記録", "GLP-1 주사 기록",
+               "Kumo does not provide medical advice. Ask your doctor.", "Kumo does not record doses.",
+               "It does not give medical advice, diagnose, or calculate doses.", "Records only: no dose suggestions",
+               "Kumo 不提供醫療建議、不做診斷、不計算劑量", "只做紀錄：不計算、不建議劑量", "Kumo 不提供医疗建议。",
+               "Kumoは個人の記録用アプリで、医療アドバイスは行いません。", "Kumo는 의료 조언을 제공하지 않습니다.",
+               "monthly or yearly, or a one-time in-app purchase", "7-day average", "your own iCloud, no account")
+
+    def test_every_category_is_refused_for_kumo(self):
+        for category, texts in self.BANNED.items():
+            for text in texts:
+                hits = D.restricted_copy_hits(text)
+                self.assertIn(category, [c for c, _ in hits], text)
+                self.assertTrue(D.link_problems(f"{text}\n{KUMO}", KUMO), text)
+        self.assertEqual(5, len(D.RESTRICTED_COPY_RULES))
+
+    def test_glp1_and_disclaimers_pass(self):
+        for text in self.ALLOWED:
+            self.assertEqual([], D.restricted_copy_hits(text), text)
+        self.assertEqual([], D.link_problems(KUMO_OK, KUMO))
+
+    def test_the_app_is_known_from_the_url_the_text_the_name_or_the_key(self):
+        bad = "Ozempic log, free trial"
+        self.assertTrue(D.restricted_copy_problems(bad, KUMO))
+        self.assertTrue(D.restricted_copy_problems(f"{bad} {KUMO}"))
+        self.assertTrue(D.restricted_copy_problems(bad, name="Kumo: Weight & GLP-1 Tracker"))
+        self.assertTrue(D.restricted_copy_problems(bad, app_key="kumo"))
+        self.assertEqual([], D.restricted_copy_problems(bad))
+
+    def test_other_apps_are_not_checked(self):
+        other = "https://apps.apple.com/app/id6785004775"
+        text = f"Free trial, only $4.99, guaranteed! {other}"
+        self.assertEqual([], D.link_problems(text, other))
+        self.assertEqual([], D.restricted_copy_problems(text, other, name="Mochi: Cute To-Do List"))
+        self.assertIn("$4.99", D.ensure_download_link("Free trial, only $4.99", other))
+
+    def test_the_send_side_defences_raise(self):
+        with self.assertRaises(D.MissingDownloadLink):
+            D.ensure_download_link("Works with Wegovy", KUMO)
+        self.assertIn("id6830824515", D.ensure_download_link("Weight log with a 7-day average", KUMO))
+        with self.assertRaises(D.MissingDownloadLink):
+            D.ensure_instagram_caption("Lose 10 lbs in 2 weeks", "Kumo: Weight & GLP-1 Tracker", "en-US")
+        self.assertTrue(D.instagram_problems("保證瘦 #Kumo", "Kumo: Weight & GLP-1 Tracker"))
+        self.assertTrue(D.threads_reply_problems(f"免費試用 {KUMO}", KUMO))
+
+
+class PostQaRestrictedCopyTest(unittest.TestCase):
+    def test_post_qa_refuses_kumo_words_on_every_channel_and_leaves_other_apps_alone(self):
+        import post_qa
+        for channel in ("threads", "instagram", "telegram"):
+            problems = post_qa.download_link_problems("Ozempic log, free trial", KUMO, channel, play_url="")
+            self.assertTrue(any("kumo copy" in p for p in problems), channel)
+        self.assertEqual([], post_qa.download_link_problems("Kumo: 7-day average", KUMO, "threads", play_url=""))
+        self.assertEqual([], post_qa.download_link_problems("Free trial $4.99", STORE, "threads", play_url=""))
+
+
 if __name__ == "__main__":
     unittest.main()

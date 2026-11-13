@@ -363,11 +363,13 @@ LINK_EXEMPT = {"threads"}
 def download_link_problems(text, store_url, channel, play_url=None):
     """The post must carry the app's direct download link (App Store, and Google Play when it is on Android).
     Instagram is the other way round (owner 2026-10-17): its text must carry NO URL - the profile (bio) link is
-    the download link; bio_problems() asks for the profile-link line and the brand hashtag."""
+    the download link; bio_problems() asks for the profile-link line and the brand hashtag.
+    A restricted-copy app (Kumo) is held to its copy rules on every channel, the link-exempt ones included."""
+    restricted = DL.restricted_copy_problems(text, store_url, label=f"{channel} text")
     if channel in LINK_EXEMPT:
-        return []
+        return restricted
     if DL.is_instagram(channel):
-        return DL.instagram_url_problems(text, label=f"{channel} text")
+        return DL.instagram_url_problems(text, label=f"{channel} text") + restricted
     if play_url is None:
         from social_post_common import android_apps, play_store_url
         if not android_apps():  # an unreadable snapshot would silently drop every Google Play link

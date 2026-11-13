@@ -112,7 +112,119 @@ def link_problems(text, app_store_url, play_url=None, label="text"):
         out.append(f"{label}: no direct App Store download link (id{app_store_id(app_store_url)}) in the text")
     if play_url and not has_play_link(text, play_url):
         out.append(f"{label}: app is on Google Play but the text has no Google Play link")
-    return out
+    return out + restricted_copy_problems(text, app_store_url, label)
+
+
+# ---------------------------------------------------------------- restricted copy (health / drug apps)
+#
+# Kumo (weight log, fasting, GLP-1 injection tracker; owner 2026-11-13) touches health and medicines: its outbound
+# text names only features the store copy really has, makes no efficacy or result promise, names no drug brand,
+# gives no medical advice, shows no price and no free trial (00_GrowthEngine ops/aso/kumo/README.md). Every text
+# that is about such an app (its App Store id in the URL or in the text, or its name) is refused when a pattern
+# below matches; "GLP-1" itself and disclaimers ("does not provide medical advice") are allowed. Other apps are not
+# checked here. Keep both cores in the same change.
+_W = r"(?<![A-Za-z0-9])"   # a Latin word start that also works next to CJK text (\b does not)
+_WE = r"(?![A-Za-z0-9])"
+_NUM = r"[0-9０-９]+(?:[.,][0-9]+)?"
+_ZHN = r"(?:[0-9０-９]+(?:[.,][0-9]+)?|[一二三四五六七八九十百兩两]+)"
+_RX = lambda *parts: re.compile("|".join(parts), re.I)  # noqa: E731
+RESTRICTED_COPY_DISCLAIMERS = _RX(  # negated / safety sentences: removed before the scan, never a hit
+    r"(?:does|do|is|are|will|can|could|should)\s*(?:not|n't)\s+[^.;:!?\n。]{0,80}"
+    r"(?:medical\s+advice|diagnos\w*|prescri\w*|treat\w*|cure\w*|dos(?:e|age|ing)s?)",
+    r"(?:never|nor)\s+[^.;:!?\n]{0,40}?(?:medical\s+advice|diagnos\w*|prescri\w*|dos(?:e|age|ing)s?)",
+    r"not\s+(?:a\s+substitute\s+for\s+|intended\s+as\s+)?medical\s+advice",
+    r"not\s+a\s+medical\s+device",
+    r"(?:no|not|without|never)\s+(?:\w+\s+){0,2}?(?:medical\s+advice|dos(?:e|age|ing)\s+(?:advice|suggestions?|recommendations?))",
+    r"不(?:建議|建议|推薦|推荐)(?:劑量|剂量|用量)|不(?:提供|給|给|做)(?:劑量|剂量|用量|用藥|用药)(?:建議|建议)",
+    r"(?:不提供|並非|并非|不是|不構成|不构成|非)(?:任何)?(?:醫療|医疗)(?:建議|建议|意見|意见)",
+    r"不(?:提供|做|作|給|给|會|会|進行|进行)(?:任何)?(?:醫療|医疗)?(?:建議|建议|診斷|诊断|處方|处方|治療|治疗|判讀|判读)",
+    r"(?:診断|治療|処方|用量|医療(?:的な)?(?:アドバイス|助言))[^。\n]{0,30}?(?:ありません|ません|ない)",
+    r"(?:진단|치료|처방|용량|의료\s*(?:조언|자문))[^.\n]{0,30}?(?:않습니다|않아요|않으며|않고|아닙니다|아니에요|아니며)",
+)
+_DRUGS = _RX(
+    _W + r"(?:ozempic|wegovy|mounjaro|zepbound|saxenda|rybelsus|victoza|trulicity|semaglutid\w*|tirzepatid\w*|"
+         r"liraglutid\w*|dulaglutid\w*)" + _WE,
+    r"オゼンピック|ウゴービ|ウゴーヴィ|マンジャロ|ゼップバウンド|サクセンダ|リベルサス|ビクトーザ|トルリシティ|セマグルチド|チルゼパチド|リラグルチド",
+    r"오젬픽|위고비|마운자로|젭바운드|삭센다|리벨서스|빅토자|트루리시티|세마글루타이드|터제파타이드|티르제파타이드|리라글루타이드",
+    r"胰妥讚|胰妥赞|週纖達|周纤达|諾和盈|诺和盈|諾和泰|诺和泰|猛健樂|猛健乐|穆峰達|穆峰达|善纖達|善纤达|易週糖|易周糖|"
+    r"司美格魯肽|司美格鲁肽|替爾泊肽|替尔泊肽|利拉魯肽|利拉鲁肽|度拉糖肽",
+    r"оземпик|вегови|мунджаро|саксенда|семаглутид|тирзепатид|أوزمبيك|أوزيمبك|ويغوفي|ويجوفي|مونجارو|ساكسندا|"
+    r"โอเซมปิก|เวโกวี|มันจาโร",
+)
+_RESULTS = _RX(
+    _W + r"guarante\w*", _W + r"garant(?:i|ie|ía|ia)\w*", _W + r"gwarantow\w*",
+    _W + r"(?:lose|losing|lost|drop|shed|melt)\s+(?:up\s+to\s+)?" + _NUM + r"\s*(?:lbs?|pounds?|kg|kilos?|kilograms?)" + _WE,
+    _NUM + r"\s*(?:lbs?|pounds?|kg|kilos?)\s+(?:in|within)\s+" + _NUM + r"\s*(?:days?|weeks?|months?)",
+    _W + r"(?:burn|melt|blast)s?\s+(?:belly\s+|body\s+)?fat" + _WE, _W + r"cures?" + _WE, _W + r"miracle" + _WE,
+    r"保[證证]", r"一定(?:會|会|能)?(?:瘦|減|减)", r"(?:瘦|減|减|甩)(?:了|掉|下)?\s*" + _ZHN + r"\s*(?:公斤|斤|kg|磅)",
+    _ZHN + r"\s*(?:公斤|斤|kg)\s*(?:瘦|減|减)", r"療效|疗效", r"必(?:定|然)(?:瘦|減|减)",
+    r"確実に(?:痩|やせ)", r"必ず(?:痩|やせ)", _NUM + r"\s*(?:キロ|kg)\s*(?:痩|やせ|減)", r"(?:痩|やせ)(?:られる|る)?保証",
+    r"効果(?:を|が)?保証", r"保証(?:付き|します)",
+    r"무조건\s*(?:빠|감량)", r"확실(?:히|하게)\s*(?:빠|감량|살)", _NUM + r"\s*(?:kg|킬로)\s*(?:감량|빠)", r"(?:효과|감량)\s*보장",
+)
+_ADVICE = _RX(
+    _W + r"medical\s+advice", _W + r"dos(?:e|age|ing)\s+(?:advice|guide|recommendations?|suggestions?|adjust\w*)",
+    _W + r"recommended\s+dos(?:e|age)", _W + r"how\s+much\s+(?:to\s+)?inject", _W + r"doctor[- ]recommended",
+    _W + r"prescri\w*", _W + r"diagnos\w*", _W + r"treat(?:s|ment|ing)?\s+(?:obesity|diabetes|overweight)",
+    r"(?:劑量|剂量|用藥|用药|用量)(?:建議|建议)|(?:建議|建议)(?:劑量|剂量|用量)|(?:醫療|医疗)(?:建議|建议)",
+    r"處方|处方|診斷|诊断|治療|治疗",
+    r"用量を|投与量|処方|診断|治療|医療(?:的な)?(?:アドバイス|助言)",
+    r"용량을|투여량|복용량|처방|진단|치료|의료\s*(?:조언|자문)",
+)
+_PRICES = _RX(
+    r"(?:NT|US|HK|NZ|A|C|S)?[$＄]\s?" + _NUM, r"[€£¥￥₩₹₽฿]\s?" + _NUM,
+    _NUM + r"\s?(?:[$€£¥￥₩₹₽฿]|usd|eur|gbp|jpy|krw|twd|ntd|hkd|cny|rmb|aud|cad|inr|円|元|원|圓|ドル|美元|港幣|港币|欧元|歐元)" + _WE,
+    _W + r"(?:usd|eur|twd|ntd|jpy|krw)\s?" + _NUM,
+)
+_TRIALS = _RX(
+    _W + r"trials?" + _WE, _W + r"try\s+(?:it\s+)?(?:for\s+)?free\s+for", r"免費試用|免费试用|試用期|试用期|免費體驗|免费体验",
+    r"無料トライアル|無料体験|無料お試し|お試し期間|トライアル", r"무료\s*체험|무료\s*평가판|체험\s*기간",
+    _W + r"(?:prueba|teste|essai|prova|probe)\s+(?:gratis|gratuit[ao]?|grátis|gratuite?|kostenlos)" + _WE,
+    _W + r"(?:kostenlos|gratis)\s+(?:testen|ausprobieren)" + _WE, _W + r"(?:testversion|probeabo|avaliação\s+gratuita)",
+)
+RESTRICTED_COPY_RULES = (
+    ("drug brand", "names a medicine brand or ingredient", _DRUGS),
+    ("result claim", "promises an effect or a weight result", _RESULTS),
+    ("medical advice", "reads as medical or dosing advice", _ADVICE),
+    ("price", "shows a price or currency", _PRICES),
+    ("free trial", "offers a free trial", _TRIALS),
+)
+RESTRICTED_COPY_APPS = {"6830824515": "kumo"}  # App Store id -> registry key (health / medicine copy rules)
+_RESTRICTED_URLS = re.compile(r"https?://\S+", re.I)
+
+
+def restricted_copy_app(text="", app_store_url=None, name=None, app_key=None):
+    """The restricted-copy App Store id this text is about, or None (an ordinary app: nothing to check)."""
+    if app_key and app_key in RESTRICTED_COPY_APPS.values():
+        return next(i for i, k in RESTRICTED_COPY_APPS.items() if k == app_key)
+    found = app_store_id(app_store_url) if app_store_url else None
+    if found in RESTRICTED_COPY_APPS:
+        return found
+    if name and brand_name(name).lower() in RESTRICTED_COPY_APPS.values():
+        return next(i for i, k in RESTRICTED_COPY_APPS.items() if k == brand_name(name).lower())
+    return next((i for i in store_ids_in(text or "") if i in RESTRICTED_COPY_APPS), None)
+
+
+def restricted_copy_hits(text):
+    """[(category, matched text)] of the restricted-copy rules in `text` (links and disclaimers removed first)."""
+    plain = unicodedata.normalize("NFKC", text or "")
+    plain = RESTRICTED_COPY_DISCLAIMERS.sub(" ", _RESTRICTED_URLS.sub(" ", plain))
+    hits = []
+    for category, _why, rx in RESTRICTED_COPY_RULES:
+        found = rx.search(plain)
+        if found:
+            hits.append((category, found.group(0).strip()))
+    return hits
+
+
+def restricted_copy_problems(text, app_store_url=None, label="text", *, name=None, app_key=None):
+    """QA problems ([] = fine) when a text about a restricted-copy app (Kumo) breaks its copy rules."""
+    app = restricted_copy_app(text, app_store_url, name, app_key)
+    if not app:
+        return []
+    why = {c: w for c, w, _rx in RESTRICTED_COPY_RULES}
+    return [f"{label}: {RESTRICTED_COPY_APPS[app]} copy {why[c]} ({c}: {hit[:40]!r}); this app's outbound text may "
+            "not carry it" for c, hit in restricted_copy_hits(text)]
 
 
 # ---------------------------------------------------------------- companion edition (a paid app's free Lite)
@@ -254,7 +366,11 @@ def ensure_download_link(text, app_store_url, play_url=None, *, max_len=None, ap
     """
     out = _ensure_own_links(text, app_store_url, play_url, max_len=max_len, app_store_label=app_store_label,
                             play_label=play_label, measure=measure, label=label)
-    return _with_companion(out, coarse_campaign_url(app_store_url), play_url, play_label, max_len, measure)
+    out = _with_companion(out, coarse_campaign_url(app_store_url), play_url, play_label, max_len, measure)
+    problems = restricted_copy_problems(out, app_store_url, label)  # a restricted-copy app (Kumo): no banned words
+    if problems:
+        raise MissingDownloadLink("; ".join(problems))
+    return out
 
 
 def _ensure_own_links(text, app_store_url, play_url, *, max_len, app_store_label, play_label, measure, label):
@@ -564,7 +680,7 @@ def instagram_problems(text, name=None, *, locale=None, latin_name=None, brand=T
             out.append(f"{label}: no brand hashtag can be made from the app name {name!r} (no Latin store name known)")
         elif not has_brand_hashtag(text, tag):
             out.append(f"{label}: no brand hashtag {tag} (the app's name as one hashtag)")
-    return out
+    return out + restricted_copy_problems(text, label=label, name=name)
 
 
 def ensure_instagram_caption(text, name, locale=None, *, latin_name=None, max_len=None, tag_limit=None,

@@ -1,12 +1,12 @@
 {
- "generated": "2026-11-12T20:01:26Z",
+ "generated": "2026-11-13T01:54:40Z",
  "mode": "apply",
  "counts": {
   "unknown_app": 48,
   "ok_reply": 63,
-  "ok_backfilled_earlier": 75,
+  "ok_backfilled_earlier": 77,
   "backfilled": 2,
-  "ok_store_only": 655,
+  "ok_store_only": 653,
   "ok_bio_link": 68,
   "ok_caption": 4,
   "taken_down": 4,
@@ -1569,16 +1569,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DdAWAaOD1Xm",
    "date": "2026-09-08",
    "app": "hourstag",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "Budsjett, utgifter & sparing. HoursTag gjør hver pris om til arbeidstimene du trenger for å tjene den. HoursTag: Timer å kjøpe Legger igjen ",
    "why": "url+brand",
    "ios_id": "6754218117",
-   "locale": "other",
-   "own_replies": [],
-   "comment_id": "17880760863563391",
-   "at": "2026-11-12T19:58:52Z",
-   "verified": true,
-   "via": "list"
+   "locale": "other"
   },
   {
    "channel": "threads",
@@ -1586,11 +1581,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/Dc9-4tViafq",
    "date": "2026-09-07",
    "app": "snapportlite",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "Lag ID-foto hjemme. Lag pass, visum og dokumentbilder med veiledet størrelse, bakgrunnsverktøy og klar til utskrift eksport. Snapport Lite: ",
    "why": "url+brand",
    "ios_id": "6792856304",
-   "locale": "other"
+   "locale": "other",
+   "own_replies": [],
+   "comment_id": "18360546061216781",
+   "at": "2026-11-13T01:52:01Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -1598,16 +1598,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/Dc_NTNqD2k8",
    "date": "2026-09-07",
    "app": "dailymate",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "Des phrases, pas des mots. Une langue se retient dans des phrases entières, pas dans des listes de mots isolés. DailyMate : parler en contex",
    "why": "url+brand",
    "ios_id": "6790418321",
-   "locale": "other",
-   "own_replies": [],
-   "comment_id": "18116784215122472",
-   "at": "2026-11-12T19:58:52Z",
-   "verified": true,
-   "via": "list"
+   "locale": "other"
   },
   {
    "channel": "threads",
@@ -1615,11 +1610,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/Dc7t29rk9fn",
    "date": "2026-09-06",
    "app": "tripbee",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "מסלול ורשימת אריזה. תכננו כל טיול באפליקציה אחת יפה, פרטית ושעובדת גם ללא אינטרנט. TripBee: מתכנן טיולים אם בא לכם לנסות, זה כאן: https://ap",
    "why": "url",
    "ios_id": "6787754435",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "18114055634605478",
+   "at": "2026-11-13T01:52:01Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",

@@ -2,6 +2,7 @@
 
 from copy import deepcopy
 import html
+import io
 from html.parser import HTMLParser
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 import json
@@ -11,6 +12,7 @@ import re
 import sys
 from threading import Thread
 import unittest
+from unittest.mock import patch
 from urllib.parse import parse_qsl, urlsplit
 from urllib.request import urlopen
 
@@ -76,7 +78,17 @@ class ConversionRouteContractTests(unittest.TestCase):
         cls.apps = routes.load_inventory(cls.inventory)
         cls.contracts = conversion.load_contracts()
         cls.raw_routes = {row["app_key"]: row for row in cls.source["routes"]}
-        cls.records, cls.report = routes.build(inventory_path=cls.inventory, provider_token="118326163")
+        # 備案：新上線、還沒有複審過路線文案的款只略過那幾款並警告（build 會印
+        # ::warning::），有文案的款照舊嚴格檢查；略過的款在下面逐項驗證。
+        with patch("sys.stderr", new_callable=io.StringIO) as err:
+            cls.records, cls.report = routes.build(
+                inventory_path=cls.inventory,
+                provider_token="118326163",
+                allow_new_live_app_gaps=True,
+            )
+        cls.build_stderr = err.getvalue()
+        sys.stderr.write(cls.build_stderr)
+        cls.gaps = list(cls.report["coverage"]["missing_route_app_keys"])
         cls.converted = [row for row in cls.records if row.get("conversion_contract")]
         cls.html = {row["route_id"]: routes.render_html(row) for row in cls.converted}
 
@@ -88,15 +100,34 @@ class ConversionRouteContractTests(unittest.TestCase):
     def test_stable_ids_and_source_derived_native_routes(self):
         self.assertEqual(IDS, {key: row["app_id"] for key, row in self.contracts.items()})
         self.assertEqual(sum(len(row["localized"]) for row in self.contracts.values()), len(self.converted))
-        self.assertEqual(ROSTER_APP_COUNT, len(self.source["routes"]))
+        self.assertEqual(ROSTER_APP_COUNT - len(self.gaps), len(self.source["routes"]))
         self.assertEqual(
-            ROSTER_APP_COUNT * 50,
+            (ROSTER_APP_COUNT - len(self.gaps)) * 50,
             self.report["coverage"]["candidate_app_locale_pairs"],
         )
         self.assertEqual(0, self.report["coverage"]["fallback_records"])
         for key in IDS:
             self.assertEqual(IDS[key], self.apps[key]["app_store_id"])
             self.assertTrue(self.validate(key))
+
+    def test_apps_without_reviewed_route_copy_are_skipped_with_a_warning(self):
+        covered = {row["app_key"] for row in self.source["routes"]}
+        self.assertEqual(sorted(set(self.apps) - covered), self.gaps)
+        self.assertEqual(len(self.gaps), self.report["coverage"]["missing_route_apps"])
+        emitted = {row["app_key"] for row in self.records}
+        for key in self.gaps:
+            with self.subTest(skipped=key):
+                self.assertNotIn(key, emitted)
+                self.assertIn("::warning::", self.build_stderr)
+                self.assertIn(repr(key), self.build_stderr)
+        if not self.gaps:
+            self.assertNotIn("::warning::High-intent routes skipped", self.build_stderr)
+            self.assertEqual(
+                routes.RELEASE_STATE_EXACT, self.report["release_state"]
+            )
+        # 有文案的款照舊嚴格：每一款都有紀錄，且不可有退回的通用文案。
+        self.assertEqual(covered, emitted & covered)
+        self.assertEqual(0, self.report["coverage"]["fallback_records"])
 
     def test_required_primary_and_secondary_locales(self):
         for key, locale in {"lumibopomofo": "zh-Hant", "aim990": "fr-FR", "lumiweather": "ja"}.items():

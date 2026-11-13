@@ -59,6 +59,11 @@ class LocaleGateTests(unittest.TestCase):
 # The roster is the single source of truth for how many public Apps exist;
 # spelling the count out here goes stale the day a new App ships.
 ROSTER_APP_COUNT = len(canonical_manifest()["apps"])
+# 真資料裡已是 neutral（有訂閱）的款，例如 Kumo；假資料測試要扣掉它們再算。
+REAL_NEUTRAL_KEYS = frozenset(
+    key for key in canonical_manifest()["apps"]
+    if APPS.get(key, {}).get("purchase_model") == "neutral"
+)
 
 
 class OwnedFeedTests(FeedFixture):
@@ -71,8 +76,11 @@ class OwnedFeedTests(FeedFixture):
                 "notification_feed_count",
             )),
         )
-        self.assertEqual({"paid_upfront": 14, "free_with_lifetime_unlock": 45},
-                         manifest["purchase_models"])
+        expected_models = {"paid_upfront": 14, "free_with_lifetime_unlock": 45}
+        # Kumo（自動續訂＋一次性買斷並存）上架後登錄為 neutral，只有 1 款。
+        if "kumo" in canonical_manifest()["apps"]:
+            expected_models["neutral"] = 1
+        self.assertEqual(expected_models, manifest["purchase_models"])
         paths, pairs = set(), set()
         for locale in OFFICIAL_LOCALES:
             document = feeds.read_json(self.pages / feeds.feed_path(locale, "json_feed"))
@@ -245,7 +253,11 @@ class OwnedFeedTests(FeedFixture):
         self.assertNotIn("one-time unlock", text)
         self.assertNotIn("Paid download", text)
         manifest = feeds.read_manifest(self.pages)
-        self.assertEqual(1, manifest["purchase_models"]["neutral"])
+        # 假資料只改了一款；真資料裡原本就是 neutral 的款另外算。
+        self.assertNotIn("lumimathpro", REAL_NEUTRAL_KEYS)
+        self.assertEqual(
+            1 + len(REAL_NEUTRAL_KEYS), manifest["purchase_models"]["neutral"]
+        )
         self.assertNotIn("skipped_apps", manifest["source"])
 
     def test_neutral_app_cannot_claim_a_one_time_option(self):
@@ -280,7 +292,20 @@ class OwnedFeedTests(FeedFixture):
         feeds.build(self.pages, now=NEW)
         document = feeds.read_json(self.pages / feeds.feed_path("en-US", "json_feed"))
         copies = feeds.load_copy(GEO)
+        existing = [
+            item for item in document["items"]
+            if item["_owned_app"]["app_key"] not in REAL_NEUTRAL_KEYS
+        ]
+        self.assertEqual(ROSTER_APP_COUNT - len(REAL_NEUTRAL_KEYS), len(existing))
         for item in document["items"]:
+            facts = item["_owned_app"]
+            if facts["app_key"] in REAL_NEUTRAL_KEYS:
+                # 真資料的 neutral 款照樣不可宣稱一次性選項。
+                with self.subTest(neutral_app=facts["app_key"]):
+                    self.assertEqual("neutral", facts["purchase_model"])
+                    self.assertIs(False, facts["one_time_option"])
+                    self.assertEqual(copies["en-US"]["neutral"], facts["purchase_label"])
+        for item in existing:
             facts = item["_owned_app"]
             with self.subTest(app=facts["app_key"]):
                 self.assertIn(facts["purchase_model"], feeds.ONE_TIME_MODELS)

@@ -1,7 +1,7 @@
 {
  "schema": "lumi.social-feed/v1",
  "date": "2026-11-13",
- "generated_at": "2026-11-13T08:49:54Z",
+ "generated_at": "2026-11-13T16:13:49Z",
  "items": {
   "bluesky": [
    {
@@ -186,48 +186,69 @@
    },
    {
     "kind": "clip",
-    "key": "lumiletterspro/ja",
+    "key": "cyca/ja",
     "locale": "ja",
-    "app": "lumiletterspro",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/lexhbf.mp4",
-    "hook": "画面でなぞって プリントでも練習",
-    "name": "Lumi レター Pro：ABCフォニックス",
-    "title": "画面でなぞって プリントでも練習 | おうち英語・音の聞き分け練習 | Lumi レター Pro",
+    "app": "cyca",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/5ufikj.mp4",
+    "hook": "アカウント不要 端末の中だけ",
+    "name": "Cyca 生理・排卵日トラッカー",
+    "title": "アカウント不要 端末の中だけ | 生理管理・妊活・毎日の体調予報 | Cyca 生理",
     "tags": [
-     "#フォニックス英語",
-     "#アルファベット",
-     "#えいご",
-     "#英単語",
-     "#短母音",
-     "#LumiレターPro"
+     "#生理周期",
+     "#排卵予測",
+     "#生理予測",
+     "#月経",
+     "#月経管理",
+     "#Cyca生理"
     ],
-    "caption": "画面でなぞって プリントでも練習\n成長が ひと目でわかる\nおうち英語・音の聞き分け練習\nLumi レター Pro：ABCフォニックス\nApp Storeで「Lumi レター Pro」を検索\nAndroidはGoogle Playで\n\n#フォニックス英語 #アルファベット #LumiレターPro",
+    "caption": "アカウント不要 端末の中だけ\n生理日も排卵日も ひと目でわかる\n生理管理・妊活・毎日の体調予報\nCyca 生理・排卵日トラッカー\nApp Storeで「Cyca 生理」を検索\nAndroidはGoogle Playで\n\n#生理周期 #排卵予測 #Cyca生理",
     "button": "App Storeで入手",
     "variant": "b",
-    "alt": "Lumi レター Pro：ABCフォニックス — 画面でなぞって プリントでも練習 — 成長が ひと目でわかる — おうち英語・音の聞き分け練習",
-    "store": "https://apps.apple.com/jp/app/id6778491147?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiLetters&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiletterspro",
+    "alt": "Cyca 生理・排卵日トラッカー — アカウント不要 端末の中だけ — 生理日も排卵日も ひと目でわかる — 生理管理・妊活・毎日の体調予報",
+    "store": "https://apps.apple.com/jp/app/id6782251621?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.cyca&referrer=utm_source%3Dsocial%26utm_campaign%3Dcyca",
     "review": {
      "label": "このアプリをお使いですか？App Store で評価・レビューできます",
-     "url": "https://apps.apple.com/app/id6778491147?action=write-review"
+     "url": "https://apps.apple.com/app/id6782251621?action=write-review"
     },
     "keywords": [
-     "アルファベット",
-     "えいご",
-     "英単語",
-     "短母音",
-     "母音",
-     "子音"
+     "生理周期",
+     "排卵予測",
+     "生理予測",
+     "月経",
+     "月経管理",
+     "生理カレンダー"
     ],
-    "keyline": "おうち英語・音の聞き分け練習",
+    "keyline": "生理管理・妊活・毎日の体調予報",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "7457ec6403e84c02",
+     "board": "0e3d67d897d7076a",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "card/suneung2027/2026-11-13",
+    "locale": "ko",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/countdown-cards/card-20261113.jpg",
+    "caption": "2027학년도 수능 D-6\n오늘도 한 걸음\n\nApp Store · Google Play에서 'CountDaysNow' 검색\n\n#디데이카운터 #디데이 #카운트다운",
+    "title": "2027학년도 수능 D-6",
+    "alt": "CountDaysNow — 2027학년도 수능 D-6 — 오늘도 한 걸음 — App Store · Google Play에서 'CountDaysNow' 검색 — 디데이 카운터",
+    "name": "CountDaysNow",
+    "hook": "2027학년도 수능 D-6",
+    "tags": [
+     "#디데이카운터",
+     "#디데이",
+     "#카운트다운",
+     "#날짜계산",
+     "#기념일"
+    ],
+    "button": "App Store에서 받기",
+    "store": "https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow"
    },
    {
     "kind": "card",
@@ -2028,48 +2049,69 @@
    },
    {
     "kind": "clip",
-    "key": "lumiletterspro/ja",
+    "key": "cyca/ja",
     "locale": "ja",
-    "app": "lumiletterspro",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/lexhbf.mp4",
-    "hook": "画面でなぞって プリントでも練習",
-    "name": "Lumi レター Pro：ABCフォニックス",
-    "title": "画面でなぞって プリントでも練習 | おうち英語・音の聞き分け練習 | Lumi レター Pro",
+    "app": "cyca",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/5ufikj.mp4",
+    "hook": "アカウント不要 端末の中だけ",
+    "name": "Cyca 生理・排卵日トラッカー",
+    "title": "アカウント不要 端末の中だけ | 生理管理・妊活・毎日の体調予報 | Cyca 生理",
     "tags": [
-     "#フォニックス英語",
-     "#アルファベット",
-     "#えいご",
-     "#英単語",
-     "#短母音",
-     "#LumiレターPro"
+     "#生理周期",
+     "#排卵予測",
+     "#生理予測",
+     "#月経",
+     "#月経管理",
+     "#Cyca生理"
     ],
-    "caption": "画面でなぞって プリントでも練習\n成長が ひと目でわかる\nおうち英語・音の聞き分け練習\nLumi レター Pro：ABCフォニックス\nApp Storeで「Lumi レター Pro」を検索\nAndroidはGoogle Playで\n\n#フォニックス英語 #アルファベット #えいご #英単語 #LumiレターPro",
+    "caption": "アカウント不要 端末の中だけ\n生理日も排卵日も ひと目でわかる\n生理管理・妊活・毎日の体調予報\nCyca 生理・排卵日トラッカー\nApp Storeで「Cyca 生理」を検索\nAndroidはGoogle Playで\n\n#生理周期 #排卵予測 #生理予測 #月経 #Cyca生理",
     "button": "App Storeで入手",
     "variant": "b",
-    "alt": "Lumi レター Pro：ABCフォニックス — 画面でなぞって プリントでも練習 — 成長が ひと目でわかる — おうち英語・音の聞き分け練習",
-    "store": "https://apps.apple.com/jp/app/id6778491147?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiLetters&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiletterspro",
+    "alt": "Cyca 生理・排卵日トラッカー — アカウント不要 端末の中だけ — 生理日も排卵日も ひと目でわかる — 生理管理・妊活・毎日の体調予報",
+    "store": "https://apps.apple.com/jp/app/id6782251621?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.cyca&referrer=utm_source%3Dsocial%26utm_campaign%3Dcyca",
     "review": {
      "label": "このアプリをお使いですか？App Store で評価・レビューできます",
-     "url": "https://apps.apple.com/app/id6778491147?action=write-review"
+     "url": "https://apps.apple.com/app/id6782251621?action=write-review"
     },
     "keywords": [
-     "アルファベット",
-     "えいご",
-     "英単語",
-     "短母音",
-     "母音",
-     "子音"
+     "生理周期",
+     "排卵予測",
+     "生理予測",
+     "月経",
+     "月経管理",
+     "生理カレンダー"
     ],
-    "keyline": "おうち英語・音の聞き分け練習",
+    "keyline": "生理管理・妊活・毎日の体調予報",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "7457ec6403e84c02",
+     "board": "0e3d67d897d7076a",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "card/suneung2027/2026-11-13",
+    "locale": "ko",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/countdown-cards/card-20261113.jpg",
+    "caption": "2027학년도 수능 D-6\n오늘도 한 걸음\n\nApp Store · Google Play에서 'CountDaysNow' 검색\n\n#디데이카운터 #디데이 #카운트다운 #날짜계산 #기념일",
+    "title": "2027학년도 수능 D-6",
+    "alt": "CountDaysNow — 2027학년도 수능 D-6 — 오늘도 한 걸음 — App Store · Google Play에서 'CountDaysNow' 검색 — 디데이 카운터",
+    "name": "CountDaysNow",
+    "hook": "2027학년도 수능 D-6",
+    "tags": [
+     "#디데이카운터",
+     "#디데이",
+     "#카운트다운",
+     "#날짜계산",
+     "#기념일"
+    ],
+    "button": "App Store에서 받기",
+    "store": "https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow"
    },
    {
     "kind": "card",
@@ -2333,60 +2375,59 @@
    },
    {
     "kind": "clip",
-    "key": "lumiletterspro/ja",
+    "key": "cyca/ja",
     "locale": "ja",
-    "app": "lumiletterspro",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/lexhbf.mp4",
-    "hook": "画面でなぞって プリントでも練習",
-    "name": "Lumi レター Pro：ABCフォニックス",
-    "title": "画面でなぞって プリントでも練習 | おうち英語・音の聞き分け練習 | Lumi レター Pro",
+    "app": "cyca",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/5ufikj.mp4",
+    "hook": "アカウント不要 端末の中だけ",
+    "name": "Cyca 生理・排卵日トラッカー",
+    "title": "アカウント不要 端末の中だけ | 生理管理・妊活・毎日の体調予報 | Cyca 生理",
     "tags": [
-     "#フォニックス英語",
-     "#アルファベット",
-     "#えいご",
-     "#英単語",
-     "#短母音",
-     "#LumiレターPro"
+     "#生理周期",
+     "#排卵予測",
+     "#生理予測",
+     "#月経",
+     "#月経管理",
+     "#Cyca生理"
     ],
-    "caption": "画面でなぞって プリントでも練習\n成長が ひと目でわかる\nおうち英語・音の聞き分け練習\nLumi レター Pro：ABCフォニックス\nApp Storeで「Lumi レター Pro」を検索\nAndroidはGoogle Playで\n\n#フォニックス英語 #アルファベット #えいご #英単語 #LumiレターPro",
+    "caption": "アカウント不要 端末の中だけ\n生理日も排卵日も ひと目でわかる\n生理管理・妊活・毎日の体調予報\nCyca 生理・排卵日トラッカー\nApp Storeで「Cyca 生理」を検索\nAndroidはGoogle Playで\n\n#生理周期 #排卵予測 #生理予測 #月経 #Cyca生理",
     "button": "App Storeで入手",
     "variant": "b",
-    "alt": "Lumi レター Pro：ABCフォニックス — 画面でなぞって プリントでも練習 — 成長が ひと目でわかる — おうち英語・音の聞き分け練習",
-    "store": "https://apps.apple.com/jp/app/id6778491147?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiLetters&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiletterspro",
+    "alt": "Cyca 生理・排卵日トラッカー — アカウント不要 端末の中だけ — 生理日も排卵日も ひと目でわかる — 生理管理・妊活・毎日の体調予報",
+    "store": "https://apps.apple.com/jp/app/id6782251621?pt=118326163&ct=youtube&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.cyca&referrer=utm_source%3Dyoutube%26utm_campaign%3Dcyca",
     "review": {
      "label": "このアプリをお使いですか？App Store で評価・レビューできます",
-     "url": "https://apps.apple.com/app/id6778491147?action=write-review"
+     "url": "https://apps.apple.com/app/id6782251621?action=write-review"
     },
     "keywords": [
-     "アルファベット",
-     "えいご",
-     "英単語",
-     "短母音",
-     "母音",
-     "子音"
+     "生理周期",
+     "排卵予測",
+     "生理予測",
+     "月経",
+     "月経管理",
+     "生理カレンダー"
     ],
-    "keyline": "おうち英語・音の聞き分け練習",
+    "keyline": "生理管理・妊活・毎日の体調予報",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "7457ec6403e84c02",
+     "board": "0e3d67d897d7076a",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "youtube": {
-     "title": "画面でなぞって プリントでも練習 | Lumi レター Pro #Shorts",
-     "description": "画面でなぞって プリントでも練習\n成長が ひと目でわかる\nおうち英語・音の聞き分け練習\n\nLumi レター Pro：ABCフォニックス\nApp Store: https://apps.apple.com/jp/app/id6778491147?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiLetters&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiletterspro\nこのアプリをお使いですか？App Store で評価・レビューできます\nhttps://apps.apple.com/app/id6778491147?action=write-review\n\nアルファベット · えいご · 英単語 · 短母音 · 母音 · 子音\n\n#Shorts #フォニックス英語 #LumiレターPro",
+     "title": "アカウント不要 端末の中だけ | Cyca 生理 #Shorts",
+     "description": "アカウント不要 端末の中だけ\n生理日も排卵日も ひと目でわかる\n生理管理・妊活・毎日の体調予報\n\nCyca 生理・排卵日トラッカー\nApp Store: https://apps.apple.com/jp/app/id6782251621?pt=118326163&ct=youtube&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.cyca&referrer=utm_source%3Dyoutube%26utm_campaign%3Dcyca\nこのアプリをお使いですか？App Store で評価・レビューできます\nhttps://apps.apple.com/app/id6782251621?action=write-review\n\n生理周期 · 排卵予測 · 生理予測 · 月経 · 月経管理 · 生理カレンダー\n\n#Shorts #生理周期 #Cyca生理",
      "tags": [
-      "アルファベット",
-      "えいご",
-      "英単語",
-      "短母音",
-      "母音",
-      "子音",
-      "フォニックス英語",
-      "LumiレターPro",
-      "Lumi レター Pro"
+      "生理周期",
+      "排卵予測",
+      "生理予測",
+      "月経",
+      "月経管理",
+      "生理カレンダー",
+      "Cyca生理",
+      "Cyca 生理"
      ]
     },
     "slot": 15
@@ -2591,52 +2632,77 @@
    },
    {
     "kind": "clip",
-    "key": "lumiletterspro/ja",
+    "key": "cyca/ja",
     "locale": "ja",
-    "app": "lumiletterspro",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/lexhbf.mp4",
-    "hook": "画面でなぞって プリントでも練習",
-    "name": "Lumi レター Pro：ABCフォニックス",
-    "title": "画面でなぞって プリントでも練習 | おうち英語・音の聞き分け練習 | Lumi レター Pro",
+    "app": "cyca",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/5ufikj.mp4",
+    "hook": "アカウント不要 端末の中だけ",
+    "name": "Cyca 生理・排卵日トラッカー",
+    "title": "アカウント不要 端末の中だけ | 生理管理・妊活・毎日の体調予報 | Cyca 生理",
     "tags": [
-     "#フォニックス英語",
-     "#アルファベット",
-     "#えいご",
-     "#英単語",
-     "#短母音",
-     "#LumiレターPro"
+     "#生理周期",
+     "#排卵予測",
+     "#生理予測",
+     "#月経",
+     "#月経管理",
+     "#Cyca生理"
     ],
-    "caption": "画面でなぞって プリントでも練習\n成長が ひと目でわかる\nおうち英語・音の聞き分け練習\nLumi レター Pro：ABCフォニックス\nApp Storeで「Lumi レター Pro」を検索\nAndroidはGoogle Playで\n\n#フォニックス英語 #アルファベット #えいご #英単語 #LumiレターPro",
+    "caption": "アカウント不要 端末の中だけ\n生理日も排卵日も ひと目でわかる\n生理管理・妊活・毎日の体調予報\nCyca 生理・排卵日トラッカー\nApp Storeで「Cyca 生理」を検索\nAndroidはGoogle Playで\n\n#生理周期 #排卵予測 #生理予測 #月経 #Cyca生理",
     "button": "App Storeで入手",
     "variant": "b",
-    "alt": "Lumi レター Pro：ABCフォニックス — 画面でなぞって プリントでも練習 — 成長が ひと目でわかる — おうち英語・音の聞き分け練習",
-    "store": "https://apps.apple.com/jp/app/id6778491147?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiLetters&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiletterspro",
+    "alt": "Cyca 生理・排卵日トラッカー — アカウント不要 端末の中だけ — 生理日も排卵日も ひと目でわかる — 生理管理・妊活・毎日の体調予報",
+    "store": "https://apps.apple.com/jp/app/id6782251621?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.cyca&referrer=utm_source%3Dsocial%26utm_campaign%3Dcyca",
     "review": {
      "label": "このアプリをお使いですか？App Store で評価・レビューできます",
-     "url": "https://apps.apple.com/app/id6778491147?action=write-review"
+     "url": "https://apps.apple.com/app/id6782251621?action=write-review"
     },
     "keywords": [
-     "アルファベット",
-     "えいご",
-     "英単語",
-     "短母音",
-     "母音",
-     "子音"
+     "生理周期",
+     "排卵予測",
+     "生理予測",
+     "月経",
+     "月経管理",
+     "生理カレンダー"
     ],
-    "keyline": "おうち英語・音の聞き分け練習",
+    "keyline": "生理管理・妊活・毎日の体調予報",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "7457ec6403e84c02",
+     "board": "0e3d67d897d7076a",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "画面でなぞって プリントでも練習\n成長が ひと目でわかる\nおうち英語・音の聞き分け練習\nLumi レター Pro：ABCフォニックス\nApp Storeで「Lumi レター Pro」を検索\nAndroidはGoogle Playで\n\n#フォニックス英語 #アルファベット #えいご #英単語 #LumiレターPro\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6778491147?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiLetters&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiletterspro",
-     "link": "https://apps.apple.com/jp/app/id6778491147?pt=118326163&ct=social&mt=8"
+     "description": "アカウント不要 端末の中だけ\n生理日も排卵日も ひと目でわかる\n生理管理・妊活・毎日の体調予報\nCyca 生理・排卵日トラッカー\nApp Storeで「Cyca 生理」を検索\nAndroidはGoogle Playで\n\n#生理周期 #排卵予測 #生理予測 #月経 #Cyca生理\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6782251621?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.cyca&referrer=utm_source%3Dsocial%26utm_campaign%3Dcyca",
+     "link": "https://apps.apple.com/jp/app/id6782251621?pt=118326163&ct=social&mt=8"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "card/suneung2027/2026-11-13",
+    "locale": "ko",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/countdown-cards/card-20261113.jpg",
+    "caption": "2027학년도 수능 D-6\n오늘도 한 걸음\n\nApp Store · Google Play에서 'CountDaysNow' 검색\n\n#디데이카운터 #디데이 #카운트다운 #날짜계산 #기념일",
+    "title": "2027학년도 수능 D-6",
+    "alt": "CountDaysNow — 2027학년도 수능 D-6 — 오늘도 한 걸음 — App Store · Google Play에서 'CountDaysNow' 검색 — 디데이 카운터",
+    "name": "CountDaysNow",
+    "hook": "2027학년도 수능 D-6",
+    "tags": [
+     "#디데이카운터",
+     "#디데이",
+     "#카운트다운",
+     "#날짜계산",
+     "#기념일"
+    ],
+    "button": "App Store에서 받기",
+    "store": "https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
+    "pinterest": {
+     "description": "2027학년도 수능 D-6\n오늘도 한 걸음\n\nApp Store · Google Play에서 'CountDaysNow' 검색\n\n#디데이카운터 #디데이 #카운트다운 #날짜계산 #기념일\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
+     "link": "https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8"
+    }
    },
    {
     "kind": "card",
@@ -6588,49 +6654,49 @@
    },
    {
     "kind": "clip",
-    "key": "lumiletterspro/ja",
+    "key": "cyca/ja",
     "locale": "ja",
-    "app": "lumiletterspro",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/lexhbf.mp4",
-    "hook": "画面でなぞって プリントでも練習",
-    "name": "Lumi レター Pro：ABCフォニックス",
-    "title": "画面でなぞって プリントでも練習 | おうち英語・音の聞き分け練習 | Lumi レター Pro",
+    "app": "cyca",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/5ufikj.mp4",
+    "hook": "アカウント不要 端末の中だけ",
+    "name": "Cyca 生理・排卵日トラッカー",
+    "title": "アカウント不要 端末の中だけ | 生理管理・妊活・毎日の体調予報 | Cyca 生理",
     "tags": [
-     "#フォニックス英語",
-     "#アルファベット",
-     "#えいご",
-     "#英単語",
-     "#短母音",
-     "#LumiレターPro"
+     "#生理周期",
+     "#排卵予測",
+     "#生理予測",
+     "#月経",
+     "#月経管理",
+     "#Cyca生理"
     ],
-    "caption": "画面でなぞって プリントでも練習\n成長が ひと目でわかる\nおうち英語・音の聞き分け練習\nLumi レター Pro：ABCフォニックス\nApp Storeで「Lumi レター Pro」を検索\nAndroidはGoogle Playで\n\n#フォニックス英語 #アルファベット #えいご #英単語 #LumiレターPro",
+    "caption": "アカウント不要 端末の中だけ\n生理日も排卵日も ひと目でわかる\n生理管理・妊活・毎日の体調予報\nCyca 生理・排卵日トラッカー\nApp Storeで「Cyca 生理」を検索\nAndroidはGoogle Playで\n\n#生理周期 #排卵予測 #生理予測 #月経 #Cyca生理",
     "button": "App Storeで入手",
     "variant": "b",
-    "alt": "Lumi レター Pro：ABCフォニックス — 画面でなぞって プリントでも練習 — 成長が ひと目でわかる — おうち英語・音の聞き分け練習",
-    "store": "https://apps.apple.com/jp/app/id6778491147?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiLetters&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiletterspro",
+    "alt": "Cyca 生理・排卵日トラッカー — アカウント不要 端末の中だけ — 生理日も排卵日も ひと目でわかる — 生理管理・妊活・毎日の体調予報",
+    "store": "https://apps.apple.com/jp/app/id6782251621?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.cyca&referrer=utm_source%3Dsocial%26utm_campaign%3Dcyca",
     "review": {
      "label": "このアプリをお使いですか？App Store で評価・レビューできます",
-     "url": "https://apps.apple.com/app/id6778491147?action=write-review"
+     "url": "https://apps.apple.com/app/id6782251621?action=write-review"
     },
     "keywords": [
-     "アルファベット",
-     "えいご",
-     "英単語",
-     "短母音",
-     "母音",
-     "子音"
+     "生理周期",
+     "排卵予測",
+     "生理予測",
+     "月経",
+     "月経管理",
+     "生理カレンダー"
     ],
-    "keyline": "おうち英語・音の聞き分け練習",
+    "keyline": "生理管理・妊活・毎日の体調予報",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "7457ec6403e84c02",
+     "board": "0e3d67d897d7076a",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "画面でなぞって プリントでも練習\n成長が ひと目でわかる\nおうち英語・音の聞き分け練習\nLumi レター Pro：ABCフォニックス\nApp Storeで「Lumi レター Pro」を検索\nAndroidはGoogle Playで\n\n#フォニックス英語 #アルファベット #えいご #英単語 #LumiレターPro\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6778491147?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiLetters&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiletterspro"
+     "caption": "アカウント不要 端末の中だけ\n生理日も排卵日も ひと目でわかる\n生理管理・妊活・毎日の体調予報\nCyca 生理・排卵日トラッカー\nApp Storeで「Cyca 生理」を検索\nAndroidはGoogle Playで\n\n#生理周期 #排卵予測 #生理予測 #月経 #Cyca生理\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6782251621?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.cyca&referrer=utm_source%3Dsocial%26utm_campaign%3Dcyca"
     },
     "slot": 15
    }

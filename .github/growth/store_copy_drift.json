@@ -1556,6 +1556,91 @@
    },
    "status": "green"
   },
+  "kumo": {
+   "blocked_terms": [],
+   "brands": [
+    "Kumo 体重記録・GLP-1 注射記録・断食タイマー",
+    "Kumo 몸무게·GLP-1 주사 기록·간헐적 단식",
+    "Kumo 體重紀錄・減重日記・GLP-1 注射追蹤",
+    "Kumo 体重记录・减重打卡・轻断食计时器",
+    "Kumo"
+   ],
+   "live_updated": "2026-11-11",
+   "live_version": "1.0.0",
+   "locales": {
+    "de-DE": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-11-11",
+     "live_version": "1.0.0",
+     "same": true
+    },
+    "en-GB": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-11-11",
+     "live_version": "1.0.0",
+     "same": true
+    },
+    "en-US": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-11-11",
+     "live_version": "1.0.0",
+     "same": true
+    },
+    "es-ES": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-11-11",
+     "live_version": "1.0.0",
+     "same": true
+    },
+    "fr-FR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-11-11",
+     "live_version": "1.0.0",
+     "same": true
+    },
+    "ja": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-11-11",
+     "live_version": "1.0.0",
+     "same": true
+    },
+    "ko": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-11-11",
+     "live_version": "1.0.0",
+     "same": true
+    },
+    "pt-BR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-11-11",
+     "live_version": "1.0.0",
+     "same": true
+    },
+    "zh-Hans": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-11-11",
+     "live_version": "1.0.0",
+     "same": true
+    },
+    "zh-Hant": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-11-11",
+     "live_version": "1.0.0",
+     "same": true
+    }
+   },
+   "status": "green"
+  },
   "ledmovingtext": {
    "blocked_terms": [],
    "brands": [
@@ -2225,77 +2310,77 @@
     "Lumi 任務星球",
     "Lumi 미션 별"
    ],
-   "live_updated": "2026-10-27",
-   "live_version": "1.4.9",
+   "live_updated": "2026-11-13",
+   "live_version": "1.4.10",
    "locales": {
     "de-DE": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-27",
-     "live_version": "1.4.9",
+     "live_updated": "2026-11-13",
+     "live_version": "1.4.10",
      "same": true
     },
     "en-GB": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-27",
-     "live_version": "1.4.9",
+     "live_updated": "2026-11-13",
+     "live_version": "1.4.10",
      "same": true
     },
     "en-US": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-27",
-     "live_version": "1.4.9",
+     "live_updated": "2026-11-13",
+     "live_version": "1.4.10",
      "same": true
     },
     "es-ES": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-27",
-     "live_version": "1.4.9",
+     "live_updated": "2026-11-13",
+     "live_version": "1.4.10",
      "same": true
     },
     "fr-FR": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-27",
-     "live_version": "1.4.9",
+     "live_updated": "2026-11-13",
+     "live_version": "1.4.10",
      "same": true
     },
     "ja": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-27",
-     "live_version": "1.4.9",
+     "live_updated": "2026-11-13",
+     "live_version": "1.4.10",
      "same": true
     },
     "ko": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-27",
-     "live_version": "1.4.9",
+     "live_updated": "2026-11-13",
+     "live_version": "1.4.10",
      "same": true
     },
     "pt-BR": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-27",
-     "live_version": "1.4.9",
+     "live_updated": "2026-11-13",
+     "live_version": "1.4.10",
      "same": true
     },
     "zh-Hans": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-27",
-     "live_version": "1.4.9",
+     "live_updated": "2026-11-13",
+     "live_version": "1.4.10",
      "same": true
     },
     "zh-Hant": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-10-27",
-     "live_version": "1.4.9",
+     "live_updated": "2026-11-13",
+     "live_version": "1.4.10",
      "same": true
     }
    },
@@ -4956,11 +5041,11 @@
   "gb"
  ],
  "counts": {
-  "green": 59,
+  "green": 60,
   "red": 0,
   "unknown": 0
  },
  "errors": [],
- "generated_at": "2026-11-12T04:26:39Z",
+ "generated_at": "2026-11-13T07:22:44Z",
  "schema": "growth.store-copy-drift/v1"
 }

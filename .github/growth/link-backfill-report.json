@@ -1,11 +1,11 @@
 {
- "generated": "2026-11-14T10:34:37Z",
+ "generated": "2026-11-14T22:31:44Z",
  "mode": "apply",
  "counts": {
-  "ok_reply": 66,
+  "ok_reply": 67,
   "unknown_app": 48,
-  "ok_backfilled_earlier": 83,
-  "ok_store_only": 647,
+  "ok_backfilled_earlier": 85,
+  "ok_store_only": 645,
   "backfilled": 2,
   "ok_bio_link": 68,
   "ok_caption": 4,
@@ -13,6 +13,18 @@
   "missing": 3
  },
  "rows": [
+  {
+   "channel": "threads",
+   "id": "17945642868364101",
+   "permalink": "https://www.threads.com/@hourstag.app/post/DfuR7QUlRk9",
+   "date": "2026-11-14",
+   "app": "mochi",
+   "status": "ok_reply",
+   "text": "Tiny night routine that fixed my mornings: Before bed I write tomorrow's three things in a cute checklist and set a reminder for the first o",
+   "why": "trial",
+   "ios_id": "6785004775",
+   "locale": "en-US"
+  },
   {
    "channel": "threads",
    "id": "18103798019379867",
@@ -2103,11 +2115,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctjSk-AjYr",
    "date": "2026-08-31",
    "app": "lumiweather",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "Lumi Weather: Family Forecast Weather, Rain Radar & Alerts Plan the day with kids in seconds. A friendly forecast plus a smart outing score ",
    "why": "url+brand",
    "ios_id": "6779552704",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "18157020880536065",
+   "at": "2026-11-14T22:29:23Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -2319,16 +2336,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctjYuUCHAM",
    "date": "2026-08-31",
    "app": "maskmyfile",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "Mask My File: Remove Your Info Redact documents you share Redact private details on your device before you share. Reopen and verify every ou",
    "why": "url+brand",
    "ios_id": "6792850916",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "18363185062221776",
-   "at": "2026-11-14T10:32:12Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",
@@ -2838,16 +2850,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/Dctjejkkg5g",
    "date": "2026-08-31",
    "app": "mochi",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "Mochi: Cute Checklist Plan your day gently The to-do list you'll actually enjoy. Cozy, cute, and so satisfying to tap complete — free, no ad",
    "why": "url+brand",
    "ios_id": "6785004775",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "17954237868316064",
-   "at": "2026-11-14T10:32:12Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",
@@ -4381,11 +4388,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctjMvrFowV",
    "date": "2026-08-31",
    "app": "lumimissionpro",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "Lumi Mission Planet Pro Kids Routine & Habit Tracker The routine kids actually finish. Turn chores, habits, and bedtime into a game they lov",
    "why": "url+brand",
    "ios_id": "6779745474",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "18128716318874132",
+   "at": "2026-11-14T22:29:23Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",

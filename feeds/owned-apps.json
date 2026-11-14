@@ -286,7 +286,7 @@
       "record_count": 60
     },
     "bn-BD": {
-      "date_modified": "2026-11-14T17:03:51Z",
+      "date_modified": "2026-11-14T21:46:13Z",
       "formats": {
         "atom": {
           "accepted_content_types": [
@@ -296,7 +296,7 @@
           ],
           "content_type": "application/atom+xml",
           "path": "bn-BD/feed.xml",
-          "sha256": "64267d74be95dff0624b0ff33b750309dbd913ece826e8312521117643baed99",
+          "sha256": "c5571fc6a976435da6fa22d7da28800da86e29d21b07177b5bcba1e87ecfaa1a",
           "url": "https://open.cait518.cc/ios-app-guide/bn-BD/feed.xml"
         },
         "json_feed": {
@@ -306,7 +306,7 @@
           ],
           "content_type": "application/feed+json",
           "path": "bn-BD/feed.json",
-          "sha256": "469229166b6b3399ecc7a8d984572398770e4333c4d69e896850668184bd3258",
+          "sha256": "156816171a2a1848e82251e9290c671b54e40f22a60489f9f8deaa654a0cf42a",
           "url": "https://open.cait518.cc/ios-app-guide/bn-BD/feed.json"
         },
         "rss": {
@@ -317,7 +317,7 @@
           ],
           "content_type": "application/rss+xml",
           "path": "bn-BD/rss.xml",
-          "sha256": "44be24689ef80b148e8504fae44d240aec8c8f4e70edad51bd9e71ebc4ff384a",
+          "sha256": "54cb7df4cecdebde493ddc8a01629466e15fd43ec6c2950e5315090bf58e8ad3",
           "url": "https://open.cait518.cc/ios-app-guide/bn-BD/rss.xml"
         }
       },
@@ -2246,7 +2246,7 @@
       "record_count": 60
     }
   },
-  "generation_digest": "7075e1c74ccb6d1fe72d03d8a30bdaaaa1eb87af30ef2294ddb90c074f907ead",
+  "generation_digest": "63868542e24c8c37dedd2062eac33559219728abcb9a8a2401fbfdb722e52123",
   "locale_count": 50,
   "notification_feed_count": 147,
   "purchase_models": {
@@ -2259,7 +2259,7 @@
   "site": "https://open.cait518.cc/ios-app-guide",
   "sitemap_sha256": "2f404e89139f4631ac5246a5735e721613e284c9af76620bd85d546cf806d055",
   "source": {
-    "catalog_content_digest": "2c2b3c4d1d3fe2fcd25027d73565e1b20acd5c9b0b72e7594191713f9e466e11",
+    "catalog_content_digest": "40a1a9c00c85a12119dbaac46f5c27e3d2a27495bccab59729c4f5cd0572636b",
     "roster_digest": "151b01fd2464a3f08cccb53f5250e72f9f2e0412099cee732d39496fa3f97637",
     "source_files": {
       "../social/videogen/registry.py": "fa574d5e16655040f5d61ddf0ffc8b95e5d578b4fc6a5d66f2bc092159813b66",

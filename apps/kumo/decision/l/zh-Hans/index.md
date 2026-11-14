@@ -2,7 +2,7 @@
 title: "Kumo 体重记录・减重打卡・轻断食计时器 — 减脂日记・喝水蛋白质・腰围体脂・习惯养成・可爱云朵 | iOS App"
 lang: "zh-Hans"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/kumo/decision/l/zh-Hans/index.html"
-modified: "2026-11-13"
+modified: "2026-11-14"
 app_store_id: "6830824515"
 verified_live: true
 purchase_model: "neutral"

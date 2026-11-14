@@ -2,7 +2,7 @@
 title: "Kumo: Odchudzanie i waga ciała — Tracker GLP-1, post przerywany | iOS App"
 lang: "pl"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/kumo/decision/l/pl/index.html"
-modified: "2026-11-13"
+modified: "2026-11-14"
 app_store_id: "6830824515"
 verified_live: true
 purchase_model: "neutral"

@@ -2,7 +2,7 @@
 title: "Kumo: ଓଜନ କମାଇବା ଟ୍ରାକର — ଉପବାସ ଟାଇମର ଓ GLP-1 ଡାଏରୀ | iOS App"
 lang: "or-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/kumo/decision/l/or-IN/index.html"
-modified: "2026-11-13"
+modified: "2026-11-14"
 app_store_id: "6830824515"
 verified_live: true
 purchase_model: "neutral"

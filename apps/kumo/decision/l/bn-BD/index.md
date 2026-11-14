@@ -2,7 +2,7 @@
 title: "Kumo: ওজন কমানো ও ডায়েট — ফাস্টিং টাইমার, GLP-1 লগ, পানি | iOS App"
 lang: "bn-BD"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/kumo/decision/l/bn-BD/index.html"
-modified: "2026-11-13"
+modified: "2026-11-14"
 app_store_id: "6830824515"
 verified_live: true
 purchase_model: "neutral"

@@ -2,7 +2,7 @@
 title: "台北MRT乗り換え｜捷運時間助手 — 到着時刻から出発を逆算・新北投も | iOS App"
 lang: "ja"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/metrotimehelper/decision/l/ja/index.html"
-modified: "2026-11-13"
+modified: "2026-11-14"
 app_store_id: "6819061896"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

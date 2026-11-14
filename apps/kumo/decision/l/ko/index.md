@@ -2,7 +2,7 @@
 title: "Kumo 몸무게·GLP-1 주사 기록·간헐적 단식 — 귀여운 구름과 하루 10초 체중 관리·다이어트 일기 | iOS App"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/kumo/decision/l/ko/index.html"
-modified: "2026-11-13"
+modified: "2026-11-14"
 app_store_id: "6830824515"
 verified_live: true
 purchase_model: "neutral"

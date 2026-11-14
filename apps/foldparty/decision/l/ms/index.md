@@ -2,7 +2,7 @@
 title: "Meow Party: Game Kucing Berdua — 200 Game Meriah di Skrin Lipat | iOS App"
 lang: "ms"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/foldparty/decision/l/ms/index.html"
-modified: "2026-11-13"
+modified: "2026-11-14"
 app_store_id: "6829184924"
 verified_live: true
 purchase_model: "paid_upfront"

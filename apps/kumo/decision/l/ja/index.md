@@ -2,7 +2,7 @@
 title: "Kumo 体重記録・GLP-1 注射記録・断食タイマー — かわいい雲と1日10秒、ダイエット管理を習慣に | iOS App"
 lang: "ja"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/kumo/decision/l/ja/index.html"
-modified: "2026-11-13"
+modified: "2026-11-14"
 app_store_id: "6830824515"
 verified_live: true
 purchase_model: "neutral"

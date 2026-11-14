@@ -2,7 +2,7 @@
 title: "Kumo 體重紀錄・減重日記・GLP-1 注射追蹤 — 168斷食・喝水蛋白質・腰圍體脂・打針提醒・可愛雲朵 | iOS App"
 lang: "zh-Hant"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/kumo/decision/l/zh-Hant/index.html"
-modified: "2026-11-13"
+modified: "2026-11-14"
 app_store_id: "6830824515"
 verified_live: true
 purchase_model: "neutral"

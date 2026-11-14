@@ -2,7 +2,7 @@
 title: "TripBee Cute: 여행 일정 다이어리 — 귀여운 다꾸·디데이·함께 계획·정산·준비물 | iOS App"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbeecute/decision/l/ko/index.html"
-modified: "2026-11-13"
+modified: "2026-11-14"
 app_store_id: "6826987407"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

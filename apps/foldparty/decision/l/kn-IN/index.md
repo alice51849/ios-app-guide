@@ -2,7 +2,7 @@
 title: "Meow Party: 200 ಬೆಕ್ಕಿನ ಆಟಗಳು — ಫೋಲ್ಡಬಲ್ ಫೋನ್‌ಗೆ 200 ಆಟಗಳು | iOS App"
 lang: "kn-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/foldparty/decision/l/kn-IN/index.html"
-modified: "2026-11-13"
+modified: "2026-11-14"
 app_store_id: "6829184924"
 verified_live: true
 purchase_model: "paid_upfront"

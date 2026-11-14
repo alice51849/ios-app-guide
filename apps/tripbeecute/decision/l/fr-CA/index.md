@@ -2,7 +2,7 @@
 title: "TripBee Cute: Carnet de voyage — Journal et liste de bagages | iOS App"
 lang: "fr-CA"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbeecute/decision/l/fr-CA/index.html"
-modified: "2026-11-13"
+modified: "2026-11-14"
 app_store_id: "6826987407"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

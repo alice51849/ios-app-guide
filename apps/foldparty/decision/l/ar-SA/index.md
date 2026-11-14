@@ -2,7 +2,7 @@
 title: "Meow Party: العاب شخصين — 200 لعبة قطط لجوال قابل للطي | iOS App"
 lang: "ar-SA"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/foldparty/decision/l/ar-SA/index.html"
-modified: "2026-11-13"
+modified: "2026-11-14"
 app_store_id: "6829184924"
 verified_live: true
 purchase_model: "paid_upfront"

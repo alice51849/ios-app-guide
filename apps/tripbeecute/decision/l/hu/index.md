@@ -2,7 +2,7 @@
 title: "TripBee Cute: Utazási napló — Csomaglista és visszaszámláló | iOS App"
 lang: "hu"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbeecute/decision/l/hu/index.html"
-modified: "2026-11-13"
+modified: "2026-11-14"
 app_store_id: "6826987407"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

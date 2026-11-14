@@ -2,7 +2,7 @@
 title: "TripBee Cute: യാത്രാ ഡയറി — ചിത്രമുള്ള ടൂർ പ്ലാൻ പുസ്തകം | iOS App"
 lang: "ml-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbeecute/decision/l/ml-IN/index.html"
-modified: "2026-11-13"
+modified: "2026-11-14"
 app_store_id: "6826987407"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

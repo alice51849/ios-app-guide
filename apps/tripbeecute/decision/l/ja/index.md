@@ -2,7 +2,7 @@
 title: "TripBee Cute：かわいい旅のしおり — 友達と旅行計画・旅程表を共有、割り勘も。出発カウントダウン | iOS App"
 lang: "ja"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbeecute/decision/l/ja/index.html"
-modified: "2026-11-13"
+modified: "2026-11-14"
 app_store_id: "6826987407"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

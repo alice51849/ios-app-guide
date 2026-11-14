@@ -2,7 +2,7 @@
 title: "Kumo: Giảm cân, ghi cân nặng — Theo dõi nhịn ăn gián đoạn | iOS App"
 lang: "vi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/kumo/decision/l/vi/index.html"
-modified: "2026-11-13"
+modified: "2026-11-14"
 app_store_id: "6830824515"
 verified_live: true
 purchase_model: "neutral"

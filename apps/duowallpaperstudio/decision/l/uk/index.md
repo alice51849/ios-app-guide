@@ -2,7 +2,7 @@
 title: "Foldable Wallpaper Studio — HD шпалери для складаного Duo | iOS App"
 lang: "uk"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/duowallpaperstudio/decision/l/uk/index.html"
-modified: "2026-11-13"
+modified: "2026-11-14"
 app_store_id: "6824946559"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

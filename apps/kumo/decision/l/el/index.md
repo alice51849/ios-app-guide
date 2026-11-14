@@ -2,7 +2,7 @@
 title: "Kumo: Απώλεια Βάρους & Δίαιτα — Νηστεία, ενέσεις GLP-1, νερό | iOS App"
 lang: "el"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/kumo/decision/l/el/index.html"
-modified: "2026-11-13"
+modified: "2026-11-14"
 app_store_id: "6830824515"
 verified_live: true
 purchase_model: "neutral"

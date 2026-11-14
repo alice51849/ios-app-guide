@@ -2,7 +2,7 @@
 title: "Kumo: บันทึกน้ำหนัก ลดน้ำหนัก — IF อดอาหาร · จดการฉีด GLP-1 | iOS App"
 lang: "th"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/kumo/decision/l/th/index.html"
-modified: "2026-11-13"
+modified: "2026-11-14"
 app_store_id: "6830824515"
 verified_live: true
 purchase_model: "neutral"

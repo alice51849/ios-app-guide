@@ -3,7 +3,7 @@
  "source": "AndroidPlay android_live_scan (Play page HTTP 200 + publish LIVE)",
  "source_generated": "2026-11-14T14:38:19+0800",
  "count": 60,
- "content_sha256": "47bc1a6717c0899270e26ed5481e7c6b8676659a0cc8f5ea25980230c6228b45",
+ "content_sha256": "312b05062a0a44aa5ffd33aebedf90adeca6b533cb24c9a5091633a51b4af4d2",
  "apps": {
   "aibriefpack": {
    "ios_app_id": "6791658210",
@@ -63,8 +63,8 @@
      "short_description": "Battery health checker: score, capacity over time, charging habits, time to 80%"
     },
     "zh-TW": {
-     "title": "BattAI: 電池健康分數與電池分析",
-     "short_description": "電池分析與電池健康檢測：健康分數、最大容量趨勢、充電習慣，預估何時降到 80%"
+     "title": "BattAI: 電池健康度・健康分數",
+     "short_description": "查看電池健康度，預估電量用到 80% 的時間"
     }
    }
   },

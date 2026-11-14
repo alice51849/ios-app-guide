@@ -1,12 +1,12 @@
 {
- "generated": "2026-11-14T01:31:23Z",
+ "generated": "2026-11-14T10:34:37Z",
  "mode": "apply",
  "counts": {
   "ok_reply": 66,
   "unknown_app": 48,
-  "ok_backfilled_earlier": 81,
+  "ok_backfilled_earlier": 83,
+  "ok_store_only": 647,
   "backfilled": 2,
-  "ok_store_only": 649,
   "ok_bio_link": 68,
   "ok_caption": 4,
   "taken_down": 4,
@@ -1687,16 +1687,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DcymVn4D6wk",
    "date": "2026-09-02",
    "app": "wordmate",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "3.000 Vokabeln im Kopf – und in den ersten zehn Sekunden trotzdem blockiert. Wordmate einmal im App Store kaufen: Vokabeln in 44 Sprachen, W",
    "why": "url+brand",
    "ios_id": "6789917808",
-   "locale": "other",
-   "own_replies": [],
-   "comment_id": "17927869389204481",
-   "at": "2026-11-14T01:28:42Z",
-   "verified": true,
-   "via": "list"
+   "locale": "other"
   },
   {
    "channel": "threads",
@@ -2324,11 +2319,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctjYuUCHAM",
    "date": "2026-08-31",
    "app": "maskmyfile",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "Mask My File: Remove Your Info Redact documents you share Redact private details on your device before you share. Reopen and verify every ou",
    "why": "url+brand",
    "ios_id": "6792850916",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "18363185062221776",
+   "at": "2026-11-14T10:32:12Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -2838,11 +2838,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/Dctjejkkg5g",
    "date": "2026-08-31",
    "app": "mochi",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "Mochi: Cute Checklist Plan your day gently The to-do list you'll actually enjoy. Cozy, cute, and so satisfying to tap complete — free, no ad",
    "why": "url+brand",
    "ios_id": "6785004775",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "17954237868316064",
+   "at": "2026-11-14T10:32:12Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -4234,16 +4239,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/Dctjjvrj_1Q",
    "date": "2026-08-31",
    "app": "mochidonestamp",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "Mochi DoneStamp: Last Time Remember when you did it Do it, tap it, and we remember when. Track anything from furnace filters to winterizing—",
    "why": "url+brand",
    "ios_id": "6790800323",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "18028956182865878",
-   "at": "2026-11-14T01:28:42Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",

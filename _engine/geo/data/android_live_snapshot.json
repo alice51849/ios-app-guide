@@ -1,9 +1,9 @@
 {
  "schema": "lumi.android-live-snapshot/v1",
  "source": "AndroidPlay android_live_scan (Play page HTTP 200 + publish LIVE)",
- "source_generated": "2026-11-13T09:03:08+0800",
+ "source_generated": "2026-11-14T14:38:19+0800",
  "count": 60,
- "content_sha256": "dc53df66b73c8f794bb8440ad417bc2a5a893a844005d9c77c4ca0fbaca1ea89",
+ "content_sha256": "47bc1a6717c0899270e26ed5481e7c6b8676659a0cc8f5ea25980230c6228b45",
  "apps": {
   "aibriefpack": {
    "ios_app_id": "6791658210",
@@ -672,13 +672,13 @@
   "metrotimehelper": {
    "ios_app_id": "6819061896",
    "ios_name": "Metro Time Helper",
-   "android_folder": "56_MetroTimeHelper",
-   "package": "com.alice51849.MetroTimeHelper",
-   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.MetroTimeHelper",
-   "paid": false,
-   "first_seen": "2026-11-09T23:56:50+0800",
+   "android_folder": "56_MetroTimeHelperPaid",
+   "package": "com.alice51849.metrotimehelper.paid",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.metrotimehelper.paid",
+   "paid": true,
+   "first_seen": "2026-11-11T02:13:13+0800",
    "launch_wave": "new",
-   "match": "bundle_id_exact",
+   "match": "store_title_exact",
    "copy": {
     "en-US": {
      "title": "Metro Time Helper: Taipei MRT",
@@ -1256,13 +1256,6 @@
    }
   }
  },
- "unmapped": [
-  {
-   "folder": "56_MetroTimeHelperPaid",
-   "package": "com.alice51849.metrotimehelper.paid",
-   "reason": "duplicate_ios_key:metrotimehelper",
-   "conflict_with": "56_MetroTimeHelper"
-  }
- ],
+ "unmapped": [],
  "baseline_first_seen": "2026-10-11T14:26:56+0800"
 }

@@ -1,7 +1,7 @@
 {
  "schema": "lumi.social-feed/v1",
  "date": "2026-11-14",
- "generated_at": "2026-11-14T08:06:05Z",
+ "generated_at": "2026-11-14T16:01:49Z",
  "items": {
   "bluesky": [
    {
@@ -141,44 +141,89 @@
    },
    {
     "kind": "clip",
-    "key": "dailymate/en",
-    "locale": "en",
-    "app": "dailymate",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/bue2n2.mp4",
-    "hook": "3 levels in every topic",
-    "name": "DailyMate: Language Phrases",
-    "title": "3 levels in every topic | Learn Spanish, French & More | DailyMate Phrases",
+    "key": "gmoney/id",
+    "locale": "id",
+    "app": "gmoney",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/jgixdt.mp4",
+    "hook": "Lihat ke mana uangmu, per kategori",
+    "name": "G+Money: Catat & atur anggaran",
+    "title": "Lihat ke mana uangmu, per kategori | Catat & atur anggaran | G+Money",
     "tags": [
-     "#LanguagePhrases",
-     "#Conversation",
-     "#Sentences",
-     "#Speak",
-     "#Everyday",
-     "#DailyMatePhrases"
+     "#CatatAturAnggaran",
+     "#Catatan",
+     "#Keuangan",
+     "#Konverter",
+     "#Mata",
+     "#GMoney"
     ],
-    "caption": "3 levels in every topic\n47 languages to learn\nLearn Spanish, French & More\nDailyMate: Language Phrases\nSearch “everyday phrases” on the App Store\nAlso on Google Play\n\n#LanguagePhrases #Conversation #DailyMatePhrases",
-    "button": "Get it on the App Store",
+    "caption": "Lihat ke mana uangmu, per kategori\nKonversi & catat, tanpa sinyal\nG+Money: Catat & atur anggaran\nCari “G+Money” di App Store\nJuga ada di Google Play\n\n#CatatAturAnggaran #Catatan #GMoney",
+    "button": "Unduh di App Store",
     "variant": "b",
-    "alt": "DailyMate: Language Phrases — 3 levels in every topic — 47 languages to learn — Learn Spanish, French & More",
-    "store": "https://apps.apple.com/us/app/id6790418321?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate",
+    "alt": "G+Money: Catat & atur anggaran — Lihat ke mana uangmu, per kategori — Konversi & catat, tanpa sinyal",
+    "store": "https://apps.apple.com/id/app/id6755782939?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
     "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6790418321?action=write-review"
+     "label": "Sudah memakai aplikasi ini? Beri nilai atau ulasan di App Store",
+     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
     },
     "keywords": [
-     "conversation",
-     "sentences",
-     "speak",
-     "everyday",
-     "japanese",
-     "korean"
+     "catatan",
+     "keuangan",
+     "konverter",
+     "mata",
+     "uang",
+     "pencatat"
     ],
-    "keyline": "Learn Spanish, French & More",
+    "keyline": "Catat & atur anggaran",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "06a3d61baa456520",
+     "board": "987a384c8c1d4d89",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "slot": 15
+   },
+   {
+    "kind": "clip",
+    "key": "wifiaidlite/en",
+    "locale": "en",
+    "app": "wifiaidlite",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/hj5ucn.mp4",
+    "hook": "Wi-Fi, DNS or internet?",
+    "name": "WiFi Aid Lite: Network Check",
+    "title": "Wi-Fi, DNS or internet? | Internet Down? Find the Cause | WiFi Aid Lite",
+    "tags": [
+     "#NetworkCheck",
+     "#Ping",
+     "#Slow",
+     "#Outage",
+     "#Troubleshoot",
+     "#WiFiAidLite"
+    ],
+    "caption": "Wi-Fi, DNS or internet?\n…or just one site?\nInternet Down? Find the Cause\nWiFi Aid Lite: Network Check\nSearch “WiFi Aid Lite” on the App Store\nAlso on Google Play\n\n#NetworkCheck #Ping #WiFiAidLite",
+    "button": "Get it on the App Store",
+    "variant": "b",
+    "alt": "WiFi Aid Lite: Network Check — Wi-Fi, DNS or internet? — …or just one site? — Internet Down? Find the Cause",
+    "store": "https://apps.apple.com/us/app/id6793414462?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.WiFiAidLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaidlite",
+    "review": {
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6793414462?action=write-review"
+    },
+    "keywords": [
+     "ping",
+     "slow",
+     "outage",
+     "troubleshoot",
+     "connection",
+     "test"
+    ],
+    "keyline": "Internet Down? Find the Cause",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "fed6529bb6230b02",
      "real_recording": false,
      "rules": "2026-10-18"
     },
@@ -228,6 +273,27 @@
      "rules": "2026-10-18"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "card/suneung2027/2026-11-14",
+    "locale": "ko",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/countdown-cards/card-20261114.jpg",
+    "caption": "2027학년도 수능 D-5\n끝까지 페이스 유지\n\nApp Store · Google Play에서 'CountDaysNow' 검색\n\n#디데이카운터 #디데이 #카운트다운",
+    "title": "2027학년도 수능 D-5",
+    "alt": "CountDaysNow — 2027학년도 수능 D-5 — 끝까지 페이스 유지 — App Store · Google Play에서 'CountDaysNow' 검색 — 디데이 카운터",
+    "name": "CountDaysNow",
+    "hook": "2027학년도 수능 D-5",
+    "tags": [
+     "#디데이카운터",
+     "#디데이",
+     "#카운트다운",
+     "#날짜계산",
+     "#기념일"
+    ],
+    "button": "App Store에서 받기",
+    "store": "https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow"
    },
    {
     "kind": "card",
@@ -2008,44 +2074,89 @@
    },
    {
     "kind": "clip",
-    "key": "dailymate/en",
-    "locale": "en",
-    "app": "dailymate",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/bue2n2.mp4",
-    "hook": "3 levels in every topic",
-    "name": "DailyMate: Language Phrases",
-    "title": "3 levels in every topic | Learn Spanish, French & More | DailyMate Phrases",
+    "key": "gmoney/id",
+    "locale": "id",
+    "app": "gmoney",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/jgixdt.mp4",
+    "hook": "Lihat ke mana uangmu, per kategori",
+    "name": "G+Money: Catat & atur anggaran",
+    "title": "Lihat ke mana uangmu, per kategori | Catat & atur anggaran | G+Money",
     "tags": [
-     "#LanguagePhrases",
-     "#Conversation",
-     "#Sentences",
-     "#Speak",
-     "#Everyday",
-     "#DailyMatePhrases"
+     "#CatatAturAnggaran",
+     "#Catatan",
+     "#Keuangan",
+     "#Konverter",
+     "#Mata",
+     "#GMoney"
     ],
-    "caption": "3 levels in every topic\n47 languages to learn\nLearn Spanish, French & More\nDailyMate: Language Phrases\nSearch “everyday phrases” on the App Store\nAlso on Google Play\n\n#LanguagePhrases #Conversation #Sentences #Speak #DailyMatePhrases",
-    "button": "Get it on the App Store",
+    "caption": "Lihat ke mana uangmu, per kategori\nKonversi & catat, tanpa sinyal\nG+Money: Catat & atur anggaran\nCari “G+Money” di App Store\nJuga ada di Google Play\n\n#CatatAturAnggaran #Catatan #Keuangan #Konverter #GMoney",
+    "button": "Unduh di App Store",
     "variant": "b",
-    "alt": "DailyMate: Language Phrases — 3 levels in every topic — 47 languages to learn — Learn Spanish, French & More",
-    "store": "https://apps.apple.com/us/app/id6790418321?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate",
+    "alt": "G+Money: Catat & atur anggaran — Lihat ke mana uangmu, per kategori — Konversi & catat, tanpa sinyal",
+    "store": "https://apps.apple.com/id/app/id6755782939?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
     "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6790418321?action=write-review"
+     "label": "Sudah memakai aplikasi ini? Beri nilai atau ulasan di App Store",
+     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
     },
     "keywords": [
-     "conversation",
-     "sentences",
-     "speak",
-     "everyday",
-     "japanese",
-     "korean"
+     "catatan",
+     "keuangan",
+     "konverter",
+     "mata",
+     "uang",
+     "pencatat"
     ],
-    "keyline": "Learn Spanish, French & More",
+    "keyline": "Catat & atur anggaran",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "06a3d61baa456520",
+     "board": "987a384c8c1d4d89",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "slot": 15
+   },
+   {
+    "kind": "clip",
+    "key": "wifiaidlite/en",
+    "locale": "en",
+    "app": "wifiaidlite",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/hj5ucn.mp4",
+    "hook": "Wi-Fi, DNS or internet?",
+    "name": "WiFi Aid Lite: Network Check",
+    "title": "Wi-Fi, DNS or internet? | Internet Down? Find the Cause | WiFi Aid Lite",
+    "tags": [
+     "#NetworkCheck",
+     "#Ping",
+     "#Slow",
+     "#Outage",
+     "#Troubleshoot",
+     "#WiFiAidLite"
+    ],
+    "caption": "Wi-Fi, DNS or internet?\n…or just one site?\nInternet Down? Find the Cause\nWiFi Aid Lite: Network Check\nSearch “WiFi Aid Lite” on the App Store\nAlso on Google Play\n\n#NetworkCheck #Ping #Slow #Outage #WiFiAidLite",
+    "button": "Get it on the App Store",
+    "variant": "b",
+    "alt": "WiFi Aid Lite: Network Check — Wi-Fi, DNS or internet? — …or just one site? — Internet Down? Find the Cause",
+    "store": "https://apps.apple.com/us/app/id6793414462?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.WiFiAidLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaidlite",
+    "review": {
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6793414462?action=write-review"
+    },
+    "keywords": [
+     "ping",
+     "slow",
+     "outage",
+     "troubleshoot",
+     "connection",
+     "test"
+    ],
+    "keyline": "Internet Down? Find the Cause",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "fed6529bb6230b02",
      "real_recording": false,
      "rules": "2026-10-18"
     },
@@ -2095,6 +2206,27 @@
      "rules": "2026-10-18"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "card/suneung2027/2026-11-14",
+    "locale": "ko",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/countdown-cards/card-20261114.jpg",
+    "caption": "2027학년도 수능 D-5\n끝까지 페이스 유지\n\nApp Store · Google Play에서 'CountDaysNow' 검색\n\n#디데이카운터 #디데이 #카운트다운 #날짜계산 #기념일",
+    "title": "2027학년도 수능 D-5",
+    "alt": "CountDaysNow — 2027학년도 수능 D-5 — 끝까지 페이스 유지 — App Store · Google Play에서 'CountDaysNow' 검색 — 디데이 카운터",
+    "name": "CountDaysNow",
+    "hook": "2027학년도 수능 D-5",
+    "tags": [
+     "#디데이카운터",
+     "#디데이",
+     "#카운트다운",
+     "#날짜계산",
+     "#기념일"
+    ],
+    "button": "App Store에서 받기",
+    "store": "https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow"
    },
    {
     "kind": "card",
@@ -2305,60 +2437,120 @@
    },
    {
     "kind": "clip",
-    "key": "dailymate/en",
-    "locale": "en",
-    "app": "dailymate",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/bue2n2.mp4",
-    "hook": "3 levels in every topic",
-    "name": "DailyMate: Language Phrases",
-    "title": "3 levels in every topic | Learn Spanish, French & More | DailyMate Phrases",
+    "key": "gmoney/id",
+    "locale": "id",
+    "app": "gmoney",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/jgixdt.mp4",
+    "hook": "Lihat ke mana uangmu, per kategori",
+    "name": "G+Money: Catat & atur anggaran",
+    "title": "Lihat ke mana uangmu, per kategori | Catat & atur anggaran | G+Money",
     "tags": [
-     "#LanguagePhrases",
-     "#Conversation",
-     "#Sentences",
-     "#Speak",
-     "#Everyday",
-     "#DailyMatePhrases"
+     "#CatatAturAnggaran",
+     "#Catatan",
+     "#Keuangan",
+     "#Konverter",
+     "#Mata",
+     "#GMoney"
     ],
-    "caption": "3 levels in every topic\n47 languages to learn\nLearn Spanish, French & More\nDailyMate: Language Phrases\nSearch “everyday phrases” on the App Store\nAlso on Google Play\n\n#LanguagePhrases #Conversation #Sentences #Speak #DailyMatePhrases",
-    "button": "Get it on the App Store",
+    "caption": "Lihat ke mana uangmu, per kategori\nKonversi & catat, tanpa sinyal\nG+Money: Catat & atur anggaran\nCari “G+Money” di App Store\nJuga ada di Google Play\n\n#CatatAturAnggaran #Catatan #Keuangan #Konverter #GMoney",
+    "button": "Unduh di App Store",
     "variant": "b",
-    "alt": "DailyMate: Language Phrases — 3 levels in every topic — 47 languages to learn — Learn Spanish, French & More",
-    "store": "https://apps.apple.com/us/app/id6790418321?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate",
+    "alt": "G+Money: Catat & atur anggaran — Lihat ke mana uangmu, per kategori — Konversi & catat, tanpa sinyal",
+    "store": "https://apps.apple.com/id/app/id6755782939?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
     "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6790418321?action=write-review"
+     "label": "Sudah memakai aplikasi ini? Beri nilai atau ulasan di App Store",
+     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
     },
     "keywords": [
-     "conversation",
-     "sentences",
-     "speak",
-     "everyday",
-     "japanese",
-     "korean"
+     "catatan",
+     "keuangan",
+     "konverter",
+     "mata",
+     "uang",
+     "pencatat"
     ],
-    "keyline": "Learn Spanish, French & More",
+    "keyline": "Catat & atur anggaran",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "06a3d61baa456520",
+     "board": "987a384c8c1d4d89",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "youtube": {
-     "title": "3 levels in every topic | DailyMate Phrases #Shorts",
-     "description": "3 levels in every topic\n47 languages to learn\nLearn Spanish, French & More\n\nDailyMate: Language Phrases\nApp Store: https://apps.apple.com/us/app/id6790418321?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate\nAlready using this app? Rate or review it on the App Store\nhttps://apps.apple.com/app/id6790418321?action=write-review\n\nconversation · sentences · speak · everyday · japanese · korean\n\n#Shorts #LanguagePhrases #DailyMatePhrases",
+     "title": "Lihat ke mana uangmu, per kategori | G+Money #Shorts",
+     "description": "Lihat ke mana uangmu, per kategori\nKonversi & catat, tanpa sinyal\nCatat & atur anggaran\n\nG+Money: Catat & atur anggaran\nApp Store: https://apps.apple.com/id/app/id6755782939?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney\nSudah memakai aplikasi ini? Beri nilai atau ulasan di App Store\nhttps://apps.apple.com/app/id6755782939?action=write-review\n\ncatatan · keuangan · konverter · mata · uang · pencatat\n\n#Shorts #CatatAturAnggaran #GMoney",
      "tags": [
-      "conversation",
-      "sentences",
-      "speak",
-      "everyday",
-      "japanese",
-      "korean",
-      "LanguagePhrases",
-      "DailyMatePhrases",
-      "DailyMate Phrases"
+      "catatan",
+      "keuangan",
+      "konverter",
+      "mata",
+      "uang",
+      "pencatat",
+      "CatatAturAnggaran",
+      "GMoney",
+      "G+Money"
+     ]
+    },
+    "slot": 15
+   },
+   {
+    "kind": "clip",
+    "key": "wifiaidlite/en",
+    "locale": "en",
+    "app": "wifiaidlite",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/hj5ucn.mp4",
+    "hook": "Wi-Fi, DNS or internet?",
+    "name": "WiFi Aid Lite: Network Check",
+    "title": "Wi-Fi, DNS or internet? | Internet Down? Find the Cause | WiFi Aid Lite",
+    "tags": [
+     "#NetworkCheck",
+     "#Ping",
+     "#Slow",
+     "#Outage",
+     "#Troubleshoot",
+     "#WiFiAidLite"
+    ],
+    "caption": "Wi-Fi, DNS or internet?\n…or just one site?\nInternet Down? Find the Cause\nWiFi Aid Lite: Network Check\nSearch “WiFi Aid Lite” on the App Store\nAlso on Google Play\n\n#NetworkCheck #Ping #Slow #Outage #WiFiAidLite",
+    "button": "Get it on the App Store",
+    "variant": "b",
+    "alt": "WiFi Aid Lite: Network Check — Wi-Fi, DNS or internet? — …or just one site? — Internet Down? Find the Cause",
+    "store": "https://apps.apple.com/us/app/id6793414462?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.WiFiAidLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaidlite",
+    "review": {
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6793414462?action=write-review"
+    },
+    "keywords": [
+     "ping",
+     "slow",
+     "outage",
+     "troubleshoot",
+     "connection",
+     "test"
+    ],
+    "keyline": "Internet Down? Find the Cause",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "fed6529bb6230b02",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "Wi-Fi, DNS or internet? | WiFi Aid Lite #Shorts",
+     "description": "Wi-Fi, DNS or internet?\n…or just one site?\nInternet Down? Find the Cause\n\nWiFi Aid Lite: Network Check\nApp Store: https://apps.apple.com/us/app/id6793414462?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.WiFiAidLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaidlite\nAlready using this app? Rate or review it on the App Store\nhttps://apps.apple.com/app/id6793414462?action=write-review\n\nping · slow · outage · troubleshoot · connection · test\n\n#Shorts #NetworkCheck #WiFiAidLite",
+     "tags": [
+      "ping",
+      "slow",
+      "outage",
+      "troubleshoot",
+      "connection",
+      "test",
+      "NetworkCheck",
+      "WiFiAidLite",
+      "WiFi Aid Lite"
      ]
     },
     "slot": 15
@@ -2574,50 +2766,99 @@
    },
    {
     "kind": "clip",
-    "key": "dailymate/en",
-    "locale": "en",
-    "app": "dailymate",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/bue2n2.mp4",
-    "hook": "3 levels in every topic",
-    "name": "DailyMate: Language Phrases",
-    "title": "3 levels in every topic | Learn Spanish, French & More | DailyMate Phrases",
+    "key": "gmoney/id",
+    "locale": "id",
+    "app": "gmoney",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/jgixdt.mp4",
+    "hook": "Lihat ke mana uangmu, per kategori",
+    "name": "G+Money: Catat & atur anggaran",
+    "title": "Lihat ke mana uangmu, per kategori | Catat & atur anggaran | G+Money",
     "tags": [
-     "#LanguagePhrases",
-     "#Conversation",
-     "#Sentences",
-     "#Speak",
-     "#Everyday",
-     "#DailyMatePhrases"
+     "#CatatAturAnggaran",
+     "#Catatan",
+     "#Keuangan",
+     "#Konverter",
+     "#Mata",
+     "#GMoney"
     ],
-    "caption": "3 levels in every topic\n47 languages to learn\nLearn Spanish, French & More\nDailyMate: Language Phrases\nSearch “everyday phrases” on the App Store\nAlso on Google Play\n\n#LanguagePhrases #Conversation #Sentences #Speak #DailyMatePhrases",
-    "button": "Get it on the App Store",
+    "caption": "Lihat ke mana uangmu, per kategori\nKonversi & catat, tanpa sinyal\nG+Money: Catat & atur anggaran\nCari “G+Money” di App Store\nJuga ada di Google Play\n\n#CatatAturAnggaran #Catatan #Keuangan #Konverter #GMoney",
+    "button": "Unduh di App Store",
     "variant": "b",
-    "alt": "DailyMate: Language Phrases — 3 levels in every topic — 47 languages to learn — Learn Spanish, French & More",
-    "store": "https://apps.apple.com/us/app/id6790418321?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate",
+    "alt": "G+Money: Catat & atur anggaran — Lihat ke mana uangmu, per kategori — Konversi & catat, tanpa sinyal",
+    "store": "https://apps.apple.com/id/app/id6755782939?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
     "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6790418321?action=write-review"
+     "label": "Sudah memakai aplikasi ini? Beri nilai atau ulasan di App Store",
+     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
     },
     "keywords": [
-     "conversation",
-     "sentences",
-     "speak",
-     "everyday",
-     "japanese",
-     "korean"
+     "catatan",
+     "keuangan",
+     "konverter",
+     "mata",
+     "uang",
+     "pencatat"
     ],
-    "keyline": "Learn Spanish, French & More",
+    "keyline": "Catat & atur anggaran",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "06a3d61baa456520",
+     "board": "987a384c8c1d4d89",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "3 levels in every topic\n47 languages to learn\nLearn Spanish, French & More\nDailyMate: Language Phrases\nSearch “everyday phrases” on the App Store\nAlso on Google Play\n\n#LanguagePhrases #Conversation #Sentences #Speak #DailyMatePhrases\n\nGet it on the App Store: https://apps.apple.com/us/app/id6790418321?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate\nLite: https://apps.apple.com/app/id6794725568?ct=social_lite\nLite Google Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite&referrer=utm_source%3Dsocial_lite%26utm_campaign%3Ddailymatelite",
-     "link": "https://apps.apple.com/us/app/id6790418321?pt=118326163&ct=social&mt=8"
+     "description": "Lihat ke mana uangmu, per kategori\nKonversi & catat, tanpa sinyal\nG+Money: Catat & atur anggaran\nCari “G+Money” di App Store\nJuga ada di Google Play\n\n#CatatAturAnggaran #Catatan #Keuangan #Konverter #GMoney\n\nUnduh di App Store: https://apps.apple.com/id/app/id6755782939?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
+     "link": "https://apps.apple.com/id/app/id6755782939?pt=118326163&ct=social&mt=8"
+    },
+    "slot": 15
+   },
+   {
+    "kind": "clip",
+    "key": "wifiaidlite/en",
+    "locale": "en",
+    "app": "wifiaidlite",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/hj5ucn.mp4",
+    "hook": "Wi-Fi, DNS or internet?",
+    "name": "WiFi Aid Lite: Network Check",
+    "title": "Wi-Fi, DNS or internet? | Internet Down? Find the Cause | WiFi Aid Lite",
+    "tags": [
+     "#NetworkCheck",
+     "#Ping",
+     "#Slow",
+     "#Outage",
+     "#Troubleshoot",
+     "#WiFiAidLite"
+    ],
+    "caption": "Wi-Fi, DNS or internet?\n…or just one site?\nInternet Down? Find the Cause\nWiFi Aid Lite: Network Check\nSearch “WiFi Aid Lite” on the App Store\nAlso on Google Play\n\n#NetworkCheck #Ping #Slow #Outage #WiFiAidLite",
+    "button": "Get it on the App Store",
+    "variant": "b",
+    "alt": "WiFi Aid Lite: Network Check — Wi-Fi, DNS or internet? — …or just one site? — Internet Down? Find the Cause",
+    "store": "https://apps.apple.com/us/app/id6793414462?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.WiFiAidLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaidlite",
+    "review": {
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6793414462?action=write-review"
+    },
+    "keywords": [
+     "ping",
+     "slow",
+     "outage",
+     "troubleshoot",
+     "connection",
+     "test"
+    ],
+    "keyline": "Internet Down? Find the Cause",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "fed6529bb6230b02",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "Wi-Fi, DNS or internet?\n…or just one site?\nInternet Down? Find the Cause\nWiFi Aid Lite: Network Check\nSearch “WiFi Aid Lite” on the App Store\nAlso on Google Play\n\n#NetworkCheck #Ping #Slow #Outage #WiFiAidLite\n\nGet it on the App Store: https://apps.apple.com/us/app/id6793414462?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.WiFiAidLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaidlite",
+     "link": "https://apps.apple.com/us/app/id6793414462?pt=118326163&ct=social&mt=8"
     },
     "slot": 15
    },
@@ -2669,6 +2910,31 @@
      "link": "https://apps.apple.com/us/app/id6780107485?pt=118326163&ct=social&mt=8"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "card/suneung2027/2026-11-14",
+    "locale": "ko",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/countdown-cards/card-20261114.jpg",
+    "caption": "2027학년도 수능 D-5\n끝까지 페이스 유지\n\nApp Store · Google Play에서 'CountDaysNow' 검색\n\n#디데이카운터 #디데이 #카운트다운 #날짜계산 #기념일",
+    "title": "2027학년도 수능 D-5",
+    "alt": "CountDaysNow — 2027학년도 수능 D-5 — 끝까지 페이스 유지 — App Store · Google Play에서 'CountDaysNow' 검색 — 디데이 카운터",
+    "name": "CountDaysNow",
+    "hook": "2027학년도 수능 D-5",
+    "tags": [
+     "#디데이카운터",
+     "#디데이",
+     "#카운트다운",
+     "#날짜계산",
+     "#기념일"
+    ],
+    "button": "App Store에서 받기",
+    "store": "https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
+    "pinterest": {
+     "description": "2027학년도 수능 D-5\n끝까지 페이스 유지\n\nApp Store · Google Play에서 'CountDaysNow' 검색\n\n#디데이카운터 #디데이 #카운트다운 #날짜계산 #기념일\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
+     "link": "https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8"
+    }
    },
    {
     "kind": "card",
@@ -6633,49 +6899,97 @@
    },
    {
     "kind": "clip",
-    "key": "dailymate/en",
-    "locale": "en",
-    "app": "dailymate",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/bue2n2.mp4",
-    "hook": "3 levels in every topic",
-    "name": "DailyMate: Language Phrases",
-    "title": "3 levels in every topic | Learn Spanish, French & More | DailyMate Phrases",
+    "key": "gmoney/id",
+    "locale": "id",
+    "app": "gmoney",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/jgixdt.mp4",
+    "hook": "Lihat ke mana uangmu, per kategori",
+    "name": "G+Money: Catat & atur anggaran",
+    "title": "Lihat ke mana uangmu, per kategori | Catat & atur anggaran | G+Money",
     "tags": [
-     "#LanguagePhrases",
-     "#Conversation",
-     "#Sentences",
-     "#Speak",
-     "#Everyday",
-     "#DailyMatePhrases"
+     "#CatatAturAnggaran",
+     "#Catatan",
+     "#Keuangan",
+     "#Konverter",
+     "#Mata",
+     "#GMoney"
     ],
-    "caption": "3 levels in every topic\n47 languages to learn\nLearn Spanish, French & More\nDailyMate: Language Phrases\nSearch “everyday phrases” on the App Store\nAlso on Google Play\n\n#LanguagePhrases #Conversation #Sentences #Speak #DailyMatePhrases",
-    "button": "Get it on the App Store",
+    "caption": "Lihat ke mana uangmu, per kategori\nKonversi & catat, tanpa sinyal\nG+Money: Catat & atur anggaran\nCari “G+Money” di App Store\nJuga ada di Google Play\n\n#CatatAturAnggaran #Catatan #Keuangan #Konverter #GMoney",
+    "button": "Unduh di App Store",
     "variant": "b",
-    "alt": "DailyMate: Language Phrases — 3 levels in every topic — 47 languages to learn — Learn Spanish, French & More",
-    "store": "https://apps.apple.com/us/app/id6790418321?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate",
+    "alt": "G+Money: Catat & atur anggaran — Lihat ke mana uangmu, per kategori — Konversi & catat, tanpa sinyal",
+    "store": "https://apps.apple.com/id/app/id6755782939?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
     "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6790418321?action=write-review"
+     "label": "Sudah memakai aplikasi ini? Beri nilai atau ulasan di App Store",
+     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
     },
     "keywords": [
-     "conversation",
-     "sentences",
-     "speak",
-     "everyday",
-     "japanese",
-     "korean"
+     "catatan",
+     "keuangan",
+     "konverter",
+     "mata",
+     "uang",
+     "pencatat"
     ],
-    "keyline": "Learn Spanish, French & More",
+    "keyline": "Catat & atur anggaran",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "06a3d61baa456520",
+     "board": "987a384c8c1d4d89",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "3 levels in every topic\n47 languages to learn\nLearn Spanish, French & More\nDailyMate: Language Phrases\nSearch “everyday phrases” on the App Store\nAlso on Google Play\n\n#LanguagePhrases #Conversation #Sentences #Speak #DailyMatePhrases\n\nGet it on the App Store: https://apps.apple.com/us/app/id6790418321?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate\nLite: https://apps.apple.com/app/id6794725568?ct=social_lite\nLite Google Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite&referrer=utm_source%3Dsocial_lite%26utm_campaign%3Ddailymatelite"
+     "caption": "Lihat ke mana uangmu, per kategori\nKonversi & catat, tanpa sinyal\nG+Money: Catat & atur anggaran\nCari “G+Money” di App Store\nJuga ada di Google Play\n\n#CatatAturAnggaran #Catatan #Keuangan #Konverter #GMoney\n\nUnduh di App Store: https://apps.apple.com/id/app/id6755782939?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney"
+    },
+    "slot": 15
+   },
+   {
+    "kind": "clip",
+    "key": "wifiaidlite/en",
+    "locale": "en",
+    "app": "wifiaidlite",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/hj5ucn.mp4",
+    "hook": "Wi-Fi, DNS or internet?",
+    "name": "WiFi Aid Lite: Network Check",
+    "title": "Wi-Fi, DNS or internet? | Internet Down? Find the Cause | WiFi Aid Lite",
+    "tags": [
+     "#NetworkCheck",
+     "#Ping",
+     "#Slow",
+     "#Outage",
+     "#Troubleshoot",
+     "#WiFiAidLite"
+    ],
+    "caption": "Wi-Fi, DNS or internet?\n…or just one site?\nInternet Down? Find the Cause\nWiFi Aid Lite: Network Check\nSearch “WiFi Aid Lite” on the App Store\nAlso on Google Play\n\n#NetworkCheck #Ping #Slow #Outage #WiFiAidLite",
+    "button": "Get it on the App Store",
+    "variant": "b",
+    "alt": "WiFi Aid Lite: Network Check — Wi-Fi, DNS or internet? — …or just one site? — Internet Down? Find the Cause",
+    "store": "https://apps.apple.com/us/app/id6793414462?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.WiFiAidLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaidlite",
+    "review": {
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6793414462?action=write-review"
+    },
+    "keywords": [
+     "ping",
+     "slow",
+     "outage",
+     "troubleshoot",
+     "connection",
+     "test"
+    ],
+    "keyline": "Internet Down? Find the Cause",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "fed6529bb6230b02",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "Wi-Fi, DNS or internet?\n…or just one site?\nInternet Down? Find the Cause\nWiFi Aid Lite: Network Check\nSearch “WiFi Aid Lite” on the App Store\nAlso on Google Play\n\n#NetworkCheck #Ping #Slow #Outage #WiFiAidLite\n\nGet it on the App Store: https://apps.apple.com/us/app/id6793414462?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.WiFiAidLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaidlite"
     },
     "slot": 15
    },

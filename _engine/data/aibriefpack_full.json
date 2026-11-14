@@ -230,7 +230,7 @@
   "privacyPolicyUrl": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/privacy.html?lang=it"
  },
  "ja": {
-  "name": "AI Brief：資料から AI プロンプト",
+  "name": "AI Brief：資料から AI プロンプト作成",
   "subtitle": "ファイル・PDF・スクショの要約を作成",
   "description": "iPhone Duoに最適化。最新の開発キットでビルドしており、内側のディスプレイ全体に表示され、折りたたんでも開いても自動でレイアウトが調整されます。\n\nスクリーンショット、PDF、ファイル、メモを、目的・事実・出典が整理された1つのAIプロンプトにまとめます。\n事実ごとに出典と信頼度が残るので、AIに渡す前に確認できます。ワンタップでコピーして、どのAIチャットにも貼り付けられます。\n文字認識と個人情報の検出は端末上で行われ、残す・置き換える・削除するかは自分で決められます。\n\n完全なコンテキストを届ける\n• スクリーンショット、PDF、ファイル、コピーしたテキスト、メモ、リンクを追加できます。最終的な要約に残す内容は自由に選べます。\n• OCR、PDF 読み取り、重複チェック、事実に基づく抽出、プライバシー検出はすべて Apple のフレームワークをローカルで利用します。\n• 複数のソースを1つの整理された要約にまとめられます。\n\nAI がそれらを見る前に事実を確認する\n• すべての事実にソースと信頼度が保持されます。コンテキストが必要な項目を修正してください。\n• 事実、矛盾、および未解決の質問を検出する\n\nプライバシー保護\n• 検出した詳細は自動的に削除されません。エクスポート前に各項目を選択、置換、または削除してください。\n• AI Brief は匿名性を保証しません。\n• 置換と削除はエクスポート時に適用されます。\n\nあらゆる AI アシスタント向けのクリーンなコンテキスト\n• 構造化見出しとソース準備フォーマット\n• コンテキストは一度作成すれば、いつでも再利用できます。\n• 完成した要約はワンタップでコピーして、どの AI チャットにも貼り付け可能\n• バージョン履歴で過去の下書きをいつでも見返せる\n• 技術的な問題、サポートへの問い合わせ、資料の分析、学習教材、会議のフォローアップなどのテンプレート\n\nコンテキストはプライベートに保たれます\n• AI Brief は第三者広告、トラッキング、分析、コンテンツテレメトリを含みません。\n• AIサービスに送信する前に概要を確認してください。\n\nAI Brief Pro（App内課金）\n購入しなくても、1つの要約に最大5件のソースを追加でき、要約1件をコピー・共有・保存できます。App内での1回の購入で、すべての要約をコピー・共有・保存できるようになり、ソースの上限が要約ごとに50件に増え、さらに多くのテンプレート、長いコンテキストに対応した詳細な要約、高度な個人情報の置き換え、完全なバージョン履歴が使えます。\n\niPhone Duo向けに最適化。",
   "keywords": "まとめ,テキスト抽出,生成AI,議事録,文字認識,OCR,資料整理,文脈,チャット,テンプレート,勉強,調査,論文,個人情報,マークダウン,質問,メモ,画像から文字,コピペ,スキャン,文字起こし",
@@ -251,9 +251,9 @@
  },
  "ko": {
   "name": "AI Brief：파일을 AI 프롬프트로",
-  "subtitle": "파일·PDF로 프롬프트 만들기",
+  "subtitle": "PDF·파일로 프롬프트 생성·텍스트 추출",
   "description": "iPhone Duo에 최적화되었습니다. 최신 개발 도구로 빌드되어 안쪽 디스플레이 전체를 가득 채우며, 접거나 펼쳐도 레이아웃이 자동으로 조정됩니다.\n\n스크린샷, PDF, 파일, 메모를 목표·사실·출처가 정리된 하나의 AI 프롬프트로 만들어 줍니다.\n모든 사실에 출처와 신뢰도가 함께 남아 AI에 보내기 전에 확인할 수 있습니다. 한 번에 복사해 어떤 AI 채팅에든 붙여넣으세요.\n텍스트 인식과 개인정보 감지는 기기에서 처리되며, 무엇을 유지·교체·삭제할지는 직접 정합니다.\n\n전체 맥락을 가져오세요\n• 스크린샷, PDF, 파일, 복사한 텍스트, 메모, 링크를 추가하세요. 최종 브리프에 남길 내용은 사용자가 직접 선택합니다.\n• OCR, PDF 읽기, 중복 확인, 사실 추출, 개인정보 보호 감지는 Apple 프레임워크를 기기 내에서 사용합니다.\n• 여러 출처를 하나의 깔끔한 브리프로 합칠 수 있습니다.\n\nAI에게 전달되기 전에 사실을 확인하세요\n• 모든 사실에는 출처와 신뢰도가 함께 표시됩니다. 맥락이 필요한 내용은 직접 수정하세요.\n• 사실, 충돌, 미해결 질문 찾기\n\n개인정보 보호\n• 감지된 정보는 자동으로 삭제되지 않습니다. 내보내기 전에 각 항목을 유지, 교체, 삭제하세요.\n• AI Brief는 익명성을 보장하지 않습니다.\n• 교체 및 제거는 내보내기 시 적용됩니다.\n\n모든 AI 어시스턴트를 위한 깔끔한 맥락\n• 구조화된 제목과 출처 표기에 적합한 형식\n• 맥락을 한 번만 구성하세요. 언제든 다시 사용하세요.\n• 완성된 브리프를 한 번의 탭으로 복사해 어떤 AI 챗에든 붙여넣기\n• 버전 기록 — 이전 초안을 언제든 다시 확인할 수 있습니다\n• 기술 문제, 고객 지원 요청, 문서 분석, 학습 자료, 회의 후속 정리 등을 위한 템플릿\n\n맥락은 비공개로 유지됩니다\n• AI Brief에는 제3자 광고, 추적, 분석, 콘텐츠 텔레메트리가 포함되어 있지 않습니다.\n• AI 서비스에 전송하기 전에 브리프를 검토하세요.\n\nAI Brief Pro(앱 내 구입)\n구입하지 않아도 브리프마다 출처를 최대 5개까지 넣을 수 있고, 브리프 1개를 복사·공유·저장할 수 있습니다. 앱 내 1회 구입으로 모든 브리프를 복사·공유·저장할 수 있고, 브리프당 출처 한도가 50개로 늘어나며, 더 많은 템플릿, 긴 맥락의 상세 브리프, 고급 개인정보 교체, 전체 버전 기록이 추가됩니다.\n\niPhone Duo에 최적화.",
-  "keywords": "캡처,생성형AI,템플릿,정리,텍스트추출,이미지텍스트,문자인식,OCR,맥락,회의록,공부,논문요약,자료정리,리서치,마크다운,개인정보,메모,질문,PDF요약,캡쳐,스캔,문서",
+  "keywords": "캡처,생성형AI,템플릿,정리,이미지텍스트,문자인식,OCR,맥락,회의록,공부,논문요약,자료정리,리서치,마크다운,개인정보,메모,질문,PDF요약,캡쳐,스캔,문서,만들기",
   "promotionalText": "iPhone Duo 최적화, 진짜 전체화면. 좋은 맥락이 좋은 AI 답변을 만듭니다. 스크린샷·PDF·메모를 넣으면 AI Brief가 기기에서 읽고 개인정보를 표시한 뒤, 어떤 AI 채팅에도 붙여 넣을 깔끔한 브리프로 정리해요.",
   "supportUrl": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/support.html?lang=ko",
   "marketingUrl": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/?lang=ko",
@@ -341,9 +341,9 @@
  },
  "pt-BR": {
   "name": "AI Brief: Arquivos em prompt",
-  "subtitle": "Crie prompts a partir de PDFs",
+  "subtitle": "Gerador de prompts com PDFs",
   "description": "Otimizado para iPhone Duo. Criado com o SDK mais recente, o app ocupa toda a tela interna e ajusta o layout automaticamente, com o aparelho dobrado ou aberto.\n\nTransforme capturas de tela, PDFs, arquivos e notas em um único prompt de IA bem organizado, com objetivo, fatos e fontes separados.\nCada fato mantém a fonte e o nível de confiança, para você conferir antes que a IA veja. Copie com um toque e cole em qualquer chat de IA.\nO reconhecimento de texto e a detecção de dados pessoais acontecem no seu aparelho, e você decide o que manter, substituir ou remover.\n\nTRAZER O CONTEXTO COMPLETO\n• Adicionar capturas de tela, PDFs, arquivos, texto copiado, notas ou links. Você escolhe o que permanece no brief final.\n• OCR, leitura de PDF, verificações de duplicados, extração de fatos e detecção de privacidade usam frameworks da Apple localmente.\n• Combine várias fontes em um único brief organizado.\n\nVERIFICAR OS FATOS ANTES QUE A IA OS VEJA\n• Cada fato mantém sua fonte e confiança. Corrigir qualquer coisa que precise de contexto.\n• Encontrar fatos, conflitos e perguntas abertas\n\nPROTEGER A PRIVACIDADE\n• Os detalhes detectados nunca são removidos automaticamente. Manter, substituir ou remover cada item antes de exportar.\n• O AI Brief nunca promete anonimato.\n• As substituições e remoções são aplicadas na exportação.\n\nCONTEXTO LIMPO PARA QUALQUER ASSISTENTE DE IA\n• Títulos estruturados e formatação pronta para fontes\n• Construir o contexto uma vez. Reutilizá-lo a qualquer momento.\n• Copie o brief pronto com um toque e cole em qualquer chat de IA\n• Histórico de versões — cada rascunho anterior fica sempre ao seu alcance\n• Modelos para problemas técnicos, pedidos de suporte, análise de documentos, material de estudo, acompanhamento de reuniões e mais\n\nO SEU CONTEXTO PERMANECE PRIVADO\n• O AI Brief não inclui anúncios de terceiros, rastreamento, análise ou telemetria de conteúdo.\n• Revise o brief antes de enviá-lo a qualquer serviço de IA.\n\nAI BRIEF PRO (COMPRA NO APP)\nSem compra, cada brief pode ter até 5 fontes e você pode copiar, compartilhar e salvar um brief. Uma compra única no app permite copiar, compartilhar e salvar todos os briefs, aumenta o limite para 50 fontes por brief e adiciona mais modelos, briefs detalhados de contexto longo, substituições de privacidade avançadas e o histórico completo de versões.\n\nOtimizado para o iPhone Duo.",
-  "keywords": "IA,gerador,imagem para texto,resumo,resumir,captura de tela,OCR,contexto,chat,documentos,notas,links",
+  "keywords": "IA,imagem para texto,resumo,resumir,captura de tela,OCR,contexto,chat,documentos,notas,links,criar",
   "promotionalText": "Otimizado para iPhone Duo: tela cheia de verdade. Adicione capturas, PDFs, notas e links: lidos no aparelho, dados pessoais sinalizados e um resumo claro para a IA.",
   "supportUrl": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/support.html?lang=pt-BR",
   "marketingUrl": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/?lang=pt-BR",
@@ -490,7 +490,7 @@
   "privacyPolicyUrl": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/privacy.html?lang=zh-Hans"
  },
  "zh-Hant": {
-  "name": "AI Brief：檔案轉 AI 提示詞",
+  "name": "AI Brief：檔案轉 AI 提示詞產生器",
   "subtitle": "檔案、PDF 轉提示詞與摘要",
   "description": "已針對 iPhone Duo 最佳化。本 App 以最新開發套件建置，填滿整個內螢幕，無論摺起或打開都會自動調整版面。\n\n把截圖、PDF、檔案和筆記整理成一份分段清楚的 AI 提示詞：目標、事實、來源一目了然。\n每項事實都標出來源與信賴度，送進 AI 前先核對；一鍵複製，貼進任何 AI 聊天。\n文字辨識和個資偵測都在裝置上完成，每一項個資由你決定保留、替換或移除。\n\n資料一次帶齊\n• 加入截圖、PDF、檔案、複製的文字、筆記或連結，由你決定哪些留在最終摘要裡。\n• 文字辨識（OCR）、PDF 讀取、重複檢查、事實擷取與個資偵測，都用 Apple 框架在裝置上完成。\n• 多個來源合併成一份條理清楚的摘要。\n\n送進 AI 前先核對事實\n• 每項事實都保有來源與信賴度，需要補充說明的地方可以直接修正。\n• 找出事實、矛盾之處與待釐清的問題\n\n保護隱私\n• 偵測到的個資絕不會自動移除；匯出前逐項選擇保留、替換或移除。\n• AI Brief 不保證完全匿名。\n• 替換與移除會在匯出時套用。\n\n給任何 AI 助理的乾淨資料\n• 結構化標題，來源清楚標示\n• 整理一次，隨時重複使用\n• 一鍵複製完成的摘要，直接貼進任何 AI 聊天\n• 版本紀錄：之前的每份草稿都找得回來\n• 範本：技術問題、客服求助、文件分析、讀書資料、會議追蹤等\n\n你的資料留在自己手上\n• AI Brief 不含第三方廣告、追蹤、分析或內容遙測。\n• 傳給任何 AI 服務前，請先檢查摘要內容。\n\nApp 內購買（AI Brief Pro）\n未購買時，每份摘要最多 5 個來源，並可複製、分享與儲存 1 份摘要。一次性 App 內購買後，每份摘要都能複製、分享與儲存，來源上限提高到 50 個，並開放更多範本、詳細長篇摘要、進階個資替換與完整版本紀錄。\n\n針對 iPhone Duo 最佳化。",
   "keywords": "管理,圖片轉文字,文件,生成式AI,範本,總結,重點整理,截圖,文字辨識,OCR,筆記,上下文,聊天,會議紀錄,讀書,研究,論文,個資,資料整理,Markdown,懶人包,複製貼上,工作效率,掃描",

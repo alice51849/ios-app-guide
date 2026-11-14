@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-11-13T06:25:21Z",
+  "updated_at": "2026-11-14T06:05:59Z",
   "note": "Insights of our own IG / Threads posts by .github/scripts/post_performance.py. score = views + 3*likes + 5*replies + 8*(saves+shares+reposts). boost = best apps, read by 00_GrowthEngine shorts/scripts/schedule_posts.py.",
   "sources": {
-    "instagram": "ok: 37 posts",
+    "instagram": "ok: 39 posts",
     "threads": "ok: 8 posts"
   },
   "boost": [
-    "cvdesk",
     "mochi_suneung",
+    "cvdesk",
     "wifiaidlite",
-    "gmoney",
-    "foldparty"
+    "gmoneylite",
+    "gmoney"
   ],
   "demote": [
     "lumimath",
@@ -21,8 +21,10 @@
   ],
   "hook_winners": {
     "apps": {
+      "claudeusagemini/de": "b",
       "claudeusagemini/en": "c",
       "ledmovingtext/de": "b",
+      "lumibopomofo/en": "c",
       "lumibopomofo/zh-Hant": "c",
       "lumibopomofo_b/zh-Hant": "c",
       "mochi/zh-Hant": "b"
@@ -40,8 +42,8 @@
     "channels": {
       "instagram": {
         "posts": 14,
-        "median_views": 26.0,
-        "keep_slot": 1,
+        "median_views": 50.0,
+        "keep_slot": 9,
         "daily": 2
       },
       "threads": {
@@ -60,31 +62,31 @@
       "de": {
         "hour": 13,
         "avg_views": 1.5,
-        "posts": 6,
+        "posts": 7,
         "hours": {
           "7": 0.0,
           "13": 1.5
         }
       },
       "en": {
-        "hour": 15,
-        "avg_views": 35.3,
-        "posts": 28,
+        "hour": 9,
+        "avg_views": 57.5,
+        "posts": 31,
         "hours": {
           "5": 0.0,
-          "9": 6.0,
-          "15": 35.3,
-          "18": 19.6,
+          "9": 57.5,
+          "15": 42.8,
+          "18": 23.9,
           "19": 0.0,
           "22": 15.7
         }
       },
       "ja": {
         "hour": 1,
-        "avg_views": 46.3,
+        "avg_views": 48.9,
         "posts": 15,
         "hours": {
-          "1": 46.3,
+          "1": 48.9,
           "5": 6.2,
           "18": 44.5
         }
@@ -92,22 +94,23 @@
       "ko": {
         "hour": 1,
         "avg_views": 114.8,
-        "posts": 9,
+        "posts": 10,
         "hours": {
           "1": 114.8,
+          "5": 0.0,
           "12": 81.5
         }
       },
       "zh-Hant": {
         "hour": 12,
-        "avg_views": 23.6,
-        "posts": 31,
+        "avg_views": 29.2,
+        "posts": 33,
         "hours": {
           "1": 19.5,
           "5": 1.0,
-          "7": 0.2,
+          "7": 0.1,
           "9": 0.3,
-          "12": 23.6
+          "12": 29.2
         }
       }
     },
@@ -121,7 +124,7 @@
           "2": 6.0,
           "8": 12.7,
           "13": 11.0,
-          "15": 5.0,
+          "15": 5.5,
           "16": 8.0
         }
       },
@@ -143,14 +146,6 @@
   "ranking": {
     "apps": [
       {
-        "key": "cvdesk",
-        "posts": 2,
-        "views": 367,
-        "engagement": 3,
-        "score": 380,
-        "avg_score": 190.0
-      },
-      {
         "key": "mochi_suneung",
         "posts": 1,
         "views": 165,
@@ -159,44 +154,68 @@
         "avg_score": 165.0
       },
       {
+        "key": "cvdesk",
+        "posts": 3,
+        "views": 424,
+        "engagement": 3,
+        "score": 437,
+        "avg_score": 145.7
+      },
+      {
         "key": "wifiaidlite",
         "posts": 5,
-        "views": 481,
+        "views": 484,
         "engagement": 1,
-        "score": 484,
-        "avg_score": 96.8
+        "score": 487,
+        "avg_score": 97.4
+      },
+      {
+        "key": "gmoneylite",
+        "posts": 3,
+        "views": 214,
+        "engagement": 1,
+        "score": 219,
+        "avg_score": 73.0
       },
       {
         "key": "gmoney",
-        "posts": 4,
-        "views": 370,
+        "posts": 6,
+        "views": 414,
         "engagement": 3,
-        "score": 383,
-        "avg_score": 95.8
+        "score": 427,
+        "avg_score": 71.2
       },
       {
         "key": "foldparty",
         "posts": 2,
-        "views": 123,
+        "views": 141,
         "engagement": 0,
-        "score": 123,
-        "avg_score": 61.5
+        "score": 141,
+        "avg_score": 70.5
       },
       {
         "key": "cyca",
         "posts": 4,
-        "views": 199,
+        "views": 208,
         "engagement": 0,
-        "score": 199,
-        "avg_score": 49.8
+        "score": 208,
+        "avg_score": 52.0
       },
       {
         "key": "onepageppt",
         "posts": 5,
-        "views": 199,
+        "views": 200,
         "engagement": 3,
-        "score": 214,
-        "avg_score": 42.8
+        "score": 215,
+        "avg_score": 43.0
+      },
+      {
+        "key": "duowallpaperstudio",
+        "posts": 4,
+        "views": 166,
+        "engagement": 2,
+        "score": 172,
+        "avg_score": 43.0
       },
       {
         "key": "unblurry",
@@ -205,14 +224,6 @@
         "engagement": 1,
         "score": 80,
         "avg_score": 40.0
-      },
-      {
-        "key": "duowallpaperstudio",
-        "posts": 3,
-        "views": 110,
-        "engagement": 2,
-        "score": 116,
-        "avg_score": 38.7
       },
       {
         "key": "tripbeelite",
@@ -231,20 +242,12 @@
         "avg_score": 38.0
       },
       {
-        "key": "gmoneylite",
-        "posts": 3,
-        "views": 108,
-        "engagement": 1,
-        "score": 113,
-        "avg_score": 37.7
-      },
-      {
         "key": "claudeusagemini",
-        "posts": 7,
-        "views": 216,
+        "posts": 8,
+        "views": 256,
         "engagement": 2,
-        "score": 226,
-        "avg_score": 32.3
+        "score": 266,
+        "avg_score": 33.2
       },
       {
         "key": "lumiweather",
@@ -253,6 +256,14 @@
         "engagement": 1,
         "score": 30,
         "avg_score": 30.0
+      },
+      {
+        "key": "shotinbox",
+        "posts": 2,
+        "views": 46,
+        "engagement": 0,
+        "score": 46,
+        "avg_score": 23.0
       },
       {
         "key": "mochi_b",
@@ -287,28 +298,20 @@
         "avg_score": 20.7
       },
       {
+        "key": "lumibopomofo_b",
+        "posts": 5,
+        "views": 90,
+        "engagement": 3,
+        "score": 103,
+        "avg_score": 20.6
+      },
+      {
         "key": "countdaysnow",
         "posts": 1,
         "views": 15,
         "engagement": 1,
         "score": 20,
         "avg_score": 20.0
-      },
-      {
-        "key": "lumibopomofo_b",
-        "posts": 4,
-        "views": 67,
-        "engagement": 2,
-        "score": 77,
-        "avg_score": 19.2
-      },
-      {
-        "key": "shotinbox",
-        "posts": 2,
-        "views": 32,
-        "engagement": 0,
-        "score": 32,
-        "avg_score": 16.0
       },
       {
         "key": "lumimission",
@@ -352,11 +355,11 @@
       },
       {
         "key": "lumibopomofo",
-        "posts": 10,
+        "posts": 11,
         "views": 120,
         "engagement": 3,
         "score": 133,
-        "avg_score": 13.3
+        "avg_score": 12.1
       },
       {
         "key": "tripplanet",
@@ -393,10 +396,10 @@
       {
         "key": "wifiaid",
         "posts": 1,
-        "views": 4,
+        "views": 5,
         "engagement": 1,
-        "score": 9,
-        "avg_score": 9.0
+        "score": 10,
+        "avg_score": 10.0
       },
       {
         "key": "qrcodehalo",
@@ -504,7 +507,7 @@
       },
       {
         "key": "lumiletters",
-        "posts": 1,
+        "posts": 2,
         "views": 0,
         "engagement": 0,
         "score": 0,
@@ -554,27 +557,27 @@
     "locales": [
       {
         "key": "ko",
-        "posts": 10,
+        "posts": 11,
         "views": 863,
         "engagement": 1,
         "score": 868,
-        "avg_score": 86.8
+        "avg_score": 78.9
       },
       {
         "key": "id",
         "posts": 2,
-        "views": 147,
+        "views": 150,
         "engagement": 1,
-        "score": 150,
-        "avg_score": 75.0
+        "score": 153,
+        "avg_score": 76.5
       },
       {
         "key": "ja",
         "posts": 16,
-        "views": 473,
+        "views": 492,
         "engagement": 3,
-        "score": 484,
-        "avg_score": 30.2
+        "score": 503,
+        "avg_score": 31.4
       },
       {
         "key": "el",
@@ -586,35 +589,35 @@
       },
       {
         "key": "zh-Hant",
-        "posts": 45,
-        "views": 1238,
+        "posts": 47,
+        "views": 1295,
         "engagement": 16,
-        "score": 1310,
+        "score": 1367,
         "avg_score": 29.1
       },
       {
         "key": "vi",
-        "posts": 1,
-        "views": 16,
-        "engagement": 0,
-        "score": 16,
-        "avg_score": 16.0
+        "posts": 2,
+        "views": 39,
+        "engagement": 1,
+        "score": 42,
+        "avg_score": 21.0
       },
       {
         "key": "en",
-        "posts": 46,
-        "views": 555,
+        "posts": 49,
+        "views": 785,
         "engagement": 11,
-        "score": 608,
-        "avg_score": 13.2
+        "score": 838,
+        "avg_score": 17.1
       },
       {
         "key": "de",
-        "posts": 6,
-        "views": 61,
+        "posts": 7,
+        "views": 101,
         "engagement": 1,
-        "score": 64,
-        "avg_score": 10.7
+        "score": 104,
+        "avg_score": 14.9
       },
       {
         "key": "cs",
@@ -679,10 +682,10 @@
         "locale": "id",
         "hook": "WiFi, DNS, atau internet?",
         "posts": 1,
-        "views": 144,
+        "views": 147,
         "engagement": 1,
-        "score": 147,
-        "avg_score": 147.0
+        "score": 150,
+        "avg_score": 150.0
       },
       {
         "app": "onepageppt",
@@ -715,6 +718,16 @@
         "avg_score": 118.0
       },
       {
+        "app": "gmoneylite",
+        "locale": "en",
+        "hook": "Log in yen, see it in your currency",
+        "posts": 1,
+        "views": 115,
+        "engagement": 0,
+        "score": 115,
+        "avg_score": 115.0
+      },
+      {
         "app": "battai",
         "locale": "zh-Hant",
         "hook": "才剛過中午，iPhone 電量就低到讓人不敢離開充電器旁。",
@@ -725,6 +738,16 @@
         "avg_score": 110.0
       },
       {
+        "app": "cyca",
+        "locale": "en",
+        "hook": "No account. It stays on your phone",
+        "posts": 1,
+        "views": 104,
+        "engagement": 0,
+        "score": 104,
+        "avg_score": 104.0
+      },
+      {
         "app": "gmoney",
         "locale": "ko",
         "hook": "분류별로 어디에 썼는지 한눈에",
@@ -733,16 +756,6 @@
         "engagement": 0,
         "score": 98,
         "avg_score": 98.0
-      },
-      {
-        "app": "cyca",
-        "locale": "en",
-        "hook": "No account. It stays on your phone",
-        "posts": 1,
-        "views": 95,
-        "engagement": 0,
-        "score": 95,
-        "avg_score": 95.0
       },
       {
         "app": "gmoneylite",
@@ -815,6 +828,16 @@
         "avg_score": 71.0
       },
       {
+        "app": "foldparty",
+        "locale": "ja",
+        "hook": "オフラインで 広告なし",
+        "posts": 1,
+        "views": 69,
+        "engagement": 0,
+        "score": 69,
+        "avg_score": 69.0
+      },
+      {
         "app": "lumibopomofo",
         "locale": "ko",
         "hook": "소리를 듣고 알맞은 기호 고르기",
@@ -825,14 +848,24 @@
         "avg_score": 64.0
       },
       {
-        "app": "foldparty",
-        "locale": "ja",
-        "hook": "オフラインで 広告なし",
+        "app": "cvdesk",
+        "locale": "zh-Hant",
+        "hook": "點修正建議 提升分數",
         "posts": 1,
-        "views": 51,
+        "views": 57,
         "engagement": 0,
-        "score": 51,
-        "avg_score": 51.0
+        "score": 57,
+        "avg_score": 57.0
+      },
+      {
+        "app": "duowallpaperstudio",
+        "locale": "en",
+        "hook": "Open: the whole scene",
+        "posts": 1,
+        "views": 56,
+        "engagement": 0,
+        "score": 56,
+        "avg_score": 56.0
       },
       {
         "app": "lumimission",
@@ -863,6 +896,36 @@
         "engagement": 0,
         "score": 44,
         "avg_score": 44.0
+      },
+      {
+        "app": "gmoney",
+        "locale": "en",
+        "hook": "See where it went, by category",
+        "posts": 1,
+        "views": 44,
+        "engagement": 0,
+        "score": 44,
+        "avg_score": 44.0
+      },
+      {
+        "app": "shotinbox",
+        "locale": "en",
+        "hook": "Done with it? Clear it out",
+        "posts": 1,
+        "views": 40,
+        "engagement": 0,
+        "score": 40,
+        "avg_score": 40.0
+      },
+      {
+        "app": "claudeusagemini",
+        "locale": "de",
+        "hook": "Claude, Codex, Copilot & Gemini",
+        "posts": 1,
+        "views": 40,
+        "engagement": 0,
+        "score": 40,
+        "avg_score": 40.0
       },
       {
         "app": "onepageppt",
@@ -955,12 +1018,12 @@
         "avg_score": 26.0
       },
       {
-        "app": "shotinbox",
-        "locale": "en",
-        "hook": "Done with it? Clear it out",
+        "app": "lumibopomofo_b",
+        "locale": "vi",
+        "hook": "Chọn đúng ký hiệu",
         "posts": 1,
-        "views": 26,
-        "engagement": 0,
+        "views": 23,
+        "engagement": 1,
         "score": 26,
         "avg_score": 26.0
       },
@@ -1035,6 +1098,16 @@
         "avg_score": 20.0
       },
       {
+        "app": "onepageppt",
+        "locale": "ja",
+        "hook": "簡報製作・筆記截圖秒變投影片。",
+        "posts": 1,
+        "views": 13,
+        "engagement": 1,
+        "score": 18,
+        "avg_score": 18.0
+      },
+      {
         "app": "lumibopomofo_b",
         "locale": "ja",
         "hook": "正しい記号で フレンドにごはん",
@@ -1058,16 +1131,6 @@
         "app": "battai",
         "locale": "ko",
         "hook": "저는 혼자 앱을 만드는 개발자입니다. 요즘 '배터리가 하루를 못 버티는데 기변할까, 배터리만 바꿀까' 고민하",
-        "posts": 1,
-        "views": 12,
-        "engagement": 1,
-        "score": 17,
-        "avg_score": 17.0
-      },
-      {
-        "app": "onepageppt",
-        "locale": "ja",
-        "hook": "簡報製作・筆記截圖秒變投影片。",
         "posts": 1,
         "views": 12,
         "engagement": 1,
@@ -1175,19 +1238,19 @@
         "avg_score": 13.0
       },
       {
+        "app": "gmoneylite",
+        "locale": "en",
+        "hook": "Travel Budget & Currency.",
+        "posts": 1,
+        "views": 8,
+        "engagement": 1,
+        "score": 13,
+        "avg_score": 13.0
+      },
+      {
         "app": "zipbox",
         "locale": "zh-Hant",
         "hook": "先看裡面有什麼 只取那一個",
-        "posts": 1,
-        "views": 12,
-        "engagement": 0,
-        "score": 12,
-        "avg_score": 12.0
-      },
-      {
-        "app": "gmoneylite",
-        "locale": "en",
-        "hook": "Log in yen, see it in your currency",
         "posts": 1,
         "views": 12,
         "engagement": 0,
@@ -1265,9 +1328,9 @@
         "avg_score": 10.0
       },
       {
-        "app": "gmoneylite",
+        "app": "wifiaid",
         "locale": "en",
-        "hook": "Travel Budget & Currency.",
+        "hook": "Router, Mesh & DNS Diagnostics.",
         "posts": 1,
         "views": 5,
         "engagement": 1,
@@ -1281,16 +1344,6 @@
         "posts": 1,
         "views": 9,
         "engagement": 0,
-        "score": 9,
-        "avg_score": 9.0
-      },
-      {
-        "app": "wifiaid",
-        "locale": "en",
-        "hook": "Router, Mesh & DNS Diagnostics.",
-        "posts": 1,
-        "views": 4,
-        "engagement": 1,
         "score": 9,
         "avg_score": 9.0
       },
@@ -1903,32 +1956,62 @@
         "engagement": 0,
         "score": 0,
         "avg_score": 0.0
+      },
+      {
+        "app": "gmoney",
+        "locale": "zh-Hant",
+        "hook": "記帳 App，5 款一次看",
+        "posts": 1,
+        "views": 0,
+        "engagement": 0,
+        "score": 0,
+        "avg_score": 0.0
+      },
+      {
+        "app": "lumibopomofo",
+        "locale": "en",
+        "hook": "Zhuyin, but make it a game",
+        "posts": 1,
+        "views": 0,
+        "engagement": 0,
+        "score": 0,
+        "avg_score": 0.0
+      },
+      {
+        "app": "lumiletters",
+        "locale": "ko",
+        "hook": "",
+        "posts": 1,
+        "views": 0,
+        "engagement": 0,
+        "score": 0,
+        "avg_score": 0.0
       }
     ],
     "variants": [
       {
         "key": "b",
-        "posts": 31,
-        "views": 1104,
-        "engagement": 8,
-        "score": 1134,
-        "avg_score": 36.6
+        "posts": 36,
+        "views": 1439,
+        "engagement": 9,
+        "score": 1472,
+        "avg_score": 40.9
       },
       {
         "key": "c",
         "posts": 30,
-        "views": 923,
+        "views": 955,
         "engagement": 4,
-        "score": 943,
-        "avg_score": 31.4
+        "score": 975,
+        "avg_score": 32.5
       },
       {
         "key": "a",
-        "posts": 21,
+        "posts": 22,
         "views": 232,
         "engagement": 1,
         "score": 235,
-        "avg_score": 11.2
+        "avg_score": 10.7
       }
     ]
   },
@@ -3508,12 +3591,12 @@
       "kind": "image",
       "variant": null,
       "metrics": {
-        "views": 12,
+        "views": 13,
         "likes": 0,
         "replies": 1,
         "reposts": 0
       },
-      "score": 17
+      "score": 18
     },
     {
       "channel": "instagram",
@@ -4023,12 +4106,12 @@
       "kind": "image",
       "variant": null,
       "metrics": {
-        "views": 4,
+        "views": 5,
         "likes": 0,
         "replies": 1,
         "reposts": 0
       },
-      "score": 9
+      "score": 10
     },
     {
       "channel": "threads",
@@ -4042,12 +4125,12 @@
       "kind": "image",
       "variant": null,
       "metrics": {
-        "views": 5,
+        "views": 8,
         "likes": 0,
         "replies": 1,
         "reposts": 0
       },
-      "score": 10
+      "score": 13
     },
     {
       "channel": "instagram",
@@ -4544,14 +4627,14 @@
       "kind": "clip",
       "variant": "b",
       "metrics": {
-        "views": 12,
-        "reach": 11,
+        "views": 115,
+        "reach": 108,
         "likes": 0,
         "saves": 0,
         "shares": 0,
         "replies": 0
       },
-      "score": 12
+      "score": 115
     },
     {
       "channel": "instagram",
@@ -4586,14 +4669,14 @@
       "kind": "clip",
       "variant": "b",
       "metrics": {
-        "views": 95,
-        "reach": 87,
+        "views": 104,
+        "reach": 96,
         "likes": 0,
         "saves": 0,
         "shares": 0,
         "replies": 0
       },
-      "score": 95
+      "score": 104
     },
     {
       "channel": "instagram",
@@ -4607,14 +4690,14 @@
       "kind": "clip",
       "variant": "c",
       "metrics": {
-        "views": 26,
-        "reach": 22,
+        "views": 40,
+        "reach": 35,
         "likes": 0,
         "saves": 0,
         "shares": 0,
         "replies": 0
       },
-      "score": 26
+      "score": 40
     },
     {
       "channel": "instagram",
@@ -4649,14 +4732,14 @@
       "kind": "clip",
       "variant": "b",
       "metrics": {
-        "views": 144,
-        "reach": 114,
+        "views": 147,
+        "reach": 122,
         "likes": 1,
         "saves": 0,
         "shares": 0,
         "replies": 0
       },
-      "score": 147
+      "score": 150
     },
     {
       "channel": "instagram",
@@ -4670,14 +4753,14 @@
       "kind": "clip",
       "variant": "c",
       "metrics": {
-        "views": 51,
-        "reach": 45,
+        "views": 69,
+        "reach": 62,
         "likes": 0,
         "saves": 0,
         "shares": 0,
         "replies": 0
       },
-      "score": 51
+      "score": 69
     },
     {
       "channel": "instagram",
@@ -4688,6 +4771,174 @@
       "locale": "ko",
       "hook": "",
       "clip": "utility/photo/snapportlite/tw_id/ko",
+      "kind": "utility",
+      "variant": null,
+      "metrics": {
+        "views": 0,
+        "reach": 0,
+        "likes": 0,
+        "saves": 0,
+        "shares": 0,
+        "replies": 0
+      },
+      "score": 0
+    },
+    {
+      "channel": "instagram",
+      "id": "18130577878868734",
+      "link": "https://www.instagram.com/p/DfrG3DMFXYf/",
+      "posted_at": "2026-11-13T07:35:20",
+      "app": "gmoney",
+      "locale": "zh-Hant",
+      "hook": "記帳 App，5 款一次看",
+      "clip": null,
+      "kind": "image",
+      "variant": null,
+      "metrics": {
+        "views": 0,
+        "reach": 0,
+        "likes": 0,
+        "saves": 0,
+        "shares": 0,
+        "replies": 0
+      },
+      "score": 0
+    },
+    {
+      "channel": "instagram",
+      "id": "17928024564202091",
+      "link": "https://www.instagram.com/reel/DfrUCt-k5k7/",
+      "posted_at": "2026-11-13T09:30:49",
+      "app": "claudeusagemini",
+      "locale": "de",
+      "hook": "Claude, Codex, Copilot & Gemini",
+      "clip": "claudeusagemini/de",
+      "kind": "clip",
+      "variant": "b",
+      "metrics": {
+        "views": 40,
+        "reach": 33,
+        "likes": 0,
+        "saves": 0,
+        "shares": 0,
+        "replies": 0
+      },
+      "score": 40
+    },
+    {
+      "channel": "instagram",
+      "id": "18123342226914053",
+      "link": "https://www.instagram.com/reel/Dfro5i3ghCO/",
+      "posted_at": "2026-11-13T12:33:07",
+      "app": "cvdesk",
+      "locale": "zh-Hant",
+      "hook": "點修正建議 提升分數",
+      "clip": "cvdesk/zh-Hant",
+      "kind": "clip",
+      "variant": "b",
+      "metrics": {
+        "views": 57,
+        "reach": 50,
+        "likes": 0,
+        "saves": 0,
+        "shares": 0,
+        "replies": 0
+      },
+      "score": 57
+    },
+    {
+      "channel": "instagram",
+      "id": "18125281414822243",
+      "link": "https://www.instagram.com/reel/Dfr9flvjesV/",
+      "posted_at": "2026-11-13T15:33:00",
+      "app": "duowallpaperstudio",
+      "locale": "en",
+      "hook": "Open: the whole scene",
+      "clip": "duowallpaperstudio/en",
+      "kind": "clip",
+      "variant": "b",
+      "metrics": {
+        "views": 56,
+        "reach": 52,
+        "likes": 0,
+        "saves": 0,
+        "shares": 0,
+        "replies": 0
+      },
+      "score": 56
+    },
+    {
+      "channel": "instagram",
+      "id": "17911850445593531",
+      "link": "https://www.instagram.com/reel/DfsSGBUDRNo/",
+      "posted_at": "2026-11-13T18:33:02",
+      "app": "gmoney",
+      "locale": "en",
+      "hook": "See where it went, by category",
+      "clip": "gmoney/en",
+      "kind": "clip",
+      "variant": "b",
+      "metrics": {
+        "views": 44,
+        "reach": 37,
+        "likes": 0,
+        "saves": 0,
+        "shares": 0,
+        "replies": 0
+      },
+      "score": 44
+    },
+    {
+      "channel": "instagram",
+      "id": "18023194802924032",
+      "link": "https://www.instagram.com/p/DfsY-4GIHc6/",
+      "posted_at": "2026-11-13T19:32:56",
+      "app": "lumibopomofo",
+      "locale": "en",
+      "hook": "Zhuyin, but make it a game",
+      "clip": "lumibopomofo/en",
+      "kind": "clip",
+      "variant": "a",
+      "metrics": {
+        "views": 0,
+        "reach": 0,
+        "likes": 0,
+        "saves": 0,
+        "shares": 0,
+        "replies": 0
+      },
+      "score": 0
+    },
+    {
+      "channel": "instagram",
+      "id": "17883017379543236",
+      "link": "https://www.instagram.com/reel/DftB6SaGQB8/",
+      "posted_at": "2026-11-14T01:30:46",
+      "app": "lumibopomofo_b",
+      "locale": "vi",
+      "hook": "Chọn đúng ký hiệu",
+      "clip": "lumibopomofo_b/vi",
+      "kind": "clip",
+      "variant": "b",
+      "metrics": {
+        "views": 23,
+        "reach": 15,
+        "likes": 1,
+        "saves": 0,
+        "shares": 0,
+        "replies": 0
+      },
+      "score": 26
+    },
+    {
+      "channel": "instagram",
+      "id": "18020142164953178",
+      "link": "https://www.instagram.com/p/DftcWZUDbtJ/",
+      "posted_at": "2026-11-14T05:21:42",
+      "app": "lumiletters",
+      "locale": "ko",
+      "hook": "",
+      "clip": "utility/letter/lumiletters/letter_d/ko",
       "kind": "utility",
       "variant": null,
       "metrics": {

@@ -13,7 +13,7 @@
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
     "dateModified": "2026-11-14",
-    "contentDigest": "2c2b3c4d1d3fe2fcd25027d73565e1b20acd5c9b0b72e7594191713f9e466e11",
+    "contentDigest": "40a1a9c00c85a12119dbaac46f5c27e3d2a27495bccab59729c4f5cd0572636b",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
     "recordCount": 60
@@ -132,9 +132,8 @@
       "title": "CountDaysNow: Event Counter",
       "content_text": "• Tagesfokus Seitdem · Heute · Voraus",
       "tags": [
-        "Countdown",
         "Tage",
-        "zähler",
+        "bis",
         "Geburtstag",
         "Jahrestag",
         "Erinnerung",
@@ -142,10 +141,11 @@
         "Sperrbildschirm",
         "Hochzeit",
         "Prüfung",
-        "Urlaub"
+        "Urlaub",
+        "Tageszähler"
       ],
       "language": "de-DE",
-      "date_modified": "2026-10-17T16:15:13Z"
+      "date_modified": "2026-11-14T20:23:05Z"
     },
     {
       "id": "https://apps.apple.com/app/id6781337213",

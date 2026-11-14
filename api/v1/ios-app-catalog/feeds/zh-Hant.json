@@ -13,7 +13,7 @@
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
     "dateModified": "2026-11-14",
-    "contentDigest": "2c2b3c4d1d3fe2fcd25027d73565e1b20acd5c9b0b72e7594191713f9e466e11",
+    "contentDigest": "40a1a9c00c85a12119dbaac46f5c27e3d2a27495bccab59729c4f5cd0572636b",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
     "recordCount": 60
@@ -196,9 +196,7 @@
       "title": "CountDaysNow: Event Counter",
       "content_text": "• 每日焦點 過往 · 今天 · 未來 — 儲存",
       "tags": [
-        "倒數日",
         "倒數計時",
-        "紀念日",
         "生日",
         "還有幾天",
         "農曆",
@@ -223,10 +221,11 @@
         "過年",
         "開學",
         "國考",
-        "退伍"
+        "退伍",
+        "天數計算"
       ],
       "language": "zh-Hant",
-      "date_modified": "2026-10-17T16:15:13Z"
+      "date_modified": "2026-11-14T19:44:30Z"
     },
     {
       "id": "https://apps.apple.com/app/id6781337213",
@@ -1643,7 +1642,6 @@
       "title": "ShotInbox AI：截圖整理",
       "content_text": "已針對 iPhone Duo 最佳化。本 App 以最新開發套件建置，填滿整個內螢幕，無論摺起或打開都會自動調整版面。",
       "tags": [
-        "相簿",
         "重複",
         "相似",
         "圖片",
@@ -1670,10 +1668,12 @@
         "提醒",
         "收藏",
         "截圖清理",
-        "螢幕截圖"
+        "螢幕截圖",
+        "連結",
+        "相簿清理"
       ],
       "language": "zh-Hant",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-14T19:44:30Z"
     },
     {
       "id": "https://apps.apple.com/app/id6780575828",

@@ -13,7 +13,7 @@
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
     "dateModified": "2026-11-14",
-    "contentDigest": "2c2b3c4d1d3fe2fcd25027d73565e1b20acd5c9b0b72e7594191713f9e466e11",
+    "contentDigest": "40a1a9c00c85a12119dbaac46f5c27e3d2a27495bccab59729c4f5cd0572636b",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
     "recordCount": 60
@@ -67,7 +67,6 @@
         "생성형AI",
         "템플릿",
         "정리",
-        "텍스트추출",
         "이미지텍스트",
         "문자인식",
         "OCR",
@@ -84,10 +83,11 @@
         "PDF요약",
         "캡쳐",
         "스캔",
-        "문서"
+        "문서",
+        "만들기"
       ],
       "language": "ko",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-14T20:23:05Z"
     },
     {
       "id": "https://apps.apple.com/app/id6784974530",
@@ -1547,7 +1547,6 @@
         "유사",
         "이미지",
         "삭제",
-        "갤러리",
         "청소기",
         "문자인식",
         "텍스트추출",
@@ -1563,10 +1562,11 @@
         "레시피",
         "QR",
         "보관",
-        "캡쳐"
+        "캡쳐",
+        "스샷"
       ],
       "language": "ko",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-14T20:23:05Z"
     },
     {
       "id": "https://apps.apple.com/app/id6780575828",

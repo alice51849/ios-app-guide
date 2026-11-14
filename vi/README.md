@@ -160,6 +160,6 @@ JSON, JSONL và CSV chứa cùng 3.000 bản ghi.
 
 [Trang chủ](https://open.cait518.cc/ios-app-guide/vi/index.html) · [Dữ liệu mở](https://open.cait518.cc/ios-app-guide/vi/data/lumi-studio-publisher-search-intent-catalog.html) · [Giấy phép](https://creativecommons.org/licenses/by/4.0/)
 
-Cập nhật: 2026-11-13
+Cập nhật: 2026-11-14
 
 CC BY 4.0 áp dụng cho bản tổng hợp danh mục gốc; tên ứng dụng và nhãn hiệu App Store thuộc sở hữu của chủ sở hữu tương ứng.

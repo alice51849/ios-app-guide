@@ -2,7 +2,7 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-11-14",
-  "content_digest": "2c2b3c4d1d3fe2fcd25027d73565e1b20acd5c9b0b72e7594191713f9e466e11",
+  "content_digest": "40a1a9c00c85a12119dbaac46f5c27e3d2a27495bccab59729c4f5cd0572636b",
   "locale": "zh-Hant",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -277,9 +277,7 @@
       "summary": "• 每日焦點 過往 · 今天 · 未來 — 儲存",
       "category": "productivity",
       "search_terms": [
-        "倒數日",
         "倒數計時",
-        "紀念日",
         "生日",
         "還有幾天",
         "農曆",
@@ -304,7 +302,8 @@
         "過年",
         "開學",
         "國考",
-        "退伍"
+        "退伍",
+        "天數計算"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2454,7 +2453,6 @@
       "summary": "已針對 iPhone Duo 最佳化。本 App 以最新開發套件建置，填滿整個內螢幕，無論摺起或打開都會自動調整版面。",
       "category": "photo-utility",
       "search_terms": [
-        "相簿",
         "重複",
         "相似",
         "圖片",
@@ -2481,7 +2479,9 @@
         "提醒",
         "收藏",
         "截圖清理",
-        "螢幕截圖"
+        "螢幕截圖",
+        "連結",
+        "相簿清理"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

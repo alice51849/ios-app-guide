@@ -1,6 +1,6 @@
 {
   "_owned_feed": {
-    "date_modified": "2026-11-13T00:45:27Z",
+    "date_modified": "2026-11-15T08:50:47Z",
     "notification_eligible": true,
     "schema": "lumi.owned-app-feeds/v2"
   },
@@ -787,17 +787,17 @@
         "app_key": "metrotimehelper",
         "app_store_cta_label": "Vis på App Store",
         "app_store_id": "6819061896",
-        "content_digest": "5df2b290ec060d3906dc524fb26228b4986a6b20a161593e4b0388230f3ec1af",
+        "content_digest": "95f6dfb6cd14fe41b03f80072600c94ecf0b0917002e40d8462a5977ff70eb73",
         "independent_ranking": false,
         "one_time_option": true,
         "publisher_disclosure": "Dette materiale er udgivet direkte af Lumi Studio, som har udviklet alle de viste apps.",
-        "purchase_label": "Gratis at komme i gang · oplåsning med et engangskøb",
-        "purchase_model": "free_with_lifetime_unlock",
+        "purchase_label": "Betalt hentning",
+        "purchase_model": "paid_upfront",
         "source_locale": "da"
       },
-      "content_html": "<p>Din hjælper til metroen i Taipei, Taiwan: Sig, hvornår du skal være fremme, så regner appen ud, hvornår du senest skal gå ind på stationen.</p><p>Gratis at komme i gang · oplåsning med et engangskøb</p><p><a href=\"https://apps.apple.com/dk/app/id6819061896?pt=118326163&amp;ct=geo_pick&amp;mt=8\">Vis på App Store</a></p><p>Dette materiale er udgivet direkte af Lumi Studio, som har udviklet alle de viste apps.</p>",
-      "content_text": "Din hjælper til metroen i Taipei, Taiwan: Sig, hvornår du skal være fremme, så regner appen ud, hvornår du senest skal gå ind på stationen.\n\nGratis at komme i gang · oplåsning med et engangskøb\n\nVis på App Store: https://apps.apple.com/dk/app/id6819061896?pt=118326163&ct=geo_pick&mt=8\n\nDette materiale er udgivet direkte af Lumi Studio, som har udviklet alle de viste apps.",
-      "date_modified": "2026-11-04T09:01:58Z",
+      "content_html": "<p>Din hjælper til metroen i Taipei, Taiwan: Sig, hvornår du skal være fremme, så regner appen ud, hvornår du senest skal gå ind på stationen.</p><p>Betalt hentning</p><p><a href=\"https://apps.apple.com/dk/app/id6819061896?pt=118326163&amp;ct=geo_pick&amp;mt=8\">Vis på App Store</a></p><p>Dette materiale er udgivet direkte af Lumi Studio, som har udviklet alle de viste apps.</p>",
+      "content_text": "Din hjælper til metroen i Taipei, Taiwan: Sig, hvornår du skal være fremme, så regner appen ud, hvornår du senest skal gå ind på stationen.\n\nBetalt hentning\n\nVis på App Store: https://apps.apple.com/dk/app/id6819061896?pt=118326163&ct=geo_pick&mt=8\n\nDette materiale er udgivet direkte af Lumi Studio, som har udviklet alle de viste apps.",
+      "date_modified": "2026-11-15T08:50:47Z",
       "date_published": "2026-11-04T09:01:58Z",
       "external_url": "https://apps.apple.com/dk/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
       "id": "urn:lumi:app-store:6819061896:locale:da",

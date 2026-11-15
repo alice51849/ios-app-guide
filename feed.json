@@ -1,7 +1,7 @@
 {
  "schema": "lumi.social-feed/v1",
  "date": "2026-11-15",
- "generated_at": "2026-11-15T08:29:40Z",
+ "generated_at": "2026-11-15T16:01:02Z",
  "items": {
   "bluesky": [
    {
@@ -141,138 +141,114 @@
    },
    {
     "kind": "clip",
-    "key": "moneytag/en",
-    "locale": "en",
-    "app": "moneytag",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/q1lb4b.mp4",
-    "hook": "Export PDF or CSV",
-    "name": "MoneyTag: Income & Expense",
-    "title": "Export PDF or CSV | Projects · Tags · Report | MoneyTag",
+    "key": "hourstaglite_b/de",
+    "locale": "de",
+    "app": "hourstaglite_b",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/93274o.mp4",
+    "hook": "Wieder pleite? Wofür bloß?",
+    "name": "HoursTag Lite: Preis in Zeit",
+    "title": "Wieder pleite? Wofür bloß? | Preis in Zeit | HoursTag Lite",
     "tags": [
-     "#IncomeExpense",
-     "#Profit",
-     "#Loss",
-     "#SideHustle",
-     "#Freelance",
-     "#MoneyTag"
+     "#Shopping",
+     "#Gewohnheiten",
+     "#Minimalismus",
+     "#Stunden",
+     "#Arbeitszeit",
+     "#HoursTagLite"
     ],
-    "caption": "Export PDF or CSV\nOne tag adds up across projects\nProjects · Tags · Report\nMoneyTag: Income & Expense\nSearch “MoneyTag” on the App Store\nAlso on Google Play\n\n#IncomeExpense #Profit #MoneyTag",
-    "button": "Get it on the App Store",
-    "variant": "c",
-    "alt": "MoneyTag: Income & Expense — Export PDF or CSV — One tag adds up across projects — Projects · Tags · Report",
-    "store": "https://apps.apple.com/us/app/id6801956402?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MoneyTag&referrer=utm_source%3Dsocial%26utm_campaign%3Dmoneytag",
+    "caption": "Wieder pleite? Wofür bloß?\nHoursTag Lite zeigt Spontankäufe in Stunden\nHoursTag Lite: Preis in Zeit\nIm App Store nach „HoursTag Lite“ suchen\nAuch bei Google Play\n\n#Shopping #Gewohnheiten #HoursTagLite",
+    "button": "Im App Store laden",
+    "variant": "a",
+    "alt": "HoursTag Lite: Preis in Zeit — Wieder pleite? Wofür bloß? — HoursTag Lite zeigt Spontankäufe in Stunden",
+    "store": "https://apps.apple.com/de/app/id6794039979?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite&referrer=utm_source%3Dsocial%26utm_campaign%3Dhourstaglite",
     "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6801956402?action=write-review"
+     "label": "Sie nutzen diese App bereits? Bewerten oder rezensieren Sie sie im App Store",
+     "url": "https://apps.apple.com/app/id6794039979?action=write-review"
     },
     "keywords": [
-     "profit",
-     "loss",
-     "side hustle",
-     "freelance",
-     "business",
-     "accounting"
+     "impulskauf",
+     "lohnt sich",
+     "geld",
+     "shopping",
+     "gewohnheiten",
+     "minimalismus"
     ],
-    "keyline": "Projects · Tags · Report",
+    "keyline": "Preis in Zeit",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "2f51dc9855d60b64",
-     "real_recording": false,
+     "board": "a93acda324b6d926",
+     "real_recording": true,
      "rules": "2026-10-18"
     },
     "slot": 15
    },
    {
     "kind": "clip",
-    "key": "wordmate/en",
+    "key": "hourstaglite_b/en",
     "locale": "en",
-    "app": "wordmate",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/5ieeti.mp4",
-    "hook": "Or right on your wrist",
-    "name": "Wordmate: Learn 44 Languages",
-    "title": "Or right on your wrist | Learn 44 Languages | Wordmate",
+    "app": "hourstaglite_b",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/5qjuaq.mp4",
+    "hook": "HoursTag Lite shows impulse buys in hours",
+    "name": "HoursTag Lite: Price in Hours",
+    "title": "HoursTag Lite shows impulse buys in hours | Stop Impulse Buying & Save | HoursTag Lite",
     "tags": [
-     "#Learn44Languages",
-     "#Italian",
-     "#Chinese",
-     "#Portuguese",
-     "#Russian",
-     "#Wordmate"
+     "#Spending",
+     "#Planner",
+     "#Finance",
+     "#Shopping",
+     "#Frugal",
+     "#HoursTagLite"
     ],
-    "caption": "Or right on your wrist\nKeep your streak going\nWordmate: Learn 44 Languages\nSearch “44 languages” on the App Store\nAlso on Google Play\n\n#Learn44Languages #Italian #Wordmate",
+    "caption": "HoursTag Lite shows impulse buys in hours\nBefore you buy: how many work hours?\nStop Impulse Buying & Save\nHoursTag Lite: Price in Hours\nSearch “HoursTag Lite” on the App Store\nAlso on Google Play\n\n#Spending #Planner #HoursTagLite",
     "button": "Get it on the App Store",
     "variant": "b",
-    "alt": "Wordmate: Learn 44 Languages — Or right on your wrist — Keep your streak going",
-    "store": "https://apps.apple.com/us/app/id6789917808?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlyn.flashdot&referrer=utm_source%3Dsocial%26utm_campaign%3Dwordmate",
+    "alt": "HoursTag Lite: Price in Hours — HoursTag Lite shows impulse buys in hours — Before you buy: how many work hours? — Stop Impulse Buying & Save",
+    "store": "https://apps.apple.com/us/app/id6794039979?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite&referrer=utm_source%3Dsocial%26utm_campaign%3Dhourstaglite",
     "review": {
      "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6789917808?action=write-review"
+     "url": "https://apps.apple.com/app/id6794039979?action=write-review"
     },
     "keywords": [
-     "italian",
-     "chinese",
-     "portuguese",
-     "russian",
-     "arabic",
-     "hindi"
+     "expense",
+     "budget",
+     "money",
+     "spending",
+     "planner",
+     "finance"
     ],
-    "keyline": "Learn 44 Languages",
+    "keyline": "Stop Impulse Buying & Save",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "93ebac3fc2dd0637",
-     "real_recording": false,
+     "board": "a93acda324b6d926",
+     "real_recording": true,
      "rules": "2026-10-18"
     },
     "slot": 15
    },
    {
-    "kind": "clip",
-    "key": "lumibopomofopro/ja",
-    "locale": "ja",
-    "app": "lumibopomofopro",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/wkychp.mp4",
-    "hook": "37音すべて アンロック",
-    "name": "Lumi Bopomofo Pro：台湾華語",
-    "title": "37音すべて アンロック | 注音符号・声調練習・なぞり書き | Lumi Bopomofo Pro",
+    "kind": "card",
+    "key": "card/suneung2027/2026-11-15",
+    "locale": "ko",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/countdown-cards/card-20261115.jpg",
+    "caption": "2027학년도 수능 D-4\n할 수 있어요\n\nApp Store · Google Play에서 'CountDaysNow' 검색\n\n#디데이카운터 #디데이 #카운트다운",
+    "title": "2027학년도 수능 D-4",
+    "alt": "CountDaysNow — 2027학년도 수능 D-4 — 할 수 있어요 — App Store · Google Play에서 'CountDaysNow' 검색 — D-day 위젯·기념일·날짜계산",
+    "name": "CountDaysNow",
+    "hook": "2027학년도 수능 D-4",
     "tags": [
-     "#台湾華語",
-     "#ボポモフォ",
-     "#中国語",
-     "#音声",
-     "#子供",
-     "#LumiBopomofoPro"
+     "#디데이카운터",
+     "#디데이",
+     "#카운트다운",
+     "#날짜계산",
+     "#기념일"
     ],
-    "caption": "37音すべて アンロック\n音を聞いて 正しい魚を釣ろう\n注音符号・声調練習・なぞり書き\nLumi Bopomofo Pro：台湾華語\nApp Storeで「ボポモフォ 子供」を検索\nAndroidはGoogle Playで\n\n#台湾華語 #ボポモフォ #LumiBopomofoPro",
-    "button": "App Storeで入手",
-    "variant": "c",
-    "alt": "Lumi Bopomofo Pro：台湾華語 — 37音すべて アンロック — 音を聞いて 正しい魚を釣ろう — 注音符号・声調練習・なぞり書き",
-    "store": "https://apps.apple.com/jp/app/id6775773117?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyinPro&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumibopomofopro",
-    "review": {
-     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
-     "url": "https://apps.apple.com/app/id6775773117?action=write-review"
-    },
-    "keywords": [
-     "ボポモフォ",
-     "中国語",
-     "音声",
-     "子供",
-     "幼児",
-     "キッズ"
-    ],
-    "keyline": "注音符号・声調練習・なぞり書き",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "cd6a2b956dd62e2e",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "slot": 15
+    "button": "App Store에서 받기",
+    "store": "https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow"
    },
    {
     "kind": "card",
@@ -2028,138 +2004,114 @@
    },
    {
     "kind": "clip",
-    "key": "moneytag/en",
-    "locale": "en",
-    "app": "moneytag",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/q1lb4b.mp4",
-    "hook": "Export PDF or CSV",
-    "name": "MoneyTag: Income & Expense",
-    "title": "Export PDF or CSV | Projects · Tags · Report | MoneyTag",
+    "key": "hourstaglite_b/de",
+    "locale": "de",
+    "app": "hourstaglite_b",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/93274o.mp4",
+    "hook": "Wieder pleite? Wofür bloß?",
+    "name": "HoursTag Lite: Preis in Zeit",
+    "title": "Wieder pleite? Wofür bloß? | Preis in Zeit | HoursTag Lite",
     "tags": [
-     "#IncomeExpense",
-     "#Profit",
-     "#Loss",
-     "#SideHustle",
-     "#Freelance",
-     "#MoneyTag"
+     "#Shopping",
+     "#Gewohnheiten",
+     "#Minimalismus",
+     "#Stunden",
+     "#Arbeitszeit",
+     "#HoursTagLite"
     ],
-    "caption": "Export PDF or CSV\nOne tag adds up across projects\nProjects · Tags · Report\nMoneyTag: Income & Expense\nSearch “MoneyTag” on the App Store\nAlso on Google Play\n\n#IncomeExpense #Profit #Loss #SideHustle #MoneyTag",
-    "button": "Get it on the App Store",
-    "variant": "c",
-    "alt": "MoneyTag: Income & Expense — Export PDF or CSV — One tag adds up across projects — Projects · Tags · Report",
-    "store": "https://apps.apple.com/us/app/id6801956402?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MoneyTag&referrer=utm_source%3Dsocial%26utm_campaign%3Dmoneytag",
+    "caption": "Wieder pleite? Wofür bloß?\nHoursTag Lite zeigt Spontankäufe in Stunden\nHoursTag Lite: Preis in Zeit\nIm App Store nach „HoursTag Lite“ suchen\nAuch bei Google Play\n\n#Shopping #Gewohnheiten #Minimalismus #Stunden #HoursTagLite",
+    "button": "Im App Store laden",
+    "variant": "a",
+    "alt": "HoursTag Lite: Preis in Zeit — Wieder pleite? Wofür bloß? — HoursTag Lite zeigt Spontankäufe in Stunden",
+    "store": "https://apps.apple.com/de/app/id6794039979?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite&referrer=utm_source%3Dsocial%26utm_campaign%3Dhourstaglite",
     "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6801956402?action=write-review"
+     "label": "Sie nutzen diese App bereits? Bewerten oder rezensieren Sie sie im App Store",
+     "url": "https://apps.apple.com/app/id6794039979?action=write-review"
     },
     "keywords": [
-     "profit",
-     "loss",
-     "side hustle",
-     "freelance",
-     "business",
-     "accounting"
+     "impulskauf",
+     "lohnt sich",
+     "geld",
+     "shopping",
+     "gewohnheiten",
+     "minimalismus"
     ],
-    "keyline": "Projects · Tags · Report",
+    "keyline": "Preis in Zeit",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "2f51dc9855d60b64",
-     "real_recording": false,
+     "board": "a93acda324b6d926",
+     "real_recording": true,
      "rules": "2026-10-18"
     },
     "slot": 15
    },
    {
     "kind": "clip",
-    "key": "wordmate/en",
+    "key": "hourstaglite_b/en",
     "locale": "en",
-    "app": "wordmate",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/5ieeti.mp4",
-    "hook": "Or right on your wrist",
-    "name": "Wordmate: Learn 44 Languages",
-    "title": "Or right on your wrist | Learn 44 Languages | Wordmate",
+    "app": "hourstaglite_b",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/5qjuaq.mp4",
+    "hook": "HoursTag Lite shows impulse buys in hours",
+    "name": "HoursTag Lite: Price in Hours",
+    "title": "HoursTag Lite shows impulse buys in hours | Stop Impulse Buying & Save | HoursTag Lite",
     "tags": [
-     "#Learn44Languages",
-     "#Italian",
-     "#Chinese",
-     "#Portuguese",
-     "#Russian",
-     "#Wordmate"
+     "#Spending",
+     "#Planner",
+     "#Finance",
+     "#Shopping",
+     "#Frugal",
+     "#HoursTagLite"
     ],
-    "caption": "Or right on your wrist\nKeep your streak going\nWordmate: Learn 44 Languages\nSearch “44 languages” on the App Store\nAlso on Google Play\n\n#Learn44Languages #Italian #Chinese #Portuguese #Wordmate",
+    "caption": "HoursTag Lite shows impulse buys in hours\nBefore you buy: how many work hours?\nStop Impulse Buying & Save\nHoursTag Lite: Price in Hours\nSearch “HoursTag Lite” on the App Store\nAlso on Google Play\n\n#Spending #Planner #Finance #Shopping #HoursTagLite",
     "button": "Get it on the App Store",
     "variant": "b",
-    "alt": "Wordmate: Learn 44 Languages — Or right on your wrist — Keep your streak going",
-    "store": "https://apps.apple.com/us/app/id6789917808?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlyn.flashdot&referrer=utm_source%3Dsocial%26utm_campaign%3Dwordmate",
+    "alt": "HoursTag Lite: Price in Hours — HoursTag Lite shows impulse buys in hours — Before you buy: how many work hours? — Stop Impulse Buying & Save",
+    "store": "https://apps.apple.com/us/app/id6794039979?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite&referrer=utm_source%3Dsocial%26utm_campaign%3Dhourstaglite",
     "review": {
      "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6789917808?action=write-review"
+     "url": "https://apps.apple.com/app/id6794039979?action=write-review"
     },
     "keywords": [
-     "italian",
-     "chinese",
-     "portuguese",
-     "russian",
-     "arabic",
-     "hindi"
+     "expense",
+     "budget",
+     "money",
+     "spending",
+     "planner",
+     "finance"
     ],
-    "keyline": "Learn 44 Languages",
+    "keyline": "Stop Impulse Buying & Save",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "93ebac3fc2dd0637",
-     "real_recording": false,
+     "board": "a93acda324b6d926",
+     "real_recording": true,
      "rules": "2026-10-18"
     },
     "slot": 15
    },
    {
-    "kind": "clip",
-    "key": "lumibopomofopro/ja",
-    "locale": "ja",
-    "app": "lumibopomofopro",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/wkychp.mp4",
-    "hook": "37音すべて アンロック",
-    "name": "Lumi Bopomofo Pro：台湾華語",
-    "title": "37音すべて アンロック | 注音符号・声調練習・なぞり書き | Lumi Bopomofo Pro",
+    "kind": "card",
+    "key": "card/suneung2027/2026-11-15",
+    "locale": "ko",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/countdown-cards/card-20261115.jpg",
+    "caption": "2027학년도 수능 D-4\n할 수 있어요\n\nApp Store · Google Play에서 'CountDaysNow' 검색\n\n#디데이카운터 #디데이 #카운트다운 #날짜계산 #기념일",
+    "title": "2027학년도 수능 D-4",
+    "alt": "CountDaysNow — 2027학년도 수능 D-4 — 할 수 있어요 — App Store · Google Play에서 'CountDaysNow' 검색 — D-day 위젯·기념일·날짜계산",
+    "name": "CountDaysNow",
+    "hook": "2027학년도 수능 D-4",
     "tags": [
-     "#台湾華語",
-     "#ボポモフォ",
-     "#中国語",
-     "#音声",
-     "#子供",
-     "#LumiBopomofoPro"
+     "#디데이카운터",
+     "#디데이",
+     "#카운트다운",
+     "#날짜계산",
+     "#기념일"
     ],
-    "caption": "37音すべて アンロック\n音を聞いて 正しい魚を釣ろう\n注音符号・声調練習・なぞり書き\nLumi Bopomofo Pro：台湾華語\nApp Storeで「ボポモフォ 子供」を検索\nAndroidはGoogle Playで\n\n#台湾華語 #ボポモフォ #中国語 #音声 #LumiBopomofoPro",
-    "button": "App Storeで入手",
-    "variant": "c",
-    "alt": "Lumi Bopomofo Pro：台湾華語 — 37音すべて アンロック — 音を聞いて 正しい魚を釣ろう — 注音符号・声調練習・なぞり書き",
-    "store": "https://apps.apple.com/jp/app/id6775773117?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyinPro&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumibopomofopro",
-    "review": {
-     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
-     "url": "https://apps.apple.com/app/id6775773117?action=write-review"
-    },
-    "keywords": [
-     "ボポモフォ",
-     "中国語",
-     "音声",
-     "子供",
-     "幼児",
-     "キッズ"
-    ],
-    "keyline": "注音符号・声調練習・なぞり書き",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "cd6a2b956dd62e2e",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "slot": 15
+    "button": "App Store에서 받기",
+    "store": "https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow"
    },
    {
     "kind": "card",
@@ -2365,179 +2317,182 @@
    },
    {
     "kind": "clip",
-    "key": "moneytag/en",
-    "locale": "en",
-    "app": "moneytag",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/q1lb4b.mp4",
-    "hook": "One tag adds up across projects",
-    "name": "MoneyTag: Income & Expense",
-    "title": "One tag adds up across projects | Projects · Tags · Report | MoneyTag",
+    "key": "hourstaglite_b/de",
+    "locale": "de",
+    "app": "hourstaglite_b",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/93274o.mp4",
+    "hook": "HoursTag Lite zeigt Spontankäufe in Stunden",
+    "name": "HoursTag Lite: Preis in Zeit",
+    "title": "HoursTag Lite zeigt Spontankäufe in Stunden | Preis in Zeit | HoursTag Lite",
     "tags": [
-     "#IncomeExpense",
-     "#Profit",
-     "#Loss",
-     "#SideHustle",
-     "#Freelance",
-     "#MoneyTag"
+     "#Shopping",
+     "#Gewohnheiten",
+     "#Minimalismus",
+     "#Stunden",
+     "#Arbeitszeit",
+     "#HoursTagLite"
     ],
-    "caption": "One tag adds up across projects\nNet result, month by month\nProjects · Tags · Report\nMoneyTag: Income & Expense\nSearch “MoneyTag” on the App Store\nAlso on Google Play\n\n#IncomeExpense #Profit #Loss #SideHustle #MoneyTag",
-    "button": "Get it on the App Store",
+    "caption": "HoursTag Lite zeigt Spontankäufe in Stunden\nVor dem Kauf: Wie viele Arbeitsstunden?\nHoursTag Lite: Preis in Zeit\nIm App Store nach „HoursTag Lite“ suchen\nAuch bei Google Play\n\n#Shopping #Gewohnheiten #Minimalismus #Stunden #HoursTagLite",
+    "button": "Im App Store laden",
     "variant": "b",
-    "alt": "MoneyTag: Income & Expense — One tag adds up across projects — Net result, month by month — Projects · Tags · Report",
-    "store": "https://apps.apple.com/us/app/id6801956402?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MoneyTag&referrer=utm_source%3Dsocial%26utm_campaign%3Dmoneytag",
+    "alt": "HoursTag Lite: Preis in Zeit — HoursTag Lite zeigt Spontankäufe in Stunden — Vor dem Kauf: Wie viele Arbeitsstunden?",
+    "store": "https://apps.apple.com/de/app/id6794039979?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite&referrer=utm_source%3Dsocial%26utm_campaign%3Dhourstaglite",
     "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6801956402?action=write-review"
+     "label": "Sie nutzen diese App bereits? Bewerten oder rezensieren Sie sie im App Store",
+     "url": "https://apps.apple.com/app/id6794039979?action=write-review"
     },
     "keywords": [
-     "profit",
-     "loss",
-     "side hustle",
-     "freelance",
-     "business",
-     "accounting"
+     "impulskauf",
+     "lohnt sich",
+     "geld",
+     "shopping",
+     "gewohnheiten",
+     "minimalismus"
     ],
-    "keyline": "Projects · Tags · Report",
+    "keyline": "Preis in Zeit",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "2f51dc9855d60b64",
-     "real_recording": false,
+     "board": "a93acda324b6d926",
+     "real_recording": true,
      "rules": "2026-10-18"
     },
     "youtube": {
-     "title": "One tag adds up across projects | MoneyTag #Shorts",
-     "description": "One tag adds up across projects\nNet result, month by month\nProjects · Tags · Report\n\nMoneyTag: Income & Expense\nApp Store: https://apps.apple.com/us/app/id6801956402?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MoneyTag&referrer=utm_source%3Dsocial%26utm_campaign%3Dmoneytag\nAlready using this app? Rate or review it on the App Store\nhttps://apps.apple.com/app/id6801956402?action=write-review\n\nprofit · loss · side hustle · freelance · business · accounting\n\n#Shorts #IncomeExpense #MoneyTag",
+     "title": "HoursTag Lite zeigt Spontankäufe in Stunden | HoursTag Lite #Shorts",
+     "description": "HoursTag Lite zeigt Spontankäufe in Stunden\nVor dem Kauf: Wie viele Arbeitsstunden?\nPreis in Zeit\n\nHoursTag Lite: Preis in Zeit\nApp Store: https://apps.apple.com/de/app/id6794039979?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite&referrer=utm_source%3Dsocial%26utm_campaign%3Dhourstaglite\nSie nutzen diese App bereits? Bewerten oder rezensieren Sie sie im App Store\nhttps://apps.apple.com/app/id6794039979?action=write-review\n\nimpulskauf · lohnt sich · geld · shopping · gewohnheiten · minimalismus\n\n#Shorts #Shopping #HoursTagLite",
      "tags": [
-      "profit",
-      "loss",
-      "side hustle",
-      "freelance",
-      "business",
-      "accounting",
-      "IncomeExpense",
-      "SideHustle",
-      "MoneyTag"
+      "impulskauf",
+      "lohnt sich",
+      "geld",
+      "shopping",
+      "gewohnheiten",
+      "minimalismus",
+      "Stunden",
+      "Arbeitszeit",
+      "HoursTagLite",
+      "HoursTag Lite"
      ]
     },
     "slot": 15
    },
    {
     "kind": "clip",
-    "key": "wordmate/en",
+    "key": "hourstaglite/en",
     "locale": "en",
-    "app": "wordmate",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/5ieeti.mp4",
-    "hook": "Or right on your wrist",
-    "name": "Wordmate: Learn 44 Languages",
-    "title": "Or right on your wrist | Learn 44 Languages | Wordmate",
+    "app": "hourstaglite",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/5qizl9.mp4",
+    "hook": "Need, want or impulse?",
+    "name": "HoursTag Lite: Price in Hours",
+    "title": "Need, want or impulse? | Stop Impulse Buying & Save | HoursTag Lite",
     "tags": [
-     "#Learn44Languages",
-     "#Italian",
-     "#Chinese",
-     "#Portuguese",
-     "#Russian",
-     "#Wordmate"
+     "#PriceInHours",
+     "#Expense",
+     "#Budget",
+     "#Money",
+     "#Spending",
+     "#HoursTagLite"
     ],
-    "caption": "Or right on your wrist\nKeep your streak going\nWordmate: Learn 44 Languages\nSearch “44 languages” on the App Store\nAlso on Google Play\n\n#Learn44Languages #Italian #Chinese #Portuguese #Wordmate",
+    "caption": "Need, want or impulse?\nSave it to your value pattern\nStop Impulse Buying & Save\nHoursTag Lite: Price in Hours\nSearch “HoursTag Lite” on the App Store\nAlso on Google Play\n\n#PriceInHours #Expense #Budget #Money #HoursTagLite",
     "button": "Get it on the App Store",
     "variant": "b",
-    "alt": "Wordmate: Learn 44 Languages — Or right on your wrist — Keep your streak going",
-    "store": "https://apps.apple.com/us/app/id6789917808?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlyn.flashdot&referrer=utm_source%3Dsocial%26utm_campaign%3Dwordmate",
+    "alt": "HoursTag Lite: Price in Hours — Need, want or impulse? — Save it to your value pattern — Stop Impulse Buying & Save",
+    "store": "https://apps.apple.com/us/app/id6794039979?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite&referrer=utm_source%3Dsocial%26utm_campaign%3Dhourstaglite",
     "review": {
      "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6789917808?action=write-review"
+     "url": "https://apps.apple.com/app/id6794039979?action=write-review"
     },
     "keywords": [
-     "italian",
-     "chinese",
-     "portuguese",
-     "russian",
-     "arabic",
-     "hindi"
+     "expense",
+     "budget",
+     "money",
+     "spending",
+     "planner",
+     "finance"
     ],
-    "keyline": "Learn 44 Languages",
+    "keyline": "Stop Impulse Buying & Save",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "93ebac3fc2dd0637",
-     "real_recording": false,
+     "board": "2c132c2ab95f8db8",
+     "real_recording": true,
      "rules": "2026-10-18"
     },
     "youtube": {
-     "title": "Or right on your wrist | Wordmate #Shorts",
-     "description": "Or right on your wrist\nKeep your streak going\nLearn 44 Languages\n\nWordmate: Learn 44 Languages\nApp Store: https://apps.apple.com/us/app/id6789917808?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.flashdot&referrer=utm_source%3Dsocial%26utm_campaign%3Dwordmate\nAlready using this app? Rate or review it on the App Store\nhttps://apps.apple.com/app/id6789917808?action=write-review\n\nitalian · chinese · portuguese · russian · arabic · hindi\n\n#Shorts #Learn44Languages #Wordmate",
+     "title": "Need, want or impulse? | HoursTag Lite #Shorts",
+     "description": "Need, want or impulse?\nSave it to your value pattern\nStop Impulse Buying & Save\n\nHoursTag Lite: Price in Hours\nApp Store: https://apps.apple.com/us/app/id6794039979?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite&referrer=utm_source%3Dsocial%26utm_campaign%3Dhourstaglite\nAlready using this app? Rate or review it on the App Store\nhttps://apps.apple.com/app/id6794039979?action=write-review\n\nexpense · budget · money · spending · planner · finance\n\n#Shorts #PriceInHours #HoursTagLite",
      "tags": [
-      "italian",
-      "chinese",
-      "portuguese",
-      "russian",
-      "arabic",
-      "hindi",
-      "Learn44Languages",
-      "Wordmate"
+      "expense",
+      "budget",
+      "money",
+      "spending",
+      "planner",
+      "finance",
+      "PriceInHours",
+      "HoursTagLite",
+      "HoursTag Lite"
      ]
     },
     "slot": 15
    },
    {
     "kind": "clip",
-    "key": "lumibopomofopro/ja",
-    "locale": "ja",
-    "app": "lumibopomofopro",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/wkychp.mp4",
-    "hook": "音を聞いて 正しい魚を釣ろう",
-    "name": "Lumi Bopomofo Pro：台湾華語",
-    "title": "音を聞いて 正しい魚を釣ろう | 注音符号・声調練習・なぞり書き | Lumi Bopomofo Pro",
+    "key": "hourstaglite_b/en",
+    "locale": "en",
+    "app": "hourstaglite_b",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/5qjuaq.mp4",
+    "hook": "HoursTag Lite shows impulse buys in hours",
+    "name": "HoursTag Lite: Price in Hours",
+    "title": "HoursTag Lite shows impulse buys in hours | Stop Impulse Buying & Save | HoursTag Lite",
     "tags": [
-     "#台湾華語",
-     "#ボポモフォ",
-     "#中国語",
-     "#音声",
-     "#子供",
-     "#LumiBopomofoPro"
+     "#Spending",
+     "#Planner",
+     "#Finance",
+     "#Shopping",
+     "#Frugal",
+     "#HoursTagLite"
     ],
-    "caption": "音を聞いて 正しい魚を釣ろう\n制限時間で ベストに挑戦\n注音符号・声調練習・なぞり書き\nLumi Bopomofo Pro：台湾華語\nApp Storeで「ボポモフォ 子供」を検索\nAndroidはGoogle Playで\n\n#台湾華語 #ボポモフォ #中国語 #音声 #LumiBopomofoPro",
-    "button": "App Storeで入手",
+    "caption": "HoursTag Lite shows impulse buys in hours\nBefore you buy: how many work hours?\nStop Impulse Buying & Save\nHoursTag Lite: Price in Hours\nSearch “HoursTag Lite” on the App Store\nAlso on Google Play\n\n#Spending #Planner #Finance #Shopping #HoursTagLite",
+    "button": "Get it on the App Store",
     "variant": "b",
-    "alt": "Lumi Bopomofo Pro：台湾華語 — 音を聞いて 正しい魚を釣ろう — 制限時間で ベストに挑戦 — 注音符号・声調練習・なぞり書き",
-    "store": "https://apps.apple.com/jp/app/id6775773117?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyinPro&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumibopomofopro",
+    "alt": "HoursTag Lite: Price in Hours — HoursTag Lite shows impulse buys in hours — Before you buy: how many work hours? — Stop Impulse Buying & Save",
+    "store": "https://apps.apple.com/us/app/id6794039979?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite&referrer=utm_source%3Dsocial%26utm_campaign%3Dhourstaglite",
     "review": {
-     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
-     "url": "https://apps.apple.com/app/id6775773117?action=write-review"
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6794039979?action=write-review"
     },
     "keywords": [
-     "ボポモフォ",
-     "中国語",
-     "音声",
-     "子供",
-     "幼児",
-     "キッズ"
+     "expense",
+     "budget",
+     "money",
+     "spending",
+     "planner",
+     "finance"
     ],
-    "keyline": "注音符号・声調練習・なぞり書き",
+    "keyline": "Stop Impulse Buying & Save",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "cd6a2b956dd62e2e",
-     "real_recording": false,
+     "board": "a93acda324b6d926",
+     "real_recording": true,
      "rules": "2026-10-18"
     },
     "youtube": {
-     "title": "音を聞いて 正しい魚を釣ろう | Lumi Bopomofo Pro #Shorts",
-     "description": "音を聞いて 正しい魚を釣ろう\n制限時間で ベストに挑戦\n注音符号・声調練習・なぞり書き\n\nLumi Bopomofo Pro：台湾華語\nApp Store: https://apps.apple.com/jp/app/id6775773117?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyinPro&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumibopomofopro\nこのアプリをお使いですか？App Store で評価・レビューできます\nhttps://apps.apple.com/app/id6775773117?action=write-review\n\nボポモフォ · 中国語 · 音声 · 子供 · 幼児 · キッズ\n\n#Shorts #台湾華語 #LumiBopomofoPro",
+     "title": "HoursTag Lite shows impulse buys in hours | HoursTag Lite #Shorts",
+     "description": "HoursTag Lite shows impulse buys in hours\nBefore you buy: how many work hours?\nStop Impulse Buying & Save\n\nHoursTag Lite: Price in Hours\nApp Store: https://apps.apple.com/us/app/id6794039979?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite&referrer=utm_source%3Dsocial%26utm_campaign%3Dhourstaglite\nAlready using this app? Rate or review it on the App Store\nhttps://apps.apple.com/app/id6794039979?action=write-review\n\nexpense · budget · money · spending · planner · finance\n\n#Shorts #Spending #HoursTagLite",
      "tags": [
-      "ボポモフォ",
-      "中国語",
-      "音声",
-      "子供",
-      "幼児",
-      "キッズ",
-      "台湾華語",
-      "LumiBopomofoPro",
-      "Lumi Bopomofo Pro"
+      "expense",
+      "budget",
+      "money",
+      "spending",
+      "planner",
+      "finance",
+      "Shopping",
+      "Frugal",
+      "HoursTagLite",
+      "HoursTag Lite"
      ]
     },
     "slot": 15
@@ -2693,150 +2648,175 @@
    },
    {
     "kind": "clip",
-    "key": "moneytag/en",
-    "locale": "en",
-    "app": "moneytag",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/q1lb4b.mp4",
-    "hook": "Which side gig actually pays?",
-    "name": "MoneyTag: Income & Expense",
-    "title": "Which side gig actually pays? | Projects · Tags · Report | MoneyTag",
+    "key": "hourstaglite_b/de",
+    "locale": "de",
+    "app": "hourstaglite_b",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/93274o.mp4",
+    "hook": "HoursTag Lite zeigt Spontankäufe in Stunden",
+    "name": "HoursTag Lite: Preis in Zeit",
+    "title": "HoursTag Lite zeigt Spontankäufe in Stunden | Preis in Zeit | HoursTag Lite",
     "tags": [
-     "#IncomeExpense",
-     "#Profit",
-     "#Loss",
-     "#SideHustle",
-     "#Freelance",
-     "#MoneyTag"
+     "#Shopping",
+     "#Gewohnheiten",
+     "#Minimalismus",
+     "#Stunden",
+     "#Arbeitszeit",
+     "#HoursTagLite"
     ],
-    "caption": "Which side gig actually pays?\nOne tag adds up across projects\nProjects · Tags · Report\nMoneyTag: Income & Expense\nSearch “MoneyTag” on the App Store\nAlso on Google Play\n\n#IncomeExpense #Profit #Loss #SideHustle #MoneyTag",
-    "button": "Get it on the App Store",
-    "variant": "a",
-    "alt": "MoneyTag: Income & Expense — Which side gig actually pays? — One tag adds up across projects — Projects · Tags · Report",
-    "store": "https://apps.apple.com/us/app/id6801956402?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MoneyTag&referrer=utm_source%3Dsocial%26utm_campaign%3Dmoneytag",
+    "caption": "HoursTag Lite zeigt Spontankäufe in Stunden\nVor dem Kauf: Wie viele Arbeitsstunden?\nHoursTag Lite: Preis in Zeit\nIm App Store nach „HoursTag Lite“ suchen\nAuch bei Google Play\n\n#Shopping #Gewohnheiten #Minimalismus #Stunden #HoursTagLite",
+    "button": "Im App Store laden",
+    "variant": "b",
+    "alt": "HoursTag Lite: Preis in Zeit — HoursTag Lite zeigt Spontankäufe in Stunden — Vor dem Kauf: Wie viele Arbeitsstunden?",
+    "store": "https://apps.apple.com/de/app/id6794039979?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite&referrer=utm_source%3Dsocial%26utm_campaign%3Dhourstaglite",
     "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6801956402?action=write-review"
+     "label": "Sie nutzen diese App bereits? Bewerten oder rezensieren Sie sie im App Store",
+     "url": "https://apps.apple.com/app/id6794039979?action=write-review"
     },
     "keywords": [
-     "profit",
-     "loss",
-     "side hustle",
-     "freelance",
-     "business",
-     "accounting"
+     "impulskauf",
+     "lohnt sich",
+     "geld",
+     "shopping",
+     "gewohnheiten",
+     "minimalismus"
     ],
-    "keyline": "Projects · Tags · Report",
+    "keyline": "Preis in Zeit",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "2f51dc9855d60b64",
-     "real_recording": false,
+     "board": "a93acda324b6d926",
+     "real_recording": true,
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "Which side gig actually pays?\nOne tag adds up across projects\nProjects · Tags · Report\nMoneyTag: Income & Expense\nSearch “MoneyTag” on the App Store\nAlso on Google Play\n\n#IncomeExpense #Profit #Loss #SideHustle #MoneyTag\n\nGet it on the App Store: https://apps.apple.com/us/app/id6801956402?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MoneyTag&referrer=utm_source%3Dsocial%26utm_campaign%3Dmoneytag",
-     "link": "https://apps.apple.com/us/app/id6801956402?pt=118326163&ct=social&mt=8"
+     "description": "HoursTag Lite zeigt Spontankäufe in Stunden\nVor dem Kauf: Wie viele Arbeitsstunden?\nHoursTag Lite: Preis in Zeit\nIm App Store nach „HoursTag Lite“ suchen\nAuch bei Google Play\n\n#Shopping #Gewohnheiten #Minimalismus #Stunden #HoursTagLite\n\nIm App Store laden: https://apps.apple.com/de/app/id6794039979?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite&referrer=utm_source%3Dsocial%26utm_campaign%3Dhourstaglite",
+     "link": "https://apps.apple.com/de/app/id6794039979?pt=118326163&ct=social&mt=8"
     },
     "slot": 15
    },
    {
     "kind": "clip",
-    "key": "wordmate/en",
+    "key": "hourstaglite/en",
     "locale": "en",
-    "app": "wordmate",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/5ieeti.mp4",
-    "hook": "Pick from 44 languages",
-    "name": "Wordmate: Learn 44 Languages",
-    "title": "Pick from 44 languages | Learn 44 Languages | Wordmate",
+    "app": "hourstaglite",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/5qizl9.mp4",
+    "hook": "Need, want or impulse?",
+    "name": "HoursTag Lite: Price in Hours",
+    "title": "Need, want or impulse? | Stop Impulse Buying & Save | HoursTag Lite",
     "tags": [
-     "#Learn44Languages",
-     "#Italian",
-     "#Chinese",
-     "#Portuguese",
-     "#Russian",
-     "#Wordmate"
+     "#PriceInHours",
+     "#Expense",
+     "#Budget",
+     "#Money",
+     "#Spending",
+     "#HoursTagLite"
     ],
-    "caption": "Pick from 44 languages\nOr right on your wrist\nWordmate: Learn 44 Languages\nSearch “44 languages” on the App Store\nAlso on Google Play\n\n#Learn44Languages #Italian #Chinese #Portuguese #Wordmate",
+    "caption": "Need, want or impulse?\nSave it to your value pattern\nStop Impulse Buying & Save\nHoursTag Lite: Price in Hours\nSearch “HoursTag Lite” on the App Store\nAlso on Google Play\n\n#PriceInHours #Expense #Budget #Money #HoursTagLite",
+    "button": "Get it on the App Store",
+    "variant": "b",
+    "alt": "HoursTag Lite: Price in Hours — Need, want or impulse? — Save it to your value pattern — Stop Impulse Buying & Save",
+    "store": "https://apps.apple.com/us/app/id6794039979?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite&referrer=utm_source%3Dsocial%26utm_campaign%3Dhourstaglite",
+    "review": {
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6794039979?action=write-review"
+    },
+    "keywords": [
+     "expense",
+     "budget",
+     "money",
+     "spending",
+     "planner",
+     "finance"
+    ],
+    "keyline": "Stop Impulse Buying & Save",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "2c132c2ab95f8db8",
+     "real_recording": true,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "Need, want or impulse?\nSave it to your value pattern\nStop Impulse Buying & Save\nHoursTag Lite: Price in Hours\nSearch “HoursTag Lite” on the App Store\nAlso on Google Play\n\n#PriceInHours #Expense #Budget #Money #HoursTagLite\n\nGet it on the App Store: https://apps.apple.com/us/app/id6794039979?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite&referrer=utm_source%3Dsocial%26utm_campaign%3Dhourstaglite",
+     "link": "https://apps.apple.com/us/app/id6794039979?pt=118326163&ct=social&mt=8"
+    },
+    "slot": 15
+   },
+   {
+    "kind": "clip",
+    "key": "hourstaglite_b/en",
+    "locale": "en",
+    "app": "hourstaglite_b",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/5qjuaq.mp4",
+    "hook": "Now your hours go toward your goal",
+    "name": "HoursTag Lite: Price in Hours",
+    "title": "Now your hours go toward your goal | Stop Impulse Buying & Save | HoursTag Lite",
+    "tags": [
+     "#Spending",
+     "#Planner",
+     "#Finance",
+     "#Shopping",
+     "#Frugal",
+     "#HoursTagLite"
+    ],
+    "caption": "Now your hours go toward your goal\nHoursTag Lite shows impulse buys in hours\nStop Impulse Buying & Save\nHoursTag Lite: Price in Hours\nSearch “HoursTag Lite” on the App Store\nAlso on Google Play\n\n#Spending #Planner #Finance #Shopping #HoursTagLite",
     "button": "Get it on the App Store",
     "variant": "c",
-    "alt": "Wordmate: Learn 44 Languages — Pick from 44 languages — Or right on your wrist",
-    "store": "https://apps.apple.com/us/app/id6789917808?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlyn.flashdot&referrer=utm_source%3Dsocial%26utm_campaign%3Dwordmate",
+    "alt": "HoursTag Lite: Price in Hours — Now your hours go toward your goal — HoursTag Lite shows impulse buys in hours — Stop Impulse Buying & Save",
+    "store": "https://apps.apple.com/us/app/id6794039979?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite&referrer=utm_source%3Dsocial%26utm_campaign%3Dhourstaglite",
     "review": {
      "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6789917808?action=write-review"
+     "url": "https://apps.apple.com/app/id6794039979?action=write-review"
     },
     "keywords": [
-     "italian",
-     "chinese",
-     "portuguese",
-     "russian",
-     "arabic",
-     "hindi"
+     "expense",
+     "budget",
+     "money",
+     "spending",
+     "planner",
+     "finance"
     ],
-    "keyline": "Learn 44 Languages",
+    "keyline": "Stop Impulse Buying & Save",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "93ebac3fc2dd0637",
-     "real_recording": false,
+     "board": "a93acda324b6d926",
+     "real_recording": true,
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "Pick from 44 languages\nOr right on your wrist\nWordmate: Learn 44 Languages\nSearch “44 languages” on the App Store\nAlso on Google Play\n\n#Learn44Languages #Italian #Chinese #Portuguese #Wordmate\n\nGet it on the App Store: https://apps.apple.com/us/app/id6789917808?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.flashdot&referrer=utm_source%3Dsocial%26utm_campaign%3Dwordmate",
-     "link": "https://apps.apple.com/us/app/id6789917808?pt=118326163&ct=social&mt=8"
+     "description": "Now your hours go toward your goal\nHoursTag Lite shows impulse buys in hours\nStop Impulse Buying & Save\nHoursTag Lite: Price in Hours\nSearch “HoursTag Lite” on the App Store\nAlso on Google Play\n\n#Spending #Planner #Finance #Shopping #HoursTagLite\n\nGet it on the App Store: https://apps.apple.com/us/app/id6794039979?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite&referrer=utm_source%3Dsocial%26utm_campaign%3Dhourstaglite",
+     "link": "https://apps.apple.com/us/app/id6794039979?pt=118326163&ct=social&mt=8"
     },
     "slot": 15
    },
    {
-    "kind": "clip",
-    "key": "lumibopomofopro/ja",
-    "locale": "ja",
-    "app": "lumibopomofopro",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/wkychp.mp4",
-    "hook": "注音の練習を 釣りで？",
-    "name": "Lumi Bopomofo Pro：台湾華語",
-    "title": "注音の練習を 釣りで？ | 注音符号・声調練習・なぞり書き | Lumi Bopomofo Pro",
+    "kind": "card",
+    "key": "card/suneung2027/2026-11-15",
+    "locale": "ko",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/countdown-cards/card-20261115.jpg",
+    "caption": "2027학년도 수능 D-4\n할 수 있어요\n\nApp Store · Google Play에서 'CountDaysNow' 검색\n\n#디데이카운터 #디데이 #카운트다운 #날짜계산 #기념일",
+    "title": "2027학년도 수능 D-4",
+    "alt": "CountDaysNow — 2027학년도 수능 D-4 — 할 수 있어요 — App Store · Google Play에서 'CountDaysNow' 검색 — D-day 위젯·기념일·날짜계산",
+    "name": "CountDaysNow",
+    "hook": "2027학년도 수능 D-4",
     "tags": [
-     "#台湾華語",
-     "#ボポモフォ",
-     "#中国語",
-     "#音声",
-     "#子供",
-     "#LumiBopomofoPro"
+     "#디데이카운터",
+     "#디데이",
+     "#카운트다운",
+     "#날짜계산",
+     "#기념일"
     ],
-    "caption": "注音の練習を 釣りで？\n音を聞いて 正しい魚を釣ろう\n注音符号・声調練習・なぞり書き\nLumi Bopomofo Pro：台湾華語\nApp Storeで「ボポモフォ 子供」を検索\nAndroidはGoogle Playで\n\n#台湾華語 #ボポモフォ #中国語 #音声 #LumiBopomofoPro",
-    "button": "App Storeで入手",
-    "variant": "a",
-    "alt": "Lumi Bopomofo Pro：台湾華語 — 注音の練習を 釣りで？ — 音を聞いて 正しい魚を釣ろう — 注音符号・声調練習・なぞり書き",
-    "store": "https://apps.apple.com/jp/app/id6775773117?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyinPro&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumibopomofopro",
-    "review": {
-     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
-     "url": "https://apps.apple.com/app/id6775773117?action=write-review"
-    },
-    "keywords": [
-     "ボポモフォ",
-     "中国語",
-     "音声",
-     "子供",
-     "幼児",
-     "キッズ"
-    ],
-    "keyline": "注音符号・声調練習・なぞり書き",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "cd6a2b956dd62e2e",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
+    "button": "App Store에서 받기",
+    "store": "https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
     "pinterest": {
-     "description": "注音の練習を 釣りで？\n音を聞いて 正しい魚を釣ろう\n注音符号・声調練習・なぞり書き\nLumi Bopomofo Pro：台湾華語\nApp Storeで「ボポモフォ 子供」を検索\nAndroidはGoogle Playで\n\n#台湾華語 #ボポモフォ #中国語 #音声 #LumiBopomofoPro\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6775773117?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyinPro&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumibopomofopro",
-     "link": "https://apps.apple.com/jp/app/id6775773117?pt=118326163&ct=social&mt=8"
-    },
-    "slot": 15
+     "description": "2027학년도 수능 D-4\n할 수 있어요\n\nApp Store · Google Play에서 'CountDaysNow' 검색\n\n#디데이카운터 #디데이 #카운트다운 #날짜계산 #기념일\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
+     "link": "https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8"
+    }
    },
    {
     "kind": "card",
@@ -6768,145 +6748,97 @@
    },
    {
     "kind": "clip",
-    "key": "moneytag/en",
-    "locale": "en",
-    "app": "moneytag",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/q1lb4b.mp4",
-    "hook": "Export PDF or CSV",
-    "name": "MoneyTag: Income & Expense",
-    "title": "Export PDF or CSV | Projects · Tags · Report | MoneyTag",
+    "key": "hourstaglite_b/de",
+    "locale": "de",
+    "app": "hourstaglite_b",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/93274o.mp4",
+    "hook": "Wieder pleite? Wofür bloß?",
+    "name": "HoursTag Lite: Preis in Zeit",
+    "title": "Wieder pleite? Wofür bloß? | Preis in Zeit | HoursTag Lite",
     "tags": [
-     "#IncomeExpense",
-     "#Profit",
-     "#Loss",
-     "#SideHustle",
-     "#Freelance",
-     "#MoneyTag"
+     "#Shopping",
+     "#Gewohnheiten",
+     "#Minimalismus",
+     "#Stunden",
+     "#Arbeitszeit",
+     "#HoursTagLite"
     ],
-    "caption": "Export PDF or CSV\nOne tag adds up across projects\nProjects · Tags · Report\nMoneyTag: Income & Expense\nSearch “MoneyTag” on the App Store\nAlso on Google Play\n\n#IncomeExpense #Profit #Loss #SideHustle #MoneyTag",
-    "button": "Get it on the App Store",
-    "variant": "c",
-    "alt": "MoneyTag: Income & Expense — Export PDF or CSV — One tag adds up across projects — Projects · Tags · Report",
-    "store": "https://apps.apple.com/us/app/id6801956402?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MoneyTag&referrer=utm_source%3Dsocial%26utm_campaign%3Dmoneytag",
+    "caption": "Wieder pleite? Wofür bloß?\nHoursTag Lite zeigt Spontankäufe in Stunden\nHoursTag Lite: Preis in Zeit\nIm App Store nach „HoursTag Lite“ suchen\nAuch bei Google Play\n\n#Shopping #Gewohnheiten #Minimalismus #Stunden #HoursTagLite",
+    "button": "Im App Store laden",
+    "variant": "a",
+    "alt": "HoursTag Lite: Preis in Zeit — Wieder pleite? Wofür bloß? — HoursTag Lite zeigt Spontankäufe in Stunden",
+    "store": "https://apps.apple.com/de/app/id6794039979?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite&referrer=utm_source%3Dsocial%26utm_campaign%3Dhourstaglite",
     "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6801956402?action=write-review"
+     "label": "Sie nutzen diese App bereits? Bewerten oder rezensieren Sie sie im App Store",
+     "url": "https://apps.apple.com/app/id6794039979?action=write-review"
     },
     "keywords": [
-     "profit",
-     "loss",
-     "side hustle",
-     "freelance",
-     "business",
-     "accounting"
+     "impulskauf",
+     "lohnt sich",
+     "geld",
+     "shopping",
+     "gewohnheiten",
+     "minimalismus"
     ],
-    "keyline": "Projects · Tags · Report",
+    "keyline": "Preis in Zeit",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "2f51dc9855d60b64",
-     "real_recording": false,
+     "board": "a93acda324b6d926",
+     "real_recording": true,
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "Export PDF or CSV\nOne tag adds up across projects\nProjects · Tags · Report\nMoneyTag: Income & Expense\nSearch “MoneyTag” on the App Store\nAlso on Google Play\n\n#IncomeExpense #Profit #Loss #SideHustle #MoneyTag\n\nGet it on the App Store: https://apps.apple.com/us/app/id6801956402?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MoneyTag&referrer=utm_source%3Dsocial%26utm_campaign%3Dmoneytag"
+     "caption": "Wieder pleite? Wofür bloß?\nHoursTag Lite zeigt Spontankäufe in Stunden\nHoursTag Lite: Preis in Zeit\nIm App Store nach „HoursTag Lite“ suchen\nAuch bei Google Play\n\n#Shopping #Gewohnheiten #Minimalismus #Stunden #HoursTagLite\n\nIm App Store laden: https://apps.apple.com/de/app/id6794039979?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite&referrer=utm_source%3Dsocial%26utm_campaign%3Dhourstaglite"
     },
     "slot": 15
    },
    {
     "kind": "clip",
-    "key": "wordmate/en",
+    "key": "hourstaglite_b/en",
     "locale": "en",
-    "app": "wordmate",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/5ieeti.mp4",
-    "hook": "Or right on your wrist",
-    "name": "Wordmate: Learn 44 Languages",
-    "title": "Or right on your wrist | Learn 44 Languages | Wordmate",
+    "app": "hourstaglite_b",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/5qjuaq.mp4",
+    "hook": "HoursTag Lite shows impulse buys in hours",
+    "name": "HoursTag Lite: Price in Hours",
+    "title": "HoursTag Lite shows impulse buys in hours | Stop Impulse Buying & Save | HoursTag Lite",
     "tags": [
-     "#Learn44Languages",
-     "#Italian",
-     "#Chinese",
-     "#Portuguese",
-     "#Russian",
-     "#Wordmate"
+     "#Spending",
+     "#Planner",
+     "#Finance",
+     "#Shopping",
+     "#Frugal",
+     "#HoursTagLite"
     ],
-    "caption": "Or right on your wrist\nKeep your streak going\nWordmate: Learn 44 Languages\nSearch “44 languages” on the App Store\nAlso on Google Play\n\n#Learn44Languages #Italian #Chinese #Portuguese #Wordmate",
+    "caption": "HoursTag Lite shows impulse buys in hours\nBefore you buy: how many work hours?\nStop Impulse Buying & Save\nHoursTag Lite: Price in Hours\nSearch “HoursTag Lite” on the App Store\nAlso on Google Play\n\n#Spending #Planner #Finance #Shopping #HoursTagLite",
     "button": "Get it on the App Store",
     "variant": "b",
-    "alt": "Wordmate: Learn 44 Languages — Or right on your wrist — Keep your streak going",
-    "store": "https://apps.apple.com/us/app/id6789917808?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlyn.flashdot&referrer=utm_source%3Dsocial%26utm_campaign%3Dwordmate",
+    "alt": "HoursTag Lite: Price in Hours — HoursTag Lite shows impulse buys in hours — Before you buy: how many work hours? — Stop Impulse Buying & Save",
+    "store": "https://apps.apple.com/us/app/id6794039979?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite&referrer=utm_source%3Dsocial%26utm_campaign%3Dhourstaglite",
     "review": {
      "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6789917808?action=write-review"
+     "url": "https://apps.apple.com/app/id6794039979?action=write-review"
     },
     "keywords": [
-     "italian",
-     "chinese",
-     "portuguese",
-     "russian",
-     "arabic",
-     "hindi"
+     "expense",
+     "budget",
+     "money",
+     "spending",
+     "planner",
+     "finance"
     ],
-    "keyline": "Learn 44 Languages",
+    "keyline": "Stop Impulse Buying & Save",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "93ebac3fc2dd0637",
-     "real_recording": false,
+     "board": "a93acda324b6d926",
+     "real_recording": true,
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "Or right on your wrist\nKeep your streak going\nWordmate: Learn 44 Languages\nSearch “44 languages” on the App Store\nAlso on Google Play\n\n#Learn44Languages #Italian #Chinese #Portuguese #Wordmate\n\nGet it on the App Store: https://apps.apple.com/us/app/id6789917808?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.flashdot&referrer=utm_source%3Dsocial%26utm_campaign%3Dwordmate"
-    },
-    "slot": 15
-   },
-   {
-    "kind": "clip",
-    "key": "lumibopomofopro/ja",
-    "locale": "ja",
-    "app": "lumibopomofopro",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/wkychp.mp4",
-    "hook": "37音すべて アンロック",
-    "name": "Lumi Bopomofo Pro：台湾華語",
-    "title": "37音すべて アンロック | 注音符号・声調練習・なぞり書き | Lumi Bopomofo Pro",
-    "tags": [
-     "#台湾華語",
-     "#ボポモフォ",
-     "#中国語",
-     "#音声",
-     "#子供",
-     "#LumiBopomofoPro"
-    ],
-    "caption": "37音すべて アンロック\n音を聞いて 正しい魚を釣ろう\n注音符号・声調練習・なぞり書き\nLumi Bopomofo Pro：台湾華語\nApp Storeで「ボポモフォ 子供」を検索\nAndroidはGoogle Playで\n\n#台湾華語 #ボポモフォ #中国語 #音声 #LumiBopomofoPro",
-    "button": "App Storeで入手",
-    "variant": "c",
-    "alt": "Lumi Bopomofo Pro：台湾華語 — 37音すべて アンロック — 音を聞いて 正しい魚を釣ろう — 注音符号・声調練習・なぞり書き",
-    "store": "https://apps.apple.com/jp/app/id6775773117?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyinPro&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumibopomofopro",
-    "review": {
-     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
-     "url": "https://apps.apple.com/app/id6775773117?action=write-review"
-    },
-    "keywords": [
-     "ボポモフォ",
-     "中国語",
-     "音声",
-     "子供",
-     "幼児",
-     "キッズ"
-    ],
-    "keyline": "注音符号・声調練習・なぞり書き",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "cd6a2b956dd62e2e",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "tiktok": {
-     "caption": "37音すべて アンロック\n音を聞いて 正しい魚を釣ろう\n注音符号・声調練習・なぞり書き\nLumi Bopomofo Pro：台湾華語\nApp Storeで「ボポモフォ 子供」を検索\nAndroidはGoogle Playで\n\n#台湾華語 #ボポモフォ #中国語 #音声 #LumiBopomofoPro\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6775773117?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyinPro&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumibopomofopro"
+     "caption": "HoursTag Lite shows impulse buys in hours\nBefore you buy: how many work hours?\nStop Impulse Buying & Save\nHoursTag Lite: Price in Hours\nSearch “HoursTag Lite” on the App Store\nAlso on Google Play\n\n#Spending #Planner #Finance #Shopping #HoursTagLite\n\nGet it on the App Store: https://apps.apple.com/us/app/id6794039979?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite&referrer=utm_source%3Dsocial%26utm_campaign%3Dhourstaglite"
     },
     "slot": 15
    }
@@ -7956,19 +7888,19 @@
     "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/rj2q5p.mp4",
     "hook": "媽媽生日 還有幾天？",
     "name": "CountDaysNow: Event Counter",
-    "title": "媽媽生日 還有幾天？ | 倒數日 · 倒數計時 · 紀念日 | CountDaysNow",
+    "title": "媽媽生日 還有幾天？ | 倒數日・倒數小工具・紀念日・每日焦點 | CountDaysNow",
     "tags": [
-     "#倒數日",
      "#倒數計時",
-     "#紀念日",
      "#生日",
      "#還有幾天",
+     "#農曆",
+     "#鎖定畫面",
      "#CountDaysNow"
     ],
-    "caption": "媽媽生日 還有幾天？\n已經過了幾天 也幫你數著\n倒數日 · 倒數計時 · 紀念日\nCountDaysNow: Event Counter\n在 App Store 搜尋「CountDaysNow」\nAndroid 版在 Google Play\n\n#倒數日 #倒數計時 #CountDaysNow",
+    "caption": "媽媽生日 還有幾天？\n已經過了幾天 也幫你數著\n倒數日・倒數小工具・紀念日・每日焦點\nCountDaysNow: Event Counter\n在 App Store 搜尋「CountDaysNow」\nAndroid 版在 Google Play\n\n#倒數計時 #生日 #CountDaysNow",
     "button": "在 App Store 下載",
     "variant": "a",
-    "alt": "CountDaysNow: Event Counter — 媽媽生日 還有幾天？ — 已經過了幾天 也幫你數著 — 倒數日 · 倒數計時 · 紀念日",
+    "alt": "CountDaysNow: Event Counter — 媽媽生日 還有幾天？ — 已經過了幾天 也幫你數著 — 倒數日・倒數小工具・紀念日・每日焦點",
     "store": "https://apps.apple.com/tw/app/id6807079789?pt=118326163&ct=social&mt=8",
     "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
     "review": {
@@ -7976,14 +7908,14 @@
      "url": "https://apps.apple.com/app/id6807079789?action=write-review"
     },
     "keywords": [
-     "倒數日",
      "倒數計時",
-     "紀念日",
      "生日",
      "還有幾天",
-     "農曆"
+     "農曆",
+     "鎖定畫面",
+     "小工具"
     ],
-    "keyline": "倒數日 · 倒數計時 · 紀念日",
+    "keyline": "倒數日・倒數小工具・紀念日・每日焦點",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
@@ -8000,19 +7932,19 @@
     "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/etlqjb.mp4",
     "hook": "スキン100種類",
     "name": "CountDaysNow: Event Counter",
-    "title": "スキン100種類 | カウントダウン · あと何日 · 経過日数 | CountDaysNow",
+    "title": "スキン100種類 | カウントダウン・あと何日・記念日・今日のフォーカス | CountDaysNow",
     "tags": [
-     "#カウントダウン",
-     "#あと何日",
      "#経過日数",
      "#日数計算",
-     "#記念日",
+     "#誕生日",
+     "#ウィジェット",
+     "#ロック画面",
      "#CountDaysNow"
     ],
-    "caption": "スキン100種類\nあれから何日かも ひと目で\nカウントダウン · あと何日 · 経過日数\nCountDaysNow: Event Counter\nApp Storeで「CountDaysNow」を検索\nAndroidはGoogle Playで\n\n#カウントダウン #あと何日 #CountDaysNow",
+    "caption": "スキン100種類\nあれから何日かも ひと目で\nカウントダウン・あと何日・記念日・今日のフォーカス\nCountDaysNow: Event Counter\nApp Storeで「CountDaysNow」を検索\nAndroidはGoogle Playで\n\n#経過日数 #日数計算 #CountDaysNow",
     "button": "App Storeで入手",
     "variant": "c",
-    "alt": "CountDaysNow: Event Counter — スキン100種類 — あれから何日かも ひと目で — カウントダウン · あと何日 · 経過日数",
+    "alt": "CountDaysNow: Event Counter — スキン100種類 — あれから何日かも ひと目で — カウントダウン・あと何日・記念日・今日のフォーカス",
     "store": "https://apps.apple.com/jp/app/id6807079789?pt=118326163&ct=social&mt=8",
     "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
     "review": {
@@ -8020,14 +7952,14 @@
      "url": "https://apps.apple.com/app/id6807079789?action=write-review"
     },
     "keywords": [
-     "カウントダウン",
-     "あと何日",
      "経過日数",
      "日数計算",
-     "記念日",
-     "誕生日"
+     "誕生日",
+     "ウィジェット",
+     "ロック画面",
+     "推し活"
     ],
-    "keyline": "カウントダウン · あと何日 · 経過日数",
+    "keyline": "カウントダウン・あと何日・記念日・今日のフォーカス",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
@@ -8044,7 +7976,7 @@
     "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/1jkp95.mp4",
     "hook": "스킨 100가지",
     "name": "CountDaysNow: Event Counter",
-    "title": "스킨 100가지 | 디데이 카운터 | CountDaysNow",
+    "title": "스킨 100가지 | D-day 위젯·기념일·날짜계산 | CountDaysNow",
     "tags": [
      "#디데이카운터",
      "#디데이",
@@ -8053,10 +7985,10 @@
      "#기념일",
      "#CountDaysNow"
     ],
-    "caption": "스킨 100가지\n지난 날도 며칠째인지 한눈에\n디데이 카운터\nCountDaysNow: Event Counter\nApp Store에서 'CountDaysNow' 검색\nAndroid는 Google Play에서\n\n#디데이카운터 #디데이 #CountDaysNow",
+    "caption": "스킨 100가지\n지난 날도 며칠째인지 한눈에\nD-day 위젯·기념일·날짜계산\nCountDaysNow: Event Counter\nApp Store에서 'CountDaysNow' 검색\nAndroid는 Google Play에서\n\n#디데이카운터 #디데이 #CountDaysNow",
     "button": "App Store에서 받기",
     "variant": "c",
-    "alt": "CountDaysNow: Event Counter — 스킨 100가지 — 지난 날도 며칠째인지 한눈에 — 디데이 카운터",
+    "alt": "CountDaysNow: Event Counter — 스킨 100가지 — 지난 날도 며칠째인지 한눈에 — D-day 위젯·기념일·날짜계산",
     "store": "https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8",
     "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
     "review": {
@@ -8071,7 +8003,7 @@
      "생일",
      "커플"
     ],
-    "keyline": "디데이 카운터",
+    "keyline": "D-day 위젯·기념일·날짜계산",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
@@ -12447,7 +12379,7 @@
     "tags": [
      "#底片濾鏡復古修圖",
      "#自拍",
-     "#拍立得",
+     "#日期戳",
      "#老照片",
      "#美肌",
      "#PhotoCream底片濾鏡"
@@ -12464,7 +12396,7 @@
     },
     "keywords": [
      "自拍",
-     "拍立得",
+     "日期戳",
      "老照片",
      "美肌",
      "文青濾鏡",
@@ -12511,7 +12443,7 @@
      "使い捨てカメラ",
      "粒子",
      "ヴィンテージ",
-     "オールド",
+     "デジカメ風",
      "現像"
     ],
     "keyline": "エモいフィルムカメラ・写真加工",
@@ -14293,14 +14225,14 @@
     "name": "Trip Planet: Kids Quest",
     "title": "“Are we there yet?” Make it a quest | Family Travel Missions & Games | Trip Planet",
     "tags": [
-     "#KidsQuest",
+     "#KidsTravelGames",
      "#Vacation",
      "#Airplane",
      "#Flight",
      "#Road",
      "#TripPlanet"
     ],
-    "caption": "“Are we there yet?” Make it a quest\nFlight-day missions in one tap\nFamily Travel Missions & Games\nTrip Planet: Kids Quest\nSearch “Trip Planet” on the App Store\nAlso on Google Play\n\n#KidsQuest #Vacation #TripPlanet",
+    "caption": "“Are we there yet?” Make it a quest\nFlight-day missions in one tap\nFamily Travel Missions & Games\nTrip Planet: Kids Quest\nSearch “Trip Planet” on the App Store\nAlso on Google Play\n\n#KidsTravelGames #Vacation #TripPlanet",
     "button": "Get it on the App Store",
     "variant": "a",
     "alt": "Trip Planet: Kids Quest — “Are we there yet?” Make it a quest — Flight-day missions in one tap — Family Travel Missions & Games",
@@ -15608,19 +15540,19 @@
     "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/eyvnfp.mp4",
     "hook": "重要日子 放上主畫面小工具",
     "name": "CountDaysNow: Event Counter",
-    "title": "重要日子 放上主畫面小工具 | 倒數日 · 倒數計時 · 紀念日 | CountDaysNow",
+    "title": "重要日子 放上主畫面小工具 | 倒數日・倒數小工具・紀念日・每日焦點 | CountDaysNow",
     "tags": [
-     "#生日",
-     "#還有幾天",
      "#農曆",
      "#鎖定畫面",
      "#小工具",
+     "#戀愛紀念",
+     "#結婚週年",
      "#CountDaysNow"
     ],
-    "caption": "重要日子 放上主畫面小工具\n私人事件 用 Face ID 鎖住\n倒數日 · 倒數計時 · 紀念日\nCountDaysNow: Event Counter\n在 App Store 搜尋「CountDaysNow」\nAndroid 版在 Google Play\n\n#生日 #還有幾天 #CountDaysNow",
+    "caption": "重要日子 放上主畫面小工具\n私人事件 用 Face ID 鎖住\n倒數日・倒數小工具・紀念日・每日焦點\nCountDaysNow: Event Counter\n在 App Store 搜尋「CountDaysNow」\nAndroid 版在 Google Play\n\n#農曆 #鎖定畫面 #CountDaysNow",
     "button": "在 App Store 下載",
     "variant": "b",
-    "alt": "CountDaysNow: Event Counter — 重要日子 放上主畫面小工具 — 私人事件 用 Face ID 鎖住 — 倒數日 · 倒數計時 · 紀念日",
+    "alt": "CountDaysNow: Event Counter — 重要日子 放上主畫面小工具 — 私人事件 用 Face ID 鎖住 — 倒數日・倒數小工具・紀念日・每日焦點",
     "store": "https://apps.apple.com/tw/app/id6807079789?pt=118326163&ct=social&mt=8",
     "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
     "review": {
@@ -15628,14 +15560,14 @@
      "url": "https://apps.apple.com/app/id6807079789?action=write-review"
     },
     "keywords": [
-     "倒數日",
      "倒數計時",
-     "紀念日",
      "生日",
      "還有幾天",
-     "農曆"
+     "農曆",
+     "鎖定畫面",
+     "小工具"
     ],
-    "keyline": "倒數日 · 倒數計時 · 紀念日",
+    "keyline": "倒數日・倒數小工具・紀念日・每日焦點",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
@@ -15652,19 +15584,19 @@
     "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/uyo30v.mp4",
     "hook": "試験も旅行もライブも あと何日？",
     "name": "CountDaysNow: Event Counter",
-    "title": "試験も旅行もライブも あと何日？ | カウントダウン · あと何日 · 経過日数 | CountDaysNow",
+    "title": "試験も旅行もライブも あと何日？ | カウントダウン・あと何日・記念日・今日のフォーカス | CountDaysNow",
     "tags": [
-     "#日数計算",
-     "#記念日",
-     "#誕生日",
      "#ウィジェット",
      "#ロック画面",
+     "#推し活",
+     "#受験",
+     "#旧暦",
      "#CountDaysNow"
     ],
-    "caption": "試験も旅行もライブも あと何日？\n大切な日を ウィジェットに\nカウントダウン · あと何日 · 経過日数\nCountDaysNow: Event Counter\nApp Storeで「CountDaysNow」を検索\nAndroidはGoogle Playで\n\n#日数計算 #記念日 #CountDaysNow",
+    "caption": "試験も旅行もライブも あと何日？\n大切な日を ウィジェットに\nカウントダウン・あと何日・記念日・今日のフォーカス\nCountDaysNow: Event Counter\nApp Storeで「CountDaysNow」を検索\nAndroidはGoogle Playで\n\n#ウィジェット #ロック画面 #CountDaysNow",
     "button": "App Storeで入手",
     "variant": "a",
-    "alt": "CountDaysNow: Event Counter — 試験も旅行もライブも あと何日？ — 大切な日を ウィジェットに — カウントダウン · あと何日 · 経過日数",
+    "alt": "CountDaysNow: Event Counter — 試験も旅行もライブも あと何日？ — 大切な日を ウィジェットに — カウントダウン・あと何日・記念日・今日のフォーカス",
     "store": "https://apps.apple.com/jp/app/id6807079789?pt=118326163&ct=social&mt=8",
     "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
     "review": {
@@ -15672,14 +15604,14 @@
      "url": "https://apps.apple.com/app/id6807079789?action=write-review"
     },
     "keywords": [
-     "カウントダウン",
-     "あと何日",
      "経過日数",
      "日数計算",
-     "記念日",
-     "誕生日"
+     "誕生日",
+     "ウィジェット",
+     "ロック画面",
+     "推し活"
     ],
-    "keyline": "カウントダウン · あと何日 · 経過日数",
+    "keyline": "カウントダウン・あと何日・記念日・今日のフォーカス",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
@@ -15696,7 +15628,7 @@
     "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/ex9pbb.mp4",
     "hook": "시험, 여행, 콘서트 며칠 남았지?",
     "name": "CountDaysNow: Event Counter",
-    "title": "시험, 여행, 콘서트 며칠 남았지? | 디데이 카운터 | CountDaysNow",
+    "title": "시험, 여행, 콘서트 며칠 남았지? | D-day 위젯·기념일·날짜계산 | CountDaysNow",
     "tags": [
      "#기념일",
      "#생일",
@@ -15705,10 +15637,10 @@
      "#전역일",
      "#CountDaysNow"
     ],
-    "caption": "시험, 여행, 콘서트 며칠 남았지?\n중요한 날을 위젯으로\n디데이 카운터\nCountDaysNow: Event Counter\nApp Store에서 'CountDaysNow' 검색\nAndroid는 Google Play에서\n\n#기념일 #생일 #CountDaysNow",
+    "caption": "시험, 여행, 콘서트 며칠 남았지?\n중요한 날을 위젯으로\nD-day 위젯·기념일·날짜계산\nCountDaysNow: Event Counter\nApp Store에서 'CountDaysNow' 검색\nAndroid는 Google Play에서\n\n#기념일 #생일 #CountDaysNow",
     "button": "App Store에서 받기",
     "variant": "a",
-    "alt": "CountDaysNow: Event Counter — 시험, 여행, 콘서트 며칠 남았지? — 중요한 날을 위젯으로 — 디데이 카운터",
+    "alt": "CountDaysNow: Event Counter — 시험, 여행, 콘서트 며칠 남았지? — 중요한 날을 위젯으로 — D-day 위젯·기념일·날짜계산",
     "store": "https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8",
     "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
     "review": {
@@ -15723,7 +15655,7 @@
      "생일",
      "커플"
     ],
-    "keyline": "디데이 카운터",
+    "keyline": "D-day 위젯·기념일·날짜계산",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
@@ -17855,13 +17787,13 @@
     "title": "主畫面 秒變會話本 | 學英文・日文・韓文會話 | DailyMate 用句子學語言",
     "tags": [
      "#學英文日文韓文會話",
-     "#實用會話",
-     "#英文短句",
-     "#學英文",
-     "#發音聆聽",
+     "#口說",
+     "#出國",
+     "#西班牙文",
+     "#法文",
      "#DailyMate用句子學語言"
     ],
-    "caption": "主畫面 秒變會話本\n每個主題都分 初中高三級\n學英文・日文・韓文會話\nDailyMate：用句子學語言\n在 App Store 搜尋「DailyMate 用句子學語言」\nAndroid 版在 Google Play\n\n#學英文日文韓文會話 #實用會話 #DailyMate用句子學語言",
+    "caption": "主畫面 秒變會話本\n每個主題都分 初中高三級\n學英文・日文・韓文會話\nDailyMate：用句子學語言\n在 App Store 搜尋「DailyMate 用句子學語言」\nAndroid 版在 Google Play\n\n#學英文日文韓文會話 #口說 #DailyMate用句子學語言",
     "button": "在 App Store 下載",
     "variant": "a",
     "alt": "DailyMate：用句子學語言 — 主畫面 秒變會話本 — 每個主題都分 初中高三級 — 學英文・日文・韓文會話",
@@ -17872,12 +17804,12 @@
      "url": "https://apps.apple.com/app/id6790418321?action=write-review"
     },
     "keywords": [
-     "實用會話",
-     "英文短句",
-     "學英文",
-     "發音聆聽",
-     "學日文",
-     "學韓文"
+     "口說",
+     "出國",
+     "西班牙文",
+     "法文",
+     "德文",
+     "外語"
     ],
     "keyline": "學英文・日文・韓文會話",
     "compliance": {
@@ -18600,19 +18532,19 @@
     "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/n8dzp3.mp4",
     "hook": "收集 26 位 字母小夥伴",
     "name": "Lumi 字母星球 Pro：ABC啟蒙",
-    "title": "收集 26 位 字母小夥伴 | ABC啟蒙 | Lumi 字母星球 Pro",
+    "title": "收集 26 位 字母小夥伴 | 聽音辨首中尾音・短母音・CVC拼讀 | Lumi 字母星球 Pro",
     "tags": [
-     "#ABC啟蒙",
+     "#兒童英文自然發音",
      "#Phonics",
      "#美語",
      "#英語",
      "#幼兒",
      "#Lumi字母星球Pro"
     ],
-    "caption": "收集 26 位 字母小夥伴\n螢幕上描完 再印成學習單\nLumi 字母星球 Pro：ABC啟蒙\n在 App Store 搜尋「Lumi 字母星球 Pro」\nAndroid 版在 Google Play\n\n#ABC啟蒙 #Phonics #Lumi字母星球Pro",
+    "caption": "收集 26 位 字母小夥伴\n螢幕上描完 再印成學習單\n聽音辨首中尾音・短母音・CVC拼讀\nLumi 字母星球 Pro：ABC啟蒙\n在 App Store 搜尋「Lumi 字母星球 Pro」\nAndroid 版在 Google Play\n\n#兒童英文自然發音 #Phonics #Lumi字母星球Pro",
     "button": "在 App Store 下載",
     "variant": "c",
-    "alt": "Lumi 字母星球 Pro：ABC啟蒙 — 收集 26 位 字母小夥伴 — 螢幕上描完 再印成學習單",
+    "alt": "Lumi 字母星球 Pro：ABC啟蒙 — 收集 26 位 字母小夥伴 — 螢幕上描完 再印成學習單 — 聽音辨首中尾音・短母音・CVC拼讀",
     "store": "https://apps.apple.com/tw/app/id6778491147?pt=118326163&ct=social&mt=8",
     "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiLetters&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiletterspro",
     "review": {
@@ -18627,7 +18559,7 @@
      "國小",
      "學前"
     ],
-    "keyline": "ABC啟蒙",
+    "keyline": "聽音辨首中尾音・短母音・CVC拼讀",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
@@ -24231,19 +24163,19 @@
     "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/rj2q5p.mp4",
     "hook": "已經過了幾天 也幫你數著",
     "name": "CountDaysNow: Event Counter",
-    "title": "已經過了幾天 也幫你數著 | 倒數日 · 倒數計時 · 紀念日 | CountDaysNow",
+    "title": "已經過了幾天 也幫你數著 | 倒數日・倒數小工具・紀念日・每日焦點 | CountDaysNow",
     "tags": [
-     "#倒數日",
      "#倒數計時",
-     "#紀念日",
      "#生日",
      "#還有幾天",
+     "#農曆",
+     "#鎖定畫面",
      "#CountDaysNow"
     ],
-    "caption": "已經過了幾天 也幫你數著\n前 7、3、1 天 提醒你\n倒數日 · 倒數計時 · 紀念日\nCountDaysNow: Event Counter\n在 App Store 搜尋「CountDaysNow」\nAndroid 版在 Google Play\n\n#倒數日 #倒數計時 #紀念日 #生日 #CountDaysNow",
+    "caption": "已經過了幾天 也幫你數著\n前 7、3、1 天 提醒你\n倒數日・倒數小工具・紀念日・每日焦點\nCountDaysNow: Event Counter\n在 App Store 搜尋「CountDaysNow」\nAndroid 版在 Google Play\n\n#倒數計時 #生日 #還有幾天 #農曆 #CountDaysNow",
     "button": "在 App Store 下載",
     "variant": "b",
-    "alt": "CountDaysNow: Event Counter — 已經過了幾天 也幫你數著 — 前 7、3、1 天 提醒你 — 倒數日 · 倒數計時 · 紀念日",
+    "alt": "CountDaysNow: Event Counter — 已經過了幾天 也幫你數著 — 前 7、3、1 天 提醒你 — 倒數日・倒數小工具・紀念日・每日焦點",
     "store": "https://apps.apple.com/tw/app/id6807079789?pt=118326163&ct=social&mt=8",
     "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
     "review": {
@@ -24251,14 +24183,14 @@
      "url": "https://apps.apple.com/app/id6807079789?action=write-review"
     },
     "keywords": [
-     "倒數日",
      "倒數計時",
-     "紀念日",
      "生日",
      "還有幾天",
-     "農曆"
+     "農曆",
+     "鎖定畫面",
+     "小工具"
     ],
-    "keyline": "倒數日 · 倒數計時 · 紀念日",
+    "keyline": "倒數日・倒數小工具・紀念日・每日焦點",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
@@ -24268,14 +24200,14 @@
     },
     "youtube": {
      "title": "已經過了幾天 也幫你數著 | CountDaysNow #Shorts",
-     "description": "已經過了幾天 也幫你數著\n前 7、3、1 天 提醒你\n倒數日 · 倒數計時 · 紀念日\n\nCountDaysNow: Event Counter\nApp Store: https://apps.apple.com/tw/app/id6807079789?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow\n已經在用這款 App？可以到 App Store 評分或撰寫評論\nhttps://apps.apple.com/app/id6807079789?action=write-review\n\n倒數日 · 倒數計時 · 紀念日 · 生日 · 還有幾天 · 農曆\n\n#Shorts #倒數日 #CountDaysNow",
+     "description": "已經過了幾天 也幫你數著\n前 7、3、1 天 提醒你\n倒數日・倒數小工具・紀念日・每日焦點\n\nCountDaysNow: Event Counter\nApp Store: https://apps.apple.com/tw/app/id6807079789?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow\n已經在用這款 App？可以到 App Store 評分或撰寫評論\nhttps://apps.apple.com/app/id6807079789?action=write-review\n\n倒數計時 · 生日 · 還有幾天 · 農曆 · 鎖定畫面 · 小工具\n\n#Shorts #倒數計時 #CountDaysNow",
      "tags": [
-      "倒數日",
       "倒數計時",
-      "紀念日",
       "生日",
       "還有幾天",
       "農曆",
+      "鎖定畫面",
+      "小工具",
       "CountDaysNow"
      ]
     }
@@ -24288,19 +24220,19 @@
     "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/etlqjb.mp4",
     "hook": "あれから何日かも ひと目で",
     "name": "CountDaysNow: Event Counter",
-    "title": "あれから何日かも ひと目で | カウントダウン · あと何日 · 経過日数 | CountDaysNow",
+    "title": "あれから何日かも ひと目で | カウントダウン・あと何日・記念日・今日のフォーカス | CountDaysNow",
     "tags": [
-     "#カウントダウン",
-     "#あと何日",
      "#経過日数",
      "#日数計算",
-     "#記念日",
+     "#誕生日",
+     "#ウィジェット",
+     "#ロック画面",
      "#CountDaysNow"
     ],
-    "caption": "あれから何日かも ひと目で\n7日・3日・1日前に お知らせ\nカウントダウン · あと何日 · 経過日数\nCountDaysNow: Event Counter\nApp Storeで「CountDaysNow」を検索\nAndroidはGoogle Playで\n\n#カウントダウン #あと何日 #経過日数 #日数計算 #CountDaysNow",
+    "caption": "あれから何日かも ひと目で\n7日・3日・1日前に お知らせ\nカウントダウン・あと何日・記念日・今日のフォーカス\nCountDaysNow: Event Counter\nApp Storeで「CountDaysNow」を検索\nAndroidはGoogle Playで\n\n#経過日数 #日数計算 #誕生日 #ウィジェット #CountDaysNow",
     "button": "App Storeで入手",
     "variant": "b",
-    "alt": "CountDaysNow: Event Counter — あれから何日かも ひと目で — 7日・3日・1日前に お知らせ — カウントダウン · あと何日 · 経過日数",
+    "alt": "CountDaysNow: Event Counter — あれから何日かも ひと目で — 7日・3日・1日前に お知らせ — カウントダウン・あと何日・記念日・今日のフォーカス",
     "store": "https://apps.apple.com/jp/app/id6807079789?pt=118326163&ct=social&mt=8",
     "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
     "review": {
@@ -24308,14 +24240,14 @@
      "url": "https://apps.apple.com/app/id6807079789?action=write-review"
     },
     "keywords": [
-     "カウントダウン",
-     "あと何日",
      "経過日数",
      "日数計算",
-     "記念日",
-     "誕生日"
+     "誕生日",
+     "ウィジェット",
+     "ロック画面",
+     "推し活"
     ],
-    "keyline": "カウントダウン · あと何日 · 経過日数",
+    "keyline": "カウントダウン・あと何日・記念日・今日のフォーカス",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
@@ -24325,14 +24257,14 @@
     },
     "youtube": {
      "title": "あれから何日かも ひと目で | CountDaysNow #Shorts",
-     "description": "あれから何日かも ひと目で\n7日・3日・1日前に お知らせ\nカウントダウン · あと何日 · 経過日数\n\nCountDaysNow: Event Counter\nApp Store: https://apps.apple.com/jp/app/id6807079789?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow\nこのアプリをお使いですか？App Store で評価・レビューできます\nhttps://apps.apple.com/app/id6807079789?action=write-review\n\nカウントダウン · あと何日 · 経過日数 · 日数計算 · 記念日 · 誕生日\n\n#Shorts #カウントダウン #CountDaysNow",
+     "description": "あれから何日かも ひと目で\n7日・3日・1日前に お知らせ\nカウントダウン・あと何日・記念日・今日のフォーカス\n\nCountDaysNow: Event Counter\nApp Store: https://apps.apple.com/jp/app/id6807079789?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow\nこのアプリをお使いですか？App Store で評価・レビューできます\nhttps://apps.apple.com/app/id6807079789?action=write-review\n\n経過日数 · 日数計算 · 誕生日 · ウィジェット · ロック画面 · 推し活\n\n#Shorts #経過日数 #CountDaysNow",
      "tags": [
-      "カウントダウン",
-      "あと何日",
       "経過日数",
       "日数計算",
-      "記念日",
       "誕生日",
+      "ウィジェット",
+      "ロック画面",
+      "推し活",
       "CountDaysNow"
      ]
     }
@@ -24345,7 +24277,7 @@
     "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/1jkp95.mp4",
     "hook": "지난 날도 며칠째인지 한눈에",
     "name": "CountDaysNow: Event Counter",
-    "title": "지난 날도 며칠째인지 한눈에 | 디데이 카운터 | CountDaysNow",
+    "title": "지난 날도 며칠째인지 한눈에 | D-day 위젯·기념일·날짜계산 | CountDaysNow",
     "tags": [
      "#디데이카운터",
      "#디데이",
@@ -24354,10 +24286,10 @@
      "#기념일",
      "#CountDaysNow"
     ],
-    "caption": "지난 날도 며칠째인지 한눈에\n7일·3일·1일 전 알림\n디데이 카운터\nCountDaysNow: Event Counter\nApp Store에서 'CountDaysNow' 검색\nAndroid는 Google Play에서\n\n#디데이카운터 #디데이 #카운트다운 #날짜계산 #CountDaysNow",
+    "caption": "지난 날도 며칠째인지 한눈에\n7일·3일·1일 전 알림\nD-day 위젯·기념일·날짜계산\nCountDaysNow: Event Counter\nApp Store에서 'CountDaysNow' 검색\nAndroid는 Google Play에서\n\n#디데이카운터 #디데이 #카운트다운 #날짜계산 #CountDaysNow",
     "button": "App Store에서 받기",
     "variant": "b",
-    "alt": "CountDaysNow: Event Counter — 지난 날도 며칠째인지 한눈에 — 7일·3일·1일 전 알림 — 디데이 카운터",
+    "alt": "CountDaysNow: Event Counter — 지난 날도 며칠째인지 한눈에 — 7일·3일·1일 전 알림 — D-day 위젯·기념일·날짜계산",
     "store": "https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8",
     "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
     "review": {
@@ -24372,7 +24304,7 @@
      "생일",
      "커플"
     ],
-    "keyline": "디데이 카운터",
+    "keyline": "D-day 위젯·기념일·날짜계산",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
@@ -24382,7 +24314,7 @@
     },
     "youtube": {
      "title": "지난 날도 며칠째인지 한눈에 | CountDaysNow #Shorts",
-     "description": "지난 날도 며칠째인지 한눈에\n7일·3일·1일 전 알림\n디데이 카운터\n\nCountDaysNow: Event Counter\nApp Store: https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow\n이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다\nhttps://apps.apple.com/app/id6807079789?action=write-review\n\n디데이 · 카운트다운 · 날짜계산 · 기념일 · 생일 · 커플\n\n#Shorts #디데이카운터 #CountDaysNow",
+     "description": "지난 날도 며칠째인지 한눈에\n7일·3일·1일 전 알림\nD-day 위젯·기념일·날짜계산\n\nCountDaysNow: Event Counter\nApp Store: https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow\n이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다\nhttps://apps.apple.com/app/id6807079789?action=write-review\n\n디데이 · 카운트다운 · 날짜계산 · 기념일 · 생일 · 커플\n\n#Shorts #디데이카운터 #CountDaysNow",
      "tags": [
       "디데이",
       "카운트다운",
@@ -30258,12 +30190,12 @@
     "tags": [
      "#底片濾鏡復古修圖",
      "#自拍",
-     "#拍立得",
+     "#日期戳",
      "#老照片",
      "#美肌",
      "#PhotoCream底片濾鏡"
     ],
-    "caption": "100+ 款底片濾鏡\n真實顆粒與光暈\n底片相機・復古濾鏡・美顏修圖\nPhotoCream Pro：底片濾鏡·復古修圖\n在 App Store 搜尋「PhotoCream 底片濾鏡」\nAndroid 版在 Google Play\n\n#底片濾鏡復古修圖 #自拍 #拍立得 #老照片 #PhotoCream底片濾鏡",
+    "caption": "100+ 款底片濾鏡\n真實顆粒與光暈\n底片相機・復古濾鏡・美顏修圖\nPhotoCream Pro：底片濾鏡·復古修圖\n在 App Store 搜尋「PhotoCream 底片濾鏡」\nAndroid 版在 Google Play\n\n#底片濾鏡復古修圖 #自拍 #日期戳 #老照片 #PhotoCream底片濾鏡",
     "button": "在 App Store 下載",
     "variant": "b",
     "alt": "PhotoCream Pro：底片濾鏡·復古修圖 — 100+ 款底片濾鏡 — 真實顆粒與光暈 — 底片相機・復古濾鏡・美顏修圖",
@@ -30275,7 +30207,7 @@
     },
     "keywords": [
      "自拍",
-     "拍立得",
+     "日期戳",
      "老照片",
      "美肌",
      "文青濾鏡",
@@ -30291,10 +30223,10 @@
     },
     "youtube": {
      "title": "100+ 款底片濾鏡 | PhotoCream 底片濾鏡 #Shorts",
-     "description": "100+ 款底片濾鏡\n真實顆粒與光暈\n底片相機・復古濾鏡・美顏修圖\n\nPhotoCream Pro：底片濾鏡·復古修圖\nApp Store: https://apps.apple.com/tw/app/id6781808054?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.photocream&referrer=utm_source%3Dsocial%26utm_campaign%3Dphotocream\n已經在用這款 App？可以到 App Store 評分或撰寫評論\nhttps://apps.apple.com/app/id6781808054?action=write-review\n\n自拍 · 拍立得 · 老照片 · 美肌 · 文青濾鏡 · 照片編輯\n\n#Shorts #底片濾鏡復古修圖 #PhotoCream底片濾鏡",
+     "description": "100+ 款底片濾鏡\n真實顆粒與光暈\n底片相機・復古濾鏡・美顏修圖\n\nPhotoCream Pro：底片濾鏡·復古修圖\nApp Store: https://apps.apple.com/tw/app/id6781808054?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.photocream&referrer=utm_source%3Dsocial%26utm_campaign%3Dphotocream\n已經在用這款 App？可以到 App Store 評分或撰寫評論\nhttps://apps.apple.com/app/id6781808054?action=write-review\n\n自拍 · 日期戳 · 老照片 · 美肌 · 文青濾鏡 · 照片編輯\n\n#Shorts #底片濾鏡復古修圖 #PhotoCream底片濾鏡",
      "tags": [
       "自拍",
-      "拍立得",
+      "日期戳",
       "老照片",
       "美肌",
       "文青濾鏡",
@@ -30337,7 +30269,7 @@
      "使い捨てカメラ",
      "粒子",
      "ヴィンテージ",
-     "オールド",
+     "デジカメ風",
      "現像"
     ],
     "keyline": "エモいフィルムカメラ・写真加工",
@@ -30350,13 +30282,13 @@
     },
     "youtube": {
      "title": "フィルム加工が 100種以上 | PhotoCream フィルム #Shorts",
-     "description": "フィルム加工が 100種以上\n粒子も ハレーションも\nエモいフィルムカメラ・写真加工\n\nPhotoCream Pro：フィルム風フィルター\nApp Store: https://apps.apple.com/jp/app/id6781808054?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.photocream&referrer=utm_source%3Dsocial%26utm_campaign%3Dphotocream\nこのアプリをお使いですか？App Store で評価・レビューできます\nhttps://apps.apple.com/app/id6781808054?action=write-review\n\nレトロ · 使い捨てカメラ · 粒子 · ヴィンテージ · オールド · 現像\n\n#Shorts #フィルム風フィルター #PhotoCreamフィルム",
+     "description": "フィルム加工が 100種以上\n粒子も ハレーションも\nエモいフィルムカメラ・写真加工\n\nPhotoCream Pro：フィルム風フィルター\nApp Store: https://apps.apple.com/jp/app/id6781808054?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.photocream&referrer=utm_source%3Dsocial%26utm_campaign%3Dphotocream\nこのアプリをお使いですか？App Store で評価・レビューできます\nhttps://apps.apple.com/app/id6781808054?action=write-review\n\nレトロ · 使い捨てカメラ · 粒子 · ヴィンテージ · デジカメ風 · 現像\n\n#Shorts #フィルム風フィルター #PhotoCreamフィルム",
      "tags": [
       "レトロ",
       "使い捨てカメラ",
       "粒子",
       "ヴィンテージ",
-      "オールド",
+      "デジカメ風",
       "現像",
       "フィルム風フィルター",
       "PhotoCreamフィルム",
@@ -32725,14 +32657,14 @@
     "name": "Trip Planet: Kids Quest",
     "title": "Flight-day missions in one tap | Family Travel Missions & Games | Trip Planet",
     "tags": [
-     "#KidsQuest",
+     "#KidsTravelGames",
      "#Vacation",
      "#Airplane",
      "#Flight",
      "#Road",
      "#TripPlanet"
     ],
-    "caption": "Flight-day missions in one tap\nMom & Dad plan together\nFamily Travel Missions & Games\nTrip Planet: Kids Quest\nSearch “Trip Planet” on the App Store\nAlso on Google Play\n\n#KidsQuest #Vacation #Airplane #Flight #TripPlanet",
+    "caption": "Flight-day missions in one tap\nMom & Dad plan together\nFamily Travel Missions & Games\nTrip Planet: Kids Quest\nSearch “Trip Planet” on the App Store\nAlso on Google Play\n\n#KidsTravelGames #Vacation #Airplane #Flight #TripPlanet",
     "button": "Get it on the App Store",
     "variant": "b",
     "alt": "Trip Planet: Kids Quest — Flight-day missions in one tap — Mom & Dad plan together — Family Travel Missions & Games",
@@ -32760,7 +32692,7 @@
     },
     "youtube": {
      "title": "Flight-day missions in one tap | Trip Planet #Shorts",
-     "description": "Flight-day missions in one tap\nMom & Dad plan together\nFamily Travel Missions & Games\n\nTrip Planet: Kids Quest\nApp Store: https://apps.apple.com/us/app/id6787193643?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.TripPlanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripplanet\nAlready using this app? Rate or review it on the App Store\nhttps://apps.apple.com/app/id6787193643?action=write-review\n\nvacation · airplane · flight · road · toddler · preschool\n\n#Shorts #KidsQuest #TripPlanet",
+     "description": "Flight-day missions in one tap\nMom & Dad plan together\nFamily Travel Missions & Games\n\nTrip Planet: Kids Quest\nApp Store: https://apps.apple.com/us/app/id6787193643?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.TripPlanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripplanet\nAlready using this app? Rate or review it on the App Store\nhttps://apps.apple.com/app/id6787193643?action=write-review\n\nvacation · airplane · flight · road · toddler · preschool\n\n#Shorts #KidsTravelGames #TripPlanet",
      "tags": [
       "vacation",
       "airplane",
@@ -32768,7 +32700,7 @@
       "road",
       "toddler",
       "preschool",
-      "KidsQuest",
+      "KidsTravelGames",
       "TripPlanet",
       "Trip Planet"
      ]
@@ -34472,19 +34404,19 @@
     "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/eyvnfp.mp4",
     "hook": "重要日子 放上主畫面小工具",
     "name": "CountDaysNow: Event Counter",
-    "title": "重要日子 放上主畫面小工具 | 倒數日 · 倒數計時 · 紀念日 | CountDaysNow",
+    "title": "重要日子 放上主畫面小工具 | 倒數日・倒數小工具・紀念日・每日焦點 | CountDaysNow",
     "tags": [
-     "#生日",
-     "#還有幾天",
      "#農曆",
      "#鎖定畫面",
      "#小工具",
+     "#戀愛紀念",
+     "#結婚週年",
      "#CountDaysNow"
     ],
-    "caption": "重要日子 放上主畫面小工具\n私人事件 用 Face ID 鎖住\n倒數日 · 倒數計時 · 紀念日\nCountDaysNow: Event Counter\n在 App Store 搜尋「CountDaysNow」\nAndroid 版在 Google Play\n\n#生日 #還有幾天 #農曆 #鎖定畫面 #CountDaysNow",
+    "caption": "重要日子 放上主畫面小工具\n私人事件 用 Face ID 鎖住\n倒數日・倒數小工具・紀念日・每日焦點\nCountDaysNow: Event Counter\n在 App Store 搜尋「CountDaysNow」\nAndroid 版在 Google Play\n\n#農曆 #鎖定畫面 #小工具 #戀愛紀念 #CountDaysNow",
     "button": "在 App Store 下載",
     "variant": "b",
-    "alt": "CountDaysNow: Event Counter — 重要日子 放上主畫面小工具 — 私人事件 用 Face ID 鎖住 — 倒數日 · 倒數計時 · 紀念日",
+    "alt": "CountDaysNow: Event Counter — 重要日子 放上主畫面小工具 — 私人事件 用 Face ID 鎖住 — 倒數日・倒數小工具・紀念日・每日焦點",
     "store": "https://apps.apple.com/tw/app/id6807079789?pt=118326163&ct=social&mt=8",
     "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
     "review": {
@@ -34492,14 +34424,14 @@
      "url": "https://apps.apple.com/app/id6807079789?action=write-review"
     },
     "keywords": [
-     "倒數日",
      "倒數計時",
-     "紀念日",
      "生日",
      "還有幾天",
-     "農曆"
+     "農曆",
+     "鎖定畫面",
+     "小工具"
     ],
-    "keyline": "倒數日 · 倒數計時 · 紀念日",
+    "keyline": "倒數日・倒數小工具・紀念日・每日焦點",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
@@ -34509,16 +34441,16 @@
     },
     "youtube": {
      "title": "重要日子 放上主畫面小工具 | CountDaysNow #Shorts",
-     "description": "重要日子 放上主畫面小工具\n私人事件 用 Face ID 鎖住\n倒數日 · 倒數計時 · 紀念日\n\nCountDaysNow: Event Counter\nApp Store: https://apps.apple.com/tw/app/id6807079789?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow\n已經在用這款 App？可以到 App Store 評分或撰寫評論\nhttps://apps.apple.com/app/id6807079789?action=write-review\n\n倒數日 · 倒數計時 · 紀念日 · 生日 · 還有幾天 · 農曆\n\n#Shorts #生日 #CountDaysNow",
+     "description": "重要日子 放上主畫面小工具\n私人事件 用 Face ID 鎖住\n倒數日・倒數小工具・紀念日・每日焦點\n\nCountDaysNow: Event Counter\nApp Store: https://apps.apple.com/tw/app/id6807079789?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow\n已經在用這款 App？可以到 App Store 評分或撰寫評論\nhttps://apps.apple.com/app/id6807079789?action=write-review\n\n倒數計時 · 生日 · 還有幾天 · 農曆 · 鎖定畫面 · 小工具\n\n#Shorts #農曆 #CountDaysNow",
      "tags": [
-      "倒數日",
       "倒數計時",
-      "紀念日",
       "生日",
       "還有幾天",
       "農曆",
       "鎖定畫面",
       "小工具",
+      "戀愛紀念",
+      "結婚週年",
       "CountDaysNow"
      ]
     }
@@ -34531,19 +34463,19 @@
     "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/uyo30v.mp4",
     "hook": "大切な日を ウィジェットに",
     "name": "CountDaysNow: Event Counter",
-    "title": "大切な日を ウィジェットに | カウントダウン · あと何日 · 経過日数 | CountDaysNow",
+    "title": "大切な日を ウィジェットに | カウントダウン・あと何日・記念日・今日のフォーカス | CountDaysNow",
     "tags": [
-     "#日数計算",
-     "#記念日",
-     "#誕生日",
      "#ウィジェット",
      "#ロック画面",
+     "#推し活",
+     "#受験",
+     "#旧暦",
      "#CountDaysNow"
     ],
-    "caption": "大切な日を ウィジェットに\n大切な予定は Face IDでロック\nカウントダウン · あと何日 · 経過日数\nCountDaysNow: Event Counter\nApp Storeで「CountDaysNow」を検索\nAndroidはGoogle Playで\n\n#日数計算 #記念日 #誕生日 #ウィジェット #CountDaysNow",
+    "caption": "大切な日を ウィジェットに\n大切な予定は Face IDでロック\nカウントダウン・あと何日・記念日・今日のフォーカス\nCountDaysNow: Event Counter\nApp Storeで「CountDaysNow」を検索\nAndroidはGoogle Playで\n\n#ウィジェット #ロック画面 #推し活 #受験 #CountDaysNow",
     "button": "App Storeで入手",
     "variant": "b",
-    "alt": "CountDaysNow: Event Counter — 大切な日を ウィジェットに — 大切な予定は Face IDでロック — カウントダウン · あと何日 · 経過日数",
+    "alt": "CountDaysNow: Event Counter — 大切な日を ウィジェットに — 大切な予定は Face IDでロック — カウントダウン・あと何日・記念日・今日のフォーカス",
     "store": "https://apps.apple.com/jp/app/id6807079789?pt=118326163&ct=social&mt=8",
     "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
     "review": {
@@ -34551,14 +34483,14 @@
      "url": "https://apps.apple.com/app/id6807079789?action=write-review"
     },
     "keywords": [
-     "カウントダウン",
-     "あと何日",
      "経過日数",
      "日数計算",
-     "記念日",
-     "誕生日"
+     "誕生日",
+     "ウィジェット",
+     "ロック画面",
+     "推し活"
     ],
-    "keyline": "カウントダウン · あと何日 · 経過日数",
+    "keyline": "カウントダウン・あと何日・記念日・今日のフォーカス",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
@@ -34568,16 +34500,16 @@
     },
     "youtube": {
      "title": "大切な日を ウィジェットに | CountDaysNow #Shorts",
-     "description": "大切な日を ウィジェットに\n大切な予定は Face IDでロック\nカウントダウン · あと何日 · 経過日数\n\nCountDaysNow: Event Counter\nApp Store: https://apps.apple.com/jp/app/id6807079789?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow\nこのアプリをお使いですか？App Store で評価・レビューできます\nhttps://apps.apple.com/app/id6807079789?action=write-review\n\nカウントダウン · あと何日 · 経過日数 · 日数計算 · 記念日 · 誕生日\n\n#Shorts #日数計算 #CountDaysNow",
+     "description": "大切な日を ウィジェットに\n大切な予定は Face IDでロック\nカウントダウン・あと何日・記念日・今日のフォーカス\n\nCountDaysNow: Event Counter\nApp Store: https://apps.apple.com/jp/app/id6807079789?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow\nこのアプリをお使いですか？App Store で評価・レビューできます\nhttps://apps.apple.com/app/id6807079789?action=write-review\n\n経過日数 · 日数計算 · 誕生日 · ウィジェット · ロック画面 · 推し活\n\n#Shorts #ウィジェット #CountDaysNow",
      "tags": [
-      "カウントダウン",
-      "あと何日",
       "経過日数",
       "日数計算",
-      "記念日",
       "誕生日",
       "ウィジェット",
       "ロック画面",
+      "推し活",
+      "受験",
+      "旧暦",
       "CountDaysNow"
      ]
     }
@@ -34590,7 +34522,7 @@
     "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/ex9pbb.mp4",
     "hook": "중요한 날을 위젯으로",
     "name": "CountDaysNow: Event Counter",
-    "title": "중요한 날을 위젯으로 | 디데이 카운터 | CountDaysNow",
+    "title": "중요한 날을 위젯으로 | D-day 위젯·기념일·날짜계산 | CountDaysNow",
     "tags": [
      "#기념일",
      "#생일",
@@ -34599,10 +34531,10 @@
      "#전역일",
      "#CountDaysNow"
     ],
-    "caption": "중요한 날을 위젯으로\n비공개 일정은 Face ID로 잠금\n디데이 카운터\nCountDaysNow: Event Counter\nApp Store에서 'CountDaysNow' 검색\nAndroid는 Google Play에서\n\n#기념일 #생일 #커플 #수능 #CountDaysNow",
+    "caption": "중요한 날을 위젯으로\n비공개 일정은 Face ID로 잠금\nD-day 위젯·기념일·날짜계산\nCountDaysNow: Event Counter\nApp Store에서 'CountDaysNow' 검색\nAndroid는 Google Play에서\n\n#기념일 #생일 #커플 #수능 #CountDaysNow",
     "button": "App Store에서 받기",
     "variant": "b",
-    "alt": "CountDaysNow: Event Counter — 중요한 날을 위젯으로 — 비공개 일정은 Face ID로 잠금 — 디데이 카운터",
+    "alt": "CountDaysNow: Event Counter — 중요한 날을 위젯으로 — 비공개 일정은 Face ID로 잠금 — D-day 위젯·기념일·날짜계산",
     "store": "https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8",
     "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
     "review": {
@@ -34617,7 +34549,7 @@
      "생일",
      "커플"
     ],
-    "keyline": "디데이 카운터",
+    "keyline": "D-day 위젯·기념일·날짜계산",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
@@ -34627,7 +34559,7 @@
     },
     "youtube": {
      "title": "중요한 날을 위젯으로 | CountDaysNow #Shorts",
-     "description": "중요한 날을 위젯으로\n비공개 일정은 Face ID로 잠금\n디데이 카운터\n\nCountDaysNow: Event Counter\nApp Store: https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow\n이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다\nhttps://apps.apple.com/app/id6807079789?action=write-review\n\n디데이 · 카운트다운 · 날짜계산 · 기념일 · 생일 · 커플\n\n#Shorts #기념일 #CountDaysNow",
+     "description": "중요한 날을 위젯으로\n비공개 일정은 Face ID로 잠금\nD-day 위젯·기념일·날짜계산\n\nCountDaysNow: Event Counter\nApp Store: https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow\n이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다\nhttps://apps.apple.com/app/id6807079789?action=write-review\n\n디데이 · 카운트다운 · 날짜계산 · 기념일 · 생일 · 커플\n\n#Shorts #기념일 #CountDaysNow",
      "tags": [
       "디데이",
       "카운트다운",
@@ -37535,13 +37467,13 @@
     "title": "每個主題都分 初中高三級 | 學英文・日文・韓文會話 | DailyMate 用句子學語言",
     "tags": [
      "#學英文日文韓文會話",
-     "#實用會話",
-     "#英文短句",
-     "#學英文",
-     "#發音聆聽",
+     "#口說",
+     "#出國",
+     "#西班牙文",
+     "#法文",
      "#DailyMate用句子學語言"
     ],
-    "caption": "每個主題都分 初中高三級\n47 種語言任你學\n學英文・日文・韓文會話\nDailyMate：用句子學語言\n在 App Store 搜尋「DailyMate 用句子學語言」\nAndroid 版在 Google Play\n\n#學英文日文韓文會話 #實用會話 #英文短句 #學英文 #DailyMate用句子學語言",
+    "caption": "每個主題都分 初中高三級\n47 種語言任你學\n學英文・日文・韓文會話\nDailyMate：用句子學語言\n在 App Store 搜尋「DailyMate 用句子學語言」\nAndroid 版在 Google Play\n\n#學英文日文韓文會話 #口說 #出國 #西班牙文 #DailyMate用句子學語言",
     "button": "在 App Store 下載",
     "variant": "b",
     "alt": "DailyMate：用句子學語言 — 每個主題都分 初中高三級 — 47 種語言任你學 — 學英文・日文・韓文會話",
@@ -37552,12 +37484,12 @@
      "url": "https://apps.apple.com/app/id6790418321?action=write-review"
     },
     "keywords": [
-     "實用會話",
-     "英文短句",
-     "學英文",
-     "發音聆聽",
-     "學日文",
-     "學韓文"
+     "口說",
+     "出國",
+     "西班牙文",
+     "法文",
+     "德文",
+     "外語"
     ],
     "keyline": "學英文・日文・韓文會話",
     "compliance": {
@@ -37569,14 +37501,14 @@
     },
     "youtube": {
      "title": "每個主題都分 初中高三級 | DailyMate 用句子學語言 #Shorts",
-     "description": "每個主題都分 初中高三級\n47 種語言任你學\n學英文・日文・韓文會話\n\nDailyMate：用句子學語言\nApp Store: https://apps.apple.com/tw/app/id6790418321?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate\n已經在用這款 App？可以到 App Store 評分或撰寫評論\nhttps://apps.apple.com/app/id6790418321?action=write-review\n\n實用會話 · 英文短句 · 學英文 · 發音聆聽 · 學日文 · 學韓文\n\n#Shorts #學英文日文韓文會話 #DailyMate用句子學語言",
+     "description": "每個主題都分 初中高三級\n47 種語言任你學\n學英文・日文・韓文會話\n\nDailyMate：用句子學語言\nApp Store: https://apps.apple.com/tw/app/id6790418321?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate\n已經在用這款 App？可以到 App Store 評分或撰寫評論\nhttps://apps.apple.com/app/id6790418321?action=write-review\n\n口說 · 出國 · 西班牙文 · 法文 · 德文 · 外語\n\n#Shorts #學英文日文韓文會話 #DailyMate用句子學語言",
      "tags": [
-      "實用會話",
-      "英文短句",
-      "學英文",
-      "發音聆聽",
-      "學日文",
-      "學韓文",
+      "口說",
+      "出國",
+      "西班牙文",
+      "法文",
+      "德文",
+      "外語",
       "學英文日文韓文會話",
       "DailyMate用句子學語言",
       "DailyMate 用句子學語言"
@@ -38533,19 +38465,19 @@
     "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/n8dzp3.mp4",
     "hook": "螢幕上描完 再印成學習單",
     "name": "Lumi 字母星球 Pro：ABC啟蒙",
-    "title": "螢幕上描完 再印成學習單 | ABC啟蒙 | Lumi 字母星球 Pro",
+    "title": "螢幕上描完 再印成學習單 | 聽音辨首中尾音・短母音・CVC拼讀 | Lumi 字母星球 Pro",
     "tags": [
-     "#ABC啟蒙",
+     "#兒童英文自然發音",
      "#Phonics",
      "#美語",
      "#英語",
      "#幼兒",
      "#Lumi字母星球Pro"
     ],
-    "caption": "螢幕上描完 再印成學習單\n孩子的進步 一眼看見\nLumi 字母星球 Pro：ABC啟蒙\n在 App Store 搜尋「Lumi 字母星球 Pro」\nAndroid 版在 Google Play\n\n#ABC啟蒙 #Phonics #美語 #英語 #Lumi字母星球Pro",
+    "caption": "螢幕上描完 再印成學習單\n孩子的進步 一眼看見\n聽音辨首中尾音・短母音・CVC拼讀\nLumi 字母星球 Pro：ABC啟蒙\n在 App Store 搜尋「Lumi 字母星球 Pro」\nAndroid 版在 Google Play\n\n#兒童英文自然發音 #Phonics #美語 #英語 #Lumi字母星球Pro",
     "button": "在 App Store 下載",
     "variant": "b",
-    "alt": "Lumi 字母星球 Pro：ABC啟蒙 — 螢幕上描完 再印成學習單 — 孩子的進步 一眼看見",
+    "alt": "Lumi 字母星球 Pro：ABC啟蒙 — 螢幕上描完 再印成學習單 — 孩子的進步 一眼看見 — 聽音辨首中尾音・短母音・CVC拼讀",
     "store": "https://apps.apple.com/tw/app/id6778491147?pt=118326163&ct=social&mt=8",
     "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiLetters&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiletterspro",
     "review": {
@@ -38560,7 +38492,7 @@
      "國小",
      "學前"
     ],
-    "keyline": "ABC啟蒙",
+    "keyline": "聽音辨首中尾音・短母音・CVC拼讀",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
@@ -38570,7 +38502,7 @@
     },
     "youtube": {
      "title": "螢幕上描完 再印成學習單 | Lumi 字母星球 Pro #Shorts",
-     "description": "螢幕上描完 再印成學習單\n孩子的進步 一眼看見\nABC啟蒙\n\nLumi 字母星球 Pro：ABC啟蒙\nApp Store: https://apps.apple.com/tw/app/id6778491147?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiLetters&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiletterspro\n已經在用這款 App？可以到 App Store 評分或撰寫評論\nhttps://apps.apple.com/app/id6778491147?action=write-review\n\nphonics · 美語 · 英語 · 幼兒 · 國小 · 學前\n\n#Shorts #ABC啟蒙 #Lumi字母星球Pro",
+     "description": "螢幕上描完 再印成學習單\n孩子的進步 一眼看見\n聽音辨首中尾音・短母音・CVC拼讀\n\nLumi 字母星球 Pro：ABC啟蒙\nApp Store: https://apps.apple.com/tw/app/id6778491147?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiLetters&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiletterspro\n已經在用這款 App？可以到 App Store 評分或撰寫評論\nhttps://apps.apple.com/app/id6778491147?action=write-review\n\nphonics · 美語 · 英語 · 幼兒 · 國小 · 學前\n\n#Shorts #兒童英文自然發音 #Lumi字母星球Pro",
      "tags": [
       "phonics",
       "美語",
@@ -38578,7 +38510,7 @@
       "幼兒",
       "國小",
       "學前",
-      "ABC啟蒙",
+      "兒童英文自然發音",
       "Lumi字母星球Pro",
       "Lumi 字母星球 Pro"
      ]
@@ -45386,19 +45318,19 @@
     "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/rj2q5p.mp4",
     "hook": "已經過了幾天 也幫你數著",
     "name": "CountDaysNow: Event Counter",
-    "title": "已經過了幾天 也幫你數著 | 倒數日 · 倒數計時 · 紀念日 | CountDaysNow",
+    "title": "已經過了幾天 也幫你數著 | 倒數日・倒數小工具・紀念日・每日焦點 | CountDaysNow",
     "tags": [
-     "#倒數日",
      "#倒數計時",
-     "#紀念日",
      "#生日",
      "#還有幾天",
+     "#農曆",
+     "#鎖定畫面",
      "#CountDaysNow"
     ],
-    "caption": "已經過了幾天 也幫你數著\n前 7、3、1 天 提醒你\n倒數日 · 倒數計時 · 紀念日\nCountDaysNow: Event Counter\n在 App Store 搜尋「CountDaysNow」\nAndroid 版在 Google Play\n\n#倒數日 #倒數計時 #紀念日 #生日 #CountDaysNow",
+    "caption": "已經過了幾天 也幫你數著\n前 7、3、1 天 提醒你\n倒數日・倒數小工具・紀念日・每日焦點\nCountDaysNow: Event Counter\n在 App Store 搜尋「CountDaysNow」\nAndroid 版在 Google Play\n\n#倒數計時 #生日 #還有幾天 #農曆 #CountDaysNow",
     "button": "在 App Store 下載",
     "variant": "b",
-    "alt": "CountDaysNow: Event Counter — 已經過了幾天 也幫你數著 — 前 7、3、1 天 提醒你 — 倒數日 · 倒數計時 · 紀念日",
+    "alt": "CountDaysNow: Event Counter — 已經過了幾天 也幫你數著 — 前 7、3、1 天 提醒你 — 倒數日・倒數小工具・紀念日・每日焦點",
     "store": "https://apps.apple.com/tw/app/id6807079789?pt=118326163&ct=social&mt=8",
     "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
     "review": {
@@ -45406,14 +45338,14 @@
      "url": "https://apps.apple.com/app/id6807079789?action=write-review"
     },
     "keywords": [
-     "倒數日",
      "倒數計時",
-     "紀念日",
      "生日",
      "還有幾天",
-     "農曆"
+     "農曆",
+     "鎖定畫面",
+     "小工具"
     ],
-    "keyline": "倒數日 · 倒數計時 · 紀念日",
+    "keyline": "倒數日・倒數小工具・紀念日・每日焦點",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
@@ -45422,7 +45354,7 @@
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "已經過了幾天 也幫你數著\n前 7、3、1 天 提醒你\n倒數日 · 倒數計時 · 紀念日\nCountDaysNow: Event Counter\n在 App Store 搜尋「CountDaysNow」\nAndroid 版在 Google Play\n\n#倒數日 #倒數計時 #紀念日 #生日 #CountDaysNow\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6807079789?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
+     "description": "已經過了幾天 也幫你數著\n前 7、3、1 天 提醒你\n倒數日・倒數小工具・紀念日・每日焦點\nCountDaysNow: Event Counter\n在 App Store 搜尋「CountDaysNow」\nAndroid 版在 Google Play\n\n#倒數計時 #生日 #還有幾天 #農曆 #CountDaysNow\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6807079789?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
      "link": "https://apps.apple.com/tw/app/id6807079789?pt=118326163&ct=social&mt=8"
     }
    },
@@ -45434,19 +45366,19 @@
     "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/etlqjb.mp4",
     "hook": "母の誕生日まで あと何日だっけ？",
     "name": "CountDaysNow: Event Counter",
-    "title": "母の誕生日まで あと何日だっけ？ | カウントダウン · あと何日 · 経過日数 | CountDaysNow",
+    "title": "母の誕生日まで あと何日だっけ？ | カウントダウン・あと何日・記念日・今日のフォーカス | CountDaysNow",
     "tags": [
-     "#カウントダウン",
-     "#あと何日",
      "#経過日数",
      "#日数計算",
-     "#記念日",
+     "#誕生日",
+     "#ウィジェット",
+     "#ロック画面",
      "#CountDaysNow"
     ],
-    "caption": "母の誕生日まで あと何日だっけ？\nあれから何日かも ひと目で\nカウントダウン · あと何日 · 経過日数\nCountDaysNow: Event Counter\nApp Storeで「CountDaysNow」を検索\nAndroidはGoogle Playで\n\n#カウントダウン #あと何日 #経過日数 #日数計算 #CountDaysNow",
+    "caption": "母の誕生日まで あと何日だっけ？\nあれから何日かも ひと目で\nカウントダウン・あと何日・記念日・今日のフォーカス\nCountDaysNow: Event Counter\nApp Storeで「CountDaysNow」を検索\nAndroidはGoogle Playで\n\n#経過日数 #日数計算 #誕生日 #ウィジェット #CountDaysNow",
     "button": "App Storeで入手",
     "variant": "a",
-    "alt": "CountDaysNow: Event Counter — 母の誕生日まで あと何日だっけ？ — あれから何日かも ひと目で — カウントダウン · あと何日 · 経過日数",
+    "alt": "CountDaysNow: Event Counter — 母の誕生日まで あと何日だっけ？ — あれから何日かも ひと目で — カウントダウン・あと何日・記念日・今日のフォーカス",
     "store": "https://apps.apple.com/jp/app/id6807079789?pt=118326163&ct=social&mt=8",
     "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
     "review": {
@@ -45454,14 +45386,14 @@
      "url": "https://apps.apple.com/app/id6807079789?action=write-review"
     },
     "keywords": [
-     "カウントダウン",
-     "あと何日",
      "経過日数",
      "日数計算",
-     "記念日",
-     "誕生日"
+     "誕生日",
+     "ウィジェット",
+     "ロック画面",
+     "推し活"
     ],
-    "keyline": "カウントダウン · あと何日 · 経過日数",
+    "keyline": "カウントダウン・あと何日・記念日・今日のフォーカス",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
@@ -45470,7 +45402,7 @@
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "母の誕生日まで あと何日だっけ？\nあれから何日かも ひと目で\nカウントダウン · あと何日 · 経過日数\nCountDaysNow: Event Counter\nApp Storeで「CountDaysNow」を検索\nAndroidはGoogle Playで\n\n#カウントダウン #あと何日 #経過日数 #日数計算 #CountDaysNow\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6807079789?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
+     "description": "母の誕生日まで あと何日だっけ？\nあれから何日かも ひと目で\nカウントダウン・あと何日・記念日・今日のフォーカス\nCountDaysNow: Event Counter\nApp Storeで「CountDaysNow」を検索\nAndroidはGoogle Playで\n\n#経過日数 #日数計算 #誕生日 #ウィジェット #CountDaysNow\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6807079789?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
      "link": "https://apps.apple.com/jp/app/id6807079789?pt=118326163&ct=social&mt=8"
     }
    },
@@ -45482,7 +45414,7 @@
     "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/1jkp95.mp4",
     "hook": "엄마 생신까지 며칠 남았더라?",
     "name": "CountDaysNow: Event Counter",
-    "title": "엄마 생신까지 며칠 남았더라? | 디데이 카운터 | CountDaysNow",
+    "title": "엄마 생신까지 며칠 남았더라? | D-day 위젯·기념일·날짜계산 | CountDaysNow",
     "tags": [
      "#디데이카운터",
      "#디데이",
@@ -45491,10 +45423,10 @@
      "#기념일",
      "#CountDaysNow"
     ],
-    "caption": "엄마 생신까지 며칠 남았더라?\n지난 날도 며칠째인지 한눈에\n디데이 카운터\nCountDaysNow: Event Counter\nApp Store에서 'CountDaysNow' 검색\nAndroid는 Google Play에서\n\n#디데이카운터 #디데이 #카운트다운 #날짜계산 #CountDaysNow",
+    "caption": "엄마 생신까지 며칠 남았더라?\n지난 날도 며칠째인지 한눈에\nD-day 위젯·기념일·날짜계산\nCountDaysNow: Event Counter\nApp Store에서 'CountDaysNow' 검색\nAndroid는 Google Play에서\n\n#디데이카운터 #디데이 #카운트다운 #날짜계산 #CountDaysNow",
     "button": "App Store에서 받기",
     "variant": "a",
-    "alt": "CountDaysNow: Event Counter — 엄마 생신까지 며칠 남았더라? — 지난 날도 며칠째인지 한눈에 — 디데이 카운터",
+    "alt": "CountDaysNow: Event Counter — 엄마 생신까지 며칠 남았더라? — 지난 날도 며칠째인지 한눈에 — D-day 위젯·기념일·날짜계산",
     "store": "https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8",
     "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
     "review": {
@@ -45509,7 +45441,7 @@
      "생일",
      "커플"
     ],
-    "keyline": "디데이 카운터",
+    "keyline": "D-day 위젯·기념일·날짜계산",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
@@ -45518,7 +45450,7 @@
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "엄마 생신까지 며칠 남았더라?\n지난 날도 며칠째인지 한눈에\n디데이 카운터\nCountDaysNow: Event Counter\nApp Store에서 'CountDaysNow' 검색\nAndroid는 Google Play에서\n\n#디데이카운터 #디데이 #카운트다운 #날짜계산 #CountDaysNow\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
+     "description": "엄마 생신까지 며칠 남았더라?\n지난 날도 며칠째인지 한눈에\nD-day 위젯·기념일·날짜계산\nCountDaysNow: Event Counter\nApp Store에서 'CountDaysNow' 검색\nAndroid는 Google Play에서\n\n#디데이카운터 #디데이 #카운트다운 #날짜계산 #CountDaysNow\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
      "link": "https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8"
     }
    },
@@ -50285,12 +50217,12 @@
     "tags": [
      "#底片濾鏡復古修圖",
      "#自拍",
-     "#拍立得",
+     "#日期戳",
      "#老照片",
      "#美肌",
      "#PhotoCream底片濾鏡"
     ],
-    "caption": "100+ 款底片濾鏡\n真實顆粒與光暈\n底片相機・復古濾鏡・美顏修圖\nPhotoCream Pro：底片濾鏡·復古修圖\n在 App Store 搜尋「PhotoCream 底片濾鏡」\nAndroid 版在 Google Play\n\n#底片濾鏡復古修圖 #自拍 #拍立得 #老照片 #PhotoCream底片濾鏡",
+    "caption": "100+ 款底片濾鏡\n真實顆粒與光暈\n底片相機・復古濾鏡・美顏修圖\nPhotoCream Pro：底片濾鏡·復古修圖\n在 App Store 搜尋「PhotoCream 底片濾鏡」\nAndroid 版在 Google Play\n\n#底片濾鏡復古修圖 #自拍 #日期戳 #老照片 #PhotoCream底片濾鏡",
     "button": "在 App Store 下載",
     "variant": "b",
     "alt": "PhotoCream Pro：底片濾鏡·復古修圖 — 100+ 款底片濾鏡 — 真實顆粒與光暈 — 底片相機・復古濾鏡・美顏修圖",
@@ -50302,7 +50234,7 @@
     },
     "keywords": [
      "自拍",
-     "拍立得",
+     "日期戳",
      "老照片",
      "美肌",
      "文青濾鏡",
@@ -50317,7 +50249,7 @@
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "100+ 款底片濾鏡\n真實顆粒與光暈\n底片相機・復古濾鏡・美顏修圖\nPhotoCream Pro：底片濾鏡·復古修圖\n在 App Store 搜尋「PhotoCream 底片濾鏡」\nAndroid 版在 Google Play\n\n#底片濾鏡復古修圖 #自拍 #拍立得 #老照片 #PhotoCream底片濾鏡\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6781808054?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.photocream&referrer=utm_source%3Dsocial%26utm_campaign%3Dphotocream",
+     "description": "100+ 款底片濾鏡\n真實顆粒與光暈\n底片相機・復古濾鏡・美顏修圖\nPhotoCream Pro：底片濾鏡·復古修圖\n在 App Store 搜尋「PhotoCream 底片濾鏡」\nAndroid 版在 Google Play\n\n#底片濾鏡復古修圖 #自拍 #日期戳 #老照片 #PhotoCream底片濾鏡\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6781808054?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.photocream&referrer=utm_source%3Dsocial%26utm_campaign%3Dphotocream",
      "link": "https://apps.apple.com/tw/app/id6781808054?pt=118326163&ct=social&mt=8"
     }
    },
@@ -50353,7 +50285,7 @@
      "使い捨てカメラ",
      "粒子",
      "ヴィンテージ",
-     "オールド",
+     "デジカメ風",
      "現像"
     ],
     "keyline": "エモいフィルムカメラ・写真加工",
@@ -52299,14 +52231,14 @@
     "name": "Trip Planet: Kids Quest",
     "title": "Flight-day missions in one tap | Family Travel Missions & Games | Trip Planet",
     "tags": [
-     "#KidsQuest",
+     "#KidsTravelGames",
      "#Vacation",
      "#Airplane",
      "#Flight",
      "#Road",
      "#TripPlanet"
     ],
-    "caption": "Flight-day missions in one tap\nMom & Dad plan together\nFamily Travel Missions & Games\nTrip Planet: Kids Quest\nSearch “Trip Planet” on the App Store\nAlso on Google Play\n\n#KidsQuest #Vacation #Airplane #Flight #TripPlanet",
+    "caption": "Flight-day missions in one tap\nMom & Dad plan together\nFamily Travel Missions & Games\nTrip Planet: Kids Quest\nSearch “Trip Planet” on the App Store\nAlso on Google Play\n\n#KidsTravelGames #Vacation #Airplane #Flight #TripPlanet",
     "button": "Get it on the App Store",
     "variant": "b",
     "alt": "Trip Planet: Kids Quest — Flight-day missions in one tap — Mom & Dad plan together — Family Travel Missions & Games",
@@ -52333,7 +52265,7 @@
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "Flight-day missions in one tap\nMom & Dad plan together\nFamily Travel Missions & Games\nTrip Planet: Kids Quest\nSearch “Trip Planet” on the App Store\nAlso on Google Play\n\n#KidsQuest #Vacation #Airplane #Flight #TripPlanet\n\nGet it on the App Store: https://apps.apple.com/us/app/id6787193643?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.TripPlanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripplanet",
+     "description": "Flight-day missions in one tap\nMom & Dad plan together\nFamily Travel Missions & Games\nTrip Planet: Kids Quest\nSearch “Trip Planet” on the App Store\nAlso on Google Play\n\n#KidsTravelGames #Vacation #Airplane #Flight #TripPlanet\n\nGet it on the App Store: https://apps.apple.com/us/app/id6787193643?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.TripPlanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripplanet",
      "link": "https://apps.apple.com/us/app/id6787193643?pt=118326163&ct=social&mt=8"
     }
    },
@@ -53734,19 +53666,19 @@
     "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/eyvnfp.mp4",
     "hook": "每款外觀 都有自己的配色",
     "name": "CountDaysNow: Event Counter",
-    "title": "每款外觀 都有自己的配色 | 倒數日 · 倒數計時 · 紀念日 | CountDaysNow",
+    "title": "每款外觀 都有自己的配色 | 倒數日・倒數小工具・紀念日・每日焦點 | CountDaysNow",
     "tags": [
-     "#生日",
-     "#還有幾天",
      "#農曆",
      "#鎖定畫面",
      "#小工具",
+     "#戀愛紀念",
+     "#結婚週年",
      "#CountDaysNow"
     ],
-    "caption": "每款外觀 都有自己的配色\n重要日子 放上主畫面小工具\n倒數日 · 倒數計時 · 紀念日\nCountDaysNow: Event Counter\n在 App Store 搜尋「CountDaysNow」\nAndroid 版在 Google Play\n\n#生日 #還有幾天 #農曆 #鎖定畫面 #CountDaysNow",
+    "caption": "每款外觀 都有自己的配色\n重要日子 放上主畫面小工具\n倒數日・倒數小工具・紀念日・每日焦點\nCountDaysNow: Event Counter\n在 App Store 搜尋「CountDaysNow」\nAndroid 版在 Google Play\n\n#農曆 #鎖定畫面 #小工具 #戀愛紀念 #CountDaysNow",
     "button": "在 App Store 下載",
     "variant": "c",
-    "alt": "CountDaysNow: Event Counter — 每款外觀 都有自己的配色 — 重要日子 放上主畫面小工具 — 倒數日 · 倒數計時 · 紀念日",
+    "alt": "CountDaysNow: Event Counter — 每款外觀 都有自己的配色 — 重要日子 放上主畫面小工具 — 倒數日・倒數小工具・紀念日・每日焦點",
     "store": "https://apps.apple.com/tw/app/id6807079789?pt=118326163&ct=social&mt=8",
     "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
     "review": {
@@ -53754,14 +53686,14 @@
      "url": "https://apps.apple.com/app/id6807079789?action=write-review"
     },
     "keywords": [
-     "倒數日",
      "倒數計時",
-     "紀念日",
      "生日",
      "還有幾天",
-     "農曆"
+     "農曆",
+     "鎖定畫面",
+     "小工具"
     ],
-    "keyline": "倒數日 · 倒數計時 · 紀念日",
+    "keyline": "倒數日・倒數小工具・紀念日・每日焦點",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
@@ -53770,7 +53702,7 @@
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "每款外觀 都有自己的配色\n重要日子 放上主畫面小工具\n倒數日 · 倒數計時 · 紀念日\nCountDaysNow: Event Counter\n在 App Store 搜尋「CountDaysNow」\nAndroid 版在 Google Play\n\n#生日 #還有幾天 #農曆 #鎖定畫面 #CountDaysNow\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6807079789?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
+     "description": "每款外觀 都有自己的配色\n重要日子 放上主畫面小工具\n倒數日・倒數小工具・紀念日・每日焦點\nCountDaysNow: Event Counter\n在 App Store 搜尋「CountDaysNow」\nAndroid 版在 Google Play\n\n#農曆 #鎖定畫面 #小工具 #戀愛紀念 #CountDaysNow\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6807079789?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
      "link": "https://apps.apple.com/tw/app/id6807079789?pt=118326163&ct=social&mt=8"
     }
    },
@@ -53782,19 +53714,19 @@
     "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/uyo30v.mp4",
     "hook": "大切な日を ウィジェットに",
     "name": "CountDaysNow: Event Counter",
-    "title": "大切な日を ウィジェットに | カウントダウン · あと何日 · 経過日数 | CountDaysNow",
+    "title": "大切な日を ウィジェットに | カウントダウン・あと何日・記念日・今日のフォーカス | CountDaysNow",
     "tags": [
-     "#日数計算",
-     "#記念日",
-     "#誕生日",
      "#ウィジェット",
      "#ロック画面",
+     "#推し活",
+     "#受験",
+     "#旧暦",
      "#CountDaysNow"
     ],
-    "caption": "大切な日を ウィジェットに\n大切な予定は Face IDでロック\nカウントダウン · あと何日 · 経過日数\nCountDaysNow: Event Counter\nApp Storeで「CountDaysNow」を検索\nAndroidはGoogle Playで\n\n#日数計算 #記念日 #誕生日 #ウィジェット #CountDaysNow",
+    "caption": "大切な日を ウィジェットに\n大切な予定は Face IDでロック\nカウントダウン・あと何日・記念日・今日のフォーカス\nCountDaysNow: Event Counter\nApp Storeで「CountDaysNow」を検索\nAndroidはGoogle Playで\n\n#ウィジェット #ロック画面 #推し活 #受験 #CountDaysNow",
     "button": "App Storeで入手",
     "variant": "b",
-    "alt": "CountDaysNow: Event Counter — 大切な日を ウィジェットに — 大切な予定は Face IDでロック — カウントダウン · あと何日 · 経過日数",
+    "alt": "CountDaysNow: Event Counter — 大切な日を ウィジェットに — 大切な予定は Face IDでロック — カウントダウン・あと何日・記念日・今日のフォーカス",
     "store": "https://apps.apple.com/jp/app/id6807079789?pt=118326163&ct=social&mt=8",
     "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
     "review": {
@@ -53802,14 +53734,14 @@
      "url": "https://apps.apple.com/app/id6807079789?action=write-review"
     },
     "keywords": [
-     "カウントダウン",
-     "あと何日",
      "経過日数",
      "日数計算",
-     "記念日",
-     "誕生日"
+     "誕生日",
+     "ウィジェット",
+     "ロック画面",
+     "推し活"
     ],
-    "keyline": "カウントダウン · あと何日 · 経過日数",
+    "keyline": "カウントダウン・あと何日・記念日・今日のフォーカス",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
@@ -53818,7 +53750,7 @@
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "大切な日を ウィジェットに\n大切な予定は Face IDでロック\nカウントダウン · あと何日 · 経過日数\nCountDaysNow: Event Counter\nApp Storeで「CountDaysNow」を検索\nAndroidはGoogle Playで\n\n#日数計算 #記念日 #誕生日 #ウィジェット #CountDaysNow\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6807079789?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
+     "description": "大切な日を ウィジェットに\n大切な予定は Face IDでロック\nカウントダウン・あと何日・記念日・今日のフォーカス\nCountDaysNow: Event Counter\nApp Storeで「CountDaysNow」を検索\nAndroidはGoogle Playで\n\n#ウィジェット #ロック画面 #推し活 #受験 #CountDaysNow\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6807079789?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
      "link": "https://apps.apple.com/jp/app/id6807079789?pt=118326163&ct=social&mt=8"
     }
    },
@@ -53830,7 +53762,7 @@
     "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/ex9pbb.mp4",
     "hook": "중요한 날을 위젯으로",
     "name": "CountDaysNow: Event Counter",
-    "title": "중요한 날을 위젯으로 | 디데이 카운터 | CountDaysNow",
+    "title": "중요한 날을 위젯으로 | D-day 위젯·기념일·날짜계산 | CountDaysNow",
     "tags": [
      "#기념일",
      "#생일",
@@ -53839,10 +53771,10 @@
      "#전역일",
      "#CountDaysNow"
     ],
-    "caption": "중요한 날을 위젯으로\n비공개 일정은 Face ID로 잠금\n디데이 카운터\nCountDaysNow: Event Counter\nApp Store에서 'CountDaysNow' 검색\nAndroid는 Google Play에서\n\n#기념일 #생일 #커플 #수능 #CountDaysNow",
+    "caption": "중요한 날을 위젯으로\n비공개 일정은 Face ID로 잠금\nD-day 위젯·기념일·날짜계산\nCountDaysNow: Event Counter\nApp Store에서 'CountDaysNow' 검색\nAndroid는 Google Play에서\n\n#기념일 #생일 #커플 #수능 #CountDaysNow",
     "button": "App Store에서 받기",
     "variant": "b",
-    "alt": "CountDaysNow: Event Counter — 중요한 날을 위젯으로 — 비공개 일정은 Face ID로 잠금 — 디데이 카운터",
+    "alt": "CountDaysNow: Event Counter — 중요한 날을 위젯으로 — 비공개 일정은 Face ID로 잠금 — D-day 위젯·기념일·날짜계산",
     "store": "https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8",
     "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
     "review": {
@@ -53857,7 +53789,7 @@
      "생일",
      "커플"
     ],
-    "keyline": "디데이 카운터",
+    "keyline": "D-day 위젯·기념일·날짜계산",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
@@ -53866,7 +53798,7 @@
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "중요한 날을 위젯으로\n비공개 일정은 Face ID로 잠금\n디데이 카운터\nCountDaysNow: Event Counter\nApp Store에서 'CountDaysNow' 검색\nAndroid는 Google Play에서\n\n#기념일 #생일 #커플 #수능 #CountDaysNow\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
+     "description": "중요한 날을 위젯으로\n비공개 일정은 Face ID로 잠금\nD-day 위젯·기념일·날짜계산\nCountDaysNow: Event Counter\nApp Store에서 'CountDaysNow' 검색\nAndroid는 Google Play에서\n\n#기념일 #생일 #커플 #수능 #CountDaysNow\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
      "link": "https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8"
     }
    },
@@ -56185,13 +56117,13 @@
     "title": "每個主題都分 初中高三級 | 學英文・日文・韓文會話 | DailyMate 用句子學語言",
     "tags": [
      "#學英文日文韓文會話",
-     "#實用會話",
-     "#英文短句",
-     "#學英文",
-     "#發音聆聽",
+     "#口說",
+     "#出國",
+     "#西班牙文",
+     "#法文",
      "#DailyMate用句子學語言"
     ],
-    "caption": "每個主題都分 初中高三級\n47 種語言任你學\n學英文・日文・韓文會話\nDailyMate：用句子學語言\n在 App Store 搜尋「DailyMate 用句子學語言」\nAndroid 版在 Google Play\n\n#學英文日文韓文會話 #實用會話 #英文短句 #學英文 #DailyMate用句子學語言",
+    "caption": "每個主題都分 初中高三級\n47 種語言任你學\n學英文・日文・韓文會話\nDailyMate：用句子學語言\n在 App Store 搜尋「DailyMate 用句子學語言」\nAndroid 版在 Google Play\n\n#學英文日文韓文會話 #口說 #出國 #西班牙文 #DailyMate用句子學語言",
     "button": "在 App Store 下載",
     "variant": "b",
     "alt": "DailyMate：用句子學語言 — 每個主題都分 初中高三級 — 47 種語言任你學 — 學英文・日文・韓文會話",
@@ -56202,12 +56134,12 @@
      "url": "https://apps.apple.com/app/id6790418321?action=write-review"
     },
     "keywords": [
-     "實用會話",
-     "英文短句",
-     "學英文",
-     "發音聆聽",
-     "學日文",
-     "學韓文"
+     "口說",
+     "出國",
+     "西班牙文",
+     "法文",
+     "德文",
+     "外語"
     ],
     "keyline": "學英文・日文・韓文會話",
     "compliance": {
@@ -56218,7 +56150,7 @@
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "每個主題都分 初中高三級\n47 種語言任你學\n學英文・日文・韓文會話\nDailyMate：用句子學語言\n在 App Store 搜尋「DailyMate 用句子學語言」\nAndroid 版在 Google Play\n\n#學英文日文韓文會話 #實用會話 #英文短句 #學英文 #DailyMate用句子學語言\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6790418321?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate\nLite: https://apps.apple.com/app/id6794725568?ct=social_lite\nLite Google Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite&referrer=utm_source%3Dsocial_lite%26utm_campaign%3Ddailymatelite",
+     "description": "每個主題都分 初中高三級\n47 種語言任你學\n學英文・日文・韓文會話\nDailyMate：用句子學語言\n在 App Store 搜尋「DailyMate 用句子學語言」\nAndroid 版在 Google Play\n\n#學英文日文韓文會話 #口說 #出國 #西班牙文 #DailyMate用句子學語言\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6790418321?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate\nLite: https://apps.apple.com/app/id6794725568?ct=social_lite\nLite Google Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite&referrer=utm_source%3Dsocial_lite%26utm_campaign%3Ddailymatelite",
      "link": "https://apps.apple.com/tw/app/id6790418321?pt=118326163&ct=social&mt=8"
     }
    },
@@ -56998,19 +56930,19 @@
     "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/n8dzp3.mp4",
     "hook": "會唱 ABC 卻還不會拼讀？",
     "name": "Lumi 字母星球 Pro：ABC啟蒙",
-    "title": "會唱 ABC 卻還不會拼讀？ | ABC啟蒙 | Lumi 字母星球 Pro",
+    "title": "會唱 ABC 卻還不會拼讀？ | 聽音辨首中尾音・短母音・CVC拼讀 | Lumi 字母星球 Pro",
     "tags": [
-     "#ABC啟蒙",
+     "#兒童英文自然發音",
      "#Phonics",
      "#美語",
      "#英語",
      "#幼兒",
      "#Lumi字母星球Pro"
     ],
-    "caption": "會唱 ABC 卻還不會拼讀？\n螢幕上描完 再印成學習單\nLumi 字母星球 Pro：ABC啟蒙\n在 App Store 搜尋「Lumi 字母星球 Pro」\nAndroid 版在 Google Play\n\n#ABC啟蒙 #Phonics #美語 #英語 #Lumi字母星球Pro",
+    "caption": "會唱 ABC 卻還不會拼讀？\n螢幕上描完 再印成學習單\n聽音辨首中尾音・短母音・CVC拼讀\nLumi 字母星球 Pro：ABC啟蒙\n在 App Store 搜尋「Lumi 字母星球 Pro」\nAndroid 版在 Google Play\n\n#兒童英文自然發音 #Phonics #美語 #英語 #Lumi字母星球Pro",
     "button": "在 App Store 下載",
     "variant": "a",
-    "alt": "Lumi 字母星球 Pro：ABC啟蒙 — 會唱 ABC 卻還不會拼讀？ — 螢幕上描完 再印成學習單",
+    "alt": "Lumi 字母星球 Pro：ABC啟蒙 — 會唱 ABC 卻還不會拼讀？ — 螢幕上描完 再印成學習單 — 聽音辨首中尾音・短母音・CVC拼讀",
     "store": "https://apps.apple.com/tw/app/id6778491147?pt=118326163&ct=social&mt=8",
     "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiLetters&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiletterspro",
     "review": {
@@ -57025,7 +56957,7 @@
      "國小",
      "學前"
     ],
-    "keyline": "ABC啟蒙",
+    "keyline": "聽音辨首中尾音・短母音・CVC拼讀",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
@@ -57034,7 +56966,7 @@
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "會唱 ABC 卻還不會拼讀？\n螢幕上描完 再印成學習單\nLumi 字母星球 Pro：ABC啟蒙\n在 App Store 搜尋「Lumi 字母星球 Pro」\nAndroid 版在 Google Play\n\n#ABC啟蒙 #Phonics #美語 #英語 #Lumi字母星球Pro\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6778491147?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiLetters&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiletterspro",
+     "description": "會唱 ABC 卻還不會拼讀？\n螢幕上描完 再印成學習單\n聽音辨首中尾音・短母音・CVC拼讀\nLumi 字母星球 Pro：ABC啟蒙\n在 App Store 搜尋「Lumi 字母星球 Pro」\nAndroid 版在 Google Play\n\n#兒童英文自然發音 #Phonics #美語 #英語 #Lumi字母星球Pro\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6778491147?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiLetters&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiletterspro",
      "link": "https://apps.apple.com/tw/app/id6778491147?pt=118326163&ct=social&mt=8"
     }
    },
@@ -62748,19 +62680,19 @@
     "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/rj2q5p.mp4",
     "hook": "媽媽生日 還有幾天？",
     "name": "CountDaysNow: Event Counter",
-    "title": "媽媽生日 還有幾天？ | 倒數日 · 倒數計時 · 紀念日 | CountDaysNow",
+    "title": "媽媽生日 還有幾天？ | 倒數日・倒數小工具・紀念日・每日焦點 | CountDaysNow",
     "tags": [
-     "#倒數日",
      "#倒數計時",
-     "#紀念日",
      "#生日",
      "#還有幾天",
+     "#農曆",
+     "#鎖定畫面",
      "#CountDaysNow"
     ],
-    "caption": "媽媽生日 還有幾天？\n已經過了幾天 也幫你數著\n倒數日 · 倒數計時 · 紀念日\nCountDaysNow: Event Counter\n在 App Store 搜尋「CountDaysNow」\nAndroid 版在 Google Play\n\n#倒數日 #倒數計時 #紀念日 #生日 #CountDaysNow",
+    "caption": "媽媽生日 還有幾天？\n已經過了幾天 也幫你數著\n倒數日・倒數小工具・紀念日・每日焦點\nCountDaysNow: Event Counter\n在 App Store 搜尋「CountDaysNow」\nAndroid 版在 Google Play\n\n#倒數計時 #生日 #還有幾天 #農曆 #CountDaysNow",
     "button": "在 App Store 下載",
     "variant": "a",
-    "alt": "CountDaysNow: Event Counter — 媽媽生日 還有幾天？ — 已經過了幾天 也幫你數著 — 倒數日 · 倒數計時 · 紀念日",
+    "alt": "CountDaysNow: Event Counter — 媽媽生日 還有幾天？ — 已經過了幾天 也幫你數著 — 倒數日・倒數小工具・紀念日・每日焦點",
     "store": "https://apps.apple.com/tw/app/id6807079789?pt=118326163&ct=social&mt=8",
     "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
     "review": {
@@ -62768,14 +62700,14 @@
      "url": "https://apps.apple.com/app/id6807079789?action=write-review"
     },
     "keywords": [
-     "倒數日",
      "倒數計時",
-     "紀念日",
      "生日",
      "還有幾天",
-     "農曆"
+     "農曆",
+     "鎖定畫面",
+     "小工具"
     ],
-    "keyline": "倒數日 · 倒數計時 · 紀念日",
+    "keyline": "倒數日・倒數小工具・紀念日・每日焦點",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
@@ -62784,7 +62716,7 @@
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "媽媽生日 還有幾天？\n已經過了幾天 也幫你數著\n倒數日 · 倒數計時 · 紀念日\nCountDaysNow: Event Counter\n在 App Store 搜尋「CountDaysNow」\nAndroid 版在 Google Play\n\n#倒數日 #倒數計時 #紀念日 #生日 #CountDaysNow\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6807079789?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow"
+     "caption": "媽媽生日 還有幾天？\n已經過了幾天 也幫你數著\n倒數日・倒數小工具・紀念日・每日焦點\nCountDaysNow: Event Counter\n在 App Store 搜尋「CountDaysNow」\nAndroid 版在 Google Play\n\n#倒數計時 #生日 #還有幾天 #農曆 #CountDaysNow\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6807079789?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow"
     }
    },
    {
@@ -62795,19 +62727,19 @@
     "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/etlqjb.mp4",
     "hook": "スキン100種類",
     "name": "CountDaysNow: Event Counter",
-    "title": "スキン100種類 | カウントダウン · あと何日 · 経過日数 | CountDaysNow",
+    "title": "スキン100種類 | カウントダウン・あと何日・記念日・今日のフォーカス | CountDaysNow",
     "tags": [
-     "#カウントダウン",
-     "#あと何日",
      "#経過日数",
      "#日数計算",
-     "#記念日",
+     "#誕生日",
+     "#ウィジェット",
+     "#ロック画面",
      "#CountDaysNow"
     ],
-    "caption": "スキン100種類\nあれから何日かも ひと目で\nカウントダウン · あと何日 · 経過日数\nCountDaysNow: Event Counter\nApp Storeで「CountDaysNow」を検索\nAndroidはGoogle Playで\n\n#カウントダウン #あと何日 #経過日数 #日数計算 #CountDaysNow",
+    "caption": "スキン100種類\nあれから何日かも ひと目で\nカウントダウン・あと何日・記念日・今日のフォーカス\nCountDaysNow: Event Counter\nApp Storeで「CountDaysNow」を検索\nAndroidはGoogle Playで\n\n#経過日数 #日数計算 #誕生日 #ウィジェット #CountDaysNow",
     "button": "App Storeで入手",
     "variant": "c",
-    "alt": "CountDaysNow: Event Counter — スキン100種類 — あれから何日かも ひと目で — カウントダウン · あと何日 · 経過日数",
+    "alt": "CountDaysNow: Event Counter — スキン100種類 — あれから何日かも ひと目で — カウントダウン・あと何日・記念日・今日のフォーカス",
     "store": "https://apps.apple.com/jp/app/id6807079789?pt=118326163&ct=social&mt=8",
     "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
     "review": {
@@ -62815,14 +62747,14 @@
      "url": "https://apps.apple.com/app/id6807079789?action=write-review"
     },
     "keywords": [
-     "カウントダウン",
-     "あと何日",
      "経過日数",
      "日数計算",
-     "記念日",
-     "誕生日"
+     "誕生日",
+     "ウィジェット",
+     "ロック画面",
+     "推し活"
     ],
-    "keyline": "カウントダウン · あと何日 · 経過日数",
+    "keyline": "カウントダウン・あと何日・記念日・今日のフォーカス",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
@@ -62831,7 +62763,7 @@
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "スキン100種類\nあれから何日かも ひと目で\nカウントダウン · あと何日 · 経過日数\nCountDaysNow: Event Counter\nApp Storeで「CountDaysNow」を検索\nAndroidはGoogle Playで\n\n#カウントダウン #あと何日 #経過日数 #日数計算 #CountDaysNow\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6807079789?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow"
+     "caption": "スキン100種類\nあれから何日かも ひと目で\nカウントダウン・あと何日・記念日・今日のフォーカス\nCountDaysNow: Event Counter\nApp Storeで「CountDaysNow」を検索\nAndroidはGoogle Playで\n\n#経過日数 #日数計算 #誕生日 #ウィジェット #CountDaysNow\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6807079789?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow"
     }
    },
    {
@@ -62842,7 +62774,7 @@
     "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/1jkp95.mp4",
     "hook": "스킨 100가지",
     "name": "CountDaysNow: Event Counter",
-    "title": "스킨 100가지 | 디데이 카운터 | CountDaysNow",
+    "title": "스킨 100가지 | D-day 위젯·기념일·날짜계산 | CountDaysNow",
     "tags": [
      "#디데이카운터",
      "#디데이",
@@ -62851,10 +62783,10 @@
      "#기념일",
      "#CountDaysNow"
     ],
-    "caption": "스킨 100가지\n지난 날도 며칠째인지 한눈에\n디데이 카운터\nCountDaysNow: Event Counter\nApp Store에서 'CountDaysNow' 검색\nAndroid는 Google Play에서\n\n#디데이카운터 #디데이 #카운트다운 #날짜계산 #CountDaysNow",
+    "caption": "스킨 100가지\n지난 날도 며칠째인지 한눈에\nD-day 위젯·기념일·날짜계산\nCountDaysNow: Event Counter\nApp Store에서 'CountDaysNow' 검색\nAndroid는 Google Play에서\n\n#디데이카운터 #디데이 #카운트다운 #날짜계산 #CountDaysNow",
     "button": "App Store에서 받기",
     "variant": "c",
-    "alt": "CountDaysNow: Event Counter — 스킨 100가지 — 지난 날도 며칠째인지 한눈에 — 디데이 카운터",
+    "alt": "CountDaysNow: Event Counter — 스킨 100가지 — 지난 날도 며칠째인지 한눈에 — D-day 위젯·기념일·날짜계산",
     "store": "https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8",
     "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
     "review": {
@@ -62869,7 +62801,7 @@
      "생일",
      "커플"
     ],
-    "keyline": "디데이 카운터",
+    "keyline": "D-day 위젯·기념일·날짜계산",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
@@ -62878,7 +62810,7 @@
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "스킨 100가지\n지난 날도 며칠째인지 한눈에\n디데이 카운터\nCountDaysNow: Event Counter\nApp Store에서 'CountDaysNow' 검색\nAndroid는 Google Play에서\n\n#디데이카운터 #디데이 #카운트다운 #날짜계산 #CountDaysNow\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow"
+     "caption": "스킨 100가지\n지난 날도 며칠째인지 한눈에\nD-day 위젯·기념일·날짜계산\nCountDaysNow: Event Counter\nApp Store에서 'CountDaysNow' 검색\nAndroid는 Google Play에서\n\n#디데이카운터 #디데이 #카운트다운 #날짜계산 #CountDaysNow\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow"
     }
    },
    {
@@ -67545,12 +67477,12 @@
     "tags": [
      "#底片濾鏡復古修圖",
      "#自拍",
-     "#拍立得",
+     "#日期戳",
      "#老照片",
      "#美肌",
      "#PhotoCream底片濾鏡"
     ],
-    "caption": "自拍也能有 底片感\n100+ 款底片濾鏡\n底片相機・復古濾鏡・美顏修圖\nPhotoCream Pro：底片濾鏡·復古修圖\n在 App Store 搜尋「PhotoCream 底片濾鏡」\nAndroid 版在 Google Play\n\n#底片濾鏡復古修圖 #自拍 #拍立得 #老照片 #PhotoCream底片濾鏡",
+    "caption": "自拍也能有 底片感\n100+ 款底片濾鏡\n底片相機・復古濾鏡・美顏修圖\nPhotoCream Pro：底片濾鏡·復古修圖\n在 App Store 搜尋「PhotoCream 底片濾鏡」\nAndroid 版在 Google Play\n\n#底片濾鏡復古修圖 #自拍 #日期戳 #老照片 #PhotoCream底片濾鏡",
     "button": "在 App Store 下載",
     "variant": "a",
     "alt": "PhotoCream Pro：底片濾鏡·復古修圖 — 自拍也能有 底片感 — 100+ 款底片濾鏡 — 底片相機・復古濾鏡・美顏修圖",
@@ -67562,7 +67494,7 @@
     },
     "keywords": [
      "自拍",
-     "拍立得",
+     "日期戳",
      "老照片",
      "美肌",
      "文青濾鏡",
@@ -67577,7 +67509,7 @@
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "自拍也能有 底片感\n100+ 款底片濾鏡\n底片相機・復古濾鏡・美顏修圖\nPhotoCream Pro：底片濾鏡·復古修圖\n在 App Store 搜尋「PhotoCream 底片濾鏡」\nAndroid 版在 Google Play\n\n#底片濾鏡復古修圖 #自拍 #拍立得 #老照片 #PhotoCream底片濾鏡\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6781808054?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.photocream&referrer=utm_source%3Dsocial%26utm_campaign%3Dphotocream"
+     "caption": "自拍也能有 底片感\n100+ 款底片濾鏡\n底片相機・復古濾鏡・美顏修圖\nPhotoCream Pro：底片濾鏡·復古修圖\n在 App Store 搜尋「PhotoCream 底片濾鏡」\nAndroid 版在 Google Play\n\n#底片濾鏡復古修圖 #自拍 #日期戳 #老照片 #PhotoCream底片濾鏡\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6781808054?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.photocream&referrer=utm_source%3Dsocial%26utm_campaign%3Dphotocream"
     }
    },
    {
@@ -67612,7 +67544,7 @@
      "使い捨てカメラ",
      "粒子",
      "ヴィンテージ",
-     "オールド",
+     "デジカメ風",
      "現像"
     ],
     "keyline": "エモいフィルムカメラ・写真加工",
@@ -69517,14 +69449,14 @@
     "name": "Trip Planet: Kids Quest",
     "title": "“Are we there yet?” Make it a quest | Family Travel Missions & Games | Trip Planet",
     "tags": [
-     "#KidsQuest",
+     "#KidsTravelGames",
      "#Vacation",
      "#Airplane",
      "#Flight",
      "#Road",
      "#TripPlanet"
     ],
-    "caption": "“Are we there yet?” Make it a quest\nFlight-day missions in one tap\nFamily Travel Missions & Games\nTrip Planet: Kids Quest\nSearch “Trip Planet” on the App Store\nAlso on Google Play\n\n#KidsQuest #Vacation #Airplane #Flight #TripPlanet",
+    "caption": "“Are we there yet?” Make it a quest\nFlight-day missions in one tap\nFamily Travel Missions & Games\nTrip Planet: Kids Quest\nSearch “Trip Planet” on the App Store\nAlso on Google Play\n\n#KidsTravelGames #Vacation #Airplane #Flight #TripPlanet",
     "button": "Get it on the App Store",
     "variant": "a",
     "alt": "Trip Planet: Kids Quest — “Are we there yet?” Make it a quest — Flight-day missions in one tap — Family Travel Missions & Games",
@@ -69551,7 +69483,7 @@
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "“Are we there yet?” Make it a quest\nFlight-day missions in one tap\nFamily Travel Missions & Games\nTrip Planet: Kids Quest\nSearch “Trip Planet” on the App Store\nAlso on Google Play\n\n#KidsQuest #Vacation #Airplane #Flight #TripPlanet\n\nGet it on the App Store: https://apps.apple.com/us/app/id6787193643?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.TripPlanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripplanet"
+     "caption": "“Are we there yet?” Make it a quest\nFlight-day missions in one tap\nFamily Travel Missions & Games\nTrip Planet: Kids Quest\nSearch “Trip Planet” on the App Store\nAlso on Google Play\n\n#KidsTravelGames #Vacation #Airplane #Flight #TripPlanet\n\nGet it on the App Store: https://apps.apple.com/us/app/id6787193643?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.TripPlanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripplanet"
     }
    },
    {
@@ -70922,19 +70854,19 @@
     "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/eyvnfp.mp4",
     "hook": "重要日子 放上主畫面小工具",
     "name": "CountDaysNow: Event Counter",
-    "title": "重要日子 放上主畫面小工具 | 倒數日 · 倒數計時 · 紀念日 | CountDaysNow",
+    "title": "重要日子 放上主畫面小工具 | 倒數日・倒數小工具・紀念日・每日焦點 | CountDaysNow",
     "tags": [
-     "#生日",
-     "#還有幾天",
      "#農曆",
      "#鎖定畫面",
      "#小工具",
+     "#戀愛紀念",
+     "#結婚週年",
      "#CountDaysNow"
     ],
-    "caption": "重要日子 放上主畫面小工具\n私人事件 用 Face ID 鎖住\n倒數日 · 倒數計時 · 紀念日\nCountDaysNow: Event Counter\n在 App Store 搜尋「CountDaysNow」\nAndroid 版在 Google Play\n\n#生日 #還有幾天 #農曆 #鎖定畫面 #CountDaysNow",
+    "caption": "重要日子 放上主畫面小工具\n私人事件 用 Face ID 鎖住\n倒數日・倒數小工具・紀念日・每日焦點\nCountDaysNow: Event Counter\n在 App Store 搜尋「CountDaysNow」\nAndroid 版在 Google Play\n\n#農曆 #鎖定畫面 #小工具 #戀愛紀念 #CountDaysNow",
     "button": "在 App Store 下載",
     "variant": "b",
-    "alt": "CountDaysNow: Event Counter — 重要日子 放上主畫面小工具 — 私人事件 用 Face ID 鎖住 — 倒數日 · 倒數計時 · 紀念日",
+    "alt": "CountDaysNow: Event Counter — 重要日子 放上主畫面小工具 — 私人事件 用 Face ID 鎖住 — 倒數日・倒數小工具・紀念日・每日焦點",
     "store": "https://apps.apple.com/tw/app/id6807079789?pt=118326163&ct=social&mt=8",
     "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
     "review": {
@@ -70942,14 +70874,14 @@
      "url": "https://apps.apple.com/app/id6807079789?action=write-review"
     },
     "keywords": [
-     "倒數日",
      "倒數計時",
-     "紀念日",
      "生日",
      "還有幾天",
-     "農曆"
+     "農曆",
+     "鎖定畫面",
+     "小工具"
     ],
-    "keyline": "倒數日 · 倒數計時 · 紀念日",
+    "keyline": "倒數日・倒數小工具・紀念日・每日焦點",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
@@ -70958,7 +70890,7 @@
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "重要日子 放上主畫面小工具\n私人事件 用 Face ID 鎖住\n倒數日 · 倒數計時 · 紀念日\nCountDaysNow: Event Counter\n在 App Store 搜尋「CountDaysNow」\nAndroid 版在 Google Play\n\n#生日 #還有幾天 #農曆 #鎖定畫面 #CountDaysNow\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6807079789?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow"
+     "caption": "重要日子 放上主畫面小工具\n私人事件 用 Face ID 鎖住\n倒數日・倒數小工具・紀念日・每日焦點\nCountDaysNow: Event Counter\n在 App Store 搜尋「CountDaysNow」\nAndroid 版在 Google Play\n\n#農曆 #鎖定畫面 #小工具 #戀愛紀念 #CountDaysNow\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6807079789?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow"
     }
    },
    {
@@ -70969,19 +70901,19 @@
     "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/uyo30v.mp4",
     "hook": "試験も旅行もライブも あと何日？",
     "name": "CountDaysNow: Event Counter",
-    "title": "試験も旅行もライブも あと何日？ | カウントダウン · あと何日 · 経過日数 | CountDaysNow",
+    "title": "試験も旅行もライブも あと何日？ | カウントダウン・あと何日・記念日・今日のフォーカス | CountDaysNow",
     "tags": [
-     "#日数計算",
-     "#記念日",
-     "#誕生日",
      "#ウィジェット",
      "#ロック画面",
+     "#推し活",
+     "#受験",
+     "#旧暦",
      "#CountDaysNow"
     ],
-    "caption": "試験も旅行もライブも あと何日？\n大切な日を ウィジェットに\nカウントダウン · あと何日 · 経過日数\nCountDaysNow: Event Counter\nApp Storeで「CountDaysNow」を検索\nAndroidはGoogle Playで\n\n#日数計算 #記念日 #誕生日 #ウィジェット #CountDaysNow",
+    "caption": "試験も旅行もライブも あと何日？\n大切な日を ウィジェットに\nカウントダウン・あと何日・記念日・今日のフォーカス\nCountDaysNow: Event Counter\nApp Storeで「CountDaysNow」を検索\nAndroidはGoogle Playで\n\n#ウィジェット #ロック画面 #推し活 #受験 #CountDaysNow",
     "button": "App Storeで入手",
     "variant": "a",
-    "alt": "CountDaysNow: Event Counter — 試験も旅行もライブも あと何日？ — 大切な日を ウィジェットに — カウントダウン · あと何日 · 経過日数",
+    "alt": "CountDaysNow: Event Counter — 試験も旅行もライブも あと何日？ — 大切な日を ウィジェットに — カウントダウン・あと何日・記念日・今日のフォーカス",
     "store": "https://apps.apple.com/jp/app/id6807079789?pt=118326163&ct=social&mt=8",
     "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
     "review": {
@@ -70989,14 +70921,14 @@
      "url": "https://apps.apple.com/app/id6807079789?action=write-review"
     },
     "keywords": [
-     "カウントダウン",
-     "あと何日",
      "経過日数",
      "日数計算",
-     "記念日",
-     "誕生日"
+     "誕生日",
+     "ウィジェット",
+     "ロック画面",
+     "推し活"
     ],
-    "keyline": "カウントダウン · あと何日 · 経過日数",
+    "keyline": "カウントダウン・あと何日・記念日・今日のフォーカス",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
@@ -71005,7 +70937,7 @@
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "試験も旅行もライブも あと何日？\n大切な日を ウィジェットに\nカウントダウン · あと何日 · 経過日数\nCountDaysNow: Event Counter\nApp Storeで「CountDaysNow」を検索\nAndroidはGoogle Playで\n\n#日数計算 #記念日 #誕生日 #ウィジェット #CountDaysNow\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6807079789?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow"
+     "caption": "試験も旅行もライブも あと何日？\n大切な日を ウィジェットに\nカウントダウン・あと何日・記念日・今日のフォーカス\nCountDaysNow: Event Counter\nApp Storeで「CountDaysNow」を検索\nAndroidはGoogle Playで\n\n#ウィジェット #ロック画面 #推し活 #受験 #CountDaysNow\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6807079789?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow"
     }
    },
    {
@@ -71016,7 +70948,7 @@
     "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/ex9pbb.mp4",
     "hook": "시험, 여행, 콘서트 며칠 남았지?",
     "name": "CountDaysNow: Event Counter",
-    "title": "시험, 여행, 콘서트 며칠 남았지? | 디데이 카운터 | CountDaysNow",
+    "title": "시험, 여행, 콘서트 며칠 남았지? | D-day 위젯·기념일·날짜계산 | CountDaysNow",
     "tags": [
      "#기념일",
      "#생일",
@@ -71025,10 +70957,10 @@
      "#전역일",
      "#CountDaysNow"
     ],
-    "caption": "시험, 여행, 콘서트 며칠 남았지?\n중요한 날을 위젯으로\n디데이 카운터\nCountDaysNow: Event Counter\nApp Store에서 'CountDaysNow' 검색\nAndroid는 Google Play에서\n\n#기념일 #생일 #커플 #수능 #CountDaysNow",
+    "caption": "시험, 여행, 콘서트 며칠 남았지?\n중요한 날을 위젯으로\nD-day 위젯·기념일·날짜계산\nCountDaysNow: Event Counter\nApp Store에서 'CountDaysNow' 검색\nAndroid는 Google Play에서\n\n#기념일 #생일 #커플 #수능 #CountDaysNow",
     "button": "App Store에서 받기",
     "variant": "a",
-    "alt": "CountDaysNow: Event Counter — 시험, 여행, 콘서트 며칠 남았지? — 중요한 날을 위젯으로 — 디데이 카운터",
+    "alt": "CountDaysNow: Event Counter — 시험, 여행, 콘서트 며칠 남았지? — 중요한 날을 위젯으로 — D-day 위젯·기념일·날짜계산",
     "store": "https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8",
     "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
     "review": {
@@ -71043,7 +70975,7 @@
      "생일",
      "커플"
     ],
-    "keyline": "디데이 카운터",
+    "keyline": "D-day 위젯·기념일·날짜계산",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
@@ -71052,7 +70984,7 @@
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "시험, 여행, 콘서트 며칠 남았지?\n중요한 날을 위젯으로\n디데이 카운터\nCountDaysNow: Event Counter\nApp Store에서 'CountDaysNow' 검색\nAndroid는 Google Play에서\n\n#기념일 #생일 #커플 #수능 #CountDaysNow\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow"
+     "caption": "시험, 여행, 콘서트 며칠 남았지?\n중요한 날을 위젯으로\nD-day 위젯·기념일·날짜계산\nCountDaysNow: Event Counter\nApp Store에서 'CountDaysNow' 검색\nAndroid는 Google Play에서\n\n#기념일 #생일 #커플 #수능 #CountDaysNow\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow"
     }
    },
    {
@@ -73322,13 +73254,13 @@
     "title": "主畫面 秒變會話本 | 學英文・日文・韓文會話 | DailyMate 用句子學語言",
     "tags": [
      "#學英文日文韓文會話",
-     "#實用會話",
-     "#英文短句",
-     "#學英文",
-     "#發音聆聽",
+     "#口說",
+     "#出國",
+     "#西班牙文",
+     "#法文",
      "#DailyMate用句子學語言"
     ],
-    "caption": "主畫面 秒變會話本\n每個主題都分 初中高三級\n學英文・日文・韓文會話\nDailyMate：用句子學語言\n在 App Store 搜尋「DailyMate 用句子學語言」\nAndroid 版在 Google Play\n\n#學英文日文韓文會話 #實用會話 #英文短句 #學英文 #DailyMate用句子學語言",
+    "caption": "主畫面 秒變會話本\n每個主題都分 初中高三級\n學英文・日文・韓文會話\nDailyMate：用句子學語言\n在 App Store 搜尋「DailyMate 用句子學語言」\nAndroid 版在 Google Play\n\n#學英文日文韓文會話 #口說 #出國 #西班牙文 #DailyMate用句子學語言",
     "button": "在 App Store 下載",
     "variant": "a",
     "alt": "DailyMate：用句子學語言 — 主畫面 秒變會話本 — 每個主題都分 初中高三級 — 學英文・日文・韓文會話",
@@ -73339,12 +73271,12 @@
      "url": "https://apps.apple.com/app/id6790418321?action=write-review"
     },
     "keywords": [
-     "實用會話",
-     "英文短句",
-     "學英文",
-     "發音聆聽",
-     "學日文",
-     "學韓文"
+     "口說",
+     "出國",
+     "西班牙文",
+     "法文",
+     "德文",
+     "外語"
     ],
     "keyline": "學英文・日文・韓文會話",
     "compliance": {
@@ -73355,7 +73287,7 @@
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "主畫面 秒變會話本\n每個主題都分 初中高三級\n學英文・日文・韓文會話\nDailyMate：用句子學語言\n在 App Store 搜尋「DailyMate 用句子學語言」\nAndroid 版在 Google Play\n\n#學英文日文韓文會話 #實用會話 #英文短句 #學英文 #DailyMate用句子學語言\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6790418321?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate\nLite: https://apps.apple.com/app/id6794725568?ct=social_lite\nLite Google Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite&referrer=utm_source%3Dsocial_lite%26utm_campaign%3Ddailymatelite"
+     "caption": "主畫面 秒變會話本\n每個主題都分 初中高三級\n學英文・日文・韓文會話\nDailyMate：用句子學語言\n在 App Store 搜尋「DailyMate 用句子學語言」\nAndroid 版在 Google Play\n\n#學英文日文韓文會話 #口說 #出國 #西班牙文 #DailyMate用句子學語言\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6790418321?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate\nLite: https://apps.apple.com/app/id6794725568?ct=social_lite\nLite Google Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite&referrer=utm_source%3Dsocial_lite%26utm_campaign%3Ddailymatelite"
     }
    },
    {
@@ -74118,19 +74050,19 @@
     "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/n8dzp3.mp4",
     "hook": "收集 26 位 字母小夥伴",
     "name": "Lumi 字母星球 Pro：ABC啟蒙",
-    "title": "收集 26 位 字母小夥伴 | ABC啟蒙 | Lumi 字母星球 Pro",
+    "title": "收集 26 位 字母小夥伴 | 聽音辨首中尾音・短母音・CVC拼讀 | Lumi 字母星球 Pro",
     "tags": [
-     "#ABC啟蒙",
+     "#兒童英文自然發音",
      "#Phonics",
      "#美語",
      "#英語",
      "#幼兒",
      "#Lumi字母星球Pro"
     ],
-    "caption": "收集 26 位 字母小夥伴\n螢幕上描完 再印成學習單\nLumi 字母星球 Pro：ABC啟蒙\n在 App Store 搜尋「Lumi 字母星球 Pro」\nAndroid 版在 Google Play\n\n#ABC啟蒙 #Phonics #美語 #英語 #Lumi字母星球Pro",
+    "caption": "收集 26 位 字母小夥伴\n螢幕上描完 再印成學習單\n聽音辨首中尾音・短母音・CVC拼讀\nLumi 字母星球 Pro：ABC啟蒙\n在 App Store 搜尋「Lumi 字母星球 Pro」\nAndroid 版在 Google Play\n\n#兒童英文自然發音 #Phonics #美語 #英語 #Lumi字母星球Pro",
     "button": "在 App Store 下載",
     "variant": "c",
-    "alt": "Lumi 字母星球 Pro：ABC啟蒙 — 收集 26 位 字母小夥伴 — 螢幕上描完 再印成學習單",
+    "alt": "Lumi 字母星球 Pro：ABC啟蒙 — 收集 26 位 字母小夥伴 — 螢幕上描完 再印成學習單 — 聽音辨首中尾音・短母音・CVC拼讀",
     "store": "https://apps.apple.com/tw/app/id6778491147?pt=118326163&ct=social&mt=8",
     "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiLetters&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiletterspro",
     "review": {
@@ -74145,7 +74077,7 @@
      "國小",
      "學前"
     ],
-    "keyline": "ABC啟蒙",
+    "keyline": "聽音辨首中尾音・短母音・CVC拼讀",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
@@ -74154,7 +74086,7 @@
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "收集 26 位 字母小夥伴\n螢幕上描完 再印成學習單\nLumi 字母星球 Pro：ABC啟蒙\n在 App Store 搜尋「Lumi 字母星球 Pro」\nAndroid 版在 Google Play\n\n#ABC啟蒙 #Phonics #美語 #英語 #Lumi字母星球Pro\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6778491147?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiLetters&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiletterspro"
+     "caption": "收集 26 位 字母小夥伴\n螢幕上描完 再印成學習單\n聽音辨首中尾音・短母音・CVC拼讀\nLumi 字母星球 Pro：ABC啟蒙\n在 App Store 搜尋「Lumi 字母星球 Pro」\nAndroid 版在 Google Play\n\n#兒童英文自然發音 #Phonics #美語 #英語 #Lumi字母星球Pro\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6778491147?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiLetters&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiletterspro"
     }
    },
    {

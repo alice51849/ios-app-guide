@@ -233,6 +233,7 @@ class PostTest(unittest.TestCase):
                     mock.patch.object(S.clip_progress, "record_post") as rec, mock.patch("sys.stdout"):
                 self.assertEqual(S.main(argv), 0)
             self.assertEqual(rec.call_args[0][:3], (S.CHANNEL, "feed/mochi/en", "l"))
+            self.assertEqual((rec.call_args[1]["app"], rec.call_args[1]["locale"]), ("mochi", "en"))  # per-app receipt
             with mock.patch.object(S, "post_instagram", side_effect=RuntimeError("HTTP 429: too many")), \
                     mock.patch.object(S.volume_ramp, "handle_error") as handle, mock.patch("sys.stdout"):
                 with self.assertRaises(RuntimeError):
@@ -240,6 +241,27 @@ class PostTest(unittest.TestCase):
             self.assertEqual(handle.call_args[0][0], S.CHANNEL)
             with mock.patch("sys.stdout"):   # the ::error:: line is the real thing's output, not this run's
                 self.assertEqual(S.main(["post", "--dir", tmp]), 1)  # no base url
+
+    def test_feed_receipt_carries_the_app_key_and_old_receipts_stay_readable(self):
+        # 11-15 coverage audit: carousel receipts only had clip "feed/<app>/...", so per-app counts read "feed".
+        self.assertEqual(S.app_of_key("feed/gmoney/zh-Hant/carousel/gmoney-zh-Hant-top5-20261022"), "gmoney")
+        self.assertEqual(S.app_of_key("feed/mochi/en/top5/2026-11-13"), "mochi")
+        self.assertIsNone(S.app_of_key("feed/"))
+        self.assertIsNone(S.app_of_key("mochi/en"))
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "clip-posts.json"
+            path.write_text(json.dumps({"posts": [{"channel": S.CHANNEL, "clip": "feed/old/en", "link": "x",
+                                                   "posted_at": "2026-11-01T00:00:00Z"}], "notes": []}))
+            with mock.patch.object(S.clip_progress, "POSTS", path), mock.patch.object(S.clip_progress, "update"):
+                S.clip_progress.record_post(S.CHANNEL, "feed/mochi/en/top5/d", "l", media_id="m", variant="top5",
+                                            app="mochi", locale="en")
+                S.clip_progress.record_post("telegram", "zipbox/en", "l2")
+            posts = json.loads(path.read_text(encoding="utf-8"))["posts"]
+        self.assertNotIn("app", posts[0])                                   # old receipt untouched
+        self.assertEqual({k: posts[1][k] for k in ("channel", "clip", "link", "id", "variant", "app", "locale")},
+                         {"channel": S.CHANNEL, "clip": "feed/mochi/en/top5/d", "link": "l", "id": "m",
+                          "variant": "top5", "app": "mochi", "locale": "en"})
+        self.assertNotIn("app", posts[2])                                   # other callers unchanged
 
     def test_committed_workflow_and_ramp_agree_on_the_slots(self):
         ramp = R.load()

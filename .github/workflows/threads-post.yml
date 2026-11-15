@@ -22,6 +22,8 @@ name: Threads posts
 # top-level publish, threads_cap.py also reads Threads' own 24-hour count of
 # the account's top-level posts (threads-autopilot's included): 3 or more is
 # a skip (green, the ⏸ line); a count that cannot be read posts nothing.
+# A slot whose room check finds the account full stays open for 2 hours (threads_cap.py full): the next
+# clip-backup.yml run (03:47 for 03:00, 14:47 for 13:00) tries again; only then is it a recorded cap skip.
 # run-name records the slot so social_slot_gate.py can read it back.
 run-name: >-
   ${{ github.event_name == 'workflow_dispatch'
@@ -111,6 +113,7 @@ jobs:
           --schedule "$SLOT_SCHEDULE"
           --slot-hour "$SLOT_HOUR"
           --slot-date "$SLOT_DATE"
+          --open-step "Threads cap full: slot left open for a retry"
       - name: Leave the 01:40 slot to threads-autopilot (shared account)
         # Coordinator 2026-11-12: the 3-in-24-hours cap stays; the Taiwan 21:00 (13 UTC) slot is kept for this
         # workflow's evening post, and before it the two pipelines post at most 2 together: this workflow's
@@ -121,17 +124,51 @@ jobs:
         run: echo "::notice::Threads 01:40 這格讓給 threads-autopilot 的 15 UTC（台北 23:00）那格，本次不發主貼文。"
       - name: Check the account's daily cap (3 posts, Taiwan date)
         # Shared with every Threads post path (threads-autopilot included).
-        # Full: the slot is done. Count unknown: fail, so a backfill can retry.
+        # Full: since 2026-11-15 not done at once (the day before's post at the same slot is often a few minutes
+        # short of leaving Threads' rolling 24 hours): inside 2 hours of the slot's fire time it stays open and
+        # the next clip-backup.yml run dispatches it again (threads_cap.py full, OPEN_STEP below); after that it
+        # is a cap skip with a receipt. Count unknown: fail, so a backfill can retry.
         id: room
         if: steps.slot.outputs.should_post == 'true' && steps.slot.outputs.hour != '1'
         env:
           THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
+          SLOT: ${{ steps.slot.outputs.slot }}
         run: |
           python3 .github/scripts/test_threads_cap.py -q
           python3 .github/scripts/threads_series.py room && rc=0 || rc=$?
           if [ "$rc" = 0 ]; then echo "ok=true" >> "$GITHUB_OUTPUT"; exit 0; fi
-          if [ "$rc" = 1 ]; then echo "ok=false" >> "$GITHUB_OUTPUT"; echo "Threads: account at its daily cap; slot skipped"; exit 0; fi
+          if [ "$rc" = 1 ]; then
+            echo "ok=false" >> "$GITHUB_OUTPUT"
+            python3 .github/scripts/threads_cap.py full --slot "$SLOT" --receipt "$RUNNER_TEMP/cap-skip.json"
+            exit 0
+          fi
           echo "::error::could not count today's Threads posts; nothing posted"; exit 1
+      - name: "Threads cap full: slot left open for a retry"
+        # The step name is threads_cap.OPEN_STEP: social_slot_gate.py (--open-step) and threads_backfill.py read
+        # it back, so this green run does not complete the slot. Keep the names the same (test_threads_cap.py).
+        if: steps.room.outputs.retry == 'true'
+        run: echo "::notice::Threads 帳號已滿，這格寬限內再試（不記完成）"
+      - name: Record the cap skip receipt
+        # threads_cap.py full wrote $RUNNER_TEMP/cap-skip.json once the grace was over; it goes into
+        # .github/growth/threads-cap-skips.json. A record only, so a failed push is a warning.
+        if: always() && steps.room.outputs.capskip == 'true'
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ github.token }} # growth_records.py checks whether geo-daily is running
+        run: |
+          f=.github/growth/threads-cap-skips.json
+          if [ ! -s "$RUNNER_TEMP/cap-skip.json" ]; then echo "no cap skip receipt"; exit 0; fi
+          for i in 1 2 3; do
+            target="$(python3 .github/scripts/growth_records.py prepare)"
+            python3 .github/scripts/threads_cap.py merge-skip "$RUNNER_TEMP/cap-skip.json"
+            git add "$f"
+            if git diff --cached --quiet && [ ! -f .git/MERGE_HEAD ]; then echo "already recorded"; exit 0; fi
+            git -c user.name="github-actions[bot]" -c user.email="41898299+github-actions[bot]@users.noreply.github.com" \
+              commit -q -m "Threads 滿額跳過收據 [skip ci]"
+            if python3 .github/scripts/growth_records.py push "$target"; then exit 0; fi
+            sleep $((i * 5))
+          done
+          echo "::warning::could not record the Threads cap skip"; exit 1
       - name: Post picture post to Threads (link in the first reply)
         if: steps.room.outputs.ok == 'true' && steps.slot.outputs.hour == '3'
         env:

@@ -12,6 +12,8 @@ Nothing here posts. The dispatched run goes through the same slot gate
 and the same account cap (threads_series.py room: 3 top-level posts a Taiwan
 day, threads-autopilot's posts on the account included). Only slots of the
 current Taiwan day are filled, so a backfill never takes the next day's room.
+A green run that found the account full inside the retry grace left its slot
+open (threads_cap.OPEN_STEP), so that slot is dispatched again here.
 
     python3 threads_backfill.py            # dispatch the missing slots
     python3 threads_backfill.py --dry-run  # only print them
@@ -27,6 +29,7 @@ import urllib.parse
 import urllib.request
 
 import social_slot_gate as gate
+import threads_cap
 
 
 WORKFLOW = "threads-post.yml"
@@ -51,8 +54,10 @@ def taiwan_day_slots(now):
     ]
 
 
-def covered_slots(runs):
-    """Slots a threads-post run already filled (success) or is filling now."""
+def covered_slots(runs, left_open=None, relevant=None):
+    """Slots a threads-post run already filled (success) or is filling now. A green run that left its slot open
+    (``left_open(run)``: the account was full inside the retry grace, threads_cap.py) does not cover it; that is
+    only asked for slots in ``relevant`` (today's), so old runs cost no API call."""
     covered = set()
     for run in runs:
         if not isinstance(run, dict):
@@ -64,14 +69,23 @@ def covered_slots(runs):
             slot = gate.run_slot(run, SLOTS)
         except ValueError:
             continue
-        if slot is not None:
-            covered.add(slot)
+        if slot is None:
+            continue
+        if (
+            left_open is not None
+            and status == "completed"
+            and (relevant is None or slot in relevant)
+            and left_open(run)
+        ):
+            continue
+        covered.add(slot)
     return covered
 
 
-def missing_slots(runs, now):
+def missing_slots(runs, now, left_open=None):
     now = gate._utc(now)
-    covered = covered_slots(runs)
+    today = {slot for slot, _ in taiwan_day_slots(now)}
+    covered = covered_slots(runs, left_open, today)
     return [
         slot
         for slot, fires in taiwan_day_slots(now)
@@ -116,7 +130,10 @@ def main(argv=None):
     token = os.environ.get("GITHUB_TOKEN", "")
     now = dt.datetime.now(dt.timezone.utc)
     runs = gate.fetch_runs(repository, WORKFLOW, token)
-    missing = missing_slots(runs, now)
+    def left_open(run):
+        return gate.run_ran_step(repository, run, token, threads_cap.OPEN_STEP)
+
+    missing = missing_slots(runs, now, left_open)
     if not missing:
         print("Threads backfill: every due slot of today (Taiwan) is filled or running")
         return 0

@@ -1,11 +1,11 @@
 {
- "generated": "2026-11-14T22:31:44Z",
+ "generated": "2026-11-15T06:42:35Z",
  "mode": "apply",
  "counts": {
-  "ok_reply": 67,
+  "ok_reply": 68,
   "unknown_app": 48,
-  "ok_backfilled_earlier": 85,
-  "ok_store_only": 645,
+  "ok_backfilled_earlier": 87,
+  "ok_store_only": 643,
   "backfilled": 2,
   "ok_bio_link": 68,
   "ok_caption": 4,
@@ -13,6 +13,18 @@
   "missing": 3
  },
  "rows": [
+  {
+   "channel": "threads",
+   "id": "18099304913659256",
+   "permalink": "https://www.threads.com/@hourstag.app/post/DfvyX_ajEUR",
+   "date": "2026-11-15",
+   "app": "mochi",
+   "status": "ok_reply",
+   "text": "시험 전 투두리스트는 작게 쪼개는 게 답이더라 ✏️ '영어 공부' 말고 '단어 30개', '기출 1회'처럼 나눠서 적고, 하나 끝낼 때마다 톡 체크. 귀여운 테마로 바꿔두니까 앱 여는 게 덜 부담스러움. 오늘도 체크 하나씩.",
+   "why": "trial",
+   "ios_id": "6785004775",
+   "locale": "ko"
+  },
   {
    "channel": "threads",
    "id": "17945642868364101",
@@ -2103,11 +2115,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctjB7MlOIQ",
    "date": "2026-08-31",
    "app": "lumimathpro",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "Lumi Math Pro: Kids Numbers Early math, made fun The whole number galaxy for kids. Every counting and math adventure in one place — playful,",
    "why": "url+brand",
    "ios_id": "6776958488",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "18109502948628331",
+   "at": "2026-11-15T06:40:08Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -2115,16 +2132,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctjSk-AjYr",
    "date": "2026-08-31",
    "app": "lumiweather",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "Lumi Weather: Family Forecast Weather, Rain Radar & Alerts Plan the day with kids in seconds. A friendly forecast plus a smart outing score ",
    "why": "url+brand",
    "ios_id": "6779552704",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "18157020880536065",
-   "at": "2026-11-14T22:29:23Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",
@@ -2732,11 +2744,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctjHpJDY0R",
    "date": "2026-08-31",
    "app": "lumimission",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "Lumi Mission Planet Reward Chart for Kids Routines Turn chores and bedtime into a game kids love. Build daily habits with rewards that stick",
    "why": "url+brand",
    "ios_id": "6779750237",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "18339539686263882",
+   "at": "2026-11-15T06:40:08Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -4388,16 +4405,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctjMvrFowV",
    "date": "2026-08-31",
    "app": "lumimissionpro",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "Lumi Mission Planet Pro Kids Routine & Habit Tracker The routine kids actually finish. Turn chores, habits, and bedtime into a game they lov",
    "why": "url+brand",
    "ios_id": "6779745474",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "18128716318874132",
-   "at": "2026-11-14T22:29:23Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",

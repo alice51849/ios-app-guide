@@ -13,7 +13,7 @@
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
     "dateModified": "2026-11-15",
-    "contentDigest": "2e705e6133a59676d866c2b31370645ab6a26d6f56af573a0826503639769f45",
+    "contentDigest": "282bcc5b6464e82114ffd6f448957ef0b3ed84009e98d9264ad03d2820dcb103",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
     "recordCount": 60
@@ -208,7 +208,6 @@
       "title": "DailyMate : parler en contexte",
       "content_text": "Optimisée pour l’iPhone Duo. Conçue avec le SDK le plus récent, l’app remplit tout l’écran intérieur et adapte automatiquement sa mise en page, appareil plié ou ouvert.",
       "tags": [
-        "conversation",
         "expressions",
         "réponses",
         "situations",
@@ -216,11 +215,12 @@
         "débutant",
         "japonais",
         "coréen",
-        "mandarin",
-        "audio"
+        "italien",
+        "voyage",
+        "écoute"
       ],
       "language": "fr-CA",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6794725568",
@@ -261,13 +261,11 @@
         "spectre",
         "ronflement",
         "étalonnage",
-        "volume",
-        "OSHA",
-        "RTA",
-        "FFT"
+        "micro",
+        "octave"
       ],
       "language": "fr-CA",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6821790092",
@@ -367,18 +365,23 @@
       "content_text": "Optimisée pour l’iPhone Duo. Conçue avec le SDK le plus récent, l’app remplit tout l’écran intérieur et adapte automatiquement sa mise en page, appareil plié ou ouvert.",
       "tags": [
         "émulateur",
+        "gba",
+        "gbc",
         "jeux",
+        "vidéo",
+        "rétro",
         "console",
-        "rétrogaming",
-        "sauvegarde",
-        "manette",
-        "codes de triche",
-        "cartouche",
         "portable",
-        "gamepad"
+        "triche",
+        "manette",
+        "offline",
+        "rapide",
+        "turbo",
+        "backup",
+        "pixel"
       ],
       "language": "fr-CA",
-      "date_modified": "2026-11-01T03:09:58Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6794039979",
@@ -709,13 +712,13 @@
         "caviardage",
         "renseignements personnels",
         "nas",
-        "passeport",
         "dossier médical",
         "métadonnées",
-        "vie privée"
+        "vie privée",
+        "pdf"
       ],
       "language": "fr-CA",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6829184924",
@@ -862,7 +865,6 @@
       "content_text": "Optimisée pour l’iPhone Duo. Conçue avec le SDK le plus récent, l’app remplit tout l’écran intérieur et adapte automatiquement sa mise en page, appareil plié ou ouvert.",
       "tags": [
         "vintage",
-        "rétro",
         "grain",
         "pellicule",
         "retouche",
@@ -874,10 +876,10 @@
         "jetable",
         "effet",
         "y2k",
-        "cinéma"
+        "éditeur"
       ],
       "language": "fr-CA",
-      "date_modified": "2026-10-30T02:23:28Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6780223070",
@@ -983,18 +985,18 @@
         "brun",
         "rose",
         "dormir",
-        "insomnie",
-        "bébé",
-        "acouphènes",
-        "TDAH",
         "concentration",
         "relaxation",
         "méditation",
         "orage",
-        "zen"
+        "zen",
+        "vagues",
+        "ventilateur",
+        "nature",
+        "forêt"
       ],
       "language": "fr-CA",
-      "date_modified": "2026-11-15T12:49:45Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6802166527",
@@ -1093,16 +1095,16 @@
         "veille",
         "chargeur",
         "rémanence",
-        "oled",
-        "widgets",
         "numérique",
         "réveil",
         "écran verrouillé",
         "format 24h",
-        "carillon"
+        "carillon",
+        "grand",
+        "nuit"
       ],
       "language": "fr-CA",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6807335593",
@@ -1245,24 +1247,18 @@
       "title": "UsageNow : Suivi d'usage IA",
       "content_text": "Vous frappez votre limite d’IA en plein milieu d’une tâche? UsageNow vous montre ce qu’il reste de chaque forfait IA et le moment exact de sa remise à zéro, directement sur l’écran d’accueil, et vous prévient avant que vous soyez à court.",
       "tags": [
-        "ai",
-        "code",
-        "dev",
         "développeur",
-        "usage",
-        "tracker",
         "consommation",
-        "quota",
         "compteur",
         "jeton",
-        "token",
-        "widget",
-        "llm",
-        "monitor",
-        "api"
+        "api",
+        "programmeur",
+        "restant",
+        "réinitialisation",
+        "compte à rebours"
       ],
       "language": "fr-CA",
-      "date_modified": "2026-10-11T13:38:16Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6790467886",
@@ -1273,22 +1269,19 @@
       "tags": [
         "latence",
         "gigue",
-        "ipv6",
-        "ipv4",
-        "tcp",
-        "tls",
         "nœud",
-        "répéteur",
         "borne",
         "rapport",
-        "pdf",
         "historique",
-        "widget",
         "montre",
-        "stabilité"
+        "stabilité",
+        "connexion",
+        "test",
+        "analyse",
+        "instable"
       ],
       "language": "fr-CA",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6793414462",

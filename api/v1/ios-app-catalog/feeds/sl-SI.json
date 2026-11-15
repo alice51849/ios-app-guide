@@ -13,7 +13,7 @@
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
     "dateModified": "2026-11-15",
-    "contentDigest": "2e705e6133a59676d866c2b31370645ab6a26d6f56af573a0826503639769f45",
+    "contentDigest": "282bcc5b6464e82114ffd6f448957ef0b3ed84009e98d9264ad03d2820dcb103",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
     "recordCount": 60
@@ -251,7 +251,6 @@
       "title": "dB Halo: Merilnik ravni zvoka",
       "content_text": "Optimizirano za iPhone Duo. Aplikacija je izdelana z najnovejšim SDK, zapolni celoten notranji zaslon in samodejno prilagodi postavitev, ne glede na to, ali je naprava zaprta ali odprta.",
       "tags": [
-        "decibel",
         "hrup",
         "glasnost",
         "smrčanje",
@@ -261,11 +260,11 @@
         "izpostavljenost",
         "sluh",
         "mikrofon",
-        "FFT",
-        "RTA"
+        "spanje",
+        "FFT"
       ],
       "language": "sl-SI",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6821790092",
@@ -367,21 +366,24 @@
       "title": "GBAGo: Vizualne shranitve",
       "content_text": "Optimizirano za iPhone Duo. Aplikacija je izdelana z najnovejšim SDK, zapolni celoten notranji zaslon in samodejno prilagodi postavitev, ne glede na to, ali je naprava zaprta ali odprta.",
       "tags": [
+        "emulator",
+        "gba",
+        "gbc",
         "igre",
+        "retro",
         "konzola",
-        "emulacija",
-        "shranjevanje",
-        "kode",
-        "kartuša",
-        "kontroler",
         "žepna",
-        "nostalgija",
+        "kode",
+        "cheat",
+        "kontroler",
         "offline",
-        "otroštvo",
+        "hitro",
+        "turbo",
+        "backup",
         "gamepad"
       ],
       "language": "sl-SI",
-      "date_modified": "2026-11-01T03:09:58Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6794039979",
@@ -864,9 +866,7 @@
       "title": "PhotoCream Pro: Filmski filtri",
       "content_text": "Optimizirano za iPhone Duo. Aplikacija je izdelana z najnovejšim SDK, zapolni celoten notranji zaslon in samodejno prilagodi postavitev, ne glede na to, ali je naprava zaprta ali odprta.",
       "tags": [
-        "vintage",
         "retro",
-        "film",
         "zrno",
         "urejanje",
         "fotografij",
@@ -876,10 +876,11 @@
         "estetika",
         "35mm",
         "enkratni",
-        "učinki"
+        "učinki",
+        "vinjeta"
       ],
       "language": "sl-SI",
-      "date_modified": "2026-10-30T02:23:28Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6780223070",
@@ -981,19 +982,19 @@
       "tags": [
         "rjavi",
         "rožnati",
-        "nespečnost",
-        "uspavanje",
-        "dojenček",
+        "dremež",
         "sprostitev",
         "meditacija",
         "zbranost",
         "učenje",
-        "ADHD",
-        "tinitus",
-        "kamin"
+        "kamin",
+        "ventilator",
+        "narava",
+        "nevihta",
+        "valovi"
       ],
       "language": "sl-SI",
-      "date_modified": "2026-11-15T12:49:45Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6802166527",
@@ -1088,12 +1089,11 @@
         "priklopna postaja",
         "polnjenje",
         "ob postelji",
-        "oled",
         "pripomočki",
         "budilka"
       ],
       "language": "sl-SI",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6807335593",
@@ -1234,24 +1234,20 @@
       "title": "UsageNow: Poraba UI in limiti",
       "content_text": "Vam je omejitev UI pošla sredi dela? UsageNow pokaže, koliko vam ostane pri vsakem paketu UI in kdaj natanko se ponastavi, kar na začetnem zaslonu, in vas opozori, preden vam omejitve zmanjka.",
       "tags": [
-        "ai",
         "code",
-        "dev",
         "razvijalec",
-        "usage",
-        "tracker",
         "kvota",
         "števec",
         "token",
         "pripomoček",
-        "widget",
-        "reset",
         "quota",
-        "meter",
-        "monitor"
+        "programer",
+        "preostanek",
+        "ponastavitev",
+        "odštevanje"
       ],
       "language": "sl-SI",
-      "date_modified": "2026-10-11T13:38:16Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6790467886",
@@ -1261,9 +1257,6 @@
       "content_text": "Optimizirano za iPhone Duo. Aplikacija je izdelana z najnovejšim SDK, zapolni celoten notranji zaslon in samodejno prilagodi postavitev, ne glede na to, ali je naprava zaprta ali odprta.",
       "tags": [
         "latenca",
-        "jitter",
-        "ipv6",
-        "tcp",
         "vozlišče",
         "poročilo",
         "pdf",
@@ -1272,10 +1265,12 @@
         "ura",
         "stabilnost",
         "diagnostika",
-        "router"
+        "povezava",
+        "test",
+        "jitter"
       ],
       "language": "sl-SI",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6793414462",

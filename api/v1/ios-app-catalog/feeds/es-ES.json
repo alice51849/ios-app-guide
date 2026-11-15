@@ -13,7 +13,7 @@
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
     "dateModified": "2026-11-15",
-    "contentDigest": "2e705e6133a59676d866c2b31370645ab6a26d6f56af573a0826503639769f45",
+    "contentDigest": "282bcc5b6464e82114ffd6f448957ef0b3ed84009e98d9264ad03d2820dcb103",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
     "recordCount": 60
@@ -209,7 +209,7 @@
       "title": "DailyMate: idiomas en contexto",
       "content_text": "Optimizada para el iPhone Duo. Creada con el SDK más reciente, la app ocupa toda la pantalla interior y ajusta su diseño automáticamente, con el dispositivo plegado o desplegado.",
       "tags": [
-        "frases cotidianas",
+        "cotidianas",
         "conversación",
         "expresiones",
         "respuestas",
@@ -219,7 +219,7 @@
         "japonés"
       ],
       "language": "es-ES",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6794725568",
@@ -260,11 +260,10 @@
         "sueño",
         "grabación",
         "calibración",
-        "FFT",
-        "RTA"
+        "micrófono"
       ],
       "language": "es-ES",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6821790092",
@@ -366,20 +365,22 @@
       "content_text": "Optimizada para el iPhone Duo. Creada con el SDK más reciente, la app ocupa toda la pantalla interior y ajusta su diseño automáticamente, con el dispositivo plegado o desplegado.",
       "tags": [
         "emulador",
+        "gba",
+        "gbc",
         "juegos",
+        "retro",
         "consola",
-        "guardado",
+        "portátil",
         "trucos",
-        "cartucho",
         "mando",
-        "arcade",
-        "retrogaming",
-        "sin conexión",
-        "gamepad",
-        "fps"
+        "offline",
+        "acelerar",
+        "guardado",
+        "rápido",
+        "backup"
       ],
       "language": "es-ES",
-      "date_modified": "2026-11-01T03:09:58Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6794039979",
@@ -709,16 +710,16 @@
         "ocultar",
         "eliminar",
         "anonimizar",
-        "dni",
         "nie",
         "iban",
         "documento",
         "factura",
         "escáner",
-        "metadatos"
+        "metadatos",
+        "recibo"
       ],
       "language": "es-ES",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6829184924",
@@ -869,10 +870,8 @@
       "title": "PhotoCream Pro: Filtros retro",
       "content_text": "Optimizada para el iPhone Duo. Creada con el SDK más reciente, la app ocupa toda la pantalla interior y ajusta su diseño automáticamente, con el dispositivo plegado o desplegado.",
       "tags": [
-        "vintage",
         "carrete",
         "grano",
-        "editor",
         "fotos",
         "selfie",
         "belleza",
@@ -882,10 +881,12 @@
         "desechable",
         "efecto",
         "luz",
-        "y2k"
+        "y2k",
+        "cine",
+        "editor"
       ],
       "language": "es-ES",
-      "date_modified": "2026-10-30T02:23:28Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6780223070",
@@ -989,17 +990,16 @@
         "rosa",
         "tormenta",
         "olas",
-        "insomnio",
-        "bebé",
         "relajación",
         "meditación",
         "concentración",
-        "TDAH",
-        "acúfenos",
-        "siesta"
+        "siesta",
+        "ventilador",
+        "naturaleza",
+        "estudiar"
       ],
       "language": "es-ES",
-      "date_modified": "2026-11-15T12:49:45Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6802166527",
@@ -1098,15 +1098,14 @@
         "reposo",
         "cargador",
         "quemado",
-        "oled",
-        "widgets",
-        "digital",
         "despertador",
         "pantalla bloqueada",
-        "formato 24h"
+        "formato 24h",
+        "siempre activa",
+        "horizontal"
       ],
       "language": "es-ES",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6807335593",
@@ -1247,24 +1246,21 @@
       "title": "UsageNow: Monitor de uso IA",
       "content_text": "¿Te quedas sin límite de IA a mitad de una tarea? UsageNow te muestra cuánto te queda de cada plan de IA y cuándo se restablece exactamente, directamente en tu pantalla de inicio, y te avisa antes de que se agote.",
       "tags": [
-        "ai",
         "code",
-        "dev",
         "desarrollador",
-        "usage",
-        "tracker",
         "consumo",
         "cuota",
         "contador",
         "token",
-        "widget",
         "reinicio",
         "llm",
-        "meter",
-        "api"
+        "api",
+        "programador",
+        "restante",
+        "cuenta atrás"
       ],
       "language": "es-ES",
-      "date_modified": "2026-10-11T13:38:16Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6790467886",
@@ -1274,11 +1270,7 @@
       "content_text": "Optimizada para el iPhone Duo. Creada con el SDK más reciente, la app ocupa toda la pantalla interior y ajusta su diseño automáticamente, con el dispositivo plegado o desplegado.",
       "tags": [
         "latencia",
-        "jitter",
-        "ipv6",
-        "tcp",
         "nodo",
-        "repetidor",
         "roaming",
         "informe",
         "pdf",
@@ -1286,10 +1278,13 @@
         "widget",
         "reloj",
         "estabilidad",
-        "fibra"
+        "fibra",
+        "conexión",
+        "prueba",
+        "inestable"
       ],
       "language": "es-ES",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6793414462",

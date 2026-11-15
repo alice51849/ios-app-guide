@@ -13,7 +13,7 @@
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
     "dateModified": "2026-11-15",
-    "contentDigest": "2e705e6133a59676d866c2b31370645ab6a26d6f56af573a0826503639769f45",
+    "contentDigest": "282bcc5b6464e82114ffd6f448957ef0b3ed84009e98d9264ad03d2820dcb103",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
     "recordCount": 60
@@ -251,12 +251,10 @@
         "spektrogrammi",
         "kalibrointi",
         "kuulonsuojaus",
-        "FFT",
-        "RTA",
         "melu"
       ],
       "language": "fi",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6821790092",
@@ -355,21 +353,21 @@
       "title": "GBAGo: Kuvalliset tallenteet",
       "content_text": "Optimoitu iPhone Duo -laitteelle. Uusimmalla SDK:lla rakennettu sovellus täyttää koko sisänäytön ja mukauttaa asettelunsa automaattisesti, oli laite suljettuna tai auki.",
       "tags": [
-        "pelit",
-        "konsoli",
-        "tallennus",
-        "huijauskoodit",
-        "emulointi",
-        "ohjain",
-        "käsikonsoli",
-        "nostalgia",
-        "pikseli",
-        "offline",
+        "emulaattori",
+        "gba",
         "gbc",
-        "emu"
+        "pelit",
+        "retro",
+        "konsoli",
+        "käsikonsoli",
+        "huijauskoodit",
+        "ohjain",
+        "offline",
+        "pikatallennus",
+        "turbo"
       ],
       "language": "fi",
-      "date_modified": "2026-11-01T03:09:58Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6794039979",
@@ -683,14 +681,13 @@
         "sensurointi",
         "henkilötiedot",
         "henkilötunnus",
-        "passi",
         "potilastiedot",
         "sopimus",
         "pdf",
         "yksityisyys"
       ],
       "language": "fi",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6829184924",
@@ -837,7 +834,6 @@
       "title": "PhotoCream Pro: Filmifiltterit",
       "content_text": "Optimoitu iPhone Duo -laitteelle. Uusimmalla SDK:lla rakennettu sovellus täyttää koko sisänäytön ja mukauttaa asettelunsa automaattisesti, oli laite suljettuna tai auki.",
       "tags": [
-        "vintage",
         "analoginen",
         "rae",
         "kuvankäsittely",
@@ -846,10 +842,11 @@
         "retusointi",
         "estetiikka",
         "35mm",
-        "kertakäyttökamera"
+        "kertakäyttökamera",
+        "vinjetti"
       ],
       "language": "fi",
-      "date_modified": "2026-10-30T02:23:28Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6780223070",
@@ -947,14 +944,14 @@
         "aallot",
         "ruskea",
         "vaaleanpunainen",
-        "unettomuus",
-        "vauva",
         "rentoutus",
         "meditaatio",
-        "opiskelu"
+        "opiskelu",
+        "tuuletin",
+        "luonto"
       ],
       "language": "fi",
-      "date_modified": "2026-11-15T12:49:45Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6802166527",
@@ -1045,19 +1042,20 @@
       "title": "Stay Clock: Pöytäkello",
       "content_text": "Optimoitu iPhone Duo -laitteelle. Uusimmalla SDK:lla rakennettu sovellus täyttää koko sisänäytön ja mukauttaa asettelunsa automaattisesti, oli laite suljettuna tai auki.",
       "tags": [
-        "oled",
-        "smartwatch",
         "widgetit",
         "laturi",
         "yötila",
         "lukittu näyttö",
         "yöpöytä",
         "aikavyöhyke",
-        "24 tunnin kello",
-        "teemat"
+        "tunnin kello",
+        "teemat",
+        "suuri",
+        "vaaka",
+        "kuukausi"
       ],
       "language": "fi",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6807335593",
@@ -1199,24 +1197,21 @@
       "title": "UsageNow: Tekoälyn käyttö",
       "content_text": "Loppuiko AI-raja kesken työn? UsageNow näyttää, paljonko kustakin AI-paketista on jäljellä ja tarkalleen milloin se nollautuu, suoraan Koti-valikossa. Varoittaa sinua ennen kuin raja tulee vastaan.",
       "tags": [
-        "ai",
         "code",
-        "dev",
         "kehittäjä",
-        "usage",
-        "tracker",
         "kulutus",
         "kiintiö",
         "laskuri",
         "token",
-        "widget",
-        "reset",
         "quota",
-        "meter",
-        "monitor"
+        "ohjelmoija",
+        "jäljellä",
+        "nollaus",
+        "lähtölaskenta",
+        "hälytys"
       ],
       "language": "fi",
-      "date_modified": "2026-10-11T13:38:16Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6790467886",
@@ -1227,22 +1222,21 @@
       "tags": [
         "viive",
         "värinä",
-        "ipv6",
         "ipv4",
-        "tcp",
-        "tls",
         "solmu",
-        "toistin",
         "raportti",
         "pdf",
         "historia",
         "widget",
         "kello",
         "vakaus",
-        "valokuitu"
+        "valokuitu",
+        "yhteys",
+        "testi",
+        "epävakaa"
       ],
       "language": "fi",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6793414462",
@@ -1286,11 +1280,10 @@
         "tapa",
         "aloittelija",
         "minuutti",
-        "offline",
         "matka"
       ],
       "language": "fi",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6789917808",

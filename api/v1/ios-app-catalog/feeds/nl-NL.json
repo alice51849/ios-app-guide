@@ -13,7 +13,7 @@
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
     "dateModified": "2026-11-15",
-    "contentDigest": "2e705e6133a59676d866c2b31370645ab6a26d6f56af573a0826503639769f45",
+    "contentDigest": "282bcc5b6464e82114ffd6f448957ef0b3ed84009e98d9264ad03d2820dcb103",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
     "recordCount": 60
@@ -210,14 +210,15 @@
         "antwoorden",
         "situaties",
         "uitspraak",
-        "beginner",
         "frans",
         "japans",
         "koreaans",
-        "dagelijks"
+        "dagelijks",
+        "duits",
+        "reizen"
       ],
       "language": "nl-NL",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6794725568",
@@ -257,11 +258,10 @@
         "slaap",
         "spectrogram",
         "kalibratie",
-        "FFT",
-        "RTA"
+        "microfoon"
       ],
       "language": "nl-NL",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6821790092",
@@ -361,20 +361,21 @@
       "title": "GBAGo: Visuele saves",
       "content_text": "Geoptimaliseerd voor iPhone Duo. De app is gebouwd met de nieuwste SDK, vult het hele binnenscherm en past de indeling automatisch aan, dichtgeklapt of opengeklapt.",
       "tags": [
+        "emulator",
+        "gba",
+        "gbc",
         "spellen",
-        "console",
-        "savestates",
-        "cheats",
-        "emulatie",
-        "controller",
+        "retro",
         "handheld",
-        "nostalgie",
-        "arcade",
+        "console",
+        "cheats",
+        "controller",
         "offline",
-        "retrogame"
+        "savestate",
+        "vooruitspoelen"
       ],
       "language": "nl-NL",
-      "date_modified": "2026-11-01T03:09:58Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6794039979",
@@ -697,14 +698,14 @@
         "censureren",
         "persoonsgegevens",
         "bsn",
-        "paspoort",
         "medisch dossier",
         "contract",
         "metadata",
-        "privacy"
+        "privacy",
+        "factuur"
       ],
       "language": "nl-NL",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6829184924",
@@ -849,22 +850,21 @@
       "title": "PhotoCream Pro: Filmfilters",
       "content_text": "Geoptimaliseerd voor iPhone Duo. De app is gebouwd met de nieuwste SDK, vult het hele binnenscherm en past de indeling automatisch aan, dichtgeklapt of opengeklapt.",
       "tags": [
-        "vintage",
-        "film",
         "korrel",
         "foto",
         "bewerken",
         "selfie",
-        "beauty",
         "retoucheren",
         "esthetisch",
         "35mm",
         "wegwerpcamera",
         "effect",
-        "y2k"
+        "y2k",
+        "vignet",
+        "zwart-wit"
       ],
       "language": "nl-NL",
-      "date_modified": "2026-10-30T02:23:28Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6780223070",
@@ -968,16 +968,17 @@
         "inslapen",
         "onweer",
         "golven",
-        "slapeloosheid",
-        "baby",
-        "tinnitus",
-        "ADHD",
         "focus",
         "ontspanning",
-        "meditatie"
+        "meditatie",
+        "ventilator",
+        "natuur",
+        "haardvuur",
+        "bos",
+        "trein"
       ],
       "language": "nl-NL",
-      "date_modified": "2026-11-15T12:49:45Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6802166527",
@@ -1071,19 +1072,18 @@
       "title": "Stay Clock: Bureauklok",
       "content_text": "Geoptimaliseerd voor iPhone Duo. De app is gebouwd met de nieuwste SDK, vult het hele binnenscherm en past de indeling automatisch aan, dichtgeklapt of opengeklapt.",
       "tags": [
-        "oled",
         "smartwatch",
-        "widgets",
         "opladen",
         "nachtmodus",
         "toegangsscherm",
         "nachtkastje",
         "tijdzone",
-        "24-uursnotatie",
-        "dock"
+        "uursnotatie",
+        "grote cijfers",
+        "nacht"
       ],
       "language": "nl-NL",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6807335593",
@@ -1230,23 +1230,21 @@
       "content_text": "Midden in je werk tegen je AI-limiet aangelopen? UsageNow laat direct op je beginscherm zien hoeveel je van elk AI-abonnement nog over hebt en precies wanneer het wordt hersteld, en UsageNow waarschuwt je voordat het op is.",
       "tags": [
         "code",
-        "dev",
         "ontwikkelaar",
-        "usage",
         "verbruik",
         "quota",
         "teller",
         "token",
-        "widget",
-        "reset",
-        "meter",
-        "monitor",
         "llm",
         "aftellen",
-        "api"
+        "api",
+        "programmeur",
+        "resterend",
+        "resetten",
+        "sessie"
       ],
       "language": "nl-NL",
-      "date_modified": "2026-10-11T13:38:16Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6790467886",
@@ -1256,20 +1254,19 @@
       "content_text": "Geoptimaliseerd voor iPhone Duo. De app is gebouwd met de nieuwste SDK, vult het hele binnenscherm en past de indeling automatisch aan, dichtgeklapt of opengeklapt.",
       "tags": [
         "latentie",
-        "jitter",
-        "ipv6",
-        "tcp",
         "knooppunt",
-        "repeater",
         "rapport",
         "pdf",
         "geschiedenis",
         "widget",
         "horloge",
-        "stabiliteit"
+        "stabiliteit",
+        "verbinding",
+        "analyse",
+        "jitter"
       ],
       "language": "nl-NL",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6793414462",
@@ -1313,11 +1310,10 @@
         "gewoonte",
         "beginners",
         "minuut",
-        "offline",
         "dagelijks"
       ],
       "language": "nl-NL",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6789917808",

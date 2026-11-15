@@ -13,7 +13,7 @@
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
     "dateModified": "2026-11-15",
-    "contentDigest": "2e705e6133a59676d866c2b31370645ab6a26d6f56af573a0826503639769f45",
+    "contentDigest": "282bcc5b6464e82114ffd6f448957ef0b3ed84009e98d9264ad03d2820dcb103",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
     "recordCount": 60
@@ -266,11 +266,10 @@
         "snorking",
         "spektrogram",
         "kalibrering",
-        "frekvens",
-        "dBA"
+        "frekvens"
       ],
       "language": "no",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6821790092",
@@ -368,21 +367,21 @@
       "title": "GBAGo: Visuelle lagringer",
       "content_text": "Optimalisert for iPhone Duo. Appen er bygget med den nyeste SDK-en, fyller hele den indre skjermen og tilpasser oppsettet automatisk, både sammenbrettet og utbrettet.",
       "tags": [
+        "emulator",
+        "gba",
+        "gbc",
         "spill",
+        "retro",
         "konsoll",
-        "hurtiglagring",
+        "håndholdt",
         "juksekoder",
-        "emulering",
         "kontroller",
-        "nostalgi",
-        "arkade",
         "offline",
-        "piksel",
-        "fps",
-        "sav"
+        "hurtiglagring",
+        "turbo"
       ],
       "language": "no",
-      "date_modified": "2026-11-01T03:09:58Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6794039979",
@@ -878,7 +877,6 @@
       "title": "PhotoCream Pro: Filmfiltre",
       "content_text": "Optimalisert for iPhone Duo. Appen er bygget med den nyeste SDK-en, fyller hele den indre skjermen og tilpasser oppsettet automatisk, både sammenbrettet og utbrettet.",
       "tags": [
-        "retro",
         "analog",
         "korn",
         "fotoredigering",
@@ -891,7 +889,7 @@
         "effekter"
       ],
       "language": "no",
-      "date_modified": "2026-10-30T02:23:28Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6780223070",
@@ -992,23 +990,25 @@
       "title": "Sereno: Sovelyder",
       "content_text": "Sereno gjør iPhonen din til en lydmaskin for søvn: kombiner regn, hav, ild, vifte og hvit, rosa eller brun støy, og still inn volumet for hvert lag til din egen miks. Naturlydene er ekte feltopptak som stokkes tilfeldig om mens du lytter – aldri en fast sløyfe – og over 1000 ferdige mikser gjør det lett å komme i gang. Søvntimeren toner mykt ut, soloppgangsvekkingen møter deg med fuglesang, og avspillingen fortsetter uten nett og på låseskjermen.",
       "tags": [
-        "søvnløshet",
         "sovne",
         "fokus",
         "torden",
         "bølger",
         "brun",
         "rosa",
-        "baby",
         "avslapning",
         "meditasjon",
         "lekser",
-        "ADHD",
-        "tinnitus",
-        "vifte"
+        "vifte",
+        "søvn",
+        "natur",
+        "peis",
+        "skog",
+        "tog",
+        "lur"
       ],
       "language": "no",
-      "date_modified": "2026-11-15T12:49:45Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6802166527",
@@ -1103,20 +1103,20 @@
       "title": "Stay Clock: Skrivebordsklokke",
       "content_text": "Optimalisert for iPhone Duo. Appen er bygget med den nyeste SDK-en, fyller hele den indre skjermen og tilpasser oppsettet automatisk, både sammenbrettet og utbrettet.",
       "tags": [
-        "oled",
-        "smartwatch",
         "widgeter",
         "lading",
         "nattmodus",
         "låst skjerm",
         "nattbord",
         "tidssone",
-        "24-timersformat",
+        "timersformat",
         "temaer",
-        "dock"
+        "måned",
+        "natt",
+        "verdensklokke"
       ],
       "language": "no",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6807335593",
@@ -1267,24 +1267,21 @@
       "content_text": "Går du tom for AI midt i en oppgave? UsageNow viser hvor mye som er igjen av hvert AI-abonnement, og nøyaktig når det nullstilles, rett på Hjem-skjermen. Du får varsel før du går tom.",
       "tags": [
         "code",
-        "dev",
         "utvikler",
-        "usage",
         "bruk",
         "kvote",
         "quota",
         "teller",
         "token",
-        "widget",
-        "reset",
-        "meter",
-        "monitor",
         "llm",
         "nedtelling",
-        "økt"
+        "økt",
+        "programmerer",
+        "gjenstående",
+        "tilbakestill"
       ],
       "language": "no",
-      "date_modified": "2026-10-11T13:38:16Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6790467886",
@@ -1294,11 +1291,7 @@
       "content_text": "Optimalisert for iPhone Duo. Appen er bygget med den nyeste SDK-en, fyller hele den indre skjermen og tilpasser oppsettet automatisk, både sammenbrettet og utbrettet.",
       "tags": [
         "latens",
-        "jitter",
-        "ipv6",
-        "tcp",
         "node",
-        "repeater",
         "roaming",
         "rapport",
         "pdf",
@@ -1306,10 +1299,13 @@
         "widget",
         "klokke",
         "stabilitet",
-        "fiber"
+        "fiber",
+        "tilkobling",
+        "internett",
+        "test"
       ],
       "language": "no",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6793414462",
@@ -1354,11 +1350,11 @@
         "vane",
         "nybegynner",
         "minutt",
-        "offline",
-        "reise"
+        "reise",
+        "uttale"
       ],
       "language": "no",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6789917808",

@@ -13,7 +13,7 @@
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
     "dateModified": "2026-11-15",
-    "contentDigest": "2e705e6133a59676d866c2b31370645ab6a26d6f56af573a0826503639769f45",
+    "contentDigest": "282bcc5b6464e82114ffd6f448957ef0b3ed84009e98d9264ad03d2820dcb103",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
     "recordCount": 60
@@ -35,10 +35,10 @@
         "markieren",
         "vorlesung",
         "aufnahme",
-        "offline"
+        "kalligrafie"
       ],
       "language": "de-DE",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6791658210",
@@ -226,13 +226,12 @@
         "thai",
         "phrasen",
         "flughafen",
-        "hotel",
-        "restaurant",
         "dialoge",
-        "offline"
+        "aussprache",
+        "redewendungen"
       ],
       "language": "de-DE",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6806826699",
@@ -246,13 +245,12 @@
         "spektrumanalysator",
         "lautstärke",
         "geräuschpegel",
-        "schnarchen",
-        "FFT",
-        "RTA",
-        "schlaf"
+        "lärmprotokoll",
+        "nachbar",
+        "lärm"
       ],
       "language": "de-DE",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6821790092",
@@ -347,20 +345,22 @@
       "title": "GBAGo: Visuelle Spielstände",
       "content_text": "Optimiert für das iPhone Duo. Die mit dem neuesten SDK entwickelte App füllt das gesamte innere Display und passt das Layout automatisch an, egal ob zugeklappt oder aufgeklappt.",
       "tags": [
+        "emulator",
+        "gba",
+        "gbc",
         "spiele",
-        "konsole",
-        "spielstand",
-        "cheats",
-        "emulation",
-        "controller",
+        "retro",
         "handheld",
-        "kult",
-        "pixelgrafik",
+        "konsole",
+        "cheats",
+        "controller",
         "offline",
-        "gamepad"
+        "quicksave",
+        "vorspulen",
+        "turbo"
       ],
       "language": "de-DE",
-      "date_modified": "2026-11-01T03:09:58Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6794039979",
@@ -668,17 +668,18 @@
       "tags": [
         "dokumente",
         "metadaten",
-        "entfernen",
         "verbergen",
-        "ausweis",
-        "reisepass",
         "vertrag",
         "datenschutz",
         "privat",
-        "zensieren"
+        "zensieren",
+        "screenshot",
+        "foto",
+        "bild",
+        "rechnung"
       ],
       "language": "de-DE",
-      "date_modified": "2026-11-04T10:05:32Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6829184924",
@@ -823,21 +824,19 @@
       "title": "PhotoCream Pro: Filmfilter",
       "content_text": "Optimiert für das iPhone Duo. Die mit dem neuesten SDK entwickelte App füllt das gesamte innere Display und passt das Layout automatisch an, egal ob zugeklappt oder aufgeklappt.",
       "tags": [
-        "analog",
-        "retro",
         "körnung",
         "filmlook",
         "fotobearbeitung",
         "einwegkamera",
         "35mm",
         "lichtleck",
-        "effekte",
+        "datumsstempel",
         "ästhetik",
         "y2k",
-        "glow"
+        "digicam"
       ],
       "language": "de-DE",
-      "date_modified": "2026-10-30T02:23:28Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6780223070",
@@ -934,18 +933,19 @@
       "content_text": "Sereno macht Ihr iPhone zur Klangmaschine für den Schlaf: Kombinieren Sie Regen, Meer, Feuer, Ventilator und weißes, pinkes oder braunes Rauschen und stellen Sie die Lautstärke jeder Ebene einzeln ein. Naturklänge sind echte Field-Recordings, die sich beim Hören zufällig neu anordnen – nie eine feste Schleife – und über 1000 fertige Mischungen bieten einen schnellen Einstieg. Der Schlaf-Timer blendet sanft aus, das Sonnenaufgang-Wecken begrüßt Sie mit Vogelgesang, und die Wiedergabe läuft offline und auf dem Sperrbildschirm weiter.",
       "tags": [
         "braunes",
-        "einschlafhilfe",
+        "kamin",
         "rosa",
         "einschlafen",
-        "schlaflosigkeit",
-        "baby",
-        "tinnitus",
-        "ADHS",
         "konzentration",
-        "entspannung"
+        "entspannung",
+        "ventilator",
+        "gewitter",
+        "wellen",
+        "natur",
+        "wald"
       ],
       "language": "de-DE",
-      "date_modified": "2026-11-15T12:49:45Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6802166527",
@@ -955,21 +955,19 @@
       "content_text": "Optimiert für das iPhone Duo. Die mit dem neuesten SDK entwickelte App füllt das gesamte innere Display und passt das Layout automatisch an, egal ob zugeklappt oder aufgeklappt.",
       "tags": [
         "ordner",
-        "organizer",
         "reiniger",
         "duplikate",
         "ähnliche",
         "bilder",
         "galerie",
         "speicher",
-        "text",
         "belege",
-        "links",
         "sortieren",
-        "qr"
+        "qr",
+        "texterkennung"
       ],
       "language": "de-DE",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6780575828",
@@ -1042,19 +1040,18 @@
       "content_text": "Optimiert für das iPhone Duo. Die mit dem neuesten SDK entwickelte App füllt das gesamte innere Display und passt das Layout automatisch an, egal ob zugeklappt oder aufgeklappt.",
       "tags": [
         "nachttisch",
-        "standby",
         "digitaluhr",
         "kalender",
-        "oled",
-        "widgets",
         "uhrzeit",
         "digitale",
         "klappuhr",
         "uhr",
-        "zeitanzeige"
+        "zeitanzeige",
+        "große ziffern",
+        "weltuhr"
       ],
       "language": "de-DE",
-      "date_modified": "2026-11-04T10:05:32Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6807335593",
@@ -1156,13 +1153,13 @@
         "bordkarte",
         "koffer",
         "gepäck",
-        "baby",
         "kinder",
         "strand",
-        "checkliste"
+        "checkliste",
+        "urlaub"
       ],
       "language": "de-DE",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6782275018",
@@ -1192,24 +1189,21 @@
       "title": "UsageNow: KI-Nutzung Tracker",
       "content_text": "Mitten in der Arbeit ans KI-Limit gestoßen? UsageNow zeigt dir direkt auf dem Home-Bildschirm, wie viel von jedem KI-Plan noch übrig ist und wann er genau zurückgesetzt wird, und warnt dich, bevor dein Limit aufgebraucht ist.",
       "tags": [
-        "ai",
         "code",
-        "dev",
         "entwickler",
-        "usage",
         "verbrauch",
         "kontingent",
         "token",
         "quota",
         "zähler",
-        "widget",
-        "reset",
         "countdown",
         "llm",
-        "api"
+        "api",
+        "programmierer",
+        "zurücksetzen"
       ],
       "language": "de-DE",
-      "date_modified": "2026-11-11T10:19:50Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6790467886",
@@ -1219,21 +1213,20 @@
       "content_text": "Optimiert für das iPhone Duo. Die mit dem neuesten SDK entwickelte App füllt das gesamte innere Display und passt das Layout automatisch an, egal ob zugeklappt oder aufgeklappt.",
       "tags": [
         "latenz",
-        "jitter",
-        "ipv6",
         "roaming",
-        "repeater",
         "pdf",
         "verlauf",
         "heimnetz",
         "ipv4",
+        "analyzer",
         "analyse",
-        "messung",
         "antwortzeit",
-        "gateway"
+        "gateway",
+        "verbindung",
+        "test"
       ],
       "language": "de-DE",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6793414462",

@@ -13,7 +13,7 @@
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
     "dateModified": "2026-11-15",
-    "contentDigest": "2e705e6133a59676d866c2b31370645ab6a26d6f56af573a0826503639769f45",
+    "contentDigest": "282bcc5b6464e82114ffd6f448957ef0b3ed84009e98d9264ad03d2820dcb103",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
     "recordCount": 60
@@ -228,11 +228,10 @@
         "spanyol",
         "prancis",
         "dialog",
-        "audio",
         "lisan"
       ],
       "language": "id",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6794725568",
@@ -265,23 +264,20 @@
       "title": "dB Halo: Pengukur desibel",
       "content_text": "Dioptimalkan untuk iPhone Duo. Dibangun dengan SDK terbaru, aplikasi ini memenuhi seluruh layar bagian dalam dan menyesuaikan tata letaknya secara otomatis, baik saat perangkat dilipat maupun dibuka.",
       "tags": [
-        "sound",
-        "meter",
-        "noise",
-        "decibel",
         "suara",
         "kebisingan",
-        "volume",
         "dengkur",
         "frekuensi",
         "spektrum",
         "perekam",
-        "FFT",
-        "RTA",
-        "keras"
+        "keras",
+        "mikrofon",
+        "kalibrasi",
+        "spektrogram",
+        "meteran"
       ],
       "language": "id",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6821790092",
@@ -386,20 +382,24 @@
       "title": "GBAGo: Simpanan visual",
       "content_text": "Dioptimalkan untuk iPhone Duo. Dibangun dengan SDK terbaru, aplikasi ini memenuhi seluruh layar bagian dalam dan menyesuaikan tata letaknya secara otomatis, baik saat perangkat dilipat maupun dibuka.",
       "tags": [
-        "emulator jadul",
+        "emulator",
+        "gba",
+        "gbc",
+        "game",
+        "jadul",
+        "retro",
         "konsol",
-        "nostalgia",
-        "simpan otomatis",
-        "kode curang",
+        "kode",
+        "cheat",
         "stik",
+        "kontroler",
         "offline",
-        "arkade",
-        "piksel",
-        "90an",
-        "gamepad"
+        "cepat",
+        "turbo",
+        "cadangan"
       ],
       "language": "id",
-      "date_modified": "2026-11-01T03:09:58Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6794039979",
@@ -745,7 +745,6 @@
         "privasi",
         "dokumen",
         "foto",
-        "KTP",
         "kontrak",
         "medis",
         "barcode",
@@ -753,10 +752,11 @@
         "offline",
         "lokal",
         "PDF",
-        "wajah"
+        "struk",
+        "faktur"
       ],
       "language": "id",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6829184924",
@@ -907,24 +907,23 @@
       "title": "PhotoCream Pro: Filter film",
       "content_text": "Dioptimalkan untuk iPhone Duo. Dibangun dengan SDK terbaru, aplikasi ini memenuhi seluruh layar bagian dalam dan menyesuaikan tata letaknya secara otomatis, baik saat perangkat dilipat maupun dibuka.",
       "tags": [
-        "retro",
-        "cam",
-        "camera",
+        "digicam",
         "grain",
         "edit",
         "foto",
         "selfie",
-        "kecantikan",
+        "tanggal",
         "retouch",
         "estetik",
         "aesthetic",
         "35mm",
         "y2k",
         "wajah",
-        "editor"
+        "vignet",
+        "sinematik"
       ],
       "language": "id",
-      "date_modified": "2026-10-30T02:23:28Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6780223070",
@@ -1031,22 +1030,22 @@
       "title": "Sereno: Suara Tidur",
       "content_text": "Sereno mengubah iPhone Anda menjadi mesin suara tidur: gabungkan hujan, ombak, api, kipas angin, dan white, pink, atau brown noise, lalu atur volume tiap lapisan untuk racikan Anda sendiri. Suara alam adalah rekaman lapangan asli yang diacak ulang saat Anda mendengarkan—tidak pernah berulang dengan pola tetap—dan lebih dari 1000 campuran siap pakai membantu Anda langsung mulai. Timer tidur memelankan suara secara perlahan, alarm matahari terbit membangunkan Anda dengan kicau burung, dan pemutaran tetap berjalan secara offline maupun di layar terkunci.",
       "tags": [
-        "susah",
         "kipas angin",
         "nyenyak",
         "brown",
         "pink",
-        "insomnia",
-        "bayi",
         "relaksasi",
         "meditasi",
         "fokus",
         "belajar",
-        "ADHD",
-        "tinnitus"
+        "badai",
+        "petir",
+        "laut",
+        "alam",
+        "api unggun"
       ],
       "language": "id",
-      "date_modified": "2026-11-15T12:49:45Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6802166527",
@@ -1145,8 +1144,6 @@
       "content_text": "Dioptimalkan untuk iPhone Duo. Dibangun dengan SDK terbaru, aplikasi ini memenuhi seluruh layar bagian dalam dan menyesuaikan tata letaknya secara otomatis, baik saat perangkat dilipat maupun dibuka.",
       "tags": [
         "weker",
-        "alarm",
-        "digital",
         "widget",
         "dok",
         "pengisian",
@@ -1156,11 +1153,12 @@
         "besar",
         "tema",
         "font",
-        "oled",
-        "standby"
+        "zona waktu",
+        "bulan",
+        "lanskap"
       ],
       "language": "id",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6807335593",
@@ -1312,23 +1310,20 @@
       "title": "UsageNow: Pelacak Pemakaian AI",
       "content_text": "Kena batas AI di tengah pekerjaan? UsageNow menampilkan sisa kuota setiap paket AI Anda dan kapan tepatnya diatur ulang, langsung di Layar Utama, dan memperingatkan Anda sebelum kuota habis.",
       "tags": [
-        "code",
-        "dev",
-        "developer",
-        "usage",
-        "tracker",
         "kuota",
         "penggunaan",
         "penghitung",
-        "token",
-        "widget",
-        "reset",
-        "quota",
-        "meter",
-        "monitor"
+        "pengembang",
+        "sisa",
+        "hitung mundur",
+        "peringatan",
+        "mingguan",
+        "sesi",
+        "atur ulang",
+        "akun"
       ],
       "language": "id",
-      "date_modified": "2026-10-11T13:38:16Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6790467886",
@@ -1338,12 +1333,8 @@
       "content_text": "Dioptimalkan untuk iPhone Duo. Dibangun dengan SDK terbaru, aplikasi ini memenuhi seluruh layar bagian dalam dan menyesuaikan tata letaknya secara otomatis, baik saat perangkat dilipat maupun dibuka.",
       "tags": [
         "latensi",
-        "jitter",
-        "ipv6",
         "ipv4",
-        "tcp",
         "node",
-        "repeater",
         "roaming",
         "laporan",
         "pdf",
@@ -1351,10 +1342,13 @@
         "widget",
         "jam",
         "stabilitas",
-        "fiber"
+        "fiber",
+        "koneksi",
+        "tes",
+        "analisis"
       ],
       "language": "id",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6793414462",
@@ -1395,16 +1389,16 @@
         "jepang",
         "korea",
         "arab",
-        "offline",
         "wisata",
         "pemula",
         "kebiasaan",
-        "arabic",
-        "korean",
-        "learning"
+        "ujian",
+        "bisnis",
+        "wawancara",
+        "harian"
       ],
       "language": "id",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6789917808",
@@ -1416,7 +1410,6 @@
         "spanyol",
         "prancis",
         "jerman",
-        "mandarin",
         "italia",
         "rusia",
         "contoh kalimat",
@@ -1427,7 +1420,7 @@
         "turki"
       ],
       "language": "id",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6806776579",

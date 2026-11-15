@@ -13,7 +13,7 @@
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
     "dateModified": "2026-11-15",
-    "contentDigest": "2e705e6133a59676d866c2b31370645ab6a26d6f56af573a0826503639769f45",
+    "contentDigest": "282bcc5b6464e82114ffd6f448957ef0b3ed84009e98d9264ad03d2820dcb103",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
     "recordCount": 60
@@ -255,7 +255,6 @@
         "medidor",
         "sonômetro",
         "barulho",
-        "volume",
         "ronco",
         "sono",
         "frequência",
@@ -263,10 +262,10 @@
         "audição",
         "gravador",
         "analisador",
-        "RTA"
+        "microfone"
       ],
       "language": "pt-BR",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6821790092",
@@ -367,20 +366,22 @@
       "content_text": "Otimizado para iPhone Duo. Criado com o SDK mais recente, o app ocupa toda a tela interna e ajusta o layout automaticamente, com o aparelho dobrado ou aberto.",
       "tags": [
         "emulador",
+        "gba",
+        "gbc",
         "jogos",
+        "retrô",
         "console",
-        "salvar",
-        "truques",
-        "cartucho",
-        "controle",
-        "fliperama",
         "portátil",
-        "anos 90",
-        "infância",
-        "gamepad"
+        "cheats",
+        "controle",
+        "offline",
+        "acelerar",
+        "state",
+        "rápido",
+        "backup"
       ],
       "language": "pt-BR",
-      "date_modified": "2026-11-01T03:09:58Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6794039979",
@@ -453,10 +454,8 @@
       "title": "LED Moving Text: Letreiro",
       "content_text": "Otimizado para iPhone Duo. Criado com o SDK mais recente, o app ocupa toda a tela interna e ajusta o layout automaticamente, com o aparelho dobrado ou aberto.",
       "tags": [
-        "painel",
         "cartaz",
         "faixa",
-        "placa",
         "show",
         "torcida",
         "aeroporto",
@@ -467,10 +466,11 @@
         "letras",
         "fila",
         "palco",
-        "aviso"
+        "aviso",
+        "tabuleta"
       ],
       "language": "pt-BR",
-      "date_modified": "2026-11-15T14:54:39Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6780107485",
@@ -709,17 +709,17 @@
         "texto",
         "documento",
         "cpf",
-        "rg",
         "comprovante",
         "recibo",
         "metadados",
         "anonimizar",
         "lgpd",
         "exif",
-        "senha"
+        "senha",
+        "contrato"
       ],
       "language": "pt-BR",
-      "date_modified": "2026-11-12T09:34:25Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6829184924",
@@ -870,24 +870,24 @@
       "title": "PhotoCream Pro: Filtros retrô",
       "content_text": "Otimizado para iPhone Duo. Criado com o SDK mais recente, o app ocupa toda a tela interna e ajusta o layout automaticamente, com o aparelho dobrado ou aberto.",
       "tags": [
-        "vintage",
         "filtro",
-        "efeito",
-        "foto",
-        "editor",
+        "digicam",
+        "data",
         "retoque",
         "selfie",
         "beleza",
-        "film",
         "35mm",
         "y2k",
         "estética",
         "grão",
         "luz",
-        "cinema"
+        "vinheta",
+        "curvas",
+        "moldura",
+        "digital"
       ],
       "language": "pt-BR",
-      "date_modified": "2026-10-30T02:23:28Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6780223070",
@@ -993,20 +993,19 @@
       "tags": [
         "marrom",
         "rosa",
-        "tempestade",
+        "ventilador",
         "ondas",
-        "insônia",
-        "bebê",
         "relaxar",
         "meditação",
         "foco",
-        "TDAH",
-        "zumbido",
         "concentração",
-        "cochilo"
+        "sono",
+        "som",
+        "natureza",
+        "tempestade"
       ],
       "language": "pt-BR",
-      "date_modified": "2026-11-15T12:49:45Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6802166527",
@@ -1019,7 +1018,6 @@
         "fotos",
         "duplicadas",
         "limpar",
-        "OCR",
         "texto",
         "busca",
         "categorias",
@@ -1029,7 +1027,7 @@
         "ingressos"
       ],
       "language": "pt-BR",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6780575828",
@@ -1098,18 +1096,18 @@
       "title": "Stay Clock: Relógio de Mesa",
       "content_text": "Otimizado para iPhone Duo. Criado com o SDK mais recente, o app ocupa toda a tela interna e ajusta o layout automaticamente, com o aparelho dobrado ou aberto.",
       "tags": [
-        "oled",
-        "smartwatch",
-        "widgets",
         "carregador",
         "modo noturno",
         "tela bloqueada",
         "criado-mudo",
         "fuso horário",
-        "24 horas"
+        "horas",
+        "horizontal",
+        "mês",
+        "noite"
       ],
       "language": "pt-BR",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6807335593",
@@ -1220,10 +1218,10 @@
         "bebê",
         "crianças",
         "praia",
-        "checklist"
+        "roteiro"
       ],
       "language": "pt-BR",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6782275018",
@@ -1255,24 +1253,20 @@
       "title": "UsageNow: Monitor de uso de IA",
       "content_text": "Bateu o limite da IA no meio do trabalho? O UsageNow mostra quanto resta de cada plano de IA e exatamente quando ele reinicia, direto na Tela de Início, e ainda avisa você antes de acabar.",
       "tags": [
-        "ai",
-        "code",
-        "dev",
-        "desenvolvedor",
-        "usage",
-        "tracker",
-        "consumo",
-        "cota",
-        "contador",
+        "limite",
         "token",
-        "widget",
-        "reset",
-        "llm",
-        "meter",
-        "sessão"
+        "gasto",
+        "cota",
+        "medidor",
+        "sessão",
+        "contagem regressiva",
+        "desenvolvedor",
+        "aviso",
+        "notificação",
+        "redefinir"
       ],
       "language": "pt-BR",
-      "date_modified": "2026-10-30T22:31:19Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6790467886",
@@ -1282,20 +1276,20 @@
       "content_text": "Otimizado para iPhone Duo. Criado com o SDK mais recente, o app ocupa toda a tela interna e ajusta o layout automaticamente, com o aparelho dobrado ou aberto.",
       "tags": [
         "latência",
-        "jitter",
-        "ipv6",
         "nó",
-        "repetidor",
         "relatório",
         "pdf",
         "histórico",
         "widget",
         "relógio",
         "estabilidade",
-        "diagnóstico"
+        "conexão",
+        "teste",
+        "instável",
+        "site"
       ],
       "language": "pt-BR",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6793414462",
@@ -1335,14 +1329,13 @@
         "japonês",
         "coreano",
         "palavras",
-        "do zero",
         "memorizar",
         "hábito",
         "sequência",
         "iniciantes"
       ],
       "language": "pt-BR",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6789917808",
@@ -1381,17 +1374,17 @@
         "senha",
         "pasta",
         "criptografar",
-        "gerenciador",
         "unrar",
         "tar",
         "gz",
         "iso",
         "celular",
         "lote",
-        "rar5"
+        "rar5",
+        "descompactar"
       ],
       "language": "pt-BR",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     }
   ]
 }

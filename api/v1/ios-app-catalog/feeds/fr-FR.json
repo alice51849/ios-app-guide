@@ -13,7 +13,7 @@
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
     "dateModified": "2026-11-15",
-    "contentDigest": "2e705e6133a59676d866c2b31370645ab6a26d6f56af573a0826503639769f45",
+    "contentDigest": "282bcc5b6464e82114ffd6f448957ef0b3ed84009e98d9264ad03d2820dcb103",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
     "recordCount": 60
@@ -210,7 +210,6 @@
       "content_text": "Optimisée pour l’iPhone Duo. Conçue avec le SDK le plus récent, l’app remplit tout l’écran intérieur et adapte automatiquement sa mise en page, appareil plié ou ouvert.",
       "tags": [
         "conversation",
-        "expressions",
         "réponses",
         "situations",
         "prononciation",
@@ -218,10 +217,11 @@
         "japonais",
         "coréen",
         "russe",
-        "apprendre"
+        "apprendre",
+        "voyage"
       ],
       "language": "fr-FR",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6794725568",
@@ -263,11 +263,10 @@
         "audition",
         "étalonnage",
         "RTA",
-        "FFT",
         "sonore"
       ],
       "language": "fr-FR",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6821790092",
@@ -367,19 +366,22 @@
       "content_text": "Optimisée pour l’iPhone Duo. Conçue avec le SDK le plus récent, l’app remplit tout l’écran intérieur et adapte automatiquement sa mise en page, appareil plié ou ouvert.",
       "tags": [
         "émulateur",
-        "jeux",
-        "console",
-        "rétrogaming",
-        "sauvegarde",
-        "manette",
-        "codes triche",
-        "cartouche",
-        "hors ligne",
+        "gba",
         "gbc",
-        "gamepad"
+        "jeux",
+        "rétro",
+        "rétrogaming",
+        "console",
+        "portable",
+        "triche",
+        "manette",
+        "offline",
+        "rapide",
+        "turbo",
+        "backup"
       ],
       "language": "fr-FR",
-      "date_modified": "2026-11-01T03:09:58Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6794039979",
@@ -457,21 +459,20 @@
       "title": "LED Moving Text",
       "content_text": "Optimisée pour l’iPhone Duo. Conçue avec le SDK le plus récent, l’app remplit tout l’écran intérieur et adapte automatiquement sa mise en page, appareil plié ou ouvert.",
       "tags": [
-        "pancarte",
         "banderole",
+        "bandeau",
+        "lumineux",
         "enseigne",
-        "écriteau",
         "concert",
         "supporter",
         "aéroport",
         "accueil",
         "néon",
         "vitrine",
-        "texte",
         "panneau"
       ],
       "language": "fr-FR",
-      "date_modified": "2026-11-04T10:05:32Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6780107485",
@@ -711,14 +712,14 @@
         "anonymiser",
         "caviardage",
         "données personnelles",
-        "passeport",
         "dossier médical",
         "métadonnées",
         "rgpd",
-        "vie privée"
+        "vie privée",
+        "facture"
       ],
       "language": "fr-FR",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6829184924",
@@ -865,7 +866,6 @@
       "tags": [
         "appareil",
         "jetable",
-        "rétro",
         "pellicule",
         "grain",
         "effet",
@@ -876,10 +876,11 @@
         "esthétique",
         "35mm",
         "y2k",
-        "cinéma"
+        "éditeur",
+        "ccd"
       ],
       "language": "fr-FR",
-      "date_modified": "2026-10-30T02:23:28Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6780223070",
@@ -983,20 +984,19 @@
       "content_text": "Sereno transforme votre iPhone en machine à sons pour dormir : superposez pluie, océan, feu, ventilateur et bruit blanc, rose ou brun, et réglez le volume de chaque couche pour créer votre propre mix. Les sons de la nature sont de vrais enregistrements de terrain qui se réorganisent au hasard pendant l'écoute, jamais en boucle fixe, et plus de 1000 mélanges prêts à l'emploi vous permettent de commencer tout de suite. La minuterie de sommeil baisse le son en douceur, le réveil au lever du soleil vous accueille avec le chant des oiseaux, et la lecture continue hors ligne et sur l'écran verrouillé.",
       "tags": [
         "dormir",
-        "endormissement",
-        "insomnie",
-        "acouphènes",
+        "cheminée",
         "orage",
         "vagues",
         "brun",
         "rose",
-        "bébé",
-        "TDAH",
         "concentration",
-        "relaxation"
+        "relaxation",
+        "méditation",
+        "ventilateur",
+        "nature"
       ],
       "language": "fr-FR",
-      "date_modified": "2026-11-15T12:49:45Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6802166527",
@@ -1247,24 +1247,18 @@
       "title": "UsageNow : Suivi d'usage IA",
       "content_text": "Bloqué par votre limite d’IA en plein travail ? UsageNow vous montre ce qu’il reste de chaque forfait IA et le moment exact de sa remise à zéro, directement sur l’écran d’accueil, et vous prévient avant que vous soyez à court.",
       "tags": [
-        "ai",
-        "code",
-        "dev",
-        "développeur",
-        "usage",
-        "tracker",
+        "limite",
+        "utilisation",
         "consommation",
-        "quota",
         "compteur",
         "jeton",
-        "token",
-        "widget",
-        "llm",
-        "monitor",
-        "api"
+        "développeur",
+        "réinitialisation",
+        "compte à rebours",
+        "alerte"
       ],
       "language": "fr-FR",
-      "date_modified": "2026-10-26T04:23:40Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6790467886",
@@ -1279,17 +1273,17 @@
         "ipv6",
         "tcp",
         "nœud",
-        "répéteur",
         "borne",
         "rapport",
         "pdf",
         "historique",
         "widget",
-        "montre",
-        "stabilité"
+        "analyseur",
+        "stabilité",
+        "test"
       ],
       "language": "fr-FR",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6793414462",

@@ -5,7 +5,7 @@ canonical: "https://open.cait518.cc/ios-app-guide/apps/metrotimehelper/decision/
 modified: "2026-11-15"
 app_store_id: "6819061896"
 verified_live: true
-purchase_model: "free_with_lifetime_unlock"
+purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Metro Time Helper — Built for the Taipei MRT in Taiwan: tell Metro Time Helper when you need to be there, and it tells you the latest time to walk into the station. Free to start · One-time unlock · No subscription.
 
 - More
-- Free to start · one-time unlock
+- Paid download
 - App Store · $3.99
 
 [Get Metro Time Helper on the App Store →](https://apps.apple.com/ca/app/id6819061896?pt=118326163&ct=geo_pick&mt=8)

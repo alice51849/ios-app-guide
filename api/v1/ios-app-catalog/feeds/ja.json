@@ -13,7 +13,7 @@
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
     "dateModified": "2026-11-15",
-    "contentDigest": "a08830c00f4320e0962b78f1a20b51a274af6f3d77ffaa9903230b2aebce9fdf",
+    "contentDigest": "2e705e6133a59676d866c2b31370645ab6a26d6f56af573a0826503639769f45",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
     "recordCount": 60
@@ -129,16 +129,33 @@
       "title": "BattAI: バッテリー劣化・状態スコア",
       "content_text": "iPhone Duoに最適化。最新の開発キットでビルドしており、内側のディスプレイ全体に表示され、折りたたんでも開いても自動でレイアウトが調整されます。",
       "tags": [
-        "バッテリー状態スコア",
         "最大容量",
-        "充放電回数",
-        "充電ケア",
-        "充電範囲",
+        "サイクル",
+        "回数",
+        "診断",
+        "交換時期",
+        "消耗",
+        "発熱",
+        "残量",
+        "レポート",
+        "ウィジェット",
+        "測定",
+        "モニター",
+        "履歴",
+        "健康",
+        "スマホ",
+        "アラーム",
+        "長持ち",
+        "チェッカー",
+        "パーセント",
+        "表示",
+        "容量",
+        "電池",
         "充電速度",
-        "データを書き出す"
+        "寿命"
       ],
       "language": "ja",
-      "date_modified": "2026-11-04T10:05:32Z"
+      "date_modified": "2026-11-15T11:36:01Z"
     },
     {
       "id": "https://apps.apple.com/app/id6794178671",
@@ -183,11 +200,8 @@
       "title": "CountDaysNow: Event Counter",
       "content_text": "• 今日のフォーカス 過去 · 今日 · 未来 — 保存",
       "tags": [
-        "カウントダウン",
-        "あと何日",
         "経過日数",
         "日数計算",
-        "記念日",
         "誕生日",
         "ウィジェット",
         "ロック画面",
@@ -203,10 +217,13 @@
         "卒業",
         "入籍",
         "ライブ",
-        "休み"
+        "休み",
+        "残り日数",
+        "何日目",
+        "イベント"
       ],
       "language": "ja",
-      "date_modified": "2026-11-15T03:07:55Z"
+      "date_modified": "2026-11-15T11:36:01Z"
     },
     {
       "id": "https://apps.apple.com/app/id6781337213",
@@ -635,7 +652,7 @@
       "id": "https://apps.apple.com/app/id6806639602",
       "url": "https://open.cait518.cc/ios-app-guide/ja/ledmovingtext.html",
       "external_url": "https://apps.apple.com/jp/app/id6806639602?pt=118326163&ct=geo_pick&mt=8",
-      "title": "LED Moving Text",
+      "title": "LED Moving Text: 電光掲示板",
       "content_text": "iPhone Duoに最適化。最新の開発キットでビルドしており、内側のディスプレイ全体に表示され、折りたたんでも開いても自動でレイアウトが調整されます。",
       "tags": [
         "カンペ",
@@ -664,7 +681,7 @@
         "テロップ"
       ],
       "language": "ja",
-      "date_modified": "2026-11-12T09:34:25Z"
+      "date_modified": "2026-11-15T14:54:39Z"
     },
     {
       "id": "https://apps.apple.com/app/id6780107485",
@@ -1407,7 +1424,7 @@
       "url": "https://open.cait518.cc/ios-app-guide/ja/sereno.html",
       "external_url": "https://apps.apple.com/jp/app/id6788236641?pt=118326163&ct=geo_pick&mt=8",
       "title": "Sereno: スリープサウンド",
-      "content_text": "iPhone Duoに最適化。最新の開発キットでビルドしており、内側のディスプレイ全体に表示され、折りたたんでも開いても自動でレイアウトが調整されます。",
+      "content_text": "Sereno は iPhone を睡眠用サウンドマシンに変えます。雨、波、焚き火、扇風機に、ホワイト・ピンク・ブラウンノイズを重ね、レイヤーごとに音量を調整して自分だけのミックスを作れます。 自然の音は本物のフィールド録音で、再生中にランダムに並び替わるので決まったループになりません。1000 種類以上の既成ミックスからすぐに始められます。 スリープタイマーはやさしくフェードアウトし、日の出アラームは鳥のさえずりで朝を迎えます。オフラインでもロック画面でも再生が続きます。",
       "tags": [
         "睡眠導入",
         "寝かしつけ",
@@ -1434,7 +1451,7 @@
         "雷"
       ],
       "language": "ja",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T12:49:45Z"
     },
     {
       "id": "https://apps.apple.com/app/id6802166527",
@@ -1955,7 +1972,7 @@
       "id": "https://apps.apple.com/app/id6806776579",
       "url": "https://open.cait518.cc/ios-app-guide/ja/zipbox.html",
       "external_url": "https://apps.apple.com/jp/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
-      "title": "Zipbox 解凍：ZIP RAR 7z対応",
+      "title": "ZIP解凍アプリ：Zipbox RAR 7z",
       "content_text": "iPhone Duoに最適化。最新の開発キットでビルドしており、内側のディスプレイ全体に表示され、折りたたんでも開いても自動でレイアウトが調整されます。",
       "tags": [
         "パスワード付き",
@@ -1982,7 +1999,7 @@
         "フォルダ"
       ],
       "language": "ja",
-      "date_modified": "2026-11-07T07:02:05Z"
+      "date_modified": "2026-11-15T14:54:39Z"
     }
   ]
 }

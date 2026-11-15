@@ -2,7 +2,7 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-11-15",
-  "content_digest": "a08830c00f4320e0962b78f1a20b51a274af6f3d77ffaa9903230b2aebce9fdf",
+  "content_digest": "2e705e6133a59676d866c2b31370645ab6a26d6f56af573a0826503639769f45",
   "locale": "de-DE",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -134,13 +134,17 @@
       "summary": "Optimiert für das iPhone Duo. Die mit dem neuesten SDK entwickelte App füllt das gesamte innere Display und passt das Layout automatisch an, egal ob zugeklappt oder aufgeklappt.",
       "category": "utility",
       "search_terms": [
-        "Batteriezustandswert",
-        "Maximale Kapazität",
-        "Zyklen",
-        "Ladeschonung",
-        "Ladebereich",
-        "Laderate",
-        "Daten exportieren"
+        "kapazität",
+        "lebensdauer",
+        "ladezyklen",
+        "test",
+        "laden",
+        "prozent",
+        "zustand",
+        "alarm",
+        "batterieladung",
+        "batterietest",
+        "hitze"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -211,7 +215,6 @@
       "summary": "• Tagesfokus Seitdem · Heute · Voraus",
       "category": "productivity",
       "search_terms": [
-        "Countdown",
         "Tage",
         "bis",
         "Geburtstag",
@@ -221,7 +224,8 @@
         "Sperrbildschirm",
         "Hochzeit",
         "Prüfung",
-        "Urlaub"
+        "Urlaub",
+        "Tageszähler"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1677,7 +1681,7 @@
       "key": "sereno",
       "app_store_id": "6788236641",
       "name": "Sereno: Schlafklänge",
-      "summary": "Optimiert für das iPhone Duo. Die mit dem neuesten SDK entwickelte App füllt das gesamte innere Display und passt das Layout automatisch an, egal ob zugeklappt oder aufgeklappt.",
+      "summary": "Sereno macht Ihr iPhone zur Klangmaschine für den Schlaf: Kombinieren Sie Regen, Meer, Feuer, Ventilator und weißes, pinkes oder braunes Rauschen und stellen Sie die Lautstärke jeder Ebene einzeln ein. Naturklänge sind echte Field-Recordings, die sich beim Hören zufällig neu anordnen – nie eine feste Schleife – und über 1000 fertige Mischungen bieten einen schnellen Einstieg. Der Schlaf-Timer blendet sanft aus, das Sonnenaufgang-Wecken begrüßt Sie mit Vogelgesang, und die Wiedergabe läuft offline und auf dem Sperrbildschirm weiter.",
       "category": "sleep-sound",
       "search_terms": [
         "braunes",

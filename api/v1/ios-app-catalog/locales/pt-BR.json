@@ -2,7 +2,7 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-11-15",
-  "content_digest": "a08830c00f4320e0962b78f1a20b51a274af6f3d77ffaa9903230b2aebce9fdf",
+  "content_digest": "2e705e6133a59676d866c2b31370645ab6a26d6f56af573a0826503639769f45",
   "locale": "pt-BR",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -137,13 +137,19 @@
       "summary": "Otimizado para iPhone Duo. Criado com o SDK mais recente, o app ocupa toda a tela interna e ajusta o layout automaticamente, com o aparelho dobrado ou aberto.",
       "category": "utility",
       "search_terms": [
-        "Pontuação de saúde da bateria",
-        "Capacidade máxima",
-        "Ciclos",
-        "Cuidado na carga",
-        "Faixa de carga",
-        "Velocidade de carga",
-        "Exportar dados"
+        "capacidade",
+        "ciclos",
+        "teste",
+        "vida",
+        "útil",
+        "desgaste",
+        "estado",
+        "condição",
+        "troca",
+        "diagnóstico",
+        "cheia",
+        "notificação",
+        "uso"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -774,7 +780,7 @@
     {
       "key": "ledmovingtext",
       "app_store_id": "6806639602",
-      "name": "LED Moving Text",
+      "name": "LED Moving Text: Letreiro",
       "summary": "Otimizado para iPhone Duo. Criado com o SDK mais recente, o app ocupa toda a tela interna e ajusta o layout automaticamente, com o aparelho dobrado ou aberto.",
       "category": "utility",
       "search_terms": [
@@ -1731,7 +1737,7 @@
       "key": "sereno",
       "app_store_id": "6788236641",
       "name": "Sereno: Sons para Dormir",
-      "summary": "Otimizado para iPhone Duo. Criado com o SDK mais recente, o app ocupa toda a tela interna e ajusta o layout automaticamente, com o aparelho dobrado ou aberto.",
+      "summary": "O Sereno transforma seu iPhone em uma máquina de sons para dormir: combine chuva, mar, fogo, ventilador e ruído branco, rosa ou marrom, e ajuste o volume de cada camada para criar sua própria mistura. Os sons da natureza são gravações reais de campo que se reorganizam aleatoriamente enquanto você ouve, nunca em loop fixo, e mais de 1000 misturas prontas ajudam você a começar na hora. O timer de sono diminui o som suavemente, o despertar ao nascer do sol recebe você com canto de pássaros e a reprodução continua offline e com a tela bloqueada.",
       "category": "sleep-sound",
       "search_terms": [
         "marrom",

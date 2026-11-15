@@ -13,7 +13,7 @@
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
     "dateModified": "2026-11-15",
-    "contentDigest": "a08830c00f4320e0962b78f1a20b51a274af6f3d77ffaa9903230b2aebce9fdf",
+    "contentDigest": "2e705e6133a59676d866c2b31370645ab6a26d6f56af573a0826503639769f45",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
     "recordCount": 60
@@ -95,16 +95,20 @@
       "title": "BattAI: Batteritilstand",
       "content_text": "Optimalisert for iPhone Duo. Appen er bygget med den nyeste SDK-en, fyller hele den indre skjermen og tilpasser oppsettet automatisk, både sammenbrettet og utbrettet.",
       "tags": [
-        "Poengsum for batteritilstand",
-        "Maksimal kapasitet",
-        "Sykluser",
-        "Ladehensyn",
-        "Ladeområde",
-        "Ladehastighet",
-        "Eksporter data"
+        "batteri",
+        "batterihelse",
+        "kapasitet",
+        "levetid",
+        "sykluser",
+        "lading",
+        "test",
+        "slitasje",
+        "bytte",
+        "fulladet",
+        "overoppheting"
       ],
       "language": "no",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T11:36:01Z"
     },
     {
       "id": "https://apps.apple.com/app/id6794178671",
@@ -986,7 +990,7 @@
       "url": "https://open.cait518.cc/ios-app-guide/no/sereno.html",
       "external_url": "https://apps.apple.com/no/app/id6788236641?pt=118326163&ct=geo_pick&mt=8",
       "title": "Sereno: Sovelyder",
-      "content_text": "Optimalisert for iPhone Duo. Appen er bygget med den nyeste SDK-en, fyller hele den indre skjermen og tilpasser oppsettet automatisk, både sammenbrettet og utbrettet.",
+      "content_text": "Sereno gjør iPhonen din til en lydmaskin for søvn: kombiner regn, hav, ild, vifte og hvit, rosa eller brun støy, og still inn volumet for hvert lag til din egen miks. Naturlydene er ekte feltopptak som stokkes tilfeldig om mens du lytter – aldri en fast sløyfe – og over 1000 ferdige mikser gjør det lett å komme i gang. Søvntimeren toner mykt ut, soloppgangsvekkingen møter deg med fuglesang, og avspillingen fortsetter uten nett og på låseskjermen.",
       "tags": [
         "søvnløshet",
         "sovne",
@@ -1004,7 +1008,7 @@
         "vifte"
       ],
       "language": "no",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T12:49:45Z"
     },
     {
       "id": "https://apps.apple.com/app/id6802166527",

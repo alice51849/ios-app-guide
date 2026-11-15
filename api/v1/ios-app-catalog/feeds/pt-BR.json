@@ -13,7 +13,7 @@
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
     "dateModified": "2026-11-15",
-    "contentDigest": "a08830c00f4320e0962b78f1a20b51a274af6f3d77ffaa9903230b2aebce9fdf",
+    "contentDigest": "2e705e6133a59676d866c2b31370645ab6a26d6f56af573a0826503639769f45",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
     "recordCount": 60
@@ -94,16 +94,22 @@
       "title": "BattAI: Saúde da bateria",
       "content_text": "Otimizado para iPhone Duo. Criado com o SDK mais recente, o app ocupa toda a tela interna e ajusta o layout automaticamente, com o aparelho dobrado ou aberto.",
       "tags": [
-        "Pontuação de saúde da bateria",
-        "Capacidade máxima",
-        "Ciclos",
-        "Cuidado na carga",
-        "Faixa de carga",
-        "Velocidade de carga",
-        "Exportar dados"
+        "capacidade",
+        "ciclos",
+        "teste",
+        "vida",
+        "útil",
+        "desgaste",
+        "estado",
+        "condição",
+        "troca",
+        "diagnóstico",
+        "cheia",
+        "notificação",
+        "uso"
       ],
       "language": "pt-BR",
-      "date_modified": "2026-11-03T16:50:53Z"
+      "date_modified": "2026-11-15T11:36:01Z"
     },
     {
       "id": "https://apps.apple.com/app/id6794178671",
@@ -444,7 +450,7 @@
       "id": "https://apps.apple.com/app/id6806639602",
       "url": "https://open.cait518.cc/ios-app-guide/pt-BR/ledmovingtext.html",
       "external_url": "https://apps.apple.com/br/app/id6806639602?pt=118326163&ct=geo_pick&mt=8",
-      "title": "LED Moving Text",
+      "title": "LED Moving Text: Letreiro",
       "content_text": "Otimizado para iPhone Duo. Criado com o SDK mais recente, o app ocupa toda a tela interna e ajusta o layout automaticamente, com o aparelho dobrado ou aberto.",
       "tags": [
         "painel",
@@ -464,7 +470,7 @@
         "aviso"
       ],
       "language": "pt-BR",
-      "date_modified": "2026-11-11T10:19:50Z"
+      "date_modified": "2026-11-15T14:54:39Z"
     },
     {
       "id": "https://apps.apple.com/app/id6780107485",
@@ -983,7 +989,7 @@
       "url": "https://open.cait518.cc/ios-app-guide/pt-BR/sereno.html",
       "external_url": "https://apps.apple.com/br/app/id6788236641?pt=118326163&ct=geo_pick&mt=8",
       "title": "Sereno: Sons para Dormir",
-      "content_text": "Otimizado para iPhone Duo. Criado com o SDK mais recente, o app ocupa toda a tela interna e ajusta o layout automaticamente, com o aparelho dobrado ou aberto.",
+      "content_text": "O Sereno transforma seu iPhone em uma máquina de sons para dormir: combine chuva, mar, fogo, ventilador e ruído branco, rosa ou marrom, e ajuste o volume de cada camada para criar sua própria mistura. Os sons da natureza são gravações reais de campo que se reorganizam aleatoriamente enquanto você ouve, nunca em loop fixo, e mais de 1000 misturas prontas ajudam você a começar na hora. O timer de sono diminui o som suavemente, o despertar ao nascer do sol recebe você com canto de pássaros e a reprodução continua offline e com a tela bloqueada.",
       "tags": [
         "marrom",
         "rosa",
@@ -1000,7 +1006,7 @@
         "cochilo"
       ],
       "language": "pt-BR",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T12:49:45Z"
     },
     {
       "id": "https://apps.apple.com/app/id6802166527",

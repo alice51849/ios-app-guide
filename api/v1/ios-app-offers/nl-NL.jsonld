@@ -6,7 +6,7 @@
   "name": "Lumi Studio Uitgever Zoekintentiecatalogus",
   "description": "Een catalogus van de eerste partij met informatie over voor wie elke app is ontworpen, welke taak ze proberen te voltooien en het directe App Store-pad.",
   "inLanguage": "nl-NL",
-  "dateModified": "2026-11-13",
+  "dateModified": "2026-11-15",
   "numberOfItems": 60,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -2169,7 +2169,7 @@
             {
               "@type": "PropertyValue",
               "name": "purchase_model",
-              "value": "free_with_lifetime_unlock"
+              "value": "paid_upfront"
             },
             {
               "@type": "PropertyValue",

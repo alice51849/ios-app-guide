@@ -2,7 +2,7 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-11-15",
-  "content_digest": "a08830c00f4320e0962b78f1a20b51a274af6f3d77ffaa9903230b2aebce9fdf",
+  "content_digest": "2e705e6133a59676d866c2b31370645ab6a26d6f56af573a0826503639769f45",
   "locale": "zh-Hant",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -185,13 +185,33 @@
       "summary": "已針對 iPhone Duo 最佳化。本 App 以最新開發套件建置，填滿整個內螢幕，無論摺起或打開都會自動調整版面。",
       "category": "utility",
       "search_terms": [
-        "電池健康分數",
         "最大容量",
+        "健康度",
+        "充電速度",
+        "耗電",
+        "快充",
+        "滿電",
+        "過熱",
+        "電量",
+        "監測",
+        "驗機",
+        "報告",
+        "小工具",
+        "效能",
+        "更換",
+        "健檢",
+        "百分比",
+        "診斷",
+        "趨勢",
+        "習慣",
+        "電量顯示",
         "循環次數",
-        "充電保養",
-        "充電區間",
-        "充電速率",
-        "匯出資料"
+        "電池狀態",
+        "電池顯示",
+        "充電助手",
+        "充電測試",
+        "發燙",
+        "掉電"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -277,9 +297,7 @@
       "summary": "• 每日焦點 過往 · 今天 · 未來 — 儲存",
       "category": "productivity",
       "search_terms": [
-        "倒數日",
         "倒數計時",
-        "紀念日",
         "生日",
         "還有幾天",
         "農曆",
@@ -304,7 +322,8 @@
         "過年",
         "開學",
         "國考",
-        "退伍"
+        "退伍",
+        "天數計算"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -834,7 +853,7 @@
     {
       "key": "gbago",
       "app_store_id": "6804564400",
-      "name": "GBAGo: 視覺存檔",
+      "name": "GBAGo：視覺存檔",
       "summary": "已針對 iPhone Duo 最佳化。本 App 以最新開發套件建置，填滿整個內螢幕，無論摺起或打開都會自動調整版面。",
       "category": "utility",
       "search_terms": [
@@ -1058,7 +1077,7 @@
     {
       "key": "ledmovingtext",
       "app_store_id": "6806639602",
-      "name": "LED Moving Text",
+      "name": "LED Moving Text：跑馬燈・大字看板",
       "summary": "已針對 iPhone Duo 最佳化。本 App 以最新開發套件建置，填滿整個內螢幕，無論摺起或打開都會自動調整版面。",
       "category": "utility",
       "search_terms": [
@@ -2389,7 +2408,7 @@
       "key": "sereno",
       "app_store_id": "6788236641",
       "name": "Sereno：白噪音・睡眠音效",
-      "summary": "已針對 iPhone Duo 最佳化。本 App 以最新開發套件建置，填滿整個內螢幕，無論摺起或打開都會自動調整版面。",
+      "summary": "把雨聲、海浪、營火、電風扇和白噪音、粉紅噪音、褐噪音自由疊在一起，每一層音量各自調，混出你自己的入睡聲音。 自然聲音都是實地錄音，播放時隨機重新排列，不是固定循環；另有超過 1000 種現成混音可以直接開始。 睡眠計時會慢慢淡出、日出喚醒用鳥鳴叫你起床，鎖定畫面時與離線也能播放。",
       "category": "sleep-sound",
       "search_terms": [
         "熟睡",
@@ -3108,7 +3127,7 @@
     {
       "key": "wifiaid",
       "app_store_id": "6790467886",
-      "name": "WiFi Aid：找出網路問題·診斷",
+      "name": "WiFi Aid：網路診斷・找出連線問題",
       "summary": "已針對 iPhone Duo 最佳化。本 App 以最新開發套件建置，填滿整個內螢幕，無論摺起或打開都會自動調整版面。",
       "category": "photo-utility",
       "search_terms": [
@@ -3323,7 +3342,7 @@
     {
       "key": "zipbox",
       "app_store_id": "6806776579",
-      "name": "Zipbox 解壓縮：RAR ZIP 7z",
+      "name": "解壓縮檔案・Zipbox RAR ZIP 7z",
       "summary": "已針對 iPhone Duo 最佳化。本 App 以最新開發套件建置，填滿整個內螢幕，無論摺起或打開都會自動調整版面。",
       "category": "utility",
       "search_terms": [

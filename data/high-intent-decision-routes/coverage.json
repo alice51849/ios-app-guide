@@ -528,7 +528,7 @@
   },
   "current_inventory": {
     "app_keys_sha256": "fb6805f542ce9f363d0fb17a1aca312cc4ae4331e68a9154e43717909646f1c1",
-    "copy_sha256": "4ab8574be4d9c34f5b814ab917cc7dc563bad177029b46cbcb9105be9923e3fa",
+    "copy_sha256": "9396c049ea4aa849f9de3c08a83dce594f7ebeedb6ad63c4edf6885a1a32e0ee",
     "missing_route_app_keys": [],
     "missing_route_app_keys_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
     "public_apps": 60
@@ -536,7 +536,7 @@
   "dataset": "Lumi Studio High-Intent Decision Routes",
   "inventory": {
     "app_keys_sha256": "fb6805f542ce9f363d0fb17a1aca312cc4ae4331e68a9154e43717909646f1c1",
-    "copy_sha256": "4ab8574be4d9c34f5b814ab917cc7dc563bad177029b46cbcb9105be9923e3fa",
+    "copy_sha256": "9396c049ea4aa849f9de3c08a83dce594f7ebeedb6ad63c4edf6885a1a32e0ee",
     "official_locales_sha256": "e26dabf9370286ad8fd12034270cfcade92b2db4f4a0eecc19324203ce84d5bd",
     "public_apps": 60,
     "relative_path": "data/verified-ios-app-finder-catalog.json"
@@ -813,7 +813,7 @@
     ],
     "minimum_content_units": 200
   },
-  "release_contract_digest": "70c6b195583d57af83f711e8c352684a6b1e09aa7ad514e2198ee2badbc2f6e6",
+  "release_contract_digest": "fbf34b8493d3b4c3d797fbb822822c63673f2981f134b1cee474fe095f3e98cb",
   "release_state": "exact",
   "schema_version": 1
 }

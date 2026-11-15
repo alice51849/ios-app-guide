@@ -13,7 +13,7 @@
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
     "dateModified": "2026-11-15",
-    "contentDigest": "a08830c00f4320e0962b78f1a20b51a274af6f3d77ffaa9903230b2aebce9fdf",
+    "contentDigest": "2e705e6133a59676d866c2b31370645ab6a26d6f56af573a0826503639769f45",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
     "recordCount": 60
@@ -99,16 +99,24 @@
       "title": "BattAI: Battery Health Score",
       "content_text": "Optimized for iPhone Duo. Built with the latest SDK, the app fills the entire inner display and automatically adjusts its layout whether the device is folded or open.",
       "tags": [
-        "Battery health score",
-        "Maximum capacity",
-        "Cycles",
-        "Charge care",
-        "Charge range",
-        "Charge rate",
-        "Export data"
+        "capacity",
+        "cycle",
+        "count",
+        "max",
+        "check",
+        "test",
+        "full",
+        "low",
+        "drain",
+        "replace",
+        "report",
+        "percentage",
+        "monitor",
+        "score",
+        "life"
       ],
       "language": "en-US",
-      "date_modified": "2026-11-13T00:45:23Z"
+      "date_modified": "2026-11-15T10:43:14Z"
     },
     {
       "id": "https://apps.apple.com/app/id6794178671",
@@ -1033,7 +1041,7 @@
       "url": "https://open.cait518.cc/ios-app-guide/en-US/sereno.html",
       "external_url": "https://apps.apple.com/us/app/id6788236641?pt=118326163&ct=geo_pick&mt=8",
       "title": "Sereno: Sleep Sound Machine",
-      "content_text": "Optimized for iPhone Duo. Built with the latest SDK, the app fills the entire inner display and automatically adjusts its layout whether the device is folded or open.",
+      "content_text": "Sereno turns your iPhone into a sleep sound machine: layer rain, ocean, fire, fans and white, pink or brown noise, and set each layer's volume to build your own mix. Nature sounds are real field recordings that reshuffle as you listen — never a fixed loop — and 1000+ ready-made blends give you a place to start. A sleep timer fades out gently, a sunrise wake-up greets you with birdsong, and playback keeps going offline and on the lock screen.",
       "tags": [
         "machine",
         "pink",
@@ -1051,7 +1059,7 @@
         "study"
       ],
       "language": "en-US",
-      "date_modified": "2026-10-30T10:45:12Z"
+      "date_modified": "2026-11-15T12:49:45Z"
     },
     {
       "id": "https://apps.apple.com/app/id6802166527",
@@ -1216,7 +1224,7 @@
         "airport"
       ],
       "language": "en-US",
-      "date_modified": "2026-11-15T11:02:44Z"
+      "date_modified": "2026-11-15T12:49:45Z"
     },
     {
       "id": "https://apps.apple.com/app/id6826987407",

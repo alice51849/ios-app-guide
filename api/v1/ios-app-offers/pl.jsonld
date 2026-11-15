@@ -6,7 +6,7 @@
   "name": "Katalog zamiarów wyszukiwania wydawcy Lumi Studio",
   "description": "Pierwotny katalog określający, dla kogo jest przeznaczona każda aplikacja, jakie zadanie ma wykonać oraz bezpośrednią ścieżkę do App Store.",
   "inLanguage": "pl",
-  "dateModified": "2026-11-13",
+  "dateModified": "2026-11-15",
   "numberOfItems": 60,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -3225,7 +3225,7 @@
             {
               "@type": "PropertyValue",
               "name": "purchase_model",
-              "value": "free_with_lifetime_unlock"
+              "value": "paid_upfront"
             },
             {
               "@type": "PropertyValue",

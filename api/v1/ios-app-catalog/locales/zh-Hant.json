@@ -2,7 +2,7 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-11-15",
-  "content_digest": "1cb8f524668ccead7679fd915a147b1ec55b6bb8143f176c74702e7235fce517",
+  "content_digest": "571e843367376953ec397a6f4d008c44be4838709a1968ff1edf582236c6dbf9",
   "locale": "zh-Hant",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -277,7 +277,9 @@
       "summary": "• 每日焦點 過往 · 今天 · 未來 — 儲存",
       "category": "productivity",
       "search_terms": [
+        "倒數日",
         "倒數計時",
+        "紀念日",
         "生日",
         "還有幾天",
         "農曆",
@@ -302,8 +304,7 @@
         "過年",
         "開學",
         "國考",
-        "退伍",
-        "天數計算"
+        "退伍"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -720,8 +721,6 @@
         "price": "0",
         "currency": "TWD",
         "formatted_price": "免費",
-        "rating_value": 5.0,
-        "rating_count": 1,
         "storefront_url": "https://apps.apple.com/tw/app/id6824946559"
       }
     },

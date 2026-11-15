@@ -13,7 +13,7 @@
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
     "dateModified": "2026-11-15",
-    "contentDigest": "1cb8f524668ccead7679fd915a147b1ec55b6bb8143f176c74702e7235fce517",
+    "contentDigest": "571e843367376953ec397a6f4d008c44be4838709a1968ff1edf582236c6dbf9",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
     "recordCount": 60
@@ -196,7 +196,9 @@
       "title": "CountDaysNow: Event Counter",
       "content_text": "• 每日焦點 過往 · 今天 · 未來 — 儲存",
       "tags": [
+        "倒數日",
         "倒數計時",
+        "紀念日",
         "生日",
         "還有幾天",
         "農曆",
@@ -221,11 +223,10 @@
         "過年",
         "開學",
         "國考",
-        "退伍",
-        "天數計算"
+        "退伍"
       ],
       "language": "zh-Hant",
-      "date_modified": "2026-11-14T19:44:30Z"
+      "date_modified": "2026-11-15T01:56:39Z"
     },
     {
       "id": "https://apps.apple.com/app/id6781337213",

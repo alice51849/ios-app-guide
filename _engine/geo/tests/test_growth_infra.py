@@ -22363,13 +22363,13 @@ class GeneratorTests(unittest.TestCase):
         # registry this copy runs against has it.
         if "duowallpaperstudio" in APPS:
             free_with_unlock.add("duowallpaperstudio")
-        # Metro Time Helper: free download (store price 0, released
-        # 2026-11-03) whose en-US description offers every feature for 24
-        # hours, then "a single one-time unlock" with "No subscription, and
-        # nothing renews automatically". Expected only once the registry this
-        # copy runs against has it, like the entry above.
+        # Metro Time Helper: paid download since 1.1.1 (2026-11-10; iTunes
+        # lookup 2026-11-15 USD 2.99 / TWD 90) whose en-US description says
+        # "Buy once, everything included" and "No subscription, no in-app
+        # purchases"; the 2026-11-04 24-hour trial record is void. Expected
+        # only once the registry this copy runs against has it.
         if "metrotimehelper" in APPS:
-            free_with_unlock.add("metrotimehelper")
+            paid_upfront.add("metrotimehelper")
         # TripBee Cute: free download (store price 0) whose en-US description
         # unlocks unlimited booklets and more "with a one-time in-app purchase
         # (Cute Pass)", with no subscription wording. Expected only once the

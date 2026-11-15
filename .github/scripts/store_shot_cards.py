@@ -198,6 +198,12 @@ def compose(shot_bytes, headline, clip, out):
 FEED_CT = "igc"   # ct suffix of the carousels (h7_<app>_igc; 00_GrowthEngine agent/ct_codes.py: instagram_feed)
 
 
+def app_of_key(key):
+    """The app key of a feed receipt key ("feed/<app>/<locale>/..."); None when the key has no app segment."""
+    parts = str(key or "").split("/")
+    return parts[1] if len(parts) > 2 and parts[0] == KEY_PREFIX.strip("/") and parts[1] else None
+
+
 def caption(clip, variant):
     return clip_posts.caption(clip, "instagram", variant, tag=FEED_CT)
 
@@ -632,7 +638,8 @@ def main(argv=None):
     print(f"feed: posted {posted}")
     if posted:
         clip_progress.record_post(CHANNEL, plan["key"], posted.get("link"), media_id=posted.get("id"),
-                                  variant=plan.get("variant"))
+                                  variant=plan.get("variant"), app=plan.get("app") or app_of_key(plan["key"]),
+                                  locale=plan.get("locale"))
     return 0
 
 

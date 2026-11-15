@@ -276,8 +276,11 @@ def update(now=None, notes=None):
     IMPROVEMENTS.write_text(json.dumps(improvements, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
 
-def record_post(channel, key, link, now=None, media_id=None, variant=None, ig_trial=None):
-    """Append one post to clip-posts.json and refresh the page section."""
+def record_post(channel, key, link, now=None, media_id=None, variant=None, ig_trial=None, app=None, locale=None):
+    """Append one post to clip-posts.json and refresh the page section.
+
+    app/locale: optional extra fields for keys that do not start with the app key (Instagram feed carousels
+    are keyed "feed/<app>/<locale>/..."), so readers can count posts per app; older entries simply lack them."""
     now = now or dt.datetime.now(dt.timezone.utc)
     log = load_json(POSTS, {"posts": [], "notes": []})
     entry = {"channel": channel, "clip": key, "link": link, "posted_at": now.strftime("%Y-%m-%dT%H:%M:%SZ")}
@@ -287,6 +290,10 @@ def record_post(channel, key, link, now=None, media_id=None, variant=None, ig_tr
         entry["variant"] = variant
     if ig_trial:  # Trial Reel try (clip_posts.trial_plan): {"graduation_strategy", "result": trial|refused|transient, "error"}
         entry["ig_trial"] = ig_trial
+    if app:
+        entry["app"] = str(app)
+    if locale:
+        entry["locale"] = str(locale)
     log.setdefault("posts", []).append(entry)
     POSTS.write_text(json.dumps(log, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     update(now)

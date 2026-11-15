@@ -1,11 +1,11 @@
 {
- "generated": "2026-11-15T16:27:03Z",
+ "generated": "2026-11-15T22:55:17Z",
  "mode": "apply",
  "counts": {
   "ok_reply": 69,
   "unknown_app": 48,
-  "ok_backfilled_earlier": 89,
-  "ok_store_only": 641,
+  "ok_backfilled_earlier": 91,
+  "ok_store_only": 639,
   "backfilled": 2,
   "ok_bio_link": 68,
   "ok_caption": 4,
@@ -2785,11 +2785,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/Dctirn9Au0u",
    "date": "2026-08-31",
    "app": "lockhour",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "LockHour Pro: Block Apps App Blocker & Focus Timer Lock away distractions. Start a focus session, shield your apps, build streaks and reclai",
    "why": "url+brand",
    "ios_id": "6780107485",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "17874309723645120",
+   "at": "2026-11-15T22:52:46Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -3823,16 +3828,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/Dcti2z3ifCp",
    "date": "2026-08-31",
    "app": "lumiletterspro",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "Lumi Letters Pro: ABC Phonics ABC Phonics: Trace & Read The complete phonics adventure. Letter sounds, tracing, and word-building kids love ",
    "why": "url+brand",
    "ios_id": "6778491147",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "17895986085620456",
-   "at": "2026-11-15T16:24:34Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",
@@ -3958,11 +3958,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctixjWk4EK",
    "date": "2026-08-31",
    "app": "lumiletters",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "Lumi Letters Lite: ABC Kids ABC Tracing & Phonics Games A joyful first ABC adventure! Trace letters, hear phonics, play mini-games and build",
    "why": "url+brand",
    "ios_id": "6778748533",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "18110867042220801",
+   "at": "2026-11-15T22:52:46Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -4496,16 +4501,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/Dcti8WkDQ92",
    "date": "2026-08-31",
    "app": "lumimath",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "Lumi Math Planet: Explorer Preschool Math Games Ages 3-6 Make math an adventure. A whole galaxy of counting and number games kids beg to pla",
    "why": "url+brand",
    "ios_id": "6778269699",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "18140222116632211",
-   "at": "2026-11-15T16:24:34Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",

@@ -13,7 +13,7 @@
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
     "dateModified": "2026-11-15",
-    "contentDigest": "71ebc3e21c3f18ab24722f59fae04575436ee0654984c551b06dd6761d43a845",
+    "contentDigest": "d12e29e4cce2fbd401d8ec1e9d9fa4960b19d143cd78c73f389805eaf1c4ea1e",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
     "recordCount": 60
@@ -96,16 +96,23 @@
       "title": "BattAI: Skor kesehatan baterai",
       "content_text": "Dioptimalkan untuk iPhone Duo. Dibangun dengan SDK terbaru, aplikasi ini memenuhi seluruh layar bagian dalam dan menyesuaikan tata letaknya secara otomatis, baik saat perangkat dilipat maupun dibuka.",
       "tags": [
-        "Skor kesehatan baterai",
-        "Kapasitas maksimum",
-        "Siklus",
-        "Perawatan pengisian",
-        "Rentang pengisian",
-        "Laju pengisian",
-        "Ekspor data"
+        "kapasitas",
+        "siklus",
+        "pengisian",
+        "cek",
+        "tes",
+        "kondisi",
+        "daya",
+        "tahan",
+        "umur",
+        "keausan",
+        "ganti",
+        "panas",
+        "lemah",
+        "notifikasi"
       ],
       "language": "id",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T11:36:01Z"
     },
     {
       "id": "https://apps.apple.com/app/id6794178671",

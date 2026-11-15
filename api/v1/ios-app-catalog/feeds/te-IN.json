@@ -13,7 +13,7 @@
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
     "dateModified": "2026-11-15",
-    "contentDigest": "71ebc3e21c3f18ab24722f59fae04575436ee0654984c551b06dd6761d43a845",
+    "contentDigest": "d12e29e4cce2fbd401d8ec1e9d9fa4960b19d143cd78c73f389805eaf1c4ea1e",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
     "recordCount": 60
@@ -93,16 +93,23 @@
       "title": "BattAI: బ్యాటరీ ఆరోగ్య స్కోర్",
       "content_text": "iPhone Duo పరికరం కోసం ఆప్టిమైజ్ చేయబడింది. తాజా SDKతో రూపొందించిన ఈ యాప్ లోపలి స్క్రీన్ మొత్తాన్ని నింపుతుంది, పరికరం మడిచి ఉన్నా తెరిచి ఉన్నా లేఅవుట్‌ను ఆటోమేటిక్‌గా సర్దుబాటు చేస్తుంది.",
       "tags": [
-        "బ్యాటరీ ఆరోగ్య స్కోర్",
-        "గరిష్ఠ సామర్థ్యం",
-        "ఛార్జ్ చక్రాలు",
-        "ఛార్జ్ సంరక్షణ",
-        "ఛార్జ్ పరిధి",
-        "ఛార్జ్ రేటు",
-        "డేటా ఎగుమతి"
+        "battery",
+        "health",
+        "check",
+        "capacity",
+        "cycle",
+        "life",
+        "alarm",
+        "full",
+        "సామర్థ్యం",
+        "చక్రం",
+        "పరీక్ష",
+        "నివేదిక",
+        "జీవితకాలం",
+        "వేడి"
       ],
       "language": "te-IN",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T11:36:01Z"
     },
     {
       "id": "https://apps.apple.com/app/id6794178671",

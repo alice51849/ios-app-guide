@@ -13,7 +13,7 @@
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
     "dateModified": "2026-11-15",
-    "contentDigest": "71ebc3e21c3f18ab24722f59fae04575436ee0654984c551b06dd6761d43a845",
+    "contentDigest": "d12e29e4cce2fbd401d8ec1e9d9fa4960b19d143cd78c73f389805eaf1c4ea1e",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
     "recordCount": 60
@@ -129,16 +129,33 @@
       "title": "BattAI: バッテリー劣化・状態スコア",
       "content_text": "iPhone Duoに最適化。最新の開発キットでビルドしており、内側のディスプレイ全体に表示され、折りたたんでも開いても自動でレイアウトが調整されます。",
       "tags": [
-        "バッテリー状態スコア",
         "最大容量",
-        "充放電回数",
-        "充電ケア",
-        "充電範囲",
+        "サイクル",
+        "回数",
+        "診断",
+        "交換時期",
+        "消耗",
+        "発熱",
+        "残量",
+        "レポート",
+        "ウィジェット",
+        "測定",
+        "モニター",
+        "履歴",
+        "健康",
+        "スマホ",
+        "アラーム",
+        "長持ち",
+        "チェッカー",
+        "パーセント",
+        "表示",
+        "容量",
+        "電池",
         "充電速度",
-        "データを書き出す"
+        "寿命"
       ],
       "language": "ja",
-      "date_modified": "2026-11-04T10:05:32Z"
+      "date_modified": "2026-11-15T11:36:01Z"
     },
     {
       "id": "https://apps.apple.com/app/id6794178671",
@@ -183,11 +200,8 @@
       "title": "CountDaysNow: Event Counter",
       "content_text": "• 今日のフォーカス 過去 · 今日 · 未来 — 保存",
       "tags": [
-        "カウントダウン",
-        "あと何日",
         "経過日数",
         "日数計算",
-        "記念日",
         "誕生日",
         "ウィジェット",
         "ロック画面",
@@ -203,10 +217,13 @@
         "卒業",
         "入籍",
         "ライブ",
-        "休み"
+        "休み",
+        "残り日数",
+        "何日目",
+        "イベント"
       ],
       "language": "ja",
-      "date_modified": "2026-11-15T03:07:55Z"
+      "date_modified": "2026-11-15T11:36:01Z"
     },
     {
       "id": "https://apps.apple.com/app/id6781337213",

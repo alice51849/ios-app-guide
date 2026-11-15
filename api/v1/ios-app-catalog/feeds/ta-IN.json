@@ -13,7 +13,7 @@
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
     "dateModified": "2026-11-15",
-    "contentDigest": "71ebc3e21c3f18ab24722f59fae04575436ee0654984c551b06dd6761d43a845",
+    "contentDigest": "d12e29e4cce2fbd401d8ec1e9d9fa4960b19d143cd78c73f389805eaf1c4ea1e",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
     "recordCount": 60
@@ -93,16 +93,24 @@
       "title": "BattAI: பேட்டரி நலம்",
       "content_text": "பேட்டரி நலத்தை மதிப்பெண்ணாகப் பார்த்து, போக்கைக் கவனியுங்கள். பேட்டரி நிரம்பினால், குறைந்தால், சூடானால் எச்சரிக்கை பெறுங்கள். போனை விற்கும் முன் பேட்டரி மறுவிற்பனை அறிக்கையை ஏற்றுமதி செய்யுங்கள்.",
       "tags": [
-        "பேட்டரி ஆரோக்கிய மதிப்பெண்",
-        "அதிகபட்சத் திறன்",
-        "சார்ஜ் சுழற்சிகள்",
-        "சார்ஜ் பராமரிப்பு",
-        "சார்ஜ் வரம்பு",
-        "சார்ஜ் வேகம்",
-        "தரவு ஏற்றுமதி"
+        "battery",
+        "health",
+        "check",
+        "capacity",
+        "cycle",
+        "life",
+        "alarm",
+        "full",
+        "திறன்",
+        "சுழற்சி",
+        "சோதனை",
+        "அறிக்கை",
+        "ஆயுள்",
+        "சூடு",
+        "டெஸ்ட்"
       ],
       "language": "ta-IN",
-      "date_modified": "2026-11-04T09:01:57Z"
+      "date_modified": "2026-11-15T11:36:01Z"
     },
     {
       "id": "https://apps.apple.com/app/id6794178671",

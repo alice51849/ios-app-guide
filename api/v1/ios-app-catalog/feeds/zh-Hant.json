@@ -13,7 +13,7 @@
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
     "dateModified": "2026-11-15",
-    "contentDigest": "71ebc3e21c3f18ab24722f59fae04575436ee0654984c551b06dd6761d43a845",
+    "contentDigest": "d12e29e4cce2fbd401d8ec1e9d9fa4960b19d143cd78c73f389805eaf1c4ea1e",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
     "recordCount": 60
@@ -140,16 +140,36 @@
       "title": "BattAI: 電池健康度・檢測分數",
       "content_text": "已針對 iPhone Duo 最佳化。本 App 以最新開發套件建置，填滿整個內螢幕，無論摺起或打開都會自動調整版面。",
       "tags": [
-        "電池健康分數",
         "最大容量",
+        "健康度",
+        "充電速度",
+        "耗電",
+        "快充",
+        "滿電",
+        "過熱",
+        "電量",
+        "監測",
+        "驗機",
+        "報告",
+        "小工具",
+        "效能",
+        "更換",
+        "健檢",
+        "百分比",
+        "診斷",
+        "趨勢",
+        "習慣",
+        "電量顯示",
         "循環次數",
-        "充電保養",
-        "充電區間",
-        "充電速率",
-        "匯出資料"
+        "電池狀態",
+        "電池顯示",
+        "充電助手",
+        "充電測試",
+        "發燙",
+        "掉電"
       ],
       "language": "zh-Hant",
-      "date_modified": "2026-11-12T08:24:26Z"
+      "date_modified": "2026-11-15T10:43:14Z"
     },
     {
       "id": "https://apps.apple.com/app/id6794178671",
@@ -196,9 +216,7 @@
       "title": "CountDaysNow: Event Counter",
       "content_text": "• 每日焦點 過往 · 今天 · 未來 — 儲存",
       "tags": [
-        "倒數日",
         "倒數計時",
-        "紀念日",
         "生日",
         "還有幾天",
         "農曆",
@@ -223,10 +241,11 @@
         "過年",
         "開學",
         "國考",
-        "退伍"
+        "退伍",
+        "天數計算"
       ],
       "language": "zh-Hant",
-      "date_modified": "2026-11-15T01:56:39Z"
+      "date_modified": "2026-11-15T10:43:14Z"
     },
     {
       "id": "https://apps.apple.com/app/id6781337213",

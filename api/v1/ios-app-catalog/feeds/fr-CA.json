@@ -13,7 +13,7 @@
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
     "dateModified": "2026-11-15",
-    "contentDigest": "71ebc3e21c3f18ab24722f59fae04575436ee0654984c551b06dd6761d43a845",
+    "contentDigest": "d12e29e4cce2fbd401d8ec1e9d9fa4960b19d143cd78c73f389805eaf1c4ea1e",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
     "recordCount": 60
@@ -95,16 +95,21 @@
       "title": "BattAI: Santé de la batterie",
       "content_text": "Optimisée pour l’iPhone Duo. Conçue avec le SDK le plus récent, l’app remplit tout l’écran intérieur et adapte automatiquement sa mise en page, appareil plié ou ouvert.",
       "tags": [
-        "Note de santé de la batterie",
-        "Capacité maximale",
-        "Cycles",
-        "Bonnes pratiques",
-        "Plage de recharge",
-        "Rythme de recharge",
-        "Exporter les données"
+        "capacité",
+        "état",
+        "cycles",
+        "test",
+        "autonomie",
+        "durée",
+        "vie",
+        "diagnostic",
+        "pleine",
+        "surchauffe",
+        "notification",
+        "cellulaire"
       ],
       "language": "fr-CA",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T11:36:01Z"
     },
     {
       "id": "https://apps.apple.com/app/id6794178671",

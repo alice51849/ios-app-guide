@@ -13,7 +13,7 @@
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
     "dateModified": "2026-11-15",
-    "contentDigest": "71ebc3e21c3f18ab24722f59fae04575436ee0654984c551b06dd6761d43a845",
+    "contentDigest": "d12e29e4cce2fbd401d8ec1e9d9fa4960b19d143cd78c73f389805eaf1c4ea1e",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
     "recordCount": 60
@@ -99,16 +99,23 @@
       "title": "BattAI: Pil sağlığı puanı",
       "content_text": "iPhone Duo için optimize edildi. En yeni SDK ile geliştirilen uygulama tüm iç ekranı doldurur ve cihaz katlıyken de açıkken de düzenini otomatik olarak ayarlar.",
       "tags": [
-        "Pil sağlığı puanı",
-        "Maksimum kapasite",
-        "Döngüler",
-        "Şarj özeni",
-        "Şarj aralığı",
-        "Şarj hızı",
-        "Verileri dışa aktar"
+        "batarya",
+        "kapasite",
+        "döngü",
+        "sayısı",
+        "test",
+        "kontrol",
+        "ömrü",
+        "aşınma",
+        "durumu",
+        "widget",
+        "yüzdesi",
+        "düşük",
+        "ısınma",
+        "bildirim"
       ],
       "language": "tr",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T11:36:01Z"
     },
     {
       "id": "https://apps.apple.com/app/id6794178671",

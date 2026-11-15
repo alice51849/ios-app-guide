@@ -13,7 +13,7 @@
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
     "dateModified": "2026-11-15",
-    "contentDigest": "71ebc3e21c3f18ab24722f59fae04575436ee0654984c551b06dd6761d43a845",
+    "contentDigest": "d12e29e4cce2fbd401d8ec1e9d9fa4960b19d143cd78c73f389805eaf1c4ea1e",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
     "recordCount": 60
@@ -91,16 +91,20 @@
       "title": "BattAI: Akku- & Batterie-Check",
       "content_text": "Optimiert für das iPhone Duo. Die mit dem neuesten SDK entwickelte App füllt das gesamte innere Display und passt das Layout automatisch an, egal ob zugeklappt oder aufgeklappt.",
       "tags": [
-        "Batteriezustandswert",
-        "Maximale Kapazität",
-        "Zyklen",
-        "Ladeschonung",
-        "Ladebereich",
-        "Laderate",
-        "Daten exportieren"
+        "kapazität",
+        "lebensdauer",
+        "ladezyklen",
+        "test",
+        "laden",
+        "prozent",
+        "zustand",
+        "alarm",
+        "batterieladung",
+        "batterietest",
+        "hitze"
       ],
       "language": "de-DE",
-      "date_modified": "2026-11-13T00:45:23Z"
+      "date_modified": "2026-11-15T11:36:01Z"
     },
     {
       "id": "https://apps.apple.com/app/id6794178671",
@@ -132,7 +136,6 @@
       "title": "CountDaysNow: Event Counter",
       "content_text": "• Tagesfokus Seitdem · Heute · Voraus",
       "tags": [
-        "Countdown",
         "Tage",
         "bis",
         "Geburtstag",
@@ -142,10 +145,11 @@
         "Sperrbildschirm",
         "Hochzeit",
         "Prüfung",
-        "Urlaub"
+        "Urlaub",
+        "Tageszähler"
       ],
       "language": "de-DE",
-      "date_modified": "2026-11-15T03:07:55Z"
+      "date_modified": "2026-11-15T11:36:01Z"
     },
     {
       "id": "https://apps.apple.com/app/id6781337213",

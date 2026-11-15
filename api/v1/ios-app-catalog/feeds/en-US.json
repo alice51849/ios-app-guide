@@ -13,7 +13,7 @@
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
     "dateModified": "2026-11-15",
-    "contentDigest": "71ebc3e21c3f18ab24722f59fae04575436ee0654984c551b06dd6761d43a845",
+    "contentDigest": "d12e29e4cce2fbd401d8ec1e9d9fa4960b19d143cd78c73f389805eaf1c4ea1e",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
     "recordCount": 60
@@ -99,16 +99,24 @@
       "title": "BattAI: Battery Health Score",
       "content_text": "Optimized for iPhone Duo. Built with the latest SDK, the app fills the entire inner display and automatically adjusts its layout whether the device is folded or open.",
       "tags": [
-        "Battery health score",
-        "Maximum capacity",
-        "Cycles",
-        "Charge care",
-        "Charge range",
-        "Charge rate",
-        "Export data"
+        "capacity",
+        "cycle",
+        "count",
+        "max",
+        "check",
+        "test",
+        "full",
+        "low",
+        "drain",
+        "replace",
+        "report",
+        "percentage",
+        "monitor",
+        "score",
+        "life"
       ],
       "language": "en-US",
-      "date_modified": "2026-11-13T00:45:23Z"
+      "date_modified": "2026-11-15T10:43:14Z"
     },
     {
       "id": "https://apps.apple.com/app/id6794178671",

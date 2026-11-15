@@ -638,7 +638,15 @@
       "clip": "mochi_halloween/en",
       "link": "https://youtube.com/shorts/7AAc1Mk5s7A",
       "posted_at": "2026-10-22T09:23:31Z",
-      "id": "7AAc1Mk5s7A"
+      "id": "7AAc1Mk5s7A",
+      "taken_down": {
+        "at": "2026-10-30T02:50:00Z",
+        "method": "studio_readback",
+        "reason": "上傳處理失敗：Studio 只剩中繼資料殼、無影片檔、不在內容清單；無警告、無政策信（本機 10-30 唯讀查證）。不重傳同一渲染檔",
+        "report": "ops/handoff/inbox/local_yt_halloween_removed_2026-10-30.md",
+        "reversible": false,
+        "status": "upload_failed"
+      }
     },
     {
       "channel": "instagram_feed",
@@ -3616,6 +3624,137 @@
       "posted_at": "2026-11-14T12:31:17Z",
       "id": "18133673056693874",
       "variant": "b"
+    },
+    {
+      "channel": "telegram",
+      "clip": "lockhour/en",
+      "link": "https://t.me/LumiApps2026/669",
+      "posted_at": "2026-11-14T15:17:10Z",
+      "id": "669",
+      "variant": "b"
+    },
+    {
+      "channel": "instagram",
+      "clip": "gmoney/id",
+      "link": "https://www.instagram.com/reel/Dfuh6mkj4ln/",
+      "posted_at": "2026-11-14T15:29:51Z",
+      "id": "18106217705375670",
+      "variant": "b"
+    },
+    {
+      "channel": "youtube",
+      "clip": "wordmate/ja",
+      "link": "https://youtube.com/shorts/a3nIZ3kH_w8",
+      "posted_at": "2026-11-14T15:54:40Z",
+      "id": "a3nIZ3kH_w8"
+    },
+    {
+      "channel": "telegraph",
+      "clip": "gmoney/id",
+      "link": "https://telegra.ph/GMoney-Catat--atur-anggaran--Lihat-ke-mana-uangmu-per-kategori--Catat--atur-anggaran--GMoney-11-14",
+      "posted_at": "2026-11-14T16:01:29Z",
+      "id": "GMoney-Catat--atur-anggaran--Lihat-ke-mana-uangmu-per-kategori--Catat--atur-anggaran--GMoney-11-14",
+      "variant": "b"
+    },
+    {
+      "channel": "instagram",
+      "clip": "zipbox/ja",
+      "link": "https://www.instagram.com/reel/Dfu26yykd1b/",
+      "posted_at": "2026-11-14T18:33:15Z",
+      "id": "18502402450108308",
+      "variant": "b"
+    },
+    {
+      "channel": "telegram",
+      "clip": "wordmatelite/ko",
+      "link": "https://t.me/LumiApps2026/670",
+      "posted_at": "2026-11-14T18:43:25Z",
+      "id": "670",
+      "variant": "b"
+    },
+    {
+      "channel": "youtube",
+      "clip": "onepageppt/de",
+      "link": "https://youtube.com/shorts/kC7UfQvRJCU",
+      "posted_at": "2026-11-14T19:08:49Z",
+      "id": "kC7UfQvRJCU"
+    },
+    {
+      "channel": "instagram_feed",
+      "clip": "feed/aibriefpack/en/carousel/aibriefpack-en-pain-20261022",
+      "link": "https://www.instagram.com/p/Dfu9nDdlMCe/",
+      "posted_at": "2026-11-14T19:31:32Z",
+      "id": "18057361616807926",
+      "variant": "carousel-pain"
+    },
+    {
+      "channel": "telegram",
+      "clip": "lumiletterspro/ko",
+      "link": "https://t.me/LumiApps2026/671",
+      "posted_at": "2026-11-14T22:42:39Z",
+      "id": "671",
+      "variant": "b"
+    },
+    {
+      "channel": "telegram",
+      "clip": "foldparty/ja",
+      "link": "https://t.me/LumiApps2026/673",
+      "posted_at": "2026-11-15T01:16:42Z",
+      "id": "673",
+      "variant": "a"
+    },
+    {
+      "channel": "youtube",
+      "clip": "aim990_t10/fr",
+      "link": "https://youtube.com/shorts/y9aCZu5FV5M",
+      "posted_at": "2026-11-15T01:19:04Z",
+      "id": "y9aCZu5FV5M"
+    },
+    {
+      "channel": "instagram",
+      "clip": "lumiweather/id",
+      "link": "https://www.instagram.com/reel/DfvmqHTimfJ/",
+      "posted_at": "2026-11-15T01:30:36Z",
+      "id": "18072249998510638",
+      "variant": "c"
+    },
+    {
+      "channel": "telegraph",
+      "clip": "lumiweather/id",
+      "link": "https://telegra.ph/Lumi-Cuaca-Prakiraan-Hari-Ini--Langsung-tahu-pakai-baju-apa--Prakiraan-Hari-Ini--Lumi-Weather-11-15",
+      "posted_at": "2026-11-15T02:02:08Z",
+      "id": "Lumi-Cuaca-Prakiraan-Hari-Ini--Langsung-tahu-pakai-baju-apa--Prakiraan-Hari-Ini--Lumi-Weather-11-15",
+      "variant": "b"
+    },
+    {
+      "channel": "whitewind",
+      "clip": "lumiweather/id",
+      "link": "https://whtwnd.com/cait518.bsky.social/3n2cwauu4pe2o",
+      "posted_at": "2026-11-15T02:02:28Z",
+      "id": "at://did:plc:kboucnzkxzmqmatvhes4xlt4/com.whtwnd.blog.entry/3n2cwauu4pe2o",
+      "variant": "a"
+    },
+    {
+      "channel": "telegram",
+      "clip": "utility/count/lumimath/count_4/ko",
+      "link": "https://t.me/LumiApps2026/679",
+      "posted_at": "2026-11-15T05:20:40Z"
+    },
+    {
+      "channel": "instagram",
+      "clip": "utility/count/lumimath/count_4/ko",
+      "link": "https://www.instagram.com/p/DfwBDoiDsHc/",
+      "posted_at": "2026-11-15T05:20:58Z"
+    },
+    {
+      "channel": "instagram_feed",
+      "clip": "feed/aim990/zh-Hant/carousel/aim990-zh-Hant-pain-20261022",
+      "link": "https://www.instagram.com/p/DfwQOmrlakn/",
+      "posted_at": "2026-11-15T07:33:27Z",
+      "id": "18112336589259376",
+      "variant": "carousel-pain",
+      "app": "aim990",
+      "locale": "zh-Hant"
     }
   ]
 }

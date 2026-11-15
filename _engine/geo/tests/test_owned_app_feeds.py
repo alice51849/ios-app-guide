@@ -76,7 +76,8 @@ class OwnedFeedTests(FeedFixture):
                 "notification_feed_count",
             )),
         )
-        expected_models = {"paid_upfront": 14, "free_with_lifetime_unlock": 45}
+        # 捷運時間助手 1.1.1（11-10 上線）改付費下載，11-15 讀回確認：付費 15、免費開始 44。
+        expected_models = {"paid_upfront": 15, "free_with_lifetime_unlock": 44}
         # Kumo（自動續訂＋一次性買斷並存）上架後登錄為 neutral，只有 1 款。
         if "kumo" in canonical_manifest()["apps"]:
             expected_models["neutral"] = 1

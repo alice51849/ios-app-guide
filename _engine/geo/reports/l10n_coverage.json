@@ -52,7 +52,7 @@
     "pages": 2000,
     "measured": 40,
     "coverage": 68.6,
-    "native_ratio": 51.2,
+    "native_ratio": 51.1,
     "untranslated_pages": 0
   },
   {
@@ -96,20 +96,20 @@
     "untranslated_pages": 0
   },
   {
+    "locale": "th",
+    "pages": 1700,
+    "measured": 40,
+    "coverage": 75.3,
+    "native_ratio": 60.2,
+    "untranslated_pages": 1
+  },
+  {
     "locale": "id",
     "pages": 1619,
     "measured": 40,
     "coverage": 75.4,
     "native_ratio": null,
     "untranslated_pages": 0
-  },
-  {
-    "locale": "th",
-    "pages": 1700,
-    "measured": 40,
-    "coverage": 75.4,
-    "native_ratio": 60.2,
-    "untranslated_pages": 1
   },
   {
     "locale": "de-DE",

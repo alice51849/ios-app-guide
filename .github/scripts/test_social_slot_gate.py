@@ -251,5 +251,35 @@ class CronDispatcherCatchUpTests(unittest.TestCase):
         self.assertEqual(dt.datetime(2026, 10, 17, 9, tzinfo=UTC), gate.run_slot(manual, REELS))
 
 
+
+class OpenStepTests(unittest.TestCase):
+    """threads-post.yml: a green run that found the account full inside the retry grace does not complete its slot."""
+
+    def runs(self):
+        return [{"id": 7, "status": "completed", "conclusion": "success",
+                 "created_at": "2026-11-14T03:01:00Z", "display_title": "Threads posts · cron 0 3 * * *"}]
+
+    def test_a_run_that_left_the_slot_open_does_not_block_the_retry(self):
+        now = dt.datetime(2026, 11, 14, 3, 50, tzinfo=UTC)
+        slot = dt.datetime(2026, 11, 14, 3, tzinfo=UTC)
+        allowed, _ = gate.should_post(self.runs(), "8", (1, 3, 13), now, slot, lambda run: True)
+        self.assertTrue(allowed)
+        allowed, _ = gate.should_post(self.runs(), "8", (1, 3, 13), now, slot, lambda run: False)
+        self.assertFalse(allowed)
+        allowed, _ = gate.should_post(self.runs(), "8", (1, 3, 13), now, slot)
+        self.assertFalse(allowed)
+
+    def test_run_ran_step_reads_the_step_and_a_failed_read_keeps_the_slot_done(self):
+        from unittest import mock
+        jobs = {"jobs": [{"steps": [{"name": "Open", "conclusion": "success"},
+                                    {"name": "Skipped", "conclusion": "skipped"}]}]}
+        with mock.patch.object(gate, "request_json", return_value=jobs):
+            self.assertTrue(gate.run_ran_step("o/r", {"id": 7}, "t", "Open"))
+            self.assertFalse(gate.run_ran_step("o/r", {"id": 7}, "t", "Skipped"))
+        with mock.patch.object(gate, "request_json", side_effect=OSError("down")), \
+                mock.patch("sys.stdout"):
+            self.assertFalse(gate.run_ran_step("o/r", {"id": 7}, "t", "Open"))
+
+
 if __name__ == "__main__":
     unittest.main()

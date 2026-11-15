@@ -158,7 +158,9 @@ def parse_timestamp(value):
     return dt.datetime.fromisoformat(value.replace("Z", "+00:00"))
 
 
-def should_post(runs, current_run_id, slots, now, current_slot=None):
+def should_post(runs, current_run_id, slots, now, current_slot=None, left_open=None):
+    """``left_open(run)``: a green run of this slot that still left it open (threads-post.yml: the account was
+    full inside the retry grace, threads_cap.py), so it does not complete the slot."""
     if current_slot is None:
         current_slot = slot_start(now, slots)
     for run in runs:
@@ -170,8 +172,38 @@ def should_post(runs, current_run_id, slots, now, current_slot=None):
         ):
             continue
         if run_slot(run, slots) == current_slot:
+            if left_open is not None and left_open(run):
+                continue
             return False, current_slot
     return True, current_slot
+
+
+def run_ran_step(repository, run, token, step_name):
+    """True when a completed run ran (and passed) the step named ``step_name``. A read failure counts as False,
+    so the run keeps completing its slot as before (never an extra post)."""
+    path = f"/repos/{repository}/actions/runs/{urllib.parse.quote(str(run.get('id')), safe='')}/jobs?per_page=30"
+    request = urllib.request.Request(
+        f"{API}{path}",
+        headers={
+            "Accept": "application/vnd.github+json",
+            "Authorization": f"Bearer {token}",
+            "X-GitHub-Api-Version": "2022-11-28",
+        },
+    )
+    try:
+        payload = request_json(request, label="GitHub social slot gate jobs", timeout=30)
+        jobs = payload.get("jobs") if isinstance(payload, dict) else None
+        if not isinstance(jobs, list):
+            raise ValueError("no jobs")
+    except Exception as error:  # noqa: BLE001 - any failure: keep the old behaviour
+        print(f"::warning::slot gate: could not read the steps of run {run.get('id')} ({error.__class__.__name__}); "
+              "it counts as completing its slot")
+        return False
+    return any(
+        isinstance(step, dict) and step.get("name") == step_name and step.get("conclusion") == "success"
+        for job in jobs if isinstance(job, dict)
+        for step in (job.get("steps") or [])
+    )
 
 
 def fetch_runs(repository, workflow, token):
@@ -234,6 +266,11 @@ def main():
         default="",
         help="workflow_dispatch backfill: UTC date YYYY-MM-DD (default latest)",
     )
+    parser.add_argument(
+        "--open-step",
+        default="",
+        help="a green run that ran this step left its slot open (retry later)",
+    )
     args = parser.parse_args()
     slots = parse_slots(args.slots)
     now = dt.datetime.now(dt.timezone.utc)
@@ -241,17 +278,20 @@ def main():
         slots, now, args.schedule.strip(), args.slot_hour.strip(),
         args.slot_date.strip(),
     )
-    runs = fetch_runs(
-        os.environ.get("GITHUB_REPOSITORY", ""),
-        args.workflow,
-        os.environ.get("GITHUB_TOKEN", ""),
-    )
+    repository = os.environ.get("GITHUB_REPOSITORY", "")
+    token = os.environ.get("GITHUB_TOKEN", "")
+    runs = fetch_runs(repository, args.workflow, token)
+    left_open = None
+    if args.open_step:
+        def left_open(run):
+            return run_ran_step(repository, run, token, args.open_step)
     allowed, slot = should_post(
         runs,
         os.environ.get("GITHUB_RUN_ID", ""),
         slots,
         now,
         current,
+        left_open,
     )
     write_output(os.environ.get("GITHUB_OUTPUT", ""), allowed, slot)
     print(

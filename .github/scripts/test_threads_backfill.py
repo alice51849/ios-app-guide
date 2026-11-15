@@ -185,5 +185,44 @@ class PicturePostSlotTests(unittest.TestCase):
         self.assertEqual(dt.date(2026, 10, 16), slot.astimezone(threads_post.TW).date())
 
 
+class CapFullRetryTests(unittest.TestCase):
+    """A green run that found the account full inside the 2-hour grace left its slot open (threads_cap.OPEN_STEP)."""
+
+    def test_a_run_that_left_its_slot_open_is_dispatched_again_inside_the_grace(self):
+        runs = [
+            run("2026-11-14T01:40:00Z", "Threads posts · cron 40 1 * * *"),
+            run("2026-11-14T03:01:00Z", "Threads posts · cron 0 3 * * *"),
+        ]
+        asked = []
+
+        def left_open(r):
+            asked.append(r["display_title"])
+            return "0 3" in r["display_title"]
+
+        now = dt.datetime(2026, 11, 14, 3, 47, tzinfo=UTC)
+        self.assertEqual([dt.datetime(2026, 11, 14, 3, tzinfo=UTC)], B.missing_slots(runs, now, left_open))
+        self.assertEqual([], B.missing_slots(runs, now))  # without the step check the slot counted as done
+
+    def test_a_cap_skip_after_the_grace_completes_the_slot(self):
+        runs = [
+            run("2026-11-14T03:01:00Z", "Threads posts · cron 0 3 * * *"),
+            run("2026-11-14T03:48:00Z", "Threads posts · post slot 3 2026-11-14", event="workflow_dispatch"),
+        ]
+        now = dt.datetime(2026, 11, 14, 11, 47, tzinfo=UTC)
+        left_open = lambda r: r["event"] == "schedule"  # noqa: E731 - only the first run left it open
+        self.assertNotIn(dt.datetime(2026, 11, 14, 3, tzinfo=UTC), B.missing_slots(runs, now, left_open))
+
+    def test_old_runs_cost_no_step_lookup(self):
+        runs = [run("2026-11-13T13:01:00Z", "Threads posts · cron 0 13 * * *")]
+        asked = []
+        B.missing_slots(runs, dt.datetime(2026, 11, 14, 3, 47, tzinfo=UTC), lambda r: asked.append(r) or True)
+        self.assertEqual([], asked)
+
+    def test_a_running_run_still_covers_its_slot(self):
+        runs = [run("2026-11-14T03:01:00Z", "Threads posts · cron 0 3 * * *", status="in_progress", conclusion=None)]
+        now = dt.datetime(2026, 11, 14, 3, 47, tzinfo=UTC)
+        self.assertNotIn(dt.datetime(2026, 11, 14, 3, tzinfo=UTC), B.missing_slots(runs, now, lambda r: True))
+
+
 if __name__ == "__main__":
     unittest.main()

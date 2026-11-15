@@ -346,5 +346,87 @@ class CardGateTest(_Case):
         self.assertIn("::warning::", self.out.getvalue())
 
 
+class FullSlotRetryTest(unittest.TestCase):
+    """2026-11-08..14: a full account at the slot's time is often the day before's post a few minutes short of
+    leaving Threads' rolling 24 hours. The slot is not done then: it stays open for 2 hours, then is a cap skip."""
+
+    import datetime as _dt
+    UTC = _dt.timezone.utc
+
+    def at(self, day, hour, minute=0):
+        return self._dt.datetime(2026, 11, day, hour, minute, tzinfo=self.UTC)
+
+    def run_full(self, slot, now):
+        handle, receipt = tempfile.mkstemp(suffix=".json")
+        os.close(handle)
+        os.unlink(receipt)
+        handle, output = tempfile.mkstemp()
+        os.close(handle)
+        self.addCleanup(lambda: [os.path.exists(f) and os.unlink(f) for f in (receipt, output)])
+        with mock.patch("sys.stdout", new_callable=io.StringIO) as out:
+            action = threads_cap.full_slot(slot, now, receipt, output)
+        outputs = dict(line.split("=", 1) for line in Path(output).read_text().split())
+        body = Path(receipt).read_text() if os.path.exists(receipt) else ""
+        return action, outputs, body, out.getvalue()
+
+    def test_full_at_the_slot_is_not_done_and_retries_inside_the_grace(self):
+        for slot, now in ((self.at(14, 3), self.at(14, 3, 2)), (self.at(12, 13), self.at(12, 13, 4))):
+            action, outputs, receipt, printed = self.run_full(slot, now)
+            self.assertEqual(threads_cap.RETRY, action)
+            self.assertEqual({"retry": "true", "capskip": "false"}, outputs)
+            self.assertEqual("", receipt)  # no skip recorded yet
+            self.assertNotIn("::error::", printed)
+
+    def test_the_next_backup_inside_the_grace_is_the_retry(self):
+        self.assertEqual(self.at(14, 3, 47), threads_cap.next_backup(self.at(14, 3, 2)))
+        self.assertEqual(self.at(12, 14, 47), threads_cap.next_backup(self.at(12, 13, 4)))
+
+    def test_after_the_last_retry_inside_the_grace_the_slot_is_a_cap_skip_with_a_receipt(self):
+        # 03:47 backup for 03:00 (next backup 11:47 > 05:00) and 14:47 for 13:00 (next 17:47 > 15:00).
+        for slot, now in ((self.at(14, 3), self.at(14, 3, 48)), (self.at(12, 13), self.at(12, 14, 48)),
+                          (self.at(12, 13), self.at(12, 15, 30))):
+            action, outputs, receipt, printed = self.run_full(slot, now)
+            self.assertEqual(threads_cap.SKIP, action)
+            self.assertEqual({"retry": "false", "capskip": "true"}, outputs)
+            row = json.loads(receipt)
+            self.assertEqual(slot.isoformat(), row["slot"])
+            self.assertEqual("cap_full_after_grace", row["reason"])
+            self.assertEqual(3, row["cap"])
+            self.assertIn("滿額跳過", printed)
+
+    def test_a_backup_too_close_to_catch_the_run_finished_is_not_counted(self):
+        # 03:45: the 03:47 backup would still see this run running, so the next one (11:47) is past the grace.
+        self.assertEqual(threads_cap.SKIP, threads_cap.full_slot_action(self.at(14, 3), self.at(14, 3, 45)))
+
+    def test_backup_times_match_clip_backup_crons(self):
+        import re
+        text = (Path(__file__).resolve().parents[1] / "workflows" / "clip-backup.yml").read_text(encoding="utf-8")
+        crons = re.findall(r"- cron: '(\d+) (\d+) \* \* \*'", text)
+        self.assertEqual(sorted((int(h), int(m)) for m, h in crons), sorted(threads_cap.BACKUP_TIMES))
+
+    def test_the_open_step_name_is_the_workflow_step_and_the_gate_flag(self):
+        text = (Path(__file__).resolve().parents[1] / "workflows" / "threads-post.yml").read_text(encoding="utf-8")
+        self.assertIn(f'- name: "{threads_cap.OPEN_STEP}"', text)
+        self.assertIn(f'--open-step "{threads_cap.OPEN_STEP}"', text)
+        self.assertIn("if: steps.room.outputs.retry == 'true'", text)
+
+    def test_merge_skip_keeps_one_row_per_slot(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            skips, receipt = Path(tmp, "skips.json"), Path(tmp, "r.json")
+            for minute in (48, 50):
+                receipt.write_text(json.dumps(threads_cap.skip_receipt(self.at(14, 3), self.at(14, 3, minute))))
+                rows = threads_cap.merge_skip(receipt, skips)
+            self.assertEqual(1, len(rows))
+            self.assertEqual(json.loads(skips.read_text()), rows)
+
+    def test_a_retry_never_lifts_the_cap(self):
+        # The retried run reads the same count: still 3 is still a skip, so no 4th post in any 24 hours.
+        self.assertEqual(3, threads_cap.ACCOUNT_DAILY_CAP)
+        fake = FakeGraph(3)
+        with mock.patch("sys.stdout", new_callable=io.StringIO):
+            self.assertEqual(threads_cap.FULL, threads_cap.account_status("tok", opener=fake))
+            self.assertEqual(threads_cap.ROOM, threads_cap.account_status("tok", opener=FakeGraph(2)))
+
+
 if __name__ == "__main__":
     unittest.main()

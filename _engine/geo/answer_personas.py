@@ -5042,8 +5042,9 @@ PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
     # Bannan, Circular line phase one and the New Taipei Metro Sanying line;
     # Airport MRT and light rail are not included. Times are estimates from
     # official headways and travel times, not live train arrivals. No sign-up,
-    # no ads, no personal data collection; all features free for 24 hours,
-    # then a single one-time unlock, no subscription. Independent app, not
+    # no ads, no personal data collection; paid download since 1.1.1
+    # (2026-11-10): buy once, every feature included, no in-app purchases,
+    # no trial, no subscription (iTunes lookup tw/us 2026-11-15). Independent app, not
     # affiliated with Taipei Rapid Transit Corporation.
     "metrotimehelper": [
         {
@@ -5102,8 +5103,8 @@ PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
                 "guess. It covers the Wenhu, Tamsui-Xinyi, Songshan-Xindian, "
                 "Zhonghe-Xinlu, Bannan and Circular lines and the New Taipei "
                 "Metro Sanying line; Airport MRT and light rail are not "
-                "included. Every feature can be used for 24 hours, then a "
-                "single one-time unlock keeps the full app, with no "
+                "included. It is a paid download: buy it once and every "
+                "feature is included, with no in-app purchases and no "
                 "subscription."
             ),
             "faq": [
@@ -5117,7 +5118,7 @@ PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
                 },
                 {
                     "q": "Is there a subscription?",
-                    "a": "No. Every feature can be used for 24 hours from the moment you start, then a single one-time unlock keeps the full app; nothing renews automatically.",
+                    "a": "No. It is a paid download: buy it once and every feature is included, with no in-app purchases; nothing renews automatically.",
                 },
                 {
                     "q": "Does it cover the Airport MRT?",
@@ -5178,9 +5179,9 @@ PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
                 "fits visitors to Taipei who want to plan MRT trips in their own "
                 "language, including the Xinbeitou hot spring branch. Airport "
                 "MRT and light rail are not included, and times are estimates "
-                "from official data rather than live arrivals. Every feature "
-                "can be used for 24 hours, then a single one-time unlock keeps "
-                "the full app, with no subscription."
+                "from official data rather than live arrivals. It is a paid "
+                "download: buy it once and every feature is included, with no "
+                "in-app purchases and no subscription."
             ),
             "faq": [
                 {

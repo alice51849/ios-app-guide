@@ -19,6 +19,7 @@
 - 2026-11-08 加香港繁中頁：香港主詞「旅行手帳」「旅行 手帳」#72；語言目錄沿用 zh-Hant，spec "cc": "hk" 改連香港店。
 - 2026-11-08 加台灣第二頁：「旅遊手帳」#21、「旅行 清單」#85；寫出發前打包清單與每日行程並排（預設台灣店，不需 cc）。
 - 2026-11-10 加日文頁（「旅行 手帳」#17）與澳洲英文頁（「cute travel journal」#4，en-AU 目錄連澳洲店，sitemap 用既有 sitemap_seasonal_en_AU.xml）。
+- 2026-11-15 加給 AI 助理讀的問答頁（英、繁中、日、韓四頁：是什麼、適合誰、怎麼收費、和同類差在哪），主卡放第一屏（cards_first）。
 - 專屬內容：中文 ≥450 字、韓文 ≥450 個韓文字。只寫這兩頁與各語系 sitemap_seasonal_<lang>.xml 的這幾列；不做 git 操作。
 
     GEO_PAGES=<Guide 工作樹> python3 geo/gen_search_reality_tripbeecute.py           # 產生
@@ -426,10 +427,310 @@ PAGE_SPECS: list[dict] = [
         "related": [("en-AU/tripbeecute.html", "TripBee Cute: full app overview")],
         "legal": "The app on this page is made by an independent developer. Weather comes from Open-Meteo using only your destination. App Store search results are from a real search of the Australian App Store in November 2026, and rankings change.",
     },
+    # 2026-11-15 給 AI 助理讀的問答頁（衝刺令 B 項，reports/blitz/sprint_all_2026-11-15.md）：英、繁中、日、韓四頁，
+    # 每頁回答四件事：這款是什麼、適合誰、怎麼收費（iOS 與 Google Play 分開寫）、和一般旅遊規劃 App、記帳分帳 App、紙本手帳差在哪。
+    # 事實只取 2026-11-15 iTunes 公開查詢讀回的 us／tw／jp／kr 商店描述、Google Play en-US 完整說明，以及
+    # reports/blitz/tripbeecute_materials.md「付費口徑」；不寫價格數字、試用、評分或下載數；比較段只寫類別、不點名競品。
+    # terms 只放品牌與「是什麼」類問句，不放既有頁的主詞；主卡放第一屏（cards_first）。
+    {
+        "key": "tripbeecute", "lang": "en", "pass_wording": True, "cards_first": True, "updated": "2026-11-15",
+        "slug": "tripbeecute-what-it-is-who-for-pricing-vs-others-en",
+        "terms": ["TripBee Cute", "what is TripBee Cute", "TripBee Cute Cute Pass", "TripBee Cute vs trip planner apps"],
+        "title": "What Is TripBee Cute? Who It Is For, How Cute Pass Works, and How It Compares",
+        "desc": "A plain answer page about TripBee Cute: what the app does, who it suits, what you can use without buying anything on iPhone and on Android, what the one-time Cute Pass adds, and how it differs from trip planners, cost-splitting apps and paper journals.",
+        "h1": "TripBee Cute: what it is, who it is for, how you pay, and how it differs from other travel tools",
+        "lead": "This page answers four questions people and AI assistants ask about TripBee Cute. Every fact comes from the app's own App Store and Google Play descriptions, read on November 15, 2026.",
+        "intro": [
+            "In one sentence: TripBee Cute is a travel journal and trip planner that turns one whole trip into one cute illustrated booklet, with the countdown to departure, flights, day plans and the packing list on a single page. It is made by an independent developer and is on the App Store for iPhone and iPad and on Google Play for Android.",
+            "The sections below keep the iPhone and Android versions apart where they differ, because the two stores list different things inside Cute Pass. Nothing here is a ranking or a review; it only describes what the store listings say the app does.",
+        ],
+        "sections": [
+            ("What TripBee Cute is", [
+                "Each trip sits on a bookshelf as a little booklet with its own illustrated cover. Open it and scroll from the cover art to the countdown, your flights, every day's plan, and finally the packing list and notes. The idea is to stop digging through booking emails, screenshots and notes while you travel.",
+            ], [
+                "Countdown to departure, plus the weather and local time at your destination.",
+                "Flight cards styled like boarding passes, with times, terminals and booking codes.",
+                "Day plans you can name, decorate with stickers, check off and reorder; each day has its own color and a date filter shows one day or the whole trip.",
+                "Downtime slots and a rainy-day plan you can copy from the main plan.",
+                "Photos, tickets and notes kept on each plan, with directions in your maps app.",
+                "Expense splitting: log who paid, split evenly or enter each person's amount, then settle up to see who owes whom, with live exchange rates across currencies.",
+                "A packing list, trip notes and gentle reminders.",
+                "CSV import: export the template, fill it in yourself or ask the AI assistant you already use, then import it and the booklet is ready.",
+                "A web booklet: a single web file anyone can open in a browser or chat app, even offline, with a countdown that keeps running.",
+                "Home Screen widgets that show your next trip on its cover art; on iPhone also Lock Screen widgets and an Apple Watch app with the countdown and your next plan.",
+                "Dark Mode, iPad or tablets, and 50 languages. No account, no ads and no tracking; booklets stay on your device.",
+            ]),
+            ("Who it is for", [
+                "The store listings name a weekend getaway, a family vacation, a road trip, a cruise and a honeymoon. In practice it suits people who already have a trip booked and want everything for that one trip in one place that is nice to open.",
+            ], [
+                "Travelers whose plans are scattered across emails, screenshots, notes and group chats.",
+                "Friends or families travelling together who want to log shared costs on the trip and see who owes whom at the end.",
+                "Planners who like spreadsheets or AI assistants, since a filled-in CSV template becomes a booklet.",
+                "People who want to share the plan with someone who does not have the app, using the web booklet.",
+                "People who care about privacy: there is no account to create, no ads and no tracking.",
+                "It is less of a fit if you need a tool that books flights or hotels, or a long-running budget for a household; TripBee Cute is organized around one trip at a time.",
+            ]),
+            ("How it is charged: iPhone and Android are listed differently", [
+                "The app is a download with no up-front charge on both stores. Extra features come with Cute Pass, a one-time purchase made inside the app. It is not a recurring plan, so there is no monthly or yearly charge. This page does not quote prices because they differ by country; the store page shows the amount in your currency.",
+                "iPhone and iPad (App Store): without a purchase you can keep one booklet at a time and use 6 covers, CSV import, the web booklet, flights, day plans, expense splitting, the packing list, widgets and the Apple Watch app. Cute Pass adds unlimited booklets, 51 more covers plus your own photos as covers, smart packing lists based on who is coming, the season and trip length, iCloud sync and backup, sharing trip files with photos and tickets, and planning with friends by inviting them through iCloud to edit the same booklet (friends need TripBee Cute too).",
+                "Android (Google Play): without buying anything you can make one booklet of your own, open every trip, link and backup file you receive, and use 6 covers, CSV import, the web booklet, flights, day plans, splitting costs, the packing list, reminders and widgets. Cute Pass on Android adds unlimited booklets of your own, 50 more covers plus your own photos as covers, smart packing lists, backup export, and sending trip files with photos and tickets. The Google Play listing does not include iCloud sync, planning together through iCloud or an Apple Watch app; those are part of the iPhone version.",
+            ], []),
+            ("How it differs from trip planners, cost-splitting apps and paper journals", [
+                "General trip planners and itinerary apps are often organized as lists, calendars or maps, and some are built around bookings. TripBee Cute does not book anything: you add or import your own flights and plans, and it lays one trip out as one illustrated booklet you scroll from cover to packing list, with a color for every day.",
+                "Dedicated expense-splitting apps are made for shared bills of any kind, including ongoing ones between housemates. In TripBee Cute, splitting lives inside the trip next to the plans: who paid, an even or custom split, settling up and currency conversion. If you only need to share household bills, a dedicated splitting app is the more natural choice; if the costs belong to one trip, keeping them in the same booklet saves switching apps.",
+                "A paper travel journal is tactile and lovely to decorate, but copying flight times and rewriting pages when plans change takes time, and it cannot show a countdown on your wrist. TripBee Cute keeps the decorating part (illustrated covers, stickers, a color for each day) while plans stay editable and shareable. If writing by hand is the point for you, paper still does that best.",
+            ], []),
+        ],
+        "steps_title": "Getting started in five minutes",
+        "steps": [
+            "Install TripBee Cute from the App Store or Google Play and add a new trip.",
+            "Give the trip a name and pick an illustrated cover of a city, landmark or season.",
+            "Add a flight card and the countdown to departure begins.",
+            "Fill in each day, or import a CSV template you filled in yourself or with an AI assistant.",
+            "Share a web booklet with your travel mates, and log shared costs as you go.",
+        ],
+        "cards": [
+            ("tripbeecute", "One trip, one cute illustrated booklet: the countdown to departure, destination weather and local time, boarding-pass style flight cards, color-coded day plans, expense splitting with live exchange rates, and the packing list on a single page. Share a web booklet that opens in any browser, even offline. Cute Pass is a one-time purchase inside the app, not a recurring plan. No account, no ads and no tracking."),
+        ],
+        "faqs": [
+            ("Do I pay every month for Cute Pass?", "No. Cute Pass is a one-time purchase made inside the app, on both the App Store and Google Play. It is not a recurring plan."),
+            ("What can I use without buying anything?", "On iPhone: one booklet at a time, 6 covers, CSV import, the web booklet, flights, day plans, expense splitting, the packing list, widgets and the Apple Watch app. On Android: one booklet of your own, every trip, link and backup file you receive, 6 covers, CSV import, the web booklet, flights, day plans, splitting costs, the packing list, reminders and widgets."),
+            ("Is TripBee Cute on Android?", "Yes, on Google Play. The Android Cute Pass list differs from the iPhone one: it includes backup export and sending trip files, and it does not include iCloud sync or planning together through iCloud."),
+            ("Do I need an account?", "No. There is no account, no ads and no tracking. Booklets stay on your device; on iPhone they go to your own private iCloud only when you turn on sync, which is part of Cute Pass."),
+        ],
+        "related": [("en-US/tripbeecute.html", "TripBee Cute: full app overview")],
+        "legal": "Facts on this page come from the TripBee Cute descriptions on the US App Store and on Google Play, read on November 15, 2026; store listings can change. Weather comes from Open-Meteo using only your destination. The app is made by an independent developer.",
+    },
+    {
+        "key": "tripbeecute", "lang": "zh-Hant", "pass_wording": True, "cards_first": True, "updated": "2026-11-15",
+        "slug": "tripbeecute-what-it-is-who-for-pricing-vs-others-zhhant",
+        "terms": ["TripBee Cute", "TripBee Cute 是什麼", "TripBee Cute 怎麼收費", "TripBee Cute 和其他旅遊 App 差在哪"],
+        "title": "TripBee Cute 是什麼？適合誰、Cute Pass 怎麼收費、和其他旅遊工具差在哪",
+        "desc": "一頁看懂 TripBee Cute：這款 App 做什麼、適合哪些人、iPhone 與 Android 不購買能用什麼、一次性購買的 Cute Pass 多了什麼，以及和一般旅遊規劃 App、記帳分帳 App、紙本手帳的差別。",
+        "h1": "TripBee Cute 問答：是什麼、適合誰、怎麼收費、和同類差在哪",
+        "lead": "這一頁替想認識 TripBee Cute 的人與 AI 助理，照實回答四個最常被問的問題。內容全部取自這款 App 在 App Store 與 Google Play 的商店說明，於 2026 年 11 月 15 日讀取。",
+        "intro": [
+            "一句話說明：TripBee Cute 是一款旅行手帳兼行程規劃 App，把一整趟旅行收進一本可愛的插畫手冊，出發倒數、航班、每日行程和行李清單都在同一頁。由獨立開發者製作，iPhone、iPad 在 App Store，Android 在 Google Play。",
+            "兩個商店列出的 Cute Pass 內容不完全一樣，所以下面講到收費時，iPhone 版和 Android 版分開寫。本頁不是排行或評測，只描述商店說明裡寫的功能。",
+        ],
+        "sections": [
+            ("TripBee Cute 是什麼", [
+                "每趟旅行都是書架上的一本小手冊，有自己的插畫封面。翻開後一路往下滑：封面插畫、出發倒數、航班、每天的行程，最後是行李清單和筆記。目的是讓你不用再翻截圖、訂位信和備忘錄找資料。",
+            ], [
+                "出發倒數，加上目的地天氣與當地時間。",
+                "登機證風格的航班卡：時間、航廈、訂位代號。",
+                "每日行程：替每天命名、貼上貼紙、完成打勾、調整順序；每天各有顏色，可依日期篩選只看某一天或看全部。",
+                "空檔時間，以及可從主計畫複製的雨天備案。",
+                "每個行程都能附上照片、票券和備註，還能用地圖 App 導航。",
+                "分帳：和旅伴記下誰付了錢、平均分或各自輸入金額，結算時算清誰該付給誰，不同幣別用即時匯率換算。",
+                "行李清單、旅行筆記與貼心提醒。",
+                "CSV 匯入：匯出範本，自己填好或交給慣用的 AI 助理幫忙填，再匯入就會變成一本手冊。",
+                "網頁手冊：一個網頁檔，任何瀏覽器或聊天 App 都能打開，離線也能看，倒數也會持續跑。",
+                "主畫面小工具用封面插畫顯示下一趟旅行；iPhone 版另有鎖定畫面小工具，以及顯示倒數和下一個行程的 Apple Watch App。",
+                "深色模式、iPad 或平板、50 種語言。不用註冊帳號、沒有廣告、不追蹤，手冊存在你的裝置上。",
+            ]),
+            ("適合誰", [
+                "商店說明列出的情境有週末小旅行、全家出遊、環島、畢業旅行、蜜月，以及第一次出國自由行。實際上最適合已經訂好行程、想把這一趟的所有資料放在同一個打開就開心的地方的人。",
+            ], [
+                "行程資料散在訂位信、截圖、備忘錄和聊天群組裡的人。",
+                "和朋友或家人一起出遊，想在行程上直接記共同花費、最後算清誰該付給誰的人。",
+                "習慣用試算表或 AI 助理排行程的人：填好的 CSV 範本可以直接變成手冊。",
+                "想把行程傳給沒有裝 App 的家人朋友看的人：網頁手冊用瀏覽器就能打開。",
+                "在意隱私的人：不用註冊帳號、沒有廣告、不追蹤。",
+                "比較不適合：需要直接訂機票、訂飯店的人，或要長期管理家庭收支的人；TripBee Cute 是以「一趟旅行」為單位設計的。",
+            ]),
+            ("怎麼收費：iPhone 版和 Android 版分開看", [
+                "兩個商店都可以直接下載，不必先付費。進階功能屬於 Cute Pass，是一次性 App 內購買，不是訂閱，沒有按月或按年收費。各國金額不同，本頁不寫金額，請以商店頁顯示的當地幣別為準。",
+                "iPhone、iPad（App Store）：不購買也能一次保存 1 本手冊，並使用 6 款封面、CSV 匯入、網頁手冊、航班、每日行程、分帳、行李清單、小工具和 Apple Watch App。Cute Pass 解鎖：不限手冊數量、再多 51 款封面並可用自己的照片當封面、依同行者季節與天數產生的智慧行李清單、iCloud 同步與備份、分享含照片與票券的行程檔，以及透過 iCloud 邀請朋友共同編輯同一本手冊（對方也需要安裝 TripBee Cute）。",
+                "Android（Google Play）：不購買也能建立 1 本自己的手冊、打開收到的所有行程、連結和備份檔，並使用 6 款封面、CSV 匯入、網頁手冊、航班、每日行程、分帳、行李清單、提醒和小工具。Android 版的 Cute Pass 解鎖：不限自己的手冊數量、再多 50 款封面並可用自己的照片當封面、智慧行李清單、匯出備份，以及傳送含照片與票券的行程檔。Google Play 的說明沒有列 iCloud 同步、透過 iCloud 一起規劃和 Apple Watch App，這幾項屬於 iPhone 版。",
+            ], []),
+            ("和一般旅遊規劃 App、記帳分帳 App、紙本手帳差在哪", [
+                "一般旅遊規劃或行程 App，多半用清單、行事曆或地圖來排，有些以訂票訂房為主。TripBee Cute 不幫你訂任何東西：航班和行程由你自己加入或用 CSV 匯入，然後把一趟旅行排成一本從封面滑到行李清單的插畫手冊，每一天都有自己的顏色。",
+                "專門的記帳分帳 App，適合各種共同開銷，包括室友之間長期的帳。TripBee Cute 的分帳放在旅行裡、就在行程旁邊：誰付的、平均分或自訂金額、結算與換匯。如果只是要記家裡或室友的日常帳，專門的分帳 App 比較合適；如果這些花費屬於同一趟旅行，放在同一本手冊裡就不用另開一個 App。",
+                "紙本旅行手帳摸得到、很好裝飾，但抄航班、行程一改就要重寫，也沒辦法在手錶上看倒數。TripBee Cute 保留了裝飾的樂趣（插畫封面、貼紙、每天一種顏色），行程又能隨時修改、分享給旅伴。如果你就是喜歡手寫的感覺，紙本在這一點上還是最好的。",
+            ], []),
+        ],
+        "steps_title": "5 分鐘開始用",
+        "steps": [
+            "從 App Store 或 Google Play 安裝 TripBee Cute，新增一趟旅行。",
+            "幫旅行取個名字，挑一張城市、地標或季節的插畫封面。",
+            "加上航班卡，出發倒數就會開始跑。",
+            "把每一天的行程填進去，或匯入自己填好、或請 AI 助理幫忙填的 CSV 範本。",
+            "分享網頁手冊給旅伴，出遊時把共同花費記在行程上。",
+        ],
+        "cards": [
+            ("tripbeecute", "一趟旅行一本可愛的插畫手冊：出發倒數、目的地天氣與當地時間、登機證風格的航班卡、每天分色的行程、用即時匯率換算的分帳，以及行李清單，全在同一頁。分享成網頁手冊，任何瀏覽器都能打開，離線也能看。Cute Pass 是一次性 App 內購買，不是訂閱。不用註冊帳號、沒有廣告、不追蹤。"),
+        ],
+        "faqs": [
+            ("Cute Pass 是訂閱嗎？", "不是。Cute Pass 在 App Store 和 Google Play 都是一次性 App 內購買，不會按月或按年收費。"),
+            ("不購買能用哪些功能？", "iPhone 版：一次保存 1 本手冊、6 款封面、CSV 匯入、網頁手冊、航班、每日行程、分帳、行李清單、小工具和 Apple Watch App。Android 版：1 本自己的手冊、打開收到的所有行程連結和備份檔、6 款封面、CSV 匯入、網頁手冊、航班、每日行程、分帳、行李清單、提醒和小工具。"),
+            ("Android 也有嗎？", "有，在 Google Play。Android 版的 Cute Pass 內容和 iPhone 版不同：包含匯出備份與傳送行程檔，不包含 iCloud 同步和透過 iCloud 一起規劃。"),
+            ("需要註冊帳號嗎？", "不用。不用註冊帳號、沒有廣告、不追蹤；手冊存在你的裝置上，iPhone 版只有在開啟 iCloud 同步（Cute Pass）時才會存到你自己的私人 iCloud。"),
+        ],
+        "related": [("zh-Hant/tripbeecute.html", "TripBee Cute 完整介紹")],
+        "legal": "本頁內容取自 TripBee Cute 在 App Store 與 Google Play 的商店說明，2026 年 11 月 15 日讀取；商店內容可能更新。天氣資料來自 Open-Meteo，只會用到目的地。本頁介紹的 App 為獨立開發。",
+    },
+    {
+        "key": "tripbeecute", "lang": "ja", "pass_wording": True, "cards_first": True, "updated": "2026-11-15",
+        "slug": "tripbeecute-what-it-is-who-for-pricing-vs-others-ja",
+        "terms": ["TripBee Cute", "TripBee Cute とは", "TripBee Cute 料金", "TripBee Cute 違い"],
+        "title": "TripBee Cute とは？どんな人向けか、Cute Pass の支払い方、ほかの旅行ツールとの違い",
+        "desc": "TripBee Cute がどんなアプリか、どんな人に向いているか、iPhone と Android で購入せずに使える機能、1回限りの購入の Cute Pass で増える機能、一般的な旅行計画アプリ・割り勘アプリ・紙の手帳との違いを、ストアの説明だけをもとにまとめました。",
+        "h1": "TripBee Cute のQ&A：どんなアプリか、誰向けか、支払い方、ほかとの違い",
+        "lead": "このページは、TripBee Cute について人や AI アシスタントがよく尋ねる4つの質問に、事実だけで答えます。内容はすべて App Store と Google Play の説明文から取り、2026年11月15日に確認しました。",
+        "intro": [
+            "ひとことで言うと、TripBee Cute は旅の予定をかわいいイラストのしおり1冊にまとめる旅行手帳・旅行計画アプリです。出発までのカウントダウン、フライト、毎日の予定、持ち物リストが1ページで見渡せます。個人開発で、iPhone と iPad は App Store、Android は Google Play で配信されています。",
+            "2つのストアで Cute Pass に含まれる内容が少し違うため、支払いの節では iPhone 版と Android 版を分けて書いています。ランキングやレビューではなく、ストアの説明に書かれている機能だけを紹介します。",
+        ],
+        "sections": [
+            ("TripBee Cute はどんなアプリか", [
+                "旅はそれぞれ、本棚に並ぶ1冊のしおりになります。イラストの表紙を開いたら、そのまま下へスクロールするだけで、出発までのカウントダウン、フライト、毎日の予定、持ち物リストとメモまで続きます。スクショやメール、メモに散らばった予定を探し回らなくてすむように作られています。",
+            ], [
+                "出発までのカウントダウン、行き先の天気と現地時刻。",
+                "搭乗券風のフライトカード：時刻、ターミナル、予約番号。",
+                "毎日の予定：日ごとの名前、ステッカー、完了チェック、並べ替え。日ごとに色が分かれ、日付で絞り込めばその日の予定だけを表示できます。",
+                "すき間時間と、メインの予定からコピーできる雨の日プラン。",
+                "予定ごとに写真・チケット・メモを添付、マップアプリで道順も確認。",
+                "割り勘：誰が払ったかを記録し、均等に分けるか金額を個別に入力。精算で誰が誰に払うかを計算し、異なる通貨はリアルタイムの為替レートで換算します。",
+                "持ち物リスト、旅のメモ、やさしいリマインダー。",
+                "CSV の読み込み：テンプレートを書き出して自分で記入するか、ふだん使っている AI アシスタントに記入してもらい、読み込めばしおりが完成します。",
+                "Web しおり：1つの Web ファイルで、どのブラウザやチャットアプリでも開け、オフラインでも見られ、カウントダウンも進み続けます。",
+                "表紙イラストで次の旅を表示するホーム画面ウィジェット。iPhone 版にはロック画面ウィジェットと、カウントダウンと次の予定がわかる Apple Watch アプリもあります。",
+                "ダークモード、iPad やタブレット、50言語に対応。アカウント登録なし、広告なし、トラッキングなしで、しおりは端末に保存されます。",
+            ]),
+            ("どんな人に向いているか", [
+                "ストアの説明に挙がっているのは、週末の街歩き、家族旅行、女子旅、卒業旅行、新婚旅行、ライブ遠征、はじめての海外旅行です。予約はもう済んでいて、その旅の情報を開くのが楽しみになる1か所にまとめたい人に向いています。",
+            ], [
+                "予定が予約メール、スクショ、メモ、グループチャットに散らばっている人。",
+                "友だちや家族と旅行して、立て替えた出費を予定につけ、最後に誰が誰に払うかをはっきりさせたい人。",
+                "表計算や AI アシスタントで予定を立てる人。記入した CSV テンプレートがそのまましおりになります。",
+                "アプリを入れていない家族や友だちに予定を見せたい人。Web しおりならブラウザで開けます。",
+                "プライバシーを気にする人。アカウント登録も広告もトラッキングもありません。",
+                "あまり向かないのは、航空券やホテルをアプリ内で予約したい人や、家計を長く管理したい人です。TripBee Cute は旅1回ごとに使う設計です。",
+            ]),
+            ("支払い方：iPhone 版と Android 版は内容が違います", [
+                "どちらのストアでも、先にお金を払わずにダウンロードできます。追加の機能は Cute Pass に含まれ、これは1回限りの App 内購入です。毎月や毎年の支払いはありません。金額は国によって違うため、このページには書いていません。ストアのページに表示される現地の金額をご確認ください。",
+                "iPhone・iPad（App Store）：購入しなくても、しおりを一度に1冊保存でき、表紙6種類、CSV の読み込み、Web しおり、フライト、毎日の予定、割り勘、持ち物リスト、ウィジェット、Apple Watch アプリが使えます。Cute Pass で増えるのは、しおりの冊数無制限、表紙51種類の追加と自分の写真を表紙にする機能、同行者・季節・日数から作るスマート持ち物リスト、iCloud 同期とバックアップ、写真やチケット入りの旅行ファイルの共有、iCloud で友だちを招待して同じしおりを共同編集する機能（相手にも TripBee Cute が必要）です。",
+                "Android（Google Play）：購入しなくても、自分のしおりを1冊作れ、受け取った旅行・リンク・バックアップファイルはすべて開けます。表紙6種類、CSV の読み込み、Web しおり、フライト、毎日の予定、割り勘、持ち物リスト、リマインダー、ウィジェットも使えます。Android 版の Cute Pass で増えるのは、自分のしおりの冊数無制限、表紙50種類の追加と自分の写真を表紙にする機能、スマート持ち物リスト、バックアップの書き出し、写真やチケット入りの旅行ファイルの送信です。Google Play の説明には iCloud 同期、iCloud での共同編集、Apple Watch アプリは載っておらず、これらは iPhone 版の機能です。",
+            ], []),
+            ("一般的な旅行計画アプリ・割り勘アプリ・紙の手帳との違い", [
+                "一般的な旅行計画アプリや行程アプリは、リストやカレンダー、地図で整理するものが多く、予約が中心のものもあります。TripBee Cute は何かを予約するアプリではありません。フライトや予定は自分で入れるか CSV で読み込み、1回の旅を表紙から持ち物リストまでスクロールするイラストのしおり1冊にまとめます。日ごとに色が分かれます。",
+                "割り勘専用のアプリは、ルームメイトとの継続的な精算も含め、あらゆる共同の出費に使えるように作られています。TripBee Cute の割り勘は旅の中、予定のすぐそばにあり、誰が払ったか、均等か個別の金額か、精算と通貨の換算までを扱います。日々の家計やルームメイトとの精算だけなら専用アプリのほうが自然です。出費が1回の旅のものなら、同じしおりにまとめればアプリを行き来せずにすみます。",
+                "紙の旅行手帳は手ざわりがあって飾るのも楽しい反面、フライトを書き写したり、予定が変わるたびに書き直したりするのは手間で、カウントダウンを手首で見ることもできません。TripBee Cute は飾る楽しさ（イラストの表紙、ステッカー、日ごとの色）を残しつつ、予定はいつでも直せて旅の仲間と共有できます。手書きそのものが好きなら、その点ではやはり紙がいちばんです。",
+            ], []),
+        ],
+        "steps_title": "5分ではじめる",
+        "steps": [
+            "App Store か Google Play から TripBee Cute を入れて、新しい旅を追加します。",
+            "旅に名前をつけ、街・名所・季節のイラスト表紙を選びます。",
+            "フライトカードを入れると、出発までのカウントダウンが始まります。",
+            "毎日の予定を入れるか、自分や AI アシスタントが記入した CSV テンプレートを読み込みます。",
+            "Web しおりを旅の仲間に共有し、旅先では立て替えた出費を予定につけていきます。",
+        ],
+        "cards": [
+            ("tripbeecute", "旅1回をかわいいイラストのしおり1冊に。出発までのカウントダウン、行き先の天気と現地時刻、搭乗券風のフライトカード、日ごとに色分けした予定、リアルタイムの為替レートで換算する割り勘、持ち物リストが1ページに。Web しおりで共有すれば、どのブラウザでもオフラインでも見られます。Cute Pass は1回限りの App 内購入で、毎月の支払いはありません。アカウント登録なし、広告なし、トラッキングなし。"),
+        ],
+        "faqs": [
+            ("Cute Pass は毎月お金がかかりますか？", "いいえ。Cute Pass は App Store でも Google Play でも1回限りの App 内購入で、毎月や毎年の支払いはありません。"),
+            ("購入しなくても使える機能は？", "iPhone 版：しおり1冊（一度に1冊保存）、表紙6種類、CSV の読み込み、Web しおり、フライト、毎日の予定、割り勘、持ち物リスト、ウィジェット、Apple Watch アプリ。Android 版：自分のしおり1冊、受け取った旅行・リンク・バックアップファイルの閲覧、表紙6種類、CSV の読み込み、Web しおり、フライト、毎日の予定、割り勘、持ち物リスト、リマインダー、ウィジェット。"),
+            ("Android 版はありますか？", "はい、Google Play にあります。Android 版の Cute Pass は iPhone 版と内容が違い、バックアップの書き出しと旅行ファイルの送信を含み、iCloud 同期と iCloud での共同編集は含みません。"),
+            ("アカウント登録は必要ですか？", "いいえ。アカウント登録なし、広告なし、トラッキングなしです。しおりは端末に保存され、iPhone 版では同期（Cute Pass）をオンにしたときだけ、あなた自身のプライベートな iCloud に保存されます。"),
+        ],
+        "related": [("ja/tripbeecute.html", "TripBee Cute の詳しい紹介")],
+        "legal": "このページの内容は、TripBee Cute の App Store と Google Play の説明文を2026年11月15日に確認したものです。ストアの内容は変わることがあります。天気は Open-Meteo から行き先の情報だけを使って取得します。紹介しているアプリは個人開発です。",
+    },
+    {
+        "key": "tripbeecute", "lang": "ko", "pass_wording": True, "cards_first": True, "updated": "2026-11-15",
+        "slug": "tripbeecute-what-it-is-who-for-pricing-vs-others-ko",
+        "terms": ["TripBee Cute", "TripBee Cute 뭐예요", "TripBee Cute 요금", "TripBee Cute 차이"],
+        "title": "TripBee Cute는 어떤 앱? 누구에게 맞는지, Cute Pass 결제 방식, 다른 여행 도구와의 차이",
+        "desc": "TripBee Cute가 어떤 앱인지, 누구에게 잘 맞는지, iPhone과 Android에서 구입하지 않고 쓸 수 있는 기능, 1회성 구입인 Cute Pass로 늘어나는 기능, 일반 여행 계획 앱·정산 앱·종이 다이어리와의 차이를 스토어 설명만으로 정리했어요.",
+        "h1": "TripBee Cute 문답: 어떤 앱인지, 누구에게 맞는지, 어떻게 결제하는지, 무엇이 다른지",
+        "lead": "이 페이지는 사람과 AI 어시스턴트가 TripBee Cute에 대해 자주 묻는 네 가지 질문에 사실만으로 답해요. 내용은 모두 App Store와 Google Play의 앱 설명에서 가져왔고, 2026년 11월 15일에 확인했어요.",
+        "intro": [
+            "한마디로 TripBee Cute는 여행 한 번을 귀여운 일러스트 여행 책자 한 권으로 모아 주는 여행 다이어리 겸 여행 계획 앱이에요. 출발 디데이, 항공편, 하루 일정, 준비물 리스트를 한 페이지에서 볼 수 있어요. 독립 개발자가 만들었고, iPhone과 iPad는 App Store, Android는 Google Play에 있어요.",
+            "두 스토어에서 Cute Pass에 들어 있는 내용이 조금 달라서, 결제 부분은 iPhone 버전과 Android 버전을 나눠서 적었어요. 순위나 리뷰가 아니라 스토어 설명에 적힌 기능만 소개해요.",
+        ],
+        "sections": [
+            ("TripBee Cute는 어떤 앱인가요", [
+                "여행마다 책장에 꽂히는 작은 책자 한 권이 생겨요. 일러스트 표지를 펼치고 아래로 내리기만 하면 출발 디데이, 항공편, 날마다의 일정, 준비물 리스트와 메모까지 이어져요. 캡처, 메일, 메모에 흩어진 여행 정보를 찾아 헤매지 않도록 만든 앱이에요.",
+            ], [
+                "출발 디데이, 여행지 날씨와 현지 시간.",
+                "탑승권 스타일 항공편 카드: 시간, 터미널, 예약 번호.",
+                "하루 일정: 날마다 이름 붙이기, 스티커, 완료 체크, 순서 바꾸기. 날짜마다 색이 달라 한눈에 구분되고, 날짜 필터로 그날 일정만 볼 수 있어요.",
+                "빈 시간, 그리고 메인 일정에서 복사할 수 있는 우천 플랜.",
+                "일정마다 사진, 티켓, 메모 첨부, 지도 앱으로 길찾기.",
+                "더치페이: 누가 냈는지 기록하고 똑같이 나누거나 금액을 각자 입력, 정산하면 누가 누구에게 보낼지 계산하고 다른 통화는 실시간 환율로 환산해요.",
+                "준비물 리스트, 여행 메모와 다정한 알림.",
+                "CSV 가져오기: 템플릿을 내보내 직접 채우거나 평소 쓰는 AI 어시스턴트에게 채워 달라고 한 뒤 가져오면 책자가 완성돼요.",
+                "웹 책자: 웹 파일 하나로 어떤 브라우저나 메신저에서도 열리고, 오프라인에서도 볼 수 있으며 디데이도 계속 줄어들어요.",
+                "표지 일러스트로 다음 여행을 보여 주는 홈 화면 위젯. iPhone 버전에는 잠금 화면 위젯과 디데이와 다음 일정을 보여 주는 Apple Watch 앱도 있어요.",
+                "다크 모드, iPad나 태블릿, 50개 언어. 계정 가입, 광고, 추적이 없고 책자는 기기에 저장돼요.",
+            ]),
+            ("누구에게 잘 맞나요", [
+                "스토어 설명에 나오는 여행은 주말 도시 여행, 가족 여행, 우정 여행, 커플 여행, 신혼여행, 첫 해외여행이에요. 예약은 이미 끝났고, 그 여행의 정보를 열어 볼 때마다 기분 좋은 한곳에 모으고 싶은 사람에게 잘 맞아요.",
+            ], [
+                "일정이 예약 메일, 캡처, 메모, 단체 채팅방에 흩어져 있는 사람.",
+                "친구나 가족과 함께 여행하면서 같이 쓴 경비를 일정에 적고, 마지막에 누가 누구에게 보내면 되는지 깔끔하게 정리하고 싶은 사람.",
+                "스프레드시트나 AI 어시스턴트로 계획하는 사람. 채운 CSV 템플릿이 바로 책자가 돼요.",
+                "앱이 없는 가족이나 친구에게 일정을 보여 주고 싶은 사람. 웹 책자는 브라우저에서 열려요.",
+                "개인정보가 신경 쓰이는 사람. 계정 가입도, 광고도, 추적도 없어요.",
+                "덜 맞는 경우: 앱 안에서 항공권이나 숙소를 예약하고 싶은 사람, 집안 살림 가계부를 오래 관리하고 싶은 사람. TripBee Cute는 여행 한 번 단위로 쓰도록 만들어졌어요.",
+            ]),
+            ("결제 방식: iPhone 버전과 Android 버전은 내용이 달라요", [
+                "두 스토어 모두 먼저 돈을 내지 않고 내려받을 수 있어요. 추가 기능은 Cute Pass에 들어 있고, Cute Pass는 1회성 앱 내 구입이에요. 구독이 아니어서 매달이나 매년 결제되지 않아요. 금액은 나라마다 달라서 이 페이지에는 적지 않았어요. 스토어 페이지에 표시되는 현지 통화 금액을 확인해 주세요.",
+                "iPhone·iPad(App Store): 구입하지 않아도 책자를 한 번에 1권 보관하고 표지 6종, CSV 가져오기, 웹 책자, 항공편, 하루 일정, 더치페이, 준비물 리스트, 위젯, Apple Watch 앱을 쓸 수 있어요. Cute Pass로 늘어나는 것은 책자 개수 제한 없음, 표지 51종 추가와 내 사진을 표지로 쓰기, 동행·계절·여행 기간에 맞춘 스마트 준비물 리스트, iCloud 동기화와 백업, 사진·티켓이 담긴 여행 파일 공유, iCloud로 친구를 초대해 같은 책자를 공동 편집하기(친구도 TripBee Cute 필요)예요.",
+                "Android(Google Play): 구입하지 않아도 내 책자 1권을 만들고, 받은 여행·링크·백업 파일은 모두 열 수 있어요. 표지 6종, CSV 가져오기, 웹 책자, 항공편, 하루 일정, 더치페이, 준비물 리스트, 알림, 위젯도 쓸 수 있어요. Android 버전의 Cute Pass로 늘어나는 것은 내 책자 개수 제한 없음, 표지 50종 추가와 내 사진을 표지로 쓰기, 스마트 준비물 리스트, 백업 내보내기, 사진·티켓이 담긴 여행 파일 보내기예요. Google Play 설명에는 iCloud 동기화, iCloud 공동 편집, Apple Watch 앱이 없고, 이 기능들은 iPhone 버전에 있어요.",
+            ], []),
+            ("일반 여행 계획 앱, 정산 앱, 종이 다이어리와 무엇이 다른가요", [
+                "일반 여행 계획 앱이나 일정 앱은 목록, 캘린더, 지도로 정리하는 경우가 많고, 예약이 중심인 앱도 있어요. TripBee Cute는 무언가를 예약해 주는 앱이 아니에요. 항공편과 일정은 직접 넣거나 CSV로 가져오고, 여행 한 번을 표지부터 준비물 리스트까지 스크롤하는 일러스트 책자 한 권으로 정리해요. 날짜마다 색이 달라요.",
+                "정산 전용 앱은 룸메이트와 계속 나누는 생활비까지 포함해 모든 공동 지출에 쓸 수 있게 만들어져 있어요. TripBee Cute의 더치페이는 여행 안, 일정 바로 옆에 있어서 누가 냈는지, 똑같이 나눌지 금액을 따로 넣을지, 정산과 환율 환산까지 다뤄요. 집안이나 룸메이트 정산만 필요하다면 전용 앱이 더 자연스럽고, 경비가 한 번의 여행에 속한다면 같은 책자에 모아 두는 편이 앱을 오가지 않아도 돼서 편해요.",
+                "종이 여행 다이어리는 손에 잡히는 느낌이 좋고 꾸미는 재미가 있지만, 항공편을 옮겨 적고 일정이 바뀔 때마다 다시 쓰는 데 시간이 들고, 손목에서 디데이를 볼 수도 없어요. TripBee Cute는 꾸미는 재미(일러스트 표지, 스티커, 날짜별 색)는 살리면서 일정은 언제든 고치고 동행과 공유할 수 있어요. 손글씨 자체를 좋아한다면 그 점에서는 여전히 종이가 가장 좋아요.",
+            ], []),
+        ],
+        "steps_title": "5분 만에 시작하기",
+        "steps": [
+            "App Store나 Google Play에서 TripBee Cute를 설치하고 새 여행을 추가해요.",
+            "여행 이름을 정하고 도시, 랜드마크, 계절 일러스트 표지를 골라요.",
+            "항공편 카드를 넣으면 출발 디데이가 시작돼요.",
+            "날마다 일정을 채우거나, 직접 또는 AI 어시스턴트가 채운 CSV 템플릿을 가져와요.",
+            "웹 책자를 동행에게 공유하고, 여행 중에는 같이 쓴 경비를 일정에 적어요.",
+        ],
+        "cards": [
+            ("tripbeecute", "여행 한 번을 귀여운 일러스트 책자 한 권으로. 출발 디데이, 여행지 날씨와 현지 시간, 탑승권 스타일 항공편 카드, 날짜별 색으로 나뉜 일정, 실시간 환율로 환산하는 더치페이, 준비물 리스트가 한 페이지에 있어요. 웹 책자로 공유하면 어떤 브라우저에서도, 오프라인에서도 열려요. Cute Pass는 1회성 앱 내 구입이고 구독이 아니에요. 계정 가입, 광고, 추적이 없어요."),
+        ],
+        "faqs": [
+            ("Cute Pass는 구독인가요?", "아니요. Cute Pass는 App Store와 Google Play 모두 1회성 앱 내 구입이라 매달이나 매년 결제되지 않아요."),
+            ("구입하지 않고 쓸 수 있는 기능은요?", "iPhone 버전: 책자 1권(한 번에 1권 보관), 표지 6종, CSV 가져오기, 웹 책자, 항공편, 하루 일정, 더치페이, 준비물 리스트, 위젯, Apple Watch 앱. Android 버전: 내 책자 1권, 받은 여행·링크·백업 파일 열기, 표지 6종, CSV 가져오기, 웹 책자, 항공편, 하루 일정, 더치페이, 준비물 리스트, 알림, 위젯."),
+            ("Android 버전도 있나요?", "네, Google Play에 있어요. Android 버전의 Cute Pass는 iPhone 버전과 내용이 달라서 백업 내보내기와 여행 파일 보내기가 들어 있고, iCloud 동기화와 iCloud 공동 편집은 들어 있지 않아요."),
+            ("계정 가입이 필요한가요?", "아니요. 계정 가입, 광고, 추적이 없어요. 책자는 기기에 저장되고, iPhone 버전에서는 동기화(Cute Pass)를 켰을 때만 내 개인 iCloud에 저장돼요."),
+        ],
+        "related": [("ko/tripbeecute.html", "TripBee Cute 자세히 보기")],
+        "legal": "이 페이지의 내용은 2026년 11월 15일에 확인한 TripBee Cute의 App Store와 Google Play 앱 설명을 바탕으로 해요. 스토어 내용은 바뀔 수 있어요. 날씨는 Open-Meteo에서 여행지 정보만 사용해 가져와요. 소개한 앱은 독립 개발 앱이에요.",
+    },
 ]
 
 
 _G3_SITEMAP_NAME = g3.sitemap_name
+_G3_RENDER = g3.render
+_APPS_BLOCK = re.compile(r'<section id="apps">.*?</section>\n', re.S)
+_UPDATED_LINE = re.compile(r'<p class="updated">[^\n]*</p>\n')
+
+
+def render(spec: dict, names: dict) -> str:
+    """spec["cards_first"]：主卡（App Store 直連，Google Play 由 inject_html 補在第一個直連後）移到第一屏的更新日期下方。"""
+    source = _G3_RENDER(spec, names)
+    if spec.get("updated"):
+        # 本頁自己的讀取日期（第 3 組共用 UPDATED 是 2026-10-23，與內文讀取日不符）
+        source = source.replace(g3.UPDATED, spec["updated"])
+    if not spec.get("cards_first"):
+        return source
+    block = _APPS_BLOCK.search(source)
+    updated = _UPDATED_LINE.search(source)
+    if not block or not updated or updated.start() > block.start():
+        raise g3.GenerationError(f"{spec['slug']}: cannot move app card to the first screen")
+    source = source[:block.start()] + source[block.end():]
+    return source[:updated.end()] + block.group(0) + source[updated.end():]
 
 
 def sitemap_name(lang: str) -> str:
@@ -445,6 +746,7 @@ def _install() -> None:
     g3.BANNED = BANNED
     g3.dedicated_size = dedicated_size
     g3.sitemap_name = sitemap_name
+    g3.render = render
 
 
 def main(argv=None) -> int:

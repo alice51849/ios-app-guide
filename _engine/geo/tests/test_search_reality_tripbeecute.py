@@ -16,7 +16,10 @@ import gen_search_reality_tripbeecute as gen  # noqa: E402
 import gen_search_reality_g3 as g3  # noqa: E402
 import gw_campaign  # noqa: E402
 
-PATCHED = ("LANGS", "APP_IDS", "PAGE_SPECS", "BANNED", "dedicated_size", "sitemap_name")
+PATCHED = ("LANGS", "APP_IDS", "PAGE_SPECS", "BANNED", "dedicated_size", "sitemap_name", "render")
+
+
+AI_QA_SLUGS = [f"tripbeecute-what-it-is-who-for-pricing-vs-others-{s}" for s in ("en", "zhhant", "ja", "ko")]
 
 
 class TripBeeCutePageTests(unittest.TestCase):
@@ -32,7 +35,8 @@ class TripBeeCutePageTests(unittest.TestCase):
             setattr(g3, name, value)
 
     def test_taiwan_korea_and_hong_kong_native_pages(self):
-        self.assertEqual([spec["lang"] for spec in gen.PAGE_SPECS], ["zh-Hant", "ko", "zh-Hant", "zh-Hant", "zh-Hant", "ja", "en-AU"])
+        self.assertEqual([spec["lang"] for spec in gen.PAGE_SPECS], ["zh-Hant", "ko", "zh-Hant", "zh-Hant", "zh-Hant", "ja", "en-AU",
+                                                                "en", "zh-Hant", "ja", "ko"])
         self.assertEqual({spec["key"] for spec in gen.PAGE_SPECS}, {"tripbeecute"})
         self.assertIn("可愛 旅行手帳", gen.PAGE_SPECS[0]["terms"])
         self.assertIn("다꾸 여행", gen.PAGE_SPECS[1]["terms"])
@@ -44,7 +48,7 @@ class TripBeeCutePageTests(unittest.TestCase):
         self.assertIn("旅行 手賬", gen.PAGE_SPECS[4]["terms"])
         self.assertIn("旅行 手帳", gen.PAGE_SPECS[5]["terms"])
         self.assertIn("cute travel journal", gen.PAGE_SPECS[6]["terms"])
-        self.assertEqual(len(self.pages), 7)
+        self.assertEqual(len(self.pages), 11)
 
     def test_card_links_storefront_with_campaign(self):
         for spec in gen.PAGE_SPECS:
@@ -79,7 +83,7 @@ class TripBeeCutePageTests(unittest.TestCase):
                           "lvyou-shouzhang-lvxing-qingdan-dabao-xingli-zhhant",
                           "lvxing-shouzhang-aomen-chufa-jiaren-tongxing-mo",
                           "ryoko-techo-app-kawaii-ensei-joshitabi",
-                          "cute-travel-journal-app-holiday-countdown-en-au"])
+                          "cute-travel-journal-app-holiday-countdown-en-au"] + AI_QA_SLUGS)
         self.assertIsNotNone(gen.BANNED.search("무료"))
         self.assertIsNone(gen.PASS_BANNED.search("무료"))
         for bad in ("免費", "Free", "NT$90", "3,300원"):
@@ -208,6 +212,34 @@ class TripBeeCutePageTests(unittest.TestCase):
         self.assertEqual(g3.sitemap_name("ja"), "sitemap_seasonal_ja.xml")
         for word in ("together through iCloud", "smart packing", "backup", "57"):
             self.assertNotIn(word, source)
+
+    def test_ai_answer_pages_four_languages(self):
+        """2026-11-15 給 AI 助理讀的問答頁：4 頁、第一屏就有 iOS 與 Google Play 直連、不含禁用字、不搶既有頁主詞。"""
+        specs = [s for s in gen.PAGE_SPECS if s["slug"] in AI_QA_SLUGS]
+        self.assertEqual([s["slug"] for s in specs], AI_QA_SLUGS)
+        self.assertEqual([s["lang"] for s in specs], ["en", "zh-Hant", "ja", "ko"])
+        old_terms = {t for s in gen.PAGE_SPECS if s["slug"] not in AI_QA_SLUGS for t in s["terms"]}
+        play = "play.google.com/store/apps/details?id=com.alice51849.TripBeeCute"
+        for spec in specs:
+            self.assertEqual(len(spec["sections"]), 4, spec["slug"])
+            self.assertFalse(set(spec["terms"]) & old_terms, spec["slug"])
+            self.assertTrue(all("TripBee Cute" in t for t in spec["terms"]), spec["slug"])
+            source = self.pages[g3.page_relative(spec)]
+            self.assertIn("id6826987407", source)
+            first_screen = source.split('<nav class="toc"', 1)[0]
+            self.assertIn("apps.apple.com/", first_screen)
+            self.assertIn('<article class="app"', first_screen)
+            text = html.unescape(g3.visible_text(source) + source.split("</head>", 1)[0])
+            self.assertIsNone(gen.BANNED.search(re.sub(r"<script\b.*?</script>", "", text, flags=re.S)), spec["slug"])
+            self.assertIn("Cute Pass", text)
+            self.assertIn("Google Play", text)
+        # Google Play 直連由已發布快照補在第一個 App Store 直連後，所以也在第一屏
+        snapshot = g3.android_play.load_snapshot()
+        self.assertTrue(any(str(e.get("ios_app_id")) == "6826987407" for e in snapshot.values()))
+        built = g3.build(snapshot)
+        for spec in specs:
+            first_screen = built[g3.page_relative(spec)].split('<nav class="toc"', 1)[0]
+            self.assertIn(play, first_screen, spec["slug"])
 
     def test_dedicated_text_floor(self):
         for spec in gen.PAGE_SPECS:

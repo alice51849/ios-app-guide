@@ -638,7 +638,15 @@
       "clip": "mochi_halloween/en",
       "link": "https://youtube.com/shorts/7AAc1Mk5s7A",
       "posted_at": "2026-10-22T09:23:31Z",
-      "id": "7AAc1Mk5s7A"
+      "id": "7AAc1Mk5s7A",
+      "taken_down": {
+        "at": "2026-10-30T02:50:00Z",
+        "method": "studio_readback",
+        "reason": "上傳處理失敗：Studio 只剩中繼資料殼、無影片檔、不在內容清單；無警告、無政策信（本機 10-30 唯讀查證）。不重傳同一渲染檔",
+        "report": "ops/handoff/inbox/local_yt_halloween_removed_2026-10-30.md",
+        "reversible": false,
+        "status": "upload_failed"
+      }
     },
     {
       "channel": "instagram_feed",

@@ -13,7 +13,7 @@
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
     "dateModified": "2026-11-15",
-    "contentDigest": "2e705e6133a59676d866c2b31370645ab6a26d6f56af573a0826503639769f45",
+    "contentDigest": "282bcc5b6464e82114ffd6f448957ef0b3ed84009e98d9264ad03d2820dcb103",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
     "recordCount": 60
@@ -258,12 +258,10 @@
         "spektrogram",
         "kalibrering",
         "mikrofon",
-        "hörsel",
-        "FFT",
-        "RTA"
+        "hörsel"
       ],
       "language": "sv",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6821790092",
@@ -363,22 +361,22 @@
       "title": "GBAGo: Visuella sparlägen",
       "content_text": "Optimerad för iPhone Duo. Appen är byggd med den senaste SDK:n, fyller hela den inre skärmen och anpassar layouten automatiskt, både hopfälld och utfälld.",
       "tags": [
-        "spel",
-        "konsol",
-        "snabbspara",
-        "fuskkoder",
-        "emulering",
-        "handkontroll",
-        "nostalgi",
-        "arkad",
-        "pixel",
-        "offline",
+        "emulator",
+        "gba",
         "gbc",
-        "emu",
-        "fps"
+        "spel",
+        "retro",
+        "konsol",
+        "fuskkoder",
+        "handkontroll",
+        "offline",
+        "snabbspara",
+        "snabbspola",
+        "turbo",
+        "backup"
       ],
       "language": "sv",
-      "date_modified": "2026-11-01T03:09:58Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6794039979",
@@ -871,7 +869,6 @@
       "title": "PhotoCream Pro: Filmfilter",
       "content_text": "Optimerad för iPhone Duo. Appen är byggd med den senaste SDK:n, fyller hela den inre skärmen och anpassar layouten automatiskt, både hopfälld och utfälld.",
       "tags": [
-        "retro",
         "analog",
         "korn",
         "redigering",
@@ -886,7 +883,7 @@
         "y2k"
       ],
       "language": "sv",
-      "date_modified": "2026-10-30T02:23:28Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6780223070",
@@ -990,23 +987,24 @@
       "title": "Sereno: Sömnljud",
       "content_text": "Sereno gör din iPhone till en ljudmaskin för sömn: kombinera regn, hav, eld, fläkt och vitt, rosa eller brunt brus, och ställ in volymen för varje lager till din egen mix. Naturljuden är riktiga fältinspelningar som blandas om slumpmässigt medan du lyssnar – aldrig en fast loop – och över 1000 färdiga mixar gör det lätt att komma igång. Sömntimern tonar ut mjukt, soluppgångsväckningen möter dig med fågelsång och uppspelningen fortsätter offline och på låsskärmen.",
       "tags": [
-        "sömnlöshet",
         "somna",
         "åska",
         "vågor",
         "brunt",
         "rosa",
-        "bebis",
         "avslappning",
         "meditation",
         "fokus",
         "plugga",
-        "ADHD",
-        "tinnitus",
-        "fläkt"
+        "fläkt",
+        "sömn",
+        "natur",
+        "brasa",
+        "skog",
+        "tåg"
       ],
       "language": "sv",
-      "date_modified": "2026-11-15T12:49:45Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6802166527",
@@ -1098,19 +1096,20 @@
       "title": "Stay Clock: Bordsklocka",
       "content_text": "Optimerad för iPhone Duo. Appen är byggd med den senaste SDK:n, fyller hela den inre skärmen och anpassar layouten automatiskt, både hopfälld och utfälld.",
       "tags": [
-        "oled",
-        "smartwatch",
         "widgetar",
         "laddning",
         "nattläge",
         "låsskärm",
         "nattduksbord",
         "tidszon",
-        "24-timmarsformat",
-        "teman"
+        "timmarsformat",
+        "teman",
+        "stor klocka",
+        "månad",
+        "natt"
       ],
       "language": "sv",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6807335593",
@@ -1263,23 +1262,19 @@
       "content_text": "Tar AI-gränsen slut mitt i en uppgift? UsageNow visar hur mycket som är kvar av varje AI-abonnemang och exakt när det återställs, direkt på hemskärmen, och varnar dig innan det tar slut.",
       "tags": [
         "code",
-        "dev",
         "utvecklare",
-        "usage",
-        "tracker",
         "förbrukning",
         "kvot",
         "quota",
         "mätare",
         "token",
-        "widget",
-        "reset",
-        "meter",
-        "monitor",
-        "llm"
+        "llm",
+        "programmerare",
+        "återstående",
+        "nollställning"
       ],
       "language": "sv",
-      "date_modified": "2026-10-11T13:38:16Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6790467886",
@@ -1289,12 +1284,7 @@
       "content_text": "Optimerad för iPhone Duo. Appen är byggd med den senaste SDK:n, fyller hela den inre skärmen och anpassar layouten automatiskt, både hopfälld och utfälld.",
       "tags": [
         "latens",
-        "jitter",
-        "ipv6",
-        "tcp",
-        "tls",
         "nod",
-        "repeater",
         "roaming",
         "rapport",
         "pdf",
@@ -1302,10 +1292,13 @@
         "widget",
         "klocka",
         "stabilitet",
-        "fiber"
+        "fiber",
+        "anslutning",
+        "test",
+        "instabil"
       ],
       "language": "sv",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6793414462",
@@ -1348,11 +1341,10 @@
         "vana",
         "nybörjare",
         "minut",
-        "offline",
         "resa"
       ],
       "language": "sv",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6789917808",

@@ -13,7 +13,7 @@
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
     "dateModified": "2026-11-15",
-    "contentDigest": "2e705e6133a59676d866c2b31370645ab6a26d6f56af573a0826503639769f45",
+    "contentDigest": "282bcc5b6464e82114ffd6f448957ef0b3ed84009e98d9264ad03d2820dcb103",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
     "recordCount": 60
@@ -261,11 +261,10 @@
         "snimanje",
         "mikrofon",
         "sluh",
-        "FFT",
-        "RTA"
+        "izloženost"
       ],
       "language": "hr",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6821790092",
@@ -368,20 +367,24 @@
       "title": "GBAGo: Vizualna spremanja",
       "content_text": "Optimizirano za iPhone Duo. Aplikacija je izrađena s najnovijim SDK-om, ispunjava cijeli unutarnji zaslon i automatski prilagođava raspored, bilo da je uređaj sklopljen ili otvoren.",
       "tags": [
+        "emulator",
+        "gba",
+        "gbc",
         "igre",
+        "retro",
         "konzola",
-        "emulacija",
-        "spremanje",
-        "šifre",
-        "kartridž",
-        "kontroler",
         "džepna",
-        "nostalgija",
+        "šifre",
+        "cheat",
+        "kontroler",
         "offline",
-        "djetinjstvo"
+        "brzo",
+        "turbo",
+        "backup",
+        "gamepad"
       ],
       "language": "hr",
-      "date_modified": "2026-11-01T03:09:58Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6794039979",
@@ -709,15 +712,15 @@
         "anonimizacija",
         "cenzura",
         "osobni podaci",
-        "putovnica",
         "liječnički nalaz",
         "ugovor",
         "metapodaci",
         "pdf",
-        "privatnost"
+        "privatnost",
+        "račun"
       ],
       "language": "hr",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6829184924",
@@ -866,9 +869,6 @@
       "title": "PhotoCream Pro: Retro filteri",
       "content_text": "Optimizirano za iPhone Duo. Aplikacija je izrađena s najnovijim SDK-om, ispunjava cijeli unutarnji zaslon i automatski prilagođava raspored, bilo da je uređaj sklopljen ili otvoren.",
       "tags": [
-        "vintage",
-        "retro",
-        "film",
         "zrno",
         "uređivanje",
         "fotografija",
@@ -878,10 +878,12 @@
         "estetika",
         "35mm",
         "jednokratni",
-        "efekti"
+        "efekti",
+        "vinjeta",
+        "kino"
       ],
       "language": "hr",
-      "date_modified": "2026-10-30T02:23:28Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6780223070",
@@ -981,21 +983,21 @@
       "title": "Sereno: Zvukovi za san",
       "content_text": "Sereno pretvara vaš iPhone u uređaj sa zvukovima za spavanje: kombinirajte kišu, more, vatru, ventilator te bijeli, ružičasti ili smeđi šum i podesite glasnoću svakog sloja za vlastiti miks. Zvukovi prirode prave su terenske snimke koje se tijekom slušanja nasumično preslažu – nikad u fiksnoj petlji – a više od 1000 gotovih mikseva pomaže vam da odmah počnete. Mjerač vremena za spavanje nježno utišava zvuk, buđenje uz izlazak sunca dočekuje vas pjevom ptica, a reprodukcija se nastavlja izvanmrežno i na zaključanom zaslonu.",
       "tags": [
-        "uspavljivanje",
+        "kamin",
         "fokus",
         "oluja",
         "valovi",
         "smeđi",
         "ružičasti",
-        "nesanica",
-        "beba",
         "opuštanje",
         "meditacija",
         "učenje",
-        "ADHD"
+        "ventilator",
+        "priroda",
+        "šuma"
       ],
       "language": "hr",
-      "date_modified": "2026-11-15T12:49:45Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6802166527",
@@ -1089,14 +1091,13 @@
         "mod pripravnosti",
         "priključna stanica",
         "punjenje",
-        "oled",
         "widgeti",
         "digitalni",
         "budilica",
         "veliki"
       ],
       "language": "hr",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6807335593",
@@ -1239,24 +1240,22 @@
       "content_text": "AI limit potrošen usred zadatka? UsageNow pokazuje koliko ti je ostalo na svakom AI planu i točno kada se obnavlja, izravno na početnom zaslonu. Upozorit će te prije nego što sve potrošiš.",
       "tags": [
         "code",
-        "dev",
         "programer",
-        "usage",
-        "tracker",
         "kvota",
         "brojač",
         "token",
-        "widget",
-        "reset",
         "quota",
-        "meter",
-        "monitor",
         "llm",
         "sesija",
-        "api"
+        "api",
+        "preostalo",
+        "odbrojavanje",
+        "upozorenje",
+        "tjedno",
+        "kod"
       ],
       "language": "hr",
-      "date_modified": "2026-10-11T13:38:16Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6790467886",
@@ -1266,11 +1265,7 @@
       "content_text": "Optimizirano za iPhone Duo. Aplikacija je izrađena s najnovijim SDK-om, ispunjava cijeli unutarnji zaslon i automatski prilagođava raspored, bilo da je uređaj sklopljen ili otvoren.",
       "tags": [
         "latencija",
-        "jitter",
-        "ipv6",
-        "tcp",
         "čvor",
-        "pojačivač",
         "roaming",
         "izvještaj",
         "pdf",
@@ -1278,10 +1273,13 @@
         "widget",
         "sat",
         "stabilnost",
-        "optika"
+        "optika",
+        "veza",
+        "test",
+        "jitter"
       ],
       "language": "hr",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6793414462",
@@ -1325,10 +1323,10 @@
         "pamćenje",
         "navika",
         "početnici",
-        "offline"
+        "izgovor"
       ],
       "language": "hr",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6789917808",

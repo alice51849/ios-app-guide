@@ -13,7 +13,7 @@
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
     "dateModified": "2026-11-15",
-    "contentDigest": "2e705e6133a59676d866c2b31370645ab6a26d6f56af573a0826503639769f45",
+    "contentDigest": "282bcc5b6464e82114ffd6f448957ef0b3ed84009e98d9264ad03d2820dcb103",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
     "recordCount": 60
@@ -278,12 +278,10 @@
         "maruziyet",
         "kayıt",
         "işitme",
-        "FFT",
-        "RTA",
         "kulak"
       ],
       "language": "tr",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6821790092",
@@ -391,20 +389,22 @@
       "content_text": "iPhone Duo için optimize edildi. En yeni SDK ile geliştirilen uygulama tüm iç ekranı doldurur ve cihaz katlıyken de açıkken de düzenini otomatik olarak ayarlar.",
       "tags": [
         "emülatör",
-        "eski oyunlar",
+        "gba",
+        "gbc",
+        "oyunlar",
+        "retro",
         "konsol",
-        "hile",
-        "kayıt",
-        "kartuş",
         "el konsolu",
-        "nostalji",
-        "çevrimdışı",
-        "çocukluk",
-        "piksel",
-        "fps"
+        "hile",
+        "kontrolcü",
+        "oyun kolu",
+        "offline",
+        "hızlı",
+        "turbo",
+        "klasik"
       ],
       "language": "tr",
-      "date_modified": "2026-11-01T03:09:58Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6794039979",
@@ -741,18 +741,17 @@
         "karartma",
         "gizlilik",
         "kişisel veri",
-        "kimlik",
-        "tc kimlik",
         "iban",
         "belge",
         "fatura",
         "dekont",
         "foto",
         "pdf",
-        "pasaport"
+        "ekran görüntüsü",
+        "sözleşme"
       ],
       "language": "tr",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6829184924",
@@ -904,7 +903,6 @@
       "title": "PhotoCream Pro: Film filtresi",
       "content_text": "iPhone Duo için optimize edildi. En yeni SDK ile geliştirilen uygulama tüm iç ekranı doldurur ve cihaz katlıyken de açıkken de düzenini otomatik olarak ayarlar.",
       "tags": [
-        "retro",
         "filtre",
         "fotoğraf",
         "foto",
@@ -916,10 +914,11 @@
         "estetik",
         "35mm",
         "y2k",
-        "camera"
+        "vinyet",
+        "siyah beyaz"
       ],
       "language": "tr",
-      "date_modified": "2026-10-30T02:23:28Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6780223070",
@@ -1019,19 +1018,21 @@
       "title": "Sereno: Uyku Sesleri",
       "content_text": "Sereno, iPhone'unuzu bir uyku ses makinesine dönüştürür: yağmur, deniz, ateş, vantilatör ile beyaz, pembe veya kahverengi gürültüyü katmanlayın ve kendi karışımınız için her katmanın sesini ayrı ayarlayın. Doğa sesleri, dinlerken rastgele yeniden sıralanan gerçek saha kayıtlarıdır; sabit bir döngü yoktur. Hemen başlamak için 1000'den fazla hazır karışım da var. Uyku zamanlayıcısı sesi yavaşça kısar, gün doğumu alarmı sizi kuş sesleriyle karşılar ve çalma çevrimdışıyken ve kilit ekranında da sürer.",
       "tags": [
-        "kahverengi",
-        "pembe",
-        "DEHB",
-        "kulak çınlaması",
-        "uykusuzluk",
-        "bebek",
         "rahatlama",
         "meditasyon",
         "odaklanma",
-        "ders çalışma"
+        "ders çalışma",
+        "sesi",
+        "doğa",
+        "kahverengi",
+        "pembe",
+        "fırtına",
+        "dalga",
+        "şömine",
+        "orman"
       ],
       "language": "tr",
-      "date_modified": "2026-11-15T12:49:45Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6802166527",
@@ -1127,18 +1128,17 @@
         "dok",
         "şarj",
         "yatak başı",
-        "oled",
         "widget",
         "dijital",
         "tema",
         "yazı tipi",
         "kilitli ekran",
-        "alarm",
         "bekleme",
-        "gece modu"
+        "gece modu",
+        "büyük"
       ],
       "language": "tr",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6807335593",
@@ -1286,24 +1286,22 @@
       "title": "UsageNow: Yapay Zekâ Kullanımı",
       "content_text": "Bir işin tam ortasında AI limitine mi takıldınız? UsageNow, her AI planınızda ne kadar hak kaldığını ve tam olarak ne zaman sıfırlanacağını doğrudan Ana Ekran'ınızda gösterir ve limit bitmeden sizi uyarır.",
       "tags": [
-        "ai",
         "code",
-        "dev",
         "geliştirici",
         "kullanım",
-        "usage",
-        "tracker",
         "kota",
         "sayaç",
         "token",
-        "widget",
-        "reset",
         "sıfırlama",
         "quota",
-        "meter"
+        "programcı",
+        "kalan",
+        "geri sayım",
+        "uyarı",
+        "haftalık"
       ],
       "language": "tr",
-      "date_modified": "2026-10-11T13:38:16Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6790467886",
@@ -1312,24 +1310,22 @@
       "title": "WiFi Aid: Ağ sorunlarını bul",
       "content_text": "iPhone Duo için optimize edildi. En yeni SDK ile geliştirilen uygulama tüm iç ekranı doldurur ve cihaz katlıyken de açıkken de düzenini otomatik olarak ayarlar.",
       "tags": [
-        "router",
         "gecikme",
-        "jitter",
-        "ipv6",
-        "tcp",
-        "tls",
         "düğüm",
-        "genişletici",
         "rapor",
         "pdf",
         "geçmiş",
         "widget",
         "saat",
         "kararlılık",
-        "fiber"
+        "fiber",
+        "bağlantı",
+        "test",
+        "analiz",
+        "web sitesi"
       ],
       "language": "tr",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6793414462",

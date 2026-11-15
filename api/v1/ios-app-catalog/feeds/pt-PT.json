@@ -13,7 +13,7 @@
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
     "dateModified": "2026-11-15",
-    "contentDigest": "2e705e6133a59676d866c2b31370645ab6a26d6f56af573a0826503639769f45",
+    "contentDigest": "282bcc5b6464e82114ffd6f448957ef0b3ed84009e98d9264ad03d2820dcb103",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
     "recordCount": 60
@@ -255,7 +255,6 @@
         "medidor",
         "espetro",
         "barulho",
-        "volume",
         "ressonar",
         "sono",
         "frequência",
@@ -263,10 +262,10 @@
         "audição",
         "gravador",
         "analisador",
-        "RTA"
+        "microfone"
       ],
       "language": "pt-PT",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6821790092",
@@ -367,20 +366,22 @@
       "content_text": "Otimizada para iPhone Duo. Criada com o SDK mais recente, a app ocupa todo o ecrã interior e ajusta a disposição automaticamente, com o dispositivo dobrado ou aberto.",
       "tags": [
         "emulador",
+        "gba",
+        "gbc",
         "jogos",
+        "retro",
         "consola",
-        "gravações",
-        "batota",
-        "cartucho",
-        "comando",
-        "arcada",
         "portátil",
-        "sem ligação",
-        "anos 90",
-        "gamepad"
+        "batota",
+        "comando",
+        "offline",
+        "acelerar",
+        "gravar",
+        "rápido",
+        "backup"
       ],
       "language": "pt-PT",
-      "date_modified": "2026-11-01T03:09:58Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6794039979",
@@ -865,11 +866,8 @@
       "title": "PhotoCream Pro: Filtros retro",
       "content_text": "Otimizada para iPhone Duo. Criada com o SDK mais recente, a app ocupa todo o ecrã interior e ajusta a disposição automaticamente, com o dispositivo dobrado ou aberto.",
       "tags": [
-        "vintage",
-        "retro",
         "rolo",
         "grão",
-        "editor",
         "fotos",
         "selfie",
         "beleza",
@@ -879,10 +877,12 @@
         "descartável",
         "efeito",
         "y2k",
-        "luz"
+        "luz",
+        "moldura",
+        "curvas"
       ],
       "language": "pt-PT",
-      "date_modified": "2026-10-30T02:23:28Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6780223070",
@@ -983,20 +983,19 @@
       "content_text": "O Sereno transforma o seu iPhone numa máquina de sons para dormir: combine chuva, mar, fogo, ventoinha e ruído branco, rosa ou castanho, e ajuste o volume de cada camada para criar a sua própria mistura. Os sons da natureza são gravações de campo reais que se reorganizam aleatoriamente enquanto ouve, nunca em ciclo fixo, e mais de 1000 misturas prontas ajudam-no a começar de imediato. O temporizador de sono baixa o som suavemente, o despertar ao nascer do sol recebe-o com o canto dos pássaros e a reprodução continua offline e com o ecrã bloqueado.",
       "tags": [
         "castanho",
-        "PHDA",
         "sesta",
         "ventoinha",
         "rosa",
-        "insónia",
-        "bebé",
         "relaxar",
         "meditação",
         "concentração",
-        "zumbido",
-        "tempestade"
+        "tempestade",
+        "ondas",
+        "natureza",
+        "estudar"
       ],
       "language": "pt-PT",
-      "date_modified": "2026-11-15T12:49:45Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6802166527",
@@ -1090,18 +1089,18 @@
       "title": "Stay Clock: Relógio de Mesa",
       "content_text": "Otimizada para iPhone Duo. Criada com o SDK mais recente, a app ocupa todo o ecrã interior e ajusta a disposição automaticamente, com o dispositivo dobrado ou aberto.",
       "tags": [
-        "oled",
-        "smartwatch",
-        "widgets",
         "carregador",
         "modo noite",
         "ecrã bloqueado",
         "cabeceira",
         "fuso horário",
-        "despertador"
+        "despertador",
+        "horizontal",
+        "mês",
+        "oled"
       ],
       "language": "pt-PT",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6807335593",
@@ -1248,25 +1247,21 @@
       "title": "UsageNow: Monitor de uso de IA",
       "content_text": "Ficou sem limite de IA a meio de uma tarefa? O UsageNow mostra quanto resta de cada plano de IA e exatamente quando é reposto, diretamente no ecrã principal, e avisa-o antes de ficar sem limite.",
       "tags": [
-        "ai",
         "code",
-        "dev",
         "programador",
-        "usage",
-        "tracker",
         "consumo",
         "quota",
         "contador",
         "token",
-        "widget",
-        "reset",
         "llm",
-        "meter",
         "sessão",
-        "api"
+        "api",
+        "restante",
+        "contagem decrescente",
+        "alerta"
       ],
       "language": "pt-PT",
-      "date_modified": "2026-10-11T13:38:16Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6790467886",
@@ -1276,10 +1271,7 @@
       "content_text": "Otimizada para iPhone Duo. Criada com o SDK mais recente, a app ocupa todo o ecrã interior e ajusta a disposição automaticamente, com o dispositivo dobrado ou aberto.",
       "tags": [
         "latência",
-        "jitter",
-        "ipv6",
         "nó",
-        "repetidor",
         "relatório",
         "pdf",
         "histórico",
@@ -1287,10 +1279,12 @@
         "relógio",
         "estabilidade",
         "fibra",
-        "análise"
+        "análise",
+        "ligação",
+        "teste"
       ],
       "language": "pt-PT",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6793414462",
@@ -1334,11 +1328,10 @@
         "hábito",
         "sequência",
         "iniciantes",
-        "diário",
-        "offline"
+        "diário"
       ],
       "language": "pt-PT",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6789917808",

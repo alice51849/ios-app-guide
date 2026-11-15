@@ -13,7 +13,7 @@
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
     "dateModified": "2026-11-15",
-    "contentDigest": "2e705e6133a59676d866c2b31370645ab6a26d6f56af573a0826503639769f45",
+    "contentDigest": "282bcc5b6464e82114ffd6f448957ef0b3ed84009e98d9264ad03d2820dcb103",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
     "recordCount": 60
@@ -265,12 +265,10 @@
         "înregistrare",
         "microfon",
         "auz",
-        "FFT",
-        "RTA",
         "sunet"
       ],
       "language": "ro",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6821790092",
@@ -371,21 +369,23 @@
       "title": "GBAGo: Salvări vizuale",
       "content_text": "Optimizată pentru iPhone Duo. Creată cu cel mai recent SDK, aplicația umple tot ecranul interior și își ajustează automat aspectul, fie că dispozitivul e pliat, fie deschis.",
       "tags": [
+        "emulator",
+        "gba",
+        "gbc",
         "jocuri",
+        "retro",
         "consolă",
-        "salvare",
-        "coduri",
-        "cartuș",
-        "controler",
-        "arcade",
         "portabil",
-        "nostalgie",
-        "pixeli",
+        "coduri",
+        "cheats",
+        "controler",
         "offline",
-        "gamepad"
+        "rapid",
+        "turbo",
+        "backup"
       ],
       "language": "ro",
-      "date_modified": "2026-11-01T03:09:58Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6794039979",
@@ -711,17 +711,17 @@
         "confidențialitate",
         "cenzurare",
         "documente",
-        "buletin",
         "chitanță",
         "factură",
         "metadate",
         "anonimizare",
         "gdpr",
         "pdf",
-        "poze"
+        "poze",
+        "contract"
       ],
       "language": "ro",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6829184924",
@@ -869,8 +869,6 @@
       "title": "PhotoCream Pro: Filtre de film",
       "content_text": "Optimizată pentru iPhone Duo. Creată cu cel mai recent SDK, aplicația umple tot ecranul interior și își ajustează automat aspectul, fie că dispozitivul e pliat, fie deschis.",
       "tags": [
-        "vintage",
-        "film",
         "granulație",
         "editare",
         "foto",
@@ -882,10 +880,11 @@
         "unică",
         "folosință",
         "efecte",
-        "y2k"
+        "y2k",
+        "vintage"
       ],
       "language": "ro",
-      "date_modified": "2026-10-30T02:23:28Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6780223070",
@@ -991,17 +990,16 @@
         "valuri",
         "maro",
         "roz",
-        "insomnie",
-        "bebeluș",
         "relaxare",
         "meditație",
         "concentrare",
         "studiu",
-        "ADHD",
-        "tinitus"
+        "ventilator",
+        "natură",
+        "tunete"
       ],
       "language": "ro",
-      "date_modified": "2026-11-15T12:49:45Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6802166527",
@@ -1094,20 +1092,20 @@
       "title": "Stay Clock: Ceas de Birou",
       "content_text": "Optimizată pentru iPhone Duo. Creată cu cel mai recent SDK, aplicația umple tot ecranul interior și își ajustează automat aspectul, fie că dispozitivul e pliat, fie deschis.",
       "tags": [
-        "oled",
-        "smartwatch",
         "widgeturi",
         "încărcător",
         "mod noapte",
-        "ecran de blocare",
+        "ecran blocare",
         "noptieră",
         "fus orar",
         "teme",
         "alarmă",
-        "mare"
+        "mare",
+        "lună",
+        "oraș"
       ],
       "language": "ro",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6807335593",
@@ -1255,23 +1253,21 @@
       "content_text": "Ai rămas fără limită AI în mijlocul unei sarcini? UsageNow îți arată cât a mai rămas din fiecare plan AI și exact când se resetează, direct pe ecranul principal, și te avertizează înainte să se epuizeze.",
       "tags": [
         "code",
-        "dev",
         "dezvoltator",
-        "usage",
         "quota",
         "cotă",
         "contor",
         "token",
-        "widget",
-        "reset",
-        "meter",
-        "monitor",
         "llm",
         "numărătoare",
-        "rămas"
+        "rămas",
+        "programator",
+        "resetare",
+        "alertă",
+        "sesiune"
       ],
       "language": "ro",
-      "date_modified": "2026-10-11T13:38:16Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6790467886",
@@ -1281,12 +1277,8 @@
       "content_text": "Optimizată pentru iPhone Duo. Creată cu cel mai recent SDK, aplicația umple tot ecranul interior și își ajustează automat aspectul, fie că dispozitivul e pliat, fie deschis.",
       "tags": [
         "latență",
-        "jitter",
-        "ipv6",
         "ipv4",
-        "tcp",
         "nod",
-        "repetor",
         "roaming",
         "raport",
         "pdf",
@@ -1294,10 +1286,13 @@
         "widget",
         "ceas",
         "stabilitate",
-        "fibră"
+        "fibră",
+        "conexiune",
+        "test",
+        "jitter"
       ],
       "language": "ro",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6793414462",
@@ -1339,11 +1334,10 @@
         "memorare",
         "obicei",
         "începători",
-        "offline",
         "afaceri"
       ],
       "language": "ro",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6789917808",

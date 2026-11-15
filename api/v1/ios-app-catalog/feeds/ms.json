@@ -13,7 +13,7 @@
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
     "dateModified": "2026-11-15",
-    "contentDigest": "2e705e6133a59676d866c2b31370645ab6a26d6f56af573a0826503639769f45",
+    "contentDigest": "282bcc5b6464e82114ffd6f448957ef0b3ed84009e98d9264ad03d2820dcb103",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
     "recordCount": 60
@@ -220,11 +220,10 @@
         "sepanyol",
         "perancis",
         "jerman",
-        "dialog",
-        "audio"
+        "dialog"
       ],
       "language": "ms",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6794725568",
@@ -257,9 +256,6 @@
       "title": "dB Halo: Meter aras bunyi",
       "content_text": "Dioptimumkan untuk iPhone Duo. Dibina dengan SDK terkini, apl ini memenuhi seluruh skrin dalam dan melaraskan susun aturnya secara automatik, sama ada peranti dilipat atau dibuka.",
       "tags": [
-        "sound",
-        "noise",
-        "decibel",
         "bising",
         "kelantangan",
         "dengkur",
@@ -267,12 +263,13 @@
         "mikrofon",
         "penentukuran",
         "spektrum",
-        "FFT",
-        "RTA",
-        "kuat"
+        "kuat",
+        "desibel",
+        "dedahan",
+        "spektrogram"
       ],
       "language": "ms",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6821790092",
@@ -379,18 +376,23 @@
       "title": "GBAGo: Simpanan visual",
       "content_text": "Dioptimumkan untuk iPhone Duo. Dibina dengan SDK terkini, apl ini memenuhi seluruh skrin dalam dan melaraskan susun aturnya secara automatik, sama ada peranti dilipat atau dibuka.",
       "tags": [
-        "emulator permainan",
+        "emulator",
+        "gba",
+        "gbc",
+        "permainan",
+        "game",
+        "retro",
         "konsol",
-        "nostalgia",
-        "simpan pantas",
         "kod tipu",
-        "alat kawalan",
-        "luar talian",
-        "arked",
-        "gamepad"
+        "cheat",
+        "gamepad",
+        "offline",
+        "cepat",
+        "turbo",
+        "sandaran"
       ],
       "language": "ms",
-      "date_modified": "2026-11-01T03:09:58Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6794039979",
@@ -732,16 +734,17 @@
         "privasi",
         "dokumen",
         "foto",
-        "kad pengenalan",
         "kontrak",
         "perubatan",
         "kod bar",
         "luar talian",
         "PDF",
-        "muka"
+        "resit",
+        "invois",
+        "metadata"
       ],
       "language": "ms",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6829184924",
@@ -891,8 +894,6 @@
       "title": "PhotoCream Pro: Penapis filem",
       "content_text": "Dioptimumkan untuk iPhone Duo. Dibina dengan SDK terkini, apl ini memenuhi seluruh skrin dalam dan melaraskan susun aturnya secara automatik, sama ada peranti dilipat atau dibuka.",
       "tags": [
-        "retro",
-        "filem",
         "grain",
         "suntingan",
         "foto",
@@ -905,10 +906,11 @@
         "buang",
         "kesan",
         "y2k",
-        "gambar"
+        "gambar",
+        "hitam putih"
       ],
       "language": "ms",
-      "date_modified": "2026-10-30T02:23:28Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6780223070",
@@ -1020,17 +1022,17 @@
         "nyenyak",
         "brown",
         "pink",
-        "insomnia",
-        "bayi",
         "relaksasi",
         "meditasi",
         "fokus",
         "belajar",
-        "ADHD",
-        "tinnitus"
+        "kipas",
+        "alam",
+        "laut",
+        "hutan"
       ],
       "language": "ms",
-      "date_modified": "2026-11-15T12:49:45Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6802166527",
@@ -1125,7 +1127,6 @@
       "content_text": "Dioptimumkan untuk iPhone Duo. Dibina dengan SDK terkini, apl ini memenuhi seluruh skrin dalam dan melaraskan susun aturnya secara automatik, sama ada peranti dilipat atau dibuka.",
       "tags": [
         "penggera",
-        "digital",
         "sisi katil",
         "dok",
         "pengecasan",
@@ -1135,11 +1136,11 @@
         "besar",
         "tema",
         "fon",
-        "oled",
-        "standby"
+        "zon waktu",
+        "bulan"
       ],
       "language": "ms",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6807335593",
@@ -1281,23 +1282,20 @@
       "title": "UsageNow: Penjejak Guna AI",
       "content_text": "Tersekat pada had AI di tengah-tengah kerja? UsageNow menunjukkan baki setiap pelan AI anda dan bila tepatnya ia diset semula, terus pada Skrin Utama, dan memberi amaran sebelum had anda habis.",
       "tags": [
-        "code",
-        "dev",
         "pembangun",
-        "usage",
-        "tracker",
         "kuota",
         "penggunaan",
         "pembilang",
-        "token",
-        "widget",
-        "reset",
-        "quota",
-        "meter",
-        "monitor"
+        "pengaturcara",
+        "baki",
+        "kiraan detik",
+        "amaran",
+        "mingguan",
+        "sesi",
+        "akaun"
       ],
       "language": "ms",
-      "date_modified": "2026-10-11T13:38:16Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6790467886",
@@ -1307,22 +1305,20 @@
       "content_text": "Dioptimumkan untuk iPhone Duo. Dibina dengan SDK terkini, apl ini memenuhi seluruh skrin dalam dan melaraskan susun aturnya secara automatik, sama ada peranti dilipat atau dibuka.",
       "tags": [
         "kependaman",
-        "jitter",
-        "ipv6",
-        "tcp",
         "nod",
-        "pengulang",
         "laporan",
         "pdf",
         "sejarah",
         "widget",
         "jam",
         "kestabilan",
-        "router",
-        "gentian"
+        "gentian",
+        "sambungan",
+        "ujian",
+        "laman web"
       ],
       "language": "ms",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6793414462",
@@ -1356,7 +1352,7 @@
       "content_text": "Dioptimumkan untuk iPhone Duo. Dibina dengan SDK terkini, apl ini memenuhi seluruh skrin dalam dan melaraskan susun aturnya secara automatik, sama ada peranti dilipat atau dibuka.",
       "tags": [
         "kosa kata",
-        "bahasa inggeris",
+        "inggeris",
         "hafalan",
         "jepun",
         "korea",
@@ -1369,7 +1365,7 @@
         "harian"
       ],
       "language": "ms",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6789917808",
@@ -1381,17 +1377,18 @@
         "sepanyol",
         "perancis",
         "jerman",
-        "mandarin",
         "itali",
         "sebutan",
         "ayat contoh",
         "tahap",
         "ulang kaji",
         "perbendaharaan",
-        "kad"
+        "kad",
+        "jepun",
+        "korea"
       ],
       "language": "ms",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6806776579",

@@ -13,7 +13,7 @@
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
     "dateModified": "2026-11-15",
-    "contentDigest": "2e705e6133a59676d866c2b31370645ab6a26d6f56af573a0826503639769f45",
+    "contentDigest": "282bcc5b6464e82114ffd6f448957ef0b3ed84009e98d9264ad03d2820dcb103",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
     "recordCount": 60
@@ -252,7 +252,6 @@
       "content_text": "Optimalizálva az iPhone Duo készülékhez. A legújabb SDK-val készült alkalmazás kitölti a teljes belső kijelzőt, és automatikusan igazítja az elrendezést, akár össze van hajtva a készülék, akár ki van nyitva.",
       "tags": [
         "hangszintmérő",
-        "decibel",
         "zajmérés",
         "hangerő",
         "horkolás",
@@ -260,10 +259,10 @@
         "frekvencia",
         "mikrofon",
         "hallásvédelem",
-        "FFT"
+        "decibelmérő"
       ],
       "language": "hu",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6821790092",
@@ -360,21 +359,21 @@
       "title": "GBAGo: Vizuális mentések",
       "content_text": "Optimalizálva az iPhone Duo készülékhez. A legújabb SDK-val készült alkalmazás kitölti a teljes belső kijelzőt, és automatikusan igazítja az elrendezést, akár össze van hajtva a készülék, akár ki van nyitva.",
       "tags": [
+        "emulátor",
+        "gba",
+        "gbc",
         "játékok",
+        "retro",
         "konzol",
-        "emulálás",
-        "mentés",
-        "csalások",
-        "kazetta",
-        "kontroller",
         "kézikonzol",
+        "csalókódok",
+        "cheat",
+        "kontroller",
         "offline",
-        "gyerekkor",
-        "pixel",
-        "fps"
+        "gyorsmentés"
       ],
       "language": "hu",
-      "date_modified": "2026-11-01T03:09:58Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6794039979",
@@ -702,17 +701,17 @@
         "adatvédelem",
         "feketítés",
         "dokumentum",
-        "igazolvány",
         "szerződés",
         "számla",
         "metaadat",
         "anonimizálás",
         "gdpr",
         "pdf",
-        "fénykép"
+        "fénykép",
+        "nyugta"
       ],
       "language": "hu",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6829184924",
@@ -855,7 +854,6 @@
       "title": "PhotoCream Pro: Filmszűrők",
       "content_text": "Optimalizálva az iPhone Duo készülékhez. A legújabb SDK-val készült alkalmazás kitölti a teljes belső kijelzőt, és automatikusan igazítja az elrendezést, akár össze van hajtva a készülék, akár ki van nyitva.",
       "tags": [
-        "vintage",
         "analóg",
         "szemcse",
         "fotó",
@@ -870,7 +868,7 @@
         "y2k"
       ],
       "language": "hu",
-      "date_modified": "2026-10-30T02:23:28Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6780223070",
@@ -969,20 +967,19 @@
       "content_text": "A Sereno alvóhanggéppé alakítja az iPhone-odat: rétegezz esőt, tengert, tüzet, ventilátort és fehér, rózsaszín vagy barna zajt, és állítsd be minden réteg hangerejét a saját keverékedhez. A természeti hangok valódi terepfelvételek, amelyek hallgatás közben véletlenszerűen újrarendeződnek – sosem fix ismétlés –, és több mint 1000 kész keverék segít az indulásban. Az elalvási időzítő lágyan elhalkul, a napfelkelte-ébresztő madárcsicsergéssel köszönt, a lejátszás pedig offline és a lezárási képernyőn is folytatódik.",
       "tags": [
         "elalvás",
-        "fülzúgás",
         "vihar",
         "barna",
         "rózsaszín",
-        "álmatlanság",
-        "baba",
         "relaxáció",
         "meditáció",
         "fókusz",
         "tanulás",
-        "ADHD"
+        "ventilátor",
+        "természet",
+        "hullámok"
       ],
       "language": "hu",
-      "date_modified": "2026-11-15T12:49:45Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6802166527",
@@ -1074,8 +1071,6 @@
       "title": "Stay Clock: Asztali Óra",
       "content_text": "Optimalizálva az iPhone Duo készülékhez. A legújabb SDK-val készült alkalmazás kitölti a teljes belső kijelzőt, és automatikusan igazítja az elrendezést, akár össze van hajtva a készülék, akár ki van nyitva.",
       "tags": [
-        "oled",
-        "smartwatch",
         "widgetek",
         "töltő",
         "éjszakai mód",
@@ -1083,10 +1078,12 @@
         "éjjeliszekrény",
         "időzóna",
         "témák",
-        "ébresztő"
+        "ébresztő",
+        "nagy",
+        "világóra"
       ],
       "language": "hu",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6807335593",
@@ -1234,24 +1231,20 @@
       "title": "UsageNow: MI-használat követő",
       "content_text": "Kifogyott az AI-keretből egy feladat közepén? A UsageNow megmutatja, mennyi maradt az egyes AI-csomagokból, és pontosan mikor újulnak meg, közvetlenül a Főképernyőn. Időben szól, mielőtt kifogyna a keret.",
       "tags": [
-        "ai",
         "code",
-        "dev",
         "fejlesztő",
-        "usage",
-        "tracker",
         "fogyasztás",
         "kvóta",
         "számláló",
         "token",
-        "widget",
-        "reset",
         "quota",
-        "meter",
-        "monitor"
+        "programozó",
+        "hátralévő",
+        "visszaszámlálás",
+        "értesítés"
       ],
       "language": "hu",
-      "date_modified": "2026-10-11T13:38:16Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6790467886",
@@ -1261,20 +1254,19 @@
       "content_text": "Optimalizálva az iPhone Duo készülékhez. A legújabb SDK-val készült alkalmazás kitölti a teljes belső kijelzőt, és automatikusan igazítja az elrendezést, akár össze van hajtva a készülék, akár ki van nyitva.",
       "tags": [
         "késleltetés",
-        "jitter",
-        "ipv6",
         "csomópont",
-        "jelismétlő",
         "roaming",
         "jelentés",
         "pdf",
         "előzmények",
         "widget",
         "óra",
-        "stabilitás"
+        "stabilitás",
+        "kapcsolat",
+        "teszt"
       ],
       "language": "hu",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6793414462",
@@ -1315,11 +1307,11 @@
         "magolás",
         "szokás",
         "kezdő",
-        "offline",
-        "nyelvvizsga"
+        "nyelvvizsga",
+        "kiejtés"
       ],
       "language": "hu",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6789917808",

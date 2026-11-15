@@ -1,5 +1,5 @@
 ---
-title: "HoursTag: Часы для покупки — Почасовая ставка и траты | iOS App"
+title: "HoursTag: Часы для покупки — Почасовая оплата и траты | iOS App"
 lang: "ru"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/ru/index.html"
 modified: "2026-11-15"
@@ -9,7 +9,7 @@ purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# HoursTag: Часы для покупки — Почасовая ставка и траты | iOS App
+# HoursTag: Часы для покупки — Почасовая оплата и траты | iOS App
 
 Сколько это стоит на самом деле? Не в рублях, а в часах вашей жизни.
 

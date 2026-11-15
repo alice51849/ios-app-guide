@@ -13,7 +13,7 @@
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
     "dateModified": "2026-11-15",
-    "contentDigest": "2e705e6133a59676d866c2b31370645ab6a26d6f56af573a0826503639769f45",
+    "contentDigest": "282bcc5b6464e82114ffd6f448957ef0b3ed84009e98d9264ad03d2820dcb103",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
     "recordCount": 60
@@ -36,10 +36,10 @@
         "flashcard",
         "registratore",
         "vocale",
-        "offline"
+        "calligrafia"
       ],
       "language": "it",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6791658210",
@@ -247,22 +247,20 @@
       "title": "dB Halo: Fonometro",
       "content_text": "Ottimizzata per iPhone Duo. Realizzata con l’SDK più recente, l’app riempie tutto lo schermo interno e adatta il layout automaticamente, sia da chiuso che da aperto.",
       "tags": [
-        "decibel",
         "rumore",
         "misuratore",
         "suono",
-        "volume",
         "acustica",
         "analizzatore",
         "frequenza",
         "russare",
         "udito",
-        "RTA",
-        "FFT",
-        "livello"
+        "livello",
+        "microfono",
+        "calibrazione"
       ],
       "language": "it",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6821790092",
@@ -362,19 +360,21 @@
       "content_text": "Ottimizzata per iPhone Duo. Realizzata con l’SDK più recente, l’app riempie tutto lo schermo interno e adatta il layout automaticamente, sia da chiuso che da aperto.",
       "tags": [
         "emulatore",
+        "gba",
+        "gbc",
         "giochi",
+        "retro",
+        "retrogame",
         "console",
-        "salvataggio",
-        "trucchi",
-        "cartuccia",
-        "controller",
-        "arcade",
         "portatile",
+        "trucchi",
+        "controller",
         "offline",
-        "retrogame"
+        "veloce",
+        "turbo"
       ],
       "language": "it",
-      "date_modified": "2026-11-01T03:09:58Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6794039979",
@@ -858,7 +858,6 @@
         "analogica",
         "usa",
         "getta",
-        "vintage",
         "retro",
         "grana",
         "foto",
@@ -870,7 +869,7 @@
         "editor"
       ],
       "language": "it",
-      "date_modified": "2026-10-30T02:23:28Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6780223070",
@@ -972,18 +971,18 @@
       "tags": [
         "marrone",
         "rosa",
-        "acufene",
         "temporale",
         "onde",
-        "insonnia",
-        "neonato",
         "rilassamento",
         "meditazione",
         "concentrazione",
-        "ADHD"
+        "ventilatore",
+        "natura",
+        "studio",
+        "camino"
       ],
       "language": "it",
-      "date_modified": "2026-11-15T12:49:45Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6802166527",
@@ -1077,19 +1076,19 @@
       "content_text": "Ottimizzata per iPhone Duo. Realizzata con l’SDK più recente, l’app riempie tutto lo schermo interno e adatta il layout automaticamente, sia da chiuso che da aperto.",
       "tags": [
         "comodino",
-        "standby",
         "caricatore",
-        "burn-in",
-        "oled",
         "widget",
         "digitale",
         "sveglia",
         "schermo blocco",
         "formato 24h",
-        "grande"
+        "grande",
+        "notte",
+        "mondo",
+        "mese"
       ],
       "language": "it",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6807335593",
@@ -1228,24 +1227,21 @@
       "title": "UsageNow: Monitor utilizzo IA",
       "content_text": "Hai esaurito il limite dell’IA a metà lavoro? UsageNow ti mostra quanto resta di ogni piano IA e quando si azzera esattamente, direttamente nella schermata Home, e ti avvisa prima che il limite finisca.",
       "tags": [
-        "ai",
         "code",
-        "dev",
         "sviluppatore",
-        "usage",
-        "tracker",
         "consumo",
         "quota",
         "contatore",
         "token",
-        "widget",
-        "reset",
         "llm",
-        "meter",
-        "sessione"
+        "sessione",
+        "programmatore",
+        "residuo",
+        "avviso",
+        "account"
       ],
       "language": "it",
-      "date_modified": "2026-10-11T13:38:16Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6790467886",
@@ -1255,21 +1251,20 @@
       "content_text": "Ottimizzata per iPhone Duo. Realizzata con l’SDK più recente, l’app riempie tutto lo schermo interno e adatta il layout automaticamente, sia da chiuso che da aperto.",
       "tags": [
         "latenza",
-        "jitter",
-        "ipv6",
-        "tcp",
         "nodo",
-        "ripetitore",
         "roaming",
         "rapporto",
         "pdf",
         "cronologia",
         "widget",
         "orologio",
-        "stabilità"
+        "stabilità",
+        "connessione",
+        "test",
+        "analisi"
       ],
       "language": "it",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6793414462",
@@ -1312,11 +1307,10 @@
         "memorizzare",
         "abitudine",
         "principianti",
-        "minuto",
-        "offline"
+        "minuto"
       ],
       "language": "it",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6789917808",

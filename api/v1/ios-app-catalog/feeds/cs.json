@@ -13,7 +13,7 @@
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
     "dateModified": "2026-11-15",
-    "contentDigest": "2e705e6133a59676d866c2b31370645ab6a26d6f56af573a0826503639769f45",
+    "contentDigest": "282bcc5b6464e82114ffd6f448957ef0b3ed84009e98d9264ad03d2820dcb103",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
     "recordCount": 60
@@ -37,11 +37,11 @@
         "zkouška",
         "přednášky",
         "diktafon",
-        "offline",
-        "psaní"
+        "psaní",
+        "pero"
       ],
       "language": "cs",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6791658210",
@@ -372,22 +372,24 @@
       "title": "GBAGo: Vizuální uložené",
       "content_text": "Optimalizováno s ohledem na iPhone Duo. Aplikace je sestavena s nejnovějším SDK, vyplní celý vnitřní displej a automaticky upraví rozvržení, ať je zařízení složené, nebo rozložené.",
       "tags": [
+        "emulátor",
+        "gba",
+        "gbc",
         "hry",
+        "retro",
         "konzole",
-        "emulace",
-        "uložení",
-        "cheaty",
-        "cartridge",
-        "ovladač",
         "kapesní",
-        "nostalgie",
+        "cheaty",
+        "ovladač",
         "offline",
-        "dětství",
+        "rychlý",
+        "turbo",
+        "záloha",
         "gamepad",
-        "fps"
+        "pixel"
       ],
       "language": "cs",
-      "date_modified": "2026-11-01T03:09:58Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6794039979",
@@ -721,16 +723,16 @@
         "anonymizace",
         "cenzura",
         "osobní údaje",
-        "občanský průkaz",
-        "pas",
         "lékařská zpráva",
         "smlouva",
         "metadata",
         "pdf",
-        "soukromí"
+        "soukromí",
+        "faktura",
+        "účtenka"
       ],
       "language": "cs",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6829184924",
@@ -884,8 +886,6 @@
       "title": "PhotoCream Pro: Filmové filtry",
       "content_text": "Optimalizováno s ohledem na iPhone Duo. Aplikace je sestavena s nejnovějším SDK, vyplní celý vnitřní displej a automaticky upraví rozvržení, ať je zařízení složené, nebo rozložené.",
       "tags": [
-        "vintage",
-        "film",
         "fotoaparát",
         "úprava",
         "fotek",
@@ -895,13 +895,15 @@
         "zrno",
         "estetika",
         "foto",
-        "editor",
         "35mm",
         "efekt",
-        "y2k"
+        "y2k",
+        "kino",
+        "křivky",
+        "editor"
       ],
       "language": "cs",
-      "date_modified": "2026-10-30T02:23:28Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6780223070",
@@ -1009,18 +1011,18 @@
         "růžový",
         "usínání",
         "bouřka",
-        "nespavost",
-        "miminko",
         "relaxace",
         "meditace",
         "soustředění",
         "učení",
-        "ADHD",
-        "tinnitus",
-        "vlny"
+        "vlny",
+        "ventilátor",
+        "příroda",
+        "oceán",
+        "krb"
       ],
       "language": "cs",
-      "date_modified": "2026-11-15T12:49:45Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6802166527",
@@ -1118,7 +1120,6 @@
         "pohotovostní režim",
         "dokovací stanice",
         "nabíjení",
-        "oled",
         "widgety",
         "digitální",
         "motivy",
@@ -1126,7 +1127,7 @@
         "velké"
       ],
       "language": "cs",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6807335593",
@@ -1279,23 +1280,21 @@
       "content_text": "Došel vám limit AI uprostřed práce? UsageNow ukazuje, kolik zbývá z každého plánu AI a kdy přesně se obnoví, přímo na ploše. Upozorní vás dřív, než limit dojde.",
       "tags": [
         "code",
-        "dev",
         "vývojář",
-        "usage",
-        "tracker",
         "spotřeba",
         "kvóta",
         "počítadlo",
         "token",
-        "widget",
-        "reset",
         "quota",
-        "meter",
-        "monitor",
-        "llm"
+        "llm",
+        "programátor",
+        "zbývá",
+        "obnovení",
+        "odpočet",
+        "upozornění"
       ],
       "language": "cs",
-      "date_modified": "2026-10-11T13:38:16Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6790467886",
@@ -1305,11 +1304,7 @@
       "content_text": "Optimalizováno s ohledem na iPhone Duo. Aplikace je sestavena s nejnovějším SDK, vyplní celý vnitřní displej a automaticky upraví rozvržení, ať je zařízení složené, nebo rozložené.",
       "tags": [
         "latence",
-        "jitter",
-        "ipv6",
-        "tcp",
         "uzel",
-        "extender",
         "roaming",
         "zpráva",
         "pdf",
@@ -1317,10 +1312,13 @@
         "widget",
         "hodinky",
         "stabilita",
-        "optika"
+        "optika",
+        "připojení",
+        "test",
+        "nestabilní"
       ],
       "language": "cs",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-15T18:03:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6793414462",

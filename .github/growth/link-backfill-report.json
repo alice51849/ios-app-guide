@@ -1,11 +1,11 @@
 {
- "generated": "2026-11-15T06:42:35Z",
+ "generated": "2026-11-15T22:55:17Z",
  "mode": "apply",
  "counts": {
-  "ok_reply": 68,
+  "ok_reply": 69,
   "unknown_app": 48,
-  "ok_backfilled_earlier": 87,
-  "ok_store_only": 643,
+  "ok_backfilled_earlier": 91,
+  "ok_store_only": 639,
   "backfilled": 2,
   "ok_bio_link": 68,
   "ok_caption": 4,
@@ -13,6 +13,18 @@
   "missing": 3
  },
  "rows": [
+  {
+   "channel": "threads",
+   "id": "18120801365605235",
+   "permalink": "https://www.threads.com/@hourstag.app/post/Dfw20hYG1vV",
+   "date": "2026-11-15",
+   "app": "lumiweather",
+   "status": "ok_reply",
+   "text": "明天（11/16 週一）穿什麼？ 台北 20–24°C 台中 20–27°C 高雄 24–28°C 以台北來說，舒服：短袖或薄長袖，進冷氣房帶一件薄外套。 台中明天可能下雨，記得帶傘。 #明天穿什麼 #天氣 預報：MET Norway，僅供參考，出門前以實際天氣為準。 我做的 L",
+   "why": "brand",
+   "ios_id": "6779552704",
+   "locale": "zh-Hant"
+  },
   {
    "channel": "threads",
    "id": "18099304913659256",
@@ -2115,16 +2127,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctjB7MlOIQ",
    "date": "2026-08-31",
    "app": "lumimathpro",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "Lumi Math Pro: Kids Numbers Early math, made fun The whole number galaxy for kids. Every counting and math adventure in one place — playful,",
    "why": "url+brand",
    "ios_id": "6776958488",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "18109502948628331",
-   "at": "2026-11-15T06:40:08Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",
@@ -2744,16 +2751,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctjHpJDY0R",
    "date": "2026-08-31",
    "app": "lumimission",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "Lumi Mission Planet Reward Chart for Kids Routines Turn chores and bedtime into a game kids love. Build daily habits with rewards that stick",
    "why": "url+brand",
    "ios_id": "6779750237",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "18339539686263882",
-   "at": "2026-11-15T06:40:08Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",
@@ -2783,11 +2785,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/Dctirn9Au0u",
    "date": "2026-08-31",
    "app": "lockhour",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "LockHour Pro: Block Apps App Blocker & Focus Timer Lock away distractions. Start a focus session, shield your apps, build streaks and reclai",
    "why": "url+brand",
    "ios_id": "6780107485",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "17874309723645120",
+   "at": "2026-11-15T22:52:46Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -3821,7 +3828,7 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/Dcti2z3ifCp",
    "date": "2026-08-31",
    "app": "lumiletterspro",
-   "status": "ok_store_only",
+   "status": "ok_backfilled_earlier",
    "text": "Lumi Letters Pro: ABC Phonics ABC Phonics: Trace & Read The complete phonics adventure. Letter sounds, tracing, and word-building kids love ",
    "why": "url+brand",
    "ios_id": "6778491147",
@@ -3951,11 +3958,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctixjWk4EK",
    "date": "2026-08-31",
    "app": "lumiletters",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "Lumi Letters Lite: ABC Kids ABC Tracing & Phonics Games A joyful first ABC adventure! Trace letters, hear phonics, play mini-games and build",
    "why": "url+brand",
    "ios_id": "6778748533",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "18110867042220801",
+   "at": "2026-11-15T22:52:46Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -4489,7 +4501,7 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/Dcti8WkDQ92",
    "date": "2026-08-31",
    "app": "lumimath",
-   "status": "ok_store_only",
+   "status": "ok_backfilled_earlier",
    "text": "Lumi Math Planet: Explorer Preschool Math Games Ages 3-6 Make math an adventure. A whole galaxy of counting and number games kids beg to pla",
    "why": "url+brand",
    "ios_id": "6778269699",

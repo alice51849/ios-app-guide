@@ -708,6 +708,63 @@ PAGE_SPECS: list[dict] = [
         "related": [("ko/tripbeecute.html", "TripBee Cute 자세히 보기")],
         "legal": "이 페이지의 내용은 2026년 11월 15일에 확인한 TripBee Cute의 App Store와 Google Play 앱 설명을 바탕으로 해요. 스토어 내용은 바뀔 수 있어요. 날씨는 Open-Meteo에서 여행지 정보만 사용해 가져와요. 소개한 앱은 독립 개발 앱이에요.",
     },
+    # 2026-11-16 美國英文意圖頁（CLAUDE 1.7 美國搜尋曝光主力；小組 F）：iTunes 公開搜尋 country=us 實測本款
+    # 「cute trip planner」#34（185 款）、「trip planner cute」#38（181 款），落在 31～40 名缺口；「cute itinerary」已 #1
+    # （美國店名是 TripBee Cute: Itinerary Maker）不放進 terms，留作對照詞；「travel journal app」「packing list cute」
+    # 前 200 名外也不放。美國不另開 en-US 目錄，沿用 en（美國店）。功能句只取 2026-11-16 讀回的美國店 1.0.3 描述；
+    # Cute Pass 標示照 reports/blitz/tripbeecute_materials.md「付費口徑」，不寫價格、試用。判讀 11-23（+7）。
+    {
+        "key": "tripbeecute", "lang": "en", "pass_wording": True, "updated": "2026-11-16",
+        "slug": "cute-trip-planner-app-itinerary-booklet-us",
+        "terms": ["cute trip planner", "trip planner cute", "cute vacation itinerary", "aesthetic trip planner"],
+        "title": "Cute Trip Planner App: Turn Your Itinerary Into One Illustrated Booklet (Flights, Day Plans, Packing, Countdown)",
+        "desc": "Want a trip planner that is actually cute? What to look for, how to turn booking emails and screenshots into one illustrated booklet with a countdown, flight cards, color-coded day plans and a packing list, and how to plan with friends. Direct US App Store and Google Play links.",
+        "h1": "Cute trip planner: your countdown, flights, color-coded days and packing list in one illustrated booklet",
+        "lead": "People who search the App Store for a cute trip planner usually have the trip half booked already. The flights are in one email, the hotel is in another, the brunch spot is a screenshot, and the group chat has everything else.",
+        "intro": [
+            "Most planning apps look like a spreadsheet or a calendar. They are useful, but opening them does nothing for the excitement of the trip, and a list of rows is hard to scan when you are standing in an airport. A paper planner with stickers looks great, but rewriting a page every time a reservation moves takes a lot of evenings. What most people want is something in between: as quick to edit as a phone, and as nice to flip through as a journal.",
+            "We searched the US App Store for cute trip planner in November 2026. The results were a mix of general itinerary apps, journals and booking tools. Few of them lay out one whole trip, from the countdown to the packing list, as one illustrated page you scroll. Below is what to check before you pick one, and how to build your first booklet in about five minutes.",
+        ],
+        "sections": [
+            ("Five things to check in a cute trip planner", [], [
+                "The whole trip on one page: open the illustrated cover and scroll through the countdown, your flights, every day's plan, then the packing list and notes, instead of jumping between apps.",
+                "Covers you actually like: illustrated covers with cities, landmarks, seasons and travel moods (6 come with the app; Cute Pass adds 51 more and lets you use your own photos as covers).",
+                "Days you can tell apart: each day has its own color, you can name the days and decorate plans with stickers, and a date filter shows one day or the whole trip.",
+                "Keepsakes beside the plan: photos, tickets and notes sit right next to the plan they belong to, with directions in your maps app.",
+                "A glance without opening it: Home Screen and Lock Screen widgets show your next trip on its cover art, and the Apple Watch app shows the countdown and your next plan.",
+            ]),
+            ("Three trips, three ways to plan them", [
+                "A girls' weekend or a holiday-season getaway: name the trip, pick a cover and fill in each day, leaving downtime slots so the plan does not feel rushed. If it rains, switch to the rainy-day plan you copied from the main plan.",
+                "Winter break or spring break with flights: add a flight card styled like a boarding pass, with times, terminals and booking codes, and the countdown to departure begins. The weather and local time at your destination sit right there too.",
+                "A family vacation, a road trip or a cruise with friends: share a web booklet, a single web file anyone can open in a browser or chat app, even offline, with a countdown that keeps running. Shared costs can be split right on the trip: log who paid, split evenly or enter each person's amount, then settle up to see who owes whom, with live exchange rates across currencies.",
+            ], []),
+            ("Planning together and planning from a spreadsheet", [
+                "Want everyone editing the same plan? Invite friends through iCloud to edit one booklet together, and changes sync to each device (Cute Pass; friends need TripBee Cute too). A smart packing list based on who is coming, the season and trip length is also part of Cute Pass, while the regular packing list is in the app from the start.",
+                "Already have the itinerary in a spreadsheet? Export the CSV template, fill it in yourself or ask the AI assistant you already use to fill it in, then import it and your booklet is ready. Without buying anything you can keep one booklet at a time and use 6 covers, CSV import, the web booklet, flights, day plans, expense splitting, the packing list, widgets and the Apple Watch app. Cute Pass is a one-time purchase inside the app, not a recurring plan.",
+                "No account, no ads and no tracking. Your booklets stay on your device. Weather comes from Open-Meteo and uses only your destination. Dark Mode, iPad and 50 languages are supported.",
+            ], []),
+        ],
+        "steps_title": "Make your first cute trip booklet in five minutes",
+        "steps": [
+            "Open TripBee Cute, add a new trip and give it a name.",
+            "Pick an illustrated cover of a city, landmark, season or travel mood.",
+            "Add a flight card and the countdown to departure begins.",
+            "Fill in each day: name it, add plans and stickers, and keep photos and tickets next to each plan.",
+            "Build your packing list, share a web booklet with your travel buddies, and check off your plans day by day.",
+        ],
+        "cards": [
+            ("tripbeecute", "Stop digging through emails, screenshots and notes: TripBee Cute turns your whole trip into one cute illustrated booklet, with the countdown, destination weather and local time, boarding-pass style flight cards, color-coded day plans and the packing list on a single page. Keep photos, tickets and notes beside each plan, split shared costs with your travel buddies, and share a web booklet that opens in any browser, even offline. Widgets, Apple Watch, iPad, Dark Mode and 50 languages. No account, no ads and no tracking."),
+        ],
+        "faqs": [
+            ("Can my friends see the itinerary without the app?", "Yes. Share a web booklet: a single web file that opens in any browser or chat app, even offline, and keeps the countdown running."),
+            ("Can we plan the trip together?", "Yes, with Cute Pass: invite friends through iCloud to edit the same booklet, and changes sync to each device. Friends need TripBee Cute too."),
+            ("Is Cute Pass a monthly charge?", "No. Cute Pass is a one-time purchase inside the app, not a recurring plan. Without it you can keep one booklet at a time and use 6 covers, flights, day plans, expense splitting, the packing list, widgets and the Apple Watch app."),
+            ("Do I need to sign up?", "No. There is no account, no ads and no tracking, and your booklets stay on your device."),
+        ],
+        "related": [("en-US/tripbeecute.html", "TripBee Cute: full app overview"),
+                    ("en/seasonal/tripbeecute-what-it-is-who-for-pricing-vs-others-en.html", "What is TripBee Cute? Who it is for and how Cute Pass works")],
+        "legal": "Facts on this page come from the TripBee Cute description on the US App Store, read on November 16, 2026; store listings can change. App Store search results are from a real search of the US App Store in November 2026, and rankings change. Weather comes from Open-Meteo using only your destination. The app is made by an independent developer.",
+    },
 ]
 
 

@@ -19,6 +19,7 @@ import gw_campaign  # noqa: E402
 PATCHED = ("LANGS", "APP_IDS", "PAGE_SPECS", "BANNED", "dedicated_size", "sitemap_name", "render")
 
 
+US_SLUG = "cute-trip-planner-app-itinerary-booklet-us"
 AI_QA_SLUGS = [f"tripbeecute-what-it-is-who-for-pricing-vs-others-{s}" for s in ("en", "zhhant", "ja", "ko")]
 
 
@@ -36,7 +37,7 @@ class TripBeeCutePageTests(unittest.TestCase):
 
     def test_taiwan_korea_and_hong_kong_native_pages(self):
         self.assertEqual([spec["lang"] for spec in gen.PAGE_SPECS], ["zh-Hant", "ko", "zh-Hant", "zh-Hant", "zh-Hant", "ja", "en-AU",
-                                                                "en", "zh-Hant", "ja", "ko"])
+                                                                "en", "zh-Hant", "ja", "ko", "en"])
         self.assertEqual({spec["key"] for spec in gen.PAGE_SPECS}, {"tripbeecute"})
         self.assertIn("可愛 旅行手帳", gen.PAGE_SPECS[0]["terms"])
         self.assertIn("다꾸 여행", gen.PAGE_SPECS[1]["terms"])
@@ -48,7 +49,7 @@ class TripBeeCutePageTests(unittest.TestCase):
         self.assertIn("旅行 手賬", gen.PAGE_SPECS[4]["terms"])
         self.assertIn("旅行 手帳", gen.PAGE_SPECS[5]["terms"])
         self.assertIn("cute travel journal", gen.PAGE_SPECS[6]["terms"])
-        self.assertEqual(len(self.pages), 11)
+        self.assertEqual(len(self.pages), 12)
 
     def test_card_links_storefront_with_campaign(self):
         for spec in gen.PAGE_SPECS:
@@ -83,7 +84,8 @@ class TripBeeCutePageTests(unittest.TestCase):
                           "lvyou-shouzhang-lvxing-qingdan-dabao-xingli-zhhant",
                           "lvxing-shouzhang-aomen-chufa-jiaren-tongxing-mo",
                           "ryoko-techo-app-kawaii-ensei-joshitabi",
-                          "cute-travel-journal-app-holiday-countdown-en-au"] + AI_QA_SLUGS)
+                          "cute-travel-journal-app-holiday-countdown-en-au"] + AI_QA_SLUGS
+                         + [US_SLUG])
         self.assertIsNotNone(gen.BANNED.search("무료"))
         self.assertIsNone(gen.PASS_BANNED.search("무료"))
         for bad in ("免費", "Free", "NT$90", "3,300원"):
@@ -240,6 +242,26 @@ class TripBeeCutePageTests(unittest.TestCase):
         for spec in specs:
             first_screen = built[g3.page_relative(spec)].split('<nav class="toc"', 1)[0]
             self.assertIn(play, first_screen, spec["slug"])
+
+    def test_us_cute_trip_planner_page(self):
+        """2026-11-16 美國英文意圖頁：美國店直連、主詞 cute trip planner、對照詞 cute itinerary 不放、Cute Pass 標示。"""
+        us = next(s for s in gen.PAGE_SPECS if s["slug"] == US_SLUG)
+        self.assertEqual(us["lang"], "en")
+        self.assertEqual(us["terms"][:2], ["cute trip planner", "trip planner cute"])
+        self.assertNotIn("cute itinerary", us["terms"])  # 美國已 #1，留作對照詞
+        self.assertTrue(g3.page_relative(us).startswith("en/seasonal/"))
+        source = html.unescape(self.pages[g3.page_relative(us)])
+        self.assertIn("https://apps.apple.com/us/app/id6826987407?", source)
+        text = g3.visible_text(source)
+        for word in ("Cute Pass", "one-time purchase", "web booklet", "packing list"):
+            self.assertIn(word, text)
+        # 付費功能都標 Cute Pass
+        self.assertIn("edit one booklet together, and changes sync to each device (Cute Pass", text)
+        # 與澳洲頁、AI 問答頁的標題與開頭不同
+        for other in gen.PAGE_SPECS:
+            if other is not us:
+                self.assertNotEqual(us["title"], other["title"])
+                self.assertNotEqual(us["lead"], other["lead"])
 
     def test_dedicated_text_floor(self):
         for spec in gen.PAGE_SPECS:

@@ -2,7 +2,7 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-11-16",
-  "content_digest": "bab4c4d8c77b884dfda351be3e5584a4d199e3b56c145fcf24adc9d448f1fd01",
+  "content_digest": "ea0af841c9100fcc01d0c2e1e1d39947ca795348397bdaca0dce5bc7746fbe04",
   "locale": "ja",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -69,8 +69,8 @@
     {
       "key": "aibriefpack",
       "app_store_id": "6791658210",
-      "name": "AI Brief：資料から AI プロンプト",
-      "summary": "iPhone Duoに最適化。最新の開発キットでビルドしており、内側のディスプレイ全体に表示され、折りたたんでも開いても自動でレイアウトが調整されます。",
+      "name": "AI Brief：資料から AI プロンプト作成",
+      "summary": "スクリーンショット、PDF、ファイル、メモを、目的・事実・出典が整理された1つのAIプロンプトにまとめます。 事実ごとに出典と信頼度が残るので、AIに渡す前に確認できます。ワンタップでコピーして、どのAIチャットにも貼り付けられます。 文字認識と個人情報の検出は端末上で行われ、残す・置き換える・削除するかは自分で決められます。",
       "category": "productivity",
       "search_terms": [
         "まとめ",
@@ -382,7 +382,7 @@
       "key": "cyca",
       "app_store_id": "6782251621",
       "name": "Cyca 生理・排卵日トラッカー",
-      "summary": "iPhone Duoに最適化。最新の開発キットでビルドしており、内側のディスプレイ全体に表示され、折りたたんでも開いても自動でレイアウトが調整されます。",
+      "summary": "生理を記録すると、Cyca が次の生理・妊娠しやすい時期・排卵日を予測。周期全体がカレンダーでひと目でわかり、記録するたびに調整されます。 「今日の体調予報」では、周期のどの時期かをもとに、今日の元気・気分・肌の調子を確認。生理痛や経血量、気分の記録も数秒で終わります。 アカウント不要、クラウドなし。データは iPhone の中だけに保存され、オフラインでも使えます。",
       "category": "health",
       "search_terms": [
         "生理周期",
@@ -2953,7 +2953,7 @@
       "key": "wordmatelite",
       "app_store_id": "6797601720",
       "name": "Wordmate Lite 1日5単語",
-      "summary": "iPhone Duoに最適化。最新の開発キットでビルドしており、内側のディスプレイ全体に表示され、折りたたんでも開いても自動でレイアウトが調整されます。",
+      "summary": "1日5語を約1分で。英語、韓国語、中国語など44言語から選べて、旅行、外食、買い物といった身近な場面から始められます。 5語の小道を一歩ずつ進み、単語ごとに発音を聞けます。終わると、その日に覚えた5語がそのまま一覧で表示されます。 連続日数や、言語・テーマごとの進み具合がひと目でわかり、オフラインでも学べます。",
       "category": "education",
       "search_terms": [
         "英単語",

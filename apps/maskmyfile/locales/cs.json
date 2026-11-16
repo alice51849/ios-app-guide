@@ -28,5 +28,19 @@
   "storeTitle": "Nákupy jsou jediná síťová služba",
   "storeText": "Apple zpracovává volitelný doživotní nákup a jeho obnovení přes StoreKit. Mask My File nepoužívá VPN, NetworkExtension, proxy server, tunel, DNS filtr ani síťové směrování.",
   "retentionTitle": "Vy určujete, co zůstane",
-  "retentionText": "Originály se nikdy nepřepisují. Dočasné pracovní soubory, uložené projekty, mapování úložiště zástupných textů a data soukromé relace zůstávají jen tak, jak vysvětluje každá funkce. Smažte je v aplikaci nebo aplikaci odeberte, abyste vymazali její lokální kontejner."
+  "retentionText": "Originály se nikdy nepřepisují. Dočasné pracovní soubory, uložené projekty, mapování úložiště zástupných textů a data soukromé relace zůstávají jen tak, jak vysvětluje každá funkce. Smažte je v aplikaci nebo aplikaci odeberte, abyste vymazali její lokální kontejner.",
+  "faceDataTitle": "Údaje o obličeji (aplikace pro iOS)",
+  "faceDataScope": "Sekce aktualizována 2026-11-16. Tato sekce se vztahuje na aplikaci Mask My File pro iOS v App Store.",
+  "faceDataH1": "1. Jaké údaje o obličeji aplikace používá",
+  "faceDataP1": "Když naskenujete obrázek nebo stránku PDF, samostatně nebo v dávce, Mask My File používá framework Apple Vision běžící v zařízení k detekci obličejů. U každého obličeje jsou jedinými údaji o obličeji, které aplikace používá, poloha obdélníku kolem obličeje na dané stránce a spolehlivost detekce. Při vytvoření chráněné kopie aplikace spustí stejnou detekci ještě jednou na chráněné kopii, aby ověřila, že žádný vybraný obličej už není vidět; tento výsledek se používá pouze k této kontrole. Aplikace neprovádí rozpoznávání ani identifikaci obličejů, nevytváří šablonu obličeje, otisk obličeje ani jiný biometrický identifikátor a nesrovnává obličeje.",
+  "faceDataH2": "2. Jak se údaje o obličeji používají",
+  "faceDataP2": "Tyto obdélníky se používají pouze k zobrazení navržených oblastí obličejů na kontrolní obrazovce, kde můžete každou z nich ponechat, změnit nebo odebrat (obličeje s vyšší spolehlivostí jsou předvybrány), a k zakrytí obličejů, které ponecháte vybrané, v chráněné kopii, kterou exportujete (ve výchozím nastavení plným blokem). Nepoužívají se k reklamě, analytice, sledování, profilování ani k žádnému jinému účelu.",
+  "faceDataH3": "3. Sdílení a třetí strany",
+  "faceDataP3": "Údaje o obličeji se nikdy nenahrávají, neprodávají, nesdílejí ani neposkytují vývojáři či jakékoli třetí straně. Aplikace neodesílá žádné síťové požadavky týkající se vašich souborů, jejich obsahu ani výsledků detekce; její jedinou síťovou službou je Apple StoreKit pro nákup a obnovení nákupu. Neobsahuje žádnou reklamní, analytickou, sledovací ani datovou sadu SDK třetích stran.",
+  "faceDataH4": "4. Kde se údaje o obličeji ukládají",
+  "faceDataP4": "Obdélníky obličejů se uchovávají pouze v paměti vašeho zařízení v aktivním pracovním prostoru kontroly a nikdy se nezapisují do úložiště jako údaje o obličeji. Soukromá relace je ve výchozím nastavení zapnutá. Pokud ji vypnete, Projekty ukládají v tomto zařízení původní soubor a chráněnou kopii spolu s počtem chráněných položek a jejich kategoriemi (například „obličej“ (face)), nikoli však s polohami obličejů. Tyto soubory jsou vaše vlastní obrázky a mohou zobrazovat obličeje.",
+  "faceDataH5": "5. Jak dlouho se údaje o obličeji uchovávají",
+  "faceDataP5": "Obdélníky obličejů se zahodí, když se vyčistí pracovní prostor kontroly nebo dávky, například když začnete znovu s jiným souborem, a po ukončení aplikace nezůstanou žádné. Uložené projekty zůstávají ve vašem zařízení, dokud je nesmažete. Vývojář nikdy žádné údaje o obličeji nepřijímá ani neuchovává.",
+  "faceDataH6": "6. Mazání",
+  "faceDataP6": "Protože se obdélníky obličejů nikdy neukládají, neexistují žádné uložené údaje o obličeji, které by bylo možné smazat. Můžete smazat uložený projekt, pomocí možnosti Vymazat historii projektu odstranit všechny uchované originály a chráněné kopie, nebo smazat aplikaci, čímž se z vašeho zařízení odstraní všechna její místní data."
 }

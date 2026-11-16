@@ -28,5 +28,19 @@
   "storeTitle": "Purchases are the only network call",
   "storeText": "Apple processes the optional lifetime purchase and restore through StoreKit. Mask My File uses no VPN, NetworkExtension, proxy, tunnel, DNS filter, or network routing of any kind.",
   "retentionTitle": "You control what remains",
-  "retentionText": "Originals are never overwritten. Temporary workspace files, saved projects, Placeholder Vault mappings, and Private Session data remain only as each feature explains. Delete them in the app or remove the app to erase its local container."
+  "retentionText": "Originals are never overwritten. Temporary workspace files, saved projects, Placeholder Vault mappings, and Private Session data remain only as each feature explains. Delete them in the app or remove the app to erase its local container.",
+  "faceDataTitle": "Face data (iOS app)",
+  "faceDataScope": "Section updated 2026-11-16. This section applies to the Mask My File iOS app on the App Store.",
+  "faceDataH1": "1. What face data the app uses",
+  "faceDataP1": "When you scan an image or a PDF page, on its own or in a batch, Mask My File uses Apple's on-device Vision framework to detect faces. For each face, the only face data the app uses is the position of the rectangle around the face on that page and the detection confidence. When the protected copy is created, the app runs the same detection once more on the protected copy to check that no selected face is still visible; that result is used only for the check. The app does not perform facial recognition or identification, does not create a face template, faceprint or any other biometric identifier, and does not compare faces.",
+  "faceDataH2": "2. How face data is used",
+  "faceDataP2": "These rectangles are used only to show suggested face regions on the review screen, where you can keep, change or remove each one (higher-confidence faces are pre-selected), and to cover the faces you keep selected in the protected copy you export (by default with a solid block). They are not used for advertising, analytics, tracking, profiling, or any other purpose.",
+  "faceDataH3": "3. Sharing and third parties",
+  "faceDataP3": "Face data is never uploaded, sold, shared with, or disclosed to the developer or any third party. The app makes no network request involving your files, their content or detection results; its only network service is Apple's StoreKit for purchase and restore. It contains no third-party advertising, analytics, tracking or data SDK.",
+  "faceDataH4": "4. Where face data is stored",
+  "faceDataP4": "Face rectangles are held only in your device's memory in the active review workspace and are never written to storage as face data. Private Session is on by default. If you turn it off, Projects saves the original file and the protected copy on this device, together with the number of protected items and their categories (for example \"face\"), but not face positions. Those files are your own images and can show faces.",
+  "faceDataH5": "5. How long face data is retained",
+  "faceDataP5": "Face rectangles are discarded when the review or batch workspace is cleared, for example when you start over with another file, and none remain after the app quits. Saved projects stay on your device until you delete them. The developer never receives or retains any face data.",
+  "faceDataH6": "6. Deletion",
+  "faceDataP6": "Because face rectangles are never saved, there is no stored face data to delete. You can delete a saved project, use Clear Project History to remove all retained originals and protected copies, or delete the app to remove all of its local data from your device."
 }

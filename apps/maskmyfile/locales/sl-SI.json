@@ -28,5 +28,19 @@
   "storeTitle": "Nakup je edina omrežna storitev",
   "storeText": "Apple obdela izbirni doživljenjski nakup in obnovitev prek StoreKit. Mask My File ne uporablja VPN, NetworkExtension, posrednika, predora, filtra DNS ali omrežnega usmerjanja.",
   "retentionTitle": "Vi odločate, kaj ostane",
-  "retentionText": "Izvirniki se nikoli ne prepišejo. Začasne delovne datoteke, shranjeni projekti, povezave v trezorju ograjenih mest in podatki zasebne seje ostanejo le tako, kot pojasnjuje vsaka funkcija. Izbrišite jih v aplikaciji ali odstranite aplikacijo, da izbrišete njen lokalni vsebnik."
+  "retentionText": "Izvirniki se nikoli ne prepišejo. Začasne delovne datoteke, shranjeni projekti, povezave v trezorju ograjenih mest in podatki zasebne seje ostanejo le tako, kot pojasnjuje vsaka funkcija. Izbrišite jih v aplikaciji ali odstranite aplikacijo, da izbrišete njen lokalni vsebnik.",
+  "faceDataTitle": "Podatki o obrazu (aplikacija za iOS)",
+  "faceDataScope": "Razdelek posodobljen 2026-11-16. Ta razdelek velja za aplikacijo Mask My File za iOS v trgovini App Store.",
+  "faceDataH1": "1. Katere podatke o obrazu aplikacija uporablja",
+  "faceDataP1": "Ko skenirate sliko ali stran PDF, posamično ali v seriji, Mask My File z Applovim ogrodjem Vision, ki deluje na napravi, zazna obraze. Pri vsakem obrazu sta edina podatka o obrazu, ki ju aplikacija uporablja, položaj pravokotnika okoli obraza na tej strani in zanesljivost zaznave. Ko se ustvari zaščitena kopija, aplikacija na zaščiteni kopiji še enkrat zažene isto zaznavanje, da preveri, da noben izbrani obraz ni več viden; ta rezultat se uporablja samo za to preverjanje. Aplikacija ne izvaja prepoznavanja ali identifikacije obrazov, ne ustvarja predloge obraza, odtisa obraza ali katerega koli drugega biometričnega identifikatorja in ne primerja obrazov.",
+  "faceDataH2": "2. Kako se podatki o obrazu uporabljajo",
+  "faceDataP2": "Ti pravokotniki se uporabljajo samo za prikaz predlaganih območij obrazov na zaslonu za pregled, kjer lahko vsako območje obdržite, spremenite ali odstranite (obrazi z višjo zanesljivostjo so vnaprej izbrani), ter za prekritje obrazov, ki jih pustite izbrane, v zaščiteni kopiji, ki jo izvozite (privzeto s polnim blokom). Ne uporabljajo se za oglaševanje, analitiko, sledenje, profiliranje ali kateri koli drug namen.",
+  "faceDataH3": "3. Deljenje in tretje osebe",
+  "faceDataP3": "Podatki o obrazu se nikoli ne nalagajo, prodajajo, delijo ali razkrivajo razvijalcu ali tretjim osebam. Aplikacija ne pošilja nobenih omrežnih zahtev, ki bi zadevale vaše datoteke, njihovo vsebino ali rezultate zaznave; njena edina omrežna storitev je Applov StoreKit za nakup in obnovitev nakupa. Ne vsebuje nobenega oglaševalskega, analitičnega, sledilnega ali podatkovnega SDK-ja tretjih oseb.",
+  "faceDataH4": "4. Kje so podatki o obrazu shranjeni",
+  "faceDataP4": "Pravokotniki obrazov se hranijo samo v pomnilniku vaše naprave v aktivnem delovnem prostoru za pregled in se nikoli ne zapišejo v shrambo kot podatki o obrazu. Zasebna seja je privzeto vklopljena. Če jo izklopite, Projekti na tej napravi shranijo izvirno datoteko in zaščiteno kopijo skupaj s številom zaščitenih elementov in njihovimi kategorijami (na primer „obraz“ (face)), vendar ne položajev obrazov. Te datoteke so vaše lastne slike in lahko prikazujejo obraze.",
+  "faceDataH5": "5. Kako dolgo se podatki o obrazu hranijo",
+  "faceDataP5": "Pravokotniki obrazov se zavržejo, ko se delovni prostor za pregled ali serijo počisti, na primer ko začnete znova z drugo datoteko, in po zaprtju aplikacije ne ostane noben. Shranjeni projekti ostanejo na vaši napravi, dokler jih ne izbrišete. Razvijalec nikoli ne prejme ali hrani nobenih podatkov o obrazu.",
+  "faceDataH6": "6. Brisanje",
+  "faceDataP6": "Ker se pravokotniki obrazov nikoli ne shranijo, ni shranjenih podatkov o obrazu, ki bi jih bilo mogoče izbrisati. Izbrišete lahko shranjen projekt, z možnostjo Počisti zgodovino projektov odstranite vse ohranjene izvirnike in zaščitene kopije ali izbrišete aplikacijo, s čimer z naprave odstranite vse njene lokalne podatke."
 }

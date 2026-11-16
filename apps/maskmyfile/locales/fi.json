@@ -28,5 +28,19 @@
   "storeTitle": "Ostokset ovat ainoa verkkopalvelu",
   "storeText": "Apple hoitaa valinnaisen elinikäisen oston ja sen palautuksen StoreKitin kautta. Mask My File ei käytä VPN:ää, NetworkExtensionia, välityspalvelinta, tunnelia, DNS-suodatinta tai verkon reititystä.",
   "retentionTitle": "Sinä hallitset, mitä jää jäljelle",
-  "retentionText": "Alkuperäisiä ei koskaan korvata. Väliaikaiset työtiedostot, tallennetut projektit, paikkamerkkiholvin määritykset ja yksityisen istunnon tiedot säilyvät vain niin kuin kukin ominaisuus kertoo. Poista ne sovelluksessa tai poista sovellus tyhjentääksesi sen paikallisen säilön."
+  "retentionText": "Alkuperäisiä ei koskaan korvata. Väliaikaiset työtiedostot, tallennetut projektit, paikkamerkkiholvin määritykset ja yksityisen istunnon tiedot säilyvät vain niin kuin kukin ominaisuus kertoo. Poista ne sovelluksessa tai poista sovellus tyhjentääksesi sen paikallisen säilön.",
+  "faceDataTitle": "Kasvotiedot (iOS-sovellus)",
+  "faceDataScope": "Osio päivitetty 2026-11-16. Tämä osio koskee App Storessa olevaa Mask My File -iOS-sovellusta.",
+  "faceDataH1": "1. Mitä kasvotietoja sovellus käyttää",
+  "faceDataP1": "Kun skannaat kuvan tai PDF-sivun joko yksittäin tai erässä, Mask My File käyttää Applen laitteella toimivaa Vision-kehystä kasvojen havaitsemiseen. Kunkin kasvon osalta ainoat sovelluksen käyttämät kasvotiedot ovat kasvojen ympärillä olevan suorakulmion sijainti sivulla ja havaitsemisen luotettavuus. Kun suojattu kopio luodaan, sovellus ajaa saman havaitsemisen vielä kerran suojatulle kopiolle varmistaakseen, ettei yksikään valittu kasvo ole enää näkyvissä; tulosta käytetään vain tähän tarkistukseen. Sovellus ei suorita kasvojentunnistusta eikä henkilöllisyyden tunnistamista, ei luo kasvomallia, kasvotunnistetta eikä mitään muuta biometristä tunnistetta eikä vertaa kasvoja.",
+  "faceDataH2": "2. Miten kasvotietoja käytetään",
+  "faceDataP2": "Näitä suorakulmioita käytetään vain ehdotettujen kasvoalueiden näyttämiseen tarkistusnäkymässä, jossa voit säilyttää, muuttaa tai poistaa kunkin alueen (luotettavammin havaitut kasvot valitaan valmiiksi), sekä valittuina pitämiesi kasvojen peittämiseen viemässäsi suojatussa kopiossa (oletuksena umpinaisella lohkolla). Niitä ei käytetä mainontaan, analytiikkaan, seurantaan, profilointiin eikä mihinkään muuhun tarkoitukseen.",
+  "faceDataH3": "3. Jakaminen ja kolmannet osapuolet",
+  "faceDataP3": "Kasvotietoja ei koskaan lähetetä, myydä, jaeta kehittäjälle tai millekään kolmannelle osapuolelle eikä luovuteta niille. Sovellus ei tee yhtään verkkopyyntöä, joka koskisi tiedostojasi, niiden sisältöä tai havaitsemistuloksia; sen ainoa verkkopalvelu on Applen StoreKit ostoa ja palautusta varten. Se ei sisällä mitään kolmannen osapuolen mainonta-, analytiikka-, seuranta- tai data-SDK:ta.",
+  "faceDataH4": "4. Missä kasvotietoja säilytetään",
+  "faceDataP4": "Kasvojen suorakulmiot pidetään vain laitteesi muistissa aktiivisessa tarkistustyötilassa, eikä niitä koskaan kirjoiteta tallennustilaan kasvotietoina. Yksityinen istunto on oletuksena päällä. Jos kytket sen pois, Projektit tallentaa tälle laitteelle alkuperäisen tiedoston ja suojatun kopion sekä suojattujen kohteiden määrän ja niiden luokat (esimerkiksi ”kasvo” (face)), mutta ei kasvojen sijainteja. Nämä tiedostot ovat omia kuviasi, ja niissä voi näkyä kasvoja.",
+  "faceDataH5": "5. Kuinka kauan kasvotietoja säilytetään",
+  "faceDataP5": "Kasvojen suorakulmiot hylätään, kun tarkistus- tai erätyötila tyhjennetään, esimerkiksi kun aloitat alusta toisella tiedostolla, eikä niitä jää sovelluksen sulkemisen jälkeen. Tallennetut projektit pysyvät laitteellasi, kunnes poistat ne. Kehittäjä ei koskaan vastaanota tai säilytä kasvotietoja.",
+  "faceDataH6": "6. Poistaminen",
+  "faceDataP6": "Koska kasvojen suorakulmioita ei koskaan tallenneta, poistettavia tallennettuja kasvotietoja ei ole. Voit poistaa tallennetun projektin, käyttää toimintoa Tyhjennä projektihistoria poistaaksesi kaikki säilytetyt alkuperäiset ja suojatut kopiot tai poistaa sovelluksen, jolloin kaikki sen paikalliset tiedot poistuvat laitteeltasi."
 }

@@ -28,5 +28,19 @@
   "storeTitle": "Kết nối mạng duy nhất là giao dịch mua",
   "storeText": "Apple xử lý giao dịch mua trọn đời tùy chọn và việc khôi phục qua StoreKit. Mask My File không dùng VPN, NetworkExtension, proxy, đường hầm, bộ lọc DNS hay định tuyến mạng.",
   "retentionTitle": "Bạn kiểm soát thứ còn lại",
-  "retentionText": "Bản gốc không bao giờ bị ghi đè. Tệp làm việc tạm thời, dự án đã lưu, ánh xạ Kho ký tự thay thế và dữ liệu Phiên riêng tư chỉ tồn tại đúng như mỗi tính năng mô tả. Xóa chúng trong ứng dụng hoặc gỡ ứng dụng để xóa vùng chứa cục bộ."
+  "retentionText": "Bản gốc không bao giờ bị ghi đè. Tệp làm việc tạm thời, dự án đã lưu, ánh xạ Kho ký tự thay thế và dữ liệu Phiên riêng tư chỉ tồn tại đúng như mỗi tính năng mô tả. Xóa chúng trong ứng dụng hoặc gỡ ứng dụng để xóa vùng chứa cục bộ.",
+  "faceDataTitle": "Dữ liệu khuôn mặt (ứng dụng iOS)",
+  "faceDataScope": "Mục này được cập nhật ngày 2026-11-16. Mục này áp dụng cho ứng dụng Mask My File trên iOS trong App Store.",
+  "faceDataH1": "1. Ứng dụng sử dụng những dữ liệu khuôn mặt nào",
+  "faceDataP1": "Khi bạn quét một ảnh hoặc một trang PDF, riêng lẻ hoặc theo lô, Mask My File sử dụng khung Vision của Apple chạy ngay trên thiết bị để phát hiện khuôn mặt. Với mỗi khuôn mặt, dữ liệu khuôn mặt duy nhất mà ứng dụng sử dụng là vị trí của hình chữ nhật bao quanh khuôn mặt trên trang đó và độ tin cậy của việc phát hiện. Khi bản sao được bảo vệ được tạo, ứng dụng chạy lại cùng phép phát hiện đó một lần nữa trên bản sao được bảo vệ để kiểm tra rằng không còn khuôn mặt nào đã chọn vẫn hiển thị; kết quả đó chỉ được dùng cho việc kiểm tra này. Ứng dụng không thực hiện nhận dạng hay xác định danh tính khuôn mặt, không tạo mẫu khuôn mặt, faceprint hay bất kỳ định danh sinh trắc học nào khác, và không so sánh khuôn mặt.",
+  "faceDataH2": "2. Cách dữ liệu khuôn mặt được sử dụng",
+  "faceDataP2": "Các hình chữ nhật này chỉ được dùng để hiển thị các vùng khuôn mặt được đề xuất trên màn hình xem lại, nơi bạn có thể giữ, thay đổi hoặc xóa từng vùng (các khuôn mặt có độ tin cậy cao hơn được chọn sẵn), và để che các khuôn mặt bạn giữ ở trạng thái đã chọn trong bản sao được bảo vệ mà bạn xuất ra (mặc định bằng một khối màu đặc). Chúng không được dùng cho quảng cáo, phân tích, theo dõi, lập hồ sơ hay bất kỳ mục đích nào khác.",
+  "faceDataH3": "3. Chia sẻ và bên thứ ba",
+  "faceDataP3": "Dữ liệu khuôn mặt không bao giờ được tải lên, bán, chia sẻ hay tiết lộ cho nhà phát triển hoặc bất kỳ bên thứ ba nào. Ứng dụng không thực hiện yêu cầu mạng nào liên quan đến tệp của bạn, nội dung của chúng hoặc kết quả phát hiện; dịch vụ mạng duy nhất của ứng dụng là StoreKit của Apple cho việc mua và khôi phục. Ứng dụng không chứa SDK quảng cáo, phân tích, theo dõi hay dữ liệu của bên thứ ba nào.",
+  "faceDataH4": "4. Nơi lưu trữ dữ liệu khuôn mặt",
+  "faceDataP4": "Các hình chữ nhật khuôn mặt chỉ được giữ trong bộ nhớ của thiết bị bạn trong không gian xem lại đang hoạt động và không bao giờ được ghi vào bộ nhớ lưu trữ dưới dạng dữ liệu khuôn mặt. \"Phiên Riêng tư\" được bật theo mặc định. Nếu bạn tắt nó, \"Dự án\" sẽ lưu tệp gốc và bản sao được bảo vệ trên thiết bị này, cùng với số mục được bảo vệ và danh mục của chúng (ví dụ \"khuôn mặt\" (face)), nhưng không lưu vị trí khuôn mặt. Các tệp đó là ảnh của chính bạn và có thể hiển thị khuôn mặt.",
+  "faceDataH5": "5. Thời gian lưu giữ dữ liệu khuôn mặt",
+  "faceDataP5": "Các hình chữ nhật khuôn mặt bị loại bỏ khi không gian xem lại hoặc không gian xử lý theo lô được xóa, ví dụ khi bạn bắt đầu lại với tệp khác, và không còn cái nào sau khi ứng dụng thoát. Các dự án đã lưu vẫn nằm trên thiết bị của bạn cho đến khi bạn xóa chúng. Nhà phát triển không bao giờ nhận hay lưu giữ bất kỳ dữ liệu khuôn mặt nào.",
+  "faceDataH6": "6. Xóa dữ liệu",
+  "faceDataP6": "Vì các hình chữ nhật khuôn mặt không bao giờ được lưu, nên không có dữ liệu khuôn mặt đã lưu để xóa. Bạn có thể xóa một dự án đã lưu, dùng \"Xóa Lịch sử Dự án\" để gỡ tất cả tệp gốc và bản sao được bảo vệ đang được giữ lại, hoặc xóa ứng dụng để gỡ toàn bộ dữ liệu cục bộ của ứng dụng khỏi thiết bị của bạn."
 }

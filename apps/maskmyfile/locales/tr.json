@@ -28,5 +28,19 @@
   "storeTitle": "Tek ağ bağlantısı satın almalardır",
   "storeText": "Apple, isteğe bağlı ömür boyu satın alımı ve geri yüklemeyi StoreKit ile işler. Mask My File; VPN, NetworkExtension, proxy, tünel, DNS filtresi veya ağ yönlendirmesi kullanmaz.",
   "retentionTitle": "Kalanı sen belirlersin",
-  "retentionText": "Orijinallerin üzerine asla yazılmaz. Geçici çalışma dosyaları, kaydedilen projeler, Yer Tutucu Kasası eşlemeleri ve Özel Oturum verileri yalnızca her özelliğin anlattığı gibi kalır. Bunları uygulamada sil veya yerel kabı silmek için uygulamayı kaldır."
+  "retentionText": "Orijinallerin üzerine asla yazılmaz. Geçici çalışma dosyaları, kaydedilen projeler, Yer Tutucu Kasası eşlemeleri ve Özel Oturum verileri yalnızca her özelliğin anlattığı gibi kalır. Bunları uygulamada sil veya yerel kabı silmek için uygulamayı kaldır.",
+  "faceDataTitle": "Yüz verileri (iOS uygulaması)",
+  "faceDataScope": "Bölüm 2026-11-16 tarihinde güncellenmiştir. Bu bölüm, App Store'daki Mask My File iOS uygulaması için geçerlidir.",
+  "faceDataH1": "1. Uygulamanın hangi yüz verilerini kullandığı",
+  "faceDataP1": "Bir görüntüyü veya PDF sayfasını tek başına ya da toplu olarak taradığınızda, Mask My File yüzleri algılamak için Apple'ın cihaz üzerinde çalışan Vision çerçevesini kullanır. Her yüz için uygulamanın kullandığı tek yüz verisi, yüzün çevresindeki dikdörtgenin o sayfadaki konumu ve algılama güven düzeyidir. Korumalı kopya oluşturulduğunda uygulama, seçilen hiçbir yüzün hâlâ görünmediğini denetlemek için aynı algılamayı korumalı kopya üzerinde bir kez daha çalıştırır; bu sonuç yalnızca bu denetim için kullanılır. Uygulama yüz tanıma veya kimlik belirleme yapmaz; yüz şablonu, yüz izi (faceprint) veya başka herhangi bir biyometrik tanımlayıcı oluşturmaz ve yüzleri karşılaştırmaz.",
+  "faceDataH2": "2. Yüz verilerinin nasıl kullanıldığı",
+  "faceDataP2": "Bu dikdörtgenler yalnızca, her birini tutabileceğiniz, değiştirebileceğiniz veya kaldırabileceğiniz inceleme ekranında önerilen yüz bölgelerini göstermek (güven düzeyi daha yüksek yüzler önceden seçilidir) ve dışa aktardığınız korumalı kopyada seçili bıraktığınız yüzleri örtmek (varsayılan olarak düz bir blokla) için kullanılır. Reklam, analiz, izleme, profil oluşturma veya başka herhangi bir amaç için kullanılmaz.",
+  "faceDataH3": "3. Paylaşım ve üçüncü taraflar",
+  "faceDataP3": "Yüz verileri geliştiriciye veya herhangi bir üçüncü tarafa asla yüklenmez, satılmaz, onlarla paylaşılmaz veya onlara ifşa edilmez. Uygulama; dosyalarınızı, içeriklerini veya algılama sonuçlarını içeren hiçbir ağ isteği yapmaz; tek ağ hizmeti satın alma ve geri yükleme için Apple StoreKit'tir. Üçüncü taraf reklam, analiz, izleme veya veri SDK'sı içermez.",
+  "faceDataH4": "4. Yüz verilerinin nerede saklandığı",
+  "faceDataP4": "Yüz dikdörtgenleri yalnızca etkin inceleme çalışma alanında cihazınızın belleğinde tutulur ve yüz verisi olarak hiçbir zaman depolamaya yazılmaz. Özel Oturum varsayılan olarak açıktır. Kapatırsanız Projeler, orijinal dosyayı ve korumalı kopyayı, korunan öğelerin sayısı ve kategorileriyle (örneğin “yüz” (face)) birlikte bu cihaza kaydeder, ancak yüz konumlarını kaydetmez. Bu dosyalar sizin kendi görüntülerinizdir ve yüzleri gösterebilir.",
+  "faceDataH5": "5. Yüz verilerinin ne kadar süre saklandığı",
+  "faceDataP5": "Yüz dikdörtgenleri, inceleme veya toplu çalışma alanı temizlendiğinde, örneğin başka bir dosyayla baştan başladığınızda silinir ve uygulamadan çıkıldıktan sonra hiçbiri kalmaz. Kaydedilmiş projeler siz silene kadar cihazınızda kalır. Geliştirici hiçbir zaman yüz verisi almaz veya saklamaz.",
+  "faceDataH6": "6. Silme",
+  "faceDataP6": "Yüz dikdörtgenleri hiçbir zaman kaydedilmediği için silinecek saklanmış bir yüz verisi yoktur. Kaydedilmiş bir projeyi silebilir, saklanan tüm orijinalleri ve korumalı kopyaları kaldırmak için Proje Geçmişini Temizle'yi kullanabilir veya tüm yerel verilerini cihazınızdan kaldırmak için uygulamayı silebilirsiniz."
 }

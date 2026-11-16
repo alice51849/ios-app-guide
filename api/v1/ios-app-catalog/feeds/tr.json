@@ -13,7 +13,7 @@
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
     "dateModified": "2026-11-16",
-    "contentDigest": "ea0af841c9100fcc01d0c2e1e1d39947ca795348397bdaca0dce5bc7746fbe04",
+    "contentDigest": "f426d6c19f46becc5ac6790c282942271691f5cd8911726d64c99ebde29faffb",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
     "recordCount": 60
@@ -190,7 +190,7 @@
         "yazma"
       ],
       "language": "tr",
-      "date_modified": "2026-10-17T16:15:13Z"
+      "date_modified": "2026-11-16T18:06:12Z"
     },
     {
       "id": "https://apps.apple.com/app/id6782251621",
@@ -213,7 +213,7 @@
         "hesaplama"
       ],
       "language": "tr",
-      "date_modified": "2026-11-16T10:48:40Z"
+      "date_modified": "2026-11-16T18:06:12Z"
     },
     {
       "id": "https://apps.apple.com/app/id6790418321",
@@ -343,7 +343,6 @@
       "title": "G+Money: Harcama ve bütçe",
       "content_text": "iPhone Duo için optimize edildi. En yeni SDK ile geliştirilen uygulama tüm iç ekranı doldurur ve cihaz katlıyken de açıkken de düzenini otomatik olarak ayarlar.",
       "tags": [
-        "harcama",
         "takibi",
         "masraf",
         "finans",
@@ -355,10 +354,11 @@
         "günlük",
         "bütçesi",
         "masrafları",
-        "tatil"
+        "tatil",
+        "limit"
       ],
       "language": "tr",
-      "date_modified": "2026-10-30T02:23:28Z"
+      "date_modified": "2026-11-16T18:06:12Z"
     },
     {
       "id": "https://apps.apple.com/app/id6793436548",
@@ -449,7 +449,7 @@
         "gider"
       ],
       "language": "tr",
-      "date_modified": "2026-10-30T06:28:33Z"
+      "date_modified": "2026-11-16T18:06:12Z"
     },
     {
       "id": "https://apps.apple.com/app/id6830824515",
@@ -509,7 +509,6 @@
       "tags": [
         "odak",
         "odaklanma",
-        "pomodoro",
         "zamanlayıcı",
         "ders",
         "çalışma",
@@ -518,10 +517,11 @@
         "sosyal",
         "medya",
         "kontrolü",
-        "sayacı"
+        "sayacı",
+        "uyku"
       ],
       "language": "tr",
-      "date_modified": "2026-10-30T06:28:33Z"
+      "date_modified": "2026-11-16T18:06:12Z"
     },
     {
       "id": "https://apps.apple.com/app/id6773017109",
@@ -544,7 +544,7 @@
         "çizgiler"
       ],
       "language": "tr",
-      "date_modified": "2026-10-17T16:15:13Z"
+      "date_modified": "2026-11-16T18:06:12Z"
     },
     {
       "id": "https://apps.apple.com/app/id6775773117",
@@ -567,7 +567,7 @@
         "iki dilli"
       ],
       "language": "tr",
-      "date_modified": "2026-10-17T16:15:13Z"
+      "date_modified": "2026-11-16T18:06:12Z"
     },
     {
       "id": "https://apps.apple.com/app/id6778748533",
@@ -590,7 +590,7 @@
         "phonics"
       ],
       "language": "tr",
-      "date_modified": "2026-10-17T16:15:13Z"
+      "date_modified": "2026-11-16T18:06:12Z"
     },
     {
       "id": "https://apps.apple.com/app/id6778491147",
@@ -614,7 +614,7 @@
         "alıştırma"
       ],
       "language": "tr",
-      "date_modified": "2026-10-17T16:15:13Z"
+      "date_modified": "2026-11-16T18:06:12Z"
     },
     {
       "id": "https://apps.apple.com/app/id6778269699",
@@ -639,7 +639,7 @@
         "sayı"
       ],
       "language": "tr",
-      "date_modified": "2026-10-17T16:15:13Z"
+      "date_modified": "2026-11-16T18:06:12Z"
     },
     {
       "id": "https://apps.apple.com/app/id6776958488",
@@ -663,7 +663,7 @@
         "test"
       ],
       "language": "tr",
-      "date_modified": "2026-10-17T16:15:13Z"
+      "date_modified": "2026-11-16T18:06:12Z"
     },
     {
       "id": "https://apps.apple.com/app/id6779750237",
@@ -684,7 +684,7 @@
         "aferin"
       ],
       "language": "tr",
-      "date_modified": "2026-10-17T16:15:13Z"
+      "date_modified": "2026-11-16T18:06:12Z"
     },
     {
       "id": "https://apps.apple.com/app/id6779745474",
@@ -704,7 +704,7 @@
         "anaokulu"
       ],
       "language": "tr",
-      "date_modified": "2026-10-17T16:15:13Z"
+      "date_modified": "2026-11-16T18:06:12Z"
     },
     {
       "id": "https://apps.apple.com/app/id6779552704",
@@ -728,7 +728,7 @@
         "giysem"
       ],
       "language": "tr",
-      "date_modified": "2026-10-17T16:15:13Z"
+      "date_modified": "2026-11-16T18:06:12Z"
     },
     {
       "id": "https://apps.apple.com/app/id6792850916",
@@ -819,11 +819,10 @@
         "alışveriş",
         "ajanda",
         "takvim",
-        "checklist",
         "iş"
       ],
       "language": "tr",
-      "date_modified": "2026-10-30T02:23:28Z"
+      "date_modified": "2026-11-16T18:06:12Z"
     },
     {
       "id": "https://apps.apple.com/app/id6790800323",
@@ -918,7 +917,7 @@
         "siyah beyaz"
       ],
       "language": "tr",
-      "date_modified": "2026-11-15T18:03:34Z"
+      "date_modified": "2026-11-16T18:06:12Z"
     },
     {
       "id": "https://apps.apple.com/app/id6780223070",
@@ -939,7 +938,7 @@
         "büyük videolar"
       ],
       "language": "tr",
-      "date_modified": "2026-10-30T06:28:33Z"
+      "date_modified": "2026-11-16T18:06:12Z"
     },
     {
       "id": "https://apps.apple.com/app/id6806779853",
@@ -1009,7 +1008,7 @@
         "dönüştürücü"
       ],
       "language": "tr",
-      "date_modified": "2026-10-30T06:28:33Z"
+      "date_modified": "2026-11-16T18:06:12Z"
     },
     {
       "id": "https://apps.apple.com/app/id6788236641",
@@ -1073,7 +1072,7 @@
         "foto"
       ],
       "language": "tr",
-      "date_modified": "2026-10-17T16:15:13Z"
+      "date_modified": "2026-11-16T18:06:12Z"
     },
     {
       "id": "https://apps.apple.com/app/id6792856304",
@@ -1115,7 +1114,7 @@
         "özet"
       ],
       "language": "tr",
-      "date_modified": "2026-10-17T16:15:13Z"
+      "date_modified": "2026-11-16T18:06:12Z"
     },
     {
       "id": "https://apps.apple.com/app/id6814035888",
@@ -1277,7 +1276,7 @@
         "4K"
       ],
       "language": "tr",
-      "date_modified": "2026-11-16T10:48:40Z"
+      "date_modified": "2026-11-16T18:06:12Z"
     },
     {
       "id": "https://apps.apple.com/app/id6818607603",

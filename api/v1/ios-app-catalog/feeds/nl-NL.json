@@ -13,7 +13,7 @@
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
     "dateModified": "2026-11-16",
-    "contentDigest": "ea0af841c9100fcc01d0c2e1e1d39947ca795348397bdaca0dce5bc7746fbe04",
+    "contentDigest": "f426d6c19f46becc5ac6790c282942271691f5cd8911726d64c99ebde29faffb",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
     "recordCount": 60
@@ -175,7 +175,7 @@
         "stage"
       ],
       "language": "nl-NL",
-      "date_modified": "2026-10-17T16:15:13Z"
+      "date_modified": "2026-11-16T18:06:12Z"
     },
     {
       "id": "https://apps.apple.com/app/id6782251621",
@@ -196,7 +196,7 @@
         "kinderwens"
       ],
       "language": "nl-NL",
-      "date_modified": "2026-11-16T10:48:40Z"
+      "date_modified": "2026-11-16T18:06:12Z"
     },
     {
       "id": "https://apps.apple.com/app/id6790418321",
@@ -317,7 +317,6 @@
       "title": "G+Money: Uitgaven en budget",
       "content_text": "Geoptimaliseerd voor iPhone Duo. De app is gebouwd met de nieuwste SDK, vult het hele binnenscherm en past de indeling automatisch aan, dichtgeklapt of opengeklapt.",
       "tags": [
-        "uitgaven",
         "bijhouden",
         "huishoudboekje",
         "financiën",
@@ -326,10 +325,12 @@
         "geld",
         "sparen",
         "reiskosten",
-        "vakantie"
+        "vakantie",
+        "limiet",
+        "reis"
       ],
       "language": "nl-NL",
-      "date_modified": "2026-10-30T02:23:28Z"
+      "date_modified": "2026-11-16T18:06:12Z"
     },
     {
       "id": "https://apps.apple.com/app/id6793436548",
@@ -419,7 +420,7 @@
         "doelen"
       ],
       "language": "nl-NL",
-      "date_modified": "2026-10-30T06:28:33Z"
+      "date_modified": "2026-11-16T18:06:12Z"
     },
     {
       "id": "https://apps.apple.com/app/id6830824515",
@@ -484,7 +485,7 @@
         "slaap"
       ],
       "language": "nl-NL",
-      "date_modified": "2026-10-30T06:28:33Z"
+      "date_modified": "2026-11-16T18:06:12Z"
     },
     {
       "id": "https://apps.apple.com/app/id6773017109",
@@ -506,7 +507,7 @@
         "kleuters"
       ],
       "language": "nl-NL",
-      "date_modified": "2026-10-17T16:15:13Z"
+      "date_modified": "2026-11-16T18:06:12Z"
     },
     {
       "id": "https://apps.apple.com/app/id6775773117",
@@ -528,7 +529,7 @@
         "tweetalig"
       ],
       "language": "nl-NL",
-      "date_modified": "2026-10-17T16:15:13Z"
+      "date_modified": "2026-11-16T18:06:12Z"
     },
     {
       "id": "https://apps.apple.com/app/id6778748533",
@@ -551,7 +552,7 @@
         "kleine"
       ],
       "language": "nl-NL",
-      "date_modified": "2026-10-17T16:15:13Z"
+      "date_modified": "2026-11-16T18:06:12Z"
     },
     {
       "id": "https://apps.apple.com/app/id6778491147",
@@ -575,7 +576,7 @@
         "leren"
       ],
       "language": "nl-NL",
-      "date_modified": "2026-10-17T16:15:13Z"
+      "date_modified": "2026-11-16T18:06:12Z"
     },
     {
       "id": "https://apps.apple.com/app/id6778269699",
@@ -600,7 +601,7 @@
         "4"
       ],
       "language": "nl-NL",
-      "date_modified": "2026-10-17T16:15:13Z"
+      "date_modified": "2026-11-16T18:06:12Z"
     },
     {
       "id": "https://apps.apple.com/app/id6776958488",
@@ -621,7 +622,7 @@
         "logica"
       ],
       "language": "nl-NL",
-      "date_modified": "2026-10-17T16:15:13Z"
+      "date_modified": "2026-11-16T18:06:12Z"
     },
     {
       "id": "https://apps.apple.com/app/id6779750237",
@@ -642,7 +643,7 @@
         "lof"
       ],
       "language": "nl-NL",
-      "date_modified": "2026-10-17T16:15:13Z"
+      "date_modified": "2026-11-16T18:06:12Z"
     },
     {
       "id": "https://apps.apple.com/app/id6779745474",
@@ -663,7 +664,7 @@
         "slapen"
       ],
       "language": "nl-NL",
-      "date_modified": "2026-10-17T16:15:13Z"
+      "date_modified": "2026-11-16T18:06:12Z"
     },
     {
       "id": "https://apps.apple.com/app/id6779552704",
@@ -685,7 +686,7 @@
         "buien"
       ],
       "language": "nl-NL",
-      "date_modified": "2026-10-17T16:15:13Z"
+      "date_modified": "2026-11-16T18:06:12Z"
     },
     {
       "id": "https://apps.apple.com/app/id6792850916",
@@ -765,17 +766,17 @@
         "herinnering",
         "todo",
         "dagelijks",
-        "planner",
         "notities",
         "gewoontes",
         "routine",
         "schema",
         "boodschappen",
-        "agenda",
-        "kalender"
+        "kalender",
+        "huishouden",
+        "doelen"
       ],
       "language": "nl-NL",
-      "date_modified": "2026-10-30T02:23:28Z"
+      "date_modified": "2026-11-16T18:06:12Z"
     },
     {
       "id": "https://apps.apple.com/app/id6790800323",
@@ -864,7 +865,7 @@
         "zwart-wit"
       ],
       "language": "nl-NL",
-      "date_modified": "2026-11-15T18:03:34Z"
+      "date_modified": "2026-11-16T18:06:12Z"
     },
     {
       "id": "https://apps.apple.com/app/id6780223070",
@@ -885,7 +886,7 @@
         "fotorol"
       ],
       "language": "nl-NL",
-      "date_modified": "2026-10-30T06:28:33Z"
+      "date_modified": "2026-11-16T18:06:12Z"
     },
     {
       "id": "https://apps.apple.com/app/id6806779853",
@@ -954,7 +955,7 @@
         "slot"
       ],
       "language": "nl-NL",
-      "date_modified": "2026-10-30T06:28:33Z"
+      "date_modified": "2026-11-16T18:06:12Z"
     },
     {
       "id": "https://apps.apple.com/app/id6788236641",
@@ -1020,7 +1021,7 @@
         "cv"
       ],
       "language": "nl-NL",
-      "date_modified": "2026-10-17T16:15:13Z"
+      "date_modified": "2026-11-16T18:06:12Z"
     },
     {
       "id": "https://apps.apple.com/app/id6792856304",
@@ -1063,7 +1064,7 @@
         "taken"
       ],
       "language": "nl-NL",
-      "date_modified": "2026-10-17T16:15:13Z"
+      "date_modified": "2026-11-16T18:06:12Z"
     },
     {
       "id": "https://apps.apple.com/app/id6814035888",
@@ -1220,7 +1221,7 @@
         "restaureren"
       ],
       "language": "nl-NL",
-      "date_modified": "2026-11-16T10:48:40Z"
+      "date_modified": "2026-11-16T18:06:12Z"
     },
     {
       "id": "https://apps.apple.com/app/id6818607603",

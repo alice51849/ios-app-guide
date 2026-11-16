@@ -1,9 +1,9 @@
 {
  "schema": "lumi.android-live-snapshot/v1",
  "source": "AndroidPlay android_live_scan (Play page HTTP 200 + publish LIVE)",
- "source_generated": "2026-11-16T06:06:31+0800",
+ "source_generated": "2026-11-17T06:03:35+0800",
  "count": 60,
- "content_sha256": "62a2809dad75a011e61ee12ba1bd3f4d7056f2b8c26e5adf03bc141ab1fe1065",
+ "content_sha256": "cee0bba0e38e430c1189ec9a99b45a295b01a8257498146366b4f5a9b18db5cc",
  "apps": {
   "aibriefpack": {
    "ios_app_id": "6791658210",
@@ -60,11 +60,11 @@
    "copy": {
     "en-US": {
      "title": "BattAI: Battery Health & Life",
-     "short_description": "Battery health checker: score, capacity over time, charging habits, time to 80%"
+     "short_description": "Live charging watts, current, voltage & temperature, plus estimated capacity"
     },
     "zh-TW": {
-     "title": "BattAI: 電池健康度・健康分數",
-     "short_description": "查看電池健康度，預估電量用到 80% 的時間"
+     "title": "BattAI: 電池健康度・健康分數・充電速度",
+     "short_description": "充電中即時看瓦數、電流、電壓與溫度，估計電池實際容量和哪個月降到 80%"
     }
    }
   },

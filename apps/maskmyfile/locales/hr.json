@@ -28,5 +28,19 @@
   "storeTitle": "Kupnje su jedina mrežna usluga",
   "storeText": "Apple obrađuje neobaveznu doživotnu kupnju i njezinu obnovu putem StoreKita. Mask My File ne koristi VPN, NetworkExtension, proxy poslužitelj, tunel, DNS filtar ni mrežno usmjeravanje.",
   "retentionTitle": "Vi upravljate onim što ostaje",
-  "retentionText": "Izvornici se nikada ne prepisuju. Privremene radne datoteke, spremljeni projekti, mape spremnika rezerviranih mjesta i podaci privatne sesije ostaju samo onako kako objašnjava svaka značajka. Izbrišite ih u aplikaciji ili uklonite aplikaciju da obrišete njezin lokalni spremnik."
+  "retentionText": "Izvornici se nikada ne prepisuju. Privremene radne datoteke, spremljeni projekti, mape spremnika rezerviranih mjesta i podaci privatne sesije ostaju samo onako kako objašnjava svaka značajka. Izbrišite ih u aplikaciji ili uklonite aplikaciju da obrišete njezin lokalni spremnik.",
+  "faceDataTitle": "Podaci o licu (iOS aplikacija)",
+  "faceDataScope": "Odjeljak ažuriran 2026-11-16. Ovaj se odjeljak odnosi na iOS aplikaciju Mask My File u trgovini App Store.",
+  "faceDataH1": "1. Koje podatke o licu aplikacija koristi",
+  "faceDataP1": "Kada skenirate sliku ili stranicu PDF-a, pojedinačno ili u seriji, Mask My File koristi Appleov okvir Vision, koji radi na uređaju, za otkrivanje lica. Za svako lice jedini podaci o licu koje aplikacija koristi jesu položaj pravokutnika oko lica na toj stranici i pouzdanost otkrivanja. Kada se stvori zaštićena kopija, aplikacija na zaštićenoj kopiji još jednom pokreće isto otkrivanje kako bi provjerila da nijedno odabrano lice više nije vidljivo; taj se rezultat koristi samo za tu provjeru. Aplikacija ne provodi prepoznavanje ni identifikaciju lica, ne stvara predložak lica, otisak lica ni bilo koji drugi biometrijski identifikator te ne uspoređuje lica.",
+  "faceDataH2": "2. Kako se podaci o licu koriste",
+  "faceDataP2": "Ti se pravokutnici koriste samo za prikaz predloženih područja lica na zaslonu za pregled, gdje svako možete zadržati, promijeniti ili ukloniti (lica s većom pouzdanošću unaprijed su odabrana), te za prekrivanje lica koja ostavite odabranima u zaštićenoj kopiji koju izvezete (prema zadanim postavkama punim blokom). Ne koriste se za oglašavanje, analitiku, praćenje, profiliranje niti za bilo koju drugu svrhu.",
+  "faceDataH3": "3. Dijeljenje i treće strane",
+  "faceDataP3": "Podaci o licu nikada se ne prenose, ne prodaju, ne dijele niti otkrivaju razvojnom programeru ili bilo kojoj trećoj strani. Aplikacija ne šalje nikakve mrežne zahtjeve koji uključuju vaše datoteke, njihov sadržaj ili rezultate otkrivanja; njezina jedina mrežna usluga jest Appleov StoreKit za kupnju i vraćanje kupnje. Ne sadrži nikakav SDK trećih strana za oglašavanje, analitiku, praćenje ni podatke.",
+  "faceDataH4": "4. Gdje se podaci o licu pohranjuju",
+  "faceDataP4": "Pravokutnici lica čuvaju se samo u memoriji vašeg uređaja u aktivnom radnom prostoru za pregled i nikada se ne zapisuju u pohranu kao podaci o licu. Privatna sesija prema zadanim je postavkama uključena. Ako je isključite, Projekti na ovom uređaju spremaju izvornu datoteku i zaštićenu kopiju, zajedno s brojem zaštićenih stavki i njihovim kategorijama (na primjer „lice“ (face)), ali ne i položaje lica. Te su datoteke vaše vlastite slike i mogu prikazivati lica.",
+  "faceDataH5": "5. Koliko dugo se podaci o licu čuvaju",
+  "faceDataP5": "Pravokutnici lica odbacuju se kada se radni prostor za pregled ili seriju očisti, na primjer kada počnete ispočetka s drugom datotekom, a nakon zatvaranja aplikacije ne ostaje nijedan. Spremljeni projekti ostaju na vašem uređaju dok ih ne izbrišete. Razvojni programer nikada ne prima niti čuva nikakve podatke o licu.",
+  "faceDataH6": "6. Brisanje",
+  "faceDataP6": "Budući da se pravokutnici lica nikada ne spremaju, ne postoje pohranjeni podaci o licu koje bi bilo moguće izbrisati. Možete izbrisati spremljeni projekt, upotrijebiti Očisti povijest projekta kako biste uklonili sve zadržane izvornike i zaštićene kopije ili izbrisati aplikaciju kako biste s uređaja uklonili sve njezine lokalne podatke."
 }

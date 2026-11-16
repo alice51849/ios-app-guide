@@ -28,5 +28,19 @@
   "storeTitle": "Köpet är den enda nätverkstjänsten",
   "storeText": "Apple hanterar det valfria livstidsköpet och återställningen via StoreKit. Mask My File använder inte VPN, NetworkExtension, proxy, tunnel, DNS-filter eller nätverksrouting.",
   "retentionTitle": "Du bestämmer vad som blir kvar",
-  "retentionText": "Original skrivs aldrig över. Tillfälliga arbetsfiler, sparade projekt, kopplingar i platshållarvalvet och data från privat session finns kvar bara så som varje funktion förklarar. Radera dem i appen eller ta bort appen för att rensa dess lokala behållare."
+  "retentionText": "Original skrivs aldrig över. Tillfälliga arbetsfiler, sparade projekt, kopplingar i platshållarvalvet och data från privat session finns kvar bara så som varje funktion förklarar. Radera dem i appen eller ta bort appen för att rensa dess lokala behållare.",
+  "faceDataTitle": "Ansiktsdata (iOS-app)",
+  "faceDataScope": "Avsnittet uppdaterades 2026-11-16. Detta avsnitt gäller iOS-appen Mask My File i App Store.",
+  "faceDataH1": "1. Vilka ansiktsdata appen använder",
+  "faceDataP1": "När du skannar en bild eller en PDF-sida, enskilt eller i en grupp, använder Mask My File Apples Vision-ramverk, som körs på enheten, för att upptäcka ansikten. För varje ansikte är de enda ansiktsdata som appen använder rektangelns position runt ansiktet på den sidan samt detekteringens tillförlitlighet. När den skyddade kopian skapas kör appen samma detektering en gång till på den skyddade kopian för att kontrollera att inget valt ansikte fortfarande syns; det resultatet används endast för kontrollen. Appen utför ingen ansiktsigenkänning eller identifiering, skapar ingen ansiktsmall, faceprint eller någon annan biometrisk identifierare och jämför inte ansikten.",
+  "faceDataH2": "2. Hur ansiktsdata används",
+  "faceDataP2": "Dessa rektanglar används endast för att visa föreslagna ansiktsområden på granskningsskärmen, där du kan behålla, ändra eller ta bort varje område (ansikten med högre tillförlitlighet är förvalda), och för att täcka de ansikten du låter vara valda i den skyddade kopian du exporterar (som standard med ett heltäckande block). De används inte för reklam, analys, spårning, profilering eller något annat ändamål.",
+  "faceDataH3": "3. Delning och tredje parter",
+  "faceDataP3": "Ansiktsdata laddas aldrig upp, säljs aldrig, delas aldrig med och lämnas aldrig ut till utvecklaren eller någon tredje part. Appen gör inga nätverksanrop som rör dina filer, deras innehåll eller detekteringsresultat; dess enda nätverkstjänst är Apples StoreKit för köp och återställning. Den innehåller inga SDK:er från tredje part för reklam, analys, spårning eller data.",
+  "faceDataH4": "4. Var ansiktsdata lagras",
+  "faceDataP4": "Ansiktsrektanglar hålls endast i enhetens minne i den aktiva granskningsarbetsytan och skrivs aldrig till lagring som ansiktsdata. Privat session är på som standard. Om du stänger av den sparar Projekt originalfilen och den skyddade kopian på den här enheten, tillsammans med antalet skyddade objekt och deras kategorier (till exempel \"ansikte (face)\"), men inte ansiktenas positioner. Dessa filer är dina egna bilder och kan visa ansikten.",
+  "faceDataH5": "5. Hur länge ansiktsdata sparas",
+  "faceDataP5": "Ansiktsrektanglar raderas när gransknings- eller grupparbetsytan rensas, till exempel när du börjar om med en annan fil, och inga finns kvar när appen har avslutats. Sparade projekt ligger kvar på din enhet tills du raderar dem. Utvecklaren tar aldrig emot eller sparar några ansiktsdata.",
+  "faceDataH6": "6. Radering",
+  "faceDataP6": "Eftersom ansiktsrektanglar aldrig sparas finns inga lagrade ansiktsdata att radera. Du kan radera ett sparat projekt, använda Rensa projekthistorik för att ta bort alla sparade original och skyddade kopior, eller radera appen för att ta bort alla dess lokala data från din enhet."
 }

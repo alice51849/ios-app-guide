@@ -28,5 +28,19 @@
   "storeTitle": "Nákup je jediná sieťová služba",
   "storeText": "Apple spracúva voliteľný doživotný nákup a obnovenie cez StoreKit. Mask My File nepoužíva VPN, NetworkExtension, proxy, tunel, DNS filter ani sieťové smerovanie.",
   "retentionTitle": "Vy rozhodujete, čo zostane",
-  "retentionText": "Originály sa nikdy neprepíšu. Dočasné pracovné súbory, uložené projekty, priradenia v trezore zástupných textov a údaje súkromnej relácie zostávajú len tak, ako to vysvetľuje každá funkcia. Odstráňte ich v aplikácii alebo odstránením aplikácie vymažte jej lokálny kontajner."
+  "retentionText": "Originály sa nikdy neprepíšu. Dočasné pracovné súbory, uložené projekty, priradenia v trezore zástupných textov a údaje súkromnej relácie zostávajú len tak, ako to vysvetľuje každá funkcia. Odstráňte ich v aplikácii alebo odstránením aplikácie vymažte jej lokálny kontajner.",
+  "faceDataTitle": "Údaje o tvári (aplikácia pre iOS)",
+  "faceDataScope": "Sekcia aktualizovaná 2026-11-16. Táto sekcia sa vzťahuje na aplikáciu Mask My File pre iOS v App Store.",
+  "faceDataH1": "1. Aké údaje o tvári aplikácia používa",
+  "faceDataP1": "Keď naskenujete obrázok alebo stranu PDF, samostatne alebo v dávke, Mask My File používa framework Apple Vision bežiaci v zariadení na detekciu tvárí. Pri každej tvári sú jedinými údajmi o tvári, ktoré aplikácia používa, poloha obdĺžnika okolo tváre na danej strane a spoľahlivosť detekcie. Pri vytvorení chránenej kópie aplikácia spustí rovnakú detekciu ešte raz na chránenej kópii, aby overila, že žiadna vybraná tvár už nie je viditeľná; tento výsledok sa používa iba na túto kontrolu. Aplikácia nevykonáva rozpoznávanie ani identifikáciu tvárí, nevytvára šablónu tváre, odtlačok tváre ani žiadny iný biometrický identifikátor a neporovnáva tváre.",
+  "faceDataH2": "2. Ako sa údaje o tvári používajú",
+  "faceDataP2": "Tieto obdĺžniky sa používajú iba na zobrazenie navrhovaných oblastí tvárí na kontrolnej obrazovke, kde môžete každú z nich ponechať, zmeniť alebo odstrániť (tváre s vyššou spoľahlivosťou sú predvybrané), a na zakrytie tvárí, ktoré ponecháte vybrané, v chránenej kópii, ktorú exportujete (predvolene plným blokom). Nepoužívajú sa na reklamu, analytiku, sledovanie, profilovanie ani na žiadny iný účel.",
+  "faceDataH3": "3. Zdieľanie a tretie strany",
+  "faceDataP3": "Údaje o tvári sa nikdy nenahrávajú, nepredávajú, nezdieľajú ani neposkytujú vývojárovi ani žiadnej tretej strane. Aplikácia neodosiela žiadne sieťové požiadavky týkajúce sa vašich súborov, ich obsahu ani výsledkov detekcie; jej jedinou sieťovou službou je Apple StoreKit pre nákup a obnovenie nákupu. Neobsahuje žiadnu reklamnú, analytickú, sledovaciu ani dátovú súpravu SDK tretích strán.",
+  "faceDataH4": "4. Kde sa údaje o tvári ukladajú",
+  "faceDataP4": "Obdĺžniky tvárí sa uchovávajú iba v pamäti vášho zariadenia v aktívnom pracovnom priestore kontroly a nikdy sa nezapisujú do úložiska ako údaje o tvári. Súkromná relácia je predvolene zapnutá. Ak ju vypnete, Projekty ukladajú v tomto zariadení pôvodný súbor a chránenú kópiu spolu s počtom chránených položiek a ich kategóriami (napríklad „tvár“ (face)), nie však s polohami tvárí. Tieto súbory sú vaše vlastné obrázky a môžu zobrazovať tváre.",
+  "faceDataH5": "5. Ako dlho sa údaje o tvári uchovávajú",
+  "faceDataP5": "Obdĺžniky tvárí sa zahodia, keď sa vyčistí pracovný priestor kontroly alebo dávky, napríklad keď začnete odznova s iným súborom, a po ukončení aplikácie nezostanú žiadne. Uložené projekty zostávajú vo vašom zariadení, kým ich neodstránite. Vývojár nikdy žiadne údaje o tvári neprijíma ani neuchováva.",
+  "faceDataH6": "6. Odstránenie",
+  "faceDataP6": "Keďže sa obdĺžniky tvárí nikdy neukladajú, neexistujú žiadne uložené údaje o tvári, ktoré by bolo možné odstrániť. Môžete odstrániť uložený projekt, pomocou možnosti Vymazať históriu projektov odstrániť všetky uchované originály a chránené kópie, alebo odstrániť aplikáciu, čím sa z vášho zariadenia odstránia všetky jej lokálne údaje."
 }

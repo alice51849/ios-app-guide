@@ -31,6 +31,20 @@
       <p>AI Brief accesses photos, the camera, files, clipboard text, or shared content only after you choose the related import action. The Share Extension places selected items in the app's private App Group container until AI Brief imports them. Temporary files can be cleared in Settings.</p>
       <h3>Face ID and device authentication</h3>
       <p>If you enable app locking, authentication is performed by Apple's LocalAuthentication framework. AI Brief receives only whether authentication succeeded. It never receives, stores, transmits, or shares Face ID data or facial templates.</p>
+      <h3 id="face-data">Face data (iOS app)</h3>
+      <p><em>Section updated 2026-11-16. This section applies to the AI Brief iOS app (iPhone and iPad) on the App Store.</em></p>
+      <h4 id="face-data-collected">1. What face data the app uses</h4>
+      <p>When both sensitive-data detection and &quot;Detect faces&quot; are on in Settings (both are on by default), AI Brief uses Apple&#x27;s on-device Vision framework to detect faces in the images you import (photos, screenshots, camera scans and shared images) and in PDF pages that have little or no embedded text. The only face data the app keeps is the number of faces found in each source. Face positions are used only during that scan and are not kept. AI Brief does not perform facial recognition or identification, does not create a face template, faceprint or any other biometric identifier, and does not compare faces. Optional app locking uses Face ID through Apple&#x27;s LocalAuthentication framework; AI Brief receives only whether authentication succeeded and never receives Face ID data.</p>
+      <h4 id="face-data-use">2. How face data is used</h4>
+      <p>The face count is shown on your device as a privacy flag in the brief&#x27;s privacy review (for example, &quot;Faces detected: 2&quot;), so you can check those images before you share anything. It is not used for advertising, analytics, tracking, profiling, or any other purpose.</p>
+      <h4 id="face-data-sharing">3. Sharing and third parties</h4>
+      <p>Face data is never uploaded, sold, shared with, or disclosed to the developer or any third party. AI Brief has no developer server and no third-party AI provider, advertising, analytics or tracking SDK. Nothing leaves the app unless you copy, export or share a brief yourself.</p>
+      <h4 id="face-data-storage">4. Where face data is stored</h4>
+      <p>The face count is stored with its brief, as one of the brief&#x27;s privacy flags, in the app&#x27;s private database on your device. The app does not sync it to iCloud or send it to any server; like other app data, it may be included in your own device backup if backup is turned on. Face positions are never stored. The images you imported are kept with the brief on your device, as your own files, until you delete the brief.</p>
+      <h4 id="face-data-retention">5. How long face data is retained</h4>
+      <p>The face count is kept for as long as its brief exists; if you process the brief again, its privacy flags are rebuilt from the current sources. Turning off &quot;Detect faces&quot; stops new face checks. The developer never receives or retains any face data.</p>
+      <h4 id="face-data-deletion">6. Deletion</h4>
+      <p>Delete a brief to remove its face count. Use Delete Everything in Settings to remove all briefs, imported copies, extracted facts and privacy flags at once, or delete the app to remove all of its local data from your device.</p>
       <h3>Purchases</h3>
       <p>The optional AI Brief Pro lifetime unlock is a one-time non-consumable purchase processed by Apple StoreKit. AI Brief does not receive payment-card details. Apple keeps purchase history so the unlock can be restored with the same Apple Account.</p>
       <h3>Export and sharing</h3>

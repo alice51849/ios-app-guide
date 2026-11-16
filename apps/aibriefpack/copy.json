@@ -82,6 +82,10 @@
           "body": "لا تتم إزالة التفاصيل المكتشفة تلقائياً أبداً. احتفظ بكل عنصر أو استبدله أو أزله قبل التصدير."
         },
         {
+          "title": "اكتشاف الوجوه",
+          "body": "يقوم فحص اختياري على الجهاز بعدّ الوجوه في الصور المستوردة والصفحات الممسوحة ضوئيًا لتتمكن من مراجعتها قبل المشاركة. ولا يُحفظ سوى هذا العدد، مع الملخص الخاص به، على جهازك. ولا تُخزَّن مواضع الوجوه ولا تُرفع ولا تُشارك أبدًا. احذف الملخص أو استخدم \"حذف كل شيء\" (Delete Everything) لإزالته."
+        },
+        {
           "title": "جاهز للمشاركة",
           "body": "راجع قبل المشاركة."
         },
@@ -181,6 +185,10 @@
         {
           "title": "গোপনীয়তা সুরক্ষিত রাখুন",
           "body": "শনাক্ত করা তথ্য কখনোই স্বয়ংক্রিয়ভাবে মুছে ফেলা হয় না। এক্সপোর্টের আগে প্রতিটি তথ্য রাখুন, বদলান বা মুছুন।"
+        },
+        {
+          "title": "মুখ শনাক্তকরণ",
+          "body": "একটি ঐচ্ছিক, ডিভাইসে চলা যাচাই আমদানি করা ছবি ও স্ক্যান করা পৃষ্ঠায় মুখের সংখ্যা গণনা করে, যাতে শেয়ার করার আগে আপনি সেগুলো পর্যালোচনা করতে পারেন। শুধু সেই সংখ্যাটিই তার ব্রিফসহ আপনার ডিভাইসে সংরক্ষিত হয়। মুখের অবস্থান কখনও সংরক্ষণ, আপলোড বা শেয়ার করা হয় না। এটি মুছতে ব্রিফ মুছুন বা “সবকিছু মুছুন” (Delete Everything) ব্যবহার করুন।"
         },
         {
           "title": "শেয়ার করার জন্য প্রস্তুত",
@@ -284,6 +292,10 @@
           "body": "Els detalls detectats mai s'eliminen automàticament. Conserva, substitueix o elimina cada element abans d'exportar."
         },
         {
+          "title": "Detecció de rostres",
+          "body": "Una comprovació opcional al dispositiu compta els rostres de les imatges importades i les pàgines escanejades perquè els puguis revisar abans de compartir. Només es desa aquest recompte, amb el seu resum, al teu dispositiu. Les posicions dels rostres mai no s'emmagatzemen, no es pugen ni es comparteixen. Suprimeix el resum o fes servir \"Suprimeix-ho tot\" (Delete Everything) per eliminar-lo."
+        },
+        {
           "title": "Llest per compartir",
           "body": "Revisa abans de compartir."
         },
@@ -383,6 +395,10 @@
         {
           "title": "保护隐私",
           "body": "已检测的详情不会自动删除。请在导出前保留、替换或删除每项内容。"
+        },
+        {
+          "title": "面部检测",
+          "body": "可选的设备端检查会统计导入的图像和扫描页面中的面部数量，方便您在共享前先行查看。仅有该数量会连同其简报一并保存在您的设备上。面部位置绝不会被存储、上传或共享。请删除该简报，或使用“全部删除”（Delete Everything）将其移除。"
         },
         {
           "title": "准备分享",
@@ -486,6 +502,10 @@
           "body": "偵測到的細節絕不會自動移除。匯出前，請逐項選擇保留、替換或移除。"
         },
         {
+          "title": "臉部偵測",
+          "body": "選用的裝置端檢查會計算匯入的圖片與掃描頁面中的臉部數量，方便您在分享前先行檢視。僅有該數量會連同其簡報一併儲存在您的裝置上。臉部位置絕不會被儲存、上傳或分享。請刪除該簡報，或使用「全部刪除」（Delete Everything）將其移除。"
+        },
+        {
           "title": "可以分享",
           "body": "分享前請先檢視。"
         },
@@ -585,6 +605,10 @@
         {
           "title": "Zaštitite privatnost",
           "body": "Otkriveni podaci nikada se ne uklanjaju automatski. Prije izvoza svaki podatak zadržite, zamijenite ili uklonite."
+        },
+        {
+          "title": "Otkrivanje lica",
+          "body": "Neobvezna provjera na uređaju broji lica na uvezenim slikama i skeniranim stranicama kako biste ih mogli pregledati prije dijeljenja. Na vašem se uređaju sprema samo taj broj, zajedno s pripadajućim briefom. Položaji lica nikada se ne pohranjuju, ne šalju niti dijele. Izbrišite brief ili upotrijebite „Izbriši sve“ (Delete Everything) da ga uklonite."
         },
         {
           "title": "Spremno za dijeljenje",
@@ -688,6 +712,10 @@
           "body": "Zjištěné údaje se nikdy nemažou automaticky. Před exportem každý údaj ponechte, nahraďte nebo odstraňte."
         },
         {
+          "title": "Detekce obličejů",
+          "body": "Volitelná kontrola v zařízení spočítá obličeje na importovaných obrázcích a naskenovaných stránkách, abyste je mohli před sdílením zkontrolovat. Uloží se pouze tento počet, spolu s příslušným briefem, ve vašem zařízení. Polohy obličejů se nikdy neukládají, nenahrávají ani nesdílejí. Smažte brief nebo jej odstraňte pomocí možnosti „Smazat vše“ (Delete Everything)."
+        },
+        {
           "title": "Připraveno ke sdílení",
           "body": "Před sdílením vše zkontrolujte."
         },
@@ -787,6 +815,10 @@
         {
           "title": "Beskyt privatlivets fred",
           "body": "Registrerede detaljer fjernes aldrig automatisk. Behold, udskift eller fjern hvert element før eksport."
+        },
+        {
+          "title": "Ansigtsregistrering",
+          "body": "Et valgfrit tjek på enheden tæller ansigterne i importerede billeder og scannede sider, så du kan gennemgå dem, før du deler. Kun dette antal gemmes sammen med dit brief på din enhed. Ansigternes placeringer gemmes, uploades eller deles aldrig. Slet dit brief, eller brug \"Slet alt (Delete Everything)\" for at fjerne det."
         },
         {
           "title": "Klar til at dele",
@@ -890,6 +922,10 @@
           "body": "Gedetecteerde details worden nooit automatisch verwijderd. Behoud, vervang of verwijder elk item voor het exporteren."
         },
         {
+          "title": "Gezichtsdetectie",
+          "body": "Een optionele controle op het apparaat telt de gezichten in geïmporteerde afbeeldingen en gescande pagina's, zodat je ze kunt bekijken voordat je deelt. Alleen dat aantal wordt op je apparaat opgeslagen, samen met de bijbehorende briefing. Posities van gezichten worden nooit opgeslagen, geüpload of gedeeld. Verwijder de briefing of gebruik \"Alles verwijderen (Delete Everything)\" om deze te verwijderen."
+        },
+        {
           "title": "Klaar om te delen",
           "body": "Controleer voordat je deelt."
         },
@@ -989,6 +1025,10 @@
         {
           "title": "Protect privacy",
           "body": "Detected details are never removed automatically. Keep, replace, or remove each item before export."
+        },
+        {
+          "title": "Face detection",
+          "body": "An optional on-device check counts the faces in imported images and scanned pages so you can review them before sharing. Only that count is saved, with its brief, on your device. Face positions are never stored, uploaded or shared. Delete the brief or use Delete Everything to remove it."
         },
         {
           "title": "Ready to share",
@@ -1092,6 +1132,10 @@
           "body": "Detected details are never removed automatically. Keep, replace, or remove each item before export."
         },
         {
+          "title": "Face detection",
+          "body": "An optional on-device check counts the faces in imported images and scanned pages so you can review them before sharing. Only that count is saved, with its brief, on your device. Face positions are never stored, uploaded or shared. Delete the brief or use Delete Everything to remove it."
+        },
+        {
           "title": "Ready to share",
           "body": "Review before you share."
         },
@@ -1191,6 +1235,10 @@
         {
           "title": "Protect privacy",
           "body": "Detected details are never removed automatically. Keep, replace, or remove each item before export."
+        },
+        {
+          "title": "Face detection",
+          "body": "An optional on-device check counts the faces in imported images and scanned pages so you can review them before sharing. Only that count is saved, with its brief, on your device. Face positions are never stored, uploaded or shared. Delete the brief or use Delete Everything to remove it."
         },
         {
           "title": "Ready to share",
@@ -1294,6 +1342,10 @@
           "body": "Detected details are never removed automatically. Keep, replace, or remove each item before export."
         },
         {
+          "title": "Face detection",
+          "body": "An optional on-device check counts the faces in imported images and scanned pages so you can review them before sharing. Only that count is saved, with its brief, on your device. Face positions are never stored, uploaded or shared. Delete the brief or use Delete Everything to remove it."
+        },
+        {
           "title": "Ready to share",
           "body": "Review before you share."
         },
@@ -1393,6 +1445,10 @@
         {
           "title": "Suojele yksityisyyttä",
           "body": "Havaittuja tietoja ei poisteta automaattisesti. Säilytä, korvaa tai poista jokainen kohde ennen vientiä."
+        },
+        {
+          "title": "Kasvojen havaitseminen",
+          "body": "Valinnainen laitteella tehtävä tarkistus laskee tuotujen kuvien ja skannattujen sivujen kasvot, jotta voit tarkistaa ne ennen jakamista. Vain tämä lukumäärä tallennetaan briefin mukana laitteellesi. Kasvojen sijainteja ei koskaan tallenneta, lähetetä eikä jaeta. Poista brief tai käytä toimintoa ”Poista kaikki” (Delete Everything) sen poistamiseen."
         },
         {
           "title": "Valmis jaettavaksi",
@@ -1496,6 +1552,10 @@
           "body": "Les détails détectés ne sont jamais supprimés automatiquement. Conservez, remplacez ou supprimez chaque élément avant l'exportation."
         },
         {
+          "title": "Détection de visages",
+          "body": "Une vérification facultative sur l'appareil compte les visages présents dans les images importées et les pages numérisées afin que vous puissiez les examiner avant de partager. Seul ce nombre est enregistré, avec son brief, sur votre appareil. Les positions des visages ne sont jamais stockées, téléversées ni partagées. Supprimez le brief ou utilisez « Tout supprimer » (« Delete Everything ») pour l'effacer."
+        },
+        {
           "title": "Prêt à partager",
           "body": "Révisez avant de partager."
         },
@@ -1595,6 +1655,10 @@
         {
           "title": "Protéger la confidentialité",
           "body": "Les détails détectés ne sont jamais supprimés automatiquement. Conservez, remplacez ou supprimez chaque élément avant l'exportation."
+        },
+        {
+          "title": "Détection de visages",
+          "body": "Une vérification facultative sur l'appareil compte les visages présents dans les images importées et les pages numérisées afin que vous puissiez les examiner avant de partager. Seul ce nombre est enregistré, avec son brief, sur votre appareil. Les positions des visages ne sont jamais stockées, envoyées ni partagées. Supprimez le brief ou utilisez « Tout supprimer » (« Delete Everything ») pour l'effacer."
         },
         {
           "title": "Prêt à partager",
@@ -1698,6 +1762,10 @@
           "body": "Erkannte Details werden nie automatisch entfernt. Behalte, ersetze oder entferne jedes Element vor dem Export."
         },
         {
+          "title": "Gesichtserkennung",
+          "body": "Eine optionale Prüfung auf dem Gerät zählt die Gesichter in importierten Bildern und gescannten Seiten, damit Sie diese vor dem Teilen prüfen können. Nur diese Anzahl wird zusammen mit dem zugehörigen Brief auf Ihrem Gerät gespeichert. Gesichtspositionen werden niemals gespeichert, hochgeladen oder geteilt. Löschen Sie den Brief oder verwenden Sie „Alles löschen“ („Delete Everything“), um ihn zu entfernen."
+        },
+        {
           "title": "Bereit zum Teilen",
           "body": "Überprüfe, bevor du teilst."
         },
@@ -1797,6 +1865,10 @@
         {
           "title": "Προστασία απορρήτου",
           "body": "Οι λεπτομέρειες που ανιχνεύονται δεν αφαιρούνται ποτέ αυτόματα. Διατηρήστε, αντικαταστήστε ή αφαιρέστε κάθε στοιχείο πριν από την εξαγωγή."
+        },
+        {
+          "title": "Ανίχνευση προσώπων",
+          "body": "Ένας προαιρετικός έλεγχος στη συσκευή μετρά τα πρόσωπα στις εισαγόμενες εικόνες και στις σαρωμένες σελίδες, ώστε να μπορείτε να τα ελέγξετε πριν από την κοινοποίηση. Αποθηκεύεται μόνο αυτός ο αριθμός, μαζί με την ενημέρωσή του (brief), στη συσκευή σας. Οι θέσεις των προσώπων δεν αποθηκεύονται, δεν μεταφορτώνονται και δεν κοινοποιούνται ποτέ. Διαγράψτε το brief ή χρησιμοποιήστε «Διαγραφή όλων» (Delete Everything) για να το αφαιρέσετε."
         },
         {
           "title": "Έτοιμο για κοινοποίηση",
@@ -1900,6 +1972,10 @@
           "body": "શોધાયેલ વિગતો ક્યારેય આપમેળે દૂર કરવામાં આવતી નથી. નિકાસ કરતા પહેલા દરેક વસ્તુને સંગ્રહિત કરો, બદલો અથવા દૂર કરો."
         },
         {
+          "title": "ચહેરાની શોધ",
+          "body": "એક વૈકલ્પિક, ડિવાઇસ પર ચાલતી તપાસ આયાત કરેલી છબીઓ અને સ્કૅન કરેલાં પૃષ્ઠોમાં ચહેરાઓની ગણતરી કરે છે, જેથી શેર કરતાં પહેલાં તમે તેમની સમીક્ષા કરી શકો. ફક્ત તે સંખ્યા જ તેના બ્રીફ સાથે તમારા ડિવાઇસ પર સાચવવામાં આવે છે. ચહેરાનાં સ્થાનો ક્યારેય સંગ્રહિત, અપલોડ કે શેર કરવામાં આવતાં નથી. તેને કાઢી નાખવા માટે બ્રીફ કાઢી નાખો અથવા “બધું કાઢી નાખો” (Delete Everything) નો ઉપયોગ કરો."
+        },
+        {
           "title": "શેર કરવા માટે તૈયાર",
           "body": "શેર કરતા પહેલા સમીક્ષા કરો."
         },
@@ -1999,6 +2075,10 @@
         {
           "title": "הגן על פרטיות",
           "body": "פרטים שזוהו לעולם אינם מוסרים אוטומטית. השאר, החלף או הסר כל פריט לפני הייצוא."
+        },
+        {
+          "title": "זיהוי פנים",
+          "body": "בדיקה אופציונלית במכשיר סופרת את הפנים בתמונות שיובאו ובעמודים שנסרקו כדי שתוכלו לסקור אותם לפני השיתוף. רק הספירה הזו נשמרת, יחד עם התקציר שלה, במכשיר שלכם. מיקומי הפנים אינם נשמרים, מועלים או משותפים לעולם. מחקו את התקציר או השתמשו ב\"מחיקת הכול\" (Delete Everything) כדי להסיר אותו."
         },
         {
           "title": "מוכן לשיתוף",
@@ -2102,6 +2182,10 @@
           "body": "पता चला विवरण कभी भी स्वचालित रूप से हटाया नहीं जाता है। निर्यात से पहले प्रत्येक आइटम को संग्रहीत, प्रतिस्थापित या हटा दिया जाता है।"
         },
         {
+          "title": "चेहरे की पहचान",
+          "body": "एक वैकल्पिक, डिवाइस पर चलने वाली जाँच आयात की गई छवियों और स्कैन किए गए पृष्ठों में चेहरों की गिनती करती है, ताकि साझा करने से पहले आप उनकी समीक्षा कर सकें। केवल वह गिनती ही उसके ब्रीफ़ के साथ आपके डिवाइस पर सहेजी जाती है। चेहरों की स्थिति कभी संग्रहीत, अपलोड या साझा नहीं की जाती। इसे हटाने के लिए ब्रीफ़ हटाएँ या “सब कुछ हटाएँ” (Delete Everything) का उपयोग करें।"
+        },
+        {
           "title": "साझा करने के लिए तैयार",
           "body": "साझा करने से पहले समीक्षा करें।"
         },
@@ -2201,6 +2285,10 @@
         {
           "title": "Adatvédelem",
           "body": "Az észlelt adatok soha nem kerülnek automatikus eltávolításra. Exportálás előtt döntsd el minden elemnél, hogy megtartod, lecseréled vagy eltávolítod."
+        },
+        {
+          "title": "Arcészlelés",
+          "body": "Egy opcionális, eszközön futó ellenőrzés megszámolja az importált képeken és beolvasott oldalakon lévő arcokat, hogy megosztás előtt át tudja nézni őket. Csak ez a szám kerül mentésre, a hozzá tartozó összefoglalóval (brief) együtt, az eszközén. Az arcok helyzetét soha nem tároljuk, nem töltjük fel és nem osztjuk meg. Törölje az összefoglalót, vagy használja a „Mindent töröl” (Delete Everything) funkciót az eltávolításához."
         },
         {
           "title": "Kész a megosztásra",
@@ -2304,6 +2392,10 @@
           "body": "Detail yang terdeteksi tidak pernah dihapus secara otomatis. Simpan, ganti, atau hapus setiap item sebelum ekspor."
         },
         {
+          "title": "Deteksi wajah",
+          "body": "Pemeriksaan opsional di perangkat menghitung jumlah wajah pada gambar yang diimpor dan halaman yang dipindai sehingga Anda dapat meninjaunya sebelum berbagi. Hanya jumlah itu yang disimpan, bersama ringkasannya, di perangkat Anda. Posisi wajah tidak pernah disimpan, diunggah, atau dibagikan. Hapus ringkasan tersebut atau gunakan \"Hapus Semua\" (Delete Everything) untuk menghapusnya."
+        },
+        {
           "title": "Siap dibagikan",
           "body": "Ulasan sebelum Anda berbagi."
         },
@@ -2403,6 +2495,10 @@
         {
           "title": "Proteggi la privacy",
           "body": "I dettagli rilevati non vengono mai rimossi automaticamente. Mantieni, sostituisci o rimuovi ogni elemento prima di esportare."
+        },
+        {
+          "title": "Rilevamento dei volti",
+          "body": "Un controllo facoltativo sul dispositivo conta i volti nelle immagini importate e nelle pagine scansionate, così può verificarli prima della condivisione. Solo quel conteggio viene salvato, insieme al suo brief, sul dispositivo. Le posizioni dei volti non vengono mai memorizzate, caricate né condivise. Elimini il brief o usi «Elimina tutto» («Delete Everything») per rimuoverlo."
         },
         {
           "title": "Pronto a condividere",
@@ -2506,6 +2602,10 @@
           "body": "検出した詳細は自動的に削除されません。エクスポート前に各項目を選択、置換、または削除してください。"
         },
         {
+          "title": "顔検出",
+          "body": "任意のオンデバイスのチェックにより、読み込んだ画像やスキャンしたページに含まれる顔の数をカウントし、共有する前に確認できます。保存されるのはその数のみで、ブリーフとともにお使いのデバイスに保存されます。顔の位置が保存、アップロード、共有されることは一切ありません。ブリーフを削除するか、「すべてを削除」（Delete Everything）を使用して消去してください。"
+        },
+        {
           "title": "共有準備完了",
           "body": "共有前に確認してください。"
         },
@@ -2605,6 +2705,10 @@
         {
           "title": "ಗೌಪ್ಯತೆಯನ್ನು ರಕ್ಷಿಸಿ",
           "body": "ಪತ್ತೆಯಾದ ವಿವರಗಳನ್ನು ಎಂದಿಗೂ ಸ್ವಯಂಚಾಲಿತವಾಗಿ ತೆಗೆದುಹಾಕಲಾಗುವುದಿಲ್ಲ. ರಫ್ತು ಮಾಡುವ ಮೊದಲು ಪ್ರತಿ ಐಟಂ ಅನ್ನು ಉಳಿಸಿಕೊಳ್ಳಿ, ಬದಲಾಯಿಸಿ ಅಥವಾ ತೆಗೆದುಹಾಕಿ."
+        },
+        {
+          "title": "ಮುಖ ಪತ್ತೆ",
+          "body": "ಐಚ್ಛಿಕವಾದ, ಸಾಧನದಲ್ಲೇ ನಡೆಯುವ ಪರಿಶೀಲನೆಯು ಆಮದು ಮಾಡಿದ ಚಿತ್ರಗಳು ಮತ್ತು ಸ್ಕ್ಯಾನ್ ಮಾಡಿದ ಪುಟಗಳಲ್ಲಿರುವ ಮುಖಗಳನ್ನು ಎಣಿಸುತ್ತದೆ, ಇದರಿಂದ ಹಂಚಿಕೊಳ್ಳುವ ಮೊದಲು ನೀವು ಅವುಗಳನ್ನು ಪರಿಶೀಲಿಸಬಹುದು. ಆ ಸಂಖ್ಯೆ ಮಾತ್ರ, ಅದರ ಬ್ರೀಫ್‌ನೊಂದಿಗೆ, ನಿಮ್ಮ ಸಾಧನದಲ್ಲಿ ಉಳಿಸಲ್ಪಡುತ್ತದೆ. ಮುಖಗಳ ಸ್ಥಾನಗಳನ್ನು ಎಂದಿಗೂ ಸಂಗ್ರಹಿಸುವುದಿಲ್ಲ, ಅಪ್‌ಲೋಡ್ ಮಾಡುವುದಿಲ್ಲ, ಹಂಚಿಕೊಳ್ಳುವುದಿಲ್ಲ. ಅದನ್ನು ತೆಗೆದುಹಾಕಲು ಬ್ರೀಫ್ ಅನ್ನು ಅಳಿಸಿ ಅಥವಾ \"ಎಲ್ಲವನ್ನೂ ಅಳಿಸಿ\" (Delete Everything) ಬಳಸಿ."
         },
         {
           "title": "ಹಂಚಿಕೊಳ್ಳಲು ಸಿದ್ಧ",
@@ -2708,6 +2812,10 @@
           "body": "감지된 정보는 자동으로 삭제되지 않습니다. 내보내기 전에 각 항목을 유지, 교체, 삭제하세요."
         },
         {
+          "title": "얼굴 감지",
+          "body": "선택 사항인 온디바이스 확인 기능은 가져온 이미지와 스캔한 페이지의 얼굴 수를 세어, 공유하기 전에 검토할 수 있도록 합니다. 그 수만 브리프와 함께 사용자의 기기에 저장됩니다. 얼굴 위치는 저장, 업로드 또는 공유되지 않습니다. 브리프를 삭제하거나 \"모두 삭제\"(Delete Everything)를 사용하여 제거하세요."
+        },
+        {
           "title": "공유 준비 완료",
           "body": "공유하기 전에 검토하세요."
         },
@@ -2807,6 +2915,10 @@
         {
           "title": "Lindungi Privasi",
           "body": "Maklumat yang dikesan tidak pernah dikeluarkan secara automatik. Simpan, ganti, atau membuang setiap item sebelum eksport."
+        },
+        {
+          "title": "Pengesanan wajah",
+          "body": "Semakan pilihan pada peranti mengira bilangan wajah dalam imej yang diimport dan halaman yang diimbas supaya anda boleh menyemaknya sebelum berkongsi. Hanya bilangan itu disimpan, bersama ringkasannya, pada peranti anda. Kedudukan wajah tidak sekali-kali disimpan, dimuat naik atau dikongsi. Padamkan ringkasan tersebut atau gunakan \"Padam Semua\" (Delete Everything) untuk mengalih keluarnya."
         },
         {
           "title": "Sedia untuk dikongsi",
@@ -2910,6 +3022,10 @@
           "body": "കണ്ടെത്തിയ വിശദാംശങ്ങൾ ഒരിക്കലും സ്വയമേവ നീക്കം ചെയ്യില്ല. export ചെയ്യുന്നതിന് മുമ്പ് ഓരോ ഇനവും നിലനിർത്തുകയോ മാറ്റിസ്ഥാപിക്കുകയോ നീക്കം ചെയ്യുകയോ ചെയ്യുക."
         },
         {
+          "title": "മുഖം കണ്ടെത്തൽ",
+          "body": "ഐച്ഛികമായ, ഉപകരണത്തിൽ തന്നെ നടക്കുന്ന ഒരു പരിശോധന ഇറക്കുമതി ചെയ്ത ചിത്രങ്ങളിലെയും സ്കാൻ ചെയ്ത പേജുകളിലെയും മുഖങ്ങൾ എണ്ണുന്നു, അതുവഴി പങ്കിടുന്നതിന് മുമ്പ് നിങ്ങൾക്ക് അവ അവലോകനം ചെയ്യാം. ആ എണ്ണം മാത്രം, അതിന്റെ ബ്രീഫിനൊപ്പം, നിങ്ങളുടെ ഉപകരണത്തിൽ സേവ് ചെയ്യുന്നു. മുഖങ്ങളുടെ സ്ഥാനങ്ങൾ ഒരിക്കലും സംഭരിക്കുകയോ അപ്‌ലോഡ് ചെയ്യുകയോ പങ്കിടുകയോ ചെയ്യുന്നില്ല. അത് നീക്കം ചെയ്യാൻ ബ്രീഫ് ഇല്ലാതാക്കുക അല്ലെങ്കിൽ \"എല്ലാം ഇല്ലാതാക്കുക\" (Delete Everything) ഉപയോഗിക്കുക."
+        },
+        {
           "title": "പങ്കിടാൻ തയ്യാറാണ്",
           "body": "പങ്കിടുന്നതിന് മുമ്പ് പരിശോധിക്കുക."
         },
@@ -3009,6 +3125,10 @@
         {
           "title": "गोपनीयतेचे रक्षण करा",
           "body": "आढळलेल्या माहिती कधीही स्वयंचलितपणे काढल्या जात नाहीत. प्रत्येक वस्तू निर्यात करण्यापूर्वी ठेवली जाते, बदलली जाते किंवा काढली जाते."
+        },
+        {
+          "title": "चेहरा ओळख",
+          "body": "एक पर्यायी, डिव्हाइसवर चालणारी तपासणी आयात केलेल्या प्रतिमा आणि स्कॅन केलेल्या पृष्ठांमधील चेहऱ्यांची मोजणी करते, जेणेकरून शेअर करण्यापूर्वी तुम्ही त्यांचे पुनरावलोकन करू शकता. फक्त ती संख्याच तिच्या ब्रीफसह तुमच्या डिव्हाइसवर जतन केली जाते. चेहऱ्यांची स्थाने कधीही साठवली, अपलोड केली किंवा शेअर केली जात नाहीत. ती हटवण्यासाठी ब्रीफ हटवा किंवा “सर्व काही हटवा” (Delete Everything) वापरा."
         },
         {
           "title": "सामायिक करण्यास तयार",
@@ -3112,6 +3232,10 @@
           "body": "Oppdagede detaljer fjernes aldri automatisk. Behold, erstatt eller fjern hvert element før eksport."
         },
         {
+          "title": "Ansiktsdeteksjon",
+          "body": "En valgfri kontroll på enheten teller ansiktene i importerte bilder og skannede sider, slik at du kan gjennomgå dem før du deler. Bare dette antallet lagres, sammen med briefen, på enheten din. Posisjonene til ansiktene lagres, lastes opp eller deles aldri. Slett briefen eller bruk \"Slett alt (Delete Everything)\" for å fjerne den."
+        },
+        {
           "title": "Klar til å dele",
           "body": "Gjennomgå før du deler."
         },
@@ -3211,6 +3335,10 @@
         {
           "title": "ଗୋପନୀୟତା ସୁରକ୍ଷା କରନ୍ତୁ",
           "body": "ଚିହ୍ନଟ ହୋଇଥିବା ବିବରଣୀ କେବେ ହେଁ ସ୍ୱୟଂଚାଳିତ ଭାବେ ହଟାଯାଏ ନାହିଁ। ଏକ୍ସପୋର୍ଟ ପୂର୍ବରୁ ପ୍ରତ୍ୟେକ ବିଷୟ ରଖନ୍ତୁ, ବଦଳାନ୍ତୁ, କିମ୍ବା ହଟାନ୍ତୁ।"
+        },
+        {
+          "title": "ମୁହଁ ଚିହ୍ନଟ",
+          "body": "ଏକ ବୈକଳ୍ପିକ, ଡିଭାଇସ୍‌ରେ ଚାଲୁଥିବା ଯାଞ୍ଚ ଆମଦାନି କରାଯାଇଥିବା ଚିତ୍ର ଏବଂ ସ୍କାନ୍ କରାଯାଇଥିବା ପୃଷ୍ଠାରେ ମୁହଁ ଗଣେ, ଯାହାଫଳରେ ସେୟାର୍ କରିବା ପୂର୍ବରୁ ଆପଣ ସେଗୁଡ଼ିକୁ ସମୀକ୍ଷା କରିପାରିବେ। କେବଳ ସେହି ସଂଖ୍ୟା ହିଁ ତାହାର ବ୍ରିଫ୍ ସହିତ ଆପଣଙ୍କ ଡିଭାଇସ୍‌ରେ ସେଭ୍ କରାଯାଏ। ମୁହଁର ସ୍ଥିତି କେବେ ସଂରକ୍ଷିତ, ଅପଲୋଡ୍ କିମ୍ବା ସେୟାର୍ କରାଯାଏ ନାହିଁ। ଏହାକୁ ଅପସାରଣ କରିବାକୁ ବ୍ରିଫ୍ ଅପସାରଣ କରନ୍ତୁ କିମ୍ବା “ସବୁକିଛି ଅପସାରଣ କରନ୍ତୁ” (Delete Everything) ବ୍ୟବହାର କରନ୍ତୁ।"
         },
         {
           "title": "ସେୟାର୍ ପାଇଁ ପ୍ରସ୍ତୁତ",
@@ -3314,6 +3442,10 @@
           "body": "Wykryte szczegóły nigdy nie są usuwane automatycznie. Zachowaj, zastąp lub usuń każdy element przed eksportem."
         },
         {
+          "title": "Wykrywanie twarzy",
+          "body": "Opcjonalna kontrola na urządzeniu zlicza twarze na zaimportowanych obrazach i zeskanowanych stronach, aby można je było przejrzeć przed udostępnieniem. Zapisywana jest wyłącznie ta liczba, razem z jej briefem, na Twoim urządzeniu. Położenie twarzy nigdy nie jest przechowywane, wysyłane ani udostępniane. Usuń brief lub użyj opcji „Usuń wszystko” (Delete Everything), aby go usunąć."
+        },
+        {
           "title": "Gotowy do udostępnienia",
           "body": "Przejrzyj, zanim się podzielisz."
         },
@@ -3413,6 +3545,10 @@
         {
           "title": "Proteger a privacidade",
           "body": "Os detalhes detectados nunca são removidos automaticamente. Manter, substituir ou remover cada item antes de exportar."
+        },
+        {
+          "title": "Detecção de rostos",
+          "body": "Uma verificação opcional no dispositivo conta os rostos em imagens importadas e páginas escaneadas para que você possa revisá-los antes de compartilhar. Somente essa contagem é salva, junto com o briefing, no seu dispositivo. As posições dos rostos nunca são armazenadas, enviadas nem compartilhadas. Exclua o briefing ou use \"Excluir tudo (Delete Everything)\" para removê-lo."
         },
         {
           "title": "Pronto para compartilhar",
@@ -3516,6 +3652,10 @@
           "body": "Os detalhes detetados nunca são removidos automaticamente. Mantém, substitui ou remove cada item antes de exportar."
         },
         {
+          "title": "Deteção de rostos",
+          "body": "Uma verificação opcional no dispositivo conta os rostos nas imagens importadas e nas páginas digitalizadas para que possa revê-los antes de partilhar. Apenas essa contagem é guardada, juntamente com o respetivo briefing, no seu dispositivo. As posições dos rostos nunca são guardadas, carregadas nem partilhadas. Elimine o briefing ou utilize \"Eliminar tudo (Delete Everything)\" para o remover."
+        },
+        {
           "title": "Pronto para partilhar",
           "body": "Revê antes de partilhar."
         },
@@ -3615,6 +3755,10 @@
         {
           "title": "ਪਰਦੇਦਾਰੀ ਦੀ ਰੱਖਿਆ ਕਰੋ",
           "body": "ਖੋਜੇ ਗਏ ਵੇਰਵੇ ਕਦੇ ਵੀ ਆਪਣੇ ਆਪ ਨਹੀਂ ਹਟਾਏ ਜਾਂਦੇ। ਨਿਰਯਾਤ ਤੋਂ ਪਹਿਲਾਂ ਹਰੇਕ ਆਈਟਮ ਨੂੰ ਰੱਖੋ, ਬਦਲੋ ਜਾਂ ਹਟਾਓ।"
+        },
+        {
+          "title": "ਚਿਹਰੇ ਦੀ ਪਛਾਣ",
+          "body": "ਇੱਕ ਵਿਕਲਪਿਕ, ਡੀਵਾਈਸ ਉੱਤੇ ਚੱਲਣ ਵਾਲੀ ਜਾਂਚ ਆਯਾਤ ਕੀਤੀਆਂ ਤਸਵੀਰਾਂ ਅਤੇ ਸਕੈਨ ਕੀਤੇ ਪੰਨਿਆਂ ਵਿੱਚ ਚਿਹਰਿਆਂ ਦੀ ਗਿਣਤੀ ਕਰਦੀ ਹੈ, ਤਾਂ ਜੋ ਸਾਂਝਾ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ ਤੁਸੀਂ ਉਨ੍ਹਾਂ ਦੀ ਸਮੀਖਿਆ ਕਰ ਸਕੋ। ਸਿਰਫ਼ ਉਹ ਗਿਣਤੀ ਹੀ ਉਸ ਦੇ ਬ੍ਰੀਫ਼ ਸਮੇਤ ਤੁਹਾਡੇ ਡੀਵਾਈਸ ਉੱਤੇ ਸੰਭਾਲੀ ਜਾਂਦੀ ਹੈ। ਚਿਹਰਿਆਂ ਦੀਆਂ ਸਥਿਤੀਆਂ ਕਦੇ ਸਟੋਰ, ਅੱਪਲੋਡ ਜਾਂ ਸਾਂਝੀਆਂ ਨਹੀਂ ਕੀਤੀਆਂ ਜਾਂਦੀਆਂ। ਇਸ ਨੂੰ ਹਟਾਉਣ ਲਈ ਬ੍ਰੀਫ਼ ਹਟਾਓ ਜਾਂ “ਸਭ ਕੁਝ ਹਟਾਓ” (Delete Everything) ਵਰਤੋ।"
         },
         {
           "title": "ਸਾਂਝਾ ਕਰਨ ਲਈ ਤਿਆਰ",
@@ -3718,6 +3862,10 @@
           "body": "Detaliile detectate nu sunt niciodată eliminate automat. Păstrează, înlocuiește sau elimină fiecare element înainte de export."
         },
         {
+          "title": "Detectarea fețelor",
+          "body": "O verificare opțională, pe dispozitiv, numără fețele din imaginile importate și din paginile scanate, astfel încât să le puteți revizui înainte de partajare. Doar acest număr este salvat, împreună cu rezumatul său (brief), pe dispozitivul dvs. Pozițiile fețelor nu sunt niciodată stocate, încărcate sau partajate. Ștergeți rezumatul sau folosiți „Șterge tot” (Delete Everything) pentru a-l elimina."
+        },
+        {
           "title": "Gata pentru partajare",
           "body": "Revizuiește înainte de a partaja."
         },
@@ -3817,6 +3965,10 @@
         {
           "title": "Защитите конфиденциальность",
           "body": "Выявленные данные никогда не удаляются автоматически. Перед экспортом сохраните, замените или удалите каждый элемент."
+        },
+        {
+          "title": "Обнаружение лиц",
+          "body": "Необязательная проверка на устройстве подсчитывает лица на импортированных изображениях и отсканированных страницах, чтобы вы могли просмотреть их перед отправкой. Сохраняется только это число — вместе со сводкой (brief) на вашем устройстве. Положение лиц никогда не хранится, не загружается и не передаётся. Удалите сводку или используйте «Удалить всё» (Delete Everything), чтобы убрать её."
         },
         {
           "title": "Готово к отправке",
@@ -3920,6 +4072,10 @@
           "body": "Detaly, ktoré sa zistia, sa nikdy automaticky neodstráňajú."
         },
         {
+          "title": "Detekcia tvárí",
+          "body": "Voliteľná kontrola v zariadení spočíta tváre na importovaných obrázkoch a naskenovaných stranách, aby ste ich mohli pred zdieľaním skontrolovať. Uloží sa iba tento počet, spolu s príslušným briefom, vo vašom zariadení. Polohy tvárí sa nikdy neukladajú, nenahrávajú ani nezdieľajú. Odstráňte brief alebo ho odstráňte pomocou možnosti „Odstrániť všetko“ (Delete Everything)."
+        },
+        {
           "title": "Pripravený na zdieľanie",
           "body": "Prečítajte si to, než sa podelíte."
         },
@@ -4019,6 +4175,10 @@
         {
           "title": "Zaščiti zasebnost",
           "body": "Zaznane podrobnosti se nikoli ne odstranijo samodejno. Pred izvozom ohranite, nadomestite ali odstranite vsak element."
+        },
+        {
+          "title": "Zaznavanje obrazov",
+          "body": "Izbirno preverjanje na napravi prešteje obraze na uvoženih slikah in skeniranih straneh, da jih lahko pred deljenjem pregledate. Skupaj z njegovim briefom se na vaši napravi shrani samo to število. Položaji obrazov se nikoli ne shranjujejo, nalagajo ali delijo. Izbrišite brief ali uporabite možnost „Izbriši vse“ (Delete Everything), da ga odstranite."
         },
         {
           "title": "Pripravljeno na deljenje",
@@ -4122,6 +4282,10 @@
           "body": "Los datos detectados nunca se eliminan automáticamente. Mantén, reemplaza o quita cada elemento antes de exportar."
         },
         {
+          "title": "Detección de rostros",
+          "body": "Una comprobación opcional en el dispositivo cuenta los rostros de las imágenes importadas y las páginas escaneadas para que pueda revisarlos antes de compartir. Solo ese conteo se guarda, junto con su brief, en su dispositivo. Las posiciones de los rostros nunca se almacenan, suben ni comparten. Elimine el brief o use «Eliminar todo» («Delete Everything») para quitarlo."
+        },
+        {
           "title": "Listo para compartir",
           "body": "Revisa antes de compartir."
         },
@@ -4221,6 +4385,10 @@
         {
           "title": "Proteger la privacidad",
           "body": "Los datos detectados nunca se eliminan automáticamente. Mantén, reemplaza o quita cada elemento antes de exportar."
+        },
+        {
+          "title": "Detección de rostros",
+          "body": "Una comprobación opcional en el dispositivo cuenta los rostros de las imágenes importadas y las páginas escaneadas para que pueda revisarlos antes de compartir. Solo ese recuento se guarda, junto con su brief, en su dispositivo. Las posiciones de los rostros nunca se almacenan, suben ni comparten. Elimine el brief o use «Eliminar todo» («Delete Everything») para quitarlo."
         },
         {
           "title": "Listo para compartir",
@@ -4324,6 +4492,10 @@
           "body": "Upptäckta uppgifter tas aldrig bort automatiskt. Behåll, ersätt eller ta bort varje objekt innan export."
         },
         {
+          "title": "Ansiktsdetektering",
+          "body": "En valfri kontroll på enheten räknar ansiktena i importerade bilder och skannade sidor så att du kan granska dem innan du delar. Endast det antalet sparas, tillsammans med briefen, på din enhet. Ansiktenas positioner lagras, laddas upp eller delas aldrig. Radera briefen eller använd \"Radera allt (Delete Everything)\" för att ta bort den."
+        },
+        {
           "title": "Redo att dela",
           "body": "Granska innan du delar."
         },
@@ -4423,6 +4595,10 @@
         {
           "title": "தனியுரிமையைப் பாதுகாக்கவும்",
           "body": "கண்டறியப்பட்ட விவரங்கள் தானாக அகற்றப்படாது. ஏற்றுமதிக்கு முன் ஒவ்வொரு உருப்படியையும் வைத்திருக்கவும், மாற்றவும் அல்லது அகற்றவும்."
+        },
+        {
+          "title": "முகக் கண்டறிதல்",
+          "body": "விருப்பத்துக்குரிய, சாதனத்திலேயே நடக்கும் ஒரு சரிபார்ப்பு, இறக்குமதி செய்த படங்களிலும் ஸ்கேன் செய்த பக்கங்களிலும் உள்ள முகங்களை எண்ணுகிறது; இதனால் பகிர்வதற்கு முன் அவற்றை மதிப்பாய்வு செய்யலாம். அந்த எண்ணிக்கை மட்டுமே, அதன் சுருக்கத்துடன் (brief), உங்கள் சாதனத்தில் சேமிக்கப்படுகிறது. முகங்களின் இடங்கள் ஒருபோதும் சேமிக்கப்படுவதில்லை, பதிவேற்றப்படுவதில்லை, பகிரப்படுவதில்லை. அதை அகற்ற அந்தச் சுருக்கத்தை (brief) நீக்குங்கள் அல்லது “அனைத்தையும் நீக்கு” (Delete Everything) என்பதைப் பயன்படுத்துங்கள்."
         },
         {
           "title": "பகிர்வதற்குத் தயார்",
@@ -4526,6 +4702,10 @@
           "body": "గుర్తించిన వివరాలు ఆటోమేటిక్‌గా తొలగించబడవు. ఎగుమతి చేసే ముందు ప్రతి అంశాన్ని ఉంచండి, మార్చండి లేదా తొలగించండి."
         },
         {
+          "title": "ముఖ గుర్తింపు",
+          "body": "ఐచ్ఛికమైన, పరికరంలోనే జరిగే తనిఖీ దిగుమతి చేసిన చిత్రాలు మరియు స్కాన్ చేసిన పేజీలలోని ముఖాలను లెక్కిస్తుంది, తద్వారా షేర్ చేసే ముందు మీరు వాటిని సమీక్షించవచ్చు. ఆ సంఖ్య మాత్రమే, దాని బ్రీఫ్‌తో పాటు, మీ పరికరంలో సేవ్ అవుతుంది. ముఖాల స్థానాలను ఎప్పుడూ నిల్వ చేయరు, అప్‌లోడ్ చేయరు, షేర్ చేయరు. దానిని తొలగించడానికి బ్రీఫ్‌ను తొలగించండి లేదా \"అన్నీ తొలగించు\" (Delete Everything) ఉపయోగించండి."
+        },
+        {
           "title": "షేర్ చేయడానికి సిద్ధంగా ఉంది",
           "body": "షేర్ చేసే ముందు సమీక్షించండి."
         },
@@ -4625,6 +4805,10 @@
         {
           "title": "ปกป้องความเป็นส่วนตัว",
           "body": "รายละเอียดที่ตรวจพบจะไม่ถูกลบออกโดยอัตโนมัติ เก็บ แทนที่ หรือลบแต่ละรายการก่อนส่งออก"
+        },
+        {
+          "title": "การตรวจจับใบหน้า",
+          "body": "การตรวจสอบบนอุปกรณ์แบบไม่บังคับจะนับจำนวนใบหน้าในภาพที่นำเข้าและหน้าที่สแกน เพื่อให้คุณตรวจทานก่อนแบ่งปัน เฉพาะจำนวนนั้นเท่านั้นที่ถูกบันทึกพร้อมกับบรีฟของมันบนอุปกรณ์ของคุณ ตำแหน่งใบหน้าจะไม่ถูกจัดเก็บ อัปโหลด หรือแบ่งปันเลย ลบบรีฟหรือใช้ \"ลบทั้งหมด\" (Delete Everything) เพื่อลบออก"
         },
         {
           "title": "พร้อมแชร์",
@@ -4728,6 +4912,10 @@
           "body": "Tespit edilen detaylar asla otomatik olarak kaldırılmaz. Dışa aktarmadan önce her öğeyi tutun, değiştirin veya kaldırın."
         },
         {
+          "title": "Yüz algılama",
+          "body": "İsteğe bağlı, cihaz üzerinde çalışan bir denetim, paylaşmadan önce gözden geçirebilmeniz için içe aktarılan görüntülerdeki ve taranan sayfalardaki yüzleri sayar. Yalnızca bu sayı, özetiyle (brief) birlikte cihazınızda kaydedilir. Yüz konumları hiçbir zaman saklanmaz, yüklenmez veya paylaşılmaz. Özeti silin veya kaldırmak için “Her Şeyi Sil” (Delete Everything) seçeneğini kullanın."
+        },
+        {
           "title": "Paylaşmaya hazır",
           "body": "Paylaşmadan önce gözden geçirin."
         },
@@ -4827,6 +5015,10 @@
         {
           "title": "Захистити конфіденційність",
           "body": "Виявлені деталі ніколи не видаляються автоматично. Залишайте, замінюйте або видаляйте кожен елемент перед експортом."
+        },
+        {
+          "title": "Виявлення облич",
+          "body": "Необов’язкова перевірка на пристрої підраховує обличчя на імпортованих зображеннях і відсканованих сторінках, щоб ви могли переглянути їх перед поширенням. Зберігається лише ця кількість разом зі зведенням (brief) на вашому пристрої. Положення облич ніколи не зберігаються, не завантажуються й не передаються. Видаліть зведення або скористайтеся «Видалити все» (Delete Everything), щоб його прибрати."
         },
         {
           "title": "Готово для поширення",
@@ -4930,6 +5122,10 @@
           "body": "دریافت کردہ تفصیلات کبھی بھی خودکار طور پر حذف نہیں ہوتیں۔ ایکسپورٹ کرنے سے پہلے ہر آئٹم کو رکھیں، تبدیل کریں، یا حذف کریں۔"
         },
         {
+          "title": "چہرے کا پتا لگانا",
+          "body": "ایک اختیاری آن ڈیوائس جانچ درآمد شدہ تصاویر اور اسکین شدہ صفحات میں چہروں کی تعداد گنتی ہے تاکہ آپ شیئر کرنے سے پہلے انہیں جانچ سکیں۔ صرف یہی تعداد، اپنے بریف کے ساتھ، آپ کے آلے پر محفوظ ہوتی ہے۔ چہروں کی پوزیشنیں کبھی محفوظ، اپ لوڈ یا شیئر نہیں کی جاتیں۔ اسے ہٹانے کے لیے بریف حذف کریں یا \"سب کچھ حذف کریں\" (Delete Everything) استعمال کریں۔"
+        },
+        {
           "title": "اشتراک کے لیے تیار ہے",
           "body": "شیئر کرنے سے پہلے جائزہ لیں۔"
         },
@@ -5029,6 +5225,10 @@
         {
           "title": "Bảo vệ quyền riêng tư",
           "body": "Các thông tin được phát hiện không bao giờ được xóa tự động."
+        },
+        {
+          "title": "Phát hiện khuôn mặt",
+          "body": "Một bước kiểm tra tùy chọn trên thiết bị sẽ đếm số khuôn mặt trong ảnh đã nhập và các trang đã quét để bạn xem lại trước khi chia sẻ. Chỉ con số đó được lưu, cùng với bản tóm tắt của nó, trên thiết bị của bạn. Vị trí khuôn mặt không bao giờ được lưu trữ, tải lên hay chia sẻ. Hãy xóa bản tóm tắt hoặc dùng \"Xóa tất cả\" (Delete Everything) để gỡ nó."
         },
         {
           "title": "Sẵn sàng chia sẻ",

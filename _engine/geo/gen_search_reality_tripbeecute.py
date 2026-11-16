@@ -750,7 +750,7 @@ PAGE_SPECS: list[dict] = [
             "Pick an illustrated cover of a city, landmark, season or travel mood.",
             "Add a flight card and the countdown to departure begins.",
             "Fill in each day: name it, add plans and stickers, and keep photos and tickets next to each plan.",
-            "Build your packing list, share a web booklet with your travel buddies, and check things off before you leave.",
+            "Build your packing list, share a web booklet with your travel buddies, and check off your plans day by day.",
         ],
         "cards": [
             ("tripbeecute", "Stop digging through emails, screenshots and notes: TripBee Cute turns your whole trip into one cute illustrated booklet, with the countdown, destination weather and local time, boarding-pass style flight cards, color-coded day plans and the packing list on a single page. Keep photos, tickets and notes beside each plan, split shared costs with your travel buddies, and share a web booklet that opens in any browser, even offline. Widgets, Apple Watch, iPad, Dark Mode and 50 languages. No account, no ads and no tracking."),

@@ -2,7 +2,7 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-11-16",
-  "content_digest": "ea0af841c9100fcc01d0c2e1e1d39947ca795348397bdaca0dce5bc7746fbe04",
+  "content_digest": "f426d6c19f46becc5ac6790c282942271691f5cd8911726d64c99ebde29faffb",
   "locale": "it",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -540,7 +540,6 @@
       "summary": "Ottimizzata per iPhone Duo. Realizzata con l’SDK più recente, l’app riempie tutto lo schermo interno e adatta il layout automaticamente, sia da chiuso che da aperto.",
       "category": "finance",
       "search_terms": [
-        "tracker",
         "gestione",
         "contabilità",
         "finanze",
@@ -551,7 +550,7 @@
         "vacanze",
         "soldi",
         "risparmio",
-        "budget"
+        "limite"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1351,17 +1350,16 @@
       "category": "productivity",
       "search_terms": [
         "attività",
-        "checklist",
         "note",
         "planner",
         "abitudini",
         "routine",
         "programma",
         "spesa",
-        "agenda",
         "calendario",
         "quotidiano",
-        "temi"
+        "temi",
+        "pianificatore"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

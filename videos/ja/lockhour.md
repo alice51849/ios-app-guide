@@ -2,7 +2,7 @@
 title: "勉強中にSNSをブロックする最高のiPhoneアプリ"
 lang: "ja"
 canonical: "https://open.cait518.cc/ios-app-guide/videos/ja/lockhour.html"
-modified: "2026-10-17"
+modified: "2026-11-16"
 video_url: "https://files.catbox.moe/ak7xda.mp4"
 duration: "PT16S"
 app_store_id: "6780107485"

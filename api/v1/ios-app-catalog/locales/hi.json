@@ -2,7 +2,7 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-11-16",
-  "content_digest": "ea0af841c9100fcc01d0c2e1e1d39947ca795348397bdaca0dce5bc7746fbe04",
+  "content_digest": "f426d6c19f46becc5ac6790c282942271691f5cd8911726d64c99ebde29faffb",
   "locale": "hi",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -568,7 +568,6 @@
       "category": "finance",
       "search_terms": [
         "हिसाब किताब",
-        "बजट",
         "बचत",
         "पैसे",
         "विदेश",
@@ -577,8 +576,10 @@
         "रूपांतरण",
         "विनिमय",
         "डायरी",
-        "expense tracker",
-        "currency converter"
+        "करेंसी कन्वर्टर",
+        "ऑफलाइन",
+        "खाना",
+        "एक्सचेंज रेट"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -870,7 +871,6 @@
         "पढ़ाई",
         "मोबाइल",
         "लत",
-        "ब्लॉकर",
         "वेबसाइट",
         "सोशल",
         "मीडिया",

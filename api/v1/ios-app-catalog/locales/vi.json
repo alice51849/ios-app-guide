@@ -2,7 +2,7 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-11-16",
-  "content_digest": "40d5913bdecc64829e01490f1d1a037192cf17c98000281ee70639836380e51d",
+  "content_digest": "6a121e7c59203cefdbf04a083bbc5ae0cd5f57f4ed02595de1cc147386b11de3",
   "locale": "vi",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -161,7 +161,9 @@
         "nóng",
         "yếu",
         "thông",
-        "cảnh"
+        "cảnh",
+        "tuổi thọ pin",
+        "độ chai pin"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -203,7 +205,8 @@
         "thuế",
         "giản",
         "lịch sử",
-        "tiền boa"
+        "tiền boa",
+        "máy tính widget"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -324,7 +327,8 @@
         "đau bụng kinh",
         "canh",
         "tính",
-        "đếm"
+        "đếm",
+        "lịch theo dõi kinh"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -707,7 +711,8 @@
         "thói quen",
         "hối hận",
         "tối giản",
-        "giỏ hàng"
+        "giỏ hàng",
+        "mua sắm bốc đồng"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -841,7 +846,8 @@
         "thông báo",
         "neon",
         "biểu diễn",
-        "lễ hội"
+        "lễ hội",
+        "bảng đón sân bay"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1264,7 +1270,8 @@
         "áo",
         "bão",
         "xem",
-        "coi"
+        "coi",
+        "thời tiết trẻ em"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1305,7 +1312,8 @@
         "văn bản",
         "pdf",
         "quét",
-        "ảnh chụp màn hình"
+        "ảnh chụp màn hình",
+        "che thông tin"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1481,7 +1489,8 @@
         "nhật ký",
         "dầu",
         "lịch sử",
-        "ngày"
+        "ngày",
+        "lần cuối"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1609,7 +1618,9 @@
         "35mm",
         "analog",
         "editor",
-        "filter"
+        "filter",
+        "filter phim",
+        "máy ảnh film"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1871,7 +1882,8 @@
         "kiếm",
         "phân loại",
         "hóa đơn",
-        "vé"
+        "vé",
+        "sắp xếp ảnh chụp màn hình"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2027,7 +2039,8 @@
         "múi giờ",
         "standby",
         "chủ đề",
-        "lớn"
+        "lớn",
+        "đồng hồ để bàn"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2359,7 +2372,8 @@
         "cáp quang",
         "kết nối",
         "kiểm tra",
-        "phân tích"
+        "phân tích",
+        "chẩn đoán wifi"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -2401,7 +2415,8 @@
         "khắc phục",
         "sự cố",
         "modem",
-        "khách sạn"
+        "khách sạn",
+        "kiểm tra mạng"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

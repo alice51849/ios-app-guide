@@ -2,7 +2,7 @@
 title: "Wordmate Lite 일본어·영어 단어 — 하루 5단어, 1분이면 끝나는 어휘 | iOS App"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wordmatelite/decision/l/ko/index.html"
-modified: "2026-11-15"
+modified: "2026-11-16"
 app_store_id: "6797601720"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

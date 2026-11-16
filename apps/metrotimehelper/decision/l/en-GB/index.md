@@ -2,7 +2,7 @@
 title: "taipei mrt app that tells me what time to leave to arrive on time"
 lang: "en-GB"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/metrotimehelper/decision/l/en-GB/index.html"
-modified: "2026-11-15"
+modified: "2026-11-16"
 app_store_id: "6819061896"
 verified_live: true
 purchase_model: "paid_upfront"

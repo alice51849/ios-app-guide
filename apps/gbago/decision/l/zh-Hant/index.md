@@ -2,7 +2,7 @@
 title: "GBAGo：視覺存檔 — 復古遊戲模擬器，支援 .gba .gbc .gb | iOS App"
 lang: "zh-Hant"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gbago/decision/l/zh-Hant/index.html"
-modified: "2026-11-15"
+modified: "2026-11-16"
 app_store_id: "6804564400"
 verified_live: true
 purchase_model: "paid_upfront"

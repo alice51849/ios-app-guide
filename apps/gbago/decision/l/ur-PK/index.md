@@ -2,7 +2,7 @@
 title: "GBAGo: بصری سیوز — گیم ایمولیٹر: gba، gbc، gb | iOS App"
 lang: "ur-PK"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gbago/decision/l/ur-PK/index.html"
-modified: "2026-11-15"
+modified: "2026-11-16"
 app_store_id: "6804564400"
 verified_live: true
 purchase_model: "paid_upfront"

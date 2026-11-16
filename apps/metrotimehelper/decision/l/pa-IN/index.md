@@ -2,7 +2,7 @@
 title: "ਮੈਟਰੋ ਸਮਾਂ ਸਹਾਇਕ: Taipei MRT — ਕਦੋਂ ਨਿਕਲੋ, ਵੇਲੇ ਸਿਰ ਪਹੁੰਚੋ | iOS App"
 lang: "pa-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/metrotimehelper/decision/l/pa-IN/index.html"
-modified: "2026-11-15"
+modified: "2026-11-16"
 app_store_id: "6819061896"
 verified_live: true
 purchase_model: "paid_upfront"

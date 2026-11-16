@@ -2,7 +2,7 @@
 title: "Taipei MRT वेळ सहाय्यक — कधी निघायचे ते लगेच कळेल | iOS App"
 lang: "mr-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/metrotimehelper/decision/l/mr-IN/index.html"
-modified: "2026-11-15"
+modified: "2026-11-16"
 app_store_id: "6819061896"
 verified_live: true
 purchase_model: "paid_upfront"

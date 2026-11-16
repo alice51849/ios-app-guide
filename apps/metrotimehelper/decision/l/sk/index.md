@@ -2,7 +2,7 @@
 title: "Tchaj-pej: metro načas — Kedy vyraziť a všetko stihnúť | iOS App"
 lang: "sk"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/metrotimehelper/decision/l/sk/index.html"
-modified: "2026-11-15"
+modified: "2026-11-16"
 app_store_id: "6819061896"
 verified_live: true
 purchase_model: "paid_upfront"

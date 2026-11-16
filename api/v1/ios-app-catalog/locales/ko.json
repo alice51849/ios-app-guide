@@ -2,7 +2,7 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-11-16",
-  "content_digest": "40d5913bdecc64829e01490f1d1a037192cf17c98000281ee70639836380e51d",
+  "content_digest": "6a121e7c59203cefdbf04a083bbc5ae0cd5f57f4ed02595de1cc147386b11de3",
   "locale": "ko",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -146,7 +146,8 @@
         "교재",
         "자격증",
         "스터디",
-        "학습계획"
+        "학습계획",
+        "토익 990"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -204,7 +205,8 @@
         "성능저하",
         "검사",
         "경고",
-        "확인"
+        "확인",
+        "배터리"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1870,7 +1872,9 @@
         "교체주기",
         "화분",
         "빨래",
-        "기한"
+        "기한",
+        "마지막으로 한 날",
+        "마지막 기록"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2928,7 +2932,10 @@
         "잔량",
         "알람",
         "통계",
-        "5시간"
+        "5시간",
+        "ai 사용량 추적",
+        "claude 사용량 제한",
+        "codex 사용량 제한"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2978,7 +2985,9 @@
         "와이파이",
         "인터넷",
         "연결",
-        "불안정"
+        "불안정",
+        "인터넷 연결 확인",
+        "와이파이 진단"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,

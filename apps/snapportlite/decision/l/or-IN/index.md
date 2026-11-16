@@ -2,7 +2,7 @@
 title: "Snapport Lite: ଘରେ ଆଇଡି ଫଟୋ — ଠିକ୍ ମାପରେ ପୋର୍ଟ୍ରେଟ୍ କ୍ରପ୍ | iOS App"
 lang: "or-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapportlite/decision/l/or-IN/index.html"
-modified: "2026-11-15"
+modified: "2026-11-16"
 app_store_id: "6792856304"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

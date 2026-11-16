@@ -2,7 +2,7 @@
 title: "Metro a Horas em Taipé — Saiba a que horas deve sair | iOS App"
 lang: "pt-PT"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/metrotimehelper/decision/l/pt-PT/index.html"
-modified: "2026-11-15"
+modified: "2026-11-16"
 app_store_id: "6819061896"
 verified_live: true
 purchase_model: "paid_upfront"

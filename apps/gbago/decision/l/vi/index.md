@@ -2,7 +2,7 @@
 title: "GBAGo: Bản lưu trực quan — Giả lập game .gba .gbc .gb | iOS App"
 lang: "vi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gbago/decision/l/vi/index.html"
-modified: "2026-11-15"
+modified: "2026-11-16"
 app_store_id: "6804564400"
 verified_live: true
 purchase_model: "paid_upfront"

@@ -89,6 +89,46 @@
    "status": "done",
    "url": "https://office.cait518.cc",
    "done_at": "2026-10-13T12:26:34Z"
+  },
+  {
+   "id": "oa-apple-nominations",
+   "title": "送 Apple 精選提名（6 款，內容已寫好）",
+   "url": "https://claude.ai/code?environment=env_01F2jpNPngkKPUwFwXMKXBUo",
+   "how": "最省事：開本機對話（點上面連結）貼這一行，本機會用 ASC API 一次送出 6 款：請照 ~/00_GrowthEngine/geo/pages/.github/growth/LOCAL_TASKS.md 執行「送 Apple 精選提名」那段。授權：可送精選提名，不改 App 本體、不改商店文字。　要自己手動送也可以：① 打開 https://appstoreconnect.apple.com/apps ，用開發者 Apple ID 登入。② 點 App（例如 CountDaysNow）→ 上方找「精選」（Featuring）分頁 →「提名」→ 按「+」。③ 照 https://github.com/alice51849/ios-app-guide/blob/main/.github/growth/drafts/apple-featuring-nominations.json 該款的內容逐欄貼：名稱＝name、類型選「App 功能強化」、描述＝description、發布日期＝publishStartDate～publishEndDate、國家地區＝territories、補充資料網址＝supplemental_urls。④ 按「提交」。每款重複一次。　CountDaysNow（수능 11/19）最急，11/1 開始，請今天就送。",
+   "status": "done",
+   "resolution": "declined",
+   "decided_at": "2026-10-15T04:09:33Z",
+   "done_at": "2026-10-15T04:09:33Z"
+  },
+  {
+   "id": "oa-youtube-local",
+   "title": "開本機對話：YouTube Shorts 上傳、LED 看板實拍、補截圖（貼一行字）",
+   "url": "https://claude.ai/code?environment=env_01F2jpNPngkKPUwFwXMKXBUo",
+   "how": "① Mac 開著、連上網路。② 點上面的連結（用平常的 Claude 帳號登入），會開一個在你 Mac 上執行的新對話。③ 在輸入框貼這一行，按 Enter：請照 ~/00_GrowthEngine/geo/pages/.github/growth/LOCAL_TASKS.md 執行。授權：外宣直接做、不改 App 本體、不改 App Store Connect。④ 它跑的過程中如果跳出「允許」的按鈕就按允許；最後它會回報每一項推了哪個 commit。⑤ 它會做：YouTube Shorts 每天最多 3 支（說明欄附 App Store 與 Google Play 連結）、LED Moving Text 彩色看板實拍、HoursTag Lite／SaveTag／Unblurry 補截圖。",
+   "status": "done",
+   "resolution": "done",
+   "decided_at": "2026-10-15T04:09:41Z",
+   "done_at": "2026-10-15T04:09:41Z"
+  },
+  {
+   "id": "oa-usagenow-102-note",
+   "title": "UsageNow 1.0.2 草稿裡已填了新商店文字（不送審就不會上架）",
+   "url": "https://appstoreconnect.apple.com/apps/6818607603/distribution",
+   "how": "以後若要因為別的更新送出 1.0.2，先在本機對話說：「把 UsageNow 1.0.2 的商店文字照備份改回去」。不送 1.0.2 就不用理。",
+   "status": "done",
+   "resolution": "done",
+   "decided_at": "2026-10-15T04:09:55Z",
+   "done_at": "2026-10-15T04:09:55Z"
+  },
+  {
+   "id": "oa-06",
+   "title": "以本人名義出面：Show HN（UsageNow）、Reddit／Dcard／PTT、Product Hunt、pitch 信與 Offer Code",
+   "how": "草稿都在 repo。Show HN 發後 24 小時內親自回覆安全性問題；Reddit／Dcard／PTT 先讀版規、揭露開發者身分、每版只發一次、正文不放商店連結；Product Hunt 用於 G+Money Lite／AI Brief／Mask My File；pitch 信寄 Gridfiti／app-liv、MrMad／蘋果仁、iphone-ticker／appgefahren、隱私榜單、幼教與多益創作者各 3–5 位、幼兒園／僑校老師、One-Forty／TIWA／新住民家庭服務中心；Offer Code 在 ASC 產生，不付費、不換評分、合作揭露。",
+   "status": "done",
+   "url": "https://news.ycombinator.com/submit",
+   "resolution": "declined",
+   "decided_at": "2026-10-15T04:10:05Z",
+   "done_at": "2026-10-15T04:10:05Z"
   }
  ],
  "apps": {
@@ -765,6 +805,15 @@
       ".github/growth/drafts/notesstudio100/note-com-article-ja.md",
       ".github/growth/drafts/notesstudio100/naver-blog-article-ko.md"
      ]
+    },
+    {
+     "id": "notesstudio100-04",
+     "title": "threads-autopilot 排程與 GEO 單頁",
+     "detail": "已排進官網 Threads（hourstag.app）台灣 11:00 時段：10/31。內文不放連結，App Store／Google Play 連結自動放第一則留言；同帳號每天仍 ≤3 則。GEO 單頁部分併入 GEO 批次處理。 完成：GEO 單頁：50 語系 notesstudio100.html 以 build_pages_i18n 重產（移除模板 FAQ）；best-* 英文問答頁改為問句標題、hub 同步重產；Threads 10/31 排程照舊。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-15T06:07:16Z"
     }
    ]
   },
@@ -827,6 +876,16 @@
      "status": "done",
      "done_at": "2026-10-13T17:51:06Z",
      "result": "決策矩陣移除 aim990plus、sibling_app_keys 清空；GE 資料鏡像待同步"
+    },
+    {
+     "id": "aim990-03",
+     "title": "更新 aim990_full.json 為 live 文案並補量測字",
+     "detail": "_engine/data/aim990_full.json 各語系已同步為 live 文案（GrowthEngine data/ 同步），owned feeds 以 --refresh-catalog 重產；量測字維持在 challenge_terms.aim990。",
+     "owner": "local",
+     "impact": "high",
+     "status": "done",
+     "note": "量測字已依規則回傳在 challenge_terms.aim990；把 _engine/data/aim990_full.json 同步成 v2.0.1 live 文案屬資料檔修改（drafts 以外），不在雲端草稿範圍。註：live 描述可從公開 iTunes lookup 讀到（TW「Aim990：英文弱點教練」v2.0.1，53 個語系碼），本機同步時可直接取用",
+     "done_at": "2026-10-14T21:30:31Z"
     }
    ]
   },
@@ -1392,6 +1451,15 @@
      "note": "需改 _engine/data/bopomofo_pro_full.json（JP 名稱改台湾華語版、TW 說明換 live 全形版），屬 drafts 以外的資料檔與 ASC 線上資料",
      "done_at": "2026-10-13T17:51:06Z",
      "result": "ja 名稱、zh-Hant／en-US／ko／vi 說明已同步線上"
+    },
+    {
+     "id": "lumibopomofopro-07",
+     "title": "GEO／Telegram 分流",
+     "detail": "台灣流量導向 Lite，Pro 只出現在「無內購／海外／離線」情境頁；alternatives 頁避免以對手名稱為標題主體。 完成：8 語系（de-DE/es-ES/fr-FR/ja/ko/pt-BR/zh-Hans/zh-Hant）32 頁 lumibopomofopro-vs-* 標題／H1／og:title／JSON-LD 改以「一次買斷注音 App：Lumi Bopomofo Pro 與 [競品] 比較」為主體；這批舊頁沒有獨立產生器，改由 aeo_pages.retitle_localized_alternatives 在每次產英文頁後套用（LOCALIZED_USE_CASE_TITLES，附測試），8 語系 browse 清單標題同步。",
+     "owner": "local",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-15T06:49:06Z"
     }
    ]
   },
@@ -1514,6 +1582,15 @@
      "impact": "medium",
      "status": "done",
      "done_at": "2026-10-13T12:19:47Z"
+    },
+    {
+     "id": "mochidonestamp-07",
+     "title": "GEO 增加「days since／多久一次」意圖頁",
+     "detail": "現有 alternatives 頁比的是 Sweepy、Tody、Cozi、HomeRoutines（家事 App），方向對；再補 en/ja/zh-Hant 的「how to remember when you last changed the filter」問答頁。 完成：新增 deep_items/mochidonestamp.json，產出 answers/how-to-remember-when-you-last-changed-the-air-filter-or-water-filter.html 及 zh-Hant／ja 版；只寫實有功能（一鍵記錄＋復原、補登日期、從實際完成時間重算的節奏、完成／稍後提醒、小工具、備註照片、JSON 匯出、免費 1 事件＋Lifetime Pro 無訂閱），更換間隔請依製造商建議。",
+     "owner": "local",
+     "impact": "low",
+     "status": "done",
+     "done_at": "2026-10-15T06:07:16Z"
     }
    ]
   },
@@ -1702,6 +1779,15 @@
       ".github/growth/drafts/savetag/note-com-tsundoku-links-ja.md",
       ".github/growth/drafts/savetag/reddit-iosapps-post-en.md"
      ]
+    },
+    {
+     "id": "savetag-04",
+     "title": "threads-autopilot 排程＋GEO 單頁",
+     "detail": "已排進官網 Threads（hourstag.app）台灣 11:00 時段：11/02。內文不放連結，App Store／Google Play 連結自動放第一則留言；同帳號每天仍 ≤3 則。GEO 單頁部分併入 GEO 批次處理。 完成：GEO 單頁：50 語系 savetag.html 以 build_pages_i18n 重產（移除模板 FAQ）；best-* 英文問答頁改為問句標題（例：How do I build a read-later list on iPhone that actually shrinks?）、hub 同步重產；Threads 11/02 排程照舊。",
+     "owner": "claude",
+     "impact": "low",
+     "status": "done",
+     "done_at": "2026-10-15T06:07:16Z"
     }
    ]
   },
@@ -1869,6 +1955,15 @@
      "impact": "medium",
      "status": "done",
      "done_at": "2026-10-13T12:19:47Z"
+    },
+    {
+     "id": "stayclock-06",
+     "title": "GEO 補「舊 iPad 再利用」意圖頁",
+     "detail": "現有 stayclock-vs-dclock／flip-clock-widget 等比較頁；補 en/zh-Hant/ja/de 的「turn an old iPad into a nightstand clock」「舊 iPad 當床頭鐘」「古いiPadを置き時計に」問答頁，寫明 StandBy 差異。 完成：新增 deep_items/stayclock.json，以 aeo_answers 產出 answers/how-to-turn-an-old-ipad-into-an-always-on-nightstand-clock.html，並以 aeo_answers_i18n --trans 產出 zh-Hant／ja／de-DE 版；內容只寫上架功能（Keep Awake、夜間紅色錶面、Panel Care、無帳號無網路、1 款免費＋Lifetime），FAQ 寫明與 iPhone StandBy 的差異，並提醒先確認 iPadOS 相容性。",
+     "owner": "local",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-15T06:07:16Z"
     }
    ]
   },
@@ -1915,6 +2010,25 @@
       ".github/growth/drafts/tripplanet/mission-cards-share-posts.md",
       ".github/growth/drafts/tripplanet/shorts-script-airport-mission-30s.md"
      ]
+    },
+    {
+     "id": "tripplanet-01",
+     "title": "把 tripplanet_full.json 全面改成 live 名稱與正確關鍵字",
+     "detail": "50 語系 name／subtitle／description／promotionalText 已依 live 版同步到 _engine/data/tripplanet_full.json（GrowthEngine data/ 同步），機翻促銷文已移除。",
+     "owner": "local",
+     "impact": "high",
+     "status": "done",
+     "note": "需要修改 _engine/data/tripplanet_full.json（資料檔），所以沒有動。新的 name、≤100 字元的關鍵字、≤170 字元的宣傳文字（zh-Hant／ja／en-US）見 drafts/tripplanet/listing-data-fix-proposal.md；計分板量測詞放在 challenge_terms.tripplanet",
+     "done_at": "2026-10-14T21:30:31Z"
+    },
+    {
+     "id": "tripplanet-04",
+     "title": "重產 tripplanet GEO 頁與 catalog 條目（備妥、凍結後上線）",
+     "detail": "資料檔修正後以 GrowthEngine 重產 50 語系 tripplanet.html、hubs/tripplanet.html、publisher catalog 條目；移除「雜誌 要用什麼 App?」「是很好的選擇」模板 FAQ 與「購買和共享位於家長的門後」機翻句。 完成：answer_personas FAQ 舊名改為 Trip Planet: Kids Quest；45 語系翻譯字典補上新名稱條目（GE／鏡像合併後一致）；aeo_answers_i18n --refresh 新增改名換字（RENAMED_BRANDS，含韓文助詞，附測試），40 頁在地化 persona 頁已換名，publisher catalog 重產後 0 筆舊名。",
+     "owner": "local",
+     "impact": "high",
+     "status": "done",
+     "done_at": "2026-10-15T06:49:06Z"
     }
    ]
   },
@@ -2029,6 +2143,15 @@
       ".github/growth/drafts/wifiaidlite/dcard-rental-internet-evidence-guide-zh-hant.md",
       ".github/growth/drafts/wifiaidlite/indonesian-community-post-id.md"
      ]
+    },
+    {
+     "id": "wifiaidlite-05",
+     "title": "GEO 產生器改掉 12 個 best-* 頁與模板 FAQ",
+     "detail": "en-US/wifiaidlite.html 的 FAQ 是「What is the best app for internet? WiFi Aid Lite… is a great choice for internet」這種關鍵字套模板，違反不自稱 best 且屬規模化內容；改為真實問答並去掉 best 字眼。 完成：queries.LEGACY_BEST_RETITLES＋aeo_answers --refresh-slug 重產 12 個 wifiaidlite best-* 英文頁，標題／H1／og／JSON-LD 改為真實問句（例：Which iPhone app explains why my Wi-Fi is not working?），網址不變；50 語系 wifiaidlite.html 由 build_pages_i18n 重產，模板 FAQ 已去除。在地化 best-* 問答頁標題待字典翻譯後由 Daily GEO 更新。",
+     "owner": "local",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-15T06:07:16Z"
     }
    ]
   },

@@ -4,9 +4,9 @@
   "name": "Lumi Studio App Install Decision Routes",
   "description": "First-party install decision routes for every verified live iOS app and Apple locale, with a direct App Store path, purchase model, privacy facts, device surfaces and provenance.",
   "identifier": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes.json",
-  "dateModified": "2026-11-16",
-  "content_digest": "314a51c8824bb8c5b42f8ef3a8d16957dc4985194324c93fc8295099b2965b57",
-  "generation_digest": "07fe978b70c8bb1a1d0e6a17f91d4dc1abb0a86a0f066bb37216752cc391cb8c",
+  "dateModified": "2026-11-17",
+  "content_digest": "58d34a68afae22546a227e2e476adfaa4be43e5a4722b6360737b13b8ac1c097",
+  "generation_digest": "c7ba1f80a0a59279a7773b7dcb636f5284039b13d860bbf189de24ed40587b88",
   "publisher_disclosure": "First-party decision-support material published by Lumi Studio, the developer of every listed app; not an independent ranking or measured search-volume product.",
   "ordering": "official_locale_order_then_priority_then_alphabetical_app_name",
   "priority_app_keys": [
@@ -21833,8 +21833,7 @@
         "Kein Konto",
         "Kein Tracking",
         "Privat / auf dem Gerät",
-        "App Store · Kostenlos",
-        "★ 2.0/5 · 1"
+        "App Store · Kostenlos"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/de-DE/wordmatelite.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/wordmatelite/decision/l/de-DE/index.html",
@@ -21847,9 +21846,7 @@
       "storefront_facts": {
         "price": "0",
         "currency": "EUR",
-        "formatted_price": "Kostenlos",
-        "rating_value": 2.0,
-        "rating_count": 1
+        "formatted_price": "Kostenlos"
       },
       "guide_cta_label": "Lesen Sie den vollständigen Leitfaden",
       "publisher_disclosure": "Dieses Material wird direkt von Lumi Studio veröffentlicht, dem Entwickler aller aufgeführten Apps.",
@@ -39034,8 +39031,7 @@
         "No ads",
         "No tracking",
         "Private / on-device",
-        "App Store · Free",
-        "★ 1.0/5 · 1"
+        "App Store · Free"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/unblurry/decision/l/en-US/index.html",
@@ -39048,9 +39044,7 @@
       "storefront_facts": {
         "price": "0",
         "currency": "USD",
-        "formatted_price": "Free",
-        "rating_value": 1.0,
-        "rating_count": 1
+        "formatted_price": "Free"
       },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.",
@@ -62162,7 +62156,8 @@
         "ללא חשבון",
         "ללא פרסומות",
         "Apple Watch",
-        "App Store · בחינם"
+        "App Store · בחינם",
+        "★ 4.0/5 · 1"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/he/answers/best-simple-to-do-list-app-iphone-no-subscription.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/mochi/decision/l/he/index.html",
@@ -62175,7 +62170,9 @@
       "storefront_facts": {
         "price": "0",
         "currency": "ILS",
-        "formatted_price": "בחינם"
+        "formatted_price": "בחינם",
+        "rating_value": 4.0,
+        "rating_count": 1
       },
       "guide_cta_label": "קרא את המדריך המלא",
       "publisher_disclosure": "מדריך שנכתב על ידי Lumi Studio, מפתחת האפליקציה. שמות האפליקציות הם סימני מסחר של בעליהם ומופיעים לצורכי זיהוי בלבד. בהחלטות שנוגעות למסמכים, בריאות, לימודים ופרודוקטיביות כדאי לבדוק את הדרישות הרשמיות היכן שזה רלוונטי.",
@@ -143138,8 +143135,7 @@
         "Inga annonser",
         "Ingen spårning",
         "Privat / på enheten",
-        "App Store · Gratis",
-        "★ 5.0/5 · 1"
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/sv/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/unblurry/decision/l/sv/index.html",
@@ -143152,9 +143148,7 @@
       "storefront_facts": {
         "price": "0",
         "currency": "SEK",
-        "formatted_price": "Gratis",
-        "rating_value": 5.0,
-        "rating_count": 1
+        "formatted_price": "Gratis"
       },
       "guide_cta_label": "Läs hela guiden",
       "publisher_disclosure": "Guide skriven av utgivaren Lumi Studio, som också har utvecklat appen. Appnamn är varumärken som tillhör sina respektive ägare och används endast för identifiering. När det gäller dokument, hälsa, skola och produktivitet bör du kontrollera de officiella kraven där det är relevant.",
@@ -174377,8 +174371,7 @@
         "無廣告",
         "無追蹤",
         "隱私優先／裝置端",
-        "App Store · 免費",
-        "★ 5.0/5 · 2"
+        "App Store · 免費"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/unblurry/decision/l/zh-Hant/index.html",
@@ -174391,9 +174384,7 @@
       "storefront_facts": {
         "price": "0",
         "currency": "TWD",
-        "formatted_price": "免費",
-        "rating_value": 5.0,
-        "rating_count": 2
+        "formatted_price": "免費"
       },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "由 App 開發團隊 Lumi Studio 親自撰寫的指南。App 名稱為其各自所有權人的商標，僅供識別使用。若涉及文件、健康、學校及生產力相關的決定，請視情況核對相關單位的正式規定。",

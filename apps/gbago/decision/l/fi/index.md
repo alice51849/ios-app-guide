@@ -2,7 +2,7 @@
 title: "GBAGo: Kuvalliset tallenteet — Emulaattori .gba .gbc .gb | iOS App"
 lang: "fi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gbago/decision/l/fi/index.html"
-modified: "2026-11-16"
+modified: "2026-11-17"
 app_store_id: "6804564400"
 verified_live: true
 purchase_model: "paid_upfront"

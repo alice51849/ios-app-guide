@@ -2,7 +2,7 @@
 title: "最佳 iPhone 修復兒童模糊照片App"
 lang: "zh-Hant"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/unblurry/decision/l/zh-Hant/index.html"
-modified: "2026-11-16"
+modified: "2026-11-17"
 app_store_id: "6782275018"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -20,7 +20,6 @@ publisher: "Lumi Studio"
 - 無追蹤
 - 隱私優先／裝置端
 - App Store · 免費
-- ★ 5.0/5 · 2
 
 [在 App Store 取得 Unblurry →](https://apps.apple.com/tw/app/id6782275018?pt=118326163&ct=geo_pick&mt=8)
 

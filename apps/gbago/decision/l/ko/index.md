@@ -2,7 +2,7 @@
 title: "GBAGo: 비주얼 세이브 — 고전 게임 에뮬레이터 .gba .gbc .gb 지원 | iOS App"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gbago/decision/l/ko/index.html"
-modified: "2026-11-16"
+modified: "2026-11-17"
 app_store_id: "6804564400"
 verified_live: true
 purchase_model: "paid_upfront"

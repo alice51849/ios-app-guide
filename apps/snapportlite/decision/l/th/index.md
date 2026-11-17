@@ -2,7 +2,7 @@
 title: "Snapport Lite: ถ่ายรูปติดบัตร — ครอปหน้าตรงพอดีขนาด | iOS App"
 lang: "th"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapportlite/decision/l/th/index.html"
-modified: "2026-11-16"
+modified: "2026-11-17"
 app_store_id: "6792856304"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

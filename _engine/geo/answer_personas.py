@@ -5557,7 +5557,8 @@ PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
     # one-time in-app purchase adds repeating routines, all 12 templates, all
     # 60 stickers, large and extra-large timeline widgets, a StandBy countdown
     # widget, tap-to-complete on Home Screen widgets and Family Sharing of the
-    # purchase; there is no subscription. It has NO iCloud sync, Apple Watch
+    # purchase; there is no subscription. Do NOT claim anything about iCloud or
+    # syncing (undecided), nor Apple Watch
     # app, Control Center button, colour themes, dark mode, custom saved
     # templates or share cards. No price figures, no trial, no medical claims,
     # and the main screen is a timeline, never described as a to-do list.
@@ -5633,10 +5634,6 @@ PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
                 {
                     "q": "Is there a subscription?",
                     "a": "No. There is a single one-time in-app purchase that unlocks repeating routines, all routine templates, all stickers and more widgets.",
-                },
-                {
-                    "q": "Does it sync between my devices?",
-                    "a": "Not in version 1.0. Your plan is stored on the device you use it on.",
                 },
             ],
         },
@@ -5717,7 +5714,7 @@ PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
                 },
                 {
                     "q": "Does it use my data or show ads?",
-                    "a": "No. There is no account, no advertising and no tracking, and the app makes no network connections of its own; purchases go through the App Store.",
+                    "a": "No. There is no account, no advertising and no tracking; purchases go through the App Store.",
                 },
             ],
         },

@@ -38,6 +38,16 @@ class AvailabilityFollowupTests(unittest.TestCase):
         self.addCleanup(self.stack.close)
         self.root = Path(self.stack.enter_context(tempfile.TemporaryDirectory()))
         self.roster = manifest.canonical_manifest()
+        # Adoption tests need a registered App that is not yet on the roster.
+        # Zafe used to be that App but left the registry; hold back one live
+        # App from the fixture roster so it plays the "registered, not yet
+        # adopted" role against the real APPSTORE/APPS registry.
+        self.candidate = sorted(
+            key for key in self.roster["apps"]
+            if key in APPSTORE and key in APPS and key != "battai"
+        )[-1]
+        apps = {key: app for key, app in self.roster["apps"].items() if key != self.candidate}
+        self.roster = {**self.roster, "apps": apps, "roster_digest": manifest.roster_digest(apps)}
         self.app_count = len(self.roster["apps"])
         self.roster_path = self.root / "roster.json"
         self.roster_path.write_text(json.dumps(self.roster), encoding="utf-8")
@@ -256,7 +266,7 @@ class AvailabilityFollowupTests(unittest.TestCase):
 
     def test_registered_new_app_adopts_atomically_with_two_sources_and_is_idempotent(self):
         self.seed()
-        candidate = APPSTORE["zafe"]
+        candidate = APPSTORE[self.candidate]
         result = self.refresh(
             lambda ids, country: self.ids | ({candidate} if country in ("us", "tw") else set()),
             adopt=True,
@@ -264,10 +274,10 @@ class AvailabilityFollowupTests(unittest.TestCase):
         roster = manifest.canonical_manifest()
         expected_apps = {
             **self.roster["apps"],
-            "zafe": {"app_id": candidate, "name": APPS["zafe"]["name"]},
+            self.candidate: {"app_id": candidate, "name": APPS[self.candidate]["name"]},
         }
         self.assertEqual(expected_apps, roster["apps"])
-        self.assertEqual(candidate, roster["apps"]["zafe"]["app_id"])
+        self.assertEqual(candidate, roster["apps"][self.candidate]["app_id"])
         self.assertEqual(self.roster["revision"] + 1, roster["revision"])
         self.assertEqual(manifest.roster_digest(roster["apps"]), roster["roster_digest"])
         self.assertEqual(expected_apps, result["apps"])
@@ -284,11 +294,11 @@ class AvailabilityFollowupTests(unittest.TestCase):
             last_verified_at=previous["generated_at"],
         )
         previous["pending_adoptions"] = [{
-            "key": "zafe", "app_id": APPSTORE["zafe"], "name": APPS["zafe"]["name"],
+            "key": self.candidate, "app_id": APPSTORE[self.candidate], "name": APPS[self.candidate]["name"],
             "sources": ["us"],
         }]
         manifest.write_manifest(self.runtime, previous, private=True)
-        observed = self.ids | {APPSTORE["zafe"]}
+        observed = self.ids | {APPSTORE[self.candidate]}
         manifest.adopt_registered_live_apps(
             {"us": observed, "tw": observed}, appstore=APPSTORE, registry=APPS,
         )
@@ -299,23 +309,23 @@ class AvailabilityFollowupTests(unittest.TestCase):
         self.assertEqual("", errors.getvalue())
         self.assertEqual({
             **self.roster["apps"],
-            "zafe": {"app_id": APPSTORE["zafe"], "name": APPS["zafe"]["name"]},
+            self.candidate: {"app_id": APPSTORE[self.candidate], "name": APPS[self.candidate]["name"]},
         }, result["apps"])
         row = result["observations"]["battai"]
         self.assertEqual("unavailable", row["status"])
         self.assertEqual(3, row["consecutive_misses"])
         self.assertEqual(previous["generated_at"], row["last_verified_at"])
-        self.assertEqual("live", result["observations"]["zafe"]["status"])
+        self.assertEqual("live", result["observations"][self.candidate]["status"])
         self.assertEqual(adopted, self.roster_path.read_bytes())
 
     def test_one_source_or_aggregate_is_pending_not_automatic_adoption(self):
-        candidate = APPSTORE["zafe"]
+        candidate = APPSTORE[self.candidate]
         result = self.refresh(
             lambda ids, country: self.ids | ({candidate} if country == "us" else set()),
             adopt=True,
         )
         self.assertEqual(self.original, self.roster_path.read_bytes())
-        self.assertEqual(["zafe"], [row["key"] for row in result["pending_adoptions"]])
+        self.assertEqual([self.candidate], [row["key"] for row in result["pending_adoptions"]])
         manifest.adopt_registered_live_apps(
             {"us": self.ids | {candidate}, "aggregate": self.ids | {candidate}},
             appstore=APPSTORE, registry=APPS,
@@ -325,10 +335,10 @@ class AvailabilityFollowupTests(unittest.TestCase):
     def test_unknown_or_not_fully_registered_identity_is_never_adopted(self):
         with self.assertRaisesRegex(manifest.ManifestError, "Unregistered"):
             self.refresh(lambda ids, country: self.ids | {"9999999999"}, adopt=True)
-        incomplete_registry = {key: app for key, app in APPS.items() if key != "zafe"}
+        incomplete_registry = {key: app for key, app in APPS.items() if key != self.candidate}
         with self.assertRaisesRegex(manifest.ManifestError, "both APPSTORE and APPS"):
             manifest.adopt_registered_live_apps(
-                {"us": self.ids | {APPSTORE["zafe"]}, "tw": self.ids | {APPSTORE["zafe"]}},
+                {"us": self.ids | {APPSTORE[self.candidate]}, "tw": self.ids | {APPSTORE[self.candidate]}},
                 appstore=APPSTORE, registry=incomplete_registry,
             )
         self.assertEqual(self.original, self.roster_path.read_bytes())
@@ -337,7 +347,7 @@ class AvailabilityFollowupTests(unittest.TestCase):
         with mock.patch.object(manifest.os, "replace", side_effect=OSError("disk write failed")):
             with self.assertRaises(OSError):
                 manifest.adopt_registered_live_apps(
-                    {"us": self.ids | {APPSTORE["zafe"]}, "tw": self.ids | {APPSTORE["zafe"]}},
+                    {"us": self.ids | {APPSTORE[self.candidate]}, "tw": self.ids | {APPSTORE[self.candidate]}},
                     appstore=APPSTORE, registry=APPS,
                 )
         self.assertEqual(self.original, self.roster_path.read_bytes())
@@ -434,7 +444,8 @@ class AvailabilityFollowupTests(unittest.TestCase):
             mock.patch.object(new_app_catchup.catchup_health, "write_observation"),
             mock.patch.object(new_app_catchup, "refresh_manifest", return_value=document),
             mock.patch.object(new_app_catchup, "canonical_manifest",
-                              return_value={"roster_digest": "before-new-app"}),
+                              return_value={"roster_digest": "before-new-app",
+                                            "apps": self.roster["apps"]}),
             mock.patch.object(alternatives_i18n, "repin_authority", return_value=True) as repin,
             mock.patch.object(alternatives_i18n, "load_manifest") as load,
         ):

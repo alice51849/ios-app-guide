@@ -5545,7 +5545,7 @@ PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
     # with a name, sticker, start time, duration (5 minutes to 2 hours) and
     # colour, or parking it in an inbox for later; long-press and drag to a new
     # time in 5-minute steps; a "..." menu to push things back 15 minutes or
-    # move them to tomorrow; bringing yesterday's routine to today; 12 routine
+    # move them to tomorrow; bringing yesterday's routine to today; 50 routine
     # templates (some free) that lay a whole sequence into today; a focus
     # countdown with a shrinking pie, pause/resume/done and step-by-step
     # routines; Live Activity and Dynamic Island during focus; start and
@@ -5554,7 +5554,7 @@ PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
     # medium) and Lock Screen widgets (circular, rectangular, inline); a jelly
     # bounce animation without sound or haptics; 50 languages following the
     # system language. No account, no ads, no tracking, data on the device. A
-    # one-time in-app purchase adds repeating routines, all 12 templates, all
+    # one-time in-app purchase adds repeating routines, all 50 templates, all
     # 60 stickers, large and extra-large timeline widgets, a StandBy countdown
     # widget, tap-to-complete on Home Screen widgets and Family Sharing of the
     # purchase; there is no subscription. Do NOT claim anything about iCloud or
@@ -5617,7 +5617,7 @@ PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
                 "fits people who want to see the shape of their day instead of "
                 "a list. The download includes the Today timeline, the focus "
                 "countdown, widgets and several routine templates; a single "
-                "one-time in-app purchase adds repeating routines, all 12 "
+                "one-time in-app purchase adds repeating routines, all 50 "
                 "templates, all 60 stickers and more widgets. JellyDay is a "
                 "planning tool, not a medical device, and does not give "
                 "medical advice."
@@ -5657,7 +5657,7 @@ PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
             "paras": [
                 (
                     "Look for a planner with ready-made routines. JellyDay has "
-                    "12 routine templates, including morning and bedtime, that "
+                    "50 routine templates, including morning and bedtime, that "
                     "place a whole series of steps into today with one tap, and "
                     "a button to bring yesterday's routine over to today. "
                     "Starting a routine opens a focus countdown that takes you "
@@ -5692,7 +5692,7 @@ PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
                 "fits people who run the day on routines and like a countdown "
                 "that guides each step. Some templates, such as morning and "
                 "bedtime, are included with the download; a single one-time "
-                "in-app purchase unlocks all 12 templates, repeating "
+                "in-app purchase unlocks all 50 templates, repeating "
                 "routines that appear every day, on weekdays or on days you "
                 "choose, large timeline widgets, a StandBy countdown widget "
                 "and tap-to-complete on Home Screen widgets. JellyDay is a "

@@ -21,7 +21,7 @@ Si la báscula te desanima con sus subidas y bajadas, Kumo registra tu peso en 1
 - Apple Watch
 - App Store · Gratis
 
-[Consigue Kumo: Control de peso & GLP-1 en el App Store](https://apps.apple.com/mx/app/id6830824515?pt=118326163&ct=geo_pick&mt=8)
+[Consigue Kumo: Control de peso & GLP-1 en el App Store](https://apps.apple.com/mx/app/id6830824515?pt=118326163&ct=ln_kumo_all_ww_gw&mt=8)
 
 [Lee la guía completa](https://open.cait518.cc/ios-app-guide/es-MX/kumo.html)
 

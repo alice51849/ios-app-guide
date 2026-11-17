@@ -21,7 +21,7 @@ publisher: "Lumi Studio"
 - Apple Watch
 - App Store · મફત
 
-[App Store પરથી Kumo: વજન ઘટાડો અને ડાયટ મેળવો](https://apps.apple.com/in/app/id6830824515?pt=118326163&ct=geo_pick&mt=8)
+[App Store પરથી Kumo: વજન ઘટાડો અને ડાયટ મેળવો](https://apps.apple.com/in/app/id6830824515?pt=118326163&ct=ln_kumo_all_ww_gw&mt=8)
 
 [પૂર્ણ માર્ગદર્શિકા વાંચો](https://open.cait518.cc/ios-app-guide/gu-IN/kumo.html)
 

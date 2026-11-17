@@ -21,7 +21,7 @@ publisher: "Lumi Studio"
 - Apple Watch
 - App Store · 免费
 
-[在 App Store 获取 Kumo 体重记录・减重打卡・轻断食计时器](https://apps.apple.com/cn/app/id6830824515?pt=118326163&ct=geo_pick&mt=8)
+[在 App Store 获取 Kumo 体重记录・减重打卡・轻断食计时器](https://apps.apple.com/cn/app/id6830824515?pt=118326163&ct=ln_kumo_all_ww_gw&mt=8)
 
 [阅读完整指南](https://open.cait518.cc/ios-app-guide/zh-Hans/kumo.html)
 

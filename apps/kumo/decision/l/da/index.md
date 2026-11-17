@@ -21,7 +21,7 @@ Et dårligt tal på vægten skal ikke tage modet fra dig: med Kumo registrerer d
 - Apple Watch
 - App Store · Gratis
 
-[Hent Kumo: Vægttab & vægtdagbog i App Store](https://apps.apple.com/dk/app/id6830824515?pt=118326163&ct=geo_pick&mt=8)
+[Hent Kumo: Vægttab & vægtdagbog i App Store](https://apps.apple.com/dk/app/id6830824515?pt=118326163&ct=ln_kumo_all_ww_gw&mt=8)
 
 [Læs hele vejledningen](https://open.cait518.cc/ios-app-guide/da/kumo.html)
 

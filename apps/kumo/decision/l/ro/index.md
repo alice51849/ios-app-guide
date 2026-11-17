@@ -21,7 +21,7 @@ Cântarul urcă și coboară de la o zi la alta, dar Kumo îți notează greutat
 - Apple Watch
 - App Store · Gratuit
 
-[Descarcă Kumo: Greutate și slăbire din App Store](https://apps.apple.com/ro/app/id6830824515?pt=118326163&ct=geo_pick&mt=8)
+[Descarcă Kumo: Greutate și slăbire din App Store](https://apps.apple.com/ro/app/id6830824515?pt=118326163&ct=ln_kumo_all_ww_gw&mt=8)
 
 [Citește ghidul complet](https://open.cait518.cc/ios-app-guide/ro/kumo.html)
 

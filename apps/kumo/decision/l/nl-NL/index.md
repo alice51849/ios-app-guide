@@ -21,7 +21,7 @@ Je gewicht schommelt elke dag: met Kumo noteer je het in 10 seconden en zie je d
 - Apple Watch
 - App Store · Gratis
 
-[Download Kumo: Gewicht bijhouden in de App Store](https://apps.apple.com/nl/app/id6830824515?pt=118326163&ct=geo_pick&mt=8)
+[Download Kumo: Gewicht bijhouden in de App Store](https://apps.apple.com/nl/app/id6830824515?pt=118326163&ct=ln_kumo_all_ww_gw&mt=8)
 
 [Lees de volledige gids](https://open.cait518.cc/ios-app-guide/nl-NL/kumo.html)
 

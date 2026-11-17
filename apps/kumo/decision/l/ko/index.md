@@ -21,7 +21,7 @@ publisher: "Lumi Studio"
 - Apple Watch
 - App Store · 무료
 
-[App Store에서 Kumo 몸무게·GLP-1 주사 기록·간헐적 단식 받기](https://apps.apple.com/kr/app/id6830824515?pt=118326163&ct=geo_pick&mt=8)
+[App Store에서 Kumo 몸무게·GLP-1 주사 기록·간헐적 단식 받기](https://apps.apple.com/kr/app/id6830824515?pt=118326163&ct=ln_kumo_all_ww_gw&mt=8)
 
 [전체 안내서 읽기](https://open.cait518.cc/ios-app-guide/ko/kumo.html)
 

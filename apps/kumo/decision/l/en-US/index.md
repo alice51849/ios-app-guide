@@ -21,7 +21,7 @@ Once a GLP-1 medication starts, the shot day, the injection site, how the week f
 - Apple Watch
 - App Store · Free
 
-[Get Kumo on the App Store →](https://apps.apple.com/us/app/id6830824515?pt=118326163&ct=geo_pick&mt=8)
+[Get Kumo on the App Store →](https://apps.apple.com/us/app/id6830824515?pt=118326163&ct=ln_kumo_all_ww_gw&mt=8)
 
 [Read the full guide](https://open.cait518.cc/ios-app-guide/en-US/answers/glp-1-tracker-app-to-log-weight-and-shot-day-on-iphone.html)
 

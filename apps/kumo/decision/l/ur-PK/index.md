@@ -21,7 +21,7 @@ publisher: "Lumi Studio"
 - Apple Watch
 - App Store · مفت
 
-[App Store سے Kumo: وزن کم کرنے کی ڈائری حاصل کریں](https://apps.apple.com/pk/app/id6830824515?pt=118326163&ct=geo_pick&mt=8)
+[App Store سے Kumo: وزن کم کرنے کی ڈائری حاصل کریں](https://apps.apple.com/pk/app/id6830824515?pt=118326163&ct=ln_kumo_all_ww_gw&mt=8)
 
 [مکمل رہنمائی پڑھیں](https://open.cait518.cc/ios-app-guide/ur-PK/kumo.html)
 

@@ -21,7 +21,7 @@ Bacaan penimbang turun naik setiap hari dan buat anda hilang semangat? Dengan Ku
 - Apple Watch
 - App Store · Percuma
 
-[Dapatkan Kumo: Rekod Berat Badan & Diet di App Store](https://apps.apple.com/my/app/id6830824515?pt=118326163&ct=geo_pick&mt=8)
+[Dapatkan Kumo: Rekod Berat Badan & Diet di App Store](https://apps.apple.com/my/app/id6830824515?pt=118326163&ct=ln_kumo_all_ww_gw&mt=8)
 
 [Baca panduan penuh](https://open.cait518.cc/ios-app-guide/ms/kumo.html)
 

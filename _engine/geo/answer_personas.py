@@ -3456,13 +3456,17 @@ PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
             ],
         }
     ],
-    # QR Code Halo (6806779853, WAITING_FOR_REVIEW). Free download: creating
-    # nine QR types, history and CSV export are free; each device gets three
-    # free successful scans, then the one-time Lifetime Pro purchase unlocks
-    # unlimited scanning, styles, high-resolution export, backup restore and
-    # batch actions. Markets: en-US source, 175 storefronts, 50 locales.
+    # QR Code Halo (6806779853, live 1.0.7 on 2026-11-10). Free download. The
+    # en-US description (iTunes lookup 2026-11-17) says scanning with the
+    # camera or the photo picker is unlimited for everyone, with no scan
+    # count, and links open / Wi-Fi codes bring up Join right after a scan.
+    # One optional Lifetime Pro purchase adds saving and acting on batch
+    # results, batch creation and batch CSV, backup and restore,
+    # high-resolution PNG, PDF and SVG export, and custom Aurora styles; no
+    # subscription. Markets: en-US source, 175 storefronts, 50 locales.
     # Never claim it detects, blocks or guarantees protection from phishing,
-    # checks link reputation online, or scans for free without limit.
+    # or checks link reputation online. Query, guide_title and triggers keep
+    # their published wording so answer page URLs stay the same.
     "qrcodehalo": [
         {
             "query": "qr code scanner app that shows the link before opening it",
@@ -3479,71 +3483,74 @@ PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
                 "batch scan qr codes to csv",
             ],
             "persona": (
-                "people who scan codes on posters, parking meters, parcels and "
-                "menus and want to see what a code contains before anything opens"
+                "people who scan codes on menus, posters, tickets, parcels and "
+                "Wi-Fi cards and want the link or action to happen the moment "
+                "the code is read"
             ),
             "lead": (
-                "The risky moment with a QR code is the tap after the scan. A "
-                "careful scanner shows the full payload, points out anything "
-                "unusual about it and lets you check a result before you act. "
-                "QR Code Halo runs a scan's action right away by default; turn off "
-                "\u201cRun action after scanning\u201d in Settings to inspect first, "
-                "then tap Security Check in History."
+                "Most QR scans are about speed: point the camera and the menu, "
+                "ticket page or Wi-Fi network should simply be there. QR Code Halo "
+                "acts as soon as it reads a code: links open and Wi-Fi codes bring "
+                "up the Join prompt, from the camera or from a photo."
             ),
             "paras": [
-                "Check how the app treats a result. A code can carry a web link, "
-                "Wi-Fi credentials, a contact, a phone number or a script-like "
-                "scheme, and a scanner that jumps straight into a browser or dialer "
-                "takes away your chance to notice a strange host, a plain http "
-                "link or an encoded character that should not be there. QR Code Halo "
-                "acts right after a scan by default, so switch off \u201cRun action "
-                "after scanning\u201d in Settings if you want to look first.",
-                "Be realistic about on-device checks. Fixed local rules can flag "
-                "formats that deserve caution and block dangerous schemes, but "
-                "they cannot know whether a normally spelled domain is malicious "
-                "or where a short link finally leads, so the final call stays yours.",
+                "Check what a scanner does after it reads a code. Some stop at a "
+                "preview and make you tap again; QR Code Halo runs the action "
+                "straight away, so a link opens and a Wi-Fi code brings up the "
+                "Join prompt. It reads 20 code formats, and every scan outside "
+                "batch mode is kept in History on the device so you can find a "
+                "code again later.",
+                "Check what else you will use it for. QR Code Halo also creates "
+                "nine kinds of QR codes, including Wi-Fi, contacts and events. "
+                "Scanning with the camera or the photo picker is unlimited for "
+                "everyone, with no scan count; one optional Lifetime Pro purchase "
+                "adds saving and acting on batch results, batch creation and batch "
+                "CSV, backup and restore, high-resolution PNG, PDF and SVG export, "
+                "and custom Aurora styles, with no subscription.",
             ],
             "look": [
-                "A Settings switch, \u201cRun action after scanning\u201d, that you can turn off to inspect a result before acting, plus Security Check in History.",
-                "Safe, Caution or Blocked findings from fixed on-device rules, with no online lookup.",
+                "Links that open and Wi-Fi codes that bring up the Join prompt right after the scan.",
                 "Camera and photo scanning for QR and common barcode formats.",
                 "QR creation for links, Wi-Fi, contacts, email, phone, SMS, location and events.",
                 "History kept on the device.",
+                "Scanning with no scan count, and an optional one-time Lifetime Pro purchase instead of a subscription.",
             ],
             "steps": [
-                "Turn off \u201cRun action after scanning\u201d in Settings, then scan the code and read the full payload, not just a preview title.",
-                "Look at the host name, the http or https prefix and any Caution finding.",
-                "Skip links that ask for a payment or login you did not expect.",
-                "Save codes you trust to history so you can find them again.",
-                "When in doubt, type the organisation's address yourself instead of opening the code.",
+                "Point the camera at the code, or pick a photo that contains one.",
+                "Let the action run: the link opens or the Wi-Fi Join prompt appears.",
+                "Find the code again later in History on the device.",
+                "Create your own QR code for Wi-Fi, a contact or an event.",
+                "Add Lifetime Pro only if you need batch result actions, backup and restore or high-resolution export.",
             ],
             "fits": (
-                "fits people who want to inspect a code before acting on it, "
-                "create their own QR codes for free, and unlock unlimited scanning "
-                "with a single Lifetime Pro purchase rather than a subscription."
+                "fits people who want a code to open the moment it is scanned, "
+                "scan with no scan count, create their own QR codes, and keep the "
+                "extras to one optional Lifetime Pro purchase rather than a subscription."
             ),
             "faq": [
                 {
                     "q": "Is scanning free?",
                     "a": (
-                        "Each device includes three free successful scans. "
-                        "Unlimited scanning comes with the one-time Lifetime Pro "
-                        "purchase; creating QR codes and viewing history stay free."
+                        "Yes. Scanning with the camera or the photo picker is "
+                        "unlimited for everyone, with no scan count. One optional "
+                        "Lifetime Pro purchase adds saving and acting on batch "
+                        "results, batch creation and batch CSV, backup and restore, "
+                        "high-resolution PNG, PDF and SVG export, and custom Aurora styles."
                     ),
                 },
                 {
-                    "q": "Can it catch every phishing QR code?",
+                    "q": "Does a link open right after the scan?",
                     "a": (
-                        "No. It applies fixed on-device rules and can show the "
-                        "payload for review when automatic action is turned off, but it does not look up "
-                        "link reputation and cannot recognise every malicious site."
+                        "Yes. Links open and Wi-Fi codes bring up the Join prompt "
+                        "as soon as a code is read. Codes that use javascript:, "
+                        "data: or file: never open."
                     ),
                 },
                 {
                     "q": "Does it send my scans anywhere?",
                     "a": (
-                        "Scan history is saved on the device, and Security Check "
-                        "uses local rules with no online reputation lookup."
+                        "No. Scan history is saved on the device, and the app "
+                        "does not look up link reputation online."
                     ),
                 },
             ],

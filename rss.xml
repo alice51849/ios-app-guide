@@ -5,7 +5,7 @@
     <link>https://open.cait518.cc/ios-app-guide/</link>
     <description>Fresh publisher-disclosed iOS app guides, answers, free tools and open datasets.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 16 Nov 2026 22:49:07 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 00:00:00 GMT</lastBuildDate>
     <generator>iOS App Guide static syndication generator</generator>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <ttl>360</ttl>
@@ -17,6 +17,13 @@
     <atom:link href="https://rpc.rsscloud.io/websub" rel="hub"/>
     <atom:link href="https://open.cait518.cc/ios-app-guide/feed.xml" rel="alternate" type="application/atom+xml"/>
     <atom:link href="https://open.cait518.cc/ios-app-guide/feed.json" rel="alternate" type="application/feed+json"/>
+    <item>
+      <title>Bopomofo ResourceSync Feed</title>
+      <link>https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-resourcesync.html</link>
+      <description>A standards-based synchronization feed for the complete Bopomofo open-data, linked-data, API and teaching-resource collection.</description>
+      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-resourcesync.html</guid>
+      <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>小一注音暑假怎麼準備？14 天低壓暖身指南（2026）</title>
       <link>https://open.cait518.cc/ios-app-guide/guides/zhuyin-grade-1-preparation.html</link>
@@ -260,13 +267,6 @@
       <link>https://open.cait518.cc/ios-app-guide/en-US/tools/bandwidth-need-sheet.html</link>
       <description>List what your household does online at the same time and how many devices do it, then download a sheet with the Mbps you need and the headroom left on your plan.</description>
       <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/en-US/tools/bandwidth-need-sheet.html</guid>
-      <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Bopomofo SKOS Vocabulary - 37 Zhuyin Symbols as Linked Open Data</title>
-      <link>https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html</link>
-      <description>Download a CC BY 4.0 SKOS vocabulary for all 37 Zhuyin symbols in JSON-LD, Turtle and N-Triples, with SHACL and DCAT/VoID metadata.</description>
-      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html</guid>
       <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
     </item>
     <item>

@@ -1,11 +1,11 @@
 {
- "generated": "2026-11-15T22:55:17Z",
+ "generated": "2026-11-17T03:59:30Z",
  "mode": "apply",
  "counts": {
-  "ok_reply": 69,
+  "ok_reply": 72,
   "unknown_app": 48,
-  "ok_backfilled_earlier": 91,
-  "ok_store_only": 639,
+  "ok_backfilled_earlier": 95,
+  "ok_store_only": 635,
   "backfilled": 2,
   "ok_bio_link": 68,
   "ok_caption": 4,
@@ -13,6 +13,42 @@
   "missing": 3
  },
  "rows": [
+  {
+   "channel": "threads",
+   "id": "18093815099239314",
+   "permalink": "https://www.threads.com/@hourstag.app/post/Df07-JPkfFx",
+   "date": "2026-11-17",
+   "app": "mochi",
+   "status": "ok_reply",
+   "text": "Starting my reset now instead of waiting for January. One small checklist for the rest of the year: drink water, a short walk, read before b",
+   "why": "trial",
+   "ios_id": "6785004775",
+   "locale": "en-US"
+  },
+  {
+   "channel": "threads",
+   "id": "17996153132848919",
+   "permalink": "https://www.threads.com/@hourstag.app/post/DfzbwxGkXUE",
+   "date": "2026-11-16",
+   "app": "lumiweather",
+   "status": "ok_reply",
+   "text": "明天（11/17 週二）穿什麼？ 台北 19–28°C 台中 20–28°C 高雄 24–29°C 以台北來說，舒服：短袖或薄長袖，進冷氣房帶一件薄外套。 日夜溫差 9 度，早上出門多帶一件。 #明天穿什麼 #天氣 預報：MET Norway，僅供參考，出門前以實際天氣為準。 我",
+   "why": "brand",
+   "ios_id": "6779552704",
+   "locale": "zh-Hant"
+  },
+  {
+   "channel": "threads",
+   "id": "17916494490511544",
+   "permalink": "https://www.threads.com/@hourstag.app/post/DfyXXQ7lgGx",
+   "date": "2026-11-16",
+   "app": "mochi",
+   "status": "ok_reply",
+   "text": "First time hosting Thanksgiving and my brain is just a pile of tiny jobs. So it all went into a cute checklist: menu, groceries, who's bring",
+   "why": "trial",
+   "ios_id": "6785004775",
+   "locale": "en-US"
+  },
   {
    "channel": "threads",
    "id": "18120801365605235",
@@ -2739,7 +2775,7 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctieSsDfom",
    "date": "2026-08-31",
    "app": "gmoneylite",
-   "status": "ok_store_only",
+   "status": "ok_backfilled_earlier",
    "text": "G+Money Lite: Trip Spending Travel Expenses & Currency Travel money, made simple · Free: rates, budget, summary · 1 trip · 3 expenses · One ",
    "why": "url+brand",
    "ios_id": "6793436548",
@@ -2785,16 +2821,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/Dctirn9Au0u",
    "date": "2026-08-31",
    "app": "lockhour",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "LockHour Pro: Block Apps App Blocker & Focus Timer Lock away distractions. Start a focus session, shield your apps, build streaks and reclai",
    "why": "url+brand",
    "ios_id": "6780107485",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "17874309723645120",
-   "at": "2026-11-15T22:52:46Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",
@@ -3018,11 +3049,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctiSYekhXQ",
    "date": "2026-08-31",
    "app": "dailymatelite",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "DailyMate Lite: Speak Today 50 Languages, Real Dialogues Practise 8,400 cue-and-reply pairs in 50 languages. Try beginner travel practice fr",
    "why": "url+brand",
    "ios_id": "6794725568",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "18086744354336614",
+   "at": "2026-11-17T03:57:01Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -3958,16 +3994,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctixjWk4EK",
    "date": "2026-08-31",
    "app": "lumiletters",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "Lumi Letters Lite: ABC Kids ABC Tracing & Phonics Games A joyful first ABC adventure! Trace letters, hear phonics, play mini-games and build",
    "why": "url+brand",
    "ios_id": "6778748533",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "18110867042220801",
-   "at": "2026-11-15T22:52:46Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",
@@ -4059,7 +4090,7 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctikLqD_c7",
    "date": "2026-08-31",
    "app": "hourstag",
-   "status": "ok_store_only",
+   "status": "ok_backfilled_earlier",
    "text": "HoursTag: Hours to Buy Budget, Spending & Savings Turn any price into work hours. Set your income, see the real cost in time, and stop impul",
    "why": "url+brand",
    "ios_id": "6754218117",
@@ -4095,11 +4126,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctiYWPim3f",
    "date": "2026-08-31",
    "app": "gmoney",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "G+Money: Spending & Budget Budget, Expenses & Currency Two tools in one: track expenses, set a budget, and convert 50+ currencies—at home or",
    "why": "url+brand",
    "ios_id": "6755782939",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "18103393154650395",
+   "at": "2026-11-17T03:57:01Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",

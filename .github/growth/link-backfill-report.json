@@ -1,11 +1,11 @@
 {
- "generated": "2026-11-16T19:42:01Z",
+ "generated": "2026-11-17T03:59:30Z",
  "mode": "apply",
  "counts": {
-  "ok_reply": 71,
+  "ok_reply": 72,
   "unknown_app": 48,
-  "ok_backfilled_earlier": 93,
-  "ok_store_only": 637,
+  "ok_backfilled_earlier": 95,
+  "ok_store_only": 635,
   "backfilled": 2,
   "ok_bio_link": 68,
   "ok_caption": 4,
@@ -13,6 +13,18 @@
   "missing": 3
  },
  "rows": [
+  {
+   "channel": "threads",
+   "id": "18093815099239314",
+   "permalink": "https://www.threads.com/@hourstag.app/post/Df07-JPkfFx",
+   "date": "2026-11-17",
+   "app": "mochi",
+   "status": "ok_reply",
+   "text": "Starting my reset now instead of waiting for January. One small checklist for the rest of the year: drink water, a short walk, read before b",
+   "why": "trial",
+   "ios_id": "6785004775",
+   "locale": "en-US"
+  },
   {
    "channel": "threads",
    "id": "17996153132848919",
@@ -2763,16 +2775,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctieSsDfom",
    "date": "2026-08-31",
    "app": "gmoneylite",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "G+Money Lite: Trip Spending Travel Expenses & Currency Travel money, made simple · Free: rates, budget, summary · 1 trip · 3 expenses · One ",
    "why": "url+brand",
    "ios_id": "6793436548",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "18034242650683030",
-   "at": "2026-11-16T19:39:23Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",
@@ -3042,11 +3049,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctiSYekhXQ",
    "date": "2026-08-31",
    "app": "dailymatelite",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "DailyMate Lite: Speak Today 50 Languages, Real Dialogues Practise 8,400 cue-and-reply pairs in 50 languages. Try beginner travel practice fr",
    "why": "url+brand",
    "ios_id": "6794725568",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "18086744354336614",
+   "at": "2026-11-17T03:57:01Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -4078,16 +4090,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctikLqD_c7",
    "date": "2026-08-31",
    "app": "hourstag",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "HoursTag: Hours to Buy Budget, Spending & Savings Turn any price into work hours. Set your income, see the real cost in time, and stop impul",
    "why": "url+brand",
    "ios_id": "6754218117",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "18005184218800863",
-   "at": "2026-11-16T19:39:23Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",
@@ -4119,11 +4126,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctiYWPim3f",
    "date": "2026-08-31",
    "app": "gmoney",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "G+Money: Spending & Budget Budget, Expenses & Currency Two tools in one: track expenses, set a budget, and convert 50+ currencies—at home or",
    "why": "url+brand",
    "ios_id": "6755782939",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "18103393154650395",
+   "at": "2026-11-17T03:57:01Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",

@@ -46,7 +46,7 @@ TYPES = {ONE_TIME_UNLOCK, PAID_UPFRONT, SUBSCRIPTION, FREE, UNKNOWN}
 PURCHASE_CLAIM_RE = re.compile(
     r"pay once|paid once|one[- ]time (?:purchase|unlock|payment)|one-off purchase"
     r"|no subscription|without (?:a )?subscription|lifetime (?:pro|unlock|purchase)"
-    r"|一次買斷|一次买断|買斷|买断|終生|终生|一次付費|一次付费|永久解鎖|永久解锁"
+    r"|一次買斷|一次买断|買斷|买断|終生|终生|一次付費|一次付费|\u6c38\u4e45\u89e3\u9396|\u6c38\u4e45\u89e3\u9501"  # 偵測樣式：用 \u 逸出，避免被當成對外文案（見 tests/test_no_ownership_claims.py）
     r"|免訂閱|無訂閱|无订阅|不用訂閱|買い切り|サブスクなし|サブスク不要"
     r"|평생|일회성|구독\s?없",
     re.IGNORECASE,

@@ -21,7 +21,7 @@ publisher: "Lumi Studio"
 - Apple Watch
 - App Store · இலவசம்
 
-[App Store-இல் Kumo: எடை குறைப்பு டிராக்கர்-ஐப் பெறுங்கள்](https://apps.apple.com/in/app/id6830824515?pt=118326163&ct=geo_pick&mt=8)
+[App Store-இல் Kumo: எடை குறைப்பு டிராக்கர்-ஐப் பெறுங்கள்](https://apps.apple.com/in/app/id6830824515?pt=118326163&ct=ln_kumo_all_ww_gw&mt=8)
 
 [முழு வழிகாட்டியை படிக்கவும்](https://open.cait518.cc/ios-app-guide/ta-IN/kumo.html)
 

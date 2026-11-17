@@ -21,7 +21,7 @@ Cân nặng nhảy lên xuống mỗi ngày dễ làm nản, còn app phức t�
 - Apple Watch
 - App Store · Miễn phí
 
-[Tải Kumo: Giảm cân, ghi cân nặng trên App Store](https://apps.apple.com/vn/app/id6830824515?pt=118326163&ct=geo_pick&mt=8)
+[Tải Kumo: Giảm cân, ghi cân nặng trên App Store](https://apps.apple.com/vn/app/id6830824515?pt=118326163&ct=ln_kumo_all_ww_gw&mt=8)
 
 [Đọc toàn bộ hướng dẫn](https://open.cait518.cc/ios-app-guide/vi/kumo.html)
 

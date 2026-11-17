@@ -21,7 +21,7 @@ Vikten svänger varje dag: med Kumo loggar du den på 10 sekunder och ser trende
 - Apple Watch
 - App Store · Gratis
 
-[Hämta Kumo: Viktdagbok & Viktnedgång i App Store](https://apps.apple.com/se/app/id6830824515?pt=118326163&ct=geo_pick&mt=8)
+[Hämta Kumo: Viktdagbok & Viktnedgång i App Store](https://apps.apple.com/se/app/id6830824515?pt=118326163&ct=ln_kumo_all_ww_gw&mt=8)
 
 [Läs hela guiden](https://open.cait518.cc/ios-app-guide/sv/kumo.html)
 

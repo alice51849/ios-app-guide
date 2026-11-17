@@ -21,7 +21,7 @@ Tartı her gün inip çıkınca çoğu kişi bırakıyor; Kumo tartılmayı 10 s
 - Apple Watch
 - App Store · Ücretsiz
 
-[Kumo: Kilo Verme, Diyet Takip uygulamasını App Store'dan al](https://apps.apple.com/tr/app/id6830824515?pt=118326163&ct=geo_pick&mt=8)
+[Kumo: Kilo Verme, Diyet Takip uygulamasını App Store'dan al](https://apps.apple.com/tr/app/id6830824515?pt=118326163&ct=ln_kumo_all_ww_gw&mt=8)
 
 [Kılavuzun tamamını oku](https://open.cait518.cc/ios-app-guide/tr/kumo.html)
 

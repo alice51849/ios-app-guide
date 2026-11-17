@@ -136,6 +136,21 @@ def require_guide_site_identity(pages=None, public_site=None):
         )
 
 
+def require_one_code_per_page(pages=None):
+    """一頁一碼發布關卡（2026-11-17）：這次暫存的頁同款多出新追蹤碼就拒絕提交與推送。
+
+    規則與例外清單見 agent/one_page_one_code_gate.py；舊問題與現況例外只印警告。"""
+    agent_dir = os.path.join(os.path.dirname(HERE), "agent")
+    if agent_dir not in sys.path:
+        sys.path.insert(0, agent_dir)
+    try:
+        from one_page_one_code_gate import require_one_code
+    except ImportError:  # 指南站鏡像 _engine/geo 沒有 agent/：只警告，關卡在 00_GrowthEngine 這份
+        print("::warning::找不到 agent/one_page_one_code_gate.py，一頁一碼關卡未執行", file=sys.stderr)
+        return
+    require_one_code(pages or PAGES, "ios-app-guide")
+
+
 def run(cmd, cwd=None, env=None):
     print(f"$ {' '.join(cmd)}")
     r = subprocess.run(cmd, cwd=cwd, env=env, capture_output=True, text=True)
@@ -657,6 +672,7 @@ def main():
         print("\n✅ GEO 發布完成(無變更)")
         return
     require_guide_site_identity(PAGES)
+    require_one_code_per_page(PAGES)
     require(["git", "-c", "user.name=alice51849",
              "-c", "user.email=alice51849@users.noreply.github.com",
              "commit", "-m", "Update multilingual GEO pages" + COMMIT_TRAILERS],

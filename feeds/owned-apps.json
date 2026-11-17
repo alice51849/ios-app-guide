@@ -286,7 +286,7 @@
       "record_count": 60
     },
     "bn-BD": {
-      "date_modified": "2026-11-17T00:44:08Z",
+      "date_modified": "2026-11-17T03:01:17Z",
       "formats": {
         "atom": {
           "accepted_content_types": [
@@ -296,7 +296,7 @@
           ],
           "content_type": "application/atom+xml",
           "path": "bn-BD/feed.xml",
-          "sha256": "95209b250a36db3f11247c17ec4ffb175ef268dee7f9d325a1d764dcb11047c6",
+          "sha256": "2637a8c4950604cabd67d5668e1abb35846f0c8fc07bfaabeb04acbf90c25ed0",
           "url": "https://open.cait518.cc/ios-app-guide/bn-BD/feed.xml"
         },
         "json_feed": {
@@ -306,7 +306,7 @@
           ],
           "content_type": "application/feed+json",
           "path": "bn-BD/feed.json",
-          "sha256": "3e71e344c288c0407f3074b685ed7bed580d8c54f4d0fbc00dd33bf5acfecf56",
+          "sha256": "e3e0418659cc52ac082e5c59f7986c6303ee5592a4f3a3dacdf8ecee06b8ffd5",
           "url": "https://open.cait518.cc/ios-app-guide/bn-BD/feed.json"
         },
         "rss": {
@@ -317,7 +317,7 @@
           ],
           "content_type": "application/rss+xml",
           "path": "bn-BD/rss.xml",
-          "sha256": "5003931f24e688d81e2a7c399619092957a7bbfe3c4ba040937322c35d8f47d5",
+          "sha256": "dc5d67af6e1f4db3218713fc32ebdf06edfafeef6033174314af9dd3fa2f3e1e",
           "url": "https://open.cait518.cc/ios-app-guide/bn-BD/rss.xml"
         }
       },
@@ -2246,7 +2246,7 @@
       "record_count": 60
     }
   },
-  "generation_digest": "28bf7b84dff38830f4e1695286c3728ac43eebbd0d553ab687f145b0b58775aa",
+  "generation_digest": "daf6b1b324e42f452119fdbf4357f1b6947bec37c41b0c9d6bc6c332d43655b3",
   "locale_count": 50,
   "notification_feed_count": 147,
   "purchase_models": {
@@ -2259,7 +2259,7 @@
   "site": "https://open.cait518.cc/ios-app-guide",
   "sitemap_sha256": "8e78736134dd327e9c42c85c1d89166213092944af6578999b3a36bf642d273b",
   "source": {
-    "catalog_content_digest": "f426d6c19f46becc5ac6790c282942271691f5cd8911726d64c99ebde29faffb",
+    "catalog_content_digest": "9c17df4263ef0c18c4076f13d5f3c8a07da684c28ae0180d3aa7e25b78148b60",
     "roster_digest": "151b01fd2464a3f08cccb53f5250e72f9f2e0412099cee732d39496fa3f97637",
     "source_files": {
       "../social/videogen/registry.py": "fa574d5e16655040f5d61ddf0ffc8b95e5d578b4fc6a5d66f2bc092159813b66",

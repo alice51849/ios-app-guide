@@ -2,7 +2,7 @@
 title: "glp-1 tracker app to log weight and shot day on iphone"
 lang: "en-US"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/kumo/decision/l/en-US/index.html"
-modified: "2026-11-16"
+modified: "2026-11-17"
 app_store_id: "6830824515"
 verified_live: true
 purchase_model: "neutral"

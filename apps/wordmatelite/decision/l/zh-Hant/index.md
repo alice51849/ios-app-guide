@@ -2,7 +2,7 @@
 title: "Wordmate Lite 每天五個單字 — 日文・韓文單字，每天一分鐘 | iOS App"
 lang: "zh-Hant"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wordmatelite/decision/l/zh-Hant/index.html"
-modified: "2026-11-16"
+modified: "2026-11-17"
 app_store_id: "6797601720"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

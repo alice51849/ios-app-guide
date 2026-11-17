@@ -2,7 +2,7 @@
 title: "Snapport Lite：自宅で証明写真 — 履歴書・各種申請のサイズに対応 | iOS App"
 lang: "ja"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapportlite/decision/l/ja/index.html"
-modified: "2026-11-16"
+modified: "2026-11-17"
 app_store_id: "6792856304"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

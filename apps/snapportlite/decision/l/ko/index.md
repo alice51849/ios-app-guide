@@ -2,7 +2,7 @@
 title: "Snapport Lite：집에서 증명사진 — 반명함·이력서용 규격 맞춤 | iOS App"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapportlite/decision/l/ko/index.html"
-modified: "2026-11-16"
+modified: "2026-11-17"
 app_store_id: "6792856304"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

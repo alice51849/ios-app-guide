@@ -2,7 +2,7 @@
 title: "GBAGo: Sauvegardes visuelles — Émulateur rétro .gba .gbc .gb | iOS App"
 lang: "fr-FR"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gbago/decision/l/fr-FR/index.html"
-modified: "2026-11-16"
+modified: "2026-11-17"
 app_store_id: "6804564400"
 verified_live: true
 purchase_model: "paid_upfront"

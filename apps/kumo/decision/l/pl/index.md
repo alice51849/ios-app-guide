@@ -21,7 +21,7 @@ Waga skacze z dnia na dzień i łatwo się zniechęcić, ale z Kumo zapiszesz j�
 - Apple Watch
 - App Store · Bezpłatnie
 
-[Pobierz Kumo: Odchudzanie i waga ciała z App Store](https://apps.apple.com/pl/app/id6830824515?pt=118326163&ct=geo_pick&mt=8)
+[Pobierz Kumo: Odchudzanie i waga ciała z App Store](https://apps.apple.com/pl/app/id6830824515?pt=118326163&ct=ln_kumo_all_ww_gw&mt=8)
 
 [Przeczytaj pełny przewodnik](https://open.cait518.cc/ios-app-guide/pl/kumo.html)
 

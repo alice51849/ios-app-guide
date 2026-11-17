@@ -21,7 +21,7 @@ publisher: "Lumi Studio"
 - Apple Watch
 - App Store · 免費
 
-[在 App Store 取得 Kumo 體重紀錄・減重日記・GLP-1 注射追蹤](https://apps.apple.com/tw/app/id6830824515?pt=118326163&ct=geo_pick&mt=8)
+[在 App Store 取得 Kumo 體重紀錄・減重日記・GLP-1 注射追蹤](https://apps.apple.com/tw/app/id6830824515?pt=118326163&ct=ln_kumo_all_ww_gw&mt=8)
 
 [閱讀完整指南](https://open.cait518.cc/ios-app-guide/zh-Hant/kumo.html)
 

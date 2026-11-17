@@ -21,7 +21,7 @@ Ett dårlig tall på vekten skal ikke ta motet fra deg: med Kumo logger du på 1
 - Apple Watch
 - App Store · Gratis
 
-[Last ned Kumo: Vektnedgang & vektdagbok fra App Store](https://apps.apple.com/no/app/id6830824515?pt=118326163&ct=geo_pick&mt=8)
+[Last ned Kumo: Vektnedgang & vektdagbok fra App Store](https://apps.apple.com/no/app/id6830824515?pt=118326163&ct=ln_kumo_all_ww_gw&mt=8)
 
 [Les hele veiledningen](https://open.cait518.cc/ios-app-guide/no/kumo.html)
 

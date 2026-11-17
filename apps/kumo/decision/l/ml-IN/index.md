@@ -21,7 +21,7 @@ publisher: "Lumi Studio"
 - Apple Watch
 - App Store · സൗജന്യം
 
-[App Store-ൽ നിന്ന് Kumo: ഭാരം കുറയ്ക്കൽ ട്രാക്കർ നേടൂ](https://apps.apple.com/in/app/id6830824515?pt=118326163&ct=geo_pick&mt=8)
+[App Store-ൽ നിന്ന് Kumo: ഭാരം കുറയ്ക്കൽ ട്രാക്കർ നേടൂ](https://apps.apple.com/in/app/id6830824515?pt=118326163&ct=ln_kumo_all_ww_gw&mt=8)
 
 [പൂർണ്ണ ഗൈഡ് വായിക്കുക](https://open.cait518.cc/ios-app-guide/ml-IN/kumo.html)
 

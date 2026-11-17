@@ -21,7 +21,7 @@ A mérleg napról napra ugrál, de a Kumo 10 másodperc alatt rögzíti a súlyo
 - Apple Watch
 - App Store · Ingyenes
 
-[Töltse le a(z) Kumo: Fogyás és súlykövető appot az App Store-ból](https://apps.apple.com/hu/app/id6830824515?pt=118326163&ct=geo_pick&mt=8)
+[Töltse le a(z) Kumo: Fogyás és súlykövető appot az App Store-ból](https://apps.apple.com/hu/app/id6830824515?pt=118326163&ct=ln_kumo_all_ww_gw&mt=8)
 
 [Olvasd el a teljes útmutatót](https://open.cait518.cc/ios-app-guide/hu/kumo.html)
 

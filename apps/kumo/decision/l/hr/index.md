@@ -21,7 +21,7 @@ Vaga svaki dan pokazuje nešto drugo, ali Kumo bilježi težinu za 10 sekundi, a
 - Apple Watch
 - App Store · Besplatno
 
-[Preuzmite Kumo: Težina i mršavljenje u App Storeu](https://apps.apple.com/hr/app/id6830824515?pt=118326163&ct=geo_pick&mt=8)
+[Preuzmite Kumo: Težina i mršavljenje u App Storeu](https://apps.apple.com/hr/app/id6830824515?pt=118326163&ct=ln_kumo_all_ww_gw&mt=8)
 
 [Pročitajte cijeli vodič](https://open.cait518.cc/ios-app-guide/hr/kumo.html)
 

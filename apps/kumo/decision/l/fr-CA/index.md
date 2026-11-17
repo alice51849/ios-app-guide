@@ -21,7 +21,7 @@ Votre poids varie d'un jour à l'autre : Kumo le note en 10 secondes, en kilos o
 - Apple Watch
 - App Store · Gratuit
 
-[Obtenir Kumo : Suivi du poids & GLP-1 sur l'App Store](https://apps.apple.com/ca/app/id6830824515?pt=118326163&ct=geo_pick&mt=8)
+[Obtenir Kumo : Suivi du poids & GLP-1 sur l'App Store](https://apps.apple.com/ca/app/id6830824515?pt=118326163&ct=ln_kumo_all_ww_gw&mt=8)
 
 [Lire le guide complet](https://open.cait518.cc/ios-app-guide/fr-CA/kumo.html)
 

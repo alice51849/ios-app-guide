@@ -21,7 +21,7 @@ publisher: "Lumi Studio"
 - Apple Watch
 - App Store · Δωρεάν
 
-[Αποκτήστε το Kumo: Απώλεια Βάρους & Δίαιτα από το App Store](https://apps.apple.com/gr/app/id6830824515?pt=118326163&ct=geo_pick&mt=8)
+[Αποκτήστε το Kumo: Απώλεια Βάρους & Δίαιτα από το App Store](https://apps.apple.com/gr/app/id6830824515?pt=118326163&ct=ln_kumo_all_ww_gw&mt=8)
 
 [Διαβάστε τον πλήρη οδηγό](https://open.cait518.cc/ios-app-guide/el/kumo.html)
 

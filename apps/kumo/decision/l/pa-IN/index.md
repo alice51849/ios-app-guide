@@ -21,7 +21,7 @@ publisher: "Lumi Studio"
 - Apple Watch
 - App Store · ਮੁਫ਼ਤ
 
-[App Store ਤੋਂ Kumo: ਭਾਰ ਘਟਾਉਣ ਦਾ ਟਰੈਕਰ ਪ੍ਰਾਪਤ ਕਰੋ](https://apps.apple.com/in/app/id6830824515?pt=118326163&ct=geo_pick&mt=8)
+[App Store ਤੋਂ Kumo: ਭਾਰ ਘਟਾਉਣ ਦਾ ਟਰੈਕਰ ਪ੍ਰਾਪਤ ਕਰੋ](https://apps.apple.com/in/app/id6830824515?pt=118326163&ct=ln_kumo_all_ww_gw&mt=8)
 
 [ਪੂਰਾ ਮਾਰਗਦਰਸ਼ਨ ਪੜ੍ਹੋ](https://open.cait518.cc/ios-app-guide/pa-IN/kumo.html)
 

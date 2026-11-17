@@ -23,6 +23,7 @@ from family_travel_dataset import write_text_if_changed
 from gen_feed import feed_discovery_links
 import gen_mobile_app_identity
 import gen_social_previews
+import gw_campaign
 from official_locales import OFFICIAL_LOCALES
 import portfolio_app_finder
 import publisher_intent_catalog
@@ -45,6 +46,17 @@ PRIORITY_APPS = ("maskmyfile", "wifiaid", "mochidonestamp")
 PRIORITY_RANK = {key: index + 1 for index, key in enumerate(PRIORITY_APPS)}
 INTENT_CONTEXT_ONLY_KEYS = {"hourstag"}
 TODAY_RE = re.compile(r"\d{4}-\d{2}-\d{2}")
+# 宣告詞群的款（gw_campaign 文件頭）：這些款的決策頁 <head> 放 growth-attribution-group 標記，
+# App Store 連結直接帶 gw 階梯碼（款 × 連結商店國家 × 詞群），每日改寫照標記逐連結重算同一個碼，
+# Play 連結由 android_play 照 App Store 的 ct 帶 referrer。決策頁的查詢是該款商店名稱的品類主詞，
+# 所以詞群是 sr。其他款不在這裡，輸出照舊（geo_* 由每日改寫蓋）。
+# 2026-11-17 統籌裁定：Kumo 決策頁 App Store／Play 仍是 geo_pick，改成詞群標記並納入發布前閘門。
+GW_DECISION_GROUPS = {"kumo": "sr"}
+GEO_CT_RE = re.compile(r"[?&](?:amp;)?ct=(geo_[^&\"\s)]*)")
+APPLE_CT_RE = re.compile(
+    r"(?:apps\.apple\.com/[^\"\s)]*?)[?&](?:amp;)?ct=([^&\"\s)]*)"
+)
+PLAY_HREF_RE = re.compile(r'href="(https://play\.google\.com/store/apps/details\?[^"]*)"')
 
 
 def data_url() -> str:
@@ -232,6 +244,60 @@ def _long_guide_description(path: Path, app_id: str, fallback: str) -> str:
     return fallback
 
 
+def _gw_app_store_url(key: str, app_store_id: str, url: Any) -> Any:
+    """宣告詞群的款：App Store 連結改帶本款 gw 碼；其他款原樣回傳（位元組不變）。"""
+    group = GW_DECISION_GROUPS.get(key)
+    if group is None or not url:
+        return url
+    url = str(url)
+    storefront = gw_campaign.storefront_of(url)
+    code = gw_campaign.campaign(key, group, storefront)
+    problems = gw_campaign.link_problems(
+        code,
+        app_key=gw_campaign.app_key_for_id(app_store_id),
+        storefront=storefront,
+    )
+    if problems:
+        raise ValueError(f"Install decision gw campaign for {key}: {problems}")
+    return app_store_storefronts.required_campaign_app_store_url(
+        url,
+        code,
+        expected_app_id=app_store_id,
+    )
+
+
+def gw_decision_errors(key: str, text: str, *, html_page: bool) -> list[str]:
+    """發布前閘門：宣告詞群的款，決策頁每條 App Store 連結（含 Play referrer）都要是本款合格 gw 碼、
+    不得是 geo_*，HTML 頁要有詞群標記；其他款不檢查（回空清單）。"""
+    group = GW_DECISION_GROUPS.get(key)
+    if group is None:
+        return []
+    errors = []
+    if html_page and gw_campaign.page_group(text) != group:
+        errors.append(f"{key}: 決策頁缺詞群標記 {gw_campaign.meta_tag(group)}")
+    for code in GEO_CT_RE.findall(text):
+        errors.append(f"{key}: 決策頁仍有 ct={code}")
+    apple = APPLE_CT_RE.findall(text)
+    if not apple and "apps.apple.com/" in text and "ct=" in text:
+        errors.append(f"{key}: 決策頁 App Store 連結讀不到 ct")
+    for code in apple:
+        parsed = gw_campaign.parse(code)
+        if parsed is None or parsed["app"] != key:
+            errors.append(f"{key}: 決策頁 App Store ct={code} 不是本款 gw 碼")
+    for href in PLAY_HREF_RE.findall(text):
+        query = urlsplit(html.unescape(href)).query
+        if "referrer=" not in query:
+            continue
+        from urllib.parse import parse_qs
+
+        referrer = parse_qs(query).get("referrer", [""])[0]
+        source = parse_qs(referrer).get("utm_source", [""])[0]
+        parsed = gw_campaign.parse(source)
+        if parsed is None or parsed["app"] != key:
+            errors.append(f"{key}: 決策頁 Play referrer utm_source={source!r} 不是本款 gw 碼")
+    return errors
+
+
 def _record(
     pages: Path,
     intent: dict[str, Any],
@@ -322,7 +388,7 @@ def _record(
         "locale_index_url": locale_index_url(locale),
         "app_store_id": app_store_id,
         "canonical_app_store_url": intent["canonical_app_store_url"],
-        "app_store_url": intent["app_store_url"],
+        "app_store_url": _gw_app_store_url(key, app_store_id, intent["app_store_url"]),
         "app_store_cta_label": str(intent["app_store_cta_label"]),
         "storefront_facts": storefront_facts,
         "guide_cta_label": str(portfolio_app_finder.UI[locale]["guide"]),
@@ -1063,12 +1129,14 @@ def render_page(
         include_hero_style=False,
         oembed_href=str(record["oembed_url"]),
     )
+    group = GW_DECISION_GROUPS.get(str(record["app_key"]))
+    group_meta = "\n" + gw_campaign.meta_tag(group) if group else ""
     document = public_email.render_html(f"""<!doctype html>
 <html lang="{html.escape(locale)}" dir="{dir_attr}"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="apple-itunes-app" content="app-id={html.escape(str(record["app_store_id"]), quote=True)}">
 <meta name="description" content="{html.escape(str(record["decision_context"]), quote=True)}">
-<meta name="content-modified" content="{html.escape(modified, quote=True)}">
+<meta name="content-modified" content="{html.escape(modified, quote=True)}">{group_meta}
 {social_metadata}
 <title>{html.escape(str(record["publisher_query"]))} | {html.escape(str(record["app_name"]))}</title>
 <link rel="canonical" href="{html.escape(str(record["decision_page_url"]), quote=True)}">
@@ -1380,14 +1448,25 @@ def build(pages: Path = PAGES) -> list[str]:
         title = feed_contexts[str(record["locale"])]["title"]
         if previous_date and previous_date[1] <= modified and render_page(record, previous_date[1], title) == previous:
             page_modified = previous_date[1]
-        _write_text(page_path, render_page(record, page_modified, title))
+        page_html = render_page(record, page_modified, title)
+        page_markdown = render_markdown(record, page_modified)
+        gate = gw_decision_errors(
+            str(record["app_key"]), page_html, html_page=True,
+        ) + gw_decision_errors(
+            str(record["app_key"]), page_markdown, html_page=False,
+        )
+        if gate:
+            raise ValueError(
+                f"Install decision attribution gate {record['record_id']}: {gate}"
+            )
+        _write_text(page_path, page_html)
         record_dates[record["record_id"]] = page_modified
         markdown_path = pages / decision_markdown_relative(
             str(record["app_key"]),
             str(record["locale"]),
         )
         expected_markdown_paths.add(markdown_path)
-        _write_text(markdown_path, render_markdown(record, page_modified))
+        _write_text(markdown_path, page_markdown)
     _write_text(
         pages / SITEMAP_NAME,
         render_sitemap(records, modified, record_dates),

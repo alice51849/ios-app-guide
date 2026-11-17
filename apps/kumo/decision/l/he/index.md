@@ -21,7 +21,7 @@ publisher: "Lumi Studio"
 - Apple Watch
 - App Store · בחינם
 
-[הורידו את Kumo: מעקב משקל, ירידה במשקל מה-App Store](https://apps.apple.com/il/app/id6830824515?pt=118326163&ct=geo_pick&mt=8)
+[הורידו את Kumo: מעקב משקל, ירידה במשקל מה-App Store](https://apps.apple.com/il/app/id6830824515?pt=118326163&ct=ln_kumo_all_ww_gw&mt=8)
 
 [קרא את המדריך המלא](https://open.cait518.cc/ios-app-guide/he/kumo.html)
 

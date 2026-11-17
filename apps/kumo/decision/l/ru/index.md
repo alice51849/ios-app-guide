@@ -21,7 +21,7 @@ publisher: "Lumi Studio"
 - Apple Watch
 - App Store · Бесплатно
 
-[Установить Kumo: дневник веса и похудения в App Store](https://apps.apple.com/ru/app/id6830824515?pt=118326163&ct=geo_pick&mt=8)
+[Установить Kumo: дневник веса и похудения в App Store](https://apps.apple.com/ru/app/id6830824515?pt=118326163&ct=ln_kumo_all_ww_gw&mt=8)
 
 [Прочитать полное руководство](https://open.cait518.cc/ios-app-guide/ru/kumo.html)
 

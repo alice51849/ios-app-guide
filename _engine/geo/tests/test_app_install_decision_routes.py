@@ -542,6 +542,29 @@ class AppInstallDecisionRouteTests(unittest.TestCase):
         )
         self.assertEqual(len(expected), len(set(locations)))
 
+    def test_gw_decision_pages_carry_group_marker_and_gw_codes(self) -> None:
+        # 2026-11-17 統籌裁定：Kumo 決策頁 App Store／Play 不得是 geo_*，要帶本款 gw 碼與詞群標記。
+        self.assertEqual({"kumo": "sr"}, app_install_decision_routes.GW_DECISION_GROUPS)
+        checked = 0
+        for record in self.records:
+            key = str(record["app_key"])
+            if key not in app_install_decision_routes.GW_DECISION_GROUPS:
+                continue
+            if record["app_store_url"]:
+                self.assertNotIn("ct=geo_", record["app_store_url"])
+            for relative, html_page in (
+                (app_install_decision_routes.decision_page_relative(key, record["locale"]), True),
+                (app_install_decision_routes.decision_markdown_relative(key, record["locale"]), False),
+            ):
+                text = (self.pages / relative).read_text(encoding="utf-8")
+                self.assertEqual(
+                    [],
+                    app_install_decision_routes.gw_decision_errors(key, text, html_page=html_page),
+                    relative,
+                )
+                checked += 1
+        self.assertEqual(len(OFFICIAL_LOCALES) * 2, checked)
+
     def test_sitemap_index_and_robots_register_decision_sitemap(self) -> None:
         namespace = "{http://www.sitemaps.org/schemas/sitemap/0.9}"
         sitemap_index = ET.parse(self.pages / "sitemap_index.xml").getroot()
@@ -554,6 +577,66 @@ class AppInstallDecisionRouteTests(unittest.TestCase):
         )
         robots = (self.pages / "robots.txt").read_text(encoding="utf-8")
         self.assertIn(app_install_decision_routes.SITEMAP_NAME, robots)
+
+
+class GwDecisionGateTests(unittest.TestCase):
+    """發布前閘門本身（不需要產生好的頁面樹）。"""
+
+    GOOD = (
+        '<meta name="growth-attribution-group" content="sr">'
+        '<meta name="apple-itunes-app" content="app-id=6830824515, '
+        'affiliate-data=pt=118326163&amp;ct=ln_kumo_all_ww_gw&amp;mt=8">'
+        '<a href="https://apps.apple.com/us/app/id6830824515?pt=118326163&amp;ct=ln_kumo_all_ww_gw&amp;mt=8">x</a>'
+        '<a class="android-play" href="https://play.google.com/store/apps/details?id=com.alice51849.Kumo'
+        '&amp;referrer=utm_source%3Dln_kumo_all_ww_gw%26utm_campaign%3Dkumo">Google Play</a>'
+        '<a href="https://play.google.com/store/apps/details?id=com.alice51849.Kumo&amp;showAllReviews=true">r</a>'
+    )
+
+    def errors(self, text: str, html_page: bool = True) -> list[str]:
+        return app_install_decision_routes.gw_decision_errors("kumo", text, html_page=html_page)
+
+    def test_good_page_passes(self) -> None:
+        self.assertEqual([], self.errors(self.GOOD))
+
+    def test_geo_codes_and_wrong_codes_block(self) -> None:
+        self.assertTrue(self.errors(self.GOOD.replace("ct=ln_kumo_all_ww_gw&amp;mt=8\">x", "ct=geo_pick&amp;mt=8\">x")))
+        self.assertTrue(self.errors(self.GOOD.replace("affiliate-data=pt=118326163&amp;ct=ln_kumo_all_ww_gw", "affiliate-data=pt=118326163&amp;ct=geo_pick")))
+        self.assertTrue(self.errors(self.GOOD.replace("ct=ln_kumo_all_ww_gw&amp;mt=8\">x", "ct=ln_mochi_all_ww_gw&amp;mt=8\">x")))
+        self.assertTrue(self.errors(self.GOOD.replace("utm_source%3Dln_kumo_all_ww_gw", "utm_source%3Dgeo_pick")))
+        self.assertTrue(self.errors(self.GOOD.replace("utm_source%3Dln_kumo_all_ww_gw", "utm_source%3Diag_play")))
+
+    def test_missing_group_marker_blocks_html_only(self) -> None:
+        text = self.GOOD.replace('<meta name="growth-attribution-group" content="sr">', "")
+        self.assertTrue(self.errors(text))
+        markdown = "[Get](https://apps.apple.com/us/app/id6830824515?pt=118326163&ct=ln_kumo_all_ww_gw&mt=8)"
+        self.assertEqual([], self.errors(markdown, html_page=False))
+        self.assertTrue(self.errors(markdown.replace("ln_kumo_all_ww_gw", "geo_pick"), html_page=False))
+
+    def test_other_apps_are_untouched(self) -> None:
+        self.assertEqual([], app_install_decision_routes.gw_decision_errors("wifiaid", "ct=geo_pick", html_page=True))
+        url = "https://apps.apple.com/us/app/id6790467886?pt=118326163&ct=geo_pick&mt=8"
+        self.assertIs(url, app_install_decision_routes._gw_app_store_url("wifiaid", "6790467886", url))
+        self.assertIsNone(app_install_decision_routes._gw_app_store_url("kumo", "6830824515", None))
+
+    def test_kumo_link_gets_ladder_code(self) -> None:
+        previous = os.environ.get("APP_STORE_PROVIDER_TOKEN")
+        os.environ["APP_STORE_PROVIDER_TOKEN"] = "118326163"
+        try:
+            url = app_install_decision_routes._gw_app_store_url(
+                "kumo", "6830824515",
+                "https://apps.apple.com/de/app/id6830824515?pt=118326163&ct=geo_pick&mt=8",
+            )
+        finally:
+            if previous is None:
+                os.environ.pop("APP_STORE_PROVIDER_TOKEN")
+            else:
+                os.environ["APP_STORE_PROVIDER_TOKEN"] = previous
+        import gw_campaign
+        code = gw_campaign.campaign("kumo", "sr", "de")
+        self.assertEqual(
+            f"https://apps.apple.com/de/app/id6830824515?pt=118326163&ct={code}&mt=8", url,
+        )
+        self.assertEqual([], self.errors(f'<meta name="growth-attribution-group" content="sr"><a href="{url}">x</a>'))
 
 
 if __name__ == "__main__":

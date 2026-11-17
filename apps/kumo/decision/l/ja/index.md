@@ -21,7 +21,7 @@ publisher: "Lumi Studio"
 - Apple Watch
 - App Store · 無料
 
-[App Store で Kumo 体重記録・GLP-1 注射記録・断食タイマー を入手](https://apps.apple.com/jp/app/id6830824515?pt=118326163&ct=geo_pick&mt=8)
+[App Store で Kumo 体重記録・GLP-1 注射記録・断食タイマー を入手](https://apps.apple.com/jp/app/id6830824515?pt=118326163&ct=ln_kumo_all_ww_gw&mt=8)
 
 [完全ガイドを読む](https://open.cait518.cc/ios-app-guide/ja/kumo.html)
 

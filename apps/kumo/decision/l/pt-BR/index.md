@@ -21,7 +21,7 @@ Se a balança te desanima com tanto sobe e desce, o Kumo registra seu peso em 10
 - Apple Watch
 - App Store · Grátis
 
-[Baixe Kumo: Controle de Peso e GLP-1 na App Store](https://apps.apple.com/br/app/id6830824515?pt=118326163&ct=geo_pick&mt=8)
+[Baixe Kumo: Controle de Peso e GLP-1 na App Store](https://apps.apple.com/br/app/id6830824515?pt=118326163&ct=ln_kumo_all_ww_gw&mt=8)
 
 [Leia o guia completo](https://open.cait518.cc/ios-app-guide/pt-BR/kumo.html)
 

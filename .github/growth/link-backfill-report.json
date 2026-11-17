@@ -1,11 +1,11 @@
 {
- "generated": "2026-11-17T03:59:30Z",
+ "generated": "2026-11-17T16:08:39Z",
  "mode": "apply",
  "counts": {
-  "ok_reply": 72,
+  "ok_reply": 73,
   "unknown_app": 48,
-  "ok_backfilled_earlier": 95,
-  "ok_store_only": 635,
+  "ok_backfilled_earlier": 97,
+  "ok_store_only": 633,
   "backfilled": 2,
   "ok_bio_link": 68,
   "ok_caption": 4,
@@ -13,6 +13,18 @@
   "missing": 3
  },
  "rows": [
+  {
+   "channel": "threads",
+   "id": "18149169718603995",
+   "permalink": "https://www.threads.com/@hourstag.app/post/Df2Ah7BnFoF",
+   "date": "2026-11-17",
+   "app": "lumiweather",
+   "status": "ok_reply",
+   "text": "明天（11/18 週三）穿什麼？ 台北 18–27°C 台中 18–27°C 高雄 23–29°C 以台北來說，舒服：短袖或薄長袖，進冷氣房帶一件薄外套。 日夜溫差 9 度，早上出門多帶一件。 台北明天可能下雨，記得帶傘。 #明天穿什麼 #天氣 預報：MET Norway，僅供參",
+   "why": "brand",
+   "ios_id": "6779552704",
+   "locale": "zh-Hant"
+  },
   {
    "channel": "threads",
    "id": "18093815099239314",
@@ -3049,16 +3061,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctiSYekhXQ",
    "date": "2026-08-31",
    "app": "dailymatelite",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "DailyMate Lite: Speak Today 50 Languages, Real Dialogues Practise 8,400 cue-and-reply pairs in 50 languages. Try beginner travel practice fr",
    "why": "url+brand",
    "ios_id": "6794725568",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "18086744354336614",
-   "at": "2026-11-17T03:57:01Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",
@@ -3294,11 +3301,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctiHF1jMoE",
    "date": "2026-08-31",
    "app": "cyca",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "Cyca: Period & Cycle Tracker Ovulation, Calendar & PMS Understand your body, calmly. Track periods, ovulation, fertile window and PMS in a s",
    "why": "url+brand",
    "ios_id": "6782251621",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "18122593133472007",
+   "at": "2026-11-17T16:06:05Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -3542,11 +3554,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctiNDYk2hS",
    "date": "2026-08-31",
    "app": "dailymate",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "DailyMate: Practical Phrases Useful Sentences for Real Life Learn beyond isolated words with 8,400 complete phrases in 47 languages, matchin",
    "why": "url+brand",
    "ios_id": "6790418321",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "18113479922221145",
+   "at": "2026-11-17T16:06:05Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -4126,16 +4143,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctiYWPim3f",
    "date": "2026-08-31",
    "app": "gmoney",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "G+Money: Spending & Budget Budget, Expenses & Currency Two tools in one: track expenses, set a budget, and convert 50+ currencies—at home or",
    "why": "url+brand",
    "ios_id": "6755782939",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "18103393154650395",
-   "at": "2026-11-17T03:57:01Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",

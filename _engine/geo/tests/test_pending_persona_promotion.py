@@ -33,7 +33,8 @@ FORBIDDEN = {
     "dbhalo": ("free sound meter", "osha compliant", "osha-compliant",
                "class 1", "medical-grade", "diagnos", "hearing test"),
     "qrcodehalo": ("detects phishing", "blocks phishing", "protects you from",
-                   "guarantee", "unlimited free", "reputation check"),
+                   "guarantee", "unlimited free", "reputation check",
+                   "three free", "free successful scans"),
     "ledmovingtext": ("typefaces", "100 fonts", "hundred", "haptic",
                       "sound effect"),
     "countdaysnow": ("fully offline", "never leaves", "offline-only",
@@ -65,7 +66,8 @@ FORBIDDEN = {
 }
 REQUIRED = {
     "dbhalo": ("not a certified",),
-    "qrcodehalo": ("three free successful scans", "does not look up link reputation"),
+    # Live 1.0.7 (2026-11-10): scanning is unlimited for everyone, no scan count.
+    "qrcodehalo": ("unlimited for everyone", "does not look up link reputation"),
     "ledmovingtext": ("one saved board", "cannot go beyond"),
     "countdaysnow": ("three active events", "icloud"),
     "gbago": ("contains no games", "not affiliated with"),

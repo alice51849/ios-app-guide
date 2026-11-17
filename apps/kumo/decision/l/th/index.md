@@ -21,7 +21,7 @@ publisher: "Lumi Studio"
 - Apple Watch
 - App Store · ฟรี
 
-[ดาวน์โหลด Kumo: บันทึกน้ำหนัก ลดน้ำหนัก บน App Store](https://apps.apple.com/th/app/id6830824515?pt=118326163&ct=geo_pick&mt=8)
+[ดาวน์โหลด Kumo: บันทึกน้ำหนัก ลดน้ำหนัก บน App Store](https://apps.apple.com/th/app/id6830824515?pt=118326163&ct=ln_kumo_all_ww_gw&mt=8)
 
 [อ่านคู่มือฉบับเต็ม](https://open.cait518.cc/ios-app-guide/th/kumo.html)
 

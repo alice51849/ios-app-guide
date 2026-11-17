@@ -21,7 +21,7 @@ Tu peso sube y baja cada día: Kumo lo anota en 10 segundos y te muestra la tend
 - Apple Watch
 - App Store · Gratis
 
-[Consigue Kumo: Control de peso y GLP-1 en el App Store](https://apps.apple.com/es/app/id6830824515?pt=118326163&ct=geo_pick&mt=8)
+[Consigue Kumo: Control de peso y GLP-1 en el App Store](https://apps.apple.com/es/app/id6830824515?pt=118326163&ct=ln_kumo_all_ww_gw&mt=8)
 
 [Lee la guía completa](https://open.cait518.cc/ios-app-guide/es-ES/kumo.html)
 

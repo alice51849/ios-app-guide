@@ -21,7 +21,7 @@ Veure com la bàscula puja i baixa cada dia desanima: amb Kumo apuntes el pes en
 - Apple Watch
 - App Store · Gratis
 
-[Descarrega Kumo: Control de pes i dejuni a l’App Store](https://apps.apple.com/es/app/id6830824515?pt=118326163&ct=geo_pick&mt=8)
+[Descarrega Kumo: Control de pes i dejuni a l’App Store](https://apps.apple.com/es/app/id6830824515?pt=118326163&ct=ln_kumo_all_ww_gw&mt=8)
 
 [Llegeix la guia completa](https://open.cait518.cc/ios-app-guide/ca/kumo.html)
 

@@ -21,7 +21,7 @@ Váha skáče ze dne na den a snadno to člověka odradí, ale s Kumo ji zapíš
 - Apple Watch
 - App Store · Zdarma
 
-[Stáhněte si Kumo: Hubnutí a sledování váhy v App Storu](https://apps.apple.com/cz/app/id6830824515?pt=118326163&ct=geo_pick&mt=8)
+[Stáhněte si Kumo: Hubnutí a sledování váhy v App Storu](https://apps.apple.com/cz/app/id6830824515?pt=118326163&ct=ln_kumo_all_ww_gw&mt=8)
 
 [Přečtěte si celý průvodce](https://open.cait518.cc/ios-app-guide/cs/kumo.html)
 

@@ -21,7 +21,7 @@ Paino heittelee päivästä toiseen, joten Kumo näyttää 7 päivän keskiarvon
 - Apple Watch
 - App Store · Ilmainen
 
-[Lataa Kumo: Painon seuranta & paasto App Storesta](https://apps.apple.com/fi/app/id6830824515?pt=118326163&ct=geo_pick&mt=8)
+[Lataa Kumo: Painon seuranta & paasto App Storesta](https://apps.apple.com/fi/app/id6830824515?pt=118326163&ct=ln_kumo_all_ww_gw&mt=8)
 
 [Lue koko opas](https://open.cait518.cc/ios-app-guide/fi/kumo.html)
 

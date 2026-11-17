@@ -21,7 +21,7 @@ Váha skáče zo dňa na deň a ľahko to človeka odradí, ale s Kumo ju zapí�
 - Apple Watch
 - App Store · Zadarmo
 
-[Stiahnuť Kumo: Chudnutie a denník váhy v App Store](https://apps.apple.com/sk/app/id6830824515?pt=118326163&ct=geo_pick&mt=8)
+[Stiahnuť Kumo: Chudnutie a denník váhy v App Store](https://apps.apple.com/sk/app/id6830824515?pt=118326163&ct=ln_kumo_all_ww_gw&mt=8)
 
 [Prečítať celý sprievodca](https://open.cait518.cc/ios-app-guide/sk/kumo.html)
 

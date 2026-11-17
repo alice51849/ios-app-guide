@@ -21,7 +21,7 @@ Tehtnica skače gor in dol, zato mnogi obupajo: Kumo iz tehtanja naredi 10-sekun
 - Apple Watch
 - App Store · Brezplačno
 
-[Prenesite Kumo: Hujšanje in dnevnik teže iz trgovine App Store](https://apps.apple.com/si/app/id6830824515?pt=118326163&ct=geo_pick&mt=8)
+[Prenesite Kumo: Hujšanje in dnevnik teže iz trgovine App Store](https://apps.apple.com/si/app/id6830824515?pt=118326163&ct=ln_kumo_all_ww_gw&mt=8)
 
 [Preberite celoten vodnik](https://open.cait518.cc/ios-app-guide/sl-SI/kumo.html)
 

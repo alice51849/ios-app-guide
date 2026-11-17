@@ -21,7 +21,7 @@ publisher: "Lumi Studio"
 - Apple Watch
 - App Store · مجاني
 
-[احصل على Kumo: سجل الوزن، رجيم، تخسيس من App Store](https://apps.apple.com/sa/app/id6830824515?pt=118326163&ct=geo_pick&mt=8)
+[احصل على Kumo: سجل الوزن، رجيم، تخسيس من App Store](https://apps.apple.com/sa/app/id6830824515?pt=118326163&ct=ln_kumo_all_ww_gw&mt=8)
 
 [اقرأ الدليل الكامل](https://open.cait518.cc/ios-app-guide/ar-SA/kumo.html)
 

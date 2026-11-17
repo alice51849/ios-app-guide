@@ -21,7 +21,7 @@ Die Waage springt jeden Tag, und komplizierte Apps gibst du nach einer Woche auf
 - Apple Watch
 - App Store · Kostenlos
 
-[Kumo: Gewicht & GLP-1 Tracker im App Store laden](https://apps.apple.com/de/app/id6830824515?pt=118326163&ct=geo_pick&mt=8)
+[Kumo: Gewicht & GLP-1 Tracker im App Store laden](https://apps.apple.com/de/app/id6830824515?pt=118326163&ct=ln_kumo_all_ww_gw&mt=8)
 
 [Lesen Sie den vollständigen Leitfaden](https://open.cait518.cc/ios-app-guide/de-DE/kumo.html)
 

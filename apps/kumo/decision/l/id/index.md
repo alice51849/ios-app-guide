@@ -21,7 +21,7 @@ Angka timbangan naik-turun tiap hari dan bikin semangat hilang? Dengan Kumo, men
 - Apple Watch
 - App Store · Gratis
 
-[Dapatkan Kumo: Catatan Berat Badan di App Store](https://apps.apple.com/id/app/id6830824515?pt=118326163&ct=geo_pick&mt=8)
+[Dapatkan Kumo: Catatan Berat Badan di App Store](https://apps.apple.com/id/app/id6830824515?pt=118326163&ct=ln_kumo_all_ww_gw&mt=8)
 
 [Baca panduan lengkap](https://open.cait518.cc/ios-app-guide/id/kumo.html)
 

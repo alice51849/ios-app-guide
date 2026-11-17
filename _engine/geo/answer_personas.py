@@ -5538,6 +5538,190 @@ PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
             ],
         },
     ],
+    # JellyDay (61_JellyDay, App Store: "JellyDay: Visual Daily Planner",
+    # Apple ID 6835673714) is pre-publication. Claims here are held to what
+    # version 1.0 does: a Today timeline where each task is a pastel jelly
+    # block whose height follows its duration, with a "now" line; adding a task
+    # with a name, sticker, start time, duration (5 minutes to 2 hours) and
+    # colour, or parking it in an inbox for later; long-press and drag to a new
+    # time in 5-minute steps; a "..." menu to push things back 15 minutes or
+    # move them to tomorrow; bringing yesterday's routine to today; 12 routine
+    # templates (some free) that lay a whole sequence into today; a focus
+    # countdown with a shrinking pie, pause/resume/done and step-by-step
+    # routines; Live Activity and Dynamic Island during focus; start and
+    # ending-soon reminders (can be turned off) and an AlarmKit alarm only
+    # during a focus countdown the user started; Home Screen widgets (small,
+    # medium) and Lock Screen widgets (circular, rectangular, inline); a jelly
+    # bounce animation without sound or haptics; 50 languages following the
+    # system language. No account, no ads, no tracking, data on the device. A
+    # one-time in-app purchase adds repeating routines, all 12 templates, all
+    # 60 stickers, large and extra-large timeline widgets, a StandBy countdown
+    # widget, tap-to-complete on Home Screen widgets and Family Sharing of the
+    # purchase; there is no subscription. It has NO iCloud sync, Apple Watch
+    # app, Control Center button, colour themes, dark mode, custom saved
+    # templates or share cards. No price figures, no trial, no medical claims,
+    # and the main screen is a timeline, never described as a to-do list.
+    "jellyday": [
+        {
+            "query": "visual daily planner app with a timeline on iphone",
+            "guide_title": "A visual daily planner with a timeline: what to check",
+            "triggers": [
+                "visual daily planner",
+                "visual planner app",
+                "daily timeline planner",
+                "time blocking app iphone",
+                "visual schedule app",
+                "day planner with time blocks",
+            ],
+            "persona": "people who plan the day by time and want to see how long each thing takes, at a glance",
+            "lead": (
+                "A plain list says what to do today but not when, or how much "
+                "of the day each thing will take, so the afternoon quietly "
+                "runs out."
+            ),
+            "paras": [
+                (
+                    "Look for a planner that lays the day out as a timeline. "
+                    "When every item is a block that gets taller the longer it "
+                    "lasts, a crowded morning is obvious before it starts. "
+                    "JellyDay draws each task as a pastel jelly block, shows a "
+                    "\"now\" line for the current moment, and lets you set a "
+                    "duration from 5 minutes to 2 hours."
+                ),
+                (
+                    "Then check what happens when the day changes, because it "
+                    "always does. Long-press a block and drag it to a new time "
+                    "in 5-minute steps, push it back 15 minutes from the "
+                    "\"...\" menu, or move it to tomorrow. A task you have no "
+                    "time for yet can wait in the inbox instead of cluttering "
+                    "today. The plan stays on your device, with no account and "
+                    "no ads."
+                ),
+            ],
+            "look": [
+                "A Today timeline where block height follows how long each task lasts.",
+                "A \"now\" line that shows where you are in the day.",
+                "Drag a block to a new time in 5-minute steps.",
+                "Push back by 15 minutes or move to tomorrow from one menu.",
+                "No account, no advertising and no tracking; data stays on your device.",
+            ],
+            "steps": [
+                "Add a task with a name, a sticker, a start time, a duration and a colour.",
+                "Put tasks you cannot place yet in the inbox and schedule them later.",
+                "Watch the \"now\" line move through the timeline as the day goes.",
+                "Long-press a block and drag it when the plan changes.",
+                "Use the \"...\" menu to push the rest of today back 15 minutes or move a task to tomorrow.",
+            ],
+            "fits": (
+                "fits people who want to see the shape of their day instead of "
+                "a list. The download includes the Today timeline, the focus "
+                "countdown, widgets and several routine templates; a single "
+                "one-time in-app purchase adds repeating routines, all 12 "
+                "templates, all 60 stickers and more widgets. JellyDay is a "
+                "planning tool, not a medical device, and does not give "
+                "medical advice."
+            ),
+            "faq": [
+                {
+                    "q": "Is there a limit on how many tasks I can add?",
+                    "a": "No. The number of tasks per day is not limited.",
+                },
+                {
+                    "q": "Do I need an account?",
+                    "a": "No. There is no account, no advertising and no tracking. Your plan is stored on your device.",
+                },
+                {
+                    "q": "Is there a subscription?",
+                    "a": "No. There is a single one-time in-app purchase that unlocks repeating routines, all routine templates, all stickers and more widgets.",
+                },
+                {
+                    "q": "Does it sync between my devices?",
+                    "a": "Not in version 1.0. Your plan is stored on the device you use it on.",
+                },
+            ],
+        },
+        {
+            "query": "routine planner app with step by step countdown and widgets iphone",
+            "guide_title": "A routine planner with a focus countdown and widgets: what to check",
+            "triggers": [
+                "routine planner app",
+                "morning routine planner",
+                "bedtime routine app",
+                "focus countdown live activity",
+                "daily routine templates",
+                "lock screen widget planner",
+            ],
+            "persona": "people who build their day around routines such as mornings and bedtimes and want a gentle countdown that walks them through each step",
+            "lead": (
+                "A routine is only useful if it is easy to start and easy to "
+                "follow, and typing the same morning steps in again every day "
+                "is how routines get dropped."
+            ),
+            "paras": [
+                (
+                    "Look for a planner with ready-made routines. JellyDay has "
+                    "12 routine templates, including morning and bedtime, that "
+                    "place a whole series of steps into today with one tap, and "
+                    "a button to bring yesterday's routine over to today. "
+                    "Starting a routine opens a focus countdown that takes you "
+                    "through one step at a time, each with its own timer, with "
+                    "pause, resume and done."
+                ),
+                (
+                    "Check how the countdown shows up outside the app. During "
+                    "focus, the remaining time appears in a Live Activity and "
+                    "the Dynamic Island, and Home Screen and Lock Screen "
+                    "widgets show what you are doing now and what comes next. "
+                    "Reminders for the start and for the last minutes can be "
+                    "turned off in Settings, and a focus alarm only rings "
+                    "during a countdown you started yourself."
+                ),
+            ],
+            "look": [
+                "Routine templates that place a whole sequence of steps into today at once.",
+                "A countdown with a shrinking pie that goes through the routine one step at a time.",
+                "Live Activity and Dynamic Island while a focus countdown runs.",
+                "Home Screen widgets for what is now and what is next, and Lock Screen widgets for the countdown.",
+                "Reminders you can switch off, and no sound or vibration effects.",
+            ],
+            "steps": [
+                "Open the routine templates and pick one, such as a morning or bedtime routine.",
+                "Add it to today and adjust a start time or a colour if you like.",
+                "Start the focus countdown and follow the steps one at a time.",
+                "Add the Home Screen or Lock Screen widget to see the current step and the next one.",
+                "Use the button that brings yesterday's routine to today when the day looks the same.",
+            ],
+            "fits": (
+                "fits people who run the day on routines and like a countdown "
+                "that guides each step. Some templates, such as morning and "
+                "bedtime, are included with the download; a single one-time "
+                "in-app purchase unlocks all 12 templates, repeating "
+                "routines that appear every day, on weekdays or on days you "
+                "choose, large timeline widgets, a StandBy countdown widget "
+                "and tap-to-complete on Home Screen widgets. JellyDay is a "
+                "planning tool, not a medical device, and does not give "
+                "medical advice."
+            ),
+            "faq": [
+                {
+                    "q": "Can I make a routine repeat every day?",
+                    "a": "Yes. Repeating routines, every day, on weekdays or on the days you choose, are part of the one-time in-app purchase.",
+                },
+                {
+                    "q": "Does the focus countdown show on the Lock Screen?",
+                    "a": "Yes. The remaining time is shown in a Live Activity and the Dynamic Island, and Lock Screen widgets show the countdown and the next task.",
+                },
+                {
+                    "q": "Will an alarm go off when I did not ask for one?",
+                    "a": "No. The alarm only rings during a focus countdown that you started yourself, and start and ending-soon reminders can be turned off in Settings.",
+                },
+                {
+                    "q": "Does it use my data or show ads?",
+                    "a": "No. There is no account, no advertising and no tracking, and the app makes no network connections of its own; purchases go through the App Store.",
+                },
+            ],
+        },
+    ],
 }
 
 # Zipbox has entered the canonical live roster; its reviewed pre-publication

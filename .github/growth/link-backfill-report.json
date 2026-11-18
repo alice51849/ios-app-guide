@@ -1,11 +1,11 @@
 {
- "generated": "2026-11-18T11:51:48Z",
+ "generated": "2026-11-18T20:40:02Z",
  "mode": "apply",
  "counts": {
-  "ok_reply": 74,
+  "ok_reply": 76,
   "unknown_app": 48,
-  "ok_backfilled_earlier": 101,
-  "ok_store_only": 629,
+  "ok_backfilled_earlier": 103,
+  "ok_store_only": 627,
   "backfilled": 2,
   "ok_bio_link": 68,
   "ok_caption": 4,
@@ -13,6 +13,30 @@
   "missing": 3
  },
  "rows": [
+  {
+   "channel": "threads",
+   "id": "18133861984830390",
+   "permalink": "https://www.threads.com/@hourstag.app/post/Df45tY7ktWw",
+   "date": "2026-11-18",
+   "app": "tripbeecute",
+   "status": "ok_reply",
+   "text": "可爱插画手帐, 出发倒计时, 行李清单, AA分账。 周末小旅行、出国自由行、闺蜜旅行、家庭出游都适合。 TripBee Cute：旅行计划手账本",
+   "why": "brand",
+   "ios_id": "6826987407",
+   "locale": "zh-Hant"
+  },
+  {
+   "channel": "threads",
+   "id": "18046458110835470",
+   "permalink": "https://www.threads.com/@hourstag.app/post/Df4lUnxloZI",
+   "date": "2026-11-18",
+   "app": "lumiweather",
+   "status": "ok_reply",
+   "text": "明天（11/19 週四）穿什麼？ 台北 14–19°C 台中 16–21°C 高雄 21–27°C 以台北來說，早晚涼：長袖＋薄外套，洋蔥式穿法方便調整。 #明天穿什麼 #天氣 預報：MET Norway，僅供參考，出門前以實際天氣為準。 我做的 Lumi天氣星球 會把體感溫度、",
+   "why": "brand",
+   "ios_id": "6779552704",
+   "locale": "zh-Hant"
+  },
   {
    "channel": "threads",
    "id": "17902077990610741",
@@ -1853,11 +1877,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DcthcDvFKFT",
    "date": "2026-08-31",
    "app": "lumibopomofopro",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "Lumi Bopomofo Pro: Zhuyin Zhuyin Phonics Game for Kids The complete Zhuyin world for kids. Every phonics, tracing, and tone-game adventure i",
    "why": "url+brand",
    "ios_id": "6775773117",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "18650327551049698",
+   "at": "2026-11-18T20:37:20Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -2787,11 +2816,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DcthkEoAuUP",
    "date": "2026-08-31",
    "app": "lumibopomofo",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "Lumi Bopomofo Zhuyin: Chinese Phonics Fun The joyful way to learn Zhuyin. Playful phonics, tracing, and tone games kids love — no ads, no su",
    "why": "url+brand",
    "ios_id": "6773017109",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "18048942419824478",
+   "at": "2026-11-18T20:37:20Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -3585,16 +3619,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DcthwTYjo14",
    "date": "2026-08-31",
    "app": "aim990",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "Aim990 Your TOEIC Coach Unlock your potential with Aim990! Achieve your TOEIC goals with daily practice and personalized study plans. 👉 App ",
    "why": "url+brand",
    "ios_id": "6784974530",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "18169824361490912",
-   "at": "2026-11-18T11:49:19Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",
@@ -4126,16 +4155,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DcthqJriJPa",
    "date": "2026-08-31",
    "app": "aibriefpack",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "AI Brief: AI Prompt from Files Files to Clear Context Bring screenshots, documents, and notes together. Keep the facts. Review private detai",
    "why": "url+brand",
    "ios_id": "6791658210",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "18079033202581552",
-   "at": "2026-11-18T11:49:19Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-18T17:04:51Z",
+  "updated_at": "2026-11-18T17:10:35Z",
   "note": "Planned by 00_GrowthEngine shorts/scripts/schedule_posts.py; each clip at most once per channel.",
   "clips": {
     "countdaysnow/en": {
@@ -12,10 +12,9 @@
       "search": "CountDaysNow",
       "tags": [
         "#EventCounter",
-        "#Days",
-        "#Until",
-        "#Since",
-        "#Birthday",
+        "#CountdownPlan",
+        "#WorkBackwards",
+        "#LockScreen",
         "#CountDaysNow"
       ],
       "keywords": [
@@ -66,7 +65,6 @@
         "#生日",
         "#還有幾天",
         "#農曆",
-        "#鎖定畫面",
         "#CountDaysNow"
       ],
       "keywords": [
@@ -75,7 +73,7 @@
         "還有幾天",
         "農曆",
         "鎖定畫面",
-        "小工具"
+        "戀愛紀念"
       ],
       "keyline": "倒數日・倒數小工具・紀念日・每日焦點",
       "compliance": {
@@ -88,18 +86,18 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "媽媽生日 還有幾天？",
-          "benefit": "已經過了幾天 也幫你數著"
+          "lead": "媽媽生日，還有幾天？",
+          "benefit": "已經過了幾天，也幫你數著"
         },
         {
           "id": "b",
-          "lead": "已經過了幾天 也幫你數著",
-          "benefit": "前 7、3、1 天 提醒你"
+          "lead": "已經過了幾天，也幫你數著",
+          "benefit": "前 7、3、1 天，提醒你"
         },
         {
           "id": "c",
           "lead": "100 款倒數外觀",
-          "benefit": "已經過了幾天 也幫你數著"
+          "benefit": "已經過了幾天，也幫你數著"
         }
       ],
       "hook_best": "b"
@@ -116,7 +114,6 @@
         "#経過日数",
         "#日数計算",
         "#誕生日",
-        "#ウィジェット",
         "#ロック画面",
         "#CountDaysNow"
       ],
@@ -124,9 +121,9 @@
         "経過日数",
         "日数計算",
         "誕生日",
-        "ウィジェット",
         "ロック画面",
-        "推し活"
+        "推し活",
+        "受験"
       ],
       "keyline": "カウントダウン・あと何日・記念日・今日のフォーカス",
       "compliance": {
@@ -139,18 +136,18 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "母の誕生日まで あと何日だっけ？",
-          "benefit": "あれから何日かも ひと目で"
+          "lead": "母の誕生日まで、あと何日だっけ？",
+          "benefit": "あれから何日かも、ひと目で"
         },
         {
           "id": "b",
-          "lead": "あれから何日かも ひと目で",
-          "benefit": "7日・3日・1日前に お知らせ"
+          "lead": "あれから何日かも、ひと目で",
+          "benefit": "7日・3日・1日前に、お知らせ"
         },
         {
           "id": "c",
           "lead": "スキン100種類",
-          "benefit": "あれから何日かも ひと目で"
+          "benefit": "あれから何日かも、ひと目で"
         }
       ],
       "hook_best": "b"
@@ -168,7 +165,6 @@
         "#디데이",
         "#카운트다운",
         "#날짜계산",
-        "#기념일",
         "#CountDaysNow"
       ],
       "keywords": [
@@ -216,10 +212,9 @@
       "search": "Unblurry Pro",
       "tags": [
         "#UnblurHD",
-        "#Image",
-        "#Picture",
-        "#Sharpen",
-        "#Clear",
+        "#PhotoEnhancer",
+        "#FixBlurry",
+        "#SuperResolution",
         "#UnblurryPro"
       ],
       "keywords": [
@@ -270,7 +265,6 @@
         "#去模糊",
         "#模糊變清晰",
         "#模糊照片修復",
-        "#照片銳化",
         "#Unblurry照片變清晰"
       ],
       "keywords": [
@@ -298,7 +292,7 @@
         {
           "id": "b",
           "lead": "挑一張模糊照片",
-          "benefit": "AI 修復 全在手機完成"
+          "benefit": "AI 修復，全在手機完成"
         },
         {
           "id": "c",
@@ -321,7 +315,6 @@
         "#鮮明化",
         "#ぼかし除去",
         "#画像",
-        "#修復",
         "#Unblurry写真高画質化"
       ],
       "keywords": [
@@ -343,18 +336,18 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "ぼやけた写真を くっきり補正",
-          "benefit": "ぼやけた1枚を 選んで"
+          "lead": "ぼやけた写真を、くっきり補正",
+          "benefit": "ぼやけた1枚を、選んで"
         },
         {
           "id": "b",
-          "lead": "ぼやけた1枚を 選んで",
+          "lead": "ぼやけた1枚を、選んで",
           "benefit": "AIが端末内で補正"
         },
         {
           "id": "c",
-          "lead": "長押しで 元画像を確認",
-          "benefit": "ぼやけた1枚を 選んで"
+          "lead": "長押しで、元画像を確認",
+          "benefit": "ぼやけた1枚を、選んで"
         }
       ],
       "hook_best": "b"
@@ -372,7 +365,6 @@
         "#흐림보정",
         "#흐림제거",
         "#확대",
-        "#노이즈",
         "#Unblurry사진선명하게"
       ],
       "keywords": [
@@ -420,10 +412,9 @@
       "search": "Unblurry Pro",
       "tags": [
         "#SkarpeFotos",
+        "#GendanGamleBilleder",
         "#GørFotoSkarpt",
         "#SløretFoto",
-        "#FjernSløring",
-        "#ForbedrFoto",
         "#UnblurryPro"
       ],
       "keywords": [
@@ -471,10 +462,8 @@
       "search": "Unblurry Pro",
       "tags": [
         "#ScherpeFoto",
-        "#Verscherpen",
-        "#Onscherp",
-        "#Verbeteren",
-        "#Enhancer",
+        "#OudeFotosHerstellen",
+        "#Fotos",
         "#UnblurryPro"
       ],
       "keywords": [
@@ -522,10 +511,9 @@
       "search": "Unblurry Pro",
       "tags": [
         "#SkarpeFoto",
+        "#GjenopprettGamleBilder",
         "#GjørBildeSkarpt",
         "#UklartBilde",
-        "#FjernUskarphet",
-        "#ForbedreBilde",
         "#UnblurryPro"
       ],
       "keywords": [
@@ -573,10 +561,8 @@
       "search": "Unblurry Pro",
       "tags": [
         "#FotoNítida",
-        "#Borrada",
-        "#Melhorar",
+        "#RestaurarFotosAntigas",
         "#PhotoEnhancer",
-        "#Qualidade",
         "#UnblurryPro"
       ],
       "keywords": [
@@ -624,10 +610,8 @@
       "search": "Lumi Mission Planet",
       "tags": [
         "#RewardChart",
-        "#Star",
-        "#Behavior",
-        "#Toddler",
-        "#Motivation",
+        "#KidsChores",
+        "#StickerBoard",
         "#LumiMissionPlanet"
       ],
       "keywords": [
@@ -678,7 +662,6 @@
         "#集點卡",
         "#集星星",
         "#好寶寶",
-        "#刷牙",
         "#Lumi任務星球"
       ],
       "keywords": [
@@ -700,18 +683,18 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "叫孩子刷牙 天天像打仗？",
-          "benefit": "孩子點一下 夥伴就歡呼"
+          "lead": "叫孩子刷牙，天天像打仗？",
+          "benefit": "孩子點一下，夥伴就歡呼"
         },
         {
           "id": "b",
-          "lead": "孩子點一下 夥伴就歡呼",
-          "benefit": "完成就有 勝利卡片"
+          "lead": "孩子點一下，夥伴就歡呼",
+          "benefit": "完成就有，勝利卡片"
         },
         {
           "id": "c",
           "lead": "收集成就貼紙",
-          "benefit": "孩子點一下 夥伴就歡呼"
+          "benefit": "孩子點一下，夥伴就歡呼"
         }
       ],
       "hook_best": "b"
@@ -729,7 +712,6 @@
         "#スタンプ",
         "#ほめる",
         "#やる気",
-        "#偏食",
         "#Lumiミッション星"
       ],
       "keywords": [
@@ -751,18 +733,18 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "はみがきが 毎日バトル？",
-          "benefit": "タップすると 相棒が大よろこび"
+          "lead": "はみがきが、毎日バトル？",
+          "benefit": "タップすると、相棒が大よろこび"
         },
         {
           "id": "b",
-          "lead": "タップすると 相棒が大よろこび",
-          "benefit": "できたら 記念カード"
+          "lead": "タップすると、相棒が大よろこび",
+          "benefit": "できたら、記念カード"
         },
         {
           "id": "c",
-          "lead": "ごほうびシールを あつめよう",
-          "benefit": "タップすると 相棒が大よろこび"
+          "lead": "ごほうびシールを、あつめよう",
+          "benefit": "タップすると、相棒が大よろこび"
         }
       ],
       "hook_best": "b"
@@ -780,7 +762,6 @@
         "#참잘했어요",
         "#양치",
         "#편식",
-        "#밥먹기",
         "#Lumi미션별"
       ],
       "keywords": [
@@ -827,11 +808,9 @@
       "name": "Lumi Πλανήτης Αποστολών",
       "search": "Lumi Mission Planet",
       "tags": [
-        "#αυτοκόλλητα",
-        "#αστεράκια",
-        "#επιβράβευση",
-        "#ρουτίνα",
-        "#νήπιο",
+        "#Πίνακαςανταμοιβήςπαιδιών",
+        "#Lumi",
+        "#Πλανήτης",
         "#LumiMissionPlanet"
       ],
       "keywords": [
@@ -878,11 +857,10 @@
       "name": "Lumi كوكب المهام",
       "search": "Lumi Mission Planet",
       "tags": [
-        "#روتين",
-        "#نجوم",
-        "#تحفيز",
-        "#سلوك",
-        "#عادات",
+        "#جدولالمكافآتوالملصقاتللطفل",
+        "#تنظيفالأسنان",
+        "#ترتيبالألعاب",
+        "#وقتالنوم",
         "#LumiMissionPlanet"
       ],
       "keywords": [
@@ -930,10 +908,8 @@
       "search": "Snapport Lite",
       "tags": [
         "#IDPhotoSizes",
-        "#Headshot",
-        "#White",
-        "#Print",
-        "#China",
+        "#Crop",
+        "#Portraits",
         "#SnapportLite"
       ],
       "keywords": [
@@ -984,7 +960,6 @@
         "#護照照片",
         "#簽證照片",
         "#背景移除",
-        "#相片沖印",
         "#SnapportLite"
       ],
       "keywords": [
@@ -1007,17 +982,17 @@
         {
           "id": "a",
           "lead": "要拍證件照？在家自己拍",
-          "benefit": "內建 35 種 尺寸範本"
+          "benefit": "內建 35 種，尺寸範本"
         },
         {
           "id": "b",
-          "lead": "內建 35 種 尺寸範本",
-          "benefit": "背景換成 乾淨純色"
+          "lead": "內建 35 種，尺寸範本",
+          "benefit": "背景換成，乾淨純色"
         },
         {
           "id": "c",
-          "lead": "照片只留在 你的 iPhone",
-          "benefit": "內建 35 種 尺寸範本"
+          "lead": "照片只留在，你的 iPhone",
+          "benefit": "內建 35 種，尺寸範本"
         }
       ],
       "hook_best": "b"
@@ -1035,7 +1010,6 @@
         "#就活写真",
         "#加工",
         "#パスポート用写真",
-        "#履歴書",
         "#SnapportLite"
       ],
       "keywords": [
@@ -1058,17 +1032,17 @@
         {
           "id": "a",
           "lead": "証明写真、おうちで撮ろう",
-          "benefit": "35種類の サイズを内蔵"
+          "benefit": "35種類の、サイズを内蔵"
         },
         {
           "id": "b",
-          "lead": "35種類の サイズを内蔵",
-          "benefit": "背景も すっきり無地に"
+          "lead": "35種類の、サイズを内蔵",
+          "benefit": "背景も、すっきり無地に"
         },
         {
           "id": "c",
-          "lead": "写真はiPhoneに保存 アップロードなし",
-          "benefit": "35種類の サイズを内蔵"
+          "lead": "写真はiPhoneに保存、アップロードなし",
+          "benefit": "35種類の、サイズを内蔵"
         }
       ],
       "hook_best": "b"
@@ -1086,7 +1060,6 @@
         "#반명함",
         "#여권용사진",
         "#취업사진",
-        "#프로필",
         "#SnapportLite"
       ],
       "keywords": [
@@ -1134,10 +1107,9 @@
       "search": "Snapport Lite",
       "tags": [
         "#UkuranPasfoto",
+        "#PotretPresisiSesuaiUkuran",
         "#PasFoto",
         "#BackgroundMerah",
-        "#BackgroundBiru",
-        "#GantiBackground",
         "#SnapportLite"
       ],
       "keywords": [
@@ -1188,7 +1160,6 @@
         "#chụpảnhthẻ",
         "#ảnhhộchiếu",
         "#nềntrắng",
-        "#chỉnhảnh",
         "#SnapportLite"
       ],
       "keywords": [
@@ -1236,8 +1207,7 @@
       "search": "Snapport Lite",
       "tags": [
         "#FotoNaDoklady",
-        "#Průkazovka",
-        "#Oříznutí",
+        "#PortrétyVPřesnémRozměru",
         "#VelikostFotky",
         "#BíléPozadí",
         "#SnapportLite"
@@ -1287,10 +1257,8 @@
       "search": "G+Money Lite",
       "tags": [
         "#TravelBudget",
-        "#Converter",
-        "#Exchange",
-        "#Rate",
-        "#Abroad",
+        "#VacationBudgetPlanner",
+        "#DailyLimit",
         "#GMoneyLite"
       ],
       "keywords": [
@@ -1341,7 +1309,6 @@
         "#記帳本",
         "#開銷",
         "#記帳軟體",
-        "#花費",
         "#GMoneyLite旅行記帳"
       ],
       "keywords": [
@@ -1363,18 +1330,18 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "出國玩到一半 預算就爆了？",
-          "benefit": "日幣記一筆 台幣馬上出來"
+          "lead": "出國玩到一半，預算就爆了？",
+          "benefit": "日幣記一筆，台幣馬上出來"
         },
         {
           "id": "b",
-          "lead": "日幣記一筆 台幣馬上出來",
-          "benefit": "整趟花多少 一眼看清"
+          "lead": "日幣記一筆，台幣馬上出來",
+          "benefit": "整趟花多少，一眼看清"
         },
         {
           "id": "c",
-          "lead": "今天還能花多少 隨時知道",
-          "benefit": "日幣記一筆 台幣馬上出來"
+          "lead": "今天還能花多少，隨時知道",
+          "benefit": "日幣記一筆，台幣馬上出來"
         }
       ],
       "hook_best": "b"
@@ -1392,7 +1359,6 @@
         "#支出",
         "#小遣い",
         "#クイック入力",
-        "#手首",
         "#GMoneyLite旅の家計簿"
       ],
       "keywords": [
@@ -1414,18 +1380,18 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "旅行中なのに、もう 予算オーバー？",
-          "benefit": "現地通貨で記録 自国通貨に即換算"
+          "lead": "旅行中なのに、もう、予算オーバー？",
+          "benefit": "現地通貨で記録、自国通貨に即換算"
         },
         {
           "id": "b",
-          "lead": "現地通貨で記録 自国通貨に即換算",
-          "benefit": "旅の合計が ひと目でわかる"
+          "lead": "現地通貨で記録、自国通貨に即換算",
+          "benefit": "旅の合計が、ひと目でわかる"
         },
         {
           "id": "c",
           "lead": "今日あといくら？すぐわかる",
-          "benefit": "現地通貨で記録 自国通貨に即換算"
+          "benefit": "現地通貨で記録、自国通貨に即換算"
         }
       ],
       "hook_best": "b"
@@ -1443,7 +1409,6 @@
         "#지출",
         "#용돈",
         "#한도",
-        "#빠른기록",
         "#GMoneyLite여행가계부"
       ],
       "keywords": [
@@ -1491,10 +1456,9 @@
       "search": "LockHour Pro Block Apps",
       "tags": [
         "#BlockApps",
-        "#Focus",
-        "#Timer",
-        "#Pomodoro",
-        "#Study",
+        "#AppBlocker",
+        "#ScreenTime",
+        "#DeepWork",
         "#LockHourProBlockApps"
       ],
       "keywords": [
@@ -1545,7 +1509,6 @@
         "#番茄鐘",
         "#專注力",
         "#讀書計時",
-        "#自律",
         "#LockHourPro封鎖App"
       ],
       "keywords": [
@@ -1567,18 +1530,18 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "手機 滑不停？",
-          "benefit": "一鍵鎖住 分心 App"
+          "lead": "手機，滑不停？",
+          "benefit": "一鍵鎖住，分心 App"
         },
         {
           "id": "b",
-          "lead": "一鍵鎖住 分心 App",
-          "benefit": "時間到 自動解鎖"
+          "lead": "一鍵鎖住，分心 App",
+          "benefit": "時間到，自動解鎖"
         },
         {
           "id": "c",
           "lead": "奪回你的時間",
-          "benefit": "一鍵鎖住 分心 App"
+          "benefit": "一鍵鎖住，分心 App"
         }
       ],
       "hook_best": "b"
@@ -1596,7 +1559,6 @@
         "#スクリーンタイム",
         "#ポモドーロ",
         "#勉強タイマー",
-        "#ロック",
         "#LockHourProアプリ制限"
       ],
       "keywords": [
@@ -1618,18 +1580,18 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "ついスマホ 見ちゃう？",
-          "benefit": "ワンタップで アプリをロック"
+          "lead": "ついスマホ、見ちゃう？",
+          "benefit": "ワンタップで、アプリをロック"
         },
         {
           "id": "b",
-          "lead": "ワンタップで アプリをロック",
-          "benefit": "時間が来たら 自動で解除"
+          "lead": "ワンタップで、アプリをロック",
+          "benefit": "時間が来たら、自動で解除"
         },
         {
           "id": "c",
           "lead": "時間を取り戻す",
-          "benefit": "ワンタップで アプリをロック"
+          "benefit": "ワンタップで、アプリをロック"
         }
       ],
       "hook_best": "b"
@@ -1647,7 +1609,6 @@
         "#스크린타임",
         "#뽀모도로",
         "#방지",
-        "#제한",
         "#LockHourPro앱차단"
       ],
       "keywords": [
@@ -1695,10 +1656,8 @@
       "search": "Lumi Bopomofo",
       "tags": [
         "#LearnZhuyin",
-        "#Mandarin",
-        "#Symbols",
-        "#Taiwanese",
-        "#Traditional",
+        "#StrokeOrder",
+        "#Chinese",
         "#LumiBopomofo"
       ],
       "keywords": [
@@ -1750,7 +1709,6 @@
         "#注音符號",
         "#學注音",
         "#注音練習",
-        "#台灣注音",
         "#Lumi注音星球"
       ],
       "keywords": [
@@ -1773,18 +1731,18 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "注音 原來這麼好玩！",
-          "benefit": "聽聲音 選出正確的注音"
+          "lead": "注音，原來這麼好玩！",
+          "benefit": "聽聲音，選出正確的注音"
         },
         {
           "id": "b",
-          "lead": "聽聲音 選出正確的注音",
-          "benefit": "用手指 描出筆順"
+          "lead": "聽聲音，選出正確的注音",
+          "benefit": "用手指，描出筆順"
         },
         {
           "id": "c",
-          "lead": "37 個注音小夥伴 等你收集",
-          "benefit": "聽聲音 選出正確的注音"
+          "lead": "37 個注音小夥伴，等你收集",
+          "benefit": "聽聲音，選出正確的注音"
         }
       ],
       "hook_best": "c"
@@ -1802,7 +1760,6 @@
         "#華語",
         "#北京語",
         "#台湾",
-        "#声調",
         "#Lumiボポモフォ"
       ],
       "keywords": [
@@ -1825,18 +1782,18 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "注音符号を ゲームで学ぼう",
-          "benefit": "音を聞いて 正しい記号を選ぶ"
+          "lead": "注音符号を、ゲームで学ぼう",
+          "benefit": "音を聞いて、正しい記号を選ぶ"
         },
         {
           "id": "b",
-          "lead": "音を聞いて 正しい記号を選ぶ",
-          "benefit": "指でなぞって 筆順を覚える"
+          "lead": "音を聞いて、正しい記号を選ぶ",
+          "benefit": "指でなぞって、筆順を覚える"
         },
         {
           "id": "c",
-          "lead": "37の仲間を 集めよう",
-          "benefit": "音を聞いて 正しい記号を選ぶ"
+          "lead": "37の仲間を、集めよう",
+          "benefit": "音を聞いて、正しい記号を選ぶ"
         }
       ],
       "hook_best": "b"
@@ -1854,7 +1811,6 @@
         "#성조",
         "#사성",
         "#어린이중국어",
-        "#유아중국어",
         "#Lumi보포모포"
       ],
       "keywords": [
@@ -1902,11 +1858,10 @@
       "name": "Lumi Bopomofo",
       "search": "Lumi Bopomofo",
       "tags": [
-        "#học",
+        "#tiếngTrungchobé",
         "#tiếnghoa",
         "#phồnthể",
         "#ĐàiLoan",
-        "#luyệnviết",
         "#LumiBopomofo"
       ],
       "keywords": [
@@ -1955,10 +1910,8 @@
       "search": "Aim990",
       "tags": [
         "#FixEnglishWeakSpots",
-        "#Grammar",
-        "#Listening",
-        "#Reading",
-        "#Vocabulary",
+        "#TOEIC",
+        "#Diagnosis",
         "#Aim990"
       ],
       "keywords": [
@@ -2009,7 +1962,6 @@
         "#單字",
         "#背單字",
         "#練習",
-        "#考試",
         "#Aim990"
       ],
       "keywords": [
@@ -2031,18 +1983,18 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "8 分鐘 找出你的多益弱點",
-          "benefit": "依你的弱點 排好 30 天計畫"
+          "lead": "8 分鐘，找出你的多益弱點",
+          "benefit": "依你的弱點，排好 30 天計畫"
         },
         {
           "id": "b",
-          "lead": "依你的弱點 排好 30 天計畫",
-          "benefit": "看懂 每一個錯誤"
+          "lead": "依你的弱點，排好 30 天計畫",
+          "benefit": "看懂，每一個錯誤"
         },
         {
           "id": "c",
-          "lead": "模考後 預估分數區間",
-          "benefit": "依你的弱點 排好 30 天計畫"
+          "lead": "模考後，預估分數區間",
+          "benefit": "依你的弱點，排好 30 天計畫"
         }
       ],
       "hook_best": "b"
@@ -2060,7 +2012,6 @@
         "#リスニング",
         "#聞き取り",
         "#シャドーイング",
-        "#単語",
         "#Aim990"
       ],
       "keywords": [
@@ -2088,11 +2039,11 @@
         {
           "id": "b",
           "lead": "弱点に合わせた 30日プラン",
-          "benefit": "間違いの理由が すべてわかる"
+          "benefit": "間違いの理由が、すべてわかる"
         },
         {
           "id": "c",
-          "lead": "模試で スコアの目安も",
+          "lead": "模試で、スコアの目安も",
           "benefit": "弱点に合わせた 30日プラン"
         }
       ],
@@ -2111,7 +2062,6 @@
         "#벼락치기",
         "#독해",
         "#받아쓰기",
-        "#청취",
         "#Aim990"
       ],
       "keywords": [
@@ -2160,9 +2110,8 @@
       "tags": [
         "#GiasưtiếngAnh",
         "#ngữpháp",
-        "#Nghe",
-        "#đọc",
         "#từvựng",
+        "#chínhtả",
         "#Aim990"
       ],
       "keywords": [
@@ -2210,10 +2159,8 @@
       "search": "Aim990",
       "tags": [
         "#PelatihInggris",
+        "#DiagnosisTOEIC8Menit",
         "#Grammar",
-        "#Listening",
-        "#Membaca",
-        "#Kosakata",
         "#Aim990"
       ],
       "keywords": [
@@ -2261,10 +2208,8 @@
       "search": "CalDaily Calculator",
       "tags": [
         "#CalculatorThemes",
-        "#Percent",
-        "#Cute",
-        "#Split",
-        "#Bill",
+        "#CuteWidget",
+        "#Discount",
         "#CalDailyCalculator"
       ],
       "keywords": [
@@ -2315,7 +2260,6 @@
         "#分帳",
         "#本金",
         "#單位換算",
-        "#打折",
         "#CalDaily計算機"
       ],
       "keywords": [
@@ -2337,13 +2281,13 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "計算機 也可以這麼美",
+          "lead": "計算機，也可以這麼美",
           "benefit": "內建一百款主題"
         },
         {
           "id": "b",
           "lead": "內建一百款主題",
-          "benefit": "結果取個名 日後找得回來"
+          "benefit": "結果取個名，日後找得回來"
         },
         {
           "id": "c",
@@ -2366,7 +2310,6 @@
         "#割り勘",
         "#ローン",
         "#単位換算",
-        "#関数電卓",
         "#CalDaily電卓"
       ],
       "keywords": [
@@ -2388,13 +2331,13 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "電卓だって 映えたい",
+          "lead": "電卓だって、映えたい",
           "benefit": "テーマは 100種類"
         },
         {
           "id": "b",
           "lead": "テーマは 100種類",
-          "benefit": "名前を付けて あとで探せる"
+          "benefit": "名前を付けて、あとで探せる"
         },
         {
           "id": "c",
@@ -2417,7 +2360,6 @@
         "#부가세",
         "#더치페이",
         "#대출",
-        "#단위변환",
         "#CalDaily계산기"
       ],
       "keywords": [
@@ -2465,10 +2407,9 @@
       "search": "CV Desk ATS Resume",
       "tags": [
         "#ATSResumeBuilder",
-        "#Maker",
-        "#Score",
-        "#Docx",
-        "#Keywords",
+        "#ResumeChecker",
+        "#ApplicantTracking",
+        "#TrackingSystem",
         "#CVDeskATSResume"
       ],
       "keywords": [
@@ -2519,7 +2460,6 @@
         "#履歷表",
         "#自傳",
         "#求職",
-        "#面試",
         "#CVDeskATS履歷"
       ],
       "keywords": [
@@ -2541,18 +2481,18 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "履歷總是 被 ATS 刷掉？",
-          "benefit": "點修正建議 提升分數"
+          "lead": "履歷總是，被 ATS 刷掉？",
+          "benefit": "點修正建議，提升分數"
         },
         {
           "id": "b",
-          "lead": "點修正建議 提升分數",
-          "benefit": "每款範本 都相容 ATS"
+          "lead": "點修正建議，提升分數",
+          "benefit": "每款範本，都相容 ATS"
         },
         {
           "id": "c",
           "lead": "匯出 PDF 或 Word",
-          "benefit": "點修正建議 提升分數"
+          "benefit": "點修正建議，提升分數"
         }
       ],
       "hook_best": "b"
@@ -2570,7 +2510,6 @@
         "#レジュメ",
         "#転職",
         "#就活",
-        "#自己pr",
         "#CVDeskATS履歴書"
       ],
       "keywords": [
@@ -2593,17 +2532,17 @@
         {
           "id": "a",
           "lead": "その履歴書、ATSで落ちてない？",
-          "benefit": "改善案をタップして スコアアップ"
+          "benefit": "改善案をタップして、スコアアップ"
         },
         {
           "id": "b",
-          "lead": "改善案をタップして スコアアップ",
-          "benefit": "テンプレートは すべてATS対応"
+          "lead": "改善案をタップして、スコアアップ",
+          "benefit": "テンプレートは、すべてATS対応"
         },
         {
           "id": "c",
           "lead": "PDFもWordも書き出し",
-          "benefit": "改善案をタップして スコアアップ"
+          "benefit": "改善案をタップして、スコアアップ"
         }
       ],
       "hook_best": "b"
@@ -2621,7 +2560,6 @@
         "#만들기",
         "#작성",
         "#취업",
-        "#면접",
         "#CVDeskATS이력서"
       ],
       "keywords": [
@@ -2669,10 +2607,8 @@
       "search": "CV Desk ATS",
       "tags": [
         "#PembuatCVATS",
-        "#Template",
-        "#Contoh",
-        "#Daftar",
-        "#Riwayat",
+        "#BuatCVLamaranKerja",
+        "#Loker",
         "#CVDeskATS"
       ],
       "keywords": [
@@ -2723,7 +2659,6 @@
         "#ใบสมัครงาน",
         "#ตัวอย่างเรซูเม่",
         "#หางาน",
-        "#สัมภาษณ์งาน",
         "#CVDeskเรซูเม่ATS"
       ],
       "keywords": [
@@ -2771,10 +2706,8 @@
       "search": "Cyca period tracker",
       "tags": [
         "#PeriodCycleTracker",
+        "#PrivateOvulationCalendar",
         "#Menstrual",
-        "#Diary",
-        "#Cramp",
-        "#Forecast",
         "#CycaPeriodTracker"
       ],
       "keywords": [
@@ -2825,7 +2758,6 @@
         "#經期記錄",
         "#排卵日",
         "#生理期",
-        "#備孕",
         "#Cyca經期"
       ],
       "keywords": [
@@ -2847,18 +2779,18 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "你的經期資料 都存到哪去了？",
-          "benefit": "不用帳號 只存在你的手機"
+          "lead": "你的經期資料，都存到哪去了？",
+          "benefit": "不用帳號，只存在你的手機"
         },
         {
           "id": "b",
-          "lead": "不用帳號 只存在你的手機",
-          "benefit": "經期、排卵日 一眼看清"
+          "lead": "不用帳號，只存在你的手機",
+          "benefit": "經期、排卵日，一眼看清"
         },
         {
           "id": "c",
           "lead": "每日身體預報",
-          "benefit": "不用帳號 只存在你的手機"
+          "benefit": "不用帳號，只存在你的手機"
         }
       ],
       "hook_best": "b"
@@ -2876,7 +2808,6 @@
         "#排卵予測",
         "#生理予測",
         "#月経",
-        "#月経管理",
         "#Cyca生理"
       ],
       "keywords": [
@@ -2898,18 +2829,18 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "生理データって どこに保存されてる？",
-          "benefit": "アカウント不要 端末の中だけ"
+          "lead": "生理データって、どこに保存されてる？",
+          "benefit": "アカウント不要、端末の中だけ"
         },
         {
           "id": "b",
-          "lead": "アカウント不要 端末の中だけ",
-          "benefit": "生理日も排卵日も ひと目でわかる"
+          "lead": "アカウント不要、端末の中だけ",
+          "benefit": "生理日も排卵日も、ひと目でわかる"
         },
         {
           "id": "c",
           "lead": "毎日のカラダ予報",
-          "benefit": "アカウント不要 端末の中だけ"
+          "benefit": "アカウント不要、端末の中だけ"
         }
       ],
       "hook_best": "b"
@@ -2927,7 +2858,6 @@
         "#생리캘린더",
         "#월경",
         "#월경주기",
-        "#월경캘린더",
         "#Cyca생리"
       ],
       "keywords": [
@@ -2975,10 +2905,8 @@
       "search": "Cyca period tracker",
       "tags": [
         "#KalenderMenstruasi",
-        "#Haid",
-        "#Siklus",
-        "#Kesuburan",
-        "#Kehamilan",
+        "#MasaSubur",
+        "#Ovulasi",
         "#CycaPeriodTracker"
       ],
       "keywords": [
@@ -3026,10 +2954,9 @@
       "search": "Cyca period tracker",
       "tags": [
         "#Theodõikinhnguyệt",
+        "#Lịchkinh",
+        "#ngàyrụngtrứng",
         "#chukỳ",
-        "#ngàydễthụthai",
-        "#MangThai",
-        "#triệuchứng",
         "#CycaPeriodTracker"
       ],
       "keywords": [
@@ -3077,10 +3004,8 @@
       "search": "DailyMate Lite",
       "tags": [
         "#SpeakToday",
+        "#50LanguageTravelPhrasebook",
         "#Greek",
-        "#Japanese",
-        "#Italian",
-        "#German",
         "#DailyMateLite"
       ],
       "keywords": [
@@ -3131,7 +3056,6 @@
         "#自由行",
         "#旅行會話",
         "#日語",
-        "#韓語",
         "#DailyMateLite開口練習"
       ],
       "keywords": [
@@ -3153,7 +3077,7 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "輪到你開口 腦袋一片空白？",
+          "lead": "輪到你開口，腦袋一片空白？",
           "benefit": "14 大生活主題"
         },
         {
@@ -3182,7 +3106,6 @@
         "#フレーズ",
         "#観光",
         "#旅先",
-        "#空港",
         "#DailyMateLiteひとこと練習"
       ],
       "keywords": [
@@ -3204,7 +3127,7 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "いざとなると 言葉が出てこない",
+          "lead": "いざとなると、言葉が出てこない",
           "benefit": "14の生活テーマ"
         },
         {
@@ -3214,7 +3137,7 @@
         },
         {
           "id": "c",
-          "lead": "言語ごとに 連続記録",
+          "lead": "言語ごとに、連続記録",
           "benefit": "14の生活テーマ"
         }
       ],
@@ -3233,7 +3156,6 @@
         "#일본",
         "#대만",
         "#태국",
-        "#베트남",
         "#DailyMateLite한마디"
       ],
       "keywords": [
@@ -3280,11 +3202,9 @@
       "name": "DailyMate Lite",
       "search": "DailyMate Lite",
       "tags": [
-        "#Arab",
-        "#Umroh",
-        "#Mandarin",
-        "#Thailand",
-        "#Jerman",
+        "#PercakapanLiburan",
+        "#50Bahasa",
+        "#TanyaArah",
         "#DailyMateLite"
       ],
       "keywords": [
@@ -3332,10 +3252,9 @@
       "search": "DailyMate Lite",
       "tags": [
         "#Luyệnnói",
-        "#tiếng",
-        "#nhật",
-        "#Trung",
-        "#Thái",
+        "#Hộithoạidulịch",
+        "#50ngônngữ",
+        "#tiếngnhật",
         "#DailyMateLite"
       ],
       "keywords": [
@@ -3383,10 +3302,8 @@
       "search": "dB Halo Sound Meter",
       "tags": [
         "#SoundMeter",
-        "#Analyzer",
-        "#Frequency",
-        "#Snoring",
-        "#Hearing",
+        "#NoiseLevelMonitor",
+        "#Decibel",
         "#DBHaloSoundMeter"
       ],
       "keywords": [
@@ -3437,7 +3354,6 @@
         "#噪音計",
         "#音量測試",
         "#環境音",
-        "#聲壓",
         "#dBHalo分貝計"
       ],
       "keywords": [
@@ -3459,18 +3375,18 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "樓上的噪音 到底幾分貝？",
-          "benefit": "半夜的撞擊聲 記下時間與分貝"
+          "lead": "樓上的噪音，到底幾分貝？",
+          "benefit": "半夜的撞擊聲，記下時間與分貝"
         },
         {
           "id": "b",
-          "lead": "半夜的撞擊聲 記下時間與分貝",
-          "benefit": "匯出 PDF 報告 或 CSV"
+          "lead": "半夜的撞擊聲，記下時間與分貝",
+          "benefit": "匯出 PDF 報告，或 CSV"
         },
         {
           "id": "c",
           "lead": "Apple Watch 與小工具",
-          "benefit": "半夜的撞擊聲 記下時間與分貝"
+          "benefit": "半夜的撞擊聲，記下時間與分貝"
         }
       ],
       "hook_best": "b"
@@ -3488,7 +3404,6 @@
         "#騒音計",
         "#音量",
         "#音圧レベル",
-        "#分析",
         "#dBHaloデシベル測定"
       ],
       "keywords": [
@@ -3510,18 +3425,18 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "上の階の足音って 何dB？",
-          "benefit": "夜中の衝撃音も 時刻とdBで記録"
+          "lead": "上の階の足音って、何dB？",
+          "benefit": "夜中の衝撃音も、時刻とdBで記録"
         },
         {
           "id": "b",
-          "lead": "夜中の衝撃音も 時刻とdBで記録",
+          "lead": "夜中の衝撃音も、時刻とdBで記録",
           "benefit": "PDFレポートや CSVで書き出し"
         },
         {
           "id": "c",
-          "lead": "Apple Watchと ウィジェット",
-          "benefit": "夜中の衝撃音も 時刻とdBで記録"
+          "lead": "Apple Watchと、ウィジェット",
+          "benefit": "夜中の衝撃音も、時刻とdBで記録"
         }
       ],
       "hook_best": "b"
@@ -3539,7 +3454,6 @@
         "#생활소음",
         "#데시벨",
         "#음량",
-        "#노출량",
         "#dBHalo소음측정기"
       ],
       "keywords": [
@@ -3587,10 +3501,8 @@
       "search": "Lumi Letters Lite",
       "tags": [
         "#ABCKids",
-        "#Handwriting",
-        "#Games",
-        "#Toddler",
-        "#Preschool",
+        "#AlphabetTracing",
+        "#Sounds",
         "#LumiLettersLite"
       ],
       "keywords": [
@@ -3641,7 +3553,6 @@
         "#學字母",
         "#寫字母",
         "#認字母",
-        "#字母發音",
         "#Lumi字母星球Lite"
       ],
       "keywords": [
@@ -3663,17 +3574,17 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "滑手機的時間 也能學 ABC",
+          "lead": "滑手機的時間，也能學 ABC",
           "benefit": "照筆順描一描"
         },
         {
           "id": "b",
           "lead": "照筆順描一描",
-          "benefit": "聽發音 配對字母"
+          "benefit": "聽發音，配對字母"
         },
         {
           "id": "c",
-          "lead": "看看孩子 進步了多少",
+          "lead": "看看孩子，進步了多少",
           "benefit": "照筆順描一描"
         }
       ],
@@ -3692,7 +3603,6 @@
         "#幼児英語",
         "#子供英語",
         "#abcなぞり",
-        "#知育",
         "#LumiレターLite"
       ],
       "keywords": [
@@ -3715,17 +3625,17 @@
         {
           "id": "a",
           "lead": "スマホ時間が ABCの時間に",
-          "benefit": "書き順どおりに なぞり書き"
+          "benefit": "書き順どおりに、なぞり書き"
         },
         {
           "id": "b",
-          "lead": "書き順どおりに なぞり書き",
-          "benefit": "音を聞いて 文字に合わせよう"
+          "lead": "書き順どおりに、なぞり書き",
+          "benefit": "音を聞いて、文字に合わせよう"
         },
         {
           "id": "c",
-          "lead": "どれだけできたか 見てみよう",
-          "benefit": "書き順どおりに なぞり書き"
+          "lead": "どれだけできたか、見てみよう",
+          "benefit": "書き順どおりに、なぞり書き"
         }
       ],
       "hook_best": "b"
@@ -3743,7 +3653,6 @@
         "#소문자",
         "#대문자",
         "#취학전",
-        "#영어조기교육",
         "#Lumi레터Lite"
       ],
       "keywords": [
@@ -3790,11 +3699,9 @@
       "name": "Lumi حروف Lite",
       "search": "Lumi حروف Lite",
       "tags": [
-        "#الفونيكس",
-        "#انجليزي",
-        "#للاطفال",
-        "#تعليم",
-        "#العاب",
+        "#تعلمالكتابةوالنطقللأطفال",
+        "#Lumi",
+        "#الحروف",
         "#LumiحروفLite"
       ],
       "keywords": [
@@ -3841,11 +3748,9 @@
       "name": "Lumi Math Planet: Explorer",
       "search": "Lumi Math Planet Explorer",
       "tags": [
-        "#Explorer",
-        "#Counting",
-        "#Games",
-        "#Multiplication",
-        "#Times",
+        "#KidsAddition",
+        "#TimesTables",
+        "#Subtraction",
         "#LumiMathPlanetExplorer"
       ],
       "keywords": [
@@ -3896,7 +3801,6 @@
         "#啟蒙",
         "#學前",
         "#大班",
-        "#中班",
         "#Lumi數學星球探索版"
       ],
       "keywords": [
@@ -3918,18 +3822,18 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "答對一題 小星球就亮起來",
-          "benefit": "還不識字 也能看圖玩"
+          "lead": "答對一題，小星球就亮起來",
+          "benefit": "還不識字，也能看圖玩"
         },
         {
           "id": "b",
-          "lead": "還不識字 也能看圖玩",
-          "benefit": "60 秒內 跟時鐘賽跑"
+          "lead": "還不識字，也能看圖玩",
+          "benefit": "60 秒內，跟時鐘賽跑"
         },
         {
           "id": "c",
           "lead": "強弱項一眼看懂",
-          "benefit": "還不識字 也能看圖玩"
+          "benefit": "還不識字，也能看圖玩"
         }
       ],
       "hook_best": "b"
@@ -3947,7 +3851,6 @@
         "#たしざん",
         "#ひきざん",
         "#かけざん",
-        "#わりざん",
         "#Lumi算数プラネット体験版"
       ],
       "keywords": [
@@ -3969,18 +3872,18 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "正解するたび 星がひかる",
-          "benefit": "字が読めなくても 遊べる"
+          "lead": "正解するたび、星がひかる",
+          "benefit": "字が読めなくても、遊べる"
         },
         {
           "id": "b",
-          "lead": "字が読めなくても 遊べる",
-          "benefit": "60秒で 時計と競争"
+          "lead": "字が読めなくても、遊べる",
+          "benefit": "60秒で、時計と競争"
         },
         {
           "id": "c",
           "lead": "得意・苦手がひと目で",
-          "benefit": "字が読めなくても 遊べる"
+          "benefit": "字が読めなくても、遊べる"
         }
       ],
       "hook_best": "b"
@@ -3998,7 +3901,6 @@
         "#곱셈",
         "#나눗셈",
         "#셈하기",
-        "#수세기",
         "#Lumi수학행성체험판"
       ],
       "keywords": [
@@ -4046,10 +3948,8 @@
       "search": "Lumi Weather",
       "tags": [
         "#WhatToWear",
-        "#Jacket",
-        "#Sunscreen",
-        "#Dress",
-        "#Humidity",
+        "#OutingScore",
+        "#Umbrella",
         "#LumiWeather"
       ],
       "keywords": [
@@ -4100,7 +4000,6 @@
         "#氣象預報",
         "#台灣",
         "#下雨",
-        "#體感溫度",
         "#Lumi天氣星球"
       ],
       "keywords": [
@@ -4122,18 +4021,18 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "今天要不要 擦防曬？",
-          "benefit": "穿什麼、帶什麼 直接告訴你"
+          "lead": "今天要不要，擦防曬？",
+          "benefit": "穿什麼、帶什麼，直接告訴你"
         },
         {
           "id": "b",
-          "lead": "穿什麼、帶什麼 直接告訴你",
+          "lead": "穿什麼、帶什麼，直接告訴你",
           "benefit": "適合出門嗎？看懂為什麼"
         },
         {
           "id": "c",
-          "lead": "你的一天 就在主畫面",
-          "benefit": "穿什麼、帶什麼 直接告訴你"
+          "lead": "你的一天，就在主畫面",
+          "benefit": "穿什麼、帶什麼，直接告訴你"
         }
       ],
       "hook_best": "b"
@@ -4151,7 +4050,6 @@
         "#体感温度",
         "#日焼け止め",
         "#明日",
-        "#週間",
         "#ルミのおてんき星"
       ],
       "keywords": [
@@ -4174,17 +4072,17 @@
         {
           "id": "a",
           "lead": "日焼け止め、今日いる？",
-          "benefit": "着る物も持ち物も ひと目でわかる"
+          "benefit": "着る物も持ち物も、ひと目でわかる"
         },
         {
           "id": "b",
-          "lead": "着る物も持ち物も ひと目でわかる",
+          "lead": "着る物も持ち物も、ひと目でわかる",
           "benefit": "おでかけ日和？理由もわかる"
         },
         {
           "id": "c",
-          "lead": "今日の空を ホーム画面に",
-          "benefit": "着る物も持ち物も ひと目でわかる"
+          "lead": "今日の空を、ホーム画面に",
+          "benefit": "着る物も持ち物も、ひと目でわかる"
         }
       ],
       "hook_best": "b"
@@ -4202,7 +4100,6 @@
         "#기온",
         "#체감온도",
         "#강수확률",
-        "#소나기",
         "#루미날씨"
       ],
       "keywords": [
@@ -4250,10 +4147,8 @@
       "search": "Lumi Weather",
       "tags": [
         "#PrakiraanHariIni",
-        "#Hujan",
-        "#Suhu",
-        "#Angin",
-        "#Payung",
+        "#SkorKeluarRumah",
+        "#Pakaian",
         "#LumiWeather"
       ],
       "keywords": [
@@ -4301,10 +4196,9 @@
       "search": "Mask My File",
       "tags": [
         "#RemoveYourInfo",
-        "#Anonymize",
+        "#RedactPDF",
+        "#CensorImages",
         "#BlackOut",
-        "#HideText",
-        "#PersonalData",
         "#MaskMyFile"
       ],
       "keywords": [
@@ -4355,7 +4249,6 @@
         "#去識別化",
         "#塗黑",
         "#抹除",
-        "#消除",
         "#MaskMyFile"
       ],
       "keywords": [
@@ -4377,13 +4270,13 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "傳檔案之前 先遮個資",
+          "lead": "傳檔案之前，先遮個資",
           "benefit": "漏掉的？手動框選"
         },
         {
           "id": "b",
           "lead": "漏掉的？手動框選",
-          "benefit": "另存新檔 原始檔不動"
+          "benefit": "另存新檔，原始檔不動"
         },
         {
           "id": "c",
@@ -4406,7 +4299,6 @@
         "#マスキング",
         "#塗りつぶし",
         "#隠す",
-        "#書類",
         "#MaskMyFile"
       ],
       "keywords": [
@@ -4428,18 +4320,18 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "その書類、送る前に 黒塗りしよう",
-          "benefit": "見落としは 手動で追加"
+          "lead": "その書類、送る前に、黒塗りしよう",
+          "benefit": "見落としは、手動で追加"
         },
         {
           "id": "b",
-          "lead": "見落としは 手動で追加",
-          "benefit": "新しいコピーを作成 オリジナルはそのまま"
+          "lead": "見落としは、手動で追加",
+          "benefit": "新しいコピーを作成、オリジナルはそのまま"
         },
         {
           "id": "c",
           "lead": "端末内で完結",
-          "benefit": "見落としは 手動で追加"
+          "benefit": "見落としは、手動で追加"
         }
       ],
       "hook_best": "b"
@@ -4457,7 +4349,6 @@
         "#마스킹",
         "#지우기",
         "#보안보호",
-        "#문서",
         "#MaskMyFile"
       ],
       "keywords": [
@@ -4505,8 +4396,7 @@
       "search": "Mask My File",
       "tags": [
         "#Σβήστεδεδομένα",
-        "#ανωνυμοποίηση",
-        "#λογοκρισία",
+        "#Απόκρυψηπριντηνκοινοποίηση",
         "#προσωπικάδεδομένα",
         "#ιατρικόαρχείο",
         "#MaskMyFile"
@@ -4556,8 +4446,7 @@
       "search": "Mask My File",
       "tags": [
         "#OdstraňteÚdaje",
-        "#Anonymizace",
-        "#Cenzura",
+        "#SkryjteCitlivéInformace",
         "#OsobníÚdaje",
         "#LékařskáZpráva",
         "#MaskMyFile"
@@ -4607,10 +4496,8 @@
       "search": "Mask My File",
       "tags": [
         "#UsuńSwojeDane",
+        "#UkryjDanePrzedWysłaniem",
         "#Prywatność",
-        "#Zaczernianie",
-        "#Dokumenty",
-        "#Paragon",
         "#MaskMyFile"
       ],
       "keywords": [
@@ -4658,10 +4545,8 @@
       "search": "Mochi DoneStamp",
       "tags": [
         "#LastTime",
-        "#Maintenance",
-        "#Household",
-        "#Cleaning",
-        "#Filter",
+        "#HomeUpkeepTracker",
+        "#Chore",
         "#MochiDoneStamp"
       ],
       "keywords": [
@@ -4712,7 +4597,6 @@
         "#機車保養",
         "#換機油",
         "#家電",
-        "#家人共享",
         "#MochiDoneStamp上次何時"
       ],
       "keywords": [
@@ -4734,17 +4618,17 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "上次換床單 是什麼時候？",
+          "lead": "上次換床單，是什麼時候？",
           "benefit": "做完，點一下"
         },
         {
           "id": "b",
           "lead": "做完，點一下",
-          "benefit": "下次該做了沒 一眼就知道"
+          "benefit": "下次該做了沒，一眼就知道"
         },
         {
           "id": "c",
-          "lead": "每一次 都幫你記得",
+          "lead": "每一次，都幫你記得",
           "benefit": "做完，點一下"
         }
       ],
@@ -4763,7 +4647,6 @@
         "#最後にやった日",
         "#経過日数",
         "#家電",
-        "#掃除",
         "#MochiDoneStampいつやった"
       ],
       "keywords": [
@@ -4785,18 +4668,18 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "シーツ替えたの いつだっけ？",
-          "benefit": "済んだら ワンタップ"
+          "lead": "シーツ替えたの、いつだっけ？",
+          "benefit": "済んだら、ワンタップ"
         },
         {
           "id": "b",
-          "lead": "済んだら ワンタップ",
-          "benefit": "次はいつか ひと目で"
+          "lead": "済んだら、ワンタップ",
+          "benefit": "次はいつか、ひと目で"
         },
         {
           "id": "c",
-          "lead": "毎回の記録が ちゃんと残る",
-          "benefit": "済んだら ワンタップ"
+          "lead": "毎回の記録が、ちゃんと残る",
+          "benefit": "済んだら、ワンタップ"
         }
       ],
       "hook_best": "b"
@@ -4814,7 +4697,6 @@
         "#청소",
         "#청소알림",
         "#가족공유",
-        "#엔진오일",
         "#MochiDoneStamp마지막기록"
       ],
       "keywords": [
@@ -4862,10 +4744,8 @@
       "search": "MoneyTag",
       "tags": [
         "#IncomeExpense",
-        "#Profit",
-        "#Loss",
         "#SideHustle",
-        "#Freelance",
+        "#Projects",
         "#MoneyTag"
       ],
       "keywords": [
@@ -4916,7 +4796,6 @@
         "#記帳",
         "#損益",
         "#利潤",
-        "#淨利",
         "#MoneyTag"
       ],
       "keywords": [
@@ -4938,18 +4817,18 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "哪個副業 真的有賺？",
-          "benefit": "同一個標籤 跨專案一次加總"
+          "lead": "哪個副業，真的有賺？",
+          "benefit": "同一個標籤，跨專案一次加總"
         },
         {
           "id": "b",
-          "lead": "同一個標籤 跨專案一次加總",
-          "benefit": "每個月的淨額 一目了然"
+          "lead": "同一個標籤，跨專案一次加總",
+          "benefit": "每個月的淨額，一目了然"
         },
         {
           "id": "c",
           "lead": "匯出 PDF、CSV",
-          "benefit": "同一個標籤 跨專案一次加總"
+          "benefit": "同一個標籤，跨專案一次加總"
         }
       ],
       "hook_best": "b"
@@ -4967,7 +4846,6 @@
         "#収支",
         "#損益",
         "#利益",
-        "#売上",
         "#MoneyTag"
       ],
       "keywords": [
@@ -4990,17 +4868,17 @@
         {
           "id": "a",
           "lead": "その副業、ほんとに黒字？",
-          "benefit": "タグひとつで 全プロジェクトを集計"
+          "benefit": "タグひとつで、全プロジェクトを集計"
         },
         {
           "id": "b",
-          "lead": "タグひとつで 全プロジェクトを集計",
-          "benefit": "毎月の収支が ひと目でわかる"
+          "lead": "タグひとつで、全プロジェクトを集計",
+          "benefit": "毎月の収支が、ひと目でわかる"
         },
         {
           "id": "c",
           "lead": "PDF・CSVで書き出し",
-          "benefit": "タグひとつで 全プロジェクトを集計"
+          "benefit": "タグひとつで、全プロジェクトを集計"
         }
       ],
       "hook_best": "b"
@@ -5018,7 +4896,6 @@
         "#장부",
         "#손익",
         "#순이익",
-        "#매출",
         "#MoneyTag"
       ],
       "keywords": [
@@ -5066,10 +4943,9 @@
       "search": "MoneyTag",
       "tags": [
         "#ThuVàChi",
-        "#sổ",
+        "#Dựán",
+        "#BáoCáo",
         "#quảnlý",
-        "#lãilỗ",
-        "#lợinhuận",
         "#MoneyTag"
       ],
       "keywords": [
@@ -5117,10 +4993,8 @@
       "search": "MoneyTag",
       "tags": [
         "#PříjmyAVýdaje",
-        "#Účetnictví",
-        "#Zisk",
-        "#Ztráta",
-        "#Osvč",
+        "#Projekty",
+        "#Štítky",
         "#MoneyTag"
       ],
       "keywords": [
@@ -5168,10 +5042,8 @@
       "search": "100 Notes Studio",
       "tags": [
         "#PenPaper",
-        "#Notebook",
-        "#Digital",
-        "#Journal",
-        "#Planner",
+        "#NoteTaking",
+        "#Handwriting",
         "#100NotesStudio"
       ],
       "keywords": [
@@ -5222,7 +5094,6 @@
         "#日記",
         "#讀書計畫",
         "#抽認卡",
-        "#文字辨識",
         "#100NotesStudio"
       ],
       "keywords": [
@@ -5245,17 +5116,17 @@
         {
           "id": "a",
           "lead": "手寫筆記本 100 款風格",
-          "benefit": "每本筆記 都有專屬風格"
+          "benefit": "每本筆記，都有專屬風格"
         },
         {
           "id": "b",
-          "lead": "每本筆記 都有專屬風格",
+          "lead": "每本筆記，都有專屬風格",
           "benefit": "錄音就存在那一頁"
         },
         {
           "id": "c",
           "lead": "用抽認卡複習",
-          "benefit": "每本筆記 都有專屬風格"
+          "benefit": "每本筆記，都有專屬風格"
         }
       ],
       "hook_best": "b"
@@ -5273,7 +5144,6 @@
         "#手帳",
         "#日記",
         "#暗記",
-        "#単語帳",
         "#100NotesStudio"
       ],
       "keywords": [
@@ -5296,17 +5166,17 @@
         {
           "id": "a",
           "lead": "手書きノートを彩る 100のスタイル",
-          "benefit": "ノートごとに 違うデザイン"
+          "benefit": "ノートごとに、違うデザイン"
         },
         {
           "id": "b",
-          "lead": "ノートごとに 違うデザイン",
-          "benefit": "録音は そのページに保存"
+          "lead": "ノートごとに、違うデザイン",
+          "benefit": "録音は、そのページに保存"
         },
         {
           "id": "c",
           "lead": "暗記カードで復習",
-          "benefit": "ノートごとに 違うデザイン"
+          "benefit": "ノートごとに、違うデザイン"
         }
       ],
       "hook_best": "b"
@@ -5324,7 +5194,6 @@
         "#메모",
         "#다이어리",
         "#플래너",
-        "#오프라인",
         "#100NotesStudio"
       ],
       "keywords": [
@@ -5371,11 +5240,9 @@
       "name": "100 Notes Studio: Заметки",
       "search": "100 Notes Studio",
       "tags": [
+        "#Электроннаятетрадь",
+        "#конспекты",
         "#Заметки",
-        "#рукописный",
-        "#дневник",
-        "#планер",
-        "#карточки",
         "#100NotesStudio"
       ],
       "keywords": [
@@ -5422,11 +5289,9 @@
       "name": "100 Notes Studio: Pen & Paper",
       "search": "100 Notes Studio",
       "tags": [
-        "#كراسة",
-        "#يوميات",
-        "#مذاكرة",
-        "#تلخيص",
-        "#محاضرات",
+        "#دفتر",
+        "#ملاحظات",
+        "#بخط",
         "#100NotesStudio"
       ],
       "keywords": [
@@ -5474,10 +5339,8 @@
       "search": "OnePage PPT",
       "tags": [
         "#AISlideMaker",
-        "#Deck",
-        "#Pitch",
-        "#Chart",
-        "#Graph",
+        "#Presentation",
+        "#Infographic",
         "#OnePagePPT"
       ],
       "keywords": [
@@ -5528,7 +5391,6 @@
         "#懶人包",
         "#重點整理",
         "#摘要",
-        "#會議紀錄",
         "#OnePagePPT一頁簡報"
       ],
       "keywords": [
@@ -5550,7 +5412,7 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "落落長的筆記 變成一頁簡報",
+          "lead": "落落長的筆記，變成一頁簡報",
           "benefit": "貼上筆記、PDF 或截圖"
         },
         {
@@ -5579,7 +5441,6 @@
         "#要約",
         "#議事録",
         "#会議",
-        "#企画書",
         "#OnePagePPTAI資料作成"
       ],
       "keywords": [
@@ -5602,17 +5463,17 @@
         {
           "id": "a",
           "lead": "文字だらけのメモが 1枚資料に",
-          "benefit": "メモもPDFも スクショも"
+          "benefit": "メモもPDFも、スクショも"
         },
         {
           "id": "b",
-          "lead": "メモもPDFも スクショも",
-          "benefit": "デザインも ワンタップで一新"
+          "lead": "メモもPDFも、スクショも",
+          "benefit": "デザインも、ワンタップで一新"
         },
         {
           "id": "c",
           "lead": "編集できる pptxで書き出し",
-          "benefit": "メモもPDFも スクショも"
+          "benefit": "メモもPDFも、スクショも"
         }
       ],
       "hook_best": "b"
@@ -5630,7 +5491,6 @@
         "#프레젠테이션",
         "#요약",
         "#회의록",
-        "#보고서",
         "#OnePagePPT발표자료"
       ],
       "keywords": [
@@ -5679,9 +5539,7 @@
       "tags": [
         "#KIFolien",
         "#Zusammenfassung",
-        "#Erstellen",
-        "#Generator",
-        "#Notizen",
+        "#Präsentation",
         "#OnePagePPT"
       ],
       "keywords": [
@@ -5729,10 +5587,9 @@
       "search": "PhotoCream Pro",
       "tags": [
         "#FilmFilters",
-        "#Retro",
-        "#Grain",
-        "#Analog",
-        "#Aesthetic",
+        "#VintageCamera",
+        "#PhotoEditor",
+        "#DateStamp",
         "#PhotoCreamPro"
       ],
       "keywords": [
@@ -5783,7 +5640,6 @@
         "#自拍",
         "#日期戳",
         "#老照片",
-        "#美肌",
         "#PhotoCream底片濾鏡"
       ],
       "keywords": [
@@ -5805,7 +5661,7 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "自拍也能有 底片感",
+          "lead": "自拍也能有，底片感",
           "benefit": "100+ 款底片濾鏡"
         },
         {
@@ -5815,7 +5671,7 @@
         },
         {
           "id": "c",
-          "lead": "放大眼睛、拉長身形 都很自然",
+          "lead": "放大眼睛、拉長身形，都很自然",
           "benefit": "100+ 款底片濾鏡"
         }
       ],
@@ -5834,7 +5690,6 @@
         "#レトロ",
         "#使い捨てカメラ",
         "#粒子",
-        "#ヴィンテージ",
         "#PhotoCreamフィルム"
       ],
       "keywords": [
@@ -5862,11 +5717,11 @@
         {
           "id": "b",
           "lead": "フィルム加工が 100種以上",
-          "benefit": "粒子も ハレーションも"
+          "benefit": "粒子も、ハレーションも"
         },
         {
           "id": "c",
-          "lead": "デカ目も体型も 自然に補正",
+          "lead": "デカ目も体型も、自然に補正",
           "benefit": "フィルム加工が 100種以上"
         }
       ],
@@ -5885,7 +5740,6 @@
         "#감성사진",
         "#빈티지",
         "#레트로",
-        "#사진편집",
         "#PhotoCream필름필터"
       ],
       "keywords": [
@@ -5936,7 +5790,6 @@
         "#拍立得",
         "#胶卷",
         "#照片编辑器",
-        "#一次性",
         "#PhotoCream胶片滤镜"
       ],
       "keywords": [
@@ -5958,7 +5811,7 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "自拍也能有 胶片感",
+          "lead": "自拍也能有，胶片感",
           "benefit": "100+ 款胶片滤镜"
         },
         {
@@ -5968,7 +5821,7 @@
         },
         {
           "id": "c",
-          "lead": "放大眼睛、拉长身形 都很自然",
+          "lead": "放大眼睛、拉长身形，都很自然",
           "benefit": "100+ 款胶片滤镜"
         }
       ],
@@ -5984,10 +5837,8 @@
       "search": "PhotoCream Pro",
       "tags": [
         "#FilmovéFiltry",
-        "#Fotoaparát",
-        "#Úprava",
-        "#Fotek",
-        "#Selfie",
+        "#Analogový",
+        "#Foťák",
         "#PhotoCreamPro"
       ],
       "keywords": [
@@ -6035,10 +5886,8 @@
       "search": "PicClear Pro",
       "tags": [
         "#PhotoCleaner",
-        "#Duplicate",
-        "#Blurry",
-        "#Large",
-        "#Videos",
+        "#CleanUpPhotos",
+        "#LargeVideos",
         "#PicClearPro"
       ],
       "keywords": [
@@ -6089,7 +5938,6 @@
         "#重複照片",
         "#相似照片",
         "#相片清理",
-        "#刪除照片",
         "#PicClear照片清理"
       ],
       "keywords": [
@@ -6111,18 +5959,18 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "iPhone 容量 又滿了？",
-          "benefit": "重複照片 幫你分好組"
+          "lead": "iPhone 容量，又滿了？",
+          "benefit": "重複照片，幫你分好組"
         },
         {
           "id": "b",
-          "lead": "重複照片 幫你分好組",
-          "benefit": "舊截圖 一次找出來"
+          "lead": "重複照片，幫你分好組",
+          "benefit": "舊截圖，一次找出來"
         },
         {
           "id": "c",
-          "lead": "你確認之前 一張都不刪",
-          "benefit": "重複照片 幫你分好組"
+          "lead": "你確認之前，一張都不刪",
+          "benefit": "重複照片，幫你分好組"
         }
       ],
       "hook_best": "b"
@@ -6137,10 +5985,8 @@
       "search": "QR Code Halo",
       "tags": [
         "#SafeQRScanner",
-        "#Scanner",
+        "#URLCheckLater",
         "#Reader",
-        "#Barcode",
-        "#Generator",
         "#QRCodeHalo"
       ],
       "keywords": [
@@ -6191,7 +6037,6 @@
         "#條碼",
         "#掃碼",
         "#產生器",
-        "#讀取",
         "#QRCodeHalo"
       ],
       "keywords": [
@@ -6202,7 +6047,7 @@
         "辨識",
         "網址"
       ],
-      "keyline": "掃描器・條碼讀取與建立",
+      "keyline": "一掃即開，事後本機查風險",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -6219,11 +6064,11 @@
         {
           "id": "b",
           "lead": "建立 9 種 QR Code",
-          "benefit": "換個樣式 一鍵分享"
+          "benefit": "換個樣式，一鍵分享"
         },
         {
           "id": "c",
-          "lead": "資料不離開 你的裝置",
+          "lead": "資料不離開，你的裝置",
           "benefit": "建立 9 種 QR Code"
         }
       ],
@@ -6239,10 +6084,8 @@
       "search": "SaveTag",
       "tags": [
         "#AISocialBookmarks",
-        "#Reading",
-        "#List",
-        "#Organizer",
-        "#Collection",
+        "#LinkSaver",
+        "#ReadLater",
         "#SaveTag"
       ],
       "keywords": [
@@ -6293,7 +6136,6 @@
         "#影片",
         "#貼文",
         "#文章",
-        "#稍後觀看",
         "#SaveTag"
       ],
       "keywords": [
@@ -6315,18 +6157,18 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "收藏的連結 從來沒點開過？",
-          "benefit": "一存下 就自動分類"
+          "lead": "收藏的連結，從來沒點開過？",
+          "benefit": "一存下，就自動分類"
         },
         {
           "id": "b",
-          "lead": "一存下 就自動分類",
-          "benefit": "每天翻出幾則 還有連續天數"
+          "lead": "一存下，就自動分類",
+          "benefit": "每天翻出幾則，還有連續天數"
         },
         {
           "id": "c",
-          "lead": "待讀清單 終於變短",
-          "benefit": "一存下 就自動分類"
+          "lead": "待讀清單，終於變短",
+          "benefit": "一存下，就自動分類"
         }
       ],
       "hook_best": "b"
@@ -6344,7 +6186,6 @@
         "#ブックマーク",
         "#お気に入り",
         "#リーディングリスト",
-        "#クリップ",
         "#SaveTag"
       ],
       "keywords": [
@@ -6367,17 +6208,17 @@
         {
           "id": "a",
           "lead": "「あとで読む」結局読まない？",
-          "benefit": "保存した瞬間 自動でタグ付け"
+          "benefit": "保存した瞬間、自動でタグ付け"
         },
         {
           "id": "b",
-          "lead": "保存した瞬間 自動でタグ付け",
-          "benefit": "毎日少しずつ 連続日数も"
+          "lead": "保存した瞬間、自動でタグ付け",
+          "benefit": "毎日少しずつ、連続日数も"
         },
         {
           "id": "c",
-          "lead": "積読リンクが やっと減る",
-          "benefit": "保存した瞬間 自動でタグ付け"
+          "lead": "積読リンクが、やっと減る",
+          "benefit": "保存した瞬間、自動でタグ付け"
         }
       ],
       "hook_best": "b"
@@ -6395,7 +6236,6 @@
         "#읽을거리",
         "#모아보기",
         "#스크랩",
-        "#즐겨찾기",
         "#SaveTag"
       ],
       "keywords": [
@@ -6443,10 +6283,8 @@
       "search": "SaveTag",
       "tags": [
         "#حفظالروابطالذكي",
+        "#قائمةقراءةلاحقةومفضلة",
         "#المفضلة",
-        "#مقالات",
-        "#فيديو",
-        "#مشاهدة",
         "#SaveTag"
       ],
       "keywords": [
@@ -6494,10 +6332,8 @@
       "search": "SaveTag",
       "tags": [
         "#ZáložkySAI",
-        "#Štítky",
-        "#Oblíbené",
-        "#Seznam",
-        "#Čtení",
+        "#UložitOdkazy",
+        "#ČístPozději",
         "#SaveTag"
       ],
       "keywords": [
@@ -6545,10 +6381,9 @@
       "search": "ScanTo Pro",
       "tags": [
         "#OfflinePDFOCR",
-        "#Scan",
-        "#Text",
-        "#Recognition",
-        "#Receipt",
+        "#PrivateDocument",
+        "#IDScanner",
+        "#TextRecognition",
         "#ScanToPro"
       ],
       "keywords": [
@@ -6599,7 +6434,6 @@
         "#掃描器",
         "#掃描檔",
         "#圖片轉文字",
-        "#文字掃描",
         "#ScanToPro離線PDF掃描"
       ],
       "keywords": [
@@ -6650,7 +6484,6 @@
         "#スキャン",
         "#pdf変換",
         "#レシート",
-        "#領収書",
         "#ScanToProオフラインPDF"
       ],
       "keywords": [
@@ -6672,13 +6505,13 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "身分証を送る前に パスワードを",
+          "lead": "身分証を送る前に、パスワードを",
           "benefit": "数秒でPDFに"
         },
         {
           "id": "b",
           "lead": "数秒でPDFに",
-          "benefit": "クラウドなし 完全オフライン"
+          "benefit": "クラウドなし、完全オフライン"
         },
         {
           "id": "c",
@@ -6701,7 +6534,6 @@
         "#스캔",
         "#문서스캔",
         "#영수증",
-        "#명함",
         "#ScanToPro오프라인PDF"
       ],
       "keywords": [
@@ -6749,10 +6581,9 @@
       "search": "ScanTo Pro",
       "tags": [
         "#DokumenteScannen",
+        "#PDFScanner",
         "#Dokumentenscanner",
         "#Texterkennung",
-        "#Beleg",
-        "#Quittung",
         "#ScanToPro"
       ],
       "keywords": [
@@ -6800,10 +6631,8 @@
       "search": "ScanTo Pro",
       "tags": [
         "#PDFOCR",
-        "#Scan",
+        "#PemindaiDokumenOffline",
         "#Scanner",
-        "#Pindai",
-        "#Struk",
         "#ScanToPro"
       ],
       "keywords": [
@@ -6853,8 +6682,6 @@
         "#SleepSoundMachine",
         "#BrownNoise",
         "#RainSounds",
-        "#Machine",
-        "#Pink",
         "#SerenoSleepSounds"
       ],
       "keywords": [
@@ -6905,7 +6732,6 @@
         "#熟睡",
         "#褐噪音",
         "#布朗噪音",
-        "#粉紅噪音",
         "#Sereno極致睡眠音效"
       ],
       "keywords": [
@@ -6927,18 +6753,18 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "聽不出循環的 雨聲",
-          "benefit": "數十種聲音 任你挑"
+          "lead": "聽不出循環的，雨聲",
+          "benefit": "數十種聲音，任你挑"
         },
         {
           "id": "b",
-          "lead": "數十種聲音 任你挑",
+          "lead": "數十種聲音，任你挑",
           "benefit": "混出 1000+ 種音景"
         },
         {
           "id": "c",
           "lead": "完全離線",
-          "benefit": "數十種聲音 任你挑"
+          "benefit": "數十種聲音，任你挑"
         }
       ],
       "hook_best": "b"
@@ -6956,7 +6782,6 @@
         "#スリープ",
         "#睡眠",
         "#作業用",
-        "#ブラウンノイズ",
         "#Serenoスリープサウンド"
       ],
       "keywords": [
@@ -6978,18 +6803,18 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "ループしない 雨の音",
-          "benefit": "数十種類の サウンド"
+          "lead": "ループしない、雨の音",
+          "benefit": "数十種類の、サウンド"
         },
         {
           "id": "b",
-          "lead": "数十種類の サウンド",
-          "benefit": "1000以上の サウンドスケープ"
+          "lead": "数十種類の、サウンド",
+          "benefit": "1000以上の、サウンドスケープ"
         },
         {
           "id": "c",
           "lead": "完全オフライン",
-          "benefit": "数十種類の サウンド"
+          "benefit": "数十種類の、サウンド"
         }
       ],
       "hook_best": "b"
@@ -7007,7 +6832,6 @@
         "#화이트노이즈",
         "#잠잘때",
         "#핑크노이즈",
-        "#공부",
         "#Sereno수면사운드"
       ],
       "keywords": [
@@ -7055,10 +6879,8 @@
       "search": "ShotInbox",
       "tags": [
         "#SortScreenshots",
-        "#Organizer",
-        "#Manager",
-        "#Duplicate",
-        "#Similar",
+        "#OCRSearch",
+        "#PhotoCleaner",
         "#ShotInbox"
       ],
       "keywords": [
@@ -7109,16 +6931,15 @@
         "#重複",
         "#相似",
         "#圖片",
-        "#管理",
         "#ShotInbox"
       ],
       "keywords": [
         "重複",
         "相似",
         "圖片",
-        "管理",
         "歸檔",
-        "刪除"
+        "刪除",
+        "批次"
       ],
       "keyline": "截圖整理",
       "compliance": {
@@ -7131,18 +6952,18 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "那張截圖 又找不到了？",
-          "benefit": "截圖裡的文字 也搜得到"
+          "lead": "那張截圖，又找不到了？",
+          "benefit": "截圖裡的文字，也搜得到"
         },
         {
           "id": "b",
-          "lead": "截圖裡的文字 也搜得到",
+          "lead": "截圖裡的文字，也搜得到",
           "benefit": "收據、票券…全都分好類"
         },
         {
           "id": "c",
           "lead": "處理完了？就清掉它",
-          "benefit": "截圖裡的文字 也搜得到"
+          "benefit": "截圖裡的文字，也搜得到"
         }
       ],
       "hook_best": "b"
@@ -7160,7 +6981,6 @@
         "#スクリーンショット",
         "#写真",
         "#アルバム",
-        "#重複",
         "#ShotInbox"
       ],
       "keywords": [
@@ -7183,17 +7003,17 @@
         {
           "id": "a",
           "lead": "あのスクショ、どこいった？",
-          "benefit": "スクショ内の文字で 検索できる"
+          "benefit": "スクショ内の文字で、検索できる"
         },
         {
           "id": "b",
-          "lead": "スクショ内の文字で 検索できる",
-          "benefit": "レシートもチケットも きっちり分類"
+          "lead": "スクショ内の文字で、検索できる",
+          "benefit": "レシートもチケットも、きっちり分類"
         },
         {
           "id": "c",
-          "lead": "用が済んだら すっきり削除",
-          "benefit": "スクショ内の文字で 検索できる"
+          "lead": "用が済んだら、すっきり削除",
+          "benefit": "スクショ内の文字で、検索できる"
         }
       ],
       "hook_best": "b"
@@ -7211,16 +7031,15 @@
         "#캡처",
         "#사진",
         "#앨범",
-        "#관리",
         "#ShotInbox"
       ],
       "keywords": [
         "캡처",
         "사진",
         "앨범",
-        "관리",
         "중복",
-        "유사"
+        "유사",
+        "이미지"
       ],
       "keyline": "자동 분류·OCR 검색·갤러리 정리·타임라인",
       "compliance": {
@@ -7258,11 +7077,9 @@
       "name": "ShotInbox AI: Screenshots",
       "search": "ShotInbox",
       "tags": [
-        "#Screenshots",
-        "#Ordner",
-        "#Reiniger",
-        "#Duplikate",
-        "#Ähnliche",
+        "#FotosAufräumen",
+        "#Texterkennung",
+        "#OCRSuche",
         "#ShotInbox"
       ],
       "keywords": [
@@ -7310,10 +7127,8 @@
       "search": "Sono Note",
       "tags": [
         "#VoiceToTextNotes",
-        "#Transcription",
-        "#Speech",
-        "#Audio",
-        "#Dictation",
+        "#TranscribeMeetings",
+        "#Lectures",
         "#SonoNote"
       ],
       "keywords": [
@@ -7364,7 +7179,6 @@
         "#語音筆記",
         "#逐字稿",
         "#語音輸入",
-        "#會議記錄",
         "#SonoNote"
       ],
       "keywords": [
@@ -7386,18 +7200,18 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "錄音一停 筆記馬上好",
-          "benefit": "自動轉文字 再整理乾淨"
+          "lead": "錄音一停，筆記馬上好",
+          "benefit": "自動轉文字，再整理乾淨"
         },
         {
           "id": "b",
-          "lead": "自動轉文字 再整理乾淨",
-          "benefit": "摘要和重點 一次給你"
+          "lead": "自動轉文字，再整理乾淨",
+          "benefit": "摘要和重點，一次給你"
         },
         {
           "id": "c",
-          "lead": "待辦事項 直接幫你列好",
-          "benefit": "自動轉文字 再整理乾淨"
+          "lead": "待辦事項，直接幫你列好",
+          "benefit": "自動轉文字，再整理乾淨"
         }
       ],
       "hook_best": "b"
@@ -7412,10 +7226,8 @@
       "search": "Stay Clock",
       "tags": [
         "#FlipDeskClock",
-        "#Aesthetic",
-        "#Night",
-        "#Retro",
-        "#Calendar",
+        "#BedsideClock",
+        "#Nightstand",
         "#StayClock"
       ],
       "keywords": [
@@ -7466,7 +7278,6 @@
         "#數位時鐘",
         "#床頭時鐘",
         "#翻頁時鐘",
-        "#全螢幕時鐘",
         "#StayClock"
       ],
       "keywords": [
@@ -7489,17 +7300,17 @@
         {
           "id": "a",
           "lead": "手機在充電？讓它變床頭鐘",
-          "benefit": "大字時間 配上整月行事曆"
+          "benefit": "大字時間，配上整月行事曆"
         },
         {
           "id": "b",
-          "lead": "大字時間 配上整月行事曆",
-          "benefit": "翻頁錶面 還有更多"
+          "lead": "大字時間，配上整月行事曆",
+          "benefit": "翻頁錶面，還有更多"
         },
         {
           "id": "c",
-          "lead": "StandBy 也是 同一款錶面",
-          "benefit": "大字時間 配上整月行事曆"
+          "lead": "StandBy 也是，同一款錶面",
+          "benefit": "大字時間，配上整月行事曆"
         }
       ],
       "hook_best": "b"
@@ -7517,7 +7328,6 @@
         "#デジタル時計",
         "#目覚まし時計",
         "#ナイトスタンド",
-        "#充電スタンド",
         "#StayClock"
       ],
       "keywords": [
@@ -7525,8 +7335,8 @@
         "目覚まし時計",
         "ナイトスタンド",
         "充電スタンド",
-        "ウィジェット",
-        "壁紙時計"
+        "壁紙時計",
+        "世界時計"
       ],
       "keyline": "時計を常時表示・置き時計",
       "compliance": {
@@ -7539,18 +7349,18 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "充電中のiPhoneを 枕元の時計に",
-          "benefit": "大きな時刻と 月間カレンダー"
+          "lead": "充電中のiPhoneを、枕元の時計に",
+          "benefit": "大きな時刻と、月間カレンダー"
         },
         {
           "id": "b",
-          "lead": "大きな時刻と 月間カレンダー",
-          "benefit": "パタパタ風の 文字盤も"
+          "lead": "大きな時刻と、月間カレンダー",
+          "benefit": "パタパタ風の、文字盤も"
         },
         {
           "id": "c",
-          "lead": "スタンバイでも 同じ文字盤",
-          "benefit": "大きな時刻と 月間カレンダー"
+          "lead": "スタンバイでも、同じ文字盤",
+          "benefit": "大きな時刻と、月間カレンダー"
         }
       ],
       "hook_best": "b"
@@ -7568,7 +7378,6 @@
         "#디지털시계",
         "#협탁시계",
         "#탁상용시계",
-        "#거치대시계",
         "#StayClock"
       ],
       "keywords": [
@@ -7577,7 +7386,7 @@
         "탁상용시계",
         "거치대시계",
         "충전거치대",
-        "위젯"
+        "잠금화면"
       ],
       "keyline": "항상 켜지는 시계와 캘린더",
       "compliance": {
@@ -7616,10 +7425,8 @@
       "search": "Stay Clock",
       "tags": [
         "#KlappTischuhr",
-        "#Nachttisch",
-        "#Digitaluhr",
-        "#Kalender",
-        "#Uhrzeit",
+        "#GroßeZiffern",
+        "#Nachttischuhr",
         "#StayClock"
       ],
       "keywords": [
@@ -7667,10 +7474,9 @@
       "search": "Stay Clock",
       "tags": [
         "#ساعةمكتبرقمية",
+        "#الوقتوالتقويمبلاانقطاع",
         "#منضدةالسرير",
-        "#الاستعداد",
         "#حاملالجوال",
-        "#الشحن",
         "#StayClock"
       ],
       "keywords": [
@@ -7718,10 +7524,8 @@
       "search": "TripBee Lite",
       "tags": [
         "#TripPlanner",
-        "#Agenda",
-        "#Holiday",
-        "#Schedule",
-        "#Timeline",
+        "#TravelItinerary",
+        "#Vacation",
         "#TripBeeLite"
       ],
       "keywords": [
@@ -7767,7 +7571,6 @@
         "#旅行",
         "#度假",
         "#出遊",
-        "#假期",
         "#TripBeeLite旅程規劃"
       ],
       "keywords": [
@@ -7789,13 +7592,13 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "每次出遊都是你 排行程？",
-          "benefit": "整趟行程 一條時間軸"
+          "lead": "每次出遊都是你，排行程？",
+          "benefit": "整趟行程，一條時間軸"
         },
         {
           "id": "b",
-          "lead": "整趟行程 一條時間軸",
-          "benefit": "提醒跟著 當地時間走"
+          "lead": "整趟行程，一條時間軸",
+          "benefit": "提醒跟著，當地時間走"
         }
       ],
       "hook_best": "b"
@@ -7813,7 +7616,6 @@
         "#旅先",
         "#観光",
         "#休暇",
-        "#連休",
         "#TripBeeLite旅程プラン"
       ],
       "keywords": [
@@ -7836,12 +7638,12 @@
         {
           "id": "a",
           "lead": "旅行の幹事、今回もあなた？",
-          "benefit": "旅のしおりが タイムラインに"
+          "benefit": "旅のしおりが、タイムラインに"
         },
         {
           "id": "b",
-          "lead": "旅のしおりが タイムラインに",
-          "benefit": "リマインダーは 現地時間で"
+          "lead": "旅のしおりが、タイムラインに",
+          "benefit": "リマインダーは、現地時間で"
         }
       ],
       "hook_best": "b"
@@ -7859,7 +7661,6 @@
         "#여행일정",
         "#자유여행",
         "#해외여행",
-        "#국내여행",
         "#TripBeeLite여행플래너"
       ],
       "keywords": [
@@ -7901,10 +7702,9 @@
       "search": "Trip Planet",
       "tags": [
         "#KidsTravelGames",
-        "#Vacation",
-        "#Airplane",
-        "#Toddler",
-        "#Preschool",
+        "#RoadTrip",
+        "#FlightMissions",
+        "#PassportStamps",
         "#TripPlanet"
       ],
       "keywords": [
@@ -7955,7 +7755,6 @@
         "#出遊",
         "#旅遊",
         "#國旅",
-        "#家庭旅遊",
         "#TripPlanet親子旅行遊戲"
       ],
       "keywords": [
@@ -7978,17 +7777,17 @@
         {
           "id": "a",
           "lead": "「到了沒？」讓旅途變冒險",
-          "benefit": "搭機任務包 一鍵加入"
+          "benefit": "搭機任務包，一鍵加入"
         },
         {
           "id": "b",
-          "lead": "搭機任務包 一鍵加入",
-          "benefit": "爸媽各用手機 一起規劃"
+          "lead": "搭機任務包，一鍵加入",
+          "benefit": "爸媽各用手機，一起規劃"
         },
         {
           "id": "c",
-          "lead": "小小任務 換來大大笑容",
-          "benefit": "搭機任務包 一鍵加入"
+          "lead": "小小任務，換來大大笑容",
+          "benefit": "搭機任務包，一鍵加入"
         }
       ],
       "hook_best": "b"
@@ -8006,7 +7805,6 @@
         "#機内",
         "#ドライブ",
         "#車移動",
-        "#帰省",
         "#TripPlanet子ども旅行ゲーム"
       ],
       "keywords": [
@@ -8029,17 +7827,17 @@
         {
           "id": "a",
           "lead": "「まだ着かないの？」が冒険に変わる",
-          "benefit": "移動日のミッションも ワンタップで"
+          "benefit": "移動日のミッションも、ワンタップで"
         },
         {
           "id": "b",
-          "lead": "移動日のミッションも ワンタップで",
-          "benefit": "パパもママも 一緒に計画"
+          "lead": "移動日のミッションも、ワンタップで",
+          "benefit": "パパもママも、一緒に計画"
         },
         {
           "id": "c",
-          "lead": "小さなミッション 大きな笑顔",
-          "benefit": "移動日のミッションも ワンタップで"
+          "lead": "小さなミッション、大きな笑顔",
+          "benefit": "移動日のミッションも、ワンタップで"
         }
       ],
       "hook_best": "b"
@@ -8057,7 +7855,6 @@
         "#해외",
         "#가족",
         "#유아",
-        "#기내",
         "#TripPlanet아이여행게임"
       ],
       "keywords": [
@@ -8104,11 +7901,9 @@
       "name": "Trip Planet pro děti",
       "search": "Trip Planet",
       "tags": [
-        "#Dovolená",
-        "#Cestování",
-        "#Letadlo",
-        "#Auto",
-        "#Batole",
+        "#RodinnéMiseNaCestách",
+        "#Trip",
+        "#Planet",
         "#TripPlanet"
       ],
       "keywords": [
@@ -8156,10 +7951,8 @@
       "search": "WiFi Aid Lite",
       "tags": [
         "#NetworkCheck",
-        "#Ping",
-        "#Slow",
-        "#Outage",
-        "#Troubleshoot",
+        "#Internet",
+        "#Find",
         "#WiFiAidLite"
       ],
       "keywords": [
@@ -8210,7 +8003,6 @@
         "#連不上",
         "#網路慢",
         "#網路卡卡",
-        "#不穩",
         "#WiFiAidLite"
       ],
       "keywords": [
@@ -8261,7 +8053,6 @@
         "#インターネット",
         "#接続",
         "#遅い",
-        "#重い",
         "#WiFiAidLite"
       ],
       "keywords": [
@@ -8283,7 +8074,7 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "またネットが 遅い？",
+          "lead": "またネットが、遅い？",
           "benefit": "Wi-Fi？DNS？それとも回線？"
         },
         {
@@ -8312,7 +8103,6 @@
         "#인터넷안됨",
         "#와이파이안됨",
         "#인터넷끊김",
-        "#끊김",
         "#WiFiAidLite"
       ],
       "keywords": [
@@ -8359,11 +8149,9 @@
       "name": "WiFi Aid Lite",
       "search": "WiFi Aid Lite",
       "tags": [
+        "#InternetMatiCekPenyebab",
+        "#WiFi",
         "#Jaringan",
-        "#Koneksi",
-        "#Lemot",
-        "#Lambat",
-        "#Gangguan",
         "#WiFiAidLite"
       ],
       "keywords": [
@@ -8411,10 +8199,8 @@
       "search": "Wordmate Lite",
       "tags": [
         "#WordTrail",
-        "#Spanish",
-        "#French",
-        "#Japanese",
-        "#Korean",
+        "#DailyHabit",
+        "#Learn",
         "#WordmateLite"
       ],
       "keywords": [
@@ -8465,7 +8251,6 @@
         "#英文單字",
         "#英文",
         "#日文單字",
-        "#韓語單字",
         "#WordmateLite單字"
       ],
       "keywords": [
@@ -8516,7 +8301,6 @@
         "#ボキャブラリー",
         "#韓国語",
         "#中国語",
-        "#スペイン語",
         "#WordmateLite単語"
       ],
       "keywords": [
@@ -8567,7 +8351,6 @@
         "#단어암기",
         "#영어공부",
         "#중국어",
-        "#스페인어",
         "#WordmateLite단어"
       ],
       "keywords": [
@@ -8614,11 +8397,9 @@
       "name": "Wordmate Lite 5 Kata Sehari",
       "search": "Wordmate Lite",
       "tags": [
-        "#Kosakata",
-        "#Inggris",
-        "#Belajar",
-        "#Jepang",
-        "#Korea",
+        "#44Bahasa",
+        "#SatuMenitPerHari",
+        "#Wordmate",
         "#WordmateLite"
       ],
       "keywords": [
@@ -8665,11 +8446,10 @@
       "name": "Wordmate Lite 5 từ mỗi ngày",
       "search": "Wordmate Lite",
       "tags": [
-        "#vựng",
         "#tiếnganh",
         "#ghinhớ",
-        "#nhật",
-        "#Trung",
+        "#dulịch",
+        "#ThóiQuen",
         "#WordmateLite"
       ],
       "keywords": [
@@ -8717,10 +8497,8 @@
       "search": "Zipbox",
       "tags": [
         "#UnzipRARZIP7z",
-        "#Decompress",
-        "#Unpack",
-        "#Unrar",
-        "#Gzip",
+        "#FileExtractor",
+        "#Unarchiver",
         "#Zipbox"
       ],
       "keywords": [
@@ -8771,7 +8549,6 @@
         "#密碼",
         "#分割壓縮",
         "#zip檔",
-        "#rar檔",
         "#Zipbox解壓縮"
       ],
       "keywords": [
@@ -8793,18 +8570,18 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "壓縮檔裡 只要一個檔？",
-          "benefit": "先看裡面有什麼 只取那一個"
+          "lead": "壓縮檔裡，只要一個檔？",
+          "benefit": "先看裡面有什麼，只取那一個"
         },
         {
           "id": "b",
-          "lead": "先看裡面有什麼 只取那一個",
-          "benefit": "也能壓縮成 加密 ZIP"
+          "lead": "先看裡面有什麼，只取那一個",
+          "benefit": "也能壓縮成，加密 ZIP"
         },
         {
           "id": "c",
           "lead": "ZIP、RAR、7z…支援 13 種格式",
-          "benefit": "先看裡面有什麼 只取那一個"
+          "benefit": "先看裡面有什麼，只取那一個"
         }
       ],
       "hook_best": "b"
@@ -8822,7 +8599,6 @@
         "#暗号化",
         "#分割",
         "#文字化け",
-        "#一括",
         "#Zipbox解凍"
       ],
       "keywords": [
@@ -8845,17 +8621,17 @@
         {
           "id": "a",
           "lead": "ZIPの中の 1つだけ欲しい？",
-          "benefit": "中身を見て それだけ取り出す"
+          "benefit": "中身を見て、それだけ取り出す"
         },
         {
           "id": "b",
-          "lead": "中身を見て それだけ取り出す",
-          "benefit": "暗号化ZIPも 作れる"
+          "lead": "中身を見て、それだけ取り出す",
+          "benefit": "暗号化ZIPも、作れる"
         },
         {
           "id": "c",
           "lead": "ZIP・RAR・7zなど 13形式に対応",
-          "benefit": "中身を見て それだけ取り出す"
+          "benefit": "中身を見て、それだけ取り出す"
         }
       ],
       "hook_best": "b"
@@ -8873,7 +8649,6 @@
         "#암호",
         "#분할",
         "#일괄",
-        "#파일관리",
         "#Zipbox압축풀기"
       ],
       "keywords": [
@@ -8921,10 +8696,8 @@
       "search": "AI Brief",
       "tags": [
         "#AIPromptFromFiles",
-        "#Context",
-        "#Generator",
-        "#Maker",
-        "#Chat",
+        "#SummarizePDF",
+        "#Screenshots",
         "#AIBrief"
       ],
       "keywords": [
@@ -8972,19 +8745,18 @@
       "search": "AI Brief",
       "tags": [
         "#檔案轉AI提示詞產生器",
-        "#管理",
         "#圖片轉文字",
         "#文件",
         "#生成式AI",
         "#AIBrief"
       ],
       "keywords": [
-        "管理",
         "圖片轉文字",
         "文件",
         "生成式AI",
         "範本",
-        "總結"
+        "總結",
+        "重點整理"
       ],
       "keyline": "檔案、PDF 轉提示詞與摘要",
       "compliance": {
@@ -8998,17 +8770,17 @@
         {
           "id": "a",
           "lead": "AI 答不到重點？缺的是脈絡",
-          "benefit": "截圖、PDF、筆記 一次加進來"
+          "benefit": "截圖、PDF、筆記，一次加進來"
         },
         {
           "id": "b",
-          "lead": "截圖、PDF、筆記 一次加進來",
+          "lead": "截圖、PDF、筆記，一次加進來",
           "benefit": "說清楚你要的結果"
         },
         {
           "id": "c",
-          "lead": "整理成一份摘要 貼給任何 AI",
-          "benefit": "截圖、PDF、筆記 一次加進來"
+          "lead": "整理成一份摘要，貼給任何 AI",
+          "benefit": "截圖、PDF、筆記，一次加進來"
         }
       ],
       "hook_best": "b"
@@ -9026,7 +8798,6 @@
         "#まとめ",
         "#テキスト抽出",
         "#生成AI",
-        "#議事録",
         "#AIBrief"
       ],
       "keywords": [
@@ -9049,17 +8820,17 @@
         {
           "id": "a",
           "lead": "AIの答えがズレる？足りないのは文脈",
-          "benefit": "スクショもPDFもメモも まとめて追加"
+          "benefit": "スクショもPDFもメモも、まとめて追加"
         },
         {
           "id": "b",
-          "lead": "スクショもPDFもメモも まとめて追加",
-          "benefit": "ほしい結果を 伝えるだけ"
+          "lead": "スクショもPDFもメモも、まとめて追加",
+          "benefit": "ほしい結果を、伝えるだけ"
         },
         {
           "id": "c",
-          "lead": "どのAIにも渡せる 要約に",
-          "benefit": "スクショもPDFもメモも まとめて追加"
+          "lead": "どのAIにも渡せる、要約に",
+          "benefit": "スクショもPDFもメモも、まとめて追加"
         }
       ],
       "hook_best": "b"
@@ -9077,7 +8848,6 @@
         "#캡처",
         "#생성형AI",
         "#템플릿",
-        "#정리",
         "#AIBrief"
       ],
       "keywords": [
@@ -9125,10 +8895,9 @@
       "search": "Studydown",
       "tags": [
         "#FaceDownTimer",
-        "#Study",
-        "#Focus",
-        "#Flip",
-        "#Productivity",
+        "#FacedownActivityTimeLedger",
+        "#StudyTimer",
+        "#FocusTimer",
         "#Studydown"
       ],
       "keywords": [
@@ -9179,7 +8948,6 @@
         "#讀書",
         "#唸書",
         "#自習",
-        "#時間管理",
         "#Studydown"
       ],
       "keywords": [
@@ -9201,17 +8969,17 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "手機一拿起來 計時就暫停",
+          "lead": "手機一拿起來，計時就暫停",
           "benefit": "按開始，手機翻面放桌上"
         },
         {
           "id": "b",
           "lead": "按開始，手機翻面放桌上",
-          "benefit": "本週累積 一眼看清"
+          "benefit": "本週累積，一眼看清"
         },
         {
           "id": "c",
-          "lead": "期限倒數 清清楚楚",
+          "lead": "期限倒數，清清楚楚",
           "benefit": "按開始，手機翻面放桌上"
         }
       ],
@@ -9230,7 +8998,6 @@
         "#勉強",
         "#集中",
         "#タイマー",
-        "#自習",
         "#Studydown"
       ],
       "keywords": [
@@ -9252,18 +9019,18 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "スマホを持つと タイマーが止まる",
-          "benefit": "スタートして 伏せるだけ"
+          "lead": "スマホを持つと、タイマーが止まる",
+          "benefit": "スタートして、伏せるだけ"
         },
         {
           "id": "b",
-          "lead": "スタートして 伏せるだけ",
-          "benefit": "今週の積み上げが ひと目で"
+          "lead": "スタートして、伏せるだけ",
+          "benefit": "今週の積み上げが、ひと目で"
         },
         {
           "id": "c",
-          "lead": "締め切りまで あと何日？",
-          "benefit": "スタートして 伏せるだけ"
+          "lead": "締め切りまで、あと何日？",
+          "benefit": "スタートして、伏せるだけ"
         }
       ],
       "hook_best": "b"
@@ -9281,7 +9048,6 @@
         "#공부",
         "#공부시간",
         "#스터디",
-        "#스톱워치",
         "#Studydown"
       ],
       "keywords": [
@@ -9328,11 +9094,9 @@
       "name": "UsageNow: AI Usage Tracker",
       "search": "UsageNow",
       "tags": [
-        "#Countdown",
-        "#Session",
-        "#Weekly",
-        "#Alerts",
-        "#Requests",
+        "#CopilotLimits",
+        "#UsageLimit",
+        "#Quota",
         "#UsageNow"
       ],
       "keywords": [
@@ -9386,7 +9150,6 @@
         "#配額",
         "#限制",
         "#剩餘",
-        "#倒數計時",
         "#UsageNow"
       ],
       "keywords": [
@@ -9419,7 +9182,6 @@
       "tags": [
         "#上限",
         "#トークン",
-        "#ウィジェット",
         "#リセット",
         "#利用状況",
         "#UsageNow"
@@ -9430,7 +9192,7 @@
         "使用制限",
         "上限",
         "トークン",
-        "ウィジェット"
+        "リセット"
       ],
       "keyline": "Claude・Codex・Copilot・Gemini残量",
       "duration": 12.5,
@@ -9446,18 +9208,18 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "いいところで 使用上限の通知…",
-          "benefit": "UsageNowで 全アカウントの残量"
+          "lead": "いいところで、使用上限の通知…",
+          "benefit": "UsageNowで、全アカウントの残量"
         },
         {
           "id": "b",
-          "lead": "UsageNowで 全アカウントの残量",
+          "lead": "UsageNowで、全アカウントの残量",
           "benefit": "5時間・週間ごとに 90%でお知らせ"
         },
         {
           "id": "c",
-          "lead": "リセット時刻が わかる",
-          "benefit": "UsageNowで 全アカウントの残量"
+          "lead": "リセット時刻が、わかる",
+          "benefit": "UsageNowで、全アカウントの残量"
         }
       ],
       "hook_best": "b"
@@ -9471,11 +9233,9 @@
       "name": "UsageNow: KI-Nutzung Tracker",
       "search": "UsageNow",
       "tags": [
-        "#Quota",
-        "#Zähler",
-        "#Countdown",
+        "#CopilotLimits",
         "#Programmierer",
-        "#Zurücksetzen",
+        "#KINutzung",
         "#UsageNow"
       ],
       "keywords": [
@@ -9525,11 +9285,9 @@
       "name": "UsageNow: Monitor de uso IA",
       "search": "UsageNow",
       "tags": [
-        "#Contador",
-        "#Reinicio",
-        "#Programador",
-        "#Restante",
+        "#LímitesClaude",
         "#CuentaAtrás",
+        "#Copilot",
         "#UsageNow"
       ],
       "keywords": [
@@ -9579,11 +9337,9 @@
       "name": "UsageNow : Suivi d'usage IA",
       "search": "UsageNow",
       "tags": [
-        "#Compteur",
-        "#Jeton",
-        "#Développeur",
-        "#Réinitialisation",
+        "#LimitesClaude",
         "#CompteÀRebours",
+        "#Copilot",
         "#UsageNow"
       ],
       "keywords": [
@@ -9633,11 +9389,9 @@
       "name": "CountDaysNow: Event Counter",
       "search": "CountDaysNow",
       "tags": [
-        "#Birthday",
-        "#Anniversary",
-        "#Lock",
-        "#Screen",
-        "#Reminder",
+        "#CountdownPlan",
+        "#WorkBackwards",
+        "#LockScreen",
         "#CountDaysNow"
       ],
       "keywords": [
@@ -9688,7 +9442,6 @@
       "tags": [
         "#農曆",
         "#鎖定畫面",
-        "#小工具",
         "#戀愛紀念",
         "#結婚週年",
         "#CountDaysNow"
@@ -9699,7 +9452,7 @@
         "還有幾天",
         "農曆",
         "鎖定畫面",
-        "小工具"
+        "戀愛紀念"
       ],
       "keyline": "倒數日・倒數小工具・紀念日・每日焦點",
       "compliance": {
@@ -9714,18 +9467,18 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "考試、旅行、演唱會 還剩幾天？",
-          "benefit": "重要日子 放上主畫面小工具"
+          "lead": "考試、旅行、演唱會，還剩幾天？",
+          "benefit": "重要日子，放上主畫面小工具"
         },
         {
           "id": "b",
-          "lead": "重要日子 放上主畫面小工具",
-          "benefit": "私人事件 用 Face ID 鎖住"
+          "lead": "重要日子，放上主畫面小工具",
+          "benefit": "私人事件，用 Face ID 鎖住"
         },
         {
           "id": "c",
-          "lead": "每款外觀 都有自己的配色",
-          "benefit": "重要日子 放上主畫面小工具"
+          "lead": "每款外觀，都有自己的配色",
+          "benefit": "重要日子，放上主畫面小工具"
         }
       ],
       "hook_best": "b"
@@ -9739,7 +9492,6 @@
       "name": "CountDaysNow: Event Counter",
       "search": "CountDaysNow",
       "tags": [
-        "#ウィジェット",
         "#ロック画面",
         "#推し活",
         "#受験",
@@ -9750,9 +9502,9 @@
         "経過日数",
         "日数計算",
         "誕生日",
-        "ウィジェット",
         "ロック画面",
-        "推し活"
+        "推し活",
+        "受験"
       ],
       "keyline": "カウントダウン・あと何日・記念日・今日のフォーカス",
       "compliance": {
@@ -9767,18 +9519,18 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "試験も旅行もライブも あと何日？",
-          "benefit": "大切な日を ウィジェットに"
+          "lead": "試験も旅行もライブも、あと何日？",
+          "benefit": "大切な日を、ウィジェットに"
         },
         {
           "id": "b",
-          "lead": "大切な日を ウィジェットに",
+          "lead": "大切な日を、ウィジェットに",
           "benefit": "大切な予定は Face IDでロック"
         },
         {
           "id": "c",
-          "lead": "スキンごとに 配色が違う",
-          "benefit": "大切な日を ウィジェットに"
+          "lead": "スキンごとに、配色が違う",
+          "benefit": "大切な日を、ウィジェットに"
         }
       ],
       "hook_best": "b"
@@ -9796,7 +9548,6 @@
         "#생일",
         "#커플",
         "#수능",
-        "#전역일",
         "#CountDaysNow"
       ],
       "keywords": [
@@ -9845,11 +9596,9 @@
       "name": "Lumi Mission Planet: Routines",
       "search": "Lumi Mission Planet",
       "tags": [
-        "#Motivation",
-        "#Brushing",
-        "#Teeth",
-        "#Tidy",
-        "#Picky",
+        "#KidsChores",
+        "#StickerBoard",
+        "#Reward",
         "#LumiMissionPlanet"
       ],
       "keywords": [
@@ -9902,7 +9651,6 @@
         "#吃飯",
         "#挑食",
         "#收玩具",
-        "#睡前",
         "#Lumi任務星球"
       ],
       "keywords": [
@@ -9926,18 +9674,18 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "玩具又 丟滿地？",
-          "benefit": "收玩具 變成小任務"
+          "lead": "玩具又，丟滿地？",
+          "benefit": "收玩具，變成小任務"
         },
         {
           "id": "b",
-          "lead": "收玩具 變成小任務",
-          "benefit": "完成任務 賺星星"
+          "lead": "收玩具，變成小任務",
+          "benefit": "完成任務，賺星星"
         },
         {
           "id": "c",
-          "lead": "夥伴陪孩子 一天天長大",
-          "benefit": "收玩具 變成小任務"
+          "lead": "夥伴陪孩子，一天天長大",
+          "benefit": "收玩具，變成小任務"
         }
       ],
       "hook_best": "b"
@@ -9955,7 +9703,6 @@
         "#偏食",
         "#完食",
         "#はみがき",
-        "#おかたづけ",
         "#Lumiミッション星"
       ],
       "keywords": [
@@ -9979,18 +9726,18 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "おもちゃ、また 出しっぱなし？",
-          "benefit": "おかたづけを ミッションに"
+          "lead": "おもちゃ、また、出しっぱなし？",
+          "benefit": "おかたづけを、ミッションに"
         },
         {
           "id": "b",
-          "lead": "おかたづけを ミッションに",
-          "benefit": "ミッションで 星をゲット"
+          "lead": "おかたづけを、ミッションに",
+          "benefit": "ミッションで、星をゲット"
         },
         {
           "id": "c",
-          "lead": "相棒も毎日 成長する",
-          "benefit": "おかたづけを ミッションに"
+          "lead": "相棒も毎日、成長する",
+          "benefit": "おかたづけを、ミッションに"
         }
       ],
       "hook_best": "b"
@@ -10008,7 +9755,6 @@
         "#정리정돈",
         "#잠자리",
         "#수면",
-        "#아침",
         "#Lumi미션별"
       ],
       "keywords": [
@@ -10057,11 +9803,9 @@
       "name": "Lumi Πλανήτης Αποστολών",
       "search": "Lumi Mission Planet",
       "tags": [
-        "#ρουτίνα",
-        "#νήπιο",
-        "#προσχολική",
-        "#βούρτσισμα",
-        "#δόντια",
+        "#Πίνακαςανταμοιβήςπαιδιών",
+        "#Lumi",
+        "#Πλανήτης",
         "#LumiMissionPlanet"
       ],
       "keywords": [
@@ -10110,11 +9854,10 @@
       "name": "Lumi كوكب المهام",
       "search": "Lumi Mission Planet",
       "tags": [
-        "#سلوك",
-        "#عادات",
+        "#وقتالنوم",
+        "#جدولالمكافآتوالملصقاتللطفل",
         "#تنظيفالأسنان",
         "#ترتيبالألعاب",
-        "#وقتالنوم",
         "#LumiMissionPlanet"
       ],
       "keywords": [
@@ -10163,11 +9906,9 @@
       "name": "Snapport Lite: Take ID Photos",
       "search": "Snapport Lite",
       "tags": [
+        "#Photo",
+        "#Headshot",
         "#China",
-        "#Inch",
-        "#Picture",
-        "#Printable",
-        "#Sheet",
         "#SnapportLite"
       ],
       "keywords": [
@@ -10220,7 +9961,6 @@
         "#像素",
         "#解析度",
         "#自拍",
-        "#形象照",
         "#SnapportLite"
       ],
       "keywords": [
@@ -10244,18 +9984,18 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "需要特定尺寸 的照片嗎？",
-          "benefit": "涵蓋 28 個 國家與地區"
+          "lead": "需要特定尺寸，的照片嗎？",
+          "benefit": "涵蓋 28 個，國家與地區"
         },
         {
           "id": "b",
-          "lead": "涵蓋 28 個 國家與地區",
-          "benefit": "縮放、拖曳、旋轉 微調裁切"
+          "lead": "涵蓋 28 個，國家與地區",
+          "benefit": "縮放、拖曳、旋轉，微調裁切"
         },
         {
           "id": "c",
           "lead": "離線也能用",
-          "benefit": "涵蓋 28 個 國家與地區"
+          "benefit": "涵蓋 28 個，國家與地區"
         }
       ],
       "hook_best": "b"
@@ -10273,7 +10013,6 @@
         "#背景白",
         "#背景色",
         "#切り抜き",
-        "#トリミング",
         "#SnapportLite"
       ],
       "keywords": [
@@ -10297,18 +10036,18 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "決まったサイズの 写真が必要？",
-          "benefit": "28の国と地域に 対応"
+          "lead": "決まったサイズの、写真が必要？",
+          "benefit": "28の国と地域に、対応"
         },
         {
           "id": "b",
-          "lead": "28の国と地域に 対応",
-          "benefit": "ピンチ・移動・回転で 微調整"
+          "lead": "28の国と地域に、対応",
+          "benefit": "ピンチ・移動・回転で、微調整"
         },
         {
           "id": "c",
           "lead": "オフラインで使える",
-          "benefit": "28の国と地域に 対応"
+          "benefit": "28の国と地域に、対応"
         }
       ],
       "hook_best": "b"
@@ -10326,7 +10065,6 @@
         "#배경지우기",
         "#흰배경",
         "#배경색",
-        "#누끼",
         "#SnapportLite"
       ],
       "keywords": [
@@ -10375,11 +10113,10 @@
       "name": "Snapport Lite: Ambil pasfoto",
       "search": "Snapport Lite",
       "tags": [
+        "#BackgroundBiru",
         "#GantiBackground",
         "#LatarPutih",
-        "#Cetak",
-        "#Piksel",
-        "#Selfie",
+        "#PotretPresisiSesuaiUkuran",
         "#SnapportLite"
       ],
       "keywords": [
@@ -10432,7 +10169,6 @@
         "#táchnền",
         "#inảnh",
         "#cỡảnh",
-        "#Selfie",
         "#SnapportLite"
       ],
       "keywords": [
@@ -10481,11 +10217,10 @@
       "name": "Snapport Lite: Foto na doklady",
       "search": "Snapport Lite",
       "tags": [
-        "#BíléPozadí",
         "#OdstranitPozadí",
-        "#Tisk",
-        "#Pixely",
-        "#Životopis",
+        "#PortrétyVPřesnémRozměru",
+        "#VelikostFotky",
+        "#BíléPozadí",
         "#SnapportLite"
       ],
       "keywords": [
@@ -10534,10 +10269,9 @@
       "name": "Unblurry Pro: Unblur & HD",
       "search": "Unblurry Pro",
       "tags": [
-        "#Clear",
-        "#Quality",
-        "#Upscale",
-        "#Text",
+        "#RemoveBlur",
+        "#PhotoEnhancer",
+        "#FixBlurry",
         "#SuperResolution",
         "#UnblurryPro"
       ],
@@ -10591,7 +10325,6 @@
         "#照片增強",
         "#高畫質",
         "#HD照片",
-        "#4K照片",
         "#Unblurry照片變清晰"
       ],
       "keywords": [
@@ -10615,18 +10348,18 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "手一抖 照片就糊了？",
-          "benefit": "銳化 拯救相機手震"
+          "lead": "手一抖，照片就糊了？",
+          "benefit": "銳化，拯救相機手震"
         },
         {
           "id": "b",
-          "lead": "銳化 拯救相機手震",
+          "lead": "銳化，拯救相機手震",
           "benefit": "太暗了？低光源幫你提亮"
         },
         {
           "id": "c",
-          "lead": "效果自然 保留真實色彩",
-          "benefit": "銳化 拯救相機手震"
+          "lead": "效果自然，保留真實色彩",
+          "benefit": "銳化，拯救相機手震"
         }
       ],
       "hook_best": "b"
@@ -10644,7 +10377,6 @@
         "#ピンボケ補正",
         "#拡大",
         "#ノイズ除去",
-        "#手ブレ",
         "#Unblurry写真高画質化"
       ],
       "keywords": [
@@ -10668,18 +10400,18 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "手ブレで 写真がぼやけた？",
-          "benefit": "シャープで 手ブレを救済"
+          "lead": "手ブレで、写真がぼやけた？",
+          "benefit": "シャープで、手ブレを救済"
         },
         {
           "id": "b",
-          "lead": "シャープで 手ブレを救済",
-          "benefit": "暗い写真も ローライトで明るく"
+          "lead": "シャープで、手ブレを救済",
+          "benefit": "暗い写真も、ローライトで明るく"
         },
         {
           "id": "c",
-          "lead": "本来の色を守る 自然な仕上がり",
-          "benefit": "シャープで 手ブレを救済"
+          "lead": "本来の色を守る、自然な仕上がり",
+          "benefit": "シャープで、手ブレを救済"
         }
       ],
       "hook_best": "b"
@@ -10697,7 +10429,6 @@
         "#얼굴",
         "#어두운",
         "#밝게하기",
-        "#높이기",
         "#Unblurry사진선명하게"
       ],
       "keywords": [
@@ -10746,11 +10477,10 @@
       "name": "Unblurry Pro: Skarpe fotos",
       "search": "Unblurry Pro",
       "tags": [
+        "#FjernSløring",
         "#ForbedrFoto",
         "#PhotoEnhancer",
         "#4KFoto",
-        "#ForstørFoto",
-        "#RetFokus",
         "#UnblurryPro"
       ],
       "keywords": [
@@ -10799,11 +10529,9 @@
       "name": "Unblurry Pro: Scherpe foto",
       "search": "Unblurry Pro",
       "tags": [
-        "#Enhancer",
+        "#OudeFotosHerstellen",
+        "#Verscherpen",
         "#Vergroten",
-        "#Kwaliteit",
-        "#Helder",
-        "#Resolutie",
         "#UnblurryPro"
       ],
       "keywords": [
@@ -10852,11 +10580,10 @@
       "name": "Unblurry Pro: Skarpe foto",
       "search": "Unblurry Pro",
       "tags": [
+        "#FjernUskarphet",
         "#ForbedreBilde",
         "#PhotoEnhancer",
         "#HDBilde",
-        "#4KBilde",
-        "#Uklar",
         "#UnblurryPro"
       ],
       "keywords": [
@@ -10905,11 +10632,9 @@
       "name": "Unblurry Pro: Foto Nítida",
       "search": "Unblurry Pro",
       "tags": [
-        "#Qualidade",
-        "#Aumentar",
-        "#Imagem",
-        "#Desembaçar",
-        "#Nitidez",
+        "#RestaurarFotosAntigas",
+        "#PhotoEnhancer",
+        "#Nítida",
         "#UnblurryPro"
       ],
       "keywords": [
@@ -10958,11 +10683,9 @@
       "name": "G+Money Lite: Trip Spending",
       "search": "G+Money Lite",
       "tags": [
-        "#Abroad",
-        "#Foreign",
-        "#Overseas",
-        "#Daily",
-        "#Limit",
+        "#VacationBudgetPlanner",
+        "#DailyLimit",
+        "#Travel",
         "#GMoneyLite"
       ],
       "keywords": [
@@ -11015,7 +10738,6 @@
         "#消費記錄",
         "#支出紀錄",
         "#生活記帳",
-        "#預算管理",
         "#GMoneyLite旅行記帳"
       ],
       "keywords": [
@@ -11040,17 +10762,17 @@
         {
           "id": "a",
           "lead": "出國沒網路？離線照樣換算",
-          "benefit": "約每 6 小時 自動抓最新匯率"
+          "benefit": "約每 6 小時，自動抓最新匯率"
         },
         {
           "id": "b",
-          "lead": "約每 6 小時 自動抓最新匯率",
-          "benefit": "吃、住、買 分類統計"
+          "lead": "約每 6 小時，自動抓最新匯率",
+          "benefit": "吃、住、買，分類統計"
         },
         {
           "id": "c",
-          "lead": "每趟旅程 分開記",
-          "benefit": "約每 6 小時 自動抓最新匯率"
+          "lead": "每趟旅程，分開記",
+          "benefit": "約每 6 小時，自動抓最新匯率"
         }
       ],
       "hook_best": "b"
@@ -11068,7 +10790,6 @@
         "#ホーム画面",
         "#スマートウォッチ",
         "#シンプル",
-        "#使いすぎ防止",
         "#GMoneyLite旅の家計簿"
       ],
       "keywords": [
@@ -11093,17 +10814,17 @@
         {
           "id": "a",
           "lead": "旅先で圏外？オフラインでも換算",
-          "benefit": "最新レートを 約6時間ごとに取得"
+          "benefit": "最新レートを、約6時間ごとに取得"
         },
         {
           "id": "b",
-          "lead": "最新レートを 約6時間ごとに取得",
-          "benefit": "食費もホテルも カテゴリ別に"
+          "lead": "最新レートを、約6時間ごとに取得",
+          "benefit": "食費もホテルも、カテゴリ別に"
         },
         {
           "id": "c",
-          "lead": "旅程ごとに 分けて記録",
-          "benefit": "最新レートを 約6時間ごとに取得"
+          "lead": "旅程ごとに、分けて記録",
+          "benefit": "最新レートを、約6時間ごとに取得"
         }
       ],
       "hook_best": "b"
@@ -11121,7 +10842,6 @@
         "#손목",
         "#홈화면",
         "#스마트워치",
-        "#통화",
         "#GMoneyLite여행가계부"
       ],
       "keywords": [
@@ -11170,11 +10890,9 @@
       "name": "LockHour Pro: Block Apps",
       "search": "LockHour Pro Block Apps",
       "tags": [
-        "#Study",
-        "#Detox",
-        "#Phone",
-        "#Addiction",
-        "#Social",
+        "#AppBlocker",
+        "#ScreenTime",
+        "#DeepWork",
         "#LockHourProBlockApps"
       ],
       "keywords": [
@@ -11227,7 +10945,6 @@
         "#時間管理",
         "#手機成癮",
         "#數位排毒",
-        "#拖延症",
         "#LockHourPro封鎖App"
       ],
       "keywords": [
@@ -11252,17 +10969,17 @@
         {
           "id": "a",
           "lead": "又滑到半夜？",
-          "benefit": "各種情境的 專注模式"
+          "benefit": "各種情境的，專注模式"
         },
         {
           "id": "b",
-          "lead": "各種情境的 專注模式",
-          "benefit": "漂亮的倒數 專注更有成就感"
+          "lead": "各種情境的，專注模式",
+          "benefit": "漂亮的倒數，專注更有成就感"
         },
         {
           "id": "c",
-          "lead": "睡前放鬆 終結深夜滑手機",
-          "benefit": "各種情境的 專注模式"
+          "lead": "睡前放鬆，終結深夜滑手機",
+          "benefit": "各種情境的，專注模式"
         }
       ],
       "hook_best": "b"
@@ -11280,7 +10997,6 @@
         "#時間管理",
         "#デジタルデトックス",
         "#自制",
-        "#作業",
         "#LockHourProアプリ制限"
       ],
       "keywords": [
@@ -11304,18 +11020,18 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "また夜更かし スクロール？",
-          "benefit": "場面ごとの 集中モード"
+          "lead": "また夜更かし、スクロール？",
+          "benefit": "場面ごとの、集中モード"
         },
         {
           "id": "b",
-          "lead": "場面ごとの 集中モード",
-          "benefit": "美しいカウントダウン 集中が報われる"
+          "lead": "場面ごとの、集中モード",
+          "benefit": "美しいカウントダウン、集中が報われる"
         },
         {
           "id": "c",
-          "lead": "おやすみ前で スクロールを止める",
-          "benefit": "場面ごとの 集中モード"
+          "lead": "おやすみ前で、スクロールを止める",
+          "benefit": "場面ごとの、集中モード"
         }
       ],
       "hook_best": "b"
@@ -11333,7 +11049,6 @@
         "#공부",
         "#시간관리",
         "#자기관리",
-        "#딥워크",
         "#LockHourPro앱차단"
       ],
       "keywords": [
@@ -11382,11 +11097,9 @@
       "name": "Lumi Bopomofo",
       "search": "Lumi Bopomofo",
       "tags": [
-        "#Traditional",
-        "#Tones",
-        "#Pronunciation",
-        "#Preschool",
-        "#Writing",
+        "#StrokeOrder",
+        "#Kids",
+        "#Learn",
         "#LumiBopomofo"
       ],
       "keywords": [
@@ -11439,7 +11152,6 @@
         "#注音拼音",
         "#拼音練習",
         "#聲調",
-        "#聲母",
         "#Lumi注音星球"
       ],
       "keywords": [
@@ -11464,17 +11176,17 @@
         {
           "id": "a",
           "lead": "準備上小一？先玩注音",
-          "benefit": "選對注音 餵小夥伴"
+          "benefit": "選對注音，餵小夥伴"
         },
         {
           "id": "b",
-          "lead": "選對注音 餵小夥伴",
-          "benefit": "贏得星星與 成就徽章"
+          "lead": "選對注音，餵小夥伴",
+          "benefit": "贏得星星與，成就徽章"
         },
         {
           "id": "c",
-          "lead": "今日複習 再練一次",
-          "benefit": "選對注音 餵小夥伴"
+          "lead": "今日複習，再練一次",
+          "benefit": "選對注音，餵小夥伴"
         }
       ],
       "hook_best": "c"
@@ -11492,7 +11204,6 @@
         "#声調",
         "#書き順",
         "#なぞり書き",
-        "#こども",
         "#Lumiボポモフォ"
       ],
       "keywords": [
@@ -11516,18 +11227,18 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "注音符号の はじめの一歩",
-          "benefit": "正しい記号で フレンドにごはん"
+          "lead": "注音符号の、はじめの一歩",
+          "benefit": "正しい記号で、フレンドにごはん"
         },
         {
           "id": "b",
-          "lead": "正しい記号で フレンドにごはん",
-          "benefit": "星とバッジを ゲット"
+          "lead": "正しい記号で、フレンドにごはん",
+          "benefit": "星とバッジを、ゲット"
         },
         {
           "id": "c",
-          "lead": "今日の復習で もう一度",
-          "benefit": "正しい記号で フレンドにごはん"
+          "lead": "今日の復習で、もう一度",
+          "benefit": "正しい記号で、フレンドにごはん"
         }
       ],
       "hook_best": "b"
@@ -11545,7 +11256,6 @@
         "#유아중국어",
         "#중국어기초",
         "#중국어입문",
-        "#획순",
         "#Lumi보포모포"
       ],
       "keywords": [
@@ -11597,7 +11307,6 @@
         "#ĐàiLoan",
         "#luyệnviết",
         "#mầmnon",
-        "#Game",
         "#TròChơi",
         "#LumiBopomofo"
       ],
@@ -11647,11 +11356,9 @@
       "name": "LED Moving Text",
       "search": "LED Moving Text",
       "tags": [
+        "#ScrollingLEDSign",
+        "#Banner",
         "#Scroller",
-        "#Marquee",
-        "#Billboard",
-        "#Ticker",
-        "#Neon",
         "#LEDMovingText"
       ],
       "keywords": [
@@ -11703,7 +11410,6 @@
         "#字幕機",
         "#電子看板",
         "#手燈",
-        "#舉牌",
         "#LEDMovingText"
       ],
       "keywords": [
@@ -11727,17 +11433,17 @@
         {
           "id": "a",
           "lead": "把手機變成 LED 看板",
-          "benefit": "隔著人群 也看得清楚"
+          "benefit": "隔著人群，也看得清楚"
         },
         {
           "id": "b",
-          "lead": "隔著人群 也看得清楚",
-          "benefit": "邊打字 即時彩色預覽"
+          "lead": "隔著人群，也看得清楚",
+          "benefit": "邊打字，即時彩色預覽"
         },
         {
           "id": "c",
           "lead": "彩虹、漸層文字 108 種顏色",
-          "benefit": "隔著人群 也看得清楚"
+          "benefit": "隔著人群，也看得清楚"
         }
       ],
       "hook_best": "b"
@@ -11755,7 +11461,6 @@
         "#カンペ",
         "#うちわ文字",
         "#応援ボード",
-        "#推し活",
         "#LEDMovingText"
       ],
       "keywords": [
@@ -11778,18 +11483,18 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "スマホが 電光掲示板に",
-          "benefit": "遠くからでも はっきり見える"
+          "lead": "スマホが、電光掲示板に",
+          "benefit": "遠くからでも、はっきり見える"
         },
         {
           "id": "b",
-          "lead": "遠くからでも はっきり見える",
-          "benefit": "打ったそばから カラーで反映"
+          "lead": "遠くからでも、はっきり見える",
+          "benefit": "打ったそばから、カラーで反映"
         },
         {
           "id": "c",
           "lead": "虹色・グラデーション文字 108色",
-          "benefit": "遠くからでも はっきり見える"
+          "benefit": "遠くからでも、はっきり見える"
         }
       ],
       "hook_best": "b"
@@ -11807,7 +11512,6 @@
         "#응원",
         "#손팻말",
         "#플래카드",
-        "#현수막",
         "#LEDMovingText"
       ],
       "keywords": [
@@ -11855,11 +11559,9 @@
       "name": "LED Moving Text",
       "search": "LED Moving Text",
       "tags": [
-        "#Leuchttafel",
         "#Anzeigetafel",
         "#Namensschild",
-        "#Schriftzug",
-        "#Konzert",
+        "#Laufschrift",
         "#LEDMovingText"
       ],
       "keywords": [
@@ -11911,7 +11613,6 @@
         "#คอนเสิร์ต",
         "#เชียร์",
         "#ข้อความ",
-        "#นีออน",
         "#LEDMovingText"
       ],
       "keywords": [
@@ -11960,10 +11661,8 @@
       "search": "DailyMate Phrases",
       "tags": [
         "#LanguagePhrases",
-        "#Everyday",
-        "#German",
-        "#Phrasebook",
-        "#Situations",
+        "#LearnSpanish",
+        "#French",
         "#DailyMatePhrases"
       ],
       "keywords": [
@@ -12014,7 +11713,6 @@
         "#口說",
         "#出國",
         "#西班牙文",
-        "#法文",
         "#DailyMate用句子學語言"
       ],
       "keywords": [
@@ -12036,18 +11734,18 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "主畫面 秒變會話本",
-          "benefit": "每個主題都分 初中高三級"
+          "lead": "主畫面，秒變會話本",
+          "benefit": "每個主題都分，初中高三級"
         },
         {
           "id": "b",
-          "lead": "每個主題都分 初中高三級",
+          "lead": "每個主題都分，初中高三級",
           "benefit": "47 種語言任你學"
         },
         {
           "id": "c",
-          "lead": "聽發音 再學自然回話",
-          "benefit": "每個主題都分 初中高三級"
+          "lead": "聽發音，再學自然回話",
+          "benefit": "每個主題都分，初中高三級"
         }
       ],
       "hook_best": "b"
@@ -12065,7 +11763,6 @@
         "#実用",
         "#フレーズ集",
         "#日常会話",
-        "#韓国語",
         "#DailyMate文で身につく語学"
       ],
       "keywords": [
@@ -12087,7 +11784,7 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "ホーム画面が フレーズ帳に",
+          "lead": "ホーム画面が、フレーズ帳に",
           "benefit": "どのテーマも 3レベル"
         },
         {
@@ -12097,7 +11794,7 @@
         },
         {
           "id": "c",
-          "lead": "音声で聞いて 自然な返しまで",
+          "lead": "音声で聞いて、自然な返しまで",
           "benefit": "どのテーマも 3レベル"
         }
       ],
@@ -12116,7 +11813,6 @@
         "#영어회화",
         "#영어공부",
         "#일상회화",
-        "#실전회화",
         "#DailyMate문장으로배우는언어"
       ],
       "keywords": [
@@ -12164,10 +11860,8 @@
       "search": "G+Money",
       "tags": [
         "#SpendingBudget",
-        "#Export",
-        "#Bookkeeping",
-        "#Manager",
-        "#Personal",
+        "#DailyLog",
+        "#Planner",
         "#GMoney"
       ],
       "keywords": [
@@ -12218,7 +11912,6 @@
         "#多國貨幣",
         "#本機儲存",
         "#換匯",
-        "#出差",
         "#GMoney記帳"
       ],
       "keywords": [
@@ -12240,18 +11933,18 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "錢到底 花去哪了？",
-          "benefit": "按分類 看見錢花去哪"
+          "lead": "錢到底，花去哪了？",
+          "benefit": "按分類，看見錢花去哪"
         },
         {
           "id": "b",
-          "lead": "按分類 看見錢花去哪",
-          "benefit": "換算＋記帳 離線也能用"
+          "lead": "按分類，看見錢花去哪",
+          "benefit": "換算＋記帳，離線也能用"
         },
         {
           "id": "c",
-          "lead": "今天還能花多少 一目了然",
-          "benefit": "按分類 看見錢花去哪"
+          "lead": "今天還能花多少，一目了然",
+          "benefit": "按分類，看見錢花去哪"
         }
       ],
       "hook_best": "b"
@@ -12269,7 +11962,6 @@
         "#お小遣い帳",
         "#通貨換算",
         "#貯金",
-        "#支出記録",
         "#GMoney家計簿"
       ],
       "keywords": [
@@ -12291,18 +11983,18 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "お金、どこに 消えた？",
-          "benefit": "カテゴリ別に 使い道が見える"
+          "lead": "お金、どこに、消えた？",
+          "benefit": "カテゴリ別に、使い道が見える"
         },
         {
           "id": "b",
-          "lead": "カテゴリ別に 使い道が見える",
-          "benefit": "換算も記録も オフラインでOK"
+          "lead": "カテゴリ別に、使い道が見える",
+          "benefit": "換算も記録も、オフラインでOK"
         },
         {
           "id": "c",
-          "lead": "今日あといくら 使えるか一目で",
-          "benefit": "カテゴリ別に 使い道が見える"
+          "lead": "今日あといくら、使えるか一目で",
+          "benefit": "カテゴリ別に、使い道が見える"
         }
       ],
       "hook_best": "b"
@@ -12320,7 +12012,6 @@
         "#용돈기입장",
         "#환율계산기",
         "#통화변환",
-        "#가계부앱",
         "#GMoney가계부"
       ],
       "keywords": [
@@ -12368,10 +12059,8 @@
       "search": "G+Money",
       "tags": [
         "#CatatAturAnggaran",
-        "#Catatan",
-        "#Keuangan",
-        "#Konverter",
-        "#Mata",
+        "#PengeluaranWisataDanKurs",
+        "#MataUang",
         "#GMoney"
       ],
       "keywords": [
@@ -12419,10 +12108,8 @@
       "search": "HoursTag Hours to Buy",
       "tags": [
         "#HoursToBuy",
-        "#Salary",
-        "#Paycheck",
-        "#Calculator",
-        "#Income",
+        "#HourlyWage",
+        "#SpendingTracker",
         "#HoursTagHoursToBuy"
       ],
       "keywords": [
@@ -12473,7 +12160,6 @@
         "#薪水計算",
         "#工資計算",
         "#薪資計算",
-        "#工作時數",
         "#HoursTag價格換工時"
       ],
       "keywords": [
@@ -12495,18 +12181,18 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "這個要工作 幾小時？",
-          "benefit": "必要、想要 還是衝動？"
+          "lead": "這個要工作，幾小時？",
+          "benefit": "必要、想要，還是衝動？"
         },
         {
           "id": "b",
-          "lead": "必要、想要 還是衝動？",
-          "benefit": "每筆花費 都換成工時"
+          "lead": "必要、想要，還是衝動？",
+          "benefit": "每筆花費，都換成工時"
         },
         {
           "id": "c",
-          "lead": "目標也換算成 工時",
-          "benefit": "必要、想要 還是衝動？"
+          "lead": "目標也換算成，工時",
+          "benefit": "必要、想要，還是衝動？"
         }
       ],
       "hook_best": "b"
@@ -12524,7 +12210,6 @@
         "#家計簿",
         "#節約",
         "#支出管理",
-        "#お金管理",
         "#HoursTag価格を時間に"
       ],
       "keywords": [
@@ -12546,13 +12231,13 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "これ買うのに 何時間働く？",
+          "lead": "これ買うのに、何時間働く？",
           "benefit": "必要？欲しい？それとも衝動？"
         },
         {
           "id": "b",
           "lead": "必要？欲しい？それとも衝動？",
-          "benefit": "出費を時間で ふり返る"
+          "benefit": "出費を時間で、ふり返る"
         },
         {
           "id": "c",
@@ -12575,7 +12260,6 @@
         "#소비",
         "#절약",
         "#저축",
-        "#근로시간",
         "#HoursTag가격을시간으로"
       ],
       "keywords": [
@@ -12622,11 +12306,9 @@
       "name": "Lumi Bopomofo Pro: Zhuyin",
       "search": "Lumi Bopomofo Pro",
       "tags": [
-        "#Zhuyin",
-        "#Chinese",
-        "#Traditional",
-        "#Kids",
-        "#Blending",
+        "#MandarinTones",
+        "#FirstGrade",
+        "#Worksheets",
         "#LumiBopomofoPro"
       ],
       "keywords": [
@@ -12673,7 +12355,6 @@
       "name": "Lumi注音星球 Pro",
       "search": "Lumi注音星球 Pro",
       "tags": [
-        "#ㄅㄆㄇ",
         "#符號",
         "#練習",
         "#一年級",
@@ -12699,18 +12380,18 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "學注音 用釣魚的？",
-          "benefit": "聽到發音 釣出對的魚"
+          "lead": "學注音，用釣魚的？",
+          "benefit": "聽到發音，釣出對的魚"
         },
         {
           "id": "b",
-          "lead": "聽到發音 釣出對的魚",
-          "benefit": "限時挑戰 刷新紀錄"
+          "lead": "聽到發音，釣出對的魚",
+          "benefit": "限時挑戰，刷新紀錄"
         },
         {
           "id": "c",
-          "lead": "37 個注音 全部解鎖",
-          "benefit": "聽到發音 釣出對的魚"
+          "lead": "37 個注音，全部解鎖",
+          "benefit": "聽到發音，釣出對的魚"
         }
       ],
       "hook_best": "b"
@@ -12728,7 +12409,6 @@
         "#中国語",
         "#音声",
         "#子供",
-        "#幼児",
         "#LumiBopomofoPro"
       ],
       "keywords": [
@@ -12750,18 +12430,18 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "注音の練習を 釣りで？",
-          "benefit": "音を聞いて 正しい魚を釣ろう"
+          "lead": "注音の練習を、釣りで？",
+          "benefit": "音を聞いて、正しい魚を釣ろう"
         },
         {
           "id": "b",
-          "lead": "音を聞いて 正しい魚を釣ろう",
-          "benefit": "制限時間で ベストに挑戦"
+          "lead": "音を聞いて、正しい魚を釣ろう",
+          "benefit": "制限時間で、ベストに挑戦"
         },
         {
           "id": "c",
-          "lead": "37音すべて アンロック",
-          "benefit": "音を聞いて 正しい魚を釣ろう"
+          "lead": "37音すべて、アンロック",
+          "benefit": "音を聞いて、正しい魚を釣ろう"
         }
       ],
       "hook_best": "b"
@@ -12779,7 +12459,6 @@
         "#대만",
         "#번체",
         "#유아",
-        "#유치원",
         "#LumiBopomofoPro"
       ],
       "keywords": [
@@ -12827,10 +12506,8 @@
       "search": "Lumi Letters Pro",
       "tags": [
         "#KidsPhonics",
-        "#Short",
-        "#Vowel",
-        "#Phonemic",
-        "#Awareness",
+        "#EndSounds",
+        "#PhonemicAwareness",
         "#LumiLettersPro"
       ],
       "keywords": [
@@ -12881,7 +12558,6 @@
         "#美語",
         "#英語",
         "#幼兒",
-        "#國小",
         "#Lumi字母星球Pro"
       ],
       "keywords": [
@@ -12904,17 +12580,17 @@
         {
           "id": "a",
           "lead": "會唱 ABC 卻還不會拼讀？",
-          "benefit": "螢幕上描完 再印成學習單"
+          "benefit": "螢幕上描完，再印成學習單"
         },
         {
           "id": "b",
-          "lead": "螢幕上描完 再印成學習單",
-          "benefit": "孩子的進步 一眼看見"
+          "lead": "螢幕上描完，再印成學習單",
+          "benefit": "孩子的進步，一眼看見"
         },
         {
           "id": "c",
-          "lead": "收集 26 位 字母小夥伴",
-          "benefit": "螢幕上描完 再印成學習單"
+          "lead": "收集 26 位，字母小夥伴",
+          "benefit": "螢幕上描完，再印成學習單"
         }
       ],
       "hook_best": "b"
@@ -12932,7 +12608,6 @@
         "#アルファベット",
         "#えいご",
         "#英単語",
-        "#短母音",
         "#LumiレターPro"
       ],
       "keywords": [
@@ -12954,18 +12629,18 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "ABCの歌は歌えても 読むのはまだ？",
-          "benefit": "画面でなぞって プリントでも練習"
+          "lead": "ABCの歌は歌えても、読むのはまだ？",
+          "benefit": "画面でなぞって、プリントでも練習"
         },
         {
           "id": "b",
-          "lead": "画面でなぞって プリントでも練習",
-          "benefit": "成長が ひと目でわかる"
+          "lead": "画面でなぞって、プリントでも練習",
+          "benefit": "成長が、ひと目でわかる"
         },
         {
           "id": "c",
           "lead": "文字のなかま 26人を集めよう",
-          "benefit": "画面でなぞって プリントでも練習"
+          "benefit": "画面でなぞって、プリントでも練習"
         }
       ],
       "hook_best": "b"
@@ -12983,7 +12658,6 @@
         "#알파벳",
         "#단모음",
         "#자음",
-        "#모음",
         "#Lumi레터Pro"
       ],
       "keywords": [
@@ -13031,10 +12705,8 @@
       "search": "Lumi Math Pro",
       "tags": [
         "#KidsNumbers",
-        "#Reasoning",
-        "#Mental",
-        "#Competition",
-        "#Patterns",
+        "#LogicPuzzles",
+        "#WordProblems",
         "#LumiMathPro"
       ],
       "keywords": [
@@ -13085,7 +12757,6 @@
         "#論理",
         "#推理",
         "#規則性",
-        "#なぞなぞ",
         "#Lumiさんすうプラネット"
       ],
       "keywords": [
@@ -13107,18 +12778,18 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "算数プリント まだ手作り？",
-          "benefit": "レベルに合わせた20問 解答つき"
+          "lead": "算数プリント、まだ手作り？",
+          "benefit": "レベルに合わせた20問、解答つき"
         },
         {
           "id": "b",
-          "lead": "レベルに合わせた20問 解答つき",
-          "benefit": "学習レポートで にがてもひと目で"
+          "lead": "レベルに合わせた20問、解答つき",
+          "benefit": "学習レポートで、にがてもひと目で"
         },
         {
           "id": "c",
-          "lead": "子どもは遊ぶだけ プリントはワンタップ",
-          "benefit": "レベルに合わせた20問 解答つき"
+          "lead": "子どもは遊ぶだけ、プリントはワンタップ",
+          "benefit": "レベルに合わせた20問、解答つき"
         }
       ],
       "hook_best": "b"
@@ -13136,7 +12807,6 @@
         "#논리",
         "#추론",
         "#두뇌게임",
-        "#창의력",
         "#Lumi수학행성아이수학"
       ],
       "keywords": [
@@ -13183,11 +12853,9 @@
       "name": "Lumi Mission Planet Pro",
       "search": "Lumi Mission Planet Pro",
       "tags": [
-        "#Kids",
-        "#Daily",
-        "#Tasks",
-        "#Checklist",
-        "#Habit",
+        "#BedtimeRoutines",
+        "#Morning",
+        "#Lumi",
         "#LumiMissionPlanetPro"
       ],
       "keywords": [
@@ -13238,7 +12906,6 @@
         "#規律",
         "#起床",
         "#就寢",
-        "#上床",
         "#Lumi任務星球Pro"
       ],
       "keywords": [
@@ -13260,18 +12927,18 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "刷牙、吃飯、收玩具 天天像打仗？",
-          "benefit": "完成一步點一下 夥伴就歡呼"
+          "lead": "刷牙、吃飯、收玩具，天天像打仗？",
+          "benefit": "完成一步點一下，夥伴就歡呼"
         },
         {
           "id": "b",
-          "lead": "完成一步點一下 夥伴就歡呼",
-          "benefit": "完成任務 就有勝利卡片"
+          "lead": "完成一步點一下，夥伴就歡呼",
+          "benefit": "完成任務，就有勝利卡片"
         },
         {
           "id": "c",
-          "lead": "家長看得到 每一筆紀錄",
-          "benefit": "完成一步點一下 夥伴就歡呼"
+          "lead": "家長看得到，每一筆紀錄",
+          "benefit": "完成一步點一下，夥伴就歡呼"
         }
       ],
       "hook_best": "b"
@@ -13289,7 +12956,6 @@
         "#寝かしつけ",
         "#はみがき",
         "#歯磨き",
-        "#おかたづけ",
         "#Lumiミッション星Pro"
       ],
       "keywords": [
@@ -13311,18 +12977,18 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "はみがき、ごはん、片づけ 毎日バトル？",
-          "benefit": "できたら1タップ 相棒が大よろこび"
+          "lead": "はみがき、ごはん、片づけ、毎日バトル？",
+          "benefit": "できたら1タップ、相棒が大よろこび"
         },
         {
           "id": "b",
-          "lead": "できたら1タップ 相棒が大よろこび",
-          "benefit": "ミッションのあとは 記念カード"
+          "lead": "できたら1タップ、相棒が大よろこび",
+          "benefit": "ミッションのあとは、記念カード"
         },
         {
           "id": "c",
-          "lead": "保護者は すべての記録を確認",
-          "benefit": "できたら1タップ 相棒が大よろこび"
+          "lead": "保護者は、すべての記録を確認",
+          "benefit": "できたら1タップ、相棒が大よろこび"
         }
       ],
       "hook_best": "b"
@@ -13340,7 +13006,6 @@
         "#하루일과",
         "#생활계획표",
         "#등원준비",
-        "#등교준비",
         "#Lumi미션별Pro"
       ],
       "keywords": [
@@ -13388,10 +13053,9 @@
       "search": "Snapport",
       "tags": [
         "#PassportIDPhotos",
-        "#Biometric",
+        "#2x235x45Sizes",
+        "#PrintSheet",
         "#GreenCardPhoto",
-        "#Student",
-        "#BadgePhoto",
         "#Snapport"
       ],
       "keywords": [
@@ -13443,7 +13107,6 @@
         "#護照照片",
         "#簽證照片",
         "#身分證照片",
-        "#身份證照片",
         "#Snapport"
       ],
       "keywords": [
@@ -13466,18 +13129,18 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "護照照片 在家就能拍",
-          "benefit": "頭頂、眼線、下巴 對齊線"
+          "lead": "護照照片，在家就能拍",
+          "benefit": "頭頂、眼線、下巴，對齊線"
         },
         {
           "id": "b",
-          "lead": "頭頂、眼線、下巴 對齊線",
-          "benefit": "背景換成白色 灰、藍、紅也行"
+          "lead": "頭頂、眼線、下巴，對齊線",
+          "benefit": "背景換成白色，灰、藍、紅也行"
         },
         {
           "id": "c",
-          "lead": "全程在 iPhone 處理 不上傳",
-          "benefit": "頭頂、眼線、下巴 對齊線"
+          "lead": "全程在 iPhone 處理，不上傳",
+          "benefit": "頭頂、眼線、下巴，對齊線"
         }
       ],
       "hook_best": "b"
@@ -13495,7 +13158,6 @@
         "#パスポート写真",
         "#ビザ写真",
         "#履歴書写真",
-        "#マイナンバー写真",
         "#Snapport"
       ],
       "keywords": [
@@ -13519,17 +13181,17 @@
         {
           "id": "a",
           "lead": "パスポート写真、自宅で撮れる",
-          "benefit": "頭頂・目線・あごの ガイドに合わせる"
+          "benefit": "頭頂・目線・あごの、ガイドに合わせる"
         },
         {
           "id": "b",
-          "lead": "頭頂・目線・あごの ガイドに合わせる",
-          "benefit": "背景を白に グレー・青・赤も"
+          "lead": "頭頂・目線・あごの、ガイドに合わせる",
+          "benefit": "背景を白に、グレー・青・赤も"
         },
         {
           "id": "c",
-          "lead": "すべてiPhone上で処理 アップロードなし",
-          "benefit": "頭頂・目線・あごの ガイドに合わせる"
+          "lead": "すべてiPhone上で処理、アップロードなし",
+          "benefit": "頭頂・目線・あごの、ガイドに合わせる"
         }
       ],
       "hook_best": "b"
@@ -13547,7 +13209,6 @@
         "#여권사진",
         "#비자사진",
         "#신분증사진",
-        "#민증사진",
         "#Snapport"
       ],
       "keywords": [
@@ -13596,10 +13257,9 @@
       "search": "Snapport",
       "tags": [
         "#PassAusweisfoto",
+        "#35x45Passbild",
         "#BiometrischesPassbild",
-        "#Passfoto",
         "#VisumFoto",
-        "#Ausweisfoto",
         "#Snapport"
       ],
       "keywords": [
@@ -13648,10 +13308,9 @@
       "search": "Snapport",
       "tags": [
         "#FotoCarnetDNI",
+        "#HojaParaImprimir",
         "#FotoVisa",
         "#FotoIdentidad",
-        "#FotoBiométrica",
-        "#FotoDocumentos",
         "#Snapport"
       ],
       "keywords": [
@@ -13700,10 +13359,9 @@
       "search": "Snapport",
       "tags": [
         "#PhotoDidentité",
+        "#PlancheÀImprimer",
         "#PhotoVisa",
         "#PhotoOfficielle",
-        "#PhotoBiométrique",
-        "#PhotoPermis",
         "#Snapport"
       ],
       "keywords": [
@@ -13752,10 +13410,9 @@
       "search": "TripBee Pro",
       "tags": [
         "#TripPlanner",
-        "#Family",
-        "#Friends",
-        "#Shared",
-        "#Notes",
+        "#GroupTravel",
+        "#PackingList",
+        "#BoardingPass",
         "#TripBeePro"
       ],
       "keywords": [
@@ -13801,7 +13458,6 @@
         "#旅伴",
         "#親友",
         "#家人",
-        "#朋友",
         "#TripBee旅遊行程規劃"
       ],
       "keywords": [
@@ -13823,13 +13479,13 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "機票、行程 還在翻截圖？",
-          "benefit": "Apple 地圖 一鍵導航"
+          "lead": "機票、行程，還在翻截圖？",
+          "benefit": "Apple 地圖，一鍵導航"
         },
         {
           "id": "b",
-          "lead": "Apple 地圖 一鍵導航",
-          "benefit": "每趟旅程 離線也能規劃"
+          "lead": "Apple 地圖，一鍵導航",
+          "benefit": "每趟旅程，離線也能規劃"
         }
       ],
       "hook_best": "b"
@@ -13847,7 +13503,6 @@
         "#グループ",
         "#仲間",
         "#共有",
-        "#同期",
         "#TripBee旅行プランナー"
       ],
       "keywords": [
@@ -13869,13 +13524,13 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "旅の予定、まだ スクショ？",
-          "benefit": "Appleマップを ワンタップで"
+          "lead": "旅の予定、まだ、スクショ？",
+          "benefit": "Appleマップを、ワンタップで"
         },
         {
           "id": "b",
-          "lead": "Appleマップを ワンタップで",
-          "benefit": "オフラインでも 旅の計画ができる"
+          "lead": "Appleマップを、ワンタップで",
+          "benefit": "オフラインでも、旅の計画ができる"
         }
       ],
       "hook_best": "b"
@@ -13893,7 +13548,6 @@
         "#단체",
         "#모임",
         "#동행",
-        "#공유",
         "#TripBee여행플래너"
       ],
       "keywords": [
@@ -13935,10 +13589,8 @@
       "search": "WiFi Aid",
       "tags": [
         "#FindWiFiProblems",
-        "#Analyzer",
-        "#Network",
-        "#Test",
-        "#Checker",
+        "#DNSDiagnostics",
+        "#Router",
         "#WiFiAid"
       ],
       "keywords": [
@@ -13989,7 +13641,6 @@
         "#分析儀",
         "#寬頻",
         "#穩定度",
-        "#回應時間",
         "#WiFiAid找出網路問題"
       ],
       "keywords": [
@@ -14011,7 +13662,7 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "網路問題別再猜 直接看證據",
+          "lead": "網路問題別再猜，直接看證據",
           "benefit": "一鍵完成檢查"
         },
         {
@@ -14040,7 +13691,6 @@
         "#アクセスポイント",
         "#遅延",
         "#ジッター",
-        "#安定性",
         "#WiFiAidネット不調"
       ],
       "keywords": [
@@ -14072,7 +13722,7 @@
         },
         {
           "id": "c",
-          "lead": "不安定なら 詳細チェック",
+          "lead": "不安定なら、詳細チェック",
           "benefit": "ワンタップで診断"
         }
       ],
@@ -14091,7 +13741,6 @@
         "#라우터",
         "#액세스포인트",
         "#지터",
-        "#안정성",
         "#WiFiAid네트워크진단"
       ],
       "keywords": [
@@ -14100,7 +13749,7 @@
         "지터",
         "안정성",
         "IPv4",
-        "기록"
+        "광랜"
       ],
       "keyline": "네트워크 문제 진단",
       "compliance": {
@@ -14139,10 +13788,8 @@
       "search": "Wordmate",
       "tags": [
         "#Learn44Languages",
+        "#VocabularyFlashcards",
         "#Chinese",
-        "#Hindi",
-        "#Turkish",
-        "#Vietnamese",
         "#Wordmate"
       ],
       "keywords": [
@@ -14193,7 +13840,6 @@
         "#學習",
         "#外語",
         "#字彙",
-        "#發音",
         "#Wordmate背單字"
       ],
       "keywords": [
@@ -14244,7 +13890,6 @@
         "#復習",
         "#例文",
         "#発音",
-        "#韓国語",
         "#Wordmate単語学習"
       ],
       "keywords": [
@@ -14266,7 +13911,7 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "アプリを開かずに 単語学習",
+          "lead": "アプリを開かずに、単語学習",
           "benefit": "Apple Watchでも"
         },
         {
@@ -14295,7 +13940,6 @@
         "#다국어",
         "#독일어",
         "#이탈리아어",
-        "#러시아어",
         "#Wordmate단어학습"
       ],
       "keywords": [
@@ -14343,10 +13987,8 @@
       "search": "UsageNow",
       "tags": [
         "#AIUsageTracker",
+        "#CopilotLimits",
         "#UsageLimit",
-        "#Quota",
-        "#Reset",
-        "#Countdown",
         "#UsageNow"
       ],
       "keywords": [
@@ -14398,7 +14040,6 @@
         "#開發者",
         "#工程師",
         "#使用量",
-        "#限額",
         "#UsageNow"
       ],
       "keywords": [
@@ -14427,11 +14068,11 @@
         {
           "id": "b",
           "lead": "Claude、Codex、Copilot、Gemini 一起看",
-          "benefit": "剩多少、何時重置 一眼看清"
+          "benefit": "剩多少、何時重置，一眼看清"
         },
         {
           "id": "c",
-          "lead": "完整翻譯 50 種語言 繁體中文隨時切換",
+          "lead": "完整翻譯 50 種語言，繁體中文隨時切換",
           "benefit": "Claude、Codex、Copilot、Gemini 一起看"
         }
       ],
@@ -14450,7 +14091,6 @@
         "#開発者",
         "#エンジニア",
         "#使用制限",
-        "#上限",
         "#UsageNow"
       ],
       "keywords": [
@@ -14459,7 +14099,7 @@
         "使用制限",
         "上限",
         "トークン",
-        "ウィジェット"
+        "リセット"
       ],
       "keyline": "Claude・Codex・Copilot・Gemini残量",
       "duration": 13.5,
@@ -14473,17 +14113,17 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "作業の途中で またAIの上限？",
+          "lead": "作業の途中で、またAIの上限？",
           "benefit": "Claude・Codex・ Copilot・Geminiをまとめて"
         },
         {
           "id": "b",
           "lead": "Claude・Codex・ Copilot・Geminiをまとめて",
-          "benefit": "残りとリセット時刻が ひと目でわかる"
+          "benefit": "残りとリセット時刻が、ひと目でわかる"
         },
         {
           "id": "c",
-          "lead": "50の言語に 完全対応",
+          "lead": "50の言語に、完全対応",
           "benefit": "Claude・Codex・ Copilot・Geminiをまとめて"
         }
       ],
@@ -14499,10 +14139,8 @@
       "search": "UsageNow",
       "tags": [
         "#KINutzungTracker",
-        "#Entwickler",
-        "#Verbrauch",
-        "#Kontingent",
-        "#Quota",
+        "#CopilotLimits",
+        "#Programmierer",
         "#UsageNow"
       ],
       "keywords": [
@@ -14551,10 +14189,8 @@
       "search": "UsageNow",
       "tags": [
         "#MonitorDeUsoIA",
-        "#Desarrollador",
-        "#Consumo",
-        "#Cuota",
-        "#Contador",
+        "#LímitesClaude",
+        "#CuentaAtrás",
         "#UsageNow"
       ],
       "keywords": [
@@ -14603,10 +14239,8 @@
       "search": "UsageNow",
       "tags": [
         "#SuiviDusageIA",
-        "#Limite",
-        "#Utilisation",
-        "#Consommation",
-        "#Compteur",
+        "#LimitesClaude",
+        "#CompteÀRebours",
         "#UsageNow"
       ],
       "keywords": [
@@ -14655,10 +14289,8 @@
       "search": "HoursTag Lite",
       "tags": [
         "#PriceInHours",
+        "#StopImpulseBuying",
         "#Expense",
-        "#Budget",
-        "#Money",
-        "#Spending",
         "#HoursTagLite"
       ],
       "keywords": [
@@ -14710,7 +14342,6 @@
         "#存錢",
         "#省錢",
         "#開銷",
-        "#預算",
         "#HoursTagLite"
       ],
       "keywords": [
@@ -14733,18 +14364,18 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "這個要工作 幾小時？",
-          "benefit": "必要、想要 還是衝動？"
+          "lead": "這個要工作，幾小時？",
+          "benefit": "必要、想要，還是衝動？"
         },
         {
           "id": "b",
-          "lead": "必要、想要 還是衝動？",
-          "benefit": "存進你的 價值模式"
+          "lead": "必要、想要，還是衝動？",
+          "benefit": "存進你的，價值模式"
         },
         {
           "id": "c",
-          "lead": "目標也換算成 工時",
-          "benefit": "必要、想要 還是衝動？"
+          "lead": "目標也換算成，工時",
+          "benefit": "必要、想要，還是衝動？"
         }
       ],
       "hook_best": "b"
@@ -14762,7 +14393,6 @@
         "#衝動買い",
         "#防止",
         "#無駄遣い",
-        "#浪費",
         "#HoursTagLite"
       ],
       "keywords": [
@@ -14785,13 +14415,13 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "これ買うのに 何時間働く？",
+          "lead": "これ買うのに、何時間働く？",
           "benefit": "必要？欲しい？それとも衝動？"
         },
         {
           "id": "b",
           "lead": "必要？欲しい？それとも衝動？",
-          "benefit": "記録して 価値傾向に"
+          "benefit": "記録して、価値傾向に"
         },
         {
           "id": "c",
@@ -14814,7 +14444,6 @@
         "#충동구매",
         "#지름신",
         "#쇼핑",
-        "#과소비",
         "#HoursTagLite"
       ],
       "keywords": [
@@ -14863,10 +14492,9 @@
       "search": "HoursTag Lite",
       "tags": [
         "#PreisInZeit",
-        "#Impulskauf",
+        "#ImpulskäufeStoppen",
         "#LohntSich",
-        "#Geld",
-        "#Shopping",
+        "#Gewohnheiten",
         "#HoursTagLite"
       ],
       "keywords": [
@@ -14915,10 +14543,9 @@
       "search": "HoursTag Lite",
       "tags": [
         "#PrixEnHeures",
+        "#AchatConscient",
         "#AchatImpulsif",
-        "#Dépenses",
         "#VautLeCoup",
-        "#Besoin",
         "#HoursTagLite"
       ],
       "keywords": [
@@ -14966,11 +14593,9 @@
       "name": "HoursTag Lite: Price in Hours",
       "search": "HoursTag Lite",
       "tags": [
-        "#Spending",
-        "#Planner",
-        "#Finance",
-        "#Shopping",
-        "#Frugal",
+        "#StopImpulseBuying",
+        "#Price",
+        "#Hours",
         "#HoursTagLite"
       ],
       "keywords": [
@@ -15024,7 +14649,6 @@
         "#散財",
         "#物欲",
         "#買う前",
-        "#欲しい",
         "#HoursTagLite"
       ],
       "keywords": [
@@ -15050,17 +14674,17 @@
         {
           "id": "a",
           "lead": "給料もう無い…何に使った？",
-          "benefit": "HoursTag Liteで 衝動買いを時間に換算"
+          "benefit": "HoursTag Liteで、衝動買いを時間に換算"
         },
         {
           "id": "b",
-          "lead": "HoursTag Liteで 衝動買いを時間に換算",
-          "benefit": "買う前に 何時間分の労働かチェック"
+          "lead": "HoursTag Liteで、衝動買いを時間に換算",
+          "benefit": "買う前に、何時間分の労働かチェック"
         },
         {
           "id": "c",
-          "lead": "浮いた時間は 目標へ",
-          "benefit": "HoursTag Liteで 衝動買いを時間に換算"
+          "lead": "浮いた時間は、目標へ",
+          "benefit": "HoursTag Liteで、衝動買いを時間に換算"
         }
       ],
       "hook_best": "b"
@@ -15074,11 +14698,10 @@
       "name": "HoursTag Lite: Preis in Zeit",
       "search": "HoursTag Lite",
       "tags": [
-        "#Shopping",
-        "#Gewohnheiten",
         "#Minimalismus",
-        "#Stunden",
-        "#Arbeitszeit",
+        "#ImpulskäufeStoppen",
+        "#LohntSich",
+        "#Gewohnheiten",
         "#HoursTagLite"
       ],
       "keywords": [
@@ -15128,11 +14751,9 @@
       "name": "HoursTag Lite: Prix en heures",
       "search": "HoursTag Lite",
       "tags": [
-        "#Besoin",
-        "#Envie",
-        "#Shopping",
-        "#Consommation",
-        "#Gaspillage",
+        "#AchatConscient",
+        "#AchatImpulsif",
+        "#VautLeCoup",
         "#HoursTagLite"
       ],
       "keywords": [
@@ -15186,7 +14807,6 @@
         "#นีออน",
         "#สนามบิน",
         "#รับของ",
-        "#ประกาศ",
         "#LEDMovingText"
       ],
       "keywords": [
@@ -15236,11 +14856,9 @@
       "name": "LED Moving Text",
       "search": "LED Moving Text",
       "tags": [
+        "#Anzeigetafel",
+        "#Namensschild",
         "#Schriftzug",
-        "#Konzert",
-        "#Aushang",
-        "#Abholung",
-        "#Flughafen",
         "#LEDMovingText"
       ],
       "keywords": [
@@ -15294,7 +14912,6 @@
         "#ライブ",
         "#流れる文字",
         "#手持ち看板",
-        "#ネオン",
         "#LEDMovingText"
       ],
       "keywords": [
@@ -15319,18 +14936,18 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "空港の到着ロビーで 見つけてもらえない",
-          "benefit": "LED Moving Textなら テンプレートですぐ"
+          "lead": "空港の到着ロビーで、見つけてもらえない",
+          "benefit": "LED Moving Textなら、テンプレートですぐ"
         },
         {
           "id": "b",
-          "lead": "LED Moving Textなら テンプレートですぐ",
-          "benefit": "目立つ エフェクトをプラス"
+          "lead": "LED Moving Textなら、テンプレートですぐ",
+          "benefit": "目立つ、エフェクトをプラス"
         },
         {
           "id": "c",
-          "lead": "掲げれば 見つけやすい",
-          "benefit": "LED Moving Textなら テンプレートですぐ"
+          "lead": "掲げれば、見つけやすい",
+          "benefit": "LED Moving Textなら、テンプレートですぐ"
         }
       ],
       "hook_best": "b"
@@ -15344,11 +14961,10 @@
       "name": "Snapport: Pass- & Ausweisfoto",
       "search": "Snapport",
       "tags": [
-        "#Ausweisfoto",
         "#Bewerbungsfoto",
         "#LebenslaufFoto",
+        "#35x45Passbild",
         "#BiometrischesPassbild",
-        "#Passfoto",
         "#Snapport"
       ],
       "keywords": [
@@ -15399,10 +15015,9 @@
       "search": "Snapport",
       "tags": [
         "#BadgePhoto",
-        "#Layout",
-        "#Resume",
         "#WhiteBackground",
-        "#Booth",
+        "#2x235x45Sizes",
+        "#PrintSheet",
         "#Snapport"
       ],
       "keywords": [
@@ -15452,11 +15067,10 @@
       "name": "Snapport: Foto Carnet DNI",
       "search": "Snapport",
       "tags": [
+        "#FotoBiométrica",
         "#FotoDocumentos",
         "#FotoCv",
         "#FotoEstudiante",
-        "#FotoCredencial",
-        "#FotoVisa",
         "#Snapport"
       ],
       "keywords": [
@@ -15506,11 +15120,10 @@
       "name": "Snapport : Photo d'identité",
       "search": "Snapport",
       "tags": [
+        "#PhotoBiométrique",
         "#PhotoPermis",
         "#PhotoCv",
         "#PhotoÉtudiant",
-        "#BadgePhoto",
-        "#PhotoVisa",
         "#Snapport"
       ],
       "keywords": [
@@ -15560,11 +15173,9 @@
       "name": "Aim990 : entraîneur anglais",
       "search": "Aim990",
       "tags": [
-        "#Vocabulaire",
-        "#Dictée",
-        "#Score",
-        "#Révision",
-        "#Test",
+        "#TOEICLR",
+        "#Diagnostic8Min",
+        "#Anglais",
         "#Aim990"
       ],
       "keywords": [
@@ -15613,11 +15224,10 @@
       "name": "Aim990: Gia sư tiếng Anh",
       "search": "Aim990",
       "tags": [
-        "#từvựng",
-        "#chínhtả",
         "#luyệnthi",
-        "#điểm",
         "#ôntập",
+        "#thươngmại",
+        "#kỹnăng",
         "#Aim990"
       ],
       "keywords": [
@@ -15668,7 +15278,6 @@
       "tags": [
         "#上限",
         "#トークン",
-        "#ウィジェット",
         "#リセット",
         "#利用状況",
         "#UsageNow"
@@ -15679,7 +15288,7 @@
         "使用制限",
         "上限",
         "トークン",
-        "ウィジェット"
+        "リセット"
       ],
       "keyline": "Claude・Codex・Copilot・Gemini残量",
       "duration": 13.5,
@@ -15701,11 +15310,11 @@
         {
           "id": "b",
           "lead": "Claude・Codex・ Copilot・Geminiをまとめて",
-          "benefit": "残りとリセット時刻が ひと目でわかる"
+          "benefit": "残りとリセット時刻が、ひと目でわかる"
         },
         {
           "id": "c",
-          "lead": "50の言語に 完全対応",
+          "lead": "50の言語に、完全対応",
           "benefit": "Claude・Codex・ Copilot・Geminiをまとめて"
         }
       ],
@@ -15720,11 +15329,9 @@
       "name": "CV Desk: ATS Resume Builder",
       "search": "CV Desk ATS Resume",
       "tags": [
-        "#Keywords",
-        "#Parse",
-        "#Watermark",
-        "#Editable",
-        "#Applicant",
+        "#ResumeChecker",
+        "#ApplicantTracking",
+        "#TrackingSystem",
         "#CVDeskATSResume"
       ],
       "keywords": [
@@ -15773,6 +15380,8 @@
       "name": "Cyca: Menštruačný kalendár",
       "search": "Cyca",
       "tags": [
+        "#Menštruačný",
+        "#Kalendár",
         "#Nálada",
         "#Cyca"
       ],
@@ -15821,7 +15430,6 @@
         "#注音拼音",
         "#拼音練習",
         "#聲調",
-        "#聲母",
         "#Lumi注音星球"
       ],
       "keywords": [
@@ -15846,18 +15454,18 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "學注音 原來這麼好玩！",
-          "benefit": "聽聲音 選出正確的注音"
+          "lead": "學注音，原來這麼好玩！",
+          "benefit": "聽聲音，選出正確的注音"
         },
         {
           "id": "b",
-          "lead": "聽聲音 選出正確的注音",
-          "benefit": "用手指 描出筆順"
+          "lead": "聽聲音，選出正確的注音",
+          "benefit": "用手指，描出筆順"
         },
         {
           "id": "c",
-          "lead": "37 個注音小夥伴 等你收集",
-          "benefit": "聽聲音 選出正確的注音"
+          "lead": "37 個注音小夥伴，等你收集",
+          "benefit": "聽聲音，選出正確的注音"
         }
       ],
       "hook_best": "b"
@@ -15875,7 +15483,6 @@
         "#幼児",
         "#キッズ",
         "#知育",
-        "#プリント",
         "#LumiBopomofoPro"
       ],
       "keywords": [
@@ -15899,18 +15506,18 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "注音の学習を 釣りで？",
-          "benefit": "音を聞いて 正しい魚を釣ろう"
+          "lead": "注音の学習を、釣りで？",
+          "benefit": "音を聞いて、正しい魚を釣ろう"
         },
         {
           "id": "b",
-          "lead": "音を聞いて 正しい魚を釣ろう",
-          "benefit": "制限時間で ベストに挑戦"
+          "lead": "音を聞いて、正しい魚を釣ろう",
+          "benefit": "制限時間で、ベストに挑戦"
         },
         {
           "id": "c",
-          "lead": "37音すべて アンロック",
-          "benefit": "音を聞いて 正しい魚を釣ろう"
+          "lead": "37音すべて、アンロック",
+          "benefit": "音を聞いて、正しい魚を釣ろう"
         }
       ],
       "hook_best": "b"
@@ -15928,7 +15535,6 @@
         "#大小寫",
         "#筆順",
         "#學習單",
-        "#描字",
         "#Lumi字母星球Lite"
       ],
       "keywords": [
@@ -15952,17 +15558,17 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "兒童字母 滑手機也能學 ABC",
+          "lead": "兒童字母，滑手機也能學 ABC",
           "benefit": "照筆順描一描"
         },
         {
           "id": "b",
           "lead": "照筆順描一描",
-          "benefit": "聽發音 配對字母"
+          "benefit": "聽發音，配對字母"
         },
         {
           "id": "c",
-          "lead": "看看孩子 進步了多少",
+          "lead": "看看孩子，進步了多少",
           "benefit": "照筆順描一描"
         }
       ],
@@ -15977,11 +15583,9 @@
       "name": "Sereno: Sleep Sounds",
       "search": "Sereno Sleep Sounds",
       "tags": [
-        "#Pink",
-        "#Ocean",
-        "#Waves",
-        "#Thunderstorm",
-        "#Nature",
+        "#BrownNoise",
+        "#RainSounds",
+        "#Sleep",
         "#SerenoSleepSounds"
       ],
       "keywords": [
@@ -16030,11 +15634,9 @@
       "name": "Sereno: Sleep Sounds",
       "search": "Sereno Sleep Sounds",
       "tags": [
-        "#Pink",
-        "#Ocean",
-        "#Waves",
-        "#Thunderstorm",
-        "#Nature",
+        "#BrownNoise",
+        "#RainSounds",
+        "#Sleep",
         "#SerenoSleepSounds"
       ],
       "keywords": [
@@ -16084,7 +15686,6 @@
       "search": "Stay Clock",
       "tags": [
         "#充電スタンド",
-        "#ウィジェット",
         "#壁紙時計",
         "#世界時計",
         "#フォント",
@@ -16095,8 +15696,8 @@
         "目覚まし時計",
         "ナイトスタンド",
         "充電スタンド",
-        "ウィジェット",
-        "壁紙時計"
+        "壁紙時計",
+        "世界時計"
       ],
       "keyline": "時計を常時表示・置き時計",
       "compliance": {
@@ -16111,18 +15712,18 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "充電中のiPhoneを 枕元のフリップ時計に",
-          "benefit": "大きな時刻と 月間カレンダー"
+          "lead": "充電中のiPhoneを、枕元のフリップ時計に",
+          "benefit": "大きな時刻と、月間カレンダー"
         },
         {
           "id": "b",
-          "lead": "大きな時刻と 月間カレンダー",
-          "benefit": "パタパタ風の 文字盤も"
+          "lead": "大きな時刻と、月間カレンダー",
+          "benefit": "パタパタ風の、文字盤も"
         },
         {
           "id": "c",
-          "lead": "スタンバイでも 同じ文字盤",
-          "benefit": "大きな時刻と 月間カレンダー"
+          "lead": "スタンバイでも、同じ文字盤",
+          "benefit": "大きな時刻と、月間カレンダー"
         }
       ],
       "hook_best": "b"
@@ -16136,11 +15737,10 @@
       "name": "TripBee: Rencana Perjalanan",
       "search": "TripBee Rencana Perjalanan",
       "tags": [
-        "#Berbagi",
-        "#Hujan",
-        "#ZonaWaktu",
         "#BoardingPass",
-        "#Koper",
+        "#TripBareng",
+        "#DaftarBawaan",
+        "#ZonaWaktu",
         "#TripBeeRencanaPerjalanan"
       ],
       "keywords": [
@@ -16188,7 +15788,6 @@
         "#閨蜜",
         "#團體",
         "#親子",
-        "#小孩",
         "#TripBee旅遊行程規劃"
       ],
       "keywords": [
@@ -16212,13 +15811,13 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "旅遊行程 還在翻截圖？",
-          "benefit": "Apple 地圖 一鍵導航"
+          "lead": "旅遊行程，還在翻截圖？",
+          "benefit": "Apple 地圖，一鍵導航"
         },
         {
           "id": "b",
-          "lead": "Apple 地圖 一鍵導航",
-          "benefit": "每趟旅程 離線也能規劃"
+          "lead": "Apple 地圖，一鍵導航",
+          "benefit": "每趟旅程，離線也能規劃"
         }
       ],
       "hook_best": "b"
@@ -16232,11 +15831,9 @@
       "name": "Unblurry Pro: Foto Nítida",
       "search": "Unblurry Pro",
       "tags": [
-        "#Qualidade",
-        "#Aumentar",
-        "#Imagem",
-        "#Desembaçar",
-        "#Nitidez",
+        "#RestaurarFotosAntigas",
+        "#PhotoEnhancer",
+        "#Nítida",
         "#UnblurryPro"
       ],
       "keywords": [
@@ -16289,7 +15886,6 @@
         "#ピンボケ補正",
         "#拡大",
         "#ノイズ除去",
-        "#手ブレ",
         "#Unblurry写真高画質化"
       ],
       "keywords": [
@@ -16313,18 +15909,18 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "ぼやけた写真を くっきり修正",
-          "benefit": "ぼやけた1枚を 選んで"
+          "lead": "ぼやけた写真を、くっきり修正",
+          "benefit": "ぼやけた1枚を、選んで"
         },
         {
           "id": "b",
-          "lead": "ぼやけた1枚を 選んで",
+          "lead": "ぼやけた1枚を、選んで",
           "benefit": "AIが端末内で補正"
         },
         {
           "id": "c",
-          "lead": "長押しで 元画像を確認",
-          "benefit": "ぼやけた1枚を 選んで"
+          "lead": "長押しで、元画像を確認",
+          "benefit": "ぼやけた1枚を、選んで"
         }
       ],
       "hook_best": "b"
@@ -16339,10 +15935,9 @@
       "search": "EasyAM holiday alarm",
       "tags": [
         "#HolidayAlarmClock",
-        "#Workday",
-        "#Shift",
-        "#Public",
-        "#Calendar",
+        "#RingsForWork",
+        "#SkipsDaysOff",
+        "#SmartSchedule",
         "#EasyAMHolidayAlarm"
       ],
       "keywords": [
@@ -16393,7 +15988,6 @@
         "#假期",
         "#輪班",
         "#排班",
-        "#班表",
         "#EasyAM假日鬧鐘"
       ],
       "keywords": [
@@ -16415,18 +16009,18 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "放連假 鬧鐘自動不響",
-          "benefit": "國定假日 自動跳過"
+          "lead": "放連假，鬧鐘自動不響",
+          "benefit": "國定假日，自動跳過"
         },
         {
           "id": "b",
-          "lead": "國定假日 自動跳過",
-          "benefit": "請假、出遊 加進休假就不響"
+          "lead": "國定假日，自動跳過",
+          "benefit": "請假、出遊，加進休假就不響"
         },
         {
           "id": "c",
-          "lead": "內建 67 個 國家與地區",
-          "benefit": "國定假日 自動跳過"
+          "lead": "內建 67 個，國家與地區",
+          "benefit": "國定假日，自動跳過"
         }
       ],
       "hook_best": "b"
@@ -16444,7 +16038,6 @@
         "#交代勤務",
         "#夜勤",
         "#休日",
-        "#振替",
         "#EasyAM祝日目覚まし"
       ],
       "keywords": [
@@ -16466,18 +16059,18 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "祝日の朝は 目覚まし鳴らない",
-          "benefit": "祝日は 自動でスキップ"
+          "lead": "祝日の朝は、目覚まし鳴らない",
+          "benefit": "祝日は、自動でスキップ"
         },
         {
           "id": "b",
-          "lead": "祝日は 自動でスキップ",
-          "benefit": "休暇を入れれば その日も鳴らない"
+          "lead": "祝日は、自動でスキップ",
+          "benefit": "休暇を入れれば、その日も鳴らない"
         },
         {
           "id": "c",
-          "lead": "67の国と地域に 対応",
-          "benefit": "祝日は 自動でスキップ"
+          "lead": "67の国と地域に、対応",
+          "benefit": "祝日は、自動でスキップ"
         }
       ],
       "hook_best": "b"
@@ -16495,7 +16088,6 @@
         "#교대근무",
         "#평일",
         "#근무일",
-        "#직장인",
         "#EasyAM공휴일알람"
       ],
       "keywords": [
@@ -16544,8 +16136,6 @@
       "tags": [
         "#WeckerOhneFeiertage",
         "#Schichtwecker",
-        "#Schicht",
-        "#Schichtplan",
         "#Schichtdienst",
         "#EasyAMWecker"
       ],
@@ -16594,10 +16184,8 @@
       "search": "EasyAM despertador",
       "tags": [
         "#DespertadorEFeriados",
-        "#Feriado",
-        "#Folga",
-        "#Escala",
-        "#Turno",
+        "#Alarme",
+        "#Útil",
         "#EasyAMDespertador"
       ],
       "keywords": [
@@ -16648,7 +16236,6 @@
         "#알림",
         "#메모",
         "#습관",
-        "#루틴",
         "#Mochi귀여운할일"
       ],
       "keywords": [
@@ -16702,10 +16289,9 @@
       "search": "GBAGo visual saves",
       "tags": [
         "#VisualSaves",
-        "#Emulator",
-        "#Retro",
-        "#Games",
-        "#Handheld",
+        "#GameEmulator",
+        "#gbagbcgb",
+        "#SaveState",
         "#GBAGoVisualSaves"
       ],
       "keywords": [
@@ -16756,7 +16342,6 @@
         "#模擬器",
         "#遊戲模擬器",
         "#掌機",
-        "#掌機遊戲",
         "#GBAGo視覺存檔"
       ],
       "keywords": [
@@ -16778,18 +16363,18 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "辛苦的進度 再也不會消失",
-          "benefit": "存檔 4 格起跳 可擴充到 12 格・附縮圖"
+          "lead": "辛苦的進度，再也不會消失",
+          "benefit": "存檔 4 格起跳，可擴充到 12 格・附縮圖"
         },
         {
           "id": "b",
-          "lead": "存檔 4 格起跳 可擴充到 12 格・附縮圖",
-          "benefit": "每兩分鐘 自動存一張快照"
+          "lead": "存檔 4 格起跳，可擴充到 12 格・附縮圖",
+          "benefit": "每兩分鐘，自動存一張快照"
         },
         {
           "id": "c",
           "lead": "快轉最高 32 倍",
-          "benefit": "存檔 4 格起跳 可擴充到 12 格・附縮圖"
+          "benefit": "存檔 4 格起跳，可擴充到 12 格・附縮圖"
         }
       ],
       "hook_best": "b"
@@ -16807,7 +16392,6 @@
         "#エミュレーター",
         "#エミュ",
         "#レトロゲーム",
-        "#ゲーム機",
         "#GBAGo見えるセーブ"
       ],
       "keywords": [
@@ -16829,18 +16413,18 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "苦労したデータを もう二度と失わない",
-          "benefit": "セーブは4スロット 最大12まで・サムネイル付き"
+          "lead": "苦労したデータを、もう二度と失わない",
+          "benefit": "セーブは4スロット、最大12まで・サムネイル付き"
         },
         {
           "id": "b",
-          "lead": "セーブは4スロット 最大12まで・サムネイル付き",
-          "benefit": "2分ごとに 自動スナップショット"
+          "lead": "セーブは4スロット、最大12まで・サムネイル付き",
+          "benefit": "2分ごとに、自動スナップショット"
         },
         {
           "id": "c",
-          "lead": "早送り 最大32倍",
-          "benefit": "セーブは4スロット 最大12まで・サムネイル付き"
+          "lead": "早送り、最大32倍",
+          "benefit": "セーブは4スロット、最大12まで・サムネイル付き"
         }
       ],
       "hook_best": "b"
@@ -16858,7 +16442,6 @@
         "#에뮬레이터",
         "#에뮬",
         "#레트로",
-        "#고전게임",
         "#GBAGo비주얼세이브"
       ],
       "keywords": [
@@ -16908,8 +16491,6 @@
         "#VisuelleSpielstände",
         "#Emulator",
         "#Spiele",
-        "#Retro",
-        "#Handheld",
         "#GBAGoSpielstände"
       ],
       "keywords": [
@@ -16958,9 +16539,7 @@
       "tags": [
         "#SavesVisuais",
         "#Emulador",
-        "#Jogos",
         "#Retrô",
-        "#Console",
         "#GBAGoSavesVisuais"
       ],
       "keywords": [
@@ -17007,11 +16586,9 @@
       "name": "Foldable Wallpaper Studio",
       "search": "Foldable Wallpaper Studio",
       "tags": [
-        "#Fold",
-        "#Folding",
-        "#Inner",
-        "#Pair",
-        "#Pairs",
+        "#Foldable",
+        "#Wallpaper",
+        "#Studio",
         "#FoldableWallpaperStudio"
       ],
       "keywords": [
@@ -17062,7 +16639,6 @@
         "#折疊",
         "#鎖定畫面",
         "#主畫面",
-        "#原創",
         "#FoldableWallpaperStudio"
       ],
       "keywords": [
@@ -17084,18 +16660,18 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "合上，外螢幕是 特寫",
-          "benefit": "展開，內螢幕是 整片全景"
+          "lead": "合上，外螢幕是，特寫",
+          "benefit": "展開，內螢幕是，整片全景"
         },
         {
           "id": "b",
-          "lead": "展開，內螢幕是 整片全景",
-          "benefit": "5 款小工具 畫上你選的桌布"
+          "lead": "展開，內螢幕是，整片全景",
+          "benefit": "5 款小工具，畫上你選的桌布"
         },
         {
           "id": "c",
-          "lead": "換色 再加一行字",
-          "benefit": "展開，內螢幕是 整片全景"
+          "lead": "換色，再加一行字",
+          "benefit": "展開，內螢幕是，整片全景"
         }
       ],
       "hook_best": "b"
@@ -17113,7 +16689,6 @@
         "#スマホ",
         "#2画面",
         "#待ち受け",
-        "#ロック画面",
         "#FoldableWallpaperStudio"
       ],
       "keywords": [
@@ -17121,8 +16696,8 @@
         "2画面",
         "待ち受け",
         "ロック画面",
-        "ウィジェット",
-        "おそろい"
+        "おそろい",
+        "イラスト"
       ],
       "keyline": "Duo対応・閉じればアップ、開けば全景のペア壁紙",
       "compliance": {
@@ -17135,18 +16710,18 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "閉じれば クローズアップ",
-          "benefit": "開けば 全景"
+          "lead": "閉じれば、クローズアップ",
+          "benefit": "開けば、全景"
         },
         {
           "id": "b",
-          "lead": "開けば 全景",
+          "lead": "開けば、全景",
           "benefit": "選んだ壁紙で描く 5種のウィジェット"
         },
         {
           "id": "c",
-          "lead": "色を変えて 短い文字も",
-          "benefit": "開けば 全景"
+          "lead": "色を変えて、短い文字も",
+          "benefit": "開けば、全景"
         }
       ],
       "hook_best": "b"
@@ -17164,7 +16739,6 @@
         "#폴더블폰",
         "#커버화면",
         "#메인화면",
-        "#잠금화면",
         "#FoldableWallpaperStudio"
       ],
       "keywords": [
@@ -17172,8 +16746,8 @@
         "커버화면",
         "메인화면",
         "잠금화면",
-        "위젯",
-        "폰꾸미기"
+        "폰꾸미기",
+        "일러스트"
       ],
       "keyline": "Duo를 접으면 클로즈업, 펼치면 전경",
       "compliance": {
@@ -17211,11 +16785,10 @@
       "name": "Foldable Wallpaper Studio",
       "search": "Foldable Wallpaper Studio",
       "tags": [
-        "#Faltbar",
-        "#Klapphandy",
-        "#Paar",
+        "#FürDuo",
+        "#AußenNah",
+        "#InnenWeit",
         "#Außendisplay",
-        "#Innendisplay",
         "#FoldableWallpaperStudio"
       ],
       "keywords": [
@@ -17262,11 +16835,9 @@
       "name": "Foldable Wallpaper Studio",
       "search": "Foldable Wallpaper Studio",
       "tags": [
-        "#Foldable",
-        "#Celular",
-        "#Fundo",
+        "#TelasExterna",
+        "#InternaDoDuo",
         "#TelaDupla",
-        "#Bloqueio",
         "#FoldableWallpaperStudio"
       ],
       "keywords": [
@@ -17314,10 +16885,8 @@
       "search": "Meow Party",
       "tags": [
         "#200CatMiniGames",
+        "#2PlayerGames",
         "#Foldable",
-        "#Couple",
-        "#Device",
-        "#Phone",
         "#MeowParty"
       ],
       "keywords": [
@@ -17368,7 +16937,6 @@
         "#離線",
         "#不用網路",
         "#無網路",
-        "#單機",
         "#喵喵派對"
       ],
       "keywords": [
@@ -17390,18 +16958,18 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "一支手機 兩人面對面對戰",
-          "benefit": "200 款可愛貓咪 小遊戲"
+          "lead": "一支手機，兩人面對面對戰",
+          "benefit": "200 款可愛貓咪，小遊戲"
         },
         {
           "id": "b",
-          "lead": "200 款可愛貓咪 小遊戲",
-          "benefit": "一般 iPhone 也能完整玩 畫面按鈕或雙指捏合"
+          "lead": "200 款可愛貓咪，小遊戲",
+          "benefit": "一般 iPhone 也能完整玩，畫面按鈕或雙指捏合"
         },
         {
           "id": "c",
-          "lead": "離線就能玩 沒有廣告",
-          "benefit": "200 款可愛貓咪 小遊戲"
+          "lead": "離線就能玩，沒有廣告",
+          "benefit": "200 款可愛貓咪，小遊戲"
         }
       ],
       "hook_best": "b"
@@ -17419,7 +16987,6 @@
         "#対戦",
         "#二人",
         "#ふたり",
-        "#協力",
         "#にゃんにゃんパーティー"
       ],
       "keywords": [
@@ -17442,17 +17009,17 @@
         {
           "id": "a",
           "lead": "1台のスマホで 2人向かい合って対戦",
-          "benefit": "かわいい猫の ミニゲーム200種"
+          "benefit": "かわいい猫の、ミニゲーム200種"
         },
         {
           "id": "b",
-          "lead": "かわいい猫の ミニゲーム200種",
-          "benefit": "普通のiPhoneでも全部遊べる 画面上の代わりの操作"
+          "lead": "かわいい猫の、ミニゲーム200種",
+          "benefit": "普通のiPhoneでも全部遊べる、画面上の代わりの操作"
         },
         {
           "id": "c",
-          "lead": "オフラインで 広告なし",
-          "benefit": "かわいい猫の ミニゲーム200種"
+          "lead": "オフラインで、広告なし",
+          "benefit": "かわいい猫の、ミニゲーム200種"
         }
       ],
       "hook_best": "b"
@@ -17470,7 +17037,6 @@
         "#오프라인",
         "#데이터",
         "#인터넷",
-        "#필요없는",
         "#냥냥파티"
       ],
       "keywords": [
@@ -17518,9 +17084,7 @@
       "search": "Meow Party",
       "tags": [
         "#MiniKatzenspiele",
-        "#Katzen",
-        "#Zwei",
-        "#Zweit",
+        "#200MinispieleFürsFoldable",
         "#Handy",
         "#MeowParty"
       ],
@@ -17569,10 +17133,9 @@
       "search": "Meow Party",
       "tags": [
         "#JuegosParaDos",
-        "#Jugadores",
-        "#Personas",
-        "#Mismo",
-        "#Móvil",
+        "#200Minijuegos",
+        "#TuPlegable",
+        "#MismoMóvil",
         "#MeowParty"
       ],
       "keywords": [
@@ -17620,10 +17183,8 @@
       "search": "TripBee Cute",
       "tags": [
         "#ItineraryMaker",
-        "#Trip",
-        "#Planner",
-        "#Vacation",
-        "#Countdown",
+        "#PackingList",
+        "#TravelJournal",
         "#TripBeeCute"
       ],
       "keywords": [
@@ -17674,7 +17235,6 @@
         "#日記",
         "#行李",
         "#清單",
-        "#打包",
         "#TripBeeCute"
       ],
       "keywords": [
@@ -17683,7 +17243,7 @@
         "清單",
         "打包",
         "筆記",
-        "紀錄"
+        "遊記"
       ],
       "keyline": "插畫旅遊規劃手冊・出國倒數日・和朋友一起排行程",
       "compliance": {
@@ -17696,18 +17256,18 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "行程散在 截圖和備忘錄？",
-          "benefit": "一本可愛手帳 整趟旅行一頁看完"
+          "lead": "行程散在，截圖和備忘錄？",
+          "benefit": "一本可愛手帳，整趟旅行一頁看完"
         },
         {
           "id": "b",
-          "lead": "一本可愛手帳 整趟旅行一頁看完",
-          "benefit": "出發倒數、航班 和每日行程"
+          "lead": "一本可愛手帳，整趟旅行一頁看完",
+          "benefit": "出發倒數、航班，和每日行程"
         },
         {
           "id": "c",
-          "lead": "行李清單 也能逐項勾選",
-          "benefit": "一本可愛手帳 整趟旅行一頁看完"
+          "lead": "行李清單，也能逐項勾選",
+          "benefit": "一本可愛手帳，整趟旅行一頁看完"
         }
       ],
       "hook_best": "b"
@@ -17725,7 +17285,6 @@
         "#持ち物リスト",
         "#プラン",
         "#共同編集",
-        "#スケジュール",
         "#TripBeeCute"
       ],
       "keywords": [
@@ -17733,8 +17292,8 @@
         "プラン",
         "共同編集",
         "スケジュール",
-        "ウィジェット",
-        "あと何日"
+        "あと何日",
+        "海外"
       ],
       "keyline": "友達と旅行計画・旅程表を共有、割り勘も。出発カウントダウン",
       "compliance": {
@@ -17747,18 +17306,18 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "旅の予定が スクショとメモにバラバラ？",
-          "benefit": "かわいい1冊に 旅のすべてを1ページで"
+          "lead": "旅の予定が、スクショとメモにバラバラ？",
+          "benefit": "かわいい1冊に、旅のすべてを1ページで"
         },
         {
           "id": "b",
-          "lead": "かわいい1冊に 旅のすべてを1ページで",
+          "lead": "かわいい1冊に、旅のすべてを1ページで",
           "benefit": "出発カウントダウン、フライトと日別プラン"
         },
         {
           "id": "c",
-          "lead": "持ち物リスト もチェック",
-          "benefit": "かわいい1冊に 旅のすべてを1ページで"
+          "lead": "持ち物リスト、もチェック",
+          "benefit": "かわいい1冊に、旅のすべてを1ページで"
         }
       ],
       "hook_best": "b"
@@ -17776,7 +17335,6 @@
         "#여행일정",
         "#여행계획",
         "#일정표",
-        "#플래너",
         "#TripBeeCute"
       ],
       "keywords": [
@@ -17784,8 +17342,8 @@
         "여행계획",
         "일정표",
         "플래너",
-        "위젯",
-        "짐싸기"
+        "짐싸기",
+        "체크리스트"
       ],
       "keyline": "귀여운 다꾸·디데이·함께 계획·정산·준비물",
       "compliance": {
@@ -17824,9 +17382,7 @@
       "search": "TripBee Cute",
       "tags": [
         "#Reisetagebuch",
-        "#Urlaub",
-        "#Reise",
-        "#Countdown",
+        "#UrlaubsplanerMitPackliste",
         "#Urlaubscountdown",
         "#TripBeeCute"
       ],
@@ -17875,10 +17431,8 @@
       "search": "TripBee Cute",
       "tags": [
         "#DiarioDeViaje",
-        "#Planificador",
-        "#Itinerario",
-        "#Cuaderno",
-        "#Equipaje",
+        "#CuentaAtrás",
+        "#ListaDeMaleta",
         "#TripBeeCute"
       ],
       "keywords": [
@@ -17925,22 +17479,20 @@
       "name": "Kumo: Weight & GLP-1 Tracker",
       "search": "Kumo weight tracker",
       "tags": [
-        "#WeightGLP1Tracker",
-        "#Loss",
-        "#Injection",
-        "#Glp1",
-        "#Daily",
+        "#CuteCloud",
+        "#IntermittentFasting",
+        "#Weight",
         "#KumoWeightTracker"
       ],
       "keywords": [
-        "loss",
-        "injection",
-        "glp1",
         "daily",
         "diary",
-        "body"
+        "body",
+        "measurement",
+        "intermittent",
+        "timer"
       ],
-      "keyline": "Shot Log, Fasting & Cute Cloud",
+      "keyline": "Fasting & Cute Cloud",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -17976,22 +17528,21 @@
       "name": "Kumo 體重紀錄・減重日記・GLP-1 注射追蹤",
       "search": "Kumo 體重紀錄",
       "tags": [
-        "#瘦瘦針",
-        "#減重針",
-        "#減肥",
-        "#記錄",
-        "#管理",
+        "#輕斷食",
+        "#打卡",
+        "#部位",
+        "#圍度",
         "#Kumo體重紀錄"
       ],
       "keywords": [
-        "瘦瘦針",
-        "減重針",
-        "減肥",
-        "記錄",
-        "管理",
-        "控制"
+        "間歇性",
+        "輕斷食",
+        "計時器",
+        "鬧鐘",
+        "打卡",
+        "部位"
       ],
-      "keyline": "168斷食・喝水蛋白質・腰圍體脂・打針提醒・可愛雲朵",
+      "keyline": "168斷食・喝水蛋白質・腰圍體脂・可愛雲朵",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -18003,17 +17554,17 @@
         {
           "id": "a",
           "lead": "體重上上下下？雲朵照樣長大",
-          "benefit": "每天記體重 只要 10 秒"
+          "benefit": "每天記體重，只要 10 秒"
         },
         {
           "id": "b",
-          "lead": "每天記體重 只要 10 秒",
-          "benefit": "不看單日起伏 看 7 日平均趨勢"
+          "lead": "每天記體重，只要 10 秒",
+          "benefit": "不看單日起伏，看 7 日平均趨勢"
         },
         {
           "id": "c",
-          "lead": "16:8 斷食計時 鎖定畫面看剩餘",
-          "benefit": "每天記體重 只要 10 秒"
+          "lead": "16:8 斷食計時，鎖定畫面看剩餘",
+          "benefit": "每天記體重，只要 10 秒"
         }
       ],
       "hook_best": "b"
@@ -18027,20 +17578,19 @@
       "name": "Kumo 体重記録・GLP-1 注射記録・断食タイマー",
       "search": "Kumo 体重記録",
       "tags": [
-        "#ダイエット注射",
         "#ファスティング",
-        "#減量",
         "#水分補給",
         "#体脂肪率",
+        "#ウエスト",
         "#Kumo体重記録"
       ],
       "keywords": [
-        "ダイエット注射",
         "ファスティング",
-        "減量",
         "水分補給",
         "体脂肪率",
-        "ウエスト"
+        "ウエスト",
+        "レコーディング",
+        "グラフ"
       ],
       "keyline": "かわいい雲と1日10秒、ダイエット管理を習慣に",
       "compliance": {
@@ -18053,7 +17603,7 @@
       "hooks": [
         {
           "id": "a",
-          "lead": "体重が上下しても 雲は育つ",
+          "lead": "体重が上下しても、雲は育つ",
           "benefit": "体重の記録は 1日10秒"
         },
         {
@@ -18063,7 +17613,7 @@
         },
         {
           "id": "c",
-          "lead": "16時間断食の残り時間 ロック画面で確認",
+          "lead": "16時間断食の残り時間、ロック画面で確認",
           "benefit": "体重の記録は 1日10秒"
         }
       ],
@@ -18078,11 +17628,10 @@
       "name": "Kumo 몸무게·GLP-1 주사 기록·간헐적 단식",
       "search": "Kumo 몸무게 기록",
       "tags": [
-        "#공복",
-        "#타이머",
         "#금식",
-        "#마시기",
-        "#수분",
+        "#단백질",
+        "#허리둘레",
+        "#체지방",
         "#Kumo몸무게기록"
       ],
       "keywords": [
@@ -18129,22 +17678,20 @@
       "name": "Kumo: Gewicht & GLP-1 Tracker",
       "search": "Kumo Gewicht",
       "tags": [
-        "#GewichtGLP1Tracker",
-        "#Abnehmspritze",
         "#Gewichtstagebuch",
         "#Gewichtskontrolle",
-        "#Tagebuch",
+        "#Intervallfasten",
         "#KumoGewicht"
       ],
       "keywords": [
-        "abnehmspritze",
         "gewichtstagebuch",
         "gewichtskontrolle",
         "tagebuch",
-        "abnehm",
-        "spritzen"
+        "fasten",
+        "körpermaße",
+        "timer"
       ],
-      "keyline": "Abnehmen & Intervallfasten",
+      "keyline": "Intervallfasten",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -18180,22 +17727,20 @@
       "name": "Kumo: Control de peso y GLP-1",
       "search": "Kumo control de peso",
       "tags": [
-        "#ControlDePesoYGLP1",
-        "#Adelgazar",
-        "#Perder",
-        "#Bajar",
-        "#Pérdida",
+        "#ControlDePeso",
+        "#AyunoIntermitente",
+        "#Registro",
         "#KumoControlDePeso"
       ],
       "keywords": [
-        "adelgazar",
-        "perder",
-        "bajar",
-        "pérdida",
         "registro",
-        "diario"
+        "diario",
+        "dieta",
+        "medidas",
+        "agua",
+        "proteínas"
       ],
-      "keyline": "Ayuno intermitente e inyección",
+      "keyline": "Ayuno intermitente",
       "compliance": {
         "store_claims_ok": true,
         "screen_text_ok": true,
@@ -18237,10 +17782,8 @@
         "keyline": "Battery Health Score",
         "tags": [
           "#BatteryHealthScore",
-          "#Capacity",
-          "#Cycle",
-          "#Count",
-          "#Check",
+          "#ChargeAlerts",
+          "#CycleCount",
           "#BattAIBatteryHealth"
         ]
       },
@@ -18259,7 +17802,6 @@
           "#最大容量",
           "#健康度",
           "#充電速度",
-          "#耗電",
           "#BattAI電池健康"
         ]
       },
@@ -18278,7 +17820,6 @@
           "#最大容量",
           "#回数",
           "#診断",
-          "#交換時期",
           "#BattAIバッテリー"
         ]
       },
@@ -18297,7 +17838,6 @@
           "#효율",
           "#점검",
           "#사이클",
-          "#횟수",
           "#BattAI배터리"
         ]
       }
@@ -18318,7 +17858,6 @@
           "#추적",
           "#개발자",
           "#토큰",
-          "#제한",
           "#UsageNow"
         ]
       }
@@ -18339,7 +17878,6 @@
           "#思維",
           "#奧數",
           "#競賽",
-          "#資優",
           "#Lumi數學星球兒童數學"
         ]
       }
@@ -18357,10 +17895,8 @@
         "keyline": "Taipei MRT",
         "tags": [
           "#TaipeiMRT",
-          "#Subway",
-          "#Train",
-          "#Schedule",
-          "#Taiwan",
+          "#LeaveByPlanner",
+          "#LeaveBy",
           "#MetroTimeHelper"
         ]
       },
@@ -18379,7 +17915,6 @@
           "#首班車",
           "#路線圖",
           "#地鐵",
-          "#通勤",
           "#捷運時間助手"
         ]
       },
@@ -18398,7 +17933,6 @@
           "#地下鉄",
           "#時刻表",
           "#路線図",
-          "#終電",
           "#捷運時間助手"
         ]
       },
@@ -18417,7 +17951,6 @@
           "#타이페이",
           "#환승",
           "#노선도",
-          "#시간표",
           "#타이베이지하철시간도우미"
         ]
       }
@@ -18435,10 +17968,8 @@
         "keyline": "Cute Checklist",
         "tags": [
           "#CuteChecklist",
-          "#Planner",
-          "#Todo",
-          "#Aesthetic",
-          "#Daily",
+          "#CozyToDoListWidget",
+          "#ToDo",
           "#MochiCuteChecklist"
         ]
       },
@@ -18457,7 +17988,6 @@
           "#代辦事項",
           "#任務清單",
           "#日程",
-          "#提醒",
           "#Mochi可愛待辦清單"
         ]
       },
@@ -18476,7 +18006,6 @@
           "#リマインダー",
           "#予定",
           "#メモ",
-          "#習慣",
           "#MochiかわいいToDo"
         ]
       },
@@ -18495,7 +18024,6 @@
           "#할일",
           "#할일목록",
           "#할일관리",
-          "#투두",
           "#Mochi귀여운할일"
         ]
       }
@@ -18516,7 +18044,6 @@
           "#空き容量",
           "#重複写真",
           "#類似写真",
-          "#写真削除",
           "#PicClear写真整理"
         ]
       },
@@ -18535,7 +18062,6 @@
           "#중복사진",
           "#비슷한사진",
           "#흐릿한사진",
-          "#갤러리정리",
           "#PicClear사진정리"
         ]
       }
@@ -18556,7 +18082,6 @@
           "#読み取り",
           "#リーダー",
           "#スキャン",
-          "#バーコード",
           "#QRCodeHalo"
         ]
       },
@@ -18575,7 +18100,6 @@
           "#큐알코드",
           "#바코드",
           "#스캐너",
-          "#스캔",
           "#QRCodeHalo"
         ]
       }
@@ -18596,7 +18120,6 @@
           "#音声文字変換",
           "#会議メモ",
           "#ボイスレコーダー",
-          "#音声入力",
           "#SonoNote"
         ]
       },
@@ -18615,7 +18138,6 @@
           "#회의록",
           "#받아쓰기",
           "#음성인식",
-          "#전사",
           "#SonoNote"
         ]
       }

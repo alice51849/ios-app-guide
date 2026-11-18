@@ -5,7 +5,7 @@
   "creative_count": 60,
   "current_inventory": {
     "app_keys_sha256": "fb6805f542ce9f363d0fb17a1aca312cc4ae4331e68a9154e43717909646f1c1",
-    "copy_sha256": "9396c049ea4aa849f9de3c08a83dce594f7ebeedb6ad63c4edf6885a1a32e0ee",
+    "copy_sha256": "8f5dfbaea8aa146010c2c9f9a87a2b4d0d3099907994d0ec02d99f9851a6d712",
     "missing_route_app_keys": [],
     "missing_route_app_keys_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
     "public_apps": 60
@@ -24,12 +24,12 @@
       "relative_path": "data/high-intent-decision-routes/conversion-contracts.schema.json"
     },
     {
-      "generated_sha256": "ee9114b926782b6f11616c2c646582a449f805507409a6e0e96d40df0a1cd47d",
+      "generated_sha256": "14db8d4d315c96051d6b03919701eda4c1c8d680438a3f605450f12bd0a00ac4",
       "kind": "coverage_report",
       "relative_path": "data/high-intent-decision-routes/coverage.json"
     },
     {
-      "generated_sha256": "05d70f29ade64d1ec9bdf364d053da7ec4d1ac7fe93e61feb5a443227302581f",
+      "generated_sha256": "12e1a02ecb990c1651dce9823b3835eb5e478dfd83c5fbe9d5a928fcaa66e864",
       "kind": "json_feed",
       "relative_path": "data/high-intent-decision-routes/feed.json"
     },
@@ -214,7 +214,7 @@
       "relative_path": "en-US/decide/mochidonestamp/remember-when-household-task-was-done.html"
     },
     {
-      "generated_sha256": "9b99ab5a3dc519e788a2af7e4b60d96bddaf46eef4feeab8abf611c7a8e2bd1a",
+      "generated_sha256": "f21afb91a74ddf03d3d051caf3f7a66bf973e5956deb1f5fce70a4bef2f5725d",
       "kind": "route_html",
       "relative_path": "en-US/decide/moneytag/measure-profit-by-freelance-project.html"
     },
@@ -239,7 +239,7 @@
       "relative_path": "en-US/decide/picclear/recover-storage-from-photo-clutter.html"
     },
     {
-      "generated_sha256": "cf2dc24abe5d01eebc720b39ca733cad20b0e437bb2f819c52daf6218991e7d8",
+      "generated_sha256": "bf2066228624ce8be933b9ca1426073cc82de742eaee0e4ff077f6d0d4d54226",
       "kind": "route_html",
       "relative_path": "en-US/decide/qrcodehalo/qr-scanner-that-shows-the-full-link-before-opening.html"
     },
@@ -447,14 +447,14 @@
   "fallback_records": 0,
   "inventory": {
     "app_keys_sha256": "fb6805f542ce9f363d0fb17a1aca312cc4ae4331e68a9154e43717909646f1c1",
-    "copy_sha256": "9396c049ea4aa849f9de3c08a83dce594f7ebeedb6ad63c4edf6885a1a32e0ee",
+    "copy_sha256": "8f5dfbaea8aa146010c2c9f9a87a2b4d0d3099907994d0ec02d99f9851a6d712",
     "official_locales_sha256": "e26dabf9370286ad8fd12034270cfcade92b2db4f4a0eecc19324203ce84d5bd",
     "public_apps": 60,
     "relative_path": "data/verified-ios-app-finder-catalog.json"
   },
-  "manifest_digest": "b06f646fb3f1c97cfbb2e226a78cef652b3c7e31db2aac6e0e7528c3e507bf98",
+  "manifest_digest": "9177401692078c7e47551c06b8855f0e42e10dbc2c8668a6dc61d8ba0bbfd803",
   "owner": "high_intent_decision_routes",
-  "release_contract_digest": "fbf34b8493d3b4c3d797fbb822822c63673f2981f134b1cee474fe095f3e98cb",
+  "release_contract_digest": "9a18bd82920b09456dbca7f2d29bc8d0479b25f8b591be19e93400d3b6a48868",
   "release_state": "exact",
   "route_count": 81,
   "routes": [
@@ -1080,8 +1080,8 @@
       "creative_id": "moneytag:measure-profit-by-freelance-project:workflow",
       "intent_type": "workflow",
       "locale": "en-US",
-      "output_sha256": "9b99ab5a3dc519e788a2af7e4b60d96bddaf46eef4feeab8abf611c7a8e2bd1a",
-      "record_digest": "e1694db374bc2f9bf11df25a5074fa7af8ddb35259173b8ad062a550d42926a1",
+      "output_sha256": "f21afb91a74ddf03d3d051caf3f7a66bf973e5956deb1f5fce70a4bef2f5725d",
+      "record_digest": "d122ae76688fb41f19501ae417dfe244282c1095253e8e0f021bc8ec55f834c4",
       "relative_path": "en-US/decide/moneytag/measure-profit-by-freelance-project.html",
       "route_id": "en-US:moneytag:measure-profit-by-freelance-project",
       "route_slug": "measure-profit-by-freelance-project",
@@ -1165,8 +1165,8 @@
       "creative_id": "qrcodehalo:qr-scanner-that-shows-the-full-link-before-opening:problem_aware",
       "intent_type": "problem_aware",
       "locale": "en-US",
-      "output_sha256": "cf2dc24abe5d01eebc720b39ca733cad20b0e437bb2f819c52daf6218991e7d8",
-      "record_digest": "e428ac4db38084d69695042605a81f731300e8212f2aec481311a6084c1a5ae5",
+      "output_sha256": "bf2066228624ce8be933b9ca1426073cc82de742eaee0e4ff077f6d0d4d54226",
+      "record_digest": "9af044323c47ddcb1413e146f97fc78e884a8ebde99138bb77332a37d1c97995",
       "relative_path": "en-US/decide/qrcodehalo/qr-scanner-that-shows-the-full-link-before-opening.html",
       "route_id": "en-US:qrcodehalo:qr-scanner-that-shows-the-full-link-before-opening",
       "route_slug": "qr-scanner-that-shows-the-full-link-before-opening",
@@ -1838,5 +1838,5 @@
   ],
   "schema_version": 2,
   "site": "https://open.cait518.cc/ios-app-guide",
-  "source_contract_digest": "d00ff93ceeaa8bf10b5f26b7cda2428a0508f5ae1fdec778f9b761486f752773"
+  "source_contract_digest": "1c78fbbeb9857cecc7e2ab7ed191d3c727891382607172288b9e3dae8a73ce45"
 }

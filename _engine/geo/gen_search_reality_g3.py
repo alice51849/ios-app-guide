@@ -444,7 +444,7 @@ PAGE_SPECS: list[dict] = [
                 "Where is my data stored? On the phone only, in your own cloud, or on the developer's servers?",
                 "Does it work offline? An app that works in airplane mode is usually not sending your logs anywhere.",
                 "How are predictions made, and are they labelled as estimates rather than medical advice?",
-                "What does it cost over time? A single lifetime purchase and a monthly subscription feel very different after two years.",
+                "What does it cost over time? A single one-time purchase and a monthly subscription feel very different after two years.",
             ]),
             ("Planning your weeks around your cycle", [
                 "The most practical use of a cycle calendar is planning. Before the holidays, a trip or a long week at work, a look at the calendar shows your next expected period, your estimated fertile window and the days when you are likely to want an easier schedule. A heads-up a day or two before your period or PMS helps you pack, plan and be a little kinder to yourself.",
@@ -461,13 +461,13 @@ PAGE_SPECS: list[dict] = [
             "Use the Smart Planner to spot your best and gentlest days before you plan the week.",
         ],
         "cards": [
-            ("cyca", "Cyca turns your period and cycle into calm clarity: log your day in a tap, read a gentle Daily Body Forecast, and look ahead to your next period, fertile window and ovulation on a soothing calendar. Smart, personal predictions adapt every time you log, and the Smart Planner highlights your best and gentlest days. Cyca has no servers and no account; your data never leaves your device and the app works fully offline. Future predictions, Personal Rhythm, the Smart Planner and full calendar history come with a single lifetime purchase, never a subscription. Cyca provides wellness and planning estimates and is not a medical device or a form of contraception."),
+            ("cyca", "Cyca turns your period and cycle into calm clarity: log your day in a tap, read a gentle Daily Body Forecast, and look ahead to your next period, fertile window and ovulation on a soothing calendar. Smart, personal predictions adapt every time you log, and the Smart Planner highlights your best and gentlest days. Cyca has no servers and no account; your data never leaves your device and the app works fully offline. Future predictions, Personal Rhythm, the Smart Planner and full calendar history come with a single one-time purchase, never a subscription. Cyca provides wellness and planning estimates and is not a medical device or a form of contraception."),
         ],
         "faqs": [
             ("Does Cyca need an account?", "No. There is no account and there are no Cyca servers. Your data never leaves your device."),
             ("Does it work offline?", "Yes. Cyca works fully offline, including logging, the calendar and predictions."),
             ("Can I use the predictions as contraception?", "No. Cyca provides wellness and planning estimates and is not a medical device or a form of contraception."),
-            ("Is Cyca a subscription?", "No. Predictions, Personal Rhythm, the Smart Planner and full history come with a single lifetime purchase, never a subscription."),
+            ("Is Cyca a subscription?", "No. Predictions, Personal Rhythm, the Smart Planner and full history come with a single one-time purchase, never a subscription."),
         ],
         "related": [("en-US/cyca.html", "Cyca: full overview"),
                     ("en/seasonal/best-iphone-privacy-apps-end-of-year-2026.html", "Privacy apps for iPhone")],

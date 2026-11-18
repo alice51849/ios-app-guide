@@ -523,7 +523,7 @@
         "campaign_token": "geo_learn",
         "intent_type": "workflow",
         "locale": "en-US",
-        "record_digest": "e1694db374bc2f9bf11df25a5074fa7af8ddb35259173b8ad062a550d42926a1"
+        "record_digest": "d122ae76688fb41f19501ae417dfe244282c1095253e8e0f021bc8ec55f834c4"
       },
       "id": "en-US:moneytag:measure-profit-by-freelance-project",
       "language": "en",
@@ -593,12 +593,12 @@
         "campaign_token": "geo_ask",
         "intent_type": "problem_aware",
         "locale": "en-US",
-        "record_digest": "e428ac4db38084d69695042605a81f731300e8212f2aec481311a6084c1a5ae5"
+        "record_digest": "9af044323c47ddcb1413e146f97fc78e884a8ebde99138bb77332a37d1c97995"
       },
       "id": "en-US:qrcodehalo:qr-scanner-that-shows-the-full-link-before-opening",
       "language": "en",
-      "summary": "Many scanners jump straight to a website or action after the scan, so a sticker placed over a real code is one tap away from the browser. The decision is whether a scanner that shows the complete payload with an on-device rule check fits how you scan. By default the scanned action runs right away; turn off “Run action after scanning” in Settings to inspect first, then tap Security Check in History.",
-      "title": "Which QR code scanner shows me the full link before it opens anything?",
+      "summary": "Some scanners stop at a preview, show ads or count your scans before the link opens. The decision is whether a scanner that acts at once fits how you scan: it reads 20 formats from the camera or a photo, links open and Wi-Fi codes bring up the Join prompt right after the scan.",
+      "title": "Which QR code scanner opens the link right after the scan and lets me scan without a limit?",
       "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/qrcodehalo/qr-scanner-that-shows-the-full-link-before-opening.html"
     },
     {

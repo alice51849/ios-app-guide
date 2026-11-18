@@ -1,9 +1,9 @@
 {
  "schema": "lumi.android-live-snapshot/v1",
  "source": "AndroidPlay android_live_scan (Play page HTTP 200 + publish LIVE)",
- "source_generated": "2026-11-17T06:03:35+0800",
+ "source_generated": "2026-11-18T15:29:32+0800",
  "count": 60,
- "content_sha256": "cee0bba0e38e430c1189ec9a99b45a295b01a8257498146366b4f5a9b18db5cc",
+ "content_sha256": "6b5903118d75b06164da89a6593578d68cd4c1375854b49e4f7fa542de5dea5f",
  "apps": {
   "aibriefpack": {
    "ios_app_id": "6791658210",
@@ -21,7 +21,7 @@
      "short_description": "Turn screenshots, PDFs and notes into one AI prompt with facts checked on device"
     },
     "zh-TW": {
-     "title": "AI Brief",
+     "title": "AI Brief：AI 提示詞資料整理",
      "short_description": "把截圖、PDF、檔案與筆記整理成一份 AI 提示詞摘要包，圖片轉文字與重點擷取都在本機完成"
     }
    }
@@ -141,7 +141,7 @@
      "short_description": "Resume builder & CV maker with an ATS score and ATS friendly resume templates"
     },
     "zh-TW": {
-     "title": "CV Desk ATS 履歷製作",
+     "title": "CV Desk ATS 履歷製作：履歷範本",
      "short_description": "打造 ATS 安全履歷，即時評分與關鍵字建議"
     }
    }
@@ -162,7 +162,7 @@
      "short_description": "Private period tracker & ovulation calendar with a daily body forecast"
     },
     "zh-TW": {
-     "title": "Cyca 經期週期追蹤・排卵",
+     "title": "Cyca 經期週期追蹤・排卵期預測",
      "short_description": "私密的經期日曆與生理期紀錄，預估排卵期與易孕期，還有每日身體預報"
     }
    }
@@ -222,7 +222,7 @@
    "copy": {
     "en-US": {
      "title": "dB Halo: Decibel Sound Meter",
-     "short_description": "Decibel meter & sound meter: live dB, spectrum, noise log and a sleep journal"
+     "short_description": "Decibel meter & sound detector: live dB, spectrum, noise log and sleep journal"
     },
     "zh-TW": {
      "title": "dB Halo：分貝計與聲級計",
@@ -345,7 +345,7 @@
    "match": "bundle_id_exact",
    "copy": {
     "en-US": {
-     "title": "G+Money Lite",
+     "title": "G+Money Lite: Travel Expenses",
      "short_description": "Travel expense tracker with auto currency conversion and a daily travel budget"
     },
     "zh-TW": {
@@ -391,7 +391,7 @@
      "short_description": "Stop impulse buying: see any price as hours of work before you pay"
     },
     "zh-TW": {
-     "title": "HoursTag Lite",
+     "title": "HoursTag Lite：價格換工時・時薪計算",
      "short_description": "買東西前先換算要工作幾小時，標記必要、想要或衝動，花得清楚，存錢也更有方向"
     }
    }
@@ -454,7 +454,7 @@
      "short_description": "App blocker for studying & focus app: lock distracting apps, cut screen time"
     },
     "zh-TW": {
-     "title": "LockHour Pro",
+     "title": "LockHour Pro：專注鎖 App 戒手機",
      "short_description": "專注時段自動封鎖分心的 App，讀書、工作、睡前都能幫你戒手機"
     }
    }
@@ -497,7 +497,7 @@
     },
     "zh-TW": {
      "title": "Lumi注音星球 Pro：ㄅㄆㄇ注音遊戲",
-     "short_description": "注音遊戲：用玩的學ㄅㄆㄇ發音、拼讀、聲調與筆順，幼兒到小一都適用"
+     "short_description": "用遊戲學注音：ㄅㄆㄇ發音、拼讀、聲調與筆順，還能列印學習單，幼兒到小一都適用"
     }
    }
   },
@@ -769,7 +769,7 @@
      "short_description": "Note taking app: stylus handwriting, PDF annotation, page audio and flashcards"
     },
     "zh-TW": {
-     "title": "100 Notes Studio: Pen & Paper",
+     "title": "100 Notes Studio：手寫筆記與PDF標註",
      "short_description": "手寫筆記 App：29 種筆刷、100 款筆記本風格、PDF 標註、頁面錄音與抽認卡，還能上鎖"
     }
    }
@@ -832,7 +832,7 @@
      "short_description": "Duplicate photo remover from gallery: clear screenshots & blurry shots fast"
     },
     "zh-TW": {
-     "title": "PicClear Pro",
+     "title": "PicClear Pro：照片清理與重複刪除",
      "short_description": "清理重複照片、舊截圖與模糊照片，手機空間不足時幫你騰出儲存空間"
     }
    }
@@ -937,8 +937,8 @@
      "short_description": "Screenshot organizer: on-device OCR search, auto categories, clear old shots"
     },
     "zh-TW": {
-     "title": "ShotInbox AI: Sort Screenshots",
-     "short_description": "本機截圖分類、相似清理與時間軸"
+     "title": "ShotInbox AI：截圖整理與文字搜尋",
+     "short_description": "截圖自動分類：收據、票券、行程一目了然，搜尋與時間軸，舊截圖一鍵清理，本機處理不上傳"
     }
    }
   },
@@ -1187,7 +1187,7 @@
      "short_description": "Slow internet? Test your WiFi, router and DNS to find the likely cause"
     },
     "zh-TW": {
-     "title": "WiFi Aid Lite",
+     "title": "WiFi Aid Lite：網路檢測與診斷",
      "short_description": "網路很慢、連不上？一鍵檢測 Wi-Fi、路由器、DNS 與網站，找出斷線原因"
     }
    }

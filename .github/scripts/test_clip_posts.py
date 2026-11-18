@@ -21,13 +21,24 @@ import review_links as R  # noqa: E402
 import threads_cap  # noqa: E402
 
 
+# pytest does not run unittest's module cleanups, so the module-wide patches below are undone in
+# tearDownModule (unittest and pytest both call it); otherwise they leak into the test files run after this one
+# in the same process (e.g. clip_source.fetch_clip stays the stand-in for test_clip_source.py).
+_MODULE_PATCHES = []
+
+
+def tearDownModule():
+    while _MODULE_PATCHES:
+        _MODULE_PATCHES.pop().__exit__(None, None, None)
+
+
 def setUpModule():
     # threads_cap.py reads the account's 24-hour post count right before each top-level Threads post. These tests
     # are about other things, so the account has room here; test_threads_cap.py covers the cap itself. Entered
     # directly rather than with start(), so a test's mock.patch.stopall cannot undo it for the tests after it.
     room = mock.patch.object(threads_cap, "quota_usage", return_value=0)
     room.__enter__()
-    unittest.addModuleCleanup(room.__exit__, None, None, None)
+    _MODULE_PATCHES.append(room)
     # The clip is downloaded to the runner and checked before any platform sees it (clip_source.py): no network
     # in these tests, so every post gets this stand-in file (and, for Instagram, the url that served it).
     # ClipUploadTest covers the Telegram multipart body and the Instagram url; test_clip_source.py the download.
@@ -37,7 +48,7 @@ def setUpModule():
     for patch in (mock.patch.object(C.CS, "fetch_clip", return_value=FAKE_CLIP),
                   mock.patch.object(C.CS, "fetch_clip_url", return_value=(FAKE_CLIP, SERVED_URL))):
         patch.__enter__()
-        unittest.addModuleCleanup(patch.__exit__, None, None, None)
+        _MODULE_PATCHES.append(patch)
 
 
 # The address that served the checked clip (the release's signed download url, redirect already followed).
@@ -845,6 +856,14 @@ class PostQaTest(unittest.TestCase):
         self.assertTrue(Q.text_problems("Hook with *accent*", "en", "telegram"))
         self.assertEqual(Q.text_problems("", "en", "telegram"), ["caption is empty"])
 
+    def test_a_claim_needs_store_backing_and_extra_facts_can_give_it(self):
+        import post_qa as Q
+        c = real()
+        text = C.caption(c, "telegram").replace("\n", "\nOffline, no ads\n", 1)
+        self.assertTrue(any("'no ads' claim" in p for p in Q.clip_problems(c, "telegram", text, online=False)))
+        self.assertFalse(any("'no ads' claim" in p for p in Q.clip_problems(
+            c, "telegram", text, online=False, extra_facts=("Plays offline, with no ads.",))))
+
     def test_missing_fields_and_dead_links_are_refused(self):
         import post_qa as Q
         c = real()
@@ -885,12 +904,28 @@ class PostQaTest(unittest.TestCase):
     # itself (clip_posts.main gates it), not the whole day, so the full-feed audit runs locally / in review.
     @unittest.skipIf(os.environ.get("GITHUB_ACTIONS"), "per-clip gate in clip_posts.main covers posting runs")
     def test_every_planned_clip_caption_passes_the_gate(self):
+        # Offline there is no live product page, so claims ("no ads", "free"...) are checked against the repo
+        # store copy (_engine/data/<app>_full.json, kept equal to the live page): the stand-in for what
+        # product_facts reads when clip_posts.main posts online.
         import post_qa as Q
+        data_dir = Path(__file__).resolve().parents[2] / "_engine" / "data"
+
+        def store_copy(app):
+            for name in (app, app.rsplit("_", 1)[0]):
+                path = data_dir / f"{name}_full.json"
+                if path.exists():
+                    copy = json.loads(path.read_text(encoding="utf-8"))
+                    return tuple(loc.get(f) or "" for loc in copy.values() if isinstance(loc, dict)
+                                 for f in ("name", "subtitle", "description"))
+            return ()
+
         data = C.load()
         for key, c in data["clips"].items():
+            facts = store_copy(c.get("app", ""))
             for channel in ("telegram", "instagram", "threads"):
                 for v in C.SC.variants(c):
-                    self.assertEqual(Q.clip_problems(c, channel, C.caption(c, channel, v), online=False), [],
+                    self.assertEqual(Q.clip_problems(c, channel, C.caption(c, channel, v), online=False,
+                                                     extra_facts=facts), [],
                                      f"{key} {channel} {v['id']}")
 
 

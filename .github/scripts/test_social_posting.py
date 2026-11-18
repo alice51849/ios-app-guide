@@ -29,18 +29,29 @@ import threads_post
 import threads_cap
 
 
+# pytest does not run unittest's module cleanups, so the module-wide patches below are undone in
+# tearDownModule (unittest and pytest both call it); otherwise they leak into the test files run after this one
+# in the same process (e.g. clip_source.fetch_clip stays the stand-in for test_clip_source.py).
+_MODULE_PATCHES = []
+
+
+def tearDownModule():
+    while _MODULE_PATCHES:
+        _MODULE_PATCHES.pop().__exit__(None, None, None)
+
+
 def setUpModule():
     # threads_cap.py reads the account's 24-hour post count right before each top-level Threads post. These tests
     # are about other things, so the account has room here; test_threads_cap.py covers the cap itself. Entered
     # directly rather than with start(), so a test's mock.patch.stopall cannot undo it for the tests after it.
     room = mock.patch.object(threads_cap, "quota_usage", return_value=0)
     room.__enter__()
-    unittest.addModuleCleanup(room.__exit__, None, None, None)
+    _MODULE_PATCHES.append(room)
     # threads_post.main() gives the dates of the Mochi trial file to that trial (test_threads_mochi_trial.py); the
     # main() tests here run on the real clock, so they see no trial day and keep testing the usual paths.
     no_trial = mock.patch.object(threads_post, "load_trial", return_value={})
     no_trial.__enter__()
-    unittest.addModuleCleanup(no_trial.__exit__, None, None, None)
+    _MODULE_PATCHES.append(no_trial)
 
 
 class FakeResponse:

@@ -406,8 +406,9 @@ def video_compliance_problems(clip):
     return []
 
 
-def clip_problems(clip, channel, text, online=True, length=True):
-    """Everything that should stop one hook clip post on one channel."""
+def clip_problems(clip, channel, text, online=True, length=True, extra_facts=()):
+    """Everything that should stop one hook clip post on one channel. extra_facts: more store-backed text (e.g. the
+    repo store copy, which matches the live page by rule) for checks that cannot read the live page."""
     out = video_compliance_problems(clip)
     for field in ("url", "store_url", "name", "search", "locale"):
         if not (clip.get(field) or "").strip():
@@ -415,7 +416,7 @@ def clip_problems(clip, channel, text, online=True, length=True):
     hooks = clip.get("hooks") or [{"lead": clip.get("hook", "")}]
     if not any((h.get("lead") or "").strip() for h in hooks):
         out.append("clip has no hook line")
-    store_text = [clip.get("name", ""), clip.get("keyline", "")]
+    store_text = [clip.get("name", ""), clip.get("keyline", ""), *extra_facts]
     facts, price = product_facts(clip.get("store_url", ""), store_text) if online else ("\n".join(store_text), None)
     allowed = (clip.get("name", ""), clip.get("search", ""))
     out += text_problems(text, clip.get("locale", ""), channel, allowed=allowed, facts=facts, price=price, length=length)

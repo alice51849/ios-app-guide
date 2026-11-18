@@ -19,12 +19,23 @@ import threads_cap  # noqa: E402
 import threads_post  # noqa: E402
 
 
+# pytest does not run unittest's module cleanups, so the module-wide patches below are undone in
+# tearDownModule (unittest and pytest both call it); otherwise they leak into the test files run after this one
+# in the same process (e.g. clip_source.fetch_clip stays the stand-in for test_clip_source.py).
+_MODULE_PATCHES = []
+
+
+def tearDownModule():
+    while _MODULE_PATCHES:
+        _MODULE_PATCHES.pop().__exit__(None, None, None)
+
+
 def setUpModule():
     # threads_post.main() gives the dates of the Mochi trial file to that trial (test_threads_mochi_trial.py); the
     # main() tests here run on the real clock, so they see no trial day and keep testing the usual paths.
     no_trial = mock.patch.object(threads_post, "load_trial", return_value={})
     no_trial.__enter__()
-    unittest.addModuleCleanup(no_trial.__exit__, None, None, None)
+    _MODULE_PATCHES.append(no_trial)
 
 
 MOCHI = "6785004775"  # Android-live App Store id (App Store + Google Play link reply)

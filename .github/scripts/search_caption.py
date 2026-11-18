@@ -111,6 +111,7 @@ FRAGMENTS = {
     "membaca", "間歇性", "計時器", "鬧鐘", "마시기", "타이머", "공복", "수분",
 }
 LATIN_TAG = re.compile(r"^[A-Za-z\u00c0-\u024f]+$")
+FRAGMENTS_TIGHT = {"".join(f.split()) for f in FRAGMENTS}  # '#GåNer' is 'gå ner' written as a hashtag
 
 
 def _spaced(text):
@@ -127,7 +128,7 @@ def phrase_tag(tag, locale=""):
     #Daily, #Intermittent, #間歇性, #타이머) and for a 1-3 letter Latin word (#Bil, #a); a single word that is a real
     term (#Decibel, #Bookkeeping) stays - the planner chooses tags from the app's own name and subtitle first."""
     body = tag.lstrip("#")
-    if not any(ch.isalnum() for ch in body) or body.casefold() in FRAGMENTS:
+    if not any(ch.isalnum() for ch in body) or "".join(body.split()).casefold() in FRAGMENTS_TIGHT:
         return False
     return not (LATIN_TAG.match(body) and len(body) < 4)
 
@@ -184,9 +185,11 @@ def tags(clip, limit=5):
     limit = min(limit, 5)
     brand = "#" + "".join(ch for ch in clip.get("search", "") if ch.isalnum()) if clip.get("search") else ""
     out = []
+    kumo_health = health_app(clip)
     for t in clip.get("tags") or []:
         t = t if t.startswith("#") else f"#{t}"
-        if medical(t) or (t.casefold() != brand.casefold() and not phrase_tag(t, clip.get("locale"))):
+        if medical(t) or (kumo_health and t.lstrip("#").strip().casefold() in WEIGHT_WORDS) or (
+                t.casefold() != brand.casefold() and not phrase_tag(t, clip.get("locale"))):
             continue
         if t.casefold() not in GENERIC_TAGS and t.casefold() not in {x.casefold() for x in out}:
             out.append(t)
@@ -222,7 +225,16 @@ WEIGHT_WORDS = {"loss", "lose", "perder", "perdere", "perte", "perdre", "perda",
                 "turun", "menurunkan", "kurangi", "susut", "utrata", "redukcja", "redukce", "redukcia", "gubitak",
                 "snížení", "снижение", "зниження", "kiêng", "giảm", "خسارة", "نزول", "انقاص", "कम", "लॉस", "లాస్",
                 "ലോസ്", "ಲಾಸ್", "ঘটাড়ো", "ઘટાડવા", "ઓછું", "ਘਟਾਓ", "ਘੱਟ", "ହ୍ରାସ", "କମ", "குறைக்க", "குறைய",
-                "കുറയ്ക്കാൻ", "কমানোর", "ಇಳಿಸಲು", "ಕಡಿಮೆ", "करण्यासाठी", "करणे", "کرنا", "weight", "kilos", "kilo", "הורדת", "رشاقة"}
+                "കുറയ്ക്കാൻ", "কমানোর", "ಇಳಿಸಲು", "ಕಡಿಮೆ", "करण्यासाठी", "करणे", "کرنا", "weight", "kilos", "kilo", "הורדת", "رشاقة",
+                "shot", "shots"}
+
+
+def health_app(clip):
+    """A weight / GLP-1 app: Kumo always counts, even in a language whose store name carries no medical word
+    (11-19 review); any other app counts when its name, search phrase, keyline or a keyword is medical."""
+    words = [w for w in clip.get("keywords") or [] if isinstance(w, str)]
+    return (clip.get("app") == "kumo" or medical(clip.get("name", "")) or medical(clip.get("search", ""))
+            or medical(clip.get("keyline", "")) or any(medical(w) for w in words))
 
 
 def safe_keywords(clip):
@@ -230,7 +242,7 @@ def safe_keywords(clip):
     app whose name or keywords are medical (Kumo), no split-out weight-loss word either. Old clips.json entries
     still carry loss / injection / glp1 / 瘦瘦針 / abnehmspritze until the planner rewrites them."""
     words = [w for w in clip.get("keywords") or [] if isinstance(w, str)]
-    health = medical(clip.get("name", "")) or any(medical(w) for w in words)
+    health = health_app(clip)
     return [w for w in words if not medical(w) and not (health and w.strip().casefold() in WEIGHT_WORDS)]
 
 

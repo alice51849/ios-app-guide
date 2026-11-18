@@ -117,5 +117,36 @@ class YoutubeKeywordTest(unittest.TestCase):
             self.assertFalse(SC.phrase_tag(frag), frag)
 
 
+    def test_review_1119c_kumo_is_health_even_with_a_plain_name(self):
+        # a localized Kumo name without a medical word, keywords without one either: still a weight app
+        clip = {"app": "kumo", "locale": "id", "name": "Kumo: Catatan Berat", "search": "Kumo",
+                "keywords": ["turun", "menurunkan", "kurangi", "shot", "Shot ", "diary"], "keyline": ""}
+        self.assertEqual(SC.safe_keywords(clip), ["diary"])
+        title, desc, tags = SC.youtube(clip, {"lead": "Catat berat", "benefit": ""}, [])
+        low = (desc + " " + " ".join(tags)).casefold()
+        for bad in ("turun", "menurunkan", "kurangi", "shot"):
+            self.assertNotIn(bad, low)
+
+    def test_review_1119c_medical_search_or_keyline_makes_a_health_app(self):
+        base = {"app": "other", "name": "Plain Diary", "keywords": ["loss", "diary"]}
+        self.assertEqual(SC.safe_keywords(dict(base, search="Plain", keyline="")), ["loss", "diary"])
+        self.assertEqual(SC.safe_keywords(dict(base, search="GLP-1 log", keyline="")), ["diary"])
+        self.assertEqual(SC.safe_keywords(dict(base, search="Plain", keyline="Abnehmspritze Tagebuch")), ["diary"])
+
+    def test_review_1119d_weight_word_tags_go_only_in_a_health_app(self):
+        kumo = {"app": "kumo", "locale": "en", "search": "Kumo weight tracker",
+                "tags": ["#Shot", "#Shots", "#Turun", "#CuteCloud"]}
+        self.assertEqual(SC.tags(kumo), ["#CuteCloud"])
+        kumo_id = dict(kumo, locale="id", search="Kumo", name="Kumo: Catatan Berat")
+        self.assertEqual(SC.tags(kumo_id), ["#CuteCloud"])
+        shotinbox = {"app": "shotinbox", "locale": "en", "search": "ShotInbox", "name": "ShotInbox",
+                     "tags": ["#Shot", "#ScreenshotCleaner"]}
+        self.assertIn("#Shot", SC.tags(shotinbox))
+
+    def test_review_1119c_fragment_check_ignores_spaces(self):
+        for frag in ("#GåNer", "#Gå ner", "#gåner", "#Gå  Ner"):
+            self.assertFalse(SC.phrase_tag(frag, "sv"), frag)
+        self.assertTrue(SC.phrase_tag("#Viktdagbok", "sv"))
+
 if __name__ == "__main__":
     unittest.main()

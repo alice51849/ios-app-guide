@@ -236,6 +236,35 @@ class HubPageTest(unittest.TestCase):
         evil = data(clips={"clips": {"mochi/fr": dict(CLIPS["clips"]["mochi/en"], locale="fr", name="Mochi</script>x")}})
         self.assertNotIn("Mochi</script>", self.page(evil))
 
+    def test_the_page_counts_store_taps_with_the_shared_anonymous_click_block_only(self):
+        """Order 11-19: the hub carries the very block the support and guide pages carry (_engine/geo/click_beacon.py),
+        once, inside <head>; it never touches the links, and a page without it (or with two) is refused."""
+        import importlib.util
+        spec = importlib.util.spec_from_file_location(
+            "cb_for_test", Path(__file__).resolve().parents[2] / "_engine" / "geo" / "click_beacon.py")
+        cb = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(cb)
+        page = self.page()
+        block = cb.click_beacon_block()
+        self.assertEqual(page.count(block), 1)
+        self.assertLess(page.index(block), page.index("</head>"))
+        self.assertEqual(cb.inject_html(page), (page, cb.UNCHANGED))         # the guide's injector sees it as current
+        self.assertIn("navigator.sendBeacon", block)
+        self.assertIn("'https://office.cait518.cc/api/click'", block)
+        self.assertNotRegex(block, r"preventDefault|document\.cookie|localStorage|sessionStorage|fetch\(|XMLHttpRequest")
+        # The counter reads the button's own ct / Play utm_source (ig_bio_<app>) and the page path, nothing else.
+        self.assertIn("q.get('ct')", block)
+        self.assertIn("r.get('utm_source')", block)
+        self.assertIn("location.pathname", block)
+        self.assertEqual(H.problems(page, min_links=8), [])
+        without = page.replace(block, "")
+        self.assertIn("the download-click counter block is missing or repeated", H.problems(without, min_links=8))
+        self.assertIn("the download-click counter block is missing or repeated",
+                      H.problems(page.replace("</head>", block + "</head>"), min_links=8))
+        # The links are exactly what they were without the counter (direct store links with the ig_bio ct).
+        links = lambda text: re.findall(r'href="([^"]+)"', text)
+        self.assertEqual(links(page), links(without))
+
     def test_build_refuses_without_the_android_snapshot_and_fills_icons_once(self):
         with mock.patch.object(H, "android_apps", return_value={}):
             with self.assertRaises(ValueError):

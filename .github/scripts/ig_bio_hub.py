@@ -13,10 +13,19 @@ already in the repo:
 Every button carries pt=118326163 and ct=ig_bio_<app> (00_GrowthEngine agent/ct_codes.py reads it as the
 instagram row: the downloads the Instagram posts bring in through the profile). The words (headings,
 categories, app names) follow the visitor's phone language through a few lines of inline script - no
-tracking, no external script, nothing sent anywhere; without script the page reads in English. Captions
+external script, and that script sends nothing (the only thing sent is the click counter below); without
+script the page reads in English. Captions
 carry no URL: they say "📲 Download via the link in bio" and name the app in its brand hashtag (#Mochi,
 ig_bio.py), and that name is on this page in every case: the latest-posts block shows the post's own name,
 the full list the localized store name (clips.json, the utility-card names, else the catalog name).
+
+Click counter (00_GrowthEngine order 11-19, 7-day trial, removed if the reach drops): the same anonymous
+download-click block every support and guide page carries (_engine/geo/click_beacon.py, mirror of the
+00_GrowthEngine geo/ original) sits before </head>. A tap on an App Store / Google Play button sends
+{p: "/ig/", a: app id or key, ct: the button's ig_bio_<app>, s: apple|play} with navigator.sendBeacon to
+office.cait518.cc/api/click: no cookie, no identifier, no IP stored, never preventDefault, the links
+themselves (direct, ct) are untouched. Read back: 00_GrowthEngine reports/clicks/daily.csv rows whose page
+is /ig/ (latest.md 各頁面點擊排行 `/ig/`). Only this page: the Threads first replies keep the plain App Store link.
 
 The page goes to .github/growth/ig-hub/index.html every time an Instagram post is recorded (the "Record the
 post link" steps) and once a day (ig-bio-hub.yml); the root site (alice51849.github.io, its ig-hub.yml)
@@ -44,6 +53,21 @@ from social_post_common import android_apps, play_store_url
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
+
+
+def _load_click_beacon():
+    """_engine/geo/click_beacon.py by file path (the same block as every support and guide page; loading it
+    by path keeps _engine/geo off sys.path, where its module names could shadow these scripts')."""
+    import importlib.util
+    path = ROOT / "_engine" / "geo" / "click_beacon.py"
+    spec = importlib.util.spec_from_file_location("ig_hub_click_beacon", path)
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
+
+
+CLICK = _load_click_beacon()
+
 GROWTH = HERE.parent / "growth"
 CLIPS = GROWTH / "clips.json"
 POSTS = GROWTH / "clip-posts.json"
@@ -475,7 +499,7 @@ def render(data):
              '<meta name="theme-color" content="#fffaf0">',
              f'<meta name="{MARKER}" content="1">',
              f'<meta name="{MARKER}-latest" content="{_esc(stamp)}">',
-             f"<style>{' '.join(CSS.split())}</style>", "</head>", "<body>", "<main>",
+             f"<style>{' '.join(CSS.split())}</style>", CLICK.click_beacon_block(), "</head>", "<body>", "<main>",
              '<p class="brand">Lumi Studio</p>',
              f'<h1 data-t="h1">{_esc(w["h1"])}</h1>', f'<p class="lead" data-t="lead">{_esc(w["lead"])}</p>']
     if recent:
@@ -519,6 +543,8 @@ def problems(page, min_links=10):
         out.append("external script, frame or form in the page")
     if re.search(r"""href=["']http://""", page):
         out.append("plain http link")
+    if page.count(CLICK.click_beacon_block()) != 1:
+        out.append("the download-click counter block is missing or repeated")
     return out
 
 

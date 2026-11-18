@@ -32,7 +32,7 @@ def clip(app, locale):
     return {"app": app, "locale": locale, "url": f"https://files.catbox.moe/{app}_{locale}.mp4",
             "store_url": f"https://apps.apple.com/us/app/id1?pt=118326163&ct=h7_{app}_{locale}&mt=8",
             "hook": f"{app} {HOOK.get(locale, 'hook')} {locale}", "name": f"{app} name", "search": app,
-            "tags": ["#a", "#b", "#c"], "compliance": COMPLIANT}
+            "tags": ["#TagAlpha", "#TagBeta", "#TagGamma"], "compliance": COMPLIANT}
 
 
 # The record 00_GrowthEngine schedule_posts.py puts on a clip that passed both floors (owner rule 2026-10-18;
@@ -543,7 +543,7 @@ class BlueskyTest(unittest.TestCase):
         record = json.loads(fake.find("createRecord")[0]["data"])["record"]
         self.assertEqual(record["embed"]["$type"], "app.bsky.embed.video")
         kinds = [f["features"][0]["$type"].rsplit("#", 1)[1] for f in record["facets"]]
-        self.assertEqual(sorted(kinds), ["link", "tag", "tag", "tag"])  # App Store link + #a #b #c
+        self.assertEqual(sorted(kinds), ["link", "tag", "tag", "tag"])  # App Store link + three phrase tags
 
     def test_video_failure_falls_back_to_a_link_card(self):
         fake = Fake([self.session(), ("GET", "getServiceAuth", RuntimeError("HTTP 403 no video quota")),

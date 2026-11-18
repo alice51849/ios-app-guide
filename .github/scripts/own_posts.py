@@ -28,6 +28,15 @@ IG_GRAPH = "https://graph.instagram.com/v21.0"
 THREADS_GRAPH = "https://graph.threads.net/v1.0"
 
 
+
+_LEAD_GAPS = re.compile(r"[\s，、,]+")
+
+
+def _lead_key(text):
+    """A caption or hook line without blanks and commas: posts that went out with a half-width space between CJK
+    words still match the hook line now written with "，" / "、" (2026-11-19 caption quality)."""
+    return _LEAD_GAPS.sub("", text or "")
+
 class ApiError(Exception):
     def __init__(self, status, code, message):
         super().__init__(f"HTTP {status} code {code}: {message}")
@@ -285,7 +294,7 @@ class Catalog:
         text = media.get("caption") or ""
         for key, c in self.clips.items():
             for h in c.get("hooks") or []:
-                if h.get("lead") and text.startswith(h["lead"]):
+                if h.get("lead") and _lead_key(text).startswith(_lead_key(h["lead"])):
                     return self._clip(key, variant=h.get("id"))
             if c.get("hook") and c["hook"] in text:
                 return self._clip(key)

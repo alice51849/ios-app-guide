@@ -155,6 +155,15 @@ def squash(text):
     return LATIN_THEN_CJK.sub("", text.casefold())
 
 
+LEAD_GAPS = re.compile(r"[\s，、,]+")
+
+
+def lead_key(text):
+    """A hook line for matching: squash() without blanks and commas, so a post that went out as
+    "改善案をタップして スコアアップ" still matches the line now written "改善案をタップして、スコアアップ" (11-19)."""
+    return LEAD_GAPS.sub("", squash(text))
+
+
 def brands(name):
     """(exact, derived) names a post may use for the app. Exact: the store name, its main name (before the first
     delimiter), the main name's leading Latin run, and the same for the name in brackets ("Lumi Math Pro" in
@@ -215,7 +224,7 @@ class AppFinder:
                     exact.setdefault(squash(whole.strip()), set()).add(ios)
             for lead in [clip.get("hook")] + [h.get("lead") for h in clip.get("hooks") or []]:
                 if lead and len(lead.strip()) >= MIN_LEAD:
-                    leads.setdefault(squash(lead.strip()), set()).add(ios)
+                    leads.setdefault(lead_key(lead.strip()), set()).add(ios)
         owners = dict(derived)
         owners.update(exact)      # an exact name beats the same word derived from another app's name
         self.brands = sorted(((b, next(iter(o))) for b, o in owners.items() if len(o) == 1), key=lambda x: -len(x[0]))
@@ -313,7 +322,7 @@ class AppFinder:
         return next(iter(found)) if len(found) == 1 else False
 
     def _by_lead(self, text):
-        low = squash(re.sub(r"^[\W_]+", "", text.strip(), flags=re.U))
+        low = lead_key(re.sub(r"^[\W_]+", "", text.strip(), flags=re.U))
         owners = {owner for lead, owner in self.leads.items() if low.startswith(lead)}
         if not owners:
             return None

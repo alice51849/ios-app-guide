@@ -1311,6 +1311,11 @@ LEGACY_BEST_RETITLES = {
         "best read later app": "How do I build a read-later list on iPhone that actually shrinks?",
         "best link organizer app": "How can I organize saved links on iPhone with tags automatically?",
     },
+    # persona 答案頁（answer_personas.py 的 query 是 slug 來源，不改）：線上 1.0.7
+    # 掃了直接開、掃描人人不限次數，顯示問題不再用「先顯示連結再開」說法。
+    "qrcodehalo": {
+        "qr code scanner app that shows the link before opening it": "Which QR code scanner app opens the link right after the scan, with no scan limit?",
+    },
 }
 _DISPLAY_QUESTIONS = {
     legacy.lower(): shown

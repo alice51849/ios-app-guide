@@ -49,6 +49,50 @@ STOP = set(
     "without pay once app-store".split()
 )
 
+# App 頁 → 該款支援頁(外宣十倍令第 5 條;表的正本是 support_network/support_xlinks.py
+# GUIDE_APPS/TARGETS,兩邊一起改)。檔名 → (App Store ID, 支援頁, {語系: 支援頁});
+# 連結帶 ?ct=sup_<款>_xlink(agent/ct_codes.py sup_ 家族),只放站內支援頁、不放商店連結。
+SUPPORT_HOST = "https://open.cait518.cc"
+SUPPORT_PAGES = {
+    "mochi": ("6785004775", "mochi", "/mochitodo-support/",
+              {"zh-Hant": "/mochitodo-support/zh-Hant/", "id": "/mochitodo-support/id/"}),
+    "lumiweather": ("6779552704", "lumiweather", "/lumi-weather-support/",
+                    {"zh-Hant": "/lumi-weather-support/zh-Hant/"}),
+    "battai": ("6802423998", "battai", "/battai-support/", {}),
+    "cyca": ("6782251621", "cyca", "/cyca-support/", {}),
+    "dailymate": ("6790418321", "dailymate", "/dailymate-support/", {}),
+    "lockhour": ("6780107485", "lockhour", "/lockhour-support/", {}),
+    "moneytag": ("6801956402", "moneytag", "/moneytag-support/", {}),
+    "hourstag": ("6754218117", "hourstag", "/hourstag-support/", {}),
+    "gmoney": ("6755782939", "gmoney", "/gmoney-support/", {}),
+    "claudeusagemini": ("6818607603", "usagenow", "/usagenow-support/",
+                        {"ja": "/usagenow-support/ja/support.html"}),
+}
+SUPPORT_BLOCK = re.compile(
+    r"\n?<!--iag-app-support-->.*?<!--/iag-app-support-->\n?", re.S
+)
+SUPPORT_LABEL = {
+    "en": "Help & FAQ for this app",
+    "zh-Hant": "這款 App 的說明與常見問題",
+    "zh-Hans": "这款 App 的说明与常见问题",
+    "ja": "このアプリのサポートとよくある質問",
+    "ko": "이 앱의 도움말 및 자주 묻는 질문",
+    "de": "Hilfe und FAQ zu dieser App",
+    "fr": "Aide et FAQ de cette app",
+    "es": "Ayuda y preguntas frecuentes de esta app",
+    "pt": "Ajuda e perguntas frequentes desta app",
+    "it": "Assistenza e FAQ di questa app",
+    "ru": "Справка и вопросы об этом приложении",
+    "nl": "Hulp en veelgestelde vragen over deze app",
+    "th": "ความช่วยเหลือและคำถามที่พบบ่อยของแอปนี้",
+    "vi": "Trợ giúp và câu hỏi thường gặp của ứng dụng này",
+    "id": "Bantuan dan FAQ aplikasi ini",
+    "ms": "Bantuan dan soalan lazim apl ini",
+    "tr": "Bu uygulama için yardım ve SSS",
+    "pl": "Pomoc i FAQ tej aplikacji",
+    "ar": "المساعدة والأسئلة الشائعة لهذا التطبيق",
+}
+
 HEADING = {
     "en": "Answers about this app",
     "zh-Hant": "關於這款 App 的問答",
@@ -193,6 +237,63 @@ def write_block(path, block, state):
             fh.write(merged)
 
 
+def support_block(locale, name, source):
+    """<語系>/<款>.html 的支援頁連結;不在表上、或頁面主 App 不是那一款就回空字串(清掉舊的)。"""
+    row = SUPPORT_PAGES.get(name[: -len(".html")])
+    if not row or primary_app_id(source) != row[0]:
+        return ""
+    _app_id, key, path, by_locale = row
+    path = by_locale.get(locale) or path
+    url = f"{SUPPORT_HOST}{path}?ct=sup_{key}_xlink"
+    label = (
+        SUPPORT_LABEL.get(locale)
+        or SUPPORT_LABEL.get(base_lang(locale))
+        or SUPPORT_LABEL["en"]
+    )
+    rtl = ' dir="rtl"' if base_lang(locale) in ("ar", "he", "fa", "ur") else ""
+    e = html.escape
+    return (
+        "\n<!--iag-app-support-->\n"
+        f'<p class="wrap app-support"{rtl}><a href="{e(url, quote=True)}" '
+        f'data-ls-xlink="{key}">{e(label)}</a></p>\n'
+        "<!--/iag-app-support-->\n"
+    )
+
+
+def write_support(path, block, state):
+    """支援頁連結放在相關問答區塊正後方(沒有就 </main> 正後方)。
+
+    跟 write_block 同一個錨點家族、固定在它後面:write_block 拿掉自己的區塊再插回 </main>
+    後方時,本區塊仍在它後面,兩支每輪輸出一致,不會互翻。
+    """
+    source = read(path)
+    if not source:
+        return
+    cleaned = SUPPORT_BLOCK.sub("", source)
+    merged = cleaned
+    if block:
+        end = cleaned.rfind("<!--/iag-app-related-->")
+        if end != -1:
+            cut = end + len("<!--/iag-app-related-->")
+            if cleaned[cut:cut + 1] == "\n":
+                cut += 1
+        else:
+            idx = cleaned.rfind("</main>")
+            cut = idx + len("</main>") if idx != -1 else -1
+        if cut == -1:
+            idx = cleaned.rfind("</body>")
+            cut = idx if idx != -1 else len(cleaned)
+        merged = cleaned[:cut] + block + cleaned[cut:]
+    if merged == source:
+        return
+    rel = os.path.relpath(path, PAGES)
+    if rel not in state["changed"]:
+        state["changed"].append(rel)
+    if not state["check"]:
+        with open(path, "w", encoding="utf-8") as fh:
+            fh.write(merged)
+
+
 def pick_related(source, url_self, pool, limit):
     seed = tokens(
         text_of(source, TITLE_RE) + " " + text_of(source, H1_RE)
@@ -232,8 +333,9 @@ def process_locale(locale, state):
         related = pick_related(source, url_self, pool, MAX_LINKS)
         if len(related) < MIN_LINKS:
             write_block(path, "", state)
-            continue
-        write_block(path, build_block(locale, related), state)
+        else:
+            write_block(path, build_block(locale, related), state)
+        write_support(path, support_block(locale, name, source), state)
 
 
 def process_hubs(state):

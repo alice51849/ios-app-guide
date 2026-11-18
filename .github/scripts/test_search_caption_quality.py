@@ -148,5 +148,40 @@ class YoutubeKeywordTest(unittest.TestCase):
             self.assertFalse(SC.phrase_tag(frag, "sv"), frag)
         self.assertTrue(SC.phrase_tag("#Viktdagbok", "sv"))
 
+
+class HealthKeylineTest(unittest.TestCase):
+    """Coordinator 11-19: Kumo keyword line, keywords and tags on the GE health_terms list (ダイエット / 다이어트)."""
+
+    def test_kumo_keyline_drops_the_diet_part_everywhere_it_is_shown(self):
+        clip = {"app": "kumo", "locale": "ja", "search": "Kumo", "name": "Kumo",
+                "keyline": "かわいい雲と1日10秒、ダイエット管理を習慣に"}
+        self.assertEqual(SC.safe_keyline(clip), "かわいい雲と1日10秒")
+        variant = {"lead": "体重が気になる", "benefit": "10秒で記録"}
+        self.assertNotIn("ダイエット", "\n".join(SC.body(clip, variant)))
+        self.assertNotIn("ダイエット", SC.alt_text(clip, variant))
+        self.assertNotIn("ダイエット", SC.pin_title(clip, variant))
+        ko = {"app": "kumo", "locale": "ko", "keyline": "귀여운 구름과 하루 10초 체중 관리·다이어트 일기"}
+        self.assertEqual(SC.safe_keyline(ko), "귀여운 구름과 하루 10초 체중 관리")
+
+    def test_kumo_diet_tags_and_keywords_never_go_out(self):
+        clip = {"app": "kumo", "locale": "ja", "search": "Kumo", "tags": ["#ダイエット記録", "#体脂肪率", "#다이어트일기"],
+                "keywords": ["ダイエット", "体脂肪率", "다이어트"]}
+        self.assertEqual(SC.safe_keywords(clip), ["体脂肪率"])
+        self.assertNotIn("#ダイエット記録", SC.tags(clip, 5))
+        self.assertNotIn("#다이어트일기", SC.tags(clip, 5))
+
+    def test_health_banned_list_matches_ge_pin(self):
+        # GE shorts/scripts/test_health_terms.py HEALTH_BANNED_SHA256: change both lists and both pins together
+        import hashlib
+        self.assertEqual(hashlib.sha256("\n".join(SC.HEALTH_BANNED).encode("utf-8")).hexdigest(),
+                         "aba6e81a5587883e04fdf2b0fa4c9a5d63aa3ea7c99ecc4b65c0ba4197832bb7")
+        for t in ("#Dieta", "#Dietă", "#RekodBeratBadanDiet", "régime"):
+            self.assertTrue(SC.health_banned(t), t)
+
+    def test_other_apps_keep_their_keyline(self):
+        clip = {"app": "foldparty", "keyline": "ダイエット中でも遊べる、猫ゲーム"}
+        self.assertEqual(SC.safe_keyline(clip), clip["keyline"])
+
+
 if __name__ == "__main__":
     unittest.main()

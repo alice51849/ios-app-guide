@@ -188,7 +188,7 @@ def tags(clip, limit=5):
     kumo_health = health_app(clip)
     for t in clip.get("tags") or []:
         t = t if t.startswith("#") else f"#{t}"
-        if medical(t) or (kumo_health and t.lstrip("#").strip().casefold() in WEIGHT_WORDS) or (
+        if medical(t) or (kumo_health and (t.lstrip("#").strip().casefold() in WEIGHT_WORDS or health_banned(t))) or (
                 t.casefold() != brand.casefold() and not phrase_tag(t, clip.get("locale"))):
             continue
         if t.casefold() not in GENERIC_TAGS and t.casefold() not in {x.casefold() for x in out}:
@@ -204,7 +204,7 @@ def tags(clip, limit=5):
 
 def body(clip, variant, limit=FIRST):
     """Problem line, benefit, keyword line; the keyword line moves up if it would fall past `limit`."""
-    lead, benefit, keyline = tidy(variant.get("lead", "")), tidy(variant.get("benefit", "")), clip.get("keyline", "")
+    lead, benefit, keyline = tidy(variant.get("lead", "")), tidy(variant.get("benefit", "")), safe_keyline(clip)
     rest = [x for x in (benefit, keyline) if x and x != lead]
     if keyline and benefit and len("\n".join([lead, benefit, keyline])) > limit:
         rest = [keyline, benefit]
@@ -213,7 +213,7 @@ def body(clip, variant, limit=FIRST):
 
 def alt_text(clip, variant, limit=500):
     """Accessible description that also carries the search phrase."""
-    parts = [clip.get("name", ""), variant.get("lead", ""), variant.get("benefit", ""), clip.get("keyline", "")]
+    parts = [clip.get("name", ""), variant.get("lead", ""), variant.get("benefit", ""), safe_keyline(clip)]
     text = " — ".join(p for i, p in enumerate(parts) if p and not any(p in q for q in parts[:i]))
     return text if len(text) <= limit else text[:limit - 1].rstrip() + "…"
 
@@ -227,6 +227,44 @@ WEIGHT_WORDS = {"loss", "lose", "perder", "perdere", "perte", "perdre", "perda",
                 "ലോസ്", "ಲಾಸ್", "ঘটাড়ো", "ઘટાડવા", "ઓછું", "ਘਟਾਓ", "ਘੱਟ", "ହ୍ରାସ", "କମ", "குறைக்க", "குறைய",
                 "കുറയ്ക്കാൻ", "কমানোর", "ಇಳಿಸಲು", "ಕಡಿಮೆ", "करण्यासाठी", "करणे", "کرنا", "weight", "kilos", "kilo", "הורדת", "رشاقة",
                 "shot", "shots"}
+
+
+# Health-app banned list (Kumo): the same list as GE shorts/scripts/health_terms.HEALTH_BANNED, which GE
+# social/yt_fix_metadata.py also reads (coordinator 11-19: keep the keyword line, keywords and tags on one
+# standard; 'ダイエット' / '다이어트' never go out in a health app). The store-name line is not filtered here.
+HEALTH_BANNED = (
+    r"weight\s*loss", r"\bloss\b", r"inje[ck]", r"\bjab\b", r"\bshots?\b", r"glp[\s-]?1",
+    r"ozempic", r"wegovy", r"mounjaro", r"zepbound", r"saxenda", r"semaglutid", r"tirzepatid", r"liraglutid",
+    r"瘦瘦針", r"減重針", r"減肥", r"減重", r"打針", r"施打", r"注射", r"ダイエット", r"減量", r"주사", r"다이어트",
+    r"abnehm", r"spritze", r"adelgaz", r"\bperder\b", r"p[ée]rdida", r"\bbajar\b", r"inyecci", r"caneta", r"emagrec",
+    r"\bdiet[aă]?\b", r"régime",
+)
+_HEALTH = re.compile("|".join(f"(?:{p})" for p in HEALTH_BANNED), re.IGNORECASE)
+# same separators as GE search_intent.SEGMENT_SEP
+SEGMENT_SEP = re.compile(r"\s*(?:[,，、・·|/:：;；]|\s[-–—&+]\s|\s(?:and|y|e|et|und|en|og|och|ed|i)\s)\s*", re.IGNORECASE)
+
+
+def health_banned(text):
+    """True when `text` carries a HEALTH_BANNED word (also with a hashtag's case humps split)."""
+    return bool(text) and bool(_HEALTH.search(text) or _HEALTH.search(_spaced(text)))
+
+
+def safe_keyline(clip):
+    """The clip's keyword line; in a health app the parts medical() or HEALTH_BANNED hit are cut out
+    ('かわいい雲と1日10秒、ダイエット管理を習慣に' -> 'かわいい雲と1日10秒'); old clips.json entries carry them
+    until the planner rewrites them."""
+    line = clip.get("keyline", "") or ""
+    if not line or not health_app(clip):
+        return line
+    parts = re.split(f"({SEGMENT_SEP.pattern})", line, flags=re.IGNORECASE)
+    pieces, seps = parts[0::2], parts[1::2]
+    keep = [i for i, x in enumerate(pieces) if x.strip() and not medical(x) and not health_banned(x)]
+    if not keep:
+        return ""
+    out = pieces[keep[0]].strip()
+    for i in keep[1:]:
+        out += seps[i - 1] + pieces[i].strip()
+    return out.strip()
 
 
 def health_app(clip):
@@ -243,7 +281,8 @@ def safe_keywords(clip):
     still carry loss / injection / glp1 / 瘦瘦針 / abnehmspritze until the planner rewrites them."""
     words = [w for w in clip.get("keywords") or [] if isinstance(w, str)]
     health = health_app(clip)
-    return [w for w in words if not medical(w) and not (health and w.strip().casefold() in WEIGHT_WORDS)]
+    return [w for w in words if not medical(w)
+            and not (health and (w.strip().casefold() in WEIGHT_WORDS or health_banned(w)))]
 
 
 def youtube(clip, variant, links, limit=100):
@@ -268,7 +307,7 @@ def youtube(clip, variant, links, limit=100):
 
 def pin_title(clip, variant, limit=100):
     """Pinterest / Tumblr title: the problem line, then the searchable keyline, then the app."""
-    parts = [variant.get("lead", ""), clip.get("keyline", ""), clip.get("search") or clip.get("name", "")]
+    parts = [variant.get("lead", ""), safe_keyline(clip), clip.get("search") or clip.get("name", "")]
     title = " | ".join(p for i, p in enumerate(parts) if p and p not in parts[:i])
     return title if len(title) <= limit else title[:limit - 1].rstrip() + "…"
 
@@ -295,7 +334,7 @@ def card_tags(app, locale, limit=5, data=None):
 def card_alt(name, caption, app, locale, data=None, limit=500):
     """Alt text for a card image: what the card says, the app, and its search phrase."""
     lines = [line for line in caption.split("\n") if line.strip()][:3]
-    keyline = seo_for(app, locale, data).get("keyline", "")
+    keyline = safe_keyline({"app": app, "keyline": seo_for(app, locale, data).get("keyline", "")})
     text = " — ".join(p for p in [name, *lines, keyline] if p)
     return text if len(text) <= limit else text[:limit - 1].rstrip() + "…"
 

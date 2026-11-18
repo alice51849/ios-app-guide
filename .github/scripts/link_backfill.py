@@ -75,6 +75,10 @@ LINK_BUDGET_24H = {"threads": 20}
 # The Threads Mochi trial posts (threads_post.py, threads_mochi_trial.json, 2026-10-20 .. 11-01) carry no brand in
 # their main text, so the finder names them by that text: the trial file gives the app and the entry's own ct.
 TRIAL_PATH = Path(__file__).resolve().parent / "threads_mochi_trial.json"
+# Pinned posts (remediation, 00_GrowthEngine reports/outreach_scale/metro_label_remediation_2026-11-19.md): a post the
+# finder cannot name, named by hand with its app, locale and one note line that goes above the links in the reply
+# (for example the "unofficial app" line of Metro Time Helper). Only the listed post ids of the listed channel.
+PINNED_PATH = OP.GROWTH / "link-backfill-pinned.json"
 # Play-only round (review 2026-10-31): a Threads post (or our own older reply) that carries the App Store link but
 # no Google Play link, of an app that is live on Google Play, gets one reply with only the Play link. Newest first,
 # so the posts of the last PLAY_RECENT_DAYS days go before the long tail; the run caps and gaps stay as they are.
@@ -230,6 +234,14 @@ class AppFinder:
         self.brands = sorted(((b, next(iter(o))) for b, o in owners.items() if len(o) == 1), key=lambda x: -len(x[0]))
         self.leads = {l: next(iter(o)) for l, o in leads.items() if len(o) == 1}
         self.trial = trial_entries()
+        self.pinned = pinned_entries(PINNED_PATH)
+
+    def _pinned(self, channel, media):
+        entry = (self.pinned.get(channel) or {}).get(str(media.get("id") or ""))
+        if not entry:
+            return None
+        return {"app": entry["app"], "locale": entry["locale"], "hook": "", "ios_id": entry["ios_id"],
+                "kind": "pinned", "clip": None, "why": "pinned", "note": entry.get("note", "")}
 
     def _trial(self, channel, media):
         """A Threads trial post, by its main text (whole, or its first 80 characters when the platform cut it)."""
@@ -256,6 +268,9 @@ class AppFinder:
         return None
 
     def resolve(self, channel, media):
+        pinned = self._pinned(channel, media)
+        if pinned:
+            return pinned
         post = self._ledger(channel, media)
         if post and ios_id_for(self.catalog, post):
             return post
@@ -348,6 +363,27 @@ def trial_entries(path=TRIAL_PATH):
     return out
 
 
+def pinned_entries(path):
+    """{channel: {post id: entry}} of the pinned file ({} when it is missing or unreadable). An entry needs app,
+    locale and a numeric ios_id; note is optional (one line, no URL: the links come from the sweeper)."""
+    try:
+        data = json.loads(Path(path).read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return {}
+    out = {}
+    for channel, posts in (data.get("posts") or {}).items() if isinstance(data, dict) else ():
+        for pid, e in (posts or {}).items():
+            if not isinstance(e, dict) or not str(e.get("ios_id") or "").isdigit() or not e.get("app") \
+                    or not e.get("locale"):
+                continue
+            note = str(e.get("note") or "").strip()
+            if "\n" in note or "http" in note.lower():
+                continue
+            out.setdefault(channel, {})[str(pid)] = {"app": str(e["app"]), "locale": str(e["locale"]),
+                                                     "ios_id": str(e["ios_id"]), "note": note}
+    return out
+
+
 def _flat(text):
     return " ".join(squash(text or "").split())
 
@@ -373,11 +409,12 @@ def links_for(channel, ios_id, ct=None):
     return campaign_app_store_url(f"https://apps.apple.com/app/id{ios_id}", ct), play_store_url(ios_id, ct)
 
 
-def comment_text(locale, store, play, missing_store=True, channel=None):
+def comment_text(locale, store, play, missing_store=True, channel=None, note=""):
     """The links under a post. (Instagram gets none any more, NO_WRITE; should that switch ever be lifted, the
-    comment would open with the profile-link line, "📲 Download via the link in bio", ig_bio.py.)"""
+    comment would open with the profile-link line, "📲 Download via the link in bio", ig_bio.py.) A pinned post's
+    note line goes first."""
     t = CP.text_for(locale or "en")
-    lines = []
+    lines = [note] if note else []
     if DL.is_instagram(channel):
         lines.append(IGB.bio_line(locale or "en"))
     if missing_store:
@@ -541,6 +578,7 @@ def classify(client, media, finder, state, reads=None, read_gap=0, sleeper=time.
     ios = ios_id_for(finder.catalog, post)
     row["app"] = (post or {}).get("app", "")
     row["why"] = (post or {}).get("why", "")   # which evidence named the app (ledger / url / brand / hook)
+    note = (post or {}).get("note") or ""
     gone = finder.catalog.taken_down(channel, media, LEDGER_CHANNELS.get(channel, (channel,)))
     if gone:   # a taken-down (non-compliant) clip post, or one waiting to be archived: no link goes under it
         row["status"] = "taken_down"
@@ -634,7 +672,7 @@ def classify(client, media, finder, state, reads=None, read_gap=0, sleeper=time.
     row["status"] = "missing_play" if DL.has_app_store_link(seen, store) else "missing"
     row["own_replies"] = [_short(c.get("text", ""), 100) for c in mine][:3]
     return row, {"store": store, "play": play, "missing_store": not DL.has_app_store_link(seen, store),
-                 "missing_play": bool(play) and not DL.has_play_link(seen, play)}
+                 "missing_play": bool(play) and not DL.has_play_link(seen, play), "note": note}
 
 
 def by_window(media, channel, now):
@@ -724,7 +762,7 @@ def run(client, catalog, state, *, apply=False, max_new=5, only=None, sleeper=ti
             continue
         attempts += 1
         text = comment_text(row.get("locale"), todo["store"], todo["play"] if todo["missing_play"] else None,
-                            todo["missing_store"], channel=channel)
+                            todo["missing_store"], channel=channel, note=todo.get("note", ""))
         try:
             before = comments_count(client, row["id"])   # the read-back of an Instagram comment is the count going up
             if channel == "instagram" and before is None:   # without the count nothing can be read back: write nothing

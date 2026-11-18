@@ -203,6 +203,35 @@ class BackfillTest(unittest.TestCase):
         self.assertEqual(rows[0]["status"], "unknown_app")
         self.assertEqual(client.writes, [])
 
+    def test_a_pinned_post_gets_its_app_and_the_note_line_first(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "pinned.json"
+            path.write_text('{"posts": {"instagram": {"557": {"app": "plainpro", "locale": "zh-Hans", '
+                            '"ios_id": "%s", "note": "说明：非官方 App。"}}}}' % PLAIN, encoding="utf-8")
+            snapshot = {k: v for k, v in B.android_apps().items() if k != PLAIN}
+            with mock.patch.object(B, "PINNED_PATH", path), mock.patch.object(B, "android_apps", return_value=snapshot), \
+                    mock.patch("social_post_common.android_apps", return_value=snapshot):
+                client = ig([reel("557", "捷运时间助手：台北地铁换乘"), reel("558", "A photo of my cat")])
+                rows = self.run_channel(client, apply=True)
+        by_id = {r["id"]: r for r in rows}
+        self.assertEqual(by_id["557"]["status"], "backfilled")
+        self.assertEqual(by_id["557"]["why"], "pinned")
+        self.assertEqual(by_id["558"]["status"], "unknown_app")   # only the pinned id
+        self.assertEqual(len(client.writes), 1)
+        text = client.writes[0][1]
+        self.assertTrue(text.startswith("说明：非官方 App。\n"))
+        self.assertIn(f"id{PLAIN}", text)
+
+    def test_a_pinned_entry_with_a_url_or_no_ios_id_is_ignored(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "pinned.json"
+            path.write_text('{"posts": {"threads": {"1": {"app": "a", "locale": "en", "ios_id": "12", '
+                            '"note": "see https://x.example"}, "2": {"app": "a", "locale": "en", "ios_id": ""}, '
+                            '"3": {"app": "a", "locale": "en", "ios_id": "12"}}}}', encoding="utf-8")
+            got = B.pinned_entries(path)
+        self.assertEqual(list(got["threads"]), ["3"])
+        self.assertEqual({}, B.pinned_entries(Path("/nonexistent/pinned.json")))
+
     def test_app_found_by_name_in_the_text_gets_its_own_link(self):
         client = ig([reel("556", "Plain Pro makes it simple")])
         # Pin PLAIN as iOS only: the live Android snapshot grows as apps launch on Play (10-30 it did).

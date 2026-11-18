@@ -31,6 +31,18 @@ BLUESKY_WEEK = dt.date(2026, 11, 10)     # week 3: bluesky off
 THREADS_WEEK = dt.date(2026, 11, 24)     # week 5: threads off
 BEFORE = dt.date(2026, 10, 25)
 PLAN = CR.load_plan()
+NO_STOP = Path(tempfile.gettempdir()) / "no-such-channel-rotation-stop.json"
+_STOP_PATCH = mock.patch.object(CR, "STOP_PATH", NO_STOP)
+
+
+def setUpModule():
+    # The registered off-week behaviour is tested without the stop file (committed 2026-11-18);
+    # StopTest below covers the early stop itself.
+    _STOP_PATCH.start()
+
+
+def tearDownModule():
+    _STOP_PATCH.stop()
 
 
 def on(day):
@@ -318,6 +330,62 @@ class WatchdogTest(unittest.TestCase):
         now = dt.datetime(2026, 10, 28, 12, 41, tzinfo=dt.timezone.utc).timestamp()
         with mock.patch.object(CR, "load_plan", side_effect=ValueError("digest mismatch")):
             self.assertFalse(W.rotation_holdout(self.row("telegram_message_id"), now)["fresh"])
+
+
+
+class StopTest(unittest.TestCase):
+    """Early stop (00_GrowthEngine coordinator ruling 2026-11-18): the plan stays digest-locked; the stop file
+    cancels every remaining off week, so every publisher posts and the watchdog judges as before."""
+
+    REAL_STOP = Path(__file__).resolve().parents[1] / "growth" / "channel_rotation_stop.json"
+
+    def stopped(self, path=None):
+        return mock.patch.object(CR, "STOP_PATH", path or self.REAL_STOP)
+
+    def test_the_committed_stop_file_and_the_plan_lock(self):
+        stop = CR.load_stop(self.REAL_STOP)
+        self.assertEqual("2026-11-18", stop["stopped_at"])
+        self.assertTrue(stop.get("by") and stop.get("reason"))
+        self.assertEqual(REGISTERED_DIGEST, CR.load_plan()["digest"])  # the plan itself is untouched
+
+    def test_nothing_is_paused_on_any_registered_week(self):
+        with self.stopped(), redirect_stdout(io.StringIO()) as out:
+            for week in PLAN["weeks"]:
+                day = dt.date.fromisoformat(week["start"])
+                for ch in CR.ROTATION_CHANNELS:
+                    self.assertFalse(CR.is_paused(ch, day, PLAN), (ch, day))
+                    self.assertFalse(CR.paused_notice(ch, day, PLAN), (ch, day))
+        self.assertEqual("", out.getvalue())
+
+    def test_a_broken_stop_file_still_stops(self):
+        tmp = Path(tempfile.mkdtemp())
+        self.addCleanup(shutil.rmtree, tmp)
+        broken = tmp / "stop.json"
+        broken.write_text("{", encoding="utf-8")
+        self.assertTrue(CR.is_stopped(broken))
+        self.assertFalse(CR.is_paused("telegram", TELEGRAM_WEEK, PLAN, stop_path=broken))
+        self.assertIsNone(CR.load_stop(tmp / "missing.json"))
+
+    def test_cli_reports_nothing_paused(self):
+        tmp = Path(tempfile.mkdtemp())
+        self.addCleanup(shutil.rmtree, tmp)
+        out_file = tmp / "out"
+        with self.stopped(), mock.patch.dict(os.environ, {"GITHUB_OUTPUT": str(out_file)}), \
+                redirect_stdout(io.StringIO()) as out, on(TELEGRAM_WEEK):
+            self.assertEqual(0, CR.main(["check", "telegram"]))
+            self.assertEqual(0, CR.main(["status"]))
+        self.assertEqual("paused=false\n", out_file.read_text())
+        self.assertIn("stopped early", out.getvalue())
+        self.assertEqual("none", out.getvalue().strip().splitlines()[-1])
+
+    def test_the_watchdog_judges_an_off_week_as_before_the_experiment(self):
+        import line_watchdog as W
+        row = {"line": "telegram_message_id", "kind": "evidence", "fresh": False, "last_success": "n/a",
+               "max_age_hours": 24, "in_progress": False, "action": "none", "note": "none"}
+        now = dt.datetime(2026, 10, 28, 12, 41, tzinfo=dt.timezone.utc).timestamp()
+        with self.stopped():
+            self.assertFalse(W.rotation_holdout(row, now)["fresh"])
+        self.assertTrue(W.rotation_holdout(row, now)["fresh"])  # without the stop file it was a quiet week
 
 
 if __name__ == "__main__":

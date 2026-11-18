@@ -1,0 +1,5 @@
+{
+ "stopped_at": "2026-11-18",
+ "by": "統籌裁定 cbe8ca897（00_GrowthEngine ops/handoff/orders/外宣放量.md）",
+ "reason": "通路輪替實驗剩下所有停開週全部取消（排到 2027-02-08 的都取消）；計畫檔有雜湊鎖不改，改用本停止檔提前結束，channel_rotation.is_paused 一律 False。"
+}

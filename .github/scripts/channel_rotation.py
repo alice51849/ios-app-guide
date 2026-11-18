@@ -26,6 +26,9 @@ from pathlib import Path
 SCHEMA = "channel-rotation/v1"
 PLAN_PATH = Path(__file__).resolve().parent.parent / "growth" / "channel_rotation_plan.json"
 ROTATION_CHANNELS = ("threads", "bluesky", "telegram", "instagram", "youtube")
+# Early stop (00_GrowthEngine coordinator ruling 2026-11-18): every remaining off week is cancelled. The plan
+# stays digest-locked and untouched; while this stop file exists is_paused answers False for every day.
+STOP_PATH = Path(__file__).resolve().parent.parent / "growth" / "channel_rotation_stop.json"
 
 
 def _digest(obj) -> str:
@@ -50,9 +53,34 @@ def off_channel(day: date, plan: dict) -> str | None:
     return None
 
 
-def is_paused(channel: str, day: date, plan: dict | None = None) -> bool:
+def load_stop(path: Path | None = None) -> dict | None:
+    """The early-stop record, or None when the experiment was not stopped. A stop file that exists but cannot
+    be read or parsed still counts as stopped (fail-open: a broken stop file never resumes pausing)."""
+    path = Path(path if path is not None else STOP_PATH)
+    try:
+        with open(path, encoding="utf-8") as fh:  # not Path.read_text: card tests patch it for their own files
+            raw = fh.read()
+    except FileNotFoundError:
+        return None
+    except OSError:
+        return {"stopped_at": None, "reason": "unreadable stop file"}
+    try:
+        rec = json.loads(raw)
+    except ValueError:
+        return {"stopped_at": None, "reason": "unparseable stop file"}
+    return rec if isinstance(rec, dict) else {"stopped_at": None, "reason": "stop file is not an object"}
+
+
+def is_stopped(stop_path: Path | None = None) -> bool:
+    return load_stop(stop_path) is not None
+
+
+def is_paused(channel: str, day: date, plan: dict | None = None, *, stop_path: Path | None = None) -> bool:
     """For publishers: True when `channel` sits out its registered week. A missing or altered plan pauses
-    nothing (the experiment never blocks posting by accident)."""
+    nothing (the experiment never blocks posting by accident), and once the stop file exists nothing is
+    paused on any day."""
+    if is_stopped(stop_path):
+        return False
     if plan is None:
         try:
             plan = load_plan()
@@ -129,6 +157,10 @@ def main(argv: list[str] | None = None) -> int:
     args = ap.parse_args(argv)
     if args.cmd == "status":
         day = date.fromisoformat(args.day) if args.day else today_utc()
+        if is_stopped():
+            print("::notice::channel rotation holdout stopped early (.github/growth/channel_rotation_stop.json)")
+            print("none")
+            return 0
         try:
             print(off_channel(day, load_plan()) or "none")
         except (OSError, ValueError) as exc:

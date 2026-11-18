@@ -125,6 +125,9 @@ LEGACY_FAQ_ANSWER = (
 )
 FAQ_ANSWER = MappingProxyType({
     "en-US": "No. It is published by Lumi Studio, the developer of the featured apps; app names and trademarks belong to their respective owners.",
+    "en-GB": "No. It is published by Lumi Studio, the developer of the featured apps; app names and trademarks belong to their respective owners.",
+    "en-AU": "No. It is published by Lumi Studio, the developer of the featured apps; app names and trademarks belong to their respective owners.",
+    "en-CA": "No. It is published by Lumi Studio, the developer of the featured apps; app names and trademarks belong to their respective owners.",
     "ja": "いいえ。本ページは掲載アプリの開発者であるLumi Studioが公開する購入ガイドであり、各アプリ名や商標は、それぞれの所有者に帰属します。",
     "zh-Hant": "不是。這是由所介紹 App 的開發者 Lumi Studio 發布的選購指南；App 名稱與商標屬於各自所有者。",
     "zh-Hans": "不是。这是由所介绍 App 的开发者 Lumi Studio 发布的选购指南；App 名称与商标属于各自所有者。",
@@ -173,19 +176,73 @@ FAQ_ANSWER = MappingProxyType({
     "ca": "No. És una guia de compra que publica Lumi Studio, el desenvolupador de les apps que s'hi presenten; els noms de les apps i les marques pertanyen als seus propietaris respectius.",
 })
 
+# One line naming who wrote a comparison, in every official locale.
+COMPARISON_LINE = MappingProxyType({
+    "en-US": "Comparison by Lumi Studio, the developer of the featured apps.",
+    "en-GB": "Comparison by Lumi Studio, the developer of the featured apps.",
+    "en-AU": "Comparison by Lumi Studio, the developer of the featured apps.",
+    "en-CA": "Comparison by Lumi Studio, the developer of the featured apps.",
+    "ja": "掲載アプリの開発者であるLumi Studioによる比較です。",
+    "zh-Hant": "由這些 App 的開發者 Lumi Studio 撰寫的比較。",
+    "zh-Hans": "由这些 App 的开发者 Lumi Studio 撰写的比较。",
+    "ko": "소개된 앱의 개발사인 Lumi Studio가 작성한 비교입니다.",
+    "de-DE": "Vergleich von Lumi Studio, dem Entwickler der vorgestellten Apps.",
+    "fr-FR": "Comparaison publiée par Lumi Studio, le développeur des apps présentées.",
+    "fr-CA": "Comparaison publiée par Lumi Studio, le développeur des applications présentées.",
+    "es-ES": "Comparación publicada por Lumi Studio, el desarrollador de las apps que aparecen.",
+    "es-MX": "Comparación publicada por Lumi Studio, el desarrollador de las apps que se presentan.",
+    "pt-BR": "Comparação publicada pela Lumi Studio, desenvolvedora dos apps apresentados.",
+    "pt-PT": "Comparação publicada pela Lumi Studio, que desenvolve as apps apresentadas.",
+    "it": "Confronto pubblicato da Lumi Studio, lo sviluppatore delle app presentate.",
+    "nl-NL": "Vergelijking van Lumi Studio, de ontwikkelaar van de getoonde apps.",
+    "sv": "Jämförelse från Lumi Studio, utvecklaren av apparna som presenteras.",
+    "da": "Sammenligning fra Lumi Studio, udvikleren af de viste apps.",
+    "no": "Sammenligning fra Lumi Studio, utvikleren av appene som presenteres.",
+    "fi": "Vertailun on laatinut Lumi Studio, esiteltyjen sovellusten kehittäjä.",
+    "pl": "Porównanie przygotowane przez Lumi Studio – twórcę prezentowanych aplikacji.",
+    "cs": "Srovnání od Lumi Studio, vývojáře představených aplikací.",
+    "sk": "Porovnanie od Lumi Studio, vývojára predstavených aplikácií.",
+    "sl-SI": "Primerjava, ki jo je pripravil Lumi Studio, razvijalec predstavljenih aplikacij.",
+    "hr": "Usporedbu je pripremio Lumi Studio, razvojni programer predstavljenih aplikacija.",
+    "hu": "Az összehasonlítást a Lumi Studio, a bemutatott alkalmazások fejlesztője készítette.",
+    "ro": "Comparație publicată de Lumi Studio, dezvoltatorul aplicațiilor prezentate.",
+    "ru": "Сравнение подготовлено Lumi Studio — разработчиком представленных приложений.",
+    "uk": "Порівняння підготувала Lumi Studio — розробник представлених застосунків.",
+    "el": "Σύγκριση από τη Lumi Studio, τη δημιουργό των εφαρμογών που παρουσιάζονται.",
+    "tr": "Bu karşılaştırma, tanıtılan uygulamaların geliştiricisi Lumi Studio tarafından hazırlanmıştır.",
+    "ar-SA": "مقارنة أعدّها Lumi Studio، مطوّر التطبيقات المعروضة.",
+    "he": "השוואה שהכינה Lumi Studio, המפתחת של האפליקציות המוצגות.",
+    "hi": "यह तुलना Lumi Studio ने तैयार की है, जो यहाँ दिखाए गए ऐप्स का डेवलपर है।",
+    "bn-BD": "এই তুলনাটি তৈরি করেছে Lumi Studio, এখানে দেখানো অ্যাপগুলোর ডেভেলপার।",
+    "gu-IN": "આ સરખામણી Lumi Studio એ તૈયાર કરી છે, જે અહીં દર્શાવેલી ઍપ્સના ડેવલપર છે.",
+    "kn-IN": "ಈ ಹೋಲಿಕೆಯನ್ನು ಇಲ್ಲಿ ತೋರಿಸಿರುವ ಆ್ಯಪ್‌ಗಳ ಡೆವಲಪರ್ ಆದ Lumi Studio ಸಿದ್ಧಪಡಿಸಿದೆ.",
+    "ml-IN": "ഇവിടെ കാണിക്കുന്ന ആപ്പുകളുടെ ഡെവലപ്പറായ Lumi Studio തയ്യാറാക്കിയ താരതമ്യം.",
+    "mr-IN": "ही तुलना Lumi Studio ने तयार केली आहे, जे येथे दाखवलेल्या ॲप्सचे डेव्हलपर आहेत.",
+    "or-IN": "ଏହି ତୁଳନା ଏଠାରେ ଦେଖାଯାଇଥିବା ଆପ୍‌ର ଡେଭଲପର Lumi Studio ପ୍ରସ୍ତୁତ କରିଛି।",
+    "pa-IN": "ਇਹ ਤੁਲਨਾ Lumi Studio ਨੇ ਤਿਆਰ ਕੀਤੀ ਹੈ, ਜੋ ਇੱਥੇ ਦਿਖਾਈਆਂ ਐਪਾਂ ਦਾ ਡਿਵੈਲਪਰ ਹੈ।",
+    "ta-IN": "இங்கே காட்டப்படும் ஆப்களின் டெவலப்பரான Lumi Studio தயாரித்த ஒப்பீடு.",
+    "te-IN": "ఇక్కడ చూపిన యాప్‌ల డెవలపర్ అయిన Lumi Studio సిద్ధం చేసిన పోలిక.",
+    "ur-PK": "یہ موازنہ Lumi Studio نے تیار کیا ہے، جو یہاں دکھائی گئی ایپس کا ڈویلپر ہے۔",
+    "th": "การเปรียบเทียบนี้จัดทำโดย Lumi Studio ผู้พัฒนาแอปที่แนะนำ",
+    "vi": "So sánh do Lumi Studio, nhà phát triển các ứng dụng được giới thiệu, thực hiện.",
+    "id": "Perbandingan oleh Lumi Studio, pengembang aplikasi yang ditampilkan.",
+    "ms": "Perbandingan oleh Lumi Studio, pembangun aplikasi yang dipaparkan.",
+    "ca": "Comparació publicada per Lumi Studio, el desenvolupador de les apps que s'hi presenten.",
+})
+
 # Localized "Independent comparison." first sentence of the legacy
 # alternatives disclaimer (in its <small> line and its footer) -> truthful
 # replacement. Matched only when the trademark sentence follows, which the
-# replacement keeps.
+# replacement keeps. Only these locales ever shipped a localized legacy line.
 LEGACY_COMPARISON = MappingProxyType({
-    "de-DE": ("Unabhängiger Vergleich.", "App-Namen sind Marken", "Vergleich von Lumi Studio, dem Entwickler der vorgestellten Apps."),
-    "es-ES": ("Comparación independiente.", "Los nombres de apps", "Comparación publicada por Lumi Studio, el desarrollador de las apps que aparecen."),
-    "pt-BR": ("Comparação independente.", "Nomes de apps", "Comparação publicada pela Lumi Studio, desenvolvedora dos apps apresentados."),
-    "ja": ("独立した比較です。", "アプリ名は", "掲載アプリの開発者であるLumi Studioによる比較です。"),
-    "ko": ("독립 비교입니다.", "앱 이름은", "소개된 앱의 개발사인 Lumi Studio가 작성한 비교입니다."),
-    "zh-Hans": ("独立比较。", "App 名称", "由这些 App 的开发者 Lumi Studio 撰写的比较。"),
-    "fr-FR": ("Comparaison indépendante.", "Les noms d", "Comparaison publiée par Lumi Studio, le développeur des apps présentées."),
-    "zh-Hant": ("獨立比較。", "App 名稱", "由這些 App 的開發者 Lumi Studio 撰寫的比較。"),
+    "de-DE": ("Unabhängiger Vergleich.", "App-Namen sind Marken", COMPARISON_LINE["de-DE"]),
+    "es-ES": ("Comparación independiente.", "Los nombres de apps", COMPARISON_LINE["es-ES"]),
+    "pt-BR": ("Comparação independente.", "Nomes de apps", COMPARISON_LINE["pt-BR"]),
+    "ja": ("独立した比較です。", "アプリ名は", COMPARISON_LINE["ja"]),
+    "ko": ("독립 비교입니다.", "앱 이름은", COMPARISON_LINE["ko"]),
+    "zh-Hans": ("独立比较。", "App 名称", COMPARISON_LINE["zh-Hans"]),
+    "fr-FR": ("Comparaison indépendante.", "Les noms d", COMPARISON_LINE["fr-FR"]),
+    "zh-Hant": ("獨立比較。", "App 名稱", COMPARISON_LINE["zh-Hant"]),
 })
 
 
@@ -285,6 +342,10 @@ def banner_text(locale: str) -> str:
 
 def faq_answer(locale: str) -> str:
     return _localized(FAQ_ANSWER, locale)
+
+
+def comparison_line(locale: str) -> str:
+    return _localized(COMPARISON_LINE, locale)
 
 
 def banner_html(locale: str, *, lang: str | None = None) -> str:

@@ -55,6 +55,26 @@ class CopyTests(unittest.TestCase):
                         self.assertNotEqual(text, F._localized(
                             F.BANNER if name == "banner" else F.FAQ_ANSWER, "en-US"))
 
+    def test_every_table_has_its_own_entry_for_every_official_locale(self) -> None:
+        tables = {
+            "banner": F.BANNER,
+            "faq": F.FAQ_ANSWER,
+            "comparison": F.COMPARISON_LINE,
+        }
+        for name, table in tables.items():
+            for locale in OFFICIAL_LOCALES:
+                with self.subTest(table=name, locale=locale):
+                    self.assertIn(locale, table)
+                    text = table[locale]
+                    self.assertIn(F.DEVELOPER, text)
+                    self.assertNotIn("\n", text)
+                    validate_text(locale, text, name)
+                    if not locale.startswith("en-"):
+                        self.assertNotEqual(table["en-US"], text)
+        for locale, (_old, _tail, new) in F.LEGACY_COMPARISON.items():
+            with self.subTest(legacy=locale):
+                self.assertEqual(F.COMPARISON_LINE[locale], new)
+
     def test_japanese_copy_follows_stealth_marketing_guidance(self) -> None:
         banner = F.banner_text("ja")
         for word in ("当サイト", "開発者", "運営", "自社アプリ"):

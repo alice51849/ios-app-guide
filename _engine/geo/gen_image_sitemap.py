@@ -554,6 +554,16 @@ def collect(
                 _owned_file(image_url, pages, site)
                 entries.append((page_url, image_url))
             seen_pages.add(page_url)
+        # The wallpaper gallery pages (web_hook_pages.WALLPAPER_GALLERY).
+        import web_hook_pages
+
+        for page_url, image_urls in web_hook_pages.image_sitemap_entries(pages, site):
+            if page_url in seen_pages:
+                raise ValueError(f"Duplicate Image Sitemap page URL: {page_url}")
+            for image_url in image_urls:
+                _owned_file(image_url, pages, site)
+                entries.append((page_url, image_url))
+            seen_pages.add(page_url)
 
     if not entries:
         raise ValueError("No canonical Web Story posters were found")

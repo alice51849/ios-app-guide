@@ -77,7 +77,10 @@ class StageTest(unittest.TestCase):
             self.assertEqual(cfg["stages"], sorted(cfg["stages"]), name)  # a ramp only climbs
             self.assertGreaterEqual(len(cfg["slots"]), max(cfg["stages"]), name)
             self.assertEqual(len(set(cfg["slots"])), len(cfg["slots"]), name)
-        self.assertLessEqual(max(r["channels"]["instagram"]["stages"]) + max(r["channels"]["instagram_feed"]["stages"]) + 2, 10)
+        # Reels + carousels + 2 cards stay under the account's daily cap (2026-11-18: 15), far below the API's 50 / 24 h.
+        self.assertLessEqual(max(r["channels"]["instagram"]["stages"]) + max(r["channels"]["instagram_feed"]["stages"]) + 2,
+                             R.ACCOUNT_DAILY_MAX["instagram"])
+        self.assertLessEqual(R.ACCOUNT_DAILY_MAX["instagram"], 25)
 
 
 class MergeTest(unittest.TestCase):

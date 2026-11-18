@@ -154,6 +154,22 @@ class ClipPostsTest(unittest.TestCase):
         self.assertEqual(SC.choose(c, "x", exploit, wins={"locales": {"en": "b"}})["id"], "b")
         self.assertEqual(SC.choose(clip("old", "en"), "x", days[0])["lead"], "old hook")  # no variants: the hook
 
+    def test_instagram_never_reopens_a_listing_with_the_hook_it_used_in_another_language(self):
+        c = dict(clip("zipbox", "ko"), hooks=[{"id": i, "lead": f"lead {i}", "benefit": ""} for i in "abc"])
+        day = dt.date(2026, 11, 18)
+        posts = [{"channel": "instagram", "clip": "zipbox/en", "variant": "a", "posted_at": "2026-11-14T09:20:00Z"},
+                 {"channel": "instagram", "clip": "zipbox_b/ja", "variant": "b", "posted_at": "2026-11-16T09:20:00Z"},
+                 {"channel": "telegram", "clip": "zipbox/ja", "variant": "c", "posted_at": "2026-11-17T09:20:00Z"}]
+        a, b, cc = C.SC.variants(c)
+        self.assertEqual("c", C.fresh_hook(c, "instagram", a, day, posts)["id"])   # a and b used, c is fresh there
+        self.assertEqual("c", C.fresh_hook(c, "instagram", cc, day, posts)["id"])  # a fresh pick stays
+        self.assertEqual("a", C.fresh_hook(c, "telegram", a, day, posts)["id"])    # other channels unchanged
+        posts.append({"channel": "instagram", "clip": "zipbox/id", "variant": "c", "posted_at": "2026-11-17T09:20:00Z"})
+        self.assertEqual("a", C.fresh_hook(c, "instagram", cc, day, posts)["id"])  # all used: least recent one
+        old = [dict(p, posted_at="2026-10-01T00:00:00Z") for p in posts]
+        self.assertEqual("b", C.fresh_hook(c, "instagram", b, day, old)["id"])     # outside 14 days: as chosen
+        self.assertEqual("x", C.fresh_hook(clip("solo", "en"), "instagram", {"id": "x"}, day, posts)["id"])
+
     def test_posted_variant_is_recorded(self):
         c = dict(clip("a", "en"), hooks=[{"id": "a", "lead": "A", "benefit": ""}, {"id": "b", "lead": "B", "benefit": ""}])
         data = {"clips": {"a/en": c}, "schedule": [{"date": "2026-10-15", "slot": 1, "channel": "telegram", "clip": "a/en"}]}

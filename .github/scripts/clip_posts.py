@@ -689,6 +689,37 @@ def yields_to_evening(channel, slot, day, queue=None):
     return None
 
 
+# 2026-11-18 外宣十倍令（「同款同文不跨語言原樣重貼」）：一個 Instagram 帳號只有一群追蹤者，同一款換個語言再貼同一個
+# 開場句（hook a 的翻譯）等於原文重貼。Instagram 上同一款（含 _b 等分身）近 FRESH_HOOK_DAYS 天用過的開場句，這次
+# 換一個沒用過的；全部用過就挑最久以前用的。其他通路照舊。
+FRESH_HOOK_CHANNELS = ("instagram",)
+FRESH_HOOK_DAYS = 14
+
+
+def fresh_hook(clip, channel, preferred, day, posts=None, days=FRESH_HOOK_DAYS):
+    """The hook to post: `preferred` unless the same listing already opened with it on this channel in the last `days`
+    days (any language); then the variant this listing used least recently there (never-used first)."""
+    hooks = SC.variants(clip)
+    if channel not in FRESH_HOOK_CHANNELS or len(hooks) < 2:
+        return preferred
+    listing = volume_ramp.listing_of(f"{clip.get('app')}/{clip.get('locale')}")
+    since = (day - dt.timedelta(days=days)).isoformat()
+    last = {}
+    for p in posted_log() if posts is None else posts:
+        if p.get("channel") != channel or not p.get("variant") or str(p.get("clip", "")).startswith(("feed/", "utility/")):
+            continue
+        at = str(p.get("posted_at", ""))[:10]
+        if at >= since and volume_ramp.listing_of(p.get("clip")) == listing:
+            last[p["variant"]] = max(last.get(p["variant"], ""), at)
+    if preferred.get("id") not in last:
+        return preferred
+    pick = min(hooks, key=lambda h: (h.get("id") in last, last.get(h.get("id"), "")))
+    if pick.get("id") != preferred.get("id"):
+        print(f"clip: hook {preferred.get('id')} already opened {listing} on {channel} "
+              f"({last[preferred.get('id')]}); posting hook {pick.get('id')} instead")
+    return pick
+
+
 def qa_variant(clip, channel, preferred, online=True):
     """(variant, problems): the preferred hook variant when its caption passes the pre-post QA gate
     (post_qa.py), else the first variant that does; (None, problems) when none may go out."""
@@ -739,7 +770,8 @@ def main():
     if left is not None and left <= 0 and args.channel != "preview":
         print(f"clip: {channel} already made {done} of today's {allowed} clip posts (volume-ramp.json); slot skipped")
         return 0
-    variant, problems = qa_variant(clip, channel, SC.choose(clip, channel, day), online=args.channel != "preview")
+    preferred = fresh_hook(clip, channel, SC.choose(clip, channel, day), day)
+    variant, problems = qa_variant(clip, channel, preferred, online=args.channel != "preview")
     if variant is None:
         post_qa.gate(problems, f"clip {clip['app']}/{clip['locale']} {channel}")
         return 1

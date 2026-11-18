@@ -22,7 +22,8 @@
         3,
         4,
         5,
-        6
+        6,
+        10
       ],
       "slots": [
         1,
@@ -30,14 +31,19 @@
         15,
         12,
         22,
-        18
+        18,
+        20,
+        0,
+        14,
+        4
       ],
       "slot_note": "UTC hours of reels-daily.yml (minute 20): 1 = TW/JP/KR morning, 9 = Europe morning / TW 17:20 / JP-KR 18:20 (coverage audit 2026-10-16: the third slot every listing needed), 15 = US East 11:20 / Europe afternoon, 12 = TW 20:20 / JP-KR 21:20 (top revenue per download: TW), 22 = US East 18:20 / West 15:20 / BR 19:20, 18 = US East 14:20 / West 11:20",
       "ceiling": null,
       "ceiling_until": null,
       "events": [],
       "maintenance_note": "2026-10-20 maintenance (10 measurement dept): reels ~1 view each (reports/exposure/channel_views.json), stages [3,4,5,6] -> [1], no climb; capacity moved to Bluesky / YouTube Shorts quality",
-      "restore_note": "2026-10-22 業主「所有社群跟影片…全部啟動」：回到安全上限爬坡（每 3 天升一階，平台限流仍自動退階）；Reels 1 → 3→4→5→6（帳號每天總量 ≤10 含輪播與卡片）"
+      "restore_note": "2026-10-22 業主「所有社群跟影片…全部啟動」：回到安全上限爬坡（每 3 天升一階，平台限流仍自動退階）；Reels 1 → 3→4→5→6（帳號每天總量 ≤10 含輪播與卡片）",
+      "expand_note": "2026-11-18 外宣十倍令（業主「外宣曝光今天就要達到十倍以上的量」；先換內容再加量）：Reels 6 -> 10 格一天；帳號實際 8 -> 13～15 則（Reels 10＋可愛待辦清單加開 1＋輪播 2＋卡片 0～2，約 x1.6～1.9）；volume_ramp ACCOUNT_DAILY_MAX 10 -> 15 封頂（Instagram API 50／24h）。新格 20 / 0 / 14 英文打頭（美英澳主力線）、4 亞洲午間。英文歷史觀看 09 時最好、美國時段較差，這是押注：11-25 逐格比英文每則觀看，美國格（0/14/15/18/20/22）7 日中位低於 09 格一半就把該格退回（stages 最後一階改回 6）。平台說慢下來照舊自動退一階並鎖 7 天。"
     },
     "instagram_feed": {
       "kind": "carousel",

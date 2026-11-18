@@ -119,7 +119,7 @@ def slots(ramp, name, day):
 # Channels that post on one platform account: a "slow down" from the platform throttles all of them, and the
 # account's posts of every kind stay under ACCOUNT_DAILY_MAX a day (cards included), whatever the stages say.
 ACCOUNT_CHANNELS = {"instagram": ("instagram", "instagram_feed")}
-ACCOUNT_DAILY_MAX = {"instagram": 10}
+ACCOUNT_DAILY_MAX = {"instagram": 15}  # 2026-11-18 10 -> 15 (Reels 10 + carousels 2 + cards; API limit 50 / 24 h)
 CARD_PREFIXES = ("utility/", "countdown/", "feed/")
 
 

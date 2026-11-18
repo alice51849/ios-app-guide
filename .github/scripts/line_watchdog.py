@@ -118,10 +118,10 @@ SLOT_WORKFLOWS: dict[str, dict[str, dict]] = {
         # the slot gate and posts inputs.slot (default 1), so the healer never
         # dispatches it; clip-backup.yml already backs up slots 1 and 15.
         "reels-daily.yml": {
-            "slots": {1: 20, 9: 20, 12: 20, 15: 20, 18: 20, 22: 20},
+            "slots": {0: 20, 1: 20, 4: 20, 9: 20, 12: 20, 14: 20, 15: 20, 18: 20, 20: 20, 22: 20},
             "max_age_hours": SLOT_MAX_AGE_HOURS,
             "heal": "monitor",
-            "reason": "dispatch bypasses the slot gate; clip-backup.yml backs up every slot",
+            "reason": "dispatch bypasses the slot gate; clip-backup.yml backs up 1/9/12/15/18/22 on its crons (0/4/14/20, added 2026-11-18, only through the Mac cron dispatcher or a manual clip-backup slot)",
         },
         # Telegram clips outside telegram-daily's 01:00 / 09:00 / 15:00 (volume-ramp.json stages). A slot
         # the ramp has not switched on yet runs green and posts nothing; clip-backup.yml refills a miss.

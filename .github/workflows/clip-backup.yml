@@ -42,7 +42,7 @@ on:
   workflow_dispatch:
     inputs:
       slot:
-        description: "Clip slot to back up on Telegram/Instagram (1, 8, 9, 12, 15, 18 or 22; empty = Threads check only)"
+        description: "Clip slot to back up on Telegram/Instagram (0, 1, 4, 8, 9, 12, 14, 15, 18, 20 or 22; empty = Threads check only)"
         required: false
         default: ""
       date:
@@ -98,7 +98,7 @@ jobs:
             d=$(date -u -d "-$back day" +%F)
             if [ "$(date -u +%H:%M)" \< "$fired" ]; then d=$(date -u -d "$d -1 day" +%F); fi
           else
-            case "$MANUAL_SLOT" in 1|8|9|12|15|18|22) s=$MANUAL_SLOT ;; "") s= ;; *) echo "::error::slot must be 1, 8, 9, 12, 15, 18 or 22"; exit 1 ;; esac
+            case "$MANUAL_SLOT" in 0|1|4|8|9|12|14|15|18|20|22) s=$MANUAL_SLOT ;; "") s= ;; *) echo "::error::slot must be 0, 1, 4, 8, 9, 12, 14, 15, 18, 20 or 22"; exit 1 ;; esac
             d=${MANUAL_DATE:-$(date -u +%F)}
             case "$d" in [0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]) ;; *) echo "::error::date must be YYYY-MM-DD"; exit 1 ;; esac
             date -u -d "$d" +%F >/dev/null 2>&1 || { echo "::error::bad date $d"; exit 1; }

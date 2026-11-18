@@ -29,10 +29,15 @@ on:
     - cron: "20 15 * * *"  # Americas morning
     - cron: "20 18 * * *"  # US afternoon (6 a day)
     - cron: "20 22 * * *"  # US evening / Brazil (5 a day)
+    # 2026-11-18 外宣十倍令（Reels 6 -> 10 a day, account total 8 -> 12 = x1.5; volume_ramp ACCOUNT_DAILY_MAX 15):
+    - cron: "20 20 * * *"  # US East 15:20 / London 20:20 (en first)
+    - cron: "20 0 * * *"   # US East 19:20 / West 16:20 / Sydney 11:20 (en first)
+    - cron: "20 14 * * *"  # London 14:20 / US East 09:20 (en first, then Europe)
+    - cron: "20 4 * * *"   # Taipei 12:20 / Tokyo-Seoul 13:20
   workflow_dispatch:
     inputs:
       slot:
-        description: "Audience slot (UTC hour: 1, 9, 12, 15, 18 or 22)"
+        description: "Audience slot (UTC hour: 0, 1, 4, 9, 12, 14, 15, 18, 20 or 22)"
         default: "1"
       cron:
         description: "Cron dispatcher only: the missed schedule this run replaces, e.g. 20 1 * * *; runs like that scheduled run, slot gate included"
@@ -73,7 +78,7 @@ jobs:
         run: >-
           python3 .github/scripts/social_slot_gate.py
           --workflow reels-daily.yml
-          --slots 1,9,12,15,18,22
+          --slots 0,1,4,9,12,14,15,18,20,22
           --schedule "$SLOT_SCHEDULE"
       - name: Test
         run: |

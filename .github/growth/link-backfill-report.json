@@ -1,11 +1,11 @@
 {
- "generated": "2026-11-18T01:02:43Z",
+ "generated": "2026-11-18T11:51:48Z",
  "mode": "apply",
  "counts": {
-  "ok_reply": 73,
+  "ok_reply": 74,
   "unknown_app": 48,
-  "ok_backfilled_earlier": 99,
-  "ok_store_only": 631,
+  "ok_backfilled_earlier": 101,
+  "ok_store_only": 629,
   "backfilled": 2,
   "ok_bio_link": 68,
   "ok_caption": 4,
@@ -13,6 +13,18 @@
   "missing": 3
  },
  "rows": [
+  {
+   "channel": "threads",
+   "id": "17902077990610741",
+   "permalink": "https://www.threads.com/@hourstag.app/post/Df3g2dpG-E1",
+   "date": "2026-11-18",
+   "app": "mochi",
+   "status": "ok_reply",
+   "text": "ENEM chegando e meu cronograma de estudos era um caos. Agora cada matéria virou uma lista fofa no iPhone: redação, matemática, revisão de na",
+   "why": "trial",
+   "ios_id": "6785004775",
+   "locale": "pt-BR"
+  },
   {
    "channel": "threads",
    "id": "18149169718603995",
@@ -2475,16 +2487,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/Dcth7odn2_A",
    "date": "2026-08-31",
    "app": "caldaily",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "CalDaily: Calculator & Themes Widget, tools, tidy history Every result you keep can be named, tagged and found again. Eight advanced tools, ",
    "why": "url+brand",
    "ios_id": "6794178671",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "18135502042688920",
-   "at": "2026-11-18T01:00:07Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",
@@ -3578,11 +3585,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DcthwTYjo14",
    "date": "2026-08-31",
    "app": "aim990",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "Aim990 Your TOEIC Coach Unlock your potential with Aim990! Achieve your TOEIC goals with daily practice and personalized study plans. 👉 App ",
    "why": "url+brand",
    "ios_id": "6784974530",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "18169824361490912",
+   "at": "2026-11-18T11:49:19Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -3602,16 +3614,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctiBbtDyMT",
    "date": "2026-08-31",
    "app": "cvdesk",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "CV Desk: ATS Resume ATS Resume & CV Builder Beat the resume robots. Get an instant ATS score, fix what recruiter filters reject, and export ",
    "why": "url+brand",
    "ios_id": "6781337213",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "18100149485406691",
-   "at": "2026-11-18T01:00:07Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",
@@ -4119,11 +4126,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DcthqJriJPa",
    "date": "2026-08-31",
    "app": "aibriefpack",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "AI Brief: AI Prompt from Files Files to Clear Context Bring screenshots, documents, and notes together. Keep the facts. Review private detai",
    "why": "url+brand",
    "ios_id": "6791658210",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "18079033202581552",
+   "at": "2026-11-18T11:49:19Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",

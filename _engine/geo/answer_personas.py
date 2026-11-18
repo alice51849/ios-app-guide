@@ -3469,6 +3469,8 @@ PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
     # their published wording so answer page URLs stay the same.
     "qrcodehalo": [
         {
+            # query 決定已上線網址（slug），不改；頁面顯示的問題在
+            # queries.LEGACY_BEST_RETITLES["qrcodehalo"]（掃了直接開、不限次數）。
             "query": "qr code scanner app that shows the link before opening it",
             "guide_title": "Scanning QR codes safely on iPhone: what to check",
             "triggers": [

@@ -5853,29 +5853,29 @@
   "rank": 5,
   "slug": "is-this-qr-code-link-safe-before-you-open-it",
   "loc": {
-   "title": "QR code 連結打開前怎麼檢查：海報、包裹、繳費單都適用｜QR Code Halo：安全掃描與建立",
-   "meta": "掃 QR code 前先看完整網址：網域主體、協定、參數。QR Code Halo：安全掃描與建立 可關閉掃描後自動執行，在裝置端判定 Safe、Caution 或 Blocked，免費 3 次掃描，Lifetime Pro 一次買斷。",
-   "h1": "QR code 連結檢查：先看網域，再決定要不要開",
-   "lead": "捷運站海報、超商取貨的包裹單、信箱裡的繳費單，上面的 QR code 掃了就跳網頁。看不到連結長什麼樣就按下去，是現在最常見的釣魚入口。",
-   "answer": "先讓掃描器「只顯示、不打開」，看三件事：協定是不是 https、網域是不是你預期的那家（不是長得像的那家）、網址後面有沒有一長串奇怪的參數。三個都正常再開；有一個不對就不要碰。",
+   "title": "QR code 連結怎麼檢查：掃了直接開，事後在歷史紀錄回頭看｜QR Code Halo",
+   "meta": "QR Code Halo 一掃就執行：網址直接開、Wi-Fi 跳出加入提示。擔心掃到詐騙連結，到歷史紀錄點開那一筆、按「安全檢查」，在手機上把網址拆開逐項檢查，標示「安全」「注意」或「已阻擋」。",
+   "h1": "QR code 連結檢查：掃了直接開，事後在歷史紀錄回頭看",
+   "lead": "捷運站海報、超商取貨的包裹單、信箱裡的繳費單，上面的 QR code 大多是要你馬上用的。QR Code Halo 一掃就執行；之後覺得哪裡怪，掃過的那一筆還在歷史紀錄裡，可以回頭檢查。",
+   "answer": "QR Code Halo 掃到就執行：網址直接開、Wi-Fi 條碼直接跳出加入提示。想確認剛剛那個連結，就到歷史紀錄點開那一筆、按「安全檢查」，它在手機上把網址拆成通訊協定、網域、路徑、查詢參數逐項列出，標示「安全」「注意」或「已阻擋」，並附上檢查結果。javascript:、data:、file: 這類危險碼一律不開啟。打開的頁面如果要你付款或登入、而你沒有預期，就先關掉，不要輸入任何資料。",
    "paras": [
-    "iPhone 內建相機掃到 QR code 會直接跳出橫幅，點了就開。問題是橫幅只顯示一小段，看不到完整網址。真正要檢查的是網域的「主體」：例如 shopee.tw 和 shopee-tw.xyz 看起來很像，但後者的主體根本不是蝦皮。貼在實體海報上的貼紙、超商取貨單上多出來的一張小貼紙，特別常見這種手法。",
-    "想看完整內容，需要一個掃描後不自動執行的工具。QR Code Halo：安全掃描與建立 可以到設定關閉「掃描後自動執行」，流程固定是檢查、判斷、行動：它完全在裝置端把整段內容拆成 scheme、host、path、query 逐項顯示，用固定且可重現的規則給出 Safe、Caution 或 Blocked，解析失敗時會直接阻擋外部操作，不查詢網路信譽也不產生含糊分數。免費下載、免費 3 次掃描，可選購的 Lifetime Pro 一次買斷、絕無訂閱。",
-    "繳費類的 QR code 要多一道確認：對照單據上印的公司名稱和網址，不要只看頁面好不好看。如果掃出來的是純文字、電話或 Wi-Fi 而不是網址，也要看清楚內容再動作。"
+    "掃描這一步講求快：用相機對準，或從相簿挑一張含條碼的照片，QR Code Halo 讀到就執行，支援 20 種條碼格式，同一個畫面有好幾個條碼也能一起讀。除非開啟「不儲存到歷史紀錄」，批次掃描以外的每次掃描都會存在這台裝置上。",
+    "回頭檢查時，重點是網域的「主體」：例如 shopee.tw 和 shopee-tw.xyz 看起來很像，但後者的主體根本不是蝦皮。在歷史紀錄點開那一筆、按「安全檢查」，它會標出可疑網址、非 HTTPS 與混用不同文字的網域；判定規則固定、可重現，不查詢網路信譽，也不給含糊的分數。",
+    "繳費類的 QR code 要多一道確認：對照單據上印的公司名稱和網址，不要只看頁面好不好看；不符就關掉，改成自己輸入官方網址。常用的店家或社團條碼，可以用「QR 碼驗證」存成本機參照，之後再掃到時逐項比對，貼紙被換掉就看得出來。"
    ],
    "look": [
-    "掃描器能不能先顯示完整網址，再決定要不要開",
-    "網域主體是不是你預期的那家，有沒有多一截或換了結尾",
-    "是 https 還是 http，或根本不是網址而是別的內容",
+    "掃完是不是直接執行，不用多點一次",
+    "掃過的條碼有沒有留在歷史紀錄，之後找得回來",
+    "事後能不能拆開網址，看清楚網域主體",
     "判定依據看得到嗎，還是只給「安全」兩個字",
     "QR code 是印在原本的海報上，還是後來貼上去的"
    ],
    "steps": [
-    "先看實體：QR code 是印在海報上，還是另外貼的一張貼紙。",
-    "用會先顯示內容的掃描器掃，不要用會直接跳頁的方式。",
-    "看網域主體（第一個斜線前、最後兩段）是不是你認識的名稱。",
-    "看協定與參數：http，或是網址後面一長串亂碼，就先停下來。",
-    "繳費或登入類的網址，對照紙本上的官方網址，不符就不要開。"
+    "掃之前先看實體：QR code 是印在海報上，還是另外貼的一張貼紙。",
+    "用 QR Code Halo 掃描，連結直接開、Wi-Fi 條碼直接跳出加入提示。",
+    "打開的頁面要你付款或登入、而你沒有預期，就先關掉，不要輸入資料。",
+    "到歷史紀錄點開那一筆，按「安全檢查」，看網域主體與「安全」「注意」「已阻擋」的判定。",
+    "繳費或登入類的網址，對照紙本上的官方網址，不符就自己輸入官方網址。"
    ],
    "rows": [
     [
@@ -5884,56 +5884,56 @@
      "仿冒網域靠的就是前面加字、後面換結尾"
     ],
     [
-     "內容類型",
-     "是網址、純文字、電話還是 Wi-Fi",
-     "不是網址的內容也能觸發動作，要先看清楚"
+     "歷史紀錄",
+     "掃過的每一筆是不是留在裝置上",
+     "事後覺得不對勁，才找得回剛剛那個連結"
     ],
     [
      "判定依據",
-     "規則透明可重現，還是只給分數",
-     "看得到為什麼被擋，才知道下一次該不該信"
+     "規則固定可重現，還是只給分數",
+     "看得到為什麼被標出來，才知道下一次該不該信"
     ]
    ],
-   "fits": "QR Code Halo：安全掃描與建立 適合常掃包裹單、繳費單、活動海報，想先看清楚再開的人：掃描後可先檢查再執行，裝置端拆解網址並給 Safe、Caution、Blocked 判定，免費 3 次掃描，Lifetime Pro 一次買斷、絕無訂閱。",
+   "fits": "QR Code Halo 適合常掃包裹單、繳費單、活動海報，想掃了馬上用、事後再回頭確認的人：一掃就執行，掃描紀錄留在裝置上，隨時能在歷史紀錄按「安全檢查」拆開網址看判定。相機與照片掃描不限次數；可選購的 Lifetime Pro 一次買斷，絕無訂閱。",
    "faq": [
     [
-     "iPhone 內建相機掃 QR code 不安全嗎？",
-     "它會直接顯示可點的橫幅，但只看得到一小段網址，看不到完整內容；要檢查就需要一個先顯示再執行的工具。"
+     "QR Code Halo 掃到就會直接開嗎？",
+     "會。網址直接開、Wi-Fi 條碼直接跳出加入提示；javascript:、data:、file: 這類危險碼一律不開啟。掃過的紀錄留在歷史紀錄，事後可以回頭檢查。"
     ],
     [
      "網址是 https 就代表安全嗎？",
      "不是。https 只代表連線加密，釣魚網站也可以有 https；真正要看的是網域主體是不是官方那家。"
     ],
     [
-     "QR Code Halo：安全掃描與建立 會把網址送到網路上查嗎？",
-     "不會，它完全在裝置端解析，不查詢網路信譽；免費 3 次掃描，Lifetime Pro 一次買斷、絕無訂閱。"
+     "安全檢查會把網址送到網路上查嗎？",
+     "不會。它在裝置上解析完整內容，判定規則固定、可重現，不查詢網路信譽。"
     ]
    ]
   },
   "en": {
-   "title": "Is this QR code link safe? How to check before you open it | QR Code Halo: Scan & Create",
-   "meta": "See the full URL before opening: host, scheme, query. QR Code Halo: Scan & Create parses on device and returns Safe, Caution or Blocked. 3 free scans, pay once.",
-   "h1": "Checking a QR code link: read the host before you tap",
-   "lead": "Posters in the station, the slip on a parcel, a payment notice in the mailbox. A QR code jumps straight to a page, and tapping a link you never saw is the most common phishing entry point today.",
-   "answer": "Make the scanner show and not open. Then check three things: is it https, is the host the company you expect rather than a lookalike, and is there a long string of odd parameters after the path. Open only if all three pass; one failure means leave it.",
+   "title": "Checking a QR code link: it opens right after the scan, then look back in History | QR Code Halo",
+   "meta": "QR Code Halo acts as soon as it reads a code: links open and Wi-Fi codes bring up the Join prompt. Worried a code was a scam? Open it in History and tap Security Check for a Safe, Caution or Blocked result on your device.",
+   "h1": "Checking a QR code link: scan, open, then look back in History",
+   "lead": "Posters in the station, the slip on a parcel, a payment notice in the mailbox: most QR codes are there to be used right away. QR Code Halo acts the moment it reads a code, and if something feels off later, the scan is still in History to check.",
+   "answer": "QR Code Halo acts as soon as it reads a code: links open and Wi-Fi codes bring up the Join prompt. To check a link afterwards, open it in History and tap Security Check. On your device it breaks the link into scheme, host, path and query, and flags it as Safe, Caution or Blocked with transparent findings. javascript:, data: and file: codes never open. If the page asks you to pay or sign in and you did not expect that, close it and do not enter anything.",
    "paras": [
-    "The iPhone camera shows a banner as soon as it sees a QR code, and one tap opens it. The banner shows a fragment, not the full address. What matters is the registrable part of the host: shopee.tw and shopee-tw.xyz look alike, but the second is not the retailer at all. Stickers pasted over a printed poster, or an extra label on a pickup slip, are where this shows up most.",
-    "Seeing the whole payload needs a scanner that does not run the action automatically. QR Code Halo: Scan & Create lets you turn off Run action after scanning in Settings and is built around Inspect, Decide, Act: it parses the complete payload on the device into scheme, host, path, query and fragment, applies deterministic rules that return Safe, Caution or Blocked with transparent findings, and fails closed when parsing is uncertain. No network reputation lookup, no fuzzy score. Three successful scans are included per device; the optional Lifetime Pro is a single purchase with no subscription.",
-    "Payment codes deserve one extra check: compare the host against the company name and address printed on the slip, not against how polished the page looks. If the code decodes to plain text, a phone number or Wi-Fi details rather than a URL, read the whole content before acting on it."
+    "Scanning is about speed. Point the camera, or pick a photo that contains a code, and QR Code Halo acts at once. It reads 20 code formats, even several codes in one frame. Every scan outside batch mode is saved on this device unless Skip saving to history is on.",
+    "When you look back, what matters is the registrable part of the host: shopee.tw and shopee-tw.xyz look alike, but the second is not the retailer at all. Open the scan in History and tap Security Check: it flags suspicious URLs, non-HTTPS links and hosts that mix alphabets. Deterministic rules, no network reputation lookup and no fuzzy score.",
+    "Payment codes deserve one extra check: compare the host against the company name and address printed on the slip, not against how polished the page looks. If they do not match, close the page and type the official address yourself. For codes you use often, QR Verification saves a result as a local reference and compares later scans, so a swapped sticker stands out."
    ],
    "look": [
-    "Whether the scanner shows the full URL before deciding to open",
-    "Whether the host is the exact expected name, with nothing added or a different ending",
-    "Whether it is https, http, or not a URL at all",
+    "Whether the scanner acts right after the scan, without an extra tap",
+    "Whether every scan stays in History so you can find it again",
+    "Whether you can break the link apart afterwards and read the host",
     "Whether the reasoning is visible or you only get the word safe",
     "Whether the code is printed on the poster or stuck on afterwards"
    ],
    "steps": [
-    "Look at the physical code first: printed on the poster, or a sticker on top.",
-    "Scan with a tool that shows the content instead of jumping to the page.",
-    "Read the registrable host, the last two labels before the first slash.",
-    "Check the scheme and the query: http, or a long tail of random parameters, means stop.",
-    "For payment or login pages, compare with the official address printed on paper."
+    "Before scanning, look at the physical code: printed on the poster, or a sticker on top.",
+    "Scan with QR Code Halo: the link opens, or a Wi-Fi code brings up the Join prompt.",
+    "If the page asks you to pay or sign in and you did not expect it, close it without entering anything.",
+    "Open the scan in History and tap Security Check to read the host and the Safe, Caution or Blocked result.",
+    "For payment or login pages, compare with the official address printed on paper and type it yourself if it does not match."
    ],
    "rows": [
     [
@@ -5942,29 +5942,29 @@
      "Lookalike domains work by adding a prefix or changing the ending"
     ],
     [
-     "Content type",
-     "URL, plain text, phone number or Wi-Fi",
-     "Non-URL payloads can trigger actions too, so read them first"
+     "History",
+     "Whether every scan is kept on the device",
+     "You can only re-check a link you can find again"
     ],
     [
      "Findings",
      "Transparent, repeatable rules or a vague score",
-     "Knowing why it was blocked tells you whether to trust the next one"
+     "Knowing why a link was flagged tells you whether to trust the next one"
     ]
    ],
-   "fits": "QR Code Halo: Scan & Create suits people who scan parcel slips, payment notices and event posters and want to read before opening: inspect first, then act, with on-device parsing and Safe, Caution or Blocked findings. Three free scans per device; Lifetime Pro is one purchase with no subscription.",
+   "fits": "QR Code Halo suits people who scan parcel slips, payment notices and event posters, want the code to work right away, and like to check afterwards: it acts the moment it reads a code, keeps scans on the device, and runs Security Check from History. Scanning with the camera or the photo picker is unlimited for everyone; one optional Lifetime Pro purchase, no subscription.",
    "faq": [
     [
-     "Is the built-in iPhone camera unsafe for QR codes?",
-     "It shows a tappable banner with only a fragment of the address, so you cannot see the full content. Checking needs a tool that displays first and acts second."
+     "Does QR Code Halo open a link as soon as it scans?",
+     "Yes. Links open and Wi-Fi codes bring up the Join prompt right after the scan; javascript:, data: and file: codes never open. The scan stays in History so you can check it later."
     ],
     [
      "Does https mean the link is safe?",
      "No. It only means the connection is encrypted; phishing sites use https too. The host is what to read."
     ],
     [
-     "Does QR Code Halo: Scan & Create send URLs to a server to check them?",
-     "No. It parses the payload entirely on the device with no network reputation lookup. Three free scans are included, and Lifetime Pro is a one-time purchase with no subscription."
+     "Does Security Check send URLs to a server?",
+     "No. It parses the complete payload on the device with deterministic rules and no network reputation lookup."
     ]
    ]
   }
@@ -22411,52 +22411,52 @@
   "rank": 85,
   "slug": "check-qr-code-link-safety-before-opening-iphone-japan",
   "loc": {
-   "title": "QRコードは開く前に安全確認：偽QR・フィッシング対策をiPhoneで｜QR Code Halo",
-   "meta": "駐車場の精算機やチラシに貼られた偽QRコードの手口と、開く前にリンク先を確かめる手順。読み取り後の自動実行をオフにし、端末内でSafe・Caution・Blockedを判定。",
-   "h1": "そのQRコード、開く前に確認：iPhoneでリンクの安全性を見る手順",
-   "lead": "コインパーキングの精算機、飲食店のテーブル、駅のポスター。QRコードの上に別のシールが貼られ、偽サイトに誘導される手口が報告されています。このページは、読み取ってから開くまでの間に何を確かめるかをまとめました。",
-   "answer": "QRコードの安全確認でいちばん大事なのは、読み取ってすぐ開かないことです。まずリンク先のドメイン（host）を目で確かめ、店名や公式サイトと違う、つづりが紛らわしい、短縮URLで中身が見えない場合は開かずにスタッフや公式アプリで確認します。QR Code Haloは設定で「スキャン後に自動で実行」をオフにでき、履歴の「セキュリティチェック」で、ネット上の評判に頼らず端末内で中身をscheme・host・path・queryに分解し、Safe・Caution・Blockedを判定します。javascript:・data:・file: のようなコードは決して開きません。",
+   "title": "QRコードの安全確認：読み取ったらすぐ開いて、あとから履歴でリンクを確かめる｜QR Code Halo",
+   "meta": "QR Code Haloは読み取ってすぐ実行。リンクはそのまま開き、Wi-Fiは接続の確認が表示されます。詐欺のコードかもと不安なときは、履歴から開いて「セキュリティチェック」。端末内でリンクを分解し「安全・注意・ブロック」で示します。",
+   "h1": "QRコードの安全確認：すぐ開いて、あとから履歴でリンクを見返す",
+   "lead": "コインパーキングの精算機、飲食店のテーブル、駅のポスター。QRコードはたいてい、その場ですぐ使うためのものです。QR Code Haloは読み取った瞬間に実行し、あとで気になったときは、スキャンした記録を履歴から確かめられます。",
+   "answer": "QR Code Haloは読み取るとすぐに実行し、リンクはそのまま開き、Wi-Fiのコードは接続の確認が表示されます。さっきのリンクが気になったら、履歴でそのコードを開いて「セキュリティチェック」をタップ。端末内でリンクをscheme・host・path・queryに分解し、怪しいURL、HTTPSでないリンク、異なる文字体系が混ざったドメインを見つけて「安全・注意・ブロック」で示します。javascript:・data:・file: のコードは決して開きません。開いたページで予期しない支払いやログインを求められたら、何も入力せずに閉じてください。",
    "paras": [
-    "偽QRコードの多くは、本物の上にシールを貼るだけの単純な手口です。支払い画面やログイン画面にそっくりなページに誘導し、カード番号やパスワードを入力させます。読み取った瞬間にブラウザが開くと、見た目が本物らしいだけで判断してしまいがちです。だからこそ、開く前にURLの中身を見る一手間が効きます。特に見るべきはhost、つまり「どこのサイトか」の部分です。",
-    "QR Code Haloは、初期設定では読み取った瞬間に実行して素早く開くアプリです。安全を優先したい場面では、設定で「スキャン後に自動で実行」をオフにすれば、まず結果を確認してから開くかどうかを決められます。履歴でコードを開いて「セキュリティチェック」をタップすると、Local Payload Security Inspectorが完全なpayloadを端末内で解析し、scheme・host・path・query・fragmentを項目ごとに表示して、Safe・Caution・Blockedの判定と理由を示します。",
-    "同じ場所のQRコードを何度も使うなら、QR Verificationが役立ちます。結果を端末内の参照として保存し、次に読み取ったコードをSHA-256フィンガープリントやURL構成要素で比べられるので、前回と中身が変わっていれば気づけます。判定はネット上の評判や曖昧なスコアを使わず、解析できない操作は閉じたままにします。"
+    "読み取りはスピードが大事です。カメラを向けるか、コードが写った写真を選ぶだけで、QR Code Haloはすぐに実行します。20種類のバーコード形式に対応し、1画面に複数あってもまとめて読み取れます。「履歴に保存しない」をオンにしない限り、一括スキャン以外のスキャンはすべてこの端末に保存されます。",
+    "あとから見返すときに大事なのはhost、つまり「どこのサイトか」の部分です。偽QRコードの多くは本物の上にシールを貼るだけの手口で、支払い画面やログイン画面にそっくりなページに誘導します。履歴の「セキュリティチェック」では、Local Payload Security Inspectorが完全なpayloadを端末内で解析し、判定の理由を項目ごとに示します。ネット上の評判や曖昧なスコアは使いません。",
+    "同じ場所のQRコードを何度も使うなら、QR Verificationが役立ちます。結果を端末内の参照として保存し、次に読み取ったコードをSHA-256フィンガープリントやURL構成要素で比べられるので、シールが貼り替えられていれば気づけます。"
    ],
    "look": [
-    "読み取った瞬間に開かず、先に中身を確認できる設定があるか",
-    "URLのhost（どこのサイトか）がはっきり表示されるか",
+    "読み取ったらすぐ実行され、もう一度タップしなくていいか",
+    "スキャンした記録が履歴に残り、あとから見つけられるか",
+    "あとからURLのhost（どこのサイトか）を確かめられるか",
     "判定の理由が項目ごとに示されるか",
-    "javascript: や data: のような危険な形式を開かないか",
-    "前回と同じQRコードかどうかを比べられるか"
+    "javascript: や data: のような危険な形式を開かないか"
    ],
    "steps": [
-    "QR Code Haloの設定で「スキャン後に自動で実行」をオフにする。",
-    "QRコードを読み取り、表示されたURLのhostが店名や公式サイトと一致するかを見る。",
-    "履歴でそのコードを開き、「セキュリティチェック」でSafe・Caution・Blockedの判定と理由を確認する。",
-    "CautionやBlockedのとき、または短縮URLで中身が分からないときは開かず、店員や公式アプリで確認する。",
+    "読み取る前に、QRコードの上に別のシールが貼られていないかを見る。",
+    "QR Code Haloで読み取る。リンクはそのまま開き、Wi-Fiは接続の確認が表示される。",
+    "開いたページで予期しない支払いやログインを求められたら、何も入力せずに閉じる。",
+    "履歴でそのコードを開き、「セキュリティチェック」でhostと「安全・注意・ブロック」の判定を確かめる。",
     "よく使う場所のコードはQR Verificationで参照として保存し、次回の読み取りと比べる。"
    ],
    "rows": [
     [
-     "開く前",
-     "自動実行をオフにできるか",
-     "見た目が本物らしいページに流されない"
+     "読み取り",
+     "すぐ実行されるか",
+     "その場の支払いや案内にすぐたどり着ける"
     ],
     [
-     "中身の確認",
-     "host・path・queryの分解表示",
-     "どこのサイトに飛ぶのかが一目で分かる"
+     "あとから確認",
+     "履歴からhost・path・queryを分解表示",
+     "どこのサイトに飛んだのかを見返せる"
     ],
     [
      "判定",
-     "Safe・Caution・Blockedと理由",
+     "安全・注意・ブロックと理由",
      "感覚ではなく根拠を見て判断できる"
     ]
    ],
-   "fits": "QR Code Haloは、駐車場や飲食店、チラシのQRコードを読む前に中身を確かめたい人に向いています。自動実行のオン・オフ、履歴からのセキュリティチェック、QR Verificationを端末内で使え、20種類のバーコード形式の読み取りとQRコード作成にも対応します。",
+   "fits": "QR Code Haloは、駐車場や飲食店、チラシのQRコードをその場ですぐ使い、気になったときはあとから確かめたい人に向いています。履歴からのセキュリティチェックとQR Verificationを端末内で使え、20種類のバーコード形式の読み取りとQRコード作成にも対応。カメラと写真からのスキャンは回数無制限で、サブスクリプションはありません。",
    "faq": [
     [
-     "読み取ったらすぐ開いてしまいますか？",
-     "初期設定では読み取った瞬間に実行します。先に確認したいときは、設定で「スキャン後に自動で実行」をオフにしてください。"
+     "読み取ったらすぐ開きますか？",
+     "はい。リンクはそのまま開き、Wi-Fiのコードは接続の確認が表示されます。スキャンは履歴に残るので、あとから「セキュリティチェック」で確かめられます。"
     ],
     [
      "安全チェックはネットで照会しますか？",
@@ -22469,52 +22469,52 @@
    ]
   },
   "en": {
-   "title": "How to check a QR code is safe before opening it on iPhone (quishing and fake parking QR codes) | QR Code Halo",
-   "meta": "Fake QR stickers on parking meters and menus lead to phishing pages. Check the link before it opens: turn off auto-run, read the host, and get a Safe, Caution or Blocked verdict on the device.",
-   "h1": "Check that QR code before it opens: reading link safety on iPhone",
-   "lead": "Parking pay stations, restaurant tables, station posters: stickers placed over real QR codes send people to fake sites. This page covers what to check between scanning and opening.",
-   "answer": "The single most important QR safety habit is not opening the link the instant you scan. Read the domain (the host) first; if it does not match the business or official site, uses a confusing spelling, or hides behind a short link, do not open it and check with staff or the official app. QR Code Halo lets you turn off Run action after scanning, and its Security Check in History parses the code on the device into scheme, host, path and query and returns Safe, Caution or Blocked without any network reputation lookup. Codes such as javascript:, data: or file: are never opened.",
+   "title": "QR code safety on iPhone: open right after the scan, then check the link in History | QR Code Halo",
+   "meta": "QR Code Halo acts as soon as it reads a code: links open and Wi-Fi codes bring up the Join prompt. Worried a code was a scam? Open it in History and tap Security Check for a Safe, Caution or Blocked result on your device.",
+   "h1": "QR code safety: open right away, then look back at the link in History",
+   "lead": "Parking pay stations, restaurant tables, station posters: most QR codes are there to be used on the spot. QR Code Halo acts the moment it reads a code, and when something bothers you later, the scan is waiting in History.",
+   "answer": "QR Code Halo acts as soon as it reads a code: links open and Wi-Fi codes bring up the Join prompt. If a link bothers you afterwards, open it in History and tap Security Check. On your device it breaks the link into scheme, host, path and query and flags suspicious URLs, non-HTTPS links and hosts that mix alphabets as Safe, Caution or Blocked. Codes such as javascript:, data: or file: are never opened. If the page asks for a payment or sign-in you did not expect, close it without entering anything.",
    "paras": [
-    "Most fake QR codes are a sticker over the real one. They lead to pages that imitate a payment or sign-in screen to collect card numbers or passwords. When the browser opens the instant you scan, a convincing page is easy to trust. That is why one extra look at the URL before opening works so well, especially at the host, the part that says which site it really is.",
-    "By default QR Code Halo acts the moment it reads a code. When safety comes first, turn off Run action after scanning in Settings and decide after you see the result. In History, open a code and tap Security Check: the Local Payload Security Inspector parses the complete payload on the device into scheme, host, path, query and fragment, and returns Safe, Caution or Blocked with transparent findings.",
-    "For codes you use again at the same place, QR Verification helps. Save a result as a local reference, then compare a later scan by its complete SHA-256 fingerprint and URL components, so a swapped code stands out. No network reputation lookup or fuzzy score is used, and parsing uncertainty fails closed."
+    "Scanning is about speed. Point the camera, or pick a photo that contains a code, and QR Code Halo acts at once. It reads 20 code formats, even several codes in one frame. Every scan outside batch mode is saved on this device unless Skip saving to history is on.",
+    "When you look back, the host matters most: it says which site the link really belongs to. Most fake QR codes are a sticker over the real one, leading to pages that imitate a payment or sign-in screen. Security Check in History uses the Local Payload Security Inspector to parse the complete payload on the device and lists the findings behind the result. No network reputation lookup or fuzzy score is used.",
+    "For codes you use again at the same place, QR Verification helps. Save a result as a local reference, then compare a later scan by its complete SHA-256 fingerprint and URL components, so a swapped sticker stands out."
    ],
    "look": [
-    "Can you stop codes from opening automatically and check first?",
-    "Is the URL's host shown clearly?",
-    "Are the reasons for the verdict listed item by item?",
-    "Are dangerous forms such as javascript: or data: refused?",
-    "Can you compare a code with the one you scanned last time?"
+    "Does it act right after the scan, without another tap?",
+    "Does every scan stay in History so you can find it later?",
+    "Can you read the URL's host afterwards?",
+    "Are the reasons for the result listed item by item?",
+    "Are dangerous forms such as javascript: or data: refused?"
    ],
    "steps": [
-    "In QR Code Halo Settings, turn off Run action after scanning.",
-    "Scan the code and check that the host matches the business or official site.",
-    "Open the code in History and tap Security Check to see Safe, Caution or Blocked and why.",
-    "If it says Caution or Blocked, or a short link hides the destination, do not open it; ask staff or use the official app.",
+    "Before scanning, check that no sticker has been placed over the code.",
+    "Scan with QR Code Halo: the link opens, or a Wi-Fi code brings up the Join prompt.",
+    "If the page asks for a payment or sign-in you did not expect, close it without entering anything.",
+    "Open the code in History and tap Security Check to read the host and the Safe, Caution or Blocked result.",
     "Save codes you use regularly as a QR Verification reference and compare future scans."
    ],
    "rows": [
     [
-     "Before opening",
-     "Auto-run can be turned off",
-     "A convincing fake page gets no head start"
+     "Scanning",
+     "Acts right after the scan",
+     "You reach the payment or info page on the spot"
     ],
     [
-     "Inspection",
-     "Host, path and query broken out",
-     "You see where the link really goes"
+     "Looking back",
+     "Host, path and query broken out from History",
+     "You see where the link really went"
     ],
     [
-     "Verdict",
+     "Result",
      "Safe, Caution or Blocked with reasons",
      "Decide on evidence, not appearance"
     ]
    ],
-   "fits": "QR Code Halo suits people who want to check QR codes on parking meters, menus and flyers before opening them: auto-run on or off, Security Check from History and QR Verification on the device, plus 20 barcode formats and QR code creation.",
+   "fits": "QR Code Halo suits people who use QR codes on parking meters, menus and flyers on the spot and want to check afterwards when something feels off: Security Check from History and QR Verification on the device, plus 20 barcode formats and QR code creation. Scanning with the camera or the photo picker is unlimited for everyone, with no subscription.",
    "faq": [
     [
      "Does it open links as soon as it scans?",
-     "By default it acts immediately. To check first, turn off Run action after scanning in Settings."
+     "Yes. Links open and Wi-Fi codes bring up the Join prompt. The scan stays in History, so you can run Security Check afterwards."
     ],
     [
      "Does the safety check look things up online?",

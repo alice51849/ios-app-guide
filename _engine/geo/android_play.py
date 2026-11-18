@@ -72,6 +72,10 @@ import urllib.parse
 HERE = Path(__file__).resolve().parent
 SNAPSHOT_PATH = HERE / "data" / "android_live_snapshot.json"
 MANIFEST_PATH = HERE / "live_app_manifest.json"
+# Android packages that are never promoted (rule 4.8: the unlisted free MetroTimeHelper edition).
+# Same file as lib/android_live.NO_PROMOTE_PATH; unreadable -> the fallback below (stricter, never empty).
+NO_PROMOTE_PATH = HERE / "data" / "android_no_promote.json"
+NO_PROMOTE_FALLBACK = {"com.alice51849.MetroTimeHelper": "rule 4.8: unlisted free Android edition, never promoted"}
 PAGES = Path(os.environ.get("GEO_PAGES", HERE / "pages"))
 SCHEMA = "lumi.android-live-snapshot/v1"
 PLAY_PREFIX = "https://play.google.com/store/apps/details?id="
@@ -225,17 +229,36 @@ def _clean_copy(value: object) -> str | None:
 MATCH_STRENGTH = ("bundle_id_exact", "bundle_id_casefold", "store_title_exact")
 
 
+def load_no_promote(path: Path | None = None) -> dict[str, str]:
+    """{package: reason} never promoted; unreadable or malformed -> NO_PROMOTE_FALLBACK."""
+    try:
+        document = json.loads((path or NO_PROMOTE_PATH).read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return dict(NO_PROMOTE_FALLBACK)
+    rows = document.get("packages") if isinstance(document, dict) else None
+    if not isinstance(rows, dict):
+        return dict(NO_PROMOTE_FALLBACK)
+    return {str(package): str(reason) for package, reason in rows.items()
+            if PACKAGE_RE.match(str(package))}
+
+
 def build_snapshot(
     android_live: dict,
     manifest_apps: dict[str, dict],
     bundle_ids: dict[str, str],
     listings: dict[str, dict[str, dict[str, str]]],
+    no_promote: dict[str, str] | None = None,
 ) -> dict:
     """Mechanically map live Android folders to iOS roster keys.
 
     ``bundle_ids``: iOS app_id -> bundleId.  ``listings``: package ->
     locale -> {"title", "short_description"} from the Play listing source.
+    ``no_promote`` (default: NO_PROMOTE_PATH): packages that are never mapped;
+    they are listed in ``unmapped`` with reason ``no_promote`` even when a
+    bundle id matches (e.g. a free edition that went public again).
     """
+    blocked = {str(package).casefold() for package in
+               (load_no_promote() if no_promote is None else no_promote)}
     live = android_live.get("apps") if isinstance(android_live, dict) else None
     if not isinstance(live, dict):
         raise SnapshotError("android_live.json has no apps")
@@ -267,6 +290,10 @@ def build_snapshot(
         if not isinstance(package, str) or not PACKAGE_RE.match(package):
             unmapped.append({"folder": folder, "package": package,
                              "reason": "invalid_package"})
+            continue
+        if package.casefold() in blocked:
+            unmapped.append({"folder": folder, "package": package,
+                             "reason": "no_promote"})
             continue
         listing = listings.get(package) or {}
         play_title = (listing.get("en-US") or {}).get("title") or ""
@@ -365,6 +392,7 @@ def validate_snapshot(
     if document.get("count") != len(apps):
         raise SnapshotError("android snapshot count mismatch")
     packages: set[str] = set()
+    blocked = {str(package).casefold() for package in load_no_promote()}
     usable: dict[str, dict] = {}
     for key, entry in apps.items():
         if key in RETIRED_KEYS:
@@ -380,6 +408,8 @@ def validate_snapshot(
             raise SnapshotError(f"play_url does not match package for {key}")
         if package in packages:
             raise SnapshotError(f"duplicate package {package}")
+        if str(package).casefold() in blocked:
+            raise SnapshotError(f"no-promote package listed for {key}")
         packages.add(package)
         if entry.get("match") not in MATCH_METHODS:
             raise SnapshotError(f"unknown match method for {key}")

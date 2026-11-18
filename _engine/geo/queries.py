@@ -1315,6 +1315,17 @@ LEGACY_BEST_RETITLES = {
     # 掃了直接開、掃描人人不限次數，顯示問題不再用「先顯示連結再開」說法。
     "qrcodehalo": {
         "qr code scanner app that shows the link before opening it": "Which QR code scanner app opens the link right after the scan, with no scan limit?",
+        # 11-18 小組 D：「開啟前檢查 QR Code 連結」系列頁（registry keywords 衍生，
+        # 網址不變）改成「掃了直接開，事後在歷史紀錄回頭看」（業主 4.6 不要先檢查再開）。
+        "best check qr code link before opening app": "Which QR scanner opens the link right away and lets me look at it again later in History?",
+        "check qr code link before opening app for iphone": "iPhone QR scanner that opens links at once and keeps your scans in History",
+        "check qr code link before opening app for iphone free": "iPhone QR scanner with no scan limit: links open right after the scan",
+        "how to choose a check qr code link before opening app": "How to choose a QR scanner app: what happens right after the scan, and where to look later",
+        "best check a qr code link before opening it app": "Which QR scanner app keeps a History so I can look at a link again after it opens?",
+        "check a qr code link before opening it app for iphone": "Where can I see a QR code link again on iPhone after the scan opens it?",
+        "check a qr code link before opening it app for iphone free": "Is there an iPhone QR scanner with unlimited scans that opens links straight away?",
+        "how to choose a check a qr code link before opening it app": "How to choose a QR code scanner for iPhone that acts right after the scan",
+        "how to check a qr code link before opening it": "How to look back at a QR code link on iPhone after the scan opens it",
     },
 }
 _DISPLAY_QUESTIONS = {

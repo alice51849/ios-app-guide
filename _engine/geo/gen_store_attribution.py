@@ -213,7 +213,12 @@ WEB_HOOK_CAMPAIGNS = {
     for locale in locales
     for position in ("fs", "bottom")
 }
-APP_BOUND_CAMPAIGNS = {"duo_img": "6824946559", **WEB_TOOL_PILOT_CAMPAIGNS, **WEB_HOOK_CAMPAIGNS}
+# web_hook_pages.py WALLPAPER_GALLERY: the Foldable Wallpaper Studio gallery
+# page (reports/outreach_scale/methods_2026-11-18.md item 5), one campaign for
+# every link on every locale so the downloads reach Apple's reporting floor.
+WEB_GALLERY_CAMPAIGNS = {"os_wpgallery_web": "6824946559"}
+APP_BOUND_CAMPAIGNS = {"duo_img": "6824946559", **WEB_TOOL_PILOT_CAMPAIGNS, **WEB_HOOK_CAMPAIGNS,
+                       **WEB_GALLERY_CAMPAIGNS}
 
 
 def app_bound_campaign(campaign: str | None, app_id: str | None) -> bool:

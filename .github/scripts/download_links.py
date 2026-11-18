@@ -486,6 +486,9 @@ _CAMPAIGN_KEEP = ("gx_reach_", "yt_longform", "th_mochi_", "ln_mochi_")
 # A-2 creator promo-code line (reports/yi30/a2_creators/kit_2026-11-07.md): exactly h_<app>_kol keeps its own
 # row so the line is told apart from the app's other outreach; h_<app>_<cc>_kol and other hero kits still merge.
 _KEEP_EXACT_RE = re.compile(r"^h_[a-z0-9]+_kol$")
+# Outreach backup drafts (00_GrowthEngine reports/outreach_scale/backup_drafts; agent/ct_codes.BK_CODE_RE):
+# bk_<app>_<bs|th>_<lang>_d<day> leaves as the platform's channel-level campaign (bluesky / threads).
+_BACKUP_DRAFT_RE = re.compile(r"^bk_[a-z0-9]+_(bs|th)_[a-z]{2,4}(?:-[a-z0-9]{2,4})?_d\d{1,2}$")
 _CT_PARAM = re.compile(r"(?<=[?&;])ct=([A-Za-z0-9_-]+)")
 # Per app, the channel rows are merged further until they can pass Apple's threshold (owner 2026-10-18: every app
 # earns on its own, so each app gets its own split; merging only ever happens inside one app). Tier from
@@ -514,6 +517,9 @@ def coarse_campaign(token):
         return _CAMPAIGN_EXACT[t]
     if t.startswith("radar_"):
         return _RADAR_CAMPAIGN.get(t[len("radar_"):], raw)
+    backup = _BACKUP_DRAFT_RE.match(t)  # outreach backup drafts bk_<app>_<bs|th>_<lang>_d<day>: the platform's row
+    if backup:
+        return _CLIP_CAMPAIGN[backup.group(1)]
     for prefix, platforms, own in _CAMPAIGN_FAMILIES:
         if t.startswith(prefix):
             return platforms.get(t.rsplit("_", 1)[-1]) or own or raw

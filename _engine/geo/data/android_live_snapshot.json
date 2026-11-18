@@ -1,9 +1,9 @@
 {
  "schema": "lumi.android-live-snapshot/v1",
  "source": "AndroidPlay android_live_scan (Play page HTTP 200 + publish LIVE)",
- "source_generated": "2026-11-18T15:29:32+0800",
+ "source_generated": "2026-11-18T16:31:37+0800",
  "count": 60,
- "content_sha256": "6b5903118d75b06164da89a6593578d68cd4c1375854b49e4f7fa542de5dea5f",
+ "content_sha256": "873a5823978ac80df19beb719f2ad3a38cb063cb0868d8c3aff93c696fc2e7ca",
  "apps": {
   "aibriefpack": {
    "ios_app_id": "6791658210",
@@ -1256,6 +1256,12 @@
    }
   }
  },
- "unmapped": [],
+ "unmapped": [
+  {
+   "folder": "61_JellyDay",
+   "package": "com.alice51849.JellyDay",
+   "reason": "no_unique_ios_match"
+  }
+ ],
  "baseline_first_seen": "2026-10-11T14:26:56+0800"
 }

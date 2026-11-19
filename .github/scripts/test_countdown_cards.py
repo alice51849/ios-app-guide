@@ -178,5 +178,124 @@ class CountdownLinksTest(unittest.TestCase):
             self.assertTrue(C.own_link_reply_exists("api", "t", "m", links))
 
 
+class CountdownOnceADayTest(unittest.TestCase):
+    """2026-11-19: a second run the same day (rerun, manual dispatch) never posts the card twice; the posted
+    receipt decides, channel by channel."""
+
+    DAY = "2026-11-20"
+
+    def setUp(self):
+        import tempfile
+        self.tmp = Path(tempfile.mkdtemp())
+        self.receipt = self.tmp / "posted.json"
+        self.card = self.tmp / "card.jpg"
+        e = event()
+        self.card.with_suffix(".json").write_text(
+            '{"event": "%s", "locale": "%s", "caption": "c"}' % (e["id"], e["locale"]), encoding="utf-8")
+
+    def run_post(self, results, extra=()):
+        """main() post with each channel's poster returning results[channel]; the channels called, in order."""
+        import io
+        from contextlib import redirect_stdout
+        calls = []
+
+        def poster(name):
+            def fn(*_a):
+                calls.append(name)
+                r = results.get(name)
+                if isinstance(r, Exception):
+                    raise r
+                return r
+            return fn
+        out = io.StringIO()
+        with mock.patch.object(sys, "argv", ["c", "post", "--card", str(self.card), "--date", self.DAY,
+                                             "--receipt", str(self.receipt), *extra]), \
+                mock.patch.object(C.CR, "paused_notice", return_value=False), \
+                mock.patch.object(C, "qa_problems", return_value=[]), \
+                mock.patch.object(C, "post_telegram", side_effect=poster("telegram")), \
+                mock.patch.object(C, "post_threads", side_effect=poster("threads")), \
+                mock.patch.object(C, "post_instagram", side_effect=poster("instagram")), \
+                redirect_stdout(out):
+            self.assertEqual(0, C.main())
+        return calls, out.getvalue()
+
+    def test_a_second_run_the_same_day_posts_nothing_and_says_why(self):
+        calls, _ = self.run_post({"telegram": "11", "threads": "t1", "instagram": "i1"})
+        self.assertEqual(["telegram", "threads", "instagram"], calls)
+        calls, out = self.run_post({"telegram": "12", "threads": "t2", "instagram": "i2"})
+        self.assertEqual([], calls)
+        for ch in ("telegram", "threads", "instagram"):
+            self.assertIn(f"countdown: {ch} skipped, already posted today ({self.DAY}", out)
+        import json
+        self.assertEqual({"telegram": "11", "threads": "t1", "instagram": "i1"},
+                         json.loads(self.receipt.read_text())["channels"])
+
+    def test_a_rerun_fills_only_the_channels_that_missed(self):
+        calls, _ = self.run_post({"telegram": "11", "threads": None, "instagram": RuntimeError("HTTP 500")})
+        self.assertEqual(["telegram", "threads", "instagram"], calls)
+        calls, _ = self.run_post({"threads": "t1", "instagram": "i1"})
+        self.assertEqual(["threads", "instagram"], calls)
+
+    def test_yesterdays_receipt_does_not_hold_today(self):
+        import json
+        self.receipt.write_text(json.dumps({"date": "2026-11-19", "event": "x",
+                                            "channels": {"telegram": "1", "threads": "2", "instagram": "3"}}))
+        calls, _ = self.run_post({"telegram": "11", "threads": "t1", "instagram": "i1"})
+        self.assertEqual(["telegram", "threads", "instagram"], calls)
+        self.assertEqual(self.DAY, json.loads(self.receipt.read_text())["date"])
+
+    def test_an_unreadable_receipt_is_empty_not_a_crash(self):
+        self.receipt.write_text("{not json")
+        calls, _ = self.run_post({"telegram": "11"}, extra=("--only", "telegram"))
+        self.assertEqual(["telegram"], calls)
+
+    def test_done_only_when_every_wanted_channel_is_in_todays_receipt(self):
+        import datetime as dt
+        import io
+        from contextlib import redirect_stdout
+        day = dt.date.fromisoformat(self.DAY)
+        with redirect_stdout(io.StringIO()):
+            self.assertFalse(C.already_done(str(self.receipt), day))  # no receipt yet
+            C.record_receipt(str(self.receipt), day, {"event": "e"}, "telegram", "11")
+            self.assertFalse(C.already_done(str(self.receipt), day))
+            self.assertTrue(C.already_done(str(self.receipt), day, only="telegram"))
+            C.record_receipt(str(self.receipt), day, {"event": "e"}, "threads", "t1")
+            C.record_receipt(str(self.receipt), day, {"event": "e"}, "instagram", "i1")
+            self.assertTrue(C.already_done(str(self.receipt), day))
+            self.assertFalse(C.already_done(str(self.receipt), day + dt.timedelta(days=1)))
+
+    def test_without_a_receipt_nothing_changes(self):
+        import io
+        from contextlib import redirect_stdout
+        calls = []
+        e = event()
+        with mock.patch.object(sys, "argv", ["c", "post", "--card", "x.jpg"]), \
+                mock.patch.object(C.Path, "read_text", return_value='{"event": "%s", "locale": "%s", "caption": "c"}' % (e["id"], e["locale"])), \
+                mock.patch.object(C.CR, "paused_notice", return_value=False), \
+                mock.patch.object(C, "qa_problems", return_value=[]), \
+                mock.patch.object(C, "post_telegram", side_effect=lambda *a: calls.append("telegram") or "1"), \
+                mock.patch.object(C, "post_threads", side_effect=lambda *a: calls.append("threads") or "2"), \
+                mock.patch.object(C, "post_instagram", side_effect=lambda *a: calls.append("instagram") or "3"), \
+                redirect_stdout(io.StringIO()):
+            self.assertEqual(0, C.main())
+        self.assertEqual(["telegram", "threads", "instagram"], calls)
+
+    def test_post_telegram_counts_only_a_message_that_went_out(self):
+        e = event()
+        with mock.patch.object(C, "send_photo", return_value={"ok": True, "result": {"message_id": 77}}):
+            self.assertEqual("77", C.post_telegram("x.jpg", meta(e), e))
+        for bad in (None, {"ok": False}):
+            with mock.patch.object(C, "send_photo", return_value=bad):
+                self.assertIsNone(C.post_telegram("x.jpg", meta(e), e))
+
+    def test_the_workflow_reads_and_keeps_the_receipt(self):
+        wf = (Path(__file__).resolve().parents[1] / "workflows" / "countdown-daily.yml").read_text()
+        self.assertIn("countdown_cards.py done --date", wf)
+        self.assertIn('--receipt "$RUNNER_TEMP/posted.json"', wf)
+        keep = wf.index("Keep today's posted receipt")
+        self.assertLess(wf.index("countdown_cards.py post"), keep)
+        self.assertNotIn("--force", wf[keep:], "the receipt push must never overwrite the branch")
+
+
 if __name__ == "__main__":
     unittest.main()

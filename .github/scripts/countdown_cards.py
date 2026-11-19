@@ -8,7 +8,15 @@ content, so it never reads as a repeated post.
 
     python3 countdown_cards.py make --out card.jpg   # writes card.jpg + card.json
     python3 countdown_cards.py active                 # exit 0 if a card is due today
-    python3 countdown_cards.py post --card card.jpg --url <public jpg url>
+    python3 countdown_cards.py post --card card.jpg --url <public jpg url> [--receipt posted.json]
+    python3 countdown_cards.py done --receipt posted.json [--only CHANNEL]
+                                                      # exit 0 if today's card is already out everywhere
+
+Once a day (2026-11-19): countdown-daily.yml keeps the day's posted receipt (posted-YYYYMMDD.json, Taiwan date,
+{"date", "event", "channels": {channel: post id}}) on the countdown-cards branch. `post --receipt` skips, and
+says why, every channel the receipt already holds for today, and records each channel the moment it is out; a
+second run the same day (a rerun, a manual dispatch) therefore posts only the channels that missed, never the
+card twice. `done` lets the workflow stop before drawing when every channel is already in the receipt.
 
 Posting: Telegram (photo upload + App Store button), Threads (image, store
 links in the first reply) and Instagram (image) with the existing secrets.
@@ -444,18 +452,66 @@ def instagram_image(url, text, label="countdown", alt=None, app=None):
 
 
 def post_telegram(card, meta, e):
+    """The Telegram message id, or None when nothing went out."""
     row = [{"text": TEXT[e["locale"]]["button"], "url": store_url(e, "tg")}]
     play = play_store_url(APP_ID, campaign("tg"))
     if play:
         row.append({"text": "Google Play", "url": play})
-    send_photo(card, telegram_text(meta, e), row, guard=download_urls(e, "telegram"))
+    result = send_photo(card, telegram_text(meta, e), row, guard=download_urls(e, "telegram"))
+    if not (result or {}).get("ok"):
+        return None
+    return str((result.get("result") or {}).get("message_id") or "ok")
 
 
 def post_threads(url, meta, e):
+    """The Threads media id, or None when nothing went out."""
     from threads_post import queued_today
     if queued_today():
-        return print("countdown: a queued Threads post has today's slot; Threads skipped")
-    threads_image(url, meta["caption"], link_lines(e, "threads"))
+        print("countdown: a queued Threads post has today's slot; Threads skipped")
+        return None
+    return threads_image(url, meta["caption"], link_lines(e, "threads"))
+
+
+# ---- once a day: the posted receipt ------------------------------------------
+
+CHANNELS = ("telegram", "threads", "instagram")
+
+
+def load_receipt(path, day):
+    """{channel: post id} already out on `day` per the receipt at `path`; {} when there is none for that day.
+    An unreadable receipt is reported and treated as empty (the workflow writes it, so that is a bug to see)."""
+    if not path or not Path(path).is_file():
+        return {}
+    try:
+        data = json.loads(Path(path).read_text(encoding="utf-8"))
+    except (OSError, ValueError) as exc:
+        print(f"::warning::countdown: receipt {path} unreadable ({exc.__class__.__name__}); treated as empty")
+        return {}
+    if not isinstance(data, dict) or data.get("date") != day.isoformat():
+        return {}
+    chans = data.get("channels")
+    return {k: str(v) for k, v in chans.items() if k in CHANNELS and v} if isinstance(chans, dict) else {}
+
+
+def record_receipt(path, day, meta, channel, ref):
+    """Add `channel` (post id `ref`) to today's receipt at once, so a crash later in the run still keeps it."""
+    if not path:
+        return
+    chans = load_receipt(path, day)
+    chans[channel] = str(ref)
+    Path(path).write_text(json.dumps({"date": day.isoformat(), "event": meta.get("event", ""), "channels": chans},
+                                     ensure_ascii=False, indent=1, sort_keys=True) + "\n", encoding="utf-8")
+
+
+def already_done(path, day, only=None):
+    """True when every wanted channel is already in today's receipt (printed with the reason)."""
+    wanted = [only] if only else list(CHANNELS)
+    seen = load_receipt(path, day)
+    if all(ch in seen for ch in wanted):
+        print(f"countdown: today's card ({day.isoformat()}) is already out on {', '.join(wanted)} "
+              f"per the receipt {seen}; nothing to post again")
+        return True
+    return False
 
 
 def event_of(meta):
@@ -492,32 +548,40 @@ def qa_problems(meta, e, channel, image=None, online=True):
 def post_instagram(url, meta, e=None):
     import search_caption as SC
     e = e or event_of(meta)
-    instagram_image(url, instagram_text(meta, e), alt=SC.card_alt("CountDaysNow", meta["caption"], "countdaysnow", meta["locale"]),
+    return instagram_image(url, instagram_text(meta, e), alt=SC.card_alt("CountDaysNow", meta["caption"], "countdaysnow", meta["locale"]),
                     app=("CountDaysNow", meta["locale"], APP_ID))
 
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("cmd", choices=["make", "active", "post"])
+    ap.add_argument("cmd", choices=["make", "active", "post", "done"])
     ap.add_argument("--out", default="card.jpg")
     ap.add_argument("--card", default="card.jpg")
     ap.add_argument("--url", help="public URL of the card (Threads and Instagram fetch it)")
     ap.add_argument("--date", help="YYYY-MM-DD (Taiwan date), default today")
     ap.add_argument("--only", help="post to this channel only (telegram, threads or instagram)")
+    ap.add_argument("--receipt", help="today's posted receipt (read, then updated per channel posted)")
     args = ap.parse_args()
     day = dt.date.fromisoformat(args.date) if args.date else today_tw()
     if args.cmd == "active":
         return 0 if due(day) else 1
+    if args.cmd == "done":
+        return 0 if already_done(args.receipt, day, args.only) else 1
     if args.cmd == "make":
         meta = make(args.out, day)
         print(json.dumps(meta, ensure_ascii=False) if meta else "countdown: no event today")
         return 0
     meta = json.loads(Path(args.card).with_suffix(".json").read_text(encoding="utf-8"))
     e = next(x for x in EVENTS if x["id"] == meta["event"])
+    seen = load_receipt(args.receipt, day)
     for name, fn in (("telegram", lambda: post_telegram(args.card, meta, e)),
                      ("threads", lambda: post_threads(args.url, meta, e)),
                      ("instagram", lambda: post_instagram(args.url, meta, e))):
         if args.only and name != args.only:
+            continue
+        if name in seen:  # once a day: a second run never posts the card again where it is already out
+            print(f"countdown: {name} skipped, already posted today ({day.isoformat()}, id {seen[name]}, "
+                  f"receipt {args.receipt})")
             continue
         if CR.paused_notice(name):  # channel rotation holdout week: only this channel sits out
             continue
@@ -525,9 +589,12 @@ def main():
         if not post_qa.gate(qa_problems(meta, e, name, image=args.card), f"countdown {name}"):
             continue  # a broken card or caption never goes out
         try:
-            fn()
+            ref = fn()
         except Exception as exc:  # one channel failing never blocks the others
             print(f"countdown: {name} failed ({exc})")
+            continue
+        if ref:
+            record_receipt(args.receipt, day, meta, name, ref)
     # A post whose link reply failed is already out (DL.refuse printed the ::error::). A red step would only make
     # the watchdog re-dispatch the slot and post the card twice, so the run stays green; link_backfill.py adds it.
     if LINK_FAILURES:

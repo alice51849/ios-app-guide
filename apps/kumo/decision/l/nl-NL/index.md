@@ -2,7 +2,7 @@
 title: "Kumo: Gewicht bijhouden — Afvallen, vasten en GLP-1 | iOS App"
 lang: "nl-NL"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/kumo/decision/l/nl-NL/index.html"
-modified: "2026-11-17"
+modified: "2026-11-19"
 app_store_id: "6830824515"
 verified_live: true
 purchase_model: "neutral"
@@ -21,7 +21,7 @@ Je gewicht schommelt elke dag: met Kumo noteer je het in 10 seconden en zie je d
 - Apple Watch
 - App Store · Gratis
 
-[Download Kumo: Gewicht bijhouden in de App Store](https://apps.apple.com/nl/app/id6830824515?pt=118326163&ct=ln_kumo_all_ww_gw&mt=8)
+[Download Kumo: Gewicht bijhouden in de App Store](https://apps.apple.com/nl/app/id6830824515?pt=118326163&ct=ln_kumo_sr_nl_gw&mt=8)
 
 [Lees de volledige gids](https://open.cait518.cc/ios-app-guide/nl-NL/kumo.html)
 

@@ -14,11 +14,11 @@ Utgiver-skapte søkeintensjoner på tvers av 60 verifiserte aktive iOS-apper og 
 >
 > Spørringene er redaksjonelle beskrivelser av tiltenkte bruksområder, ikke målte søkevolumdata, rangeringer, uavhengige anmeldelser eller brukeranbefalinger.
 
-## Lumi Studio Utgiver Søkeintensjonskatalog · MCP v1.1.0 · Agent Skill
+## Lumi Studio Utgiver Søkeintensjonskatalog · MCP v1.3.0 · Agent Skill
 
 En førsteparts katalog over hvem hver app er laget for, oppgaven de prøver å fullføre, og den direkte App Store-stien.
 
-[VS Code](https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.1.0%252Flumi-app-finder-npx.tgz%2522%255D%257D) · [Cursor](https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjEuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D) · [Claude Desktop (MCPB)](https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder.mcpb) · [MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.1.0) · [MCP client config](https://open.cait518.cc/ios-app-guide/data/lumi-app-finder.mcp.json) · [SHA256SUMS](https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/SHA256SUMS) · [Agent Skill](https://github.com/alice51849/lumi-mcp/tree/v1.1.0/skills/lumi-app-finder) · [GitHub](https://github.com/alice51849/lumi-mcp)
+[VS Code](https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.3.0%252Flumi-app-finder-npx.tgz%2522%255D%257D) · [Cursor](https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjMuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D) · [Claude Desktop (MCPB)](https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder.mcpb) · [MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.3.0) · [MCP client config](https://open.cait518.cc/ios-app-guide/data/lumi-app-finder.mcp.json) · [SHA256SUMS](https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/SHA256SUMS) · [Agent Skill](https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder) · [GitHub](https://github.com/alice51849/lumi-mcp)
 
 <details>
 <summary>Agent Skill · GitHub Copilot · Claude Code · Cursor · Codex · Gemini CLI · Vercel skills.sh</summary>
@@ -26,55 +26,55 @@ En førsteparts katalog over hvem hver app er laget for, oppgaven de prøver å 
 **Agent Skill · GitHub Copilot**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user
 ```
 
 **Agent Skill · Claude Code**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent claude-code
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent claude-code
 ```
 
 **Agent Skill · Cursor**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent cursor
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent cursor
 ```
 
 **Agent Skill · Codex**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent codex
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent codex
 ```
 
 **Agent Skill · Gemini CLI**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent gemini-cli
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent gemini-cli
 ```
 
 **Agent Skill · Vercel skills.sh**
 
 ```sh
-npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.1.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
+npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
 ```
 
 **Claude Code**
 
 ```sh
-claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder-npx.tgz
+claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 ```
 
 **Codex**
 
 ```sh
-codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder-npx.tgz
+codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 ```
 
 **Gemini CLI**
 
 ```sh
-gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder-npx.tgz
+gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 ```
 
 </details>
@@ -92,7 +92,7 @@ Alfabetisk etter appnavn — aldri en rangering.
 | **100 Notes Studio: Pen & Paper** | 100 Notes Studio: Pen & Paper — Notatbok, håndskrift og PDF \| iOS App | Skriv notater for hånd som med penn på papir: 29 penner og pensler, fra fyllepenn og blyant til kalligrafipensel og akvarell, og håndskriften din er søkbar | Gratis å starte · opplåsing med engangskjøp | [Guide](https://open.cait518.cc/ios-app-guide/no/notesstudio100.html) | [Last ned 100 Notes Studio: Pen & Paper fra App Store](https://apps.apple.com/no/app/id6798813048?pt=118326163&ct=geo_pick&mt=8) |
 | **AI Brief: Filer til AI-prompt** | AI Brief: Filer til AI-prompt — Prompts fra filer og PDF \| iOS App | Gjør skjermbilder, PDF-er, filer og notater om til én oversiktlig AI-prompt, der mål, fakta og kilder er sortert. | Gratis å starte · opplåsing med engangskjøp | [Guide](https://open.cait518.cc/ios-app-guide/no/aibriefpack.html) | [Last ned AI Brief: Filer til AI-prompt fra App Store](https://apps.apple.com/no/app/id6791658210?pt=118326163&ct=geo_pick&mt=8) |
 | **Aim990** | beste TOEIC-forberedelsesapp offline studieplan for iPhone | Del 5 virker kort, men spørsmål med ufullstendige setninger kan ta tid hvis grammatikk og ordforråd ikke sitter automatisk. | Gratis å starte · opplåsing med engangskjøp | [Guide](https://open.cait518.cc/ios-app-guide/no/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [Få Aim990 i App Store →](https://apps.apple.com/no/app/id6784974530?pt=118326163&ct=geo_pick&mt=8) |
-| **BattAI: Batteritilstand** | BattAI: Batteritilstand — Ladevarsel, varme og widget \| iOS App | Gi batteritilstanden en poengsum, og følg utviklingen. | Gratis å starte · opplåsing med engangskjøp | [Guide](https://open.cait518.cc/ios-app-guide/no/battai.html) | [Last ned BattAI: Batteritilstand fra App Store](https://apps.apple.com/no/app/id6802423998?pt=118326163&ct=geo_pick&mt=8) |
+| **BattAI: Batteritilstand** | BattAI: Batteritilstand — Ladevarsel, varme og widget \| iOS App | Se hvor fort batteriet eldes og når det bør byttes. Se hvor lenge ladingen varer, få varsel om full lading i rett tid og logg hver lading. | Gratis å starte · opplåsing med engangskjøp | [Guide](https://open.cait518.cc/ios-app-guide/no/battai.html) | [Last ned BattAI: Batteritilstand fra App Store](https://apps.apple.com/no/app/id6802423998?pt=118326163&ct=geo_pick&mt=8) |
 | **CalDaily: kalkulator og temaer** | CalDaily: kalkulator og temaer — Widget, verktøy og historikk \| iOS App | En vakker kalkulator som husker: 100 innebygde temaer og en widget på Hjem-skjermen som regner uten å åpne appen. | Gratis å starte · opplåsing med engangskjøp | [Guide](https://open.cait518.cc/ios-app-guide/no/caldaily.html) | [Last ned CalDaily: kalkulator og temaer fra App Store](https://apps.apple.com/no/app/id6794178671?pt=118326163&ct=geo_pick&mt=8) |
 | **CountDaysNow: Event Counter** | CountDaysNow: Event Counter — Dagens fokus · Retning \| iOS App | • Dagens fokus Siden · I dag · Foran — Lagre | Gratis å starte · opplåsing med engangskjøp | [Guide](https://open.cait518.cc/ios-app-guide/no/countdaysnow.html) | [Last ned CountDaysNow: Event Counter fra App Store](https://apps.apple.com/no/app/id6807079789?pt=118326163&ct=geo_pick&mt=8) |
 | **CV Desk** | beste CV-byggerapp for karrierebytter 2026 | Når du bytter felt, er CV-problemet annerledes: erfaringen din er ekte, men 'irrelevant' på papiret, og ATS-filtre avviser deg før et menneske leser den. Det er nettopp det hullet CV Desk skal tette. | Gratis å starte · opplåsing med engangskjøp | [Guide](https://open.cait518.cc/ios-app-guide/no/answers/best-resume-builder-app-for-career-changers-2026.html) | [Få CV Desk i App Store →](https://apps.apple.com/no/app/id6781337213?pt=118326163&ct=geo_pick&mt=8) |
@@ -133,7 +133,7 @@ Alfabetisk etter appnavn — aldri en rangering.
 | **Sereno** | beste app for hvit støy for å sovne uten abonnement | For søvn er et abonnement som maser hver måned det motsatte av avslappende. Kjenner du deg igjen, ta en titt på Sereno. | Gratis å starte · opplåsing med engangskjøp | [Guide](https://open.cait518.cc/ios-app-guide/no/answers/best-white-noise-app-for-falling-asleep-no-subscription.html) | [Last ned Sereno i App Store →](https://apps.apple.com/no/app/id6788236641?pt=118326163&ct=geo_pick&mt=8) |
 | **ShotInbox AI: Sort Screenshots** | ShotInbox AI: Sort Screenshots — Finn og organiser skjermbilder \| iOS App | Skjermbildene dine, sortert automatisk: Shopping, Kvitteringer, Billetter, Reiser, Kart og steder, Chatter og sosiale medier, Arbeid og mer. | Gratis å starte · opplåsing med engangskjøp | [Guide](https://open.cait518.cc/ios-app-guide/no/shotinbox.html) | [Last ned ShotInbox AI: Sort Screenshots fra App Store](https://apps.apple.com/no/app/id6802166527?pt=118326163&ct=geo_pick&mt=8) |
 | **Snapport** | beste passfoto-app for babyer og småbarn hjemme | For babyens passfoto kan ingen andre være med i bildet, og bakgrunnen må være ensfarget. Snapport kom nettopp ut av det problemet. | Betalt nedlasting | [Guide](https://open.cait518.cc/ios-app-guide/no/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html) | [Last ned Snapport i App Store →](https://apps.apple.com/no/app/id6780575828?pt=118326163&ct=geo_pick&mt=8) |
-| **Snapport Lite: Passfoto hjemme** | Snapport Lite: Passfoto hjemme — Portretter i eksakt størrelse \| iOS App | Trenger du et passfoto, et bilde til CV-en eller til en søknad? Snapport Lite beskjærer portrettet ditt til nøyaktig den størrelsen du velger: 35 innebygde | Gratis å starte · opplåsing med engangskjøp | [Guide](https://open.cait518.cc/ios-app-guide/no/snapportlite.html) | [Last ned Snapport Lite: Passfoto hjemme fra App Store](https://apps.apple.com/no/app/id6792856304?pt=118326163&ct=geo_pick&mt=8) |
+| **Snapport Lite: Passfoto 35x45** | Snapport Lite: Passfoto 35x45 — Portretter i eksakt størrelse \| iOS App | Trenger du et passfoto, et bilde til CV-en eller til en søknad? Snapport Lite beskjærer portrettet ditt til nøyaktig den størrelsen du velger: 35 innebygde | Gratis å starte · opplåsing med engangskjøp | [Guide](https://open.cait518.cc/ios-app-guide/no/snapportlite.html) | [Last ned Snapport Lite: Passfoto 35x45 fra App Store](https://apps.apple.com/no/app/id6792856304?pt=118326163&ct=geo_pick&mt=8) |
 | **Sono Note** | beste app for taleposter som oppsummerer møter på iPhone | Etter en samtale vil du ikke ha en rå transkripsjon — du vil ha oppsummeringen, handlingspunktene og et utkast til oppfølging. Det er nettopp det hullet Sono Note skal tette. | Gratis å starte · opplåsing med engangskjøp | [Guide](https://open.cait518.cc/ios-app-guide/no/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [Last ned Sono Note i App Store →](https://apps.apple.com/no/app/id6782139553?pt=118326163&ct=geo_pick&mt=8) |
 | **Stay Clock: Skrivebordsklokke** | Stay Clock: Skrivebordsklokke — Tid og kalender, alltid på \| iOS App | Stay Clock gjør iPhone eller iPad om til en bordklokke som alltid er på, og som kan leses tvers over rommet. Velg blant 101 urskiver, også flippklokker | Gratis å starte · opplåsing med engangskjøp | [Guide](https://open.cait518.cc/ios-app-guide/no/stayclock.html) | [Last ned Stay Clock: Skrivebordsklokke fra App Store](https://apps.apple.com/no/app/id6814035888?pt=118326163&ct=geo_pick&mt=8) |
 | **Studydown: Tidsregistrering** | Studydown: Tidsregistrering — Legg den med skjermen ned \| iOS App | Legg telefonen med skjermen ned, så starter tiden; løft den, så stopper den, og bare ekte fokustid teller i studie- og arbeidstimene dine. | Gratis å starte · opplåsing med engangskjøp | [Guide](https://open.cait518.cc/ios-app-guide/no/studydown.html) | [Last ned Studydown: Tidsregistrering fra App Store](https://apps.apple.com/no/app/id6807335593?pt=118326163&ct=geo_pick&mt=8) |
@@ -160,6 +160,6 @@ JSON, JSONL og CSV inneholder de samme 3 000 postene.
 
 [Hjem](https://open.cait518.cc/ios-app-guide/no/index.html) · [Åpne data](https://open.cait518.cc/ios-app-guide/no/data/lumi-studio-publisher-search-intent-catalog.html) · [Lisens](https://creativecommons.org/licenses/by/4.0/)
 
-Oppdatert: 2026-11-16
+Oppdatert: 2026-11-19
 
 CC BY 4.0 gjelder for den opprinnelige katalogsammensetningen; appnavn og App Store-merker tilhører sine eiere.

@@ -6,7 +6,7 @@
   "name": "Katalog iskalnih namenov založnika Lumi Studio",
   "description": "Katalog prve roke, ki opisuje, za koga je vsaka aplikacija namenjena, katero nalogo poskuša uporabnik opraviti in neposredno pot do App Store.",
   "inLanguage": "sl-SI",
-  "dateModified": "2026-11-16",
+  "dateModified": "2026-11-19",
   "numberOfItems": 60,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -217,7 +217,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/sl-SI.jsonld#offer-battai",
         "url": "https://apps.apple.com/si/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
         "name": "BattAI: Ocena stanja baterije",
-        "description": "Ocenite stanje baterije in spremljajte trend.",
+        "description": "Izvedite, kako hitro baterija stara in kdaj jo zamenjati. Oglejte si, koliko še zdrži, pravočasno prejmite obvestilo o polni bateriji in beležite polnjenja",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -247,7 +247,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802423998",
           "inLanguage": "sl-SI",
-          "description": "Ocenite stanje baterije in spremljajte trend.",
+          "description": "Izvedite, kako hitro baterija stara in kdaj jo zamenjati. Oglejte si, koliko še zdrži, pravočasno prejmite obvestilo o polni bateriji in beležite polnjenja",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/sl-SI.jsonld#offer-battai"
           },
@@ -1057,7 +1057,7 @@
           ],
           "isAccessibleForFree": false
         },
-        "price": "9.99",
+        "price": "0.99",
         "priceCurrency": "EUR",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {

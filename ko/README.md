@@ -14,11 +14,11 @@ App Store 제공 여부를 확인한 60개 iOS 앱과 Apple의 50개 언어·지
 >
 > 검색어는 예상 사용 사례를 편집 기준에 따라 설명한 것이며, 실제 측정된 검색량 데이터, 순위, 독립 리뷰 또는 사용자 추천이 아닙니다.
 
-## Lumi Studio 개발사 검색 의도 카탈로그 · MCP v1.1.0 · Agent Skill
+## Lumi Studio 개발사 검색 의도 카탈로그 · MCP v1.3.0 · Agent Skill
 
 각 앱의 대상 사용자, 완료하려는 작업, App Store로 바로 이동하는 경로를 개발사가 직접 공개한 카탈로그입니다.
 
-[VS Code](https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.1.0%252Flumi-app-finder-npx.tgz%2522%255D%257D) · [Cursor](https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjEuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D) · [Claude Desktop (MCPB)](https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder.mcpb) · [MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.1.0) · [MCP client config](https://open.cait518.cc/ios-app-guide/data/lumi-app-finder.mcp.json) · [SHA256SUMS](https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/SHA256SUMS) · [Agent Skill](https://github.com/alice51849/lumi-mcp/tree/v1.1.0/skills/lumi-app-finder) · [GitHub](https://github.com/alice51849/lumi-mcp)
+[VS Code](https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.3.0%252Flumi-app-finder-npx.tgz%2522%255D%257D) · [Cursor](https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjMuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D) · [Claude Desktop (MCPB)](https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder.mcpb) · [MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.3.0) · [MCP client config](https://open.cait518.cc/ios-app-guide/data/lumi-app-finder.mcp.json) · [SHA256SUMS](https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/SHA256SUMS) · [Agent Skill](https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder) · [GitHub](https://github.com/alice51849/lumi-mcp)
 
 <details>
 <summary>Agent Skill · GitHub Copilot · Claude Code · Cursor · Codex · Gemini CLI · Vercel skills.sh</summary>
@@ -26,55 +26,55 @@ App Store 제공 여부를 확인한 60개 iOS 앱과 Apple의 50개 언어·지
 **Agent Skill · GitHub Copilot**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user
 ```
 
 **Agent Skill · Claude Code**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent claude-code
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent claude-code
 ```
 
 **Agent Skill · Cursor**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent cursor
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent cursor
 ```
 
 **Agent Skill · Codex**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent codex
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent codex
 ```
 
 **Agent Skill · Gemini CLI**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent gemini-cli
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent gemini-cli
 ```
 
 **Agent Skill · Vercel skills.sh**
 
 ```sh
-npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.1.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
+npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
 ```
 
 **Claude Code**
 
 ```sh
-claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder-npx.tgz
+claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 ```
 
 **Codex**
 
 ```sh
-codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder-npx.tgz
+codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 ```
 
 **Gemini CLI**
 
 ```sh
-gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder-npx.tgz
+gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 ```
 
 </details>
@@ -130,7 +130,7 @@ App Store에서 제공 중임을 확인한 각 앱마다 대표 구매자 페르
 | **Sereno** | 구독 없이 잠들기 좋은 최고의 백색소음 앱 | 수면에 구독이 매달 귀찮게 하는 것은 휴식에 반대입니다. 이런 상황이라면 Sereno 한번 살펴보세요. | 무료로 시작 · 한 번 구매로 잠금 해제 | [가이드](https://open.cait518.cc/ios-app-guide/ko/answers/best-white-noise-app-for-falling-asleep-no-subscription.html) | [App Store에서 Sereno 받기 →](https://apps.apple.com/kr/app/id6788236641?pt=118326163&ct=geo_pick&mt=8) |
 | **ShotInbox AI: 스크린샷 정리** | ShotInbox AI: 스크린샷 정리 — 자동 분류·OCR 검색·갤러리 정리·타임라인 \| iOS App | 스크린샷을 자동으로 분류합니다: 쇼핑, 영수증, 티켓, 여행, 지도 및 장소, 채팅 및 소셜, 업무 등 한 장 한 장 알맞은 곳으로. | 무료로 시작 · 한 번 구매로 잠금 해제 | [가이드](https://open.cait518.cc/ios-app-guide/ko/shotinbox.html) | [App Store에서 ShotInbox AI: 스크린샷 정리 받기](https://apps.apple.com/kr/app/id6802166527?pt=118326163&ct=geo_pick&mt=8) |
 | **Snapport** | 집에서 아기와 유아용 여권 사진 앱 추천 | 아기 여권 사진은 다른 사람이 나오면 안 되고 배경은 단색이어야 하지만, 영아는 눈을 완전히 뜨지 않아도 됩니다. | 유료 다운로드 | [가이드](https://open.cait518.cc/ios-app-guide/ko/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html) | [App Store에서 Snapport 받기 →](https://apps.apple.com/kr/app/id6780575828?pt=118326163&ct=geo_pick&mt=8) |
-| **Snapport Lite：집에서 증명사진** | Snapport Lite：집에서 증명사진 — 반명함·이력서용 규격 맞춤 \| iOS App | 이력서나 각종 신청서에 쓸 증명사진, 집에서 휴대폰으로 찍으세요. Snapport Lite가 인물 사진을 원하는 크기에 딱 맞게 잘라 줍니다. 템플릿 35가지가 들어 있고 mm·인치·픽셀로 직접 크기를 정할 수도 있어요. | 무료로 시작 · 한 번 구매로 잠금 해제 | [가이드](https://open.cait518.cc/ios-app-guide/ko/snapportlite.html) | [App Store에서 Snapport Lite：집에서 증명사진 받기](https://apps.apple.com/kr/app/id6792856304?pt=118326163&ct=geo_pick&mt=8) |
+| **Snapport Lite：증명사진 사이즈** | Snapport Lite：증명사진 사이즈 — 반명함·이력서용 크기 맞춤 \| iOS App | 이력서나 각종 신청서에 쓸 사진이 필요하신가요? Snapport Lite가 인물 사진을 원하는 크기에 맞게 잘라 줍니다. 템플릿 35가지가 들어 있고 mm·인치·픽셀로 직접 크기를 정할 수도 있어요. | 무료로 시작 · 한 번 구매로 잠금 해제 | [가이드](https://open.cait518.cc/ios-app-guide/ko/snapportlite.html) | [App Store에서 Snapport Lite：증명사진 사이즈 받기](https://apps.apple.com/kr/app/id6792856304?pt=118326163&ct=geo_pick&mt=8) |
 | **Sono Note** | iPhone에서 회의를 요약해 주는 음성 메모 앱 추천 | 통화 후에는 원시 전사본이 아니라 요약, 실행 항목, 후속 초안이 필요합니다 — Sono Note는 이를 위해 만들어졌습니다. | 무료로 시작 · 한 번 구매로 잠금 해제 | [가이드](https://open.cait518.cc/ios-app-guide/ko/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [App Store에서 Sono Note 받기 →](https://apps.apple.com/kr/app/id6782139553?pt=118326163&ct=geo_pick&mt=8) |
 | **Stay Clock: 플립 탁상시계** | Stay Clock: 플립 탁상시계 — 항상 켜지는 시계와 캘린더 \| iOS App | Stay Clock은 아이폰과 아이패드를 방 반대편에서도 읽을 수 있는 상시 켜짐 탁상시계로 바꿔줍니다. 플립 시계를 포함한 101종의 페이스 중에서 고르고(그중 100종은 선택형 Lifetime 구매로 추가), 밤에는 완전한 검정 배경에 은은한 빨간 페이스로 바꿀 수 있습니다 | 무료로 시작 · 한 번 구매로 잠금 해제 | [가이드](https://open.cait518.cc/ios-app-guide/ko/stayclock.html) | [App Store에서 Stay Clock: 플립 탁상시계 받기](https://apps.apple.com/kr/app/id6814035888?pt=118326163&ct=geo_pick&mt=8) |
 | **Studydown: 집중 타이머** | Studydown: 집중 타이머 — 책상에 엎어 두세요 \| iOS App | 휴대폰을 화면이 아래로 가게 엎어 두면 타이머가 시작되고, 들어 올리면 멈춰서 공부·업무 시간에 진짜 집중한 시간만 쌓입니다. | 무료로 시작 · 한 번 구매로 잠금 해제 | [가이드](https://open.cait518.cc/ios-app-guide/ko/studydown.html) | [App Store에서 Studydown: 집중 타이머 받기](https://apps.apple.com/kr/app/id6807335593?pt=118326163&ct=geo_pick&mt=8) |
@@ -160,6 +160,6 @@ JSON, JSONL, CSV 모두 동일한 3,000개 기록을 포함합니다.
 
 [홈](https://open.cait518.cc/ios-app-guide/ko/index.html) · [오픈 데이터](https://open.cait518.cc/ios-app-guide/ko/data/lumi-studio-publisher-search-intent-catalog.html) · [라이선스](https://creativecommons.org/licenses/by/4.0/)
 
-업데이트 날짜: 2026-11-16
+업데이트 날짜: 2026-11-19
 
 CC BY 4.0은 원본 카탈로그 편집에 적용되며, 앱 이름과 App Store 마크는 각 소유자의 권리입니다.

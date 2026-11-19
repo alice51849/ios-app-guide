@@ -14,11 +14,11 @@ Intenções de pesquisa redigidas pelo editor para 60 apps iOS verificadas e dis
 >
 > As consultas são descrições editoriais dos casos de uso pretendidos, não dados medidos de volume de pesquisa, classificações, análises independentes nem recomendações de utilizadores.
 
-## Catálogo de intenções de pesquisa do editor Lumi Studio · MCP v1.1.0 · Agent Skill
+## Catálogo de intenções de pesquisa do editor Lumi Studio · MCP v1.3.0 · Agent Skill
 
 Um catálogo publicado diretamente pelo programador que explica a quem se destina cada app, a tarefa que pretende realizar e o acesso direto à App Store.
 
-[VS Code](https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.1.0%252Flumi-app-finder-npx.tgz%2522%255D%257D) · [Cursor](https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjEuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D) · [Claude Desktop (MCPB)](https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder.mcpb) · [MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.1.0) · [MCP client config](https://open.cait518.cc/ios-app-guide/data/lumi-app-finder.mcp.json) · [SHA256SUMS](https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/SHA256SUMS) · [Agent Skill](https://github.com/alice51849/lumi-mcp/tree/v1.1.0/skills/lumi-app-finder) · [GitHub](https://github.com/alice51849/lumi-mcp)
+[VS Code](https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.3.0%252Flumi-app-finder-npx.tgz%2522%255D%257D) · [Cursor](https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjMuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D) · [Claude Desktop (MCPB)](https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder.mcpb) · [MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.3.0) · [MCP client config](https://open.cait518.cc/ios-app-guide/data/lumi-app-finder.mcp.json) · [SHA256SUMS](https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/SHA256SUMS) · [Agent Skill](https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder) · [GitHub](https://github.com/alice51849/lumi-mcp)
 
 <details>
 <summary>Agent Skill · GitHub Copilot · Claude Code · Cursor · Codex · Gemini CLI · Vercel skills.sh</summary>
@@ -26,55 +26,55 @@ Um catálogo publicado diretamente pelo programador que explica a quem se destin
 **Agent Skill · GitHub Copilot**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user
 ```
 
 **Agent Skill · Claude Code**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent claude-code
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent claude-code
 ```
 
 **Agent Skill · Cursor**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent cursor
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent cursor
 ```
 
 **Agent Skill · Codex**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent codex
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent codex
 ```
 
 **Agent Skill · Gemini CLI**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent gemini-cli
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent gemini-cli
 ```
 
 **Agent Skill · Vercel skills.sh**
 
 ```sh
-npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.1.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
+npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
 ```
 
 **Claude Code**
 
 ```sh
-claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder-npx.tgz
+claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 ```
 
 **Codex**
 
 ```sh
-codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder-npx.tgz
+codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 ```
 
 **Gemini CLI**
 
 ```sh
-gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder-npx.tgz
+gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 ```
 
 </details>
@@ -92,7 +92,7 @@ Ordem alfabética pelo nome da app — nunca uma classificação.
 | **100 Notes Studio: Pen & Paper** | 100 Notes Studio: Pen & Paper — Caderno à mão, PDF e estudo \| iOS App | Escreva à mão como com caneta e papel: 29 canetas e pincéis, da caneta de tinta permanente e do lápis ao pincel de caligrafia e à aguarela, e depois pode | Grátis para começar · desbloqueio com compra única | [Guia](https://open.cait518.cc/ios-app-guide/pt-PT/notesstudio100.html) | [Baixe 100 Notes Studio: Pen & Paper na App Store](https://apps.apple.com/pt/app/id6798813048?pt=118326163&ct=geo_pick&mt=8) |
 | **AI Brief** | best private app to organize screenshots and documents into context before using AI | AI Brief — Organize screenshots, PDFs, files, notes, and links into a traceable brief before sharing with any AI. Free to start · One-time unlock · No subscription. | Grátis para começar · desbloqueio com compra única | [Guia](https://open.cait518.cc/ios-app-guide/pt-PT/answers/best-private-app-to-organize-screenshots-and-documents-into-context-before-using-ai.html) | [Obter o AI Brief na App Store →](https://apps.apple.com/pt/app/id6791658210?pt=118326163&ct=geo_pick&mt=8) |
 | **Aim990** | melhor app de preparação TOEIC plano de estudo offline para iPhone | A Parte 5 parece curta, mas as perguntas de frases incompletas podem consumir tempo se gramática e vocabulário não forem automáticos. | Grátis para começar · desbloqueio com compra única | [Guia](https://open.cait518.cc/ios-app-guide/pt-PT/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [Obtenha o Aim990 na App Store →](https://apps.apple.com/pt/app/id6784974530?pt=118326163&ct=geo_pick&mt=8) |
-| **BattAI: Saúde da bateria** | BattAI: Saúde da bateria — Alerta de carga e de calor \| iOS App | Dê uma pontuação à saúde da bateria e acompanhe a evolução. | Grátis para começar · desbloqueio com compra única | [Guia](https://open.cait518.cc/ios-app-guide/pt-PT/battai.html) | [Baixe BattAI: Saúde da bateria na App Store](https://apps.apple.com/pt/app/id6802423998?pt=118326163&ct=geo_pick&mt=8) |
+| **BattAI: Saúde da bateria** | BattAI: Saúde da bateria — Alerta de carga e de calor \| iOS App | Veja com que rapidez a bateria envelhece, quando a substituir e quanto dura a carga. Receba o aviso de carga completa à hora certa e registe cada | Grátis para começar · desbloqueio com compra única | [Guia](https://open.cait518.cc/ios-app-guide/pt-PT/battai.html) | [Baixe BattAI: Saúde da bateria na App Store](https://apps.apple.com/pt/app/id6802423998?pt=118326163&ct=geo_pick&mt=8) |
 | **CalDaily: calculadora e temas** | CalDaily: calculadora e temas — Widget, ferramentas, histórico \| iOS App | Uma calculadora bonita que se lembra: 100 temas integrados e um widget no ecrã principal que calcula sem abrir a app. | Grátis para começar · desbloqueio com compra única | [Guia](https://open.cait518.cc/ios-app-guide/pt-PT/caldaily.html) | [Baixe CalDaily: calculadora e temas na App Store](https://apps.apple.com/pt/app/id6794178671?pt=118326163&ct=geo_pick&mt=8) |
 | **CountDaysNow: Event Counter** | CountDaysNow: Event Counter — Foco do dia \| iOS App | • Foco do dia Desde · Hoje · Adiante — Guardar | Grátis para começar · desbloqueio com compra única | [Guia](https://open.cait518.cc/ios-app-guide/pt-PT/countdaysnow.html) | [Baixe CountDaysNow: Event Counter na App Store](https://apps.apple.com/pt/app/id6807079789?pt=118326163&ct=geo_pick&mt=8) |
 | **CV Desk** | melhor app construtor de currículos para quem muda de carreira 2026 | Ao mudar de área, o problema do currículo é diferente: a sua experiência é real mas 'não relacionada' no papel, e os filtros ATS rejeitam-no antes de um humano ler. É essa a lacuna que CV Desk procura preencher. | Grátis para começar · desbloqueio com compra única | [Guia](https://open.cait518.cc/ios-app-guide/pt-PT/answers/best-resume-builder-app-for-career-changers-2026.html) | [Obtenha o CV Desk na App Store →](https://apps.apple.com/pt/app/id6781337213?pt=118326163&ct=geo_pick&mt=8) |
@@ -160,6 +160,6 @@ JSON, JSONL e CSV contêm os mesmos 3.000 registos.
 
 [Início](https://open.cait518.cc/ios-app-guide/pt-PT/index.html) · [Dados abertos](https://open.cait518.cc/ios-app-guide/pt-PT/data/lumi-studio-publisher-search-intent-catalog.html) · [Licença](https://creativecommons.org/licenses/by/4.0/)
 
-Atualizado: 2026-11-16
+Atualizado: 2026-11-19
 
 A licença CC BY 4.0 aplica-se à compilação original do catálogo; os nomes dos apps e marcas da App Store pertencem aos seus proprietários.

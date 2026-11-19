@@ -6,7 +6,7 @@
   "name": "Lumi Studio 開發者搜尋意圖目錄",
   "description": "第一方目錄，說明每款 App 的適合對象、想完成的任務，以及 App Store 下載入口。",
   "inLanguage": "zh-Hant",
-  "dateModified": "2026-11-15",
+  "dateModified": "2026-11-19",
   "numberOfItems": 60,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -991,7 +991,7 @@
           ],
           "isAccessibleForFree": false
         },
-        "price": "290",
+        "price": "30",
         "priceCurrency": "TWD",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {
@@ -2790,8 +2790,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hant.jsonld#offer-snapportlite",
         "url": "https://apps.apple.com/tw/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Snapport Lite：在家拍證件照",
-        "description": "履歷、證件要用的大頭照，在家用手機就能拍好。Snapport Lite 把人像照精準裁成你選的尺寸：內建 35 種範本，也能自訂公釐、英吋或像素。",
+        "name": "Snapport Lite：證件照尺寸",
+        "description": "履歷或各類申請要用的大頭照？Snapport Lite 把人像照裁成你選的尺寸：內建 35 種範本，也能自訂公釐、英吋或像素。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2806,7 +2806,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6792856304"
           },
-          "name": "Snapport Lite：在家拍證件照",
+          "name": "Snapport Lite：證件照尺寸",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
           "url": "https://apps.apple.com/tw/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
@@ -2821,7 +2821,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6792856304",
           "inLanguage": "zh-Hant",
-          "description": "履歷、證件要用的大頭照，在家用手機就能拍好。Snapport Lite 把人像照精準裁成你選的尺寸：內建 35 種範本，也能自訂公釐、英吋或像素。",
+          "description": "履歷或各類申請要用的大頭照？Snapport Lite 把人像照裁成你選的尺寸：內建 35 種範本，也能自訂公釐、英吋或像素。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hant.jsonld#offer-snapportlite"
           },

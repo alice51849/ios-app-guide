@@ -2,7 +2,7 @@
 title: "GBAGo: حفظ مرئي — محاكي ألعاب قديمة gba gbc gb | iOS App"
 lang: "ar-SA"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gbago/decision/l/ar-SA/index.html"
-modified: "2026-11-17"
+modified: "2026-11-19"
 app_store_id: "6804564400"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,7 +16,7 @@ publisher: "Lumi Studio"
 - المزيد
 - تحميل مدفوع
 - دون اتصال
-- App Store · SAR 39.99
+- App Store · SAR 4.99
 
 [احصل على GBAGo: حفظ مرئي من App Store](https://apps.apple.com/sa/app/id6804564400?pt=118326163&ct=geo_pick&mt=8)
 

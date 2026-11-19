@@ -6,7 +6,7 @@
   "name": "كتالوج نوايا البحث للناشر Lumi Studio",
   "description": "كتالوج ينشره المطور مباشرةً ويوضح الفئة التي صُمم لها كل تطبيق، والمهمة التي تريد إنجازها، والمسار المباشر إلى App Store.",
   "inLanguage": "ar-SA",
-  "dateModified": "2026-11-16",
+  "dateModified": "2026-11-19",
   "numberOfItems": 60,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -217,7 +217,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ar-SA.jsonld#offer-battai",
         "url": "https://apps.apple.com/sa/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
         "name": "BattAI: نتيجة صحة البطارية",
-        "description": "قيّم صحة بطاريتك بنتيجة واضحة وتابع اتجاهها.",
+        "description": "اعرف إلى أي مدى تتقادم بطاريتك ومتى يحين وقت استبدالها. شاهد كم ستدوم الشحنة، واحصل على تنبيه اكتمال الشحن في وقته، وسجّل كل عملية شحن.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -247,7 +247,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802423998",
           "inLanguage": "ar-SA",
-          "description": "قيّم صحة بطاريتك بنتيجة واضحة وتابع اتجاهها.",
+          "description": "اعرف إلى أي مدى تتقادم بطاريتك ومتى يحين وقت استبدالها. شاهد كم ستدوم الشحنة، واحصل على تنبيه اكتمال الشحن في وقته، وسجّل كل عملية شحن.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ar-SA.jsonld#offer-battai"
           },
@@ -1057,7 +1057,7 @@
           ],
           "isAccessibleForFree": false
         },
-        "price": "39.99",
+        "price": "4.99",
         "priceCurrency": "SAR",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {
@@ -2922,7 +2922,7 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ar-SA.jsonld#offer-snapportlite",
         "url": "https://apps.apple.com/sa/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Snapport Lite: التقط صور هوية",
+        "name": "Snapport Lite: مقاس صور الهوية",
         "description": "تحتاج صورة هوية، أو صورة للسيرة الذاتية أو لطلب ما؟ يقص Snapport Lite صورتك الشخصية بدقة على المقاس الذي تختاره: 35 قالبًا مدمجًا، أو مقاسك الخاص بالمليمتر",
         "seller": {
           "@type": "Organization",
@@ -2938,7 +2938,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6792856304"
           },
-          "name": "Snapport Lite: التقط صور هوية",
+          "name": "Snapport Lite: مقاس صور الهوية",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
           "url": "https://apps.apple.com/sa/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",

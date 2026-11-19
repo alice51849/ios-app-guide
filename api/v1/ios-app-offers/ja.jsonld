@@ -6,7 +6,7 @@
   "name": "Lumi Studio 開発元検索意図カタログ",
   "description": "各アプリの対象ユーザー、達成したいタスク、App Store への直接の導線を、開発元が公開するカタログです。",
   "inLanguage": "ja",
-  "dateModified": "2026-11-16",
+  "dateModified": "2026-11-19",
   "numberOfItems": 60,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -991,7 +991,7 @@
           ],
           "isAccessibleForFree": false
         },
-        "price": "1500",
+        "price": "150",
         "priceCurrency": "JPY",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {
@@ -2724,8 +2724,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-snapportlite",
         "url": "https://apps.apple.com/jp/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Snapport Lite：自宅で証明写真",
-        "description": "履歴書や各種申請に使う証明写真を、自宅でスマホから。Snapport Lite が顔写真を選んだサイズにぴったりトリミングします。内蔵テンプレートは35種類、mm・インチ・ピクセルでの自由なサイズ指定も可能です。",
+        "name": "Snapport Lite：証明写真サイズ",
+        "description": "履歴書や各種申請に使う写真に。Snapport Lite が顔写真を選んだサイズにトリミングします。内蔵テンプレートは35種類、mm・インチ・ピクセルでの自由なサイズ指定も可能です。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2740,7 +2740,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6792856304"
           },
-          "name": "Snapport Lite：自宅で証明写真",
+          "name": "Snapport Lite：証明写真サイズ",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
           "url": "https://apps.apple.com/jp/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
@@ -2755,7 +2755,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6792856304",
           "inLanguage": "ja",
-          "description": "履歴書や各種申請に使う証明写真を、自宅でスマホから。Snapport Lite が顔写真を選んだサイズにぴったりトリミングします。内蔵テンプレートは35種類、mm・インチ・ピクセルでの自由なサイズ指定も可能です。",
+          "description": "履歴書や各種申請に使う写真に。Snapport Lite が顔写真を選んだサイズにトリミングします。内蔵テンプレートは35種類、mm・インチ・ピクセルでの自由なサイズ指定も可能です。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-snapportlite"
           },

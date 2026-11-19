@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-11-18",
-  "content_digest": "b072524f47e90d0a91bf4c7b3bc03c418a70ee490c972718962013c6f19e7d54",
+  "date_modified": "2026-11-19",
+  "content_digest": "91aee8ee4380268fb5a17ba01db0c6d5ce0e94b4236a64dd93cfc66952e18cbd",
   "locale": "pt-BR",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -26,7 +26,8 @@
         "gravação",
         "aula",
         "desenho",
-        "offline"
+        "offline",
+        "notas à mão"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -637,7 +638,9 @@
         "acelerar",
         "state",
         "rápido",
-        "backup"
+        "backup",
+        "console portátil",
+        "emulador gbc"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -654,9 +657,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/pt-BR/gbago.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "59.9",
+        "price": "6.9",
         "currency": "BRL",
-        "formatted_price": "R$ 59,90",
+        "formatted_price": "R$ 6,90",
         "storefront_url": "https://apps.apple.com/br/app/id6804564400"
       }
     },
@@ -881,10 +884,7 @@
         "símbolos",
         "escrita",
         "pré-escola",
-        "sons",
-        "fonética chinesa",
-        "bopomofo",
-        "mandarim crianças"
+        "sons"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1295,7 +1295,8 @@
         "cozinhar",
         "puzzle",
         "ritmo",
-        "festa"
+        "festa",
+        "jogos dobrável"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1338,7 +1339,10 @@
         "viagem",
         "roteiro",
         "alarme",
-        "MRT"
+        "MRT",
+        "horário mrt",
+        "último trem",
+        "viagem taiwan"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1380,7 +1384,6 @@
         "organização",
         "diárias",
         "estudos",
-        "lista de tarefas",
         "checklist",
         "to do list"
       ],
@@ -1464,8 +1467,8 @@
         "vendas",
         "aluguel",
         "clientes",
-        "receitas e despesas",
-        "despesas do projeto"
+        "despesas do projeto",
+        "receitas e despesas"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

@@ -2,7 +2,7 @@
 title: "GBAGo: Simpanan visual — Emulator game .gba .gbc .gb | iOS App"
 lang: "id"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gbago/decision/l/id/index.html"
-modified: "2026-11-17"
+modified: "2026-11-19"
 app_store_id: "6804564400"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,7 +16,7 @@ Dioptimalkan untuk iPhone Duo. Dibangun dengan SDK terbaru, aplikasi ini memenuh
 - Lainnya
 - Unduhan berbayar
 - Offline
-- App Store · Rp 179ribu
+- App Store · Rp 19ribu
 
 [Dapatkan GBAGo: Simpanan visual di App Store](https://apps.apple.com/id/app/id6804564400?pt=118326163&ct=geo_pick&mt=8)
 

@@ -6,7 +6,7 @@
   "name": "Lumi Studio – udgiverens katalog over søgeintentioner",
   "description": "Et katalog udgivet direkte af udvikleren, som viser, hvem hver app er udviklet til, hvilken opgave brugeren vil løse, og den direkte vej til App Store.",
   "inLanguage": "da",
-  "dateModified": "2026-11-16",
+  "dateModified": "2026-11-19",
   "numberOfItems": 60,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -217,7 +217,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/da.jsonld#offer-battai",
         "url": "https://apps.apple.com/dk/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
         "name": "BattAI: Batteritilstandsscore",
-        "description": "Giv batteriets tilstand en score, og følg udviklingen.",
+        "description": "Find ud af, hvor hurtigt dit batteri ældes, og hvornår det skal skiftes. Se, hvor længe opladningen holder, få beskeden om fuld opladning til tiden, og log",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -247,7 +247,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802423998",
           "inLanguage": "da",
-          "description": "Giv batteriets tilstand en score, og følg udviklingen.",
+          "description": "Find ud af, hvor hurtigt dit batteri ældes, og hvornår det skal skiftes. Se, hvor længe opladningen holder, få beskeden om fuld opladning til tiden, og log",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/da.jsonld#offer-battai"
           },
@@ -1057,7 +1057,7 @@
           ],
           "isAccessibleForFree": false
         },
-        "price": "79",
+        "price": "9",
         "priceCurrency": "DKK",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {
@@ -2922,7 +2922,7 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/da.jsonld#offer-snapportlite",
         "url": "https://apps.apple.com/dk/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Snapport Lite: Pasfoto hjemme",
+        "name": "Snapport Lite: Pasfoto 35x45",
         "description": "Skal du bruge et pasfoto, et billede til dit CV eller til en ansøgning? Snapport Lite beskærer dit portræt til præcis den størrelse, du vælger: 35",
         "seller": {
           "@type": "Organization",
@@ -2938,7 +2938,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6792856304"
           },
-          "name": "Snapport Lite: Pasfoto hjemme",
+          "name": "Snapport Lite: Pasfoto 35x45",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
           "url": "https://apps.apple.com/dk/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",

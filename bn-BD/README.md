@@ -16,11 +16,11 @@ market_availability: {"state": "MARKET_UNAVAILABLE_OR_UNVERIFIED", "reason": "MA
 >
 > প্রশ্নগুলো উদ্দেশ্যপ্রণোদিত ব্যবহারের সম্পাদকীয় বর্ণনা; এগুলো পরিমাপ করা অনুসন্ধান-পরিমাণ, র‌্যাঙ্কিং, স্বাধীন পর্যালোচনা বা ব্যবহারকারীর সমর্থন নয়।
 
-## Lumi Studio প্রকাশক অনুসন্ধান উদ্দেশ্য ক্যাটালগ · MCP v1.1.0 · Agent Skill
+## Lumi Studio প্রকাশক অনুসন্ধান উদ্দেশ্য ক্যাটালগ · MCP v1.3.0 · Agent Skill
 
 প্রতিটি অ্যাপ কার জন্য তৈরি, তারা কোন কাজ সম্পন্ন করতে চায়, এবং সরাসরি App Store পথের প্রথম পক্ষের ক্যাটালগ।
 
-[VS Code](https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.1.0%252Flumi-app-finder-npx.tgz%2522%255D%257D) · [Cursor](https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjEuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D) · [Claude Desktop (MCPB)](https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder.mcpb) · [MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.1.0) · [MCP client config](https://open.cait518.cc/ios-app-guide/data/lumi-app-finder.mcp.json) · [SHA256SUMS](https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/SHA256SUMS) · [Agent Skill](https://github.com/alice51849/lumi-mcp/tree/v1.1.0/skills/lumi-app-finder) · [GitHub](https://github.com/alice51849/lumi-mcp)
+[VS Code](https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.3.0%252Flumi-app-finder-npx.tgz%2522%255D%257D) · [Cursor](https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjMuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D) · [Claude Desktop (MCPB)](https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder.mcpb) · [MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.3.0) · [MCP client config](https://open.cait518.cc/ios-app-guide/data/lumi-app-finder.mcp.json) · [SHA256SUMS](https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/SHA256SUMS) · [Agent Skill](https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder) · [GitHub](https://github.com/alice51849/lumi-mcp)
 
 <details>
 <summary>Agent Skill · GitHub Copilot · Claude Code · Cursor · Codex · Gemini CLI · Vercel skills.sh</summary>
@@ -28,55 +28,55 @@ market_availability: {"state": "MARKET_UNAVAILABLE_OR_UNVERIFIED", "reason": "MA
 **Agent Skill · GitHub Copilot**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user
 ```
 
 **Agent Skill · Claude Code**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent claude-code
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent claude-code
 ```
 
 **Agent Skill · Cursor**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent cursor
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent cursor
 ```
 
 **Agent Skill · Codex**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent codex
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent codex
 ```
 
 **Agent Skill · Gemini CLI**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent gemini-cli
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent gemini-cli
 ```
 
 **Agent Skill · Vercel skills.sh**
 
 ```sh
-npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.1.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
+npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
 ```
 
 **Claude Code**
 
 ```sh
-claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder-npx.tgz
+claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 ```
 
 **Codex**
 
 ```sh
-codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder-npx.tgz
+codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 ```
 
 **Gemini CLI**
 
 ```sh
-gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder-npx.tgz
+gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 ```
 
 </details>
@@ -94,7 +94,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **100 Notes Studio: Pen & Paper** | 100 Notes Studio: Pen & Paper — হাতে লেখা নোট ও PDF পড়া \| iOS App | কাগজে কলমে লেখার মতো করেই হাতে নোট লিখুন: ফাউন্টেন পেন, পেনসিল থেকে তুলি আর জলরং পর্যন্ত 29টি কলম ও ব্রাশ, আর হাতের লেখাও পরে সার্চ করা যায়। | বিনামূল্যে শুরু · এককালীন কেনাকাটায় আনলক | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/notesstudio100.html) | N/A (MARKET_NOT_IN_APPLE_MEDIA_SERVICES) |
 | **AI Brief: ফাইল থেকে AI প্রম্পট** | AI Brief: ফাইল থেকে AI প্রম্পট — ফাইল ও PDF থেকে প্রম্পট তৈরি \| iOS App | স্ক্রিনশট, PDF, ফাইল আর নোট মিলিয়ে তৈরি করুন একটি গোছানো AI প্রম্পট, যেখানে লক্ষ্য, তথ্য ও উৎস আলাদা করে সাজানো। | বিনামূল্যে শুরু · এককালীন কেনাকাটায় আনলক | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/aibriefpack.html) | N/A (MARKET_NOT_IN_APPLE_MEDIA_SERVICES) |
 | **Aim990: ইংরেজি কোচ** | Aim990: ইংরেজি কোচ — ৮ মিনিটে দুর্বলতা নির্ণয় \| iOS App | Aim990 হলো TOEIC-ধাঁচের শোনা ও পড়ার প্রস্তুতির জন্য একটি নির্ণয়ভিত্তিক কোচ। এটি প্রশ্নের গুদাম নয়: আপনি যতবার অ্যাপ খোলেন, ততবার আপনার নিজের উত্তরের | বিনামূল্যে শুরু · এককালীন কেনাকাটায় আনলক | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/aim990.html) | N/A (MARKET_NOT_IN_APPLE_MEDIA_SERVICES) |
-| **BattAI: ব্যাটারির স্বাস্থ্য** | BattAI: ব্যাটারির স্বাস্থ্য — চার্জ ও গরমের অ্যালার্ট \| iOS App | ব্যাটারির স্বাস্থ্যকে স্কোর দিন, ট্রেন্ড দেখুন। | বিনামূল্যে শুরু · এককালীন কেনাকাটায় আনলক | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/battai.html) | N/A (MARKET_NOT_IN_APPLE_MEDIA_SERVICES) |
+| **BattAI: ব্যাটারির স্বাস্থ্য** | BattAI: ব্যাটারির স্বাস্থ্য — চার্জ ও গরমের অ্যালার্ট \| iOS App | আপনার ব্যাটারি কত দ্রুত পুরোনো হচ্ছে আর কখন বদলানো উচিত, তা জানুন। চার্জ কতক্ষণ চলবে দেখুন, ফুল-চার্জের নোটিফিকেশন ঠিক সময়ে পান, আর প্রতিটি চার্জ লগ করুন। | বিনামূল্যে শুরু · এককালীন কেনাকাটায় আনলক | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/battai.html) | N/A (MARKET_NOT_IN_APPLE_MEDIA_SERVICES) |
 | **CalDaily ক্যালকুলেটর ও থিম** | CalDaily ক্যালকুলেটর ও থিম — উইজেট, টুল ও গোছানো হিসাব \| iOS App | সুন্দর একটি ক্যালকুলেটর যা মনে রাখে: ভেতরেই 100টি থিম, আর হোম স্ক্রিনের উইজেট যা অ্যাপ না খুলেই হিসাব করে। | বিনামূল্যে শুরু · এককালীন কেনাকাটায় আনলক | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/caldaily.html) | N/A (MARKET_NOT_IN_APPLE_MEDIA_SERVICES) |
 | **CountDaysNow: Event Counter** | CountDaysNow: Event Counter — আজকের ফোকাস \| iOS App | • আজকের ফোকাস থেকে · আজ · সামনে — সংরক্ষণ করুন | বিনামূল্যে শুরু · এককালীন কেনাকাটায় আনলক | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/countdaysnow.html) | N/A (MARKET_NOT_IN_APPLE_MEDIA_SERVICES) |
 | **CV Desk: ATS রিজিউম নির্মাতা** | CV Desk: ATS রিজিউম নির্মাতা — সিভি ও জীবনবৃত্তান্ত টেমপ্লেট \| iOS App | আপনার আইফোনেই তৈরি করুন একটি ATS-নিরাপদ রিজিউম যা নিয়োগকারীর সিস্টেম পড়তে পারে। কোনো অ্যাকাউন্ট নয়। কোনো আপলোড নয়। কোনো সাবস্ক্রিপশন নয়। | বিনামূল্যে শুরু · এককালীন কেনাকাটায় আনলক | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/cvdesk.html) | N/A (MARKET_NOT_IN_APPLE_MEDIA_SERVICES) |
@@ -134,7 +134,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **ScanTo Pro: PDF স্ক্যান** | ScanTo Pro: PDF স্ক্যান — অফলাইন ডকুমেন্ট স্ক্যানার \| iOS App | চুক্তিপত্র, রসিদ আর পরিচয়পত্র স্ক্যান করে ঝকঝকে PDF বানান — পরে ভেতরের যেকোনো একটি শব্দ লিখলেই সেই নথি খুঁজে পাবেন। | বিনামূল্যে শুরু · এককালীন কেনাকাটায় আনলক | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/scanto.html) | N/A (MARKET_NOT_IN_APPLE_MEDIA_SERVICES) |
 | **Sereno: ঘুমের শব্দ** | Sereno: ঘুমের শব্দ — হোয়াইট নয়েজ, বৃষ্টি ও সমুদ্র \| iOS App | Sereno আপনার iPhone-কে ঘুমের সাউন্ড মেশিনে পরিণত করে: বৃষ্টি, সমুদ্র, আগুন, ফ্যান আর হোয়াইট, পিংক বা ব্রাউন নয়েজ একসঙ্গে মেশান, প্রতিটি লেয়ারের ভলিউম | বিনামূল্যে শুরু · এককালীন কেনাকাটায় আনলক | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/sereno.html) | N/A (MARKET_NOT_IN_APPLE_MEDIA_SERVICES) |
 | **ShotInbox AI: Sort Screenshots** | ShotInbox AI: Sort Screenshots — স্ক্রিনশট গোছানো ও OCR সার্চ \| iOS App | আপনার স্ক্রিনশট নিজে থেকেই গুছিয়ে যায়: কেনাকাটা, রসিদ, টিকিট, ভ্রমণ, মানচিত্র ও স্থান, চ্যাট ও সামাজিক, কাজ এবং আরও অনেক কিছু। | বিনামূল্যে শুরু · এককালীন কেনাকাটায় আনলক | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/shotinbox.html) | N/A (MARKET_NOT_IN_APPLE_MEDIA_SERVICES) |
-| **Snapport Lite: আইডি ছবি তুলুন** | Snapport Lite: আইডি ছবি তুলুন — সঠিক মাপে পোর্ট্রেট ক্রপ \| iOS App | আইডি ছবি, জীবনবৃত্তান্তের ছবি বা কোনো আবেদনের ছবি দরকার? Snapport Lite আপনার পোর্ট্রেট ঠিক আপনার বেছে নেওয়া মাপে কেটে দেয়: ৩৫টি বিল্ট-ইন টেমপ্লেট, অথবা | বিনামূল্যে শুরু · এককালীন কেনাকাটায় আনলক | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/snapportlite.html) | N/A (MARKET_NOT_IN_APPLE_MEDIA_SERVICES) |
+| **Snapport Lite: আইডি ছবির মাপ** | Snapport Lite: আইডি ছবির মাপ — সঠিক মাপে পোর্ট্রেট ক্রপ \| iOS App | আইডি ছবি, জীবনবৃত্তান্তের ছবি বা কোনো আবেদনের ছবি দরকার? Snapport Lite আপনার পোর্ট্রেট ঠিক আপনার বেছে নেওয়া মাপে কেটে দেয়: ৩৫টি বিল্ট-ইন টেমপ্লেট, অথবা | বিনামূল্যে শুরু · এককালীন কেনাকাটায় আনলক | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/snapportlite.html) | N/A (MARKET_NOT_IN_APPLE_MEDIA_SERVICES) |
 | **Snapport: পাসপোর্ট ও আইডি ফটো** | Snapport: পাসপোর্ট ও আইডি ফটো — 35x45 ও প্রিন্ট শিট \| iOS App | ঘরে বসেই পাসপোর্ট, ভিসা ও আইডি ছবি তুলুন—শান্তি ও গোপনীয়তার সাথে। Snapport শুধু ছবিটি প্রস্তুত করে; নথিটি ইস্যু করে সংশ্লিষ্ট কর্তৃপক্ষ বা প্রতিষ্ঠান। | পেইড ডাউনলোড | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/snapport.html) | N/A (MARKET_NOT_IN_APPLE_MEDIA_SERVICES) |
 | **Sono Note** | Sono Note — ভয়েস টু টেক্সট · নোট \| iOS App | স্বাভাবিকভাবে কথা বলুন। গর্বিত হওয়ার মতো লেখা নিয়ে ফিরে আসুন। | বিনামূল্যে শুরু · এককালীন কেনাকাটায় আনলক | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/sononote.html) | N/A (MARKET_NOT_IN_APPLE_MEDIA_SERVICES) |
 | **Stay Clock: ডেস্ক ঘড়ি** | Stay Clock: ডেস্ক ঘড়ি — অবিরাম সময় ও ক্যালেন্ডার \| iOS App | Stay Clock আপনার iPhone বা iPad-কে বানিয়ে দেয় সবসময় জ্বলে থাকা ডেস্ক ঘড়ি, যা ঘরের অন্য প্রান্ত থেকেও স্পষ্ট পড়া যায়। ফ্লিপ ঘড়িসহ 101টি মুখ থেকে বেছে | বিনামূল্যে শুরু · এককালীন কেনাকাটায় আনলক | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/stayclock.html) | N/A (MARKET_NOT_IN_APPLE_MEDIA_SERVICES) |
@@ -162,6 +162,6 @@ JSON, JSONL এবং CSV একই ৩,০০০ রেকর্ড ধার�
 
 [হোম](https://open.cait518.cc/ios-app-guide/bn-BD/index.html) · [খোলা তথ্য](https://open.cait518.cc/ios-app-guide/bn-BD/data/lumi-studio-publisher-search-intent-catalog.html) · [লাইসেন্স](https://creativecommons.org/licenses/by/4.0/)
 
-আপডেট: 2026-11-16
+আপডেট: 2026-11-19
 
 মূল ক্যাটালগ সংকলনের জন্য CC BY 4.0 প্রযোজ্য; অ্যাপ নাম ও App Store চিহ্ন তাদের মালিকদের।

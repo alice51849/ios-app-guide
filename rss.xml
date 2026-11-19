@@ -5,7 +5,7 @@
     <link>https://open.cait518.cc/ios-app-guide/</link>
     <description>Fresh publisher-disclosed iOS app guides, answers, free tools and open datasets.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 17 Nov 2026 05:55:08 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2026 00:00:00 GMT</lastBuildDate>
     <generator>iOS App Guide static syndication generator</generator>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <ttl>360</ttl>
@@ -17,6 +17,27 @@
     <atom:link href="https://rpc.rsscloud.io/websub" rel="hub"/>
     <atom:link href="https://open.cait518.cc/ios-app-guide/feed.xml" rel="alternate" type="application/atom+xml"/>
     <atom:link href="https://open.cait518.cc/ios-app-guide/feed.json" rel="alternate" type="application/feed+json"/>
+    <item>
+      <title>Bopomofo SKOS Vocabulary - 37 Zhuyin Symbols as Linked Open Data</title>
+      <link>https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html</link>
+      <description>Download a CC BY 4.0 SKOS vocabulary for all 37 Zhuyin symbols in JSON-LD, Turtle and N-Triples, with SHACL and DCAT/VoID metadata.</description>
+      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html</guid>
+      <pubDate>Thu, 19 Nov 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>DCAT 3 open-data catalog for Bopomofo resources</title>
+      <link>https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html</link>
+      <description>Download a static W3C DCAT 3 catalog covering sixteen verified Bopomofo datasets and 80 exact distributions.</description>
+      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html</guid>
+      <pubDate>Thu, 19 Nov 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Lumi Studio Publisher Search Intent Catalog</title>
+      <link>https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.html</link>
+      <description>A first-party catalog of who each app is designed for, the task they are trying to complete, and the direct App Store path.</description>
+      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.html</guid>
+      <pubDate>Thu, 19 Nov 2026 00:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>小一注音暑假怎麼準備？14 天低壓暖身指南（2026）</title>
       <link>https://open.cait518.cc/ios-app-guide/guides/zhuyin-grade-1-preparation.html</link>
@@ -197,20 +218,6 @@
       <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/battai-share.jpg" width="1200" height="675"/>
     </item>
     <item>
-      <title>Bopomofo SKOS Vocabulary - 37 Zhuyin Symbols as Linked Open Data</title>
-      <link>https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html</link>
-      <description>Download a CC BY 4.0 SKOS vocabulary for all 37 Zhuyin symbols in JSON-LD, Turtle and N-Triples, with SHACL and DCAT/VoID metadata.</description>
-      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html</guid>
-      <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>DCAT 3 open-data catalog for Bopomofo resources</title>
-      <link>https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html</link>
-      <description>Download a static W3C DCAT 3 catalog covering sixteen verified Bopomofo datasets and 80 exact distributions.</description>
-      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html</guid>
-      <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
       <title>Trip budget per day sheet</title>
       <link>https://open.cait518.cc/ios-app-guide/en-US/tools/trip-budget-sheet.html</link>
       <description>Enter one trip budget, the days, the travelers and the costs you already know, then download a sheet with how much each person can spend per day and how it splits across food, transport, tickets and shopping.</description>
@@ -285,13 +292,6 @@
       <link>https://open.cait518.cc/ios-app-guide/en-US/tools/bandwidth-need-sheet.html</link>
       <description>List what your household does online at the same time and how many devices do it, then download a sheet with the Mbps you need and the headroom left on your plan.</description>
       <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/en-US/tools/bandwidth-need-sheet.html</guid>
-      <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Lumi Studio Publisher Search Intent Catalog</title>
-      <link>https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.html</link>
-      <description>A first-party catalog of who each app is designed for, the task they are trying to complete, and the direct App Store path.</description>
-      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.html</guid>
       <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
@@ -727,7 +727,7 @@
       <description>The risky moment with a QR code is the tap after the scan. A careful scanner shows the full payload first, points out anything unusual about it and leaves…</description>
       <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/qrcodehalo.html</guid>
       <pubDate>Fri, 23 Oct 2026 13:18:32 GMT</pubDate>
-      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/qrcodehalo-share.jpg" fileSize="50029" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/qrcodehalo-share.jpg" fileSize="55597" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
         <media:title type="plain">Scanning QR codes safely on iPhone: what to check preview image</media:title>
       </media:content>
       <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/qrcodehalo-share.jpg" width="1200" height="675"/>

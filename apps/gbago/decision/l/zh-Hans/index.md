@@ -2,7 +2,7 @@
 title: "GBAGo: 可视化存档 — 怀旧游戏模拟器，支持 .gba .gbc .gb | iOS App"
 lang: "zh-Hans"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gbago/decision/l/zh-Hans/index.html"
-modified: "2026-11-17"
+modified: "2026-11-19"
 app_store_id: "6804564400"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,7 +16,7 @@ publisher: "Lumi Studio"
 - 更多
 - 付费下载
 - 离线
-- App Store · ¥58.00
+- App Store · ¥8.00
 
 [在 App Store 获取 GBAGo: 可视化存档](https://apps.apple.com/cn/app/id6804564400?pt=118326163&ct=geo_pick&mt=8)
 

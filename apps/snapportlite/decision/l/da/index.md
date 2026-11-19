@@ -1,17 +1,17 @@
 ---
-title: "Snapport Lite: Pasfoto hjemme — Portrætter i præcis størrelse | iOS App"
+title: "Snapport Lite: Pasfoto 35x45 — Portrætter i præcis størrelse | iOS App"
 lang: "da"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapportlite/decision/l/da/index.html"
-modified: "2026-11-17"
+modified: "2026-11-19"
 app_store_id: "6792856304"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
 publisher: "Lumi Studio"
 ---
 
-# Snapport Lite: Pasfoto hjemme — Portrætter i præcis størrelse | iOS App
+# Snapport Lite: Pasfoto 35x45 — Portrætter i præcis størrelse | iOS App
 
-Optimeret til iPhone Duo. Appen er bygget med den nyeste SDK, fylder hele den indre skærm og tilpasser layoutet automatisk, både foldet sammen og foldet ud. Skal du bruge et pasfoto, et billede til dit CV eller til en ansøgning? Snapport Lite beskærer dit portræt til præcis den størrelse, du vælger: 35 indbyggede skabeloner eller din egen størrelse i mm, tommer eller pixels. Ansigtsgenkendelse på enheden placerer hjælpelinjer for issen, øjnene og hagen, og du kan skifte baggrunden til hvid, lysegrå eller blå. Eksportér som JPEG, PNG eller PDF, eller print flere kopier på ét ark i 4×6 tommer, A4 eller Letter. Snapport Lite redigerer kun dit foto. Pas, visum og id-kort udstedes udelukkende af den myndighed eller organisation, du ansøger hos. Prøv gratis, lås op én gang - Alle størrelsesskabeloner og redigeringsværktøjer er gratis at bruge. - Din første eksport er inkluderet. - Et engangskøb låser op for ubegrænsede eksporter. Intet abonnement, ingen reklamer, ingen sporing, ingen konto. Vælg en fotostørrelse - 35 indbyggede skabeloner til 28 lande og regioner, blandt andet 2×2 tommer, 35×45 mm, 33×48 mm og 50×70 mm, til fotos til pas- og visumansøgninger, cv’er og meget mere. - Indstil din egen størrelse i mm, tommer eller pixels, med valgfri DPI og baggrundsfarve. Placer ansigtet - Ansigtsgenkendelse direkte på enheden med hjælpelinjer til isse, øjenlinje og hage. - Knib, træk og drej for at finjustere beskæringen. Baggrund og finish - Behold den oprindelige baggrund, eller skift til hvid, lysegrå, blå, rød eller en valgfri farve, sammenlign før og efter, og finpuds kanterne. - Nænsomme justeringer af lysstyrke, kontrast, varme og skarphed holder udtrykket naturligt. Eksportér og print - Eksportér som JPEG, PNG eller PDF. - Printark i 4×6 tommer, A4 eller Letter, med flere kopier pr. side og skærelinjer. - Gem i Fotos eller Arkiver, eller del. Privatliv fra starten - Dine fotos behandles på din enhed og uploades aldrig. - Virker offline. Den valgfri kontrol af skabelonopdateringer henter kun en offentlig liste over størrelser og sender ingen personlige data. Godt at vide Kravene til fotos varierer efter land, myndighed og ansøgningstype. Snapport Lite tilbyder almindelige størrelser og hjælpelinjer; appen garanterer ikke godkendelse og er ikke tilknyttet nogen regering. Tjek de officielle krav, før du indsender et foto. Fås på 44 sprog. Optimeret til iPhone Duo.
+Optimeret til iPhone Duo. Appen er bygget med den nyeste SDK, fylder hele den indre skærm og tilpasser layoutet automatisk, både foldet sammen og foldet ud. Skal du bruge et pasfoto, et billede til dit CV eller til en ansøgning? Snapport Lite beskærer dit portræt til præcis den størrelse, du vælger: 35 indbyggede skabeloner eller din egen størrelse i mm, tommer eller pixels. Ansigtsgenkendelse på enheden placerer hjælpelinjer for issen, øjnene og hagen, og du kan skifte baggrunden til hvid, lysegrå eller blå. Eksportér som JPEG, PNG eller PDF, eller print flere kopier på ét ark i 4×6 tommer, A4 eller Letter. Prøv gratis, lås op én gang - Alle størrelsesskabeloner og redigeringsværktøjer er gratis at bruge. - Din første eksport er inkluderet. - Et engangskøb låser op for ubegrænsede eksporter. Intet abonnement, ingen reklamer, ingen sporing, ingen konto. Vælg en fotostørrelse - 35 indbyggede skabeloner til 28 lande og regioner, blandt andet 2×2 tommer, 35×45 mm, 33×48 mm og 50×70 mm, til fotos til pas- og visumansøgninger, cv’er og meget mere. - Indstil din egen størrelse i mm, tommer eller pixels, med valgfri DPI og baggrundsfarve. Placer ansigtet - Ansigtsgenkendelse direkte på enheden med hjælpelinjer til isse, øjenlinje og hage. - Knib, træk og drej for at finjustere beskæringen. Baggrund og finish - Behold den oprindelige baggrund, eller skift til hvid, lysegrå, blå, rød eller en valgfri farve, sammenlign før og efter, og finpuds kanterne. - Nænsomme justeringer af lysstyrke, kontrast, varme og skarphed holder udtrykket naturligt. Eksportér og print - Eksportér som JPEG, PNG eller PDF. - Printark i 4×6 tommer, A4 eller Letter, med flere kopier pr. side og skærelinjer. - Gem i Fotos eller Arkiver, eller del. Privatliv fra starten - Dine fotos behandles på din enhed og uploades aldrig. - Virker offline. Den valgfri kontrol af skabelonopdateringer henter kun en offentlig liste over størrelser og sender ingen personlige data. Godt at vide Kravene til fotos varierer efter land, myndighed og ansøgningstype. Snapport Lite tilbyder almindelige størrelser og hjælpelinjer; det er stedet, du indsender fotoet til, der afgør, om det opfylder kravene, så tjek dem, før du sender det. Fås på 44 sprog. Optimeret til iPhone Duo.
 
 - Foto & værktøj
 - Gratis at komme i gang
@@ -22,7 +22,7 @@ Optimeret til iPhone Duo. Appen er bygget med den nyeste SDK, fylder hele den in
 - Privat / på enheden
 - App Store · Gratis
 
-[Hent Snapport Lite: Pasfoto hjemme i App Store](https://apps.apple.com/dk/app/id6792856304?pt=118326163&ct=geo_pick&mt=8)
+[Hent Snapport Lite: Pasfoto 35x45 i App Store](https://apps.apple.com/dk/app/id6792856304?pt=118326163&ct=geo_pick&mt=8)
 
 [Læs hele vejledningen](https://open.cait518.cc/ios-app-guide/da/snapportlite.html)
 

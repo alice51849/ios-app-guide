@@ -6,7 +6,7 @@
   "name": "Lumi Studio Kiadói Keresési Szándék Katalógus",
   "description": "Egy első kézből származó katalógus arról, hogy az egyes alkalmazások kinek készültek, milyen feladatot próbálnak megoldani, és a közvetlen App Store útvonal.",
   "inLanguage": "hu",
-  "dateModified": "2026-11-16",
+  "dateModified": "2026-11-19",
   "numberOfItems": 60,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -217,7 +217,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-battai",
         "url": "https://apps.apple.com/hu/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
         "name": "BattAI: Akkuállapot",
-        "description": "Pontozd az akkumulátor állapotát, és kövesd a változását.",
+        "description": "Tudd meg, milyen gyorsan öregszik az akkumulátorod, és mikor érdemes cserélni. Nézd meg, meddig bírja a töltés, kapd időben a teljes feltöltés",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -247,7 +247,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802423998",
           "inLanguage": "hu",
-          "description": "Pontozd az akkumulátor állapotát, és kövesd a változását.",
+          "description": "Tudd meg, milyen gyorsan öregszik az akkumulátorod, és mikor érdemes cserélni. Nézd meg, meddig bírja a töltés, kapd időben a teljes feltöltés",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-battai"
           },
@@ -1057,7 +1057,7 @@
           ],
           "isAccessibleForFree": false
         },
-        "price": "3990",
+        "price": "499",
         "priceCurrency": "HUF",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {

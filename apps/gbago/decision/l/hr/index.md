@@ -2,7 +2,7 @@
 title: "GBAGo: Vizualna spremanja — Emulator igara .gba .gbc .gb | iOS App"
 lang: "hr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gbago/decision/l/hr/index.html"
-modified: "2026-11-17"
+modified: "2026-11-19"
 app_store_id: "6804564400"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,7 +16,7 @@ Optimizirano za iPhone Duo. Aplikacija je izrađena s najnovijim SDK-om, ispunja
 - Više
 - Plaćeno preuzimanje
 - Izvan mreže
-- App Store · 9,99 €
+- App Store · 0,99 €
 
 [Preuzmite GBAGo: Vizualna spremanja u App Storeu](https://apps.apple.com/hr/app/id6804564400?pt=118326163&ct=geo_pick&mt=8)
 

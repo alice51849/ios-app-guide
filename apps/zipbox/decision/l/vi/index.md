@@ -2,7 +2,7 @@
 title: "Zipbox: Giải nén RAR, ZIP, 7z — Zip có mật khẩu, mở file RAR | iOS App"
 lang: "vi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/zipbox/decision/l/vi/index.html"
-modified: "2026-11-17"
+modified: "2026-11-19"
 app_store_id: "6806776579"
 verified_live: true
 purchase_model: "paid_upfront"

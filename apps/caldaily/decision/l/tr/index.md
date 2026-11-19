@@ -2,7 +2,7 @@
 title: "CalDaily: hesap makinesi — Widget, araçlar ve geçmiş | iOS App"
 lang: "tr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/caldaily/decision/l/tr/index.html"
-modified: "2026-11-17"
+modified: "2026-11-19"
 app_store_id: "6794178671"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # CalDaily: hesap makinesi — Widget, araçlar ve geçmiş | iOS App
 
-iPhone Duo için optimize edildi. En yeni SDK ile geliştirilen uygulama tüm iç ekranı doldurur ve cihaz katlıyken de açıkken de düzenini otomatik olarak ayarlar. Hatırlayan şık bir hesap makinesi: 100 yerleşik tema ve uygulamayı açmadan hesap yapan bir Ana Ekran widget'ı. Herhangi bir sonuca ad verin ve sonra arayıp bulun (bölüştüğünüz akşam yemeği, karşılaştırdığınız kredi); yeniden hesaplamanıza gerek yok. Günlük hesaplar için sekiz araç: bahşiş ve hesap bölüşme, indirim ve vergi, kredi taksitleri, birim çevirme, tarih farkı ve iş günleri, yolculuk yakıt maliyeti, bellek ve bilimsel işlevler. Geçmiş güne göre gruplanır, araca göre filtrelenir ve tablonuz için CSV olarak dışa aktarılır. Her araç bir kez ayarladığınız varsayılan değerlerle açılır; aynı vergi oranını ya da kişi sayısını her seferinde yeniden yazmazsınız. Uygulamanın içinde yüz tema var; sakin seramikten derin prizmalara kadar her biri kendi tuş biçimi, malzemesi ve ışığıyla geliyor. Biri ücretsiz, tek bir satın alma ise geri kalanının tamamını ve tüm gelişmiş araçların sınırsız kullanımını açar. Abonelik yok. Her şey cihazınızda olur. Hesap yok, bulut eşitlemesi yok, reklam yok, analiz yok. Hesaplarınız sizde kalır. 50 dile tam olarak çevrildi ve düzen her birinde bozulmadan duruyor. Kimler için: hesap bölüşen, indirim kontrol eden, yemek ya da tadilat için birim çeviren, tarih ve son teslim planlayan, kredi karşılaştıran ya da yalnızca ana ekranına yakışan bir hesap makinesi isteyen herkes için. iPhone Duo için optimize edildi.
+Hatırlayan şık bir hesap makinesi: 100 yerleşik tema ve uygulamayı açmadan hesap yapan bir Ana Ekran widget'ı. Herhangi bir sonuca ad verin ve sonra arayıp bulun (bölüştüğünüz akşam yemeği, karşılaştırdığınız kredi); yeniden hesaplamanıza gerek yok. Günlük hesaplar için sekiz araç: bahşiş ve hesap bölüşme, indirim ve vergi, kredi taksitleri, birim çevirme, tarih farkı ve iş günleri, yolculuk yakıt maliyeti, bellek ve bilimsel işlevler. iPhone Duo için optimize edildi. En yeni SDK ile geliştirilen uygulama tüm iç ekranı doldurur ve cihaz katlıyken de açıkken de düzenini otomatik olarak ayarlar. Geçmiş güne göre gruplanır, araca göre filtrelenir ve tablonuz için CSV olarak dışa aktarılır. Her araç bir kez ayarladığınız varsayılan değerlerle açılır; aynı vergi oranını ya da kişi sayısını her seferinde yeniden yazmazsınız. Uygulamanın içinde yüz tema var; sakin seramikten derin prizmalara kadar her biri kendi tuş biçimi, malzemesi ve ışığıyla geliyor. Biri ücretsiz, tek bir satın alma ise geri kalanının tamamını ve tüm gelişmiş araçların sınırsız kullanımını açar. Abonelik yok. Her şey cihazınızda olur. Hesap yok, bulut eşitlemesi yok, reklam yok, analiz yok. Hesaplarınız sizde kalır. 50 dile tam olarak çevrildi ve düzen her birinde bozulmadan duruyor. Kimler için: hesap bölüşen, indirim kontrol eden, yemek ya da tadilat için birim çeviren, tarih ve son teslim planlayan, kredi karşılaştıran ya da yalnızca ana ekranına yakışan bir hesap makinesi isteyen herkes için. iPhone Duo için optimize edildi.
 
 - Daha fazla
 - Başlangıçta ücretsiz · tek seferlik açma

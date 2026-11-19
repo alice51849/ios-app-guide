@@ -2,7 +2,7 @@
 title: "GBAGo: Wizualne zapisy — Emulator gier: .gba .gbc .gb | iOS App"
 lang: "pl"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gbago/decision/l/pl/index.html"
-modified: "2026-11-17"
+modified: "2026-11-19"
 app_store_id: "6804564400"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,7 +16,7 @@ Zoptymalizowana dla urządzenia iPhone Duo. Zbudowana przy użyciu najnowszego S
 - Więcej
 - Płatne do pobrania
 - Offline
-- App Store · 39,99 zł
+- App Store · 4,99 zł
 
 [Pobierz GBAGo: Wizualne zapisy z App Store](https://apps.apple.com/pl/app/id6804564400?pt=118326163&ct=geo_pick&mt=8)
 

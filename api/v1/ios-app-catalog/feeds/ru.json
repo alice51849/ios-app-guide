@@ -12,8 +12,8 @@
   ],
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
-    "dateModified": "2026-11-18",
-    "contentDigest": "b072524f47e90d0a91bf4c7b3bc03c418a70ee490c972718962013c6f19e7d54",
+    "dateModified": "2026-11-19",
+    "contentDigest": "91aee8ee4380268fb5a17ba01db0c6d5ce0e94b4236a64dd93cfc66952e18cbd",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
     "recordCount": 60
@@ -58,10 +58,12 @@
         "OCR",
         "контекст",
         "чат",
-        "документы"
+        "документы",
+        "краткое содержание pdf",
+        "промпт ии"
       ],
       "language": "ru",
-      "date_modified": "2026-11-16T10:48:40Z"
+      "date_modified": "2026-11-19T06:10:15Z"
     },
     {
       "id": "https://apps.apple.com/app/id6784974530",
@@ -81,10 +83,11 @@
         "баллы",
         "тест",
         "слова",
-        "подготовка"
+        "подготовка",
+        "toeic аудирование"
       ],
       "language": "ru",
-      "date_modified": "2026-11-03T16:50:53Z"
+      "date_modified": "2026-11-19T06:10:15Z"
     },
     {
       "id": "https://apps.apple.com/app/id6802423998",
@@ -405,10 +408,11 @@
         "транжира",
         "привычки",
         "сожаление",
-        "минимализм"
+        "минимализм",
+        "импульсивные покупки"
       ],
       "language": "ru",
-      "date_modified": "2026-11-12T09:34:25Z"
+      "date_modified": "2026-11-19T06:10:15Z"
     },
     {
       "id": "https://apps.apple.com/app/id6754218117",
@@ -1389,11 +1393,10 @@
         "gz",
         "iso",
         "папка",
-        "aes",
-        "распаковать 7z"
+        "aes"
       ],
       "language": "ru",
-      "date_modified": "2026-11-16T04:16:27Z"
+      "date_modified": "2026-11-19T06:10:15Z"
     }
   ]
 }

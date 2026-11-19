@@ -6,7 +6,7 @@
   "name": "Lumi Studio Uitgever Zoekintentiecatalogus",
   "description": "Een catalogus van de eerste partij met informatie over voor wie elke app is ontworpen, welke taak ze proberen te voltooien en het directe App Store-pad.",
   "inLanguage": "nl-NL",
-  "dateModified": "2026-11-16",
+  "dateModified": "2026-11-19",
   "numberOfItems": 60,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -217,7 +217,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/nl-NL.jsonld#offer-battai",
         "url": "https://apps.apple.com/nl/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
         "name": "BattAI: Batterijconditiescore",
-        "description": "Geef je batterijconditie een score en volg de trend.",
+        "description": "Weet hoe snel je batterij veroudert en wanneer je hem moet vervangen. Zie hoe lang je lading meegaat, krijg op tijd de melding bij vol en leg elke",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -247,7 +247,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802423998",
           "inLanguage": "nl-NL",
-          "description": "Geef je batterijconditie een score en volg de trend.",
+          "description": "Weet hoe snel je batterij veroudert en wanneer je hem moet vervangen. Zie hoe lang je lading meegaat, krijg op tijd de melding bij vol en leg elke",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/nl-NL.jsonld#offer-battai"
           },
@@ -1057,7 +1057,7 @@
           ],
           "isAccessibleForFree": false
         },
-        "price": "9.99",
+        "price": "0.99",
         "priceCurrency": "EUR",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {
@@ -2988,7 +2988,7 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/nl-NL.jsonld#offer-snapportlite",
         "url": "https://apps.apple.com/nl/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Snapport Lite: Pasfoto's maken",
+        "name": "Snapport Lite: Pasfoto 35x45",
         "description": "Een pasfoto nodig, een foto voor je cv of voor een aanvraag? Snapport Lite snijdt je portret bij tot precies het formaat dat je kiest: 35 ingebouwde",
         "seller": {
           "@type": "Organization",
@@ -3004,7 +3004,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6792856304"
           },
-          "name": "Snapport Lite: Pasfoto's maken",
+          "name": "Snapport Lite: Pasfoto 35x45",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
           "url": "https://apps.apple.com/nl/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",

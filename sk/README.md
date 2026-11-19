@@ -14,11 +14,11 @@ Zámery vyhľadávania vytvorené vydavateľom pre 60 overených aktívnych iOS 
 >
 > Dopyty sú redakčné popisy zamýšľaných prípadov použitia, nie údaje o meranom objeme vyhľadávania, rebríčky, nezávislé recenzie alebo odporúčania používateľov.
 
-## Katalóg zámerov vyhľadávania vydavateľa Lumi Studio · MCP v1.1.0 · Agent Skill
+## Katalóg zámerov vyhľadávania vydavateľa Lumi Studio · MCP v1.3.0 · Agent Skill
 
 Katalóg prvej strany, ktorý uvádza, pre koho je každá aplikácia určená, aký úkon sa snaží používateľ dokončiť a priamu cestu do App Store.
 
-[VS Code](https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.1.0%252Flumi-app-finder-npx.tgz%2522%255D%257D) · [Cursor](https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjEuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D) · [Claude Desktop (MCPB)](https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder.mcpb) · [MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.1.0) · [MCP client config](https://open.cait518.cc/ios-app-guide/data/lumi-app-finder.mcp.json) · [SHA256SUMS](https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/SHA256SUMS) · [Agent Skill](https://github.com/alice51849/lumi-mcp/tree/v1.1.0/skills/lumi-app-finder) · [GitHub](https://github.com/alice51849/lumi-mcp)
+[VS Code](https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.3.0%252Flumi-app-finder-npx.tgz%2522%255D%257D) · [Cursor](https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjMuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D) · [Claude Desktop (MCPB)](https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder.mcpb) · [MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.3.0) · [MCP client config](https://open.cait518.cc/ios-app-guide/data/lumi-app-finder.mcp.json) · [SHA256SUMS](https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/SHA256SUMS) · [Agent Skill](https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder) · [GitHub](https://github.com/alice51849/lumi-mcp)
 
 <details>
 <summary>Agent Skill · GitHub Copilot · Claude Code · Cursor · Codex · Gemini CLI · Vercel skills.sh</summary>
@@ -26,55 +26,55 @@ Katalóg prvej strany, ktorý uvádza, pre koho je každá aplikácia určená, 
 **Agent Skill · GitHub Copilot**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user
 ```
 
 **Agent Skill · Claude Code**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent claude-code
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent claude-code
 ```
 
 **Agent Skill · Cursor**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent cursor
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent cursor
 ```
 
 **Agent Skill · Codex**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent codex
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent codex
 ```
 
 **Agent Skill · Gemini CLI**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent gemini-cli
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent gemini-cli
 ```
 
 **Agent Skill · Vercel skills.sh**
 
 ```sh
-npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.1.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
+npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
 ```
 
 **Claude Code**
 
 ```sh
-claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder-npx.tgz
+claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 ```
 
 **Codex**
 
 ```sh
-codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder-npx.tgz
+codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 ```
 
 **Gemini CLI**
 
 ```sh
-gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder-npx.tgz
+gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 ```
 
 </details>
@@ -92,7 +92,7 @@ Abecedne podľa názvu aplikácie — nikdy nie podľa poradia.
 | **100 Notes Studio: Pen & Paper** | 100 Notes Studio: Pen & Paper — Ručné poznámky a PDF \| iOS App | Píšte rukou ako perom na papier: 29 pier a štetcov, od plniaceho pera a ceruzky po kaligrafický štetec a akvarel, a vo svojom rukopise potom môžete | Zadarmo na začiatok · odomknutie jednorazovým nákupom | [Sprievodca](https://open.cait518.cc/ios-app-guide/sk/notesstudio100.html) | [Stiahnuť 100 Notes Studio: Pen & Paper v App Store](https://apps.apple.com/sk/app/id6798813048?pt=118326163&ct=geo_pick&mt=8) |
 | **AI Brief: Súbory na AI prompt** | AI Brief: Súbory na AI prompt — Prompty zo súborov a PDF \| iOS App | Premeňte snímky obrazovky, PDF, súbory a poznámky na jeden prehľadný AI prompt, v ktorom sú cieľ, fakty aj zdroje usporiadané. | Zadarmo na začiatok · odomknutie jednorazovým nákupom | [Sprievodca](https://open.cait518.cc/ios-app-guide/sk/aibriefpack.html) | [Stiahnuť AI Brief: Súbory na AI prompt v App Store](https://apps.apple.com/sk/app/id6791658210?pt=118326163&ct=geo_pick&mt=8) |
 | **Aim990** | najlepšia aplikácia na prípravu TOEIC offline študijný plán pre iPhone | Časť 5 vyzerá krátka, ale otázky s neúplnými vetami môžu zabrať veľa času, ak gramatika a slovná zásoba nie sú automatické. | Zadarmo na začiatok · odomknutie jednorazovým nákupom | [Sprievodca](https://open.cait518.cc/ios-app-guide/sk/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [Získajte Aim990 v App Store →](https://apps.apple.com/sk/app/id6784974530?pt=118326163&ct=geo_pick&mt=8) |
-| **BattAI: Skóre kondície batérie** | BattAI: Skóre kondície batérie — Strážca nabitia a prehriatia \| iOS App | Ohodnoťte kondíciu batérie skóre a sledujte trend. | Zadarmo na začiatok · odomknutie jednorazovým nákupom | [Sprievodca](https://open.cait518.cc/ios-app-guide/sk/battai.html) | [Stiahnuť BattAI: Skóre kondície batérie v App Store](https://apps.apple.com/sk/app/id6802423998?pt=118326163&ct=geo_pick&mt=8) |
+| **BattAI: Skóre kondície batérie** | BattAI: Skóre kondície batérie — Strážca nabitia a prehriatia \| iOS App | Zistite, ako rýchlo batéria starne a kedy ju vymeniť. Pozrite, ako dlho ešte vydrží nabitie, dostaňte upozornenie na úplné nabitie načas a zapisujte | Zadarmo na začiatok · odomknutie jednorazovým nákupom | [Sprievodca](https://open.cait518.cc/ios-app-guide/sk/battai.html) | [Stiahnuť BattAI: Skóre kondície batérie v App Store](https://apps.apple.com/sk/app/id6802423998?pt=118326163&ct=geo_pick&mt=8) |
 | **CalDaily: kalkulačka a témy** | CalDaily: kalkulačka a témy — Widget, nástroje, história \| iOS App | Pekná kalkulačka, ktorá si pamätá: 100 vstavaných motívov a widget na ploche, ktorý počíta bez otvorenia aplikácie. | Zadarmo na začiatok · odomknutie jednorazovým nákupom | [Sprievodca](https://open.cait518.cc/ios-app-guide/sk/caldaily.html) | [Stiahnuť CalDaily: kalkulačka a témy v App Store](https://apps.apple.com/sk/app/id6794178671?pt=118326163&ct=geo_pick&mt=8) |
 | **CountDaysNow: Event Counter** | CountDaysNow: Event Counter — Fokus dňa \| iOS App | • Fokus dňa Odvtedy · Dnes · Vpred — Uložiť | Zadarmo na začiatok · odomknutie jednorazovým nákupom | [Sprievodca](https://open.cait518.cc/ios-app-guide/sk/countdaysnow.html) | [Stiahnuť CountDaysNow: Event Counter v App Store](https://apps.apple.com/sk/app/id6807079789?pt=118326163&ct=geo_pick&mt=8) |
 | **CV Desk** | najlepšia aplikácia na tvorbu životopisu pre zmenu kariéry 2026 | Keď meníte odbor, problém so životopisom je iný: vaše skúsenosti sú reálne, ale na papieri 'nesúvisiace' a ATS filtre vás odmietnu skôr, než človek prečíta. Presne túto medzeru má CV Desk zaplniť. | Zadarmo na začiatok · odomknutie jednorazovým nákupom | [Sprievodca](https://open.cait518.cc/ios-app-guide/sk/answers/best-resume-builder-app-for-career-changers-2026.html) | [Získajte CV Desk v App Store →](https://apps.apple.com/sk/app/id6781337213?pt=118326163&ct=geo_pick&mt=8) |
@@ -160,6 +160,6 @@ Formáty JSON, JSONL a CSV obsahujú rovnakých 3 000 záznamov.
 
 [Domov](https://open.cait518.cc/ios-app-guide/sk/index.html) · [Otvárame dáta](https://open.cait518.cc/ios-app-guide/sk/data/lumi-studio-publisher-search-intent-catalog.html) · [Licencia](https://creativecommons.org/licenses/by/4.0/)
 
-Aktualizované: 2026-11-16
+Aktualizované: 2026-11-19
 
 Na pôvodné zostavenie katalógu sa vzťahuje licencia CC BY 4.0; názvy aplikácií a značky App Store patria ich vlastníkom.

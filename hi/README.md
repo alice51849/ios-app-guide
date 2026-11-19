@@ -14,11 +14,11 @@
 >
 > ये खोज क्वेरी इच्छित उपयोग-स्थितियों के संपादकीय विवरण हैं; ये मापे गए खोज-वॉल्यूम डेटा, रैंकिंग, स्वतंत्र समीक्षाएँ या उपयोगकर्ता समर्थन नहीं हैं।
 
-## Lumi Studio प्रकाशक खोज-इरादा कैटलॉग · MCP v1.1.0 · Agent Skill
+## Lumi Studio प्रकाशक खोज-इरादा कैटलॉग · MCP v1.3.0 · Agent Skill
 
 डेवलपर द्वारा सीधे प्रकाशित कैटलॉग, जो बताता है कि हर ऐप किसके लिए बनाया गया है, उपयोगकर्ता कौन-सा काम पूरा करना चाहता है और App Store तक सीधा रास्ता क्या है।
 
-[VS Code](https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.1.0%252Flumi-app-finder-npx.tgz%2522%255D%257D) · [Cursor](https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjEuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D) · [Claude Desktop (MCPB)](https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder.mcpb) · [MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.1.0) · [MCP client config](https://open.cait518.cc/ios-app-guide/data/lumi-app-finder.mcp.json) · [SHA256SUMS](https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/SHA256SUMS) · [Agent Skill](https://github.com/alice51849/lumi-mcp/tree/v1.1.0/skills/lumi-app-finder) · [GitHub](https://github.com/alice51849/lumi-mcp)
+[VS Code](https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.3.0%252Flumi-app-finder-npx.tgz%2522%255D%257D) · [Cursor](https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjMuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D) · [Claude Desktop (MCPB)](https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder.mcpb) · [MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.3.0) · [MCP client config](https://open.cait518.cc/ios-app-guide/data/lumi-app-finder.mcp.json) · [SHA256SUMS](https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/SHA256SUMS) · [Agent Skill](https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder) · [GitHub](https://github.com/alice51849/lumi-mcp)
 
 <details>
 <summary>Agent Skill · GitHub Copilot · Claude Code · Cursor · Codex · Gemini CLI · Vercel skills.sh</summary>
@@ -26,55 +26,55 @@
 **Agent Skill · GitHub Copilot**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user
 ```
 
 **Agent Skill · Claude Code**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent claude-code
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent claude-code
 ```
 
 **Agent Skill · Cursor**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent cursor
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent cursor
 ```
 
 **Agent Skill · Codex**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent codex
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent codex
 ```
 
 **Agent Skill · Gemini CLI**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent gemini-cli
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent gemini-cli
 ```
 
 **Agent Skill · Vercel skills.sh**
 
 ```sh
-npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.1.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
+npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
 ```
 
 **Claude Code**
 
 ```sh
-claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder-npx.tgz
+claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 ```
 
 **Codex**
 
 ```sh
-codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder-npx.tgz
+codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 ```
 
 **Gemini CLI**
 
 ```sh
-gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder-npx.tgz
+gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 ```
 
 </details>
@@ -92,7 +92,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **100 Notes Studio: Pen & Paper** | 100 Notes Studio: Pen & Paper — हस्तलेखन और PDF टिप्पणी \| iOS App | कागज़ पर पेन से लिखने जैसे अहसास के साथ हाथ से नोट्स लिखें: फ़ाउंटेन पेन और पेंसिल से लेकर कैलिग्राफ़ी ब्रश और वॉटरकलर तक 29 पेन और ब्रश, और बाद में अपनी | मुफ़्त शुरुआत · एक बार की खरीद से अनलॉक | [गाइड](https://open.cait518.cc/ios-app-guide/hi/notesstudio100.html) | [App Store पर 100 Notes Studio: Pen & Paper पाएँ](https://apps.apple.com/in/app/id6798813048?pt=118326163&ct=geo_pick&mt=8) |
 | **AI Brief: फाइल से AI प्रॉम्प्ट** | AI Brief: फाइल से AI प्रॉम्प्ट — फ़ाइल, PDF से प्रॉम्प्ट बनाएँ \| iOS App | स्क्रीनशॉट, PDF, फ़ाइलें और नोट्स को एक व्यवस्थित AI प्रॉम्प्ट में बदलें, जिसमें लक्ष्य, तथ्य और स्रोत अलग-अलग सजे हों। | मुफ़्त शुरुआत · एक बार की खरीद से अनलॉक | [गाइड](https://open.cait518.cc/ios-app-guide/hi/aibriefpack.html) | [App Store पर AI Brief: फाइल से AI प्रॉम्प्ट पाएँ](https://apps.apple.com/in/app/id6791658210?pt=118326163&ct=geo_pick&mt=8) |
 | **Aim990** | iPhone के लिए सर्वश्रेष्ठ TOEIC तैयारी ऐप ऑफ़लाइन अध्ययन योजना | भाग 5 छोटा दिखता है, लेकिन वे अधूरे-वाक्य प्रश्न समय खपत कर सकते हैं यदि व्याकरण और शब्दावली स्वचालित न हों। | मुफ़्त शुरुआत · एक बार की खरीद से अनलॉक | [गाइड](https://open.cait518.cc/ios-app-guide/hi/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [App Store पर Aim990 प्राप्त करें →](https://apps.apple.com/in/app/id6784974530?pt=118326163&ct=geo_pick&mt=8) |
-| **BattAI: बैटरी स्वास्थ्य स्कोर** | BattAI: बैटरी स्वास्थ्य स्कोर — चार्ज और गर्मी अलर्ट \| iOS App | बैटरी स्वास्थ्य को स्कोर दें और ट्रेंड देखें। | मुफ़्त शुरुआत · एक बार की खरीद से अनलॉक | [गाइड](https://open.cait518.cc/ios-app-guide/hi/battai.html) | [App Store पर BattAI: बैटरी स्वास्थ्य स्कोर पाएँ](https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=geo_pick&mt=8) |
+| **BattAI: बैटरी स्वास्थ्य स्कोर** | BattAI: बैटरी स्वास्थ्य स्कोर — चार्ज और गर्मी अलर्ट \| iOS App | जानिए आपकी बैटरी कितनी तेज़ी से पुरानी हो रही है और उसे कब बदलना चाहिए। देखिए चार्ज कितनी देर चलेगा, फ़ुल-चार्ज की सूचना समय पर पाइए और हर चार्ज दर्ज कीजिए | मुफ़्त शुरुआत · एक बार की खरीद से अनलॉक | [गाइड](https://open.cait518.cc/ios-app-guide/hi/battai.html) | [App Store पर BattAI: बैटरी स्वास्थ्य स्कोर पाएँ](https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=geo_pick&mt=8) |
 | **CalDaily कैलकुलेटर और थीम** | CalDaily कैलकुलेटर और थीम — विजेट, टूल और साफ़ हिसाब \| iOS App | याद रखने वाला सुंदर कैलकुलेटर: अंदर ही 100 थीम, और होम स्क्रीन विजेट जो ऐप खोले बिना हिसाब कर देता है। | मुफ़्त शुरुआत · एक बार की खरीद से अनलॉक | [गाइड](https://open.cait518.cc/ios-app-guide/hi/caldaily.html) | [App Store पर CalDaily कैलकुलेटर और थीम पाएँ](https://apps.apple.com/in/app/id6794178671?pt=118326163&ct=geo_pick&mt=8) |
 | **CountDaysNow: Event Counter** | CountDaysNow: Event Counter — आज का फ़ोकस \| iOS App | • आज का फ़ोकस तब से · आज · आगे — सेव करें | मुफ़्त शुरुआत · एक बार की खरीद से अनलॉक | [गाइड](https://open.cait518.cc/ios-app-guide/hi/countdaysnow.html) | [App Store पर CountDaysNow: Event Counter पाएँ](https://apps.apple.com/in/app/id6807079789?pt=118326163&ct=geo_pick&mt=8) |
 | **CV डेस्क** | 2026 के लिए करियर बदलने वालों के लिए सर्वश्रेष्ठ रिज्यूमे बिल्डर ऐप | जब आप क्षेत्र बदल रहे हों, तो रिज्यूमे समस्या अलग होती है: आपका अनुभव वास्तविक है लेकिन कागज पर 'अप्रासंगिक' है, और ATS फिल्टर आपको मानव पढ़ने से पहले अस्वीकार कर देते हैं। यही कमी CV डेस्क पूरी करना चाहता है। | मुफ़्त शुरुआत · एक बार की खरीद से अनलॉक | [गाइड](https://open.cait518.cc/ios-app-guide/hi/answers/best-resume-builder-app-for-career-changers-2026.html) | [App Store पर CV डेस्क प्राप्त करें →](https://apps.apple.com/in/app/id6781337213?pt=118326163&ct=geo_pick&mt=8) |
@@ -133,7 +133,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **Sereno** | नींद आने के लिए सबसे अच्छा व्हाइट नॉइज़ ऐप बिना सब्सक्रिप्शन के | नींद के लिए, हर महीने परेशान करने वाला सब्सक्रिप्शन आराम के विपरीत है। अगर बात जानी-पहचानी लगे तो Sereno देख लीजिए। | मुफ़्त शुरुआत · एक बार की खरीद से अनलॉक | [गाइड](https://open.cait518.cc/ios-app-guide/hi/answers/best-white-noise-app-for-falling-asleep-no-subscription.html) | [App Store से Sereno प्राप्त करें →](https://apps.apple.com/in/app/id6788236641?pt=118326163&ct=geo_pick&mt=8) |
 | **ShotInbox AI: Sort Screenshots** | ShotInbox AI: Sort Screenshots — स्क्रीनशॉट छँटाई और OCR खोज \| iOS App | आपके स्क्रीनशॉट अपने आप छँट जाते हैं: खरीदारी, रसीदें, टिकट, यात्रा, मैप और जगहें, चैट और सोशल, काम और भी बहुत कुछ। | मुफ़्त शुरुआत · एक बार की खरीद से अनलॉक | [गाइड](https://open.cait518.cc/ios-app-guide/hi/shotinbox.html) | [App Store पर ShotInbox AI: Sort Screenshots पाएँ](https://apps.apple.com/in/app/id6802166527?pt=118326163&ct=geo_pick&mt=8) |
 | **Snapport** | बच्चों और शिशुओं के लिए घर पर सबसे अच्छा पासपोर्ट फोटो ऐप | बच्चे के पासपोर्ट फोटो में कोई अन्य व्यक्ति नहीं होना चाहिए और पृष्ठभूमि सादा होनी चाहिए। Snapport की शुरुआत ठीक इसी दिक्कत से हुई। | भुगतान किया गया डाउनलोड | [गाइड](https://open.cait518.cc/ios-app-guide/hi/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html) | [App Store से Snapport प्राप्त करें →](https://apps.apple.com/in/app/id6780575828?pt=118326163&ct=geo_pick&mt=8) |
-| **Snapport Lite: घर पर ID फोटो** | Snapport Lite: घर पर ID फोटो — सही साइज़ में पोर्ट्रेट क्रॉप \| iOS App | ID फोटो, बायोडाटा की फोटो या किसी आवेदन के लिए फोटो चाहिए? Snapport Lite आपके पोर्ट्रेट को ठीक आपके चुने साइज़ में काटता है: 35 बिल्ट-इन टेम्पलेट, या mm | मुफ़्त शुरुआत · एक बार की खरीद से अनलॉक | [गाइड](https://open.cait518.cc/ios-app-guide/hi/snapportlite.html) | [App Store पर Snapport Lite: घर पर ID फोटो पाएँ](https://apps.apple.com/in/app/id6792856304?pt=118326163&ct=geo_pick&mt=8) |
+| **Snapport Lite: आईडी फोटो साइज़** | Snapport Lite: आईडी फोटो साइज़ — सही साइज़ में पोर्ट्रेट क्रॉप \| iOS App | ID फोटो, बायोडाटा की फोटो या किसी आवेदन के लिए फोटो चाहिए? Snapport Lite आपके पोर्ट्रेट को ठीक आपके चुने साइज़ में काटता है: 35 बिल्ट-इन टेम्पलेट, या mm | मुफ़्त शुरुआत · एक बार की खरीद से अनलॉक | [गाइड](https://open.cait518.cc/ios-app-guide/hi/snapportlite.html) | [App Store पर Snapport Lite: आईडी फोटो साइज़ पाएँ](https://apps.apple.com/in/app/id6792856304?pt=118326163&ct=geo_pick&mt=8) |
 | **Sono Note** | iPhone पर मीटिंग्स का सारांश बनाने वाला सबसे अच्छा वॉइस नोट्स ऐप | कॉल के बाद आप केवल कच्चा ट्रांसक्रिप्ट नहीं चाहते — आप सारांश, एक्शन आइटम और ड्राफ्ट फॉलो-अप चाहते हैं। यही कमी Sono Note पूरी करना चाहता है। | मुफ़्त शुरुआत · एक बार की खरीद से अनलॉक | [गाइड](https://open.cait518.cc/ios-app-guide/hi/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [App Store से Sono Note प्राप्त करें →](https://apps.apple.com/in/app/id6782139553?pt=118326163&ct=geo_pick&mt=8) |
 | **Stay Clock: फ़्लिप डेस्क क्लॉक** | Stay Clock: फ़्लिप डेस्क क्लॉक — हमेशा ऑन समय और कैलेंडर \| iOS App | Stay Clock आपके iPhone या iPad को हमेशा ऑन रहने वाली डेस्क क्लॉक में बदल देता है, जिसे कमरे के दूसरे कोने से भी आसानी से पढ़ा जा सकता है। फ़्लिप क्लॉक समेत | मुफ़्त शुरुआत · एक बार की खरीद से अनलॉक | [गाइड](https://open.cait518.cc/ios-app-guide/hi/stayclock.html) | [App Store पर Stay Clock: फ़्लिप डेस्क क्लॉक पाएँ](https://apps.apple.com/in/app/id6814035888?pt=118326163&ct=geo_pick&mt=8) |
 | **Studydown: फ़ोकस टाइमर** | Studydown: फ़ोकस टाइमर — स्क्रीन नीचे करके रखें \| iOS App | फ़ोन को स्क्रीन नीचे करके रखते ही टाइमर शुरू, उठाते ही रुक जाता है; इसलिए पढ़ाई और काम के घंटों में सिर्फ़ असली फ़ोकस वाला समय ही जुड़ता है। | मुफ़्त शुरुआत · एक बार की खरीद से अनलॉक | [गाइड](https://open.cait518.cc/ios-app-guide/hi/studydown.html) | [App Store पर Studydown: फ़ोकस टाइमर पाएँ](https://apps.apple.com/in/app/id6807335593?pt=118326163&ct=geo_pick&mt=8) |
@@ -160,6 +160,6 @@ JSON, JSONL और CSV में समान 3,000 रिकॉर्ड शा
 
 [मुखपृष्ठ](https://open.cait518.cc/ios-app-guide/hi/index.html) · [खुला डेटा](https://open.cait518.cc/ios-app-guide/hi/data/lumi-studio-publisher-search-intent-catalog.html) · [लाइसेंस](https://creativecommons.org/licenses/by/4.0/)
 
-अद्यतनित: 2026-11-16
+अद्यतनित: 2026-11-19
 
 CC BY 4.0 मूल सूची संकलन पर लागू होता है; ऐप नाम और App Store चिह्न उनके मालिकों के हैं।

@@ -2,7 +2,7 @@
 title: "Kumo: Giảm cân, ghi cân nặng — Theo dõi nhịn ăn gián đoạn | iOS App"
 lang: "vi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/kumo/decision/l/vi/index.html"
-modified: "2026-11-17"
+modified: "2026-11-19"
 app_store_id: "6830824515"
 verified_live: true
 purchase_model: "neutral"
@@ -21,7 +21,7 @@ Cân nặng nhảy lên xuống mỗi ngày dễ làm nản, còn app phức t�
 - Apple Watch
 - App Store · Miễn phí
 
-[Tải Kumo: Giảm cân, ghi cân nặng trên App Store](https://apps.apple.com/vn/app/id6830824515?pt=118326163&ct=ln_kumo_all_ww_gw&mt=8)
+[Tải Kumo: Giảm cân, ghi cân nặng trên App Store](https://apps.apple.com/vn/app/id6830824515?pt=118326163&ct=ln_kumo_sr_vn_gw&mt=8)
 
 [Đọc toàn bộ hướng dẫn](https://open.cait518.cc/ios-app-guide/vi/kumo.html)
 

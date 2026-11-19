@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-11-18",
-  "content_digest": "b072524f47e90d0a91bf4c7b3bc03c418a70ee490c972718962013c6f19e7d54",
+  "date_modified": "2026-11-19",
+  "content_digest": "91aee8ee4380268fb5a17ba01db0c6d5ce0e94b4236a64dd93cfc66952e18cbd",
   "locale": "zh-Hant",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -97,10 +97,7 @@
         "懶人包",
         "複製貼上",
         "工作效率",
-        "掃描",
-        "提示詞管理",
-        "ai 提示詞",
-        "pdf 總結"
+        "掃描"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -218,7 +215,7 @@
         "掉電",
         "電池檢測",
         "電池",
-        "電池健康度"
+        "電池容量"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -382,7 +379,9 @@
         "工作經歷",
         "畢業生",
         "打工",
-        "實習"
+        "實習",
+        "履歷範本",
+        "履歷製作"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -736,7 +735,8 @@
         "照片",
         "自製",
         "客製化",
-        "配色"
+        "配色",
+        "折疊 桌布"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -845,8 +845,7 @@
         "懶人記帳",
         "背包客",
         "旅費",
-        "出國記帳",
-        "出國預算"
+        "出國記帳"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -918,9 +917,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/gbago.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "290",
+        "price": "30",
         "currency": "TWD",
-        "formatted_price": "$290.00",
+        "formatted_price": "$30.00",
         "storefront_url": "https://apps.apple.com/tw/app/id6804564400"
       }
     },
@@ -1074,7 +1073,9 @@
         "日誌",
         "手帳",
         "助手",
-        "健康"
+        "健康",
+        "減重 日誌",
+        "腰圍 體脂"
       ],
       "purchase_model": "neutral",
       "one_time_option": false,
@@ -1131,7 +1132,8 @@
         "招牌",
         "燈光",
         "接送",
-        "手幅"
+        "手幅",
+        "跑馬燈"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1244,7 +1246,7 @@
         "寶寶",
         "注音符號遊戲",
         "學注音符號",
-        "注音"
+        "注音 學習"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1721,7 +1723,8 @@
         "即時",
         "逐時",
         "一週",
-        "天氣"
+        "穿搭 天氣",
+        "天氣 穿搭"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1837,7 +1840,8 @@
         "經營",
         "街機",
         "節奏",
-        "反應"
+        "反應",
+        "折疊手機 遊戲"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -2909,7 +2913,9 @@
         "家人",
         "週末",
         "蜜月",
-        "自由行"
+        "自由行",
+        "出國 倒數",
+        "旅遊 手帳"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -3191,8 +3197,8 @@
         "連不上",
         "延遲",
         "ping",
-        "網路 檢查",
-        "wifi 診斷"
+        "wifi 診斷",
+        "網路 檢查"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,

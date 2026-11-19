@@ -6,7 +6,7 @@
   "name": "Danh mục ý định tìm kiếm của nhà phát hành Lumi Studio",
   "description": "Danh mục do chính nhà phát triển công bố, cho biết từng ứng dụng dành cho ai, nhiệm vụ họ muốn hoàn thành và lối truy cập trực tiếp đến App Store.",
   "inLanguage": "vi",
-  "dateModified": "2026-11-16",
+  "dateModified": "2026-11-19",
   "numberOfItems": 60,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -217,7 +217,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-battai",
         "url": "https://apps.apple.com/vn/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
         "name": "BattAI: Điểm tình trạng pin",
-        "description": "Chấm điểm sức khỏe pin và xem xu hướng.",
+        "description": "Biết pin lão hóa nhanh đến đâu, khi nào nên thay và còn dùng được bao lâu. Nhận thông báo đầy pin đúng lúc, ghi lại mọi lần sạc.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -247,7 +247,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802423998",
           "inLanguage": "vi",
-          "description": "Chấm điểm sức khỏe pin và xem xu hướng.",
+          "description": "Biết pin lão hóa nhanh đến đâu, khi nào nên thay và còn dùng được bao lâu. Nhận thông báo đầy pin đúng lúc, ghi lại mọi lần sạc.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-battai"
           },
@@ -1057,7 +1057,7 @@
           ],
           "isAccessibleForFree": false
         },
-        "price": "299000",
+        "price": "29000",
         "priceCurrency": "VND",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {
@@ -2922,7 +2922,7 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-snapportlite",
         "url": "https://apps.apple.com/vn/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Snapport Lite: Ảnh thẻ tại nhà",
+        "name": "Snapport Lite: Ảnh thẻ 4x6",
         "description": "Cần ảnh thẻ, ảnh dán hồ sơ xin việc hay để nộp đơn? Snapport Lite cắt ảnh chân dung của bạn đúng kích thước bạn chọn: 35 mẫu có sẵn, hoặc kích thước tự đặt",
         "seller": {
           "@type": "Organization",
@@ -2938,7 +2938,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6792856304"
           },
-          "name": "Snapport Lite: Ảnh thẻ tại nhà",
+          "name": "Snapport Lite: Ảnh thẻ 4x6",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
           "url": "https://apps.apple.com/vn/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",

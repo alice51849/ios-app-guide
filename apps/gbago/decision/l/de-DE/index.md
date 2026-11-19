@@ -2,7 +2,7 @@
 title: "GBAGo: Visuelle Spielstände — Emulator für .gba .gbc .gb | iOS App"
 lang: "de-DE"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gbago/decision/l/de-DE/index.html"
-modified: "2026-11-17"
+modified: "2026-11-19"
 app_store_id: "6804564400"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,7 +16,7 @@ Optimiert für das iPhone Duo. Die mit dem neuesten SDK entwickelte App füllt d
 - Mehr
 - Kostenpflichtiger Download
 - Offline
-- App Store · 9,99 €
+- App Store · 0,99 €
 
 [GBAGo: Visuelle Spielstände im App Store laden](https://apps.apple.com/de/app/id6804564400?pt=118326163&ct=geo_pick&mt=8)
 

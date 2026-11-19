@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-11-18",
-  "content_digest": "b072524f47e90d0a91bf4c7b3bc03c418a70ee490c972718962013c6f19e7d54",
+  "date_modified": "2026-11-19",
+  "content_digest": "91aee8ee4380268fb5a17ba01db0c6d5ce0e94b4236a64dd93cfc66952e18cbd",
   "locale": "ko",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -146,8 +146,7 @@
         "분석",
         "독학",
         "공부",
-        "복습",
-        "토익 990"
+        "복습"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -206,7 +205,7 @@
         "검사",
         "경고",
         "확인",
-        "배터리"
+        "배터리 용량"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -842,7 +841,8 @@
         "퀵세이브",
         "추억의게임",
         "터보",
-        "레트로게임"
+        "레트로게임",
+        "gbc 에뮬레이터"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -859,9 +859,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/ko/gbago.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "15000",
+        "price": "1100",
         "currency": "KRW",
-        "formatted_price": "￦15,000",
+        "formatted_price": "￦1,100",
         "storefront_url": "https://apps.apple.com/kr/app/id6804564400"
       }
     },
@@ -1006,7 +1006,8 @@
         "추적기",
         "어플",
         "기록장",
-        "부위"
+        "부위",
+        "허리둘레 체지방"
       ],
       "purchase_model": "neutral",
       "one_time_option": false,
@@ -1873,8 +1874,8 @@
         "화분",
         "빨래",
         "기한",
-        "마지막으로 한 날",
-        "마지막 기록"
+        "마지막 기록",
+        "마지막으로 한 날"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2716,7 +2717,9 @@
         "우정",
         "경비",
         "가계부",
-        "더치페이"
+        "더치페이",
+        "여행 디데이",
+        "친구 여행계획"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2932,10 +2935,7 @@
         "잔량",
         "알람",
         "통계",
-        "5시간",
-        "ai 사용량 추적",
-        "claude 사용량 제한",
-        "codex 사용량 제한"
+        "5시간"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

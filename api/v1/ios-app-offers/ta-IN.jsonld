@@ -6,7 +6,7 @@
   "name": "Lumi Studio வெளியீட்டாளர் தேடல் நோக்கக் குறியீட்டு அட்டவணை",
   "description": "ஒவ்வொரு செயலியும் யாருக்காக வடிவமைக்கப்பட்டுள்ளதோ, அவர்கள் நிறைவேற்ற முயற்சிக்கும் பணியோ, நேரடி App Store பாதையோ ஆகியவற்றின் முதல்-பார்ட்டி அட்டவணை.",
   "inLanguage": "ta-IN",
-  "dateModified": "2026-11-16",
+  "dateModified": "2026-11-19",
   "numberOfItems": 60,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -217,7 +217,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-battai",
         "url": "https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
         "name": "BattAI: பேட்டரி நலம்",
-        "description": "பேட்டரி நலத்தை மதிப்பெண்ணாகப் பார்த்து, போக்கைக் கவனியுங்கள்.",
+        "description": "பேட்டரி எவ்வளவு வேகமாகத் தேய்கிறது, எப்போது மாற்றுவது என அறியுங்கள். சார்ஜ் எவ்வளவு தாங்கும் எனப் பாருங்கள், முழு சார்ஜ் அறிவிப்பைச் சரியான நேரத்தில்",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -247,7 +247,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802423998",
           "inLanguage": "ta-IN",
-          "description": "பேட்டரி நலத்தை மதிப்பெண்ணாகப் பார்த்து, போக்கைக் கவனியுங்கள்.",
+          "description": "பேட்டரி எவ்வளவு வேகமாகத் தேய்கிறது, எப்போது மாற்றுவது என அறியுங்கள். சார்ஜ் எவ்வளவு தாங்கும் எனப் பாருங்கள், முழு சார்ஜ் அறிவிப்பைச் சரியான நேரத்தில்",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-battai"
           },
@@ -1057,7 +1057,7 @@
           ],
           "isAccessibleForFree": false
         },
-        "price": "999",
+        "price": "99",
         "priceCurrency": "INR",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {

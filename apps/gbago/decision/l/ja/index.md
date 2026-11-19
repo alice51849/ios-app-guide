@@ -2,7 +2,7 @@
 title: "GBAGo: 見えるセーブ — レトロゲーム エミュレータ .gba .gbc .gb対応 | iOS App"
 lang: "ja"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gbago/decision/l/ja/index.html"
-modified: "2026-11-17"
+modified: "2026-11-19"
 app_store_id: "6804564400"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,7 +16,7 @@ iPhone Duoに最適化。最新の開発キットでビルドしており、内�
 - その他
 - 有料ダウンロード
 - オフライン
-- App Store · ¥1,500
+- App Store · ¥150
 
 [App Store で GBAGo: 見えるセーブ を入手](https://apps.apple.com/jp/app/id6804564400?pt=118326163&ct=geo_pick&mt=8)
 

@@ -2,7 +2,7 @@
 title: "GBAGo: दृश्य सेव्ह — गेम एम्युलेटर: .gba .gbc .gb | iOS App"
 lang: "mr-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gbago/decision/l/mr-IN/index.html"
-modified: "2026-11-17"
+modified: "2026-11-19"
 app_store_id: "6804564400"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,7 +16,7 @@ iPhone Duo डिव्हाइससाठी ऑप्टिमाइझ क�
 - अधिक
 - पैसे देऊन डाउनलोड करा
 - ऑफलाइन
-- App Store · ₹ 999
+- App Store · ₹ 99
 
 [App Store वरून GBAGo: दृश्य सेव्ह मिळवा](https://apps.apple.com/in/app/id6804564400?pt=118326163&ct=geo_pick&mt=8)
 

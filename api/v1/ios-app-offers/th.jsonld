@@ -6,7 +6,7 @@
   "name": "แคตตาล็อกเจตนาการค้นหาจากผู้พัฒนา Lumi Studio",
   "description": "แคตตาล็อกที่ผู้พัฒนาเผยแพร่โดยตรง ระบุว่าแต่ละแอปเหมาะกับใคร ต้องการทำงานใดให้เสร็จ และเข้าถึง App Store โดยตรงได้อย่างไร",
   "inLanguage": "th",
-  "dateModified": "2026-11-16",
+  "dateModified": "2026-11-19",
   "numberOfItems": 60,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -217,7 +217,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/th.jsonld#offer-battai",
         "url": "https://apps.apple.com/th/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
         "name": "BattAI: คะแนนสุขภาพแบตเตอรี่",
-        "description": "ให้คะแนนสุขภาพแบตเตอรี่ และดูแนวโน้มได้ต่อเนื่อง",
+        "description": "ดูว่าแบตเตอรี่เสื่อมเร็วแค่ไหนและควรเปลี่ยนเมื่อไร ดูว่าประจุที่เหลือใช้ได้อีกนานเท่าไร รับการแจ้งเตือนชาร์จเต็มตรงเวลา และบันทึกทุกครั้งที่ชาร์จ",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -247,7 +247,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802423998",
           "inLanguage": "th",
-          "description": "ให้คะแนนสุขภาพแบตเตอรี่ และดูแนวโน้มได้ต่อเนื่อง",
+          "description": "ดูว่าแบตเตอรี่เสื่อมเร็วแค่ไหนและควรเปลี่ยนเมื่อไร ดูว่าประจุที่เหลือใช้ได้อีกนานเท่าไร รับการแจ้งเตือนชาร์จเต็มตรงเวลา และบันทึกทุกครั้งที่ชาร์จ",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/th.jsonld#offer-battai"
           },
@@ -1057,7 +1057,7 @@
           ],
           "isAccessibleForFree": false
         },
-        "price": "299",
+        "price": "29",
         "priceCurrency": "THB",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {
@@ -2856,7 +2856,7 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/th.jsonld#offer-snapportlite",
         "url": "https://apps.apple.com/th/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Snapport Lite: ถ่ายรูปติดบัตร",
+        "name": "Snapport Lite: รูปติดบัตร",
         "description": "ต้องการรูปติดบัตร รูปสำหรับเรซูเม่ หรือรูปสำหรับยื่นเอกสารใช่ไหม Snapport Lite ครอปรูปพอร์ตเทรตของคุณให้ได้ขนาดที่เลือกพอดี มีเทมเพลตในตัว 35 แบบ",
         "seller": {
           "@type": "Organization",
@@ -2872,7 +2872,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6792856304"
           },
-          "name": "Snapport Lite: ถ่ายรูปติดบัตร",
+          "name": "Snapport Lite: รูปติดบัตร",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
           "url": "https://apps.apple.com/th/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",

@@ -6,7 +6,7 @@
   "name": "Lumi Studio ಪ್ರಕಾಶಕರ ಹುಡುಕಾಟ ಉದ್ದೇಶ ಕ್ಯಾಟಲಾಗ್",
   "description": "ಪ್ರತಿ ಆ್ಯಪ್ ಯಾರಿಗಾಗಿ ವಿನ್ಯಾಸಗೊಳಿಸಲಾಗಿದೆ, ಅವರು ಪೂರ್ಣಗೊಳಿಸಲು ಯತ್ನಿಸುತ್ತಿರುವ ಕಾರ್ಯ ಮತ್ತು ನೇರ App Store ಮಾರ್ಗದ ಮೊದಲ-ಪಕ್ಷ ಕ್ಯಾಟಲಾಗ್.",
   "inLanguage": "kn-IN",
-  "dateModified": "2026-11-16",
+  "dateModified": "2026-11-19",
   "numberOfItems": 60,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -217,7 +217,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/kn-IN.jsonld#offer-battai",
         "url": "https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
         "name": "BattAI: ಬ್ಯಾಟರಿ ಆರೋಗ್ಯ ಅಂಕ",
-        "description": "ಬ್ಯಾಟರಿ ಆರೋಗ್ಯಕ್ಕೆ ಅಂಕ ನೀಡಿ, ಟ್ರೆಂಡ್ ನೋಡಿ.",
+        "description": "ಬ್ಯಾಟರಿ ಎಷ್ಟು ವೇಗವಾಗಿ ಹಳೆಯದಾಗುತ್ತಿದೆ, ಯಾವಾಗ ಬದಲಾಯಿಸಬೇಕು ಎಂದು ತಿಳಿಯಿರಿ. ಚಾರ್ಜ್ ಎಷ್ಟು ಹೊತ್ತು ಬರುತ್ತದೆ ನೋಡಿ, ಫುಲ್-ಚಾರ್ಜ್ ಅಲರ್ಟ್ ಸಮಯಕ್ಕೆ ಪಡೆಯಿರಿ, ಪ್ರತಿ",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -247,7 +247,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802423998",
           "inLanguage": "kn-IN",
-          "description": "ಬ್ಯಾಟರಿ ಆರೋಗ್ಯಕ್ಕೆ ಅಂಕ ನೀಡಿ, ಟ್ರೆಂಡ್ ನೋಡಿ.",
+          "description": "ಬ್ಯಾಟರಿ ಎಷ್ಟು ವೇಗವಾಗಿ ಹಳೆಯದಾಗುತ್ತಿದೆ, ಯಾವಾಗ ಬದಲಾಯಿಸಬೇಕು ಎಂದು ತಿಳಿಯಿರಿ. ಚಾರ್ಜ್ ಎಷ್ಟು ಹೊತ್ತು ಬರುತ್ತದೆ ನೋಡಿ, ಫುಲ್-ಚಾರ್ಜ್ ಅಲರ್ಟ್ ಸಮಯಕ್ಕೆ ಪಡೆಯಿರಿ, ಪ್ರತಿ",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/kn-IN.jsonld#offer-battai"
           },
@@ -1057,7 +1057,7 @@
           ],
           "isAccessibleForFree": false
         },
-        "price": "999",
+        "price": "99",
         "priceCurrency": "INR",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {

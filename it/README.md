@@ -14,11 +14,11 @@ Intenti di ricerca redatti dall'editore per 60 app iOS verificate e disponibili 
 >
 > Le richieste di ricerca sono descrizioni editoriali degli usi previsti, non dati misurati sul volume di ricerca, classifiche, recensioni indipendenti o approvazioni degli utenti.
 
-## Catalogo degli intenti di ricerca dell'editore Lumi Studio · MCP v1.1.0 · Agent Skill
+## Catalogo degli intenti di ricerca dell'editore Lumi Studio · MCP v1.3.0 · Agent Skill
 
 Un catalogo pubblicato direttamente dallo sviluppatore che indica a chi è destinata ogni app, l'attività da completare e l'accesso diretto all'App Store.
 
-[VS Code](https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.1.0%252Flumi-app-finder-npx.tgz%2522%255D%257D) · [Cursor](https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjEuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D) · [Claude Desktop (MCPB)](https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder.mcpb) · [MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.1.0) · [MCP client config](https://open.cait518.cc/ios-app-guide/data/lumi-app-finder.mcp.json) · [SHA256SUMS](https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/SHA256SUMS) · [Agent Skill](https://github.com/alice51849/lumi-mcp/tree/v1.1.0/skills/lumi-app-finder) · [GitHub](https://github.com/alice51849/lumi-mcp)
+[VS Code](https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.3.0%252Flumi-app-finder-npx.tgz%2522%255D%257D) · [Cursor](https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjMuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D) · [Claude Desktop (MCPB)](https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder.mcpb) · [MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.3.0) · [MCP client config](https://open.cait518.cc/ios-app-guide/data/lumi-app-finder.mcp.json) · [SHA256SUMS](https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/SHA256SUMS) · [Agent Skill](https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder) · [GitHub](https://github.com/alice51849/lumi-mcp)
 
 <details>
 <summary>Agent Skill · GitHub Copilot · Claude Code · Cursor · Codex · Gemini CLI · Vercel skills.sh</summary>
@@ -26,55 +26,55 @@ Un catalogo pubblicato direttamente dallo sviluppatore che indica a chi è desti
 **Agent Skill · GitHub Copilot**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user
 ```
 
 **Agent Skill · Claude Code**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent claude-code
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent claude-code
 ```
 
 **Agent Skill · Cursor**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent cursor
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent cursor
 ```
 
 **Agent Skill · Codex**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent codex
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent codex
 ```
 
 **Agent Skill · Gemini CLI**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent gemini-cli
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent gemini-cli
 ```
 
 **Agent Skill · Vercel skills.sh**
 
 ```sh
-npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.1.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
+npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
 ```
 
 **Claude Code**
 
 ```sh
-claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder-npx.tgz
+claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 ```
 
 **Codex**
 
 ```sh
-codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder-npx.tgz
+codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 ```
 
 **Gemini CLI**
 
 ```sh
-gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder-npx.tgz
+gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 ```
 
 </details>
@@ -92,7 +92,7 @@ In ordine alfabetico per nome dell'app — mai una classifica.
 | **100 Notes Studio: Pen & Paper** | 100 Notes Studio: Pen & Paper — Quaderno a mano, PDF e studio \| iOS App | Scrivi a mano come con penna e carta: 29 penne e pennelli, dalla stilografica e la matita al pennello da calligrafia e all'acquerello, e poi puoi cercare | Gratis per iniziare · sblocco con un acquisto unico | [Guida](https://open.cait518.cc/ios-app-guide/it/notesstudio100.html) | [Scarica 100 Notes Studio: Pen & Paper sull'App Store](https://apps.apple.com/it/app/id6798813048?pt=118326163&ct=geo_pick&mt=8) |
 | **AI Brief: Da file a prompt IA** | AI Brief: Da file a prompt IA — Crea prompt da file e PDF \| iOS App | Trasforma screenshot, PDF, file e note in un unico prompt IA ben organizzato, con obiettivo, fatti e fonti in ordine. | Gratis per iniziare · sblocco con un acquisto unico | [Guida](https://open.cait518.cc/ios-app-guide/it/aibriefpack.html) | [Scarica AI Brief: Da file a prompt IA sull'App Store](https://apps.apple.com/it/app/id6791658210?pt=118326163&ct=geo_pick&mt=8) |
 | **Aim990** | migliore app per prepararsi al TOEIC con piano di studio offline per iPhone | La Parte 5 sembra breve, ma le domande con frasi incomplete possono far perdere tempo se grammatica e vocabolario non sono automatici. | Gratis per iniziare · sblocco con un acquisto unico | [Guida](https://open.cait518.cc/ios-app-guide/it/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [Scarica Aim990 dall'App Store →](https://apps.apple.com/it/app/id6784974530?pt=118326163&ct=geo_pick&mt=8) |
-| **BattAI: Salute della batteria** | BattAI: Salute della batteria — Avviso di carica e calore \| iOS App | Dai un punteggio alla salute della batteria e seguine l’andamento. | Gratis per iniziare · sblocco con un acquisto unico | [Guida](https://open.cait518.cc/ios-app-guide/it/battai.html) | [Scarica BattAI: Salute della batteria sull'App Store](https://apps.apple.com/it/app/id6802423998?pt=118326163&ct=geo_pick&mt=8) |
+| **BattAI: Salute della batteria** | BattAI: Salute della batteria — Avviso di carica e calore \| iOS App | Scopri quanto in fretta invecchia la batteria e quando sostituirla. Vedi quanto durerà la carica, ricevi in orario l’avviso di carica completa e registra | Gratis per iniziare · sblocco con un acquisto unico | [Guida](https://open.cait518.cc/ios-app-guide/it/battai.html) | [Scarica BattAI: Salute della batteria sull'App Store](https://apps.apple.com/it/app/id6802423998?pt=118326163&ct=geo_pick&mt=8) |
 | **CalDaily: calcolatrice e temi** | CalDaily: calcolatrice e temi — Widget, strumenti, cronologia \| iOS App | Una calcolatrice bella che ricorda: 100 temi integrati e un widget nella schermata Home che calcola senza aprire l'app. | Gratis per iniziare · sblocco con un acquisto unico | [Guida](https://open.cait518.cc/ios-app-guide/it/caldaily.html) | [Scarica CalDaily: calcolatrice e temi sull'App Store](https://apps.apple.com/it/app/id6794178671?pt=118326163&ct=geo_pick&mt=8) |
 | **CountDaysNow: Event Counter** | CountDaysNow: Event Counter — Focus del giorno \| iOS App | • Focus del giorno Da allora · Oggi · Avanti — Salva | Gratis per iniziare · sblocco con un acquisto unico | [Guida](https://open.cait518.cc/ios-app-guide/it/countdaysnow.html) | [Scarica CountDaysNow: Event Counter sull'App Store](https://apps.apple.com/it/app/id6807079789?pt=118326163&ct=geo_pick&mt=8) |
 | **CV Desk** | migliore app per creare curriculum per chi cambia carriera 2026 | Quando cambi settore, il problema del curriculum è diverso: la tua esperienza è reale ma 'non correlata' sulla carta, e i filtri ATS ti scartano prima che un umano legga. È proprio questo il vuoto che CV Desk cerca di colmare. | Gratis per iniziare · sblocco con un acquisto unico | [Guida](https://open.cait518.cc/ios-app-guide/it/answers/best-resume-builder-app-for-career-changers-2026.html) | [Scarica CV Desk dall'App Store →](https://apps.apple.com/it/app/id6781337213?pt=118326163&ct=geo_pick&mt=8) |
@@ -133,7 +133,7 @@ In ordine alfabetico per nome dell'app — mai una classifica.
 | **Sereno** | migliore app di rumore bianco per addormentarsi senza abbonamento | Per dormire, un abbonamento che ti disturba ogni mese è l’opposto del riposo. Se ti ci ritrovi, dai un'occhiata a Sereno. | Gratis per iniziare · sblocco con un acquisto unico | [Guida](https://open.cait518.cc/ios-app-guide/it/answers/best-white-noise-app-for-falling-asleep-no-subscription.html) | [Scarica Sereno dall’App Store →](https://apps.apple.com/it/app/id6788236641?pt=118326163&ct=geo_pick&mt=8) |
 | **ShotInbox AI: Sort Screenshots** | ShotInbox AI: Sort Screenshots — Cerca testo e pulisci le foto \| iOS App | I tuoi screenshot, ordinati in automatico: Acquisti, Ricevute, Biglietti, Viaggi, Mappe e luoghi, Chat e social, Lavoro e altro. | Gratis per iniziare · sblocco con un acquisto unico | [Guida](https://open.cait518.cc/ios-app-guide/it/shotinbox.html) | [Scarica ShotInbox AI: Sort Screenshots sull'App Store](https://apps.apple.com/it/app/id6802166527?pt=118326163&ct=geo_pick&mt=8) |
 | **Snapport** | migliore app per foto tessera di neonati e bambini piccoli a casa | Per la foto tessera del bambino, nessun altro deve comparire nella foto e lo sfondo deve essere semplice — ma per i lattanti gli occhi non devono essere necessariamente completamente aperti. | Scaricamento a pagamento | [Guida](https://open.cait518.cc/ios-app-guide/it/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html) | [Scarica Snapport dall’App Store →](https://apps.apple.com/it/app/id6780575828?pt=118326163&ct=geo_pick&mt=8) |
-| **Snapport Lite: Fai fototessere** | Snapport Lite: Fai fototessere — Ritratti nel formato esatto \| iOS App | Ti serve una fototessera, una foto per il curriculum o per una domanda? Snapport Lite ritaglia il tuo ritratto nel formato esatto che scegli: 35 modelli | Gratis per iniziare · sblocco con un acquisto unico | [Guida](https://open.cait518.cc/ios-app-guide/it/snapportlite.html) | [Scarica Snapport Lite: Fai fototessere sull'App Store](https://apps.apple.com/it/app/id6792856304?pt=118326163&ct=geo_pick&mt=8) |
+| **Snapport Lite: Fototessere** | Snapport Lite: Fototessere — Ritratti nel formato esatto \| iOS App | Ti serve una fototessera, una foto per il curriculum o per una domanda? Snapport Lite ritaglia il tuo ritratto nel formato esatto che scegli: 35 modelli | Gratis per iniziare · sblocco con un acquisto unico | [Guida](https://open.cait518.cc/ios-app-guide/it/snapportlite.html) | [Scarica Snapport Lite: Fototessere sull'App Store](https://apps.apple.com/it/app/id6792856304?pt=118326163&ct=geo_pick&mt=8) |
 | **Sono Note** | migliore app per note vocali che riassume riunioni su iPhone | Dopo una chiamata non vuoi una trascrizione grezza — vuoi il riassunto, le azioni da fare e una bozza di follow-up. È proprio questo il vuoto che Sono Note cerca di colmare. | Gratis per iniziare · sblocco con un acquisto unico | [Guida](https://open.cait518.cc/ios-app-guide/it/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [Scarica Sono Note dall’App Store →](https://apps.apple.com/it/app/id6782139553?pt=118326163&ct=geo_pick&mt=8) |
 | **Stay Clock: orologio flip** | Stay Clock: orologio flip — Ora e calendario permanenti \| iOS App | Stay Clock trasforma il tuo iPhone o iPad in un orologio da tavolo sempre acceso, leggibile anche dall’altra parte della stanza. Scegli tra 101 | Gratis per iniziare · sblocco con un acquisto unico | [Guida](https://open.cait518.cc/ios-app-guide/it/stayclock.html) | [Scarica Stay Clock: orologio flip sull'App Store](https://apps.apple.com/it/app/id6814035888?pt=118326163&ct=geo_pick&mt=8) |
 | **Studydown: Timer focus** | Studydown: Timer focus — Mettilo a faccia in giù \| iOS App | Metti il telefono a faccia in giù e il timer parte; sollevalo e si mette in pausa, così nelle tue ore di studio e di lavoro conta solo la concentrazione | Gratis per iniziare · sblocco con un acquisto unico | [Guida](https://open.cait518.cc/ios-app-guide/it/studydown.html) | [Scarica Studydown: Timer focus sull'App Store](https://apps.apple.com/it/app/id6807335593?pt=118326163&ct=geo_pick&mt=8) |
@@ -160,6 +160,6 @@ JSON, JSONL e CSV contengono gli stessi 3.000 record.
 
 [Home](https://open.cait518.cc/ios-app-guide/it/index.html) · [Dati aperti](https://open.cait518.cc/ios-app-guide/it/data/lumi-studio-publisher-search-intent-catalog.html) · [Licenza](https://creativecommons.org/licenses/by/4.0/)
 
-Aggiornato: 2026-11-16
+Aggiornato: 2026-11-19
 
 La licenza CC BY 4.0 si applica alla compilazione originale del catalogo; i nomi delle app e i marchi dell'App Store appartengono ai rispettivi proprietari.

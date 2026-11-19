@@ -87,6 +87,9 @@ class ShapeAndLadderTests(unittest.TestCase):
         self.assertEqual([], gw.link_problems("ln_mochi_sr_us_gw", app_key="mochi", storefront="us"))
         self.assertEqual([], gw.link_problems("ln_mochi_all_ww_gw", app_key="mochi", storefront="jp"))
         self.assertTrue(gw.link_problems("ln_mochi_sr_us_gw", app_key="mochi", storefront="jp"))
+        # 沒有商店國家的連結（橫幅 affiliate-data、/app/ 網址）不比國家，只比款（2026-11-19）
+        self.assertEqual([], gw.link_problems("ln_mochi_sr_us_gw", app_key="mochi", storefront=None))
+        self.assertTrue(gw.link_problems("ln_mochi_sr_us_gw", app_key="scanto", storefront=None))
         self.assertTrue(gw.link_problems("ln_mochi_sr_us_gw", app_key="scanto", storefront="us"))
         self.assertTrue(gw.link_problems("ln_mochi_sr_us_gw_1023", app_key="mochi", storefront="us"))
 
@@ -201,6 +204,17 @@ class AuditTests(unittest.TestCase):
             url = f"https://apps.apple.com/us/app/id{MOCHI_ID}?pt={PROVIDER}&ct={bad}&mt=8"
             with self.subTest(ct=bad), self.assertRaises(AttributionError):
                 validate_reference(self.ref(url), provider=PROVIDER)
+
+    def test_banner_without_storefront_must_carry_the_page_storefront_or_ww(self):
+        """橫幅（沒有商店國家）不比連結國家，但稽核改比頁面語系的國家：別國的碼照擋（2026-11-19 反方收窄）。"""
+        def banner(ct: str, locale: str) -> Reference:
+            return Reference(f"https://apps.apple.com/app/id{MOCHI_ID}?pt={PROVIDER}&ct={ct}&mt=8",
+                             "Smart App Banner", locale, MOCHI_ID)
+        self.assertEqual("ln_mochi_sr_jp_gw", validate_reference(banner("ln_mochi_sr_jp_gw", "ja"), provider=PROVIDER))
+        self.assertEqual("ln_mochi_all_ww_gw", validate_reference(banner("ln_mochi_all_ww_gw", "ja"), provider=PROVIDER))
+        for bad, locale in (("ln_mochi_sr_us_gw", "ja"), ("ln_mochi_sr_jp_gw", "en-US"), ("ln_aibriefpack_sr_jp_gw", "ja")):
+            with self.subTest(ct=bad, locale=locale), self.assertRaises(AttributionError):
+                validate_reference(banner(bad, locale), provider=PROVIDER)
 
 
 class WeeklyPlanTests(unittest.TestCase):

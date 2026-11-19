@@ -99,8 +99,14 @@ class GeneratorGateTest(unittest.TestCase):
     def test_aeo_attrs_drop_claims_for_unknown_and_subscription(self):
         import aeo_pages
 
-        key = "mochi"
+        # 基準款用付費下載款：免費起步款（例 mochi）不寫「Pay once」，
+        # 改寫中性的一次性 App 內購買解鎖。
+        key = "wordmate"
         self.assertTrue(aeo_pages.app_attrs(key)["Pay once"])
+        self.assertTrue(aeo_pages.app_attrs(key)["No subscription"])
+        self.assertFalse(aeo_pages.app_attrs("mochi")["Pay once"])
+        self.assertIn(aeo_pages.ONE_TIME_IAP_LABEL, aeo_pages.feature_list("mochi"))
+        self.assertNotIn("Pay once", aeo_pages.feature_list("mochi"))
         with self._unverified(key):
             attrs = aeo_pages.app_attrs(key)
         self.assertFalse(attrs["Pay once"])

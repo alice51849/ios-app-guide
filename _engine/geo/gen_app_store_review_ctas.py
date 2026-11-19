@@ -84,7 +84,7 @@ REVIEW_LABELS = {
     "ca": "Ja utilitzes aquesta app? Valora-la o escriu-ne una ressenya a l’App Store",
     "cs": "Už tuto aplikaci používáte? Ohodnoťte ji nebo napište recenzi v App Storu",
     "da": "Bruger du allerede denne app? Bedøm eller anmeld den i App Store",
-    "de-DE": "Sie nutzen diese App bereits? Bewerten oder rezensieren Sie sie im App Store",
+    "de-DE": "Du nutzt diese App schon? Bewerte sie oder schreib eine Rezension im App Store",
     "el": "Χρησιμοποιείτε ήδη αυτή την εφαρμογή; Βαθμολογήστε τη ή γράψτε μια κριτική στο App Store",
     "en-AU": "Already using this app? Rate or review it on the App Store",
     "en-CA": "Already using this app? Rate or review it on the App Store",

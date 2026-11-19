@@ -5,6 +5,11 @@ name: Countdown card daily
 # Instagram. On Threads it takes the place of that day's picture post, so the
 # account stays at 3 posts a day. Zero token: the card is drawn by
 # .github/scripts/countdown_cards.py.
+#
+# Once a day (2026-11-19): the day's posted receipt, posted-YYYYMMDD.json (Taiwan date) on the
+# countdown-cards branch, lists each channel the card is already out on. A second run the same day
+# (rerun, manual dispatch) skips those channels and says why, and stops before drawing when all are
+# out. The line watchdog still only watches this workflow (line_watchdog.py heal "monitor").
 on:
   schedule:
     - cron: "10 3 * * *"   # Taiwan 11:10
@@ -31,10 +36,35 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.x"
-      - name: Is a countdown due today
+      - name: Is a countdown due today (and not already posted today)
         id: due
+        env:
+          ONLY: ${{ inputs.only }}
         run: |
-          if python3 .github/scripts/countdown_cards.py active; then echo "due=true" >> "$GITHUB_OUTPUT"; else echo "due=false" >> "$GITHUB_OUTPUT"; fi
+          day="$(TZ=Asia/Taipei date +%Y%m%d)"
+          date="$(TZ=Asia/Taipei date +%F)"   # one date for the whole run, even across midnight
+          echo "day=$day" >> "$GITHUB_OUTPUT"
+          echo "date=$date" >> "$GITHUB_OUTPUT"
+          if ! python3 .github/scripts/countdown_cards.py active; then echo "due=false" >> "$GITHUB_OUTPUT"; exit 0; fi
+          # today's posted receipt, kept on the countdown-cards branch by the last step below
+          rm -f "$RUNNER_TEMP/posted.json"
+          if git fetch -q --depth 1 origin countdown-cards; then
+            git show "FETCH_HEAD:posted-$day.json" > "$RUNNER_TEMP/posted.json" 2>/dev/null || rm -f "$RUNNER_TEMP/posted.json"
+          else
+            # exit 2 = the branch is not there (no card yet, so no receipt); anything else = cannot tell
+            rc=0; git ls-remote --exit-code origin countdown-cards >/dev/null || rc=$?
+            if [ "$rc" != 2 ]; then
+              echo "::error::countdown: countdown-cards exists or cannot be checked (ls-remote exit $rc) but could not be fetched; today's receipt is unknown, so nothing is posted (a blind run could post the card twice and its force push would drop the receipt)"
+              exit 1
+            fi
+            echo "countdown-cards branch not there yet: no receipt"
+          fi
+          if [ -f "$RUNNER_TEMP/posted.json" ]; then echo "receipt for $day:"; cat "$RUNNER_TEMP/posted.json"; fi
+          if python3 .github/scripts/countdown_cards.py done --date "$date" --receipt "$RUNNER_TEMP/posted.json" ${ONLY:+--only "$ONLY"}; then
+            echo "due=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "due=true" >> "$GITHUB_OUTPUT"
+          fi
       - name: Draw the card
         if: steps.due.outputs.due == 'true'
         run: |
@@ -51,6 +81,8 @@ jobs:
           git checkout -q --orphan countdown-cards
           cp "$RUNNER_TEMP/card.jpg" "$name"
           git add "$name"
+          # keep today's receipt on the new branch tip (the branch only ever holds the day's files)
+          if [ -f "$RUNNER_TEMP/posted.json" ]; then cp "$RUNNER_TEMP/posted.json" "posted-${{ steps.due.outputs.day }}.json"; git add "posted-${{ steps.due.outputs.day }}.json"; fi
           git -c user.name="github-actions[bot]" -c user.email="41898299+github-actions[bot]@users.noreply.github.com" commit -q -m "countdown card $name"
           git push -q --force "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" countdown-cards:countdown-cards
           echo "url=https://raw.githubusercontent.com/${{ github.repository }}/countdown-cards/$name" >> "$GITHUB_OUTPUT"
@@ -70,4 +102,30 @@ jobs:
           ONLY: ${{ inputs.only }}
         run: |
           sleep 20  # let raw.githubusercontent.com serve the new file
-          python3 .github/scripts/countdown_cards.py post --card "$RUNNER_TEMP/card.jpg" --url "${{ steps.card.outputs.url }}" ${ONLY:+--only "$ONLY"}
+          python3 .github/scripts/countdown_cards.py post --card "$RUNNER_TEMP/card.jpg" --url "${{ steps.card.outputs.url }}" --date "${{ steps.due.outputs.date }}" --receipt "$RUNNER_TEMP/posted.json" ${ONLY:+--only "$ONLY"}
+      - name: Keep today's posted receipt on the countdown-cards branch
+        # always(): a channel that went out before a later failure must still be on the receipt.
+        if: always() && steps.due.outputs.due == 'true' && steps.card.outcome == 'success'
+        run: |
+          [ -f "$RUNNER_TEMP/posted.json" ] || { echo "nothing posted, no receipt to keep"; exit 0; }
+          cd "$RUNNER_TEMP/cards"
+          name="posted-${{ steps.due.outputs.day }}.json"
+          cp "$RUNNER_TEMP/posted.json" "$name"
+          git add "$name"
+          if git diff --cached --quiet; then echo "receipt unchanged"; exit 0; fi
+          bot=(-c user.name="github-actions[bot]" -c user.email="41898299+github-actions[bot]@users.noreply.github.com")
+          git "${bot[@]}" commit -q -m "countdown posted $name"
+          remote="https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git"
+          for i in 1 2 3; do
+            # fetch first; if the branch moved, put the receipt on its tip (never a force push)
+            if git fetch -q "$remote" countdown-cards && ! git merge-base --is-ancestor FETCH_HEAD HEAD; then
+              git reset -q FETCH_HEAD
+              cp "$RUNNER_TEMP/posted.json" "$name"
+              git add "$name"
+              git diff --cached --quiet || git "${bot[@]}" commit -q -m "countdown posted $name"
+            fi
+            if git push -q "$remote" HEAD:countdown-cards; then echo "kept $name: $(cat "$name")"; exit 0; fi
+            echo "receipt push attempt $i failed"; sleep $((i * 5))
+          done
+          echo "::error::countdown: today's posted receipt was not kept; a second run today could post the card again"
+          exit 1

@@ -28,6 +28,7 @@ on:
 
 permissions:
   contents: write
+  actions: read # growth_records.py: is geo-daily running?
 
 concurrency:
   group: clip-mirror
@@ -41,6 +42,10 @@ jobs:
       GH_TOKEN: ${{ github.token }}
     steps:
       - uses: actions/checkout@v4
+      - name: Read records still waiting on the growth-records-pending branch
+        # geo-daily holds bot record pushes off main while it runs (growth_records.py); clip-replan's
+        # newest clips.json may wait there, so the mirror and the rewrite read it from here, not main's.
+        run: python3 .github/scripts/growth_records.py overlay
       - uses: actions/setup-python@v5
         with:
           python-version: "3.x"
@@ -68,20 +73,20 @@ jobs:
           path: mirror-results.json
           if-no-files-found: ignore
           retention-days: 14
-      - name: Point clips.json at the release, test, push to main
+      - name: Point clips.json at the release, test, push (main, or growth-records-pending while geo-daily runs)
         if: inputs.commit == 'true'
         run: |
           set -e
           for i in 1 2 3 4; do
-            git fetch -q origin main
-            git reset -q --hard origin/main
+            # main's tip with the pending records folded in; prints main, or growth-records-pending while geo-daily runs
+            target="$(python3 .github/scripts/growth_records.py prepare)"
             python3 .github/scripts/clip_mirror.py rewrite --results mirror-results.json
             if git diff --quiet -- .github/growth/clips.json; then echo "clips.json already points at the release"; exit 0; fi
             python3 .github/scripts/test_clip_posts.py -q
             git add .github/growth/clips.json
             git -c user.name="github-actions[bot]" -c user.email="41898299+github-actions[bot]@users.noreply.github.com" \
               commit -q -m "鉤子片網址改指向 GitHub 備援片庫（catbox 連不上）[skip ci]"
-            if git push -q origin HEAD:main; then echo "pushed $(git rev-parse --short HEAD)"; exit 0; fi
+            if python3 .github/scripts/growth_records.py push "$target"; then echo "pushed $(git rev-parse --short HEAD) to $target"; exit 0; fi
             echo "push lost a race, trying again"; sleep $((i * 5))
           done
           echo "::error::could not push clips.json"; exit 1

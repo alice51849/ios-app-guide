@@ -103,7 +103,7 @@ class WallpaperGalleryPageTest(unittest.TestCase):
             page = self.page(pages, locale)
             keyword = GALLERY["copy"][locale]["keyword"]
             imgs = re.findall(r'<img src="([^"]+)" alt="([^"]+)" width="(\d+)" height="(\d+)"', page)
-            self.assertEqual(6, len(imgs))
+            self.assertEqual(14, len(imgs))  # 7 pairs x cover/inner
             for src, alt, width, height in imgs:
                 self.assertRegex(src, r"/[a-z-]+-foldable-wallpaper-(cover|inner)-screen\.jpg$")
                 self.assertIn(html.escape(keyword, quote=True), alt)
@@ -111,7 +111,7 @@ class WallpaperGalleryPageTest(unittest.TestCase):
             gallery = [d for d in data if d.get("@type") == "ImageGallery"]
             self.assertEqual(1, len(gallery))
             media = gallery[0]["associatedMedia"]
-            self.assertEqual(6, len(media))
+            self.assertEqual(14, len(media))
             for item in media:
                 self.assertEqual("ImageObject", item["@type"])
                 relative = item["contentUrl"].split(hooks.SITE.rstrip("/") + "/", 1)[1]
@@ -132,7 +132,7 @@ class WallpaperGalleryPageTest(unittest.TestCase):
         for locale in GALLERY["locales"]:
             page = self.page(pages, locale)
             links = [html.unescape(u) for u in re.findall(r'href="(https://apps\.apple\.com/[^"]+)"', page)]
-            self.assertEqual(4, len(links))  # hero + one per pair
+            self.assertEqual(8, len(links))  # hero + one per pair (7 pairs)
             for link in links:
                 self.assertIn(f"/id{APP_ID}?", link)
                 self.assertIn(f"pt={PROVIDER}&ct={TOKEN}&mt=8", link)
@@ -153,6 +153,8 @@ class WallpaperGalleryPageTest(unittest.TestCase):
             text = visible_text(self.page(pages, locale))
             self.assertIsNone(PRICE_WORDS_RE.search(text), (locale, PRICE_WORDS_RE.search(text)))
             self.assertIn("Apple Inc.", text)
+            # 4 of the 7 pairs are paid in the app: the page must say so (2026-11-19 review).
+            self.assertIn(html.escape(GALLERY["copy"][locale]["paid_note"], quote=True), self.page(pages, locale))
         blob = json.dumps(GALLERY, ensure_ascii=False)
         self.assertIsNone(PRICE_WORDS_RE.search(blob), PRICE_WORDS_RE.search(blob))
 
@@ -182,7 +184,7 @@ class WallpaperGalleryPageTest(unittest.TestCase):
         self.assertEqual(7, len(entries))
         for page_url, images in entries:
             self.assertTrue(page_url.endswith(f"/tools/{GALLERY['slug']}.html"))
-            self.assertEqual(6, len(images))
+            self.assertEqual(14, len(images))
             for url in images:
                 self.assertTrue(url.startswith(f"https://example.test/guide/{hooks.GALLERY_WEB_DIR}/"))
 

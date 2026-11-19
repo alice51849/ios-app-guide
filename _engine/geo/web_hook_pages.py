@@ -240,7 +240,8 @@ FLIPCLOCK = {
 
 # Wallpaper gallery (reports/outreach_scale/methods_2026-11-18.md item 5): an
 # image-search entry page, not a tool.  Only the App's own artwork (the three
-# in-app pairs already published by app_image_gallery.py, resized copies with
+# in-app pairs already published by app_image_gallery.py plus four in-app
+# seasonal pairs cut by content.json crops, 2026-11-19; resized copies with
 # keyword file names), one App-bound campaign for every link on every locale
 # (os_wpgallery_web, so the downloads aggregate to one Apple campaign row), an
 # App Store and a Google Play link under every pair.  Fail closed: no page is
@@ -271,6 +272,26 @@ WALLPAPER_GALLERY = {
          "cover": "pair3_clay-puppy_outer_1398x2034.jpg", "inner": "pair3_clay-puppy_inner_2853x2007.jpg",
          "name": {"en": "Clay Puppy", "ja": "粘土の子犬", "ko": "점토 강아지", "zh-Hant": "黏土小狗",
                   "de-DE": "Knetwelpe", "fr-FR": "Chiot en pâte à modeler", "pt-BR": "Filhote de massinha"}},
+        {"id": "new-year-lake-fireworks",
+         "cover": "pair4_new-year-lake-fireworks_outer_1398x2034.jpg",
+         "inner": "pair4_new-year-lake-fireworks_inner_2853x2007.jpg",
+         "name": {"en": "Lake Fireworks", "ja": "湖上の花火", "ko": "호수 위 불꽃놀이", "zh-Hant": "湖面煙火",
+                  "de-DE": "Feuerwerk über dem See", "fr-FR": "Feu d'artifice sur le lac", "pt-BR": "Fogos sobre o lago"}},
+        {"id": "winter-snowy-carousel",
+         "cover": "pair5_winter-snowy-carousel_outer_1398x2034.jpg",
+         "inner": "pair5_winter-snowy-carousel_inner_2853x2007.jpg",
+         "name": {"en": "Snowy Carousel", "ja": "雪のメリーゴーランド", "ko": "눈 속의 회전목마", "zh-Hant": "雪中旋轉木馬",
+                  "de-DE": "Karussell im Schnee", "fr-FR": "Manège sous la neige", "pt-BR": "Carrossel na neve"}},
+        {"id": "winter-snowy-street-lamp",
+         "cover": "pair6_winter-snowy-street-lamp_outer_1398x2034.jpg",
+         "inner": "pair6_winter-snowy-street-lamp_inner_2853x2007.jpg",
+         "name": {"en": "Snowy Street Lamp", "ja": "雪の街灯", "ko": "눈 속의 가로등", "zh-Hant": "雪夜路燈",
+                  "de-DE": "Straßenlaterne im Schnee", "fr-FR": "Réverbère sous la neige", "pt-BR": "Poste de luz na neve"}},
+        {"id": "winter-snow-globe",
+         "cover": "pair7_winter-snow-globe_outer_1398x2034.jpg",
+         "inner": "pair7_winter-snow-globe_inner_2853x2007.jpg",
+         "name": {"en": "Snow Globe", "ja": "スノードーム", "ko": "스노볼", "zh-Hant": "雪花水晶球",
+                  "de-DE": "Schneekugel", "fr-FR": "Boule à neige", "pt-BR": "Globo de neve"}},
     ),
     "copy": {
         "en": {
@@ -296,6 +317,7 @@ WALLPAPER_GALLERY = {
                 "On iPhone, Foldable Wallpaper Studio has 300+ original pairs like these, closed and open previews "
                 "before you save, widgets in the same colors as your wallpaper, and pairs made from your own photos."
             ),
+            "paid_note": "Some pairs on this page are paid pairs in the app; others are included with the download.",
             "cta": "Get Foldable Wallpaper Studio on the App Store",
             "pair_cta": "Open Foldable Wallpaper Studio on the App Store",
             "play": "Get it on Google Play",
@@ -325,6 +347,7 @@ WALLPAPER_GALLERY = {
             "cover": "外画面、クローズアップ",
             "inner": "内画面、全景",
             "hero_text": "iPhone版アプリには300組以上のオリジナルペア壁紙があり、閉じる・開くプレビュー、壁紙と同じ配色の5種類のウィジェット、写真からのペア作成も使えます。",
+            "paid_note": "このページのペアには、アプリ内で購入が必要なものと、ダウンロードしてすぐ使えるものがあります。",
             "cta": "App Storeで「折りたたみ壁紙 - 外画面と内画面」を見る",
             "pair_cta": "App Storeで開く",
             "play": "Google Playで入手",
@@ -352,6 +375,7 @@ WALLPAPER_GALLERY = {
             "cover": "커버 화면, 클로즈업",
             "inner": "메인 화면, 전경",
             "hero_text": "iPhone 앱에는 이런 오리지널 세트가 300세트 이상 있고, 저장 전 접힘·펼침 미리보기, 배경화면과 색을 맞춘 위젯 5종, 내 사진으로 세트 만들기도 있습니다.",
+            "paid_note": "이 페이지의 세트 중 일부는 앱 내 유료 세트이고, 나머지는 다운로드하면 바로 쓸 수 있습니다.",
             "cta": "App Store에서 폴더블 배경화면 - 커버·메인 세트 받기",
             "pair_cta": "App Store에서 열기",
             "play": "Google Play에서 받기",
@@ -379,6 +403,7 @@ WALLPAPER_GALLERY = {
             "cover": "外螢幕，特寫",
             "inner": "內螢幕，全景",
             "hero_text": "iPhone 版 App 裡有 300+ 組這樣的原創成對桌布，儲存前可預覽合上與展開，5 款小工具與桌布同一幅畫，也能用自己的照片做成一對。",
+            "paid_note": "本頁部分組合是 App 內的付費組合，其餘下載後即可使用。",
             "cta": "在 App Store 下載摺疊手機桌布",
             "pair_cta": "在 App Store 開啟",
             "play": "在 Google Play 下載",
@@ -406,6 +431,7 @@ WALLPAPER_GALLERY = {
             "cover": "Außendisplay, Ausschnitt",
             "inner": "Innendisplay, ganze Szene",
             "hero_text": "Die iPhone-App hat über 300 originale Paare wie diese, eine Vorschau zugeklappt und aufgeklappt vor dem Speichern, 5 Widgets mit deinem Hintergrund und Paare aus eigenen Fotos.",
+            "paid_note": "Einige Paare auf dieser Seite sind in der App kostenpflichtig, die übrigen sind im Download enthalten.",
             "cta": "Foldable Hintergrundbilder im App Store laden",
             "pair_cta": "Im App Store öffnen",
             "play": "Bei Google Play laden",
@@ -433,6 +459,7 @@ WALLPAPER_GALLERY = {
             "cover": "écran externe, gros plan",
             "inner": "écran interne, toute la scène",
             "hero_text": "Sur iPhone, l'app propose plus de 300 paires originales comme celles-ci, un aperçu fermé et ouvert avant d'enregistrer, 5 widgets à l'image de votre fond et des paires faites avec vos photos.",
+            "paid_note": "Certaines paires de cette page sont payantes dans l'app ; les autres sont incluses au téléchargement.",
             "cta": "Télécharger Fond d'écran pliable – paires sur l'App Store",
             "pair_cta": "Ouvrir sur l'App Store",
             "play": "Disponible sur Google Play",
@@ -460,6 +487,7 @@ WALLPAPER_GALLERY = {
             "cover": "tela externa, close",
             "inner": "tela interna, cena inteira",
             "hero_text": "No iPhone, o app tem mais de 300 pares originais como estes, prévia do celular fechado e aberto antes de salvar, 5 widgets com o seu papel de parede e pares feitos com as suas fotos.",
+            "paid_note": "Alguns pares desta página são pagos no app; os outros já vêm com o download.",
             "cta": "Baixar Papel de parede dobrável na App Store",
             "pair_cta": "Abrir na App Store",
             "play": "Baixar no Google Play",
@@ -795,7 +823,8 @@ def render_gallery(locale: str, show_cta: bool, android_apps: dict | None = None
     head = head.replace(
         f'<section class="hero wrap"><h1>{_e(t["heading"])}</h1><p class="lead">{_e(" ".join(t["answer"]))}</p>',
         f'<section class="hero wrap"><h1>{_e(t["heading"])}</h1><p class="lead">{_e(" ".join(t["answer"]))}</p>'
-        f'<p>{_e(t["hero_text"])} <a href="{_e(link)}" rel="noopener">{_e(t["cta"])}</a></p>', 1)
+        f'<p>{_e(t["hero_text"])} <a href="{_e(link)}" rel="noopener">{_e(t["cta"])}</a></p>'
+        f'<p class="note">{_e(t["paid_note"])}</p>', 1)
     return head + "".join(sections) + (
         f'<section class="card wrap"><h2>{_e(t["how_title"])}</h2><ul>{how}</ul>'
         f'<p class="note">{_e(t["note"])}</p></section>\n</main>\n</body>\n</html>\n'

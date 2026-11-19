@@ -286,7 +286,7 @@
       "record_count": 60
     },
     "bn-BD": {
-      "date_modified": "2026-11-19T15:14:56Z",
+      "date_modified": "2026-11-19T18:51:26Z",
       "formats": {
         "atom": {
           "accepted_content_types": [
@@ -296,7 +296,7 @@
           ],
           "content_type": "application/atom+xml",
           "path": "bn-BD/feed.xml",
-          "sha256": "c523566f698596d3c1607bda4e8686908460fe1e994cb207543b467b64aa969e",
+          "sha256": "8c57d8029c079ff1e479567d390199cf2bed57c6e2b11e7b17c7a34a254b0723",
           "url": "https://open.cait518.cc/ios-app-guide/bn-BD/feed.xml"
         },
         "json_feed": {
@@ -306,7 +306,7 @@
           ],
           "content_type": "application/feed+json",
           "path": "bn-BD/feed.json",
-          "sha256": "25db91e4295b1431f79102d60a8bf970757d831a801373cddb58c302616318be",
+          "sha256": "ac631b068fa2330e6adbc24b7e07f1debc7e84d30609c6d7983ffe532042546a",
           "url": "https://open.cait518.cc/ios-app-guide/bn-BD/feed.json"
         },
         "rss": {
@@ -317,7 +317,7 @@
           ],
           "content_type": "application/rss+xml",
           "path": "bn-BD/rss.xml",
-          "sha256": "d2d5ed48b18b5308156ff121a6554d94df7efc89b18cfe164b065967a5ee077e",
+          "sha256": "2cbe11da55ce76a08c346e614b46f9a8f48607354306bdb6fdd5c6121c7239b9",
           "url": "https://open.cait518.cc/ios-app-guide/bn-BD/rss.xml"
         }
       },
@@ -2246,7 +2246,7 @@
       "record_count": 60
     }
   },
-  "generation_digest": "e702147fba6a5bdd0e33ccf850ef9c1484a61f27ab9a78930e275f8c3034fae7",
+  "generation_digest": "0d666ef019d42fc6d754f5eb23e4c849c116ea003791c3186ba5ac3c2b8d8d56",
   "locale_count": 50,
   "notification_feed_count": 147,
   "purchase_models": {
@@ -2263,7 +2263,7 @@
     "roster_digest": "151b01fd2464a3f08cccb53f5250e72f9f2e0412099cee732d39496fa3f97637",
     "source_files": {
       "../social/videogen/registry.py": "fa574d5e16655040f5d61ddf0ffc8b95e5d578b4fc6a5d66f2bc092159813b66",
-      "app_store_storefronts.py": "c33428d2775f0a2bf19212736f3bd083bc8a32166a0891b7efa139626dfac4f0",
+      "app_store_storefronts.py": "ba9396a3b0c9bd29a3cd31cfad08b4e325c33ad51e093b875b8f6dfd68d8a016",
       "build_pages_i18n.py": "7e563f6776f8b729c0a4e47488d8af258b8dd4010ddcb8b82074debb0631a46e",
       "data/paid_upfront_surface_repairs.json": "b7f48683121484d0327ae24b9d70ced2c48920debde420218de05dfa20e6fa1c",
       "deployment_generation.py": "37306bb0800b15b9fcea2d72207e0dd6cd1ebcbf65b6affe16791218bcdaae6b",

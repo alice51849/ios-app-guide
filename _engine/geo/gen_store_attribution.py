@@ -59,7 +59,10 @@ from app_store_storefronts import (  # noqa: E402
     PROVIDER_TOKEN_ENV,
     PROVIDER_TOKEN_RE,
     is_app_store_review_url,
+    bundle_member_campaign,
+    is_app_bundle_url,
     is_clean_app_store_developer_url,
+    validated_app_bundle_url,
     load_storefront_availability,
     normalize_app_store_campaign_url,
     required_campaign_app_store_url,
@@ -441,6 +444,15 @@ def final_store_url(
     the pre-stamp CTA, or the QR desync gate rejects the whole tree."""
     if is_clean_app_store_developer_url(url):
         return None if market.is_unavailable(locale) else url
+    if is_app_bundle_url(url):
+        # Our App Store bundles: one page, one bundle_ code, never re-stamped
+        # to the page token; the storefront is the page spec's own choice.
+        if market.is_unavailable(locale):
+            return None
+        return validated_app_bundle_url(
+            url, expected_locale=locale if locale in LOCALE_STOREFRONTS else None,
+            provider_token=provider,
+        )
     if is_app_store_review_url(url):
         return final_review_url(
             url, locale=locale, availability=availability, app_id=app_id,
@@ -455,7 +467,11 @@ def final_store_url(
         return None
     url = align_storefront(url, locale, availability)
     existing = existing_campaign(url)
-    if existing in PROTECTED_CAMPAIGNS or app_bound_campaign(existing, app_id):
+    if (
+        existing in PROTECTED_CAMPAIGNS
+        or app_bound_campaign(existing, app_id)
+        or bundle_member_campaign(existing, app_id)
+    ):
         campaign = existing
     else:
         # Intent pages that declare a keyword group (gw_campaign.META_NAME) get

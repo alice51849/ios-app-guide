@@ -456,6 +456,103 @@ def required_campaign_app_store_url(
 
 
 # --------------------------------------------------------------------------- #
+# App bundle links (組合包強力宣傳令 2026-11-20；ops/handoff/rulings/2026-11-20_bundle_push.md)
+#
+# ``/[cc/]app-bundle/id<N>`` is Apple's product page for a bundle of our own
+# apps. It is a download CTA, but not an App: it is never rewritten to a page
+# token (one page, one ``bundle_<lumi|lang|travel>_<page>`` code) and is
+# accepted only for the bundle IDs read back live, only in storefronts the
+# bundle is sold in, and only as a complete pt/ct/mt campaign link. Everything
+# else on an app-bundle path keeps failing closed.
+# --------------------------------------------------------------------------- #
+APP_BUNDLE_IDS = frozenset({
+    "6835757004",  # Lumi 學習組合（注音／字母／數學／任務 付費版）
+    "6836187360",  # 語言學習包（DailyMate、Wordmate）
+    "6836190125",  # 出國旅遊包（TripBee、護照證件照、G+Money）
+})
+# Lumi 包的成員沒有上架中國區：中國區（及會落到中國區的 zh-Hans 無國別連結）不放。
+APP_BUNDLE_UNAVAILABLE_STOREFRONTS = {"6835757004": frozenset({"cn"})}
+APP_STORE_BUNDLE_PATH_RE = re.compile(
+    r"/(?:(?P<country>[a-z]{2})/)?app-bundle/(?:[-a-z0-9]+/)?id(?P<bundle_id>\d{9,12})"
+)
+BUNDLE_CAMPAIGN_RE = re.compile(r"bundle_(?P<package>lumi|lang|travel)_[a-z0-9][a-z0-9_]*")
+# 各包成員款（線上讀回 2026-11-19 18:3xZ）：組合包頁上的成員款連結保留該包的 bundle_ 碼，別款照常重蓋。
+APP_BUNDLE_MEMBERS = {
+    "lumi": frozenset({"6775773117", "6778491147", "6776958488", "6779745474"}),
+    "lang": frozenset({"6790418321", "6789917808"}),
+    "travel": frozenset({"6787754435", "6780575828", "6755782939"}),
+}
+
+
+def bundle_member_campaign(campaign: str | None, app_id: str | None) -> bool:
+    """True when ``campaign`` is a bundle_ page code and ``app_id`` is a member of that bundle."""
+    match = BUNDLE_CAMPAIGN_RE.fullmatch(campaign or "")
+    return (
+        match is not None
+        and CAMPAIGN_TOKEN_RE.fullmatch(campaign) is not None
+        and app_id in APP_BUNDLE_MEMBERS[match["package"]]
+    )
+
+
+def is_app_bundle_url(value: object) -> bool:
+    if not isinstance(value, str):
+        return False
+    parsed = urllib.parse.urlsplit(value.strip())
+    return parsed.netloc == "apps.apple.com" and APP_STORE_BUNDLE_PATH_RE.fullmatch(parsed.path) is not None
+
+
+def validated_app_bundle_url(
+    value: str,
+    *,
+    expected_locale: str | None = None,
+    provider_token: str | None = None,
+) -> str:
+    """A complete, attributable link to one of our live App Store bundles."""
+    if not isinstance(value, str) or re.search(r"[\x00-\x20\x7f]", value.strip()):
+        raise ValueError(f"Invalid App Store bundle URL: {value!r}")
+    parsed = urllib.parse.urlsplit(value.strip())
+    path = APP_STORE_BUNDLE_PATH_RE.fullmatch(parsed.path)
+    if parsed.scheme != "https" or parsed.netloc != "apps.apple.com" or path is None or parsed.fragment:
+        raise ValueError(f"Invalid App Store bundle URL: {value!r}")
+    bundle_id, country = path["bundle_id"], path["country"]
+    if bundle_id not in APP_BUNDLE_IDS:
+        raise ValueError(f"Unknown App Store bundle: {value!r}")
+    if country is not None and country not in set(LOCALE_STOREFRONTS.values()):
+        raise ValueError(f"Invalid App Store bundle URL: {value!r}")
+    if expected_locale is not None:
+        if expected_locale not in LOCALE_STOREFRONTS:
+            raise ValueError(f"Unsupported App Store locale: {expected_locale!r}")
+        if country is not None and country != LOCALE_STOREFRONTS[expected_locale]:
+            raise ValueError(f"App Store storefront mismatch for {expected_locale}: {value!r}")
+    target = country or (LOCALE_STOREFRONTS[expected_locale] if expected_locale else None)
+    unavailable = APP_BUNDLE_UNAVAILABLE_STOREFRONTS.get(bundle_id, frozenset())
+    if unavailable and target is None:
+        # 判不出店面（無國別連結、頁面語系不明）就不放有不售市場的包（例如 Lumi 不進中國）。
+        raise market_availability.MarketUnavailable(
+            f"App Store bundle needs a storefront or a page locale: {bundle_id}"
+        )
+    if target in unavailable:
+        raise market_availability.MarketUnavailable(
+            f"Unavailable App Store bundle market: {target}/{bundle_id}"
+        )
+    try:
+        parameters = urllib.parse.parse_qsl(parsed.query, keep_blank_values=True, strict_parsing=True)
+    except ValueError as error:
+        raise ValueError(f"Invalid App Store bundle URL: {value!r}") from error
+    if (
+        [key for key, _ in parameters] != ["pt", "ct", "mt"]
+        or PROVIDER_TOKEN_RE.fullmatch(parameters[0][1]) is None
+        or CAMPAIGN_TOKEN_RE.fullmatch(parameters[1][1]) is None
+        or BUNDLE_CAMPAIGN_RE.fullmatch(parameters[1][1]) is None
+        or parameters[2][1] != MEDIA_TYPE
+    ):
+        raise ValueError(f"App Store bundle link needs pt, a bundle_ ct and mt: {value!r}")
+    if provider_token is not None and parameters[0][1] != _provider_token(provider_token):
+        raise ValueError(f"App Store provider token mismatch: {value!r}")
+    return urllib.parse.urlunsplit(parsed._replace(query=urllib.parse.urlencode(parameters)))
+
+
+# --------------------------------------------------------------------------- #
 # Existing-user review links (BM-13 / BM-47)
 #
 # ``?action=write-review`` opens Apple's "Write a Review" sheet for people who

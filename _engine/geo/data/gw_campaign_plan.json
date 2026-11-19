@@ -1,5 +1,48 @@
 {
- "apps": {},
+ "apps": {
+  "kumo": {
+   "basis": "2026-11-19 手開（品質稽核第七次：Kumo 指南站意圖頁要頁專屬碼）；Kumo 每個 (詞群,國) 只有一頁，格子碼＝頁專屬碼；印尼 sr 兩頁同格不開、留合併碼。未達每週 5 次門檻，蘋果報表可能不顯示，逐頁看點擊信標。下次 plan 重算會蓋掉，要保留就手補回。",
+   "cells": [
+    [
+     "sr",
+     "jp"
+    ],
+    [
+     "sr",
+     "nl"
+    ],
+    [
+     "sr",
+     "se"
+    ],
+    [
+     "sr",
+     "tw"
+    ],
+    [
+     "sr",
+     "vn"
+    ],
+    [
+     "use",
+     "id"
+    ],
+    [
+     "use",
+     "tw"
+    ],
+    [
+     "use",
+     "us"
+    ],
+    [
+     "use",
+     "vn"
+    ]
+   ],
+   "expected_weekly": {}
+  }
+ },
  "generated_at": null,
  "min_weekly_downloads": 5.0,
  "schema": "growth.gw-campaign-plan/v1"

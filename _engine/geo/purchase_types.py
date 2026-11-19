@@ -89,6 +89,21 @@ def no_subscription_verified(key: str) -> bool:
     return purchase_type(key) in {ONE_TIME_UNLOCK, PAID_UPFRONT, FREE}
 
 
+# 商店 en-US 描述自己寫明「沒有訂閱」的說法。一次解鎖（免費下載＋App 內購買）款
+# 只有商店原文這樣寫，對外頁面才可以寫 no subscription（MoneyTag 等商店沒寫）。
+_STORE_NO_SUBSCRIPTION = re.compile(
+    r"\bno (?:in-app purchases, )?subscriptions?\b|without (?:a |any )?subscriptions?"
+    r"|never a subscription|not a subscription|subscription-free"
+    r"|no recurring (?:subscription|fees?|charges?|payments?)",
+    re.IGNORECASE,
+)
+
+
+def store_states_no_subscription(key: str) -> bool:
+    """商店 en-US 描述有寫明沒有訂閱才回 True（讀 data/<key>_full.json）。"""
+    return bool(_STORE_NO_SUBSCRIPTION.search(_store_description(key)))
+
+
 def is_purchase_claim(text: str) -> bool:
     return bool(PURCHASE_CLAIM_RE.search(str(text or "")))
 

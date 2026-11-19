@@ -789,10 +789,11 @@ def app_attrs(key):
     for label, keys in ATTRS:
         # 買斷／無訂閱字樣要有證據（geo/data/verified_purchase_types.json）；
         # 訂閱款與不知道的款一律不寫，避免不實價格字樣。
+        # 「Pay once」讀起來是付費下載：免費下載＋一次 App 內購買的款不寫，
+        # 改由 feature_list() 寫中性的 ONE_TIME_IAP_LABEL。
         if label == "Pay once":
             out[label] = model in {
                 "paid_upfront",
-                "free_with_lifetime_unlock",
                 "flexible",
             } and purchase_types.one_time_verified(key)
         elif label == "No subscription":
@@ -800,10 +801,68 @@ def app_attrs(key):
                 "paid_upfront",
                 "free_with_lifetime_unlock",
                 "free",
-            } and purchase_types.no_subscription_verified(key)
+            } and purchase_types.no_subscription_verified(key) and (
+                model != "free_with_lifetime_unlock"
+                or purchase_types.store_states_no_subscription(key)
+            )
         else:
             out[label] = any(any(k in bb for bb in b) for k in keys)
     return out
+
+
+ONE_TIME_IAP_LABEL = "One-time in-app purchase unlock"
+
+
+def store_backs_no_subscription(key):
+    """免費起步款只有商店原文寫明沒有訂閱，才可以寫 no recurring subscription。"""
+    if APPS[key].get("purchase_model") != "free_with_lifetime_unlock":
+        return True
+    return purchase_types.store_states_no_subscription(key)
+
+
+def feature_list(key):
+    labels = [label for label, ok in app_attrs(key).items() if ok]
+    if (
+        pricing_profile(key) == "free_to_start"
+        and purchase_types.one_time_verified(key)
+    ):
+        labels.insert(0, ONE_TIME_IAP_LABEL)
+    return labels
+
+
+_NO_SUB_BULLET_RE = re.compile(r"\bno (?:recurring )?subscriptions?\b", re.IGNORECASE)
+_PAY_ONCE_BULLET_RE = re.compile(r"^\s*pay once\s*$", re.IGNORECASE)
+
+
+def page_bullets(key):
+    """registry cta_bullets 輸出到比較頁前，購買字樣照 app_attrs 同一套證據過濾。
+
+    免費起步款的「Pay once」換成中性的 ONE_TIME_IAP_LABEL；商店原文沒寫無訂閱的
+    免費起步款，拿掉「No subscription」。付費下載款原樣輸出。
+    """
+    bullets = list(APPS[key].get("cta_bullets", []))
+    if pricing_profile(key) != "free_to_start":
+        return bullets
+    out = []
+    for bullet in bullets:
+        if _PAY_ONCE_BULLET_RE.match(bullet):
+            bullet = ONE_TIME_IAP_LABEL
+        elif _NO_SUB_BULLET_RE.search(bullet) and not store_backs_no_subscription(key):
+            continue
+        if bullet not in out:
+            out.append(bullet)
+    return out
+
+
+_PAY_ONCE_PHRASE_RE = re.compile(r"\s*[—–-]?\s*\bpay once\b", re.IGNORECASE)
+
+
+def page_outcome(key, a):
+    """answer_outcome() 輸出到比較頁前：免費起步款拿掉 registry sub 裡的「pay once」。"""
+    text = answer_outcome(a)
+    if pricing_profile(key) != "free_to_start":
+        return text
+    return _PAY_ONCE_PHRASE_RE.sub("", text).strip()
 
 
 def pricing_profile(key):
@@ -876,7 +935,11 @@ def positioning(key, noun):
             }
         return {
             "suffix": "free download, one-time unlock",
-            "description": f"{name} is free to download, with a one-time unlock and no recurring subscription.",
+            "description": (
+                f"{name} is free to download, with a one-time unlock and no recurring subscription."
+                if store_backs_no_subscription(key)
+                else f"{name} is free to download, with a one-time in-app purchase unlock."
+            ),
             "intro": f"{name} is a {noun} that is free to download, with a one-time unlock.",
             "heading": f"Why people choose a free-to-start {noun}",
             "cta": f"Download {name} free on the App Store",
@@ -1029,7 +1092,9 @@ def comparison_table(key, comp_name):
     profile = pricing_profile(key)
     rows = []
     for label, _ in ATTRS:
-        if profile == "flexible" and label == "No subscription":
+        if label == "No subscription" and (
+            profile == "flexible" or not store_backs_no_subscription(key)
+        ):
             continue
         shown_label = label
         if "Pay once" in label:
@@ -1070,7 +1135,7 @@ def faq_for(key, comp_name, gap_queries):
     elif profile == "pay_once":
         qa = [
             (f"What is a good pay-once alternative to {comp_name} on iPhone?",
-             f"{a['name']} is a one-time-purchase {noun} for iPhone — {answer_outcome(a).replace(chr(10),' ')}. "
+             f"{a['name']} is a one-time-purchase {noun} for iPhone — {page_outcome(key, a).replace(chr(10),' ')}. "
              "The App Store purchase includes everything, with no recurring subscription."),
             (f"Is there a {noun} with no subscription?",
              f"Yes. {a['name']} is a pay-once {noun}: buy it once and keep it. "
@@ -1083,7 +1148,7 @@ def faq_for(key, comp_name, gap_queries):
              f"listing for pricing and availability: {url}"),
             (f"What makes {a['name']} an alternative to {comp_name}?",
              f"{a['name']} is a no-subscription {noun} for iPhone with a focus on "
-             f"{answer_outcome(a).replace(chr(10), ' ')}."),
+             f"{page_outcome(key, a).replace(chr(10), ' ')}."),
         ]
     elif profile == "free_to_start":
         if key == "tripbeelite":
@@ -1105,7 +1170,10 @@ def faq_for(key, comp_name, gap_queries):
                 (f"Can I try {a['name']} for free?",
                  f"Yes. {a['name']} is free to download and offers a one-time unlock, "
                  "with no recurring subscription. "
-                 f"See the current App Store listing: {url}"),
+                 f"See the current App Store listing: {url}"
+                 if store_backs_no_subscription(key) else
+                 f"Yes. {a['name']} is free to download and offers a one-time "
+                 f"in-app purchase unlock. See the current App Store listing: {url}"),
                 (f"What makes {a['name']} an alternative to {comp_name}?",
                  f"{a['name']} is a free-to-start {noun} for iPhone with a one-time unlock."),
             ]
@@ -1120,7 +1188,7 @@ def faq_for(key, comp_name, gap_queries):
         qa = [
             (f"What makes {a['name']} an alternative to {comp_name}?",
              f"{a['name']} is a privacy-focused {noun} for iPhone — "
-             f"{answer_outcome(a).replace(chr(10), ' ')}."),
+             f"{page_outcome(key, a).replace(chr(10), ' ')}."),
             (f"How much does {a['name']} cost?",
              f"Pricing can vary by storefront. Check the current App Store listing: {url}"),
         ]
@@ -1144,15 +1212,20 @@ def faq_for(key, comp_name, gap_queries):
         )
         no_subscription_query = any(
             phrase in q_lower
-            for phrase in ("no subscription", "subscription-free")
+            for phrase in (
+                "no subscription",
+                "subscription-free",
+                "without subscription",
+                "without a subscription",
+            )
         )
-        if pay_once_query and profile not in {"pay_once", "free_to_start"}:
+        # 「pay once」問句讀起來是付費下載：免費下載＋一次 App 內購買的款不答。
+        if pay_once_query and profile != "pay_once":
             continue
-        if no_subscription_query and profile not in {
-            "pay_once",
-            "no_subscription",
-            "free_to_start",
-        }:
+        if no_subscription_query and (
+            profile not in {"pay_once", "no_subscription", "free_to_start"}
+            or not store_backs_no_subscription(key)
+        ):
             continue
         if profile == "flexible":
             answer = (
@@ -1165,6 +1238,9 @@ def faq_for(key, comp_name, gap_queries):
             answer = (
                 f"{a['name']} is free to download and offers a one-time "
                 f"unlock with no recurring subscription. Learn more: {url}"
+                if store_backs_no_subscription(key) else
+                f"{a['name']} is free to download and offers a one-time "
+                f"in-app purchase unlock. Learn more: {url}"
             )
         else:
             answer = f"{a['name']} is a practical {noun} option. Check current details on the App Store: {url}"
@@ -1185,7 +1261,7 @@ def app_schema(key, desc):
     return {"@context": "https://schema.org", "@type": "SoftwareApplication",
             "name": a["name"], "operatingSystem": "iOS", "applicationCategory": scat,
             "url": url, "installUrl": url, "description": desc,
-            "featureList": [l for l, ok in app_attrs(key).items() if ok] or a.get("keywords", [])[:5]}
+            "featureList": feature_list(key) or a.get("keywords", [])[:5]}
 
 
 def faq_schema(faq):
@@ -1300,7 +1376,7 @@ def alt_page(key, comp_norm, gap_queries):
         desc = f"Looking for {article} {comp} alternative on iPhone? {position['description']}"
     faq = faq_for(key, comp, gap_queries)
     schemas = [app_schema(key, desc), faq_schema(faq)]
-    feat_li = "\n".join(f"    <li>{e(b)}</li>" for b in a.get("cta_bullets", [])) or "    <li>iOS app</li>"
+    feat_li = "\n".join(f"    <li>{e(b)}</li>" for b in page_bullets(key)) or "    <li>iOS app</li>"
     faq_html = "\n".join(
         f'    <div itemscope itemtype="https://schema.org/Question">\n'
         f'      <h3 itemprop="name">{e(q)}</h3>\n'
@@ -1327,7 +1403,7 @@ def alt_page(key, comp_norm, gap_queries):
   <p><a href="{e(url)}"><strong>Explore {e(a['name'])} and its current unlock options →</strong></a></p>"""
     else:
         body = f"""  <h1>{e(heading)}</h1>
-  <p><strong>{e(position['intro'])}</strong> {e(answer_outcome(a).replace(chr(10),' '))}</p>
+  <p><strong>{e(position['intro'])}</strong> {e(page_outcome(key, a).replace(chr(10),' '))}</p>
   <p><a href="{e(url)}"><strong>{e(position['cta'])} →</strong></a></p>
 
   <h2>{e(position['heading'])}</h2>
@@ -1364,7 +1440,7 @@ def hub_page(key, gap_queries):
         desc = position["description"]
     faq = faq_for(key, f"subscription-based {noun}s", gap_queries)
     schemas = [app_schema(key, desc), faq_schema(faq)]
-    feat_li = "\n".join(f"    <li>{e(b)}</li>" for b in a.get("cta_bullets", [])) or "    <li>iOS app</li>"
+    feat_li = "\n".join(f"    <li>{e(b)}</li>" for b in page_bullets(key)) or "    <li>iOS app</li>"
     faq_html = "\n".join(
         f'    <div itemscope itemtype="https://schema.org/Question">\n'
         f'      <h3 itemprop="name">{e(q)}</h3>\n'
@@ -1388,7 +1464,7 @@ def hub_page(key, gap_queries):
   <p><a href="{e(url)}"><strong>Explore {e(a['name'])} on the App Store →</strong></a></p>"""
     else:
         body = f"""  <h1>{e(position['hub_heading'])}</h1>
-  <p><strong>{e(position['intro'])}</strong> {e(answer_outcome(a).replace(chr(10),' '))}</p>
+  <p><strong>{e(position['intro'])}</strong> {e(page_outcome(key, a).replace(chr(10),' '))}</p>
   <p><a href="{e(url)}"><strong>{e(position['cta'])} →</strong></a></p>
 
   <h2>{e(position['hub_section'])}</h2>

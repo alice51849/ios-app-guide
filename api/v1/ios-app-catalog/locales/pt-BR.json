@@ -2,7 +2,7 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-11-19",
-  "content_digest": "91aee8ee4380268fb5a17ba01db0c6d5ce0e94b4236a64dd93cfc66952e18cbd",
+  "content_digest": "1879416ba8e23730f92f0448aa7d94284111a248662bedc060147ade6d510cb9",
   "locale": "pt-BR",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -1621,7 +1621,7 @@
       "key": "qrcodehalo",
       "app_store_id": "6806779853",
       "name": "QR Code Halo: Escanear e Criar",
-      "summary": "Otimizado para iPhone Duo. Criado com o SDK mais recente, o app ocupa toda a tela interna e ajusta o layout automaticamente, com o aparelho dobrado ou aberto.",
+      "summary": "Escaneie QR codes e códigos de barras em 20 formatos com a câmera ou de uma foto, e a ação acontece na hora: links abrem e códigos de Wi-Fi mostram o aviso para entrar na rede. Medo de que o código seja golpe? Abra no Histórico e toque em “Checar segurança”. No próprio aparelho, o QR Code Halo separa o link em partes e marca URLs suspeitas, links sem HTTPS e domínios que misturam alfabetos como seguros, atenção ou bloqueados. Códigos javascript:, data: e file: nunca abrem, e você pode desativar “Executar ao escanear” para checar cada código antes. Também dá para criar 9 tipos de QR code, como de Wi-Fi, contatos e eventos.",
       "category": "utility",
       "search_terms": [
         "leitor",

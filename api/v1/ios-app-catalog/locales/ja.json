@@ -2,7 +2,7 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-11-19",
-  "content_digest": "91aee8ee4380268fb5a17ba01db0c6d5ce0e94b4236a64dd93cfc66952e18cbd",
+  "content_digest": "1879416ba8e23730f92f0448aa7d94284111a248662bedc060147ade6d510cb9",
   "locale": "ja",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -2041,7 +2041,7 @@
       "key": "qrcodehalo",
       "app_store_id": "6806779853",
       "name": "QR Code Halo：QRコードをすぐ開く",
-      "summary": "iPhone Duoに最適化。最新の開発キットでビルドしており、内側のディスプレイ全体に表示され、折りたたんでも開いても自動でレイアウトが調整されます。",
+      "summary": "QRコードとバーコードを20形式で読み取って、すぐに実行。カメラでも写真からでも読め、リンクはそのまま開き、Wi-Fiのコードは接続の確認がすぐ表示されます。 詐欺のコードかもと不安なときは、履歴から開いて「セキュリティチェック」をタップ。QR Code Haloが端末内でリンクを分解し、怪しいURL、HTTPSでないリンク、異なる文字体系が混ざったドメインを見つけて「安全・注意・ブロック」で示します。javascript:、data:、file:のコードは決して開きません。毎回確かめてから開きたいときは「スキャン後に自動で実行」をオフにできます。 Wi-Fi、連絡先、イベントなど9種類のQRコードも作成できます。",
       "category": "utility",
       "search_terms": [
         "読み取り",

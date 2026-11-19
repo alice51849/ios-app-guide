@@ -214,14 +214,18 @@ def app_key_for_id(app_id: str | None) -> str | None:
 
 
 def link_problems(value: str | None, *, app_key: str | None, storefront: str | None) -> list[str]:
-    """一個 gw 碼放在這條連結上合不合格：形狀、款要等於連結的款、國要是連結的國或 ww。"""
+    """一個 gw 碼放在這條連結上合不合格：形狀、款要等於連結的款、國要是連結的國或 ww。
+
+    連結本身沒有商店國家（apple-itunes-app 橫幅的 affiliate-data、/app/ 網址）時不比國家：
+    每日改寫照頁面語系算出的國家碼（final_store_url 先對齊店面再算碼）寫在橫幅上，稽核讀回橫幅時
+    沒有國家；不放行的話，計畫檔一開 (詞群, 國) 格，每頁橫幅都會被擋、整站部署失敗（2026-11-19 Kumo 頁專屬碼實測）。"""
     parsed = parse(value)
     if parsed is None:
         return [f"not a gw campaign: {value!r}"]
     problems = []
     if app_key is None or parsed["app"] != app_key:
         problems.append(f"{value}: app {parsed['app']!r} is not the linked app {app_key!r}")
-    if parsed["mk"] != WW and parsed["mk"] != (storefront or ""):
+    if storefront is not None and parsed["mk"] != WW and parsed["mk"] != storefront:
         problems.append(f"{value}: market {parsed['mk']!r} is not the link storefront {storefront!r}")
     return problems
 

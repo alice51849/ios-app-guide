@@ -259,7 +259,10 @@ class ServedElsewhereTest(unittest.TestCase):
         self.assertNotIn("mastodon", S.CHANNELS)
 
     def test_youtube_is_left_to_the_mac_unless_forced(self):
+        # paused_notice pinned like the two tests above: on the real clock this test saw "youtube paused"
+        # in YouTube's holdout week, and its red Test step stopped every post and feed.json 2026-11-15..18.
         with mock.patch.dict(os.environ, ENV_ALL, clear=True), mock.patch.object(S, "http") as h, \
+                mock.patch.object(S.CR, "paused_notice", return_value=False), \
                 mock.patch.object(P, "record_post") as rec, mock.patch("sys.stdout", new_callable=io.StringIO) as out:
             self.assertFalse(S.configured("youtube"))
             S.run(("youtube",), DAY, 1, data=DATA)

@@ -62,6 +62,11 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url || steps.deployment_retry.outputs.page_url }}
     runs-on: ubuntu-latest
+    # No job limit meant the 360-minute default: one hung paired deploy would hold its concurrency
+    # group and every later pairing ("hold while a paired run is queued") for six hours. The longest
+    # of 53 runs 2026-11-16..19 took 17 minutes; 75 covers the worst case of the bounded steps (deploy
+    # up to 20, exact read-back 30 x 25 s, hero and ACK checks 22) with room for the deploy retry.
+    timeout-minutes: 75
     env:
       # 固定 "true"：配對部署只嘗試一次、不盲目建立第二次部署。provider 通知是否
       # 放行只看 _engine/geo/notification_policy.json（IndexNow 由 indexnow-daily 送出）。
@@ -137,6 +142,17 @@ jobs:
       - name: Refuse restricted-copy app pages that break their copy rules (Kumo)
         if: inputs.incremental_high_intent != true
         run: python3 _engine/geo/restricted_copy_pages.py --site-root .
+      # Daily GEO content dies on one App Store link its normalizer refuses (2026-11-19 00:07-02:39Z:
+      # three runs stopped on a 33-character ct token pushed with one page). Name that page on the
+      # push that brings it, minutes later, instead of 20 minutes into the next daily run. Read-only;
+      # push preflights only, so a paired release is never held by it.
+      # Minutes (rule: estimate before adding work): the whole tree (96,152 text files on 2026-11-19)
+      # takes 70 s locally, about 1.5-2.5 min on a hosted runner; ~13 push preflights a day make
+      # 600-1,000 min a month. This repository is public, so hosted minutes are not metered (Daily
+      # GEO content alone runs ~1,200 min a day here); the 2,000-minute budget is 00_GrowthEngine's.
+      - name: Name App Store links the Daily GEO run would refuse (push preflight)
+        if: github.event_name == 'push'
+        run: python3 .github/scripts/store_link_preflight.py --pages . --engine _engine/geo
       - name: Materialize and gate canonical discovery surfaces
         if: inputs.incremental_high_intent != true
         env:

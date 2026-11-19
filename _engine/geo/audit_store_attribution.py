@@ -43,11 +43,14 @@ from app_store_storefronts import (
     LOCALE_STOREFRONTS,
     PROVIDER_TOKEN_RE,
     STATE_FILE,
+    bundle_member_campaign,
+    is_app_bundle_url,
     is_app_store_review_url,
     is_clean_app_store_developer_url,
     load_storefront_availability,
     resolve_provider_token,
     storefront_locale_for_url,
+    validated_app_bundle_url,
     validated_app_store_review_url,
     validated_app_store_url,
 )
@@ -538,6 +541,19 @@ def validate_reference(ref: Reference, *, provider: str,
             "Unavailable App market cannot publish App Store URLs: "
             f"{ref.locale}/{ref.app_id or 'unknown'}"
         )
+    if is_app_bundle_url(ref.url):
+        # Our App Store bundles: complete pt/ct/mt link with a bundle_ code,
+        # live bundle ID only, storefront matching the page locale.
+        if ref.identity:
+            raise AttributionError(f"App Store bundle link cannot be an identity field: {ref.url}")
+        try:
+            validated_app_bundle_url(
+                ref.url, expected_locale=ref.locale if ref.locale in LOCALE_STOREFRONTS else None,
+                provider_token=provider,
+            )
+        except ValueError as error:
+            raise AttributionError(str(error)) from error
+        return None
     if ref.identity:
         _clean_identity(ref.url, ref.field)
         if is_app_store_review_url(ref.url):
@@ -576,6 +592,8 @@ def validate_reference(ref: Reference, *, provider: str,
         allowed.add(app_campaign)
     linked = APP_STORE_PATH_RE.fullmatch(urllib.parse.urlsplit(normalized).path)
     if app_bound_campaign(campaign, linked["app_id"] if linked else None):
+        allowed.add(campaign)
+    if bundle_member_campaign(campaign, linked["app_id"] if linked else None):
         allowed.add(campaign)
     if campaign not in allowed and gw_campaign_problems(campaign, normalized, ref.locale) == []:
         # Intent-page gw codes (gw_campaign.py): app x storefront x keyword group.

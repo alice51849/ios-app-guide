@@ -62,6 +62,11 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url || steps.deployment_retry.outputs.page_url }}
     runs-on: ubuntu-latest
+    # No job limit meant the 360-minute default: one hung paired deploy would hold its concurrency
+    # group and every later pairing ("hold while a paired run is queued") for six hours. The longest
+    # of 53 runs 2026-11-16..19 took 17 minutes; 75 covers the worst case of the bounded steps (deploy
+    # up to 20, exact read-back 30 x 25 s, hero and ACK checks 22) with room for the deploy retry.
+    timeout-minutes: 75
     env:
       # 固定 "true"：配對部署只嘗試一次、不盲目建立第二次部署。provider 通知是否
       # 放行只看 _engine/geo/notification_policy.json（IndexNow 由 indexnow-daily 送出）。

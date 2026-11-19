@@ -666,5 +666,275 @@ class IgBioHubLineTests(unittest.TestCase):
         self.assertEqual("never", row["last_success"])
 
 
+GUIDE_PROFILE = wd.PROFILES["ios-app-guide"]
+
+
+def event_run(created: str, *, event="schedule", actor="alice", conclusion="success", run_id=1):
+    return {"id": run_id, "conclusion": conclusion, "status": "completed", "created_at": created,
+            "updated_at": created, "event": event, "actor": {"login": actor}}
+
+
+class RecordLineTests(unittest.TestCase):
+    """2026-11-19: clip-replan, post-performance, android-promo-sync and owner-decisions were watched by
+    nothing. They only rebuild their own records, so they are plain workflow lines the healer may re-dispatch."""
+
+    NAMES = {"clip-replan.yml": 36, "post-performance.yml": 36, "android-promo-sync.yml": 30,
+             "owner-decisions.yml": 24}
+
+    def test_each_is_a_watched_workflow_line_that_accepts_a_bare_dispatch(self):
+        for name, window in self.NAMES.items():
+            self.assertEqual(window, GUIDE_PROFILE["workflows"][name], name)
+            self.assertNotIn(name, GUIDE_SLOTS, name)
+            text = (WORKFLOW_DIR / name).read_text(encoding="utf-8")
+            self.assertIn("schedule:", text, name)
+            self.assertIn("workflow_dispatch:", text, name)
+            self.assertNotIn("required: true", text, name)
+            # The healer's bare dispatch must be the scheduled job: no input changes what a run does.
+            self.assertNotIn("inputs:", text, name)
+
+    def test_a_quiet_line_is_red_and_redispatched(self):
+        gh = ScriptedGh({
+            "workflows/clip-replan.yml/runs?per_page=30&event": {"workflow_runs": []},
+            "workflows/clip-replan.yml/runs?per_page=30": {"workflow_runs": [
+                slot_run("2026-11-17T08:18:00Z", "Hook clip schedule replan")]},
+        })
+        row = wd.judge_workflow(gh, "clip-replan.yml", 36, at("2026-11-19T00:41:00Z"), dispatch=True)
+        self.assertFalse(row["fresh"])
+        self.assertEqual("retriggered", row["action"])
+        self.assertEqual(["clip-replan.yml"], gh.dispatched())
+
+
+class WatchOnlyWorkflowTests(unittest.TestCase):
+    """link-backfill.yml and comment-replies.yml: a bare dispatch is a report-only / dry run, and a dispatch
+    with the real inputs walks past the owner's off switch. So only scheduled runs count, and a quiet line is
+    red for a person: the healer never dispatches these."""
+
+    SPECS = GUIDE_PROFILE["watch_only_workflows"]
+
+    def gh(self, name, *runs):
+        return ScriptedGh({f"workflows/{name}/runs?per_page=30": {"workflow_runs": list(runs)}})
+
+    def judge(self, name, gh, now, dispatch=True):
+        spec = self.SPECS[name]
+        return wd.judge_workflow(gh, name, spec["max_age_hours"], at(now), dispatch=dispatch,
+                                 watch_only=spec["reason"])
+
+    def test_policy_matches_the_workflows_own_switches(self):
+        self.assertEqual({"link-backfill.yml", "comment-replies.yml"}, set(self.SPECS))
+        backfill = (WORKFLOW_DIR / "link-backfill.yml").read_text(encoding="utf-8")
+        self.assertIn('default: "audit"', backfill)                      # a bare dispatch is not the job
+        self.assertIn("! -f .github/growth/link-backfill.auto", backfill)  # the off switch...
+        self.assertIn('"${{ github.event_name }}" = "schedule"', backfill)  # ...only a scheduled run obeys
+        replies = (WORKFLOW_DIR / "comment-replies.yml").read_text(encoding="utf-8")
+        self.assertIn('default: "true"', replies)                        # a bare dispatch is a dry run
+        self.assertIn("github.event_name == 'workflow_dispatch' && inputs.dry_run || vars.AUTO_REPLY_DRY_RUN",
+                      replies)                                           # a dispatch overrides the off switch
+        for name, spec in self.SPECS.items():
+            self.assertNotIn(name, GUIDE_PROFILE["workflows"], name)
+            self.assertNotIn(name, GUIDE_SLOTS, name)
+            self.assertLessEqual(spec["max_age_hours"], 24, name)
+            self.assertTrue(spec["reason"], name)
+        wd.validate_slot_policy("ios-app-guide")
+
+    def test_a_cron_run_counts(self):
+        row = self.judge("link-backfill.yml", self.gh("link-backfill.yml", event_run("2026-11-19T02:36:00Z")),
+                         "2026-11-19T12:41:00Z")
+        self.assertTrue(row["fresh"])
+        self.assertEqual("none", row["action"])
+
+    def test_a_dispatch_never_turns_the_line_green_and_nothing_is_dispatched(self):
+        for actor in ("alice", "github-actions[bot]"):
+            gh = self.gh("link-backfill.yml",
+                         event_run("2026-11-19T12:00:00Z", event="workflow_dispatch", actor=actor, run_id=2),
+                         event_run("2026-11-18T02:36:00Z", run_id=1))
+            row = self.judge("link-backfill.yml", gh, "2026-11-19T12:41:00Z")
+            self.assertFalse(row["fresh"], actor)
+            self.assertEqual("2026-11-18T02:36:00Z", row["last_success"])
+            self.assertEqual("monitor_only", row["action"])
+            self.assertIn("link-backfill.auto", row["note"])
+            self.assertEqual([], gh.dispatched())
+
+    def test_quiet_comment_replies_stays_red_and_the_off_switch_is_never_overridden(self):
+        gh = self.gh("comment-replies.yml", event_run("2026-11-17T17:14:00Z"))
+        row = self.judge("comment-replies.yml", gh, "2026-11-19T00:41:00Z")
+        self.assertFalse(row["fresh"])
+        self.assertEqual("monitor_only", row["action"])
+        self.assertIn("AUTO_REPLY_DRY_RUN", row["note"])
+        self.assertEqual([], gh.dispatched())
+        self.assertFalse(any(argv[:2] == ["gh", "workflow"] for argv in gh.calls))
+
+    def test_a_failed_cron_run_is_red(self):
+        gh = self.gh("link-backfill.yml", event_run("2026-11-19T11:00:00Z", conclusion="failure"))
+        row = self.judge("link-backfill.yml", gh, "2026-11-19T12:41:00Z")
+        self.assertFalse(row["fresh"])
+        self.assertEqual("never", row["last_success"])
+        self.assertIn("completed/failure", row["note"])
+
+    def test_plain_workflow_lines_still_count_any_successful_run(self):
+        gh = self.gh("ig-bio-hub.yml", event_run("2026-11-19T12:00:00Z", event="workflow_dispatch"))
+        row = wd.judge_workflow(gh, "ig-bio-hub.yml", 30, at("2026-11-19T12:41:00Z"), dispatch=True)
+        self.assertTrue(row["fresh"])
+
+    def test_broken_watch_only_policy_is_rejected(self):
+        specs = GUIDE_PROFILE["watch_only_workflows"]
+        original = dict(specs["link-backfill.yml"])
+        try:
+            specs["link-backfill.yml"] = {"max_age_hours": 24, "reason": ""}
+            with self.assertRaises(wd.WatchdogError):
+                wd.validate_slot_policy("ios-app-guide")
+            specs["link-backfill.yml"] = original
+            specs["geo-daily.yml"] = dict(original)  # already a plain workflow line: judged twice
+            with self.assertRaises(wd.WatchdogError):
+                wd.validate_slot_policy("ios-app-guide")
+        finally:
+            specs.pop("geo-daily.yml", None)
+            specs["link-backfill.yml"] = original
+        wd.validate_slot_policy("ios-app-guide")
+
+
+class SocialExtraSlotTests(unittest.TestCase):
+    """social-extra.yml failed every run 2026-11-15..18 (a red Test step) and no line went red."""
+
+    NAME = "social-extra.yml"
+    SPEC = GUIDE_SLOTS["social-extra.yml"]
+
+    @staticmethod
+    def title(hour: int) -> str:
+        return f"Social extra daily · cron 50 {hour} * * *"
+
+    def judge(self, runs, now, dispatch=True):
+        gh = ScriptedGh({
+            f"workflows/{self.NAME}/runs?per_page=30&event": {"workflow_runs": []},
+            f"workflows/{self.NAME}/runs?per_page=30": {"workflow_runs": runs},
+        })
+        rows = wd.judge_slots(gh, self.NAME, self.SPEC, at(now), dispatch=dispatch)
+        return {row["line"]: row for row in rows}, gh
+
+    def test_policy_dispatches_the_missed_cron_and_the_workflow_declares_it(self):
+        self.assertEqual({1: 50, 15: 50}, self.SPEC["slots"])
+        self.assertEqual("inputs", self.SPEC["heal"])
+        slot = wd.dt.datetime(2026, 11, 19, 1, 0, tzinfo=wd.dt.timezone.utc)
+        self.assertEqual({"cron": "50 1 * * *"}, wd.slot_heal_inputs(self.SPEC, slot))
+        text = (WORKFLOW_DIR / self.NAME).read_text(encoding="utf-8")
+        self.assertIn('- cron: "50 1 * * *"', text)
+        self.assertIn('- cron: "50 15 * * *"', text)
+        self.assertIn("      cron:\n", text)                       # the workflow_dispatch input
+        self.assertIn("inputs.cron != ''", text)                     # ...that sends the run through the slot gate
+        self.assertIn("--slots 1,15", text)
+
+    def test_served_slots_are_fresh(self):
+        rows, gh = self.judge([slot_run("2026-11-19T02:00:00Z", self.title(1), run_id=2),
+                               slot_run("2026-11-18T22:42:00Z", self.title(15), run_id=1)],
+                              "2026-11-19T12:41:00Z")
+        self.assertTrue(rows["social-extra.yml 01:50Z"]["fresh"])
+        self.assertTrue(rows["social-extra.yml 15:50Z"]["fresh"])
+        self.assertEqual([], gh.dispatched())
+
+    def test_three_days_of_failed_runs_are_red_and_the_morning_slot_is_redispatched(self):
+        runs = [slot_run("2026-11-18T09:13:00Z", self.title(1), conclusion="failure", run_id=4),
+                slot_run("2026-11-17T23:11:00Z", self.title(15), conclusion="failure", run_id=3),
+                slot_run("2026-11-15T20:38:00Z", self.title(15), run_id=2),
+                slot_run("2026-11-15T02:00:00Z", self.title(1), run_id=1)]
+        rows, gh = self.judge(runs, "2026-11-18T12:41:00Z")
+        morning, evening = rows["social-extra.yml 01:50Z"], rows["social-extra.yml 15:50Z"]
+        self.assertFalse(morning["fresh"])
+        self.assertFalse(evening["fresh"])
+        self.assertEqual("retriggered", morning["action"])           # today's 01:50 slot, same Taiwan day
+        self.assertEqual("outside_taiwan_day", evening["action"])    # yesterday's 15:50 slot: red, for a person
+        dispatch = next(argv for argv in gh.calls if argv[:3] == ["gh", "workflow", "run"])
+        self.assertEqual(["-f", "cron=50 1 * * *"], dispatch[-2:])
+
+
+class SocialFeedEvidenceTests(unittest.TestCase):
+    """feed.json on the social-feed branch is what Bluesky, YouTube Shorts and Pinterest post from."""
+
+    NOW = at("2026-11-19T12:41:00Z")
+
+    @staticmethod
+    def feed(**head):
+        """A feed as social_extra.py writes it (json.dumps(export(day), indent=1)): head fields, then items."""
+        return json.dumps({"schema": "lumi.social-feed/v1", **head, "items": {"bluesky": []}, "pool": {}},
+                          ensure_ascii=False, indent=1).encode()
+
+    def row(self, payload):
+        fetch = payload if callable(payload) else (lambda url: self.feed(**payload))
+        stamp, note = wd.social_feed(fetch, "owner/repo")
+        return wd.judge_evidence("social_feed", stamp, note, self.NOW)
+
+    def test_it_is_guide_evidence_read_from_the_social_feed_branch(self):
+        self.assertIn("social_feed", GUIDE_PROFILE["evidence"])
+        self.assertNotIn("social_feed", wd.PROFILES["threads-autopilot"]["evidence"])
+        seen = []
+        wd.social_feed(lambda url: seen.append(url) or b"{}", "owner/repo")
+        import social_extra
+        self.assertEqual(social_extra.FEED_SCHEMA, wd.SOCIAL_FEED_SCHEMA)
+        # Only the head of the feed is read, so export() must keep writing these fields before the items.
+        source = (HERE / "social_extra.py").read_text(encoding="utf-8")
+        self.assertRegex(source, r'\{"schema": FEED_SCHEMA, "date": [^\n]*\n\s*"generated_at": [^\n]*"items": items')
+        self.assertEqual(["https://raw.githubusercontent.com/owner/repo/social-feed/feed.json"], seen)
+        text = (WORKFLOW_DIR / "social-extra.yml").read_text(encoding="utf-8")
+        self.assertIn("HEAD:refs/heads/social-feed", text)
+        self.assertIn('"$W/feed.json"', text)
+
+    def test_todays_feed_is_fresh(self):
+        row = self.row({"date": "2026-11-19", "generated_at": "2026-11-19T02:02:29Z"})
+        self.assertTrue(row["fresh"])
+        self.assertIn("feed date 2026-11-19", row["note"])
+
+    def test_a_feed_cut_off_at_the_fetch_limit_is_still_read(self):
+        # 2026-11-19 the real feed was 3.8 MB and the watchdog's fetch stops at 2 MB: half a JSON document.
+        whole = json.dumps({"schema": "lumi.social-feed/v1", "date": "2026-11-19",
+                            "generated_at": "2026-11-19T02:02:29Z",
+                            "items": {"pinterest": [{"generated_at": "1999-01-01T00:00:00Z", "pad": "x" * 500}] * 5000}},
+                           indent=1).encode()
+        self.assertGreater(len(whole), 2_000_000)
+        cut = whole[:2_000_000]
+        with self.assertRaises(ValueError):
+            json.loads(cut)
+        stamp, note = wd.social_feed(lambda url: cut, "owner/repo")
+        self.assertEqual("2026-11-19T02:02:29Z", wd.iso(stamp))  # the feed's own stamp, not an item's field
+
+    def test_the_three_day_old_feed_of_2026_11_18_is_red(self):
+        row = self.row({"date": "2026-11-15", "generated_at": "2026-11-15T20:38:20Z"})
+        self.assertFalse(row["fresh"])
+        self.assertEqual("2026-11-15T20:38:20Z", row["last_success"])
+        self.assertEqual(30, row["max_age_hours"])
+
+    def test_a_feed_that_cannot_be_read_is_red_with_the_reason_and_never_an_exception(self):
+        def refused(url):
+            raise OSError("HTTP Error 404: Not Found")
+        other = json.dumps({"schema": "other/v1", "generated_at": "2026-11-19T02:02:29Z", "items": {}}).encode()
+        for payload in (refused, lambda url: b"<html>", lambda url: b"[]", lambda url: other,
+                        {"date": "2026-11-19"}, {"date": "2026-11-19", "generated_at": "soon"}):
+            row = self.row(payload)
+            self.assertFalse(row["fresh"], payload)
+            self.assertEqual("never", row["last_success"])
+            self.assertTrue(row["note"])
+
+    def test_the_guide_profile_run_judges_the_new_lines(self):
+        names = (list(GUIDE_PROFILE["workflows"]) + list(GUIDE_PROFILE["watch_only_workflows"]) + list(GUIDE_SLOTS))
+        table = {
+            "actions/workflows?per_page=100": {"workflows": [
+                {"path": f".github/workflows/{name}", "id": i, "state": "active", "name": name}
+                for i, name in enumerate(names, start=1)
+            ]},
+            "run view": "message_id: 300",
+            "compare/abcdef1234...main": {"status": "ahead"},
+            "/runs?": {"workflow_runs": [event_run("2026-11-19T12:00:00Z")]},
+        }
+        feed = json.dumps({"source_commit": "abcdef1234", "schema": "lumi.social-feed/v1", "date": "2026-11-15",
+                           "generated_at": "2026-11-15T20:38:20Z", "items": {}}).encode()
+        gh = ScriptedGh(table)
+        rows = wd.run("ios-app-guide", "owner/repo", Path("."), now=self.NOW, gh=gh, dispatch=False,
+                      fetch=lambda url: feed)
+        by_line = {row["line"]: row for row in rows}
+        for name in ("clip-replan.yml", "post-performance.yml", "android-promo-sync.yml", "owner-decisions.yml",
+                     "link-backfill.yml", "comment-replies.yml"):
+            self.assertTrue(by_line[name]["fresh"], name)
+        self.assertIn("social-extra.yml 01:50Z", by_line)
+        self.assertFalse(by_line["social_feed"]["fresh"])
+        self.assertEqual("evidence", by_line["social_feed"]["kind"])
+
+
 if __name__ == "__main__":
     unittest.main()

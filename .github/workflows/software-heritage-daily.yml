@@ -20,6 +20,7 @@ concurrency:
 jobs:
   archive:
     runs-on: ubuntu-latest
+    timeout-minutes: 15  # runs take about a minute; the default would let a hung request sit for 6 h
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5

@@ -1,0 +1,7 @@
+{
+ "schema": "lumi.android-no-promote/v1",
+ "note": "Android packages that are never promoted and never mapped to an iOS app, even when Google Play lists them publicly (lib/android_live.resolve lists them in `excluded`; geo/android_play.build_snapshot lists them in `unmapped` with reason no_promote and validate_snapshot rejects a snapshot that maps one). Remove a row only on a rule change in CLAUDE.md.",
+ "packages": {
+  "com.alice51849.MetroTimeHelper": "CLAUDE.md rule 4.8: the unlisted free Android edition of MetroTimeHelper (folder 56_MetroTimeHelper) is the only allowed takedown exception and is never promoted; the paid com.alice51849.metrotimehelper.paid (56_MetroTimeHelperPaid, revenue_os) is the Play edition for metrotimehelper. Its package equals the iOS bundle id, so without this row a re-published free edition would win the bundle-id match"
+ }
+}

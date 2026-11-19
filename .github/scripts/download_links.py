@@ -467,7 +467,7 @@ _CAMPAIGN_FAMILIES = (("h7_", _CLIP_CAMPAIGN, None), ("cd_", _CLIP_CAMPAIGN, Non
                       ("h_", _HERO_CAMPAIGN, None), ("bm_", _BM_CAMPAIGN, "web"))
 _CAMPAIGN_EXACT = {
     "soc_th_guide": "threads", "rp_th": "threads", "bf_th": "threads",
-    "soc_tg_guide": "telegram", "soc_tg_digest": "telegram", "bf_tg": "telegram",
+    "soc_tg_guide": "telegram", "soc_tg_digest": "telegram", "bf_tg": "telegram", "bf_bs": "bluesky",
     "rp_ig": "instagram", "bf_ig": "instagram", "yt_shorts": "youtube", "standard_site": "web",
     "mastodon": "social", "nostr": "social", "devto": "social",
 }

@@ -1,7 +1,7 @@
 {
  "schema": "lumi.social-feed/v1",
  "date": "2026-11-19",
- "generated_at": "2026-11-19T09:33:00Z",
+ "generated_at": "2026-11-19T16:04:41Z",
  "items": {
   "bluesky": [
    {
@@ -182,46 +182,68 @@
    },
    {
     "kind": "clip",
-    "key": "ledmovingtext_b/de",
-    "locale": "de",
-    "app": "ledmovingtext_b",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/kj3ei9.mp4",
-    "hook": "LED Moving Text: fertige Vorlagen",
-    "name": "LED Moving Text",
-    "title": "LED Moving Text: fertige Vorlagen | Leuchttafel · Anzeigetafel · Namensschild | LED Moving Text",
+    "key": "wifiaid/ja",
+    "locale": "ja",
+    "app": "wifiaid",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/s367cp.mp4",
+    "hook": "ワンタップで診断",
+    "name": "WiFi Aid：ネット不調の原因を特定",
+    "title": "ワンタップで診断 | ルーター・メッシュ・DNS診断 | WiFi Aid ネット不調",
     "tags": [
-     "#Anzeigetafel",
-     "#Namensschild",
-     "#Schriftzug",
-     "#LEDMovingText"
+     "#ネット不調の原因を特定",
+     "#アクセスポイント",
+     "#遅延",
+     "#ジッター",
+     "#WiFiAidネット不調"
     ],
-    "caption": "LED Moving Text: fertige Vorlagen\nEin Effekt, der auffällt\nLeuchttafel · Anzeigetafel · Namensschild\nIm App Store nach „LED Moving Text“ suchen\nAuch bei Google Play\n\n#Anzeigetafel #Namensschild #LEDMovingText",
-    "button": "Im App Store laden",
+    "caption": "ワンタップで診断\n遅延も安定性も\nルーター・メッシュ・DNS診断\nWiFi Aid：ネット不調の原因を特定\nApp Storeで「WiFi Aid ネット不調」を検索\nAndroidはGoogle Playで\n\n#ネット不調の原因を特定 #アクセスポイント #WiFiAidネット不調",
+    "button": "App Storeで入手",
     "variant": "b",
-    "alt": "LED Moving Text — LED Moving Text: fertige Vorlagen — Ein Effekt, der auffällt — Leuchttafel · Anzeigetafel · Namensschild",
-    "store": "https://apps.apple.com/de/app/id6806639602?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LEDMovingText&referrer=utm_source%3Dsocial%26utm_campaign%3Dledmovingtext",
+    "alt": "WiFi Aid：ネット不調の原因を特定 — ワンタップで診断 — 遅延も安定性も — ルーター・メッシュ・DNS診断",
+    "store": "https://apps.apple.com/jp/app/id6790467886?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.WiFiAid&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaid",
     "review": {
-     "label": "Du nutzt diese App schon? Bewerte sie oder schreib eine Rezension im App Store",
-     "url": "https://apps.apple.com/app/id6806639602?action=write-review"
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6790467886?action=write-review"
     },
     "keywords": [
-     "Leuchttafel",
-     "Anzeigetafel",
-     "Namensschild",
-     "Schriftzug",
-     "Konzert",
-     "Aushang"
+     "アクセスポイント",
+     "遅延",
+     "ジッター",
+     "安定性",
+     "応答時間",
+     "IPv6"
     ],
-    "keyline": "Leuchttafel · Anzeigetafel · Namensschild",
+    "keyline": "ルーター・メッシュ・DNS診断",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "fe3b47793e6e2b43",
-     "real_recording": true,
+     "board": "d8bf12cb51e50aa0",
+     "real_recording": false,
      "rules": "2026-10-18"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "card/suneung2027/2026-11-19",
+    "locale": "ko",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/countdown-cards/card-20261119.jpg",
+    "caption": "오늘 수능, 모두 응원해요\n할 수 있어요\n\nApp Store · Google Play에서 'CountDaysNow' 검색\n\n#디데이카운터 #디데이 #카운트다운",
+    "title": "오늘 수능, 모두 응원해요",
+    "alt": "CountDaysNow — 오늘 수능, 모두 응원해요 — 할 수 있어요 — App Store · Google Play에서 'CountDaysNow' 검색 — D-day 위젯·기념일·날짜계산",
+    "name": "CountDaysNow",
+    "hook": "오늘 수능, 모두 응원해요",
+    "tags": [
+     "#디데이카운터",
+     "#디데이",
+     "#카운트다운",
+     "#날짜계산",
+     "#CountDaysNow"
+    ],
+    "button": "App Store에서 받기",
+    "store": "https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow"
    },
    {
     "kind": "card",
@@ -1670,46 +1692,68 @@
    },
    {
     "kind": "clip",
-    "key": "ledmovingtext_b/de",
-    "locale": "de",
-    "app": "ledmovingtext_b",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/kj3ei9.mp4",
-    "hook": "LED Moving Text: fertige Vorlagen",
-    "name": "LED Moving Text",
-    "title": "LED Moving Text: fertige Vorlagen | Leuchttafel · Anzeigetafel · Namensschild | LED Moving Text",
+    "key": "wifiaid/ja",
+    "locale": "ja",
+    "app": "wifiaid",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/s367cp.mp4",
+    "hook": "ワンタップで診断",
+    "name": "WiFi Aid：ネット不調の原因を特定",
+    "title": "ワンタップで診断 | ルーター・メッシュ・DNS診断 | WiFi Aid ネット不調",
     "tags": [
-     "#Anzeigetafel",
-     "#Namensschild",
-     "#Schriftzug",
-     "#LEDMovingText"
+     "#ネット不調の原因を特定",
+     "#アクセスポイント",
+     "#遅延",
+     "#ジッター",
+     "#WiFiAidネット不調"
     ],
-    "caption": "LED Moving Text: fertige Vorlagen\nEin Effekt, der auffällt\nLeuchttafel · Anzeigetafel · Namensschild\nIm App Store nach „LED Moving Text“ suchen\nAuch bei Google Play\n\n#Anzeigetafel #Namensschild #Schriftzug #LEDMovingText",
-    "button": "Im App Store laden",
+    "caption": "ワンタップで診断\n遅延も安定性も\nルーター・メッシュ・DNS診断\nWiFi Aid：ネット不調の原因を特定\nApp Storeで「WiFi Aid ネット不調」を検索\nAndroidはGoogle Playで\n\n#ネット不調の原因を特定 #アクセスポイント #遅延 #ジッター #WiFiAidネット不調",
+    "button": "App Storeで入手",
     "variant": "b",
-    "alt": "LED Moving Text — LED Moving Text: fertige Vorlagen — Ein Effekt, der auffällt — Leuchttafel · Anzeigetafel · Namensschild",
-    "store": "https://apps.apple.com/de/app/id6806639602?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LEDMovingText&referrer=utm_source%3Dsocial%26utm_campaign%3Dledmovingtext",
+    "alt": "WiFi Aid：ネット不調の原因を特定 — ワンタップで診断 — 遅延も安定性も — ルーター・メッシュ・DNS診断",
+    "store": "https://apps.apple.com/jp/app/id6790467886?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.WiFiAid&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaid",
     "review": {
-     "label": "Du nutzt diese App schon? Bewerte sie oder schreib eine Rezension im App Store",
-     "url": "https://apps.apple.com/app/id6806639602?action=write-review"
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6790467886?action=write-review"
     },
     "keywords": [
-     "Leuchttafel",
-     "Anzeigetafel",
-     "Namensschild",
-     "Schriftzug",
-     "Konzert",
-     "Aushang"
+     "アクセスポイント",
+     "遅延",
+     "ジッター",
+     "安定性",
+     "応答時間",
+     "IPv6"
     ],
-    "keyline": "Leuchttafel · Anzeigetafel · Namensschild",
+    "keyline": "ルーター・メッシュ・DNS診断",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "fe3b47793e6e2b43",
-     "real_recording": true,
+     "board": "d8bf12cb51e50aa0",
+     "real_recording": false,
      "rules": "2026-10-18"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "card/suneung2027/2026-11-19",
+    "locale": "ko",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/countdown-cards/card-20261119.jpg",
+    "caption": "오늘 수능, 모두 응원해요\n할 수 있어요\n\nApp Store · Google Play에서 'CountDaysNow' 검색\n\n#디데이카운터 #디데이 #카운트다운 #날짜계산 #CountDaysNow",
+    "title": "오늘 수능, 모두 응원해요",
+    "alt": "CountDaysNow — 오늘 수능, 모두 응원해요 — 할 수 있어요 — App Store · Google Play에서 'CountDaysNow' 검색 — D-day 위젯·기념일·날짜계산",
+    "name": "CountDaysNow",
+    "hook": "오늘 수능, 모두 응원해요",
+    "tags": [
+     "#디데이카운터",
+     "#디데이",
+     "#카운트다운",
+     "#날짜계산",
+     "#CountDaysNow"
+    ],
+    "button": "App Store에서 받기",
+    "store": "https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow"
    },
    {
     "kind": "card",
@@ -1973,57 +2017,59 @@
    },
    {
     "kind": "clip",
-    "key": "ledmovingtext_b/de",
-    "locale": "de",
-    "app": "ledmovingtext_b",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/kj3ei9.mp4",
-    "hook": "LED Moving Text: fertige Vorlagen",
-    "name": "LED Moving Text",
-    "title": "LED Moving Text: fertige Vorlagen | Leuchttafel · Anzeigetafel · Namensschild | LED Moving Text",
+    "key": "wifiaid/ja",
+    "locale": "ja",
+    "app": "wifiaid",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/s367cp.mp4",
+    "hook": "ワンタップで診断",
+    "name": "WiFi Aid：ネット不調の原因を特定",
+    "title": "ワンタップで診断 | ルーター・メッシュ・DNS診断 | WiFi Aid ネット不調",
     "tags": [
-     "#Anzeigetafel",
-     "#Namensschild",
-     "#Schriftzug",
-     "#LEDMovingText"
+     "#ネット不調の原因を特定",
+     "#アクセスポイント",
+     "#遅延",
+     "#ジッター",
+     "#WiFiAidネット不調"
     ],
-    "caption": "LED Moving Text: fertige Vorlagen\nEin Effekt, der auffällt\nLeuchttafel · Anzeigetafel · Namensschild\nIm App Store nach „LED Moving Text“ suchen\nAuch bei Google Play\n\n#Anzeigetafel #Namensschild #Schriftzug #LEDMovingText",
-    "button": "Im App Store laden",
+    "caption": "ワンタップで診断\n遅延も安定性も\nルーター・メッシュ・DNS診断\nWiFi Aid：ネット不調の原因を特定\nApp Storeで「WiFi Aid ネット不調」を検索\nAndroidはGoogle Playで\n\n#ネット不調の原因を特定 #アクセスポイント #遅延 #ジッター #WiFiAidネット不調",
+    "button": "App Storeで入手",
     "variant": "b",
-    "alt": "LED Moving Text — LED Moving Text: fertige Vorlagen — Ein Effekt, der auffällt — Leuchttafel · Anzeigetafel · Namensschild",
-    "store": "https://apps.apple.com/de/app/id6806639602?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LEDMovingText&referrer=utm_source%3Dsocial%26utm_campaign%3Dledmovingtext",
+    "alt": "WiFi Aid：ネット不調の原因を特定 — ワンタップで診断 — 遅延も安定性も — ルーター・メッシュ・DNS診断",
+    "store": "https://apps.apple.com/jp/app/id6790467886?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.WiFiAid&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaid",
     "review": {
-     "label": "Du nutzt diese App schon? Bewerte sie oder schreib eine Rezension im App Store",
-     "url": "https://apps.apple.com/app/id6806639602?action=write-review"
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6790467886?action=write-review"
     },
     "keywords": [
-     "Leuchttafel",
-     "Anzeigetafel",
-     "Namensschild",
-     "Schriftzug",
-     "Konzert",
-     "Aushang"
+     "アクセスポイント",
+     "遅延",
+     "ジッター",
+     "安定性",
+     "応答時間",
+     "IPv6"
     ],
-    "keyline": "Leuchttafel · Anzeigetafel · Namensschild",
+    "keyline": "ルーター・メッシュ・DNS診断",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "fe3b47793e6e2b43",
-     "real_recording": true,
+     "board": "d8bf12cb51e50aa0",
+     "real_recording": false,
      "rules": "2026-10-18"
     },
     "youtube": {
-     "title": "LED Moving Text: fertige Vorlagen | LED Moving Text #Shorts",
-     "description": "LED Moving Text: fertige Vorlagen\nEin Effekt, der auffällt\nLeuchttafel · Anzeigetafel · Namensschild\n\nLED Moving Text\nApp Store: https://apps.apple.com/de/app/id6806639602?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LEDMovingText&referrer=utm_source%3Dsocial%26utm_campaign%3Dledmovingtext\nDu nutzt diese App schon? Bewerte sie oder schreib eine Rezension im App Store\nhttps://apps.apple.com/app/id6806639602?action=write-review\n\nLeuchttafel · Anzeigetafel · Namensschild · Schriftzug · Konzert · Aushang\n\n#Shorts #Anzeigetafel #LEDMovingText",
+     "title": "ワンタップで診断 | WiFi Aid ネット不調 #Shorts",
+     "description": "ワンタップで診断\n遅延も安定性も\nルーター・メッシュ・DNS診断\n\nWiFi Aid：ネット不調の原因を特定\nApp Store: https://apps.apple.com/jp/app/id6790467886?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.WiFiAid&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaid\nこのアプリをお使いですか？App Store で評価・レビューできます\nhttps://apps.apple.com/app/id6790467886?action=write-review\n\nアクセスポイント · 遅延 · ジッター · 安定性 · 応答時間 · IPv6\n\n#Shorts #ネット不調の原因を特定 #WiFiAidネット不調",
      "tags": [
-      "Leuchttafel",
-      "Anzeigetafel",
-      "Namensschild",
-      "Schriftzug",
-      "Konzert",
-      "Aushang",
-      "LEDMovingText",
-      "LED Moving Text"
+      "アクセスポイント",
+      "遅延",
+      "ジッター",
+      "安定性",
+      "応答時間",
+      "IPv6",
+      "ネット不調の原因を特定",
+      "WiFiAidネット不調",
+      "WiFi Aid ネット不調"
      ]
     },
     "slot": 15
@@ -2224,50 +2270,76 @@
    },
    {
     "kind": "clip",
-    "key": "ledmovingtext_b/de",
-    "locale": "de",
-    "app": "ledmovingtext_b",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/kj3ei9.mp4",
-    "hook": "LED Moving Text: fertige Vorlagen",
-    "name": "LED Moving Text",
-    "title": "LED Moving Text: fertige Vorlagen | Leuchttafel · Anzeigetafel · Namensschild | LED Moving Text",
+    "key": "wifiaid/ja",
+    "locale": "ja",
+    "app": "wifiaid",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/s367cp.mp4",
+    "hook": "ワンタップで診断",
+    "name": "WiFi Aid：ネット不調の原因を特定",
+    "title": "ワンタップで診断 | ルーター・メッシュ・DNS診断 | WiFi Aid ネット不調",
     "tags": [
-     "#Anzeigetafel",
-     "#Namensschild",
-     "#Schriftzug",
-     "#LEDMovingText"
+     "#ネット不調の原因を特定",
+     "#アクセスポイント",
+     "#遅延",
+     "#ジッター",
+     "#WiFiAidネット不調"
     ],
-    "caption": "LED Moving Text: fertige Vorlagen\nEin Effekt, der auffällt\nLeuchttafel · Anzeigetafel · Namensschild\nIm App Store nach „LED Moving Text“ suchen\nAuch bei Google Play\n\n#Anzeigetafel #Namensschild #Schriftzug #LEDMovingText",
-    "button": "Im App Store laden",
+    "caption": "ワンタップで診断\n遅延も安定性も\nルーター・メッシュ・DNS診断\nWiFi Aid：ネット不調の原因を特定\nApp Storeで「WiFi Aid ネット不調」を検索\nAndroidはGoogle Playで\n\n#ネット不調の原因を特定 #アクセスポイント #遅延 #ジッター #WiFiAidネット不調",
+    "button": "App Storeで入手",
     "variant": "b",
-    "alt": "LED Moving Text — LED Moving Text: fertige Vorlagen — Ein Effekt, der auffällt — Leuchttafel · Anzeigetafel · Namensschild",
-    "store": "https://apps.apple.com/de/app/id6806639602?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LEDMovingText&referrer=utm_source%3Dsocial%26utm_campaign%3Dledmovingtext",
+    "alt": "WiFi Aid：ネット不調の原因を特定 — ワンタップで診断 — 遅延も安定性も — ルーター・メッシュ・DNS診断",
+    "store": "https://apps.apple.com/jp/app/id6790467886?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.WiFiAid&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaid",
     "review": {
-     "label": "Du nutzt diese App schon? Bewerte sie oder schreib eine Rezension im App Store",
-     "url": "https://apps.apple.com/app/id6806639602?action=write-review"
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6790467886?action=write-review"
     },
     "keywords": [
-     "Leuchttafel",
-     "Anzeigetafel",
-     "Namensschild",
-     "Schriftzug",
-     "Konzert",
-     "Aushang"
+     "アクセスポイント",
+     "遅延",
+     "ジッター",
+     "安定性",
+     "応答時間",
+     "IPv6"
     ],
-    "keyline": "Leuchttafel · Anzeigetafel · Namensschild",
+    "keyline": "ルーター・メッシュ・DNS診断",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "fe3b47793e6e2b43",
-     "real_recording": true,
+     "board": "d8bf12cb51e50aa0",
+     "real_recording": false,
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "LED Moving Text: fertige Vorlagen\nEin Effekt, der auffällt\nLeuchttafel · Anzeigetafel · Namensschild\nIm App Store nach „LED Moving Text“ suchen\nAuch bei Google Play\n\n#Anzeigetafel #Namensschild #Schriftzug #LEDMovingText\n\nIm App Store laden: https://apps.apple.com/de/app/id6806639602?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LEDMovingText&referrer=utm_source%3Dsocial%26utm_campaign%3Dledmovingtext",
-     "link": "https://apps.apple.com/de/app/id6806639602?pt=118326163&ct=social&mt=8"
+     "description": "ワンタップで診断\n遅延も安定性も\nルーター・メッシュ・DNS診断\nWiFi Aid：ネット不調の原因を特定\nApp Storeで「WiFi Aid ネット不調」を検索\nAndroidはGoogle Playで\n\n#ネット不調の原因を特定 #アクセスポイント #遅延 #ジッター #WiFiAidネット不調\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6790467886?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.WiFiAid&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaid",
+     "link": "https://apps.apple.com/jp/app/id6790467886?pt=118326163&ct=social&mt=8"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "card/suneung2027/2026-11-19",
+    "locale": "ko",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/countdown-cards/card-20261119.jpg",
+    "caption": "오늘 수능, 모두 응원해요\n할 수 있어요\n\nApp Store · Google Play에서 'CountDaysNow' 검색\n\n#디데이카운터 #디데이 #카운트다운 #날짜계산 #CountDaysNow",
+    "title": "오늘 수능, 모두 응원해요",
+    "alt": "CountDaysNow — 오늘 수능, 모두 응원해요 — 할 수 있어요 — App Store · Google Play에서 'CountDaysNow' 검색 — D-day 위젯·기념일·날짜계산",
+    "name": "CountDaysNow",
+    "hook": "오늘 수능, 모두 응원해요",
+    "tags": [
+     "#디데이카운터",
+     "#디데이",
+     "#카운트다운",
+     "#날짜계산",
+     "#CountDaysNow"
+    ],
+    "button": "App Store에서 받기",
+    "store": "https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
+    "pinterest": {
+     "description": "오늘 수능, 모두 응원해요\n할 수 있어요\n\nApp Store · Google Play에서 'CountDaysNow' 검색\n\n#디데이카운터 #디데이 #카운트다운 #날짜계산 #CountDaysNow\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
+     "link": "https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8"
+    }
    },
    {
     "kind": "card",
@@ -5470,47 +5542,48 @@
    },
    {
     "kind": "clip",
-    "key": "ledmovingtext_b/de",
-    "locale": "de",
-    "app": "ledmovingtext_b",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/kj3ei9.mp4",
-    "hook": "LED Moving Text: fertige Vorlagen",
-    "name": "LED Moving Text",
-    "title": "LED Moving Text: fertige Vorlagen | Leuchttafel · Anzeigetafel · Namensschild | LED Moving Text",
+    "key": "wifiaid/ja",
+    "locale": "ja",
+    "app": "wifiaid",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/s367cp.mp4",
+    "hook": "ワンタップで診断",
+    "name": "WiFi Aid：ネット不調の原因を特定",
+    "title": "ワンタップで診断 | ルーター・メッシュ・DNS診断 | WiFi Aid ネット不調",
     "tags": [
-     "#Anzeigetafel",
-     "#Namensschild",
-     "#Schriftzug",
-     "#LEDMovingText"
+     "#ネット不調の原因を特定",
+     "#アクセスポイント",
+     "#遅延",
+     "#ジッター",
+     "#WiFiAidネット不調"
     ],
-    "caption": "LED Moving Text: fertige Vorlagen\nEin Effekt, der auffällt\nLeuchttafel · Anzeigetafel · Namensschild\nIm App Store nach „LED Moving Text“ suchen\nAuch bei Google Play\n\n#Anzeigetafel #Namensschild #Schriftzug #LEDMovingText",
-    "button": "Im App Store laden",
+    "caption": "ワンタップで診断\n遅延も安定性も\nルーター・メッシュ・DNS診断\nWiFi Aid：ネット不調の原因を特定\nApp Storeで「WiFi Aid ネット不調」を検索\nAndroidはGoogle Playで\n\n#ネット不調の原因を特定 #アクセスポイント #遅延 #ジッター #WiFiAidネット不調",
+    "button": "App Storeで入手",
     "variant": "b",
-    "alt": "LED Moving Text — LED Moving Text: fertige Vorlagen — Ein Effekt, der auffällt — Leuchttafel · Anzeigetafel · Namensschild",
-    "store": "https://apps.apple.com/de/app/id6806639602?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LEDMovingText&referrer=utm_source%3Dsocial%26utm_campaign%3Dledmovingtext",
+    "alt": "WiFi Aid：ネット不調の原因を特定 — ワンタップで診断 — 遅延も安定性も — ルーター・メッシュ・DNS診断",
+    "store": "https://apps.apple.com/jp/app/id6790467886?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.WiFiAid&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaid",
     "review": {
-     "label": "Du nutzt diese App schon? Bewerte sie oder schreib eine Rezension im App Store",
-     "url": "https://apps.apple.com/app/id6806639602?action=write-review"
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6790467886?action=write-review"
     },
     "keywords": [
-     "Leuchttafel",
-     "Anzeigetafel",
-     "Namensschild",
-     "Schriftzug",
-     "Konzert",
-     "Aushang"
+     "アクセスポイント",
+     "遅延",
+     "ジッター",
+     "安定性",
+     "応答時間",
+     "IPv6"
     ],
-    "keyline": "Leuchttafel · Anzeigetafel · Namensschild",
+    "keyline": "ルーター・メッシュ・DNS診断",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "fe3b47793e6e2b43",
-     "real_recording": true,
+     "board": "d8bf12cb51e50aa0",
+     "real_recording": false,
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "LED Moving Text: fertige Vorlagen\nEin Effekt, der auffällt\nLeuchttafel · Anzeigetafel · Namensschild\nIm App Store nach „LED Moving Text“ suchen\nAuch bei Google Play\n\n#Anzeigetafel #Namensschild #Schriftzug #LEDMovingText\n\nIm App Store laden: https://apps.apple.com/de/app/id6806639602?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LEDMovingText&referrer=utm_source%3Dsocial%26utm_campaign%3Dledmovingtext"
+     "caption": "ワンタップで診断\n遅延も安定性も\nルーター・メッシュ・DNS診断\nWiFi Aid：ネット不調の原因を特定\nApp Storeで「WiFi Aid ネット不調」を検索\nAndroidはGoogle Playで\n\n#ネット不調の原因を特定 #アクセスポイント #遅延 #ジッター #WiFiAidネット不調\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6790467886?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.WiFiAid&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaid"
     },
     "slot": 15
    }

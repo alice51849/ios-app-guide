@@ -272,7 +272,7 @@ class Gh:
     TRANSIENT = ("tls handshake timeout", "i/o timeout", "timeout", "connection reset",
                  "connection refused", "eof", "no such host", "temporary failure",
                  "http 502", "http 503", "http 504", "bad gateway", "service unavailable",
-                 "gateway timeout")
+                 "gateway timeout", "broken pipe")
     RETRY_DELAYS = (5, 15, 45)
 
     @classmethod
@@ -806,6 +806,15 @@ def _http_post(url: str, payload: dict) -> None:
         response.read(10_000)
 
 
+def _unreadable_row(line: str, kind: str, max_age_hours: float, error: Exception) -> dict:
+    """查詢重試後仍讀不到的線：記紅列（fail-closed），不讓整輪判決中斷。"""
+    return {
+        "line": line, "kind": kind, "fresh": False, "last_success": "unknown",
+        "max_age_hours": max_age_hours, "in_progress": False, "action": "unreadable",
+        "note": f"workflow runs unreadable (fail-closed): {error}"[:200],
+    }
+
+
 def run(profile_name: str, repo: str, root: Path, *, now: float, gh: Gh,
         dispatch: bool, fetch: Callable[[str], bytes] = _http_get,
         site: str = "https://open.cait518.cc/ios-app-guide") -> list[dict]:
@@ -822,7 +831,12 @@ def run(profile_name: str, repo: str, root: Path, *, now: float, gh: Gh,
                 "note": f"workflow {meta['state'] if meta else 'missing'} (not judged)",
             })
             continue
-        rows.append(judge_workflow(gh, workflow_file, max_age, now, dispatch=dispatch))
+        # 2026-11-19 run 44481961615：一條線的查詢斷線（重試後仍失敗）就讓整輪沒有任何判決、
+        # 報告與紅燈議題都不更新。改成那一條記紅列（讀不到＝紅，不是綠），其餘照常判。
+        try:
+            rows.append(judge_workflow(gh, workflow_file, max_age, now, dispatch=dispatch))
+        except WatchdogError as error:
+            rows.append(_unreadable_row(workflow_file, "workflow", max_age, error))
     for workflow_file, spec in (profile.get("watch_only_workflows") or {}).items():
         meta = known.get(workflow_file)
         if meta is None or meta["state"] != "active":
@@ -832,8 +846,11 @@ def run(profile_name: str, repo: str, root: Path, *, now: float, gh: Gh,
                 "note": f"workflow {meta['state'] if meta else 'missing'} (not judged)",
             })
             continue
-        rows.append(judge_workflow(gh, workflow_file, spec["max_age_hours"], now, dispatch=dispatch,
-                                   watch_only=spec["reason"]))
+        try:
+            rows.append(judge_workflow(gh, workflow_file, spec["max_age_hours"], now, dispatch=dispatch,
+                                       watch_only=spec["reason"]))
+        except WatchdogError as error:
+            rows.append(_unreadable_row(workflow_file, "workflow", spec["max_age_hours"], error))
     for workflow_file, spec in SLOT_WORKFLOWS.get(profile_name, {}).items():
         meta = known.get(workflow_file)
         if meta is None or meta["state"] != "active":
@@ -843,7 +860,10 @@ def run(profile_name: str, repo: str, root: Path, *, now: float, gh: Gh,
                 "note": f"workflow {meta['state'] if meta else 'missing'} (not judged)",
             })
             continue
-        rows.extend(judge_slots(gh, workflow_file, spec, now, dispatch=dispatch))
+        try:
+            rows.extend(judge_slots(gh, workflow_file, spec, now, dispatch=dispatch))
+        except WatchdogError as error:
+            rows.append(_unreadable_row(workflow_file, "slot", spec["max_age_hours"], error))
     for name in profile["evidence"]:
         if name == "threads_receipts":
             stamp, count = threads_receipts(root); note = f"{count} confirmed Threads receipts"

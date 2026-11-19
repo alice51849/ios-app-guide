@@ -610,6 +610,58 @@ class GuideProfileSlotRunTests(unittest.TestCase):
         self.assertEqual([], gh.dispatched())
 
 
+class UnreadableWorkflowTests(unittest.TestCase):
+    """run 44481961615：一條線的查詢斷線不能讓整輪沒有判決。"""
+
+    BROKEN = ("geo-daily.yml", "comment-replies.yml", "reels-daily.yml")
+
+    def test_unreadable_lines_are_red_rows_and_the_rest_are_still_judged(self):
+        broken = self.BROKEN
+
+        class FlakyGh(ScriptedGh):
+            def runs(self, workflow_file, *args, **kwargs):
+                if workflow_file in broken:
+                    raise wd.WatchdogError(
+                        "gh api repos/o/r failed: write tcp 1.2.3.4:1->5.6.7.8:443: write: broken pipe")
+                return super().runs(workflow_file, *args, **kwargs)
+
+        profile = wd.PROFILES["ios-app-guide"]
+        names = (list(profile["workflows"]) + list(profile.get("watch_only_workflows") or {})
+                 + list(GUIDE_SLOTS))
+        table = {
+            "actions/workflows?per_page=100": {"workflows": [
+                {"path": f".github/workflows/{name}", "id": i, "state": "active", "name": name}
+                for i, name in enumerate(names, start=1)
+            ]},
+            "workflows/telegram-daily.yml/runs": {"workflow_runs": [
+                slot_run("2026-10-16T09:01:00Z", "Telegram", run_id=77)]},
+            "run view 77": "message_id: 300",
+            "compare/abcdef1234...main": {"status": "ahead"},
+            "/runs?": {"workflow_runs": [slot_run("2026-10-16T12:00:00Z", "generic")]},
+        }
+        payload = json.dumps({"source_commit": "abcdef1234", "generated_at": "2026-10-16T10:00:00Z"}).encode()
+        gh = FlakyGh(table)
+        rows = wd.run("ios-app-guide", "owner/repo", Path("."), now=at("2026-10-16T12:41:00Z"),
+                      gh=gh, dispatch=False, fetch=lambda url: payload)
+        by_line = {row["line"]: row for row in rows}
+        for name in broken:
+            self.assertFalse(by_line[name]["fresh"], name)
+            self.assertEqual("unreadable", by_line[name]["action"])
+            self.assertIn("broken pipe", by_line[name]["note"])
+        judged = {row["line"].split(" ")[0] for row in rows}
+        for name in names:
+            self.assertIn(name, judged)
+        for name in profile["evidence"]:
+            self.assertIn(name, by_line)
+        self.assertEqual([], gh.dispatched())
+        # 紅列照常進報告（讀不到＝紅）
+        table_text = wd.render_table(rows, at("2026-10-16T12:41:00Z"))
+        self.assertIn("geo-daily.yml", table_text)
+
+    def test_broken_pipe_is_a_transient_error(self):
+        self.assertIn("broken pipe", wd.Gh.TRANSIENT)
+
+
 class IgBioHubLineTests(unittest.TestCase):
     """ig-bio-hub.yml rebuilds the Instagram profile-link hub (cron 41 3 * * *) and reads it back live. It is a
     daily workflow line: judged by a 30h window, re-dispatched with no inputs when it goes quiet."""

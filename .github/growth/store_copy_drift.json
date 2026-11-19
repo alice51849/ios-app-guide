@@ -913,14 +913,14 @@
     "摺疊手機桌布",
     "折叠屏壁纸"
    ],
-   "live_updated": "2026-11-15",
-   "live_version": "1.0.5",
+   "live_updated": "2026-11-19",
+   "live_version": "1.0.6",
    "locales": {
     "de-DE": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-15",
-     "live_version": "1.0.5",
+     "live_updated": "2026-11-19",
+     "live_version": "1.0.6",
      "same": true
     },
     "en-GB": {
@@ -954,30 +954,36 @@
     "ja": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-15",
-     "live_version": "1.0.5",
+     "live_updated": "2026-11-19",
+     "live_version": "1.0.6",
      "same": true
     },
     "ko": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-15",
-     "live_version": "1.0.5",
+     "live_updated": "2026-11-19",
+     "live_version": "1.0.6",
      "same": true
     },
     "pt-BR": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-15",
-     "live_version": "1.0.5",
+     "live_updated": "2026-11-19",
+     "live_version": "1.0.6",
      "same": true
     },
     "zh-Hans": {
-     "added": [],
-     "dropped": [],
+     "added": [
+      "专为 iPhone Duo 双屏打造的成对壁纸:合上,外屏是特写;展开,内屏是整片全景,两张出自同一幅原创画面。",
+      "300+ 组原创成对壁纸・14 种风格・5 款小组件直接用你选的壁纸绘制・无广告、不收集数据。"
+     ],
+     "dropped": [
+      "专为 iPhone Duo 折叠屏打造的双屏成对壁纸:合上,外屏是特写;展开,内屏是整片全景,两张出自同一幅原创画面。",
+      "300+ 组原创成对壁纸·14 种风格·5 款小组件直接用你选的壁纸绘制·无广告、不收集数据。"
+     ],
      "live_updated": "2026-11-15",
      "live_version": "1.0.5",
-     "same": true
+     "same": false
     },
     "zh-Hant": {
      "added": [],
@@ -987,7 +993,7 @@
      "same": true
     }
    },
-   "status": "green"
+   "status": "red"
   },
   "easyam": {
    "blocked_terms": [],
@@ -3384,14 +3390,14 @@
      "dropped": [],
      "live_updated": "2026-11-18",
      "live_version": "1.0.8",
-     "same": false
+     "same": true
     },
     "en-GB": {
      "added": [],
      "dropped": [],
      "live_updated": "2026-11-18",
      "live_version": "1.0.8",
-     "same": false
+     "same": true
     },
     "en-US": {
      "added": [],
@@ -3405,52 +3411,52 @@
      "dropped": [],
      "live_updated": "2026-11-18",
      "live_version": "1.0.8",
-     "same": false
+     "same": true
     },
     "fr-FR": {
      "added": [],
      "dropped": [],
      "live_updated": "2026-11-18",
      "live_version": "1.0.8",
-     "same": false
+     "same": true
     },
     "ja": {
      "added": [],
      "dropped": [],
      "live_updated": "2026-11-18",
      "live_version": "1.0.8",
-     "same": false
+     "same": true
     },
     "ko": {
      "added": [],
      "dropped": [],
      "live_updated": "2026-11-18",
      "live_version": "1.0.8",
-     "same": false
+     "same": true
     },
     "pt-BR": {
      "added": [],
      "dropped": [],
      "live_updated": "2026-11-18",
      "live_version": "1.0.8",
-     "same": false
+     "same": true
     },
     "zh-Hans": {
      "added": [],
      "dropped": [],
      "live_updated": "2026-11-18",
      "live_version": "1.0.8",
-     "same": false
+     "same": true
     },
     "zh-Hant": {
      "added": [],
      "dropped": [],
      "live_updated": "2026-11-18",
      "live_version": "1.0.8",
-     "same": false
+     "same": true
     }
    },
-   "status": "red"
+   "status": "green"
   },
   "savetag": {
    "blocked_terms": [],
@@ -5050,6 +5056,6 @@
   "unknown": 0
  },
  "errors": [],
- "generated_at": "2026-11-19T04:45:50Z",
+ "generated_at": "2026-11-19T09:17:18Z",
  "schema": "growth.store-copy-drift/v1"
 }

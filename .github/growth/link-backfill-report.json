@@ -1,18 +1,54 @@
 {
- "generated": "2026-11-19T02:38:47Z",
+ "generated": "2026-11-19T20:45:31Z",
  "mode": "apply",
  "counts": {
-  "ok_reply": 76,
-  "ok_backfilled_earlier": 106,
+  "ok_reply": 79,
+  "ok_backfilled_earlier": 107,
   "unknown_app": 47,
-  "ok_store_only": 626,
-  "backfilled": 1,
+  "ok_store_only": 624,
+  "backfilled": 2,
   "ok_bio_link": 68,
   "ok_caption": 4,
   "taken_down": 4,
   "missing": 3
  },
  "rows": [
+  {
+   "channel": "threads",
+   "id": "18143110609552088",
+   "permalink": "https://www.threads.com/@hourstag.app/post/Df7h_47Dxul",
+   "date": "2026-11-19",
+   "app": "duowallpaperstudio",
+   "status": "ok_reply",
+   "text": "Every set is a true pair, composed for both screens. Foldable Wallpaper Studio",
+   "why": "brand",
+   "ios_id": "6824946559",
+   "locale": "en"
+  },
+  {
+   "channel": "threads",
+   "id": "18083959130406068",
+   "permalink": "https://www.threads.com/@hourstag.app/post/Df7Wt7KEeiM",
+   "date": "2026-11-19",
+   "app": "lumiweather",
+   "status": "ok_reply",
+   "text": "明天（11/20 週五）穿什麼？ 台北 14–18°C 台中 14–17°C 高雄 20–23°C 以台北來說，偏冷：長袖＋毛衣或刷毛，外面加一件防風外套。 #明天穿什麼 #天氣 預報：MET Norway，僅供參考，出門前以實際天氣為準。 我做的 Lumi天氣星球 會把體感溫度",
+   "why": "brand",
+   "ios_id": "6779552704",
+   "locale": "zh-Hant"
+  },
+  {
+   "channel": "threads",
+   "id": "18074851067759346",
+   "permalink": "https://www.threads.com/@hourstag.app/post/Df6LXq9DdKi",
+   "date": "2026-11-19",
+   "app": "mochi",
+   "status": "ok_reply",
+   "text": "Holiday travel packing used to mean remembering the charger at the airport. Now there's a cute packing checklist on my phone: chargers, meds",
+   "why": "trial",
+   "ios_id": "6785004775",
+   "locale": "en-US"
+  },
   {
    "channel": "threads",
    "id": "18133861984830390",
@@ -3813,11 +3849,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DcthL1jDnce",
    "date": "2026-08-31",
    "app": "wifiaidlite",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "WiFi Aid Lite Network Diagnosis & Evidence Find the real problem. Each tool includes one free complete use. Optional one-time lifetime unloc",
    "why": "url+brand",
    "ios_id": "6793414462",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "18120845066051933",
+   "at": "2026-11-19T20:42:46Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -3933,11 +3974,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DcthRJSlINn",
    "date": "2026-08-31",
    "app": "wordmate",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "Wordmate: Learn 44 Languages 44 Languages & Vocab Widget One App Store purchase includes practical words in 44 languages, the interactive wi",
    "why": "url+brand",
    "ios_id": "6789917808",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "18140095978656142",
+   "at": "2026-11-19T20:42:46Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -4279,16 +4325,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DcthWmNlNm4",
    "date": "2026-08-31",
    "app": "wordmatelite",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "Wordmate Lite: Learn Words Five a day, one quiet minute Five words, one minute, one step you can see. No decks to build, no review pile wait",
    "why": "url+brand",
    "ios_id": "6797601720",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "18106939586010490",
-   "at": "2026-11-19T02:37:20Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",

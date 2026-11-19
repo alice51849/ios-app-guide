@@ -2,7 +2,7 @@
 title: "кращий додаток для відстеження циклу без облікового запису для iPhone"
 lang: "uk"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/cyca/decision/l/uk/index.html"
-modified: "2026-11-17"
+modified: "2026-11-19"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -21,6 +21,7 @@ publisher: "Lumi Studio"
 - Без відстеження
 - Приватно / на пристрої
 - App Store · Безкоштовно
+- ★ 4.0/5 · 1
 
 [Отримайте Cyca в App Store →](https://apps.apple.com/ua/app/id6782251621?pt=118326163&ct=geo_pick&mt=8)
 

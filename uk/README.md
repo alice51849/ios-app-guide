@@ -14,11 +14,11 @@
 >
 > Запити — це редакційні описи передбачуваних випадків використання, а не дані про обсяг пошуку, рейтинги, незалежні огляди чи відгуки користувачів.
 
-## Каталог намірів пошуку видавця Lumi Studio · MCP v1.1.0 · Agent Skill
+## Каталог намірів пошуку видавця Lumi Studio · MCP v1.3.0 · Agent Skill
 
 Каталог першої сторони, що описує, для кого призначений кожен додаток, яке завдання він допомагає виконати, і прямий шлях до App Store.
 
-[VS Code](https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.1.0%252Flumi-app-finder-npx.tgz%2522%255D%257D) · [Cursor](https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjEuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D) · [Claude Desktop (MCPB)](https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder.mcpb) · [MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.1.0) · [MCP client config](https://open.cait518.cc/ios-app-guide/data/lumi-app-finder.mcp.json) · [SHA256SUMS](https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/SHA256SUMS) · [Agent Skill](https://github.com/alice51849/lumi-mcp/tree/v1.1.0/skills/lumi-app-finder) · [GitHub](https://github.com/alice51849/lumi-mcp)
+[VS Code](https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.3.0%252Flumi-app-finder-npx.tgz%2522%255D%257D) · [Cursor](https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjMuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D) · [Claude Desktop (MCPB)](https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder.mcpb) · [MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.3.0) · [MCP client config](https://open.cait518.cc/ios-app-guide/data/lumi-app-finder.mcp.json) · [SHA256SUMS](https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/SHA256SUMS) · [Agent Skill](https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder) · [GitHub](https://github.com/alice51849/lumi-mcp)
 
 <details>
 <summary>Agent Skill · GitHub Copilot · Claude Code · Cursor · Codex · Gemini CLI · Vercel skills.sh</summary>
@@ -26,55 +26,55 @@
 **Agent Skill · GitHub Copilot**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user
 ```
 
 **Agent Skill · Claude Code**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent claude-code
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent claude-code
 ```
 
 **Agent Skill · Cursor**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent cursor
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent cursor
 ```
 
 **Agent Skill · Codex**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent codex
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent codex
 ```
 
 **Agent Skill · Gemini CLI**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent gemini-cli
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent gemini-cli
 ```
 
 **Agent Skill · Vercel skills.sh**
 
 ```sh
-npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.1.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
+npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
 ```
 
 **Claude Code**
 
 ```sh
-claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder-npx.tgz
+claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 ```
 
 **Codex**
 
 ```sh
-codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder-npx.tgz
+codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 ```
 
 **Gemini CLI**
 
 ```sh
-gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder-npx.tgz
+gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 ```
 
 </details>
@@ -92,7 +92,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **100 Notes Studio: Pen & Paper** | 100 Notes Studio: Pen & Paper — Рукописні нотатки та PDF \| iOS App | Пишіть від руки, як ручкою на папері: 29 ручок і пензлів — від перової ручки й олівця до каліграфічного пензля та акварелі, а за рукописним текстом потім | Безкоштовно для початку · розблокування за одну покупку | [Путівник](https://open.cait518.cc/ios-app-guide/uk/notesstudio100.html) | [Завантажте 100 Notes Studio: Pen & Paper з App Store](https://apps.apple.com/ua/app/id6798813048?pt=118326163&ct=geo_pick&mt=8) |
 | **AI Brief: Файли в промпт ШІ** | AI Brief: Файли в промпт ШІ — Промпти з файлів і PDF \| iOS App | Перетворіть знімки екрана, PDF, файли й нотатки на один упорядкований промпт для ШІ, де мета, факти й джерела розкладені по місцях. | Безкоштовно для початку · розблокування за одну покупку | [Путівник](https://open.cait518.cc/ios-app-guide/uk/aibriefpack.html) | [Завантажте AI Brief: Файли в промпт ШІ з App Store](https://apps.apple.com/ua/app/id6791658210?pt=118326163&ct=geo_pick&mt=8) |
 | **Aim990** | кращий додаток для підготовки до TOEIC офлайн з планом навчання для iPhone | Частина 5 здається короткою, але питання з неповними реченнями можуть забирати час, якщо граматика та словниковий запас не автоматичні. | Безкоштовно для початку · розблокування за одну покупку | [Путівник](https://open.cait518.cc/ios-app-guide/uk/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [Отримайте Aim990 в App Store →](https://apps.apple.com/ua/app/id6784974530?pt=118326163&ct=geo_pick&mt=8) |
-| **BattAI: Стан батареї** | BattAI: Стан батареї — Сигнал заряду й перегріву \| iOS App | Оцінюйте стан батареї балами й стежте за динамікою. | Безкоштовно для початку · розблокування за одну покупку | [Путівник](https://open.cait518.cc/ios-app-guide/uk/battai.html) | [Завантажте BattAI: Стан батареї з App Store](https://apps.apple.com/ua/app/id6802423998?pt=118326163&ct=geo_pick&mt=8) |
+| **BattAI: Стан батареї** | BattAI: Стан батареї — Сигнал заряду й перегріву \| iOS App | Дізнайтеся, як швидко старіє акумулятор і коли його пора міняти. Дивіться, на скільки ще вистачить заряду, вчасно отримуйте сповіщення про повне заряджання | Безкоштовно для початку · розблокування за одну покупку | [Путівник](https://open.cait518.cc/ios-app-guide/uk/battai.html) | [Завантажте BattAI: Стан батареї з App Store](https://apps.apple.com/ua/app/id6802423998?pt=118326163&ct=geo_pick&mt=8) |
 | **CalDaily: калькулятор і теми** | CalDaily: калькулятор і теми — Віджет, інструменти, історія \| iOS App | Гарний калькулятор, який пам’ятає: 100 вбудованих тем і віджет на початковому екрані, що рахує без відкриття застосунку. | Безкоштовно для початку · розблокування за одну покупку | [Путівник](https://open.cait518.cc/ios-app-guide/uk/caldaily.html) | [Завантажте CalDaily: калькулятор і теми з App Store](https://apps.apple.com/ua/app/id6794178671?pt=118326163&ct=geo_pick&mt=8) |
 | **CountDaysNow: Event Counter** | CountDaysNow: Event Counter — Фокус дня \| iOS App | • Фокус дня Минуло · Сьогодні · Попереду — Зберегти | Безкоштовно для початку · розблокування за одну покупку | [Путівник](https://open.cait518.cc/ios-app-guide/uk/countdaysnow.html) | [Завантажте CountDaysNow: Event Counter з App Store](https://apps.apple.com/ua/app/id6807079789?pt=118326163&ct=geo_pick&mt=8) |
 | **CV Desk** | кращий додаток для створення резюме для змін кар’єри 2026 | Коли ви змінюєте сферу, проблема резюме інша: ваш досвід реальний, але на папері «нерелевантний», і фільтри ATS відкидають вас раніше, ніж це побачить людина. Саме цю прогалину й закриває CV Desk. | Безкоштовно для початку · розблокування за одну покупку | [Путівник](https://open.cait518.cc/ios-app-guide/uk/answers/best-resume-builder-app-for-career-changers-2026.html) | [Отримайте CV Desk в App Store →](https://apps.apple.com/ua/app/id6781337213?pt=118326163&ct=geo_pick&mt=8) |
@@ -132,7 +132,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **Sereno** | найкращий додаток білого шуму для засинання без підписки | Для сну підписка, що нагадує щомісяця, — це протилежність спокою. Якщо це про вас, погляньте на Sereno. | Безкоштовно для початку · розблокування за одну покупку | [Путівник](https://open.cait518.cc/ios-app-guide/uk/answers/best-white-noise-app-for-falling-asleep-no-subscription.html) | [Отримайте Sereno в App Store →](https://apps.apple.com/ua/app/id6788236641?pt=118326163&ct=geo_pick&mt=8) |
 | **ShotInbox AI: Sort Screenshots** | ShotInbox AI: Sort Screenshots — Органайзер знімків екрана \| iOS App | Скриншоти автоматично сортуються за категоріями: Покупки, Чеки, Квитки, Подорожі, Карти й місця, Чати й соцмережі, Робота та інші. | Безкоштовно для початку · розблокування за одну покупку | [Путівник](https://open.cait518.cc/ios-app-guide/uk/shotinbox.html) | [Завантажте ShotInbox AI: Sort Screenshots з App Store](https://apps.apple.com/ua/app/id6802166527?pt=118326163&ct=geo_pick&mt=8) |
 | **Snapport** | найкращий додаток для фото на паспорт для немовлят і малюків вдома | Для фото на паспорт дитини ніхто інший не повинен бути в кадрі, а фон має бути однотонним. Snapport виріс саме з цієї проблеми. | Платне завантаження | [Путівник](https://open.cait518.cc/ios-app-guide/uk/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html) | [Отримайте Snapport в App Store →](https://apps.apple.com/ua/app/id6780575828?pt=118326163&ct=geo_pick&mt=8) |
-| **Snapport Lite: ID-фото вдома** | Snapport Lite: ID-фото вдома — Портрети точно за розміром \| iOS App | Потрібне фото на документи, у резюме чи для заяви? Snapport Lite обрізає ваш портрет точно під вибраний розмір: 35 вбудованих шаблонів або власний розмір у | Безкоштовно для початку · розблокування за одну покупку | [Путівник](https://open.cait518.cc/ios-app-guide/uk/snapportlite.html) | [Завантажте Snapport Lite: ID-фото вдома з App Store](https://apps.apple.com/ua/app/id6792856304?pt=118326163&ct=geo_pick&mt=8) |
+| **Snapport Lite: Фото на паспорт** | Snapport Lite: Фото на паспорт — Портрети точно за розміром \| iOS App | Потрібне фото на документи, у резюме чи для заяви? Snapport Lite обрізає ваш портрет точно під вибраний розмір: 35 вбудованих шаблонів або власний розмір у | Безкоштовно для початку · розблокування за одну покупку | [Путівник](https://open.cait518.cc/ios-app-guide/uk/snapportlite.html) | [Завантажте Snapport Lite: Фото на паспорт з App Store](https://apps.apple.com/ua/app/id6792856304?pt=118326163&ct=geo_pick&mt=8) |
 | **Sono Note** | найкращий додаток для голосових нотаток, що підсумовує наради на iPhone | Після дзвінка вам не потрібен сирий транскрипт — вам потрібен підсумок, завдання і чернетка листа. Саме цю прогалину й закриває Sono Note. | Безкоштовно для початку · розблокування за одну покупку | [Путівник](https://open.cait518.cc/ios-app-guide/uk/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [Отримайте Sono Note в App Store →](https://apps.apple.com/ua/app/id6782139553?pt=118326163&ct=geo_pick&mt=8) |
 | **Stay Clock: відкидний годинник** | Stay Clock: відкидний годинник — Час і календар без перерви \| iOS App | Stay Clock перетворює ваш iPhone або iPad на настільний годинник, що світиться без перерви і читається з іншого кінця кімнати. Обирайте з 101 циферблата | Безкоштовно для початку · розблокування за одну покупку | [Путівник](https://open.cait518.cc/ios-app-guide/uk/stayclock.html) | [Завантажте Stay Clock: відкидний годинник з App Store](https://apps.apple.com/ua/app/id6814035888?pt=118326163&ct=geo_pick&mt=8) |
 | **Studydown** | таймер фокусу, що запускається, коли ви кладете телефон екраном донизу | Studydown — Трохи часу для проєкту, книги чи навички, яку ви хочете розвинути. Безкоштовний старт · Одноразове розблокування · Без підписки. | Безкоштовно для початку · розблокування за одну покупку | [Путівник](https://open.cait518.cc/ios-app-guide/uk/answers/focus-timer-that-starts-when-you-put-your-phone-face-down.html) | [Завантажити Studydown в App Store →](https://apps.apple.com/ua/app/id6807335593?pt=118326163&ct=geo_pick&mt=8) |
@@ -160,6 +160,6 @@ JSON, JSONL і CSV містять однакові 3 000 записів.
 
 [Головна](https://open.cait518.cc/ios-app-guide/uk/index.html) · [Відкриті дані](https://open.cait518.cc/ios-app-guide/uk/data/lumi-studio-publisher-search-intent-catalog.html) · [Ліцензія](https://creativecommons.org/licenses/by/4.0/)
 
-Оновлено: 2026-11-16
+Оновлено: 2026-11-19
 
 CC BY 4.0 застосовується до оригінального складання каталогу; назви додатків і знаки App Store належать їх власникам.

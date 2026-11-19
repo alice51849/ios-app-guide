@@ -12,8 +12,8 @@
   ],
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
-    "dateModified": "2026-11-18",
-    "contentDigest": "b072524f47e90d0a91bf4c7b3bc03c418a70ee490c972718962013c6f19e7d54",
+    "dateModified": "2026-11-19",
+    "contentDigest": "91aee8ee4380268fb5a17ba01db0c6d5ce0e94b4236a64dd93cfc66952e18cbd",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
     "recordCount": 60
@@ -504,13 +504,10 @@
         "vorschule",
         "grundschule",
         "zweisprachig",
-        "quiz",
-        "zhuyin lernen",
-        "bopomofo",
-        "mandarin kinder"
+        "quiz"
       ],
       "language": "de-DE",
-      "date_modified": "2026-11-16T18:06:12Z"
+      "date_modified": "2026-11-19T06:10:15Z"
     },
     {
       "id": "https://apps.apple.com/app/id6778748533",
@@ -817,11 +814,10 @@
         "tabelle",
         "pptx",
         "schule",
-        "one pager",
-        "präsentation erstellen"
+        "one pager"
       ],
       "language": "de-DE",
-      "date_modified": "2026-11-16T04:16:27Z"
+      "date_modified": "2026-11-19T06:10:15Z"
     },
     {
       "id": "https://apps.apple.com/app/id6781808054",
@@ -1315,10 +1311,12 @@
         "archiv",
         "auspacken",
         "unzip",
-        "extractor"
+        "extractor",
+        "rar-dateien öffnen",
+        "7z entpacken"
       ],
       "language": "de-DE",
-      "date_modified": "2026-10-29T19:44:01Z"
+      "date_modified": "2026-11-19T06:10:15Z"
     }
   ]
 }

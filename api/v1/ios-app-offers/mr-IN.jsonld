@@ -6,7 +6,7 @@
   "name": "Lumi Studio प्रकाशक शोध हेतू निर्देशिका",
   "description": "प्रत्येक अॅप कोणासाठी डिझाइन केले आहे, ते कोणते कार्य पूर्ण करण्याचा प्रयत्न करत आहेत, आणि थेट App Store मार्ग यांचा प्रथम पक्ष निर्देशिका.",
   "inLanguage": "mr-IN",
-  "dateModified": "2026-11-16",
+  "dateModified": "2026-11-19",
   "numberOfItems": 60,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -217,7 +217,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/mr-IN.jsonld#offer-battai",
         "url": "https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
         "name": "BattAI: बॅटरी आरोग्य गुण",
-        "description": "बॅटरीच्या आरोग्याला गुण द्या आणि कल पाहा.",
+        "description": "तुमची बॅटरी किती वेगाने जुनी होत आहे आणि ती कधी बदलावी हे जाणून घ्या. चार्ज किती वेळ टिकेल ते पाहा, फुल-चार्जची सूचना वेळेवर मिळवा आणि प्रत्येक चार्जची",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -247,7 +247,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802423998",
           "inLanguage": "mr-IN",
-          "description": "बॅटरीच्या आरोग्याला गुण द्या आणि कल पाहा.",
+          "description": "तुमची बॅटरी किती वेगाने जुनी होत आहे आणि ती कधी बदलावी हे जाणून घ्या. चार्ज किती वेळ टिकेल ते पाहा, फुल-चार्जची सूचना वेळेवर मिळवा आणि प्रत्येक चार्जची",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/mr-IN.jsonld#offer-battai"
           },
@@ -1057,7 +1057,7 @@
           ],
           "isAccessibleForFree": false
         },
-        "price": "999",
+        "price": "99",
         "priceCurrency": "INR",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {
@@ -2922,7 +2922,7 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/mr-IN.jsonld#offer-snapportlite",
         "url": "https://apps.apple.com/in/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Snapport Lite: घरीच ID फोटो",
+        "name": "Snapport Lite: आयडी फोटो आकार",
         "description": "ID फोटो, बायोडाटासाठी फोटो किंवा एखाद्या अर्जासाठी फोटो हवा आहे? Snapport Lite तुमचा पोर्ट्रेट तुम्ही निवडलेल्या अचूक आकारात कापतो: 35 अंगभूत टेम्पलेट",
         "seller": {
           "@type": "Organization",
@@ -2938,7 +2938,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6792856304"
           },
-          "name": "Snapport Lite: घरीच ID फोटो",
+          "name": "Snapport Lite: आयडी फोटो आकार",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
           "url": "https://apps.apple.com/in/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",

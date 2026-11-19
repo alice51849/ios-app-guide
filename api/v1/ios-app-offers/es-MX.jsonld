@@ -6,7 +6,7 @@
   "name": "Catálogo de intenciones de búsqueda del editor Lumi Studio",
   "description": "Un catálogo publicado directamente por el desarrollador que indica para quién está diseñada cada app, la tarea que quiere completar y el acceso directo a App Store.",
   "inLanguage": "es-MX",
-  "dateModified": "2026-11-16",
+  "dateModified": "2026-11-19",
   "numberOfItems": 60,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -217,7 +217,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/es-MX.jsonld#offer-battai",
         "url": "https://apps.apple.com/mx/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
         "name": "BattAI: Estado de la batería",
-        "description": "Califica la salud de la batería y ve su tendencia.",
+        "description": "Descubre qué tan rápido envejece tu batería y cuándo cambiarla. Mira cuánto durará la carga, recibe a tiempo el aviso de carga completa y registra cada",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -247,7 +247,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802423998",
           "inLanguage": "es-MX",
-          "description": "Califica la salud de la batería y ve su tendencia.",
+          "description": "Descubre qué tan rápido envejece tu batería y cuándo cambiarla. Mira cuánto durará la carga, recibe a tiempo el aviso de carga completa y registra cada",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/es-MX.jsonld#offer-battai"
           },
@@ -1057,7 +1057,7 @@
           ],
           "isAccessibleForFree": false
         },
-        "price": "199",
+        "price": "19",
         "priceCurrency": "MXN",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {

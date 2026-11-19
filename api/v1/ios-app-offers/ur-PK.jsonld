@@ -6,7 +6,7 @@
   "name": "Lumi Studio پبلشر سرچ انٹینٹ کیٹلاگ",
   "description": "ایسا کیٹلاگ جسے ڈویلپر براہ راست شائع کرتا ہے اور جو بتاتا ہے کہ ہر ایپ کس کے لیے بنائی گئی ہے، صارف کون سا کام مکمل کرنا چاہتا ہے اور App Store تک براہ راست کیسے پہنچنا ہے۔",
   "inLanguage": "ur-PK",
-  "dateModified": "2026-11-16",
+  "dateModified": "2026-11-19",
   "numberOfItems": 60,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -217,7 +217,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-battai",
         "url": "https://apps.apple.com/pk/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
         "name": "BattAI: بیٹری کی صحت کا اسکور",
-        "description": "بیٹری کی صحت کو اسکور دیں اور رجحان دیکھیں۔",
+        "description": "جانیں کہ آپ کی بیٹری کتنی تیزی سے پرانی ہو رہی ہے اور اسے کب بدلنا چاہیے۔ دیکھیں کہ چارج مزید کتنی دیر چلے گا، فل چارج کا الرٹ عین وقت پر پائیں اور ہر",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -247,7 +247,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802423998",
           "inLanguage": "ur-PK",
-          "description": "بیٹری کی صحت کو اسکور دیں اور رجحان دیکھیں۔",
+          "description": "جانیں کہ آپ کی بیٹری کتنی تیزی سے پرانی ہو رہی ہے اور اسے کب بدلنا چاہیے۔ دیکھیں کہ چارج مزید کتنی دیر چلے گا، فل چارج کا الرٹ عین وقت پر پائیں اور ہر",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-battai"
           },
@@ -1057,7 +1057,7 @@
           ],
           "isAccessibleForFree": false
         },
-        "price": "2500",
+        "price": "300",
         "priceCurrency": "PKR",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {

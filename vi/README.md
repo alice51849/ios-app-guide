@@ -14,11 +14,11 @@ Danh mục do chính nhà phát triển công bố, cho biết từng ứng dụ
 >
 > Các truy vấn là phần mô tả biên tập về trường hợp sử dụng dự kiến, không phải dữ liệu lượng tìm kiếm đã đo, bảng xếp hạng, đánh giá độc lập hay lời chứng thực của người dùng.
 
-## Danh mục ý định tìm kiếm của nhà phát hành Lumi Studio · MCP v1.1.0 · Agent Skill
+## Danh mục ý định tìm kiếm của nhà phát hành Lumi Studio · MCP v1.3.0 · Agent Skill
 
 Danh mục do chính nhà phát triển công bố, cho biết từng ứng dụng dành cho ai, nhiệm vụ họ muốn hoàn thành và lối truy cập trực tiếp đến App Store.
 
-[VS Code](https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.1.0%252Flumi-app-finder-npx.tgz%2522%255D%257D) · [Cursor](https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjEuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D) · [Claude Desktop (MCPB)](https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder.mcpb) · [MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.1.0) · [MCP client config](https://open.cait518.cc/ios-app-guide/data/lumi-app-finder.mcp.json) · [SHA256SUMS](https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/SHA256SUMS) · [Agent Skill](https://github.com/alice51849/lumi-mcp/tree/v1.1.0/skills/lumi-app-finder) · [GitHub](https://github.com/alice51849/lumi-mcp)
+[VS Code](https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.3.0%252Flumi-app-finder-npx.tgz%2522%255D%257D) · [Cursor](https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjMuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D) · [Claude Desktop (MCPB)](https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder.mcpb) · [MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.3.0) · [MCP client config](https://open.cait518.cc/ios-app-guide/data/lumi-app-finder.mcp.json) · [SHA256SUMS](https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/SHA256SUMS) · [Agent Skill](https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder) · [GitHub](https://github.com/alice51849/lumi-mcp)
 
 <details>
 <summary>Agent Skill · GitHub Copilot · Claude Code · Cursor · Codex · Gemini CLI · Vercel skills.sh</summary>
@@ -26,55 +26,55 @@ Danh mục do chính nhà phát triển công bố, cho biết từng ứng dụ
 **Agent Skill · GitHub Copilot**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user
 ```
 
 **Agent Skill · Claude Code**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent claude-code
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent claude-code
 ```
 
 **Agent Skill · Cursor**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent cursor
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent cursor
 ```
 
 **Agent Skill · Codex**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent codex
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent codex
 ```
 
 **Agent Skill · Gemini CLI**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent gemini-cli
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent gemini-cli
 ```
 
 **Agent Skill · Vercel skills.sh**
 
 ```sh
-npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.1.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
+npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
 ```
 
 **Claude Code**
 
 ```sh
-claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder-npx.tgz
+claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 ```
 
 **Codex**
 
 ```sh
-codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder-npx.tgz
+codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 ```
 
 **Gemini CLI**
 
 ```sh
-gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder-npx.tgz
+gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 ```
 
 </details>
@@ -92,7 +92,7 @@ Sắp xếp theo bảng chữ cái tên ứng dụng — không phải xếp h�
 | **100 Notes Studio: Pen & Paper** | 100 Notes Studio: Pen & Paper — Ghi chú viết tay và PDF \| iOS App | Viết tay ghi chú như bút trên giấy: 29 loại bút và cọ, từ bút máy, bút chì đến cọ thư pháp và màu nước, và sau này vẫn tìm kiếm được trong chữ viết tay của | Bắt đầu miễn phí · mở khóa bằng một lần mua | [Hướng dẫn](https://open.cait518.cc/ios-app-guide/vi/notesstudio100.html) | [Tải 100 Notes Studio: Pen & Paper trên App Store](https://apps.apple.com/vn/app/id6798813048?pt=118326163&ct=geo_pick&mt=8) |
 | **AI Brief** | best private app to organize screenshots and documents into context before using AI | AI Brief — Organize screenshots, PDFs, files, notes, and links into a traceable brief before sharing with any AI. Free to start · One-time unlock · No subscription. | Bắt đầu miễn phí · mở khóa bằng một lần mua | [Hướng dẫn](https://open.cait518.cc/ios-app-guide/vi/answers/best-private-app-to-organize-screenshots-and-documents-into-context-before-using-ai.html) | [Tải AI Brief trên App Store →](https://apps.apple.com/vn/app/id6791658210?pt=118326163&ct=geo_pick&mt=8) |
 | **Aim990** | ứng dụng luyện thi TOEIC tốt nhất không cần mạng với kế hoạch học cho iPhone | Phần 5 có vẻ ngắn, nhưng các câu hỏi câu chưa hoàn chỉnh có thể tốn thời gian nếu ngữ pháp và từ vựng không thành thạo. | Bắt đầu miễn phí · mở khóa bằng một lần mua | [Hướng dẫn](https://open.cait518.cc/ios-app-guide/vi/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [Tải Aim990 trên App Store →](https://apps.apple.com/vn/app/id6784974530?pt=118326163&ct=geo_pick&mt=8) |
-| **BattAI: Điểm tình trạng pin** | BattAI: Điểm tình trạng pin — Báo sạc đầy và pin nóng \| iOS App | Chấm điểm sức khỏe pin và xem xu hướng. | Bắt đầu miễn phí · mở khóa bằng một lần mua | [Hướng dẫn](https://open.cait518.cc/ios-app-guide/vi/battai.html) | [Tải BattAI: Điểm tình trạng pin trên App Store](https://apps.apple.com/vn/app/id6802423998?pt=118326163&ct=geo_pick&mt=8) |
+| **BattAI: Điểm tình trạng pin** | BattAI: Điểm tình trạng pin — Báo sạc đầy và pin nóng \| iOS App | Biết pin lão hóa nhanh đến đâu, khi nào nên thay và còn dùng được bao lâu. Nhận thông báo đầy pin đúng lúc, ghi lại mọi lần sạc. | Bắt đầu miễn phí · mở khóa bằng một lần mua | [Hướng dẫn](https://open.cait518.cc/ios-app-guide/vi/battai.html) | [Tải BattAI: Điểm tình trạng pin trên App Store](https://apps.apple.com/vn/app/id6802423998?pt=118326163&ct=geo_pick&mt=8) |
 | **CalDaily: máy tính và chủ đề** | CalDaily: máy tính và chủ đề — Widget, giảm giá, chia hóa đơn \| iOS App | Máy tính đẹp mà còn biết ghi nhớ: 100 giao diện có sẵn, cùng tiện ích Màn hình chính tính toán mà không cần mở ứng dụng. | Bắt đầu miễn phí · mở khóa bằng một lần mua | [Hướng dẫn](https://open.cait518.cc/ios-app-guide/vi/caldaily.html) | [Tải CalDaily: máy tính và chủ đề trên App Store](https://apps.apple.com/vn/app/id6794178671?pt=118326163&ct=geo_pick&mt=8) |
 | **CountDaysNow: Event Counter** | CountDaysNow: Event Counter — Trọng tâm hôm nay \| iOS App | • Trọng tâm hôm nay Từ đó · Hôm nay · Sắp tới — Lưu | Bắt đầu miễn phí · mở khóa bằng một lần mua | [Hướng dẫn](https://open.cait518.cc/ios-app-guide/vi/countdaysnow.html) | [Tải CountDaysNow: Event Counter trên App Store](https://apps.apple.com/vn/app/id6807079789?pt=118326163&ct=geo_pick&mt=8) |
 | **CV Desk** | ứng dụng tạo hồ sơ xin việc tốt nhất cho người đổi nghề 2026 | Khi bạn chuyển ngành, vấn đề hồ sơ khác: kinh nghiệm thật nhưng trên giấy tờ là 'không liên quan', và bộ lọc ATS loại bạn trước khi người đọc thấy. Đúng khoảng trống đó là thứ CV Desk muốn lấp. | Bắt đầu miễn phí · mở khóa bằng một lần mua | [Hướng dẫn](https://open.cait518.cc/ios-app-guide/vi/answers/best-resume-builder-app-for-career-changers-2026.html) | [Tải CV Desk trên App Store →](https://apps.apple.com/vn/app/id6781337213?pt=118326163&ct=geo_pick&mt=8) |
@@ -133,7 +133,7 @@ Sắp xếp theo bảng chữ cái tên ứng dụng — không phải xếp h�
 | **Sereno** | ứng dụng tiếng ồn trắng tốt nhất để dễ ngủ không cần đăng ký | Đối với giấc ngủ, đăng ký hàng tháng gây phiền toái là điều ngược lại với sự thư giãn. Nếu thấy quen, bạn thử xem Sereno. | Bắt đầu miễn phí · mở khóa bằng một lần mua | [Hướng dẫn](https://open.cait518.cc/ios-app-guide/vi/answers/best-white-noise-app-for-falling-asleep-no-subscription.html) | [Tải Sereno trên App Store →](https://apps.apple.com/vn/app/id6788236641?pt=118326163&ct=geo_pick&mt=8) |
 | **ShotInbox AI: Sắp xếp ảnh** | ShotInbox AI: Sắp xếp ảnh — Hình chụp màn hình và OCR \| iOS App | Ảnh chụp màn hình được tự động phân loại: Mua sắm, Hóa đơn, Vé, Du lịch, Bản đồ & địa điểm, Trò chuyện & xã hội, Công việc và nhiều hơn nữa. | Bắt đầu miễn phí · mở khóa bằng một lần mua | [Hướng dẫn](https://open.cait518.cc/ios-app-guide/vi/shotinbox.html) | [Tải ShotInbox AI: Sắp xếp ảnh trên App Store](https://apps.apple.com/vn/app/id6802166527?pt=118326163&ct=geo_pick&mt=8) |
 | **Snapport** | ứng dụng chụp ảnh hộ chiếu tốt nhất cho bé và trẻ nhỏ tại nhà | Ảnh hộ chiếu bé không được có người khác trong ảnh và nền phải trơn. Snapport khởi đi đúng từ vấn đề này. | Tải xuống trả phí | [Hướng dẫn](https://open.cait518.cc/ios-app-guide/vi/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html) | [Tải Snapport trên App Store →](https://apps.apple.com/vn/app/id6780575828?pt=118326163&ct=geo_pick&mt=8) |
-| **Snapport Lite: Ảnh thẻ tại nhà** | Snapport Lite: Ảnh thẻ tại nhà — Cắt chân dung đúng kích cỡ \| iOS App | Cần ảnh thẻ, ảnh dán hồ sơ xin việc hay để nộp đơn? Snapport Lite cắt ảnh chân dung của bạn đúng kích thước bạn chọn: 35 mẫu có sẵn, hoặc kích thước tự đặt | Bắt đầu miễn phí · mở khóa bằng một lần mua | [Hướng dẫn](https://open.cait518.cc/ios-app-guide/vi/snapportlite.html) | [Tải Snapport Lite: Ảnh thẻ tại nhà trên App Store](https://apps.apple.com/vn/app/id6792856304?pt=118326163&ct=geo_pick&mt=8) |
+| **Snapport Lite: Ảnh thẻ 4x6** | Snapport Lite: Ảnh thẻ 4x6 — Cắt chân dung đúng kích cỡ \| iOS App | Cần ảnh thẻ, ảnh dán hồ sơ xin việc hay để nộp đơn? Snapport Lite cắt ảnh chân dung của bạn đúng kích thước bạn chọn: 35 mẫu có sẵn, hoặc kích thước tự đặt | Bắt đầu miễn phí · mở khóa bằng một lần mua | [Hướng dẫn](https://open.cait518.cc/ios-app-guide/vi/snapportlite.html) | [Tải Snapport Lite: Ảnh thẻ 4x6 trên App Store](https://apps.apple.com/vn/app/id6792856304?pt=118326163&ct=geo_pick&mt=8) |
 | **Sono Note** | ứng dụng ghi âm tốt nhất tóm tắt cuộc họp trên iPhone | Sau cuộc gọi bạn không muốn bản ghi thô — bạn muốn bản tóm tắt, các mục hành động và bản nháp theo dõi — Sono Note được thiết kế cho điều này. | Bắt đầu miễn phí · mở khóa bằng một lần mua | [Hướng dẫn](https://open.cait518.cc/ios-app-guide/vi/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [Tải Sono Note trên App Store →](https://apps.apple.com/vn/app/id6782139553?pt=118326163&ct=geo_pick&mt=8) |
 | **Stay Clock: Đồng hồ lật để bàn** | Stay Clock: Đồng hồ lật để bàn — Đồng hồ và lịch luôn sáng \| iOS App | Stay Clock biến iPhone hoặc iPad của bạn thành một chiếc đồng hồ để bàn luôn sáng, đọc được từ đầu bên kia căn phòng. Chọn trong 101 mặt đồng hồ, có cả | Bắt đầu miễn phí · mở khóa bằng một lần mua | [Hướng dẫn](https://open.cait518.cc/ios-app-guide/vi/stayclock.html) | [Tải Stay Clock: Đồng hồ lật để bàn trên App Store](https://apps.apple.com/vn/app/id6814035888?pt=118326163&ct=geo_pick&mt=8) |
 | **Studydown: Đếm giờ tập trung** | Studydown: Đếm giờ tập trung — Úp màn hình xuống \| iOS App | Úp điện thoại xuống là bộ đếm bắt đầu, nhấc lên là tạm dừng, nên giờ học và giờ làm chỉ tính thời gian tập trung thật sự. | Bắt đầu miễn phí · mở khóa bằng một lần mua | [Hướng dẫn](https://open.cait518.cc/ios-app-guide/vi/studydown.html) | [Tải Studydown: Đếm giờ tập trung trên App Store](https://apps.apple.com/vn/app/id6807335593?pt=118326163&ct=geo_pick&mt=8) |
@@ -160,6 +160,6 @@ JSON, JSONL và CSV chứa cùng 3.000 bản ghi.
 
 [Trang chủ](https://open.cait518.cc/ios-app-guide/vi/index.html) · [Dữ liệu mở](https://open.cait518.cc/ios-app-guide/vi/data/lumi-studio-publisher-search-intent-catalog.html) · [Giấy phép](https://creativecommons.org/licenses/by/4.0/)
 
-Cập nhật: 2026-11-16
+Cập nhật: 2026-11-19
 
 CC BY 4.0 áp dụng cho bản tổng hợp danh mục gốc; tên ứng dụng và nhãn hiệu App Store thuộc sở hữu của chủ sở hữu tương ứng.

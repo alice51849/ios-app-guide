@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-11-18",
-  "content_digest": "b072524f47e90d0a91bf4c7b3bc03c418a70ee490c972718962013c6f19e7d54",
+  "date_modified": "2026-11-19",
+  "content_digest": "91aee8ee4380268fb5a17ba01db0c6d5ce0e94b4236a64dd93cfc66952e18cbd",
   "locale": "ru",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -65,7 +65,9 @@
         "OCR",
         "контекст",
         "чат",
-        "документы"
+        "документы",
+        "краткое содержание pdf",
+        "промпт ии"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -106,7 +108,8 @@
         "баллы",
         "тест",
         "слова",
-        "подготовка"
+        "подготовка",
+        "toeic аудирование"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -660,9 +663,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/ru/gbago.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "799",
+        "price": "99",
         "currency": "RUB",
-        "formatted_price": "799,00 ₽",
+        "formatted_price": "99,00 ₽",
         "storefront_url": "https://apps.apple.com/ru/app/id6804564400"
       }
     },
@@ -682,7 +685,8 @@
         "транжира",
         "привычки",
         "сожаление",
-        "минимализм"
+        "минимализм",
+        "импульсивные покупки"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2440,8 +2444,7 @@
         "gz",
         "iso",
         "папка",
-        "aes",
-        "распаковать 7z"
+        "aes"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,

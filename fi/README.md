@@ -14,11 +14,11 @@ Julkaisijan laatimat hakutarkoitukset 60 varmennetussa toimivassa iOS-sovellukse
 >
 > Kyselyt ovat toimituksellisia kuvauksia suunnitelluista käyttötapauksista, eivät mitattua hakumäärää, sijoituksia, itsenäisiä arvosteluja tai käyttäjien suosituksia.
 
-## Lumi Studio Julkaisijan Hakutarkoitusluettelo · MCP v1.1.0 · Agent Skill
+## Lumi Studio Julkaisijan Hakutarkoitusluettelo · MCP v1.3.0 · Agent Skill
 
 Ensimmäisen osapuolen luettelo siitä, kenelle kukin sovellus on suunniteltu, mitä tehtävää he pyrkivät suorittamaan ja suora App Store -polku.
 
-[VS Code](https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.1.0%252Flumi-app-finder-npx.tgz%2522%255D%257D) · [Cursor](https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjEuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D) · [Claude Desktop (MCPB)](https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder.mcpb) · [MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.1.0) · [MCP client config](https://open.cait518.cc/ios-app-guide/data/lumi-app-finder.mcp.json) · [SHA256SUMS](https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/SHA256SUMS) · [Agent Skill](https://github.com/alice51849/lumi-mcp/tree/v1.1.0/skills/lumi-app-finder) · [GitHub](https://github.com/alice51849/lumi-mcp)
+[VS Code](https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.3.0%252Flumi-app-finder-npx.tgz%2522%255D%257D) · [Cursor](https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjMuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D) · [Claude Desktop (MCPB)](https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder.mcpb) · [MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.3.0) · [MCP client config](https://open.cait518.cc/ios-app-guide/data/lumi-app-finder.mcp.json) · [SHA256SUMS](https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/SHA256SUMS) · [Agent Skill](https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder) · [GitHub](https://github.com/alice51849/lumi-mcp)
 
 <details>
 <summary>Agent Skill · GitHub Copilot · Claude Code · Cursor · Codex · Gemini CLI · Vercel skills.sh</summary>
@@ -26,55 +26,55 @@ Ensimmäisen osapuolen luettelo siitä, kenelle kukin sovellus on suunniteltu, m
 **Agent Skill · GitHub Copilot**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user
 ```
 
 **Agent Skill · Claude Code**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent claude-code
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent claude-code
 ```
 
 **Agent Skill · Cursor**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent cursor
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent cursor
 ```
 
 **Agent Skill · Codex**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent codex
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent codex
 ```
 
 **Agent Skill · Gemini CLI**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent gemini-cli
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent gemini-cli
 ```
 
 **Agent Skill · Vercel skills.sh**
 
 ```sh
-npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.1.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
+npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
 ```
 
 **Claude Code**
 
 ```sh
-claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder-npx.tgz
+claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 ```
 
 **Codex**
 
 ```sh
-codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder-npx.tgz
+codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 ```
 
 **Gemini CLI**
 
 ```sh
-gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder-npx.tgz
+gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 ```
 
 </details>
@@ -92,7 +92,7 @@ Aakkosjärjestyksessä sovelluksen nimen mukaan — ei koskaan sijoitus.
 | **100 Notes Studio: Pen & Paper** | 100 Notes Studio: Pen & Paper — Muistikirja, käsiala ja PDF \| iOS App | Kirjoita muistiinpanot käsin kuin kynällä paperille: 29 kynää ja sivellintä täytekynästä ja lyijykynästä kalligrafiasiveltimeen ja vesiväreihin, ja | Ilmainen aloitus · avaus kertaostoksella | [Opas](https://open.cait518.cc/ios-app-guide/fi/notesstudio100.html) | [Lataa 100 Notes Studio: Pen & Paper App Storesta](https://apps.apple.com/fi/app/id6798813048?pt=118326163&ct=geo_pick&mt=8) |
 | **AI Brief: Tiedostot promptiksi** | AI Brief: Tiedostot promptiksi — Tee prompteja tiedostoista \| iOS App | Muuta kuvakaappaukset, PDF:t, tiedostot ja muistiinpanot yhdeksi selkeäksi tekoälypromptiksi, jossa tavoite, faktat ja lähteet ovat järjestyksessä. | Ilmainen aloitus · avaus kertaostoksella | [Opas](https://open.cait518.cc/ios-app-guide/fi/aibriefpack.html) | [Lataa AI Brief: Tiedostot promptiksi App Storesta](https://apps.apple.com/fi/app/id6791658210?pt=118326163&ct=geo_pick&mt=8) |
 | **Aim990** | paras TOEIC-valmistelusovellus offline-opintosuunnitelmalla iPhonelle | Osa 5 näyttää lyhyeltä, mutta keskeneräiset lauseet voivat viedä aikaa, jos kielioppi ja sanasto eivät ole automaattisia. | Ilmainen aloitus · avaus kertaostoksella | [Opas](https://open.cait518.cc/ios-app-guide/fi/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [Hanki Aim990 App Storesta →](https://apps.apple.com/fi/app/id6784974530?pt=118326163&ct=geo_pick&mt=8) |
-| **BattAI: Akun kuntotulos** | BattAI: Akun kuntotulos — Lataus- ja lämpöilmoitukset \| iOS App | Anna akun kunnolle pisteet ja seuraa kehitystä. | Ilmainen aloitus · avaus kertaostoksella | [Opas](https://open.cait518.cc/ios-app-guide/fi/battai.html) | [Lataa BattAI: Akun kuntotulos App Storesta](https://apps.apple.com/fi/app/id6802423998?pt=118326163&ct=geo_pick&mt=8) |
+| **BattAI: Akun kuntotulos** | BattAI: Akun kuntotulos — Lataus- ja lämpöilmoitukset \| iOS App | Selvitä, kuinka nopeasti akkusi vanhenee ja milloin se kannattaa vaihtaa. Katso, kuinka kauan varaus kestää, saa täyteen latautumisen ilmoitus ajoissa ja | Ilmainen aloitus · avaus kertaostoksella | [Opas](https://open.cait518.cc/ios-app-guide/fi/battai.html) | [Lataa BattAI: Akun kuntotulos App Storesta](https://apps.apple.com/fi/app/id6802423998?pt=118326163&ct=geo_pick&mt=8) |
 | **CalDaily: laskin ja teemat** | CalDaily: laskin ja teemat — Widget, työkalut ja historia \| iOS App | Kaunis laskin, joka muistaa: 100 sisäänrakennettua teemaa ja kotinäytön widget, joka laskee avaamatta sovellusta. | Ilmainen aloitus · avaus kertaostoksella | [Opas](https://open.cait518.cc/ios-app-guide/fi/caldaily.html) | [Lataa CalDaily: laskin ja teemat App Storesta](https://apps.apple.com/fi/app/id6794178671?pt=118326163&ct=geo_pick&mt=8) |
 | **CountDaysNow: Event Counter** | CountDaysNow: Event Counter — Päivän fokus \| iOS App | • Päivän fokus Siitä · Tänään · Tulossa — Tallenna | Ilmainen aloitus · avaus kertaostoksella | [Opas](https://open.cait518.cc/ios-app-guide/fi/countdaysnow.html) | [Lataa CountDaysNow: Event Counter App Storesta](https://apps.apple.com/fi/app/id6807079789?pt=118326163&ct=geo_pick&mt=8) |
 | **CV Desk** | paras ansioluettelon laatijasovellus uranvaihtajille 2026 | Kun vaihdat alaa, ansioluettelon ongelma on erilainen: kokemuksesi on todellista, mutta 'ei liity alaan' paperilla, ja ATS-suodattimet hylkäävät sinut ennen kuin ihminen ehtii lukea. Juuri tuon aukon CV Desk on tarkoitus täyttää. | Ilmainen aloitus · avaus kertaostoksella | [Opas](https://open.cait518.cc/ios-app-guide/fi/answers/best-resume-builder-app-for-career-changers-2026.html) | [Hanki CV Desk App Storesta →](https://apps.apple.com/fi/app/id6781337213?pt=118326163&ct=geo_pick&mt=8) |
@@ -133,7 +133,7 @@ Aakkosjärjestyksessä sovelluksen nimen mukaan — ei koskaan sijoitus.
 | **Sereno** | paras valkoinen kohina -sovellus nukahtamiseen ilman tilausta | Unen kannalta kuukausittainen tilaus, joka ärsyttää, on kaikkea muuta kuin rentouttava. Jos tunnistat tilanteen, katso Sereno. | Ilmainen aloitus · avaus kertaostoksella | [Opas](https://open.cait518.cc/ios-app-guide/fi/answers/best-white-noise-app-for-falling-asleep-no-subscription.html) | [Hanki Sereno App Storesta →](https://apps.apple.com/fi/app/id6788236641?pt=118326163&ct=geo_pick&mt=8) |
 | **ShotInbox AI: Sort Screenshots** | ShotInbox AI: Sort Screenshots — Löydä ja järjestä näyttökuvat \| iOS App | Näyttökuvat lajitellaan automaattisesti: Ostokset, Kuitit, Liput, Matkat, Kartat ja paikat, Keskustelut ja some, Työ ja muut. | Ilmainen aloitus · avaus kertaostoksella | [Opas](https://open.cait518.cc/ios-app-guide/fi/shotinbox.html) | [Lataa ShotInbox AI: Sort Screenshots App Storesta](https://apps.apple.com/fi/app/id6802166527?pt=118326163&ct=geo_pick&mt=8) |
 | **Snapport** | paras passikuvien sovellus vauvoille ja taaperoille kotona | Vauvan passikuvassa ei saa olla muita ihmisiä eikä taustan saa olla kuvioitu. Snapport lähti liikkeelle juuri tuosta ongelmasta. | Maksullinen ladattavaksi | [Opas](https://open.cait518.cc/ios-app-guide/fi/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html) | [Hanki Snapport App Storesta →](https://apps.apple.com/fi/app/id6780575828?pt=118326163&ct=geo_pick&mt=8) |
-| **Snapport Lite: Ota passikuvat** | Snapport Lite: Ota passikuvat — Muotokuvat tarkkaan kokoon \| iOS App | Tarvitsetko passikuvan, kuvan ansioluetteloon tai hakemukseen? Snapport Lite rajaa muotokuvasi juuri valitsemaasi kokoon: 35 valmista mallia tai oma koko | Ilmainen aloitus · avaus kertaostoksella | [Opas](https://open.cait518.cc/ios-app-guide/fi/snapportlite.html) | [Lataa Snapport Lite: Ota passikuvat App Storesta](https://apps.apple.com/fi/app/id6792856304?pt=118326163&ct=geo_pick&mt=8) |
+| **Snapport Lite: Passikuvat** | Snapport Lite: Passikuvat — Muotokuvat tarkkaan kokoon \| iOS App | Tarvitsetko passikuvan, kuvan ansioluetteloon tai hakemukseen? Snapport Lite rajaa muotokuvasi juuri valitsemaasi kokoon: 35 valmista mallia tai oma koko | Ilmainen aloitus · avaus kertaostoksella | [Opas](https://open.cait518.cc/ios-app-guide/fi/snapportlite.html) | [Lataa Snapport Lite: Passikuvat App Storesta](https://apps.apple.com/fi/app/id6792856304?pt=118326163&ct=geo_pick&mt=8) |
 | **Sono Note** | paras äänimuistiinpanojen sovellus, joka tiivistää kokoukset iPhonella | Puhelun jälkeen et halua raakatekstiä — haluat tiivistelmän, toimintakohdat ja jatkoseurannan luonnoksen. Juuri tuon aukon Sono Note on tarkoitus täyttää. | Ilmainen aloitus · avaus kertaostoksella | [Opas](https://open.cait518.cc/ios-app-guide/fi/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [Hanki Sono Note App Storesta →](https://apps.apple.com/fi/app/id6782139553?pt=118326163&ct=geo_pick&mt=8) |
 | **Stay Clock: Pöytäkello** | Stay Clock: Pöytäkello — Aika ja kalenteri, aina päällä \| iOS App | Stay Clock muuttaa iPhonesi tai iPadisi pöytäkelloksi, joka on aina päällä ja luettavissa huoneen toiselta puolelta. Valitse 101 kellotaulusta, mukana myös | Ilmainen aloitus · avaus kertaostoksella | [Opas](https://open.cait518.cc/ios-app-guide/fi/stayclock.html) | [Lataa Stay Clock: Pöytäkello App Storesta](https://apps.apple.com/fi/app/id6814035888?pt=118326163&ct=geo_pick&mt=8) |
 | **Studydown: Ajastin** | Studydown: Ajastin — Käännä se näyttö alaspäin \| iOS App | Käännä puhelin näyttö alaspäin, niin ajastin käynnistyy; nosta se, niin ajastin pysähtyy. Opiskelu- ja työtunteihin lasketaan vain todellinen | Ilmainen aloitus · avaus kertaostoksella | [Opas](https://open.cait518.cc/ios-app-guide/fi/studydown.html) | [Lataa Studydown: Ajastin App Storesta](https://apps.apple.com/fi/app/id6807335593?pt=118326163&ct=geo_pick&mt=8) |
@@ -160,6 +160,6 @@ JSON, JSONL ja CSV sisältävät samat 3 000 tietuetta.
 
 [Etusivu](https://open.cait518.cc/ios-app-guide/fi/index.html) · [Avoin data](https://open.cait518.cc/ios-app-guide/fi/data/lumi-studio-publisher-search-intent-catalog.html) · [Lisenssi](https://creativecommons.org/licenses/by/4.0/)
 
-Päivitetty: 2026-11-16
+Päivitetty: 2026-11-19
 
 CC BY 4.0 koskee alkuperäisen luettelon kokoamista; sovellusten nimet ja App Store -merkit kuuluvat omistajilleen.

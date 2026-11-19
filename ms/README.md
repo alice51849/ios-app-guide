@@ -14,11 +14,11 @@ Niat carian yang ditulis penerbit untuk 60 aplikasi iOS yang disahkan dan tersed
 >
 > Pertanyaan ialah penerangan editorial tentang kegunaan yang dimaksudkan, bukan data volum carian yang diukur, kedudukan, ulasan bebas atau saranan pengguna.
 
-## Katalog Niat Carian Penerbit Lumi Studio · MCP v1.1.0 · Agent Skill
+## Katalog Niat Carian Penerbit Lumi Studio · MCP v1.3.0 · Agent Skill
 
 Katalog yang diterbitkan terus oleh pembangun untuk menerangkan sasaran setiap aplikasi, tugasan yang mahu diselesaikan dan akses terus ke App Store.
 
-[VS Code](https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.1.0%252Flumi-app-finder-npx.tgz%2522%255D%257D) · [Cursor](https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjEuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D) · [Claude Desktop (MCPB)](https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder.mcpb) · [MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.1.0) · [MCP client config](https://open.cait518.cc/ios-app-guide/data/lumi-app-finder.mcp.json) · [SHA256SUMS](https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/SHA256SUMS) · [Agent Skill](https://github.com/alice51849/lumi-mcp/tree/v1.1.0/skills/lumi-app-finder) · [GitHub](https://github.com/alice51849/lumi-mcp)
+[VS Code](https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.3.0%252Flumi-app-finder-npx.tgz%2522%255D%257D) · [Cursor](https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjMuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D) · [Claude Desktop (MCPB)](https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder.mcpb) · [MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.3.0) · [MCP client config](https://open.cait518.cc/ios-app-guide/data/lumi-app-finder.mcp.json) · [SHA256SUMS](https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/SHA256SUMS) · [Agent Skill](https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder) · [GitHub](https://github.com/alice51849/lumi-mcp)
 
 <details>
 <summary>Agent Skill · GitHub Copilot · Claude Code · Cursor · Codex · Gemini CLI · Vercel skills.sh</summary>
@@ -26,55 +26,55 @@ Katalog yang diterbitkan terus oleh pembangun untuk menerangkan sasaran setiap a
 **Agent Skill · GitHub Copilot**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user
 ```
 
 **Agent Skill · Claude Code**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent claude-code
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent claude-code
 ```
 
 **Agent Skill · Cursor**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent cursor
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent cursor
 ```
 
 **Agent Skill · Codex**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent codex
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent codex
 ```
 
 **Agent Skill · Gemini CLI**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent gemini-cli
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent gemini-cli
 ```
 
 **Agent Skill · Vercel skills.sh**
 
 ```sh
-npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.1.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
+npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
 ```
 
 **Claude Code**
 
 ```sh
-claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder-npx.tgz
+claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 ```
 
 **Codex**
 
 ```sh
-codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder-npx.tgz
+codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 ```
 
 **Gemini CLI**
 
 ```sh
-gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder-npx.tgz
+gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 ```
 
 </details>
@@ -92,7 +92,7 @@ Mengikut abjad mengikut nama aplikasi — bukan kedudukan.
 | **100 Notes Studio: Pen & Paper** | 100 Notes Studio: Pen & Paper — Nota tulisan tangan & PDF \| iOS App | Tulis nota dengan tangan seperti pen di atas kertas: 29 pen dan berus, daripada pen dakwat dan pensel hingga berus kaligrafi dan cat air, dan tulisan | Percuma untuk bermula · buka kunci sekali beli | [Panduan](https://open.cait518.cc/ios-app-guide/ms/notesstudio100.html) | [Dapatkan 100 Notes Studio: Pen & Paper di App Store](https://apps.apple.com/my/app/id6798813048?pt=118326163&ct=geo_pick&mt=8) |
 | **AI Brief** | best private app to organize screenshots and documents into context before using AI | AI Brief — Organize screenshots, PDFs, files, notes, and links into a traceable brief before sharing with any AI. Free to start · One-time unlock · No subscription. | Percuma untuk bermula · buka kunci sekali beli | [Panduan](https://open.cait518.cc/ios-app-guide/ms/answers/best-private-app-to-organize-screenshots-and-documents-into-context-before-using-ai.html) | [Dapatkan AI Brief di App Store →](https://apps.apple.com/my/app/id6791658210?pt=118326163&ct=geo_pick&mt=8) |
 | **Aim990** | apl persediaan toeic terbaik dengan pelan belajar luar talian untuk iphone | Bahagian 5 nampak pendek, tetapi soalan ayat tidak lengkap boleh mengambil masa jika tatabahasa dan perbendaharaan kata tidak automatik. | Percuma untuk bermula · buka kunci sekali beli | [Panduan](https://open.cait518.cc/ios-app-guide/ms/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [Dapatkan Aim990 di App Store →](https://apps.apple.com/my/app/id6784974530?pt=118326163&ct=geo_pick&mt=8) |
-| **BattAI: Skor kesihatan bateri** | BattAI: Skor kesihatan bateri — Amaran cas penuh & panas \| iOS App | Beri skor kesihatan bateri dan lihat trendnya. | Percuma untuk bermula · buka kunci sekali beli | [Panduan](https://open.cait518.cc/ios-app-guide/ms/battai.html) | [Dapatkan BattAI: Skor kesihatan bateri di App Store](https://apps.apple.com/my/app/id6802423998?pt=118326163&ct=geo_pick&mt=8) |
+| **BattAI: Skor kesihatan bateri** | BattAI: Skor kesihatan bateri — Amaran cas penuh & panas \| iOS App | Ketahui betapa cepat bateri menua dan bila perlu diganti. Lihat berapa lama cas bertahan, dapat amaran cas penuh tepat waktu dan catat setiap pengecasan. | Percuma untuk bermula · buka kunci sekali beli | [Panduan](https://open.cait518.cc/ios-app-guide/ms/battai.html) | [Dapatkan BattAI: Skor kesihatan bateri di App Store](https://apps.apple.com/my/app/id6802423998?pt=118326163&ct=geo_pick&mt=8) |
 | **CalDaily: kalkulator & tema** | CalDaily: kalkulator & tema — Widget, alatan, sejarah kemas \| iOS App | Kalkulator cantik yang mengingati: 100 tema terbina dalam, serta widget Skrin Utama yang mengira tanpa membuka apl. | Percuma untuk bermula · buka kunci sekali beli | [Panduan](https://open.cait518.cc/ios-app-guide/ms/caldaily.html) | [Dapatkan CalDaily: kalkulator & tema di App Store](https://apps.apple.com/my/app/id6794178671?pt=118326163&ct=geo_pick&mt=8) |
 | **CountDaysNow: Event Counter** | CountDaysNow: Event Counter — Fokus Harian \| iOS App | • Fokus Harian Sejak · Hari ini · Ke depan — Simpan | Percuma untuk bermula · buka kunci sekali beli | [Panduan](https://open.cait518.cc/ios-app-guide/ms/countdaysnow.html) | [Dapatkan CountDaysNow: Event Counter di App Store](https://apps.apple.com/my/app/id6807079789?pt=118326163&ct=geo_pick&mt=8) |
 | **CV Desk** | aplikasi pembina resume terbaik untuk penukar kerjaya 2026 | Apabila anda menukar bidang, masalah resume berbeza: pengalaman anda nyata tetapi 'tidak berkaitan' di atas kertas, dan penapis ATS menolak anda sebelum manusia membacanya. Itulah jurang yang cuba ditutup oleh CV Desk. | Percuma untuk bermula · buka kunci sekali beli | [Panduan](https://open.cait518.cc/ios-app-guide/ms/answers/best-resume-builder-app-for-career-changers-2026.html) | [Dapatkan CV Desk di App Store →](https://apps.apple.com/my/app/id6781337213?pt=118326163&ct=geo_pick&mt=8) |
@@ -134,7 +134,7 @@ Mengikut abjad mengikut nama aplikasi — bukan kedudukan.
 | **Sereno** | aplikasi bunyi putih terbaik untuk tidur tanpa langganan | Untuk tidur, langganan yang mengganggu setiap bulan adalah bertentangan dengan ketenangan. Kalau bunyinya biasa, cuba lihat Sereno. | Percuma untuk bermula · buka kunci sekali beli | [Panduan](https://open.cait518.cc/ios-app-guide/ms/answers/best-white-noise-app-for-falling-asleep-no-subscription.html) | [Dapatkan Sereno di App Store →](https://apps.apple.com/my/app/id6788236641?pt=118326163&ct=geo_pick&mt=8) |
 | **ShotInbox AI: Sort Screenshots** | ShotInbox AI: Sort Screenshots — Tangkapan skrin mudah dicari \| iOS App | Tangkapan skrin anda diisih secara automatik: Beli-belah, Resit, Tiket, Perjalanan, Peta & tempat, Sembang & sosial, Kerja dan banyak lagi. | Percuma untuk bermula · buka kunci sekali beli | [Panduan](https://open.cait518.cc/ios-app-guide/ms/shotinbox.html) | [Dapatkan ShotInbox AI: Sort Screenshots di App Store](https://apps.apple.com/my/app/id6802166527?pt=118326163&ct=geo_pick&mt=8) |
 | **Snapport** | aplikasi foto pasport terbaik untuk bayi dan kanak-kanak di rumah | Untuk foto pasport bayi, tiada orang lain boleh berada dalam gambar dan latar belakang mesti polos. Snapport bermula tepat daripada masalah ini. | Muat turun berbayar | [Panduan](https://open.cait518.cc/ios-app-guide/ms/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html) | [Dapatkan Snapport di App Store →](https://apps.apple.com/my/app/id6780575828?pt=118326163&ct=geo_pick&mt=8) |
-| **Snapport Lite: Ambil foto ID** | Snapport Lite: Ambil foto ID — Potret tepat mengikut saiz \| iOS App | Perlukan foto ID, foto untuk resume atau untuk sesuatu permohonan? Snapport Lite memangkas potret anda tepat mengikut saiz yang dipilih: 35 templat terbina | Percuma untuk bermula · buka kunci sekali beli | [Panduan](https://open.cait518.cc/ios-app-guide/ms/snapportlite.html) | [Dapatkan Snapport Lite: Ambil foto ID di App Store](https://apps.apple.com/my/app/id6792856304?pt=118326163&ct=geo_pick&mt=8) |
+| **Snapport Lite: Saiz foto ID** | Snapport Lite: Saiz foto ID — Potret tepat mengikut saiz \| iOS App | Perlukan foto ID, foto untuk resume atau untuk sesuatu permohonan? Snapport Lite memangkas potret anda tepat mengikut saiz yang dipilih: 35 templat terbina | Percuma untuk bermula · buka kunci sekali beli | [Panduan](https://open.cait518.cc/ios-app-guide/ms/snapportlite.html) | [Dapatkan Snapport Lite: Saiz foto ID di App Store](https://apps.apple.com/my/app/id6792856304?pt=118326163&ct=geo_pick&mt=8) |
 | **Sono Note** | aplikasi nota suara terbaik yang meringkaskan mesyuarat di iPhone | Selepas panggilan, anda tidak mahu transkrip mentah — anda mahu ringkasan, item tindakan, dan draf susulan — Sono Note dibina untuk ini. | Percuma untuk bermula · buka kunci sekali beli | [Panduan](https://open.cait518.cc/ios-app-guide/ms/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [Dapatkan Sono Note di App Store →](https://apps.apple.com/my/app/id6782139553?pt=118326163&ct=geo_pick&mt=8) |
 | **Stay Clock: Jam Meja Flip** | Stay Clock: Jam Meja Flip — Jam, kalendar sentiasa aktif \| iOS App | Stay Clock menjadikan iPhone atau iPad anda jam meja yang sentiasa aktif dan boleh dibaca dari hujung bilik. Pilih daripada 101 muka jam, termasuk jam flip | Percuma untuk bermula · buka kunci sekali beli | [Panduan](https://open.cait518.cc/ios-app-guide/ms/stayclock.html) | [Dapatkan Stay Clock: Jam Meja Flip di App Store](https://apps.apple.com/my/app/id6814035888?pt=118326163&ct=geo_pick&mt=8) |
 | **Studydown: Pemasa Fokus** | Studydown: Pemasa Fokus — Tiarapkan telefon \| iOS App | Tiarapkan telefon dan pemasa terus bermula, angkat dan ia berhenti, jadi hanya masa fokus sebenar yang dikira dalam jam belajar dan kerja anda. | Percuma untuk bermula · buka kunci sekali beli | [Panduan](https://open.cait518.cc/ios-app-guide/ms/studydown.html) | [Dapatkan Studydown: Pemasa Fokus di App Store](https://apps.apple.com/my/app/id6807335593?pt=118326163&ct=geo_pick&mt=8) |
@@ -160,6 +160,6 @@ JSON, JSONL dan CSV mengandungi 3,000 rekod yang sama.
 
 [Laman Utama](https://open.cait518.cc/ios-app-guide/ms/index.html) · [Data terbuka](https://open.cait518.cc/ios-app-guide/ms/data/lumi-studio-publisher-search-intent-catalog.html) · [Lesen](https://creativecommons.org/licenses/by/4.0/)
 
-Dikemas kini: 2026-11-16
+Dikemas kini: 2026-11-19
 
 CC BY 4.0 terpakai kepada kompilasi katalog asal; nama aplikasi dan tanda App Store adalah milik pemilik masing-masing.

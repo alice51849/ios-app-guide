@@ -6,7 +6,7 @@
   "name": "Lumi Studio 开发者搜索意图目录",
   "description": "第一方目录，说明每款 App 的适用人群、想完成的任务以及直达 App Store 的下载入口。",
   "inLanguage": "zh-Hans",
-  "dateModified": "2026-11-16",
+  "dateModified": "2026-11-19",
   "numberOfItems": 60,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -217,7 +217,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-battai",
         "url": "https://apps.apple.com/cn/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
         "name": "BattAI: 电池健康评分",
-        "description": "已针对 iPhone Duo 优化。本应用使用最新开发工具包构建，铺满整块内屏，无论折叠还是展开都会自动调整布局。",
+        "description": "看懂你的电池老化得快不快、大约什么时候该换；不插电还能用多久、充到你要的电量时准时提醒你，并替你记下每一次充电。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -247,7 +247,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802423998",
           "inLanguage": "zh-Hans",
-          "description": "已针对 iPhone Duo 优化。本应用使用最新开发工具包构建，铺满整块内屏，无论折叠还是展开都会自动调整布局。",
+          "description": "看懂你的电池老化得快不快、大约什么时候该换；不插电还能用多久、充到你要的电量时准时提醒你，并替你记下每一次充电。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-battai"
           },
@@ -991,7 +991,7 @@
           ],
           "isAccessibleForFree": false
         },
-        "price": "58",
+        "price": "8",
         "priceCurrency": "CNY",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {
@@ -2750,8 +2750,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-snapportlite",
         "url": "https://apps.apple.com/cn/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Snapport Lite：在家拍证件照",
-        "description": "简历照、证件照，在家用手机就能拍好。Snapport Lite 把人像照精准裁成你选的尺寸：内置 35 个模板，也能按毫米、英寸或像素自定义。",
+        "name": "Snapport Lite：证件照尺寸",
+        "description": "简历或各类申请要用的照片？Snapport Lite 把人像照裁成你选的尺寸：内置 35 个模板，也能按毫米、英寸或像素自定义。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2766,7 +2766,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6792856304"
           },
-          "name": "Snapport Lite：在家拍证件照",
+          "name": "Snapport Lite：证件照尺寸",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
           "url": "https://apps.apple.com/cn/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
@@ -2781,7 +2781,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6792856304",
           "inLanguage": "zh-Hans",
-          "description": "简历照、证件照，在家用手机就能拍好。Snapport Lite 把人像照精准裁成你选的尺寸：内置 35 个模板，也能按毫米、英寸或像素自定义。",
+          "description": "简历或各类申请要用的照片？Snapport Lite 把人像照裁成你选的尺寸：内置 35 个模板，也能按毫米、英寸或像素自定义。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-snapportlite"
           },

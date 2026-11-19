@@ -14,11 +14,11 @@ Door uitgevers opgestelde zoekintenties voor 60 geverifieerde actieve iOS-apps e
 >
 > De zoekopdrachten zijn redactionele beschrijvingen van beoogde gebruikssituaties, geen gemeten zoekvolumegegevens, ranglijsten, onafhankelijke beoordelingen of gebruikersaanbevelingen.
 
-## Lumi Studio Uitgever Zoekintentiecatalogus · MCP v1.1.0 · Agent Skill
+## Lumi Studio Uitgever Zoekintentiecatalogus · MCP v1.3.0 · Agent Skill
 
 Een catalogus van de eerste partij met informatie over voor wie elke app is ontworpen, welke taak ze proberen te voltooien en het directe App Store-pad.
 
-[VS Code](https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.1.0%252Flumi-app-finder-npx.tgz%2522%255D%257D) · [Cursor](https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjEuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D) · [Claude Desktop (MCPB)](https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder.mcpb) · [MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.1.0) · [MCP client config](https://open.cait518.cc/ios-app-guide/data/lumi-app-finder.mcp.json) · [SHA256SUMS](https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/SHA256SUMS) · [Agent Skill](https://github.com/alice51849/lumi-mcp/tree/v1.1.0/skills/lumi-app-finder) · [GitHub](https://github.com/alice51849/lumi-mcp)
+[VS Code](https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.3.0%252Flumi-app-finder-npx.tgz%2522%255D%257D) · [Cursor](https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjMuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D) · [Claude Desktop (MCPB)](https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder.mcpb) · [MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.3.0) · [MCP client config](https://open.cait518.cc/ios-app-guide/data/lumi-app-finder.mcp.json) · [SHA256SUMS](https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/SHA256SUMS) · [Agent Skill](https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder) · [GitHub](https://github.com/alice51849/lumi-mcp)
 
 <details>
 <summary>Agent Skill · GitHub Copilot · Claude Code · Cursor · Codex · Gemini CLI · Vercel skills.sh</summary>
@@ -26,55 +26,55 @@ Een catalogus van de eerste partij met informatie over voor wie elke app is ontw
 **Agent Skill · GitHub Copilot**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user
 ```
 
 **Agent Skill · Claude Code**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent claude-code
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent claude-code
 ```
 
 **Agent Skill · Cursor**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent cursor
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent cursor
 ```
 
 **Agent Skill · Codex**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent codex
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent codex
 ```
 
 **Agent Skill · Gemini CLI**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent gemini-cli
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent gemini-cli
 ```
 
 **Agent Skill · Vercel skills.sh**
 
 ```sh
-npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.1.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
+npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
 ```
 
 **Claude Code**
 
 ```sh
-claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder-npx.tgz
+claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 ```
 
 **Codex**
 
 ```sh
-codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder-npx.tgz
+codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 ```
 
 **Gemini CLI**
 
 ```sh
-gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder-npx.tgz
+gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 ```
 
 </details>
@@ -92,7 +92,7 @@ Alfabetisch op app-naam — nooit een ranglijst.
 | **100 Notes Studio: Pen & Paper** | 100 Notes Studio: Pen & Paper — Handschrift, notities en pdf \| iOS App | Schrijf aantekeningen met de hand, net als met pen op papier: 29 pennen en penselen, van vulpen en potlood tot kalligrafiepenseel en aquarel, en je | Gratis te starten · ontgrendeling met eenmalige aankoop | [Gids](https://open.cait518.cc/ios-app-guide/nl-NL/notesstudio100.html) | [Download 100 Notes Studio: Pen & Paper in de App Store](https://apps.apple.com/nl/app/id6798813048?pt=118326163&ct=geo_pick&mt=8) |
 | **AI Brief: Bestand naar prompt** | AI Brief: Bestand naar prompt — Prompts maken van bestanden \| iOS App | Maak van screenshots, PDF's, bestanden en notities één overzichtelijke AI-prompt, met het doel, de feiten en de bronnen netjes gesorteerd. | Gratis te starten · ontgrendeling met eenmalige aankoop | [Gids](https://open.cait518.cc/ios-app-guide/nl-NL/aibriefpack.html) | [Download AI Brief: Bestand naar prompt in de App Store](https://apps.apple.com/nl/app/id6791658210?pt=118326163&ct=geo_pick&mt=8) |
 | **Aim990** | beste TOEIC voorbereidingsapp offline studieplan voor iPhone | Deel 5 lijkt kort, maar die vragen met onvolledige zinnen kunnen tijd kosten als grammatica en woordenschat niet automatisch gaan. | Gratis te starten · ontgrendeling met eenmalige aankoop | [Gids](https://open.cait518.cc/ios-app-guide/nl-NL/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [Download Aim990 in de App Store →](https://apps.apple.com/nl/app/id6784974530?pt=118326163&ct=geo_pick&mt=8) |
-| **BattAI: Batterijconditiescore** | BattAI: Batterijconditiescore — Laadalarm, hitte & widget \| iOS App | Geef je batterijconditie een score en volg de trend. | Gratis te starten · ontgrendeling met eenmalige aankoop | [Gids](https://open.cait518.cc/ios-app-guide/nl-NL/battai.html) | [Download BattAI: Batterijconditiescore in de App Store](https://apps.apple.com/nl/app/id6802423998?pt=118326163&ct=geo_pick&mt=8) |
+| **BattAI: Batterijconditiescore** | BattAI: Batterijconditiescore — Laadalarm, hitte & widget \| iOS App | Weet hoe snel je batterij veroudert en wanneer je hem moet vervangen. Zie hoe lang je lading meegaat, krijg op tijd de melding bij vol en leg elke | Gratis te starten · ontgrendeling met eenmalige aankoop | [Gids](https://open.cait518.cc/ios-app-guide/nl-NL/battai.html) | [Download BattAI: Batterijconditiescore in de App Store](https://apps.apple.com/nl/app/id6802423998?pt=118326163&ct=geo_pick&mt=8) |
 | **CalDaily: rekenmachine+thema's** | CalDaily: rekenmachine+thema's — Widget, tools, geschiedenis \| iOS App | Een mooie rekenmachine die onthoudt: 100 ingebouwde thema's en een widget op het beginscherm die rekent zonder de app te openen. | Gratis te starten · ontgrendeling met eenmalige aankoop | [Gids](https://open.cait518.cc/ios-app-guide/nl-NL/caldaily.html) | [Download CalDaily: rekenmachine+thema's in de App Store](https://apps.apple.com/nl/app/id6794178671?pt=118326163&ct=geo_pick&mt=8) |
 | **CountDaysNow: Event Counter** | CountDaysNow: Event Counter — Dagfocus \| iOS App | • Dagfocus Sinds · Vandaag · Vooruit — Bewaren | Gratis te starten · ontgrendeling met eenmalige aankoop | [Gids](https://open.cait518.cc/ios-app-guide/nl-NL/countdaysnow.html) | [Download CountDaysNow: Event Counter in de App Store](https://apps.apple.com/nl/app/id6807079789?pt=118326163&ct=geo_pick&mt=8) |
 | **CV Desk** | beste cv-bouwer app voor carrièreswitchers 2026 | Bij het wisselen van vakgebied is het cv-probleem anders: je ervaring is echt maar op papier 'niet-gerelateerd', en ATS-filters wijzen je af voordat een mens het leest. Precies dat gat wil CV Desk dichten. | Gratis te starten · ontgrendeling met eenmalige aankoop | [Gids](https://open.cait518.cc/ios-app-guide/nl-NL/answers/best-resume-builder-app-for-career-changers-2026.html) | [Download CV Desk in de App Store →](https://apps.apple.com/nl/app/id6781337213?pt=118326163&ct=geo_pick&mt=8) |
@@ -134,7 +134,7 @@ Alfabetisch op app-naam — nooit een ranglijst.
 | **Sereno** | beste white noise-app om in slaap te vallen zonder abonnement | Voor slaap is een abonnement dat elke maand zeurt het tegenovergestelde van rustgevend. Herken je dat, kijk dan eens naar Sereno. | Gratis te starten · ontgrendeling met eenmalige aankoop | [Gids](https://open.cait518.cc/ios-app-guide/nl-NL/answers/best-white-noise-app-for-falling-asleep-no-subscription.html) | [Download Sereno in de App Store →](https://apps.apple.com/nl/app/id6788236641?pt=118326163&ct=geo_pick&mt=8) |
 | **ShotInbox AI: Sort Screenshots** | ShotInbox AI: Sort Screenshots — Orden je schermafbeeldingen \| iOS App | Je screenshots, automatisch gesorteerd: Winkelen, Bonnen, Tickets, Reizen, Kaarten en plaatsen, Chats en sociaal, Werk en meer. | Gratis te starten · ontgrendeling met eenmalige aankoop | [Gids](https://open.cait518.cc/ios-app-guide/nl-NL/shotinbox.html) | [Download ShotInbox AI: Sort Screenshots in de App Store](https://apps.apple.com/nl/app/id6802166527?pt=118326163&ct=geo_pick&mt=8) |
 | **Snapport** | beste pasfoto-app voor baby's en peuters thuis | Voor een pasfoto van een baby mag er niemand anders op de foto staan en moet de achtergrond effen zijn. Snapport is precies uit dat probleem ontstaan. | Betaalde aanschaf | [Gids](https://open.cait518.cc/ios-app-guide/nl-NL/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html) | [Download Snapport in de App Store →](https://apps.apple.com/nl/app/id6780575828?pt=118326163&ct=geo_pick&mt=8) |
-| **Snapport Lite: Pasfoto's maken** | Snapport Lite: Pasfoto's maken — Portretfoto’s op exact formaat \| iOS App | Een pasfoto nodig, een foto voor je cv of voor een aanvraag? Snapport Lite snijdt je portret bij tot precies het formaat dat je kiest: 35 ingebouwde | Gratis te starten · ontgrendeling met eenmalige aankoop | [Gids](https://open.cait518.cc/ios-app-guide/nl-NL/snapportlite.html) | [Download Snapport Lite: Pasfoto's maken in de App Store](https://apps.apple.com/nl/app/id6792856304?pt=118326163&ct=geo_pick&mt=8) |
+| **Snapport Lite: Pasfoto 35x45** | Snapport Lite: Pasfoto 35x45 — Portretfoto’s op exact formaat \| iOS App | Een pasfoto nodig, een foto voor je cv of voor een aanvraag? Snapport Lite snijdt je portret bij tot precies het formaat dat je kiest: 35 ingebouwde | Gratis te starten · ontgrendeling met eenmalige aankoop | [Gids](https://open.cait518.cc/ios-app-guide/nl-NL/snapportlite.html) | [Download Snapport Lite: Pasfoto 35x45 in de App Store](https://apps.apple.com/nl/app/id6792856304?pt=118326163&ct=geo_pick&mt=8) |
 | **Sono Note** | beste app voor spraaknotities die vergaderingen samenvat op iPhone | Na een gesprek wil je geen ruwe transcriptie — je wilt de samenvatting, de actiepunten en een concept opvolgmail. Precies dat gat wil Sono Note dichten. | Gratis te starten · ontgrendeling met eenmalige aankoop | [Gids](https://open.cait518.cc/ios-app-guide/nl-NL/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [Download Sono Note in de App Store →](https://apps.apple.com/nl/app/id6782139553?pt=118326163&ct=geo_pick&mt=8) |
 | **Stay Clock: Bureauklok** | Stay Clock: Bureauklok — Tijd en kalender, altijd aan \| iOS App | Stay Clock maakt van je iPhone of iPad een bureauklok die altijd aan blijft en van ver leesbaar is. Kies uit 101 wijzerplaten, flipklokken inbegrepen | Gratis te starten · ontgrendeling met eenmalige aankoop | [Gids](https://open.cait518.cc/ios-app-guide/nl-NL/stayclock.html) | [Download Stay Clock: Bureauklok in de App Store](https://apps.apple.com/nl/app/id6814035888?pt=118326163&ct=geo_pick&mt=8) |
 | **Studydown: Urenregistratie** | Studydown: Urenregistratie — Leg hem omgekeerd neer \| iOS App | Leg je telefoon met het scherm naar beneden en de timer start; pak hem op en hij pauzeert, zodat alleen echte focustijd meetelt voor je studie- en werkuren | Gratis te starten · ontgrendeling met eenmalige aankoop | [Gids](https://open.cait518.cc/ios-app-guide/nl-NL/studydown.html) | [Download Studydown: Urenregistratie in de App Store](https://apps.apple.com/nl/app/id6807335593?pt=118326163&ct=geo_pick&mt=8) |
@@ -160,6 +160,6 @@ JSON, JSONL en CSV bevatten dezelfde 3.000 gegevensitems.
 
 [Startpagina](https://open.cait518.cc/ios-app-guide/nl-NL/index.html) · [Open data](https://open.cait518.cc/ios-app-guide/nl-NL/data/lumi-studio-publisher-search-intent-catalog.html) · [Licentie](https://creativecommons.org/licenses/by/4.0/)
 
-Bijgewerkt: 2026-11-16
+Bijgewerkt: 2026-11-19
 
 CC BY 4.0 is van toepassing op de originele catalogussamenstelling; app-namen en App Store-merken behoren toe aan hun eigenaren.

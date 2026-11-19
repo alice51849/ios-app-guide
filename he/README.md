@@ -14,11 +14,11 @@
 >
 > השאילתות הן תיאורים מערכתיים של מקרי שימוש מיועדים, לא נתוני נפח חיפוש נמדדים, דירוגים, ביקורות עצמאיות או המלצות משתמשים.
 
-## קטלוג כוונות החיפוש של Lumi Studio מפרסם · MCP v1.1.0 · Agent Skill
+## קטלוג כוונות החיפוש של Lumi Studio מפרסם · MCP v1.3.0 · Agent Skill
 
 קטלוג רשמי המציג עבור מי מיועדת כל אפליקציה, המשימה שהיא נועדה לבצע, והמסלול הישיר ל-App Store.
 
-[VS Code](https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.1.0%252Flumi-app-finder-npx.tgz%2522%255D%257D) · [Cursor](https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjEuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D) · [Claude Desktop (MCPB)](https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder.mcpb) · [MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.1.0) · [MCP client config](https://open.cait518.cc/ios-app-guide/data/lumi-app-finder.mcp.json) · [SHA256SUMS](https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/SHA256SUMS) · [Agent Skill](https://github.com/alice51849/lumi-mcp/tree/v1.1.0/skills/lumi-app-finder) · [GitHub](https://github.com/alice51849/lumi-mcp)
+[VS Code](https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.3.0%252Flumi-app-finder-npx.tgz%2522%255D%257D) · [Cursor](https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjMuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D) · [Claude Desktop (MCPB)](https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder.mcpb) · [MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.3.0) · [MCP client config](https://open.cait518.cc/ios-app-guide/data/lumi-app-finder.mcp.json) · [SHA256SUMS](https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/SHA256SUMS) · [Agent Skill](https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder) · [GitHub](https://github.com/alice51849/lumi-mcp)
 
 <details>
 <summary>Agent Skill · GitHub Copilot · Claude Code · Cursor · Codex · Gemini CLI · Vercel skills.sh</summary>
@@ -26,55 +26,55 @@
 **Agent Skill · GitHub Copilot**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user
 ```
 
 **Agent Skill · Claude Code**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent claude-code
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent claude-code
 ```
 
 **Agent Skill · Cursor**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent cursor
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent cursor
 ```
 
 **Agent Skill · Codex**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent codex
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent codex
 ```
 
 **Agent Skill · Gemini CLI**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent gemini-cli
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent gemini-cli
 ```
 
 **Agent Skill · Vercel skills.sh**
 
 ```sh
-npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.1.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
+npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
 ```
 
 **Claude Code**
 
 ```sh
-claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder-npx.tgz
+claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 ```
 
 **Codex**
 
 ```sh
-codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder-npx.tgz
+codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 ```
 
 **Gemini CLI**
 
 ```sh
-gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder-npx.tgz
+gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 ```
 
 </details>
@@ -92,7 +92,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **100 Notes Studio: Pen & Paper** | 100 Notes Studio: Pen & Paper — מחברת בכתב יד וסימון PDF \| iOS App | כתבו הערות ביד כמו בעט על נייר: 29 עטים ומכחולים, מעט נובע ועיפרון ועד מכחול קליגרפיה וצבעי מים, ואפשר לחפש בכתב היד שלכם אחר כך. | התחלה ללא תשלום · פתיחה ברכישה חד-פעמית | [מדריך](https://open.cait518.cc/ios-app-guide/he/notesstudio100.html) | [הורידו את 100 Notes Studio: Pen & Paper מה-App Store](https://apps.apple.com/il/app/id6798813048?pt=118326163&ct=geo_pick&mt=8) |
 | **AI Brief: מקבצים לפרומפט AI** | AI Brief: מקבצים לפרומפט AI — פרומפטים מקבצים ומ-PDF \| iOS App | הפכו צילומי מסך, קובצי PDF, קבצים ופתקים לפרומפט AI אחד מסודר, שבו המטרה, העובדות והמקורות ממוינים. | התחלה ללא תשלום · פתיחה ברכישה חד-פעמית | [מדריך](https://open.cait518.cc/ios-app-guide/he/aibriefpack.html) | [הורידו את AI Brief: מקבצים לפרומפט AI מה-App Store](https://apps.apple.com/il/app/id6791658210?pt=118326163&ct=geo_pick&mt=8) |
 | **Aim990** | האפליקציה הטובה ביותר להכנה למבחן TOEIC עם תוכנית לימוד לא מקוונת לאייפון | חלק 5 נראה קצר, אך שאלות המשפטים החסרים יכולות לגזול זמן אם הדקדוק ואוצר המילים אינם אוטומטיים. | התחלה ללא תשלום · פתיחה ברכישה חד-פעמית | [מדריך](https://open.cait518.cc/ios-app-guide/he/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [קבל את Aim990 ב-App Store →](https://apps.apple.com/il/app/id6784974530?pt=118326163&ct=geo_pick&mt=8) |
-| **BattAI: ציון בריאות הסוללה** | BattAI: ציון בריאות הסוללה — התראות טעינה והתחממות \| iOS App | בדיקת סוללה עם ציון בריאות ומעקב אחרי המגמה. | התחלה ללא תשלום · פתיחה ברכישה חד-פעמית | [מדריך](https://open.cait518.cc/ios-app-guide/he/battai.html) | [הורידו את BattAI: ציון בריאות הסוללה מה-App Store](https://apps.apple.com/il/app/id6802423998?pt=118326163&ct=geo_pick&mt=8) |
+| **BattAI: ציון בריאות הסוללה** | BattAI: ציון בריאות הסוללה — התראות טעינה והתחממות \| iOS App | גלו באיזו מהירות הסוללה שלכם מזדקנת ומתי כדאי להחליף אותה. ראו כמה זמן תחזיק הטעינה, קבלו בזמן את ההתראה על טעינה מלאה ותעדו כל טעינה. | התחלה ללא תשלום · פתיחה ברכישה חד-פעמית | [מדריך](https://open.cait518.cc/ios-app-guide/he/battai.html) | [הורידו את BattAI: ציון בריאות הסוללה מה-App Store](https://apps.apple.com/il/app/id6802423998?pt=118326163&ct=geo_pick&mt=8) |
 | **CalDaily מחשבון ועיצובים** | CalDaily מחשבון ועיצובים — וידג'ט, כלים והיסטוריה \| iOS App | מחשבון יפה שזוכר: 100 עיצובים מובנים, ווידג'ט במסך הבית שמחשב בלי לפתוח את האפליקציה. | התחלה ללא תשלום · פתיחה ברכישה חד-פעמית | [מדריך](https://open.cait518.cc/ios-app-guide/he/caldaily.html) | [הורידו את CalDaily מחשבון ועיצובים מה-App Store](https://apps.apple.com/il/app/id6794178671?pt=118326163&ct=geo_pick&mt=8) |
 | **CountDaysNow: Event Counter** | CountDaysNow: Event Counter — המיקוד היומי \| iOS App | • המיקוד היומי מאז · היום · בהמשך — שמירה | התחלה ללא תשלום · פתיחה ברכישה חד-פעמית | [מדריך](https://open.cait518.cc/ios-app-guide/he/countdaysnow.html) | [הורידו את CountDaysNow: Event Counter מה-App Store](https://apps.apple.com/il/app/id6807079789?pt=118326163&ct=geo_pick&mt=8) |
 | **CV Desk** | האפליקציה הטובה ביותר לבניית קורות חיים למחליפים מקצועיים 2026 | כשאתה משנה תחום, הבעיה בקורות החיים שונה: הניסיון שלך אמיתי אך 'לא רלוונטי' על הנייר, ומסנני ATS דוחים אותך לפני שאדם קורא אותם. בדיוק את הפער הזה CV Desk מנסה לסגור. | התחלה ללא תשלום · פתיחה ברכישה חד-פעמית | [מדריך](https://open.cait518.cc/ios-app-guide/he/answers/best-resume-builder-app-for-career-changers-2026.html) | [קבל את CV Desk ב-App Store →](https://apps.apple.com/il/app/id6781337213?pt=118326163&ct=geo_pick&mt=8) |
@@ -133,7 +133,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **Sereno** | האפליקציה הטובה ביותר לרעש לבן להירדמות ללא מנוי | לשינה, מנוי שמטריד כל חודש הוא ההפך מרוגע. אם זה נשמע לכם מוכר, שווה להציץ ב-Sereno. | התחלה ללא תשלום · פתיחה ברכישה חד-פעמית | [מדריך](https://open.cait518.cc/ios-app-guide/he/answers/best-white-noise-app-for-falling-asleep-no-subscription.html) | [קבל את Sereno ב-App Store →](https://apps.apple.com/il/app/id6788236641?pt=118326163&ct=geo_pick&mt=8) |
 | **ShotInbox AI: Sort Screenshots** | ShotInbox AI: Sort Screenshots — מיון צילומי מסך וחיפוש OCR \| iOS App | צילומי המסך שלכם ממוינים אוטומטית: קניות, קבלות, כרטיסים, נסיעות, מפות ומקומות, צ׳אטים ורשתות חברתיות, עבודה ועוד. | התחלה ללא תשלום · פתיחה ברכישה חד-פעמית | [מדריך](https://open.cait518.cc/ios-app-guide/he/shotinbox.html) | [הורידו את ShotInbox AI: Sort Screenshots מה-App Store](https://apps.apple.com/il/app/id6802166527?pt=118326163&ct=geo_pick&mt=8) |
 | **Snapport** | האפליקציה הטובה ביותר לתמונת דרכון לתינוקות ופעוטות בבית | לתמונת דרכון לתינוק, אף אחד אחר לא יכול להופיע בתמונה והרקע חייב להיות חלק. Snapport התחיל בדיוק מהבעיה הזאת. | הורדה בתשלום | [מדריך](https://open.cait518.cc/ios-app-guide/he/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html) | [קבל את Snapport ב-App Store →](https://apps.apple.com/il/app/id6780575828?pt=118326163&ct=geo_pick&mt=8) |
-| **Snapport Lite: צלם תמונת דרכון** | Snapport Lite: צלם תמונת דרכון — חיתוך דיוקן לגודל מדויק \| iOS App | צריכים תמונת פספורט, תמונה לקורות חיים או לטופס בקשה? Snapport Lite חותכת את הדיוקן שלכם בדיוק לגודל שבחרתם: 35 תבניות מובנות, או גודל משלכם במ״מ, באינצ׳ים | התחלה ללא תשלום · פתיחה ברכישה חד-פעמית | [מדריך](https://open.cait518.cc/ios-app-guide/he/snapportlite.html) | [הורידו את Snapport Lite: צלם תמונת דרכון מה-App Store](https://apps.apple.com/il/app/id6792856304?pt=118326163&ct=geo_pick&mt=8) |
+| **Snapport Lite: תמונת דרכון** | Snapport Lite: תמונת דרכון — חיתוך דיוקן לגודל מדויק \| iOS App | צריכים תמונת פספורט, תמונה לקורות חיים או לטופס בקשה? Snapport Lite חותכת את הדיוקן שלכם בדיוק לגודל שבחרתם: 35 תבניות מובנות, או גודל משלכם במ״מ, באינצ׳ים | התחלה ללא תשלום · פתיחה ברכישה חד-פעמית | [מדריך](https://open.cait518.cc/ios-app-guide/he/snapportlite.html) | [הורידו את Snapport Lite: תמונת דרכון מה-App Store](https://apps.apple.com/il/app/id6792856304?pt=118326163&ct=geo_pick&mt=8) |
 | **Sono Note** | האפליקציה הטובה ביותר להקלטות קול שמסכמת פגישות באייפון | אחרי שיחה אתה לא רוצה תמלול גולמי — אתה רוצה סיכום, פריטי פעולה וטיוטת המשך. בדיוק את הפער הזה Sono Note מנסה לסגור. | התחלה ללא תשלום · פתיחה ברכישה חד-פעמית | [מדריך](https://open.cait518.cc/ios-app-guide/he/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [קבל את Sono Note ב-App Store →](https://apps.apple.com/il/app/id6782139553?pt=118326163&ct=geo_pick&mt=8) |
 | **Stay Clock: שעון קלפים** | Stay Clock: שעון קלפים — שעון ולוח שנה תמידיים \| iOS App | Stay Clock הופך את ה-iPhone או ה-iPad שלכם לשעון שולחני שדולק תמיד ואפשר לקרוא אותו מהצד השני של החדר. בחרו מתוך 101 לוחות שעון, כולל שעוני קלפים (100 | התחלה ללא תשלום · פתיחה ברכישה חד-פעמית | [מדריך](https://open.cait518.cc/ios-app-guide/he/stayclock.html) | [הורידו את Stay Clock: שעון קלפים מה-App Store](https://apps.apple.com/il/app/id6814035888?pt=118326163&ct=geo_pick&mt=8) |
 | **Studydown: טיימר ריכוז** | Studydown: טיימר ריכוז — הנח אותו עם המסך כלפי מטה \| iOS App | הניחו את הטלפון עם המסך כלפי מטה והטיימר מתחיל, הרימו אותו והוא נעצר, כך שרק זמן ריכוז אמיתי נספר בשעות הלימוד והעבודה שלכם. | התחלה ללא תשלום · פתיחה ברכישה חד-פעמית | [מדריך](https://open.cait518.cc/ios-app-guide/he/studydown.html) | [הורידו את Studydown: טיימר ריכוז מה-App Store](https://apps.apple.com/il/app/id6807335593?pt=118326163&ct=geo_pick&mt=8) |
@@ -160,6 +160,6 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 [בית](https://open.cait518.cc/ios-app-guide/he/index.html) · [נתונים פתוחים](https://open.cait518.cc/ios-app-guide/he/data/lumi-studio-publisher-search-intent-catalog.html) · [רישיון](https://creativecommons.org/licenses/by/4.0/)
 
-עודכן: 2026-11-16
+עודכן: 2026-11-19
 
 רישיון CC BY 4.0 חל על הרכב הקטלוג המקורי; שמות האפליקציות וסימני App Store שייכים לבעליהם.

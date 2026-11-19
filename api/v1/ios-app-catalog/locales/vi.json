@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-11-18",
-  "content_digest": "b072524f47e90d0a91bf4c7b3bc03c418a70ee490c972718962013c6f19e7d54",
+  "date_modified": "2026-11-19",
+  "content_digest": "91aee8ee4380268fb5a17ba01db0c6d5ce0e94b4236a64dd93cfc66952e18cbd",
   "locale": "vi",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -370,7 +370,8 @@
         "đức",
         "tây ban nha",
         "ý",
-        "nga"
+        "nga",
+        "câu giao tiếp hàng ngày"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -505,7 +506,9 @@
         "sớm",
         "học",
         "trực",
-        "tuần"
+        "tuần",
+        "báo thức tắt ngày lễ",
+        "widget báo thức"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -629,7 +632,8 @@
         "du lịch",
         "đơn giản",
         "nhật ký",
-        "smartwatch"
+        "smartwatch",
+        "chi tiêu du lịch"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -689,9 +693,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/vi/gbago.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "299000",
+        "price": "29000",
         "currency": "VND",
-        "formatted_price": "299.000đ",
+        "formatted_price": "29.000đ",
         "storefront_url": "https://apps.apple.com/vn/app/id6804564400"
       }
     },
@@ -847,8 +851,7 @@
         "thông báo",
         "neon",
         "biểu diễn",
-        "lễ hội",
-        "bảng đón sân bay"
+        "lễ hội"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1313,8 +1316,7 @@
         "văn bản",
         "pdf",
         "quét",
-        "ảnh chụp màn hình",
-        "che thông tin"
+        "ảnh chụp màn hình"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2043,8 +2045,7 @@
         "múi giờ",
         "standby",
         "chủ đề",
-        "lớn",
-        "đồng hồ để bàn"
+        "lớn"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

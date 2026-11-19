@@ -2,7 +2,7 @@
 title: "GBAGo: Визуальные сейвы — Эмулятор игр .gba .gbc .gb | iOS App"
 lang: "ru"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gbago/decision/l/ru/index.html"
-modified: "2026-11-17"
+modified: "2026-11-19"
 app_store_id: "6804564400"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,7 +16,7 @@ publisher: "Lumi Studio"
 - Ещё
 - Платное скачивание
 - Автономно
-- App Store · 799,00 ₽
+- App Store · 99,00 ₽
 
 [Установить GBAGo: Визуальные сейвы в App Store](https://apps.apple.com/ru/app/id6804564400?pt=118326163&ct=geo_pick&mt=8)
 

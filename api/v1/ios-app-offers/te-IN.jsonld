@@ -6,7 +6,7 @@
   "name": "Lumi Studio ప్రచురకుడు శోధన ఉద్దేశ్య క్యాటలాగ్",
   "description": "ప్రతి యాప్ ఎవరికోసం రూపొందించబడిందో, వారు పూర్తి చేయదలచుకున్న పని ఏమిటో, మరియు ప్రత్యక్ష App Store మార్గం ఏదో ఒక స్వంత సంస్థ క్యాటలాగ్.",
   "inLanguage": "te-IN",
-  "dateModified": "2026-11-16",
+  "dateModified": "2026-11-19",
   "numberOfItems": 60,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -217,7 +217,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/te-IN.jsonld#offer-battai",
         "url": "https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
         "name": "BattAI: బ్యాటరీ ఆరోగ్య స్కోర్",
-        "description": "బ్యాటరీ ఆరోగ్యానికి స్కోర్ ఇచ్చి, ట్రెండ్ చూడండి.",
+        "description": "మీ బ్యాటరీ ఎంత వేగంగా పాతబడుతోందో, ఎప్పుడు మార్చాలో తెలుసుకోండి. ఛార్జ్ ఎంతసేపు నిలుస్తుందో చూడండి, పూర్తి ఛార్జ్ అలర్ట్‌ను సరైన సమయానికి పొందండి, ప్రతి",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -247,7 +247,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802423998",
           "inLanguage": "te-IN",
-          "description": "బ్యాటరీ ఆరోగ్యానికి స్కోర్ ఇచ్చి, ట్రెండ్ చూడండి.",
+          "description": "మీ బ్యాటరీ ఎంత వేగంగా పాతబడుతోందో, ఎప్పుడు మార్చాలో తెలుసుకోండి. ఛార్జ్ ఎంతసేపు నిలుస్తుందో చూడండి, పూర్తి ఛార్జ్ అలర్ట్‌ను సరైన సమయానికి పొందండి, ప్రతి",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/te-IN.jsonld#offer-battai"
           },
@@ -1057,7 +1057,7 @@
           ],
           "isAccessibleForFree": false
         },
-        "price": "999",
+        "price": "99",
         "priceCurrency": "INR",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {
@@ -2922,7 +2922,7 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/te-IN.jsonld#offer-snapportlite",
         "url": "https://apps.apple.com/in/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Snapport Lite: ఐడీ ఫోటో తీయండి",
+        "name": "Snapport Lite: ఐడీ ఫోటో సైజు",
         "description": "ఐడీ ఫోటో, రెజ్యూమె ఫోటో లేదా ఏదైనా దరఖాస్తు కోసం ఫోటో కావాలా? Snapport Lite మీ పోర్ట్రెయిట్‌ను మీరు ఎంచుకున్న ఖచ్చితమైన సైజుకు కత్తిరిస్తుంది: 35",
         "seller": {
           "@type": "Organization",
@@ -2938,7 +2938,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6792856304"
           },
-          "name": "Snapport Lite: ఐడీ ఫోటో తీయండి",
+          "name": "Snapport Lite: ఐడీ ఫోటో సైజు",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
           "url": "https://apps.apple.com/in/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",

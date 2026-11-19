@@ -2,7 +2,7 @@
 title: "GBAGo: Partides visuals — Emulador de jocs .gba .gbc .gb | iOS App"
 lang: "ca"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gbago/decision/l/ca/index.html"
-modified: "2026-11-17"
+modified: "2026-11-19"
 app_store_id: "6804564400"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,7 +16,7 @@ Optimitzada per a l’iPhone Duo. Creada amb l’SDK més recent, l’app ocupa 
 - Més
 - Descàrrega de pagament
 - Fora de línia
-- App Store · 9,99 €
+- App Store · 0,99 €
 
 [Descarrega GBAGo: Partides visuals a l’App Store](https://apps.apple.com/es/app/id6804564400?pt=118326163&ct=geo_pick&mt=8)
 

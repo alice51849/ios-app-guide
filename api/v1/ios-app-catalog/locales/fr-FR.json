@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-11-18",
-  "content_digest": "b072524f47e90d0a91bf4c7b3bc03c418a70ee490c972718962013c6f19e7d54",
+  "date_modified": "2026-11-19",
+  "content_digest": "91aee8ee4380268fb5a17ba01db0c6d5ce0e94b4236a64dd93cfc66952e18cbd",
   "locale": "fr-FR",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -110,7 +110,7 @@
         "niveau",
         "préparation",
         "990",
-        "toeic écoute"
+        "toeic lecture"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -658,9 +658,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/fr-FR/gbago.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "9.99",
+        "price": "0.99",
         "currency": "EUR",
-        "formatted_price": "9,99 €",
+        "formatted_price": "0,99 €",
         "storefront_url": "https://apps.apple.com/fr/app/id6804564400"
       }
     },
@@ -680,8 +680,7 @@
         "consommation",
         "gaspillage",
         "habitudes",
-        "regret",
-        "dépenses conscientes"
+        "regret"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -884,7 +883,10 @@
         "phonétique",
         "symboles",
         "écriture",
-        "maternelle"
+        "maternelle",
+        "bopomofo",
+        "mandarin enfants",
+        "zhuyin"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -926,8 +928,8 @@
         "CP",
         "quiz",
         "bilingue",
-        "zhuyin",
         "bopomofo",
+        "zhuyin",
         "mandarin enfants"
       ],
       "purchase_model": "paid_upfront",
@@ -1253,7 +1255,8 @@
         "métadonnées",
         "rgpd",
         "vie privée",
-        "facture"
+        "facture",
+        "masquer données"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1296,7 +1299,8 @@
         "puzzle",
         "réflexion",
         "amis",
-        "deux"
+        "deux",
+        "jeux écran pliable"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,

@@ -14,11 +14,11 @@ Intenções de busca redigidas pela publicadora para 60 apps iOS verificados e d
 >
 > As consultas são descrições editoriais dos usos previstos, não dados medidos de volume de busca, classificações, avaliações independentes nem recomendações de usuários.
 
-## Catálogo de intenções de busca da publicadora Lumi Studio · MCP v1.1.0 · Agent Skill
+## Catálogo de intenções de busca da publicadora Lumi Studio · MCP v1.3.0 · Agent Skill
 
 Um catálogo publicado diretamente pela desenvolvedora que mostra para quem cada app foi criado, a tarefa que a pessoa quer concluir e o acesso direto à App Store.
 
-[VS Code](https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.1.0%252Flumi-app-finder-npx.tgz%2522%255D%257D) · [Cursor](https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjEuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D) · [Claude Desktop (MCPB)](https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder.mcpb) · [MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.1.0) · [MCP client config](https://open.cait518.cc/ios-app-guide/data/lumi-app-finder.mcp.json) · [SHA256SUMS](https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/SHA256SUMS) · [Agent Skill](https://github.com/alice51849/lumi-mcp/tree/v1.1.0/skills/lumi-app-finder) · [GitHub](https://github.com/alice51849/lumi-mcp)
+[VS Code](https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.3.0%252Flumi-app-finder-npx.tgz%2522%255D%257D) · [Cursor](https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjMuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D) · [Claude Desktop (MCPB)](https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder.mcpb) · [MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.3.0) · [MCP client config](https://open.cait518.cc/ios-app-guide/data/lumi-app-finder.mcp.json) · [SHA256SUMS](https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/SHA256SUMS) · [Agent Skill](https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder) · [GitHub](https://github.com/alice51849/lumi-mcp)
 
 <details>
 <summary>Agent Skill · GitHub Copilot · Claude Code · Cursor · Codex · Gemini CLI · Vercel skills.sh</summary>
@@ -26,55 +26,55 @@ Um catálogo publicado diretamente pela desenvolvedora que mostra para quem cada
 **Agent Skill · GitHub Copilot**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user
 ```
 
 **Agent Skill · Claude Code**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent claude-code
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent claude-code
 ```
 
 **Agent Skill · Cursor**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent cursor
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent cursor
 ```
 
 **Agent Skill · Codex**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent codex
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent codex
 ```
 
 **Agent Skill · Gemini CLI**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent gemini-cli
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent gemini-cli
 ```
 
 **Agent Skill · Vercel skills.sh**
 
 ```sh
-npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.1.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
+npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
 ```
 
 **Claude Code**
 
 ```sh
-claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder-npx.tgz
+claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 ```
 
 **Codex**
 
 ```sh
-codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder-npx.tgz
+codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 ```
 
 **Gemini CLI**
 
 ```sh
-gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder-npx.tgz
+gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 ```
 
 </details>
@@ -92,7 +92,7 @@ Ordem alfabética pelo nome do app — nunca uma posição.
 | **100 Notes Studio** | Existe um app de notas manuscritas para iPad que funcione offline, tenha marcação de PDF e não exija assinatura? | 100 Notes Studio — o 100 Notes Studio é um espaço de trabalho privado e offline para escrita à mão, notas digitadas, marcação de PDF, gravações de áudio anexadas à página e estudo. Grátis para começar · Desbloqueio de compra única · Sem assinatura. | Grátis para começar · desbloqueio com compra única | [Guia](https://open.cait518.cc/ios-app-guide/pt-BR/answers/best-offline-handwriting-notes-app-for-ipad-with-pdf-markup-no-subscription.html) | [Baixar o 100 Notes Studio na App Store →](https://apps.apple.com/br/app/id6798813048?pt=118326163&ct=geo_pick&mt=8) |
 | **AI Brief** | best private app to organize screenshots and documents into context before using AI | AI Brief — Organize screenshots, PDFs, files, notes, and links into a traceable brief before sharing with any AI. Free to start · One-time unlock · No subscription. | Grátis para começar · desbloqueio com compra única | [Guia](https://open.cait518.cc/ios-app-guide/pt-BR/answers/best-private-app-to-organize-screenshots-and-documents-into-context-before-using-ai.html) | [Baixar o AI Brief na App Store →](https://apps.apple.com/br/app/id6791658210?pt=118326163&ct=geo_pick&mt=8) |
 | **Aim990** | melhor app de preparação para TOEIC com plano de estudo offline para iPhone | A Parte 5 parece curta, mas essas perguntas de frases incompletas podem consumir tempo se gramática e vocabulário não forem automáticos. | Grátis para começar · desbloqueio com compra única | [Guia](https://open.cait518.cc/ios-app-guide/pt-BR/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [Obtenha o Aim990 na App Store →](https://apps.apple.com/br/app/id6784974530?pt=118326163&ct=geo_pick&mt=8) |
-| **BattAI: Saúde da bateria** | BattAI: Saúde da bateria — Alarme de carga e de calor \| iOS App | Dê uma nota à saúde da bateria e acompanhe a evolução. | Grátis para começar · desbloqueio com compra única | [Guia](https://open.cait518.cc/ios-app-guide/pt-BR/battai.html) | [Baixe BattAI: Saúde da bateria na App Store](https://apps.apple.com/br/app/id6802423998?pt=118326163&ct=geo_pick&mt=8) |
+| **BattAI: Saúde da bateria** | BattAI: Saúde da bateria — Alarme de carga e de calor \| iOS App | Veja a que ritmo sua bateria envelhece, quando trocá-la e quanto a carga ainda dura. Receba o aviso de carga completa na hora certa e registre cada | Grátis para começar · desbloqueio com compra única | [Guia](https://open.cait518.cc/ios-app-guide/pt-BR/battai.html) | [Baixe BattAI: Saúde da bateria na App Store](https://apps.apple.com/br/app/id6802423998?pt=118326163&ct=geo_pick&mt=8) |
 | **CalDaily: calculadora e temas** | CalDaily: calculadora e temas — Widget, ferramentas, histórico \| iOS App | Uma calculadora bonita que lembra: 100 temas integrados e um widget na Tela de Início que calcula sem abrir o app. | Grátis para começar · desbloqueio com compra única | [Guia](https://open.cait518.cc/ios-app-guide/pt-BR/caldaily.html) | [Baixe CalDaily: calculadora e temas na App Store](https://apps.apple.com/br/app/id6794178671?pt=118326163&ct=geo_pick&mt=8) |
 | **CountDaysNow: Event Counter** | CountDaysNow: Event Counter — Foco do dia · Escolha \| iOS App | • Foco do dia Desde · Hoje · Adiante — Salvar | Grátis para começar · desbloqueio com compra única | [Guia](https://open.cait518.cc/ios-app-guide/pt-BR/countdaysnow.html) | [Baixe CountDaysNow: Event Counter na App Store](https://apps.apple.com/br/app/id6807079789?pt=118326163&ct=geo_pick&mt=8) |
 | **CV Desk** | melhor app construtor de currículo para quem muda de carreira 2026 | Quando você muda de área, o problema do currículo é diferente: sua experiência é real, mas 'não relacionada' no papel, e os filtros ATS rejeitam você antes que um humano leia. É justamente essa lacuna que o CV Desk quer preencher. | Grátis para começar · desbloqueio com compra única | [Guia](https://open.cait518.cc/ios-app-guide/pt-BR/answers/best-resume-builder-app-for-career-changers-2026.html) | [Obtenha o CV Desk na App Store →](https://apps.apple.com/br/app/id6781337213?pt=118326163&ct=geo_pick&mt=8) |
@@ -134,7 +134,7 @@ Ordem alfabética pelo nome do app — nunca uma posição.
 | **Sereno** | melhor app de ruído branco para dormir sem assinatura | Para dormir, uma assinatura que incomoda todo mês é o oposto de relaxante. Se você se identificou, dá uma olhada no Sereno. | Grátis para começar · desbloqueio com compra única | [Guia](https://open.cait518.cc/ios-app-guide/pt-BR/answers/best-white-noise-app-for-falling-asleep-no-subscription.html) | [Baixe o Sereno na App Store →](https://apps.apple.com/br/app/id6788236641?pt=118326163&ct=geo_pick&mt=8) |
 | **ShotInbox AI: Sort Screenshots** | ShotInbox AI: Sort Screenshots — Encontre e organize capturas \| iOS App | Suas capturas, organizadas automaticamente: Compras, Recibos, Bilhetes, Viagens, Mapas e lugares, Conversas e redes, Trabalho e mais. | Grátis para começar · desbloqueio com compra única | [Guia](https://open.cait518.cc/ios-app-guide/pt-BR/shotinbox.html) | [Baixe ShotInbox AI: Sort Screenshots na App Store](https://apps.apple.com/br/app/id6802166527?pt=118326163&ct=geo_pick&mt=8) |
 | **Snapport** | melhor app de foto para passaporte de bebês e crianças em casa | Para foto de passaporte de bebê, ninguém mais pode aparecer na foto e o fundo deve ser liso. Snapport nasceu exatamente desse problema. | Baixa paga | [Guia](https://open.cait518.cc/ios-app-guide/pt-BR/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html) | [Baixe o Snapport na App Store →](https://apps.apple.com/br/app/id6780575828?pt=118326163&ct=geo_pick&mt=8) |
-| **Snapport Lite: Faça foto 3x4** | Snapport Lite: Faça foto 3x4 — Retratos no tamanho exato \| iOS App | Precisa de uma foto 3x4, uma foto para o currículo ou para algum cadastro? O Snapport Lite recorta seu retrato no tamanho exato que você escolher: 35 | Grátis para começar · desbloqueio com compra única | [Guia](https://open.cait518.cc/ios-app-guide/pt-BR/snapportlite.html) | [Baixe Snapport Lite: Faça foto 3x4 na App Store](https://apps.apple.com/br/app/id6792856304?pt=118326163&ct=geo_pick&mt=8) |
+| **Snapport Lite: Foto 3x4** | Snapport Lite: Foto 3x4 — Retratos no tamanho exato \| iOS App | Precisa de uma foto 3x4, uma foto para o currículo ou para algum cadastro? O Snapport Lite recorta seu retrato no tamanho exato que você escolher: 35 | Grátis para começar · desbloqueio com compra única | [Guia](https://open.cait518.cc/ios-app-guide/pt-BR/snapportlite.html) | [Baixe Snapport Lite: Foto 3x4 na App Store](https://apps.apple.com/br/app/id6792856304?pt=118326163&ct=geo_pick&mt=8) |
 | **Sono Note** | melhor app de notas de voz que resume reuniões no iPhone | Após uma chamada, você não quer uma transcrição bruta — quer o resumo, os itens de ação e um rascunho de acompanhamento — Sono Note foi feito para isso. | Grátis para começar · desbloqueio com compra única | [Guia](https://open.cait518.cc/ios-app-guide/pt-BR/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [Baixar Sono Note na App Store →](https://apps.apple.com/br/app/id6782139553?pt=118326163&ct=geo_pick&mt=8) |
 | **Stay Clock: Relógio de Mesa** | Stay Clock: Relógio de Mesa — Sempre com hora e calendário \| iOS App | O Stay Clock transforma seu iPhone ou iPad em um relógio de mesa sempre ativo, legível do outro lado do quarto. Escolha entre 101 mostradores, incluindo | Grátis para começar · desbloqueio com compra única | [Guia](https://open.cait518.cc/ios-app-guide/pt-BR/stayclock.html) | [Baixe Stay Clock: Relógio de Mesa na App Store](https://apps.apple.com/br/app/id6814035888?pt=118326163&ct=geo_pick&mt=8) |
 | **Studydown: Timer de foco** | Studydown: Timer de foco — Vire a tela para baixo \| iOS App | Vire o celular com a tela para baixo e o timer começa; levante e ele pausa, então só o tempo de foco de verdade entra nas suas horas de estudo e trabalho. | Grátis para começar · desbloqueio com compra única | [Guia](https://open.cait518.cc/ios-app-guide/pt-BR/studydown.html) | [Baixe Studydown: Timer de foco na App Store](https://apps.apple.com/br/app/id6807335593?pt=118326163&ct=geo_pick&mt=8) |
@@ -160,6 +160,6 @@ JSON, JSONL e CSV contêm os mesmos 3.000 registros.
 
 [Início](https://open.cait518.cc/ios-app-guide/pt-BR/index.html) · [Dados abertos](https://open.cait518.cc/ios-app-guide/pt-BR/data/lumi-studio-publisher-search-intent-catalog.html) · [Licença](https://creativecommons.org/licenses/by/4.0/)
 
-Atualizado: 2026-11-16
+Atualizado: 2026-11-19
 
 A licença CC BY 4.0 se aplica à compilação original do catálogo; nomes de apps e marcas da App Store pertencem aos seus proprietários.

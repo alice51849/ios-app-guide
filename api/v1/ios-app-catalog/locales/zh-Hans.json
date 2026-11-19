@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-11-18",
-  "content_digest": "b072524f47e90d0a91bf4c7b3bc03c418a70ee490c972718962013c6f19e7d54",
+  "date_modified": "2026-11-19",
+  "content_digest": "91aee8ee4380268fb5a17ba01db0c6d5ce0e94b4236a64dd93cfc66952e18cbd",
   "locale": "zh-Hans",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -890,7 +890,8 @@
         "游戏机",
         "8090",
         "加速",
-        "滤镜"
+        "滤镜",
+        "gbc 模拟器"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -907,9 +908,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/gbago.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "58",
+        "price": "8",
         "currency": "CNY",
-        "formatted_price": "¥58.00",
+        "formatted_price": "¥8.00",
         "storefront_url": "https://apps.apple.com/cn/app/id6804564400"
       }
     },
@@ -1905,7 +1906,8 @@
         "地图",
         "乘车",
         "新店",
-        "板南线"
+        "板南线",
+        "mrt 时刻表"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -2921,7 +2923,8 @@
         "结算",
         "结伴",
         "记账",
-        "毕业"
+        "毕业",
+        "出发 倒计时"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -3403,7 +3406,8 @@
         "文档",
         "视频",
         "零广告",
-        "密码保护 zip"
+        "密码保护 zip",
+        "打开 rar 文件"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,

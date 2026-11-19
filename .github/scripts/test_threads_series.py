@@ -12,6 +12,7 @@ from pathlib import Path
 from unittest import mock
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+import channel_rotation  # noqa: E402
 import download_links as DL  # noqa: E402
 import threads_series as T  # noqa: E402
 import threads_cap  # noqa: E402
@@ -35,6 +36,13 @@ def setUpModule():
     room = mock.patch.object(threads_cap, "quota_usage", return_value=0)
     room.__enter__()
     _MODULE_PATCHES.append(room)
+    # The channel rotation holdout (channel_rotation.py) reads the real UTC date: in a week the plan gives
+    # to Threads these tests saw "paused" instead of the path they test, and the workflow's Test step
+    # went red for the whole week (social-extra 2026-11-15..18: three days without posts or feed.json).
+    # These tests are about other things; test_channel_rotation.py covers the holdout itself.
+    no_holdout = mock.patch.object(channel_rotation, "paused_notice", return_value=False)
+    no_holdout.__enter__()
+    _MODULE_PATCHES.append(no_holdout)
 
 
 WORKFLOWS = Path(__file__).resolve().parent.parent / "workflows"

@@ -16,6 +16,9 @@ concurrency:
 jobs:
   measure:
     runs-on: ubuntu-latest
+    # Shares the ios-app-guide-main-writer queue with Daily GEO content: a hung run here would hold
+    # geo-daily back for the 360-minute default. The run takes about 9 minutes.
+    timeout-minutes: 45
     env:
       GROWTH_LIVE_MANIFEST: ${{ github.workspace }}/.growth-runtime/live-app-manifest.json
       GEO_REPORTS: ${{ github.workspace }}/.growth-runtime/outreach

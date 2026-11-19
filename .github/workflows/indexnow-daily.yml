@@ -28,6 +28,9 @@ jobs:
   ping:
     if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
+    # The group queues every run (queue: max): a hung run would block the queue for the 360-minute
+    # default. Longest of 38 runs 2026-11-16..19: 35 minutes.
+    timeout-minutes: 75
     steps:
       - uses: actions/checkout@v4
         with:

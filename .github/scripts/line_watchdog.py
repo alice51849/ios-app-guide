@@ -175,8 +175,9 @@ SLOT_WORKFLOWS: dict[str, dict[str, dict]] = {
         },
         # 03:10 daily. Runs and succeeds every day; it only posts when a countdown
         # is due (countdown_cards.py active), so a green run with nothing posted is
-        # healthy. No slot gate or dedupe: a second run would post a second card on
-        # Telegram/Threads/Instagram, so it is watched, never dispatched.
+        # healthy. No slot gate; since 2026-11-19 a second run the same day skips every
+        # channel already on the day's posted receipt (countdown-cards branch), but it is
+        # still watched, never dispatched.
         "countdown-daily.yml": {
             "slots": {3: 10},
             # 24 + 3 (watchdog actually runs ~06:12Z, 3h after this 03:10Z slot; GitHub delays this

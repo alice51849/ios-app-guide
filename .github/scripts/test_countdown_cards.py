@@ -296,6 +296,21 @@ class CountdownOnceADayTest(unittest.TestCase):
         self.assertLess(wf.index("countdown_cards.py post"), keep)
         self.assertNotIn("--force", wf[keep:], "the receipt push must never overwrite the branch")
 
+    def test_a_failed_receipt_fetch_stops_the_run_unless_the_branch_is_not_there(self):
+        wf = (Path(__file__).resolve().parents[1] / "workflows" / "countdown-daily.yml").read_text()
+        due = wf[wf.index("id: due"):wf.index("- name: Draw the card")]
+        self.assertNotIn("countdown-cards 2>/dev/null", due, "a network failure must not read as no receipt")
+        self.assertIn("git ls-remote --exit-code origin countdown-cards", due)
+        self.assertIn('if [ "$rc" != 2 ]', due)
+        self.assertIn("exit 1", due)
+
+    def test_the_receipt_push_retries_after_a_fetch(self):
+        wf = (Path(__file__).resolve().parents[1] / "workflows" / "countdown-daily.yml").read_text()
+        keep = wf[wf.index("Keep today's posted receipt"):]
+        self.assertIn("for i in 1 2 3", keep)
+        self.assertLess(keep.index("git fetch"), keep.index("git push"))
+        self.assertIn("sleep $((i * 5))", keep)
+
 
 if __name__ == "__main__":
     unittest.main()

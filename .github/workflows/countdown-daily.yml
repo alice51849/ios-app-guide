@@ -48,8 +48,16 @@ jobs:
           if ! python3 .github/scripts/countdown_cards.py active; then echo "due=false" >> "$GITHUB_OUTPUT"; exit 0; fi
           # today's posted receipt, kept on the countdown-cards branch by the last step below
           rm -f "$RUNNER_TEMP/posted.json"
-          if git fetch -q --depth 1 origin countdown-cards 2>/dev/null; then
+          if git fetch -q --depth 1 origin countdown-cards; then
             git show "FETCH_HEAD:posted-$day.json" > "$RUNNER_TEMP/posted.json" 2>/dev/null || rm -f "$RUNNER_TEMP/posted.json"
+          else
+            # exit 2 = the branch is not there (no card yet, so no receipt); anything else = cannot tell
+            rc=0; git ls-remote --exit-code origin countdown-cards >/dev/null || rc=$?
+            if [ "$rc" != 2 ]; then
+              echo "::error::countdown: countdown-cards exists or cannot be checked (ls-remote exit $rc) but could not be fetched; today's receipt is unknown, so nothing is posted (a blind run could post the card twice and its force push would drop the receipt)"
+              exit 1
+            fi
+            echo "countdown-cards branch not there yet: no receipt"
           fi
           if [ -f "$RUNNER_TEMP/posted.json" ]; then echo "receipt for $day:"; cat "$RUNNER_TEMP/posted.json"; fi
           if python3 .github/scripts/countdown_cards.py done --date "$date" --receipt "$RUNNER_TEMP/posted.json" ${ONLY:+--only "$ONLY"}; then
@@ -105,9 +113,19 @@ jobs:
           cp "$RUNNER_TEMP/posted.json" "$name"
           git add "$name"
           if git diff --cached --quiet; then echo "receipt unchanged"; exit 0; fi
-          git -c user.name="github-actions[bot]" -c user.email="41898299+github-actions[bot]@users.noreply.github.com" commit -q -m "countdown posted $name"
-          if ! git push -q "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" countdown-cards:countdown-cards; then
-            echo "::error::countdown: today's posted receipt was not kept; a second run today could post the card again"
-            exit 1
-          fi
-          echo "kept $name: $(cat "$name")"
+          bot=(-c user.name="github-actions[bot]" -c user.email="41898299+github-actions[bot]@users.noreply.github.com")
+          git "${bot[@]}" commit -q -m "countdown posted $name"
+          remote="https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git"
+          for i in 1 2 3; do
+            # fetch first; if the branch moved, put the receipt on its tip (never a force push)
+            if git fetch -q "$remote" countdown-cards && ! git merge-base --is-ancestor FETCH_HEAD HEAD; then
+              git reset -q FETCH_HEAD
+              cp "$RUNNER_TEMP/posted.json" "$name"
+              git add "$name"
+              git diff --cached --quiet || git "${bot[@]}" commit -q -m "countdown posted $name"
+            fi
+            if git push -q "$remote" HEAD:countdown-cards; then echo "kept $name: $(cat "$name")"; exit 0; fi
+            echo "receipt push attempt $i failed"; sleep $((i * 5))
+          done
+          echo "::error::countdown: today's posted receipt was not kept; a second run today could post the card again"
+          exit 1

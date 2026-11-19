@@ -577,30 +577,46 @@ def validate_reference(ref: Reference, *, provider: str,
     linked = APP_STORE_PATH_RE.fullmatch(urllib.parse.urlsplit(normalized).path)
     if app_bound_campaign(campaign, linked["app_id"] if linked else None):
         allowed.add(campaign)
-    if campaign not in allowed and gw_campaign_problems(campaign, normalized) == []:
+    if campaign not in allowed and gw_campaign_problems(campaign, normalized, ref.locale) == []:
         # Intent-page gw codes (gw_campaign.py): app x storefront x keyword group.
         # Only a code whose app is the linked app and whose market is the link's
         # storefront (or ww) passes; any other ln_*_gw shape is rejected below.
         allowed.add(campaign)
     if campaign not in allowed:
-        problems = gw_campaign_problems(campaign, normalized)
+        problems = gw_campaign_problems(campaign, normalized, ref.locale)
         detail = f" ({'; '.join(problems)})" if problems and problems != ["not gw"] else ""
         raise AttributionError(f"Campaign outside the existing taxonomy: {campaign}{detail}")
     return campaign
 
 
-def gw_campaign_problems(campaign: str, url: str) -> list[str]:
-    """[] when ``campaign`` is a gw intent-page code valid on this exact link."""
+def gw_campaign_problems(campaign: str, url: str, locale: str | None = None) -> list[str]:
+    """[] when ``campaign`` is a gw intent-page code valid on this exact link.
+
+    A country-less link (Smart App Banner affiliate-data, ``/app/`` URL) has no
+    storefront to compare, and gw_campaign.link_problems skips the market check
+    for it.  The stamper computes such a link's code from the page locale's
+    storefront (final_store_url aligns first), so here the market must be that
+    storefront or ``ww`` -- a banner carrying another country's code still fails.
+    """
     import gw_campaign
 
     if not gw_campaign.is_gw(campaign):
         return ["not gw"]
     match = APP_STORE_PATH_RE.fullmatch(urllib.parse.urlsplit(url).path)
     app_id = match["app_id"] if match else None
-    return gw_campaign.link_problems(
-        campaign, app_key=gw_campaign.app_key_for_id(app_id),
-        storefront=gw_campaign.storefront_of(url),
+    storefront = gw_campaign.storefront_of(url)
+    problems = gw_campaign.link_problems(
+        campaign, app_key=gw_campaign.app_key_for_id(app_id), storefront=storefront,
     )
+    if storefront is None:
+        market = gw_campaign.parse(campaign)["mk"]
+        expected = LOCALE_STOREFRONTS.get(locale or "")
+        if market != gw_campaign.WW and market != expected:
+            problems.append(
+                f"{campaign}: market {market!r} is not the page storefront {expected!r} "
+                f"(country-less link, locale {locale!r})"
+            )
+    return problems
 
 
 def _qr_card(href: str, image: str, root: Path | None, cache: set | None = None) -> None:

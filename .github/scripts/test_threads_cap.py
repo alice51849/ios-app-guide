@@ -15,6 +15,7 @@ from unittest import mock
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 os.environ.setdefault("POST_QA_OFFLINE", "1")  # the pre-post QA gate makes no network calls in tests
 
+import channel_rotation  # noqa: E402
 import threads_cap  # noqa: E402
 import threads_post  # noqa: E402
 
@@ -36,6 +37,13 @@ def setUpModule():
     no_trial = mock.patch.object(threads_post, "load_trial", return_value={})
     no_trial.__enter__()
     _MODULE_PATCHES.append(no_trial)
+    # The channel rotation holdout (channel_rotation.py) reads the real UTC date: in a week the plan gives
+    # to Threads these tests saw "paused" instead of the path they test, and the workflow's Test step
+    # went red for the whole week (social-extra 2026-11-15..18: three days without posts or feed.json).
+    # These tests are about other things; test_channel_rotation.py covers the holdout itself.
+    no_holdout = mock.patch.object(channel_rotation, "paused_notice", return_value=False)
+    no_holdout.__enter__()
+    _MODULE_PATCHES.append(no_holdout)
 
 
 MOCHI = "6785004775"  # Android-live App Store id (App Store + Google Play link reply)

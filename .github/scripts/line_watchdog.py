@@ -21,6 +21,7 @@ import argparse
 import datetime as dt
 import json
 import os
+import re
 import subprocess
 import sys
 import time
@@ -71,8 +72,33 @@ PROFILES: dict[str, dict] = {
             # delivery evidence. Idempotent, so a stale line may be re-dispatched with no inputs.
             "ig-bio-hub.yml": 30,
             "sov-weekly.yml": 8 * 24,
+            # 2026-11-19: four daily/periodic record lines nothing watched. Each only rebuilds its own
+            # records through growth_records.py (idempotent, no post), so a bare re-dispatch is safe.
+            # Windows cover the hours GitHub delays this repository's crons by (6-8 h on 11-17..19):
+            # clip-replan 00:30Z arrives ~08:00Z, post-performance 00:05Z ~07:10Z, android-promo-sync
+            # every 6 h arrives 11-13 h apart, owner-decisions every 30 min arrives 6-8 h apart.
+            "clip-replan.yml": 36,
+            "post-performance.yml": 36,
+            "android-promo-sync.yml": 30,
+            "owner-decisions.yml": 24,
         },
-        "evidence": ["guide_deployment", "telegram_message_id"],
+        # Watched, never dispatched. A bare dispatch of these is not the scheduled job (link-backfill.yml
+        # defaults to mode=audit, comment-replies.yml to dry_run=true), so only scheduled runs count as
+        # a success: a person's audit / dry run must not turn the line green. And a dispatch with the
+        # real inputs would walk past the owner's off switch, which only a scheduled run obeys
+        # (.github/growth/link-backfill.auto, repository variable AUTO_REPLY_DRY_RUN): the healer must
+        # never switch back on what the owner switched off, so a quiet line stays red for a person.
+        "watch_only_workflows": {
+            "link-backfill.yml": {
+                "max_age_hours": 24,
+                "reason": "a dispatch skips the link-backfill.auto switch; bare dispatch is mode=audit",
+            },
+            "comment-replies.yml": {
+                "max_age_hours": 24,
+                "reason": "a dispatch overrides AUTO_REPLY_DRY_RUN; bare dispatch is dry_run=true",
+            },
+        },
+        "evidence": ["guide_deployment", "telegram_message_id", "social_feed"],
     },
 }
 
@@ -164,6 +190,18 @@ SLOT_WORKFLOWS: dict[str, dict[str, dict]] = {
         # 17:47 (clip slot 15). clip_posts.py skips a clip already in
         # clip-posts.json and Threads goes through threads_backfill.py ->
         # threads-post.yml (gate + cap), so a rerun only fills misses.
+        # 01:50 / 15:50: the clips and cards for the extra platforms (Telegraph, WhiteWind, ...) and the
+        # day's feed.json on the social-feed branch, which threads-autopilot (Bluesky) and the Mac
+        # (YouTube Shorts, Pinterest) post from. 2026-11-15..18 every run failed in its Test step for
+        # three days and no row went red: the workflow was not watched at all. A dispatch that carries
+        # the slot's cron runs like the scheduled run, social_slot_gate.py included.
+        "social-extra.yml": {
+            "slots": {1: 50, 15: 50},
+            "max_age_hours": SLOT_MAX_AGE_HOURS,
+            "heal": "inputs",
+            "inputs": {"cron": "50 {hour} * * *"},
+            "reason": "slot gate --slots 1,15 keyed on the cron input; clip-posts.json dedupes each clip per platform",
+        },
         "clip-backup.yml": {
             "slots": {0: 47, 3: 47, 11: 47, 14: 47, 17: 47, 20: 47},
             "max_age_hours": SLOT_MAX_AGE_HOURS,
@@ -182,7 +220,14 @@ EVIDENCE_MAX_AGE_HOURS = {
     "nostr_receipts": 24,
     "guide_deployment": 6,  # hours main content may wait for a paired release
     "telegram_message_id": 30,
+    # feed.json is rewritten by every social-extra run (01:50 and 15:50 UTC, the later one often
+    # delivered ~22:40Z). The Mac's YouTube Shorts upload refuses a feed whose date is not today, so
+    # a feed older than a day and a few hours means Bluesky / YouTube Shorts / Pinterest have stopped.
+    "social_feed": 30,
 }
+SOCIAL_FEED_URL = "https://raw.githubusercontent.com/{repo}/social-feed/feed.json"
+SOCIAL_FEED_SCHEMA = "lumi.social-feed/v1"  # social_extra.FEED_SCHEMA
+SOCIAL_FEED_HEAD_BYTES = 4096
 
 
 class WatchdogError(RuntimeError):
@@ -314,11 +359,14 @@ class Gh:
 # Workflow freshness
 # --------------------------------------------------------------------------- #
 def judge_workflow(gh: Gh, workflow_file: str, max_age_hours: float, now: float,
-                   *, dispatch: bool) -> dict:
+                   *, dispatch: bool, watch_only: str = "") -> dict:
+    """``watch_only`` (the reason, from ``watch_only_workflows``): only scheduled runs count as a
+    success and a stale line is reported, never dispatched."""
     runs = gh.runs(workflow_file)
     latest_success = max(
         (parse_time(run.get("updated_at") or run.get("created_at")) or 0.0
-         for run in runs if run.get("conclusion") == "success"),
+         for run in runs if run.get("conclusion") == "success"
+         and (not watch_only or run.get("event") == "schedule")),
         default=None,
     )
     if latest_success == 0.0:
@@ -337,6 +385,10 @@ def judge_workflow(gh: Gh, workflow_file: str, max_age_hours: float, now: float,
         row["note"] = f"latest run {latest.get('status')}/{latest.get('conclusion')} at {latest.get('updated_at')}"
     if in_progress:
         row["action"] = "wait_in_progress"
+        return row
+    if watch_only:
+        row["action"] = "monitor_only"
+        row["note"] = f"{row['note']}; {watch_only}".lstrip("; ")
         return row
     since = iso(now - 24 * HOUR)
     recent_dispatches = [
@@ -366,6 +418,13 @@ def validate_slot_policy(profile_name: str) -> None:
     overlap = set(lines) & set(PROFILES[profile_name]["workflows"])
     if overlap:
         raise WatchdogError(f"judged twice (workflow window and slots): {sorted(overlap)}")
+    watched = PROFILES[profile_name].get("watch_only_workflows") or {}
+    overlap = set(watched) & (set(lines) | set(PROFILES[profile_name]["workflows"]))
+    if overlap:
+        raise WatchdogError(f"judged twice (watch-only workflow and another kind): {sorted(overlap)}")
+    for workflow, spec in watched.items():
+        if not spec.get("reason") or not spec.get("max_age_hours"):
+            raise WatchdogError(f"{workflow}: a watch-only workflow states max_age_hours and its reason")
     for workflow, spec in lines.items():
         slots = spec.get("slots") or {}
         if not slots or any(not 0 <= h <= 23 or not 0 <= m <= 59 for h, m in slots.items()):
@@ -560,6 +619,31 @@ def guide_deployment(gh: Gh, fetch: Callable[[str], bytes], site: str,
     )
 
 
+_FEED_HEAD_FIELD = re.compile(r'"(schema|date|generated_at)"\s*:\s*"([^"]*)"')
+
+
+def social_feed(fetch: Callable[[str], bytes], repo: str) -> tuple[float | None, str]:
+    """When social-extra last published feed.json on the social-feed branch (its generated_at).
+
+    feed.json is several MB (3.8 MB on 2026-11-19; the fetch stops at 2 MB), so only its head is
+    read: social_extra.export() writes schema, date and generated_at before the items. An unreadable
+    feed is a red row with the reason, never an exception: the other lines are still judged, and the
+    feed is never read as fresh by accident.
+    """
+    url = SOCIAL_FEED_URL.format(repo=repo)
+    try:
+        head = fetch(url)[:SOCIAL_FEED_HEAD_BYTES].decode("utf-8", "replace")
+    except OSError as error:
+        return None, f"feed.json unreadable ({type(error).__name__}: {str(error)[:120]})"
+    fields = dict(_FEED_HEAD_FIELD.findall(head.split('"items"', 1)[0]))
+    if fields.get("schema") != SOCIAL_FEED_SCHEMA:
+        return None, f"feed.json head is not a {SOCIAL_FEED_SCHEMA} feed"
+    stamp = parse_time(fields.get("generated_at"))
+    if stamp is None:
+        return None, "feed.json head carries no generated_at"
+    return stamp, f"feed date {fields.get('date')}; Bluesky / YouTube Shorts / Pinterest post from it"
+
+
 # The line is scheduled more often than it posts: a run whose slot another run
 # already served exits with "already completed; skip", which is the healthy
 # idempotent outcome, not a delivery failure. Judging only the newest run
@@ -738,6 +822,17 @@ def run(profile_name: str, repo: str, root: Path, *, now: float, gh: Gh,
             })
             continue
         rows.append(judge_workflow(gh, workflow_file, max_age, now, dispatch=dispatch))
+    for workflow_file, spec in (profile.get("watch_only_workflows") or {}).items():
+        meta = known.get(workflow_file)
+        if meta is None or meta["state"] != "active":
+            rows.append({
+                "line": workflow_file, "kind": "workflow", "fresh": True, "last_success": "n/a",
+                "max_age_hours": spec["max_age_hours"], "in_progress": False, "action": "skipped",
+                "note": f"workflow {meta['state'] if meta else 'missing'} (not judged)",
+            })
+            continue
+        rows.append(judge_workflow(gh, workflow_file, spec["max_age_hours"], now, dispatch=dispatch,
+                                   watch_only=spec["reason"]))
     for workflow_file, spec in SLOT_WORKFLOWS.get(profile_name, {}).items():
         meta = known.get(workflow_file)
         if meta is None or meta["state"] != "active":
@@ -759,6 +854,8 @@ def run(profile_name: str, repo: str, root: Path, *, now: float, gh: Gh,
             stamp, note = guide_deployment(gh, fetch, site, now)
         elif name == "telegram_message_id":
             stamp, note = telegram_message_id(gh)
+        elif name == "social_feed":
+            stamp, note = social_feed(fetch, repo)
         else:  # pragma: no cover
             raise WatchdogError(f"unknown evidence {name}")
         rows.append(rotation_holdout(judge_evidence(name, stamp, note, now), now))

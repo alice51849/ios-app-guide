@@ -45,7 +45,10 @@ Consumers
   the install referrer ``utm_source=<ct of that App Store CTA>&utm_campaign=
   <app key>`` (``tracked_play_url``, the same shape as 00_GrowthEngine
   ``agent/ct_codes.play_referrer_url``), so Play installs land on the same
-  channel row as App Store downloads.
+  channel row as App Store downloads.  On pages that declare a keyword group
+  the page's own Play links of that app whose referrer is a gw code of the same
+  app are re-stamped to the CTA's gw code (``restamp_native_play``), so the
+  daily plan re-computation never leaves App Store and Play on different codes.
 * ``llms_line``        one llms.txt sub-bullet per mapped app.
 * ``injected_spans``   where the injected links sit, so ``aeo_answers_i18n``
   never treats them as translatable page copy.
@@ -613,6 +616,7 @@ def inject_html(source: str, apps: dict[str, dict]) -> str:
     english = lang == "en" or lang.startswith("en-")
     seen: set[str] = set()
     inserts: list[tuple[int, str]] = []
+    restamps: list[tuple[str, str, str]] = []
     managed = _managed_spans(text)
     candidates = []
     for match in _APP_STORE_ANCHOR_RE.finditer(text):
@@ -629,6 +633,7 @@ def inject_html(source: str, apps: dict[str, dict]) -> str:
             continue
         seen.add(app_id)
         key, entry = by_id[app_id]
+        restamps.append((key, entry["package"], _anchor_ct(match.group(0))))
         url = html.escape(
             tracked_play_url(entry["play_url"], _anchor_ct(match.group(0)), key), quote=True
         )
@@ -658,7 +663,47 @@ def inject_html(source: str, apps: dict[str, dict]) -> str:
                             f'href="{url}" rel="noopener">Google Play</a>'))
     for position, snippet in sorted(inserts, reverse=True):
         text = text[:position] + snippet + text[position:]
+    for key, package, ct in restamps:
+        text = restamp_native_play(text, package, key, ct)
     return text
+
+
+def restamp_native_play(text: str, package: str, key: str, ct: str) -> str:
+    """Re-stamp the page's own Play links of one app with the App Store CTA's gw code.
+
+    2026-11-19 (Kumo nl/sv/vi pages, Guide daily commit bfd24eac): generators such
+    as 00_GrowthEngine gen_kumo_guide_pages write their own Play links
+    (``data-ls-play``) with the gw code of the day.  The daily rewrite
+    (gen_store_attribution) re-computes every App Store link from
+    gw_campaign_plan.json, but nothing re-computed those Play referrers, so
+    once the plan opened a page's cell the page carried the new code on App Store
+    and the old ``ln_<app>_all_ww_gw`` on Play (one page, two codes).
+
+    Only on pages that declare a keyword group (``growth-attribution-group``),
+    only when both the CTA's code and the link's ``utm_source`` are gw codes of
+    this same app, and never inside blocks owned by other generators: any other
+    referrer (threads, ai_, sup_ ...) is left byte for byte.
+    """
+    import gw_campaign
+
+    parsed = gw_campaign.parse(ct)
+    if parsed is None or parsed["app"] != key or not gw_campaign.META_RE.search(text):
+        return text
+    pattern = re.compile(
+        r"(https://play\.google\.com/store/apps/details\?id=" + re.escape(package)
+        + r"(?:&amp;|&)referrer=utm_source%3D)(?P<src>[A-Za-z0-9_]+)(?=%26utm_campaign%3D"
+        + re.escape(key) + r'(?:["&]|$))'
+    )
+    managed = _managed_spans(text)
+
+    def swap(match: re.Match[str]) -> str:
+        source = gw_campaign.parse(match["src"])
+        if (source is None or source["app"] != key or match["src"] == ct
+                or _owning_block(managed, match.start()) is not None):
+            return match.group(0)
+        return match.group(1) + ct
+
+    return pattern.sub(swap, text)
 
 
 def _digest_pinned(pages: Path) -> set[str]:

@@ -127,5 +127,22 @@ class RecoverTest(unittest.TestCase):
         self.assertFalse(results["bbbbbb"]["ok"])
 
 
+class WorkflowTest(unittest.TestCase):
+    """2026-11-19: clip-replan's newest clips.json can wait on growth-records-pending while geo-daily runs; the
+    mirror must read it from there (overlay) and push through growth_records.py, never main's older copy."""
+
+    def test_the_mirror_reads_pending_records_and_pushes_through_growth_records(self):
+        wf = (Path(__file__).resolve().parents[1] / "workflows" / "clip-mirror.yml").read_text()
+        overlay = wf.index("growth_records.py overlay")
+        self.assertLess(wf.index("actions/checkout@v4"), overlay)
+        self.assertLess(overlay, wf.index("clip_mirror.py mirror"))
+        self.assertIn("actions: read", wf)
+        rewrite = wf[wf.index("clip_mirror.py rewrite") - 400:]
+        self.assertIn('target="$(python3 .github/scripts/growth_records.py prepare)"', rewrite)
+        self.assertIn('growth_records.py push "$target"', rewrite)
+        self.assertNotIn("git reset -q --hard origin/main", wf)
+        self.assertNotIn("git push -q origin HEAD:main", wf)
+
+
 if __name__ == "__main__":
     unittest.main()

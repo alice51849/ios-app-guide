@@ -2,7 +2,7 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-11-19",
-  "content_digest": "91aee8ee4380268fb5a17ba01db0c6d5ce0e94b4236a64dd93cfc66952e18cbd",
+  "content_digest": "1879416ba8e23730f92f0448aa7d94284111a248662bedc060147ade6d510cb9",
   "locale": "fr-CA",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -1600,7 +1600,7 @@
       "key": "qrcodehalo",
       "app_store_id": "6806779853",
       "name": "QR Code Halo : Scan sécurisé",
-      "summary": "Optimisée pour l’iPhone Duo. Conçue avec le SDK le plus récent, l’app remplit tout l’écran intérieur et adapte automatiquement sa mise en page, appareil plié ou ouvert.",
+      "summary": "Numérisez les codes QR et les codes-barres en 20 formats, avec la caméra ou depuis une photo, et l'action se fait aussitôt : les liens s'ouvrent et les codes Wi-Fi affichent l'invite pour joindre le réseau. Vous craignez qu'un code soit une arnaque? Ouvrez-le dans l'Historique et touchez « Contrôle de sécurité ». Sur votre appareil, QR Code Halo décompose le lien et signale les URL suspectes, les liens sans HTTPS et les domaines qui mélangent les alphabets comme sûrs, à surveiller ou bloqués. Les codes javascript:, data: et file: ne s'ouvrent jamais, et vous pouvez désactiver « Exécuter dès la lecture » pour vérifier chaque code avant de l'ouvrir. Créez aussi 9 types de codes QR, dont Wi-Fi, contacts et événements.",
       "category": "utility",
       "search_terms": [
         "lecteur",

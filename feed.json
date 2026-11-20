@@ -1,7 +1,7 @@
 {
  "schema": "lumi.social-feed/v1",
  "date": "2026-11-20",
- "generated_at": "2026-11-20T02:05:42Z",
+ "generated_at": "2026-11-20T09:14:17Z",
  "items": {
   "bluesky": [
    {
@@ -180,42 +180,42 @@
    },
    {
     "kind": "clip",
-    "key": "shotinbox/en",
+    "key": "gmoney/en",
     "locale": "en",
-    "app": "shotinbox",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/8wjz03.mp4",
-    "hook": "Search the text inside them",
-    "name": "ShotInbox AI: Sort Screenshots",
-    "title": "Search the text inside them | OCR Search & Photo Cleaner | ShotInbox",
+    "app": "gmoney",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/txsq79.mp4",
+    "hook": "See where it went, by category",
+    "name": "G+Money: Spending & Budget",
+    "title": "See where it went, by category | Spending & Budget | G+Money",
     "tags": [
-     "#SortScreenshots",
-     "#OCRSearch",
-     "#PhotoCleaner",
-     "#ShotInbox"
+     "#SpendingBudget",
+     "#DailyLog",
+     "#Planner",
+     "#GMoney"
     ],
-    "caption": "Search the text inside them\nReceipts, tickets…all sorted\nOCR Search & Photo Cleaner\nShotInbox AI: Sort Screenshots\nSearch “Sort Screenshots” on the App Store\nAlso on Google Play\n\n#SortScreenshots #OCRSearch #ShotInbox",
+    "caption": "See where it went, by category\nConvert & log, even offline\nG+Money: Spending & Budget\nSearch “G+Money” on the App Store\nAlso on Google Play\n\n#SpendingBudget #DailyLog #GMoney",
     "button": "Get it on the App Store",
     "variant": "b",
-    "alt": "ShotInbox AI: Sort Screenshots — Search the text inside them — Receipts, tickets…all sorted — OCR Search & Photo Cleaner",
-    "store": "https://apps.apple.com/us/app/id6802166527?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ShotInbox&referrer=utm_source%3Dsocial%26utm_campaign%3Dshotinbox",
+    "alt": "G+Money: Spending & Budget — See where it went, by category — Convert & log, even offline",
+    "store": "https://apps.apple.com/us/app/id6755782939?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
     "review": {
      "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6802166527?action=write-review"
+     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
     },
     "keywords": [
-     "organizer",
+     "export",
+     "bookkeeping",
      "manager",
-     "duplicate",
-     "similar",
-     "text",
-     "receipts"
+     "personal",
+     "bills",
+     "summary"
     ],
-    "keyline": "OCR Search & Photo Cleaner",
+    "keyline": "Spending & Budget",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "f6c970e3cb08d22c",
+     "board": "987a384c8c1d4d89",
      "real_recording": false,
      "rules": "2026-10-18"
     },
@@ -263,6 +263,27 @@
      "rules": "2026-10-18"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "utility/word/aim990/itinerary/zh-Hant",
+    "locale": "zh-Hant",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/utility-cards/card-20261120.jpg",
+    "caption": "今日多益商務單字：itinerary  (n.)\n行程表\n例句: Your itinerary has been sent to your email.\n\nAim990: 8 分鐘找出你的多益弱點\nApp Store／Google Play 搜尋「Aim990」\n\n#英文聽力閱讀文法診斷 #單字 #背單字",
+    "title": "今日多益商務單字：itinerary  (n.)",
+    "alt": "Aim990 — 今日多益商務單字：itinerary  (n.) — 行程表 — 例句: Your itinerary has been sent to your email. — 多益聽讀診斷與30天計畫",
+    "name": "Aim990",
+    "hook": "今日多益商務單字：itinerary  (n.)",
+    "tags": [
+     "#英文聽力閱讀文法診斷",
+     "#單字",
+     "#背單字",
+     "#練習",
+     "#Aim990"
+    ],
+    "button": "在 App Store 下載",
+    "store": "https://apps.apple.com/tw/app/id6784974530?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.aim990&referrer=utm_source%3Dsocial%26utm_campaign%3Daim990"
    },
    {
     "kind": "card",
@@ -1586,42 +1607,42 @@
    },
    {
     "kind": "clip",
-    "key": "shotinbox/en",
+    "key": "gmoney/en",
     "locale": "en",
-    "app": "shotinbox",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/8wjz03.mp4",
-    "hook": "Search the text inside them",
-    "name": "ShotInbox AI: Sort Screenshots",
-    "title": "Search the text inside them | OCR Search & Photo Cleaner | ShotInbox",
+    "app": "gmoney",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/txsq79.mp4",
+    "hook": "See where it went, by category",
+    "name": "G+Money: Spending & Budget",
+    "title": "See where it went, by category | Spending & Budget | G+Money",
     "tags": [
-     "#SortScreenshots",
-     "#OCRSearch",
-     "#PhotoCleaner",
-     "#ShotInbox"
+     "#SpendingBudget",
+     "#DailyLog",
+     "#Planner",
+     "#GMoney"
     ],
-    "caption": "Search the text inside them\nReceipts, tickets…all sorted\nOCR Search & Photo Cleaner\nShotInbox AI: Sort Screenshots\nSearch “Sort Screenshots” on the App Store\nAlso on Google Play\n\n#SortScreenshots #OCRSearch #PhotoCleaner #ShotInbox",
+    "caption": "See where it went, by category\nConvert & log, even offline\nG+Money: Spending & Budget\nSearch “G+Money” on the App Store\nAlso on Google Play\n\n#SpendingBudget #DailyLog #Planner #GMoney",
     "button": "Get it on the App Store",
     "variant": "b",
-    "alt": "ShotInbox AI: Sort Screenshots — Search the text inside them — Receipts, tickets…all sorted — OCR Search & Photo Cleaner",
-    "store": "https://apps.apple.com/us/app/id6802166527?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ShotInbox&referrer=utm_source%3Dsocial%26utm_campaign%3Dshotinbox",
+    "alt": "G+Money: Spending & Budget — See where it went, by category — Convert & log, even offline",
+    "store": "https://apps.apple.com/us/app/id6755782939?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
     "review": {
      "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6802166527?action=write-review"
+     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
     },
     "keywords": [
-     "organizer",
+     "export",
+     "bookkeeping",
      "manager",
-     "duplicate",
-     "similar",
-     "text",
-     "receipts"
+     "personal",
+     "bills",
+     "summary"
     ],
-    "keyline": "OCR Search & Photo Cleaner",
+    "keyline": "Spending & Budget",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "f6c970e3cb08d22c",
+     "board": "987a384c8c1d4d89",
      "real_recording": false,
      "rules": "2026-10-18"
     },
@@ -1669,6 +1690,27 @@
      "rules": "2026-10-18"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "utility/word/aim990/itinerary/zh-Hant",
+    "locale": "zh-Hant",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/utility-cards/card-20261120.jpg",
+    "caption": "今日多益商務單字：itinerary  (n.)\n行程表\n例句: Your itinerary has been sent to your email.\n\nAim990: 8 分鐘找出你的多益弱點\nApp Store／Google Play 搜尋「Aim990」\n\n#英文聽力閱讀文法診斷 #單字 #背單字 #練習 #Aim990",
+    "title": "今日多益商務單字：itinerary  (n.)",
+    "alt": "Aim990 — 今日多益商務單字：itinerary  (n.) — 行程表 — 例句: Your itinerary has been sent to your email. — 多益聽讀診斷與30天計畫",
+    "name": "Aim990",
+    "hook": "今日多益商務單字：itinerary  (n.)",
+    "tags": [
+     "#英文聽力閱讀文法診斷",
+     "#單字",
+     "#背單字",
+     "#練習",
+     "#Aim990"
+    ],
+    "button": "在 App Store 下載",
+    "store": "https://apps.apple.com/tw/app/id6784974530?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.aim990&referrer=utm_source%3Dsocial%26utm_campaign%3Daim990"
    }
   ],
   "youtube": [
@@ -1908,59 +1950,60 @@
    },
    {
     "kind": "clip",
-    "key": "shotinbox/en",
+    "key": "gmoney/en",
     "locale": "en",
-    "app": "shotinbox",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/8wjz03.mp4",
-    "hook": "Search the text inside them",
-    "name": "ShotInbox AI: Sort Screenshots",
-    "title": "Search the text inside them | OCR Search & Photo Cleaner | ShotInbox",
+    "app": "gmoney",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/txsq79.mp4",
+    "hook": "See where it went, by category",
+    "name": "G+Money: Spending & Budget",
+    "title": "See where it went, by category | Spending & Budget | G+Money",
     "tags": [
-     "#SortScreenshots",
-     "#OCRSearch",
-     "#PhotoCleaner",
-     "#ShotInbox"
+     "#SpendingBudget",
+     "#DailyLog",
+     "#Planner",
+     "#GMoney"
     ],
-    "caption": "Search the text inside them\nReceipts, tickets…all sorted\nOCR Search & Photo Cleaner\nShotInbox AI: Sort Screenshots\nSearch “Sort Screenshots” on the App Store\nAlso on Google Play\n\n#SortScreenshots #OCRSearch #PhotoCleaner #ShotInbox",
+    "caption": "See where it went, by category\nConvert & log, even offline\nG+Money: Spending & Budget\nSearch “G+Money” on the App Store\nAlso on Google Play\n\n#SpendingBudget #DailyLog #Planner #GMoney",
     "button": "Get it on the App Store",
     "variant": "b",
-    "alt": "ShotInbox AI: Sort Screenshots — Search the text inside them — Receipts, tickets…all sorted — OCR Search & Photo Cleaner",
-    "store": "https://apps.apple.com/us/app/id6802166527?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ShotInbox&referrer=utm_source%3Dsocial%26utm_campaign%3Dshotinbox",
+    "alt": "G+Money: Spending & Budget — See where it went, by category — Convert & log, even offline",
+    "store": "https://apps.apple.com/us/app/id6755782939?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
     "review": {
      "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6802166527?action=write-review"
+     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
     },
     "keywords": [
-     "organizer",
+     "export",
+     "bookkeeping",
      "manager",
-     "duplicate",
-     "similar",
-     "text",
-     "receipts"
+     "personal",
+     "bills",
+     "summary"
     ],
-    "keyline": "OCR Search & Photo Cleaner",
+    "keyline": "Spending & Budget",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "f6c970e3cb08d22c",
+     "board": "987a384c8c1d4d89",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "youtube": {
-     "title": "Search the text inside them | ShotInbox #Shorts",
-     "description": "Search the text inside them\nReceipts, tickets…all sorted\nOCR Search & Photo Cleaner\n\nShotInbox AI: Sort Screenshots\nApp Store: https://apps.apple.com/us/app/id6802166527?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ShotInbox&referrer=utm_source%3Dsocial%26utm_campaign%3Dshotinbox\nAlready using this app? Rate or review it on the App Store\nhttps://apps.apple.com/app/id6802166527?action=write-review\n\norganizer · manager · duplicate · similar · text · receipts\n\n#Shorts #SortScreenshots #ShotInbox",
+     "title": "See where it went, by category | G+Money #Shorts",
+     "description": "See where it went, by category\nConvert & log, even offline\nSpending & Budget\n\nG+Money: Spending & Budget\nApp Store: https://apps.apple.com/us/app/id6755782939?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney\nAlready using this app? Rate or review it on the App Store\nhttps://apps.apple.com/app/id6755782939?action=write-review\n\nexport · bookkeeping · manager · personal · bills · summary\n\n#Shorts #SpendingBudget #GMoney",
      "tags": [
-      "organizer",
+      "export",
+      "bookkeeping",
       "manager",
-      "duplicate",
-      "similar",
-      "text",
-      "receipts",
-      "SortScreenshots",
-      "OCRSearch",
-      "PhotoCleaner",
-      "ShotInbox"
+      "personal",
+      "bills",
+      "summary",
+      "SpendingBudget",
+      "DailyLog",
+      "Planner",
+      "GMoney",
+      "G+Money"
      ]
     },
     "slot": 15
@@ -2218,48 +2261,48 @@
    },
    {
     "kind": "clip",
-    "key": "shotinbox/en",
+    "key": "gmoney/en",
     "locale": "en",
-    "app": "shotinbox",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/8wjz03.mp4",
-    "hook": "Search the text inside them",
-    "name": "ShotInbox AI: Sort Screenshots",
-    "title": "Search the text inside them | OCR Search & Photo Cleaner | ShotInbox",
+    "app": "gmoney",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/txsq79.mp4",
+    "hook": "See where it went, by category",
+    "name": "G+Money: Spending & Budget",
+    "title": "See where it went, by category | Spending & Budget | G+Money",
     "tags": [
-     "#SortScreenshots",
-     "#OCRSearch",
-     "#PhotoCleaner",
-     "#ShotInbox"
+     "#SpendingBudget",
+     "#DailyLog",
+     "#Planner",
+     "#GMoney"
     ],
-    "caption": "Search the text inside them\nReceipts, tickets…all sorted\nOCR Search & Photo Cleaner\nShotInbox AI: Sort Screenshots\nSearch “Sort Screenshots” on the App Store\nAlso on Google Play\n\n#SortScreenshots #OCRSearch #PhotoCleaner #ShotInbox",
+    "caption": "See where it went, by category\nConvert & log, even offline\nG+Money: Spending & Budget\nSearch “G+Money” on the App Store\nAlso on Google Play\n\n#SpendingBudget #DailyLog #Planner #GMoney",
     "button": "Get it on the App Store",
     "variant": "b",
-    "alt": "ShotInbox AI: Sort Screenshots — Search the text inside them — Receipts, tickets…all sorted — OCR Search & Photo Cleaner",
-    "store": "https://apps.apple.com/us/app/id6802166527?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ShotInbox&referrer=utm_source%3Dsocial%26utm_campaign%3Dshotinbox",
+    "alt": "G+Money: Spending & Budget — See where it went, by category — Convert & log, even offline",
+    "store": "https://apps.apple.com/us/app/id6755782939?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
     "review": {
      "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6802166527?action=write-review"
+     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
     },
     "keywords": [
-     "organizer",
+     "export",
+     "bookkeeping",
      "manager",
-     "duplicate",
-     "similar",
-     "text",
-     "receipts"
+     "personal",
+     "bills",
+     "summary"
     ],
-    "keyline": "OCR Search & Photo Cleaner",
+    "keyline": "Spending & Budget",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "f6c970e3cb08d22c",
+     "board": "987a384c8c1d4d89",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "Search the text inside them\nReceipts, tickets…all sorted\nOCR Search & Photo Cleaner\nShotInbox AI: Sort Screenshots\nSearch “Sort Screenshots” on the App Store\nAlso on Google Play\n\n#SortScreenshots #OCRSearch #PhotoCleaner #ShotInbox\n\nGet it on the App Store: https://apps.apple.com/us/app/id6802166527?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ShotInbox&referrer=utm_source%3Dsocial%26utm_campaign%3Dshotinbox",
-     "link": "https://apps.apple.com/us/app/id6802166527?pt=118326163&ct=social&mt=8"
+     "description": "See where it went, by category\nConvert & log, even offline\nG+Money: Spending & Budget\nSearch “G+Money” on the App Store\nAlso on Google Play\n\n#SpendingBudget #DailyLog #Planner #GMoney\n\nGet it on the App Store: https://apps.apple.com/us/app/id6755782939?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
+     "link": "https://apps.apple.com/us/app/id6755782939?pt=118326163&ct=social&mt=8"
     },
     "slot": 15
    },
@@ -2309,6 +2352,31 @@
      "link": "https://apps.apple.com/es/app/id6830824515?pt=118326163&ct=social&mt=8"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "utility/word/aim990/itinerary/zh-Hant",
+    "locale": "zh-Hant",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/utility-cards/card-20261120.jpg",
+    "caption": "今日多益商務單字：itinerary  (n.)\n行程表\n例句: Your itinerary has been sent to your email.\n\nAim990: 8 分鐘找出你的多益弱點\nApp Store／Google Play 搜尋「Aim990」\n\n#英文聽力閱讀文法診斷 #單字 #背單字 #練習 #Aim990",
+    "title": "今日多益商務單字：itinerary  (n.)",
+    "alt": "Aim990 — 今日多益商務單字：itinerary  (n.) — 行程表 — 例句: Your itinerary has been sent to your email. — 多益聽讀診斷與30天計畫",
+    "name": "Aim990",
+    "hook": "今日多益商務單字：itinerary  (n.)",
+    "tags": [
+     "#英文聽力閱讀文法診斷",
+     "#單字",
+     "#背單字",
+     "#練習",
+     "#Aim990"
+    ],
+    "button": "在 App Store 下載",
+    "store": "https://apps.apple.com/tw/app/id6784974530?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.aim990&referrer=utm_source%3Dsocial%26utm_campaign%3Daim990",
+    "pinterest": {
+     "description": "今日多益商務單字：itinerary  (n.)\n行程表\n例句: Your itinerary has been sent to your email.\n\nAim990: 8 分鐘找出你的多益弱點\nApp Store／Google Play 搜尋「Aim990」\n\n#英文聽力閱讀文法診斷 #單字 #背單字 #練習 #Aim990\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6784974530?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.aim990&referrer=utm_source%3Dsocial%26utm_campaign%3Daim990",
+     "link": "https://apps.apple.com/tw/app/id6784974530?pt=118326163&ct=social&mt=8"
+    }
    },
    {
     "kind": "card",
@@ -5213,47 +5281,47 @@
    },
    {
     "kind": "clip",
-    "key": "shotinbox/en",
+    "key": "gmoney/en",
     "locale": "en",
-    "app": "shotinbox",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/8wjz03.mp4",
-    "hook": "Search the text inside them",
-    "name": "ShotInbox AI: Sort Screenshots",
-    "title": "Search the text inside them | OCR Search & Photo Cleaner | ShotInbox",
+    "app": "gmoney",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/txsq79.mp4",
+    "hook": "See where it went, by category",
+    "name": "G+Money: Spending & Budget",
+    "title": "See where it went, by category | Spending & Budget | G+Money",
     "tags": [
-     "#SortScreenshots",
-     "#OCRSearch",
-     "#PhotoCleaner",
-     "#ShotInbox"
+     "#SpendingBudget",
+     "#DailyLog",
+     "#Planner",
+     "#GMoney"
     ],
-    "caption": "Search the text inside them\nReceipts, tickets…all sorted\nOCR Search & Photo Cleaner\nShotInbox AI: Sort Screenshots\nSearch “Sort Screenshots” on the App Store\nAlso on Google Play\n\n#SortScreenshots #OCRSearch #PhotoCleaner #ShotInbox",
+    "caption": "See where it went, by category\nConvert & log, even offline\nG+Money: Spending & Budget\nSearch “G+Money” on the App Store\nAlso on Google Play\n\n#SpendingBudget #DailyLog #Planner #GMoney",
     "button": "Get it on the App Store",
     "variant": "b",
-    "alt": "ShotInbox AI: Sort Screenshots — Search the text inside them — Receipts, tickets…all sorted — OCR Search & Photo Cleaner",
-    "store": "https://apps.apple.com/us/app/id6802166527?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ShotInbox&referrer=utm_source%3Dsocial%26utm_campaign%3Dshotinbox",
+    "alt": "G+Money: Spending & Budget — See where it went, by category — Convert & log, even offline",
+    "store": "https://apps.apple.com/us/app/id6755782939?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
     "review": {
      "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6802166527?action=write-review"
+     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
     },
     "keywords": [
-     "organizer",
+     "export",
+     "bookkeeping",
      "manager",
-     "duplicate",
-     "similar",
-     "text",
-     "receipts"
+     "personal",
+     "bills",
+     "summary"
     ],
-    "keyline": "OCR Search & Photo Cleaner",
+    "keyline": "Spending & Budget",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "f6c970e3cb08d22c",
+     "board": "987a384c8c1d4d89",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "Search the text inside them\nReceipts, tickets…all sorted\nOCR Search & Photo Cleaner\nShotInbox AI: Sort Screenshots\nSearch “Sort Screenshots” on the App Store\nAlso on Google Play\n\n#SortScreenshots #OCRSearch #PhotoCleaner #ShotInbox\n\nGet it on the App Store: https://apps.apple.com/us/app/id6802166527?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ShotInbox&referrer=utm_source%3Dsocial%26utm_campaign%3Dshotinbox"
+     "caption": "See where it went, by category\nConvert & log, even offline\nG+Money: Spending & Budget\nSearch “G+Money” on the App Store\nAlso on Google Play\n\n#SpendingBudget #DailyLog #Planner #GMoney\n\nGet it on the App Store: https://apps.apple.com/us/app/id6755782939?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney"
     },
     "slot": 15
    },
@@ -5307,50 +5375,6 @@
  },
  "pool": {
   "bluesky": [
-   {
-    "kind": "clip",
-    "key": "mochi_suneung/ko",
-    "locale": "ko",
-    "app": "mochi_suneung",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/e4a4ez.mp4",
-    "hook": "수능 공부 계획표 앱｜귀여운 투두리스트",
-    "name": "Mochi: 귀여운 할 일 목록 & 체크리스트",
-    "title": "수능 공부 계획표 앱｜귀여운 투두리스트 | 귀여운 투두리스트 & 체크리스트 | Mochi 귀여운 할 일",
-    "tags": [
-     "#투두",
-     "#알림",
-     "#메모",
-     "#습관",
-     "#Mochi귀여운할일"
-    ],
-    "caption": "수능 공부 계획표 앱｜귀여운 투두리스트\n수험표, 신분증, 도시락…톡 누르면 체크\n귀여운 투두리스트 & 체크리스트\nMochi: 귀여운 할 일 목록 & 체크리스트\nApp Store에서 'Mochi 귀여운 할 일' 검색\nAndroid는 Google Play에서\n\n#투두 #알림 #Mochi귀여운할일",
-    "button": "App Store에서 받기",
-    "variant": "b",
-    "alt": "Mochi: 귀여운 할 일 목록 & 체크리스트 — 수능 공부 계획표 앱｜귀여운 투두리스트 — 수험표, 신분증, 도시락…톡 누르면 체크 — 귀여운 투두리스트 & 체크리스트",
-    "store": "https://apps.apple.com/kr/app/id6785004775?pt=118326163&ct=ln_mochi_host_kr_bs_1120&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dln_mochi_host_kr_bs_1120%26utm_campaign%3Dmochi",
-    "review": {
-     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
-     "url": "https://apps.apple.com/app/id6785004775?action=write-review"
-    },
-    "keywords": [
-     "할일",
-     "할일목록",
-     "할일관리",
-     "투두",
-     "알림",
-     "메모"
-    ],
-    "keyline": "귀여운 투두리스트 & 체크리스트",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "c4f2a40ca4f5082c",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "boost_rank": 1
-   },
    {
     "kind": "clip",
     "key": "cvdesk/en",
@@ -6457,7 +6481,7 @@
      "#画像",
      "#Unblurry写真高画質化"
     ],
-    "caption": "ぼやけた1枚を、選んで\nAIが端末内で補正\n写真高画質化・ぼやけ補正・古い写真の復元\nUnblurry Pro：写真高画質化\nApp Storeで「ぼやけ補正」を検索\nAndroidはGoogle Playで\n\n#ぼやけた写真を修正 #鮮明化 #Unblurry写真高画質化",
+    "caption": "ぼやけた1枚を、選んで\nAIが端末内で補正\n写真高画質化・ぼやけ補正・古い写真の復元\nUnblurry Pro：写真高画質化\nApp Storeで「ぼやけた 写真 修正」を検索\nAndroidはGoogle Playで\n\n#ぼやけた写真を修正 #鮮明化 #Unblurry写真高画質化",
     "button": "App Storeで入手",
     "variant": "b",
     "alt": "Unblurry Pro：写真高画質化 — ぼやけた1枚を、選んで — AIが端末内で補正 — 写真高画質化・ぼやけ補正・古い写真の復元",
@@ -9361,7 +9385,7 @@
      "#下雨",
      "#Lumi天氣星球"
     ],
-    "caption": "穿什麼、帶什麼，直接告訴你\n適合出門嗎？看懂為什麼\n今天穿什麼・溫差・體感溫度・帶傘嗎・降雨機率與紫外線\nLumi天氣星球：天氣預報與穿搭建議\n在 App Store 搜尋「穿搭 天氣」\nAndroid 版在 Google Play\n\n#天氣預報與穿搭建議 #氣象預報 #Lumi天氣星球",
+    "caption": "穿什麼、帶什麼，直接告訴你\n適合出門嗎？看懂為什麼\n今天穿什麼・溫差・體感溫度・帶傘嗎・降雨機率與紫外線\nLumi天氣星球：天氣預報與穿搭建議\n在 App Store 搜尋「天氣 穿搭」\nAndroid 版在 Google Play\n\n#天氣預報與穿搭建議 #氣象預報 #Lumi天氣星球",
     "button": "在 App Store 下載",
     "variant": "b",
     "alt": "Lumi天氣星球：天氣預報與穿搭建議 — 穿什麼、帶什麼，直接告訴你 — 適合出門嗎？看懂為什麼 — 今天穿什麼・溫差・體感溫度・帶傘嗎・降雨機率與紫外線",
@@ -13373,7 +13397,7 @@
      "#Quota",
      "#UsageNow"
     ],
-    "caption": "UsageNow shows every account\nA heads-up at 90% for 5-hour & weekly\nUsageNow: AI Usage Tracker\nSearch “UsageNow” on the App Store\nAlso on Google Play\n\n#CopilotLimits #UsageLimit #UsageNow",
+    "caption": "UsageNow shows every account\nA heads-up at 90% for 5-hour & weekly\nUsageNow: AI Usage Tracker\nSearch “copilot usage” on the App Store\nAlso on Google Play\n\n#CopilotLimits #UsageLimit #UsageNow",
     "button": "Get it on the App Store",
     "variant": "b",
     "alt": "UsageNow: AI Usage Tracker — UsageNow shows every account — A heads-up at 90% for 5-hour & weekly",
@@ -14441,7 +14465,7 @@
      "#ノイズ除去",
      "#Unblurry写真高画質化"
     ],
-    "caption": "シャープで、手ブレを救済\n暗い写真も、ローライトで明るく\n写真高画質化・ぼやけ補正・古い写真の復元\nUnblurry Pro：写真高画質化\nApp Storeで「ぼやけ補正」を検索\nAndroidはGoogle Playで\n\n#修復 #ピンボケ補正 #Unblurry写真高画質化",
+    "caption": "シャープで、手ブレを救済\n暗い写真も、ローライトで明るく\n写真高画質化・ぼやけ補正・古い写真の復元\nUnblurry Pro：写真高画質化\nApp Storeで「ぼやけた 写真 修正」を検索\nAndroidはGoogle Playで\n\n#修復 #ピンボケ補正 #Unblurry写真高画質化",
     "button": "App Storeで入手",
     "variant": "b",
     "alt": "Unblurry Pro：写真高画質化 — シャープで、手ブレを救済 — 暗い写真も、ローライトで明るく — 写真高画質化・ぼやけ補正・古い写真の復元",
@@ -17348,7 +17372,7 @@
      "#UsageLimit",
      "#UsageNow"
     ],
-    "caption": "Translated into 50 languages\nClaude, Codex, Copilot & Gemini\nClaude, Codex & Copilot Limits\nUsageNow: AI Usage Tracker\nSearch “UsageNow” on the App Store\nAlso on Google Play\n\n#AIUsageTracker #CopilotLimits #UsageNow",
+    "caption": "Translated into 50 languages\nClaude, Codex, Copilot & Gemini\nClaude, Codex & Copilot Limits\nUsageNow: AI Usage Tracker\nSearch “copilot usage” on the App Store\nAlso on Google Play\n\n#AIUsageTracker #CopilotLimits #UsageNow",
     "button": "Get it on the App Store",
     "variant": "c",
     "alt": "UsageNow: AI Usage Tracker — Translated into 50 languages — Claude, Codex, Copilot & Gemini — Claude, Codex & Copilot Limits",
@@ -19474,7 +19498,7 @@
      "#Studio",
      "#FoldableWallpaperStudio"
     ],
-    "caption": "Open: the whole scene\n5 widgets drawn with your wallpaper\nDual Screen Pairs for Duo\nSearch “Foldable Wallpaper Studio” on the App Store\nAlso on Google Play\n\n#Foldable #Wallpaper #FoldableWallpaperStudio",
+    "caption": "Open: the whole scene\n5 widgets drawn with your wallpaper\nDual Screen Pairs for Duo\nFoldable Wallpaper Studio\nSearch “foldable wallpaper” on the App Store\nAlso on Google Play\n\n#Foldable #Wallpaper #FoldableWallpaperStudio",
     "button": "Get it on the App Store",
     "variant": "b",
     "alt": "Foldable Wallpaper Studio — Open: the whole scene — 5 widgets drawn with your wallpaper — Dual Screen Pairs for Duo",
@@ -19560,7 +19584,7 @@
      "#待ち受け",
      "#FoldableWallpaperStudio"
     ],
-    "caption": "開けば、全景\n選んだ壁紙で描く 5種のウィジェット\nDuo対応・閉じればアップ、開けば全景のペア壁紙\nApp Storeで「Foldable Wallpaper Studio」を検索\nAndroidはGoogle Playで\n\n#外画面と内画面 #スマホ #FoldableWallpaperStudio",
+    "caption": "開けば、全景\n選んだ壁紙で描く 5種のウィジェット\nDuo対応・閉じればアップ、開けば全景のペア壁紙\nFoldable Wallpaper Studio\nApp Storeで「折りたたみ 壁紙」を検索\nAndroidはGoogle Playで\n\n#外画面と内画面 #スマホ #FoldableWallpaperStudio",
     "button": "App Storeで入手",
     "variant": "b",
     "alt": "Foldable Wallpaper Studio — 開けば、全景 — 選んだ壁紙で描く 5種のウィジェット — Duo対応・閉じればアップ、開けば全景のペア壁紙",
@@ -19646,7 +19670,7 @@
      "#Außendisplay",
      "#FoldableWallpaperStudio"
     ],
-    "caption": "Aufgeklappt: die ganze Szene\n5 Widgets mit deinem Hintergrund\nfaltbar · klapphandy · paar\nIm App Store nach „Foldable Wallpaper Studio“ suchen\nAuch bei Google Play\n\n#FürDuo #AußenNah #FoldableWallpaperStudio",
+    "caption": "Aufgeklappt: die ganze Szene\n5 Widgets mit deinem Hintergrund\nfaltbar · klapphandy · paar\nFoldable Wallpaper Studio\nIm App Store nach „passende hintergrundbilder“ suchen\nAuch bei Google Play\n\n#FürDuo #AußenNah #FoldableWallpaperStudio",
     "button": "Im App Store laden",
     "variant": "b",
     "alt": "Foldable Wallpaper Studio — Aufgeklappt: die ganze Szene — 5 Widgets mit deinem Hintergrund — faltbar · klapphandy · paar",
@@ -20482,65 +20506,6 @@
    }
   ],
   "youtube": [
-   {
-    "kind": "clip",
-    "key": "mochi_suneung/ko",
-    "locale": "ko",
-    "app": "mochi_suneung",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/e4a4ez.mp4",
-    "hook": "수능 공부 계획표 앱｜귀여운 투두리스트",
-    "name": "Mochi: 귀여운 할 일 목록 & 체크리스트",
-    "title": "수능 공부 계획표 앱｜귀여운 투두리스트 | 귀여운 투두리스트 & 체크리스트 | Mochi 귀여운 할 일",
-    "tags": [
-     "#투두",
-     "#알림",
-     "#메모",
-     "#습관",
-     "#Mochi귀여운할일"
-    ],
-    "caption": "수능 공부 계획표 앱｜귀여운 투두리스트\n수험표, 신분증, 도시락…톡 누르면 체크\n귀여운 투두리스트 & 체크리스트\nMochi: 귀여운 할 일 목록 & 체크리스트\nApp Store에서 'Mochi 귀여운 할 일' 검색\nAndroid는 Google Play에서\n\n#투두 #알림 #메모 #습관 #Mochi귀여운할일",
-    "button": "App Store에서 받기",
-    "variant": "b",
-    "alt": "Mochi: 귀여운 할 일 목록 & 체크리스트 — 수능 공부 계획표 앱｜귀여운 투두리스트 — 수험표, 신분증, 도시락…톡 누르면 체크 — 귀여운 투두리스트 & 체크리스트",
-    "store": "https://apps.apple.com/kr/app/id6785004775?pt=118326163&ct=ln_mochi_host_kr_yt_1120&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dln_mochi_host_kr_yt_1120%26utm_campaign%3Dmochi",
-    "review": {
-     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
-     "url": "https://apps.apple.com/app/id6785004775?action=write-review"
-    },
-    "keywords": [
-     "할일",
-     "할일목록",
-     "할일관리",
-     "투두",
-     "알림",
-     "메모"
-    ],
-    "keyline": "귀여운 투두리스트 & 체크리스트",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "c4f2a40ca4f5082c",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "youtube": {
-     "title": "수능 공부 계획표 앱｜귀여운 투두리스트 | Mochi 귀여운 할 일 #Shorts",
-     "description": "수능 공부 계획표 앱｜귀여운 투두리스트\n수험표, 신분증, 도시락…톡 누르면 체크\n귀여운 투두리스트 & 체크리스트\n\nMochi: 귀여운 할 일 목록 & 체크리스트\nApp Store: https://apps.apple.com/kr/app/id6785004775?pt=118326163&ct=ln_mochi_host_kr_yt_1120&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dln_mochi_host_kr_yt_1120%26utm_campaign%3Dmochi\n이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다\nhttps://apps.apple.com/app/id6785004775?action=write-review\n\n할일 · 할일목록 · 할일관리 · 투두 · 알림 · 메모\n\n#Shorts #투두 #Mochi귀여운할일",
-     "tags": [
-      "할일",
-      "할일목록",
-      "할일관리",
-      "투두",
-      "알림",
-      "메모",
-      "습관",
-      "Mochi귀여운할일",
-      "Mochi 귀여운 할 일"
-     ]
-    },
-    "boost_rank": 1
-   },
    {
     "kind": "clip",
     "key": "cvdesk/en",
@@ -22026,7 +21991,7 @@
      "#画像",
      "#Unblurry写真高画質化"
     ],
-    "caption": "ぼやけた1枚を、選んで\nAIが端末内で補正\n写真高画質化・ぼやけ補正・古い写真の復元\nUnblurry Pro：写真高画質化\nApp Storeで「ぼやけ補正」を検索\nAndroidはGoogle Playで\n\n#ぼやけた写真を修正 #鮮明化 #ぼかし除去 #画像 #Unblurry写真高画質化",
+    "caption": "ぼやけた1枚を、選んで\nAIが端末内で補正\n写真高画質化・ぼやけ補正・古い写真の復元\nUnblurry Pro：写真高画質化\nApp Storeで「ぼやけた 写真 修正」を検索\nAndroidはGoogle Playで\n\n#ぼやけた写真を修正 #鮮明化 #ぼかし除去 #画像 #Unblurry写真高画質化",
     "button": "App Storeで入手",
     "variant": "b",
     "alt": "Unblurry Pro：写真高画質化 — ぼやけた1枚を、選んで — AIが端末内で補正 — 写真高画質化・ぼやけ補正・古い写真の復元",
@@ -26004,7 +25969,7 @@
      "#下雨",
      "#Lumi天氣星球"
     ],
-    "caption": "穿什麼、帶什麼，直接告訴你\n適合出門嗎？看懂為什麼\n今天穿什麼・溫差・體感溫度・帶傘嗎・降雨機率與紫外線\nLumi天氣星球：天氣預報與穿搭建議\n在 App Store 搜尋「穿搭 天氣」\nAndroid 版在 Google Play\n\n#天氣預報與穿搭建議 #氣象預報 #台灣 #下雨 #Lumi天氣星球",
+    "caption": "穿什麼、帶什麼，直接告訴你\n適合出門嗎？看懂為什麼\n今天穿什麼・溫差・體感溫度・帶傘嗎・降雨機率與紫外線\nLumi天氣星球：天氣預報與穿搭建議\n在 App Store 搜尋「天氣 穿搭」\nAndroid 版在 Google Play\n\n#天氣預報與穿搭建議 #氣象預報 #台灣 #下雨 #Lumi天氣星球",
     "button": "在 App Store 下載",
     "variant": "b",
     "alt": "Lumi天氣星球：天氣預報與穿搭建議 — 穿什麼、帶什麼，直接告訴你 — 適合出門嗎？看懂為什麼 — 今天穿什麼・溫差・體感溫度・帶傘嗎・降雨機率與紫外線",
@@ -31476,7 +31441,7 @@
      "#Quota",
      "#UsageNow"
     ],
-    "caption": "UsageNow shows every account\nA heads-up at 90% for 5-hour & weekly\nUsageNow: AI Usage Tracker\nSearch “UsageNow” on the App Store\nAlso on Google Play\n\n#CopilotLimits #UsageLimit #Quota #UsageNow",
+    "caption": "UsageNow shows every account\nA heads-up at 90% for 5-hour & weekly\nUsageNow: AI Usage Tracker\nSearch “copilot usage” on the App Store\nAlso on Google Play\n\n#CopilotLimits #UsageLimit #Quota #UsageNow",
     "button": "Get it on the App Store",
     "variant": "b",
     "alt": "UsageNow: AI Usage Tracker — UsageNow shows every account — A heads-up at 90% for 5-hour & weekly",
@@ -32937,7 +32902,7 @@
      "#ノイズ除去",
      "#Unblurry写真高画質化"
     ],
-    "caption": "シャープで、手ブレを救済\n暗い写真も、ローライトで明るく\n写真高画質化・ぼやけ補正・古い写真の復元\nUnblurry Pro：写真高画質化\nApp Storeで「ぼやけ補正」を検索\nAndroidはGoogle Playで\n\n#修復 #ピンボケ補正 #拡大 #ノイズ除去 #Unblurry写真高画質化",
+    "caption": "シャープで、手ブレを救済\n暗い写真も、ローライトで明るく\n写真高画質化・ぼやけ補正・古い写真の復元\nUnblurry Pro：写真高画質化\nApp Storeで「ぼやけた 写真 修正」を検索\nAndroidはGoogle Playで\n\n#修復 #ピンボケ補正 #拡大 #ノイズ除去 #Unblurry写真高画質化",
     "button": "App Storeで入手",
     "variant": "b",
     "alt": "Unblurry Pro：写真高画質化 — シャープで、手ブレを救済 — 暗い写真も、ローライトで明るく — 写真高画質化・ぼやけ補正・古い写真の復元",
@@ -36899,7 +36864,7 @@
      "#UsageLimit",
      "#UsageNow"
     ],
-    "caption": "Translated into 50 languages\nClaude, Codex, Copilot & Gemini\nClaude, Codex & Copilot Limits\nUsageNow: AI Usage Tracker\nSearch “UsageNow” on the App Store\nAlso on Google Play\n\n#AIUsageTracker #CopilotLimits #UsageLimit #UsageNow",
+    "caption": "Translated into 50 languages\nClaude, Codex, Copilot & Gemini\nClaude, Codex & Copilot Limits\nUsageNow: AI Usage Tracker\nSearch “copilot usage” on the App Store\nAlso on Google Play\n\n#AIUsageTracker #CopilotLimits #UsageLimit #UsageNow",
     "button": "Get it on the App Store",
     "variant": "c",
     "alt": "UsageNow: AI Usage Tracker — Translated into 50 languages — Claude, Codex, Copilot & Gemini — Claude, Codex & Copilot Limits",
@@ -39808,7 +39773,7 @@
      "#Studio",
      "#FoldableWallpaperStudio"
     ],
-    "caption": "Open: the whole scene\n5 widgets drawn with your wallpaper\nDual Screen Pairs for Duo\nSearch “Foldable Wallpaper Studio” on the App Store\nAlso on Google Play\n\n#Foldable #Wallpaper #Studio #FoldableWallpaperStudio",
+    "caption": "Open: the whole scene\n5 widgets drawn with your wallpaper\nDual Screen Pairs for Duo\nFoldable Wallpaper Studio\nSearch “foldable wallpaper” on the App Store\nAlso on Google Play\n\n#Foldable #Wallpaper #Studio #FoldableWallpaperStudio",
     "button": "Get it on the App Store",
     "variant": "b",
     "alt": "Foldable Wallpaper Studio — Open: the whole scene — 5 widgets drawn with your wallpaper — Dual Screen Pairs for Duo",
@@ -39926,7 +39891,7 @@
      "#待ち受け",
      "#FoldableWallpaperStudio"
     ],
-    "caption": "開けば、全景\n選んだ壁紙で描く 5種のウィジェット\nDuo対応・閉じればアップ、開けば全景のペア壁紙\nApp Storeで「Foldable Wallpaper Studio」を検索\nAndroidはGoogle Playで\n\n#外画面と内画面 #スマホ #2画面 #待ち受け #FoldableWallpaperStudio",
+    "caption": "開けば、全景\n選んだ壁紙で描く 5種のウィジェット\nDuo対応・閉じればアップ、開けば全景のペア壁紙\nFoldable Wallpaper Studio\nApp Storeで「折りたたみ 壁紙」を検索\nAndroidはGoogle Playで\n\n#外画面と内画面 #スマホ #2画面 #待ち受け #FoldableWallpaperStudio",
     "button": "App Storeで入手",
     "variant": "b",
     "alt": "Foldable Wallpaper Studio — 開けば、全景 — 選んだ壁紙で描く 5種のウィジェット — Duo対応・閉じればアップ、開けば全景のペア壁紙",
@@ -40042,7 +40007,7 @@
      "#Außendisplay",
      "#FoldableWallpaperStudio"
     ],
-    "caption": "Aufgeklappt: die ganze Szene\n5 Widgets mit deinem Hintergrund\nfaltbar · klapphandy · paar\nIm App Store nach „Foldable Wallpaper Studio“ suchen\nAuch bei Google Play\n\n#FürDuo #AußenNah #InnenWeit #Außendisplay #FoldableWallpaperStudio",
+    "caption": "Aufgeklappt: die ganze Szene\n5 Widgets mit deinem Hintergrund\nfaltbar · klapphandy · paar\nFoldable Wallpaper Studio\nIm App Store nach „passende hintergrundbilder“ suchen\nAuch bei Google Play\n\n#FürDuo #AußenNah #InnenWeit #Außendisplay #FoldableWallpaperStudio",
     "button": "Im App Store laden",
     "variant": "b",
     "alt": "Foldable Wallpaper Studio — Aufgeklappt: die ganze Szene — 5 Widgets mit deinem Hintergrund — faltbar · klapphandy · paar",
@@ -41192,54 +41157,6 @@
    }
   ],
   "pinterest": [
-   {
-    "kind": "clip",
-    "key": "mochi_suneung/ko",
-    "locale": "ko",
-    "app": "mochi_suneung",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/e4a4ez.mp4",
-    "hook": "수능 공부 계획표 앱｜귀여운 투두리스트",
-    "name": "Mochi: 귀여운 할 일 목록 & 체크리스트",
-    "title": "수능 공부 계획표 앱｜귀여운 투두리스트 | 귀여운 투두리스트 & 체크리스트 | Mochi 귀여운 할 일",
-    "tags": [
-     "#투두",
-     "#알림",
-     "#메모",
-     "#습관",
-     "#Mochi귀여운할일"
-    ],
-    "caption": "수능 공부 계획표 앱｜귀여운 투두리스트\n수험표, 신분증, 도시락…톡 누르면 체크\n귀여운 투두리스트 & 체크리스트\nMochi: 귀여운 할 일 목록 & 체크리스트\nApp Store에서 'Mochi 귀여운 할 일' 검색\nAndroid는 Google Play에서\n\n#투두 #알림 #메모 #습관 #Mochi귀여운할일",
-    "button": "App Store에서 받기",
-    "variant": "b",
-    "alt": "Mochi: 귀여운 할 일 목록 & 체크리스트 — 수능 공부 계획표 앱｜귀여운 투두리스트 — 수험표, 신분증, 도시락…톡 누르면 체크 — 귀여운 투두리스트 & 체크리스트",
-    "store": "https://apps.apple.com/kr/app/id6785004775?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi",
-    "review": {
-     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
-     "url": "https://apps.apple.com/app/id6785004775?action=write-review"
-    },
-    "keywords": [
-     "할일",
-     "할일목록",
-     "할일관리",
-     "투두",
-     "알림",
-     "메모"
-    ],
-    "keyline": "귀여운 투두리스트 & 체크리스트",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "c4f2a40ca4f5082c",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "pinterest": {
-     "description": "수능 공부 계획표 앱｜귀여운 투두리스트\n수험표, 신분증, 도시락…톡 누르면 체크\n귀여운 투두리스트 & 체크리스트\nMochi: 귀여운 할 일 목록 & 체크리스트\nApp Store에서 'Mochi 귀여운 할 일' 검색\nAndroid는 Google Play에서\n\n#투두 #알림 #메모 #습관 #Mochi귀여운할일\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6785004775?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi",
-     "link": "https://apps.apple.com/kr/app/id6785004775?pt=118326163&ct=social&mt=8"
-    },
-    "boost_rank": 1
-   },
    {
     "kind": "clip",
     "key": "cvdesk/en",
@@ -42446,7 +42363,7 @@
      "#画像",
      "#Unblurry写真高画質化"
     ],
-    "caption": "ぼやけた1枚を、選んで\nAIが端末内で補正\n写真高画質化・ぼやけ補正・古い写真の復元\nUnblurry Pro：写真高画質化\nApp Storeで「ぼやけ補正」を検索\nAndroidはGoogle Playで\n\n#ぼやけた写真を修正 #鮮明化 #ぼかし除去 #画像 #Unblurry写真高画質化",
+    "caption": "ぼやけた1枚を、選んで\nAIが端末内で補正\n写真高画質化・ぼやけ補正・古い写真の復元\nUnblurry Pro：写真高画質化\nApp Storeで「ぼやけた 写真 修正」を検索\nAndroidはGoogle Playで\n\n#ぼやけた写真を修正 #鮮明化 #ぼかし除去 #画像 #Unblurry写真高画質化",
     "button": "App Storeで入手",
     "variant": "b",
     "alt": "Unblurry Pro：写真高画質化 — ぼやけた1枚を、選んで — AIが端末内で補正 — 写真高画質化・ぼやけ補正・古い写真の復元",
@@ -42473,7 +42390,7 @@
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "ぼやけた1枚を、選んで\nAIが端末内で補正\n写真高画質化・ぼやけ補正・古い写真の復元\nUnblurry Pro：写真高画質化\nApp Storeで「ぼやけ補正」を検索\nAndroidはGoogle Playで\n\n#ぼやけた写真を修正 #鮮明化 #ぼかし除去 #画像 #Unblurry写真高画質化\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6782275018?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.unblurry.app&referrer=utm_source%3Dsocial%26utm_campaign%3Dunblurry",
+     "description": "ぼやけた1枚を、選んで\nAIが端末内で補正\n写真高画質化・ぼやけ補正・古い写真の復元\nUnblurry Pro：写真高画質化\nApp Storeで「ぼやけた 写真 修正」を検索\nAndroidはGoogle Playで\n\n#ぼやけた写真を修正 #鮮明化 #ぼかし除去 #画像 #Unblurry写真高画質化\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6782275018?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.unblurry.app&referrer=utm_source%3Dsocial%26utm_campaign%3Dunblurry",
      "link": "https://apps.apple.com/jp/app/id6782275018?pt=118326163&ct=social&mt=8"
     }
    },
@@ -45622,7 +45539,7 @@
      "#下雨",
      "#Lumi天氣星球"
     ],
-    "caption": "穿什麼、帶什麼，直接告訴你\n適合出門嗎？看懂為什麼\n今天穿什麼・溫差・體感溫度・帶傘嗎・降雨機率與紫外線\nLumi天氣星球：天氣預報與穿搭建議\n在 App Store 搜尋「穿搭 天氣」\nAndroid 版在 Google Play\n\n#天氣預報與穿搭建議 #氣象預報 #台灣 #下雨 #Lumi天氣星球",
+    "caption": "穿什麼、帶什麼，直接告訴你\n適合出門嗎？看懂為什麼\n今天穿什麼・溫差・體感溫度・帶傘嗎・降雨機率與紫外線\nLumi天氣星球：天氣預報與穿搭建議\n在 App Store 搜尋「天氣 穿搭」\nAndroid 版在 Google Play\n\n#天氣預報與穿搭建議 #氣象預報 #台灣 #下雨 #Lumi天氣星球",
     "button": "在 App Store 下載",
     "variant": "b",
     "alt": "Lumi天氣星球：天氣預報與穿搭建議 — 穿什麼、帶什麼，直接告訴你 — 適合出門嗎？看懂為什麼 — 今天穿什麼・溫差・體感溫度・帶傘嗎・降雨機率與紫外線",
@@ -45649,7 +45566,7 @@
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "穿什麼、帶什麼，直接告訴你\n適合出門嗎？看懂為什麼\n今天穿什麼・溫差・體感溫度・帶傘嗎・降雨機率與紫外線\nLumi天氣星球：天氣預報與穿搭建議\n在 App Store 搜尋「穿搭 天氣」\nAndroid 版在 Google Play\n\n#天氣預報與穿搭建議 #氣象預報 #台灣 #下雨 #Lumi天氣星球\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6779552704?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiWeather&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiweather",
+     "description": "穿什麼、帶什麼，直接告訴你\n適合出門嗎？看懂為什麼\n今天穿什麼・溫差・體感溫度・帶傘嗎・降雨機率與紫外線\nLumi天氣星球：天氣預報與穿搭建議\n在 App Store 搜尋「天氣 穿搭」\nAndroid 版在 Google Play\n\n#天氣預報與穿搭建議 #氣象預報 #台灣 #下雨 #Lumi天氣星球\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6779552704?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiWeather&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiweather",
      "link": "https://apps.apple.com/tw/app/id6779552704?pt=118326163&ct=social&mt=8"
     }
    },
@@ -50010,7 +49927,7 @@
      "#Quota",
      "#UsageNow"
     ],
-    "caption": "UsageNow shows every account\nA heads-up at 90% for 5-hour & weekly\nUsageNow: AI Usage Tracker\nSearch “UsageNow” on the App Store\nAlso on Google Play\n\n#CopilotLimits #UsageLimit #Quota #UsageNow",
+    "caption": "UsageNow shows every account\nA heads-up at 90% for 5-hour & weekly\nUsageNow: AI Usage Tracker\nSearch “copilot usage” on the App Store\nAlso on Google Play\n\n#CopilotLimits #UsageLimit #Quota #UsageNow",
     "button": "Get it on the App Store",
     "variant": "b",
     "alt": "UsageNow: AI Usage Tracker — UsageNow shows every account — A heads-up at 90% for 5-hour & weekly",
@@ -50037,7 +49954,7 @@
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "UsageNow shows every account\nA heads-up at 90% for 5-hour & weekly\nUsageNow: AI Usage Tracker\nSearch “UsageNow” on the App Store\nAlso on Google Play\n\n#CopilotLimits #UsageLimit #Quota #UsageNow\n\nGet it on the App Store: https://apps.apple.com/us/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
+     "description": "UsageNow shows every account\nA heads-up at 90% for 5-hour & weekly\nUsageNow: AI Usage Tracker\nSearch “copilot usage” on the App Store\nAlso on Google Play\n\n#CopilotLimits #UsageLimit #Quota #UsageNow\n\nGet it on the App Store: https://apps.apple.com/us/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
      "link": "https://apps.apple.com/us/app/id6818607603?pt=118326163&ct=social&mt=8"
     }
    },
@@ -51178,7 +51095,7 @@
      "#ノイズ除去",
      "#Unblurry写真高画質化"
     ],
-    "caption": "シャープで、手ブレを救済\n暗い写真も、ローライトで明るく\n写真高画質化・ぼやけ補正・古い写真の復元\nUnblurry Pro：写真高画質化\nApp Storeで「ぼやけ補正」を検索\nAndroidはGoogle Playで\n\n#修復 #ピンボケ補正 #拡大 #ノイズ除去 #Unblurry写真高画質化",
+    "caption": "シャープで、手ブレを救済\n暗い写真も、ローライトで明るく\n写真高画質化・ぼやけ補正・古い写真の復元\nUnblurry Pro：写真高画質化\nApp Storeで「ぼやけた 写真 修正」を検索\nAndroidはGoogle Playで\n\n#修復 #ピンボケ補正 #拡大 #ノイズ除去 #Unblurry写真高画質化",
     "button": "App Storeで入手",
     "variant": "b",
     "alt": "Unblurry Pro：写真高画質化 — シャープで、手ブレを救済 — 暗い写真も、ローライトで明るく — 写真高画質化・ぼやけ補正・古い写真の復元",
@@ -51205,7 +51122,7 @@
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "シャープで、手ブレを救済\n暗い写真も、ローライトで明るく\n写真高画質化・ぼやけ補正・古い写真の復元\nUnblurry Pro：写真高画質化\nApp Storeで「ぼやけ補正」を検索\nAndroidはGoogle Playで\n\n#修復 #ピンボケ補正 #拡大 #ノイズ除去 #Unblurry写真高画質化\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6782275018?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.unblurry.app&referrer=utm_source%3Dsocial%26utm_campaign%3Dunblurry",
+     "description": "シャープで、手ブレを救済\n暗い写真も、ローライトで明るく\n写真高画質化・ぼやけ補正・古い写真の復元\nUnblurry Pro：写真高画質化\nApp Storeで「ぼやけた 写真 修正」を検索\nAndroidはGoogle Playで\n\n#修復 #ピンボケ補正 #拡大 #ノイズ除去 #Unblurry写真高画質化\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6782275018?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.unblurry.app&referrer=utm_source%3Dsocial%26utm_campaign%3Dunblurry",
      "link": "https://apps.apple.com/jp/app/id6782275018?pt=118326163&ct=social&mt=8"
     }
    },
@@ -54357,7 +54274,7 @@
      "#UsageLimit",
      "#UsageNow"
     ],
-    "caption": "Translated into 50 languages\nClaude, Codex, Copilot & Gemini\nClaude, Codex & Copilot Limits\nUsageNow: AI Usage Tracker\nSearch “UsageNow” on the App Store\nAlso on Google Play\n\n#AIUsageTracker #CopilotLimits #UsageLimit #UsageNow",
+    "caption": "Translated into 50 languages\nClaude, Codex, Copilot & Gemini\nClaude, Codex & Copilot Limits\nUsageNow: AI Usage Tracker\nSearch “copilot usage” on the App Store\nAlso on Google Play\n\n#AIUsageTracker #CopilotLimits #UsageLimit #UsageNow",
     "button": "Get it on the App Store",
     "variant": "c",
     "alt": "UsageNow: AI Usage Tracker — Translated into 50 languages — Claude, Codex, Copilot & Gemini — Claude, Codex & Copilot Limits",
@@ -54384,7 +54301,7 @@
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "Translated into 50 languages\nClaude, Codex, Copilot & Gemini\nClaude, Codex & Copilot Limits\nUsageNow: AI Usage Tracker\nSearch “UsageNow” on the App Store\nAlso on Google Play\n\n#AIUsageTracker #CopilotLimits #UsageLimit #UsageNow\n\nGet it on the App Store: https://apps.apple.com/us/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
+     "description": "Translated into 50 languages\nClaude, Codex, Copilot & Gemini\nClaude, Codex & Copilot Limits\nUsageNow: AI Usage Tracker\nSearch “copilot usage” on the App Store\nAlso on Google Play\n\n#AIUsageTracker #CopilotLimits #UsageLimit #UsageNow\n\nGet it on the App Store: https://apps.apple.com/us/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini",
      "link": "https://apps.apple.com/us/app/id6818607603?pt=118326163&ct=social&mt=8"
     }
    },
@@ -56683,7 +56600,7 @@
      "#Studio",
      "#FoldableWallpaperStudio"
     ],
-    "caption": "Open: the whole scene\n5 widgets drawn with your wallpaper\nDual Screen Pairs for Duo\nSearch “Foldable Wallpaper Studio” on the App Store\nAlso on Google Play\n\n#Foldable #Wallpaper #Studio #FoldableWallpaperStudio",
+    "caption": "Open: the whole scene\n5 widgets drawn with your wallpaper\nDual Screen Pairs for Duo\nFoldable Wallpaper Studio\nSearch “foldable wallpaper” on the App Store\nAlso on Google Play\n\n#Foldable #Wallpaper #Studio #FoldableWallpaperStudio",
     "button": "Get it on the App Store",
     "variant": "b",
     "alt": "Foldable Wallpaper Studio — Open: the whole scene — 5 widgets drawn with your wallpaper — Dual Screen Pairs for Duo",
@@ -56710,7 +56627,7 @@
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "Open: the whole scene\n5 widgets drawn with your wallpaper\nDual Screen Pairs for Duo\nSearch “Foldable Wallpaper Studio” on the App Store\nAlso on Google Play\n\n#Foldable #Wallpaper #Studio #FoldableWallpaperStudio\n\nGet it on the App Store: https://apps.apple.com/us/app/id6824946559?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DuoWallpaperStudio&referrer=utm_source%3Dsocial%26utm_campaign%3Dduowallpaperstudio",
+     "description": "Open: the whole scene\n5 widgets drawn with your wallpaper\nDual Screen Pairs for Duo\nFoldable Wallpaper Studio\nSearch “foldable wallpaper” on the App Store\nAlso on Google Play\n\n#Foldable #Wallpaper #Studio #FoldableWallpaperStudio\n\nGet it on the App Store: https://apps.apple.com/us/app/id6824946559?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DuoWallpaperStudio&referrer=utm_source%3Dsocial%26utm_campaign%3Dduowallpaperstudio",
      "link": "https://apps.apple.com/us/app/id6824946559?pt=118326163&ct=social&mt=8"
     }
    },
@@ -56777,7 +56694,7 @@
      "#待ち受け",
      "#FoldableWallpaperStudio"
     ],
-    "caption": "開けば、全景\n選んだ壁紙で描く 5種のウィジェット\nDuo対応・閉じればアップ、開けば全景のペア壁紙\nApp Storeで「Foldable Wallpaper Studio」を検索\nAndroidはGoogle Playで\n\n#外画面と内画面 #スマホ #2画面 #待ち受け #FoldableWallpaperStudio",
+    "caption": "開けば、全景\n選んだ壁紙で描く 5種のウィジェット\nDuo対応・閉じればアップ、開けば全景のペア壁紙\nFoldable Wallpaper Studio\nApp Storeで「折りたたみ 壁紙」を検索\nAndroidはGoogle Playで\n\n#外画面と内画面 #スマホ #2画面 #待ち受け #FoldableWallpaperStudio",
     "button": "App Storeで入手",
     "variant": "b",
     "alt": "Foldable Wallpaper Studio — 開けば、全景 — 選んだ壁紙で描く 5種のウィジェット — Duo対応・閉じればアップ、開けば全景のペア壁紙",
@@ -56804,7 +56721,7 @@
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "開けば、全景\n選んだ壁紙で描く 5種のウィジェット\nDuo対応・閉じればアップ、開けば全景のペア壁紙\nApp Storeで「Foldable Wallpaper Studio」を検索\nAndroidはGoogle Playで\n\n#外画面と内画面 #スマホ #2画面 #待ち受け #FoldableWallpaperStudio\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6824946559?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DuoWallpaperStudio&referrer=utm_source%3Dsocial%26utm_campaign%3Dduowallpaperstudio",
+     "description": "開けば、全景\n選んだ壁紙で描く 5種のウィジェット\nDuo対応・閉じればアップ、開けば全景のペア壁紙\nFoldable Wallpaper Studio\nApp Storeで「折りたたみ 壁紙」を検索\nAndroidはGoogle Playで\n\n#外画面と内画面 #スマホ #2画面 #待ち受け #FoldableWallpaperStudio\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6824946559?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DuoWallpaperStudio&referrer=utm_source%3Dsocial%26utm_campaign%3Dduowallpaperstudio",
      "link": "https://apps.apple.com/jp/app/id6824946559?pt=118326163&ct=social&mt=8"
     }
    },
@@ -56871,7 +56788,7 @@
      "#Außendisplay",
      "#FoldableWallpaperStudio"
     ],
-    "caption": "Aufgeklappt: die ganze Szene\n5 Widgets mit deinem Hintergrund\nfaltbar · klapphandy · paar\nIm App Store nach „Foldable Wallpaper Studio“ suchen\nAuch bei Google Play\n\n#FürDuo #AußenNah #InnenWeit #Außendisplay #FoldableWallpaperStudio",
+    "caption": "Aufgeklappt: die ganze Szene\n5 Widgets mit deinem Hintergrund\nfaltbar · klapphandy · paar\nFoldable Wallpaper Studio\nIm App Store nach „passende hintergrundbilder“ suchen\nAuch bei Google Play\n\n#FürDuo #AußenNah #InnenWeit #Außendisplay #FoldableWallpaperStudio",
     "button": "Im App Store laden",
     "variant": "b",
     "alt": "Foldable Wallpaper Studio — Aufgeklappt: die ganze Szene — 5 Widgets mit deinem Hintergrund — faltbar · klapphandy · paar",
@@ -56898,7 +56815,7 @@
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "Aufgeklappt: die ganze Szene\n5 Widgets mit deinem Hintergrund\nfaltbar · klapphandy · paar\nIm App Store nach „Foldable Wallpaper Studio“ suchen\nAuch bei Google Play\n\n#FürDuo #AußenNah #InnenWeit #Außendisplay #FoldableWallpaperStudio\n\nIm App Store laden: https://apps.apple.com/de/app/id6824946559?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DuoWallpaperStudio&referrer=utm_source%3Dsocial%26utm_campaign%3Dduowallpaperstudio",
+     "description": "Aufgeklappt: die ganze Szene\n5 Widgets mit deinem Hintergrund\nfaltbar · klapphandy · paar\nFoldable Wallpaper Studio\nIm App Store nach „passende hintergrundbilder“ suchen\nAuch bei Google Play\n\n#FürDuo #AußenNah #InnenWeit #Außendisplay #FoldableWallpaperStudio\n\nIm App Store laden: https://apps.apple.com/de/app/id6824946559?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DuoWallpaperStudio&referrer=utm_source%3Dsocial%26utm_campaign%3Dduowallpaperstudio",
      "link": "https://apps.apple.com/de/app/id6824946559?pt=118326163&ct=social&mt=8"
     }
    },
@@ -57787,53 +57704,6 @@
    }
   ],
   "tiktok": [
-   {
-    "kind": "clip",
-    "key": "mochi_suneung/ko",
-    "locale": "ko",
-    "app": "mochi_suneung",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/e4a4ez.mp4",
-    "hook": "수능 공부 계획표 앱｜귀여운 투두리스트",
-    "name": "Mochi: 귀여운 할 일 목록 & 체크리스트",
-    "title": "수능 공부 계획표 앱｜귀여운 투두리스트 | 귀여운 투두리스트 & 체크리스트 | Mochi 귀여운 할 일",
-    "tags": [
-     "#투두",
-     "#알림",
-     "#메모",
-     "#습관",
-     "#Mochi귀여운할일"
-    ],
-    "caption": "수능 공부 계획표 앱｜귀여운 투두리스트\n수험표, 신분증, 도시락…톡 누르면 체크\n귀여운 투두리스트 & 체크리스트\nMochi: 귀여운 할 일 목록 & 체크리스트\nApp Store에서 'Mochi 귀여운 할 일' 검색\nAndroid는 Google Play에서\n\n#투두 #알림 #메모 #습관 #Mochi귀여운할일",
-    "button": "App Store에서 받기",
-    "variant": "b",
-    "alt": "Mochi: 귀여운 할 일 목록 & 체크리스트 — 수능 공부 계획표 앱｜귀여운 투두리스트 — 수험표, 신분증, 도시락…톡 누르면 체크 — 귀여운 투두리스트 & 체크리스트",
-    "store": "https://apps.apple.com/kr/app/id6785004775?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi",
-    "review": {
-     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
-     "url": "https://apps.apple.com/app/id6785004775?action=write-review"
-    },
-    "keywords": [
-     "할일",
-     "할일목록",
-     "할일관리",
-     "투두",
-     "알림",
-     "메모"
-    ],
-    "keyline": "귀여운 투두리스트 & 체크리스트",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "c4f2a40ca4f5082c",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "tiktok": {
-     "caption": "수능 공부 계획표 앱｜귀여운 투두리스트\n수험표, 신분증, 도시락…톡 누르면 체크\n귀여운 투두리스트 & 체크리스트\nMochi: 귀여운 할 일 목록 & 체크리스트\nApp Store에서 'Mochi 귀여운 할 일' 검색\nAndroid는 Google Play에서\n\n#투두 #알림 #메모 #습관 #Mochi귀여운할일\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6785004775?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi"
-    },
-    "boost_rank": 1
-   },
    {
     "kind": "clip",
     "key": "cvdesk/en",
@@ -59015,7 +58885,7 @@
      "#画像",
      "#Unblurry写真高画質化"
     ],
-    "caption": "ぼやけた1枚を、選んで\nAIが端末内で補正\n写真高画質化・ぼやけ補正・古い写真の復元\nUnblurry Pro：写真高画質化\nApp Storeで「ぼやけ補正」を検索\nAndroidはGoogle Playで\n\n#ぼやけた写真を修正 #鮮明化 #ぼかし除去 #画像 #Unblurry写真高画質化",
+    "caption": "ぼやけた1枚を、選んで\nAIが端末内で補正\n写真高画質化・ぼやけ補正・古い写真の復元\nUnblurry Pro：写真高画質化\nApp Storeで「ぼやけた 写真 修正」を検索\nAndroidはGoogle Playで\n\n#ぼやけた写真を修正 #鮮明化 #ぼかし除去 #画像 #Unblurry写真高画質化",
     "button": "App Storeで入手",
     "variant": "b",
     "alt": "Unblurry Pro：写真高画質化 — ぼやけた1枚を、選んで — AIが端末内で補正 — 写真高画質化・ぼやけ補正・古い写真の復元",
@@ -59042,7 +58912,7 @@
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "ぼやけた1枚を、選んで\nAIが端末内で補正\n写真高画質化・ぼやけ補正・古い写真の復元\nUnblurry Pro：写真高画質化\nApp Storeで「ぼやけ補正」を検索\nAndroidはGoogle Playで\n\n#ぼやけた写真を修正 #鮮明化 #ぼかし除去 #画像 #Unblurry写真高画質化\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6782275018?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.unblurry.app&referrer=utm_source%3Dsocial%26utm_campaign%3Dunblurry"
+     "caption": "ぼやけた1枚を、選んで\nAIが端末内で補正\n写真高画質化・ぼやけ補正・古い写真の復元\nUnblurry Pro：写真高画質化\nApp Storeで「ぼやけた 写真 修正」を検索\nAndroidはGoogle Playで\n\n#ぼやけた写真を修正 #鮮明化 #ぼかし除去 #画像 #Unblurry写真高画質化\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6782275018?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.unblurry.app&referrer=utm_source%3Dsocial%26utm_campaign%3Dunblurry"
     }
    },
    {
@@ -62123,7 +61993,7 @@
      "#下雨",
      "#Lumi天氣星球"
     ],
-    "caption": "穿什麼、帶什麼，直接告訴你\n適合出門嗎？看懂為什麼\n今天穿什麼・溫差・體感溫度・帶傘嗎・降雨機率與紫外線\nLumi天氣星球：天氣預報與穿搭建議\n在 App Store 搜尋「穿搭 天氣」\nAndroid 版在 Google Play\n\n#天氣預報與穿搭建議 #氣象預報 #台灣 #下雨 #Lumi天氣星球",
+    "caption": "穿什麼、帶什麼，直接告訴你\n適合出門嗎？看懂為什麼\n今天穿什麼・溫差・體感溫度・帶傘嗎・降雨機率與紫外線\nLumi天氣星球：天氣預報與穿搭建議\n在 App Store 搜尋「天氣 穿搭」\nAndroid 版在 Google Play\n\n#天氣預報與穿搭建議 #氣象預報 #台灣 #下雨 #Lumi天氣星球",
     "button": "在 App Store 下載",
     "variant": "b",
     "alt": "Lumi天氣星球：天氣預報與穿搭建議 — 穿什麼、帶什麼，直接告訴你 — 適合出門嗎？看懂為什麼 — 今天穿什麼・溫差・體感溫度・帶傘嗎・降雨機率與紫外線",
@@ -62150,7 +62020,7 @@
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "穿什麼、帶什麼，直接告訴你\n適合出門嗎？看懂為什麼\n今天穿什麼・溫差・體感溫度・帶傘嗎・降雨機率與紫外線\nLumi天氣星球：天氣預報與穿搭建議\n在 App Store 搜尋「穿搭 天氣」\nAndroid 版在 Google Play\n\n#天氣預報與穿搭建議 #氣象預報 #台灣 #下雨 #Lumi天氣星球\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6779552704?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiWeather&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiweather"
+     "caption": "穿什麼、帶什麼，直接告訴你\n適合出門嗎？看懂為什麼\n今天穿什麼・溫差・體感溫度・帶傘嗎・降雨機率與紫外線\nLumi天氣星球：天氣預報與穿搭建議\n在 App Store 搜尋「天氣 穿搭」\nAndroid 版在 Google Play\n\n#天氣預報與穿搭建議 #氣象預報 #台灣 #下雨 #Lumi天氣星球\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6779552704?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiWeather&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiweather"
     }
    },
    {
@@ -66417,7 +66287,7 @@
      "#Quota",
      "#UsageNow"
     ],
-    "caption": "UsageNow shows every account\nA heads-up at 90% for 5-hour & weekly\nUsageNow: AI Usage Tracker\nSearch “UsageNow” on the App Store\nAlso on Google Play\n\n#CopilotLimits #UsageLimit #Quota #UsageNow",
+    "caption": "UsageNow shows every account\nA heads-up at 90% for 5-hour & weekly\nUsageNow: AI Usage Tracker\nSearch “copilot usage” on the App Store\nAlso on Google Play\n\n#CopilotLimits #UsageLimit #Quota #UsageNow",
     "button": "Get it on the App Store",
     "variant": "b",
     "alt": "UsageNow: AI Usage Tracker — UsageNow shows every account — A heads-up at 90% for 5-hour & weekly",
@@ -66444,7 +66314,7 @@
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "UsageNow shows every account\nA heads-up at 90% for 5-hour & weekly\nUsageNow: AI Usage Tracker\nSearch “UsageNow” on the App Store\nAlso on Google Play\n\n#CopilotLimits #UsageLimit #Quota #UsageNow\n\nGet it on the App Store: https://apps.apple.com/us/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini"
+     "caption": "UsageNow shows every account\nA heads-up at 90% for 5-hour & weekly\nUsageNow: AI Usage Tracker\nSearch “copilot usage” on the App Store\nAlso on Google Play\n\n#CopilotLimits #UsageLimit #Quota #UsageNow\n\nGet it on the App Store: https://apps.apple.com/us/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini"
     }
    },
    {
@@ -67560,7 +67430,7 @@
      "#ノイズ除去",
      "#Unblurry写真高画質化"
     ],
-    "caption": "シャープで、手ブレを救済\n暗い写真も、ローライトで明るく\n写真高画質化・ぼやけ補正・古い写真の復元\nUnblurry Pro：写真高画質化\nApp Storeで「ぼやけ補正」を検索\nAndroidはGoogle Playで\n\n#修復 #ピンボケ補正 #拡大 #ノイズ除去 #Unblurry写真高画質化",
+    "caption": "シャープで、手ブレを救済\n暗い写真も、ローライトで明るく\n写真高画質化・ぼやけ補正・古い写真の復元\nUnblurry Pro：写真高画質化\nApp Storeで「ぼやけた 写真 修正」を検索\nAndroidはGoogle Playで\n\n#修復 #ピンボケ補正 #拡大 #ノイズ除去 #Unblurry写真高画質化",
     "button": "App Storeで入手",
     "variant": "b",
     "alt": "Unblurry Pro：写真高画質化 — シャープで、手ブレを救済 — 暗い写真も、ローライトで明るく — 写真高画質化・ぼやけ補正・古い写真の復元",
@@ -67587,7 +67457,7 @@
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "シャープで、手ブレを救済\n暗い写真も、ローライトで明るく\n写真高画質化・ぼやけ補正・古い写真の復元\nUnblurry Pro：写真高画質化\nApp Storeで「ぼやけ補正」を検索\nAndroidはGoogle Playで\n\n#修復 #ピンボケ補正 #拡大 #ノイズ除去 #Unblurry写真高画質化\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6782275018?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.unblurry.app&referrer=utm_source%3Dsocial%26utm_campaign%3Dunblurry"
+     "caption": "シャープで、手ブレを救済\n暗い写真も、ローライトで明るく\n写真高画質化・ぼやけ補正・古い写真の復元\nUnblurry Pro：写真高画質化\nApp Storeで「ぼやけた 写真 修正」を検索\nAndroidはGoogle Playで\n\n#修復 #ピンボケ補正 #拡大 #ノイズ除去 #Unblurry写真高画質化\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6782275018?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.unblurry.app&referrer=utm_source%3Dsocial%26utm_campaign%3Dunblurry"
     }
    },
    {
@@ -70671,7 +70541,7 @@
      "#UsageLimit",
      "#UsageNow"
     ],
-    "caption": "Translated into 50 languages\nClaude, Codex, Copilot & Gemini\nClaude, Codex & Copilot Limits\nUsageNow: AI Usage Tracker\nSearch “UsageNow” on the App Store\nAlso on Google Play\n\n#AIUsageTracker #CopilotLimits #UsageLimit #UsageNow",
+    "caption": "Translated into 50 languages\nClaude, Codex, Copilot & Gemini\nClaude, Codex & Copilot Limits\nUsageNow: AI Usage Tracker\nSearch “copilot usage” on the App Store\nAlso on Google Play\n\n#AIUsageTracker #CopilotLimits #UsageLimit #UsageNow",
     "button": "Get it on the App Store",
     "variant": "c",
     "alt": "UsageNow: AI Usage Tracker — Translated into 50 languages — Claude, Codex, Copilot & Gemini — Claude, Codex & Copilot Limits",
@@ -70698,7 +70568,7 @@
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "Translated into 50 languages\nClaude, Codex, Copilot & Gemini\nClaude, Codex & Copilot Limits\nUsageNow: AI Usage Tracker\nSearch “UsageNow” on the App Store\nAlso on Google Play\n\n#AIUsageTracker #CopilotLimits #UsageLimit #UsageNow\n\nGet it on the App Store: https://apps.apple.com/us/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini"
+     "caption": "Translated into 50 languages\nClaude, Codex, Copilot & Gemini\nClaude, Codex & Copilot Limits\nUsageNow: AI Usage Tracker\nSearch “copilot usage” on the App Store\nAlso on Google Play\n\n#AIUsageTracker #CopilotLimits #UsageLimit #UsageNow\n\nGet it on the App Store: https://apps.apple.com/us/app/id6818607603?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsocial%26utm_campaign%3Dclaudeusagemini"
     }
    },
    {
@@ -72947,7 +72817,7 @@
      "#Studio",
      "#FoldableWallpaperStudio"
     ],
-    "caption": "Open: the whole scene\n5 widgets drawn with your wallpaper\nDual Screen Pairs for Duo\nSearch “Foldable Wallpaper Studio” on the App Store\nAlso on Google Play\n\n#Foldable #Wallpaper #Studio #FoldableWallpaperStudio",
+    "caption": "Open: the whole scene\n5 widgets drawn with your wallpaper\nDual Screen Pairs for Duo\nFoldable Wallpaper Studio\nSearch “foldable wallpaper” on the App Store\nAlso on Google Play\n\n#Foldable #Wallpaper #Studio #FoldableWallpaperStudio",
     "button": "Get it on the App Store",
     "variant": "b",
     "alt": "Foldable Wallpaper Studio — Open: the whole scene — 5 widgets drawn with your wallpaper — Dual Screen Pairs for Duo",
@@ -72974,7 +72844,7 @@
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "Open: the whole scene\n5 widgets drawn with your wallpaper\nDual Screen Pairs for Duo\nSearch “Foldable Wallpaper Studio” on the App Store\nAlso on Google Play\n\n#Foldable #Wallpaper #Studio #FoldableWallpaperStudio\n\nGet it on the App Store: https://apps.apple.com/us/app/id6824946559?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DuoWallpaperStudio&referrer=utm_source%3Dsocial%26utm_campaign%3Dduowallpaperstudio"
+     "caption": "Open: the whole scene\n5 widgets drawn with your wallpaper\nDual Screen Pairs for Duo\nFoldable Wallpaper Studio\nSearch “foldable wallpaper” on the App Store\nAlso on Google Play\n\n#Foldable #Wallpaper #Studio #FoldableWallpaperStudio\n\nGet it on the App Store: https://apps.apple.com/us/app/id6824946559?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DuoWallpaperStudio&referrer=utm_source%3Dsocial%26utm_campaign%3Dduowallpaperstudio"
     }
    },
    {
@@ -73039,7 +72909,7 @@
      "#待ち受け",
      "#FoldableWallpaperStudio"
     ],
-    "caption": "開けば、全景\n選んだ壁紙で描く 5種のウィジェット\nDuo対応・閉じればアップ、開けば全景のペア壁紙\nApp Storeで「Foldable Wallpaper Studio」を検索\nAndroidはGoogle Playで\n\n#外画面と内画面 #スマホ #2画面 #待ち受け #FoldableWallpaperStudio",
+    "caption": "開けば、全景\n選んだ壁紙で描く 5種のウィジェット\nDuo対応・閉じればアップ、開けば全景のペア壁紙\nFoldable Wallpaper Studio\nApp Storeで「折りたたみ 壁紙」を検索\nAndroidはGoogle Playで\n\n#外画面と内画面 #スマホ #2画面 #待ち受け #FoldableWallpaperStudio",
     "button": "App Storeで入手",
     "variant": "b",
     "alt": "Foldable Wallpaper Studio — 開けば、全景 — 選んだ壁紙で描く 5種のウィジェット — Duo対応・閉じればアップ、開けば全景のペア壁紙",
@@ -73066,7 +72936,7 @@
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "開けば、全景\n選んだ壁紙で描く 5種のウィジェット\nDuo対応・閉じればアップ、開けば全景のペア壁紙\nApp Storeで「Foldable Wallpaper Studio」を検索\nAndroidはGoogle Playで\n\n#外画面と内画面 #スマホ #2画面 #待ち受け #FoldableWallpaperStudio\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6824946559?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DuoWallpaperStudio&referrer=utm_source%3Dsocial%26utm_campaign%3Dduowallpaperstudio"
+     "caption": "開けば、全景\n選んだ壁紙で描く 5種のウィジェット\nDuo対応・閉じればアップ、開けば全景のペア壁紙\nFoldable Wallpaper Studio\nApp Storeで「折りたたみ 壁紙」を検索\nAndroidはGoogle Playで\n\n#外画面と内画面 #スマホ #2画面 #待ち受け #FoldableWallpaperStudio\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6824946559?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DuoWallpaperStudio&referrer=utm_source%3Dsocial%26utm_campaign%3Dduowallpaperstudio"
     }
    },
    {
@@ -73131,7 +73001,7 @@
      "#Außendisplay",
      "#FoldableWallpaperStudio"
     ],
-    "caption": "Aufgeklappt: die ganze Szene\n5 Widgets mit deinem Hintergrund\nfaltbar · klapphandy · paar\nIm App Store nach „Foldable Wallpaper Studio“ suchen\nAuch bei Google Play\n\n#FürDuo #AußenNah #InnenWeit #Außendisplay #FoldableWallpaperStudio",
+    "caption": "Aufgeklappt: die ganze Szene\n5 Widgets mit deinem Hintergrund\nfaltbar · klapphandy · paar\nFoldable Wallpaper Studio\nIm App Store nach „passende hintergrundbilder“ suchen\nAuch bei Google Play\n\n#FürDuo #AußenNah #InnenWeit #Außendisplay #FoldableWallpaperStudio",
     "button": "Im App Store laden",
     "variant": "b",
     "alt": "Foldable Wallpaper Studio — Aufgeklappt: die ganze Szene — 5 Widgets mit deinem Hintergrund — faltbar · klapphandy · paar",
@@ -73158,7 +73028,7 @@
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "Aufgeklappt: die ganze Szene\n5 Widgets mit deinem Hintergrund\nfaltbar · klapphandy · paar\nIm App Store nach „Foldable Wallpaper Studio“ suchen\nAuch bei Google Play\n\n#FürDuo #AußenNah #InnenWeit #Außendisplay #FoldableWallpaperStudio\n\nIm App Store laden: https://apps.apple.com/de/app/id6824946559?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DuoWallpaperStudio&referrer=utm_source%3Dsocial%26utm_campaign%3Dduowallpaperstudio"
+     "caption": "Aufgeklappt: die ganze Szene\n5 Widgets mit deinem Hintergrund\nfaltbar · klapphandy · paar\nFoldable Wallpaper Studio\nIm App Store nach „passende hintergrundbilder“ suchen\nAuch bei Google Play\n\n#FürDuo #AußenNah #InnenWeit #Außendisplay #FoldableWallpaperStudio\n\nIm App Store laden: https://apps.apple.com/de/app/id6824946559?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DuoWallpaperStudio&referrer=utm_source%3Dsocial%26utm_campaign%3Dduowallpaperstudio"
     }
    },
    {
@@ -74036,11 +73906,11 @@
    "wifiaidlite"
   ],
   "demote": [
+   "moneytag",
    "wordmate",
    "lumiletters",
    "lumimath",
-   "wordmatelite",
-   "easyam"
+   "wordmatelite"
   ],
   "hook_winners": {
    "apps": {
@@ -74048,6 +73918,7 @@
     "claudeusagemini/de": "b",
     "claudeusagemini/en": "c",
     "cyca/en": "b",
+    "easyam/en": "b",
     "ledmovingtext/de": "b",
     "lumibopomofo/en": "c",
     "lumibopomofo/zh-Hant": "c",
@@ -74078,47 +73949,49 @@
     "en": {
      "hour": 9,
      "avg_views": 65.6,
-     "posts": 42,
+     "posts": 46,
      "hours": {
       "5": 0.0,
       "9": 65.6,
-      "15": 40.2,
-      "18": 27.5,
+      "15": 36.2,
+      "18": 25.9,
       "19": 0.0,
-      "22": 14.0
+      "22": 15.2
      }
     },
     "ja": {
      "hour": 18,
-     "avg_views": 66.6,
-     "posts": 22,
+     "avg_views": 67.0,
+     "posts": 23,
      "hours": {
       "1": 46.9,
+      "4": 29.5,
       "5": 6.2,
       "7": 0.0,
-      "18": 66.6
+      "18": 67.0
      }
     },
     "ko": {
      "hour": 1,
-     "avg_views": 94.3,
+     "avg_views": 97.7,
      "posts": 19,
      "hours": {
-      "1": 94.3,
+      "1": 97.7,
       "5": 0.0,
       "12": 54.3
      }
     },
     "zh-Hant": {
      "hour": 12,
-     "avg_views": 37.1,
-     "posts": 40,
+     "avg_views": 35.8,
+     "posts": 45,
      "hours": {
-      "1": 19.5,
-      "5": 1.0,
+      "1": 13.0,
+      "5": 0.9,
       "7": 0.1,
       "9": 0.3,
-      "12": 37.1
+      "12": 35.8,
+      "14": 0.0
      }
     }
    },
@@ -74150,6 +74023,6 @@
     }
    }
   },
-  "updated_at": "2026-11-19T07:11:05Z"
+  "updated_at": "2026-11-20T06:59:24Z"
  }
 }

@@ -926,29 +926,29 @@
     "en-GB": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-15",
-     "live_version": "1.0.5",
+     "live_updated": "2026-11-19",
+     "live_version": "1.0.6",
      "same": true
     },
     "en-US": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-15",
-     "live_version": "1.0.5",
+     "live_updated": "2026-11-19",
+     "live_version": "1.0.6",
      "same": true
     },
     "es-ES": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-15",
-     "live_version": "1.0.5",
+     "live_updated": "2026-11-19",
+     "live_version": "1.0.6",
      "same": true
     },
     "fr-FR": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-15",
-     "live_version": "1.0.5",
+     "live_updated": "2026-11-19",
+     "live_version": "1.0.6",
      "same": true
     },
     "ja": {
@@ -973,27 +973,21 @@
      "same": true
     },
     "zh-Hans": {
-     "added": [
-      "专为 iPhone Duo 双屏打造的成对壁纸:合上,外屏是特写;展开,内屏是整片全景,两张出自同一幅原创画面。",
-      "300+ 组原创成对壁纸・14 种风格・5 款小组件直接用你选的壁纸绘制・无广告、不收集数据。"
-     ],
-     "dropped": [
-      "专为 iPhone Duo 折叠屏打造的双屏成对壁纸:合上,外屏是特写;展开,内屏是整片全景,两张出自同一幅原创画面。",
-      "300+ 组原创成对壁纸·14 种风格·5 款小组件直接用你选的壁纸绘制·无广告、不收集数据。"
-     ],
-     "live_updated": "2026-11-15",
-     "live_version": "1.0.5",
-     "same": false
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-11-19",
+     "live_version": "1.0.6",
+     "same": true
     },
     "zh-Hant": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-15",
-     "live_version": "1.0.5",
+     "live_updated": "2026-11-19",
+     "live_version": "1.0.6",
      "same": true
     }
    },
-   "status": "red"
+   "status": "green"
   },
   "easyam": {
    "blocked_terms": [],
@@ -5051,11 +5045,11 @@
   "gb"
  ],
  "counts": {
-  "green": 59,
-  "red": 1,
+  "green": 60,
+  "red": 0,
   "unknown": 0
  },
  "errors": [],
- "generated_at": "2026-11-19T09:17:18Z",
+ "generated_at": "2026-11-20T05:39:24Z",
  "schema": "growth.store-copy-drift/v1"
 }

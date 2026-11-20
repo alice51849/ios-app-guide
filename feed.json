@@ -1,48 +1,48 @@
 {
  "schema": "lumi.social-feed/v1",
- "date": "2026-11-19",
- "generated_at": "2026-11-19T22:48:00Z",
+ "date": "2026-11-20",
+ "generated_at": "2026-11-20T02:05:42Z",
  "items": {
   "bluesky": [
    {
     "kind": "clip",
-    "key": "tripplanet/ko",
-    "locale": "ko",
-    "app": "tripplanet",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/x2czqp.mp4",
-    "hook": "비행기 타는 날 미션 원탭으로 추가",
-    "name": "Trip Planet 아이 여행 게임",
-    "title": "비행기 타는 날 미션 원탭으로 추가 | 비행기·나들이 미션 도장 모으기 | Trip Planet 아이 여행 게임",
+    "key": "picclear/zh-Hant",
+    "locale": "zh-Hant",
+    "app": "picclear",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/f304cc.mp4",
+    "hook": "重複照片，幫你分好組",
+    "name": "PicClear Pro：照片清理·釋放空間",
+    "title": "重複照片，幫你分好組 | 截圖清理・手機空間不足 | PicClear 照片清理",
     "tags": [
-     "#아이랑",
-     "#해외",
-     "#가족",
-     "#유아",
-     "#TripPlanet아이여행게임"
+     "#照片清理釋放空間",
+     "#重複照片",
+     "#相似照片",
+     "#相片清理",
+     "#PicClear照片清理"
     ],
-    "caption": "비행기 타는 날 미션 원탭으로 추가\n엄마 아빠 함께 계획해요\n비행기·나들이 미션 도장 모으기\nApp Store에서 'Trip Planet 아이 여행 게임' 검색\nAndroid는 Google Play에서\n\n#아이랑 #해외 #TripPlanet아이여행게임",
-    "button": "App Store에서 받기",
+    "caption": "重複照片，幫你分好組\n舊截圖，一次找出來\n截圖清理・手機空間不足\nPicClear Pro：照片清理·釋放空間\n在 App Store 搜尋「PicClear 照片清理」\nAndroid 版在 Google Play\n\n#照片清理釋放空間 #重複照片 #PicClear照片清理",
+    "button": "在 App Store 下載",
     "variant": "b",
-    "alt": "Trip Planet 아이 여행 게임 — 비행기 타는 날 미션 원탭으로 추가 — 엄마 아빠 함께 계획해요 — 비행기·나들이 미션 도장 모으기",
-    "store": "https://apps.apple.com/kr/app/id6787193643?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.TripPlanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripplanet",
+    "alt": "PicClear Pro：照片清理·釋放空間 — 重複照片，幫你分好組 — 舊截圖，一次找出來 — 截圖清理・手機空間不足",
+    "store": "https://apps.apple.com/tw/app/id6780223070?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.picclear.app&referrer=utm_source%3Dsocial%26utm_campaign%3Dpicclear",
     "review": {
-     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
-     "url": "https://apps.apple.com/app/id6787193643?action=write-review"
+     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
+     "url": "https://apps.apple.com/app/id6780223070?action=write-review"
     },
     "keywords": [
-     "아이랑",
-     "해외",
-     "가족",
-     "유아",
-     "기내",
-     "장거리"
+     "重複照片",
+     "相似照片",
+     "相片清理",
+     "刪除照片",
+     "相簿整理",
+     "圖庫清理"
     ],
-    "keyline": "비행기·나들이 미션 도장 모으기",
+    "keyline": "截圖清理・手機空間不足",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "df81f6a6b37515a4",
+     "board": "562edfd587f5f970",
      "real_recording": false,
      "rules": "2026-10-18"
     },
@@ -94,43 +94,43 @@
    },
    {
     "kind": "clip",
-    "key": "mochidonestamp/ja",
+    "key": "lumimathpro/ja",
     "locale": "ja",
-    "app": "mochidonestamp",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/qsw854.mp4",
-    "hook": "済んだら、ワンタップ",
-    "name": "Mochi DoneStamp：いつやった？",
-    "title": "済んだら、ワンタップ | 前回いつ？家事と交換時期の記録 | Mochi DoneStamp いつやった",
+    "app": "lumimathpro",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/a3fdk9.mp4",
+    "hook": "レベルに合わせた20問、解答つき",
+    "name": "Lumi さんすうプラネット：子供の算数",
+    "title": "レベルに合わせた20問、解答つき | 子供の算数 | Lumi さんすうプラネット",
     "tags": [
-     "#いつやった",
-     "#最後にやった日",
-     "#経過日数",
-     "#家電",
-     "#MochiDoneStampいつやった"
+     "#子供の算数",
+     "#論理",
+     "#推理",
+     "#規則性",
+     "#Lumiさんすうプラネット"
     ],
-    "caption": "済んだら、ワンタップ\n次はいつか、ひと目で\n前回いつ？家事と交換時期の記録\nMochi DoneStamp：いつやった？\nApp Storeで「Mochi DoneStamp いつやった」を検索\nAndroidはGoogle Playで\n\n#いつやった #最後にやった日 #MochiDoneStampいつやった",
+    "caption": "レベルに合わせた20問、解答つき\n学習レポートで、にがてもひと目で\nLumi さんすうプラネット：子供の算数\nApp Storeで「Lumi さんすうプラネット」を検索\nAndroidはGoogle Playで\n\n#子供の算数 #論理 #Lumiさんすうプラネット",
     "button": "App Storeで入手",
     "variant": "b",
-    "alt": "Mochi DoneStamp：いつやった？ — 済んだら、ワンタップ — 次はいつか、ひと目で — 前回いつ？家事と交換時期の記録",
-    "store": "https://apps.apple.com/jp/app/id6790800323?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiDoneStamp&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochidonestamp",
+    "alt": "Lumi さんすうプラネット：子供の算数 — レベルに合わせた20問、解答つき — 学習レポートで、にがてもひと目で",
+    "store": "https://apps.apple.com/jp/app/id6776958488?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiMathPlanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumimathpro",
     "review": {
      "label": "このアプリをお使いですか？App Store で評価・レビューできます",
-     "url": "https://apps.apple.com/app/id6790800323?action=write-review"
+     "url": "https://apps.apple.com/app/id6776958488?action=write-review"
     },
     "keywords": [
-     "最後にやった日",
-     "経過日数",
-     "家電",
-     "掃除",
-     "メンテナンス",
-     "水やり"
+     "論理",
+     "推理",
+     "規則性",
+     "なぞなぞ",
+     "頭の体操",
+     "暗算"
     ],
-    "keyline": "前回いつ？家事と交換時期の記録",
+    "keyline": "子供の算数",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "0ba5cdec3a24a67c",
+     "board": "e1637282f6e3cfc4",
      "real_recording": false,
      "rules": "2026-10-18"
     },
@@ -138,43 +138,41 @@
    },
    {
     "kind": "clip",
-    "key": "easyam/en",
+    "key": "kumo/en",
     "locale": "en",
-    "app": "easyam",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/8n1x9x.mp4",
-    "hook": "Holidays skipped automatically",
-    "name": "EasyAM: Holiday Alarm Clock",
-    "title": "Holidays skipped automatically | Rings for work, skips days off | EasyAM holiday alarm",
+    "app": "kumo",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/2764775737.mp4",
+    "hook": "Log your weight in about 10 seconds",
+    "name": "Kumo: Weight & GLP-1 Tracker",
+    "title": "Log your weight in about 10 seconds | Fasting & Cute Cloud | Kumo weight tracker",
     "tags": [
-     "#HolidayAlarmClock",
-     "#RingsForWork",
-     "#SkipsDaysOff",
-     "#SmartSchedule",
-     "#EasyAMHolidayAlarm"
+     "#CuteCloud",
+     "#IntermittentFasting",
+     "#KumoWeightTracker"
     ],
-    "caption": "Holidays skipped automatically\nAdd time off, vacations stay quiet\nRings for work, skips days off\nEasyAM: Holiday Alarm Clock\nSearch “holiday alarm clock” on the App Store\nAlso on Google Play\n\n#HolidayAlarmClock #RingsForWork #EasyAMholidayalarm",
+    "caption": "Log your weight in about 10 seconds\nSee the trend with a 7-day average\nFasting & Cute Cloud\nKumo: Weight & GLP-1 Tracker\nSearch “Kumo weight tracker” on the App Store\nAlso on Google Play\n\n#CuteCloud #IntermittentFasting #KumoWeightTracker",
     "button": "Get it on the App Store",
     "variant": "b",
-    "alt": "EasyAM: Holiday Alarm Clock — Holidays skipped automatically — Add time off, vacations stay quiet — Rings for work, skips days off",
-    "store": "https://apps.apple.com/us/app/id6821790092?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam",
+    "alt": "Kumo: Weight & GLP-1 Tracker — Log your weight in about 10 seconds — See the trend with a 7-day average — Fasting & Cute Cloud",
+    "store": "https://apps.apple.com/us/app/id6830824515?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Kumo&referrer=utm_source%3Dsocial%26utm_campaign%3Dkumo",
     "review": {
      "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6821790092?action=write-review"
+     "url": "https://apps.apple.com/app/id6830824515?action=write-review"
     },
     "keywords": [
-     "workday",
-     "shift",
-     "public",
-     "calendar",
-     "weekday",
-     "vacation"
+     "daily",
+     "diary",
+     "body",
+     "measurement",
+     "intermittent",
+     "timer"
     ],
-    "keyline": "Rings for work, skips days off",
+    "keyline": "Fasting & Cute Cloud",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "f45a7a4e972af86c",
+     "board": "0e325c1c1882013a",
      "real_recording": false,
      "rules": "2026-10-18"
     },
@@ -182,89 +180,89 @@
    },
    {
     "kind": "clip",
-    "key": "wifiaid/ja",
-    "locale": "ja",
-    "app": "wifiaid",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/s367cp.mp4",
-    "hook": "ワンタップで診断",
-    "name": "WiFi Aid：ネット不調の原因を特定",
-    "title": "ワンタップで診断 | ルーター・メッシュ・DNS診断 | WiFi Aid ネット不調",
+    "key": "shotinbox/en",
+    "locale": "en",
+    "app": "shotinbox",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/8wjz03.mp4",
+    "hook": "Search the text inside them",
+    "name": "ShotInbox AI: Sort Screenshots",
+    "title": "Search the text inside them | OCR Search & Photo Cleaner | ShotInbox",
     "tags": [
-     "#ネット不調の原因を特定",
-     "#アクセスポイント",
-     "#遅延",
-     "#ジッター",
-     "#WiFiAidネット不調"
+     "#SortScreenshots",
+     "#OCRSearch",
+     "#PhotoCleaner",
+     "#ShotInbox"
     ],
-    "caption": "ワンタップで診断\n遅延も安定性も\nルーター・メッシュ・DNS診断\nWiFi Aid：ネット不調の原因を特定\nApp Storeで「WiFi Aid ネット不調」を検索\nAndroidはGoogle Playで\n\n#ネット不調の原因を特定 #アクセスポイント #WiFiAidネット不調",
-    "button": "App Storeで入手",
+    "caption": "Search the text inside them\nReceipts, tickets…all sorted\nOCR Search & Photo Cleaner\nShotInbox AI: Sort Screenshots\nSearch “Sort Screenshots” on the App Store\nAlso on Google Play\n\n#SortScreenshots #OCRSearch #ShotInbox",
+    "button": "Get it on the App Store",
     "variant": "b",
-    "alt": "WiFi Aid：ネット不調の原因を特定 — ワンタップで診断 — 遅延も安定性も — ルーター・メッシュ・DNS診断",
-    "store": "https://apps.apple.com/jp/app/id6790467886?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.WiFiAid&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaid",
+    "alt": "ShotInbox AI: Sort Screenshots — Search the text inside them — Receipts, tickets…all sorted — OCR Search & Photo Cleaner",
+    "store": "https://apps.apple.com/us/app/id6802166527?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ShotInbox&referrer=utm_source%3Dsocial%26utm_campaign%3Dshotinbox",
     "review": {
-     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
-     "url": "https://apps.apple.com/app/id6790467886?action=write-review"
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6802166527?action=write-review"
     },
     "keywords": [
-     "アクセスポイント",
-     "遅延",
-     "ジッター",
-     "安定性",
-     "応答時間",
-     "IPv6"
+     "organizer",
+     "manager",
+     "duplicate",
+     "similar",
+     "text",
+     "receipts"
     ],
-    "keyline": "ルーター・メッシュ・DNS診断",
+    "keyline": "OCR Search & Photo Cleaner",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "d8bf12cb51e50aa0",
+     "board": "f6c970e3cb08d22c",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "slot": 15
    },
    {
-    "kind": "card",
-    "key": "card/suneung2027/2026-11-19",
-    "locale": "ko",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/countdown-cards/card-20261119.jpg",
-    "caption": "오늘 수능, 모두 응원해요\n할 수 있어요\n\nApp Store · Google Play에서 'CountDaysNow' 검색\n\n#디데이카운터 #디데이 #카운트다운",
-    "title": "오늘 수능, 모두 응원해요",
-    "alt": "CountDaysNow — 오늘 수능, 모두 응원해요 — 할 수 있어요 — App Store · Google Play에서 'CountDaysNow' 검색 — D-day 위젯·기념일·날짜계산",
-    "name": "CountDaysNow",
-    "hook": "오늘 수능, 모두 응원해요",
+    "kind": "clip",
+    "key": "kumo/es",
+    "locale": "es",
+    "app": "kumo",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/fc9bcfca38.mp4",
+    "hook": "Anota tu peso en 10 segundos",
+    "name": "Kumo: Control de peso y GLP-1",
+    "title": "Anota tu peso en 10 segundos | Ayuno intermitente | Kumo control de peso",
     "tags": [
-     "#디데이카운터",
-     "#디데이",
-     "#카운트다운",
-     "#날짜계산",
-     "#CountDaysNow"
+     "#ControlDePeso",
+     "#AyunoIntermitente",
+     "#Registro",
+     "#KumoControlDePeso"
     ],
-    "button": "App Store에서 받기",
-    "store": "https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow"
-   },
-   {
-    "kind": "card",
-    "key": "utility/checklist/mochi/exam-week/ko",
-    "locale": "ko",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/utility-cards/card-20261119.jpg",
-    "caption": "오늘의 할 일 4가지: 시험 주간\n○ 시험 범위 전부 적기\n○ 가장 어려운 과목 모의고사 한 번\n○ 8시간 자기\n○ 전날 밤 펜과 신분증 챙기기\n노트만 보지 말고 틀린 문제를 다시 보기.\n\nMochi 귀여운 할 일 목록: 할 일을 적고, 끝나면 작은 동그라미를 탭하세요\nApp Store · Google Play에서 'Mochi 귀여운 할 일 목록' 검색\n\n#귀여운투두리스트체크리스트 #할일 #할일목록",
-    "title": "오늘의 할 일 4가지: 시험 주간",
-    "alt": "Mochi Cute Checklist — 오늘의 할 일 4가지: 시험 주간 — ○ 시험 범위 전부 적기 — ○ 가장 어려운 과목 모의고사 한 번 — 귀여운 투두리스트 & 체크리스트",
-    "name": "Mochi Cute Checklist",
-    "hook": "오늘의 할 일 4가지: 시험 주간",
-    "tags": [
-     "#귀여운투두리스트체크리스트",
-     "#할일",
-     "#할일목록",
-     "#할일관리",
-     "#Mochi귀여운할일"
+    "caption": "Anota tu peso en 10 segundos\nLa tendencia real: media de 7 días\nAyuno intermitente\nKumo: Control de peso y GLP-1\nBusca «Kumo control de peso» en el App Store\nTambién en Google Play\n\n#ControlDePeso #AyunoIntermitente #Kumocontroldepeso",
+    "button": "Descargar en el App Store",
+    "variant": "b",
+    "alt": "Kumo: Control de peso y GLP-1 — Anota tu peso en 10 segundos — La tendencia real: media de 7 días — Ayuno intermitente",
+    "store": "https://apps.apple.com/es/app/id6830824515?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Kumo&referrer=utm_source%3Dsocial%26utm_campaign%3Dkumo",
+    "review": {
+     "label": "¿Ya usas esta app? Valórala o escribe una reseña en el App Store",
+     "url": "https://apps.apple.com/app/id6830824515?action=write-review"
+    },
+    "keywords": [
+     "registro",
+     "diario",
+     "medidas",
+     "agua",
+     "proteínas",
+     "seguimiento"
     ],
-    "button": "App Store에서 받기",
-    "store": "https://apps.apple.com/kr/app/id6785004775?pt=118326163&ct=bluesky&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dbluesky%26utm_campaign%3Dmochi"
+    "keyline": "Ayuno intermitente",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "0e325c1c1882013a",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "slot": 15
    },
    {
     "kind": "card",
@@ -311,108 +309,6 @@
     "store": "https://apps.apple.com/jp/app/id6824946559?pt=118326163&ct=social&mt=8",
     "format": "pairs",
     "play": "https://play.google.com/store/apps/details?id=com.alice51849.DuoWallpaperStudio&referrer=utm_source%3Dsocial%26utm_campaign%3Dduowallpaperstudio"
-   },
-   {
-    "kind": "card",
-    "key": "carousel/mochidonestamp-en-pain-20261022",
-    "locale": "en",
-    "app": "mochidonestamp",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/mochidonestamp-en-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/mochidonestamp-en-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/mochidonestamp-en-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/mochidonestamp-en-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/mochidonestamp-en-pain-20261022/05.jpg"
-    ],
-    "caption": "When did you last change the sheets?\n\nDone? Tap once.\nSearch “Mochi DoneStamp” on the App Store\n\n#LastTime #Done #Cleaning",
-    "title": "When did you last change the sheets?",
-    "alt": "When did you last change the sheets? | Done? Tap once. | Know what's due next | Every time, remembered | Mochi DoneStamp: Last Time / When Did I Last? Home Upkeep / Search “Mochi DoneStamp” on the App Store",
-    "name": "Mochi DoneStamp: Last Time",
-    "hook": "When did you last change the sheets?",
-    "tags": [
-     "#LastTime",
-     "#Done",
-     "#Cleaning"
-    ],
-    "button": "Get it on the App Store",
-    "store": "https://apps.apple.com/us/app/id6790800323?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiDoneStamp&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochidonestamp"
-   },
-   {
-    "kind": "card",
-    "key": "carousel/maskmyfile-ja-pain-20261022",
-    "locale": "ja",
-    "app": "maskmyfile",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/maskmyfile-ja-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/maskmyfile-ja-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/maskmyfile-ja-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/maskmyfile-ja-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/maskmyfile-ja-pain-20261022/05.jpg"
-    ],
-    "caption": "その書類、送る前に 黒塗りしよう\n\n見落としは 手動で追加\nApp Store で「Mask My File」を検索\n\n#MaskMyFile",
-    "title": "その書類、送る前に 黒塗りしよう",
-    "alt": "その書類、送る前に 黒塗りしよう | 見落としは 手動で追加 | 新しいコピーを作成 オリジナルはそのまま | 端末内で完結 | Mask My File：共有前に個人情報を削除 / PDF・画像・スクショを黒塗り / App Store で「Mask My File」を検索",
-    "name": "Mask My File：共有前に個人情報を削除",
-    "hook": "その書類、送る前に 黒塗りしよう",
-    "tags": [
-     "#MaskMyFile"
-    ],
-    "button": "App Storeで入手",
-    "store": "https://apps.apple.com/jp/app/id6792850916?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MaskMyFile&referrer=utm_source%3Dsocial%26utm_campaign%3Dmaskmyfile"
-   },
-   {
-    "kind": "card",
-    "key": "carousel/moneytag-en-pain-20261022",
-    "locale": "en",
-    "app": "moneytag",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/moneytag-en-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/moneytag-en-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/moneytag-en-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/moneytag-en-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/moneytag-en-pain-20261022/05.jpg"
-    ],
-    "caption": "Which side gig actually pays?\n\nOne tag adds up across projects\nSearch “MoneyTag” on the App Store\n\n#IncomeExpense #Profit #Loss",
-    "title": "Which side gig actually pays?",
-    "alt": "Which side gig actually pays? | One tag adds up across projects | Net result, month by month | Export PDF or CSV | MoneyTag: Income & Expense / Projects · Tags · Report / Search “MoneyTag” on the App Store",
-    "name": "MoneyTag: Income & Expense",
-    "hook": "Which side gig actually pays?",
-    "tags": [
-     "#IncomeExpense",
-     "#Profit",
-     "#Loss"
-    ],
-    "button": "Get it on the App Store",
-    "store": "https://apps.apple.com/us/app/id6801956402?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MoneyTag&referrer=utm_source%3Dsocial%26utm_campaign%3Dmoneytag"
-   },
-   {
-    "kind": "card",
-    "key": "carousel/mochidonestamp-ja-pain-20261022",
-    "locale": "ja",
-    "app": "mochidonestamp",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/mochidonestamp-ja-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/mochidonestamp-ja-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/mochidonestamp-ja-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/mochidonestamp-ja-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/mochidonestamp-ja-pain-20261022/05.jpg"
-    ],
-    "caption": "シーツ替えたの いつだっけ？\n\n済んだら ワンタップ\nApp Store で「Mochi DoneStamp」を検索",
-    "title": "シーツ替えたの いつだっけ？",
-    "alt": "シーツ替えたの いつだっけ？ | 済んだら ワンタップ | 次はいつか ひと目で | 毎回の記録が ちゃんと残る | Mochi DoneStamp：いつやった？ / 前回の日付を記録・家事の周期リマインダー / App Store で「Mochi DoneStamp」を検索",
-    "name": "Mochi DoneStamp：いつやった？",
-    "hook": "シーツ替えたの いつだっけ？",
-    "tags": [],
-    "button": "App Storeで入手",
-    "store": "https://apps.apple.com/jp/app/id6790800323?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiDoneStamp&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochidonestamp"
    },
    {
     "kind": "card",
@@ -1516,43 +1412,43 @@
   "mastodon": [
    {
     "kind": "clip",
-    "key": "tripplanet/ko",
-    "locale": "ko",
-    "app": "tripplanet",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/x2czqp.mp4",
-    "hook": "비행기 타는 날 미션 원탭으로 추가",
-    "name": "Trip Planet 아이 여행 게임",
-    "title": "비행기 타는 날 미션 원탭으로 추가 | 비행기·나들이 미션 도장 모으기 | Trip Planet 아이 여행 게임",
+    "key": "picclear/zh-Hant",
+    "locale": "zh-Hant",
+    "app": "picclear",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/f304cc.mp4",
+    "hook": "重複照片，幫你分好組",
+    "name": "PicClear Pro：照片清理·釋放空間",
+    "title": "重複照片，幫你分好組 | 截圖清理・手機空間不足 | PicClear 照片清理",
     "tags": [
-     "#아이랑",
-     "#해외",
-     "#가족",
-     "#유아",
-     "#TripPlanet아이여행게임"
+     "#照片清理釋放空間",
+     "#重複照片",
+     "#相似照片",
+     "#相片清理",
+     "#PicClear照片清理"
     ],
-    "caption": "비행기 타는 날 미션 원탭으로 추가\n엄마 아빠 함께 계획해요\n비행기·나들이 미션 도장 모으기\nApp Store에서 'Trip Planet 아이 여행 게임' 검색\nAndroid는 Google Play에서\n\n#아이랑 #해외 #가족 #유아 #TripPlanet아이여행게임",
-    "button": "App Store에서 받기",
+    "caption": "重複照片，幫你分好組\n舊截圖，一次找出來\n截圖清理・手機空間不足\nPicClear Pro：照片清理·釋放空間\n在 App Store 搜尋「PicClear 照片清理」\nAndroid 版在 Google Play\n\n#照片清理釋放空間 #重複照片 #相似照片 #相片清理 #PicClear照片清理",
+    "button": "在 App Store 下載",
     "variant": "b",
-    "alt": "Trip Planet 아이 여행 게임 — 비행기 타는 날 미션 원탭으로 추가 — 엄마 아빠 함께 계획해요 — 비행기·나들이 미션 도장 모으기",
-    "store": "https://apps.apple.com/kr/app/id6787193643?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.TripPlanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripplanet",
+    "alt": "PicClear Pro：照片清理·釋放空間 — 重複照片，幫你分好組 — 舊截圖，一次找出來 — 截圖清理・手機空間不足",
+    "store": "https://apps.apple.com/tw/app/id6780223070?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.picclear.app&referrer=utm_source%3Dsocial%26utm_campaign%3Dpicclear",
     "review": {
-     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
-     "url": "https://apps.apple.com/app/id6787193643?action=write-review"
+     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
+     "url": "https://apps.apple.com/app/id6780223070?action=write-review"
     },
     "keywords": [
-     "아이랑",
-     "해외",
-     "가족",
-     "유아",
-     "기내",
-     "장거리"
+     "重複照片",
+     "相似照片",
+     "相片清理",
+     "刪除照片",
+     "相簿整理",
+     "圖庫清理"
     ],
-    "keyline": "비행기·나들이 미션 도장 모으기",
+    "keyline": "截圖清理・手機空間不足",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "df81f6a6b37515a4",
+     "board": "562edfd587f5f970",
      "real_recording": false,
      "rules": "2026-10-18"
     },
@@ -1604,43 +1500,43 @@
    },
    {
     "kind": "clip",
-    "key": "mochidonestamp/ja",
+    "key": "lumimathpro/ja",
     "locale": "ja",
-    "app": "mochidonestamp",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/qsw854.mp4",
-    "hook": "済んだら、ワンタップ",
-    "name": "Mochi DoneStamp：いつやった？",
-    "title": "済んだら、ワンタップ | 前回いつ？家事と交換時期の記録 | Mochi DoneStamp いつやった",
+    "app": "lumimathpro",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/a3fdk9.mp4",
+    "hook": "レベルに合わせた20問、解答つき",
+    "name": "Lumi さんすうプラネット：子供の算数",
+    "title": "レベルに合わせた20問、解答つき | 子供の算数 | Lumi さんすうプラネット",
     "tags": [
-     "#いつやった",
-     "#最後にやった日",
-     "#経過日数",
-     "#家電",
-     "#MochiDoneStampいつやった"
+     "#子供の算数",
+     "#論理",
+     "#推理",
+     "#規則性",
+     "#Lumiさんすうプラネット"
     ],
-    "caption": "済んだら、ワンタップ\n次はいつか、ひと目で\n前回いつ？家事と交換時期の記録\nMochi DoneStamp：いつやった？\nApp Storeで「Mochi DoneStamp いつやった」を検索\nAndroidはGoogle Playで\n\n#いつやった #最後にやった日 #経過日数 #家電 #MochiDoneStampいつやった",
+    "caption": "レベルに合わせた20問、解答つき\n学習レポートで、にがてもひと目で\nLumi さんすうプラネット：子供の算数\nApp Storeで「Lumi さんすうプラネット」を検索\nAndroidはGoogle Playで\n\n#子供の算数 #論理 #推理 #規則性 #Lumiさんすうプラネット",
     "button": "App Storeで入手",
     "variant": "b",
-    "alt": "Mochi DoneStamp：いつやった？ — 済んだら、ワンタップ — 次はいつか、ひと目で — 前回いつ？家事と交換時期の記録",
-    "store": "https://apps.apple.com/jp/app/id6790800323?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiDoneStamp&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochidonestamp",
+    "alt": "Lumi さんすうプラネット：子供の算数 — レベルに合わせた20問、解答つき — 学習レポートで、にがてもひと目で",
+    "store": "https://apps.apple.com/jp/app/id6776958488?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiMathPlanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumimathpro",
     "review": {
      "label": "このアプリをお使いですか？App Store で評価・レビューできます",
-     "url": "https://apps.apple.com/app/id6790800323?action=write-review"
+     "url": "https://apps.apple.com/app/id6776958488?action=write-review"
     },
     "keywords": [
-     "最後にやった日",
-     "経過日数",
-     "家電",
-     "掃除",
-     "メンテナンス",
-     "水やり"
+     "論理",
+     "推理",
+     "規則性",
+     "なぞなぞ",
+     "頭の体操",
+     "暗算"
     ],
-    "keyline": "前回いつ？家事と交換時期の記録",
+    "keyline": "子供の算数",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "0ba5cdec3a24a67c",
+     "board": "e1637282f6e3cfc4",
      "real_recording": false,
      "rules": "2026-10-18"
     },
@@ -1648,43 +1544,41 @@
    },
    {
     "kind": "clip",
-    "key": "easyam/en",
+    "key": "kumo/en",
     "locale": "en",
-    "app": "easyam",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/8n1x9x.mp4",
-    "hook": "Holidays skipped automatically",
-    "name": "EasyAM: Holiday Alarm Clock",
-    "title": "Holidays skipped automatically | Rings for work, skips days off | EasyAM holiday alarm",
+    "app": "kumo",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/2764775737.mp4",
+    "hook": "Log your weight in about 10 seconds",
+    "name": "Kumo: Weight & GLP-1 Tracker",
+    "title": "Log your weight in about 10 seconds | Fasting & Cute Cloud | Kumo weight tracker",
     "tags": [
-     "#HolidayAlarmClock",
-     "#RingsForWork",
-     "#SkipsDaysOff",
-     "#SmartSchedule",
-     "#EasyAMHolidayAlarm"
+     "#CuteCloud",
+     "#IntermittentFasting",
+     "#KumoWeightTracker"
     ],
-    "caption": "Holidays skipped automatically\nAdd time off, vacations stay quiet\nRings for work, skips days off\nEasyAM: Holiday Alarm Clock\nSearch “holiday alarm clock” on the App Store\nAlso on Google Play\n\n#HolidayAlarmClock #RingsForWork #SkipsDaysOff #SmartSchedule #EasyAMHolidayAlarm",
+    "caption": "Log your weight in about 10 seconds\nSee the trend with a 7-day average\nFasting & Cute Cloud\nKumo: Weight & GLP-1 Tracker\nSearch “Kumo weight tracker” on the App Store\nAlso on Google Play\n\n#CuteCloud #IntermittentFasting #KumoWeightTracker",
     "button": "Get it on the App Store",
     "variant": "b",
-    "alt": "EasyAM: Holiday Alarm Clock — Holidays skipped automatically — Add time off, vacations stay quiet — Rings for work, skips days off",
-    "store": "https://apps.apple.com/us/app/id6821790092?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam",
+    "alt": "Kumo: Weight & GLP-1 Tracker — Log your weight in about 10 seconds — See the trend with a 7-day average — Fasting & Cute Cloud",
+    "store": "https://apps.apple.com/us/app/id6830824515?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Kumo&referrer=utm_source%3Dsocial%26utm_campaign%3Dkumo",
     "review": {
      "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6821790092?action=write-review"
+     "url": "https://apps.apple.com/app/id6830824515?action=write-review"
     },
     "keywords": [
-     "workday",
-     "shift",
-     "public",
-     "calendar",
-     "weekday",
-     "vacation"
+     "daily",
+     "diary",
+     "body",
+     "measurement",
+     "intermittent",
+     "timer"
     ],
-    "keyline": "Rings for work, skips days off",
+    "keyline": "Fasting & Cute Cloud",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "f45a7a4e972af86c",
+     "board": "0e325c1c1882013a",
      "real_recording": false,
      "rules": "2026-10-18"
     },
@@ -1692,146 +1586,147 @@
    },
    {
     "kind": "clip",
-    "key": "wifiaid/ja",
-    "locale": "ja",
-    "app": "wifiaid",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/s367cp.mp4",
-    "hook": "ワンタップで診断",
-    "name": "WiFi Aid：ネット不調の原因を特定",
-    "title": "ワンタップで診断 | ルーター・メッシュ・DNS診断 | WiFi Aid ネット不調",
+    "key": "shotinbox/en",
+    "locale": "en",
+    "app": "shotinbox",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/8wjz03.mp4",
+    "hook": "Search the text inside them",
+    "name": "ShotInbox AI: Sort Screenshots",
+    "title": "Search the text inside them | OCR Search & Photo Cleaner | ShotInbox",
     "tags": [
-     "#ネット不調の原因を特定",
-     "#アクセスポイント",
-     "#遅延",
-     "#ジッター",
-     "#WiFiAidネット不調"
+     "#SortScreenshots",
+     "#OCRSearch",
+     "#PhotoCleaner",
+     "#ShotInbox"
     ],
-    "caption": "ワンタップで診断\n遅延も安定性も\nルーター・メッシュ・DNS診断\nWiFi Aid：ネット不調の原因を特定\nApp Storeで「WiFi Aid ネット不調」を検索\nAndroidはGoogle Playで\n\n#ネット不調の原因を特定 #アクセスポイント #遅延 #ジッター #WiFiAidネット不調",
-    "button": "App Storeで入手",
+    "caption": "Search the text inside them\nReceipts, tickets…all sorted\nOCR Search & Photo Cleaner\nShotInbox AI: Sort Screenshots\nSearch “Sort Screenshots” on the App Store\nAlso on Google Play\n\n#SortScreenshots #OCRSearch #PhotoCleaner #ShotInbox",
+    "button": "Get it on the App Store",
     "variant": "b",
-    "alt": "WiFi Aid：ネット不調の原因を特定 — ワンタップで診断 — 遅延も安定性も — ルーター・メッシュ・DNS診断",
-    "store": "https://apps.apple.com/jp/app/id6790467886?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.WiFiAid&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaid",
+    "alt": "ShotInbox AI: Sort Screenshots — Search the text inside them — Receipts, tickets…all sorted — OCR Search & Photo Cleaner",
+    "store": "https://apps.apple.com/us/app/id6802166527?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ShotInbox&referrer=utm_source%3Dsocial%26utm_campaign%3Dshotinbox",
     "review": {
-     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
-     "url": "https://apps.apple.com/app/id6790467886?action=write-review"
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6802166527?action=write-review"
     },
     "keywords": [
-     "アクセスポイント",
-     "遅延",
-     "ジッター",
-     "安定性",
-     "応答時間",
-     "IPv6"
+     "organizer",
+     "manager",
+     "duplicate",
+     "similar",
+     "text",
+     "receipts"
     ],
-    "keyline": "ルーター・メッシュ・DNS診断",
+    "keyline": "OCR Search & Photo Cleaner",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "d8bf12cb51e50aa0",
+     "board": "f6c970e3cb08d22c",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "slot": 15
    },
    {
-    "kind": "card",
-    "key": "card/suneung2027/2026-11-19",
-    "locale": "ko",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/countdown-cards/card-20261119.jpg",
-    "caption": "오늘 수능, 모두 응원해요\n할 수 있어요\n\nApp Store · Google Play에서 'CountDaysNow' 검색\n\n#디데이카운터 #디데이 #카운트다운 #날짜계산 #CountDaysNow",
-    "title": "오늘 수능, 모두 응원해요",
-    "alt": "CountDaysNow — 오늘 수능, 모두 응원해요 — 할 수 있어요 — App Store · Google Play에서 'CountDaysNow' 검색 — D-day 위젯·기념일·날짜계산",
-    "name": "CountDaysNow",
-    "hook": "오늘 수능, 모두 응원해요",
+    "kind": "clip",
+    "key": "kumo/es",
+    "locale": "es",
+    "app": "kumo",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/fc9bcfca38.mp4",
+    "hook": "Anota tu peso en 10 segundos",
+    "name": "Kumo: Control de peso y GLP-1",
+    "title": "Anota tu peso en 10 segundos | Ayuno intermitente | Kumo control de peso",
     "tags": [
-     "#디데이카운터",
-     "#디데이",
-     "#카운트다운",
-     "#날짜계산",
-     "#CountDaysNow"
+     "#ControlDePeso",
+     "#AyunoIntermitente",
+     "#Registro",
+     "#KumoControlDePeso"
     ],
-    "button": "App Store에서 받기",
-    "store": "https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow"
-   },
-   {
-    "kind": "card",
-    "key": "utility/checklist/mochi/exam-week/ko",
-    "locale": "ko",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/utility-cards/card-20261119.jpg",
-    "caption": "오늘의 할 일 4가지: 시험 주간\n○ 시험 범위 전부 적기\n○ 가장 어려운 과목 모의고사 한 번\n○ 8시간 자기\n○ 전날 밤 펜과 신분증 챙기기\n노트만 보지 말고 틀린 문제를 다시 보기.\n\nMochi 귀여운 할 일 목록: 할 일을 적고, 끝나면 작은 동그라미를 탭하세요\nApp Store · Google Play에서 'Mochi 귀여운 할 일 목록' 검색\n\n#귀여운투두리스트체크리스트 #할일 #할일목록 #할일관리 #Mochi귀여운할일",
-    "title": "오늘의 할 일 4가지: 시험 주간",
-    "alt": "Mochi Cute Checklist — 오늘의 할 일 4가지: 시험 주간 — ○ 시험 범위 전부 적기 — ○ 가장 어려운 과목 모의고사 한 번 — 귀여운 투두리스트 & 체크리스트",
-    "name": "Mochi Cute Checklist",
-    "hook": "오늘의 할 일 4가지: 시험 주간",
-    "tags": [
-     "#귀여운투두리스트체크리스트",
-     "#할일",
-     "#할일목록",
-     "#할일관리",
-     "#Mochi귀여운할일"
+    "caption": "Anota tu peso en 10 segundos\nLa tendencia real: media de 7 días\nAyuno intermitente\nKumo: Control de peso y GLP-1\nBusca «Kumo control de peso» en el App Store\nTambién en Google Play\n\n#ControlDePeso #AyunoIntermitente #Registro #KumoControlDePeso",
+    "button": "Descargar en el App Store",
+    "variant": "b",
+    "alt": "Kumo: Control de peso y GLP-1 — Anota tu peso en 10 segundos — La tendencia real: media de 7 días — Ayuno intermitente",
+    "store": "https://apps.apple.com/es/app/id6830824515?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Kumo&referrer=utm_source%3Dsocial%26utm_campaign%3Dkumo",
+    "review": {
+     "label": "¿Ya usas esta app? Valórala o escribe una reseña en el App Store",
+     "url": "https://apps.apple.com/app/id6830824515?action=write-review"
+    },
+    "keywords": [
+     "registro",
+     "diario",
+     "medidas",
+     "agua",
+     "proteínas",
+     "seguimiento"
     ],
-    "button": "App Store에서 받기",
-    "store": "https://apps.apple.com/kr/app/id6785004775?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi"
+    "keyline": "Ayuno intermitente",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "0e325c1c1882013a",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "slot": 15
    }
   ],
   "youtube": [
    {
     "kind": "clip",
-    "key": "tripplanet/ko",
-    "locale": "ko",
-    "app": "tripplanet",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/x2czqp.mp4",
-    "hook": "비행기 타는 날 미션 원탭으로 추가",
-    "name": "Trip Planet 아이 여행 게임",
-    "title": "비행기 타는 날 미션 원탭으로 추가 | 비행기·나들이 미션 도장 모으기 | Trip Planet 아이 여행 게임",
+    "key": "picclear/zh-Hant",
+    "locale": "zh-Hant",
+    "app": "picclear",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/f304cc.mp4",
+    "hook": "重複照片，幫你分好組",
+    "name": "PicClear Pro：照片清理·釋放空間",
+    "title": "重複照片，幫你分好組 | 截圖清理・手機空間不足 | PicClear 照片清理",
     "tags": [
-     "#아이랑",
-     "#해외",
-     "#가족",
-     "#유아",
-     "#TripPlanet아이여행게임"
+     "#照片清理釋放空間",
+     "#重複照片",
+     "#相似照片",
+     "#相片清理",
+     "#PicClear照片清理"
     ],
-    "caption": "비행기 타는 날 미션 원탭으로 추가\n엄마 아빠 함께 계획해요\n비행기·나들이 미션 도장 모으기\nApp Store에서 'Trip Planet 아이 여행 게임' 검색\nAndroid는 Google Play에서\n\n#아이랑 #해외 #가족 #유아 #TripPlanet아이여행게임",
-    "button": "App Store에서 받기",
+    "caption": "重複照片，幫你分好組\n舊截圖，一次找出來\n截圖清理・手機空間不足\nPicClear Pro：照片清理·釋放空間\n在 App Store 搜尋「PicClear 照片清理」\nAndroid 版在 Google Play\n\n#照片清理釋放空間 #重複照片 #相似照片 #相片清理 #PicClear照片清理",
+    "button": "在 App Store 下載",
     "variant": "b",
-    "alt": "Trip Planet 아이 여행 게임 — 비행기 타는 날 미션 원탭으로 추가 — 엄마 아빠 함께 계획해요 — 비행기·나들이 미션 도장 모으기",
-    "store": "https://apps.apple.com/kr/app/id6787193643?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.TripPlanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripplanet",
+    "alt": "PicClear Pro：照片清理·釋放空間 — 重複照片，幫你分好組 — 舊截圖，一次找出來 — 截圖清理・手機空間不足",
+    "store": "https://apps.apple.com/tw/app/id6780223070?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.picclear.app&referrer=utm_source%3Dsocial%26utm_campaign%3Dpicclear",
     "review": {
-     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
-     "url": "https://apps.apple.com/app/id6787193643?action=write-review"
+     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
+     "url": "https://apps.apple.com/app/id6780223070?action=write-review"
     },
     "keywords": [
-     "아이랑",
-     "해외",
-     "가족",
-     "유아",
-     "기내",
-     "장거리"
+     "重複照片",
+     "相似照片",
+     "相片清理",
+     "刪除照片",
+     "相簿整理",
+     "圖庫清理"
     ],
-    "keyline": "비행기·나들이 미션 도장 모으기",
+    "keyline": "截圖清理・手機空間不足",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "df81f6a6b37515a4",
+     "board": "562edfd587f5f970",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "youtube": {
-     "title": "비행기 타는 날 미션 원탭으로 추가 | Trip Planet 아이 여행 게임 #Shorts",
-     "description": "비행기 타는 날 미션 원탭으로 추가\n엄마 아빠 함께 계획해요\n비행기·나들이 미션 도장 모으기\n\nTrip Planet 아이 여행 게임\nApp Store: https://apps.apple.com/kr/app/id6787193643?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.TripPlanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripplanet\n이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다\nhttps://apps.apple.com/app/id6787193643?action=write-review\n\n아이랑 · 해외 · 가족 · 유아 · 기내 · 장거리\n\n#Shorts #아이랑 #TripPlanet아이여행게임",
+     "title": "重複照片，幫你分好組 | PicClear 照片清理 #Shorts",
+     "description": "重複照片，幫你分好組\n舊截圖，一次找出來\n截圖清理・手機空間不足\n\nPicClear Pro：照片清理·釋放空間\nApp Store: https://apps.apple.com/tw/app/id6780223070?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.picclear.app&referrer=utm_source%3Dsocial%26utm_campaign%3Dpicclear\n已經在用這款 App？可以到 App Store 評分或撰寫評論\nhttps://apps.apple.com/app/id6780223070?action=write-review\n\n重複照片 · 相似照片 · 相片清理 · 刪除照片 · 相簿整理 · 圖庫清理\n\n#Shorts #照片清理釋放空間 #PicClear照片清理",
      "tags": [
-      "아이랑",
-      "해외",
-      "가족",
-      "유아",
-      "기내",
-      "장거리",
-      "TripPlanet아이여행게임",
-      "Trip Planet 아이 여행 게임"
+      "重複照片",
+      "相似照片",
+      "相片清理",
+      "刪除照片",
+      "相簿整理",
+      "圖庫清理",
+      "照片清理釋放空間",
+      "PicClear照片清理",
+      "PicClear 照片清理"
      ]
     },
     "slot": 1
@@ -1896,180 +1791,235 @@
    },
    {
     "kind": "clip",
-    "key": "mochidonestamp/ja",
+    "key": "lumimathpro/ja",
     "locale": "ja",
-    "app": "mochidonestamp",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/qsw854.mp4",
-    "hook": "済んだら、ワンタップ",
-    "name": "Mochi DoneStamp：いつやった？",
-    "title": "済んだら、ワンタップ | 前回いつ？家事と交換時期の記録 | Mochi DoneStamp いつやった",
+    "app": "lumimathpro",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/a3fdk9.mp4",
+    "hook": "レベルに合わせた20問、解答つき",
+    "name": "Lumi さんすうプラネット：子供の算数",
+    "title": "レベルに合わせた20問、解答つき | 子供の算数 | Lumi さんすうプラネット",
     "tags": [
-     "#いつやった",
-     "#最後にやった日",
-     "#経過日数",
-     "#家電",
-     "#MochiDoneStampいつやった"
+     "#子供の算数",
+     "#論理",
+     "#推理",
+     "#規則性",
+     "#Lumiさんすうプラネット"
     ],
-    "caption": "済んだら、ワンタップ\n次はいつか、ひと目で\n前回いつ？家事と交換時期の記録\nMochi DoneStamp：いつやった？\nApp Storeで「Mochi DoneStamp いつやった」を検索\nAndroidはGoogle Playで\n\n#いつやった #最後にやった日 #経過日数 #家電 #MochiDoneStampいつやった",
+    "caption": "レベルに合わせた20問、解答つき\n学習レポートで、にがてもひと目で\nLumi さんすうプラネット：子供の算数\nApp Storeで「Lumi さんすうプラネット」を検索\nAndroidはGoogle Playで\n\n#子供の算数 #論理 #推理 #規則性 #Lumiさんすうプラネット",
     "button": "App Storeで入手",
     "variant": "b",
-    "alt": "Mochi DoneStamp：いつやった？ — 済んだら、ワンタップ — 次はいつか、ひと目で — 前回いつ？家事と交換時期の記録",
-    "store": "https://apps.apple.com/jp/app/id6790800323?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiDoneStamp&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochidonestamp",
+    "alt": "Lumi さんすうプラネット：子供の算数 — レベルに合わせた20問、解答つき — 学習レポートで、にがてもひと目で",
+    "store": "https://apps.apple.com/jp/app/id6776958488?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiMathPlanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumimathpro",
     "review": {
      "label": "このアプリをお使いですか？App Store で評価・レビューできます",
-     "url": "https://apps.apple.com/app/id6790800323?action=write-review"
+     "url": "https://apps.apple.com/app/id6776958488?action=write-review"
     },
     "keywords": [
-     "最後にやった日",
-     "経過日数",
-     "家電",
-     "掃除",
-     "メンテナンス",
-     "水やり"
+     "論理",
+     "推理",
+     "規則性",
+     "なぞなぞ",
+     "頭の体操",
+     "暗算"
     ],
-    "keyline": "前回いつ？家事と交換時期の記録",
+    "keyline": "子供の算数",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "0ba5cdec3a24a67c",
+     "board": "e1637282f6e3cfc4",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "youtube": {
-     "title": "済んだら、ワンタップ | Mochi DoneStamp いつやった #Shorts",
-     "description": "済んだら、ワンタップ\n次はいつか、ひと目で\n前回いつ？家事と交換時期の記録\n\nMochi DoneStamp：いつやった？\nApp Store: https://apps.apple.com/jp/app/id6790800323?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiDoneStamp&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochidonestamp\nこのアプリをお使いですか？App Store で評価・レビューできます\nhttps://apps.apple.com/app/id6790800323?action=write-review\n\n最後にやった日 · 経過日数 · 家電 · 掃除 · メンテナンス · 水やり\n\n#Shorts #いつやった #MochiDoneStampいつやった",
+     "title": "レベルに合わせた20問、解答つき | Lumi さんすうプラネット #Shorts",
+     "description": "レベルに合わせた20問、解答つき\n学習レポートで、にがてもひと目で\n子供の算数\n\nLumi さんすうプラネット：子供の算数\nApp Store: https://apps.apple.com/jp/app/id6776958488?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiMathPlanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumimathpro\nこのアプリをお使いですか？App Store で評価・レビューできます\nhttps://apps.apple.com/app/id6776958488?action=write-review\n\n論理 · 推理 · 規則性 · なぞなぞ · 頭の体操 · 暗算\n\n#Shorts #子供の算数 #Lumiさんすうプラネット",
      "tags": [
-      "最後にやった日",
-      "経過日数",
-      "家電",
-      "掃除",
-      "メンテナンス",
-      "水やり",
-      "いつやった",
-      "MochiDoneStampいつやった",
-      "Mochi DoneStamp いつやった"
+      "論理",
+      "推理",
+      "規則性",
+      "なぞなぞ",
+      "頭の体操",
+      "暗算",
+      "子供の算数",
+      "Lumiさんすうプラネット",
+      "Lumi さんすうプラネット"
      ]
     },
     "slot": 1
    },
    {
     "kind": "clip",
-    "key": "easyam/en",
+    "key": "kumo/en",
     "locale": "en",
-    "app": "easyam",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/8n1x9x.mp4",
-    "hook": "Holidays skipped automatically",
-    "name": "EasyAM: Holiday Alarm Clock",
-    "title": "Holidays skipped automatically | Rings for work, skips days off | EasyAM holiday alarm",
+    "app": "kumo",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/2764775737.mp4",
+    "hook": "Log your weight in about 10 seconds",
+    "name": "Kumo: Weight & GLP-1 Tracker",
+    "title": "Log your weight in about 10 seconds | Fasting & Cute Cloud | Kumo weight tracker",
     "tags": [
-     "#HolidayAlarmClock",
-     "#RingsForWork",
-     "#SkipsDaysOff",
-     "#SmartSchedule",
-     "#EasyAMHolidayAlarm"
+     "#CuteCloud",
+     "#IntermittentFasting",
+     "#KumoWeightTracker"
     ],
-    "caption": "Holidays skipped automatically\nAdd time off, vacations stay quiet\nRings for work, skips days off\nEasyAM: Holiday Alarm Clock\nSearch “holiday alarm clock” on the App Store\nAlso on Google Play\n\n#HolidayAlarmClock #RingsForWork #SkipsDaysOff #SmartSchedule #EasyAMHolidayAlarm",
+    "caption": "Log your weight in about 10 seconds\nSee the trend with a 7-day average\nFasting & Cute Cloud\nKumo: Weight & GLP-1 Tracker\nSearch “Kumo weight tracker” on the App Store\nAlso on Google Play\n\n#CuteCloud #IntermittentFasting #KumoWeightTracker",
     "button": "Get it on the App Store",
     "variant": "b",
-    "alt": "EasyAM: Holiday Alarm Clock — Holidays skipped automatically — Add time off, vacations stay quiet — Rings for work, skips days off",
-    "store": "https://apps.apple.com/us/app/id6821790092?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam",
+    "alt": "Kumo: Weight & GLP-1 Tracker — Log your weight in about 10 seconds — See the trend with a 7-day average — Fasting & Cute Cloud",
+    "store": "https://apps.apple.com/us/app/id6830824515?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Kumo&referrer=utm_source%3Dsocial%26utm_campaign%3Dkumo",
     "review": {
      "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6821790092?action=write-review"
+     "url": "https://apps.apple.com/app/id6830824515?action=write-review"
     },
     "keywords": [
-     "workday",
-     "shift",
-     "public",
-     "calendar",
-     "weekday",
-     "vacation"
+     "daily",
+     "diary",
+     "body",
+     "measurement",
+     "intermittent",
+     "timer"
     ],
-    "keyline": "Rings for work, skips days off",
+    "keyline": "Fasting & Cute Cloud",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "f45a7a4e972af86c",
+     "board": "0e325c1c1882013a",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "youtube": {
-     "title": "Holidays skipped automatically | EasyAM holiday alarm #Shorts",
-     "description": "Holidays skipped automatically\nAdd time off, vacations stay quiet\nRings for work, skips days off\n\nEasyAM: Holiday Alarm Clock\nApp Store: https://apps.apple.com/us/app/id6821790092?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam\nAlready using this app? Rate or review it on the App Store\nhttps://apps.apple.com/app/id6821790092?action=write-review\n\nworkday · shift · public · calendar · weekday · vacation\n\n#Shorts #HolidayAlarmClock #EasyAMholidayalarm",
+     "title": "Log your weight in about 10 seconds | Kumo weight tracker #Shorts",
+     "description": "Log your weight in about 10 seconds\nSee the trend with a 7-day average\nFasting & Cute Cloud\n\nKumo: Weight & GLP-1 Tracker\nApp Store: https://apps.apple.com/us/app/id6830824515?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Kumo&referrer=utm_source%3Dsocial%26utm_campaign%3Dkumo\nAlready using this app? Rate or review it on the App Store\nhttps://apps.apple.com/app/id6830824515?action=write-review\n\ndaily · diary · body · measurement · intermittent · timer\n\n#Shorts #CuteCloud #Kumoweighttracker",
      "tags": [
-      "workday",
-      "shift",
-      "public",
-      "calendar",
-      "weekday",
-      "vacation",
-      "HolidayAlarmClock",
-      "RingsForWork",
-      "SkipsDaysOff",
-      "SmartSchedule",
-      "EasyAMHolidayAlarm",
-      "EasyAM holiday alarm"
+      "daily",
+      "diary",
+      "body",
+      "measurement",
+      "intermittent",
+      "timer",
+      "CuteCloud",
+      "IntermittentFasting",
+      "KumoWeightTracker",
+      "Kumo weight tracker"
      ]
     },
     "slot": 15
    },
    {
     "kind": "clip",
-    "key": "wifiaid/ja",
-    "locale": "ja",
-    "app": "wifiaid",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/s367cp.mp4",
-    "hook": "ワンタップで診断",
-    "name": "WiFi Aid：ネット不調の原因を特定",
-    "title": "ワンタップで診断 | ルーター・メッシュ・DNS診断 | WiFi Aid ネット不調",
+    "key": "shotinbox/en",
+    "locale": "en",
+    "app": "shotinbox",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/8wjz03.mp4",
+    "hook": "Search the text inside them",
+    "name": "ShotInbox AI: Sort Screenshots",
+    "title": "Search the text inside them | OCR Search & Photo Cleaner | ShotInbox",
     "tags": [
-     "#ネット不調の原因を特定",
-     "#アクセスポイント",
-     "#遅延",
-     "#ジッター",
-     "#WiFiAidネット不調"
+     "#SortScreenshots",
+     "#OCRSearch",
+     "#PhotoCleaner",
+     "#ShotInbox"
     ],
-    "caption": "ワンタップで診断\n遅延も安定性も\nルーター・メッシュ・DNS診断\nWiFi Aid：ネット不調の原因を特定\nApp Storeで「WiFi Aid ネット不調」を検索\nAndroidはGoogle Playで\n\n#ネット不調の原因を特定 #アクセスポイント #遅延 #ジッター #WiFiAidネット不調",
-    "button": "App Storeで入手",
+    "caption": "Search the text inside them\nReceipts, tickets…all sorted\nOCR Search & Photo Cleaner\nShotInbox AI: Sort Screenshots\nSearch “Sort Screenshots” on the App Store\nAlso on Google Play\n\n#SortScreenshots #OCRSearch #PhotoCleaner #ShotInbox",
+    "button": "Get it on the App Store",
     "variant": "b",
-    "alt": "WiFi Aid：ネット不調の原因を特定 — ワンタップで診断 — 遅延も安定性も — ルーター・メッシュ・DNS診断",
-    "store": "https://apps.apple.com/jp/app/id6790467886?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.WiFiAid&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaid",
+    "alt": "ShotInbox AI: Sort Screenshots — Search the text inside them — Receipts, tickets…all sorted — OCR Search & Photo Cleaner",
+    "store": "https://apps.apple.com/us/app/id6802166527?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ShotInbox&referrer=utm_source%3Dsocial%26utm_campaign%3Dshotinbox",
     "review": {
-     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
-     "url": "https://apps.apple.com/app/id6790467886?action=write-review"
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6802166527?action=write-review"
     },
     "keywords": [
-     "アクセスポイント",
-     "遅延",
-     "ジッター",
-     "安定性",
-     "応答時間",
-     "IPv6"
+     "organizer",
+     "manager",
+     "duplicate",
+     "similar",
+     "text",
+     "receipts"
     ],
-    "keyline": "ルーター・メッシュ・DNS診断",
+    "keyline": "OCR Search & Photo Cleaner",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "d8bf12cb51e50aa0",
+     "board": "f6c970e3cb08d22c",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "youtube": {
-     "title": "ワンタップで診断 | WiFi Aid ネット不調 #Shorts",
-     "description": "ワンタップで診断\n遅延も安定性も\nルーター・メッシュ・DNS診断\n\nWiFi Aid：ネット不調の原因を特定\nApp Store: https://apps.apple.com/jp/app/id6790467886?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.WiFiAid&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaid\nこのアプリをお使いですか？App Store で評価・レビューできます\nhttps://apps.apple.com/app/id6790467886?action=write-review\n\nアクセスポイント · 遅延 · ジッター · 安定性 · 応答時間 · IPv6\n\n#Shorts #ネット不調の原因を特定 #WiFiAidネット不調",
+     "title": "Search the text inside them | ShotInbox #Shorts",
+     "description": "Search the text inside them\nReceipts, tickets…all sorted\nOCR Search & Photo Cleaner\n\nShotInbox AI: Sort Screenshots\nApp Store: https://apps.apple.com/us/app/id6802166527?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ShotInbox&referrer=utm_source%3Dsocial%26utm_campaign%3Dshotinbox\nAlready using this app? Rate or review it on the App Store\nhttps://apps.apple.com/app/id6802166527?action=write-review\n\norganizer · manager · duplicate · similar · text · receipts\n\n#Shorts #SortScreenshots #ShotInbox",
      "tags": [
-      "アクセスポイント",
-      "遅延",
-      "ジッター",
-      "安定性",
-      "応答時間",
-      "IPv6",
-      "ネット不調の原因を特定",
-      "WiFiAidネット不調",
-      "WiFi Aid ネット不調"
+      "organizer",
+      "manager",
+      "duplicate",
+      "similar",
+      "text",
+      "receipts",
+      "SortScreenshots",
+      "OCRSearch",
+      "PhotoCleaner",
+      "ShotInbox"
+     ]
+    },
+    "slot": 15
+   },
+   {
+    "kind": "clip",
+    "key": "kumo/es",
+    "locale": "es",
+    "app": "kumo",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/fc9bcfca38.mp4",
+    "hook": "Anota tu peso en 10 segundos",
+    "name": "Kumo: Control de peso y GLP-1",
+    "title": "Anota tu peso en 10 segundos | Ayuno intermitente | Kumo control de peso",
+    "tags": [
+     "#ControlDePeso",
+     "#AyunoIntermitente",
+     "#Registro",
+     "#KumoControlDePeso"
+    ],
+    "caption": "Anota tu peso en 10 segundos\nLa tendencia real: media de 7 días\nAyuno intermitente\nKumo: Control de peso y GLP-1\nBusca «Kumo control de peso» en el App Store\nTambién en Google Play\n\n#ControlDePeso #AyunoIntermitente #Registro #KumoControlDePeso",
+    "button": "Descargar en el App Store",
+    "variant": "b",
+    "alt": "Kumo: Control de peso y GLP-1 — Anota tu peso en 10 segundos — La tendencia real: media de 7 días — Ayuno intermitente",
+    "store": "https://apps.apple.com/es/app/id6830824515?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Kumo&referrer=utm_source%3Dsocial%26utm_campaign%3Dkumo",
+    "review": {
+     "label": "¿Ya usas esta app? Valórala o escribe una reseña en el App Store",
+     "url": "https://apps.apple.com/app/id6830824515?action=write-review"
+    },
+    "keywords": [
+     "registro",
+     "diario",
+     "medidas",
+     "agua",
+     "proteínas",
+     "seguimiento"
+    ],
+    "keyline": "Ayuno intermitente",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "0e325c1c1882013a",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "Anota tu peso en 10 segundos | Kumo control de peso #Shorts",
+     "description": "Anota tu peso en 10 segundos\nLa tendencia real: media de 7 días\nAyuno intermitente\n\nKumo: Control de peso y GLP-1\nApp Store: https://apps.apple.com/es/app/id6830824515?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Kumo&referrer=utm_source%3Dsocial%26utm_campaign%3Dkumo\n¿Ya usas esta app? Valórala o escribe una reseña en el App Store\nhttps://apps.apple.com/app/id6830824515?action=write-review\n\nregistro · diario · medidas · agua · proteínas · seguimiento\n\n#Shorts #ControlDePeso #Kumocontroldepeso",
+     "tags": [
+      "registro",
+      "diario",
+      "medidas",
+      "agua",
+      "proteínas",
+      "seguimiento",
+      "ControlDePeso",
+      "AyunoIntermitente",
+      "KumoControlDePeso",
+      "Kumo control de peso"
      ]
     },
     "slot": 15
@@ -2078,49 +2028,49 @@
   "pinterest": [
    {
     "kind": "clip",
-    "key": "tripplanet/ko",
-    "locale": "ko",
-    "app": "tripplanet",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/x2czqp.mp4",
-    "hook": "비행기 타는 날 미션 원탭으로 추가",
-    "name": "Trip Planet 아이 여행 게임",
-    "title": "비행기 타는 날 미션 원탭으로 추가 | 비행기·나들이 미션 도장 모으기 | Trip Planet 아이 여행 게임",
+    "key": "picclear/zh-Hant",
+    "locale": "zh-Hant",
+    "app": "picclear",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/f304cc.mp4",
+    "hook": "重複照片，幫你分好組",
+    "name": "PicClear Pro：照片清理·釋放空間",
+    "title": "重複照片，幫你分好組 | 截圖清理・手機空間不足 | PicClear 照片清理",
     "tags": [
-     "#아이랑",
-     "#해외",
-     "#가족",
-     "#유아",
-     "#TripPlanet아이여행게임"
+     "#照片清理釋放空間",
+     "#重複照片",
+     "#相似照片",
+     "#相片清理",
+     "#PicClear照片清理"
     ],
-    "caption": "비행기 타는 날 미션 원탭으로 추가\n엄마 아빠 함께 계획해요\n비행기·나들이 미션 도장 모으기\nApp Store에서 'Trip Planet 아이 여행 게임' 검색\nAndroid는 Google Play에서\n\n#아이랑 #해외 #가족 #유아 #TripPlanet아이여행게임",
-    "button": "App Store에서 받기",
+    "caption": "重複照片，幫你分好組\n舊截圖，一次找出來\n截圖清理・手機空間不足\nPicClear Pro：照片清理·釋放空間\n在 App Store 搜尋「PicClear 照片清理」\nAndroid 版在 Google Play\n\n#照片清理釋放空間 #重複照片 #相似照片 #相片清理 #PicClear照片清理",
+    "button": "在 App Store 下載",
     "variant": "b",
-    "alt": "Trip Planet 아이 여행 게임 — 비행기 타는 날 미션 원탭으로 추가 — 엄마 아빠 함께 계획해요 — 비행기·나들이 미션 도장 모으기",
-    "store": "https://apps.apple.com/kr/app/id6787193643?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.TripPlanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripplanet",
+    "alt": "PicClear Pro：照片清理·釋放空間 — 重複照片，幫你分好組 — 舊截圖，一次找出來 — 截圖清理・手機空間不足",
+    "store": "https://apps.apple.com/tw/app/id6780223070?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.picclear.app&referrer=utm_source%3Dsocial%26utm_campaign%3Dpicclear",
     "review": {
-     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
-     "url": "https://apps.apple.com/app/id6787193643?action=write-review"
+     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
+     "url": "https://apps.apple.com/app/id6780223070?action=write-review"
     },
     "keywords": [
-     "아이랑",
-     "해외",
-     "가족",
-     "유아",
-     "기내",
-     "장거리"
+     "重複照片",
+     "相似照片",
+     "相片清理",
+     "刪除照片",
+     "相簿整理",
+     "圖庫清理"
     ],
-    "keyline": "비행기·나들이 미션 도장 모으기",
+    "keyline": "截圖清理・手機空間不足",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "df81f6a6b37515a4",
+     "board": "562edfd587f5f970",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "비행기 타는 날 미션 원탭으로 추가\n엄마 아빠 함께 계획해요\n비행기·나들이 미션 도장 모으기\nApp Store에서 'Trip Planet 아이 여행 게임' 검색\nAndroid는 Google Play에서\n\n#아이랑 #해외 #가족 #유아 #TripPlanet아이여행게임\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6787193643?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.TripPlanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripplanet",
-     "link": "https://apps.apple.com/kr/app/id6787193643?pt=118326163&ct=social&mt=8"
+     "description": "重複照片，幫你分好組\n舊截圖，一次找出來\n截圖清理・手機空間不足\nPicClear Pro：照片清理·釋放空間\n在 App Store 搜尋「PicClear 照片清理」\nAndroid 版在 Google Play\n\n#照片清理釋放空間 #重複照片 #相似照片 #相片清理 #PicClear照片清理\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6780223070?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.picclear.app&referrer=utm_source%3Dsocial%26utm_campaign%3Dpicclear",
+     "link": "https://apps.apple.com/tw/app/id6780223070?pt=118326163&ct=social&mt=8"
     },
     "slot": 1
    },
@@ -2174,197 +2124,191 @@
    },
    {
     "kind": "clip",
-    "key": "mochidonestamp/ja",
+    "key": "lumimathpro/ja",
     "locale": "ja",
-    "app": "mochidonestamp",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/qsw854.mp4",
-    "hook": "済んだら、ワンタップ",
-    "name": "Mochi DoneStamp：いつやった？",
-    "title": "済んだら、ワンタップ | 前回いつ？家事と交換時期の記録 | Mochi DoneStamp いつやった",
+    "app": "lumimathpro",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/a3fdk9.mp4",
+    "hook": "レベルに合わせた20問、解答つき",
+    "name": "Lumi さんすうプラネット：子供の算数",
+    "title": "レベルに合わせた20問、解答つき | 子供の算数 | Lumi さんすうプラネット",
     "tags": [
-     "#いつやった",
-     "#最後にやった日",
-     "#経過日数",
-     "#家電",
-     "#MochiDoneStampいつやった"
+     "#子供の算数",
+     "#論理",
+     "#推理",
+     "#規則性",
+     "#Lumiさんすうプラネット"
     ],
-    "caption": "済んだら、ワンタップ\n次はいつか、ひと目で\n前回いつ？家事と交換時期の記録\nMochi DoneStamp：いつやった？\nApp Storeで「Mochi DoneStamp いつやった」を検索\nAndroidはGoogle Playで\n\n#いつやった #最後にやった日 #経過日数 #家電 #MochiDoneStampいつやった",
+    "caption": "レベルに合わせた20問、解答つき\n学習レポートで、にがてもひと目で\nLumi さんすうプラネット：子供の算数\nApp Storeで「Lumi さんすうプラネット」を検索\nAndroidはGoogle Playで\n\n#子供の算数 #論理 #推理 #規則性 #Lumiさんすうプラネット",
     "button": "App Storeで入手",
     "variant": "b",
-    "alt": "Mochi DoneStamp：いつやった？ — 済んだら、ワンタップ — 次はいつか、ひと目で — 前回いつ？家事と交換時期の記録",
-    "store": "https://apps.apple.com/jp/app/id6790800323?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiDoneStamp&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochidonestamp",
+    "alt": "Lumi さんすうプラネット：子供の算数 — レベルに合わせた20問、解答つき — 学習レポートで、にがてもひと目で",
+    "store": "https://apps.apple.com/jp/app/id6776958488?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiMathPlanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumimathpro",
     "review": {
      "label": "このアプリをお使いですか？App Store で評価・レビューできます",
-     "url": "https://apps.apple.com/app/id6790800323?action=write-review"
+     "url": "https://apps.apple.com/app/id6776958488?action=write-review"
     },
     "keywords": [
-     "最後にやった日",
-     "経過日数",
-     "家電",
-     "掃除",
-     "メンテナンス",
-     "水やり"
+     "論理",
+     "推理",
+     "規則性",
+     "なぞなぞ",
+     "頭の体操",
+     "暗算"
     ],
-    "keyline": "前回いつ？家事と交換時期の記録",
+    "keyline": "子供の算数",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "0ba5cdec3a24a67c",
+     "board": "e1637282f6e3cfc4",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "済んだら、ワンタップ\n次はいつか、ひと目で\n前回いつ？家事と交換時期の記録\nMochi DoneStamp：いつやった？\nApp Storeで「Mochi DoneStamp いつやった」を検索\nAndroidはGoogle Playで\n\n#いつやった #最後にやった日 #経過日数 #家電 #MochiDoneStampいつやった\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6790800323?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiDoneStamp&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochidonestamp",
-     "link": "https://apps.apple.com/jp/app/id6790800323?pt=118326163&ct=social&mt=8"
+     "description": "レベルに合わせた20問、解答つき\n学習レポートで、にがてもひと目で\nLumi さんすうプラネット：子供の算数\nApp Storeで「Lumi さんすうプラネット」を検索\nAndroidはGoogle Playで\n\n#子供の算数 #論理 #推理 #規則性 #Lumiさんすうプラネット\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6776958488?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiMathPlanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumimathpro",
+     "link": "https://apps.apple.com/jp/app/id6776958488?pt=118326163&ct=social&mt=8"
     },
     "slot": 1
    },
    {
     "kind": "clip",
-    "key": "easyam/en",
+    "key": "kumo/en",
     "locale": "en",
-    "app": "easyam",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/8n1x9x.mp4",
-    "hook": "Holidays skipped automatically",
-    "name": "EasyAM: Holiday Alarm Clock",
-    "title": "Holidays skipped automatically | Rings for work, skips days off | EasyAM holiday alarm",
+    "app": "kumo",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/2764775737.mp4",
+    "hook": "Log your weight in about 10 seconds",
+    "name": "Kumo: Weight & GLP-1 Tracker",
+    "title": "Log your weight in about 10 seconds | Fasting & Cute Cloud | Kumo weight tracker",
     "tags": [
-     "#HolidayAlarmClock",
-     "#RingsForWork",
-     "#SkipsDaysOff",
-     "#SmartSchedule",
-     "#EasyAMHolidayAlarm"
+     "#CuteCloud",
+     "#IntermittentFasting",
+     "#KumoWeightTracker"
     ],
-    "caption": "Holidays skipped automatically\nAdd time off, vacations stay quiet\nRings for work, skips days off\nEasyAM: Holiday Alarm Clock\nSearch “holiday alarm clock” on the App Store\nAlso on Google Play\n\n#HolidayAlarmClock #RingsForWork #SkipsDaysOff #SmartSchedule #EasyAMHolidayAlarm",
+    "caption": "Log your weight in about 10 seconds\nSee the trend with a 7-day average\nFasting & Cute Cloud\nKumo: Weight & GLP-1 Tracker\nSearch “Kumo weight tracker” on the App Store\nAlso on Google Play\n\n#CuteCloud #IntermittentFasting #KumoWeightTracker",
     "button": "Get it on the App Store",
     "variant": "b",
-    "alt": "EasyAM: Holiday Alarm Clock — Holidays skipped automatically — Add time off, vacations stay quiet — Rings for work, skips days off",
-    "store": "https://apps.apple.com/us/app/id6821790092?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam",
+    "alt": "Kumo: Weight & GLP-1 Tracker — Log your weight in about 10 seconds — See the trend with a 7-day average — Fasting & Cute Cloud",
+    "store": "https://apps.apple.com/us/app/id6830824515?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Kumo&referrer=utm_source%3Dsocial%26utm_campaign%3Dkumo",
     "review": {
      "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6821790092?action=write-review"
+     "url": "https://apps.apple.com/app/id6830824515?action=write-review"
     },
     "keywords": [
-     "workday",
-     "shift",
-     "public",
-     "calendar",
-     "weekday",
-     "vacation"
+     "daily",
+     "diary",
+     "body",
+     "measurement",
+     "intermittent",
+     "timer"
     ],
-    "keyline": "Rings for work, skips days off",
+    "keyline": "Fasting & Cute Cloud",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "f45a7a4e972af86c",
+     "board": "0e325c1c1882013a",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "Holidays skipped automatically\nAdd time off, vacations stay quiet\nRings for work, skips days off\nEasyAM: Holiday Alarm Clock\nSearch “holiday alarm clock” on the App Store\nAlso on Google Play\n\n#HolidayAlarmClock #RingsForWork #SkipsDaysOff #SmartSchedule #EasyAMHolidayAlarm\n\nGet it on the App Store: https://apps.apple.com/us/app/id6821790092?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam",
-     "link": "https://apps.apple.com/us/app/id6821790092?pt=118326163&ct=social&mt=8"
+     "description": "Log your weight in about 10 seconds\nSee the trend with a 7-day average\nFasting & Cute Cloud\nKumo: Weight & GLP-1 Tracker\nSearch “Kumo weight tracker” on the App Store\nAlso on Google Play\n\n#CuteCloud #IntermittentFasting #KumoWeightTracker\n\nGet it on the App Store: https://apps.apple.com/us/app/id6830824515?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Kumo&referrer=utm_source%3Dsocial%26utm_campaign%3Dkumo",
+     "link": "https://apps.apple.com/us/app/id6830824515?pt=118326163&ct=social&mt=8"
     },
     "slot": 15
    },
    {
     "kind": "clip",
-    "key": "wifiaid/ja",
-    "locale": "ja",
-    "app": "wifiaid",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/s367cp.mp4",
-    "hook": "ワンタップで診断",
-    "name": "WiFi Aid：ネット不調の原因を特定",
-    "title": "ワンタップで診断 | ルーター・メッシュ・DNS診断 | WiFi Aid ネット不調",
+    "key": "shotinbox/en",
+    "locale": "en",
+    "app": "shotinbox",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/8wjz03.mp4",
+    "hook": "Search the text inside them",
+    "name": "ShotInbox AI: Sort Screenshots",
+    "title": "Search the text inside them | OCR Search & Photo Cleaner | ShotInbox",
     "tags": [
-     "#ネット不調の原因を特定",
-     "#アクセスポイント",
-     "#遅延",
-     "#ジッター",
-     "#WiFiAidネット不調"
+     "#SortScreenshots",
+     "#OCRSearch",
+     "#PhotoCleaner",
+     "#ShotInbox"
     ],
-    "caption": "ワンタップで診断\n遅延も安定性も\nルーター・メッシュ・DNS診断\nWiFi Aid：ネット不調の原因を特定\nApp Storeで「WiFi Aid ネット不調」を検索\nAndroidはGoogle Playで\n\n#ネット不調の原因を特定 #アクセスポイント #遅延 #ジッター #WiFiAidネット不調",
-    "button": "App Storeで入手",
+    "caption": "Search the text inside them\nReceipts, tickets…all sorted\nOCR Search & Photo Cleaner\nShotInbox AI: Sort Screenshots\nSearch “Sort Screenshots” on the App Store\nAlso on Google Play\n\n#SortScreenshots #OCRSearch #PhotoCleaner #ShotInbox",
+    "button": "Get it on the App Store",
     "variant": "b",
-    "alt": "WiFi Aid：ネット不調の原因を特定 — ワンタップで診断 — 遅延も安定性も — ルーター・メッシュ・DNS診断",
-    "store": "https://apps.apple.com/jp/app/id6790467886?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.WiFiAid&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaid",
+    "alt": "ShotInbox AI: Sort Screenshots — Search the text inside them — Receipts, tickets…all sorted — OCR Search & Photo Cleaner",
+    "store": "https://apps.apple.com/us/app/id6802166527?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ShotInbox&referrer=utm_source%3Dsocial%26utm_campaign%3Dshotinbox",
     "review": {
-     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
-     "url": "https://apps.apple.com/app/id6790467886?action=write-review"
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6802166527?action=write-review"
     },
     "keywords": [
-     "アクセスポイント",
-     "遅延",
-     "ジッター",
-     "安定性",
-     "応答時間",
-     "IPv6"
+     "organizer",
+     "manager",
+     "duplicate",
+     "similar",
+     "text",
+     "receipts"
     ],
-    "keyline": "ルーター・メッシュ・DNS診断",
+    "keyline": "OCR Search & Photo Cleaner",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "d8bf12cb51e50aa0",
+     "board": "f6c970e3cb08d22c",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "ワンタップで診断\n遅延も安定性も\nルーター・メッシュ・DNS診断\nWiFi Aid：ネット不調の原因を特定\nApp Storeで「WiFi Aid ネット不調」を検索\nAndroidはGoogle Playで\n\n#ネット不調の原因を特定 #アクセスポイント #遅延 #ジッター #WiFiAidネット不調\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6790467886?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.WiFiAid&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaid",
-     "link": "https://apps.apple.com/jp/app/id6790467886?pt=118326163&ct=social&mt=8"
+     "description": "Search the text inside them\nReceipts, tickets…all sorted\nOCR Search & Photo Cleaner\nShotInbox AI: Sort Screenshots\nSearch “Sort Screenshots” on the App Store\nAlso on Google Play\n\n#SortScreenshots #OCRSearch #PhotoCleaner #ShotInbox\n\nGet it on the App Store: https://apps.apple.com/us/app/id6802166527?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ShotInbox&referrer=utm_source%3Dsocial%26utm_campaign%3Dshotinbox",
+     "link": "https://apps.apple.com/us/app/id6802166527?pt=118326163&ct=social&mt=8"
     },
     "slot": 15
    },
    {
-    "kind": "card",
-    "key": "card/suneung2027/2026-11-19",
-    "locale": "ko",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/countdown-cards/card-20261119.jpg",
-    "caption": "오늘 수능, 모두 응원해요\n할 수 있어요\n\nApp Store · Google Play에서 'CountDaysNow' 검색\n\n#디데이카운터 #디데이 #카운트다운 #날짜계산 #CountDaysNow",
-    "title": "오늘 수능, 모두 응원해요",
-    "alt": "CountDaysNow — 오늘 수능, 모두 응원해요 — 할 수 있어요 — App Store · Google Play에서 'CountDaysNow' 검색 — D-day 위젯·기념일·날짜계산",
-    "name": "CountDaysNow",
-    "hook": "오늘 수능, 모두 응원해요",
+    "kind": "clip",
+    "key": "kumo/es",
+    "locale": "es",
+    "app": "kumo",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/fc9bcfca38.mp4",
+    "hook": "Anota tu peso en 10 segundos",
+    "name": "Kumo: Control de peso y GLP-1",
+    "title": "Anota tu peso en 10 segundos | Ayuno intermitente | Kumo control de peso",
     "tags": [
-     "#디데이카운터",
-     "#디데이",
-     "#카운트다운",
-     "#날짜계산",
-     "#CountDaysNow"
+     "#ControlDePeso",
+     "#AyunoIntermitente",
+     "#Registro",
+     "#KumoControlDePeso"
     ],
-    "button": "App Store에서 받기",
-    "store": "https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
-    "pinterest": {
-     "description": "오늘 수능, 모두 응원해요\n할 수 있어요\n\nApp Store · Google Play에서 'CountDaysNow' 검색\n\n#디데이카운터 #디데이 #카운트다운 #날짜계산 #CountDaysNow\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
-     "link": "https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8"
-    }
-   },
-   {
-    "kind": "card",
-    "key": "utility/checklist/mochi/exam-week/ko",
-    "locale": "ko",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/utility-cards/card-20261119.jpg",
-    "caption": "오늘의 할 일 4가지: 시험 주간\n○ 시험 범위 전부 적기\n○ 가장 어려운 과목 모의고사 한 번\n○ 8시간 자기\n○ 전날 밤 펜과 신분증 챙기기\n노트만 보지 말고 틀린 문제를 다시 보기.\n\nMochi 귀여운 할 일 목록: 할 일을 적고, 끝나면 작은 동그라미를 탭하세요\nApp Store · Google Play에서 'Mochi 귀여운 할 일 목록' 검색\n\n#귀여운투두리스트체크리스트 #할일 #할일목록 #할일관리 #Mochi귀여운할일",
-    "title": "오늘의 할 일 4가지: 시험 주간",
-    "alt": "Mochi Cute Checklist — 오늘의 할 일 4가지: 시험 주간 — ○ 시험 범위 전부 적기 — ○ 가장 어려운 과목 모의고사 한 번 — 귀여운 투두리스트 & 체크리스트",
-    "name": "Mochi Cute Checklist",
-    "hook": "오늘의 할 일 4가지: 시험 주간",
-    "tags": [
-     "#귀여운투두리스트체크리스트",
-     "#할일",
-     "#할일목록",
-     "#할일관리",
-     "#Mochi귀여운할일"
+    "caption": "Anota tu peso en 10 segundos\nLa tendencia real: media de 7 días\nAyuno intermitente\nKumo: Control de peso y GLP-1\nBusca «Kumo control de peso» en el App Store\nTambién en Google Play\n\n#ControlDePeso #AyunoIntermitente #Registro #KumoControlDePeso",
+    "button": "Descargar en el App Store",
+    "variant": "b",
+    "alt": "Kumo: Control de peso y GLP-1 — Anota tu peso en 10 segundos — La tendencia real: media de 7 días — Ayuno intermitente",
+    "store": "https://apps.apple.com/es/app/id6830824515?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Kumo&referrer=utm_source%3Dsocial%26utm_campaign%3Dkumo",
+    "review": {
+     "label": "¿Ya usas esta app? Valórala o escribe una reseña en el App Store",
+     "url": "https://apps.apple.com/app/id6830824515?action=write-review"
+    },
+    "keywords": [
+     "registro",
+     "diario",
+     "medidas",
+     "agua",
+     "proteínas",
+     "seguimiento"
     ],
-    "button": "App Store에서 받기",
-    "store": "https://apps.apple.com/kr/app/id6785004775?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi",
+    "keyline": "Ayuno intermitente",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "0e325c1c1882013a",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
     "pinterest": {
-     "description": "오늘의 할 일 4가지: 시험 주간\n○ 시험 범위 전부 적기\n○ 가장 어려운 과목 모의고사 한 번\n○ 8시간 자기\n○ 전날 밤 펜과 신분증 챙기기\n노트만 보지 말고 틀린 문제를 다시 보기.\n\nMochi 귀여운 할 일 목록: 할 일을 적고, 끝나면 작은 동그라미를 탭하세요\nApp Store · Google Play에서 'Mochi 귀여운 할 일 목록' 검색\n\n#귀여운투두리스트체크리스트 #할일 #할일목록 #할일관리 #Mochi귀여운할일\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6785004775?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi",
-     "link": "https://apps.apple.com/kr/app/id6785004775?pt=118326163&ct=social&mt=8"
-    }
+     "description": "Anota tu peso en 10 segundos\nLa tendencia real: media de 7 días\nAyuno intermitente\nKumo: Control de peso y GLP-1\nBusca «Kumo control de peso» en el App Store\nTambién en Google Play\n\n#ControlDePeso #AyunoIntermitente #Registro #KumoControlDePeso\n\nDescargar en el App Store: https://apps.apple.com/es/app/id6830824515?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Kumo&referrer=utm_source%3Dsocial%26utm_campaign%3Dkumo",
+     "link": "https://apps.apple.com/es/app/id6830824515?pt=118326163&ct=social&mt=8"
+    },
+    "slot": 15
    },
    {
     "kind": "card",
@@ -2426,35 +2370,6 @@
    },
    {
     "kind": "card",
-    "key": "carousel/tripbeecute-zh-Hant-pain-20261105",
-    "locale": "zh-Hant",
-    "app": "tripbeecute",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripbeecute-zh-Hant-pain-20261105/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripbeecute-zh-Hant-pain-20261105/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripbeecute-zh-Hant-pain-20261105/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripbeecute-zh-Hant-pain-20261105/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripbeecute-zh-Hant-pain-20261105/04.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/tripbeecute-zh-Hant-pain-20261105/05.jpg"
-    ],
-    "caption": "出國行程還散在截圖和備忘錄裡？\n\n每一天都有自己的顏色，一眼就分得清楚\n✓ 照片、票券和備註，就放在對應的行程旁邊\n✓ 用 iCloud 邀請朋友，一起編輯同一本手冊\n\nApp Store 搜尋「可愛 旅行手帳」",
-    "title": "出國行程還散在截圖和備忘錄裡？",
-    "alt": "出國行程還散在截圖和備忘錄裡？ | 每一天都有自己的顏色，一眼就分得清楚 | 照片、票券和備註，就放在對應的行程旁邊 | 用 iCloud 邀請朋友，一起編輯同一本手冊 | TripBee Cute：可愛旅行手帳 / 插畫旅遊規劃手冊・出國倒數日・和朋友一起排行程 / App Store 搜尋「可愛 旅行手帳」",
-    "name": "TripBee Cute：可愛旅行手帳",
-    "hook": "出國行程還散在截圖和備忘錄裡？",
-    "tags": [],
-    "button": "在 App Store 下載",
-    "store": "https://apps.apple.com/tw/app/id6826987407?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "launched": "2026-11-05",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.TripBeeCute&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripbeecute",
-    "pinterest": {
-     "description": "出國行程還散在截圖和備忘錄裡？\n\n每一天都有自己的顏色，一眼就分得清楚\n✓ 照片、票券和備註，就放在對應的行程旁邊\n✓ 用 iCloud 邀請朋友，一起編輯同一本手冊\n\nApp Store 搜尋「可愛 旅行手帳」\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6826987407?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.TripBeeCute&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripbeecute",
-     "link": "https://apps.apple.com/tw/app/id6826987407?pt=118326163&ct=social&mt=8"
-    }
-   },
-   {
-    "kind": "card",
     "key": "carousel/foldparty-zh-Hant-pain-20261107",
     "locale": "zh-Hant",
     "app": "foldparty",
@@ -2480,248 +2395,6 @@
     "pinterest": {
      "description": "等餐、搭長途車，兩個人只能各滑各的手機？\n\n兩人用同一支手機面對面對戰或合作\n✓ 一局約 30 到 120 秒，難度循序漸進\n✓ 離線就能玩，也不用註冊帳號\n\nApp Store 搜尋「雙人遊戲」\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6829184924?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.FoldParty&referrer=utm_source%3Dsocial%26utm_campaign%3Dfoldparty",
      "link": "https://apps.apple.com/tw/app/id6829184924?pt=118326163&ct=social&mt=8"
-    }
-   },
-   {
-    "kind": "card",
-    "key": "carousel/lumiweather-ko-pain-20261022",
-    "locale": "ko",
-    "app": "lumiweather",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/lumiweather-ko-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/lumiweather-ko-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/lumiweather-ko-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/lumiweather-ko-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/lumiweather-ko-pain-20261022/04.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/lumiweather-ko-pain-20261022/05.jpg"
-    ],
-    "caption": "오늘 선크림 발라야 할까?\n\n입을 옷·챙길 것 한눈에\n✓ 외출해도 될까? 이유까지 알려줘요\n✓ 오늘의 하늘을 홈 화면에\n\nApp Store에서 ‘루미 날씨’ 검색",
-    "title": "오늘 선크림 발라야 할까?",
-    "alt": "오늘 선크림 발라야 할까? | 입을 옷·챙길 것 한눈에 | 외출해도 될까? 이유까지 알려줘요 | 오늘의 하늘을 홈 화면에 | 루미 날씨: 외출 지수와 옷차림 / 우산·자외선·시간별 주간 예보 / App Store에서 ‘루미 날씨’ 검색",
-    "name": "루미 날씨: 외출 지수와 옷차림",
-    "hook": "오늘 선크림 발라야 할까?",
-    "tags": [],
-    "button": "App Store에서 받기",
-    "store": "https://apps.apple.com/kr/app/id6779552704?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiWeather&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiweather",
-    "pinterest": {
-     "description": "오늘 선크림 발라야 할까?\n\n입을 옷·챙길 것 한눈에\n✓ 외출해도 될까? 이유까지 알려줘요\n✓ 오늘의 하늘을 홈 화면에\n\nApp Store에서 ‘루미 날씨’ 검색\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6779552704?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiWeather&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiweather",
-     "link": "https://apps.apple.com/kr/app/id6779552704?pt=118326163&ct=social&mt=8"
-    }
-   },
-   {
-    "kind": "card",
-    "key": "carousel/maskmyfile-zh-Hant-pain-20261022",
-    "locale": "zh-Hant",
-    "app": "maskmyfile",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/maskmyfile-zh-Hant-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/maskmyfile-zh-Hant-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/maskmyfile-zh-Hant-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/maskmyfile-zh-Hant-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/maskmyfile-zh-Hant-pain-20261022/04.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/maskmyfile-zh-Hant-pain-20261022/05.jpg"
-    ],
-    "caption": "傳檔案之前 先遮個資\n\n漏掉的？手動框選\n✓ 另存新檔 原始檔不動\n✓ 全程在裝置上處理\n\nApp Store 搜尋「Mask My File」\n\n#MaskMyFile",
-    "title": "傳檔案之前 先遮個資",
-    "alt": "傳檔案之前 先遮個資 | 漏掉的？手動框選 | 另存新檔 原始檔不動 | 全程在裝置上處理 | Mask My File：分享前移除個資 / 分享前遮蔽個資與私密資訊 / App Store 搜尋「Mask My File」",
-    "name": "Mask My File：分享前移除個資",
-    "hook": "傳檔案之前 先遮個資",
-    "tags": [
-     "#MaskMyFile"
-    ],
-    "button": "在 App Store 下載",
-    "store": "https://apps.apple.com/tw/app/id6792850916?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MaskMyFile&referrer=utm_source%3Dsocial%26utm_campaign%3Dmaskmyfile",
-    "pinterest": {
-     "description": "傳檔案之前 先遮個資\n\n漏掉的？手動框選\n✓ 另存新檔 原始檔不動\n✓ 全程在裝置上處理\n\nApp Store 搜尋「Mask My File」\n\n#MaskMyFile\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6792850916?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MaskMyFile&referrer=utm_source%3Dsocial%26utm_campaign%3Dmaskmyfile",
-     "link": "https://apps.apple.com/tw/app/id6792850916?pt=118326163&ct=social&mt=8"
-    }
-   },
-   {
-    "kind": "card",
-    "key": "carousel/mochidonestamp-en-pain-20261022",
-    "locale": "en",
-    "app": "mochidonestamp",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/mochidonestamp-en-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/mochidonestamp-en-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/mochidonestamp-en-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/mochidonestamp-en-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/mochidonestamp-en-pain-20261022/04.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/mochidonestamp-en-pain-20261022/05.jpg"
-    ],
-    "caption": "When did you last change the sheets?\n\nDone? Tap once.\n✓ Know what's due next\n✓ Every time, remembered\n\nSearch “Mochi DoneStamp” on the App Store\n\n#LastTime #Done #Cleaning #Family #Plant",
-    "title": "When did you last change the sheets?",
-    "alt": "When did you last change the sheets? | Done? Tap once. | Know what's due next | Every time, remembered | Mochi DoneStamp: Last Time / When Did I Last? Home Upkeep / Search “Mochi DoneStamp” on the App Store",
-    "name": "Mochi DoneStamp: Last Time",
-    "hook": "When did you last change the sheets?",
-    "tags": [
-     "#LastTime",
-     "#Done",
-     "#Cleaning",
-     "#Family",
-     "#Plant"
-    ],
-    "button": "Get it on the App Store",
-    "store": "https://apps.apple.com/us/app/id6790800323?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiDoneStamp&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochidonestamp",
-    "pinterest": {
-     "description": "When did you last change the sheets?\n\nDone? Tap once.\n✓ Know what's due next\n✓ Every time, remembered\n\nSearch “Mochi DoneStamp” on the App Store\n\n#LastTime #Done #Cleaning #Family #Plant\n\nGet it on the App Store: https://apps.apple.com/us/app/id6790800323?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiDoneStamp&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochidonestamp",
-     "link": "https://apps.apple.com/us/app/id6790800323?pt=118326163&ct=social&mt=8"
-    }
-   },
-   {
-    "kind": "card",
-    "key": "carousel/maskmyfile-ja-pain-20261022",
-    "locale": "ja",
-    "app": "maskmyfile",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/maskmyfile-ja-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/maskmyfile-ja-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/maskmyfile-ja-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/maskmyfile-ja-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/maskmyfile-ja-pain-20261022/04.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/maskmyfile-ja-pain-20261022/05.jpg"
-    ],
-    "caption": "その書類、送る前に 黒塗りしよう\n\n見落としは 手動で追加\n✓ 新しいコピーを作成 オリジナルはそのまま\n✓ 端末内で完結\n\nApp Store で「Mask My File」を検索\n\n#MaskMyFile",
-    "title": "その書類、送る前に 黒塗りしよう",
-    "alt": "その書類、送る前に 黒塗りしよう | 見落としは 手動で追加 | 新しいコピーを作成 オリジナルはそのまま | 端末内で完結 | Mask My File：共有前に個人情報を削除 / PDF・画像・スクショを黒塗り / App Store で「Mask My File」を検索",
-    "name": "Mask My File：共有前に個人情報を削除",
-    "hook": "その書類、送る前に 黒塗りしよう",
-    "tags": [
-     "#MaskMyFile"
-    ],
-    "button": "App Storeで入手",
-    "store": "https://apps.apple.com/jp/app/id6792850916?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MaskMyFile&referrer=utm_source%3Dsocial%26utm_campaign%3Dmaskmyfile",
-    "pinterest": {
-     "description": "その書類、送る前に 黒塗りしよう\n\n見落としは 手動で追加\n✓ 新しいコピーを作成 オリジナルはそのまま\n✓ 端末内で完結\n\nApp Store で「Mask My File」を検索\n\n#MaskMyFile\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6792850916?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MaskMyFile&referrer=utm_source%3Dsocial%26utm_campaign%3Dmaskmyfile",
-     "link": "https://apps.apple.com/jp/app/id6792850916?pt=118326163&ct=social&mt=8"
-    }
-   },
-   {
-    "kind": "card",
-    "key": "carousel/maskmyfile-ko-pain-20261022",
-    "locale": "ko",
-    "app": "maskmyfile",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/maskmyfile-ko-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/maskmyfile-ko-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/maskmyfile-ko-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/maskmyfile-ko-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/maskmyfile-ko-pain-20261022/04.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/maskmyfile-ko-pain-20261022/05.jpg"
-    ],
-    "caption": "파일 보내기 전에 개인정보 가리기\n\n놓친 부분은 직접 선택\n✓ 새 사본으로 저장 원본은 그대로\n✓ 모두 기기 안에서 처리\n\nApp Store에서 ‘Mask My File’ 검색\n\n#MaskMyFile",
-    "title": "파일 보내기 전에 개인정보 가리기",
-    "alt": "파일 보내기 전에 개인정보 가리기 | 놓친 부분은 직접 선택 | 새 사본으로 저장 원본은 그대로 | 모두 기기 안에서 처리 | Mask My File：공유 전 개인정보 삭제 / 공유 전 개인정보 영구 가리기 / App Store에서 ‘Mask My File’ 검색",
-    "name": "Mask My File：공유 전 개인정보 삭제",
-    "hook": "파일 보내기 전에 개인정보 가리기",
-    "tags": [
-     "#MaskMyFile"
-    ],
-    "button": "App Store에서 받기",
-    "store": "https://apps.apple.com/kr/app/id6792850916?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MaskMyFile&referrer=utm_source%3Dsocial%26utm_campaign%3Dmaskmyfile",
-    "pinterest": {
-     "description": "파일 보내기 전에 개인정보 가리기\n\n놓친 부분은 직접 선택\n✓ 새 사본으로 저장 원본은 그대로\n✓ 모두 기기 안에서 처리\n\nApp Store에서 ‘Mask My File’ 검색\n\n#MaskMyFile\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6792850916?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MaskMyFile&referrer=utm_source%3Dsocial%26utm_campaign%3Dmaskmyfile",
-     "link": "https://apps.apple.com/kr/app/id6792850916?pt=118326163&ct=social&mt=8"
-    }
-   },
-   {
-    "kind": "card",
-    "key": "carousel/mochidonestamp-zh-Hant-pain-20261022",
-    "locale": "zh-Hant",
-    "app": "mochidonestamp",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/mochidonestamp-zh-Hant-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/mochidonestamp-zh-Hant-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/mochidonestamp-zh-Hant-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/mochidonestamp-zh-Hant-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/mochidonestamp-zh-Hant-pain-20261022/04.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/mochidonestamp-zh-Hant-pain-20261022/05.jpg"
-    ],
-    "caption": "上次換床單 是什麼時候？\n\n做完，點一下\n✓ 下次該做了沒 一眼就知道\n✓ 每一次 都幫你記得\n\nApp Store 搜尋「Mochi DoneStamp」",
-    "title": "上次換床單 是什麼時候？",
-    "alt": "上次換床單 是什麼時候？ | 做完，點一下 | 下次該做了沒 一眼就知道 | 每一次 都幫你記得 | Mochi DoneStamp：上次何時 / 家事保養紀錄・到期循環提醒 / App Store 搜尋「Mochi DoneStamp」",
-    "name": "Mochi DoneStamp：上次何時",
-    "hook": "上次換床單 是什麼時候？",
-    "tags": [],
-    "button": "在 App Store 下載",
-    "store": "https://apps.apple.com/tw/app/id6790800323?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiDoneStamp&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochidonestamp",
-    "pinterest": {
-     "description": "上次換床單 是什麼時候？\n\n做完，點一下\n✓ 下次該做了沒 一眼就知道\n✓ 每一次 都幫你記得\n\nApp Store 搜尋「Mochi DoneStamp」\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6790800323?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiDoneStamp&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochidonestamp",
-     "link": "https://apps.apple.com/tw/app/id6790800323?pt=118326163&ct=social&mt=8"
-    }
-   },
-   {
-    "kind": "card",
-    "key": "carousel/moneytag-en-pain-20261022",
-    "locale": "en",
-    "app": "moneytag",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/moneytag-en-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/moneytag-en-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/moneytag-en-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/moneytag-en-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/moneytag-en-pain-20261022/04.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/moneytag-en-pain-20261022/05.jpg"
-    ],
-    "caption": "Which side gig actually pays?\n\nOne tag adds up across projects\n✓ Net result, month by month\n✓ Export PDF or CSV\n\nSearch “MoneyTag” on the App Store\n\n#IncomeExpense #Profit #Loss #SideHustle #Freelance",
-    "title": "Which side gig actually pays?",
-    "alt": "Which side gig actually pays? | One tag adds up across projects | Net result, month by month | Export PDF or CSV | MoneyTag: Income & Expense / Projects · Tags · Report / Search “MoneyTag” on the App Store",
-    "name": "MoneyTag: Income & Expense",
-    "hook": "Which side gig actually pays?",
-    "tags": [
-     "#IncomeExpense",
-     "#Profit",
-     "#Loss",
-     "#SideHustle",
-     "#Freelance"
-    ],
-    "button": "Get it on the App Store",
-    "store": "https://apps.apple.com/us/app/id6801956402?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MoneyTag&referrer=utm_source%3Dsocial%26utm_campaign%3Dmoneytag",
-    "pinterest": {
-     "description": "Which side gig actually pays?\n\nOne tag adds up across projects\n✓ Net result, month by month\n✓ Export PDF or CSV\n\nSearch “MoneyTag” on the App Store\n\n#IncomeExpense #Profit #Loss #SideHustle #Freelance\n\nGet it on the App Store: https://apps.apple.com/us/app/id6801956402?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MoneyTag&referrer=utm_source%3Dsocial%26utm_campaign%3Dmoneytag",
-     "link": "https://apps.apple.com/us/app/id6801956402?pt=118326163&ct=social&mt=8"
-    }
-   },
-   {
-    "kind": "card",
-    "key": "carousel/mochidonestamp-ja-pain-20261022",
-    "locale": "ja",
-    "app": "mochidonestamp",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/mochidonestamp-ja-pain-20261022/01.jpg",
-    "images": [
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/mochidonestamp-ja-pain-20261022/01.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/mochidonestamp-ja-pain-20261022/02.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/mochidonestamp-ja-pain-20261022/03.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/mochidonestamp-ja-pain-20261022/04.jpg",
-     "https://raw.githubusercontent.com/alice51849/ios-app-guide/carousel-cards/mochidonestamp-ja-pain-20261022/05.jpg"
-    ],
-    "caption": "シーツ替えたの いつだっけ？\n\n済んだら ワンタップ\n✓ 次はいつか ひと目で\n✓ 毎回の記録が ちゃんと残る\n\nApp Store で「Mochi DoneStamp」を検索",
-    "title": "シーツ替えたの いつだっけ？",
-    "alt": "シーツ替えたの いつだっけ？ | 済んだら ワンタップ | 次はいつか ひと目で | 毎回の記録が ちゃんと残る | Mochi DoneStamp：いつやった？ / 前回の日付を記録・家事の周期リマインダー / App Store で「Mochi DoneStamp」を検索",
-    "name": "Mochi DoneStamp：いつやった？",
-    "hook": "シーツ替えたの いつだっけ？",
-    "tags": [],
-    "button": "App Storeで入手",
-    "store": "https://apps.apple.com/jp/app/id6790800323?pt=118326163&ct=social&mt=8",
-    "format": "pain",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiDoneStamp&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochidonestamp",
-    "pinterest": {
-     "description": "シーツ替えたの いつだっけ？\n\n済んだら ワンタップ\n✓ 次はいつか ひと目で\n✓ 毎回の記録が ちゃんと残る\n\nApp Store で「Mochi DoneStamp」を検索\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6790800323?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiDoneStamp&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochidonestamp",
-     "link": "https://apps.apple.com/jp/app/id6790800323?pt=118326163&ct=social&mt=8"
     }
    },
    {
@@ -5354,48 +5027,48 @@
   "tiktok": [
    {
     "kind": "clip",
-    "key": "tripplanet/ko",
-    "locale": "ko",
-    "app": "tripplanet",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/x2czqp.mp4",
-    "hook": "비행기 타는 날 미션 원탭으로 추가",
-    "name": "Trip Planet 아이 여행 게임",
-    "title": "비행기 타는 날 미션 원탭으로 추가 | 비행기·나들이 미션 도장 모으기 | Trip Planet 아이 여행 게임",
+    "key": "picclear/zh-Hant",
+    "locale": "zh-Hant",
+    "app": "picclear",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/f304cc.mp4",
+    "hook": "重複照片，幫你分好組",
+    "name": "PicClear Pro：照片清理·釋放空間",
+    "title": "重複照片，幫你分好組 | 截圖清理・手機空間不足 | PicClear 照片清理",
     "tags": [
-     "#아이랑",
-     "#해외",
-     "#가족",
-     "#유아",
-     "#TripPlanet아이여행게임"
+     "#照片清理釋放空間",
+     "#重複照片",
+     "#相似照片",
+     "#相片清理",
+     "#PicClear照片清理"
     ],
-    "caption": "비행기 타는 날 미션 원탭으로 추가\n엄마 아빠 함께 계획해요\n비행기·나들이 미션 도장 모으기\nApp Store에서 'Trip Planet 아이 여행 게임' 검색\nAndroid는 Google Play에서\n\n#아이랑 #해외 #가족 #유아 #TripPlanet아이여행게임",
-    "button": "App Store에서 받기",
+    "caption": "重複照片，幫你分好組\n舊截圖，一次找出來\n截圖清理・手機空間不足\nPicClear Pro：照片清理·釋放空間\n在 App Store 搜尋「PicClear 照片清理」\nAndroid 版在 Google Play\n\n#照片清理釋放空間 #重複照片 #相似照片 #相片清理 #PicClear照片清理",
+    "button": "在 App Store 下載",
     "variant": "b",
-    "alt": "Trip Planet 아이 여행 게임 — 비행기 타는 날 미션 원탭으로 추가 — 엄마 아빠 함께 계획해요 — 비행기·나들이 미션 도장 모으기",
-    "store": "https://apps.apple.com/kr/app/id6787193643?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.TripPlanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripplanet",
+    "alt": "PicClear Pro：照片清理·釋放空間 — 重複照片，幫你分好組 — 舊截圖，一次找出來 — 截圖清理・手機空間不足",
+    "store": "https://apps.apple.com/tw/app/id6780223070?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.picclear.app&referrer=utm_source%3Dsocial%26utm_campaign%3Dpicclear",
     "review": {
-     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
-     "url": "https://apps.apple.com/app/id6787193643?action=write-review"
+     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
+     "url": "https://apps.apple.com/app/id6780223070?action=write-review"
     },
     "keywords": [
-     "아이랑",
-     "해외",
-     "가족",
-     "유아",
-     "기내",
-     "장거리"
+     "重複照片",
+     "相似照片",
+     "相片清理",
+     "刪除照片",
+     "相簿整理",
+     "圖庫清理"
     ],
-    "keyline": "비행기·나들이 미션 도장 모으기",
+    "keyline": "截圖清理・手機空間不足",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "df81f6a6b37515a4",
+     "board": "562edfd587f5f970",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "비행기 타는 날 미션 원탭으로 추가\n엄마 아빠 함께 계획해요\n비행기·나들이 미션 도장 모으기\nApp Store에서 'Trip Planet 아이 여행 게임' 검색\nAndroid는 Google Play에서\n\n#아이랑 #해외 #가족 #유아 #TripPlanet아이여행게임\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6787193643?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.TripPlanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dtripplanet"
+     "caption": "重複照片，幫你分好組\n舊截圖，一次找出來\n截圖清理・手機空間不足\nPicClear Pro：照片清理·釋放空間\n在 App Store 搜尋「PicClear 照片清理」\nAndroid 版在 Google Play\n\n#照片清理釋放空間 #重複照片 #相似照片 #相片清理 #PicClear照片清理\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6780223070?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.picclear.app&referrer=utm_source%3Dsocial%26utm_campaign%3Dpicclear"
     },
     "slot": 1
    },
@@ -5448,142 +5121,185 @@
    },
    {
     "kind": "clip",
-    "key": "mochidonestamp/ja",
+    "key": "lumimathpro/ja",
     "locale": "ja",
-    "app": "mochidonestamp",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/qsw854.mp4",
-    "hook": "済んだら、ワンタップ",
-    "name": "Mochi DoneStamp：いつやった？",
-    "title": "済んだら、ワンタップ | 前回いつ？家事と交換時期の記録 | Mochi DoneStamp いつやった",
+    "app": "lumimathpro",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/a3fdk9.mp4",
+    "hook": "レベルに合わせた20問、解答つき",
+    "name": "Lumi さんすうプラネット：子供の算数",
+    "title": "レベルに合わせた20問、解答つき | 子供の算数 | Lumi さんすうプラネット",
     "tags": [
-     "#いつやった",
-     "#最後にやった日",
-     "#経過日数",
-     "#家電",
-     "#MochiDoneStampいつやった"
+     "#子供の算数",
+     "#論理",
+     "#推理",
+     "#規則性",
+     "#Lumiさんすうプラネット"
     ],
-    "caption": "済んだら、ワンタップ\n次はいつか、ひと目で\n前回いつ？家事と交換時期の記録\nMochi DoneStamp：いつやった？\nApp Storeで「Mochi DoneStamp いつやった」を検索\nAndroidはGoogle Playで\n\n#いつやった #最後にやった日 #経過日数 #家電 #MochiDoneStampいつやった",
+    "caption": "レベルに合わせた20問、解答つき\n学習レポートで、にがてもひと目で\nLumi さんすうプラネット：子供の算数\nApp Storeで「Lumi さんすうプラネット」を検索\nAndroidはGoogle Playで\n\n#子供の算数 #論理 #推理 #規則性 #Lumiさんすうプラネット",
     "button": "App Storeで入手",
     "variant": "b",
-    "alt": "Mochi DoneStamp：いつやった？ — 済んだら、ワンタップ — 次はいつか、ひと目で — 前回いつ？家事と交換時期の記録",
-    "store": "https://apps.apple.com/jp/app/id6790800323?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiDoneStamp&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochidonestamp",
+    "alt": "Lumi さんすうプラネット：子供の算数 — レベルに合わせた20問、解答つき — 学習レポートで、にがてもひと目で",
+    "store": "https://apps.apple.com/jp/app/id6776958488?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiMathPlanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumimathpro",
     "review": {
      "label": "このアプリをお使いですか？App Store で評価・レビューできます",
-     "url": "https://apps.apple.com/app/id6790800323?action=write-review"
+     "url": "https://apps.apple.com/app/id6776958488?action=write-review"
     },
     "keywords": [
-     "最後にやった日",
-     "経過日数",
-     "家電",
-     "掃除",
-     "メンテナンス",
-     "水やり"
+     "論理",
+     "推理",
+     "規則性",
+     "なぞなぞ",
+     "頭の体操",
+     "暗算"
     ],
-    "keyline": "前回いつ？家事と交換時期の記録",
+    "keyline": "子供の算数",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "0ba5cdec3a24a67c",
+     "board": "e1637282f6e3cfc4",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "済んだら、ワンタップ\n次はいつか、ひと目で\n前回いつ？家事と交換時期の記録\nMochi DoneStamp：いつやった？\nApp Storeで「Mochi DoneStamp いつやった」を検索\nAndroidはGoogle Playで\n\n#いつやった #最後にやった日 #経過日数 #家電 #MochiDoneStampいつやった\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6790800323?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiDoneStamp&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochidonestamp"
+     "caption": "レベルに合わせた20問、解答つき\n学習レポートで、にがてもひと目で\nLumi さんすうプラネット：子供の算数\nApp Storeで「Lumi さんすうプラネット」を検索\nAndroidはGoogle Playで\n\n#子供の算数 #論理 #推理 #規則性 #Lumiさんすうプラネット\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6776958488?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiMathPlanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumimathpro"
     },
     "slot": 1
    },
    {
     "kind": "clip",
-    "key": "easyam/en",
+    "key": "kumo/en",
     "locale": "en",
-    "app": "easyam",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/8n1x9x.mp4",
-    "hook": "Holidays skipped automatically",
-    "name": "EasyAM: Holiday Alarm Clock",
-    "title": "Holidays skipped automatically | Rings for work, skips days off | EasyAM holiday alarm",
+    "app": "kumo",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/2764775737.mp4",
+    "hook": "Log your weight in about 10 seconds",
+    "name": "Kumo: Weight & GLP-1 Tracker",
+    "title": "Log your weight in about 10 seconds | Fasting & Cute Cloud | Kumo weight tracker",
     "tags": [
-     "#HolidayAlarmClock",
-     "#RingsForWork",
-     "#SkipsDaysOff",
-     "#SmartSchedule",
-     "#EasyAMHolidayAlarm"
+     "#CuteCloud",
+     "#IntermittentFasting",
+     "#KumoWeightTracker"
     ],
-    "caption": "Holidays skipped automatically\nAdd time off, vacations stay quiet\nRings for work, skips days off\nEasyAM: Holiday Alarm Clock\nSearch “holiday alarm clock” on the App Store\nAlso on Google Play\n\n#HolidayAlarmClock #RingsForWork #SkipsDaysOff #SmartSchedule #EasyAMHolidayAlarm",
+    "caption": "Log your weight in about 10 seconds\nSee the trend with a 7-day average\nFasting & Cute Cloud\nKumo: Weight & GLP-1 Tracker\nSearch “Kumo weight tracker” on the App Store\nAlso on Google Play\n\n#CuteCloud #IntermittentFasting #KumoWeightTracker",
     "button": "Get it on the App Store",
     "variant": "b",
-    "alt": "EasyAM: Holiday Alarm Clock — Holidays skipped automatically — Add time off, vacations stay quiet — Rings for work, skips days off",
-    "store": "https://apps.apple.com/us/app/id6821790092?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam",
+    "alt": "Kumo: Weight & GLP-1 Tracker — Log your weight in about 10 seconds — See the trend with a 7-day average — Fasting & Cute Cloud",
+    "store": "https://apps.apple.com/us/app/id6830824515?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Kumo&referrer=utm_source%3Dsocial%26utm_campaign%3Dkumo",
     "review": {
      "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6821790092?action=write-review"
+     "url": "https://apps.apple.com/app/id6830824515?action=write-review"
     },
     "keywords": [
-     "workday",
-     "shift",
-     "public",
-     "calendar",
-     "weekday",
-     "vacation"
+     "daily",
+     "diary",
+     "body",
+     "measurement",
+     "intermittent",
+     "timer"
     ],
-    "keyline": "Rings for work, skips days off",
+    "keyline": "Fasting & Cute Cloud",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "f45a7a4e972af86c",
+     "board": "0e325c1c1882013a",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "Holidays skipped automatically\nAdd time off, vacations stay quiet\nRings for work, skips days off\nEasyAM: Holiday Alarm Clock\nSearch “holiday alarm clock” on the App Store\nAlso on Google Play\n\n#HolidayAlarmClock #RingsForWork #SkipsDaysOff #SmartSchedule #EasyAMHolidayAlarm\n\nGet it on the App Store: https://apps.apple.com/us/app/id6821790092?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam"
+     "caption": "Log your weight in about 10 seconds\nSee the trend with a 7-day average\nFasting & Cute Cloud\nKumo: Weight & GLP-1 Tracker\nSearch “Kumo weight tracker” on the App Store\nAlso on Google Play\n\n#CuteCloud #IntermittentFasting #KumoWeightTracker\n\nGet it on the App Store: https://apps.apple.com/us/app/id6830824515?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Kumo&referrer=utm_source%3Dsocial%26utm_campaign%3Dkumo"
     },
     "slot": 15
    },
    {
     "kind": "clip",
-    "key": "wifiaid/ja",
-    "locale": "ja",
-    "app": "wifiaid",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/s367cp.mp4",
-    "hook": "ワンタップで診断",
-    "name": "WiFi Aid：ネット不調の原因を特定",
-    "title": "ワンタップで診断 | ルーター・メッシュ・DNS診断 | WiFi Aid ネット不調",
+    "key": "shotinbox/en",
+    "locale": "en",
+    "app": "shotinbox",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/8wjz03.mp4",
+    "hook": "Search the text inside them",
+    "name": "ShotInbox AI: Sort Screenshots",
+    "title": "Search the text inside them | OCR Search & Photo Cleaner | ShotInbox",
     "tags": [
-     "#ネット不調の原因を特定",
-     "#アクセスポイント",
-     "#遅延",
-     "#ジッター",
-     "#WiFiAidネット不調"
+     "#SortScreenshots",
+     "#OCRSearch",
+     "#PhotoCleaner",
+     "#ShotInbox"
     ],
-    "caption": "ワンタップで診断\n遅延も安定性も\nルーター・メッシュ・DNS診断\nWiFi Aid：ネット不調の原因を特定\nApp Storeで「WiFi Aid ネット不調」を検索\nAndroidはGoogle Playで\n\n#ネット不調の原因を特定 #アクセスポイント #遅延 #ジッター #WiFiAidネット不調",
-    "button": "App Storeで入手",
+    "caption": "Search the text inside them\nReceipts, tickets…all sorted\nOCR Search & Photo Cleaner\nShotInbox AI: Sort Screenshots\nSearch “Sort Screenshots” on the App Store\nAlso on Google Play\n\n#SortScreenshots #OCRSearch #PhotoCleaner #ShotInbox",
+    "button": "Get it on the App Store",
     "variant": "b",
-    "alt": "WiFi Aid：ネット不調の原因を特定 — ワンタップで診断 — 遅延も安定性も — ルーター・メッシュ・DNS診断",
-    "store": "https://apps.apple.com/jp/app/id6790467886?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.WiFiAid&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaid",
+    "alt": "ShotInbox AI: Sort Screenshots — Search the text inside them — Receipts, tickets…all sorted — OCR Search & Photo Cleaner",
+    "store": "https://apps.apple.com/us/app/id6802166527?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.ShotInbox&referrer=utm_source%3Dsocial%26utm_campaign%3Dshotinbox",
     "review": {
-     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
-     "url": "https://apps.apple.com/app/id6790467886?action=write-review"
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6802166527?action=write-review"
     },
     "keywords": [
-     "アクセスポイント",
-     "遅延",
-     "ジッター",
-     "安定性",
-     "応答時間",
-     "IPv6"
+     "organizer",
+     "manager",
+     "duplicate",
+     "similar",
+     "text",
+     "receipts"
     ],
-    "keyline": "ルーター・メッシュ・DNS診断",
+    "keyline": "OCR Search & Photo Cleaner",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "d8bf12cb51e50aa0",
+     "board": "f6c970e3cb08d22c",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "ワンタップで診断\n遅延も安定性も\nルーター・メッシュ・DNS診断\nWiFi Aid：ネット不調の原因を特定\nApp Storeで「WiFi Aid ネット不調」を検索\nAndroidはGoogle Playで\n\n#ネット不調の原因を特定 #アクセスポイント #遅延 #ジッター #WiFiAidネット不調\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6790467886?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.WiFiAid&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaid"
+     "caption": "Search the text inside them\nReceipts, tickets…all sorted\nOCR Search & Photo Cleaner\nShotInbox AI: Sort Screenshots\nSearch “Sort Screenshots” on the App Store\nAlso on Google Play\n\n#SortScreenshots #OCRSearch #PhotoCleaner #ShotInbox\n\nGet it on the App Store: https://apps.apple.com/us/app/id6802166527?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.ShotInbox&referrer=utm_source%3Dsocial%26utm_campaign%3Dshotinbox"
+    },
+    "slot": 15
+   },
+   {
+    "kind": "clip",
+    "key": "kumo/es",
+    "locale": "es",
+    "app": "kumo",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/fc9bcfca38.mp4",
+    "hook": "Anota tu peso en 10 segundos",
+    "name": "Kumo: Control de peso y GLP-1",
+    "title": "Anota tu peso en 10 segundos | Ayuno intermitente | Kumo control de peso",
+    "tags": [
+     "#ControlDePeso",
+     "#AyunoIntermitente",
+     "#Registro",
+     "#KumoControlDePeso"
+    ],
+    "caption": "Anota tu peso en 10 segundos\nLa tendencia real: media de 7 días\nAyuno intermitente\nKumo: Control de peso y GLP-1\nBusca «Kumo control de peso» en el App Store\nTambién en Google Play\n\n#ControlDePeso #AyunoIntermitente #Registro #KumoControlDePeso",
+    "button": "Descargar en el App Store",
+    "variant": "b",
+    "alt": "Kumo: Control de peso y GLP-1 — Anota tu peso en 10 segundos — La tendencia real: media de 7 días — Ayuno intermitente",
+    "store": "https://apps.apple.com/es/app/id6830824515?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Kumo&referrer=utm_source%3Dsocial%26utm_campaign%3Dkumo",
+    "review": {
+     "label": "¿Ya usas esta app? Valórala o escribe una reseña en el App Store",
+     "url": "https://apps.apple.com/app/id6830824515?action=write-review"
+    },
+    "keywords": [
+     "registro",
+     "diario",
+     "medidas",
+     "agua",
+     "proteínas",
+     "seguimiento"
+    ],
+    "keyline": "Ayuno intermitente",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "0e325c1c1882013a",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "Anota tu peso en 10 segundos\nLa tendencia real: media de 7 días\nAyuno intermitente\nKumo: Control de peso y GLP-1\nBusca «Kumo control de peso» en el App Store\nTambién en Google Play\n\n#ControlDePeso #AyunoIntermitente #Registro #KumoControlDePeso\n\nDescargar en el App Store: https://apps.apple.com/es/app/id6830824515?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Kumo&referrer=utm_source%3Dsocial%26utm_campaign%3Dkumo"
     },
     "slot": 15
    }
@@ -5611,8 +5327,8 @@
     "button": "App Store에서 받기",
     "variant": "b",
     "alt": "Mochi: 귀여운 할 일 목록 & 체크리스트 — 수능 공부 계획표 앱｜귀여운 투두리스트 — 수험표, 신분증, 도시락…톡 누르면 체크 — 귀여운 투두리스트 & 체크리스트",
-    "store": "https://apps.apple.com/kr/app/id6785004775?pt=118326163&ct=ln_mochi_exam_kr_bs_1119&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dln_mochi_exam_kr_bs_1119%26utm_campaign%3Dmochi",
+    "store": "https://apps.apple.com/kr/app/id6785004775?pt=118326163&ct=ln_mochi_host_kr_bs_1120&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dln_mochi_host_kr_bs_1120%26utm_campaign%3Dmochi",
     "review": {
      "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
      "url": "https://apps.apple.com/app/id6785004775?action=write-review"
@@ -20786,8 +20502,8 @@
     "button": "App Store에서 받기",
     "variant": "b",
     "alt": "Mochi: 귀여운 할 일 목록 & 체크리스트 — 수능 공부 계획표 앱｜귀여운 투두리스트 — 수험표, 신분증, 도시락…톡 누르면 체크 — 귀여운 투두리스트 & 체크리스트",
-    "store": "https://apps.apple.com/kr/app/id6785004775?pt=118326163&ct=ln_mochi_exam_kr_yt_1119&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dln_mochi_exam_kr_yt_1119%26utm_campaign%3Dmochi",
+    "store": "https://apps.apple.com/kr/app/id6785004775?pt=118326163&ct=ln_mochi_host_kr_yt_1120&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dln_mochi_host_kr_yt_1120%26utm_campaign%3Dmochi",
     "review": {
      "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
      "url": "https://apps.apple.com/app/id6785004775?action=write-review"
@@ -20810,7 +20526,7 @@
     },
     "youtube": {
      "title": "수능 공부 계획표 앱｜귀여운 투두리스트 | Mochi 귀여운 할 일 #Shorts",
-     "description": "수능 공부 계획표 앱｜귀여운 투두리스트\n수험표, 신분증, 도시락…톡 누르면 체크\n귀여운 투두리스트 & 체크리스트\n\nMochi: 귀여운 할 일 목록 & 체크리스트\nApp Store: https://apps.apple.com/kr/app/id6785004775?pt=118326163&ct=ln_mochi_exam_kr_yt_1119&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dln_mochi_exam_kr_yt_1119%26utm_campaign%3Dmochi\n이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다\nhttps://apps.apple.com/app/id6785004775?action=write-review\n\n할일 · 할일목록 · 할일관리 · 투두 · 알림 · 메모\n\n#Shorts #투두 #Mochi귀여운할일",
+     "description": "수능 공부 계획표 앱｜귀여운 투두리스트\n수험표, 신분증, 도시락…톡 누르면 체크\n귀여운 투두리스트 & 체크리스트\n\nMochi: 귀여운 할 일 목록 & 체크리스트\nApp Store: https://apps.apple.com/kr/app/id6785004775?pt=118326163&ct=ln_mochi_host_kr_yt_1120&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dln_mochi_host_kr_yt_1120%26utm_campaign%3Dmochi\n이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다\nhttps://apps.apple.com/app/id6785004775?action=write-review\n\n할일 · 할일목록 · 할일관리 · 투두 · 알림 · 메모\n\n#Shorts #투두 #Mochi귀여운할일",
      "tags": [
       "할일",
       "할일목록",

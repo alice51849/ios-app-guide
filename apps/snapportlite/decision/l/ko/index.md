@@ -2,7 +2,7 @@
 title: "Snapport Lite：증명사진 사이즈 — 반명함·이력서용 크기 맞춤 | iOS App"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapportlite/decision/l/ko/index.html"
-modified: "2026-11-19"
+modified: "2026-11-20"
 app_store_id: "6792856304"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

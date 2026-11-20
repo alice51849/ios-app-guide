@@ -2,7 +2,7 @@
 title: "Zipbox 解压缩：RAR ZIP 7z — 密码保护压缩包・打开RAR文件 | iOS App"
 lang: "zh-Hans"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/zipbox/decision/l/zh-Hans/index.html"
-modified: "2026-11-19"
+modified: "2026-11-20"
 app_store_id: "6806776579"
 verified_live: true
 purchase_model: "paid_upfront"

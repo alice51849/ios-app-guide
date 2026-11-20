@@ -13,7 +13,7 @@
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
     "dateModified": "2026-11-20",
-    "contentDigest": "ee58fa7eba6dec1ef9bc8ae96f08ce70431d28ec11c5d221c96c497597bf1c68",
+    "contentDigest": "7b758af1fc80e5fb68f57f088f7d74fd4f7b6dcb0a280192234fa18725f70355",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
     "recordCount": 60
@@ -304,10 +304,11 @@
         "schedule",
         "wake",
         "skip",
-        "roster"
+        "roster",
+        "alarm skip holidays"
       ],
       "language": "en-US",
-      "date_modified": "2026-11-20T05:45:52Z"
+      "date_modified": "2026-11-20T14:41:02Z"
     },
     {
       "id": "https://apps.apple.com/app/id6824946559",
@@ -330,10 +331,11 @@
         "amoled",
         "aesthetic",
         "phone",
-        "backdrop"
+        "backdrop",
+        "foldable wallpaper"
       ],
       "language": "en-US",
-      "date_modified": "2026-11-20T05:45:52Z"
+      "date_modified": "2026-11-20T14:41:02Z"
     },
     {
       "id": "https://apps.apple.com/app/id6755782939",
@@ -569,10 +571,12 @@
         "homeschool",
         "quiz",
         "first",
-        "grade"
+        "grade",
+        "zhuyin",
+        "bopomofo"
       ],
       "language": "en-US",
-      "date_modified": "2026-11-20T05:45:52Z"
+      "date_modified": "2026-11-20T14:41:02Z"
     },
     {
       "id": "https://apps.apple.com/app/id6778748533",
@@ -832,10 +836,13 @@
         "notes",
         "watch",
         "goals",
-        "kawaii"
+        "kawaii",
+        "aesthetic to do list",
+        "checklist",
+        "to do list"
       ],
       "language": "en-US",
-      "date_modified": "2026-11-20T05:45:52Z"
+      "date_modified": "2026-11-20T14:41:02Z"
     },
     {
       "id": "https://apps.apple.com/app/id6790800323",
@@ -908,10 +915,11 @@
         "pdf",
         "notes",
         "pptx",
-        "csv"
+        "csv",
+        "one page summary"
       ],
       "language": "en-US",
-      "date_modified": "2026-11-20T05:45:52Z"
+      "date_modified": "2026-11-20T14:41:02Z"
     },
     {
       "id": "https://apps.apple.com/app/id6781808054",
@@ -1224,10 +1232,11 @@
         "museum",
         "airport",
         "family",
-        "quest"
+        "quest",
+        "kids travel games"
       ],
       "language": "en-US",
-      "date_modified": "2026-11-20T05:45:52Z"
+      "date_modified": "2026-11-20T14:41:02Z"
     },
     {
       "id": "https://apps.apple.com/app/id6826987407",
@@ -1342,10 +1351,13 @@
         "requests",
         "widget",
         "remaining",
-        "llm"
+        "llm",
+        "claude usage limit",
+        "codex usage limit",
+        "ai usage tracker"
       ],
       "language": "en-US",
-      "date_modified": "2026-11-20T05:45:52Z"
+      "date_modified": "2026-11-20T14:41:02Z"
     },
     {
       "id": "https://apps.apple.com/app/id6790467886",

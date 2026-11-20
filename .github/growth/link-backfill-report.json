@@ -1,11 +1,11 @@
 {
- "generated": "2026-11-20T02:25:08Z",
+ "generated": "2026-11-20T11:49:04Z",
  "mode": "apply",
  "counts": {
   "ok_reply": 79,
-  "ok_backfilled_earlier": 109,
+  "ok_backfilled_earlier": 111,
   "unknown_app": 47,
-  "ok_store_only": 622,
+  "ok_store_only": 620,
   "backfilled": 2,
   "ok_bio_link": 68,
   "ok_caption": 4,
@@ -1927,16 +1927,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DcthA1ClMQR",
    "date": "2026-08-31",
    "app": "unblurry",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "Unblurry Pro: Unblur & HD Unblur photos in HD Fix blurry, shaky photos in seconds. Sharpen, enhance, upscale to HD and restore old shots rig",
    "why": "url+brand",
    "ios_id": "6782275018",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "18132880048848120",
-   "at": "2026-11-20T02:22:34Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",
@@ -2710,16 +2705,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DcthGbpgB2J",
    "date": "2026-08-31",
    "app": "wifiaid",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "WiFi Aid: Find WiFi Problems Network Diagnosis & Evidence Find the most likely connection problem with independent path, DNS, TCP, TLS, timi",
    "why": "url+brand",
    "ios_id": "6790467886",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "18129888967846506",
-   "at": "2026-11-20T02:22:34Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",
@@ -4313,11 +4303,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/Dctg5sQgjIp",
    "date": "2026-08-31",
    "app": "tripplanet",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "Lumi Trip Planet: World Travel Family travel adventure Turn 'are we there yet?' into fun. Offline travel missions, packing help and rewards ",
    "why": "url+brand",
    "ios_id": "6787193643",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "17990543813880824",
+   "at": "2026-11-20T11:46:30Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -4647,11 +4642,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctgzsUDqeH",
    "date": "2026-08-31",
    "app": "tripbeelite",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "TripBee Lite: Travel Plan One Trip, Sorted Beautifully Keep your next getaway sorted without juggling old plans. TripBee Lite is a calm, pol",
    "why": "url+brand",
    "ios_id": "6791299610",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "18360540796173830",
+   "at": "2026-11-20T11:46:30Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",

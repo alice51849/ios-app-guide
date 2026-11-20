@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-11-19",
-  "content_digest": "1879416ba8e23730f92f0448aa7d94284111a248662bedc060147ade6d510cb9",
+  "date_modified": "2026-11-20",
+  "content_digest": "ee58fa7eba6dec1ef9bc8ae96f08ce70431d28ec11c5d221c96c497597bf1c68",
   "locale": "en-GB",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -365,8 +365,7 @@
         "replies",
         "dialogue",
         "audio",
-        "levels",
-        "everyday phrases"
+        "levels"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -496,8 +495,7 @@
         "digital",
         "wake",
         "up",
-        "cute",
-        "alarm skip holidays"
+        "cute"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -541,8 +539,7 @@
         "amoled",
         "aesthetic",
         "phone",
-        "backdrop",
-        "foldable wallpaper"
+        "backdrop"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -922,9 +919,7 @@
         "preschool",
         "writing",
         "stroke",
-        "order",
-        "learn zhuyin",
-        "zhuyin"
+        "order"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -964,9 +959,7 @@
         "printable",
         "pronunciation",
         "reception",
-        "quiz",
-        "zhuyin",
-        "bopomofo"
+        "quiz"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1552,8 +1545,7 @@
         "page",
         "pager",
         "pdf",
-        "notes",
-        "one page summary"
+        "notes"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2105,8 +2097,7 @@
         "memories",
         "museum",
         "airport",
-        "abroad",
-        "kids travel games"
+        "abroad"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2270,8 +2261,7 @@
         "motion blur",
         "denoise",
         "low light",
-        "4x",
-        "unblur photo"
+        "4x"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2313,10 +2303,7 @@
         "remaining",
         "requests",
         "meter",
-        "cli",
-        "ai usage tracker",
-        "claude usage limit",
-        "copilot usage"
+        "cli"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

@@ -3,8 +3,8 @@
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "ja",
   "dateModified": "2026-11-20",
-  "content_digest": "f68d686f9f924ad587e920c05725fc67954daf90eaf59708bd66d234ac15001b",
-  "generation_digest": "a920a9b455c996f0a7527ffa56cdaafde6e2632e7654cd2b2dc7db79bc72e874",
+  "content_digest": "3b891028b47507cae2ed0b73a7ed3c98cd8f356b6f1776f4714c6c775a85efee",
+  "generation_digest": "1c5c56eae196ab434182590ef93411397869ffab991b6c0251be89299c77e6d0",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -2639,7 +2639,8 @@
         "プライベート／端末内",
         "ウィジェット",
         "Apple Watch",
-        "App Store · 無料"
+        "App Store · 無料",
+        "★ 5.0/5 · 1"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ja/stayclock.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/stayclock/decision/l/ja/index.html",
@@ -2652,7 +2653,9 @@
       "storefront_facts": {
         "price": "0",
         "currency": "JPY",
-        "formatted_price": "無料"
+        "formatted_price": "無料",
+        "rating_value": 5.0,
+        "rating_count": 1
       },
       "guide_cta_label": "完全ガイドを読む",
       "publisher_disclosure": "これは、掲載するすべてのアプリの開発元である Lumi Studio が公開する一次資料です。",

@@ -23,6 +23,7 @@ Stay Clockは、iPhoneやiPadを部屋の隅からでも読める常時点灯の
 - ウィジェット
 - Apple Watch
 - App Store · 無料
+- ★ 5.0/5 · 1
 
 [App Store で Stay Clock:パタパタ卓上時計 を入手](https://apps.apple.com/jp/app/id6814035888?pt=118326163&ct=geo_pick&mt=8)
 

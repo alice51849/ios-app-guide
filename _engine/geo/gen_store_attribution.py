@@ -220,8 +220,16 @@ WEB_HOOK_CAMPAIGNS = {
 # page (reports/outreach_scale/methods_2026-11-18.md item 5), one campaign for
 # every link on every locale so the downloads reach Apple's reporting floor.
 WEB_GALLERY_CAMPAIGNS = {"os_wpgallery_web": "6824946559"}
+# 路線 98 日本「かわいい」系列頁 ja/series/kawaii.html（小組 C，2026-11-20；審核員兩層審＝系列頁降量附帶）：
+# 一款一碼，只留在該款連結上，量系列頁帶到各款的點擊。
+SERIES_PAGE_CAMPAIGNS = {
+    "iag_kawaii_ja_mochi": "6785004775",
+    "iag_kawaii_ja_mochidonestamp": "6790800323",
+    "iag_kawaii_ja_tripbeecute": "6826987407",
+    "iag_kawaii_ja_foldparty": "6829184924",
+}
 APP_BOUND_CAMPAIGNS = {"duo_img": "6824946559", **WEB_TOOL_PILOT_CAMPAIGNS, **WEB_HOOK_CAMPAIGNS,
-                       **WEB_GALLERY_CAMPAIGNS}
+                       **WEB_GALLERY_CAMPAIGNS, **SERIES_PAGE_CAMPAIGNS}
 
 
 def app_bound_campaign(campaign: str | None, app_id: str | None) -> bool:

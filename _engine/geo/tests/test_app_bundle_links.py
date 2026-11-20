@@ -101,5 +101,21 @@ class BundleStampAndAuditTest(unittest.TestCase):
                                rel, provider=P)
 
 
+class SeriesPageCampaignTest(unittest.TestCase):
+    """路線 98 系列頁 ja/series/kawaii.html：各款一碼保留、別款照常重蓋、稽核收。"""
+
+    def test_series_codes_kept_on_their_own_app_only(self):
+        cases = {"iag_kawaii_ja_mochi": "6785004775", "iag_kawaii_ja_mochidonestamp": "6790800323",
+                 "iag_kawaii_ja_tripbeecute": "6826987407", "iag_kawaii_ja_foldparty": "6829184924"}
+        hrefs = [link(f"https://apps.apple.com/jp/app/id{app}", ct) for ct, app in cases.items()]
+        wrong = link("https://apps.apple.com/jp/app/id6780575828", "iag_kawaii_ja_mochi")  # 別款帶這碼
+        text = page(*hrefs, wrong).replace('lang="en"', 'lang="ja"')
+        out, _ = G.rewrite(text, "geo_pick", P, locale="ja")
+        for ct, app in cases.items():
+            self.assertIn(f"id{app}?pt={P}&amp;ct={ct}&amp;", out)
+        self.assertIn(f"id6780575828?pt={P}&amp;ct=geo_pick&amp;", out)
+        self.assertEqual(5, len(A.audit_source(out, "ja/series/kawaii.html", provider=P)))
+
+
 if __name__ == "__main__":
     unittest.main()

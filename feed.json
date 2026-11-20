@@ -1,7 +1,7 @@
 {
  "schema": "lumi.social-feed/v1",
  "date": "2026-11-20",
- "generated_at": "2026-11-20T09:14:17Z",
+ "generated_at": "2026-11-20T16:02:15Z",
  "items": {
   "bluesky": [
    {
@@ -138,84 +138,42 @@
    },
    {
     "kind": "clip",
-    "key": "kumo/en",
+    "key": "stayclock/en",
     "locale": "en",
-    "app": "kumo",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/2764775737.mp4",
-    "hook": "Log your weight in about 10 seconds",
-    "name": "Kumo: Weight & GLP-1 Tracker",
-    "title": "Log your weight in about 10 seconds | Fasting & Cute Cloud | Kumo weight tracker",
+    "app": "stayclock",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/tfy50q.mp4",
+    "hook": "Big time and a month calendar",
+    "name": "Stay Clock: Flip Desk Clock",
+    "title": "Big time and a month calendar | Nightstand & Bedside Clock | Stay Clock",
     "tags": [
-     "#CuteCloud",
-     "#IntermittentFasting",
-     "#KumoWeightTracker"
+     "#FlipDeskClock",
+     "#BedsideClock",
+     "#Nightstand",
+     "#StayClock"
     ],
-    "caption": "Log your weight in about 10 seconds\nSee the trend with a 7-day average\nFasting & Cute Cloud\nKumo: Weight & GLP-1 Tracker\nSearch “Kumo weight tracker” on the App Store\nAlso on Google Play\n\n#CuteCloud #IntermittentFasting #KumoWeightTracker",
+    "caption": "Big time and a month calendar\nFlip card faces and more\nNightstand & Bedside Clock\nStay Clock: Flip Desk Clock\nSearch “Stay Clock” on the App Store\nAlso on Google Play\n\n#FlipDeskClock #BedsideClock #StayClock",
     "button": "Get it on the App Store",
     "variant": "b",
-    "alt": "Kumo: Weight & GLP-1 Tracker — Log your weight in about 10 seconds — See the trend with a 7-day average — Fasting & Cute Cloud",
-    "store": "https://apps.apple.com/us/app/id6830824515?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Kumo&referrer=utm_source%3Dsocial%26utm_campaign%3Dkumo",
+    "alt": "Stay Clock: Flip Desk Clock — Big time and a month calendar — Flip card faces and more — Nightstand & Bedside Clock",
+    "store": "https://apps.apple.com/us/app/id6814035888?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.StayClock&referrer=utm_source%3Dsocial%26utm_campaign%3Dstayclock",
     "review": {
      "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6830824515?action=write-review"
+     "url": "https://apps.apple.com/app/id6814035888?action=write-review"
     },
     "keywords": [
-     "daily",
-     "diary",
-     "body",
-     "measurement",
-     "intermittent",
-     "timer"
+     "aesthetic",
+     "night",
+     "retro",
+     "calendar",
+     "display",
+     "always"
     ],
-    "keyline": "Fasting & Cute Cloud",
+    "keyline": "Nightstand & Bedside Clock",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "0e325c1c1882013a",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "slot": 15
-   },
-   {
-    "kind": "clip",
-    "key": "gmoney/en",
-    "locale": "en",
-    "app": "gmoney",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/txsq79.mp4",
-    "hook": "See where it went, by category",
-    "name": "G+Money: Spending & Budget",
-    "title": "See where it went, by category | Spending & Budget | G+Money",
-    "tags": [
-     "#SpendingBudget",
-     "#DailyLog",
-     "#Planner",
-     "#GMoney"
-    ],
-    "caption": "See where it went, by category\nConvert & log, even offline\nG+Money: Spending & Budget\nSearch “G+Money” on the App Store\nAlso on Google Play\n\n#SpendingBudget #DailyLog #GMoney",
-    "button": "Get it on the App Store",
-    "variant": "b",
-    "alt": "G+Money: Spending & Budget — See where it went, by category — Convert & log, even offline",
-    "store": "https://apps.apple.com/us/app/id6755782939?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
-    "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
-    },
-    "keywords": [
-     "export",
-     "bookkeeping",
-     "manager",
-     "personal",
-     "bills",
-     "summary"
-    ],
-    "keyline": "Spending & Budget",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "987a384c8c1d4d89",
+     "board": "968a2870112ee6a7",
      "real_recording": false,
      "rules": "2026-10-18"
     },
@@ -263,6 +221,27 @@
      "rules": "2026-10-18"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "card/thanksgiving2026/2026-11-20",
+    "locale": "en",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/countdown-cards/card-20261120.jpg",
+    "caption": "Thanksgiving 6 days to go\nCount down together\n\nSearch “CountDaysNow” on App Store or Google Play\n\n#EventCounter #CountdownPlan #WorkBackwards",
+    "title": "Thanksgiving 6 days to go",
+    "alt": "CountDaysNow — Thanksgiving 6 days to go — Count down together — Search “CountDaysNow” on App Store or Google Play — Countdown Plan: Work Backwards",
+    "name": "CountDaysNow",
+    "hook": "Thanksgiving 6 days to go",
+    "tags": [
+     "#EventCounter",
+     "#CountdownPlan",
+     "#WorkBackwards",
+     "#LockScreen",
+     "#CountDaysNow"
+    ],
+    "button": "Get it on the App Store",
+    "store": "https://apps.apple.com/us/app/id6807079789?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow"
    },
    {
     "kind": "card",
@@ -1565,84 +1544,42 @@
    },
    {
     "kind": "clip",
-    "key": "kumo/en",
+    "key": "stayclock/en",
     "locale": "en",
-    "app": "kumo",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/2764775737.mp4",
-    "hook": "Log your weight in about 10 seconds",
-    "name": "Kumo: Weight & GLP-1 Tracker",
-    "title": "Log your weight in about 10 seconds | Fasting & Cute Cloud | Kumo weight tracker",
+    "app": "stayclock",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/tfy50q.mp4",
+    "hook": "Big time and a month calendar",
+    "name": "Stay Clock: Flip Desk Clock",
+    "title": "Big time and a month calendar | Nightstand & Bedside Clock | Stay Clock",
     "tags": [
-     "#CuteCloud",
-     "#IntermittentFasting",
-     "#KumoWeightTracker"
+     "#FlipDeskClock",
+     "#BedsideClock",
+     "#Nightstand",
+     "#StayClock"
     ],
-    "caption": "Log your weight in about 10 seconds\nSee the trend with a 7-day average\nFasting & Cute Cloud\nKumo: Weight & GLP-1 Tracker\nSearch “Kumo weight tracker” on the App Store\nAlso on Google Play\n\n#CuteCloud #IntermittentFasting #KumoWeightTracker",
+    "caption": "Big time and a month calendar\nFlip card faces and more\nNightstand & Bedside Clock\nStay Clock: Flip Desk Clock\nSearch “Stay Clock” on the App Store\nAlso on Google Play\n\n#FlipDeskClock #BedsideClock #Nightstand #StayClock",
     "button": "Get it on the App Store",
     "variant": "b",
-    "alt": "Kumo: Weight & GLP-1 Tracker — Log your weight in about 10 seconds — See the trend with a 7-day average — Fasting & Cute Cloud",
-    "store": "https://apps.apple.com/us/app/id6830824515?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Kumo&referrer=utm_source%3Dsocial%26utm_campaign%3Dkumo",
+    "alt": "Stay Clock: Flip Desk Clock — Big time and a month calendar — Flip card faces and more — Nightstand & Bedside Clock",
+    "store": "https://apps.apple.com/us/app/id6814035888?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.StayClock&referrer=utm_source%3Dsocial%26utm_campaign%3Dstayclock",
     "review": {
      "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6830824515?action=write-review"
+     "url": "https://apps.apple.com/app/id6814035888?action=write-review"
     },
     "keywords": [
-     "daily",
-     "diary",
-     "body",
-     "measurement",
-     "intermittent",
-     "timer"
+     "aesthetic",
+     "night",
+     "retro",
+     "calendar",
+     "display",
+     "always"
     ],
-    "keyline": "Fasting & Cute Cloud",
+    "keyline": "Nightstand & Bedside Clock",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "0e325c1c1882013a",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "slot": 15
-   },
-   {
-    "kind": "clip",
-    "key": "gmoney/en",
-    "locale": "en",
-    "app": "gmoney",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/txsq79.mp4",
-    "hook": "See where it went, by category",
-    "name": "G+Money: Spending & Budget",
-    "title": "See where it went, by category | Spending & Budget | G+Money",
-    "tags": [
-     "#SpendingBudget",
-     "#DailyLog",
-     "#Planner",
-     "#GMoney"
-    ],
-    "caption": "See where it went, by category\nConvert & log, even offline\nG+Money: Spending & Budget\nSearch “G+Money” on the App Store\nAlso on Google Play\n\n#SpendingBudget #DailyLog #Planner #GMoney",
-    "button": "Get it on the App Store",
-    "variant": "b",
-    "alt": "G+Money: Spending & Budget — See where it went, by category — Convert & log, even offline",
-    "store": "https://apps.apple.com/us/app/id6755782939?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
-    "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
-    },
-    "keywords": [
-     "export",
-     "bookkeeping",
-     "manager",
-     "personal",
-     "bills",
-     "summary"
-    ],
-    "keyline": "Spending & Budget",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "987a384c8c1d4d89",
+     "board": "968a2870112ee6a7",
      "real_recording": false,
      "rules": "2026-10-18"
     },
@@ -1690,6 +1627,27 @@
      "rules": "2026-10-18"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "card/thanksgiving2026/2026-11-20",
+    "locale": "en",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/countdown-cards/card-20261120.jpg",
+    "caption": "Thanksgiving 6 days to go\nCount down together\n\nSearch “CountDaysNow” on App Store or Google Play\n\n#EventCounter #CountdownPlan #WorkBackwards #LockScreen #CountDaysNow",
+    "title": "Thanksgiving 6 days to go",
+    "alt": "CountDaysNow — Thanksgiving 6 days to go — Count down together — Search “CountDaysNow” on App Store or Google Play — Countdown Plan: Work Backwards",
+    "name": "CountDaysNow",
+    "hook": "Thanksgiving 6 days to go",
+    "tags": [
+     "#EventCounter",
+     "#CountdownPlan",
+     "#WorkBackwards",
+     "#LockScreen",
+     "#CountDaysNow"
+    ],
+    "button": "Get it on the App Store",
+    "store": "https://apps.apple.com/us/app/id6807079789?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow"
    },
    {
     "kind": "card",
@@ -1892,118 +1850,60 @@
    },
    {
     "kind": "clip",
-    "key": "kumo/en",
+    "key": "stayclock/en",
     "locale": "en",
-    "app": "kumo",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/2764775737.mp4",
-    "hook": "Log your weight in about 10 seconds",
-    "name": "Kumo: Weight & GLP-1 Tracker",
-    "title": "Log your weight in about 10 seconds | Fasting & Cute Cloud | Kumo weight tracker",
+    "app": "stayclock",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/tfy50q.mp4",
+    "hook": "Big time and a month calendar",
+    "name": "Stay Clock: Flip Desk Clock",
+    "title": "Big time and a month calendar | Nightstand & Bedside Clock | Stay Clock",
     "tags": [
-     "#CuteCloud",
-     "#IntermittentFasting",
-     "#KumoWeightTracker"
+     "#FlipDeskClock",
+     "#BedsideClock",
+     "#Nightstand",
+     "#StayClock"
     ],
-    "caption": "Log your weight in about 10 seconds\nSee the trend with a 7-day average\nFasting & Cute Cloud\nKumo: Weight & GLP-1 Tracker\nSearch “Kumo weight tracker” on the App Store\nAlso on Google Play\n\n#CuteCloud #IntermittentFasting #KumoWeightTracker",
+    "caption": "Big time and a month calendar\nFlip card faces and more\nNightstand & Bedside Clock\nStay Clock: Flip Desk Clock\nSearch “Stay Clock” on the App Store\nAlso on Google Play\n\n#FlipDeskClock #BedsideClock #Nightstand #StayClock",
     "button": "Get it on the App Store",
     "variant": "b",
-    "alt": "Kumo: Weight & GLP-1 Tracker — Log your weight in about 10 seconds — See the trend with a 7-day average — Fasting & Cute Cloud",
-    "store": "https://apps.apple.com/us/app/id6830824515?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Kumo&referrer=utm_source%3Dsocial%26utm_campaign%3Dkumo",
+    "alt": "Stay Clock: Flip Desk Clock — Big time and a month calendar — Flip card faces and more — Nightstand & Bedside Clock",
+    "store": "https://apps.apple.com/us/app/id6814035888?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.StayClock&referrer=utm_source%3Dsocial%26utm_campaign%3Dstayclock",
     "review": {
      "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6830824515?action=write-review"
+     "url": "https://apps.apple.com/app/id6814035888?action=write-review"
     },
     "keywords": [
-     "daily",
-     "diary",
-     "body",
-     "measurement",
-     "intermittent",
-     "timer"
+     "aesthetic",
+     "night",
+     "retro",
+     "calendar",
+     "display",
+     "always"
     ],
-    "keyline": "Fasting & Cute Cloud",
+    "keyline": "Nightstand & Bedside Clock",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "0e325c1c1882013a",
+     "board": "968a2870112ee6a7",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "youtube": {
-     "title": "Log your weight in about 10 seconds | Kumo weight tracker #Shorts",
-     "description": "Log your weight in about 10 seconds\nSee the trend with a 7-day average\nFasting & Cute Cloud\n\nKumo: Weight & GLP-1 Tracker\nApp Store: https://apps.apple.com/us/app/id6830824515?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Kumo&referrer=utm_source%3Dsocial%26utm_campaign%3Dkumo\nAlready using this app? Rate or review it on the App Store\nhttps://apps.apple.com/app/id6830824515?action=write-review\n\ndaily · diary · body · measurement · intermittent · timer\n\n#Shorts #CuteCloud #Kumoweighttracker",
+     "title": "Big time and a month calendar | Stay Clock #Shorts",
+     "description": "Big time and a month calendar\nFlip card faces and more\nNightstand & Bedside Clock\n\nStay Clock: Flip Desk Clock\nApp Store: https://apps.apple.com/us/app/id6814035888?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.StayClock&referrer=utm_source%3Dsocial%26utm_campaign%3Dstayclock\nAlready using this app? Rate or review it on the App Store\nhttps://apps.apple.com/app/id6814035888?action=write-review\n\naesthetic · night · retro · calendar · display · always\n\n#Shorts #FlipDeskClock #StayClock",
      "tags": [
-      "daily",
-      "diary",
-      "body",
-      "measurement",
-      "intermittent",
-      "timer",
-      "CuteCloud",
-      "IntermittentFasting",
-      "KumoWeightTracker",
-      "Kumo weight tracker"
-     ]
-    },
-    "slot": 15
-   },
-   {
-    "kind": "clip",
-    "key": "gmoney/en",
-    "locale": "en",
-    "app": "gmoney",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/txsq79.mp4",
-    "hook": "See where it went, by category",
-    "name": "G+Money: Spending & Budget",
-    "title": "See where it went, by category | Spending & Budget | G+Money",
-    "tags": [
-     "#SpendingBudget",
-     "#DailyLog",
-     "#Planner",
-     "#GMoney"
-    ],
-    "caption": "See where it went, by category\nConvert & log, even offline\nG+Money: Spending & Budget\nSearch “G+Money” on the App Store\nAlso on Google Play\n\n#SpendingBudget #DailyLog #Planner #GMoney",
-    "button": "Get it on the App Store",
-    "variant": "b",
-    "alt": "G+Money: Spending & Budget — See where it went, by category — Convert & log, even offline",
-    "store": "https://apps.apple.com/us/app/id6755782939?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
-    "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
-    },
-    "keywords": [
-     "export",
-     "bookkeeping",
-     "manager",
-     "personal",
-     "bills",
-     "summary"
-    ],
-    "keyline": "Spending & Budget",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "987a384c8c1d4d89",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "youtube": {
-     "title": "See where it went, by category | G+Money #Shorts",
-     "description": "See where it went, by category\nConvert & log, even offline\nSpending & Budget\n\nG+Money: Spending & Budget\nApp Store: https://apps.apple.com/us/app/id6755782939?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney\nAlready using this app? Rate or review it on the App Store\nhttps://apps.apple.com/app/id6755782939?action=write-review\n\nexport · bookkeeping · manager · personal · bills · summary\n\n#Shorts #SpendingBudget #GMoney",
-     "tags": [
-      "export",
-      "bookkeeping",
-      "manager",
-      "personal",
-      "bills",
-      "summary",
-      "SpendingBudget",
-      "DailyLog",
-      "Planner",
-      "GMoney",
-      "G+Money"
+      "aesthetic",
+      "night",
+      "retro",
+      "calendar",
+      "display",
+      "always",
+      "FlipDeskClock",
+      "BedsideClock",
+      "Nightstand",
+      "StayClock",
+      "Stay Clock"
      ]
     },
     "slot": 15
@@ -2215,94 +2115,48 @@
    },
    {
     "kind": "clip",
-    "key": "kumo/en",
+    "key": "stayclock/en",
     "locale": "en",
-    "app": "kumo",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/2764775737.mp4",
-    "hook": "Log your weight in about 10 seconds",
-    "name": "Kumo: Weight & GLP-1 Tracker",
-    "title": "Log your weight in about 10 seconds | Fasting & Cute Cloud | Kumo weight tracker",
+    "app": "stayclock",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/tfy50q.mp4",
+    "hook": "Big time and a month calendar",
+    "name": "Stay Clock: Flip Desk Clock",
+    "title": "Big time and a month calendar | Nightstand & Bedside Clock | Stay Clock",
     "tags": [
-     "#CuteCloud",
-     "#IntermittentFasting",
-     "#KumoWeightTracker"
+     "#FlipDeskClock",
+     "#BedsideClock",
+     "#Nightstand",
+     "#StayClock"
     ],
-    "caption": "Log your weight in about 10 seconds\nSee the trend with a 7-day average\nFasting & Cute Cloud\nKumo: Weight & GLP-1 Tracker\nSearch “Kumo weight tracker” on the App Store\nAlso on Google Play\n\n#CuteCloud #IntermittentFasting #KumoWeightTracker",
+    "caption": "Big time and a month calendar\nFlip card faces and more\nNightstand & Bedside Clock\nStay Clock: Flip Desk Clock\nSearch “Stay Clock” on the App Store\nAlso on Google Play\n\n#FlipDeskClock #BedsideClock #Nightstand #StayClock",
     "button": "Get it on the App Store",
     "variant": "b",
-    "alt": "Kumo: Weight & GLP-1 Tracker — Log your weight in about 10 seconds — See the trend with a 7-day average — Fasting & Cute Cloud",
-    "store": "https://apps.apple.com/us/app/id6830824515?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Kumo&referrer=utm_source%3Dsocial%26utm_campaign%3Dkumo",
+    "alt": "Stay Clock: Flip Desk Clock — Big time and a month calendar — Flip card faces and more — Nightstand & Bedside Clock",
+    "store": "https://apps.apple.com/us/app/id6814035888?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.StayClock&referrer=utm_source%3Dsocial%26utm_campaign%3Dstayclock",
     "review": {
      "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6830824515?action=write-review"
+     "url": "https://apps.apple.com/app/id6814035888?action=write-review"
     },
     "keywords": [
-     "daily",
-     "diary",
-     "body",
-     "measurement",
-     "intermittent",
-     "timer"
+     "aesthetic",
+     "night",
+     "retro",
+     "calendar",
+     "display",
+     "always"
     ],
-    "keyline": "Fasting & Cute Cloud",
+    "keyline": "Nightstand & Bedside Clock",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "0e325c1c1882013a",
+     "board": "968a2870112ee6a7",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "Log your weight in about 10 seconds\nSee the trend with a 7-day average\nFasting & Cute Cloud\nKumo: Weight & GLP-1 Tracker\nSearch “Kumo weight tracker” on the App Store\nAlso on Google Play\n\n#CuteCloud #IntermittentFasting #KumoWeightTracker\n\nGet it on the App Store: https://apps.apple.com/us/app/id6830824515?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Kumo&referrer=utm_source%3Dsocial%26utm_campaign%3Dkumo",
-     "link": "https://apps.apple.com/us/app/id6830824515?pt=118326163&ct=social&mt=8"
-    },
-    "slot": 15
-   },
-   {
-    "kind": "clip",
-    "key": "gmoney/en",
-    "locale": "en",
-    "app": "gmoney",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/txsq79.mp4",
-    "hook": "See where it went, by category",
-    "name": "G+Money: Spending & Budget",
-    "title": "See where it went, by category | Spending & Budget | G+Money",
-    "tags": [
-     "#SpendingBudget",
-     "#DailyLog",
-     "#Planner",
-     "#GMoney"
-    ],
-    "caption": "See where it went, by category\nConvert & log, even offline\nG+Money: Spending & Budget\nSearch “G+Money” on the App Store\nAlso on Google Play\n\n#SpendingBudget #DailyLog #Planner #GMoney",
-    "button": "Get it on the App Store",
-    "variant": "b",
-    "alt": "G+Money: Spending & Budget — See where it went, by category — Convert & log, even offline",
-    "store": "https://apps.apple.com/us/app/id6755782939?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
-    "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
-    },
-    "keywords": [
-     "export",
-     "bookkeeping",
-     "manager",
-     "personal",
-     "bills",
-     "summary"
-    ],
-    "keyline": "Spending & Budget",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "987a384c8c1d4d89",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "pinterest": {
-     "description": "See where it went, by category\nConvert & log, even offline\nG+Money: Spending & Budget\nSearch “G+Money” on the App Store\nAlso on Google Play\n\n#SpendingBudget #DailyLog #Planner #GMoney\n\nGet it on the App Store: https://apps.apple.com/us/app/id6755782939?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
-     "link": "https://apps.apple.com/us/app/id6755782939?pt=118326163&ct=social&mt=8"
+     "description": "Big time and a month calendar\nFlip card faces and more\nNightstand & Bedside Clock\nStay Clock: Flip Desk Clock\nSearch “Stay Clock” on the App Store\nAlso on Google Play\n\n#FlipDeskClock #BedsideClock #Nightstand #StayClock\n\nGet it on the App Store: https://apps.apple.com/us/app/id6814035888?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.StayClock&referrer=utm_source%3Dsocial%26utm_campaign%3Dstayclock",
+     "link": "https://apps.apple.com/us/app/id6814035888?pt=118326163&ct=social&mt=8"
     },
     "slot": 15
    },
@@ -2352,6 +2206,31 @@
      "link": "https://apps.apple.com/es/app/id6830824515?pt=118326163&ct=social&mt=8"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "card/thanksgiving2026/2026-11-20",
+    "locale": "en",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/countdown-cards/card-20261120.jpg",
+    "caption": "Thanksgiving 6 days to go\nCount down together\n\nSearch “CountDaysNow” on App Store or Google Play\n\n#EventCounter #CountdownPlan #WorkBackwards #LockScreen #CountDaysNow",
+    "title": "Thanksgiving 6 days to go",
+    "alt": "CountDaysNow — Thanksgiving 6 days to go — Count down together — Search “CountDaysNow” on App Store or Google Play — Countdown Plan: Work Backwards",
+    "name": "CountDaysNow",
+    "hook": "Thanksgiving 6 days to go",
+    "tags": [
+     "#EventCounter",
+     "#CountdownPlan",
+     "#WorkBackwards",
+     "#LockScreen",
+     "#CountDaysNow"
+    ],
+    "button": "Get it on the App Store",
+    "store": "https://apps.apple.com/us/app/id6807079789?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
+    "pinterest": {
+     "description": "Thanksgiving 6 days to go\nCount down together\n\nSearch “CountDaysNow” on App Store or Google Play\n\n#EventCounter #CountdownPlan #WorkBackwards #LockScreen #CountDaysNow\n\nGet it on the App Store: https://apps.apple.com/us/app/id6807079789?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
+     "link": "https://apps.apple.com/us/app/id6807079789?pt=118326163&ct=social&mt=8"
+    }
    },
    {
     "kind": "card",
@@ -5236,92 +5115,47 @@
    },
    {
     "kind": "clip",
-    "key": "kumo/en",
+    "key": "stayclock/en",
     "locale": "en",
-    "app": "kumo",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/2764775737.mp4",
-    "hook": "Log your weight in about 10 seconds",
-    "name": "Kumo: Weight & GLP-1 Tracker",
-    "title": "Log your weight in about 10 seconds | Fasting & Cute Cloud | Kumo weight tracker",
+    "app": "stayclock",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/tfy50q.mp4",
+    "hook": "Big time and a month calendar",
+    "name": "Stay Clock: Flip Desk Clock",
+    "title": "Big time and a month calendar | Nightstand & Bedside Clock | Stay Clock",
     "tags": [
-     "#CuteCloud",
-     "#IntermittentFasting",
-     "#KumoWeightTracker"
+     "#FlipDeskClock",
+     "#BedsideClock",
+     "#Nightstand",
+     "#StayClock"
     ],
-    "caption": "Log your weight in about 10 seconds\nSee the trend with a 7-day average\nFasting & Cute Cloud\nKumo: Weight & GLP-1 Tracker\nSearch “Kumo weight tracker” on the App Store\nAlso on Google Play\n\n#CuteCloud #IntermittentFasting #KumoWeightTracker",
+    "caption": "Big time and a month calendar\nFlip card faces and more\nNightstand & Bedside Clock\nStay Clock: Flip Desk Clock\nSearch “Stay Clock” on the App Store\nAlso on Google Play\n\n#FlipDeskClock #BedsideClock #Nightstand #StayClock",
     "button": "Get it on the App Store",
     "variant": "b",
-    "alt": "Kumo: Weight & GLP-1 Tracker — Log your weight in about 10 seconds — See the trend with a 7-day average — Fasting & Cute Cloud",
-    "store": "https://apps.apple.com/us/app/id6830824515?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Kumo&referrer=utm_source%3Dsocial%26utm_campaign%3Dkumo",
+    "alt": "Stay Clock: Flip Desk Clock — Big time and a month calendar — Flip card faces and more — Nightstand & Bedside Clock",
+    "store": "https://apps.apple.com/us/app/id6814035888?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.StayClock&referrer=utm_source%3Dsocial%26utm_campaign%3Dstayclock",
     "review": {
      "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6830824515?action=write-review"
+     "url": "https://apps.apple.com/app/id6814035888?action=write-review"
     },
     "keywords": [
-     "daily",
-     "diary",
-     "body",
-     "measurement",
-     "intermittent",
-     "timer"
+     "aesthetic",
+     "night",
+     "retro",
+     "calendar",
+     "display",
+     "always"
     ],
-    "keyline": "Fasting & Cute Cloud",
+    "keyline": "Nightstand & Bedside Clock",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "0e325c1c1882013a",
+     "board": "968a2870112ee6a7",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "Log your weight in about 10 seconds\nSee the trend with a 7-day average\nFasting & Cute Cloud\nKumo: Weight & GLP-1 Tracker\nSearch “Kumo weight tracker” on the App Store\nAlso on Google Play\n\n#CuteCloud #IntermittentFasting #KumoWeightTracker\n\nGet it on the App Store: https://apps.apple.com/us/app/id6830824515?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Kumo&referrer=utm_source%3Dsocial%26utm_campaign%3Dkumo"
-    },
-    "slot": 15
-   },
-   {
-    "kind": "clip",
-    "key": "gmoney/en",
-    "locale": "en",
-    "app": "gmoney",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/txsq79.mp4",
-    "hook": "See where it went, by category",
-    "name": "G+Money: Spending & Budget",
-    "title": "See where it went, by category | Spending & Budget | G+Money",
-    "tags": [
-     "#SpendingBudget",
-     "#DailyLog",
-     "#Planner",
-     "#GMoney"
-    ],
-    "caption": "See where it went, by category\nConvert & log, even offline\nG+Money: Spending & Budget\nSearch “G+Money” on the App Store\nAlso on Google Play\n\n#SpendingBudget #DailyLog #Planner #GMoney",
-    "button": "Get it on the App Store",
-    "variant": "b",
-    "alt": "G+Money: Spending & Budget — See where it went, by category — Convert & log, even offline",
-    "store": "https://apps.apple.com/us/app/id6755782939?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
-    "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
-    },
-    "keywords": [
-     "export",
-     "bookkeeping",
-     "manager",
-     "personal",
-     "bills",
-     "summary"
-    ],
-    "keyline": "Spending & Budget",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "987a384c8c1d4d89",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "tiktok": {
-     "caption": "See where it went, by category\nConvert & log, even offline\nG+Money: Spending & Budget\nSearch “G+Money” on the App Store\nAlso on Google Play\n\n#SpendingBudget #DailyLog #Planner #GMoney\n\nGet it on the App Store: https://apps.apple.com/us/app/id6755782939?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney"
+     "caption": "Big time and a month calendar\nFlip card faces and more\nNightstand & Bedside Clock\nStay Clock: Flip Desk Clock\nSearch “Stay Clock” on the App Store\nAlso on Google Play\n\n#FlipDeskClock #BedsideClock #Nightstand #StayClock\n\nGet it on the App Store: https://apps.apple.com/us/app/id6814035888?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.StayClock&referrer=utm_source%3Dsocial%26utm_campaign%3Dstayclock"
     },
     "slot": 15
    },

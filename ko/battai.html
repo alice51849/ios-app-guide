@@ -8,7 +8,7 @@
 <!-- guide-design:end -->
 <title>BattAI: 배터리 성능·상태 점수 — 배터리 성능·수명 확인·완충 알림 | iOS App</title>
 <meta name="description" content="배터리가 얼마나 빨리 닳고 있는지, 언제쯤 교체하면 좋을지 알려 드려요. 충전 없이 얼마나 더 쓸 수 있는지 보여 주고, 원하는 잔량까지 충전되면 제때 알려 주며, 충전할 때마다 기록도 남겨 드려요.">
-<meta name="keywords" content="효율, 점검, 사이클, 횟수, 용량, 최대, 교체, 시기, 광탈, 소모, 진단, 건강, 관리, 모니터, 기록, 열화, 노화, 발열, 저전력, 잔량, 퍼센트, 보고서, 알람, 스마트폰, 라이프, 성능저하, 검사, 경고, 확인, 배터리 용량">
+<meta name="keywords" content="효율, 점검, 사이클, 횟수, 용량, 최대, 교체, 시기, 광탈, 소모, 진단, 건강, 관리, 모니터, 기록, 열화, 노화, 발열, 저전력, 잔량, 퍼센트, 보고서, 알람, 스마트폰, 라이프, 성능저하, 검사, 경고, 확인">
 <link rel="canonical" href="https://open.cait518.cc/ios-app-guide/ko/battai.html">
 <!-- smart-app-banner:start -->
 <meta name="apple-itunes-app" content="app-id=6802423998, affiliate-data=pt=118326163&amp;ct=geo_pick&amp;mt=8">
@@ -128,18 +128,17 @@
 <link rel="alternate" hreflang="zh-Hant" href="https://open.cait518.cc/ios-app-guide/zh-Hant/battai.html">
 <link rel="alternate" hreflang="x-default" href="https://open.cait518.cc/ios-app-guide/en-US/battai.html">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"MobileApplication","name":"BattAI: 배터리 성능·상태 점수","operatingSystem":"iOS","applicationCategory":"UtilitiesApplication","description":"배터리가 얼마나 빨리 닳고 있는지, 언제쯤 교체하면 좋을지 알려 드려요. 충전 없이 얼마나 더 쓸 수 있는지 보여 주고, 원하는 잔량까지 충전되면 제때 알려 주며, 충전할 때마다 기록도 남겨 드려요.\n\niPhone Duo에 최적화되었습니다. 최신 개발 도구로 빌드되어 안쪽 디스플레이 전체를 가득 채우며, 접거나 펼쳐도 레이아웃이 자동으로 조정됩니다.\n\n설정에서 볼 수 있는 건 오늘의 최대 용량뿐이에요. BattAI는 그 숫자가 좋은지 나쁜지, 기종의 설계 목표보다 빨리 줄고 있는지 알려 주고, 모든 측정값과 충전을 남겨 두었다가 휴대폰을 팔거나 수리 맡길 때 한 장짜리 배터리 패스포트로 정리해 드려요.\n\n몇 초 만에 배터리 읽기\n• 설정 › 배터리 › 배터리 성능 상태 화면을 캡처한 뒤 BattAI에서 고르면 iPhone 안에서 숫자를 읽어요. 저장하기 전에 항상 확인하거나 고칠 수 있어요.\n• 설정에 표시되는 기종이라면 사이클 수, 제조일, 최초 사용일도 함께 읽고 배터리 나이를 자동으로 계산해요. 최대 용량을 직접 입력할 수도 있어요.\n• BattAI는 최대 용량을 스스로 읽을 수 없어요. 모든 숫자에 출처와 날짜를 표시해요.\n\n바로 알 수 있는 한마디 답\n• 상태: 아주 좋음, 정상 범위, 또는 Apple 배터리 서비스 기준인 80% 미만.\n• 노화 속도: Apple이 공개한 기종별 설계 목표보다 느림, 비슷함, 빠름. 추정치이며 제조사 검사가 아니에요. 기종, 설계 용량, 설계 목표 데이터는 iPhone 기종을 대상으로 해요.\n• 기종, 출시 연도, 설계 용량, 설계 목표를 한눈에 보고, 다음에 할 일도 한마디로 알려 드려요.\n\n설정 앱에서는 볼 수 없는 것\n• 남은 시간: 최근 사용 패턴으로 20%까지 약 몇 시간 남았는지 범위로 보여 줘요(추정). 충전 중에는 완충까지 대략 얼마나 걸리는지 알려 줘요.\n• 배터리 관리 점수(100점 만점): 가장 크게 감점되는 습관 하나를 알려 줘요. 예: 잔량이 너무 자주 바닥남, 뜨거울 때 충전함. 살짝 따뜻한 건 감점하지 않고, 뜨거울 때만 세요.\n• 밤새 방전: 잠들기 전부터 아침까지 몇 % 줄었는지, 시간당 얼마인지, 최근 평균까지. 안내에 따라 '시간' 자동화를 두 개 만들면 돼요. 충전기에 꽂아 둔 밤은 세지 않아요.\n\n언제 바꿔야 할까\n• 80% 선이 그려진 나만의 최대 용량 곡선.\n• 80%까지 떨어질 시기를 계절이나 범위로 보여 줘요. 그럴듯한 정확한 날짜는 만들지 않아요. 데이터가 부족하면 추측하지 않고 한 번 더 읽어 달라고 안내해요.\n• 아직 교체할 필요 없음, 앞으로 6~12개월 지켜보기, 교체를 고려해 볼 만함 중 하나로 분명하게 알려 드려요.\n• 매달 다시 읽도록 알려 드려요.\n\n제때 오는 충전 알림\n• 직접 고른 잔량(50~100%)에서 완충 알림. 배터리 부족 알림과 iPhone이 뜨거울 때 알림도 있어요.\n• 단계별 안내에 따라 단축어 자동화를 하나 설정하면 그 잔량에 도달하는 순간 바로 알림이 와요. 설정하지 않으면 iOS가 알림을 늦게 보낼 수 있어요.\n\n충전할 때마다 기록\n• 자동화를 하나 더 추가하면 앱을 열지 않아도 꽂을 때와 뺄 때를 자동으로 기록해요: 몇 %에서 몇 %까지, 걸린 시간, 속도 단계(저속·표준·급속, 추정).\n• 주간 요약. 충전기마다 이름을 붙일 수 있어요.\n• 충전기 성적표: 실제 충전을 바탕으로 충전기별 평균 속도를 비교해요. 충전기마다 80% 미만 충전이 3번 쌓이면 비교할 수 있어요.\n\n이 충전기, 빠를까?\n• 충전기를 꽂은 채 BattAI를 몇 분 열어 두면 속도 단계와 배터리로 들어가는 전력의 대략적인 범위를 보여 줘요. 예: \"급속 충전 · 약 15–21 W(추정)\".\n• 결과는 잔량 20~80%이고 iPhone이 뜨겁지 않을 때만 보여 줘요. Apple은 앱이 충전 전력을 읽지 못하게 하므로, 잔량이 오르는 속도와 배터리 용량으로 추정해요.\n• 충전기별로 저장하고 나란히 비교할 수 있어요.\n\n위젯, 배터리 친구, Apple Watch\n• 잔량과 배터리 상태를 보여 주는 심플한 위젯.\n• 잔량에 따라 표정이 바뀌는 배터리 친구 캐릭터 10종.\n• 곡선과 예상 시기를 보여 주는 중간 크기, 큰 크기, 잠금 화면 위젯, 스탠바이.\n• Apple Watch에서는 워치 자체의 잔량을 보여 줘요. 한 번 구매하면 iPhone 배터리 요약도 워치에서 볼 수 있어요.\n\n공유와 판매\n• 기종·최대 용량·노화 속도를 공유 카드로 저장.\n• 한 장짜리 배터리 패스포트를 문서나 긴 이미지로 내보내기: 측정값별 날짜와 출처, 사이클 수, 곡선, 예상 시기, 배터리 날짜와 나이, 충전 습관 점수, 최근 30일 충전 중 과열 횟수, 가장 많이 쓴 충전기, 충전 기록 수. 추정값에는 추정이라고 표시해요.\n\n잠금 해제 없이 쓸 수 있는 것, 한 번 구매로 더해지는 것\n잠금 해제 없이: 잔량과 충전 상태, 최대 용량과 배터리 날짜 읽기와 바로 보는 판정, 남은 시간, 관리 점수와 가장 큰 감점 한 가지, 밤새 방전, 제때 오는 완충 알림과 완충·배터리 부족·과열 알림, 심플한 위젯 1개와 기본 배터리 친구, 기본 공유 카드, 충전기 속도 단계. 충전 기록과 측정값은 계속 쌓이고, 최근 7일과 최근 3번의 충전은 언제든 볼 수 있어요.\n풀 버전은 한 번 구매로, 구독이 아니며 자동 결제도 없어요: 전체 기록과 배터리 곡선, 80%까지 떨어질 시기와 교체 판단(추정), 충전별 자세한 기록, 충전기 전력 범위(추정)·비교·성적표, 관리 점수의 세부 항목 3가지와 발열 기록, 나머지 위젯과 배터리 친구, 배터리 패스포트 내보내기와 공유, 매달 다시 읽기 알림, 기존 '충전 이력'·'추세'·'상태 자세히' 화면, Apple Watch의 iPhone 배터리 요약.\n\nBattAI가 아닌 것\n배터리 절약이나 발열 낮추기 앱이 아니며, 상태 막대의 배터리 아이콘도 바꾸지 않아요. AI 분석은 없어요.\n\n개인정보\n계정 없음, 광고 없음, 서버 없음. 데이터는 내 iPhone에만 남고 업로드되지 않아요.","url":"https://apps.apple.com/kr/app/id6802423998?pt=118326163&ct=geo_pick&mt=8","installUrl":"https://apps.apple.com/kr/app/id6802423998?pt=118326163&ct=geo_pick&mt=8","featureList":["효율","점검","사이클","횟수","용량","최대","교체","시기"],"keywords":"효율, 점검, 사이클, 횟수, 용량, 최대, 교체, 시기, 광탈, 소모, 진단, 건강, 관리, 모니터, 기록, 열화, 노화, 발열, 저전력, 잔량, 퍼센트, 보고서, 알람, 스마트폰, 라이프, 성능저하, 검사, 경고, 확인","@id":"https://apps.apple.com/app/id6802423998","identifier":{"@type":"PropertyValue","propertyID":"Apple App Store ID","value":"6802423998"},"downloadUrl":"https://apps.apple.com/kr/app/id6802423998?pt=118326163&ct=geo_pick&mt=8","potentialAction":{"@type":"InstallAction","target":"https://apps.apple.com/kr/app/id6802423998?pt=118326163&ct=geo_pick&mt=8"},"mainEntityOfPage":{"@id":"https://open.cait518.cc/ios-app-guide/ko/battai.html#webpage"},"offers":{"@type":"Offer","price":"0","priceCurrency":"KRW","url":"https://apps.apple.com/kr/app/id6802423998?pt=118326163&ct=geo_pick&mt=8","availability":"https://schema.org/InStock"}}</script>
-<style>.searched-as{margin:1.2em 0;font-size:.95em;line-height:1.6}.searched-as-label{font-weight:600;margin-right:.35em}</style>
 <!-- app-store-facts-style:start -->
 <link rel="stylesheet" href="https://open.cait518.cc/ios-app-guide/assets/app-store-facts-v1.css">
 <!-- app-store-facts-style:end -->
-<link rel="site.standard.publication" href="at://did:plc:kboucnzkxzmqmatvhes4xlt4/site.standard.publication/3mrocqbkyt6mg">
-<script type="application/ld+json" data-first-party-disclosure="publisher">{"@context":"https://schema.org","@type":"WebSite","@id":"https://open.cait518.cc/ios-app-guide/#website","url":"https://open.cait518.cc/ios-app-guide","publisher":{"@type":"Organization","@id":"https://open.cait518.cc/ios-app-guide/#organization","name":"Lumi Studio","url":"https://open.cait518.cc/ios-app-guide/about.html","description":"Developer of the featured apps and operator of this site."}}</script>
 <!-- app-store-qr-style:start -->
 <link rel="stylesheet" href="/ios-app-guide/assets/app-store-qr-v1.css">
 <!-- app-store-qr-style:end -->
 <!-- app-decision-card-style:start -->
 <link rel="stylesheet" href="/ios-app-guide/assets/app-decision-card-v1.css">
 <!-- app-decision-card-style:end -->
+<link rel="site.standard.publication" href="at://did:plc:kboucnzkxzmqmatvhes4xlt4/site.standard.publication/3mrocqbkyt6mg">
+<script type="application/ld+json" data-first-party-disclosure="publisher">{"@context":"https://schema.org","@type":"WebSite","@id":"https://open.cait518.cc/ios-app-guide/#website","url":"https://open.cait518.cc/ios-app-guide","publisher":{"@type":"Organization","@id":"https://open.cait518.cc/ios-app-guide/#organization","name":"Lumi Studio","url":"https://open.cait518.cc/ios-app-guide/about.html","description":"Developer of the featured apps and operator of this site."}}</script>
 <link rel="alternate" type="application/atom+xml" title="iOS App Guide — latest answers &amp; guides (Atom)" href="https://open.cait518.cc/ios-app-guide/feed.xml">
 <link rel="alternate" type="application/rss+xml" title="iOS App Guide — latest answers &amp; guides (RSS 2.0)" href="https://open.cait518.cc/ios-app-guide/rss.xml">
 <link rel="alternate" type="application/feed+json" title="iOS App Guide — latest answers &amp; guides (JSON Feed 1.1)" href="https://open.cait518.cc/ios-app-guide/feed.json">
@@ -234,8 +233,6 @@
     <li>시기</li>
   </ul>
 
-  <p class="searched-as"><span class="searched-as-label">이런 검색어로 이 앱을 찾습니다: </span>배터리 용량</p>
-
   <h2>가격</h2>
   <p>무료 다운로드, 일회성 구매로 모든 기능 잠금 해제. 구독 함정 없음.</p>
 
@@ -251,26 +248,6 @@
 </aside>
 <!-- app-store-facts:end -->
 </main>
-<!--iag-app-related-->
-<section class="wrap app-related">
-<h2>이 앱에 대한 질문과 답</h2>
-<ul>
-  <li><a href="https://open.cait518.cc/ios-app-guide/ko/answers/best-battery-health-app-app.html">최고의 배터리 상태 앱</a></li>
-  <li><a href="https://open.cait518.cc/ios-app-guide/ko/answers/how-to-choose-a-battery-health-app-app.html">배터리 상태 앱 고르는 법</a></li>
-  <li><a href="https://open.cait518.cc/ios-app-guide/ko/answers/best-battery-health-report-app.html">최고의 배터리 상태 리포트 앱</a></li>
-  <li><a href="https://open.cait518.cc/ios-app-guide/ko/answers/battery-health-app-app-for-iphone.html">iPhone용 배터리 상태 앱</a></li>
-  <li><a href="https://open.cait518.cc/ios-app-guide/ko/answers/how-to-choose-a-battery-health-report-app.html">배터리 상태 리포트 앱 고르는 법</a></li>
-  <li><a href="https://open.cait518.cc/ios-app-guide/ko/answers/replace-iphone-battery-app-for-iphone.html">iPhone용 배터리 교체 판단 앱</a></li>
-  <li><a href="https://open.cait518.cc/ios-app-guide/ko/answers/battery-health-app-app-for-iphone-free.html">iPhone용 무료 배터리 상태 앱</a></li>
-  <li><a href="https://open.cait518.cc/ios-app-guide/ko/answers/battery-health-report-app-for-iphone.html">iPhone용 배터리 상태 리포트 앱</a></li>
-</ul>
-</section>
-<!--/iag-app-related-->
-
-<!--iag-app-support-->
-<p class="wrap app-support"><a href="https://open.cait518.cc/battai-support/?ct=sup_battai_xlink" data-ls-xlink="battai">이 앱의 도움말 및 자주 묻는 질문</a></p>
-<!--/iag-app-support-->
-
 <!-- webmcp-install-tool:start -->
 <script type="application/json" id="iag-webmcp-install-data">{"app_store_id":"6802423998","app_name":"BattAI","page_language":"ko","page_url":"https://open.cait518.cc/ios-app-guide/ko/battai.html","app_store_url":"https://apps.apple.com/kr/app/id6802423998?pt=118326163&ct=geo_pick&mt=8","localized_description":"배터리가 얼마나 빨리 닳고 있는지, 언제쯤 교체하면 좋을지 알려 드려요. 충전 없이 얼마나 더 쓸 수 있는지 보여 주고, 원하는 잔량까지 충전되면 제때 알려 주며, 충전할 때마다 기록도 남겨 드려요.","storefront_facts":{"price":"0","currency":"KRW","formatted_price":"무료"}}</script>
 <script src="https://open.cait518.cc/ios-app-guide/assets/webmcp-install-tool-v2.js" data-webmcp-install="iag-webmcp-install-data" defer></script>

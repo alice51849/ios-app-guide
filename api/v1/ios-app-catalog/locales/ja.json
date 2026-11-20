@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-11-19",
-  "content_digest": "1879416ba8e23730f92f0448aa7d94284111a248662bedc060147ade6d510cb9",
+  "date_modified": "2026-11-20",
+  "content_digest": "ee58fa7eba6dec1ef9bc8ae96f08ce70431d28ec11c5d221c96c497597bf1c68",
   "locale": "ja",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -1019,8 +1019,7 @@
         "文字盤",
         "横断幕",
         "メッセージ",
-        "テロップ",
-        "お迎え ボード"
+        "テロップ"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1442,8 +1441,7 @@
         "声かけ",
         "ご褒美",
         "モチベーション",
-        "年少",
-        "ごほうび シール"
+        "年少"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1546,8 +1544,7 @@
         "台風",
         "UV",
         "おしゃれ",
-        "コーディネート",
-        "服装 天気"
+        "コーディネート"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1598,8 +1595,7 @@
         "診断書",
         "領収書",
         "請求書",
-        "電話番号",
-        "個人情報 マスク"
+        "電話番号"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2475,6 +2471,8 @@
         "price": "0",
         "currency": "JPY",
         "formatted_price": "無料",
+        "rating_value": 5.0,
+        "rating_count": 1,
         "storefront_url": "https://apps.apple.com/jp/app/id6814035888"
       }
     },
@@ -2673,8 +2671,7 @@
         "メモ",
         "計画",
         "行程",
-        "旅行",
-        "旅程"
+        "旅行"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2778,8 +2775,7 @@
         "上げる",
         "粒状感",
         "ローライト",
-        "ホワイトボード",
-        "ぼやけた 写真 修正"
+        "ホワイトボード"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2827,10 +2823,7 @@
         "プログラミング",
         "アカウント",
         "コーディング",
-        "ai開発",
-        "claude 使用制限",
-        "ai 使用量 管理",
-        "トークン 使用量"
+        "ai開発"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2929,8 +2922,7 @@
         "プロバイダ",
         "モデム",
         "対処",
-        "直し方",
-        "wifi つながらない"
+        "直し方"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

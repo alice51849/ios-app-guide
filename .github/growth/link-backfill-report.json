@@ -1,11 +1,11 @@
 {
- "generated": "2026-11-19T20:45:31Z",
+ "generated": "2026-11-20T02:25:08Z",
  "mode": "apply",
  "counts": {
   "ok_reply": 79,
-  "ok_backfilled_earlier": 107,
+  "ok_backfilled_earlier": 109,
   "unknown_app": 47,
-  "ok_store_only": 624,
+  "ok_store_only": 622,
   "backfilled": 2,
   "ok_bio_link": 68,
   "ok_caption": 4,
@@ -1927,11 +1927,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DcthA1ClMQR",
    "date": "2026-08-31",
    "app": "unblurry",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "Unblurry Pro: Unblur & HD Unblur photos in HD Fix blurry, shaky photos in seconds. Sharpen, enhance, upscale to HD and restore old shots rig",
    "why": "url+brand",
    "ios_id": "6782275018",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "18132880048848120",
+   "at": "2026-11-20T02:22:34Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -2705,11 +2710,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DcthGbpgB2J",
    "date": "2026-08-31",
    "app": "wifiaid",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "WiFi Aid: Find WiFi Problems Network Diagnosis & Evidence Find the most likely connection problem with independent path, DNS, TCP, TLS, timi",
    "why": "url+brand",
    "ios_id": "6790467886",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "18129888967846506",
+   "at": "2026-11-20T02:22:34Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -3849,16 +3859,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DcthL1jDnce",
    "date": "2026-08-31",
    "app": "wifiaidlite",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "WiFi Aid Lite Network Diagnosis & Evidence Find the real problem. Each tool includes one free complete use. Optional one-time lifetime unloc",
    "why": "url+brand",
    "ios_id": "6793414462",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "18120845066051933",
-   "at": "2026-11-19T20:42:46Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",
@@ -3974,16 +3979,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DcthRJSlINn",
    "date": "2026-08-31",
    "app": "wordmate",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "Wordmate: Learn 44 Languages 44 Languages & Vocab Widget One App Store purchase includes practical words in 44 languages, the interactive wi",
    "why": "url+brand",
    "ios_id": "6789917808",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "18140095978656142",
-   "at": "2026-11-19T20:42:46Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",

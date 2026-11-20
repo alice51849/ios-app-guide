@@ -2,7 +2,7 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-11-20",
-  "content_digest": "ee58fa7eba6dec1ef9bc8ae96f08ce70431d28ec11c5d221c96c497597bf1c68",
+  "content_digest": "7b758af1fc80e5fb68f57f088f7d74fd4f7b6dcb0a280192234fa18725f70355",
   "locale": "ja",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -199,7 +199,8 @@
         "容量",
         "電池",
         "充電速度",
-        "寿命"
+        "寿命",
+        "バッテリー チェック"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -966,7 +967,8 @@
         "シンプル",
         "推移",
         "体型",
-        "目標"
+        "目標",
+        "ウエスト 体脂肪率"
       ],
       "purchase_model": "neutral",
       "one_time_option": false,
@@ -1019,7 +1021,8 @@
         "文字盤",
         "横断幕",
         "メッセージ",
-        "テロップ"
+        "テロップ",
+        "お迎え ボード"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1441,7 +1444,8 @@
         "声かけ",
         "ご褒美",
         "モチベーション",
-        "年少"
+        "年少",
+        "ごほうび シール"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1544,7 +1548,8 @@
         "台風",
         "UV",
         "おしゃれ",
-        "コーディネート"
+        "コーディネート",
+        "服装 天気"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1595,7 +1600,8 @@
         "診断書",
         "領収書",
         "請求書",
-        "電話番号"
+        "電話番号",
+        "個人情報 マスク"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2451,7 +2457,8 @@
         "大きい文字",
         "カレンダー",
         "フリップ時計",
-        "全画面時計"
+        "全画面時計",
+        "置き時計"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2671,7 +2678,8 @@
         "メモ",
         "計画",
         "行程",
-        "旅行"
+        "旅行",
+        "旅程"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2775,7 +2783,8 @@
         "上げる",
         "粒状感",
         "ローライト",
-        "ホワイトボード"
+        "ホワイトボード",
+        "ぼやけた 写真 修正"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2823,7 +2832,10 @@
         "プログラミング",
         "アカウント",
         "コーディング",
-        "ai開発"
+        "ai開発",
+        "ai 使用量 管理",
+        "claude 使用制限",
+        "トークン 使用量"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2922,7 +2934,8 @@
         "プロバイダ",
         "モデム",
         "対処",
-        "直し方"
+        "直し方",
+        "wifi つながらない"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

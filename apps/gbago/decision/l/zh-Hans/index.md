@@ -2,7 +2,7 @@
 title: "GBAGo: 可视化存档 — 怀旧游戏模拟器，支持 .gba .gbc .gb | iOS App"
 lang: "zh-Hans"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gbago/decision/l/zh-Hans/index.html"
-modified: "2026-11-19"
+modified: "2026-11-20"
 app_store_id: "6804564400"
 verified_live: true
 purchase_model: "paid_upfront"

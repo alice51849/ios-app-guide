@@ -2,7 +2,7 @@
 title: "Snapport Lite：证件照尺寸 — 人像照按指定尺寸裁剪 | iOS App"
 lang: "zh-Hans"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapportlite/decision/l/zh-Hans/index.html"
-modified: "2026-11-19"
+modified: "2026-11-20"
 app_store_id: "6792856304"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

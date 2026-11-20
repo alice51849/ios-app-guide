@@ -2,7 +2,7 @@
 title: "GBAGo: Візуальні сейви — Емулятор ігор .gba .gbc .gb | iOS App"
 lang: "uk"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gbago/decision/l/uk/index.html"
-modified: "2026-11-19"
+modified: "2026-11-20"
 app_store_id: "6804564400"
 verified_live: true
 purchase_model: "paid_upfront"

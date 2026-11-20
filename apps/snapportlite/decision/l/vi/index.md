@@ -2,7 +2,7 @@
 title: "Snapport Lite: Ảnh thẻ 4x6 — Cắt chân dung đúng kích cỡ | iOS App"
 lang: "vi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapportlite/decision/l/vi/index.html"
-modified: "2026-11-19"
+modified: "2026-11-20"
 app_store_id: "6792856304"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

@@ -2,7 +2,7 @@
 title: "WiFi Aid：找出网络问题·诊断 — 路由器检测・DNS延迟测试 | iOS App"
 lang: "zh-Hans"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/zh-Hans/index.html"
-modified: "2026-11-19"
+modified: "2026-11-20"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"

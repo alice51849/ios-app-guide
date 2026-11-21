@@ -1,9 +1,9 @@
 {
  "schema": "lumi.android-live-snapshot/v1",
  "source": "AndroidPlay android_live_scan (Play page HTTP 200 + publish LIVE)",
- "source_generated": "2026-11-21T23:35:56+0800",
+ "source_generated": "2026-11-22T02:48:12+0800",
  "count": 60,
- "content_sha256": "5c70cad2ba3fc8bf75851244447774807f7fc972c1efa842406bc181399b18b3",
+ "content_sha256": "51f4480d320df80228abbd20a812b62b98d4ee9450f08d5cc66b6f7478b013d6",
  "apps": {
   "aibriefpack": {
    "ios_app_id": "6791658210",
@@ -1079,7 +1079,7 @@
    "copy": {
     "en-US": {
      "title": "TripBee Cute: Travel Journal",
-     "short_description": "Vacation countdown, trip planner, itinerary and packing list in a cute booklet"
+     "short_description": "Cute travel journal & trip planner: vacation countdown, itinerary, packing list"
     },
     "zh-TW": {
      "title": "TripBee Cute：可愛旅行手帳",
@@ -1184,7 +1184,7 @@
    "copy": {
     "en-US": {
      "title": "WiFi Aid Lite: Network Check",
-     "short_description": "Slow internet? Test your WiFi, router and DNS to find the likely cause"
+     "short_description": "WiFi checker for slow internet: is it your router, DNS, ISP or the website?"
     },
     "zh-TW": {
      "title": "WiFi Aid Lite：網路檢測與診斷",
@@ -1247,7 +1247,7 @@
    "copy": {
     "en-US": {
      "title": "Zipbox: Unzip RAR, ZIP & 7z",
-     "short_description": "Unzip, RAR extractor & 7z file extractor: preview inside, take out what you need"
+     "short_description": "Unzip, RAR extractor & 7z file extractor: preview, take what you need"
     },
     "zh-TW": {
      "title": "Zipbox 解壓縮：RAR ZIP 7z",

@@ -47,8 +47,9 @@ TELEGRAM_LIMIT = 3900
 # count true of every App is "40 種以上"; each App's own count stays in its
 # spotlight post (Cyca: 44, as its store listing). Not every App's description
 # says the language switches inside the App, so the digest does not claim it.
+# The counts are the App Store listings', so the line says App Store 版 (Play not checked).
 TELEGRAM_LANGUAGE_PITCH = (
-    "🌏 每款都支援 40 種以上語言。\n\n"
+    "🌏 每款 App Store 版都支援 40 種以上語言。\n\n"
 )
 PLAY_LINK_RE = re.compile(r"https://play\.google\.com/store/apps/details\?\S+")
 THREADS_LIMIT = threads_post.MAX_POST_CHARS

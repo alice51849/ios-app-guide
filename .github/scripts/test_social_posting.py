@@ -1726,7 +1726,7 @@ class TelegramDailyCatalogTests(unittest.TestCase):
         # 第 92 項第 4 點③：商店列出的語言數每款 43～53、描述寫 40～50，「每款都 50 種」不實
         pitch = portfolio_daily.TELEGRAM_LANGUAGE_PITCH
         self.assertNotIn("50 種語言", pitch)
-        self.assertEqual("🌏 每款都支援 40 種以上語言。\n\n", pitch)
+        self.assertEqual("🌏 每款 App Store 版都支援 40 種以上語言。\n\n", pitch)
         self.assertNotIn("App 內一鍵切換", pitch)
         self.assertNotIn("各用各的", pitch)
         messages = portfolio_daily.telegram_messages(

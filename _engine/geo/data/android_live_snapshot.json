@@ -1,9 +1,9 @@
 {
  "schema": "lumi.android-live-snapshot/v1",
  "source": "AndroidPlay android_live_scan (Play page HTTP 200 + publish LIVE)",
- "source_generated": "2026-11-21T09:47:05+0800",
+ "source_generated": "2026-11-21T10:52:02+0800",
  "count": 60,
- "content_sha256": "a0ad782547bd01d3de2a70721aa350b059defe8e57bc1ee827bab4c2d64514cf",
+ "content_sha256": "6511b353592bc0fc76fb7e52c5eb6380ced96deb6182ad2a6f3c4694c7e80889",
  "apps": {
   "aibriefpack": {
    "ios_app_id": "6791658210",
@@ -138,7 +138,7 @@
    "copy": {
     "en-US": {
      "title": "CV Desk: ATS Resume Builder",
-     "short_description": "Resume builder & CV maker with an ATS score and ATS friendly resume templates"
+     "short_description": "Resume builder & CV maker: ATS score, ATS friendly resume templates, PDF export"
     },
     "zh-TW": {
      "title": "CV Desk ATS 履歷製作：履歷範本",
@@ -325,7 +325,7 @@
    "copy": {
     "en-US": {
      "title": "G+Money Travel Expense Tracker",
-     "short_description": "Travel expense tracker & currency converter for 50 currencies, works offline"
+     "short_description": "Travel expense tracker & currency converter with trip budgets, works offline"
     },
     "zh-TW": {
      "title": "G+Money：旅遊記帳・匯率換算",
@@ -367,7 +367,7 @@
    "copy": {
     "en-US": {
      "title": "HoursTag: Stop Impulse Buying",
-     "short_description": "Expense tracker that turns prices into hours of work so you stop impulse buying"
+     "short_description": "Stop impulse buying: an expense tracker that turns prices into hours of work"
     },
     "zh-TW": {
      "title": "HoursTag：記帳・時薪換算",
@@ -388,7 +388,7 @@
    "copy": {
     "en-US": {
      "title": "HoursTag Lite: Impulse Buying",
-     "short_description": "Stop impulse buying: see any price as hours of work before you pay"
+     "short_description": "Stop impulse buying: see any price in work hours, then tag Need, Want or Impulse"
     },
     "zh-TW": {
      "title": "HoursTag Lite：價格換工時・時薪計算",
@@ -661,7 +661,7 @@
    "copy": {
     "en-US": {
      "title": "Mask My File: Redact PDF",
-     "short_description": "Redact PDF, photos and text: black out private data and remove metadata"
+     "short_description": "Redact PDF & photos: black out personal info & private data, remove metadata"
     },
     "zh-TW": {
      "title": "Mask My File：PDF 個資遮蔽",
@@ -850,7 +850,7 @@
    "copy": {
     "en-US": {
      "title": "QR Code Halo: Barcode Scanner",
-     "short_description": "QR code scanner & barcode reader with QR code generator and on-device link check"
+     "short_description": "QR code scanner, barcode reader & QR code generator: open links, join Wi-Fi"
     },
     "zh-TW": {
      "title": "QR Code Halo：條碼掃描、建立與安全檢查",
@@ -955,7 +955,7 @@
    "copy": {
     "en-US": {
      "title": "Snapport: Passport & ID Photos",
-     "short_description": "Passport photo maker for visa & ID photos: templates, background, print sheets"
+     "short_description": "Passport photo maker: 2x2, white background, visa & ID photos, print sheets"
     },
     "zh-TW": {
      "title": "Snapport: 護照證件照、大頭照排版",
@@ -1226,7 +1226,7 @@
    "copy": {
     "en-US": {
      "title": "Wordmate Lite: Vocabulary",
-     "short_description": "Learn languages five words a day: vocabulary builder for 44 languages, offline"
+     "short_description": "Offline vocabulary app: learn languages like Spanish or French, five words a day"
     },
     "zh-TW": {
      "title": "Wordmate Lite 背單字：每天五個單字",

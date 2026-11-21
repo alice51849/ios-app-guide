@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "說明": "過審手寫 Telegram 稿的佇列（規則在 .github/scripts/telegram_post.py「hand-written reviewed posts」一節）。每個 UTC 日最多 1 則、佔既有三個時段之一、照檔案順序先進先出；列的 id 就是追蹤碼。lang 只能寫 50 個正式語系鍵；text 不寫網址（下載連結由程式附）；review.text_sha256＝text 的 sha256（審完才填，改字就要重審重填）。已發的列留著不刪（台帳以 id 與內容雜湊防重發）。",
+  "hold_apps": {
+    "6835673714": "JellyDay：iOS 公開頁 200 前不排社群（統籌裁定 2026-11-21 第 81、105 項）；上架進名冊後由統籌明文解除才可拿掉這行"
+  },
+  "posts": [
+    {
+      "id": "tg_onepageppt_jp_gijiroku",
+      "lang": "ja",
+      "app": "6798814385",
+      "text": "1時間分の会議メモを、上司に見せる1枚に。OnePage PPT は貼り付けた文章やCSVの表から要点を見つけて見出しにし、数値はグラフ、手順はフロー図にした16:9のスライドを1枚にまとめます。データで裏づけられる図だけを描き、数字を作り出すことはありません。処理は端末内で、アカウント登録もいりません。",
+      "review": {
+        "receipt": "00_GrowthEngine reports/outreach_scale/patch_receipts/review_tg_cov105_independent_2026-11-22.md",
+        "reviewed_on": "2026-11-22",
+        "text_sha256": "ccf46d520ccfe7b0aa80e5f71fdb43f787e414387515922144d4ec7b82f7ca28"
+      }
+    },
+    {
+      "id": "tg_wifiaidlite_us_noload",
+      "lang": "en-US",
+      "app": "6793414462",
+      "text": "Wi-Fi says connected, but nothing loads? One tap in WiFi Aid Lite checks Wi-Fi, DNS and the wider internet in order, then shows which step is failing and the most likely cause. Check one website to see if it's that site or your whole connection. No account, ads or tracking.",
+      "review": {
+        "receipt": "00_GrowthEngine reports/outreach_scale/patch_receipts/review_tg_cov105_independent_2026-11-22.md",
+        "reviewed_on": "2026-11-22",
+        "text_sha256": "ce9de568356cf67bf44f8887d967c0afd3e2508edf5c8939dde4c855723a2608"
+      }
+    },
+    {
+      "id": "tg_wifiaidlite_jp_kirikae",
+      "lang": "ja",
+      "app": "6793414462",
+      "text": "Wi-Fiのアイコンはついているのに、何も開かない。WiFi Aid Lite はワンタップで Wi-Fi、DNS、インターネットを順番にチェックし、どこで止まっているのかと、いちばん可能性の高い原因を表示します。「サイトをチェック」なら、そのサイトだけの問題か回線全体かも切り分けられます。アカウント登録は不要、広告もトラッキングもありません。",
+      "review": {
+        "receipt": "00_GrowthEngine reports/outreach_scale/patch_receipts/review_tg_cov105_independent_2026-11-22.md",
+        "reviewed_on": "2026-11-22",
+        "text_sha256": "2e2379b8dec6433bb6415e97f75fd45fe63e0c98c6e02ff8b9f48ea00cc3a78e"
+      }
+    },
+    {
+      "id": "tg_onepageppt_us_onepager",
+      "lang": "en-US",
+      "app": "6798814385",
+      "text": "An hour of meeting notes and your boss wants one slide? Paste in the text or add a CSV in OnePage PPT, tap Make My Slide, and the key points become headlines, the numbers a chart. It only draws charts your data supports and never invents figures. Runs on your device, no account.",
+      "review": {
+        "receipt": "00_GrowthEngine reports/outreach_scale/patch_receipts/review_tg_cov105_independent_2026-11-22.md",
+        "reviewed_on": "2026-11-22",
+        "text_sha256": "ffd9116cf98453289dd6e556bf0da3aca2e531a769a61f57aefd232e951e94e3"
+      }
+    }
+  ]
+}

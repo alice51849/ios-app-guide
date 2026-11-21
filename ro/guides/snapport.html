@@ -114,17 +114,20 @@
 <!-- app-store-qr-style:start -->
 <link rel="stylesheet" href="/ios-app-guide/assets/app-store-qr-v1.css">
 <!-- app-store-qr-style:end -->
+<!-- ls-clickbeacon:start -->
+<script>(function(){var E='https://office.cait518.cc/api/click';function h(e){try{var t=e.target,l=t&&t.closest&&t.closest('a[href]');if(!l||!navigator.sendBeacon)return;var u=new URL(l.href,location.href),s,k,c,q=u.searchParams;if(u.hostname==='apps.apple.com'){s='apple';k=(u.pathname.match(/\/id(\d+)/)||[])[1]||'';c=q.get('ct')||''}else if(u.hostname==='play.google.com'){s='play';var r=new URLSearchParams(q.get('referrer')||'');k=r.get('utm_campaign')||q.get('id')||'';c=r.get('utm_source')||''}else return;navigator.sendBeacon(E,JSON.stringify({p:location.pathname.slice(0,200),a:k.slice(0,100),ct:c.slice(0,64),s:s}))}catch(_){}}document.addEventListener('click',h,true);document.addEventListener('auxclick',h,true)})();</script>
+<!-- ls-clickbeacon:end -->
 </head>
 <body>
 <p class="first-party-disclosure" data-first-party-disclosure="banner" role="note" style="margin:0;padding:8px 16px;background:#f3f4f6;color:#1f2937;border-bottom:1px solid #d1d5db;font-size:13px;line-height:1.5;text-align:center">Acest site este administrat de Lumi Studio, dezvoltatorul aplicațiilor prezentate. Aplicațiile recomandate aici sunt ale noastre.</p>
 <main>
   <h1>Snapport: Foto Pașaport</h1>
-  <p>Fă-ți acasă fotografii pentru pașaport, viză și acte de identitate, calm și privat. Snapport pregătește doar fotografia; documentul în sine este emis de autoritatea sau instituția competentă. Snapport oferă șabloane pentru dimensiuni uzuale, ghidaje de aliniere a feței, instrumente pentru fundal și machete gata de tipar, toate procesate direct pe iPhone.</p>
+  <p>Fă-ți acasă fotografii pentru pașaport, viză și acte de identitate, calm și privat. Snapport pregătește doar fotografia; documentul în sine este emis de autoritatea sau instituția competentă. Snapport oferă șabloane pentru dimensiuni uzuale, ghidaje de aliniere a feței și machete gata de tipar, toate procesate direct pe iPhone.</p>
   <h2>Ce să cauți</h2>
   <ul>
     <li>Dimensiuni de fotografii pentru pașaport, viză, carte de identitate, legitimație de student, CV și ecuson de serviciu în multe țări</li>
     <li>Include dimensiuni populare precum SUA 2×2, UK/Schengen/Japonia/Coreea/Australia 35×45 mm, Canada 50×70 mm, China 33×48 mm și altele</li>
-    <li>Creează dimensiuni personalizate în mm, inch sau px, cu orice DPI și fundal</li>
+    <li>Creează dimensiuni personalizate în mm, inch sau px, cu orice DPI</li>
     <li>Detectare facială Apple Vision pe dispozitiv, cu ghidaje pentru creștet, linia ochilor și bărbie</li>
     <li>Ciupire, glisare și rotire; centrează fața automat sau resetează oricând</li>
   </ul>

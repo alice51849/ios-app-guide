@@ -1,11 +1,11 @@
 {
- "generated": "2026-11-21T11:14:03Z",
+ "generated": "2026-11-21T19:23:53Z",
  "mode": "apply",
  "counts": {
-  "ok_reply": 82,
-  "ok_backfilled_earlier": 115,
+  "ok_reply": 84,
+  "ok_backfilled_earlier": 117,
   "unknown_app": 47,
-  "ok_store_only": 616,
+  "ok_store_only": 614,
   "backfilled": 2,
   "ok_bio_link": 68,
   "ok_caption": 4,
@@ -13,6 +13,30 @@
   "missing": 3
  },
  "rows": [
+  {
+   "channel": "threads",
+   "id": "18125698912820590",
+   "permalink": "https://www.threads.com/@hourstag.app/post/DgATrKQlJxk",
+   "date": "2026-11-21",
+   "app": "lumiweather",
+   "status": "ok_reply",
+   "text": "明天（11/22 週日）穿什麼？ 台北 14–23°C 台中 13–25°C 高雄 21–25°C 以台北來說，早晚涼：長袖＋薄外套，洋蔥式穿法方便調整。 日夜溫差 9 度，早上出門多帶一件。 #明天穿什麼 #天氣 預報：MET Norway，僅供參考，出門前以實際天氣為準。 我",
+   "why": "brand",
+   "ios_id": "6779552704",
+   "locale": "zh-Hant"
+  },
+  {
+   "channel": "threads",
+   "id": "18115176188166314",
+   "permalink": "https://www.threads.com/@hourstag.app/post/DgAu3_Qn-2K",
+   "date": "2026-11-21",
+   "app": "ledmovingtext",
+   "status": "ok_reply",
+   "text": "Type a message and hold up your phone, and people can read it in one glance from the back of a crowd. LED Moving Text",
+   "why": "brand",
+   "ios_id": "6806639602",
+   "locale": "en"
+  },
   {
    "channel": "threads",
    "id": "18017425229977416",
@@ -1905,11 +1929,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctgPGLj4HL",
    "date": "2026-08-31",
    "app": "scanto",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "ScanTo Pro: Offline PDF OCR Private scans. Pay once. Scan anything, find it forever. Crisp PDFs, searchable OCR text, and Face ID locking — ",
    "why": "url+brand",
    "ios_id": "6779977651",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "18127171933697464",
+   "at": "2026-11-21T19:21:16Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -2023,16 +2052,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctgbZNgcgE",
    "date": "2026-08-31",
    "app": "snapport",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "Snapport: Passport Photos Passport ID Visa Photos Create passport, visa and ID photos at home with guided sizes, clean backgrounds and print",
    "why": "url+brand",
    "ios_id": "6780575828",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "17901043533405897",
-   "at": "2026-11-21T11:11:35Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",
@@ -2710,11 +2734,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctgUsXilB4",
    "date": "2026-08-31",
    "app": "sereno",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "Sereno: Sleep Sounds Drift off with white noise Buy once, sleep forever. Blend dozens of living sounds into 1000+ unique soundscapes — real-",
    "why": "url+brand",
    "ios_id": "6788236641",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "18110207912319821",
+   "at": "2026-11-21T19:21:16Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -3164,16 +3193,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/Dctgh1vgqNa",
    "date": "2026-08-31",
    "app": "snapportlite",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "Snapport Lite: Make ID Photos Create ID photos at home Make passport, visa, and document photos with guided sizing, background tools, and pr",
    "why": "url+brand",
    "ios_id": "6792856304",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "18196112293422825",
-   "at": "2026-11-21T11:11:35Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",

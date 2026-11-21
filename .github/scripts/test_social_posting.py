@@ -2935,5 +2935,331 @@ class TelegramPoolLinkCoverageTests(unittest.TestCase):
                 self.assertEqual([], telegram_post.download_link_problems(item, telegram_post.compose_text(item)))
 
 
+class TelegramManualQueueTests(unittest.TestCase):
+    """telegram-manual-queue.json (hand-written reviewed posts): the way a reviewed row reaches the channel,
+    and every gate it still passes. The rotation itself (choose_unpublished) is not changed."""
+
+    SNAPPORT, SNAPPORT_LITE, KUMO = "6780575828", "6792856304", "6830824515"
+    JELLYDAY, OFF_ROSTER = "6835673714", "9999999999"
+    DAY = dt.date(2026, 11, 22)
+    EMPTY = {"receipts": {}, "intents": {}}
+
+    @classmethod
+    def setUpClass(cls):
+        cls.pool = _shared_pool()
+        cls.pairs = {(str(i["app"]), i["lang"]): i for i in cls.pool if i.get("source") == "publisher_intent_catalog"}
+        cls.names = telegram_post._catalog_names()
+        # Two ordinary Apps of today's roster that the catalog can post in every language the fixtures use, so
+        # a roster or market change never turns these tests (run before every post) red by itself.
+        special = set(telegram_post.MANUAL_BANNED_COPY) | set(DL.RESTRICTED_COPY_APPS)
+        cls.APP_A, cls.APP_B = sorted(
+            app for app in {app for app, _lang in cls.pairs}
+            if app not in special and all(
+                (app, lang) in cls.pairs and (lang, app) not in telegram_post.MARKET_ROUTING_EXCLUSIONS
+                for lang in ("en-US", "ja", "en-GB", "de-DE")
+            )
+        )[:2]
+
+    # ---- fixtures
+    def row(self, row_id="tg_onepageppt_us_fixture", lang="en-US", app=None, text=None, **extra):
+        text = "Fixture words for one slide, written by hand." if text is None else text
+        row = {"id": row_id, "lang": lang, "app": app or self.APP_A, "text": text,
+               "review": {"receipt": "reports/fixture_receipt.md", "reviewed_on": "2026-11-22",
+                          "text_sha256": telegram_post._digest(text)}}
+        row.update(extra)
+        return row
+
+    def load(self, rows, hold=None):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "queue.json"
+            path.write_text(json.dumps({"schema_version": 1, "hold_apps": hold or {}, "posts": rows},
+                                       ensure_ascii=False), encoding="utf-8")
+            return telegram_post.load_manual_queue(self.pool, path, self.names)
+
+    def item(self, **kwargs):
+        items, refused = self.load([self.row(**kwargs)])
+        self.assertEqual({}, refused)
+        return items[0]
+
+    def at(self, hour, day=None):
+        return dt.datetime.combine(day or self.DAY, dt.time(hour, 5), tzinfo=dt.timezone.utc)
+
+    def choose(self, queue, hour, ledger=None, day=None, blocked=(), qa=None, skip=frozenset()):
+        """choose_manual at one slot, with the day's other-channel picks replaced by `blocked`."""
+        def candidates(pool, channel, now):
+            return [{"app": app} for app in blocked] or [{"app": "7000000009"}]
+        with mock.patch.object(telegram_post, "channel_candidates", side_effect=candidates):
+            return telegram_post.choose_manual(queue, self.pool, ledger or self.EMPTY, self.at(hour, day),
+                                               skip_apps=skip, qa=qa or (lambda item: []))
+
+    def sent(self, item, hour=1, day=None, status="confirmed", manual=True):
+        """A ledger in which `item` took the slot at `hour` of `day`."""
+        slot = dt.datetime.combine(day or self.DAY, dt.time(hour), tzinfo=dt.timezone.utc).isoformat()
+        text = telegram_post.compose_text(item)
+        intent = {"slot": slot, "status": status, "app_store_id": item["app"],
+                  "payload_digest": telegram_post._digest(text)}
+        if manual:
+            intent["manual_id"] = item["manual_id"]
+        return {"receipts": {}, "intents": {slot: intent}}
+
+    # ---- the rotation is unchanged: rows without the catalog source never post
+    def test_static_pool_rows_still_never_post(self):
+        static = {"lang": "ja", "app": self.APP_A, "text": "Static row", "url": f"https://apps.apple.com/app/id{self.APP_A}"}
+        manual = self.item(row_id="tg_onepageppt_jp_fixture", lang="ja", text="手書きのフィクスチャです。")
+
+        def candidates(pool, channel, now):
+            return pool if channel == "telegram:asia" else [{"app": "7000000009"}]
+
+        with mock.patch.object(telegram_post, "channel_candidates", side_effect=candidates):
+            self.assertIsNone(telegram_post.choose_unpublished([static, manual], self.EMPTY, self.at(1)))
+        self.assertNotIn(telegram_post.MANUAL_SOURCE, {item.get("source") for item in self.pool})
+
+    # ---- loading: a row only rides an App x locale pair the catalog can already post
+    def test_a_reviewed_row_rides_the_catalog_pair_and_keeps_its_own_token(self):
+        item = self.item()
+        base = self.pairs[(self.APP_A, "en-US")]
+        self.assertEqual((base["url"], base["image_url"], base["app_key"]), (item["url"], item["image_url"], item["app_key"]))
+        self.assertEqual((telegram_post.MANUAL_SOURCE, "tg_onepageppt_us_fixture"), (item["source"], item["ct"]))
+        text = telegram_post.compose_text(item)
+        self.assertTrue(text.startswith(item["text"]))
+        self.assertIn(f"👉 https://apps.apple.com/app/id{self.APP_A}?pt=118326163&ct=tg_onepageppt_us_fixture&mt=8", text)
+        if self.APP_A in common.android_apps():  # the Google Play link carries the row too
+            self.assertIn("utm_source%3Dtg_onepageppt_us_fixture%26", text)
+        self.assertEqual([], telegram_post.download_link_problems(item, text))
+        self.assertLessEqual(len(text), telegram_post.TG_CAPTION_MAX)
+        # the automatic post of the same pair keeps the channel-level campaign
+        self.assertIn("ct=" + DL.app_campaign("telegram", self.APP_A) + "&", telegram_post.compose_text(base))
+        self.assertEqual(common.footer_for("de"), self.item(row_id="tg_onepageppt_de_fixture", lang="de-DE",
+                                                            text="Handgeschriebener Testtext.")["footer"])
+
+    def test_language_keys_outside_the_50_official_locales_are_refused(self):
+        for lang in ("en", "de", "fr", "zh", "zh-TW", "xx", None):
+            with self.subTest(lang=lang):
+                items, refused = self.load([self.row(lang=lang)])
+                self.assertEqual([], items)
+                self.assertIn("50 official locales", " ".join(refused["tg_onepageppt_us_fixture"]))
+        self.assertEqual(50, len(common.OFFICIAL_SOCIAL_LOCALES))
+
+    def test_an_app_outside_the_verified_live_roster_is_refused(self):
+        outside = [self.OFF_ROSTER]
+        if self.JELLYDAY not in telegram_post.CURRENT_ROSTER_APP_IDS:
+            outside.append(self.JELLYDAY)  # iOS in review (ruling 2026-11-21 items 81 / 105): not postable
+        for app in outside:
+            for lang in ("en-US", "ja", "ko"):
+                with self.subTest(app=app, lang=lang):
+                    items, refused = self.load([self.row(app=app, lang=lang)])
+                    self.assertEqual([], items)
+                    self.assertIn("not in the verified live roster", " ".join(refused["tg_onepageppt_us_fixture"]))
+
+    def test_hold_apps_refuses_an_app_even_when_its_pair_is_postable(self):
+        self.assertIn((self.APP_A, "en-US"), self.pairs)
+        items, refused = self.load([self.row(), self.row(row_id="tg_wifiaidlite_us_fixture", app=self.APP_B,
+                                                         text="Other fixture words.")],
+                                   hold={self.APP_A: "fixture hold"})
+        self.assertEqual(["tg_wifiaidlite_us_fixture"], [item["manual_id"] for item in items])
+        self.assertIn("on hold: fixture hold", " ".join(refused["tg_onepageppt_us_fixture"]))
+
+    def test_the_review_seal_binds_the_words(self):
+        good = self.row()
+        cases = {
+            "no review": {k: v for k, v in good.items() if k != "review"},
+            "no receipt": dict(good, review=dict(good["review"], receipt=" ")),
+            "no date": dict(good, review=dict(good["review"], reviewed_on="22 Nov")),
+            "words changed after the review": dict(good, text=good["text"] + " And one more claim."),
+            "no seal": dict(good, review={k: v for k, v in good["review"].items() if k != "text_sha256"}),
+        }
+        for name, row in cases.items():
+            with self.subTest(name):
+                items, refused = self.load([row])
+                self.assertEqual([], items)
+                self.assertIn("review", " ".join(refused["tg_onepageppt_us_fixture"]))
+
+    def test_ids_urls_dates_and_repeats_are_refused(self):
+        cases = {
+            "id is not a tg_ token": self.row(row_id="soc_tg_onepageppt"),
+            "id too long for an App Store campaign": self.row(row_id="tg_onepageppt_us_" + "a" * 20),
+            "hand-written URL": self.row(text="Read more at https://example.com/x"),
+            "bad date": self.row(not_before="tomorrow"),
+        }
+        for name, row in cases.items():
+            with self.subTest(name):
+                self.assertEqual([], self.load([row])[0])
+        items, refused = self.load([self.row(), self.row(), self.row(row_id="tg_onepageppt_us_again")])
+        self.assertEqual(1, len(items))  # the repeated id and the repeated text are both refused
+        self.assertEqual({"tg_onepageppt_us_fixture", "tg_onepageppt_us_again"}, set(refused))
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "queue.json"
+            self.assertEqual(([], {}), telegram_post.load_manual_queue(self.pool, path, self.names))  # no file
+            path.write_text('{"schema_version": 2, "posts": []}', encoding="utf-8")
+            with self.assertRaises(ValueError):
+                telegram_post.load_manual_queue(self.pool, path, self.names)
+            out = io.StringIO()
+            with mock.patch("sys.stdout", out):
+                self.assertEqual([], telegram_post.manual_queue(self.pool, path))  # never raises into main()
+            self.assertIn("::error::Telegram manual queue unreadable", out.getvalue())
+
+    def test_snapport_rows_may_not_name_the_removed_features(self):
+        banned = ("一鍵換背景，證件照馬上好", "自動去背", "可調亮度與對比", "色溫與銳利度都能調", "膚質柔化",
+                  "Change the background in one tap", "Adjust brightness and contrast", "Sharpen and smooth skin",
+                  "背景を変更できます", "明るさとコントラストを調整", "배경 변경", "Hintergrund ändern")
+        for app in (self.SNAPPORT, self.SNAPPORT_LITE):
+            for text in banned:
+                with self.subTest(app=app, text=text):
+                    lang = "ja" if "背景を" in text or "明るさ" in text else "en-US"
+                    items, refused = self.load([self.row(row_id="tg_snapport_fixture", app=app, lang=lang, text=text)])
+                    self.assertEqual([], items)
+                    self.assertIn("no longer has", " ".join(refused["tg_snapport_fixture"]))
+            clean = self.row(row_id="tg_snapport_fixture", app=app, text="Pick the size template, line up your face, crop and print.")
+            if (app, "en-US") in self.pairs:
+                self.assertEqual(1, len(self.load([clean])[0]))
+        # another App may use the same words
+        self.assertEqual(1, len(self.load([self.row(text="Adjust brightness and contrast of the slide.")])[0]))
+
+    def test_the_download_link_guard_and_the_health_copy_rules_still_apply(self):
+        items, refused = self.load([self.row(row_id="tg_kumo_us_fixture", app=self.KUMO, text="Log every Ozempic shot.")])
+        self.assertEqual([], items)
+        self.assertTrue(refused["tg_kumo_us_fixture"])
+        long_text = "Long fixture words. " * 60
+        items, refused = self.load([self.row(text=long_text.strip())])
+        self.assertEqual([], items)
+        self.assertIn("Telegram caption takes 1024", " ".join(refused["tg_onepageppt_us_fixture"]))
+        item = self.item()
+        context = {"slot": self.at(15).replace(minute=0).isoformat(), "now": self.at(15), "source_sha": "1" * 40,
+                   "generation_digest": "2" * 64, "catalog_digest": "3" * 64, "roster_digest": "4" * 64,
+                   "run_id": "1", "run_attempt": "1"}
+        with mock.patch.object(telegram_post, "compose_text", return_value="Hand-written words, no link"), \
+                mock.patch("sys.stdout", io.StringIO()):
+            with self.assertRaises(DL.MissingDownloadLink):
+                telegram_post.make_intent(item, context)
+        intent = telegram_post.make_intent(item, context)
+        self.assertEqual(("tg_onepageppt_us_fixture", item["review"]), (intent["manual_id"], intent["manual_review"]))
+        with self.assertRaises(ValueError):  # an en-US row cannot borrow the asia slot
+            telegram_post.make_intent(item, dict(context, slot=self.at(1).replace(minute=0).isoformat()))
+
+    # ---- choosing: one existing slot a day, first in first out, the same blocks as the rotation
+    def test_a_row_only_takes_the_slot_of_its_own_language_zone(self):
+        us, ja = self.item(), self.item(row_id="tg_wifiaidlite_jp_fixture", lang="ja", app=self.APP_B,
+                                        text="手書きのフィクスチャです。")
+        gb = self.item(row_id="tg_onepageppt_gb_fixture", lang="en-GB", text="Hand-written fixture for the UK.")
+        self.assertIs(ja, self.choose([ja], 1))
+        self.assertIsNone(self.choose([ja], 9))
+        self.assertIsNone(self.choose([ja], 15))
+        self.assertIs(gb, self.choose([gb], 9))
+        self.assertIs(us, self.choose([us], 15))
+        self.assertIsNone(self.choose([], 15))
+        with self.assertRaises(ValueError):
+            telegram_post.choose_manual([us], self.pool, self.EMPTY, self.at(15), slot="2026-01-01T01:00:00+00:00")
+
+    def test_the_queue_is_first_in_first_out_and_the_first_row_owns_the_day(self):
+        us = self.item()
+        ja = self.item(row_id="tg_wifiaidlite_jp_fixture", lang="ja", app=self.APP_B, text="手書きのフィクスチャです。")
+        self.assertIsNone(self.choose([us, ja], 1))     # the first row goes out later today: asia leaves the day to it
+        self.assertIs(us, self.choose([us, ja], 15))
+        self.assertIs(ja, self.choose([ja, us], 1))
+        self.assertIs(us, self.choose([ja, us], 15))    # the first row's slot passed unused: the next row goes
+        # a first row that cannot go today does not hold the day back
+        self.assertIs(ja, self.choose([us, ja], 1, blocked=(self.APP_A,)))
+        self.assertIs(ja, self.choose([dict(us, not_before="2026-11-23"), ja], 1))
+        self.assertIs(ja, self.choose([dict(us, expires="2026-11-21"), ja], 1))
+        self.assertIsNone(self.choose([dict(us, not_before="2026-11-23"), ja], 1, day=dt.date(2026, 11, 23)))
+
+    def test_at_most_one_hand_written_row_a_utc_day(self):
+        self.assertEqual(1, telegram_post.MANUAL_DAILY_CAP)
+        self.assertEqual(3, len(telegram_post.SLOT_HOURS))
+        ja = self.item(row_id="tg_wifiaidlite_jp_fixture", lang="ja", app=self.APP_B, text="手書きのフィクスチャです。")
+        us = self.item()
+        for status in ("reserved", "unknown", "confirmed", "rejected"):
+            with self.subTest(status=status):
+                self.assertIsNone(self.choose([ja, us], 15, ledger=self.sent(ja, status=status)))
+        self.assertIs(us, self.choose([ja, us], 15, ledger=self.sent(ja, status="not_sent")))  # nothing went out
+        self.assertIs(us, self.choose([ja, us], 15, ledger=self.sent(ja), day=dt.date(2026, 11, 23)))  # the next day
+        self.assertIs(us, self.choose([ja, us], 15, ledger=self.sent(ja, manual=False, status="not_sent")))
+
+    def test_a_row_is_never_sent_twice(self):
+        ja = self.item(row_id="tg_wifiaidlite_jp_fixture", lang="ja", app=self.APP_B, text="手書きのフィクスチャです。")
+        tomorrow = dt.date(2026, 11, 23)
+        self.assertIs(ja, self.choose([ja], 1, day=tomorrow))
+        for status in ("reserved", "unknown", "confirmed"):
+            with self.subTest(status=status):
+                self.assertIsNone(self.choose([ja], 1, ledger=self.sent(ja, status=status), day=tomorrow))
+        # the same id with new words stays sent; the same words under any earlier link shape stay sent
+        reworded = dict(ja, text="書き直したフィクスチャです。")
+        self.assertIsNone(self.choose([reworded], 1, ledger=self.sent(ja), day=tomorrow))
+        for old in (telegram_post.compose_text(ja), telegram_post.compose_text(ja, ct=ja["ct"], channel_level=True),
+                    telegram_post.compose_text(ja, review=False), telegram_post.compose_text(ja, android=False)):
+            ledger = {"intents": {}, "receipts": {"LumiApps2026/1": {
+                "app_store_id": "7000000001", "payload_digest": telegram_post._digest(old),
+                "timestamp": "2026-11-01T01:00:00+00:00"}}}
+            with self.subTest(old=old[-60:]):
+                self.assertIsNone(self.choose([dict(ja, manual_id="tg_other_id")], 1, ledger=ledger, day=tomorrow))
+        named = {"intents": {}, "receipts": {"LumiApps2026/2": {
+            "app_store_id": "7000000001", "payload_digest": "0" * 64, "manual_id": ja["manual_id"],
+            "timestamp": "2026-11-01T01:00:00+00:00"}}}
+        self.assertIsNone(self.choose([ja], 1, ledger=named, day=tomorrow))
+        # Telegram definitely refused it twice: not tried a third time
+        once, twice = self.sent(ja, status="rejected", day=dt.date(2026, 11, 20)), self.sent(ja, status="rejected")
+        self.assertIs(ja, self.choose([ja], 1, ledger=once, day=tomorrow))
+        twice["intents"].update(once["intents"])
+        self.assertIsNone(self.choose([ja], 1, ledger=twice, day=tomorrow))
+
+    def test_the_daily_app_cap_and_the_page_ready_gate_hold_for_a_row(self):
+        ja = self.item(row_id="tg_wifiaidlite_jp_fixture", lang="ja", app=self.APP_B, text="手書きのフィクスチャです。")
+        posted_today = {"intents": {}, "receipts": {"LumiApps2026/1": {
+            "app_store_id": self.APP_B, "payload_digest": "0" * 64, "timestamp": "2026-11-22T00:30:00+00:00"}}}
+        self.assertIsNone(self.choose([ja], 1, ledger=posted_today))                  # same App already posted today
+        self.assertIsNone(self.choose([ja], 1, blocked=(self.APP_B,)))             # another channel's App today
+        self.assertIsNone(self.choose([ja], 1, skip=frozenset({self.APP_B})))      # product page not ready
+        unresolved = {"receipts": {}, "intents": {"2026-11-21T15:00:00+00:00": {
+            "slot": "2026-11-21T15:00:00+00:00", "status": "unknown", "app_store_id": self.APP_B,
+            "payload_digest": "0" * 64}}}
+        self.assertIsNone(self.choose([ja], 1, ledger=unresolved))                    # an uncertain send holds the App
+        self.assertIs(ja, self.choose([ja], 1))
+
+    def test_post_qa_reads_the_words_before_the_slot_is_taken(self):
+        ja = self.item(row_id="tg_wifiaidlite_jp_fixture", lang="ja", app=self.APP_B, text="手書きのフィクスチャです。")
+        us = self.item()
+        out = io.StringIO()
+        with mock.patch("sys.stdout", out):
+            self.assertIs(us, self.choose([ja, us], 15, qa=lambda item: ["fixture refusal"] if item is ja else []))
+            self.assertIsNone(self.choose([ja, us], 1, qa=lambda item: ["fixture refusal"] if item is ja else []))
+        self.assertIn("::error::Telegram manual tg_wifiaidlite_jp_fixture: QA refused: fixture refusal", out.getvalue())
+        with mock.patch.dict(os.environ, {"POST_QA_OFFLINE": "1"}):
+            self.assertEqual([], telegram_post.manual_qa_problems(us))
+            cases = {
+                "superlative": self.item(row_id="tg_a_us_b", text="The best slide maker there is."),
+                "competitor": self.item(row_id="tg_a_us_c", text="Like Canva, but on your phone."),
+                "wrong language": self.item(row_id="tg_a_jp_d", lang="ja", text="English words under a Japanese key."),
+                "template leftover": self.item(row_id="tg_a_us_e", text="Make {name} slides in a tap."),
+                "claim the product page must back": self.item(row_id="tg_a_us_f", text="No ads, pay once, yours."),
+            }
+            for name, item in cases.items():
+                with self.subTest(name):
+                    self.assertTrue(telegram_post.manual_qa_problems(item))
+                    with mock.patch("sys.stdout", io.StringIO()):
+                        self.assertIsNone(self.choose([item], 1 if item["lang"] == "ja" else 15,
+                                                      qa=telegram_post.manual_qa_problems))
+
+    def test_main_reads_the_queue_and_a_broken_queue_never_blocks_the_post(self):
+        store = mock.Mock(spec=telegram_post.GitHubLedger)
+        store.load.return_value = {"intents": {}, "receipts": {}}
+        for queue in (["row"], RuntimeError("fixture")):
+            patch_queue = (mock.patch.object(telegram_post, "manual_queue", return_value=queue) if isinstance(queue, list)
+                           else mock.patch.object(telegram_post, "load_manual_queue", side_effect=queue))
+            with (
+                mock.patch.dict(os.environ, {"TELEGRAM_BOT_TOKEN": "t", "TELEGRAM_CHAT_ID": "@c", "GITHUB_TOKEN": "g"}),
+                mock.patch.object(telegram_post, "production_context", return_value={"source_sha": "1" * 40}),
+                mock.patch.object(telegram_post, "load_pool", return_value=[]),
+                mock.patch.object(telegram_post, "GitHubLedger", return_value=store),
+                mock.patch.object(telegram_post, "read_native_chat", return_value={"id": -1}),
+                mock.patch.object(telegram_post, "reconcile_pending"),
+                mock.patch.object(telegram_post, "page_unready_apps", return_value=frozenset()),
+                mock.patch.object(telegram_post, "publish_once") as publish,
+                mock.patch("sys.stdout", io.StringIO()),
+                patch_queue,
+            ):
+                self.assertEqual(0, telegram_post.main([]))
+            self.assertEqual(queue if isinstance(queue, list) else [], publish.call_args.kwargs["manual"])
+
+
 if __name__ == "__main__":
     unittest.main()

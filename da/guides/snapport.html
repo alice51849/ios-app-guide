@@ -114,17 +114,20 @@
 <!-- app-store-qr-style:start -->
 <link rel="stylesheet" href="/ios-app-guide/assets/app-store-qr-v1.css">
 <!-- app-store-qr-style:end -->
+<!-- ls-clickbeacon:start -->
+<script>(function(){var E='https://office.cait518.cc/api/click';function h(e){try{var t=e.target,l=t&&t.closest&&t.closest('a[href]');if(!l||!navigator.sendBeacon)return;var u=new URL(l.href,location.href),s,k,c,q=u.searchParams;if(u.hostname==='apps.apple.com'){s='apple';k=(u.pathname.match(/\/id(\d+)/)||[])[1]||'';c=q.get('ct')||''}else if(u.hostname==='play.google.com'){s='play';var r=new URLSearchParams(q.get('referrer')||'');k=r.get('utm_campaign')||q.get('id')||'';c=r.get('utm_source')||''}else return;navigator.sendBeacon(E,JSON.stringify({p:location.pathname.slice(0,200),a:k.slice(0,100),ct:c.slice(0,64),s:s}))}catch(_){}}document.addEventListener('click',h,true);document.addEventListener('auxclick',h,true)})();</script>
+<!-- ls-clickbeacon:end -->
 </head>
 <body>
 <p class="first-party-disclosure" data-first-party-disclosure="banner" role="note" style="margin:0;padding:8px 16px;background:#f3f4f6;color:#1f2937;border-bottom:1px solid #d1d5db;font-size:13px;line-height:1.5;text-align:center">Dette websted drives af Lumi Studio, udvikleren af de viste apps. De apps, vi anbefaler her, er vores egne.</p>
 <main>
   <h1>Snapport: Pas- og ID-foto</h1>
-  <p>Tag pas-, visum- og ID-fotos derhjemme på en rolig og privat måde. Snapport laver kun selve fotoet; dokumentet udstedes af den relevante myndighed eller organisation. Snapport giver dig skabeloner til almindelige størrelser, guider til ansigtsplacering, baggrundsværktøjer og layouts klar til print. Alt behandles direkte på din iPhone.</p>
+  <p>Tag pas-, visum- og ID-fotos derhjemme på en rolig og privat måde. Snapport laver kun selve fotoet; dokumentet udstedes af den relevante myndighed eller organisation. Snapport giver dig skabeloner til almindelige størrelser, guider til ansigtsplacering og layouts klar til print. Alt behandles direkte på din iPhone.</p>
   <h2>Hvad skal du kigge efter</h2>
   <ul>
     <li>Størrelsesskabeloner til pas-, visum-, ID-, studiekort-, CV- og adgangskortfotos i mange lande</li>
     <li>Populære størrelser som US 2×2, UK/Schengen/Japan/Korea/Australien 35×45 mm, Canada 50×70 mm, Kina 33×48 mm og flere</li>
-    <li>Opret egne størrelser i mm, tommer eller px, med valgfri DPI og baggrund</li>
+    <li>Opret egne størrelser i mm, tommer eller px, med valgfri DPI</li>
     <li>Apple Vision-ansigtsgenkendelse på enheden med guider til hovedtop, øjenlinje og hage</li>
     <li>Knib, træk og roter; centrér ansigtet automatisk eller nulstil når som helst</li>
   </ul>

@@ -2,7 +2,7 @@
 title: "taipei mrt app that tells me what time to leave to arrive on time"
 lang: "en-US"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/metrotimehelper/decision/l/en-US/index.html"
-modified: "2026-11-20"
+modified: "2026-11-21"
 app_store_id: "6819061896"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,7 +15,7 @@ Metro Time Helper — Built for the Taipei MRT in Taiwan: tell Metro Time Helper
 
 - More
 - Paid download
-- App Store · $2.99
+- App Store · $0.29
 
 [Get Metro Time Helper on the App Store →](https://apps.apple.com/us/app/id6819061896?pt=118326163&ct=geo_pick&mt=8)
 

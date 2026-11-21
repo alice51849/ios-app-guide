@@ -2,7 +2,7 @@
 title: "paid app to open RAR and 7z files on iPhone without ads"
 lang: "en-US"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/zipbox/decision/l/en-US/index.html"
-modified: "2026-11-20"
+modified: "2026-11-21"
 app_store_id: "6806776579"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -20,7 +20,7 @@ Zipbox — Open encrypted and split ZIP, RAR, RAR5 and 7z archives on-device, cr
 - No ads
 - No tracking
 - Private / on-device
-- App Store · $4.99
+- App Store · $0.29
 
 [Get Zipbox on the App Store →](https://apps.apple.com/us/app/id6806776579?pt=118326163&ct=geo_pick&mt=8)
 

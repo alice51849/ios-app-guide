@@ -480,9 +480,10 @@ _CAMPAIGN_PREFIXES = (
 )
 # Sent as they are: experiment cells whose own contract reads the token back (gx_reach_*; th_mochi_<lang>_<nn>, the
 # 2026-10-20..11-01 Threads Mochi trial posts, threads_post.py), the one long-form YouTube token, the Cute To-Do
-# audience-segment links ln_mochi_<seg>_<cc>_<ch>_<MMDD> (segment_ct.py; 00_GrowthEngine ops/company/audience/mochi.md), and
-# any token not listed above (00_GrowthEngine's inventory test names those).
-_CAMPAIGN_KEEP = ("gx_reach_", "yt_longform", "th_mochi_", "ln_mochi_")
+# audience-segment links ln_mochi_<seg>_<cc>_<ch>_<MMDD> (segment_ct.py; 00_GrowthEngine ops/company/audience/mochi.md), the
+# Dual Screen Wallpaper pinned links ln_duo_* (coordinator 2026-11-21 item 76), and any token not listed above
+# (00_GrowthEngine's inventory test names those).
+_CAMPAIGN_KEEP = ("gx_reach_", "yt_longform", "th_mochi_", "ln_mochi_", "ln_duo_")
 # A-2 creator promo-code line (reports/yi30/a2_creators/kit_2026-11-07.md): exactly h_<app>_kol keeps its own
 # row so the line is told apart from the app's other outreach; h_<app>_<cc>_kol and other hero kits still merge.
 _KEEP_EXACT_RE = re.compile(r"^h_[a-z0-9]+_kol$")

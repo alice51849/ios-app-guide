@@ -142,6 +142,36 @@ class SitemapHygieneTests(unittest.TestCase):
             updated,
         )
 
+    def test_hidden_directory_sitemaps_are_never_rewritten_or_indexed(self):
+        # 11-21：部署把 GrowthEngine 檢出在 .high-intent-growth-source，
+        # 改寫到裡面的暫存地圖會讓部署判 source dirty。
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            hidden = pages / ".high-intent-growth-source" / "ops"
+            hidden.mkdir(parents=True)
+            staged = hidden / "sitemap_seasonal_de-DE.xml"
+            original = urlset(f"{gen_locale_indexation.SITE}/de-DE/missing.html")
+            staged.write_text(original, encoding="utf-8")
+            index_path = pages / "sitemap_index.xml"
+            index_path.write_text(sitemap_index(), encoding="utf-8")
+
+            self.assertEqual(gen_locale_indexation.sitemap_candidates(pages), [])
+            from site_tree_index import SiteTreeIndex
+            self.assertEqual(
+                gen_locale_indexation.sitemap_candidates(
+                    pages, SiteTreeIndex.scan(pages)
+                ),
+                [],
+            )
+            gen_locale_indexation.update_sitemap_index(
+                pages, set(), False, False
+            )
+            self.assertEqual(staged.read_text(encoding="utf-8"), original)
+            self.assertNotIn(
+                ".high-intent-growth-source",
+                index_path.read_text(encoding="utf-8"),
+            )
+
     def test_nested_index_and_orphan_maps_are_always_excluded(self):
         with tempfile.TemporaryDirectory() as directory:
             pages = Path(directory)

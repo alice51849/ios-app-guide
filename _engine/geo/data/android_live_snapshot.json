@@ -1,9 +1,9 @@
 {
  "schema": "lumi.android-live-snapshot/v1",
  "source": "AndroidPlay android_live_scan (Play page HTTP 200 + publish LIVE)",
- "source_generated": "2026-11-21T10:52:02+0800",
+ "source_generated": "2026-11-21T23:35:56+0800",
  "count": 60,
- "content_sha256": "6511b353592bc0fc76fb7e52c5eb6380ced96deb6182ad2a6f3c4694c7e80889",
+ "content_sha256": "5c70cad2ba3fc8bf75851244447774807f7fc972c1efa842406bc181399b18b3",
  "apps": {
   "aibriefpack": {
    "ios_app_id": "6791658210",
@@ -409,7 +409,7 @@
    "copy": {
     "en-US": {
      "title": "Kumo: Weight & GLP-1 Tracker",
-     "short_description": "Weight loss, fasting & shot logs in one app, plus a cloud that grows."
+     "short_description": "Weight tracking, fasting & shot logs in one app, plus a cloud that grows."
     },
     "zh-TW": {
      "title": "Kumo 體重紀錄・GLP-1 注射日記",
@@ -1121,7 +1121,7 @@
    "copy": {
     "en-US": {
      "title": "Trip Planet: Kids Travel Quest",
-     "short_description": "Family travel missions for kids 3–10: turn every trip into a space adventure"
+     "short_description": "Family travel game for kids 3–10: tiny missions light up a constellation map"
     },
     "zh-TW": {
      "title": "Trip Planet：親子旅遊・出遊任務",
@@ -1142,7 +1142,7 @@
    "copy": {
     "en-US": {
      "title": "Unblurry Pro: Unblur Photo HD",
-     "short_description": "Unblur photo & photo enhancer: restore old photos, sharpen and upscale offline"
+     "short_description": "Unblur photo & photo enhancer offline. Full version: restore old photos, upscale"
     },
     "zh-TW": {
      "title": "Unblurry Pro：模糊變清晰",

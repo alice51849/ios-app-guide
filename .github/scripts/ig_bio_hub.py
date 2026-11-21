@@ -78,6 +78,10 @@ OUT = OUT_DIR / "index.html"
 ARTWORK = OUT_DIR / "artwork.json"
 
 RECENT = 6                                   # apps in the latest-posts block
+# Pinned on top of the page, before the latest posts, and first in their category (00_GrowthEngine order 11-21
+# item 74 (h): the two main earners, Mochi and Duo Wallpaper Studio, go first on the Instagram profile page).
+# No heading of their own (no new words to translate); not repeated in the latest-posts block.
+PINNED = ("mochi", "duowallpaperstudio")
 IG_CHANNELS = ("instagram", "instagram_feed")
 PROVIDER = "118326163"
 MARKER = "lumi-ig-hub"                       # <meta name=...>: the root-site mirror refuses a page without it
@@ -270,7 +274,8 @@ def app_store_url(ios_id, app, storefront=None):
 class Data:
     """Everything the page needs, read once: the verified catalog, clips, the post log, focus apps, names."""
 
-    def __init__(self, catalog=None, clips=None, posts=None, focus=None, utility_apps=None, artwork=None):
+    def __init__(self, catalog=None, clips=None, posts=None, focus=None, utility_apps=None, artwork=None,
+                 pinned=PINNED):
         catalog = load_json(CATALOG) if catalog is None else catalog
         self.apps = {}
         for a in catalog.get("apps", []):
@@ -284,6 +289,7 @@ class Data:
         self.posts = (load_json(POSTS, {}) if posts is None else posts).get("posts", [])
         focus = load_json(FOCUS, {}) if focus is None else focus
         self.focus = [f.get("key") for f in focus.get("apps", []) if f.get("key")]
+        self.pinned = [k for k in dict.fromkeys(pinned or ()) if k in self.apps]   # not live = not pinned
         if utility_apps is None:
             import utility_cards
             utility_apps = utility_cards.APPS
@@ -346,7 +352,7 @@ class Data:
 
     def recent(self, n=RECENT):
         """The apps of the newest Instagram posts, newest first, one row per app."""
-        out, seen = [], set()
+        out, seen = [], set(self.pinned)
         rows = [p for p in self.posts if p.get("channel") in IG_CHANNELS and p.get("posted_at")]
         for post in sorted(rows, key=lambda p: (p["posted_at"], p.get("clip", "")), reverse=True):
             item = self.post_item(post)
@@ -359,12 +365,12 @@ class Data:
         return out
 
     def groups(self):
-        """[(category, [app key, ...])]: the fixed category order, the focus app first, then by name."""
+        """[(category, [app key, ...])]: the fixed category order, the pinned then the focus apps first, then by name."""
         cats = {}
         for key, a in self.apps.items():
             cats.setdefault(a.get("category") or "utility", []).append(key)
         order = list(CATEGORY_ORDER) + sorted(c for c in cats if c not in CATEGORY_ORDER)
-        rank = {k: i for i, k in enumerate(self.focus)}
+        rank = {k: i for i, k in enumerate(dict.fromkeys(self.pinned + self.focus))}
         return [(c, sorted(cats[c], key=lambda k: (rank.get(k, len(rank)), self.apps[k]["name"].casefold(), k)))
                 for c in order if c in cats]
 
@@ -502,6 +508,10 @@ def render(data):
              f"<style>{' '.join(CSS.split())}</style>", CLICK.click_beacon_block(), "</head>", "<body>", "<main>",
              '<p class="brand">Lumi Studio</p>',
              f'<h1 data-t="h1">{_esc(w["h1"])}</h1>', f'<p class="lead" data-t="lead">{_esc(w["lead"])}</p>']
+    if data.pinned:
+        parts += ['<section class="latest pinned">', "<ul>"]
+        parts += [_row(data, k, data.apps[k]["name"], "", None, 64, localize=True) for k in data.pinned]
+        parts += ["</ul>", "</section>"]
     if recent:
         parts += ['<section class="latest">', f'<h2 data-t="latest">{_esc(w["latest"])}</h2>', "<ul>"]
         parts += [_row(data, it["key"], it["name"], it["hook"], it["storefront"], 64, lang=it["locale"])

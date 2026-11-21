@@ -60,7 +60,9 @@ ART = {MOCHI_ID: "https://is1-ssl.mzstatic.com/image/thumb/a/100x100bb.jpg"}
 
 
 def data(**over):
-    kw = dict(catalog=CATALOG, clips=CLIPS, posts=POSTS, focus=FOCUS, utility_apps=UTILITY, artwork=dict(ART))
+    # pinned=() keeps the older tests on the plain order; PinnedAppsTest covers the pinned apps.
+    kw = dict(catalog=CATALOG, clips=CLIPS, posts=POSTS, focus=FOCUS, utility_apps=UTILITY, artwork=dict(ART),
+              pinned=())
     kw.update(over)
     return H.Data(**kw)
 
@@ -185,6 +187,38 @@ class HubDataTest(unittest.TestCase):
     def test_an_empty_catalog_builds_nothing(self):
         with self.assertRaises(ValueError):
             data(catalog={"apps": []})
+
+
+class PinnedAppsTest(unittest.TestCase):
+    """Order 11-21 item 74 (h): Mochi and Duo Wallpaper Studio first on the profile page - above the latest posts,
+    first in their category, not repeated in the latest-posts block; every other app and every link stays."""
+
+    def page(self, d):
+        with mock.patch.object(H, "play_store_url", side_effect=play_for):
+            return H.render(d)
+
+    def test_the_default_pins_are_mochi_then_duo(self):
+        self.assertEqual(H.PINNED, ("mochi", "duowallpaperstudio"))
+
+    def test_pinned_apps_come_first_and_nothing_else_is_lost(self):
+        d = data(pinned=("maskmyfile", "mochi", "gone"))            # "gone" is not live: never pinned
+        self.assertEqual(d.pinned, ["maskmyfile", "mochi"])
+        self.assertEqual([r["key"] for r in d.recent()], ["claudeusagemini", "lumibopomofo"])
+        groups = dict(d.groups())
+        self.assertEqual(groups["productivity"], ["mochi", "claudeusagemini"])
+        page = self.page(d)
+        self.assertEqual(H.problems(page, min_links=8), [])
+        top = page.split('<section class="latest">')[0]
+        self.assertLess(top.index('data-app="maskmyfile"'), top.index('data-app="mochi"'))
+        self.assertNotIn('data-app="claudeusagemini"', top)
+        self.assertIn(f"https://apps.apple.com/app/id{MOCHI_ID}?pt=118326163&amp;ct=ig_bio_mochi&amp;mt=8", top)
+        self.assertIn("utm_source%3Dig_bio_mochi", top)               # Google Play next to it, same label
+        everyone = set(re.findall(r'data-app="([a-z0-9]+)"', page.split('<section class="all">')[1]))
+        self.assertEqual(everyone, set(d.apps))                       # the full list still has every app
+        self.assertEqual(page, self.page(data(pinned=("maskmyfile", "mochi", "gone"))))
+
+    def test_no_pins_no_pinned_block(self):
+        self.assertNotIn('class="latest pinned"', self.page(data()))
 
 
 class HubPageTest(unittest.TestCase):

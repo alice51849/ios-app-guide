@@ -35,6 +35,7 @@ from canonical_urls import canonical_url_for_html  # noqa: E402
 from site_tree_index import SiteTreeIndex  # noqa: E402
 from site_config import PUBLIC_SITE  # noqa: E402
 import scaled_content_gate  # noqa: E402
+import indexation_priority  # noqa: E402
 
 PAGES = Path(os.environ.get("GEO_PAGES", HERE / "pages"))
 SITE = os.environ.get("GEO_SITE", PUBLIC_SITE).rstrip("/")
@@ -63,6 +64,10 @@ SITEMAP_ENTRY_RE = re.compile(
     re.IGNORECASE,
 )
 ORPHAN_SITEMAP = "sitemap_orphans.xml"
+# 路線 99（2026-11-21）：優先網站地圖由本支每輪重產，排在索引第一條；
+# oembed／api 資料格式子地圖移出索引（檔案保留）。規則正本在 indexation_priority.py。
+PRIORITY_SITEMAP = indexation_priority.PRIORITY_SITEMAP
+INDEX_EXCLUDED_SITEMAPS = indexation_priority.INDEX_EXCLUDED_SITEMAPS
 
 
 @dataclass
@@ -76,6 +81,7 @@ class IndexationResult:
     dropped_sitemaps: int
     orphan_urls: int
     scaled_gated: frozenset[str] = frozenset()
+    priority_urls: int = 0
 
 
 # ------------------------------------------------------------------ locale model
@@ -262,7 +268,7 @@ def sitemap_candidates(
     pages: Path,
     tree: SiteTreeIndex | None = None,
 ) -> list[Path]:
-    excluded_names = {"sitemap_index.xml", ORPHAN_SITEMAP}
+    excluded_names = {"sitemap_index.xml", ORPHAN_SITEMAP, PRIORITY_SITEMAP}
     candidates = (
         tuple(
             pages / path.relative_to(tree.root)
@@ -288,11 +294,12 @@ def prune_sitemaps(
     removed_dead = 0
     removed_ghost = 0
     removed_noindex = 0
+    removed_unpublished = 0
     emptied: set[str] = set()
     kept_urls: set[str] = set()
     for path in sitemap_candidates(pages, tree):
         source = path.read_text(encoding="utf-8")
-        stats = {"dead": 0, "ghost": 0, "noindex": 0, "kept": 0}
+        stats = {"dead": 0, "ghost": 0, "noindex": 0, "unpublished": 0, "kept": 0}
 
         def keep(match: re.Match[str]) -> str:
             body = match.group(0)
@@ -311,6 +318,9 @@ def prune_sitemaps(
             )
             if locale in dead:
                 stats["dead"] += 1
+                return ""
+            if indexation_priority.is_unpublished_relative(content_rel):
+                stats["unpublished"] += 1
                 return ""
             target = pages / content_rel
             target_exists = (
@@ -335,6 +345,7 @@ def prune_sitemaps(
         removed_dead += stats["dead"]
         removed_ghost += stats["ghost"]
         removed_noindex += stats["noindex"]
+        removed_unpublished += stats["unpublished"]
         if stats["kept"] == 0:
             emptied.add(path.relative_to(pages).as_posix())
         if updated != source and not check:
@@ -343,6 +354,7 @@ def prune_sitemaps(
         "urls_dropped_non_store": removed_dead,
         "urls_dropped_missing_file": removed_ghost,
         "urls_dropped_noindex": removed_noindex,
+        "urls_dropped_unpublished": removed_unpublished,
         "sitemaps_emptied": len(emptied),
         "_emptied": emptied,
         "_kept": kept_urls,
@@ -359,6 +371,9 @@ def indexable_pages(
     for rel in tree.html_relatives():
         locale = rel.split("/")[0] if "/" in rel else ""
         if locale in dead:
+            continue
+        # 點開頭目錄（.github/growth/drafts/…）線上 404：不算可索引、不進孤兒地圖。
+        if indexation_priority.is_unpublished_relative(rel):
             continue
         if tree.facts(rel).noindex:
             continue
@@ -433,12 +448,40 @@ def write_orphan_sitemap(
     return len(urls)
 
 
+def write_priority_sitemap(
+    pages: Path,
+    indexable: set[str],
+    canonical_by_relative: dict[str, str],
+    check: bool,
+) -> int:
+    """優先網站地圖：只放站上可索引的優先頁，對照組一律不放。"""
+    path = pages / PRIORITY_SITEMAP
+    control = indexation_priority.load_control_relatives()
+    relatives = indexation_priority.priority_relatives(indexable, control=control)
+    urls = list(
+        dict.fromkeys(
+            canonical_by_relative.get(rel, f"{SITE}/{rel}") for rel in relatives
+        )
+    )
+    if not urls:
+        if path.is_file() and not check:
+            path.unlink()
+        return 0
+    content = indexation_priority.render_urlset(urls)
+    if not check and (
+        not path.is_file() or path.read_text(encoding="utf-8") != content
+    ):
+        path.write_text(content, encoding="utf-8")
+    return len(urls)
+
+
 def update_sitemap_index(
     pages: Path,
     emptied: set[str],
     add_orphans: bool,
     check: bool,
     tree: SiteTreeIndex | None = None,
+    add_priority: bool = False,
 ) -> int:
     path = pages / "sitemap_index.xml"
     if not path.is_file():
@@ -458,7 +501,11 @@ def update_sitemap_index(
         candidates.add(ORPHAN_SITEMAP)
     else:
         candidates.discard(ORPHAN_SITEMAP)
-    valid = [
+    if add_priority:
+        candidates.add(PRIORITY_SITEMAP)
+    else:
+        candidates.discard(PRIORITY_SITEMAP)
+    valid = indexation_priority.sitemap_index_order([
         rel
         for rel in sorted(candidates)
         if (
@@ -466,7 +513,7 @@ def update_sitemap_index(
             and (pages / rel).is_file()
             and sitemap_has_entries(pages / rel)
         )
-    ]
+    ])
     items = "\n".join(
         f"  <sitemap><loc>{SITE}/{rel}</loc></sitemap>"
         for rel in valid
@@ -556,19 +603,26 @@ def run_indexation(
         covered_urls,
         tree,
     )
+    canonical_by_relative = indexable_canonical_map(
+        pages,
+        indexable,
+        tree,
+    )
+    priority_urls = write_priority_sitemap(
+        pages,
+        indexable,
+        canonical_by_relative,
+        check,
+    )
     dropped_sitemaps = update_sitemap_index(
         pages,
         emptied,
         bool(orphans),
         check,
         tree,
+        add_priority=bool(priority_urls),
     )
     update_robots(pages, bool(orphans), check)
-    canonical_by_relative = indexable_canonical_map(
-        pages,
-        indexable,
-        tree,
-    )
     return IndexationResult(
         tree=tree,
         dead_locales=dead,
@@ -579,6 +633,7 @@ def run_indexation(
         dropped_sitemaps=dropped_sitemaps,
         orphan_urls=orphans,
         scaled_gated=gated,
+        priority_urls=priority_urls,
     )
 
 
@@ -602,9 +657,12 @@ def print_result(result: IndexationResult) -> None:
         "sitemap-hygiene: dropped_non_store={urls_dropped_non_store} "
         "dropped_missing_file={urls_dropped_missing_file} "
         "dropped_noindex={urls_dropped_noindex} "
-        "sitemaps_unhooked={dropped} orphan_urls_added={orphans}".format(
+        "dropped_unpublished={urls_dropped_unpublished} "
+        "sitemaps_unhooked={dropped} orphan_urls_added={orphans} "
+        "priority_urls={priority}".format(
             dropped=result.dropped_sitemaps,
             orphans=result.orphan_urls,
+            priority=result.priority_urls,
             **result.sitemap_stats,
         )
     )

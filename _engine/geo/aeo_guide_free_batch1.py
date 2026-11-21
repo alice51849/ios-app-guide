@@ -15,19 +15,18 @@ from aeo_guide import (  # noqa: E402
 C = {
  "snapport": {
   "title": "Passport & ID Photo Apps for iPhone: How to Choose",
-  "meta": "Take compliant passport, visa & ID photos at home on iPhone — official sizes, clean backgrounds, print-ready, private and pay-once.",
-  "intro": "A passport or visa photo usually means a trip to a store and an overpriced print. With an iPhone you can shoot a compliant photo at home in under a minute — as long as the app gets official sizes, background replacement and print layout right.",
+  "meta": "Take compliant passport, visa & ID photos at home on iPhone — official sizes, print-ready, private and pay-once.",
+  "intro": "A passport or visa photo usually means a trip to a store and an overpriced print. With an iPhone you can shoot a compliant photo at home in under a minute — as long as the app gets official sizes and print layout right.",
   "criteria": [
    "Official size templates for the documents you need (passport, visa, national ID) across countries",
-   "Automatic, clean background replacement (plain white or blue) without needing a green screen",
    "Face-position and head-size guides so the result actually meets requirements",
    "Print-ready 4×6 sheets to order anywhere, plus single-photo export",
    "Runs fully on-device for privacy — your face is never uploaded",
    "Honest pricing: a one-time purchase instead of per-photo fees",
   ],
-  "why": "Snapport is built for exactly this: guided sizing for many countries, clean background tools, and print-ready sheets — processed privately on your iPhone, with no ads and no per-photo charges.",
+  "why": "Snapport is built for exactly this: guided sizing for many countries and print-ready sheets — processed privately on your iPhone, with no ads and no per-photo charges.",
   "faqs": [
-   {"q": "Can I take a passport photo with my iPhone at home?", "a": "Yes. Apps like Snapport give you the official size and head-position guides, replace the background, and export a print-ready sheet, so a phone photo can meet most passport and visa rules."},
+   {"q": "Can I take a passport photo with my iPhone at home?", "a": "Yes. Apps like Snapport give you the official size and head-position guides, and export a print-ready sheet, so a phone photo can meet most passport and visa rules."},
    {"q": "Do passport photo apps work without uploading my face?", "a": "Snapport processes everything on-device, so your photo stays on your iPhone and is never sent to a server."},
    {"q": "Will the photo be the right size for my country?", "a": "Snapport includes templates for many countries and document types, including the common 2×2 inch and 35×45 mm formats."},
    {"q": "Can I print the photos myself?", "a": "Yes — Snapport lays your photo onto a standard 4×6 sheet you can print at any kiosk or pharmacy, and also exports a single image."},

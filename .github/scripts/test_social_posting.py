@@ -1301,8 +1301,9 @@ class DailyPortfolioCoverageTests(unittest.TestCase):
                 messages = builder(self.apps)
                 portfolio_daily.validate_coverage(platform, self.apps, messages)
                 combined = "\n".join(message.text for message in messages)
-                campaign = portfolio_daily.PLATFORM_CAMPAIGNS[platform]
+                focus = messages[0].focus_app_id
                 for app in self.apps:
+                    campaign = portfolio_daily.app_campaign_for(platform, app.app_id, focus)
                     self.assertIn(app.name, combined)
                     self.assertEqual(
                         1, combined.count(app.appstore_url(campaign))
@@ -1614,7 +1615,7 @@ class TelegramDailyCatalogTests(unittest.TestCase):
 
     def test_catalog_has_its_own_tracking_token_on_every_link(self):
         campaign = portfolio_daily.PLATFORM_CAMPAIGNS["telegram"]
-        self.assertEqual("soc_tg_digest", campaign)
+        self.assertEqual("tgdigest", campaign)
         self.assertNotEqual("soc_tg_guide", campaign)
         messages = portfolio_daily.telegram_messages(
             self.apps, today=dt.date(2026, 10, 16)
@@ -1626,11 +1627,16 @@ class TelegramDailyCatalogTests(unittest.TestCase):
             if line.strip().startswith("https://apps.apple.com/app/id")
         ]
         self.assertEqual(len(self.apps), len(links))
-        # the digest's label (soc_tg_digest) leaves as the Telegram channel's campaign, like every Telegram post
+        # 2026-11-21 第 92 項：the digest list leaves as tgdigest, the 今日焦點 App as tgfocus (own rows, unmerged)
+        focus = messages[0].focus_app_id
+        self.assertTrue(focus)
         for link in links:
             app_id = DL.app_store_id(link)
-            self.assertIn("ct=" + DL.app_campaign("telegram", app_id) + "&", link)
+            token = "tgfocus" if app_id == focus else "tgdigest"
+            self.assertIn("ct=" + token + "&", link)
         self.assertNotIn("ct=soc_tg_", combined)
+        self.assertNotIn("ct=social&", combined)
+        self.assertNotIn("ct=telegram&", combined)
 
     def test_catalog_lists_the_tracked_play_link_of_every_android_app(self):
         campaign = portfolio_daily.PLATFORM_CAMPAIGNS["telegram"]
@@ -1652,15 +1658,81 @@ class TelegramDailyCatalogTests(unittest.TestCase):
         for app in on_play:
             key = android[app.app_id]["key"]
             with self.subTest(app=key):
+                app_label = portfolio_daily.app_campaign_for(
+                    "telegram", app.app_id, messages[0].focus_app_id
+                )
                 expected = (
                     f"Google Play: {android[app.app_id]['play_url']}&referrer="
-                    f"utm_source%3D{DL.app_campaign('telegram', app.app_id)}%26utm_campaign%3D{key}"
+                    f"utm_source%3D{DL.app_campaign(app_label, app.app_id)}%26utm_campaign%3D{key}"
                 )
                 self.assertIn(expected, play_lines)
                 # The Play line sits right under the App's own App Store line.
-                store = app.appstore_url(campaign)
+                store = app.appstore_url(app_label)
                 self.assertIn(f"  {store}\n  {expected}", combined)
         self.assertNotIn("lumi_social", combined)
+
+    def test_catalog_focus_app_has_its_own_token_on_both_stores(self):
+        # 第 92 項第 4 點②：焦點款的 App Store ct 與 Play utm_source 都是 tgfocus，其餘款 tgdigest，出口不改碼
+        day = dt.date(2026, 11, 21)
+        messages = portfolio_daily.telegram_messages(self.apps, today=day)
+        portfolio_daily.validate_coverage("telegram", self.apps, messages)
+        focus = messages[0].focus_app_id
+        self.assertTrue(focus)
+        self.assertEqual({focus}, {message.focus_app_id for message in messages})
+        post = portfolio_daily.spotlight_post(self.apps, day)
+        self.assertEqual(post["app_id"], focus)
+        self.assertIn(f"今日焦點｜{post['name']}\n", messages[0].text)
+        combined = "\n".join(message.text for message in messages)
+        self.assertEqual(1, combined.count("ct=tgfocus&"))
+        others = [app for app in self.apps if app.app_id != focus]
+        self.assertEqual(len(others), combined.count("ct=tgdigest&"))
+        for token in ("tgdigest", "tgfocus"):
+            self.assertEqual(token, DL.coarse_campaign(token))
+            for app in self.apps:
+                self.assertEqual(token, DL.app_campaign(token, app.app_id))
+        android = common.android_apps()
+        if focus in android:
+            self.assertIn(f"utm_source%3Dtgfocus%26utm_campaign%3D{android[focus]['key']}", combined)
+        self.assertEqual(
+            sum(1 for app in others if app.app_id in android),
+            combined.count("utm_source%3Dtgdigest%26"),
+        )
+
+    def test_catalog_refuses_a_focus_link_sent_with_the_digest_token(self):
+        messages = portfolio_daily.telegram_messages(
+            self.apps, today=dt.date(2026, 11, 21)
+        )
+        focus = messages[0].focus_app_id
+        self.assertTrue(focus)
+        swapped = [
+            portfolio_daily.DigestMessage(
+                message.text.replace("ct=tgfocus&", "ct=tgdigest&"),
+                message.app_ids,
+                message.focus_app_id,
+            )
+            for message in messages
+        ]
+        with self.assertRaises(portfolio_daily.CoverageError):
+            portfolio_daily.validate_coverage("telegram", self.apps, swapped)
+        # a focus App that is not in the digest is refused too
+        stray = [
+            portfolio_daily.DigestMessage(message.text, message.app_ids, "1")
+            for message in messages
+        ]
+        with self.assertRaises(portfolio_daily.CoverageError):
+            portfolio_daily.validate_coverage("telegram", self.apps, stray)
+
+    def test_catalog_language_pitch_claims_no_count_some_app_lacks(self):
+        # 第 92 項第 4 點③：商店列出的語言數每款 43～53、描述寫 40～50，「每款都 50 種」不實
+        pitch = portfolio_daily.TELEGRAM_LANGUAGE_PITCH
+        self.assertNotIn("50 種語言", pitch)
+        self.assertEqual("🌏 每款都支援 40 種以上語言。\n\n", pitch)
+        self.assertNotIn("App 內一鍵切換", pitch)
+        self.assertNotIn("各用各的", pitch)
+        messages = portfolio_daily.telegram_messages(
+            self.apps, today=dt.date(2026, 11, 21)
+        )
+        self.assertTrue(all(pitch in message.text for message in messages))
 
     def test_catalog_leaves_the_play_line_out_for_an_ios_only_app(self):
         android = dict(common.android_apps())

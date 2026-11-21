@@ -42,9 +42,13 @@ SITE_URL = "https://open.cait518.cc/ios-app-guide"
 LINKSET_PATH = REPO_ROOT / "linkset.json"
 TELEGRAM_LIMIT = 3900
 # The portfolio's one real differentiator, stated in every daily digest.
+# No single number: the App Store lists 43-53 languages per App (lookup
+# languageCodesISO2A, 2026-11-21) and the descriptions say 40-50, so the only
+# count true of every App is "40 種以上"; each App's own count stays in its
+# spotlight post (Cyca: 44, as its store listing). Not every App's description
+# says the language switches inside the App, so the digest does not claim it.
 TELEGRAM_LANGUAGE_PITCH = (
-    "🌏 每款都支援 50 種語言，App 內一鍵切換、不必改手機語言："
-    "家人用中文、看護用印尼文或越南文、孩子用英文，同一支手機各用各的。\n\n"
+    "🌏 每款都支援 40 種以上語言。\n\n"
 )
 PLAY_LINK_RE = re.compile(r"https://play\.google\.com/store/apps/details\?\S+")
 THREADS_LIMIT = threads_post.MAX_POST_CHARS
@@ -64,10 +68,22 @@ DIGEST_JOBS = {
 }
 # The digest has its own token so its clicks/downloads are not mixed with the
 # single-App Telegram posts (soc_tg_guide) in App Store Connect Campaigns.
+# soc_tg_digest left as the shared telegram/social row (download_links.coarse_campaign),
+# so from 2026-11-22 the digest list sends tgdigest and the day's 今日焦點 App tgfocus:
+# both are own rows in 00_GrowthEngine agent/ct_codes.py and leave unchanged through
+# download_links.app_campaign (Play utm_source carries the same token).
 PLATFORM_CAMPAIGNS = {
-    "telegram": "soc_tg_digest",
+    "telegram": "tgdigest",
     "threads": "soc_th_guide",
 }
+TELEGRAM_FOCUS_CAMPAIGN = "tgfocus"
+
+
+def app_campaign_for(platform, app_id, focus_app_id=""):
+    """The ct label of one App's links in a digest: the focus App's own label on Telegram."""
+    if platform == "telegram" and focus_app_id and str(app_id) == str(focus_app_id):
+        return TELEGRAM_FOCUS_CAMPAIGN
+    return PLATFORM_CAMPAIGNS[platform]
 
 CATEGORY_ORDER = {
     "kids": 0,
@@ -145,6 +161,8 @@ class PublicApp:
 class DigestMessage:
     text: str
     app_ids: tuple[str, ...]
+    # The digest's 今日焦點 App (the same on every batch of the day), "" when none.
+    focus_app_id: str = ""
 
 
 def _title(item):
@@ -504,24 +522,35 @@ def spotlight_focus_ids(day, directory=None):
     }
 
 
-def spotlight_block(apps, today=None, directory=None, skip_apps=frozenset()):
+def spotlight_post(apps, today=None, directory=None, skip_apps=frozenset()):
+    """The day's 今日焦點 post ({app_id, name, text}), or None."""
     # Apps failing the page-ready gate (< 3 screenshots) never take the spotlight.
     posts = [post for post in load_spotlight_posts(apps, directory) if post["app_id"] not in skip_apps]
     if not posts:
-        return ""
+        return None
     day = today or dt.datetime.now(dt.timezone.utc).date()
     focus_ids = spotlight_focus_ids(day, directory)
     posts = [post for post in posts if post["app_id"] in focus_ids] or posts
-    post = posts[day.toordinal() % len(posts)]
+    return posts[day.toordinal() % len(posts)]
+
+
+def spotlight_text(post):
+    if not post:
+        return ""
     # No extra link: the digest keeps one tracked link per App and store (App Store, Google Play).
     return f"🔦 今日焦點｜{post['name']}\n{post['text']}\n（下載連結在下方清單）\n\n"
 
 
+def spotlight_block(apps, today=None, directory=None, skip_apps=frozenset()):
+    return spotlight_text(spotlight_post(apps, today, directory, skip_apps))
+
+
 def telegram_messages(apps, today=None, skip_spotlight_apps=frozenset()):
     total = len(apps)
-    campaign = PLATFORM_CAMPAIGNS["telegram"]
     footer = f"\n\n完整開發者頁：{DEVELOPER_URL}"
-    spotlight = spotlight_block(apps, today, skip_apps=skip_spotlight_apps)
+    focus = spotlight_post(apps, today, skip_apps=skip_spotlight_apps)
+    focus_app_id = focus["app_id"] if focus else ""
+    spotlight = spotlight_text(focus)
     reserved_header = (
         f"✨ 每日全 App 精選｜{total} 款｜第 99/99 則\n\n"
         f"{spotlight}"
@@ -534,6 +563,7 @@ def telegram_messages(apps, today=None, skip_spotlight_apps=frozenset()):
             DISPLAY_CATEGORY_OVERRIDES.get(app.key, app.category),
             CATEGORY_ZH["other"],
         )
+        campaign = app_campaign_for("telegram", app.app_id, focus_app_id)
         play = app.play_url(campaign)
         return (
             f"• {category}｜{app.name}\n"
@@ -562,7 +592,9 @@ def telegram_messages(apps, today=None, skip_spotlight_apps=frozenset()):
         text = header + "\n".join(entry(app) for app in batch) + footer
         if len(text) > TELEGRAM_LIMIT:
             raise CoverageError(f"Telegram digest is too long: {len(text)}")
-        messages.append(DigestMessage(text, tuple(app.app_id for app in batch)))
+        messages.append(
+            DigestMessage(text, tuple(app.app_id for app in batch), focus_app_id)
+        )
     return messages
 
 
@@ -606,8 +638,7 @@ def threads_messages(apps):
 
 
 def validate_coverage(platform, apps, messages):
-    campaign = PLATFORM_CAMPAIGNS.get(platform)
-    if campaign is None:
+    if PLATFORM_CAMPAIGNS.get(platform) is None:
         raise CoverageError(f"Unsupported platform: {platform}")
     expected = [app.app_id for app in apps]
     observed = [
@@ -624,9 +655,18 @@ def validate_coverage(platform, apps, messages):
         )
     by_id = {app.app_id: app for app in apps}
     link_pattern = re.compile(r"https?://apps\.apple\.com/app/id\d+\S*")
+    focus_ids = {message.focus_app_id for message in messages}
+    if len(focus_ids) > 1 or (focus_ids - {""}) - set(expected):
+        raise CoverageError(f"{platform} focus App invalid: {sorted(focus_ids)}")
+    if platform != "telegram" and focus_ids - {""}:
+        raise CoverageError(f"{platform} digest has no focus App: {sorted(focus_ids)}")
+
+    def campaign(app_id, message):
+        return app_campaign_for(platform, app_id, message.focus_app_id)
+
     for message in messages:
         expected_urls = [
-            by_id[app_id].appstore_url(campaign)
+            by_id[app_id].appstore_url(campaign(app_id, message))
             for app_id in message.app_ids
         ]
         observed_urls = link_pattern.findall(message.text)
@@ -635,12 +675,12 @@ def validate_coverage(platform, apps, messages):
                 f"{platform} direct links invalid: "
                 f"expected={expected_urls}, observed={observed_urls}"
             )
-        for url in observed_urls:
+        for app_id, url in zip(message.app_ids, observed_urls):
             parsed = urllib.parse.urlsplit(url)
             bare = urllib.parse.urlunsplit(
                 (parsed.scheme, parsed.netloc, parsed.path, "", "")
             )
-            if campaign_app_store_url(bare, campaign) != url:
+            if campaign_app_store_url(bare, campaign(app_id, message)) != url:
                 raise CoverageError(
                     f"{platform} App Store URL attribution is invalid: {url}"
                 )
@@ -649,7 +689,8 @@ def validate_coverage(platform, apps, messages):
             expected_play = [
                 play
                 for play in (
-                    by_id[app_id].play_url(campaign) for app_id in message.app_ids
+                    by_id[app_id].play_url(campaign(app_id, message))
+                    for app_id in message.app_ids
                 )
                 if play
             ]

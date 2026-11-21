@@ -2,7 +2,7 @@
 title: "best travel budget tracker app no subscription iphone"
 lang: "en-US"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gmoney/decision/l/en-US/index.html"
-modified: "2026-11-20"
+modified: "2026-11-21"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -20,7 +20,7 @@ On a trip you need a budget tracker that works offline in a country with no data
 - No ads
 - No tracking
 - Private / on-device
-- App Store · $4.99
+- App Store · $0.29
 
 [Get G+Money on the App Store →](https://apps.apple.com/us/app/id6755782939?pt=118326163&ct=geo_pick&mt=8)
 

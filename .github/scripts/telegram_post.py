@@ -736,7 +736,9 @@ TG_CT_MAX = 30  # social_post_common.APP_STORE_CAMPAIGN_RE
 
 def telegram_campaign(item, with_locale=None):
     """soc_tg_<app_key>[_<lang>], only [a-z0-9_] and at most TG_CT_MAX characters; soc_tg_guide when the
-    item has no publisher app key."""
+    item has no publisher app key. A hand-written reviewed row (MANUAL_SOURCE) names its own token."""
+    if item.get("source") == MANUAL_SOURCE:
+        return item["ct"]
     key = str(item.get("app_key") or "")
     if re.fullmatch(r"[a-z0-9]+", key) is None:
         return LEGACY_TG_CT
@@ -772,7 +774,11 @@ def compose_text(item, android=True, review=True, ct=None, legacy_play=False, ch
     """The post text. Its links carry the Telegram campaign (download_links.coarse_campaign turns the label,
     soc_tg_<app> by default, into "telegram"); channel_level=False rebuilds a text sent before 2026-10-17 with the
     label itself as ct, so _sent_digests still recognises it; duo=False rebuilds a text without the iPhone Duo line
-    (texts sent before 2026-10-21, or while the line was not due)."""
+    (texts sent before 2026-10-21, or while the line was not due). A hand-written reviewed row (MANUAL_SOURCE)
+    leaves with its own tg_<app>_<market>_<angle> token as written, so the post can be told apart (owner rule
+    2.11); every other text keeps the channel-level campaign."""
+    if ct is None and item.get("source") == MANUAL_SOURCE:
+        channel_level = False
     ct = telegram_campaign(item) if ct is None else ct
     url = campaign_app_store_url(item.get("url"), ct, channel_level=channel_level)
     if not android:
@@ -1191,15 +1197,11 @@ def launch_first(eligible, pool, ledger, day, launched_today, launched=None):
     return fresh + rest, True
 
 
-def choose_unpublished(pool, ledger, now, slot=None, skip_apps=frozenset()):
-    from social_slot_gate import slot_start
-
-    now = now.astimezone(_dt.timezone.utc)
-    scheduled = slot_start(now, SLOT_HOURS) if slot is None else _timestamp(slot)
-    if scheduled != slot_start(now, SLOT_HOURS):
-        raise ValueError("candidate selection must use the current authoritative slot")
-    zone = _zone(scheduled.hour)
-    channel = f"telegram:{zone}"
+def _slot_blocks(pool, ledger, now, channel):
+    """(covered, today_apps, blocked_apps, used) of this slot: the Apps with any native receipt, the Apps posted
+    today, the Apps this slot may not post (posted today, first pick of another channel today, or held by an
+    unresolved reservation) and every payload digest that went out or is reserved. One reading for the
+    automatic rotation and the hand-written queue, so both keep the same daily App cap and replay protection."""
     other_channel_apps = {
         str(channel_candidates(pool, other, now)[0]["app"])
         for other in CHANNEL_ORDER if other != channel
@@ -1221,6 +1223,19 @@ def choose_unpublished(pool, ledger, now, slot=None, skip_apps=frozenset()):
         intent["payload_digest"] for intent in ledger["intents"].values()
         if intent["status"] in {"reserved", "unknown", "confirmed"}
     }
+    return covered, today_apps, blocked_apps, used
+
+
+def choose_unpublished(pool, ledger, now, slot=None, skip_apps=frozenset()):
+    from social_slot_gate import slot_start
+
+    now = now.astimezone(_dt.timezone.utc)
+    scheduled = slot_start(now, SLOT_HOURS) if slot is None else _timestamp(slot)
+    if scheduled != slot_start(now, SLOT_HOURS):
+        raise ValueError("candidate selection must use the current authoritative slot")
+    zone = _zone(scheduled.hour)
+    channel = f"telegram:{zone}"
+    covered, today_apps, blocked_apps, used = _slot_blocks(pool, ledger, now, channel)
     eligible = [
         item for item in channel_candidates(pool, channel, now)
         if item.get("source") == "publisher_intent_catalog"
@@ -1263,6 +1278,281 @@ def download_link_problems(item, text):
                             label=f"Telegram {item.get('app')}/{item.get('lang')}")
 
 
+# ---------------------------------------------------------------- hand-written reviewed posts (manual queue)
+#
+# Since the exact-50 launch (2026-07-19) the production sender only posts publisher intent catalog records
+# (choose_unpublished: source == "publisher_intent_catalog"): the catalog is the reviewed, market-checked list
+# of App x locale pairs, and telegram_posts.json rows (no source, language keys such as "en" / "de" outside the
+# 50 official locales, never reviewed row by row) are deliberately not sent. Hand-written posts that passed
+# review therefore had no way out. telegram-manual-queue.json is that way out, and it widens nothing:
+#
+# * a row only replaces the words of a pair the catalog can already post (same App, same official locale, same
+#   canonical link, picture and market check); an App outside the verified live roster has no pair, so its rows
+#   are refused, and "hold_apps" refuses an App by id on top of that (coordinator rulings);
+# * a row carries its review seal (receipt path, date, sha256 of the reviewed text): words changed after the
+#   review are refused until they are reviewed and sealed again;
+# * it takes one of the three existing slots, never an extra send: at most MANUAL_DAILY_CAP rows a UTC day,
+#   the slot of the row's own language zone, the same daily App cap, other-channel spread, page-ready gate
+#   and replay protection as the rotation (_slot_blocks), and the same download-link check (make_intent);
+# * post_qa.py reads the words before the slot is taken (language, leftovers, superlatives, competitor names,
+#   claims the live product page does not back, store-copy drift); a refused row is skipped with ::error:: and
+#   the slot goes to the automatic rotation, so a bad row never stops the daily post.
+#
+# The row id is its App Store campaign token (tg_<app>_<market>_<angle>, registered in 00_GrowthEngine
+# agent/ct_codes.py PREFIXES as telegram) and leaves as written (compose_text), and the ledger intent and
+# receipt name the row (manual_id), so a post is read back by message id, row and token.
+# Under .github/growth (like threads-queue.json): a push that only adds rows does not start the Pages workflow.
+MANUAL_QUEUE_PATH = REPO_ROOT / ".github" / "growth" / "telegram-manual-queue.json"
+MANUAL_SOURCE = "reviewed_manual_queue"
+MANUAL_DAILY_CAP = 1       # of the three daily slots; the rotation keeps at least two
+MANUAL_MAX_REJECTS = 2     # a row Telegram definitely refused twice is not tried again
+MANUAL_ID_RE = re.compile(r"tg_[a-z0-9]+(?:_[a-z0-9]+){1,4}")
+MANUAL_URL_RE = re.compile(r"https?://|www\.", re.I)
+# Snapport and Snapport Lite (coordinator ruling 2026-11-21, items 96 / 99): background change and removal,
+# brightness / contrast / colour temperature / sharpness and skin smoothing leave both Apps, so no
+# hand-written row may name them.
+_SNAPPORT_BANNED = re.compile(
+    r"換背景|去背|背景(?:移除|更換|替換|顏色)|换背景|抠图|亮度|調亮|提亮|對比|对比|色溫|色温|白平衡|銳利|锐利|膚質|柔膚|柔化|美肌|編修|编修|"
+    r"background|backdrop|brightness|brighten|contrast|colou?r temperature|white balance|sharp(?:en|ness)|"
+    r"skin[- ]?(?:smooth|soften|retouch)|soften skin|retouch|"
+    r"背景(?:を|の)?(?:変更|削除|除去|切り替え|変え|透過|色)|明るさ|コントラスト|色温度|ホワイトバランス|シャープ|肌補正|レタッチ|"
+    r"배경|밝기|대비|색온도|선명|피부\s?보정|"
+    r"hintergrund|helligkeit|kontrast|farbtemperatur|schärfe|hautglättung|"
+    r"arrière-plan|luminosité|contraste|température de couleur|netteté|lissage|"
+    r"fondo|brillo|temperatura de(?:l)? color|nitidez|suaviza|fundo|brilho|latar|kecerahan|kontras|sfondo|luminosità",
+    re.I,
+)
+MANUAL_BANNED_COPY = {"6780575828": _SNAPPORT_BANNED, "6792856304": _SNAPPORT_BANNED}
+
+
+def _lang_zone(lang):
+    return next(zone for zone, langs in TZ_LANGS.items() if lang in langs)
+
+
+def _manual_footer(lang):
+    from social_post_common import FOOTERS
+
+    return FOOTERS.get(lang) or FOOTERS.get(str(lang).split("-")[0]) or FOOTERS["en"]
+
+
+def _iso_date(value):
+    try:
+        return _dt.date.fromisoformat(value).isoformat() if isinstance(value, str) else None
+    except ValueError:
+        return None
+
+
+def _catalog_names():
+    """{(App Store id, locale): (store name, storefront App Store URL)} of the publisher intent catalog."""
+    with open(INTENT_CATALOG_PATH, encoding="utf-8") as catalog_file:
+        records = json.load(catalog_file).get("records") or []
+    return {
+        (str(record.get("app_store_id")), str(record.get("locale"))): (
+            str(record.get("app_name") or ""), record.get("app_store_url"),
+        )
+        for record in records if isinstance(record, dict)
+    }
+
+
+def manual_item(row, pairs, names, hold, seen):
+    """(postable item, problems) of one telegram-manual-queue.json row; the item is None when a problem is found.
+    `pairs`: {(App id, locale): catalog pool item}, `names`: _catalog_names(), `hold`: {App id: reason},
+    `seen`: the ids and texts of the rows before it."""
+    if not isinstance(row, dict):
+        return None, ["row is not an object"]
+    row_id, lang, app, text = row.get("id"), row.get("lang"), str(row.get("app") or ""), row.get("text")
+    problems = []
+    if (
+        not isinstance(row_id, str) or MANUAL_ID_RE.fullmatch(row_id) is None or len(row_id) > TG_CT_MAX
+    ):
+        return None, [f"id must be tg_<app>_<market>_<angle> in [a-z0-9_], at most {TG_CT_MAX} characters"]
+    if row_id in seen:
+        problems.append("id is used by an earlier row")
+    if lang not in OFFICIAL_SOCIAL_LOCALES:
+        problems.append(
+            f"lang {lang!r} is not one of the 50 official locales (write en-US / en-GB / en-AU, de-DE, fr-FR ...)"
+        )
+    if not isinstance(text, str) or not text.strip() or text != text.strip():
+        problems.append("text must be a non-empty string without leading or trailing space")
+        text = ""
+    elif MANUAL_URL_RE.search(text):
+        problems.append("text carries a URL: the download links are attached by the sender, never written by hand")
+    elif text in seen:
+        problems.append("text repeats an earlier row")
+    if app in hold:
+        problems.append(f"App {app} is on hold: {hold[app]}")
+    base = pairs.get((app, lang))
+    if base is None and lang in OFFICIAL_SOCIAL_LOCALES and app not in hold:
+        problems.append(
+            f"no publishable catalog record for App {app} in {lang}: the App is not in the verified live roster, "
+            "or it is not sold in that market"
+        )
+    review = row.get("review")
+    if (
+        not isinstance(review, dict)
+        or not isinstance(review.get("receipt"), str) or not review["receipt"].strip()
+        or _iso_date(review.get("reviewed_on")) is None
+    ):
+        problems.append("review must name its receipt (path) and reviewed_on (YYYY-MM-DD)")
+    elif review.get("text_sha256") != _digest(text):
+        problems.append("review.text_sha256 is not the sha256 of this text: the words changed after the review")
+    for field in ("not_before", "expires"):
+        if row.get(field) is not None and _iso_date(row[field]) is None:
+            problems.append(f"{field} must be a YYYY-MM-DD date")
+    banned = MANUAL_BANNED_COPY.get(app)
+    hit = banned.search(text) if banned else None
+    if hit:
+        problems.append(f"names a feature this App no longer has ({hit.group(0)!r})")
+    if problems:
+        return None, problems
+    name, storefront = names.get((app, lang), ("", None))
+    item = {
+        "lang": lang, "app": app, "app_key": base.get("app_key"), "text": text, "url": base["url"],
+        "footer": _manual_footer(lang), "source": MANUAL_SOURCE, "manual_id": row_id, "ct": row_id,
+        "review": {
+            "receipt": review["receipt"].strip(), "reviewed_on": review["reviewed_on"],
+            "text_sha256": review["text_sha256"],
+        },
+        "app_name": name, "storefront_url": storefront or base["url"],
+    }
+    if base.get("image_url"):
+        item["image_url"] = base["image_url"]
+    for field in ("not_before", "expires"):
+        if row.get(field) is not None:
+            item[field] = row[field]
+    if routed_away(item):
+        return None, [f"App {app} is routed away from {lang} (MARKET_ROUTING_EXCLUSIONS)"]
+    try:
+        composed = compose_text(item)
+        problems = download_link_problems(item, composed)
+    except ValueError as error:
+        return None, [f"the post cannot be composed: {error}"]
+    if len(composed) > TG_CAPTION_MAX:
+        problems.append(f"the composed post is {len(composed)} characters; a Telegram caption takes {TG_CAPTION_MAX}")
+    return (None, problems) if problems else (item, [])
+
+
+def load_manual_queue(pool, path=None, names=None):
+    """(items in file order, {row id or position: problems}) of telegram-manual-queue.json against `pool`
+    (telegram_post.load_pool()). A missing file is an empty queue; a file that is not the expected shape raises
+    ValueError (manual_queue() turns that into ::error:: and an empty queue)."""
+    path = MANUAL_QUEUE_PATH if path is None else Path(path)
+    if not path.is_file():
+        return [], {}
+    with open(path, encoding="utf-8") as queue_file:
+        data = json.load(queue_file)
+    if (
+        not isinstance(data, dict) or data.get("schema_version") != 1
+        or not isinstance(data.get("posts"), list) or not isinstance(data.get("hold_apps", {}), dict)
+    ):
+        raise ValueError("telegram-manual-queue.json is not a schema_version 1 queue")
+    hold = {str(app): str(reason) for app, reason in data.get("hold_apps", {}).items()}
+    pairs = {
+        (str(item.get("app")), item.get("lang")): item
+        for item in pool if item.get("source") == "publisher_intent_catalog"
+    }
+    names = _catalog_names() if names is None else names
+    items, refused, seen = [], {}, set()
+    for position, row in enumerate(data["posts"], 1):
+        item, problems = manual_item(row, pairs, names, hold, seen)
+        label = row.get("id") if isinstance(row, dict) and isinstance(row.get("id"), str) else f"row {position}"
+        if isinstance(row, dict):
+            seen.update(value for value in (row.get("id"), row.get("text")) if isinstance(value, str))
+        if item is None:
+            refused.setdefault(label, []).extend(problems)
+        else:
+            items.append(item)
+    return items, refused
+
+
+def manual_queue(pool, path=None):
+    """The postable hand-written rows; every refused row (or an unreadable queue) is an ::error:: line and the
+    automatic rotation goes on without it."""
+    try:
+        items, refused = load_manual_queue(pool, path)
+    except Exception as error:  # noqa: BLE001 - the hand-written queue never blocks the automatic post
+        print(f"::error::Telegram manual queue unreadable, skipped: {error.__class__.__name__}: {error}")
+        return []
+    for label, problems in refused.items():
+        for problem in problems:
+            print(f"::error::Telegram manual {label}: refused: {problem}")
+    return items
+
+
+def manual_qa_problems(item):
+    """post_qa.py on the words of a hand-written row: language, template leftovers, hashtags, superlatives,
+    competitor names, claims the live product page does not back (free / no ads / no subscription / one-time
+    purchase), and features the live page dropped (store-copy drift). The one-line hook rule of the clip and
+    card captions (first_line) does not apply to a paragraph post; its length is checked on the composed
+    post (manual_item). With POST_QA_OFFLINE=1 the product page is not read, so only the App name backs a claim."""
+    import post_qa
+
+    name = item.get("app_name") or ""
+    if post_qa.offline():
+        facts, price = name, None
+    else:
+        facts, price = post_qa.product_facts(item.get("storefront_url") or item["url"], (name,))
+    problems = post_qa.text_problems(
+        item["text"], item["lang"], "telegram", allowed=(name,), facts=facts, price=price,
+        first_line=False, length=False,
+    )
+    return problems + post_qa.stale_claim_problems(item["text"], item["url"])
+
+
+def choose_manual(queue, pool, ledger, now, slot=None, skip_apps=frozenset(), qa=None):
+    """The hand-written row that takes this slot, or None (the automatic rotation posts).
+
+    At most MANUAL_DAILY_CAP rows a UTC day. The queue is first in, first out: the first row in file order that
+    can go out today (inside its dates, never sent, App not blocked today, post_qa clean) owns the day's manual
+    slot, which is the slot of its own language zone; an earlier slot of the day leaves it alone, a later one
+    (the row's slot already passed) moves on to the next row."""
+    from social_slot_gate import slot_start
+
+    if not queue:
+        return None
+    now = now.astimezone(_dt.timezone.utc)
+    scheduled = slot_start(now, SLOT_HOURS) if slot is None else _timestamp(slot)
+    if scheduled != slot_start(now, SLOT_HOURS):
+        raise ValueError("candidate selection must use the current authoritative slot")
+    zone, day = _zone(scheduled.hour), scheduled.date()
+    intents = [intent for intent in ledger["intents"].values() if intent.get("manual_id")]
+    if sum(
+        intent["status"] in {"reserved", "unknown", "confirmed", "rejected"}
+        and _timestamp(intent["slot"]).date() == day
+        for intent in intents
+    ) >= MANUAL_DAILY_CAP:
+        return None
+    sent = {
+        intent["manual_id"] for intent in intents if intent["status"] in {"reserved", "unknown", "confirmed"}
+    } | {receipt["manual_id"] for receipt in ledger["receipts"].values() if receipt.get("manual_id")}
+    rejects = [intent["manual_id"] for intent in intents if intent["status"] == "rejected"]
+    _covered, _today_apps, blocked_apps, used = _slot_blocks(pool, ledger, now, f"telegram:{zone}")
+    slot_hour = {_zone(hour): hour for hour in SLOT_HOURS}
+    qa = manual_qa_problems if qa is None else qa
+    for item in queue:
+        app = str(item["app"])
+        if (
+            item["manual_id"] in sent
+            or rejects.count(item["manual_id"]) >= MANUAL_MAX_REJECTS
+            or app in blocked_apps or app in skip_apps
+            or (item.get("not_before") and day < _dt.date.fromisoformat(item["not_before"]))
+            or (item.get("expires") and day > _dt.date.fromisoformat(item["expires"]))
+            or _sent_digests(item) & used
+        ):
+            continue
+        problems = qa(item)
+        if problems:
+            for problem in problems:
+                print(f"::error::Telegram manual {item['manual_id']}: QA refused: {problem}")
+            continue
+        row_zone = _lang_zone(item["lang"])
+        if row_zone == zone:
+            return item
+        if slot_hour[row_zone] > scheduled.hour:
+            return None  # the day's manual slot belongs to this row, later today
+    return None
+
+
 def make_intent(item, context):
     if item["lang"] not in TZ_LANGS[_zone(_timestamp(context["slot"]).hour)]:
         raise ValueError("Telegram locale does not belong to the authoritative slot")
@@ -1272,7 +1562,11 @@ def make_intent(item, context):
         # Fail closed before the slot is reserved: nothing is sent, the step goes red (main() returns 1).
         DL.refuse(f"Telegram {item.get('app')}/{item.get('lang')}", problems)
         raise DL.MissingDownloadLink("; ".join(problems))
+    manual = {} if item.get("source") != MANUAL_SOURCE else {
+        "manual_id": item["manual_id"], "manual_review": dict(item["review"]),
+    }
     return {
+        **manual,
         "slot": context["slot"], "status": "reserved",
         "app_store_id": str(item["app"]), "official_locale": item["lang"],
         "text": text, "payload_digest": _digest(text),
@@ -1287,6 +1581,7 @@ def make_intent(item, context):
 
 def _receipt(intent, message_id, timestamp, evidence):
     return {
+        **({"manual_id": intent["manual_id"]} if intent.get("manual_id") else {}),
         "channel": PUBLIC_CHANNEL, "message_id": message_id,
         "app_store_id": intent["app_store_id"],
         "official_locale": intent["official_locale"],
@@ -1393,14 +1688,26 @@ def reconcile_pending(ledger, store):
         store.save(ledger)
 
 
-def publish_once(pool, ledger, store, context, token, chat, unready_apps=frozenset()):
+def publish_once(pool, ledger, store, context, token, chat, unready_apps=frozenset(), manual=()):
     slot = context["slot"]
     if slot in ledger["intents"]:
         print(f"Telegram slot {slot} already reserved; no resend")
         return
-    item = choose_unpublished(
-        pool, ledger, context["now"], slot=slot, skip_apps=unready_apps,
-    )
+    item = None
+    if manual:
+        try:
+            item = choose_manual(manual, pool, ledger, context["now"], slot=slot, skip_apps=unready_apps)
+        except Exception as error:  # noqa: BLE001 - the hand-written queue never blocks the automatic post
+            print(f"::error::Telegram manual queue skipped this slot: {error.__class__.__name__}: {error}")
+    if item is not None:
+        print(
+            f"Telegram manual row {item['manual_id']} takes this slot "
+            f"(at most {MANUAL_DAILY_CAP} of {len(SLOT_HOURS)} slots a UTC day)"
+        )
+    else:
+        item = choose_unpublished(
+            pool, ledger, context["now"], slot=slot, skip_apps=unready_apps,
+        )
     if item is None:
         print("Telegram no eligible new payload in this slot; no send")
         return
@@ -1677,6 +1984,71 @@ def self_test():
             send = self.publish()
             send.assert_not_called()
             self.assertEqual(176, len(self.ledger["receipts"]))
+
+        def manual_row(self):
+            return {
+                **self.item, "source": MANUAL_SOURCE, "manual_id": "tg_fixture_row_one", "ct": "tg_fixture_row_one",
+                "footer": "— Fixture", "app_name": "Fixture", "storefront_url": self.item["url"],
+                "review": {
+                    "receipt": "fixture-receipt.md", "reviewed_on": "2026-11-22",
+                    "text_sha256": _digest(self.item["text"]),
+                },
+            }
+
+        def test_hand_written_row_takes_the_slot_with_a_named_reservation_and_receipt(self):
+            row = self.manual_row()
+            text = make_intent(row, self.context)["text"]
+            self.assertIn("ct=tg_fixture_row_one&", text)
+            response = {"ok": True, "result": {
+                "message_id": 900002, "chat": self.chat, "date": int(self.now.timestamp()), "text": text,
+            }}
+            with (
+                mock.patch.object(module, "choose_manual", return_value=row) as manual,
+                mock.patch.object(module, "choose_unpublished") as rotation,
+                mock.patch.object(module, "_publish_item", return_value=response) as send,
+                mock.patch.object(module, "write_run_evidence"),
+            ):
+                publish_once([], self.ledger, self.store, self.context, "fixture-token", self.chat, manual=[row])
+                # the slot is taken: nothing else, hand-written or automatic, goes out in it
+                publish_once([], self.ledger, self.store, self.context, "fixture-token", self.chat, manual=[row])
+            manual.assert_called_once()
+            rotation.assert_not_called()
+            send.assert_called_once()
+            self.assertEqual("reserved", self.saves[0]["intents"][self.context["slot"]]["status"])
+            intent = self.ledger["intents"][self.context["slot"]]
+            self.assertEqual(
+                ("confirmed", "tg_fixture_row_one", row["review"]),
+                (intent["status"], intent["manual_id"], intent["manual_review"]),
+            )
+            receipt = self.ledger["receipts"][intent["delivery_id"]]
+            self.assertEqual(("tg_fixture_row_one", text), (receipt["manual_id"], intent["text"]))
+            validate_ledger(self.ledger)
+            # the day's one hand-written slot is used, and the row itself never goes out again
+            self.assertIsNone(choose_manual([row], self.pool(), self.ledger, self.now, qa=lambda _item: []))
+            self.ledger["intents"].clear()
+            self.assertIsNone(choose_manual([row], self.pool(), self.ledger, self.now, qa=lambda _item: []))
+
+        def test_empty_or_failing_hand_written_queue_leaves_the_slot_to_the_rotation(self):
+            for queue, outcome in (
+                ((), None), ([self.manual_row()], None), ([self.manual_row()], RuntimeError("fixture")),
+            ):
+                ledger = copy.deepcopy(self.ledger)
+                with (
+                    mock.patch.object(module, "choose_manual", return_value=None, side_effect=(
+                        outcome if isinstance(outcome, Exception) else None
+                    )) as manual,
+                    mock.patch.object(module, "choose_unpublished", return_value=self.item) as rotation,
+                    mock.patch.object(module, "_publish_item", return_value=self.response) as send,
+                    mock.patch.object(module, "write_run_evidence"),
+                ):
+                    publish_once([], ledger, self.store, self.context, "fixture-token", self.chat, manual=queue)
+                self.assertEqual(bool(queue), manual.called)
+                rotation.assert_called_once()
+                send.assert_called_once()
+                intent = ledger["intents"][self.context["slot"]]
+                self.assertEqual("confirmed", intent["status"])
+                self.assertNotIn("manual_id", intent)
+                self.assertNotIn("manual_id", ledger["receipts"][intent["delivery_id"]])
 
         def test_reservation_persistence_failure_prevents_send(self):
             self.store.save.side_effect = RequestError("CAS unavailable")
@@ -2119,6 +2491,7 @@ def main(argv=None):
         if CR.paused_notice("telegram"):  # channel rotation holdout week: no Telegram main post, green
             return 0
         pool = load_pool()
+        manual = manual_queue(pool)
         store = GitHubLedger(os.environ.get("GITHUB_TOKEN", ""))
         store.assert_current_source(context["source_sha"])
         native_chat = read_native_chat(tok, chat)
@@ -2147,7 +2520,7 @@ def main(argv=None):
                 f"Telegram page-ready gate: <{PAGE_READY_MIN_SCREENSHOTS} iPhone "
                 f"screenshots, skipped until ready: {','.join(sorted(unready))}"
             )
-        publish_once(pool, ledger, store, context, tok, native_chat, unready_apps=unready)
+        publish_once(pool, ledger, store, context, tok, native_chat, unready_apps=unready, manual=manual)
         return 0
     except (
         RequestError, ValueError, KeyError, TypeError, OSError,

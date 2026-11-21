@@ -106,7 +106,6 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             "look": [
                 "Country-specific size templates (head ratio varies for infants).",
                 "Face-alignment guides for an unposed baby.",
-                "Plain-background handling / background removal.",
                 "Export a single correctly-sized photo to print.",
                 "Guidance on relaxed infant expression rules.",
             ],
@@ -120,7 +119,7 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             "fits": "fits parents who need a compliant infant passport photo at home without wrestling a baby into a studio pose.",
             "faq": [
                 {"q": "My baby won't hold a neutral expression — is that OK?", "a": "For infants most countries relax the neutral-expression and open-eyes rules; check your country's guidance, which the app's template reflects."},
-                {"q": "How do I get a plain background with a baby?", "a": "Shoot against a plain white sheet or use background removal, then let the app crop to size."},
+                {"q": "How do I get a plain background with a baby?", "a": "Shoot against a plain white sheet, then let the app crop to size."},
                 {"q": "Will it be the right size for my country?", "a": "Yes — pick your country's template so the head ratio and dimensions match official requirements. Always confirm against the official spec."},
             ],
         },
@@ -128,14 +127,13 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             "query": "best app to take professional id photo for resume",
             "triggers": ["for resume", "for a resume", "resume photo", "cv photo", "professional headshot", "id photo for job"],
             "persona": "job seekers",
-            "lead": "For a resume or job-application headshot, you don't need a studio — you need a cropped, correctly-proportioned photo with a clean background that looks professional at a small size.",
+            "lead": "For a resume or job-application headshot, you don't need a studio — you need a cropped, correctly-proportioned photo that looks professional at a small size.",
             "paras": [
-                "A resume-photo template crops to the right proportions and lets you swap a messy background for a plain one, so a phone snap becomes a tidy headshot. Shoot in soft, even light facing a window and keep a neutral, approachable expression.",
+                "A resume-photo template crops to the right proportions, so a phone snap becomes a tidy headshot. Shoot in soft, even light facing a window and keep a neutral, approachable expression.",
                 "Because it's on-device, your photo isn't uploaded anywhere, and a single export gives you a file ready to drop into a CV or a LinkedIn/ID upload.",
             ],
             "look": [
                 "Resume / ID headshot template with correct proportions.",
-                "Background replacement to a clean, plain colour.",
                 "On-device processing (photo isn't uploaded).",
                 "Single-photo export ready for a CV or profile.",
                 "Guidance on framing and expression.",
@@ -143,13 +141,11 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             "steps": [
                 "Face a window in soft, even light.",
                 "Use the resume/ID template to frame the crop.",
-                "Swap the background for a plain colour.",
                 "Keep a neutral, approachable expression.",
                 "Export and place it on your CV or profile.",
             ],
             "fits": "fits job seekers who want a clean, professional headshot from their phone without a photo studio.",
             "faq": [
-                {"q": "Do I need a studio backdrop?", "a": "No — background replacement gives you a clean plain background from any setting."},
                 {"q": "Is my photo uploaded anywhere?", "a": "On-device processing keeps the photo on your phone unless you export it."},
                 {"q": "What size should a resume photo be?", "a": "There's no single standard; a square or 3:4 headshot works for most CVs and profiles — the template keeps proportions right."},
             ],

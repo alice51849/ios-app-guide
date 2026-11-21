@@ -277,10 +277,16 @@ def sitemap_candidates(
         if tree is not None
         else tuple(pages.rglob("sitemap*.xml"))
     )
+    # 點開頭目錄線上 404（同路線 99 規則）：裡面的 sitemap*.xml 不是本站地圖，
+    # 不改寫也不掛進索引。部署時 GrowthEngine 會檢出在 .high-intent-growth-source，
+    # 改到它的 support_push 暫存地圖會讓部署判「GrowthEngine source is dirty」（11-21）。
     return [
         candidate
         for candidate in sorted(candidates)
         if candidate.name not in excluded_names
+        and not indexation_priority.is_unpublished_relative(
+            candidate.relative_to(pages).as_posix()
+        )
     ]
 
 

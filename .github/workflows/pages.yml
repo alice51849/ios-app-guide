@@ -199,7 +199,8 @@ jobs:
             git fetch --no-tags --depth=1 origin "$PREVIOUS_GUIDE_REVISION"
             incremental_args=(--incremental --previous-guide-revision "$PREVIOUS_GUIDE_REVISION")
           fi
-          source_dir="$GITHUB_WORKSPACE/.high-intent-growth-source"
+          # 檢出放在站樹外（RUNNER_TEMP）：放在站樹內時，整站改寫的生成器會改到它，部署判 source dirty（11-21）。
+          source_dir="$RUNNER_TEMP/high-intent-growth-source-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
           key_file="$RUNNER_TEMP/growth-deploy-key-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
           known_hosts="$RUNNER_TEMP/growth-known-hosts-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
           cleanup_growth_source() {

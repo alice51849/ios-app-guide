@@ -77,6 +77,10 @@
    "evidence": "ASC 核准 NON_CONSUMABLE（com.alice51849.HoursTagLite.lifetime）、0 個訂閱群組（2026-09-06）",
    "type": "one_time_unlock"
   },
+  "jellyday": {
+   "evidence": "Google Play 線上 en-US 描述原句「Some features are unlocked with a one-time in-app purchase」、全文無訂閱字樣（雲端讀回 com.alice51849.JellyDay，2026-11-21T10:17Z）＋送審 en-US 文案同句、無訂閱字樣（reports/yi30/visual_planner/store_pack_50/en-US.json、ops/new_apps/cards/jellyday_2026-11-19.json）；ASC 唯讀未讀（雲端無金鑰），iOS 上架後本機 ASC 唯讀複核（app 6835673714）",
+   "type": "one_time_unlock"
+  },
   "kumo": {
    "evidence": "en-US 商店描述原句「Kumo Full is available as a monthly or yearly auto-renewing subscription, or as a one-time in-app purchase.」（ops/aso/kumo/final_50locales.json，ASC 1.0.0 逐字讀回 0 不符；2026-11-12）；有自動續訂，不可寫買斷字樣",
    "type": "subscription"

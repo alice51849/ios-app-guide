@@ -24,6 +24,7 @@ import sys
 import unicodedata
 import public_email
 import paid_upfront_surfaces
+import store_copy_guard
 from functools import lru_cache
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -1119,6 +1120,7 @@ def load_app_locales(key):
         path,
         file_signature,
         json.dumps(curated, ensure_ascii=False, sort_keys=True),
+        store_copy_guard.guard_signature(),
     )
     cached = _APP_LOCALE_CACHE.get(key)
     if cached is not None and cached[0] == signature:
@@ -1135,6 +1137,7 @@ def load_app_locales(key):
         }
         for locale in dict.fromkeys((*curated, *stored))
     }
+    result = store_copy_guard.guarded_locales(key, result)
     result = paid_upfront_surfaces.localized_descriptions(key, result)
     _APP_LOCALE_CACHE[key] = (signature, result)
     return result

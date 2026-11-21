@@ -25,6 +25,7 @@ LAUNCH_CANDIDATES = {
     "duowallpaperstudio": ("6824946559", "Foldable Wallpaper Studio"),
     "foldparty": ("6829184924", "Meow Party"),
     "kumo": ("6830824515", "Kumo"),
+    "jellyday": ("6835673714", "JellyDay"),
 }
 FIELDS = {"query", "guide_title", "triggers", "persona", "lead", "paras",
           "look", "steps", "fits", "faq"}
@@ -63,6 +64,13 @@ FORBIDDEN = {
              "prescri", "burn", "detox", "fat", "best", "$", "doctor recommended",
              "lbs in", "kg in", "pounds in", "#1", "permanent", "buy once",
              "weight loss", "completely offline", "not upload"),
+    # JellyDay must not compete for Mochi's (cute to-do list) words and must
+    # stay within what 1.0 does (no sync, watch or trial claims, no therapy).
+    "jellyday": ("cute", "to-do", "todo", "to do list", "checklist",
+                 "icloud", "sync", "apple watch", "android", "trial",
+                 "lifetime", "forever", "pay once", "buy once", "$", "best",
+                 "#1", "guarantee", "adhd", "cure", "treat", "diagnos",
+                 "therapy", "dark mode", "theme"),
 }
 REQUIRED = {
     "dbhalo": ("not a certified",),
@@ -83,6 +91,9 @@ REQUIRED = {
              "your own icloud", "no account", "7-day average",
              "monthly or yearly", "one-time in-app purchase", "ask your doctor",
              "pregnant", "eating disorder", "23 hours"),
+    "jellyday": ("timeline", "one-time in-app purchase", "is there a subscription",
+                 "not a medical device", "does not give medical advice",
+                 "no account", "5 minutes to 2 hours"),
 }
 
 

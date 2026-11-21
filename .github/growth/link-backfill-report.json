@@ -1,11 +1,11 @@
 {
- "generated": "2026-11-20T11:49:04Z",
+ "generated": "2026-11-21T11:14:03Z",
  "mode": "apply",
  "counts": {
-  "ok_reply": 79,
-  "ok_backfilled_earlier": 111,
+  "ok_reply": 82,
+  "ok_backfilled_earlier": 115,
   "unknown_app": 47,
-  "ok_store_only": 620,
+  "ok_store_only": 616,
   "backfilled": 2,
   "ok_bio_link": 68,
   "ok_caption": 4,
@@ -13,6 +13,42 @@
   "missing": 3
  },
  "rows": [
+  {
+   "channel": "threads",
+   "id": "18017425229977416",
+   "permalink": "https://www.threads.com/@hourstag.app/post/Df_PLzaESyc",
+   "date": "2026-11-21",
+   "app": "mochi",
+   "status": "ok_reply",
+   "text": "Midterms now, finals next, and \"study everything\" was my whole plan. Now each class gets its own cute checklist: chapter notes, practice pro",
+   "why": "trial",
+   "ios_id": "6785004775",
+   "locale": "en-US"
+  },
+  {
+   "channel": "threads",
+   "id": "18382251460213463",
+   "permalink": "https://www.threads.com/@hourstag.app/post/Df9_JammSUm",
+   "date": "2026-11-20",
+   "app": "aibriefpack",
+   "status": "ok_reply",
+   "text": "Turn screenshots, PDFs, files and notes into one well-organized AI prompt, with the goal, facts and sources sorted. AI Brief: AI Prompt from",
+   "why": "brand",
+   "ios_id": "6791658210",
+   "locale": "en"
+  },
+  {
+   "channel": "threads",
+   "id": "18122255852080896",
+   "permalink": "https://www.threads.com/@hourstag.app/post/Df9uxnGlV8-",
+   "date": "2026-11-20",
+   "app": "mochi",
+   "status": "ok_reply",
+   "text": "Not waiting for Monday, or January, to restart anymore. One cute list on my Home Screen: move a little, save a little, sleep earlier, call m",
+   "why": "trial",
+   "ios_id": "6785004775",
+   "locale": "en-US"
+  },
   {
    "channel": "threads",
    "id": "18143110609552088",
@@ -1987,11 +2023,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctgbZNgcgE",
    "date": "2026-08-31",
    "app": "snapport",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "Snapport: Passport Photos Passport ID Visa Photos Create passport, visa and ID photos at home with guided sizes, clean backgrounds and print",
    "why": "url+brand",
    "ios_id": "6780575828",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "17901043533405897",
+   "at": "2026-11-21T11:11:35Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -2369,7 +2410,7 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctguJLF3NB",
    "date": "2026-08-31",
    "app": "tripbee",
-   "status": "ok_store_only",
+   "status": "ok_backfilled_earlier",
    "text": "TripBee Pro: Trip Planner Itinerary, packing & maps Plan smarter, pack lighter, travel happier. One-time purchase — no subscription, no ads.",
    "why": "url+brand",
    "ios_id": "6787754435",
@@ -3123,11 +3164,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/Dctgh1vgqNa",
    "date": "2026-08-31",
    "app": "snapportlite",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "Snapport Lite: Make ID Photos Create ID photos at home Make passport, visa, and document photos with guided sizing, background tools, and pr",
    "why": "url+brand",
    "ios_id": "6792856304",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "18196112293422825",
+   "at": "2026-11-21T11:11:35Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -3599,7 +3645,7 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctgoAfkQgj",
    "date": "2026-08-31",
    "app": "sononote",
-   "status": "ok_store_only",
+   "status": "ok_backfilled_earlier",
    "text": "Sono Note Voice to Text Notes & Memos Just talk — get clean notes. Turn any voice into organized notes, a summary, and to-dos, privately on ",
    "why": "url+brand",
    "ios_id": "6782139553",
@@ -4303,16 +4349,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/Dctg5sQgjIp",
    "date": "2026-08-31",
    "app": "tripplanet",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "Lumi Trip Planet: World Travel Family travel adventure Turn 'are we there yet?' into fun. Offline travel missions, packing help and rewards ",
    "why": "url+brand",
    "ios_id": "6787193643",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "17990543813880824",
-   "at": "2026-11-20T11:46:30Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",
@@ -4642,16 +4683,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctgzsUDqeH",
    "date": "2026-08-31",
    "app": "tripbeelite",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "TripBee Lite: Travel Plan One Trip, Sorted Beautifully Keep your next getaway sorted without juggling old plans. TripBee Lite is a calm, pol",
    "why": "url+brand",
    "ios_id": "6791299610",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "18360540796173830",
-   "at": "2026-11-20T11:46:30Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",

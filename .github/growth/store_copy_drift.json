@@ -582,7 +582,7 @@
     "Cyca 经期周期追踪・排卵",
     "Cyca"
    ],
-   "live_updated": "2026-11-15",
+   "live_updated": "2026-11-20",
    "live_version": "1.0.15",
    "locales": {
     "de-DE": {
@@ -644,15 +644,15 @@
     "zh-Hans": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-15",
-     "live_version": "1.0.15",
+     "live_updated": "2026-11-20",
+     "live_version": "1.0.16",
      "same": true
     },
     "zh-Hant": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-15",
-     "live_version": "1.0.15",
+     "live_updated": "2026-11-20",
+     "live_version": "1.0.16",
      "same": true
     }
    },
@@ -1702,11 +1702,17 @@
      "same": false
     },
     "fr-FR": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-11-20",
-     "live_version": "1.0.9",
-     "same": true
+     "added": [
+      "Le déblocage unique ajoute les panneaux enregistrés et les modèles personnels en nombre illimité, plus de cent polices, vingt effets dont contour, ombre, halo, clignotement, pulsation, vague, machine à écrire et matrice de points, les cinquante-neuf autres modèles répartis en six situations du quotidien, les mouvements page, glissé, aller-retour, balancier et dérive, le sens haut et bas, les lettres arc-en-ciel et dégradées, les autres cadres LED et leurs couleurs, l'espacement des lettres et l'intervalle de répétition, les fonds photo et aurore, le mouvement au rythme de la musique, un compte à rebours, et l'export en MP4 et GIF sans filigrane.",
+      "Tout fonctionne sur l'appareil. Pas de compte, pas de cloud, pas de publicité, pas de statistiques, pas de suivi. Vos messages, vos panneaux et toute photo choisie restent sur votre iPhone. Le micro ne sert que pendant le mouvement au rythme de la musique, et l'audio n'est jamais enregistré ni conservé."
+     ],
+     "dropped": [
+      "Le déblocage unique ajoute les panneaux enregistrés et les modèles personnels en nombre illimité, plus de cent polices, vingt effets dont contour, ombre, halo, clignotement, pulsation, vague, machine à écrire et matrice de points, les cinquante-neuf autres modèles répartis en six situations du quotidien, les mouvements page, glissé, aller-retour, balancier et dérive, le sens haut et bas, les lettres arc-en-ciel et dégradées, les autres cadres LED et leurs couleurs, l'espacement des lettres et l'intervalle de répétition, les fonds photo et aurore, l'effet « Réaction au rythme » qui fait pulser les lettres en cadence, un compte à rebours, et l'export en MP4 et GIF sans filigrane.",
+      "Tout fonctionne sur l'appareil. Pas de compte, pas de cloud, pas de publicité, pas de statistiques, pas de suivi. Vos messages, vos panneaux et toute photo choisie restent sur votre iPhone. Le micro n'est utilisé que sur l'appareil, pendant que l'effet « Réaction au rythme » est activé, et l'audio n'est jamais enregistré ni conservé."
+     ],
+     "live_updated": "2026-11-10",
+     "live_version": "1.0.8",
+     "same": false
     },
     "ja": {
      "added": [
@@ -1748,17 +1754,11 @@
      "same": false
     },
     "zh-Hans": {
-     "added": [
-      "一次买断解锁后再加上:看板存档不限数量、100 款以上英文字体(中文可选字重)、20 种动画效果(描边、阴影、发光、闪烁、脉冲、波浪、打字机、点阵等)、其余 59 款场景模板(涵盖 6 大生活场景)、翻页与滑入与往返与摆荡与慢飘五种移动、上下方向、彩虹与渐变文字、其余 LED 边框与边框颜色、字距与重复间距、照片与极光背景、跟着音乐节奏跳动、倒计时,以及无水印的 MP4 与 GIF 导出。",
-      "全部在设备上运行。没有账号、不使用云服务、没有广告、没有分析、没有跟踪。你打的字、存的看板、选的照片都留在自己的手机里。只有开启节奏反应时才会用到麦克风,而且不录音、不保存。"
-     ],
-     "dropped": [
-      "一次买断解锁后再加上:看板存档不限数量、100 款以上英文字体(中文可选字重)、20 种动画效果(描边、阴影、发光、闪烁、脉冲、波浪、打字机、点阵等)、其余 59 款场景模板(涵盖 6 大生活场景)、翻页与滑入与往返与摆荡与慢飘五种移动、上下方向、彩虹与渐变文字、其余 LED 边框与边框颜色、字距与重复间距、照片与极光背景、让文字随节奏脉动的“节奏感应”效果、倒计时,以及无水印的 MP4 与 GIF 导出。",
-      "全部在设备上运行。没有账号、不使用云服务、没有广告、没有分析、没有跟踪。你打的字、存的看板、选的照片都留在自己的手机里。只有开启“节奏感应”效果时,才会在设备上使用麦克风,而且不录音、不保存。"
-     ],
-     "live_updated": "2026-11-10",
-     "live_version": "1.0.8",
-     "same": false
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-11-20",
+     "live_version": "1.0.9",
+     "same": true
     },
     "zh-Hant": {
      "added": [],
@@ -5098,6 +5098,6 @@
   "unknown": 0
  },
  "errors": [],
- "generated_at": "2026-11-20T17:18:21Z",
+ "generated_at": "2026-11-21T04:34:03Z",
  "schema": "growth.store-copy-drift/v1"
 }

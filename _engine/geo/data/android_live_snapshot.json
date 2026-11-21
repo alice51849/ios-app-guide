@@ -1,9 +1,9 @@
 {
  "schema": "lumi.android-live-snapshot/v1",
  "source": "AndroidPlay android_live_scan (Play page HTTP 200 + publish LIVE)",
- "source_generated": "2026-11-18T16:31:37+0800",
+ "source_generated": "2026-11-21T09:47:05+0800",
  "count": 60,
- "content_sha256": "873a5823978ac80df19beb719f2ad3a38cb063cb0868d8c3aff93c696fc2e7ca",
+ "content_sha256": "136e58b09f9ace5609d47427de5dd979424d3dc8ccda099acac81268b585867b",
  "apps": {
   "aibriefpack": {
    "ios_app_id": "6791658210",
@@ -829,7 +829,7 @@
    "copy": {
     "en-US": {
      "title": "PicClear Pro: Photo Cleaner",
-     "short_description": "Duplicate photo remover from gallery: clear screenshots & blurry shots fast"
+     "short_description": "Photo cleaner & duplicate photo remover from gallery: screenshots, blurry shots"
     },
     "zh-TW": {
      "title": "PicClear Pro：照片清理與重複刪除",

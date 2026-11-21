@@ -160,6 +160,9 @@ SITUATIONS: dict[str, str] = {
     # so the closer uses the neutral creative shapes, not a utility pitch.
     "foldparty": "creative",
     "kumo": "wellbeing",
+    # JellyDay: visual timeline planner with a step-by-step routine countdown,
+    # closest to the focus tools (Lock Hour, Mochi) rather than a utility.
+    "jellyday": "focus",
 }
 DEFAULT_SITUATION = "utility"
 

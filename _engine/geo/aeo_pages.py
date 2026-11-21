@@ -635,6 +635,33 @@ CURATED_FALLBACK = {
             ["weigh in: weight tracker", 0],
         ],
     },
+    "jellyday": {
+        "key": "jellyday",
+        "gap_queries": [
+            "visual daily planner with a timeline on iphone",
+            "time blocking app that shows how long each task takes",
+            "routine timer that walks through each step with a countdown",
+            "planner that pushes the rest of my day back when i run late",
+            "day planner with a live activity countdown and lock screen widget",
+            "visual planner with no account and no ads",
+        ],
+        # Pending first release (61_JellyDay, ASC 6835673714; Google Play
+        # already live); listed ahead so the roster check passes the day it
+        # goes live. Competitor titles read off the US iTunes Search API
+        # (country=us, entity=software) for "visual daily planner" (Todewy #2,
+        # Thruday #3), "routine timer" (Routinery #1) and "timeline planner"
+        # (Timepage #4) on 2026-11-21T10:17Z. Titles carrying cute / to-do /
+        # todo were skipped so JellyDay pages stay on visual planner, timeline
+        # and routine timer terms and do not compete for Mochi's to-do words.
+        # rank 0 means the position was not measured, exactly as for the other
+        # curated fallbacks.
+        "top_competitors": [
+            ["todewy: visual daily planner", 0],
+            ["thruday: visual daily planner", 0],
+            ["routine planner, habit tracker", 0],
+            ["timepage: calendar planner", 0],
+        ],
+    },
     "zipbox": {
         "key": "zipbox",
         "gap_queries": [

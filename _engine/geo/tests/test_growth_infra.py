@@ -648,14 +648,16 @@ class GeneratorTests(unittest.TestCase):
             for node in root.findall(f"{namespace}sitemap")
         ]
         self.assertEqual(list(dict.fromkeys(locations)), locations)
+        # 路線 99（2026-11-21）：優先網站地圖排第一，其後順序不變。
         self.assertEqual(
             [
+                f"{gen_llms.SITE}/sitemap_priority.xml",
                 f"{gen_llms.SITE}/sitemap.xml",
                 f"{gen_llms.SITE}/sitemap_alternatives.xml",
                 f"{gen_llms.SITE}/sitemap_answers.xml",
                 f"{gen_llms.SITE}/sitemap_guides.xml",
             ],
-            locations[:4],
+            locations[:5],
         )
 
     def test_sitemap_index_keeps_official_locale_and_app_sitemaps(self):
@@ -1920,9 +1922,10 @@ class GeneratorTests(unittest.TestCase):
                 f"{site}/oembed/ja/lumibopomofo.json",
                 sitemap_urls,
             )
-            self.assertIn("sitemap_oembed.xml", gen_llms.build_robots())
+            self.assertNotIn("sitemap_oembed.xml", gen_llms.build_robots())
+            # 路線 99（2026-11-21）：資料格式子地圖照產，但不列 robots、也移出網站地圖索引（反方條件）。
             with mock.patch.object(gen_llms, "PAGES", str(pages)):
-                self.assertIn(
+                self.assertNotIn(
                     "sitemap_oembed.xml", gen_llms.build_sitemap_index()
                 )
             conflicting = pages / "guides" / "conflicting.html"
@@ -5219,9 +5222,10 @@ class GeneratorTests(unittest.TestCase):
             self.assertEqual(
                 mtimes, {path: path.stat().st_mtime_ns for path in mtimes}
             )
-            self.assertIn("sitemap_api.xml", gen_llms.build_robots())
+            self.assertNotIn("sitemap_api.xml", gen_llms.build_robots())
+            # 路線 99（2026-11-21）：資料格式子地圖照產，但不列 robots、也移出網站地圖索引（反方條件）。
             with mock.patch.object(gen_llms, "PAGES", str(pages)):
-                self.assertIn(
+                self.assertNotIn(
                     "sitemap_api.xml", gen_llms.build_sitemap_index()
                 )
 

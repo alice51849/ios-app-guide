@@ -30,6 +30,7 @@ import re
 import sys
 
 from official_locales import OFFICIAL_LOCALES
+import indexation_priority
 from site_tree_index import SiteTreeIndex
 from site_config import PUBLIC_SITE  # noqa: E402
 
@@ -75,6 +76,24 @@ NAV_BLOCK = re.compile(
 FULL_BLOCK = re.compile(
     r"\n?<!--iag-link-hub-full-->.*?<!--/iag-link-hub-full-->\n?", re.S
 )
+# 路線 99（2026-11-21）：優先總表頁與各款入口頁的受管理區塊。
+# 首頁只連優先總表頁（不直接掛三百多條）；各款入口頁只連自己那款的優先頁；
+# 對照組（data/route99_control_group.json）一條都不連。規則在 indexation_priority.py。
+PRIORITY_HUB_MARKER = "<!--iag-priority-hub-->"
+PRIORITY_APP_BLOCK = re.compile(
+    r"\n?<!--iag-priority-app-->.*?<!--/iag-priority-app-->\n?", re.S
+)
+PRIORITY_HUB_TITLE = "App guides by language"
+PRIORITY_HUB_LEAD = "Each app's guide page in English, Japanese, Traditional Chinese, German and French."
+PRIORITY_HOMES_LABEL = "Language home pages"
+# 語言自稱，當連結字（不是宣傳文案）。
+PRIORITY_LOCALE_LABELS = {
+    "en-US": "English (US)",
+    "ja": "日本語",
+    "zh-Hant": "繁體中文",
+    "de-DE": "Deutsch",
+    "fr-FR": "Français",
+}
 
 # 區塊標題:只有沒有自己 index.html 的區塊才用得到(有 index 的直接沿用它的
 # <title>,那才是真正在地化過的字)。沒有翻譯的語言退回英文,不硬掰。
@@ -841,13 +860,155 @@ def cleanup_stale_browse(state, tree=None, pages=None):
                 tree.remove(relative)
 
 
-def process_root(parents, state, tree=None, pages=None):
+def _served_page(relative, control, tree=None, pages=None):
+    if relative in control:
+        return False
+    if tree is not None:
+        if not tree.contains(relative):
+            return False
+    elif not os.path.isfile(os.path.join(str(pages or PAGES), relative)):
+        return False
+    path = os.path.join(str(pages or PAGES), relative)
+    return not is_noindex(path, tree)
+
+
+def priority_targets(tree=None, pages=None, apps=None, control=None):
+    """回傳 (款 → 該款站上可索引的優先頁, 可索引的語系首頁)。對照組一律剔除。"""
+    control = (
+        control
+        if control is not None
+        else indexation_priority.load_control_relatives()
+    )
+    apps = apps if apps is not None else indexation_priority.load_app_keys()
+    by_app = {}
+    for app, relatives in indexation_priority.priority_app_pages(apps).items():
+        kept = [rel for rel in relatives if _served_page(rel, control, tree, pages)]
+        if kept:
+            by_app[app] = kept
+    homes = [
+        rel
+        for rel in indexation_priority.locale_homepages()
+        if _served_page(rel, control, tree, pages)
+    ]
+    return by_app, homes
+
+
+def render_priority_hub(by_app, homes, tree=None, pages=None):
+    e = html.escape
+    pages = str(pages or PAGES)
+    canonical = f"{SITE}/{indexation_priority.PRIORITY_HUB_RELATIVE}"
+    body = []
+    for app in sorted(by_app):
+        relatives = by_app[app]
+        heading = page_title(
+            os.path.join(pages, relatives[0]), slug_title(app), tree
+        )
+        body.append(f'  <h2 id="{e(app, quote=True)}">{e(heading)}</h2>')
+        body.append("  <ul>")
+        for rel in relatives:
+            locale = rel.split("/")[0]
+            label = PRIORITY_LOCALE_LABELS.get(locale, locale)
+            body.append(
+                f'    <li><a href="{e(f"{SITE}/{rel}", quote=True)}" '
+                f'hreflang="{e(locale, quote=True)}">{e(label)}</a></li>'
+            )
+        body.append("  </ul>")
+    if homes:
+        body.append(f"  <h2>{e(PRIORITY_HOMES_LABEL)}</h2>")
+        body.append("  <ul>")
+        for rel in homes:
+            href = f"{SITE}/" if rel == "index.html" else f"{SITE}/{rel}"
+            label = page_title(
+                os.path.join(pages, rel), rel.split("/")[0], tree
+            )
+            body.append(
+                f'    <li><a href="{e(href, quote=True)}">{e(label)}</a></li>'
+            )
+        body.append("  </ul>")
+    document = (
+        '<!DOCTYPE html>\n<html lang="en"><head>'
+        f"{PRIORITY_HUB_MARKER}"
+        '<meta charset="utf-8">\n'
+        '<meta name="viewport" content="width=device-width, initial-scale=1">\n'
+        f"<title>{e(PRIORITY_HUB_TITLE)} | iOS</title>\n"
+        f'<meta name="description" content="{e(PRIORITY_HUB_LEAD)}">\n'
+        # 與 browse 頁同政策：純連結頁不進索引，只負責讓爬蟲走到優先頁。
+        '<meta name="robots" content="noindex,follow">\n'
+        f'<link rel="canonical" href="{e(canonical, quote=True)}">\n'
+        f"{STYLE}\n</head><body><main>\n"
+        f'  <nav class="up"><a href="{e(SITE + "/", quote=True)}">&larr; Home</a></nav>\n'
+        f"  <h1>{e(PRIORITY_HUB_TITLE)}</h1>\n"
+        f'  <p class="lead">{e(PRIORITY_HUB_LEAD)}</p>\n'
+        + "\n".join(body)
+        + "\n</main></body></html>\n"
+    )
+    return document
+
+
+def priority_app_block(app, relatives, current):
+    e = html.escape
+    rows = "\n".join(
+        f'  <li><a href="{e(f"{SITE}/{rel}", quote=True)}" '
+        f'hreflang="{e(rel.split("/")[0], quote=True)}">'
+        f'{e(PRIORITY_LOCALE_LABELS.get(rel.split("/")[0], rel.split("/")[0]))}</a></li>'
+        for rel in relatives
+        if rel != current
+    )
+    if not rows:
+        return ""
+    return (
+        "\n<!--iag-priority-app-->\n"
+        f'<nav class="wrap priority-app-links" data-app="{e(app, quote=True)}" '
+        'aria-label="Languages">\n'
+        f"<ul>\n{rows}\n</ul>\n</nav>\n"
+        "<!--/iag-priority-app-->\n"
+    )
+
+
+def process_priority(state, tree=None, pages=None, apps=None, control=None):
+    """優先總表頁＋各款入口頁區塊。回傳總表頁是否存在（給首頁連結用）。"""
+    pages = str(pages or PAGES)
+    apps = apps if apps is not None else indexation_priority.load_app_keys()
+    by_app, homes = priority_targets(tree, pages, apps, control)
+    hub_path = os.path.join(pages, indexation_priority.PRIORITY_HUB_RELATIVE)
+    if by_app or homes:
+        write_if_changed(
+            hub_path,
+            render_priority_hub(by_app, homes, tree, pages),
+            state,
+            tree,
+            pages,
+        )
+    for app in apps:
+        relatives = by_app.get(app, [])
+        for locale in indexation_priority.PRIORITY_APP_LOCALES:
+            entry = os.path.join(
+                pages, indexation_priority.app_entry_page(locale, app)
+            )
+            inject(
+                entry,
+                PRIORITY_APP_BLOCK,
+                priority_app_block(app, relatives, ""),
+                state,
+                tree,
+                pages,
+            )
+    return bool(by_app or homes)
+
+
+def process_root(parents, state, tree=None, pages=None, priority_hub=False):
     pages = str(pages or PAGES)
     root_index = os.path.join(pages, "index.html")
     if not os.path.exists(root_index):
         return
     already = linked_targets(root_index)
     links = []
+    if priority_hub:
+        # 首頁第一條：優先總表頁（路線 99）。
+        links.append((
+            f"{SITE}/{indexation_priority.PRIORITY_HUB_RELATIVE}",
+            PRIORITY_HUB_TITLE,
+        ))
     for name, locale in parents:
         for candidate in ("index.html", "browse.html"):
             path = os.path.join(pages, name, candidate)
@@ -918,7 +1079,8 @@ def run_link_hubs(
     for name, locale in parents:
         process_parent(name, locale, state, tree, pages)
     cleanup_stale_browse(state, tree, pages)
-    process_root(parents, state, tree, pages)
+    priority_hub = process_priority(state, tree, pages)
+    process_root(parents, state, tree, pages, priority_hub=priority_hub)
     return {
         "parents": len(parents),
         "changed": state["changed"],

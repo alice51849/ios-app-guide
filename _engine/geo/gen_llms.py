@@ -37,6 +37,7 @@ import app_video_lessons  # noqa: E402
 import app_hook_clips  # noqa: E402
 import build_pages_i18n  # noqa: E402
 import high_intent_decision_routes  # noqa: E402
+import indexation_priority  # noqa: E402
 from app_store_storefronts import (  # noqa: E402
     campaign_app_store_url,
     load_storefront_availability,
@@ -5864,6 +5865,8 @@ def refresh_public_roots(pages: Path) -> list[str]:
 
 
 def build_robots():
+    # 路線 99（2026-11-21）：資料格式子地圖 sitemap_oembed.xml、sitemap_api.xml 照產，但不進網站地圖索引、也不列 robots
+    # （robots 的 Sitemap 行也會被搜尋引擎讀，只移出索引達不到目的；反方條件）
     out = [f"Sitemap: {SITE}/sitemap.xml",
             f"Sitemap: {SITE}/sitemap_alternatives.xml",
             f"Sitemap: {SITE}/sitemap_answers.xml",
@@ -5875,7 +5878,6 @@ def build_robots():
             f"Sitemap: {SITE}/{app_video_lessons.SITEMAP_NAME}",
             f"Sitemap: {SITE}/{app_hook_clips.SITEMAP_NAME}",
             f"Sitemap: {SITE}/sitemap_linkset.xml",
-            f"Sitemap: {SITE}/sitemap_oembed.xml",
             f"Sitemap: {SITE}/sitemap_llms.xml",
             f"Sitemap: {SITE}/{app_install_decision_routes.SITEMAP_NAME}",
             f"Sitemap: {SITE}/sitemap_hubs.xml",
@@ -5883,7 +5885,6 @@ def build_robots():
             f"Sitemap: {SITE}/sitemap_review_hubs.xml",
             f"Sitemap: {SITE}/sitemap_tools.xml",
             f"Sitemap: {SITE}/sitemap_data.xml",
-            f"Sitemap: {SITE}/sitemap_api.xml",
             f"Sitemap: {SITE}/{portfolio_offer_catalog.SITEMAP_NAME}",
             f"Sitemap: {SITE}/sitemap_swap.xml",
             f"Sitemap: {SITE}/sitemap_opds.xml",
@@ -9148,7 +9149,10 @@ def build_sitemap_index():
         sitemap.relative_to(PAGES).as_posix()
         for sitemap in sorted(app_sitemaps)
     )
-    maps = list(dict.fromkeys(maps))
+    # 路線 99（2026-11-21）：優先網站地圖排第一、oembed／api 子地圖移出索引（檔案保留）；
+    # 與 gen_locale_indexation.update_sitemap_index 共用 indexation_priority 的同一條規則。
+    maps.insert(0, indexation_priority.PRIORITY_SITEMAP)
+    maps = indexation_priority.sitemap_index_order(maps)
     items = "\n".join(
         f"  <sitemap><loc>{SITE}/{m}</loc></sitemap>"
         for m in maps

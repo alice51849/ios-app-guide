@@ -5652,7 +5652,7 @@ PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
             "triggers": [
                 "routine planner app",
                 "morning routine planner",
-                "bedtime routine app",
+                "evening routine planner",
                 "focus countdown live activity",
                 "daily routine templates",
                 "lock screen widget planner",

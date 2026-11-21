@@ -1,7 +1,7 @@
 {
  "schema": "lumi.social-feed/v1",
  "date": "2026-11-21",
- "generated_at": "2026-11-21T02:02:01Z",
+ "generated_at": "2026-11-21T08:50:38Z",
  "items": {
   "bluesky": [
    {
@@ -223,47 +223,68 @@
    },
    {
     "kind": "clip",
-    "key": "lumimissionpro/ja",
-    "locale": "ja",
-    "app": "lumimissionpro",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/1ged0k.mp4",
-    "hook": "はみがき、ごはん、片づけ、毎日バトル？",
-    "name": "Lumi ミッション星 Pro 毎日の習慣",
-    "title": "はみがき、ごはん、片づけ、毎日バトル？ | お支度ボード・朝と夜のルーティン | Lumi ミッション星 Pro",
+    "key": "lumiletters/ko",
+    "locale": "ko",
+    "app": "lumiletters",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/391phh.mp4",
+    "hook": "스마트폰 시간을 ABC 시간으로",
+    "name": "Lumi 레터 Lite: 어린이 영어 ABC",
+    "title": "스마트폰 시간을 ABC 시간으로 | 엄마표 영어 ABC·파닉스 놀이 | Lumi 레터 Lite",
     "tags": [
-     "#寝る前",
-     "#寝かしつけ",
-     "#はみがき",
-     "#歯磨き",
-     "#Lumiミッション星Pro"
+     "#알파벳쓰기",
+     "#소문자",
+     "#대문자",
+     "#취학전",
+     "#Lumi레터Lite"
     ],
-    "caption": "はみがき、ごはん、片づけ、毎日バトル？\nできたら1タップ、相棒が大よろこび\nお支度ボード・朝と夜のルーティン\nLumi ミッション星 Pro 毎日の習慣\nApp Storeで「Lumi ミッション星 Pro」を検索\nAndroidはGoogle Playで\n\n#寝る前 #寝かしつけ #Lumiミッション星Pro",
-    "button": "App Storeで入手",
+    "caption": "스마트폰 시간을 ABC 시간으로\n획순대로 따라쓰기\n엄마표 영어 ABC·파닉스 놀이\nLumi 레터 Lite: 어린이 영어 ABC\nApp Store에서 'Lumi 레터 Lite' 검색\nAndroid는 Google Play에서\n\n#알파벳쓰기 #소문자 #Lumi레터Lite",
+    "button": "App Store에서 받기",
     "variant": "a",
-    "alt": "Lumi ミッション星 Pro 毎日の習慣 — はみがき、ごはん、片づけ、毎日バトル？ — できたら1タップ、相棒が大よろこび — お支度ボード・朝と夜のルーティン",
-    "store": "https://apps.apple.com/jp/app/id6779745474?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.lumi.mochimissionplanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumimissionpro",
+    "alt": "Lumi 레터 Lite: 어린이 영어 ABC — 스마트폰 시간을 ABC 시간으로 — 획순대로 따라쓰기 — 엄마표 영어 ABC·파닉스 놀이",
+    "store": "https://apps.apple.com/kr/app/id6778748533?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiLettersLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiletters",
     "review": {
-     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
-     "url": "https://apps.apple.com/app/id6779745474?action=write-review"
+     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
+     "url": "https://apps.apple.com/app/id6778748533?action=write-review"
     },
     "keywords": [
-     "寝る前",
-     "寝かしつけ",
-     "はみがき",
-     "歯磨き",
-     "おかたづけ",
-     "片付け"
+     "소문자",
+     "대문자",
+     "취학전",
+     "영어조기교육",
+     "유아영어",
+     "영어발음"
     ],
-    "keyline": "お支度ボード・朝と夜のルーティン",
+    "keyline": "엄마표 영어 ABC·파닉스 놀이",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "a82776e501c32a9a",
+     "board": "4ec0196ef01258b0",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "utility/zhuyin/lumibopomofo/zy05/zh-Hant",
+    "locale": "zh-Hant",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/utility-cards/card-20261121.jpg",
+    "caption": "今日注音：ㄉ\n大象  ㄉㄚˋ ㄒㄧㄤˋ\n聲母：放在最前面的音\n找找看家裡哪些東西有這個音\n\nLumi注音星球: 37 個注音小夥伴陪孩子玩著學\nApp Store／Google Play 搜尋「Lumi注音星球」\n\n#學注音符號 #注音符號 #學注音",
+    "title": "今日注音：ㄉ",
+    "alt": "Lumi注音星球 — 今日注音：ㄉ — 大象  ㄉㄚˋ ㄒㄧㄤˋ — 聲母：放在最前面的音 — 注音遊戲：聽音、描寫、拼音",
+    "name": "Lumi注音星球",
+    "hook": "今日注音：ㄉ",
+    "tags": [
+     "#學注音符號",
+     "#注音符號",
+     "#學注音",
+     "#注音練習",
+     "#Lumi注音星球"
+    ],
+    "button": "在 App Store 下載",
+    "store": "https://apps.apple.com/tw/app/id6773017109?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumibopomofo"
    },
    {
     "kind": "card",
@@ -1526,47 +1547,68 @@
    },
    {
     "kind": "clip",
-    "key": "lumimissionpro/ja",
-    "locale": "ja",
-    "app": "lumimissionpro",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/1ged0k.mp4",
-    "hook": "はみがき、ごはん、片づけ、毎日バトル？",
-    "name": "Lumi ミッション星 Pro 毎日の習慣",
-    "title": "はみがき、ごはん、片づけ、毎日バトル？ | お支度ボード・朝と夜のルーティン | Lumi ミッション星 Pro",
+    "key": "lumiletters/ko",
+    "locale": "ko",
+    "app": "lumiletters",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/391phh.mp4",
+    "hook": "스마트폰 시간을 ABC 시간으로",
+    "name": "Lumi 레터 Lite: 어린이 영어 ABC",
+    "title": "스마트폰 시간을 ABC 시간으로 | 엄마표 영어 ABC·파닉스 놀이 | Lumi 레터 Lite",
     "tags": [
-     "#寝る前",
-     "#寝かしつけ",
-     "#はみがき",
-     "#歯磨き",
-     "#Lumiミッション星Pro"
+     "#알파벳쓰기",
+     "#소문자",
+     "#대문자",
+     "#취학전",
+     "#Lumi레터Lite"
     ],
-    "caption": "はみがき、ごはん、片づけ、毎日バトル？\nできたら1タップ、相棒が大よろこび\nお支度ボード・朝と夜のルーティン\nLumi ミッション星 Pro 毎日の習慣\nApp Storeで「Lumi ミッション星 Pro」を検索\nAndroidはGoogle Playで\n\n#寝る前 #寝かしつけ #はみがき #歯磨き #Lumiミッション星Pro",
-    "button": "App Storeで入手",
+    "caption": "스마트폰 시간을 ABC 시간으로\n획순대로 따라쓰기\n엄마표 영어 ABC·파닉스 놀이\nLumi 레터 Lite: 어린이 영어 ABC\nApp Store에서 'Lumi 레터 Lite' 검색\nAndroid는 Google Play에서\n\n#알파벳쓰기 #소문자 #대문자 #취학전 #Lumi레터Lite",
+    "button": "App Store에서 받기",
     "variant": "a",
-    "alt": "Lumi ミッション星 Pro 毎日の習慣 — はみがき、ごはん、片づけ、毎日バトル？ — できたら1タップ、相棒が大よろこび — お支度ボード・朝と夜のルーティン",
-    "store": "https://apps.apple.com/jp/app/id6779745474?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.lumi.mochimissionplanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumimissionpro",
+    "alt": "Lumi 레터 Lite: 어린이 영어 ABC — 스마트폰 시간을 ABC 시간으로 — 획순대로 따라쓰기 — 엄마표 영어 ABC·파닉스 놀이",
+    "store": "https://apps.apple.com/kr/app/id6778748533?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiLettersLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiletters",
     "review": {
-     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
-     "url": "https://apps.apple.com/app/id6779745474?action=write-review"
+     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
+     "url": "https://apps.apple.com/app/id6778748533?action=write-review"
     },
     "keywords": [
-     "寝る前",
-     "寝かしつけ",
-     "はみがき",
-     "歯磨き",
-     "おかたづけ",
-     "片付け"
+     "소문자",
+     "대문자",
+     "취학전",
+     "영어조기교육",
+     "유아영어",
+     "영어발음"
     ],
-    "keyline": "お支度ボード・朝と夜のルーティン",
+    "keyline": "엄마표 영어 ABC·파닉스 놀이",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "a82776e501c32a9a",
+     "board": "4ec0196ef01258b0",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "utility/zhuyin/lumibopomofo/zy05/zh-Hant",
+    "locale": "zh-Hant",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/utility-cards/card-20261121.jpg",
+    "caption": "今日注音：ㄉ\n大象  ㄉㄚˋ ㄒㄧㄤˋ\n聲母：放在最前面的音\n找找看家裡哪些東西有這個音\n\nLumi注音星球: 37 個注音小夥伴陪孩子玩著學\nApp Store／Google Play 搜尋「Lumi注音星球」\n\n#學注音符號 #注音符號 #學注音 #注音練習 #Lumi注音星球",
+    "title": "今日注音：ㄉ",
+    "alt": "Lumi注音星球 — 今日注音：ㄉ — 大象  ㄉㄚˋ ㄒㄧㄤˋ — 聲母：放在最前面的音 — 注音遊戲：聽音、描寫、拼音",
+    "name": "Lumi注音星球",
+    "hook": "今日注音：ㄉ",
+    "tags": [
+     "#學注音符號",
+     "#注音符號",
+     "#學注音",
+     "#注音練習",
+     "#Lumi注音星球"
+    ],
+    "button": "在 App Store 下載",
+    "store": "https://apps.apple.com/tw/app/id6773017109?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumibopomofo"
    }
   ],
   "youtube": [
@@ -1863,58 +1905,59 @@
    },
    {
     "kind": "clip",
-    "key": "lumimissionpro/ja",
-    "locale": "ja",
-    "app": "lumimissionpro",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/1ged0k.mp4",
-    "hook": "できたら1タップ、相棒が大よろこび",
-    "name": "Lumi ミッション星 Pro 毎日の習慣",
-    "title": "できたら1タップ、相棒が大よろこび | お支度ボード・朝と夜のルーティン | Lumi ミッション星 Pro",
+    "key": "lumiletters/ko",
+    "locale": "ko",
+    "app": "lumiletters",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/391phh.mp4",
+    "hook": "획순대로 따라쓰기",
+    "name": "Lumi 레터 Lite: 어린이 영어 ABC",
+    "title": "획순대로 따라쓰기 | 엄마표 영어 ABC·파닉스 놀이 | Lumi 레터 Lite",
     "tags": [
-     "#寝る前",
-     "#寝かしつけ",
-     "#はみがき",
-     "#歯磨き",
-     "#Lumiミッション星Pro"
+     "#알파벳쓰기",
+     "#소문자",
+     "#대문자",
+     "#취학전",
+     "#Lumi레터Lite"
     ],
-    "caption": "できたら1タップ、相棒が大よろこび\nミッションのあとは、記念カード\nお支度ボード・朝と夜のルーティン\nLumi ミッション星 Pro 毎日の習慣\nApp Storeで「Lumi ミッション星 Pro」を検索\nAndroidはGoogle Playで\n\n#寝る前 #寝かしつけ #はみがき #歯磨き #Lumiミッション星Pro",
-    "button": "App Storeで入手",
+    "caption": "획순대로 따라쓰기\n소리를 듣고 글자와 맞춰요\n엄마표 영어 ABC·파닉스 놀이\nLumi 레터 Lite: 어린이 영어 ABC\nApp Store에서 'Lumi 레터 Lite' 검색\nAndroid는 Google Play에서\n\n#알파벳쓰기 #소문자 #대문자 #취학전 #Lumi레터Lite",
+    "button": "App Store에서 받기",
     "variant": "b",
-    "alt": "Lumi ミッション星 Pro 毎日の習慣 — できたら1タップ、相棒が大よろこび — ミッションのあとは、記念カード — お支度ボード・朝と夜のルーティン",
-    "store": "https://apps.apple.com/jp/app/id6779745474?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.lumi.mochimissionplanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumimissionpro",
+    "alt": "Lumi 레터 Lite: 어린이 영어 ABC — 획순대로 따라쓰기 — 소리를 듣고 글자와 맞춰요 — 엄마표 영어 ABC·파닉스 놀이",
+    "store": "https://apps.apple.com/kr/app/id6778748533?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiLettersLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiletters",
     "review": {
-     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
-     "url": "https://apps.apple.com/app/id6779745474?action=write-review"
+     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
+     "url": "https://apps.apple.com/app/id6778748533?action=write-review"
     },
     "keywords": [
-     "寝る前",
-     "寝かしつけ",
-     "はみがき",
-     "歯磨き",
-     "おかたづけ",
-     "片付け"
+     "소문자",
+     "대문자",
+     "취학전",
+     "영어조기교육",
+     "유아영어",
+     "영어발음"
     ],
-    "keyline": "お支度ボード・朝と夜のルーティン",
+    "keyline": "엄마표 영어 ABC·파닉스 놀이",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "a82776e501c32a9a",
+     "board": "4ec0196ef01258b0",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "youtube": {
-     "title": "できたら1タップ、相棒が大よろこび | Lumi ミッション星 Pro #Shorts",
-     "description": "できたら1タップ、相棒が大よろこび\nミッションのあとは、記念カード\nお支度ボード・朝と夜のルーティン\n\nLumi ミッション星 Pro 毎日の習慣\nApp Store: https://apps.apple.com/jp/app/id6779745474?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.lumi.mochimissionplanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumimissionpro\nこのアプリをお使いですか？App Store で評価・レビューできます\nhttps://apps.apple.com/app/id6779745474?action=write-review\n\n寝る前 · 寝かしつけ · はみがき · 歯磨き · おかたづけ · 片付け\n\n#Shorts #寝る前 #Lumiミッション星Pro",
+     "title": "획순대로 따라쓰기 | Lumi 레터 Lite #Shorts",
+     "description": "획순대로 따라쓰기\n소리를 듣고 글자와 맞춰요\n엄마표 영어 ABC·파닉스 놀이\n\nLumi 레터 Lite: 어린이 영어 ABC\nApp Store: https://apps.apple.com/kr/app/id6778748533?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiLettersLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiletters\n이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다\nhttps://apps.apple.com/app/id6778748533?action=write-review\n\n소문자 · 대문자 · 취학전 · 영어조기교육 · 유아영어 · 영어발음\n\n#Shorts #알파벳쓰기 #Lumi레터Lite",
      "tags": [
-      "寝る前",
-      "寝かしつけ",
-      "はみがき",
-      "歯磨き",
-      "おかたづけ",
-      "片付け",
-      "Lumiミッション星Pro",
-      "Lumi ミッション星 Pro"
+      "소문자",
+      "대문자",
+      "취학전",
+      "영어조기교육",
+      "유아영어",
+      "영어발음",
+      "알파벳쓰기",
+      "Lumi레터Lite",
+      "Lumi 레터 Lite"
      ]
     },
     "slot": 15
@@ -2160,51 +2203,76 @@
    },
    {
     "kind": "clip",
-    "key": "lumimissionpro/ja",
-    "locale": "ja",
-    "app": "lumimissionpro",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/1ged0k.mp4",
-    "hook": "できたら1タップ、相棒が大よろこび",
-    "name": "Lumi ミッション星 Pro 毎日の習慣",
-    "title": "できたら1タップ、相棒が大よろこび | お支度ボード・朝と夜のルーティン | Lumi ミッション星 Pro",
+    "key": "lumiletters/ko",
+    "locale": "ko",
+    "app": "lumiletters",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/391phh.mp4",
+    "hook": "획순대로 따라쓰기",
+    "name": "Lumi 레터 Lite: 어린이 영어 ABC",
+    "title": "획순대로 따라쓰기 | 엄마표 영어 ABC·파닉스 놀이 | Lumi 레터 Lite",
     "tags": [
-     "#寝る前",
-     "#寝かしつけ",
-     "#はみがき",
-     "#歯磨き",
-     "#Lumiミッション星Pro"
+     "#알파벳쓰기",
+     "#소문자",
+     "#대문자",
+     "#취학전",
+     "#Lumi레터Lite"
     ],
-    "caption": "できたら1タップ、相棒が大よろこび\nミッションのあとは、記念カード\nお支度ボード・朝と夜のルーティン\nLumi ミッション星 Pro 毎日の習慣\nApp Storeで「Lumi ミッション星 Pro」を検索\nAndroidはGoogle Playで\n\n#寝る前 #寝かしつけ #はみがき #歯磨き #Lumiミッション星Pro",
-    "button": "App Storeで入手",
+    "caption": "획순대로 따라쓰기\n소리를 듣고 글자와 맞춰요\n엄마표 영어 ABC·파닉스 놀이\nLumi 레터 Lite: 어린이 영어 ABC\nApp Store에서 'Lumi 레터 Lite' 검색\nAndroid는 Google Play에서\n\n#알파벳쓰기 #소문자 #대문자 #취학전 #Lumi레터Lite",
+    "button": "App Store에서 받기",
     "variant": "b",
-    "alt": "Lumi ミッション星 Pro 毎日の習慣 — できたら1タップ、相棒が大よろこび — ミッションのあとは、記念カード — お支度ボード・朝と夜のルーティン",
-    "store": "https://apps.apple.com/jp/app/id6779745474?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.lumi.mochimissionplanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumimissionpro",
+    "alt": "Lumi 레터 Lite: 어린이 영어 ABC — 획순대로 따라쓰기 — 소리를 듣고 글자와 맞춰요 — 엄마표 영어 ABC·파닉스 놀이",
+    "store": "https://apps.apple.com/kr/app/id6778748533?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiLettersLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiletters",
     "review": {
-     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
-     "url": "https://apps.apple.com/app/id6779745474?action=write-review"
+     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
+     "url": "https://apps.apple.com/app/id6778748533?action=write-review"
     },
     "keywords": [
-     "寝る前",
-     "寝かしつけ",
-     "はみがき",
-     "歯磨き",
-     "おかたづけ",
-     "片付け"
+     "소문자",
+     "대문자",
+     "취학전",
+     "영어조기교육",
+     "유아영어",
+     "영어발음"
     ],
-    "keyline": "お支度ボード・朝と夜のルーティン",
+    "keyline": "엄마표 영어 ABC·파닉스 놀이",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "a82776e501c32a9a",
+     "board": "4ec0196ef01258b0",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "できたら1タップ、相棒が大よろこび\nミッションのあとは、記念カード\nお支度ボード・朝と夜のルーティン\nLumi ミッション星 Pro 毎日の習慣\nApp Storeで「Lumi ミッション星 Pro」を検索\nAndroidはGoogle Playで\n\n#寝る前 #寝かしつけ #はみがき #歯磨き #Lumiミッション星Pro\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6779745474?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.lumi.mochimissionplanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumimissionpro",
-     "link": "https://apps.apple.com/jp/app/id6779745474?pt=118326163&ct=social&mt=8"
+     "description": "획순대로 따라쓰기\n소리를 듣고 글자와 맞춰요\n엄마표 영어 ABC·파닉스 놀이\nLumi 레터 Lite: 어린이 영어 ABC\nApp Store에서 'Lumi 레터 Lite' 검색\nAndroid는 Google Play에서\n\n#알파벳쓰기 #소문자 #대문자 #취학전 #Lumi레터Lite\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6778748533?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiLettersLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiletters",
+     "link": "https://apps.apple.com/kr/app/id6778748533?pt=118326163&ct=social&mt=8"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "utility/zhuyin/lumibopomofo/zy05/zh-Hant",
+    "locale": "zh-Hant",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/utility-cards/card-20261121.jpg",
+    "caption": "今日注音：ㄉ\n大象  ㄉㄚˋ ㄒㄧㄤˋ\n聲母：放在最前面的音\n找找看家裡哪些東西有這個音\n\nLumi注音星球: 37 個注音小夥伴陪孩子玩著學\nApp Store／Google Play 搜尋「Lumi注音星球」\n\n#學注音符號 #注音符號 #學注音 #注音練習 #Lumi注音星球",
+    "title": "今日注音：ㄉ",
+    "alt": "Lumi注音星球 — 今日注音：ㄉ — 大象  ㄉㄚˋ ㄒㄧㄤˋ — 聲母：放在最前面的音 — 注音遊戲：聽音、描寫、拼音",
+    "name": "Lumi注音星球",
+    "hook": "今日注音：ㄉ",
+    "tags": [
+     "#學注音符號",
+     "#注音符號",
+     "#學注音",
+     "#注音練習",
+     "#Lumi注音星球"
+    ],
+    "button": "在 App Store 下載",
+    "store": "https://apps.apple.com/tw/app/id6773017109?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumibopomofo",
+    "pinterest": {
+     "description": "今日注音：ㄉ\n大象  ㄉㄚˋ ㄒㄧㄤˋ\n聲母：放在最前面的音\n找找看家裡哪些東西有這個音\n\nLumi注音星球: 37 個注音小夥伴陪孩子玩著學\nApp Store／Google Play 搜尋「Lumi注音星球」\n\n#學注音符號 #注音符號 #學注音 #注音練習 #Lumi注音星球\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6773017109?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumibopomofo",
+     "link": "https://apps.apple.com/tw/app/id6773017109?pt=118326163&ct=social&mt=8"
+    }
    },
    {
     "kind": "card",
@@ -4909,48 +4977,48 @@
    },
    {
     "kind": "clip",
-    "key": "lumimissionpro/ja",
-    "locale": "ja",
-    "app": "lumimissionpro",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/1ged0k.mp4",
-    "hook": "はみがき、ごはん、片づけ、毎日バトル？",
-    "name": "Lumi ミッション星 Pro 毎日の習慣",
-    "title": "はみがき、ごはん、片づけ、毎日バトル？ | お支度ボード・朝と夜のルーティン | Lumi ミッション星 Pro",
+    "key": "lumiletters/ko",
+    "locale": "ko",
+    "app": "lumiletters",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/391phh.mp4",
+    "hook": "스마트폰 시간을 ABC 시간으로",
+    "name": "Lumi 레터 Lite: 어린이 영어 ABC",
+    "title": "스마트폰 시간을 ABC 시간으로 | 엄마표 영어 ABC·파닉스 놀이 | Lumi 레터 Lite",
     "tags": [
-     "#寝る前",
-     "#寝かしつけ",
-     "#はみがき",
-     "#歯磨き",
-     "#Lumiミッション星Pro"
+     "#알파벳쓰기",
+     "#소문자",
+     "#대문자",
+     "#취학전",
+     "#Lumi레터Lite"
     ],
-    "caption": "はみがき、ごはん、片づけ、毎日バトル？\nできたら1タップ、相棒が大よろこび\nお支度ボード・朝と夜のルーティン\nLumi ミッション星 Pro 毎日の習慣\nApp Storeで「Lumi ミッション星 Pro」を検索\nAndroidはGoogle Playで\n\n#寝る前 #寝かしつけ #はみがき #歯磨き #Lumiミッション星Pro",
-    "button": "App Storeで入手",
+    "caption": "스마트폰 시간을 ABC 시간으로\n획순대로 따라쓰기\n엄마표 영어 ABC·파닉스 놀이\nLumi 레터 Lite: 어린이 영어 ABC\nApp Store에서 'Lumi 레터 Lite' 검색\nAndroid는 Google Play에서\n\n#알파벳쓰기 #소문자 #대문자 #취학전 #Lumi레터Lite",
+    "button": "App Store에서 받기",
     "variant": "a",
-    "alt": "Lumi ミッション星 Pro 毎日の習慣 — はみがき、ごはん、片づけ、毎日バトル？ — できたら1タップ、相棒が大よろこび — お支度ボード・朝と夜のルーティン",
-    "store": "https://apps.apple.com/jp/app/id6779745474?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.lumi.mochimissionplanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumimissionpro",
+    "alt": "Lumi 레터 Lite: 어린이 영어 ABC — 스마트폰 시간을 ABC 시간으로 — 획순대로 따라쓰기 — 엄마표 영어 ABC·파닉스 놀이",
+    "store": "https://apps.apple.com/kr/app/id6778748533?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiLettersLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiletters",
     "review": {
-     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
-     "url": "https://apps.apple.com/app/id6779745474?action=write-review"
+     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
+     "url": "https://apps.apple.com/app/id6778748533?action=write-review"
     },
     "keywords": [
-     "寝る前",
-     "寝かしつけ",
-     "はみがき",
-     "歯磨き",
-     "おかたづけ",
-     "片付け"
+     "소문자",
+     "대문자",
+     "취학전",
+     "영어조기교육",
+     "유아영어",
+     "영어발음"
     ],
-    "keyline": "お支度ボード・朝と夜のルーティン",
+    "keyline": "엄마표 영어 ABC·파닉스 놀이",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "a82776e501c32a9a",
+     "board": "4ec0196ef01258b0",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "はみがき、ごはん、片づけ、毎日バトル？\nできたら1タップ、相棒が大よろこび\nお支度ボード・朝と夜のルーティン\nLumi ミッション星 Pro 毎日の習慣\nApp Storeで「Lumi ミッション星 Pro」を検索\nAndroidはGoogle Playで\n\n#寝る前 #寝かしつけ #はみがき #歯磨き #Lumiミッション星Pro\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6779745474?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.lumi.mochimissionplanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumimissionpro"
+     "caption": "스마트폰 시간을 ABC 시간으로\n획순대로 따라쓰기\n엄마표 영어 ABC·파닉스 놀이\nLumi 레터 Lite: 어린이 영어 ABC\nApp Store에서 'Lumi 레터 Lite' 검색\nAndroid는 Google Play에서\n\n#알파벳쓰기 #소문자 #대문자 #취학전 #Lumi레터Lite\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6778748533?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiLettersLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiletters"
     },
     "slot": 15
    }
@@ -5789,6 +5857,303 @@
      "rules": "2026-10-18"
     },
     "boost_rank": 5
+   },
+   {
+    "kind": "clip",
+    "key": "mochi/en",
+    "locale": "en",
+    "app": "mochi",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/bzxdez.mp4",
+    "hook": "Tap to check it off",
+    "name": "Mochi: Cute Checklist",
+    "title": "Tap to check it off | Cozy To-Do List Widget, Chores | Mochi Cute Checklist",
+    "tags": [
+     "#CuteChecklist",
+     "#CozyToDoListWidget",
+     "#ToDo",
+     "#MochiCuteChecklist"
+    ],
+    "caption": "Tap to check it off\n101 cute themes\nCozy To-Do List Widget, Chores\nMochi: Cute Checklist\nSearch “cute checklist” on the App Store\nAlso on Google Play\n\n#CuteChecklist #CozyToDoListWidget #MochiCuteChecklist",
+    "button": "Get it on the App Store",
+    "variant": "b",
+    "alt": "Mochi: Cute Checklist — Tap to check it off — 101 cute themes — Cozy To-Do List Widget, Chores",
+    "store": "https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=ln_mochi_host_us_bs_1121&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dln_mochi_host_us_bs_1121%26utm_campaign%3Dmochi",
+    "review": {
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6785004775?action=write-review"
+    },
+    "keywords": [
+     "planner",
+     "todo",
+     "aesthetic",
+     "daily",
+     "reminder",
+     "routine"
+    ],
+    "keyline": "Cozy To-Do List Widget, Chores",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "063389274bf4ea40",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "mochi/zh-Hant",
+    "locale": "zh-Hant",
+    "app": "mochi",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/61xlzv.mp4",
+    "hook": "待辦清單，也可以這麼可愛",
+    "name": "Mochi: 可愛待辦清單",
+    "title": "待辦清單，也可以這麼可愛 | 待辦清單・待辦事項・療癒手帳 | Mochi 可愛待辦清單",
+    "tags": [
+     "#可愛待辦清單",
+     "#代辦事項",
+     "#任務清單",
+     "#日程",
+     "#Mochi可愛待辦清單"
+    ],
+    "caption": "待辦清單，也可以這麼可愛\n點一下就完成\n待辦清單・待辦事項・療癒手帳\nMochi: 可愛待辦清單\n在 App Store 搜尋「Mochi 可愛待辦清單」\nAndroid 版在 Google Play\n\n#可愛待辦清單 #代辦事項 #Mochi可愛待辦清單",
+    "button": "在 App Store 下載",
+    "variant": "a",
+    "alt": "Mochi: 可愛待辦清單 — 待辦清單，也可以這麼可愛 — 點一下就完成 — 待辦清單・待辦事項・療癒手帳",
+    "store": "https://apps.apple.com/tw/app/id6785004775?pt=118326163&ct=ln_mochi_host_tw_bs_1121&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dln_mochi_host_tw_bs_1121%26utm_campaign%3Dmochi",
+    "review": {
+     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
+     "url": "https://apps.apple.com/app/id6785004775?action=write-review"
+    },
+    "keywords": [
+     "代辦事項",
+     "任務清單",
+     "日程",
+     "提醒",
+     "備忘錄",
+     "習慣"
+    ],
+    "keyline": "待辦清單・待辦事項・療癒手帳",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "063389274bf4ea40",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "mochi/ja",
+    "locale": "ja",
+    "app": "mochi",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/fpkl2v.mp4",
+    "hook": "ホーム画面でサッと確認",
+    "name": "Mochi: かわいいToDo",
+    "title": "ホーム画面でサッと確認 | ToDoリスト・やることリスト・チェックリスト | Mochi かわいいToDo",
+    "tags": [
+     "#かわいいToDoリストタスク管理",
+     "#リマインダー",
+     "#予定",
+     "#メモ",
+     "#MochiかわいいToDo"
+    ],
+    "caption": "ホーム画面でサッと確認\nタップで完了\nToDoリスト・やることリスト・チェックリスト\nMochi: かわいいToDo\nApp Storeで「Mochi かわいいToDo」を検索\nAndroidはGoogle Playで\n\n#かわいいToDoリストタスク管理 #リマインダー #MochiかわいいToDo",
+    "button": "App Storeで入手",
+    "variant": "c",
+    "alt": "Mochi: かわいいToDo — ホーム画面でサッと確認 — タップで完了 — ToDoリスト・やることリスト・チェックリスト",
+    "store": "https://apps.apple.com/jp/app/id6785004775?pt=118326163&ct=ln_mochi_host_jp_bs_1121&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dln_mochi_host_jp_bs_1121%26utm_campaign%3Dmochi",
+    "review": {
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6785004775?action=write-review"
+    },
+    "keywords": [
+     "リマインダー",
+     "予定",
+     "メモ",
+     "習慣",
+     "ルーティン",
+     "スケジュール"
+    ],
+    "keyline": "ToDoリスト・やることリスト・チェックリスト",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "063389274bf4ea40",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "mochi/ko",
+    "locale": "ko",
+    "app": "mochi",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/s1fzkf.mp4",
+    "hook": "홈 화면에 바로",
+    "name": "Mochi: 귀여운 할 일 목록 & 체크리스트",
+    "title": "홈 화면에 바로 | 할 일 목록, 데일리 플래너, 위젯 | Mochi 귀여운 할 일",
+    "tags": [
+     "#귀여운투두리스트체크리스트",
+     "#할일",
+     "#할일목록",
+     "#할일관리",
+     "#Mochi귀여운할일"
+    ],
+    "caption": "홈 화면에 바로\n톡 누르면 완료\n할 일 목록, 데일리 플래너, 위젯\nMochi: 귀여운 할 일 목록 & 체크리스트\nApp Store에서 'Mochi 귀여운 할 일' 검색\nAndroid는 Google Play에서\n\n#귀여운투두리스트체크리스트 #할일 #Mochi귀여운할일",
+    "button": "App Store에서 받기",
+    "variant": "c",
+    "alt": "Mochi: 귀여운 할 일 목록 & 체크리스트 — 홈 화면에 바로 — 톡 누르면 완료 — 할 일 목록, 데일리 플래너, 위젯",
+    "store": "https://apps.apple.com/kr/app/id6785004775?pt=118326163&ct=ln_mochi_host_kr_bs_1121&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dln_mochi_host_kr_bs_1121%26utm_campaign%3Dmochi",
+    "review": {
+     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
+     "url": "https://apps.apple.com/app/id6785004775?action=write-review"
+    },
+    "keywords": [
+     "할일",
+     "할일목록",
+     "할일관리",
+     "투두",
+     "알림",
+     "메모"
+    ],
+    "keyline": "할 일 목록, 데일리 플래너, 위젯",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "063389274bf4ea40",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "mochi/pt-BR",
+    "locale": "pt-BR",
+    "app": "mochi",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/e7aq6y.mp4",
+    "hook": "Um toque e pronto",
+    "name": "Mochi: Lista fofa",
+    "title": "Um toque e pronto | Lista de tarefas e checklist | Mochi Lista fofa",
+    "tags": [
+     "#ListaFofa",
+     "#ListaDeTarefas",
+     "#Checklist",
+     "#MochiListaFofa"
+    ],
+    "caption": "Um toque e pronto\n101 temas fofos\nLista de tarefas e checklist\nMochi: Lista fofa\nPesquise “lista de tarefas” na App Store\nTambém no Google Play\n\n#ListaFofa #ListaDeTarefas #MochiListafofa",
+    "button": "Baixar na App Store",
+    "variant": "b",
+    "alt": "Mochi: Lista fofa — Um toque e pronto — 101 temas fofos — Lista de tarefas e checklist",
+    "store": "https://apps.apple.com/br/app/id6785004775?pt=118326163&ct=ln_mochi_host_br_bs_1121&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dln_mochi_host_br_bs_1121%26utm_campaign%3Dmochi",
+    "review": {
+     "label": "Já usa este app? Avalie ou escreva uma resenha na App Store",
+     "url": "https://apps.apple.com/app/id6785004775?action=write-review"
+    },
+    "keywords": [
+     "lembrete",
+     "afazeres",
+     "planner",
+     "notas",
+     "hábitos",
+     "rotina"
+    ],
+    "keyline": "Lista de tarefas e checklist",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "063389274bf4ea40",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "mochi/de",
+    "locale": "de",
+    "app": "mochi",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/bwf5d3.mp4",
+    "hook": "Deine To-do-Liste, nur viel süßer",
+    "name": "Mochi: Süße To-do-Liste",
+    "title": "Deine To-do-Liste, nur viel süßer | Aufgabenliste & Checkliste | Mochi Süße To-do-Liste",
+    "tags": [
+     "#SüßeTodoListe",
+     "#Gewohnheiten",
+     "#Aufgabenliste",
+     "#MochiSüßeTodoListe"
+    ],
+    "caption": "Deine To-do-Liste, nur viel süßer\nAntippen und abhaken\nAufgabenliste & Checkliste\nMochi: Süße To-do-Liste\nIm App Store nach „Mochi Süße To-do-Liste“ suchen\nAuch bei Google Play\n\n#SüßeTodoListe #Gewohnheiten #MochiSüßeTodoListe",
+    "button": "Im App Store laden",
+    "variant": "a",
+    "alt": "Mochi: Süße To-do-Liste — Deine To-do-Liste, nur viel süßer — Antippen und abhaken — Aufgabenliste & Checkliste",
+    "store": "https://apps.apple.com/de/app/id6785004775?pt=118326163&ct=ln_mochi_host_de_bs_1121&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dln_mochi_host_de_bs_1121%26utm_campaign%3Dmochi",
+    "review": {
+     "label": "Du nutzt diese App schon? Bewerte sie oder schreib eine Rezension im App Store",
+     "url": "https://apps.apple.com/app/id6785004775?action=write-review"
+    },
+    "keywords": [
+     "todo",
+     "aufgaben",
+     "erinnerung",
+     "planer",
+     "notizen",
+     "gewohnheiten"
+    ],
+    "keyline": "Aufgabenliste & Checkliste",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "063389274bf4ea40",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "mochi/fr",
+    "locale": "fr",
+    "app": "mochi",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/zfsbz8.mp4",
+    "hook": "Ta liste de tâches, mais en mignon",
+    "name": "Mochi: Liste toute mignonne",
+    "title": "Ta liste de tâches, mais en mignon | Liste de tâches kawaii | Mochi Liste toute mignonne",
+    "tags": [
+     "#ListeDeTâchesKawaii",
+     "#Checklist",
+     "#Rappels",
+     "#MochiListeTouteMignonne"
+    ],
+    "caption": "Ta liste de tâches, mais en mignon\nTouche pour cocher\nListe de tâches kawaii\nMochi: Liste toute mignonne\nRecherchez « Mochi Liste toute mignonne » sur l'App Store\nAussi sur Google Play\n\n#ListeDeTâchesKawaii #Checklist #MochiListetoutemignonne",
+    "button": "Télécharger sur l'App Store",
+    "variant": "a",
+    "alt": "Mochi: Liste toute mignonne — Ta liste de tâches, mais en mignon — Touche pour cocher — Liste de tâches kawaii",
+    "store": "https://apps.apple.com/fr/app/id6785004775?pt=118326163&ct=ln_mochi_host_fr_bs_1121&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dln_mochi_host_fr_bs_1121%26utm_campaign%3Dmochi",
+    "review": {
+     "label": "Vous utilisez déjà cette app ? Notez-la ou rédigez un avis sur l’App Store",
+     "url": "https://apps.apple.com/app/id6785004775?action=write-review"
+    },
+    "keywords": [
+     "todo",
+     "ménage",
+     "agenda",
+     "notes",
+     "habitudes",
+     "routine"
+    ],
+    "keyline": "Liste de tâches kawaii",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "063389274bf4ea40",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    }
    },
    {
     "kind": "clip",
@@ -7675,6 +8040,177 @@
    },
    {
     "kind": "clip",
+    "key": "battai/en",
+    "locale": "en",
+    "app": "battai",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/2yedq5.mp4",
+    "hook": "When will battery health hit 80%?",
+    "name": "BattAI: Battery Health & Life",
+    "title": "When will battery health hit 80%? | Charge Alerts, Heat & Widget | BattAI Battery Health",
+    "tags": [
+     "#BatteryHealthScore",
+     "#ChargeAlerts",
+     "#CycleCount",
+     "#BattAIBatteryHealth"
+    ],
+    "caption": "When will battery health hit 80%?\nA health score, and what shapes it\nCharge Alerts, Heat & Widget\nBattAI: Battery Health & Life\nSearch “BattAI Battery Health” on the App Store\nAlso on Google Play\n\n#BatteryHealthScore #ChargeAlerts #BattAIBatteryHealth",
+    "button": "Get it on the App Store",
+    "variant": "a",
+    "alt": "BattAI: Battery Health & Life — When will battery health hit 80%? — A health score, and what shapes it — Charge Alerts, Heat & Widget",
+    "store": "https://apps.apple.com/us/app/id6802423998?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.BattAI&referrer=utm_source%3Dsocial%26utm_campaign%3Dbattai",
+    "review": {
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6802423998?action=write-review"
+    },
+    "keywords": [
+     "capacity",
+     "cycle",
+     "count",
+     "check",
+     "test",
+     "full"
+    ],
+    "keyline": "Charge Alerts, Heat & Widget",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "922844988a1008d7",
+     "real_recording": true,
+     "rules": "2026-10-18"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "battai/zh-Hant",
+    "locale": "zh-Hant",
+    "app": "battai",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/n2ybth.mp4",
+    "hook": "送修、二手轉賣，都用得上的電池報告",
+    "name": "BattAI: 電池健康分數",
+    "title": "送修、二手轉賣，都用得上的電池報告 | 電池檢測・充電保養・充飽提醒 | BattAI 電池健康",
+    "tags": [
+     "#電池健康度檢測分數",
+     "#最大容量",
+     "#健康度",
+     "#充電速度",
+     "#BattAI電池健康"
+    ],
+    "caption": "送修、二手轉賣，都用得上的電池報告\n電池健康分數，連評分依據都看得到\n電池檢測・充電保養・充飽提醒\nBattAI: 電池健康分數\n在 App Store 搜尋「電池檢測」\nAndroid 版在 Google Play\n\n#電池健康度檢測分數 #最大容量 #BattAI電池健康",
+    "button": "在 App Store 下載",
+    "variant": "c",
+    "alt": "BattAI: 電池健康分數 — 送修、二手轉賣，都用得上的電池報告 — 電池健康分數，連評分依據都看得到 — 電池檢測・充電保養・充飽提醒",
+    "store": "https://apps.apple.com/tw/app/id6802423998?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.BattAI&referrer=utm_source%3Dsocial%26utm_campaign%3Dbattai",
+    "review": {
+     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
+     "url": "https://apps.apple.com/app/id6802423998?action=write-review"
+    },
+    "keywords": [
+     "最大容量",
+     "健康度",
+     "充電速度",
+     "耗電",
+     "快充",
+     "滿電"
+    ],
+    "keyline": "電池檢測・充電保養・充飽提醒",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "922844988a1008d7",
+     "real_recording": true,
+     "rules": "2026-10-18"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "battai/ja",
+    "locale": "ja",
+    "app": "battai",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/tmc5xw.mp4",
+    "hook": "状態スコアと、その要因まで",
+    "name": "BattAI: バッテリー状態スコア",
+    "title": "状態スコアと、その要因まで | バッテリー劣化チェック・充電通知 | BattAI バッテリー",
+    "tags": [
+     "#バッテリー劣化状態スコア",
+     "#最大容量",
+     "#サイクル",
+     "#回数",
+     "#BattAIバッテリー"
+    ],
+    "caption": "状態スコアと、その要因まで\n最大容量の、推移\nバッテリー劣化チェック・充電通知\nBattAI: バッテリー状態スコア\nApp Storeで「バッテリー 劣化」を検索\nAndroidはGoogle Playで\n\n#バッテリー劣化状態スコア #最大容量 #BattAIバッテリー",
+    "button": "App Storeで入手",
+    "variant": "b",
+    "alt": "BattAI: バッテリー状態スコア — 状態スコアと、その要因まで — 最大容量の、推移 — バッテリー劣化チェック・充電通知",
+    "store": "https://apps.apple.com/jp/app/id6802423998?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.BattAI&referrer=utm_source%3Dsocial%26utm_campaign%3Dbattai",
+    "review": {
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6802423998?action=write-review"
+    },
+    "keywords": [
+     "最大容量",
+     "サイクル",
+     "回数",
+     "診断",
+     "交換時期",
+     "消耗"
+    ],
+    "keyline": "バッテリー劣化チェック・充電通知",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "922844988a1008d7",
+     "real_recording": true,
+     "rules": "2026-10-18"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "battai/ko",
+    "locale": "ko",
+    "app": "battai",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/3o00cw.mp4",
+    "hook": "배터리 상태 점수와 점수를 만드는 요소",
+    "name": "BattAI: 배터리 상태 점수",
+    "title": "배터리 상태 점수와 점수를 만드는 요소 | 배터리 성능·수명 확인·완충 알림 | BattAI 배터리",
+    "tags": [
+     "#배터리성능상태점수",
+     "#효율",
+     "#점검",
+     "#사이클",
+     "#BattAI배터리"
+    ],
+    "caption": "배터리 상태 점수와 점수를 만드는 요소\n성능 최대치의 추세\n배터리 성능·수명 확인·완충 알림\nBattAI: 배터리 상태 점수\nApp Store에서 '배터리 용량' 검색\nAndroid는 Google Play에서\n\n#배터리성능상태점수 #효율 #BattAI배터리",
+    "button": "App Store에서 받기",
+    "variant": "b",
+    "alt": "BattAI: 배터리 상태 점수 — 배터리 상태 점수와 점수를 만드는 요소 — 성능 최대치의 추세 — 배터리 성능·수명 확인·완충 알림",
+    "store": "https://apps.apple.com/kr/app/id6802423998?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.BattAI&referrer=utm_source%3Dsocial%26utm_campaign%3Dbattai",
+    "review": {
+     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
+     "url": "https://apps.apple.com/app/id6802423998?action=write-review"
+    },
+    "keywords": [
+     "효율",
+     "점검",
+     "사이클",
+     "횟수",
+     "용량",
+     "최대"
+    ],
+    "keyline": "배터리 성능·수명 확인·완충 알림",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "922844988a1008d7",
+     "real_recording": true,
+     "rules": "2026-10-18"
+    }
+   },
+   {
+    "kind": "clip",
     "key": "caldaily/en",
     "locale": "en",
     "app": "caldaily",
@@ -9161,7 +9697,7 @@
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "f88a32e9a9deb640",
+     "board": "7ad14c39c559a0db",
      "real_recording": false,
      "rules": "2026-10-18"
     }
@@ -9204,7 +9740,7 @@
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "f88a32e9a9deb640",
+     "board": "7ad14c39c559a0db",
      "real_recording": false,
      "rules": "2026-10-18"
     }
@@ -10142,7 +10678,7 @@
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "3770a5c2653a56c0",
+     "board": "53bd29c97a625885",
      "real_recording": false,
      "rules": "2026-10-18"
     }
@@ -10185,7 +10721,7 @@
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "3770a5c2653a56c0",
+     "board": "53bd29c97a625885",
      "real_recording": false,
      "rules": "2026-10-18"
     }
@@ -13386,6 +13922,303 @@
      "store_claims_ok": true,
      "screen_text_ok": true,
      "board": "62080a3e042abae1",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "mochi_b/en",
+    "locale": "en",
+    "app": "mochi_b",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/c5k6l8.mp4",
+    "hook": "Make it yours with themes",
+    "name": "Mochi: Cute Checklist",
+    "title": "Make it yours with themes | Cute Checklist | Mochi Cute Checklist",
+    "tags": [
+     "#CozyToDoListWidget",
+     "#Chores",
+     "#Cute",
+     "#MochiCuteChecklist"
+    ],
+    "caption": "Make it yours with themes\nWork, errands, groceries in one place\nMochi: Cute Checklist\nSearch “cute checklist” on the App Store\nAlso on Google Play\n\n#CozyToDoListWidget #Chores #MochiCuteChecklist",
+    "button": "Get it on the App Store",
+    "variant": "c",
+    "alt": "Mochi: Cute Checklist — Make it yours with themes — Work, errands, groceries in one place",
+    "store": "https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=ln_mochi_host_us_bs_1121&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dln_mochi_host_us_bs_1121%26utm_campaign%3Dmochi",
+    "review": {
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6785004775?action=write-review"
+    },
+    "keywords": [
+     "planner",
+     "todo",
+     "aesthetic",
+     "daily",
+     "reminder",
+     "routine"
+    ],
+    "keyline": "Cute Checklist",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "de911648f97ae007",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "mochi_b/zh-Hant",
+    "locale": "zh-Hant",
+    "app": "mochi_b",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/dd1unw.mp4",
+    "hook": "讀書、工作、購物，一個 App 整理",
+    "name": "Mochi: 可愛待辦清單",
+    "title": "讀書、工作、購物，一個 App 整理 | 可愛待辦清單 | Mochi 可愛待辦清單",
+    "tags": [
+     "#提醒",
+     "#備忘錄",
+     "#習慣",
+     "#計畫",
+     "#Mochi可愛待辦清單"
+    ],
+    "caption": "讀書、工作、購物，一個 App 整理\n輕點打勾，超有成就感\nMochi: 可愛待辦清單\n在 App Store 搜尋「Mochi 可愛待辦清單」\nAndroid 版在 Google Play\n\n#提醒 #備忘錄 #Mochi可愛待辦清單",
+    "button": "在 App Store 下載",
+    "variant": "b",
+    "alt": "Mochi: 可愛待辦清單 — 讀書、工作、購物，一個 App 整理 — 輕點打勾，超有成就感",
+    "store": "https://apps.apple.com/tw/app/id6785004775?pt=118326163&ct=ln_mochi_host_tw_bs_1121&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dln_mochi_host_tw_bs_1121%26utm_campaign%3Dmochi",
+    "review": {
+     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
+     "url": "https://apps.apple.com/app/id6785004775?action=write-review"
+    },
+    "keywords": [
+     "代辦事項",
+     "任務清單",
+     "日程",
+     "提醒",
+     "備忘錄",
+     "習慣"
+    ],
+    "keyline": "可愛待辦清單",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "de911648f97ae007",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "mochi_b/ja",
+    "locale": "ja",
+    "app": "mochi_b",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/dca0hg.mp4",
+    "hook": "やることが多くて、つい忘れる？",
+    "name": "Mochi: かわいいToDo",
+    "title": "やることが多くて、つい忘れる？ | ToDoリスト・やることリスト・チェックリスト | Mochi かわいいToDo",
+    "tags": [
+     "#習慣",
+     "#ルーティン",
+     "#スケジュール",
+     "#買い物",
+     "#MochiかわいいToDo"
+    ],
+    "caption": "やることが多くて、つい忘れる？\n勉強も仕事も買い物も、ぜんぶ管理\nToDoリスト・やることリスト・チェックリスト\nMochi: かわいいToDo\nApp Storeで「Mochi かわいいToDo」を検索\nAndroidはGoogle Playで\n\n#習慣 #ルーティン #MochiかわいいToDo",
+    "button": "App Storeで入手",
+    "variant": "a",
+    "alt": "Mochi: かわいいToDo — やることが多くて、つい忘れる？ — 勉強も仕事も買い物も、ぜんぶ管理 — ToDoリスト・やることリスト・チェックリスト",
+    "store": "https://apps.apple.com/jp/app/id6785004775?pt=118326163&ct=ln_mochi_host_jp_bs_1121&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dln_mochi_host_jp_bs_1121%26utm_campaign%3Dmochi",
+    "review": {
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6785004775?action=write-review"
+    },
+    "keywords": [
+     "リマインダー",
+     "予定",
+     "メモ",
+     "習慣",
+     "ルーティン",
+     "スケジュール"
+    ],
+    "keyline": "ToDoリスト・やることリスト・チェックリスト",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "de911648f97ae007",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "mochi_b/ko",
+    "locale": "ko",
+    "app": "mochi_b",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/uin2zo.mp4",
+    "hook": "할 일이 많아서 자꾸 깜빡해요?",
+    "name": "Mochi: 귀여운 할 일 목록 & 체크리스트",
+    "title": "할 일이 많아서 자꾸 깜빡해요? | 귀여운 투두리스트 & 체크리스트 | Mochi 귀여운 할 일",
+    "tags": [
+     "#투두",
+     "#알림",
+     "#메모",
+     "#습관",
+     "#Mochi귀여운할일"
+    ],
+    "caption": "할 일이 많아서 자꾸 깜빡해요?\n공부, 업무, 장보기 한 곳에서\n귀여운 투두리스트 & 체크리스트\nMochi: 귀여운 할 일 목록 & 체크리스트\nApp Store에서 'Mochi 귀여운 할 일' 검색\nAndroid는 Google Play에서\n\n#투두 #알림 #Mochi귀여운할일",
+    "button": "App Store에서 받기",
+    "variant": "a",
+    "alt": "Mochi: 귀여운 할 일 목록 & 체크리스트 — 할 일이 많아서 자꾸 깜빡해요? — 공부, 업무, 장보기 한 곳에서 — 귀여운 투두리스트 & 체크리스트",
+    "store": "https://apps.apple.com/kr/app/id6785004775?pt=118326163&ct=ln_mochi_host_kr_bs_1121&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dln_mochi_host_kr_bs_1121%26utm_campaign%3Dmochi",
+    "review": {
+     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
+     "url": "https://apps.apple.com/app/id6785004775?action=write-review"
+    },
+    "keywords": [
+     "할일",
+     "할일목록",
+     "할일관리",
+     "투두",
+     "알림",
+     "메모"
+    ],
+    "keyline": "귀여운 투두리스트 & 체크리스트",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "de911648f97ae007",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "mochi_b/pt-BR",
+    "locale": "pt-BR",
+    "app": "mochi_b",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/o4ayua.mp4",
+    "hook": "Deixe com a sua cara com temas",
+    "name": "Mochi: Lista fofa",
+    "title": "Deixe com a sua cara com temas | Lista fofa | Mochi Lista fofa",
+    "tags": [
+     "#ListaDeTarefas",
+     "#Fofa",
+     "#Lembrete",
+     "#MochiListaFofa"
+    ],
+    "caption": "Deixe com a sua cara com temas\nEstudos, trabalho, compras em um só lugar\nMochi: Lista fofa\nPesquise “lista de tarefas” na App Store\nTambém no Google Play\n\n#ListaDeTarefas #Fofa #MochiListafofa",
+    "button": "Baixar na App Store",
+    "variant": "c",
+    "alt": "Mochi: Lista fofa — Deixe com a sua cara com temas — Estudos, trabalho, compras em um só lugar",
+    "store": "https://apps.apple.com/br/app/id6785004775?pt=118326163&ct=ln_mochi_host_br_bs_1121&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dln_mochi_host_br_bs_1121%26utm_campaign%3Dmochi",
+    "review": {
+     "label": "Já usa este app? Avalie ou escreva uma resenha na App Store",
+     "url": "https://apps.apple.com/app/id6785004775?action=write-review"
+    },
+    "keywords": [
+     "lembrete",
+     "afazeres",
+     "planner",
+     "notas",
+     "hábitos",
+     "rotina"
+    ],
+    "keyline": "Lista fofa",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "de911648f97ae007",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "mochi_b/de",
+    "locale": "de",
+    "app": "mochi_b",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/jpk9zc.mp4",
+    "hook": "Studium, Arbeit, Einkauf an einem Ort",
+    "name": "Mochi: Süße To-do-Liste",
+    "title": "Studium, Arbeit, Einkauf an einem Ort | Aufgabenliste & Checkliste | Mochi Süße To-do-Liste",
+    "tags": [
+     "#Gewohnheiten",
+     "#TodoListe",
+     "#Aufgaben",
+     "#MochiSüßeTodoListe"
+    ],
+    "caption": "Studium, Arbeit, Einkauf an einem Ort\nAbhaken bringt Klarheit\nAufgabenliste & Checkliste\nMochi: Süße To-do-Liste\nIm App Store nach „Mochi Süße To-do-Liste“ suchen\nAuch bei Google Play\n\n#Gewohnheiten #TodoListe #MochiSüßeTodoListe",
+    "button": "Im App Store laden",
+    "variant": "b",
+    "alt": "Mochi: Süße To-do-Liste — Studium, Arbeit, Einkauf an einem Ort — Abhaken bringt Klarheit — Aufgabenliste & Checkliste",
+    "store": "https://apps.apple.com/de/app/id6785004775?pt=118326163&ct=ln_mochi_host_de_bs_1121&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dln_mochi_host_de_bs_1121%26utm_campaign%3Dmochi",
+    "review": {
+     "label": "Du nutzt diese App schon? Bewerte sie oder schreib eine Rezension im App Store",
+     "url": "https://apps.apple.com/app/id6785004775?action=write-review"
+    },
+    "keywords": [
+     "todo",
+     "aufgaben",
+     "erinnerung",
+     "planer",
+     "notizen",
+     "gewohnheiten"
+    ],
+    "keyline": "Aufgabenliste & Checkliste",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "de911648f97ae007",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "mochi_b/fr",
+    "locale": "fr",
+    "app": "mochi_b",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/sfdnqe.mp4",
+    "hook": "Études, travail, courses au même endroit",
+    "name": "Mochi: Liste toute mignonne",
+    "title": "Études, travail, courses au même endroit | Liste de tâches kawaii | Mochi Liste toute mignonne",
+    "tags": [
+     "#Liste",
+     "#Tâches",
+     "#Kawaii",
+     "#MochiListeTouteMignonne"
+    ],
+    "caption": "Études, travail, courses au même endroit\nCocher, ça rend les idées claires\nListe de tâches kawaii\nMochi: Liste toute mignonne\nRecherchez « Mochi Liste toute mignonne » sur l'App Store\nAussi sur Google Play\n\n#Liste #Tâches #MochiListetoutemignonne",
+    "button": "Télécharger sur l'App Store",
+    "variant": "b",
+    "alt": "Mochi: Liste toute mignonne — Études, travail, courses au même endroit — Cocher, ça rend les idées claires — Liste de tâches kawaii",
+    "store": "https://apps.apple.com/fr/app/id6785004775?pt=118326163&ct=ln_mochi_host_fr_bs_1121&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dln_mochi_host_fr_bs_1121%26utm_campaign%3Dmochi",
+    "review": {
+     "label": "Vous utilisez déjà cette app ? Notez-la ou rédigez un avis sur l’App Store",
+     "url": "https://apps.apple.com/app/id6785004775?action=write-review"
+    },
+    "keywords": [
+     "todo",
+     "ménage",
+     "agenda",
+     "notes",
+     "habitudes",
+     "routine"
+    ],
+    "keyline": "Liste de tâches kawaii",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "de911648f97ae007",
      "real_recording": false,
      "rules": "2026-10-18"
     }
@@ -18008,6 +18841,92 @@
    },
    {
     "kind": "clip",
+    "key": "battai_t10/ko",
+    "locale": "ko",
+    "app": "battai_t10",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/64y1q6.mp4",
+    "hook": "배터리 성능 최대치 언제 80% 깨질까?",
+    "name": "BattAI: 배터리 상태 점수",
+    "title": "배터리 성능 최대치 언제 80% 깨질까? | 배터리 성능·수명 확인·완충 알림 | BattAI 배터리",
+    "tags": [
+     "#횟수",
+     "#용량",
+     "#최대",
+     "#교체",
+     "#BattAI배터리"
+    ],
+    "caption": "배터리 성능 최대치 언제 80% 깨질까?\n배터리 상태 점수와 점수를 만드는 요소\n배터리 성능·수명 확인·완충 알림\nBattAI: 배터리 상태 점수\nApp Store에서 'BattAI 배터리' 검색\nAndroid는 Google Play에서\n\n#횟수 #용량 #BattAI배터리",
+    "button": "App Store에서 받기",
+    "variant": "a",
+    "alt": "BattAI: 배터리 상태 점수 — 배터리 성능 최대치 언제 80% 깨질까? — 배터리 상태 점수와 점수를 만드는 요소 — 배터리 성능·수명 확인·완충 알림",
+    "store": "https://apps.apple.com/kr/app/id6802423998?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.BattAI&referrer=utm_source%3Dsocial%26utm_campaign%3Dbattai",
+    "review": {
+     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
+     "url": "https://apps.apple.com/app/id6802423998?action=write-review"
+    },
+    "keywords": [
+     "효율",
+     "점검",
+     "사이클",
+     "횟수",
+     "용량",
+     "최대"
+    ],
+    "keyline": "배터리 성능·수명 확인·완충 알림",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "1cde008b37075975",
+     "real_recording": true,
+     "rules": "2026-10-18"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "battai_t10b/zh-Hant",
+    "locale": "zh-Hant",
+    "app": "battai_t10b",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/ym7gad.mp4",
+    "hook": "電池壽命，哪天掉到 80%？",
+    "name": "BattAI: 電池健康分數",
+    "title": "電池壽命，哪天掉到 80%？ | 電池檢測・充電保養・充飽提醒 | BattAI 電池健康",
+    "tags": [
+     "#耗電",
+     "#快充",
+     "#滿電",
+     "#過熱",
+     "#BattAI電池健康"
+    ],
+    "caption": "電池壽命，哪天掉到 80%？\n電池健康分數，連評分依據都看得到\n電池檢測・充電保養・充飽提醒\nBattAI: 電池健康分數\n在 App Store 搜尋「BattAI 電池健康」\nAndroid 版在 Google Play\n\n#耗電 #快充 #BattAI電池健康",
+    "button": "在 App Store 下載",
+    "variant": "a",
+    "alt": "BattAI: 電池健康分數 — 電池壽命，哪天掉到 80%？ — 電池健康分數，連評分依據都看得到 — 電池檢測・充電保養・充飽提醒",
+    "store": "https://apps.apple.com/tw/app/id6802423998?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.BattAI&referrer=utm_source%3Dsocial%26utm_campaign%3Dbattai",
+    "review": {
+     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
+     "url": "https://apps.apple.com/app/id6802423998?action=write-review"
+    },
+    "keywords": [
+     "最大容量",
+     "健康度",
+     "充電速度",
+     "耗電",
+     "快充",
+     "滿電"
+    ],
+    "keyline": "電池檢測・充電保養・充飽提醒",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "1a2d1d71788b6654",
+     "real_recording": true,
+     "rules": "2026-10-18"
+    }
+   },
+   {
+    "kind": "clip",
     "key": "claudeusagemini_t10/ja",
     "locale": "ja",
     "app": "claudeusagemini_t10",
@@ -21212,6 +22131,414 @@
    },
    {
     "kind": "clip",
+    "key": "mochi/en",
+    "locale": "en",
+    "app": "mochi",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/bzxdez.mp4",
+    "hook": "Tap to check it off",
+    "name": "Mochi: Cute Checklist",
+    "title": "Tap to check it off | Cozy To-Do List Widget, Chores | Mochi Cute Checklist",
+    "tags": [
+     "#CuteChecklist",
+     "#CozyToDoListWidget",
+     "#ToDo",
+     "#MochiCuteChecklist"
+    ],
+    "caption": "Tap to check it off\n101 cute themes\nCozy To-Do List Widget, Chores\nMochi: Cute Checklist\nSearch “cute checklist” on the App Store\nAlso on Google Play\n\n#CuteChecklist #CozyToDoListWidget #ToDo #MochiCuteChecklist",
+    "button": "Get it on the App Store",
+    "variant": "b",
+    "alt": "Mochi: Cute Checklist — Tap to check it off — 101 cute themes — Cozy To-Do List Widget, Chores",
+    "store": "https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=ln_mochi_host_us_yt_1121&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dln_mochi_host_us_yt_1121%26utm_campaign%3Dmochi",
+    "review": {
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6785004775?action=write-review"
+    },
+    "keywords": [
+     "planner",
+     "todo",
+     "aesthetic",
+     "daily",
+     "reminder",
+     "routine"
+    ],
+    "keyline": "Cozy To-Do List Widget, Chores",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "063389274bf4ea40",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "Tap to check it off | Mochi Cute Checklist #Shorts",
+     "description": "Tap to check it off\n101 cute themes\nCozy To-Do List Widget, Chores\n\nMochi: Cute Checklist\nApp Store: https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=ln_mochi_host_us_yt_1121&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dln_mochi_host_us_yt_1121%26utm_campaign%3Dmochi\nAlready using this app? Rate or review it on the App Store\nhttps://apps.apple.com/app/id6785004775?action=write-review\n\nplanner · todo · aesthetic · daily · reminder · routine\n\n#Shorts #CuteChecklist #MochiCuteChecklist",
+     "tags": [
+      "planner",
+      "todo",
+      "aesthetic",
+      "daily",
+      "reminder",
+      "routine",
+      "CuteChecklist",
+      "CozyToDoListWidget",
+      "MochiCuteChecklist",
+      "Mochi Cute Checklist"
+     ]
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "mochi/zh-Hant",
+    "locale": "zh-Hant",
+    "app": "mochi",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/61xlzv.mp4",
+    "hook": "點一下就完成",
+    "name": "Mochi: 可愛待辦清單",
+    "title": "點一下就完成 | 待辦清單・待辦事項・療癒手帳 | Mochi 可愛待辦清單",
+    "tags": [
+     "#可愛待辦清單",
+     "#代辦事項",
+     "#任務清單",
+     "#日程",
+     "#Mochi可愛待辦清單"
+    ],
+    "caption": "點一下就完成\n101 款可愛主題\n待辦清單・待辦事項・療癒手帳\nMochi: 可愛待辦清單\n在 App Store 搜尋「Mochi 可愛待辦清單」\nAndroid 版在 Google Play\n\n#可愛待辦清單 #代辦事項 #任務清單 #日程 #Mochi可愛待辦清單",
+    "button": "在 App Store 下載",
+    "variant": "b",
+    "alt": "Mochi: 可愛待辦清單 — 點一下就完成 — 101 款可愛主題 — 待辦清單・待辦事項・療癒手帳",
+    "store": "https://apps.apple.com/tw/app/id6785004775?pt=118326163&ct=ln_mochi_host_tw_yt_1121&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dln_mochi_host_tw_yt_1121%26utm_campaign%3Dmochi",
+    "review": {
+     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
+     "url": "https://apps.apple.com/app/id6785004775?action=write-review"
+    },
+    "keywords": [
+     "代辦事項",
+     "任務清單",
+     "日程",
+     "提醒",
+     "備忘錄",
+     "習慣"
+    ],
+    "keyline": "待辦清單・待辦事項・療癒手帳",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "063389274bf4ea40",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "點一下就完成 | Mochi 可愛待辦清單 #Shorts",
+     "description": "點一下就完成\n101 款可愛主題\n待辦清單・待辦事項・療癒手帳\n\nMochi: 可愛待辦清單\nApp Store: https://apps.apple.com/tw/app/id6785004775?pt=118326163&ct=ln_mochi_host_tw_yt_1121&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dln_mochi_host_tw_yt_1121%26utm_campaign%3Dmochi\n已經在用這款 App？可以到 App Store 評分或撰寫評論\nhttps://apps.apple.com/app/id6785004775?action=write-review\n\n代辦事項 · 任務清單 · 日程 · 提醒 · 備忘錄 · 習慣\n\n#Shorts #可愛待辦清單 #Mochi可愛待辦清單",
+     "tags": [
+      "代辦事項",
+      "任務清單",
+      "日程",
+      "提醒",
+      "備忘錄",
+      "習慣",
+      "可愛待辦清單",
+      "Mochi可愛待辦清單",
+      "Mochi 可愛待辦清單"
+     ]
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "mochi/ja",
+    "locale": "ja",
+    "app": "mochi",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/fpkl2v.mp4",
+    "hook": "タップで完了",
+    "name": "Mochi: かわいいToDo",
+    "title": "タップで完了 | ToDoリスト・やることリスト・チェックリスト | Mochi かわいいToDo",
+    "tags": [
+     "#かわいいToDoリストタスク管理",
+     "#リマインダー",
+     "#予定",
+     "#メモ",
+     "#MochiかわいいToDo"
+    ],
+    "caption": "タップで完了\nかわいいテーマ101種\nToDoリスト・やることリスト・チェックリスト\nMochi: かわいいToDo\nApp Storeで「Mochi かわいいToDo」を検索\nAndroidはGoogle Playで\n\n#かわいいToDoリストタスク管理 #リマインダー #予定 #メモ #MochiかわいいToDo",
+    "button": "App Storeで入手",
+    "variant": "b",
+    "alt": "Mochi: かわいいToDo — タップで完了 — かわいいテーマ101種 — ToDoリスト・やることリスト・チェックリスト",
+    "store": "https://apps.apple.com/jp/app/id6785004775?pt=118326163&ct=ln_mochi_host_jp_yt_1121&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dln_mochi_host_jp_yt_1121%26utm_campaign%3Dmochi",
+    "review": {
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6785004775?action=write-review"
+    },
+    "keywords": [
+     "リマインダー",
+     "予定",
+     "メモ",
+     "習慣",
+     "ルーティン",
+     "スケジュール"
+    ],
+    "keyline": "ToDoリスト・やることリスト・チェックリスト",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "063389274bf4ea40",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "タップで完了 | Mochi かわいいToDo #Shorts",
+     "description": "タップで完了\nかわいいテーマ101種\nToDoリスト・やることリスト・チェックリスト\n\nMochi: かわいいToDo\nApp Store: https://apps.apple.com/jp/app/id6785004775?pt=118326163&ct=ln_mochi_host_jp_yt_1121&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dln_mochi_host_jp_yt_1121%26utm_campaign%3Dmochi\nこのアプリをお使いですか？App Store で評価・レビューできます\nhttps://apps.apple.com/app/id6785004775?action=write-review\n\nリマインダー · 予定 · メモ · 習慣 · ルーティン · スケジュール\n\n#Shorts #かわいいToDoリストタスク管理 #MochiかわいいToDo",
+     "tags": [
+      "リマインダー",
+      "予定",
+      "メモ",
+      "習慣",
+      "ルーティン",
+      "スケジュール",
+      "かわいいToDoリストタスク管理",
+      "MochiかわいいToDo",
+      "Mochi かわいいToDo"
+     ]
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "mochi/ko",
+    "locale": "ko",
+    "app": "mochi",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/s1fzkf.mp4",
+    "hook": "톡 누르면 완료",
+    "name": "Mochi: 귀여운 할 일 목록 & 체크리스트",
+    "title": "톡 누르면 완료 | 할 일 목록, 데일리 플래너, 위젯 | Mochi 귀여운 할 일",
+    "tags": [
+     "#귀여운투두리스트체크리스트",
+     "#할일",
+     "#할일목록",
+     "#할일관리",
+     "#Mochi귀여운할일"
+    ],
+    "caption": "톡 누르면 완료\n귀여운 테마 101가지\n할 일 목록, 데일리 플래너, 위젯\nMochi: 귀여운 할 일 목록 & 체크리스트\nApp Store에서 'Mochi 귀여운 할 일' 검색\nAndroid는 Google Play에서\n\n#귀여운투두리스트체크리스트 #할일 #할일목록 #할일관리 #Mochi귀여운할일",
+    "button": "App Store에서 받기",
+    "variant": "b",
+    "alt": "Mochi: 귀여운 할 일 목록 & 체크리스트 — 톡 누르면 완료 — 귀여운 테마 101가지 — 할 일 목록, 데일리 플래너, 위젯",
+    "store": "https://apps.apple.com/kr/app/id6785004775?pt=118326163&ct=ln_mochi_host_kr_yt_1121&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dln_mochi_host_kr_yt_1121%26utm_campaign%3Dmochi",
+    "review": {
+     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
+     "url": "https://apps.apple.com/app/id6785004775?action=write-review"
+    },
+    "keywords": [
+     "할일",
+     "할일목록",
+     "할일관리",
+     "투두",
+     "알림",
+     "메모"
+    ],
+    "keyline": "할 일 목록, 데일리 플래너, 위젯",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "063389274bf4ea40",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "톡 누르면 완료 | Mochi 귀여운 할 일 #Shorts",
+     "description": "톡 누르면 완료\n귀여운 테마 101가지\n할 일 목록, 데일리 플래너, 위젯\n\nMochi: 귀여운 할 일 목록 & 체크리스트\nApp Store: https://apps.apple.com/kr/app/id6785004775?pt=118326163&ct=ln_mochi_host_kr_yt_1121&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dln_mochi_host_kr_yt_1121%26utm_campaign%3Dmochi\n이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다\nhttps://apps.apple.com/app/id6785004775?action=write-review\n\n할일 · 할일목록 · 할일관리 · 투두 · 알림 · 메모\n\n#Shorts #귀여운투두리스트체크리스트 #Mochi귀여운할일",
+     "tags": [
+      "할일",
+      "할일목록",
+      "할일관리",
+      "투두",
+      "알림",
+      "메모",
+      "귀여운투두리스트체크리스트",
+      "Mochi귀여운할일",
+      "Mochi 귀여운 할 일"
+     ]
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "mochi/pt-BR",
+    "locale": "pt-BR",
+    "app": "mochi",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/e7aq6y.mp4",
+    "hook": "Um toque e pronto",
+    "name": "Mochi: Lista fofa",
+    "title": "Um toque e pronto | Lista de tarefas e checklist | Mochi Lista fofa",
+    "tags": [
+     "#ListaFofa",
+     "#ListaDeTarefas",
+     "#Checklist",
+     "#MochiListaFofa"
+    ],
+    "caption": "Um toque e pronto\n101 temas fofos\nLista de tarefas e checklist\nMochi: Lista fofa\nPesquise “lista de tarefas” na App Store\nTambém no Google Play\n\n#ListaFofa #ListaDeTarefas #Checklist #MochiListaFofa",
+    "button": "Baixar na App Store",
+    "variant": "b",
+    "alt": "Mochi: Lista fofa — Um toque e pronto — 101 temas fofos — Lista de tarefas e checklist",
+    "store": "https://apps.apple.com/br/app/id6785004775?pt=118326163&ct=ln_mochi_host_br_yt_1121&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dln_mochi_host_br_yt_1121%26utm_campaign%3Dmochi",
+    "review": {
+     "label": "Já usa este app? Avalie ou escreva uma resenha na App Store",
+     "url": "https://apps.apple.com/app/id6785004775?action=write-review"
+    },
+    "keywords": [
+     "lembrete",
+     "afazeres",
+     "planner",
+     "notas",
+     "hábitos",
+     "rotina"
+    ],
+    "keyline": "Lista de tarefas e checklist",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "063389274bf4ea40",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "Um toque e pronto | Mochi Lista fofa #Shorts",
+     "description": "Um toque e pronto\n101 temas fofos\nLista de tarefas e checklist\n\nMochi: Lista fofa\nApp Store: https://apps.apple.com/br/app/id6785004775?pt=118326163&ct=ln_mochi_host_br_yt_1121&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dln_mochi_host_br_yt_1121%26utm_campaign%3Dmochi\nJá usa este app? Avalie ou escreva uma resenha na App Store\nhttps://apps.apple.com/app/id6785004775?action=write-review\n\nlembrete · afazeres · planner · notas · hábitos · rotina\n\n#Shorts #ListaFofa #MochiListafofa",
+     "tags": [
+      "lembrete",
+      "afazeres",
+      "planner",
+      "notas",
+      "hábitos",
+      "rotina",
+      "ListaFofa",
+      "ListaDeTarefas",
+      "Checklist",
+      "MochiListaFofa",
+      "Mochi Lista fofa"
+     ]
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "mochi/de",
+    "locale": "de",
+    "app": "mochi",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/bwf5d3.mp4",
+    "hook": "Antippen und abhaken",
+    "name": "Mochi: Süße To-do-Liste",
+    "title": "Antippen und abhaken | Aufgabenliste & Checkliste | Mochi Süße To-do-Liste",
+    "tags": [
+     "#SüßeTodoListe",
+     "#Gewohnheiten",
+     "#Aufgabenliste",
+     "#MochiSüßeTodoListe"
+    ],
+    "caption": "Antippen und abhaken\n101 süße Designs\nAufgabenliste & Checkliste\nMochi: Süße To-do-Liste\nIm App Store nach „Mochi Süße To-do-Liste“ suchen\nAuch bei Google Play\n\n#SüßeTodoListe #Gewohnheiten #Aufgabenliste #MochiSüßeTodoListe",
+    "button": "Im App Store laden",
+    "variant": "b",
+    "alt": "Mochi: Süße To-do-Liste — Antippen und abhaken — 101 süße Designs — Aufgabenliste & Checkliste",
+    "store": "https://apps.apple.com/de/app/id6785004775?pt=118326163&ct=ln_mochi_host_de_yt_1121&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dln_mochi_host_de_yt_1121%26utm_campaign%3Dmochi",
+    "review": {
+     "label": "Du nutzt diese App schon? Bewerte sie oder schreib eine Rezension im App Store",
+     "url": "https://apps.apple.com/app/id6785004775?action=write-review"
+    },
+    "keywords": [
+     "todo",
+     "aufgaben",
+     "erinnerung",
+     "planer",
+     "notizen",
+     "gewohnheiten"
+    ],
+    "keyline": "Aufgabenliste & Checkliste",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "063389274bf4ea40",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "Antippen und abhaken | Mochi Süße To-do-Liste #Shorts",
+     "description": "Antippen und abhaken\n101 süße Designs\nAufgabenliste & Checkliste\n\nMochi: Süße To-do-Liste\nApp Store: https://apps.apple.com/de/app/id6785004775?pt=118326163&ct=ln_mochi_host_de_yt_1121&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dln_mochi_host_de_yt_1121%26utm_campaign%3Dmochi\nDu nutzt diese App schon? Bewerte sie oder schreib eine Rezension im App Store\nhttps://apps.apple.com/app/id6785004775?action=write-review\n\ntodo · aufgaben · erinnerung · planer · notizen · gewohnheiten\n\n#Shorts #SüßeTodoListe #MochiSüßeTodoListe",
+     "tags": [
+      "todo",
+      "aufgaben",
+      "erinnerung",
+      "planer",
+      "notizen",
+      "gewohnheiten",
+      "SüßeTodoListe",
+      "Aufgabenliste",
+      "MochiSüßeTodoListe",
+      "Mochi Süße To-do-Liste"
+     ]
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "mochi/fr",
+    "locale": "fr",
+    "app": "mochi",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/zfsbz8.mp4",
+    "hook": "Touche pour cocher",
+    "name": "Mochi: Liste toute mignonne",
+    "title": "Touche pour cocher | Liste de tâches kawaii | Mochi Liste toute mignonne",
+    "tags": [
+     "#ListeDeTâchesKawaii",
+     "#Checklist",
+     "#Rappels",
+     "#MochiListeTouteMignonne"
+    ],
+    "caption": "Touche pour cocher\n101 thèmes mignons\nListe de tâches kawaii\nMochi: Liste toute mignonne\nRecherchez « Mochi Liste toute mignonne » sur l'App Store\nAussi sur Google Play\n\n#ListeDeTâchesKawaii #Checklist #Rappels #MochiListeTouteMignonne",
+    "button": "Télécharger sur l'App Store",
+    "variant": "b",
+    "alt": "Mochi: Liste toute mignonne — Touche pour cocher — 101 thèmes mignons — Liste de tâches kawaii",
+    "store": "https://apps.apple.com/fr/app/id6785004775?pt=118326163&ct=ln_mochi_host_fr_yt_1121&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dln_mochi_host_fr_yt_1121%26utm_campaign%3Dmochi",
+    "review": {
+     "label": "Vous utilisez déjà cette app ? Notez-la ou rédigez un avis sur l’App Store",
+     "url": "https://apps.apple.com/app/id6785004775?action=write-review"
+    },
+    "keywords": [
+     "todo",
+     "ménage",
+     "agenda",
+     "notes",
+     "habitudes",
+     "routine"
+    ],
+    "keyline": "Liste de tâches kawaii",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "063389274bf4ea40",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "Touche pour cocher | Mochi Liste toute mignonne #Shorts",
+     "description": "Touche pour cocher\n101 thèmes mignons\nListe de tâches kawaii\n\nMochi: Liste toute mignonne\nApp Store: https://apps.apple.com/fr/app/id6785004775?pt=118326163&ct=ln_mochi_host_fr_yt_1121&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dln_mochi_host_fr_yt_1121%26utm_campaign%3Dmochi\nVous utilisez déjà cette app ? Notez-la ou rédigez un avis sur l’App Store\nhttps://apps.apple.com/app/id6785004775?action=write-review\n\ntodo · ménage · agenda · notes · habitudes · routine\n\n#Shorts #ListeDeTâchesKawaii #MochiListetoutemignonne",
+     "tags": [
+      "todo",
+      "ménage",
+      "agenda",
+      "notes",
+      "habitudes",
+      "routine",
+      "ListeDeTâchesKawaii",
+      "Checklist",
+      "Rappels",
+      "MochiListeTouteMignonne",
+      "Mochi Liste toute mignonne"
+     ]
+    }
+   },
+   {
+    "kind": "clip",
     "key": "countdaysnow/en",
     "locale": "en",
     "app": "countdaysnow",
@@ -23791,6 +25118,239 @@
    },
    {
     "kind": "clip",
+    "key": "battai/en",
+    "locale": "en",
+    "app": "battai",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/2yedq5.mp4",
+    "hook": "A health score, and what shapes it",
+    "name": "BattAI: Battery Health & Life",
+    "title": "A health score, and what shapes it | Charge Alerts, Heat & Widget | BattAI Battery Health",
+    "tags": [
+     "#BatteryHealthScore",
+     "#ChargeAlerts",
+     "#CycleCount",
+     "#BattAIBatteryHealth"
+    ],
+    "caption": "A health score, and what shapes it\nMax capacity trend over time\nCharge Alerts, Heat & Widget\nBattAI: Battery Health & Life\nSearch “BattAI Battery Health” on the App Store\nAlso on Google Play\n\n#BatteryHealthScore #ChargeAlerts #CycleCount #BattAIBatteryHealth",
+    "button": "Get it on the App Store",
+    "variant": "b",
+    "alt": "BattAI: Battery Health & Life — A health score, and what shapes it — Max capacity trend over time — Charge Alerts, Heat & Widget",
+    "store": "https://apps.apple.com/us/app/id6802423998?pt=118326163&ct=youtube&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.BattAI&referrer=utm_source%3Dyoutube%26utm_campaign%3Dbattai",
+    "review": {
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6802423998?action=write-review"
+    },
+    "keywords": [
+     "capacity",
+     "cycle",
+     "count",
+     "check",
+     "test",
+     "full"
+    ],
+    "keyline": "Charge Alerts, Heat & Widget",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "922844988a1008d7",
+     "real_recording": true,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "A health score, and what shapes it | BattAI Battery Health #Shorts",
+     "description": "A health score, and what shapes it\nMax capacity trend over time\nCharge Alerts, Heat & Widget\n\nBattAI: Battery Health & Life\nApp Store: https://apps.apple.com/us/app/id6802423998?pt=118326163&ct=youtube&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI&referrer=utm_source%3Dyoutube%26utm_campaign%3Dbattai\nAlready using this app? Rate or review it on the App Store\nhttps://apps.apple.com/app/id6802423998?action=write-review\n\ncapacity · cycle · count · check · test · full\n\n#Shorts #BatteryHealthScore #BattAIBatteryHealth",
+     "tags": [
+      "capacity",
+      "cycle",
+      "count",
+      "check",
+      "test",
+      "full",
+      "BatteryHealthScore",
+      "ChargeAlerts",
+      "CycleCount",
+      "BattAIBatteryHealth",
+      "BattAI Battery Health"
+     ]
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "battai/zh-Hant",
+    "locale": "zh-Hant",
+    "app": "battai",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/n2ybth.mp4",
+    "hook": "電池健康分數，連評分依據都看得到",
+    "name": "BattAI: 電池健康分數",
+    "title": "電池健康分數，連評分依據都看得到 | 電池檢測・充電保養・充飽提醒 | BattAI 電池健康",
+    "tags": [
+     "#電池健康度檢測分數",
+     "#最大容量",
+     "#健康度",
+     "#充電速度",
+     "#BattAI電池健康"
+    ],
+    "caption": "電池健康分數，連評分依據都看得到\n最大容量，隨時間的趨勢\n電池檢測・充電保養・充飽提醒\nBattAI: 電池健康分數\n在 App Store 搜尋「電池檢測」\nAndroid 版在 Google Play\n\n#電池健康度檢測分數 #最大容量 #健康度 #充電速度 #BattAI電池健康",
+    "button": "在 App Store 下載",
+    "variant": "b",
+    "alt": "BattAI: 電池健康分數 — 電池健康分數，連評分依據都看得到 — 最大容量，隨時間的趨勢 — 電池檢測・充電保養・充飽提醒",
+    "store": "https://apps.apple.com/tw/app/id6802423998?pt=118326163&ct=youtube&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.BattAI&referrer=utm_source%3Dyoutube%26utm_campaign%3Dbattai",
+    "review": {
+     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
+     "url": "https://apps.apple.com/app/id6802423998?action=write-review"
+    },
+    "keywords": [
+     "最大容量",
+     "健康度",
+     "充電速度",
+     "耗電",
+     "快充",
+     "滿電"
+    ],
+    "keyline": "電池檢測・充電保養・充飽提醒",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "922844988a1008d7",
+     "real_recording": true,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "電池健康分數，連評分依據都看得到 | BattAI 電池健康 #Shorts",
+     "description": "電池健康分數，連評分依據都看得到\n最大容量，隨時間的趨勢\n電池檢測・充電保養・充飽提醒\n\nBattAI: 電池健康分數\nApp Store: https://apps.apple.com/tw/app/id6802423998?pt=118326163&ct=youtube&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI&referrer=utm_source%3Dyoutube%26utm_campaign%3Dbattai\n已經在用這款 App？可以到 App Store 評分或撰寫評論\nhttps://apps.apple.com/app/id6802423998?action=write-review\n\n最大容量 · 健康度 · 充電速度 · 耗電 · 快充 · 滿電\n\n#Shorts #電池健康度檢測分數 #BattAI電池健康",
+     "tags": [
+      "最大容量",
+      "健康度",
+      "充電速度",
+      "耗電",
+      "快充",
+      "滿電",
+      "電池健康度檢測分數",
+      "BattAI電池健康",
+      "BattAI 電池健康"
+     ]
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "battai/ja",
+    "locale": "ja",
+    "app": "battai",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/tmc5xw.mp4",
+    "hook": "状態スコアと、その要因まで",
+    "name": "BattAI: バッテリー状態スコア",
+    "title": "状態スコアと、その要因まで | バッテリー劣化チェック・充電通知 | BattAI バッテリー",
+    "tags": [
+     "#バッテリー劣化状態スコア",
+     "#最大容量",
+     "#サイクル",
+     "#回数",
+     "#BattAIバッテリー"
+    ],
+    "caption": "状態スコアと、その要因まで\n最大容量の、推移\nバッテリー劣化チェック・充電通知\nBattAI: バッテリー状態スコア\nApp Storeで「バッテリー 劣化」を検索\nAndroidはGoogle Playで\n\n#バッテリー劣化状態スコア #最大容量 #サイクル #回数 #BattAIバッテリー",
+    "button": "App Storeで入手",
+    "variant": "b",
+    "alt": "BattAI: バッテリー状態スコア — 状態スコアと、その要因まで — 最大容量の、推移 — バッテリー劣化チェック・充電通知",
+    "store": "https://apps.apple.com/jp/app/id6802423998?pt=118326163&ct=youtube&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.BattAI&referrer=utm_source%3Dyoutube%26utm_campaign%3Dbattai",
+    "review": {
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6802423998?action=write-review"
+    },
+    "keywords": [
+     "最大容量",
+     "サイクル",
+     "回数",
+     "診断",
+     "交換時期",
+     "消耗"
+    ],
+    "keyline": "バッテリー劣化チェック・充電通知",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "922844988a1008d7",
+     "real_recording": true,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "状態スコアと、その要因まで | BattAI バッテリー #Shorts",
+     "description": "状態スコアと、その要因まで\n最大容量の、推移\nバッテリー劣化チェック・充電通知\n\nBattAI: バッテリー状態スコア\nApp Store: https://apps.apple.com/jp/app/id6802423998?pt=118326163&ct=youtube&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI&referrer=utm_source%3Dyoutube%26utm_campaign%3Dbattai\nこのアプリをお使いですか？App Store で評価・レビューできます\nhttps://apps.apple.com/app/id6802423998?action=write-review\n\n最大容量 · サイクル · 回数 · 診断 · 交換時期 · 消耗\n\n#Shorts #バッテリー劣化状態スコア #BattAIバッテリー",
+     "tags": [
+      "最大容量",
+      "サイクル",
+      "回数",
+      "診断",
+      "交換時期",
+      "消耗",
+      "バッテリー劣化状態スコア",
+      "BattAIバッテリー",
+      "BattAI バッテリー"
+     ]
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "battai/ko",
+    "locale": "ko",
+    "app": "battai",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/3o00cw.mp4",
+    "hook": "배터리 상태 점수와 점수를 만드는 요소",
+    "name": "BattAI: 배터리 상태 점수",
+    "title": "배터리 상태 점수와 점수를 만드는 요소 | 배터리 성능·수명 확인·완충 알림 | BattAI 배터리",
+    "tags": [
+     "#배터리성능상태점수",
+     "#효율",
+     "#점검",
+     "#사이클",
+     "#BattAI배터리"
+    ],
+    "caption": "배터리 상태 점수와 점수를 만드는 요소\n성능 최대치의 추세\n배터리 성능·수명 확인·완충 알림\nBattAI: 배터리 상태 점수\nApp Store에서 '배터리 용량' 검색\nAndroid는 Google Play에서\n\n#배터리성능상태점수 #효율 #점검 #사이클 #BattAI배터리",
+    "button": "App Store에서 받기",
+    "variant": "b",
+    "alt": "BattAI: 배터리 상태 점수 — 배터리 상태 점수와 점수를 만드는 요소 — 성능 최대치의 추세 — 배터리 성능·수명 확인·완충 알림",
+    "store": "https://apps.apple.com/kr/app/id6802423998?pt=118326163&ct=youtube&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.BattAI&referrer=utm_source%3Dyoutube%26utm_campaign%3Dbattai",
+    "review": {
+     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
+     "url": "https://apps.apple.com/app/id6802423998?action=write-review"
+    },
+    "keywords": [
+     "효율",
+     "점검",
+     "사이클",
+     "횟수",
+     "용량",
+     "최대"
+    ],
+    "keyline": "배터리 성능·수명 확인·완충 알림",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "922844988a1008d7",
+     "real_recording": true,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "배터리 상태 점수와 점수를 만드는 요소 | BattAI 배터리 #Shorts",
+     "description": "배터리 상태 점수와 점수를 만드는 요소\n성능 최대치의 추세\n배터리 성능·수명 확인·완충 알림\n\nBattAI: 배터리 상태 점수\nApp Store: https://apps.apple.com/kr/app/id6802423998?pt=118326163&ct=youtube&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI&referrer=utm_source%3Dyoutube%26utm_campaign%3Dbattai\n이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다\nhttps://apps.apple.com/app/id6802423998?action=write-review\n\n효율 · 점검 · 사이클 · 횟수 · 용량 · 최대\n\n#Shorts #배터리성능상태점수 #BattAI배터리",
+     "tags": [
+      "효율",
+      "점검",
+      "사이클",
+      "횟수",
+      "용량",
+      "최대",
+      "배터리성능상태점수",
+      "BattAI배터리",
+      "BattAI 배터리"
+     ]
+    }
+   },
+   {
+    "kind": "clip",
     "key": "caldaily/en",
     "locale": "en",
     "app": "caldaily",
@@ -25805,7 +27365,7 @@
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "f88a32e9a9deb640",
+     "board": "7ad14c39c559a0db",
      "real_recording": false,
      "rules": "2026-10-18"
     },
@@ -25866,7 +27426,7 @@
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "f88a32e9a9deb640",
+     "board": "7ad14c39c559a0db",
      "real_recording": false,
      "rules": "2026-10-18"
     },
@@ -27148,7 +28708,7 @@
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "3770a5c2653a56c0",
+     "board": "53bd29c97a625885",
      "real_recording": false,
      "rules": "2026-10-18"
     },
@@ -27208,7 +28768,7 @@
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "3770a5c2653a56c0",
+     "board": "53bd29c97a625885",
      "real_recording": false,
      "rules": "2026-10-18"
     },
@@ -31580,6 +33140,413 @@
       "커플",
       "수능",
       "CountDaysNow"
+     ]
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "mochi_b/en",
+    "locale": "en",
+    "app": "mochi_b",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/c5k6l8.mp4",
+    "hook": "Work, errands, groceries in one place",
+    "name": "Mochi: Cute Checklist",
+    "title": "Work, errands, groceries in one place | Cute Checklist | Mochi Cute Checklist",
+    "tags": [
+     "#CozyToDoListWidget",
+     "#Chores",
+     "#Cute",
+     "#MochiCuteChecklist"
+    ],
+    "caption": "Work, errands, groceries in one place\nTap the circle, feel the calm\nMochi: Cute Checklist\nSearch “cute checklist” on the App Store\nAlso on Google Play\n\n#CozyToDoListWidget #Chores #Cute #MochiCuteChecklist",
+    "button": "Get it on the App Store",
+    "variant": "b",
+    "alt": "Mochi: Cute Checklist — Work, errands, groceries in one place — Tap the circle, feel the calm",
+    "store": "https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=ln_mochi_host_us_yt_1121&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dln_mochi_host_us_yt_1121%26utm_campaign%3Dmochi",
+    "review": {
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6785004775?action=write-review"
+    },
+    "keywords": [
+     "planner",
+     "todo",
+     "aesthetic",
+     "daily",
+     "reminder",
+     "routine"
+    ],
+    "keyline": "Cute Checklist",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "de911648f97ae007",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "Work, errands, groceries in one place | Mochi Cute Checklist #Shorts",
+     "description": "Work, errands, groceries in one place\nTap the circle, feel the calm\nCute Checklist\n\nMochi: Cute Checklist\nApp Store: https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=ln_mochi_host_us_yt_1121&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dln_mochi_host_us_yt_1121%26utm_campaign%3Dmochi\nAlready using this app? Rate or review it on the App Store\nhttps://apps.apple.com/app/id6785004775?action=write-review\n\nplanner · todo · aesthetic · daily · reminder · routine\n\n#Shorts #CozyToDoListWidget #MochiCuteChecklist",
+     "tags": [
+      "planner",
+      "todo",
+      "aesthetic",
+      "daily",
+      "reminder",
+      "routine",
+      "CozyToDoListWidget",
+      "Chores",
+      "Cute",
+      "MochiCuteChecklist",
+      "Mochi Cute Checklist"
+     ]
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "mochi_b/zh-Hant",
+    "locale": "zh-Hant",
+    "app": "mochi_b",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/dd1unw.mp4",
+    "hook": "讀書、工作、購物，一個 App 整理",
+    "name": "Mochi: 可愛待辦清單",
+    "title": "讀書、工作、購物，一個 App 整理 | 可愛待辦清單 | Mochi 可愛待辦清單",
+    "tags": [
+     "#提醒",
+     "#備忘錄",
+     "#習慣",
+     "#計畫",
+     "#Mochi可愛待辦清單"
+    ],
+    "caption": "讀書、工作、購物，一個 App 整理\n輕點打勾，超有成就感\nMochi: 可愛待辦清單\n在 App Store 搜尋「Mochi 可愛待辦清單」\nAndroid 版在 Google Play\n\n#提醒 #備忘錄 #習慣 #計畫 #Mochi可愛待辦清單",
+    "button": "在 App Store 下載",
+    "variant": "b",
+    "alt": "Mochi: 可愛待辦清單 — 讀書、工作、購物，一個 App 整理 — 輕點打勾，超有成就感",
+    "store": "https://apps.apple.com/tw/app/id6785004775?pt=118326163&ct=ln_mochi_host_tw_yt_1121&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dln_mochi_host_tw_yt_1121%26utm_campaign%3Dmochi",
+    "review": {
+     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
+     "url": "https://apps.apple.com/app/id6785004775?action=write-review"
+    },
+    "keywords": [
+     "代辦事項",
+     "任務清單",
+     "日程",
+     "提醒",
+     "備忘錄",
+     "習慣"
+    ],
+    "keyline": "可愛待辦清單",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "de911648f97ae007",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "讀書、工作、購物，一個 App 整理 | Mochi 可愛待辦清單 #Shorts",
+     "description": "讀書、工作、購物，一個 App 整理\n輕點打勾，超有成就感\n可愛待辦清單\n\nMochi: 可愛待辦清單\nApp Store: https://apps.apple.com/tw/app/id6785004775?pt=118326163&ct=ln_mochi_host_tw_yt_1121&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dln_mochi_host_tw_yt_1121%26utm_campaign%3Dmochi\n已經在用這款 App？可以到 App Store 評分或撰寫評論\nhttps://apps.apple.com/app/id6785004775?action=write-review\n\n代辦事項 · 任務清單 · 日程 · 提醒 · 備忘錄 · 習慣\n\n#Shorts #提醒 #Mochi可愛待辦清單",
+     "tags": [
+      "代辦事項",
+      "任務清單",
+      "日程",
+      "提醒",
+      "備忘錄",
+      "習慣",
+      "計畫",
+      "Mochi可愛待辦清單",
+      "Mochi 可愛待辦清單"
+     ]
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "mochi_b/ja",
+    "locale": "ja",
+    "app": "mochi_b",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/dca0hg.mp4",
+    "hook": "勉強も仕事も買い物も、ぜんぶ管理",
+    "name": "Mochi: かわいいToDo",
+    "title": "勉強も仕事も買い物も、ぜんぶ管理 | ToDoリスト・やることリスト・チェックリスト | Mochi かわいいToDo",
+    "tags": [
+     "#習慣",
+     "#ルーティン",
+     "#スケジュール",
+     "#買い物",
+     "#MochiかわいいToDo"
+    ],
+    "caption": "勉強も仕事も買い物も、ぜんぶ管理\n丸をタップして、気持ちもふわっと\nToDoリスト・やることリスト・チェックリスト\nMochi: かわいいToDo\nApp Storeで「Mochi かわいいToDo」を検索\nAndroidはGoogle Playで\n\n#習慣 #ルーティン #スケジュール #買い物 #MochiかわいいToDo",
+    "button": "App Storeで入手",
+    "variant": "b",
+    "alt": "Mochi: かわいいToDo — 勉強も仕事も買い物も、ぜんぶ管理 — 丸をタップして、気持ちもふわっと — ToDoリスト・やることリスト・チェックリスト",
+    "store": "https://apps.apple.com/jp/app/id6785004775?pt=118326163&ct=ln_mochi_host_jp_yt_1121&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dln_mochi_host_jp_yt_1121%26utm_campaign%3Dmochi",
+    "review": {
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6785004775?action=write-review"
+    },
+    "keywords": [
+     "リマインダー",
+     "予定",
+     "メモ",
+     "習慣",
+     "ルーティン",
+     "スケジュール"
+    ],
+    "keyline": "ToDoリスト・やることリスト・チェックリスト",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "de911648f97ae007",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "勉強も仕事も買い物も、ぜんぶ管理 | Mochi かわいいToDo #Shorts",
+     "description": "勉強も仕事も買い物も、ぜんぶ管理\n丸をタップして、気持ちもふわっと\nToDoリスト・やることリスト・チェックリスト\n\nMochi: かわいいToDo\nApp Store: https://apps.apple.com/jp/app/id6785004775?pt=118326163&ct=ln_mochi_host_jp_yt_1121&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dln_mochi_host_jp_yt_1121%26utm_campaign%3Dmochi\nこのアプリをお使いですか？App Store で評価・レビューできます\nhttps://apps.apple.com/app/id6785004775?action=write-review\n\nリマインダー · 予定 · メモ · 習慣 · ルーティン · スケジュール\n\n#Shorts #習慣 #MochiかわいいToDo",
+     "tags": [
+      "リマインダー",
+      "予定",
+      "メモ",
+      "習慣",
+      "ルーティン",
+      "スケジュール",
+      "買い物",
+      "MochiかわいいToDo",
+      "Mochi かわいいToDo"
+     ]
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "mochi_b/ko",
+    "locale": "ko",
+    "app": "mochi_b",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/uin2zo.mp4",
+    "hook": "공부, 업무, 장보기 한 곳에서",
+    "name": "Mochi: 귀여운 할 일 목록 & 체크리스트",
+    "title": "공부, 업무, 장보기 한 곳에서 | 귀여운 투두리스트 & 체크리스트 | Mochi 귀여운 할 일",
+    "tags": [
+     "#투두",
+     "#알림",
+     "#메모",
+     "#습관",
+     "#Mochi귀여운할일"
+    ],
+    "caption": "공부, 업무, 장보기 한 곳에서\n동그라미를 탭하면 하루가 가볍게\n귀여운 투두리스트 & 체크리스트\nMochi: 귀여운 할 일 목록 & 체크리스트\nApp Store에서 'Mochi 귀여운 할 일' 검색\nAndroid는 Google Play에서\n\n#투두 #알림 #메모 #습관 #Mochi귀여운할일",
+    "button": "App Store에서 받기",
+    "variant": "b",
+    "alt": "Mochi: 귀여운 할 일 목록 & 체크리스트 — 공부, 업무, 장보기 한 곳에서 — 동그라미를 탭하면 하루가 가볍게 — 귀여운 투두리스트 & 체크리스트",
+    "store": "https://apps.apple.com/kr/app/id6785004775?pt=118326163&ct=ln_mochi_host_kr_yt_1121&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dln_mochi_host_kr_yt_1121%26utm_campaign%3Dmochi",
+    "review": {
+     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
+     "url": "https://apps.apple.com/app/id6785004775?action=write-review"
+    },
+    "keywords": [
+     "할일",
+     "할일목록",
+     "할일관리",
+     "투두",
+     "알림",
+     "메모"
+    ],
+    "keyline": "귀여운 투두리스트 & 체크리스트",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "de911648f97ae007",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "공부, 업무, 장보기 한 곳에서 | Mochi 귀여운 할 일 #Shorts",
+     "description": "공부, 업무, 장보기 한 곳에서\n동그라미를 탭하면 하루가 가볍게\n귀여운 투두리스트 & 체크리스트\n\nMochi: 귀여운 할 일 목록 & 체크리스트\nApp Store: https://apps.apple.com/kr/app/id6785004775?pt=118326163&ct=ln_mochi_host_kr_yt_1121&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dln_mochi_host_kr_yt_1121%26utm_campaign%3Dmochi\n이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다\nhttps://apps.apple.com/app/id6785004775?action=write-review\n\n할일 · 할일목록 · 할일관리 · 투두 · 알림 · 메모\n\n#Shorts #투두 #Mochi귀여운할일",
+     "tags": [
+      "할일",
+      "할일목록",
+      "할일관리",
+      "투두",
+      "알림",
+      "메모",
+      "습관",
+      "Mochi귀여운할일",
+      "Mochi 귀여운 할 일"
+     ]
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "mochi_b/pt-BR",
+    "locale": "pt-BR",
+    "app": "mochi_b",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/o4ayua.mp4",
+    "hook": "Estudos, trabalho, compras em um só lugar",
+    "name": "Mochi: Lista fofa",
+    "title": "Estudos, trabalho, compras em um só lugar | Lista fofa | Mochi Lista fofa",
+    "tags": [
+     "#ListaDeTarefas",
+     "#Fofa",
+     "#Lembrete",
+     "#MochiListaFofa"
+    ],
+    "caption": "Estudos, trabalho, compras em um só lugar\nToque e veja o dia ficar em ordem\nMochi: Lista fofa\nPesquise “lista de tarefas” na App Store\nTambém no Google Play\n\n#ListaDeTarefas #Fofa #Lembrete #MochiListaFofa",
+    "button": "Baixar na App Store",
+    "variant": "b",
+    "alt": "Mochi: Lista fofa — Estudos, trabalho, compras em um só lugar — Toque e veja o dia ficar em ordem",
+    "store": "https://apps.apple.com/br/app/id6785004775?pt=118326163&ct=ln_mochi_host_br_yt_1121&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dln_mochi_host_br_yt_1121%26utm_campaign%3Dmochi",
+    "review": {
+     "label": "Já usa este app? Avalie ou escreva uma resenha na App Store",
+     "url": "https://apps.apple.com/app/id6785004775?action=write-review"
+    },
+    "keywords": [
+     "lembrete",
+     "afazeres",
+     "planner",
+     "notas",
+     "hábitos",
+     "rotina"
+    ],
+    "keyline": "Lista fofa",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "de911648f97ae007",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "Estudos, trabalho, compras em um só lugar | Mochi Lista fofa #Shorts",
+     "description": "Estudos, trabalho, compras em um só lugar\nToque e veja o dia ficar em ordem\nLista fofa\n\nMochi: Lista fofa\nApp Store: https://apps.apple.com/br/app/id6785004775?pt=118326163&ct=ln_mochi_host_br_yt_1121&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dln_mochi_host_br_yt_1121%26utm_campaign%3Dmochi\nJá usa este app? Avalie ou escreva uma resenha na App Store\nhttps://apps.apple.com/app/id6785004775?action=write-review\n\nlembrete · afazeres · planner · notas · hábitos · rotina\n\n#Shorts #ListaDeTarefas #MochiListafofa",
+     "tags": [
+      "lembrete",
+      "afazeres",
+      "planner",
+      "notas",
+      "hábitos",
+      "rotina",
+      "ListaDeTarefas",
+      "Fofa",
+      "MochiListaFofa",
+      "Mochi Lista fofa"
+     ]
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "mochi_b/de",
+    "locale": "de",
+    "app": "mochi_b",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/jpk9zc.mp4",
+    "hook": "Studium, Arbeit, Einkauf an einem Ort",
+    "name": "Mochi: Süße To-do-Liste",
+    "title": "Studium, Arbeit, Einkauf an einem Ort | Aufgabenliste & Checkliste | Mochi Süße To-do-Liste",
+    "tags": [
+     "#Gewohnheiten",
+     "#TodoListe",
+     "#Aufgaben",
+     "#MochiSüßeTodoListe"
+    ],
+    "caption": "Studium, Arbeit, Einkauf an einem Ort\nAbhaken bringt Klarheit\nAufgabenliste & Checkliste\nMochi: Süße To-do-Liste\nIm App Store nach „Mochi Süße To-do-Liste“ suchen\nAuch bei Google Play\n\n#Gewohnheiten #TodoListe #Aufgaben #MochiSüßeTodoListe",
+    "button": "Im App Store laden",
+    "variant": "b",
+    "alt": "Mochi: Süße To-do-Liste — Studium, Arbeit, Einkauf an einem Ort — Abhaken bringt Klarheit — Aufgabenliste & Checkliste",
+    "store": "https://apps.apple.com/de/app/id6785004775?pt=118326163&ct=ln_mochi_host_de_yt_1121&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dln_mochi_host_de_yt_1121%26utm_campaign%3Dmochi",
+    "review": {
+     "label": "Du nutzt diese App schon? Bewerte sie oder schreib eine Rezension im App Store",
+     "url": "https://apps.apple.com/app/id6785004775?action=write-review"
+    },
+    "keywords": [
+     "todo",
+     "aufgaben",
+     "erinnerung",
+     "planer",
+     "notizen",
+     "gewohnheiten"
+    ],
+    "keyline": "Aufgabenliste & Checkliste",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "de911648f97ae007",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "Studium, Arbeit, Einkauf an einem Ort | Mochi Süße To-do-Liste #Shorts",
+     "description": "Studium, Arbeit, Einkauf an einem Ort\nAbhaken bringt Klarheit\nAufgabenliste & Checkliste\n\nMochi: Süße To-do-Liste\nApp Store: https://apps.apple.com/de/app/id6785004775?pt=118326163&ct=ln_mochi_host_de_yt_1121&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dln_mochi_host_de_yt_1121%26utm_campaign%3Dmochi\nDu nutzt diese App schon? Bewerte sie oder schreib eine Rezension im App Store\nhttps://apps.apple.com/app/id6785004775?action=write-review\n\ntodo · aufgaben · erinnerung · planer · notizen · gewohnheiten\n\n#Shorts #Gewohnheiten #MochiSüßeTodoListe",
+     "tags": [
+      "todo",
+      "aufgaben",
+      "erinnerung",
+      "planer",
+      "notizen",
+      "gewohnheiten",
+      "TodoListe",
+      "MochiSüßeTodoListe",
+      "Mochi Süße To-do-Liste"
+     ]
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "mochi_b/fr",
+    "locale": "fr",
+    "app": "mochi_b",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/sfdnqe.mp4",
+    "hook": "Études, travail, courses au même endroit",
+    "name": "Mochi: Liste toute mignonne",
+    "title": "Études, travail, courses au même endroit | Liste de tâches kawaii | Mochi Liste toute mignonne",
+    "tags": [
+     "#Liste",
+     "#Tâches",
+     "#Kawaii",
+     "#MochiListeTouteMignonne"
+    ],
+    "caption": "Études, travail, courses au même endroit\nCocher, ça rend les idées claires\nListe de tâches kawaii\nMochi: Liste toute mignonne\nRecherchez « Mochi Liste toute mignonne » sur l'App Store\nAussi sur Google Play\n\n#Liste #Tâches #Kawaii #MochiListeTouteMignonne",
+    "button": "Télécharger sur l'App Store",
+    "variant": "b",
+    "alt": "Mochi: Liste toute mignonne — Études, travail, courses au même endroit — Cocher, ça rend les idées claires — Liste de tâches kawaii",
+    "store": "https://apps.apple.com/fr/app/id6785004775?pt=118326163&ct=ln_mochi_host_fr_yt_1121&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dln_mochi_host_fr_yt_1121%26utm_campaign%3Dmochi",
+    "review": {
+     "label": "Vous utilisez déjà cette app ? Notez-la ou rédigez un avis sur l’App Store",
+     "url": "https://apps.apple.com/app/id6785004775?action=write-review"
+    },
+    "keywords": [
+     "todo",
+     "ménage",
+     "agenda",
+     "notes",
+     "habitudes",
+     "routine"
+    ],
+    "keyline": "Liste de tâches kawaii",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "de911648f97ae007",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "Études, travail, courses au même endroit | Mochi Liste toute mignonne #Shorts",
+     "description": "Études, travail, courses au même endroit\nCocher, ça rend les idées claires\nListe de tâches kawaii\n\nMochi: Liste toute mignonne\nApp Store: https://apps.apple.com/fr/app/id6785004775?pt=118326163&ct=ln_mochi_host_fr_yt_1121&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dln_mochi_host_fr_yt_1121%26utm_campaign%3Dmochi\nVous utilisez déjà cette app ? Notez-la ou rédigez un avis sur l’App Store\nhttps://apps.apple.com/app/id6785004775?action=write-review\n\ntodo · ménage · agenda · notes · habitudes · routine\n\n#Shorts #Liste #MochiListetoutemignonne",
+     "tags": [
+      "todo",
+      "ménage",
+      "agenda",
+      "notes",
+      "habitudes",
+      "routine",
+      "Liste",
+      "Tâches",
+      "Kawaii",
+      "MochiListeTouteMignonne",
+      "Mochi Liste toute mignonne"
      ]
     }
    },
@@ -37897,6 +39864,122 @@
    },
    {
     "kind": "clip",
+    "key": "battai_t10/ko",
+    "locale": "ko",
+    "app": "battai_t10",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/64y1q6.mp4",
+    "hook": "배터리 상태 점수와 점수를 만드는 요소",
+    "name": "BattAI: 배터리 상태 점수",
+    "title": "배터리 상태 점수와 점수를 만드는 요소 | 배터리 성능·수명 확인·완충 알림 | BattAI 배터리",
+    "tags": [
+     "#횟수",
+     "#용량",
+     "#최대",
+     "#교체",
+     "#BattAI배터리"
+    ],
+    "caption": "배터리 상태 점수와 점수를 만드는 요소\n성능 최대치의 추세\n배터리 성능·수명 확인·완충 알림\nBattAI: 배터리 상태 점수\nApp Store에서 'BattAI 배터리' 검색\nAndroid는 Google Play에서\n\n#횟수 #용량 #최대 #교체 #BattAI배터리",
+    "button": "App Store에서 받기",
+    "variant": "b",
+    "alt": "BattAI: 배터리 상태 점수 — 배터리 상태 점수와 점수를 만드는 요소 — 성능 최대치의 추세 — 배터리 성능·수명 확인·완충 알림",
+    "store": "https://apps.apple.com/kr/app/id6802423998?pt=118326163&ct=youtube&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.BattAI&referrer=utm_source%3Dyoutube%26utm_campaign%3Dbattai",
+    "review": {
+     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
+     "url": "https://apps.apple.com/app/id6802423998?action=write-review"
+    },
+    "keywords": [
+     "효율",
+     "점검",
+     "사이클",
+     "횟수",
+     "용량",
+     "최대"
+    ],
+    "keyline": "배터리 성능·수명 확인·완충 알림",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "1cde008b37075975",
+     "real_recording": true,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "배터리 상태 점수와 점수를 만드는 요소 | BattAI 배터리 #Shorts",
+     "description": "배터리 상태 점수와 점수를 만드는 요소\n성능 최대치의 추세\n배터리 성능·수명 확인·완충 알림\n\nBattAI: 배터리 상태 점수\nApp Store: https://apps.apple.com/kr/app/id6802423998?pt=118326163&ct=youtube&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI&referrer=utm_source%3Dyoutube%26utm_campaign%3Dbattai\n이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다\nhttps://apps.apple.com/app/id6802423998?action=write-review\n\n효율 · 점검 · 사이클 · 횟수 · 용량 · 최대\n\n#Shorts #횟수 #BattAI배터리",
+     "tags": [
+      "효율",
+      "점검",
+      "사이클",
+      "횟수",
+      "용량",
+      "최대",
+      "교체",
+      "BattAI배터리",
+      "BattAI 배터리"
+     ]
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "battai_t10b/zh-Hant",
+    "locale": "zh-Hant",
+    "app": "battai_t10b",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/ym7gad.mp4",
+    "hook": "電池健康分數，連評分依據都看得到",
+    "name": "BattAI: 電池健康分數",
+    "title": "電池健康分數，連評分依據都看得到 | 電池檢測・充電保養・充飽提醒 | BattAI 電池健康",
+    "tags": [
+     "#耗電",
+     "#快充",
+     "#滿電",
+     "#過熱",
+     "#BattAI電池健康"
+    ],
+    "caption": "電池健康分數，連評分依據都看得到\n最大容量，隨時間的趨勢\n電池檢測・充電保養・充飽提醒\nBattAI: 電池健康分數\n在 App Store 搜尋「BattAI 電池健康」\nAndroid 版在 Google Play\n\n#耗電 #快充 #滿電 #過熱 #BattAI電池健康",
+    "button": "在 App Store 下載",
+    "variant": "b",
+    "alt": "BattAI: 電池健康分數 — 電池健康分數，連評分依據都看得到 — 最大容量，隨時間的趨勢 — 電池檢測・充電保養・充飽提醒",
+    "store": "https://apps.apple.com/tw/app/id6802423998?pt=118326163&ct=youtube&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.BattAI&referrer=utm_source%3Dyoutube%26utm_campaign%3Dbattai",
+    "review": {
+     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
+     "url": "https://apps.apple.com/app/id6802423998?action=write-review"
+    },
+    "keywords": [
+     "最大容量",
+     "健康度",
+     "充電速度",
+     "耗電",
+     "快充",
+     "滿電"
+    ],
+    "keyline": "電池檢測・充電保養・充飽提醒",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "1a2d1d71788b6654",
+     "real_recording": true,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "電池健康分數，連評分依據都看得到 | BattAI 電池健康 #Shorts",
+     "description": "電池健康分數，連評分依據都看得到\n最大容量，隨時間的趨勢\n電池檢測・充電保養・充飽提醒\n\nBattAI: 電池健康分數\nApp Store: https://apps.apple.com/tw/app/id6802423998?pt=118326163&ct=youtube&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI&referrer=utm_source%3Dyoutube%26utm_campaign%3Dbattai\n已經在用這款 App？可以到 App Store 評分或撰寫評論\nhttps://apps.apple.com/app/id6802423998?action=write-review\n\n最大容量 · 健康度 · 充電速度 · 耗電 · 快充 · 滿電\n\n#Shorts #耗電 #BattAI電池健康",
+     "tags": [
+      "最大容量",
+      "健康度",
+      "充電速度",
+      "耗電",
+      "快充",
+      "滿電",
+      "過熱",
+      "BattAI電池健康",
+      "BattAI 電池健康"
+     ]
+    }
+   },
+   {
+    "kind": "clip",
     "key": "claudeusagemini_t10/ja",
     "locale": "ja",
     "app": "claudeusagemini_t10",
@@ -41650,6 +43733,331 @@
    },
    {
     "kind": "clip",
+    "key": "mochi/en",
+    "locale": "en",
+    "app": "mochi",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/bzxdez.mp4",
+    "hook": "Right on your Home Screen",
+    "name": "Mochi: Cute Checklist",
+    "title": "Right on your Home Screen | Cozy To-Do List Widget, Chores | Mochi Cute Checklist",
+    "tags": [
+     "#CuteChecklist",
+     "#CozyToDoListWidget",
+     "#ToDo",
+     "#MochiCuteChecklist"
+    ],
+    "caption": "Right on your Home Screen\nTap to check it off\nCozy To-Do List Widget, Chores\nMochi: Cute Checklist\nSearch “cute checklist” on the App Store\nAlso on Google Play\n\n#CuteChecklist #CozyToDoListWidget #ToDo #MochiCuteChecklist",
+    "button": "Get it on the App Store",
+    "variant": "c",
+    "alt": "Mochi: Cute Checklist — Right on your Home Screen — Tap to check it off — Cozy To-Do List Widget, Chores",
+    "store": "https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi",
+    "review": {
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6785004775?action=write-review"
+    },
+    "keywords": [
+     "planner",
+     "todo",
+     "aesthetic",
+     "daily",
+     "reminder",
+     "routine"
+    ],
+    "keyline": "Cozy To-Do List Widget, Chores",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "063389274bf4ea40",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "Right on your Home Screen\nTap to check it off\nCozy To-Do List Widget, Chores\nMochi: Cute Checklist\nSearch “cute checklist” on the App Store\nAlso on Google Play\n\n#CuteChecklist #CozyToDoListWidget #ToDo #MochiCuteChecklist\n\nGet it on the App Store: https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi",
+     "link": "https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=social&mt=8"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "mochi/zh-Hant",
+    "locale": "zh-Hant",
+    "app": "mochi",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/61xlzv.mp4",
+    "hook": "點一下就完成",
+    "name": "Mochi: 可愛待辦清單",
+    "title": "點一下就完成 | 待辦清單・待辦事項・療癒手帳 | Mochi 可愛待辦清單",
+    "tags": [
+     "#可愛待辦清單",
+     "#代辦事項",
+     "#任務清單",
+     "#日程",
+     "#Mochi可愛待辦清單"
+    ],
+    "caption": "點一下就完成\n101 款可愛主題\n待辦清單・待辦事項・療癒手帳\nMochi: 可愛待辦清單\n在 App Store 搜尋「Mochi 可愛待辦清單」\nAndroid 版在 Google Play\n\n#可愛待辦清單 #代辦事項 #任務清單 #日程 #Mochi可愛待辦清單",
+    "button": "在 App Store 下載",
+    "variant": "b",
+    "alt": "Mochi: 可愛待辦清單 — 點一下就完成 — 101 款可愛主題 — 待辦清單・待辦事項・療癒手帳",
+    "store": "https://apps.apple.com/tw/app/id6785004775?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi",
+    "review": {
+     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
+     "url": "https://apps.apple.com/app/id6785004775?action=write-review"
+    },
+    "keywords": [
+     "代辦事項",
+     "任務清單",
+     "日程",
+     "提醒",
+     "備忘錄",
+     "習慣"
+    ],
+    "keyline": "待辦清單・待辦事項・療癒手帳",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "063389274bf4ea40",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "點一下就完成\n101 款可愛主題\n待辦清單・待辦事項・療癒手帳\nMochi: 可愛待辦清單\n在 App Store 搜尋「Mochi 可愛待辦清單」\nAndroid 版在 Google Play\n\n#可愛待辦清單 #代辦事項 #任務清單 #日程 #Mochi可愛待辦清單\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6785004775?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi",
+     "link": "https://apps.apple.com/tw/app/id6785004775?pt=118326163&ct=social&mt=8"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "mochi/ja",
+    "locale": "ja",
+    "app": "mochi",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/fpkl2v.mp4",
+    "hook": "ToDoリストが、こんなにかわいい",
+    "name": "Mochi: かわいいToDo",
+    "title": "ToDoリストが、こんなにかわいい | ToDoリスト・やることリスト・チェックリスト | Mochi かわいいToDo",
+    "tags": [
+     "#かわいいToDoリストタスク管理",
+     "#リマインダー",
+     "#予定",
+     "#メモ",
+     "#MochiかわいいToDo"
+    ],
+    "caption": "ToDoリストが、こんなにかわいい\nタップで完了\nToDoリスト・やることリスト・チェックリスト\nMochi: かわいいToDo\nApp Storeで「Mochi かわいいToDo」を検索\nAndroidはGoogle Playで\n\n#かわいいToDoリストタスク管理 #リマインダー #予定 #メモ #MochiかわいいToDo",
+    "button": "App Storeで入手",
+    "variant": "a",
+    "alt": "Mochi: かわいいToDo — ToDoリストが、こんなにかわいい — タップで完了 — ToDoリスト・やることリスト・チェックリスト",
+    "store": "https://apps.apple.com/jp/app/id6785004775?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi",
+    "review": {
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6785004775?action=write-review"
+    },
+    "keywords": [
+     "リマインダー",
+     "予定",
+     "メモ",
+     "習慣",
+     "ルーティン",
+     "スケジュール"
+    ],
+    "keyline": "ToDoリスト・やることリスト・チェックリスト",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "063389274bf4ea40",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "ToDoリストが、こんなにかわいい\nタップで完了\nToDoリスト・やることリスト・チェックリスト\nMochi: かわいいToDo\nApp Storeで「Mochi かわいいToDo」を検索\nAndroidはGoogle Playで\n\n#かわいいToDoリストタスク管理 #リマインダー #予定 #メモ #MochiかわいいToDo\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6785004775?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi",
+     "link": "https://apps.apple.com/jp/app/id6785004775?pt=118326163&ct=social&mt=8"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "mochi/ko",
+    "locale": "ko",
+    "app": "mochi",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/s1fzkf.mp4",
+    "hook": "할 일 목록이 이렇게 귀여워도 돼?",
+    "name": "Mochi: 귀여운 할 일 목록 & 체크리스트",
+    "title": "할 일 목록이 이렇게 귀여워도 돼? | 할 일 목록, 데일리 플래너, 위젯 | Mochi 귀여운 할 일",
+    "tags": [
+     "#귀여운투두리스트체크리스트",
+     "#할일",
+     "#할일목록",
+     "#할일관리",
+     "#Mochi귀여운할일"
+    ],
+    "caption": "할 일 목록이 이렇게 귀여워도 돼?\n톡 누르면 완료\n할 일 목록, 데일리 플래너, 위젯\nMochi: 귀여운 할 일 목록 & 체크리스트\nApp Store에서 'Mochi 귀여운 할 일' 검색\nAndroid는 Google Play에서\n\n#귀여운투두리스트체크리스트 #할일 #할일목록 #할일관리 #Mochi귀여운할일",
+    "button": "App Store에서 받기",
+    "variant": "a",
+    "alt": "Mochi: 귀여운 할 일 목록 & 체크리스트 — 할 일 목록이 이렇게 귀여워도 돼? — 톡 누르면 완료 — 할 일 목록, 데일리 플래너, 위젯",
+    "store": "https://apps.apple.com/kr/app/id6785004775?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi",
+    "review": {
+     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
+     "url": "https://apps.apple.com/app/id6785004775?action=write-review"
+    },
+    "keywords": [
+     "할일",
+     "할일목록",
+     "할일관리",
+     "투두",
+     "알림",
+     "메모"
+    ],
+    "keyline": "할 일 목록, 데일리 플래너, 위젯",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "063389274bf4ea40",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "할 일 목록이 이렇게 귀여워도 돼?\n톡 누르면 완료\n할 일 목록, 데일리 플래너, 위젯\nMochi: 귀여운 할 일 목록 & 체크리스트\nApp Store에서 'Mochi 귀여운 할 일' 검색\nAndroid는 Google Play에서\n\n#귀여운투두리스트체크리스트 #할일 #할일목록 #할일관리 #Mochi귀여운할일\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6785004775?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi",
+     "link": "https://apps.apple.com/kr/app/id6785004775?pt=118326163&ct=social&mt=8"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "mochi/pt-BR",
+    "locale": "pt-BR",
+    "app": "mochi",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/e7aq6y.mp4",
+    "hook": "Direto na Tela de Início",
+    "name": "Mochi: Lista fofa",
+    "title": "Direto na Tela de Início | Lista de tarefas e checklist | Mochi Lista fofa",
+    "tags": [
+     "#ListaFofa",
+     "#ListaDeTarefas",
+     "#Checklist",
+     "#MochiListaFofa"
+    ],
+    "caption": "Direto na Tela de Início\nUm toque e pronto\nLista de tarefas e checklist\nMochi: Lista fofa\nPesquise “lista de tarefas” na App Store\nTambém no Google Play\n\n#ListaFofa #ListaDeTarefas #Checklist #MochiListaFofa",
+    "button": "Baixar na App Store",
+    "variant": "c",
+    "alt": "Mochi: Lista fofa — Direto na Tela de Início — Um toque e pronto — Lista de tarefas e checklist",
+    "store": "https://apps.apple.com/br/app/id6785004775?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi",
+    "review": {
+     "label": "Já usa este app? Avalie ou escreva uma resenha na App Store",
+     "url": "https://apps.apple.com/app/id6785004775?action=write-review"
+    },
+    "keywords": [
+     "lembrete",
+     "afazeres",
+     "planner",
+     "notas",
+     "hábitos",
+     "rotina"
+    ],
+    "keyline": "Lista de tarefas e checklist",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "063389274bf4ea40",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "Direto na Tela de Início\nUm toque e pronto\nLista de tarefas e checklist\nMochi: Lista fofa\nPesquise “lista de tarefas” na App Store\nTambém no Google Play\n\n#ListaFofa #ListaDeTarefas #Checklist #MochiListaFofa\n\nBaixar na App Store: https://apps.apple.com/br/app/id6785004775?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi",
+     "link": "https://apps.apple.com/br/app/id6785004775?pt=118326163&ct=social&mt=8"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "mochi/de",
+    "locale": "de",
+    "app": "mochi",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/bwf5d3.mp4",
+    "hook": "Antippen und abhaken",
+    "name": "Mochi: Süße To-do-Liste",
+    "title": "Antippen und abhaken | Aufgabenliste & Checkliste | Mochi Süße To-do-Liste",
+    "tags": [
+     "#SüßeTodoListe",
+     "#Gewohnheiten",
+     "#Aufgabenliste",
+     "#MochiSüßeTodoListe"
+    ],
+    "caption": "Antippen und abhaken\n101 süße Designs\nAufgabenliste & Checkliste\nMochi: Süße To-do-Liste\nIm App Store nach „Mochi Süße To-do-Liste“ suchen\nAuch bei Google Play\n\n#SüßeTodoListe #Gewohnheiten #Aufgabenliste #MochiSüßeTodoListe",
+    "button": "Im App Store laden",
+    "variant": "b",
+    "alt": "Mochi: Süße To-do-Liste — Antippen und abhaken — 101 süße Designs — Aufgabenliste & Checkliste",
+    "store": "https://apps.apple.com/de/app/id6785004775?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi",
+    "review": {
+     "label": "Du nutzt diese App schon? Bewerte sie oder schreib eine Rezension im App Store",
+     "url": "https://apps.apple.com/app/id6785004775?action=write-review"
+    },
+    "keywords": [
+     "todo",
+     "aufgaben",
+     "erinnerung",
+     "planer",
+     "notizen",
+     "gewohnheiten"
+    ],
+    "keyline": "Aufgabenliste & Checkliste",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "063389274bf4ea40",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "Antippen und abhaken\n101 süße Designs\nAufgabenliste & Checkliste\nMochi: Süße To-do-Liste\nIm App Store nach „Mochi Süße To-do-Liste“ suchen\nAuch bei Google Play\n\n#SüßeTodoListe #Gewohnheiten #Aufgabenliste #MochiSüßeTodoListe\n\nIm App Store laden: https://apps.apple.com/de/app/id6785004775?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi",
+     "link": "https://apps.apple.com/de/app/id6785004775?pt=118326163&ct=social&mt=8"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "mochi/fr",
+    "locale": "fr",
+    "app": "mochi",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/zfsbz8.mp4",
+    "hook": "Touche pour cocher",
+    "name": "Mochi: Liste toute mignonne",
+    "title": "Touche pour cocher | Liste de tâches kawaii | Mochi Liste toute mignonne",
+    "tags": [
+     "#ListeDeTâchesKawaii",
+     "#Checklist",
+     "#Rappels",
+     "#MochiListeTouteMignonne"
+    ],
+    "caption": "Touche pour cocher\n101 thèmes mignons\nListe de tâches kawaii\nMochi: Liste toute mignonne\nRecherchez « Mochi Liste toute mignonne » sur l'App Store\nAussi sur Google Play\n\n#ListeDeTâchesKawaii #Checklist #Rappels #MochiListeTouteMignonne",
+    "button": "Télécharger sur l'App Store",
+    "variant": "b",
+    "alt": "Mochi: Liste toute mignonne — Touche pour cocher — 101 thèmes mignons — Liste de tâches kawaii",
+    "store": "https://apps.apple.com/fr/app/id6785004775?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi",
+    "review": {
+     "label": "Vous utilisez déjà cette app ? Notez-la ou rédigez un avis sur l’App Store",
+     "url": "https://apps.apple.com/app/id6785004775?action=write-review"
+    },
+    "keywords": [
+     "todo",
+     "ménage",
+     "agenda",
+     "notes",
+     "habitudes",
+     "routine"
+    ],
+    "keyline": "Liste de tâches kawaii",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "063389274bf4ea40",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "Touche pour cocher\n101 thèmes mignons\nListe de tâches kawaii\nMochi: Liste toute mignonne\nRecherchez « Mochi Liste toute mignonne » sur l'App Store\nAussi sur Google Play\n\n#ListeDeTâchesKawaii #Checklist #Rappels #MochiListeTouteMignonne\n\nTélécharger sur l'App Store: https://apps.apple.com/fr/app/id6785004775?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi",
+     "link": "https://apps.apple.com/fr/app/id6785004775?pt=118326163&ct=social&mt=8"
+    }
+   },
+   {
+    "kind": "clip",
     "key": "countdaysnow/en",
     "locale": "en",
     "app": "countdaysnow",
@@ -43709,6 +46117,193 @@
    },
    {
     "kind": "clip",
+    "key": "battai/en",
+    "locale": "en",
+    "app": "battai",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/2yedq5.mp4",
+    "hook": "A health score, and what shapes it",
+    "name": "BattAI: Battery Health & Life",
+    "title": "A health score, and what shapes it | Charge Alerts, Heat & Widget | BattAI Battery Health",
+    "tags": [
+     "#BatteryHealthScore",
+     "#ChargeAlerts",
+     "#CycleCount",
+     "#BattAIBatteryHealth"
+    ],
+    "caption": "A health score, and what shapes it\nMax capacity trend over time\nCharge Alerts, Heat & Widget\nBattAI: Battery Health & Life\nSearch “BattAI Battery Health” on the App Store\nAlso on Google Play\n\n#BatteryHealthScore #ChargeAlerts #CycleCount #BattAIBatteryHealth",
+    "button": "Get it on the App Store",
+    "variant": "b",
+    "alt": "BattAI: Battery Health & Life — A health score, and what shapes it — Max capacity trend over time — Charge Alerts, Heat & Widget",
+    "store": "https://apps.apple.com/us/app/id6802423998?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.BattAI&referrer=utm_source%3Dsocial%26utm_campaign%3Dbattai",
+    "review": {
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6802423998?action=write-review"
+    },
+    "keywords": [
+     "capacity",
+     "cycle",
+     "count",
+     "check",
+     "test",
+     "full"
+    ],
+    "keyline": "Charge Alerts, Heat & Widget",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "922844988a1008d7",
+     "real_recording": true,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "A health score, and what shapes it\nMax capacity trend over time\nCharge Alerts, Heat & Widget\nBattAI: Battery Health & Life\nSearch “BattAI Battery Health” on the App Store\nAlso on Google Play\n\n#BatteryHealthScore #ChargeAlerts #CycleCount #BattAIBatteryHealth\n\nGet it on the App Store: https://apps.apple.com/us/app/id6802423998?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI&referrer=utm_source%3Dsocial%26utm_campaign%3Dbattai",
+     "link": "https://apps.apple.com/us/app/id6802423998?pt=118326163&ct=social&mt=8"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "battai/zh-Hant",
+    "locale": "zh-Hant",
+    "app": "battai",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/n2ybth.mp4",
+    "hook": "電池健康度，哪天掉到 80%？",
+    "name": "BattAI: 電池健康分數",
+    "title": "電池健康度，哪天掉到 80%？ | 電池檢測・充電保養・充飽提醒 | BattAI 電池健康",
+    "tags": [
+     "#電池健康度檢測分數",
+     "#最大容量",
+     "#健康度",
+     "#充電速度",
+     "#BattAI電池健康"
+    ],
+    "caption": "電池健康度，哪天掉到 80%？\n電池健康分數，連評分依據都看得到\n電池檢測・充電保養・充飽提醒\nBattAI: 電池健康分數\n在 App Store 搜尋「電池檢測」\nAndroid 版在 Google Play\n\n#電池健康度檢測分數 #最大容量 #健康度 #充電速度 #BattAI電池健康",
+    "button": "在 App Store 下載",
+    "variant": "a",
+    "alt": "BattAI: 電池健康分數 — 電池健康度，哪天掉到 80%？ — 電池健康分數，連評分依據都看得到 — 電池檢測・充電保養・充飽提醒",
+    "store": "https://apps.apple.com/tw/app/id6802423998?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.BattAI&referrer=utm_source%3Dsocial%26utm_campaign%3Dbattai",
+    "review": {
+     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
+     "url": "https://apps.apple.com/app/id6802423998?action=write-review"
+    },
+    "keywords": [
+     "最大容量",
+     "健康度",
+     "充電速度",
+     "耗電",
+     "快充",
+     "滿電"
+    ],
+    "keyline": "電池檢測・充電保養・充飽提醒",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "922844988a1008d7",
+     "real_recording": true,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "電池健康度，哪天掉到 80%？\n電池健康分數，連評分依據都看得到\n電池檢測・充電保養・充飽提醒\nBattAI: 電池健康分數\n在 App Store 搜尋「電池檢測」\nAndroid 版在 Google Play\n\n#電池健康度檢測分數 #最大容量 #健康度 #充電速度 #BattAI電池健康\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6802423998?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI&referrer=utm_source%3Dsocial%26utm_campaign%3Dbattai",
+     "link": "https://apps.apple.com/tw/app/id6802423998?pt=118326163&ct=social&mt=8"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "battai/ja",
+    "locale": "ja",
+    "app": "battai",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/tmc5xw.mp4",
+    "hook": "修理や売却に使える、電池レポート",
+    "name": "BattAI: バッテリー状態スコア",
+    "title": "修理や売却に使える、電池レポート | バッテリー劣化チェック・充電通知 | BattAI バッテリー",
+    "tags": [
+     "#バッテリー劣化状態スコア",
+     "#最大容量",
+     "#サイクル",
+     "#回数",
+     "#BattAIバッテリー"
+    ],
+    "caption": "修理や売却に使える、電池レポート\n状態スコアと、その要因まで\nバッテリー劣化チェック・充電通知\nBattAI: バッテリー状態スコア\nApp Storeで「バッテリー 劣化」を検索\nAndroidはGoogle Playで\n\n#バッテリー劣化状態スコア #最大容量 #サイクル #回数 #BattAIバッテリー",
+    "button": "App Storeで入手",
+    "variant": "c",
+    "alt": "BattAI: バッテリー状態スコア — 修理や売却に使える、電池レポート — 状態スコアと、その要因まで — バッテリー劣化チェック・充電通知",
+    "store": "https://apps.apple.com/jp/app/id6802423998?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.BattAI&referrer=utm_source%3Dsocial%26utm_campaign%3Dbattai",
+    "review": {
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6802423998?action=write-review"
+    },
+    "keywords": [
+     "最大容量",
+     "サイクル",
+     "回数",
+     "診断",
+     "交換時期",
+     "消耗"
+    ],
+    "keyline": "バッテリー劣化チェック・充電通知",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "922844988a1008d7",
+     "real_recording": true,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "修理や売却に使える、電池レポート\n状態スコアと、その要因まで\nバッテリー劣化チェック・充電通知\nBattAI: バッテリー状態スコア\nApp Storeで「バッテリー 劣化」を検索\nAndroidはGoogle Playで\n\n#バッテリー劣化状態スコア #最大容量 #サイクル #回数 #BattAIバッテリー\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6802423998?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI&referrer=utm_source%3Dsocial%26utm_campaign%3Dbattai",
+     "link": "https://apps.apple.com/jp/app/id6802423998?pt=118326163&ct=social&mt=8"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "battai/ko",
+    "locale": "ko",
+    "app": "battai",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/3o00cw.mp4",
+    "hook": "수리·중고 판매에 쓰는 배터리 리포트",
+    "name": "BattAI: 배터리 상태 점수",
+    "title": "수리·중고 판매에 쓰는 배터리 리포트 | 배터리 성능·수명 확인·완충 알림 | BattAI 배터리",
+    "tags": [
+     "#배터리성능상태점수",
+     "#효율",
+     "#점검",
+     "#사이클",
+     "#BattAI배터리"
+    ],
+    "caption": "수리·중고 판매에 쓰는 배터리 리포트\n배터리 상태 점수와 점수를 만드는 요소\n배터리 성능·수명 확인·완충 알림\nBattAI: 배터리 상태 점수\nApp Store에서 '배터리 용량' 검색\nAndroid는 Google Play에서\n\n#배터리성능상태점수 #효율 #점검 #사이클 #BattAI배터리",
+    "button": "App Store에서 받기",
+    "variant": "c",
+    "alt": "BattAI: 배터리 상태 점수 — 수리·중고 판매에 쓰는 배터리 리포트 — 배터리 상태 점수와 점수를 만드는 요소 — 배터리 성능·수명 확인·완충 알림",
+    "store": "https://apps.apple.com/kr/app/id6802423998?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.BattAI&referrer=utm_source%3Dsocial%26utm_campaign%3Dbattai",
+    "review": {
+     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
+     "url": "https://apps.apple.com/app/id6802423998?action=write-review"
+    },
+    "keywords": [
+     "효율",
+     "점검",
+     "사이클",
+     "횟수",
+     "용량",
+     "최대"
+    ],
+    "keyline": "배터리 성능·수명 확인·완충 알림",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "922844988a1008d7",
+     "real_recording": true,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "수리·중고 판매에 쓰는 배터리 리포트\n배터리 상태 점수와 점수를 만드는 요소\n배터리 성능·수명 확인·완충 알림\nBattAI: 배터리 상태 점수\nApp Store에서 '배터리 용량' 검색\nAndroid는 Google Play에서\n\n#배터리성능상태점수 #효율 #점검 #사이클 #BattAI배터리\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6802423998?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI&referrer=utm_source%3Dsocial%26utm_campaign%3Dbattai",
+     "link": "https://apps.apple.com/kr/app/id6802423998?pt=118326163&ct=social&mt=8"
+    }
+   },
+   {
+    "kind": "clip",
     "key": "caldaily/en",
     "locale": "en",
     "app": "caldaily",
@@ -45331,7 +47926,7 @@
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "f88a32e9a9deb640",
+     "board": "7ad14c39c559a0db",
      "real_recording": false,
      "rules": "2026-10-18"
     },
@@ -45378,7 +47973,7 @@
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "f88a32e9a9deb640",
+     "board": "7ad14c39c559a0db",
      "real_recording": false,
      "rules": "2026-10-18"
     },
@@ -46404,7 +48999,7 @@
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "3770a5c2653a56c0",
+     "board": "53bd29c97a625885",
      "real_recording": false,
      "rules": "2026-10-18"
     },
@@ -46451,7 +49046,7 @@
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "3770a5c2653a56c0",
+     "board": "53bd29c97a625885",
      "real_recording": false,
      "rules": "2026-10-18"
     },
@@ -49958,6 +52553,331 @@
     "pinterest": {
      "description": "중요한 날을 위젯으로\n비공개 일정은 Face ID로 잠금\nD-day 위젯·기념일·날짜계산\nCountDaysNow: Event Counter\nApp Store에서 'CountDaysNow' 검색\nAndroid는 Google Play에서\n\n#기념일 #생일 #커플 #수능 #CountDaysNow\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
      "link": "https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "mochi_b/en",
+    "locale": "en",
+    "app": "mochi_b",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/c5k6l8.mp4",
+    "hook": "So much to do, so easy to forget?",
+    "name": "Mochi: Cute Checklist",
+    "title": "So much to do, so easy to forget? | Cute Checklist | Mochi Cute Checklist",
+    "tags": [
+     "#CozyToDoListWidget",
+     "#Chores",
+     "#Cute",
+     "#MochiCuteChecklist"
+    ],
+    "caption": "So much to do, so easy to forget?\nWork, errands, groceries in one place\nMochi: Cute Checklist\nSearch “cute checklist” on the App Store\nAlso on Google Play\n\n#CozyToDoListWidget #Chores #Cute #MochiCuteChecklist",
+    "button": "Get it on the App Store",
+    "variant": "a",
+    "alt": "Mochi: Cute Checklist — So much to do, so easy to forget? — Work, errands, groceries in one place",
+    "store": "https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi",
+    "review": {
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6785004775?action=write-review"
+    },
+    "keywords": [
+     "planner",
+     "todo",
+     "aesthetic",
+     "daily",
+     "reminder",
+     "routine"
+    ],
+    "keyline": "Cute Checklist",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "de911648f97ae007",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "So much to do, so easy to forget?\nWork, errands, groceries in one place\nMochi: Cute Checklist\nSearch “cute checklist” on the App Store\nAlso on Google Play\n\n#CozyToDoListWidget #Chores #Cute #MochiCuteChecklist\n\nGet it on the App Store: https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi",
+     "link": "https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=social&mt=8"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "mochi_b/zh-Hant",
+    "locale": "zh-Hant",
+    "app": "mochi_b",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/dd1unw.mp4",
+    "hook": "換個主題，更有個人風格",
+    "name": "Mochi: 可愛待辦清單",
+    "title": "換個主題，更有個人風格 | 可愛待辦清單 | Mochi 可愛待辦清單",
+    "tags": [
+     "#提醒",
+     "#備忘錄",
+     "#習慣",
+     "#計畫",
+     "#Mochi可愛待辦清單"
+    ],
+    "caption": "換個主題，更有個人風格\n讀書、工作、購物，一個 App 整理\nMochi: 可愛待辦清單\n在 App Store 搜尋「Mochi 可愛待辦清單」\nAndroid 版在 Google Play\n\n#提醒 #備忘錄 #習慣 #計畫 #Mochi可愛待辦清單",
+    "button": "在 App Store 下載",
+    "variant": "c",
+    "alt": "Mochi: 可愛待辦清單 — 換個主題，更有個人風格 — 讀書、工作、購物，一個 App 整理",
+    "store": "https://apps.apple.com/tw/app/id6785004775?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi",
+    "review": {
+     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
+     "url": "https://apps.apple.com/app/id6785004775?action=write-review"
+    },
+    "keywords": [
+     "代辦事項",
+     "任務清單",
+     "日程",
+     "提醒",
+     "備忘錄",
+     "習慣"
+    ],
+    "keyline": "可愛待辦清單",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "de911648f97ae007",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "換個主題，更有個人風格\n讀書、工作、購物，一個 App 整理\nMochi: 可愛待辦清單\n在 App Store 搜尋「Mochi 可愛待辦清單」\nAndroid 版在 Google Play\n\n#提醒 #備忘錄 #習慣 #計畫 #Mochi可愛待辦清單\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6785004775?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi",
+     "link": "https://apps.apple.com/tw/app/id6785004775?pt=118326163&ct=social&mt=8"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "mochi_b/ja",
+    "locale": "ja",
+    "app": "mochi_b",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/dca0hg.mp4",
+    "hook": "勉強も仕事も買い物も、ぜんぶ管理",
+    "name": "Mochi: かわいいToDo",
+    "title": "勉強も仕事も買い物も、ぜんぶ管理 | ToDoリスト・やることリスト・チェックリスト | Mochi かわいいToDo",
+    "tags": [
+     "#習慣",
+     "#ルーティン",
+     "#スケジュール",
+     "#買い物",
+     "#MochiかわいいToDo"
+    ],
+    "caption": "勉強も仕事も買い物も、ぜんぶ管理\n丸をタップして、気持ちもふわっと\nToDoリスト・やることリスト・チェックリスト\nMochi: かわいいToDo\nApp Storeで「Mochi かわいいToDo」を検索\nAndroidはGoogle Playで\n\n#習慣 #ルーティン #スケジュール #買い物 #MochiかわいいToDo",
+    "button": "App Storeで入手",
+    "variant": "b",
+    "alt": "Mochi: かわいいToDo — 勉強も仕事も買い物も、ぜんぶ管理 — 丸をタップして、気持ちもふわっと — ToDoリスト・やることリスト・チェックリスト",
+    "store": "https://apps.apple.com/jp/app/id6785004775?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi",
+    "review": {
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6785004775?action=write-review"
+    },
+    "keywords": [
+     "リマインダー",
+     "予定",
+     "メモ",
+     "習慣",
+     "ルーティン",
+     "スケジュール"
+    ],
+    "keyline": "ToDoリスト・やることリスト・チェックリスト",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "de911648f97ae007",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "勉強も仕事も買い物も、ぜんぶ管理\n丸をタップして、気持ちもふわっと\nToDoリスト・やることリスト・チェックリスト\nMochi: かわいいToDo\nApp Storeで「Mochi かわいいToDo」を検索\nAndroidはGoogle Playで\n\n#習慣 #ルーティン #スケジュール #買い物 #MochiかわいいToDo\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6785004775?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi",
+     "link": "https://apps.apple.com/jp/app/id6785004775?pt=118326163&ct=social&mt=8"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "mochi_b/ko",
+    "locale": "ko",
+    "app": "mochi_b",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/uin2zo.mp4",
+    "hook": "공부, 업무, 장보기 한 곳에서",
+    "name": "Mochi: 귀여운 할 일 목록 & 체크리스트",
+    "title": "공부, 업무, 장보기 한 곳에서 | 귀여운 투두리스트 & 체크리스트 | Mochi 귀여운 할 일",
+    "tags": [
+     "#투두",
+     "#알림",
+     "#메모",
+     "#습관",
+     "#Mochi귀여운할일"
+    ],
+    "caption": "공부, 업무, 장보기 한 곳에서\n동그라미를 탭하면 하루가 가볍게\n귀여운 투두리스트 & 체크리스트\nMochi: 귀여운 할 일 목록 & 체크리스트\nApp Store에서 'Mochi 귀여운 할 일' 검색\nAndroid는 Google Play에서\n\n#투두 #알림 #메모 #습관 #Mochi귀여운할일",
+    "button": "App Store에서 받기",
+    "variant": "b",
+    "alt": "Mochi: 귀여운 할 일 목록 & 체크리스트 — 공부, 업무, 장보기 한 곳에서 — 동그라미를 탭하면 하루가 가볍게 — 귀여운 투두리스트 & 체크리스트",
+    "store": "https://apps.apple.com/kr/app/id6785004775?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi",
+    "review": {
+     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
+     "url": "https://apps.apple.com/app/id6785004775?action=write-review"
+    },
+    "keywords": [
+     "할일",
+     "할일목록",
+     "할일관리",
+     "투두",
+     "알림",
+     "메모"
+    ],
+    "keyline": "귀여운 투두리스트 & 체크리스트",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "de911648f97ae007",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "공부, 업무, 장보기 한 곳에서\n동그라미를 탭하면 하루가 가볍게\n귀여운 투두리스트 & 체크리스트\nMochi: 귀여운 할 일 목록 & 체크리스트\nApp Store에서 'Mochi 귀여운 할 일' 검색\nAndroid는 Google Play에서\n\n#투두 #알림 #메모 #습관 #Mochi귀여운할일\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6785004775?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi",
+     "link": "https://apps.apple.com/kr/app/id6785004775?pt=118326163&ct=social&mt=8"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "mochi_b/pt-BR",
+    "locale": "pt-BR",
+    "app": "mochi_b",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/o4ayua.mp4",
+    "hook": "Tanta coisa pra fazer e você esquece?",
+    "name": "Mochi: Lista fofa",
+    "title": "Tanta coisa pra fazer e você esquece? | Lista fofa | Mochi Lista fofa",
+    "tags": [
+     "#ListaDeTarefas",
+     "#Fofa",
+     "#Lembrete",
+     "#MochiListaFofa"
+    ],
+    "caption": "Tanta coisa pra fazer e você esquece?\nEstudos, trabalho, compras em um só lugar\nMochi: Lista fofa\nPesquise “lista de tarefas” na App Store\nTambém no Google Play\n\n#ListaDeTarefas #Fofa #Lembrete #MochiListaFofa",
+    "button": "Baixar na App Store",
+    "variant": "a",
+    "alt": "Mochi: Lista fofa — Tanta coisa pra fazer e você esquece? — Estudos, trabalho, compras em um só lugar",
+    "store": "https://apps.apple.com/br/app/id6785004775?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi",
+    "review": {
+     "label": "Já usa este app? Avalie ou escreva uma resenha na App Store",
+     "url": "https://apps.apple.com/app/id6785004775?action=write-review"
+    },
+    "keywords": [
+     "lembrete",
+     "afazeres",
+     "planner",
+     "notas",
+     "hábitos",
+     "rotina"
+    ],
+    "keyline": "Lista fofa",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "de911648f97ae007",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "Tanta coisa pra fazer e você esquece?\nEstudos, trabalho, compras em um só lugar\nMochi: Lista fofa\nPesquise “lista de tarefas” na App Store\nTambém no Google Play\n\n#ListaDeTarefas #Fofa #Lembrete #MochiListaFofa\n\nBaixar na App Store: https://apps.apple.com/br/app/id6785004775?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi",
+     "link": "https://apps.apple.com/br/app/id6785004775?pt=118326163&ct=social&mt=8"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "mochi_b/de",
+    "locale": "de",
+    "app": "mochi_b",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/jpk9zc.mp4",
+    "hook": "Gestalte sie mit hübschen Designs",
+    "name": "Mochi: Süße To-do-Liste",
+    "title": "Gestalte sie mit hübschen Designs | Aufgabenliste & Checkliste | Mochi Süße To-do-Liste",
+    "tags": [
+     "#Gewohnheiten",
+     "#TodoListe",
+     "#Aufgaben",
+     "#MochiSüßeTodoListe"
+    ],
+    "caption": "Gestalte sie mit hübschen Designs\nStudium, Arbeit, Einkauf an einem Ort\nAufgabenliste & Checkliste\nMochi: Süße To-do-Liste\nIm App Store nach „Mochi Süße To-do-Liste“ suchen\nAuch bei Google Play\n\n#Gewohnheiten #TodoListe #Aufgaben #MochiSüßeTodoListe",
+    "button": "Im App Store laden",
+    "variant": "c",
+    "alt": "Mochi: Süße To-do-Liste — Gestalte sie mit hübschen Designs — Studium, Arbeit, Einkauf an einem Ort — Aufgabenliste & Checkliste",
+    "store": "https://apps.apple.com/de/app/id6785004775?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi",
+    "review": {
+     "label": "Du nutzt diese App schon? Bewerte sie oder schreib eine Rezension im App Store",
+     "url": "https://apps.apple.com/app/id6785004775?action=write-review"
+    },
+    "keywords": [
+     "todo",
+     "aufgaben",
+     "erinnerung",
+     "planer",
+     "notizen",
+     "gewohnheiten"
+    ],
+    "keyline": "Aufgabenliste & Checkliste",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "de911648f97ae007",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "Gestalte sie mit hübschen Designs\nStudium, Arbeit, Einkauf an einem Ort\nAufgabenliste & Checkliste\nMochi: Süße To-do-Liste\nIm App Store nach „Mochi Süße To-do-Liste“ suchen\nAuch bei Google Play\n\n#Gewohnheiten #TodoListe #Aufgaben #MochiSüßeTodoListe\n\nIm App Store laden: https://apps.apple.com/de/app/id6785004775?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi",
+     "link": "https://apps.apple.com/de/app/id6785004775?pt=118326163&ct=social&mt=8"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "mochi_b/fr",
+    "locale": "fr",
+    "app": "mochi_b",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/sfdnqe.mp4",
+    "hook": "Personnalise-la avec de jolis thèmes",
+    "name": "Mochi: Liste toute mignonne",
+    "title": "Personnalise-la avec de jolis thèmes | Liste de tâches kawaii | Mochi Liste toute mignonne",
+    "tags": [
+     "#Liste",
+     "#Tâches",
+     "#Kawaii",
+     "#MochiListeTouteMignonne"
+    ],
+    "caption": "Personnalise-la avec de jolis thèmes\nÉtudes, travail, courses au même endroit\nListe de tâches kawaii\nMochi: Liste toute mignonne\nRecherchez « Mochi Liste toute mignonne » sur l'App Store\nAussi sur Google Play\n\n#Liste #Tâches #Kawaii #MochiListeTouteMignonne",
+    "button": "Télécharger sur l'App Store",
+    "variant": "c",
+    "alt": "Mochi: Liste toute mignonne — Personnalise-la avec de jolis thèmes — Études, travail, courses au même endroit — Liste de tâches kawaii",
+    "store": "https://apps.apple.com/fr/app/id6785004775?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi",
+    "review": {
+     "label": "Vous utilisez déjà cette app ? Notez-la ou rédigez un avis sur l’App Store",
+     "url": "https://apps.apple.com/app/id6785004775?action=write-review"
+    },
+    "keywords": [
+     "todo",
+     "ménage",
+     "agenda",
+     "notes",
+     "habitudes",
+     "routine"
+    ],
+    "keyline": "Liste de tâches kawaii",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "de911648f97ae007",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "Personnalise-la avec de jolis thèmes\nÉtudes, travail, courses au même endroit\nListe de tâches kawaii\nMochi: Liste toute mignonne\nRecherchez « Mochi Liste toute mignonne » sur l'App Store\nAussi sur Google Play\n\n#Liste #Tâches #Kawaii #MochiListeTouteMignonne\n\nTélécharger sur l'App Store: https://apps.apple.com/fr/app/id6785004775?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi",
+     "link": "https://apps.apple.com/fr/app/id6785004775?pt=118326163&ct=social&mt=8"
     }
    },
    {
@@ -55010,6 +57930,100 @@
    },
    {
     "kind": "clip",
+    "key": "battai_t10/ko",
+    "locale": "ko",
+    "app": "battai_t10",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/64y1q6.mp4",
+    "hook": "배터리 상태 점수와 점수를 만드는 요소",
+    "name": "BattAI: 배터리 상태 점수",
+    "title": "배터리 상태 점수와 점수를 만드는 요소 | 배터리 성능·수명 확인·완충 알림 | BattAI 배터리",
+    "tags": [
+     "#횟수",
+     "#용량",
+     "#최대",
+     "#교체",
+     "#BattAI배터리"
+    ],
+    "caption": "배터리 상태 점수와 점수를 만드는 요소\n성능 최대치의 추세\n배터리 성능·수명 확인·완충 알림\nBattAI: 배터리 상태 점수\nApp Store에서 'BattAI 배터리' 검색\nAndroid는 Google Play에서\n\n#횟수 #용량 #최대 #교체 #BattAI배터리",
+    "button": "App Store에서 받기",
+    "variant": "b",
+    "alt": "BattAI: 배터리 상태 점수 — 배터리 상태 점수와 점수를 만드는 요소 — 성능 최대치의 추세 — 배터리 성능·수명 확인·완충 알림",
+    "store": "https://apps.apple.com/kr/app/id6802423998?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.BattAI&referrer=utm_source%3Dsocial%26utm_campaign%3Dbattai",
+    "review": {
+     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
+     "url": "https://apps.apple.com/app/id6802423998?action=write-review"
+    },
+    "keywords": [
+     "효율",
+     "점검",
+     "사이클",
+     "횟수",
+     "용량",
+     "최대"
+    ],
+    "keyline": "배터리 성능·수명 확인·완충 알림",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "1cde008b37075975",
+     "real_recording": true,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "배터리 상태 점수와 점수를 만드는 요소\n성능 최대치의 추세\n배터리 성능·수명 확인·완충 알림\nBattAI: 배터리 상태 점수\nApp Store에서 'BattAI 배터리' 검색\nAndroid는 Google Play에서\n\n#횟수 #용량 #최대 #교체 #BattAI배터리\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6802423998?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI&referrer=utm_source%3Dsocial%26utm_campaign%3Dbattai",
+     "link": "https://apps.apple.com/kr/app/id6802423998?pt=118326163&ct=social&mt=8"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "battai_t10b/zh-Hant",
+    "locale": "zh-Hant",
+    "app": "battai_t10b",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/ym7gad.mp4",
+    "hook": "電池健康分數，連評分依據都看得到",
+    "name": "BattAI: 電池健康分數",
+    "title": "電池健康分數，連評分依據都看得到 | 電池檢測・充電保養・充飽提醒 | BattAI 電池健康",
+    "tags": [
+     "#耗電",
+     "#快充",
+     "#滿電",
+     "#過熱",
+     "#BattAI電池健康"
+    ],
+    "caption": "電池健康分數，連評分依據都看得到\n最大容量，隨時間的趨勢\n電池檢測・充電保養・充飽提醒\nBattAI: 電池健康分數\n在 App Store 搜尋「BattAI 電池健康」\nAndroid 版在 Google Play\n\n#耗電 #快充 #滿電 #過熱 #BattAI電池健康",
+    "button": "在 App Store 下載",
+    "variant": "b",
+    "alt": "BattAI: 電池健康分數 — 電池健康分數，連評分依據都看得到 — 最大容量，隨時間的趨勢 — 電池檢測・充電保養・充飽提醒",
+    "store": "https://apps.apple.com/tw/app/id6802423998?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.BattAI&referrer=utm_source%3Dsocial%26utm_campaign%3Dbattai",
+    "review": {
+     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
+     "url": "https://apps.apple.com/app/id6802423998?action=write-review"
+    },
+    "keywords": [
+     "最大容量",
+     "健康度",
+     "充電速度",
+     "耗電",
+     "快充",
+     "滿電"
+    ],
+    "keyline": "電池檢測・充電保養・充飽提醒",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "1a2d1d71788b6654",
+     "real_recording": true,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "電池健康分數，連評分依據都看得到\n最大容量，隨時間的趨勢\n電池檢測・充電保養・充飽提醒\nBattAI: 電池健康分數\n在 App Store 搜尋「BattAI 電池健康」\nAndroid 版在 Google Play\n\n#耗電 #快充 #滿電 #過熱 #BattAI電池健康\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6802423998?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI&referrer=utm_source%3Dsocial%26utm_campaign%3Dbattai",
+     "link": "https://apps.apple.com/tw/app/id6802423998?pt=118326163&ct=social&mt=8"
+    }
+   },
+   {
+    "kind": "clip",
     "key": "claudeusagemini_t10/ja",
     "locale": "ja",
     "app": "claudeusagemini_t10",
@@ -58178,6 +61192,324 @@
    },
    {
     "kind": "clip",
+    "key": "mochi/en",
+    "locale": "en",
+    "app": "mochi",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/bzxdez.mp4",
+    "hook": "Tap to check it off",
+    "name": "Mochi: Cute Checklist",
+    "title": "Tap to check it off | Cozy To-Do List Widget, Chores | Mochi Cute Checklist",
+    "tags": [
+     "#CuteChecklist",
+     "#CozyToDoListWidget",
+     "#ToDo",
+     "#MochiCuteChecklist"
+    ],
+    "caption": "Tap to check it off\n101 cute themes\nCozy To-Do List Widget, Chores\nMochi: Cute Checklist\nSearch “cute checklist” on the App Store\nAlso on Google Play\n\n#CuteChecklist #CozyToDoListWidget #ToDo #MochiCuteChecklist",
+    "button": "Get it on the App Store",
+    "variant": "b",
+    "alt": "Mochi: Cute Checklist — Tap to check it off — 101 cute themes — Cozy To-Do List Widget, Chores",
+    "store": "https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi",
+    "review": {
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6785004775?action=write-review"
+    },
+    "keywords": [
+     "planner",
+     "todo",
+     "aesthetic",
+     "daily",
+     "reminder",
+     "routine"
+    ],
+    "keyline": "Cozy To-Do List Widget, Chores",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "063389274bf4ea40",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "Tap to check it off\n101 cute themes\nCozy To-Do List Widget, Chores\nMochi: Cute Checklist\nSearch “cute checklist” on the App Store\nAlso on Google Play\n\n#CuteChecklist #CozyToDoListWidget #ToDo #MochiCuteChecklist\n\nGet it on the App Store: https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "mochi/zh-Hant",
+    "locale": "zh-Hant",
+    "app": "mochi",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/61xlzv.mp4",
+    "hook": "待辦清單，也可以這麼可愛",
+    "name": "Mochi: 可愛待辦清單",
+    "title": "待辦清單，也可以這麼可愛 | 待辦清單・待辦事項・療癒手帳 | Mochi 可愛待辦清單",
+    "tags": [
+     "#可愛待辦清單",
+     "#代辦事項",
+     "#任務清單",
+     "#日程",
+     "#Mochi可愛待辦清單"
+    ],
+    "caption": "待辦清單，也可以這麼可愛\n點一下就完成\n待辦清單・待辦事項・療癒手帳\nMochi: 可愛待辦清單\n在 App Store 搜尋「Mochi 可愛待辦清單」\nAndroid 版在 Google Play\n\n#可愛待辦清單 #代辦事項 #任務清單 #日程 #Mochi可愛待辦清單",
+    "button": "在 App Store 下載",
+    "variant": "a",
+    "alt": "Mochi: 可愛待辦清單 — 待辦清單，也可以這麼可愛 — 點一下就完成 — 待辦清單・待辦事項・療癒手帳",
+    "store": "https://apps.apple.com/tw/app/id6785004775?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi",
+    "review": {
+     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
+     "url": "https://apps.apple.com/app/id6785004775?action=write-review"
+    },
+    "keywords": [
+     "代辦事項",
+     "任務清單",
+     "日程",
+     "提醒",
+     "備忘錄",
+     "習慣"
+    ],
+    "keyline": "待辦清單・待辦事項・療癒手帳",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "063389274bf4ea40",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "待辦清單，也可以這麼可愛\n點一下就完成\n待辦清單・待辦事項・療癒手帳\nMochi: 可愛待辦清單\n在 App Store 搜尋「Mochi 可愛待辦清單」\nAndroid 版在 Google Play\n\n#可愛待辦清單 #代辦事項 #任務清單 #日程 #Mochi可愛待辦清單\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6785004775?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "mochi/ja",
+    "locale": "ja",
+    "app": "mochi",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/fpkl2v.mp4",
+    "hook": "ホーム画面でサッと確認",
+    "name": "Mochi: かわいいToDo",
+    "title": "ホーム画面でサッと確認 | ToDoリスト・やることリスト・チェックリスト | Mochi かわいいToDo",
+    "tags": [
+     "#かわいいToDoリストタスク管理",
+     "#リマインダー",
+     "#予定",
+     "#メモ",
+     "#MochiかわいいToDo"
+    ],
+    "caption": "ホーム画面でサッと確認\nタップで完了\nToDoリスト・やることリスト・チェックリスト\nMochi: かわいいToDo\nApp Storeで「Mochi かわいいToDo」を検索\nAndroidはGoogle Playで\n\n#かわいいToDoリストタスク管理 #リマインダー #予定 #メモ #MochiかわいいToDo",
+    "button": "App Storeで入手",
+    "variant": "c",
+    "alt": "Mochi: かわいいToDo — ホーム画面でサッと確認 — タップで完了 — ToDoリスト・やることリスト・チェックリスト",
+    "store": "https://apps.apple.com/jp/app/id6785004775?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi",
+    "review": {
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6785004775?action=write-review"
+    },
+    "keywords": [
+     "リマインダー",
+     "予定",
+     "メモ",
+     "習慣",
+     "ルーティン",
+     "スケジュール"
+    ],
+    "keyline": "ToDoリスト・やることリスト・チェックリスト",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "063389274bf4ea40",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "ホーム画面でサッと確認\nタップで完了\nToDoリスト・やることリスト・チェックリスト\nMochi: かわいいToDo\nApp Storeで「Mochi かわいいToDo」を検索\nAndroidはGoogle Playで\n\n#かわいいToDoリストタスク管理 #リマインダー #予定 #メモ #MochiかわいいToDo\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6785004775?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "mochi/ko",
+    "locale": "ko",
+    "app": "mochi",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/s1fzkf.mp4",
+    "hook": "홈 화면에 바로",
+    "name": "Mochi: 귀여운 할 일 목록 & 체크리스트",
+    "title": "홈 화면에 바로 | 할 일 목록, 데일리 플래너, 위젯 | Mochi 귀여운 할 일",
+    "tags": [
+     "#귀여운투두리스트체크리스트",
+     "#할일",
+     "#할일목록",
+     "#할일관리",
+     "#Mochi귀여운할일"
+    ],
+    "caption": "홈 화면에 바로\n톡 누르면 완료\n할 일 목록, 데일리 플래너, 위젯\nMochi: 귀여운 할 일 목록 & 체크리스트\nApp Store에서 'Mochi 귀여운 할 일' 검색\nAndroid는 Google Play에서\n\n#귀여운투두리스트체크리스트 #할일 #할일목록 #할일관리 #Mochi귀여운할일",
+    "button": "App Store에서 받기",
+    "variant": "c",
+    "alt": "Mochi: 귀여운 할 일 목록 & 체크리스트 — 홈 화면에 바로 — 톡 누르면 완료 — 할 일 목록, 데일리 플래너, 위젯",
+    "store": "https://apps.apple.com/kr/app/id6785004775?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi",
+    "review": {
+     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
+     "url": "https://apps.apple.com/app/id6785004775?action=write-review"
+    },
+    "keywords": [
+     "할일",
+     "할일목록",
+     "할일관리",
+     "투두",
+     "알림",
+     "메모"
+    ],
+    "keyline": "할 일 목록, 데일리 플래너, 위젯",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "063389274bf4ea40",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "홈 화면에 바로\n톡 누르면 완료\n할 일 목록, 데일리 플래너, 위젯\nMochi: 귀여운 할 일 목록 & 체크리스트\nApp Store에서 'Mochi 귀여운 할 일' 검색\nAndroid는 Google Play에서\n\n#귀여운투두리스트체크리스트 #할일 #할일목록 #할일관리 #Mochi귀여운할일\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6785004775?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "mochi/pt-BR",
+    "locale": "pt-BR",
+    "app": "mochi",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/e7aq6y.mp4",
+    "hook": "Um toque e pronto",
+    "name": "Mochi: Lista fofa",
+    "title": "Um toque e pronto | Lista de tarefas e checklist | Mochi Lista fofa",
+    "tags": [
+     "#ListaFofa",
+     "#ListaDeTarefas",
+     "#Checklist",
+     "#MochiListaFofa"
+    ],
+    "caption": "Um toque e pronto\n101 temas fofos\nLista de tarefas e checklist\nMochi: Lista fofa\nPesquise “lista de tarefas” na App Store\nTambém no Google Play\n\n#ListaFofa #ListaDeTarefas #Checklist #MochiListaFofa",
+    "button": "Baixar na App Store",
+    "variant": "b",
+    "alt": "Mochi: Lista fofa — Um toque e pronto — 101 temas fofos — Lista de tarefas e checklist",
+    "store": "https://apps.apple.com/br/app/id6785004775?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi",
+    "review": {
+     "label": "Já usa este app? Avalie ou escreva uma resenha na App Store",
+     "url": "https://apps.apple.com/app/id6785004775?action=write-review"
+    },
+    "keywords": [
+     "lembrete",
+     "afazeres",
+     "planner",
+     "notas",
+     "hábitos",
+     "rotina"
+    ],
+    "keyline": "Lista de tarefas e checklist",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "063389274bf4ea40",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "Um toque e pronto\n101 temas fofos\nLista de tarefas e checklist\nMochi: Lista fofa\nPesquise “lista de tarefas” na App Store\nTambém no Google Play\n\n#ListaFofa #ListaDeTarefas #Checklist #MochiListaFofa\n\nBaixar na App Store: https://apps.apple.com/br/app/id6785004775?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "mochi/de",
+    "locale": "de",
+    "app": "mochi",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/bwf5d3.mp4",
+    "hook": "Deine To-do-Liste, nur viel süßer",
+    "name": "Mochi: Süße To-do-Liste",
+    "title": "Deine To-do-Liste, nur viel süßer | Aufgabenliste & Checkliste | Mochi Süße To-do-Liste",
+    "tags": [
+     "#SüßeTodoListe",
+     "#Gewohnheiten",
+     "#Aufgabenliste",
+     "#MochiSüßeTodoListe"
+    ],
+    "caption": "Deine To-do-Liste, nur viel süßer\nAntippen und abhaken\nAufgabenliste & Checkliste\nMochi: Süße To-do-Liste\nIm App Store nach „Mochi Süße To-do-Liste“ suchen\nAuch bei Google Play\n\n#SüßeTodoListe #Gewohnheiten #Aufgabenliste #MochiSüßeTodoListe",
+    "button": "Im App Store laden",
+    "variant": "a",
+    "alt": "Mochi: Süße To-do-Liste — Deine To-do-Liste, nur viel süßer — Antippen und abhaken — Aufgabenliste & Checkliste",
+    "store": "https://apps.apple.com/de/app/id6785004775?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi",
+    "review": {
+     "label": "Du nutzt diese App schon? Bewerte sie oder schreib eine Rezension im App Store",
+     "url": "https://apps.apple.com/app/id6785004775?action=write-review"
+    },
+    "keywords": [
+     "todo",
+     "aufgaben",
+     "erinnerung",
+     "planer",
+     "notizen",
+     "gewohnheiten"
+    ],
+    "keyline": "Aufgabenliste & Checkliste",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "063389274bf4ea40",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "Deine To-do-Liste, nur viel süßer\nAntippen und abhaken\nAufgabenliste & Checkliste\nMochi: Süße To-do-Liste\nIm App Store nach „Mochi Süße To-do-Liste“ suchen\nAuch bei Google Play\n\n#SüßeTodoListe #Gewohnheiten #Aufgabenliste #MochiSüßeTodoListe\n\nIm App Store laden: https://apps.apple.com/de/app/id6785004775?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "mochi/fr",
+    "locale": "fr",
+    "app": "mochi",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/zfsbz8.mp4",
+    "hook": "Ta liste de tâches, mais en mignon",
+    "name": "Mochi: Liste toute mignonne",
+    "title": "Ta liste de tâches, mais en mignon | Liste de tâches kawaii | Mochi Liste toute mignonne",
+    "tags": [
+     "#ListeDeTâchesKawaii",
+     "#Checklist",
+     "#Rappels",
+     "#MochiListeTouteMignonne"
+    ],
+    "caption": "Ta liste de tâches, mais en mignon\nTouche pour cocher\nListe de tâches kawaii\nMochi: Liste toute mignonne\nRecherchez « Mochi Liste toute mignonne » sur l'App Store\nAussi sur Google Play\n\n#ListeDeTâchesKawaii #Checklist #Rappels #MochiListeTouteMignonne",
+    "button": "Télécharger sur l'App Store",
+    "variant": "a",
+    "alt": "Mochi: Liste toute mignonne — Ta liste de tâches, mais en mignon — Touche pour cocher — Liste de tâches kawaii",
+    "store": "https://apps.apple.com/fr/app/id6785004775?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi",
+    "review": {
+     "label": "Vous utilisez déjà cette app ? Notez-la ou rédigez un avis sur l’App Store",
+     "url": "https://apps.apple.com/app/id6785004775?action=write-review"
+    },
+    "keywords": [
+     "todo",
+     "ménage",
+     "agenda",
+     "notes",
+     "habitudes",
+     "routine"
+    ],
+    "keyline": "Liste de tâches kawaii",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "063389274bf4ea40",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "Ta liste de tâches, mais en mignon\nTouche pour cocher\nListe de tâches kawaii\nMochi: Liste toute mignonne\nRecherchez « Mochi Liste toute mignonne » sur l'App Store\nAussi sur Google Play\n\n#ListeDeTâchesKawaii #Checklist #Rappels #MochiListeTouteMignonne\n\nTélécharger sur l'App Store: https://apps.apple.com/fr/app/id6785004775?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi"
+    }
+   },
+   {
+    "kind": "clip",
     "key": "countdaysnow/en",
     "locale": "en",
     "app": "countdaysnow",
@@ -60193,6 +63525,189 @@
    },
    {
     "kind": "clip",
+    "key": "battai/en",
+    "locale": "en",
+    "app": "battai",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/2yedq5.mp4",
+    "hook": "When will battery health hit 80%?",
+    "name": "BattAI: Battery Health & Life",
+    "title": "When will battery health hit 80%? | Charge Alerts, Heat & Widget | BattAI Battery Health",
+    "tags": [
+     "#BatteryHealthScore",
+     "#ChargeAlerts",
+     "#CycleCount",
+     "#BattAIBatteryHealth"
+    ],
+    "caption": "When will battery health hit 80%?\nA health score, and what shapes it\nCharge Alerts, Heat & Widget\nBattAI: Battery Health & Life\nSearch “BattAI Battery Health” on the App Store\nAlso on Google Play\n\n#BatteryHealthScore #ChargeAlerts #CycleCount #BattAIBatteryHealth",
+    "button": "Get it on the App Store",
+    "variant": "a",
+    "alt": "BattAI: Battery Health & Life — When will battery health hit 80%? — A health score, and what shapes it — Charge Alerts, Heat & Widget",
+    "store": "https://apps.apple.com/us/app/id6802423998?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.BattAI&referrer=utm_source%3Dsocial%26utm_campaign%3Dbattai",
+    "review": {
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6802423998?action=write-review"
+    },
+    "keywords": [
+     "capacity",
+     "cycle",
+     "count",
+     "check",
+     "test",
+     "full"
+    ],
+    "keyline": "Charge Alerts, Heat & Widget",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "922844988a1008d7",
+     "real_recording": true,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "When will battery health hit 80%?\nA health score, and what shapes it\nCharge Alerts, Heat & Widget\nBattAI: Battery Health & Life\nSearch “BattAI Battery Health” on the App Store\nAlso on Google Play\n\n#BatteryHealthScore #ChargeAlerts #CycleCount #BattAIBatteryHealth\n\nGet it on the App Store: https://apps.apple.com/us/app/id6802423998?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI&referrer=utm_source%3Dsocial%26utm_campaign%3Dbattai"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "battai/zh-Hant",
+    "locale": "zh-Hant",
+    "app": "battai",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/n2ybth.mp4",
+    "hook": "送修、二手轉賣，都用得上的電池報告",
+    "name": "BattAI: 電池健康分數",
+    "title": "送修、二手轉賣，都用得上的電池報告 | 電池檢測・充電保養・充飽提醒 | BattAI 電池健康",
+    "tags": [
+     "#電池健康度檢測分數",
+     "#最大容量",
+     "#健康度",
+     "#充電速度",
+     "#BattAI電池健康"
+    ],
+    "caption": "送修、二手轉賣，都用得上的電池報告\n電池健康分數，連評分依據都看得到\n電池檢測・充電保養・充飽提醒\nBattAI: 電池健康分數\n在 App Store 搜尋「電池檢測」\nAndroid 版在 Google Play\n\n#電池健康度檢測分數 #最大容量 #健康度 #充電速度 #BattAI電池健康",
+    "button": "在 App Store 下載",
+    "variant": "c",
+    "alt": "BattAI: 電池健康分數 — 送修、二手轉賣，都用得上的電池報告 — 電池健康分數，連評分依據都看得到 — 電池檢測・充電保養・充飽提醒",
+    "store": "https://apps.apple.com/tw/app/id6802423998?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.BattAI&referrer=utm_source%3Dsocial%26utm_campaign%3Dbattai",
+    "review": {
+     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
+     "url": "https://apps.apple.com/app/id6802423998?action=write-review"
+    },
+    "keywords": [
+     "最大容量",
+     "健康度",
+     "充電速度",
+     "耗電",
+     "快充",
+     "滿電"
+    ],
+    "keyline": "電池檢測・充電保養・充飽提醒",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "922844988a1008d7",
+     "real_recording": true,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "送修、二手轉賣，都用得上的電池報告\n電池健康分數，連評分依據都看得到\n電池檢測・充電保養・充飽提醒\nBattAI: 電池健康分數\n在 App Store 搜尋「電池檢測」\nAndroid 版在 Google Play\n\n#電池健康度檢測分數 #最大容量 #健康度 #充電速度 #BattAI電池健康\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6802423998?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI&referrer=utm_source%3Dsocial%26utm_campaign%3Dbattai"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "battai/ja",
+    "locale": "ja",
+    "app": "battai",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/tmc5xw.mp4",
+    "hook": "状態スコアと、その要因まで",
+    "name": "BattAI: バッテリー状態スコア",
+    "title": "状態スコアと、その要因まで | バッテリー劣化チェック・充電通知 | BattAI バッテリー",
+    "tags": [
+     "#バッテリー劣化状態スコア",
+     "#最大容量",
+     "#サイクル",
+     "#回数",
+     "#BattAIバッテリー"
+    ],
+    "caption": "状態スコアと、その要因まで\n最大容量の、推移\nバッテリー劣化チェック・充電通知\nBattAI: バッテリー状態スコア\nApp Storeで「バッテリー 劣化」を検索\nAndroidはGoogle Playで\n\n#バッテリー劣化状態スコア #最大容量 #サイクル #回数 #BattAIバッテリー",
+    "button": "App Storeで入手",
+    "variant": "b",
+    "alt": "BattAI: バッテリー状態スコア — 状態スコアと、その要因まで — 最大容量の、推移 — バッテリー劣化チェック・充電通知",
+    "store": "https://apps.apple.com/jp/app/id6802423998?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.BattAI&referrer=utm_source%3Dsocial%26utm_campaign%3Dbattai",
+    "review": {
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6802423998?action=write-review"
+    },
+    "keywords": [
+     "最大容量",
+     "サイクル",
+     "回数",
+     "診断",
+     "交換時期",
+     "消耗"
+    ],
+    "keyline": "バッテリー劣化チェック・充電通知",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "922844988a1008d7",
+     "real_recording": true,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "状態スコアと、その要因まで\n最大容量の、推移\nバッテリー劣化チェック・充電通知\nBattAI: バッテリー状態スコア\nApp Storeで「バッテリー 劣化」を検索\nAndroidはGoogle Playで\n\n#バッテリー劣化状態スコア #最大容量 #サイクル #回数 #BattAIバッテリー\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6802423998?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI&referrer=utm_source%3Dsocial%26utm_campaign%3Dbattai"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "battai/ko",
+    "locale": "ko",
+    "app": "battai",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/3o00cw.mp4",
+    "hook": "배터리 상태 점수와 점수를 만드는 요소",
+    "name": "BattAI: 배터리 상태 점수",
+    "title": "배터리 상태 점수와 점수를 만드는 요소 | 배터리 성능·수명 확인·완충 알림 | BattAI 배터리",
+    "tags": [
+     "#배터리성능상태점수",
+     "#효율",
+     "#점검",
+     "#사이클",
+     "#BattAI배터리"
+    ],
+    "caption": "배터리 상태 점수와 점수를 만드는 요소\n성능 최대치의 추세\n배터리 성능·수명 확인·완충 알림\nBattAI: 배터리 상태 점수\nApp Store에서 '배터리 용량' 검색\nAndroid는 Google Play에서\n\n#배터리성능상태점수 #효율 #점검 #사이클 #BattAI배터리",
+    "button": "App Store에서 받기",
+    "variant": "b",
+    "alt": "BattAI: 배터리 상태 점수 — 배터리 상태 점수와 점수를 만드는 요소 — 성능 최대치의 추세 — 배터리 성능·수명 확인·완충 알림",
+    "store": "https://apps.apple.com/kr/app/id6802423998?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.BattAI&referrer=utm_source%3Dsocial%26utm_campaign%3Dbattai",
+    "review": {
+     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
+     "url": "https://apps.apple.com/app/id6802423998?action=write-review"
+    },
+    "keywords": [
+     "효율",
+     "점검",
+     "사이클",
+     "횟수",
+     "용량",
+     "최대"
+    ],
+    "keyline": "배터리 성능·수명 확인·완충 알림",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "922844988a1008d7",
+     "real_recording": true,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "배터리 상태 점수와 점수를 만드는 요소\n성능 최대치의 추세\n배터리 성능·수명 확인·완충 알림\nBattAI: 배터리 상태 점수\nApp Store에서 '배터리 용량' 검색\nAndroid는 Google Play에서\n\n#배터리성능상태점수 #효율 #점검 #사이클 #BattAI배터리\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6802423998?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI&referrer=utm_source%3Dsocial%26utm_campaign%3Dbattai"
+    }
+   },
+   {
+    "kind": "clip",
     "key": "caldaily/en",
     "locale": "en",
     "app": "caldaily",
@@ -61781,7 +65296,7 @@
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "f88a32e9a9deb640",
+     "board": "7ad14c39c559a0db",
      "real_recording": false,
      "rules": "2026-10-18"
     },
@@ -61827,7 +65342,7 @@
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "f88a32e9a9deb640",
+     "board": "7ad14c39c559a0db",
      "real_recording": false,
      "rules": "2026-10-18"
     },
@@ -62831,7 +66346,7 @@
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "3770a5c2653a56c0",
+     "board": "53bd29c97a625885",
      "real_recording": false,
      "rules": "2026-10-18"
     },
@@ -62877,7 +66392,7 @@
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "3770a5c2653a56c0",
+     "board": "53bd29c97a625885",
      "real_recording": false,
      "rules": "2026-10-18"
     },
@@ -66308,6 +69823,324 @@
     },
     "tiktok": {
      "caption": "시험, 여행, 콘서트 며칠 남았지?\n중요한 날을 위젯으로\nD-day 위젯·기념일·날짜계산\nCountDaysNow: Event Counter\nApp Store에서 'CountDaysNow' 검색\nAndroid는 Google Play에서\n\n#기념일 #생일 #커플 #수능 #CountDaysNow\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "mochi_b/en",
+    "locale": "en",
+    "app": "mochi_b",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/c5k6l8.mp4",
+    "hook": "Make it yours with themes",
+    "name": "Mochi: Cute Checklist",
+    "title": "Make it yours with themes | Cute Checklist | Mochi Cute Checklist",
+    "tags": [
+     "#CozyToDoListWidget",
+     "#Chores",
+     "#Cute",
+     "#MochiCuteChecklist"
+    ],
+    "caption": "Make it yours with themes\nWork, errands, groceries in one place\nMochi: Cute Checklist\nSearch “cute checklist” on the App Store\nAlso on Google Play\n\n#CozyToDoListWidget #Chores #Cute #MochiCuteChecklist",
+    "button": "Get it on the App Store",
+    "variant": "c",
+    "alt": "Mochi: Cute Checklist — Make it yours with themes — Work, errands, groceries in one place",
+    "store": "https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi",
+    "review": {
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6785004775?action=write-review"
+    },
+    "keywords": [
+     "planner",
+     "todo",
+     "aesthetic",
+     "daily",
+     "reminder",
+     "routine"
+    ],
+    "keyline": "Cute Checklist",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "de911648f97ae007",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "Make it yours with themes\nWork, errands, groceries in one place\nMochi: Cute Checklist\nSearch “cute checklist” on the App Store\nAlso on Google Play\n\n#CozyToDoListWidget #Chores #Cute #MochiCuteChecklist\n\nGet it on the App Store: https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "mochi_b/zh-Hant",
+    "locale": "zh-Hant",
+    "app": "mochi_b",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/dd1unw.mp4",
+    "hook": "讀書、工作、購物，一個 App 整理",
+    "name": "Mochi: 可愛待辦清單",
+    "title": "讀書、工作、購物，一個 App 整理 | 可愛待辦清單 | Mochi 可愛待辦清單",
+    "tags": [
+     "#提醒",
+     "#備忘錄",
+     "#習慣",
+     "#計畫",
+     "#Mochi可愛待辦清單"
+    ],
+    "caption": "讀書、工作、購物，一個 App 整理\n輕點打勾，超有成就感\nMochi: 可愛待辦清單\n在 App Store 搜尋「Mochi 可愛待辦清單」\nAndroid 版在 Google Play\n\n#提醒 #備忘錄 #習慣 #計畫 #Mochi可愛待辦清單",
+    "button": "在 App Store 下載",
+    "variant": "b",
+    "alt": "Mochi: 可愛待辦清單 — 讀書、工作、購物，一個 App 整理 — 輕點打勾，超有成就感",
+    "store": "https://apps.apple.com/tw/app/id6785004775?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi",
+    "review": {
+     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
+     "url": "https://apps.apple.com/app/id6785004775?action=write-review"
+    },
+    "keywords": [
+     "代辦事項",
+     "任務清單",
+     "日程",
+     "提醒",
+     "備忘錄",
+     "習慣"
+    ],
+    "keyline": "可愛待辦清單",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "de911648f97ae007",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "讀書、工作、購物，一個 App 整理\n輕點打勾，超有成就感\nMochi: 可愛待辦清單\n在 App Store 搜尋「Mochi 可愛待辦清單」\nAndroid 版在 Google Play\n\n#提醒 #備忘錄 #習慣 #計畫 #Mochi可愛待辦清單\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6785004775?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "mochi_b/ja",
+    "locale": "ja",
+    "app": "mochi_b",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/dca0hg.mp4",
+    "hook": "やることが多くて、つい忘れる？",
+    "name": "Mochi: かわいいToDo",
+    "title": "やることが多くて、つい忘れる？ | ToDoリスト・やることリスト・チェックリスト | Mochi かわいいToDo",
+    "tags": [
+     "#習慣",
+     "#ルーティン",
+     "#スケジュール",
+     "#買い物",
+     "#MochiかわいいToDo"
+    ],
+    "caption": "やることが多くて、つい忘れる？\n勉強も仕事も買い物も、ぜんぶ管理\nToDoリスト・やることリスト・チェックリスト\nMochi: かわいいToDo\nApp Storeで「Mochi かわいいToDo」を検索\nAndroidはGoogle Playで\n\n#習慣 #ルーティン #スケジュール #買い物 #MochiかわいいToDo",
+    "button": "App Storeで入手",
+    "variant": "a",
+    "alt": "Mochi: かわいいToDo — やることが多くて、つい忘れる？ — 勉強も仕事も買い物も、ぜんぶ管理 — ToDoリスト・やることリスト・チェックリスト",
+    "store": "https://apps.apple.com/jp/app/id6785004775?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi",
+    "review": {
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6785004775?action=write-review"
+    },
+    "keywords": [
+     "リマインダー",
+     "予定",
+     "メモ",
+     "習慣",
+     "ルーティン",
+     "スケジュール"
+    ],
+    "keyline": "ToDoリスト・やることリスト・チェックリスト",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "de911648f97ae007",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "やることが多くて、つい忘れる？\n勉強も仕事も買い物も、ぜんぶ管理\nToDoリスト・やることリスト・チェックリスト\nMochi: かわいいToDo\nApp Storeで「Mochi かわいいToDo」を検索\nAndroidはGoogle Playで\n\n#習慣 #ルーティン #スケジュール #買い物 #MochiかわいいToDo\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6785004775?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "mochi_b/ko",
+    "locale": "ko",
+    "app": "mochi_b",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/uin2zo.mp4",
+    "hook": "할 일이 많아서 자꾸 깜빡해요?",
+    "name": "Mochi: 귀여운 할 일 목록 & 체크리스트",
+    "title": "할 일이 많아서 자꾸 깜빡해요? | 귀여운 투두리스트 & 체크리스트 | Mochi 귀여운 할 일",
+    "tags": [
+     "#투두",
+     "#알림",
+     "#메모",
+     "#습관",
+     "#Mochi귀여운할일"
+    ],
+    "caption": "할 일이 많아서 자꾸 깜빡해요?\n공부, 업무, 장보기 한 곳에서\n귀여운 투두리스트 & 체크리스트\nMochi: 귀여운 할 일 목록 & 체크리스트\nApp Store에서 'Mochi 귀여운 할 일' 검색\nAndroid는 Google Play에서\n\n#투두 #알림 #메모 #습관 #Mochi귀여운할일",
+    "button": "App Store에서 받기",
+    "variant": "a",
+    "alt": "Mochi: 귀여운 할 일 목록 & 체크리스트 — 할 일이 많아서 자꾸 깜빡해요? — 공부, 업무, 장보기 한 곳에서 — 귀여운 투두리스트 & 체크리스트",
+    "store": "https://apps.apple.com/kr/app/id6785004775?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi",
+    "review": {
+     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
+     "url": "https://apps.apple.com/app/id6785004775?action=write-review"
+    },
+    "keywords": [
+     "할일",
+     "할일목록",
+     "할일관리",
+     "투두",
+     "알림",
+     "메모"
+    ],
+    "keyline": "귀여운 투두리스트 & 체크리스트",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "de911648f97ae007",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "할 일이 많아서 자꾸 깜빡해요?\n공부, 업무, 장보기 한 곳에서\n귀여운 투두리스트 & 체크리스트\nMochi: 귀여운 할 일 목록 & 체크리스트\nApp Store에서 'Mochi 귀여운 할 일' 검색\nAndroid는 Google Play에서\n\n#투두 #알림 #메모 #습관 #Mochi귀여운할일\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6785004775?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "mochi_b/pt-BR",
+    "locale": "pt-BR",
+    "app": "mochi_b",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/o4ayua.mp4",
+    "hook": "Deixe com a sua cara com temas",
+    "name": "Mochi: Lista fofa",
+    "title": "Deixe com a sua cara com temas | Lista fofa | Mochi Lista fofa",
+    "tags": [
+     "#ListaDeTarefas",
+     "#Fofa",
+     "#Lembrete",
+     "#MochiListaFofa"
+    ],
+    "caption": "Deixe com a sua cara com temas\nEstudos, trabalho, compras em um só lugar\nMochi: Lista fofa\nPesquise “lista de tarefas” na App Store\nTambém no Google Play\n\n#ListaDeTarefas #Fofa #Lembrete #MochiListaFofa",
+    "button": "Baixar na App Store",
+    "variant": "c",
+    "alt": "Mochi: Lista fofa — Deixe com a sua cara com temas — Estudos, trabalho, compras em um só lugar",
+    "store": "https://apps.apple.com/br/app/id6785004775?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi",
+    "review": {
+     "label": "Já usa este app? Avalie ou escreva uma resenha na App Store",
+     "url": "https://apps.apple.com/app/id6785004775?action=write-review"
+    },
+    "keywords": [
+     "lembrete",
+     "afazeres",
+     "planner",
+     "notas",
+     "hábitos",
+     "rotina"
+    ],
+    "keyline": "Lista fofa",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "de911648f97ae007",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "Deixe com a sua cara com temas\nEstudos, trabalho, compras em um só lugar\nMochi: Lista fofa\nPesquise “lista de tarefas” na App Store\nTambém no Google Play\n\n#ListaDeTarefas #Fofa #Lembrete #MochiListaFofa\n\nBaixar na App Store: https://apps.apple.com/br/app/id6785004775?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "mochi_b/de",
+    "locale": "de",
+    "app": "mochi_b",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/jpk9zc.mp4",
+    "hook": "Studium, Arbeit, Einkauf an einem Ort",
+    "name": "Mochi: Süße To-do-Liste",
+    "title": "Studium, Arbeit, Einkauf an einem Ort | Aufgabenliste & Checkliste | Mochi Süße To-do-Liste",
+    "tags": [
+     "#Gewohnheiten",
+     "#TodoListe",
+     "#Aufgaben",
+     "#MochiSüßeTodoListe"
+    ],
+    "caption": "Studium, Arbeit, Einkauf an einem Ort\nAbhaken bringt Klarheit\nAufgabenliste & Checkliste\nMochi: Süße To-do-Liste\nIm App Store nach „Mochi Süße To-do-Liste“ suchen\nAuch bei Google Play\n\n#Gewohnheiten #TodoListe #Aufgaben #MochiSüßeTodoListe",
+    "button": "Im App Store laden",
+    "variant": "b",
+    "alt": "Mochi: Süße To-do-Liste — Studium, Arbeit, Einkauf an einem Ort — Abhaken bringt Klarheit — Aufgabenliste & Checkliste",
+    "store": "https://apps.apple.com/de/app/id6785004775?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi",
+    "review": {
+     "label": "Du nutzt diese App schon? Bewerte sie oder schreib eine Rezension im App Store",
+     "url": "https://apps.apple.com/app/id6785004775?action=write-review"
+    },
+    "keywords": [
+     "todo",
+     "aufgaben",
+     "erinnerung",
+     "planer",
+     "notizen",
+     "gewohnheiten"
+    ],
+    "keyline": "Aufgabenliste & Checkliste",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "de911648f97ae007",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "Studium, Arbeit, Einkauf an einem Ort\nAbhaken bringt Klarheit\nAufgabenliste & Checkliste\nMochi: Süße To-do-Liste\nIm App Store nach „Mochi Süße To-do-Liste“ suchen\nAuch bei Google Play\n\n#Gewohnheiten #TodoListe #Aufgaben #MochiSüßeTodoListe\n\nIm App Store laden: https://apps.apple.com/de/app/id6785004775?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "mochi_b/fr",
+    "locale": "fr",
+    "app": "mochi_b",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/sfdnqe.mp4",
+    "hook": "Études, travail, courses au même endroit",
+    "name": "Mochi: Liste toute mignonne",
+    "title": "Études, travail, courses au même endroit | Liste de tâches kawaii | Mochi Liste toute mignonne",
+    "tags": [
+     "#Liste",
+     "#Tâches",
+     "#Kawaii",
+     "#MochiListeTouteMignonne"
+    ],
+    "caption": "Études, travail, courses au même endroit\nCocher, ça rend les idées claires\nListe de tâches kawaii\nMochi: Liste toute mignonne\nRecherchez « Mochi Liste toute mignonne » sur l'App Store\nAussi sur Google Play\n\n#Liste #Tâches #Kawaii #MochiListeTouteMignonne",
+    "button": "Télécharger sur l'App Store",
+    "variant": "b",
+    "alt": "Mochi: Liste toute mignonne — Études, travail, courses au même endroit — Cocher, ça rend les idées claires — Liste de tâches kawaii",
+    "store": "https://apps.apple.com/fr/app/id6785004775?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi",
+    "review": {
+     "label": "Vous utilisez déjà cette app ? Notez-la ou rédigez un avis sur l’App Store",
+     "url": "https://apps.apple.com/app/id6785004775?action=write-review"
+    },
+    "keywords": [
+     "todo",
+     "ménage",
+     "agenda",
+     "notes",
+     "habitudes",
+     "routine"
+    ],
+    "keyline": "Liste de tâches kawaii",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "de911648f97ae007",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "Études, travail, courses au même endroit\nCocher, ça rend les idées claires\nListe de tâches kawaii\nMochi: Liste toute mignonne\nRecherchez « Mochi Liste toute mignonne » sur l'App Store\nAussi sur Google Play\n\n#Liste #Tâches #Kawaii #MochiListeTouteMignonne\n\nTélécharger sur l'App Store: https://apps.apple.com/fr/app/id6785004775?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi"
     }
    },
    {
@@ -71252,6 +75085,98 @@
    },
    {
     "kind": "clip",
+    "key": "battai_t10/ko",
+    "locale": "ko",
+    "app": "battai_t10",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/64y1q6.mp4",
+    "hook": "배터리 성능 최대치 언제 80% 깨질까?",
+    "name": "BattAI: 배터리 상태 점수",
+    "title": "배터리 성능 최대치 언제 80% 깨질까? | 배터리 성능·수명 확인·완충 알림 | BattAI 배터리",
+    "tags": [
+     "#횟수",
+     "#용량",
+     "#최대",
+     "#교체",
+     "#BattAI배터리"
+    ],
+    "caption": "배터리 성능 최대치 언제 80% 깨질까?\n배터리 상태 점수와 점수를 만드는 요소\n배터리 성능·수명 확인·완충 알림\nBattAI: 배터리 상태 점수\nApp Store에서 'BattAI 배터리' 검색\nAndroid는 Google Play에서\n\n#횟수 #용량 #최대 #교체 #BattAI배터리",
+    "button": "App Store에서 받기",
+    "variant": "a",
+    "alt": "BattAI: 배터리 상태 점수 — 배터리 성능 최대치 언제 80% 깨질까? — 배터리 상태 점수와 점수를 만드는 요소 — 배터리 성능·수명 확인·완충 알림",
+    "store": "https://apps.apple.com/kr/app/id6802423998?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.BattAI&referrer=utm_source%3Dsocial%26utm_campaign%3Dbattai",
+    "review": {
+     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
+     "url": "https://apps.apple.com/app/id6802423998?action=write-review"
+    },
+    "keywords": [
+     "효율",
+     "점검",
+     "사이클",
+     "횟수",
+     "용량",
+     "최대"
+    ],
+    "keyline": "배터리 성능·수명 확인·완충 알림",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "1cde008b37075975",
+     "real_recording": true,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "배터리 성능 최대치 언제 80% 깨질까?\n배터리 상태 점수와 점수를 만드는 요소\n배터리 성능·수명 확인·완충 알림\nBattAI: 배터리 상태 점수\nApp Store에서 'BattAI 배터리' 검색\nAndroid는 Google Play에서\n\n#횟수 #용량 #최대 #교체 #BattAI배터리\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6802423998?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI&referrer=utm_source%3Dsocial%26utm_campaign%3Dbattai"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "battai_t10b/zh-Hant",
+    "locale": "zh-Hant",
+    "app": "battai_t10b",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/ym7gad.mp4",
+    "hook": "電池壽命，哪天掉到 80%？",
+    "name": "BattAI: 電池健康分數",
+    "title": "電池壽命，哪天掉到 80%？ | 電池檢測・充電保養・充飽提醒 | BattAI 電池健康",
+    "tags": [
+     "#耗電",
+     "#快充",
+     "#滿電",
+     "#過熱",
+     "#BattAI電池健康"
+    ],
+    "caption": "電池壽命，哪天掉到 80%？\n電池健康分數，連評分依據都看得到\n電池檢測・充電保養・充飽提醒\nBattAI: 電池健康分數\n在 App Store 搜尋「BattAI 電池健康」\nAndroid 版在 Google Play\n\n#耗電 #快充 #滿電 #過熱 #BattAI電池健康",
+    "button": "在 App Store 下載",
+    "variant": "a",
+    "alt": "BattAI: 電池健康分數 — 電池壽命，哪天掉到 80%？ — 電池健康分數，連評分依據都看得到 — 電池檢測・充電保養・充飽提醒",
+    "store": "https://apps.apple.com/tw/app/id6802423998?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.BattAI&referrer=utm_source%3Dsocial%26utm_campaign%3Dbattai",
+    "review": {
+     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
+     "url": "https://apps.apple.com/app/id6802423998?action=write-review"
+    },
+    "keywords": [
+     "最大容量",
+     "健康度",
+     "充電速度",
+     "耗電",
+     "快充",
+     "滿電"
+    ],
+    "keyline": "電池檢測・充電保養・充飽提醒",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "1a2d1d71788b6654",
+     "real_recording": true,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "電池壽命，哪天掉到 80%？\n電池健康分數，連評分依據都看得到\n電池檢測・充電保養・充飽提醒\nBattAI: 電池健康分數\n在 App Store 搜尋「BattAI 電池健康」\nAndroid 版在 Google Play\n\n#耗電 #快充 #滿電 #過熱 #BattAI電池健康\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6802423998?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI&referrer=utm_source%3Dsocial%26utm_campaign%3Dbattai"
+    }
+   },
+   {
+    "kind": "clip",
     "key": "claudeusagemini_t10/ja",
     "locale": "ja",
     "app": "claudeusagemini_t10",
@@ -73532,23 +77457,24 @@
     "en": {
      "hour": 9,
      "avg_views": 65.6,
-     "posts": 46,
+     "posts": 49,
      "hours": {
+      "0": 15.0,
       "5": 0.0,
       "9": 65.6,
-      "15": 36.2,
-      "18": 25.9,
+      "15": 31.9,
+      "18": 26.3,
       "19": 0.0,
-      "22": 15.2
+      "22": 16.2
      }
     },
     "ja": {
      "hour": 18,
      "avg_views": 67.0,
-     "posts": 23,
+     "posts": 25,
      "hours": {
       "1": 46.9,
-      "4": 29.5,
+      "4": 33.0,
       "5": 6.2,
       "7": 0.0,
       "18": 67.0
@@ -73557,38 +77483,39 @@
     "ko": {
      "hour": 1,
      "avg_views": 97.7,
-     "posts": 19,
+     "posts": 21,
      "hours": {
       "1": 97.7,
       "5": 0.0,
-      "12": 54.3
+      "12": 54.3,
+      "18": 24.0
      }
     },
     "zh-Hant": {
      "hour": 12,
-     "avg_views": 35.8,
-     "posts": 45,
+     "avg_views": 34.2,
+     "posts": 49,
      "hours": {
-      "1": 13.0,
-      "5": 0.9,
+      "1": 9.8,
+      "5": 0.8,
       "7": 0.1,
       "9": 0.3,
-      "12": 35.8,
+      "12": 34.2,
       "14": 0.0
      }
     }
    },
    "threads": {
     "en": {
-     "hour": 8,
-     "avg_views": 12.7,
-     "posts": 18,
+     "hour": 15,
+     "avg_views": 13.7,
+     "posts": 19,
      "hours": {
       "1": 9.3,
       "2": 6.5,
       "8": 12.7,
       "13": 11.0,
-      "15": 5.5,
+      "15": 13.7,
       "16": 8.0
      }
     },
@@ -73606,6 +77533,6 @@
     }
    }
   },
-  "updated_at": "2026-11-20T06:59:24Z"
+  "updated_at": "2026-11-21T06:55:05Z"
  }
 }

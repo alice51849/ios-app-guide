@@ -1,7 +1,7 @@
 {
  "schema": "lumi.social-feed/v1",
  "date": "2026-11-21",
- "generated_at": "2026-11-21T08:50:38Z",
+ "generated_at": "2026-11-21T16:00:10Z",
  "items": {
   "bluesky": [
    {
@@ -223,47 +223,68 @@
    },
    {
     "kind": "clip",
-    "key": "lumiletters/ko",
-    "locale": "ko",
-    "app": "lumiletters",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/391phh.mp4",
-    "hook": "스마트폰 시간을 ABC 시간으로",
-    "name": "Lumi 레터 Lite: 어린이 영어 ABC",
-    "title": "스마트폰 시간을 ABC 시간으로 | 엄마표 영어 ABC·파닉스 놀이 | Lumi 레터 Lite",
+    "key": "gmoney/ja",
+    "locale": "ja",
+    "app": "gmoney",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/lk7ile.mp4",
+    "hook": "お金、どこに、消えた？",
+    "name": "G+Money：家計簿・予算・為替",
+    "title": "お金、どこに、消えた？ | 支出管理・お金管理・出費記録 | G+Money 家計簿",
     "tags": [
-     "#알파벳쓰기",
-     "#소문자",
-     "#대문자",
-     "#취학전",
-     "#Lumi레터Lite"
+     "#家計簿予算為替",
+     "#お小遣い帳",
+     "#通貨換算",
+     "#貯金",
+     "#GMoney家計簿"
     ],
-    "caption": "스마트폰 시간을 ABC 시간으로\n획순대로 따라쓰기\n엄마표 영어 ABC·파닉스 놀이\nLumi 레터 Lite: 어린이 영어 ABC\nApp Store에서 'Lumi 레터 Lite' 검색\nAndroid는 Google Play에서\n\n#알파벳쓰기 #소문자 #Lumi레터Lite",
-    "button": "App Store에서 받기",
+    "caption": "お金、どこに、消えた？\nカテゴリ別に、使い道が見える\n支出管理・お金管理・出費記録\nG+Money：家計簿・予算・為替\nApp Storeで「G+Money 家計簿」を検索\nAndroidはGoogle Playで\n\n#家計簿予算為替 #お小遣い帳 #GMoney家計簿",
+    "button": "App Storeで入手",
     "variant": "a",
-    "alt": "Lumi 레터 Lite: 어린이 영어 ABC — 스마트폰 시간을 ABC 시간으로 — 획순대로 따라쓰기 — 엄마표 영어 ABC·파닉스 놀이",
-    "store": "https://apps.apple.com/kr/app/id6778748533?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiLettersLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiletters",
+    "alt": "G+Money：家計簿・予算・為替 — お金、どこに、消えた？ — カテゴリ別に、使い道が見える — 支出管理・お金管理・出費記録",
+    "store": "https://apps.apple.com/jp/app/id6755782939?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
     "review": {
-     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
-     "url": "https://apps.apple.com/app/id6778748533?action=write-review"
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
     },
     "keywords": [
-     "소문자",
-     "대문자",
-     "취학전",
-     "영어조기교육",
-     "유아영어",
-     "영어발음"
+     "お小遣い帳",
+     "通貨換算",
+     "貯金",
+     "支出記録",
+     "レート計算",
+     "家計管理"
     ],
-    "keyline": "엄마표 영어 ABC·파닉스 놀이",
+    "keyline": "支出管理・お金管理・出費記録",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "4ec0196ef01258b0",
+     "board": "987a384c8c1d4d89",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "card/thanksgiving2026/2026-11-21",
+    "locale": "en",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/countdown-cards/card-20261121.jpg",
+    "caption": "Thanksgiving 5 days to go\nBook the trip home early\n\nSearch “CountDaysNow” on App Store or Google Play\n\n#EventCounter #CountdownPlan #WorkBackwards",
+    "title": "Thanksgiving 5 days to go",
+    "alt": "CountDaysNow — Thanksgiving 5 days to go — Book the trip home early — Search “CountDaysNow” on App Store or Google Play — Countdown Plan: Work Backwards",
+    "name": "CountDaysNow",
+    "hook": "Thanksgiving 5 days to go",
+    "tags": [
+     "#EventCounter",
+     "#CountdownPlan",
+     "#WorkBackwards",
+     "#LockScreen",
+     "#CountDaysNow"
+    ],
+    "button": "Get it on the App Store",
+    "store": "https://apps.apple.com/us/app/id6807079789?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow"
    },
    {
     "kind": "card",
@@ -1547,47 +1568,68 @@
    },
    {
     "kind": "clip",
-    "key": "lumiletters/ko",
-    "locale": "ko",
-    "app": "lumiletters",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/391phh.mp4",
-    "hook": "스마트폰 시간을 ABC 시간으로",
-    "name": "Lumi 레터 Lite: 어린이 영어 ABC",
-    "title": "스마트폰 시간을 ABC 시간으로 | 엄마표 영어 ABC·파닉스 놀이 | Lumi 레터 Lite",
+    "key": "gmoney/ja",
+    "locale": "ja",
+    "app": "gmoney",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/lk7ile.mp4",
+    "hook": "お金、どこに、消えた？",
+    "name": "G+Money：家計簿・予算・為替",
+    "title": "お金、どこに、消えた？ | 支出管理・お金管理・出費記録 | G+Money 家計簿",
     "tags": [
-     "#알파벳쓰기",
-     "#소문자",
-     "#대문자",
-     "#취학전",
-     "#Lumi레터Lite"
+     "#家計簿予算為替",
+     "#お小遣い帳",
+     "#通貨換算",
+     "#貯金",
+     "#GMoney家計簿"
     ],
-    "caption": "스마트폰 시간을 ABC 시간으로\n획순대로 따라쓰기\n엄마표 영어 ABC·파닉스 놀이\nLumi 레터 Lite: 어린이 영어 ABC\nApp Store에서 'Lumi 레터 Lite' 검색\nAndroid는 Google Play에서\n\n#알파벳쓰기 #소문자 #대문자 #취학전 #Lumi레터Lite",
-    "button": "App Store에서 받기",
+    "caption": "お金、どこに、消えた？\nカテゴリ別に、使い道が見える\n支出管理・お金管理・出費記録\nG+Money：家計簿・予算・為替\nApp Storeで「G+Money 家計簿」を検索\nAndroidはGoogle Playで\n\n#家計簿予算為替 #お小遣い帳 #通貨換算 #貯金 #GMoney家計簿",
+    "button": "App Storeで入手",
     "variant": "a",
-    "alt": "Lumi 레터 Lite: 어린이 영어 ABC — 스마트폰 시간을 ABC 시간으로 — 획순대로 따라쓰기 — 엄마표 영어 ABC·파닉스 놀이",
-    "store": "https://apps.apple.com/kr/app/id6778748533?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiLettersLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiletters",
+    "alt": "G+Money：家計簿・予算・為替 — お金、どこに、消えた？ — カテゴリ別に、使い道が見える — 支出管理・お金管理・出費記録",
+    "store": "https://apps.apple.com/jp/app/id6755782939?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
     "review": {
-     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
-     "url": "https://apps.apple.com/app/id6778748533?action=write-review"
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
     },
     "keywords": [
-     "소문자",
-     "대문자",
-     "취학전",
-     "영어조기교육",
-     "유아영어",
-     "영어발음"
+     "お小遣い帳",
+     "通貨換算",
+     "貯金",
+     "支出記録",
+     "レート計算",
+     "家計管理"
     ],
-    "keyline": "엄마표 영어 ABC·파닉스 놀이",
+    "keyline": "支出管理・お金管理・出費記録",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "4ec0196ef01258b0",
+     "board": "987a384c8c1d4d89",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "card/thanksgiving2026/2026-11-21",
+    "locale": "en",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/countdown-cards/card-20261121.jpg",
+    "caption": "Thanksgiving 5 days to go\nBook the trip home early\n\nSearch “CountDaysNow” on App Store or Google Play\n\n#EventCounter #CountdownPlan #WorkBackwards #LockScreen #CountDaysNow",
+    "title": "Thanksgiving 5 days to go",
+    "alt": "CountDaysNow — Thanksgiving 5 days to go — Book the trip home early — Search “CountDaysNow” on App Store or Google Play — Countdown Plan: Work Backwards",
+    "name": "CountDaysNow",
+    "hook": "Thanksgiving 5 days to go",
+    "tags": [
+     "#EventCounter",
+     "#CountdownPlan",
+     "#WorkBackwards",
+     "#LockScreen",
+     "#CountDaysNow"
+    ],
+    "button": "Get it on the App Store",
+    "store": "https://apps.apple.com/us/app/id6807079789?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow"
    },
    {
     "kind": "card",
@@ -1905,59 +1947,59 @@
    },
    {
     "kind": "clip",
-    "key": "lumiletters/ko",
-    "locale": "ko",
-    "app": "lumiletters",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/391phh.mp4",
-    "hook": "획순대로 따라쓰기",
-    "name": "Lumi 레터 Lite: 어린이 영어 ABC",
-    "title": "획순대로 따라쓰기 | 엄마표 영어 ABC·파닉스 놀이 | Lumi 레터 Lite",
+    "key": "gmoney/ja",
+    "locale": "ja",
+    "app": "gmoney",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/lk7ile.mp4",
+    "hook": "カテゴリ別に、使い道が見える",
+    "name": "G+Money：家計簿・予算・為替",
+    "title": "カテゴリ別に、使い道が見える | 支出管理・お金管理・出費記録 | G+Money 家計簿",
     "tags": [
-     "#알파벳쓰기",
-     "#소문자",
-     "#대문자",
-     "#취학전",
-     "#Lumi레터Lite"
+     "#家計簿予算為替",
+     "#お小遣い帳",
+     "#通貨換算",
+     "#貯金",
+     "#GMoney家計簿"
     ],
-    "caption": "획순대로 따라쓰기\n소리를 듣고 글자와 맞춰요\n엄마표 영어 ABC·파닉스 놀이\nLumi 레터 Lite: 어린이 영어 ABC\nApp Store에서 'Lumi 레터 Lite' 검색\nAndroid는 Google Play에서\n\n#알파벳쓰기 #소문자 #대문자 #취학전 #Lumi레터Lite",
-    "button": "App Store에서 받기",
+    "caption": "カテゴリ別に、使い道が見える\n換算も記録も、オフラインでOK\n支出管理・お金管理・出費記録\nG+Money：家計簿・予算・為替\nApp Storeで「G+Money 家計簿」を検索\nAndroidはGoogle Playで\n\n#家計簿予算為替 #お小遣い帳 #通貨換算 #貯金 #GMoney家計簿",
+    "button": "App Storeで入手",
     "variant": "b",
-    "alt": "Lumi 레터 Lite: 어린이 영어 ABC — 획순대로 따라쓰기 — 소리를 듣고 글자와 맞춰요 — 엄마표 영어 ABC·파닉스 놀이",
-    "store": "https://apps.apple.com/kr/app/id6778748533?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiLettersLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiletters",
+    "alt": "G+Money：家計簿・予算・為替 — カテゴリ別に、使い道が見える — 換算も記録も、オフラインでOK — 支出管理・お金管理・出費記録",
+    "store": "https://apps.apple.com/jp/app/id6755782939?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
     "review": {
-     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
-     "url": "https://apps.apple.com/app/id6778748533?action=write-review"
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
     },
     "keywords": [
-     "소문자",
-     "대문자",
-     "취학전",
-     "영어조기교육",
-     "유아영어",
-     "영어발음"
+     "お小遣い帳",
+     "通貨換算",
+     "貯金",
+     "支出記録",
+     "レート計算",
+     "家計管理"
     ],
-    "keyline": "엄마표 영어 ABC·파닉스 놀이",
+    "keyline": "支出管理・お金管理・出費記録",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "4ec0196ef01258b0",
+     "board": "987a384c8c1d4d89",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "youtube": {
-     "title": "획순대로 따라쓰기 | Lumi 레터 Lite #Shorts",
-     "description": "획순대로 따라쓰기\n소리를 듣고 글자와 맞춰요\n엄마표 영어 ABC·파닉스 놀이\n\nLumi 레터 Lite: 어린이 영어 ABC\nApp Store: https://apps.apple.com/kr/app/id6778748533?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiLettersLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiletters\n이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다\nhttps://apps.apple.com/app/id6778748533?action=write-review\n\n소문자 · 대문자 · 취학전 · 영어조기교육 · 유아영어 · 영어발음\n\n#Shorts #알파벳쓰기 #Lumi레터Lite",
+     "title": "カテゴリ別に、使い道が見える | G+Money 家計簿 #Shorts",
+     "description": "カテゴリ別に、使い道が見える\n換算も記録も、オフラインでOK\n支出管理・お金管理・出費記録\n\nG+Money：家計簿・予算・為替\nApp Store: https://apps.apple.com/jp/app/id6755782939?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney\nこのアプリをお使いですか？App Store で評価・レビューできます\nhttps://apps.apple.com/app/id6755782939?action=write-review\n\nお小遣い帳 · 通貨換算 · 貯金 · 支出記録 · レート計算 · 家計管理\n\n#Shorts #家計簿予算為替 #GMoney家計簿",
      "tags": [
-      "소문자",
-      "대문자",
-      "취학전",
-      "영어조기교육",
-      "유아영어",
-      "영어발음",
-      "알파벳쓰기",
-      "Lumi레터Lite",
-      "Lumi 레터 Lite"
+      "お小遣い帳",
+      "通貨換算",
+      "貯金",
+      "支出記録",
+      "レート計算",
+      "家計管理",
+      "家計簿予算為替",
+      "GMoney家計簿",
+      "G+Money 家計簿"
      ]
     },
     "slot": 15
@@ -2203,51 +2245,76 @@
    },
    {
     "kind": "clip",
-    "key": "lumiletters/ko",
-    "locale": "ko",
-    "app": "lumiletters",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/391phh.mp4",
-    "hook": "획순대로 따라쓰기",
-    "name": "Lumi 레터 Lite: 어린이 영어 ABC",
-    "title": "획순대로 따라쓰기 | 엄마표 영어 ABC·파닉스 놀이 | Lumi 레터 Lite",
+    "key": "gmoney/ja",
+    "locale": "ja",
+    "app": "gmoney",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/lk7ile.mp4",
+    "hook": "カテゴリ別に、使い道が見える",
+    "name": "G+Money：家計簿・予算・為替",
+    "title": "カテゴリ別に、使い道が見える | 支出管理・お金管理・出費記録 | G+Money 家計簿",
     "tags": [
-     "#알파벳쓰기",
-     "#소문자",
-     "#대문자",
-     "#취학전",
-     "#Lumi레터Lite"
+     "#家計簿予算為替",
+     "#お小遣い帳",
+     "#通貨換算",
+     "#貯金",
+     "#GMoney家計簿"
     ],
-    "caption": "획순대로 따라쓰기\n소리를 듣고 글자와 맞춰요\n엄마표 영어 ABC·파닉스 놀이\nLumi 레터 Lite: 어린이 영어 ABC\nApp Store에서 'Lumi 레터 Lite' 검색\nAndroid는 Google Play에서\n\n#알파벳쓰기 #소문자 #대문자 #취학전 #Lumi레터Lite",
-    "button": "App Store에서 받기",
+    "caption": "カテゴリ別に、使い道が見える\n換算も記録も、オフラインでOK\n支出管理・お金管理・出費記録\nG+Money：家計簿・予算・為替\nApp Storeで「G+Money 家計簿」を検索\nAndroidはGoogle Playで\n\n#家計簿予算為替 #お小遣い帳 #通貨換算 #貯金 #GMoney家計簿",
+    "button": "App Storeで入手",
     "variant": "b",
-    "alt": "Lumi 레터 Lite: 어린이 영어 ABC — 획순대로 따라쓰기 — 소리를 듣고 글자와 맞춰요 — 엄마표 영어 ABC·파닉스 놀이",
-    "store": "https://apps.apple.com/kr/app/id6778748533?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiLettersLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiletters",
+    "alt": "G+Money：家計簿・予算・為替 — カテゴリ別に、使い道が見える — 換算も記録も、オフラインでOK — 支出管理・お金管理・出費記録",
+    "store": "https://apps.apple.com/jp/app/id6755782939?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
     "review": {
-     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
-     "url": "https://apps.apple.com/app/id6778748533?action=write-review"
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
     },
     "keywords": [
-     "소문자",
-     "대문자",
-     "취학전",
-     "영어조기교육",
-     "유아영어",
-     "영어발음"
+     "お小遣い帳",
+     "通貨換算",
+     "貯金",
+     "支出記録",
+     "レート計算",
+     "家計管理"
     ],
-    "keyline": "엄마표 영어 ABC·파닉스 놀이",
+    "keyline": "支出管理・お金管理・出費記録",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "4ec0196ef01258b0",
+     "board": "987a384c8c1d4d89",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "획순대로 따라쓰기\n소리를 듣고 글자와 맞춰요\n엄마표 영어 ABC·파닉스 놀이\nLumi 레터 Lite: 어린이 영어 ABC\nApp Store에서 'Lumi 레터 Lite' 검색\nAndroid는 Google Play에서\n\n#알파벳쓰기 #소문자 #대문자 #취학전 #Lumi레터Lite\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6778748533?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiLettersLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiletters",
-     "link": "https://apps.apple.com/kr/app/id6778748533?pt=118326163&ct=social&mt=8"
+     "description": "カテゴリ別に、使い道が見える\n換算も記録も、オフラインでOK\n支出管理・お金管理・出費記録\nG+Money：家計簿・予算・為替\nApp Storeで「G+Money 家計簿」を検索\nAndroidはGoogle Playで\n\n#家計簿予算為替 #お小遣い帳 #通貨換算 #貯金 #GMoney家計簿\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6755782939?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
+     "link": "https://apps.apple.com/jp/app/id6755782939?pt=118326163&ct=social&mt=8"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "card/thanksgiving2026/2026-11-21",
+    "locale": "en",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/countdown-cards/card-20261121.jpg",
+    "caption": "Thanksgiving 5 days to go\nBook the trip home early\n\nSearch “CountDaysNow” on App Store or Google Play\n\n#EventCounter #CountdownPlan #WorkBackwards #LockScreen #CountDaysNow",
+    "title": "Thanksgiving 5 days to go",
+    "alt": "CountDaysNow — Thanksgiving 5 days to go — Book the trip home early — Search “CountDaysNow” on App Store or Google Play — Countdown Plan: Work Backwards",
+    "name": "CountDaysNow",
+    "hook": "Thanksgiving 5 days to go",
+    "tags": [
+     "#EventCounter",
+     "#CountdownPlan",
+     "#WorkBackwards",
+     "#LockScreen",
+     "#CountDaysNow"
+    ],
+    "button": "Get it on the App Store",
+    "store": "https://apps.apple.com/us/app/id6807079789?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
+    "pinterest": {
+     "description": "Thanksgiving 5 days to go\nBook the trip home early\n\nSearch “CountDaysNow” on App Store or Google Play\n\n#EventCounter #CountdownPlan #WorkBackwards #LockScreen #CountDaysNow\n\nGet it on the App Store: https://apps.apple.com/us/app/id6807079789?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
+     "link": "https://apps.apple.com/us/app/id6807079789?pt=118326163&ct=social&mt=8"
+    }
    },
    {
     "kind": "card",
@@ -4977,48 +5044,48 @@
    },
    {
     "kind": "clip",
-    "key": "lumiletters/ko",
-    "locale": "ko",
-    "app": "lumiletters",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/391phh.mp4",
-    "hook": "스마트폰 시간을 ABC 시간으로",
-    "name": "Lumi 레터 Lite: 어린이 영어 ABC",
-    "title": "스마트폰 시간을 ABC 시간으로 | 엄마표 영어 ABC·파닉스 놀이 | Lumi 레터 Lite",
+    "key": "gmoney/ja",
+    "locale": "ja",
+    "app": "gmoney",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/lk7ile.mp4",
+    "hook": "お金、どこに、消えた？",
+    "name": "G+Money：家計簿・予算・為替",
+    "title": "お金、どこに、消えた？ | 支出管理・お金管理・出費記録 | G+Money 家計簿",
     "tags": [
-     "#알파벳쓰기",
-     "#소문자",
-     "#대문자",
-     "#취학전",
-     "#Lumi레터Lite"
+     "#家計簿予算為替",
+     "#お小遣い帳",
+     "#通貨換算",
+     "#貯金",
+     "#GMoney家計簿"
     ],
-    "caption": "스마트폰 시간을 ABC 시간으로\n획순대로 따라쓰기\n엄마표 영어 ABC·파닉스 놀이\nLumi 레터 Lite: 어린이 영어 ABC\nApp Store에서 'Lumi 레터 Lite' 검색\nAndroid는 Google Play에서\n\n#알파벳쓰기 #소문자 #대문자 #취학전 #Lumi레터Lite",
-    "button": "App Store에서 받기",
+    "caption": "お金、どこに、消えた？\nカテゴリ別に、使い道が見える\n支出管理・お金管理・出費記録\nG+Money：家計簿・予算・為替\nApp Storeで「G+Money 家計簿」を検索\nAndroidはGoogle Playで\n\n#家計簿予算為替 #お小遣い帳 #通貨換算 #貯金 #GMoney家計簿",
+    "button": "App Storeで入手",
     "variant": "a",
-    "alt": "Lumi 레터 Lite: 어린이 영어 ABC — 스마트폰 시간을 ABC 시간으로 — 획순대로 따라쓰기 — 엄마표 영어 ABC·파닉스 놀이",
-    "store": "https://apps.apple.com/kr/app/id6778748533?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiLettersLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiletters",
+    "alt": "G+Money：家計簿・予算・為替 — お金、どこに、消えた？ — カテゴリ別に、使い道が見える — 支出管理・お金管理・出費記録",
+    "store": "https://apps.apple.com/jp/app/id6755782939?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
     "review": {
-     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
-     "url": "https://apps.apple.com/app/id6778748533?action=write-review"
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
     },
     "keywords": [
-     "소문자",
-     "대문자",
-     "취학전",
-     "영어조기교육",
-     "유아영어",
-     "영어발음"
+     "お小遣い帳",
+     "通貨換算",
+     "貯金",
+     "支出記録",
+     "レート計算",
+     "家計管理"
     ],
-    "keyline": "엄마표 영어 ABC·파닉스 놀이",
+    "keyline": "支出管理・お金管理・出費記録",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "4ec0196ef01258b0",
+     "board": "987a384c8c1d4d89",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "스마트폰 시간을 ABC 시간으로\n획순대로 따라쓰기\n엄마표 영어 ABC·파닉스 놀이\nLumi 레터 Lite: 어린이 영어 ABC\nApp Store에서 'Lumi 레터 Lite' 검색\nAndroid는 Google Play에서\n\n#알파벳쓰기 #소문자 #대문자 #취학전 #Lumi레터Lite\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6778748533?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiLettersLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiletters"
+     "caption": "お金、どこに、消えた？\nカテゴリ別に、使い道が見える\n支出管理・お金管理・出費記録\nG+Money：家計簿・予算・為替\nApp Storeで「G+Money 家計簿」を検索\nAndroidはGoogle Playで\n\n#家計簿予算為替 #お小遣い帳 #通貨換算 #貯金 #GMoney家計簿\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6755782939?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney"
     },
     "slot": 15
    }

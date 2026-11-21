@@ -2220,10 +2220,10 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
                 "offline passport photo app",
             ],
             "persona": "applicants who want to try a private, offline ID-photo workflow with one free export before paying anything",
-            "lead": "A trustworthy free passport-photo app should let you complete a real photo — guided sizing, background, and a print-ready export — before asking for money, and it should do the work on your phone rather than a server.",
+            "lead": "A trustworthy free passport-photo app should let you complete a real photo — guided sizing and a print-ready export — before asking for money, and it should do the work on your phone rather than a server.",
             "paras": [
-                "Snapport Lite includes the full guided workflow free — passport, visa, and document templates, face-guided crop and alignment, background tools, and adjustment — with one free export included so you can finish and inspect a real result. It works fully offline; checking sizes only downloads a public list of common formats, and no personal data is sent.",
-                "If you need more exports, a single one-time purchase unlocks them — no subscription, no ads, no tracking, no account. Face detection for alignment runs on device and no biometric identity is stored. Photo requirements vary by country and agency, so always review the official rules before submitting, and note that automatic background removal may still need your review.",
+                "Snapport Lite includes the full guided workflow free — passport, visa, and document templates plus face-guided crop and alignment — with one free export included so you can finish and inspect a real result. It works fully offline; checking sizes only downloads a public list of common formats, and no personal data is sent.",
+                "If you need more exports, a single one-time purchase unlocks them — no subscription, no ads, no tracking, no account. Face detection for alignment runs on device and no biometric identity is stored. Photo requirements vary by country and agency, so always review the official rules before submitting.",
             ],
             "look": [
                 "A free tier that lets you finish a real export, not just preview.",
@@ -2234,7 +2234,7 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             ],
             "steps": [
                 "Pick the template for your country and document type.",
-                "Align your face inside the guide and process the background.",
+                "Align your face inside the guide.",
                 "Keep your appearance natural — official photos are strict about edits.",
                 "Use the free export to check the result against official requirements.",
                 "Unlock more exports once only if you need them.",
@@ -2243,7 +2243,7 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             "faq": [
                 {
                     "q": "What is free in Snapport Lite?",
-                    "a": "The complete guided workflow — templates, crop, background, adjust — with one free export included. Additional exports use a one-time purchase; there is no subscription.",
+                    "a": "The complete guided workflow — templates, crop, and alignment — with one free export included. Additional exports use a one-time purchase; there is no subscription.",
                 },
                 {
                     "q": "Do my photos get uploaded?",

@@ -1,9 +1,9 @@
 {
  "schema": "lumi.android-live-snapshot/v1",
  "source": "AndroidPlay android_live_scan (Play page HTTP 200 + publish LIVE)",
- "source_generated": "2026-11-18T16:31:37+0800",
+ "source_generated": "2026-11-21T09:47:05+0800",
  "count": 60,
- "content_sha256": "873a5823978ac80df19beb719f2ad3a38cb063cb0868d8c3aff93c696fc2e7ca",
+ "content_sha256": "a0ad782547bd01d3de2a70721aa350b059defe8e57bc1ee827bab4c2d64514cf",
  "apps": {
   "aibriefpack": {
    "ios_app_id": "6791658210",
@@ -39,7 +39,7 @@
    "copy": {
     "en-US": {
      "title": "Aim990: Fix English Weak Spots",
-     "short_description": "TOEIC test prep: an 8-minute diagnosis, a 30-day plan and vocabulary practice"
+     "short_description": "TOEIC test prep: 8-minute diagnosis, 30-day weak-skill plan, vocabulary practice"
     },
     "zh-TW": {
      "title": "Aim990：多益單字・多益英文弱點",
@@ -60,7 +60,7 @@
    "copy": {
     "en-US": {
      "title": "BattAI: Battery Health & Life",
-     "short_description": "Live charging watts, current, voltage & temperature, plus estimated capacity"
+     "short_description": "Charging watts, current, voltage, temperature, estimated capacity & health check"
     },
     "zh-TW": {
      "title": "BattAI: 電池健康度・健康分數・充電速度",
@@ -159,7 +159,7 @@
    "copy": {
     "en-US": {
      "title": "Cyca: Period & Cycle Tracker",
-     "short_description": "Private period tracker & ovulation calendar with a daily body forecast"
+     "short_description": "Private, offline period tracker & ovulation calendar with a daily body forecast"
     },
     "zh-TW": {
      "title": "Cyca 經期週期追蹤・排卵期預測",
@@ -304,7 +304,7 @@
    "copy": {
     "en-US": {
      "title": "GBAGo Emulator: Visual Saves",
-     "short_description": "Retro handheld emulator with Recovery Map, Auto Snapshots and visual save states"
+     "short_description": "Retro game emulator with visual save states, Auto Snapshots and a Recovery Map"
     },
     "zh-TW": {
      "title": "GBAGo 掌機模擬器：視覺存檔",
@@ -346,7 +346,7 @@
    "copy": {
     "en-US": {
      "title": "G+Money Lite: Travel Expenses",
-     "short_description": "Travel expense tracker with auto currency conversion and a daily travel budget"
+     "short_description": "Travel budget & expense tracker with automatic currency conversion, even offline"
     },
     "zh-TW": {
      "title": "G+Money Lite：旅遊記帳・匯率",
@@ -829,7 +829,7 @@
    "copy": {
     "en-US": {
      "title": "PicClear Pro: Photo Cleaner",
-     "short_description": "Duplicate photo remover from gallery: clear screenshots & blurry shots fast"
+     "short_description": "Photo cleaner & duplicate photo remover from gallery: screenshots, blurry shots"
     },
     "zh-TW": {
      "title": "PicClear Pro：照片清理與重複刪除",
@@ -1100,7 +1100,7 @@
    "copy": {
     "en-US": {
      "title": "TripBee Lite: Travel Plan",
-     "short_description": "Trip planner with a day-by-day itinerary for flights, hotels, tickets and notes"
+     "short_description": "Travel planner: a vacation itinerary with your trip's flights, hotels and notes"
     },
     "zh-TW": {
      "title": "TripBee Lite：行程規劃・旅遊行程表",
@@ -1205,7 +1205,7 @@
    "copy": {
     "en-US": {
      "title": "Wordmate: Vocabulary Builder",
-     "short_description": "Vocabulary builder, 44 languages: flashcards, lessons, example sentences, audio"
+     "short_description": "Vocabulary builder app with flashcards and pronunciation. 44 languages included"
     },
     "zh-TW": {
      "title": "Wordmate：44 種語言背單字・單字卡",

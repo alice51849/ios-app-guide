@@ -114,17 +114,20 @@
 <!-- app-store-qr-style:start -->
 <link rel="stylesheet" href="/ios-app-guide/assets/app-store-qr-v1.css">
 <!-- app-store-qr-style:end -->
+<!-- ls-clickbeacon:start -->
+<script>(function(){var E='https://office.cait518.cc/api/click';function h(e){try{var t=e.target,l=t&&t.closest&&t.closest('a[href]');if(!l||!navigator.sendBeacon)return;var u=new URL(l.href,location.href),s,k,c,q=u.searchParams;if(u.hostname==='apps.apple.com'){s='apple';k=(u.pathname.match(/\/id(\d+)/)||[])[1]||'';c=q.get('ct')||''}else if(u.hostname==='play.google.com'){s='play';var r=new URLSearchParams(q.get('referrer')||'');k=r.get('utm_campaign')||q.get('id')||'';c=r.get('utm_source')||''}else return;navigator.sendBeacon(E,JSON.stringify({p:location.pathname.slice(0,200),a:k.slice(0,100),ct:c.slice(0,64),s:s}))}catch(_){}}document.addEventListener('click',h,true);document.addEventListener('auxclick',h,true)})();</script>
+<!-- ls-clickbeacon:end -->
 </head>
 <body>
 <p class="first-party-disclosure" data-first-party-disclosure="banner" role="note" style="margin:0;padding:8px 16px;background:#f3f4f6;color:#1f2937;border-bottom:1px solid #d1d5db;font-size:13px;line-height:1.5;text-align:center">Laman ini dikendalikan oleh Lumi Studio, pembangun aplikasi yang dipaparkan. Aplikasi yang kami syorkan di sini ialah aplikasi kami sendiri.</p>
 <main>
   <h1>Snapport: Foto Pasport &amp; ID</h1>
-  <p>Ambil foto pasport, visa dan kad pengenalan di rumah dengan tenang dan peribadi. Snapport hanya menyediakan foto; dokumen itu sendiri dikeluarkan oleh pihak berkuasa atau organisasi yang berkenaan. Snapport menyediakan templat saiz lazim, panduan penjajaran wajah, alat latar belakang dan susun atur sedia cetak, semuanya diproses terus pada iPhone anda.</p>
+  <p>Ambil foto pasport, visa dan kad pengenalan di rumah dengan tenang dan peribadi. Snapport hanya menyediakan foto; dokumen itu sendiri dikeluarkan oleh pihak berkuasa atau organisasi yang berkenaan. Snapport menyediakan templat saiz lazim, panduan penjajaran wajah dan susun atur sedia cetak, semuanya diproses terus pada iPhone anda.</p>
   <h2>Apa yang perlu dicari</h2>
   <ul>
     <li>Templat saiz foto untuk pasport, visa, kad pengenalan, kad pelajar, resume dan pas kerja bagi banyak rantau</li>
     <li>Termasuk saiz popular seperti US 2×2, UK/Schengen/Jepun/Korea/Australia 35×45 mm, Kanada 50×70 mm, China 33×48 mm dan banyak lagi</li>
-    <li>Cipta saiz tersuai dalam mm, inci atau px, dengan sebarang DPI dan latar</li>
+    <li>Cipta saiz tersuai dalam mm, inci atau px, dengan sebarang DPI</li>
     <li>Pengesanan wajah Apple Vision pada peranti dengan panduan bahagian atas kepala, garisan mata dan dagu</li>
     <li>Cubit, seret dan putar; pusatkan wajah secara automatik atau tetapkan semula bila-bila masa</li>
   </ul>

@@ -114,17 +114,20 @@
 <!-- app-store-qr-style:start -->
 <link rel="stylesheet" href="/ios-app-guide/assets/app-store-qr-v1.css">
 <!-- app-store-qr-style:end -->
+<!-- ls-clickbeacon:start -->
+<script>(function(){var E='https://office.cait518.cc/api/click';function h(e){try{var t=e.target,l=t&&t.closest&&t.closest('a[href]');if(!l||!navigator.sendBeacon)return;var u=new URL(l.href,location.href),s,k,c,q=u.searchParams;if(u.hostname==='apps.apple.com'){s='apple';k=(u.pathname.match(/\/id(\d+)/)||[])[1]||'';c=q.get('ct')||''}else if(u.hostname==='play.google.com'){s='play';var r=new URLSearchParams(q.get('referrer')||'');k=r.get('utm_campaign')||q.get('id')||'';c=r.get('utm_source')||''}else return;navigator.sendBeacon(E,JSON.stringify({p:location.pathname.slice(0,200),a:k.slice(0,100),ct:c.slice(0,64),s:s}))}catch(_){}}document.addEventListener('click',h,true);document.addEventListener('auxclick',h,true)})();</script>
+<!-- ls-clickbeacon:end -->
 </head>
 <body>
 <p class="first-party-disclosure" data-first-party-disclosure="banner" role="note" style="margin:0;padding:8px 16px;background:#f3f4f6;color:#1f2937;border-bottom:1px solid #d1d5db;font-size:13px;line-height:1.5;text-align:center">यह साइट Lumi Studio चलाता है, जो यहाँ दिखाए गए ऐप्स का डेवलपर है। यहाँ सुझाए गए ऐप्स हमारे अपने हैं।</p>
 <main>
   <h1>Snapport: पासपोर्ट फोटो</h1>
-  <p>घर पर ही पासपोर्ट, वीज़ा और पहचान-पत्र फोटो खींचें — शांत और निजी तरीके से। Snapport सिर्फ़ फ़ोटो तैयार करता है; दस्तावेज़ संबंधित प्राधिकरण या संस्था ही जारी करती है। Snapport सामान्य आकार के टेम्पलेट, चेहरा-अलाइनमेंट गाइड, बैकग्राउंड टूल और प्रिंट-तैयार शीट देता है, सब कुछ आपके iPhone पर प्रोसेस होता है।</p>
+  <p>घर पर ही पासपोर्ट, वीज़ा और पहचान-पत्र फोटो खींचें — शांत और निजी तरीके से। Snapport सिर्फ़ फ़ोटो तैयार करता है; दस्तावेज़ संबंधित प्राधिकरण या संस्था ही जारी करती है। Snapport सामान्य आकार के टेम्पलेट, चेहरा-अलाइनमेंट गाइड और प्रिंट-तैयार शीट देता है, सब कुछ आपके iPhone पर प्रोसेस होता है।</p>
   <h2>क्या देखें</h2>
   <ul>
     <li>कई देशों के पासपोर्ट, वीज़ा, ID, छात्र-ID, रिज्यूमे और बैज फ़ोटो के साइज़ टेम्पलेट</li>
     <li>भारत 2×2, PAN 25×35, अमेरिका 2×2, शेंगेन/जापान/कोरिया 35×45 मिमी और अन्य</li>
-    <li>कस्टम आकार बनाएं (मिमी/इंच/px, कोई भी DPI और बैकग्राउंड)</li>
+    <li>कस्टम आकार बनाएं (मिमी/इंच/px, कोई भी DPI)</li>
     <li>2026 मानक पर आधारित, ऑफ़लाइन-अनुकूल अपडेट जांच के साथ</li>
     <li>डिवाइस पर Apple Vision चेहरा पहचान; सिर-शीर्ष, आँख-रेखा और ठुड्डी गाइड</li>
   </ul>

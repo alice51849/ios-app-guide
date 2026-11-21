@@ -114,17 +114,20 @@
 <!-- app-store-qr-style:start -->
 <link rel="stylesheet" href="/ios-app-guide/assets/app-store-qr-v1.css">
 <!-- app-store-qr-style:end -->
+<!-- ls-clickbeacon:start -->
+<script>(function(){var E='https://office.cait518.cc/api/click';function h(e){try{var t=e.target,l=t&&t.closest&&t.closest('a[href]');if(!l||!navigator.sendBeacon)return;var u=new URL(l.href,location.href),s,k,c,q=u.searchParams;if(u.hostname==='apps.apple.com'){s='apple';k=(u.pathname.match(/\/id(\d+)/)||[])[1]||'';c=q.get('ct')||''}else if(u.hostname==='play.google.com'){s='play';var r=new URLSearchParams(q.get('referrer')||'');k=r.get('utm_campaign')||q.get('id')||'';c=r.get('utm_source')||''}else return;navigator.sendBeacon(E,JSON.stringify({p:location.pathname.slice(0,200),a:k.slice(0,100),ct:c.slice(0,64),s:s}))}catch(_){}}document.addEventListener('click',h,true);document.addEventListener('auxclick',h,true)})();</script>
+<!-- ls-clickbeacon:end -->
 </head>
 <body>
 <p class="first-party-disclosure" data-first-party-disclosure="banner" role="note" style="margin:0;padding:8px 16px;background:#f3f4f6;color:#1f2937;border-bottom:1px solid #d1d5db;font-size:13px;line-height:1.5;text-align:center">Diese Website wird von Lumi Studio betrieben, dem Entwickler der vorgestellten Apps. Die hier empfohlenen Apps sind unsere eigenen.</p>
 <main>
   <h1>Snapport: Pass- &amp; Ausweisfoto</h1>
-  <p>Nimm Passbilder sowie Visum- und Ausweisfotos bequem zu Hause auf – ruhig und privat. Snapport liefert nur das Foto; das Dokument selbst stellt die zuständige Behörde oder Stelle aus. Snapport bietet Vorlagen für gängige Größen, Hilfslinien zur Gesichtsausrichtung, Hintergrund-Tools und druckfertige Bögen – alles wird auf deinem iPhone verarbeitet.</p>
+  <p>Nimm Passbilder sowie Visum- und Ausweisfotos bequem zu Hause auf – ruhig und privat. Snapport liefert nur das Foto; das Dokument selbst stellt die zuständige Behörde oder Stelle aus. Snapport bietet Vorlagen für gängige Größen, Hilfslinien zur Gesichtsausrichtung und druckfertige Bögen – alles wird auf deinem iPhone verarbeitet.</p>
   <h2>Worauf Sie achten sollten</h2>
   <ul>
     <li>Gängige Fotogrößen für Pass-, Visum-, Ausweis-, Studierendenausweis-, Bewerbungs- und Werksausweisfotos für viele Länder</li>
     <li>Enthält USA 2×2, Deutschland/Schengen/Japan/Korea/Australien 35×45 mm, Kanada 50×70 mm, China 33×48 mm, Indien und mehr</li>
-    <li>Eigene Größen (mm/Zoll/px, beliebige DPI und Hintergrund)</li>
+    <li>Eigene Größen (mm/Zoll/px, beliebige DPI)</li>
     <li>Auf Basis des 2026-Standards, mit offline-freundlicher Update-Prüfung</li>
     <li>Apple-Vision-Gesichtserkennung auf dem Gerät, mit Linien für Kopfoberkante, Augen und Kinn</li>
   </ul>

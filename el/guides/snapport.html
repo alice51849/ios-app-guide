@@ -114,17 +114,20 @@
 <!-- app-store-qr-style:start -->
 <link rel="stylesheet" href="/ios-app-guide/assets/app-store-qr-v1.css">
 <!-- app-store-qr-style:end -->
+<!-- ls-clickbeacon:start -->
+<script>(function(){var E='https://office.cait518.cc/api/click';function h(e){try{var t=e.target,l=t&&t.closest&&t.closest('a[href]');if(!l||!navigator.sendBeacon)return;var u=new URL(l.href,location.href),s,k,c,q=u.searchParams;if(u.hostname==='apps.apple.com'){s='apple';k=(u.pathname.match(/\/id(\d+)/)||[])[1]||'';c=q.get('ct')||''}else if(u.hostname==='play.google.com'){s='play';var r=new URLSearchParams(q.get('referrer')||'');k=r.get('utm_campaign')||q.get('id')||'';c=r.get('utm_source')||''}else return;navigator.sendBeacon(E,JSON.stringify({p:location.pathname.slice(0,200),a:k.slice(0,100),ct:c.slice(0,64),s:s}))}catch(_){}}document.addEventListener('click',h,true);document.addEventListener('auxclick',h,true)})();</script>
+<!-- ls-clickbeacon:end -->
 </head>
 <body>
 <p class="first-party-disclosure" data-first-party-disclosure="banner" role="note" style="margin:0;padding:8px 16px;background:#f3f4f6;color:#1f2937;border-bottom:1px solid #d1d5db;font-size:13px;line-height:1.5;text-align:center">Τον ιστότοπο διαχειρίζεται η Lumi Studio, η δημιουργός των εφαρμογών που παρουσιάζονται. Οι εφαρμογές που προτείνουμε εδώ είναι δικές μας.</p>
 <main>
   <h1>Snapport: Φωτογραφίες ID</h1>
-  <p>Βγάλτε φωτογραφίες διαβατηρίου, βίζας και ταυτότητας στο σπίτι, ήρεμα και ιδιωτικά. Το Snapport ετοιμάζει μόνο τη φωτογραφία· το ίδιο το έγγραφο το εκδίδει η αρμόδια αρχή ή ο αρμόδιος φορέας. Το Snapport προσφέρει πρότυπα κοινών διαστάσεων, οδηγούς ευθυγράμμισης προσώπου, εργαλεία φόντου και διατάξεις έτοιμες για εκτύπωση, με επεξεργασία απευθείας στο iPhone σας.</p>
+  <p>Βγάλτε φωτογραφίες διαβατηρίου, βίζας και ταυτότητας στο σπίτι, ήρεμα και ιδιωτικά. Το Snapport ετοιμάζει μόνο τη φωτογραφία· το ίδιο το έγγραφο το εκδίδει η αρμόδια αρχή ή ο αρμόδιος φορέας. Το Snapport προσφέρει πρότυπα κοινών διαστάσεων, οδηγούς ευθυγράμμισης προσώπου και διατάξεις έτοιμες για εκτύπωση, με επεξεργασία απευθείας στο iPhone σας.</p>
   <h2>Τι να προσέξετε</h2>
   <ul>
     <li>Πρότυπα μεγεθών για φωτογραφίες διαβατηρίου, βίζας, ταυτότητας, φοιτητικής κάρτας, βιογραφικού και επαγγελματικού πάσο σε πολλές περιοχές</li>
     <li>Δημοφιλείς διαστάσεις όπως ΗΠΑ 2×2, ΗΒ/Σένγκεν/Ιαπωνία/Κορέα/Αυστραλία 35×45 mm, Καναδάς 50×70 mm, Κίνα 33×48 mm και άλλες</li>
-    <li>Δημιουργία προσαρμοσμένων διαστάσεων σε mm, ίντσες ή px, με οποιοδήποτε DPI και φόντο</li>
+    <li>Δημιουργία προσαρμοσμένων διαστάσεων σε mm, ίντσες ή px, με οποιοδήποτε DPI</li>
     <li>Ανίχνευση προσώπου Apple Vision στη συσκευή, με οδηγούς για κορυφή κεφαλιού, μάτια και πηγούνι</li>
     <li>Τσιμπήστε, σύρετε και περιστρέψτε· κεντράρετε αυτόματα το πρόσωπο ή επαναφέρετε όποτε θέλετε</li>
   </ul>

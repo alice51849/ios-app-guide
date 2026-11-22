@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import re
 from pathlib import Path
 import sys
 import tempfile
@@ -86,6 +87,22 @@ class StoreCopyGuardTests(unittest.TestCase):
     def test_other_app_untouched(self):
         values = self.values()
         self.assertEqual(values, store_copy_guard.guarded_locales("other", values, self.path))
+
+    def test_shipped_guard_has_no_free_trial_heading(self):
+        # Rule 4.4 / ruling 2026-11-21_rescue item 112 points 26-27: the Lite
+        # "free trial, one-time unlock" heading uses the resubmit pack wording.
+        trial = re.compile(
+            r"試用|试用|free to try|kostenlos testen|essai gratuit|prueba gratis"
+            r"|prova gratis|teste grátis|gratis proberen|wypróbuj|dùng thử"
+            r"|無料で試せ|써 보고|ücretsiz deneyin|попробуйте|ลองใช้ฟรี",
+            re.I,
+        )
+        guard = store_copy_guard.load_guard()
+        for key, rows in guard.items():
+            for locale, row in rows.items():
+                self.assertIsNone(
+                    trial.search(row.get("description", "")), f"{key} {locale}"
+                )
 
     def test_shipped_guard_matches_current_data(self):
         guard = store_copy_guard.load_guard()

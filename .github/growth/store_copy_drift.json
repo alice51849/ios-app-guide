@@ -630,8 +630,8 @@
     "ko": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-15",
-     "live_version": "1.0.15",
+     "live_updated": "2026-11-20",
+     "live_version": "1.0.16",
      "same": true
     },
     "pt-BR": {
@@ -1867,8 +1867,8 @@
     "ko": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-18",
-     "live_version": "1.0.23",
+     "live_updated": "2026-11-21",
+     "live_version": "1.0.24",
      "same": true
     },
     "pt-BR": {
@@ -1881,8 +1881,8 @@
     "zh-Hant": {
      "added": [],
      "dropped": [],
-     "live_updated": "2026-11-21",
-     "live_version": "1.0.24",
+     "live_updated": "2026-11-18",
+     "live_version": "1.0.23",
      "same": true
     }
    },
@@ -4337,14 +4337,22 @@
      "same": true
     },
     "zh-Hant": {
-     "added": [],
-     "dropped": [],
+     "added": [
+      "57 款插畫封面:城市、地標、季節、旅行心情(內含 6 款,Cute Pass 再加 51 款)",
+      "不購買也能一次保存 1 本手冊,並使用 6 款封面、CSV 匯入、網頁手冊、航班、每日行程、行李清單、小工具和 Apple Watch App。部分功能可透過一次性 App 內購買(Cute Pass)解鎖:不限手冊數量、再多 51 款封面、智慧行李清單、iCloud 同步與備份、分享含照片與票券的行程檔,以及和朋友一起規劃。"
+     ],
+     "dropped": [
+      "旅伴之間的花費直接記在行程上分帳,結算時一次算清誰該付給誰。",
+      "57 款插畫封面:城市、地標、季節、旅行心情(內含 6 款,Cute Pass 再加 51 款,還能用自己的照片當封面)",
+      "分帳:每個行程記下誰付錢,平均分攤或各自輸入金額;結算算出誰該付給誰,不同幣別用即時匯率換算",
+      "不購買也能一次保存 1 本手冊,並使用 6 款封面、CSV 匯入、網頁手冊、航班、每日行程、分帳、行李清單、小工具和 Apple Watch App。部分功能可透過一次性 App 內購買(Cute Pass)解鎖:不限手冊數量、再多 51 款封面並可用自己的照片當封面、智慧行李清單、iCloud 同步與備份、分享含照片與票券的行程檔,以及和朋友一起規劃。"
+     ],
      "live_updated": "2026-11-13",
      "live_version": "1.0.3",
-     "same": true
+     "same": false
     }
    },
-   "status": "green"
+   "status": "red"
   },
   "tripbeelite": {
    "blocked_terms": [],
@@ -5045,11 +5053,11 @@
   "gb"
  ],
  "counts": {
-  "green": 60,
-  "red": 0,
+  "green": 59,
+  "red": 1,
   "unknown": 0
  },
  "errors": [],
- "generated_at": "2026-11-21T16:40:27Z",
+ "generated_at": "2026-11-22T03:50:17Z",
  "schema": "growth.store-copy-drift/v1"
 }

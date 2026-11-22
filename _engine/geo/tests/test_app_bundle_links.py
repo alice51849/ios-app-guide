@@ -8,6 +8,7 @@ sys.path.insert(0, str(GEO))
 
 import app_store_storefronts as S  # noqa: E402
 import audit_store_attribution as A  # noqa: E402
+import gen_app_page_related as R  # noqa: E402
 import gen_store_attribution as G  # noqa: E402
 import market_availability  # noqa: E402
 
@@ -115,6 +116,68 @@ class SeriesPageCampaignTest(unittest.TestCase):
             self.assertIn(f"id{app}?pt={P}&amp;ct={ct}&amp;", out)
         self.assertIn(f"id6780575828?pt={P}&amp;ct=geo_pick&amp;", out)
         self.assertEqual(5, len(A.audit_source(out, "ja/series/kawaii.html", provider=P)))
+
+
+class BundleMemberPageLinkTest(unittest.TestCase):
+    """指南站成員款頁「也在○○組合包」一行（盤點 2026-11-23 第三節②）。"""
+
+    def setUp(self):
+        import tempfile
+        self.tmp = tempfile.TemporaryDirectory()
+        self.root = Path(self.tmp.name)
+        self._pages = R.PAGES
+        R.PAGES = str(self.root)
+        for loc in ("en-US", "zh-Hant", "ja"):
+            (self.root / loc / "bundles").mkdir(parents=True)
+            for pkg in ("lumi", "language", "travel"):
+                (self.root / loc / "bundles" / f"{pkg}.html").write_text("x", encoding="utf-8")
+
+    def tearDown(self):
+        R.PAGES = self._pages
+        self.tmp.cleanup()
+
+    @staticmethod
+    def member(app_id):
+        return (f'<html><body><main><a href="https://apps.apple.com/us/app/id{app_id}">a</a>'
+                "</main>\n<!--iag-app-support-->\n<p>s</p>\n<!--/iag-app-support-->\n</body></html>")
+
+    def test_members_match_storefront_bundle_table(self):
+        pkg = {"lumi": "lumi", "language": "lang", "travel": "travel"}
+        for _name, (app_id, package) in R.BUNDLE_MEMBER_PAGES.items():
+            self.assertIn(app_id, S.APP_BUNDLE_MEMBERS[pkg[package]])
+        self.assertNotIn("snapport", R.BUNDLE_MEMBER_PAGES)  # 停損對照組
+
+    def test_block_per_locale_relative_link_no_store_link(self):
+        for loc, needle in (("en-US", "Lumi Learning Bundle"), ("zh-Hant", "Lumi 星球學習組合"),
+                            ("ja", "Lumi 知育セット")):
+            block = R.bundle_block(loc, "lumimathpro.html", self.member("6776958488"))
+            self.assertIn('href="bundles/lumi.html"', block)
+            self.assertIn(needle, block)
+            self.assertNotIn("apps.apple.com", block)
+            for banned in ("cheaper", "save", "free trial", "划算", "免費試用", "お得", "無料体験", "$", "¥"):
+                self.assertNotIn(banned, block)
+
+    def test_fail_closed(self):
+        src = self.member("6776958488")
+        self.assertEqual("", R.bundle_block("en-US", "lumimathpro.html", self.member("1")))  # 主 App 不符
+        self.assertEqual("", R.bundle_block("en-US", "snapport.html", self.member("6780575828")))
+        self.assertEqual("", R.bundle_block("en-GB", "lumimathpro.html", src))  # 沒有 en-GB 組合包頁
+        self.assertEqual("", R.bundle_block("ko", "lumimathpro.html", src))
+
+    def test_write_is_idempotent_and_after_support(self):
+        page_path = self.root / "en-US" / "wordmate.html"
+        page_path.write_text(self.member("6789917808"), encoding="utf-8")
+        block = R.bundle_block("en-US", "wordmate.html", page_path.read_text(encoding="utf-8"))
+        self.assertIn("bundles/language.html", block)
+        state = {"check": False, "changed": []}
+        R.write_bundle(str(page_path), block, state)
+        once = page_path.read_text(encoding="utf-8")
+        self.assertLess(once.index("<!--/iag-app-support-->"), once.index("<!--iag-app-bundle-->"))
+        state2 = {"check": True, "changed": []}
+        R.write_bundle(str(page_path), block, state2)
+        self.assertEqual([], state2["changed"])
+        R.write_bundle(str(page_path), "", state)  # 拿掉
+        self.assertNotIn("iag-app-bundle", page_path.read_text(encoding="utf-8"))
 
 
 if __name__ == "__main__":

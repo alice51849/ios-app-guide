@@ -1,6 +1,14 @@
 {
-  "說明": "新款上架爆推名單（排程 launch_blitz 每天兩波）。上架滿 28 天或 L14 判讀完由負責部門移出；新款上線當天加入。",
+  "說明": "新款上架爆推名單（排程 launch_blitz 每天兩波）。上架滿 14 天停每日兩波、回每週輪替；L14 判讀完從名單移出，判讀延誤時最晚滿 28 天移出（由負責部門移出）；新款上線當天加入。",
   "apps": [
+    {
+      "key": "jellyday",
+      "名稱": "JellyDay: Visual Daily Planner",
+      "上架": "2026-11-21",
+      "上架說明": "iOS 上架 11-21 加入（14 天到 2026-12-05）；Google Play 暫列檔記 11-18 上線；iOS 公開頁 200 才放 iOS 連結",
+      "負責部門": "小組 B（千萬作戰小組，ops/company/ten_million_squads.json）",
+      "主攻": "時間軸視覺化日程（visual planner、timeline、routine timer），不放 cute、to-do、checklist，不搶可愛待辦清單（裁定 11-21 第 81 項）；放量名額只從低曝光價值的格切"
+    },
     {
       "key": "kumo",
       "名稱": "Kumo 體重紀錄（Kumo: Weight & GLP-1 Tracker）",

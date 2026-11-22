@@ -1,11 +1,11 @@
 {
- "generated": "2026-11-22T11:33:50Z",
+ "generated": "2026-11-22T19:47:54Z",
  "mode": "apply",
  "counts": {
-  "ok_reply": 85,
-  "ok_backfilled_earlier": 119,
+  "ok_reply": 86,
+  "ok_backfilled_earlier": 121,
   "unknown_app": 47,
-  "ok_store_only": 612,
+  "ok_store_only": 610,
   "backfilled": 2,
   "ok_bio_link": 68,
   "ok_caption": 4,
@@ -13,6 +13,18 @@
   "missing": 3
  },
  "rows": [
+  {
+   "channel": "threads",
+   "id": "18181840021450612",
+   "permalink": "https://www.threads.com/@hourstag.app/post/DgC4lv2HJmR",
+   "date": "2026-11-22",
+   "app": "lumiweather",
+   "status": "ok_reply",
+   "text": "明天（11/23 週一）穿什麼？ 台北 17–27°C 台中 16–26°C 高雄 22–27°C 以台北來說，舒服：短袖或薄長袖，進冷氣房帶一件薄外套。 日夜溫差 10 度，早上出門多帶一件。 #明天穿什麼 #天氣 預報：MET Norway，僅供參考，出門前以實際天氣為準。 ",
+   "why": "brand",
+   "ios_id": "6779552704",
+   "locale": "zh-Hant"
+  },
   {
    "channel": "threads",
    "id": "18099674063556212",
@@ -2345,11 +2357,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/Dctf9WTies-",
    "date": "2026-08-31",
    "app": "onepageppt",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "OnePage PPT: AI Slide Maker Turn notes into one slide Paste notes, a screenshot or a PDF and get one polished 16:9 slide with real charts. P",
    "why": "url+brand",
    "ios_id": "6798814385",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "18111118814225719",
+   "at": "2026-11-22T19:45:20Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -2429,11 +2446,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/Dctf4HzlXBI",
    "date": "2026-08-31",
    "app": "notesstudio100",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "100 Notes Studio: Pen & Paper Handwriting, PDF & Study Write and draw with 29 expressive tools, mark up PDFs, explore 100 styles and revise ",
    "why": "url+brand",
    "ios_id": "6798813048",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "18120932119798074",
+   "at": "2026-11-22T19:45:20Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -2573,16 +2595,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctgIP1DjI0",
    "date": "2026-08-31",
    "app": "picclear",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "PicClear Pro: Photo Cleaner Clean photos, free storage Find the duplicates, screenshots, blurry shots and huge videos hogging storage. Revie",
    "why": "url+brand",
    "ios_id": "6780223070",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "18127694560700732",
-   "at": "2026-11-22T11:31:16Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",
@@ -2996,16 +3013,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctgC_wD5j-",
    "date": "2026-08-31",
    "app": "photocream",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "PhotoCream Pro: Film Filters Film Camera & Retro Filters Give every photo a film-soul glow—real grain, light leaks and 100+ vintage looks, p",
    "why": "url+brand",
    "ios_id": "6781808054",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "17990259248886485",
-   "at": "2026-11-22T11:31:16Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",

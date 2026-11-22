@@ -53,6 +53,17 @@ ASSET_SOURCE = """.iag-store-facts{margin:1rem 0 0;max-width:100%;overflow-x:aut
 """
 
 
+# Apps whose localized pages must not show a price in visible text (the
+# support push check blocks visible prices; ruling 2026-11-21_rescue item 112
+# point 27). JSON-LD offers stay (machine-readable, inside <script>); the
+# visible facts pill keeps the rating, or is left out when there is none.
+HIDE_VISIBLE_PRICE_APP_IDS = frozenset({"6780575828"})  # snapport
+
+
+def shows_visible_price(app_id: object) -> bool:
+    return str(app_id) not in HIDE_VISIBLE_PRICE_APP_IDS
+
+
 def _style_block(site: str) -> str:
     return (
         f"{STYLE_START}\n"
@@ -62,7 +73,12 @@ def _style_block(site: str) -> str:
     )
 
 
-def _fact_block(detail: dict[str, object], store_url: str) -> str:
+def _fact_block(
+    detail: dict[str, object],
+    store_url: str,
+    *,
+    show_price: bool = True,
+) -> str | None:
     price = html.escape(str(detail["price"]), quote=True)
     formatted_price = html.escape(
         str(detail["formatted_price"]),
@@ -82,14 +98,21 @@ def _fact_block(detail: dict[str, object], store_url: str) -> str:
             f'<data value="{rating_count}">{rating_count}</data>'
             "</span>"
         )
+    if not show_price and not rating:
+        return None
+    price_part = (
+        '<span aria-hidden="true">&middot;</span>'
+        f'<data value="{price}">{formatted_price}</data>'
+        if show_price
+        else ""
+    )
     return (
         f"{FACT_START}\n"
         '<aside class="iag-store-facts" aria-label="App Store">\n'
         f'<a class="iag-store-facts__link" href="{store_url}" '
         'rel="nofollow noopener">\n'
         "<span>App Store</span>"
-        '<span aria-hidden="true">&middot;</span>'
-        f'<data value="{price}">{formatted_price}</data>'
+        f"{price_part}"
         f"{rating}\n"
         "</a>\n"
         "</aside>\n"
@@ -243,12 +266,20 @@ def ensure_page_facts(
         store_url,
         managed=managed,
     )
-    if detail is None:
+    facts = (
+        None
+        if detail is None
+        else _fact_block(
+            detail,
+            store_url,
+            show_price=shows_visible_price(app_id),
+        )
+    )
+    if facts is None:
         updated = STYLE_RE.sub("", updated, count=1)
         updated = FACT_RE.sub("", updated, count=1)
     else:
         style = _style_block(site)
-        facts = _fact_block(detail, store_url)
         if STYLE_START in updated:
             updated = STYLE_RE.sub(style, updated, count=1)
         else:

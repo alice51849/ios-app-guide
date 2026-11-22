@@ -1,9 +1,9 @@
 {
  "schema": "lumi.android-live-snapshot/v1",
  "source": "AndroidPlay android_live_scan (Play page HTTP 200 + publish LIVE)",
- "source_generated": "2026-11-22T22:42:36+0800",
+ "source_generated": "2026-11-22T23:46:25+0800",
  "count": 61,
- "content_sha256": "e153654c16b9b99f9f897c4d802d75460324c6b884dc17a9e535f212ef418521",
+ "content_sha256": "173d2bf31b8d661d6ecc66bd69620bdefdf39118fcf7261549bd80ac533b0b2d",
  "apps": {
   "aibriefpack": {
    "ios_app_id": "6791658210",
@@ -405,7 +405,7 @@
    "paid": false,
    "first_seen": "2026-11-18T16:31:37+0800",
    "launch_wave": "new",
-   "match": "store_title_exact",
+   "match": "bundle_id_exact",
    "copy": {
     "en-US": {
      "title": "JellyDay: Visual Daily Planner",

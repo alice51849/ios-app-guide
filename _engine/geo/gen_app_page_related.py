@@ -93,6 +93,37 @@ SUPPORT_LABEL = {
     "ar": "المساعدة والأسئلة الشائعة لهذا التطبيق",
 }
 
+# App 頁 → 該款所屬組合包的指南站組合包頁（組合包盤點 2026-11-23 第三節②；小組 C）。
+# 檔名 → (App Store ID, 包)；成員 ID 與 app_store_storefronts.APP_BUNDLE_MEMBERS 同一份
+# （測試會比對）。只放站內相對連結 bundles/<包>.html、不放商店連結也不另加 ct；該語系
+# 沒有 bundles/<包>.html 就不放（en-GB／en-AU 等之後建了組合包頁會自動接上）。
+# 護照證件照 snapport 不列：英文支援頁組合包段已停損拿掉、護欄第 6 點留對照組。
+BUNDLE_MEMBER_PAGES = {
+    "lumibopomofopro": ("6775773117", "lumi"),
+    "lumiletterspro": ("6778491147", "lumi"),
+    "lumimathpro": ("6776958488", "lumi"),
+    "lumimissionpro": ("6779745474", "lumi"),
+    "dailymate": ("6790418321", "language"),
+    "wordmate": ("6789917808", "language"),
+    "tripbee": ("6787754435", "travel"),
+    "gmoney": ("6755782939", "travel"),
+}
+BUNDLE_BLOCK = re.compile(
+    r"\n?<!--iag-app-bundle-->.*?<!--/iag-app-bundle-->\n?", re.S
+)
+# 包名照指南站各語系組合包頁 h1；句子各語系原生寫，不寫價格、不寫划算、不寫試用。
+BUNDLE_NAMES = {
+    "en": {"lumi": "Lumi Learning Bundle", "language": "Wordmate & DailyMate Bundle",
+           "travel": "Trip Planner, ID Photo, Budget bundle"},
+    "zh-Hant": {"lumi": "Lumi 星球學習組合", "language": "語言學習包", "travel": "出國旅遊包"},
+    "ja": {"lumi": "Lumi 知育セット", "language": "語学学習パック", "travel": "海外旅行セット"},
+}
+BUNDLE_LINE = {
+    "en": "Also available in the {name} — see which apps it includes",
+    "zh-Hant": "這款也收在「{name}」裡，點進來看包裡有哪幾款 App",
+    "ja": "このアプリは「{name}」にも入っています。セットの中身はこちら",
+}
+
 HEADING = {
     "en": "Answers about this app",
     "zh-Hant": "關於這款 App 的問答",
@@ -294,6 +325,62 @@ def write_support(path, block, state):
             fh.write(merged)
 
 
+def bundle_block(locale, name, source):
+    """<語系>/<款>.html 的「也在○○組合包」一行；不在表上、主 App 不符、該語系沒有
+    組合包頁或沒有該語系句子就回空字串（清掉舊的）。"""
+    row = BUNDLE_MEMBER_PAGES.get(name[: -len(".html")])
+    if not row or primary_app_id(source) != row[0]:
+        return ""
+    _app_id, package = row
+    lang = locale if locale in BUNDLE_LINE else base_lang(locale)
+    if lang not in BUNDLE_LINE:
+        return ""
+    if not os.path.isfile(os.path.join(PAGES, locale, "bundles", f"{package}.html")):
+        return ""
+    e = html.escape
+    text = BUNDLE_LINE[lang].format(name=BUNDLE_NAMES[lang][package])
+    return (
+        "\n<!--iag-app-bundle-->\n"
+        f'<p class="wrap app-bundle"><a href="bundles/{package}.html" '
+        f'data-ls-bundle="{package}">{e(text)}</a></p>\n'
+        "<!--/iag-app-bundle-->\n"
+    )
+
+
+def write_bundle(path, block, state):
+    """組合包一行固定接在支援頁連結後（沒有就相關問答後、再沒有就 </main> 後），
+    跟 write_block／write_support 同一錨點家族、排在最後，每輪輸出一致不互翻。"""
+    source = read(path)
+    if not source:
+        return
+    cleaned = BUNDLE_BLOCK.sub("", source)
+    merged = cleaned
+    if block:
+        cut = -1
+        for marker in ("<!--/iag-app-support-->", "<!--/iag-app-related-->"):
+            end = cleaned.rfind(marker)
+            if end != -1:
+                cut = end + len(marker)
+                if cleaned[cut:cut + 1] == "\n":
+                    cut += 1
+                break
+        if cut == -1:
+            idx = cleaned.rfind("</main>")
+            cut = idx + len("</main>") if idx != -1 else -1
+        if cut == -1:
+            idx = cleaned.rfind("</body>")
+            cut = idx if idx != -1 else len(cleaned)
+        merged = cleaned[:cut] + block + cleaned[cut:]
+    if merged == source:
+        return
+    rel = os.path.relpath(path, PAGES)
+    if rel not in state["changed"]:
+        state["changed"].append(rel)
+    if not state["check"]:
+        with open(path, "w", encoding="utf-8") as fh:
+            fh.write(merged)
+
+
 def pick_related(source, url_self, pool, limit):
     seed = tokens(
         text_of(source, TITLE_RE) + " " + text_of(source, H1_RE)
@@ -336,6 +423,7 @@ def process_locale(locale, state):
         else:
             write_block(path, build_block(locale, related), state)
         write_support(path, support_block(locale, name, source), state)
+        write_bundle(path, bundle_block(locale, name, source), state)
 
 
 def process_hubs(state):

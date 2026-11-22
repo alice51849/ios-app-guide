@@ -85,6 +85,34 @@ def _state(
     }
 
 
+class HiddenVisiblePriceTests(unittest.TestCase):
+    """Ruling 2026-11-21_rescue item 112 point 27: no visible price for Snapport."""
+
+    URL = "https://apps.apple.com/tw/app/id6780575828"
+
+    def test_snapport_is_hidden_and_others_are_not(self):
+        self.assertFalse(facts.shows_visible_price(APPSTORE["snapport"]))
+        self.assertTrue(facts.shows_visible_price(APPSTORE["snapportlite"]))
+
+    def test_hidden_price_without_rating_drops_the_block(self):
+        detail = {"price": "190", "formatted_price": "$190.00", "currency": "TWD"}
+        self.assertIsNone(facts._fact_block(detail, self.URL, show_price=False))
+        shown = facts._fact_block(detail, self.URL)
+        self.assertIn("$190.00", shown)
+
+    def test_hidden_price_keeps_rating_only(self):
+        import gen_app_decision_cards as cards
+        detail = {
+            "price": "190", "formatted_price": "$190.00", "currency": "TWD",
+            "rating_value": 4.9, "rating_count": 12,
+        }
+        block = facts._fact_block(detail, self.URL, show_price=False)
+        self.assertNotIn("190", block)
+        self.assertIn('<data value="4.9">4.9</data>', block)
+        parsed = cards._storefront_fact(block, False)
+        self.assertTrue(parsed is None or "formatted_price" not in parsed)
+
+
 class AppStoreFactsTests(unittest.TestCase):
     def test_zero_price_labels_cover_every_official_locale(self):
         self.assertEqual(

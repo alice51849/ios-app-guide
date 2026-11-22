@@ -1,12 +1,12 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-11-21",
-  "content_digest": "60a35ecb3f4b8bc6cbde7bb501b4d370f665b5db6214d1301b5f83611af28f5d",
+  "date_modified": "2026-11-22",
+  "content_digest": "a1a81c501d6494a758276411941a38da0e7164b5ce173955eec730ac0b593ef0",
   "locale": "ko",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 60,
+  "record_count": 61,
   "apps": [
     {
       "key": "notesstudio100",
@@ -859,9 +859,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/ko/gbago.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "1100",
+        "price": "4400",
         "currency": "KRW",
-        "formatted_price": "￦1,100",
+        "formatted_price": "￦4,400",
         "storefront_url": "https://apps.apple.com/kr/app/id6804564400"
       }
     },
@@ -971,6 +971,61 @@
         "currency": "KRW",
         "formatted_price": "￦7,700",
         "storefront_url": "https://apps.apple.com/kr/app/id6754218117"
+      }
+    },
+    {
+      "key": "jellyday",
+      "app_store_id": "6835673714",
+      "name": "JellyDay: 귀여운 하루 계획표",
+      "summary": "오늘 하루를 타임라인으로 보세요. JellyDay에서는 일정 하나하나가 부드러운 파스텔 블록이 되고, 오래 걸리는 일일수록 블록이 길어져요. '지금' 선이 현재 시각을 알려 줘서 지금 할 일, 다음 일, 남은 시간이 한눈에 보여요. 일정이 밀렸다면 일정 메뉴에서 오늘 남은 일정을 뒤로 미루고, 부드러운 카운트다운을 따라 블록이나 루틴을 한 단계씩 지나가면 돼요.",
+      "category": "productivity",
+      "search_terms": [
+        "다이어리",
+        "스케줄",
+        "스케줄러",
+        "스케쥴",
+        "일정표",
+        "시간표",
+        "일과",
+        "일과표",
+        "습관",
+        "위젯",
+        "잠금화면",
+        "집중",
+        "공부",
+        "스터디",
+        "갓생",
+        "데일리",
+        "아침",
+        "모닝",
+        "타임블록",
+        "타임블럭",
+        "자기관리",
+        "타임라인",
+        "비주얼",
+        "생산성",
+        "생활",
+        "알림"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/kr/app/id6835673714?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/ko/jellyday.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "KRW",
+        "formatted_price": "무료",
+        "storefront_url": "https://apps.apple.com/kr/app/id6835673714"
       }
     },
     {

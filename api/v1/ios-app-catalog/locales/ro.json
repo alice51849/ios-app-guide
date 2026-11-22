@@ -1,12 +1,12 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-11-21",
-  "content_digest": "60a35ecb3f4b8bc6cbde7bb501b4d370f665b5db6214d1301b5f83611af28f5d",
+  "date_modified": "2026-11-22",
+  "content_digest": "a1a81c501d6494a758276411941a38da0e7164b5ce173955eec730ac0b593ef0",
   "locale": "ro",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 60,
+  "record_count": 61,
   "apps": [
     {
       "key": "notesstudio100",
@@ -657,9 +657,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/ro/gbago.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "4.99",
+        "price": "14.99",
         "currency": "RON",
-        "formatted_price": "4,99 lei",
+        "formatted_price": "14,99 lei",
         "storefront_url": "https://apps.apple.com/ro/app/id6804564400"
       }
     },
@@ -741,6 +741,46 @@
         "currency": "RON",
         "formatted_price": "29,99 lei",
         "storefront_url": "https://apps.apple.com/ro/app/id6754218117"
+      }
+    },
+    {
+      "key": "jellyday",
+      "app_store_id": "6835673714",
+      "name": "JellyDay: Planificator zilnic",
+      "summary": "Vezi ziua ca pe o cronologie: fiecare activitate e un bloc pastelat, mai înalt cu cât durează mai mult, iar linia „acum” arată dintr-o privire ce e acum, ce urmează și cât timp a rămas. Întârzii? Amână restul zilei din meniul unei activități, apoi o numărătoare inversă blândă te duce pas cu pas prin fiecare bloc sau rutină.",
+      "category": "productivity",
+      "search_terms": [
+        "program",
+        "orar",
+        "zilnică",
+        "obiceiuri",
+        "organizator",
+        "plan",
+        "planificare",
+        "dimineață",
+        "temporizator",
+        "timp",
+        "concentrare"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/ro/app/id6835673714?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/ro/jellyday.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "RON",
+        "formatted_price": "Gratuit",
+        "storefront_url": "https://apps.apple.com/ro/app/id6835673714"
       }
     },
     {

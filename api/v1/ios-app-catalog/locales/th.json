@@ -1,12 +1,12 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-11-21",
-  "content_digest": "60a35ecb3f4b8bc6cbde7bb501b4d370f665b5db6214d1301b5f83611af28f5d",
+  "date_modified": "2026-11-22",
+  "content_digest": "a1a81c501d6494a758276411941a38da0e7164b5ce173955eec730ac0b593ef0",
   "locale": "th",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 60,
+  "record_count": 61,
   "apps": [
     {
       "key": "notesstudio100",
@@ -661,9 +661,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/th/gbago.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "29",
+        "price": "99",
         "currency": "THB",
-        "formatted_price": "฿29.00",
+        "formatted_price": "฿99.00",
         "storefront_url": "https://apps.apple.com/th/app/id6804564400"
       }
     },
@@ -744,6 +744,47 @@
         "currency": "THB",
         "formatted_price": "฿199.00",
         "storefront_url": "https://apps.apple.com/th/app/id6754218117"
+      }
+    },
+    {
+      "key": "jellyday",
+      "app_store_id": "6835673714",
+      "name": "JellyDay: แพลนเนอร์รายวัน",
+      "summary": "มองวันของคุณเป็นไทม์ไลน์: ใน JellyDay ทุกงานคือบล็อกสีพาสเทลนุ่มๆ ยิ่งบล็อกสูงก็ยิ่งใช้เวลานาน มีเส้นบอกเวลาปัจจุบันให้เห็นว่าตอนนี้คุณอยู่ตรงไหน มองแวบเดียวก็รู้ว่าตอนนี้ทำอะไร งานถัดไปคืออะไร และเหลือเวลาอีกเท่าไร ช้ากว่าที่คิด? เลื่อนงานที่เหลือของวันนี้ออกไปได้จากเมนูของงาน แล้วให้นับถอยหลังแบบนุ่มนวลพาคุณผ่านแต่ละบล็อกหรือกิจวัตรไปทีละขั้น",
+      "category": "productivity",
+      "search_terms": [
+        "จัดตาราง",
+        "ตารางชีวิต",
+        "จัดการเวลา",
+        "ประจำวัน",
+        "จับเวลา",
+        "นับถอยหลัง",
+        "โฟกัส",
+        "วิดเจ็ต",
+        "รูทีน",
+        "อ่านหนังสือ",
+        "งาน",
+        "เช้า"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/th/app/id6835673714?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/th/jellyday.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "THB",
+        "formatted_price": "ฟรี",
+        "storefront_url": "https://apps.apple.com/th/app/id6835673714"
       }
     },
     {

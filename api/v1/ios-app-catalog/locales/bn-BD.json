@@ -1,12 +1,12 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-11-21",
-  "content_digest": "60a35ecb3f4b8bc6cbde7bb501b4d370f665b5db6214d1301b5f83611af28f5d",
+  "date_modified": "2026-11-22",
+  "content_digest": "a1a81c501d6494a758276411941a38da0e7164b5ce173955eec730ac0b593ef0",
   "locale": "bn-BD",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 60,
+  "record_count": 61,
   "apps": [
     {
       "key": "notesstudio100",
@@ -997,6 +997,62 @@
       },
       "app_store_url": null,
       "guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/hourstag.html",
+      "verified_live": true,
+      "locale": "bn-BD",
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+        "evidence": {
+          "source_url": "https://support.apple.com/en-us/118205",
+          "observed_at": "2026-09-12",
+          "country": "BD",
+          "apple_media_services_markets": 174,
+          "country_listed": false,
+          "lookup_app_results": 0,
+          "lookup_control_results": 0,
+          "redirect_market": "US"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
+    },
+    {
+      "key": "jellyday",
+      "app_store_id": "6835673714",
+      "name": "JellyDay: ডেইলি প্ল্যানার",
+      "summary": "আপনার দিনটা দেখুন একটি টাইমলাইনে: JellyDay-তে প্রতিটি কাজ একটি নরম প্যাস্টেল ব্লক, আর ব্লক যত উঁচু, কাজে তত বেশি সময় লাগে। একটি রেখা দেখায় আপনি এখন কোথায় আছেন, তাই এখন কী, এরপর কী আর কতটা সময় বাকি, এক নজরেই বোঝা যায়। দেরি হয়ে গেছে? কাজের মেনু থেকে আজকের বাকি কাজ পিছিয়ে দিন, তারপর কোমল একটি কাউন্টডাউন আপনাকে প্রতিটি ব্লক বা রুটিনের মধ্য দিয়ে ধাপে ধাপে এগিয়ে নেবে।",
+      "category": "productivity",
+      "search_terms": [
+        "দৈনিক",
+        "দৈনন্দিন",
+        "পরিকল্পনা",
+        "পড়ার",
+        "সকালের",
+        "শিডিউল",
+        "কাউন্টডাউন",
+        "উইজেট",
+        "মনোযোগ",
+        "ফোকাস",
+        "অভ্যাস",
+        "রিমাইন্ডার",
+        "রাতের"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": null,
+      "guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/jellyday.html",
       "verified_live": true,
       "locale": "bn-BD",
       "market_availability": {

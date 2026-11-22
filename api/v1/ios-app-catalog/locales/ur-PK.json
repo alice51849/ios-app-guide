@@ -1,12 +1,12 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-11-21",
-  "content_digest": "60a35ecb3f4b8bc6cbde7bb501b4d370f665b5db6214d1301b5f83611af28f5d",
+  "date_modified": "2026-11-22",
+  "content_digest": "a1a81c501d6494a758276411941a38da0e7164b5ce173955eec730ac0b593ef0",
   "locale": "ur-PK",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 60,
+  "record_count": 61,
   "apps": [
     {
       "key": "notesstudio100",
@@ -706,9 +706,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/ur-PK/gbago.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "300",
+        "price": "900",
         "currency": "PKR",
-        "formatted_price": "Rs 300.00",
+        "formatted_price": "Rs 900.00",
         "storefront_url": "https://apps.apple.com/pk/app/id6804564400"
       }
     },
@@ -797,6 +797,49 @@
         "currency": "PKR",
         "formatted_price": "Rs 1,300.00",
         "storefront_url": "https://apps.apple.com/pk/app/id6754218117"
+      }
+    },
+    {
+      "key": "jellyday",
+      "app_store_id": "6835673714",
+      "name": "JellyDay: ویژول ڈیلی پلانر",
+      "summary": "اپنے دن کو ایک ٹائم لائن کی طرح دیکھیں: JellyDay میں ہر کام ایک نرم پیسٹل بلاک ہے، اور بلاک جتنا اونچا، کام میں اتنا زیادہ وقت۔ “ابھی” والی لکیر بتاتی ہے کہ آپ اس وقت کہاں ہیں، اس لیے ابھی کیا ہے، آگے کیا ہے اور کتنا وقت باقی ہے، ایک نظر میں صاف دکھتا ہے۔ دیر ہو گئی؟ کام کے مینو سے آج کے باقی کام آگے سرکا دیں، پھر نرم سا کاؤنٹ ڈاؤن آپ کو ہر بلاک یا روٹین میں قدم بہ قدم آگے لے چلتا ہے۔",
+      "category": "productivity",
+      "search_terms": [
+        "شیڈول",
+        "پلان",
+        "وقت",
+        "انتظام",
+        "معمول",
+        "پڑھائی",
+        "منصوبہ بندی",
+        "یاد دہانی",
+        "کاؤنٹ ڈاؤن",
+        "فوکس",
+        "عادت",
+        "ویجٹ",
+        "روزمرہ",
+        "مینجمنٹ"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/pk/app/id6835673714?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/ur-PK/jellyday.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "PKR",
+        "formatted_price": "مفت",
+        "storefront_url": "https://apps.apple.com/pk/app/id6835673714"
       }
     },
     {

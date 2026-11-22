@@ -1,8 +1,8 @@
 {
   "schema": "lumi.live-app-roster/v1",
   "version": 1,
-  "revision": 18,
-  "roster_digest": "151b01fd2464a3f08cccb53f5250e72f9f2e0412099cee732d39496fa3f97637",
+  "revision": 19,
+  "roster_digest": "aa1e3c3c92c5ec244328409295cff82cdb544a430c9b5717484afe3d02b5487a",
   "apps": {
     "aibriefpack": {
       "app_id": "6791658210",
@@ -79,6 +79,10 @@
     "hourstaglite": {
       "app_id": "6794039979",
       "name": "HoursTag Lite"
+    },
+    "jellyday": {
+      "app_id": "6835673714",
+      "name": "JellyDay"
     },
     "kumo": {
       "app_id": "6830824515",

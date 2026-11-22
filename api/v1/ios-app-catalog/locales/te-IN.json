@@ -1,12 +1,12 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-11-21",
-  "content_digest": "60a35ecb3f4b8bc6cbde7bb501b4d370f665b5db6214d1301b5f83611af28f5d",
+  "date_modified": "2026-11-22",
+  "content_digest": "a1a81c501d6494a758276411941a38da0e7164b5ce173955eec730ac0b593ef0",
   "locale": "te-IN",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 60,
+  "record_count": 61,
   "apps": [
     {
       "key": "notesstudio100",
@@ -666,9 +666,9 @@
       "guide_url": "https://open.cait518.cc/ios-app-guide/te-IN/gbago.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "99",
+        "price": "299",
         "currency": "INR",
-        "formatted_price": "₹ 99",
+        "formatted_price": "₹ 299",
         "storefront_url": "https://apps.apple.com/in/app/id6804564400"
       }
     },
@@ -753,6 +753,49 @@
         "currency": "INR",
         "formatted_price": "₹ 499",
         "storefront_url": "https://apps.apple.com/in/app/id6754218117"
+      }
+    },
+    {
+      "key": "jellyday",
+      "app_store_id": "6835673714",
+      "name": "JellyDay: డైలీ ప్లానర్",
+      "summary": "మీ రోజును ఒక టైంలైన్గా చూడండి: JellyDay లో ప్రతి పని ఒక మృదువైన పాస్టెల్ బ్లాక్; బ్లాక్ ఎంత ఎత్తుగా ఉంటే ఆ పనికి అంత ఎక్కువ సమయం. ఒక గీత మీరు ఇప్పుడు ఎక్కడ ఉన్నారో చూపిస్తుంది, కాబట్టి ఇప్పుడు ఏమిటి, తర్వాత ఏమిటి, ఇంకా ఎంత సమయం ఉంది అనేది ఒక్క చూపులో తెలుస్తుంది. వెనుకబడ్డారా? పని మెను నుంచి ఈరోజు మిగిలిన పనులను వాయిదా వేయండి, తర్వాత మృదువైన కౌంట్డౌన్ ప్రతి బ్లాక్ లేదా రొటీన్ ద్వారా మిమ్మల్ని అడుగడుగునా ముందుకు తీసుకెళ్తుంది.",
+      "category": "productivity",
+      "search_terms": [
+        "టైమర్",
+        "షెడ్యూల్",
+        "ప్రణాళిక",
+        "రొటీన్",
+        "అలవాట్లు",
+        "రిమైండర్",
+        "రోజువారీ",
+        "ఫోకస్",
+        "ఉదయం",
+        "విడ్జెట్",
+        "సమయ",
+        "నిర్వహణ",
+        "పట్టిక",
+        "పని"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/in/app/id6835673714?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/te-IN/jellyday.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "ఉచితం",
+        "storefront_url": "https://apps.apple.com/in/app/id6835673714"
       }
     },
     {

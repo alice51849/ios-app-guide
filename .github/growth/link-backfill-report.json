@@ -1,11 +1,11 @@
 {
- "generated": "2026-11-21T19:23:53Z",
+ "generated": "2026-11-22T11:33:50Z",
  "mode": "apply",
  "counts": {
-  "ok_reply": 84,
-  "ok_backfilled_earlier": 117,
+  "ok_reply": 85,
+  "ok_backfilled_earlier": 119,
   "unknown_app": 47,
-  "ok_store_only": 614,
+  "ok_store_only": 612,
   "backfilled": 2,
   "ok_bio_link": 68,
   "ok_caption": 4,
@@ -13,6 +13,18 @@
   "missing": 3
  },
  "rows": [
+  {
+   "channel": "threads",
+   "id": "18099674063556212",
+   "permalink": "https://www.threads.com/@hourstag.app/post/DgB5kkPFmR9",
+   "date": "2026-11-22",
+   "app": "mochi",
+   "status": "ok_reply",
+   "text": "Friendsgiving at my place this year, so naturally I made lists. A menu list and a grocery list, both cute enough that I don't dread opening ",
+   "why": "trial",
+   "ios_id": "6785004775",
+   "locale": "en-US"
+  },
   {
    "channel": "threads",
    "id": "18125698912820590",
@@ -1929,16 +1941,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctgPGLj4HL",
    "date": "2026-08-31",
    "app": "scanto",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "ScanTo Pro: Offline PDF OCR Private scans. Pay once. Scan anything, find it forever. Crisp PDFs, searchable OCR text, and Face ID locking — ",
    "why": "url+brand",
    "ios_id": "6779977651",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "18127171933697464",
-   "at": "2026-11-21T19:21:16Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",
@@ -2566,11 +2573,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctgIP1DjI0",
    "date": "2026-08-31",
    "app": "picclear",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "PicClear Pro: Photo Cleaner Clean photos, free storage Find the duplicates, screenshots, blurry shots and huge videos hogging storage. Revie",
    "why": "url+brand",
    "ios_id": "6780223070",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "18127694560700732",
+   "at": "2026-11-22T11:31:16Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -2734,16 +2746,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctgUsXilB4",
    "date": "2026-08-31",
    "app": "sereno",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "Sereno: Sleep Sounds Drift off with white noise Buy once, sleep forever. Blend dozens of living sounds into 1000+ unique soundscapes — real-",
    "why": "url+brand",
    "ios_id": "6788236641",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "18110207912319821",
-   "at": "2026-11-21T19:21:16Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",
@@ -2989,11 +2996,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctgC_wD5j-",
    "date": "2026-08-31",
    "app": "photocream",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "PhotoCream Pro: Film Filters Film Camera & Retro Filters Give every photo a film-soul glow—real grain, light leaks and 100+ vintage looks, p",
    "why": "url+brand",
    "ios_id": "6781808054",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "17990259248886485",
+   "at": "2026-11-22T11:31:16Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",

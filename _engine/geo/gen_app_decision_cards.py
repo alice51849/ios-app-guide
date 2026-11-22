@@ -405,22 +405,28 @@ def _storefront_fact(source: str, answer: bool) -> dict[str, object] | None:
         (html.unescape(match.group("value")), _plain_text(match.group("label")))
         for match in STORE_DATA_RE.finditer(block.group("body"))
     ]
-    if len(values) not in {1, 3}:
+    if len(values) not in {1, 2, 3}:
         raise ValueError("Malformed verified App Store facts")
-    price_value, formatted_price = values[0]
-    if (
-        DECIMAL_RE.fullmatch(price_value) is None
-        or not formatted_price
-        or len(formatted_price) > 64
-    ):
-        raise ValueError("Invalid verified App Store price")
-    result: dict[str, object] = {
-        "price_value": price_value,
-        "formatted_price": formatted_price,
-    }
-    if len(values) == 3:
-        rating_value, rating_label = values[1]
-        rating_count, count_label = values[2]
+    result: dict[str, object] = {}
+    if len(values) != 2:
+        # Two values = rating only: the facts block left the visible price
+        # out on purpose (gen_app_store_facts.HIDE_VISIBLE_PRICE_APP_IDS).
+        price_value, formatted_price = values[0]
+        if (
+            DECIMAL_RE.fullmatch(price_value) is None
+            or not formatted_price
+            or len(formatted_price) > 64
+        ):
+            raise ValueError("Invalid verified App Store price")
+        result.update(
+            {
+                "price_value": price_value,
+                "formatted_price": formatted_price,
+            }
+        )
+    if len(values) >= 2:
+        rating_value, rating_label = values[-2]
+        rating_count, count_label = values[-1]
         if (
             DECIMAL_RE.fullmatch(rating_value) is None
             or not rating_count.isdigit()
@@ -441,7 +447,7 @@ def _storefront_fact(source: str, answer: bool) -> dict[str, object] | None:
                     "rating_count": int(rating_count),
                 }
             )
-    return result
+    return result or None
 
 
 def _store_subtitle(key: str, locale: str) -> str:
@@ -534,13 +540,18 @@ def card_block(key: str, app_id: str, content: dict[str, object]) -> str:
                 f'<data value="{esc(detail["rating_count"])}">'
                 f'{esc(detail["rating_count"])}</data></span>'
             )
-        storefront = (
-            '    <div class="iag-decision-card__storefront">'
-            "<span>App Store</span>"
+        price = (
             '<span aria-hidden="true"> · </span>'
             f'<data value="{esc(detail["price_value"])}">'
-            f'{esc(detail["formatted_price"])}</data>{rating}</div>'
+            f'{esc(detail["formatted_price"])}</data>'
+            if "formatted_price" in detail
+            else ""
         )
+        if price or rating:
+            storefront = (
+                '    <div class="iag-decision-card__storefront">'
+                f"<span>App Store</span>{price}{rating}</div>"
+            )
     return "\n".join((
         CARD_START,
         (

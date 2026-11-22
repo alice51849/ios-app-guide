@@ -22,7 +22,7 @@ from app_store_storefronts import (
 from appstore_live import live_app_keys
 import gen_mobile_app_identity
 import gen_smart_app_banners
-from gen_store_attribution import campaign_token
+from gen_store_attribution import APP_PAGE_CAMPAIGNS, campaign_token
 from official_locales import OFFICIAL_LOCALES, OFFICIAL_LOCALE_SET
 from videogen.registry import APPS, APPSTORE
 
@@ -67,6 +67,7 @@ ASSET_SOURCE = r"""(() => {
     const store = new URL(data.app_store_url);
     const facts = data.storefront_facts;
     const storefronts = __LOCALE_STOREFRONTS__;
+    const pageCampaigns = __APP_PAGE_CAMPAIGNS__;
     const country = storefronts[data.page_language];
     const campaign = [...store.searchParams];
     if (
@@ -81,7 +82,9 @@ ASSET_SOURCE = r"""(() => {
       campaign.length !== 3 ||
       campaign.map(([key]) => key).join(",") !== "pt,ct,mt" ||
       !/^[0-9]{1,20}$/.test(store.searchParams.get("pt")) ||
-      store.searchParams.get("ct") !== "geo_pick" ||
+      !(store.searchParams.get("ct") === "geo_pick" ||
+        (pageCampaigns[store.searchParams.get("ct")]?.[0] === data.page_language &&
+         pageCampaigns[store.searchParams.get("ct")]?.[1] === data.app_store_id)) ||
       store.searchParams.get("mt") !== "8" ||
       store.hash ||
       !/^[0-9]{9,12}$/.test(data.app_store_id)
@@ -176,7 +179,15 @@ ASSET_SOURCE = r"""(() => {
     console.error("WebMCP install tool registration failed.", error)
   );
 })();
-""".replace("__LOCALE_STOREFRONTS__", json.dumps(LOCALE_STOREFRONTS, sort_keys=True))
+""".replace("__LOCALE_STOREFRONTS__", json.dumps(LOCALE_STOREFRONTS, sort_keys=True)).replace(
+    # gen_store_attribution.APP_PAGE_CAMPAIGNS: code -> [page locale, App ID]; a page-specific
+    # code passes only on its own page language and App (第 111 項第 3 點，2026-11-22).
+    "__APP_PAGE_CAMPAIGNS__",
+    json.dumps(
+        {code: [page.split("/", 1)[0], app_id] for page, (code, app_id) in APP_PAGE_CAMPAIGNS.items()},
+        sort_keys=True,
+    ),
+)
 
 
 class _PageParser(HTMLParser):

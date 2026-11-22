@@ -123,6 +123,28 @@ class AttributionIntegrityTests(unittest.TestCase):
         self.assertEqual(["geo_pick"], query["ct"])
         self.audit(json.dumps(payload), "data/zhuyin-bopomofo.json")
 
+    def test_app_page_campaign_is_page_specific_and_bound_to_its_app(self):
+        # 裁定 2026-11-21_rescue 第 111 項第 3 點：Trip Planet en-US 既有 App 頁一頁一碼。
+        trip_id = "6787193643"
+        code = "iag_tripplanet_us_kidsgames"
+        self.assertEqual(code, attribution.campaign_token("en-US/tripplanet.html"))
+        self.assertEqual(code, attribution.campaign_token("/en-US/tripplanet.html"))
+        self.assertEqual("geo_pick", attribution.campaign_token("en-GB/tripplanet.html"))
+        self.assertEqual("geo_pick", attribution.campaign_token("en-US/hubs/tripplanet.html"))
+        self.assertLessEqual(len(code), attribution.MAX_TOKEN)
+        self.assertTrue(attribution.app_bound_campaign(code, trip_id))
+        self.assertFalse(attribution.app_bound_campaign(code, APP_ID))
+        trip = attribution.final_store_url(
+            f"https://apps.apple.com/us/app/id{trip_id}?pt={PROVIDER}&mt=8",
+            code, PROVIDER, locale="en-US", availability=AVAILABILITY, app_id=trip_id,
+        )
+        self.assertEqual(f"https://apps.apple.com/us/app/id{trip_id}?pt={PROVIDER}&ct={code}&mt=8", trip)
+        other = attribution.final_store_url(
+            f"https://apps.apple.com/us/app/id{APP_ID}?pt={PROVIDER}&mt=8",
+            code, PROVIDER, locale="en-US", availability=AVAILABILITY, app_id=APP_ID,
+        )
+        self.assertEqual(f"https://apps.apple.com/us/app/id{APP_ID}?pt={PROVIDER}&ct=geo_pick&mt=8", other)
+
     def test_full_live_roster_50_locales_across_all_text_delivery_formats(self):
         import portfolio_app_catalog_api as api
         import gen_github_discovery_readmes as discovery
@@ -951,7 +973,12 @@ class AttributionIntegrityTests(unittest.TestCase):
                     data = json.loads(block[1])
                     assert_blocked_record(self, data, ("app_store_url",))
                     continue
-                self.assertEqual([store_url(app_id, locale)], [ref.url for ref in refs])
+                # 既有 App 頁的頁專屬碼（gen_store_attribution.APP_PAGE_CAMPAIGNS）照該頁出碼。
+                expected_campaign = attribution.campaign_token(f"{locale}/{key}.html")
+                self.assertEqual(
+                    [store_url(app_id, locale, campaign=expected_campaign)],
+                    [ref.url for ref in refs],
+                )
                 payloads.append({
                     "app_store_id": app_id, "app_name": key,
                     "page_language": locale, "app_store_url": refs[0].url,

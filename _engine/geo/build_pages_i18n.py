@@ -1052,6 +1052,22 @@ HOURSTAG_WEB_DESCRIPTION_OVERRIDES = {
 }
 
 
+# 既有 App 頁的 head 承接意圖（裁定 2026-11-21_rescue 第 111 項第 3 點，小組 F，2026-11-22）：
+# 只換 <title> 與 meta description（og／twitter 由 gen_social_previews 從這兩項抄），
+# 正文、canonical、hreflang 不動。文字只寫該款美國 App Store 描述有的功能；
+# 免費只有 1 趟，不暗示可以一趟接一趟。頁專屬 ct 在 gen_store_attribution.APP_PAGE_CAMPAIGNS。
+HEAD_OVERRIDES = {
+    ("tripplanet", "en-US"): {
+        "title": "Trip Planet: Kids Travel Games for Road Trips & Flights | iOS App",
+        "description": (
+            "Road trip games for kids: car rides and long flights become small "
+            "real-world missions with collectible rewards and passport stamps. "
+            "Start free with 1 trip."
+        ),
+    },
+}
+
+
 def sanitize_description(key, locale, description):
     if not description:
         return description
@@ -1577,6 +1593,9 @@ def build_one(key, locale, all_locales, *, copy_by_locale=None):
         _lead_description_line(desc) if desc else sub, 155
     )
     title_sub = _word_bounded_excerpt(sub, 60)
+    head_override = HEAD_OVERRIDES.get((key, locale), {})
+    page_title = head_override.get("title") or f"{name} — {title_sub} | iOS App"
+    short_desc = head_override.get("description") or short_desc
 
     pricing_text = pricing_text_for(key, locale)
     # App Store 排名儀器量到的母語搜尋詞(geo/data/rank_opportunity_topics.json):
@@ -1643,7 +1662,7 @@ def build_one(key, locale, all_locales, *, copy_by_locale=None):
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{e(name)} — {e(title_sub)} | iOS App</title>
+<title>{e(page_title)}</title>
 <meta name="description" content="{e(short_desc)}">
 <meta name="keywords" content="{e(', '.join(meta_keywords))}">
 <link rel="canonical" href="{SITE}/{locale}/{key}.html">

@@ -228,8 +228,15 @@ SERIES_PAGE_CAMPAIGNS = {
     "iag_kawaii_ja_tripbeecute": "6826987407",
     "iag_kawaii_ja_foldparty": "6829184924",
 }
+# 既有 App 頁的頁專屬碼（裁定 2026-11-21_rescue 第 111 項第 3 點，小組 F，2026-11-22）：
+# 頁面路徑 -> (碼, App ID)。campaign_token() 對該頁回這個碼，所以 build_pages_i18n、
+# 決策卡、QR、改寫等各道一起出同一碼；只綁該款，別款連結在 final_store_url 退回 geo_pick。
+APP_PAGE_CAMPAIGNS = {
+    "en-US/tripplanet.html": ("iag_tripplanet_us_kidsgames", "6787193643"),
+}
 APP_BOUND_CAMPAIGNS = {"duo_img": "6824946559", **WEB_TOOL_PILOT_CAMPAIGNS, **WEB_HOOK_CAMPAIGNS,
-                       **WEB_GALLERY_CAMPAIGNS, **SERIES_PAGE_CAMPAIGNS}
+                       **WEB_GALLERY_CAMPAIGNS, **SERIES_PAGE_CAMPAIGNS,
+                       **{code: app_id for code, app_id in APP_PAGE_CAMPAIGNS.values()}}
 
 
 def app_bound_campaign(campaign: str | None, app_id: str | None) -> bool:
@@ -330,6 +337,9 @@ def campaign_token(rel: str, page_text: str | None = None) -> str:
         if marker:
             return campaign_token_for_intent(marker.group("intent"))
     parts = [part for part in rel.split("/") if part]
+    page_campaign = APP_PAGE_CAMPAIGNS.get("/".join(parts))
+    if page_campaign is not None:
+        return page_campaign[0]
     directories = parts[:-1]
     bucket = PICK
     for part in directories:
@@ -488,6 +498,9 @@ def final_store_url(
         # protected gw family). Everything else gets the page token.
         gw = gw_campaign.stamp_campaign(token, existing, url, app_id)
         campaign = gw if gw is not None else token
+        if APP_BOUND_CAMPAIGNS.get(campaign) not in (None, app_id):
+            # A page-specific code bound to another App never leaks onto this link.
+            campaign = TOKEN_PREFIX + PICK
     return required_campaign_app_store_url(
         url, campaign, provider_token=provider,
         expected_locale=storefront_locale_for_url(url, locale),

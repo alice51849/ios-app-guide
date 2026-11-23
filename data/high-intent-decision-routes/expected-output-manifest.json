@@ -1,15 +1,13 @@
 {
-  "abstained_pairs": 2919,
-  "app_count": 60,
-  "candidate_app_locale_pairs": 3000,
-  "creative_count": 60,
+  "abstained_pairs": 2967,
+  "app_count": 61,
+  "candidate_app_locale_pairs": 3050,
+  "creative_count": 61,
   "current_inventory": {
     "app_keys_sha256": "f5e2c76118e53fe74b7dc510edbbdb1b97c0c0210847b9311eb82b0ec67603dc",
     "copy_sha256": "82552cc8dc0b4ebeb5d4d4f86cfa7dab067c74f4269d0ca6010d777c6d289cae",
-    "missing_route_app_keys": [
-      "jellyday"
-    ],
-    "missing_route_app_keys_sha256": "18a5e4858f822e4a2ff960b6bdf92ea03d76ed8fa59ddceff57a472eb6b7be4c",
+    "missing_route_app_keys": [],
+    "missing_route_app_keys_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
     "public_apps": 61
   },
   "dataset": "Lumi Studio High-Intent Decision Routes",
@@ -26,12 +24,12 @@
       "relative_path": "data/high-intent-decision-routes/conversion-contracts.schema.json"
     },
     {
-      "generated_sha256": "9c1220a14f26e41111c2119175ec811eba41b0cc75785d8041acf8e2f2895605",
+      "generated_sha256": "fed2412f4dfb835eaa7a3b9c7447d7713a26aad6fa03e59ae6b84dbaecb61676",
       "kind": "coverage_report",
       "relative_path": "data/high-intent-decision-routes/coverage.json"
     },
     {
-      "generated_sha256": "ce14c323f5351367b136f6c4a07115dee29a5c94dface54ed9968e2868865f8d",
+      "generated_sha256": "fce9dd50ab1ea17ccba972b2b1ef077fc20499558d4e0e46e0cf5688461f3149",
       "kind": "json_feed",
       "relative_path": "data/high-intent-decision-routes/feed.json"
     },
@@ -134,6 +132,11 @@
       "generated_sha256": "f7c74c7b202c50b6f99b2279750beabc720c295772960b2de0528deb7feb17a6",
       "kind": "route_html",
       "relative_path": "en-US/decide/hourstaglite/pause-impulse-buy-with-work-hours.html"
+    },
+    {
+      "generated_sha256": "cf3eaacb0b37d3639f89e56931dbac2ca626cf2716b31b0f81b31621e1ad7f1a",
+      "kind": "route_html",
+      "relative_path": "en-US/decide/jellyday/see-how-full-today-is-before-adding-more.html"
     },
     {
       "generated_sha256": "e95f9194ea817a2de82fa0b106b9f110efc4220f6ce27c8850fee0b4c6be70e0",
@@ -361,7 +364,7 @@
       "relative_path": "ja/decide/unblurry/improve-soft-family-photo-realistically.html"
     },
     {
-      "generated_sha256": "ba77d7f6cd54b4392bd48050b33bd711dabb942050959788fe9594765cf6222e",
+      "generated_sha256": "c2a1708934fdd70b0ea6a8d9d43e7bcbdd66398e28de8e3ca6e97cfe85cfca52",
       "kind": "sitemap",
       "relative_path": "sitemap-high-intent-decision-routes.xml"
     },
@@ -399,6 +402,11 @@
       "generated_sha256": "b2f265693e1f28bc6a41eccab35570f5962a3d03f9a87340c2c428d2729a9a53",
       "kind": "route_html",
       "relative_path": "zh-Hant/decide/gbago/keep-emulator-save-progress-safe-and-recoverable-on-iphone.html"
+    },
+    {
+      "generated_sha256": "e2147fb8f32d2bca4956dc941bc5daad70f91965dc9b90379a86c246a7dc0b2e",
+      "kind": "route_html",
+      "relative_path": "zh-Hant/decide/jellyday/see-how-full-today-is-before-adding-more.html"
     },
     {
       "generated_sha256": "5dc5461f393078591fc8892491f89033f158f38cbce7a38e5ad85aa56740fc93",
@@ -448,17 +456,17 @@
   ],
   "fallback_records": 0,
   "inventory": {
-    "app_keys_sha256": "fb6805f542ce9f363d0fb17a1aca312cc4ae4331e68a9154e43717909646f1c1",
-    "copy_sha256": "b7fbda62c1431249c775ae0c2c74d154175f3d6c82e44882a40bd63bf50f02a6",
+    "app_keys_sha256": "f5e2c76118e53fe74b7dc510edbbdb1b97c0c0210847b9311eb82b0ec67603dc",
+    "copy_sha256": "82552cc8dc0b4ebeb5d4d4f86cfa7dab067c74f4269d0ca6010d777c6d289cae",
     "official_locales_sha256": "e26dabf9370286ad8fd12034270cfcade92b2db4f4a0eecc19324203ce84d5bd",
-    "public_apps": 60,
+    "public_apps": 61,
     "relative_path": "data/verified-ios-app-finder-catalog.json"
   },
-  "manifest_digest": "451c8f28db1b67312b92018f07b99d9c275f3342fefcb80e53b3c98c80fab156",
+  "manifest_digest": "d0444f268ebd0384e6233ce76e94a678d6f2e7b33df087b5adf28775ba10db7c",
   "owner": "high_intent_decision_routes",
-  "release_contract_digest": "350bce07a56c3c94ed682ee8fe83fb82aac79562985fcb15ab31fcc0edbb905c",
-  "release_state": "degraded_missing_route_copy",
-  "route_count": 81,
+  "release_contract_digest": "3ea422da295ee0979f089d86e4164cede7e6d010f9fafc2aaebcdd9b0e944bad",
+  "release_state": "exact",
+  "route_count": 83,
   "routes": [
     {
       "app_key": "mochidonestamp",
@@ -799,6 +807,23 @@
       "route_id": "en-US:hourstaglite:pause-impulse-buy-with-work-hours",
       "route_slug": "pause-impulse-buy-with-work-hours",
       "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/hourstaglite/pause-impulse-buy-with-work-hours.html"
+    },
+    {
+      "app_key": "jellyday",
+      "app_store_id": "6835673714",
+      "app_store_url": "https://apps.apple.com/us/app/id6835673714?pt=118326163&ct=geo_learn&mt=8",
+      "campaign_token": "geo_learn",
+      "content_type": "workflow",
+      "creative_digest": "7fd092facd1a4c217744d425b16808876c2721fed8c5382eb2f2ab3e8489e4dd",
+      "creative_id": "jellyday:see-how-full-today-is-before-adding-more:workflow",
+      "intent_type": "workflow",
+      "locale": "en-US",
+      "output_sha256": "cf3eaacb0b37d3639f89e56931dbac2ca626cf2716b31b0f81b31621e1ad7f1a",
+      "record_digest": "373f96f47fd9f77a56b367a9f14c5c95b3bc19377609d17b5b9bf17335aeaa5f",
+      "relative_path": "en-US/decide/jellyday/see-how-full-today-is-before-adding-more.html",
+      "route_id": "en-US:jellyday:see-how-full-today-is-before-adding-more",
+      "route_slug": "see-how-full-today-is-before-adding-more",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/jellyday/see-how-full-today-is-before-adding-more.html"
     },
     {
       "app_key": "kumo",
@@ -1685,6 +1710,23 @@
       "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/decide/gbago/keep-emulator-save-progress-safe-and-recoverable-on-iphone.html"
     },
     {
+      "app_key": "jellyday",
+      "app_store_id": "6835673714",
+      "app_store_url": "https://apps.apple.com/tw/app/id6835673714?pt=118326163&ct=geo_learn&mt=8",
+      "campaign_token": "geo_learn",
+      "content_type": "workflow",
+      "creative_digest": "7fd092facd1a4c217744d425b16808876c2721fed8c5382eb2f2ab3e8489e4dd",
+      "creative_id": "jellyday:see-how-full-today-is-before-adding-more:workflow",
+      "intent_type": "workflow",
+      "locale": "zh-Hant",
+      "output_sha256": "e2147fb8f32d2bca4956dc941bc5daad70f91965dc9b90379a86c246a7dc0b2e",
+      "record_digest": "325eec05562dff2dbebfbba9031a793f74fcc2647477aed6ba34e2d624df425b",
+      "relative_path": "zh-Hant/decide/jellyday/see-how-full-today-is-before-adding-more.html",
+      "route_id": "zh-Hant:jellyday:see-how-full-today-is-before-adding-more",
+      "route_slug": "see-how-full-today-is-before-adding-more",
+      "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/decide/jellyday/see-how-full-today-is-before-adding-more.html"
+    },
+    {
       "app_key": "kumo",
       "app_store_id": "6830824515",
       "app_store_url": "https://apps.apple.com/tw/app/id6830824515?pt=118326163&ct=geo_ask&mt=8",
@@ -1840,5 +1882,5 @@
   ],
   "schema_version": 2,
   "site": "https://open.cait518.cc/ios-app-guide",
-  "source_contract_digest": "baa3a9d8906ecb3f60dbb2db13e572051060fd53454b61876a4988fb0a042fd9"
+  "source_contract_digest": "d6e2216c7c6c423104d07a658f02dcb3b6cd711806e508a1ebf9cf94ef0a92eb"
 }

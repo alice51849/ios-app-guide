@@ -163,6 +163,7 @@ EXACT47_APP_IDS = frozenset(LEGACY_APP_MESSAGES) | {
 # (6826987407) went live and is in the catalog (58 × 50 = 2,900 records). 2026-11-06: Meow Party (foldparty,
 # 6829184924) was already in the live catalog (59 × 50 = 2,950 records); added so the roster equals the
 # catalog. 2026-11-13: Kumo (6830824515, live 11-11) went live and is in the catalog (60 × 50 = 3,000 records).
+# 2026-11-23: JellyDay (6835673714) went live and is in the catalog (61 × 50 = 3,050 records).
 # Versus exact47: Aim990 Plus (6792483140) retired; 9 Apps added. EXACT47 stays the proof roster of the protected ledger snapshot.
 CURRENT_ROSTER_APP_IDS = frozenset({
     "6754218117", "6755782939", "6773017109", "6775773117", "6776958488",
@@ -177,8 +178,9 @@ CURRENT_ROSTER_APP_IDS = frozenset({
     "6806639602", "6806776579", "6806779853", "6806826699", "6807079789",
     "6807335593", "6814035888", "6818607603", "6821790092", "6804564400",
     "6824946559", "6819061896", "6826987407", "6829184924", "6830824515",
+    "6835673714",
 })
-CURRENT_ROSTER_LOCALE_RECORDS = 3000
+CURRENT_ROSTER_LOCALE_RECORDS = 3050
 # Ledger intents may name a historical roster App or a current one.
 LEDGER_APP_IDS = EXACT47_APP_IDS | CURRENT_ROSTER_APP_IDS
 
@@ -1566,6 +1568,30 @@ def manual_queue(pool, path=None):
     return items
 
 
+# Holds kept when telegram-manual-queue.json cannot be read: fail closed for Apps under a coordinator hold.
+UNREADABLE_HOLD_FALLBACK = {"6835673714": "hold file unreadable: fail closed"}
+
+
+def held_apps(path=None):
+    """{App id: reason} of telegram-manual-queue.json "hold_apps" (coordinator rulings). The rotation skips these
+    Apps too (main() adds them to the page-ready skip set), so a held App that is already in the verified roster
+    (e.g. JellyDay before the coordinator lifts its hold) gets no post while every other App keeps posting. A
+    missing file holds nothing; an unreadable one is ::error:: and fails closed to UNREADABLE_HOLD_FALLBACK (the
+    other Apps keep posting)."""
+    path = MANUAL_QUEUE_PATH if path is None else Path(path)
+    if not path.is_file():
+        return {}
+    try:
+        with open(path, encoding="utf-8") as queue_file:
+            hold = json.load(queue_file).get("hold_apps", {})
+        if not isinstance(hold, dict):
+            raise ValueError("hold_apps is not an object")
+    except Exception as error:  # noqa: BLE001 - a bad queue file never blocks the automatic post
+        print(f"::error::Telegram hold_apps unreadable: {error.__class__.__name__}: {error}")
+        return dict(UNREADABLE_HOLD_FALLBACK)
+    return {str(app): str(reason) for app, reason in hold.items()}
+
+
 def manual_qa_problems(item):
     """post_qa.py on the words of a hand-written row: language, template leftovers, hashtags, superlatives,
     competitor names, claims the live product page does not back (free / no ads / no subscription / one-time
@@ -2647,6 +2673,10 @@ def main(argv=None):
                 f"Telegram page-ready gate: <{PAGE_READY_MIN_SCREENSHOTS} iPhone "
                 f"screenshots, skipped until ready: {','.join(sorted(unready))}"
             )
+        held = held_apps()
+        if held:
+            print(f"::warning::Telegram hold_apps, skipped until the coordinator lifts the hold: {','.join(sorted(held))}")
+        unready = frozenset(unready) | frozenset(held)
         publish_once(pool, ledger, store, context, tok, native_chat, unready_apps=unready, manual=manual)
         return 0
     except (

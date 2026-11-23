@@ -3,6 +3,7 @@
 """Regression tests for the social posting automations."""
 
 import base64
+import contextlib
 import datetime as dt
 import io
 import json
@@ -1124,7 +1125,12 @@ class TelegramPageReadyGateTests(unittest.TestCase):
                     self.assertEqual(0, telegram_post.main([]))
                 self.assertEqual(1, opener.call_count)
                 publish.assert_called_once()
-                self.assertEqual(expected, publish.call_args.kwargs["unready_apps"])
+                # page-ready skips plus the committed hold_apps (JellyDay until the coordinator lifts it)
+                self.assertEqual(
+                    set(expected) | set(telegram_post.held_apps()),
+                    set(publish.call_args.kwargs["unready_apps"]),
+                )
+                self.assertIn("6835673714", publish.call_args.kwargs["unready_apps"])
 
 
 class DailyPortfolioCoverageTests(unittest.TestCase):
@@ -3059,6 +3065,24 @@ class TelegramManualQueueTests(unittest.TestCase):
                                    hold={self.APP_A: "fixture hold"})
         self.assertEqual(["tg_wifiaidlite_us_fixture"], [item["manual_id"] for item in items])
         self.assertIn("on hold: fixture hold", " ".join(refused["tg_onepageppt_us_fixture"]))
+
+    def test_held_apps_feed_the_rotation_skip_set(self):
+        # The committed queue's JellyDay hold reaches the rotation: JellyDay is in the roster and the pool, but
+        # held_apps() names it, and main() adds held_apps() to the skip set choose_unpublished already honours.
+        self.assertIn(self.JELLYDAY, telegram_post.CURRENT_ROSTER_APP_IDS)
+        self.assertIn(self.JELLYDAY, {str(item.get("app")) for item in self.pool})
+        self.assertIn(self.JELLYDAY, telegram_post.held_apps())
+        with tempfile.TemporaryDirectory() as tmp:
+            self.assertEqual({}, telegram_post.held_apps(Path(tmp) / "missing.json"))
+            bad = Path(tmp) / "bad.json"
+            bad.write_text("{", encoding="utf-8")
+            with contextlib.redirect_stdout(io.StringIO()) as out:
+                self.assertIn(self.JELLYDAY, telegram_post.held_apps(bad))
+            self.assertIn("::error::", out.getvalue())
+            not_object = Path(tmp) / "not_object.json"
+            not_object.write_text('{"hold_apps": []}', encoding="utf-8")
+            with contextlib.redirect_stdout(io.StringIO()):
+                self.assertIn(self.JELLYDAY, telegram_post.held_apps(not_object))
 
     def test_the_review_seal_binds_the_words(self):
         good = self.row()

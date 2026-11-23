@@ -67,13 +67,14 @@ class ShippedManualQueueTests(unittest.TestCase):
                     self.assertEqual([], problems)
 
     def test_jellyday_stays_out_until_its_ios_page_is_public(self):
-        if JELLYDAY in telegram_post.CURRENT_ROSTER_APP_IDS:
-            self.skipTest("JellyDay is in the verified live roster: the hold may be lifted by a coordinator ruling")
+        # JellyDay is in the verified live roster (61 Apps) but stays held until a coordinator ruling lifts it:
+        # the queue carries no JellyDay row and no row names it.
+        self.assertIn(JELLYDAY, telegram_post.CURRENT_ROSTER_APP_IDS)
         self.assertIn(JELLYDAY, self.data["hold_apps"])
+        self.assertIn(JELLYDAY, telegram_post.held_apps())
         self.assertFalse([item for item in self.items if item["app"] == JELLYDAY])
         self.assertFalse([row for row in self.data["posts"] if str(row.get("app")) == JELLYDAY])
         self.assertFalse([item for item in self.items if "jellyday" in item["text"].lower()])
-        self.assertFalse([item for item in self.pool if str(item.get("app")) == JELLYDAY])
 
     def test_snapport_rows_name_no_removed_feature(self):
         for item in self.items:

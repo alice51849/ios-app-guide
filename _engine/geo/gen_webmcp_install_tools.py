@@ -184,7 +184,9 @@ ASSET_SOURCE = r"""(() => {
     # code passes only on its own page language and App (第 111 項第 3 點，2026-11-22).
     "__APP_PAGE_CAMPAIGNS__",
     json.dumps(
-        {code: [page.split("/", 1)[0], app_id] for page, (code, app_id) in APP_PAGE_CAMPAIGNS.items()},
+        # 只收 <locale>/<key>.html 這種有安裝工具的頁；apps/… 指南頁（data/app_page_campaigns.json）沒有 WebMCP 安裝資料。
+        {code: [page.split("/", 1)[0], app_id] for page, (code, app_id) in APP_PAGE_CAMPAIGNS.items()
+         if page.split("/", 1)[0] in LOCALE_STOREFRONTS},
         sort_keys=True,
     ),
 )

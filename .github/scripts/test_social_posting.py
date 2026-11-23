@@ -8,6 +8,7 @@ import io
 import json
 import os
 from pathlib import Path
+import re
 import sys
 import tempfile
 import unittest
@@ -3259,6 +3260,93 @@ class TelegramManualQueueTests(unittest.TestCase):
             ):
                 self.assertEqual(0, telegram_post.main([]))
             self.assertEqual(queue if isinstance(queue, list) else [], publish.call_args.kwargs["manual"])
+
+    # ---- app bundle rows (組合包補齊單 ⑤): the bundle link with the row token, every other gate as before
+    def bundle_row(self, pack="lumi", lang="en-US", row_id=None, app=None, text=None, **extra):
+        members = sorted(telegram_post._bundle_members(pack))
+        app = app or next((m for m in members if (m, lang) in self.pairs), None)
+        if app is None:
+            self.skipTest(f"no {pack} member postable in {lang} today")
+        row_id = row_id or f"bundle_{pack}_tg_{'ja' if lang == 'ja' else 'en'}_d25"
+        text = text or ("バンドルのフィクスチャです。" if lang == "ja" else f"Fixture words for the {pack} bundle.")
+        return self.row(row_id=row_id, lang=lang, app=app, text=text, bundle=pack, **extra)
+
+    def test_a_bundle_row_carries_its_bundle_link_not_the_member_app_link(self):
+        row = self.bundle_row()
+        items, refused = self.load([row])
+        self.assertEqual({}, refused)
+        item = items[0]
+        text = telegram_post.compose_text(item)
+        storefronts = sys.modules["app_store_storefronts"]
+        self.assertIn(item["bundle_url"], text)
+        self.assertRegex(item["bundle_url"],
+                         r"^https://apps\.apple\.com/us/app-bundle/id[0-9]+\?pt=118326163&ct=bundle_lumi_tg_en_d25&mt=8$")
+        bundle_id = re.search(r"/id([0-9]+)\?", item["bundle_url"]).group(1)
+        self.assertIn(bundle_id, storefronts.APP_BUNDLE_IDS)
+        self.assertNotIn(f"/app/id{item['app']}", text)                       # never the member App's link
+        self.assertNotIn("play.google.com", text)                               # a bundle is iOS only
+        self.assertIn(telegram_post.MANUAL_BUNDLE_DEVICES, text)
+        self.assertEqual("bundle_lumi_tg_en_d25", telegram_post.telegram_campaign(item))
+        self.assertEqual([], telegram_post.download_link_problems(item, text))
+        # the token leaves as written: the channel-level merge never folds it into telegram / social
+        for token in ("bundle_lumi_tg_en_d25", "bundle_lang_tg_ja_d29", "bundle_travel_tg_en_d27"):
+            self.assertEqual(token, DL.coarse_campaign(token))
+            self.assertEqual(token, DL.app_campaign(token, item["app"]))
+        self.assertEqual(text, DL.coarsen_campaign_links(text))
+        # the member App's link, a Play link or a wrong token in the post fails the link check
+        member = telegram_post.compose_text({k: v for k, v in item.items() if k not in ("bundle", "bundle_url")})
+        self.assertTrue(telegram_post.download_link_problems(item, member))
+        self.assertTrue(telegram_post.download_link_problems(item, text + "\nhttps://play.google.com/store/apps/x"))
+        self.assertTrue(telegram_post.download_link_problems(item, text.replace("ct=bundle_lumi_tg_en_d25", "ct=telegram")))
+        # ja reads the jp storefront from the guide's ja bundle page
+        ja = self.load([self.bundle_row(lang="ja")])[0][0]
+        self.assertIn("https://apps.apple.com/jp/app-bundle/", ja["bundle_url"])
+
+    def test_bundle_rows_are_refused_when_their_shape_is_wrong(self):
+        lumi = sorted(telegram_post._bundle_members("lumi"))[0]
+        travel = sorted(telegram_post._bundle_members("travel"))[0]
+        cases = {
+            "unknown bundle": dict(self.bundle_row(), bundle="music"),
+            "tg_ id on a bundle row": self.bundle_row(row_id="tg_lumi_us_bundle"),
+            "id of another bundle": self.bundle_row(row_id="bundle_lang_tg_en_d25"),
+            "hyphen the App Store token cannot carry": self.bundle_row(row_id="bundle_lumi_tg_zh-tw_d25"),
+            "id over 30 characters": self.bundle_row(row_id="bundle_lumi_tg_en_d25" + "0" * 10),
+            "App outside the bundle": self.bundle_row(app=travel),
+            "URL in the words": self.bundle_row(text="See https://apps.apple.com/us/app-bundle/id1"),
+            "no bundle page in that locale": self.bundle_row(lang="de-DE", app=lumi),
+            "removed Snapport feature named by a travel row": self.bundle_row(
+                pack="travel", row_id="bundle_travel_tg_en_d27", text="Snapport swaps the background."),
+        }
+        for name, row in cases.items():
+            with self.subTest(name):
+                items, refused = self.load([row])
+                self.assertEqual([], items)
+                self.assertTrue(refused)
+        # a bundle token on a row without "bundle" is refused as before (tg_ only)
+        plain = self.row(row_id="bundle_lumi_tg_en_d25")
+        self.assertEqual([], self.load([plain])[0])
+
+    def test_rows_without_bundle_are_read_exactly_as_before(self):
+        item = self.item()
+        self.assertNotIn("bundle", item)
+        self.assertNotIn("bundle_url", item)
+        self.assertIn(f"/app/id{self.APP_A}?pt=118326163&ct=tg_onepageppt_us_fixture&mt=8",
+                      telegram_post.compose_text(item))
+
+    def test_at_most_one_bundle_row_a_utc_day_and_not_before_holds(self):
+        self.assertEqual(1, telegram_post.MANUAL_BUNDLE_DAILY_CAP)
+        en, ja = self.load([self.bundle_row(), self.bundle_row(pack="lang", lang="ja", row_id="bundle_lang_tg_ja_d29")])[0]
+        # a bundle row went out today: no second bundle row, even with the manual cap lifted
+        for status in ("reserved", "unknown", "confirmed", "rejected"):
+            with self.subTest(status=status), mock.patch.object(telegram_post, "MANUAL_DAILY_CAP", 3):
+                self.assertIsNone(self.choose([en, ja], 1, ledger=self.sent(en, hour=1, status=status), day=self.DAY))
+        with mock.patch.object(telegram_post, "MANUAL_DAILY_CAP", 3):
+            plain = self.item(row_id="tg_wifiaidlite_jp_fixture", lang="ja", app=self.APP_B, text="手書きのフィクスチャです。")
+            self.assertIs(plain, self.choose([en, ja, plain], 1, ledger=self.sent(en, hour=1)))
+        self.assertIs(ja, self.choose([ja], 1, ledger=self.sent(en, hour=15), day=dt.date(2026, 11, 23)))
+        later = self.load([self.bundle_row(not_before="2026-11-25")])[0][0]
+        self.assertIsNone(self.choose([later], 15, day=dt.date(2026, 11, 24)))
+        self.assertIs(later, self.choose([later], 15, day=dt.date(2026, 11, 25)))
 
 
 if __name__ == "__main__":

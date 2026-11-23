@@ -777,6 +777,10 @@ def compose_text(item, android=True, review=True, ct=None, legacy_play=False, ch
     (texts sent before 2026-10-21, or while the line was not due). A hand-written reviewed row (MANUAL_SOURCE)
     leaves with its own tg_<app>_<market>_<angle> token as written, so the post can be told apart (owner rule
     2.11); every other text keeps the channel-level campaign."""
+    if item.get("source") == MANUAL_SOURCE and item.get("bundle"):
+        # a bundle row: the bundle's own link with the row token as written, no Google Play link (a bundle is
+        # iOS only), no member review link, no iPhone Duo line; the same text whatever rebuild is asked for
+        return f"{item['text']}\n\n👉 {item['bundle_url']}\n{MANUAL_BUNDLE_DEVICES}\n\n{item_footer(item)}"
     if ct is None and item.get("source") == MANUAL_SOURCE:
         channel_level = False
     ct = telegram_campaign(item) if ct is None else ct
@@ -1269,6 +1273,8 @@ def download_link_problems(item, text):
     links another app fails. The existing-user write-a-review link also points at the app's store page; it is
     cut out before the check because it is not the download link.
     """
+    if item.get("source") == MANUAL_SOURCE and item.get("bundle"):
+        return manual_bundle_link_problems(item, text)
     ct = telegram_campaign(item)
     play = play_store_url(item.get("app"), ct)
     body = text
@@ -1276,6 +1282,24 @@ def download_link_problems(item, text):
         body = body.replace(line, "")
     return DL.link_problems(body, f"https://apps.apple.com/app/id{item.get('app')}", play,
                             label=f"Telegram {item.get('app')}/{item.get('lang')}")
+
+
+def manual_bundle_link_problems(item, text):
+    """Why a bundle row's post does not carry exactly its bundle link (empty list = it does): the validated link
+    of the row's bundle in its locale with the row token, rebuilt from the guide's page, and no App or Google
+    Play link beside it."""
+    label = f"Telegram {item.get('manual_id')}/{item.get('lang')}"
+    try:
+        expected = manual_bundle_url(item["bundle"], item["lang"], item["manual_id"])
+    except Exception as error:  # noqa: BLE001
+        return [f"{label}: no validated bundle link ({error})"]
+    problems = []
+    if item.get("bundle_url") != expected or expected not in text:
+        problems.append(f"{label}: the post does not carry the {item['bundle']} bundle link {expected}")
+    urls = re.findall(r"https?://\S+", text)
+    if [url for url in urls if url != expected]:
+        problems.append(f"{label}: a bundle post carries only its bundle link, found {urls}")
+    return problems
 
 
 # ---------------------------------------------------------------- hand-written reviewed posts (manual queue)
@@ -1324,6 +1348,49 @@ _SNAPPORT_BANNED = re.compile(
 )
 MANUAL_BANNED_COPY = {"6780575828": _SNAPPORT_BANNED, "6792856304": _SNAPPORT_BANNED}
 
+# App bundle rows (組合包補齊單 ⑤, 00_GrowthEngine reports/outreach_scale/bundle_lines_audit_2026-11-23.md): a row
+# with "bundle" (lumi / lang / travel) promotes one of our App Store bundles. Its id is the bundle draft token
+# bundle_<pack>_tg_<lang>_d<day> (00_GrowthEngine agent/ct_codes.py BUNDLE_DRAFT_RE, kept as written by
+# download_links.coarse_campaign), its "app" is a member of that bundle in the catalog (so the roster, market,
+# hold, routing, daily App cap, page-ready and replay gates of the member still apply), and the sender attaches
+# the bundle's own storefront link, read from the guide's bundle page of the row's locale and validated by
+# _engine/geo/app_store_storefronts.validated_app_bundle_url, instead of the member's App Store and Google Play
+# links (a bundle is iOS only). Banned copy and store-copy drift are read for every member of the bundle, and at
+# most MANUAL_BUNDLE_DAILY_CAP bundle rows go out a UTC day on top of MANUAL_DAILY_CAP. A row without "bundle"
+# is read exactly as before.
+MANUAL_BUNDLE_ID_RE = re.compile(r"bundle_(?P<pack>lumi|lang|travel)_tg_[a-z]{2,4}_d[0-9]{1,2}")
+MANUAL_BUNDLE_PAGES = {"lumi": "lumi", "lang": "language", "travel": "travel"}
+MANUAL_BUNDLE_DAILY_CAP = 1
+MANUAL_BUNDLE_DEVICES = "📱 iPhone / iPad"
+_BUNDLE_PAGE_LINK_RE = re.compile(r"https://apps\.apple\.com/([a-z]{2})/app-bundle/id([0-9]{9,12})")
+
+
+def _bundle_members(pack):
+    import app_store_storefronts as storefronts
+
+    return storefronts.APP_BUNDLE_MEMBERS[pack]
+
+
+def manual_bundle_url(pack, lang, token):
+    """The bundle's direct App Store link for this locale with `token` as ct: the bundle id and storefront are
+    read from the guide's own bundle page (<lang>/bundles/<page>.html), never written here; ValueError when the
+    page is missing, names no or several bundle links, or the link fails validated_app_bundle_url."""
+    import app_store_storefronts as storefronts
+
+    page = REPO_ROOT / lang / "bundles" / f"{MANUAL_BUNDLE_PAGES[pack]}.html"
+    if not page.is_file():
+        raise ValueError(f"the guide has no {lang} page for the {pack} bundle")
+    found = set(_BUNDLE_PAGE_LINK_RE.findall(page.read_text(encoding="utf-8")))
+    if len(found) != 1:
+        raise ValueError(f"the guide's {lang} {pack} bundle page names {len(found)} bundle links, not one")
+    (country, bundle_id), = found
+    from social_post_common import DEFAULT_APP_STORE_PROVIDER_TOKEN
+
+    provider = os.environ.get("APP_STORE_PROVIDER_TOKEN", DEFAULT_APP_STORE_PROVIDER_TOKEN).strip()
+    url = (f"https://apps.apple.com/{country}/app-bundle/id{bundle_id}?"
+           + urllib.parse.urlencode({"pt": provider, "ct": token, "mt": "8"}))
+    return storefronts.validated_app_bundle_url(url, expected_locale=lang, provider_token=provider)
+
 
 def _lang_zone(lang):
     return next(zone for zone, langs in TZ_LANGS.items() if lang in langs)
@@ -1362,7 +1429,18 @@ def manual_item(row, pairs, names, hold, seen):
         return None, ["row is not an object"]
     row_id, lang, app, text = row.get("id"), row.get("lang"), str(row.get("app") or ""), row.get("text")
     problems = []
-    if (
+    pack = row.get("bundle")
+    if "bundle" in row:
+        if pack not in MANUAL_BUNDLE_PAGES:
+            return None, [f"bundle must be one of {', '.join(MANUAL_BUNDLE_PAGES)}"]
+        bundle_id = MANUAL_BUNDLE_ID_RE.fullmatch(row_id) if isinstance(row_id, str) else None
+        if bundle_id is None or bundle_id["pack"] != pack or len(row_id) > TG_CT_MAX:
+            return None, [
+                f"a bundle row's id must be bundle_{pack}_tg_<lang>_d<day> in [a-z0-9_], at most {TG_CT_MAX} characters"
+            ]
+        if app not in _bundle_members(pack):
+            problems.append(f"App {app} is not a member of the {pack} bundle")
+    elif (
         not isinstance(row_id, str) or MANUAL_ID_RE.fullmatch(row_id) is None or len(row_id) > TG_CT_MAX
     ):
         return None, [f"id must be tg_<app>_<market>_<angle> in [a-z0-9_], at most {TG_CT_MAX} characters"]
@@ -1399,10 +1477,17 @@ def manual_item(row, pairs, names, hold, seen):
     for field in ("not_before", "expires"):
         if row.get(field) is not None and _iso_date(row[field]) is None:
             problems.append(f"{field} must be a YYYY-MM-DD date")
-    banned = MANUAL_BANNED_COPY.get(app)
-    hit = banned.search(text) if banned else None
-    if hit:
-        problems.append(f"names a feature this App no longer has ({hit.group(0)!r})")
+    for member in sorted(_bundle_members(pack)) if pack else (app,):
+        banned = MANUAL_BANNED_COPY.get(member)
+        hit = banned.search(text) if banned else None
+        if hit:
+            problems.append(f"names a feature App {member} no longer has ({hit.group(0)!r})")
+    bundle_url = None
+    if pack and lang in OFFICIAL_SOCIAL_LOCALES:
+        try:
+            bundle_url = manual_bundle_url(pack, lang, row_id)
+        except Exception as error:  # noqa: BLE001 - no validated bundle link, no row
+            problems.append(f"no validated {pack} bundle link for {lang}: {error}")
     if problems:
         return None, problems
     name, storefront = names.get((app, lang), ("", None))
@@ -1417,6 +1502,8 @@ def manual_item(row, pairs, names, hold, seen):
     }
     if base.get("image_url"):
         item["image_url"] = base["image_url"]
+    if pack:
+        item["bundle"], item["bundle_url"] = pack, bundle_url
     for field in ("not_before", "expires"):
         if row.get(field) is not None:
             item[field] = row[field]
@@ -1488,6 +1575,8 @@ def manual_qa_problems(item):
     import post_qa
 
     name = item.get("app_name") or ""
+    if item.get("bundle"):
+        return _manual_bundle_qa_problems(item, post_qa)
     if post_qa.offline():
         facts, price = name, None
     else:
@@ -1497,6 +1586,36 @@ def manual_qa_problems(item):
         first_line=False, length=False,
     )
     return problems + post_qa.stale_claim_problems(item["text"], item["url"])
+
+
+def _manual_bundle_qa_problems(item, post_qa):
+    """manual_qa_problems of a bundle row: the words name every member, so the facts are the product pages of
+    all members (the price stays the row's own member), and the store-copy drift guard reads every member."""
+    names = _catalog_names()
+    members = sorted(_bundle_members(item["bundle"]))
+    member_names, member_urls = [], []
+    for member in members:
+        name, storefront = names.get((member, item["lang"]), ("", None))
+        member_names.append(name)
+        member_urls.append(storefront or f"https://apps.apple.com/app/id{member}")
+    allowed = tuple(name for name in member_names if name)
+    if post_qa.offline():
+        facts, price = "\n".join(allowed), None
+    else:
+        parts, price = [], None
+        for member, url in zip(members, member_urls):
+            member_facts, member_price = post_qa.product_facts(url, allowed)
+            parts.append(member_facts)
+            if member == str(item["app"]):
+                price = member_price
+        facts = "\n".join(parts)
+    problems = post_qa.text_problems(
+        item["text"], item["lang"], "telegram", allowed=allowed, facts=facts, price=price,
+        first_line=False, length=False,
+    )
+    for url in member_urls:
+        problems += post_qa.stale_claim_problems(item["text"], url)
+    return problems
 
 
 def choose_manual(queue, pool, ledger, now, slot=None, skip_apps=frozenset(), qa=None):
@@ -1529,8 +1648,16 @@ def choose_manual(queue, pool, ledger, now, slot=None, skip_apps=frozenset(), qa
     _covered, _today_apps, blocked_apps, used = _slot_blocks(pool, ledger, now, f"telegram:{zone}")
     slot_hour = {_zone(hour): hour for hour in SLOT_HOURS}
     qa = manual_qa_problems if qa is None else qa
+    bundles_today = sum(
+        intent["status"] in {"reserved", "unknown", "confirmed", "rejected"}
+        and _timestamp(intent["slot"]).date() == day
+        and MANUAL_BUNDLE_ID_RE.fullmatch(str(intent["manual_id"])) is not None
+        for intent in intents
+    )
     for item in queue:
         app = str(item["app"])
+        if item.get("bundle") and bundles_today >= MANUAL_BUNDLE_DAILY_CAP:
+            continue
         if (
             item["manual_id"] in sent
             or rejects.count(item["manual_id"]) >= MANUAL_MAX_REJECTS

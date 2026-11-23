@@ -45,10 +45,17 @@ class ShippedManualQueueTests(unittest.TestCase):
             with self.subTest(row=item["manual_id"]):
                 self.assertIn(item["lang"], common.OFFICIAL_SOCIAL_LOCALES)
                 self.assertIn(item["app"], telegram_post.CURRENT_ROSTER_APP_IDS)
-                self.assertRegex(item["manual_id"], r"^tg_[a-z0-9_]{1,27}$")
                 self.assertEqual(telegram_post._digest(item["text"]), item["review"]["text_sha256"])
                 text = telegram_post.compose_text(item)
-                self.assertIn(f"/id{item['app']}?pt=118326163&ct={item['manual_id']}&mt=8", text)
+                if item.get("bundle"):  # a bundle row: its bundle link with the row token, no App / Play link
+                    self.assertRegex(item["manual_id"], r"^bundle_(lumi|lang|travel)_tg_[a-z]{2,4}_d[0-9]{1,2}$")
+                    self.assertIn(item["app"], telegram_post._bundle_members(item["bundle"]))
+                    self.assertRegex(text, r"/app-bundle/id[0-9]+\?pt=118326163&ct=" + item["manual_id"] + "&mt=8")
+                    self.assertNotIn(f"/app/id{item['app']}", text)
+                    self.assertNotIn("play.google.com", text)
+                else:
+                    self.assertRegex(item["manual_id"], r"^tg_[a-z0-9_]{1,27}$")
+                    self.assertIn(f"/id{item['app']}?pt=118326163&ct={item['manual_id']}&mt=8", text)
                 self.assertEqual([], telegram_post.download_link_problems(item, text))
                 self.assertLessEqual(len(text), telegram_post.TG_CAPTION_MAX)
 
@@ -98,6 +105,12 @@ class ShippedManualQueueTests(unittest.TestCase):
                 sends.append((slot.date(), item["manual_id"]))
         days = [day for day, _row in sends]
         self.assertEqual(len(days), len(set(days)), "more than one hand-written row in a UTC day")
+        bundle_days = [day for day, row in sends if row.startswith("bundle_")]
+        self.assertEqual(len(bundle_days), len(set(bundle_days)), "more than one bundle row in a UTC day")
+        for item in self.items:
+            if item.get("not_before"):
+                day = next(day for day, row in sends if row == item["manual_id"])
+                self.assertGreaterEqual(day.isoformat(), item["not_before"])
         self.assertEqual(sorted(item["manual_id"] for item in self.items), sorted(row for _day, row in sends))
 
 

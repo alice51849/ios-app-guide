@@ -4,11 +4,13 @@
   "candidate_app_locale_pairs": 3000,
   "creative_count": 60,
   "current_inventory": {
-    "app_keys_sha256": "fb6805f542ce9f363d0fb17a1aca312cc4ae4331e68a9154e43717909646f1c1",
-    "copy_sha256": "a11fa059e5d3a99d39222beb09f9fd9efaa2dff100161b2f64911a513560fa25",
-    "missing_route_app_keys": [],
-    "missing_route_app_keys_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-    "public_apps": 60
+    "app_keys_sha256": "f5e2c76118e53fe74b7dc510edbbdb1b97c0c0210847b9311eb82b0ec67603dc",
+    "copy_sha256": "82552cc8dc0b4ebeb5d4d4f86cfa7dab067c74f4269d0ca6010d777c6d289cae",
+    "missing_route_app_keys": [
+      "jellyday"
+    ],
+    "missing_route_app_keys_sha256": "18a5e4858f822e4a2ff960b6bdf92ea03d76ed8fa59ddceff57a472eb6b7be4c",
+    "public_apps": 61
   },
   "dataset": "Lumi Studio High-Intent Decision Routes",
   "deployment_state": "generated_not_deployed",
@@ -24,12 +26,12 @@
       "relative_path": "data/high-intent-decision-routes/conversion-contracts.schema.json"
     },
     {
-      "generated_sha256": "4ec6387f6cc16163f5ee087684f838a0fe8f31d4b2ec2f2ca32702c199ef9b9f",
+      "generated_sha256": "9c1220a14f26e41111c2119175ec811eba41b0cc75785d8041acf8e2f2895605",
       "kind": "coverage_report",
       "relative_path": "data/high-intent-decision-routes/coverage.json"
     },
     {
-      "generated_sha256": "12e1a02ecb990c1651dce9823b3835eb5e478dfd83c5fbe9d5a928fcaa66e864",
+      "generated_sha256": "ce14c323f5351367b136f6c4a07115dee29a5c94dface54ed9968e2868865f8d",
       "kind": "json_feed",
       "relative_path": "data/high-intent-decision-routes/feed.json"
     },
@@ -304,7 +306,7 @@
       "relative_path": "en-US/decide/tripbeelite/plan-one-upcoming-trip-without-clutter.html"
     },
     {
-      "generated_sha256": "7444cbbc5e81cfceb21c154f75d67067925c4d4f85260daa0c4349c064493941",
+      "generated_sha256": "6c6761a33c7ac456c947e19821e7db64cc879abfc6e50079f1ebd94284b7bd79",
       "kind": "route_html",
       "relative_path": "en-US/decide/tripplanet/turn-family-travel-waiting-into-observation.html"
     },
@@ -447,15 +449,15 @@
   "fallback_records": 0,
   "inventory": {
     "app_keys_sha256": "fb6805f542ce9f363d0fb17a1aca312cc4ae4331e68a9154e43717909646f1c1",
-    "copy_sha256": "a11fa059e5d3a99d39222beb09f9fd9efaa2dff100161b2f64911a513560fa25",
+    "copy_sha256": "b7fbda62c1431249c775ae0c2c74d154175f3d6c82e44882a40bd63bf50f02a6",
     "official_locales_sha256": "e26dabf9370286ad8fd12034270cfcade92b2db4f4a0eecc19324203ce84d5bd",
     "public_apps": 60,
     "relative_path": "data/verified-ios-app-finder-catalog.json"
   },
-  "manifest_digest": "13c99f01629a3d0a25776a6e47640b0c670fc1b9baff85ec0b10a6b5e4bc274a",
+  "manifest_digest": "451c8f28db1b67312b92018f07b99d9c275f3342fefcb80e53b3c98c80fab156",
   "owner": "high_intent_decision_routes",
-  "release_contract_digest": "6f777ff91fc722cd1e3449368ba39e69c3627ab1437eccd3034df566e76313a1",
-  "release_state": "exact",
+  "release_contract_digest": "350bce07a56c3c94ed682ee8fe83fb82aac79562985fcb15ab31fcc0edbb905c",
+  "release_state": "degraded_missing_route_copy",
   "route_count": 81,
   "routes": [
     {
@@ -1386,8 +1388,8 @@
       "creative_id": "tripplanet:turn-family-travel-waiting-into-observation:workflow",
       "intent_type": "workflow",
       "locale": "en-US",
-      "output_sha256": "7444cbbc5e81cfceb21c154f75d67067925c4d4f85260daa0c4349c064493941",
-      "record_digest": "b8415ebc9cc40678827d135915917adc6c2bd323a7062e0ddd5922422e5fdd2e",
+      "output_sha256": "6c6761a33c7ac456c947e19821e7db64cc879abfc6e50079f1ebd94284b7bd79",
+      "record_digest": "31977569976323554c426a33c3c1ed247f4717eff491007139c6751a8196c65a",
       "relative_path": "en-US/decide/tripplanet/turn-family-travel-waiting-into-observation.html",
       "route_id": "en-US:tripplanet:turn-family-travel-waiting-into-observation",
       "route_slug": "turn-family-travel-waiting-into-observation",
@@ -1838,5 +1840,5 @@
   ],
   "schema_version": 2,
   "site": "https://open.cait518.cc/ios-app-guide",
-  "source_contract_digest": "5678821033675f8fbf3e3e9cbda958625901f1a74eae17f64d340654f3d749c1"
+  "source_contract_digest": "baa3a9d8906ecb3f60dbb2db13e572051060fd53454b61876a4988fb0a042fd9"
 }

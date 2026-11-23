@@ -1,7 +1,7 @@
 {
  "schema": "lumi.social-feed/v1",
  "date": "2026-11-23",
- "generated_at": "2026-11-23T02:04:51Z",
+ "generated_at": "2026-11-23T09:52:17Z",
  "items": {
   "bluesky": [
    {
@@ -224,47 +224,68 @@
    },
    {
     "kind": "clip",
-    "key": "gmoney/ko",
-    "locale": "ko",
-    "app": "gmoney",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/nck8iy.mp4",
-    "hook": "분류별로 어디에 썼는지 한눈에",
-    "name": "G+Money：가계부·예산·환율",
-    "title": "분류별로 어디에 썼는지 한눈에 | 생활비·소비기록·지출관리 | G+Money 가계부",
+    "key": "lumimissionpro/ja",
+    "locale": "ja",
+    "app": "lumimissionpro",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/1ged0k.mp4",
+    "hook": "保護者は、すべての記録を確認",
+    "name": "Lumi ミッション星 Pro 毎日の習慣",
+    "title": "保護者は、すべての記録を確認 | お支度ボード・朝と夜のルーティン | Lumi ミッション星 Pro",
     "tags": [
-     "#가계부예산환율",
-     "#용돈기입장",
-     "#환율계산기",
-     "#통화변환",
-     "#GMoney가계부"
+     "#寝る前",
+     "#寝かしつけ",
+     "#はみがき",
+     "#歯磨き",
+     "#Lumiミッション星Pro"
     ],
-    "caption": "분류별로 어디에 썼는지 한눈에\n환율 계산·기록 오프라인에서도\n생활비·소비기록·지출관리\nG+Money：가계부·예산·환율\nApp Store에서 'G+Money 가계부' 검색\nAndroid는 Google Play에서\n\n#가계부예산환율 #용돈기입장 #GMoney가계부",
-    "button": "App Store에서 받기",
-    "variant": "b",
-    "alt": "G+Money：가계부·예산·환율 — 분류별로 어디에 썼는지 한눈에 — 환율 계산·기록 오프라인에서도 — 생활비·소비기록·지출관리",
-    "store": "https://apps.apple.com/kr/app/id6755782939?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
+    "caption": "保護者は、すべての記録を確認\nできたら1タップ、相棒が大よろこび\nお支度ボード・朝と夜のルーティン\nLumi ミッション星 Pro 毎日の習慣\nApp Storeで「Lumi ミッション星 Pro」を検索\nAndroidはGoogle Playで\n\n#寝る前 #寝かしつけ #Lumiミッション星Pro",
+    "button": "App Storeで入手",
+    "variant": "c",
+    "alt": "Lumi ミッション星 Pro 毎日の習慣 — 保護者は、すべての記録を確認 — できたら1タップ、相棒が大よろこび — お支度ボード・朝と夜のルーティン",
+    "store": "https://apps.apple.com/jp/app/id6779745474?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.lumi.mochimissionplanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumimissionpro",
     "review": {
-     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
-     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6779745474?action=write-review"
     },
     "keywords": [
-     "용돈기입장",
-     "환율계산기",
-     "통화변환",
-     "가계부앱",
-     "돈관리",
-     "절약"
+     "寝る前",
+     "寝かしつけ",
+     "はみがき",
+     "歯磨き",
+     "おかたづけ",
+     "片付け"
     ],
-    "keyline": "생활비·소비기록·지출관리",
+    "keyline": "お支度ボード・朝と夜のルーティン",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "987a384c8c1d4d89",
+     "board": "a82776e501c32a9a",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "utility/letter/lumiletters/letter_e/zh-Hant",
+    "locale": "zh-Hant",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/utility-cards/card-20261123.jpg",
+    "caption": "今日字母：E e\nE — egg\n蛋\n想想還有哪個字也是這個音開頭\n\nLumi 字母星球 Lite: 三到七歲，聽字母發音、描寫大寫與小寫\nApp Store／Google Play 搜尋「Lumi 字母星球 Lite」\n\n#兒童英文ABC遊戲 #學字母 #寫字母",
+    "title": "今日字母：E e",
+    "alt": "Lumi Letters Lite — 今日字母：E e — E — egg — 蛋 — 英文啟蒙：英文字母描寫・自然發音",
+    "name": "Lumi Letters Lite",
+    "hook": "今日字母：E e",
+    "tags": [
+     "#兒童英文ABC遊戲",
+     "#學字母",
+     "#寫字母",
+     "#認字母",
+     "#Lumi字母星球Lite"
+    ],
+    "button": "在 App Store 下載",
+    "store": "https://apps.apple.com/tw/app/id6778748533?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiLettersLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiletters"
    },
    {
     "kind": "card",
@@ -1303,47 +1324,68 @@
    },
    {
     "kind": "clip",
-    "key": "gmoney/ko",
-    "locale": "ko",
-    "app": "gmoney",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/nck8iy.mp4",
-    "hook": "분류별로 어디에 썼는지 한눈에",
-    "name": "G+Money：가계부·예산·환율",
-    "title": "분류별로 어디에 썼는지 한눈에 | 생활비·소비기록·지출관리 | G+Money 가계부",
+    "key": "lumimissionpro/ja",
+    "locale": "ja",
+    "app": "lumimissionpro",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/1ged0k.mp4",
+    "hook": "保護者は、すべての記録を確認",
+    "name": "Lumi ミッション星 Pro 毎日の習慣",
+    "title": "保護者は、すべての記録を確認 | お支度ボード・朝と夜のルーティン | Lumi ミッション星 Pro",
     "tags": [
-     "#가계부예산환율",
-     "#용돈기입장",
-     "#환율계산기",
-     "#통화변환",
-     "#GMoney가계부"
+     "#寝る前",
+     "#寝かしつけ",
+     "#はみがき",
+     "#歯磨き",
+     "#Lumiミッション星Pro"
     ],
-    "caption": "분류별로 어디에 썼는지 한눈에\n환율 계산·기록 오프라인에서도\n생활비·소비기록·지출관리\nG+Money：가계부·예산·환율\nApp Store에서 'G+Money 가계부' 검색\nAndroid는 Google Play에서\n\n#가계부예산환율 #용돈기입장 #환율계산기 #통화변환 #GMoney가계부",
-    "button": "App Store에서 받기",
-    "variant": "b",
-    "alt": "G+Money：가계부·예산·환율 — 분류별로 어디에 썼는지 한눈에 — 환율 계산·기록 오프라인에서도 — 생활비·소비기록·지출관리",
-    "store": "https://apps.apple.com/kr/app/id6755782939?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
+    "caption": "保護者は、すべての記録を確認\nできたら1タップ、相棒が大よろこび\nお支度ボード・朝と夜のルーティン\nLumi ミッション星 Pro 毎日の習慣\nApp Storeで「Lumi ミッション星 Pro」を検索\nAndroidはGoogle Playで\n\n#寝る前 #寝かしつけ #はみがき #歯磨き #Lumiミッション星Pro",
+    "button": "App Storeで入手",
+    "variant": "c",
+    "alt": "Lumi ミッション星 Pro 毎日の習慣 — 保護者は、すべての記録を確認 — できたら1タップ、相棒が大よろこび — お支度ボード・朝と夜のルーティン",
+    "store": "https://apps.apple.com/jp/app/id6779745474?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.lumi.mochimissionplanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumimissionpro",
     "review": {
-     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
-     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6779745474?action=write-review"
     },
     "keywords": [
-     "용돈기입장",
-     "환율계산기",
-     "통화변환",
-     "가계부앱",
-     "돈관리",
-     "절약"
+     "寝る前",
+     "寝かしつけ",
+     "はみがき",
+     "歯磨き",
+     "おかたづけ",
+     "片付け"
     ],
-    "keyline": "생활비·소비기록·지출관리",
+    "keyline": "お支度ボード・朝と夜のルーティン",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "987a384c8c1d4d89",
+     "board": "a82776e501c32a9a",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "utility/letter/lumiletters/letter_e/zh-Hant",
+    "locale": "zh-Hant",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/utility-cards/card-20261123.jpg",
+    "caption": "今日字母：E e\nE — egg\n蛋\n想想還有哪個字也是這個音開頭\n\nLumi 字母星球 Lite: 三到七歲，聽字母發音、描寫大寫與小寫\nApp Store／Google Play 搜尋「Lumi 字母星球 Lite」\n\n#兒童英文ABC遊戲 #學字母 #寫字母 #認字母 #Lumi字母星球Lite",
+    "title": "今日字母：E e",
+    "alt": "Lumi Letters Lite — 今日字母：E e — E — egg — 蛋 — 英文啟蒙：英文字母描寫・自然發音",
+    "name": "Lumi Letters Lite",
+    "hook": "今日字母：E e",
+    "tags": [
+     "#兒童英文ABC遊戲",
+     "#學字母",
+     "#寫字母",
+     "#認字母",
+     "#Lumi字母星球Lite"
+    ],
+    "button": "在 App Store 下載",
+    "store": "https://apps.apple.com/tw/app/id6778748533?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiLettersLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiletters"
    }
   ],
   "youtube": [
@@ -1641,59 +1683,58 @@
    },
    {
     "kind": "clip",
-    "key": "gmoney/ko",
-    "locale": "ko",
-    "app": "gmoney",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/nck8iy.mp4",
-    "hook": "분류별로 어디에 썼는지 한눈에",
-    "name": "G+Money：가계부·예산·환율",
-    "title": "분류별로 어디에 썼는지 한눈에 | 생활비·소비기록·지출관리 | G+Money 가계부",
+    "key": "lumimissionpro/ja",
+    "locale": "ja",
+    "app": "lumimissionpro",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/1ged0k.mp4",
+    "hook": "保護者は、すべての記録を確認",
+    "name": "Lumi ミッション星 Pro 毎日の習慣",
+    "title": "保護者は、すべての記録を確認 | お支度ボード・朝と夜のルーティン | Lumi ミッション星 Pro",
     "tags": [
-     "#가계부예산환율",
-     "#용돈기입장",
-     "#환율계산기",
-     "#통화변환",
-     "#GMoney가계부"
+     "#寝る前",
+     "#寝かしつけ",
+     "#はみがき",
+     "#歯磨き",
+     "#Lumiミッション星Pro"
     ],
-    "caption": "분류별로 어디에 썼는지 한눈에\n환율 계산·기록 오프라인에서도\n생활비·소비기록·지출관리\nG+Money：가계부·예산·환율\nApp Store에서 'G+Money 가계부' 검색\nAndroid는 Google Play에서\n\n#가계부예산환율 #용돈기입장 #환율계산기 #통화변환 #GMoney가계부",
-    "button": "App Store에서 받기",
-    "variant": "b",
-    "alt": "G+Money：가계부·예산·환율 — 분류별로 어디에 썼는지 한눈에 — 환율 계산·기록 오프라인에서도 — 생활비·소비기록·지출관리",
-    "store": "https://apps.apple.com/kr/app/id6755782939?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
+    "caption": "保護者は、すべての記録を確認\nできたら1タップ、相棒が大よろこび\nお支度ボード・朝と夜のルーティン\nLumi ミッション星 Pro 毎日の習慣\nApp Storeで「Lumi ミッション星 Pro」を検索\nAndroidはGoogle Playで\n\n#寝る前 #寝かしつけ #はみがき #歯磨き #Lumiミッション星Pro",
+    "button": "App Storeで入手",
+    "variant": "c",
+    "alt": "Lumi ミッション星 Pro 毎日の習慣 — 保護者は、すべての記録を確認 — できたら1タップ、相棒が大よろこび — お支度ボード・朝と夜のルーティン",
+    "store": "https://apps.apple.com/jp/app/id6779745474?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.lumi.mochimissionplanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumimissionpro",
     "review": {
-     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
-     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6779745474?action=write-review"
     },
     "keywords": [
-     "용돈기입장",
-     "환율계산기",
-     "통화변환",
-     "가계부앱",
-     "돈관리",
-     "절약"
+     "寝る前",
+     "寝かしつけ",
+     "はみがき",
+     "歯磨き",
+     "おかたづけ",
+     "片付け"
     ],
-    "keyline": "생활비·소비기록·지출관리",
+    "keyline": "お支度ボード・朝と夜のルーティン",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "987a384c8c1d4d89",
+     "board": "a82776e501c32a9a",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "youtube": {
-     "title": "분류별로 어디에 썼는지 한눈에 | G+Money 가계부 #Shorts",
-     "description": "분류별로 어디에 썼는지 한눈에\n환율 계산·기록 오프라인에서도\n생활비·소비기록·지출관리\n\nG+Money：가계부·예산·환율\nApp Store: https://apps.apple.com/kr/app/id6755782939?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney\n이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다\nhttps://apps.apple.com/app/id6755782939?action=write-review\n\n용돈기입장 · 환율계산기 · 통화변환 · 가계부앱 · 돈관리 · 절약\n\n#Shorts #가계부예산환율 #GMoney가계부",
+     "title": "保護者は、すべての記録を確認 | Lumi ミッション星 Pro #Shorts",
+     "description": "保護者は、すべての記録を確認\nできたら1タップ、相棒が大よろこび\nお支度ボード・朝と夜のルーティン\n\nLumi ミッション星 Pro 毎日の習慣\nApp Store: https://apps.apple.com/jp/app/id6779745474?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.lumi.mochimissionplanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumimissionpro\nこのアプリをお使いですか？App Store で評価・レビューできます\nhttps://apps.apple.com/app/id6779745474?action=write-review\n\n寝る前 · 寝かしつけ · はみがき · 歯磨き · おかたづけ · 片付け\n\n#Shorts #寝る前 #Lumiミッション星Pro",
      "tags": [
-      "용돈기입장",
-      "환율계산기",
-      "통화변환",
-      "가계부앱",
-      "돈관리",
-      "절약",
-      "가계부예산환율",
-      "GMoney가계부",
-      "G+Money 가계부"
+      "寝る前",
+      "寝かしつけ",
+      "はみがき",
+      "歯磨き",
+      "おかたづけ",
+      "片付け",
+      "Lumiミッション星Pro",
+      "Lumi ミッション星 Pro"
      ]
     },
     "slot": 15
@@ -1940,51 +1981,76 @@
    },
    {
     "kind": "clip",
-    "key": "gmoney/ko",
-    "locale": "ko",
-    "app": "gmoney",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/nck8iy.mp4",
-    "hook": "분류별로 어디에 썼는지 한눈에",
-    "name": "G+Money：가계부·예산·환율",
-    "title": "분류별로 어디에 썼는지 한눈에 | 생활비·소비기록·지출관리 | G+Money 가계부",
+    "key": "lumimissionpro/ja",
+    "locale": "ja",
+    "app": "lumimissionpro",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/1ged0k.mp4",
+    "hook": "保護者は、すべての記録を確認",
+    "name": "Lumi ミッション星 Pro 毎日の習慣",
+    "title": "保護者は、すべての記録を確認 | お支度ボード・朝と夜のルーティン | Lumi ミッション星 Pro",
     "tags": [
-     "#가계부예산환율",
-     "#용돈기입장",
-     "#환율계산기",
-     "#통화변환",
-     "#GMoney가계부"
+     "#寝る前",
+     "#寝かしつけ",
+     "#はみがき",
+     "#歯磨き",
+     "#Lumiミッション星Pro"
     ],
-    "caption": "분류별로 어디에 썼는지 한눈에\n환율 계산·기록 오프라인에서도\n생활비·소비기록·지출관리\nG+Money：가계부·예산·환율\nApp Store에서 'G+Money 가계부' 검색\nAndroid는 Google Play에서\n\n#가계부예산환율 #용돈기입장 #환율계산기 #통화변환 #GMoney가계부",
-    "button": "App Store에서 받기",
-    "variant": "b",
-    "alt": "G+Money：가계부·예산·환율 — 분류별로 어디에 썼는지 한눈에 — 환율 계산·기록 오프라인에서도 — 생활비·소비기록·지출관리",
-    "store": "https://apps.apple.com/kr/app/id6755782939?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
+    "caption": "保護者は、すべての記録を確認\nできたら1タップ、相棒が大よろこび\nお支度ボード・朝と夜のルーティン\nLumi ミッション星 Pro 毎日の習慣\nApp Storeで「Lumi ミッション星 Pro」を検索\nAndroidはGoogle Playで\n\n#寝る前 #寝かしつけ #はみがき #歯磨き #Lumiミッション星Pro",
+    "button": "App Storeで入手",
+    "variant": "c",
+    "alt": "Lumi ミッション星 Pro 毎日の習慣 — 保護者は、すべての記録を確認 — できたら1タップ、相棒が大よろこび — お支度ボード・朝と夜のルーティン",
+    "store": "https://apps.apple.com/jp/app/id6779745474?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.lumi.mochimissionplanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumimissionpro",
     "review": {
-     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
-     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6779745474?action=write-review"
     },
     "keywords": [
-     "용돈기입장",
-     "환율계산기",
-     "통화변환",
-     "가계부앱",
-     "돈관리",
-     "절약"
+     "寝る前",
+     "寝かしつけ",
+     "はみがき",
+     "歯磨き",
+     "おかたづけ",
+     "片付け"
     ],
-    "keyline": "생활비·소비기록·지출관리",
+    "keyline": "お支度ボード・朝と夜のルーティン",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "987a384c8c1d4d89",
+     "board": "a82776e501c32a9a",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "분류별로 어디에 썼는지 한눈에\n환율 계산·기록 오프라인에서도\n생활비·소비기록·지출관리\nG+Money：가계부·예산·환율\nApp Store에서 'G+Money 가계부' 검색\nAndroid는 Google Play에서\n\n#가계부예산환율 #용돈기입장 #환율계산기 #통화변환 #GMoney가계부\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6755782939?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
-     "link": "https://apps.apple.com/kr/app/id6755782939?pt=118326163&ct=social&mt=8"
+     "description": "保護者は、すべての記録を確認\nできたら1タップ、相棒が大よろこび\nお支度ボード・朝と夜のルーティン\nLumi ミッション星 Pro 毎日の習慣\nApp Storeで「Lumi ミッション星 Pro」を検索\nAndroidはGoogle Playで\n\n#寝る前 #寝かしつけ #はみがき #歯磨き #Lumiミッション星Pro\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6779745474?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.lumi.mochimissionplanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumimissionpro",
+     "link": "https://apps.apple.com/jp/app/id6779745474?pt=118326163&ct=social&mt=8"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "utility/letter/lumiletters/letter_e/zh-Hant",
+    "locale": "zh-Hant",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/utility-cards/card-20261123.jpg",
+    "caption": "今日字母：E e\nE — egg\n蛋\n想想還有哪個字也是這個音開頭\n\nLumi 字母星球 Lite: 三到七歲，聽字母發音、描寫大寫與小寫\nApp Store／Google Play 搜尋「Lumi 字母星球 Lite」\n\n#兒童英文ABC遊戲 #學字母 #寫字母 #認字母 #Lumi字母星球Lite",
+    "title": "今日字母：E e",
+    "alt": "Lumi Letters Lite — 今日字母：E e — E — egg — 蛋 — 英文啟蒙：英文字母描寫・自然發音",
+    "name": "Lumi Letters Lite",
+    "hook": "今日字母：E e",
+    "tags": [
+     "#兒童英文ABC遊戲",
+     "#學字母",
+     "#寫字母",
+     "#認字母",
+     "#Lumi字母星球Lite"
+    ],
+    "button": "在 App Store 下載",
+    "store": "https://apps.apple.com/tw/app/id6778748533?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiLettersLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiletters",
+    "pinterest": {
+     "description": "今日字母：E e\nE — egg\n蛋\n想想還有哪個字也是這個音開頭\n\nLumi 字母星球 Lite: 三到七歲，聽字母發音、描寫大寫與小寫\nApp Store／Google Play 搜尋「Lumi 字母星球 Lite」\n\n#兒童英文ABC遊戲 #學字母 #寫字母 #認字母 #Lumi字母星球Lite\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6778748533?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiLettersLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiletters",
+     "link": "https://apps.apple.com/tw/app/id6778748533?pt=118326163&ct=social&mt=8"
+    }
    },
    {
     "kind": "card",
@@ -4152,48 +4218,48 @@
    },
    {
     "kind": "clip",
-    "key": "gmoney/ko",
-    "locale": "ko",
-    "app": "gmoney",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/nck8iy.mp4",
-    "hook": "분류별로 어디에 썼는지 한눈에",
-    "name": "G+Money：가계부·예산·환율",
-    "title": "분류별로 어디에 썼는지 한눈에 | 생활비·소비기록·지출관리 | G+Money 가계부",
+    "key": "lumimissionpro/ja",
+    "locale": "ja",
+    "app": "lumimissionpro",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/1ged0k.mp4",
+    "hook": "保護者は、すべての記録を確認",
+    "name": "Lumi ミッション星 Pro 毎日の習慣",
+    "title": "保護者は、すべての記録を確認 | お支度ボード・朝と夜のルーティン | Lumi ミッション星 Pro",
     "tags": [
-     "#가계부예산환율",
-     "#용돈기입장",
-     "#환율계산기",
-     "#통화변환",
-     "#GMoney가계부"
+     "#寝る前",
+     "#寝かしつけ",
+     "#はみがき",
+     "#歯磨き",
+     "#Lumiミッション星Pro"
     ],
-    "caption": "분류별로 어디에 썼는지 한눈에\n환율 계산·기록 오프라인에서도\n생활비·소비기록·지출관리\nG+Money：가계부·예산·환율\nApp Store에서 'G+Money 가계부' 검색\nAndroid는 Google Play에서\n\n#가계부예산환율 #용돈기입장 #환율계산기 #통화변환 #GMoney가계부",
-    "button": "App Store에서 받기",
-    "variant": "b",
-    "alt": "G+Money：가계부·예산·환율 — 분류별로 어디에 썼는지 한눈에 — 환율 계산·기록 오프라인에서도 — 생활비·소비기록·지출관리",
-    "store": "https://apps.apple.com/kr/app/id6755782939?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney",
+    "caption": "保護者は、すべての記録を確認\nできたら1タップ、相棒が大よろこび\nお支度ボード・朝と夜のルーティン\nLumi ミッション星 Pro 毎日の習慣\nApp Storeで「Lumi ミッション星 Pro」を検索\nAndroidはGoogle Playで\n\n#寝る前 #寝かしつけ #はみがき #歯磨き #Lumiミッション星Pro",
+    "button": "App Storeで入手",
+    "variant": "c",
+    "alt": "Lumi ミッション星 Pro 毎日の習慣 — 保護者は、すべての記録を確認 — できたら1タップ、相棒が大よろこび — お支度ボード・朝と夜のルーティン",
+    "store": "https://apps.apple.com/jp/app/id6779745474?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.lumi.mochimissionplanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumimissionpro",
     "review": {
-     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
-     "url": "https://apps.apple.com/app/id6755782939?action=write-review"
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6779745474?action=write-review"
     },
     "keywords": [
-     "용돈기입장",
-     "환율계산기",
-     "통화변환",
-     "가계부앱",
-     "돈관리",
-     "절약"
+     "寝る前",
+     "寝かしつけ",
+     "はみがき",
+     "歯磨き",
+     "おかたづけ",
+     "片付け"
     ],
-    "keyline": "생활비·소비기록·지출관리",
+    "keyline": "お支度ボード・朝と夜のルーティン",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "987a384c8c1d4d89",
+     "board": "a82776e501c32a9a",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "분류별로 어디에 썼는지 한눈에\n환율 계산·기록 오프라인에서도\n생활비·소비기록·지출관리\nG+Money：가계부·예산·환율\nApp Store에서 'G+Money 가계부' 검색\nAndroid는 Google Play에서\n\n#가계부예산환율 #용돈기입장 #환율계산기 #통화변환 #GMoney가계부\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6755782939?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoney"
+     "caption": "保護者は、すべての記録を確認\nできたら1タップ、相棒が大よろこび\nお支度ボード・朝と夜のルーティン\nLumi ミッション星 Pro 毎日の習慣\nApp Storeで「Lumi ミッション星 Pro」を検索\nAndroidはGoogle Playで\n\n#寝る前 #寝かしつけ #はみがき #歯磨き #Lumiミッション星Pro\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6779745474?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.lumi.mochimissionplanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumimissionpro"
     },
     "slot": 15
    }
@@ -4642,181 +4708,6 @@
    },
    {
     "kind": "clip",
-    "key": "dailymate/en",
-    "locale": "en",
-    "app": "dailymate",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/bue2n2.mp4",
-    "hook": "3 levels in every topic",
-    "name": "DailyMate: Language Phrases",
-    "title": "3 levels in every topic | Learn Spanish, French & More | DailyMate Phrases",
-    "tags": [
-     "#LanguagePhrases",
-     "#LearnSpanish",
-     "#French",
-     "#DailyMatePhrases"
-    ],
-    "caption": "3 levels in every topic\n47 languages to learn\nLearn Spanish, French & More\nDailyMate: Language Phrases\nSearch “everyday phrases” on the App Store\nAlso on Google Play\n\n#LanguagePhrases #LearnSpanish #DailyMatePhrases",
-    "button": "Get it on the App Store",
-    "variant": "b",
-    "alt": "DailyMate: Language Phrases — 3 levels in every topic — 47 languages to learn — Learn Spanish, French & More",
-    "store": "https://apps.apple.com/us/app/id6790418321?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate",
-    "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6790418321?action=write-review"
-    },
-    "keywords": [
-     "everyday",
-     "german",
-     "phrasebook",
-     "situations",
-     "expressions",
-     "listening"
-    ],
-    "keyline": "Learn Spanish, French & More",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "06a3d61baa456520",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "boost_rank": 4
-   },
-   {
-    "kind": "clip",
-    "key": "dailymate/zh-Hant",
-    "locale": "zh-Hant",
-    "app": "dailymate",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/40zf82.mp4",
-    "hook": "每個主題都分，初中高三級",
-    "name": "DailyMate：用句子學語言",
-    "title": "每個主題都分，初中高三級 | 學英文・日文・韓文會話 | DailyMate 用句子學語言",
-    "tags": [
-     "#學英文日文韓文會話",
-     "#口說",
-     "#出國",
-     "#西班牙文",
-     "#DailyMate用句子學語言"
-    ],
-    "caption": "每個主題都分，初中高三級\n47 種語言任你學\n學英文・日文・韓文會話\nDailyMate：用句子學語言\n在 App Store 搜尋「DailyMate 用句子學語言」\nAndroid 版在 Google Play\n\n#學英文日文韓文會話 #口說 #DailyMate用句子學語言",
-    "button": "在 App Store 下載",
-    "variant": "b",
-    "alt": "DailyMate：用句子學語言 — 每個主題都分，初中高三級 — 47 種語言任你學 — 學英文・日文・韓文會話",
-    "store": "https://apps.apple.com/tw/app/id6790418321?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate",
-    "review": {
-     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
-     "url": "https://apps.apple.com/app/id6790418321?action=write-review"
-    },
-    "keywords": [
-     "口說",
-     "出國",
-     "西班牙文",
-     "法文",
-     "德文",
-     "外語"
-    ],
-    "keyline": "學英文・日文・韓文會話",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "06a3d61baa456520",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "boost_rank": 4
-   },
-   {
-    "kind": "clip",
-    "key": "dailymate/ja",
-    "locale": "ja",
-    "app": "dailymate",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/2oq7mt.mp4",
-    "hook": "音声で聞いて、自然な返しまで",
-    "name": "DailyMate：文で身につく語学",
-    "title": "音声で聞いて、自然な返しまで | 英会話・旅行フレーズを毎日一文 | DailyMate 文で身につく語学",
-    "tags": [
-     "#文で身につく語学",
-     "#実用",
-     "#フレーズ集",
-     "#日常会話",
-     "#DailyMate文で身につく語学"
-    ],
-    "caption": "音声で聞いて、自然な返しまで\nどのテーマも 3レベル\n英会話・旅行フレーズを毎日一文\nDailyMate：文で身につく語学\nApp Storeで「DailyMate 文で身につく語学」を検索\nAndroidはGoogle Playで\n\n#文で身につく語学 #実用 #DailyMate文で身につく語学",
-    "button": "App Storeで入手",
-    "variant": "c",
-    "alt": "DailyMate：文で身につく語学 — 音声で聞いて、自然な返しまで — どのテーマも 3レベル — 英会話・旅行フレーズを毎日一文",
-    "store": "https://apps.apple.com/jp/app/id6790418321?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate",
-    "review": {
-     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
-     "url": "https://apps.apple.com/app/id6790418321?action=write-review"
-    },
-    "keywords": [
-     "実用",
-     "フレーズ集",
-     "日常会話",
-     "韓国語",
-     "中国語",
-     "スペイン語"
-    ],
-    "keyline": "英会話・旅行フレーズを毎日一文",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "06a3d61baa456520",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "boost_rank": 4
-   },
-   {
-    "kind": "clip",
-    "key": "dailymate/ko",
-    "locale": "ko",
-    "app": "dailymate",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/0df4pg.mp4",
-    "hook": "주제마다 3단계 난이도",
-    "name": "DailyMate: 문장으로 배우는 언어",
-    "title": "주제마다 3단계 난이도 | 생활영어, 일본어, 중국어 회화 | DailyMate 문장으로 배우는 언어",
-    "tags": [
-     "#문장으로배우는언어",
-     "#영어회화",
-     "#영어공부",
-     "#일상회화",
-     "#DailyMate문장으로배우는언어"
-    ],
-    "caption": "주제마다 3단계 난이도\n배울 수 있는 언어 47개\n생활영어, 일본어, 중국어 회화\nDailyMate: 문장으로 배우는 언어\nApp Store에서 'DailyMate 문장으로 배우는 언어' 검색\nAndroid는 Google Play에서\n\n#문장으로배우는언어 #영어회화 #DailyMate문장으로배우는언어",
-    "button": "App Store에서 받기",
-    "variant": "b",
-    "alt": "DailyMate: 문장으로 배우는 언어 — 주제마다 3단계 난이도 — 배울 수 있는 언어 47개 — 생활영어, 일본어, 중국어 회화",
-    "store": "https://apps.apple.com/kr/app/id6790418321?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate",
-    "review": {
-     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
-     "url": "https://apps.apple.com/app/id6790418321?action=write-review"
-    },
-    "keywords": [
-     "영어회화",
-     "영어공부",
-     "일상회화",
-     "실전회화",
-     "상황별",
-     "예문"
-    ],
-    "keyline": "생활영어, 일본어, 중국어 회화",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "06a3d61baa456520",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "boost_rank": 4
-   },
-   {
-    "kind": "clip",
     "key": "wifiaidlite/en",
     "locale": "en",
     "app": "wifiaidlite",
@@ -4856,7 +4747,7 @@
      "real_recording": false,
      "rules": "2026-10-18"
     },
-    "boost_rank": 5
+    "boost_rank": 4
    },
    {
     "kind": "clip",
@@ -4900,7 +4791,7 @@
      "real_recording": false,
      "rules": "2026-10-18"
     },
-    "boost_rank": 5
+    "boost_rank": 4
    },
    {
     "kind": "clip",
@@ -4944,7 +4835,7 @@
      "real_recording": false,
      "rules": "2026-10-18"
     },
-    "boost_rank": 5
+    "boost_rank": 4
    },
    {
     "kind": "clip",
@@ -4988,7 +4879,7 @@
      "real_recording": false,
      "rules": "2026-10-18"
     },
-    "boost_rank": 5
+    "boost_rank": 4
    },
    {
     "kind": "clip",
@@ -5028,6 +4919,181 @@
      "store_claims_ok": true,
      "screen_text_ok": true,
      "board": "fed6529bb6230b02",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "boost_rank": 4
+   },
+   {
+    "kind": "clip",
+    "key": "gmoneylite/en",
+    "locale": "en",
+    "app": "gmoneylite",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/fbtd4k.mp4",
+    "hook": "Log in yen, see it in your currency",
+    "name": "G+Money Lite: Trip Spending",
+    "title": "Log in yen, see it in your currency | Trip & Vacation Budget Planner | G+Money Lite",
+    "tags": [
+     "#TravelBudget",
+     "#VacationBudgetPlanner",
+     "#DailyLimit",
+     "#GMoneyLite"
+    ],
+    "caption": "Log in yen, see it in your currency\nWhole trip total, at a glance\nTrip & Vacation Budget Planner\nG+Money Lite: Trip Spending\nSearch “G+Money Lite” on the App Store\nAlso on Google Play\n\n#TravelBudget #VacationBudgetPlanner #GMoneyLite",
+    "button": "Get it on the App Store",
+    "variant": "b",
+    "alt": "G+Money Lite: Trip Spending — Log in yen, see it in your currency — Whole trip total, at a glance — Trip & Vacation Budget Planner",
+    "store": "https://apps.apple.com/us/app/id6793436548?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoneylite",
+    "review": {
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6793436548?action=write-review"
+    },
+    "keywords": [
+     "converter",
+     "exchange",
+     "rate",
+     "abroad",
+     "foreign",
+     "overseas"
+    ],
+    "keyline": "Trip & Vacation Budget Planner",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "13219b82506e626f",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "boost_rank": 5
+   },
+   {
+    "kind": "clip",
+    "key": "gmoneylite/zh-Hant",
+    "locale": "zh-Hant",
+    "app": "gmoneylite",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/dndedr.mp4",
+    "hook": "日幣記一筆，台幣馬上出來",
+    "name": "G+Money Lite：旅行記帳·匯率換算",
+    "title": "日幣記一筆，台幣馬上出來 | 出國預算・自由行花費・每日預算 | G+Money Lite 旅行記帳",
+    "tags": [
+     "#旅行記帳匯率換算",
+     "#記帳本",
+     "#開銷",
+     "#記帳軟體",
+     "#GMoneyLite旅行記帳"
+    ],
+    "caption": "日幣記一筆，台幣馬上出來\n整趟花多少，一眼看清\n出國預算・自由行花費・每日預算\nG+Money Lite：旅行記帳·匯率換算\n在 App Store 搜尋「G+Money Lite 旅行記帳」\nAndroid 版在 Google Play\n\n#旅行記帳匯率換算 #記帳本 #GMoneyLite旅行記帳",
+    "button": "在 App Store 下載",
+    "variant": "b",
+    "alt": "G+Money Lite：旅行記帳·匯率換算 — 日幣記一筆，台幣馬上出來 — 整趟花多少，一眼看清 — 出國預算・自由行花費・每日預算",
+    "store": "https://apps.apple.com/tw/app/id6793436548?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoneylite",
+    "review": {
+     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
+     "url": "https://apps.apple.com/app/id6793436548?action=write-review"
+    },
+    "keywords": [
+     "記帳本",
+     "開銷",
+     "記帳軟體",
+     "花費",
+     "消費記錄",
+     "支出紀錄"
+    ],
+    "keyline": "出國預算・自由行花費・每日預算",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "13219b82506e626f",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "boost_rank": 5
+   },
+   {
+    "kind": "clip",
+    "key": "gmoneylite/ja",
+    "locale": "ja",
+    "app": "gmoneylite",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/zq3wv8.mp4",
+    "hook": "今日あといくら？すぐわかる",
+    "name": "G+Money Lite：旅の家計簿・為替",
+    "title": "今日あといくら？すぐわかる | 旅行費用・旅費管理・外貨換算 | G+Money Lite 旅の家計簿",
+    "tags": [
+     "#旅の家計簿為替",
+     "#支出",
+     "#小遣い",
+     "#クイック入力",
+     "#GMoneyLite旅の家計簿"
+    ],
+    "caption": "今日あといくら？すぐわかる\n現地通貨で記録、自国通貨に即換算\n旅行費用・旅費管理・外貨換算\nG+Money Lite：旅の家計簿・為替\nApp Storeで「G+Money Lite 旅の家計簿」を検索\nAndroidはGoogle Playで\n\n#旅の家計簿為替 #支出 #GMoneyLite旅の家計簿",
+    "button": "App Storeで入手",
+    "variant": "c",
+    "alt": "G+Money Lite：旅の家計簿・為替 — 今日あといくら？すぐわかる — 現地通貨で記録、自国通貨に即換算 — 旅行費用・旅費管理・外貨換算",
+    "store": "https://apps.apple.com/jp/app/id6793436548?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoneylite",
+    "review": {
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6793436548?action=write-review"
+    },
+    "keywords": [
+     "支出",
+     "小遣い",
+     "クイック入力",
+     "手首",
+     "ホーム画面",
+     "スマートウォッチ"
+    ],
+    "keyline": "旅行費用・旅費管理・外貨換算",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "13219b82506e626f",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "boost_rank": 5
+   },
+   {
+    "kind": "clip",
+    "key": "gmoneylite/ko",
+    "locale": "ko",
+    "app": "gmoneylite",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/q3hi91.mp4",
+    "hook": "현지 통화로 적으면 내 통화로 바로",
+    "name": "G+Money Lite：여행 가계부·환율",
+    "title": "현지 통화로 적으면 내 통화로 바로 | 해외여행 경비·하루 예산 | G+Money Lite 여행 가계부",
+    "tags": [
+     "#여행가계부환율",
+     "#지출",
+     "#용돈",
+     "#한도",
+     "#GMoneyLite여행가계부"
+    ],
+    "caption": "현지 통화로 적으면 내 통화로 바로\n여행 총액을 한눈에\n해외여행 경비·하루 예산\nG+Money Lite：여행 가계부·환율\nApp Store에서 'G+Money Lite 여행 가계부' 검색\nAndroid는 Google Play에서\n\n#여행가계부환율 #지출 #GMoneyLite여행가계부",
+    "button": "App Store에서 받기",
+    "variant": "b",
+    "alt": "G+Money Lite：여행 가계부·환율 — 현지 통화로 적으면 내 통화로 바로 — 여행 총액을 한눈에 — 해외여행 경비·하루 예산",
+    "store": "https://apps.apple.com/kr/app/id6793436548?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoneylite",
+    "review": {
+     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
+     "url": "https://apps.apple.com/app/id6793436548?action=write-review"
+    },
+    "keywords": [
+     "지출",
+     "용돈",
+     "한도",
+     "빠른기록",
+     "손목",
+     "홈화면"
+    ],
+    "keyline": "해외여행 경비·하루 예산",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "13219b82506e626f",
      "real_recording": false,
      "rules": "2026-10-18"
     },
@@ -6396,177 +6462,6 @@
      "store_claims_ok": true,
      "screen_text_ok": true,
      "board": "ef3e5309a8ca7ad1",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    }
-   },
-   {
-    "kind": "clip",
-    "key": "gmoneylite/en",
-    "locale": "en",
-    "app": "gmoneylite",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/fbtd4k.mp4",
-    "hook": "Log in yen, see it in your currency",
-    "name": "G+Money Lite: Trip Spending",
-    "title": "Log in yen, see it in your currency | Trip & Vacation Budget Planner | G+Money Lite",
-    "tags": [
-     "#TravelBudget",
-     "#VacationBudgetPlanner",
-     "#DailyLimit",
-     "#GMoneyLite"
-    ],
-    "caption": "Log in yen, see it in your currency\nWhole trip total, at a glance\nTrip & Vacation Budget Planner\nG+Money Lite: Trip Spending\nSearch “G+Money Lite” on the App Store\nAlso on Google Play\n\n#TravelBudget #VacationBudgetPlanner #GMoneyLite",
-    "button": "Get it on the App Store",
-    "variant": "b",
-    "alt": "G+Money Lite: Trip Spending — Log in yen, see it in your currency — Whole trip total, at a glance — Trip & Vacation Budget Planner",
-    "store": "https://apps.apple.com/us/app/id6793436548?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoneylite",
-    "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6793436548?action=write-review"
-    },
-    "keywords": [
-     "converter",
-     "exchange",
-     "rate",
-     "abroad",
-     "foreign",
-     "overseas"
-    ],
-    "keyline": "Trip & Vacation Budget Planner",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "13219b82506e626f",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    }
-   },
-   {
-    "kind": "clip",
-    "key": "gmoneylite/zh-Hant",
-    "locale": "zh-Hant",
-    "app": "gmoneylite",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/dndedr.mp4",
-    "hook": "日幣記一筆，台幣馬上出來",
-    "name": "G+Money Lite：旅行記帳·匯率換算",
-    "title": "日幣記一筆，台幣馬上出來 | 出國預算・自由行花費・每日預算 | G+Money Lite 旅行記帳",
-    "tags": [
-     "#旅行記帳匯率換算",
-     "#記帳本",
-     "#開銷",
-     "#記帳軟體",
-     "#GMoneyLite旅行記帳"
-    ],
-    "caption": "日幣記一筆，台幣馬上出來\n整趟花多少，一眼看清\n出國預算・自由行花費・每日預算\nG+Money Lite：旅行記帳·匯率換算\n在 App Store 搜尋「G+Money Lite 旅行記帳」\nAndroid 版在 Google Play\n\n#旅行記帳匯率換算 #記帳本 #GMoneyLite旅行記帳",
-    "button": "在 App Store 下載",
-    "variant": "b",
-    "alt": "G+Money Lite：旅行記帳·匯率換算 — 日幣記一筆，台幣馬上出來 — 整趟花多少，一眼看清 — 出國預算・自由行花費・每日預算",
-    "store": "https://apps.apple.com/tw/app/id6793436548?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoneylite",
-    "review": {
-     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
-     "url": "https://apps.apple.com/app/id6793436548?action=write-review"
-    },
-    "keywords": [
-     "記帳本",
-     "開銷",
-     "記帳軟體",
-     "花費",
-     "消費記錄",
-     "支出紀錄"
-    ],
-    "keyline": "出國預算・自由行花費・每日預算",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "13219b82506e626f",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    }
-   },
-   {
-    "kind": "clip",
-    "key": "gmoneylite/ja",
-    "locale": "ja",
-    "app": "gmoneylite",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/zq3wv8.mp4",
-    "hook": "今日あといくら？すぐわかる",
-    "name": "G+Money Lite：旅の家計簿・為替",
-    "title": "今日あといくら？すぐわかる | 旅行費用・旅費管理・外貨換算 | G+Money Lite 旅の家計簿",
-    "tags": [
-     "#旅の家計簿為替",
-     "#支出",
-     "#小遣い",
-     "#クイック入力",
-     "#GMoneyLite旅の家計簿"
-    ],
-    "caption": "今日あといくら？すぐわかる\n現地通貨で記録、自国通貨に即換算\n旅行費用・旅費管理・外貨換算\nG+Money Lite：旅の家計簿・為替\nApp Storeで「G+Money Lite 旅の家計簿」を検索\nAndroidはGoogle Playで\n\n#旅の家計簿為替 #支出 #GMoneyLite旅の家計簿",
-    "button": "App Storeで入手",
-    "variant": "c",
-    "alt": "G+Money Lite：旅の家計簿・為替 — 今日あといくら？すぐわかる — 現地通貨で記録、自国通貨に即換算 — 旅行費用・旅費管理・外貨換算",
-    "store": "https://apps.apple.com/jp/app/id6793436548?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoneylite",
-    "review": {
-     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
-     "url": "https://apps.apple.com/app/id6793436548?action=write-review"
-    },
-    "keywords": [
-     "支出",
-     "小遣い",
-     "クイック入力",
-     "手首",
-     "ホーム画面",
-     "スマートウォッチ"
-    ],
-    "keyline": "旅行費用・旅費管理・外貨換算",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "13219b82506e626f",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    }
-   },
-   {
-    "kind": "clip",
-    "key": "gmoneylite/ko",
-    "locale": "ko",
-    "app": "gmoneylite",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/q3hi91.mp4",
-    "hook": "현지 통화로 적으면 내 통화로 바로",
-    "name": "G+Money Lite：여행 가계부·환율",
-    "title": "현지 통화로 적으면 내 통화로 바로 | 해외여행 경비·하루 예산 | G+Money Lite 여행 가계부",
-    "tags": [
-     "#여행가계부환율",
-     "#지출",
-     "#용돈",
-     "#한도",
-     "#GMoneyLite여행가계부"
-    ],
-    "caption": "현지 통화로 적으면 내 통화로 바로\n여행 총액을 한눈에\n해외여행 경비·하루 예산\nG+Money Lite：여행 가계부·환율\nApp Store에서 'G+Money Lite 여행 가계부' 검색\nAndroid는 Google Play에서\n\n#여행가계부환율 #지출 #GMoneyLite여행가계부",
-    "button": "App Store에서 받기",
-    "variant": "b",
-    "alt": "G+Money Lite：여행 가계부·환율 — 현지 통화로 적으면 내 통화로 바로 — 여행 총액을 한눈에 — 해외여행 경비·하루 예산",
-    "store": "https://apps.apple.com/kr/app/id6793436548?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoneylite",
-    "review": {
-     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
-     "url": "https://apps.apple.com/app/id6793436548?action=write-review"
-    },
-    "keywords": [
-     "지출",
-     "용돈",
-     "한도",
-     "빠른기록",
-     "손목",
-     "홈화면"
-    ],
-    "keyline": "해외여행 경비·하루 예산",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "13219b82506e626f",
      "real_recording": false,
      "rules": "2026-10-18"
     }
@@ -15110,6 +15005,177 @@
    },
    {
     "kind": "clip",
+    "key": "dailymate/en",
+    "locale": "en",
+    "app": "dailymate",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/bue2n2.mp4",
+    "hook": "Hear it, plus the natural reply",
+    "name": "DailyMate: Language Phrases",
+    "title": "Hear it, plus the natural reply | Learn Spanish, French & More | DailyMate Phrases",
+    "tags": [
+     "#LanguagePhrases",
+     "#LearnSpanish",
+     "#French",
+     "#DailyMatePhrases"
+    ],
+    "caption": "Hear it, plus the natural reply\n3 levels in every topic\nLearn Spanish, French & More\nDailyMate: Language Phrases\nSearch “everyday phrases” on the App Store\nAlso on Google Play\n\n#LanguagePhrases #LearnSpanish #DailyMatePhrases",
+    "button": "Get it on the App Store",
+    "variant": "c",
+    "alt": "DailyMate: Language Phrases — Hear it, plus the natural reply — 3 levels in every topic — Learn Spanish, French & More",
+    "store": "https://apps.apple.com/us/app/id6790418321?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate",
+    "review": {
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6790418321?action=write-review"
+    },
+    "keywords": [
+     "everyday",
+     "german",
+     "phrasebook",
+     "situations",
+     "expressions",
+     "listening"
+    ],
+    "keyline": "Learn Spanish, French & More",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "06a3d61baa456520",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "dailymate/zh-Hant",
+    "locale": "zh-Hant",
+    "app": "dailymate",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/40zf82.mp4",
+    "hook": "每個主題都分，初中高三級",
+    "name": "DailyMate：用句子學語言",
+    "title": "每個主題都分，初中高三級 | 學英文・日文・韓文會話 | DailyMate 用句子學語言",
+    "tags": [
+     "#學英文日文韓文會話",
+     "#口說",
+     "#出國",
+     "#西班牙文",
+     "#DailyMate用句子學語言"
+    ],
+    "caption": "每個主題都分，初中高三級\n47 種語言任你學\n學英文・日文・韓文會話\nDailyMate：用句子學語言\n在 App Store 搜尋「DailyMate 用句子學語言」\nAndroid 版在 Google Play\n\n#學英文日文韓文會話 #口說 #DailyMate用句子學語言",
+    "button": "在 App Store 下載",
+    "variant": "b",
+    "alt": "DailyMate：用句子學語言 — 每個主題都分，初中高三級 — 47 種語言任你學 — 學英文・日文・韓文會話",
+    "store": "https://apps.apple.com/tw/app/id6790418321?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate",
+    "review": {
+     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
+     "url": "https://apps.apple.com/app/id6790418321?action=write-review"
+    },
+    "keywords": [
+     "口說",
+     "出國",
+     "西班牙文",
+     "法文",
+     "德文",
+     "外語"
+    ],
+    "keyline": "學英文・日文・韓文會話",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "06a3d61baa456520",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "dailymate/ja",
+    "locale": "ja",
+    "app": "dailymate",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/2oq7mt.mp4",
+    "hook": "音声で聞いて、自然な返しまで",
+    "name": "DailyMate：文で身につく語学",
+    "title": "音声で聞いて、自然な返しまで | 英会話・旅行フレーズを毎日一文 | DailyMate 文で身につく語学",
+    "tags": [
+     "#文で身につく語学",
+     "#実用",
+     "#フレーズ集",
+     "#日常会話",
+     "#DailyMate文で身につく語学"
+    ],
+    "caption": "音声で聞いて、自然な返しまで\nどのテーマも 3レベル\n英会話・旅行フレーズを毎日一文\nDailyMate：文で身につく語学\nApp Storeで「DailyMate 文で身につく語学」を検索\nAndroidはGoogle Playで\n\n#文で身につく語学 #実用 #DailyMate文で身につく語学",
+    "button": "App Storeで入手",
+    "variant": "c",
+    "alt": "DailyMate：文で身につく語学 — 音声で聞いて、自然な返しまで — どのテーマも 3レベル — 英会話・旅行フレーズを毎日一文",
+    "store": "https://apps.apple.com/jp/app/id6790418321?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate",
+    "review": {
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6790418321?action=write-review"
+    },
+    "keywords": [
+     "実用",
+     "フレーズ集",
+     "日常会話",
+     "韓国語",
+     "中国語",
+     "スペイン語"
+    ],
+    "keyline": "英会話・旅行フレーズを毎日一文",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "06a3d61baa456520",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "dailymate/ko",
+    "locale": "ko",
+    "app": "dailymate",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/0df4pg.mp4",
+    "hook": "주제마다 3단계 난이도",
+    "name": "DailyMate: 문장으로 배우는 언어",
+    "title": "주제마다 3단계 난이도 | 생활영어, 일본어, 중국어 회화 | DailyMate 문장으로 배우는 언어",
+    "tags": [
+     "#문장으로배우는언어",
+     "#영어회화",
+     "#영어공부",
+     "#일상회화",
+     "#DailyMate문장으로배우는언어"
+    ],
+    "caption": "주제마다 3단계 난이도\n배울 수 있는 언어 47개\n생활영어, 일본어, 중국어 회화\nDailyMate: 문장으로 배우는 언어\nApp Store에서 'DailyMate 문장으로 배우는 언어' 검색\nAndroid는 Google Play에서\n\n#문장으로배우는언어 #영어회화 #DailyMate문장으로배우는언어",
+    "button": "App Store에서 받기",
+    "variant": "b",
+    "alt": "DailyMate: 문장으로 배우는 언어 — 주제마다 3단계 난이도 — 배울 수 있는 언어 47개 — 생활영어, 일본어, 중국어 회화",
+    "store": "https://apps.apple.com/kr/app/id6790418321?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate",
+    "review": {
+     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
+     "url": "https://apps.apple.com/app/id6790418321?action=write-review"
+    },
+    "keywords": [
+     "영어회화",
+     "영어공부",
+     "일상회화",
+     "실전회화",
+     "상황별",
+     "예문"
+    ],
+    "keyline": "생활영어, 일본어, 중국어 회화",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "06a3d61baa456520",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    }
+   },
+   {
+    "kind": "clip",
     "key": "gmoney/en",
     "locale": "en",
     "app": "gmoney",
@@ -20200,7 +20266,7 @@
     "button": "Get it on the App Store",
     "variant": "b",
     "alt": "Mochi: Cute Checklist — Turkey, pie, groceries…tap and done — Tons of cute themes — Cozy To-Do List Widget, Chores",
-    "store": "https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=ln_mochi_soft_us_bs_1123&mt=8",
+    "store": "https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=ln_mochi_soft_us_bs_1123&mt=8&ppid=6882ef79-3248-4054-bc9d-23c10a0f6521",
     "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dln_mochi_soft_us_bs_1123%26utm_campaign%3Dmochi",
     "review": {
      "label": "Already using this app? Rate or review it on the App Store",
@@ -20655,19 +20721,19 @@
     "locale": "en",
     "app": "duowallpaperstudio_f",
     "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/7cf3b8e4e3.mp4",
-    "hook": "Add one line of your own text",
+    "hook": "Your photos stay on your device",
     "name": "Foldable Wallpaper Studio",
-    "title": "Add one line of your own text | Dual Screen Pairs for Duo | Foldable Wallpaper Studio",
+    "title": "Your photos stay on your device | Dual Screen Pairs for Duo | Foldable Wallpaper Studio",
     "tags": [
      "#Folding",
      "#Outer",
      "#Lockscreen",
      "#FoldableWallpaperStudio"
     ],
-    "caption": "Add one line of your own text\nYour photos stay on your device\nDual Screen Pairs for Duo\nSearch “Foldable Wallpaper Studio” on the App Store\nAlso on Google Play\n\n#Folding #Outer #FoldableWallpaperStudio",
+    "caption": "Your photos stay on your device\nSaved as two images\nDual Screen Pairs for Duo\nSearch “Foldable Wallpaper Studio” on the App Store\nAlso on Google Play\n\n#Folding #Outer #FoldableWallpaperStudio",
     "button": "Get it on the App Store",
     "variant": "b",
-    "alt": "Foldable Wallpaper Studio — Add one line of your own text — Your photos stay on your device — Dual Screen Pairs for Duo",
+    "alt": "Foldable Wallpaper Studio — Your photos stay on your device — Saved as two images — Dual Screen Pairs for Duo",
     "store": "https://apps.apple.com/us/app/id6824946559?pt=118326163&ct=social&mt=8",
     "play": "https://play.google.com/store/apps/details?id=com.alice51849.DuoWallpaperStudio&referrer=utm_source%3Dsocial%26utm_campaign%3Dduowallpaperstudio",
     "review": {
@@ -20839,7 +20905,7 @@
     "button": "Get it on the App Store",
     "variant": "b",
     "alt": "Mochi: Cute Checklist — School, work, errands: one cute list — Tap to check it off — Cozy To-Do List Widget, Chores",
-    "store": "https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=ln_mochi_soft_us_bs_1123&mt=8",
+    "store": "https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=ln_mochi_soft_us_bs_1123&mt=8&ppid=bc6d9ed3-398d-48d2-9a4e-82ab53f81ea2",
     "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dln_mochi_soft_us_bs_1123%26utm_campaign%3Dmochi",
     "review": {
      "label": "Already using this app? Rate or review it on the App Store",
@@ -22097,243 +22163,6 @@
    },
    {
     "kind": "clip",
-    "key": "dailymate/en",
-    "locale": "en",
-    "app": "dailymate",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/bue2n2.mp4",
-    "hook": "3 levels in every topic",
-    "name": "DailyMate: Language Phrases",
-    "title": "3 levels in every topic | Learn Spanish, French & More | DailyMate Phrases",
-    "tags": [
-     "#LanguagePhrases",
-     "#LearnSpanish",
-     "#French",
-     "#DailyMatePhrases"
-    ],
-    "caption": "3 levels in every topic\n47 languages to learn\nLearn Spanish, French & More\nDailyMate: Language Phrases\nSearch “everyday phrases” on the App Store\nAlso on Google Play\n\n#LanguagePhrases #LearnSpanish #French #DailyMatePhrases",
-    "button": "Get it on the App Store",
-    "variant": "b",
-    "alt": "DailyMate: Language Phrases — 3 levels in every topic — 47 languages to learn — Learn Spanish, French & More",
-    "store": "https://apps.apple.com/us/app/id6790418321?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate",
-    "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6790418321?action=write-review"
-    },
-    "keywords": [
-     "everyday",
-     "german",
-     "phrasebook",
-     "situations",
-     "expressions",
-     "listening"
-    ],
-    "keyline": "Learn Spanish, French & More",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "06a3d61baa456520",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "youtube": {
-     "title": "3 levels in every topic | DailyMate Phrases #Shorts",
-     "description": "3 levels in every topic\n47 languages to learn\nLearn Spanish, French & More\n\nDailyMate: Language Phrases\nApp Store: https://apps.apple.com/us/app/id6790418321?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate\nAlready using this app? Rate or review it on the App Store\nhttps://apps.apple.com/app/id6790418321?action=write-review\n\neveryday · german · phrasebook · situations · expressions · listening\n\n#Shorts #LanguagePhrases #DailyMatePhrases",
-     "tags": [
-      "everyday",
-      "german",
-      "phrasebook",
-      "situations",
-      "expressions",
-      "listening",
-      "LanguagePhrases",
-      "LearnSpanish",
-      "French",
-      "DailyMatePhrases",
-      "DailyMate Phrases"
-     ]
-    },
-    "boost_rank": 4
-   },
-   {
-    "kind": "clip",
-    "key": "dailymate/zh-Hant",
-    "locale": "zh-Hant",
-    "app": "dailymate",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/40zf82.mp4",
-    "hook": "每個主題都分，初中高三級",
-    "name": "DailyMate：用句子學語言",
-    "title": "每個主題都分，初中高三級 | 學英文・日文・韓文會話 | DailyMate 用句子學語言",
-    "tags": [
-     "#學英文日文韓文會話",
-     "#口說",
-     "#出國",
-     "#西班牙文",
-     "#DailyMate用句子學語言"
-    ],
-    "caption": "每個主題都分，初中高三級\n47 種語言任你學\n學英文・日文・韓文會話\nDailyMate：用句子學語言\n在 App Store 搜尋「DailyMate 用句子學語言」\nAndroid 版在 Google Play\n\n#學英文日文韓文會話 #口說 #出國 #西班牙文 #DailyMate用句子學語言",
-    "button": "在 App Store 下載",
-    "variant": "b",
-    "alt": "DailyMate：用句子學語言 — 每個主題都分，初中高三級 — 47 種語言任你學 — 學英文・日文・韓文會話",
-    "store": "https://apps.apple.com/tw/app/id6790418321?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate",
-    "review": {
-     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
-     "url": "https://apps.apple.com/app/id6790418321?action=write-review"
-    },
-    "keywords": [
-     "口說",
-     "出國",
-     "西班牙文",
-     "法文",
-     "德文",
-     "外語"
-    ],
-    "keyline": "學英文・日文・韓文會話",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "06a3d61baa456520",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "youtube": {
-     "title": "每個主題都分，初中高三級 | DailyMate 用句子學語言 #Shorts",
-     "description": "每個主題都分，初中高三級\n47 種語言任你學\n學英文・日文・韓文會話\n\nDailyMate：用句子學語言\nApp Store: https://apps.apple.com/tw/app/id6790418321?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate\n已經在用這款 App？可以到 App Store 評分或撰寫評論\nhttps://apps.apple.com/app/id6790418321?action=write-review\n\n口說 · 出國 · 西班牙文 · 法文 · 德文 · 外語\n\n#Shorts #學英文日文韓文會話 #DailyMate用句子學語言",
-     "tags": [
-      "口說",
-      "出國",
-      "西班牙文",
-      "法文",
-      "德文",
-      "外語",
-      "學英文日文韓文會話",
-      "DailyMate用句子學語言",
-      "DailyMate 用句子學語言"
-     ]
-    },
-    "boost_rank": 4
-   },
-   {
-    "kind": "clip",
-    "key": "dailymate/ja",
-    "locale": "ja",
-    "app": "dailymate",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/2oq7mt.mp4",
-    "hook": "音声で聞いて、自然な返しまで",
-    "name": "DailyMate：文で身につく語学",
-    "title": "音声で聞いて、自然な返しまで | 英会話・旅行フレーズを毎日一文 | DailyMate 文で身につく語学",
-    "tags": [
-     "#文で身につく語学",
-     "#実用",
-     "#フレーズ集",
-     "#日常会話",
-     "#DailyMate文で身につく語学"
-    ],
-    "caption": "音声で聞いて、自然な返しまで\nどのテーマも 3レベル\n英会話・旅行フレーズを毎日一文\nDailyMate：文で身につく語学\nApp Storeで「DailyMate 文で身につく語学」を検索\nAndroidはGoogle Playで\n\n#文で身につく語学 #実用 #フレーズ集 #日常会話 #DailyMate文で身につく語学",
-    "button": "App Storeで入手",
-    "variant": "c",
-    "alt": "DailyMate：文で身につく語学 — 音声で聞いて、自然な返しまで — どのテーマも 3レベル — 英会話・旅行フレーズを毎日一文",
-    "store": "https://apps.apple.com/jp/app/id6790418321?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate",
-    "review": {
-     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
-     "url": "https://apps.apple.com/app/id6790418321?action=write-review"
-    },
-    "keywords": [
-     "実用",
-     "フレーズ集",
-     "日常会話",
-     "韓国語",
-     "中国語",
-     "スペイン語"
-    ],
-    "keyline": "英会話・旅行フレーズを毎日一文",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "06a3d61baa456520",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "youtube": {
-     "title": "音声で聞いて、自然な返しまで | DailyMate 文で身につく語学 #Shorts",
-     "description": "音声で聞いて、自然な返しまで\nどのテーマも 3レベル\n英会話・旅行フレーズを毎日一文\n\nDailyMate：文で身につく語学\nApp Store: https://apps.apple.com/jp/app/id6790418321?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate\nこのアプリをお使いですか？App Store で評価・レビューできます\nhttps://apps.apple.com/app/id6790418321?action=write-review\n\n実用 · フレーズ集 · 日常会話 · 韓国語 · 中国語 · スペイン語\n\n#Shorts #文で身につく語学 #DailyMate文で身につく語学",
-     "tags": [
-      "実用",
-      "フレーズ集",
-      "日常会話",
-      "韓国語",
-      "中国語",
-      "スペイン語",
-      "文で身につく語学",
-      "DailyMate文で身につく語学",
-      "DailyMate 文で身につく語学"
-     ]
-    },
-    "boost_rank": 4
-   },
-   {
-    "kind": "clip",
-    "key": "dailymate/ko",
-    "locale": "ko",
-    "app": "dailymate",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/0df4pg.mp4",
-    "hook": "주제마다 3단계 난이도",
-    "name": "DailyMate: 문장으로 배우는 언어",
-    "title": "주제마다 3단계 난이도 | 생활영어, 일본어, 중국어 회화 | DailyMate 문장으로 배우는 언어",
-    "tags": [
-     "#문장으로배우는언어",
-     "#영어회화",
-     "#영어공부",
-     "#일상회화",
-     "#DailyMate문장으로배우는언어"
-    ],
-    "caption": "주제마다 3단계 난이도\n배울 수 있는 언어 47개\n생활영어, 일본어, 중국어 회화\nDailyMate: 문장으로 배우는 언어\nApp Store에서 'DailyMate 문장으로 배우는 언어' 검색\nAndroid는 Google Play에서\n\n#문장으로배우는언어 #영어회화 #영어공부 #일상회화 #DailyMate문장으로배우는언어",
-    "button": "App Store에서 받기",
-    "variant": "b",
-    "alt": "DailyMate: 문장으로 배우는 언어 — 주제마다 3단계 난이도 — 배울 수 있는 언어 47개 — 생활영어, 일본어, 중국어 회화",
-    "store": "https://apps.apple.com/kr/app/id6790418321?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate",
-    "review": {
-     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
-     "url": "https://apps.apple.com/app/id6790418321?action=write-review"
-    },
-    "keywords": [
-     "영어회화",
-     "영어공부",
-     "일상회화",
-     "실전회화",
-     "상황별",
-     "예문"
-    ],
-    "keyline": "생활영어, 일본어, 중국어 회화",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "06a3d61baa456520",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "youtube": {
-     "title": "주제마다 3단계 난이도 | DailyMate 문장으로 배우는 언어 #Shorts",
-     "description": "주제마다 3단계 난이도\n배울 수 있는 언어 47개\n생활영어, 일본어, 중국어 회화\n\nDailyMate: 문장으로 배우는 언어\nApp Store: https://apps.apple.com/kr/app/id6790418321?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate\n이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다\nhttps://apps.apple.com/app/id6790418321?action=write-review\n\n영어회화 · 영어공부 · 일상회화 · 실전회화 · 상황별 · 예문\n\n#Shorts #문장으로배우는언어 #DailyMate문장으로배우는언어",
-     "tags": [
-      "영어회화",
-      "영어공부",
-      "일상회화",
-      "실전회화",
-      "상황별",
-      "예문",
-      "문장으로배우는언어",
-      "DailyMate문장으로배우는언어",
-      "DailyMate 문장으로 배우는 언어"
-     ]
-    },
-    "boost_rank": 4
-   },
-   {
-    "kind": "clip",
     "key": "wifiaidlite/en",
     "locale": "en",
     "app": "wifiaidlite",
@@ -22390,7 +22219,7 @@
       "WiFi Aid Lite"
      ]
     },
-    "boost_rank": 5
+    "boost_rank": 4
    },
    {
     "kind": "clip",
@@ -22448,7 +22277,7 @@
       "WiFi Aid Lite"
      ]
     },
-    "boost_rank": 5
+    "boost_rank": 4
    },
    {
     "kind": "clip",
@@ -22506,7 +22335,7 @@
       "WiFi Aid Lite"
      ]
     },
-    "boost_rank": 5
+    "boost_rank": 4
    },
    {
     "kind": "clip",
@@ -22564,7 +22393,7 @@
       "WiFi Aid Lite"
      ]
     },
-    "boost_rank": 5
+    "boost_rank": 4
    },
    {
     "kind": "clip",
@@ -22621,6 +22450,243 @@
       "WiFi",
       "WiFiAidLite",
       "WiFi Aid Lite"
+     ]
+    },
+    "boost_rank": 4
+   },
+   {
+    "kind": "clip",
+    "key": "gmoneylite/en",
+    "locale": "en",
+    "app": "gmoneylite",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/fbtd4k.mp4",
+    "hook": "Log in yen, see it in your currency",
+    "name": "G+Money Lite: Trip Spending",
+    "title": "Log in yen, see it in your currency | Trip & Vacation Budget Planner | G+Money Lite",
+    "tags": [
+     "#TravelBudget",
+     "#VacationBudgetPlanner",
+     "#DailyLimit",
+     "#GMoneyLite"
+    ],
+    "caption": "Log in yen, see it in your currency\nWhole trip total, at a glance\nTrip & Vacation Budget Planner\nG+Money Lite: Trip Spending\nSearch “G+Money Lite” on the App Store\nAlso on Google Play\n\n#TravelBudget #VacationBudgetPlanner #DailyLimit #GMoneyLite",
+    "button": "Get it on the App Store",
+    "variant": "b",
+    "alt": "G+Money Lite: Trip Spending — Log in yen, see it in your currency — Whole trip total, at a glance — Trip & Vacation Budget Planner",
+    "store": "https://apps.apple.com/us/app/id6793436548?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoneylite",
+    "review": {
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6793436548?action=write-review"
+    },
+    "keywords": [
+     "converter",
+     "exchange",
+     "rate",
+     "abroad",
+     "foreign",
+     "overseas"
+    ],
+    "keyline": "Trip & Vacation Budget Planner",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "13219b82506e626f",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "Log in yen, see it in your currency | G+Money Lite #Shorts",
+     "description": "Log in yen, see it in your currency\nWhole trip total, at a glance\nTrip & Vacation Budget Planner\n\nG+Money Lite: Trip Spending\nApp Store: https://apps.apple.com/us/app/id6793436548?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoneylite\nAlready using this app? Rate or review it on the App Store\nhttps://apps.apple.com/app/id6793436548?action=write-review\n\nconverter · exchange · rate · abroad · foreign · overseas\n\n#Shorts #TravelBudget #GMoneyLite",
+     "tags": [
+      "converter",
+      "exchange",
+      "rate",
+      "abroad",
+      "foreign",
+      "overseas",
+      "TravelBudget",
+      "VacationBudgetPlanner",
+      "DailyLimit",
+      "GMoneyLite",
+      "G+Money Lite"
+     ]
+    },
+    "boost_rank": 5
+   },
+   {
+    "kind": "clip",
+    "key": "gmoneylite/zh-Hant",
+    "locale": "zh-Hant",
+    "app": "gmoneylite",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/dndedr.mp4",
+    "hook": "日幣記一筆，台幣馬上出來",
+    "name": "G+Money Lite：旅行記帳·匯率換算",
+    "title": "日幣記一筆，台幣馬上出來 | 出國預算・自由行花費・每日預算 | G+Money Lite 旅行記帳",
+    "tags": [
+     "#旅行記帳匯率換算",
+     "#記帳本",
+     "#開銷",
+     "#記帳軟體",
+     "#GMoneyLite旅行記帳"
+    ],
+    "caption": "日幣記一筆，台幣馬上出來\n整趟花多少，一眼看清\n出國預算・自由行花費・每日預算\nG+Money Lite：旅行記帳·匯率換算\n在 App Store 搜尋「G+Money Lite 旅行記帳」\nAndroid 版在 Google Play\n\n#旅行記帳匯率換算 #記帳本 #開銷 #記帳軟體 #GMoneyLite旅行記帳",
+    "button": "在 App Store 下載",
+    "variant": "b",
+    "alt": "G+Money Lite：旅行記帳·匯率換算 — 日幣記一筆，台幣馬上出來 — 整趟花多少，一眼看清 — 出國預算・自由行花費・每日預算",
+    "store": "https://apps.apple.com/tw/app/id6793436548?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoneylite",
+    "review": {
+     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
+     "url": "https://apps.apple.com/app/id6793436548?action=write-review"
+    },
+    "keywords": [
+     "記帳本",
+     "開銷",
+     "記帳軟體",
+     "花費",
+     "消費記錄",
+     "支出紀錄"
+    ],
+    "keyline": "出國預算・自由行花費・每日預算",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "13219b82506e626f",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "日幣記一筆，台幣馬上出來 | G+Money Lite 旅行記帳 #Shorts",
+     "description": "日幣記一筆，台幣馬上出來\n整趟花多少，一眼看清\n出國預算・自由行花費・每日預算\n\nG+Money Lite：旅行記帳·匯率換算\nApp Store: https://apps.apple.com/tw/app/id6793436548?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoneylite\n已經在用這款 App？可以到 App Store 評分或撰寫評論\nhttps://apps.apple.com/app/id6793436548?action=write-review\n\n記帳本 · 開銷 · 記帳軟體 · 花費 · 消費記錄 · 支出紀錄\n\n#Shorts #旅行記帳匯率換算 #GMoneyLite旅行記帳",
+     "tags": [
+      "記帳本",
+      "開銷",
+      "記帳軟體",
+      "花費",
+      "消費記錄",
+      "支出紀錄",
+      "旅行記帳匯率換算",
+      "GMoneyLite旅行記帳",
+      "G+Money Lite 旅行記帳"
+     ]
+    },
+    "boost_rank": 5
+   },
+   {
+    "kind": "clip",
+    "key": "gmoneylite/ja",
+    "locale": "ja",
+    "app": "gmoneylite",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/zq3wv8.mp4",
+    "hook": "今日あといくら？すぐわかる",
+    "name": "G+Money Lite：旅の家計簿・為替",
+    "title": "今日あといくら？すぐわかる | 旅行費用・旅費管理・外貨換算 | G+Money Lite 旅の家計簿",
+    "tags": [
+     "#旅の家計簿為替",
+     "#支出",
+     "#小遣い",
+     "#クイック入力",
+     "#GMoneyLite旅の家計簿"
+    ],
+    "caption": "今日あといくら？すぐわかる\n現地通貨で記録、自国通貨に即換算\n旅行費用・旅費管理・外貨換算\nG+Money Lite：旅の家計簿・為替\nApp Storeで「G+Money Lite 旅の家計簿」を検索\nAndroidはGoogle Playで\n\n#旅の家計簿為替 #支出 #小遣い #クイック入力 #GMoneyLite旅の家計簿",
+    "button": "App Storeで入手",
+    "variant": "c",
+    "alt": "G+Money Lite：旅の家計簿・為替 — 今日あといくら？すぐわかる — 現地通貨で記録、自国通貨に即換算 — 旅行費用・旅費管理・外貨換算",
+    "store": "https://apps.apple.com/jp/app/id6793436548?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoneylite",
+    "review": {
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6793436548?action=write-review"
+    },
+    "keywords": [
+     "支出",
+     "小遣い",
+     "クイック入力",
+     "手首",
+     "ホーム画面",
+     "スマートウォッチ"
+    ],
+    "keyline": "旅行費用・旅費管理・外貨換算",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "13219b82506e626f",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "今日あといくら？すぐわかる | G+Money Lite 旅の家計簿 #Shorts",
+     "description": "今日あといくら？すぐわかる\n現地通貨で記録、自国通貨に即換算\n旅行費用・旅費管理・外貨換算\n\nG+Money Lite：旅の家計簿・為替\nApp Store: https://apps.apple.com/jp/app/id6793436548?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoneylite\nこのアプリをお使いですか？App Store で評価・レビューできます\nhttps://apps.apple.com/app/id6793436548?action=write-review\n\n支出 · 小遣い · クイック入力 · 手首 · ホーム画面 · スマートウォッチ\n\n#Shorts #旅の家計簿為替 #GMoneyLite旅の家計簿",
+     "tags": [
+      "支出",
+      "小遣い",
+      "クイック入力",
+      "手首",
+      "ホーム画面",
+      "スマートウォッチ",
+      "旅の家計簿為替",
+      "GMoneyLite旅の家計簿",
+      "G+Money Lite 旅の家計簿"
+     ]
+    },
+    "boost_rank": 5
+   },
+   {
+    "kind": "clip",
+    "key": "gmoneylite/ko",
+    "locale": "ko",
+    "app": "gmoneylite",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/q3hi91.mp4",
+    "hook": "현지 통화로 적으면 내 통화로 바로",
+    "name": "G+Money Lite：여행 가계부·환율",
+    "title": "현지 통화로 적으면 내 통화로 바로 | 해외여행 경비·하루 예산 | G+Money Lite 여행 가계부",
+    "tags": [
+     "#여행가계부환율",
+     "#지출",
+     "#용돈",
+     "#한도",
+     "#GMoneyLite여행가계부"
+    ],
+    "caption": "현지 통화로 적으면 내 통화로 바로\n여행 총액을 한눈에\n해외여행 경비·하루 예산\nG+Money Lite：여행 가계부·환율\nApp Store에서 'G+Money Lite 여행 가계부' 검색\nAndroid는 Google Play에서\n\n#여행가계부환율 #지출 #용돈 #한도 #GMoneyLite여행가계부",
+    "button": "App Store에서 받기",
+    "variant": "b",
+    "alt": "G+Money Lite：여행 가계부·환율 — 현지 통화로 적으면 내 통화로 바로 — 여행 총액을 한눈에 — 해외여행 경비·하루 예산",
+    "store": "https://apps.apple.com/kr/app/id6793436548?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoneylite",
+    "review": {
+     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
+     "url": "https://apps.apple.com/app/id6793436548?action=write-review"
+    },
+    "keywords": [
+     "지출",
+     "용돈",
+     "한도",
+     "빠른기록",
+     "손목",
+     "홈화면"
+    ],
+    "keyline": "해외여행 경비·하루 예산",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "13219b82506e626f",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "현지 통화로 적으면 내 통화로 바로 | G+Money Lite 여행 가계부 #Shorts",
+     "description": "현지 통화로 적으면 내 통화로 바로\n여행 총액을 한눈에\n해외여행 경비·하루 예산\n\nG+Money Lite：여행 가계부·환율\nApp Store: https://apps.apple.com/kr/app/id6793436548?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoneylite\n이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다\nhttps://apps.apple.com/app/id6793436548?action=write-review\n\n지출 · 용돈 · 한도 · 빠른기록 · 손목 · 홈화면\n\n#Shorts #여행가계부환율 #GMoneyLite여행가계부",
+     "tags": [
+      "지출",
+      "용돈",
+      "한도",
+      "빠른기록",
+      "손목",
+      "홈화면",
+      "여행가계부환율",
+      "GMoneyLite여행가계부",
+      "G+Money Lite 여행 가계부"
      ]
     },
     "boost_rank": 5
@@ -24504,239 +24570,6 @@
       "BíléPozadí",
       "SnapportLite",
       "Snapport Lite"
-     ]
-    }
-   },
-   {
-    "kind": "clip",
-    "key": "gmoneylite/en",
-    "locale": "en",
-    "app": "gmoneylite",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/fbtd4k.mp4",
-    "hook": "Log in yen, see it in your currency",
-    "name": "G+Money Lite: Trip Spending",
-    "title": "Log in yen, see it in your currency | Trip & Vacation Budget Planner | G+Money Lite",
-    "tags": [
-     "#TravelBudget",
-     "#VacationBudgetPlanner",
-     "#DailyLimit",
-     "#GMoneyLite"
-    ],
-    "caption": "Log in yen, see it in your currency\nWhole trip total, at a glance\nTrip & Vacation Budget Planner\nG+Money Lite: Trip Spending\nSearch “G+Money Lite” on the App Store\nAlso on Google Play\n\n#TravelBudget #VacationBudgetPlanner #DailyLimit #GMoneyLite",
-    "button": "Get it on the App Store",
-    "variant": "b",
-    "alt": "G+Money Lite: Trip Spending — Log in yen, see it in your currency — Whole trip total, at a glance — Trip & Vacation Budget Planner",
-    "store": "https://apps.apple.com/us/app/id6793436548?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoneylite",
-    "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6793436548?action=write-review"
-    },
-    "keywords": [
-     "converter",
-     "exchange",
-     "rate",
-     "abroad",
-     "foreign",
-     "overseas"
-    ],
-    "keyline": "Trip & Vacation Budget Planner",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "13219b82506e626f",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "youtube": {
-     "title": "Log in yen, see it in your currency | G+Money Lite #Shorts",
-     "description": "Log in yen, see it in your currency\nWhole trip total, at a glance\nTrip & Vacation Budget Planner\n\nG+Money Lite: Trip Spending\nApp Store: https://apps.apple.com/us/app/id6793436548?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoneylite\nAlready using this app? Rate or review it on the App Store\nhttps://apps.apple.com/app/id6793436548?action=write-review\n\nconverter · exchange · rate · abroad · foreign · overseas\n\n#Shorts #TravelBudget #GMoneyLite",
-     "tags": [
-      "converter",
-      "exchange",
-      "rate",
-      "abroad",
-      "foreign",
-      "overseas",
-      "TravelBudget",
-      "VacationBudgetPlanner",
-      "DailyLimit",
-      "GMoneyLite",
-      "G+Money Lite"
-     ]
-    }
-   },
-   {
-    "kind": "clip",
-    "key": "gmoneylite/zh-Hant",
-    "locale": "zh-Hant",
-    "app": "gmoneylite",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/dndedr.mp4",
-    "hook": "日幣記一筆，台幣馬上出來",
-    "name": "G+Money Lite：旅行記帳·匯率換算",
-    "title": "日幣記一筆，台幣馬上出來 | 出國預算・自由行花費・每日預算 | G+Money Lite 旅行記帳",
-    "tags": [
-     "#旅行記帳匯率換算",
-     "#記帳本",
-     "#開銷",
-     "#記帳軟體",
-     "#GMoneyLite旅行記帳"
-    ],
-    "caption": "日幣記一筆，台幣馬上出來\n整趟花多少，一眼看清\n出國預算・自由行花費・每日預算\nG+Money Lite：旅行記帳·匯率換算\n在 App Store 搜尋「G+Money Lite 旅行記帳」\nAndroid 版在 Google Play\n\n#旅行記帳匯率換算 #記帳本 #開銷 #記帳軟體 #GMoneyLite旅行記帳",
-    "button": "在 App Store 下載",
-    "variant": "b",
-    "alt": "G+Money Lite：旅行記帳·匯率換算 — 日幣記一筆，台幣馬上出來 — 整趟花多少，一眼看清 — 出國預算・自由行花費・每日預算",
-    "store": "https://apps.apple.com/tw/app/id6793436548?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoneylite",
-    "review": {
-     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
-     "url": "https://apps.apple.com/app/id6793436548?action=write-review"
-    },
-    "keywords": [
-     "記帳本",
-     "開銷",
-     "記帳軟體",
-     "花費",
-     "消費記錄",
-     "支出紀錄"
-    ],
-    "keyline": "出國預算・自由行花費・每日預算",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "13219b82506e626f",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "youtube": {
-     "title": "日幣記一筆，台幣馬上出來 | G+Money Lite 旅行記帳 #Shorts",
-     "description": "日幣記一筆，台幣馬上出來\n整趟花多少，一眼看清\n出國預算・自由行花費・每日預算\n\nG+Money Lite：旅行記帳·匯率換算\nApp Store: https://apps.apple.com/tw/app/id6793436548?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoneylite\n已經在用這款 App？可以到 App Store 評分或撰寫評論\nhttps://apps.apple.com/app/id6793436548?action=write-review\n\n記帳本 · 開銷 · 記帳軟體 · 花費 · 消費記錄 · 支出紀錄\n\n#Shorts #旅行記帳匯率換算 #GMoneyLite旅行記帳",
-     "tags": [
-      "記帳本",
-      "開銷",
-      "記帳軟體",
-      "花費",
-      "消費記錄",
-      "支出紀錄",
-      "旅行記帳匯率換算",
-      "GMoneyLite旅行記帳",
-      "G+Money Lite 旅行記帳"
-     ]
-    }
-   },
-   {
-    "kind": "clip",
-    "key": "gmoneylite/ja",
-    "locale": "ja",
-    "app": "gmoneylite",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/zq3wv8.mp4",
-    "hook": "今日あといくら？すぐわかる",
-    "name": "G+Money Lite：旅の家計簿・為替",
-    "title": "今日あといくら？すぐわかる | 旅行費用・旅費管理・外貨換算 | G+Money Lite 旅の家計簿",
-    "tags": [
-     "#旅の家計簿為替",
-     "#支出",
-     "#小遣い",
-     "#クイック入力",
-     "#GMoneyLite旅の家計簿"
-    ],
-    "caption": "今日あといくら？すぐわかる\n現地通貨で記録、自国通貨に即換算\n旅行費用・旅費管理・外貨換算\nG+Money Lite：旅の家計簿・為替\nApp Storeで「G+Money Lite 旅の家計簿」を検索\nAndroidはGoogle Playで\n\n#旅の家計簿為替 #支出 #小遣い #クイック入力 #GMoneyLite旅の家計簿",
-    "button": "App Storeで入手",
-    "variant": "c",
-    "alt": "G+Money Lite：旅の家計簿・為替 — 今日あといくら？すぐわかる — 現地通貨で記録、自国通貨に即換算 — 旅行費用・旅費管理・外貨換算",
-    "store": "https://apps.apple.com/jp/app/id6793436548?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoneylite",
-    "review": {
-     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
-     "url": "https://apps.apple.com/app/id6793436548?action=write-review"
-    },
-    "keywords": [
-     "支出",
-     "小遣い",
-     "クイック入力",
-     "手首",
-     "ホーム画面",
-     "スマートウォッチ"
-    ],
-    "keyline": "旅行費用・旅費管理・外貨換算",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "13219b82506e626f",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "youtube": {
-     "title": "今日あといくら？すぐわかる | G+Money Lite 旅の家計簿 #Shorts",
-     "description": "今日あといくら？すぐわかる\n現地通貨で記録、自国通貨に即換算\n旅行費用・旅費管理・外貨換算\n\nG+Money Lite：旅の家計簿・為替\nApp Store: https://apps.apple.com/jp/app/id6793436548?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoneylite\nこのアプリをお使いですか？App Store で評価・レビューできます\nhttps://apps.apple.com/app/id6793436548?action=write-review\n\n支出 · 小遣い · クイック入力 · 手首 · ホーム画面 · スマートウォッチ\n\n#Shorts #旅の家計簿為替 #GMoneyLite旅の家計簿",
-     "tags": [
-      "支出",
-      "小遣い",
-      "クイック入力",
-      "手首",
-      "ホーム画面",
-      "スマートウォッチ",
-      "旅の家計簿為替",
-      "GMoneyLite旅の家計簿",
-      "G+Money Lite 旅の家計簿"
-     ]
-    }
-   },
-   {
-    "kind": "clip",
-    "key": "gmoneylite/ko",
-    "locale": "ko",
-    "app": "gmoneylite",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/q3hi91.mp4",
-    "hook": "현지 통화로 적으면 내 통화로 바로",
-    "name": "G+Money Lite：여행 가계부·환율",
-    "title": "현지 통화로 적으면 내 통화로 바로 | 해외여행 경비·하루 예산 | G+Money Lite 여행 가계부",
-    "tags": [
-     "#여행가계부환율",
-     "#지출",
-     "#용돈",
-     "#한도",
-     "#GMoneyLite여행가계부"
-    ],
-    "caption": "현지 통화로 적으면 내 통화로 바로\n여행 총액을 한눈에\n해외여행 경비·하루 예산\nG+Money Lite：여행 가계부·환율\nApp Store에서 'G+Money Lite 여행 가계부' 검색\nAndroid는 Google Play에서\n\n#여행가계부환율 #지출 #용돈 #한도 #GMoneyLite여행가계부",
-    "button": "App Store에서 받기",
-    "variant": "b",
-    "alt": "G+Money Lite：여행 가계부·환율 — 현지 통화로 적으면 내 통화로 바로 — 여행 총액을 한눈에 — 해외여행 경비·하루 예산",
-    "store": "https://apps.apple.com/kr/app/id6793436548?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoneylite",
-    "review": {
-     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
-     "url": "https://apps.apple.com/app/id6793436548?action=write-review"
-    },
-    "keywords": [
-     "지출",
-     "용돈",
-     "한도",
-     "빠른기록",
-     "손목",
-     "홈화면"
-    ],
-    "keyline": "해외여행 경비·하루 예산",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "13219b82506e626f",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "youtube": {
-     "title": "현지 통화로 적으면 내 통화로 바로 | G+Money Lite 여행 가계부 #Shorts",
-     "description": "현지 통화로 적으면 내 통화로 바로\n여행 총액을 한눈에\n해외여행 경비·하루 예산\n\nG+Money Lite：여행 가계부·환율\nApp Store: https://apps.apple.com/kr/app/id6793436548?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoneylite\n이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다\nhttps://apps.apple.com/app/id6793436548?action=write-review\n\n지출 · 용돈 · 한도 · 빠른기록 · 손목 · 홈화면\n\n#Shorts #여행가계부환율 #GMoneyLite여행가계부",
-     "tags": [
-      "지출",
-      "용돈",
-      "한도",
-      "빠른기록",
-      "손목",
-      "홈화면",
-      "여행가계부환율",
-      "GMoneyLite여행가계부",
-      "G+Money Lite 여행 가계부"
      ]
     }
    },
@@ -36392,6 +36225,239 @@
    },
    {
     "kind": "clip",
+    "key": "dailymate/en",
+    "locale": "en",
+    "app": "dailymate",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/bue2n2.mp4",
+    "hook": "Hear it, plus the natural reply",
+    "name": "DailyMate: Language Phrases",
+    "title": "Hear it, plus the natural reply | Learn Spanish, French & More | DailyMate Phrases",
+    "tags": [
+     "#LanguagePhrases",
+     "#LearnSpanish",
+     "#French",
+     "#DailyMatePhrases"
+    ],
+    "caption": "Hear it, plus the natural reply\n3 levels in every topic\nLearn Spanish, French & More\nDailyMate: Language Phrases\nSearch “everyday phrases” on the App Store\nAlso on Google Play\n\n#LanguagePhrases #LearnSpanish #French #DailyMatePhrases",
+    "button": "Get it on the App Store",
+    "variant": "c",
+    "alt": "DailyMate: Language Phrases — Hear it, plus the natural reply — 3 levels in every topic — Learn Spanish, French & More",
+    "store": "https://apps.apple.com/us/app/id6790418321?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate",
+    "review": {
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6790418321?action=write-review"
+    },
+    "keywords": [
+     "everyday",
+     "german",
+     "phrasebook",
+     "situations",
+     "expressions",
+     "listening"
+    ],
+    "keyline": "Learn Spanish, French & More",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "06a3d61baa456520",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "Hear it, plus the natural reply | DailyMate Phrases #Shorts",
+     "description": "Hear it, plus the natural reply\n3 levels in every topic\nLearn Spanish, French & More\n\nDailyMate: Language Phrases\nApp Store: https://apps.apple.com/us/app/id6790418321?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate\nAlready using this app? Rate or review it on the App Store\nhttps://apps.apple.com/app/id6790418321?action=write-review\n\neveryday · german · phrasebook · situations · expressions · listening\n\n#Shorts #LanguagePhrases #DailyMatePhrases",
+     "tags": [
+      "everyday",
+      "german",
+      "phrasebook",
+      "situations",
+      "expressions",
+      "listening",
+      "LanguagePhrases",
+      "LearnSpanish",
+      "French",
+      "DailyMatePhrases",
+      "DailyMate Phrases"
+     ]
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "dailymate/zh-Hant",
+    "locale": "zh-Hant",
+    "app": "dailymate",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/40zf82.mp4",
+    "hook": "每個主題都分，初中高三級",
+    "name": "DailyMate：用句子學語言",
+    "title": "每個主題都分，初中高三級 | 學英文・日文・韓文會話 | DailyMate 用句子學語言",
+    "tags": [
+     "#學英文日文韓文會話",
+     "#口說",
+     "#出國",
+     "#西班牙文",
+     "#DailyMate用句子學語言"
+    ],
+    "caption": "每個主題都分，初中高三級\n47 種語言任你學\n學英文・日文・韓文會話\nDailyMate：用句子學語言\n在 App Store 搜尋「DailyMate 用句子學語言」\nAndroid 版在 Google Play\n\n#學英文日文韓文會話 #口說 #出國 #西班牙文 #DailyMate用句子學語言",
+    "button": "在 App Store 下載",
+    "variant": "b",
+    "alt": "DailyMate：用句子學語言 — 每個主題都分，初中高三級 — 47 種語言任你學 — 學英文・日文・韓文會話",
+    "store": "https://apps.apple.com/tw/app/id6790418321?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate",
+    "review": {
+     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
+     "url": "https://apps.apple.com/app/id6790418321?action=write-review"
+    },
+    "keywords": [
+     "口說",
+     "出國",
+     "西班牙文",
+     "法文",
+     "德文",
+     "外語"
+    ],
+    "keyline": "學英文・日文・韓文會話",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "06a3d61baa456520",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "每個主題都分，初中高三級 | DailyMate 用句子學語言 #Shorts",
+     "description": "每個主題都分，初中高三級\n47 種語言任你學\n學英文・日文・韓文會話\n\nDailyMate：用句子學語言\nApp Store: https://apps.apple.com/tw/app/id6790418321?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate\n已經在用這款 App？可以到 App Store 評分或撰寫評論\nhttps://apps.apple.com/app/id6790418321?action=write-review\n\n口說 · 出國 · 西班牙文 · 法文 · 德文 · 外語\n\n#Shorts #學英文日文韓文會話 #DailyMate用句子學語言",
+     "tags": [
+      "口說",
+      "出國",
+      "西班牙文",
+      "法文",
+      "德文",
+      "外語",
+      "學英文日文韓文會話",
+      "DailyMate用句子學語言",
+      "DailyMate 用句子學語言"
+     ]
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "dailymate/ja",
+    "locale": "ja",
+    "app": "dailymate",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/2oq7mt.mp4",
+    "hook": "音声で聞いて、自然な返しまで",
+    "name": "DailyMate：文で身につく語学",
+    "title": "音声で聞いて、自然な返しまで | 英会話・旅行フレーズを毎日一文 | DailyMate 文で身につく語学",
+    "tags": [
+     "#文で身につく語学",
+     "#実用",
+     "#フレーズ集",
+     "#日常会話",
+     "#DailyMate文で身につく語学"
+    ],
+    "caption": "音声で聞いて、自然な返しまで\nどのテーマも 3レベル\n英会話・旅行フレーズを毎日一文\nDailyMate：文で身につく語学\nApp Storeで「DailyMate 文で身につく語学」を検索\nAndroidはGoogle Playで\n\n#文で身につく語学 #実用 #フレーズ集 #日常会話 #DailyMate文で身につく語学",
+    "button": "App Storeで入手",
+    "variant": "c",
+    "alt": "DailyMate：文で身につく語学 — 音声で聞いて、自然な返しまで — どのテーマも 3レベル — 英会話・旅行フレーズを毎日一文",
+    "store": "https://apps.apple.com/jp/app/id6790418321?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate",
+    "review": {
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6790418321?action=write-review"
+    },
+    "keywords": [
+     "実用",
+     "フレーズ集",
+     "日常会話",
+     "韓国語",
+     "中国語",
+     "スペイン語"
+    ],
+    "keyline": "英会話・旅行フレーズを毎日一文",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "06a3d61baa456520",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "音声で聞いて、自然な返しまで | DailyMate 文で身につく語学 #Shorts",
+     "description": "音声で聞いて、自然な返しまで\nどのテーマも 3レベル\n英会話・旅行フレーズを毎日一文\n\nDailyMate：文で身につく語学\nApp Store: https://apps.apple.com/jp/app/id6790418321?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate\nこのアプリをお使いですか？App Store で評価・レビューできます\nhttps://apps.apple.com/app/id6790418321?action=write-review\n\n実用 · フレーズ集 · 日常会話 · 韓国語 · 中国語 · スペイン語\n\n#Shorts #文で身につく語学 #DailyMate文で身につく語学",
+     "tags": [
+      "実用",
+      "フレーズ集",
+      "日常会話",
+      "韓国語",
+      "中国語",
+      "スペイン語",
+      "文で身につく語学",
+      "DailyMate文で身につく語学",
+      "DailyMate 文で身につく語学"
+     ]
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "dailymate/ko",
+    "locale": "ko",
+    "app": "dailymate",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/0df4pg.mp4",
+    "hook": "주제마다 3단계 난이도",
+    "name": "DailyMate: 문장으로 배우는 언어",
+    "title": "주제마다 3단계 난이도 | 생활영어, 일본어, 중국어 회화 | DailyMate 문장으로 배우는 언어",
+    "tags": [
+     "#문장으로배우는언어",
+     "#영어회화",
+     "#영어공부",
+     "#일상회화",
+     "#DailyMate문장으로배우는언어"
+    ],
+    "caption": "주제마다 3단계 난이도\n배울 수 있는 언어 47개\n생활영어, 일본어, 중국어 회화\nDailyMate: 문장으로 배우는 언어\nApp Store에서 'DailyMate 문장으로 배우는 언어' 검색\nAndroid는 Google Play에서\n\n#문장으로배우는언어 #영어회화 #영어공부 #일상회화 #DailyMate문장으로배우는언어",
+    "button": "App Store에서 받기",
+    "variant": "b",
+    "alt": "DailyMate: 문장으로 배우는 언어 — 주제마다 3단계 난이도 — 배울 수 있는 언어 47개 — 생활영어, 일본어, 중국어 회화",
+    "store": "https://apps.apple.com/kr/app/id6790418321?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate",
+    "review": {
+     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
+     "url": "https://apps.apple.com/app/id6790418321?action=write-review"
+    },
+    "keywords": [
+     "영어회화",
+     "영어공부",
+     "일상회화",
+     "실전회화",
+     "상황별",
+     "예문"
+    ],
+    "keyline": "생활영어, 일본어, 중국어 회화",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "06a3d61baa456520",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "주제마다 3단계 난이도 | DailyMate 문장으로 배우는 언어 #Shorts",
+     "description": "주제마다 3단계 난이도\n배울 수 있는 언어 47개\n생활영어, 일본어, 중국어 회화\n\nDailyMate: 문장으로 배우는 언어\nApp Store: https://apps.apple.com/kr/app/id6790418321?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate\n이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다\nhttps://apps.apple.com/app/id6790418321?action=write-review\n\n영어회화 · 영어공부 · 일상회화 · 실전회화 · 상황별 · 예문\n\n#Shorts #문장으로배우는언어 #DailyMate문장으로배우는언어",
+     "tags": [
+      "영어회화",
+      "영어공부",
+      "일상회화",
+      "실전회화",
+      "상황별",
+      "예문",
+      "문장으로배우는언어",
+      "DailyMate문장으로배우는언어",
+      "DailyMate 문장으로 배우는 언어"
+     ]
+    }
+   },
+   {
+    "kind": "clip",
     "key": "gmoney/en",
     "locale": "en",
     "app": "gmoney",
@@ -43336,7 +43402,7 @@
     "button": "Get it on the App Store",
     "variant": "b",
     "alt": "Mochi: Cute Checklist — Turkey, pie, groceries…tap and done — Tons of cute themes — Cozy To-Do List Widget, Chores",
-    "store": "https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=ln_mochi_soft_us_yt_1123&mt=8",
+    "store": "https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=ln_mochi_soft_us_yt_1123&mt=8&ppid=6882ef79-3248-4054-bc9d-23c10a0f6521",
     "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dln_mochi_soft_us_yt_1123%26utm_campaign%3Dmochi",
     "review": {
      "label": "Already using this app? Rate or review it on the App Store",
@@ -43360,7 +43426,7 @@
     },
     "youtube": {
      "title": "Turkey, pie, groceries…tap and done | Mochi Cute Checklist #Shorts",
-     "description": "Turkey, pie, groceries…tap and done\nTons of cute themes\nCozy To-Do List Widget, Chores\n\nMochi: Cute Checklist\nApp Store: https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=ln_mochi_soft_us_yt_1123&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dln_mochi_soft_us_yt_1123%26utm_campaign%3Dmochi\nAlready using this app? Rate or review it on the App Store\nhttps://apps.apple.com/app/id6785004775?action=write-review\n\nplanner · todo · aesthetic · daily · reminder · routine\n\n#Shorts #CozyToDoListWidget #MochiCuteChecklist",
+     "description": "Turkey, pie, groceries…tap and done\nTons of cute themes\nCozy To-Do List Widget, Chores\n\nMochi: Cute Checklist\nApp Store: https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=ln_mochi_soft_us_yt_1123&mt=8&ppid=6882ef79-3248-4054-bc9d-23c10a0f6521\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dln_mochi_soft_us_yt_1123%26utm_campaign%3Dmochi\nAlready using this app? Rate or review it on the App Store\nhttps://apps.apple.com/app/id6785004775?action=write-review\n\nplanner · todo · aesthetic · daily · reminder · routine\n\n#Shorts #CozyToDoListWidget #MochiCuteChecklist",
      "tags": [
       "planner",
       "todo",
@@ -43957,19 +44023,19 @@
     "locale": "en",
     "app": "duowallpaperstudio_f",
     "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/7cf3b8e4e3.mp4",
-    "hook": "Add one line of your own text",
+    "hook": "Your photos stay on your device",
     "name": "Foldable Wallpaper Studio",
-    "title": "Add one line of your own text | Dual Screen Pairs for Duo | Foldable Wallpaper Studio",
+    "title": "Your photos stay on your device | Dual Screen Pairs for Duo | Foldable Wallpaper Studio",
     "tags": [
      "#Folding",
      "#Outer",
      "#Lockscreen",
      "#FoldableWallpaperStudio"
     ],
-    "caption": "Add one line of your own text\nYour photos stay on your device\nDual Screen Pairs for Duo\nSearch “Foldable Wallpaper Studio” on the App Store\nAlso on Google Play\n\n#Folding #Outer #Lockscreen #FoldableWallpaperStudio",
+    "caption": "Your photos stay on your device\nSaved as two images\nDual Screen Pairs for Duo\nSearch “Foldable Wallpaper Studio” on the App Store\nAlso on Google Play\n\n#Folding #Outer #Lockscreen #FoldableWallpaperStudio",
     "button": "Get it on the App Store",
     "variant": "b",
-    "alt": "Foldable Wallpaper Studio — Add one line of your own text — Your photos stay on your device — Dual Screen Pairs for Duo",
+    "alt": "Foldable Wallpaper Studio — Your photos stay on your device — Saved as two images — Dual Screen Pairs for Duo",
     "store": "https://apps.apple.com/us/app/id6824946559?pt=118326163&ct=social&mt=8",
     "play": "https://play.google.com/store/apps/details?id=com.alice51849.DuoWallpaperStudio&referrer=utm_source%3Dsocial%26utm_campaign%3Dduowallpaperstudio",
     "review": {
@@ -43993,8 +44059,8 @@
      "rules": "2026-10-18"
     },
     "youtube": {
-     "title": "Add one line of your own text | Foldable Wallpaper Studio #Shorts",
-     "description": "Add one line of your own text\nYour photos stay on your device\nDual Screen Pairs for Duo\n\nFoldable Wallpaper Studio\nApp Store: https://apps.apple.com/us/app/id6824946559?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DuoWallpaperStudio&referrer=utm_source%3Dsocial%26utm_campaign%3Dduowallpaperstudio\nAlready using this app? Rate or review it on the App Store\nhttps://apps.apple.com/app/id6824946559?action=write-review\n\nfold · folding · inner · pair · pairs · outer\n\n#Shorts #Folding #FoldableWallpaperStudio",
+     "title": "Your photos stay on your device | Foldable Wallpaper Studio #Shorts",
+     "description": "Your photos stay on your device\nSaved as two images\nDual Screen Pairs for Duo\n\nFoldable Wallpaper Studio\nApp Store: https://apps.apple.com/us/app/id6824946559?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DuoWallpaperStudio&referrer=utm_source%3Dsocial%26utm_campaign%3Dduowallpaperstudio\nAlready using this app? Rate or review it on the App Store\nhttps://apps.apple.com/app/id6824946559?action=write-review\n\nfold · folding · inner · pair · pairs · outer\n\n#Shorts #Folding #FoldableWallpaperStudio",
      "tags": [
       "fold",
       "folding",
@@ -44199,7 +44265,7 @@
     "button": "Get it on the App Store",
     "variant": "b",
     "alt": "Mochi: Cute Checklist — School, work, errands: one cute list — Tap to check it off — Cozy To-Do List Widget, Chores",
-    "store": "https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=ln_mochi_soft_us_yt_1123&mt=8",
+    "store": "https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=ln_mochi_soft_us_yt_1123&mt=8&ppid=bc6d9ed3-398d-48d2-9a4e-82ab53f81ea2",
     "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dln_mochi_soft_us_yt_1123%26utm_campaign%3Dmochi",
     "review": {
      "label": "Already using this app? Rate or review it on the App Store",
@@ -44223,7 +44289,7 @@
     },
     "youtube": {
      "title": "School, work, errands: one cute list | Mochi Cute Checklist #Shorts",
-     "description": "School, work, errands: one cute list\nTap to check it off\nCozy To-Do List Widget, Chores\n\nMochi: Cute Checklist\nApp Store: https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=ln_mochi_soft_us_yt_1123&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dln_mochi_soft_us_yt_1123%26utm_campaign%3Dmochi\nAlready using this app? Rate or review it on the App Store\nhttps://apps.apple.com/app/id6785004775?action=write-review\n\nplanner · todo · aesthetic · daily · reminder · routine\n\n#Shorts #CozyToDoListWidget #MochiCuteChecklist",
+     "description": "School, work, errands: one cute list\nTap to check it off\nCozy To-Do List Widget, Chores\n\nMochi: Cute Checklist\nApp Store: https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=ln_mochi_soft_us_yt_1123&mt=8&ppid=bc6d9ed3-398d-48d2-9a4e-82ab53f81ea2\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dln_mochi_soft_us_yt_1123%26utm_campaign%3Dmochi\nAlready using this app? Rate or review it on the App Store\nhttps://apps.apple.com/app/id6785004775?action=write-review\n\nplanner · todo · aesthetic · daily · reminder · routine\n\n#Shorts #CozyToDoListWidget #MochiCuteChecklist",
      "tags": [
       "planner",
       "todo",
@@ -45596,197 +45662,6 @@
    },
    {
     "kind": "clip",
-    "key": "dailymate/en",
-    "locale": "en",
-    "app": "dailymate",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/bue2n2.mp4",
-    "hook": "3 levels in every topic",
-    "name": "DailyMate: Language Phrases",
-    "title": "3 levels in every topic | Learn Spanish, French & More | DailyMate Phrases",
-    "tags": [
-     "#LanguagePhrases",
-     "#LearnSpanish",
-     "#French",
-     "#DailyMatePhrases"
-    ],
-    "caption": "3 levels in every topic\n47 languages to learn\nLearn Spanish, French & More\nDailyMate: Language Phrases\nSearch “everyday phrases” on the App Store\nAlso on Google Play\n\n#LanguagePhrases #LearnSpanish #French #DailyMatePhrases",
-    "button": "Get it on the App Store",
-    "variant": "b",
-    "alt": "DailyMate: Language Phrases — 3 levels in every topic — 47 languages to learn — Learn Spanish, French & More",
-    "store": "https://apps.apple.com/us/app/id6790418321?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate",
-    "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6790418321?action=write-review"
-    },
-    "keywords": [
-     "everyday",
-     "german",
-     "phrasebook",
-     "situations",
-     "expressions",
-     "listening"
-    ],
-    "keyline": "Learn Spanish, French & More",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "06a3d61baa456520",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "pinterest": {
-     "description": "3 levels in every topic\n47 languages to learn\nLearn Spanish, French & More\nDailyMate: Language Phrases\nSearch “everyday phrases” on the App Store\nAlso on Google Play\n\n#LanguagePhrases #LearnSpanish #French #DailyMatePhrases\n\nGet it on the App Store: https://apps.apple.com/us/app/id6790418321?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate\nLite: https://apps.apple.com/app/id6794725568?ct=social_lite\nLite Google Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite&referrer=utm_source%3Dsocial_lite%26utm_campaign%3Ddailymatelite",
-     "link": "https://apps.apple.com/us/app/id6790418321?pt=118326163&ct=social&mt=8"
-    },
-    "boost_rank": 4
-   },
-   {
-    "kind": "clip",
-    "key": "dailymate/zh-Hant",
-    "locale": "zh-Hant",
-    "app": "dailymate",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/40zf82.mp4",
-    "hook": "每個主題都分，初中高三級",
-    "name": "DailyMate：用句子學語言",
-    "title": "每個主題都分，初中高三級 | 學英文・日文・韓文會話 | DailyMate 用句子學語言",
-    "tags": [
-     "#學英文日文韓文會話",
-     "#口說",
-     "#出國",
-     "#西班牙文",
-     "#DailyMate用句子學語言"
-    ],
-    "caption": "每個主題都分，初中高三級\n47 種語言任你學\n學英文・日文・韓文會話\nDailyMate：用句子學語言\n在 App Store 搜尋「DailyMate 用句子學語言」\nAndroid 版在 Google Play\n\n#學英文日文韓文會話 #口說 #出國 #西班牙文 #DailyMate用句子學語言",
-    "button": "在 App Store 下載",
-    "variant": "b",
-    "alt": "DailyMate：用句子學語言 — 每個主題都分，初中高三級 — 47 種語言任你學 — 學英文・日文・韓文會話",
-    "store": "https://apps.apple.com/tw/app/id6790418321?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate",
-    "review": {
-     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
-     "url": "https://apps.apple.com/app/id6790418321?action=write-review"
-    },
-    "keywords": [
-     "口說",
-     "出國",
-     "西班牙文",
-     "法文",
-     "德文",
-     "外語"
-    ],
-    "keyline": "學英文・日文・韓文會話",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "06a3d61baa456520",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "pinterest": {
-     "description": "每個主題都分，初中高三級\n47 種語言任你學\n學英文・日文・韓文會話\nDailyMate：用句子學語言\n在 App Store 搜尋「DailyMate 用句子學語言」\nAndroid 版在 Google Play\n\n#學英文日文韓文會話 #口說 #出國 #西班牙文 #DailyMate用句子學語言\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6790418321?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate\nLite: https://apps.apple.com/app/id6794725568?ct=social_lite\nLite Google Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite&referrer=utm_source%3Dsocial_lite%26utm_campaign%3Ddailymatelite",
-     "link": "https://apps.apple.com/tw/app/id6790418321?pt=118326163&ct=social&mt=8"
-    },
-    "boost_rank": 4
-   },
-   {
-    "kind": "clip",
-    "key": "dailymate/ja",
-    "locale": "ja",
-    "app": "dailymate",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/2oq7mt.mp4",
-    "hook": "音声で聞いて、自然な返しまで",
-    "name": "DailyMate：文で身につく語学",
-    "title": "音声で聞いて、自然な返しまで | 英会話・旅行フレーズを毎日一文 | DailyMate 文で身につく語学",
-    "tags": [
-     "#文で身につく語学",
-     "#実用",
-     "#フレーズ集",
-     "#日常会話",
-     "#DailyMate文で身につく語学"
-    ],
-    "caption": "音声で聞いて、自然な返しまで\nどのテーマも 3レベル\n英会話・旅行フレーズを毎日一文\nDailyMate：文で身につく語学\nApp Storeで「DailyMate 文で身につく語学」を検索\nAndroidはGoogle Playで\n\n#文で身につく語学 #実用 #フレーズ集 #日常会話 #DailyMate文で身につく語学",
-    "button": "App Storeで入手",
-    "variant": "c",
-    "alt": "DailyMate：文で身につく語学 — 音声で聞いて、自然な返しまで — どのテーマも 3レベル — 英会話・旅行フレーズを毎日一文",
-    "store": "https://apps.apple.com/jp/app/id6790418321?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate",
-    "review": {
-     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
-     "url": "https://apps.apple.com/app/id6790418321?action=write-review"
-    },
-    "keywords": [
-     "実用",
-     "フレーズ集",
-     "日常会話",
-     "韓国語",
-     "中国語",
-     "スペイン語"
-    ],
-    "keyline": "英会話・旅行フレーズを毎日一文",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "06a3d61baa456520",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "pinterest": {
-     "description": "音声で聞いて、自然な返しまで\nどのテーマも 3レベル\n英会話・旅行フレーズを毎日一文\nDailyMate：文で身につく語学\nApp Storeで「DailyMate 文で身につく語学」を検索\nAndroidはGoogle Playで\n\n#文で身につく語学 #実用 #フレーズ集 #日常会話 #DailyMate文で身につく語学\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6790418321?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate\nLite: https://apps.apple.com/app/id6794725568?ct=social_lite\nLite Google Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite&referrer=utm_source%3Dsocial_lite%26utm_campaign%3Ddailymatelite",
-     "link": "https://apps.apple.com/jp/app/id6790418321?pt=118326163&ct=social&mt=8"
-    },
-    "boost_rank": 4
-   },
-   {
-    "kind": "clip",
-    "key": "dailymate/ko",
-    "locale": "ko",
-    "app": "dailymate",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/0df4pg.mp4",
-    "hook": "주제마다 3단계 난이도",
-    "name": "DailyMate: 문장으로 배우는 언어",
-    "title": "주제마다 3단계 난이도 | 생활영어, 일본어, 중국어 회화 | DailyMate 문장으로 배우는 언어",
-    "tags": [
-     "#문장으로배우는언어",
-     "#영어회화",
-     "#영어공부",
-     "#일상회화",
-     "#DailyMate문장으로배우는언어"
-    ],
-    "caption": "주제마다 3단계 난이도\n배울 수 있는 언어 47개\n생활영어, 일본어, 중국어 회화\nDailyMate: 문장으로 배우는 언어\nApp Store에서 'DailyMate 문장으로 배우는 언어' 검색\nAndroid는 Google Play에서\n\n#문장으로배우는언어 #영어회화 #영어공부 #일상회화 #DailyMate문장으로배우는언어",
-    "button": "App Store에서 받기",
-    "variant": "b",
-    "alt": "DailyMate: 문장으로 배우는 언어 — 주제마다 3단계 난이도 — 배울 수 있는 언어 47개 — 생활영어, 일본어, 중국어 회화",
-    "store": "https://apps.apple.com/kr/app/id6790418321?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate",
-    "review": {
-     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
-     "url": "https://apps.apple.com/app/id6790418321?action=write-review"
-    },
-    "keywords": [
-     "영어회화",
-     "영어공부",
-     "일상회화",
-     "실전회화",
-     "상황별",
-     "예문"
-    ],
-    "keyline": "생활영어, 일본어, 중국어 회화",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "06a3d61baa456520",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "pinterest": {
-     "description": "주제마다 3단계 난이도\n배울 수 있는 언어 47개\n생활영어, 일본어, 중국어 회화\nDailyMate: 문장으로 배우는 언어\nApp Store에서 'DailyMate 문장으로 배우는 언어' 검색\nAndroid는 Google Play에서\n\n#문장으로배우는언어 #영어회화 #영어공부 #일상회화 #DailyMate문장으로배우는언어\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6790418321?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate\nLite: https://apps.apple.com/app/id6794725568?ct=social_lite\nLite Google Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite&referrer=utm_source%3Dsocial_lite%26utm_campaign%3Ddailymatelite",
-     "link": "https://apps.apple.com/kr/app/id6790418321?pt=118326163&ct=social&mt=8"
-    },
-    "boost_rank": 4
-   },
-   {
-    "kind": "clip",
     "key": "wifiaidlite/en",
     "locale": "en",
     "app": "wifiaidlite",
@@ -45830,7 +45705,7 @@
      "description": "Wi-Fi, DNS or internet?\n…or just one site?\nInternet Down? Find the Cause\nWiFi Aid Lite: Network Check\nSearch “WiFi Aid Lite” on the App Store\nAlso on Google Play\n\n#NetworkCheck #Internet #Find #WiFiAidLite\n\nGet it on the App Store: https://apps.apple.com/us/app/id6793414462?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.WiFiAidLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaidlite",
      "link": "https://apps.apple.com/us/app/id6793414462?pt=118326163&ct=social&mt=8"
     },
-    "boost_rank": 5
+    "boost_rank": 4
    },
    {
     "kind": "clip",
@@ -45878,7 +45753,7 @@
      "description": "Wi-Fi、DNS 還是網際網路？\n還是網站本身？\n斷線 · 連不上 · 網路慢\n在 App Store 搜尋「WiFi Aid Lite」\nAndroid 版在 Google Play\n\n#斷線 #連不上 #網路慢 #網路卡卡 #WiFiAidLite\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6793414462?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.WiFiAidLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaidlite",
      "link": "https://apps.apple.com/tw/app/id6793414462?pt=118326163&ct=social&mt=8"
     },
-    "boost_rank": 5
+    "boost_rank": 4
    },
    {
     "kind": "clip",
@@ -45926,7 +45801,7 @@
      "description": "次の一手も分かる\nWi-Fi？DNS？それとも回線？\nネットがつながらない原因を特定\nWiFi Aid Lite\nApp Storeで「wifi つながらない」を検索\nAndroidはGoogle Playで\n\n#繋がらない #インターネット #接続 #遅い #WiFiAidLite\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6793414462?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.WiFiAidLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaidlite",
      "link": "https://apps.apple.com/jp/app/id6793414462?pt=118326163&ct=social&mt=8"
     },
-    "boost_rank": 5
+    "boost_rank": 4
    },
    {
     "kind": "clip",
@@ -45974,7 +45849,7 @@
      "description": "와이파이? DNS? 아니면 인터넷?\n아니면 그 사이트만?\n인터넷 안될 때 원인 찾기\nWiFi Aid Lite\nApp Store에서 '와이파이 인터넷 안됨' 검색\nAndroid는 Google Play에서\n\n#와이파이 #인터넷안됨 #와이파이안됨 #인터넷끊김 #WiFiAidLite\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6793414462?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.WiFiAidLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaidlite",
      "link": "https://apps.apple.com/kr/app/id6793414462?pt=118326163&ct=social&mt=8"
     },
-    "boost_rank": 5
+    "boost_rank": 4
    },
    {
     "kind": "clip",
@@ -46020,6 +45895,197 @@
     "pinterest": {
      "description": "WiFi, DNS, atau internet?\nAtau cuma satu situs?\nInternet mati? Cek penyebab\nCari “WiFi Aid Lite” di App Store\nJuga ada di Google Play\n\n#InternetMatiCekPenyebab #WiFi #Jaringan #WiFiAidLite\n\nUnduh di App Store: https://apps.apple.com/id/app/id6793414462?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.WiFiAidLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaidlite",
      "link": "https://apps.apple.com/id/app/id6793414462?pt=118326163&ct=social&mt=8"
+    },
+    "boost_rank": 4
+   },
+   {
+    "kind": "clip",
+    "key": "gmoneylite/en",
+    "locale": "en",
+    "app": "gmoneylite",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/fbtd4k.mp4",
+    "hook": "Log in yen, see it in your currency",
+    "name": "G+Money Lite: Trip Spending",
+    "title": "Log in yen, see it in your currency | Trip & Vacation Budget Planner | G+Money Lite",
+    "tags": [
+     "#TravelBudget",
+     "#VacationBudgetPlanner",
+     "#DailyLimit",
+     "#GMoneyLite"
+    ],
+    "caption": "Log in yen, see it in your currency\nWhole trip total, at a glance\nTrip & Vacation Budget Planner\nG+Money Lite: Trip Spending\nSearch “G+Money Lite” on the App Store\nAlso on Google Play\n\n#TravelBudget #VacationBudgetPlanner #DailyLimit #GMoneyLite",
+    "button": "Get it on the App Store",
+    "variant": "b",
+    "alt": "G+Money Lite: Trip Spending — Log in yen, see it in your currency — Whole trip total, at a glance — Trip & Vacation Budget Planner",
+    "store": "https://apps.apple.com/us/app/id6793436548?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoneylite",
+    "review": {
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6793436548?action=write-review"
+    },
+    "keywords": [
+     "converter",
+     "exchange",
+     "rate",
+     "abroad",
+     "foreign",
+     "overseas"
+    ],
+    "keyline": "Trip & Vacation Budget Planner",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "13219b82506e626f",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "Log in yen, see it in your currency\nWhole trip total, at a glance\nTrip & Vacation Budget Planner\nG+Money Lite: Trip Spending\nSearch “G+Money Lite” on the App Store\nAlso on Google Play\n\n#TravelBudget #VacationBudgetPlanner #DailyLimit #GMoneyLite\n\nGet it on the App Store: https://apps.apple.com/us/app/id6793436548?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoneylite",
+     "link": "https://apps.apple.com/us/app/id6793436548?pt=118326163&ct=social&mt=8"
+    },
+    "boost_rank": 5
+   },
+   {
+    "kind": "clip",
+    "key": "gmoneylite/zh-Hant",
+    "locale": "zh-Hant",
+    "app": "gmoneylite",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/dndedr.mp4",
+    "hook": "日幣記一筆，台幣馬上出來",
+    "name": "G+Money Lite：旅行記帳·匯率換算",
+    "title": "日幣記一筆，台幣馬上出來 | 出國預算・自由行花費・每日預算 | G+Money Lite 旅行記帳",
+    "tags": [
+     "#旅行記帳匯率換算",
+     "#記帳本",
+     "#開銷",
+     "#記帳軟體",
+     "#GMoneyLite旅行記帳"
+    ],
+    "caption": "日幣記一筆，台幣馬上出來\n整趟花多少，一眼看清\n出國預算・自由行花費・每日預算\nG+Money Lite：旅行記帳·匯率換算\n在 App Store 搜尋「G+Money Lite 旅行記帳」\nAndroid 版在 Google Play\n\n#旅行記帳匯率換算 #記帳本 #開銷 #記帳軟體 #GMoneyLite旅行記帳",
+    "button": "在 App Store 下載",
+    "variant": "b",
+    "alt": "G+Money Lite：旅行記帳·匯率換算 — 日幣記一筆，台幣馬上出來 — 整趟花多少，一眼看清 — 出國預算・自由行花費・每日預算",
+    "store": "https://apps.apple.com/tw/app/id6793436548?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoneylite",
+    "review": {
+     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
+     "url": "https://apps.apple.com/app/id6793436548?action=write-review"
+    },
+    "keywords": [
+     "記帳本",
+     "開銷",
+     "記帳軟體",
+     "花費",
+     "消費記錄",
+     "支出紀錄"
+    ],
+    "keyline": "出國預算・自由行花費・每日預算",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "13219b82506e626f",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "日幣記一筆，台幣馬上出來\n整趟花多少，一眼看清\n出國預算・自由行花費・每日預算\nG+Money Lite：旅行記帳·匯率換算\n在 App Store 搜尋「G+Money Lite 旅行記帳」\nAndroid 版在 Google Play\n\n#旅行記帳匯率換算 #記帳本 #開銷 #記帳軟體 #GMoneyLite旅行記帳\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6793436548?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoneylite",
+     "link": "https://apps.apple.com/tw/app/id6793436548?pt=118326163&ct=social&mt=8"
+    },
+    "boost_rank": 5
+   },
+   {
+    "kind": "clip",
+    "key": "gmoneylite/ja",
+    "locale": "ja",
+    "app": "gmoneylite",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/zq3wv8.mp4",
+    "hook": "今日あといくら？すぐわかる",
+    "name": "G+Money Lite：旅の家計簿・為替",
+    "title": "今日あといくら？すぐわかる | 旅行費用・旅費管理・外貨換算 | G+Money Lite 旅の家計簿",
+    "tags": [
+     "#旅の家計簿為替",
+     "#支出",
+     "#小遣い",
+     "#クイック入力",
+     "#GMoneyLite旅の家計簿"
+    ],
+    "caption": "今日あといくら？すぐわかる\n現地通貨で記録、自国通貨に即換算\n旅行費用・旅費管理・外貨換算\nG+Money Lite：旅の家計簿・為替\nApp Storeで「G+Money Lite 旅の家計簿」を検索\nAndroidはGoogle Playで\n\n#旅の家計簿為替 #支出 #小遣い #クイック入力 #GMoneyLite旅の家計簿",
+    "button": "App Storeで入手",
+    "variant": "c",
+    "alt": "G+Money Lite：旅の家計簿・為替 — 今日あといくら？すぐわかる — 現地通貨で記録、自国通貨に即換算 — 旅行費用・旅費管理・外貨換算",
+    "store": "https://apps.apple.com/jp/app/id6793436548?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoneylite",
+    "review": {
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6793436548?action=write-review"
+    },
+    "keywords": [
+     "支出",
+     "小遣い",
+     "クイック入力",
+     "手首",
+     "ホーム画面",
+     "スマートウォッチ"
+    ],
+    "keyline": "旅行費用・旅費管理・外貨換算",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "13219b82506e626f",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "今日あといくら？すぐわかる\n現地通貨で記録、自国通貨に即換算\n旅行費用・旅費管理・外貨換算\nG+Money Lite：旅の家計簿・為替\nApp Storeで「G+Money Lite 旅の家計簿」を検索\nAndroidはGoogle Playで\n\n#旅の家計簿為替 #支出 #小遣い #クイック入力 #GMoneyLite旅の家計簿\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6793436548?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoneylite",
+     "link": "https://apps.apple.com/jp/app/id6793436548?pt=118326163&ct=social&mt=8"
+    },
+    "boost_rank": 5
+   },
+   {
+    "kind": "clip",
+    "key": "gmoneylite/ko",
+    "locale": "ko",
+    "app": "gmoneylite",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/q3hi91.mp4",
+    "hook": "현지 통화로 적으면 내 통화로 바로",
+    "name": "G+Money Lite：여행 가계부·환율",
+    "title": "현지 통화로 적으면 내 통화로 바로 | 해외여행 경비·하루 예산 | G+Money Lite 여행 가계부",
+    "tags": [
+     "#여행가계부환율",
+     "#지출",
+     "#용돈",
+     "#한도",
+     "#GMoneyLite여행가계부"
+    ],
+    "caption": "현지 통화로 적으면 내 통화로 바로\n여행 총액을 한눈에\n해외여행 경비·하루 예산\nG+Money Lite：여행 가계부·환율\nApp Store에서 'G+Money Lite 여행 가계부' 검색\nAndroid는 Google Play에서\n\n#여행가계부환율 #지출 #용돈 #한도 #GMoneyLite여행가계부",
+    "button": "App Store에서 받기",
+    "variant": "b",
+    "alt": "G+Money Lite：여행 가계부·환율 — 현지 통화로 적으면 내 통화로 바로 — 여행 총액을 한눈에 — 해외여행 경비·하루 예산",
+    "store": "https://apps.apple.com/kr/app/id6793436548?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoneylite",
+    "review": {
+     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
+     "url": "https://apps.apple.com/app/id6793436548?action=write-review"
+    },
+    "keywords": [
+     "지출",
+     "용돈",
+     "한도",
+     "빠른기록",
+     "손목",
+     "홈화면"
+    ],
+    "keyline": "해외여행 경비·하루 예산",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "13219b82506e626f",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "현지 통화로 적으면 내 통화로 바로\n여행 총액을 한눈에\n해외여행 경비·하루 예산\nG+Money Lite：여행 가계부·환율\nApp Store에서 'G+Money Lite 여행 가계부' 검색\nAndroid는 Google Play에서\n\n#여행가계부환율 #지출 #용돈 #한도 #GMoneyLite여행가계부\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6793436548?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoneylite",
+     "link": "https://apps.apple.com/kr/app/id6793436548?pt=118326163&ct=social&mt=8"
     },
     "boost_rank": 5
    },
@@ -47516,193 +47582,6 @@
     "pinterest": {
      "description": "35 hotových rozměrů\nZměňte pozadí na jednobarevné\nSnapport Lite: Foto na doklady\nVyhledejte „Snapport Lite“ v App Storu\nTaké na Google Play\n\n#FotoNaDoklady #PortrétyVPřesnémRozměru #VelikostFotky #BíléPozadí #SnapportLite\n\nStáhnout z App Storu: https://apps.apple.com/cz/app/id6792856304?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.SnapportLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dsnapportlite",
      "link": "https://apps.apple.com/cz/app/id6792856304?pt=118326163&ct=social&mt=8"
-    }
-   },
-   {
-    "kind": "clip",
-    "key": "gmoneylite/en",
-    "locale": "en",
-    "app": "gmoneylite",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/fbtd4k.mp4",
-    "hook": "Log in yen, see it in your currency",
-    "name": "G+Money Lite: Trip Spending",
-    "title": "Log in yen, see it in your currency | Trip & Vacation Budget Planner | G+Money Lite",
-    "tags": [
-     "#TravelBudget",
-     "#VacationBudgetPlanner",
-     "#DailyLimit",
-     "#GMoneyLite"
-    ],
-    "caption": "Log in yen, see it in your currency\nWhole trip total, at a glance\nTrip & Vacation Budget Planner\nG+Money Lite: Trip Spending\nSearch “G+Money Lite” on the App Store\nAlso on Google Play\n\n#TravelBudget #VacationBudgetPlanner #DailyLimit #GMoneyLite",
-    "button": "Get it on the App Store",
-    "variant": "b",
-    "alt": "G+Money Lite: Trip Spending — Log in yen, see it in your currency — Whole trip total, at a glance — Trip & Vacation Budget Planner",
-    "store": "https://apps.apple.com/us/app/id6793436548?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoneylite",
-    "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6793436548?action=write-review"
-    },
-    "keywords": [
-     "converter",
-     "exchange",
-     "rate",
-     "abroad",
-     "foreign",
-     "overseas"
-    ],
-    "keyline": "Trip & Vacation Budget Planner",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "13219b82506e626f",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "pinterest": {
-     "description": "Log in yen, see it in your currency\nWhole trip total, at a glance\nTrip & Vacation Budget Planner\nG+Money Lite: Trip Spending\nSearch “G+Money Lite” on the App Store\nAlso on Google Play\n\n#TravelBudget #VacationBudgetPlanner #DailyLimit #GMoneyLite\n\nGet it on the App Store: https://apps.apple.com/us/app/id6793436548?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoneylite",
-     "link": "https://apps.apple.com/us/app/id6793436548?pt=118326163&ct=social&mt=8"
-    }
-   },
-   {
-    "kind": "clip",
-    "key": "gmoneylite/zh-Hant",
-    "locale": "zh-Hant",
-    "app": "gmoneylite",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/dndedr.mp4",
-    "hook": "日幣記一筆，台幣馬上出來",
-    "name": "G+Money Lite：旅行記帳·匯率換算",
-    "title": "日幣記一筆，台幣馬上出來 | 出國預算・自由行花費・每日預算 | G+Money Lite 旅行記帳",
-    "tags": [
-     "#旅行記帳匯率換算",
-     "#記帳本",
-     "#開銷",
-     "#記帳軟體",
-     "#GMoneyLite旅行記帳"
-    ],
-    "caption": "日幣記一筆，台幣馬上出來\n整趟花多少，一眼看清\n出國預算・自由行花費・每日預算\nG+Money Lite：旅行記帳·匯率換算\n在 App Store 搜尋「G+Money Lite 旅行記帳」\nAndroid 版在 Google Play\n\n#旅行記帳匯率換算 #記帳本 #開銷 #記帳軟體 #GMoneyLite旅行記帳",
-    "button": "在 App Store 下載",
-    "variant": "b",
-    "alt": "G+Money Lite：旅行記帳·匯率換算 — 日幣記一筆，台幣馬上出來 — 整趟花多少，一眼看清 — 出國預算・自由行花費・每日預算",
-    "store": "https://apps.apple.com/tw/app/id6793436548?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoneylite",
-    "review": {
-     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
-     "url": "https://apps.apple.com/app/id6793436548?action=write-review"
-    },
-    "keywords": [
-     "記帳本",
-     "開銷",
-     "記帳軟體",
-     "花費",
-     "消費記錄",
-     "支出紀錄"
-    ],
-    "keyline": "出國預算・自由行花費・每日預算",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "13219b82506e626f",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "pinterest": {
-     "description": "日幣記一筆，台幣馬上出來\n整趟花多少，一眼看清\n出國預算・自由行花費・每日預算\nG+Money Lite：旅行記帳·匯率換算\n在 App Store 搜尋「G+Money Lite 旅行記帳」\nAndroid 版在 Google Play\n\n#旅行記帳匯率換算 #記帳本 #開銷 #記帳軟體 #GMoneyLite旅行記帳\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6793436548?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoneylite",
-     "link": "https://apps.apple.com/tw/app/id6793436548?pt=118326163&ct=social&mt=8"
-    }
-   },
-   {
-    "kind": "clip",
-    "key": "gmoneylite/ja",
-    "locale": "ja",
-    "app": "gmoneylite",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/zq3wv8.mp4",
-    "hook": "今日あといくら？すぐわかる",
-    "name": "G+Money Lite：旅の家計簿・為替",
-    "title": "今日あといくら？すぐわかる | 旅行費用・旅費管理・外貨換算 | G+Money Lite 旅の家計簿",
-    "tags": [
-     "#旅の家計簿為替",
-     "#支出",
-     "#小遣い",
-     "#クイック入力",
-     "#GMoneyLite旅の家計簿"
-    ],
-    "caption": "今日あといくら？すぐわかる\n現地通貨で記録、自国通貨に即換算\n旅行費用・旅費管理・外貨換算\nG+Money Lite：旅の家計簿・為替\nApp Storeで「G+Money Lite 旅の家計簿」を検索\nAndroidはGoogle Playで\n\n#旅の家計簿為替 #支出 #小遣い #クイック入力 #GMoneyLite旅の家計簿",
-    "button": "App Storeで入手",
-    "variant": "c",
-    "alt": "G+Money Lite：旅の家計簿・為替 — 今日あといくら？すぐわかる — 現地通貨で記録、自国通貨に即換算 — 旅行費用・旅費管理・外貨換算",
-    "store": "https://apps.apple.com/jp/app/id6793436548?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoneylite",
-    "review": {
-     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
-     "url": "https://apps.apple.com/app/id6793436548?action=write-review"
-    },
-    "keywords": [
-     "支出",
-     "小遣い",
-     "クイック入力",
-     "手首",
-     "ホーム画面",
-     "スマートウォッチ"
-    ],
-    "keyline": "旅行費用・旅費管理・外貨換算",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "13219b82506e626f",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "pinterest": {
-     "description": "今日あといくら？すぐわかる\n現地通貨で記録、自国通貨に即換算\n旅行費用・旅費管理・外貨換算\nG+Money Lite：旅の家計簿・為替\nApp Storeで「G+Money Lite 旅の家計簿」を検索\nAndroidはGoogle Playで\n\n#旅の家計簿為替 #支出 #小遣い #クイック入力 #GMoneyLite旅の家計簿\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6793436548?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoneylite",
-     "link": "https://apps.apple.com/jp/app/id6793436548?pt=118326163&ct=social&mt=8"
-    }
-   },
-   {
-    "kind": "clip",
-    "key": "gmoneylite/ko",
-    "locale": "ko",
-    "app": "gmoneylite",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/q3hi91.mp4",
-    "hook": "현지 통화로 적으면 내 통화로 바로",
-    "name": "G+Money Lite：여행 가계부·환율",
-    "title": "현지 통화로 적으면 내 통화로 바로 | 해외여행 경비·하루 예산 | G+Money Lite 여행 가계부",
-    "tags": [
-     "#여행가계부환율",
-     "#지출",
-     "#용돈",
-     "#한도",
-     "#GMoneyLite여행가계부"
-    ],
-    "caption": "현지 통화로 적으면 내 통화로 바로\n여행 총액을 한눈에\n해외여행 경비·하루 예산\nG+Money Lite：여행 가계부·환율\nApp Store에서 'G+Money Lite 여행 가계부' 검색\nAndroid는 Google Play에서\n\n#여행가계부환율 #지출 #용돈 #한도 #GMoneyLite여행가계부",
-    "button": "App Store에서 받기",
-    "variant": "b",
-    "alt": "G+Money Lite：여행 가계부·환율 — 현지 통화로 적으면 내 통화로 바로 — 여행 총액을 한눈에 — 해외여행 경비·하루 예산",
-    "store": "https://apps.apple.com/kr/app/id6793436548?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoneylite",
-    "review": {
-     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
-     "url": "https://apps.apple.com/app/id6793436548?action=write-review"
-    },
-    "keywords": [
-     "지출",
-     "용돈",
-     "한도",
-     "빠른기록",
-     "손목",
-     "홈화면"
-    ],
-    "keyline": "해외여행 경비·하루 예산",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "13219b82506e626f",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "pinterest": {
-     "description": "현지 통화로 적으면 내 통화로 바로\n여행 총액을 한눈에\n해외여행 경비·하루 예산\nG+Money Lite：여행 가계부·환율\nApp Store에서 'G+Money Lite 여행 가계부' 검색\nAndroid는 Google Play에서\n\n#여행가계부환율 #지출 #용돈 #한도 #GMoneyLite여행가계부\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6793436548?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoneylite",
-     "link": "https://apps.apple.com/kr/app/id6793436548?pt=118326163&ct=social&mt=8"
     }
    },
    {
@@ -57044,6 +56923,193 @@
    },
    {
     "kind": "clip",
+    "key": "dailymate/en",
+    "locale": "en",
+    "app": "dailymate",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/bue2n2.mp4",
+    "hook": "Hear it, plus the natural reply",
+    "name": "DailyMate: Language Phrases",
+    "title": "Hear it, plus the natural reply | Learn Spanish, French & More | DailyMate Phrases",
+    "tags": [
+     "#LanguagePhrases",
+     "#LearnSpanish",
+     "#French",
+     "#DailyMatePhrases"
+    ],
+    "caption": "Hear it, plus the natural reply\n3 levels in every topic\nLearn Spanish, French & More\nDailyMate: Language Phrases\nSearch “everyday phrases” on the App Store\nAlso on Google Play\n\n#LanguagePhrases #LearnSpanish #French #DailyMatePhrases",
+    "button": "Get it on the App Store",
+    "variant": "c",
+    "alt": "DailyMate: Language Phrases — Hear it, plus the natural reply — 3 levels in every topic — Learn Spanish, French & More",
+    "store": "https://apps.apple.com/us/app/id6790418321?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate",
+    "review": {
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6790418321?action=write-review"
+    },
+    "keywords": [
+     "everyday",
+     "german",
+     "phrasebook",
+     "situations",
+     "expressions",
+     "listening"
+    ],
+    "keyline": "Learn Spanish, French & More",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "06a3d61baa456520",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "Hear it, plus the natural reply\n3 levels in every topic\nLearn Spanish, French & More\nDailyMate: Language Phrases\nSearch “everyday phrases” on the App Store\nAlso on Google Play\n\n#LanguagePhrases #LearnSpanish #French #DailyMatePhrases\n\nGet it on the App Store: https://apps.apple.com/us/app/id6790418321?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate\nLite: https://apps.apple.com/app/id6794725568?ct=social_lite\nLite Google Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite&referrer=utm_source%3Dsocial_lite%26utm_campaign%3Ddailymatelite",
+     "link": "https://apps.apple.com/us/app/id6790418321?pt=118326163&ct=social&mt=8"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "dailymate/zh-Hant",
+    "locale": "zh-Hant",
+    "app": "dailymate",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/40zf82.mp4",
+    "hook": "每個主題都分，初中高三級",
+    "name": "DailyMate：用句子學語言",
+    "title": "每個主題都分，初中高三級 | 學英文・日文・韓文會話 | DailyMate 用句子學語言",
+    "tags": [
+     "#學英文日文韓文會話",
+     "#口說",
+     "#出國",
+     "#西班牙文",
+     "#DailyMate用句子學語言"
+    ],
+    "caption": "每個主題都分，初中高三級\n47 種語言任你學\n學英文・日文・韓文會話\nDailyMate：用句子學語言\n在 App Store 搜尋「DailyMate 用句子學語言」\nAndroid 版在 Google Play\n\n#學英文日文韓文會話 #口說 #出國 #西班牙文 #DailyMate用句子學語言",
+    "button": "在 App Store 下載",
+    "variant": "b",
+    "alt": "DailyMate：用句子學語言 — 每個主題都分，初中高三級 — 47 種語言任你學 — 學英文・日文・韓文會話",
+    "store": "https://apps.apple.com/tw/app/id6790418321?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate",
+    "review": {
+     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
+     "url": "https://apps.apple.com/app/id6790418321?action=write-review"
+    },
+    "keywords": [
+     "口說",
+     "出國",
+     "西班牙文",
+     "法文",
+     "德文",
+     "外語"
+    ],
+    "keyline": "學英文・日文・韓文會話",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "06a3d61baa456520",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "每個主題都分，初中高三級\n47 種語言任你學\n學英文・日文・韓文會話\nDailyMate：用句子學語言\n在 App Store 搜尋「DailyMate 用句子學語言」\nAndroid 版在 Google Play\n\n#學英文日文韓文會話 #口說 #出國 #西班牙文 #DailyMate用句子學語言\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6790418321?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate\nLite: https://apps.apple.com/app/id6794725568?ct=social_lite\nLite Google Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite&referrer=utm_source%3Dsocial_lite%26utm_campaign%3Ddailymatelite",
+     "link": "https://apps.apple.com/tw/app/id6790418321?pt=118326163&ct=social&mt=8"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "dailymate/ja",
+    "locale": "ja",
+    "app": "dailymate",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/2oq7mt.mp4",
+    "hook": "音声で聞いて、自然な返しまで",
+    "name": "DailyMate：文で身につく語学",
+    "title": "音声で聞いて、自然な返しまで | 英会話・旅行フレーズを毎日一文 | DailyMate 文で身につく語学",
+    "tags": [
+     "#文で身につく語学",
+     "#実用",
+     "#フレーズ集",
+     "#日常会話",
+     "#DailyMate文で身につく語学"
+    ],
+    "caption": "音声で聞いて、自然な返しまで\nどのテーマも 3レベル\n英会話・旅行フレーズを毎日一文\nDailyMate：文で身につく語学\nApp Storeで「DailyMate 文で身につく語学」を検索\nAndroidはGoogle Playで\n\n#文で身につく語学 #実用 #フレーズ集 #日常会話 #DailyMate文で身につく語学",
+    "button": "App Storeで入手",
+    "variant": "c",
+    "alt": "DailyMate：文で身につく語学 — 音声で聞いて、自然な返しまで — どのテーマも 3レベル — 英会話・旅行フレーズを毎日一文",
+    "store": "https://apps.apple.com/jp/app/id6790418321?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate",
+    "review": {
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6790418321?action=write-review"
+    },
+    "keywords": [
+     "実用",
+     "フレーズ集",
+     "日常会話",
+     "韓国語",
+     "中国語",
+     "スペイン語"
+    ],
+    "keyline": "英会話・旅行フレーズを毎日一文",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "06a3d61baa456520",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "音声で聞いて、自然な返しまで\nどのテーマも 3レベル\n英会話・旅行フレーズを毎日一文\nDailyMate：文で身につく語学\nApp Storeで「DailyMate 文で身につく語学」を検索\nAndroidはGoogle Playで\n\n#文で身につく語学 #実用 #フレーズ集 #日常会話 #DailyMate文で身につく語学\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6790418321?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate\nLite: https://apps.apple.com/app/id6794725568?ct=social_lite\nLite Google Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite&referrer=utm_source%3Dsocial_lite%26utm_campaign%3Ddailymatelite",
+     "link": "https://apps.apple.com/jp/app/id6790418321?pt=118326163&ct=social&mt=8"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "dailymate/ko",
+    "locale": "ko",
+    "app": "dailymate",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/0df4pg.mp4",
+    "hook": "주제마다 3단계 난이도",
+    "name": "DailyMate: 문장으로 배우는 언어",
+    "title": "주제마다 3단계 난이도 | 생활영어, 일본어, 중국어 회화 | DailyMate 문장으로 배우는 언어",
+    "tags": [
+     "#문장으로배우는언어",
+     "#영어회화",
+     "#영어공부",
+     "#일상회화",
+     "#DailyMate문장으로배우는언어"
+    ],
+    "caption": "주제마다 3단계 난이도\n배울 수 있는 언어 47개\n생활영어, 일본어, 중국어 회화\nDailyMate: 문장으로 배우는 언어\nApp Store에서 'DailyMate 문장으로 배우는 언어' 검색\nAndroid는 Google Play에서\n\n#문장으로배우는언어 #영어회화 #영어공부 #일상회화 #DailyMate문장으로배우는언어",
+    "button": "App Store에서 받기",
+    "variant": "b",
+    "alt": "DailyMate: 문장으로 배우는 언어 — 주제마다 3단계 난이도 — 배울 수 있는 언어 47개 — 생활영어, 일본어, 중국어 회화",
+    "store": "https://apps.apple.com/kr/app/id6790418321?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate",
+    "review": {
+     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
+     "url": "https://apps.apple.com/app/id6790418321?action=write-review"
+    },
+    "keywords": [
+     "영어회화",
+     "영어공부",
+     "일상회화",
+     "실전회화",
+     "상황별",
+     "예문"
+    ],
+    "keyline": "생활영어, 일본어, 중국어 회화",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "06a3d61baa456520",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "주제마다 3단계 난이도\n배울 수 있는 언어 47개\n생활영어, 일본어, 중국어 회화\nDailyMate: 문장으로 배우는 언어\nApp Store에서 'DailyMate 문장으로 배우는 언어' 검색\nAndroid는 Google Play에서\n\n#문장으로배우는언어 #영어회화 #영어공부 #일상회화 #DailyMate문장으로배우는언어\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6790418321?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate\nLite: https://apps.apple.com/app/id6794725568?ct=social_lite\nLite Google Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite&referrer=utm_source%3Dsocial_lite%26utm_campaign%3Ddailymatelite",
+     "link": "https://apps.apple.com/kr/app/id6790418321?pt=118326163&ct=social&mt=8"
+    }
+   },
+   {
+    "kind": "clip",
     "key": "gmoney/en",
     "locale": "en",
     "app": "gmoney",
@@ -62610,7 +62676,7 @@
     "button": "Get it on the App Store",
     "variant": "b",
     "alt": "Mochi: Cute Checklist — Turkey, pie, groceries…tap and done — Tons of cute themes — Cozy To-Do List Widget, Chores",
-    "store": "https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=social&mt=8",
+    "store": "https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=social&mt=8&ppid=6882ef79-3248-4054-bc9d-23c10a0f6521",
     "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi",
     "review": {
      "label": "Already using this app? Rate or review it on the App Store",
@@ -62633,8 +62699,8 @@
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "Turkey, pie, groceries…tap and done\nTons of cute themes\nCozy To-Do List Widget, Chores\nMochi: Cute Checklist\nSearch “Mochi Cute Checklist” on the App Store\nAlso on Google Play\n\n#CozyToDoListWidget #Chores #Cute #MochiCuteChecklist\n\nGet it on the App Store: https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi",
-     "link": "https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=social&mt=8"
+     "description": "Turkey, pie, groceries…tap and done\nTons of cute themes\nCozy To-Do List Widget, Chores\nMochi: Cute Checklist\nSearch “Mochi Cute Checklist” on the App Store\nAlso on Google Play\n\n#CozyToDoListWidget #Chores #Cute #MochiCuteChecklist\n\nGet it on the App Store: https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=social&mt=8&ppid=6882ef79-3248-4054-bc9d-23c10a0f6521\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi",
+     "link": "https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=social&mt=8&ppid=6882ef79-3248-4054-bc9d-23c10a0f6521"
     }
    },
    {
@@ -63109,19 +63175,19 @@
     "locale": "en",
     "app": "duowallpaperstudio_f",
     "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/7cf3b8e4e3.mp4",
-    "hook": "Add one line of your own text",
+    "hook": "Your photos stay on your device",
     "name": "Foldable Wallpaper Studio",
-    "title": "Add one line of your own text | Dual Screen Pairs for Duo | Foldable Wallpaper Studio",
+    "title": "Your photos stay on your device | Dual Screen Pairs for Duo | Foldable Wallpaper Studio",
     "tags": [
      "#Folding",
      "#Outer",
      "#Lockscreen",
      "#FoldableWallpaperStudio"
     ],
-    "caption": "Add one line of your own text\nYour photos stay on your device\nDual Screen Pairs for Duo\nSearch “Foldable Wallpaper Studio” on the App Store\nAlso on Google Play\n\n#Folding #Outer #Lockscreen #FoldableWallpaperStudio",
+    "caption": "Your photos stay on your device\nSaved as two images\nDual Screen Pairs for Duo\nSearch “Foldable Wallpaper Studio” on the App Store\nAlso on Google Play\n\n#Folding #Outer #Lockscreen #FoldableWallpaperStudio",
     "button": "Get it on the App Store",
     "variant": "b",
-    "alt": "Foldable Wallpaper Studio — Add one line of your own text — Your photos stay on your device — Dual Screen Pairs for Duo",
+    "alt": "Foldable Wallpaper Studio — Your photos stay on your device — Saved as two images — Dual Screen Pairs for Duo",
     "store": "https://apps.apple.com/us/app/id6824946559?pt=118326163&ct=social&mt=8",
     "play": "https://play.google.com/store/apps/details?id=com.alice51849.DuoWallpaperStudio&referrer=utm_source%3Dsocial%26utm_campaign%3Dduowallpaperstudio",
     "review": {
@@ -63145,7 +63211,7 @@
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "Add one line of your own text\nYour photos stay on your device\nDual Screen Pairs for Duo\nSearch “Foldable Wallpaper Studio” on the App Store\nAlso on Google Play\n\n#Folding #Outer #Lockscreen #FoldableWallpaperStudio\n\nGet it on the App Store: https://apps.apple.com/us/app/id6824946559?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DuoWallpaperStudio&referrer=utm_source%3Dsocial%26utm_campaign%3Dduowallpaperstudio",
+     "description": "Your photos stay on your device\nSaved as two images\nDual Screen Pairs for Duo\nSearch “Foldable Wallpaper Studio” on the App Store\nAlso on Google Play\n\n#Folding #Outer #Lockscreen #FoldableWallpaperStudio\n\nGet it on the App Store: https://apps.apple.com/us/app/id6824946559?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DuoWallpaperStudio&referrer=utm_source%3Dsocial%26utm_campaign%3Dduowallpaperstudio",
      "link": "https://apps.apple.com/us/app/id6824946559?pt=118326163&ct=social&mt=8"
     }
    },
@@ -63309,7 +63375,7 @@
     "button": "Get it on the App Store",
     "variant": "b",
     "alt": "Mochi: Cute Checklist — School, work, errands: one cute list — Tap to check it off — Cozy To-Do List Widget, Chores",
-    "store": "https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=social&mt=8",
+    "store": "https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=social&mt=8&ppid=bc6d9ed3-398d-48d2-9a4e-82ab53f81ea2",
     "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi",
     "review": {
      "label": "Already using this app? Rate or review it on the App Store",
@@ -63332,8 +63398,8 @@
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "School, work, errands: one cute list\nTap to check it off\nCozy To-Do List Widget, Chores\nMochi: Cute Checklist\nSearch “Mochi Cute Checklist” on the App Store\nAlso on Google Play\n\n#CozyToDoListWidget #Chores #Cute #MochiCuteChecklist\n\nGet it on the App Store: https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi",
-     "link": "https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=social&mt=8"
+     "description": "School, work, errands: one cute list\nTap to check it off\nCozy To-Do List Widget, Chores\nMochi: Cute Checklist\nSearch “Mochi Cute Checklist” on the App Store\nAlso on Google Play\n\n#CozyToDoListWidget #Chores #Cute #MochiCuteChecklist\n\nGet it on the App Store: https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=social&mt=8&ppid=bc6d9ed3-398d-48d2-9a4e-82ab53f81ea2\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi",
+     "link": "https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=social&mt=8&ppid=bc6d9ed3-398d-48d2-9a4e-82ab53f81ea2"
     }
    },
    {
@@ -64509,193 +64575,6 @@
    },
    {
     "kind": "clip",
-    "key": "dailymate/en",
-    "locale": "en",
-    "app": "dailymate",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/bue2n2.mp4",
-    "hook": "3 levels in every topic",
-    "name": "DailyMate: Language Phrases",
-    "title": "3 levels in every topic | Learn Spanish, French & More | DailyMate Phrases",
-    "tags": [
-     "#LanguagePhrases",
-     "#LearnSpanish",
-     "#French",
-     "#DailyMatePhrases"
-    ],
-    "caption": "3 levels in every topic\n47 languages to learn\nLearn Spanish, French & More\nDailyMate: Language Phrases\nSearch “everyday phrases” on the App Store\nAlso on Google Play\n\n#LanguagePhrases #LearnSpanish #French #DailyMatePhrases",
-    "button": "Get it on the App Store",
-    "variant": "b",
-    "alt": "DailyMate: Language Phrases — 3 levels in every topic — 47 languages to learn — Learn Spanish, French & More",
-    "store": "https://apps.apple.com/us/app/id6790418321?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate",
-    "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6790418321?action=write-review"
-    },
-    "keywords": [
-     "everyday",
-     "german",
-     "phrasebook",
-     "situations",
-     "expressions",
-     "listening"
-    ],
-    "keyline": "Learn Spanish, French & More",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "06a3d61baa456520",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "tiktok": {
-     "caption": "3 levels in every topic\n47 languages to learn\nLearn Spanish, French & More\nDailyMate: Language Phrases\nSearch “everyday phrases” on the App Store\nAlso on Google Play\n\n#LanguagePhrases #LearnSpanish #French #DailyMatePhrases\n\nGet it on the App Store: https://apps.apple.com/us/app/id6790418321?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate\nLite: https://apps.apple.com/app/id6794725568?ct=social_lite\nLite Google Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite&referrer=utm_source%3Dsocial_lite%26utm_campaign%3Ddailymatelite"
-    },
-    "boost_rank": 4
-   },
-   {
-    "kind": "clip",
-    "key": "dailymate/zh-Hant",
-    "locale": "zh-Hant",
-    "app": "dailymate",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/40zf82.mp4",
-    "hook": "每個主題都分，初中高三級",
-    "name": "DailyMate：用句子學語言",
-    "title": "每個主題都分，初中高三級 | 學英文・日文・韓文會話 | DailyMate 用句子學語言",
-    "tags": [
-     "#學英文日文韓文會話",
-     "#口說",
-     "#出國",
-     "#西班牙文",
-     "#DailyMate用句子學語言"
-    ],
-    "caption": "每個主題都分，初中高三級\n47 種語言任你學\n學英文・日文・韓文會話\nDailyMate：用句子學語言\n在 App Store 搜尋「DailyMate 用句子學語言」\nAndroid 版在 Google Play\n\n#學英文日文韓文會話 #口說 #出國 #西班牙文 #DailyMate用句子學語言",
-    "button": "在 App Store 下載",
-    "variant": "b",
-    "alt": "DailyMate：用句子學語言 — 每個主題都分，初中高三級 — 47 種語言任你學 — 學英文・日文・韓文會話",
-    "store": "https://apps.apple.com/tw/app/id6790418321?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate",
-    "review": {
-     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
-     "url": "https://apps.apple.com/app/id6790418321?action=write-review"
-    },
-    "keywords": [
-     "口說",
-     "出國",
-     "西班牙文",
-     "法文",
-     "德文",
-     "外語"
-    ],
-    "keyline": "學英文・日文・韓文會話",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "06a3d61baa456520",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "tiktok": {
-     "caption": "每個主題都分，初中高三級\n47 種語言任你學\n學英文・日文・韓文會話\nDailyMate：用句子學語言\n在 App Store 搜尋「DailyMate 用句子學語言」\nAndroid 版在 Google Play\n\n#學英文日文韓文會話 #口說 #出國 #西班牙文 #DailyMate用句子學語言\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6790418321?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate\nLite: https://apps.apple.com/app/id6794725568?ct=social_lite\nLite Google Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite&referrer=utm_source%3Dsocial_lite%26utm_campaign%3Ddailymatelite"
-    },
-    "boost_rank": 4
-   },
-   {
-    "kind": "clip",
-    "key": "dailymate/ja",
-    "locale": "ja",
-    "app": "dailymate",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/2oq7mt.mp4",
-    "hook": "音声で聞いて、自然な返しまで",
-    "name": "DailyMate：文で身につく語学",
-    "title": "音声で聞いて、自然な返しまで | 英会話・旅行フレーズを毎日一文 | DailyMate 文で身につく語学",
-    "tags": [
-     "#文で身につく語学",
-     "#実用",
-     "#フレーズ集",
-     "#日常会話",
-     "#DailyMate文で身につく語学"
-    ],
-    "caption": "音声で聞いて、自然な返しまで\nどのテーマも 3レベル\n英会話・旅行フレーズを毎日一文\nDailyMate：文で身につく語学\nApp Storeで「DailyMate 文で身につく語学」を検索\nAndroidはGoogle Playで\n\n#文で身につく語学 #実用 #フレーズ集 #日常会話 #DailyMate文で身につく語学",
-    "button": "App Storeで入手",
-    "variant": "c",
-    "alt": "DailyMate：文で身につく語学 — 音声で聞いて、自然な返しまで — どのテーマも 3レベル — 英会話・旅行フレーズを毎日一文",
-    "store": "https://apps.apple.com/jp/app/id6790418321?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate",
-    "review": {
-     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
-     "url": "https://apps.apple.com/app/id6790418321?action=write-review"
-    },
-    "keywords": [
-     "実用",
-     "フレーズ集",
-     "日常会話",
-     "韓国語",
-     "中国語",
-     "スペイン語"
-    ],
-    "keyline": "英会話・旅行フレーズを毎日一文",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "06a3d61baa456520",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "tiktok": {
-     "caption": "音声で聞いて、自然な返しまで\nどのテーマも 3レベル\n英会話・旅行フレーズを毎日一文\nDailyMate：文で身につく語学\nApp Storeで「DailyMate 文で身につく語学」を検索\nAndroidはGoogle Playで\n\n#文で身につく語学 #実用 #フレーズ集 #日常会話 #DailyMate文で身につく語学\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6790418321?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate\nLite: https://apps.apple.com/app/id6794725568?ct=social_lite\nLite Google Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite&referrer=utm_source%3Dsocial_lite%26utm_campaign%3Ddailymatelite"
-    },
-    "boost_rank": 4
-   },
-   {
-    "kind": "clip",
-    "key": "dailymate/ko",
-    "locale": "ko",
-    "app": "dailymate",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/0df4pg.mp4",
-    "hook": "주제마다 3단계 난이도",
-    "name": "DailyMate: 문장으로 배우는 언어",
-    "title": "주제마다 3단계 난이도 | 생활영어, 일본어, 중국어 회화 | DailyMate 문장으로 배우는 언어",
-    "tags": [
-     "#문장으로배우는언어",
-     "#영어회화",
-     "#영어공부",
-     "#일상회화",
-     "#DailyMate문장으로배우는언어"
-    ],
-    "caption": "주제마다 3단계 난이도\n배울 수 있는 언어 47개\n생활영어, 일본어, 중국어 회화\nDailyMate: 문장으로 배우는 언어\nApp Store에서 'DailyMate 문장으로 배우는 언어' 검색\nAndroid는 Google Play에서\n\n#문장으로배우는언어 #영어회화 #영어공부 #일상회화 #DailyMate문장으로배우는언어",
-    "button": "App Store에서 받기",
-    "variant": "b",
-    "alt": "DailyMate: 문장으로 배우는 언어 — 주제마다 3단계 난이도 — 배울 수 있는 언어 47개 — 생활영어, 일본어, 중국어 회화",
-    "store": "https://apps.apple.com/kr/app/id6790418321?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate",
-    "review": {
-     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
-     "url": "https://apps.apple.com/app/id6790418321?action=write-review"
-    },
-    "keywords": [
-     "영어회화",
-     "영어공부",
-     "일상회화",
-     "실전회화",
-     "상황별",
-     "예문"
-    ],
-    "keyline": "생활영어, 일본어, 중국어 회화",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "06a3d61baa456520",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "tiktok": {
-     "caption": "주제마다 3단계 난이도\n배울 수 있는 언어 47개\n생활영어, 일본어, 중국어 회화\nDailyMate: 문장으로 배우는 언어\nApp Store에서 'DailyMate 문장으로 배우는 언어' 검색\nAndroid는 Google Play에서\n\n#문장으로배우는언어 #영어회화 #영어공부 #일상회화 #DailyMate문장으로배우는언어\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6790418321?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate\nLite: https://apps.apple.com/app/id6794725568?ct=social_lite\nLite Google Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite&referrer=utm_source%3Dsocial_lite%26utm_campaign%3Ddailymatelite"
-    },
-    "boost_rank": 4
-   },
-   {
-    "kind": "clip",
     "key": "wifiaidlite/en",
     "locale": "en",
     "app": "wifiaidlite",
@@ -64738,7 +64617,7 @@
     "tiktok": {
      "caption": "Wi-Fi, DNS or internet?\n…or just one site?\nInternet Down? Find the Cause\nWiFi Aid Lite: Network Check\nSearch “WiFi Aid Lite” on the App Store\nAlso on Google Play\n\n#NetworkCheck #Internet #Find #WiFiAidLite\n\nGet it on the App Store: https://apps.apple.com/us/app/id6793414462?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.WiFiAidLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaidlite"
     },
-    "boost_rank": 5
+    "boost_rank": 4
    },
    {
     "kind": "clip",
@@ -64785,7 +64664,7 @@
     "tiktok": {
      "caption": "Wi-Fi、DNS 還是網際網路？\n還是網站本身？\n斷線 · 連不上 · 網路慢\n在 App Store 搜尋「WiFi Aid Lite」\nAndroid 版在 Google Play\n\n#斷線 #連不上 #網路慢 #網路卡卡 #WiFiAidLite\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6793414462?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.WiFiAidLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaidlite"
     },
-    "boost_rank": 5
+    "boost_rank": 4
    },
    {
     "kind": "clip",
@@ -64832,7 +64711,7 @@
     "tiktok": {
      "caption": "次の一手も分かる\nWi-Fi？DNS？それとも回線？\nネットがつながらない原因を特定\nWiFi Aid Lite\nApp Storeで「wifi つながらない」を検索\nAndroidはGoogle Playで\n\n#繋がらない #インターネット #接続 #遅い #WiFiAidLite\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6793414462?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.WiFiAidLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaidlite"
     },
-    "boost_rank": 5
+    "boost_rank": 4
    },
    {
     "kind": "clip",
@@ -64879,7 +64758,7 @@
     "tiktok": {
      "caption": "와이파이? DNS? 아니면 인터넷?\n아니면 그 사이트만?\n인터넷 안될 때 원인 찾기\nWiFi Aid Lite\nApp Store에서 '와이파이 인터넷 안됨' 검색\nAndroid는 Google Play에서\n\n#와이파이 #인터넷안됨 #와이파이안됨 #인터넷끊김 #WiFiAidLite\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6793414462?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.WiFiAidLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaidlite"
     },
-    "boost_rank": 5
+    "boost_rank": 4
    },
    {
     "kind": "clip",
@@ -64924,6 +64803,193 @@
     },
     "tiktok": {
      "caption": "WiFi, DNS, atau internet?\nAtau cuma satu situs?\nInternet mati? Cek penyebab\nCari “WiFi Aid Lite” di App Store\nJuga ada di Google Play\n\n#InternetMatiCekPenyebab #WiFi #Jaringan #WiFiAidLite\n\nUnduh di App Store: https://apps.apple.com/id/app/id6793414462?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.WiFiAidLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dwifiaidlite"
+    },
+    "boost_rank": 4
+   },
+   {
+    "kind": "clip",
+    "key": "gmoneylite/en",
+    "locale": "en",
+    "app": "gmoneylite",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/fbtd4k.mp4",
+    "hook": "Log in yen, see it in your currency",
+    "name": "G+Money Lite: Trip Spending",
+    "title": "Log in yen, see it in your currency | Trip & Vacation Budget Planner | G+Money Lite",
+    "tags": [
+     "#TravelBudget",
+     "#VacationBudgetPlanner",
+     "#DailyLimit",
+     "#GMoneyLite"
+    ],
+    "caption": "Log in yen, see it in your currency\nWhole trip total, at a glance\nTrip & Vacation Budget Planner\nG+Money Lite: Trip Spending\nSearch “G+Money Lite” on the App Store\nAlso on Google Play\n\n#TravelBudget #VacationBudgetPlanner #DailyLimit #GMoneyLite",
+    "button": "Get it on the App Store",
+    "variant": "b",
+    "alt": "G+Money Lite: Trip Spending — Log in yen, see it in your currency — Whole trip total, at a glance — Trip & Vacation Budget Planner",
+    "store": "https://apps.apple.com/us/app/id6793436548?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoneylite",
+    "review": {
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6793436548?action=write-review"
+    },
+    "keywords": [
+     "converter",
+     "exchange",
+     "rate",
+     "abroad",
+     "foreign",
+     "overseas"
+    ],
+    "keyline": "Trip & Vacation Budget Planner",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "13219b82506e626f",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "Log in yen, see it in your currency\nWhole trip total, at a glance\nTrip & Vacation Budget Planner\nG+Money Lite: Trip Spending\nSearch “G+Money Lite” on the App Store\nAlso on Google Play\n\n#TravelBudget #VacationBudgetPlanner #DailyLimit #GMoneyLite\n\nGet it on the App Store: https://apps.apple.com/us/app/id6793436548?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoneylite"
+    },
+    "boost_rank": 5
+   },
+   {
+    "kind": "clip",
+    "key": "gmoneylite/zh-Hant",
+    "locale": "zh-Hant",
+    "app": "gmoneylite",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/dndedr.mp4",
+    "hook": "日幣記一筆，台幣馬上出來",
+    "name": "G+Money Lite：旅行記帳·匯率換算",
+    "title": "日幣記一筆，台幣馬上出來 | 出國預算・自由行花費・每日預算 | G+Money Lite 旅行記帳",
+    "tags": [
+     "#旅行記帳匯率換算",
+     "#記帳本",
+     "#開銷",
+     "#記帳軟體",
+     "#GMoneyLite旅行記帳"
+    ],
+    "caption": "日幣記一筆，台幣馬上出來\n整趟花多少，一眼看清\n出國預算・自由行花費・每日預算\nG+Money Lite：旅行記帳·匯率換算\n在 App Store 搜尋「G+Money Lite 旅行記帳」\nAndroid 版在 Google Play\n\n#旅行記帳匯率換算 #記帳本 #開銷 #記帳軟體 #GMoneyLite旅行記帳",
+    "button": "在 App Store 下載",
+    "variant": "b",
+    "alt": "G+Money Lite：旅行記帳·匯率換算 — 日幣記一筆，台幣馬上出來 — 整趟花多少，一眼看清 — 出國預算・自由行花費・每日預算",
+    "store": "https://apps.apple.com/tw/app/id6793436548?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoneylite",
+    "review": {
+     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
+     "url": "https://apps.apple.com/app/id6793436548?action=write-review"
+    },
+    "keywords": [
+     "記帳本",
+     "開銷",
+     "記帳軟體",
+     "花費",
+     "消費記錄",
+     "支出紀錄"
+    ],
+    "keyline": "出國預算・自由行花費・每日預算",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "13219b82506e626f",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "日幣記一筆，台幣馬上出來\n整趟花多少，一眼看清\n出國預算・自由行花費・每日預算\nG+Money Lite：旅行記帳·匯率換算\n在 App Store 搜尋「G+Money Lite 旅行記帳」\nAndroid 版在 Google Play\n\n#旅行記帳匯率換算 #記帳本 #開銷 #記帳軟體 #GMoneyLite旅行記帳\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6793436548?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoneylite"
+    },
+    "boost_rank": 5
+   },
+   {
+    "kind": "clip",
+    "key": "gmoneylite/ja",
+    "locale": "ja",
+    "app": "gmoneylite",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/zq3wv8.mp4",
+    "hook": "今日あといくら？すぐわかる",
+    "name": "G+Money Lite：旅の家計簿・為替",
+    "title": "今日あといくら？すぐわかる | 旅行費用・旅費管理・外貨換算 | G+Money Lite 旅の家計簿",
+    "tags": [
+     "#旅の家計簿為替",
+     "#支出",
+     "#小遣い",
+     "#クイック入力",
+     "#GMoneyLite旅の家計簿"
+    ],
+    "caption": "今日あといくら？すぐわかる\n現地通貨で記録、自国通貨に即換算\n旅行費用・旅費管理・外貨換算\nG+Money Lite：旅の家計簿・為替\nApp Storeで「G+Money Lite 旅の家計簿」を検索\nAndroidはGoogle Playで\n\n#旅の家計簿為替 #支出 #小遣い #クイック入力 #GMoneyLite旅の家計簿",
+    "button": "App Storeで入手",
+    "variant": "c",
+    "alt": "G+Money Lite：旅の家計簿・為替 — 今日あといくら？すぐわかる — 現地通貨で記録、自国通貨に即換算 — 旅行費用・旅費管理・外貨換算",
+    "store": "https://apps.apple.com/jp/app/id6793436548?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoneylite",
+    "review": {
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6793436548?action=write-review"
+    },
+    "keywords": [
+     "支出",
+     "小遣い",
+     "クイック入力",
+     "手首",
+     "ホーム画面",
+     "スマートウォッチ"
+    ],
+    "keyline": "旅行費用・旅費管理・外貨換算",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "13219b82506e626f",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "今日あといくら？すぐわかる\n現地通貨で記録、自国通貨に即換算\n旅行費用・旅費管理・外貨換算\nG+Money Lite：旅の家計簿・為替\nApp Storeで「G+Money Lite 旅の家計簿」を検索\nAndroidはGoogle Playで\n\n#旅の家計簿為替 #支出 #小遣い #クイック入力 #GMoneyLite旅の家計簿\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6793436548?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoneylite"
+    },
+    "boost_rank": 5
+   },
+   {
+    "kind": "clip",
+    "key": "gmoneylite/ko",
+    "locale": "ko",
+    "app": "gmoneylite",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/q3hi91.mp4",
+    "hook": "현지 통화로 적으면 내 통화로 바로",
+    "name": "G+Money Lite：여행 가계부·환율",
+    "title": "현지 통화로 적으면 내 통화로 바로 | 해외여행 경비·하루 예산 | G+Money Lite 여행 가계부",
+    "tags": [
+     "#여행가계부환율",
+     "#지출",
+     "#용돈",
+     "#한도",
+     "#GMoneyLite여행가계부"
+    ],
+    "caption": "현지 통화로 적으면 내 통화로 바로\n여행 총액을 한눈에\n해외여행 경비·하루 예산\nG+Money Lite：여행 가계부·환율\nApp Store에서 'G+Money Lite 여행 가계부' 검색\nAndroid는 Google Play에서\n\n#여행가계부환율 #지출 #용돈 #한도 #GMoneyLite여행가계부",
+    "button": "App Store에서 받기",
+    "variant": "b",
+    "alt": "G+Money Lite：여행 가계부·환율 — 현지 통화로 적으면 내 통화로 바로 — 여행 총액을 한눈에 — 해외여행 경비·하루 예산",
+    "store": "https://apps.apple.com/kr/app/id6793436548?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoneylite",
+    "review": {
+     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
+     "url": "https://apps.apple.com/app/id6793436548?action=write-review"
+    },
+    "keywords": [
+     "지출",
+     "용돈",
+     "한도",
+     "빠른기록",
+     "손목",
+     "홈화면"
+    ],
+    "keyline": "해외여행 경비·하루 예산",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "13219b82506e626f",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "현지 통화로 적으면 내 통화로 바로\n여행 총액을 한눈에\n해외여행 경비·하루 예산\nG+Money Lite：여행 가계부·환율\nApp Store에서 'G+Money Lite 여행 가계부' 검색\nAndroid는 Google Play에서\n\n#여행가계부환율 #지출 #용돈 #한도 #GMoneyLite여행가계부\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6793436548?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoneylite"
     },
     "boost_rank": 5
    },
@@ -66388,189 +66454,6 @@
     },
     "tiktok": {
      "caption": "35 hotových rozměrů\nZměňte pozadí na jednobarevné\nSnapport Lite: Foto na doklady\nVyhledejte „Snapport Lite“ v App Storu\nTaké na Google Play\n\n#FotoNaDoklady #PortrétyVPřesnémRozměru #VelikostFotky #BíléPozadí #SnapportLite\n\nStáhnout z App Storu: https://apps.apple.com/cz/app/id6792856304?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.SnapportLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dsnapportlite"
-    }
-   },
-   {
-    "kind": "clip",
-    "key": "gmoneylite/en",
-    "locale": "en",
-    "app": "gmoneylite",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/fbtd4k.mp4",
-    "hook": "Log in yen, see it in your currency",
-    "name": "G+Money Lite: Trip Spending",
-    "title": "Log in yen, see it in your currency | Trip & Vacation Budget Planner | G+Money Lite",
-    "tags": [
-     "#TravelBudget",
-     "#VacationBudgetPlanner",
-     "#DailyLimit",
-     "#GMoneyLite"
-    ],
-    "caption": "Log in yen, see it in your currency\nWhole trip total, at a glance\nTrip & Vacation Budget Planner\nG+Money Lite: Trip Spending\nSearch “G+Money Lite” on the App Store\nAlso on Google Play\n\n#TravelBudget #VacationBudgetPlanner #DailyLimit #GMoneyLite",
-    "button": "Get it on the App Store",
-    "variant": "b",
-    "alt": "G+Money Lite: Trip Spending — Log in yen, see it in your currency — Whole trip total, at a glance — Trip & Vacation Budget Planner",
-    "store": "https://apps.apple.com/us/app/id6793436548?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoneylite",
-    "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
-     "url": "https://apps.apple.com/app/id6793436548?action=write-review"
-    },
-    "keywords": [
-     "converter",
-     "exchange",
-     "rate",
-     "abroad",
-     "foreign",
-     "overseas"
-    ],
-    "keyline": "Trip & Vacation Budget Planner",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "13219b82506e626f",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "tiktok": {
-     "caption": "Log in yen, see it in your currency\nWhole trip total, at a glance\nTrip & Vacation Budget Planner\nG+Money Lite: Trip Spending\nSearch “G+Money Lite” on the App Store\nAlso on Google Play\n\n#TravelBudget #VacationBudgetPlanner #DailyLimit #GMoneyLite\n\nGet it on the App Store: https://apps.apple.com/us/app/id6793436548?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoneylite"
-    }
-   },
-   {
-    "kind": "clip",
-    "key": "gmoneylite/zh-Hant",
-    "locale": "zh-Hant",
-    "app": "gmoneylite",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/dndedr.mp4",
-    "hook": "日幣記一筆，台幣馬上出來",
-    "name": "G+Money Lite：旅行記帳·匯率換算",
-    "title": "日幣記一筆，台幣馬上出來 | 出國預算・自由行花費・每日預算 | G+Money Lite 旅行記帳",
-    "tags": [
-     "#旅行記帳匯率換算",
-     "#記帳本",
-     "#開銷",
-     "#記帳軟體",
-     "#GMoneyLite旅行記帳"
-    ],
-    "caption": "日幣記一筆，台幣馬上出來\n整趟花多少，一眼看清\n出國預算・自由行花費・每日預算\nG+Money Lite：旅行記帳·匯率換算\n在 App Store 搜尋「G+Money Lite 旅行記帳」\nAndroid 版在 Google Play\n\n#旅行記帳匯率換算 #記帳本 #開銷 #記帳軟體 #GMoneyLite旅行記帳",
-    "button": "在 App Store 下載",
-    "variant": "b",
-    "alt": "G+Money Lite：旅行記帳·匯率換算 — 日幣記一筆，台幣馬上出來 — 整趟花多少，一眼看清 — 出國預算・自由行花費・每日預算",
-    "store": "https://apps.apple.com/tw/app/id6793436548?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoneylite",
-    "review": {
-     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
-     "url": "https://apps.apple.com/app/id6793436548?action=write-review"
-    },
-    "keywords": [
-     "記帳本",
-     "開銷",
-     "記帳軟體",
-     "花費",
-     "消費記錄",
-     "支出紀錄"
-    ],
-    "keyline": "出國預算・自由行花費・每日預算",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "13219b82506e626f",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "tiktok": {
-     "caption": "日幣記一筆，台幣馬上出來\n整趟花多少，一眼看清\n出國預算・自由行花費・每日預算\nG+Money Lite：旅行記帳·匯率換算\n在 App Store 搜尋「G+Money Lite 旅行記帳」\nAndroid 版在 Google Play\n\n#旅行記帳匯率換算 #記帳本 #開銷 #記帳軟體 #GMoneyLite旅行記帳\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6793436548?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoneylite"
-    }
-   },
-   {
-    "kind": "clip",
-    "key": "gmoneylite/ja",
-    "locale": "ja",
-    "app": "gmoneylite",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/zq3wv8.mp4",
-    "hook": "今日あといくら？すぐわかる",
-    "name": "G+Money Lite：旅の家計簿・為替",
-    "title": "今日あといくら？すぐわかる | 旅行費用・旅費管理・外貨換算 | G+Money Lite 旅の家計簿",
-    "tags": [
-     "#旅の家計簿為替",
-     "#支出",
-     "#小遣い",
-     "#クイック入力",
-     "#GMoneyLite旅の家計簿"
-    ],
-    "caption": "今日あといくら？すぐわかる\n現地通貨で記録、自国通貨に即換算\n旅行費用・旅費管理・外貨換算\nG+Money Lite：旅の家計簿・為替\nApp Storeで「G+Money Lite 旅の家計簿」を検索\nAndroidはGoogle Playで\n\n#旅の家計簿為替 #支出 #小遣い #クイック入力 #GMoneyLite旅の家計簿",
-    "button": "App Storeで入手",
-    "variant": "c",
-    "alt": "G+Money Lite：旅の家計簿・為替 — 今日あといくら？すぐわかる — 現地通貨で記録、自国通貨に即換算 — 旅行費用・旅費管理・外貨換算",
-    "store": "https://apps.apple.com/jp/app/id6793436548?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoneylite",
-    "review": {
-     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
-     "url": "https://apps.apple.com/app/id6793436548?action=write-review"
-    },
-    "keywords": [
-     "支出",
-     "小遣い",
-     "クイック入力",
-     "手首",
-     "ホーム画面",
-     "スマートウォッチ"
-    ],
-    "keyline": "旅行費用・旅費管理・外貨換算",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "13219b82506e626f",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "tiktok": {
-     "caption": "今日あといくら？すぐわかる\n現地通貨で記録、自国通貨に即換算\n旅行費用・旅費管理・外貨換算\nG+Money Lite：旅の家計簿・為替\nApp Storeで「G+Money Lite 旅の家計簿」を検索\nAndroidはGoogle Playで\n\n#旅の家計簿為替 #支出 #小遣い #クイック入力 #GMoneyLite旅の家計簿\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6793436548?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoneylite"
-    }
-   },
-   {
-    "kind": "clip",
-    "key": "gmoneylite/ko",
-    "locale": "ko",
-    "app": "gmoneylite",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/q3hi91.mp4",
-    "hook": "현지 통화로 적으면 내 통화로 바로",
-    "name": "G+Money Lite：여행 가계부·환율",
-    "title": "현지 통화로 적으면 내 통화로 바로 | 해외여행 경비·하루 예산 | G+Money Lite 여행 가계부",
-    "tags": [
-     "#여행가계부환율",
-     "#지출",
-     "#용돈",
-     "#한도",
-     "#GMoneyLite여행가계부"
-    ],
-    "caption": "현지 통화로 적으면 내 통화로 바로\n여행 총액을 한눈에\n해외여행 경비·하루 예산\nG+Money Lite：여행 가계부·환율\nApp Store에서 'G+Money Lite 여행 가계부' 검색\nAndroid는 Google Play에서\n\n#여행가계부환율 #지출 #용돈 #한도 #GMoneyLite여행가계부",
-    "button": "App Store에서 받기",
-    "variant": "b",
-    "alt": "G+Money Lite：여행 가계부·환율 — 현지 통화로 적으면 내 통화로 바로 — 여행 총액을 한눈에 — 해외여행 경비·하루 예산",
-    "store": "https://apps.apple.com/kr/app/id6793436548?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoneylite",
-    "review": {
-     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
-     "url": "https://apps.apple.com/app/id6793436548?action=write-review"
-    },
-    "keywords": [
-     "지출",
-     "용돈",
-     "한도",
-     "빠른기록",
-     "손목",
-     "홈화면"
-    ],
-    "keyline": "해외여행 경비·하루 예산",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "13219b82506e626f",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "tiktok": {
-     "caption": "현지 통화로 적으면 내 통화로 바로\n여행 총액을 한눈에\n해외여행 경비·하루 예산\nG+Money Lite：여행 가계부·환율\nApp Store에서 'G+Money Lite 여행 가계부' 검색\nAndroid는 Google Play에서\n\n#여행가계부환율 #지출 #용돈 #한도 #GMoneyLite여행가계부\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6793436548?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite&referrer=utm_source%3Dsocial%26utm_campaign%3Dgmoneylite"
     }
    },
    {
@@ -75712,6 +75595,189 @@
    },
    {
     "kind": "clip",
+    "key": "dailymate/en",
+    "locale": "en",
+    "app": "dailymate",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/bue2n2.mp4",
+    "hook": "Hear it, plus the natural reply",
+    "name": "DailyMate: Language Phrases",
+    "title": "Hear it, plus the natural reply | Learn Spanish, French & More | DailyMate Phrases",
+    "tags": [
+     "#LanguagePhrases",
+     "#LearnSpanish",
+     "#French",
+     "#DailyMatePhrases"
+    ],
+    "caption": "Hear it, plus the natural reply\n3 levels in every topic\nLearn Spanish, French & More\nDailyMate: Language Phrases\nSearch “everyday phrases” on the App Store\nAlso on Google Play\n\n#LanguagePhrases #LearnSpanish #French #DailyMatePhrases",
+    "button": "Get it on the App Store",
+    "variant": "c",
+    "alt": "DailyMate: Language Phrases — Hear it, plus the natural reply — 3 levels in every topic — Learn Spanish, French & More",
+    "store": "https://apps.apple.com/us/app/id6790418321?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate",
+    "review": {
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6790418321?action=write-review"
+    },
+    "keywords": [
+     "everyday",
+     "german",
+     "phrasebook",
+     "situations",
+     "expressions",
+     "listening"
+    ],
+    "keyline": "Learn Spanish, French & More",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "06a3d61baa456520",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "Hear it, plus the natural reply\n3 levels in every topic\nLearn Spanish, French & More\nDailyMate: Language Phrases\nSearch “everyday phrases” on the App Store\nAlso on Google Play\n\n#LanguagePhrases #LearnSpanish #French #DailyMatePhrases\n\nGet it on the App Store: https://apps.apple.com/us/app/id6790418321?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate\nLite: https://apps.apple.com/app/id6794725568?ct=social_lite\nLite Google Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite&referrer=utm_source%3Dsocial_lite%26utm_campaign%3Ddailymatelite"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "dailymate/zh-Hant",
+    "locale": "zh-Hant",
+    "app": "dailymate",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/40zf82.mp4",
+    "hook": "每個主題都分，初中高三級",
+    "name": "DailyMate：用句子學語言",
+    "title": "每個主題都分，初中高三級 | 學英文・日文・韓文會話 | DailyMate 用句子學語言",
+    "tags": [
+     "#學英文日文韓文會話",
+     "#口說",
+     "#出國",
+     "#西班牙文",
+     "#DailyMate用句子學語言"
+    ],
+    "caption": "每個主題都分，初中高三級\n47 種語言任你學\n學英文・日文・韓文會話\nDailyMate：用句子學語言\n在 App Store 搜尋「DailyMate 用句子學語言」\nAndroid 版在 Google Play\n\n#學英文日文韓文會話 #口說 #出國 #西班牙文 #DailyMate用句子學語言",
+    "button": "在 App Store 下載",
+    "variant": "b",
+    "alt": "DailyMate：用句子學語言 — 每個主題都分，初中高三級 — 47 種語言任你學 — 學英文・日文・韓文會話",
+    "store": "https://apps.apple.com/tw/app/id6790418321?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate",
+    "review": {
+     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
+     "url": "https://apps.apple.com/app/id6790418321?action=write-review"
+    },
+    "keywords": [
+     "口說",
+     "出國",
+     "西班牙文",
+     "法文",
+     "德文",
+     "外語"
+    ],
+    "keyline": "學英文・日文・韓文會話",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "06a3d61baa456520",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "每個主題都分，初中高三級\n47 種語言任你學\n學英文・日文・韓文會話\nDailyMate：用句子學語言\n在 App Store 搜尋「DailyMate 用句子學語言」\nAndroid 版在 Google Play\n\n#學英文日文韓文會話 #口說 #出國 #西班牙文 #DailyMate用句子學語言\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6790418321?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate\nLite: https://apps.apple.com/app/id6794725568?ct=social_lite\nLite Google Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite&referrer=utm_source%3Dsocial_lite%26utm_campaign%3Ddailymatelite"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "dailymate/ja",
+    "locale": "ja",
+    "app": "dailymate",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/2oq7mt.mp4",
+    "hook": "音声で聞いて、自然な返しまで",
+    "name": "DailyMate：文で身につく語学",
+    "title": "音声で聞いて、自然な返しまで | 英会話・旅行フレーズを毎日一文 | DailyMate 文で身につく語学",
+    "tags": [
+     "#文で身につく語学",
+     "#実用",
+     "#フレーズ集",
+     "#日常会話",
+     "#DailyMate文で身につく語学"
+    ],
+    "caption": "音声で聞いて、自然な返しまで\nどのテーマも 3レベル\n英会話・旅行フレーズを毎日一文\nDailyMate：文で身につく語学\nApp Storeで「DailyMate 文で身につく語学」を検索\nAndroidはGoogle Playで\n\n#文で身につく語学 #実用 #フレーズ集 #日常会話 #DailyMate文で身につく語学",
+    "button": "App Storeで入手",
+    "variant": "c",
+    "alt": "DailyMate：文で身につく語学 — 音声で聞いて、自然な返しまで — どのテーマも 3レベル — 英会話・旅行フレーズを毎日一文",
+    "store": "https://apps.apple.com/jp/app/id6790418321?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate",
+    "review": {
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6790418321?action=write-review"
+    },
+    "keywords": [
+     "実用",
+     "フレーズ集",
+     "日常会話",
+     "韓国語",
+     "中国語",
+     "スペイン語"
+    ],
+    "keyline": "英会話・旅行フレーズを毎日一文",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "06a3d61baa456520",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "音声で聞いて、自然な返しまで\nどのテーマも 3レベル\n英会話・旅行フレーズを毎日一文\nDailyMate：文で身につく語学\nApp Storeで「DailyMate 文で身につく語学」を検索\nAndroidはGoogle Playで\n\n#文で身につく語学 #実用 #フレーズ集 #日常会話 #DailyMate文で身につく語学\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6790418321?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate\nLite: https://apps.apple.com/app/id6794725568?ct=social_lite\nLite Google Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite&referrer=utm_source%3Dsocial_lite%26utm_campaign%3Ddailymatelite"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "dailymate/ko",
+    "locale": "ko",
+    "app": "dailymate",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/0df4pg.mp4",
+    "hook": "주제마다 3단계 난이도",
+    "name": "DailyMate: 문장으로 배우는 언어",
+    "title": "주제마다 3단계 난이도 | 생활영어, 일본어, 중국어 회화 | DailyMate 문장으로 배우는 언어",
+    "tags": [
+     "#문장으로배우는언어",
+     "#영어회화",
+     "#영어공부",
+     "#일상회화",
+     "#DailyMate문장으로배우는언어"
+    ],
+    "caption": "주제마다 3단계 난이도\n배울 수 있는 언어 47개\n생활영어, 일본어, 중국어 회화\nDailyMate: 문장으로 배우는 언어\nApp Store에서 'DailyMate 문장으로 배우는 언어' 검색\nAndroid는 Google Play에서\n\n#문장으로배우는언어 #영어회화 #영어공부 #일상회화 #DailyMate문장으로배우는언어",
+    "button": "App Store에서 받기",
+    "variant": "b",
+    "alt": "DailyMate: 문장으로 배우는 언어 — 주제마다 3단계 난이도 — 배울 수 있는 언어 47개 — 생활영어, 일본어, 중국어 회화",
+    "store": "https://apps.apple.com/kr/app/id6790418321?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate",
+    "review": {
+     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
+     "url": "https://apps.apple.com/app/id6790418321?action=write-review"
+    },
+    "keywords": [
+     "영어회화",
+     "영어공부",
+     "일상회화",
+     "실전회화",
+     "상황별",
+     "예문"
+    ],
+    "keyline": "생활영어, 일본어, 중국어 회화",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "06a3d61baa456520",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "주제마다 3단계 난이도\n배울 수 있는 언어 47개\n생활영어, 일본어, 중국어 회화\nDailyMate: 문장으로 배우는 언어\nApp Store에서 'DailyMate 문장으로 배우는 언어' 검색\nAndroid는 Google Play에서\n\n#문장으로배우는언어 #영어회화 #영어공부 #일상회화 #DailyMate문장으로배우는언어\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6790418321?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlyn.dailymate&referrer=utm_source%3Dsocial%26utm_campaign%3Ddailymate\nLite: https://apps.apple.com/app/id6794725568?ct=social_lite\nLite Google Play: https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite&referrer=utm_source%3Dsocial_lite%26utm_campaign%3Ddailymatelite"
+    }
+   },
+   {
+    "kind": "clip",
     "key": "gmoney/en",
     "locale": "en",
     "app": "gmoney",
@@ -81159,7 +81225,7 @@
     "button": "Get it on the App Store",
     "variant": "b",
     "alt": "Mochi: Cute Checklist — Turkey, pie, groceries…tap and done — Tons of cute themes — Cozy To-Do List Widget, Chores",
-    "store": "https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=social&mt=8",
+    "store": "https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=social&mt=8&ppid=6882ef79-3248-4054-bc9d-23c10a0f6521",
     "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi",
     "review": {
      "label": "Already using this app? Rate or review it on the App Store",
@@ -81182,7 +81248,7 @@
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "Turkey, pie, groceries…tap and done\nTons of cute themes\nCozy To-Do List Widget, Chores\nMochi: Cute Checklist\nSearch “Mochi Cute Checklist” on the App Store\nAlso on Google Play\n\n#CozyToDoListWidget #Chores #Cute #MochiCuteChecklist\n\nGet it on the App Store: https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi"
+     "caption": "Turkey, pie, groceries…tap and done\nTons of cute themes\nCozy To-Do List Widget, Chores\nMochi: Cute Checklist\nSearch “Mochi Cute Checklist” on the App Store\nAlso on Google Play\n\n#CozyToDoListWidget #Chores #Cute #MochiCuteChecklist\n\nGet it on the App Store: https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=social&mt=8&ppid=6882ef79-3248-4054-bc9d-23c10a0f6521\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi"
     }
    },
    {
@@ -81647,19 +81713,19 @@
     "locale": "en",
     "app": "duowallpaperstudio_f",
     "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/7cf3b8e4e3.mp4",
-    "hook": "Add one line of your own text",
+    "hook": "Your photos stay on your device",
     "name": "Foldable Wallpaper Studio",
-    "title": "Add one line of your own text | Dual Screen Pairs for Duo | Foldable Wallpaper Studio",
+    "title": "Your photos stay on your device | Dual Screen Pairs for Duo | Foldable Wallpaper Studio",
     "tags": [
      "#Folding",
      "#Outer",
      "#Lockscreen",
      "#FoldableWallpaperStudio"
     ],
-    "caption": "Add one line of your own text\nYour photos stay on your device\nDual Screen Pairs for Duo\nSearch “Foldable Wallpaper Studio” on the App Store\nAlso on Google Play\n\n#Folding #Outer #Lockscreen #FoldableWallpaperStudio",
+    "caption": "Your photos stay on your device\nSaved as two images\nDual Screen Pairs for Duo\nSearch “Foldable Wallpaper Studio” on the App Store\nAlso on Google Play\n\n#Folding #Outer #Lockscreen #FoldableWallpaperStudio",
     "button": "Get it on the App Store",
     "variant": "b",
-    "alt": "Foldable Wallpaper Studio — Add one line of your own text — Your photos stay on your device — Dual Screen Pairs for Duo",
+    "alt": "Foldable Wallpaper Studio — Your photos stay on your device — Saved as two images — Dual Screen Pairs for Duo",
     "store": "https://apps.apple.com/us/app/id6824946559?pt=118326163&ct=social&mt=8",
     "play": "https://play.google.com/store/apps/details?id=com.alice51849.DuoWallpaperStudio&referrer=utm_source%3Dsocial%26utm_campaign%3Dduowallpaperstudio",
     "review": {
@@ -81683,7 +81749,7 @@
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "Add one line of your own text\nYour photos stay on your device\nDual Screen Pairs for Duo\nSearch “Foldable Wallpaper Studio” on the App Store\nAlso on Google Play\n\n#Folding #Outer #Lockscreen #FoldableWallpaperStudio\n\nGet it on the App Store: https://apps.apple.com/us/app/id6824946559?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DuoWallpaperStudio&referrer=utm_source%3Dsocial%26utm_campaign%3Dduowallpaperstudio"
+     "caption": "Your photos stay on your device\nSaved as two images\nDual Screen Pairs for Duo\nSearch “Foldable Wallpaper Studio” on the App Store\nAlso on Google Play\n\n#Folding #Outer #Lockscreen #FoldableWallpaperStudio\n\nGet it on the App Store: https://apps.apple.com/us/app/id6824946559?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.DuoWallpaperStudio&referrer=utm_source%3Dsocial%26utm_campaign%3Dduowallpaperstudio"
     }
    },
    {
@@ -81843,7 +81909,7 @@
     "button": "Get it on the App Store",
     "variant": "b",
     "alt": "Mochi: Cute Checklist — School, work, errands: one cute list — Tap to check it off — Cozy To-Do List Widget, Chores",
-    "store": "https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=social&mt=8",
+    "store": "https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=social&mt=8&ppid=bc6d9ed3-398d-48d2-9a4e-82ab53f81ea2",
     "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi",
     "review": {
      "label": "Already using this app? Rate or review it on the App Store",
@@ -81866,7 +81932,7 @@
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "School, work, errands: one cute list\nTap to check it off\nCozy To-Do List Widget, Chores\nMochi: Cute Checklist\nSearch “Mochi Cute Checklist” on the App Store\nAlso on Google Play\n\n#CozyToDoListWidget #Chores #Cute #MochiCuteChecklist\n\nGet it on the App Store: https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi"
+     "caption": "School, work, errands: one cute list\nTap to check it off\nCozy To-Do List Widget, Chores\nMochi: Cute Checklist\nSearch “Mochi Cute Checklist” on the App Store\nAlso on Google Play\n\n#CozyToDoListWidget #Chores #Cute #MochiCuteChecklist\n\nGet it on the App Store: https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=social&mt=8&ppid=bc6d9ed3-398d-48d2-9a4e-82ab53f81ea2\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi"
     }
    },
    {
@@ -82561,22 +82627,24 @@
    "mochi_suneung",
    "cvdesk",
    "studydown",
-   "dailymate",
-   "wifiaidlite"
+   "wifiaidlite",
+   "gmoneylite"
   ],
   "demote": [
    "moneytag",
-   "wordmate",
    "lumiletters",
+   "wordmate",
    "lumimath",
    "wordmatelite"
   ],
   "hook_winners": {
    "apps": {
     "aibriefpack/zh-Hant": "b",
+    "caldaily/en": "b",
     "claudeusagemini/de": "b",
     "claudeusagemini/en": "c",
     "cyca/en": "b",
+    "dailymate/en": "c",
     "easyam/en": "b",
     "gmoney/ja": "b",
     "ledmovingtext/de": "b",
@@ -82602,34 +82670,38 @@
     "de": {
      "hour": 15,
      "avg_views": 25.5,
-     "posts": 10,
+     "posts": 14,
      "hours": {
+      "0": 10.5,
       "7": 0.0,
+      "9": 24.5,
       "13": 1.5,
-      "15": 25.5
+      "15": 25.5,
+      "18": 21.5
      }
     },
     "en": {
      "hour": 9,
      "avg_views": 65.6,
-     "posts": 54,
+     "posts": 58,
      "hours": {
-      "0": 12.7,
+      "0": 13.7,
       "5": 0.0,
       "9": 65.6,
-      "15": 27.9,
-      "18": 27.1,
+      "15": 26.0,
+      "18": 27.8,
       "19": 0.0,
-      "22": 16.2
+      "20": 13.5,
+      "22": 13.7
      }
     },
     "ja": {
      "hour": 18,
      "avg_views": 67.0,
-     "posts": 28,
+     "posts": 29,
      "hours": {
       "1": 46.9,
-      "4": 26.7,
+      "4": 33.3,
       "5": 6.2,
       "7": 0.0,
       "9": 13.5,
@@ -82658,14 +82730,14 @@
     },
     "zh-Hant": {
      "hour": 12,
-     "avg_views": 32.1,
-     "posts": 52,
+     "avg_views": 30.9,
+     "posts": 55,
      "hours": {
-      "1": 10.2,
-      "5": 0.8,
+      "1": 10.3,
+      "5": 0.7,
       "7": 0.1,
       "9": 0.3,
-      "12": 32.1,
+      "12": 30.9,
       "14": 0.0
      }
     }
@@ -82698,6 +82770,6 @@
     }
    }
   },
-  "updated_at": "2026-11-22T06:30:32Z"
+  "updated_at": "2026-11-23T07:21:49Z"
  }
 }

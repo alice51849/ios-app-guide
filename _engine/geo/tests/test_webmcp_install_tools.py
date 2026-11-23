@@ -199,6 +199,15 @@ class WebMcpInstallToolsTests(unittest.TestCase):
             assert_blocked_page(self, path.read_text())
             assert_blocked_record(self, _payload(path.read_text()), ("app_store_url",))
 
+    def test_page_campaign_map_only_lists_locale_app_pages(self):
+        # 交辦 G5：apps/… 指南頁的頁專屬碼（data/app_page_campaigns.json）沒有 WebMCP 安裝資料，
+        # 不進安裝工具的碼表；腳本內容維持只有 <locale>/<key>.html 的頁碼。
+        match = re.search(r"const pageCampaigns = (\{.*?\});", tools.ASSET_SOURCE)
+        self.assertIsNotNone(match)
+        self.assertEqual(
+            {"iag_tripplanet_us_kidsgames": ["en-US", "6787193643"]}, json.loads(match[1])
+        )
+
     def test_missing_locale_page_fails_closed(self):
         with tempfile.TemporaryDirectory() as tmp:
             with self.assertRaisesRegex(

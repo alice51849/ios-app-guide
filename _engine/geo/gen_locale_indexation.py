@@ -267,8 +267,20 @@ def sitemap_has_entries(path: Path) -> bool:
 def sitemap_candidates(
     pages: Path,
     tree: SiteTreeIndex | None = None,
+    *,
+    include_index_excluded: bool = False,
 ) -> list[Path]:
+    """可掛進網站地圖索引的子地圖。
+
+    路線 99（11-21）把 oembed／api 子地圖移出索引、檔案保留
+    （INDEX_EXCLUDED_SITEMAPS），所以它們不是索引候選。清死連結仍要掃它們：
+    prune_sitemaps 以 include_index_excluded=True 呼叫，但它們的網址不算覆蓋，
+    可索引的頁才會落到 sitemap_orphans.xml。
+    """
     excluded_names = {"sitemap_index.xml", ORPHAN_SITEMAP, PRIORITY_SITEMAP}
+    excluded_relatives = (
+        frozenset() if include_index_excluded else INDEX_EXCLUDED_SITEMAPS
+    )
     candidates = (
         tuple(
             pages / path.relative_to(tree.root)
@@ -284,6 +296,7 @@ def sitemap_candidates(
         candidate
         for candidate in sorted(candidates)
         if candidate.name not in excluded_names
+        and candidate.relative_to(pages).as_posix() not in excluded_relatives
         and not indexation_priority.is_unpublished_relative(
             candidate.relative_to(pages).as_posix()
         )
@@ -303,9 +316,11 @@ def prune_sitemaps(
     removed_unpublished = 0
     emptied: set[str] = set()
     kept_urls: set[str] = set()
-    for path in sitemap_candidates(pages, tree):
+    for path in sitemap_candidates(pages, tree, include_index_excluded=True):
         source = path.read_text(encoding="utf-8")
         stats = {"dead": 0, "ghost": 0, "noindex": 0, "unpublished": 0, "kept": 0}
+        # 移出索引的子地圖照樣清死連結，但它的網址不算已被網站地圖覆蓋。
+        file_kept: set[str] = set()
 
         def keep(match: re.Match[str]) -> str:
             body = match.group(0)
@@ -315,7 +330,7 @@ def prune_sitemaps(
             content_rel = url_to_content_relative(loc.group(1))
             if content_rel is None:
                 stats["kept"] += 1
-                kept_urls.add(loc.group(1))
+                file_kept.add(loc.group(1))
                 return body
             locale = (
                 content_rel.split("/")[0]
@@ -341,13 +356,15 @@ def prune_sitemaps(
                 stats["noindex"] += 1
                 return ""
             stats["kept"] += 1
-            kept_urls.add(loc.group(1))
+            file_kept.add(loc.group(1))
             # A gated page must not stay in a kept URL's hreflang cluster.
             return scaled_content_gate.strip_gated_sitemap_alternates(
                 body, gated, SITE
             )
 
         updated = LOC_BLOCK_RE.sub(keep, source)
+        if path.relative_to(pages).as_posix() not in INDEX_EXCLUDED_SITEMAPS:
+            kept_urls.update(file_kept)
         removed_dead += stats["dead"]
         removed_ghost += stats["ghost"]
         removed_noindex += stats["noindex"]

@@ -22380,6 +22380,14 @@ class GeneratorTests(unittest.TestCase):
         # registry this copy runs against has it, like the entries above.
         if "tripbeecute" in APPS:
             free_with_unlock.add("tripbeecute")
+        # JellyDay: free download (iTunes Lookup 2026-11-23: US/GB/TW/JP price
+        # 0) whose en-US description says "Some features are unlocked with a
+        # one-time in-app purchase", with no subscription wording; evidence
+        # receipt reports/test_health/reviews/
+        # jellyday_itunes_purchase_readback_2026-11-23.md (Growth Engine).
+        # Expected only once the registry this copy runs against has it.
+        if "jellyday" in APPS:
+            free_with_unlock.add("jellyday")
         # Meow Party (foldparty): USD 5.99 paid download; ASC shows 0 in-app
         # purchases and 0 subscription groups (read-only check 2026-11-06).
         # Expected only once the registry this copy runs against has it.

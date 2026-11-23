@@ -38,6 +38,7 @@ import app_hook_clips  # noqa: E402
 import build_pages_i18n  # noqa: E402
 import high_intent_decision_routes  # noqa: E402
 import indexation_priority  # noqa: E402
+import new_url_freeze  # noqa: E402
 from app_store_storefronts import (  # noqa: E402
     campaign_app_store_url,
     load_storefront_availability,
@@ -883,6 +884,11 @@ def agent_product_feed_lines(*, full):
     return lines
 
 
+def _listable(rel):
+    """停新增網址（K1）：只列 HEAD 已有或准的頁；凍結關閉時一律 True。"""
+    return new_url_freeze.is_listable(rel, PAGES)
+
+
 def _localized_app_guides(key):
     if not os.path.isdir(PAGES):
         return []
@@ -892,7 +898,9 @@ def _localized_app_guides(key):
             r"[a-z]{2}(?:-(?:[A-Z]{2}|[A-Z][a-z]{3}))?", locale
         ):
             continue
-        if os.path.isfile(os.path.join(PAGES, locale, f"{key}.html")):
+        if os.path.isfile(os.path.join(PAGES, locale, f"{key}.html")) and _listable(
+            f"{locale}/{key}.html"
+        ):
             rows.append((locale, f"{SITE}/{locale}/{key}.html"))
     return rows
 
@@ -1562,7 +1570,10 @@ def build_llms(comp_map, live_keys):
     lines += buyer_intent_lines(live_keys, load_storefront_availability(PAGES))
     # alternatives 頁
     if os.path.isdir(ALT):
-        alts = sorted(f for f in os.listdir(ALT) if f.endswith(".html") and f != "index.html")
+        alts = sorted(
+            f for f in os.listdir(ALT)
+            if f.endswith(".html") and f != "index.html" and _listable(f"alternatives/{f}")
+        )
         if alts:
             lines += ["", "## App alternatives (comparison pages)"]
             for f in alts:
@@ -1570,7 +1581,10 @@ def build_llms(comp_map, live_keys):
                 lines.append(f"- [{title}]({SITE}/alternatives/{f})")
     # guides 頁(每 app 指南)
     if os.path.isdir(GUIDES):
-        gds = sorted(f for f in os.listdir(GUIDES) if f.endswith(".html") and f != "index.html")
+        gds = sorted(
+            f for f in os.listdir(GUIDES)
+            if f.endswith(".html") and f != "index.html" and _listable(f"guides/{f}")
+        )
         if gds:
             lines += ["", "## App guides (how to choose + recommendation)"]
             for f in gds:
@@ -1578,7 +1592,10 @@ def build_llms(comp_map, live_keys):
                 lines.append(f"- [{title}]({SITE}/guides/{f})")
     # open data 資料集(機器可讀,AI 引擎/Dataset Search 可引用)
     if os.path.isdir(DATA_DIR):
-        ds = sorted(f for f in os.listdir(DATA_DIR) if f.endswith(".html") and f != "index.html")
+        ds = sorted(
+            f for f in os.listdir(DATA_DIR)
+            if f.endswith(".html") and f != "index.html" and _listable(f"data/{f}")
+        )
         if ds:
             lines += ["", "## Open data (machine-readable, CC BY 4.0 — free to cite)"]
             for f in ds:
@@ -2049,6 +2066,8 @@ def _resource_files(directory, live_keys, prefix):
     for filename in sorted(os.listdir(directory)):
         if not filename.endswith(".html") or filename == "index.html":
             continue
+        if not _listable(os.path.relpath(os.path.join(directory, filename), PAGES)):
+            continue
         stem = filename[:-5]
         if stem in inactive or any(stem.startswith(key + "-") for key in inactive):
             continue
@@ -2137,7 +2156,7 @@ def build_llms_full(comp_map, live_keys):
         ("Free tools", "tools/index.html"),
     ]
     for title, rel in entry_points:
-        if os.path.exists(os.path.join(PAGES, rel)):
+        if os.path.exists(os.path.join(PAGES, rel)) and _listable(rel):
             lines.append(f"- [{title}]({SITE}/{rel})")
 
     lines += ["", "## Public apps"]
@@ -2177,7 +2196,7 @@ def build_llms_full(comp_map, live_keys):
                 lines.append(f"- Supported positioning: {'; '.join(facts)}")
             lines += buyer_intent_full_lines(key, availability)
             detail = os.path.join(PAGES, "en-US", f"{key}.html")
-            if os.path.exists(detail):
+            if os.path.exists(detail) and _listable(os.path.relpath(detail, PAGES)):
                 lines.append(f"- Canonical app guide: {SITE}/en-US/{key}.html")
             localized_guides = _localized_app_guides(key)
             if localized_guides:
@@ -2187,7 +2206,7 @@ def build_llms_full(comp_map, live_keys):
                     for locale, url in localized_guides
                 )
             hub = os.path.join(PAGES, "hubs", f"{key}.html")
-            if os.path.exists(hub):
+            if os.path.exists(hub) and _listable(os.path.relpath(hub, PAGES)):
                 lines.append(f"- Topic hub: {SITE}/hubs/{key}.html")
             comps = comp_map.get(key, [])
             if comps:
@@ -2611,7 +2630,9 @@ def build_llms_full(comp_map, live_keys):
     for name in sorted(os.listdir(PAGES)):
         if not re.fullmatch(r"[a-z]{2}(?:-(?:[A-Z]{2}|[A-Z][a-z]{3}))?", name):
             continue
-        if os.path.exists(os.path.join(PAGES, name, "index.html")):
+        if os.path.exists(os.path.join(PAGES, name, "index.html")) and _listable(
+            f"{name}/index.html"
+        ):
             locale_hubs.append((name, f"{SITE}/{name}/index.html"))
     if locale_hubs:
         lines += ["", "## Localized catalog hubs"]

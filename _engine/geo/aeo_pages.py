@@ -38,6 +38,7 @@ from answer_text import answer_outcome  # noqa: E402
 import gen_store_attribution  # noqa: E402
 from site_config import PUBLIC_SITE  # noqa: E402
 import purchase_types  # noqa: E402
+import new_url_freeze  # noqa: E402
 
 PAGES = os.environ.get("GEO_PAGES", os.path.join(HERE, "pages"))
 ALT = os.path.join(PAGES, "alternatives")
@@ -645,9 +646,8 @@ CURATED_FALLBACK = {
             "day planner with a live activity countdown and lock screen widget",
             "visual planner with no account and no ads",
         ],
-        # Pending first release (61_JellyDay, ASC 6835673714; Google Play
-        # already live); listed ahead so the roster check passes the day it
-        # goes live. Competitor titles read off the US iTunes Search API
+        # Live on the App Store since 2026-11-21 (61_JellyDay, Apple ID
+        # 6835673714) and on Google Play since 2026-11-18. Competitor titles read off the US iTunes Search API
         # (country=us, entity=software) for "visual daily planner" (Todewy #2,
         # Thruday #3), "routine timer" (Routinery #1) and "timeline planner"
         # (Timepage #4) on 2026-11-21T10:17Z. Titles carrying cute / to-do /
@@ -1555,6 +1555,29 @@ def prune_stale_pages(managed_keys, expected_files):
     return removed
 
 
+def write_alternative(slug, html_doc):
+    """寫比較頁；目標檔不存在且停新增網址不准時不寫、回 False（K1 源頭擋）。"""
+    path = os.path.join(ALT, f"{slug}.html")
+    if not os.path.exists(path) and not new_url_freeze.allow_new_page(
+        f"alternatives/{slug}.html", PAGES
+    ):
+        return False
+    with open(path, "w", encoding="utf-8") as handle:
+        handle.write(html_doc)
+    return True
+
+
+def listable_alternatives():
+    """索引頁與網站地圖只列 HEAD 已有或停新增網址准的比較頁。"""
+    return [
+        f
+        for f in os.listdir(ALT)
+        if f.endswith(".html")
+        and f != "index.html"
+        and new_url_freeze.is_listable(f"alternatives/{f}", PAGES)
+    ]
+
+
 def generation_scope(requested_apps, by_key, public_keys):
     """Return apps we can regenerate and the matching safe pruning scope."""
     requested = requested_apps or list(by_key)
@@ -1631,24 +1654,30 @@ def main():
     )
     keys, managed_keys = generation_scope(args.apps, by_key, public_keys)
     os.makedirs(ALT, exist_ok=True)
-    written, urls = [], []
+    written, urls, frozen = [], [], []
     for k in keys:
         r = by_key[k]
         gaps = r.get("gap_queries", [])
         comps = [c for c, _ in r.get("top_competitors", [])][:args.top]
         for c in comps:
             slug, html_doc = alt_page(k, c, gaps)
-            open(os.path.join(ALT, f"{slug}.html"), "w", encoding="utf-8").write(html_doc)
+            if not write_alternative(slug, html_doc):
+                frozen.append(f"{slug}.html")
+                continue
             written.append(f"{slug}.html"); urls.append(f"{SITE}/alternatives/{slug}.html")
             for path in retitle_localized_alternatives(k, slug, disp(c)):
                 print(f"  ↻ 在地化標題改以 App 為主體: {path.relative_to(PAGES)}")
         slug, html_doc = hub_page(k, gaps)
-        open(os.path.join(ALT, f"{slug}.html"), "w", encoding="utf-8").write(html_doc)
-        written.append(f"{slug}.html"); urls.append(f"{SITE}/alternatives/{slug}.html")
+        if write_alternative(slug, html_doc):
+            written.append(f"{slug}.html"); urls.append(f"{SITE}/alternatives/{slug}.html")
+        else:
+            frozen.append(f"{slug}.html")
         print(f"  ✓ {APPS[k]['name']}: {len(comps)} 競品頁 + 1 hub")
 
     removed = prune_stale_pages(managed_keys, set(written))
-    all_files = [f for f in os.listdir(ALT) if f.endswith(".html") and f != "index.html"]
+    if frozen:
+        print(f"停新增網址：略過 {len(frozen)} 個新比較頁（new_url_freeze）")
+    all_files = listable_alternatives()
     build_index(all_files)
     write_sitemap(all_files)
     urls.append(f"{SITE}/alternatives/index.html")

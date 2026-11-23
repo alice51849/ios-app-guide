@@ -45,6 +45,7 @@ import gen_store_attribution  # noqa: E402
 ANSWER_CAMPAIGN = gen_store_attribution.campaign_token("answers/page.html")
 from appstore_live import live_app_keys  # noqa: E402
 import queries  # noqa: E402
+import new_url_freeze  # noqa: E402
 import answer_facts  # noqa: E402
 import sync_standard_site  # noqa: E402
 from answer_text import answer_outcome, clause_snippet, concise_meta  # noqa: E402
@@ -1319,6 +1320,12 @@ def create_page(
     path = answers_dir / f"{slug}.html"
     if path.exists() and not force:
         return None
+    if not path.exists() and not new_url_freeze.allow_new_page(
+        f"answers/{slug}.html", answers_dir.parent
+    ):
+        # 停新增網址（K1）：源頭不產新答案頁，也就不會進 index 與答案網站地圖。
+        print(f"FROZEN {slug}: new answer URL blocked by new_url_freeze", flush=True)
+        return None
     # 會換成免費門的頁,身份與事實一起用免費兄弟版產生(不是換門後再改字)。
     key = answer_key(question, key)
     try:
@@ -1388,7 +1395,9 @@ def regenerate_index(pages_root: Path | None = None) -> None:
     pages = [
         p
         for p in answers_dir.glob("*.html")
-        if p.name != "index.html" and not is_redirect_page(p)
+        if p.name != "index.html"
+        and not is_redirect_page(p)
+        and new_url_freeze.is_listable(p, pages_root)
     ]
     microformats_reconciled = sum(
         reconcile_answer_microformats(page) for page in pages
@@ -1464,11 +1473,11 @@ def write_sitemap(pages_root: Path | None = None) -> None:
     pages_dir = (pages_root or PAGES_ROOT).resolve()
     entries: list[tuple[str, Path]] = []
     for p in sorted(pages_dir.glob("answers/*.html")):
-        if not is_noindex_page(p):
+        if not is_noindex_page(p) and new_url_freeze.is_listable(p, pages_dir):
             entries.append((f"{SITE}/answers/{p.name}", p))
     for p in sorted(pages_dir.glob("*/answers/*.html")):
         rel = p.relative_to(pages_dir).as_posix()
-        if not is_noindex_page(p):
+        if not is_noindex_page(p) and new_url_freeze.is_listable(rel, pages_dir):
             entries.append((f"{SITE}/{rel}", p))
 
     def _lm(p: Path) -> str:

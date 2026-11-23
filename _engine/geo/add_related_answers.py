@@ -9,6 +9,7 @@ and each sibling's <h1> for the link text.
 """
 import os, re, glob, html, sys
 from site_config import PUBLIC_SITE  # noqa: E402
+import new_url_freeze  # noqa: E402
 
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "pages")
 ANS = os.path.join(ROOT, "answers")
@@ -100,6 +101,9 @@ def main():
     for f in sorted(glob.glob(os.path.join(ans_dir, "*.html"))):
         slug = os.path.basename(f)[:-5]
         if slug == "index":
+            continue
+        # 停新增網址（K1）：只列 HEAD 已有或准的頁，不連到當輪新產、之後會被刪的頁。
+        if not new_url_freeze.is_listable(os.path.relpath(f, ROOT), ROOT):
             continue
         h = open(f, encoding="utf-8").read()
         a = appid(h)

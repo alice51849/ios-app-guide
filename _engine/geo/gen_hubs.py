@@ -43,6 +43,7 @@ from portfolio_app_finder import RTL_LOCALES, UI  # noqa: E402
 import gen_mobile_app_identity  # noqa: E402
 import gen_store_attribution  # noqa: E402
 import queries  # noqa: E402
+import new_url_freeze  # noqa: E402
 import rank_opportunity_pages  # noqa: E402
 from site_config import PUBLIC_SITE  # noqa: E402
 
@@ -95,7 +96,8 @@ def page_title(path, fallback):
 
 
 def exists(rel):
-    return os.path.exists(os.path.join(PAGES, rel))
+    # 停新增網址（K1）：連結只指向 HEAD 已有或准的頁；凍結關閉時同 os.path.exists。
+    return os.path.exists(os.path.join(PAGES, rel)) and new_url_freeze.is_listable(rel, PAGES)
 
 
 def authority_apps():
@@ -719,7 +721,7 @@ def build_hub(key):
     if exists(f"stories/{key}.html"):
         res.append((f"{SITE}/stories/{key}.html", f"{name} — visual story"))
     for f in sorted(os.listdir(os.path.join(PAGES, "alternatives"))) if os.path.isdir(os.path.join(PAGES, "alternatives")) else []:
-        if f.startswith(key + "-") and f.endswith(".html"):
+        if f.startswith(key + "-") and f.endswith(".html") and exists(f"alternatives/{f}"):
             res.append((f"{SITE}/alternatives/{f}", page_title(os.path.join(PAGES, "alternatives", f), f)))
     res_html = "".join(f'<a href="{e(u)}">{e(t)}</a>' for u, t in res) or ""
     resources = list(dict([*ans, *res]).items())

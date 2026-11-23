@@ -1,11 +1,11 @@
 {
- "generated": "2026-11-22T19:47:54Z",
+ "generated": "2026-11-23T01:49:42Z",
  "mode": "apply",
  "counts": {
   "ok_reply": 86,
-  "ok_backfilled_earlier": 121,
+  "ok_backfilled_earlier": 123,
   "unknown_app": 47,
-  "ok_store_only": 610,
+  "ok_store_only": 608,
   "backfilled": 2,
   "ok_bio_link": 68,
   "ok_caption": 4,
@@ -2239,11 +2239,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctfssejKFg",
    "date": "2026-08-31",
    "app": "mochidonestamp",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "Mochi DoneStamp: Last Time Remember when you did it Do it, tap it, and get on with your day. Remember every recurring or occasional job—from",
    "why": "url+brand",
    "ios_id": "6790800323",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "18034102115857451",
+   "at": "2026-11-23T01:47:18Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -2357,16 +2362,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/Dctf9WTies-",
    "date": "2026-08-31",
    "app": "onepageppt",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "OnePage PPT: AI Slide Maker Turn notes into one slide Paste notes, a screenshot or a PDF and get one polished 16:9 slide with real charts. P",
    "why": "url+brand",
    "ios_id": "6798814385",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "18111118814225719",
-   "at": "2026-11-22T19:45:20Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",
@@ -2446,16 +2446,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/Dctf4HzlXBI",
    "date": "2026-08-31",
    "app": "notesstudio100",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "100 Notes Studio: Pen & Paper Handwriting, PDF & Study Write and draw with 29 expressive tools, mark up PDFs, explore 100 styles and revise ",
    "why": "url+brand",
    "ios_id": "6798813048",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "18120932119798074",
-   "at": "2026-11-22T19:45:20Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",
@@ -4373,11 +4368,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctfyUvifP-",
    "date": "2026-08-31",
    "app": "moneytag",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "MoneyTag: Income & Expenses Projects · Tags · Report A side hustle, a market stall, a rental, the club kitty — each one keeps its own books,",
    "why": "url+brand",
    "ios_id": "6801956402",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "17905443009372491",
+   "at": "2026-11-23T01:47:18Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",

@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-11-22",
-  "content_digest": "a1a81c501d6494a758276411941a38da0e7164b5ce173955eec730ac0b593ef0",
+  "date_modified": "2026-11-23",
+  "content_digest": "99a673b5e6cff2de2f9ddf24c28a0f1f6b6271678009a1847202cf5eae47f4e2",
   "locale": "ta-IN",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -1866,9 +1866,7 @@
         "passport size",
         "passport size photo",
         "biometric photo",
-        "document photo",
-        "white background",
-        "background remover"
+        "document photo"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1902,8 +1900,6 @@
         "pp size",
         "stamp size",
         "photo crop",
-        "background change",
-        "வெள்ளை பின்னணி",
         "print",
         "cm",
         "dpi",

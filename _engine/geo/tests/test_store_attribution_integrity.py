@@ -145,6 +145,89 @@ class AttributionIntegrityTests(unittest.TestCase):
         )
         self.assertEqual(f"https://apps.apple.com/us/app/id{APP_ID}?pt={PROVIDER}&ct=geo_pick&mt=8", other)
 
+    # 交辦 G5（2026-11-23）：JellyDay 指南站七頁的頁專屬碼由資料表 data/app_page_campaigns.json 保留，
+    # 每日重產不再蓋成 geo_pick；同目錄其他頁照舊 geo_pick。
+    JELLYDAY_PAGE_CAMPAIGNS = {
+        "apps/jellyday/index.html": ("sup_jellyday_en_1122", "us"),
+        "apps/jellyday/l/ja/index.html": ("sup_jellyday_ja_1122", "jp"),
+        "apps/jellyday/l/ko/index.html": ("sup_jellyday_ko_1122", "kr"),
+        "apps/jellyday/l/zh-Hans/index.html": ("sup_jellyday_zhhans_1122", "cn"),
+        "apps/jellyday/l/zh-Hant/index.html": ("sup_jellyday_zhhant_1122", "tw"),
+        "apps/jellyday/visual-daily-planner-timeline.html": ("sqb1121_jellyday_us_timeline", "us"),
+        "apps/jellyday/l/zh-Hant/visual-daily-planner-timeline.html": ("sqb1121_jellyday_tw_timeline", "tw"),
+    }
+
+    def test_jellyday_guide_pages_keep_page_specific_campaign_from_data_table(self):
+        jelly_id = LIVE_APPS["jellyday"]
+        table = attribution.load_app_page_campaigns()
+        self.assertEqual(
+            {page: (code, jelly_id) for page, (code, _) in self.JELLYDAY_PAGE_CAMPAIGNS.items()}, table,
+        )
+        for page, (code, _) in self.JELLYDAY_PAGE_CAMPAIGNS.items():
+            self.assertEqual((code, jelly_id), attribution.APP_PAGE_CAMPAIGNS[page])
+            self.assertEqual(code, attribution.campaign_token(page))
+            self.assertTrue(attribution.app_bound_campaign(code, jelly_id))
+            self.assertFalse(attribution.app_bound_campaign(code, APP_ID))
+        # 只動這七頁：同款其他頁、決策頁、別款頁照舊。
+        for page in (
+            "apps/jellyday/privacy.html", "apps/jellyday/l/ja/support.html",
+            "apps/jellyday/decision/l/en-US/index.html", "apps/mochi/index.html",
+            "apps/jellyday/l/en-GB/index.html",
+        ):
+            self.assertEqual("geo_pick", attribution.campaign_token(page))
+        # 既有 Trip Planet 頁專屬碼不受資料表影響。
+        self.assertEqual("iag_tripplanet_us_kidsgames", attribution.campaign_token("en-US/tripplanet.html"))
+
+    def test_jellyday_guide_pages_survive_daily_restamp(self):
+        jelly_id = LIVE_APPS["jellyday"]
+        availability = {country: frozenset(LIVE_APPS.values()) for country in stores.LOCALE_STOREFRONTS.values()}
+        for page, (code, country) in self.JELLYDAY_PAGE_CAMPAIGNS.items():
+            # 重產前已被蓋成 geo_pick 的線上樣子，與一條別款連結。
+            source = (
+                '<html lang="en"><body>'
+                f'<a href="https://apps.apple.com/{country}/app/id{jelly_id}?pt={PROVIDER}&amp;ct=geo_pick&amp;mt=8">Get</a>'
+                f'<a href="https://apps.apple.com/{country}/app/id{APP_ID}?pt={PROVIDER}&amp;ct=geo_pick&amp;mt=8">Other</a>'
+                '</body></html>'
+            )
+            target = self.pages / page
+            target.parent.mkdir(parents=True, exist_ok=True)
+            target.write_text(source)
+        decision = self.pages / "apps/jellyday/decision/l/en-US/index.html"
+        decision.parent.mkdir(parents=True)
+        decision.write_text(
+            '<html lang="en-US"><body>'
+            f'<a href="https://apps.apple.com/us/app/id{jelly_id}?pt={PROVIDER}&amp;mt=8">Get</a>'
+            '</body></html>'
+        )
+        with mock.patch.object(attribution, "load_storefront_availability", return_value=availability):
+            attribution.generate(self.pages, check=False)
+            for page, (code, country) in self.JELLYDAY_PAGE_CAMPAIGNS.items():
+                stamped = (self.pages / page).read_text()
+                self.assertIn(f"id{jelly_id}?pt={PROVIDER}&amp;ct={code}&amp;mt=8", stamped, page)
+                self.assertIn(f"id{APP_ID}?pt={PROVIDER}&amp;ct=geo_pick&amp;mt=8", stamped, page)
+                self.assertEqual(1, stamped.count("ct=geo_pick"), page)
+            # 同款決策頁（不在表內）照舊出 geo_pick。
+            self.assertIn("ct=geo_pick", decision.read_text())
+            self.assertNotIn("sup_jellyday", decision.read_text())
+            # 第二次重產不變（冪等）。
+            before = {page: (self.pages / page).read_text() for page in self.JELLYDAY_PAGE_CAMPAIGNS}
+            attribution.generate(self.pages, check=False)
+            self.assertEqual(before, {page: (self.pages / page).read_text() for page in before})
+
+    def test_app_page_campaign_table_rejects_bad_entries(self):
+        for entry in (
+            {"campaign": "bad-code", "app_id": "6835673714"},
+            {"campaign": "x" * (attribution.MAX_TOKEN + 1), "app_id": "6835673714"},
+            {"campaign": "ok_code", "app_id": "jellyday"},
+        ):
+            path = self.pages / "table.json"
+            path.write_text(json.dumps({"pages": {"apps/x/index.html": entry}}))
+            with self.assertRaises(ValueError):
+                attribution.load_app_page_campaigns(path)
+        path.write_text(json.dumps({"pages": {"apps/x/": {"campaign": "ok_code", "app_id": "6835673714"}}}))
+        with self.assertRaises(ValueError):
+            attribution.load_app_page_campaigns(path)
+
     def test_full_live_roster_50_locales_across_all_text_delivery_formats(self):
         import portfolio_app_catalog_api as api
         import gen_github_discovery_readmes as discovery

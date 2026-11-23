@@ -234,6 +234,35 @@ SERIES_PAGE_CAMPAIGNS = {
 APP_PAGE_CAMPAIGNS = {
     "en-US/tripplanet.html": ("iag_tripplanet_us_kidsgames", "6787193643"),
 }
+# 其餘既有頁的頁專屬碼放資料表 data/app_page_campaigns.json（鍵＝頁路徑），每日重產照表出碼、
+# 不再蓋成 geo_pick（交辦 G5，2026-11-23：JellyDay 指南站七頁）。表壞就整個停，不靜默退回 geo_pick。
+APP_PAGE_CAMPAIGNS_PATH = HERE / "data" / "app_page_campaigns.json"
+
+
+def load_app_page_campaigns(path: Path = APP_PAGE_CAMPAIGNS_PATH) -> dict[str, tuple[str, str]]:
+    """頁路徑 -> (碼, App ID)，從資料表讀入並驗證格式。"""
+    pages = json.loads(path.read_text(encoding="utf-8"))["pages"]
+    table: dict[str, tuple[str, str]] = {}
+    for page, entry in pages.items():
+        campaign, app_id = entry["campaign"], entry["app_id"]
+        if (
+            not page.endswith(".html") or page.startswith("/") or "//" in page
+            or not campaign or CAMPAIGN_SAFE_RE.search(campaign) or len(campaign) > MAX_TOKEN
+            or not re.fullmatch(r"\d{6,12}", app_id)
+        ):
+            raise ValueError(f"Invalid app page campaign entry: {page}")
+        table[page] = (campaign, app_id)
+    return table
+
+
+for _page, _entry in load_app_page_campaigns().items():
+    if _page in APP_PAGE_CAMPAIGNS:
+        raise ValueError(f"Duplicate app page campaign page: {_page}")
+    APP_PAGE_CAMPAIGNS[_page] = _entry
+_codes = [code for code, _ in APP_PAGE_CAMPAIGNS.values()]
+if len(_codes) != len(set(_codes)):
+    raise ValueError("App page campaign codes must be unique per page")
+del _page, _entry, _codes
 APP_BOUND_CAMPAIGNS = {"duo_img": "6824946559", **WEB_TOOL_PILOT_CAMPAIGNS, **WEB_HOOK_CAMPAIGNS,
                        **WEB_GALLERY_CAMPAIGNS, **SERIES_PAGE_CAMPAIGNS,
                        **{code: app_id for code, app_id in APP_PAGE_CAMPAIGNS.values()}}

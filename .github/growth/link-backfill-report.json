@@ -1,11 +1,11 @@
 {
- "generated": "2026-11-23T01:49:42Z",
+ "generated": "2026-11-23T12:57:24Z",
  "mode": "apply",
  "counts": {
-  "ok_reply": 86,
-  "ok_backfilled_earlier": 123,
+  "ok_reply": 87,
+  "ok_backfilled_earlier": 125,
   "unknown_app": 47,
-  "ok_store_only": 608,
+  "ok_store_only": 606,
   "backfilled": 2,
   "ok_bio_link": 68,
   "ok_caption": 4,
@@ -13,6 +13,18 @@
   "missing": 3
  },
  "rows": [
+  {
+   "channel": "threads",
+   "id": "18652707736024939",
+   "permalink": "https://www.threads.com/@hourstag.app/post/DgEY0I3jVEd",
+   "date": "2026-11-23",
+   "app": "mochi",
+   "status": "ok_reply",
+   "text": "Tiny night routine that fixed my mornings: Before bed I write tomorrow's three things in a cute checklist and set a reminder for the first o",
+   "why": "trial",
+   "ios_id": "6785004775",
+   "locale": "en-US"
+  },
   {
    "channel": "threads",
    "id": "18181840021450612",
@@ -2239,16 +2251,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctfssejKFg",
    "date": "2026-08-31",
    "app": "mochidonestamp",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "Mochi DoneStamp: Last Time Remember when you did it Do it, tap it, and get on with your day. Remember every recurring or occasional job—from",
    "why": "url+brand",
    "ios_id": "6790800323",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "18034102115857451",
-   "at": "2026-11-23T01:47:18Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",
@@ -3260,11 +3267,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctfhWqAnrZ",
    "date": "2026-08-31",
    "app": "maskmyfile",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "Mask My File: Remove Your Info Hide private details to share Permanently hide private details on your device before sharing. Reopen and chec",
    "why": "url+brand",
    "ios_id": "6792850916",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "18360999625222057",
+   "at": "2026-11-23T12:54:50Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -4368,16 +4380,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctfyUvifP-",
    "date": "2026-08-31",
    "app": "moneytag",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "MoneyTag: Income & Expenses Projects · Tags · Report A side hustle, a market stall, a rental, the club kitty — each one keeps its own books,",
    "why": "url+brand",
    "ios_id": "6801956402",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "17905443009372491",
-   "at": "2026-11-23T01:47:18Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",
@@ -4719,11 +4726,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/Dctfm75EqVe",
    "date": "2026-08-31",
    "app": "mochi",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "Mochi: Cute Checklist Plan your day softly The to-do list you'll actually enjoy. Cozy, cute, and so satisfying to tap complete — free, no ad",
    "why": "url+brand",
    "ios_id": "6785004775",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "18020317712748008",
+   "at": "2026-11-23T12:54:50Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",

@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-22T10:15:23Z",
+ "updated_at": "2026-11-23T11:13:15Z",
  "targets": [
   {
    "app_id": "6785004775",
@@ -106,6 +106,14 @@
    "leader_ratings": 0
   },
   {
+   "app_id": "6778748533",
+   "country": "jp",
+   "locale": "ja",
+   "keyword": "アルファベット プリント",
+   "rank": 2,
+   "leader_ratings": 0
+  },
+  {
    "app_id": "6787193643",
    "country": "jp",
    "locale": "ja",
@@ -138,14 +146,6 @@
    "leader_ratings": 0
   },
   {
-   "app_id": "6818607603",
-   "country": "tw",
-   "locale": "zh-Hant",
-   "keyword": "ai 用量",
-   "rank": 2,
-   "leader_ratings": 0
-  },
-  {
    "app_id": "6787193643",
    "country": "tw",
    "locale": "zh-Hant",
@@ -154,10 +154,26 @@
    "leader_ratings": 0
   },
   {
+   "app_id": "6773017109",
+   "country": "us",
+   "locale": "en-US",
+   "keyword": "zhuyin for kids",
+   "rank": 2,
+   "leader_ratings": 0
+  },
+  {
    "app_id": "6814035888",
    "country": "cz",
    "locale": "cs",
    "keyword": "pohotovostní režim",
+   "rank": 2,
+   "leader_ratings": 1
+  },
+  {
+   "app_id": "6785004775",
+   "country": "de",
+   "locale": "de-DE",
+   "keyword": "süße to-do liste",
    "rank": 2,
    "leader_ratings": 1
   },
@@ -184,22 +200,6 @@
    "keyword": "claude 用量",
    "rank": 2,
    "leader_ratings": 2
-  },
-  {
-   "app_id": "6814035888",
-   "country": "ua",
-   "locale": "uk",
-   "keyword": "прикроватна тумба",
-   "rank": 2,
-   "leader_ratings": 2
-  },
-  {
-   "app_id": "6814035888",
-   "country": "ru",
-   "locale": "ru",
-   "keyword": "прикроватная тумба",
-   "rank": 2,
-   "leader_ratings": 4
   }
  ]
 }

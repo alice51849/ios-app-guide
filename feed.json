@@ -1,7 +1,7 @@
 {
  "schema": "lumi.social-feed/v1",
  "date": "2026-11-23",
- "generated_at": "2026-11-23T09:52:17Z",
+ "generated_at": "2026-11-23T16:04:12Z",
  "items": {
   "bluesky": [
    {
@@ -224,47 +224,68 @@
    },
    {
     "kind": "clip",
-    "key": "lumimissionpro/ja",
-    "locale": "ja",
-    "app": "lumimissionpro",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/1ged0k.mp4",
-    "hook": "保護者は、すべての記録を確認",
-    "name": "Lumi ミッション星 Pro 毎日の習慣",
-    "title": "保護者は、すべての記録を確認 | お支度ボード・朝と夜のルーティン | Lumi ミッション星 Pro",
+    "key": "hourstaglite/fr",
+    "locale": "fr",
+    "app": "hourstaglite",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/g530j1.mp4",
+    "hook": "Besoin, envie ou impulsion ?",
+    "name": "HoursTag Lite: Prix en heures",
+    "title": "Besoin, envie ou impulsion ? | Achat conscient: prix en temps | HoursTag Lite",
     "tags": [
-     "#寝る前",
-     "#寝かしつけ",
-     "#はみがき",
-     "#歯磨き",
-     "#Lumiミッション星Pro"
+     "#PrixEnHeures",
+     "#AchatConscient",
+     "#AchatImpulsif",
+     "#VautLeCoup",
+     "#HoursTagLite"
     ],
-    "caption": "保護者は、すべての記録を確認\nできたら1タップ、相棒が大よろこび\nお支度ボード・朝と夜のルーティン\nLumi ミッション星 Pro 毎日の習慣\nApp Storeで「Lumi ミッション星 Pro」を検索\nAndroidはGoogle Playで\n\n#寝る前 #寝かしつけ #Lumiミッション星Pro",
-    "button": "App Storeで入手",
-    "variant": "c",
-    "alt": "Lumi ミッション星 Pro 毎日の習慣 — 保護者は、すべての記録を確認 — できたら1タップ、相棒が大よろこび — お支度ボード・朝と夜のルーティン",
-    "store": "https://apps.apple.com/jp/app/id6779745474?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.lumi.mochimissionplanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumimissionpro",
+    "caption": "Besoin, envie ou impulsion ?\nAjoutez-le à votre profil de valeur\nAchat conscient: prix en temps\nHoursTag Lite: Prix en heures\nRecherchez « dépenses conscientes » sur l'App Store\nAussi sur Google Play\n\n#PrixEnHeures #AchatConscient #HoursTagLite",
+    "button": "Télécharger sur l'App Store",
+    "variant": "b",
+    "alt": "HoursTag Lite: Prix en heures — Besoin, envie ou impulsion ? — Ajoutez-le à votre profil de valeur — Achat conscient: prix en temps",
+    "store": "https://apps.apple.com/fr/app/id6794039979?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite&referrer=utm_source%3Dsocial%26utm_campaign%3Dhourstaglite",
     "review": {
-     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
-     "url": "https://apps.apple.com/app/id6779745474?action=write-review"
+     "label": "Vous utilisez déjà cette app ? Notez-la ou rédigez un avis sur l’App Store",
+     "url": "https://apps.apple.com/app/id6794039979?action=write-review"
     },
     "keywords": [
-     "寝る前",
-     "寝かしつけ",
-     "はみがき",
-     "歯磨き",
-     "おかたづけ",
-     "片付け"
+     "achat impulsif",
+     "dépenses",
+     "vaut le coup",
+     "besoin",
+     "envie",
+     "shopping"
     ],
-    "keyline": "お支度ボード・朝と夜のルーティン",
+    "keyline": "Achat conscient: prix en temps",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "a82776e501c32a9a",
-     "real_recording": false,
+     "board": "2c132c2ab95f8db8",
+     "real_recording": true,
      "rules": "2026-10-18"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "card/thanksgiving2026/2026-11-23",
+    "locale": "en",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/countdown-cards/card-20261123.jpg",
+    "caption": "Thanksgiving 3 days to go\nCount down together\n\nSearch “CountDaysNow” on App Store or Google Play\n\n#EventCounter #CountdownPlan #WorkBackwards",
+    "title": "Thanksgiving 3 days to go",
+    "alt": "CountDaysNow — Thanksgiving 3 days to go — Count down together — Search “CountDaysNow” on App Store or Google Play — Countdown Plan: Work Backwards",
+    "name": "CountDaysNow",
+    "hook": "Thanksgiving 3 days to go",
+    "tags": [
+     "#EventCounter",
+     "#CountdownPlan",
+     "#WorkBackwards",
+     "#LockScreen",
+     "#CountDaysNow"
+    ],
+    "button": "Get it on the App Store",
+    "store": "https://apps.apple.com/us/app/id6807079789?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow"
    },
    {
     "kind": "card",
@@ -1324,47 +1345,68 @@
    },
    {
     "kind": "clip",
-    "key": "lumimissionpro/ja",
-    "locale": "ja",
-    "app": "lumimissionpro",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/1ged0k.mp4",
-    "hook": "保護者は、すべての記録を確認",
-    "name": "Lumi ミッション星 Pro 毎日の習慣",
-    "title": "保護者は、すべての記録を確認 | お支度ボード・朝と夜のルーティン | Lumi ミッション星 Pro",
+    "key": "hourstaglite/fr",
+    "locale": "fr",
+    "app": "hourstaglite",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/g530j1.mp4",
+    "hook": "Besoin, envie ou impulsion ?",
+    "name": "HoursTag Lite: Prix en heures",
+    "title": "Besoin, envie ou impulsion ? | Achat conscient: prix en temps | HoursTag Lite",
     "tags": [
-     "#寝る前",
-     "#寝かしつけ",
-     "#はみがき",
-     "#歯磨き",
-     "#Lumiミッション星Pro"
+     "#PrixEnHeures",
+     "#AchatConscient",
+     "#AchatImpulsif",
+     "#VautLeCoup",
+     "#HoursTagLite"
     ],
-    "caption": "保護者は、すべての記録を確認\nできたら1タップ、相棒が大よろこび\nお支度ボード・朝と夜のルーティン\nLumi ミッション星 Pro 毎日の習慣\nApp Storeで「Lumi ミッション星 Pro」を検索\nAndroidはGoogle Playで\n\n#寝る前 #寝かしつけ #はみがき #歯磨き #Lumiミッション星Pro",
-    "button": "App Storeで入手",
-    "variant": "c",
-    "alt": "Lumi ミッション星 Pro 毎日の習慣 — 保護者は、すべての記録を確認 — できたら1タップ、相棒が大よろこび — お支度ボード・朝と夜のルーティン",
-    "store": "https://apps.apple.com/jp/app/id6779745474?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.lumi.mochimissionplanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumimissionpro",
+    "caption": "Besoin, envie ou impulsion ?\nAjoutez-le à votre profil de valeur\nAchat conscient: prix en temps\nHoursTag Lite: Prix en heures\nRecherchez « dépenses conscientes » sur l'App Store\nAussi sur Google Play\n\n#PrixEnHeures #AchatConscient #AchatImpulsif #VautLeCoup #HoursTagLite",
+    "button": "Télécharger sur l'App Store",
+    "variant": "b",
+    "alt": "HoursTag Lite: Prix en heures — Besoin, envie ou impulsion ? — Ajoutez-le à votre profil de valeur — Achat conscient: prix en temps",
+    "store": "https://apps.apple.com/fr/app/id6794039979?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite&referrer=utm_source%3Dsocial%26utm_campaign%3Dhourstaglite",
     "review": {
-     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
-     "url": "https://apps.apple.com/app/id6779745474?action=write-review"
+     "label": "Vous utilisez déjà cette app ? Notez-la ou rédigez un avis sur l’App Store",
+     "url": "https://apps.apple.com/app/id6794039979?action=write-review"
     },
     "keywords": [
-     "寝る前",
-     "寝かしつけ",
-     "はみがき",
-     "歯磨き",
-     "おかたづけ",
-     "片付け"
+     "achat impulsif",
+     "dépenses",
+     "vaut le coup",
+     "besoin",
+     "envie",
+     "shopping"
     ],
-    "keyline": "お支度ボード・朝と夜のルーティン",
+    "keyline": "Achat conscient: prix en temps",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "a82776e501c32a9a",
-     "real_recording": false,
+     "board": "2c132c2ab95f8db8",
+     "real_recording": true,
      "rules": "2026-10-18"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "card/thanksgiving2026/2026-11-23",
+    "locale": "en",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/countdown-cards/card-20261123.jpg",
+    "caption": "Thanksgiving 3 days to go\nCount down together\n\nSearch “CountDaysNow” on App Store or Google Play\n\n#EventCounter #CountdownPlan #WorkBackwards #LockScreen #CountDaysNow",
+    "title": "Thanksgiving 3 days to go",
+    "alt": "CountDaysNow — Thanksgiving 3 days to go — Count down together — Search “CountDaysNow” on App Store or Google Play — Countdown Plan: Work Backwards",
+    "name": "CountDaysNow",
+    "hook": "Thanksgiving 3 days to go",
+    "tags": [
+     "#EventCounter",
+     "#CountdownPlan",
+     "#WorkBackwards",
+     "#LockScreen",
+     "#CountDaysNow"
+    ],
+    "button": "Get it on the App Store",
+    "store": "https://apps.apple.com/us/app/id6807079789?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow"
    },
    {
     "kind": "card",
@@ -1683,58 +1725,62 @@
    },
    {
     "kind": "clip",
-    "key": "lumimissionpro/ja",
-    "locale": "ja",
-    "app": "lumimissionpro",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/1ged0k.mp4",
-    "hook": "保護者は、すべての記録を確認",
-    "name": "Lumi ミッション星 Pro 毎日の習慣",
-    "title": "保護者は、すべての記録を確認 | お支度ボード・朝と夜のルーティン | Lumi ミッション星 Pro",
+    "key": "hourstaglite/fr",
+    "locale": "fr",
+    "app": "hourstaglite",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/g530j1.mp4",
+    "hook": "Besoin, envie ou impulsion ?",
+    "name": "HoursTag Lite: Prix en heures",
+    "title": "Besoin, envie ou impulsion ? | Achat conscient: prix en temps | HoursTag Lite",
     "tags": [
-     "#寝る前",
-     "#寝かしつけ",
-     "#はみがき",
-     "#歯磨き",
-     "#Lumiミッション星Pro"
+     "#PrixEnHeures",
+     "#AchatConscient",
+     "#AchatImpulsif",
+     "#VautLeCoup",
+     "#HoursTagLite"
     ],
-    "caption": "保護者は、すべての記録を確認\nできたら1タップ、相棒が大よろこび\nお支度ボード・朝と夜のルーティン\nLumi ミッション星 Pro 毎日の習慣\nApp Storeで「Lumi ミッション星 Pro」を検索\nAndroidはGoogle Playで\n\n#寝る前 #寝かしつけ #はみがき #歯磨き #Lumiミッション星Pro",
-    "button": "App Storeで入手",
-    "variant": "c",
-    "alt": "Lumi ミッション星 Pro 毎日の習慣 — 保護者は、すべての記録を確認 — できたら1タップ、相棒が大よろこび — お支度ボード・朝と夜のルーティン",
-    "store": "https://apps.apple.com/jp/app/id6779745474?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.lumi.mochimissionplanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumimissionpro",
+    "caption": "Besoin, envie ou impulsion ?\nAjoutez-le à votre profil de valeur\nAchat conscient: prix en temps\nHoursTag Lite: Prix en heures\nRecherchez « dépenses conscientes » sur l'App Store\nAussi sur Google Play\n\n#PrixEnHeures #AchatConscient #AchatImpulsif #VautLeCoup #HoursTagLite",
+    "button": "Télécharger sur l'App Store",
+    "variant": "b",
+    "alt": "HoursTag Lite: Prix en heures — Besoin, envie ou impulsion ? — Ajoutez-le à votre profil de valeur — Achat conscient: prix en temps",
+    "store": "https://apps.apple.com/fr/app/id6794039979?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite&referrer=utm_source%3Dsocial%26utm_campaign%3Dhourstaglite",
     "review": {
-     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
-     "url": "https://apps.apple.com/app/id6779745474?action=write-review"
+     "label": "Vous utilisez déjà cette app ? Notez-la ou rédigez un avis sur l’App Store",
+     "url": "https://apps.apple.com/app/id6794039979?action=write-review"
     },
     "keywords": [
-     "寝る前",
-     "寝かしつけ",
-     "はみがき",
-     "歯磨き",
-     "おかたづけ",
-     "片付け"
+     "achat impulsif",
+     "dépenses",
+     "vaut le coup",
+     "besoin",
+     "envie",
+     "shopping"
     ],
-    "keyline": "お支度ボード・朝と夜のルーティン",
+    "keyline": "Achat conscient: prix en temps",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "a82776e501c32a9a",
-     "real_recording": false,
+     "board": "2c132c2ab95f8db8",
+     "real_recording": true,
      "rules": "2026-10-18"
     },
     "youtube": {
-     "title": "保護者は、すべての記録を確認 | Lumi ミッション星 Pro #Shorts",
-     "description": "保護者は、すべての記録を確認\nできたら1タップ、相棒が大よろこび\nお支度ボード・朝と夜のルーティン\n\nLumi ミッション星 Pro 毎日の習慣\nApp Store: https://apps.apple.com/jp/app/id6779745474?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.lumi.mochimissionplanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumimissionpro\nこのアプリをお使いですか？App Store で評価・レビューできます\nhttps://apps.apple.com/app/id6779745474?action=write-review\n\n寝る前 · 寝かしつけ · はみがき · 歯磨き · おかたづけ · 片付け\n\n#Shorts #寝る前 #Lumiミッション星Pro",
+     "title": "Besoin, envie ou impulsion ? | HoursTag Lite #Shorts",
+     "description": "Besoin, envie ou impulsion ?\nAjoutez-le à votre profil de valeur\nAchat conscient: prix en temps\n\nHoursTag Lite: Prix en heures\nApp Store: https://apps.apple.com/fr/app/id6794039979?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite&referrer=utm_source%3Dsocial%26utm_campaign%3Dhourstaglite\nVous utilisez déjà cette app ? Notez-la ou rédigez un avis sur l’App Store\nhttps://apps.apple.com/app/id6794039979?action=write-review\n\nachat impulsif · dépenses · vaut le coup · besoin · envie · shopping\n\n#Shorts #PrixEnHeures #HoursTagLite",
      "tags": [
-      "寝る前",
-      "寝かしつけ",
-      "はみがき",
-      "歯磨き",
-      "おかたづけ",
-      "片付け",
-      "Lumiミッション星Pro",
-      "Lumi ミッション星 Pro"
+      "achat impulsif",
+      "dépenses",
+      "vaut le coup",
+      "besoin",
+      "envie",
+      "shopping",
+      "PrixEnHeures",
+      "AchatConscient",
+      "AchatImpulsif",
+      "VautLeCoup",
+      "HoursTagLite",
+      "HoursTag Lite"
      ]
     },
     "slot": 15
@@ -1981,51 +2027,76 @@
    },
    {
     "kind": "clip",
-    "key": "lumimissionpro/ja",
-    "locale": "ja",
-    "app": "lumimissionpro",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/1ged0k.mp4",
-    "hook": "保護者は、すべての記録を確認",
-    "name": "Lumi ミッション星 Pro 毎日の習慣",
-    "title": "保護者は、すべての記録を確認 | お支度ボード・朝と夜のルーティン | Lumi ミッション星 Pro",
+    "key": "hourstaglite/fr",
+    "locale": "fr",
+    "app": "hourstaglite",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/g530j1.mp4",
+    "hook": "Besoin, envie ou impulsion ?",
+    "name": "HoursTag Lite: Prix en heures",
+    "title": "Besoin, envie ou impulsion ? | Achat conscient: prix en temps | HoursTag Lite",
     "tags": [
-     "#寝る前",
-     "#寝かしつけ",
-     "#はみがき",
-     "#歯磨き",
-     "#Lumiミッション星Pro"
+     "#PrixEnHeures",
+     "#AchatConscient",
+     "#AchatImpulsif",
+     "#VautLeCoup",
+     "#HoursTagLite"
     ],
-    "caption": "保護者は、すべての記録を確認\nできたら1タップ、相棒が大よろこび\nお支度ボード・朝と夜のルーティン\nLumi ミッション星 Pro 毎日の習慣\nApp Storeで「Lumi ミッション星 Pro」を検索\nAndroidはGoogle Playで\n\n#寝る前 #寝かしつけ #はみがき #歯磨き #Lumiミッション星Pro",
-    "button": "App Storeで入手",
-    "variant": "c",
-    "alt": "Lumi ミッション星 Pro 毎日の習慣 — 保護者は、すべての記録を確認 — できたら1タップ、相棒が大よろこび — お支度ボード・朝と夜のルーティン",
-    "store": "https://apps.apple.com/jp/app/id6779745474?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.lumi.mochimissionplanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumimissionpro",
+    "caption": "Besoin, envie ou impulsion ?\nAjoutez-le à votre profil de valeur\nAchat conscient: prix en temps\nHoursTag Lite: Prix en heures\nRecherchez « dépenses conscientes » sur l'App Store\nAussi sur Google Play\n\n#PrixEnHeures #AchatConscient #AchatImpulsif #VautLeCoup #HoursTagLite",
+    "button": "Télécharger sur l'App Store",
+    "variant": "b",
+    "alt": "HoursTag Lite: Prix en heures — Besoin, envie ou impulsion ? — Ajoutez-le à votre profil de valeur — Achat conscient: prix en temps",
+    "store": "https://apps.apple.com/fr/app/id6794039979?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite&referrer=utm_source%3Dsocial%26utm_campaign%3Dhourstaglite",
     "review": {
-     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
-     "url": "https://apps.apple.com/app/id6779745474?action=write-review"
+     "label": "Vous utilisez déjà cette app ? Notez-la ou rédigez un avis sur l’App Store",
+     "url": "https://apps.apple.com/app/id6794039979?action=write-review"
     },
     "keywords": [
-     "寝る前",
-     "寝かしつけ",
-     "はみがき",
-     "歯磨き",
-     "おかたづけ",
-     "片付け"
+     "achat impulsif",
+     "dépenses",
+     "vaut le coup",
+     "besoin",
+     "envie",
+     "shopping"
     ],
-    "keyline": "お支度ボード・朝と夜のルーティン",
+    "keyline": "Achat conscient: prix en temps",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "a82776e501c32a9a",
-     "real_recording": false,
+     "board": "2c132c2ab95f8db8",
+     "real_recording": true,
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "保護者は、すべての記録を確認\nできたら1タップ、相棒が大よろこび\nお支度ボード・朝と夜のルーティン\nLumi ミッション星 Pro 毎日の習慣\nApp Storeで「Lumi ミッション星 Pro」を検索\nAndroidはGoogle Playで\n\n#寝る前 #寝かしつけ #はみがき #歯磨き #Lumiミッション星Pro\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6779745474?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.lumi.mochimissionplanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumimissionpro",
-     "link": "https://apps.apple.com/jp/app/id6779745474?pt=118326163&ct=social&mt=8"
+     "description": "Besoin, envie ou impulsion ?\nAjoutez-le à votre profil de valeur\nAchat conscient: prix en temps\nHoursTag Lite: Prix en heures\nRecherchez « dépenses conscientes » sur l'App Store\nAussi sur Google Play\n\n#PrixEnHeures #AchatConscient #AchatImpulsif #VautLeCoup #HoursTagLite\n\nTélécharger sur l'App Store: https://apps.apple.com/fr/app/id6794039979?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite&referrer=utm_source%3Dsocial%26utm_campaign%3Dhourstaglite",
+     "link": "https://apps.apple.com/fr/app/id6794039979?pt=118326163&ct=social&mt=8"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "card/thanksgiving2026/2026-11-23",
+    "locale": "en",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/countdown-cards/card-20261123.jpg",
+    "caption": "Thanksgiving 3 days to go\nCount down together\n\nSearch “CountDaysNow” on App Store or Google Play\n\n#EventCounter #CountdownPlan #WorkBackwards #LockScreen #CountDaysNow",
+    "title": "Thanksgiving 3 days to go",
+    "alt": "CountDaysNow — Thanksgiving 3 days to go — Count down together — Search “CountDaysNow” on App Store or Google Play — Countdown Plan: Work Backwards",
+    "name": "CountDaysNow",
+    "hook": "Thanksgiving 3 days to go",
+    "tags": [
+     "#EventCounter",
+     "#CountdownPlan",
+     "#WorkBackwards",
+     "#LockScreen",
+     "#CountDaysNow"
+    ],
+    "button": "Get it on the App Store",
+    "store": "https://apps.apple.com/us/app/id6807079789?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
+    "pinterest": {
+     "description": "Thanksgiving 3 days to go\nCount down together\n\nSearch “CountDaysNow” on App Store or Google Play\n\n#EventCounter #CountdownPlan #WorkBackwards #LockScreen #CountDaysNow\n\nGet it on the App Store: https://apps.apple.com/us/app/id6807079789?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
+     "link": "https://apps.apple.com/us/app/id6807079789?pt=118326163&ct=social&mt=8"
+    }
    },
    {
     "kind": "card",
@@ -4218,48 +4289,48 @@
    },
    {
     "kind": "clip",
-    "key": "lumimissionpro/ja",
-    "locale": "ja",
-    "app": "lumimissionpro",
-    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/1ged0k.mp4",
-    "hook": "保護者は、すべての記録を確認",
-    "name": "Lumi ミッション星 Pro 毎日の習慣",
-    "title": "保護者は、すべての記録を確認 | お支度ボード・朝と夜のルーティン | Lumi ミッション星 Pro",
+    "key": "hourstaglite/fr",
+    "locale": "fr",
+    "app": "hourstaglite",
+    "video": "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror/g530j1.mp4",
+    "hook": "Besoin, envie ou impulsion ?",
+    "name": "HoursTag Lite: Prix en heures",
+    "title": "Besoin, envie ou impulsion ? | Achat conscient: prix en temps | HoursTag Lite",
     "tags": [
-     "#寝る前",
-     "#寝かしつけ",
-     "#はみがき",
-     "#歯磨き",
-     "#Lumiミッション星Pro"
+     "#PrixEnHeures",
+     "#AchatConscient",
+     "#AchatImpulsif",
+     "#VautLeCoup",
+     "#HoursTagLite"
     ],
-    "caption": "保護者は、すべての記録を確認\nできたら1タップ、相棒が大よろこび\nお支度ボード・朝と夜のルーティン\nLumi ミッション星 Pro 毎日の習慣\nApp Storeで「Lumi ミッション星 Pro」を検索\nAndroidはGoogle Playで\n\n#寝る前 #寝かしつけ #はみがき #歯磨き #Lumiミッション星Pro",
-    "button": "App Storeで入手",
-    "variant": "c",
-    "alt": "Lumi ミッション星 Pro 毎日の習慣 — 保護者は、すべての記録を確認 — できたら1タップ、相棒が大よろこび — お支度ボード・朝と夜のルーティン",
-    "store": "https://apps.apple.com/jp/app/id6779745474?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.lumi.mochimissionplanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumimissionpro",
+    "caption": "Besoin, envie ou impulsion ?\nAjoutez-le à votre profil de valeur\nAchat conscient: prix en temps\nHoursTag Lite: Prix en heures\nRecherchez « dépenses conscientes » sur l'App Store\nAussi sur Google Play\n\n#PrixEnHeures #AchatConscient #AchatImpulsif #VautLeCoup #HoursTagLite",
+    "button": "Télécharger sur l'App Store",
+    "variant": "b",
+    "alt": "HoursTag Lite: Prix en heures — Besoin, envie ou impulsion ? — Ajoutez-le à votre profil de valeur — Achat conscient: prix en temps",
+    "store": "https://apps.apple.com/fr/app/id6794039979?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite&referrer=utm_source%3Dsocial%26utm_campaign%3Dhourstaglite",
     "review": {
-     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
-     "url": "https://apps.apple.com/app/id6779745474?action=write-review"
+     "label": "Vous utilisez déjà cette app ? Notez-la ou rédigez un avis sur l’App Store",
+     "url": "https://apps.apple.com/app/id6794039979?action=write-review"
     },
     "keywords": [
-     "寝る前",
-     "寝かしつけ",
-     "はみがき",
-     "歯磨き",
-     "おかたづけ",
-     "片付け"
+     "achat impulsif",
+     "dépenses",
+     "vaut le coup",
+     "besoin",
+     "envie",
+     "shopping"
     ],
-    "keyline": "お支度ボード・朝と夜のルーティン",
+    "keyline": "Achat conscient: prix en temps",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "a82776e501c32a9a",
-     "real_recording": false,
+     "board": "2c132c2ab95f8db8",
+     "real_recording": true,
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "保護者は、すべての記録を確認\nできたら1タップ、相棒が大よろこび\nお支度ボード・朝と夜のルーティン\nLumi ミッション星 Pro 毎日の習慣\nApp Storeで「Lumi ミッション星 Pro」を検索\nAndroidはGoogle Playで\n\n#寝る前 #寝かしつけ #はみがき #歯磨き #Lumiミッション星Pro\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6779745474?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.lumi.mochimissionplanet&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumimissionpro"
+     "caption": "Besoin, envie ou impulsion ?\nAjoutez-le à votre profil de valeur\nAchat conscient: prix en temps\nHoursTag Lite: Prix en heures\nRecherchez « dépenses conscientes » sur l'App Store\nAussi sur Google Play\n\n#PrixEnHeures #AchatConscient #AchatImpulsif #VautLeCoup #HoursTagLite\n\nTélécharger sur l'App Store: https://apps.apple.com/fr/app/id6794039979?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite&referrer=utm_source%3Dsocial%26utm_campaign%3Dhourstaglite"
     },
     "slot": 15
    }

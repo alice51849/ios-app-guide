@@ -15,7 +15,7 @@ Diga que horas você precisa chegar e descubra que horas sair. O Hora do Metrô 
 
 - Mais
 - Download pago
-- App Store · R$ 19,90
+- App Store · Grátis
 
 [Baixe Hora do Metrô em Taipei na App Store](https://apps.apple.com/br/app/id6819061896?pt=118326163&ct=geo_pick&mt=8)
 

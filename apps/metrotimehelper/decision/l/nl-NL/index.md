@@ -15,7 +15,7 @@ Zeg hoe laat je er moet zijn, en Metro Tijdhelper vertelt je hoe laat je uiterli
 
 - Meer
 - Betaalde aanschaf
-- App Store · € 2,99
+- App Store · Gratis
 
 [Download Metro Tijdhelper Taipei in de App Store](https://apps.apple.com/nl/app/id6819061896?pt=118326163&ct=geo_pick&mt=8)
 

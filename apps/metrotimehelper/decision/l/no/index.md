@@ -15,7 +15,7 @@ Si når du må være fremme, så regner appen ut når du senest må gå inn på 
 
 - Mer
 - Betalt nedlasting
-- App Store · 39,00 kr
+- App Store · Gratis
 
 [Last ned Taipei: Tidshjelp for metroen fra App Store](https://apps.apple.com/no/app/id6819061896?pt=118326163&ct=geo_pick&mt=8)
 

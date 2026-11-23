@@ -15,7 +15,7 @@ Dibuat khusus untuk MRT Taipei di Taiwan: cukup masukkan jam berapa Anda harus t
 
 - Lainnya
 - Unduhan berbayar
-- App Store · Rp 59ribu
+- App Store · Gratis
 
 [Dapatkan Metro Time Helper: MRT Taipei di App Store](https://apps.apple.com/id/app/id6819061896?pt=118326163&ct=geo_pick&mt=8)
 

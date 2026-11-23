@@ -15,7 +15,7 @@ Pour le métro de Taipei, à Taïwan : vous savez à quelle heure vous devez arr
 
 - Plus
 - Téléchargement payant
-- App Store · $3.99
+- App Store · Gratuit
 
 [Obtenir Taipei : l’Assistant Métro sur l'App Store](https://apps.apple.com/ca/app/id6819061896?pt=118326163&ct=geo_pick&mt=8)
 

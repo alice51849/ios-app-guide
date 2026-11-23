@@ -15,7 +15,7 @@ Metro Time Helper — Built for the Taipei MRT in Taiwan: tell Metro Time Helper
 
 - More
 - Paid download
-- App Store · $3.99
+- App Store · Free
 
 [Get Metro Time Helper on the App Store →](https://apps.apple.com/ca/app/id6819061896?pt=118326163&ct=geo_pick&mt=8)
 

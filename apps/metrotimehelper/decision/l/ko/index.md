@@ -15,7 +15,7 @@ publisher: "Lumi Studio"
 
 - 더 보기
 - 유료 다운로드
-- App Store · ￦4,400
+- App Store · 무료
 
 [App Store에서 타이베이 지하철 시간 도우미 받기](https://apps.apple.com/kr/app/id6819061896?pt=118326163&ct=geo_pick&mt=8)
 

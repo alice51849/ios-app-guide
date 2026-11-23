@@ -15,7 +15,7 @@ publisher: "Lumi Studio"
 
 - 更多
 - 付費下載
-- App Store · $90.00
+- App Store · 免費
 - ★ 5.0/5 · 4
 
 [在 App Store 取得 捷運時間助手－台北轉乘時刻表](https://apps.apple.com/tw/app/id6819061896?pt=118326163&ct=geo_pick&mt=8)

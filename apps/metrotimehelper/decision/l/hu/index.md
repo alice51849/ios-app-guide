@@ -15,7 +15,7 @@ A tajvani Tajpej metrójához készült: mondd meg, mikorra kell odaérned, és 
 
 - Továbbiak
 - Fizetős letöltés
-- App Store · HUF1,490.00
+- App Store · Ingyenes
 
 [Töltse le a(z) Taipei: Időtervező a metróhoz appot az App Store-ból](https://apps.apple.com/hu/app/id6819061896?pt=118326163&ct=geo_pick&mt=8)
 

@@ -260,6 +260,7 @@ class AppTierCampaignTest(unittest.TestCase):
             "h7_mochi_th": ("threads", "social", "social"), "radar_bs": ("bluesky", "social", "social"),
             "soc_tg_guide": ("telegram", "social", "social"), "rp_ig": ("instagram", "social", "social"),
             "yt_shorts": ("youtube", "youtube", "social"), "geo_pick": ("web", "web", "web"),
+            "dc_ledmovingtext_20261120": ("web", "web", "web"),
             "h_x_tw_kol": ("outreach", "outreach", "outreach"), "social": ("social", "social", "social"),
             "gx_reach_a1": ("gx_reach_a1", "gx_reach_a1", "gx_reach_a1"),
             "yt_longform": ("yt_longform", "yt_longform", "yt_longform"),

@@ -478,6 +478,7 @@ _CAMPAIGN_PREFIXES = (
     ("nostr_", "social"), ("devto_", "social"), ("qiita_", "social"), ("ml_", "social"),
     ("appdir_", "outreach"), ("outreach", "outreach"),
     ("tool_", "web"), ("web_", "web"), ("sq11_", "web"),
+    ("dc_", "web"),  # demand calendar event intent pages ONLY, dc_<app>_<yyyymmdd> (agent/ct_codes.PREFIXES)
 )
 # Sent as they are: experiment cells whose own contract reads the token back (gx_reach_*; th_mochi_<lang>_<nn>, the
 # 2026-10-20..11-01 Threads Mochi trial posts, threads_post.py), the one long-form YouTube token, the Cute To-Do

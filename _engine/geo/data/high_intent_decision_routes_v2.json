@@ -3,9 +3,9 @@
   "dataset_name": "Lumi Studio High-Intent Decision Routes",
   "inventory_contract": {
     "relative_path": "data/verified-ios-app-finder-catalog.json",
-    "expected_app_count": 60,
-    "app_keys_sha256": "fb6805f542ce9f363d0fb17a1aca312cc4ae4331e68a9154e43717909646f1c1",
-    "copy_sha256": "b7fbda62c1431249c775ae0c2c74d154175f3d6c82e44882a40bd63bf50f02a6",
+    "expected_app_count": 61,
+    "app_keys_sha256": "f5e2c76118e53fe74b7dc510edbbdb1b97c0c0210847b9311eb82b0ec67603dc",
+    "copy_sha256": "82552cc8dc0b4ebeb5d4d4f86cfa7dab067c74f4269d0ca6010d777c6d289cae",
     "official_locales_sha256": "e26dabf9370286ad8fd12034270cfcade92b2db4f4a0eecc19324203ce84d5bd"
   },
   "publisher": {
@@ -2744,6 +2744,65 @@
             "summary.zh-Hant",
             "capability.no_ads",
             "capability.no_tracking"
+          ]
+        }
+      }
+    },
+    {
+      "app_key": "jellyday",
+      "route_slug": "see-how-full-today-is-before-adding-more",
+      "intent_type": "workflow",
+      "primary": true,
+      "keyword_refs": [
+        0,
+        2,
+        3
+      ],
+      "locales": {
+        "en-US": {
+          "language": "en",
+          "market": "United States",
+          "culture_route": "Many people in the United States juggle work blocks, school runs and evening routines in one day, and a plain to-do list hides how much time each item really takes until the afternoon runs late.",
+          "query": "Is there a visual daily planner for iPhone that shows my day as time blocks and lets me push everything back when I run late?",
+          "buyer_problem": "A list of tasks looks short even when the hours behind it are already full, so new plans get added to a day that has no room left. The decision is whether a timeline where each task is a block sized by its duration, with a line marking the current moment, helps you see what is now, what is next and how much time is left.",
+          "decision_rule": "Choose a time-block timeline when you lose track of how long tasks take and need to reshuffle the rest of the day in a tap when something overruns. Stay with a simple checklist or your calendar if your days are mostly fixed meetings and you rarely need to move unfinished tasks.",
+          "workflow_checks": [
+            "When one task runs over, can you push it back and have every unfinished task after it move too?",
+            "Can unfinished tasks from earlier in the day be started from now or moved to tomorrow in one step?",
+            "Can a morning or bedtime routine run step by step with its own countdown for each step?"
+          ],
+          "alternative_lens": "A shared calendar fits better when other people need to see or book your time, and a task manager with projects and due dates fits better when you plan weeks ahead rather than hour by hour.",
+          "verify_before_install": [
+            "Read the listing in your storefront to see which planning and countdown features open right away and what the one-time in-app purchase adds.",
+            "Check that the Home Screen and Lock Screen widget sizes you want are listed for your device."
+          ],
+          "evidence_refs": [
+            "summary.en",
+            "fact.purchase_model",
+            "fact.one_time_option"
+          ]
+        },
+        "zh-Hant": {
+          "language": "zh-Hant",
+          "market": "台灣",
+          "culture_route": "在台灣，很多人一天裡要接送小孩、上班或上課，晚上還有睡前的固定流程，用一般待辦清單只看得到事情，看不到每件事要花多少時間，常常到下午才發現排不完。",
+          "query": "有沒有 iPhone 上的視覺化每日計畫 App，用時間色塊排一天，來不及時能把後面的事一起往後推？",
+          "buyer_problem": "待辦清單看起來沒幾項，但背後的時間可能早就排滿，於是又把新的事塞進已經沒空的一天。要判斷的是：用一條時間軸、每件事依時長變成高低不同的色塊，再用一條線標出此刻，能不能讓你一眼看懂現在在做什麼、下一件是什麼、還剩多少時間。",
+          "decision_rule": "如果你常常低估事情要花的時間，事情拖到時又需要一鍵重排今天剩下的安排，選時間色塊的時間軸比較合適；如果你的一天大多是固定會議，很少需要移動沒做完的事，用簡單清單或行事曆就夠了。",
+          "workflow_checks": [
+            "某件事超時的時候，能不能把它往後推，而且之後所有沒做完的事都跟著移動？",
+            "稍早沒做完的事，能不能一次全部從現在開始，或全部移到明天？",
+            "早晨或睡前作息，能不能一步一步帶著做，每一步都有自己的倒數？"
+          ],
+          "alternative_lens": "如果需要讓家人或同事看到、預約你的時間，共用行事曆比較合適；如果你習慣以週為單位、用專案與截止日排工作，而不是逐小時安排，專案型待辦 App 會更順手。",
+          "verify_before_install": [
+            "先看你所在地區 App Store 頁面，確認哪些計畫與倒數功能打開就能用，以及一次性 App 內購買項目多提供什麼。",
+            "確認你想用的主畫面與鎖定畫面小工具尺寸，有列在你的裝置支援範圍內。"
+          ],
+          "evidence_refs": [
+            "summary.zh-Hant",
+            "fact.purchase_model",
+            "fact.one_time_option"
           ]
         }
       }

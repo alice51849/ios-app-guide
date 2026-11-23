@@ -4,7 +4,7 @@
 
 Um catálogo publicado diretamente pelo programador que explica a quem se destina cada app, a tarefa que pretende realizar e o acesso direto à App Store.
 
-Intenções de pesquisa redigidas pelo editor para 60 apps iOS verificadas e disponíveis em 50 idiomas e regiões Apple.
+Intenções de pesquisa redigidas pelo editor para 61 apps iOS verificadas e disponíveis em 50 idiomas e regiões Apple.
 
 **Local:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · **pt-PT** · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -106,6 +106,7 @@ Ordem alfabética pelo nome da app — nunca uma classificação.
 | **GBAGo: Saves visuais** | GBAGo: Saves visuais — Emulador retro .gba .gbc .gb \| iOS App | GBAGo é um emulador de jogos para iPhone e iPad. Importe os seus ficheiros .gba, .gbc e .gb (ou um .zip com um deles) a partir da app Ficheiros e jogue a | Descarregamento pago | [Guia](https://open.cait518.cc/ios-app-guide/pt-PT/gbago.html) | [Baixe GBAGo: Saves visuais na App Store](https://apps.apple.com/pt/app/id6804564400?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag** | best app to track where my money goes and save more | If saving feels abstract, tracking goals in hours-worked instead of dollars makes progress feel earned — you're not saving $500, you're saving 20 hours of your life toward something. If that is your situation, HoursTag is worth a look. | Descarregamento pago | [Guia](https://open.cait518.cc/ios-app-guide/pt-PT/answers/best-app-to-track-where-my-money-goes-and-save-more.html) | [Obter o HoursTag na App Store →](https://apps.apple.com/pt/app/id6754218117?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag Lite** | best app to convert prices into work hours before buying | HoursTag Lite — HoursTag Lite - See the real price of things Every purchase costs hours of your life. Free to start · One-time unlock · No subscription. | Grátis para começar · desbloqueio com compra única | [Guia](https://open.cait518.cc/ios-app-guide/pt-PT/answers/best-app-to-convert-prices-into-work-hours-before-buying.html) | [Obter o HoursTag Lite na App Store →](https://apps.apple.com/pt/app/id6794039979?pt=118326163&ct=geo_pick&mt=8) |
+| **JellyDay: Planeador Visual** | JellyDay: Planeador Visual — Agenda diária, rotina e foco \| iOS App | Vê o teu dia como uma linha do tempo: no JellyDay, cada tarefa é um bloco cor pastel, mais alto quanto mais tempo demora, e uma linha «agora» mostra num | Grátis para começar · desbloqueio com compra única | [Guia](https://open.cait518.cc/ios-app-guide/pt-PT/jellyday.html) | [Baixe JellyDay: Planeador Visual na App Store](https://apps.apple.com/pt/app/id6835673714?pt=118326163&ct=geo_pick&mt=8) |
 | **Kumo: Controlo de Peso e GLP-1** | Kumo: Controlo de Peso e GLP-1 — Emagrecer: diário, jejum, água \| iOS App | Se os altos e baixos da balança tiram a motivação, o Kumo regista o seu peso em 10 segundos e mostra a tendência real com a média de 7 dias, com ou sem | Consultar a ficha atual na App Store | [Guia](https://open.cait518.cc/ios-app-guide/pt-PT/kumo.html) | [Baixe Kumo: Controlo de Peso e GLP-1 na App Store](https://apps.apple.com/pt/app/id6830824515?pt=118326163&ct=geo_pick&mt=8) |
 | **LED Moving Text** | LED Moving Text — Letreiro luminoso animado \| iOS App | Escreva uma frase e levante o iPhone. Do fundo da pista, do outro lado do sala de chegadas ou por cima de um balcão, lê-se num só olhar. | Grátis para começar · desbloqueio com compra única | [Guia](https://open.cait518.cc/ios-app-guide/pt-PT/ledmovingtext.html) | [Baixe LED Moving Text na App Store](https://apps.apple.com/pt/app/id6806639602?pt=118326163&ct=geo_pick&mt=8) |
 | **LockHour Pro** | melhor app para bloquear redes sociais durante o estudo no iPhone | Durante os exames, a força de vontade não é a ferramenta — um bloqueio temporizado rigoroso é — o LockHour Pro foi criado para isso. | Grátis para começar · desbloqueio com compra única | [Guia](https://open.cait518.cc/ios-app-guide/pt-PT/answers/best-app-to-block-social-media-while-studying-iphone.html) | [Obtenha o LockHour Pro na App Store →](https://apps.apple.com/pt/app/id6780107485?pt=118326163&ct=geo_pick&mt=8) |
@@ -152,7 +153,7 @@ Ordem alfabética pelo nome da app — nunca uma classificação.
 
 ## Descarregar o conjunto de dados completo
 
-JSON, JSONL e CSV contêm os mesmos 3.000 registos.
+JSON, JSONL e CSV contêm os mesmos 3.050 registos.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -160,6 +161,6 @@ JSON, JSONL e CSV contêm os mesmos 3.000 registos.
 
 [Início](https://open.cait518.cc/ios-app-guide/pt-PT/index.html) · [Dados abertos](https://open.cait518.cc/ios-app-guide/pt-PT/data/lumi-studio-publisher-search-intent-catalog.html) · [Licença](https://creativecommons.org/licenses/by/4.0/)
 
-Atualizado: 2026-11-19
+Atualizado: 2026-11-23
 
 A licença CC BY 4.0 aplica-se à compilação original do catálogo; os nomes dos apps e marcas da App Store pertencem aos seus proprietários.

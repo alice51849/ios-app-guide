@@ -2,7 +2,7 @@
 title: "如何把 iPhone 上其他 App 的連結存到同一個地方？"
 lang: "zh-Hant"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/savetag/decision/l/zh-Hant/index.html"
-modified: "2026-11-21"
+modified: "2026-11-23"
 app_store_id: "6802505528"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -21,6 +21,7 @@ publisher: "Lumi Studio"
 - 隱私優先／裝置端
 - 主畫面小工具
 - App Store · 免費
+- ★ 5.0/5 · 1
 
 [在 App Store 取得 SaveTag →](https://apps.apple.com/tw/app/id6802505528?pt=118326163&ct=geo_pick&mt=8)
 

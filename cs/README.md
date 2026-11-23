@@ -4,7 +4,7 @@
 
 Katalog od první strany, který uvádí, pro koho je každá aplikace určena, jaký úkol má splnit a přímou cestu do App Store.
 
-Vyhledávací záměry vytvořené vydavatelem napříč 60 ověřenými aktivními iOS aplikacemi a 50 Apple lokalitami.
+Vyhledávací záměry vytvořené vydavatelem napříč 61 ověřenými aktivními iOS aplikacemi a 50 Apple lokalitami.
 
 **Lokalita:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · **cs** · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -107,6 +107,7 @@ Abecedně podle názvu aplikace — nikdy žebříček.
 | **GBAGo: Vizuální uložené** | GBAGo: Vizuální uložené — Emulátor her: .gba .gbc .gb \| iOS App | GBAGo je emulátor her na iPhone a iPad. Importujte své soubory .gba, .gbc a .gb (nebo .zip s jedním z nich) z aplikace Soubory a hrajte při 60 fps s | Placené stažení | [Průvodce](https://open.cait518.cc/ios-app-guide/cs/gbago.html) | [Stáhněte si GBAGo: Vizuální uložené v App Storu](https://apps.apple.com/cz/app/id6804564400?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag Lite: Cena v hodinách** | HoursTag Lite: Cena v hodinách — Vědomý nákup: skutečná cena \| iOS App | Než něco koupíte, podívejte se, kolik hodin práce vás to doopravdy stojí. Zadejte svou čistou hodinovou mzdu a HoursTag Lite převede každou cenu na | Zdarma na začátek · odemknutí jednorázovým nákupem | [Průvodce](https://open.cait518.cc/ios-app-guide/cs/hourstaglite.html) | [Stáhněte si HoursTag Lite: Cena v hodinách v App Storu](https://apps.apple.com/cz/app/id6794039979?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag: Hodiny na nákup** | HoursTag: Hodiny na nákup — Hodinová mzda a výdaje \| iOS App | Kolik to opravdu stojí? Ne v korunách, ale v hodinách vašeho života. | Placené stažení | [Průvodce](https://open.cait518.cc/ios-app-guide/cs/hourstag.html) | [Stáhněte si HoursTag: Hodiny na nákup v App Storu](https://apps.apple.com/cz/app/id6754218117?pt=118326163&ct=geo_pick&mt=8) |
+| **JellyDay: Denní plánovač** | JellyDay: Denní plánovač — Diář, rutina, rozvrh a časovač \| iOS App | Celý den na časové ose: v JellyDay je každá činnost jemný pastelový blok a čím déle trvá, tím je blok vyšší. Čára „teď“ ukazuje, kde právě jste, takže hned | Zdarma na začátek · odemknutí jednorázovým nákupem | [Průvodce](https://open.cait518.cc/ios-app-guide/cs/jellyday.html) | [Stáhněte si JellyDay: Denní plánovač v App Storu](https://apps.apple.com/cz/app/id6835673714?pt=118326163&ct=geo_pick&mt=8) |
 | **Kumo: Hubnutí a sledování váhy** | Kumo: Hubnutí a sledování váhy — Přerušovaný půst, deník GLP-1 \| iOS App | Váha skáče ze dne na den a snadno to člověka odradí, ale s Kumo ji zapíšeš za 10 sekund a 7denní průměr ukáže skutečný směr místo výkyvů. Obláček roste | Zkontrolujte aktuální nabídku | [Průvodce](https://open.cait518.cc/ios-app-guide/cs/kumo.html) | [Stáhněte si Kumo: Hubnutí a sledování váhy v App Storu](https://apps.apple.com/cz/app/id6830824515?pt=118326163&ct=geo_pick&mt=8) |
 | **LED Moving Text** | LED Moving Text — Běžící text na displeji \| iOS App | Napište větu a zvedněte iPhone. Ze zadní řady, přes celou příletovou halu nebo přes pult ji každý přečte jediným pohledem. | Zdarma na začátek · odemknutí jednorázovým nákupem | [Průvodce](https://open.cait518.cc/ios-app-guide/cs/ledmovingtext.html) | [Stáhněte si LED Moving Text v App Storu](https://apps.apple.com/cz/app/id6806639602?pt=118326163&ct=geo_pick&mt=8) |
 | **LockHour Pro** | nejlepší aplikace na blokování sociálních sítí při studiu pro iPhone | Během zkoušek není vůle nástrojem — je to tvrdá časová blokace. Právě proto LockHour Pro vznikl. | Zdarma na začátek · odemknutí jednorázovým nákupem | [Průvodce](https://open.cait518.cc/ios-app-guide/cs/answers/best-app-to-block-social-media-while-studying-iphone.html) | [Stáhněte LockHour Pro v App Store →](https://apps.apple.com/cz/app/id6780107485?pt=118326163&ct=geo_pick&mt=8) |
@@ -152,7 +153,7 @@ Abecedně podle názvu aplikace — nikdy žebříček.
 
 ## Stáhnout celý dataset
 
-JSON, JSONL a CSV obsahují stejných 3 000 záznamů.
+JSON, JSONL a CSV obsahují stejných 3 050 záznamů.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -160,6 +161,6 @@ JSON, JSONL a CSV obsahují stejných 3 000 záznamů.
 
 [Domů](https://open.cait518.cc/ios-app-guide/cs/index.html) · [Otevřená data](https://open.cait518.cc/ios-app-guide/cs/data/lumi-studio-publisher-search-intent-catalog.html) · [Licence](https://creativecommons.org/licenses/by/4.0/)
 
-Aktualizováno: 2026-11-19
+Aktualizováno: 2026-11-23
 
 CC BY 4.0 platí pro původní sestavení katalogu; názvy aplikací a značky App Store patří jejich vlastníkům.

@@ -2,7 +2,7 @@
   "name": "Lumi Studio Publisher Intent Visuals",
   "description": "Localized first-party visual buyer-intent cards for every verified live iOS app.",
   "url": "https://open.cait518.cc/ios-app-guide/visuals/",
-  "dateModified": "2026-11-21",
+  "dateModified": "2026-11-23",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "creator": {
     "@type": "Organization",
@@ -10,320 +10,320 @@
     "url": "https://open.cait518.cc/ios-app-guide"
   },
   "source_dataset": "https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json",
-  "source_sha256": "5208ce109154b16f9e3c94bb07b216511323ad10dd18c1e16644e652c3fd887a",
-  "content_digest": "7aaa9f2d378839d50eadbbadba9094cece527ff92c682942c3377a7727b409b4",
-  "generation_digest": "dc9ebc0dc5cd4a85c09cd8c9600ccfa84f7ef1366c9ebb0cf83d96884f07c810",
+  "source_sha256": "9e694bca32c0bd4d50d5a40f038120c0e26251ec606e211f9108c1d16ff92868",
+  "content_digest": "078c2f5febc3dba9b7a0a58a4585f68ac83451de7ef59e2130d056544cc2bbea",
+  "generation_digest": "aea68e886daa63c303edd3adb2cfd72277d12a54b3ab525272735ba9b17f3599",
   "ordering": "official_locale_order_then_alphabetical_app_name",
-  "app_count": 60,
+  "app_count": 61,
   "locale_count": 50,
-  "image_count": 3000,
+  "image_count": 3050,
   "gallery_count": 51,
   "galleries": [
     {
       "locale": "en",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/visuals/",
-      "sha256": "1f12e66151f617859feac7d752e7b6c0f7f53a19b1a9bd8a45801b37250c4ecc",
-      "dateModified": "2026-11-21"
+      "sha256": "244aadc5670aba652a88a9fd5ab2e9e3a5749393fdad95d2076850cb35ec3a6b",
+      "dateModified": "2026-11-23"
     },
     {
       "locale": "ar-SA",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ar-SA/visuals/",
-      "sha256": "b20fff1b16d965d3545b658ce1914d16f60e29b8565935042568d28658df60ef",
-      "dateModified": "2026-11-21"
+      "sha256": "771e8f4f2c6c674a4378b24dde9f1c71e607e77279f0169cc92ad5b4c5c8b94e",
+      "dateModified": "2026-11-23"
     },
     {
       "locale": "bn-BD",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/bn-BD/visuals/",
-      "sha256": "78a7bcde93acbaa430bbb9dbe8e305e55c8eb7bd4d7bd0a679356c0df393d230",
-      "dateModified": "2026-11-19"
+      "sha256": "22bebf148a3d17388dbc9bc00d7302dd583780439a5b17e5043d6a05fbde745d",
+      "dateModified": "2026-11-23"
     },
     {
       "locale": "ca",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ca/visuals/",
-      "sha256": "cffb27927ddd3a548f354c409f955d06f493537db1f3c81f0d1b4cbc4498675e",
-      "dateModified": "2026-11-21"
+      "sha256": "e447733b3eae7bef3b3cdd30bd7bbd545ceb68df5a30150975dcb3a4a4ace4c5",
+      "dateModified": "2026-11-23"
     },
     {
       "locale": "cs",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/cs/visuals/",
-      "sha256": "2f66008b1dc46db5ae17d464934e01be826a8078ad49de4880faa76a433c0d47",
-      "dateModified": "2026-11-21"
+      "sha256": "644dab1c8913a8be2efb931aab7d51bb996785e6e70f0d72464b5d3fc04910e4",
+      "dateModified": "2026-11-23"
     },
     {
       "locale": "da",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/da/visuals/",
-      "sha256": "f80237f07d4a3a2956ef7c1ef2626ddd16c3ff80aa70d3c8c2717c9563749ea8",
-      "dateModified": "2026-11-21"
+      "sha256": "2f2df0939e96375083ed9f8fe63fbabb454914b9a97b8211b49b0f9b744ce43f",
+      "dateModified": "2026-11-23"
     },
     {
       "locale": "de-DE",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/de-DE/visuals/",
-      "sha256": "5ce2176300376318cb95030802bc30010f5161ad2dffa18e1e1a9b8342f88f4f",
-      "dateModified": "2026-11-21"
+      "sha256": "37ebd7607221cac75c501caf60022c8875a243bba8d03a0ebd7874ba102503e0",
+      "dateModified": "2026-11-23"
     },
     {
       "locale": "el",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/el/visuals/",
-      "sha256": "d5f615d05398273133725d9d4a10ffccc2f4340ac48acd550d3d8c78beed647d",
-      "dateModified": "2026-11-21"
+      "sha256": "48bf433283b3cbc604f1592817aad1497440c69b59c4db6b693493d98d2b7447",
+      "dateModified": "2026-11-23"
     },
     {
       "locale": "en-AU",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/en-AU/visuals/",
-      "sha256": "9710f5f4d5d2327367a7f94f63400d28ea006e3dbbce3e60bb1f87a21146f72a",
-      "dateModified": "2026-11-21"
+      "sha256": "194252305beaed1c3427d9fe0a2539d3a573ba40739d63fc14d87839ba5a6c61",
+      "dateModified": "2026-11-23"
     },
     {
       "locale": "en-CA",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/en-CA/visuals/",
-      "sha256": "f8aeecefd3f1691bf129f27808bbc6503243aff3a304f99b731401917daf97f7",
-      "dateModified": "2026-11-21"
+      "sha256": "d05d1317129a2f16baf971779d71e2b381f682347a040133aa2432b078662b1d",
+      "dateModified": "2026-11-23"
     },
     {
       "locale": "en-GB",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/en-GB/visuals/",
-      "sha256": "f84ee204c86a0987ce724c9ed97b28f85392b262480aee740149f75d795a0e29",
-      "dateModified": "2026-11-21"
+      "sha256": "63db52d6590e4b48aa25287438b35004ff12496c2739de0f757e988dcd053be3",
+      "dateModified": "2026-11-23"
     },
     {
       "locale": "en-US",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/en-US/visuals/",
-      "sha256": "1affee63ceb017467347f7a199a6ff8e60c0844a3e61a6c15d1925d2418da9a4",
-      "dateModified": "2026-11-21"
+      "sha256": "388b69bd14a1fcc7070950396fc871c1e7ad471af66b02c6b3e54bda401420ef",
+      "dateModified": "2026-11-23"
     },
     {
       "locale": "es-ES",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/es-ES/visuals/",
-      "sha256": "8fdb5772099e8bf62962514bf6d40722d15e6fc94d478115ef41eea5d1a8bdb4",
-      "dateModified": "2026-11-21"
+      "sha256": "8c17d3aeb7836530db8a691811492e6f4d26f77b8db5d29b1b25dd7d80a6d0bd",
+      "dateModified": "2026-11-23"
     },
     {
       "locale": "es-MX",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/es-MX/visuals/",
-      "sha256": "b11398f6babaebaff7db194488bee8ac477f64bcd8ff393188faf9ccbcdd3ffa",
-      "dateModified": "2026-11-21"
+      "sha256": "930a7b4ce291eab540948ad8b90fa81617fe97adc0350c078f15a270a403acbd",
+      "dateModified": "2026-11-23"
     },
     {
       "locale": "fi",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/fi/visuals/",
-      "sha256": "5dc35901366acbc3b988624eb1a267e3cf43cb8022798114d550daa7768795a1",
-      "dateModified": "2026-11-21"
+      "sha256": "c1ab85499cba1ddf11bdaffb2719fe29400c91e5062351b0cfff40f6d4bb8415",
+      "dateModified": "2026-11-23"
     },
     {
       "locale": "fr-CA",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/fr-CA/visuals/",
-      "sha256": "de0dbaac8dd886d1a8578e8c614e42c34b9353111a060da217b5dff88ee7e35f",
-      "dateModified": "2026-11-21"
+      "sha256": "e384b116ddc1eb4f408b8135e68070e6c89db63f48a9c9966ec2d81ff5bb23ac",
+      "dateModified": "2026-11-23"
     },
     {
       "locale": "fr-FR",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/fr-FR/visuals/",
-      "sha256": "644da4f5ef744efec43b12e4311abaa1af8953d542335c8091805785e242e848",
-      "dateModified": "2026-11-21"
+      "sha256": "218b15d38bce4c0bd224381072506c13d5de2c92f40582ce1e82e04335a68107",
+      "dateModified": "2026-11-23"
     },
     {
       "locale": "gu-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/gu-IN/visuals/",
-      "sha256": "b30ed13a016737b14139f1b2bf687c97cf13e85ade2a68ffd07239e9794bbcc9",
-      "dateModified": "2026-11-21"
+      "sha256": "da178987578e1d172a108a0cdf09d38eb2fa33d053c65809d1a8242a03eee047",
+      "dateModified": "2026-11-23"
     },
     {
       "locale": "he",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/he/visuals/",
-      "sha256": "e172087063afa7bae62ceee68af3de381ba145f888d809236a94cbf75be11f56",
-      "dateModified": "2026-11-21"
+      "sha256": "8af6312b7efb0322851479c85580d5fc6ace630b8b604d14c64f7c5990ed899e",
+      "dateModified": "2026-11-23"
     },
     {
       "locale": "hi",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/hi/visuals/",
-      "sha256": "9f2cba57ef0de04a54f3c60127a37e59cefebc7b6f0beeb7e7409ade70776901",
-      "dateModified": "2026-11-21"
+      "sha256": "514d5a184eeb316d981a80e697e92155c0d0cb5d8974ae50f025011202f7eb37",
+      "dateModified": "2026-11-23"
     },
     {
       "locale": "hr",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/hr/visuals/",
-      "sha256": "3c8cba1d8f4248a163b6e2e789a058b89bd2e089fbb0733687fa0c63c27dac3c",
-      "dateModified": "2026-11-21"
+      "sha256": "1987540c9e15cbffb86b641acbd1b595d857d5878d9de683b5a9d7dd41aa57d0",
+      "dateModified": "2026-11-23"
     },
     {
       "locale": "hu",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/hu/visuals/",
-      "sha256": "52b46940ca0bdec2d53c172b1ecbe48ab3131e9abae54d7010163e02a1f1a408",
-      "dateModified": "2026-11-21"
+      "sha256": "2ff3baf9376b943f283fe17ec9cfe28f331696f6aeed856d85c25903510b5761",
+      "dateModified": "2026-11-23"
     },
     {
       "locale": "id",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/id/visuals/",
-      "sha256": "8c1570dc0abacc4ff455baa0fc37429f968cf5bad27a134c98e01f2cf03736ae",
-      "dateModified": "2026-11-21"
+      "sha256": "95028cd4dca7980f9fedc78eb432f27393f52b4363a9d4a7b4604c9666b4b1d4",
+      "dateModified": "2026-11-23"
     },
     {
       "locale": "it",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/it/visuals/",
-      "sha256": "a83f28a65f135d50fc454e94185607166fa046960a51a076ffce0a1237c52a0a",
-      "dateModified": "2026-11-21"
+      "sha256": "3ef2b986c8eb0135c5fd231172d26a8149eb6ca718aa4d9010e01a3c3287464d",
+      "dateModified": "2026-11-23"
     },
     {
       "locale": "ja",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ja/visuals/",
-      "sha256": "d63ecba0b644ff2c5ac9d01daaa970685de09ed3bf3c93b14bb084e21fb56fad",
-      "dateModified": "2026-11-21"
+      "sha256": "ca3f079a03254725d6fbc5e6c498a1a8241ef1a6bc19a4cdcccff54de2dbe67e",
+      "dateModified": "2026-11-23"
     },
     {
       "locale": "kn-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/kn-IN/visuals/",
-      "sha256": "dbdbeb12a0b6155a0d8a7719d97b038fc727fc25e08a92373eeeafdebb237038",
-      "dateModified": "2026-11-21"
+      "sha256": "1fb8c5224f0dffb804df3f82dc7fe64e55d9054c967380704bfe5ec2e03466b6",
+      "dateModified": "2026-11-23"
     },
     {
       "locale": "ko",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ko/visuals/",
-      "sha256": "a59150c8bea2e78069977066e56e87d38706bde1292dcf941d233c07e8205da9",
-      "dateModified": "2026-11-21"
+      "sha256": "e7af0b8d779b355c63212d3d35d7ec4d2169fe2e611d542b38452d0f4b98ed9b",
+      "dateModified": "2026-11-23"
     },
     {
       "locale": "ml-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ml-IN/visuals/",
-      "sha256": "129003cf92e9ed09c357af253cd99c246eadf88377e5720683bc1b0137b267c1",
-      "dateModified": "2026-11-21"
+      "sha256": "bac32fba878478c0a3b18af359b9915dfa1181273c1a487e6e57174d5a38c9c8",
+      "dateModified": "2026-11-23"
     },
     {
       "locale": "mr-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/mr-IN/visuals/",
-      "sha256": "216e9930539253d99e504d80bcae9f29ba85d0329a0bcebc53493d353ec1648f",
-      "dateModified": "2026-11-21"
+      "sha256": "b2cd2be6fc2fb0df1c84d542f4141ee31aa324fe11afa93cb118db34da70d777",
+      "dateModified": "2026-11-23"
     },
     {
       "locale": "ms",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ms/visuals/",
-      "sha256": "06641b4116f49140303caceaea7917cf8aeaedef05037969e7bda60891bc8f55",
-      "dateModified": "2026-11-21"
+      "sha256": "26b29eae453ad90740ba9f924bb08d11e7412b9aacc284ea91d829fe0a9b22db",
+      "dateModified": "2026-11-23"
     },
     {
       "locale": "nl-NL",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/nl-NL/visuals/",
-      "sha256": "87eeb7f4accbd6036639216b098d69818451b8227fd5d39d751f53470570da4d",
-      "dateModified": "2026-11-21"
+      "sha256": "e1f33a3496668a74c8c2682090c84b5254cd16dfa4a35adc33e559682a7e4019",
+      "dateModified": "2026-11-23"
     },
     {
       "locale": "no",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/no/visuals/",
-      "sha256": "6fd088d61094e8615c560fb15c45624dbb2d35a91723accc5736716203ab1d40",
-      "dateModified": "2026-11-21"
+      "sha256": "3978092a6c18fbfa0efb8780f9629d252f600b59400327834d11571d5046236b",
+      "dateModified": "2026-11-23"
     },
     {
       "locale": "or-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/or-IN/visuals/",
-      "sha256": "3db17ba073fb3279f4aa5b2672fbb2473b93071ce256b6cc524f41cc5d0ace05",
-      "dateModified": "2026-11-21"
+      "sha256": "6d42f653452611445e17a3742acbcbde65c17a90c513aa9a14f9963f86438bb3",
+      "dateModified": "2026-11-23"
     },
     {
       "locale": "pa-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/pa-IN/visuals/",
-      "sha256": "ed02dfcc790e5eaf870b8bcc20df0d9ac93bd91ac4440298a0eeeaddea504367",
-      "dateModified": "2026-11-21"
+      "sha256": "ab650169c2b192d640a3873e9f92582953f3e5b20a8b05ee99241b88d34a41aa",
+      "dateModified": "2026-11-23"
     },
     {
       "locale": "pl",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/pl/visuals/",
-      "sha256": "afb7ed9f47eb4c0e085c59f891c17340607ae69e799693f1a0bfde422d5f3a7a",
-      "dateModified": "2026-11-21"
+      "sha256": "949e22e01827a65b76bb78631b2749e13c0a6996013d112899cf0545cb68ae74",
+      "dateModified": "2026-11-23"
     },
     {
       "locale": "pt-BR",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/pt-BR/visuals/",
-      "sha256": "ca15e0a4507c145f7c35690561ec76262a1cbfe7dd55e7543347c2eb0bf91065",
-      "dateModified": "2026-11-21"
+      "sha256": "b80218e53e710713d9fbdd04091d66ce8d3161b76c7153bb7dfd6d5402a6cfd3",
+      "dateModified": "2026-11-23"
     },
     {
       "locale": "pt-PT",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/pt-PT/visuals/",
-      "sha256": "9dba44513b50f9011fcebd83de0fd095fad726e6bc27f56323a36a3d9605ecf7",
-      "dateModified": "2026-11-21"
+      "sha256": "8660ab3f0d1951056af5a1880f78a764839409c110ca16cc5ab96277b341c26c",
+      "dateModified": "2026-11-23"
     },
     {
       "locale": "ro",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ro/visuals/",
-      "sha256": "04c1b2484c37a89428be52d4b31e7e547c99a168dd821bc24d4ef10300d80512",
-      "dateModified": "2026-11-21"
+      "sha256": "87216c188ecc31bbd78693ca01a87ff6e680fa11d6001b2c89c6b346563e2cae",
+      "dateModified": "2026-11-23"
     },
     {
       "locale": "ru",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ru/visuals/",
-      "sha256": "86bfa4a9b4056a84f916fa1af99c986887d55193b0f40511913277b26edd5b28",
-      "dateModified": "2026-11-21"
+      "sha256": "e9ac8b3d2d62b026c5b12e50a7ca417981045295dc022f3122b8a387084af968",
+      "dateModified": "2026-11-23"
     },
     {
       "locale": "sk",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/sk/visuals/",
-      "sha256": "1af748e89251dd54cb7fab84b239015bc4735bfbd738868ec29b9698ffafb32c",
-      "dateModified": "2026-11-21"
+      "sha256": "6ee01b35052278f2355198af7753a9aff4338e454aa618e487b5d9c6ec3599da",
+      "dateModified": "2026-11-23"
     },
     {
       "locale": "sl-SI",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/sl-SI/visuals/",
-      "sha256": "8771897940a79a334d03942389776e2560248c1779090ab43cc4b9a73e3a384a",
-      "dateModified": "2026-11-21"
+      "sha256": "a1b486d30364e388a0ad1e61ded28857009a5a8cfe1ee09b0127da7e5e9f13fc",
+      "dateModified": "2026-11-23"
     },
     {
       "locale": "sv",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/sv/visuals/",
-      "sha256": "2548b71e44801c39431ee32a7f4a7ccbaa17977bf3898f0a03d14239e8660156",
-      "dateModified": "2026-11-21"
+      "sha256": "86de364e92ddfc9dec31ad54cf98251f65e455150f3e648ff94acaf9ecc41086",
+      "dateModified": "2026-11-23"
     },
     {
       "locale": "ta-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ta-IN/visuals/",
-      "sha256": "36c15afd291aecc175aa783e64bb36533158be605acb3255a26f41b7ff445a25",
-      "dateModified": "2026-11-21"
+      "sha256": "b6da748034446d20c7b83350c9ebc15747f0f0f32ca442cc4e35849528671046",
+      "dateModified": "2026-11-23"
     },
     {
       "locale": "te-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/te-IN/visuals/",
-      "sha256": "945f762bfb7dd98932468e065255b0946b8567b6c0e05a3f080788f5acd430a9",
-      "dateModified": "2026-11-21"
+      "sha256": "70fd4cf215845f5b34352087b23414b732daba96060dd72f3a1e35c1b37ef7a5",
+      "dateModified": "2026-11-23"
     },
     {
       "locale": "th",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/th/visuals/",
-      "sha256": "3f62061a0866856ea8518b379caf686ed2ee807c7e21b022175f501cb6da3d46",
-      "dateModified": "2026-11-21"
+      "sha256": "553383f2ea90515dffba466bc78b304670e09b4d7ce49f971dded1c6fda333e8",
+      "dateModified": "2026-11-23"
     },
     {
       "locale": "tr",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/tr/visuals/",
-      "sha256": "b05b0ed16a72269ed7775dbe4a0c2ac3da9f12f62d68d01264f91c008109dff6",
-      "dateModified": "2026-11-21"
+      "sha256": "9c32b20090496764f9a833d08d47d05cd735479942a4c9cf3c7a276f147ae7b7",
+      "dateModified": "2026-11-23"
     },
     {
       "locale": "uk",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/uk/visuals/",
-      "sha256": "c99a850a8bf88a3b936f62a99d4e5567952107469445cac5ad652ef87e98d009",
-      "dateModified": "2026-11-21"
+      "sha256": "c9dc310174c6391537f2b5715e15bf2fed0302ca4d139b0de71119097f6bacc4",
+      "dateModified": "2026-11-23"
     },
     {
       "locale": "ur-PK",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ur-PK/visuals/",
-      "sha256": "ea57f55b80d8bbaaff0f7080d0ae871d92ef007d3492ded0ddbab747d8dfc46f",
-      "dateModified": "2026-11-21"
+      "sha256": "dea0ede5aeae55845bd60d830b8419abe2addc833bd4605689a357b523f4e790",
+      "dateModified": "2026-11-23"
     },
     {
       "locale": "vi",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/vi/visuals/",
-      "sha256": "8460f9fca40e957b6f7a9e2ca97945ab2ba176cbae8a621290d7104eeb45ecb4",
-      "dateModified": "2026-11-21"
+      "sha256": "74e313a50938f06514d38d2bca7f85bd39a80a262792a69575c72183a14c94f3",
+      "dateModified": "2026-11-23"
     },
     {
       "locale": "zh-Hans",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/visuals/",
-      "sha256": "1c3ab8c34afae5ae99be3f9df59b78e2f2ba3193af27f90b93ec1cb034683626",
-      "dateModified": "2026-11-21"
+      "sha256": "0a9c55e86c6eaf07882b124e313031dedf08bd99f5d5b60b445106ced1cff411",
+      "dateModified": "2026-11-23"
     },
     {
       "locale": "zh-Hant",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/visuals/",
-      "sha256": "f18c6bedd623611603c7ebac024b501058b2058aaafc538a30ab33d6e7e2096c",
-      "dateModified": "2026-11-21"
+      "sha256": "68e69de3bfac55d8c0332d06eaa77523c70dfca96c5f9b5669514a9742e2dfdd",
+      "dateModified": "2026-11-23"
     }
   ],
   "publisher_authored": true,
@@ -518,6 +518,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ar-SA/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
       "app_store_url": "https://apps.apple.com/sa/app/id6754218117?pt=118326163&ct=iag_visual_ar_sa&mt=8",
       "sha256": "5e405336242d16f2e11169f3744117a38110f4d09338e9e2a5d1f82849d94f13"
+    },
+    {
+      "locale": "ar-SA",
+      "app_key": "jellyday",
+      "app_store_id": "6835673714",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ar-SA/jellyday.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ar-SA/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ar-SA/jellyday.html",
+      "app_store_url": "https://apps.apple.com/sa/app/id6835673714?pt=118326163&ct=iag_visual_ar_sa&mt=8",
+      "sha256": "b4452992cbeddee3df872456574c695c940149a574ab88923ff765237d402780"
     },
     {
       "locale": "ar-SA",
@@ -1441,6 +1451,35 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/hourstag.html",
       "app_store_url": null,
       "sha256": "0dc6fb72c51adbf883f04f07caea2873e93e3a588df5e266f10231c884e2f319",
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+        "evidence": {
+          "source_url": "https://support.apple.com/en-us/118205",
+          "observed_at": "2026-09-12",
+          "country": "BD",
+          "apple_media_services_markets": 174,
+          "country_listed": false,
+          "lookup_app_results": 0,
+          "lookup_control_results": 0,
+          "redirect_market": "US"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
+    },
+    {
+      "locale": "bn-BD",
+      "app_key": "jellyday",
+      "app_store_id": "6835673714",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/bn-BD/jellyday.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/bn-BD/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/jellyday.html",
+      "app_store_url": null,
+      "sha256": "cd92a8c49d0382a161f12b01e091de3f6d90c5fa9ba6d086cff570d121b5f210",
       "market_availability": {
         "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
         "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
@@ -2861,6 +2900,16 @@
     },
     {
       "locale": "ca",
+      "app_key": "jellyday",
+      "app_store_id": "6835673714",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ca/jellyday.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ca/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ca/jellyday.html",
+      "app_store_url": "https://apps.apple.com/es/app/id6835673714?pt=118326163&ct=iag_visual_ca&mt=8",
+      "sha256": "e68504bdf69d8bb43e5eaaf7a09d5fa56ec36282e3a37b58aca2fa273d089083"
+    },
+    {
+      "locale": "ca",
       "app_key": "kumo",
       "app_store_id": "6830824515",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ca/kumo.svg",
@@ -3458,6 +3507,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/cs/hourstag.html",
       "app_store_url": "https://apps.apple.com/cz/app/id6754218117?pt=118326163&ct=iag_visual_cs&mt=8",
       "sha256": "dd43dc833750f3caf2c8572986d72307f46c22fffa080efa8e0e90f039c6c3f6"
+    },
+    {
+      "locale": "cs",
+      "app_key": "jellyday",
+      "app_store_id": "6835673714",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/cs/jellyday.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/cs/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/cs/jellyday.html",
+      "app_store_url": "https://apps.apple.com/cz/app/id6835673714?pt=118326163&ct=iag_visual_cs&mt=8",
+      "sha256": "5872307236a451eb9ddc352590268ffb94fcaad3567417d170a3824e12d4170e"
     },
     {
       "locale": "cs",
@@ -4061,6 +4120,16 @@
     },
     {
       "locale": "da",
+      "app_key": "jellyday",
+      "app_store_id": "6835673714",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/da/jellyday.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/da/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/da/jellyday.html",
+      "app_store_url": "https://apps.apple.com/dk/app/id6835673714?pt=118326163&ct=iag_visual_da&mt=8",
+      "sha256": "92801ba9482e265dfca7b1947706b94ede434f18f340fb911867a0d627c0f3c2"
+    },
+    {
+      "locale": "da",
       "app_key": "kumo",
       "app_store_id": "6830824515",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/da/kumo.svg",
@@ -4658,6 +4727,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/de-DE/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
       "app_store_url": "https://apps.apple.com/de/app/id6754218117?pt=118326163&ct=iag_visual_de_de&mt=8",
       "sha256": "399f6c257eabaa7e61db6cb68d81c7e77cb52cef2f3d4fd75b6c8af93cdeb9bf"
+    },
+    {
+      "locale": "de-DE",
+      "app_key": "jellyday",
+      "app_store_id": "6835673714",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/de-DE/jellyday.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/de-DE/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/de-DE/jellyday.html",
+      "app_store_url": "https://apps.apple.com/de/app/id6835673714?pt=118326163&ct=iag_visual_de_de&mt=8",
+      "sha256": "e9b79030af7f435a4493cba37703f0a0027c9998699c2eb22048d5aaa5250c75"
     },
     {
       "locale": "de-DE",
@@ -5261,6 +5340,16 @@
     },
     {
       "locale": "el",
+      "app_key": "jellyday",
+      "app_store_id": "6835673714",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/el/jellyday.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/el/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/el/jellyday.html",
+      "app_store_url": "https://apps.apple.com/gr/app/id6835673714?pt=118326163&ct=iag_visual_el&mt=8",
+      "sha256": "d345d942c8cce5795ffdd49e1bdf3bf5fa55c12173b85819e6afcbf6b55f6acf"
+    },
+    {
+      "locale": "el",
       "app_key": "kumo",
       "app_store_id": "6830824515",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/el/kumo.svg",
@@ -5858,6 +5947,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-AU/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
       "app_store_url": "https://apps.apple.com/au/app/id6754218117?pt=118326163&ct=iag_visual_en_au&mt=8",
       "sha256": "964acd40949ef9cc9edda595c74c6b8eefb14b2332ada0b5b01dbee4a9390713"
+    },
+    {
+      "locale": "en-AU",
+      "app_key": "jellyday",
+      "app_store_id": "6835673714",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/en-AU/jellyday.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/en-AU/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-AU/jellyday.html",
+      "app_store_url": "https://apps.apple.com/au/app/id6835673714?pt=118326163&ct=iag_visual_en_au&mt=8",
+      "sha256": "b926386d96d2b8bc9b8f06383b0662c85e159c6da47792a0a3aa6561df0de186"
     },
     {
       "locale": "en-AU",
@@ -6461,6 +6560,16 @@
     },
     {
       "locale": "en-CA",
+      "app_key": "jellyday",
+      "app_store_id": "6835673714",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/en-CA/jellyday.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/en-CA/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-CA/jellyday.html",
+      "app_store_url": "https://apps.apple.com/ca/app/id6835673714?pt=118326163&ct=iag_visual_en_ca&mt=8",
+      "sha256": "a97ab920ac643a491e2696510c3cc9dc2a3efff0698f65245ce99848f2a59b58"
+    },
+    {
+      "locale": "en-CA",
       "app_key": "kumo",
       "app_store_id": "6830824515",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/en-CA/kumo.svg",
@@ -7058,6 +7167,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-GB/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
       "app_store_url": "https://apps.apple.com/gb/app/id6754218117?pt=118326163&ct=iag_visual_en_gb&mt=8",
       "sha256": "712c1d3c9890b4c167220d6450284d6b523c86c6386ea0fcc14d7ac2dc906d90"
+    },
+    {
+      "locale": "en-GB",
+      "app_key": "jellyday",
+      "app_store_id": "6835673714",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/en-GB/jellyday.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/en-GB/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-GB/jellyday.html",
+      "app_store_url": "https://apps.apple.com/gb/app/id6835673714?pt=118326163&ct=iag_visual_en_gb&mt=8",
+      "sha256": "0edcc6c066626f735da8f66aeb8994a07758391177e6fa823a9e2c001db49dce"
     },
     {
       "locale": "en-GB",
@@ -7661,6 +7780,16 @@
     },
     {
       "locale": "en-US",
+      "app_key": "jellyday",
+      "app_store_id": "6835673714",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/en-US/jellyday.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/en-US/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-US/jellyday.html",
+      "app_store_url": "https://apps.apple.com/us/app/id6835673714?pt=118326163&ct=iag_visual_en_us&mt=8",
+      "sha256": "ff2e8d4d262ab5c4cfa10dbde145621d30dccd462d00835ce0803e92af37026e"
+    },
+    {
+      "locale": "en-US",
       "app_key": "kumo",
       "app_store_id": "6830824515",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/en-US/kumo.svg",
@@ -8258,6 +8387,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/es-ES/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
       "app_store_url": "https://apps.apple.com/es/app/id6754218117?pt=118326163&ct=iag_visual_es_es&mt=8",
       "sha256": "7a2ff672fce3ff0246a5cf0977c640c890ada00a9c542e9dfb2ed83cffcf0f7f"
+    },
+    {
+      "locale": "es-ES",
+      "app_key": "jellyday",
+      "app_store_id": "6835673714",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/es-ES/jellyday.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/es-ES/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/es-ES/jellyday.html",
+      "app_store_url": "https://apps.apple.com/es/app/id6835673714?pt=118326163&ct=iag_visual_es_es&mt=8",
+      "sha256": "4d5b558669fba1e2a1dda5f240d68cd2094f9cc777822fe1dee48a12aa0c9aaf"
     },
     {
       "locale": "es-ES",
@@ -8861,6 +9000,16 @@
     },
     {
       "locale": "es-MX",
+      "app_key": "jellyday",
+      "app_store_id": "6835673714",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/es-MX/jellyday.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/es-MX/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/es-MX/jellyday.html",
+      "app_store_url": "https://apps.apple.com/mx/app/id6835673714?pt=118326163&ct=iag_visual_es_mx&mt=8",
+      "sha256": "bdb74fb58ef86b121cdef5795fad67c580320dca3118b03d0fc17444bc2154e4"
+    },
+    {
+      "locale": "es-MX",
       "app_key": "kumo",
       "app_store_id": "6830824515",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/es-MX/kumo.svg",
@@ -9458,6 +9607,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/fi/hourstag.html",
       "app_store_url": "https://apps.apple.com/fi/app/id6754218117?pt=118326163&ct=iag_visual_fi&mt=8",
       "sha256": "7ac74da650dded24802bcb2c949a3796e287d74ecb6ab61e33086b98ba69cc03"
+    },
+    {
+      "locale": "fi",
+      "app_key": "jellyday",
+      "app_store_id": "6835673714",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/fi/jellyday.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/fi/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/fi/jellyday.html",
+      "app_store_url": "https://apps.apple.com/fi/app/id6835673714?pt=118326163&ct=iag_visual_fi&mt=8",
+      "sha256": "2a3a637de4c2d8172bd2953725218a37768a94c5bc4b1c80a07d2a30ce16cbbb"
     },
     {
       "locale": "fi",
@@ -10061,6 +10220,16 @@
     },
     {
       "locale": "fr-CA",
+      "app_key": "jellyday",
+      "app_store_id": "6835673714",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/fr-CA/jellyday.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/fr-CA/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/fr-CA/jellyday.html",
+      "app_store_url": "https://apps.apple.com/ca/app/id6835673714?pt=118326163&ct=iag_visual_fr_ca&mt=8",
+      "sha256": "a87d4cf91a0cc02225eed7d9020d8f9dad4516b0624523f905881c1fd1deb0cb"
+    },
+    {
+      "locale": "fr-CA",
       "app_key": "kumo",
       "app_store_id": "6830824515",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/fr-CA/kumo.svg",
@@ -10658,6 +10827,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/fr-FR/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
       "app_store_url": "https://apps.apple.com/fr/app/id6754218117?pt=118326163&ct=iag_visual_fr_fr&mt=8",
       "sha256": "1679a2e624bb51b9327e394e789fddcec014d90c25b9b8b13c0256393f6aef59"
+    },
+    {
+      "locale": "fr-FR",
+      "app_key": "jellyday",
+      "app_store_id": "6835673714",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/fr-FR/jellyday.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/fr-FR/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/fr-FR/jellyday.html",
+      "app_store_url": "https://apps.apple.com/fr/app/id6835673714?pt=118326163&ct=iag_visual_fr_fr&mt=8",
+      "sha256": "3d52139a289b193e13eb649b351e05b5140e7d3cf04e00a3f8e4984a7b81c629"
     },
     {
       "locale": "fr-FR",
@@ -11261,6 +11440,16 @@
     },
     {
       "locale": "gu-IN",
+      "app_key": "jellyday",
+      "app_store_id": "6835673714",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/gu-IN/jellyday.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/gu-IN/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/gu-IN/jellyday.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6835673714?pt=118326163&ct=iag_visual_gu_in&mt=8",
+      "sha256": "ba0c0e1ba550761ea701f8743cefbaf53d39757f4f92ec2c723a7e8fc92fed64"
+    },
+    {
+      "locale": "gu-IN",
       "app_key": "kumo",
       "app_store_id": "6830824515",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/gu-IN/kumo.svg",
@@ -11858,6 +12047,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/he/hourstag.html",
       "app_store_url": "https://apps.apple.com/il/app/id6754218117?pt=118326163&ct=iag_visual_he&mt=8",
       "sha256": "8a888349b4fee180e128f8a2e9c0ea6cfe14d621c1161f2d5e57e83ff3bcf0d3"
+    },
+    {
+      "locale": "he",
+      "app_key": "jellyday",
+      "app_store_id": "6835673714",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/he/jellyday.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/he/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/he/jellyday.html",
+      "app_store_url": "https://apps.apple.com/il/app/id6835673714?pt=118326163&ct=iag_visual_he&mt=8",
+      "sha256": "b0f925da64f5792733658d900c34b2273accbf993ec82c61ac96d1306d6d3256"
     },
     {
       "locale": "he",
@@ -12461,6 +12660,16 @@
     },
     {
       "locale": "hi",
+      "app_key": "jellyday",
+      "app_store_id": "6835673714",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/hi/jellyday.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/hi/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/hi/jellyday.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6835673714?pt=118326163&ct=iag_visual_hi&mt=8",
+      "sha256": "60d2abf38d8b8501e761540aabcbc4fb69d88e2d7e32a19f7fcdba3a6c0364a6"
+    },
+    {
+      "locale": "hi",
       "app_key": "kumo",
       "app_store_id": "6830824515",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/hi/kumo.svg",
@@ -13058,6 +13267,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/hr/hourstag.html",
       "app_store_url": "https://apps.apple.com/hr/app/id6754218117?pt=118326163&ct=iag_visual_hr&mt=8",
       "sha256": "3d79c86d35be909132536020cfc37d21318cf29c63ac527b0ac512cde2a68e8f"
+    },
+    {
+      "locale": "hr",
+      "app_key": "jellyday",
+      "app_store_id": "6835673714",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/hr/jellyday.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/hr/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/hr/jellyday.html",
+      "app_store_url": "https://apps.apple.com/hr/app/id6835673714?pt=118326163&ct=iag_visual_hr&mt=8",
+      "sha256": "0fa9bf01d67fc5b0aae09e846cd3ff5786e0627805aaf5ec650f681469ac54b4"
     },
     {
       "locale": "hr",
@@ -13661,6 +13880,16 @@
     },
     {
       "locale": "hu",
+      "app_key": "jellyday",
+      "app_store_id": "6835673714",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/hu/jellyday.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/hu/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/hu/jellyday.html",
+      "app_store_url": "https://apps.apple.com/hu/app/id6835673714?pt=118326163&ct=iag_visual_hu&mt=8",
+      "sha256": "ea8a9a80ffed185ab05316bb5061b4e4b194b2c97b7143a9ffed3839aff33e5b"
+    },
+    {
+      "locale": "hu",
       "app_key": "kumo",
       "app_store_id": "6830824515",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/hu/kumo.svg",
@@ -14258,6 +14487,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/id/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
       "app_store_url": "https://apps.apple.com/id/app/id6754218117?pt=118326163&ct=iag_visual_id&mt=8",
       "sha256": "f21c6633c2c13db81770ae86750c64cff85fbfa2413710f2ad0e6ddde102023c"
+    },
+    {
+      "locale": "id",
+      "app_key": "jellyday",
+      "app_store_id": "6835673714",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/id/jellyday.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/id/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/id/jellyday.html",
+      "app_store_url": "https://apps.apple.com/id/app/id6835673714?pt=118326163&ct=iag_visual_id&mt=8",
+      "sha256": "4c87f686bfada2af0bf740503c1635b86ef54815c3d171e64da014d8daae32de"
     },
     {
       "locale": "id",
@@ -14861,6 +15100,16 @@
     },
     {
       "locale": "it",
+      "app_key": "jellyday",
+      "app_store_id": "6835673714",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/it/jellyday.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/it/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/it/jellyday.html",
+      "app_store_url": "https://apps.apple.com/it/app/id6835673714?pt=118326163&ct=iag_visual_it&mt=8",
+      "sha256": "e87b08c60a5b51a8ec16205edfd8da51011e08f3b2551eba8c7464aabe0eed89"
+    },
+    {
+      "locale": "it",
       "app_key": "kumo",
       "app_store_id": "6830824515",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/it/kumo.svg",
@@ -15458,6 +15707,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ja/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
       "app_store_url": "https://apps.apple.com/jp/app/id6754218117?pt=118326163&ct=iag_visual_ja&mt=8",
       "sha256": "cba55dbdb33441fcef11e0c662f9e7fe96a8191bf0e680500969ff7ae469c7fc"
+    },
+    {
+      "locale": "ja",
+      "app_key": "jellyday",
+      "app_store_id": "6835673714",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ja/jellyday.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ja/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ja/jellyday.html",
+      "app_store_url": "https://apps.apple.com/jp/app/id6835673714?pt=118326163&ct=iag_visual_ja&mt=8",
+      "sha256": "7a291c756921922b4d1e04cb09d2903ab2d3bab3fbc85166f680a883806cee16"
     },
     {
       "locale": "ja",
@@ -16061,6 +16320,16 @@
     },
     {
       "locale": "kn-IN",
+      "app_key": "jellyday",
+      "app_store_id": "6835673714",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/kn-IN/jellyday.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/kn-IN/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/kn-IN/jellyday.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6835673714?pt=118326163&ct=iag_visual_kn_in&mt=8",
+      "sha256": "ddba2e5e4f16f85869ee2902d7cd7e915aca7e2793d087f80c3dd6adfe1d1449"
+    },
+    {
+      "locale": "kn-IN",
       "app_key": "kumo",
       "app_store_id": "6830824515",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/kn-IN/kumo.svg",
@@ -16658,6 +16927,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ko/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
       "app_store_url": "https://apps.apple.com/kr/app/id6754218117?pt=118326163&ct=iag_visual_ko&mt=8",
       "sha256": "a53070f2b191737b316d268c71e2a65f2dbeee5e8df0b441a397ff327a678a81"
+    },
+    {
+      "locale": "ko",
+      "app_key": "jellyday",
+      "app_store_id": "6835673714",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ko/jellyday.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ko/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ko/jellyday.html",
+      "app_store_url": "https://apps.apple.com/kr/app/id6835673714?pt=118326163&ct=iag_visual_ko&mt=8",
+      "sha256": "c45a880e7bdea0877e7643713393d8641fd4b210621185cf1e661e742f50ff39"
     },
     {
       "locale": "ko",
@@ -17261,6 +17540,16 @@
     },
     {
       "locale": "ml-IN",
+      "app_key": "jellyday",
+      "app_store_id": "6835673714",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ml-IN/jellyday.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ml-IN/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ml-IN/jellyday.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6835673714?pt=118326163&ct=iag_visual_ml_in&mt=8",
+      "sha256": "368d4a91c1b98ad1c4684e03e964bdbad7a897b42c6fae7a805926295a464ebf"
+    },
+    {
+      "locale": "ml-IN",
       "app_key": "kumo",
       "app_store_id": "6830824515",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ml-IN/kumo.svg",
@@ -17858,6 +18147,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/mr-IN/hourstag.html",
       "app_store_url": "https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=iag_visual_mr_in&mt=8",
       "sha256": "08166397ca8ddd73eff7f962fc14dac3a4defd87b6704185fba8d3fd8576af6f"
+    },
+    {
+      "locale": "mr-IN",
+      "app_key": "jellyday",
+      "app_store_id": "6835673714",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/mr-IN/jellyday.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/mr-IN/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/mr-IN/jellyday.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6835673714?pt=118326163&ct=iag_visual_mr_in&mt=8",
+      "sha256": "9e1806232847fba6de26b5b24f4d93a2ea83a3920b0784e93bbf5862e139ce18"
     },
     {
       "locale": "mr-IN",
@@ -18461,6 +18760,16 @@
     },
     {
       "locale": "ms",
+      "app_key": "jellyday",
+      "app_store_id": "6835673714",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ms/jellyday.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ms/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ms/jellyday.html",
+      "app_store_url": "https://apps.apple.com/my/app/id6835673714?pt=118326163&ct=iag_visual_ms&mt=8",
+      "sha256": "90f532e6dfe07c9f23681bd183d40cbfb94c721deba819ad4787c7e1bf9e3974"
+    },
+    {
+      "locale": "ms",
       "app_key": "kumo",
       "app_store_id": "6830824515",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ms/kumo.svg",
@@ -19058,6 +19367,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/hourstag.html",
       "app_store_url": "https://apps.apple.com/nl/app/id6754218117?pt=118326163&ct=iag_visual_nl_nl&mt=8",
       "sha256": "ca6d1eb340d24faa61fe8798921006d85343daba0ac29d3a1b1d58ae7f1f0b8d"
+    },
+    {
+      "locale": "nl-NL",
+      "app_key": "jellyday",
+      "app_store_id": "6835673714",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/nl-NL/jellyday.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/nl-NL/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/jellyday.html",
+      "app_store_url": "https://apps.apple.com/nl/app/id6835673714?pt=118326163&ct=iag_visual_nl_nl&mt=8",
+      "sha256": "21851fb34d935b64a5aeb4487d88f5b0376b2a9ccb3232fd017f051f127034f8"
     },
     {
       "locale": "nl-NL",
@@ -19661,6 +19980,16 @@
     },
     {
       "locale": "no",
+      "app_key": "jellyday",
+      "app_store_id": "6835673714",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/no/jellyday.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/no/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/no/jellyday.html",
+      "app_store_url": "https://apps.apple.com/no/app/id6835673714?pt=118326163&ct=iag_visual_no&mt=8",
+      "sha256": "be6eb5b4abfc636952de6bc52d11d4a9902b20ee7fe16f656420a40af548efed"
+    },
+    {
+      "locale": "no",
       "app_key": "kumo",
       "app_store_id": "6830824515",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/no/kumo.svg",
@@ -20258,6 +20587,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/or-IN/hourstag.html",
       "app_store_url": "https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=iag_visual_or_in&mt=8",
       "sha256": "5cd0a00c508ca95c0862533667d89f8239c0cf00513cd0479c0ceaa08aed54db"
+    },
+    {
+      "locale": "or-IN",
+      "app_key": "jellyday",
+      "app_store_id": "6835673714",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/or-IN/jellyday.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/or-IN/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/or-IN/jellyday.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6835673714?pt=118326163&ct=iag_visual_or_in&mt=8",
+      "sha256": "73117a0042be216e9d18b1ed67931f44daf74a2f5fabbbd380a9403a28412712"
     },
     {
       "locale": "or-IN",
@@ -20861,6 +21200,16 @@
     },
     {
       "locale": "pa-IN",
+      "app_key": "jellyday",
+      "app_store_id": "6835673714",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/pa-IN/jellyday.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/pa-IN/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/pa-IN/jellyday.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6835673714?pt=118326163&ct=iag_visual_pa_in&mt=8",
+      "sha256": "ac4eab83dd9829398115266da0c47e1867603d475ff1777a280e0b8d5b228083"
+    },
+    {
+      "locale": "pa-IN",
       "app_key": "kumo",
       "app_store_id": "6830824515",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/pa-IN/kumo.svg",
@@ -21458,6 +21807,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/pl/hourstag.html",
       "app_store_url": "https://apps.apple.com/pl/app/id6754218117?pt=118326163&ct=iag_visual_pl&mt=8",
       "sha256": "032203ea9e963c7fa7154f3210c58f550aceeac1e8bc771b3e04ec250a5cdd70"
+    },
+    {
+      "locale": "pl",
+      "app_key": "jellyday",
+      "app_store_id": "6835673714",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/pl/jellyday.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/pl/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/pl/jellyday.html",
+      "app_store_url": "https://apps.apple.com/pl/app/id6835673714?pt=118326163&ct=iag_visual_pl&mt=8",
+      "sha256": "887c67f93a458b9f14e3c937041f92121ef576b95da17f7946e64b87e870185c"
     },
     {
       "locale": "pl",
@@ -22061,6 +22420,16 @@
     },
     {
       "locale": "pt-BR",
+      "app_key": "jellyday",
+      "app_store_id": "6835673714",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/pt-BR/jellyday.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/pt-BR/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/pt-BR/jellyday.html",
+      "app_store_url": "https://apps.apple.com/br/app/id6835673714?pt=118326163&ct=iag_visual_pt_br&mt=8",
+      "sha256": "7d71540fd3c94d93c3ddcf1774bf5fd95d0166c61c083bad29308e80e0d11c37"
+    },
+    {
+      "locale": "pt-BR",
       "app_key": "kumo",
       "app_store_id": "6830824515",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/pt-BR/kumo.svg",
@@ -22658,6 +23027,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/pt-PT/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
       "app_store_url": "https://apps.apple.com/pt/app/id6754218117?pt=118326163&ct=iag_visual_pt_pt&mt=8",
       "sha256": "ce8830b1ad0726ce62a1b08490830516e1dbc03542a6774a0a04a2f60b87307f"
+    },
+    {
+      "locale": "pt-PT",
+      "app_key": "jellyday",
+      "app_store_id": "6835673714",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/pt-PT/jellyday.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/pt-PT/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/pt-PT/jellyday.html",
+      "app_store_url": "https://apps.apple.com/pt/app/id6835673714?pt=118326163&ct=iag_visual_pt_pt&mt=8",
+      "sha256": "8510be52598f24a300efc877f5e786cb9f2b8ad1f8078580998eee22afb73ee7"
     },
     {
       "locale": "pt-PT",
@@ -23261,6 +23640,16 @@
     },
     {
       "locale": "ro",
+      "app_key": "jellyday",
+      "app_store_id": "6835673714",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ro/jellyday.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ro/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ro/jellyday.html",
+      "app_store_url": "https://apps.apple.com/ro/app/id6835673714?pt=118326163&ct=iag_visual_ro&mt=8",
+      "sha256": "1a1ca914141ee5497564e5f76f9df5de4327389f310ac30f283b39c6ea2a906a"
+    },
+    {
+      "locale": "ro",
       "app_key": "kumo",
       "app_store_id": "6830824515",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ro/kumo.svg",
@@ -23858,6 +24247,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ru/hourstag.html",
       "app_store_url": "https://apps.apple.com/ru/app/id6754218117?pt=118326163&ct=iag_visual_ru&mt=8",
       "sha256": "feb0d3c21cc6b1519b70809e32011af3a85ac7d596a606e74daa90ba2951a00b"
+    },
+    {
+      "locale": "ru",
+      "app_key": "jellyday",
+      "app_store_id": "6835673714",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ru/jellyday.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ru/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ru/jellyday.html",
+      "app_store_url": "https://apps.apple.com/ru/app/id6835673714?pt=118326163&ct=iag_visual_ru&mt=8",
+      "sha256": "569c3c1dfd0e840d57eab5bd8a17046805f2add87f4b28d79eb01589f29f3253"
     },
     {
       "locale": "ru",
@@ -24461,6 +24860,16 @@
     },
     {
       "locale": "sk",
+      "app_key": "jellyday",
+      "app_store_id": "6835673714",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/sk/jellyday.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/sk/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/sk/jellyday.html",
+      "app_store_url": "https://apps.apple.com/sk/app/id6835673714?pt=118326163&ct=iag_visual_sk&mt=8",
+      "sha256": "7a20bf83c08ae6135b34dd35eb3b87277b8f02d0173c1ca3c390e7ee2040008d"
+    },
+    {
+      "locale": "sk",
       "app_key": "kumo",
       "app_store_id": "6830824515",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/sk/kumo.svg",
@@ -25058,6 +25467,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/sl-SI/hourstag.html",
       "app_store_url": "https://apps.apple.com/si/app/id6754218117?pt=118326163&ct=iag_visual_sl_si&mt=8",
       "sha256": "0686581abde89057c9c8c71d620770a6cd516608bc39e943c5c56f0ce0502cab"
+    },
+    {
+      "locale": "sl-SI",
+      "app_key": "jellyday",
+      "app_store_id": "6835673714",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/sl-SI/jellyday.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/sl-SI/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/sl-SI/jellyday.html",
+      "app_store_url": "https://apps.apple.com/si/app/id6835673714?pt=118326163&ct=iag_visual_sl_si&mt=8",
+      "sha256": "b8d08d1c6eee9220a55c7305f6a723a9e17775111db72b11ef95ee0b6f57d3e8"
     },
     {
       "locale": "sl-SI",
@@ -25661,6 +26080,16 @@
     },
     {
       "locale": "sv",
+      "app_key": "jellyday",
+      "app_store_id": "6835673714",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/sv/jellyday.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/sv/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/sv/jellyday.html",
+      "app_store_url": "https://apps.apple.com/se/app/id6835673714?pt=118326163&ct=iag_visual_sv&mt=8",
+      "sha256": "4e20ed2b1e59c9c3660bbcef880a56245ba5c6f6d372361d4ef6e71fd391db2f"
+    },
+    {
+      "locale": "sv",
       "app_key": "kumo",
       "app_store_id": "6830824515",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/sv/kumo.svg",
@@ -26258,6 +26687,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ta-IN/hourstag.html",
       "app_store_url": "https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=iag_visual_ta_in&mt=8",
       "sha256": "386a8fdf6583e258aefd658cfe632c89f453fc8df66b5563153d926cba632ef2"
+    },
+    {
+      "locale": "ta-IN",
+      "app_key": "jellyday",
+      "app_store_id": "6835673714",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ta-IN/jellyday.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ta-IN/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ta-IN/jellyday.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6835673714?pt=118326163&ct=iag_visual_ta_in&mt=8",
+      "sha256": "52bbb919b6ada6c7a435c52420cbb9a406a4388577156e5b4469f36524925e5e"
     },
     {
       "locale": "ta-IN",
@@ -26861,6 +27300,16 @@
     },
     {
       "locale": "te-IN",
+      "app_key": "jellyday",
+      "app_store_id": "6835673714",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/te-IN/jellyday.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/te-IN/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/te-IN/jellyday.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6835673714?pt=118326163&ct=iag_visual_te_in&mt=8",
+      "sha256": "352fcf1ab255364a0105cbaec1bfa2bdfee04cd811ef2f8b1b6bbf6caba2831c"
+    },
+    {
+      "locale": "te-IN",
       "app_key": "kumo",
       "app_store_id": "6830824515",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/te-IN/kumo.svg",
@@ -27458,6 +27907,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/th/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
       "app_store_url": "https://apps.apple.com/th/app/id6754218117?pt=118326163&ct=iag_visual_th&mt=8",
       "sha256": "ce1f08233952616adac054f156cd70cdd7e18667f3b90a202e504da8ade8c0cd"
+    },
+    {
+      "locale": "th",
+      "app_key": "jellyday",
+      "app_store_id": "6835673714",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/th/jellyday.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/th/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/th/jellyday.html",
+      "app_store_url": "https://apps.apple.com/th/app/id6835673714?pt=118326163&ct=iag_visual_th&mt=8",
+      "sha256": "b43a82213c56846baadc51586602d9b15c8152ab0124c6cf61152643fadaa772"
     },
     {
       "locale": "th",
@@ -28061,6 +28520,16 @@
     },
     {
       "locale": "tr",
+      "app_key": "jellyday",
+      "app_store_id": "6835673714",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/tr/jellyday.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/tr/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/tr/jellyday.html",
+      "app_store_url": "https://apps.apple.com/tr/app/id6835673714?pt=118326163&ct=iag_visual_tr&mt=8",
+      "sha256": "c49198284b105adcab7a0693cbdf4e989b2245d3ac75df12628a14bc8b0ba010"
+    },
+    {
+      "locale": "tr",
       "app_key": "kumo",
       "app_store_id": "6830824515",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/tr/kumo.svg",
@@ -28658,6 +29127,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/uk/hourstag.html",
       "app_store_url": "https://apps.apple.com/ua/app/id6754218117?pt=118326163&ct=iag_visual_uk&mt=8",
       "sha256": "4617d13f751b56b83eab95df5f12d979690a3540c885529d78689adccc5100c0"
+    },
+    {
+      "locale": "uk",
+      "app_key": "jellyday",
+      "app_store_id": "6835673714",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/uk/jellyday.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/uk/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/uk/jellyday.html",
+      "app_store_url": "https://apps.apple.com/ua/app/id6835673714?pt=118326163&ct=iag_visual_uk&mt=8",
+      "sha256": "815f21b3e18b2f68b045cba8c3bbb0519d28b90701dad68eca35019949fd0e59"
     },
     {
       "locale": "uk",
@@ -29261,6 +29740,16 @@
     },
     {
       "locale": "ur-PK",
+      "app_key": "jellyday",
+      "app_store_id": "6835673714",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ur-PK/jellyday.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ur-PK/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ur-PK/jellyday.html",
+      "app_store_url": "https://apps.apple.com/pk/app/id6835673714?pt=118326163&ct=iag_visual_ur_pk&mt=8",
+      "sha256": "e152875c280de4517b0511e35accaa5bd1f0d4da7a20fa7ab8dbb93d9b68a2a0"
+    },
+    {
+      "locale": "ur-PK",
       "app_key": "kumo",
       "app_store_id": "6830824515",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ur-PK/kumo.svg",
@@ -29861,6 +30350,16 @@
     },
     {
       "locale": "vi",
+      "app_key": "jellyday",
+      "app_store_id": "6835673714",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/vi/jellyday.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/vi/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/vi/jellyday.html",
+      "app_store_url": "https://apps.apple.com/vn/app/id6835673714?pt=118326163&ct=iag_visual_vi&mt=8",
+      "sha256": "ff8ad66a18b538106bddc48bea87afb8eb78f9bb454272d77acddc4012c08a6f"
+    },
+    {
+      "locale": "vi",
       "app_key": "kumo",
       "app_store_id": "6830824515",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/vi/kumo.svg",
@@ -30458,6 +30957,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/hourstag.html",
       "app_store_url": "https://apps.apple.com/cn/app/id6754218117?pt=118326163&ct=iag_visual_zh_hans&mt=8",
       "sha256": "6ef4ab40f1c22b13348a330b9a9cbf6388369cb976f5b536f010d69f84a20946"
+    },
+    {
+      "locale": "zh-Hans",
+      "app_key": "jellyday",
+      "app_store_id": "6835673714",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/zh-Hans/jellyday.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/jellyday.html",
+      "app_store_url": "https://apps.apple.com/cn/app/id6835673714?pt=118326163&ct=iag_visual_zh_hans&mt=8",
+      "sha256": "311f32cbf3e01807d0ac0c8a14afb5edaff2245004ad2ee6eea32463f1e5e985"
     },
     {
       "locale": "zh-Hans",
@@ -31153,6 +31662,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
       "app_store_url": "https://apps.apple.com/tw/app/id6754218117?pt=118326163&ct=iag_visual_zh_hant&mt=8",
       "sha256": "921a5e52617b74e1d62a09d0e4a1055ac2f245b4bcd48547c2f440e99e52624a"
+    },
+    {
+      "locale": "zh-Hant",
+      "app_key": "jellyday",
+      "app_store_id": "6835673714",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/zh-Hant/jellyday.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/jellyday.html",
+      "app_store_url": "https://apps.apple.com/tw/app/id6835673714?pt=118326163&ct=iag_visual_zh_hant&mt=8",
+      "sha256": "4259ed31fb7429d86fa7637c4643020210cf3daf0bc1a683b302cf668c687622"
     },
     {
       "locale": "zh-Hant",

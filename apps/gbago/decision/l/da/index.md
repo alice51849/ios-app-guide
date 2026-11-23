@@ -2,7 +2,7 @@
 title: "GBAGo: Visuelle gemte — Emulator til .gba .gbc .gb | iOS App"
 lang: "da"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gbago/decision/l/da/index.html"
-modified: "2026-11-21"
+modified: "2026-11-23"
 app_store_id: "6804564400"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,7 +16,7 @@ Optimeret til iPhone Duo. Appen er bygget med den nyeste SDK, fylder hele den in
 - Mere
 - Betalt download
 - Offline
-- App Store · 9,00 kr
+- App Store · 29,00 kr
 
 [Hent GBAGo: Visuelle gemte i App Store](https://apps.apple.com/dk/app/id6804564400?pt=118326163&ct=geo_pick&mt=8)
 

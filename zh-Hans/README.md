@@ -4,7 +4,7 @@
 
 第一方目录，说明每款 App 的适用人群、想完成的任务以及直达 App Store 的下载入口。
 
-由开发者撰写的搜索意图，涵盖 60 款已验证上架的 iOS App 和 Apple 官方 50 个地区语言。
+由开发者撰写的搜索意图，涵盖 61 款已验证上架的 iOS App 和 Apple 官方 50 个地区语言。
 
 **地区语言:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · **zh-Hans** · [zh-Hant](../zh-Hant/)
 
@@ -106,6 +106,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **GBAGo: 可视化存档** | GBAGo: 可视化存档 — 怀旧游戏模拟器，支持 .gba .gbc .gb \| iOS App | GBAGo 是一款适用于 iPhone 和 iPad 的游戏模拟器。从“文件”App 导入你自己的 .gba、.gbc 和 .gb 游戏文件（或包含其中之一的 .zip），即可使用屏幕触控按键或游戏手柄以 60 fps 畅玩。带预览图的存档位和每 2 | 付费下载 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hans/gbago.html) | [在 App Store 获取 GBAGo: 可视化存档](https://apps.apple.com/cn/app/id6804564400?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag Lite：买前先算工时** | HoursTag Lite：买前先算工时 — 冲动消费前，先换算成工时 \| iOS App | 结账前，先看这笔要工作几小时。输入你的实际到手时薪，HoursTag Lite 就把每个价格换算成工作时数。 | 免费开始使用 · 一次购买解锁 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hans/hourstaglite.html) | [在 App Store 获取 HoursTag Lite：买前先算工时](https://apps.apple.com/cn/app/id6794039979?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag：价格换工时** | HoursTag：价格换工时 — 月薪时薪计算・花费记账本 \| iOS App | 这真正要花你多少？不是多少钱——是你生命中的几个小时。 | 付费下载 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hans/hourstag.html) | [在 App Store 获取 HoursTag：价格换工时](https://apps.apple.com/cn/app/id6754218117?pt=118326163&ct=geo_pick&mt=8) |
+| **JellyDay：可视化日程规划表** | JellyDay：可视化日程规划表 — 可爱自律作息时间表：每日计划、时间管理、时间轴、专注倒计时 \| iOS App | 把一天看成一条时间轴：在 JellyDay 里，每件事都是一块柔和的马卡龙色色块，事情越久，色块越高。一条“现在”线标出此刻，现在在做什么、接下来做什么、还剩多少时间，一眼就明白。 | 免费开始使用 · 一次购买解锁 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hans/jellyday.html) | [在 App Store 获取 JellyDay：可视化日程规划表](https://apps.apple.com/cn/app/id6835673714?pt=118326163&ct=geo_pick&mt=8) |
 | **Kumo 体重记录・减重打卡・轻断食计时器** | Kumo 体重记录・减重打卡・轻断食计时器 — 减脂日记・喝水蛋白质・腰围体脂・习惯养成・可爱云朵 \| iOS App | 体重一天一个样，很多人还没看到进步就先放弃了；Kumo 每天只要 10 秒记好体重，用 7 日平均看清真正的趋势，不被单日波动影响心情。 | 查看当前 App Store 页面 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hans/kumo.html) | [在 App Store 获取 Kumo 体重记录・减重打卡・轻断食计时器](https://apps.apple.com/cn/app/id6830824515?pt=118326163&ct=geo_pick&mt=8) |
 | **LED Moving Text** | LED Moving Text — 手机立刻变成应援灯牌 \| iOS App | 打上一句话，手机就变成一块会发光、会滚动的大字牌，隔着整个场馆、站台或人群都看得清楚。 | 免费开始使用 · 一次购买解锁 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hans/ledmovingtext.html) | [在 App Store 获取 LED Moving Text](https://apps.apple.com/cn/app/id6806639602?pt=118326163&ct=geo_pick&mt=8) |
 | **LockHour Pro** | 学习时屏蔽社交媒体的最佳 iPhone App | 考试期间，意志力不是工具——硬性定时屏蔽才是——LockHour Pro专为此设计。 | 免费开始使用 · 一次购买解锁 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-app-to-block-social-media-while-studying-iphone.html) | [在 App Store 获取 LockHour Pro →](https://apps.apple.com/cn/app/id6780107485?pt=118326163&ct=geo_pick&mt=8) |
@@ -152,7 +153,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## 下载完整数据集
 
-JSON、JSONL 和 CSV 格式包含相同的 3,000 条记录。
+JSON、JSONL 和 CSV 格式包含相同的 3,050 条记录。
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -160,6 +161,6 @@ JSON、JSONL 和 CSV 格式包含相同的 3,000 条记录。
 
 [首页](https://open.cait518.cc/ios-app-guide/zh-Hans/index.html) · [开放数据](https://open.cait518.cc/ios-app-guide/zh-Hans/data/lumi-studio-publisher-search-intent-catalog.html) · [许可协议](https://creativecommons.org/licenses/by/4.0/)
 
-更新日期: 2026-11-19
+更新日期: 2026-11-23
 
 CC BY 4.0 适用于原始目录编纂；应用名称和 App Store 标识归其所有者所有。

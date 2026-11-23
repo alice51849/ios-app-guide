@@ -21,6 +21,7 @@
     const store = new URL(data.app_store_url);
     const facts = data.storefront_facts;
     const storefronts = {"ar-SA": "sa", "bn-BD": "bd", "ca": "es", "cs": "cz", "da": "dk", "de-DE": "de", "el": "gr", "en-AU": "au", "en-CA": "ca", "en-GB": "gb", "en-US": "us", "es-ES": "es", "es-MX": "mx", "fi": "fi", "fr-CA": "ca", "fr-FR": "fr", "gu-IN": "in", "he": "il", "hi": "in", "hr": "hr", "hu": "hu", "id": "id", "it": "it", "ja": "jp", "kn-IN": "in", "ko": "kr", "ml-IN": "in", "mr-IN": "in", "ms": "my", "nl-NL": "nl", "no": "no", "or-IN": "in", "pa-IN": "in", "pl": "pl", "pt-BR": "br", "pt-PT": "pt", "ro": "ro", "ru": "ru", "sk": "sk", "sl-SI": "si", "sv": "se", "ta-IN": "in", "te-IN": "in", "th": "th", "tr": "tr", "uk": "ua", "ur-PK": "pk", "vi": "vn", "zh-Hans": "cn", "zh-Hant": "tw"};
+    const pageCampaigns = {"iag_tripplanet_us_kidsgames": ["en-US", "6787193643"]};
     const country = storefronts[data.page_language];
     const campaign = [...store.searchParams];
     if (
@@ -35,7 +36,9 @@
       campaign.length !== 3 ||
       campaign.map(([key]) => key).join(",") !== "pt,ct,mt" ||
       !/^[0-9]{1,20}$/.test(store.searchParams.get("pt")) ||
-      store.searchParams.get("ct") !== "geo_pick" ||
+      !(store.searchParams.get("ct") === "geo_pick" ||
+        (pageCampaigns[store.searchParams.get("ct")]?.[0] === data.page_language &&
+         pageCampaigns[store.searchParams.get("ct")]?.[1] === data.app_store_id)) ||
       store.searchParams.get("mt") !== "8" ||
       store.hash ||
       !/^[0-9]{9,12}$/.test(data.app_store_id)

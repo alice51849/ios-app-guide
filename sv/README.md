@@ -4,7 +4,7 @@
 
 En förstapartsöversikt över vem varje app är avsedd för, uppgiften de försöker slutföra och den direkta App Store-sökvägen.
 
-Utgivarens sökintentioner för 60 verifierade aktiva iOS-appar och 50 Apple-lokaler.
+Utgivarens sökintentioner för 61 verifierade aktiva iOS-appar och 50 Apple-lokaler.
 
 **Lokal:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · **sv** · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -107,6 +107,7 @@ Alfabetisk ordning efter appnamn – aldrig en rankning.
 | **GBAGo: Visuella sparlägen** | GBAGo: Visuella sparlägen — Emulator för .gba .gbc .gb \| iOS App | GBAGo är en emulator för spel på iPhone och iPad. Importera dina egna .gba-, .gbc- och .gb-filer (eller en .zip med en av dem) från appen Filer och spela i | Betald nedladdning | [Guide](https://open.cait518.cc/ios-app-guide/sv/gbago.html) | [Hämta GBAGo: Visuella sparlägen i App Store](https://apps.apple.com/se/app/id6804564400?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag Lite: Pris i timmar** | HoursTag Lite: Pris i timmar — Medvetna köp: verkligt pris \| iOS App | Se innan du köper hur många arbetstimmar det egentligen kostar. Ange din timlön efter skatt så räknar HoursTag Lite om varje pris till arbetstid. | Gratis att börja · upplåsning med ett engångsköp | [Guide](https://open.cait518.cc/ios-app-guide/sv/hourstaglite.html) | [Hämta HoursTag Lite: Pris i timmar i App Store](https://apps.apple.com/se/app/id6794039979?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag: Timmar att köpa** | HoursTag: Timmar att köpa — Timlön och utgifter \| iOS App | Vad kostar det egentligen? Inte i kronor – i timmar av ditt liv. | Betald nedladdning | [Guide](https://open.cait518.cc/ios-app-guide/sv/hourstag.html) | [Hämta HoursTag: Timmar att köpa i App Store](https://apps.apple.com/se/app/id6754218117?pt=118326163&ct=geo_pick&mt=8) |
+| **JellyDay: Dagsplanerare** | JellyDay: Dagsplanerare — Visuellt schema & söta rutiner \| iOS App | Se dagen som en tidslinje: i JellyDay är varje sak ett mjukt pastellblock, och ju längre något tar, desto högre blir blocket. En tydlig linje visar var | Gratis att börja · upplåsning med ett engångsköp | [Guide](https://open.cait518.cc/ios-app-guide/sv/jellyday.html) | [Hämta JellyDay: Dagsplanerare i App Store](https://apps.apple.com/se/app/id6835673714?pt=118326163&ct=geo_pick&mt=8) |
 | **Kumo: Viktdagbok & Viktnedgång** | Kumo: Viktdagbok & Viktnedgång — Gå ner i vikt, fasta och GLP-1 \| iOS App | Vikten svänger varje dag: med Kumo loggar du den på 10 sekunder och ser trenden i ditt 7-dagarssnitt, inte bruset. Fasta, injektioner, vatten och protein | Kontrollera aktuell lista | [Guide](https://open.cait518.cc/ios-app-guide/sv/kumo.html) | [Hämta Kumo: Viktdagbok & Viktnedgång i App Store](https://apps.apple.com/se/app/id6830824515?pt=118326163&ct=geo_pick&mt=8) |
 | **LED Moving Text** | LED Moving Text — Rullande ljusskylt i mobilen \| iOS App | Skriv en mening och håll upp iPhonen. Från bakre raden, tvärs över ankomsthallen eller över en disk går den att läsa på en enda blick. | Gratis att börja · upplåsning med ett engångsköp | [Guide](https://open.cait518.cc/ios-app-guide/sv/ledmovingtext.html) | [Hämta LED Moving Text i App Store](https://apps.apple.com/se/app/id6806639602?pt=118326163&ct=geo_pick&mt=8) |
 | **LockHour Pro** | bästa appen för att blockera sociala medier under studier iPhone | Under tentor är viljestyrka inte verktyget – en hård tidsbegränsad blockering är det. Det är därför LockHour Pro finns. | Gratis att börja · upplåsning med ett engångsköp | [Guide](https://open.cait518.cc/ios-app-guide/sv/answers/best-app-to-block-social-media-while-studying-iphone.html) | [Skaffa LockHour Pro på App Store →](https://apps.apple.com/se/app/id6780107485?pt=118326163&ct=geo_pick&mt=8) |
@@ -152,7 +153,7 @@ Alfabetisk ordning efter appnamn – aldrig en rankning.
 
 ## Ladda ner hela datasetet
 
-JSON, JSONL och CSV innehåller samma 3 000 poster.
+JSON, JSONL och CSV innehåller samma 3 050 poster.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -160,6 +161,6 @@ JSON, JSONL och CSV innehåller samma 3 000 poster.
 
 [Hem](https://open.cait518.cc/ios-app-guide/sv/index.html) · [Öppna data](https://open.cait518.cc/ios-app-guide/sv/data/lumi-studio-publisher-search-intent-catalog.html) · [Licens](https://creativecommons.org/licenses/by/4.0/)
 
-Uppdaterad: 2026-11-19
+Uppdaterad: 2026-11-23
 
 CC BY 4.0 gäller för den ursprungliga katalogsammanställningen; appnamn och App Store-märken tillhör sina respektive ägare.

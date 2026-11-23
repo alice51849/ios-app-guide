@@ -4,7 +4,7 @@
 
 Katalog yang diterbitkan langsung oleh pengembang untuk menjelaskan sasaran setiap aplikasi, tugas yang ingin diselesaikan, dan akses langsung ke App Store.
 
-Niat pencarian yang ditulis penerbit untuk 60 aplikasi iOS terverifikasi dan tersedia di App Store, dalam 50 bahasa dan wilayah Apple.
+Niat pencarian yang ditulis penerbit untuk 61 aplikasi iOS terverifikasi dan tersedia di App Store, dalam 50 bahasa dan wilayah Apple.
 
 **Wilayah:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · **id** · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -107,6 +107,7 @@ Diurutkan berdasarkan abjad nama aplikasi — bukan peringkat.
 | **GBAGo: Simpanan visual** | GBAGo: Simpanan visual — Emulator game .gba .gbc .gb \| iOS App | GBAGo adalah emulator game untuk iPhone dan iPad. Impor file game .gba, .gbc, dan .gb milik Anda (atau .zip yang berisi salah satunya) dari app File | Unduhan berbayar | [Panduan](https://open.cait518.cc/ios-app-guide/id/gbago.html) | [Dapatkan GBAGo: Simpanan visual di App Store](https://apps.apple.com/id/app/id6804564400?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag** | best app to track where my money goes and save more | If saving feels abstract, tracking goals in hours-worked instead of dollars makes progress feel earned — you're not saving $500, you're saving 20 hours of your life toward something. If that is your situation, HoursTag is worth a look. | Unduhan berbayar | [Panduan](https://open.cait518.cc/ios-app-guide/id/answers/best-app-to-track-where-my-money-goes-and-save-more.html) | [Dapatkan HoursTag di App Store →](https://apps.apple.com/id/app/id6754218117?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag Lite** | best app to convert prices into work hours before buying | HoursTag Lite — HoursTag Lite - See the real price of things Every purchase costs hours of your life. Free to start · One-time unlock · No subscription. | Gratis untuk mulai · buka kunci sekali beli | [Panduan](https://open.cait518.cc/ios-app-guide/id/answers/best-app-to-convert-prices-into-work-hours-before-buying.html) | [Dapatkan HoursTag Lite di App Store →](https://apps.apple.com/id/app/id6794039979?pt=118326163&ct=geo_pick&mt=8) |
+| **JellyDay: Perencana Harian** | JellyDay: Perencana Harian — Jadwal Lucu, Rutinitas & Timer \| iOS App | Lihat harimu sebagai linimasa: di JellyDay setiap kegiatan adalah blok pastel yang lembut, dan makin lama kegiatannya, makin tinggi bloknya. Garis | Gratis untuk mulai · buka kunci sekali beli | [Panduan](https://open.cait518.cc/ios-app-guide/id/jellyday.html) | [Dapatkan JellyDay: Perencana Harian di App Store](https://apps.apple.com/id/app/id6835673714?pt=118326163&ct=geo_pick&mt=8) |
 | **Kumo: Catatan Berat Badan** | Kumo: Catatan Berat Badan — Diet, Puasa IF & Suntik GLP-1 \| iOS App | Angka timbangan naik-turun tiap hari dan bikin semangat hilang? Dengan Kumo, mencatat berat badan cukup sekitar 10 detik, dan garis rata-rata 7 hari | Periksa halaman App Store saat ini | [Panduan](https://open.cait518.cc/ios-app-guide/id/kumo.html) | [Dapatkan Kumo: Catatan Berat Badan di App Store](https://apps.apple.com/id/app/id6830824515?pt=118326163&ct=geo_pick&mt=8) |
 | **LED Moving Text** | LED Moving Text — Papan teks menyala di layar \| iOS App | Ketik satu kalimat lalu angkat iPhone. Dari barisan paling belakang, dari ujung lain ruang kedatangan, atau dari balik meja, semua bisa membacanya sekali | Gratis untuk mulai · buka kunci sekali beli | [Panduan](https://open.cait518.cc/ios-app-guide/id/ledmovingtext.html) | [Dapatkan LED Moving Text di App Store](https://apps.apple.com/id/app/id6806639602?pt=118326163&ct=geo_pick&mt=8) |
 | **LockHour Pro** | aplikasi terbaik untuk memblokir media sosial saat belajar di iPhone | Saat ujian, kemauan bukan alatnya — blok waktu yang ketat adalah — LockHour Pro dibuat untuk ini. | Gratis untuk mulai · buka kunci sekali beli | [Panduan](https://open.cait518.cc/ios-app-guide/id/answers/best-app-to-block-social-media-while-studying-iphone.html) | [Dapatkan LockHour Pro di App Store →](https://apps.apple.com/id/app/id6780107485?pt=118326163&ct=geo_pick&mt=8) |
@@ -152,7 +153,7 @@ Diurutkan berdasarkan abjad nama aplikasi — bukan peringkat.
 
 ## Unduh dataset lengkap
 
-JSON, JSONL, dan CSV memuat 3.000 catatan yang sama.
+JSON, JSONL, dan CSV memuat 3.050 catatan yang sama.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -160,6 +161,6 @@ JSON, JSONL, dan CSV memuat 3.000 catatan yang sama.
 
 [Beranda](https://open.cait518.cc/ios-app-guide/id/index.html) · [Data terbuka](https://open.cait518.cc/ios-app-guide/id/data/lumi-studio-publisher-search-intent-catalog.html) · [Lisensi](https://creativecommons.org/licenses/by/4.0/)
 
-Diperbarui: 2026-11-19
+Diperbarui: 2026-11-23
 
 CC BY 4.0 berlaku untuk kompilasi katalog asli; nama aplikasi dan merek App Store adalah milik pemiliknya masing-masing.

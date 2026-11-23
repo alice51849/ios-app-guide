@@ -4,7 +4,7 @@
 
 Ensimmäisen osapuolen luettelo siitä, kenelle kukin sovellus on suunniteltu, mitä tehtävää he pyrkivät suorittamaan ja suora App Store -polku.
 
-Julkaisijan laatimat hakutarkoitukset 60 varmennetussa toimivassa iOS-sovelluksessa ja 50 Apple-lokaalissa.
+Julkaisijan laatimat hakutarkoitukset 61 varmennetussa toimivassa iOS-sovelluksessa ja 50 Apple-lokaalissa.
 
 **Lokaali:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · **fi** · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -107,6 +107,7 @@ Aakkosjärjestyksessä sovelluksen nimen mukaan — ei koskaan sijoitus.
 | **GBAGo: Kuvalliset tallenteet** | GBAGo: Kuvalliset tallenteet — Emulaattori .gba .gbc .gb \| iOS App | GBAGo on peliemulaattori iPhonelle ja iPadille. Tuo omat .gba-, .gbc- ja .gb-pelitiedostosi (tai .zip, jossa on yksi niistä) Tiedostot-sovelluksesta ja | Maksullinen ladattavaksi | [Opas](https://open.cait518.cc/ios-app-guide/fi/gbago.html) | [Lataa GBAGo: Kuvalliset tallenteet App Storesta](https://apps.apple.com/fi/app/id6804564400?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag Lite: Hinta tunteina** | HoursTag Lite: Hinta tunteina — Tietoinen osto: oikea hinta \| iOS App | Ennen kuin ostat, katso, montako työtuntia se oikeasti maksaa. Syötä nettotuntipalkkasi, niin HoursTag Lite muuttaa jokaisen hinnan työajaksi. | Ilmainen aloitus · avaus kertaostoksella | [Opas](https://open.cait518.cc/ios-app-guide/fi/hourstaglite.html) | [Lataa HoursTag Lite: Hinta tunteina App Storesta](https://apps.apple.com/fi/app/id6794039979?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag: Ostotunnit** | HoursTag: Ostotunnit — Tuntipalkka ja menot \| iOS App | Mitä se oikeasti maksaa? Ei euroina – vaan elämäsi tunteina. | Maksullinen ladattavaksi | [Opas](https://open.cait518.cc/ios-app-guide/fi/hourstag.html) | [Lataa HoursTag: Ostotunnit App Storesta](https://apps.apple.com/fi/app/id6754218117?pt=118326163&ct=geo_pick&mt=8) |
+| **JellyDay: Päivän aikataulu** | JellyDay: Päivän aikataulu — Söpö päivyri, rutiini, ajastin \| iOS App | Näe päiväsi aikajanana. Jokainen tehtävä on pastellilohko, ja mitä pidempi tehtävä, sitä korkeampi lohko. Nyt-viiva näyttää, missä olet, joten näet yhdellä | Ilmainen aloitus · avaus kertaostoksella | [Opas](https://open.cait518.cc/ios-app-guide/fi/jellyday.html) | [Lataa JellyDay: Päivän aikataulu App Storesta](https://apps.apple.com/fi/app/id6835673714?pt=118326163&ct=geo_pick&mt=8) |
 | **Kumo: Painon seuranta & paasto** | Kumo: Painon seuranta & paasto — Laihdutus, pätkäpaasto, GLP-1 \| iOS App | Paino heittelee päivästä toiseen, joten Kumo näyttää 7 päivän keskiarvon, vie vain 10 sekuntia päivässä ja toimii yhtä hyvin GLP-1:n kanssa tai ilman. | Tarkista nykyinen listaus | [Opas](https://open.cait518.cc/ios-app-guide/fi/kumo.html) | [Lataa Kumo: Painon seuranta & paasto App Storesta](https://apps.apple.com/fi/app/id6830824515?pt=118326163&ct=geo_pick&mt=8) |
 | **LED Moving Text** | LED Moving Text — Liikkuva valokyltti näytölle \| iOS App | Kirjoita lause ja nosta iPhone ylös. Takarivistä, saapumisaulan toiselta puolelta tai tiskin yli sen lukee yhdellä silmäyksellä. | Ilmainen aloitus · avaus kertaostoksella | [Opas](https://open.cait518.cc/ios-app-guide/fi/ledmovingtext.html) | [Lataa LED Moving Text App Storesta](https://apps.apple.com/fi/app/id6806639602?pt=118326163&ct=geo_pick&mt=8) |
 | **LockHour Pro** | paras sovellus sosiaalisen median estoon opiskelun ajaksi iPhonella | Kokeissa tahdonvoima ei riitä — tarvitaan tiukka ajoitettu esto. Siksi LockHour Pro on olemassa. | Ilmainen aloitus · avaus kertaostoksella | [Opas](https://open.cait518.cc/ios-app-guide/fi/answers/best-app-to-block-social-media-while-studying-iphone.html) | [Hanki LockHour Pro App Storesta →](https://apps.apple.com/fi/app/id6780107485?pt=118326163&ct=geo_pick&mt=8) |
@@ -152,7 +153,7 @@ Aakkosjärjestyksessä sovelluksen nimen mukaan — ei koskaan sijoitus.
 
 ## Lataa koko tietoaineisto
 
-JSON, JSONL ja CSV sisältävät samat 3 000 tietuetta.
+JSON, JSONL ja CSV sisältävät samat 3 050 tietuetta.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -160,6 +161,6 @@ JSON, JSONL ja CSV sisältävät samat 3 000 tietuetta.
 
 [Etusivu](https://open.cait518.cc/ios-app-guide/fi/index.html) · [Avoin data](https://open.cait518.cc/ios-app-guide/fi/data/lumi-studio-publisher-search-intent-catalog.html) · [Lisenssi](https://creativecommons.org/licenses/by/4.0/)
 
-Päivitetty: 2026-11-19
+Päivitetty: 2026-11-23
 
 CC BY 4.0 koskee alkuperäisen luettelon kokoamista; sovellusten nimet ja App Store -merkit kuuluvat omistajilleen.

@@ -2,7 +2,7 @@
 title: "iPhone 最好用的免費旅遊記帳與匯率換算工具"
 lang: "zh-Hant"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gmoneylite/decision/l/zh-Hant/index.html"
-modified: "2026-11-21"
+modified: "2026-11-23"
 app_store_id: "6793436548"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -22,6 +22,7 @@ publisher: "Lumi Studio"
 - 主畫面小工具
 - Apple Watch
 - App Store · 免費
+- ★ 5.0/5 · 1
 
 [前往 App Store 取得 G+Money Lite →](https://apps.apple.com/tw/app/id6793436548?pt=118326163&ct=geo_pick&mt=8)
 

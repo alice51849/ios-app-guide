@@ -4,7 +4,7 @@
 
 Katalog iz prve ruke o tome za koga je svaka aplikacija namijenjena, koji zadatak žele izvršiti i izravnom putu do App Storea.
 
-Namjere pretraživanja koje je napisao izdavač za 60 provjerenih aktivnih iOS aplikacija i 50 Apple lokaliteta.
+Namjere pretraživanja koje je napisao izdavač za 61 provjerenih aktivnih iOS aplikacija i 50 Apple lokaliteta.
 
 **Lokalitet:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · **hr** · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -107,6 +107,7 @@ Abecedno po nazivu aplikacije — nikada nije rangiranje.
 | **GBAGo: Vizualna spremanja** | GBAGo: Vizualna spremanja — Emulator igara .gba .gbc .gb \| iOS App | GBAGo je emulator igara za iPhone i iPad. Uvezite vlastite datoteke .gba, .gbc i .gb (ili .zip s jednom od njih) iz aplikacije Datoteke i igrajte pri 60 | Plaćeno preuzimanje | [Vodič](https://open.cait518.cc/ios-app-guide/hr/gbago.html) | [Preuzmite GBAGo: Vizualna spremanja u App Storeu](https://apps.apple.com/hr/app/id6804564400?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag Lite: Cijena u satima** | HoursTag Lite: Cijena u satima — Svjesna kupnja: prava cijena \| iOS App | Prije kupnje pogledajte koliko vas sati rada to stvarno stoji. Unesite neto satnicu i HoursTag Lite pretvara svaku cijenu u radno vrijeme. | Besplatno za početak · otključavanje jednokratnom kupnjom | [Vodič](https://open.cait518.cc/ios-app-guide/hr/hourstaglite.html) | [Preuzmite HoursTag Lite: Cijena u satima u App Storeu](https://apps.apple.com/hr/app/id6794039979?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag: Sati za kupnju** | HoursTag: Sati za kupnju — Satnica i troškovi \| iOS App | Koliko to stvarno košta? Ne u eurima, nego u satima vašeg života. | Plaćeno preuzimanje | [Vodič](https://open.cait518.cc/ios-app-guide/hr/hourstag.html) | [Preuzmite HoursTag: Sati za kupnju u App Storeu](https://apps.apple.com/hr/app/id6754218117?pt=118326163&ct=geo_pick&mt=8) |
+| **JellyDay: Dnevni planer** | JellyDay: Dnevni planer — Raspored dana, rutina i timer \| iOS App | Cijeli dan na vremenskoj crti: JellyDay svaki zadatak prikazuje kao nježan pastelni blok, a što nešto dulje traje, to je blok viši. Crta „sada” pokazuje | Besplatno za početak · otključavanje jednokratnom kupnjom | [Vodič](https://open.cait518.cc/ios-app-guide/hr/jellyday.html) | [Preuzmite JellyDay: Dnevni planer u App Storeu](https://apps.apple.com/hr/app/id6835673714?pt=118326163&ct=geo_pick&mt=8) |
 | **Kumo: Težina i mršavljenje** | Kumo: Težina i mršavljenje — Intermitentni post, GLP-1 \| iOS App | Vaga svaki dan pokazuje nešto drugo, ali Kumo bilježi težinu za 10 sekundi, a prosjek od 7 dana otkriva pravi smjer. S injekcijama ili bez, s postom ili | Provjerite trenutni popis | [Vodič](https://open.cait518.cc/ios-app-guide/hr/kumo.html) | [Preuzmite Kumo: Težina i mršavljenje u App Storeu](https://apps.apple.com/hr/app/id6830824515?pt=118326163&ct=geo_pick&mt=8) |
 | **LED Moving Text** | LED Moving Text — Svjetleći natpis u pokretu \| iOS App | Upiši rečenicu i podigni iPhone. Iz zadnjeg reda, s druge strane dolazne dvorane ili preko pulta pročita se jednim pogledom. | Besplatno za početak · otključavanje jednokratnom kupnjom | [Vodič](https://open.cait518.cc/ios-app-guide/hr/ledmovingtext.html) | [Preuzmite LED Moving Text u App Storeu](https://apps.apple.com/hr/app/id6806639602?pt=118326163&ct=geo_pick&mt=8) |
 | **LockHour Pro** | najbolja aplikacija za blokiranje društvenih mreža tijekom učenja na iPhoneu | Tijekom ispita, snaga volje nije alat — stroga vremenski ograničena blokada jest. Upravo zato LockHour Pro postoji. | Besplatno za početak · otključavanje jednokratnom kupnjom | [Vodič](https://open.cait518.cc/ios-app-guide/hr/answers/best-app-to-block-social-media-while-studying-iphone.html) | [Preuzmite LockHour Pro u App Storeu →](https://apps.apple.com/hr/app/id6780107485?pt=118326163&ct=geo_pick&mt=8) |
@@ -152,7 +153,7 @@ Abecedno po nazivu aplikacije — nikada nije rangiranje.
 
 ## Preuzmite kompletan skup podataka
 
-JSON, JSONL i CSV sadrže istih 3.000 zapisa.
+JSON, JSONL i CSV sadrže istih 3.050 zapisa.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -160,6 +161,6 @@ JSON, JSONL i CSV sadrže istih 3.000 zapisa.
 
 [Početna](https://open.cait518.cc/ios-app-guide/hr/index.html) · [Otvoreni podaci](https://open.cait518.cc/ios-app-guide/hr/data/lumi-studio-publisher-search-intent-catalog.html) · [Licenca](https://creativecommons.org/licenses/by/4.0/)
 
-Ažurirano: 2026-11-19
+Ažurirano: 2026-11-23
 
 CC BY 4.0 primjenjuje se na izvornu kompilaciju kataloga; nazivi aplikacija i oznake App Store pripadaju njihovim vlasnicima.

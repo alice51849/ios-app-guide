@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "zh-Hant",
-  "dateModified": "2026-11-21",
-  "content_digest": "ee696c92aae55bc488ddbe1985f78a7f6259c731ca319475cb0781036920afa0",
-  "generation_digest": "34f629852eb72aa0685ab8c30f657c74a4a11e41b8b1b775da0190dbfca2d2ef",
+  "dateModified": "2026-11-23",
+  "content_digest": "652c87d2552144b75e32a4e3a33b97e864f4fe4956c71388dff0d793b909f82f",
+  "generation_digest": "0417505e47b92c57ea1f0a03d31018522728026153130120319d0e47faeeb418",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 60,
+  "record_count": 61,
   "syndication": {
     "atom": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/zh-Hant.atom.xml",
     "rss": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/zh-Hant.rss.xml",
@@ -169,7 +169,7 @@
         "隱私優先／裝置端",
         "主畫面小工具",
         "App Store · 免費",
-        "★ 5.0/5 · 1"
+        "★ 5.0/5 · 2"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/answers/best-last-time-tracker-app-for-household-maintenance-without-a-subscription.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/mochidonestamp/decision/l/zh-Hant/index.html",
@@ -184,7 +184,7 @@
         "currency": "TWD",
         "formatted_price": "免費",
         "rating_value": 5.0,
-        "rating_count": 1
+        "rating_count": 2
       },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "由 App 開發團隊 Lumi Studio 親自撰寫的指南。App 名稱為其各自所有權人的商標，僅供識別使用。若涉及文件、健康、學校及生產力相關的決定，請視情況核對相關單位的正式規定。",
@@ -391,7 +391,8 @@
         "免費開始 · 一次性解鎖",
         "無廣告",
         "Apple Watch",
-        "App Store · 免費"
+        "App Store · 免費",
+        "★ 5.0/5 · 1"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/answers/best-iphone-battery-health-app-with-honest-estimates-and-report.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/battai/decision/l/zh-Hant/index.html",
@@ -404,7 +405,9 @@
       "storefront_facts": {
         "price": "0",
         "currency": "TWD",
-        "formatted_price": "免費"
+        "formatted_price": "免費",
+        "rating_value": 5.0,
+        "rating_count": 1
       },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "由 App 開發團隊 Lumi Studio 親自撰寫的指南。App 名稱為其各自所有權人的商標，僅供識別使用。若涉及文件、健康、學校及生產力相關的決定，請視情況核對相關單位的正式規定。",
@@ -1014,7 +1017,8 @@
         "隱私優先／裝置端",
         "主畫面小工具",
         "Apple Watch",
-        "App Store · 免費"
+        "App Store · 免費",
+        "★ 5.0/5 · 1"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/answers/best-free-travel-expense-tracker-with-currency-conversion-for-iphone.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/gmoneylite/decision/l/zh-Hant/index.html",
@@ -1027,7 +1031,9 @@
       "storefront_facts": {
         "price": "0",
         "currency": "TWD",
-        "formatted_price": "免費"
+        "formatted_price": "免費",
+        "rating_value": 5.0,
+        "rating_count": 1
       },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "由 App 開發團隊 Lumi Studio 親自撰寫的指南。App 名稱為其各自所有權人的商標，僅供識別使用。若涉及文件、健康、學校及生產力相關的決定，請視情況核對相關單位的正式規定。",
@@ -1064,7 +1070,7 @@
         "更多",
         "付費下載",
         "離線使用",
-        "App Store · $30.00"
+        "App Store · $90.00"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/gbago.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/gbago/decision/l/zh-Hant/index.html",
@@ -1075,9 +1081,9 @@
       "app_store_url": "https://apps.apple.com/tw/app/id6804564400?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "在 App Store 取得 GBAGo：視覺存檔",
       "storefront_facts": {
-        "price": "30",
+        "price": "90",
         "currency": "TWD",
-        "formatted_price": "$30.00"
+        "formatted_price": "$90.00"
       },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "這是由 Lumi Studio 發布的第一方資料；Lumi Studio 是每款列出 App 的開發者。",
@@ -1209,6 +1215,51 @@
       "publisher_disclosure": "由 App 開發團隊 Lumi Studio 親自撰寫的指南。App 名稱為其各自所有權人的商標，僅供識別使用。若涉及文件、健康、學校及生產力相關的決定，請視情況核對相關單位的正式規定。",
       "source_persona_query": "best app to convert prices into work hours before buying",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "zh-Hant:jellyday",
+      "locale": "zh-Hant",
+      "app_key": "jellyday",
+      "app_name": "JellyDay：視覺化日程規劃表",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "JellyDay：視覺化日程規劃表 — 可愛作息時間表：每日計畫、時間管理、時間軸、專注倒數計時器 | iOS App",
+      "decision_context": "把一天看成一條時間軸：在 JellyDay 裡，每件事都是一塊柔和的粉彩色塊，事情越久，色塊越高。一條「現在」線標出此刻，現在在做什麼、下一件是什麼、還剩多少時間，一眼就看懂。 來不及了？從事項的選單把今天剩下的安排往後推，再跟著溫和的倒數，一步一步走完每個色塊或作息。 JellyDay 怎麼用 色塊越高，事情越久：再加事情之前，先看清楚今天已經排了多少。 把一件事往後推 15 分鐘，它之後所有未完成的事都會跟著移動；已完成的留在原位。 有幾件事過了時間還沒做完？一鍵全部從現在開始，或全部移到明天。 一鍵把早晨或睡前作息加進今天，再一步一步做完，每一步都有自己的倒數。 慢慢變小的圓餅顯示還剩幾分鐘，不用打開 App，就能在即時動態上暫停或完成。 在主畫面與鎖定畫面，隨時看到現在與下一件。 早上跟著晨間作息一步一步來；上班或讀書時，替專注時間排出一個色塊；在家工作的日子，讓整天的節奏一目了然，晚上再用睡前作息收尾。今天沒做完的事，移到明天就好。 今天的時間軸 每件事都是一塊粉彩果凍色塊，一條「現在」線標出此刻。 想排幾件就排幾件。 每件事都能設定名稱、貼紙、開始時間、時長（5 分鐘到 2 小時）與顏色。 還沒決定時間？先放進收件匣，之後再排。 長按色塊，就能拖到新的時間，以 5 分鐘為單位。 從色塊的選單，可以把這件和今天之後所有未完成的事一起往後推 15 分鐘，或移到明天。 時間過了還沒做完的事，會整理成一則摘要，可以一鍵全部從現在開始，或全部移到明天。 一鍵把昨天的作息搬到今天。 現成作息 一鍵把早晨、睡前等整串作息步驟排進今天。 作息會一步一步帶你做，每一步都有自己的倒數。 專注倒數 慢慢變小的圓餅顯示剩下的時間，也會用一句話清楚寫出還有幾分鐘。 可以隨時暫停、繼續或完成。 專注期間，即時動態與動態島會持續顯示倒數，也能直接暫停或完成。 事情開始與快結束時會提醒你，也可以在設定中關閉提醒。 在 iOS 26 或以上版本，你自己開始的專注倒數到點時，會以鬧鐘通知你。 小工具 主畫面「現在」小工具（小型、中型）：顯示正在做的事與下一件。 鎖定畫面小工具（圓形、長方形、單行）：顯示倒數與下一件。 Apple Watch App（搭配 iPhone 使用）：查看現在與下一件、倒數，可開始、暫停與標記完成，也有錶面複雜功能。 可愛的小細節 可愛的果凍角色與貼紙，替每件事加點表情。 完成一件事，果凍會開心地晃一晃（只有畫面動畫，沒有音效也不震動）。 支援 50 種語言，跟隨系統語言。iPhone 與 iPad 都能使用。 隱私 不用註冊帳號，沒有廣告。JellyDay 不追蹤你，也不收集你的資料，你的安排都存在你的裝置上。 App 內購買項目 時間軸與倒數等基本功能打開就能用。部分功能需透過一次性的 App 內購買項目解鎖： 每天、平日或自選星期幾自動出現的重複作息 全部 50 套現成作息 全部 60 張貼紙 可顯示半天或整天時間軸的大型小工具 待機模式的大倒數小工具 在主畫面小工具（小型、中型）上直接點一下完成 此購買項目支援家人共享：共享的是購買項目，不是你的行程。 隱私權政策：https://open.cait518.cc/ios-app-guide/apps/jellyday/l/zh-Hant/privacy.html 使用條款（EULA）：https://www.apple.com/legal/internet-services/itunes/dev/stdeula/ 支援 有任何問題或建議，歡迎透過本頁的「App 支援」連結與我們聯絡。 JellyDay 是規劃工具，不是醫療器材，也不提供醫療建議。",
+      "category": "productivity",
+      "category_label": "效率工具",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "免費開始 · 一次性解鎖",
+      "one_time_option": true,
+      "privacy_facts": [],
+      "privacy_labels": [],
+      "device_surfaces": [],
+      "device_labels": [],
+      "badge_labels": [
+        "效率工具",
+        "免費開始 · 一次性解鎖",
+        "App Store · 免費"
+      ],
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/jellyday.html",
+      "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/jellyday/decision/l/zh-Hant/index.html",
+      "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/zh-Hant/jellyday.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Fjellyday%2Fdecision%2Fl%2Fzh-Hant%2Findex.html&format=json",
+      "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/zh-Hant.json",
+      "app_store_id": "6835673714",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6835673714",
+      "app_store_url": "https://apps.apple.com/tw/app/id6835673714?pt=118326163&ct=geo_pick&mt=8",
+      "app_store_cta_label": "在 App Store 取得 JellyDay：視覺化日程規劃表",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費"
+      },
+      "guide_cta_label": "閱讀完整指南",
+      "publisher_disclosure": "這是由 Lumi Studio 發布的第一方資料；Lumi Studio 是每款列出 App 的開發者。",
+      "source_persona_query": "visual daily planner app with a timeline on iphone",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,
@@ -1435,7 +1486,7 @@
         "免帳號",
         "無廣告",
         "App Store · 免費",
-        "★ 4.6/5 · 8"
+        "★ 4.7/5 · 9"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/lumibopomofo/decision/l/zh-Hant/index.html",
@@ -1449,8 +1500,8 @@
         "price": "0",
         "currency": "TWD",
         "formatted_price": "免費",
-        "rating_value": 4.6,
-        "rating_count": 8
+        "rating_value": 4.7,
+        "rating_count": 9
       },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "由 App 開發團隊 Lumi Studio 親自撰寫的指南。App 名稱為其各自所有權人的商標，僅供識別使用。若涉及文件、健康、學校及生產力相關的決定，請視情況核對相關單位的正式規定。",
@@ -1780,7 +1831,7 @@
         "無追蹤",
         "隱私優先／裝置端",
         "App Store · 免費",
-        "★ 5.0/5 · 1"
+        "★ 4.5/5 · 2"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/lumimission/decision/l/zh-Hant/index.html",
@@ -1794,8 +1845,8 @@
         "price": "0",
         "currency": "TWD",
         "formatted_price": "免費",
-        "rating_value": 5.0,
-        "rating_count": 1
+        "rating_value": 4.5,
+        "rating_count": 2
       },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "由 App 開發團隊 Lumi Studio 親自撰寫的指南。App 名稱為其各自所有權人的商標，僅供識別使用。若涉及文件、健康、學校及生產力相關的決定，請視情況核對相關單位的正式規定。",
@@ -1903,7 +1954,7 @@
         "隱私優先／裝置端",
         "主畫面小工具",
         "App Store · 免費",
-        "★ 4.3/5 · 3"
+        "★ 4.5/5 · 4"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/lumiweather.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/lumiweather/decision/l/zh-Hant/index.html",
@@ -1917,8 +1968,8 @@
         "price": "0",
         "currency": "TWD",
         "formatted_price": "免費",
-        "rating_value": 4.3,
-        "rating_count": 3
+        "rating_value": 4.5,
+        "rating_count": 4
       },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "這是由 Lumi Studio 發布的第一方資料；Lumi Studio 是每款列出 App 的開發者。",
@@ -1964,7 +2015,7 @@
         "無廣告",
         "Apple Watch",
         "App Store · 免費",
-        "★ 4.5/5 · 6"
+        "★ 4.6/5 · 7"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/answers/best-simple-to-do-list-app-iphone-no-subscription.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/mochi/decision/l/zh-Hant/index.html",
@@ -1978,8 +2029,8 @@
         "price": "0",
         "currency": "TWD",
         "formatted_price": "免費",
-        "rating_value": 4.5,
-        "rating_count": 6
+        "rating_value": 4.6,
+        "rating_count": 7
       },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "由 App 開發團隊 Lumi Studio 親自撰寫的指南。App 名稱為其各自所有權人的商標，僅供識別使用。若涉及文件、健康、學校及生產力相關的決定，請視情況核對相關單位的正式規定。",
@@ -2034,7 +2085,7 @@
         "主畫面小工具",
         "Apple Watch",
         "App Store · 免費",
-        "★ 5.0/5 · 1"
+        "★ 5.0/5 · 2"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/answers/best-income-and-expense-tracker-for-freelance-projects-no-subscription.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/moneytag/decision/l/zh-Hant/index.html",
@@ -2049,7 +2100,7 @@
         "currency": "TWD",
         "formatted_price": "免費",
         "rating_value": 5.0,
-        "rating_count": 1
+        "rating_count": 2
       },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "由 App 開發團隊 Lumi Studio 親自撰寫的指南。App 名稱為其各自所有權人的商標，僅供識別使用。若涉及文件、健康、學校及生產力相關的決定，請視情況核對相關單位的正式規定。",
@@ -2330,7 +2381,8 @@
         "無追蹤",
         "隱私優先／裝置端",
         "主畫面小工具",
-        "App Store · 免費"
+        "App Store · 免費",
+        "★ 5.0/5 · 1"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/answers/best-app-to-save-links-from-other-apps-on-iphone.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/savetag/decision/l/zh-Hant/index.html",
@@ -2343,7 +2395,9 @@
       "storefront_facts": {
         "price": "0",
         "currency": "TWD",
-        "formatted_price": "免費"
+        "formatted_price": "免費",
+        "rating_value": 5.0,
+        "rating_count": 1
       },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "由 App 開發團隊 Lumi Studio 親自撰寫的指南。App 名稱為其各自所有權人的商標，僅供識別使用。若涉及文件、健康、學校及生產力相關的決定，請視情況核對相關單位的正式規定。",
@@ -2601,7 +2655,7 @@
       "priority_rank": null,
       "priority_group": "baseline_coverage",
       "publisher_query": "Snapport Lite：證件照尺寸 — 人像照裁成指定尺寸 | iOS App",
-      "decision_context": "已針對 iPhone Duo 最佳化。本 App 以最新開發套件建置，填滿整個內螢幕，無論摺起或打開都會自動調整版面。 履歷或各類申請要用的大頭照？Snapport Lite 把人像照裁成你選的尺寸：內建 35 種範本，也能自訂公釐、英吋或像素。 自動偵測臉部，用頭頂、眼睛、下巴導引線對齊；背景可換成白色、淺灰或藍色。 匯出 JPEG、PNG 或 PDF，或在 4×6、A4 紙上排成一頁多張列印。 免費試用，一次解鎖 - 所有尺寸範本與編修工具都能免費使用。 - 第一次匯出免費。 - 一次購買即可不限次數匯出。無訂閱、無廣告、無追蹤、免帳號。 選擇照片尺寸 - 內建 35 種範本，涵蓋 28 個國家與地區，包括 2×2 英吋、35×45 公釐、33×48 公釐與 50×70 公釐等尺寸，可用於護照與簽證申請、履歷等用途。 - 也能自訂尺寸，以公釐、英吋或像素設定，並自選 DPI 與背景顏色。 對齊臉部 - 在裝置上偵測臉部，並提供頭頂、眼睛與下巴導引線。 - 雙指縮放、拖曳與旋轉，微調裁切範圍。 背景與修飾 - 可保留原本背景，或換成白色、淺灰、藍色、紅色或自訂顏色，並前後對照、微調邊緣。 - 亮度、對比、色溫與銳利度都能輕微調整，保持自然樣貌。 匯出與列印 - 可匯出 JPEG、PNG 或 PDF。 - 可在 4×6 英吋、A4 或 Letter 紙張上排版，一頁多張並附裁切線。 - 可儲存到「照片」或「檔案」，也能分享。 以隱私為核心 - 照片都在你的裝置上處理，絕不上傳。 - 可離線使用。選用的範本更新檢查只會下載公開的尺寸清單，不會傳送任何個人資料。 注意事項 照片規定依國家、機關與申請類型而不同。Snapport Lite 提供常用尺寸與導引；照片是否符合要求由你送件的單位決定，送出前請自行確認。 支援 44 種語言。 針對 iPhone Duo 最佳化。",
+      "decision_context": "已針對 iPhone Duo 最佳化。本 App 以最新開發套件建置，填滿整個內螢幕，無論摺起或打開都會自動調整版面。 履歷或各類申請要用的大頭照？Snapport Lite 把人像照裁成你選的尺寸：內建 35 種範本，也能自訂公釐、英吋或像素。 自動偵測臉部，用頭頂、眼睛、下巴導引線對齊。 匯出 JPEG、PNG 或 PDF，或在 4×6、A4 紙上排成一頁多張列印。 免費編修，一次解鎖 - 所有尺寸範本與編修工具都能免費使用。 - 第一次匯出免費。 - 一次購買即可不限次數匯出。無訂閱、無廣告、無追蹤、免帳號。 選擇照片尺寸 - 內建 35 種範本，涵蓋 28 個國家與地區，包括 2×2 英吋、35×45 公釐、33×48 公釐與 50×70 公釐等尺寸，可用於護照與簽證申請、履歷等用途。 - 也能自訂尺寸，以公釐、英吋或像素設定，並自選 DPI。 對齊臉部 - 在裝置上偵測臉部，並提供頭頂、眼睛與下巴導引線。 - 雙指縮放、拖曳與旋轉，微調裁切範圍。 匯出與列印 - 可匯出 JPEG、PNG 或 PDF。 - 可在 4×6 英吋、A4 或 Letter 紙張上排版，一頁多張並附裁切線。 - 可儲存到「照片」或「檔案」，也能分享。 以隱私為核心 - 照片都在你的裝置上處理，絕不上傳。 - 可離線使用。選用的範本更新檢查只會下載公開的尺寸清單，不會傳送任何個人資料。 注意事項 照片規定依國家、機關與申請類型而不同。Snapport Lite 提供常用尺寸與導引；照片是否符合要求由你送件的單位決定，送出前請自行確認。 支援 44 種語言。 針對 iPhone Duo 最佳化。",
       "category": "photo-utility",
       "category_label": "照片與實用工具",
       "purchase_model": "free_with_lifetime_unlock",
@@ -3557,7 +3611,7 @@
         "免費開始 · 一次性解鎖",
         "無廣告",
         "App Store · 免費",
-        "★ 5.0/5 · 1"
+        "★ 5.0/5 · 2"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/duowallpaperstudio.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/duowallpaperstudio/decision/l/zh-Hant/index.html",
@@ -3572,7 +3626,7 @@
         "currency": "TWD",
         "formatted_price": "免費",
         "rating_value": 5.0,
-        "rating_count": 1
+        "rating_count": 2
       },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "這是由 Lumi Studio 發布的第一方資料；Lumi Studio 是每款列出 App 的開發者。",

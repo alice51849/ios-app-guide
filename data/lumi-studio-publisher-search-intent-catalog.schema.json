@@ -74,13 +74,13 @@
       "const": "official_locale_order_then_alphabetical_app_name"
     },
     "app_count": {
-      "const": 60
+      "const": 61
     },
     "locale_count": {
       "const": 50
     },
     "record_count": {
-      "const": 3000
+      "const": 3050
     },
     "locales": {
       "type": "array",
@@ -144,8 +144,8 @@
     },
     "records": {
       "type": "array",
-      "minItems": 3000,
-      "maxItems": 3000,
+      "minItems": 3050,
+      "maxItems": 3050,
       "items": {
         "type": "object",
         "additionalProperties": false,
@@ -250,6 +250,7 @@
               "gmoneylite",
               "hourstag",
               "hourstaglite",
+              "jellyday",
               "kumo",
               "ledmovingtext",
               "lockhour",

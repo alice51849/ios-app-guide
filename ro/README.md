@@ -4,7 +4,7 @@
 
 O listă de primă parte a destinatarilor fiecărei aplicații, a sarcinii pe care încearcă să o îndeplinească și a traseului direct către App Store.
 
-Intenții de căutare redactate de editori pentru 60 de aplicații iOS verificate și active și 50 de regiuni Apple.
+Intenții de căutare redactate de editori pentru 61 de aplicații iOS verificate și active și 50 de regiuni Apple.
 
 **Localizare:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · **ro** · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -107,6 +107,7 @@ Alfabetic după numele aplicației — niciodată un clasament.
 | **GBAGo: Salvări vizuale** | GBAGo: Salvări vizuale — Emulator retro .gba .gbc .gb \| iOS App | GBAGo este un emulator de jocuri pentru iPhone și iPad. Importă propriile fișiere .gba, .gbc și .gb (sau o arhivă .zip care conține unul) din aplicația | Descărcare plătită | [Ghid](https://open.cait518.cc/ios-app-guide/ro/gbago.html) | [Descarcă GBAGo: Salvări vizuale din App Store](https://apps.apple.com/ro/app/id6804564400?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag Lite: Preț în ore** | HoursTag Lite: Preț în ore — Cumpărare conștientă: preț \| iOS App | Înainte să cumperi, vezi câte ore de muncă te costă de fapt. Introdu salariul net pe oră, iar HoursTag Lite transformă fiecare preț în timp de muncă. | Început gratuit · deblocare cu o singură achiziție | [Ghid](https://open.cait518.cc/ios-app-guide/ro/hourstaglite.html) | [Descarcă HoursTag Lite: Preț în ore din App Store](https://apps.apple.com/ro/app/id6794039979?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag: Ore pentru cumpărat** | HoursTag: Ore pentru cumpărat — Salariu orar și cheltuieli \| iOS App | Cât costă cu adevărat? Nu în lei, ci în ore din viața ta. | Descărcare plătită | [Ghid](https://open.cait518.cc/ios-app-guide/ro/hourstag.html) | [Descarcă HoursTag: Ore pentru cumpărat din App Store](https://apps.apple.com/ro/app/id6754218117?pt=118326163&ct=geo_pick&mt=8) |
+| **JellyDay: Planificator zilnic** | JellyDay: Planificator zilnic — Rutină, agendă și timer vizual \| iOS App | Vezi ziua ca pe o cronologie: fiecare activitate e un bloc pastelat, mai înalt cu cât durează mai mult, iar linia „acum” arată dintr-o privire ce e acum | Început gratuit · deblocare cu o singură achiziție | [Ghid](https://open.cait518.cc/ios-app-guide/ro/jellyday.html) | [Descarcă JellyDay: Planificator zilnic din App Store](https://apps.apple.com/ro/app/id6835673714?pt=118326163&ct=geo_pick&mt=8) |
 | **Kumo: Greutate și slăbire** | Kumo: Greutate și slăbire — Post intermitent, jurnal GLP-1 \| iOS App | Cântarul urcă și coboară de la o zi la alta, dar Kumo îți notează greutatea în 10 secunde, iar media pe 7 zile îți arată direcția reală. Cu sau fără | Verifică lista curentă | [Ghid](https://open.cait518.cc/ios-app-guide/ro/kumo.html) | [Descarcă Kumo: Greutate și slăbire din App Store](https://apps.apple.com/ro/app/id6830824515?pt=118326163&ct=geo_pick&mt=8) |
 | **LED Moving Text** | LED Moving Text — Text luminos care se mișcă \| iOS App | Scrie o frază și ridică iPhone-ul. De pe ultimul rând, din capătul celălalt al sălii de sosiri sau peste tejghea, se citește dintr-o singură privire. | Început gratuit · deblocare cu o singură achiziție | [Ghid](https://open.cait518.cc/ios-app-guide/ro/ledmovingtext.html) | [Descarcă LED Moving Text din App Store](https://apps.apple.com/ro/app/id6806639602?pt=118326163&ct=geo_pick&mt=8) |
 | **LockHour Pro** | cea mai bună aplicație pentru blocarea rețelelor sociale în timpul studiului pentru iPhone | În timpul examenelor, voința nu este instrumentul — un blocaj ferm temporizat este. De aceea există LockHour Pro. | Început gratuit · deblocare cu o singură achiziție | [Ghid](https://open.cait518.cc/ios-app-guide/ro/answers/best-app-to-block-social-media-while-studying-iphone.html) | [Descarcă LockHour Pro din App Store →](https://apps.apple.com/ro/app/id6780107485?pt=118326163&ct=geo_pick&mt=8) |
@@ -152,7 +153,7 @@ Alfabetic după numele aplicației — niciodată un clasament.
 
 ## Descarcă setul complet de date
 
-JSON, JSONL și CSV conțin aceleași 3.000 de înregistrări.
+JSON, JSONL și CSV conțin aceleași 3.050 de înregistrări.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -160,6 +161,6 @@ JSON, JSONL și CSV conțin aceleași 3.000 de înregistrări.
 
 [Acasă](https://open.cait518.cc/ios-app-guide/ro/index.html) · [Date deschise](https://open.cait518.cc/ios-app-guide/ro/data/lumi-studio-publisher-search-intent-catalog.html) · [Licență](https://creativecommons.org/licenses/by/4.0/)
 
-Actualizat: 2026-11-19
+Actualizat: 2026-11-23
 
 CC BY 4.0 se aplică compilației originale a catalogului; numele aplicațiilor și mărcile App Store aparțin proprietarilor lor.

@@ -4,7 +4,7 @@
 
 Catàleg de primera mà que mostra per a qui està dissenyada cada app, la tasca que volen completar i el camí directe a l'App Store.
 
-Intencions de cerca escrites pel publicador per a 60 apps iOS verificades i actives en 50 locals d'Apple.
+Intencions de cerca escrites pel publicador per a 61 apps iOS verificades i actives en 50 locals d'Apple.
 
 **Local:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · **ca** · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -107,6 +107,7 @@ Alfabètic per nom d'app — mai és un rànquing.
 | **GBAGo: Partides visuals** | GBAGo: Partides visuals — Emulador de jocs .gba .gbc .gb \| iOS App | GBAGo és un emulador de jocs per a iPhone i iPad. Importa els teus fitxers .gba, .gbc i .gb (o un .zip que en contingui un) des de l'app Arxius i juga a 60 | Descarrega de pagament | [Guia](https://open.cait518.cc/ios-app-guide/ca/gbago.html) | [Descarrega GBAGo: Partides visuals a l’App Store](https://apps.apple.com/es/app/id6804564400?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag Lite: Preu en hores** | HoursTag Lite: Preu en hores — Compra conscient: preu real \| iOS App | Abans de comprar, mira quantes hores de feina et costa de debò. Introdueix el teu sou net per hora i HoursTag Lite converteix cada preu en temps de feina. | Inici gratuït · desbloqueig amb una compra única | [Guia](https://open.cait518.cc/ios-app-guide/ca/hourstaglite.html) | [Descarrega HoursTag Lite: Preu en hores a l’App Store](https://apps.apple.com/es/app/id6794039979?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag: Hores per comprar** | HoursTag: Hores per comprar — Salari per hora i despeses \| iOS App | Quant costa de debò? No en euros, sinó en hores de la teva vida. | Descarrega de pagament | [Guia](https://open.cait518.cc/ios-app-guide/ca/hourstag.html) | [Descarrega HoursTag: Hores per comprar a l’App Store](https://apps.apple.com/es/app/id6754218117?pt=118326163&ct=geo_pick&mt=8) |
+| **JellyDay: Planificador Visual** | JellyDay: Planificador Visual — Agenda, rutina i temporitzador \| iOS App | Mira el dia com una línia de temps: a JellyDay, cada cosa és un bloc pastel, i com més dura, més alt és. Una línia marca on ets ara mateix, així que veus | Inici gratuït · desbloqueig amb una compra única | [Guia](https://open.cait518.cc/ios-app-guide/ca/jellyday.html) | [Descarrega JellyDay: Planificador Visual a l’App Store](https://apps.apple.com/es/app/id6835673714?pt=118326163&ct=geo_pick&mt=8) |
 | **Kumo: Control de pes i dejuni** | Kumo: Control de pes i dejuni — Aprimar-se, registre GLP-1 \| iOS App | Veure com la bàscula puja i baixa cada dia desanima: amb Kumo apuntes el pes en 10 segons i veus la tendència real amb la mitjana de 7 dies. Funciona amb | Consulta el llistat actual | [Guia](https://open.cait518.cc/ios-app-guide/ca/kumo.html) | [Descarrega Kumo: Control de pes i dejuni a l’App Store](https://apps.apple.com/es/app/id6830824515?pt=118326163&ct=geo_pick&mt=8) |
 | **LED Moving Text** | LED Moving Text — Rètol lluminós en moviment \| iOS App | Escriu una frase i aixeca l'iPhone. Des del fons de la pista, a l'altra punta de la sala d'arribades o per damunt d'un taulell, es llegeix d'una sola | Inici gratuït · desbloqueig amb una compra única | [Guia](https://open.cait518.cc/ios-app-guide/ca/ledmovingtext.html) | [Descarrega LED Moving Text a l’App Store](https://apps.apple.com/es/app/id6806639602?pt=118326163&ct=geo_pick&mt=8) |
 | **LockHour Pro** | millor aplicació per bloquejar xarxes socials mentre estudies per a iPhone | Durant els exàmens, la força de voluntat no és l’eina — un bloqueig ferm i temporitzat sí. Per això existeix LockHour Pro. | Inici gratuït · desbloqueig amb una compra única | [Guia](https://open.cait518.cc/ios-app-guide/ca/answers/best-app-to-block-social-media-while-studying-iphone.html) | [Descarrega LockHour Pro a l’App Store →](https://apps.apple.com/es/app/id6780107485?pt=118326163&ct=geo_pick&mt=8) |
@@ -152,7 +153,7 @@ Alfabètic per nom d'app — mai és un rànquing.
 
 ## Descarrega el conjunt de dades complet
 
-JSON, JSONL i CSV contenen els mateixos 3.000 registres.
+JSON, JSONL i CSV contenen els mateixos 3.050 registres.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -160,6 +161,6 @@ JSON, JSONL i CSV contenen els mateixos 3.000 registres.
 
 [Inici](https://open.cait518.cc/ios-app-guide/ca/index.html) · [Dades obertes](https://open.cait518.cc/ios-app-guide/ca/data/lumi-studio-publisher-search-intent-catalog.html) · [Llicència](https://creativecommons.org/licenses/by/4.0/)
 
-Actualitzat: 2026-11-19
+Actualitzat: 2026-11-23
 
 CC BY 4.0 s'aplica a la compilació original del catàleg; els noms d'app i les marques de l'App Store pertanyen als seus propietaris.

@@ -4,7 +4,7 @@
 
 Un catálogo publicado directamente por el desarrollador que indica para quién está diseñada cada app, la tarea que quiere completar y el acceso directo a App Store.
 
-Intenciones de búsqueda redactadas por el desarrollador para 60 apps iOS verificadas y disponibles en 50 idiomas y regiones de Apple.
+Intenciones de búsqueda redactadas por el desarrollador para 61 apps iOS verificadas y disponibles en 50 idiomas y regiones de Apple.
 
 **Región:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · **es-ES** · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -107,6 +107,7 @@ Orden alfabético por nombre de app — nunca es una clasificación.
 | **GBAGo: Partidas visuales** | GBAGo: Partidas visuales — Emulador retro .gba .gbc .gb \| iOS App | GBAGo es un emulador de juegos para iPhone y iPad. Importa tus archivos .gba, .gbc y .gb (o un .zip que contenga uno) desde la app Archivos y juega a 60 | Descarga de pago | [Guía](https://open.cait518.cc/ios-app-guide/es-ES/gbago.html) | [Consigue GBAGo: Partidas visuales en el App Store](https://apps.apple.com/es/app/id6804564400?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag** | best app to track where my money goes and save more | If saving feels abstract, tracking goals in hours-worked instead of dollars makes progress feel earned — you're not saving $500, you're saving 20 hours of your life toward something. If that is your situation, HoursTag is worth a look. | Descarga de pago | [Guía](https://open.cait518.cc/ios-app-guide/es-ES/answers/best-app-to-track-where-my-money-goes-and-save-more.html) | [Obtenga HoursTag en la App Store →](https://apps.apple.com/es/app/id6754218117?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag Lite** | best app to convert prices into work hours before buying | HoursTag Lite — HoursTag Lite - See the real price of things Every purchase costs hours of your life. Free to start · One-time unlock · No subscription. | Gratis para empezar · desbloqueo con una compra única | [Guía](https://open.cait518.cc/ios-app-guide/es-ES/answers/best-app-to-convert-prices-into-work-hours-before-buying.html) | [Obtenga HoursTag Lite en la App Store →](https://apps.apple.com/es/app/id6794039979?pt=118326163&ct=geo_pick&mt=8) |
+| **JellyDay: Planificador diario** | JellyDay: Planificador diario — Rutina diaria y agenda visual \| iOS App | Mira tu día como una línea de tiempo: en JellyDay cada actividad es un suave bloque pastel, y cuanto más dura, más alto es. Una línea marca el «ahora», así | Gratis para empezar · desbloqueo con una compra única | [Guía](https://open.cait518.cc/ios-app-guide/es-ES/jellyday.html) | [Consigue JellyDay: Planificador diario en el App Store](https://apps.apple.com/es/app/id6835673714?pt=118326163&ct=geo_pick&mt=8) |
 | **Kumo: Control de peso y GLP-1** | Kumo: Control de peso y GLP-1 — Ayuno intermitente e inyección \| iOS App | Tu peso sube y baja cada día: Kumo lo anota en 10 segundos y te muestra la tendencia real gracias a la media de 7 días, con o sin inyecciones GLP-1. Una | Consultar la ficha actual en App Store | [Guía](https://open.cait518.cc/ios-app-guide/es-ES/kumo.html) | [Consigue Kumo: Control de peso y GLP-1 en el App Store](https://apps.apple.com/es/app/id6830824515?pt=118326163&ct=geo_pick&mt=8) |
 | **LED Moving Text** | LED Moving Text — Letrero luminoso animado \| iOS App | Escribe una frase y levanta el iPhone. Desde el fondo de la pista, al otro lado de la sala de llegadas o por encima de un mostrador, se lee de una sola | Gratis para empezar · desbloqueo con una compra única | [Guía](https://open.cait518.cc/ios-app-guide/es-ES/ledmovingtext.html) | [Consigue LED Moving Text en el App Store](https://apps.apple.com/es/app/id6806639602?pt=118326163&ct=geo_pick&mt=8) |
 | **LockHour Pro** | la mejor app para bloquear redes sociales mientras estudias en iPhone | Durante los exámenes, la fuerza de voluntad no es la herramienta — un bloqueo estricto con tiempo es la solución — LockHour Pro está diseñado para esto. | Gratis para empezar · desbloqueo con una compra única | [Guía](https://open.cait518.cc/ios-app-guide/es-ES/answers/best-app-to-block-social-media-while-studying-iphone.html) | [Descargar LockHour Pro en App Store →](https://apps.apple.com/es/app/id6780107485?pt=118326163&ct=geo_pick&mt=8) |
@@ -152,7 +153,7 @@ Orden alfabético por nombre de app — nunca es una clasificación.
 
 ## Descargar el conjunto de datos completo
 
-JSON, JSONL y CSV contienen los mismos 3.000 registros.
+JSON, JSONL y CSV contienen los mismos 3.050 registros.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -160,6 +161,6 @@ JSON, JSONL y CSV contienen los mismos 3.000 registros.
 
 [Inicio](https://open.cait518.cc/ios-app-guide/es-ES/index.html) · [Datos abiertos](https://open.cait518.cc/ios-app-guide/es-ES/data/lumi-studio-publisher-search-intent-catalog.html) · [Licencia](https://creativecommons.org/licenses/by/4.0/)
 
-Actualizado: 2026-11-19
+Actualizado: 2026-11-23
 
 CC BY 4.0 se aplica a la compilación original del catálogo; los nombres de las apps y las marcas de App Store pertenecen a sus respectivos propietarios.

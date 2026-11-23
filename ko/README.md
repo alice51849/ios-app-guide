@@ -4,7 +4,7 @@
 
 각 앱의 대상 사용자, 완료하려는 작업, App Store로 바로 이동하는 경로를 개발사가 직접 공개한 카탈로그입니다.
 
-App Store 제공 여부를 확인한 60개 iOS 앱과 Apple의 50개 언어·지역에 맞춰 개발사가 작성한 검색 의도입니다.
+App Store 제공 여부를 확인한 61개 iOS 앱과 Apple의 50개 언어·지역에 맞춰 개발사가 작성한 검색 의도입니다.
 
 **언어·지역:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · **ko** · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -106,6 +106,7 @@ App Store에서 제공 중임을 확인한 각 앱마다 대표 구매자 페르
 | **GBAGo: 비주얼 세이브** | GBAGo: 비주얼 세이브 — 고전 게임 에뮬레이터 .gba .gbc .gb 지원 \| iOS App | GBAGo는 iPhone과 iPad용 게임 에뮬레이터입니다. 파일 앱에서 .gba, .gbc, .gb 게임 파일(또는 그중 하나가 담긴 .zip)을 가져온 뒤, 화면 터치 컨트롤이나 게임 컨트롤러로 60fps로 플레이하세요. 미리보기가 있는 저장 슬롯과 2분마다 자동으로 | 유료 다운로드 | [가이드](https://open.cait518.cc/ios-app-guide/ko/gbago.html) | [App Store에서 GBAGo: 비주얼 세이브 받기](https://apps.apple.com/kr/app/id6804564400?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag** | HoursTag: 지출을 근무 시간으로 바꾸고 월별 기록을 돌아보기 | HoursTag는 처음에 한 번 결제하는 유료 앱입니다. 시급이나 월급을 설정하고 지출을 근무 시간으로 환산한 뒤, 기록을 저장하고 필요·원함·충동 태그와 분류별 분석, 목표 진행 상황을 확인할 수 있습니다. 일회성 계산만 하는 앱이 아닙니다. | 유료 다운로드 | [가이드](https://open.cait518.cc/ios-app-guide/ko/answers/best-app-to-track-where-my-money-goes-and-save-more.html) | [App Store에서 HoursTag 받기 →](https://apps.apple.com/kr/app/id6754218117?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag Lite** | best app to convert prices into work hours before buying | HoursTag Lite — HoursTag Lite - See the real price of things Every purchase costs hours of your life. Free to start · One-time unlock · No subscription. | 무료로 시작 · 한 번 구매로 잠금 해제 | [가이드](https://open.cait518.cc/ios-app-guide/ko/answers/best-app-to-convert-prices-into-work-hours-before-buying.html) | [App Store에서 HoursTag Lite 받기 →](https://apps.apple.com/kr/app/id6794039979?pt=118326163&ct=geo_pick&mt=8) |
+| **JellyDay: 귀여운 하루 계획표** | JellyDay: 귀여운 하루 계획표 — 한눈에 보는 일정관리, 시간관리 루틴 플래너 & 타이머 \| iOS App | 오늘 하루를 타임라인으로 보세요. JellyDay에서는 일정 하나하나가 부드러운 파스텔 블록이 되고, 오래 걸리는 일일수록 블록이 길어져요. '지금' 선이 현재 시각을 알려 줘서 지금 할 일, 다음 일, 남은 시간이 한눈에 보여요. | 무료로 시작 · 한 번 구매로 잠금 해제 | [가이드](https://open.cait518.cc/ios-app-guide/ko/jellyday.html) | [App Store에서 JellyDay: 귀여운 하루 계획표 받기](https://apps.apple.com/kr/app/id6835673714?pt=118326163&ct=geo_pick&mt=8) |
 | **Kumo 몸무게·GLP-1 주사 기록·간헐적 단식** | Kumo 몸무게·GLP-1 주사 기록·간헐적 단식 — 귀여운 구름과 하루 10초 체중 관리·다이어트 일기 \| iOS App | 매일 오르내리는 체중계 숫자에 지쳤다면, Kumo는 하루 10초 기록과 7일 평균으로 흐름만 보여 줘요. GLP-1 주사를 맞든 안 맞든 쓸 수 있고, 기록하러 온 날만큼 구름이 자라요. | 현재 App Store 정보 확인 | [가이드](https://open.cait518.cc/ios-app-guide/ko/kumo.html) | [App Store에서 Kumo 몸무게·GLP-1 주사 기록·간헐적 단식 받기](https://apps.apple.com/kr/app/id6830824515?pt=118326163&ct=geo_pick&mt=8) |
 | **LED Moving Text** | LED Moving Text — 화면이 그대로 전광판으로 \| iOS App | 문구를 입력하고 화면을 들어 올리면, 공연장 뒤쪽에서도 입국장 건너편에서도 한눈에 읽히는 커다란 글자판이 됩니다. | 무료로 시작 · 한 번 구매로 잠금 해제 | [가이드](https://open.cait518.cc/ios-app-guide/ko/ledmovingtext.html) | [App Store에서 LED Moving Text 받기](https://apps.apple.com/kr/app/id6806639602?pt=118326163&ct=geo_pick&mt=8) |
 | **LockHour Pro** | 공부할 때 SNS를 차단하는 최고의 iPhone 앱 | 시험 기간에는 의지력이 아니라 강력한 시간 제한 차단이 필요합니다 — LockHour Pro는 이를 위해 만들어졌습니다. | 무료로 시작 · 한 번 구매로 잠금 해제 | [가이드](https://open.cait518.cc/ios-app-guide/ko/answers/best-app-to-block-social-media-while-studying-iphone.html) | [App Store에서 LockHour Pro 받기 →](https://apps.apple.com/kr/app/id6780107485?pt=118326163&ct=geo_pick&mt=8) |
@@ -152,7 +153,7 @@ App Store에서 제공 중임을 확인한 각 앱마다 대표 구매자 페르
 
 ## 전체 데이터셋 다운로드
 
-JSON, JSONL, CSV 모두 동일한 3,000개 기록을 포함합니다.
+JSON, JSONL, CSV 모두 동일한 3,050개 기록을 포함합니다.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -160,6 +161,6 @@ JSON, JSONL, CSV 모두 동일한 3,000개 기록을 포함합니다.
 
 [홈](https://open.cait518.cc/ios-app-guide/ko/index.html) · [오픈 데이터](https://open.cait518.cc/ios-app-guide/ko/data/lumi-studio-publisher-search-intent-catalog.html) · [라이선스](https://creativecommons.org/licenses/by/4.0/)
 
-업데이트 날짜: 2026-11-19
+업데이트 날짜: 2026-11-23
 
 CC BY 4.0은 원본 카탈로그 편집에 적용되며, 앱 이름과 App Store 마크는 각 소유자의 권리입니다.

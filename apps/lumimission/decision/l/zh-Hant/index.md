@@ -2,7 +2,7 @@
 title: "適合學齡前兒童且無廣告的最佳睡前習慣應用程式"
 lang: "zh-Hant"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimission/decision/l/zh-Hant/index.html"
-modified: "2026-11-21"
+modified: "2026-11-23"
 app_store_id: "6779750237"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - 無追蹤
 - 隱私優先／裝置端
 - App Store · 免費
-- ★ 5.0/5 · 1
+- ★ 4.5/5 · 2
 
 [在App Store取得Lumi Mission Planet →](https://apps.apple.com/tw/app/id6779750237?pt=118326163&ct=geo_pick&mt=8)
 

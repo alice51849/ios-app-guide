@@ -4,7 +4,7 @@
 
 ପ୍ରତ୍ୟେକ ଆପ୍ କାହା ପାଇଁ ଡିଜାଇନ୍ କରାଯାଇଛି, ସେମାନେ କେଉଁ କାର୍ଯ୍ୟ ସମ୍ପୂର୍ଣ୍ଣ କରିବାକୁ ଚେଷ୍ଟା କରୁଛନ୍ତି, ଏବଂ ସିଧା App Store ପଥର ପ୍ରଥମ-ପକ୍ଷ ସୂଚୀ।
 
-ପ୍ରକାଶକ ଦ୍ୱାରା ଲେଖାଯାଇଥିବା ସନ୍ଧାନ ଉଦ୍ଦେଶ୍ୟ 60ଟି ସତ୍ୟାପିତ ସଜୀବ iOS ଆପ୍ ଏବଂ 50ଟି Apple ଅଞ୍ଚଳରେ।
+ପ୍ରକାଶକ ଦ୍ୱାରା ଲେଖାଯାଇଥିବା ସନ୍ଧାନ ଉଦ୍ଦେଶ୍ୟ 61ଟି ସତ୍ୟାପିତ ସଜୀବ iOS ଆପ୍ ଏବଂ 50ଟି Apple ଅଞ୍ଚଳରେ।
 
 **ଅଞ୍ଚଳ:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · **or-IN** · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -107,6 +107,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **GBAGo: ଦୃଶ୍ୟ ସେଭ୍** | GBAGo: ଦୃଶ୍ୟ ସେଭ୍ — ଗେମ୍ ଏମୁଲେଟର .gba .gbc .gb \| iOS App | GBAGo ହେଉଛି iPhone ଓ iPad ପାଇଁ ଏକ ଗେମ୍ ଏମୁଲେଟର। Files ଆପରୁ ଆପଣଙ୍କ .gba, .gbc ଓ .gb ଗେମ୍ ଫାଇଲ୍ (କିମ୍ବା ସେଥିରୁ ଗୋଟିଏ ଥିବା .zip) ଇମ୍ପୋର୍ଟ କରନ୍ତୁ ଏବଂ ଟଚ୍ | ପୈସା ଦେଇ ଡାଉନଲୋଡ୍ | [ଗାଇଡ୍](https://open.cait518.cc/ios-app-guide/or-IN/gbago.html) | [App Store ରୁ GBAGo: ଦୃଶ୍ୟ ସେଭ୍ ପାଆନ୍ତୁ](https://apps.apple.com/in/app/id6804564400?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag Lite: ମୂଲ୍ୟ ଘଣ୍ଟାରେ** | HoursTag Lite: ମୂଲ୍ୟ ଘଣ୍ଟାରେ — ସଚେତନ କିଣା: ପ୍ରକୃତ ମୂଲ୍ୟ \| iOS App | କିଣିବା ପୂର୍ବରୁ ଦେଖନ୍ତୁ, ଏହା ପ୍ରକୃତରେ କେତେ ଘଣ୍ଟା କାମର ମୂଲ୍ୟ। ଆପଣଙ୍କ ହାତକୁ ଆସୁଥିବା ଘଣ୍ଟାପିଛା ଆୟ ଦିଅନ୍ତୁ, HoursTag Lite ପ୍ରତିଟି ମୂଲ୍ୟକୁ କାମର ସମୟରେ ବଦଳାଇଦେବ। | ମୁକ୍ତ ଆରମ୍ଭ · ଏକାଥରକେ କିଣି ଅନଲକ୍ | [ଗାଇଡ୍](https://open.cait518.cc/ios-app-guide/or-IN/hourstaglite.html) | [App Store ରୁ HoursTag Lite: ମୂଲ୍ୟ ଘଣ୍ଟାରେ ପାଆନ୍ତୁ](https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag: ଘଣ୍ଟାରେ କିଣନ୍ତୁ** | HoursTag: ଘଣ୍ଟାରେ କିଣନ୍ତୁ — ଘଣ୍ଟା ମଜୁରି ଓ ଖର୍ଚ୍ଚ \| iOS App | ଆପଣଙ୍କ ଜୀବନର ଘଣ୍ଟାରେ ମୂଲ୍ୟ କେତେ? | ପୈସା ଦେଇ ଡାଉନଲୋଡ୍ | [ଗାଇଡ୍](https://open.cait518.cc/ios-app-guide/or-IN/hourstag.html) | [App Store ରୁ HoursTag: ଘଣ୍ଟାରେ କିଣନ୍ତୁ ପାଆନ୍ତୁ](https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=geo_pick&mt=8) |
+| **JellyDay: ଭିଜୁଆଲ ଡେଲି ପ୍ଲାନର** | JellyDay: ଭିଜୁଆଲ ଡେଲି ପ୍ଲାନର — ଦୈନିକ ରୁଟିନ ଟାଇମ ଟେବୁଲ ଓ ଟାଇମର \| iOS App | ଆପଣଙ୍କ ଦିନକୁ ଏକ ଟାଇମଲାଇନ ଭାବେ ଦେଖନ୍ତୁ: JellyDay ରେ ପ୍ରତିଟି କାମ ଏକ କୋମଳ ପାଷ୍ଟେଲ ବ୍ଲକ, ଆଉ ବ୍ଲକ ଯେତେ ଉଚ୍ଚ, କାମରେ ସେତେ ଅଧିକ ସମୟ ଲାଗେ। ଏକ ରେଖା ଦେଖାଏ ଆପଣ ଏବେ | ମୁକ୍ତ ଆରମ୍ଭ · ଏକାଥରକେ କିଣି ଅନଲକ୍ | [ଗାଇଡ୍](https://open.cait518.cc/ios-app-guide/or-IN/jellyday.html) | [App Store ରୁ JellyDay: ଭିଜୁଆଲ ଡେଲି ପ୍ଲାନର ପାଆନ୍ତୁ](https://apps.apple.com/in/app/id6835673714?pt=118326163&ct=geo_pick&mt=8) |
 | **Kumo: ଓଜନ କମାଇବା ଟ୍ରାକର** | Kumo: ଓଜନ କମାଇବା ଟ୍ରାକର — ଉପବାସ ଟାଇମର ଓ GLP-1 ଡାଏରୀ \| iOS App | ଓଜନ ପ୍ରତିଦିନ ଉପର-ତଳ ହେଲେ ମନ ଭାଙ୍ଗେ? Kumo ରେ ଦିନକୁ 10 ସେକେଣ୍ଡରେ ଓଜନ ଲେଖନ୍ତୁ ଓ 7 ଦିନର ହାରାହାରିରେ ପ୍ରକୃତ ଟ୍ରେଣ୍ଡ ଦେଖନ୍ତୁ। GLP-1 ଇଞ୍ଜେକ୍ସନ ନେଉଥିଲେ ବା ନ ନେଉଥିଲେ | ବର୍ତ୍ତମାନ ତାଲିକା ଯାଞ୍ଚ କରନ୍ତୁ | [ଗାଇଡ୍](https://open.cait518.cc/ios-app-guide/or-IN/kumo.html) | [App Store ରୁ Kumo: ଓଜନ କମାଇବା ଟ୍ରାକର ପାଆନ୍ତୁ](https://apps.apple.com/in/app/id6830824515?pt=118326163&ct=geo_pick&mt=8) |
 | **LED Moving Text** | LED Moving Text — ସ୍କ୍ରିନରେ ଚାଲୁଥିବା ଫଳକ \| iOS App | ଗୋଟିଏ ଧାଡ଼ି ଟାଇପ୍ କରନ୍ତୁ ଓ ଆଇଫୋନ୍ ଉପରକୁ ଉଠାନ୍ତୁ। ଭିଡ଼ ପଛରୁ, ଆଗମନ ହଲ୍‌ର ଆରପଟୁ କିମ୍ବା କାଉଣ୍ଟର ଉପରୁ ଏକା ନଜରରେ ପଢ଼ାଯାଏ। | ମୁକ୍ତ ଆରମ୍ଭ · ଏକାଥରକେ କିଣି ଅନଲକ୍ | [ଗାଇଡ୍](https://open.cait518.cc/ios-app-guide/or-IN/ledmovingtext.html) | [App Store ରୁ LED Moving Text ପାଆନ୍ତୁ](https://apps.apple.com/in/app/id6806639602?pt=118326163&ct=geo_pick&mt=8) |
 | **LockHour Pro** | iPhone ପଢ଼ାଇବା ସମୟରେ ସୋସିଆଲ୍ ମିଡିଆ ବ୍ଲକ୍ କରିବା ପାଇଁ ସର୍ବୋତ୍ତମ ଆପ୍ | ପରୀକ୍ଷା ସମୟରେ, ଇଚ୍ଛାଶକ୍ତି ହେଉଛି ଉପକରଣ ନୁହେଁ — ଏକ କଠୋର ସମୟ ନିର୍ଦ୍ଧାରିତ ବ୍ଲକ୍ ହେଉଛି। ସେଥିପାଇଁ ହିଁ LockHour Pro ତିଆରି ହେଲା। | ମୁକ୍ତ ଆରମ୍ଭ · ଏକାଥରକେ କିଣି ଅନଲକ୍ | [ଗାଇଡ୍](https://open.cait518.cc/ios-app-guide/or-IN/answers/best-app-to-block-social-media-while-studying-iphone.html) | [App Store ରୁ LockHour Pro ପାଆନ୍ତୁ →](https://apps.apple.com/in/app/id6780107485?pt=118326163&ct=geo_pick&mt=8) |
@@ -152,7 +153,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## ସମ୍ପୂର୍ଣ୍ଣ ତଥ୍ୟସେଟ୍ ଡାଉନଲୋଡ୍ କରନ୍ତୁ
 
-JSON, JSONL ଏବଂ CSV ଏହି ସମସ୍ତ 3,000 ରେକର୍ଡ ସମାନ ରଖେ।
+JSON, JSONL ଏବଂ CSV ଏହି ସମସ୍ତ 3,050 ରେକର୍ଡ ସମାନ ରଖେ।
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -160,6 +161,6 @@ JSON, JSONL ଏବଂ CSV ଏହି ସମସ୍ତ 3,000 ରେକର୍ଡ ସ
 
 [ହୋମ୍](https://open.cait518.cc/ios-app-guide/or-IN/index.html) · [ଖୋଲା ତଥ୍ୟ](https://open.cait518.cc/ios-app-guide/or-IN/data/lumi-studio-publisher-search-intent-catalog.html) · [ଲାଇସେନ୍ସ](https://creativecommons.org/licenses/by/4.0/)
 
-ଅଦ୍ୟତିତ: 2026-11-19
+ଅଦ୍ୟତିତ: 2026-11-23
 
 CC BY 4.0 ମୂଳ ସୂଚୀ ସଂଗ୍ରହ ପାଇଁ ପ୍ରୟୋଗ ହୁଏ; ଆପ୍ ନାମ ଏବଂ App Store ଚିହ୍ନଗୁଡିକ ତାଙ୍କର ମାଲିକଙ୍କର ଅଟୁଟ ଅଧିକାର।

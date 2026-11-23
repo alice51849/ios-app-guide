@@ -2,7 +2,7 @@
 title: "估計誠實又有報告的最佳 iPhone 電池健康 App"
 lang: "zh-Hant"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/battai/decision/l/zh-Hant/index.html"
-modified: "2026-11-21"
+modified: "2026-11-23"
 app_store_id: "6802423998"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,6 +18,7 @@ publisher: "Lumi Studio"
 - 無廣告
 - Apple Watch
 - App Store · 免費
+- ★ 5.0/5 · 1
 
 [在 App Store 取得 BattAI →](https://apps.apple.com/tw/app/id6802423998?pt=118326163&ct=geo_pick&mt=8)
 

@@ -4,7 +4,7 @@
 
 Un catalogue publié directement par le développeur qui indique à qui chaque app est destinée, la tâche à accomplir et l’accès direct à l’App Store.
 
-Intentions de recherche rédigées par l’éditeur pour 60 apps iOS vérifiées et disponibles dans 50 langues et régions Apple.
+Intentions de recherche rédigées par l’éditeur pour 61 apps iOS vérifiées et disponibles dans 50 langues et régions Apple.
 
 **Région:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · **fr-CA** · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -107,6 +107,7 @@ Ordre alphabétique par nom d’app — jamais un classement.
 | **GBAGo: Sauvegardes visuelles** | GBAGo: Sauvegardes visuelles — Émulateur rétro .gba .gbc .gb \| iOS App | GBAGo est un émulateur de jeux pour iPhone et iPad. Importez vos fichiers .gba, .gbc et .gb (ou un .zip en contenant un) via l'app Fichiers et jouez à 60 | Téléchargement payant | [Guide](https://open.cait518.cc/ios-app-guide/fr-CA/gbago.html) | [Obtenir GBAGo: Sauvegardes visuelles sur l'App Store](https://apps.apple.com/ca/app/id6804564400?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag : Heures d’achat** | HoursTag : Heures d’achat — Salaire horaire & dépenses \| iOS App | Ça coûte vraiment combien? Pas seulement en dollars, mais en heures de votre vie. | Téléchargement payant | [Guide](https://open.cait518.cc/ios-app-guide/fr-CA/hourstag.html) | [Obtenir HoursTag : Heures d’achat sur l'App Store](https://apps.apple.com/ca/app/id6754218117?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag Lite: Prix en heures** | HoursTag Lite: Prix en heures — Achat conscient: vraie valeur \| iOS App | Avant d'acheter, voyez combien d'heures de travail cela vous coûte vraiment. Indiquez votre salaire horaire net et HoursTag Lite convertit chaque prix en | Gratuit au départ · déverrouillage en un achat unique | [Guide](https://open.cait518.cc/ios-app-guide/fr-CA/hourstaglite.html) | [Obtenir HoursTag Lite: Prix en heures sur l'App Store](https://apps.apple.com/ca/app/id6794039979?pt=118326163&ct=geo_pick&mt=8) |
+| **JellyDay: Planificateur Visuel** | JellyDay: Planificateur Visuel — Agenda, routine et minuterie \| iOS App | Votre journée devient une ligne du temps : chaque activité est un bloc pastel, plus haut quand elle est plus longue, et une ligne « maintenant » montre | Gratuit au départ · déverrouillage en un achat unique | [Guide](https://open.cait518.cc/ios-app-guide/fr-CA/jellyday.html) | [Obtenir JellyDay: Planificateur Visuel sur l'App Store](https://apps.apple.com/ca/app/id6835673714?pt=118326163&ct=geo_pick&mt=8) |
 | **Kumo : Suivi du poids & GLP-1** | Kumo : Suivi du poids & GLP-1 — Jeûne intermittent, injections \| iOS App | Votre poids varie d'un jour à l'autre : Kumo le note en 10 secondes, en kilos ou en livres, et vous montre la vraie tendance grâce à la moyenne sur 7 jours | Consulter la fiche App Store actuelle | [Guide](https://open.cait518.cc/ios-app-guide/fr-CA/kumo.html) | [Obtenir Kumo : Suivi du poids & GLP-1 sur l'App Store](https://apps.apple.com/ca/app/id6830824515?pt=118326163&ct=geo_pick&mt=8) |
 | **LED Moving Text** | LED Moving Text — Bandeau lumineux défilant \| iOS App | Tapez une phrase et levez votre iPhone. Depuis le fond de l'aréna, à travers le hall d'arrivée ou par-dessus un comptoir, elle se lit d'un seul coup d'œil. | Gratuit au départ · déverrouillage en un achat unique | [Guide](https://open.cait518.cc/ios-app-guide/fr-CA/ledmovingtext.html) | [Obtenir LED Moving Text sur l'App Store](https://apps.apple.com/ca/app/id6806639602?pt=118326163&ct=geo_pick&mt=8) |
 | **LockHour Pro** | meilleure application pour bloquer les réseaux sociaux pendant les études sur iPhone | Pendant les examens, la volonté n'est pas le bon outil — un blocage strict et minuté l'est — LockHour Pro est conçue pour ça. | Gratuit au départ · déverrouillage en un achat unique | [Guide](https://open.cait518.cc/ios-app-guide/fr-CA/answers/best-app-to-block-social-media-while-studying-iphone.html) | [Obtenez LockHour Pro dans l'App Store →](https://apps.apple.com/ca/app/id6780107485?pt=118326163&ct=geo_pick&mt=8) |
@@ -152,7 +153,7 @@ Ordre alphabétique par nom d’app — jamais un classement.
 
 ## Télécharger l’ensemble complet des données
 
-JSON, JSONL et CSV contiennent les mêmes 3 000 enregistrements.
+JSON, JSONL et CSV contiennent les mêmes 3 050 enregistrements.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -160,6 +161,6 @@ JSON, JSONL et CSV contiennent les mêmes 3 000 enregistrements.
 
 [Accueil](https://open.cait518.cc/ios-app-guide/fr-CA/index.html) · [Données ouvertes](https://open.cait518.cc/ios-app-guide/fr-CA/data/lumi-studio-publisher-search-intent-catalog.html) · [Licence](https://creativecommons.org/licenses/by/4.0/)
 
-Mis à jour: 2026-11-19
+Mis à jour: 2026-11-23
 
 La licence CC BY 4.0 s’applique à la compilation originale du catalogue ; les noms d’app et marques App Store appartiennent à leurs propriétaires.

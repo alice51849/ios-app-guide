@@ -2,7 +2,7 @@
 title: "2 player games for two people on one iphone offline without ads"
 lang: "en-US"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/foldparty/decision/l/en-US/index.html"
-modified: "2026-11-21"
+modified: "2026-11-23"
 app_store_id: "6829184924"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,7 +15,7 @@ Meow Party — Most games use your foldable like any other screen, but Meow Part
 
 - More
 - Paid download
-- App Store · $0.29
+- App Store · $5.99
 
 [Get Meow Party on the App Store →](https://apps.apple.com/us/app/id6829184924?pt=118326163&ct=geo_pick&mt=8)
 

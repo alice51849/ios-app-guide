@@ -4,7 +4,7 @@
 
 كتالوج ينشره المطور مباشرةً ويوضح الفئة التي صُمم لها كل تطبيق، والمهمة التي تريد إنجازها، والمسار المباشر إلى App Store.
 
-نوايا بحث كتبها الناشر لـ 60 تطبيق iOS تم التحقق من توفرها و50 إعدادًا لغويًا وإقليميًا من Apple.
+نوايا بحث كتبها الناشر لـ 61 تطبيق iOS تم التحقق من توفرها و50 إعدادًا لغويًا وإقليميًا من Apple.
 
 **الإعداد اللغوي والإقليمي:** **ar-SA** · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -107,6 +107,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **GBAGo: حفظ مرئي** | GBAGo: حفظ مرئي — محاكي ألعاب قديمة gba gbc gb \| iOS App | GBAGo محاكي ألعاب لأجهزة iPhone وiPad. استورد ملفات ألعابك بصيغ .gba و.gbc و.gb (أو ملف .zip يحتوي على أحدها) من تطبيق الملفات، ثم العب بمعدل 60 إطارًا | تحميل مدفوع | [الدليل](https://open.cait518.cc/ios-app-guide/ar-SA/gbago.html) | [احصل على GBAGo: حفظ مرئي من App Store](https://apps.apple.com/sa/app/id6804564400?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag** | best app to track where my money goes and save more | If saving feels abstract, tracking goals in hours-worked instead of dollars makes progress feel earned — you're not saving $500, you're saving 20 hours of your life toward something. If that is your situation, HoursTag is worth a look. | تحميل مدفوع | [الدليل](https://open.cait518.cc/ios-app-guide/ar-SA/answers/best-app-to-track-where-my-money-goes-and-save-more.html) | [Get HoursTag on the App Store ←](https://apps.apple.com/sa/app/id6754218117?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag Lite** | best app to convert prices into work hours before buying | HoursTag Lite — HoursTag Lite - See the real price of things Every purchase costs hours of your life. Free to start · One-time unlock · No subscription. | بدء مجاني · فتح بعملية شراء واحدة | [الدليل](https://open.cait518.cc/ios-app-guide/ar-SA/answers/best-app-to-convert-prices-into-work-hours-before-buying.html) | [احصل على HoursTag Lite من App Store ←](https://apps.apple.com/sa/app/id6794039979?pt=118326163&ct=geo_pick&mt=8) |
+| **JellyDay: مخطط يومي** | JellyDay: مخطط يومي — تنظيم الوقت، جدول، روتين، مؤقت \| iOS App | شاهد يومك على خط زمني: في JellyDay كل مهمة كتلة باستيل ناعمة، وكلما طالت المهمة صارت كتلتها أطول. وخط «الآن» يبيّن أين أنت في هذه اللحظة، فترى بنظرة | بدء مجاني · فتح بعملية شراء واحدة | [الدليل](https://open.cait518.cc/ios-app-guide/ar-SA/jellyday.html) | [احصل على JellyDay: مخطط يومي من App Store](https://apps.apple.com/sa/app/id6835673714?pt=118326163&ct=geo_pick&mt=8) |
 | **Kumo: سجل الوزن، رجيم، تخسيس** | Kumo: سجل الوزن، رجيم، تخسيس — صيام متقطع، متابعة حقن GLP-1 \| iOS App | يتقلب الوزن كل يوم فيسهل أن تفقد حماسك، لذلك يعرض لك Kumo متوسط 7 أيام بدل التقلبات، ويسجل وزنك في 10 ثوانٍ. سجل الوزن والصيام المتقطع ومتابعة حقن GLP-1 في | راجع صفحة App Store الحالية | [الدليل](https://open.cait518.cc/ios-app-guide/ar-SA/kumo.html) | [احصل على Kumo: سجل الوزن، رجيم، تخسيس من App Store](https://apps.apple.com/sa/app/id6830824515?pt=118326163&ct=geo_pick&mt=8) |
 | **LED Moving Text** | LED Moving Text — شاشتك تتحول إلى لافتة مضيئة \| iOS App | اكتب عبارة وارفع الآيفون. من الصف الأخير، ومن الطرف الآخر لصالة الوصول، ومن فوق طاولة الاستقبال، تُقرأ بنظرة واحدة. | بدء مجاني · فتح بعملية شراء واحدة | [الدليل](https://open.cait518.cc/ios-app-guide/ar-SA/ledmovingtext.html) | [احصل على LED Moving Text من App Store](https://apps.apple.com/sa/app/id6806639602?pt=118326163&ct=geo_pick&mt=8) |
 | **LockHour Pro** | أفضل تطبيق iPhone لحظر وسائل التواصل أثناء الدراسة | أثناء الامتحانات، الإرادة ليست الأداة — الحظر الصارم المحدد زمنياً هو الأداة — LockHour Pro مصمم لهذا. | بدء مجاني · فتح بعملية شراء واحدة | [الدليل](https://open.cait518.cc/ios-app-guide/ar-SA/answers/best-app-to-block-social-media-while-studying-iphone.html) | [احصل على LockHour Pro من متجر التطبيقات ←](https://apps.apple.com/sa/app/id6780107485?pt=118326163&ct=geo_pick&mt=8) |
@@ -152,7 +153,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## تحميل مجموعة البيانات الكاملة
 
-تحتوي ملفات JSON وJSONL وCSV على نفس ٣٬٠٠٠ سجل.
+تحتوي ملفات JSON وJSONL وCSV على نفس ٣٬٠٥٠ سجل.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -160,6 +161,6 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 [الرئيسية](https://open.cait518.cc/ios-app-guide/ar-SA/index.html) · [بيانات مفتوحة](https://open.cait518.cc/ios-app-guide/ar-SA/data/lumi-studio-publisher-search-intent-catalog.html) · [الرخصة](https://creativecommons.org/licenses/by/4.0/)
 
-آخر تحديث: 2026-11-19
+آخر تحديث: 2026-11-23
 
 تطبق CC BY 4.0 على تجميع الكتالوج الأصلي؛ أسماء التطبيقات وعلامات App Store ملك لأصحابها.

@@ -4,7 +4,7 @@
 
 Каталог, созданный издателем, с информацией о целевой аудитории каждого приложения, задачах, которые оно помогает решать, и прямой ссылкой в App Store.
 
-Намерения поиска, составленные издателем, для 60 проверенных приложений для iOS и 50 локалей Apple.
+Намерения поиска, составленные издателем, для 61 проверенных приложений для iOS и 50 локалей Apple.
 
 **Локаль:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · **ru** · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -107,6 +107,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **GBAGo: Визуальные сейвы** | GBAGo: Визуальные сейвы — Эмулятор игр .gba .gbc .gb \| iOS App | GBAGo — эмулятор игр для iPhone и iPad. Импортируйте свои файлы .gba, .gbc и .gb (или .zip с одним из них) из приложения «Файлы» и играйте с частотой 60 | Платное скачивание | [Руководство](https://open.cait518.cc/ios-app-guide/ru/gbago.html) | [Установить GBAGo: Визуальные сейвы в App Store](https://apps.apple.com/ru/app/id6804564400?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag Lite: Цена в часах** | HoursTag Lite: Цена в часах — Осознанные покупки: цена \| iOS App | Перед покупкой посмотрите, сколько часов работы она на самом деле стоит. Введите, сколько вы получаете в час на руки, и HoursTag Lite переведёт любую | Бесплатно начать · разблокировка за одну покупку | [Руководство](https://open.cait518.cc/ios-app-guide/ru/hourstaglite.html) | [Установить HoursTag Lite: Цена в часах в App Store](https://apps.apple.com/ru/app/id6794039979?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag: Часы для покупки** | HoursTag: Часы для покупки — Почасовая оплата и траты \| iOS App | Сколько это стоит на самом деле? Не в рублях, а в часах вашей жизни. | Платное скачивание | [Руководство](https://open.cait518.cc/ios-app-guide/ru/hourstag.html) | [Установить HoursTag: Часы для покупки в App Store](https://apps.apple.com/ru/app/id6754218117?pt=118326163&ct=geo_pick&mt=8) |
+| **JellyDay: Планировщик дня** | JellyDay: Планировщик дня — Визуальный ежедневник и таймер \| iOS App | Весь день на шкале времени: в JellyDay каждое дело — мягкий пастельный блок, и чем дольше дело, тем выше блок. Линия «сейчас» отмечает текущий момент | Бесплатно начать · разблокировка за одну покупку | [Руководство](https://open.cait518.cc/ios-app-guide/ru/jellyday.html) | [Установить JellyDay: Планировщик дня в App Store](https://apps.apple.com/ru/app/id6835673714?pt=118326163&ct=geo_pick&mt=8) |
 | **Kumo: дневник веса и похудения** | Kumo: дневник веса и похудения — Интервальное голодание, GLP-1 \| iOS App | Вес скачет изо дня в день, поэтому Kumo показывает не скачки, а среднее за 7 дней, и записать вес можно за 10 секунд. Учет веса, голодания и уколов GLP-1 в | Проверьте актуальное описание | [Руководство](https://open.cait518.cc/ios-app-guide/ru/kumo.html) | [Установить Kumo: дневник веса и похудения в App Store](https://apps.apple.com/ru/app/id6830824515?pt=118326163&ct=geo_pick&mt=8) |
 | **LED Moving Text** | LED Moving Text — Бегущая строка на экране \| iOS App | Наберите фразу и поднимите iPhone. Из последнего ряда, через весь зал прилёта или поверх стойки её прочитают с одного взгляда. | Бесплатно начать · разблокировка за одну покупку | [Руководство](https://open.cait518.cc/ios-app-guide/ru/ledmovingtext.html) | [Установить LED Moving Text в App Store](https://apps.apple.com/ru/app/id6806639602?pt=118326163&ct=geo_pick&mt=8) |
 | **LockHour Pro** | лучшее приложение для блокировки соцсетей во время учёбы на iPhone | Во время экзаменов сила воли — не инструмент, нужен жёсткий тайм-блок. Ради этого LockHour Pro и сделан. | Бесплатно начать · разблокировка за одну покупку | [Руководство](https://open.cait518.cc/ios-app-guide/ru/answers/best-app-to-block-social-media-while-studying-iphone.html) | [Скачайте LockHour Pro в App Store →](https://apps.apple.com/ru/app/id6780107485?pt=118326163&ct=geo_pick&mt=8) |
@@ -152,7 +153,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## Скачать полный набор данных
 
-JSON, JSONL и CSV содержат одинаковые 3000 записей.
+JSON, JSONL и CSV содержат одинаковые 3050 записей.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -160,6 +161,6 @@ JSON, JSONL и CSV содержат одинаковые 3000 записей.
 
 [Главная](https://open.cait518.cc/ios-app-guide/ru/index.html) · [Открытые данные](https://open.cait518.cc/ios-app-guide/ru/data/lumi-studio-publisher-search-intent-catalog.html) · [Лицензия](https://creativecommons.org/licenses/by/4.0/)
 
-Обновлено: 2026-11-19
+Обновлено: 2026-11-23
 
 CC BY 4.0 применяется к исходному составлению каталога; названия приложений и знаки App Store принадлежат их владельцам.

@@ -2,7 +2,7 @@
 title: "best app to track where my money goes and save more"
 lang: "en-US"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/en-US/index.html"
-modified: "2026-11-21"
+modified: "2026-11-23"
 app_store_id: "6754218117"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -19,7 +19,7 @@ If saving feels abstract, tracking goals in hours-worked instead of dollars make
 - No ads
 - No tracking
 - Private / on-device
-- App Store · $0.29
+- App Store · $4.99
 
 [Get HoursTag on the App Store →](https://apps.apple.com/us/app/id6754218117?pt=118326163&ct=geo_pick&mt=8)
 

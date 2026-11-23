@@ -8,7 +8,7 @@
   "csv_url": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-agent-feed/feed.csv",
   "schema_url": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-agent-feed/feed.schema.json",
   "license": "https://creativecommons.org/licenses/by/4.0/",
-  "dateModified": "2026-11-21",
+  "dateModified": "2026-11-22",
   "publisher": {
     "name": "Lumi Studio",
     "url": "https://open.cait518.cc/ios-app-guide/about.html"
@@ -18,8 +18,8 @@
   "enable_checkout": false,
   "checkout_note": "Purchase happens on the Apple App Store via app_store_url; this publisher operates no checkout endpoint.",
   "price_source": "Apple App Store public lookup snapshot",
-  "row_count": 2930,
-  "app_count": 60,
+  "row_count": 2979,
+  "app_count": 61,
   "locale_count": 49,
   "official_locale_count": 50,
   "blocked_markets": {
@@ -114,6 +114,7 @@
     "gmoneylite",
     "hourstag",
     "hourstaglite",
+    "jellyday",
     "kumo",
     "ledmovingtext",
     "lockhour",
@@ -184,5 +185,5 @@
     "one_time_purchase",
     "subscription"
   ],
-  "content_digest": "sha256:ce19592798e02e8db6e41fe0e79c88dcde6dc6adf02caab46418445a8c36f0b6"
+  "content_digest": "sha256:9f1094230b133e666044ac26bfa3574b875d64f95efa827dc04b58b28ad5b722"
 }

@@ -4,7 +4,7 @@
 
 Ένας πρωτογενής κατάλογος που δείχνει για ποιον προορίζεται κάθε εφαρμογή, το έργο που προσπαθεί να ολοκληρώσει και την άμεση διαδρομή στο App Store.
 
-Προθέσεις αναζήτησης που έχουν συνταχθεί από τον εκδότη για 60 επαληθευμένες ενεργές εφαρμογές iOS και 50 Apple τοπικές γλώσσες.
+Προθέσεις αναζήτησης που έχουν συνταχθεί από τον εκδότη για 61 επαληθευμένες ενεργές εφαρμογές iOS και 50 Apple τοπικές γλώσσες.
 
 **Τοπική γλώσσα:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · **el** · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -107,6 +107,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **GBAGo: Οπτικές αποθηκεύσεις** | GBAGo: Οπτικές αποθηκεύσεις — Ρετρό εξομοιωτής .gba .gbc .gb \| iOS App | Το GBAGo είναι εξομοιωτής παιχνιδιών (emulator) για iPhone και iPad. Εισαγάγετε τα αρχεία σας .gba, .gbc και .gb (ή ένα .zip που περιέχει ένα) από την | Λήψη με χρέωση | [Οδηγός](https://open.cait518.cc/ios-app-guide/el/gbago.html) | [Αποκτήστε το GBAGo: Οπτικές αποθηκεύσεις από το App Store](https://apps.apple.com/gr/app/id6804564400?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag Lite: Τιμή σε ώρες** | HoursTag Lite: Τιμή σε ώρες — Συνειδητή αγορά: αληθινή τιμή \| iOS App | Πριν αγοράσεις, δες πόσες ώρες δουλειάς κοστίζει πραγματικά. Βάλε τον καθαρό ωριαίο μισθό σου και το HoursTag Lite μετατρέπει κάθε τιμή σε χρόνο εργασίας. | Δωρεάν για αρχή · ξεκλείδωμα με μία αγορά | [Οδηγός](https://open.cait518.cc/ios-app-guide/el/hourstaglite.html) | [Αποκτήστε το HoursTag Lite: Τιμή σε ώρες από το App Store](https://apps.apple.com/gr/app/id6794039979?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag: Ώρες αγοράς** | HoursTag: Ώρες αγοράς — Ωριαία αμοιβή και έξοδα \| iOS App | Πόσο κοστίζει πραγματικά; Όχι σε ευρώ, αλλά σε ώρες από τη ζωή σου. | Λήψη με χρέωση | [Οδηγός](https://open.cait518.cc/ios-app-guide/el/hourstag.html) | [Αποκτήστε το HoursTag: Ώρες αγοράς από το App Store](https://apps.apple.com/gr/app/id6754218117?pt=118326163&ct=geo_pick&mt=8) |
+| **JellyDay: Ημερήσιο πλάνο** | JellyDay: Ημερήσιο πλάνο — Ρουτίνα, πρόγραμμα & ατζέντα \| iOS App | Δες τη μέρα σου ως χρονολόγιο: κάθε δραστηριότητα είναι ένα παστέλ μπλοκ που ψηλώνει όσο μεγαλώνει η διάρκειά της. Η γραμμή «τώρα» δείχνει πού βρίσκεσαι | Δωρεάν για αρχή · ξεκλείδωμα με μία αγορά | [Οδηγός](https://open.cait518.cc/ios-app-guide/el/jellyday.html) | [Αποκτήστε το JellyDay: Ημερήσιο πλάνο από το App Store](https://apps.apple.com/gr/app/id6835673714?pt=118326163&ct=geo_pick&mt=8) |
 | **Kumo: Απώλεια Βάρους & Δίαιτα** | Kumo: Απώλεια Βάρους & Δίαιτα — Νηστεία, ενέσεις GLP-1, νερό \| iOS App | Η ζυγαριά ανεβοκατεβαίνει και πολλοί τα παρατάνε: το Kumo κάνει το ζύγισμα συνήθεια 10 δευτερολέπτων και δείχνει την πραγματική τάση με τον μέσο όρο 7 | Δείτε την τρέχουσα καταχώρηση | [Οδηγός](https://open.cait518.cc/ios-app-guide/el/kumo.html) | [Αποκτήστε το Kumo: Απώλεια Βάρους & Δίαιτα από το App Store](https://apps.apple.com/gr/app/id6830824515?pt=118326163&ct=geo_pick&mt=8) |
 | **LED Moving Text** | LED Moving Text — Φωτεινή κυλιόμενη πινακίδα \| iOS App | Γράψε μια φράση και σήκωσε το iPhone. Από την τελευταία σειρά, από την άλλη άκρη της αίθουσας αφίξεων ή πάνω από έναν πάγκο διαβάζεται με μία ματιά. | Δωρεάν για αρχή · ξεκλείδωμα με μία αγορά | [Οδηγός](https://open.cait518.cc/ios-app-guide/el/ledmovingtext.html) | [Αποκτήστε το LED Moving Text από το App Store](https://apps.apple.com/gr/app/id6806639602?pt=118326163&ct=geo_pick&mt=8) |
 | **LockHour Pro** | καλύτερη εφαρμογή για αποκλεισμό κοινωνικών δικτύων κατά τη μελέτη iPhone | Κατά τη διάρκεια εξετάσεων, η θέληση δεν αρκεί — χρειάζεται αυστηρό χρονικό μπλοκάρισμα. Γι' αυτό υπάρχει το LockHour Pro. | Δωρεάν για αρχή · ξεκλείδωμα με μία αγορά | [Οδηγός](https://open.cait518.cc/ios-app-guide/el/answers/best-app-to-block-social-media-while-studying-iphone.html) | [Κατεβάστε το LockHour Pro από το App Store →](https://apps.apple.com/gr/app/id6780107485?pt=118326163&ct=geo_pick&mt=8) |
@@ -152,7 +153,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## Κατεβάστε το πλήρες σύνολο δεδομένων
 
-Τα αρχεία JSON, JSONL και CSV περιέχουν τις ίδιες 3.000 εγγραφές.
+Τα αρχεία JSON, JSONL και CSV περιέχουν τις ίδιες 3.050 εγγραφές.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -160,6 +161,6 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 [Αρχική](https://open.cait518.cc/ios-app-guide/el/index.html) · [Ανοιχτά δεδομένα](https://open.cait518.cc/ios-app-guide/el/data/lumi-studio-publisher-search-intent-catalog.html) · [Άδεια](https://creativecommons.org/licenses/by/4.0/)
 
-Ενημερώθηκε: 2026-11-19
+Ενημερώθηκε: 2026-11-23
 
 Η άδεια CC BY 4.0 ισχύει για τη σύνθεση του αρχικού καταλόγου· τα ονόματα εφαρμογών και τα σήματα του App Store ανήκουν στους ιδιοκτήτες τους.

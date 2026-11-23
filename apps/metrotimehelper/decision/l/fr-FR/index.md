@@ -15,7 +15,7 @@ Conçue pour le métro de Taipei, à Taïwan : dites à quelle heure vous devez 
 
 - Plus
 - Téléchargement payant
-- App Store · 2,99 €
+- App Store · Gratuit
 
 [Obtenir Taipei · Assistant Métro sur l'App Store](https://apps.apple.com/fr/app/id6819061896?pt=118326163&ct=geo_pick&mt=8)
 

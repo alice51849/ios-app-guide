@@ -15,7 +15,7 @@ Aplikácia na metro v Tchaj-peji na Taiwane: zadajte, kedy potrebujete byť na m
 
 - Viac
 - Platené stiahnutie
-- App Store · 2,99 €
+- App Store · Zadarmo
 
 [Stiahnuť Tchaj-pej: metro načas v App Store](https://apps.apple.com/sk/app/id6819061896?pt=118326163&ct=geo_pick&mt=8)
 

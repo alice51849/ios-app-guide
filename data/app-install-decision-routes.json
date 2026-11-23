@@ -5,8 +5,8 @@
   "description": "First-party install decision routes for every verified live iOS app and Apple locale, with a direct App Store path, purchase model, privacy facts, device surfaces and provenance.",
   "identifier": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes.json",
   "dateModified": "2026-11-23",
-  "content_digest": "9991192315bf46158bacdb213202c3bc59851330db20e77c7bf7442eb18f4343",
-  "generation_digest": "2401837cbde3215224cca41a67b6612c69f85bd50df8cdc03900c4aae9a4e2ce",
+  "content_digest": "a4dcb6755853a0489b4cfea6b254b682377139b0fbf7fa259a9ef276a10a6f09",
+  "generation_digest": "abe31fe8153889cfdea9598ff39ba346cf512a37fe9021b74fa91f4fc5800c41",
   "publisher_disclosure": "First-party decision-support material published by Lumi Studio, the developer of every listed app; not an independent ranking or measured search-volume product.",
   "ordering": "official_locale_order_then_priority_then_alphabetical_app_name",
   "priority_app_keys": [
@@ -3820,7 +3820,7 @@
       "badge_labels": [
         "المزيد",
         "تحميل مدفوع",
-        "App Store · SAR 12.99"
+        "App Store · مجاني"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ar-SA/metrotimehelper.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/metrotimehelper/decision/l/ar-SA/index.html",
@@ -3831,9 +3831,9 @@
       "app_store_url": "https://apps.apple.com/sa/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "احصل على مساعد وقت المترو: تايبيه من App Store",
       "storefront_facts": {
-        "price": "12.99",
+        "price": "0",
         "currency": "SAR",
-        "formatted_price": "SAR 12.99"
+        "formatted_price": "مجاني"
       },
       "guide_cta_label": "اقرأ الدليل الكامل",
       "publisher_disclosure": "هذه مادة ينشرها Lumi Studio مباشرةً بصفته مطور جميع التطبيقات المدرجة.",
@@ -11133,7 +11133,7 @@
       "badge_labels": [
         "Més",
         "Descàrrega de pagament",
-        "App Store · 2,99 €"
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ca/metrotimehelper.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/metrotimehelper/decision/l/ca/index.html",
@@ -11144,9 +11144,9 @@
       "app_store_url": "https://apps.apple.com/es/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "Descarrega Taipei · Assistent del Metro a l’App Store",
       "storefront_facts": {
-        "price": "2.99",
+        "price": "0",
         "currency": "EUR",
-        "formatted_price": "2,99 €"
+        "formatted_price": "Gratis"
       },
       "guide_cta_label": "Llegeix la guia completa",
       "publisher_disclosure": "Aquest és material de primera mà publicat per Lumi Studio, el desenvolupador de totes les apps llistades.",
@@ -14645,7 +14645,7 @@
       "badge_labels": [
         "Více",
         "Placené stažení",
-        "App Store · 79,00 Kč"
+        "App Store · Zdarma"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/cs/metrotimehelper.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/metrotimehelper/decision/l/cs/index.html",
@@ -14656,9 +14656,9 @@
       "app_store_url": "https://apps.apple.com/cz/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "Stáhněte si Tchaj-pej: metro včas v App Storu",
       "storefront_facts": {
-        "price": "79",
+        "price": "0",
         "currency": "CZK",
-        "formatted_price": "79,00 Kč"
+        "formatted_price": "Zdarma"
       },
       "guide_cta_label": "Přečtěte si celý průvodce",
       "publisher_disclosure": "Toto je materiál od první strany publikovaný Lumi Studio, vývojářem všech uvedených aplikací.",
@@ -18157,7 +18157,7 @@
       "badge_labels": [
         "Mere",
         "Betalt download",
-        "App Store · 29,00 kr"
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/da/metrotimehelper.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/metrotimehelper/decision/l/da/index.html",
@@ -18168,9 +18168,9 @@
       "app_store_url": "https://apps.apple.com/dk/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "Hent Taipei: Tidshjælp til metroen i App Store",
       "storefront_facts": {
-        "price": "29",
+        "price": "0",
         "currency": "DKK",
-        "formatted_price": "29,00 kr"
+        "formatted_price": "Gratis"
       },
       "guide_cta_label": "Læs hele vejledningen",
       "publisher_disclosure": "Dette materiale er udgivet direkte af Lumi Studio, som har udviklet alle de viste apps.",
@@ -20712,7 +20712,7 @@
       "badge_labels": [
         "Mehr",
         "Kostenpflichtiger Download",
-        "App Store · 2,99 €"
+        "App Store · Kostenlos"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/de-DE/metrotimehelper.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/metrotimehelper/decision/l/de-DE/index.html",
@@ -20723,9 +20723,9 @@
       "app_store_url": "https://apps.apple.com/de/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "Metro-Zeithelfer Taipeh im App Store laden",
       "storefront_facts": {
-        "price": "2.99",
+        "price": "0",
         "currency": "EUR",
-        "formatted_price": "2,99 €"
+        "formatted_price": "Kostenlos"
       },
       "guide_cta_label": "Lesen Sie den vollständigen Leitfaden",
       "publisher_disclosure": "Dieses Material wird direkt von Lumi Studio veröffentlicht, dem Entwickler aller aufgeführten Apps.",
@@ -25761,7 +25761,7 @@
       "badge_labels": [
         "Περισσότερα",
         "Λήψη με χρέωση",
-        "App Store · 2,99 €"
+        "App Store · Δωρεάν"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/el/metrotimehelper.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/metrotimehelper/decision/l/el/index.html",
@@ -25772,9 +25772,9 @@
       "app_store_url": "https://apps.apple.com/gr/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "Αποκτήστε το Μετρό στην Ώρα – Ταϊπέι από το App Store",
       "storefront_facts": {
-        "price": "2.99",
+        "price": "0",
         "currency": "EUR",
-        "formatted_price": "2,99 €"
+        "formatted_price": "Δωρεάν"
       },
       "guide_cta_label": "Διαβάστε τον πλήρη οδηγό",
       "publisher_disclosure": "Αυτό είναι πρωτογενές υλικό που δημοσιεύεται από το Lumi Studio, τον δημιουργό κάθε καταχωρημένης εφαρμογής.",
@@ -27804,7 +27804,7 @@
       "badge_labels": [
         "More",
         "Paid download",
-        "App Store · $4.99"
+        "App Store · Free"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-AU/answers/taipei-mrt-app-that-tells-me-what-time-to-leave-to-arrive-on-time.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/metrotimehelper/decision/l/en-AU/index.html",
@@ -27815,9 +27815,9 @@
       "app_store_url": "https://apps.apple.com/au/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "Get Metro Time Helper on the App Store →",
       "storefront_facts": {
-        "price": "4.99",
+        "price": "0",
         "currency": "AUD",
-        "formatted_price": "$4.99"
+        "formatted_price": "Free"
       },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.",
@@ -31319,7 +31319,7 @@
       "badge_labels": [
         "More",
         "Paid download",
-        "App Store · $3.99"
+        "App Store · Free"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-CA/answers/taipei-mrt-app-that-tells-me-what-time-to-leave-to-arrive-on-time.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/metrotimehelper/decision/l/en-CA/index.html",
@@ -31330,9 +31330,9 @@
       "app_store_url": "https://apps.apple.com/ca/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "Get Metro Time Helper on the App Store →",
       "storefront_facts": {
-        "price": "3.99",
+        "price": "0",
         "currency": "CAD",
-        "formatted_price": "$3.99"
+        "formatted_price": "Free"
       },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.",
@@ -31378,7 +31378,7 @@
         "No ads",
         "Apple Watch",
         "App Store · Free",
-        "★ 4.7/5 · 3"
+        "★ 4.8/5 · 4"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-CA/answers/best-simple-to-do-list-app-iphone-no-subscription.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/mochi/decision/l/en-CA/index.html",
@@ -31392,8 +31392,8 @@
         "price": "0",
         "currency": "CAD",
         "formatted_price": "Free",
-        "rating_value": 4.7,
-        "rating_count": 3
+        "rating_value": 4.8,
+        "rating_count": 4
       },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.",
@@ -41882,7 +41882,7 @@
       "badge_labels": [
         "Más",
         "Descarga de pago",
-        "App Store · 2,99 €"
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/es-ES/metrotimehelper.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/metrotimehelper/decision/l/es-ES/index.html",
@@ -41893,9 +41893,9 @@
       "app_store_url": "https://apps.apple.com/es/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "Consigue Metro a Tiempo: Taipéi en el App Store",
       "storefront_facts": {
-        "price": "2.99",
+        "price": "0",
         "currency": "EUR",
-        "formatted_price": "2,99 €"
+        "formatted_price": "Gratis"
       },
       "guide_cta_label": "Lee la guía completa",
       "publisher_disclosure": "Este contenido lo publica directamente Lumi Studio, desarrollador de todas las apps incluidas.",
@@ -44493,7 +44493,7 @@
       "badge_labels": [
         "Más",
         "Descarga de pago",
-        "App Store · $69.00"
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/es-MX/metrotimehelper.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/metrotimehelper/decision/l/es-MX/index.html",
@@ -44504,9 +44504,9 @@
       "app_store_url": "https://apps.apple.com/mx/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "Consigue Hora de Metro en Taipei en el App Store",
       "storefront_facts": {
-        "price": "69",
+        "price": "0",
         "currency": "MXN",
-        "formatted_price": "$69.00"
+        "formatted_price": "Gratis"
       },
       "guide_cta_label": "Lee la guía completa",
       "publisher_disclosure": "Este contenido lo publica directamente Lumi Studio, desarrollador de todas las apps incluidas.",
@@ -49816,7 +49816,7 @@
       "badge_labels": [
         "Lisää",
         "Maksullinen lataus",
-        "App Store · 2,99 €"
+        "App Store · Ilmainen"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/fi/metrotimehelper.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/metrotimehelper/decision/l/fi/index.html",
@@ -49827,9 +49827,9 @@
       "app_store_url": "https://apps.apple.com/fi/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "Lataa Taipei: Metron aika-apuri App Storesta",
       "storefront_facts": {
-        "price": "2.99",
+        "price": "0",
         "currency": "EUR",
-        "formatted_price": "2,99 €"
+        "formatted_price": "Ilmainen"
       },
       "guide_cta_label": "Lue koko opas",
       "publisher_disclosure": "Tämä on Lumi Studion, jokaisen listatun sovelluksen kehittäjän, julkaisema ensimmäisen osapuolen materiaali.",
@@ -52438,7 +52438,7 @@
         "Aucune publicité",
         "Apple Watch",
         "App Store · Gratuit",
-        "★ 4.7/5 · 3"
+        "★ 4.8/5 · 4"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/fr-CA/answers/best-simple-to-do-list-app-iphone-no-subscription.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/mochi/decision/l/fr-CA/index.html",
@@ -52452,8 +52452,8 @@
         "price": "0",
         "currency": "CAD",
         "formatted_price": "Gratuit",
-        "rating_value": 4.7,
-        "rating_count": 3
+        "rating_value": 4.8,
+        "rating_count": 4
       },
       "guide_cta_label": "Lire le guide complet",
       "publisher_disclosure": "Guide rédigé par Lumi Studio, le développeur de l'app. Les noms d'apps sont des marques de commerce de leurs propriétaires et servent uniquement à les identifier. Pour les décisions concernant les documents, la santé, l'école et la productivité, vérifiez les exigences officielles applicables.",
@@ -53331,7 +53331,7 @@
       "badge_labels": [
         "Plus",
         "Téléchargement payant",
-        "App Store · $3.99"
+        "App Store · Gratuit"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/fr-CA/metrotimehelper.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/metrotimehelper/decision/l/fr-CA/index.html",
@@ -53342,9 +53342,9 @@
       "app_store_url": "https://apps.apple.com/ca/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "Obtenir Taipei : l’Assistant Métro sur l'App Store",
       "storefront_facts": {
-        "price": "3.99",
+        "price": "0",
         "currency": "CAD",
-        "formatted_price": "$3.99"
+        "formatted_price": "Gratuit"
       },
       "guide_cta_label": "Lire le guide complet",
       "publisher_disclosure": "Ce contenu est publié directement par Lumi Studio, le développeur de chaque app listée.",
@@ -56849,7 +56849,7 @@
       "badge_labels": [
         "Plus",
         "Téléchargement payant",
-        "App Store · 2,99 €"
+        "App Store · Gratuit"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/fr-FR/metrotimehelper.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/metrotimehelper/decision/l/fr-FR/index.html",
@@ -56860,9 +56860,9 @@
       "app_store_url": "https://apps.apple.com/fr/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "Obtenir Taipei · Assistant Métro sur l'App Store",
       "storefront_facts": {
-        "price": "2.99",
+        "price": "0",
         "currency": "EUR",
-        "formatted_price": "2,99 €"
+        "formatted_price": "Gratuit"
       },
       "guide_cta_label": "Lire le guide complet",
       "publisher_disclosure": "Ce contenu est publié directement par Lumi Studio, le développeur de chaque application répertoriée.",
@@ -60362,7 +60362,7 @@
       "badge_labels": [
         "વધુ",
         "ચુકવેલ ડાઉનલોડ",
-        "App Store · ₹ 299"
+        "App Store · મફત"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/gu-IN/metrotimehelper.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/metrotimehelper/decision/l/gu-IN/index.html",
@@ -60373,9 +60373,9 @@
       "app_store_url": "https://apps.apple.com/in/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "App Store પરથી Taipei MRT સમય સહાયક મેળવો",
       "storefront_facts": {
-        "price": "299",
+        "price": "0",
         "currency": "INR",
-        "formatted_price": "₹ 299"
+        "formatted_price": "મફત"
       },
       "guide_cta_label": "પૂર્ણ માર્ગદર્શિકા વાંચો",
       "publisher_disclosure": "આ સામગ્રી Lumi Studio દ્વારા સીધી પ્રકાશિત કરવામાં આવી છે, જે સૂચિબદ્ધ તમામ એપ્સનો વિકાસકર્તા છે.",
@@ -64442,7 +64442,7 @@
       "badge_labels": [
         "עוד",
         "הורדה בתשלום",
-        "App Store · ₪9.90"
+        "App Store · בחינם"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/he/metrotimehelper.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/metrotimehelper/decision/l/he/index.html",
@@ -64453,9 +64453,9 @@
       "app_store_url": "https://apps.apple.com/il/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "הורידו את עוזר זמני המטרו: טאיפיי מה-App Store",
       "storefront_facts": {
-        "price": "9.9",
+        "price": "0",
         "currency": "ILS",
-        "formatted_price": "₪9.90"
+        "formatted_price": "בחינם"
       },
       "guide_cta_label": "קרא את המדריך המלא",
       "publisher_disclosure": "זהו חומר רשמי שפורסם על ידי Lumi Studio, המפתח של כל אפליקציה ברשימה.",
@@ -67960,7 +67960,7 @@
       "badge_labels": [
         "और अधिक",
         "भुगतान किया गया डाउनलोड",
-        "App Store · ₹ 299"
+        "App Store · मुफ़्त"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/hi/metrotimehelper.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/metrotimehelper/decision/l/hi/index.html",
@@ -67971,9 +67971,9 @@
       "app_store_url": "https://apps.apple.com/in/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "App Store पर मेट्रो समय सहायक: Taipei MRT पाएँ",
       "storefront_facts": {
-        "price": "299",
+        "price": "0",
         "currency": "INR",
-        "formatted_price": "₹ 299"
+        "formatted_price": "मुफ़्त"
       },
       "guide_cta_label": "पूरा मार्गदर्शक पढ़ें",
       "publisher_disclosure": "यह सामग्री सीधे Lumi Studio ने प्रकाशित की है, जो सूचीबद्ध सभी ऐप का डेवलपर है।",
@@ -70907,7 +70907,7 @@
       "badge_labels": [
         "Više",
         "Plaćeno preuzimanje",
-        "App Store · 2,99 €"
+        "App Store · Besplatno"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/hr/metrotimehelper.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/metrotimehelper/decision/l/hr/index.html",
@@ -70918,9 +70918,9 @@
       "app_store_url": "https://apps.apple.com/hr/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "Preuzmite Taipei: metro na vrijeme u App Storeu",
       "storefront_facts": {
-        "price": "2.99",
+        "price": "0",
         "currency": "EUR",
-        "formatted_price": "2,99 €"
+        "formatted_price": "Besplatno"
       },
       "guide_cta_label": "Pročitajte cijeli vodič",
       "publisher_disclosure": "Ovo je materijal iz prve ruke koji je objavio Lumi Studio, razvojni tim svake navedene aplikacije.",
@@ -74419,7 +74419,7 @@
       "badge_labels": [
         "Továbbiak",
         "Fizetős letöltés",
-        "App Store · HUF1,490.00"
+        "App Store · Ingyenes"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/hu/metrotimehelper.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/metrotimehelper/decision/l/hu/index.html",
@@ -74430,9 +74430,9 @@
       "app_store_url": "https://apps.apple.com/hu/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "Töltse le a(z) Taipei: Időtervező a metróhoz appot az App Store-ból",
       "storefront_facts": {
-        "price": "1490",
+        "price": "0",
         "currency": "HUF",
-        "formatted_price": "HUF1,490.00"
+        "formatted_price": "Ingyenes"
       },
       "guide_cta_label": "Olvasd el a teljes útmutatót",
       "publisher_disclosure": "Ez első kézből származó anyag, amelyet a Lumi Studio tett közzé, az összes felsorolt alkalmazás fejlesztője.",
@@ -77027,7 +77027,7 @@
       "badge_labels": [
         "Lainnya",
         "Unduhan berbayar",
-        "App Store · Rp 59ribu"
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/id/metrotimehelper.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/metrotimehelper/decision/l/id/index.html",
@@ -77038,9 +77038,9 @@
       "app_store_url": "https://apps.apple.com/id/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "Dapatkan Metro Time Helper: MRT Taipei di App Store",
       "storefront_facts": {
-        "price": "59000",
+        "price": "0",
         "currency": "IDR",
-        "formatted_price": "Rp 59ribu"
+        "formatted_price": "Gratis"
       },
       "guide_cta_label": "Baca panduan lengkap",
       "publisher_disclosure": "Materi ini diterbitkan langsung oleh Lumi Studio, pengembang semua aplikasi yang tercantum.",
@@ -81452,7 +81452,7 @@
       "badge_labels": [
         "Altro",
         "Scaricamento a pagamento",
-        "App Store · 2,99 €"
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/it/metrotimehelper.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/metrotimehelper/decision/l/it/index.html",
@@ -81463,9 +81463,9 @@
       "app_store_url": "https://apps.apple.com/it/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "Scarica Taipei: Assistente Orari Metro sull'App Store",
       "storefront_facts": {
-        "price": "2.99",
+        "price": "0",
         "currency": "EUR",
-        "formatted_price": "2,99 €"
+        "formatted_price": "Gratis"
       },
       "guide_cta_label": "Leggi la guida completa",
       "publisher_disclosure": "Questo contenuto è pubblicato direttamente da Lumi Studio, lo sviluppatore di tutte le app elencate.",
@@ -88500,7 +88500,7 @@
       "badge_labels": [
         "ಇನ್ನಷ್ಟು",
         "ಪಾವತಿಸಿದ ಡೌನ್‌ಲೋಡ್",
-        "App Store · ₹ 299"
+        "App Store · ಉಚಿತ"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/kn-IN/metrotimehelper.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/metrotimehelper/decision/l/kn-IN/index.html",
@@ -88511,9 +88511,9 @@
       "app_store_url": "https://apps.apple.com/in/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "App Store ನಲ್ಲಿ Taipei MRT ಸಮಯ ಸಹಾಯಕ ಪಡೆಯಿರಿ",
       "storefront_facts": {
-        "price": "299",
+        "price": "0",
         "currency": "INR",
-        "formatted_price": "₹ 299"
+        "formatted_price": "ಉಚಿತ"
       },
       "guide_cta_label": "ಪೂರ್ಣ ಮಾರ್ಗದರ್ಶನ ಓದಿ",
       "publisher_disclosure": "ಇದು ಪಟ್ಟಿಯಲ್ಲಿ ಇರುವ ಪ್ರತಿಯೊಂದು ಆ್ಯಪ್‌ನ ಅಭಿವೃದ್ಧಿಪಡಿಸಿದ Lumi Studio ಅವರಿಂದ ಪ್ರಕಟಿಸಲಾದ ಮೊದಲ-ಪಕ್ಷದ ವಸ್ತು.",
@@ -92527,7 +92527,7 @@
       "badge_labels": [
         "더 보기",
         "유료 다운로드",
-        "App Store · ￦4,400"
+        "App Store · 무료"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ko/metrotimehelper.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/metrotimehelper/decision/l/ko/index.html",
@@ -92538,9 +92538,9 @@
       "app_store_url": "https://apps.apple.com/kr/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "App Store에서 타이베이 지하철 시간 도우미 받기",
       "storefront_facts": {
-        "price": "4400",
+        "price": "0",
         "currency": "KRW",
-        "formatted_price": "￦4,400"
+        "formatted_price": "무료"
       },
       "guide_cta_label": "전체 안내서 읽기",
       "publisher_disclosure": "이 자료는 목록에 있는 모든 앱의 개발사 Lumi Studio가 직접 발행한 1차 자료입니다.",
@@ -95530,7 +95530,7 @@
       "badge_labels": [
         "കൂടുതൽ",
         "പണം നൽകേണ്ട ഡൗൺലോഡ്",
-        "App Store · ₹ 299"
+        "App Store · സൗജന്യം"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ml-IN/metrotimehelper.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/metrotimehelper/decision/l/ml-IN/index.html",
@@ -95541,9 +95541,9 @@
       "app_store_url": "https://apps.apple.com/in/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "App Store-ൽ നിന്ന് Taipei MRT സമയ സഹായി നേടൂ",
       "storefront_facts": {
-        "price": "299",
+        "price": "0",
         "currency": "INR",
-        "formatted_price": "₹ 299"
+        "formatted_price": "സൗജന്യം"
       },
       "guide_cta_label": "പൂർണ്ണ ഗൈഡ് വായിക്കുക",
       "publisher_disclosure": "ഇത് Lumi Studio പ്രസിദ്ധീകരിച്ച ആദ്യകക്ഷി വസ്തുവാണ്, എല്ലാ ലിസ്റ്റുചെയ്ത ആപ്പുകളുടെയും വികസകനാണ്.",
@@ -99048,7 +99048,7 @@
       "badge_labels": [
         "अधिक",
         "पैसे देऊन डाउनलोड करा",
-        "App Store · ₹ 299"
+        "App Store · मोफत"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/mr-IN/metrotimehelper.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/metrotimehelper/decision/l/mr-IN/index.html",
@@ -99059,9 +99059,9 @@
       "app_store_url": "https://apps.apple.com/in/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "App Store वरून Taipei MRT वेळ सहाय्यक मिळवा",
       "storefront_facts": {
-        "price": "299",
+        "price": "0",
         "currency": "INR",
-        "formatted_price": "₹ 299"
+        "formatted_price": "मोफत"
       },
       "guide_cta_label": "संपूर्ण मार्गदर्शक वाचा",
       "publisher_disclosure": "हे Lumi Studio कडून प्रकाशित केलेले प्रथम पक्ष साहित्य आहे, जे प्रत्येक सूचीबद्ध अॅपचे विकसक आहे.",
@@ -101656,7 +101656,7 @@
       "badge_labels": [
         "Lagi",
         "Muat turun berbayar",
-        "App Store · RM14.90"
+        "App Store · Percuma"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ms/metrotimehelper.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/metrotimehelper/decision/l/ms/index.html",
@@ -101667,9 +101667,9 @@
       "app_store_url": "https://apps.apple.com/my/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "Dapatkan Metro Time Helper: MRT Taipei di App Store",
       "storefront_facts": {
-        "price": "14.9",
+        "price": "0",
         "currency": "MYR",
-        "formatted_price": "RM14.90"
+        "formatted_price": "Percuma"
       },
       "guide_cta_label": "Baca panduan penuh",
       "publisher_disclosure": "Bahan ini diterbitkan terus oleh Lumi Studio, pembangun semua aplikasi yang disenaraikan.",
@@ -105171,7 +105171,7 @@
       "badge_labels": [
         "Meer",
         "Betaalde aanschaf",
-        "App Store · € 2,99"
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/metrotimehelper.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/metrotimehelper/decision/l/nl-NL/index.html",
@@ -105182,9 +105182,9 @@
       "app_store_url": "https://apps.apple.com/nl/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "Download Metro Tijdhelper Taipei in de App Store",
       "storefront_facts": {
-        "price": "2.99",
+        "price": "0",
         "currency": "EUR",
-        "formatted_price": "€ 2,99"
+        "formatted_price": "Gratis"
       },
       "guide_cta_label": "Lees de volledige gids",
       "publisher_disclosure": "Dit is materiaal van de eerste partij, gepubliceerd door Lumi Studio, de ontwikkelaar van elke vermelde app.",
@@ -109587,7 +109587,7 @@
       "badge_labels": [
         "Mer",
         "Betalt nedlasting",
-        "App Store · 39,00 kr"
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/no/metrotimehelper.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/metrotimehelper/decision/l/no/index.html",
@@ -109598,9 +109598,9 @@
       "app_store_url": "https://apps.apple.com/no/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "Last ned Taipei: Tidshjelp for metroen fra App Store",
       "storefront_facts": {
-        "price": "39",
+        "price": "0",
         "currency": "NOK",
-        "formatted_price": "39,00 kr"
+        "formatted_price": "Gratis"
       },
       "guide_cta_label": "Les hele veiledningen",
       "publisher_disclosure": "Dette er førsteparts materiale publisert av Lumi Studio, utvikleren av hver oppført app.",
@@ -113105,7 +113105,7 @@
       "badge_labels": [
         "ଅଧିକ",
         "ପୈସା ଦେଇ ଡାଉନଲୋଡ୍",
-        "App Store · ₹ 299"
+        "App Store · ମାଗଣା"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/or-IN/metrotimehelper.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/metrotimehelper/decision/l/or-IN/index.html",
@@ -113116,9 +113116,9 @@
       "app_store_url": "https://apps.apple.com/in/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "App Store ରୁ Taipei MRT ସମୟ ସହାୟକ ପାଆନ୍ତୁ",
       "storefront_facts": {
-        "price": "299",
+        "price": "0",
         "currency": "INR",
-        "formatted_price": "₹ 299"
+        "formatted_price": "ମାଗଣା"
       },
       "guide_cta_label": "ପୂର୍ଣ୍ଣ ନିର୍ଦ୍ଦେଶ ପଠନ୍ତୁ",
       "publisher_disclosure": "ଏହା Lumi Studio ଦ୍ୱାରା ପ୍ରକାଶିତ ପ୍ରଥମ-ପକ୍ଷ ସାମଗ୍ରୀ, ଯାହାରେ ସମସ୍ତ ତାଲିକାଭୁକ୍ତ ଆପ୍ସର ବିକାଶକ ଅଛନ୍ତି।",
@@ -117188,7 +117188,7 @@
       "badge_labels": [
         "ਹੋਰ",
         "ਭੁਗਤਾਨ ਵਾਲਾ ਡਾਊਨਲੋਡ",
-        "App Store · ₹ 299"
+        "App Store · ਮੁਫ਼ਤ"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/pa-IN/metrotimehelper.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/metrotimehelper/decision/l/pa-IN/index.html",
@@ -117199,9 +117199,9 @@
       "app_store_url": "https://apps.apple.com/in/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "App Store ਤੋਂ ਮੈਟਰੋ ਸਮਾਂ ਸਹਾਇਕ: Taipei MRT ਪ੍ਰਾਪਤ ਕਰੋ",
       "storefront_facts": {
-        "price": "299",
+        "price": "0",
         "currency": "INR",
-        "formatted_price": "₹ 299"
+        "formatted_price": "ਮੁਫ਼ਤ"
       },
       "guide_cta_label": "ਪੂਰਾ ਮਾਰਗਦਰਸ਼ਨ ਪੜ੍ਹੋ",
       "publisher_disclosure": "ਇਹ Lumi Studio ਵੱਲੋਂ ਪ੍ਰਕਾਸ਼ਿਤ ਪਹਿਲਾ-ਪੱਖ ਸਮੱਗਰੀ ਹੈ, ਜੋ ਹਰ ਦਰਜ ਕੀਤੇ ਐਪ ਦਾ ਡਿਵੈਲਪਰ ਹੈ।",
@@ -120135,7 +120135,7 @@
       "badge_labels": [
         "Więcej",
         "Płatne do pobrania",
-        "App Store · 14,99 zł"
+        "App Store · Bezpłatnie"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/pl/metrotimehelper.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/metrotimehelper/decision/l/pl/index.html",
@@ -120146,9 +120146,9 @@
       "app_store_url": "https://apps.apple.com/pl/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "Pobierz Tajpej: metro na czas z App Store",
       "storefront_facts": {
-        "price": "14.99",
+        "price": "0",
         "currency": "PLN",
-        "formatted_price": "14,99 zł"
+        "formatted_price": "Bezpłatnie"
       },
       "guide_cta_label": "Przeczytaj pełny przewodnik",
       "publisher_disclosure": "Materiał pierwszorzędny opublikowany przez Lumi Studio, twórcę każdej wymienionej aplikacji.",
@@ -121792,7 +121792,7 @@
       "badge_labels": [
         "Mais",
         "Download pago",
-        "App Store · R$ 19,90"
+        "App Store · Grátis"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/pt-BR/metrotimehelper.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/metrotimehelper/decision/l/pt-BR/index.html",
@@ -121803,9 +121803,9 @@
       "app_store_url": "https://apps.apple.com/br/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "Baixe Hora do Metrô em Taipei na App Store",
       "storefront_facts": {
-        "price": "19.9",
+        "price": "0",
         "currency": "BRL",
-        "formatted_price": "R$ 19,90"
+        "formatted_price": "Grátis"
       },
       "guide_cta_label": "Leia o guia completo",
       "publisher_disclosure": "Este conteúdo é publicado diretamente pela Lumi Studio, desenvolvedora de todos os apps apresentados.",
@@ -126211,7 +126211,7 @@
       "badge_labels": [
         "Mais",
         "Descarregamento pago",
-        "App Store · 2,99 €"
+        "App Store · Grátis"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/pt-PT/metrotimehelper.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/metrotimehelper/decision/l/pt-PT/index.html",
@@ -126222,9 +126222,9 @@
       "app_store_url": "https://apps.apple.com/pt/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "Baixe Metro a Horas em Taipé na App Store",
       "storefront_facts": {
-        "price": "2.99",
+        "price": "0",
         "currency": "EUR",
-        "formatted_price": "2,99 €"
+        "formatted_price": "Grátis"
       },
       "guide_cta_label": "Leia o guia completo",
       "publisher_disclosure": "Este conteúdo é publicado diretamente pela Lumi Studio, que desenvolve todas as apps apresentadas.",
@@ -129773,7 +129773,7 @@
       "badge_labels": [
         "Mai mult",
         "Descărcare plătită",
-        "App Store · 14,99 lei"
+        "App Store · Gratuit"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ro/metrotimehelper.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/metrotimehelper/decision/l/ro/index.html",
@@ -129784,9 +129784,9 @@
       "app_store_url": "https://apps.apple.com/ro/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "Descarcă Metrou la Timp: Taipei din App Store",
       "storefront_facts": {
-        "price": "14.99",
+        "price": "0",
         "currency": "RON",
-        "formatted_price": "14,99 lei"
+        "formatted_price": "Gratuit"
       },
       "guide_cta_label": "Citește ghidul complet",
       "publisher_disclosure": "Acesta este material de primă parte publicat de Lumi Studio, dezvoltatorul fiecărei aplicații listate.",
@@ -134757,7 +134757,7 @@
       "badge_labels": [
         "Ещё",
         "Платное скачивание",
-        "App Store · 249,00 ₽"
+        "App Store · Бесплатно"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ru/metrotimehelper.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/metrotimehelper/decision/l/ru/index.html",
@@ -134768,9 +134768,9 @@
       "app_store_url": "https://apps.apple.com/ru/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "Установить Тайбэй: помощник по метро в App Store",
       "storefront_facts": {
-        "price": "249",
+        "price": "0",
         "currency": "RUB",
-        "formatted_price": "249,00 ₽"
+        "formatted_price": "Бесплатно"
       },
       "guide_cta_label": "Прочитать полное руководство",
       "publisher_disclosure": "Это материал, созданный Lumi Studio, разработчиком всех перечисленных приложений.",
@@ -137704,7 +137704,7 @@
       "badge_labels": [
         "Viac",
         "Platené stiahnutie",
-        "App Store · 2,99 €"
+        "App Store · Zadarmo"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/sk/metrotimehelper.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/metrotimehelper/decision/l/sk/index.html",
@@ -137715,9 +137715,9 @@
       "app_store_url": "https://apps.apple.com/sk/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "Stiahnuť Tchaj-pej: metro načas v App Store",
       "storefront_facts": {
-        "price": "2.99",
+        "price": "0",
         "currency": "EUR",
-        "formatted_price": "2,99 €"
+        "formatted_price": "Zadarmo"
       },
       "guide_cta_label": "Prečítať celý sprievodca",
       "publisher_disclosure": "Toto je materiál prvej strany publikovaný Lumi Studio, vývojárom každej uvedenej aplikácie.",
@@ -141216,7 +141216,7 @@
       "badge_labels": [
         "Več",
         "Plačljiv prenos",
-        "App Store · 2,99 €"
+        "App Store · Brezplačno"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/sl-SI/metrotimehelper.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/metrotimehelper/decision/l/sl-SI/index.html",
@@ -141227,9 +141227,9 @@
       "app_store_url": "https://apps.apple.com/si/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "Prenesite Tajpej: metro pravočasno iz trgovine App Store",
       "storefront_facts": {
-        "price": "2.99",
+        "price": "0",
         "currency": "EUR",
-        "formatted_price": "2,99 €"
+        "formatted_price": "Brezplačno"
       },
       "guide_cta_label": "Preberite celoten vodnik",
       "publisher_disclosure": "To je gradivo prve roke, ki ga je objavil Lumi Studio, razvijalec vseh navedenih aplikacij.",
@@ -144731,7 +144731,7 @@
       "badge_labels": [
         "Mer",
         "Betald nedladdning",
-        "App Store · 39,00 kr"
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/sv/metrotimehelper.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/metrotimehelper/decision/l/sv/index.html",
@@ -144742,9 +144742,9 @@
       "app_store_url": "https://apps.apple.com/se/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "Hämta Taipei: Tidshjälp för metron i App Store",
       "storefront_facts": {
-        "price": "39",
+        "price": "0",
         "currency": "SEK",
-        "formatted_price": "39,00 kr"
+        "formatted_price": "Gratis"
       },
       "guide_cta_label": "Läs hela guiden",
       "publisher_disclosure": "Detta är förstapartsinnehåll publicerat av Lumi Studio, utvecklaren av varje listad app.",
@@ -148249,7 +148249,7 @@
       "badge_labels": [
         "மேலும்",
         "பணம் செலுத்தி பதிவிறக்கவும்",
-        "App Store · ₹ 299"
+        "App Store · இலவசம்"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ta-IN/metrotimehelper.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/metrotimehelper/decision/l/ta-IN/index.html",
@@ -148260,9 +148260,9 @@
       "app_store_url": "https://apps.apple.com/in/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "App Store-இல் Taipei MRT நேர உதவியாளர்-ஐப் பெறுங்கள்",
       "storefront_facts": {
-        "price": "299",
+        "price": "0",
         "currency": "INR",
-        "formatted_price": "₹ 299"
+        "formatted_price": "இலவசம்"
       },
       "guide_cta_label": "முழு வழிகாட்டியை படிக்கவும்",
       "publisher_disclosure": "இது Lumi Studio வெளியிட்ட முதல்-பார்ட்டி தரவு, இது பட்டியலிடப்பட்ட ஒவ்வொரு செயலியின் உருவாக்குநர்.",
@@ -151767,7 +151767,7 @@
       "badge_labels": [
         "ఇంకా",
         "చెల్లింపు డౌన్లోడ్",
-        "App Store · ₹ 299"
+        "App Store · ఉచితం"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/te-IN/metrotimehelper.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/metrotimehelper/decision/l/te-IN/index.html",
@@ -151778,9 +151778,9 @@
       "app_store_url": "https://apps.apple.com/in/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "App Store నుంచి Taipei MRT సమయ సహాయకారి పొందండి",
       "storefront_facts": {
-        "price": "299",
+        "price": "0",
         "currency": "INR",
-        "formatted_price": "₹ 299"
+        "formatted_price": "ఉచితం"
       },
       "guide_cta_label": "పూర్తి మార్గదర్శకాన్ని చదవండి",
       "publisher_disclosure": "ఇది Lumi Studio ద్వారా ప్రచురించబడిన స్వంత సంస్థ పదార్థం, ప్రతి జాబితా చేయబడిన యాప్ యొక్క అభివృద్ధికర్త.",
@@ -155850,7 +155850,7 @@
       "badge_labels": [
         "เพิ่มเติม",
         "ดาวน์โหลดแบบชำระเงิน",
-        "App Store · ฿99.00"
+        "App Store · ฟรี"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/th/metrotimehelper.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/metrotimehelper/decision/l/th/index.html",
@@ -155861,9 +155861,9 @@
       "app_store_url": "https://apps.apple.com/th/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "ดาวน์โหลด ผู้ช่วยเวลารถไฟฟ้า MRT ไทเป บน App Store",
       "storefront_facts": {
-        "price": "99",
+        "price": "0",
         "currency": "THB",
-        "formatted_price": "฿99.00"
+        "formatted_price": "ฟรี"
       },
       "guide_cta_label": "อ่านคู่มือฉบับเต็ม",
       "publisher_disclosure": "เนื้อหานี้เผยแพร่โดยตรงจาก Lumi Studio ซึ่งเป็นผู้พัฒนาแอปทั้งหมดที่ระบุไว้",
@@ -157893,7 +157893,7 @@
       "badge_labels": [
         "Daha fazla",
         "Ücretli indirme",
-        "App Store · ₺149,99"
+        "App Store · Ücretsiz"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/tr/metrotimehelper.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/metrotimehelper/decision/l/tr/index.html",
@@ -157904,9 +157904,9 @@
       "app_store_url": "https://apps.apple.com/tr/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "Metro Saat Yardımcısı: Taipei uygulamasını App Store'dan al",
       "storefront_facts": {
-        "price": "149.99",
+        "price": "0",
         "currency": "TRY",
-        "formatted_price": "₺149,99"
+        "formatted_price": "Ücretsiz"
       },
       "guide_cta_label": "Kılavuzun tamamını oku",
       "publisher_disclosure": "Bu, listelenen her uygulamanın geliştiricisi Lumi Studio tarafından yayımlanan birinci taraf materyaldir.",
@@ -162883,7 +162883,7 @@
       "badge_labels": [
         "Ще",
         "Платне завантаження",
-        "App Store · 3,99 USD"
+        "App Store · Безкоштовно"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/uk/metrotimehelper.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/metrotimehelper/decision/l/uk/index.html",
@@ -162894,9 +162894,9 @@
       "app_store_url": "https://apps.apple.com/ua/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "Завантажте Тайбей: помічник у метро з App Store",
       "storefront_facts": {
-        "price": "3.99",
+        "price": "0",
         "currency": "USD",
-        "formatted_price": "3,99 USD"
+        "formatted_price": "Безкоштовно"
       },
       "guide_cta_label": "Прочитати повний довідник",
       "publisher_disclosure": "Це матеріали першої сторони, опубліковані Lumi Studio, розробником кожного з перелічених додатків.",
@@ -166395,7 +166395,7 @@
       "badge_labels": [
         "مزید",
         "ادا شدہ ڈاؤن لوڈ",
-        "App Store · Rs 900.00"
+        "App Store · مفت"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ur-PK/metrotimehelper.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/metrotimehelper/decision/l/ur-PK/index.html",
@@ -166406,9 +166406,9 @@
       "app_store_url": "https://apps.apple.com/pk/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "App Store سے میٹرو وقت مددگار: تائپے حاصل کریں",
       "storefront_facts": {
-        "price": "900",
+        "price": "0",
         "currency": "PKR",
-        "formatted_price": "Rs 900.00"
+        "formatted_price": "مفت"
       },
       "guide_cta_label": "مکمل رہنمائی پڑھیں",
       "publisher_disclosure": "یہ مواد براہ راست Lumi Studio نے شائع کیا ہے، جو فہرست میں شامل تمام ایپس کا ڈویلپر ہے۔",
@@ -169558,7 +169558,7 @@
       "badge_labels": [
         "Khác",
         "Tải xuống trả phí",
-        "App Store · 99.000đ"
+        "App Store · Miễn phí"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/vi/metrotimehelper.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/metrotimehelper/decision/l/vi/index.html",
@@ -169569,9 +169569,9 @@
       "app_store_url": "https://apps.apple.com/vn/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "Tải Trợ lý giờ MRT Đài Bắc trên App Store",
       "storefront_facts": {
-        "price": "99000",
+        "price": "0",
         "currency": "VND",
-        "formatted_price": "99.000đ"
+        "formatted_price": "Miễn phí"
       },
       "guide_cta_label": "Đọc toàn bộ hướng dẫn",
       "publisher_disclosure": "Tài liệu này do Lumi Studio trực tiếp công bố; Lumi Studio là nhà phát triển của tất cả ứng dụng được liệt kê.",
@@ -173487,7 +173487,7 @@
       "badge_labels": [
         "更多",
         "付费下载",
-        "App Store · ¥22.00"
+        "App Store · 免费"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/metrotimehelper.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/metrotimehelper/decision/l/zh-Hans/index.html",
@@ -173498,9 +173498,9 @@
       "app_store_url": "https://apps.apple.com/cn/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "在 App Store 获取 捷运时间助手：台北地铁换乘",
       "storefront_facts": {
-        "price": "22",
+        "price": "0",
         "currency": "CNY",
-        "formatted_price": "¥22.00"
+        "formatted_price": "免费"
       },
       "guide_cta_label": "阅读完整指南",
       "publisher_disclosure": "这是由 Lumi Studio 发布的第一方资料；Lumi Studio 是每款列出 App 的开发者。",
@@ -174242,7 +174242,8 @@
         "免費開始 · 一次性解鎖",
         "免帳號",
         "Apple Watch",
-        "App Store · 免費"
+        "App Store · 免費",
+        "★ 5.0/5 · 1"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/dailymatelite.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/dailymatelite/decision/l/zh-Hant/index.html",
@@ -174255,7 +174256,9 @@
       "storefront_facts": {
         "price": "0",
         "currency": "TWD",
-        "formatted_price": "免費"
+        "formatted_price": "免費",
+        "rating_value": 5.0,
+        "rating_count": 1
       },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "這是由 Lumi Studio 發布的第一方資料；Lumi Studio 是每款列出 App 的開發者。",
@@ -177051,7 +177054,7 @@
       "badge_labels": [
         "更多",
         "付費下載",
-        "App Store · $90.00",
+        "App Store · 免費",
         "★ 5.0/5 · 4"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/metrotimehelper.html",
@@ -177063,9 +177066,9 @@
       "app_store_url": "https://apps.apple.com/tw/app/id6819061896?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "在 App Store 取得 捷運時間助手－台北轉乘時刻表",
       "storefront_facts": {
-        "price": "90",
+        "price": "0",
         "currency": "TWD",
-        "formatted_price": "$90.00",
+        "formatted_price": "免費",
         "rating_value": 5.0,
         "rating_count": 4
       },

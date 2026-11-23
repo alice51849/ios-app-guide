@@ -15,7 +15,7 @@ publisher: "Lumi Studio"
 
 - เพิ่มเติม
 - ดาวน์โหลดแบบชำระเงิน
-- App Store · ฿99.00
+- App Store · ฟรี
 
 [ดาวน์โหลด ผู้ช่วยเวลารถไฟฟ้า MRT ไทเป บน App Store](https://apps.apple.com/th/app/id6819061896?pt=118326163&ct=geo_pick&mt=8)
 

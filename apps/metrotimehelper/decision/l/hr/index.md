@@ -15,7 +15,7 @@ Za metro u Taipeiju na Tajvanu: upišite kada morate biti na odredištu i aplika
 
 - Više
 - Plaćeno preuzimanje
-- App Store · 2,99 €
+- App Store · Besplatno
 
 [Preuzmite Taipei: metro na vrijeme u App Storeu](https://apps.apple.com/hr/app/id6819061896?pt=118326163&ct=geo_pick&mt=8)
 

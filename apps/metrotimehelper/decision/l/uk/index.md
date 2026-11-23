@@ -15,7 +15,7 @@ publisher: "Lumi Studio"
 
 - Ще
 - Платне завантаження
-- App Store · 3,99 USD
+- App Store · Безкоштовно
 
 [Завантажте Тайбей: помічник у метро з App Store](https://apps.apple.com/ua/app/id6819061896?pt=118326163&ct=geo_pick&mt=8)
 

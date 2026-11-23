@@ -19,7 +19,7 @@ Si la plupart des applications de tâches vous semblent lourdes, la bonne est un
 - Aucune publicité
 - Apple Watch
 - App Store · Gratuit
-- ★ 4.7/5 · 3
+- ★ 4.8/5 · 4
 
 [Obtenez Mochi sur l’App Store →](https://apps.apple.com/ca/app/id6785004775?pt=118326163&ct=geo_pick&mt=8)
 

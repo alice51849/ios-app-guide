@@ -15,7 +15,7 @@ O Metro a Horas diz-lhe a que horas sair para apanhar o metro de Taipé, em Taiw
 
 - Mais
 - Descarregamento pago
-- App Store · 2,99 €
+- App Store · Grátis
 
 [Baixe Metro a Horas em Taipé na App Store](https://apps.apple.com/pt/app/id6819061896?pt=118326163&ct=geo_pick&mt=8)
 

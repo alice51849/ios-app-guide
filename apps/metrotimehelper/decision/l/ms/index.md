@@ -15,7 +15,7 @@ Beritahu Metro Time Helper bila anda perlu sampai, dan ia akan memberitahu masa 
 
 - Lagi
 - Muat turun berbayar
-- App Store · RM14.90
+- App Store · Percuma
 
 [Dapatkan Metro Time Helper: MRT Taipei di App Store](https://apps.apple.com/my/app/id6819061896?pt=118326163&ct=geo_pick&mt=8)
 

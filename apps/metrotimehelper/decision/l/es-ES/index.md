@@ -15,7 +15,7 @@ Metro a Tiempo es la herramienta para saber cuándo salir en el metro de Taipéi
 
 - Más
 - Descarga de pago
-- App Store · 2,99 €
+- App Store · Gratis
 
 [Consigue Metro a Tiempo: Taipéi en el App Store](https://apps.apple.com/es/app/id6819061896?pt=118326163&ct=geo_pick&mt=8)
 

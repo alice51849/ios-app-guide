@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import html
 import json
+import re
 from pathlib import Path
 import sys
 import tempfile
@@ -48,6 +49,18 @@ def _page(site: str, locale: str, key: str, app_id: str) -> str:
         f"{json.dumps(schema)}</script>"
         "</head><body><main>Verified app</main></body></html>\n"
     )
+
+
+_HIDDEN_RE = re.compile(
+    r"<script\b.*?</script>|<style\b.*?</style>|<!--.*?-->",
+    re.DOTALL | re.IGNORECASE,
+)
+_TAG_RE = re.compile(r"<[^>]*>")
+
+
+def _visible_text(source: str) -> str:
+    """Reader-visible text: drop scripts, styles, comments and tags."""
+    return html.unescape(_TAG_RE.sub(" ", _HIDDEN_RE.sub(" ", source)))
 
 
 def _mobile_schema(source: str) -> dict[str, object]:
@@ -309,7 +322,8 @@ class AppStoreFactsTests(unittest.TestCase):
                 )
                 checked += 1
                 with self.subTest(locale=locale, app=key):
-                    self.assertEqual(1, source.count(facts.FACT_START))
+                    # JSON-LD offers stay exact in both branches: hiding the
+                    # visible price never drops the structured price.
                     self.assertEqual(
                         detail["price"],
                         schema["offers"]["price"],
@@ -318,10 +332,33 @@ class AppStoreFactsTests(unittest.TestCase):
                         detail["currency"],
                         schema["offers"]["priceCurrency"],
                     )
-                    self.assertIn(
-                        f">{html.escape(str(detail['formatted_price']))}</data>",
-                        source,
+                    formatted_price = html.escape(
+                        str(detail["formatted_price"])
                     )
+                    if facts.shows_visible_price(app_id):
+                        self.assertEqual(
+                            1, source.count(facts.FACT_START)
+                        )
+                        self.assertIn(
+                            f">{formatted_price}</data>",
+                            source,
+                        )
+                    else:
+                        # gen_app_store_facts.HIDE_VISIBLE_PRICE_APP_IDS:
+                        # the fact block exists only to carry a rating, and
+                        # the price must not leak anywhere a reader sees it.
+                        self.assertEqual(
+                            1 if "rating_value" in detail else 0,
+                            source.count(facts.FACT_START),
+                        )
+                        self.assertNotIn(
+                            f">{formatted_price}</data>",
+                            source,
+                        )
+                        self.assertNotIn(
+                            str(detail["formatted_price"]),
+                            _visible_text(source),
+                        )
                     # The visible rating stays -- it is a real fact a reader
                     # can check on the listing. The structured
                     # aggregateRating never does: publisher-authored ratings
@@ -343,6 +380,23 @@ class AppStoreFactsTests(unittest.TestCase):
                         )
         self.assertGreater(checked, 1200)
         self.assertEqual(blocked, BLOCKED_CELL_COUNT)
+
+    def test_hidden_visible_price_list_is_only_snapport(self):
+        # Guard against the hide-price switch turning into a blanket
+        # exemption: only Snapport (id 6780575828) may hide its price.
+        self.assertEqual(
+            frozenset({"6780575828"}),
+            facts.HIDE_VISIBLE_PRICE_APP_IDS,
+        )
+        self.assertEqual("6780575828", str(APPSTORE["snapport"]))
+        self.assertFalse(facts.shows_visible_price("6780575828"))
+        self.assertFalse(facts.shows_visible_price(6780575828))
+        for key, app_id in APPSTORE.items():
+            if key != "snapport":
+                self.assertTrue(
+                    facts.shows_visible_price(app_id),
+                    key,
+                )
 
 
 if __name__ == "__main__":

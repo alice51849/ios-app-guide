@@ -18,6 +18,7 @@ from owned_feed_fixtures import (
 )
 import owned_feed_locale_gate as locale_gate
 from live_app_manifest import canonical_manifest
+import purchase_types
 
 
 class LocaleGateTests(unittest.TestCase):
@@ -77,11 +78,35 @@ class OwnedFeedTests(FeedFixture):
             )),
         )
         # 捷運時間助手 1.1.1（11-10 上線）改付費下載，11-15 讀回確認：付費 15、免費開始 44。
-        expected_models = {"paid_upfront": 15, "free_with_lifetime_unlock": 44}
+        # JellyDay（免費下載＋一次性內購、無訂閱）2026-11-23 iTunes Lookup 讀回後
+        # 免費開始改 45；證據收據 reports/test_health/reviews/
+        # jellyday_itunes_purchase_readback_2026-11-23.md（成長引擎）。寫死數字是絆線：
+        # 名冊再多一款就要重新讀回、改這裡並附收據。
+        expected_models = {"paid_upfront": 15, "free_with_lifetime_unlock": 45}
         # Kumo（自動續訂＋一次性買斷並存）上架後登錄為 neutral，只有 1 款。
         if "kumo" in canonical_manifest()["apps"]:
             expected_models["neutral"] = 1
         self.assertEqual(expected_models, manifest["purchase_models"])
+        # 跨來源核對：名冊裡 free_with_lifetime_unlock 的款＝已驗證購買模式
+        # （verified_purchase_types.json）的 one_time_unlock 款扣掉付費下載款。
+        roster = set(canonical_manifest()["apps"])
+        roster_free_unlock = {
+            key for key in roster
+            if APPS[key]["purchase_model"] == "free_with_lifetime_unlock"
+        }
+        roster_paid = {
+            key for key in roster
+            if APPS[key]["purchase_model"] == "paid_upfront"
+        }
+        verified_one_time = {
+            key for key, record in purchase_types.load().items()
+            if record["type"] == purchase_types.ONE_TIME_UNLOCK
+        }
+        self.assertEqual(roster_free_unlock, verified_one_time - roster_paid)
+        self.assertEqual(
+            len(roster_free_unlock),
+            manifest["purchase_models"]["free_with_lifetime_unlock"],
+        )
         paths, pairs = set(), set()
         for locale in OFFICIAL_LOCALES:
             document = feeds.read_json(self.pages / feeds.feed_path(locale, "json_feed"))

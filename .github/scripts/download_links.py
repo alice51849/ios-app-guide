@@ -456,6 +456,7 @@ _HERO_CAMPAIGN = dict(_CLIP_CAMPAIGN, **{
     "ph": "outreach", "wa": "outreach",
     "l8": "social", "xhs": "social", "qr": "social", "md": "social", "dsc": "social", "sc": "social",
     "lv": "social",
+    "bili": "social", "wb": "social", "zhi": "social", "jk": "social", "dy": "social",
 })
 # BM series bm_<app>_<market>_<channel>; a BM token without a known channel is its SEO intent page (web).
 _BM_CAMPAIGN = dict(_HERO_CAMPAIGN, seo="web", dir="outreach", zenn="social", gn="social", naver="social",

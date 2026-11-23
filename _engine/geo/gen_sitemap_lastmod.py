@@ -1057,6 +1057,10 @@ def main() -> None:
         ),
     )
     args = parser.parse_args()
+    # K1 停新增網址：最後一次實體化之後再擋一次（冪等），網站地圖不新增網址。
+    import new_url_freeze
+
+    new_url_freeze.enforce(args.pages, stage="gen_sitemap_lastmod")
     stats = generate(
         args.pages,
         site=args.site,

@@ -1092,6 +1092,11 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--check", action="store_true", help="只回報會改什麼")
     args = parser.parse_args()
+    if not args.check:
+        # K1 停新增網址：所有頁面產生器之後、連結圖與網站地圖封閉之前先擋新網址。
+        import new_url_freeze
+
+        new_url_freeze.enforce(PAGES, stage="gen_link_hubs")
     result = run_link_hubs(PAGES, check=args.check)
 
     print(

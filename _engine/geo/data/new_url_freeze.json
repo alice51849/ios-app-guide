@@ -1,0 +1,4 @@
+{
+  "說明": "指南站停新增網址單一旗標（審核員 K1 11-23 定案，reports/yi_review/log.md 第 2250 行）。true＝每日產生器不產生既有網站上沒有的新網址、網站地圖不新增網址，既有頁照常重產；唯一例外＝上架 14 天內新款（geo/data/launch_blitz_apps.json 的「上架」）的 App 頁，只限 en-US、en-GB、en-AU。守門程式 geo/new_url_freeze.py。改 false 即解除。",
+  "freeze_new_urls": true
+}

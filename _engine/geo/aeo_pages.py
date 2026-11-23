@@ -645,9 +645,8 @@ CURATED_FALLBACK = {
             "day planner with a live activity countdown and lock screen widget",
             "visual planner with no account and no ads",
         ],
-        # Pending first release (61_JellyDay, ASC 6835673714; Google Play
-        # already live); listed ahead so the roster check passes the day it
-        # goes live. Competitor titles read off the US iTunes Search API
+        # Live on the App Store since 2026-11-21 (61_JellyDay, Apple ID
+        # 6835673714) and on Google Play since 2026-11-18. Competitor titles read off the US iTunes Search API
         # (country=us, entity=software) for "visual daily planner" (Todewy #2,
         # Thruday #3), "routine timer" (Routinery #1) and "timeline planner"
         # (Timepage #4) on 2026-11-21T10:17Z. Titles carrying cute / to-do /

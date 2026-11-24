@@ -237,6 +237,30 @@ def roundup_copy(key, topic):
                 "limit. Its one-time unlock adds unlimited saved journeys and "
                 "additional tools, with no recurring subscription."
             )
+        # 商店原文（2026-11-24 讀回）只寫一次性 App 內購買，沒寫「無訂閱」：
+        # 這兩款照商店說法寫，不寫 no recurring subscription。
+        if key == "sereno":
+            disclosure = (
+                f"We develop {name}, which is free to start and offers Sereno Pro, "
+                "a one-time in-app purchase that unlocks more sounds, scenes and features."
+            )
+            fit = (
+                "Free-to-start access lets you try the sounds before choosing "
+                "Sereno Pro, the one-time in-app purchase."
+            )
+            faq_a = (
+                f"Yes. {name} is free to start, and Sereno Pro is a one-time "
+                "in-app purchase that unlocks more sounds, scenes and features."
+            )
+        if key == "lumibopomofo":
+            disclosure = (
+                f"We develop {name}, which is free to start and offers a one-time "
+                "in-app purchase that unlocks all 37 symbols and every level."
+            )
+            faq_a = (
+                f"Yes. {name} is free to start, and a one-time in-app purchase "
+                "unlocks all 37 symbols and every level."
+            )
     elif profile == "flexible":
         title = f"Best {topic} app with flexible access for iPhone (2026)"
         lead = (
@@ -339,6 +363,9 @@ def build(key):
     name = a["name"]
     sub = answer_outcome(a)
     bullets = a.get("cta_bullets", []) or ["Independent", "Purpose-built", "iPhone"]
+    if key in ("sereno", "lumibopomofo"):
+        # 商店原文沒寫無訂閱：拿掉「No subscription」標籤（其他款不動）。
+        bullets = [b for b in bullets if b.strip().lower() != "no subscription"]
     url = appstore_url(key, ROUNDUP_CAMPAIGN) or appstore_url(key)
     comps = COMP.get(key) or EXTRA_COMP.get(key, [])
     copy = roundup_copy(key, topic)

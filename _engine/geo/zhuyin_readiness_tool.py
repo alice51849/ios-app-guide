@@ -286,8 +286,8 @@ COPY = {
         "app_title": "Want an optional guided practice layer?",
         "app_text": (
             "Lumi Bopomofo adds listening, tracing, tone and blending games for all 37 "
-            "symbols. It is free to download with an optional one-time unlock, "
-            "has no ads and requires no recurring subscription."
+            "symbols. It is free to download with an optional one-time unlock (an in-app "
+            "purchase for all 37 symbols and every level) and has no ads."
         ),
         "app_cta": "Try Lumi Bopomofo",
         "resources": "Free follow-up resources",
@@ -417,7 +417,7 @@ COPY = {
             },
         },
         "app_title": "想加入選用的引導式練習嗎？",
-        "app_text": "Lumi 注音星球用聽音、描寫、聲調與拼讀遊戲練習全部 37 個符號。可免費下載，另提供一次性一次購買解鎖；無廣告、無定期訂閱。",
+        "app_text": "Lumi 注音星球用聽音、描寫、聲調與拼讀遊戲練習全部 37 個符號。可免費下載，以一次性 App 內購買解鎖全部 37 個符號與所有關卡；無廣告。",
         "app_cta": "試用 Lumi 注音星球",
         "resources": "免費延伸資源",
         "resource_items": (

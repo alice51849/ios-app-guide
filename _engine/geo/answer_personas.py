@@ -5047,9 +5047,10 @@ PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
     # Bannan, Circular line phase one and the New Taipei Metro Sanying line;
     # Airport MRT and light rail are not included. Times are estimates from
     # official headways and travel times, not live train arrivals. No sign-up,
-    # no ads, no personal data collection; paid download since 1.1.1
-    # (2026-11-10): buy once, every feature included, no in-app purchases,
-    # no trial, no subscription (iTunes lookup tw/us 2026-11-15). Independent app, not
+    # no ads, no personal data collection; free download on iPhone since
+    # 2026-11-24 (iTunes lookup us/tw/jp price 0): every feature included, no
+    # in-app purchases, no subscription; the Android version on Google Play is
+    # a paid download (CLAUDE 1.8). Independent app, not
     # affiliated with Taipei Rapid Transit Corporation.
     "metrotimehelper": [
         {
@@ -5108,9 +5109,9 @@ PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
                 "guess. It covers the Wenhu, Tamsui-Xinyi, Songshan-Xindian, "
                 "Zhonghe-Xinlu, Bannan and Circular lines and the New Taipei "
                 "Metro Sanying line; Airport MRT and light rail are not "
-                "included. It is a paid download: buy it once and every "
-                "feature is included, with no in-app purchases and no "
-                "subscription."
+                "included. It is free to download on iPhone with every "
+                "feature included, no in-app purchases and no subscription; "
+                "the Android version on Google Play is a paid download."
             ),
             "faq": [
                 {
@@ -5123,7 +5124,7 @@ PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
                 },
                 {
                     "q": "Is there a subscription?",
-                    "a": "No. It is a paid download: buy it once and every feature is included, with no in-app purchases; nothing renews automatically.",
+                    "a": "No. On iPhone it is a free download with every feature included, no in-app purchases and nothing that renews automatically; the Android version on Google Play is a paid download.",
                 },
                 {
                     "q": "Does it cover the Airport MRT?",
@@ -5184,9 +5185,10 @@ PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
                 "fits visitors to Taipei who want to plan MRT trips in their own "
                 "language, including the Xinbeitou hot spring branch. Airport "
                 "MRT and light rail are not included, and times are estimates "
-                "from official data rather than live arrivals. It is a paid "
-                "download: buy it once and every feature is included, with no "
-                "in-app purchases and no subscription."
+                "from official data rather than live arrivals. It is free to "
+                "download on iPhone with every feature included, no in-app "
+                "purchases and no subscription; the Android version on Google "
+                "Play is a paid download."
             ),
             "faq": [
                 {

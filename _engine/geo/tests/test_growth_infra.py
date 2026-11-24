@@ -13679,7 +13679,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("不能證明熟練度", traditional)
         self.assertIn("所有短句皆為本站原創", traditional)
         self.assertIn("one-time unlock", english)
-        self.assertIn("一次付費一次購買解鎖", traditional)
+        self.assertIn("一次性 App 內購買解鎖", traditional)
 
     def test_zhuyin_sentence_cards_build_both_pages_and_indexes_idempotently(self):
         with tempfile.TemporaryDirectory() as directory:
@@ -13809,7 +13809,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("不是測驗、程度分級或診斷", traditional)
         self.assertIn("注音依教育部辭典標示本調", traditional)
         self.assertIn("one-time unlock", english)
-        self.assertIn("一次付費一次購買解鎖", traditional)
+        self.assertIn("一次性 App 內購買解鎖", traditional)
 
     def test_zhuyin_mini_reader_builds_both_pages_and_indexes_idempotently(self):
         with tempfile.TemporaryDirectory() as directory:
@@ -13920,7 +13920,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("no score, timer, level, pass or diagnostic result", english)
         self.assertIn("one-time unlock", english)
         self.assertIn("沒有分數、計時、等級、通過或診斷結果", traditional)
-        self.assertIn("一次付費一次購買解鎖", traditional)
+        self.assertIn("一次性 App 內購買解鎖", traditional)
 
     def test_zhuyin_story_sequence_cards_build_both_pages_and_indexes_idempotently(
         self,
@@ -21301,7 +21301,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("不託管、不重製", traditional)
         self.assertIn("沒有測試注音", traditional)
         self.assertIn("one-time unlock", english)
-        self.assertIn("一次性一次購買解鎖", traditional)
+        self.assertIn("一次性 App 內購買解鎖", traditional)
 
     def test_picture_book_club_builds_both_pages_and_index_card(self):
         with tempfile.TemporaryDirectory() as directory:
@@ -21408,7 +21408,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("did not test Zhuyin learning or this kit", english)
         self.assertIn("沒有測試注音學習，也沒有測試本工具", traditional)
         self.assertIn("one-time unlock", english)
-        self.assertIn("一次性一次購買解鎖", traditional)
+        self.assertIn("一次性 App 內購買解鎖", traditional)
 
     def test_grandparent_call_kit_builds_both_pages_and_index_card(self):
         with tempfile.TemporaryDirectory() as directory:
@@ -21541,7 +21541,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("不是官方評量", traditional)
         self.assertIn("不產生總分或分級", traditional)
         self.assertIn("one-time unlock", english)
-        self.assertIn("一次性一次購買解鎖", traditional)
+        self.assertIn("一次性 App 內購買解鎖", traditional)
         schemas = [
             json.loads(block)
             for block in re.findall(

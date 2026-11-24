@@ -15,9 +15,10 @@ EXTERNAL_APP_LOCALES = {
                 "packing lists, and small goals that do not need a complicated "
                 "project manager. The calm visual style helps the list stay "
                 "inviting even on a busy day.\n\n"
-                "No account or ads are required. Core checklist features are "
-                "free to use, with an optional one-time purchase for the full "
-                "experience and no subscription."
+                "The free version includes 2 lists with up to 4 tasks each, 5 "
+                "themes and 1 emoji set. Premium, an in-app purchase, unlocks "
+                "unlimited lists and tasks, all 101 themes and all 11 emoji "
+                "sets."
             ),
             "keywords": (
                 "to do list, checklist, cute planner, daily tasks, study list, "
@@ -35,9 +36,11 @@ EXTERNAL_APP_LOCALES = {
                 "プロジェクト管理までは必要ない日常のリストに向いています。"
                 "落ち着いたかわいいデザインなので、忙しい日でも開く負担を"
                 "感じにくいのが特長です。\n\n"
-                "アカウント登録も広告もありません。基本のチェックリストは"
-                "無料で使え、必要な場合だけ一度限りの購入で全機能を"
-                "ご利用いただけます。"
+                "無料版では、リスト2つ（各リスト4項目まで）、テーマ5種"
+                "類、絵文字1セットを使えます。App内課金のプレミアムに"
+                "アップグレードすると、リストと項目が無制限になり、全10"
+                "1種類のテーマと全11セットの絵文字が使えるようになりま"
+                "す。"
             ),
             "keywords": (
                 "ToDoリスト, チェックリスト, かわいい手帳, タスク管理, "
@@ -54,8 +57,8 @@ EXTERNAL_APP_LOCALES = {
                 "不論是讀書計畫、採買、家事、旅行行李或生活中的小目標，"
                 "都不需要先學會複雜的專案管理。溫柔可愛的畫面，特別適合"
                 "想把日子整理好、又不想被工具追著跑的人。\n\n"
-                "不必註冊帳號，也沒有廣告。基本清單可免費使用；需要完整"
-                "功能時，只要一次性解鎖，不用訂閱。"
+                "免費版可使用 2 個清單（每個清單最多 4 個項目）、5 款主題和 1 組表情符號。進階版為 App "
+                "內購買項目，升級後清單與項目不限數量，並可使用全部 101 款主題和全部 11 組表情符號。"
             ),
             "keywords": (
                 "待辦清單, 檢查清單, 可愛手帳, 每日任務, 讀書計畫, "
@@ -74,9 +77,9 @@ EXTERNAL_APP_LOCALES = {
                 "복잡한 프로젝트 관리가 필요 없는 일상에 잘 맞습니다. "
                 "차분하고 귀여운 화면이라 바쁜 날에도 부담 없이 다시 "
                 "열 수 있습니다.\n\n"
-                "회원 가입이 필요 없고, 광고도 없습니다. 기본 체크리스트는 무료로 "
-                "사용하고, 필요한 경우 한 번의 구매로 전체 기능을 "
-                "잠금 해제할 수 있습니다."
+                "무료 버전에서는 목록 2개(목록당 항목 최대 4개), 테마 5가지, 이모지 1세트를 사용할 수 있어요. 앱 내 "
+                "구입 항목인 프리미엄으로 업그레이드하면 목록과 항목을 제한 없이 만들 수 있고, 테마 101가지와 이모지 "
+                "11세트를 모두 사용할 수 있어요."
             ),
             "keywords": (
                 "할 일 목록, 체크리스트, 귀여운 플래너, 일정 관리, 공부 계획, "
@@ -94,9 +97,10 @@ EXTERNAL_APP_LOCALES = {
                 "के लक्ष्यों के लिए उपयोगी है—बिना किसी जटिल प्रोजेक्ट मैनेजमेंट "
                 "टूल के। "
                 "शांत और प्यारा डिज़ाइन व्यस्त दिन में भी सूची को सहज बनाए रखता है।\n\n"
-                "किसी खाते या विज्ञापन की जरूरत नहीं है। मूल चेकलिस्ट सुविधाएँ "
-                "मुफ़्त हैं और पूरा अनुभव चाहें तो केवल एक बार खरीदकर अनलॉक किया "
-                "जा सकता है—बिना किसी सब्सक्रिप्शन के।"
+                "मुफ़्त वर्ज़न में 2 लिस्ट (हर लिस्ट में ज़्यादा से ज़्यादा 4 "
+                "काम), 5 थीम और 1 इमोजी सेट मिलते हैं। इन-ऐप खरीदारी से मिलने "
+                "वाला प्रीमियम असीमित लिस्ट और काम, सभी 101 थीम और सभी 11 इमोजी "
+                "सेट अनलॉक करता है।"
             ),
             "keywords": (
                 "टू डू लिस्ट, चेकलिस्ट, दैनिक कार्य, पढ़ाई की योजना, खरीदारी सूची, "
@@ -115,9 +119,10 @@ EXTERNAL_APP_LOCALES = {
                 "klusjes, inpaklijsten en kleine doelen waarvoor een uitgebreid "
                 "projectmanagement-app te zwaar is. Het vriendelijke, rustige ontwerp "
                 "nodigt uit om ook op drukke dagen terug te komen.\n\n"
-                "Een account is niet nodig en er zijn geen advertenties. De "
-                "basischecklists zijn gratis; voor de volledige ervaring is er "
-                "een optionele eenmalige aankoop zonder abonnement."
+                "De gratis versie bevat 2 lijsten met elk maximaal 4 taken, 5 "
+                "thema’s en 1 emojiset. Premium, een in-app-aankoop, "
+                "ontgrendelt onbeperkt veel lijsten en taken, alle 101 thema’s "
+                "en alle 11 emojisets."
             ),
             "keywords": (
                 "takenlijst, checklist, dagplanner, studielijst, boodschappenlijst, "
@@ -136,9 +141,10 @@ EXTERNAL_APP_LOCALES = {
                 "zoznamy na balenie aj malé ciele, ktoré nepotrebujú zložitý nástroj "
                 "na správu projektov. Pokojný a útulný vzhľad zostáva príjemný aj "
                 "počas uponáhľaného dňa.\n\n"
-                "Účet nie je potrebný a reklamy tu nie sú. Základné funkcie zoznamov "
-                "úloh sú bezplatné; celý zážitok si môžete odomknúť voliteľným "
-                "jednorazovým nákupom bez predplatného."
+                "Bezplatná verzia obsahuje 2 zoznamy s najviac 4 úlohami v "
+                "každom, 5 motívov a 1 sadu emoji. Premium, nákup v aplikácii, "
+                "odomkne neobmedzený počet zoznamov a úloh, všetkých 101 "
+                "motívov a všetkých 11 sád emoji."
             ),
             "keywords": (
                 "zoznam úloh, to do list, checklist, denné úlohy, študijný plán, "

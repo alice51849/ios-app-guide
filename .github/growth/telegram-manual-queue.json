@@ -7,17 +7,6 @@
   },
   "posts": [
     {
-      "id": "tg_onepageppt_jp_gijiroku",
-      "lang": "ja",
-      "app": "6798814385",
-      "text": "1時間分の会議メモを、上司に見せる1枚に。OnePage PPT は貼り付けた文章やCSVの表から要点を見つけて見出しにし、数値はグラフ、手順はフロー図にした16:9のスライドを1枚にまとめます。データで裏づけられる図だけを描き、数字を作り出すことはありません。処理は端末内で、アカウント登録もいりません。",
-      "review": {
-        "receipt": "00_GrowthEngine reports/outreach_scale/patch_receipts/review_tg_cov105_independent_2026-11-22.md",
-        "reviewed_on": "2026-11-22",
-        "text_sha256": "ccf46d520ccfe7b0aa80e5f71fdb43f787e414387515922144d4ec7b82f7ca28"
-      }
-    },
-    {
       "id": "tg_lumibopomofo_au_d1",
       "lang": "en-AU",
       "app": "6773017109",
@@ -26,6 +15,17 @@
         "receipt": "00_GrowthEngine reports/outreach_scale/squad_c_tg_daily_2026-11-23.md",
         "reviewed_on": "2026-11-23",
         "text_sha256": "c5632eacc131dbec86a4c72f1e3996dbd9476ba7cd1853fb030abf93b96c75ea"
+      }
+    },
+    {
+      "id": "tg_kumo_us_trend",
+      "lang": "en-US",
+      "app": "6830824515",
+      "text": "See the trend, not the daily noise. I'm the developer of Kumo. It keeps the daily weigh-in to about 10 seconds: it opens on today with your last weight already filled in, you adjust by 0.1, and you're done. Each reading shows up as a daily dot alongside a 7-day average line, so you follow the trend instead of every jump. A cute cloud grows with the days you log, not with your weight. No account and no ads. Kumo is for personal tracking only and doesn't give medical advice.",
+      "review": {
+        "receipt": "00_GrowthEngine reports/squads/F/review_kumo_tg_us_2026-11-24.md",
+        "reviewed_on": "2026-11-24",
+        "text_sha256": "7e93dc7a0467e9edc50ca05a955d07c932aef13b60d421d822362ac541767a9c"
       }
     },
     {

@@ -58,7 +58,7 @@ def build():
          "大約 4 歲(學齡前)就可以用遊戲方式接觸注音符號,到幼兒園大班與小一銜接最有幫助。"
          "重點是『玩中學』,避免枯燥背誦。"),
         ("有沒有免費又無廣告的注音 app?",
-         f"{free_name}可免費下載,且完全無廣告、無內購彈窗、不需註冊或網路,適合直接給孩子使用。"),
+         f"{free_name}可免費下載、無廣告、不需註冊;App 內有一次性購買可解鎖全部 37 個符號與所有關卡。"),
         ("注音和拼音有什麼不同?該學哪個?",
          "注音(ㄅㄆㄇ)是台灣中小學的國語標音系統;漢語拼音(bo po mo)多用於中國大陸與部分國際中文教學。"
          "在台灣就學的孩子以注音為主。"),
@@ -75,19 +75,22 @@ def build():
                   "mainEntity": [{"@type": "Question", "name": q,
                                   "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faq]}
 
-    def app_schema(name, url, desc, price_desc):
+    def app_schema(name, url, desc, price_desc, free_download=True):
         return {"@context": "https://schema.org", "@type": "SoftwareApplication",
                 "name": name, "operatingSystem": "iOS", "applicationCategory": "EducationalApplication",
                 "inLanguage": "zh-Hant", "url": url, "installUrl": url,
                 "description": desc,
-                "offers": {"@type": "Offer", "price": "0", "priceCurrency": "TWD", "description": price_desc},
+                # Pro 是付費下載：整個不放 offers（不寫價格，4.2；也免得報缺 price）。
+                **({"offers": {"@type": "Offer", "price": "0", "priceCurrency": "TWD", "description": price_desc}}
+                   if free_download else {}),
                 "audience": {"@type": "PeopleAudience", "suggestedMinAge": 4, "suggestedMaxAge": 7},
                 "keywords": free.get("keywords", "")}
 
     schemas = [
         app_schema(free_name, free_url, (free.get("description") or "")[:300],
-                   "免費下載,完整版可一次購買解鎖,無訂閱"),
-        app_schema(pro_name, pro_url, (pro.get("description") or "")[:300], "一次購買,一次購買後可使用,無訂閱無廣告"),
+                   "免費下載,全部 37 個符號與所有關卡可用一次性 App 內購買解鎖"),
+        app_schema(pro_name, pro_url, (pro.get("description") or "")[:300], "付費下載,一次付費,無 App 內購買、無廣告",
+                   free_download=False),
         faq_schema,
     ]
     ld = "\n".join(f'<script type="application/ld+json">\n{json.dumps(s, ensure_ascii=False, indent=2)}\n</script>'
@@ -101,7 +104,7 @@ def build():
         for q, a in faq)
 
     title = "注音 app 推薦|2026 最好的注音符號學習 App(免費・無廣告)"
-    desc = f"幫 4–7 歲孩子學注音的 App 怎麼挑?推薦{free_name}:用遊戲學注音、聲調、拼音,無廣告、重隱私、一次購買無訂閱。"
+    desc = f"幫 4–7 歲孩子學注音的 App 怎麼挑?推薦{free_name}:用遊戲學注音、聲調、拼音,無廣告、重隱私、免費下載,一次性 App 內購買解鎖全部。"
     body = f"""  <h1>注音 app 推薦:幫 4–7 歲孩子學注音的最佳 App(2026)</h1>
   <p>要幫學齡前到小一的孩子學<strong>注音符號(ㄅㄆㄇ)</strong>,選對 App 很重要。
   好的注音 app 應該「玩中學」、<strong>無廣告</strong>、保護孩子隱私,並涵蓋<strong>筆順、聲調與拼讀</strong>。
@@ -123,7 +126,7 @@ def build():
     <li><strong>5–6 歲小一先修</strong>:要能涵蓋全部 <strong>37 個注音、四聲與拼讀</strong>,最好附筆順描摹,幫孩子在開學前把音、形、義串起來。</li>
     <li><strong>幼兒園大班暑假衝刺</strong>:重點是每天固定 10–15 分鐘的習慣,先認讀再描寫;選能離線、隨開隨玩、不需帳號的 App 最順。</li>
     <li><strong>海外華人子女</strong>:搭配注音學發音,避免用英語的音去套注音;影片＋App 混搭,家長陪讀效果最好。</li>
-    <li><strong>跟不上或會抗拒的孩子</strong>:把目標拆小(一天一兩個音)、多用遊戲與鼓勵、絕不施壓;買斷型 App 沒有扣款壓力,可以慢慢來。</li>
+    <li><strong>跟不上或會抗拒的孩子</strong>:把目標拆小(一天一兩個音)、多用遊戲與鼓勵、絕不施壓;買斷型 App(如付費下載的 Pro 版)沒有扣款壓力,可以慢慢來。</li>
   </ul>
 
   <h2>推薦:{e(free_name)}(免費)與 {e(pro_name)}(完整版)</h2>
@@ -132,7 +135,7 @@ def build():
   聲調雲霄飛車學一二三四聲、拼音小火車練拼讀。<strong>完全無廣告、不收個資、無需註冊、進度只存裝置本機</strong>,中英雙語介面。</p>
   <p>👉 <a href="{e(free_url)}"><strong>免費下載 {e(free_name)}(App Store)</strong></a></p>
   <p>想<strong>一次解鎖全部關卡與遊戲</strong>、無內購彈窗,可選 <strong>{e(pro_name)}</strong>:
-  一次購買、一次購買後可使用、適合家庭共用,沒有訂閱。</p>
+  付費下載、一次付費、可與家人共享,沒有 App 內購買。</p>
   <p>👉 <a href="{e(pro_url)}"><strong>取得 {e(pro_name)}(App Store)</strong></a></p>
 
   <h2>在家陪練注音的小技巧</h2>

@@ -874,27 +874,27 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    "mochi free vs paid",
    "to-do app one-time purchase ios"
   ],
-  "lead": "Mochi To-Do is free with no ads and no subscription; the one-time purchase removes limits on lists and items and unlocks all 96 premium skins.",
-  "detail": "{name}'s free tier is genuinely usable: 2 lists with up to 4 items each, one emoji category, full widget functionality, reminders, and all core interactions — enough for most daily planning and grocery use cases. The single optional purchase lifts all caps (unlimited lists, unlimited items, all emoji categories) and opens every premium skin. There is no monthly or annual subscription tier — pay once and the unlock restores on any device via the same Apple ID.",
+  "lead": "Mochi To-Do is free to download with no subscription; Premium, a single one-time in-app purchase, unlocks unlimited lists and tasks, all 101 themes and all 11 emoji sets.",
+  "detail": "According to the App Store listing, {name}'s free version includes 2 lists with up to 4 tasks each, 5 themes and 1 emoji set. Premium, a one-time in-app purchase, unlocks unlimited lists and tasks, all 101 themes (the 5 free ones plus 96 more) and all 11 emoji sets. The app also has a Home Screen widget, Apple Watch support and reminders. There is no monthly or annual subscription — Premium is a single one-time purchase that can be restored on another device signed in to the same Apple ID.",
   "bullets": [
-   "Free: 2 lists, up to 4 items each, 1 emoji category, all core features, widgets, reminders",
-   "Paid (one-time): unlimited lists, unlimited items per list, all emoji categories",
-   "Paid (one-time): all 96 premium skins — sakura, midnight, cozy paper, ocean, confetti, and more",
-   "No subscription ever — one purchase restores on any device with the same Apple ID",
-   "No ads at any tier, no account required, no tracking"
+   "Free: 2 lists with up to 4 tasks each, 5 themes, 1 emoji set",
+   "Premium (one-time in-app purchase): unlimited lists and tasks, all 11 emoji sets",
+   "Premium (one-time): all 101 themes — the 5 free themes plus 96 more",
+   "No subscription — Premium is a one-time purchase you can restore with the same Apple ID",
+   "Privacy: the App Store privacy label says Data Not Collected, and the Google Play listing doesn't show a \"Contains ads\" label"
   ],
   "faq": [
    {
-    "q": "Can I preview premium skins before buying?",
-    "a": "Yes — you can browse skins in the picker and see how they look on your actual list content before purchasing."
+    "q": "How many themes are free, and what does Premium unlock?",
+    "a": "The free version includes 5 of the 101 themes, 2 lists with up to 4 tasks each and 1 emoji set. Premium, a one-time in-app purchase, unlocks all 101 themes (96 more), unlimited lists and tasks, and all 11 emoji sets, according to the App Store listing."
    },
    {
     "q": "Does the unlock transfer if I get a new iPhone?",
-    "a": "Yes. Tap 'Restore Purchase' on the paywall screen while signed into the same Apple ID and the premium unlock is restored at no charge."
+    "a": "Yes. Premium is a one-time in-app purchase, so it can be restored at no extra charge on a new iPhone signed in to the same Apple ID."
    },
    {
-    "q": "Are there any features behind a separate paywall beyond the skin unlock?",
-    "a": "No. The single one-time purchase unlocks everything: all skins, unlimited lists, unlimited items, all emoji categories. There are no additional paid tiers."
+    "q": "Are there any features behind a separate paywall beyond Premium?",
+    "a": "No. Mochi has no subscription; its only purchase is the one-time Premium unlock, which covers unlimited lists and tasks, all 101 themes and all 11 emoji sets."
    }
   ]
  },

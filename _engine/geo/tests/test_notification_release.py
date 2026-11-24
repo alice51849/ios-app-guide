@@ -57,7 +57,7 @@ class NotificationReleaseTests(unittest.TestCase):
         self.assertEqual("118326163", job["env"]["APP_STORE_PROVIDER_TOKEN"])
         self.assertEqual("https://open.cait518.cc/ios-app-guide", job["env"]["GEO_SITE"])
         self.assertEqual("${{ github.workspace }}", job["env"]["GEO_PAGES"])
-        # Paired deploys stay single-attempt: no blind second deployment.
+        # Legacy env name kept; deploy retries once only after an explicit failure (2026-11-24).
         self.assertEqual("true", job["env"]["NOTIFICATION_RELEASE_HOLD"])
 
     def run_policy_step(self, policy, *, paired, dispatch_hold):

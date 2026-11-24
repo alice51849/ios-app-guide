@@ -22367,16 +22367,13 @@ class GeneratorTests(unittest.TestCase):
         # registry this copy runs against has it.
         if "duowallpaperstudio" in APPS:
             free_with_unlock.add("duowallpaperstudio")
-        # Metro Time Helper: free on iPhone since 2026-11-24 (iTunes lookup
-        # us/tw/jp price 0; description "No subscription, no in-app
-        # purchases") while the Google Play edition stays a paid download
-        # (CLAUDE 1.8). The two platforms differ, so the registry records it
-        # as neutral ("check current listing") and the verified type is free,
-        # not subscription. Expected only once the registry this copy runs
-        # against has it.
-        neutral_free = set()
+        # Metro Time Helper: paid download since 1.1.1 (2026-11-10; iTunes
+        # lookup 2026-11-15 USD 2.99 / TWD 90) whose en-US description says
+        # "Buy once, everything included" and "No subscription, no in-app
+        # purchases"; the 2026-11-04 24-hour trial record is void. Expected
+        # only once the registry this copy runs against has it.
         if "metrotimehelper" in APPS:
-            neutral_free.add("metrotimehelper")
+            paid_upfront.add("metrotimehelper")
         # TripBee Cute: free download (store price 0) whose en-US description
         # unlocks unlimited booklets and more "with a one-time in-app purchase
         # (Cute Pass)", with no subscription wording. Expected only once the
@@ -22404,14 +22401,7 @@ class GeneratorTests(unittest.TestCase):
         neutral = set()
         if "kumo" in APPS:
             neutral.add("kumo")
-        self.assertEqual(
-            paid_upfront | free_with_unlock | neutral | neutral_free, set(APPS)
-        )
-        for key in neutral_free:
-            self.assertEqual("neutral", APPS[key]["purchase_model"])
-            self.assertEqual(
-                purchase_types.FREE, purchase_types.purchase_type(key)
-            )
+        self.assertEqual(paid_upfront | free_with_unlock | neutral, set(APPS))
         for key in neutral:
             self.assertEqual("neutral", APPS[key]["purchase_model"])
             self.assertEqual(

@@ -50,14 +50,17 @@ def _state():
         module = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(module)
         apps, _rejected, error = module.load()
-        lines = json.loads((root / "aso" / "duo" / "claim_lines.json").read_text(encoding="utf-8")).get("social_line")
+        claims = json.loads((root / "aso" / "duo" / "claim_lines.json").read_text(encoding="utf-8"))
+        lines = claims.get("social_line")
         review = json.loads((root / "aso" / "duo" / "review_second_model.json").read_text(encoding="utf-8"))
     except Exception:  # noqa: BLE001 - 讀不了就不宣稱
         return {}, {}, {}
     if error or not isinstance(lines, dict):
         return {}, {}, {}
     passed = {}
-    for it in review.get("items") or []:
+    # claim_lines.json 頂層 status 以「暫停」開頭＝統籌暫停引用（例：11-21 第 53 項），一律不附句（已發過比對仍可用 known_lines）。
+    paused = str(claims.get("status") or "").strip().startswith("暫停")
+    for it in ([] if paused else (review.get("items") or [])):
         if not isinstance(it, dict) or (it.get("field") or it.get("kind")) != "social_line":
             continue
         loc = it.get("locale")

@@ -1,16 +1,25 @@
-"""duo_line.py（iPhone Duo 一句）的逐 byte 副本核對＋行為。正本在 00_GrowthEngine aso/duo/（sync_duo_copies.py 複製）。"""
+"""duo_line.py（iPhone Duo 一句）的逐 byte 副本核對＋行為。正本在 00_GrowthEngine aso/duo/（sync_duo_copies.py 複製）。
+
+11-24 改：正本 duo_line 加閘——claim_lines.json 頂層 status 以「暫停」開頭（11-21 統籌第 53 項）就一律不附句。
+真實副本資料的測試改成「依副本狀態」斷言；附句規則（live／非 live／不在清單／無語系／超長）改用暫存目錄假資料照舊驗。
+"""
 import hashlib
 import json
 import os
+import shutil
 import sys
+import tempfile
 import unittest
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 REPO = Path(__file__).resolve().parents[2]
 RECORD = REPO / "_engine/aso/duo/duo_copies.json"
+CLAIMS = REPO / "_engine/aso/duo/claim_lines.json"
 sys.path.insert(0, str(HERE))
 import duo_line as D  # noqa: E402
+
+EN = "Got an iPhone Duo? The app now fills the whole inner screen, folded or open."
 
 
 def sha(path):
@@ -24,6 +33,33 @@ def source_root():
         if (root / "aso" / "duo" / "duo_line.py").is_file():
             return root
     return None
+
+
+def copied_paused():
+    doc = json.loads(CLAIMS.read_text(encoding="utf-8"))
+    return str(doc.get("status") or "").strip().startswith("暫停")
+
+
+def fake_root(tmp, status=None):
+    """可宣稱 1 款（111111111 / alpha，線上 1.2）；en-US 句已複審 PASS。duo_list.py 用副本。"""
+    tmp = Path(tmp)
+    (tmp / "aso" / "duo").mkdir(parents=True)
+    (tmp / "ops" / "company").mkdir(parents=True)
+    (tmp / "geo").mkdir()
+    shutil.copyfile(REPO / "_engine/aso/duo/duo_list.py", tmp / "aso" / "duo" / "duo_list.py")
+    (tmp / "geo" / "live_app_manifest.json").write_text(json.dumps({"apps": {
+        "alpha": {"app_id": "111111111", "name": "Alpha"}}}))
+    (tmp / "ops" / "company" / "duo_verified.json").write_text(json.dumps({
+        "verified": [{"key": "A", "asc_app_id": "111111111", "verdict": "pass", "pass_version": "1.2",
+                      "pass_build": "5", "live_version": "1.2", "live_build": "5", "via": "direct"}],
+        "needs_duo_run": [], "not_live": []}))
+    claims = {"social_line": {"en-US": EN}}
+    if status is not None:
+        claims["status"] = status
+    (tmp / "aso" / "duo" / "claim_lines.json").write_text(json.dumps(claims))
+    (tmp / "aso" / "duo" / "review_second_model.json").write_text(json.dumps({"items": [
+        {"field": "social_line", "locale": "en-US", "verdict": "PASS"}]}))
+    return tmp
 
 
 class DuoCopyTest(unittest.TestCase):
@@ -45,23 +81,54 @@ class DuoCopyTest(unittest.TestCase):
     def test_reads_the_copied_list_and_lines(self):
         os.environ.pop("DUO_DATA_ROOT", None)
         D.reset()
-        by, _all, lines = D._state()
+        by, all_lines, lines = D._state()
         self.assertGreater(len({a["app_id"] for a in by.values()}), 0)
-        self.assertIn("en-US", lines)
+        self.assertIn("en-US", all_lines)          # 已發過比對用的全部句子照常讀得到
+        if copied_paused():
+            self.assertEqual(lines, {})            # 暫停引用中：可附的句表為空
+            for app in list(by.values())[:5]:
+                self.assertEqual(D.line(app["app_id"], "en-US", lambda _id, v=app["live_version"]: v), "")
+        else:
+            self.assertIn("en-US", lines)
+            app = next(iter(by.values()))       # 非暫停：真實副本照原測試驗一次會附句
+            self.assertEqual(D.line(app["app_id"], "en-US", lambda _id: app["live_version"]), lines["en-US"])
+
+
+class DuoLineRulesTest(unittest.TestCase):
+    def setUp(self):
+        self.tmp = tempfile.mkdtemp()
+        self.old = os.environ.get("DUO_DATA_ROOT")
+
+    def tearDown(self):
+        if self.old is None:
+            os.environ.pop("DUO_DATA_ROOT", None)
+        else:
+            os.environ["DUO_DATA_ROOT"] = self.old
+        D.reset()
+        shutil.rmtree(self.tmp, ignore_errors=True)
+
+    def use(self, status=None):
+        os.environ["DUO_DATA_ROOT"] = str(fake_root(Path(self.tmp) / "r", status))
+        D.reset()
 
     def test_line_rules(self):
-        D.reset()
-        by, _all, lines = D._state()
-        app = next(iter(by.values()))
-        live = lambda _id: app["live_version"]
-        self.assertEqual(D.line(app["app_id"], "en-US", live), lines["en-US"])
-        self.assertEqual(D.line(app["app_id"], "en-US", lambda _id: "0.0.0-not-live"), "")
-        self.assertEqual(D.line("1", "en-US", live), "")                  # 不在清單
-        self.assertEqual(D.line(app["app_id"], "sw", live), "")           # 沒有句子
-        body = "x" * (500 - len(lines["en-US"]) - 1)
-        self.assertEqual(D.append(body, app["app_id"], "en-US", 500, lookup=live), body)   # 超長不加
-        self.assertEqual(D.append("Hi", app["app_id"], "en-US", 500, lookup=live), "Hi\n\n" + lines["en-US"])
+        self.use()
+        live = lambda _id: "1.2"
+        self.assertEqual(D.line("111111111", "en-US", live), EN)
+        self.assertEqual(D.line("111111111", "en-US", lambda _id: "0.0.0-not-live"), "")   # 線上版本對不上
+        self.assertEqual(D.line("1", "en-US", live), "")                                  # 不在清單
+        self.assertEqual(D.line("111111111", "sw", live), "")                             # 沒有句子
+        body = "x" * (500 - len(EN) - 1)
+        self.assertEqual(D.append(body, "111111111", "en-US", 500, lookup=live), body)    # 超長不加
+        self.assertEqual(D.append("Hi", "111111111", "en-US", 500, lookup=live), "Hi\n\n" + EN)
 
+    def test_paused_status_claims_nothing(self):
+        self.use(status="暫停引用（測試）：實機驗證前不引用")
+        live = lambda _id: "1.2"
+        self.assertEqual(D._state()[2], {})
+        self.assertEqual(D.line("111111111", "en-US", live), "")
+        self.assertEqual(D.append("Hi", "111111111", "en-US", 500, lookup=live), "Hi")
+        self.assertIn(EN, D.known_lines("en-US"))
 
 
 os.environ.setdefault("POST_QA_OFFLINE", "1")

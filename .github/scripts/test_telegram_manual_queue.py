@@ -25,6 +25,7 @@ import social_post_common as common
 import telegram_post
 
 JELLYDAY = "6835673714"   # iOS still in review: no social post before its public page answers 200
+METRO = "6819061896"   # iOS went free 2026-11-24 while rotation copy still says paid: held until re-sealed
 SNAPPORT_APPS = {"6780575828", "6792856304"}
 CLAIM_NEEDS_PAGE = "is not on the product page"   # read from the live page at send time, not offline
 
@@ -75,6 +76,14 @@ class ShippedManualQueueTests(unittest.TestCase):
         self.assertFalse([item for item in self.items if item["app"] == JELLYDAY])
         self.assertFalse([row for row in self.data["posts"] if str(row.get("app")) == JELLYDAY])
         self.assertFalse([item for item in self.items if "jellyday" in item["text"].lower()])
+
+    def test_metro_is_held_even_when_the_hold_file_is_unreadable(self):
+        # Metro Time Helper copy still says paid / buy once while iOS is free: held from the rotation and the
+        # manual queue, and an unreadable hold file still holds it (fail closed); other Apps are not held by it.
+        self.assertIn(METRO, self.data["hold_apps"])
+        self.assertIn(METRO, telegram_post.held_apps())
+        self.assertIn(METRO, telegram_post.UNREADABLE_HOLD_FALLBACK)
+        self.assertEqual({JELLYDAY, METRO}, set(telegram_post.UNREADABLE_HOLD_FALLBACK))
 
     def test_snapport_rows_name_no_removed_feature(self):
         for item in self.items:

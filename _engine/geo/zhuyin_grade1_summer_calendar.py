@@ -1051,8 +1051,8 @@ COPY = {
     "app_text": (
       "The complete calendar works with paper, official references and an authorized "
       "book. If a family wants guided listening, tracing, tone or blending practice, "
-      "Lumi Bopomofo covers all 37 symbols. It uses a one-time unlock with no "
-      "ads, subscription or account."
+      "Lumi Bopomofo covers all 37 symbols. It is free to download with a one-time "
+      "unlock (an in-app purchase), no ads and no account."
     ),
     "app_cta": "Try Lumi Bopomofo",
     "related": "Related free resources",
@@ -1143,7 +1143,7 @@ COPY = {
     "reuse": "自由使用原創日曆",
     "reuse_text": "家庭、圖書館與海外中文學校可依 CC BY 4.0 列印或改編本原創日曆；請標註 iOS App Guide 並連回本頁。此授權不涵蓋教育部資料、書籍或其他外部來源。",
     "app_title": "選定活動中的選用練習",
-    "app_text": "只用紙張、官方參考與合法取得的書，就能完整使用日曆。家庭若想在某一天加入有引導的聽音、描寫、聲調或拼讀練習，Lumi 注音星球涵蓋全部 37 個符號；採一次性一次購買解鎖，無廣告、免訂閱、免帳號。",
+    "app_text": "只用紙張、官方參考與合法取得的書，就能完整使用日曆。家庭若想在某一天加入有引導的聽音、描寫、聲調或拼讀練習，Lumi 注音星球涵蓋全部 37 個符號；免費下載，以一次性 App 內購買解鎖，無廣告、免帳號。",
     "app_cta": "試用 Lumi 注音星球",
     "related": "相關免費資源",
     "faq": "家長常見問題",
@@ -1215,7 +1215,7 @@ COPY = {
     "reuse": "自由使用原创日历",
     "reuse_text": "家庭、图书馆与海外中文学校可依 CC BY 4.0 打印或改编本原创日历；请标注 iOS App Guide 并连回本页。此授权不涵盖教育部资料、书籍或其他外部来源。",
     "app_title": "选定活动中的选用练习",
-    "app_text": "只用纸张、官方参考与合法取得的书，就能完整使用日历。家庭若想在某一天加入有引导的听音、描写、声调或拼读练习，Lumi 注音星球涵盖全部 37 个符号；采一次性解锁，无广告、免订阅、免账号。",
+    "app_text": "只用纸张、官方参考与合法取得的书，就能完整使用日历。家庭若想在某一天加入有引导的听音、描写、声调或拼读练习，Lumi 注音星球涵盖全部 37 个符号；免费下载，以一次性 App 内购买解锁，无广告、免账号。",
     "app_cta": "试用 Lumi 注音星球",
     "related": "相关免费资源",
     "faq": "家长常见问题",
@@ -1287,7 +1287,7 @@ COPY = {
     "reuse": "この独自カレンダーを自由に活用する",
     "reuse_text": "ご家庭、図書館、継承語学校は、iOS App Guideのクレジット表記とこのページへのリンクを添えることで、CC BY 4.0のもとにこの独自カレンダーを印刷・改変できます。このライセンスは教育部の資料、書籍、その他の外部情報源には適用されません。",
     "app_title": "選んだ1日の中での任意の練習",
-    "app_text": "紙、公式参考資料、正規に入手した本があれば、このカレンダーは完結します。ある1日にガイド付きの聞き取り・なぞり書き・声調・拼読練習を加えたいご家庭には、Lumi Bopomofoが全37符号をカバーします。買い切り型のアンロックで、広告・サブスクリプション・アカウントは不要です。",
+    "app_text": "紙、公式参考資料、正規に入手した本があれば、このカレンダーは完結します。ある1日にガイド付きの聞き取り・なぞり書き・声調・拼読練習を加えたいご家庭には、Lumi Bopomofoが全37符号をカバーします。無料でダウンロードでき、アプリ内の1回限りの購入で解放されます。広告やアカウントは不要です。",
     "app_cta": "Lumi Bopomofoを試す",
     "related": "関連する無料リソース",
     "faq": "保護者向けFAQ",
@@ -1360,7 +1360,7 @@ COPY = {
     "reuse": "독창적인 달력 자유롭게 활용하기",
     "reuse_text": "가정, 도서관, 교포 학교는 iOS App Guide를 출처로 표기하고 이 페이지로 링크를 걸면 CC BY 4.0에 따라 이 독창적인 달력을 인쇄하거나 각색할 수 있습니다. 이 라이선스는 교육부 자료, 도서 또는 기타 외부 출처에는 적용되지 않습니다.",
     "app_title": "선택한 하루 안에서의 선택적 연습",
-    "app_text": "종이, 공식 참고 자료, 정식으로 구한 책만으로 이 달력을 완전히 사용할 수 있습니다. 어느 하루에 안내가 있는 듣기, 따라 쓰기, 성조, 결합 연습을 더하고 싶은 가정을 위해 Lumi Bopomofo는 37개 기호를 모두 다룹니다. 일회성 한 번 구매 잠금 해제 방식이며 광고, 구독, 계정이 필요 없습니다.",
+    "app_text": "종이, 공식 참고 자료, 정식으로 구한 책만으로 이 달력을 완전히 사용할 수 있습니다. 어느 하루에 안내가 있는 듣기, 따라 쓰기, 성조, 결합 연습을 더하고 싶은 가정을 위해 Lumi Bopomofo는 37개 기호를 모두 다룹니다. 무료로 다운로드할 수 있고 앱 내 일회성 구매로 잠금 해제되며, 광고와 계정이 필요 없습니다.",
     "app_cta": "Lumi Bopomofo 사용해 보기",
     "related": "관련 무료 자료",
     "faq": "학부모 자주 묻는 질문",
@@ -1433,7 +1433,7 @@ COPY = {
     "reuse": "Reutiliza el calendario original",
     "reuse_text": "Las familias, bibliotecas y escuelas de herencia cultural pueden imprimir o adaptar este calendario original bajo CC BY 4.0 con crédito a iOS App Guide y un enlace a esta página. La licencia no cubre los materiales del Ministerio, libros u otras fuentes externas.",
     "app_title": "Práctica opcional dentro de un día elegido",
-    "app_text": "El calendario completo funciona con papel, referencias oficiales y un libro autorizado. Si una familia quiere práctica guiada de escucha, trazado, tonos o combinación, Lumi Bopomofo cubre los 37 símbolos. Usa un desbloqueo único, sin anuncios, suscripción ni cuenta.",
+    "app_text": "El calendario completo funciona con papel, referencias oficiales y un libro autorizado. Si una familia quiere práctica guiada de escucha, trazado, tonos o combinación, Lumi Bopomofo cubre los 37 símbolos. Se descarga gratis y se desbloquea con una compra única dentro de la app, sin anuncios ni cuenta.",
     "app_cta": "Probar Lumi Bopomofo",
     "related": "Recursos gratuitos relacionados",
     "faq": "Preguntas frecuentes de padres",
@@ -1507,7 +1507,7 @@ COPY = {
     "reuse": "Reutilize o calendário original",
     "reuse_text": "Famílias, bibliotecas e escolas de herança podem imprimir ou adaptar este calendário original sob a CC BY 4.0, com crédito ao iOS App Guide e um link para esta página. A licença não cobre materiais do Ministério, livros ou outras fontes externas.",
     "app_title": "Prática opcional dentro de um dia escolhido",
-    "app_text": "O calendário completo funciona com papel, referências oficiais e um livro autorizado. Se uma família quiser prática guiada de escuta, traçado, tom ou combinação, o Lumi Bopomofo cobre todos os 37 símbolos. Ele usa um desbloqueio único, sem anúncios, assinatura ou conta.",
+    "app_text": "O calendário completo funciona com papel, referências oficiais e um livro autorizado. Se uma família quiser prática guiada de escuta, traçado, tom ou combinação, o Lumi Bopomofo cobre todos os 37 símbolos. O download é gratuito e o desbloqueio é uma compra única dentro do app, sem anúncios nem conta.",
     "app_cta": "Experimentar o Lumi Bopomofo",
     "related": "Recursos gratuitos relacionados",
     "faq": "Perguntas frequentes dos pais",
@@ -1581,7 +1581,7 @@ COPY = {
     "reuse": "Den originalen Kalender wiederverwenden",
     "reuse_text": "Familien, Bibliotheken und Herkunftssprachschulen dürfen diesen originalen Kalender unter CC BY 4.0 mit Nennung von iOS App Guide und einem Link zu dieser Seite drucken oder anpassen. Die Lizenz deckt keine Materialien des Ministeriums, Bücher oder andere externe Quellen ab.",
     "app_title": "Optionale Übung innerhalb eines gewählten Tages",
-    "app_text": "Der vollständige Kalender funktioniert mit Papier, offiziellen Referenzen und einem autorisierten Buch. Wenn eine Familie geführtes Hören, Nachzeichnen, Ton- oder Verbindungsübungen möchte, deckt Lumi Bopomofo alle 37 Zeichen ab. Es nutzt eine einmalige Freischaltung ohne Werbung, Abonnement oder Konto.",
+    "app_text": "Der vollständige Kalender funktioniert mit Papier, offiziellen Referenzen und einem autorisierten Buch. Wenn eine Familie geführtes Hören, Nachzeichnen, Ton- oder Verbindungsübungen möchte, deckt Lumi Bopomofo alle 37 Zeichen ab. Der Download ist kostenlos, freigeschaltet wird per einmaligem In-App-Kauf, ohne Werbung und ohne Konto.",
     "app_cta": "Lumi Bopomofo ausprobieren",
     "related": "Verwandte kostenlose Ressourcen",
     "faq": "FAQ für Eltern",
@@ -1656,7 +1656,7 @@ COPY = {
     "reuse": "Réutiliser le calendrier original",
     "reuse_text": "Les familles, bibliothèques et écoles de langue d'origine peuvent imprimer ou adapter ce calendrier original sous licence CC BY 4.0 avec mention d'iOS App Guide et un lien vers cette page. La licence ne couvre pas les documents du ministère, les livres ou d'autres sources externes.",
     "app_title": "Pratique optionnelle au sein d'un jour choisi",
-    "app_text": "Le calendrier complet fonctionne avec du papier, des références officielles et un livre autorisé. Si une famille souhaite une pratique guidée d'écoute, de traçage, de tons ou d'assemblage, Lumi Bopomofo couvre les 37 symboles. Il utilise un déverrouillage en achat unique, sans publicité, abonnement ni compte.",
+    "app_text": "Le calendrier complet fonctionne avec du papier, des références officielles et un livre autorisé. Si une famille souhaite une pratique guidée d'écoute, de traçage, de tons ou d'assemblage, Lumi Bopomofo couvre les 37 symboles. Il est gratuit à télécharger et se débloque par un achat intégré unique, sans publicité ni compte.",
     "app_cta": "Essayer Lumi Bopomofo",
     "related": "Ressources gratuites associées",
     "faq": "FAQ pour les parents",

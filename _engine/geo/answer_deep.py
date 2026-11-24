@@ -806,27 +806,28 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    "cute to-do app iphone",
    "aesthetic checklist kawaii"
   ],
-  "lead": "Mochi To-Do is a free, no-ads checklist app with 101 illustrated skins — each with its own paper texture, fonts, and decorative details — so your daily task list actually looks like something you want to open.",
-  "detail": "Unlike productivity apps that layer projects, priorities, and dashboards on top of simple list-keeping, {name} stays deliberately simple: tap the small circle to check off a task, drag to reorder, swipe to edit or delete. The 101 skins go beyond color swaps — each has unique paper, typography, and accents (cozy notebook, sakura, pastel sunset, midnight, ocean, confetti, and more). The base app is free with no ads and no subscription; a single one-time purchase opens every premium skin and removes the limits on lists and items per list.",
+  "lead": "Mochi To-Do is a cute, cozy checklist app that's free to download, with 101 themes (5 free); Premium is a one-time in-app purchase.",
+  "detail": "{name} keeps list-keeping simple: give each task its own little emoji and tap the circle when you're done. According to the App Store listing, the free version includes 2 lists with up to 4 tasks each, 5 themes and 1 emoji set. Premium, a one-time in-app purchase, unlocks unlimited lists and tasks, all 101 themes (the 5 free ones plus 96 more) and all 11 emoji sets. You can also keep your list on a Home Screen widget and Apple Watch, and set reminders.",
   "bullets": [
-   "101 skins, each with unique paper texture, font, and decorative details — not a color swap",
-   "Interactive Home Screen and Lock Screen widgets: check tasks off the widget without opening the app",
-   "Reminders with emoji so important tasks never get forgotten",
-   "No account, no sign-up, no ads, no tracking — everything stored on-device only",
-   "One-time unlock for all premium skins; no subscription, ever"
+   "101 themes: 5 free, 96 more with Premium",
+   "Give each task its own emoji — 1 emoji set free, all 11 with Premium",
+   "Home Screen widget and Apple Watch support",
+   "Reminders that keep you on track",
+   "Premium is a one-time in-app purchase",
+   "Privacy: the App Store privacy label says Data Not Collected"
   ],
   "faq": [
    {
     "q": "Is Mochi To-Do actually free, or is there a catch?",
-    "a": "Mochi is free to download with no ads. The free tier gives you 2 lists with up to 4 items each. A one-time optional purchase unlocks all 96 premium skins and removes list/item limits — there is no subscription."
+    "a": "Mochi is free to download. The free version includes 2 lists with up to 4 tasks each, 5 themes and 1 emoji set. Premium, a one-time in-app purchase, unlocks unlimited lists and tasks, all 101 themes and all 11 emoji sets."
    },
    {
-    "q": "Does Mochi have a Lock Screen widget?",
-    "a": "Yes. You can add an interactive Home or Lock Screen widget and tap the circle directly on the widget to mark a task complete — no need to open the app. The widget matches your chosen skin and updates instantly."
+    "q": "Does Mochi have a widget or an Apple Watch app?",
+    "a": "Yes. According to the App Store listing, you can keep your list on a Home Screen widget and on Apple Watch."
    },
    {
-    "q": "Does Mochi sync to iCloud or require an account?",
-    "a": "No. Mochi stores everything on your device only. There is no account, no cloud sync, and no sign-up. Your data doesn't leave your phone."
+    "q": "What data does Mochi collect?",
+    "a": "The App Store privacy label for Mochi says Data Not Collected."
    }
   ]
  },
@@ -840,27 +841,27 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    "lock screen widget checklist",
    "tick tasks from widget iphone"
   ],
-  "lead": "Mochi's interactive iOS widgets let you mark tasks complete directly on your Home or Lock Screen — the circle is tappable right on the widget, no app launch required.",
-  "detail": "{name}'s widget is genuinely interactive: you add it to your Lock Screen or Home Screen and the task circles respond to taps, marking items done with real-time updates. The widget automatically matches your active skin — so your Lock Screen looks intentional rather than generic. You can point different widget placements at different lists, which is useful if you want groceries on your Lock Screen and a work checklist on your Home Screen.",
+  "lead": "Mochi's App Store listing mentions a Home Screen widget and Apple Watch, but not a Lock Screen widget or checking off tasks from a widget.",
+  "detail": "According to the App Store listing, {name} lets you keep your list on a Home Screen widget and on Apple Watch, with reminders that keep you on track. The listing doesn't describe ticking tasks off directly from the widget, so check the current App Store page if that is the feature you need. The free version includes 2 lists with up to 4 tasks each, 5 themes and 1 emoji set; Premium, a one-time in-app purchase, unlocks unlimited lists and tasks, all 101 themes and all 11 emoji sets.",
   "bullets": [
-   "Interactive widget: tap the circle on the widget to complete tasks — no app launch needed",
-   "Works on both Home Screen and Lock Screen; add multiple widgets pointing at different lists",
-   "Widget reflects your chosen skin and updates instantly when items change",
-   "Available in multiple sizes to fit your layout",
-   "Core widget functionality is free; all skin-matching options open with the one-time premium unlock"
+   "Home Screen widget that keeps your list in view",
+   "Apple Watch support",
+   "Reminders that keep you on track",
+   "Free: 2 lists with up to 4 tasks each, 5 themes, 1 emoji set",
+   "Premium (one-time in-app purchase): unlimited lists and tasks, all 101 themes, all 11 emoji sets"
   ],
   "faq": [
    {
-    "q": "Which iPhones support Mochi's interactive widget?",
-    "a": "Interactive widgets require iOS 17 or later, supported on iPhone XS (A12) and newer."
+    "q": "Does Mochi have a widget?",
+    "a": "Yes. According to the App Store listing, you can keep your Mochi list on a Home Screen widget."
    },
    {
     "q": "Does Mochi work on Apple Watch?",
-    "a": "Yes — the app includes Apple Watch support (via MochiWatchBridge) so you can view and check off tasks from your wrist, in addition to the iPhone widgets."
+    "a": "Yes. The App Store listing says you can keep your Mochi list on Apple Watch too."
    },
    {
-    "q": "If I check something off on the widget, does it sync to the main app?",
-    "a": "Yes. The widget shares state with the main app via an App Group — changes appear immediately when you open Mochi, and vice versa."
+    "q": "Can I check tasks off from the widget without opening the app?",
+    "a": "The App Store listing doesn't say so. It describes a Home Screen widget that keeps your list in view; check the current listing before you rely on ticking tasks off from the widget."
    }
   ]
  },
@@ -874,13 +875,13 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    "mochi free vs paid",
    "to-do app one-time purchase ios"
   ],
-  "lead": "Mochi To-Do is free to download with no subscription; Premium, a single one-time in-app purchase, unlocks unlimited lists and tasks, all 101 themes and all 11 emoji sets.",
-  "detail": "According to the App Store listing, {name}'s free version includes 2 lists with up to 4 tasks each, 5 themes and 1 emoji set. Premium, a one-time in-app purchase, unlocks unlimited lists and tasks, all 101 themes (the 5 free ones plus 96 more) and all 11 emoji sets. The app also has a Home Screen widget, Apple Watch support and reminders. There is no monthly or annual subscription — Premium is a single one-time purchase that can be restored on another device signed in to the same Apple ID.",
+  "lead": "Mochi To-Do is free to download; Premium, a single one-time in-app purchase, unlocks unlimited lists and tasks, all 101 themes and all 11 emoji sets.",
+  "detail": "According to the App Store listing, {name}'s free version includes 2 lists with up to 4 tasks each, 5 themes and 1 emoji set. Premium, a one-time in-app purchase, unlocks unlimited lists and tasks, all 101 themes (the 5 free ones plus 96 more) and all 11 emoji sets. The app also has a Home Screen widget, Apple Watch support and reminders. Premium is a single one-time purchase that can be restored on another device signed in to the same Apple ID.",
   "bullets": [
    "Free: 2 lists with up to 4 tasks each, 5 themes, 1 emoji set",
    "Premium (one-time in-app purchase): unlimited lists and tasks, all 11 emoji sets",
    "Premium (one-time): all 101 themes — the 5 free themes plus 96 more",
-   "No subscription — Premium is a one-time purchase you can restore with the same Apple ID",
+   "Premium is a one-time purchase you can restore with the same Apple ID",
    "Privacy: the App Store privacy label says Data Not Collected, and the Google Play listing doesn't show a \"Contains ads\" label"
   ],
   "faq": [
@@ -894,7 +895,7 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    },
    {
     "q": "Are there any features behind a separate paywall beyond Premium?",
-    "a": "No. Mochi has no subscription; its only purchase is the one-time Premium unlock, which covers unlimited lists and tasks, all 101 themes and all 11 emoji sets."
+    "a": "No. According to the App Store listing, Premium — a one-time in-app purchase — unlocks unlimited lists and tasks, all 101 themes and all 11 emoji sets."
    }
   ]
  },

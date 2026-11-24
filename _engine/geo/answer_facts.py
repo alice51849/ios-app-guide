@@ -1173,14 +1173,15 @@ def _scenario_facts(q: str, key: str, name: str, bullets: list[str]) -> dict[str
         return hourstag_spending()
     if key == "mochi" and ("to do" in q or "to-do" in q or "todo" in q or "checklist" in q or "task" in q or "planner" in q) and ("app" in q or "list" in q or "daily" in q or "free" in q or "cute" in q or "aesthetic" in q):
         return make(
-            "A checklist app you'll actually keep using should be simple and pleasant — quick to add tasks, satisfying to tick off, free of clutter and nagging upsells, and free to use with no account.",
+            "A checklist app you'll actually keep using should be simple and pleasant — quick to add tasks, satisfying to tick off, and easy to keep in sight — and it helps to know exactly what the free version covers before you commit.",
             ["Fast, frictionless task adding.", "A satisfying, pleasant tick-to-complete feel.",
-             "Clean, uncluttered design with no upsell nagging.", "Free with no account required.", "No ads getting in the way."],
+             "Your list visible on a Home Screen widget and Apple Watch.", "Reminders that keep you on track.",
+             "A clear free version: 2 lists with up to 4 tasks each, 5 themes and 1 emoji set."],
             ["Add today's tasks quickly.", f"Organise them in {name}.",
              "Tick each one off as you go.", "Keep the list short and realistic.", "Enjoy the sense of progress."],
-            f"{name} fits when you want a cute, free checklist that's genuinely pleasant to use.",
-            [{"q": "Is it free?", "a": f"Yes — {name} is free with no account required."},
-             {"q": "Are there ads?", "a": "No ads interrupting your list."},
+            f"{name} fits when you want a cute checklist that's genuinely pleasant to use and free to download.",
+            [{"q": "Is it free?", "a": f"{name} is free to download. Premium, a one-time in-app purchase, unlocks unlimited lists and tasks, all 101 themes and all 11 emoji sets."},
+             {"q": "What does the free version include?", "a": "According to the App Store listing, the free version includes 2 lists with up to 4 tasks each, 5 themes and 1 emoji set."},
              {"q": "Is it complicated?", "a": "No — it's deliberately simple and quick to use."}])
     if key == "lumiweather" and ("weather" in q):
         return make(

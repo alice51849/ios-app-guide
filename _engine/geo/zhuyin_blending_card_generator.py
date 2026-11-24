@@ -345,8 +345,8 @@ COPY = {
     "app_title": "Want guided audio after the paper activity?",
     "app_text": (
       "Lumi Bopomofo is an optional next step with guided listening, tracing, "
-      "tones and syllable-blending games. It uses a one-time unlock "
-      "with no ads, subscription or account."
+      "tones and syllable-blending games. It is free to download with a one-time "
+      "unlock (an in-app purchase), no ads and no account."
     ),
     "app_cta": "See Lumi Bopomofo on the App Store",
     "sources": "Sources and scope",
@@ -463,7 +463,7 @@ COPY = {
     "app_title": "紙卡之後想要有引導音檔？",
     "app_text": (
       "Lumi 注音星球是選配的下一步，提供聽音、描寫、聲調與拼讀遊戲。"
-      "一次付費一次購買解鎖，無廣告、無訂閱、免帳號。"
+      "免費下載，以一次性 App 內購買解鎖，無廣告、免帳號。"
     ),
     "app_cta": "前往 App Store 查看 Lumi 注音星球",
     "sources": "資料來源與適用範圍",
@@ -985,7 +985,7 @@ COPY = {
     "app_title": "紙の活動後に音声ガイドも使いますか？",
     "app_text": (
       "Lumi Bopomofo は、聞き取り・なぞり・声調・音節結合ゲームを含む任意の次の段階です。"
-      "買い切りのロック解除で、広告・サブスクリプション・アカウントはありません。"
+      "無料でダウンロードでき、アプリ内の1回限りの購入ですべて解放されます。広告やアカウントはありません。"
     ),
     "app_cta": "App Store で Lumi Bopomofo を見る",
     "sources": "出典と範囲",
@@ -1083,7 +1083,7 @@ COPY = {
     "app_title": "종이 활동 뒤 안내 음성을 사용하고 싶나요?",
     "app_text": (
       "Lumi Bopomofo는 듣기, 따라 쓰기, 성조, 음절 결합 게임을 제공하는 선택 단계입니다. "
-      "일회성 잠금 해제이며 광고, 구독, 계정이 없습니다."
+      "무료로 다운로드할 수 있고 앱 내 일회성 구매로 모두 잠금 해제되며, 광고와 계정이 없습니다."
     ),
     "app_cta": "App Store에서 Lumi Bopomofo 보기",
     "sources": "출처와 범위",
@@ -1181,7 +1181,7 @@ COPY = {
     "app_title": "纸卡之后想要引导音频？",
     "app_text": (
       "Lumi 注音星球是选用的下一步，提供听音、描写、声调与拼读游戏。"
-      "一次付费解锁，无广告、无订阅、免账号。"
+      "免费下载，以一次性 App 内购买解锁，无广告、免账号。"
     ),
     "app_cta": "前往 App Store 查看 Lumi 注音星球",
     "sources": "资料来源与范围",

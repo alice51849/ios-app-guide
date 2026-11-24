@@ -2,7 +2,7 @@
 title: "JellyDay: ডেইলি প্ল্যানার — কিউট রুটিন, সময়সূচি ও টাইমার | iOS App"
 lang: "bn-BD"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/jellyday/decision/l/bn-BD/index.html"
-modified: "2026-11-23"
+modified: "2026-11-24"
 app_store_id: "6835673714"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

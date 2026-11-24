@@ -2,7 +2,7 @@
 title: "JellyDay: แพลนเนอร์รายวัน — ตารางเวลาน่ารัก วางแผนกิจวัตร | iOS App"
 lang: "th"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/jellyday/decision/l/th/index.html"
-modified: "2026-11-23"
+modified: "2026-11-24"
 app_store_id: "6835673714"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

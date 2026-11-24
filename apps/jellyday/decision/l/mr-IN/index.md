@@ -2,7 +2,7 @@
 title: "JellyDay: डेली प्लानर — दिनचर्या, वेळापत्रक आणि टाइमर | iOS App"
 lang: "mr-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/jellyday/decision/l/mr-IN/index.html"
-modified: "2026-11-23"
+modified: "2026-11-24"
 app_store_id: "6835673714"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

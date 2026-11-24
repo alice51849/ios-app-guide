@@ -2,7 +2,7 @@
 title: "JellyDay: ವಿಜುವಲ್ ಡೈಲಿ ಪ್ಲಾನರ್ — ಮುದ್ದಾದ ದಿನಚರಿ & ವೇಳಾಪಟ್ಟಿ | iOS App"
 lang: "kn-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/jellyday/decision/l/kn-IN/index.html"
-modified: "2026-11-23"
+modified: "2026-11-24"
 app_store_id: "6835673714"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

@@ -1038,17 +1038,17 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             "query": "best white noise app for falling asleep no subscription",
             "triggers": ["falling asleep", "for insomnia", "for sleep problems", "sleep sounds", "help me sleep", "trouble sleeping"],
             "persona": "people with sleep trouble",
-            "lead": "For sleep, a subscription that nags you every month is the opposite of restful. A pay-once app with hand-curated scenes and a sleep timer just plays and lets you drift off.",
+            "lead": "For sleep, an app that keeps upselling you is the opposite of restful. A free-to-start app with hand-curated scenes and a sleep timer just plays and lets you drift off.",
             "paras": [
-                "Choose from curated sleep scenes — brown noise, rain-on-roof, ocean, cozy cabin, thunder lullaby — and mix per-layer volumes to taste, then set a sleep timer so it fades out on its own. Pay once and it plays indefinitely.",
-                "No subscription, no login: it's designed to disappear into the background and help you sleep, not to upsell you.",
+                "Start from curated scenes such as Rainy Night and Deep Sleep, or layer brown noise, rain and ocean yourself, and mix per-layer volumes to taste, then set a sleep timer so it fades out on its own. It is free to start, and Sereno Pro is a one-time in-app purchase.",
+                "No login: it's designed to disappear into the background and help you sleep.",
             ],
             "look": [
                 "24+ curated sleep scenes.",
                 "Per-layer volume mixing.",
                 "Sleep timer with fade-out.",
-                "Plays indefinitely — pay once.",
-                "No subscription, no login.",
+                "Free to start; Sereno Pro is a one-time in-app purchase.",
+                "No login.",
             ],
             "steps": [
                 "Pick a sleep scene (e.g. brown noise or rain).",
@@ -1057,9 +1057,9 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
                 "Let it fade as you fall asleep.",
                 "Reuse your favourite mix nightly.",
             ],
-            "fits": "fits anyone with sleep trouble who wants curated sleep sounds without a subscription.",
+            "fits": "fits anyone with sleep trouble who wants curated sleep sounds they can start free.",
             "faq": [
-                {"q": "Is it a subscription?", "a": "No — pay once and it plays indefinitely."},
+                {"q": "How is it paid for?", "a": "It is free to start; Sereno Pro is a one-time in-app purchase."},
                 {"q": "Will it turn off by itself?", "a": "Yes — set a sleep timer and it fades out on its own."},
                 {"q": "Can I customise the sound?", "a": "Yes — mix per-layer volumes to build your own sleep mix."},
             ],
@@ -1071,14 +1071,14 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             "lead": "For focus with ADHD, the goal is masking auditory distraction with a steady, non-jarring soundscape — and being able to fine-tune it until it actually helps you stay in flow.",
             "paras": [
                 "A dedicated ADHD-focus scene blends brown noise, pink noise and gentle rain at calibrated levels to cover background chatter, and a custom mixer lets you dial in the exact blend that keeps you on task. Different brains need different mixes — the control is the point.",
-                "It's pay-once, so you can use it for every work session without a recurring fee.",
+                "It is free to start, and Sereno Pro is a one-time in-app purchase.",
             ],
             "look": [
                 "Dedicated ADHD-focus scene.",
                 "Brown + pink noise + gentle rain, calibrated.",
                 "Custom mixer to fine-tune the blend.",
                 "Steady, non-jarring masking sound.",
-                "Pay-once, no subscription.",
+                "Free to start; Sereno Pro is a one-time in-app purchase.",
             ],
             "steps": [
                 "Open the ADHD-focus scene.",
@@ -1091,7 +1091,7 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             "faq": [
                 {"q": "Is there a scene made for focus?", "a": "Yes — a dedicated ADHD-focus scene blends brown noise, pink noise and gentle rain."},
                 {"q": "Can I customise the blend?", "a": "Yes — a custom mixer lets you dial in the exact mix that works for you."},
-                {"q": "Subscription?", "a": "No — pay-once."},
+                {"q": "How is it paid for?", "a": "It is free to start; Sereno Pro is a one-time in-app purchase."},
             ],
         },
     ],
@@ -1384,14 +1384,14 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             "lead": "For a child first learning Zhuyin, the app should cover all 37 symbols through tracing and play — designed for the 4–7 first-learning window, ad-free, with no data collected.",
             "paras": [
                 "Stroke-tracing for each of the 37 Zhuyin symbols, a tone mini-game, and syllable-blending practice build reading foundations the way early classrooms do. Ad-free and privacy-safe matters most for this age group.",
-                "It's a pay-once kids' app, so there's no subscription and nothing collected from the child.",
+                "It is free to download, a one-time in-app purchase unlocks all 37 symbols and every level, and nothing is collected from the child.",
             ],
             "look": [
                 "All 37 Zhuyin symbols with stroke tracing.",
                 "Tone mini-game.",
                 "Syllable-blending practice.",
                 "Designed for ages 4–7.",
-                "Ad-free, no data collected, pay-once.",
+                "Ad-free, no data collected, free to download with a one-time in-app purchase.",
             ],
             "steps": [
                 "Start with stroke tracing per symbol.",
@@ -1404,7 +1404,7 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             "faq": [
                 {"q": "Does it cover all the symbols?", "a": "Yes — all 37 Zhuyin symbols, with stroke tracing, a tone game and syllable blending."},
                 {"q": "Is it safe for young kids?", "a": "Yes — ad-free with no data collected, designed for the 4–7 age range."},
-                {"q": "Subscription?", "a": "No — pay-once."},
+                {"q": "How is it paid for?", "a": "It is free to download; a one-time in-app purchase unlocks all 37 symbols and every level."},
             ],
         },
         {
@@ -1414,14 +1414,14 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             "lead": "For a bilingual or heritage family, teaching Mandarin phonics at home works best when the app mirrors how immersion classrooms introduce tones and syllable blending.",
             "paras": [
                 "A voice-guided, interactive approach to tone differentiation and syllable blending gives heritage-language families a structured supplement to home practice — the child hears and produces the tones, not just sees them.",
-                "Ad-free and pay-once, it's a safe, focused tool for regular short practice sessions at home.",
+                "Ad-free and free to download, with a one-time in-app purchase to unlock everything, it's a safe, focused tool for regular short practice sessions at home.",
             ],
             "look": [
                 "Voice-guided tone differentiation.",
                 "Syllable-blending practice.",
                 "Mirrors immersion-classroom method.",
                 "Structured supplement to home practice.",
-                "Ad-free, pay-once.",
+                "Ad-free; free to download with a one-time in-app purchase.",
             ],
             "steps": [
                 "Do short daily voice-guided sessions.",
@@ -1434,7 +1434,7 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             "faq": [
                 {"q": "Will it help with tones?", "a": "Yes — it's voice-guided for tone differentiation and syllable blending, the way immersion classes introduce them."},
                 {"q": "Is it a full curriculum?", "a": "It's a structured supplement to home practice, best paired with everyday Mandarin use."},
-                {"q": "Subscription?", "a": "No — ad-free and pay-once."},
+                {"q": "How is it paid for?", "a": "It is free to download; a one-time in-app purchase unlocks all 37 symbols and every level. It is ad-free."},
             ],
         },
         {
@@ -1452,7 +1452,7 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             "lead": "A child who already reads hiragana has won half this battle and cannot see the other half: kana taught them that a symbol stands for a sound, but it gives one symbol per syllable, while Zhuyin asks them to blend an initial, a medial and a final and then put a tone on top.",
             "paras": [
                 "That is why blending, not recognition, is where these children stall. Lumi Bopomofo works the layers separately: listening games that match a heard sound to one of the 37 symbols, finger tracing for shape and stroke order, a tone game that gives the four tones a shape a child can watch as well as hear, and a blending game that puts initial, medial and final together into a whole syllable. Rounds are short, which suits a child who has already spent the whole day in Japanese.",
-                "Two honest limits before you download. The interface is English and Chinese only — there is no Japanese interface, so an adult will be reading the menus for a young child. And practice on a screen covers the symbol-and-sound layer; it does not make a child literate in Chinese, which still comes from being read to and from reading. Lumi Bopomofo is ad-free, asks for no sign-up, collects no personal data and keeps progress on the device; it is free to start, with a one-time unlock rather than a subscription.",
+                "One honest limit before you download: practice on a screen covers the symbol-and-sound layer; it does not make a child literate in Chinese, which still comes from being read to and from reading. Lumi Bopomofo is ad-free, asks for no sign-up, collects no personal data and keeps progress on the device; it is free to start, and a one-time in-app purchase unlocks all 37 symbols and every level.",
             ],
             "look": [
                 "Blending practice, not only symbol recognition — the part kana never taught.",
@@ -1472,7 +1472,7 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             "faq": [
                 {
                     "q": "Is there a Japanese interface?",
-                    "a": "No — the interface is English and Chinese, so an adult will need to read the menus with a young child. Check the language list on the current App Store listing before downloading.",
+                    "a": "Yes — the App Store listing includes Japanese among its 44 interface languages. Check the language list on the current App Store listing before downloading.",
                 },
                 {
                     "q": "My child mixes up kana and Zhuyin symbols. Is that normal?",
@@ -1480,7 +1480,7 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
                 },
                 {
                     "q": "Does it cost anything to start?",
-                    "a": "No — it is free to start and ad-free, with a one-time in-app unlock instead of a subscription. The current App Store listing shows exactly what the free part covers.",
+                    "a": "No — it is free to start and ad-free; all 37 symbols and every level unlock with a one-time in-app purchase. The current App Store listing shows exactly what the free part covers.",
                 },
             ],
         },
@@ -1498,7 +1498,7 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             "persona": "working parents who can spare ten minutes but not ten minutes of supervision",
             "lead": "Handing a phone to a five-year-old is a risk assessment before it is a learning decision — what you are really asking is whether anything on that screen can charge money, show an ad, ask for a name, or send them somewhere else.",
             "paras": [
-                "Lumi Bopomofo is built to survive being handed over: completely ad-free, no sign-up, no personal data collected, and progress stored only on the device. Ten minutes covers a round of listening and matching, a few traced symbols and a turn on the tone game — short repeated contact, which suits this age far better than one long session at the weekend. It is free to start, with a one-time unlock rather than a subscription.",
+                "Lumi Bopomofo is built to survive being handed over: completely ad-free, no sign-up, no personal data collected, and progress stored only on the device. Ten minutes covers a round of listening and matching, a few traced symbols and a turn on the tone game — short repeated contact, which suits this age far better than one long session at the weekend. It is free to start, and a one-time in-app purchase unlocks all 37 symbols and every level.",
                 "In Taiwan the Zhuyin block is taught in the first ten weeks of Grade 1 (Ministry of Education curriculum, verified), so a child who arrives already familiar with the symbols is meeting them a second time rather than a first. That is the honest claim — familiarity, not a measurable head start. No app replaces reading with a child, and none of this predicts how quickly any particular child will learn.",
             ],
             "look": [
@@ -1506,7 +1506,7 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
                 "No sign-up and no personal data collected.",
                 "Progress kept on the device.",
                 "Rounds short enough to finish inside ten minutes.",
-                "A one-time unlock instead of a subscription.",
+                "Free to start; a one-time in-app purchase unlocks all 37 symbols and every level.",
             ],
             "steps": [
                 "Play the first round together once, so the gestures are familiar.",
@@ -1527,7 +1527,7 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
                 },
                 {
                     "q": "Do I have to pay before knowing whether it suits my child?",
-                    "a": "No — it is free to start. The unlock is a one-time purchase rather than a subscription, and the current App Store listing shows what the free part includes.",
+                    "a": "No — it is free to start. The unlock is a one-time in-app purchase, and the current App Store listing shows what the free part includes.",
                 },
             ],
         },

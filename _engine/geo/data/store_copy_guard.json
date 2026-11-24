@@ -1,5 +1,5 @@
 {
- "what": "1.11.5 退件護欄：重送包 aso/write_packs/2026-11-22_snapport_1_1_6_resubmit 前，App 頁用濾過的描述／關鍵字／副標；data 描述雜湊不符即失效（store_copy_guard.py）",
+ "what": "1.11.5 退件護欄：重送包 aso/write_packs/2026-11-22_snapport_1_1_6_resubmit 前，App 頁用濾過的描述／關鍵字／副標；data 描述雜湊不符即失效（store_copy_guard.py）；雙螢幕桌布（duowallpaperstudio）推廣文字 40 語系：第 53 項暫停「iPhone Duo 最佳化／真正滿版」期間頁面用去掉首句的版本（while_duo_claim_paused；claim_lines 解除暫停或商店推廣文字更新並同步 data 即失效）",
  "apps": {
   "snapport": {
    "ar-SA": {
@@ -543,6 +543,208 @@
     "description": "已針對 iPhone Duo 最佳化。本 App 以最新開發套件建置，填滿整個內螢幕，無論摺起或打開都會自動調整版面。\n\n履歷或各類申請要用的大頭照？Snapport Lite 把人像照裁成你選的尺寸：內建 35 種範本，也能自訂公釐、英吋或像素。\n自動偵測臉部，用頭頂、眼睛、下巴導引線對齊。\n匯出 JPEG、PNG 或 PDF，或在 4×6、A4 紙上排成一頁多張列印。\n\n免費編修，一次解鎖\n- 所有尺寸範本與編修工具都能免費使用。\n- 第一次匯出免費。\n- 一次購買即可不限次數匯出。無訂閱、無廣告、無追蹤、免帳號。\n\n選擇照片尺寸\n- 內建 35 種範本，涵蓋 28 個國家與地區，包括 2×2 英吋、35×45 公釐、33×48 公釐與 50×70 公釐等尺寸，可用於護照與簽證申請、履歷等用途。\n- 也能自訂尺寸，以公釐、英吋或像素設定，並自選 DPI。\n\n對齊臉部\n- 在裝置上偵測臉部，並提供頭頂、眼睛與下巴導引線。\n- 雙指縮放、拖曳與旋轉，微調裁切範圍。\n\n匯出與列印\n- 可匯出 JPEG、PNG 或 PDF。\n- 可在 4×6 英吋、A4 或 Letter 紙張上排版，一頁多張並附裁切線。\n- 可儲存到「照片」或「檔案」，也能分享。\n\n以隱私為核心\n- 照片都在你的裝置上處理，絕不上傳。\n- 可離線使用。選用的範本更新檢查只會下載公開的尺寸清單，不會傳送任何個人資料。\n\n注意事項\n照片規定依國家、機關與申請類型而不同。Snapport Lite 提供常用尺寸與導引；照片是否符合要求由你送件的單位決定，送出前請自行確認。\n\n支援 44 種語言。\n\n針對 iPhone Duo 最佳化。",
     "old_keywords": "護照照片,簽證照片,2吋,1吋,背景移除,相片沖印,A4,像素,解析度,dpi,自拍,形象照,磨皮,修圖,列印,英吋,美肌,證件照排版,去背,照片尺寸,相機,換底色,4x6,二吋,照片",
     "keywords": "護照照片,簽證照片,2吋,1吋,相片沖印,A4,像素,解析度,dpi,自拍,形象照,列印,英吋,證件照排版,照片尺寸,相機,4x6,二吋,照片"
+   }
+  },
+  "duowallpaperstudio": {
+   "ms": {
+    "while_duo_claim_paused": true,
+    "old_promotionalText": "Dioptimumkan untuk iPhone Duo: skrin penuh sebenar. Tutup untuk paparan dekat, buka untuk pemandangan penuh. 300+ pasang kertas dinding sepadan dan 5 widget sewarna.",
+    "promotionalText": "Tutup untuk paparan dekat, buka untuk pemandangan penuh. 300+ pasang kertas dinding sepadan dan 5 widget sewarna."
+   },
+   "es-MX": {
+    "while_duo_claim_paused": true,
+    "old_promotionalText": "Optimizada para el iPhone Duo: pantalla completa real. Cerrado, un acercamiento. Abierto, toda la escena.",
+    "promotionalText": "Cerrado, un acercamiento. Abierto, toda la escena."
+   },
+   "pa-IN": {
+    "while_duo_claim_paused": true,
+    "old_promotionalText": "iPhone Duo ਡਿਵਾਈਸ ਲਈ ਅਨੁਕੂਲਿਤ: ਅਸਲ ਫੁੱਲ ਸਕ੍ਰੀਨ। ਫੋਲਡ ਕਰੋ ਤਾਂ ਕਲੋਜ਼-ਅੱਪ, ਖੋਲ੍ਹੋ ਤਾਂ ਪੂਰਾ ਦ੍ਰਿਸ਼।",
+    "promotionalText": "ਫੋਲਡ ਕਰੋ ਤਾਂ ਕਲੋਜ਼-ਅੱਪ, ਖੋਲ੍ਹੋ ਤਾਂ ਪੂਰਾ ਦ੍ਰਿਸ਼।"
+   },
+   "te-IN": {
+    "while_duo_claim_paused": true,
+    "old_promotionalText": "iPhone Duo పరికరానికి ఆప్టిమైజ్డ్: అసలైన ఫుల్ స్క్రీన్. మూసితే క్లోజప్, తెరిస్తే పూర్తి దృశ్యం.",
+    "promotionalText": "మూసితే క్లోజప్, తెరిస్తే పూర్తి దృశ్యం."
+   },
+   "cs": {
+    "while_duo_claim_paused": true,
+    "old_promotionalText": "Přizpůsobeno zařízení iPhone Duo: opravdu celý displej. Zavřený ukáže detail, otevřený celou scénu.",
+    "promotionalText": "Zavřený ukáže detail, otevřený celou scénu."
+   },
+   "no": {
+    "while_duo_claim_paused": true,
+    "old_promotionalText": "Optimalisert for iPhone Duo: ekte fullskjerm. Lukket får du nærbildet, åpnet hele scenen.",
+    "promotionalText": "Lukket får du nærbildet, åpnet hele scenen."
+   },
+   "or-IN": {
+    "while_duo_claim_paused": true,
+    "old_promotionalText": "iPhone Duo ଡିଭାଇସ ପାଇଁ ଅପ୍ଟିମାଇଜ୍ଡ: ପ୍ରକୃତ ଫୁଲ ସ୍କ୍ରିନ। ଫୋଲ୍ଡ କଲେ କ୍ଲୋଜ୍-ଅପ୍, ଖୋଲିଲେ ପୂରା ଦୃଶ୍ୟ।",
+    "promotionalText": "ଫୋଲ୍ଡ କଲେ କ୍ଲୋଜ୍-ଅପ୍, ଖୋଲିଲେ ପୂରା ଦୃଶ୍ୟ।"
+   },
+   "id": {
+    "while_duo_claim_paused": true,
+    "old_promotionalText": "Dioptimalkan untuk iPhone Duo: layar penuh sungguhan. Tutup: tampilan dekat. Buka: pemandangan utuh.",
+    "promotionalText": "Tutup: tampilan dekat. Buka: pemandangan utuh."
+   },
+   "sk": {
+    "while_duo_claim_paused": true,
+    "old_promotionalText": "Optimalizované pre iPhone Duo: skutočne celá obrazovka. Zatvorený ukáže detail, otvorený celú scénu.",
+    "promotionalText": "Zatvorený ukáže detail, otvorený celú scénu."
+   },
+   "es-ES": {
+    "while_duo_claim_paused": true,
+    "old_promotionalText": "Optimizada para el iPhone Duo: pantalla completa real. Para las dos pantallas de un plegable: cerrado, un primer plano; abierto, toda la escena.",
+    "promotionalText": "Para las dos pantallas de un plegable: cerrado, un primer plano; abierto, toda la escena."
+   },
+   "ro": {
+    "while_duo_claim_paused": true,
+    "old_promotionalText": "Optimizată pentru iPhone Duo: ecran complet adevărat. Închis, un prim-plan. Deschis, toată scena.",
+    "promotionalText": "Închis, un prim-plan. Deschis, toată scena."
+   },
+   "vi": {
+    "while_duo_claim_paused": true,
+    "old_promotionalText": "Tối ưu cho iPhone Duo: toàn màn hình thật sự. Gập lại là cận cảnh, mở ra là toàn cảnh.",
+    "promotionalText": "Gập lại là cận cảnh, mở ra là toàn cảnh."
+   },
+   "sv": {
+    "while_duo_claim_paused": true,
+    "old_promotionalText": "Optimerad för iPhone Duo: äkta helskärm. Hopfälld en närbild, uppfälld hela scenen.",
+    "promotionalText": "Hopfälld en närbild, uppfälld hela scenen."
+   },
+   "tr": {
+    "while_duo_claim_paused": true,
+    "old_promotionalText": "iPhone Duo için optimize edildi: gerçek tam ekran. Kapat, yakın planı gör; aç, sahnenin tamamını.",
+    "promotionalText": "Kapat, yakın planı gör; aç, sahnenin tamamını."
+   },
+   "hi": {
+    "while_duo_claim_paused": true,
+    "old_promotionalText": "iPhone Duo डिवाइस के लिए अनुकूलित: असली फ़ुल स्क्रीन। बंद करें तो क्लोज़-अप, खोलें तो पूरा नज़ारा।",
+    "promotionalText": "बंद करें तो क्लोज़-अप, खोलें तो पूरा नज़ारा।"
+   },
+   "ta-IN": {
+    "while_duo_claim_paused": true,
+    "old_promotionalText": "iPhone Duo சாதனத்திற்கு உகந்தது: உண்மையான முழுத்திரை. மூடினால் நெருக்கமான காட்சி, திறந்தால் முழுக் காட்சி.",
+    "promotionalText": "மூடினால் நெருக்கமான காட்சி, திறந்தால் முழுக் காட்சி."
+   },
+   "hu": {
+    "while_duo_claim_paused": true,
+    "old_promotionalText": "iPhone Duo készülékre szabva: valódi teljes képernyő. Csukd be: közeli részlet. Nyisd ki: a teljes jelenet.",
+    "promotionalText": "Csukd be: közeli részlet. Nyisd ki: a teljes jelenet."
+   },
+   "hr": {
+    "while_duo_claim_paused": true,
+    "old_promotionalText": "Optimizirano za iPhone Duo: pravi puni zaslon. Zatvoreno: krupni plan. Otvoreno: cijeli prizor.",
+    "promotionalText": "Zatvoreno: krupni plan. Otvoreno: cijeli prizor."
+   },
+   "mr-IN": {
+    "while_duo_claim_paused": true,
+    "old_promotionalText": "iPhone Duo डिव्हाइससाठी ऑप्टिमाइझ्ड: खरी फुल स्क्रीन. बंद केला की क्लोज-अप, उघडला की संपूर्ण दृश्य. दोन्ही स्क्रीनसाठी 300+ जुळणाऱ्या जोड्या आणि त्याच रंगांचे 5 विजेट.",
+    "promotionalText": "बंद केला की क्लोज-अप, उघडला की संपूर्ण दृश्य. दोन्ही स्क्रीनसाठी 300+ जुळणाऱ्या जोड्या आणि त्याच रंगांचे 5 विजेट."
+   },
+   "zh-Hant": {
+    "while_duo_claim_paused": true,
+    "old_promotionalText": "已針對 iPhone Duo 最佳化，真正滿版。聖誕、跨年想換個新氣氛？合上，外螢幕是特寫；展開，內螢幕是整片全景，兩張出自同一幅原創畫面。300+ 組、14 種風格，5 款小工具直接畫上你選的桌布。無廣告、不收集資料。",
+    "promotionalText": "聖誕、跨年想換個新氣氛？合上，外螢幕是特寫；展開，內螢幕是整片全景，兩張出自同一幅原創畫面。300+ 組、14 種風格，5 款小工具直接畫上你選的桌布。無廣告、不收集資料。"
+   },
+   "da": {
+    "while_duo_claim_paused": true,
+    "old_promotionalText": "Optimeret til iPhone Duo: ægte fuld skærm. Lukket: et nærbillede. Åben: hele scenen.",
+    "promotionalText": "Lukket: et nærbillede. Åben: hele scenen."
+   },
+   "ar-SA": {
+    "while_duo_claim_paused": true,
+    "old_promotionalText": "محسَّن لجهاز iPhone Duo: ملء شاشة حقيقي. اطوِه للقطة قريبة وافتحه للمشهد كاملًا.",
+    "promotionalText": "اطوِه للقطة قريبة وافتحه للمشهد كاملًا."
+   },
+   "ur-PK": {
+    "while_duo_claim_paused": true,
+    "old_promotionalText": "iPhone Duo ڈیوائس کے لیے آپٹمائزڈ: اصل فُل اسکرین۔ فون بند کریں تو کلوز اپ، کھولیں تو پورا منظر۔",
+    "promotionalText": "فون بند کریں تو کلوز اپ، کھولیں تو پورا منظر۔"
+   },
+   "gu-IN": {
+    "while_duo_claim_paused": true,
+    "old_promotionalText": "iPhone Duo ડિવાઇસ માટે ઑપ્ટિમાઇઝ્ડ: સાચી ફુલ સ્ક્રીન. બંધ કરો તો ક્લોઝ-અપ, ખોલો તો આખું દૃશ્ય.",
+    "promotionalText": "બંધ કરો તો ક્લોઝ-અપ, ખોલો તો આખું દૃશ્ય."
+   },
+   "nl-NL": {
+    "while_duo_claim_paused": true,
+    "old_promotionalText": "Geoptimaliseerd voor iPhone Duo: echt schermvullend. Dichtgeklapt een close-up, opengeklapt het hele beeld.",
+    "promotionalText": "Dichtgeklapt een close-up, opengeklapt het hele beeld."
+   },
+   "ca": {
+    "while_duo_claim_paused": true,
+    "old_promotionalText": "Optimitzada per a l’iPhone Duo: pantalla completa real. Tancat, un primer pla. Obert, tota l'escena.",
+    "promotionalText": "Tancat, un primer pla. Obert, tota l'escena."
+   },
+   "ja": {
+    "while_duo_claim_paused": true,
+    "old_promotionalText": "iPhone Duoに最適化。真の全画面表示。年末年始は壁紙も衣替え。閉じれば外画面にクローズアップ、開けば内画面に全景のペア壁紙。14スタイル・300組以上、選んだ壁紙で描く5種のウィジェット。広告なし、データ収集なし。",
+    "promotionalText": "年末年始は壁紙も衣替え。閉じれば外画面にクローズアップ、開けば内画面に全景のペア壁紙。14スタイル・300組以上、選んだ壁紙で描く5種のウィジェット。広告なし、データ収集なし。"
+   },
+   "ru": {
+    "while_duo_claim_paused": true,
+    "old_promotionalText": "Оптимизировано для iPhone Duo: настоящий полный экран. Для двух экранов складного телефона: закрыт — крупный план, открыт — вся сцена.",
+    "promotionalText": "Для двух экранов складного телефона: закрыт — крупный план, открыт — вся сцена."
+   },
+   "fi": {
+    "while_duo_claim_paused": true,
+    "old_promotionalText": "Optimoitu iPhone Duo -laitteelle: aito koko näyttö. Suljettuna lähikuva, avattuna koko näkymä.",
+    "promotionalText": "Suljettuna lähikuva, avattuna koko näkymä."
+   },
+   "pl": {
+    "while_duo_claim_paused": true,
+    "old_promotionalText": "Zoptymalizowana pod iPhone Duo: prawdziwy pełny ekran. Złożony pokazuje zbliżenie, rozłożony całą scenę.",
+    "promotionalText": "Złożony pokazuje zbliżenie, rozłożony całą scenę."
+   },
+   "zh-Hans": {
+    "while_duo_claim_paused": true,
+    "old_promotionalText": "已针对 iPhone Duo 优化，真正全屏。折叠屏专属成对壁纸：合上，外屏看特写；展开，内屏看全景，同一幅原创画面按两块屏幕分别构图。300+ 组高清原创、14 种风格，5 款同色小组件，自己的照片也能做成一对。无广告、无需注册、不用订阅。",
+    "promotionalText": "折叠屏专属成对壁纸：合上，外屏看特写；展开，内屏看全景，同一幅原创画面按两块屏幕分别构图。300+ 组高清原创、14 种风格，5 款同色小组件，自己的照片也能做成一对。无广告、无需注册、不用订阅。"
+   },
+   "sl-SI": {
+    "while_duo_claim_paused": true,
+    "old_promotionalText": "Optimizirano za iPhone Duo: pravi celozaslonski prikaz. Zaprt pokaže bližnji posnetek, odprt ves prizor.",
+    "promotionalText": "Zaprt pokaže bližnji posnetek, odprt ves prizor."
+   },
+   "fr-CA": {
+    "while_duo_claim_paused": true,
+    "old_promotionalText": "Optimisé pour l’iPhone Duo : un vrai plein écran. Fermé, un gros plan. Ouvert, toute la scène.",
+    "promotionalText": "Fermé, un gros plan. Ouvert, toute la scène."
+   },
+   "kn-IN": {
+    "while_duo_claim_paused": true,
+    "old_promotionalText": "iPhone Duo ಸಾಧನಕ್ಕೆ ಆಪ್ಟಿಮೈಸ್ಡ್: ನಿಜವಾದ ಪೂರ್ಣ ಪರದೆ. ಮುಚ್ಚಿದರೆ ಕ್ಲೋಸ್-ಅಪ್, ತೆರೆದರೆ ಇಡೀ ದೃಶ್ಯ. ಹೊರ ಮತ್ತು ಒಳ ಪರದೆಗಳಿಗೆ 300+ ಜೋಡಿ ವಾಲ್ಪೇಪರ್ ಮತ್ತು ಅದೇ ಬಣ್ಣದ ವಿಜೆಟ್.",
+    "promotionalText": "ಮುಚ್ಚಿದರೆ ಕ್ಲೋಸ್-ಅಪ್, ತೆರೆದರೆ ಇಡೀ ದೃಶ್ಯ. ಹೊರ ಮತ್ತು ಒಳ ಪರದೆಗಳಿಗೆ 300+ ಜೋಡಿ ವಾಲ್ಪೇಪರ್ ಮತ್ತು ಅದೇ ಬಣ್ಣದ ವಿಜೆಟ್."
+   },
+   "uk": {
+    "while_duo_claim_paused": true,
+    "old_promotionalText": "Оптимізовано для iPhone Duo: справжній повний екран. Складіть телефон: великий план. Розкладіть: уся сцена.",
+    "promotionalText": "Складіть телефон: великий план. Розкладіть: уся сцена."
+   },
+   "bn-BD": {
+    "while_duo_claim_paused": true,
+    "old_promotionalText": "iPhone Duo ডিভাইসের জন্য অপ্টিমাইজড: আসল ফুল স্ক্রিন। ভাঁজ করলে ক্লোজ-আপ, খুললে পুরো দৃশ্য।",
+    "promotionalText": "ভাঁজ করলে ক্লোজ-আপ, খুললে পুরো দৃশ্য।"
+   },
+   "el": {
+    "while_duo_claim_paused": true,
+    "old_promotionalText": "Βελτιστοποιημένη για iPhone Duo: αληθινή πλήρης οθόνη. Κλειστό, κοντινό πλάνο. Ανοιχτό, ολόκληρη η σκηνή.",
+    "promotionalText": "Κλειστό, κοντινό πλάνο. Ανοιχτό, ολόκληρη η σκηνή."
+   },
+   "ml-IN": {
+    "while_duo_claim_paused": true,
+    "old_promotionalText": "iPhone Duo ഫോണിന് ഒപ്റ്റിമൈസ്ഡ്: യഥാർത്ഥ ഫുൾസ്ക്രീൻ. അടച്ചാൽ ക്ലോസ്-അപ്പ്, തുറന്നാൽ മുഴുവൻ ദൃശ്യം.",
+    "promotionalText": "അടച്ചാൽ ക്ലോസ്-അപ്പ്, തുറന്നാൽ മുഴുവൻ ദൃശ്യം."
+   },
+   "it": {
+    "while_duo_claim_paused": true,
+    "old_promotionalText": "Ottimizzata per iPhone Duo: vero schermo intero. Chiuso, un primo piano. Aperto, tutta la scena.",
+    "promotionalText": "Chiuso, un primo piano. Aperto, tutta la scena."
+   },
+   "he": {
+    "while_duo_claim_paused": true,
+    "old_promotionalText": "מותאם למכשיר iPhone Duo: מסך מלא אמיתי. סגור זה תקריב, פתוח זו הסצנה כולה. מעל 300 זוגות רקעים מקוריים לשני המסכים, זוג מהתמונה שלכם וגם וידג'טים בצבעים תואמים.",
+    "promotionalText": "סגור זה תקריב, פתוח זו הסצנה כולה. מעל 300 זוגות רקעים מקוריים לשני המסכים, זוג מהתמונה שלכם וגם וידג'טים בצבעים תואמים."
    }
   }
  }

@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-11-23",
-  "content_digest": "3418ceaf494c14473d7df311c628d51fbfebb7bf2076a95b2cb092576a50eef7",
+  "date_modified": "2026-11-24",
+  "content_digest": "da16b2e6cb254016d6ceeba57bb60c34b408bbdfdc86d0fdaa7a3c26d7e18764",
   "locale": "zh-Hans",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -98,7 +98,9 @@
         "复制粘贴",
         "工作效率",
         "报告",
-        "阅读"
+        "阅读",
+        "提示词管理",
+        "ai 提示词"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1677,7 +1679,8 @@
         "四岁",
         "五岁",
         "打卡",
-        "游戏"
+        "游戏",
+        "儿童 习惯"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1964,7 +1967,8 @@
         "地图",
         "乘车",
         "新店",
-        "板南线"
+        "板南线",
+        "mrt 时刻表"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -2357,7 +2361,8 @@
         "快递",
         "电话",
         "短信",
-        "邮件"
+        "邮件",
+        "二维码 安全检测"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

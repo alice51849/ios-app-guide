@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-11-23",
-  "content_digest": "3418ceaf494c14473d7df311c628d51fbfebb7bf2076a95b2cb092576a50eef7",
+  "date_modified": "2026-11-24",
+  "content_digest": "da16b2e6cb254016d6ceeba57bb60c34b408bbdfdc86d0fdaa7a3c26d7e18764",
   "locale": "de-DE",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -1124,7 +1124,8 @@
         "essen",
         "motivation",
         "verhalten",
-        "lob"
+        "lob",
+        "belohnungstafel"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1162,7 +1163,8 @@
         "kita",
         "vorschule",
         "selbstständigkeit",
-        "gewohnheiten"
+        "gewohnheiten",
+        "abendroutine kinder"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -2160,7 +2162,8 @@
         "ki",
         "foto",
         "scharf",
-        "restaurieren"
+        "restaurieren",
+        "unscharf schärfen"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2282,7 +2285,8 @@
         "hotspot",
         "anbieter",
         "modem",
-        "hilfe"
+        "hilfe",
+        "wlan kein internet"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2398,7 +2402,9 @@
         "archiv",
         "auspacken",
         "unzip",
-        "extractor"
+        "extractor",
+        "rar-dateien öffnen",
+        "7z entpacken"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,

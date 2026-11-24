@@ -55,6 +55,21 @@ class ClaimGateTests(unittest.TestCase):
         page = duo_page(build(gen.DUO_LINES))
         self.assertEqual(1, page.count(f'<p class="duo-badge">{BADGE}</p>'))
 
+    def test_paused_claim_lines_publish_no_badge(self):
+        import tempfile
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "claim_lines.json"
+            path.write_text(json.dumps({"status": "暫停引用（測試）", "promo_line": {"zh-Hant": BADGE}},
+                                       ensure_ascii=False), encoding="utf-8")
+            self.assertEqual("", gen.promo_line(path))
+            path.write_text(json.dumps({"status": "草稿待複審", "promo_line": {"zh-Hant": BADGE}},
+                                       ensure_ascii=False), encoding="utf-8")
+            self.assertEqual(BADGE, gen.promo_line(path))
+        pages = gen.build({key: IDS[key] for key in gen.DUO_LINES}, IDS, {}, badge="")
+        for relative, source in pages.items():
+            self.assertNotIn("duo-badge\">", source, relative)
+            self.assertNotIn("真正滿版", source, relative)
+
     def test_every_listed_app_has_a_line_and_one_group(self):
         grouped = [key for _, keys in gen.DUO_GROUPS for key in keys]
         self.assertEqual(len(grouped), len(set(grouped)))

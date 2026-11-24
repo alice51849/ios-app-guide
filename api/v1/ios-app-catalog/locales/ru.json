@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-11-23",
-  "content_digest": "3418ceaf494c14473d7df311c628d51fbfebb7bf2076a95b2cb092576a50eef7",
+  "date_modified": "2026-11-24",
+  "content_digest": "da16b2e6cb254016d6ceeba57bb60c34b408bbdfdc86d0fdaa7a3c26d7e18764",
   "locale": "ru",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -65,7 +65,9 @@
         "OCR",
         "контекст",
         "чат",
-        "документы"
+        "документы",
+        "краткое содержание pdf",
+        "промпт ии"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -106,7 +108,8 @@
         "баллы",
         "тест",
         "слова",
-        "подготовка"
+        "подготовка",
+        "toeic аудирование"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -269,7 +272,8 @@
         "собеседование",
         "студент",
         "docx",
-        "пример"
+        "пример",
+        "ats резюме"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -557,7 +561,9 @@
         "траты",
         "за",
         "день",
-        "лимит"
+        "лимит",
+        "расходы в путешествии",
+        "деньги в путешествии"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -596,7 +602,8 @@
         "валюта",
         "путешествия",
         "кошелек",
-        "смартчасы"
+        "смартчасы",
+        "расходы в путешествии"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -678,7 +685,8 @@
         "транжира",
         "привычки",
         "сожаление",
-        "минимализм"
+        "минимализм",
+        "импульсивные покупки"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1049,7 +1057,8 @@
         "прописи",
         "чтение",
         "задания",
-        "слова"
+        "слова",
+        "фонетика для детей"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1499,7 +1508,8 @@
         "выручка",
         "клиенты",
         "аренда",
-        "заказы"
+        "заказы",
+        "подработка доход"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1701,7 +1711,8 @@
         "подборка",
         "теги",
         "рецепты",
-        "желаний"
+        "желаний",
+        "сохранить статьи"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2019,7 +2030,8 @@
         "егэ",
         "часы",
         "секундомер",
-        "прогресс"
+        "прогресс",
+        "учет времени учебы"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

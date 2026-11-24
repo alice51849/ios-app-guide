@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-11-23",
-  "content_digest": "3418ceaf494c14473d7df311c628d51fbfebb7bf2076a95b2cb092576a50eef7",
+  "date_modified": "2026-11-24",
+  "content_digest": "da16b2e6cb254016d6ceeba57bb60c34b408bbdfdc86d0fdaa7a3c26d7e18764",
   "locale": "ko",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -146,7 +146,8 @@
         "분석",
         "독학",
         "공부",
-        "복습"
+        "복습",
+        "토익 990"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -204,7 +205,8 @@
         "성능저하",
         "검사",
         "경고",
-        "확인"
+        "확인",
+        "배터리 용량"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -840,7 +842,8 @@
         "퀵세이브",
         "추억의게임",
         "터보",
-        "레트로게임"
+        "레트로게임",
+        "gbc 에뮬레이터"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1925,7 +1928,9 @@
         "교체주기",
         "화분",
         "빨래",
-        "기한"
+        "기한",
+        "마지막 기록",
+        "마지막으로 한 날"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2758,7 +2763,9 @@
         "우정",
         "경비",
         "가계부",
-        "더치페이"
+        "더치페이",
+        "여행 디데이",
+        "친구 여행계획"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -3024,7 +3031,9 @@
         "와이파이",
         "인터넷",
         "연결",
-        "불안정"
+        "불안정",
+        "인터넷 연결 확인",
+        "와이파이 진단"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -3230,7 +3239,10 @@
         "뷰어",
         "파일관리자",
         "분할압축",
-        "extractor"
+        "extractor",
+        "암호 zip 파일",
+        "7z 압축 풀기",
+        "rar 파일 열기"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,

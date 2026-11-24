@@ -1,11 +1,11 @@
 {
- "generated": "2026-11-23T12:57:24Z",
+ "generated": "2026-11-24T02:18:02Z",
  "mode": "apply",
  "counts": {
-  "ok_reply": 87,
-  "ok_backfilled_earlier": 125,
+  "ok_reply": 88,
+  "ok_backfilled_earlier": 127,
   "unknown_app": 47,
-  "ok_store_only": 606,
+  "ok_store_only": 604,
   "backfilled": 2,
   "ok_bio_link": 68,
   "ok_caption": 4,
@@ -24,6 +24,18 @@
    "why": "trial",
    "ios_id": "6785004775",
    "locale": "en-US"
+  },
+  {
+   "channel": "threads",
+   "id": "18181454776451300",
+   "permalink": "https://www.threads.com/@hourstag.app/post/DgFeM5QoNJe",
+   "date": "2026-11-23",
+   "app": "lumiweather",
+   "status": "ok_reply",
+   "text": "明天（11/24 週二）穿什麼？ 台北 16–20°C 台中 15–20°C 高雄 20–25°C 以台北來說，早晚涼：長袖＋薄外套，洋蔥式穿法方便調整。 台北、台中、高雄明天可能下雨，記得帶傘。 #明天穿什麼 #天氣 預報：MET Norway，僅供參考，出門前以實際天氣為準。",
+   "why": "brand",
+   "ios_id": "6779552704",
+   "locale": "zh-Hant"
   },
   {
    "channel": "threads",
@@ -2669,11 +2681,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctfT-jDwxL",
    "date": "2026-08-31",
    "app": "lumimissionpro",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "Lumi Mission Planet Pro Kids Daily Routines & Habits The routine kids actually finish. Turn chores, habits, and bedtime into a game they lov",
    "why": "url+brand",
    "ios_id": "6779745474",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "18149152648702227",
+   "at": "2026-11-24T02:15:33Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -3267,16 +3284,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctfhWqAnrZ",
    "date": "2026-08-31",
    "app": "maskmyfile",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "Mask My File: Remove Your Info Hide private details to share Permanently hide private details on your device before sharing. Reopen and chec",
    "why": "url+brand",
    "ios_id": "6792850916",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "18360999625222057",
-   "at": "2026-11-23T12:54:50Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",
@@ -3998,11 +4010,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctfaW3jVX3",
    "date": "2026-08-31",
    "app": "lumiweather",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "Lumi Weather: Family Forecast Weather, Rain Radar & UV Plan the day with kids in seconds. A friendly forecast plus a smart outing score tell",
    "why": "url+brand",
    "ios_id": "6779552704",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "18147260941511692",
+   "at": "2026-11-24T02:15:33Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -4726,16 +4743,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/Dctfm75EqVe",
    "date": "2026-08-31",
    "app": "mochi",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "Mochi: Cute Checklist Plan your day softly The to-do list you'll actually enjoy. Cozy, cute, and so satisfying to tap complete — free, no ad",
    "why": "url+brand",
    "ios_id": "6785004775",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "18020317712748008",
-   "at": "2026-11-23T12:54:50Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",

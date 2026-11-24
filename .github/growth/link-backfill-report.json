@@ -1,11 +1,11 @@
 {
- "generated": "2026-11-24T02:18:02Z",
+ "generated": "2026-11-24T13:52:15Z",
  "mode": "apply",
  "counts": {
-  "ok_reply": 88,
-  "ok_backfilled_earlier": 127,
+  "ok_reply": 90,
+  "ok_backfilled_earlier": 129,
   "unknown_app": 47,
-  "ok_store_only": 604,
+  "ok_store_only": 602,
   "backfilled": 2,
   "ok_bio_link": 68,
   "ok_caption": 4,
@@ -13,6 +13,30 @@
   "missing": 3
  },
  "rows": [
+  {
+   "channel": "threads",
+   "id": "18130051007514230",
+   "permalink": "https://www.threads.com/@hourstag.app/post/DgG9jPJEeUX",
+   "date": "2026-11-24",
+   "app": "mochi",
+   "status": "ok_reply",
+   "text": "시험 전 투두리스트는 작게 쪼개는 게 답이더라 ✏️ '영어 공부' 말고 '단어 30개', '기출 1회'처럼 나눠서 적고, 하나 끝낼 때마다 톡 체크. 귀여운 테마로 바꿔두니까 앱 여는 게 덜 부담스러움. 오늘도 체크 하나씩.",
+   "why": "trial",
+   "ios_id": "6785004775",
+   "locale": "ko"
+  },
+  {
+   "channel": "threads",
+   "id": "17980575537157459",
+   "permalink": "https://www.threads.com/@hourstag.app/post/DgICHTgEVMZ",
+   "date": "2026-11-24",
+   "app": "lumiweather",
+   "status": "ok_reply",
+   "text": "明天（11/25 週三）穿什麼？ 台北 16–20°C 台中 14–23°C 高雄 19–24°C 以台北來說，早晚涼：長袖＋薄外套，洋蔥式穿法方便調整。 高雄明天可能下雨，記得帶傘。 #明天穿什麼 #天氣 預報：MET Norway，僅供參考，出門前以實際天氣為準。 我做的 L",
+   "why": "brand",
+   "ios_id": "6779552704",
+   "locale": "zh-Hant"
+  },
   {
    "channel": "threads",
    "id": "18652707736024939",
@@ -2681,16 +2705,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctfT-jDwxL",
    "date": "2026-08-31",
    "app": "lumimissionpro",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "Lumi Mission Planet Pro Kids Daily Routines & Habits The routine kids actually finish. Turn chores, habits, and bedtime into a game they lov",
    "why": "url+brand",
    "ios_id": "6779745474",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "18149152648702227",
-   "at": "2026-11-24T02:15:33Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",
@@ -3164,11 +3183,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctfNudDn02",
    "date": "2026-08-31",
    "app": "lumimission",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "Lumi Mission Planet Kids Reward Chart & Routines Turn chores and bedtime into a game kids love. Build daily habits with rewards that stick —",
    "why": "url+brand",
    "ios_id": "6779750237",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "17875629843641270",
+   "at": "2026-11-24T13:49:48Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -3902,11 +3926,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctfH0slbpX",
    "date": "2026-08-31",
    "app": "lumimathpro",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "Lumi Math Pro: Kids Numbers Number games for kids The whole number galaxy for kids. Every counting and math adventure in one place — playful",
    "why": "url+brand",
    "ios_id": "6776958488",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "18213544456363929",
+   "at": "2026-11-24T13:49:48Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -4010,16 +4039,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctfaW3jVX3",
    "date": "2026-08-31",
    "app": "lumiweather",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "Lumi Weather: Family Forecast Weather, Rain Radar & UV Plan the day with kids in seconds. A friendly forecast plus a smart outing score tell",
    "why": "url+brand",
    "ios_id": "6779552704",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "18147260941511692",
-   "at": "2026-11-24T02:15:33Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",

@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-11-23",
-  "content_digest": "3418ceaf494c14473d7df311c628d51fbfebb7bf2076a95b2cb092576a50eef7",
+  "date_modified": "2026-11-24",
+  "content_digest": "da16b2e6cb254016d6ceeba57bb60c34b408bbdfdc86d0fdaa7a3c26d7e18764",
   "locale": "vi",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -203,7 +203,8 @@
         "thuế",
         "giản",
         "lịch sử",
-        "tiền boa"
+        "tiền boa",
+        "máy tính widget"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -324,7 +325,8 @@
         "đau bụng kinh",
         "canh",
         "tính",
-        "đếm"
+        "đếm",
+        "lịch theo dõi kinh"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -501,7 +503,9 @@
         "sớm",
         "học",
         "trực",
-        "tuần"
+        "tuần",
+        "báo thức tắt ngày lễ",
+        "widget báo thức"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -543,7 +547,8 @@
         "fantasy",
         "autumn",
         "snowy",
-        "text"
+        "text",
+        "hình nền máy gập"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -625,7 +630,8 @@
         "du lịch",
         "đơn giản",
         "nhật ký",
-        "smartwatch"
+        "smartwatch",
+        "chi tiêu du lịch"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -708,7 +714,8 @@
         "thói quen",
         "hối hận",
         "tối giản",
-        "giỏ hàng"
+        "giỏ hàng",
+        "mua sắm bốc đồng"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1144,7 +1151,8 @@
         "vào lớp 1",
         "tiền",
         "luyện toán",
-        "đồng hồ"
+        "đồng hồ",
+        "toán cho bé"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1314,7 +1322,8 @@
         "áo",
         "bão",
         "xem",
-        "coi"
+        "coi",
+        "thời tiết trẻ em"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1355,7 +1364,8 @@
         "văn bản",
         "pdf",
         "quét",
-        "ảnh chụp màn hình"
+        "ảnh chụp màn hình",
+        "che thông tin"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1530,7 +1540,8 @@
         "nhật ký",
         "dầu",
         "lịch sử",
-        "ngày"
+        "ngày",
+        "lần cuối"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1658,7 +1669,8 @@
         "35mm",
         "analog",
         "editor",
-        "filter"
+        "filter",
+        "filter phim"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1924,7 +1936,8 @@
         "kiếm",
         "phân loại",
         "hóa đơn",
-        "vé"
+        "vé",
+        "sắp xếp ảnh chụp màn hình"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2368,7 +2381,9 @@
         "cảnh báo",
         "hằng tuần",
         "tài khoản",
-        "còn lại"
+        "còn lại",
+        "giới hạn claude",
+        "theo dõi mức dùng ai"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2409,7 +2424,8 @@
         "cáp quang",
         "kết nối",
         "kiểm tra",
-        "phân tích"
+        "phân tích",
+        "chẩn đoán wifi"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -2451,7 +2467,8 @@
         "khắc phục",
         "sự cố",
         "modem",
-        "khách sạn"
+        "khách sạn",
+        "kiểm tra mạng"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

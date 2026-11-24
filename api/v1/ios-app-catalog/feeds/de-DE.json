@@ -12,8 +12,8 @@
   ],
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
-    "dateModified": "2026-11-23",
-    "contentDigest": "3418ceaf494c14473d7df311c628d51fbfebb7bf2076a95b2cb092576a50eef7",
+    "dateModified": "2026-11-24",
+    "contentDigest": "da16b2e6cb254016d6ceeba57bb60c34b408bbdfdc86d0fdaa7a3c26d7e18764",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
     "recordCount": 61
@@ -631,10 +631,11 @@
         "essen",
         "motivation",
         "verhalten",
-        "lob"
+        "lob",
+        "belohnungstafel"
       ],
       "language": "de-DE",
-      "date_modified": "2026-11-23T20:49:39Z"
+      "date_modified": "2026-11-24T05:12:22Z"
     },
     {
       "id": "https://apps.apple.com/app/id6779745474",
@@ -651,10 +652,11 @@
         "kita",
         "vorschule",
         "selbstständigkeit",
-        "gewohnheiten"
+        "gewohnheiten",
+        "abendroutine kinder"
       ],
       "language": "de-DE",
-      "date_modified": "2026-11-23T20:49:39Z"
+      "date_modified": "2026-11-24T05:12:22Z"
     },
     {
       "id": "https://apps.apple.com/app/id6779552704",
@@ -1193,10 +1195,11 @@
         "ki",
         "foto",
         "scharf",
-        "restaurieren"
+        "restaurieren",
+        "unscharf schärfen"
       ],
       "language": "de-DE",
-      "date_modified": "2026-11-23T20:49:39Z"
+      "date_modified": "2026-11-24T05:12:22Z"
     },
     {
       "id": "https://apps.apple.com/app/id6818607603",
@@ -1261,10 +1264,11 @@
         "hotspot",
         "anbieter",
         "modem",
-        "hilfe"
+        "hilfe",
+        "wlan kein internet"
       ],
       "language": "de-DE",
-      "date_modified": "2026-11-23T06:28:42Z"
+      "date_modified": "2026-11-24T05:12:22Z"
     },
     {
       "id": "https://apps.apple.com/app/id6797601720",
@@ -1323,10 +1327,12 @@
         "archiv",
         "auspacken",
         "unzip",
-        "extractor"
+        "extractor",
+        "rar-dateien öffnen",
+        "7z entpacken"
       ],
       "language": "de-DE",
-      "date_modified": "2026-11-23T06:28:42Z"
+      "date_modified": "2026-11-24T05:12:22Z"
     }
   ]
 }

@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-11-23",
-  "content_digest": "3418ceaf494c14473d7df311c628d51fbfebb7bf2076a95b2cb092576a50eef7",
+  "date_modified": "2026-11-24",
+  "content_digest": "da16b2e6cb254016d6ceeba57bb60c34b408bbdfdc86d0fdaa7a3c26d7e18764",
   "locale": "pt-BR",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -391,7 +391,8 @@
         "aeroporto",
         "restaurante",
         "hotel",
-        "offline"
+        "offline",
+        "guia de conversação"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -636,7 +637,9 @@
         "acelerar",
         "state",
         "rápido",
-        "backup"
+        "backup",
+        "console portátil",
+        "emulador gbc"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1288,7 +1291,8 @@
         "lgpd",
         "exif",
         "senha",
-        "contrato"
+        "contrato",
+        "tarjar pdf"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1332,7 +1336,8 @@
         "cozinhar",
         "puzzle",
         "ritmo",
-        "festa"
+        "festa",
+        "jogos dobrável"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1416,7 +1421,10 @@
         "widget",
         "organização",
         "diárias",
-        "estudos"
+        "estudos",
+        "lista de tarefas",
+        "checklist",
+        "to do list"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1497,7 +1505,9 @@
         "fluxo de caixa",
         "vendas",
         "aluguel",
-        "clientes"
+        "clientes",
+        "despesas do projeto",
+        "receitas e despesas"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2022,7 +2032,8 @@
         "leitura",
         "prova",
         "vestibular",
-        "concurso"
+        "concurso",
+        "timer de foco"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2063,7 +2074,8 @@
         "fotos",
         "hotel",
         "museu",
-        "aeroporto"
+        "aeroporto",
+        "jogos para viagem de carro"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2104,7 +2116,9 @@
         "checklist",
         "despesas",
         "dividir",
-        "widget"
+        "widget",
+        "diário de viagem",
+        "viagem com amigos"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

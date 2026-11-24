@@ -7,22 +7,27 @@
    "checklist app with a home screen widget for iphone",
    "checklist app with a home screen widget"
   ],
-  "meta_description": "A checklist app with a Home Screen widget lets you tick items off without opening the app.",
-  "lead": "A checklist app with a Home Screen widget lets you tick items off without opening the app — {name} shows the current date, your list and page buttons right on the widget.",
-  "detail": "{name} keeps checklists cute but practical: the Home Screen and Lock Screen widgets show today's date in the same format as the app, long lists page with the widget's own up/down buttons, and tapping a real item refreshes the widget once. It is free to start, with a one-time unlock and no subscription.",
+  "meta_description": "{name}'s App Store listing says you can keep your list on a Home Screen widget and Apple Watch. Free to start; Premium is a one-time in-app purchase.",
+  "lead": "{name} is a cute checklist app whose App Store listing says you can keep your list on a Home Screen widget and on Apple Watch.",
+  "detail": "According to the App Store listing, {name} lets you write a task, give it its own little emoji and tap the circle when it's done, then keep your list on a Home Screen widget and Apple Watch, with reminders that keep you on track. The listing doesn't describe what the widget looks like or whether you can tick items off from it, so check the current App Store page if that matters to you. The free version includes 2 lists with up to 4 tasks each, 5 themes and 1 emoji set; Premium, a one-time in-app purchase, unlocks unlimited lists and tasks, all 101 themes and all 11 emoji sets.",
   "bullets": [
-   "Home Screen and Lock Screen widgets that show the real list, not a sample",
-   "Widget paging buttons for long checklists instead of cut-off items",
-   "Free to start, one-time unlock, no subscription and no ads"
+   "Keep your list on a Home Screen widget",
+   "Apple Watch support and reminders",
+   "Free to start: 2 lists with up to 4 tasks each, 5 themes, 1 emoji set",
+   "Premium (one-time in-app purchase): unlimited lists and tasks, all 101 themes, all 11 emoji sets"
   ],
   "faq": [
    {
-    "q": "Does the widget update when I tick something inside the app?",
-    "a": "Yes. {name} refreshes the widget timeline when a list changes, so the widget and the app stay in sync."
+    "q": "Does {name} have a Home Screen widget?",
+    "a": "Yes. The App Store listing says you can keep your {name} list on a Home Screen widget."
+   },
+   {
+    "q": "Can I tick items off from the widget without opening the app?",
+    "a": "The App Store listing doesn't say so. It describes keeping your list on a Home Screen widget; check the current listing before you rely on ticking items off from the widget."
    },
    {
     "q": "Is the widget included in the free version?",
-    "a": "The widget is part of the app; check the current App Store listing for exactly which lists and themes are free before you unlock."
+    "a": "The listing doesn't describe the widget as a Premium feature. It says Premium unlocks unlimited lists and tasks, all 101 themes and all 11 emoji sets; check the current App Store listing before you upgrade."
    }
   ]
  },

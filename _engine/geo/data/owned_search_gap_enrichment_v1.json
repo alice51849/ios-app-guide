@@ -6,9 +6,9 @@
   "dedupe_corpus_sha256": "7ca55ca05965b4e30d583fd8e871d1785895400bdbed5b10b8ab1077d84e3a99",
   "signal_limit": "Public iTunes Search absence is a weak sample signal, not App Store rank repair, search volume, downloads or conversion.",
   "product_source": {
-    "commit": "2a608f36526f3b0cd62d58bd1c5c984ebb2c82b5",
+    "commit": "78e88cb07548339b274a7b7dfa62e2856cd5e879",
     "path": "geo/data/high_intent_conversion_contracts_v1.json",
-    "sha256": "f04caa537614e5d72e10417f6d1d8bfda2281aa91b28bbfee5f9b0341dc5204d"
+    "sha256": "a30c94998ba880382ae3a57687224c607559d1f829ef0bf4e6c22220b75fe05d"
   },
   "classifications": [
     {"query_id": "aim990-JP-intent-1", "classification": "OWNED_CONTENT_MATCH", "selected": true, "page": "ja/answers/app-to-practice-toeic-listening-and-reading-on-my-commute.html", "brief": "在既有通勤答案加入自我區分聽音、理解、選項誤判的方法；明示這是學習者手動復盤，不虛構自動弱點診斷。"},
@@ -25,7 +25,7 @@
     {"query_id": "aim990-TW-intent-2", "classification": "ASC_ONLY_NOT_ACTIONABLE", "selected": false, "brief": "多益單字與既有原創練習／persona 重疊；不新增沒有教材證據的單字清單或把別語言教材當繁中功能。"},
     {"query_id": "cyca-US-intent-1", "classification": "ASC_ONLY_NOT_ACTIONABLE", "selected": false, "brief": "既有 no-account privacy answer 與高意圖契約已直接回覆；不從搜尋缺席推論下載、需求或應改 metadata。"},
     {"query_id": "lumibopomofo-TW-intent-2", "classification": "OWNED_CONTENT_MATCH", "selected": true, "page": "zh-Hant/answers/app-to-teach-a-4-year-old-zhuyin-bopomofo-at-home.html", "brief": "補上家長先示範、孩子聽辨、再描寫的一輪陪玩流程，以及遇到挫折怎麼停；區分注音、漢語拼音與完整識字課程。"},
-    {"query_id": "mochi-US-intent-2", "classification": "OWNED_CONTENT_MATCH", "selected": true, "page": "answers/best-cute-to-do-list-app-for-everyday-tasks-iphone.html", "brief": "既有簡單待辦頁未解釋如何辨識可勾選 widget 與一般入口；加入一筆低風險測試與免費清單／可選外觀的區分。"},
+    {"query_id": "mochi-US-intent-2", "classification": "OWNED_CONTENT_MATCH", "selected": true, "page": "answers/best-cute-to-do-list-app-for-everyday-tasks-iphone.html", "brief": "既有簡單待辦頁沒有說明免費版範圍；改寫為先盤點自己的清單、對照商店頁寫明的免費版（2 個清單、每個最多 4 項）與進階版（App 內購買）再決定是否升級。"},
     {"query_id": "mochi-DE-intent-1", "classification": "ASC_ONLY_NOT_ACTIONABLE", "selected": false, "brief": "廣義 Aufgabenliste 已有德文 Guide／answer，品牌 sample 也未見；沒有足夠資訊增益，不做排名修復式文案。"},
     {"query_id": "mochi-DE-intent-2", "classification": "ASC_ONLY_NOT_ACTIONABLE", "selected": false, "brief": "Checkliste 與同市場 Aufgabenliste 是同一現有任務；只保留 brief，不增添同義詞密度。"},
     {"query_id": "mochi-JP-intent-1", "classification": "ASC_ONLY_NOT_ACTIONABLE", "selected": false, "brief": "日文一般待辦在既有 Guide／answer 已有入口；缺少新的產品情境證據，不能只靠未見 sample 追加內容。"},
@@ -121,20 +121,20 @@
       "base_sha256": "1751cf5c8ccd154724d48326890fccd0adc03f69f4bd69c5150879d73cb7150d",
       "app_key": "mochi", "app_id": "6785004775", "locale": "en-US", "country": "us",
       "query_ids": ["mochi-US-intent-2"], "before_heading": "FAQ",
-      "heading": "Test the Home Screen check-off, not just the shortcut",
+      "heading": "Check the free version against your real lists before you upgrade",
       "disclosure": "This supplement is written by Lumi Studio, the developer of Mochi. It is a practical product explanation, not an independent comparison or a ranking claim.",
       "paragraphs": [
-        "A Home Screen icon that opens a list and a widget that lets you complete an item solve different problems. If your goal is to check off a to-do from the Home Screen, test that exact action rather than judging only the preview image. Create one low-stakes test item, place the checklist widget you intend to use, and try its completion control.",
-        "Then open the list in Mochi and confirm that the same item is marked complete. This small round trip checks the workflow you actually care about: an action on the Home Screen followed by the expected result in your list. If the layout only takes you into the app, check the widget or app setup before assuming every widget style behaves identically.",
-        "Keep practical access separate from appearance. Basic checklists and Home Screen check-offs are free; optional Premium skins are a separate one-time choice. A skin you have not unlocked does not mean that the basic checklist workflow itself requires a purchase."
+        "A cute to-do list only helps if it fits the way your everyday tasks are actually grouped. Before you move everything over, write down the lists you really keep: maybe one for today, one for groceries, one for school or errands. Count how many items each one usually holds on a normal day. That small inventory tells you more than screenshots do, because it shows whether you need a couple of short lists or many long ones.",
+        "Mochi's App Store description is specific: the free version includes 2 lists with up to 4 tasks each, 5 themes and 1 emoji set. If your inventory fits two short lists, run a normal week on the free version and notice whether tapping the little circle when a task is done keeps you coming back. If you regularly need more lists, or lists longer than four items, that is the point where an upgrade becomes relevant.",
+        "Premium, an in-app purchase, unlocks unlimited lists and tasks, all 101 themes and all 11 emoji sets. Treat appearance and capacity as two separate questions. A theme you like is a good reason to open the list, but the deciding test is whether the list stays short enough to finish. Put the list on a Home Screen widget, keep it in view for a few days, and only then decide whether you need more room."
       ],
       "faqs": [
-        {"q": "How much should I put on the widget?", "a": "Start with the few items you need next, such as an errand or a simple routine. Keep the full list in the app when it is easier to read there. This is a way to choose what belongs in your immediate view, not a claim that Mochi automatically chooses tasks for you."},
+        {"q": "Which two lists should I start with?", "a": "A Today list plus one list for the thing you repeat most, such as groceries or homework, covers most everyday use. Four items per list is a useful ceiling anyway: a list you can finish is a list you are willing to open again tomorrow."},
         {"q": "Does a checklist replace a calendar or a team project tool?", "a": "Not necessarily. A check-off records completion; it is not the same as reserving a calendar time, assigning work to a team or analysing habit streaks. Use the tool that matches the decision you need to make rather than expecting a simple list to do all three."},
-        {"q": "Should I buy a theme before checking whether the widget suits me?", "a": "Try the basic list and Home Screen completion first. Consider an optional skin only after that workflow is useful to you. Check current choices inside the app; this guide does not quote a fixed price or promise that every theme is free."}
+        {"q": "Should I buy Premium before trying the free version?", "a": "Try the free version with your real lists first. Upgrade when two lists of four stop being enough, or when you want more themes and emoji sets. Check the current price on the App Store page; this guide does not quote one."}
       ],
-      "limitations": "The steps describe a low-risk check of the current installed experience. They do not promise identical behaviour for every widget size, device version or theme, and do not claim automated project management.",
-      "information_gain": ["interactive-widget-versus-launcher", "home-screen-to-list-roundtrip", "free-workflow-versus-optional-skin"]
+      "limitations": "This describes the free and Premium scope stated in the App Store description when it was written. It does not promise identical behaviour for every widget size or device, and does not claim automated project management.",
+      "information_gain": ["list-inventory-before-switching", "free-version-two-lists-of-four", "capacity-versus-appearance-upgrade"]
     }
   ]
 }

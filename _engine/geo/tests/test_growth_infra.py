@@ -21915,8 +21915,8 @@ class GeneratorTests(unittest.TestCase):
         # The live store listing says "Reminders", never repeating ones.
         self.assertIn("set a reminder", serialized)
         self.assertNotIn("recurring reminder", serialized)
-        self.assertIn("does not automatically clear", serialized)
-        self.assertIn("not the list contents", serialized)
+        self.assertIn("doesn't describe an automatic weekly reset", serialized)
+        self.assertNotIn("does not automatically clear", serialized)
         self.assertNotIn("automatically resets", serialized)
         self.assertIn(question, queries.ALL["mochi"])
         expected_related = (
@@ -21950,7 +21950,7 @@ class GeneratorTests(unittest.TestCase):
         facts = answer_deep.deep_facts(question, "mochi", "Mochi")
         self.assertIsNotNone(facts)
         self.assertIn(
-            "does not automatically clear",
+            "doesn't describe an automatic weekly reset",
             json.dumps(facts, ensure_ascii=False).lower(),
         )
         page = aeo_answers.render_page(
@@ -21963,7 +21963,8 @@ class GeneratorTests(unittest.TestCase):
             page,
         )
         self.assertIn('"@type": "HowTo"', page)
-        self.assertIn("does not automatically clear", page)
+        self.assertIn("describe an automatic weekly reset", page)
+        self.assertNotIn("does not automatically clear", page)
 
     def test_cvdesk_ats_score_preflight_is_truthful_and_indexable(self):
         items = json.loads(

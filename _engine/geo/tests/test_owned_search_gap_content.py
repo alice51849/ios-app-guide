@@ -52,8 +52,8 @@ class OwnedContentTests(unittest.TestCase):
                 "free": "Try the sound and tracing activities for ㄅ.",
                 "limitations": ["not Latin-letter Hanyu Pinyin"]}}},
             "mochi": {"app_id": subject.APPS["mochi"], "localized": {"en-US": {
-                "free": "Checklists and Home Screen check-offs are free.",
-                "paid": "Premium skins are optional"}}},
+                "free": "The free version includes 2 lists with up to 4 tasks each, 5 themes and 1 emoji set.",
+                "paid": "Premium, an in-app purchase, unlocks unlimited lists and tasks."}}},
         }}
         raw = subject.canonical(self.proof)
         self.plan["product_source"]["sha256"] = subject.sha(raw)

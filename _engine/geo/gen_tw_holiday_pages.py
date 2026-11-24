@@ -558,7 +558,11 @@ def store_url(app_id: str, key: str, seg: str) -> str:
 
 
 def promo_line(path: Path = CLAIM_LINES) -> str:
-    lines = json.loads(path.read_text(encoding="utf-8"))["promo_line"]
+    """zh-Hant badge line; "" while claim_lines.json top-level status starts with 暫停 (paused: no badge)."""
+    claims = json.loads(path.read_text(encoding="utf-8"))
+    if str(claims.get("status") or "").strip().startswith("暫停"):
+        return ""
+    lines = claims["promo_line"]
     line = lines.get(LANG) if isinstance(lines, dict) else None
     if not line:
         raise GenerationError("claim_lines.json has no zh-Hant promo_line")
@@ -700,7 +704,7 @@ def render(spec: dict, claimable: dict[str, str], ids: dict[str, str], badge: st
     if spec.get("spotlight"):
         sections.insert(0, spotlight_block(spec["spotlight"], claimable.get(spec["spotlight"]["key"])
                                            or ids.get(spec["spotlight"]["key"]), relative))
-    if is_duo:  # the page itself is the claim: one reviewed line above the list, not one per card
+    if is_duo and badge:  # the page itself is the claim: one reviewed line above the list, not one per card
         sections.insert(0, f'<p class="duo-badge">{esc(badge)}</p>')
     legal = f'<p class="legal">{esc(LEGAL)}</p>' if spec.get("legal") else ""
     return f"""<!DOCTYPE html>

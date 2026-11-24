@@ -572,7 +572,8 @@ def paid_model_answer_slugs():
             if PAID_ONLY_INTENT_RE.search(question):
                 out.setdefault(slugify(question), paid)
                 continue
-            if handwritten_paid_claim(paid, question):
+            if handwritten_paid_claim(paid, question) \
+                    or handwritten_deep_owned(paid, question):
                 out.setdefault(slugify(question), paid)
                 continue
             facts = answer_facts.topic_facts(question, paid, app)
@@ -627,6 +628,42 @@ def handwritten_paid_claim(paid_key, question):
     norm = " ".join(str(question).casefold().split())
     text = _handwritten_entries().get((paid_key, norm))
     return bool(text) and bool(PAID_ONLY_CLAIM_RE.search(text))
+
+
+# answer_deep 手寫條目登記在付費 key 底下 = 這題答案是照付費版寫的,整頁不換門。
+# 根因(2026-11-24 全站掃描,統籌 1707 定案第 7 條):G+Money 12 題(228 頁)、
+# HoursTag 4 題(76 頁)的 answer_deep 條目 app_key 是付費款,頁面卻被換成
+# 免費門(G+Money Lite / HoursTag Lite),主按鈕、App Store id、Play、ct 全連
+# 免費版 = 直接漏付費。與 Lumi 四款同一根因(手寫內容庫照付費版寫、換門只換
+# 身份);差別是 G+Money 有 5 題條目沒寫一次付清字樣,PAID_ONLY_CLAIM_RE 抓不到,
+# 所以這兩款改以「answer_deep 登記付費 key」本身為判準(產生器輸入,不是頁面文字)。
+# 只收這兩款;answer_personas 不在範圍(persona 首問頁另由 PERSONA_PAGE_BASENAMES 管)。
+HANDWRITTEN_DEEP_OWNED_KEYS = frozenset({"gmoney", "hourstag"})
+
+
+@functools.lru_cache(maxsize=1)
+def _deep_owned_questions():
+    """{(付費 key, 頁面 slug)}:answer_deep 登記在 HANDWRITTEN_DEEP_OWNED_KEYS 的題。
+
+    以 slug 比對(頁面路徑就是 slug):queries.ALL 同一題常有大小寫/問號不同的
+    兩種寫法(`How many hours …cost me?` 與小寫無問號版),落在同一頁。"""
+    try:
+        import answer_deep
+        from publisher_intent_catalog import slugify
+    except Exception:
+        return frozenset()
+    return frozenset(
+        (e.get("app_key"), slugify(str(e["query"])))
+        for e in answer_deep.DEEP_ITEMS
+        if e.get("app_key") in HANDWRITTEN_DEEP_OWNED_KEYS and e.get("query")
+    )
+
+
+def handwritten_deep_owned(paid_key, question):
+    if paid_key not in HANDWRITTEN_DEEP_OWNED_KEYS:
+        return False
+    from publisher_intent_catalog import slugify
+    return (paid_key, slugify(str(question))) in _deep_owned_questions()
 
 
 def _facts_text(facts):

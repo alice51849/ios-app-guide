@@ -909,27 +909,27 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    "simple to-do list iphone",
    "low-friction checklist no complexity"
   ],
-  "lead": "Mochi To-Do does one thing — tap a circle to check something off — which makes it a low-friction alternative to productivity apps that require configuration before you've captured a single task.",
-  "detail": "Many to-do apps front-load cognitive work: choose a project, assign a priority, pick a tag. {name} skips all of that — type a task, it appears in your list, tap the circle when done. Drag to reorder; swipe to edit or delete; set a reminder if you need one. The visually warm design (illustrated skins, soft colors, clean type) makes opening the app feel pleasant rather than dutiful, which is often the real barrier to actually using a checklist. Note: Mochi is a productivity tool, not a therapeutic product — but a genuinely low-friction design is a real usability feature for anyone who finds heavy software hard to maintain as a habit.",
+  "lead": "Mochi To-Do keeps things simple: write a task, give it a little emoji if you like, and tap the circle when it's done — its App Store listing describes a simple checklist, not a project tool.",
+  "detail": "Many to-do apps front-load cognitive work: choose a project, assign a priority, pick a tag. {name}'s App Store listing describes something lighter — a simple checklist for tasks and errands, where every task can get its own little emoji and you tap the circle when you're done. You can keep lists for school, work, errands, groceries, habits and daily routines, set reminders, and keep your list on a Home Screen widget and Apple Watch. The listing doesn't mention projects or sub-tasks. The free version includes 2 lists with up to 4 tasks each, 5 themes and 1 emoji set; Premium, a one-time in-app purchase, unlocks unlimited lists and tasks, all 101 themes and all 11 emoji sets.",
   "bullets": [
-   "One interaction to complete a task: tap the circle — no sub-menus, no status changes required",
-   "Multiple separate lists for different areas of life (work, groceries, errands, etc.)",
-   "Drag tasks to reorder; swipe left to edit or delete any item",
-   "Reminders that keep habitual tasks on track",
-   "Visually warm design that makes opening the app feel inviting, not like a chore"
+   "One interaction to complete a task: tap the circle",
+   "Lists for school, work, errands, groceries and daily routines",
+   "Reminders that keep you on track",
+   "Home Screen widget and Apple Watch support",
+   "101 themes (5 free) for a list that's pleasant to open"
   ],
   "faq": [
    {
     "q": "Does Mochi have sub-tasks or projects?",
-    "a": "No. Mochi is intentionally flat: lists and items inside lists — no sub-tasks, priorities, tags, or project views. If you need that structure, a different app is the right choice; Mochi is built for simplicity."
+    "a": "The App Store listing doesn't mention sub-tasks, projects, priorities or tags; it describes a simple checklist with lists, reminders, emoji and themes. If you need that structure, a project-style app is the better choice."
    },
    {
-    "q": "Do completed tasks disappear or stay visible?",
-    "a": "Checked-off items remain in the list visually struck through until you manually delete them. You can review what you've done before clearing the board."
+    "q": "How many lists can I make for free?",
+    "a": "The free version includes 2 lists with up to 4 tasks each. Premium, a one-time in-app purchase, unlocks unlimited lists and tasks."
    },
    {
     "q": "Is Mochi good for grocery or shopping lists?",
-    "a": "Yes — it's a primary use case. Create a Groceries list, check items off in-store from the Lock Screen widget without opening the app, and set a reminder to top it up. The free tier's 2 lists and 4-item limit covers a short shopping list; the unlock removes those caps."
+    "a": "Yes. The App Store listing mentions grocery lists. Create a Groceries list, tap the circle as you pick each item up, and keep the list on a Home Screen widget or Apple Watch. The free version's 2 lists with up to 4 tasks each cover a very short shopping list; Premium removes those limits."
    }
   ]
  },
@@ -4113,27 +4113,27 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    "best todo app for apple watch",
    "apple watch checklist app"
   ],
-  "lead": "The best to-do app for Apple Watch lets you glance at and tick off tasks from your wrist, so you don't have to pull out your phone for a quick check.",
-  "detail": "For Apple Watch, what matters is a clean glanceable list and the ability to complete a task from your wrist. {name} has Apple Watch support plus interactive widgets, so you can check off tasks without opening the app on your phone. It stays deliberately simple — reminders, emoji tags, 101 skins — with no project-management bloat. It's free to start with a one-time unlock, no ads and no account. Check the current App Store listing for exact Watch features.",
+  "lead": "{name}'s App Store listing says you can keep your list on Apple Watch, but it doesn't mention a watch face complication.",
+  "detail": "For Apple Watch, look for a list you can glance at from your wrist, and check whether the app offers a complication if you want one on your watch face. According to the App Store listing, {name} lets you keep your list on Apple Watch and on a Home Screen widget, with reminders that keep you on track; the listing doesn't describe a complication or say exactly what you can do on the watch. It stays simple: each task can get its own little emoji, and you tap the circle when it's done. The free version includes 2 lists with up to 4 tasks each, 5 themes and 1 emoji set; Premium, a one-time in-app purchase, unlocks unlimited lists and tasks, all 101 themes and all 11 emoji sets.",
   "bullets": [
-   "Glance at and complete tasks from Apple Watch",
-   "Interactive iPhone widgets too — tick off without opening the app",
-   "Simple by design: reminders, emoji tags",
-   "No ads, no account; free base + one-time unlock",
-   "Confirm current Watch features on the App Store"
+   "Keep your list on Apple Watch",
+   "A Home Screen widget on iPhone too",
+   "The App Store listing doesn't mention a watch face complication",
+   "Simple by design: reminders and an emoji for each task",
+   "Free to start; Premium is a one-time in-app purchase"
   ],
   "faq": [
    {
-    "q": "Can I tick off tasks from my Watch?",
-    "a": "Yes — {name} has Apple Watch support so you can check tasks off from your wrist; confirm the exact features on the current listing."
+    "q": "Does {name} have an Apple Watch complication?",
+    "a": "The App Store listing doesn't mention one. It says you can keep your list on Apple Watch; check the current listing for exact watch features."
    },
    {
-    "q": "Is it a subscription?",
-    "a": "No — {name} is free to start with a one-time unlock, no ads and no account."
+    "q": "How much does {name} cost?",
+    "a": "{name} is free to download. Premium, a one-time in-app purchase, unlocks unlimited lists and tasks, all 101 themes and all 11 emoji sets."
    },
    {
     "q": "Is it complicated?",
-    "a": "No — it's deliberately simple: lists, reminders and emoji, without project-management features."
+    "a": "No. It's a simple checklist: write a task, give it an emoji if you like, and tap the circle when it's done."
    }
   ]
  },
@@ -4148,26 +4148,26 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    "aesthetic daily to-do ritual"
   ],
   "lead": "A daily planning routine sticks when it feels pleasant — a cozy, good-looking app you want to open turns planning into a small ritual rather than a chore.",
-  "detail": "The habit forms around delight: if opening your list is satisfying, you'll do it daily. {name} leans into that with 101 illustrated skins (paper textures, cozy themes), a satisfying tap-to-complete, and emoji-tagged lists, so a morning plan or evening wind-down becomes a small ritual. Keep it light — a few tasks, reminders for the ones that matter — and it stays sustainable. It's free to start, one-time unlock for all skins, no ads or account.",
+  "detail": "The habit forms around delight: if opening your list is satisfying, you'll do it daily. {name} leans into that with 101 themes (5 free, 96 with Premium), an emoji for each task and a satisfying tap on the circle when a task is done, so a morning plan or evening wind-down becomes a small ritual. Keep it light — a few tasks, reminders for the ones that matter — and it stays sustainable. It's free to start; Premium, a one-time in-app purchase, unlocks unlimited lists and tasks, all 101 themes and all 11 emoji sets.",
   "bullets": [
    "Delight drives the habit — a list you want to open",
-   "101 cozy skins + satisfying tap-to-complete",
-   "Emoji-tagged lists for a quick daily plan",
+   "101 themes (5 free) and a satisfying tap to complete",
+   "An emoji for each task makes a quick daily plan",
    "Reminders for the tasks that matter",
-   "Free base, one-time unlock, no ads or account"
+   "Free to start; Premium is a one-time in-app purchase"
   ],
   "faq": [
    {
     "q": "Why does a 'pretty' app help me stick to planning?",
-    "a": "Low friction and delight make you actually open it daily; {name}'s cozy skins and satisfying interactions turn planning into a small ritual."
+    "a": "Low friction and delight make you actually open it daily; {name}'s themes and satisfying tap to complete turn planning into a small ritual."
    },
    {
     "q": "Will it get complicated?",
-    "a": "No — {name} stays simple on purpose, so a daily routine doesn't become a chore to maintain."
+    "a": "No — {name} is a simple checklist, so a daily routine doesn't become a chore to maintain."
    },
    {
-    "q": "Subscription?",
-    "a": "No — free to start with a one-time unlock for all skins."
+    "q": "What does it cost?",
+    "a": "{name} is free to download; Premium, a one-time in-app purchase, unlocks all 101 themes, unlimited lists and tasks, and all 11 emoji sets."
    }
   ]
  },

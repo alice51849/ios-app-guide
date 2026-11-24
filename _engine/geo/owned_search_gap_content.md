@@ -39,7 +39,7 @@ indexed 保持 unknown。下方 feature-only 敘述保留為原候選交付的�
 四 App 的既有 persona source 引用／SHA，沒有以未提交 WIP 充作證據。
 所有產品聲稱綁定 committed high-intent conversion contracts：
 原創離線 TOEIC-style 練習、Cyca 預測只是估計、注音而非漢語拼音，
-以及 Mochi 基本 widget 勾選免費／Premium 外觀可選。
+以及 Mochi 商店描述的免費版範圍（2 個清單、每個最多 4 項、5 款主題、1 組表情符號）與 Premium（App 內購買）。
 
 ## 選中題目與既有頁
 
@@ -49,11 +49,25 @@ indexed 保持 unknown。下方 feature-only 敘述保留為原候選交付的�
 | Aim990／US | `offline TOEIC daily practice` | 出門前驗證可用練習、離線內容與 Apple 購買／還原不同、下一次複習的一個問題 |
 | Cyca／DE | `periodenkalender` | 真實記錄與估計日期、缺資料不捏造日期、無帳號不等於可從雲端找回記錄 |
 | Lumi Bopomofo／TW | `ㄅㄆㄇ親子學習` | 聽辨／描寫分步、卡住時家長如何示範或停止、看得到內容不等於全部免費 |
-| Mochi／US | `check off to do home screen` | 可勾選 widget 與一般入口的區別、一筆低風險的 Home Screen→App 結果核對、功能與外觀分開判斷 |
+| Mochi／US | `check off to do home screen` | 先盤點自己的清單、對照商店描述的免費版（2 個清單×最多 4 項）再決定是否升級 Premium、容量與外觀分開判斷 |
 
 精確路徑與 before SHA 在 `data/owned_search_gap_enrichment_v1.json`。
 其餘 query 不新增頁、不增添同義段落；日文 Aim990 兩個意圖合併同頁，
 避免再製造另一個 doorway。
+
+## 2026-11-24 Mochi 證據改釘與 before-image
+
+- 產品證據 `product_source` 釘在 Growth `78e88cb07548`（`high_intent_conversion_contracts_v1.json`
+  sha256 `a30c9499…`）；斷言只認商店描述原句「The free version includes 2 lists with up to 4 tasks each」
+  與「Premium, an in-app purchase, unlocks」，強度不變。Mochi section 與 Guide main（`e1dd8cb879` 起）頁內區塊逐 byte 相同。
+- Mochi 頁 before-image（Guide `2e0c4005882e`，sha256 `1751cf5c…`）是 9 月的歷史原頁，
+  `<head>` JSON-LD 與正文仍有舊徽章（Pay once、No ads、no account）。本 renderer 不改 `<head>`，
+  body correction 也不能改 head，所以**不可用本 renderer 的輸出發布這頁**；這頁正文由
+  `aeo_answers.py`（answer_personas mochi）產生，section 由配對包放回。
+- 不改 `guide_base`：一份 plan 只有一個 Guide 基準，五頁在之後任何 Guide commit 都已含本 section
+  （renderer 拒絕重複插入），且去重 corpus 綁同一 commit；沒有合法的新 before-image 可釘。
+  依程式邏輯，現在對 Guide main 跑 `--apply` 會因頁面不是 before-image 也不是其渲染結果而拒絕寫入（fail closed），
+  不會把舊徽章寫回。
 
 ## 生成與不變性契約
 

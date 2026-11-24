@@ -339,8 +339,8 @@ COPY = {
         "app_title": "Need sound and blending practice before sentences?",
         "app_text": (
             "Lumi Bopomofo is an optional practice layer for listening, tracing, "
-            "tones and syllable blending. It has a one-time unlock with no "
-            "ads, subscription or account. The free reading cards remain complete "
+            "tones and syllable blending. It is free to download with a one-time "
+            "unlock (an in-app purchase), no ads and no account. The free reading cards remain complete "
             "without the app."
         ),
         "app_cta": "Parents: see Lumi Bopomofo on the App Store",
@@ -448,7 +448,7 @@ COPY = {
         "app_title": "讀句子前，還想加強聽音與拼讀？",
         "app_text": (
             "Lumi 注音星球是選配的練習層，提供聽音、描寫、聲調與拼讀遊戲。"
-            "一次付費一次購買解鎖，無廣告、無訂閱、免帳號；不使用 App 也能完整使用"
+            "免費下載，以一次性 App 內購買解鎖，無廣告、免帳號；不使用 App 也能完整使用"
             "上方免費句卡。"
         ),
         "app_cta": "家長前往 App Store 查看 Lumi 注音星球",

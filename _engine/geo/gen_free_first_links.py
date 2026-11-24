@@ -556,12 +556,61 @@ def paid_model_answer_slugs():
             if PAID_ONLY_INTENT_RE.search(question):
                 out.setdefault(slugify(question), paid)
                 continue
+            if handwritten_paid_claim(paid, question):
+                out.setdefault(slugify(question), paid)
+                continue
             facts = answer_facts.topic_facts(question, paid, app)
             if not facts:
                 continue
             if PAID_MODEL_RESIDUE_RE.search(_facts_text(facts)):
                 out.setdefault(slugify(question), paid)
     return out
+
+
+# 手寫內容庫(answer_deep / answer_personas)替付費版寫的條目,文字本身在講
+# 「只有付費版才成立」的購買事實(一次付清、全解鎖、沒有內購畫面)。
+# 根因(2026-11-24 外宣放量回報):Lumi 四款 Pro 的 25 題這類頁被換成免費門,
+# 主按鈕、ct、Play 都連免費版,但內文仍寫 `no locked content`、`no IAP prompts`
+# —— 免費版靠內購解鎖,這些句子對免費版是假話。PAID_MODEL_RESIDUE_RE 只認
+# `paid download / upfront price`,抓不到這組字樣。判準取自產生器輸入(條目
+# 文字),不是頁面文字。先只收 Lumi 四款(其他配對另裁,勿順手擴大)。
+HANDWRITTEN_PAID_CLAIM_KEYS = frozenset(
+    {"lumibopomofopro", "lumiletterspro", "lumimathpro", "lumimissionpro"}
+)
+PAID_ONLY_CLAIM_RE = re.compile(
+    r"one[-\s]time (?:purchase|price|payment)|pay(?:s|ing)? once|paid once"
+    r"|fully[-\s]unlocked|no locked|nothing (?:is )?locked|no paywall"
+    r"|no in[-\s]app purchase|no iap|without in[-\s]app|no free[-\s]tier"
+    r"|no upsell|no purchase (?:screens|prompts)|no unlock",
+    re.I,
+)
+
+
+@functools.lru_cache(maxsize=1)
+def _handwritten_entries():
+    """{(付費 key, 正規化問句): 條目全文}。"""
+    out = {}
+    try:
+        import answer_deep
+        from answer_personas import PERSONAS
+    except Exception:
+        return out
+    rows = [(e.get("app_key"), e) for e in answer_deep.DEEP_ITEMS]
+    rows += [(k, p) for k, ps in PERSONAS.items() for p in ps]
+    for key, entry in rows:
+        if key not in HANDWRITTEN_PAID_CLAIM_KEYS or not entry.get("query"):
+            continue
+        norm = " ".join(str(entry["query"]).casefold().split())
+        out[(key, norm)] = out.get((key, norm), "") + json.dumps(entry, ensure_ascii=False)
+    return out
+
+
+def handwritten_paid_claim(paid_key, question):
+    if paid_key not in HANDWRITTEN_PAID_CLAIM_KEYS:
+        return False
+    norm = " ".join(str(question).casefold().split())
+    text = _handwritten_entries().get((paid_key, norm))
+    return bool(text) and bool(PAID_ONLY_CLAIM_RE.search(text))
 
 
 def _facts_text(facts):

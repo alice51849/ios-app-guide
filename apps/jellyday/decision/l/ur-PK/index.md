@@ -2,7 +2,7 @@
 title: "JellyDay: ویژول ڈیلی پلانر — روزانہ ٹائم ٹیبل، روٹین ٹائمر | iOS App"
 lang: "ur-PK"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/jellyday/decision/l/ur-PK/index.html"
-modified: "2026-11-23"
+modified: "2026-11-24"
 app_store_id: "6835673714"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

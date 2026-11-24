@@ -68,7 +68,7 @@ jobs:
     # up to 20, exact read-back 30 x 25 s, hero and ACK checks 22) with room for the deploy retry.
     timeout-minutes: 75
     env:
-      # 固定 "true"：配對部署只嘗試一次、不盲目建立第二次部署。provider 通知是否
+      # 舊名稱，現在沒有步驟讀它（2026-11-24 起部署重試不再看它）。provider 通知是否
       # 放行只看 _engine/geo/notification_policy.json（IndexNow 由 indexnow-daily 送出）。
       NOTIFICATION_RELEASE_HOLD: "true"
       GEO_SITE: https://open.cait518.cc/ios-app-guide
@@ -354,17 +354,23 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
         # 2026-11-10：19:08Z、21:04Z 兩次配對發版都卡在 Pages 端 syncing_files，預設 10 分鐘逾時被取消
-        # （打包大小與 04:31Z 成功那次相同）。只放寬等待到 20 分鐘，仍只部署一次、不重試。
+        # （打包大小與 04:31Z 成功那次相同）。放寬等待到 20 分鐘；明確回報失敗才重試一次（見下）。
         with:
           timeout: 1200000
-        continue-on-error: ${{ env.NOTIFICATION_RELEASE_HOLD != 'true' }}
+        # 2026-11-24：原本 hold=true 時不重試，Pages 後台一次「Deployment failed, try again later」
+        # （07:06Z run 45345465216、03:18Z 同類）就整場失敗、全站停版。現在第一次明確失敗才重試一次
+        # （同一份打包、等待 10 分鐘以守住 job 75 分鐘上限）；通知放行仍只看 notification_policy.json，
+        # 且只在部署（任一次）成功＋讀回通過後各發一次，重試不會多發。
+        continue-on-error: true
       - name: Wait before retry
-        if: steps.deployment.outcome == 'failure' && env.NOTIFICATION_RELEASE_HOLD != 'true'
+        if: steps.deployment.outcome == 'failure'
         run: sleep 20
       - name: Deploy to GitHub Pages (retry transient CDN failure)
         id: deployment_retry
-        if: steps.deployment.outcome == 'failure' && env.NOTIFICATION_RELEASE_HOLD != 'true'
+        if: steps.deployment.outcome == 'failure'
         uses: actions/deploy-pages@v4
+        with:
+          timeout: 600000
       - name: Verify exact deployment is live
         id: verify_live
         if: >-

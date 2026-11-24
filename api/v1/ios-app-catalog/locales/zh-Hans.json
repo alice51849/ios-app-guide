@@ -2,7 +2,7 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-11-24",
-  "content_digest": "da16b2e6cb254016d6ceeba57bb60c34b408bbdfdc86d0fdaa7a3c26d7e18764",
+  "content_digest": "2e76aa0d2a2ec89c2cd3cc2722dc471f69b5c7f06653ac5e96f32d34330faf49",
   "locale": "zh-Hans",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -2032,11 +2032,11 @@
       "one_time_option": true,
       "capabilities": {
         "offline": false,
-        "no_account": true,
-        "no_ads": true,
+        "no_account": false,
+        "no_ads": false,
         "no_tracking": false,
         "private_or_on_device": false,
-        "widget": false,
+        "widget": true,
         "apple_watch": true
       },
       "app_store_url": "https://apps.apple.com/cn/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
@@ -2807,7 +2807,7 @@
       "key": "studydown",
       "app_store_id": "6807335593",
       "name": "Studydown：翻面专注计时",
-      "summary": "已针对 iPhone Duo 优化。本应用使用最新开发工具包构建，铺满整块内屏，无论折叠还是展开都会自动调整布局。",
+      "summary": "手机屏幕朝下扣在桌上就开始计时，拿起来就暂停，只记下真正专注的学习和工作时长。 今天、本周累计多少，连续打卡几天，各科目或项目的分布一目了然；每次计时还会记下拿起手机几次、平均能连续专注多久。 为考试或项目设好截止日期和目标时长，Studydown 会算出接下来每天要学多久。",
       "category": "productivity",
       "search_terms": [
         "学习",

@@ -2,7 +2,7 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-11-24",
-  "content_digest": "da16b2e6cb254016d6ceeba57bb60c34b408bbdfdc86d0fdaa7a3c26d7e18764",
+  "content_digest": "2e76aa0d2a2ec89c2cd3cc2722dc471f69b5c7f06653ac5e96f32d34330faf49",
   "locale": "ca",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -1429,11 +1429,11 @@
       "one_time_option": true,
       "capabilities": {
         "offline": false,
-        "no_account": true,
-        "no_ads": true,
+        "no_account": false,
+        "no_ads": false,
         "no_tracking": false,
         "private_or_on_device": false,
-        "widget": false,
+        "widget": true,
         "apple_watch": true
       },
       "app_store_url": "https://apps.apple.com/es/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
@@ -2019,7 +2019,7 @@
       "key": "studydown",
       "app_store_id": "6807335593",
       "name": "Studydown: Cronòmetre",
-      "summary": "Optimitzada per a l’iPhone Duo. Creada amb l’SDK més recent, l’app ocupa tota la pantalla interior i n’ajusta el disseny automàticament, tant amb el dispositiu plegat com obert.",
+      "summary": "Posa el mòbil de cara avall i el cronòmetre comença; aixeca'l i es posa en pausa, així només compta el temps de concentració real en les teves hores d'estudi i de feina. Consulta el temps d'avui i de la setmana, la ratxa de dies i el repartiment per assignatura o projecte, a més de quantes vegades has aixecat el mòbil i quant ha durat la teva concentració. Defineix un termini i un objectiu, i Studydown et mostra el ritme diari que encara necessites.",
       "category": "productivity",
       "search_terms": [
         "estudiar",

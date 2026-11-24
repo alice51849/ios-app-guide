@@ -2,7 +2,7 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-11-24",
-  "content_digest": "da16b2e6cb254016d6ceeba57bb60c34b408bbdfdc86d0fdaa7a3c26d7e18764",
+  "content_digest": "2e76aa0d2a2ec89c2cd3cc2722dc471f69b5c7f06653ac5e96f32d34330faf49",
   "locale": "pa-IN",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -1527,11 +1527,11 @@
       "one_time_option": true,
       "capabilities": {
         "offline": false,
-        "no_account": true,
-        "no_ads": true,
+        "no_account": false,
+        "no_ads": false,
         "no_tracking": false,
         "private_or_on_device": false,
-        "widget": false,
+        "widget": true,
         "apple_watch": true
       },
       "app_store_url": "https://apps.apple.com/in/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
@@ -2134,7 +2134,7 @@
       "key": "studydown",
       "app_store_id": "6807335593",
       "name": "Studydown: ਫੋਕਸ ਟਾਈਮਰ",
-      "summary": "iPhone Duo ਡਿਵਾਈਸ ਲਈ ਅਨੁਕੂਲਿਤ। ਨਵੀਨਤਮ SDK ਨਾਲ ਬਣੀ ਇਹ ਐਪ ਪੂਰੀ ਅੰਦਰਲੀ ਸਕ੍ਰੀਨ ਭਰਦੀ ਹੈ ਅਤੇ ਡਿਵਾਈਸ ਮੋੜਿਆ ਹੋਵੇ ਜਾਂ ਖੁੱਲ੍ਹਾ, ਲੇਆਊਟ ਆਪਣੇ ਆਪ ਠੀਕ ਕਰ ਲੈਂਦੀ ਹੈ।",
+      "summary": "ਫ਼ੋਨ ਨੂੰ ਸਕਰੀਨ ਹੇਠਾਂ ਕਰਕੇ ਰੱਖਦੇ ਹੀ ਟਾਈਮਰ ਸ਼ੁਰੂ, ਚੁੱਕਦੇ ਹੀ ਰੁਕ ਜਾਂਦਾ ਹੈ; ਇਸ ਲਈ ਪੜ੍ਹਾਈ ਅਤੇ ਕੰਮ ਦੇ ਘੰਟਿਆਂ ਵਿੱਚ ਸਿਰਫ਼ ਅਸਲ ਇਕਾਗਰਤਾ ਵਾਲਾ ਸਮਾਂ ਹੀ ਜੁੜਦਾ ਹੈ। ਅੱਜ ਅਤੇ ਇਸ ਹਫ਼ਤੇ ਦਾ ਸਮਾਂ, ਲਗਾਤਾਰ ਦਿਨ ਅਤੇ ਵਿਸ਼ੇ ਜਾਂ ਪ੍ਰੋਜੈਕਟ ਮੁਤਾਬਕ ਵੰਡ ਵੇਖੋ, ਨਾਲ ਹੀ ਫ਼ੋਨ ਕਿੰਨੀ ਵਾਰ ਚੁੱਕਿਆ ਅਤੇ ਕਿੰਨੀ ਦੇਰ ਲਗਾਤਾਰ ਧਿਆਨ ਲੱਗਾ ਰਿਹਾ। ਆਖ਼ਰੀ ਤਾਰੀਖ਼ ਅਤੇ ਟੀਚਾ ਤੈਅ ਕਰੋ, Studydown ਦੱਸੇਗਾ ਕਿ ਹਰ ਰੋਜ਼ ਹੋਰ ਕਿੰਨਾ ਸਮਾਂ ਚਾਹੀਦਾ ਹੈ।",
       "category": "productivity",
       "search_terms": [
         "study",

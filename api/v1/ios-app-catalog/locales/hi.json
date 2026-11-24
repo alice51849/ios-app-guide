@@ -2,7 +2,7 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-11-24",
-  "content_digest": "da16b2e6cb254016d6ceeba57bb60c34b408bbdfdc86d0fdaa7a3c26d7e18764",
+  "content_digest": "2e76aa0d2a2ec89c2cd3cc2722dc471f69b5c7f06653ac5e96f32d34330faf49",
   "locale": "hi",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -1488,11 +1488,11 @@
       "one_time_option": true,
       "capabilities": {
         "offline": false,
-        "no_account": true,
-        "no_ads": true,
+        "no_account": false,
+        "no_ads": false,
         "no_tracking": false,
         "private_or_on_device": false,
-        "widget": false,
+        "widget": true,
         "apple_watch": true
       },
       "app_store_url": "https://apps.apple.com/in/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
@@ -2087,7 +2087,7 @@
       "key": "studydown",
       "app_store_id": "6807335593",
       "name": "Studydown: फ़ोकस टाइमर",
-      "summary": "iPhone Duo डिवाइस के लिए ऑप्टिमाइज़ किया गया। नवीनतम SDK से बना यह ऐप पूरी अंदरूनी स्क्रीन भरता है और डिवाइस मुड़ा हो या खुला, लेआउट अपने आप ठीक कर लेता है।",
+      "summary": "फ़ोन को स्क्रीन नीचे करके रखते ही टाइमर शुरू, उठाते ही रुक जाता है; इसलिए पढ़ाई और काम के घंटों में सिर्फ़ असली फ़ोकस वाला समय ही जुड़ता है। आज और इस हफ़्ते का समय, लगातार दिनों की स्ट्रीक और विषय या प्रोजेक्ट के हिसाब से बँटवारा देखें, साथ ही फ़ोन कितनी बार उठाया और कितनी देर लगातार फ़ोकस रहा। समय-सीमा और लक्ष्य तय करें, Studydown बताएगा कि रोज़ अब कितना समय देना है।",
       "category": "productivity",
       "search_terms": [
         "study",

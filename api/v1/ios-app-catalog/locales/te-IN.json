@@ -2,7 +2,7 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-11-24",
-  "content_digest": "da16b2e6cb254016d6ceeba57bb60c34b408bbdfdc86d0fdaa7a3c26d7e18764",
+  "content_digest": "2e76aa0d2a2ec89c2cd3cc2722dc471f69b5c7f06653ac5e96f32d34330faf49",
   "locale": "te-IN",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -1448,11 +1448,11 @@
       "one_time_option": true,
       "capabilities": {
         "offline": false,
-        "no_account": true,
-        "no_ads": true,
+        "no_account": false,
+        "no_ads": false,
         "no_tracking": false,
         "private_or_on_device": false,
-        "widget": false,
+        "widget": true,
         "apple_watch": true
       },
       "app_store_url": "https://apps.apple.com/in/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
@@ -2032,7 +2032,7 @@
       "key": "studydown",
       "app_store_id": "6807335593",
       "name": "Studydown: ఫోకస్ టైమర్",
-      "summary": "iPhone Duo పరికరం కోసం ఆప్టిమైజ్ చేయబడింది. తాజా SDKతో రూపొందించిన ఈ యాప్ లోపలి స్క్రీన్ మొత్తాన్ని నింపుతుంది, పరికరం మడిచి ఉన్నా తెరిచి ఉన్నా లేఅవుట్‌ను ఆటోమేటిక్‌గా సర్దుబాటు చేస్తుంది.",
+      "summary": "ఫోన్‌ను స్క్రీన్ కిందికి పెట్టగానే టైమర్ మొదలవుతుంది, ఎత్తగానే ఆగుతుంది; కాబట్టి చదువు, పని గంటల్లో నిజమైన ఏకాగ్రత సమయమే లెక్కకు వస్తుంది. ఈరోజు, ఈ వారం సమయం, వరుస రోజులు, సబ్జెక్ట్ లేదా ప్రాజెక్ట్ వారీ విభజనతో పాటు, ఫోన్‌ను ఎన్నిసార్లు ఎత్తారు, ఎంతసేపు నిరంతరంగా ఏకాగ్రతతో ఉన్నారో కూడా చూడండి. గడువు, లక్ష్యం పెట్టండి, ఇంకా రోజుకు ఎంత సమయం కావాలో Studydown చూపిస్తుంది.",
       "category": "productivity",
       "search_terms": [
         "study",

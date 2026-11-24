@@ -2,7 +2,7 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-11-24",
-  "content_digest": "da16b2e6cb254016d6ceeba57bb60c34b408bbdfdc86d0fdaa7a3c26d7e18764",
+  "content_digest": "2e76aa0d2a2ec89c2cd3cc2722dc471f69b5c7f06653ac5e96f32d34330faf49",
   "locale": "sl-SI",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -1417,11 +1417,11 @@
       "one_time_option": true,
       "capabilities": {
         "offline": false,
-        "no_account": true,
-        "no_ads": true,
+        "no_account": false,
+        "no_ads": false,
         "no_tracking": false,
         "private_or_on_device": false,
-        "widget": false,
+        "widget": true,
         "apple_watch": true
       },
       "app_store_url": "https://apps.apple.com/si/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
@@ -1990,7 +1990,7 @@
       "key": "studydown",
       "app_store_id": "6807335593",
       "name": "Studydown: Merjenje časa",
-      "summary": "Optimizirano za iPhone Duo. Aplikacija je izdelana z najnovejšim SDK, zapolni celoten notranji zaslon in samodejno prilagodi postavitev, ne glede na to, ali je naprava zaprta ali odprta.",
+      "summary": "Telefon položite z zaslonom navzdol in merjenje se začne, dvignete ga in se ustavi, zato se v ure učenja in dela šteje le resnična zbranost. Oglejte si čas za danes in ta teden, niz dni ter razdelitev po predmetih ali projektih, pa tudi, kolikokrat ste dvignili telefon in kako dolgo je trajala vaša zbranost. Določite rok in cilj, Studydown pa vam pokaže, koliko morate še narediti vsak dan.",
       "category": "productivity",
       "search_terms": [
         "učenje",

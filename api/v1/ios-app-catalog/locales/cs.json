@@ -2,7 +2,7 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-11-24",
-  "content_digest": "da16b2e6cb254016d6ceeba57bb60c34b408bbdfdc86d0fdaa7a3c26d7e18764",
+  "content_digest": "2e76aa0d2a2ec89c2cd3cc2722dc471f69b5c7f06653ac5e96f32d34330faf49",
   "locale": "cs",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -1434,11 +1434,11 @@
       "one_time_option": true,
       "capabilities": {
         "offline": false,
-        "no_account": true,
-        "no_ads": true,
+        "no_account": false,
+        "no_ads": false,
         "no_tracking": false,
         "private_or_on_device": false,
-        "widget": false,
+        "widget": true,
         "apple_watch": true
       },
       "app_store_url": "https://apps.apple.com/cz/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
@@ -2025,7 +2025,7 @@
       "key": "studydown",
       "app_store_id": "6807335593",
       "name": "Studydown: Měření času",
-      "summary": "Optimalizováno s ohledem na iPhone Duo. Aplikace je sestavena s nejnovějším SDK, vyplní celý vnitřní displej a automaticky upraví rozvržení, ať je zařízení složené, nebo rozložené.",
+      "summary": "Otočte telefon displejem dolů a měření začne, zvednete ho a zastaví se, takže se do hodin učení a práce počítá jen skutečné soustředění. Uvidíte čas za dnešek i týden, sérii dní a rozdělení podle předmětů nebo projektů, navíc kolikrát jste telefon zvedli a jak dlouho vydrželo vaše soustředění. Nastavte termín a cíl a Studydown vám ukáže, kolik času denně ještě potřebujete.",
       "category": "productivity",
       "search_terms": [
         "učení",

@@ -2,7 +2,7 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-11-24",
-  "content_digest": "da16b2e6cb254016d6ceeba57bb60c34b408bbdfdc86d0fdaa7a3c26d7e18764",
+  "content_digest": "2e76aa0d2a2ec89c2cd3cc2722dc471f69b5c7f06653ac5e96f32d34330faf49",
   "locale": "or-IN",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -1494,11 +1494,11 @@
       "one_time_option": true,
       "capabilities": {
         "offline": false,
-        "no_account": true,
-        "no_ads": true,
+        "no_account": false,
+        "no_ads": false,
         "no_tracking": false,
         "private_or_on_device": false,
-        "widget": false,
+        "widget": true,
         "apple_watch": true
       },
       "app_store_url": "https://apps.apple.com/in/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
@@ -2095,7 +2095,7 @@
       "key": "studydown",
       "app_store_id": "6807335593",
       "name": "Studydown: ଫୋକସ୍",
-      "summary": "iPhone Duo ଡିଭାଇସ୍ ପାଇଁ ଅପ୍ଟିମାଇଜ୍ କରାଯାଇଛି। ନୂତନତମ SDK ରେ ତିଆରି ଏହି ଆପ୍ ଭିତର ସମ୍ପୂର୍ଣ୍ଣ ସ୍କ୍ରିନ୍ ଭରିଦିଏ ଏବଂ ଡିଭାଇସ୍ ଫୋଲ୍ଡ ହେଉ କି ଖୋଲା, ଲେଆଉଟ୍ ନିଜେ ଠିକ୍ କରିନିଏ।",
+      "summary": "ଫୋନ୍‌କୁ ସ୍କ୍ରିନ୍ ତଳକୁ କରି ରଖିଲେ ଟାଇମର୍ ଆରମ୍ଭ, ଉଠାଇଲେ ବନ୍ଦ; ତେଣୁ ପାଠ ଓ କାମର ଘଣ୍ଟାରେ କେବଳ ପ୍ରକୃତ ଏକାଗ୍ରତାର ସମୟ ହିଁ ଯୋଡ଼ାଯାଏ। ଆଜି ଓ ଏହି ସପ୍ତାହର ସମୟ, ଲଗାତାର ଦିନ ଏବଂ ବିଷୟ କିମ୍ବା ପ୍ରକଳ୍ପ ଅନୁଯାୟୀ ବିଭାଜନ ଦେଖନ୍ତୁ, ସହିତ ଫୋନ୍ କେତେ ଥର ଉଠାଇଲେ ଓ କେତେ ସମୟ ଲଗାତାର ଏକାଗ୍ରତା ରହିଲା। ଶେଷ ତାରିଖ ଓ ଲକ୍ଷ୍ୟ ସ୍ଥିର କରନ୍ତୁ, ପ୍ରତିଦିନ ଆଉ କେତେ ସମୟ ଦରକାର ତାହା Studydown ଦେଖାଇବ।",
       "category": "productivity",
       "search_terms": [
         "study",

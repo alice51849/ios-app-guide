@@ -2,7 +2,7 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-11-24",
-  "content_digest": "da16b2e6cb254016d6ceeba57bb60c34b408bbdfdc86d0fdaa7a3c26d7e18764",
+  "content_digest": "2e76aa0d2a2ec89c2cd3cc2722dc471f69b5c7f06653ac5e96f32d34330faf49",
   "locale": "ar-SA",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -1556,11 +1556,11 @@
       "one_time_option": true,
       "capabilities": {
         "offline": false,
-        "no_account": true,
-        "no_ads": true,
+        "no_account": false,
+        "no_ads": false,
         "no_tracking": false,
         "private_or_on_device": false,
-        "widget": false,
+        "widget": true,
         "apple_watch": true
       },
       "app_store_url": "https://apps.apple.com/sa/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
@@ -2188,7 +2188,7 @@
       "key": "studydown",
       "app_store_id": "6807335593",
       "name": "Studydown: مؤقت التركيز",
-      "summary": "محسَّن لجهاز iPhone Duo. بُني التطبيق بأحدث حزمة تطوير، فيملأ الشاشة الداخلية بالكامل ويضبط تخطيطه تلقائيًا سواء كان الجهاز مطويًا أو مفتوحًا.",
+      "summary": "اقلب هاتفك ووجهه إلى الأسفل ليبدأ المؤقت، وارفعه ليتوقف، فلا يُحسب إلا وقت التركيز الحقيقي في ساعات مذاكرتك وعملك. تابع وقت اليوم والأسبوع وسلسلة الأيام المتتالية وتوزيع الوقت حسب المادة أو المشروع، ومعها عدد مرات رفع الهاتف ومدة تركيزك المتواصل. حدّد موعدًا نهائيًا وهدفًا زمنيًا، وسيحسب Studydown الوتيرة اليومية التي ما زلت تحتاجها.",
       "category": "productivity",
       "search_terms": [
         "مذاكرة",

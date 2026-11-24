@@ -130,38 +130,38 @@
         "en-US": {
           "task": "A cozy checklist on your Home Screen",
           "result": "Check off everyday to-dos without opening a project workspace.",
-          "free": "Checklists and Home Screen check-offs are free.",
-          "paid": "Premium skins are optional and unlock with one purchase.",
+          "free": "The free version includes 2 lists with up to 4 tasks each, 5 themes and 1 emoji set.",
+          "paid": "Premium, an in-app purchase, unlocks unlimited lists and tasks, all 101 themes and all 11 emoji sets.",
           "queries": [
             "cute checklist widget iphone",
             "check off to do home screen"
           ],
           "limitations": [
-            "The 101-theme collection includes optional Premium skins; not every theme is free.",
+            "Of the 101 themes, 5 are free and 96 come with Premium.",
             "This is not enterprise project management, a calendar replacement, or habit-streak analytics."
           ],
-          "proof_note": "The published screens show a Home Screen checklist and checked-off tasks, not a paid-only widget.",
+          "proof_note": "The App Store description lists a Home Screen widget and Apple Watch, and states what the free version and Premium include.",
           "asset_captions": {
-            "mochi-widget": "Published Home Screen checklist; basic widget use is free.",
+            "mochi-widget": "Published Home Screen checklist widget.",
             "mochi-checkoff": "Published checklist with completed tasks."
           }
         },
         "zh-Hant": {
           "task": "把可愛待辦清單放在主畫面",
-          "result": "直接在主畫面勾選日常待辦，不必打開複雜的專案工具。",
-          "free": "基本清單與主畫面小工具勾選都免費。",
-          "paid": "Premium 主題是可選的一次性購買，不影響免費清單。",
+          "result": "輕點小圓圈勾選日常待辦，不必打開複雜的專案工具。",
+          "free": "免費版可使用 2 個清單（每個清單最多 4 個項目）、5 款主題和 1 組表情符號。",
+          "paid": "進階版為 App 內購買項目，升級後清單與項目不限數量，並可使用全部 101 款主題和全部 11 組表情符號。",
           "queries": [
             "可愛待辦小工具",
             "桌面直接勾選清單"
           ],
           "limitations": [
-            "101 種主題中包含可選購的 Premium 主題，並非每款主題都免費。",
+            "101 款主題外觀中 5 款免費、96 款需進階版。",
             "適合日常待辦，不取代企業專案管理、行事曆或習慣連勝分析。"
           ],
-          "proof_note": "已核對的台灣商店圖片展示主畫面清單；小工具不是付費限定功能。",
+          "proof_note": "台灣商店頁寫明清單可放上主畫面小工具與 Apple Watch，並列出免費版與進階版各包含什麼。",
           "asset_captions": {
-            "mochi-widget-tw": "已發布的台灣主畫面清單；基本小工具免費。"
+            "mochi-widget-tw": "已發布的台灣主畫面清單小工具。"
           }
         }
       }

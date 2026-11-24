@@ -181,8 +181,8 @@ def validate_copy(page, queries):
                 raise ValueError("Do not invent automatic diagnostic behaviour")
     if page["app_key"] == "cyca" and not all(token in text for token in ("Schätzung", "Verhütung", "keine Diagnose")):
         raise ValueError("Cycle content must distinguish estimates, contraception and diagnosis")
-    if page["app_key"] == "mochi" and not all(token in text for token in ("Basic checklists", "Home Screen check-offs are free", "optional", "Premium")):
-        raise ValueError("Do not recast free check-offs as a paid-only feature")
+    if page["app_key"] == "mochi" and not all(token in text for token in ("free version includes 2 lists", "Premium", "in-app purchase")):
+        raise ValueError("Mochi copy must state the store-listed free version and Premium scope")
     if page["app_key"] == "lumibopomofo" and not all(token in text for token in ("台灣", "漢語拼音", "家長閘門", "免費")):
         raise ValueError("Zhuyin, free access and parental decision boundaries must remain explicit")
     return terms
@@ -238,7 +238,7 @@ def validate_plan(plan, snapshot, corpus, source_repo):
         "aim990": ("Practise offline with original TOEIC-style exercises.", "Original practice, not official"),
         "cyca": ("Forecasts are estimates, not contraception.", "without creating an account"),
         "lumibopomofo": ("Try the sound and tracing activities for ㄅ.", "not Latin-letter Hanyu Pinyin"),
-        "mochi": ("Checklists and Home Screen check-offs are free.", "Premium skins are optional"),
+        "mochi": ("The free version includes 2 lists with up to 4 tasks each", "Premium, an in-app purchase, unlocks"),
     }
     for key, phrases in assertions.items():
         proof = json.dumps(facts[key]["localized"]["en-US"], ensure_ascii=False)

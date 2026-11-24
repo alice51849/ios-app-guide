@@ -100,7 +100,7 @@ APP_BLOCK = f"""  <h2>要不要用 App?</h2>
   <p><strong>{e(FREE_NAME)}</strong>與<strong>{e(PRO_NAME)}</strong>涵蓋全部 37 個符號的聽音、描寫、聲調與拼讀活動,
   無第三方廣告、免帳號、可離線使用;畫面插圖由 AI 生成,語音為系統語音合成。它只是其中一個選用活動,不取代學校教學。</p>
   <p><a href="{FREE_URL}"><strong>在 App Store 查看 {e(FREE_NAME)}(免費下載)</strong></a><br>
-  <a href="{PRO_URL}"><strong>在 App Store 查看 {e(PRO_NAME)}(一次買斷,無訂閱)</strong></a></p>
+  <a href="{PRO_URL}"><strong>在 App Store 查看 {e(PRO_NAME)}(付費下載,一次付費)</strong></a></p>
   <p>想比較其他選擇,可看<a href="{guide_url('zhuyin-app-recommendation')}"><strong>注音 App 推薦指南</strong></a>,
   或獨立整理的<a href="{REPO}" rel="nofollow"><strong>注音學習 App 清單</strong></a>。</p>"""
 

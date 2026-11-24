@@ -1,11 +1,11 @@
 {
- "generated": "2026-11-24T13:52:15Z",
+ "generated": "2026-11-24T23:58:56Z",
  "mode": "apply",
  "counts": {
-  "ok_reply": 90,
-  "ok_backfilled_earlier": 129,
+  "ok_reply": 91,
+  "ok_backfilled_earlier": 131,
   "unknown_app": 47,
-  "ok_store_only": 602,
+  "ok_store_only": 600,
   "backfilled": 2,
   "ok_bio_link": 68,
   "ok_caption": 4,
@@ -24,6 +24,18 @@
    "why": "trial",
    "ios_id": "6785004775",
    "locale": "ko"
+  },
+  {
+   "channel": "threads",
+   "id": "18120136258817103",
+   "permalink": "https://www.threads.com/@hourstag.app/post/DgIRRATiY09",
+   "date": "2026-11-24",
+   "app": "easyam",
+   "status": "ok_reply",
+   "text": "連假前不必再一個個關鬧鐘，收假後也不用擔心忘了打開。 EasyAM: 國定假日、連假不響的智慧鬧鐘",
+   "why": "brand",
+   "ios_id": "6821790092",
+   "locale": "zh-Hant"
   },
   {
    "channel": "threads",
@@ -2585,11 +2597,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/Dcte75hiKss",
    "date": "2026-08-31",
    "app": "lumiletterspro",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "Lumi Letters Pro: ABC Phonics ABC Phonics: Trace & Read The complete phonics adventure. Letter sounds, tracing, and word-building kids love ",
    "why": "url+brand",
    "ios_id": "6778491147",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "18212862115368523",
+   "at": "2026-11-24T23:56:28Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -3183,16 +3200,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctfNudDn02",
    "date": "2026-08-31",
    "app": "lumimission",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "Lumi Mission Planet Kids Reward Chart & Routines Turn chores and bedtime into a game kids love. Build daily habits with rewards that stick —",
    "why": "url+brand",
    "ios_id": "6779750237",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "17875629843641270",
-   "at": "2026-11-24T13:49:48Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",
@@ -3700,11 +3712,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctfBzWl55Y",
    "date": "2026-08-31",
    "app": "lumimath",
-   "status": "ok_store_only",
+   "status": "backfilled",
    "text": "Lumi Math Planet: Explorer Preschool Maths Games Ages 3-6 Make math an adventure. A whole galaxy of counting and number games kids beg to pl",
    "why": "url+brand",
    "ios_id": "6778269699",
-   "locale": "en"
+   "locale": "en",
+   "own_replies": [],
+   "comment_id": "18145594891717722",
+   "at": "2026-11-24T23:56:28Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -3926,16 +3943,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DctfH0slbpX",
    "date": "2026-08-31",
    "app": "lumimathpro",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "Lumi Math Pro: Kids Numbers Number games for kids The whole number galaxy for kids. Every counting and math adventure in one place — playful",
    "why": "url+brand",
    "ios_id": "6776958488",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "18213544456363929",
-   "at": "2026-11-24T13:49:48Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",

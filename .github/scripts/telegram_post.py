@@ -1569,7 +1569,10 @@ def manual_queue(pool, path=None):
 
 
 # Holds kept when telegram-manual-queue.json cannot be read: fail closed for Apps under a coordinator hold.
-UNREADABLE_HOLD_FALLBACK = {"6835673714": "hold file unreadable: fail closed"}
+UNREADABLE_HOLD_FALLBACK = {
+    "6835673714": "hold file unreadable: fail closed",
+    "6819061896": "hold file unreadable: fail closed",
+}
 
 
 def held_apps(path=None):

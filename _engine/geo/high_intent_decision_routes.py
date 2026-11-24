@@ -302,6 +302,8 @@ UI = {
             "Free to start": "可免費開始使用",
             "One-time unlock": "提供一次性付費解鎖",
             "No subscription": "不採訂閱制",
+            "Free on iPhone": "iPhone 版免費下載",
+            "No in-app purchases": "沒有 App 內購買",
         },
         "capabilities": {
             "offline": "第一方 inventory 標示可離線使用。",

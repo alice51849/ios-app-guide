@@ -82,10 +82,12 @@ class OwnedFeedTests(FeedFixture):
         # 免費開始改 45；證據收據 reports/test_health/reviews/
         # jellyday_itunes_purchase_readback_2026-11-23.md（成長引擎）。寫死數字是絆線：
         # 名冊再多一款就要重新讀回、改這裡並附收據。
-        expected_models = {"paid_upfront": 15, "free_with_lifetime_unlock": 45}
-        # Kumo（自動續訂＋一次性買斷並存）上架後登錄為 neutral，只有 1 款。
+        # 捷運時間助手 11-24 iOS 改免費（iTunes Lookup us／tw／jp price 0）、Android
+        # 仍付費（CLAUDE 1.8）：兩平台不同，登錄為 neutral（看目前上架頁），付費 14。
+        expected_models = {"paid_upfront": 14, "free_with_lifetime_unlock": 45, "neutral": 1}
+        # Kumo（自動續訂＋一次性買斷並存）上架後登錄為 neutral。
         if "kumo" in canonical_manifest()["apps"]:
-            expected_models["neutral"] = 1
+            expected_models["neutral"] += 1
         self.assertEqual(expected_models, manifest["purchase_models"])
         # 跨來源核對：名冊裡 free_with_lifetime_unlock 的款＝已驗證購買模式
         # （verified_purchase_types.json）的 one_time_unlock 款扣掉付費下載款。
